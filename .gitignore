@@ -1,0 +1,65 @@
+# Environment variables and local secrets
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+coverage.xml
+instance/
+
+# Node / React Native
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm/
+.yarn/cache/
+.yarn/unplugged/
+coverage/
+.metro-health-check*
+*.jsbundle
+
+# iOS / Xcode / CocoaPods
+Pods/
+DerivedData/
+build/
+*.xcuserstate
+xcuserdata/
+*.ipa
+**/.xcode.env.local
+.bundle/
+vendor/bundle/
+
+# Android / Gradle / IDEs
+.gradle/
+.kotlin/
+.cxx/
+local.properties
+*.iml
+.idea/
+*.keystore
+!debug.keystore
+
+# Local tooling and generated artifacts
+.agents/
+*.bak*
+backend/test_*.png
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
