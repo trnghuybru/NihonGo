@@ -4,6 +4,7 @@ import {
   LearningSelection,
 } from '../services/learningService';
 import { colors, spacing, typography } from '../theme/theme';
+import { MISSING_DATA } from '../config/content';
 
 export function LearningSummary({
   selection,
@@ -15,11 +16,15 @@ export function LearningSummary({
   const rows = [
     [
       'Trình độ hiện tại',
-      options.levels.find(item => item.id === selection.level)?.label,
+      options.levels.find(item => item.id === selection.level)?.label ||
+        selection.level ||
+        MISSING_DATA,
     ],
     [
       'Mục tiêu chính',
-      options.goals.find(item => item.id === selection.goal)?.label,
+      options.goals.find(item => item.id === selection.goal)?.label ||
+        selection.goal ||
+        MISSING_DATA,
     ],
     ['Thời gian mỗi ngày', `${selection.daily_minutes} phút`],
   ];

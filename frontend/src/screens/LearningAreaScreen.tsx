@@ -2,6 +2,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import { AuthShell } from '../components/AuthForm';
 import { MascotPose, NihongoMascot } from '../components/NihongoMascot';
 import { colors, spacing, typography } from '../theme/theme';
+import { MISSING_DATA } from '../config/content';
 
 export type LearningArea = 'listening' | 'reading' | 'writing' | 'vocabulary';
 
@@ -54,11 +55,7 @@ export function LearningAreaScreen({
           Từ bạn muốn tra: {query}
         </Text>
       ) : null}
-      <Text style={styles.description}>
-        {area === 'vocabulary'
-          ? 'Chưa có dữ liệu từ điển để tra cứu. Nội dung sẽ xuất hiện tại đây khi sẵn sàng.'
-          : 'Hiện chưa có bài luyện trong mục này. Bạn có thể chọn Nói trong Luyện tập để trò chuyện cùng Aoi.'}
-      </Text>
+      <Text style={styles.description}>{MISSING_DATA}</Text>
     </AuthShell>
   );
 }

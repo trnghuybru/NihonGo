@@ -5,6 +5,7 @@ import { LearningSkill, SkillPicker } from '../components/SkillPicker';
 import { PromotionPanel } from '../components/PromotionPanel';
 import { VocabularySearchBar } from '../components/VocabularySearchBar';
 import { NihongoMascot } from '../components/NihongoMascot';
+import { MISSING_DATA } from '../config/content';
 import { User } from '../services/authService';
 import { LearningOptions, LearningProfile } from '../services/learningService';
 import {
@@ -138,8 +139,9 @@ export function HomeScreen({
         </View>
         <Pressable
           accessibilityRole="button"
-          accessibilityLabel="Tra từ ありがとう, arigatou, nghĩa là cảm ơn"
-          onPress={() => onSearchVocabulary('ありがとう')}
+          accessibilityLabel={`Từ vựng: ${MISSING_DATA}`}
+          accessibilityState={{ disabled: true }}
+          disabled
           style={({ pressed }) => [
             styles.wordNote,
             pressed ? styles.pressed : null,
@@ -147,17 +149,12 @@ export function HomeScreen({
         >
           <View style={styles.wordHeading}>
             <Text style={styles.wordEyebrow}>Momo mách bạn</Text>
-            <Text style={styles.wordCategory}>Giao tiếp</Text>
+            <Text style={styles.wordCategory}>{MISSING_DATA}</Text>
           </View>
-          <Text style={styles.wordJapanese}>ありがとう</Text>
-          <Text style={styles.wordReading}>arigatou · cảm ơn</Text>
+          <Text style={styles.wordJapanese}>{MISSING_DATA}</Text>
+          <Text style={styles.wordReading}>{MISSING_DATA}</Text>
           <View style={styles.wordFooter}>
-            <Text style={styles.wordHint}>Chạm để tra nghĩa và cách dùng.</Text>
-            <HomeFeatureIcon
-              name="arrow"
-              size={20}
-              color={colors.primaryText}
-            />
+            <Text style={styles.wordHint}>{MISSING_DATA}</Text>
           </View>
         </Pressable>
         <Pressable

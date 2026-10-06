@@ -9,6 +9,8 @@ from sqlalchemy.exc import SQLAlchemyError
 from .models import AuthSession, Challenge, OAuthFlow, RateLimit, db, now
 from .security import AuthError, limit
 
+ACCOUNT_API_PREFIXES = ("/api/auth/", "/api/learning/", "/api/speaking/")
+
 
 def init_auth(app):
     url = app.config.get("SQLALCHEMY_DATABASE_URI") or os.getenv("DATABASE_URL", "")
@@ -45,7 +47,7 @@ def init_auth(app):
 
     @app.before_request
     def auth_guard():
-        if not request.path.startswith(("/api/auth/", "/api/learning/")):
+        if not request.path.startswith(ACCOUNT_API_PREFIXES):
             return
         request.max_content_length = 16 * 1024
         if not app.config["AUTH_CONFIGURED"]:
@@ -57,7 +59,7 @@ def init_auth(app):
 
     @app.after_request
     def auth_headers(response):
-        if request.path.startswith(("/api/auth/", "/api/learning/")):
+        if request.path.startswith(ACCOUNT_API_PREFIXES):
             response.headers["Cache-Control"] = "no-store"
             response.headers["Pragma"] = "no-cache"
             response.headers["Referrer-Policy"] = "no-referrer"
@@ -75,9 +77,12 @@ def init_auth(app):
     @app.errorhandler(SQLAlchemyError)
     def database_error(error):
         db.session.rollback()
-        if not request.path.startswith(("/api/auth/", "/api/learning/")):
+        if not request.path.startswith(ACCOUNT_API_PREFIXES):
             raise error
         app.logger.error("Account database request failed (%s)", type(error).__name__)
+        if request.path.startswith("/api/speaking/"):
+            return jsonify({"error": "Dịch vụ hội thoại tạm thời gián đoạn. Vui lòng thử lại sau.",
+                            "code": "speaking_unavailable"}), 503
         return jsonify({"error": "Dịch vụ tài khoản tạm thời gián đoạn. Vui lòng thử lại sau.",
                         "code": "auth_unavailable"}), 503
 

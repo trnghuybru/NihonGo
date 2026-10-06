@@ -16,10 +16,14 @@ export async function apiRequest<T>(
   data?: unknown,
   accessToken?: string,
   method: 'GET' | 'POST' | 'PUT' = data === undefined ? 'GET' : 'POST',
+  options?: { timeoutMs?: number },
 ): Promise<T> {
   const baseUrl = apiBaseUrl();
   const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), 20000);
+  const timeout = setTimeout(
+    () => controller.abort(),
+    options?.timeoutMs ?? 20000,
+  );
   try {
     const response = await fetch(`${baseUrl}/api${path}`, {
       method,

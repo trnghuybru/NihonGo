@@ -2,12 +2,15 @@ import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { colors, radius, shadowMd, spacing, typography } from '../theme/theme';
 import { HomeFeatureIcon } from './HomeFeatureIcon';
 import { NihongoMascot } from './NihongoMascot';
+import { MISSING_DATA } from '../config/content';
 
 export function PromotionPanel({ onPress }: { onPress: () => void }) {
   return (
     <Pressable
       accessibilityRole="button"
-      accessibilityLabel="Khám phá NihonGO. Lộ trình học cá nhân theo mục tiêu của bạn."
+      accessibilityLabel={`Lộ trình học: ${MISSING_DATA}`}
+      accessibilityState={{ disabled: true }}
+      disabled
       onPress={onPress}
       style={({ pressed }) => [styles.panel, pressed ? styles.pressed : null]}
     >
@@ -16,11 +19,9 @@ export function PromotionPanel({ onPress }: { onPress: () => void }) {
         <Text style={styles.mascotName}>MOMO</Text>
       </View>
       <View style={styles.copy}>
-        <Text style={styles.eyebrow}>Cùng Momo đi xa hơn</Text>
-        <Text style={styles.title}>Một lộ trình dành riêng cho bạn</Text>
-        <Text style={styles.description}>
-          Học theo trình độ, mục tiêu và thời gian phù hợp với lịch của bạn.
-        </Text>
+        <Text style={styles.eyebrow}>{MISSING_DATA}</Text>
+        <Text style={styles.title}>{MISSING_DATA}</Text>
+        <Text style={styles.description}>{MISSING_DATA}</Text>
         <View style={styles.actionRow}>
           <Text style={styles.action}>Khám phá lộ trình</Text>
           <HomeFeatureIcon name="arrow" color={colors.primaryText} size={18} />

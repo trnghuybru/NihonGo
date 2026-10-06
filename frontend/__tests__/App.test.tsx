@@ -11,6 +11,7 @@ import { AccountScreen } from '../src/screens/AccountScreen';
 import { HomeScreen } from '../src/screens/HomeScreen';
 import { learningService } from '../src/services/learningService';
 import { options, profile } from '../test-support/learning';
+import { StartupSplash } from '../src/components/StartupSplash';
 
 jest.mock('../src/services/learningService', () => ({
   learningService: { load: jest.fn(), save: jest.fn() },
@@ -40,11 +41,18 @@ afterEach(async () => {
   await ReactTestRenderer.act(async () => tree?.unmount());
 });
 
-test('opens login for an unauthenticated user', async () => {
-  jest.mocked(authService.restore).mockResolvedValue(null);
+async function renderPastStartup() {
   await ReactTestRenderer.act(async () => {
     tree = ReactTestRenderer.create(<App />);
   });
+  const splash = tree.root.findByType(StartupSplash);
+  expect(splash.props.ready).toBe(true);
+  await ReactTestRenderer.act(async () => splash.props.onFinished());
+}
+
+test('opens login for an unauthenticated user', async () => {
+  jest.mocked(authService.restore).mockResolvedValue(null);
+  await renderPastStartup();
   expect(tree.root.findAllByType(LoginScreen)).toHaveLength(1);
   expect(tree.root.findAllByType(AccountScreen)).toHaveLength(0);
 });
@@ -58,9 +66,7 @@ test('restores the authenticated home only after session validation', async () =
     email_verified: true,
     phone_verified: false,
   });
-  await ReactTestRenderer.act(async () => {
-    tree = ReactTestRenderer.create(<App />);
-  });
+  await renderPastStartup();
   expect(tree.root.findAllByType(HomeScreen)).toHaveLength(1);
 });
 
@@ -68,9 +74,7 @@ test('does not enter the app or discard session on network failure', async () =>
   jest
     .mocked(authService.restore)
     .mockRejectedValue(new Error('Network unavailable'));
-  await ReactTestRenderer.act(async () => {
-    tree = ReactTestRenderer.create(<App />);
-  });
+  await renderPastStartup();
   expect(tree.root.findAllByType(AccountScreen)).toHaveLength(0);
   expect(tree.root.findAllByType(LoginScreen)).toHaveLength(0);
   expect(JSON.stringify(tree.toJSON())).toContain('Network unavailable');

@@ -5,7 +5,7 @@ from typing import Generator, List, Dict, Any, Optional
 from dotenv import load_dotenv
 
 OPENROUTER_API_URL = "https://openrouter.ai/api/v1/chat/completions"
-DEFAULT_MODEL = "nex-agi/nex-n2.5-pro:free"
+DEFAULT_MODEL = "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free"
 
 # System prompt súc tích, tối ưu riêng cho giao tiếp giọng nói (Voice AI / TTS)
 VOICE_SYSTEM_PROMPT = (
@@ -106,7 +106,7 @@ def stream_voice_chat(
     language: str = "ja-JP"
 ) -> Generator[str, None, None]:
     """
-    Gửi request streaming SSE tới OpenRouter API với mô hình nex-agi/nex-n2.5-pro:free.
+    Gửi request streaming SSE tới OpenRouter API với model đã chọn.
     Trích xuất từng token `delta.content` và stream ngược lại cho client (React Native).
     """
     # Luôn đọc lại file .env với override=True để nhận key mới nhất mà không cần restart server thủ công
@@ -142,8 +142,9 @@ def stream_voice_chat(
         "model": model,
         "messages": prepared_messages,
         "stream": True,
-        "temperature": 0.7,
-        "max_tokens": 512,
+        "temperature": 0.4,
+        "max_tokens": 256,
+        "reasoning": {"enabled": False, "exclude": True},
     }
 
     try:
@@ -198,4 +199,3 @@ def stream_voice_chat(
         err_msg = f"Lỗi kết nối OpenRouter: {str(e)}"
         yield f"data: {json.dumps({'error': err_msg, 'content': f'⚠️ {err_msg}'})}\n\n"
         yield "data: [DONE]\n\n"
-

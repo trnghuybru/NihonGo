@@ -31,7 +31,7 @@ test('exposes four accessible tabs and only one selected destination', async () 
     tabs.filter(node => node.props.accessibilityState.selected),
   ).toHaveLength(1);
   expect(tabs[0].props.accessibilityState.selected).toBe(true);
-  await act(async () => tabs[2].props.onPress());
+  await act(async () => tabs[1].props.onPress());
   expect(onSelectTab).toHaveBeenCalledWith('practice');
 });
 

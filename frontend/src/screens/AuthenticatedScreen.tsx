@@ -12,7 +12,7 @@ import { HomeScreen } from './HomeScreen';
 import { LearningPlanScreen } from './LearningPlanScreen';
 import { LearningAreaScreen } from './LearningAreaScreen';
 import { LearningSetupScreen } from './LearningSetupScreen';
-import { VoiceChatScreen } from './VoiceChatScreen';
+import { SpeakingScenariosScreen } from './SpeakingScenariosScreen';
 import { PracticeScreen } from './PracticeScreen';
 
 interface MainTabsProps {
@@ -96,7 +96,7 @@ function MainTabs({
           />
         ) : selectedTab === 'practice' ? (
           activeSkill === 'speaking' ? (
-            <VoiceChatScreen />
+            <SpeakingScenariosScreen />
           ) : activeSkill ? (
             <LearningAreaScreen area={activeSkill} />
           ) : (

@@ -23,8 +23,8 @@ export function SkillPicker({
         <HomeSkillCard
           title="Nói"
           japaneseLabel="話す"
-          description="Phản xạ cùng Aoi"
-          action="Bắt đầu nói"
+          description="Luyện nói theo tình huống"
+          action="Xem tình huống"
           pose="speaking"
           onPress={() => onOpenSkill('speaking')}
         />

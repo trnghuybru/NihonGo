@@ -38,8 +38,8 @@ class TTSService {
   }
 
   public async init(onStatusChange?: TTSStatusCallback): Promise<void> {
-    if (this.isInitialized) return;
     this.onStatusChange = onStatusChange || null;
+    if (this.isInitialized) return;
 
     const tts = getTtsModule();
     if (!tts) {

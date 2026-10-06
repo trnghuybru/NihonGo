@@ -8,6 +8,24 @@ import { LearningSetupScreen } from '../src/screens/LearningSetupScreen';
 import { AuthButton } from '../src/components/AuthForm';
 import { learningService } from '../src/services/learningService';
 import { options, profile } from '../test-support/learning';
+import { PracticeScreen } from '../src/screens/PracticeScreen';
+import { LearningAreaScreen } from '../src/screens/LearningAreaScreen';
+import { SpeakingScenariosScreen } from '../src/screens/SpeakingScenariosScreen';
+import { speakingService } from '../src/services/speakingService';
+
+jest.mock('../src/services/speakingService', () => ({
+  speakingService: {
+    categories: jest.fn().mockResolvedValue([]),
+    list: jest
+      .fn()
+      .mockResolvedValue({
+        items: [],
+        pagination: { page: 1, page_size: 20, total: 0, total_pages: 0 },
+      }),
+    detail: jest.fn(),
+    start: jest.fn(),
+  },
+}));
 
 jest.mock('../src/services/learningService', () => ({
   learningService: { load: jest.fn(), save: jest.fn() },
@@ -67,7 +85,9 @@ test('opens first-use setup and enters the home tab only after saving', async ()
 test('loads persisted settings and cancels edits without mutating the saved profile', async () => {
   jest.mocked(learningService.load).mockResolvedValue({ options, profile });
   await render();
-  await act(async () => tab('Học tập').props.onPress());
+  await act(async () =>
+    tree.root.findByType(HomeScreen).props.onContinueLearning(),
+  );
   await act(async () =>
     tree.root.findByType(LearningPlanScreen).props.onEdit(),
   );
@@ -87,14 +107,29 @@ test('navigates between the four real destinations', async () => {
   jest.mocked(learningService.load).mockResolvedValue({ options, profile });
   await render();
   expect(tree.root.findAllByType(HomeScreen)).toHaveLength(1);
-  await act(async () => tab('Học tập').props.onPress());
-  expect(tree.root.findAllByType(LearningPlanScreen)).toHaveLength(1);
-  await act(async () => tab('Tài khoản').props.onPress());
+  await act(async () => tab('Luyện tập').props.onPress());
+  expect(tree.root.findAllByType(PracticeScreen)).toHaveLength(1);
+  await act(async () => tab('Từ vựng').props.onPress());
+  expect(tree.root.findByType(LearningAreaScreen).props.area).toBe(
+    'vocabulary',
+  );
+  await act(async () => tab('Cá nhân').props.onPress());
   expect(tree.root.findByType(AccountScreen).props.learningProfile).toEqual(
     profile,
   );
   await act(async () => tab('Trang chủ').props.onPress());
   expect(tree.root.findAllByType(HomeScreen)).toHaveLength(1);
+});
+
+test('opens the API-connected speaking screen from the home skill card', async () => {
+  jest.mocked(learningService.load).mockResolvedValue({ options, profile });
+  await render();
+  await act(async () =>
+    tree.root.findByType(HomeScreen).props.onOpenSkill('speaking'),
+  );
+  expect(tree.root.findAllByType(SpeakingScenariosScreen)).toHaveLength(1);
+  expect(speakingService.categories).toHaveBeenCalledTimes(1);
+  expect(speakingService.list).toHaveBeenCalledTimes(1);
 });
 
 test('network errors do not masquerade as missing settings; retries load the saved profile', async () => {

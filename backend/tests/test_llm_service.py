@@ -1,7 +1,30 @@
 import unittest
-from services.llm_service import trim_and_manage_context, MAX_HISTORY_MESSAGES, VOICE_SYSTEM_PROMPT
+from unittest.mock import MagicMock, patch
+from services.llm_service import stream_voice_chat, trim_and_manage_context, MAX_HISTORY_MESSAGES, VOICE_SYSTEM_PROMPT
 
 class TestLLMService(unittest.TestCase):
+    def test_stream_request_disables_reasoning_and_keeps_topic_prompt(self):
+        response = MagicMock(status_code=200)
+        response.iter_lines.return_value = [
+            b'data: {"choices":[{"delta":{"reasoning":"PRIVATE THINKING"}}]}',
+            'data: {"choices":[{"delta":{"content":"こんにちは"}}]}'.encode(),
+            b'data: [DONE]',
+        ]
+        with patch("services.llm_service.load_dotenv"), \
+                patch("services.llm_service.requests.post", return_value=response) as post:
+            chunks = list(stream_voice_chat(
+                [{"role": "user", "content": "こんにちは"}], api_key="server-key",
+                topic="restaurant", level="N5",
+            ))
+        payload = post.call_args.kwargs["json"]
+        self.assertEqual(payload["model"], "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free")
+        self.assertEqual(payload["reasoning"], {"enabled": False, "exclude": True})
+        self.assertEqual(payload["max_tokens"], 256)
+        self.assertEqual(payload["messages"][0]["role"], "system")
+        self.assertIn("レストラン", payload["messages"][0]["content"])
+        self.assertNotIn("PRIVATE THINKING", "".join(chunks))
+        self.assertTrue(chunks[-1].endswith("[DONE]\n\n"))
+
     def test_context_management_under_limit_vietnamese(self):
         messages = [
             {"role": "user", "content": "Xin chào"},
@@ -53,4 +76,3 @@ class TestLLMService(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-

@@ -30,6 +30,8 @@ class VoiceService {
   private isInitialized = false;
   private isListening = false;
   private callbacks: VoiceCallbacks = {};
+  private lifecycle = 0;
+  private cleanup: Promise<void> = Promise.resolve();
 
   public isAvailable(): boolean {
     return Boolean(NativeModules.Voice);
@@ -59,6 +61,7 @@ class VoiceService {
   }
 
   public init(callbacks: VoiceCallbacks): void {
+    this.lifecycle += 1;
     this.callbacks = callbacks;
     if (this.isInitialized) return;
 
@@ -92,7 +95,10 @@ class VoiceService {
       let friendlyMsg = 'Không nhận diện được giọng nói';
 
       // Xử lý các mã lỗi phổ biến trên Android và iOS
-      if (rawMsg.includes('300') || rawMsg.includes('Failed to initialize recognizer')) {
+      if (
+        rawMsg.includes('300') ||
+        rawMsg.includes('Failed to initialize recognizer')
+      ) {
         friendlyMsg =
           "Lỗi 300: Thiết bị chưa bật 'Đọc chính tả' (Dictation) trong Cài đặt bàn phím iOS hoặc Simulator chưa hỗ trợ locale này";
       } else if (rawMsg.includes('7/') || rawMsg.includes('No match')) {
@@ -124,15 +130,19 @@ class VoiceService {
   }
 
   public async start(locale = 'ja-JP'): Promise<void> {
+    const lifecycle = this.lifecycle;
+    await this.cleanup;
+    if (lifecycle !== this.lifecycle) return;
     const Voice = getVoiceModule();
     if (!Voice) {
       this.callbacks.onError?.(
-        'Native Module Voice chưa sẵn sàng. Hãy chạy `cd ios && pod install` và build lại app native.',
+        'Nhận dạng giọng nói chưa khả dụng trên thiết bị này. Hãy dùng chế độ văn bản.',
       );
       return;
     }
 
     const hasPermission = await this.requestPermissions();
+    if (lifecycle !== this.lifecycle) return;
     if (!hasPermission) {
       this.callbacks.onError?.('Chưa được cấp quyền truy cập Microphone.');
       return;
@@ -188,17 +198,22 @@ class VoiceService {
   }
 
   public async destroy(): Promise<void> {
-    const Voice = getVoiceModule();
-    if (Voice) {
-      try {
-        await Voice.destroy();
-        Voice.removeAllListeners();
-      } catch (e) {
-        console.warn('Lỗi dọn dẹp Voice:', e);
-      }
-    }
+    this.lifecycle += 1;
     this.isInitialized = false;
     this.isListening = false;
+    this.callbacks = {};
+    const Voice = getVoiceModule();
+    if (Voice) {
+      Voice.removeAllListeners();
+      this.cleanup = this.cleanup.then(async () => {
+        try {
+          await Voice.destroy();
+        } catch (e) {
+          console.warn('Lỗi dọn dẹp Voice:', e);
+        }
+      });
+      await this.cleanup;
+    }
   }
 
   public getIsListening(): boolean {

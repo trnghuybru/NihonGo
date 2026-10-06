@@ -63,6 +63,16 @@ test('renders personalized learning data without invented progress', async () =>
     }).length,
   ).toBeGreaterThan(0);
   expect(output).not.toContain('72%');
+  expect(output).not.toContain('ありがとう');
+  expect(output).not.toContain('arigatou');
+  expect(output).not.toContain('Một lộ trình dành riêng cho bạn');
+  expect(output).toContain('xxx');
+  for (const label of ['Từ vựng: xxx', 'Lộ trình học: xxx']) {
+    const placeholder = tree.root.findAll(
+      node => node.props.accessibilityLabel === label,
+    )[0];
+    expect(placeholder.props.accessibilityState.disabled).toBe(true);
+  }
   expect(
     button('Tiếp tục học. N5 · Sơ cấp. Giao tiếp hằng ngày. 15 phút mỗi ngày.'),
   ).toBeTruthy();
@@ -72,7 +82,7 @@ test('routes all four skill cards through one typed callback', async () => {
   await render();
   const skillLabels = [
     ['Nghe. Hội thoại và phát âm. Luyện nghe', 'listening'],
-    ['Nói. Phản xạ cùng Aoi. Bắt đầu nói', 'speaking'],
+    ['Nói. Luyện nói theo tình huống. Xem tình huống', 'speaking'],
     ['Đọc. Đoạn văn theo cấp độ. Luyện đọc', 'reading'],
     ['Viết. Kana, Kanji và viết câu. Luyện viết', 'writing'],
   ] as const;

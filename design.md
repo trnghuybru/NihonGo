@@ -129,7 +129,14 @@ Thanh điều hướng xuất hiện sau khi người dùng đã hoàn tất thi
 - Không hiện nhãn bằng mắt để bám sát mẫu; mỗi tab vẫn có tên, role `tab`, selected state và tablist label cho trình đọc màn hình.
 - Android Back từ một kỹ năng quay về màn chọn kỹ năng; từ màn Luyện tập, tab phụ hoặc chi tiết kế hoạch quay về Trang chủ. Màn kỹ năng có nút Chọn kỹ năng khác dùng được trên cả iOS/Android. Chuyển khỏi Nói sẽ unmount màn hình để giải phóng microphone, luồng hội thoại và TTS.
 - `BottomNavigation` là controlled component: màn hình cha sở hữu `selectedTab`, còn component chỉ phát `onSelectTab`. Danh sách tab và kiểu `AppTab` có một nguồn duy nhất.
-- Thẻ kỹ năng trên Home mở thẳng kỹ năng tương ứng và đánh dấu tab Luyện tập. Chạm tab Luyện tập mở bộ chọn bốn kỹ năng; dùng chung `SkillPicker` với Home để giữ nội dung và giao diện nhất quán. Tra từ và thẻ từ vựng mở tab Từ vựng, giữ truy vấn đã nhập. Nói dùng `VoiceChatScreen`, Cá nhân dùng `AccountScreen`. Nghe, Đọc, Viết và Từ vựng hiện dùng màn trạng thái chưa có nội dung; không giả lập bài luyện hoặc kết quả tra cứu.
+- Thẻ kỹ năng trên Home mở thẳng kỹ năng tương ứng và đánh dấu tab Luyện tập. Chạm tab Luyện tập mở bộ chọn bốn kỹ năng; dùng chung `SkillPicker` với Home để giữ nội dung và giao diện nhất quán. Tra từ và thẻ từ vựng mở tab Từ vựng, giữ truy vấn đã nhập. Nói mở danh sách tình huống. Cá nhân dùng `AccountScreen`. Nghe, Đọc, Viết và Từ vựng hiện dùng màn trạng thái chưa có nội dung; không giả lập bài luyện hoặc kết quả tra cứu.
+
+## Nói theo tình huống
+
+- Màn đầu hiển thị bốn chủ đề **Công việc**, **Đời sống**, **Ăn uống**, **Du lịch**. Mỗi thẻ chủ đề có mô tả, số lượng và tên các tình huống bên trong. Chạm một chủ đề mở danh sách tình huống của chủ đề đó; “Xem tất cả” mở danh sách được nhóm rõ theo bốn chủ đề. Mỗi nhóm hiện có hai tình huống mẫu.
+- Thẻ tình huống có tên, trình độ, thời lượng và mô tả. Bộ lọc dạng bảng trượt chọn một chủ đề và một trình độ, có thể áp dụng hoặc xóa. Số kết quả và trạng thái rỗng cập nhật theo lựa chọn.
+- Chạm thẻ mở chi tiết gồm bối cảnh, vai trò, mục tiêu luyện nói và lời thoại mẫu. Nút “Bắt đầu tình huống” mở giao diện buổi luyện với lời thoại, bản dịch và câu trả lời gợi ý.
+- Luồng tình huống hiện chỉ là giao diện với dữ liệu cục bộ; micro trên màn buổi luyện được hiển thị ở trạng thái chưa khả dụng và có nhãn giải thích. Chưa nối với hội thoại Aoi. Android Back và nút quay lại đi từ buổi luyện → chi tiết → danh sách → chủ đề.
 - Kế hoạch học tập là màn chi tiết mở từ Tiếp tục học/Khám phá lộ trình trên Home, có nút Về trang chủ, không chiếm thêm tab. Chỉnh sửa/hủy thiết lập giữ ngữ cảnh kế hoạch.
 
 ## Trang chủ học tập

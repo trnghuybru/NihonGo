@@ -292,7 +292,7 @@ export function LoginScreen() {
           <AuthField
             label="Email"
             icon="mail"
-            placeholder="ban@example.com"
+            placeholder="Nhập email"
             value={email}
             onChangeText={setEmail}
             keyboardType="email-address"
@@ -307,7 +307,7 @@ export function LoginScreen() {
             onChangeText={setPhone}
             keyboardType="phone-pad"
             autoComplete="tel"
-            placeholder="0912 345 678"
+            placeholder="Nhập số điện thoại"
             maxLength={32}
             editable={!busy}
           />
@@ -332,7 +332,7 @@ export function LoginScreen() {
         <AuthField
           label="Mã xác thực"
           code
-          placeholder="000000"
+          placeholder="Nhập mã xác thực"
           value={code}
           onChangeText={value => setCode(value.replace(/\D/g, '').slice(0, 6))}
           keyboardType="number-pad"

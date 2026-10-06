@@ -3,9 +3,10 @@ from flask import Flask, jsonify, request, Response, stream_with_context, send_f
 from flask_cors import CORS
 from dotenv import load_dotenv
 
-from services.llm_service import stream_voice_chat, trim_and_manage_context
+from services.llm_service import DEFAULT_MODEL, stream_voice_chat, trim_and_manage_context
 from auth import init_auth
 from learning import init_learning
+from speaking import init_speaking
 
 load_dotenv()
 
@@ -14,6 +15,7 @@ app = Flask(__name__, static_folder=os.path.abspath(os.path.join(os.path.dirname
 CORS(app, resources={r"/*": {"origins": "*"}})
 init_auth(app)
 init_learning(app)
+init_speaking(app)
 
 
 @app.get("/")
@@ -520,7 +522,7 @@ def chat_voice_stream():
       - message: string (tin nhắn mới của user)
       - history: List[...] (lịch sử trò chuyện cũ)
       - summary: string (tùy chọn - bối cảnh nén từ các lượt đàm thoại trước)
-      - model: string (tùy chọn - mặc định là nex-agi/nex-n2.5-pro:free)
+      - model: string (tùy chọn - mặc định là OPENROUTER_MODEL hoặc DEFAULT_MODEL)
     """
     data = request.get_json(silent=True) or {}
     
@@ -536,7 +538,7 @@ def chat_voice_stream():
         return jsonify({"error": "No messages provided"}), 400
 
     summary = data.get("summary")
-    model = data.get("model", "nex-agi/nex-n2.5-pro:free")
+    model = data.get("model") or os.getenv("OPENROUTER_MODEL") or DEFAULT_MODEL
     api_key = data.get("api_key")  # Cho phép truyền key từ client nếu cần test
     level = data.get("level", "N4")
     topic = data.get("topic", "free_talk")

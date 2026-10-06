@@ -125,13 +125,20 @@ export async function authenticatedRequest<T>(
   path: string,
   data?: unknown,
   method: 'GET' | 'POST' | 'PUT' = data === undefined ? 'GET' : 'POST',
+  options?: { timeoutMs?: number },
 ): Promise<T> {
   const currentSession = session;
   if (!currentSession) {
     throw new ApiError('Vui lòng đăng nhập lại.', 401, 'unauthorized');
   }
   try {
-    return await apiRequest<T>(path, data, currentSession.access_token, method);
+    return await apiRequest<T>(
+      path,
+      data,
+      currentSession.access_token,
+      method,
+      options,
+    );
   } catch (error) {
     if (!(error instanceof ApiError) || error.status !== 401 || !session) {
       throw error;
@@ -144,7 +151,7 @@ export async function authenticatedRequest<T>(
       session.access_token !== currentSession.access_token
         ? session
         : await refresh();
-    return apiRequest<T>(path, data, tokens.access_token, method);
+    return apiRequest<T>(path, data, tokens.access_token, method, options);
   }
 }
 
