@@ -2,20 +2,23 @@ import { memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
   ActivityIndicator,
   BackHandler,
-  Platform,
   Pressable,
   ScrollView,
   SectionList,
   StyleSheet,
   Modal,
+  KeyboardAvoidingView,
+  Platform,
   Text,
   TextInput,
   View,
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { AuthIcon } from '../components/AuthIcon';
 import { AuthButton, AuthNotice } from '../components/AuthForm';
 import { HomeFeatureIcon } from '../components/HomeFeatureIcon';
 import { ConversationScreen } from './ConversationScreen';
+import { SpeakingHistory } from './SpeakingHistory';
 import { MISSING_DATA } from '../config/content';
 import {
   errorMessage,
@@ -30,9 +33,15 @@ import {
   StartSessionInput,
   speakingService,
 } from '../services/speakingService';
-import { colors, layout, spacing, typography } from '../theme/theme';
+import {
+  colors,
+  layout,
+  radius,
+  shadowMd,
+  spacing,
+  typography,
+} from '../theme/theme';
 
-type Page = 'list' | 'started';
 type LevelFilter = LearningLevel | 'all';
 const levels: readonly LevelFilter[] = [
   'all',
@@ -69,15 +78,29 @@ function Option({
       accessibilityState={{ checked: selected, disabled }}
       disabled={disabled}
       onPress={onPress}
-      style={[
+      style={({ pressed }) => [
         styles.filterOption,
         selected ? styles.filterOptionSelected : null,
+        pressed
+          ? selected
+            ? styles.filterOptionPressed
+            : styles.pressed
+          : null,
+        disabled ? styles.filterOptionDisabled : null,
       ]}
     >
+      {selected ? (
+        <AuthIcon
+          name="check"
+          size={16}
+          color={disabled ? colors.disabledText : colors.onPrimary}
+        />
+      ) : null}
       <Text
         style={[
           styles.filterOptionText,
           selected ? styles.filterOptionTextSelected : null,
+          disabled ? styles.filterOptionTextDisabled : null,
         ]}
       >
         {label}
@@ -99,7 +122,7 @@ const ScenarioCard = memo(function ScenarioCardView({
         scenario.category.name
       }, trình độ ${levelText(scenario.difficulty_level)}, ${
         scenario.estimated_duration_minutes
-      } phút. Xem chi tiết`}
+      } phút. Chọn ngữ cảnh`}
       onPress={() => onPress(scenario)}
       style={({ pressed }) => [
         styles.scenarioCard,
@@ -109,15 +132,21 @@ const ScenarioCard = memo(function ScenarioCardView({
       <View style={styles.cardTitleRow}>
         <View style={styles.cardTitleCopy}>
           <Text style={styles.scenarioTitle}>{scenario.title}</Text>
-          <Text style={styles.levelLabel}>
-            {levelText(scenario.difficulty_level)} ·{' '}
-            {scenario.estimated_duration_minutes} phút
-          </Text>
+          <View style={styles.metadataRow}>
+            <Text style={styles.levelLabel}>
+              {levelText(scenario.difficulty_level)}
+            </Text>
+            <Text style={styles.durationLabel}>
+              {scenario.estimated_duration_minutes} phút
+            </Text>
+          </View>
           <Text numberOfLines={2} style={styles.scenarioDescription}>
             {scenario.description}
           </Text>
         </View>
-        <HomeFeatureIcon name="arrow" color={colors.muted} size={18} />
+        <View style={styles.scenarioArrow}>
+          <HomeFeatureIcon name="arrow" color={colors.primaryText} size={20} />
+        </View>
       </View>
     </Pressable>
   );
@@ -152,17 +181,13 @@ function ScenarioPreview({
   onStart,
   busy,
   startError,
-  existingSession,
 }: {
   scenario: ScenarioDetail;
   onStart: (input: StartSessionInput) => void;
   busy: boolean;
   startError: string;
-  existingSession: StartedSession | null;
 }) {
-  const [roleId, setRoleId] = useState(
-    existingSession?.session.scenario_role_id || scenario.roles[0]?.id || '',
-  );
+  const [roleId, setRoleId] = useState(scenario.roles[0]?.id || '');
   const role = scenario.roles.find(item => item.id === roleId);
   return (
     <View style={styles.previewContent}>
@@ -174,17 +199,24 @@ function ScenarioPreview({
         {scenario.estimated_duration_minutes} phút
       </Text>
       <Text style={styles.scenarioDescription}>
-        {scenario.context || scenario.description || MISSING_DATA}
+        {scenario.description || MISSING_DATA}
       </Text>
-      {scenario.learning_objectives ? (
-        <Text style={styles.scenarioDescription}>
-          Bạn sẽ luyện: {scenario.learning_objectives}
-        </Text>
+      {role ? (
+        <View style={styles.roleNotice}>
+          <View style={styles.roleIcon}>
+            <AuthIcon name="user" size={20} />
+          </View>
+          <View style={styles.roleCopy}>
+            <Text style={styles.optionHeading}>Vai AI</Text>
+            <Text style={styles.scenarioTitle}>{role.name}</Text>
+            <Text style={styles.resultCount}>{role.description}</Text>
+          </View>
+        </View>
       ) : null}
       {scenario.roles.length > 1 ? (
         <View
           accessibilityRole="radiogroup"
-          accessibilityLabel="Chọn vai hội thoại"
+          accessibilityLabel="Chọn vai AI"
           style={styles.optionWrap}
         >
           {scenario.roles.map(item => (
@@ -192,7 +224,7 @@ function ScenarioPreview({
               key={item.id}
               label={item.name}
               selected={item.id === roleId}
-              disabled={busy || Boolean(existingSession)}
+              disabled={busy}
               onPress={() => setRoleId(item.id)}
             />
           ))}
@@ -200,13 +232,13 @@ function ScenarioPreview({
       ) : null}
       <AuthNotice message={startError} error />
       <AuthButton
-        label="Tiếp tục"
+        label="Bắt đầu trò chuyện"
         busy={busy}
         disabled={!role}
         onPress={() =>
           onStart({
             role_id: roleId,
-            input_mode: 'text',
+            input_mode: 'voice',
             audio_storage_enabled: false,
           })
         }
@@ -216,13 +248,18 @@ function ScenarioPreview({
 }
 export function SpeakingScenariosScreen() {
   const insets = useSafeAreaInsets();
-  const [page, setPage] = useState<Page>('list');
+  const [choosing, setChoosing] = useState(false);
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [category, setCategory] = useState('all');
   const [level, setLevel] = useState<LevelFilter>('all');
   const [queryDraft, setQueryDraft] = useState('');
+  const [searchFocused, setSearchFocused] = useState(false);
   const [query, setQuery] = useState('');
   const [started, setStarted] = useState<StartedSession | null>(null);
+  const [historyVersion, setHistoryVersion] = useState(0);
+  const [openingHistory, setOpeningHistory] = useState(false);
+  const [historyError, setHistoryError] = useState('');
+  const openingPending = useRef(false);
   const [starting, setStarting] = useState(false);
   const [startError, setStartError] = useState('');
   const startPending = useRef(false);
@@ -280,28 +317,59 @@ export function SpeakingScenariosScreen() {
     Number(category !== 'all') +
     Number(level !== 'all') +
     Number(Boolean(query));
-  const goBack = useCallback(() => {
+  const closeChooser = useCallback(() => {
     if (startPending.current) return;
     setSelectedId(null);
     setStartError('');
-    setPage('list');
+    setChoosing(false);
+  }, []);
+  const goBack = useCallback(() => {
+    if (startPending.current) return;
+    if (selectedId) {
+      setSelectedId(null);
+      setStartError('');
+    } else {
+      closeChooser();
+    }
+  }, [selectedId, closeChooser]);
+  const openChooser = useCallback(() => {
+    setSelectedId(null);
+    setStartError('');
+    setChoosing(true);
+  }, []);
+  const returnToHistory = useCallback(() => {
+    setStarted(null);
+    setHistoryError('');
+    setHistoryVersion(value => value + 1);
   }, []);
   useEffect(() => {
-    if (page !== 'started') return;
+    if (!started || choosing) return;
     const subscription = BackHandler.addEventListener(
       'hardwareBackPress',
       () => {
-        goBack();
+        returnToHistory();
         return true;
       },
     );
     return () => subscription.remove();
-  }, [goBack, page]);
+  }, [started, choosing, returnToHistory]);
+  const openHistory = useCallback(async (id: string) => {
+    if (openingPending.current) return;
+    openingPending.current = true;
+    setOpeningHistory(true);
+    setHistoryError('');
+    try {
+      const result = await speakingService.session(id);
+      if (mounted.current) setStarted(result);
+    } catch (failure) {
+      if (mounted.current) setHistoryError(errorMessage(failure));
+    } finally {
+      openingPending.current = false;
+      if (mounted.current) setOpeningHistory(false);
+    }
+  }, []);
   const openScenario = useCallback((item: SpeakingScenario) => {
     setSelectedId(item.id);
-    setStarted(previous =>
-      previous?.session.scenario_id === item.id ? previous : null,
-    );
     setStartError('');
   }, []);
   const renderScenario = useCallback(
@@ -317,10 +385,6 @@ export function SpeakingScenariosScreen() {
     setQueryDraft('');
   }, []);
   const begin = async (values: StartSessionInput) => {
-    if (started) {
-      setPage('started');
-      return;
-    }
     if (!selectedId || startPending.current) return;
     startPending.current = true;
     setStarting(true);
@@ -329,7 +393,8 @@ export function SpeakingScenariosScreen() {
       const result = await speakingService.start(selectedId, values);
       if (mounted.current) {
         setStarted(result);
-        setPage('started');
+        setChoosing(false);
+        setSelectedId(null);
       }
     } catch (error) {
       if (mounted.current) setStartError(errorMessage(error));
@@ -338,225 +403,294 @@ export function SpeakingScenariosScreen() {
       if (mounted.current) setStarting(false);
     }
   };
-  if (page === 'started' && started)
-    return (
-      <ConversationScreen
-        key={started.session.id}
-        result={started}
-        onBack={goBack}
-      />
-    );
-  const listPadding = [
-    styles.listContent,
-    Platform.OS === 'android' ? { paddingTop: insets.top + spacing.lg } : null,
-  ];
   return (
     <View style={styles.fill}>
-      <SectionList
-        accessibilityElementsHidden={Boolean(selectedId)}
-        importantForAccessibility={selectedId ? 'no-hide-descendants' : 'auto'}
-        sections={sections}
-        keyExtractor={keyExtractor}
-        renderItem={renderScenario}
-        stickySectionHeadersEnabled={false}
-        contentInsetAdjustmentBehavior="automatic"
-        contentContainerStyle={listPadding}
-        renderSectionHeader={({ section }) => (
-          <View style={styles.categorySectionHeader}>
-            <View style={styles.categorySectionCopy}>
-              <Text style={styles.categorySectionTitle}>{section.title}</Text>
-            </View>
+      <View
+        style={styles.fill}
+        accessibilityElementsHidden={choosing}
+        importantForAccessibility={choosing ? 'no-hide-descendants' : 'auto'}
+      >
+        {started ? (
+          <ConversationScreen
+            key={started.session.id}
+            result={started}
+            onBack={returnToHistory}
+          />
+        ) : (
+          <View
+            style={[styles.chatShell, { paddingTop: insets.top + spacing.lg }]}
+          >
+            <Text accessibilityRole="header" style={styles.pageTitle}>
+              Luyện nói
+            </Text>
+            <Text style={styles.resultCount}>Hội thoại cùng AI</Text>
+            <AuthButton
+              label="Cuộc trò chuyện mới"
+              disabled={openingHistory}
+              onPress={openChooser}
+            />
+            <SpeakingHistory
+              refreshKey={historyVersion}
+              opening={openingHistory}
+              openError={historyError}
+              onOpen={openHistory}
+            />
           </View>
         )}
-        ListHeaderComponent={
-          <View style={styles.listHeader}>
-            <View style={styles.listIntro}>
-              <Text accessibilityRole="header" style={styles.pageTitle}>
-                Tình huống
-              </Text>
-            </View>
-            <View style={styles.optionGroup}>
-              <Text style={styles.optionHeading}>Chủ đề</Text>
-              <ScrollView
-                horizontal
-                showsHorizontalScrollIndicator={false}
-                contentContainerStyle={styles.filterRow}
-                accessibilityRole="radiogroup"
-                accessibilityLabel="Chọn chủ đề"
-              >
-                <Option
-                  label="Tất cả chủ đề"
-                  selected={category === 'all'}
-                  onPress={() => setCategory('all')}
-                />
-                {categories.map(item => (
-                  <Option
-                    key={item.id}
-                    label={item.name}
-                    selected={category === item.id}
-                    onPress={() => setCategory(item.id)}
-                  />
-                ))}
-              </ScrollView>
-              {categoryResource.state.status === 'loading' ? (
-                <Text style={styles.resultCount}>Đang tải chủ đề…</Text>
-              ) : null}
-              {categoryResource.state.status === 'error' ? (
-                <View>
-                  <AuthNotice message={categoryResource.state.message} error />
-                  <AuthButton
-                    label="Tải lại chủ đề"
-                    variant="text"
-                    onPress={categoryResource.reload}
-                  />
-                </View>
-              ) : null}
-            </View>
-            <View style={styles.optionGroup}>
-              <Text style={styles.optionHeading}>Trình độ</Text>
-              <ScrollView
-                horizontal
-                showsHorizontalScrollIndicator={false}
-                contentContainerStyle={styles.filterRow}
-                accessibilityRole="radiogroup"
-                accessibilityLabel="Chọn trình độ"
-              >
-                {levels.map(item => (
-                  <Option
-                    key={item}
-                    label={levelText(item)}
-                    selected={level === item}
-                    onPress={() => setLevel(item)}
-                  />
-                ))}
-              </ScrollView>
-            </View>
-            <View style={styles.searchRow}>
-              <TextInput
-                accessibilityLabel="Tìm tình huống"
-                placeholder="Tìm tên hoặc mô tả"
-                value={queryDraft}
-                onChangeText={setQueryDraft}
-                maxLength={200}
-                returnKeyType="search"
-                onSubmitEditing={() => setQuery(queryDraft.trim())}
-                style={styles.searchInput}
-              />
-              <AuthButton
-                label="Tìm kiếm"
-                variant="outline"
-                onPress={() => setQuery(queryDraft.trim())}
-              />
-            </View>
-            <View style={styles.listSectionHeading}>
-              <View style={styles.listSectionCopy}>
-                {list.state.status === 'ready' ? (
-                  <Text style={styles.resultCount}>
-                    {list.state.data.pagination.total} tình huống ·{' '}
-                    {categoryName}
-                  </Text>
-                ) : null}
-              </View>
-              {filterCount > 0 ? (
-                <Pressable
-                  accessibilityRole="button"
-                  accessibilityLabel="Xóa tất cả bộ lọc"
-                  onPress={clearFilters}
-                  style={styles.clearFilter}
-                >
-                  <Text style={styles.clearFilterText}>Xóa bộ lọc</Text>
-                </Pressable>
-              ) : null}
-            </View>
-          </View>
-        }
-        ListEmptyComponent={
-          list.state.status !== 'ready' ? (
-            <LoadNotice
-              loading={list.state.status === 'loading'}
-              message={
-                list.state.status === 'error' ? list.state.message : undefined
-              }
-              onRetry={list.reload}
-            />
-          ) : (
-            <View style={styles.emptyCard}>
-              <Text style={styles.emptyTitle}>Chưa có tình huống phù hợp</Text>
-              <Text style={styles.emptyText}>
-                Chọn chủ đề hoặc trình độ khác.
-              </Text>
-              <AuthButton
-                label="Xóa bộ lọc"
-                variant="outline"
-                onPress={clearFilters}
-              />
-            </View>
-          )
-        }
-        ListFooterComponent={
-          list.state.status === 'ready' &&
-          list.state.data.pagination.page <
-            list.state.data.pagination.total_pages ? (
-            <View>
-              <AuthNotice message={list.moreError} error />
-              <AuthButton
-                label="Tải thêm tình huống"
-                busy={list.loadingMore}
-                onPress={list.loadMore}
-              />
-            </View>
-          ) : undefined
-        }
-      />
-      {selectedId ? (
+      </View>
+      {choosing ? (
         <Modal
           transparent
           visible
-          animationType="fade"
+          animationType="slide"
           onRequestClose={goBack}
           supportedOrientations={['portrait', 'landscape']}
         >
-          <View
+          <KeyboardAvoidingView
+            behavior={Platform.OS === 'ios' ? 'padding' : undefined}
             style={[
               styles.modalBackdrop,
               {
-                paddingTop: insets.top + spacing.lg,
-                paddingBottom: insets.bottom + spacing.lg,
+                paddingTop: insets.top + spacing.md,
+                paddingBottom: insets.bottom + spacing.md,
               },
             ]}
           >
             <View accessibilityViewIsModal style={styles.modalCard}>
-              <ScrollView contentContainerStyle={styles.modalContent}>
-                {detail.state.status === 'ready' &&
-                detail.state.data?.id === selectedId ? (
-                  <ScenarioPreview
-                    key={detail.state.data.id}
-                    scenario={detail.state.data}
-                    onStart={begin}
-                    busy={starting}
-                    startError={startError}
-                    existingSession={started}
+              <View style={styles.modalHeading}>
+                <View style={styles.modalIcon}>
+                  <HomeFeatureIcon
+                    name="microphone"
+                    color={colors.primaryText}
+                    size={24}
                   />
-                ) : (
-                  <LoadNotice
-                    loading={detail.state.status !== 'error'}
-                    message={
-                      detail.state.status === 'error'
-                        ? detail.state.message
-                        : undefined
-                    }
-                    onRetry={detail.reload}
+                </View>
+                <View style={styles.modalHeadingCopy}>
+                  <Text accessibilityRole="header" style={styles.sectionTitle}>
+                    {selectedId ? 'Chuẩn bị hội thoại' : 'Chọn ngữ cảnh'}
+                  </Text>
+                  <Text style={styles.resultCount}>Luyện nói cùng AI</Text>
+                </View>
+              </View>
+              {selectedId ? (
+                <ScrollView
+                  keyboardShouldPersistTaps="handled"
+                  contentContainerStyle={styles.modalContent}
+                >
+                  {detail.state.status === 'ready' &&
+                  detail.state.data?.id === selectedId ? (
+                    <ScenarioPreview
+                      key={detail.state.data.id}
+                      scenario={detail.state.data}
+                      onStart={begin}
+                      busy={starting}
+                      startError={startError}
+                    />
+                  ) : (
+                    <LoadNotice
+                      loading={detail.state.status !== 'error'}
+                      message={
+                        detail.state.status === 'error'
+                          ? detail.state.message
+                          : undefined
+                      }
+                      onRetry={detail.reload}
+                    />
+                  )}
+                  <AuthButton
+                    label="Chọn ngữ cảnh khác"
+                    variant="text"
+                    disabled={starting}
+                    onPress={goBack}
                   />
-                )}
+                </ScrollView>
+              ) : (
+                <SectionList
+                  sections={sections}
+                  keyExtractor={keyExtractor}
+                  renderItem={renderScenario}
+                  stickySectionHeadersEnabled={false}
+                  contentInsetAdjustmentBehavior="automatic"
+                  contentContainerStyle={styles.listContent}
+                  keyboardShouldPersistTaps="handled"
+                  renderSectionHeader={({ section }) => (
+                    <View style={styles.categorySectionHeader}>
+                      <View style={styles.categorySectionCopy}>
+                        <Text style={styles.categorySectionTitle}>
+                          {section.title}
+                        </Text>
+                      </View>
+                    </View>
+                  )}
+                  ListHeaderComponent={
+                    <View style={styles.listHeader}>
+                      <Text style={styles.resultCount}>
+                        Chọn một tình huống bạn muốn thực hành hôm nay.
+                      </Text>
+                      <View style={styles.optionGroup}>
+                        <Text style={styles.optionHeading}>Chủ đề</Text>
+                        <ScrollView
+                          horizontal
+                          showsHorizontalScrollIndicator={false}
+                          contentContainerStyle={styles.filterRow}
+                          accessibilityRole="radiogroup"
+                          accessibilityLabel="Chọn chủ đề"
+                        >
+                          <Option
+                            label="Tất cả chủ đề"
+                            selected={category === 'all'}
+                            onPress={() => setCategory('all')}
+                          />
+                          {categories.map(item => (
+                            <Option
+                              key={item.id}
+                              label={item.name}
+                              selected={category === item.id}
+                              onPress={() => setCategory(item.id)}
+                            />
+                          ))}
+                        </ScrollView>
+                        {categoryResource.state.status === 'loading' ? (
+                          <Text style={styles.resultCount}>
+                            Đang tải chủ đề…
+                          </Text>
+                        ) : null}
+                        {categoryResource.state.status === 'error' ? (
+                          <View>
+                            <AuthNotice
+                              message={categoryResource.state.message}
+                              error
+                            />
+                            <AuthButton
+                              label="Tải lại chủ đề"
+                              variant="text"
+                              onPress={categoryResource.reload}
+                            />
+                          </View>
+                        ) : null}
+                      </View>
+                      <View style={styles.optionGroup}>
+                        <Text style={styles.optionHeading}>Trình độ</Text>
+                        <ScrollView
+                          horizontal
+                          showsHorizontalScrollIndicator={false}
+                          contentContainerStyle={styles.filterRow}
+                          accessibilityRole="radiogroup"
+                          accessibilityLabel="Chọn trình độ"
+                        >
+                          {levels.map(item => (
+                            <Option
+                              key={item}
+                              label={levelText(item)}
+                              selected={level === item}
+                              onPress={() => setLevel(item)}
+                            />
+                          ))}
+                        </ScrollView>
+                      </View>
+                      <View style={styles.optionGroup}>
+                        <Text style={styles.optionHeading}>Tìm tình huống</Text>
+                        <View style={styles.searchRow}>
+                          <TextInput
+                            accessibilityLabel="Tìm tình huống"
+                            placeholder="Tìm tên hoặc mô tả"
+                            value={queryDraft}
+                            onChangeText={setQueryDraft}
+                            maxLength={200}
+                            returnKeyType="search"
+                            onSubmitEditing={() => setQuery(queryDraft.trim())}
+                            placeholderTextColor={colors.placeholder}
+                            onFocus={() => setSearchFocused(true)}
+                            onBlur={() => setSearchFocused(false)}
+                            style={[
+                              styles.searchInput,
+                              searchFocused ? styles.searchInputFocused : null,
+                            ]}
+                          />
+                          <AuthButton
+                            label="Tìm kiếm"
+                            variant="outline"
+                            onPress={() => setQuery(queryDraft.trim())}
+                          />
+                        </View>
+                      </View>
+                      <View style={styles.listSectionHeading}>
+                        <View style={styles.listSectionCopy}>
+                          {list.state.status === 'ready' ? (
+                            <Text style={styles.resultCount}>
+                              {list.state.data.pagination.total} tình huống ·{' '}
+                              {categoryName}
+                            </Text>
+                          ) : null}
+                        </View>
+                        {filterCount > 0 ? (
+                          <Pressable
+                            accessibilityRole="button"
+                            accessibilityLabel="Xóa tất cả bộ lọc"
+                            onPress={clearFilters}
+                            style={styles.clearFilter}
+                          >
+                            <Text style={styles.clearFilterText}>
+                              Xóa bộ lọc
+                            </Text>
+                          </Pressable>
+                        ) : null}
+                      </View>
+                    </View>
+                  }
+                  ListEmptyComponent={
+                    list.state.status !== 'ready' ? (
+                      <LoadNotice
+                        loading={list.state.status === 'loading'}
+                        message={
+                          list.state.status === 'error'
+                            ? list.state.message
+                            : undefined
+                        }
+                        onRetry={list.reload}
+                      />
+                    ) : (
+                      <View style={styles.emptyCard}>
+                        <Text style={styles.emptyTitle}>
+                          Chưa có tình huống phù hợp
+                        </Text>
+                        <Text style={styles.emptyText}>
+                          Chọn chủ đề hoặc trình độ khác.
+                        </Text>
+                        <AuthButton
+                          label="Xóa bộ lọc"
+                          variant="outline"
+                          onPress={clearFilters}
+                        />
+                      </View>
+                    )
+                  }
+                  ListFooterComponent={
+                    list.state.status === 'ready' &&
+                    list.state.data.pagination.page <
+                      list.state.data.pagination.total_pages ? (
+                      <View>
+                        <AuthNotice message={list.moreError} error />
+                        <AuthButton
+                          label="Tải thêm tình huống"
+                          busy={list.loadingMore}
+                          onPress={list.loadMore}
+                        />
+                      </View>
+                    ) : undefined
+                  }
+                />
+              )}
+              <View style={styles.modalFooter}>
                 <AuthButton
                   label="Đóng"
                   variant="text"
                   disabled={starting}
-                  onPress={goBack}
+                  onPress={closeChooser}
                 />
-              </ScrollView>
+              </View>
             </View>
-          </View>
+          </KeyboardAvoidingView>
         </Modal>
       ) : null}
     </View>
@@ -564,25 +698,84 @@ export function SpeakingScenariosScreen() {
 }
 
 const styles = StyleSheet.create({
+  chatShell: {
+    flex: 1,
+    paddingHorizontal: layout.screenGutter,
+    gap: spacing.sm,
+  },
+  modalHeading: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: spacing.md,
+    padding: spacing.xl,
+    backgroundColor: colors.surface,
+  },
+  modalHeadingCopy: { flex: 1, gap: spacing.xs },
+  modalIcon: {
+    width: 52,
+    height: 52,
+    borderRadius: radius.pill,
+    backgroundColor: colors.surfaceTint,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  modalFooter: {
+    paddingHorizontal: spacing.xl,
+    paddingVertical: spacing.xs,
+    backgroundColor: colors.surface,
+  },
+  metadataRow: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    alignItems: 'center',
+    gap: spacing.sm,
+  },
+  durationLabel: { ...typography.caption, color: colors.muted },
+  scenarioArrow: {
+    width: layout.touchTarget,
+    height: layout.touchTarget,
+    borderRadius: radius.pill,
+    backgroundColor: colors.surfaceTint,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  roleNotice: {
+    padding: spacing.lg,
+    borderRadius: radius.small,
+    borderCurve: 'continuous',
+    backgroundColor: colors.surfaceTint,
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    gap: spacing.md,
+  },
+  roleIcon: { paddingTop: spacing.xs },
+  roleCopy: { flex: 1, gap: spacing.xs },
   filterRow: { gap: spacing.sm },
   searchRow: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm },
   searchInput: {
     flex: 1,
     minWidth: 0,
-    ...typography.body,
-    color: colors.dark,
+    ...typography.input,
+    color: colors.inputText,
     borderWidth: 1,
     borderColor: colors.border,
-    borderRadius: 10,
-    padding: spacing.md,
+    minHeight: layout.inputHeight,
+    borderRadius: radius.input,
+    borderCurve: 'continuous',
+    paddingHorizontal: spacing.lg,
+    paddingVertical: spacing.md,
+    backgroundColor: colors.surfaceTint,
+  },
+  searchInputFocused: {
     backgroundColor: colors.surface,
+    borderColor: colors.focus,
   },
   fill: { flex: 1, backgroundColor: colors.surface },
   listContent: {
     flexGrow: 1,
-    gap: 0,
+    gap: spacing.xl,
     paddingHorizontal: layout.screenGutter,
-    paddingTop: spacing.xxl,
+    paddingTop: spacing.xl,
     paddingBottom: spacing.section,
     width: '100%',
     maxWidth: layout.maxContentWidth,
@@ -590,15 +783,12 @@ const styles = StyleSheet.create({
   },
   pageTitle: {
     ...typography.title,
-    fontSize: 24,
-    lineHeight: 32,
     color: colors.dark,
   },
-  listHeader: { gap: spacing.lg, marginBottom: spacing.xs },
-  listIntro: { gap: spacing.sm },
+  listHeader: { gap: spacing.lg },
   categorySectionHeader: {
-    paddingTop: spacing.lg,
-    paddingBottom: spacing.sm,
+    paddingTop: spacing.xs,
+    paddingBottom: 0,
     flexDirection: 'row',
     alignItems: 'center',
     gap: spacing.md,
@@ -621,13 +811,22 @@ const styles = StyleSheet.create({
   },
   clearFilterText: { ...typography.caption, color: colors.primaryText },
   scenarioCard: {
-    paddingVertical: spacing.lg,
-    borderBottomWidth: StyleSheet.hairlineWidth,
-    borderBottomColor: colors.divider,
+    padding: spacing.xl,
+    borderRadius: radius.card,
+    borderCurve: 'continuous',
     backgroundColor: colors.surface,
+    boxShadow: shadowMd,
   },
   pressed: { backgroundColor: colors.surfaceTint },
-  levelLabel: { ...typography.caption, color: colors.muted },
+  levelLabel: {
+    ...typography.caption,
+    color: colors.badgeText,
+    backgroundColor: colors.badgeBg,
+    paddingHorizontal: spacing.md,
+    paddingVertical: spacing.xs,
+    borderRadius: radius.pill,
+    overflow: 'hidden',
+  },
   cardTitleRow: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm },
   cardTitleCopy: { flex: 1, minWidth: 0, gap: spacing.sm },
   scenarioTitle: { ...typography.heading, color: colors.dark },
@@ -635,46 +834,68 @@ const styles = StyleSheet.create({
   emptyCard: {
     padding: spacing.xxl,
     gap: spacing.md,
-    borderRadius: 16,
+    borderRadius: radius.card,
+    borderCurve: 'continuous',
     backgroundColor: colors.surface,
   },
   emptyTitle: { ...typography.title, color: colors.dark },
   emptyText: { ...typography.body, color: colors.body },
   modalBackdrop: {
     flex: 1,
-    backgroundColor: 'rgba(0, 0, 0, 0.4)',
+    backgroundColor: 'rgba(37, 37, 38, 0.24)',
     justifyContent: 'center',
     paddingHorizontal: layout.screenGutter,
   },
   modalCard: {
     width: '100%',
     maxWidth: layout.maxContentWidth,
+    height: '90%',
     maxHeight: '100%',
     alignSelf: 'center',
-    backgroundColor: colors.surface,
-    borderRadius: 16,
+    backgroundColor: colors.background,
+    borderRadius: radius.card,
+    borderCurve: 'continuous',
+    boxShadow: shadowMd,
     overflow: 'hidden',
   },
-  modalContent: { padding: spacing.xl, gap: spacing.sm },
-  previewContent: { gap: spacing.md },
-  optionGroup: { gap: spacing.xs },
+  modalContent: { padding: spacing.xl, gap: spacing.lg },
+  previewContent: {
+    padding: spacing.xl,
+    borderRadius: radius.card,
+    borderCurve: 'continuous',
+    backgroundColor: colors.surface,
+    boxShadow: shadowMd,
+    gap: spacing.lg,
+  },
+  optionGroup: { gap: spacing.sm },
   optionHeading: { ...typography.caption, color: colors.muted },
   optionWrap: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.sm },
   filterOption: {
     minHeight: layout.touchTarget,
-    borderRadius: 8,
+    borderRadius: radius.pill,
+    borderCurve: 'continuous',
     backgroundColor: colors.surface,
-    borderWidth: 1,
-    borderColor: colors.border,
+    borderWidth: 1.5,
+    borderColor: colors.primary,
     paddingHorizontal: spacing.lg,
+    paddingVertical: spacing.sm,
     flexDirection: 'row',
     alignItems: 'center',
     gap: spacing.sm,
   },
   filterOptionSelected: {
-    backgroundColor: colors.surfaceTint,
-    borderColor: colors.badgeText,
+    backgroundColor: colors.primary,
+    borderColor: colors.primary,
   },
-  filterOptionText: { ...typography.label, color: colors.body },
-  filterOptionTextSelected: { color: colors.badgeText },
+  filterOptionPressed: {
+    backgroundColor: colors.primaryPressed,
+    borderColor: colors.primaryPressed,
+  },
+  filterOptionDisabled: {
+    backgroundColor: colors.disabled,
+    borderColor: colors.disabled,
+  },
+  filterOptionText: { ...typography.label, color: colors.primaryText },
+  filterOptionTextSelected: { color: colors.onPrimary },
+  filterOptionTextDisabled: { color: colors.disabledText },
 });

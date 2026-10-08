@@ -1,3 +1,6 @@
+jest.mock('../src/components/CharacterView3D', () => ({
+  CharacterView3D: () => null,
+}));
 /**
  * @format
  */

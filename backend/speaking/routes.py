@@ -5,6 +5,7 @@ from auth.security import body, require_auth
 from extensions import db
 from .models import Scenario, ScenarioCategory, ScenarioRole
 from .conversation import TurnInput, send_turn, transcript
+from .history import list_sessions, session_detail
 from .service import (
     ScenarioFilters, StartSessionInput, get_scenario, list_scenarios,
     public_category, scenario_detail, start_session,
@@ -54,3 +55,29 @@ def messages(session_id):
 @require_auth
 def send_message(session_id):
     return jsonify(send_turn(g.user.id, session_id, TurnInput.parse(body())))
+
+
+@bp.get("/sessions")
+@require_auth
+def history():
+    return jsonify(list_sessions(g.user.id, request.args))
+
+
+@bp.get("/sessions/<session_id>")
+@require_auth
+def saved_session(session_id):
+    return jsonify(session_detail(g.user.id, session_id))
+
+
+@bp.post("/sessions/<session_id>/live-token")
+@require_auth
+def provision_live(session_id):
+    from .live import live_token
+    return jsonify(live_token(g.user.id, session_id))
+
+
+@bp.post("/sessions/<session_id>/live-turns")
+@require_auth
+def persist_live_turn(session_id):
+    from .live import save_live_turn
+    return jsonify(save_live_turn(g.user.id, session_id, body()))

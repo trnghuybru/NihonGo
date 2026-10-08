@@ -13,6 +13,8 @@ import {
 
 jest.mock('../src/services/speakingService', () => ({
   speakingService: {
+    history: jest.fn(),
+    session: jest.fn(),
     categories: jest.fn(),
     list: jest.fn(),
     detail: jest.fn(),
@@ -21,19 +23,15 @@ jest.mock('../src/services/speakingService', () => ({
     send: jest.fn(),
   },
 }));
-jest.mock('../src/services/voiceService', () => ({
-  voiceService: {
-    init: jest.fn(),
-    cancel: jest.fn().mockResolvedValue(undefined),
-    destroy: jest.fn().mockResolvedValue(undefined),
-  },
+jest.mock('../src/components/CharacterView3D', () => ({
+  CharacterView3D: () => null,
 }));
-jest.mock('../src/services/ttsService', () => ({
-  ttsService: {
-    init: jest.fn().mockResolvedValue(undefined),
-    setLanguage: jest.fn(),
-    stop: jest.fn(),
-  },
+jest.mock('../src/services/geminiLiveService', () => ({
+  GeminiLiveService: jest.fn().mockImplementation((_id, callbacks) => ({
+    connect: async () => callbacks.onState('ready'),
+    close: async () => undefined,
+    hasUnsavedTurn: () => false,
+  })),
 }));
 const daily = {
   id: 'category-daily',
@@ -116,6 +114,11 @@ beforeEach(() => {
   Object.values(speakingService).forEach(method =>
     jest.mocked(method).mockReset(),
   );
+  jest.mocked(speakingService.history).mockResolvedValue({
+    items: [],
+    pagination: { page: 1, page_size: 20, total: 0, total_pages: 0 },
+  });
+  jest.mocked(speakingService.session).mockResolvedValue(started);
   jest.mocked(speakingService.categories).mockResolvedValue([daily, work]);
   jest
     .mocked(speakingService.list)
@@ -148,10 +151,11 @@ beforeEach(() => {
 afterEach(async () => {
   await act(async () => tree?.unmount());
 });
-async function render() {
+async function render(choose = true) {
   await act(async () => {
     tree = Renderer.create(<SpeakingScenariosScreen />);
   });
+  if (choose) await press('Cuộc trò chuyện mới');
 }
 function callback(label: string) {
   const node = tree.root.findAll(
@@ -183,7 +187,7 @@ function scenarios() {
 }
 async function openFirst() {
   await press('Đời sống');
-  await press('Làm quen bạn mới, Đời sống, trình độ N5, 5 phút. Xem chi tiết');
+  await press('Làm quen bạn mới, Đời sống, trình độ N5, 5 phút. Chọn ngữ cảnh');
 }
 
 test('uses API category IDs and combines server filters, search, and clearing', async () => {
@@ -217,28 +221,36 @@ test('uses API category IDs and combines server filters, search, and clearing', 
   expect(scenarios()).toHaveLength(2);
 });
 
-test('previews API details in a popup and continues with simple defaults', async () => {
+test('opens context selection over chat and posts the briefing after starting', async () => {
   await render();
   await openFirst();
   expect(speakingService.detail).toHaveBeenCalledWith(first.id);
-  expect(screenText()).toContain('Trong lớp học');
+  expect(screenText()).toContain('Giới thiệu bản thân');
   expect(tree.root.findAllByType(Modal)).toHaveLength(1);
-  expect(scenarios()).toHaveLength(1);
+  expect(tree.root.findAllByType(SectionList)).toHaveLength(0);
   expect(screenText()).not.toContain('Chế độ nhập');
   expect(screenText()).not.toContain('Lưu audio');
-  await press('Tiếp tục');
+  await press('Bắt đầu trò chuyện');
   expect(speakingService.start).toHaveBeenCalledWith(first.id, {
     role_id: role.id,
-    input_mode: 'text',
+    input_mode: 'voice',
     audio_storage_enabled: false,
   });
   expect(tree.root.findAllByType(ConversationScreen)).toHaveLength(1);
   expect(screenText()).toContain('Lời mở đầu từ backend');
-  expect(screenText()).not.toContain('Bản xem trước');
-  await press('Danh sách tình huống');
+  expect(screenText()).not.toContain('Chào hỏi');
+  expect(tree.root.findAllByType(Modal)).toHaveLength(0);
+  await press('Xem nhiệm vụ');
+  expect(screenText()).toContain('Nhiệm vụ của bạn');
+  expect(screenText()).toContain('Chào hỏi');
+  expect(screenText()).toContain('AI đóng vai');
+  expect(screenText()).toContain('Bạn mới');
+  await press('Đóng nhiệm vụ');
+  await press('Lịch sử hội thoại');
+  await press('Cuộc trò chuyện mới');
   await openFirst();
-  await press('Tiếp tục');
-  expect(speakingService.start).toHaveBeenCalledTimes(1);
+  await press('Bắt đầu trò chuyện');
+  expect(speakingService.start).toHaveBeenCalledTimes(2);
 });
 
 test('shows detail failure and retries instead of starting from a list summary', async () => {
@@ -251,10 +263,10 @@ test('shows detail failure and retries instead of starting from a list summary',
   expect(
     tree.root
       .findAllByType(AuthButton)
-      .some(item => item.props.label === 'Tiếp tục'),
+      .some(item => item.props.label === 'Bắt đầu trò chuyện'),
   ).toBe(false);
   await press('Thử lại');
-  expect(screenText()).toContain('Trong lớp học');
+  expect(screenText()).toContain('Giới thiệu bản thân');
 });
 
 test('prevents duplicate starts and displays start errors without leaving details', async () => {
@@ -262,7 +274,7 @@ test('prevents duplicate starts and displays start errors without leaving detail
   jest.mocked(speakingService.start).mockReturnValueOnce(pending.promise);
   await render();
   await openFirst();
-  const start = callback('Tiếp tục');
+  const start = callback('Bắt đầu trò chuyện');
   await act(async () => {
     start();
     start();
@@ -272,15 +284,17 @@ test('prevents duplicate starts and displays start errors without leaving detail
   expect(tree.root.findAllByType(Modal)).toHaveLength(1);
   await act(async () => pending.resolve(started));
   expect(tree.root.findAllByType(ConversationScreen)).toHaveLength(1);
-  await press('Danh sách tình huống');
+  await press('Lịch sử hội thoại');
+  await press('Cuộc trò chuyện mới');
   await press('Tất cả chủ đề');
-  await press('Phỏng vấn, Công việc, trình độ N3, 5 phút. Xem chi tiết');
+  await press('Phỏng vấn, Công việc, trình độ N3, 5 phút. Chọn ngữ cảnh');
   jest
     .mocked(speakingService.start)
     .mockRejectedValueOnce(new Error('Không tạo được buổi'));
-  await press('Tiếp tục');
+  await press('Bắt đầu trò chuyện');
   expect(screenText()).toContain('Không tạo được buổi');
   expect(tree.root.findAllByType(ConversationScreen)).toHaveLength(0);
+  expect(tree.root.findAllByType(Modal)).toHaveLength(1);
 });
 
 test('closing a loading preview ignores its late response and never starts a session', async () => {
@@ -289,7 +303,7 @@ test('closing a loading preview ignores its late response and never starts a ses
   await render();
   await openFirst();
   expect(tree.root.findAllByType(Modal)).toHaveLength(1);
-  await act(async () => tree.root.findByType(Modal).props.onRequestClose());
+  await press('Đóng');
   expect(tree.root.findAllByType(Modal)).toHaveLength(0);
   await act(async () => pending.resolve(first));
   expect(tree.root.findAllByType(Modal)).toHaveLength(0);
@@ -298,10 +312,11 @@ test('closing a loading preview ignores its late response and never starts a ses
     ...second,
     context: 'Trong văn phòng',
   });
+  await press('Cuộc trò chuyện mới');
   await press('Tất cả chủ đề');
-  await press('Phỏng vấn, Công việc, trình độ N3, 5 phút. Xem chi tiết');
+  await press('Phỏng vấn, Công việc, trình độ N3, 5 phút. Chọn ngữ cảnh');
   expect(tree.root.findAllByType(Modal)).toHaveLength(1);
-  expect(screenText()).toContain('Trong văn phòng');
+  expect(screenText()).toContain('Phỏng vấn');
   expect(screenText()).not.toContain('Trong lớp học');
 });
 
@@ -386,13 +401,13 @@ test('loads API roles and sends the selected role instead of a hardcoded one', a
   await render();
   await openFirst();
   await press('Giáo viên');
-  await press('Tiếp tục');
+  await press('Bắt đầu trò chuyện');
   expect(speakingService.start).toHaveBeenCalledWith(first.id, {
     role_id: another.id,
-    input_mode: 'text',
+    input_mode: 'voice',
     audio_storage_enabled: false,
   });
-  expect(screenText()).toContain('xxx');
+  expect(screenText()).toContain('Bắt đầu trò chuyện cùng Aoi.');
 });
 
 test('retries category loading and never falls back to mock categories', async () => {
@@ -413,11 +428,12 @@ test('retries category loading and never falls back to mock categories', async (
   expect(screenText()).toContain('Đời sống');
 });
 
-test('shows inline topic and level filters with the list and preserves them after details', async () => {
+test('opens the selector immediately and preserves filters after dismissing', async () => {
   await render();
   expect(scenarios()).toHaveLength(2);
-  expect(screenText()).toContain('Tình huống');
-  expect(tree.root.findAllByType(Modal)).toHaveLength(0);
+  expect(screenText()).toContain('Chọn ngữ cảnh');
+  expect(screenText()).toContain('Hội thoại cùng AI');
+  expect(tree.root.findAllByType(Modal)).toHaveLength(1);
   await press('N5');
   await press('Đời sống');
   expect(speakingService.list).toHaveBeenLastCalledWith({
@@ -426,10 +442,11 @@ test('shows inline topic and level filters with the list and preserves them afte
     language_code: undefined,
     q: '',
   });
-  await press('Làm quen bạn mới, Đời sống, trình độ N5, 5 phút. Xem chi tiết');
+  await press('Làm quen bạn mới, Đời sống, trình độ N5, 5 phút. Chọn ngữ cảnh');
   await press('Đóng');
   expect(tree.root.findAllByType(Modal)).toHaveLength(0);
   expect(speakingService.start).not.toHaveBeenCalled();
+  await press('Cuộc trò chuyện mới');
   expect(scenarios().map((item: ScenarioDetail) => item.id)).toEqual([
     first.id,
   ]);
@@ -441,4 +458,169 @@ test('shows inline topic and level filters with the list and preserves them afte
     )[0];
     expect(filter.props.accessibilityState.checked).toBe(true);
   }
+});
+
+test('creates new conversations from history and keeps the chat header minimal', async () => {
+  await render();
+  await openFirst();
+  await press('Bắt đầu trò chuyện');
+  expect(
+    tree.root
+      .findAllByType(AuthButton)
+      .some(button => button.props.label === 'Cuộc trò chuyện mới'),
+  ).toBe(false);
+  await press('Lịch sử hội thoại');
+  await press('Cuộc trò chuyện mới');
+  await press('Đóng');
+  expect(tree.root.findAllByType(Modal)).toHaveLength(0);
+  expect(tree.root.findAllByType(ConversationScreen)).toHaveLength(0);
+  expect(speakingService.start).toHaveBeenCalledTimes(1);
+  expect(screenText()).toContain('Hội thoại gần đây');
+});
+
+test('hardware back from context details returns to the same selector', async () => {
+  await render();
+  await openFirst();
+  await act(async () => tree.root.findByType(Modal).props.onRequestClose());
+  expect(tree.root.findAllByType(Modal)).toHaveLength(1);
+  expect(scenarios().map((item: ScenarioDetail) => item.id)).toEqual([
+    first.id,
+  ]);
+  expect(speakingService.start).not.toHaveBeenCalled();
+});
+
+test('shows saved history on entry and opens the original session without creating one', async () => {
+  jest.mocked(speakingService.history).mockResolvedValue({
+    items: [
+      {
+        id: started.session.id,
+        title: first.title,
+        role_name: role.name,
+        status: 'active',
+        last_activity_at: started.session.started_at,
+        last_message: 'Tin nhắn gần nhất',
+      },
+    ],
+    pagination: { page: 1, page_size: 20, total: 1, total_pages: 1 },
+  });
+  await render(false);
+  expect(tree.root.findAllByType(Modal)).toHaveLength(0);
+  expect(screenText()).toContain('Hội thoại gần đây');
+  expect(screenText()).toContain('Tin nhắn gần nhất');
+  await press('Mở hội thoại Làm quen bạn mới');
+  expect(speakingService.session).toHaveBeenCalledWith(started.session.id);
+  expect(speakingService.start).not.toHaveBeenCalled();
+  expect(screenText()).toContain('Lời mở đầu từ backend');
+  await press('Lịch sử hội thoại');
+  expect(tree.root.findAllByType(ConversationScreen)).toHaveLength(0);
+  expect(speakingService.history).toHaveBeenCalledTimes(2);
+});
+
+test('distinguishes empty history from errors and retries loading', async () => {
+  jest
+    .mocked(speakingService.history)
+    .mockRejectedValueOnce(new Error('Không tải được lịch sử'));
+  await render(false);
+  expect(screenText()).toContain('Không tải được lịch sử');
+  expect(screenText()).not.toContain('Cuộc trò chuyện đầu tiên của bạn');
+  await press('Tải lại lịch sử');
+  expect(screenText()).toContain('Cuộc trò chuyện đầu tiên của bạn');
+  expect(tree.root.findAllByType(Modal)).toHaveLength(0);
+});
+
+test('keeps history visible when opening a saved session fails', async () => {
+  jest.mocked(speakingService.history).mockResolvedValue({
+    items: [
+      {
+        id: started.session.id,
+        title: first.title,
+        role_name: role.name,
+        status: 'active',
+        last_activity_at: started.session.started_at,
+        last_message: null,
+      },
+    ],
+    pagination: { page: 1, page_size: 20, total: 1, total_pages: 1 },
+  });
+  jest
+    .mocked(speakingService.session)
+    .mockRejectedValueOnce(new Error('Không mở được phiên'));
+  await render(false);
+  await press('Mở hội thoại Làm quen bạn mới');
+  expect(screenText()).toContain('Không mở được phiên');
+  expect(tree.root.findAllByType(ConversationScreen)).toHaveLength(0);
+  await press('Mở hội thoại Làm quen bạn mới');
+  expect(tree.root.findAllByType(ConversationScreen)).toHaveLength(1);
+});
+
+test('paginates history and retries the failed page without losing existing rows', async () => {
+  const entry = {
+    id: started.session.id,
+    title: first.title,
+    role_name: role.name,
+    status: 'active' as const,
+    last_activity_at: started.session.started_at,
+    last_message: 'Lời nhắn',
+  };
+  jest.mocked(speakingService.history).mockResolvedValueOnce({
+    items: [entry],
+    pagination: { page: 1, page_size: 20, total: 2, total_pages: 2 },
+  });
+  await render(false);
+  jest
+    .mocked(speakingService.history)
+    .mockRejectedValueOnce(new Error('Mất kết nối'));
+  await press('Xem thêm hội thoại');
+  expect(screenText()).toContain(first.title);
+  expect(screenText()).toContain('Mất kết nối');
+  jest.mocked(speakingService.history).mockResolvedValueOnce({
+    items: [{ ...entry, id: 'another-session', title: second.title }],
+    pagination: { page: 2, page_size: 20, total: 2, total_pages: 2 },
+  });
+  await press('Tải lại lịch sử');
+  expect(speakingService.history).toHaveBeenLastCalledWith(2);
+  expect(screenText()).toContain(first.title);
+  expect(screenText()).toContain(second.title);
+  expect(
+    tree.root
+      .findAllByType(AuthButton)
+      .some(button => button.props.label === 'Xem thêm hội thoại'),
+  ).toBe(false);
+});
+
+test('opens completed conversations for reading and disables sending', async () => {
+  jest.mocked(speakingService.history).mockResolvedValue({
+    items: [
+      {
+        id: started.session.id,
+        title: first.title,
+        role_name: role.name,
+        status: 'completed',
+        last_activity_at: started.session.started_at,
+        last_message: 'Đã xong',
+      },
+    ],
+    pagination: { page: 1, page_size: 20, total: 1, total_pages: 1 },
+  });
+  jest.mocked(speakingService.session).mockResolvedValue({
+    ...started,
+    session: { ...started.session, status: 'completed' },
+  });
+  jest.mocked(speakingService.messages).mockResolvedValue({
+    items: [started.opening_message!],
+    session: {
+      id: started.session.id,
+      status: 'completed',
+      current_input_mode: 'voice',
+    },
+    has_more: false,
+    next_sequence: 1,
+  });
+  await render(false);
+  await press('Mở hội thoại Làm quen bạn mới');
+  expect(screenText()).toContain('Phiên này chỉ xem lại');
+  expect(tree.root.findAllByType(TextInput)).toHaveLength(0);
+  await press('Chế độ nhắn tin');
+  expect(tree.root.findByType(TextInput).props.editable).toBe(false);
+  expect(speakingService.start).not.toHaveBeenCalled();
 });

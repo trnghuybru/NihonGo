@@ -7,6 +7,7 @@ export type HomeFeatureIconName =
   | 'reading'
   | 'writing'
   | 'vocabulary'
+  | 'lightbulb'
   | 'sparkles'
   | 'arrow';
 
@@ -76,6 +77,15 @@ export function HomeFeatureIcon({ name, color, size = 24 }: Props) {
         <>
           <Rect x="3" y="4" width="18" height="16" rx="4" {...stroke} />
           <Path d="M7 9h4M7 13h6M16 9h1M16 13h1M7 17h10" {...stroke} />
+        </>
+      ) : null}
+      {name === 'lightbulb' ? (
+        <>
+          <Path
+            d="M9 17v-1.5c0-1.2-1.2-1.9-2-2.8a6 6 0 1 1 10 0c-.8.9-2 1.6-2 2.8V17M9 17h6M9.5 20h5M11 22h2"
+            {...stroke}
+          />
+          <Path d="M3 5l-1-1M21 5l1-1M2 11H1M22 11h1" {...stroke} />
         </>
       ) : null}
       {name === 'sparkles' ? (

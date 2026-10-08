@@ -207,7 +207,7 @@ def api_character_view_embedded():
       width: 100%;
       height: 100%;
       overflow: hidden;
-      background: #FAF8FC;
+      background: #FFFBF7;
       touch-action: none;
       -webkit-user-select: none;
       user-select: none;
@@ -239,6 +239,7 @@ def api_character_view_embedded():
   <script>
     let scene, camera, renderer, mixer, action, clock, model;
     let isSpeaking = false;
+    let cameraTargetY = 1.20;
 
     function reportToRN(data) {
       if (window.ReactNativeWebView && window.ReactNativeWebView.postMessage) {
@@ -275,11 +276,11 @@ def api_character_view_embedded():
 
       clock = new THREE.Clock();
       scene = new THREE.Scene();
-      scene.background = new THREE.Color(0xFAF8FC);
+      scene.background = new THREE.Color(0xFFFBF7);
 
       camera = new THREE.PerspectiveCamera(34, width / height, 0.1, 100);
       camera.position.set(0, 1.06, 2.60);
-      camera.lookAt(0, 1.20, 0);
+      camera.lookAt(0, cameraTargetY, 0);
 
       // Khởi tạo WebGLRenderer với nền mờ đục chuẩn CoreAnimation
       const canvas = document.createElement('canvas');
@@ -414,7 +415,7 @@ def api_character_view_embedded():
             const zoomFactor = initialPinchDist / currentDist;
             const newZ = initialCamZ * zoomFactor;
             camera.position.z = Math.max(1.5, Math.min(3.8, newZ));
-            camera.lookAt(0, 1.20, 0);
+            camera.lookAt(0, cameraTargetY, 0);
           }
         }
       });
@@ -470,6 +471,11 @@ def api_character_view_embedded():
     function handleMsg(event) {
       try {
         const data = typeof event.data === 'string' ? JSON.parse(event.data) : event.data;
+        if (data.type === 'SET_FRAMING' && camera) {
+          cameraTargetY = data.portrait ? 1.35 : 1.20;
+          camera.position.set(0, data.portrait ? 1.35 : 1.06, data.portrait ? 1.75 : 2.60);
+          camera.lookAt(0, cameraTargetY, 0);
+        }
         if (data.type === 'SET_SPEAKING') {
           isSpeaking = Boolean(data.isSpeaking);
           if (action) {

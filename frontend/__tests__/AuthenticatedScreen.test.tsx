@@ -1,3 +1,6 @@
+jest.mock('../src/components/CharacterView3D', () => ({
+  CharacterView3D: () => null,
+}));
 import React from 'react';
 import Renderer, { act } from 'react-test-renderer';
 import { AuthenticatedScreen } from '../src/screens/AuthenticatedScreen';
@@ -15,13 +18,15 @@ import { speakingService } from '../src/services/speakingService';
 
 jest.mock('../src/services/speakingService', () => ({
   speakingService: {
+    history: jest.fn().mockResolvedValue({
+      items: [],
+      pagination: { page: 1, page_size: 20, total: 0, total_pages: 0 },
+    }),
     categories: jest.fn().mockResolvedValue([]),
-    list: jest
-      .fn()
-      .mockResolvedValue({
-        items: [],
-        pagination: { page: 1, page_size: 20, total: 0, total_pages: 0 },
-      }),
+    list: jest.fn().mockResolvedValue({
+      items: [],
+      pagination: { page: 1, page_size: 20, total: 0, total_pages: 0 },
+    }),
     detail: jest.fn(),
     start: jest.fn(),
   },

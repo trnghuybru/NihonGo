@@ -20,10 +20,19 @@ có một vai AI và lời mở đầu. Có thể chạy lại; không ghi đè 
 cùng ID. ID trong database là UUID, khác các slug mock hiện tại của frontend.
 Frontend đã lấy ID từ API để gọi chi tiết và bắt đầu.
 
-Để nhận phản hồi AI, cấu hình `OPENROUTER_API_KEY` trong `.env` backend.
-`OPENROUTER_MODEL` mặc định là `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free`;
-có thể chọn model khác qua biến này. Khóa API và chỉ dẫn vai chỉ nằm trên server.
-Không trả phản hồi mẫu khi dịch vụ AI thiếu cấu hình hoặc gặp lỗi.
+Màn hình Aoi dùng Gemini Live. Cấu hình trong `backend/.env`:
+
+```dotenv
+GEMINI_API_KEY=your_key_from_google_ai_studio
+GEMINI_LIVE_MODEL=gemini-3.8-live
+GEMINI_LIVE_VOICE=Kore
+```
+
+Khởi động lại backend sau khi thay `.env`. Model mặc định lấy từ
+[tài liệu WebSocket của Google](https://ai.google.dev/gemini-api/docs/live-api/get-started-websocket);
+đổi biến model nếu tài khoản dùng model Live khác. Không đặt API key trong frontend.
+`OPENROUTER_API_KEY` chỉ phục vụ endpoint `/messages` và demo legacy;
+không cần cho màn hình Aoi mới.
 
 ## Danh sách và lọc
 
@@ -220,10 +229,52 @@ trước khi gọi AI; lỗi provider lưu phản hồi ở trạng thái `faile
 Lượt `pending` dưới 120 giây trả `turn_pending`; sau đó có thể thử lại cùng
 ID. Worker cũ không được ghi đè kết quả của lần thử lại mới.
 
-Nhận dạng giọng nói chạy bằng native speech recognition trên thiết bị.
-Người dùng xem/sửa văn bản nhận dạng rồi gửi với `input_mode=voice`.
-Backend lưu transcript; frontend dùng native TTS để đọc phản hồi đã lưu.
-Chức năng này chưa upload/lưu file audio (UC-S10).
+## Gemini Live
+
+`POST /api/speaking/sessions/<session_uuid>/live-token` với `{}` cấp token
+ngắn hạn cho phiên active của chính người dùng. Backend gọi `v1beta/auth_tokens`,
+khóa toàn bộ cấu hình Live theo snapshot bối cảnh/mục tiêu/vai AI riêng tư.
+Response gồm `token`, `model`, `lease`, `last_sequence` và tối đa 20 tin nhắn
+hoàn tất gần nhất dưới dạng `history`. Không trả API key hoặc system prompt.
+Token dùng một lần để mở kết nối trong một phút, có hạn 30 phút;
+lease lưu transcript có hạn một giờ. Khi hết hạn, kết nối lại và nạp lịch sử.
+Phiên có lượt legacy pending/failed phải xử lý lượt đó trước khi dùng Live.
+
+Frontend kết nối trực tiếp WebSocket `BidiGenerateContentConstrained` bằng
+[token tạm thời](https://ai.google.dev/gemini-api/docs/live-api/ephemeral-tokens).
+Nạp lịch sử bằng `historyConfig.initialHistoryInClientContent`, không tự tạo
+phản hồi mới khi mở lại phiên. Giữ micro gửi `activityStart` và PCM16LE 16 kHz;
+thả tay dừng thu, gửi hết buffer cuối rồi gửi `activityEnd`. AI trả PCM16LE
+24 kHz, phát bằng `react-native-audio-api`. Văn bản gửi trên cùng kết nối;
+không dùng nhận dạng giọng nói hoặc TTS legacy trong luồng này.
+
+`POST /api/speaking/sessions/<session_uuid>/live-turns`:
+
+```json
+{
+  "lease": "<signed_lease>",
+  "request_id": "<client_uuid>",
+  "after_sequence": 1,
+  "input_mode": "voice",
+  "user_text": "こんにちは！",
+  "assistant_text": "こんにちは。お名前は？"
+}
+```
+
+Chỉ lưu khi lượt Gemini hoàn tất và có cả hai transcript (1–2000 ký tự mỗi
+phía). Backend kiểm tra lease, chủ sở hữu, phiên active và sequence hiện tại;
+lưu cả hai tin nhắn trong một transaction rồi trả `user_message`,
+`assistant_message`. Thử lại giữ nguyên payload và UUID để chống trùng;
+xung đột sequence trả 409 `session_changed`. Lỗi lưu giữ lượt trong bộ nhớ
+và hiện “Thử lưu lại”, chặn lượt mới cho đến khi lưu thành công. Nếu phiên đã
+đổi ở thiết bị khác hoặc lease hết hạn, “Bỏ lượt chưa lưu” bỏ transcript cục bộ
+của lượt đó và kết nối lại theo lịch sử hiện tại.
+
+Transcript do client báo lại, không phải bằng chứng xác thực độc lập của
+Gemini; không dùng dữ liệu này để chấm điểm đáng tin cậy hoặc quyết định quyền
+truy cập. Audio chỉ truyền để hội thoại, chưa upload/lưu file (UC-S10).
+Mất kết nối hoặc đóng app trước khi nhận đủ transcript có thể mất lượt đang
+nói; các lượt đã lưu vẫn có trong lịch sử.
 
 ## Kiểm thử
 
@@ -236,8 +287,7 @@ TEST_DATABASE_URL=postgresql+psycopg://nihongo:nihongo_local@localhost:5432/niho
 PostgreSQL tests chạy trong schema tạm riêng. Kiểm tra khả dụng, bộ lọc,
 phân trang, xác thực, lựa chọn vai, snapshot, transcript mở đầu, rollback khi
 lưu lỗi, seed chạy lại, quyền sở hữu transcript, chống gửi trùng, thử lại và
-gửi đồng thời. Test provider dùng mock, không gọi AI trả phí. Nhận dạng và
-TTS cần kiểm tra thêm trên thiết bị thật có microphone và ngôn ngữ hỗ trợ.
+gửi đồng thời. Test provider dùng mock, không gọi AI trả phí. Âm thanh Live và nhân vật 3D cần kiểm tra thêm trên thiết bị thật, với API key có quyền sử dụng model.
 
 ## Giao diện React Native
 
@@ -245,39 +295,24 @@ TTS cần kiểm tra thêm trên thiết bị thật có microphone và ngôn ng
 `authenticatedRequest` và phiên đăng nhập lưu trong Keychain. Truy cập từ
 thẻ **Luyện tập → Nói** hoặc ô kỹ năng **Nói** trên trang chủ.
 
-- Mở thẳng danh sách tình huống. Chủ đề và trình độ hiển thị cùng màn hình
-  bằng các lựa chọn cuộn ngang; chọn là lọc ngay, không cần mở màn hình
-  chọn chủ đề hoặc hộp thoại bộ lọc. Nhóm lấy từ API và dùng UUID để lọc.
-- Đóng popup hoặc quay lại danh sách giữ chủ đề, trình độ và từ khóa đã chọn.
-- Tìm kiếm theo tên/mô tả, gửi khi nhấn **Tìm kiếm** hoặc phím search.
-- Danh sách phân trang 20 mục, có nút **Tải thêm tình huống**.
-- Chạm tình huống mở popup ngay trên danh sách, tải chi tiết từ API. Popup
-  chỉ hiển thị tên, trình độ, thời lượng, bối cảnh/mục tiêu, nút **Đóng** và
-  **Tiếp tục**. Chỉ hiện lựa chọn vai khi tình huống có nhiều vai AI.
-- **Tiếp tục** bắt đầu bằng văn bản, không lưu audio; có thể chuyển sang
-  giọng nói ngay trong màn hình hội thoại.
-- Bắt đầu gửi POST; chỉ mở màn hình buổi luyện tập sau khi backend lưu thành công.
-  `ConversationScreen` tải transcript từ database, không lấy dữ liệu mẫu frontend.
-- Chọn **Văn bản** để nhập/gửi; chọn **Giọng nói** để bật/dừng microphone,
-  xem/sửa phần nhận dạng rồi gửi. Phản hồi voice được đọc tự động, có nút
-  đọc lại/dừng đọc. Đổi chế độ hoặc rời màn hình sẽ dừng microphone/TTS.
-- Khi gửi lỗi, giữ nội dung và mã yêu cầu để thử lại. Khi tải lại buổi có lượt
-  lỗi, phục hồi mã từ transcript để không tạo trùng. Không gửi lượt mới khi
-  lượt trước chưa hoàn tất. Transcript tải lỗi có nút tải lại riêng.
-- Provider trả 429 thì hiện thông báo model bị giới hạn lượt gọi và đếm
-  ngược trước khi cho thử lại; dùng `Retry-After`, mặc định 30 giây nếu thiếu.
-  Không đổi sang model khác. Khi POST lỗi kết nối nhưng câu trả lời đã lưu,
-  tải lại transcript để hiển thị phản hồi đã hoàn tất, không gọi AI lần nữa.
-  Nếu lượt vẫn `pending`, app kiểm tra transcript mỗi giây trong tối đa 30
-  giây để nhận câu trả lời lưu muộn; dừng khi hoàn tất, thất bại hoặc rời màn hình.
-- iOS cần quyền microphone và speech recognition; Android cần quyền
-  `RECORD_AUDIO`. Các quyền và native dependencies Voice/TTS đã có trong
-  dự án. Thiết bị không hỗ trợ hiển thị lỗi để chuyển sang nhập văn bản.
-- Có trạng thái tải, lỗi/thử lại và kết quả rỗng riêng. Bỏ qua response cũ
-  khi đổi bộ lọc hoặc rời màn hình. Chặn nhấn bắt đầu trùng trong lúc request chạy.
-- Khi quay lại danh sách và chọn lại cùng tình huống trong màn hình này,
-  **Tiếp tục** mở lại buổi đã tạo mà không gửi thêm POST. Rời danh sách hoặc đổi kỹ năng không
-  tự kết thúc/pause buổi ở backend; các API vòng đời chưa được triển khai.
+- Vào Nói mở lịch sử; “Cuộc trò chuyện mới” mở popup chọn ngữ cảnh theo design.md.
+- Chọn tình huống/vai rồi bắt đầu phiên đã lưu ở backend; giữ nguyên bộ lọc khi đóng popup.
+- `ConversationScreen` hiển thị Aoi 3D cố định phía trên và chat cuộn phía dưới.
+  Nút tròn “!” mở nhiệm vụ/vai AI trong popup; có thể
+  xoay nhân vật bằng kéo và phóng to/thu nhỏ bằng hai ngón tay.
+- Mặc định Nói với mic lớn ở giữa; chọn Nhắn tin mới hiện ô text/nút gửi.
+  Chuyển mode giữ draft và không kết nối lại. Aoi cử động
+  miệng khi có audio đang phát (hoạt ảnh demo theo trạng thái, chưa đồng bộ phoneme).
+- Nút “Hội thoại” mở transcript đã lưu. Nút quay lại dẫn tới lịch sử;
+  không có nút tạo phiên mới trong màn hình buổi luyện tập.
+- Có trạng thái kết nối, đang nghe, AI trả lời, đang lưu và lỗi/thử lại.
+  Khi app chuyển nền, dừng micro/audio và WebSocket; giữ lượt chờ lưu để thử lại.
+  Mở lại phiên nạp tối đa 20 tin gần nhất vào Gemini, transcript đầy đủ vẫn xem được.
+- Phiên không active chỉ xem lại, không kết nối Gemini. WebView tải lỗi có nút tải lại;
+  hoạt động hội thoại không phụ thuộc việc tải xong mô hình 3D.
+- iOS cần quyền microphone; Android cần `RECORD_AUDIO`. Thêm module native
+  `react-native-audio-api` nên cần build lại binary, Fast Refresh không đủ.
+  iOS đã cập nhật Pods; khi cài lại dependencies chạy `pod install` trong `frontend/ios`.
 
 Địa chỉ backend cấu hình tại `frontend/src/config/api.ts`: iOS simulator dùng
 `http://localhost:5001`, Android emulator dùng `http://10.0.2.2:5001`. Thiết bị
@@ -293,3 +328,23 @@ Trong thư mục `frontend`, kiểm tra bằng:
 npx tsc --noEmit
 npm test -- --runInBand --watchman=false
 ```
+
+
+## Lịch sử hội thoại
+
+`GET /api/speaking/sessions?page=1&page_size=20` trả các phiên của người dùng
+đang đăng nhập, xếp theo thời gian tin nhắn cuối (hoặc thời gian bắt đầu khi
+chưa có tin nhắn), mới nhất trước. `page_size` tối đa 100. Mỗi mục gồm `id`,
+`title`, `role_name`, `status`, `last_activity_at` và `last_message` (trích đoạn
+tối đa 160 ký tự). Response có `items` và `pagination` như danh sách tình huống.
+
+`GET /api/speaking/sessions/<session_id>` trả `session`, `scenario` và
+`opening_message: null`. `scenario` lấy từ bản chụp lúc tạo phiên, không phụ
+thuộc tình huống hiện còn published hay đã được chỉnh sửa. Chỉ dẫn AI nội bộ
+không được trả về. Dùng API messages hiện có để tải transcript và gửi tiếp
+vào cùng ID nếu trạng thái là `active`; các trạng thái khác chỉ xem lại.
+Phiên của tài khoản khác và ID không tồn tại đều trả 404.
+
+Màn hình Luyện nói hiển thị lịch sử ngay khi vào; nút “Cuộc trò chuyện mới”
+mở popup chọn ngữ cảnh. Khi quay lại từ chat, danh sách được tải lại. Không
+cần migration hoặc bảng mới cho tính năng này.

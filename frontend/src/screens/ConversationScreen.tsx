@@ -1,59 +1,41 @@
-import { memo, useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import {
-  ActivityIndicator,
-  FlatList,
+  AppState,
+  BackHandler,
   KeyboardAvoidingView,
+  Modal,
   Platform,
   Pressable,
+  ScrollView,
   StyleSheet,
   Text,
   TextInput,
   View,
+  useWindowDimensions,
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { AuthButton, AuthNotice } from '../components/AuthForm';
 import { HomeFeatureIcon } from '../components/HomeFeatureIcon';
-import { MISSING_DATA } from '../config/content';
-import { useConversation } from '../hooks/useConversation';
+import { AuthIcon } from '../components/AuthIcon';
 import {
-  ConversationMessage,
-  StartedSession,
-} from '../services/speakingService';
-import { ttsService } from '../services/ttsService';
-import { voiceService } from '../services/voiceService';
-import { colors, layout, spacing, typography } from '../theme/theme';
-
-const messageKey = (message: ConversationMessage) => message.id;
-const MessageRow = memo(function MessageRowView({
-  message,
-  roleName,
-}: {
-  message: ConversationMessage;
-  roleName: string;
-}) {
-  return (
-    <View
-      accessibilityLabel={`${message.speaker === 'user' ? 'Bạn' : roleName}: ${
-        message.content
-      }`}
-      style={[
-        styles.message,
-        message.speaker === 'user' ? styles.userMessage : styles.aiMessage,
-      ]}
-    >
-      <Text selectable style={styles.content}>
-        {message.content || MISSING_DATA}
-      </Text>
-      {message.status !== 'completed' ? (
-        <Text style={styles.hint}>
-          {message.status === 'pending'
-            ? 'Đang chờ phản hồi'
-            : 'Chưa nhận được phản hồi'}
-        </Text>
-      ) : null}
-    </View>
-  );
-});
+  SpeakingAvatar,
+  useSpeakingAnimation,
+} from '../components/SpeakingStage';
+import { useSpeakingPresentation } from '../hooks/useSpeakingPresentation';
+import { SpeakingMessages } from '../components/SpeakingMessages';
+import { SpeakingMicrophone } from '../components/SpeakingMicrophone';
+import { phaseLabels } from '../components/SpeakingStage';
+import { useConversation } from '../hooks/useConversation';
+import { GeminiLiveService } from '../services/geminiLiveService';
+import { StartedSession } from '../services/speakingService';
+import {
+  colors,
+  layout,
+  radius,
+  shadowSm,
+  spacing,
+  typography,
+} from '../theme/theme';
 
 export function ConversationScreen({
   result,
@@ -64,437 +46,525 @@ export function ConversationScreen({
 }) {
   const insets = useSafeAreaInsets();
   const chat = useConversation(result.session.id);
+  const client = useRef<GeminiLiveService | null>(null);
+  const lifecycle = useRef(0);
+  const openingRequested = useRef(false);
+  const { presentation, dispatch } = useSpeakingPresentation();
+  const { phase } = presentation;
+  const { handoff } = useSpeakingAnimation(presentation);
+  const { height } = useWindowDimensions();
+  const [contentHeight, setContentHeight] = useState(height);
+  const avatarHeight = Math.round(contentHeight * 0.5);
   const [draft, setDraft] = useState('');
-  const [mode, setMode] = useState<'text' | 'voice'>(
-    result.session.current_input_mode,
-  );
-  const [listening, setListening] = useState(false);
-  const [speaking, setSpeaking] = useState(false);
-  const [voiceError, setVoiceError] = useState('');
-  const capture = useRef(false);
-  const openingMic = useRef(false);
-  const ttsReady = useRef<Promise<void>>(Promise.resolve());
-  const mounted = useRef(true);
-  const list = useRef<FlatList<ConversationMessage>>(null);
+  const [showTranscript, setShowTranscript] = useState(false);
+  const [showBriefing, setShowBriefing] = useState(false);
+  const [inputMode, setInputMode] = useState<'voice' | 'text'>('voice');
+  const reload = useRef(chat.reload);
   useEffect(() => {
-    mounted.current = true;
-    voiceService.init({
-      onStart: () => {
-        if (mounted.current && capture.current) setListening(true);
+    reload.current = chat.reload;
+  }, [chat.reload]);
+  const connect = useCallback(async () => {
+    const generation = ++lifecycle.current;
+    dispatch({ type: 'transport', value: 'connecting' });
+    const previous = client.current;
+    client.current = null;
+    await previous?.close();
+    if (generation !== lifecycle.current) return;
+    const current = () => generation === lifecycle.current;
+    const live = new GeminiLiveService(result.session.id, {
+      onState: value => {
+        if (current()) dispatch({ type: 'transport', value });
       },
-      onEnd: () => {
-        if (mounted.current) setListening(false);
+      onPlaying: value => {
+        if (current()) dispatch({ type: 'playback', value });
       },
       onError: message => {
-        capture.current = false;
-        if (mounted.current) {
-          setListening(false);
-          setVoiceError(message);
-        }
+        if (current()) dispatch({ type: 'error', message });
       },
-      onPartialResults: text => {
-        if (mounted.current && capture.current) setDraft(text.slice(0, 2000));
+      onMicLevel: level => {
+        if (current()) dispatch({ type: 'mic_level', level });
       },
-      onFinalResults: text => {
-        if (mounted.current && capture.current) {
-          setDraft(text.slice(0, 2000));
-          setListening(false);
-          capture.current = false;
-        }
+      onTranscript: (user, assistant) => {
+        if (!current()) return;
+        dispatch({ type: 'transcript', user, assistant });
+      },
+      onSaved: () => {
+        if (current()) reload.current();
       },
     });
-    ttsReady.current = ttsService
-      .init(value => {
-        if (mounted.current) setSpeaking(value);
-      })
-      .then(() => {
-        if (mounted.current)
-          return ttsService.setLanguage(result.scenario.language_code);
-      });
-    return () => {
-      mounted.current = false;
-      capture.current = false;
-      voiceService.cancel();
-      voiceService.destroy();
-      ttsService.stop();
-    };
-  }, [result.scenario.language_code]);
-
-  const read = useCallback(async (text: string) => {
-    if (!ttsService.isAvailable()) {
-      setVoiceError(
-        'Thiết bị chưa hỗ trợ đọc câu trả lời. Bạn vẫn có thể đọc văn bản.',
-      );
-      return;
-    }
-    await ttsReady.current;
-    if (!mounted.current || capture.current) return;
-    ttsService.stop();
-    ttsService.feedToken(text);
-    ttsService.flush();
-  }, []);
-  const toggleMic = async () => {
-    if (openingMic.current || chat.sending || chat.unresolved || chat.loading)
-      return;
-    setVoiceError('');
-    if (listening) {
-      await voiceService.stop();
-      setListening(false);
-      return;
-    }
-    if (!voiceService.isAvailable()) {
-      setVoiceError(
-        'Nhận dạng giọng nói chưa khả dụng trên thiết bị này. Hãy dùng chế độ văn bản.',
-      );
-      return;
-    }
-    openingMic.current = true;
-    capture.current = true;
-    ttsService.stop();
-    try {
-      await voiceService.start(result.scenario.language_code);
-    } finally {
-      openingMic.current = false;
-    }
-  };
-  const changeMode = async (next: 'text' | 'voice') => {
-    capture.current = false;
-    await voiceService.cancel();
-    ttsService.stop();
-    if (mounted.current) {
-      setListening(false);
-      setVoiceError('');
-      setMode(next);
-    }
-  };
-  const send = async (retry = false) => {
-    capture.current = false;
-    await voiceService.cancel();
-    if (!mounted.current) return;
-    setListening(false);
-    setVoiceError('');
-    const reply = await chat.send(draft, mode, retry);
-    if (reply && mounted.current) {
-      setDraft('');
-      if (mode === 'voice') read(reply.content);
-    }
-  };
-  const renderMessage = useCallback(
-    ({ item }: { item: ConversationMessage }) => (
-      <MessageRow message={item} roleName={result.scenario.role.name} />
-    ),
-    [result.scenario.role.name],
-  );
-  const latestReply = [...chat.messages]
-    .reverse()
-    .find(
-      item =>
-        item.speaker === 'assistant' &&
-        item.status === 'completed' &&
-        item.content,
+    client.current = live;
+    const connected = await live.connect(
+      openingRequested.current ? undefined : result.opening_message?.content,
     );
-  const disabled = chat.sending || chat.loading || !chat.ready || !chat.active;
+    if (connected && current()) openingRequested.current = true;
+  }, [result.session.id, result.opening_message?.content, dispatch]);
+  useEffect(() => {
+    if (!chat.ready || !chat.active) return;
+    connect();
+    const subscription = AppState.addEventListener('change', next => {
+      if (next === 'background') {
+        client.current?.interrupt();
+        dispatch({
+          type: 'error',
+          message:
+            'Hội thoại đã dừng khi app chuyển nền. Kết nối lại để tiếp tục.',
+        });
+      }
+    });
+    return () => {
+      lifecycle.current += 1;
+      subscription.remove();
+      client.current?.close();
+    };
+  }, [chat.ready, chat.active, connect, dispatch]);
+  const ready =
+    phase === 'user_turn' &&
+    presentation.transport === 'ready' &&
+    chat.active &&
+    !chat.loading;
+  const micLabel =
+    phase === 'user_speaking'
+      ? 'Đang thu âm, thả để gửi'
+      : phase === 'user_turn'
+      ? 'Giữ để nói'
+      : phase === 'ai_speaking'
+      ? 'Micro tạm khóa khi AI đang nói'
+      : phase === 'error'
+      ? 'Micro không khả dụng, hãy thử lại'
+      : 'Micro đang chờ kết nối hoặc phản hồi';
+  const unsaved = client.current?.hasUnsavedTurn() || false;
+  const canLeave =
+    ![
+      'user_speaking',
+      'ai_speaking',
+      'transition_to_user',
+      'processing',
+    ].includes(phase) && !unsaved;
+  useEffect(() => {
+    const subscription = BackHandler.addEventListener(
+      'hardwareBackPress',
+      () => {
+        if (canLeave) onBack();
+        return true;
+      },
+    );
+    return () => subscription.remove();
+  }, [canLeave, onBack]);
+  const send = () => {
+    if (client.current?.sendText(draft)) setDraft('');
+  };
   return (
     <KeyboardAvoidingView
-      style={styles.fill}
+      style={styles.screen}
       behavior={Platform.OS === 'ios' ? 'padding' : undefined}
     >
-      <View
-        style={[
-          styles.header,
-          {
-            paddingTop:
-              Platform.OS === 'android' ? insets.top + spacing.md : spacing.md,
-          },
-        ]}
-      >
-        <View style={styles.headingRow}>
-          <Pressable
-            accessibilityRole="button"
-            accessibilityLabel="Danh sách tình huống"
-            accessibilityState={{ disabled: chat.sending }}
-            disabled={chat.sending}
-            onPress={onBack}
-            style={styles.backButton}
-          >
-            <Text style={styles.backArrow}>‹</Text>
-          </Pressable>
-          <View style={styles.headingCopy}>
-            <Text
-              accessibilityRole="header"
-              numberOfLines={2}
-              style={styles.title}
-            >
-              {result.scenario.title}
-            </Text>
-            <Text style={styles.hint}>{result.scenario.role.name}</Text>
-          </View>
+      <View style={[styles.header, { paddingTop: insets.top + spacing.md }]}>
+        <Pressable
+          accessibilityRole="button"
+          accessibilityLabel="Lịch sử hội thoại"
+          accessibilityState={{ disabled: !canLeave }}
+          disabled={!canLeave}
+          onPress={onBack}
+          style={styles.back}
+        >
+          <AuthIcon name="back" color={colors.dark} />
+        </Pressable>
+        <View style={styles.headingCopy}>
+          <Text style={styles.title}>{result.scenario.title}</Text>
+          <Text style={styles.hint}>Aoi · {result.scenario.role.name}</Text>
         </View>
-        <View style={styles.modeRow} accessibilityRole="radiogroup">
-          {(['text', 'voice'] as const).map(item => (
+        <AuthButton
+          label="Hội thoại"
+          variant="text"
+          onPress={() => setShowTranscript(true)}
+        />
+      </View>
+      <View style={styles.taskToolbar}>
+        <View
+          accessibilityRole="tablist"
+          accessibilityLabel="Cách trò chuyện"
+          style={styles.modeRow}
+        >
+          {(['voice', 'text'] as const).map(mode => (
             <Pressable
-              key={item}
-              accessibilityRole="radio"
-              accessibilityLabel={item === 'text' ? 'Văn bản' : 'Giọng nói'}
+              key={mode}
+              accessibilityRole="tab"
+              accessibilityLabel={
+                mode === 'voice' ? 'Chế độ nói' : 'Chế độ nhắn tin'
+              }
               accessibilityState={{
-                checked: mode === item,
-                disabled: chat.sending,
+                selected: inputMode === mode,
+                disabled: !canLeave,
               }}
-              disabled={chat.sending}
-              onPress={() => changeMode(item)}
-              style={[styles.mode, mode === item ? styles.selectedMode : null]}
+              disabled={!canLeave}
+              onPress={() => setInputMode(mode)}
+              style={({ pressed }) => [
+                styles.modeButton,
+                inputMode === mode ? styles.modeSelected : null,
+                pressed ? styles.modePressed : null,
+                !canLeave ? styles.modeDisabled : null,
+              ]}
             >
-              <Text style={styles.speaker}>
-                {item === 'text' ? 'Văn bản' : 'Giọng nói'}
+              <Text
+                style={[
+                  styles.modeText,
+                  inputMode === mode ? styles.modeTextSelected : null,
+                  !canLeave ? styles.modeTextDisabled : null,
+                ]}
+              >
+                {mode === 'voice' ? 'Nói' : 'Nhắn tin'}
               </Text>
             </Pressable>
           ))}
         </View>
+
+        <Pressable
+          accessibilityRole="button"
+          accessibilityLabel="Xem nhiệm vụ"
+          accessibilityHint="Mở bối cảnh, nhiệm vụ và vai AI"
+          onPress={() => setShowBriefing(true)}
+          style={({ pressed }) => [
+            styles.taskButton,
+            pressed ? styles.taskPressed : null,
+          ]}
+        >
+          <View style={styles.taskCircle}>
+            <HomeFeatureIcon name="lightbulb" size={24} color={colors.muted} />
+          </View>
+        </Pressable>
       </View>
-      <FlatList
-        ref={list}
-        data={chat.messages}
-        renderItem={renderMessage}
-        keyExtractor={messageKey}
-        contentContainerStyle={styles.messages}
-        keyboardShouldPersistTaps="handled"
-        onContentSizeChange={() =>
-          list.current?.scrollToEnd({ animated: true })
-        }
-        ListEmptyComponent={
-          chat.loading ? (
-            <ActivityIndicator color={colors.primaryText} />
-          ) : (
-            <Text style={styles.content}>{MISSING_DATA}</Text>
-          )
-        }
-        ListFooterComponent={
-          chat.sending ? (
-            <View style={styles.waiting}>
-              <ActivityIndicator color={colors.primaryText} />
-              <Text style={styles.hint}>Đang trả lời…</Text>
-            </View>
-          ) : undefined
-        }
-      />
+      <View
+        testID="speaking-content"
+        style={styles.content}
+        onLayout={event => setContentHeight(event.nativeEvent.layout.height)}
+      >
+        <SpeakingAvatar
+          presentation={presentation}
+          height={avatarHeight}
+          handoff={handoff}
+        />
+        <View style={styles.messageArea}>
+          <Text style={styles.chatStatus} accessibilityLiveRegion="polite">
+            {chat.active ? phaseLabels[phase] : 'Phiên này chỉ xem lại'}
+          </Text>
+          <SpeakingMessages
+            messages={chat.messages}
+            presentation={presentation}
+          />
+        </View>
+      </View>
       <View style={styles.composer}>
-        <AuthNotice message={chat.error || voiceError} error />
-        {!chat.active ? (
-          <Text style={styles.hint}>Buổi hội thoại hiện không hoạt động.</Text>
-        ) : null}
-        {(!chat.ready && !chat.loading) || chat.unresolved ? (
+        <AuthNotice message={presentation.error || chat.error} error />
+        {chat.error ? (
           <AuthButton
             label="Tải lại hội thoại"
             variant="text"
-            busy={chat.loading}
-            disabled={chat.sending}
-            onPress={async () => {
-              const recovered = await chat.reload();
-              if (recovered && mounted.current) {
-                setDraft('');
-                if (mode === 'voice') read(recovered.content);
-              }
+            onPress={() => chat.reload()}
+          />
+        ) : null}
+        {chat.active &&
+        (phase === 'error' ||
+          (phase === 'idle' &&
+            presentation.transport !== 'connecting' &&
+            chat.ready)) ? (
+          <AuthButton
+            label={unsaved ? 'Thử lưu lại' : 'Kết nối lại'}
+            variant="outline"
+            onPress={() => {
+              if (unsaved) client.current?.retrySave();
+              else connect();
             }}
           />
         ) : null}
-        {chat.unresolved ? (
+        {unsaved && phase === 'error' ? (
           <AuthButton
-            label={
-              chat.retrySeconds > 0
-                ? `Thử lại sau ${chat.retrySeconds} giây`
-                : 'Thử lại'
-            }
-            busy={chat.sending}
-            disabled={chat.loading || !chat.active || chat.retrySeconds > 0}
-            onPress={() => send(true)}
+            label="Bỏ lượt chưa lưu"
+            variant="text"
+            onPress={() => {
+              client.current?.discardUnsavedTurn();
+              connect();
+            }}
           />
         ) : null}
-        {mode === 'voice' ? (
-          <View style={styles.voiceRow}>
+        {inputMode === 'voice' ? (
+          <View style={styles.voiceControls}>
+            <SpeakingMicrophone
+              presentation={presentation}
+              ready={ready}
+              label={micLabel}
+              onPressIn={() => {
+                client.current?.startSpeaking();
+              }}
+              onPressOut={() => {
+                client.current?.stopSpeaking();
+              }}
+            />
+            <Text style={styles.hint}>{micLabel}</Text>
+          </View>
+        ) : (
+          <View style={styles.inputRow}>
+            <TextInput
+              accessibilityLabel="Tin nhắn hội thoại"
+              placeholder="Nhập tin nhắn…"
+              placeholderTextColor={colors.placeholder}
+              multiline
+              maxLength={2000}
+              value={draft}
+              onChangeText={setDraft}
+              editable={ready}
+              style={styles.input}
+            />
             <Pressable
               accessibilityRole="button"
-              accessibilityLabel={
-                listening ? 'Dừng thu giọng nói' : 'Bắt đầu thu giọng nói'
-              }
-              accessibilityState={{ disabled: disabled || chat.unresolved }}
-              disabled={disabled || chat.unresolved}
-              onPress={toggleMic}
-              style={styles.microphone}
+              accessibilityLabel="Gửi tin nhắn"
+              accessibilityState={{ disabled: !ready || !draft.trim() }}
+              disabled={!ready || !draft.trim()}
+              onPress={send}
+              style={[
+                styles.send,
+                !ready || !draft.trim() ? styles.disabled : null,
+              ]}
             >
-              <HomeFeatureIcon
-                name="microphone"
-                color={listening ? colors.danger : colors.dark}
-                size={20}
-              />
-              <Text style={styles.speaker}>
-                {listening ? 'Dừng' : 'Bấm để nói'}
-              </Text>
-            </Pressable>
-            {latestReply ? (
-              <AuthButton
-                label={speaking ? 'Dừng đọc' : 'Đọc lại câu trả lời'}
-                variant="text"
-                disabled={chat.sending || listening}
-                onPress={() =>
-                  speaking ? ttsService.stop() : read(latestReply.content)
+              <AuthIcon
+                name="arrow"
+                color={
+                  !ready || !draft.trim()
+                    ? colors.disabledText
+                    : colors.onPrimary
                 }
               />
-            ) : null}
+            </Pressable>
           </View>
-        ) : null}
-        <View style={styles.inputRow}>
-          <TextInput
-            accessibilityLabel={
-              mode === 'voice'
-                ? 'Nội dung nhận dạng giọng nói'
-                : 'Tin nhắn hội thoại'
-            }
-            placeholder={
-              mode === 'voice'
-                ? 'Nói rồi kiểm tra nội dung trước khi gửi'
-                : 'Nhập tin nhắn'
-            }
-            multiline
-            maxLength={2000}
-            value={draft}
-            onChangeText={setDraft}
-            editable={!disabled && !chat.unresolved && !listening}
-            style={styles.input}
-          />
-          <Pressable
-            accessibilityRole="button"
-            accessibilityLabel="Gửi tin nhắn"
-            accessibilityState={{
-              disabled:
-                disabled || chat.unresolved || listening || !draft.trim(),
-              busy: chat.sending,
-            }}
-            disabled={disabled || chat.unresolved || listening || !draft.trim()}
-            onPress={() => send()}
+        )}
+      </View>
+      {showBriefing ? (
+        <Modal
+          transparent
+          visible
+          animationType={presentation.motion === 'reduced' ? 'fade' : 'slide'}
+          onRequestClose={() => setShowBriefing(false)}
+        >
+          <View
             style={[
-              styles.sendButton,
-              disabled || chat.unresolved || listening || !draft.trim()
-                ? styles.sendDisabled
-                : null,
+              styles.backdrop,
+              {
+                paddingTop: insets.top + spacing.lg,
+                paddingBottom: insets.bottom + spacing.lg,
+              },
             ]}
           >
-            {chat.sending ? (
-              <ActivityIndicator color={colors.onPrimary} />
-            ) : (
-              <Text
-                style={[
-                  styles.sendText,
-                  disabled || chat.unresolved || listening || !draft.trim()
-                    ? styles.sendTextDisabled
-                    : null,
-                ]}
-              >
-                Gửi
-              </Text>
-            )}
-          </Pressable>
-        </View>
-      </View>
+            <View accessibilityViewIsModal style={styles.taskSheet}>
+              <Text style={styles.title}>Nhiệm vụ của bạn</Text>
+              <ScrollView contentContainerStyle={styles.briefing}>
+                <Text style={styles.body}>{result.scenario.context}</Text>
+                <Text style={styles.body}>
+                  {result.scenario.learning_objectives}
+                </Text>
+                <Text style={styles.label}>
+                  AI đóng vai · {result.scenario.role.name}
+                </Text>
+                <Text style={styles.hint}>
+                  {result.scenario.role.description}
+                </Text>
+              </ScrollView>
+              <AuthButton
+                label="Đóng nhiệm vụ"
+                variant="text"
+                onPress={() => setShowBriefing(false)}
+              />
+            </View>
+          </View>
+        </Modal>
+      ) : null}
+      {showTranscript ? (
+        <Modal
+          transparent
+          visible={showTranscript}
+          animationType={presentation.motion === 'reduced' ? 'fade' : 'slide'}
+          onRequestClose={() => setShowTranscript(false)}
+        >
+          <View
+            style={[
+              styles.backdrop,
+              {
+                paddingTop: insets.top + spacing.lg,
+                paddingBottom: insets.bottom + spacing.lg,
+              },
+            ]}
+          >
+            <View accessibilityViewIsModal style={styles.sheet}>
+              <Text style={styles.title}>Nội dung hội thoại</Text>
+              <SpeakingMessages
+                messages={chat.messages}
+                presentation={{ ...presentation, user: '', assistant: '' }}
+              />
+              <AuthButton
+                label="Đóng hội thoại"
+                variant="text"
+                onPress={() => setShowTranscript(false)}
+              />
+            </View>
+          </View>
+        </Modal>
+      ) : null}
     </KeyboardAvoidingView>
   );
 }
-
 const styles = StyleSheet.create({
-  fill: { flex: 1, backgroundColor: colors.surface },
-  header: {
+  screen: { flex: 1, backgroundColor: colors.background },
+  content: {
+    flex: 1,
+    minHeight: 0,
+    width: '100%',
+    maxWidth: layout.maxContentWidth,
+    alignSelf: 'center',
     paddingHorizontal: layout.screenGutter,
-    gap: spacing.sm,
-    borderBottomWidth: StyleSheet.hairlineWidth,
-    borderBottomColor: colors.divider,
   },
-  headingRow: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm },
-  headingCopy: { flex: 1, gap: spacing.xs },
-  backButton: {
+  messageArea: { flex: 1, minHeight: 0, paddingTop: spacing.md },
+  chatStatus: {
+    ...typography.caption,
+    color: colors.muted,
+    textAlign: 'center',
+    marginBottom: spacing.sm,
+  },
+  taskToolbar: {
+    width: '100%',
+    maxWidth: layout.maxContentWidth,
+    alignSelf: 'center',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    gap: spacing.sm,
+    paddingHorizontal: layout.screenGutter,
+  },
+  taskButton: {
+    width: layout.touchTarget,
+    height: layout.touchTarget,
+    borderRadius: radius.pill,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  taskPressed: { backgroundColor: colors.track },
+  taskCircle: { opacity: 0.6 },
+  taskSheet: {
+    maxHeight: '75%',
+    width: '100%',
+    maxWidth: layout.maxContentWidth,
+    alignSelf: 'center',
+    backgroundColor: colors.surface,
+    borderRadius: radius.card,
+    padding: spacing.xl,
+    gap: spacing.md,
+  },
+  modeRow: {
+    flexDirection: 'row',
+    alignSelf: 'center',
+    width: 200,
+    flexShrink: 1,
+    padding: spacing.xs,
+    gap: spacing.xs,
+    borderWidth: 1,
+    borderColor: colors.border,
+    borderRadius: radius.pill,
+    borderCurve: 'continuous',
+    backgroundColor: colors.track,
+  },
+  modeButton: {
+    flex: 1,
+    minWidth: 0,
+    alignItems: 'center',
+    borderWidth: 1.5,
+    borderColor: 'transparent',
+    minHeight: layout.touchTarget,
+    justifyContent: 'center',
+    paddingHorizontal: spacing.md,
+    paddingVertical: spacing.xs,
+    borderRadius: radius.pill,
+  },
+  modeSelected: {
+    backgroundColor: colors.surface,
+    borderColor: colors.primaryText,
+    boxShadow: shadowSm,
+  },
+  modePressed: { backgroundColor: colors.badgeBg },
+  modeDisabled: {
+    backgroundColor: colors.disabled,
+    borderColor: colors.disabled,
+  },
+  modeTextDisabled: { color: colors.disabledText },
+  modeText: { ...typography.button, color: colors.muted, textAlign: 'center' },
+  modeTextSelected: { color: colors.primaryText },
+  voiceControls: {
+    alignItems: 'center',
+    gap: spacing.sm,
+  },
+  header: {
+    width: '100%',
+    maxWidth: layout.maxContentWidth,
+    alignSelf: 'center',
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: spacing.sm,
+    paddingHorizontal: layout.screenGutter,
+    paddingBottom: spacing.md,
+  },
+  back: {
     minWidth: layout.touchTarget,
     minHeight: layout.touchTarget,
     alignItems: 'center',
     justifyContent: 'center',
-    marginLeft: -spacing.md,
   },
-  backArrow: { fontSize: 32, color: colors.dark },
+  headingCopy: { flex: 1, gap: spacing.xs },
   title: { ...typography.title, color: colors.dark },
+  label: { ...typography.label, color: colors.dark },
+  body: { ...typography.input, color: colors.body },
   hint: { ...typography.caption, color: colors.muted },
-  modeRow: {
-    flexDirection: 'row',
-    paddingBottom: spacing.sm,
-  },
-  mode: {
-    minHeight: layout.touchTarget,
-    justifyContent: 'center',
-    paddingHorizontal: spacing.lg,
-    borderRadius: 8,
-    backgroundColor: colors.surface,
-  },
-  selectedMode: { backgroundColor: colors.surfaceTint },
-  messages: { padding: layout.screenGutter, gap: spacing.md, flexGrow: 1 },
-  message: {
-    maxWidth: '90%',
-    padding: spacing.md,
-    borderRadius: 16,
-    gap: spacing.xs,
-  },
-  userMessage: { alignSelf: 'flex-end', backgroundColor: colors.badgeBg },
-  aiMessage: { alignSelf: 'flex-start', backgroundColor: '#F5F5F4' },
-  speaker: { ...typography.label, color: colors.dark },
-  content: {
-    ...typography.input,
-    fontSize: 15,
-    lineHeight: 23,
-    color: colors.dark,
-  },
-  waiting: {
-    padding: spacing.md,
-    gap: spacing.sm,
-    flexDirection: 'row',
-    alignItems: 'center',
-  },
+  briefing: { padding: spacing.lg, gap: spacing.sm },
   composer: {
+    width: '100%',
+    maxWidth: layout.maxContentWidth,
+    alignSelf: 'center',
     paddingHorizontal: layout.screenGutter,
-    paddingVertical: spacing.md,
+    paddingVertical: spacing.sm,
     gap: spacing.sm,
   },
+  inputRow: { flexDirection: 'row', alignItems: 'flex-end', gap: spacing.sm },
   input: {
     ...typography.input,
     flex: 1,
-    color: colors.dark,
-    minHeight: 48,
+    minWidth: 0,
+    minHeight: layout.inputHeight,
     maxHeight: 100,
     padding: spacing.md,
+    borderRadius: radius.input,
+    backgroundColor: colors.surface,
+    color: colors.inputText,
     borderWidth: 1,
     borderColor: colors.border,
-    borderRadius: 12,
-    backgroundColor: colors.surface,
   },
-  inputRow: { flexDirection: 'row', alignItems: 'flex-end', gap: spacing.sm },
-  sendButton: {
-    minHeight: layout.touchTarget,
-    minWidth: 56,
-    borderRadius: 12,
-    backgroundColor: colors.dark,
+  send: {
+    width: layout.touchTarget,
+    height: layout.touchTarget,
+    borderRadius: radius.pill,
+    backgroundColor: colors.primary,
     alignItems: 'center',
     justifyContent: 'center',
-    paddingHorizontal: spacing.md,
   },
-  sendDisabled: { backgroundColor: colors.disabled },
-  sendText: { ...typography.button, color: colors.onPrimary },
-  sendTextDisabled: { color: colors.disabledText },
-  microphone: {
-    minHeight: layout.touchTarget,
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: spacing.sm,
-    paddingHorizontal: spacing.md,
+  disabled: { backgroundColor: colors.disabled },
+  backdrop: {
+    flex: 1,
+    backgroundColor: 'rgba(37,37,38,0.24)',
+    paddingHorizontal: layout.screenGutter,
+    justifyContent: 'center',
   },
-  voiceRow: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    gap: spacing.xs,
+  sheet: {
+    height: '85%',
+    maxWidth: layout.maxContentWidth,
+    width: '100%',
+    alignSelf: 'center',
+    borderRadius: radius.card,
+    backgroundColor: colors.surface,
+    padding: spacing.xl,
+    gap: spacing.lg,
   },
 });

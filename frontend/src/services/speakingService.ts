@@ -58,7 +58,7 @@ export interface StartedSession {
     id: string;
     scenario_id: string;
     scenario_role_id: string;
-    status: 'active';
+    status: 'active' | 'paused' | 'completed' | 'abandoned';
     current_input_mode: 'text' | 'voice';
     audio_storage_enabled: boolean;
     started_at: string;
@@ -108,7 +108,61 @@ export interface TurnReply {
   assistant_message: ConversationMessage;
 }
 
+export interface ConversationSummary {
+  id: string;
+  title: string;
+  role_name: string;
+  status: StartedSession['session']['status'];
+  last_activity_at: string;
+  last_message: string | null;
+}
+
+export interface ConversationHistory {
+  items: ConversationSummary[];
+  pagination: ScenarioList['pagination'];
+}
+
+export interface LiveCredentials {
+  token: string;
+  model: string;
+  lease: string;
+  last_sequence: number;
+  history: { role: 'user' | 'model'; parts: { text: string }[] }[];
+}
+export interface LiveTurnInput {
+  lease: string;
+  request_id: string;
+  after_sequence: number;
+  input_mode: 'text' | 'voice';
+  user_text: string;
+  assistant_text: string;
+}
+
 export const speakingService = {
+  liveToken(id: string): Promise<LiveCredentials> {
+    return authenticatedRequest<LiveCredentials>(
+      `/speaking/sessions/${encodeURIComponent(id)}/live-token`,
+      {},
+      'POST',
+    );
+  },
+  saveLiveTurn(id: string, input: LiveTurnInput): Promise<TurnReply> {
+    return authenticatedRequest<TurnReply>(
+      `/speaking/sessions/${encodeURIComponent(id)}/live-turns`,
+      input,
+      'POST',
+    );
+  },
+  history(page = 1): Promise<ConversationHistory> {
+    return authenticatedRequest<ConversationHistory>(
+      `/speaking/sessions?page=${page}&page_size=20`,
+    );
+  },
+  session(id: string): Promise<StartedSession> {
+    return authenticatedRequest<StartedSession>(
+      `/speaking/sessions/${encodeURIComponent(id)}`,
+    );
+  },
   messages(id: string, afterSequence = 0): Promise<Transcript> {
     return authenticatedRequest<Transcript>(
       `/speaking/sessions/${encodeURIComponent(

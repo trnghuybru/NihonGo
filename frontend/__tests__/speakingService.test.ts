@@ -140,3 +140,50 @@ test('loads persisted transcript and sends text or voice turns with authenticati
     expect(JSON.parse(options?.body as string)).toEqual(input);
   }
 });
+
+test('requests authenticated history and saved session endpoints', async () => {
+  jest
+    .mocked(fetch)
+    .mockImplementationOnce(() =>
+      reply({
+        items: [],
+        pagination: { page: 2, page_size: 20, total: 0, total_pages: 0 },
+      }),
+    )
+    .mockImplementationOnce(() => reply({ session: { id: 'saved-session' } }));
+  await speaking.history(2);
+  await speaking.session('saved-session');
+  expect(jest.mocked(fetch).mock.calls[0][0]).toContain(
+    '/api/speaking/sessions?page=2&page_size=20',
+  );
+  expect(jest.mocked(fetch).mock.calls[1][0]).toContain(
+    '/api/speaking/sessions/saved-session',
+  );
+  for (const [, options] of jest.mocked(fetch).mock.calls) {
+    expect(options?.headers).toMatchObject({
+      Authorization: 'Bearer access-1',
+    });
+    expect(options?.method).toBe('GET');
+  }
+});
+
+test('requests an authenticated ephemeral token and saves a Live transcript', async () => {
+  jest.mocked(fetch).mockImplementation(() => reply({}));
+  await speaking.liveToken('saved-session');
+  const turn = {
+    lease: 'signed',
+    request_id: 'uuid',
+    after_sequence: 1,
+    input_mode: 'voice' as const,
+    user_text: 'こんにちは',
+    assistant_text: 'こんにちは！',
+  };
+  await speaking.saveLiveTurn('saved-session', turn);
+  expect(jest.mocked(fetch).mock.calls[0][0]).toContain(
+    '/sessions/saved-session/live-token',
+  );
+  const [url, options] = jest.mocked(fetch).mock.calls[1];
+  expect(url).toContain('/sessions/saved-session/live-turns');
+  expect(options?.headers).toMatchObject({ Authorization: 'Bearer access-1' });
+  expect(JSON.parse(options?.body as string)).toEqual(turn);
+});

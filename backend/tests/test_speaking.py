@@ -99,6 +99,133 @@ class SpeakingTests(unittest.TestCase):
                                 json={} if data is None else data,
                                 headers={"Authorization": f"Bearer {token}"})
 
+    def live_credentials(self, identifier):
+        with patch.dict(os.environ, {"GEMINI_API_KEY": "server-secret", "GEMINI_LIVE_MODEL": "test-live"}), patch("speaking.live.requests.post") as provider:
+            provider.return_value.status_code = 200
+            provider.return_value.json.return_value = {"name": "auth_tokens/short-lived"}
+            response = self.client.post(f"/api/speaking/sessions/{identifier}/live-token", json={}, headers={"Authorization": "Bearer alice"})
+            return response, provider.call_args
+
+    def test_live_token_locks_role_and_model_without_exposing_credentials(self):
+        identifier = self.start().json["session"]["id"]
+        response, call = self.live_credentials(identifier)
+        self.assertEqual(response.status_code, 200, response.json)
+        self.assertEqual(response.json["token"], "auth_tokens/short-lived")
+        self.assertNotIn("server-secret", response.get_data(as_text=True))
+        self.assertNotIn("PRIVATE PROMPT", response.get_data(as_text=True))
+        self.assertEqual(call.kwargs["headers"]["x-goog-api-key"], "server-secret")
+        setup = call.kwargs["json"]["bidiGenerateContentSetup"]
+        self.assertEqual(setup["model"], "models/test-live")
+        self.assertIn("PRIVATE PROMPT", setup["systemInstruction"]["parts"][0]["text"])
+        self.assertTrue(setup["realtimeInputConfig"]["automaticActivityDetection"]["disabled"])
+        self.assertEqual(response.json["last_sequence"], 1)
+        self.assertEqual(response.json["history"][0]["role"], "model")
+
+    def test_live_transcript_is_idempotent_and_updates_history(self):
+        identifier = self.start().json["session"]["id"]
+        credentials, _ = self.live_credentials(identifier)
+        payload = {"lease": credentials.json["lease"], "request_id": str(uuid.uuid4()), "after_sequence": 1,
+                   "input_mode": "voice", "user_text": "こんにちは", "assistant_text": "よろしくお願いします"}
+        path = f"/api/speaking/sessions/{identifier}/live-turns"
+        headers = {"Authorization": "Bearer alice"}
+        first = self.client.post(path, json=payload, headers=headers)
+        self.assertEqual(first.status_code, 200, first.json)
+        second = self.client.post(path, json=payload, headers=headers)
+        self.assertEqual(first.json, second.json)
+        self.assertEqual(len(self.get(f"/api/speaking/sessions/{identifier}/messages").json["items"]), 3)
+        self.assertEqual(self.get("/api/speaking/sessions").json["items"][0]["last_message"], payload["assistant_text"])
+        payload["assistant_text"] = "Changed"
+        self.assertEqual(self.client.post(path, json=payload, headers=headers).status_code, 409)
+
+    def test_live_credentials_and_transcripts_require_owned_active_session(self):
+        identifier = self.start().json["session"]["id"]
+        path = f"/api/speaking/sessions/{identifier}/live-token"
+        self.assertEqual(self.client.post(path, json={}, headers={"Authorization": "Bearer bob"}).status_code, 404)
+        self.assertEqual(self.client.post(path, json={}).status_code, 401)
+        credentials, _ = self.live_credentials(identifier)
+        other = self.start(self.second.id).json["session"]["id"]
+        payload = {"lease": credentials.json["lease"], "request_id": str(uuid.uuid4()), "after_sequence": 1,
+                   "input_mode": "voice", "user_text": "Hi", "assistant_text": "Hello"}
+        response = self.client.post(f"/api/speaking/sessions/{other}/live-turns", json=payload, headers={"Authorization": "Bearer alice"})
+        self.assertEqual(response.status_code, 403)
+        db.session.get(ConversationSession, identifier).status = "completed"
+        db.session.commit()
+        self.assertEqual(self.client.post(path, json={}, headers={"Authorization": "Bearer alice"}).status_code, 409)
+
+    def test_live_rejects_stale_sequence_invalid_payload_and_provider_errors(self):
+        identifier = self.start().json["session"]["id"]
+        credentials, _ = self.live_credentials(identifier)
+        path = f"/api/speaking/sessions/{identifier}/live-turns"
+        payload = {"lease": credentials.json["lease"], "request_id": str(uuid.uuid4()), "after_sequence": 0,
+                   "input_mode": "voice", "user_text": "Hi", "assistant_text": "Hello"}
+        headers = {"Authorization": "Bearer alice"}
+        self.assertEqual(self.client.post(path, json=payload, headers=headers).status_code, 409)
+        for bad in ({**payload, "input_mode": []}, {**payload, "user_text": ""}, {**payload, "assistant_text": "a" * 2001}, {**payload, "lease": "forged"}, {**payload, "after_sequence": True}):
+            self.assertIn(self.client.post(path, json=bad, headers=headers).status_code, (400, 403))
+        with patch.dict(os.environ, {"GEMINI_API_KEY": "secret"}), patch("speaking.live.requests.post") as provider:
+            provider.return_value.status_code = 429
+            provider.return_value.headers = {"Retry-After": "10"}
+            response = self.client.post(f"/api/speaking/sessions/{identifier}/live-token", json={}, headers=headers)
+            self.assertEqual(response.status_code, 429)
+            self.assertEqual(response.headers["Retry-After"], "10")
+        with patch.dict(os.environ, {"GEMINI_API_KEY": ""}):
+            self.assertEqual(self.client.post(f"/api/speaking/sessions/{identifier}/live-token", json={}, headers=headers).status_code, 503)
+
+    def test_history_is_owned_paginated_and_orders_by_latest_message(self):
+        from datetime import timedelta
+        first = self.start().json["session"]["id"]
+        second = self.start(self.second.id).json["session"]["id"]
+        self.start(token="bob")
+        message = db.session.scalar(select(ConversationMessage).where(ConversationMessage.session_id == first))
+        message.occurred_at += timedelta(days=1)
+        message.content = "Tin nhắn cuối" * 30
+        db.session.commit()
+        response = self.get("/api/speaking/sessions", query_string={"page_size": 1})
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.json["pagination"]["total"], 2)
+        self.assertEqual(response.json["items"][0]["id"], first)
+        self.assertEqual(len(response.json["items"][0]["last_message"]), 160)
+        self.assertEqual(self.get("/api/speaking/sessions", query_string={"page_size": 1, "page": 2}).json["items"][0]["id"], second)
+        self.assertEqual(self.get("/api/speaking/sessions", query_string={"page": 100}).json["items"], [])
+        self.assertNotIn("PRIVATE PROMPT", response.get_data(as_text=True))
+
+    def test_saved_session_uses_original_snapshot_and_checks_ownership(self):
+        identifier = self.start().json["session"]["id"]
+        self.first.title = "Changed title"
+        self.first.status = "archived"
+        self.first_role.description = "Changed role"
+        db.session.get(ConversationSession, identifier).status = "completed"
+        db.session.commit()
+        path = f"/api/speaking/sessions/{identifier}"
+        response = self.get(path)
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.json["scenario"]["title"], "Làm quen")
+        self.assertEqual(response.json["scenario"]["role"]["description"], "Bạn mới")
+        self.assertEqual(response.json["session"]["status"], "completed")
+        self.assertNotIn("PRIVATE PROMPT", response.get_data(as_text=True))
+        self.assertNotIn("ai_instructions", response.get_data(as_text=True))
+        self.assertEqual(self.get(path, token="bob").status_code, 404)
+        self.assertEqual(self.get("/api/speaking/sessions/bad").status_code, 404)
+        self.assertEqual(self.get(path, token="invalid").status_code, 401)
+
+    def test_history_empty_and_session_without_opening(self):
+        self.assertEqual(self.get("/api/speaking/sessions").json["items"], [])
+        self.first_role.opening_message = None
+        db.session.commit()
+        identifier = self.start().json["session"]["id"]
+        item = self.get("/api/speaking/sessions").json["items"][0]
+        self.assertEqual(item["id"], identifier)
+        self.assertIsNone(item["last_message"])
+        self.assertIsNone(self.get(f"/api/speaking/sessions/{identifier}").json["opening_message"])
+
+    def test_history_rejects_invalid_and_duplicate_pagination(self):
+        for query in ({"page": "0"}, {"page_size": "101"}, {"page": "abc"},
+                      {"page": "1000001"}, {"page": "-1"}, {"user_id": "bob"},
+                      [("page", "1"), ("page", "2")]):
+            with self.subTest(query=query):
+                self.assertEqual(self.get("/api/speaking/sessions", query_string=query).status_code, 400)
+        self.assertEqual(self.get("/api/speaking/sessions", token="invalid").status_code, 401)
+
     def test_only_available_scenarios_are_listed_and_paginated(self):
         result = self.get().json
         self.assertEqual(result["pagination"]["total"], 2)
