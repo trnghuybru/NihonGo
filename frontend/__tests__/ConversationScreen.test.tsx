@@ -12,6 +12,7 @@ import {
 import Renderer, { act } from 'react-test-renderer';
 import { ConversationScreen } from '../src/screens/ConversationScreen';
 import { CharacterView3D } from '../src/components/CharacterView3D';
+import { AudioReplay } from '../src/services/audioReplay';
 import {
   GeminiLiveService,
   LiveCallbacks,
@@ -25,11 +26,20 @@ jest.mock('../src/components/CharacterView3D', () => ({
   CharacterView3D: () => null,
 }));
 jest.mock('../src/services/speakingService', () => ({
-  speakingService: { messages: jest.fn() },
+  speakingService: {
+    messages: jest.fn(),
+    audioPlayback: jest.fn(),
+    finish: jest.fn(),
+    evaluation: jest.fn(),
+    evaluate: jest.fn(),
+    messageFeedback: jest.fn(),
+  },
 }));
 jest.mock('../src/services/geminiLiveService', () => ({
   GeminiLiveService: jest.fn(),
 }));
+jest.mock('../src/services/audioReplay', () => ({ AudioReplay: jest.fn() }));
+const replayPlayer = { play: jest.fn(), stop: jest.fn(), close: jest.fn() };
 const opening: NonNullable<StartedSession['opening_message']> = {
   id: 'opening',
   sequence_number: 1,
@@ -86,6 +96,25 @@ const live = {
 beforeEach(() => {
   jest.clearAllMocks();
   jest
+    .mocked(speakingService.finish)
+    .mockResolvedValue({ session: { id: 'session-1', status: 'completed' } });
+  jest.mocked(speakingService.evaluation).mockResolvedValue({
+    status: 'insufficient_data',
+    overall_score: null,
+    result: {
+      assessment_status: 'insufficient_data',
+      summary: 'Chưa đủ dữ liệu để chấm điểm',
+      criteria: {
+        grammar: { score: null, feedback: '', suggestion: '' },
+        vocabulary: { score: null, feedback: '', suggestion: '' },
+        naturalness: { score: null, feedback: '', suggestion: '' },
+      },
+      strengths: [],
+      next_steps: ['Luyện ít nhất ba lượt.'],
+      items: [],
+    },
+  });
+  jest
     .spyOn(AccessibilityInfo, 'isReduceMotionEnabled')
     .mockResolvedValue(false);
   jest
@@ -101,6 +130,11 @@ beforeEach(() => {
     has_more: false,
     next_sequence: 1,
   });
+  replayPlayer.play.mockResolvedValue(true);
+  replayPlayer.close.mockResolvedValue(undefined);
+  jest
+    .mocked(AudioReplay)
+    .mockImplementation(() => replayPlayer as unknown as AudioReplay);
   live.connect.mockImplementation(async () => {
     callbacks.onState('ready');
     return true;
@@ -253,11 +287,46 @@ test('keeps completed sessions read only without opening a Live connection', asy
   await render();
   expect(live.connect).not.toHaveBeenCalled();
   expect(
-    tree.root.findAll(node => node.props.testID === 'speaking-mic')[0].props
-      .disabled,
-  ).toBe(true);
+    tree.root.findAll(node => node.props.testID === 'speaking-mic'),
+  ).toHaveLength(0);
+  expect(control('Xem điểm & nhận xét')).toBeDefined();
   expect(text()).toContain('Phiên này chỉ xem lại');
 });
+test('finishes the session separately without automatically requesting feedback', async () => {
+  await render();
+  await act(async () => control('Kết thúc').props.onPress());
+  expect(speakingService.finish).toHaveBeenCalledWith('session-1');
+  expect(live.close).toHaveBeenCalled();
+  expect(speakingService.evaluation).not.toHaveBeenCalled();
+  expect(speakingService.evaluate).not.toHaveBeenCalled();
+  expect(text()).toContain('Đã kết thúc');
+  expect(control('Xem điểm & nhận xét')).toBeDefined();
+  expect(
+    tree.root.findAll(node => node.props.testID === 'speaking-mic'),
+  ).toHaveLength(0);
+});
+
+test('blocks completion during capture and while a turn is unsaved', async () => {
+  await render();
+  await act(async () => callbacks.onState('listening'));
+  expect(control('Kết thúc').props.disabled).toBe(true);
+  live.hasUnsavedTurn.mockReturnValue(true);
+  await act(async () => callbacks.onState('error'));
+  expect(control('Kết thúc').props.disabled).toBe(true);
+  expect(speakingService.finish).not.toHaveBeenCalled();
+});
+
+test('keeps the conversation open when completion fails', async () => {
+  jest
+    .mocked(speakingService.finish)
+    .mockRejectedValueOnce(new Error('Chưa lưu xong âm thanh.'));
+  await render();
+  await act(async () => control('Kết thúc').props.onPress());
+  expect(text()).toContain('Chưa lưu xong âm thanh.');
+  expect(speakingService.evaluation).not.toHaveBeenCalled();
+  expect(live.close).not.toHaveBeenCalled();
+});
+
 test('does not connect if history fails to load', async () => {
   jest
     .mocked(speakingService.messages)
@@ -273,12 +342,12 @@ test('keeps Live during the microphone permission overlay but interrupts on back
     .mockReturnValue({ remove: jest.fn() });
   try {
     await render();
-    const change = subscription.mock.calls.find(
-      call => call[0] === 'change',
-    )![1];
-    await act(async () => change('inactive'));
+    const changes = subscription.mock.calls
+      .filter(call => call[0] === 'change')
+      .map(call => call[1]);
+    await act(async () => changes.forEach(change => change('inactive')));
     expect(live.interrupt).not.toHaveBeenCalled();
-    await act(async () => change('background'));
+    await act(async () => changes.forEach(change => change('background')));
     expect(live.interrupt).toHaveBeenCalled();
     expect(text()).toContain('chuyển nền');
   } finally {
@@ -347,7 +416,7 @@ test.each([360, 1440])(
     const stage = tree.root.findAll(
       node => node.props.testID === 'speaking-avatar-stage',
     )[0];
-    expect(StyleSheet.flatten(stage.props.style).height).toBe(400);
+    expect(StyleSheet.flatten(stage.props.style).height).toBe(440);
     expect(tree.root.findByType(CharacterView3D).props.portrait).toBe(true);
     {
       const content = tree.root.findAll(
@@ -356,26 +425,98 @@ test.each([360, 1440])(
       await act(async () =>
         content.props.onLayout({ nativeEvent: { layout: { height: 600 } } }),
       );
-      expect(StyleSheet.flatten(stage.props.style).height).toBe(300);
+      expect(StyleSheet.flatten(stage.props.style).height).toBe(330);
     }
   },
 );
-test('honors native reduced motion and uses fade for the transcript sheet', async () => {
-  const reduced = jest
-    .spyOn(AccessibilityInfo, 'isReduceMotionEnabled')
-    .mockResolvedValue(true);
-  try {
-    await render();
-    const button = tree.root.findAll(
-      node =>
-        node.props.label === 'Hội thoại' &&
-        typeof node.props.onPress === 'function',
-    )[0];
-    await act(async () => button.props.onPress());
-    expect(tree.root.findByType(Modal).props.animationType).toBe('fade');
-  } finally {
-    reduced.mockRestore();
-  }
+test('toggles the transcript in place and hides Aoi without interrupting the live session', async () => {
+  await render();
+  expect(tree.root.findAllByType(CharacterView3D)).toHaveLength(1);
+  await act(async () => control('Ẩn Aoi').props.onPress());
+  expect(tree.root.findAllByType(CharacterView3D)).toHaveLength(0);
+  expect(tree.root.findAllByType(Modal)).toHaveLength(0);
+  expect(control('Hiện Aoi')).toBeDefined();
+  expect(live.close).not.toHaveBeenCalled();
+  await act(async () => control('Hiện Aoi').props.onPress());
+  expect(tree.root.findAllByType(CharacterView3D)).toHaveLength(1);
+});
+
+const learnerMessage = {
+  ...opening,
+  id: 'learner-1',
+  sequence_number: 2,
+  speaker: 'user' as const,
+  input_mode: 'voice' as const,
+  content: '日本に行きたいでした。',
+  audio: {
+    id: 'learner-audio',
+    mime_type: 'audio/wav',
+    size_bytes: 96044,
+    duration_ms: 1000,
+  },
+};
+async function renderLearnerSentence() {
+  jest.mocked(speakingService.messages).mockResolvedValue({
+    items: [opening, learnerMessage],
+    session: { id: 'session-1', status: 'active', current_input_mode: 'voice' },
+    has_more: false,
+    next_sequence: 2,
+  });
+  await render();
+}
+test('requests inline sentence feedback on demand without ending the conversation and reuses it', async () => {
+  jest.mocked(speakingService.messageFeedback).mockResolvedValue({
+    status: 'completed',
+    result: {
+      summary: 'Cần chỉnh quá khứ.',
+      items: [
+        {
+          kind: 'error',
+          criterion: 'grammar',
+          message_id: learnerMessage.id,
+          original: '行きたいでした',
+          improved: '行きたかったです',
+          explanation: 'Dùng quá khứ của たい.',
+        },
+      ],
+    },
+  });
+  await renderLearnerSentence();
+  expect(control('Nghe lại giọng của bạn')).toBeDefined();
+  expect(control('Nhận xét câu: こんにちは！')).toBeUndefined();
+  expect(speakingService.messageFeedback).not.toHaveBeenCalled();
+  const bulb = `Nhận xét câu: ${learnerMessage.content}`;
+  await act(async () => control(bulb).props.onPress());
+  expect(speakingService.messageFeedback).toHaveBeenCalledWith(
+    'session-1',
+    learnerMessage.id,
+  );
+  expect(text()).toContain('行きたかったです');
+  expect(speakingService.finish).not.toHaveBeenCalled();
+  expect(speakingService.evaluate).not.toHaveBeenCalled();
+  expect(live.close).not.toHaveBeenCalled();
+  await act(async () => control(bulb).props.onPress());
+  expect(text()).not.toContain('行きたかったです');
+  await act(async () => control(bulb).props.onPress());
+  expect(text()).toContain('行きたかったです');
+  expect(speakingService.messageFeedback).toHaveBeenCalledTimes(1);
+});
+test('shows sentence-level errors and lets the learner retry without closing Live', async () => {
+  jest
+    .mocked(speakingService.messageFeedback)
+    .mockRejectedValueOnce(new Error('Model đang bận.'))
+    .mockResolvedValueOnce({
+      status: 'completed',
+      result: { summary: 'Câu này phù hợp.', items: [] },
+    });
+  await renderLearnerSentence();
+  await act(async () =>
+    control(`Nhận xét câu: ${learnerMessage.content}`).props.onPress(),
+  );
+  expect(text()).toContain('Model đang bận.');
+  await act(async () => control('Thử nhận xét lại').props.onPress());
+  expect(text()).toContain('Câu này phù hợp.');
+  expect(live.close).not.toHaveBeenCalled();
 });
 
 test('keeps a long live transcript scrollable instead of truncating it to three lines', async () => {
@@ -433,7 +574,7 @@ test('reacts to measured mic level only during capture and clears it after relea
 
 test('requests the opening voice on creation but not on reconnect', async () => {
   await render();
-  expect(live.connect).toHaveBeenCalledWith(opening.content);
+  expect(live.connect).toHaveBeenCalledWith(opening.content, opening.id);
   await act(async () => callbacks.onError('Offline'));
   const retry = tree.root.findAll(
     node =>
@@ -441,7 +582,80 @@ test('requests the opening voice on creation but not on reconnect', async () => 
       typeof node.props.onPress === 'function',
   )[0];
   await act(async () => retry.props.onPress());
-  expect(live.connect).toHaveBeenLastCalledWith(undefined);
+  expect(live.connect).toHaveBeenLastCalledWith(undefined, opening.id);
+});
+
+test('can replay saved audio when Live is offline, and stops on the next tap', async () => {
+  jest.mocked(speakingService.messages).mockResolvedValue({
+    items: [
+      {
+        ...opening,
+        audio: {
+          id: 'audio-1',
+          mime_type: 'audio/wav',
+          size_bytes: 48044,
+          duration_ms: 1000,
+        },
+      },
+    ],
+    session: { id: 'session-1', status: 'active', current_input_mode: 'text' },
+    has_more: false,
+    next_sequence: 1,
+  });
+  jest
+    .mocked(speakingService.audioPlayback)
+    .mockResolvedValue({ url: 'http://s3/signed' });
+  await render();
+  await act(async () => callbacks.onError('Live offline'));
+  expect(control('Nghe lại giọng Aoi').props.disabled).toBe(false);
+  await act(async () => control('Nghe lại giọng Aoi').props.onPress());
+  expect(speakingService.audioPlayback).toHaveBeenCalledWith(
+    'session-1',
+    'audio-1',
+  );
+  expect(replayPlayer.play).toHaveBeenCalledWith(
+    'http://s3/signed',
+    expect.any(Function),
+    false,
+  );
+  expect(control('Dừng giọng Aoi').props.accessibilityState.selected).toBe(
+    true,
+  );
+  await act(async () => control('Dừng giọng Aoi').props.onPress());
+  expect(control('Nghe lại giọng Aoi').props.accessibilityState.selected).toBe(
+    false,
+  );
+});
+
+test('enables microphone volume compensation for saved user messages', async () => {
+  jest.mocked(speakingService.messages).mockResolvedValue({
+    items: [
+      {
+        ...opening,
+        speaker: 'user',
+        audio: {
+          id: 'audio-user',
+          mime_type: 'audio/wav',
+          size_bytes: 32044,
+          duration_ms: 1000,
+        },
+      },
+    ],
+    session: { id: 'session-1', status: 'active', current_input_mode: 'voice' },
+    has_more: false,
+    next_sequence: 1,
+  });
+  jest
+    .mocked(speakingService.audioPlayback)
+    .mockResolvedValue({ url: 'http://s3/user' });
+  await render();
+  await act(async () => callbacks.onError('Live offline'));
+  await act(async () => control('Nghe lại giọng của bạn').props.onPress());
+  expect(replayPlayer.play).toHaveBeenCalledWith(
+    'http://s3/user',
+    expect.any(Function),
+    true,
+  );
 });
 
 test('opening a previous conversation does not request opening audio', async () => {
@@ -453,5 +667,5 @@ test('opening a previous conversation does not request opening audio', async () 
       />,
     );
   });
-  expect(live.connect).toHaveBeenCalledWith(undefined);
+  expect(live.connect).toHaveBeenCalledWith(undefined, undefined);
 });

@@ -15,7 +15,9 @@ export async function apiRequest<T>(
   path: string,
   data?: unknown,
   accessToken?: string,
-  method: 'GET' | 'POST' | 'PUT' = data === undefined ? 'GET' : 'POST',
+  method: 'GET' | 'POST' | 'PUT' | 'DELETE' = data === undefined
+    ? 'GET'
+    : 'POST',
   options?: { timeoutMs?: number },
 ): Promise<T> {
   const baseUrl = apiBaseUrl();

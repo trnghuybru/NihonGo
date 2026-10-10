@@ -6,6 +6,22 @@ type IconProps = {
   strokeWidth?: number;
 };
 
+export function TrashIcon({
+  size = 20,
+  color = '#75777D',
+  strokeWidth = 1.7,
+}: IconProps) {
+  const s = stroke(color, strokeWidth);
+  return (
+    <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+      <Path
+        d="M3 6h18M9 6V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2M5 6l1 14a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1l1-14M10 10v7M14 10v7"
+        {...s}
+      />
+    </Svg>
+  );
+}
+
 function stroke(color: string, strokeWidth: number) {
   return {
     stroke: color,
@@ -16,7 +32,11 @@ function stroke(color: string, strokeWidth: number) {
   };
 }
 
-export function MailIcon({ size = 20, color = '#75777D', strokeWidth = 1.7 }: IconProps) {
+export function MailIcon({
+  size = 20,
+  color = '#75777D',
+  strokeWidth = 1.7,
+}: IconProps) {
   const s = stroke(color, strokeWidth);
   return (
     <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
@@ -26,7 +46,11 @@ export function MailIcon({ size = 20, color = '#75777D', strokeWidth = 1.7 }: Ic
   );
 }
 
-export function LockIcon({ size = 20, color = '#75777D', strokeWidth = 1.7 }: IconProps) {
+export function LockIcon({
+  size = 20,
+  color = '#75777D',
+  strokeWidth = 1.7,
+}: IconProps) {
   const s = stroke(color, strokeWidth);
   return (
     <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
@@ -36,29 +60,50 @@ export function LockIcon({ size = 20, color = '#75777D', strokeWidth = 1.7 }: Ic
   );
 }
 
-export function EyeIcon({ size = 20, color = '#75777D', strokeWidth = 1.7 }: IconProps) {
+export function EyeIcon({
+  size = 20,
+  color = '#75777D',
+  strokeWidth = 1.7,
+}: IconProps) {
   const s = stroke(color, strokeWidth);
   return (
     <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
-      <Path d="M2.06 12.35a1 1 0 0 1 0-.7 10.75 10.75 0 0 1 19.88 0 1 1 0 0 1 0 .7 10.75 10.75 0 0 1-19.88 0" {...s} />
+      <Path
+        d="M2.06 12.35a1 1 0 0 1 0-.7 10.75 10.75 0 0 1 19.88 0 1 1 0 0 1 0 .7 10.75 10.75 0 0 1-19.88 0"
+        {...s}
+      />
       <Circle cx="12" cy="12" r="3" {...s} />
     </Svg>
   );
 }
 
-export function EyeOffIcon({ size = 20, color = '#75777D', strokeWidth = 1.7 }: IconProps) {
+export function EyeOffIcon({
+  size = 20,
+  color = '#75777D',
+  strokeWidth = 1.7,
+}: IconProps) {
   const s = stroke(color, strokeWidth);
   return (
     <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
-      <Path d="M10.73 5.08a10.74 10.74 0 0 1 11.2 6.57 1 1 0 0 1 0 .7 10.75 10.75 0 0 1-1.44 2.49" {...s} />
+      <Path
+        d="M10.73 5.08a10.74 10.74 0 0 1 11.2 6.57 1 1 0 0 1 0 .7 10.75 10.75 0 0 1-1.44 2.49"
+        {...s}
+      />
       <Path d="M14.08 14.16a3 3 0 0 1-4.24-4.25" {...s} />
-      <Path d="M17.48 17.5a10.75 10.75 0 0 1-15.42-5.15 1 1 0 0 1 0-.7 10.75 10.75 0 0 1 4.45-5.14" {...s} />
+      <Path
+        d="M17.48 17.5a10.75 10.75 0 0 1-15.42-5.15 1 1 0 0 1 0-.7 10.75 10.75 0 0 1 4.45-5.14"
+        {...s}
+      />
       <Path d="m2 2 20 20" {...s} />
     </Svg>
   );
 }
 
-export function ArrowRightIcon({ size = 20, color = '#FFFFFF', strokeWidth = 2.2 }: IconProps) {
+export function ArrowRightIcon({
+  size = 20,
+  color = '#FFFFFF',
+  strokeWidth = 2.2,
+}: IconProps) {
   const s = stroke(color, strokeWidth);
   return (
     <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
@@ -68,7 +113,11 @@ export function ArrowRightIcon({ size = 20, color = '#FFFFFF', strokeWidth = 2.2
   );
 }
 
-export function CheckIcon({ size = 20, color = '#FFFFFF', strokeWidth = 3 }: IconProps) {
+export function CheckIcon({
+  size = 20,
+  color = '#FFFFFF',
+  strokeWidth = 3,
+}: IconProps) {
   const s = stroke(color, strokeWidth);
   return (
     <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
@@ -77,7 +126,11 @@ export function CheckIcon({ size = 20, color = '#FFFFFF', strokeWidth = 3 }: Ico
   );
 }
 
-export function FingerprintIcon({ size = 20, color = '#091426', strokeWidth = 1.6 }: IconProps) {
+export function FingerprintIcon({
+  size = 20,
+  color = '#091426',
+  strokeWidth = 1.6,
+}: IconProps) {
   const s = stroke(color, strokeWidth);
   return (
     <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
@@ -117,7 +170,13 @@ export function GoogleIcon({ size = 20 }: { size?: number }) {
   );
 }
 
-export function AppleIcon({ size = 20, color = '#091426' }: { size?: number; color?: string }) {
+export function AppleIcon({
+  size = 20,
+  color = '#091426',
+}: {
+  size?: number;
+  color?: string;
+}) {
   return (
     <Svg width={size} height={size} viewBox="0 0 814 1000" fill="none">
       <Path
@@ -149,7 +208,11 @@ export function LineIcon({ size = 20 }: { size?: number }) {
   );
 }
 
-export function MicIcon({ size = 24, color = '#FFFFFF', strokeWidth = 2 }: IconProps) {
+export function MicIcon({
+  size = 24,
+  color = '#FFFFFF',
+  strokeWidth = 2,
+}: IconProps) {
   const s = stroke(color, strokeWidth);
   return (
     <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
@@ -161,7 +224,11 @@ export function MicIcon({ size = 24, color = '#FFFFFF', strokeWidth = 2 }: IconP
   );
 }
 
-export function MicOffIcon({ size = 24, color = '#FFFFFF', strokeWidth = 2 }: IconProps) {
+export function MicOffIcon({
+  size = 24,
+  color = '#FFFFFF',
+  strokeWidth = 2,
+}: IconProps) {
   const s = stroke(color, strokeWidth);
   return (
     <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
@@ -176,7 +243,11 @@ export function MicOffIcon({ size = 24, color = '#FFFFFF', strokeWidth = 2 }: Ic
   );
 }
 
-export function VolumeIcon({ size = 22, color = '#BA0035', strokeWidth = 2 }: IconProps) {
+export function VolumeIcon({
+  size = 22,
+  color = '#BA0035',
+  strokeWidth = 2,
+}: IconProps) {
   const s = stroke(color, strokeWidth);
   return (
     <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
@@ -187,7 +258,11 @@ export function VolumeIcon({ size = 22, color = '#BA0035', strokeWidth = 2 }: Ic
   );
 }
 
-export function VolumeXIcon({ size = 22, color = '#75777D', strokeWidth = 2 }: IconProps) {
+export function VolumeXIcon({
+  size = 22,
+  color = '#75777D',
+  strokeWidth = 2,
+}: IconProps) {
   const s = stroke(color, strokeWidth);
   return (
     <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
@@ -198,7 +273,11 @@ export function VolumeXIcon({ size = 22, color = '#75777D', strokeWidth = 2 }: I
   );
 }
 
-export function RefreshIcon({ size = 20, color = '#75777D', strokeWidth = 2 }: IconProps) {
+export function RefreshIcon({
+  size = 20,
+  color = '#75777D',
+  strokeWidth = 2,
+}: IconProps) {
   const s = stroke(color, strokeWidth);
   return (
     <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
@@ -210,26 +289,44 @@ export function RefreshIcon({ size = 20, color = '#75777D', strokeWidth = 2 }: I
   );
 }
 
-export function MessageSquareIcon({ size = 20, color = '#75777D', strokeWidth = 2 }: IconProps) {
+export function MessageSquareIcon({
+  size = 20,
+  color = '#75777D',
+  strokeWidth = 2,
+}: IconProps) {
   const s = stroke(color, strokeWidth);
   return (
     <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
-      <Path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" {...s} />
+      <Path
+        d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+        {...s}
+      />
     </Svg>
   );
 }
 
-export function KeyboardIcon({ size = 20, color = '#75777D', strokeWidth = 1.8 }: IconProps) {
+export function KeyboardIcon({
+  size = 20,
+  color = '#75777D',
+  strokeWidth = 1.8,
+}: IconProps) {
   const s = stroke(color, strokeWidth);
   return (
     <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
       <Rect x="2" y="4" width="20" height="16" rx="2" {...s} />
-      <Path d="M6 8h.01M10 8h.01M14 8h.01M18 8h.01M8 12h.01M12 12h.01M16 12h.01M7 16h10" {...s} />
+      <Path
+        d="M6 8h.01M10 8h.01M14 8h.01M18 8h.01M8 12h.01M12 12h.01M16 12h.01M7 16h10"
+        {...s}
+      />
     </Svg>
   );
 }
 
-export function XIcon({ size = 20, color = '#75777D', strokeWidth = 2 }: IconProps) {
+export function XIcon({
+  size = 20,
+  color = '#75777D',
+  strokeWidth = 2,
+}: IconProps) {
   const s = stroke(color, strokeWidth);
   return (
     <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
@@ -238,7 +335,11 @@ export function XIcon({ size = 20, color = '#75777D', strokeWidth = 2 }: IconPro
   );
 }
 
-export function ChevronDownIcon({ size = 20, color = '#75777D', strokeWidth = 2 }: IconProps) {
+export function ChevronDownIcon({
+  size = 20,
+  color = '#75777D',
+  strokeWidth = 2,
+}: IconProps) {
   const s = stroke(color, strokeWidth);
   return (
     <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
@@ -246,4 +347,3 @@ export function ChevronDownIcon({ size = 20, color = '#75777D', strokeWidth = 2 
     </Svg>
   );
 }
-

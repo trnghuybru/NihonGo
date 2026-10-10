@@ -98,15 +98,15 @@ export function CharacterView3D({
   );
 }
 const styles = StyleSheet.create({
-  portraitStage: { minHeight: 0 },
+  portraitStage: { minHeight: 0, borderRadius: 0 },
   stage: {
     flex: 1,
     minHeight: 160,
     overflow: 'hidden',
     borderRadius: radius.card,
-    backgroundColor: colors.background,
+    backgroundColor: colors.surface,
   },
-  canvas: { flex: 1, backgroundColor: colors.background },
+  canvas: { flex: 1, backgroundColor: colors.surface },
   overlay: {
     position: 'absolute',
     top: 0,
@@ -117,7 +117,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     gap: spacing.md,
-    backgroundColor: colors.background,
+    backgroundColor: colors.surface,
   },
   hint: { ...typography.body, color: colors.muted, textAlign: 'center' },
 });

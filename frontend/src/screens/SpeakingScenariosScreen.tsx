@@ -188,6 +188,7 @@ function ScenarioPreview({
   startError: string;
 }) {
   const [roleId, setRoleId] = useState(scenario.roles[0]?.id || '');
+  const [saveAudio, setSaveAudio] = useState(true);
   const role = scenario.roles.find(item => item.id === roleId);
   return (
     <View style={styles.previewContent}>
@@ -230,6 +231,21 @@ function ScenarioPreview({
           ))}
         </View>
       ) : null}
+      <Pressable
+        accessibilityRole="checkbox"
+        accessibilityLabel="Lưu âm thanh để nghe lại"
+        accessibilityState={{ checked: saveAudio, disabled: busy }}
+        disabled={busy}
+        onPress={() => setSaveAudio(value => !value)}
+        style={styles.audioOption}
+      >
+        <Text style={styles.optionHeading}>
+          {saveAudio ? '☑' : '☐'} Lưu âm thanh để nghe lại
+        </Text>
+        <Text style={styles.resultCount}>
+          Lưu giọng của bạn và Aoi trong lịch sử hội thoại.
+        </Text>
+      </Pressable>
       <AuthNotice message={startError} error />
       <AuthButton
         label="Bắt đầu trò chuyện"
@@ -239,7 +255,7 @@ function ScenarioPreview({
           onStart({
             role_id: roleId,
             input_mode: 'voice',
-            audio_storage_enabled: false,
+            audio_storage_enabled: saveAudio,
           })
         }
       />
@@ -417,18 +433,27 @@ export function SpeakingScenariosScreen() {
             onBack={returnToHistory}
           />
         ) : (
-          <View
-            style={[styles.chatShell, { paddingTop: insets.top + spacing.lg }]}
-          >
-            <Text accessibilityRole="header" style={styles.pageTitle}>
-              Luyện nói
-            </Text>
-            <Text style={styles.resultCount}>Hội thoại cùng AI</Text>
-            <AuthButton
-              label="Cuộc trò chuyện mới"
-              disabled={openingHistory}
-              onPress={openChooser}
-            />
+          <View style={styles.chatShell}>
+            <View
+              style={[
+                styles.speakingHeader,
+                { paddingTop: insets.top + spacing.xxl },
+              ]}
+            >
+              <View style={styles.speakingHeaderContent}>
+                <View style={styles.speakingHeaderCopy}>
+                  <Text accessibilityRole="header" style={styles.pageTitle}>
+                    Luyện nói
+                  </Text>
+                  <Text style={styles.resultCount}>Hội thoại cùng AI</Text>
+                </View>
+                <AuthButton
+                  label="Cuộc trò chuyện mới"
+                  disabled={openingHistory}
+                  onPress={openChooser}
+                />
+              </View>
+            </View>
             <SpeakingHistory
               refreshKey={historyVersion}
               opening={openingHistory}
@@ -700,8 +725,29 @@ export function SpeakingScenariosScreen() {
 const styles = StyleSheet.create({
   chatShell: {
     flex: 1,
+    backgroundColor: colors.background,
+  },
+  speakingHeader: {
     paddingHorizontal: layout.screenGutter,
+    paddingBottom: spacing.xxl,
+    backgroundColor: colors.background,
+    backgroundImage: [
+      `linear-gradient(to bottom, rgba(255, 251, 247, 0) 45%, ${colors.background} 100%)`,
+      'radial-gradient(ellipse at 82% 24%, rgba(248, 198, 181, 0.85) 0%, rgba(248, 198, 181, 0) 75%)',
+      `linear-gradient(150deg, #FBE0BF 0%, ${colors.background} 100%)`,
+    ].join(', '),
+  },
+  speakingHeaderContent: {
+    width: '100%',
+    maxWidth: layout.maxContentWidth,
+    alignSelf: 'center',
+    gap: spacing.xxl,
+  },
+  speakingHeaderCopy: { gap: spacing.sm },
+  audioOption: {
+    minHeight: layout.touchTarget,
     gap: spacing.sm,
+    paddingVertical: spacing.sm,
   },
   modalHeading: {
     flexDirection: 'row',

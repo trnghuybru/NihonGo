@@ -24,10 +24,20 @@ import {
 import { useSpeakingPresentation } from '../hooks/useSpeakingPresentation';
 import { SpeakingMessages } from '../components/SpeakingMessages';
 import { SpeakingMicrophone } from '../components/SpeakingMicrophone';
+import {
+  EyeIcon,
+  EyeOffIcon,
+  KeyboardIcon,
+  MicIcon,
+} from '../components/icons';
 import { phaseLabels } from '../components/SpeakingStage';
 import { useConversation } from '../hooks/useConversation';
+import { useAudioReplay } from '../hooks/useAudioReplay';
+import { useSentenceFeedback } from '../hooks/useSentenceFeedback';
 import { GeminiLiveService } from '../services/geminiLiveService';
-import { StartedSession } from '../services/speakingService';
+import { StartedSession, speakingService } from '../services/speakingService';
+import { errorMessage } from '../hooks/useSpeakingScenarios';
+import { ConversationEvaluationScreen } from './ConversationEvaluationScreen';
 import {
   colors,
   layout,
@@ -46,6 +56,8 @@ export function ConversationScreen({
 }) {
   const insets = useSafeAreaInsets();
   const chat = useConversation(result.session.id);
+  const replay = useAudioReplay(result.session.id);
+  const sentenceFeedback = useSentenceFeedback(result.session.id);
   const client = useRef<GeminiLiveService | null>(null);
   const lifecycle = useRef(0);
   const openingRequested = useRef(false);
@@ -54,11 +66,19 @@ export function ConversationScreen({
   const { handoff } = useSpeakingAnimation(presentation);
   const { height } = useWindowDimensions();
   const [contentHeight, setContentHeight] = useState(height);
-  const avatarHeight = Math.round(contentHeight * 0.5);
+  const avatarHeight = Math.round(contentHeight * 0.55);
   const [draft, setDraft] = useState('');
   const [showTranscript, setShowTranscript] = useState(false);
   const [showBriefing, setShowBriefing] = useState(false);
   const [inputMode, setInputMode] = useState<'voice' | 'text'>('voice');
+  const [finished, setFinished] = useState(
+    result.session.status === 'completed',
+  );
+  const [finishing, setFinishing] = useState(false);
+  const [finishError, setFinishError] = useState('');
+  const [showEvaluation, setShowEvaluation] = useState(false);
+  const finishingRef = useRef(false);
+  const active = chat.active && !finished;
   const reload = useRef(chat.reload);
   useEffect(() => {
     reload.current = chat.reload;
@@ -95,11 +115,17 @@ export function ConversationScreen({
     client.current = live;
     const connected = await live.connect(
       openingRequested.current ? undefined : result.opening_message?.content,
+      result.opening_message?.id,
     );
     if (connected && current()) openingRequested.current = true;
-  }, [result.session.id, result.opening_message?.content, dispatch]);
+  }, [
+    result.session.id,
+    result.opening_message?.content,
+    result.opening_message?.id,
+    dispatch,
+  ]);
   useEffect(() => {
-    if (!chat.ready || !chat.active) return;
+    if (!chat.ready || !active) return;
     connect();
     const subscription = AppState.addEventListener('change', next => {
       if (next === 'background') {
@@ -116,12 +142,21 @@ export function ConversationScreen({
       subscription.remove();
       client.current?.close();
     };
-  }, [chat.ready, chat.active, connect, dispatch]);
+  }, [chat.ready, active, connect, dispatch]);
+  const replayAllowed =
+    !active || ['idle', 'user_turn', 'error'].includes(phase);
+  const stopReplay = replay.stop;
+  useEffect(() => {
+    if (!replayAllowed) stopReplay();
+  }, [replayAllowed, stopReplay]);
+  const replayControls = { ...replay, disabled: !replayAllowed };
   const ready =
     phase === 'user_turn' &&
     presentation.transport === 'ready' &&
-    chat.active &&
-    !chat.loading;
+    active &&
+    !finishing &&
+    !chat.loading &&
+    !replay.messageId;
   const micLabel =
     phase === 'user_speaking'
       ? 'Đang thu âm, thả để gửi'
@@ -139,7 +174,37 @@ export function ConversationScreen({
       'ai_speaking',
       'transition_to_user',
       'processing',
-    ].includes(phase) && !unsaved;
+    ].includes(phase) &&
+    !unsaved &&
+    !finishing;
+  const finish = async () => {
+    if (
+      !canLeave ||
+      chat.loading ||
+      !chat.ready ||
+      chat.unresolved ||
+      finishingRef.current
+    )
+      return;
+    finishingRef.current = true;
+    setFinishing(true);
+    setFinishError('');
+    replay.stop();
+    try {
+      await speakingService.finish(result.session.id);
+      setFinished(true);
+      lifecycle.current += 1;
+      await client.current?.close().catch(() => undefined);
+      client.current = null;
+      setShowTranscript(true);
+      chat.reload();
+    } catch (failure) {
+      setFinishError(errorMessage(failure));
+    } finally {
+      finishingRef.current = false;
+      setFinishing(false);
+    }
+  };
   useEffect(() => {
     const subscription = BackHandler.addEventListener(
       'hardwareBackPress',
@@ -153,6 +218,100 @@ export function ConversationScreen({
   const send = () => {
     if (client.current?.sendText(draft)) setDraft('');
   };
+  const toolbar = (
+    <View pointerEvents="box-none" style={styles.taskToolbar}>
+      <View style={styles.conversationControls}>
+        <View
+          accessibilityRole="tablist"
+          accessibilityLabel="Cách trò chuyện"
+          style={styles.modeRow}
+        >
+          {(['voice', 'text'] as const).map(mode => (
+            <Pressable
+              key={mode}
+              hitSlop={{ top: 6, bottom: 6 }}
+              accessibilityRole="tab"
+              accessibilityLabel={
+                mode === 'voice' ? 'Chế độ nói' : 'Chế độ nhắn tin'
+              }
+              accessibilityState={{
+                selected: inputMode === mode,
+                disabled: !canLeave,
+              }}
+              disabled={!canLeave}
+              onPress={() => setInputMode(mode)}
+              style={({ pressed }) => [
+                styles.modeButton,
+                inputMode === mode ? styles.modeSelected : null,
+                pressed ? styles.modePressed : null,
+                !canLeave ? styles.modeDisabled : null,
+              ]}
+            >
+              {mode === 'voice' ? (
+                <MicIcon
+                  size={16}
+                  color={
+                    !canLeave
+                      ? colors.disabledText
+                      : inputMode === mode
+                      ? colors.primaryText
+                      : colors.muted
+                  }
+                />
+              ) : (
+                <KeyboardIcon
+                  size={16}
+                  color={
+                    !canLeave
+                      ? colors.disabledText
+                      : inputMode === mode
+                      ? colors.primaryText
+                      : colors.muted
+                  }
+                />
+              )}
+            </Pressable>
+          ))}
+        </View>
+        <Pressable
+          accessibilityRole="button"
+          accessibilityLabel={showTranscript ? 'Hiện Aoi' : 'Ẩn Aoi'}
+          accessibilityHint={
+            showTranscript
+              ? 'Hiện lại nhân vật phía trên hội thoại'
+              : 'Ẩn nhân vật để mở rộng vùng chat'
+          }
+          accessibilityState={{ selected: showTranscript }}
+          onPress={() => setShowTranscript(value => !value)}
+          style={({ pressed }) => [
+            styles.transcriptButton,
+            pressed ? styles.iconPressed : null,
+          ]}
+        >
+          {showTranscript ? (
+            <EyeIcon size={20} color={colors.badgeText} />
+          ) : (
+            <EyeOffIcon size={20} color={colors.muted} />
+          )}
+        </Pressable>
+      </View>
+
+      <Pressable
+        accessibilityRole="button"
+        accessibilityLabel="Xem nhiệm vụ"
+        accessibilityHint="Mở bối cảnh, nhiệm vụ và vai AI"
+        onPress={() => setShowBriefing(true)}
+        style={({ pressed }) => [
+          styles.taskButton,
+          pressed ? styles.taskPressed : null,
+        ]}
+      >
+        <View style={styles.taskCircle}>
+          <HomeFeatureIcon name="lightbulb" size={24} color={colors.muted} />
+        </View>
+      </Pressable>
+    </View>
+  );
   return (
     <KeyboardAvoidingView
       style={styles.screen}
@@ -173,88 +332,57 @@ export function ConversationScreen({
           <Text style={styles.title}>{result.scenario.title}</Text>
           <Text style={styles.hint}>Aoi · {result.scenario.role.name}</Text>
         </View>
-        <AuthButton
-          label="Hội thoại"
-          variant="text"
-          onPress={() => setShowTranscript(true)}
-        />
-      </View>
-      <View style={styles.taskToolbar}>
-        <View
-          accessibilityRole="tablist"
-          accessibilityLabel="Cách trò chuyện"
-          style={styles.modeRow}
-        >
-          {(['voice', 'text'] as const).map(mode => (
-            <Pressable
-              key={mode}
-              accessibilityRole="tab"
-              accessibilityLabel={
-                mode === 'voice' ? 'Chế độ nói' : 'Chế độ nhắn tin'
-              }
-              accessibilityState={{
-                selected: inputMode === mode,
-                disabled: !canLeave,
-              }}
-              disabled={!canLeave}
-              onPress={() => setInputMode(mode)}
-              style={({ pressed }) => [
-                styles.modeButton,
-                inputMode === mode ? styles.modeSelected : null,
-                pressed ? styles.modePressed : null,
-                !canLeave ? styles.modeDisabled : null,
-              ]}
-            >
-              <Text
-                style={[
-                  styles.modeText,
-                  inputMode === mode ? styles.modeTextSelected : null,
-                  !canLeave ? styles.modeTextDisabled : null,
-                ]}
-              >
-                {mode === 'voice' ? 'Nói' : 'Nhắn tin'}
-              </Text>
-            </Pressable>
-          ))}
-        </View>
-
-        <Pressable
-          accessibilityRole="button"
-          accessibilityLabel="Xem nhiệm vụ"
-          accessibilityHint="Mở bối cảnh, nhiệm vụ và vai AI"
-          onPress={() => setShowBriefing(true)}
-          style={({ pressed }) => [
-            styles.taskButton,
-            pressed ? styles.taskPressed : null,
-          ]}
-        >
-          <View style={styles.taskCircle}>
-            <HomeFeatureIcon name="lightbulb" size={24} color={colors.muted} />
-          </View>
-        </Pressable>
+        {active ? (
+          <AuthButton
+            label="Kết thúc"
+            variant="text"
+            busy={finishing}
+            disabled={
+              !canLeave || chat.loading || !chat.ready || chat.unresolved
+            }
+            onPress={finish}
+          />
+        ) : (
+          <Text style={styles.hint}>Đã kết thúc</Text>
+        )}
       </View>
       <View
         testID="speaking-content"
         style={styles.content}
         onLayout={event => setContentHeight(event.nativeEvent.layout.height)}
       >
-        <SpeakingAvatar
-          presentation={presentation}
-          height={avatarHeight}
-          handoff={handoff}
-        />
+        {showTranscript ? (
+          toolbar
+        ) : (
+          <SpeakingAvatar
+            presentation={presentation}
+            height={avatarHeight}
+            handoff={handoff}
+            toolbar={toolbar}
+          />
+        )}
         <View style={styles.messageArea}>
           <Text style={styles.chatStatus} accessibilityLiveRegion="polite">
-            {chat.active ? phaseLabels[phase] : 'Phiên này chỉ xem lại'}
+            {active ? phaseLabels[phase] : 'Phiên này chỉ xem lại'}
           </Text>
           <SpeakingMessages
             messages={chat.messages}
             presentation={presentation}
+            replay={replayControls}
+            feedbackControls={sentenceFeedback}
           />
         </View>
       </View>
       <View style={styles.composer}>
-        <AuthNotice message={presentation.error || chat.error} error />
+        <AuthNotice
+          message={
+            finishError ||
+            (active ? presentation.error : '') ||
+            chat.error ||
+            replay.error
+          }
+          error
+        />
         {chat.error ? (
           <AuthButton
             label="Tải lại hội thoại"
@@ -262,7 +390,7 @@ export function ConversationScreen({
             onPress={() => chat.reload()}
           />
         ) : null}
-        {chat.active &&
+        {active &&
         (phase === 'error' ||
           (phase === 'idle' &&
             presentation.transport !== 'connecting' &&
@@ -286,7 +414,16 @@ export function ConversationScreen({
             }}
           />
         ) : null}
-        {inputMode === 'voice' ? (
+        {!active && (finished || chat.status === 'completed') ? (
+          <AuthButton
+            label="Xem điểm & nhận xét"
+            variant="outline"
+            onPress={() => {
+              replay.stop();
+              setShowEvaluation(true);
+            }}
+          />
+        ) : !active ? null : inputMode === 'voice' ? (
           <View style={styles.voiceControls}>
             <SpeakingMicrophone
               presentation={presentation}
@@ -299,7 +436,11 @@ export function ConversationScreen({
                 client.current?.stopSpeaking();
               }}
             />
-            <Text style={styles.hint}>{micLabel}</Text>
+            {['transition_to_user', 'user_turn', 'user_speaking'].includes(
+              phase,
+            ) ? (
+              <Text style={styles.hint}>{micLabel}</Text>
+            ) : null}
           </View>
         ) : (
           <View style={styles.inputRow}>
@@ -337,6 +478,21 @@ export function ConversationScreen({
           </View>
         )}
       </View>
+      {showEvaluation ? (
+        <Modal
+          visible
+          animationType="slide"
+          presentationStyle="fullScreen"
+          onRequestClose={() => setShowEvaluation(false)}
+        >
+          <ConversationEvaluationScreen
+            sessionId={result.session.id}
+            title={result.scenario.title}
+            onTranscript={() => setShowEvaluation(false)}
+            onBack={onBack}
+          />
+        </Modal>
+      ) : null}
       {showBriefing ? (
         <Modal
           transparent
@@ -376,37 +532,6 @@ export function ConversationScreen({
           </View>
         </Modal>
       ) : null}
-      {showTranscript ? (
-        <Modal
-          transparent
-          visible={showTranscript}
-          animationType={presentation.motion === 'reduced' ? 'fade' : 'slide'}
-          onRequestClose={() => setShowTranscript(false)}
-        >
-          <View
-            style={[
-              styles.backdrop,
-              {
-                paddingTop: insets.top + spacing.lg,
-                paddingBottom: insets.bottom + spacing.lg,
-              },
-            ]}
-          >
-            <View accessibilityViewIsModal style={styles.sheet}>
-              <Text style={styles.title}>Nội dung hội thoại</Text>
-              <SpeakingMessages
-                messages={chat.messages}
-                presentation={{ ...presentation, user: '', assistant: '' }}
-              />
-              <AuthButton
-                label="Đóng hội thoại"
-                variant="text"
-                onPress={() => setShowTranscript(false)}
-              />
-            </View>
-          </View>
-        </Modal>
-      ) : null}
     </KeyboardAvoidingView>
   );
 }
@@ -435,7 +560,18 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
     gap: spacing.sm,
-    paddingHorizontal: layout.screenGutter,
+  },
+  conversationControls: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: spacing.xs,
+  },
+  iconPressed: { opacity: 0.55 },
+  transcriptButton: {
+    width: layout.touchTarget,
+    minHeight: 48,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   taskButton: {
     width: layout.touchTarget,
@@ -459,10 +595,9 @@ const styles = StyleSheet.create({
   modeRow: {
     flexDirection: 'row',
     alignSelf: 'center',
-    width: 200,
+    width: 88,
     flexShrink: 1,
-    padding: spacing.xs,
-    gap: spacing.xs,
+    padding: 2,
     borderWidth: 1,
     borderColor: colors.border,
     borderRadius: radius.pill,
@@ -475,10 +610,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderWidth: 1.5,
     borderColor: 'transparent',
-    minHeight: layout.touchTarget,
+    minHeight: 36,
     justifyContent: 'center',
-    paddingHorizontal: spacing.md,
-    paddingVertical: spacing.xs,
     borderRadius: radius.pill,
   },
   modeSelected: {
@@ -491,9 +624,6 @@ const styles = StyleSheet.create({
     backgroundColor: colors.disabled,
     borderColor: colors.disabled,
   },
-  modeTextDisabled: { color: colors.disabledText },
-  modeText: { ...typography.button, color: colors.muted, textAlign: 'center' },
-  modeTextSelected: { color: colors.primaryText },
   voiceControls: {
     alignItems: 'center',
     gap: spacing.sm,

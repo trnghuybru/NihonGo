@@ -1,4 +1,5 @@
 import { fromByteArray, toByteArray } from 'base64-js';
+import { MicrophoneResampler } from './microphoneResampler';
 import type {
   AudioContext,
   AudioRecorder,
@@ -6,12 +7,16 @@ import type {
 } from 'react-native-audio-api';
 
 // Gemini uses signed PCM16 little-endian. Recorder may deliver a different hardware rate.
-export function encodePcm(samples: Float32Array, sampleRate: number): string {
-  const count = Math.floor((samples.length * 16000) / sampleRate);
+export function encodePcm(
+  samples: Float32Array,
+  sampleRate: number,
+  targetRate = 16000,
+): string {
+  const count = Math.floor((samples.length * targetRate) / sampleRate);
   const bytes = new Uint8Array(count * 2);
   const view = new DataView(bytes.buffer);
   for (let i = 0; i < count; i += 1) {
-    const position = (i * sampleRate) / 16000;
+    const position = (i * sampleRate) / targetRate;
     const left = Math.floor(position);
     const weight = position - left;
     const value = Math.max(
@@ -53,6 +58,10 @@ export class LiveAudio {
   private disposed = false;
   private epoch = 0;
   private recordingStart: Promise<void> | null = null;
+  private playbackQueue: Promise<void> = Promise.resolve();
+  private playbackEpoch = 0;
+  private playbackNeedsResume = true;
+  private pendingPlayback = 0;
   constructor(
     private onPlaying: (value: boolean) => void,
     private onError: (message: string) => void,
@@ -66,7 +75,7 @@ export class LiveAudio {
     if (this.disposed) return;
     AudioManager.setAudioSessionOptions({
       iosCategory: 'playAndRecord',
-      iosMode: 'voiceChat',
+      iosMode: 'default',
       iosOptions: ['defaultToSpeaker', 'allowBluetoothHFP'],
     });
     this.context = new Context({ sampleRate: 24000 });
@@ -79,6 +88,7 @@ export class LiveAudio {
   async start(
     onChunk: (pcm: string) => void,
     onLevel?: (level: number) => void,
+    onRecording?: (pcm: string, sampleRate: 44100 | 48000) => void,
   ) {
     const epoch = ++this.epoch;
     this.recordingStart = (async () => {
@@ -89,13 +99,42 @@ export class LiveAudio {
       if (this.disposed || epoch !== this.epoch) return;
       if (!this.recorder) throw new Error('Âm thanh chưa sẵn sàng.');
       this.stopPlayback();
+      const preferredRate = AudioManager.getDevicePreferredSampleRate();
+      const recordingRate = preferredRate === 44100 ? 44100 : 48000;
+      let resampler: MicrophoneResampler | null = null;
+      let inputRate = 0;
       const registration = this.recorder.onAudioReady(
-        { sampleRate: 16000, bufferLength: 1600, channelCount: 1 },
+        {
+          sampleRate: recordingRate,
+          bufferLength: recordingRate / 10,
+          channelCount: 1,
+        },
         ({ buffer, numFrames }) => {
           if (!this.disposed && epoch === this.epoch) {
             const samples = buffer.getChannelData(0).subarray(0, numFrames);
             onLevel?.(microphoneLevel(samples));
-            onChunk(encodePcm(samples, buffer.sampleRate));
+            // Native callbacks should honor the requested rate. Never label a
+            // different rate as high-quality PCM in a stored WAV.
+            if (onRecording && buffer.sampleRate !== recordingRate) {
+              this.onError(
+                'Tần số thu âm đã thay đổi. Hãy kết nối lại để thu tiếp.',
+              );
+              return;
+            }
+            onRecording?.(
+              encodePcm(samples, recordingRate, recordingRate),
+              recordingRate,
+            );
+            if (buffer.sampleRate === 16000) {
+              onChunk(encodePcm(samples, 16000));
+            } else {
+              if (inputRate !== buffer.sampleRate) {
+                inputRate = buffer.sampleRate;
+                resampler = new MicrophoneResampler(inputRate);
+              }
+              const streamed = resampler!.process(samples);
+              if (streamed.length) onChunk(encodePcm(streamed, 16000));
+            }
           }
         },
       );
@@ -115,11 +154,40 @@ export class LiveAudio {
     this.recorder?.clearOnAudioReady();
     this.recordingStart = null;
   }
-  play(pcm: string) {
+  play(pcm: string): Promise<void> {
     const context = this.context;
-    if (!context || this.disposed) return;
+    if (!context || this.disposed) return Promise.resolve();
     const samples = decodePcm(pcm);
-    if (!samples.length) return;
+    if (!samples.length) return Promise.resolve();
+    const epoch = this.playbackEpoch;
+    this.pendingPlayback += 1;
+    this.playbackQueue = this.playbackQueue.then(async () => {
+      try {
+        if (this.disposed || epoch !== this.playbackEpoch) return;
+        if (this.playbackNeedsResume) {
+          this.playbackNeedsResume = false;
+          const { AudioManager } =
+            require('react-native-audio-api') as typeof import('react-native-audio-api');
+          // The native engine can be rebuilt after recording or a route change
+          // while the JS context still reports running. Restart its driver.
+          await context.suspend();
+          await AudioManager.setAudioSessionActivity(true);
+          await context.resume();
+          if (this.disposed || epoch !== this.playbackEpoch) return;
+        }
+        this.schedulePlayback(context, samples);
+      } catch {
+        if (!this.disposed && epoch === this.playbackEpoch) {
+          this.playbackNeedsResume = true;
+          this.onError('Không thể phát âm thanh của Aoi. Hãy kết nối lại.');
+        }
+      } finally {
+        this.pendingPlayback -= 1;
+      }
+    });
+    return this.playbackQueue;
+  }
+  private schedulePlayback(context: AudioContext, samples: Float32Array) {
     const start = Math.max(context.currentTime + 0.02, this.nextTime);
     if (start - context.currentTime > 30)
       throw new Error('Âm thanh bị trễ. Hãy kết nối lại.');
@@ -132,13 +200,18 @@ export class LiveAudio {
     node.onEnded = () => {
       node.disconnect();
       this.nodes.delete(node);
-      if (!this.nodes.size) this.onPlaying(false);
+      if (!this.nodes.size && !this.pendingPlayback) {
+        this.playbackNeedsResume = true;
+        this.onPlaying(false);
+      }
     };
     this.nextTime = start + samples.length / 24000;
     this.onPlaying(true);
     node.start(start);
   }
   stopPlayback() {
+    this.playbackEpoch += 1;
+    this.playbackNeedsResume = true;
     this.nodes.forEach(node => {
       node.onEnded = null;
       node.stop();
@@ -153,6 +226,7 @@ export class LiveAudio {
     this.epoch += 1;
     await this.stop();
     this.stopPlayback();
+    await this.playbackQueue;
     await this.context?.close();
     this.context = null;
     this.recorder = null;

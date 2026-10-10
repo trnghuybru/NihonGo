@@ -1,5 +1,6 @@
-import { authenticatedRequest } from './authService';
+import { authenticatedRequest, ApiError } from './authService';
 import type { LearningLevel } from './learningService';
+import type { WavRecording } from './audioRecording';
 
 export interface ScenarioCategory {
   id: string;
@@ -88,6 +89,14 @@ export interface ConversationMessage {
   content: string;
   status: 'pending' | 'completed' | 'failed';
   occurred_at: string;
+  audio?: AudioAsset | null;
+}
+
+export interface AudioAsset {
+  id: string;
+  mime_type: string;
+  size_bytes: number;
+  duration_ms: number;
 }
 
 export interface TurnInput {
@@ -128,6 +137,7 @@ export interface LiveCredentials {
   lease: string;
   last_sequence: number;
   history: { role: 'user' | 'model'; parts: { text: string }[] }[];
+  audio_storage_enabled?: boolean;
 }
 export interface LiveTurnInput {
   lease: string;
@@ -138,7 +148,149 @@ export interface LiveTurnInput {
   assistant_text: string;
 }
 
+export type EvaluationCriterionCode = 'grammar' | 'vocabulary' | 'naturalness';
+export interface SentenceFeedback {
+  status: 'processing' | 'completed' | 'failed';
+  result: { summary: string; items: EvaluationResult['items'] } | null;
+  error?: string;
+}
+export interface EvaluationResult {
+  assessment_status: 'scored' | 'insufficient_data';
+  summary: string;
+  criteria: Record<
+    EvaluationCriterionCode,
+    {
+      score: number | null;
+      feedback: string;
+      suggestion: string;
+    }
+  >;
+  strengths: string[];
+  next_steps: string[];
+  items: {
+    kind: 'error' | 'alternative';
+    criterion: EvaluationCriterionCode;
+    message_id: string;
+    original: string;
+    improved: string;
+    explanation: string;
+  }[];
+}
+export interface SessionEvaluation {
+  status:
+    | 'not_started'
+    | 'pending'
+    | 'processing'
+    | 'completed'
+    | 'failed'
+    | 'insufficient_data';
+  overall_score?: number | null;
+  rubric_version?: string;
+  result: EvaluationResult | null;
+  error?: string | null;
+  completed_at?: string | null;
+}
+
 export const speakingService = {
+  async deleteSession(
+    sessionId: string,
+  ): Promise<{ deleted: boolean; audio_cleanup_pending: boolean }> {
+    try {
+      return await authenticatedRequest(
+        `/speaking/sessions/${encodeURIComponent(sessionId)}`,
+        undefined,
+        'DELETE',
+        { timeoutMs: 90000 },
+      );
+    } catch (error) {
+      // A prior DELETE may have succeeded before its response was lost.
+      if (
+        error instanceof ApiError &&
+        error.status === 404 &&
+        error.code === 'session_not_found'
+      ) {
+        return { deleted: true, audio_cleanup_pending: false };
+      }
+      throw error;
+    }
+  },
+  messageFeedback(
+    sessionId: string,
+    messageId: string,
+  ): Promise<SentenceFeedback> {
+    return authenticatedRequest(
+      `/speaking/sessions/${encodeURIComponent(
+        sessionId,
+      )}/messages/${encodeURIComponent(messageId)}/feedback`,
+      {},
+      'POST',
+      { timeoutMs: 90000 },
+    );
+  },
+  finish(
+    id: string,
+  ): Promise<{ session: { id: string; status: 'completed' } }> {
+    return authenticatedRequest(
+      `/speaking/sessions/${encodeURIComponent(id)}/finish`,
+      {},
+    );
+  },
+  evaluation(id: string): Promise<SessionEvaluation> {
+    return authenticatedRequest(
+      `/speaking/sessions/${encodeURIComponent(id)}/evaluation`,
+    );
+  },
+  evaluate(id: string): Promise<SessionEvaluation> {
+    return authenticatedRequest(
+      `/speaking/sessions/${encodeURIComponent(id)}/evaluation`,
+      {},
+      'POST',
+      { timeoutMs: 90000 },
+    );
+  },
+  async saveAudio(
+    sessionId: string,
+    messageId: string,
+    recording: WavRecording,
+  ) {
+    const base = `/speaking/sessions/${encodeURIComponent(sessionId)}`;
+    const upload = await authenticatedRequest<{
+      asset: AudioAsset;
+      upload_url: string | null;
+      headers: Record<string, string>;
+    }>(`${base}/messages/${encodeURIComponent(messageId)}/audio-upload`, {
+      size_bytes: recording.bytes.length,
+      duration_ms: recording.durationMs,
+      sample_rate: recording.sampleRate,
+    });
+    if (upload.upload_url) {
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), 60000);
+      try {
+        const response = await fetch(upload.upload_url, {
+          method: 'PUT',
+          headers: upload.headers,
+          body: recording.bytes.buffer as ArrayBuffer,
+          signal: controller.signal,
+        });
+        if (!response.ok) throw new Error('Chưa tải được bản thu âm.');
+      } finally {
+        clearTimeout(timeout);
+      }
+      await authenticatedRequest(
+        `${base}/audio/${upload.asset.id}/complete`,
+        {},
+      );
+    }
+    return upload.asset;
+  },
+  audioPlayback(sessionId: string, assetId: string): Promise<{ url: string }> {
+    return authenticatedRequest(
+      `/speaking/sessions/${encodeURIComponent(
+        sessionId,
+      )}/audio/${encodeURIComponent(assetId)}/playback`,
+    );
+  },
   liveToken(id: string): Promise<LiveCredentials> {
     return authenticatedRequest<LiveCredentials>(
       `/speaking/sessions/${encodeURIComponent(id)}/live-token`,

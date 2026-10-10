@@ -22,6 +22,7 @@ export function useConversation(sessionId: string) {
   const [sending, setSending] = useState(false);
   const [error, setError] = useState('');
   const [active, setActive] = useState(true);
+  const [status, setStatus] = useState<string | null>(null);
   const [retryUntil, setRetryUntil] = useState(0);
   const [retrySeconds, setRetrySeconds] = useState(0);
   const pending = useRef<TurnInput | null>(null);
@@ -62,6 +63,7 @@ export function useConversation(sessionId: string) {
             if (!mounted.current || current !== generation.current) return;
             items.push(...page.items);
             setActive(page.session.status === 'active');
+            setStatus(page.session.status);
             if (!page.has_more) break;
             if (page.next_sequence <= after)
               throw new Error('Không tải được transcript.');
@@ -202,6 +204,7 @@ export function useConversation(sessionId: string) {
     sending,
     error,
     active,
+    status,
     retrySeconds,
     unresolved,
     reload,

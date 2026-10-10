@@ -6,7 +6,11 @@ import { LiveAudio } from '../src/services/liveAudio';
 import { speakingService } from '../src/services/speakingService';
 jest.mock('../src/services/liveAudio', () => ({ LiveAudio: jest.fn() }));
 jest.mock('../src/services/speakingService', () => ({
-  speakingService: { liveToken: jest.fn(), saveLiveTurn: jest.fn() },
+  speakingService: {
+    liveToken: jest.fn(),
+    saveLiveTurn: jest.fn(),
+    saveAudio: jest.fn(),
+  },
 }));
 class Socket {
   static OPEN = 1;
@@ -49,6 +53,10 @@ const flush = async () => {
 };
 beforeEach(() => {
   jest.clearAllMocks();
+  jest
+    .mocked(speakingService.saveAudio)
+    .mockReset()
+    .mockResolvedValue({} as never);
   globalThis.WebSocket = Socket as unknown as typeof WebSocket;
   Object.values(audio).forEach(fn => fn.mockReset());
   audio.prepare.mockResolvedValue(undefined);
@@ -105,6 +113,122 @@ function response() {
     },
   });
 }
+
+function enableAudio() {
+  jest.mocked(speakingService.liveToken).mockResolvedValue({
+    token: 'ephemeral',
+    model: 'models/live',
+    lease: 'signed',
+    last_sequence: 1,
+    history: [],
+    audio_storage_enabled: true,
+  });
+  jest.mocked(speakingService.saveLiveTurn).mockResolvedValue({
+    user_message: { id: 'user-message', sequence_number: 2 } as never,
+    assistant_message: { id: 'ai-message', sequence_number: 3 } as never,
+  });
+}
+
+test('saves the microphone and AI WAVs against their saved message IDs', async () => {
+  enableAudio();
+  await connect();
+  audio.start.mockImplementationOnce(async (chunk, _meter, recording) => {
+    chunk('AAAAAA==');
+    recording('AAAAAA==', 48000);
+  });
+  await service.startSpeaking();
+  await service.stopSpeaking();
+  Socket.instance.receive({
+    serverContent: {
+      inputTranscription: { text: 'Hello' },
+      outputTranscription: { text: 'Hi' },
+      modelTurn: {
+        parts: [
+          {
+            inlineData: { mimeType: 'audio/pcm;rate=24000', data: 'AAAAAA==' },
+          },
+        ],
+      },
+      turnComplete: true,
+    },
+  });
+  await flush();
+  await flush();
+  expect(speakingService.saveAudio).toHaveBeenCalledWith(
+    'session',
+    'user-message',
+    expect.any(Object),
+  );
+  expect(speakingService.saveAudio).toHaveBeenCalledWith(
+    'session',
+    'ai-message',
+    expect.any(Object),
+  );
+  const userWav = jest.mocked(speakingService.saveAudio).mock.calls[0][2];
+  const aiWav = jest.mocked(speakingService.saveAudio).mock.calls[1][2];
+  expect(new DataView(userWav.bytes.buffer).getUint32(24, true)).toBe(48000);
+  expect(new DataView(aiWav.bytes.buffer).getUint32(24, true)).toBe(24000);
+  expect(service.hasUnsavedTurn()).toBe(false);
+});
+
+test('retries only failed audio after saving transcript, without duplicating messages', async () => {
+  enableAudio();
+  await connect();
+  jest
+    .mocked(speakingService.saveAudio)
+    .mockRejectedValueOnce(new Error('Offline'));
+  service.sendText('Hello');
+  Socket.instance.receive({
+    serverContent: {
+      outputTranscription: { text: 'Hi' },
+      modelTurn: {
+        parts: [
+          {
+            inlineData: { mimeType: 'audio/pcm;rate=24000', data: 'AAAAAA==' },
+          },
+        ],
+      },
+      turnComplete: true,
+    },
+  });
+  await flush();
+  await flush();
+  expect(service.hasUnsavedTurn()).toBe(true);
+  expect(callbacks.onSaved).not.toHaveBeenCalled();
+  await service.retrySave();
+  expect(speakingService.saveLiveTurn).toHaveBeenCalledTimes(1);
+  expect(speakingService.saveAudio).toHaveBeenCalledTimes(2);
+  expect(service.hasUnsavedTurn()).toBe(false);
+});
+
+test('saves read-aloud opening audio without creating another transcript turn', async () => {
+  enableAudio();
+  const promise = service.connect('Hello', 'opening-message');
+  await flush();
+  Socket.instance.onopen();
+  Socket.instance.receive({ setupComplete: {} });
+  await promise;
+  Socket.instance.receive({
+    serverContent: {
+      modelTurn: {
+        parts: [
+          {
+            inlineData: { mimeType: 'audio/pcm;rate=24000', data: 'AAAAAA==' },
+          },
+        ],
+      },
+      turnComplete: true,
+    },
+  });
+  await flush();
+  await flush();
+  expect(speakingService.saveAudio).toHaveBeenCalledWith(
+    'session',
+    'opening-message',
+    expect.any(Object),
+  );
+  expect(speakingService.saveLiveTurn).not.toHaveBeenCalled();
+});
 
 test('uses an ephemeral token and restores locked session history before enabling input', async () => {
   await connect();

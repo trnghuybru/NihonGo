@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import type { ReactNode } from 'react';
 import { Animated, Easing, StyleSheet, View } from 'react-native';
 import { CharacterView3D } from './CharacterView3D';
 import type { SpeakingPresentation } from '../hooks/useSpeakingPresentation';
@@ -36,20 +37,22 @@ export function SpeakingAvatar({
   presentation,
   height,
   handoff,
+  toolbar,
 }: {
   presentation: SpeakingPresentation;
   height: number;
   handoff: Animated.Value;
+  toolbar?: ReactNode;
 }) {
-  const reduced = presentation.motion === 'reduced';
   return (
     <View
       testID="speaking-avatar-stage"
-      style={[styles.avatarStage, { height }]}
+      style={[
+        styles.avatarStage,
+        { height },
+        presentation.phase === 'ai_speaking' ? styles.speakingGlow : null,
+      ]}
     >
-      {presentation.phase === 'ai_speaking' ? (
-        <View pointerEvents="none" style={styles.glow} />
-      ) : null}
       <Animated.View
         style={[
           styles.avatar,
@@ -58,16 +61,6 @@ export function SpeakingAvatar({
               inputRange: [0, 1],
               outputRange: [1, 0.96],
             }),
-            transform: [
-              {
-                scale: reduced
-                  ? 1
-                  : handoff.interpolate({
-                      inputRange: [0, 1],
-                      outputRange: [1, 0.94],
-                    }),
-              },
-            ],
           },
         ]}
       >
@@ -75,53 +68,41 @@ export function SpeakingAvatar({
           isSpeaking={presentation.phase === 'ai_speaking'}
           portrait
         />
-        <Animated.View
-          pointerEvents="none"
-          style={[
-            styles.dimOverlay,
-            {
-              opacity: handoff.interpolate({
-                inputRange: [0, 1],
-                outputRange: [0, 0.08],
-              }),
-            },
-          ]}
-        />
       </Animated.View>
+      {toolbar ? (
+        <View pointerEvents="box-none" style={styles.toolbarOverlay}>
+          {toolbar}
+        </View>
+      ) : null}
     </View>
   );
 }
 const styles = StyleSheet.create({
-  dimOverlay: {
+  toolbarOverlay: {
     position: 'absolute',
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-    borderRadius: radius.card,
-    backgroundColor: colors.dark,
+    top: 12,
+    left: 12,
+    right: 12,
+    zIndex: 2,
   },
   avatarStage: {
     width: '100%',
+    maxWidth: layout.maxContentWidth,
+    borderRadius: radius.card,
+    overflow: 'hidden',
+    backgroundColor: colors.surface,
+    boxShadow: shadowMd,
     alignItems: 'center',
     justifyContent: 'center',
     marginVertical: 0,
   },
   avatar: {
+    flex: 1,
+    minHeight: 0,
     width: '100%',
     maxWidth: layout.maxContentWidth,
-    height: '100%',
-    borderRadius: radius.card,
-    backgroundColor: colors.background,
-    boxShadow: shadowMd,
   },
-  glow: {
-    position: 'absolute',
-    width: '96%',
-    maxWidth: layout.maxContentWidth,
-    height: '94%',
-    borderRadius: radius.card,
-    backgroundColor: colors.badgeBg,
+  speakingGlow: {
     boxShadow: '0px 0px 28px rgba(252,160,75,0.25)',
   },
 });

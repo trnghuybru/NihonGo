@@ -1,4 +1,5 @@
 import { LiveAudio } from './liveAudio';
+import { PcmRecording, WavRecording } from './audioRecording';
 import {
   speakingService,
   LiveCredentials,
@@ -19,7 +20,7 @@ export interface LiveCallbacks {
   onPlaying: (playing: boolean) => void;
   onMicLevel?: (level: number) => void;
   onTranscript: (user: string, assistant: string) => void;
-  onSaved: (reply: TurnReply) => void;
+  onSaved: (reply?: TurnReply) => void;
   onError: (message: string) => void;
 }
 const endpoint =
@@ -40,6 +41,18 @@ export class GeminiLiveService {
   private assistant = '';
   private inputMode: 'text' | 'voice' = 'voice';
   private pending: LiveTurnInput | null = null;
+  private pendingReply: TurnReply | null = null;
+  private userRecording: PcmRecording | null = null;
+  private assistantRecording: PcmRecording | null = null;
+  private pendingAudio: {
+    user: WavRecording | null;
+    assistant: WavRecording | null;
+  } | null = null;
+  private openingMessageId: string | undefined;
+  private pendingOpening: {
+    messageId: string;
+    recording: WavRecording;
+  } | null = null;
   private busy = false;
   private readingOpening = false;
   private capturing = false;
@@ -84,7 +97,8 @@ export class GeminiLiveService {
     this.socket?.close();
     this.callbacks.onError(message);
   }
-  async connect(openingText?: string) {
+  async connect(openingText?: string, openingMessageId?: string) {
+    this.openingMessageId = openingMessageId;
     this.setState('connecting');
     try {
       this.credentials = await speakingService.liveToken(this.sessionId);
@@ -140,6 +154,9 @@ export class GeminiLiveService {
                 this.credentials!.last_sequence === 1
               ) {
                 this.readingOpening = true;
+                if (this.credentials?.audio_storage_enabled) {
+                  this.assistantRecording = new PcmRecording(24000);
+                }
                 this.busy = true;
                 this.setState('processing');
                 this.send({
@@ -209,12 +226,21 @@ export class GeminiLiveService {
     // or another assistant bubble for the internal read-aloud request.
     if (this.readingOpening) {
       for (const part of content.modelTurn?.parts || []) {
-        if (part.inlineData?.mimeType.startsWith('audio/pcm'))
+        if (part.inlineData?.mimeType.startsWith('audio/pcm')) {
+          this.assistantRecording?.append(part.inlineData.data);
           this.audio.play(part.inlineData.data);
+        }
       }
       if (content.turnComplete) {
         this.clearTimeout();
         this.readingOpening = false;
+        const recording = this.assistantRecording?.finish();
+        this.assistantRecording = null;
+        if (recording && this.openingMessageId) {
+          this.pendingOpening = { messageId: this.openingMessageId, recording };
+          this.retrySave();
+          return;
+        }
         this.busy = false;
         this.setState('ready');
       }
@@ -230,8 +256,10 @@ export class GeminiLiveService {
       return;
     }
     for (const part of content.modelTurn?.parts || []) {
-      if (part.inlineData?.mimeType.startsWith('audio/pcm'))
+      if (part.inlineData?.mimeType.startsWith('audio/pcm')) {
+        this.assistantRecording?.append(part.inlineData.data);
         this.audio.play(part.inlineData.data);
+      }
     }
     this.callbacks.onTranscript(this.user, this.assistant);
     if (content.turnComplete && this.busy) {
@@ -258,6 +286,12 @@ export class GeminiLiveService {
         user_text: this.user.trim(),
         assistant_text: this.assistant.trim(),
       };
+      this.pendingAudio = {
+        user: this.userRecording?.finish() || null,
+        assistant: this.assistantRecording?.finish() || null,
+      };
+      this.userRecording = null;
+      this.assistantRecording = null;
       this.retrySave();
     }
   }
@@ -268,6 +302,10 @@ export class GeminiLiveService {
     this.user = text;
     this.assistant = '';
     this.inputMode = mode;
+    if (this.credentials?.audio_storage_enabled) {
+      this.userRecording = null;
+      this.assistantRecording = new PcmRecording(24000);
+    }
     this.audio.stopPlayback();
     this.callbacks.onTranscript(text, '');
     return true;
@@ -300,6 +338,21 @@ export class GeminiLiveService {
           if (this.capturing && !this.disposed)
             this.callbacks.onMicLevel?.(level);
         },
+        this.credentials?.audio_storage_enabled
+          ? (data, rate) => {
+              if (!this.capturing || this.disposed) return;
+              try {
+                this.userRecording ??= new PcmRecording(rate);
+                this.userRecording.append(data);
+              } catch (error) {
+                this.fail(
+                  error instanceof Error
+                    ? error.message
+                    : 'Không lưu được bản thu âm.',
+                );
+              }
+            }
+          : undefined,
       );
     } catch (error) {
       this.fail(error instanceof Error ? error.message : 'Không thể thu âm.');
@@ -348,16 +401,51 @@ export class GeminiLiveService {
     }
   }
   async retrySave() {
-    if (!this.pending || this.state === 'saving') return;
+    if ((!this.pending && !this.pendingOpening) || this.state === 'saving')
+      return;
     const pending = this.pending;
     this.setState('saving');
     try {
-      const reply = await speakingService.saveLiveTurn(this.sessionId, pending);
-      this.credentials!.last_sequence = reply.assistant_message.sequence_number;
+      if (this.pendingOpening) {
+        await speakingService.saveAudio(
+          this.sessionId,
+          this.pendingOpening.messageId,
+          this.pendingOpening.recording,
+        );
+        this.pendingOpening = null;
+      }
+      let reply: TurnReply | null = this.pendingReply;
+      if (pending) {
+        reply =
+          reply ||
+          (await speakingService.saveLiveTurn(this.sessionId, pending));
+        this.pendingReply = reply;
+        if (this.pendingAudio?.user) {
+          await speakingService.saveAudio(
+            this.sessionId,
+            reply.user_message.id,
+            this.pendingAudio.user,
+          );
+          this.pendingAudio.user = null;
+        }
+        if (this.pendingAudio?.assistant) {
+          await speakingService.saveAudio(
+            this.sessionId,
+            reply.assistant_message.id,
+            this.pendingAudio.assistant,
+          );
+          this.pendingAudio.assistant = null;
+        }
+        this.credentials!.last_sequence =
+          reply.assistant_message.sequence_number;
+      }
       this.pending = null;
+      this.pendingReply = null;
+      this.pendingAudio = null;
       this.busy = false;
       if (!this.disposed) {
-        this.callbacks.onSaved(reply);
+        if (reply) this.callbacks.onSaved(reply);
+        else if (this.openingMessageId) this.callbacks.onSaved();
         this.callbacks.onTranscript('', '');
         this.setState(
           this.socket?.readyState === WebSocket.OPEN ? 'ready' : 'error',
@@ -367,7 +455,7 @@ export class GeminiLiveService {
       if (!this.disposed) {
         this.setState('error');
         this.callbacks.onError(
-          'Chưa lưu được hội thoại. Bấm thử lưu lại trước khi tiếp tục.',
+          'Chưa lưu xong hội thoại hoặc âm thanh. Bấm thử lưu lại trước khi tiếp tục.',
         );
       }
     }
@@ -375,6 +463,11 @@ export class GeminiLiveService {
   discardUnsavedTurn() {
     if (this.state === 'saving') return;
     this.pending = null;
+    this.pendingReply = null;
+    this.pendingOpening = null;
+    this.pendingAudio = null;
+    this.userRecording = null;
+    this.assistantRecording = null;
     this.busy = false;
     this.complete = false;
     this.audio.stopPlayback();
@@ -385,7 +478,7 @@ export class GeminiLiveService {
     this.fail('Hội thoại đã dừng khi app chuyển nền. Kết nối lại để tiếp tục.');
   }
   hasUnsavedTurn() {
-    return Boolean(this.pending);
+    return Boolean(this.pending || this.pendingOpening);
   }
   async close() {
     this.disposed = true;

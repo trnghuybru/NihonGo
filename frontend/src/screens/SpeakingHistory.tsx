@@ -1,6 +1,7 @@
 import { memo, useCallback, useEffect, useRef, useState } from 'react';
 import {
   ActivityIndicator,
+  Alert,
   FlatList,
   Pressable,
   StyleSheet,
@@ -9,6 +10,7 @@ import {
 } from 'react-native';
 import { AuthButton, AuthNotice } from '../components/AuthForm';
 import { HomeFeatureIcon } from '../components/HomeFeatureIcon';
+import { TrashIcon } from '../components/icons';
 import { errorMessage } from '../hooks/useSpeakingScenarios';
 import {
   ConversationSummary,
@@ -17,12 +19,6 @@ import {
 } from '../services/speakingService';
 import { colors, layout, spacing, typography } from '../theme/theme';
 
-const statusLabels = {
-  active: 'Có thể tiếp tục',
-  paused: 'Đã tạm dừng',
-  completed: 'Đã hoàn thành',
-  abandoned: 'Đã kết thúc',
-};
 const dateFormat = new Intl.DateTimeFormat('vi-VN', {
   day: '2-digit',
   month: '2-digit',
@@ -30,41 +26,106 @@ const dateFormat = new Intl.DateTimeFormat('vi-VN', {
   hour: '2-digit',
   minute: '2-digit',
 });
+const timeFormat = new Intl.DateTimeFormat('vi-VN', {
+  hour: '2-digit',
+  minute: '2-digit',
+  hourCycle: 'h23',
+});
+function activityLabel(timestamp: string) {
+  const date = new Date(timestamp);
+  const today = new Date();
+  const yesterday = new Date(today);
+  yesterday.setDate(yesterday.getDate() - 1);
+  if (date.toDateString() === today.toDateString()) {
+    return `Hôm nay, ${timeFormat.format(date)}`;
+  }
+  if (date.toDateString() === yesterday.toDateString()) {
+    return `Hôm qua, ${timeFormat.format(date)}`;
+  }
+  return dateFormat.format(date);
+}
 const keyExtractor = (item: ConversationSummary) => item.id;
 const HistoryRow = memo(function HistoryRowView({
   item,
   onOpen,
   disabled,
+  onDelete,
+  deleting,
 }: {
   item: ConversationSummary;
   onOpen: (id: string) => void;
   disabled: boolean;
+  deleting: boolean;
+  onDelete: (item: ConversationSummary) => void;
 }) {
   return (
-    <Pressable
-      accessibilityRole="button"
-      accessibilityLabel={`Mở hội thoại ${item.title}`}
-      accessibilityState={{ disabled }}
-      disabled={disabled}
-      onPress={() => onOpen(item.id)}
-      style={({ pressed }) => [styles.row, pressed ? styles.pressed : null]}
-    >
-      <View style={styles.rowHeading}>
-        <Text numberOfLines={1} style={styles.rowTitle}>
-          {item.title}
+    <View style={styles.row}>
+      <Pressable
+        accessibilityRole="button"
+        accessibilityLabel={`Mở hội thoại ${item.title}`}
+        accessibilityState={{ disabled }}
+        disabled={disabled}
+        onPress={() => onOpen(item.id)}
+        style={({ pressed }) => [
+          styles.rowContent,
+          pressed ? styles.pressed : null,
+        ]}
+      >
+        <View style={styles.rowHeading}>
+          <View style={styles.headingCopy}>
+            <HomeFeatureIcon name="microphone" color={colors.body} size={22} />
+            <Text numberOfLines={2} style={styles.rowTitle}>
+              {item.title}
+            </Text>
+          </View>
+        </View>
+        <Text numberOfLines={2} style={styles.preview}>
+          {item.last_message || 'Chưa có tin nhắn. Mở để bắt đầu hội thoại.'}
         </Text>
-        <HomeFeatureIcon name="arrow" color={colors.muted} size={18} />
+      </Pressable>
+      <Pressable
+        accessibilityRole="button"
+        accessibilityLabel={`Xóa hội thoại ${item.title}`}
+        accessibilityState={{ disabled, busy: deleting }}
+        disabled={disabled}
+        onPress={() => onDelete(item)}
+        style={({ pressed }) => [
+          styles.deleteButton,
+          pressed ? styles.pressed : null,
+        ]}
+      >
+        {deleting ? (
+          <ActivityIndicator size="small" color={colors.muted} />
+        ) : (
+          <TrashIcon
+            size={16}
+            color={disabled ? colors.disabledText : colors.muted}
+          />
+        )}
+      </Pressable>
+      <View style={styles.rowFooter}>
+        <Text style={styles.date}>{activityLabel(item.last_activity_at)}</Text>
+        <Pressable
+          accessibilityRole="button"
+          accessibilityLabel={`${
+            item.status === 'active' ? 'Tiếp tục' : 'Xem lại'
+          } hội thoại ${item.title}`}
+          accessibilityState={{ disabled }}
+          disabled={disabled}
+          onPress={() => onOpen(item.id)}
+          style={[styles.action, disabled ? styles.actionDisabled : null]}
+        >
+          <Text
+            style={[
+              styles.actionText,
+              disabled ? styles.actionTextDisabled : null,
+            ]}
+          >
+            {item.status === 'active' ? 'Tiếp tục' : 'Xem lại'}
+          </Text>
+        </Pressable>
       </View>
-      <Text numberOfLines={2} style={styles.preview}>
-        {item.last_message || 'Chưa có tin nhắn. Mở để bắt đầu hội thoại.'}
-      </Text>
-      <Text style={styles.meta}>
-        {item.role_name} · {statusLabels[item.status]}
-      </Text>
-      <Text style={styles.meta}>
-        {dateFormat.format(new Date(item.last_activity_at))}
-      </Text>
-    </Pressable>
+    </View>
   );
 });
 
@@ -86,7 +147,18 @@ export function SpeakingHistory({
   const generation = useRef(0);
   const busy = useRef(false);
   const requestedPage = useRef(1);
+  const mounted = useRef(true);
+  const deletingRef = useRef(false);
+  const [deletingId, setDeletingId] = useState<string | null>(null);
+  const [deleteError, setDeleteError] = useState('');
+  useEffect(() => {
+    mounted.current = true;
+    return () => {
+      mounted.current = false;
+    };
+  }, []);
   const fetchPage = useCallback(async (page = 1) => {
+    if (deletingRef.current) return;
     if (page > 1 && busy.current) return;
     const current = ++generation.current;
     busy.current = true;
@@ -122,6 +194,53 @@ export function SpeakingHistory({
       }
     }
   }, []);
+  const confirmDelete = useCallback(
+    (item: ConversationSummary) => {
+      if (opening || deletingRef.current) return;
+      Alert.alert(
+        'Xóa buổi hội thoại?',
+        `Xóa “${item.title}” cùng nội dung, nhận xét và âm thanh đã lưu? Thao tác này không thể khôi phục.`,
+        [
+          { text: 'Hủy', style: 'cancel' },
+          {
+            text: 'Xóa',
+            style: 'destructive',
+            onPress: async () => {
+              if (!mounted.current || deletingRef.current) return;
+              deletingRef.current = true;
+              generation.current += 1; // Ignore any history response started before deletion.
+              busy.current = false;
+              setDeletingId(item.id);
+              setDeleteError('');
+              setLoading(false);
+              setMore(false);
+              try {
+                await speakingService.deleteSession(item.id);
+                if (!mounted.current) return;
+                setData(previous =>
+                  previous
+                    ? {
+                        ...previous,
+                        items: previous.items.filter(row => row.id !== item.id),
+                      }
+                    : previous,
+                );
+                deletingRef.current = false;
+                await fetchPage(); // Refresh pagination after removing a row.
+              } catch (failure) {
+                if (mounted.current) setDeleteError(errorMessage(failure));
+              } finally {
+                deletingRef.current = false;
+                if (mounted.current) setDeletingId(null);
+              }
+            },
+          },
+        ],
+        { cancelable: true },
+      );
+    },
+    [opening, fetchPage],
+  );
   useEffect(() => {
     fetchPage();
     return () => {
@@ -130,9 +249,15 @@ export function SpeakingHistory({
   }, [fetchPage, refreshKey]);
   const renderItem = useCallback(
     ({ item }: { item: ConversationSummary }) => (
-      <HistoryRow item={item} onOpen={onOpen} disabled={opening} />
+      <HistoryRow
+        item={item}
+        onOpen={onOpen}
+        onDelete={confirmDelete}
+        deleting={deletingId === item.id}
+        disabled={opening || deletingId !== null}
+      />
     ),
-    [onOpen, opening],
+    [onOpen, opening, confirmDelete, deletingId],
   );
   return (
     <FlatList
@@ -154,6 +279,7 @@ export function SpeakingHistory({
             />
           ) : null}
           <AuthNotice message={openError} error />
+          <AuthNotice message={deleteError} error />
           <AuthNotice message={error} error />
           {error ? (
             <AuthButton
@@ -193,7 +319,7 @@ export function SpeakingHistory({
             label="Xem thêm hội thoại"
             variant="text"
             busy={more}
-            disabled={loading || opening}
+            disabled={loading || opening || deletingId !== null}
             onPress={() => fetchPage(data.pagination.page + 1)}
           />
         ) : undefined
@@ -203,25 +329,95 @@ export function SpeakingHistory({
 }
 
 const styles = StyleSheet.create({
-  list: { flexGrow: 1, paddingBottom: spacing.lg },
+  list: {
+    flexGrow: 1,
+    paddingHorizontal: layout.screenGutter,
+    paddingBottom: spacing.section,
+    gap: spacing.lg,
+    width: '100%',
+    maxWidth: layout.maxContentWidth + layout.screenGutter * 2,
+    alignSelf: 'center',
+  },
   heading: {
     gap: spacing.sm,
-    paddingTop: spacing.xl,
-    paddingBottom: spacing.sm,
+    paddingTop: spacing.sm,
+    paddingBottom: spacing.xs,
   },
   title: { ...typography.heading, color: colors.dark },
   row: {
     minHeight: layout.touchTarget,
-    paddingVertical: spacing.lg,
-    gap: spacing.sm,
-    borderBottomWidth: StyleSheet.hairlineWidth,
-    borderBottomColor: colors.divider,
+    padding: spacing.xl,
+    gap: spacing.md,
+    backgroundColor: colors.surface,
+    borderRadius: 20,
+    borderCurve: 'continuous',
+    borderWidth: 1,
+    borderColor: colors.divider,
+    boxShadow: '0px 3px 12px rgba(37, 37, 38, 0.06)',
   },
   pressed: { backgroundColor: colors.surfaceTint },
-  rowHeading: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm },
+  rowContent: { gap: spacing.md },
+  deleteButton: {
+    position: 'absolute',
+    top: spacing.xl,
+    right: spacing.sm,
+    width: layout.touchTarget,
+    minHeight: layout.touchTarget,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: 12,
+  },
+  rowHeading: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: spacing.sm,
+    minHeight: layout.touchTarget,
+    paddingRight: layout.touchTarget + spacing.sm - spacing.xl,
+  },
+  headingCopy: {
+    flex: 1,
+    minWidth: 0,
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: spacing.sm,
+  },
   rowTitle: { ...typography.heading, color: colors.dark, flexShrink: 1 },
   preview: { ...typography.input, color: colors.body },
-  meta: { ...typography.caption, color: colors.muted },
+  date: {
+    ...typography.caption,
+    color: colors.muted,
+    flex: 1,
+    flexShrink: 1,
+    textAlign: 'left',
+  },
+  rowFooter: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+    gap: spacing.md,
+    paddingTop: spacing.xs,
+  },
+  action: {
+    minHeight: 32,
+    paddingHorizontal: spacing.md,
+    paddingVertical: spacing.xs,
+    borderRadius: 999,
+    borderCurve: 'continuous',
+    backgroundColor: colors.surface,
+    borderWidth: 1.5,
+    borderColor: colors.primary,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: spacing.sm,
+    marginLeft: 'auto',
+  },
+  actionDisabled: {
+    backgroundColor: colors.disabled,
+    borderColor: colors.disabled,
+  },
+  actionText: { ...typography.button, color: colors.primaryText },
+  actionTextDisabled: { color: colors.disabledText },
   empty: {
     padding: spacing.xl,
     marginTop: spacing.lg,

@@ -24,6 +24,69 @@ function reply(body: unknown, status = 200) {
     json: async () => body,
   } as Response);
 }
+
+test('uploads WAV directly without sending account credentials to object storage', async () => {
+  jest
+    .mocked(fetch)
+    .mockImplementationOnce(() =>
+      reply({
+        asset: { id: 'audio-1' },
+        upload_url: 'http://localstack/signed',
+        headers: { 'Content-Type': 'audio/wav' },
+      }),
+    )
+    .mockImplementationOnce(() => reply({}, 200))
+    .mockImplementationOnce(() => reply({ asset: { id: 'audio-1' } }));
+  const recording = {
+    bytes: new Uint8Array(48),
+    durationMs: 1,
+    sampleRate: 48000 as const,
+  };
+  await speaking.saveAudio('session-1', 'message-1', recording);
+  const calls = jest.mocked(fetch).mock.calls;
+  expect(calls[0][0]).toContain('/messages/message-1/audio-upload');
+  expect(JSON.parse(calls[0][1]!.body as string)).toMatchObject({
+    sample_rate: 48000,
+  });
+  expect(calls[1][0]).toBe('http://localstack/signed');
+  expect(calls[1][1]?.method).toBe('PUT');
+  expect(calls[1][1]?.headers).toEqual({ 'Content-Type': 'audio/wav' });
+  expect(calls[1][1]?.body).toBe(recording.bytes.buffer);
+  expect(calls[2][0]).toContain('/audio/audio-1/complete');
+  expect(calls[2][1]?.headers).toMatchObject({
+    Authorization: 'Bearer access-1',
+  });
+});
+
+test('does not mark a failed upload complete and skips upload when already ready', async () => {
+  const recording = {
+    bytes: new Uint8Array(48),
+    durationMs: 1,
+    sampleRate: 16000 as const,
+  };
+  jest
+    .mocked(fetch)
+    .mockImplementationOnce(() =>
+      reply({
+        asset: { id: 'audio-1' },
+        upload_url: 'http://localstack/signed',
+        headers: {},
+      }),
+    )
+    .mockImplementationOnce(() => reply({}, 503));
+  await expect(
+    speaking.saveAudio('session-1', 'message-1', recording),
+  ).rejects.toThrow('bản thu');
+  expect(fetch).toHaveBeenCalledTimes(2);
+  jest
+    .mocked(fetch)
+    .mockReset()
+    .mockImplementationOnce(() =>
+      reply({ asset: { id: 'audio-1' }, upload_url: null, headers: {} }),
+    );
+  await speaking.saveAudio('session-1', 'message-1', recording);
+  expect(fetch).toHaveBeenCalledTimes(1);
+});
 beforeEach(async () => {
   jest.resetModules();
   globalThis.fetch = jest.fn().mockImplementationOnce(() => reply(tokens));
@@ -165,6 +228,35 @@ test('requests authenticated history and saved session endpoints', async () => {
     });
     expect(options?.method).toBe('GET');
   }
+});
+
+test('deletes only the selected session using authenticated DELETE without a request body', async () => {
+  jest
+    .mocked(fetch)
+    .mockImplementationOnce(() =>
+      reply({ deleted: true, audio_cleanup_pending: false }),
+    );
+  await speaking.deleteSession('session-1');
+  const [url, options] = jest.mocked(fetch).mock.calls.at(-1)!;
+  expect(url).toContain('/api/speaking/sessions/session-1');
+  expect(options?.method).toBe('DELETE');
+  expect(options?.headers).toMatchObject({ Authorization: 'Bearer access-1' });
+  expect(options?.body).toBeUndefined();
+});
+
+test('treats an already-removed session as deleted when retrying after a lost response', async () => {
+  jest
+    .mocked(fetch)
+    .mockImplementationOnce(() =>
+      reply(
+        { error: 'Không tìm thấy buổi hội thoại.', code: 'session_not_found' },
+        404,
+      ),
+    );
+  expect(await speaking.deleteSession('session-1')).toEqual({
+    deleted: true,
+    audio_cleanup_pending: false,
+  });
 });
 
 test('requests an authenticated ephemeral token and saves a Live transcript', async () => {

@@ -124,7 +124,9 @@ async function refresh(): Promise<Tokens> {
 export async function authenticatedRequest<T>(
   path: string,
   data?: unknown,
-  method: 'GET' | 'POST' | 'PUT' = data === undefined ? 'GET' : 'POST',
+  method: 'GET' | 'POST' | 'PUT' | 'DELETE' = data === undefined
+    ? 'GET'
+    : 'POST',
   options?: { timeoutMs?: number },
 ): Promise<T> {
   const currentSession = session;

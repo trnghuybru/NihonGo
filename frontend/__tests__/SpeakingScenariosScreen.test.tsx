@@ -234,7 +234,7 @@ test('opens context selection over chat and posts the briefing after starting', 
   expect(speakingService.start).toHaveBeenCalledWith(first.id, {
     role_id: role.id,
     input_mode: 'voice',
-    audio_storage_enabled: false,
+    audio_storage_enabled: true,
   });
   expect(tree.root.findAllByType(ConversationScreen)).toHaveLength(1);
   expect(screenText()).toContain('Lời mở đầu từ backend');
@@ -251,6 +251,23 @@ test('opens context selection over chat and posts the briefing after starting', 
   await openFirst();
   await press('Bắt đầu trò chuyện');
   expect(speakingService.start).toHaveBeenCalledTimes(2);
+});
+
+test('allows disabling audio storage before creating a conversation', async () => {
+  await render();
+  await openFirst();
+  const checkbox = tree.root.findAll(
+    node =>
+      node.props.accessibilityRole === 'checkbox' &&
+      node.props.accessibilityLabel === 'Lưu âm thanh để nghe lại',
+  )[0];
+  expect(checkbox.props.accessibilityState.checked).toBe(true);
+  await act(async () => checkbox.props.onPress());
+  await press('Bắt đầu trò chuyện');
+  expect(speakingService.start).toHaveBeenCalledWith(
+    first.id,
+    expect.objectContaining({ audio_storage_enabled: false }),
+  );
 });
 
 test('shows detail failure and retries instead of starting from a list summary', async () => {
@@ -405,7 +422,7 @@ test('loads API roles and sends the selected role instead of a hardcoded one', a
   expect(speakingService.start).toHaveBeenCalledWith(first.id, {
     role_id: another.id,
     input_mode: 'voice',
-    audio_storage_enabled: false,
+    audio_storage_enabled: true,
   });
   expect(screenText()).toContain('Bắt đầu trò chuyện cùng Aoi.');
 });
@@ -621,6 +638,7 @@ test('opens completed conversations for reading and disables sending', async () 
   expect(screenText()).toContain('Phiên này chỉ xem lại');
   expect(tree.root.findAllByType(TextInput)).toHaveLength(0);
   await press('Chế độ nhắn tin');
-  expect(tree.root.findByType(TextInput).props.editable).toBe(false);
+  expect(tree.root.findAllByType(TextInput)).toHaveLength(0);
+  expect(screenText()).toContain('Xem điểm & nhận xét');
   expect(speakingService.start).not.toHaveBeenCalled();
 });
