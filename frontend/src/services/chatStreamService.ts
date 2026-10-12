@@ -17,8 +17,8 @@ export interface StreamVoiceChatOptions {
 }
 
 // Địa chỉ kết nối Flask Backend:
-// Sử dụng IP LAN của máy tính (192.168.1.31) để iPhone thật, Android và Simulator đều gọi được qua cùng mạng Wi-Fi
-export const DEFAULT_HOST_IP = '192.168.1.31';
+// Sử dụng IP LAN của máy tính để điện thoại thật và Simulator kết nối cùng mạng Wi-Fi.
+export const DEFAULT_HOST_IP = '10.0.14.71';
 const DEFAULT_BACKEND_URL = `http://${DEFAULT_HOST_IP}:5001/api/chat/voice-stream`;
 
 class ChatStreamService {

@@ -5,6 +5,7 @@ export type BottomNavigationIconName =
   | 'home'
   | 'practice'
   | 'vocabulary'
+  | 'search'
   | 'profile';
 
 interface Props {
@@ -14,10 +15,10 @@ interface Props {
 }
 
 export function BottomNavigationIcon({ name, color, size = 28 }: Props) {
-  if (name === 'practice' || name === 'vocabulary') {
+  if (name === 'practice' || name === 'vocabulary' || name === 'search') {
     return (
       <HomeFeatureIcon
-        name={name === 'practice' ? 'reading' : 'vocabulary'}
+        name={name === 'practice' ? 'reading' : name}
         color={color}
         size={size}
       />

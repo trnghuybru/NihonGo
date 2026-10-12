@@ -7,7 +7,7 @@ afterEach(async () => {
   await act(async () => tree?.unmount());
 });
 
-test('exposes four accessible tabs and only one selected destination', async () => {
+test('exposes five accessible tabs and only one selected destination', async () => {
   const onSelectTab = jest.fn();
   await act(async () => {
     tree = Renderer.create(
@@ -23,7 +23,7 @@ test('exposes four accessible tabs and only one selected destination', async () 
           typeof node.props.onPress === 'function',
       )[0],
   );
-  expect(tabs).toHaveLength(4);
+  expect(tabs).toHaveLength(5);
   expect(tabs.map(node => node.props.accessibilityLabel)).toEqual(
     APP_TABS.map(tab => tab.label),
   );
@@ -50,6 +50,6 @@ test('moves selected semantics with controlled state', async () => {
           typeof node.props.onPress === 'function',
       )[0],
   );
-  expect(tabs[3].props.accessibilityState.selected).toBe(true);
+  expect(tabs[4].props.accessibilityState.selected).toBe(true);
   expect(tabs[0].props.accessibilityState.selected).toBe(false);
 });

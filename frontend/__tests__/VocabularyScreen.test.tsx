@@ -1,6 +1,13 @@
 import React from 'react';
 import Renderer, { act } from 'react-test-renderer';
-import { BackHandler, Keyboard, Modal, Text, TextInput } from 'react-native';
+import {
+  BackHandler,
+  FlatList,
+  Keyboard,
+  Modal,
+  Text,
+  TextInput,
+} from 'react-native';
 import { AuthButton } from '../src/components/AuthForm';
 import { VocabularyScreen } from '../src/screens/VocabularyScreen';
 import { vocabularyService } from '../src/services/vocabularyService';
@@ -140,6 +147,33 @@ function contents() {
 async function openLesson() {
   await press('Mở Bài 1');
 }
+
+test('quick lookup keeps the lesson mounted and preserves recall state when closed', async () => {
+  await act(async () => {
+    tree = Renderer.create(<VocabularyScreen area="lessons" />);
+  });
+  await openLesson();
+  await press('Ẩn nghĩa để tự ôn');
+  const lessonList = tree.root.findByType(FlatList);
+  const lessonCalls = jest.mocked(vocabularyService.lesson).mock.calls.length;
+  await press('Tra cứu nhanh');
+  expect(tree.root.findAllByType(VocabularyScreen)).toHaveLength(2);
+  expect(tree.root.findAllByType(FlatList)).toContain(lessonList);
+  expect(button('Tra cứu thông thường').props.accessibilityState.checked).toBe(
+    true,
+  );
+  const input = tree.root.findByType(TextInput);
+  await act(async () => input.props.onChangeText('人生'));
+  await press('Tìm kiếm');
+  expect(vocabularyService.search).toHaveBeenCalledWith('N2', '人生', 1);
+  expect(contents()).toContain('cuộc đời');
+  await press('Trở lại bài học');
+  expect(tree.root.findAllByType(VocabularyScreen)).toHaveLength(1);
+  expect(tree.root.findByType(FlatList)).toBe(lessonList);
+  expect(button('Hiện nghĩa').props.accessibilityState.selected).toBe(true);
+  expect(contents()).not.toContain('cuộc đời');
+  expect(vocabularyService.lesson).toHaveBeenCalledTimes(lessonCalls);
+});
 
 test('audio icon only appears for ready audio and stops on returning to lessons', async () => {
   const detail = await vocabularyService.lesson('lesson-1');

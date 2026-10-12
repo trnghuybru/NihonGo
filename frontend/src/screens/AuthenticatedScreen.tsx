@@ -39,11 +39,16 @@ function MainTabs({
   onOpenPlan,
 }: MainTabsProps) {
   const [vocabularyQuery, setVocabularyQuery] = useState('');
+  const [visitedVocabulary, setVisitedVocabulary] = useState(false);
+  const [visitedLookup, setVisitedLookup] = useState(false);
   const [activeSkill, setActiveSkill] = useState<LearningSkill | null>(null);
+  useEffect(() => {
+    if (selectedTab === 'vocabulary') setVisitedVocabulary(true);
+    if (selectedTab === 'lookup') setVisitedLookup(true);
+  }, [selectedTab]);
   const selectTab = useCallback(
     (tab: AppTab) => {
       setActiveSkill(null);
-      if (tab === 'vocabulary') setVocabularyQuery('');
       onSelectTab(tab);
     },
     [onSelectTab],
@@ -56,7 +61,8 @@ function MainTabs({
     const subscription = BackHandler.addEventListener(
       'hardwareBackPress',
       () => {
-        if (selectedTab === 'vocabulary') return false;
+        if (selectedTab === 'vocabulary' || selectedTab === 'lookup')
+          return false;
         if (selectedTab === 'practice' && activeSkill === 'listening')
           return false;
         if (selectedTab === 'practice' && activeSkill) {
@@ -92,7 +98,7 @@ function MainTabs({
             onOpenSkill={openSkill}
             onSearchVocabulary={query => {
               setVocabularyQuery(query);
-              onSelectTab('vocabulary');
+              onSelectTab('lookup');
             }}
             onOpenVocabulary={() => {
               setVocabularyQuery('');
@@ -117,13 +123,34 @@ function MainTabs({
             learningOptions={options}
             onEditLearning={onEditLearning}
           />
-        ) : (
-          <VocabularyScreen
-            key={vocabularyQuery}
-            query={vocabularyQuery}
-            onExit={() => selectTab('home')}
-          />
-        )}
+        ) : null}
+        {visitedVocabulary || selectedTab === 'vocabulary' ? (
+          <View
+            style={[
+              styles.screen,
+              selectedTab !== 'vocabulary' && styles.hidden,
+            ]}
+          >
+            <VocabularyScreen
+              area="lessons"
+              active={selectedTab === 'vocabulary'}
+              onExit={() => selectTab('home')}
+            />
+          </View>
+        ) : null}
+        {visitedLookup || selectedTab === 'lookup' ? (
+          <View
+            style={[styles.screen, selectedTab !== 'lookup' && styles.hidden]}
+          >
+            <VocabularyScreen
+              key={vocabularyQuery}
+              area="lookup"
+              query={vocabularyQuery}
+              active={selectedTab === 'lookup'}
+              onExit={() => selectTab('home')}
+            />
+          </View>
+        ) : null}
       </View>
       {selectedTab === 'practice' &&
       activeSkill &&
@@ -231,6 +258,7 @@ export function AuthenticatedScreen({ user }: { user: User }) {
 }
 
 const styles = StyleSheet.create({
+  hidden: { display: 'none' },
   main: { flex: 1, backgroundColor: colors.background },
   screen: { flex: 1 },
 });

@@ -1,13 +1,13 @@
 import { memo } from 'react';
-import { Pressable, StyleSheet, View } from 'react-native';
+import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { colors, layout, radius, spacing } from '../theme/theme';
+import { colors, layout, radius, spacing, typography } from '../theme/theme';
 import {
   BottomNavigationIcon,
   BottomNavigationIconName,
 } from './BottomNavigationIcon';
 
-export type AppTab = 'home' | 'practice' | 'vocabulary' | 'profile';
+export type AppTab = 'home' | 'practice' | 'lookup' | 'vocabulary' | 'profile';
 
 interface TabDefinition {
   id: AppTab;
@@ -18,7 +18,8 @@ interface TabDefinition {
 export const APP_TABS: readonly TabDefinition[] = [
   { id: 'home', label: 'Trang chủ', icon: 'home' },
   { id: 'practice', label: 'Luyện tập', icon: 'practice' },
-  { id: 'vocabulary', label: 'Từ vựng', icon: 'vocabulary' },
+  { id: 'lookup', label: 'Tra cứu', icon: 'search' },
+  { id: 'vocabulary', label: 'Bài học', icon: 'vocabulary' },
   { id: 'profile', label: 'Cá nhân', icon: 'profile' },
 ];
 
@@ -58,8 +59,14 @@ function BottomNavigationComponent({ selectedTab, onSelectTab }: Props) {
               >
                 <BottomNavigationIcon
                   name={tab.icon}
+                  size={24}
                   color={selected ? colors.primary : colors.dark}
                 />
+                <Text
+                  style={[styles.tabLabel, selected && styles.selectedLabel]}
+                >
+                  {tab.label}
+                </Text>
                 <View
                   accessible={false}
                   style={[
@@ -79,9 +86,17 @@ function BottomNavigationComponent({ selectedTab, onSelectTab }: Props) {
 export const BottomNavigation = memo(BottomNavigationComponent);
 
 const styles = StyleSheet.create({
+  tabLabel: {
+    ...typography.caption,
+    fontSize: 10,
+    lineHeight: 14,
+    color: colors.body,
+    textAlign: 'center',
+  },
+  selectedLabel: { color: colors.focus },
   safeArea: {
     paddingTop: 4,
-    paddingHorizontal: 28,
+    paddingHorizontal: spacing.lg,
     backgroundColor: colors.background,
   },
   container: {
@@ -98,17 +113,17 @@ const styles = StyleSheet.create({
   tabRow: {
     paddingTop: 14,
     paddingBottom: 12,
-    paddingHorizontal: spacing.xxl,
+    paddingHorizontal: spacing.sm,
     flexDirection: 'row',
     alignItems: 'flex-start',
     justifyContent: 'space-between',
   },
   tab: {
-    width: layout.touchTarget,
+    flex: 1,
     minHeight: layout.touchTarget,
     alignItems: 'center',
     justifyContent: 'flex-start',
-    gap: 7,
+    gap: spacing.xs,
     borderRadius: radius.small,
     borderCurve: 'continuous',
   },

@@ -7,6 +7,7 @@ import {
   FlatList,
   Keyboard,
   KeyboardAvoidingView,
+  Modal,
   Platform,
   Pressable,
   StyleSheet,
@@ -27,6 +28,7 @@ import {
   EyeOffIcon,
   VolumeIcon,
   VolumeXIcon,
+  XIcon,
 } from '../components/icons';
 import { VideoExampleCard } from '../components/VideoExampleCard';
 import { VideoExamplePlayer } from '../components/VideoExamplePlayer';
@@ -291,9 +293,15 @@ const BrowseCard = memo(function BrowseCardView({
 export function VocabularyScreen({
   query = '',
   onExit,
+  area,
+  active = true,
+  compact = false,
 }: {
   query?: string;
   onExit?: () => void;
+  area?: 'lessons' | 'lookup';
+  active?: boolean;
+  compact?: boolean;
 }) {
   const insets = useSafeAreaInsets();
   const { width: windowWidth, fontScale } = useWindowDimensions();
@@ -309,7 +317,7 @@ export function VocabularyScreen({
     lessonColumns;
   const [level, setLevel] = useState<JlptLevel>('N2');
   const [section, setSection] = useState<'lessons' | 'lookup'>(
-    query.trim() ? 'lookup' : 'lessons',
+    area ?? (query.trim() ? 'lookup' : 'lessons'),
   );
   const [lessonRoute, setLessonRoute] = useState<LessonRoute>({
     kind: 'catalog',
@@ -330,7 +338,11 @@ export function VocabularyScreen({
   const [searchText, setSearchText] = useState(query.slice(0, 100));
   const [hideMeaning, setHideMeaning] = useState(false);
   const [searchFocused, setSearchFocused] = useState(false);
-  const [searchMode, setSearchMode] = useState<'words' | 'videos'>('videos');
+  const [searchMode, setSearchMode] = useState<'words' | 'videos'>(
+    compact ? 'words' : 'videos',
+  );
+  const [quickLookupOpen, setQuickLookupOpen] = useState(false);
+  const closeQuickLookup = useCallback(() => setQuickLookupOpen(false), []);
   const [selectedVideoId, setSelectedVideoId] = useState<string | null>(null);
   const listRef = useRef<FlatList<Item>>(null);
   const openVideo = useCallback((example: VideoExample) => {
@@ -390,6 +402,10 @@ export function VocabularyScreen({
     };
   }, [level, route]);
   const { state, reload } = useRemoteResource(load);
+  const stopAudio = audio.stop;
+  useEffect(() => {
+    if (!active || quickLookupOpen) stopAudio();
+  }, [active, quickLookupOpen, stopAudio]);
   const back = useCallback(() => {
     Keyboard.dismiss();
     setSelectedVideoId(null);
@@ -401,6 +417,11 @@ export function VocabularyScreen({
   }, [section]);
   useEffect(() => {
     const listener = BackHandler.addEventListener('hardwareBackPress', () => {
+      if (!active) return false;
+      if (quickLookupOpen) {
+        closeQuickLookup();
+        return true;
+      }
       if (route.kind === 'catalog' || route.kind === 'lookup') {
         if (!onExit) return false;
         onExit();
@@ -410,7 +431,7 @@ export function VocabularyScreen({
       return true;
     });
     return () => listener.remove();
-  }, [back, route.kind, onExit]);
+  }, [active, quickLookupOpen, closeQuickLookup, back, route.kind, onExit]);
   const open = useCallback(
     (item: Item) => {
       setHideMeaning(false);
@@ -486,10 +507,12 @@ export function VocabularyScreen({
       route.kind === 'catalog' ? styles.gridContent : null,
       {
         paddingTop:
-          Platform.OS === 'android' ? insets.top + spacing.lg : spacing.lg,
+          Platform.OS === 'android' && !compact
+            ? insets.top + spacing.lg
+            : spacing.lg,
       },
     ],
-    [insets.top, route.kind],
+    [insets.top, route.kind, compact],
   );
   const title =
     route.kind === 'words'
@@ -537,7 +560,7 @@ export function VocabularyScreen({
   );
   const header = (
     <View style={styles.header}>
-      {route.kind !== 'videos' ? (
+      {route.kind !== 'videos' && !compact ? (
         <View style={styles.topBar}>
           <BrandLogo />
           <Text style={styles.language}>日本語</Text>
@@ -551,7 +574,7 @@ export function VocabularyScreen({
           </Text>
         </View>
       ) : null}
-      {route.kind !== 'videos' ? (
+      {route.kind !== 'videos' && !compact ? (
         <View style={styles.introduction}>
           <View style={styles.titleRow}>
             {route.kind !== 'catalog' && route.kind !== 'lookup'
@@ -580,11 +603,27 @@ export function VocabularyScreen({
                 )}
               </Pressable>
             ) : null}
+            {section === 'lessons' ? (
+              <Pressable
+                accessibilityRole="button"
+                accessibilityLabel="Tra cứu nhanh"
+                accessibilityHint="Tra từ mà vẫn giữ bài học đang mở"
+                onPress={() => setQuickLookupOpen(true)}
+                style={styles.back}
+                hitSlop={6}
+              >
+                <HomeFeatureIcon
+                  name="search"
+                  size={20}
+                  color={colors.primaryText}
+                />
+              </Pressable>
+            ) : null}
           </View>
           <Text style={styles.body}>{subtitle}</Text>
         </View>
       ) : null}
-      {route.kind !== 'words' ? (
+      {!area && route.kind !== 'words' ? (
         <View
           accessibilityRole="tablist"
           accessibilityLabel="Khu vực từ vựng"
@@ -720,6 +759,7 @@ export function VocabularyScreen({
           >
             <HomeFeatureIcon name="search" size={20} color={colors.muted} />
             <TextInput
+              autoFocus={compact && route.kind === 'lookup'}
               accessibilityLabel={
                 searchMode === 'videos'
                   ? 'Tìm từ hoặc cụm tiếng Nhật trong video'
@@ -770,7 +810,7 @@ export function VocabularyScreen({
           ) : null}
         </View>
       ) : null}
-      {selectedVideo && route.kind === 'videos' ? (
+      {active && selectedVideo && route.kind === 'videos' ? (
         <VideoExamplePlayer
           key={`${screenKey}-${selectedVideo.id}`}
           example={selectedVideo}
@@ -977,11 +1017,76 @@ export function VocabularyScreen({
           ) : undefined
         }
       />
+      {quickLookupOpen ? (
+        <Modal
+          transparent
+          animationType="slide"
+          visible
+          onRequestClose={closeQuickLookup}
+          statusBarTranslucent
+        >
+          <View style={styles.drawerOverlay}>
+            <Pressable
+              style={StyleSheet.absoluteFill}
+              accessibilityRole="button"
+              accessibilityLabel="Đóng tra cứu nhanh"
+              onPress={closeQuickLookup}
+            />
+            <View
+              accessibilityViewIsModal
+              style={[styles.drawer, { paddingBottom: insets.bottom }]}
+            >
+              <View style={styles.drawerHeader}>
+                <Text accessibilityRole="header" style={styles.title}>
+                  Tra cứu nhanh
+                </Text>
+                <Pressable
+                  accessibilityRole="button"
+                  accessibilityLabel="Trở lại bài học"
+                  onPress={closeQuickLookup}
+                  style={styles.back}
+                  hitSlop={6}
+                >
+                  <XIcon size={18} color={colors.body} />
+                </Pressable>
+              </View>
+              <VocabularyScreen
+                area="lookup"
+                compact
+                onExit={closeQuickLookup}
+              />
+            </View>
+          </View>
+        </Modal>
+      ) : null}
     </KeyboardAvoidingView>
   );
 }
 
 const styles = StyleSheet.create({
+  drawerOverlay: {
+    flex: 1,
+    justifyContent: 'flex-end',
+    backgroundColor: 'rgba(37,37,38,0.25)',
+  },
+  drawer: {
+    height: '85%',
+    maxHeight: '90%',
+    backgroundColor: colors.background,
+    borderTopLeftRadius: radius.card,
+    borderTopRightRadius: radius.card,
+    overflow: 'hidden',
+  },
+  drawerHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    paddingHorizontal: spacing.xl,
+    paddingTop: spacing.lg,
+    paddingBottom: spacing.sm,
+    borderBottomWidth: 1,
+    borderBottomColor: colors.divider,
+  },
   screen: { flex: 1, backgroundColor: colors.background },
   content: {
     paddingHorizontal: layout.screenGutter,

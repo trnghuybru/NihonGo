@@ -135,7 +135,7 @@ test('navigates between the four real destinations', async () => {
   expect(tree.root.findAllByType(HomeScreen)).toHaveLength(1);
   await act(async () => tab('Luyện tập').props.onPress());
   expect(tree.root.findAllByType(PracticeScreen)).toHaveLength(1);
-  await act(async () => tab('Từ vựng').props.onPress());
+  await act(async () => tab('Bài học').props.onPress());
   expect(tree.root.findAllByType(VocabularyScreen)).toHaveLength(1);
   await act(async () => tab('Cá nhân').props.onPress());
   expect(tree.root.findByType(AccountScreen).props.learningProfile).toEqual(
@@ -182,9 +182,20 @@ test('home lookup passes the query to the video examples API', async () => {
     )[0];
   expect(section('Tra cứu').props.accessibilityState.selected).toBe(true);
   await act(async () => tab('Trang chủ').props.onPress());
-  await act(async () => tab('Từ vựng').props.onPress());
-  expect(tree.root.findByType(VocabularyScreen).props.query).toBe('');
+  await act(async () => tab('Bài học').props.onPress());
+  expect(
+    tree.root
+      .findAllByType(VocabularyScreen)
+      .find(node => node.props.area === 'lessons')?.props.active,
+  ).toBe(true);
   expect(section('Bài học').props.accessibilityState.selected).toBe(true);
+  const lookupScreen = tree.root
+    .findAllByType(VocabularyScreen)
+    .find(node => node.props.area === 'lookup');
+  await act(async () => tab('Tra cứu').props.onPress());
+  expect(tree.root.findAllByType(VocabularyScreen)).toContain(lookupScreen);
+  expect(lookupScreen?.props.query).toBe('社会');
+  expect(lookupScreen?.props.active).toBe(true);
 });
 
 test('network errors do not masquerade as missing settings; retries load the saved profile', async () => {
