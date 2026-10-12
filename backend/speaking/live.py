@@ -74,6 +74,7 @@ def live_token(user_id, session_id):
                         "exp": int((now + timedelta(hours=1)).timestamp())},
                        current_app.config["AUTH_SECRET_KEY"], algorithm="HS256")
     return {"token": token, "model": model, "lease": lease,
+            "audio_storage_enabled": session.audio_storage_enabled,
             "last_sequence": latest.sequence_number if latest else 0,
             "history": [{"role": "user" if row.speaker == "user" else "model",
                          "parts": [{"text": row.content[:2000]}]} for row in reversed(rows)]}

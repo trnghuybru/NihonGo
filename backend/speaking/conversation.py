@@ -7,7 +7,7 @@ from sqlalchemy import select, update
 from api_errors import ApiError
 from extensions import db
 from .ai import generate_reply
-from .models import ConversationMessage, ConversationSession, utc_now
+from .models import ConversationAudioAsset, ConversationMessage, ConversationSession, utc_now
 from .service import parse_id
 
 PENDING_TIMEOUT_SECONDS = 120
@@ -23,7 +23,8 @@ def owned_session(user_id, session_id, lock=False):
     except ApiError:
         raise ApiError("Không tìm thấy buổi hội thoại.", 404, "session_not_found") from None
     statement = select(ConversationSession).where(
-        ConversationSession.id == identifier, ConversationSession.user_id == user_id)
+        ConversationSession.id == identifier, ConversationSession.user_id == user_id,
+        ConversationSession.deleted_at.is_(None))
     if lock:
         statement = statement.with_for_update()
     session = db.session.scalar(statement)
@@ -56,7 +57,12 @@ def transcript(user_id, session_id, args):
     rows = db.session.scalars(select(ConversationMessage).where(
         ConversationMessage.session_id == session.id, ConversationMessage.sequence_number > after
     ).order_by(ConversationMessage.sequence_number).limit(limit + 1)).all()
-    return {"items": [message_public(row) for row in rows[:limit]],
+    audio_rows = db.session.scalars(select(ConversationAudioAsset).where(
+        ConversationAudioAsset.session_id == session.id, ConversationAudioAsset.status == "ready",
+        ConversationAudioAsset.message_id.in_([row.id for row in rows[:limit]]))).all()
+    from .audio import public_asset
+    audio_by_message = {asset.message_id: public_asset(asset) for asset in audio_rows}
+    return {"items": [{**message_public(row), "audio": audio_by_message.get(row.id)} for row in rows[:limit]],
             "session": {"id": session.id, "status": session.status,
                         "current_input_mode": session.current_input_mode},
             "has_more": len(rows) > limit,

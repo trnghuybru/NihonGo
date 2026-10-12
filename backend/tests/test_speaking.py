@@ -1,7 +1,9 @@
 """Scenario API integration tests, with an isolated schema on PostgreSQL."""
 import os
+import struct
 import unittest
 import uuid
+from datetime import datetime, timezone
 from unittest.mock import MagicMock, patch
 
 from flask import Flask
@@ -105,6 +107,149 @@ class SpeakingTests(unittest.TestCase):
             provider.return_value.json.return_value = {"name": "auth_tokens/short-lived"}
             response = self.client.post(f"/api/speaking/sessions/{identifier}/live-token", json={}, headers={"Authorization": "Bearer alice"})
             return response, provider.call_args
+
+    def test_audio_upload_verifies_wav_and_replays_only_owned_ready_asset(self):
+        result = self.start(data={"audio_storage_enabled": True}).json
+        session_id, message_id = result["session"]["id"], result["opening_message"]["id"]
+        base = f"/api/speaking/sessions/{session_id}"
+        path = f"{base}/messages/{message_id}/audio-upload"
+        headers = {"Authorization": "Bearer alice"}
+        data = {"size_bytes": 48044, "duration_ms": 1000}
+        with patch("speaking.storage.upload_url", return_value="http://localstack/upload"):
+            first = self.client.post(path, json=data, headers=headers)
+            self.assertEqual(first.status_code, 200, first.json)
+            second = self.client.post(path, json=data, headers=headers)
+            self.assertEqual(first.json["asset"], second.json["asset"])
+        asset_id = first.json["asset"]["id"]
+        playback = f"{base}/audio/{asset_id}/playback"
+        complete = f"{base}/audio/{asset_id}/complete"
+        self.assertEqual(self.get(playback).status_code, 409)
+        self.assertIsNone(self.get(f"{base}/messages").json["items"][0]["audio"])
+        self.assertEqual(self.get(playback, token="bob").status_code, 404)
+        self.assertEqual(self.client.post(complete, json={}, headers={"Authorization": "Bearer bob"}).status_code, 404)
+        wav = struct.pack("<4sI4s4sIHHIIHH4sI", b"RIFF", 48036, b"WAVE", b"fmt ", 16,
+                          1, 1, 24000, 48000, 2, 16, b"data", 48000)
+        with patch("speaking.storage.inspect_object", return_value=({"ContentLength": 48044, "ContentType": "audio/wav"}, wav)) as inspect:
+            self.assertEqual(self.client.post(complete, json={}, headers=headers).status_code, 200)
+            self.assertEqual(self.client.post(complete, json={}, headers=headers).status_code, 200)
+            inspect.assert_called_once()
+        item = self.get(f"{base}/messages").json["items"][0]
+        self.assertEqual(item["audio"]["id"], asset_id)
+        self.assertNotIn("storage_key", item["audio"])
+        with patch("speaking.storage.download_url", return_value="http://localstack/download"):
+            response = self.get(playback)
+            self.assertEqual(response.json["url"], "http://localstack/download")
+            self.assertEqual(response.headers["Cache-Control"], "no-store")
+        with patch("speaking.storage.upload_url") as sign:
+            self.assertIsNone(self.client.post(path, json=data, headers=headers).json["upload_url"])
+            sign.assert_not_called()
+
+    def test_user_audio_supports_high_quality_and_legacy_rates(self):
+        headers = {"Authorization": "Bearer alice"}
+        for rate in (16000, 44100, 48000):
+            with self.subTest(rate=rate):
+                result = self.start(data={"audio_storage_enabled": True}).json
+                session_id = result["session"]["id"]
+                message = ConversationMessage(session_id=session_id, sequence_number=2,
+                    speaker="user", input_mode="voice", status="completed", content="hello",
+                    occurred_at=datetime.now(timezone.utc))
+                db.session.add(message)
+                db.session.commit()
+                base = f"/api/speaking/sessions/{session_id}"
+                data = {"size_bytes": 44 + rate * 2, "duration_ms": 1000, "sample_rate": rate}
+                with patch("speaking.storage.upload_url", return_value="http://localstack/upload"):
+                    prepared = self.client.post(f"{base}/messages/{message.id}/audio-upload", json=data, headers=headers)
+                self.assertEqual(prepared.status_code, 200, prepared.json)
+                complete = f'{base}/audio/{prepared.json["asset"]["id"]}/complete'
+                def header(sample_rate):
+                    return struct.pack("<4sI4s4sIHHIIHH4sI", b"RIFF", data["size_bytes"] - 8,
+                        b"WAVE", b"fmt ", 16, 1, 1, sample_rate, sample_rate * 2, 2, 16, b"data", rate * 2)
+                metadata = {"ContentLength": data["size_bytes"], "ContentType": "audio/wav"}
+                with patch("speaking.storage.inspect_object", return_value=(metadata, header(24000))):
+                    self.assertEqual(self.client.post(complete, json={}, headers=headers).status_code, 400)
+                with patch("speaking.storage.inspect_object", return_value=(metadata, header(rate))):
+                    self.assertEqual(self.client.post(complete, json={}, headers=headers).status_code, 200)
+
+    def test_audio_upload_rejects_disabled_storage_bad_metadata_and_wrong_owner(self):
+        result = self.start().json
+        session_id, message_id = result["session"]["id"], result["opening_message"]["id"]
+        path = f"/api/speaking/sessions/{session_id}/messages/{message_id}/audio-upload"
+        headers = {"Authorization": "Bearer alice"}
+        data = {"size_bytes": 48044, "duration_ms": 1000}
+        self.assertEqual(self.client.post(path, json=data, headers=headers).status_code, 403)
+        self.assertEqual(self.client.post(path, json=data, headers={"Authorization": "Bearer bob"}).status_code, 404)
+        self.assertEqual(self.client.post(path, json=data).status_code, 401)
+        session = db.session.get(ConversationSession, session_id)
+        session.audio_storage_enabled = True
+        db.session.commit()
+        for invalid in ({}, {**data, "storage_key": "arbitrary"}, {**data, "duration_ms": True},
+                        {**data, "size_bytes": 48043}, {**data, "duration_ms": 180001},
+                        {**data, "size_bytes": 96044}, {**data, "sample_rate": True},
+                        {**data, "sample_rate": 48000}):
+            self.assertEqual(self.client.post(path, json=invalid, headers=headers).status_code, 400)
+        other = self.start(data={"audio_storage_enabled": True}).json["opening_message"]["id"]
+        self.assertEqual(self.client.post(path.replace(message_id, other), json=data, headers=headers).status_code, 404)
+
+    def test_audio_rejects_corrupt_or_partial_upload_and_can_retry(self):
+        result = self.start(data={"audio_storage_enabled": True}).json
+        base = f'/api/speaking/sessions/{result["session"]["id"]}'
+        headers = {"Authorization": "Bearer alice"}
+        with patch("speaking.storage.upload_url", return_value="http://localstack/upload"):
+            prepared = self.client.post(f'{base}/messages/{result["opening_message"]["id"]}/audio-upload',
+                json={"size_bytes": 48044, "duration_ms": 1000}, headers=headers)
+        asset_id = prepared.json["asset"]["id"]
+        with patch("speaking.storage.inspect_object", return_value=({"ContentLength": 48044, "ContentType": "audio/wav"}, b"invalid")):
+            response = self.client.post(f"{base}/audio/{asset_id}/complete", json={}, headers=headers)
+            self.assertEqual(response.status_code, 400)
+            self.assertEqual(response.json["code"], "audio_invalid")
+        self.assertEqual(self.get(f"{base}/audio/{asset_id}/playback").status_code, 409)
+        with patch("speaking.storage.inspect_object", side_effect=ApiError("Unavailable", 503, "audio_unavailable")):
+            self.assertEqual(self.client.post(f"{base}/audio/{asset_id}/complete", json={}, headers=headers).status_code, 503)
+
+    @unittest.skipUnless(os.getenv("TEST_S3_ENDPOINT_URL"), "TEST_S3_ENDPOINT_URL must point to local S3")
+    def test_real_s3_upload_complete_and_playback(self):
+        import requests
+        from speaking import storage
+        name = "test-audio-" + uuid.uuid4().hex
+        endpoint = os.environ["TEST_S3_ENDPOINT_URL"]
+        with patch.dict(os.environ, {"S3_BUCKET": name, "S3_ENDPOINT_URL": endpoint,
+            "S3_PUBLIC_ENDPOINT_URL": endpoint, "S3_ADDRESSING_STYLE": "path",
+            "AWS_ACCESS_KEY_ID": os.getenv("TEST_S3_ACCESS_KEY_ID", "test"),
+            "AWS_SECRET_ACCESS_KEY": os.getenv("TEST_S3_SECRET_ACCESS_KEY", "test"),
+            "AWS_DEFAULT_REGION": "us-east-1"}):
+            connection = storage.client()
+            connection.create_bucket(Bucket=name)
+            try:
+                result = self.start(data={"audio_storage_enabled": True}).json
+                base = f'/api/speaking/sessions/{result["session"]["id"]}'
+                headers = {"Authorization": "Bearer alice"}
+                message = ConversationMessage(session_id=result["session"]["id"], sequence_number=2,
+                    speaker="user", input_mode="voice", status="completed", content="hello",
+                    occurred_at=datetime.now(timezone.utc))
+                db.session.add(message)
+                db.session.commit()
+                prepared = self.client.post(f'{base}/messages/{message.id}/audio-upload',
+                    json={"size_bytes": 96044, "duration_ms": 1000, "sample_rate": 48000}, headers=headers)
+                self.assertEqual(prepared.status_code, 200, prepared.json)
+                header = struct.pack("<4sI4s4sIHHIIHH4sI", b"RIFF", 96036, b"WAVE", b"fmt ", 16,
+                                     1, 1, 48000, 96000, 2, 16, b"data", 96000)
+                wav = header + bytes(96000)
+                uploaded = requests.put(prepared.json["upload_url"], data=wav, headers=prepared.json["headers"], timeout=20)
+                self.assertEqual(uploaded.status_code, 200, uploaded.text)
+                asset_id = prepared.json["asset"]["id"]
+                completed = self.client.post(f"{base}/audio/{asset_id}/complete", json={}, headers=headers)
+                self.assertEqual(completed.status_code, 200, completed.json)
+                ready = self.get(f"{base}/messages").json["items"][1]["audio"]
+                self.assertEqual(ready["id"], asset_id)
+                replay = self.get(f"{base}/audio/{asset_id}/playback")
+                downloaded = requests.get(replay.json["url"], timeout=20)
+                self.assertEqual(downloaded.status_code, 200)
+                self.assertEqual(downloaded.content, wav)
+                self.assertEqual(self.get(f"{base}/audio/{asset_id}/playback", token="bob").status_code, 404)
+            finally:
+                for item in connection.list_objects_v2(Bucket=name).get("Contents", []):
+                    connection.delete_object(Bucket=name, Key=item["Key"])
+                connection.delete_bucket(Bucket=name)
 
     def test_live_token_locks_role_and_model_without_exposing_credentials(self):
         identifier = self.start().json["session"]["id"]

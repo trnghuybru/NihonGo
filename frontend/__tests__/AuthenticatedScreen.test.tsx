@@ -12,9 +12,24 @@ import { AuthButton } from '../src/components/AuthForm';
 import { learningService } from '../src/services/learningService';
 import { options, profile } from '../test-support/learning';
 import { PracticeScreen } from '../src/screens/PracticeScreen';
-import { LearningAreaScreen } from '../src/screens/LearningAreaScreen';
+import { VocabularyScreen } from '../src/screens/VocabularyScreen';
 import { SpeakingScenariosScreen } from '../src/screens/SpeakingScenariosScreen';
 import { speakingService } from '../src/services/speakingService';
+import { videoExamplesService } from '../src/services/videoExamplesService';
+jest.mock('../src/services/videoExamplesService', () => ({
+  videoExamplesService: {
+    search: jest.fn().mockResolvedValue({
+      query: '社会',
+      items: [],
+      next_cursor: null,
+      has_more: false,
+    }),
+  },
+}));
+jest.mock('../src/services/vocabularyService', () => ({
+  JLPT_LEVELS: ['N5', 'N4', 'N3', 'N2', 'N1'],
+  vocabularyService: { textbooks: jest.fn().mockResolvedValue({ items: [] }) },
+}));
 
 jest.mock('../src/services/speakingService', () => ({
   speakingService: {
@@ -115,9 +130,7 @@ test('navigates between the four real destinations', async () => {
   await act(async () => tab('Luyện tập').props.onPress());
   expect(tree.root.findAllByType(PracticeScreen)).toHaveLength(1);
   await act(async () => tab('Từ vựng').props.onPress());
-  expect(tree.root.findByType(LearningAreaScreen).props.area).toBe(
-    'vocabulary',
-  );
+  expect(tree.root.findAllByType(VocabularyScreen)).toHaveLength(1);
   await act(async () => tab('Cá nhân').props.onPress());
   expect(tree.root.findByType(AccountScreen).props.learningProfile).toEqual(
     profile,
@@ -135,6 +148,28 @@ test('opens the API-connected speaking screen from the home skill card', async (
   expect(tree.root.findAllByType(SpeakingScenariosScreen)).toHaveLength(1);
   expect(speakingService.categories).toHaveBeenCalledTimes(1);
   expect(speakingService.list).toHaveBeenCalledTimes(1);
+});
+
+test('home lookup passes the query to the video examples API', async () => {
+  jest.mocked(learningService.load).mockResolvedValue({ options, profile });
+  await render();
+  await act(async () =>
+    tree.root.findByType(HomeScreen).props.onSearchVocabulary('社会'),
+  );
+  expect(tree.root.findByType(VocabularyScreen).props.query).toBe('社会');
+  expect(videoExamplesService.search).toHaveBeenCalledWith('社会', undefined);
+  const section = (label: string) =>
+    tree.root.findAll(
+      node =>
+        node.props.accessibilityRole === 'tab' &&
+        node.props.accessibilityLabel === label &&
+        typeof node.props.onPress === 'function',
+    )[0];
+  expect(section('Tra cứu').props.accessibilityState.selected).toBe(true);
+  await act(async () => tab('Trang chủ').props.onPress());
+  await act(async () => tab('Từ vựng').props.onPress());
+  expect(tree.root.findByType(VocabularyScreen).props.query).toBe('');
+  expect(section('Bài học').props.accessibilityState.selected).toBe(true);
 });
 
 test('network errors do not masquerade as missing settings; retries load the saved profile', async () => {

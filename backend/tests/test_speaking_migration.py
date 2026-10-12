@@ -18,6 +18,8 @@ from sqlalchemy.exc import IntegrityError
 from auth import init_auth
 from auth.models import User
 from learning.models import LearningPreferences  # Register existing metadata.
+from vocabulary import models as vocabulary_models  # Register vocabulary metadata.
+from video_examples import models as video_example_models  # Register caption metadata.
 from extensions import db
 from speaking.models import (
     ConversationAudioAsset, ConversationMessage, ConversationSession,

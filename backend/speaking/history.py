@@ -50,11 +50,11 @@ def list_sessions(user_id, args):
     rows = db.session.execute(
         select(ConversationSession, ConversationMessage)
         .outerjoin(ConversationMessage, ConversationMessage.id == latest_id)
-        .where(ConversationSession.user_id == user_id)
+        .where(ConversationSession.user_id == user_id, ConversationSession.deleted_at.is_(None))
         .order_by(activity.desc(), ConversationSession.id.desc())
         .offset((page - 1) * size).limit(size)).all()
     total = db.session.scalar(select(func.count()).select_from(ConversationSession)
-                              .where(ConversationSession.user_id == user_id))
+                              .where(ConversationSession.user_id == user_id, ConversationSession.deleted_at.is_(None)))
     items = []
     for session, message in rows:
         snapshot = session.scenario_snapshot

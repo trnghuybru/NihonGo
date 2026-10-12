@@ -9,7 +9,7 @@ from sqlalchemy.exc import SQLAlchemyError
 from .models import AuthSession, Challenge, OAuthFlow, RateLimit, db, now
 from .security import AuthError, limit
 
-ACCOUNT_API_PREFIXES = ("/api/auth/", "/api/learning/", "/api/speaking/")
+ACCOUNT_API_PREFIXES = ("/api/auth/", "/api/learning/", "/api/speaking/", "/api/vocabulary/")
 
 
 def init_auth(app):
@@ -80,6 +80,9 @@ def init_auth(app):
         if not request.path.startswith(ACCOUNT_API_PREFIXES):
             raise error
         app.logger.error("Account database request failed (%s)", type(error).__name__)
+        if request.path.startswith("/api/vocabulary/"):
+            return jsonify({"error": "Không tải được từ vựng. Vui lòng thử lại sau.",
+                            "code": "vocabulary_unavailable"}), 503
         if request.path.startswith("/api/speaking/"):
             return jsonify({"error": "Dịch vụ hội thoại tạm thời gián đoạn. Vui lòng thử lại sau.",
                             "code": "speaking_unavailable"}), 503

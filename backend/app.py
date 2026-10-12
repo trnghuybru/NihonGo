@@ -7,6 +7,7 @@ from services.llm_service import DEFAULT_MODEL, stream_voice_chat, trim_and_mana
 from auth import init_auth
 from learning import init_learning
 from speaking import init_speaking
+from vocabulary import init_vocabulary
 
 load_dotenv()
 
@@ -16,6 +17,7 @@ CORS(app, resources={r"/*": {"origins": "*"}})
 init_auth(app)
 init_learning(app)
 init_speaking(app)
+init_vocabulary(app)
 
 
 @app.get("/")
@@ -207,7 +209,7 @@ def api_character_view_embedded():
       width: 100%;
       height: 100%;
       overflow: hidden;
-      background: #FFFBF7;
+      background: #FFFFFF;
       touch-action: none;
       -webkit-user-select: none;
       user-select: none;
@@ -276,7 +278,7 @@ def api_character_view_embedded():
 
       clock = new THREE.Clock();
       scene = new THREE.Scene();
-      scene.background = new THREE.Color(0xFFFBF7);
+      scene.background = new THREE.Color(0xFFFFFF);
 
       camera = new THREE.PerspectiveCamera(34, width / height, 0.1, 100);
       camera.position.set(0, 1.06, 2.60);

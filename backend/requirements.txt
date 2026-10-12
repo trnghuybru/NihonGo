@@ -10,3 +10,4 @@ email-validator>=2.2,<3
 phonenumbers>=9,<10
 PyJWT[crypto]>=2.10,<3
 gunicorn>=23,<24
+boto3>=1.35,<2

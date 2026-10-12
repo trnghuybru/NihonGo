@@ -1,0 +1,2644 @@
+{
+  "schema_version": 1,
+  "retrieved_at": "2026-10-10T10:41:43.920824+00:00",
+  "video": {
+    "youtube_id": "cjtmDEG-B7U",
+    "url": "https://www.youtube.com/watch?v=cjtmDEG-B7U",
+    "title": "人生の価値は、何を得るかではなく、何を残すかにある。 | Kazunari Taguchi | TEDxHimi",
+    "channel": "TEDx Talks",
+    "duration_seconds": 971
+  },
+  "caption_track": {
+    "language": "ja",
+    "kind": "manual",
+    "youtube_track_id": ".ja",
+    "retrieval_method": "youtube-transcript-api",
+    "retrieval_library_version": "1.2.4",
+    "srt_file": "cjtmDEG-B7U.ja.srt",
+    "srt_sha256": "7b2930d4771fbc52fe08f1dc8a84408f7480029913d5f137d8e4325da2b3d46e"
+  },
+  "search": {
+    "mode": "literal_substring",
+    "normalization": "NFKC; trim; collapse whitespace",
+    "lemmatization": false
+  },
+  "segment_count": 327,
+  "segments": [
+    {
+      "id": "cjtmDEG-B7U-ja-0001",
+      "sequence": 1,
+      "text": "翻訳: Shiho Nakamura\n校正: Kei Kamimura",
+      "search_text": "翻訳: Shiho Nakamura 校正: Kei Kamimura",
+      "start_seconds": 0.0,
+      "end_seconds": 7.0
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0002",
+      "sequence": 2,
+      "text": "皆さんは\n何のために",
+      "search_text": "皆さんは 何のために",
+      "start_seconds": 11.769,
+      "end_seconds": 13.179
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0003",
+      "sequence": 3,
+      "text": "働いていますか",
+      "search_text": "働いていますか",
+      "start_seconds": 13.179,
+      "end_seconds": 15.459
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0004",
+      "sequence": 4,
+      "text": "皆さんにとって働く意味って",
+      "search_text": "皆さんにとって働く意味って",
+      "start_seconds": 15.459,
+      "end_seconds": 17.939
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0005",
+      "sequence": 5,
+      "text": "何ですか",
+      "search_text": "何ですか",
+      "start_seconds": 17.939,
+      "end_seconds": 19.669
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0006",
+      "sequence": 6,
+      "text": "学校を卒業して",
+      "search_text": "学校を卒業して",
+      "start_seconds": 19.669,
+      "end_seconds": 21.239
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0007",
+      "sequence": 7,
+      "text": "これからは自立しなきゃと",
+      "search_text": "これからは自立しなきゃと",
+      "start_seconds": 21.239,
+      "end_seconds": 22.92
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0008",
+      "sequence": 8,
+      "text": "会社に入って",
+      "search_text": "会社に入って",
+      "start_seconds": 22.92,
+      "end_seconds": 24.509
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0009",
+      "sequence": 9,
+      "text": "早く仕事を覚えようと",
+      "search_text": "早く仕事を覚えようと",
+      "start_seconds": 24.509,
+      "end_seconds": 26.21
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0010",
+      "sequence": 10,
+      "text": "朝から晩まで",
+      "search_text": "朝から晩まで",
+      "start_seconds": 26.21,
+      "end_seconds": 27.34
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0011",
+      "sequence": 11,
+      "text": "がむしゃらに働いて",
+      "search_text": "がむしゃらに働いて",
+      "start_seconds": 27.34,
+      "end_seconds": 29.47
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0012",
+      "sequence": 12,
+      "text": "いろんな仕事がそのうちに\nできるようになってきて",
+      "search_text": "いろんな仕事がそのうちに できるようになってきて",
+      "start_seconds": 29.47,
+      "end_seconds": 32.159
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0013",
+      "sequence": 13,
+      "text": "気づけば部下がいて",
+      "search_text": "気づけば部下がいて",
+      "start_seconds": 32.159,
+      "end_seconds": 34.42
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0014",
+      "sequence": 14,
+      "text": "人間としても成長しようと",
+      "search_text": "人間としても成長しようと",
+      "start_seconds": 34.42,
+      "end_seconds": 36.37
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0015",
+      "sequence": 15,
+      "text": "一生懸命努力し続けてきた",
+      "search_text": "一生懸命努力し続けてきた",
+      "start_seconds": 36.37,
+      "end_seconds": 39.34
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0016",
+      "sequence": 16,
+      "text": "でもふと",
+      "search_text": "でもふと",
+      "start_seconds": 39.34,
+      "end_seconds": 41.11
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0017",
+      "sequence": 17,
+      "text": "俺って何のために働いているんだろう",
+      "search_text": "俺って何のために働いているんだろう",
+      "start_seconds": 41.11,
+      "end_seconds": 43.86
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0018",
+      "sequence": 18,
+      "text": "そんなふうに思ったことは ありませんか",
+      "search_text": "そんなふうに思ったことは ありませんか",
+      "start_seconds": 43.86,
+      "end_seconds": 46.75
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0019",
+      "sequence": 19,
+      "text": "ある調査によると",
+      "search_text": "ある調査によると",
+      "start_seconds": 46.75,
+      "end_seconds": 48.31
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0020",
+      "sequence": 20,
+      "text": "72%の人が",
+      "search_text": "72%の人が",
+      "start_seconds": 48.31,
+      "end_seconds": 50.16
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0021",
+      "sequence": 21,
+      "text": "働く意味を見失った\nっていう経験があるそうです",
+      "search_text": "働く意味を見失った っていう経験があるそうです",
+      "start_seconds": 50.16,
+      "end_seconds": 53.93
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0022",
+      "sequence": 22,
+      "text": "そして みんな口をそろえて言うそうです",
+      "search_text": "そして みんな口をそろえて言うそうです",
+      "start_seconds": 53.96,
+      "end_seconds": 58.02
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0023",
+      "sequence": 23,
+      "text": "お金のためだけに働くのは嫌だ",
+      "search_text": "お金のためだけに働くのは嫌だ",
+      "start_seconds": 58.02,
+      "end_seconds": 60.75
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0024",
+      "sequence": 24,
+      "text": "もっと社会に貢献できていると\n実感できる仕事がしたいと",
+      "search_text": "もっと社会に貢献できていると 実感できる仕事がしたいと",
+      "start_seconds": 60.75,
+      "end_seconds": 65.25
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0025",
+      "sequence": 25,
+      "text": "でも現実問題 生活は大切",
+      "search_text": "でも現実問題 生活は大切",
+      "start_seconds": 65.25,
+      "end_seconds": 68.32
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0026",
+      "sequence": 26,
+      "text": "だから給料は減らせない",
+      "search_text": "だから給料は減らせない",
+      "start_seconds": 68.32,
+      "end_seconds": 70.46
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0027",
+      "sequence": 27,
+      "text": "社会貢献は老後にだってできるし",
+      "search_text": "社会貢献は老後にだってできるし",
+      "start_seconds": 70.46,
+      "end_seconds": 73.32
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0028",
+      "sequence": 28,
+      "text": "稼いだお金で寄付することだってできる",
+      "search_text": "稼いだお金で寄付することだってできる",
+      "start_seconds": 73.32,
+      "end_seconds": 76.58
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0029",
+      "sequence": 29,
+      "text": "だから今はやっぱり",
+      "search_text": "だから今はやっぱり",
+      "start_seconds": 76.58,
+      "end_seconds": 78.08
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0030",
+      "sequence": 30,
+      "text": "一生懸命稼ぐことのほうが大切",
+      "search_text": "一生懸命稼ぐことのほうが大切",
+      "start_seconds": 78.08,
+      "end_seconds": 82.29
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0031",
+      "sequence": 31,
+      "text": "そう分かっちゃいるんだけどやっぱり",
+      "search_text": "そう分かっちゃいるんだけどやっぱり",
+      "start_seconds": 82.29,
+      "end_seconds": 84.8
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0032",
+      "sequence": 32,
+      "text": "なんだかモヤモヤしたものが",
+      "search_text": "なんだかモヤモヤしたものが",
+      "start_seconds": 84.8,
+      "end_seconds": 86.49
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0033",
+      "sequence": 33,
+      "text": "心のどこかに残っちゃってる",
+      "search_text": "心のどこかに残っちゃってる",
+      "start_seconds": 86.49,
+      "end_seconds": 88.89
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0034",
+      "sequence": 34,
+      "text": "そんなことってありませんか",
+      "search_text": "そんなことってありませんか",
+      "start_seconds": 88.89,
+      "end_seconds": 92.11
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0035",
+      "sequence": 35,
+      "text": "ここで皆さんに",
+      "search_text": "ここで皆さんに",
+      "start_seconds": 92.11,
+      "end_seconds": 93.34
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0036",
+      "sequence": 36,
+      "text": "ちょっと質問です",
+      "search_text": "ちょっと質問です",
+      "start_seconds": 93.34,
+      "end_seconds": 95.28
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0037",
+      "sequence": 37,
+      "text": "もしこんな問題が",
+      "search_text": "もしこんな問題が",
+      "start_seconds": 95.28,
+      "end_seconds": 96.729
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0038",
+      "sequence": 38,
+      "text": "皆さんの目の前にあったら",
+      "search_text": "皆さんの目の前にあったら",
+      "start_seconds": 96.729,
+      "end_seconds": 99.07
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0039",
+      "sequence": 39,
+      "text": "皆さんはどうしますか",
+      "search_text": "皆さんはどうしますか",
+      "start_seconds": 99.07,
+      "end_seconds": 102.73
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0040",
+      "sequence": 40,
+      "text": "日本に来た外国人が",
+      "search_text": "日本に来た外国人が",
+      "start_seconds": 102.73,
+      "end_seconds": 104.34
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0041",
+      "sequence": 41,
+      "text": "部屋を貸してもらえない",
+      "search_text": "部屋を貸してもらえない",
+      "start_seconds": 104.34,
+      "end_seconds": 107.23
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0042",
+      "sequence": 42,
+      "text": "外国人は",
+      "search_text": "外国人は",
+      "start_seconds": 107.23,
+      "end_seconds": 108.299
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0043",
+      "sequence": 43,
+      "text": "ルールを守らない うるさい",
+      "search_text": "ルールを守らない うるさい",
+      "start_seconds": 108.299,
+      "end_seconds": 111.8
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0044",
+      "sequence": 44,
+      "text": "保証人が立てられない",
+      "search_text": "保証人が立てられない",
+      "start_seconds": 111.8,
+      "end_seconds": 113.7
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0045",
+      "sequence": 45,
+      "text": "いろんな理由で\n外国人の入居拒否が起こっていました",
+      "search_text": "いろんな理由で 外国人の入居拒否が起こっていました",
+      "start_seconds": 113.7,
+      "end_seconds": 118.14
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0046",
+      "sequence": 46,
+      "text": "さて皆さんなら",
+      "search_text": "さて皆さんなら",
+      "start_seconds": 118.14,
+      "end_seconds": 119.41
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0047",
+      "sequence": 47,
+      "text": "どうしますか",
+      "search_text": "どうしますか",
+      "start_seconds": 119.41,
+      "end_seconds": 122.43
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0048",
+      "sequence": 48,
+      "text": "一緒に不動産屋をまわって\n部屋探しを手伝ってあげますか？",
+      "search_text": "一緒に不動産屋をまわって 部屋探しを手伝ってあげますか?",
+      "start_seconds": 122.43,
+      "end_seconds": 127.43
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0049",
+      "sequence": 49,
+      "text": "人種差別だとどっかに訴えますか？",
+      "search_text": "人種差別だとどっかに訴えますか?",
+      "start_seconds": 127.43,
+      "end_seconds": 131.689
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0050",
+      "sequence": 50,
+      "text": "せっかく日本に来てくれた 外国人が",
+      "search_text": "せっかく日本に来てくれた 外国人が",
+      "start_seconds": 131.689,
+      "end_seconds": 133.919
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0051",
+      "sequence": 51,
+      "text": "部屋を貸してもらえない",
+      "search_text": "部屋を貸してもらえない",
+      "start_seconds": 133.919,
+      "end_seconds": 135.939
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0052",
+      "sequence": 52,
+      "text": "もう最悪ですよね",
+      "search_text": "もう最悪ですよね",
+      "start_seconds": 135.939,
+      "end_seconds": 138.009
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0053",
+      "sequence": 53,
+      "text": "僕は頭に来て",
+      "search_text": "僕は頭に来て",
+      "start_seconds": 138.009,
+      "end_seconds": 139.569
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0054",
+      "sequence": 54,
+      "text": "だったら僕が",
+      "search_text": "だったら僕が",
+      "start_seconds": 139.569,
+      "end_seconds": 140.959
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0055",
+      "sequence": 55,
+      "text": "家賃保証するから",
+      "search_text": "家賃保証するから",
+      "start_seconds": 140.959,
+      "end_seconds": 142.729
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0056",
+      "sequence": 56,
+      "text": "その上で僕が代わりに",
+      "search_text": "その上で僕が代わりに",
+      "start_seconds": 142.729,
+      "end_seconds": 144.469
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0057",
+      "sequence": 57,
+      "text": "大家さんの代わりに僕が",
+      "search_text": "大家さんの代わりに僕が",
+      "start_seconds": 144.469,
+      "end_seconds": 146.15
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0058",
+      "sequence": 58,
+      "text": "外国人の皆さんに\n部屋を貸したら いいですよねと",
+      "search_text": "外国人の皆さんに 部屋を貸したら いいですよねと",
+      "start_seconds": 146.15,
+      "end_seconds": 149.539
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0059",
+      "sequence": 59,
+      "text": "そう大家さんに話をしました",
+      "search_text": "そう大家さんに話をしました",
+      "start_seconds": 149.539,
+      "end_seconds": 152.399
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0060",
+      "sequence": 60,
+      "text": "そして留学生の人たちに",
+      "search_text": "そして留学生の人たちに",
+      "start_seconds": 152.399,
+      "end_seconds": 154.389
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0061",
+      "sequence": 61,
+      "text": "話を聞いてみると",
+      "search_text": "話を聞いてみると",
+      "start_seconds": 154.389,
+      "end_seconds": 155.979
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0062",
+      "sequence": 62,
+      "text": "みんなこう言いました",
+      "search_text": "みんなこう言いました",
+      "start_seconds": 155.979,
+      "end_seconds": 157.829
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0063",
+      "sequence": 63,
+      "text": "「日本人の友達が欲しい」と",
+      "search_text": "「日本人の友達が欲しい」と",
+      "start_seconds": 157.829,
+      "end_seconds": 160.959
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0064",
+      "sequence": 64,
+      "text": "確かにせっかく日本に来て",
+      "search_text": "確かにせっかく日本に来て",
+      "start_seconds": 160.959,
+      "end_seconds": 162.49
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0065",
+      "sequence": 65,
+      "text": "アパートに一人暮らしは",
+      "search_text": "アパートに一人暮らしは",
+      "start_seconds": 162.49,
+      "end_seconds": 163.999
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0066",
+      "sequence": 66,
+      "text": "寂しいですよね",
+      "search_text": "寂しいですよね",
+      "start_seconds": 163.999,
+      "end_seconds": 166.589
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0067",
+      "sequence": 67,
+      "text": "だから僕たちは",
+      "search_text": "だから僕たちは",
+      "start_seconds": 166.589,
+      "end_seconds": 167.909
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0068",
+      "sequence": 68,
+      "text": "日本人と外国人が",
+      "search_text": "日本人と外国人が",
+      "start_seconds": 167.909,
+      "end_seconds": 170.009
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0069",
+      "sequence": 69,
+      "text": "半分半分で",
+      "search_text": "半分半分で",
+      "start_seconds": 170.009,
+      "end_seconds": 171.2
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0070",
+      "sequence": 70,
+      "text": "一緒に暮らす\nシェアハウスを作ることにしました",
+      "search_text": "一緒に暮らす シェアハウスを作ることにしました",
+      "start_seconds": 171.2,
+      "end_seconds": 175.889
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0071",
+      "sequence": 71,
+      "text": "僕らがこの事業を始めた８年前は",
+      "search_text": "僕らがこの事業を始めた8年前は",
+      "start_seconds": 175.889,
+      "end_seconds": 178.299
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0072",
+      "sequence": 72,
+      "text": "シェアハウスという言葉すら\n理解してもらえませんでしたが",
+      "search_text": "シェアハウスという言葉すら 理解してもらえませんでしたが",
+      "start_seconds": 178.299,
+      "end_seconds": 182.129
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0073",
+      "sequence": 73,
+      "text": "今では東京都内に72ハウス",
+      "search_text": "今では東京都内に72ハウス",
+      "start_seconds": 182.129,
+      "end_seconds": 185.149
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0074",
+      "sequence": 74,
+      "text": "大阪と京都",
+      "search_text": "大阪と京都",
+      "start_seconds": 185.149,
+      "end_seconds": 186.939
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0075",
+      "sequence": 75,
+      "text": "そして韓国 台湾を合わせて",
+      "search_text": "そして韓国 台湾を合わせて",
+      "start_seconds": 186.939,
+      "end_seconds": 189.219
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0076",
+      "sequence": 76,
+      "text": "約120ハウスを運営しています",
+      "search_text": "約120ハウスを運営しています",
+      "start_seconds": 189.219,
+      "end_seconds": 192.339
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0077",
+      "sequence": 77,
+      "text": "今まで47カ国",
+      "search_text": "今まで47カ国",
+      "start_seconds": 192.339,
+      "end_seconds": 194.439
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0078",
+      "sequence": 78,
+      "text": "約4000人以上が\nこのシェアハウスに住み",
+      "search_text": "約4000人以上が このシェアハウスに住み",
+      "start_seconds": 194.439,
+      "end_seconds": 197.949
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0079",
+      "sequence": 79,
+      "text": "同じ釜の飯を食い",
+      "search_text": "同じ釜の飯を食い",
+      "start_seconds": 197.949,
+      "end_seconds": 199.859
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0080",
+      "sequence": 80,
+      "text": "一生の友人に出会い",
+      "search_text": "一生の友人に出会い",
+      "start_seconds": 199.859,
+      "end_seconds": 201.759
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0081",
+      "sequence": 81,
+      "text": "今では単なる住居問題を超えた価値を\n生み出しています",
+      "search_text": "今では単なる住居問題を超えた価値を 生み出しています",
+      "start_seconds": 201.759,
+      "end_seconds": 207.239
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0082",
+      "sequence": 82,
+      "text": "次にこんな問題に出会いました",
+      "search_text": "次にこんな問題に出会いました",
+      "start_seconds": 207.259,
+      "end_seconds": 211.469
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0083",
+      "sequence": 83,
+      "text": "ミャンマーの農家さんが",
+      "search_text": "ミャンマーの農家さんが",
+      "start_seconds": 211.469,
+      "end_seconds": 213.609
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0084",
+      "sequence": 84,
+      "text": "生活に苦しんでいる",
+      "search_text": "生活に苦しんでいる",
+      "start_seconds": 213.609,
+      "end_seconds": 216.699
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0085",
+      "sequence": 85,
+      "text": "この村はリンレイ村といって",
+      "search_text": "この村はリンレイ村といって",
+      "start_seconds": 216.699,
+      "end_seconds": 218.879
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0086",
+      "sequence": 86,
+      "text": "約250世帯ほどが暮らす\nミャンマーの小さな村なんですか",
+      "search_text": "約250世帯ほどが暮らす ミャンマーの小さな村なんですか",
+      "start_seconds": 218.879,
+      "end_seconds": 223.47
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0087",
+      "sequence": 87,
+      "text": "農家さんのほとんどが",
+      "search_text": "農家さんのほとんどが",
+      "start_seconds": 223.489,
+      "end_seconds": 225.06
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0088",
+      "sequence": 88,
+      "text": "葉巻たばこの栽培をしてます\n葉巻こういう葉巻たばこですね",
+      "search_text": "葉巻たばこの栽培をしてます 葉巻こういう葉巻たばこですね",
+      "start_seconds": 225.06,
+      "end_seconds": 228.979
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0089",
+      "sequence": 89,
+      "text": "で 葉巻たばこは",
+      "search_text": "で 葉巻たばこは",
+      "start_seconds": 228.979,
+      "end_seconds": 230.389
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0090",
+      "sequence": 90,
+      "text": "葉っぱに穴が空いちゃうと\n商品価値が落ちちゃうので",
+      "search_text": "葉っぱに穴が空いちゃうと 商品価値が落ちちゃうので",
+      "start_seconds": 230.389,
+      "end_seconds": 233.749
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0091",
+      "sequence": 91,
+      "text": "みんな虫が付かないように\n大量の農薬をまくんですね",
+      "search_text": "みんな虫が付かないように 大量の農薬をまくんですね",
+      "start_seconds": 233.749,
+      "end_seconds": 237.839
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0092",
+      "sequence": 92,
+      "text": "だから農薬による健康被害も\nたくさん起きています",
+      "search_text": "だから農薬による健康被害も たくさん起きています",
+      "start_seconds": 237.839,
+      "end_seconds": 241.399
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0093",
+      "sequence": 93,
+      "text": "農薬や肥料といった栽培コストは\nどんどん上がっていくのに",
+      "search_text": "農薬や肥料といった栽培コストは どんどん上がっていくのに",
+      "start_seconds": 241.399,
+      "end_seconds": 245.029
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0094",
+      "sequence": 94,
+      "text": "買い取り金額は下がる一方なんです",
+      "search_text": "買い取り金額は下がる一方なんです",
+      "start_seconds": 245.049,
+      "end_seconds": 248.569
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0095",
+      "sequence": 95,
+      "text": "仲買人からの",
+      "search_text": "仲買人からの",
+      "start_seconds": 248.569,
+      "end_seconds": 250.149
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0096",
+      "sequence": 96,
+      "text": "借金はかさむ一方で",
+      "search_text": "借金はかさむ一方で",
+      "start_seconds": 250.149,
+      "end_seconds": 251.839
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0097",
+      "sequence": 97,
+      "text": "生活は苦しく",
+      "search_text": "生活は苦しく",
+      "start_seconds": 251.839,
+      "end_seconds": 253.709
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0098",
+      "sequence": 98,
+      "text": "タイに出稼ぎに行った15才の息子とは\n連絡が取れない",
+      "search_text": "タイに出稼ぎに行った15才の息子とは 連絡が取れない",
+      "start_seconds": 253.709,
+      "end_seconds": 257.719
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0099",
+      "sequence": 99,
+      "text": "そんな人たちもたくさんいました",
+      "search_text": "そんな人たちもたくさんいました",
+      "start_seconds": 257.719,
+      "end_seconds": 262.069
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0100",
+      "sequence": 100,
+      "text": "村長をはじめ村の人たちはみんな",
+      "search_text": "村長をはじめ村の人たちはみんな",
+      "start_seconds": 262.069,
+      "end_seconds": 264.659
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0101",
+      "sequence": 101,
+      "text": "どうにかこの状況から抜け出したいと",
+      "search_text": "どうにかこの状況から抜け出したいと",
+      "start_seconds": 264.659,
+      "end_seconds": 266.74
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0102",
+      "sequence": 102,
+      "text": "強く願っていました",
+      "search_text": "強く願っていました",
+      "start_seconds": 266.74,
+      "end_seconds": 268.37
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0103",
+      "sequence": 103,
+      "text": "でもどうしたらいいか分からないと",
+      "search_text": "でもどうしたらいいか分からないと",
+      "start_seconds": 268.37,
+      "end_seconds": 271.46
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0104",
+      "sequence": 104,
+      "text": "さてみなさんならどうしますか？",
+      "search_text": "さてみなさんならどうしますか?",
+      "start_seconds": 271.46,
+      "end_seconds": 275.759
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0105",
+      "sequence": 105,
+      "text": "僕達は葉巻たばこの代わりに",
+      "search_text": "僕達は葉巻たばこの代わりに",
+      "start_seconds": 275.759,
+      "end_seconds": 278.069
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0106",
+      "sequence": 106,
+      "text": "ハーブのオーガニック栽培を",
+      "search_text": "ハーブのオーガニック栽培を",
+      "start_seconds": 278.069,
+      "end_seconds": 279.82
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0107",
+      "sequence": 107,
+      "text": "提案しました",
+      "search_text": "提案しました",
+      "start_seconds": 279.82,
+      "end_seconds": 282.069
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0108",
+      "sequence": 108,
+      "text": "仲買人たちとも話をして",
+      "search_text": "仲買人たちとも話をして",
+      "start_seconds": 282.069,
+      "end_seconds": 284.129
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0109",
+      "sequence": 109,
+      "text": "僕らが借金の立て替え払いをする代わりに\nこの村から手を引いてもらいました",
+      "search_text": "僕らが借金の立て替え払いをする代わりに この村から手を引いてもらいました",
+      "start_seconds": 284.129,
+      "end_seconds": 289.329
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0110",
+      "sequence": 110,
+      "text": "村の一角に土地を借りて",
+      "search_text": "村の一角に土地を借りて",
+      "start_seconds": 289.34,
+      "end_seconds": 291.479
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0111",
+      "sequence": 111,
+      "text": "ハーブのテスト栽培をして",
+      "search_text": "ハーブのテスト栽培をして",
+      "start_seconds": 291.479,
+      "end_seconds": 293.33
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0112",
+      "sequence": 112,
+      "text": "どんな品種のハーブが\nどのくらい収穫できるか確認しました",
+      "search_text": "どんな品種のハーブが どのくらい収穫できるか確認しました",
+      "start_seconds": 293.33,
+      "end_seconds": 298.389
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0113",
+      "sequence": 113,
+      "text": "そして有機農法の専門家を採用して\n村の人たちに",
+      "search_text": "そして有機農法の専門家を採用して 村の人たちに",
+      "start_seconds": 298.409,
+      "end_seconds": 302.31
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0114",
+      "sequence": 114,
+      "text": "一からオーガニック栽培のやり方を\n教えてきました",
+      "search_text": "一からオーガニック栽培のやり方を 教えてきました",
+      "start_seconds": 302.31,
+      "end_seconds": 306.83
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0115",
+      "sequence": 115,
+      "text": "ほかにも\n井戸を作ったり",
+      "search_text": "ほかにも 井戸を作ったり",
+      "start_seconds": 306.83,
+      "end_seconds": 308.999
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0116",
+      "sequence": 116,
+      "text": "収穫したハーブを\nドライして",
+      "search_text": "収穫したハーブを ドライして",
+      "start_seconds": 309.009,
+      "end_seconds": 311.2
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0117",
+      "sequence": 117,
+      "text": "カットしたりする工場も作りました",
+      "search_text": "カットしたりする工場も作りました",
+      "start_seconds": 311.2,
+      "end_seconds": 314.7
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0118",
+      "sequence": 118,
+      "text": "でも 問題はここからです",
+      "search_text": "でも 問題はここからです",
+      "start_seconds": 314.71,
+      "end_seconds": 317.949
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0119",
+      "sequence": 119,
+      "text": "農家さんたちが作ってくれたハーブの\n買取保証をするのですが",
+      "search_text": "農家さんたちが作ってくれたハーブの 買取保証をするのですが",
+      "start_seconds": 317.949,
+      "end_seconds": 321.649
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0120",
+      "sequence": 120,
+      "text": "それをどうやって売るか",
+      "search_text": "それをどうやって売るか",
+      "start_seconds": 321.65,
+      "end_seconds": 324.43
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0121",
+      "sequence": 121,
+      "text": "安売りはできません",
+      "search_text": "安売りはできません",
+      "start_seconds": 324.43,
+      "end_seconds": 326.759
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0122",
+      "sequence": 122,
+      "text": "彼らからの買い取り金額が安くなっちゃ\n意味がないですから",
+      "search_text": "彼らからの買い取り金額が安くなっちゃ 意味がないですから",
+      "start_seconds": 326.759,
+      "end_seconds": 331.839
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0123",
+      "sequence": 123,
+      "text": "でもそんなことより一番問題は",
+      "search_text": "でもそんなことより一番問題は",
+      "start_seconds": 331.839,
+      "end_seconds": 334.509
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0124",
+      "sequence": 124,
+      "text": "日本人はハーブティーなんか\n誰も飲んじゃいないってことです",
+      "search_text": "日本人はハーブティーなんか 誰も飲んじゃいないってことです",
+      "start_seconds": 334.509,
+      "end_seconds": 338.679
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0125",
+      "sequence": 125,
+      "text": "みなさんだって",
+      "search_text": "みなさんだって",
+      "start_seconds": 338.71,
+      "end_seconds": 339.849
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0126",
+      "sequence": 126,
+      "text": "コーヒーやお茶は\n毎日飲んでると思うんですけど",
+      "search_text": "コーヒーやお茶は 毎日飲んでると思うんですけど",
+      "start_seconds": 339.849,
+      "end_seconds": 342.669
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0127",
+      "sequence": 127,
+      "text": "ハーブティーなんか\n誰も飲まないですよね",
+      "search_text": "ハーブティーなんか 誰も飲まないですよね",
+      "start_seconds": 342.669,
+      "end_seconds": 346.62
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0128",
+      "sequence": 128,
+      "text": "簡単に言うとマーケットが無い",
+      "search_text": "簡単に言うとマーケットが無い",
+      "start_seconds": 346.62,
+      "end_seconds": 349.069
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0129",
+      "sequence": 129,
+      "text": "さて困ったぞと",
+      "search_text": "さて困ったぞと",
+      "start_seconds": 349.069,
+      "end_seconds": 351.61
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0130",
+      "sequence": 130,
+      "text": "結論から言うと",
+      "search_text": "結論から言うと",
+      "start_seconds": 351.61,
+      "end_seconds": 353.419
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0131",
+      "sequence": 131,
+      "text": "僕らのこのハーブ事業は",
+      "search_text": "僕らのこのハーブ事業は",
+      "start_seconds": 353.419,
+      "end_seconds": 354.919
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0132",
+      "sequence": 132,
+      "text": "2014年 年商8.4億円になりました",
+      "search_text": "2014年 年商8.4億円になりました",
+      "start_seconds": 354.919,
+      "end_seconds": 359.089
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0133",
+      "sequence": 133,
+      "text": "この5年間で88万人の\nお客さんに使ってもらい",
+      "search_text": "この5年間で88万人の お客さんに使ってもらい",
+      "start_seconds": 359.089,
+      "end_seconds": 362.419
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0134",
+      "sequence": 134,
+      "text": "今までは年間30トン",
+      "search_text": "今までは年間30トン",
+      "start_seconds": 362.419,
+      "end_seconds": 364.55
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0135",
+      "sequence": 135,
+      "text": "リンレイ村約160世帯分相当の",
+      "search_text": "リンレイ村約160世帯分相当の",
+      "start_seconds": 364.55,
+      "end_seconds": 367.259
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0136",
+      "sequence": 136,
+      "text": "ハーブを輸入するようになりました",
+      "search_text": "ハーブを輸入するようになりました",
+      "start_seconds": 367.259,
+      "end_seconds": 370.559
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0137",
+      "sequence": 137,
+      "text": "さてどうやってやったのか",
+      "search_text": "さてどうやってやったのか",
+      "start_seconds": 370.559,
+      "end_seconds": 373.3
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0138",
+      "sequence": 138,
+      "text": "僕らは",
+      "search_text": "僕らは",
+      "start_seconds": 373.3,
+      "end_seconds": 375.24
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0139",
+      "sequence": 139,
+      "text": "妊娠中と 授乳中専用の\nハーブティーを作りました",
+      "search_text": "妊娠中と 授乳中専用の ハーブティーを作りました",
+      "start_seconds": 375.24,
+      "end_seconds": 379.4
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0140",
+      "sequence": 140,
+      "text": "この２年間は",
+      "search_text": "この2年間は",
+      "start_seconds": 379.4,
+      "end_seconds": 380.839
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0141",
+      "sequence": 141,
+      "text": "カフェインを控えるのでお茶とかコーヒーは\n飲まなくなるんですね",
+      "search_text": "カフェインを控えるのでお茶とかコーヒーは 飲まなくなるんですね",
+      "start_seconds": 380.839,
+      "end_seconds": 385.249
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0142",
+      "sequence": 142,
+      "text": "そして母乳不足といった\nこの時期ならではの悩みもありました",
+      "search_text": "そして母乳不足といった この時期ならではの悩みもありました",
+      "start_seconds": 385.249,
+      "end_seconds": 390.309
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0143",
+      "sequence": 143,
+      "text": "だから僕たちは日本の助産師さんと",
+      "search_text": "だから僕たちは日本の助産師さんと",
+      "start_seconds": 390.33,
+      "end_seconds": 393.039
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0144",
+      "sequence": 144,
+      "text": "イギリスのメディカルハーバリストに\n協力をお願いして",
+      "search_text": "イギリスのメディカルハーバリストに 協力をお願いして",
+      "start_seconds": 393.039,
+      "end_seconds": 395.889
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0145",
+      "sequence": 145,
+      "text": "そんなママ達のためのハーブティを\n共同開発しました",
+      "search_text": "そんなママ達のためのハーブティを 共同開発しました",
+      "start_seconds": 395.9,
+      "end_seconds": 400.189
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0146",
+      "sequence": 146,
+      "text": "こうやってできた ハーブティーは",
+      "search_text": "こうやってできた ハーブティーは",
+      "start_seconds": 400.189,
+      "end_seconds": 401.889
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0147",
+      "sequence": 147,
+      "text": "妊婦さんや産後ママの間で\n口コミでどんどん広がっていって",
+      "search_text": "妊婦さんや産後ママの間で 口コミでどんどん広がっていって",
+      "start_seconds": 401.889,
+      "end_seconds": 406.02
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0148",
+      "sequence": 148,
+      "text": "今では日本全国の産婦人科病院の\n15%で配られるようになりました",
+      "search_text": "今では日本全国の産婦人科病院の 15%で配られるようになりました",
+      "start_seconds": 406.029,
+      "end_seconds": 411.959
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0149",
+      "sequence": 149,
+      "text": "昨年は楽天のショップオブザイヤーにも\n選ばれました",
+      "search_text": "昨年は楽天のショップオブザイヤーにも 選ばれました",
+      "start_seconds": 411.979,
+      "end_seconds": 415.969
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0150",
+      "sequence": 150,
+      "text": "さて最後の\n問題です",
+      "search_text": "さて最後の 問題です",
+      "start_seconds": 415.969,
+      "end_seconds": 419.05
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0151",
+      "sequence": 151,
+      "text": "アジア最貧国の１つと 呼ばれる\nバングラデシュ",
+      "search_text": "アジア最貧国の1つと 呼ばれる バングラデシュ",
+      "start_seconds": 419.059,
+      "end_seconds": 423.319
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0152",
+      "sequence": 152,
+      "text": "本当に貧しい人が\nたくさんいます",
+      "search_text": "本当に貧しい人が たくさんいます",
+      "start_seconds": 423.339,
+      "end_seconds": 425.999
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0153",
+      "sequence": 153,
+      "text": "彼らの力になりたい",
+      "search_text": "彼らの力になりたい",
+      "start_seconds": 426.02,
+      "end_seconds": 429.069
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0154",
+      "sequence": 154,
+      "text": "でも 日本の約４割ほどの面積に",
+      "search_text": "でも 日本の約4割ほどの面積に",
+      "start_seconds": 429.089,
+      "end_seconds": 431.69
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0155",
+      "sequence": 155,
+      "text": "1億5000万人が暮らすこの国は",
+      "search_text": "1億5000万人が暮らすこの国は",
+      "start_seconds": 431.69,
+      "end_seconds": 434.3
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0156",
+      "sequence": 156,
+      "text": "先ほどのミャンマーとは違い",
+      "search_text": "先ほどのミャンマーとは違い",
+      "start_seconds": 434.3,
+      "end_seconds": 436.3
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0157",
+      "sequence": 157,
+      "text": "十分な土地はありません",
+      "search_text": "十分な土地はありません",
+      "start_seconds": 436.3,
+      "end_seconds": 438.879
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0158",
+      "sequence": 158,
+      "text": "あらゆるところでお米が作られていて",
+      "search_text": "あらゆるところでお米が作られていて",
+      "start_seconds": 438.879,
+      "end_seconds": 441.279
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0159",
+      "sequence": 159,
+      "text": "米の生産量は世界４位です",
+      "search_text": "米の生産量は世界4位です",
+      "start_seconds": 441.279,
+      "end_seconds": 444.759
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0160",
+      "sequence": 160,
+      "text": "それでもお米が足りなくて",
+      "search_text": "それでもお米が足りなくて",
+      "start_seconds": 444.759,
+      "end_seconds": 446.86
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0161",
+      "sequence": 161,
+      "text": "輸入している",
+      "search_text": "輸入している",
+      "start_seconds": 446.86,
+      "end_seconds": 449.129
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0162",
+      "sequence": 162,
+      "text": "そんな中 水田を潰してハーブを作りましょう\nとは言えませんよね",
+      "search_text": "そんな中 水田を潰してハーブを作りましょう とは言えませんよね",
+      "start_seconds": 449.14,
+      "end_seconds": 455.415
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0163",
+      "sequence": 163,
+      "text": "今度は土地がない",
+      "search_text": "今度は土地がない",
+      "start_seconds": 456.629,
+      "end_seconds": 459.119
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0164",
+      "sequence": 164,
+      "text": "さてみなさんならどうしますか？",
+      "search_text": "さてみなさんならどうしますか?",
+      "start_seconds": 459.119,
+      "end_seconds": 463.499
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0165",
+      "sequence": 165,
+      "text": "僕らが注目したのは牛です",
+      "search_text": "僕らが注目したのは牛です",
+      "start_seconds": 463.499,
+      "end_seconds": 467.071
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0166",
+      "sequence": 166,
+      "text": "イスラム教では年に２回\nイードと呼ばれる儀牛祭があって",
+      "search_text": "イスラム教では年に2回 イードと呼ばれる儀牛祭があって",
+      "start_seconds": 468.52,
+      "end_seconds": 472.74
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0167",
+      "sequence": 167,
+      "text": "裕福な家庭では一家に一頭\n牛を捧げるんですね",
+      "search_text": "裕福な家庭では一家に一頭 牛を捧げるんですね",
+      "start_seconds": 472.74,
+      "end_seconds": 476.869
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0168",
+      "sequence": 168,
+      "text": "そして日頃肉を食べられないような\n貧しい人たちにも分け与えるという",
+      "search_text": "そして日頃肉を食べられないような 貧しい人たちにも分け与えるという",
+      "start_seconds": 476.869,
+      "end_seconds": 481.199
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0169",
+      "sequence": 169,
+      "text": "そんな事をやるんですけれども",
+      "search_text": "そんな事をやるんですけれども",
+      "start_seconds": 481.219,
+      "end_seconds": 483.309
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0170",
+      "sequence": 170,
+      "text": "１億５千万人いる国民の約９割が\nイスラム教徒のバングラデシュでは",
+      "search_text": "1億5千万人いる国民の約9割が イスラム教徒のバングラデシュでは",
+      "start_seconds": 483.309,
+      "end_seconds": 488.291
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0171",
+      "sequence": 171,
+      "text": "大勢の牛が捧げられます",
+      "search_text": "大勢の牛が捧げられます",
+      "start_seconds": 488.309,
+      "end_seconds": 491.02
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0172",
+      "sequence": 172,
+      "text": "もちろん食されるわけですけれども",
+      "search_text": "もちろん食されるわけですけれども",
+      "start_seconds": 491.02,
+      "end_seconds": 492.979
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0173",
+      "sequence": 173,
+      "text": "そのあとに残る大量の牛皮",
+      "search_text": "そのあとに残る大量の牛皮",
+      "start_seconds": 492.979,
+      "end_seconds": 496.319
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0174",
+      "sequence": 174,
+      "text": "僕らはそこに注目しました",
+      "search_text": "僕らはそこに注目しました",
+      "start_seconds": 496.319,
+      "end_seconds": 499.159
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0175",
+      "sequence": 175,
+      "text": "このバングラデシュにある資源",
+      "search_text": "このバングラデシュにある資源",
+      "start_seconds": 499.159,
+      "end_seconds": 501.159
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0176",
+      "sequence": 176,
+      "text": "牛皮を使った製品工場を作って",
+      "search_text": "牛皮を使った製品工場を作って",
+      "start_seconds": 501.159,
+      "end_seconds": 504.009
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0177",
+      "sequence": 177,
+      "text": "貧しい人たちの雇用を作ろうと思いました",
+      "search_text": "貧しい人たちの雇用を作ろうと思いました",
+      "start_seconds": 504.009,
+      "end_seconds": 508.919
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0178",
+      "sequence": 178,
+      "text": "日本の革職人さんに",
+      "search_text": "日本の革職人さんに",
+      "start_seconds": 508.939,
+      "end_seconds": 510.629
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0179",
+      "sequence": 179,
+      "text": "技術を教えてもらって",
+      "search_text": "技術を教えてもらって",
+      "start_seconds": 510.629,
+      "end_seconds": 512.21
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0180",
+      "sequence": 180,
+      "text": "始めた自社工場は",
+      "search_text": "始めた自社工場は",
+      "start_seconds": 512.21,
+      "end_seconds": 513.85
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0181",
+      "sequence": 181,
+      "text": "2年間で300名を超える人たちを\n雇用できるようになりました",
+      "search_text": "2年間で300名を超える人たちを 雇用できるようになりました",
+      "start_seconds": 513.85,
+      "end_seconds": 519.788
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0182",
+      "sequence": 182,
+      "text": "今ご紹介したものはすべて",
+      "search_text": "今ご紹介したものはすべて",
+      "start_seconds": 521.65,
+      "end_seconds": 524.49
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0183",
+      "sequence": 183,
+      "text": "僕らの会社でやっている事業の一部です",
+      "search_text": "僕らの会社でやっている事業の一部です",
+      "start_seconds": 524.49,
+      "end_seconds": 527.815
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0184",
+      "sequence": 184,
+      "text": "日本、韓国、台湾",
+      "search_text": "日本、韓国、台湾",
+      "start_seconds": 528.3,
+      "end_seconds": 530.839
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0185",
+      "sequence": 185,
+      "text": "ミャンマー、バングラデシュ",
+      "search_text": "ミャンマー、バングラデシュ",
+      "start_seconds": 530.839,
+      "end_seconds": 532.73
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0186",
+      "sequence": 186,
+      "text": "世界５カ国７拠点で",
+      "search_text": "世界5カ国7拠点で",
+      "start_seconds": 532.73,
+      "end_seconds": 535.17
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0187",
+      "sequence": 187,
+      "text": "約500人が働いています",
+      "search_text": "約500人が働いています",
+      "start_seconds": 535.17,
+      "end_seconds": 538.67
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0188",
+      "sequence": 188,
+      "text": "ボランティアではありません",
+      "search_text": "ボランティアではありません",
+      "start_seconds": 538.67,
+      "end_seconds": 540.59
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0189",
+      "sequence": 189,
+      "text": "みんな仕事として\nこの社会問題に取り組んでいます",
+      "search_text": "みんな仕事として この社会問題に取り組んでいます",
+      "start_seconds": 540.59,
+      "end_seconds": 545.26
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0190",
+      "sequence": 190,
+      "text": "だから稼ぐことと",
+      "search_text": "だから稼ぐことと",
+      "start_seconds": 545.28,
+      "end_seconds": 547.499
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0191",
+      "sequence": 191,
+      "text": "社会貢献は両立できる",
+      "search_text": "社会貢献は両立できる",
+      "start_seconds": 547.499,
+      "end_seconds": 550.27
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0192",
+      "sequence": 192,
+      "text": "そう僕は思っています",
+      "search_text": "そう僕は思っています",
+      "start_seconds": 550.29,
+      "end_seconds": 552.85
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0193",
+      "sequence": 193,
+      "text": "そして今みなさんに聴いていただいて\n分かってもらったように",
+      "search_text": "そして今みなさんに聴いていただいて 分かってもらったように",
+      "start_seconds": 552.85,
+      "end_seconds": 556.07
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0194",
+      "sequence": 194,
+      "text": "特別なことは何もしていません",
+      "search_text": "特別なことは何もしていません",
+      "start_seconds": 556.079,
+      "end_seconds": 559.03
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0195",
+      "sequence": 195,
+      "text": "問題を見つけて解決する という",
+      "search_text": "問題を見つけて解決する という",
+      "start_seconds": 559.03,
+      "end_seconds": 562.02
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0196",
+      "sequence": 196,
+      "text": "どのマーケッターも当たり前にやっていることを",
+      "search_text": "どのマーケッターも当たり前にやっていることを",
+      "start_seconds": 562.02,
+      "end_seconds": 564.71
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0197",
+      "sequence": 197,
+      "text": "僕らは社会問題に対して\nやっているだけなんです",
+      "search_text": "僕らは社会問題に対して やっているだけなんです",
+      "start_seconds": 564.72,
+      "end_seconds": 568.58
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0198",
+      "sequence": 198,
+      "text": "だから正直に言います",
+      "search_text": "だから正直に言います",
+      "start_seconds": 568.58,
+      "end_seconds": 570.33
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0199",
+      "sequence": 199,
+      "text": "このTEDxの登壇\n僕はずっと断っていたんです",
+      "search_text": "このTEDxの登壇 僕はずっと断っていたんです",
+      "start_seconds": 570.33,
+      "end_seconds": 574.68
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0200",
+      "sequence": 200,
+      "text": "人前で話をするような\n特別なことは何もしていないし",
+      "search_text": "人前で話をするような 特別なことは何もしていないし",
+      "start_seconds": 574.68,
+      "end_seconds": 578.37
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0201",
+      "sequence": 201,
+      "text": "まだ何も成し遂げてない分際で",
+      "search_text": "まだ何も成し遂げてない分際で",
+      "start_seconds": 578.37,
+      "end_seconds": 580.66
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0202",
+      "sequence": 202,
+      "text": "人前に出て偉そうに話をするなんて",
+      "search_text": "人前に出て偉そうに話をするなんて",
+      "start_seconds": 580.66,
+      "end_seconds": 583.53
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0203",
+      "sequence": 203,
+      "text": "なんか恥ずかしいじゃないですか",
+      "search_text": "なんか恥ずかしいじゃないですか",
+      "start_seconds": 583.53,
+      "end_seconds": 585.93
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0204",
+      "sequence": 204,
+      "text": "そんな恥さらし嫌だと",
+      "search_text": "そんな恥さらし嫌だと",
+      "start_seconds": 585.93,
+      "end_seconds": 588.95
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0205",
+      "sequence": 205,
+      "text": "でもスタッフの方が",
+      "search_text": "でもスタッフの方が",
+      "start_seconds": 588.95,
+      "end_seconds": 590.69
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0206",
+      "sequence": 206,
+      "text": "どうしても出ろと言うんです",
+      "search_text": "どうしても出ろと言うんです",
+      "start_seconds": 590.69,
+      "end_seconds": 593.82
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0207",
+      "sequence": 207,
+      "text": "困ったもんです しつこいんです",
+      "search_text": "困ったもんです しつこいんです",
+      "start_seconds": 593.82,
+      "end_seconds": 596.04
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0208",
+      "sequence": 208,
+      "text": "（笑）",
+      "search_text": "(笑)",
+      "start_seconds": 596.05,
+      "end_seconds": 598.23
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0209",
+      "sequence": 209,
+      "text": "みんな何のために働くのか",
+      "search_text": "みんな何のために働くのか",
+      "start_seconds": 598.23,
+      "end_seconds": 601.11
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0210",
+      "sequence": 210,
+      "text": "すごくモヤモヤしているから",
+      "search_text": "すごくモヤモヤしているから",
+      "start_seconds": 601.139,
+      "end_seconds": 602.619
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0211",
+      "sequence": 211,
+      "text": "あんたの話を聞かせたいと",
+      "search_text": "あんたの話を聞かせたいと",
+      "start_seconds": 602.619,
+      "end_seconds": 606.35
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0212",
+      "sequence": 212,
+      "text": "でもそんなこと言ったら",
+      "search_text": "でもそんなこと言ったら",
+      "start_seconds": 606.35,
+      "end_seconds": 608.56
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0213",
+      "sequence": 213,
+      "text": "僕だってずっとモヤモヤしてるんですね",
+      "search_text": "僕だってずっとモヤモヤしてるんですね",
+      "start_seconds": 608.56,
+      "end_seconds": 611.74
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0214",
+      "sequence": 214,
+      "text": "でもモヤモヤしてるってことは",
+      "search_text": "でもモヤモヤしてるってことは",
+      "start_seconds": 611.74,
+      "end_seconds": 613.7
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0215",
+      "sequence": 215,
+      "text": "そこから抜け出したいっていう\n証拠じゃないですか",
+      "search_text": "そこから抜け出したいっていう 証拠じゃないですか",
+      "start_seconds": 613.7,
+      "end_seconds": 617.07
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0216",
+      "sequence": 216,
+      "text": "何かやりたいことがあるっていう\nことだと思うんです",
+      "search_text": "何かやりたいことがあるっていう ことだと思うんです",
+      "start_seconds": 617.07,
+      "end_seconds": 620.04
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0217",
+      "sequence": 217,
+      "text": "すごくいいこと",
+      "search_text": "すごくいいこと",
+      "start_seconds": 620.04,
+      "end_seconds": 623.12
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0218",
+      "sequence": 218,
+      "text": "だからそのモヤモヤを\nもっと大切にしないといけない",
+      "search_text": "だからそのモヤモヤを もっと大切にしないといけない",
+      "start_seconds": 623.13,
+      "end_seconds": 626.4
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0219",
+      "sequence": 219,
+      "text": "そしてそのモヤモヤに向かって\n一歩を踏み出さないといけない",
+      "search_text": "そしてそのモヤモヤに向かって 一歩を踏み出さないといけない",
+      "start_seconds": 626.4,
+      "end_seconds": 630.57
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0220",
+      "sequence": 220,
+      "text": "でもそうした瞬間多くの人がガチッと",
+      "search_text": "でもそうした瞬間多くの人がガチッと",
+      "start_seconds": 630.59,
+      "end_seconds": 633.11
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0221",
+      "sequence": 221,
+      "text": "固まっちゃうんです",
+      "search_text": "固まっちゃうんです",
+      "start_seconds": 633.11,
+      "end_seconds": 635.81
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0222",
+      "sequence": 222,
+      "text": "お金を取るか",
+      "search_text": "お金を取るか",
+      "start_seconds": 635.81,
+      "end_seconds": 637.77
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0223",
+      "sequence": 223,
+      "text": "社会貢献を取るか",
+      "search_text": "社会貢献を取るか",
+      "start_seconds": 637.77,
+      "end_seconds": 640.53
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0224",
+      "sequence": 224,
+      "text": "やりたいことを取るか",
+      "search_text": "やりたいことを取るか",
+      "start_seconds": 640.53,
+      "end_seconds": 642.76
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0225",
+      "sequence": 225,
+      "text": "家族を取るか",
+      "search_text": "家族を取るか",
+      "start_seconds": 642.76,
+      "end_seconds": 644.46
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0226",
+      "sequence": 226,
+      "text": "何を選択するかで悩みだす",
+      "search_text": "何を選択するかで悩みだす",
+      "start_seconds": 644.46,
+      "end_seconds": 647.58
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0227",
+      "sequence": 227,
+      "text": "そして何も選択せずに終わる",
+      "search_text": "そして何も選択せずに終わる",
+      "start_seconds": 647.59,
+      "end_seconds": 649.9
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0228",
+      "sequence": 228,
+      "text": "そんな人をたくさん見ました\n見てきました",
+      "search_text": "そんな人をたくさん見ました 見てきました",
+      "start_seconds": 649.9,
+      "end_seconds": 653.46
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0229",
+      "sequence": 229,
+      "text": "でも全部やったらいいじゃないですか",
+      "search_text": "でも全部やったらいいじゃないですか",
+      "start_seconds": 653.46,
+      "end_seconds": 657.02
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0230",
+      "sequence": 230,
+      "text": "「何かを選んで\n何かをあきらめなければいけない」",
+      "search_text": "「何かを選んで 何かをあきらめなければいけない」",
+      "start_seconds": 657.02,
+      "end_seconds": 660.24
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0231",
+      "sequence": 231,
+      "text": "そんなこと誰が言ったんですか",
+      "search_text": "そんなこと誰が言ったんですか",
+      "start_seconds": 660.24,
+      "end_seconds": 663.15
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0232",
+      "sequence": 232,
+      "text": "僕は全部できると思っています",
+      "search_text": "僕は全部できると思っています",
+      "start_seconds": 663.15,
+      "end_seconds": 665.65
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0233",
+      "sequence": 233,
+      "text": "だって全部やりたいじゃないですか",
+      "search_text": "だって全部やりたいじゃないですか",
+      "start_seconds": 665.65,
+      "end_seconds": 668.78
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0234",
+      "sequence": 234,
+      "text": "こんなこと言うと精神論みたいですが",
+      "search_text": "こんなこと言うと精神論みたいですが",
+      "start_seconds": 668.78,
+      "end_seconds": 670.94
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0235",
+      "sequence": 235,
+      "text": "これは精神論ではなくて事実なんです",
+      "search_text": "これは精神論ではなくて事実なんです",
+      "start_seconds": 670.94,
+      "end_seconds": 674.64
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0236",
+      "sequence": 236,
+      "text": "全部やりたいという自分の事実",
+      "search_text": "全部やりたいという自分の事実",
+      "start_seconds": 674.64,
+      "end_seconds": 677.54
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0237",
+      "sequence": 237,
+      "text": "ここから目をそむけちゃいけない",
+      "search_text": "ここから目をそむけちゃいけない",
+      "start_seconds": 677.54,
+      "end_seconds": 680.66
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0238",
+      "sequence": 238,
+      "text": "あとはどうやったらできるかだけを\n考えるんです",
+      "search_text": "あとはどうやったらできるかだけを 考えるんです",
+      "start_seconds": 680.66,
+      "end_seconds": 684.95
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0239",
+      "sequence": 239,
+      "text": "すぐに「難しい」と言うのは無しにしましょう",
+      "search_text": "すぐに「難しい」と言うのは無しにしましょう",
+      "start_seconds": 684.95,
+      "end_seconds": 688.02
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0240",
+      "sequence": 240,
+      "text": "「一般的には」とか",
+      "search_text": "「一般的には」とか",
+      "start_seconds": 688.02,
+      "end_seconds": 689.89
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0241",
+      "sequence": 241,
+      "text": "「普通は」とか",
+      "search_text": "「普通は」とか",
+      "start_seconds": 689.89,
+      "end_seconds": 691.32
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0242",
+      "sequence": 242,
+      "text": "言うのもやめましょう",
+      "search_text": "言うのもやめましょう",
+      "start_seconds": 691.32,
+      "end_seconds": 693.58
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0243",
+      "sequence": 243,
+      "text": "それらは全部やらないための\n言い訳探しにすぎないからです",
+      "search_text": "それらは全部やらないための 言い訳探しにすぎないからです",
+      "start_seconds": 693.58,
+      "end_seconds": 698.21
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0244",
+      "sequence": 244,
+      "text": "変な枠に当てはめて考えるのも\nやめましょう",
+      "search_text": "変な枠に当てはめて考えるのも やめましょう",
+      "start_seconds": 698.22,
+      "end_seconds": 701.91
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0245",
+      "sequence": 245,
+      "text": "「ビジネスは利潤を追求するものだ」",
+      "search_text": "「ビジネスは利潤を追求するものだ」",
+      "start_seconds": 701.91,
+      "end_seconds": 704.17
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0246",
+      "sequence": 246,
+      "text": "「社会貢献は儲からない」",
+      "search_text": "「社会貢献は儲からない」",
+      "start_seconds": 704.17,
+      "end_seconds": 705.98
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0247",
+      "sequence": 247,
+      "text": "「家族を取るか 仕事を取るか」",
+      "search_text": "「家族を取るか 仕事を取るか」",
+      "start_seconds": 705.98,
+      "end_seconds": 709.18
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0248",
+      "sequence": 248,
+      "text": "でもそれって本当ですか",
+      "search_text": "でもそれって本当ですか",
+      "start_seconds": 709.18,
+      "end_seconds": 712.37
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0249",
+      "sequence": 249,
+      "text": "今 話をしたように",
+      "search_text": "今 話をしたように",
+      "start_seconds": 712.37,
+      "end_seconds": 713.73
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0250",
+      "sequence": 250,
+      "text": "ビジネスと社会貢献の\n両立だってできるんです",
+      "search_text": "ビジネスと社会貢献の 両立だってできるんです",
+      "start_seconds": 713.73,
+      "end_seconds": 717.23
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0251",
+      "sequence": 251,
+      "text": "僕バリバリ働いていますけども",
+      "search_text": "僕バリバリ働いていますけども",
+      "start_seconds": 717.23,
+      "end_seconds": 719.36
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0252",
+      "sequence": 252,
+      "text": "朝も夜も一緒に家族とご飯 食べますよ",
+      "search_text": "朝も夜も一緒に家族とご飯 食べますよ",
+      "start_seconds": 719.36,
+      "end_seconds": 723.48
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0253",
+      "sequence": 253,
+      "text": "家族第一ですけど仕事も第一です",
+      "search_text": "家族第一ですけど仕事も第一です",
+      "start_seconds": 723.48,
+      "end_seconds": 727.27
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0254",
+      "sequence": 254,
+      "text": "自分の人生なんですから",
+      "search_text": "自分の人生なんですから",
+      "start_seconds": 727.27,
+      "end_seconds": 729.42
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0255",
+      "sequence": 255,
+      "text": "どっかの評論家みたいに",
+      "search_text": "どっかの評論家みたいに",
+      "start_seconds": 729.42,
+      "end_seconds": 730.99
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0256",
+      "sequence": 256,
+      "text": "つまんない枠に当てはめて",
+      "search_text": "つまんない枠に当てはめて",
+      "start_seconds": 730.99,
+      "end_seconds": 732.8
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0257",
+      "sequence": 257,
+      "text": "話をそらすのはもうやめましょう",
+      "search_text": "話をそらすのはもうやめましょう",
+      "start_seconds": 732.8,
+      "end_seconds": 737.92
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0258",
+      "sequence": 258,
+      "text": "自分が本当にやりたいところに向かって",
+      "search_text": "自分が本当にやりたいところに向かって",
+      "start_seconds": 737.92,
+      "end_seconds": 740.88
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0259",
+      "sequence": 259,
+      "text": "進んでいきましょう",
+      "search_text": "進んでいきましょう",
+      "start_seconds": 740.88,
+      "end_seconds": 743.43
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0260",
+      "sequence": 260,
+      "text": "でもそんなこと言うと",
+      "search_text": "でもそんなこと言うと",
+      "start_seconds": 743.43,
+      "end_seconds": 745.19
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0261",
+      "sequence": 261,
+      "text": "「そんな現実甘くないって」と",
+      "search_text": "「そんな現実甘くないって」と",
+      "start_seconds": 745.19,
+      "end_seconds": 748.23
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0262",
+      "sequence": 262,
+      "text": "思うかもしれません",
+      "search_text": "思うかもしれません",
+      "start_seconds": 748.23,
+      "end_seconds": 750.31
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0263",
+      "sequence": 263,
+      "text": "それあんたはできるかもしれんけど",
+      "search_text": "それあんたはできるかもしれんけど",
+      "start_seconds": 750.31,
+      "end_seconds": 752.67
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0264",
+      "sequence": 264,
+      "text": "やっぱり理想論やね と",
+      "search_text": "やっぱり理想論やね と",
+      "start_seconds": 752.67,
+      "end_seconds": 755.73
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0265",
+      "sequence": 265,
+      "text": "確かに簡単なことではないのかもしれません",
+      "search_text": "確かに簡単なことではないのかもしれません",
+      "start_seconds": 755.73,
+      "end_seconds": 759.82
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0266",
+      "sequence": 266,
+      "text": "でも ここにいる誰も否定できない事実が\n１つだけあります",
+      "search_text": "でも ここにいる誰も否定できない事実が 1つだけあります",
+      "start_seconds": 759.83,
+      "end_seconds": 765.21
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0267",
+      "sequence": 267,
+      "text": "それは 僕らは毎日\n刻一刻と",
+      "search_text": "それは 僕らは毎日 刻一刻と",
+      "start_seconds": 765.24,
+      "end_seconds": 768.69
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0268",
+      "sequence": 268,
+      "text": "死に向かって近づいて行っているという\n事実です",
+      "search_text": "死に向かって近づいて行っているという 事実です",
+      "start_seconds": 768.71,
+      "end_seconds": 773.21
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0269",
+      "sequence": 269,
+      "text": "僕が今ここで話している10分という時間は",
+      "search_text": "僕が今ここで話している10分という時間は",
+      "start_seconds": 773.21,
+      "end_seconds": 775.91
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0270",
+      "sequence": 270,
+      "text": "間違いなく死に向かって近付いた\n10分なんです",
+      "search_text": "間違いなく死に向かって近付いた 10分なんです",
+      "start_seconds": 775.91,
+      "end_seconds": 779.88
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0271",
+      "sequence": 271,
+      "text": "だから僕は",
+      "search_text": "だから僕は",
+      "start_seconds": 779.88,
+      "end_seconds": 781.48
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0272",
+      "sequence": 272,
+      "text": "心の中のモヤモヤを\nもっと大切にした方がいいと",
+      "search_text": "心の中のモヤモヤを もっと大切にした方がいいと",
+      "start_seconds": 781.48,
+      "end_seconds": 785.04
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0273",
+      "sequence": 273,
+      "text": "本当に思うんです",
+      "search_text": "本当に思うんです",
+      "start_seconds": 785.05,
+      "end_seconds": 788.28
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0274",
+      "sequence": 274,
+      "text": "だって モヤモヤを残したまま",
+      "search_text": "だって モヤモヤを残したまま",
+      "start_seconds": 788.3,
+      "end_seconds": 790.31
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0275",
+      "sequence": 275,
+      "text": "後悔しながら死ぬのは嫌じゃないですか",
+      "search_text": "後悔しながら死ぬのは嫌じゃないですか",
+      "start_seconds": 790.31,
+      "end_seconds": 794.29
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0276",
+      "sequence": 276,
+      "text": "僕は 「田口が生まれてきたから \nこの世の中少し良くなったね」",
+      "search_text": "僕は 「田口が生まれてきたから この世の中少し良くなったね」",
+      "start_seconds": 794.31,
+      "end_seconds": 798.39
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0277",
+      "sequence": 277,
+      "text": "って言われて死にたいと思って います",
+      "search_text": "って言われて死にたいと思って います",
+      "start_seconds": 798.4,
+      "end_seconds": 801.27
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0278",
+      "sequence": 278,
+      "text": "だからこんなもんじゃ終われない",
+      "search_text": "だからこんなもんじゃ終われない",
+      "start_seconds": 801.27,
+      "end_seconds": 803.43
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0279",
+      "sequence": 279,
+      "text": "多くの人を助けたいと",
+      "search_text": "多くの人を助けたいと",
+      "start_seconds": 803.43,
+      "end_seconds": 805.52
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0280",
+      "sequence": 280,
+      "text": "多くの社会問題に貢献したいと",
+      "search_text": "多くの社会問題に貢献したいと",
+      "start_seconds": 805.52,
+      "end_seconds": 807.85
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0281",
+      "sequence": 281,
+      "text": "思っています",
+      "search_text": "思っています",
+      "start_seconds": 807.85,
+      "end_seconds": 810.44
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0282",
+      "sequence": 282,
+      "text": "だからチマチマやってちゃいけない",
+      "search_text": "だからチマチマやってちゃいけない",
+      "start_seconds": 810.44,
+      "end_seconds": 812.67
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0283",
+      "sequence": 283,
+      "text": "最低でも１兆円ぐらいの規模で\nやらないといけないと",
+      "search_text": "最低でも1兆円ぐらいの規模で やらないといけないと",
+      "start_seconds": 812.67,
+      "end_seconds": 815.06
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0284",
+      "sequence": 284,
+      "text": "本当に思ってます",
+      "search_text": "本当に思ってます",
+      "start_seconds": 815.06,
+      "end_seconds": 817.74
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0285",
+      "sequence": 285,
+      "text": "だからどうしたらそれができるか\nすごくモヤモヤしてます",
+      "search_text": "だからどうしたらそれができるか すごくモヤモヤしてます",
+      "start_seconds": 817.74,
+      "end_seconds": 823.37
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0286",
+      "sequence": 286,
+      "text": "僕という枠組みを超えないとダメだと",
+      "search_text": "僕という枠組みを超えないとダメだと",
+      "start_seconds": 823.4,
+      "end_seconds": 825.87
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0287",
+      "sequence": 287,
+      "text": "このままのスピードじゃダメだと思いました",
+      "search_text": "このままのスピードじゃダメだと思いました",
+      "start_seconds": 825.87,
+      "end_seconds": 828.71
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0288",
+      "sequence": 288,
+      "text": "だから会社のあり方も変えました",
+      "search_text": "だから会社のあり方も変えました",
+      "start_seconds": 828.71,
+      "end_seconds": 831.45
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0289",
+      "sequence": 289,
+      "text": "今ではこの会社には\nたくさんの社長たちがいます",
+      "search_text": "今ではこの会社には たくさんの社長たちがいます",
+      "start_seconds": 831.45,
+      "end_seconds": 835.36
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0290",
+      "sequence": 290,
+      "text": "みんな「自分はこんな社会問題を解決したい」",
+      "search_text": "みんな「自分はこんな社会問題を解決したい」",
+      "start_seconds": 835.36,
+      "end_seconds": 838.49
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0291",
+      "sequence": 291,
+      "text": "という夢を持ってきて",
+      "search_text": "という夢を持ってきて",
+      "start_seconds": 838.5,
+      "end_seconds": 840.02
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0292",
+      "sequence": 292,
+      "text": "この会社を利用してその夢を実現する",
+      "search_text": "この会社を利用してその夢を実現する",
+      "start_seconds": 840.02,
+      "end_seconds": 843.51
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0293",
+      "sequence": 293,
+      "text": "そんな社会起業家の\nプラットフォームのような",
+      "search_text": "そんな社会起業家の プラットフォームのような",
+      "start_seconds": 843.51,
+      "end_seconds": 845.53
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0294",
+      "sequence": 294,
+      "text": "会社に変えました",
+      "search_text": "会社に変えました",
+      "start_seconds": 845.53,
+      "end_seconds": 847.64
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0295",
+      "sequence": 295,
+      "text": "だから僕はたくさんいる社長の\n一人になりました",
+      "search_text": "だから僕はたくさんいる社長の 一人になりました",
+      "start_seconds": 847.64,
+      "end_seconds": 852.11
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0296",
+      "sequence": 296,
+      "text": "そうやって僕たちは今\n少しずつ大きなインパクトを生み始めました",
+      "search_text": "そうやって僕たちは今 少しずつ大きなインパクトを生み始めました",
+      "start_seconds": 852.11,
+      "end_seconds": 858.28
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0297",
+      "sequence": 297,
+      "text": "世界の人たちを助けたいという\n僕のビジョンは",
+      "search_text": "世界の人たちを助けたいという 僕のビジョンは",
+      "start_seconds": 858.3,
+      "end_seconds": 863.34
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0298",
+      "sequence": 298,
+      "text": "僕という枠組みを",
+      "search_text": "僕という枠組みを",
+      "start_seconds": 863.36,
+      "end_seconds": 865.11
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0299",
+      "sequence": 299,
+      "text": "取り払った瞬間\n一気に現実味を帯び始めました",
+      "search_text": "取り払った瞬間 一気に現実味を帯び始めました",
+      "start_seconds": 865.11,
+      "end_seconds": 869.55
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0300",
+      "sequence": 300,
+      "text": "だから形なんてどうだっていいんです",
+      "search_text": "だから形なんてどうだっていいんです",
+      "start_seconds": 869.55,
+      "end_seconds": 873.17
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0301",
+      "sequence": 301,
+      "text": "皆さんも変な枠組みに当てはめて\nやらない言い訳をするのは",
+      "search_text": "皆さんも変な枠組みに当てはめて やらない言い訳をするのは",
+      "start_seconds": 873.17,
+      "end_seconds": 877.21
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0302",
+      "sequence": 302,
+      "text": "やめましょう",
+      "search_text": "やめましょう",
+      "start_seconds": 877.21,
+      "end_seconds": 879.11
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0303",
+      "sequence": 303,
+      "text": "「難しい」と「できない」は\n違うんです",
+      "search_text": "「難しい」と「できない」は 違うんです",
+      "start_seconds": 879.13,
+      "end_seconds": 883.4
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0304",
+      "sequence": 304,
+      "text": "難しくてもできなくはないんです",
+      "search_text": "難しくてもできなくはないんです",
+      "start_seconds": 883.43,
+      "end_seconds": 886.85
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0305",
+      "sequence": 305,
+      "text": "だから心の中のモヤモヤに向かって",
+      "search_text": "だから心の中のモヤモヤに向かって",
+      "start_seconds": 886.85,
+      "end_seconds": 890.34
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0306",
+      "sequence": 306,
+      "text": "一歩踏み出していきましょう",
+      "search_text": "一歩踏み出していきましょう",
+      "start_seconds": 890.34,
+      "end_seconds": 892.33
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0307",
+      "sequence": 307,
+      "text": "そして もし選択に迷ったら",
+      "search_text": "そして もし選択に迷ったら",
+      "start_seconds": 892.35,
+      "end_seconds": 894.91
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0308",
+      "sequence": 308,
+      "text": "よかったらこの言葉を思い出して下さい",
+      "search_text": "よかったらこの言葉を思い出して下さい",
+      "start_seconds": 894.91,
+      "end_seconds": 899.33
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0309",
+      "sequence": 309,
+      "text": "「人生の価値は\n何を得るかではなく何を残すかにある」",
+      "search_text": "「人生の価値は 何を得るかではなく何を残すかにある」",
+      "start_seconds": 899.33,
+      "end_seconds": 905.316
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0310",
+      "sequence": 310,
+      "text": "これは僕のモットーです",
+      "search_text": "これは僕のモットーです",
+      "start_seconds": 905.45,
+      "end_seconds": 907.85
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0311",
+      "sequence": 311,
+      "text": "何でもかんでも得ようとするから\n選択がややこしくなるんだと思います",
+      "search_text": "何でもかんでも得ようとするから 選択がややこしくなるんだと思います",
+      "start_seconds": 907.85,
+      "end_seconds": 913.38
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0312",
+      "sequence": 312,
+      "text": "でも人生は\n何を得るかではないと思います",
+      "search_text": "でも人生は 何を得るかではないと思います",
+      "start_seconds": 913.39,
+      "end_seconds": 917.57
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0313",
+      "sequence": 313,
+      "text": "どうせ死んだら何も持っていけないんです",
+      "search_text": "どうせ死んだら何も持っていけないんです",
+      "start_seconds": 917.57,
+      "end_seconds": 920.64
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0314",
+      "sequence": 314,
+      "text": "でも残してはいける",
+      "search_text": "でも残してはいける",
+      "start_seconds": 920.66,
+      "end_seconds": 922.9
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0315",
+      "sequence": 315,
+      "text": "だから何を残すかが",
+      "search_text": "だから何を残すかが",
+      "start_seconds": 922.9,
+      "end_seconds": 924.46
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0316",
+      "sequence": 316,
+      "text": "人生の本当の価値だと思うんです",
+      "search_text": "人生の本当の価値だと思うんです",
+      "start_seconds": 924.46,
+      "end_seconds": 928.29
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0317",
+      "sequence": 317,
+      "text": "こうやって考えると",
+      "search_text": "こうやって考えると",
+      "start_seconds": 928.29,
+      "end_seconds": 929.77
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0318",
+      "sequence": 318,
+      "text": "シンプルに\n一歩踏み出せるんじゃないかなと思います",
+      "search_text": "シンプルに 一歩踏み出せるんじゃないかなと思います",
+      "start_seconds": 929.77,
+      "end_seconds": 934.11
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0319",
+      "sequence": 319,
+      "text": "心の中にあるモヤモヤをお互い大切に",
+      "search_text": "心の中にあるモヤモヤをお互い大切に",
+      "start_seconds": 934.11,
+      "end_seconds": 936.83
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0320",
+      "sequence": 320,
+      "text": "これからも頑張っていきましょう",
+      "search_text": "これからも頑張っていきましょう",
+      "start_seconds": 936.84,
+      "end_seconds": 939.17
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0321",
+      "sequence": 321,
+      "text": "そして私たち一人ひとりが素敵な \n何かを残せるように頑張りましょう",
+      "search_text": "そして私たち一人ひとりが素敵な 何かを残せるように頑張りましょう",
+      "start_seconds": 939.18,
+      "end_seconds": 945.27
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0322",
+      "sequence": 322,
+      "text": "私たち一人一人が",
+      "search_text": "私たち一人一人が",
+      "start_seconds": 945.29,
+      "end_seconds": 947.14
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0323",
+      "sequence": 323,
+      "text": "何かを一つずつ遺していければ",
+      "search_text": "何かを一つずつ遺していければ",
+      "start_seconds": 947.14,
+      "end_seconds": 949.66
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0324",
+      "sequence": 324,
+      "text": "この社会はどんどん良くなっていきます",
+      "search_text": "この社会はどんどん良くなっていきます",
+      "start_seconds": 949.66,
+      "end_seconds": 953.02
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0325",
+      "sequence": 325,
+      "text": "みんなでそんな素敵な社会を\n作っていきましょう",
+      "search_text": "みんなでそんな素敵な社会を 作っていきましょう",
+      "start_seconds": 953.02,
+      "end_seconds": 956.75
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0326",
+      "sequence": 326,
+      "text": "ありがとうございました",
+      "search_text": "ありがとうございました",
+      "start_seconds": 956.75,
+      "end_seconds": 958.61
+    },
+    {
+      "id": "cjtmDEG-B7U-ja-0327",
+      "sequence": 327,
+      "text": "（拍手）",
+      "search_text": "(拍手)",
+      "start_seconds": 958.63,
+      "end_seconds": 960.84
+    }
+  ]
+}

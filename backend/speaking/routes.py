@@ -69,6 +69,16 @@ def saved_session(session_id):
     return jsonify(session_detail(g.user.id, session_id))
 
 
+@bp.delete("/sessions/<session_id>")
+@require_auth
+def delete_saved_session(session_id):
+    from .deletion import delete_session
+    if request.args or request.get_data():
+        from api_errors import ApiError
+        raise ApiError("Yêu cầu xóa hội thoại không cần nội dung bổ sung.")
+    return jsonify(delete_session(g.user.id, session_id))
+
+
 @bp.post("/sessions/<session_id>/live-token")
 @require_auth
 def provision_live(session_id):
@@ -81,3 +91,63 @@ def provision_live(session_id):
 def persist_live_turn(session_id):
     from .live import save_live_turn
     return jsonify(save_live_turn(g.user.id, session_id, body()))
+
+
+@bp.post("/sessions/<session_id>/messages/<message_id>/audio-upload")
+@require_auth
+def audio_upload(session_id, message_id):
+    from .audio import prepare_upload
+    return jsonify(prepare_upload(g.user.id, session_id, message_id, body()))
+
+
+@bp.post("/sessions/<session_id>/audio/<asset_id>/complete")
+@require_auth
+def audio_complete(session_id, asset_id):
+    from .audio import complete_upload
+    return jsonify(complete_upload(g.user.id, session_id, asset_id))
+
+
+@bp.get("/sessions/<session_id>/audio/<asset_id>/playback")
+@require_auth
+def audio_playback(session_id, asset_id):
+    from .audio import playback
+    return jsonify(playback(g.user.id, session_id, asset_id))
+
+
+@bp.post("/sessions/<session_id>/finish")
+@require_auth
+def finish(session_id):
+    from .evaluation import finish_session
+    from api_errors import ApiError
+    if body() != {}:
+        raise ApiError("Yêu cầu kết thúc phiên không cần nội dung bổ sung.")
+    return jsonify(finish_session(g.user.id, session_id))
+
+
+@bp.post("/sessions/<session_id>/messages/<message_id>/feedback")
+@require_auth
+def message_feedback(session_id, message_id):
+    from .message_feedback import evaluate_message
+    from api_errors import ApiError
+    if body() != {}:
+        raise ApiError("Nhận xét chỉ sử dụng câu đã lưu trên máy chủ.")
+    result = evaluate_message(g.user.id, session_id, message_id)
+    return jsonify(result), 202 if result["status"] == "processing" else 200
+
+
+@bp.get("/sessions/<session_id>/evaluation")
+@require_auth
+def evaluation_result(session_id):
+    from .evaluation import get_evaluation
+    return jsonify(get_evaluation(g.user.id, session_id))
+
+
+@bp.post("/sessions/<session_id>/evaluation")
+@require_auth
+def evaluation_request(session_id):
+    from .evaluation import evaluate_session
+    from api_errors import ApiError
+    if body() != {}:
+        raise ApiError("Điểm và nhận xét được tạo từ transcript đã lưu trên máy chủ.")
+    result = evaluate_session(g.user.id, session_id)
+    return jsonify(result), 202 if result["status"] == "processing" else 200

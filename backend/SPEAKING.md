@@ -272,7 +272,8 @@ của lượt đó và kết nối lại theo lịch sử hiện tại.
 
 Transcript do client báo lại, không phải bằng chứng xác thực độc lập của
 Gemini; không dùng dữ liệu này để chấm điểm đáng tin cậy hoặc quyết định quyền
-truy cập. Audio chỉ truyền để hội thoại, chưa upload/lưu file (UC-S10).
+truy cập. Phiên bật `audio_storage_enabled` lưu audio từng tin nhắn qua
+S3-compatible storage; xem phần nghe lại bên dưới.
 Mất kết nối hoặc đóng app trước khi nhận đủ transcript có thể mất lượt đang
 nói; các lượt đã lưu vẫn có trong lịch sử.
 
@@ -297,8 +298,9 @@ thẻ **Luyện tập → Nói** hoặc ô kỹ năng **Nói** trên trang chủ
 
 - Vào Nói mở lịch sử; “Cuộc trò chuyện mới” mở popup chọn ngữ cảnh theo design.md.
 - Chọn tình huống/vai rồi bắt đầu phiên đã lưu ở backend; giữ nguyên bộ lọc khi đóng popup.
-- `ConversationScreen` hiển thị Aoi 3D cố định phía trên và chat cuộn phía dưới.
-  Nút tròn “!” mở nhiệm vụ/vai AI trong popup; có thể
+- `ConversationScreen` hiển thị Aoi 3D phía trên và chat cuộn phía dưới.
+  Nút icon mắt cạnh toggle mic/nhập ẩn/hiện Aoi để mở rộng chat; nút Kết thúc ở góc trên bên phải.
+  Bóng đèn trong toolbar mở nhiệm vụ/vai AI trong popup; có thể
   xoay nhân vật bằng kéo và phóng to/thu nhỏ bằng hai ngón tay.
 - Mặc định Nói với mic lớn ở giữa; chọn Nhắn tin mới hiện ô text/nút gửi.
   Chuyển mode giữ draft và không kết nối lại. Aoi cử động
@@ -332,6 +334,58 @@ npm test -- --runInBand --watchman=false
 
 ## Lịch sử hội thoại
 
+### Audio và nghe lại
+
+Màn chọn tình huống có tùy chọn **Lưu âm thanh để nghe lại**, mặc định bật;
+người dùng có thể bỏ chọn trước khi bắt đầu. Backend vẫn mặc định `false`
+khi client không gửi `audio_storage_enabled`. Không upload audio cho phiên
+chưa bật tùy chọn này.
+
+Audio người dùng mới là WAV PCM16 mono 44,1/48 kHz; audio Aoi là 24 kHz.
+Tiếp tục hỗ trợ bản thu người dùng 16 kHz từ client cũ. Micro callback dùng
+tần số 44,1/48 kHz theo thiết bị; lưu PCM trước khi lọc và resample về 16 kHz
+để gửi Gemini. Bộ lọc giữ trạng thái qua callback để tránh alias và mất frame
+ở tần số 44,1 kHz. iOS dùng mode `default` với category `playAndRecord`.
+Mỗi file tối đa 3 phút. File nằm trong S3/RustFS, PostgreSQL chỉ lưu metadata
+và `storage_key`. Cấu hình và chuyển sang AWS xem [README](../README.md).
+
+- `POST /api/speaking/sessions/<session_id>/messages/<message_id>/audio-upload`:
+  metadata nhận thêm `sample_rate` (người dùng: 16000/44100/48000, Aoi: 24000).
+  Client cũ không gửi trường này mặc định 16000 cho người dùng, 24000 cho Aoi.
+  Ví dụ bản thu người dùng: `{ "size_bytes": 96044, "duration_ms": 1000, "sample_rate": 48000 }`, nhận `asset`,
+  `upload_url` và `headers`. Tin nhắn phải đã lưu thành công, thuộc phiên
+  active của tài khoản. UUID asset/key ổn định theo tin nhắn để thử lại không
+  tạo bản thu trùng. Asset đã ready trả `upload_url: null`.
+- Frontend PUT file trực tiếp vào URL ký sẵn, có thời hạn 15 phút. Không
+  gửi access token tài khoản hoặc AWS credentials tới frontend storage.
+- `POST /api/speaking/sessions/<session_id>/audio/<asset_id>/complete`:
+  backend kiểm tra dung lượng, MIME và WAV header qua S3 trước khi đổi
+  trạng thái sang ready. Có thể gọi lại sau khi mất phản hồi.
+- `GET /api/speaking/sessions/<session_id>/audio/<asset_id>/playback`:
+  chỉ chủ sở hữu đọc được asset ready; trả URL GET có thời hạn 5 phút.
+  Phiên completed/paused vẫn nghe lại được.
+- Transcript trả thêm `audio: null | { id, mime_type, size_bytes, duration_ms }`
+  cho mỗi tin nhắn. Không trả storage key hoặc URL hết hạn trong transcript.
+
+Icon loa nhỏ nằm cạnh và ngoài bong bóng tin nhắn có audio, cùng hàng, không hiện số giây,
+dùng chung một player
+cho chat và popup transcript. Bấm lại để dừng; dừng khi app chuyển nền hoặc
+rời màn hình. Có thể nghe bản thu đã lưu khi Gemini Live đang lỗi. Khi Live
+đang thu/phát/phản hồi thì khóa replay; khi replay đang chạy thì khóa mic/gửi
+tin nhắn để tránh âm thanh chồng nhau.
+
+Player tăng âm lượng bản thu micro nhỏ khi nghe lại (bao gồm file đã lưu),
+nhắm RMS -20 dBFS, giới hạn gain 20 lần và peak 0.95. Gain cố định cho cả
+lượt để không thay đổi âm lượng giữa các từ; bỏ qua bản thu gần im lặng.
+Chỉ áp dụng giọng người dùng, giữ nguyên số frame, sample rate và file gốc S3.
+Không khử nhiễu hay phục hồi chi tiết âm thanh bị mất từ thiết bị đầu vào.
+
+Sau khi lưu transcript, client upload audio người dùng và AI. Upload lỗi
+giữ file trong bộ nhớ để **Thử lưu lại**; thử lại không POST transcript thêm
+lần nữa nếu đã nhận phản hồi lưu thành công. Nếu app bị đóng hẳn trước khi
+upload xong, phần audio chưa upload có thể mất. Các phiên cũ không có bản
+thu vẫn đọc transcript, không tổng hợp giọng thay cho audio gốc.
+
 `GET /api/speaking/sessions?page=1&page_size=20` trả các phiên của người dùng
 đang đăng nhập, xếp theo thời gian tin nhắn cuối (hoặc thời gian bắt đầu khi
 chưa có tin nhắn), mới nhất trước. `page_size` tối đa 100. Mỗi mục gồm `id`,
@@ -348,3 +402,105 @@ Phiên của tài khoản khác và ID không tồn tại đều trả 404.
 Màn hình Luyện nói hiển thị lịch sử ngay khi vào; nút “Cuộc trò chuyện mới”
 mở popup chọn ngữ cảnh. Khi quay lại từ chat, danh sách được tải lại. Không
 cần migration hoặc bảng mới cho tính năng này.
+
+## UC-S11 / UC-S12: nhận xét sau hội thoại
+
+Chạy `flask --app app db upgrade` để áp dụng revision `f4b5c6d7e8a9`.
+
+| API | Hành vi |
+| --- | --- |
+| `POST /sessions/<id>/messages/<message_id>/feedback` với `{}` | Nhận xét câu người dùng đã completed, kể cả phiên active; trả cache hoặc 202 nếu đang xử lý; không kết thúc/chấm điểm phiên |
+| `POST /sessions/<id>/finish` với `{}` | Kết thúc phiên sở hữu; idempotent; 409 nếu còn tin nhắn chưa hoàn tất hoặc upload đang chờ |
+| `POST /sessions/<id>/evaluation` với `{}` | Đánh giá phiên đã completed; trả cache khi đã có kết quả, 202 nếu lần khác đang xử lý |
+| `GET /sessions/<id>/evaluation` | Đọc trạng thái/kết quả; không gọi provider |
+
+Các đường dẫn trên có prefix `/api/speaking` và yêu cầu Bearer token.
+Trạng thái trả về: `not_started`, `pending`, `processing`, `completed`,
+`insufficient_data`, `failed`. Response gồm `result`, `overall_score`,
+`rubric_version`, `completed_at`, `error` khi phù hợp. Trường hợp thiếu dữ liệu
+có `overall_score: null`, không phải điểm 0. Các phiên ít hơn ba lượt người
+dùng được trả thiếu dữ liệu mà không gọi AI. Model có thể từ chối chấm nếu ba
+lượt vẫn không đủ nội dung. Kết quả hoàn tất được lưu lại và không tự chấm lại.
+
+Chỉ phân tích bản chép lời: ngữ pháp 40%, từ vựng 30%, độ tự nhiên 30%.
+Không đánh giá phát âm, ngữ điệu hay tốc độ nói. Backend tính điểm tổng một
+chữ số thập phân; model chỉ trả điểm từng tiêu chí. Model output được kiểm
+tra schema, khoảng điểm và trích dẫn thuộc đúng tin nhắn người dùng. Mỗi góp
+ý phân biệt `error` với `alternative`. Payload có bối cảnh công khai, trình
+độ và transcript hoàn tất; không có private AI instructions, thông tin tài
+khoản hoặc audio/URL S3. Nội dung cá nhân nói trong transcript vẫn có thể gửi
+đến provider.
+
+Prompt thực tế: `speaking/evaluation_prompt.txt`; schema và provider:
+`speaking/evaluation_ai.py`. `SPEAKING_EVALUATION_MODEL` rỗng dùng model hiện
+có `OPENROUTER_MODEL`. Cấu hình mẫu dùng model miễn phí
+`nvidia/nemotron-3-super-120b-a12b:free` và `SPEAKING_EVALUATION_FORMAT=json_schema`.
+Nếu không cấu hình format, mặc định `text` vẫn yêu cầu JSON và xác thực backend;
+`json_schema` chỉ dùng với model/provider hỗ trợ structured outputs, đặt
+`require_parameters: true`.
+
+Lần gọi AI đầu dùng timeout kết nối 5 giây, đọc tối đa 60 giây; frontend chờ POST tối
+đa 90 giây. Thử lại tự động tối đa một lần khi lỗi provider tạm thời hoặc output
+không hợp lệ; lần thứ hai đọc tối đa 30 giây và giảm theo ngân sách chờ còn lại
+(80 giây từ đầu lần phân tích). Không tự thử lại rate limit, lỗi cấu hình hay timeout.
+HTTP 200 có `error` vẫn được coi là lỗi provider. Một code fence JSON ngoài cùng
+được bỏ trước khi kiểm tra; góp ý trùng câu gốc/câu sửa được gộp, các gợi ý khác
+nhau cho cùng câu vẫn được giữ. Trích dẫn bịa hoặc điểm không hợp lệ không được
+chấp nhận. Log chỉ chứa loại lỗi, không ghi response body/transcript/credentials.
+Lưu claim UUID trước khi gọi, thả khóa DB trong lúc chờ, chỉ lần
+giữ đúng claim được ghi kết quả. Claim hết hạn sau 120 giây cho phép retry;
+lần cũ không ghi đè kết quả mới. Chưa có worker; nếu request bị mất kết nối,
+frontend có thể mở lại GET để xem trạng thái hoặc thử lại sau khi claim hết
+hạn. JSON sai/timeout/rate limit giữ phiên completed và lưu trạng thái lỗi.
+
+Khi sửa output, system prompt và schema giữ nguyên; gửi thêm user message cố định:
+
+```text
+Return the complete JSON object again, following the system output schema exactly. The previous response failed backend validation. Use numeric scores for all three criteria when scored; for insufficient_data use null scores and an empty items array. Copy message_id and original quotations exactly from learner messages in the supplied transcript, never from assistant messages. Do not repeat a correction for the same quotation. Include all required fields and no markdown or extra text.
+```
+
+
+### Nhận xét từng câu trong lúc luyện
+
+Bóng đèn cạnh loa chỉ có trên câu người dùng đã lưu đầy đủ, kể cả câu gõ không có audio.
+Bấm để mở/thu gọn nhận xét ngay dưới tin nhắn; không đóng Gemini Live hay kết thúc phiên.
+Mỗi câu lưu `feedback_payload` và claim/lease riêng trong PostgreSQL. Khi mở lại, POST
+trả kết quả đã lưu mà không gọi AI lại; lỗi cho phép thử lại. Lease 120 giây tránh gọi
+trùng, thả khóa phiên trước provider IO để việc lưu lượt mới tiếp tục hoạt động.
+
+Prompt đầy đủ: `speaking/message_feedback_prompt.txt`. Schema chỉ gồm `summary` và
+`items` (tối đa ba góp ý); không có điểm hay yêu cầu ba lượt. Backend gửi tối đa tám
+messages completed đến câu đích, `target_message_id` và bối cảnh công khai. Câu đích
+là bằng chứng duy nhất; các câu trước chỉ tạo ngữ cảnh. Không gửi audio/URL S3,
+private instructions hay thông tin tài khoản. Trích dẫn phải thuộc đúng câu đích.
+Dùng cùng model/format và transport thử lại có giới hạn với tổng kết, prompt riêng
+không đánh giá phát âm hoặc toàn phiên. Câu chưa đủ nội dung được giải thích giới
+hạn; câu phù hợp có thể trả `items=[]`, không bắt AI tạo lỗi.
+
+
+## UC-S15: xóa buổi hội thoại
+
+`DELETE /api/speaking/sessions/<id>` yêu cầu Bearer token, không body/query.
+Chỉ chủ sở hữu được xóa, kể cả phiên active/paused/completed. UUID sai trả 400,
+phiên không tồn tại/không thuộc tài khoản trả 404. Response 200:
+`{"deleted": true, "audio_cleanup_pending": false}`; pending=true nếu kho audio
+lỗi trong lượt dọn đầu. Lịch sử và mọi API owned-session loại `deleted_at` ngay.
+Xóa một phiên không xóa scenario hoặc phiên người dùng khác.
+
+Migration `a7b8c9d0e1f2` thêm `deleted_at`, `audio_cleanup_after`. Nếu không có asset,
+xóa parent ngay, database cascade transcript/nhận xét/audio metadata và SET NULL
+liên kết retry của các phiên khác. Nếu có asset, commit tombstone trước storage IO,
+xóa object trong đúng `sessions/<uuid>/`, giữ deadline 16 phút rồi quét lần cuối
+và cascade xóa database. URL PUT ký trước đó có thể còn hiệu lực 15 phút, vì vậy
+không xóa dấu chờ dọn trước deadline. Không xuất object key hoặc lỗi S3 thô ra client.
+Lỗi DeleteObjects trong HTTP 200 cũng là dọn chưa hoàn tất, được thử lại.
+
+Chạy `flask --app app audio-cleanup-deleted --watch` ở tiến trình riêng (30 giây/lượt),
+hoặc CLI không --watch qua scheduler. Lỗi S3 giữ tombstone; lỗi DB ở watch cũng
+được thử lại. Bucket không còn tồn tại được coi là không còn audio để xóa. Không
+xóa bucket hay object ngoài prefix của phiên. Bucket AWS dùng versioning cần
+cấu hình thêm chính sách vòng đời cho các phiên bản cũ nếu muốn xóa vật lý chúng.
+
+Frontend dùng Alert native có Hủy/Xóa, icon thùng rác rõ ràng, khóa thao tác mở/xóa
+trong lúc DELETE đang chạy, không lồng nút xóa bên trong vùng bấm mở thẻ. Chỉ bỏ
+thẻ sau khi API thành công và tải lại phân trang để tránh bỏ sót phiên.

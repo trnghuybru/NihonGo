@@ -14,6 +14,7 @@ import { LearningAreaScreen } from './LearningAreaScreen';
 import { LearningSetupScreen } from './LearningSetupScreen';
 import { SpeakingScenariosScreen } from './SpeakingScenariosScreen';
 import { PracticeScreen } from './PracticeScreen';
+import { VocabularyScreen } from './VocabularyScreen';
 
 interface MainTabsProps {
   user: User;
@@ -41,6 +42,7 @@ function MainTabs({
   const selectTab = useCallback(
     (tab: AppTab) => {
       setActiveSkill(null);
+      if (tab === 'vocabulary') setVocabularyQuery('');
       onSelectTab(tab);
     },
     [onSelectTab],
@@ -53,6 +55,7 @@ function MainTabs({
     const subscription = BackHandler.addEventListener(
       'hardwareBackPress',
       () => {
+        if (selectedTab === 'vocabulary') return false;
         if (selectedTab === 'practice' && activeSkill) {
           setActiveSkill(null);
           return true;
@@ -110,7 +113,11 @@ function MainTabs({
             onEditLearning={onEditLearning}
           />
         ) : (
-          <LearningAreaScreen area="vocabulary" query={vocabularyQuery} />
+          <VocabularyScreen
+            key={vocabularyQuery}
+            query={vocabularyQuery}
+            onExit={() => selectTab('home')}
+          />
         )}
       </View>
       {selectedTab === 'practice' && activeSkill ? (

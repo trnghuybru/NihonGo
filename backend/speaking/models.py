@@ -94,6 +94,8 @@ class ConversationSession(UpdatedMixin, db.Model):
     ended_at = timestamp(nullable=True)
     accumulated_active_ms = db.Column(sa.BigInteger, nullable=False, server_default="0")
     last_resumed_at = timestamp(nullable=True)
+    deleted_at = timestamp(nullable=True)
+    audio_cleanup_after = timestamp(nullable=True)
     __table_args__ = (
         sa.ForeignKeyConstraint(["scenario_id", "scenario_role_id"], ["scenario_roles.scenario_id", "scenario_roles.id"], name="fk_session_scenario_role"),
         sa.CheckConstraint("status IN ('active', 'paused', 'completed', 'abandoned')", name="ck_session_status"),
@@ -117,6 +119,11 @@ class ConversationMessage(UpdatedMixin, db.Model):
     content = db.Column(sa.Text, nullable=False, server_default="")
     status = db.Column(sa.String(16), nullable=False, server_default="pending")
     occurred_at = timestamp()
+    feedback_payload = db.Column(sa.JSON().with_variant(JSONB, "postgresql"))
+    feedback_attempt_id = db.Column(sa.Uuid(as_uuid=False))
+    feedback_started_at = timestamp(nullable=True)
+    feedback_error = db.Column(sa.Text)
+    feedback_model = db.Column(sa.String(200))
     __table_args__ = (
         sa.UniqueConstraint("session_id", "sequence_number", name="uq_message_sequence"),
         sa.UniqueConstraint("session_id", "id", name="uq_message_parent"),
@@ -153,7 +160,7 @@ class SessionEvaluation(CreatedMixin, db.Model):
     __tablename__ = "session_evaluations"
     id = identifier()
     session_id = db.Column(sa.Uuid(as_uuid=False), db.ForeignKey("conversation_sessions.id", ondelete="CASCADE"), nullable=False, unique=True)
-    status = db.Column(sa.String(16), nullable=False, server_default="pending")
+    status = db.Column(sa.String(24), nullable=False, server_default="pending")
     overall_score = db.Column(sa.Numeric(5, 2))
     summary = db.Column(sa.Text)
     strengths = db.Column(sa.Text)
@@ -162,8 +169,11 @@ class SessionEvaluation(CreatedMixin, db.Model):
     rubric_version = db.Column(sa.String(50), nullable=False)
     error_message = db.Column(sa.Text)
     completed_at = timestamp(nullable=True)
+    result_payload = db.Column(sa.JSON().with_variant(JSONB(), "postgresql"))
+    processing_started_at = timestamp(nullable=True)
+    attempt_id = db.Column(sa.Uuid(as_uuid=False))
     __table_args__ = (
-        sa.CheckConstraint("status IN ('pending', 'processing', 'completed', 'failed')", name="ck_evaluation_status"),
+        sa.CheckConstraint("status IN ('pending', 'processing', 'completed', 'failed', 'insufficient_data')", name="ck_evaluation_status"),
         sa.CheckConstraint("overall_score BETWEEN 0 AND 100", name="ck_evaluation_score"),
         sa.CheckConstraint("status <> 'completed' OR (overall_score IS NOT NULL AND completed_at IS NOT NULL)", name="ck_evaluation_completed"),
     )
