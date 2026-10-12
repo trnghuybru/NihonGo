@@ -15,6 +15,7 @@ import { LearningSetupScreen } from './LearningSetupScreen';
 import { SpeakingScenariosScreen } from './SpeakingScenariosScreen';
 import { PracticeScreen } from './PracticeScreen';
 import { VocabularyScreen } from './VocabularyScreen';
+import { ShadowingScreen } from './ShadowingScreen';
 
 interface MainTabsProps {
   user: User;
@@ -56,6 +57,8 @@ function MainTabs({
       'hardwareBackPress',
       () => {
         if (selectedTab === 'vocabulary') return false;
+        if (selectedTab === 'practice' && activeSkill === 'listening')
+          return false;
         if (selectedTab === 'practice' && activeSkill) {
           setActiveSkill(null);
           return true;
@@ -100,6 +103,8 @@ function MainTabs({
         ) : selectedTab === 'practice' ? (
           activeSkill === 'speaking' ? (
             <SpeakingScenariosScreen />
+          ) : activeSkill === 'listening' ? (
+            <ShadowingScreen onExit={() => setActiveSkill(null)} />
           ) : activeSkill ? (
             <LearningAreaScreen area={activeSkill} />
           ) : (
@@ -120,7 +125,9 @@ function MainTabs({
           />
         )}
       </View>
-      {selectedTab === 'practice' && activeSkill ? (
+      {selectedTab === 'practice' &&
+      activeSkill &&
+      activeSkill !== 'listening' ? (
         <AuthButton
           label="Chọn kỹ năng khác"
           variant="text"

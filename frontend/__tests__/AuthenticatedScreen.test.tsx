@@ -16,6 +16,12 @@ import { VocabularyScreen } from '../src/screens/VocabularyScreen';
 import { SpeakingScenariosScreen } from '../src/screens/SpeakingScenariosScreen';
 import { speakingService } from '../src/services/speakingService';
 import { videoExamplesService } from '../src/services/videoExamplesService';
+import { ShadowingScreen } from '../src/screens/ShadowingScreen';
+jest.mock('../src/services/shadowingService', () => ({
+  shadowingService: {
+    list: jest.fn().mockResolvedValue({ items: [] }),
+  },
+}));
 jest.mock('../src/services/videoExamplesService', () => ({
   videoExamplesService: {
     search: jest.fn().mockResolvedValue({
@@ -148,6 +154,15 @@ test('opens the API-connected speaking screen from the home skill card', async (
   expect(tree.root.findAllByType(SpeakingScenariosScreen)).toHaveLength(1);
   expect(speakingService.categories).toHaveBeenCalledTimes(1);
   expect(speakingService.list).toHaveBeenCalledTimes(1);
+});
+
+test('opens shadowing from the listening skill', async () => {
+  jest.mocked(learningService.load).mockResolvedValue({ options, profile });
+  await render();
+  await act(async () =>
+    tree.root.findByType(HomeScreen).props.onOpenSkill('listening'),
+  );
+  expect(tree.root.findAllByType(ShadowingScreen)).toHaveLength(1);
 });
 
 test('home lookup passes the query to the video examples API', async () => {

@@ -356,19 +356,9 @@ test('shows the first clip immediately, replays and switches clips in one inline
     player.props.onMessage({ nativeEvent: { data: '{"type":"ready"}' } }),
   );
   expect(contents()).not.toContain('Đang tải video…');
-  await act(async () =>
-    tree.root
-      .findAllByType(AuthButton)
-      .find(n => n.props.label === 'Nghe lại')!
-      .props.onPress(),
-  );
+  await press('Nghe lại');
   expect(contents()).toContain('Đang tải video…');
-  await act(async () =>
-    tree.root
-      .findAllByType(AuthButton)
-      .find(n => n.props.label === 'Ví dụ tiếp')!
-      .props.onPress(),
-  );
+  await press('Ví dụ tiếp');
   expect(
     tree.root.findByType(VideoExamplePlayer).props.example.start_seconds,
   ).toBe(800);

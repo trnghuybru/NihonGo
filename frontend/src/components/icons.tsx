@@ -335,6 +335,45 @@ export function XIcon({
   );
 }
 
+export function ChevronLeftIcon({
+  size = 22,
+  color = '#75777D',
+  strokeWidth = 2,
+}: IconProps) {
+  return (
+    <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+      <Path d="m15 6-6 6 6 6" {...stroke(color, strokeWidth)} />
+    </Svg>
+  );
+}
+
+export function ChevronRightIcon({
+  size = 22,
+  color = '#75777D',
+  strokeWidth = 2,
+}: IconProps) {
+  return (
+    <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+      <Path d="m9 6 6 6-6 6" {...stroke(color, strokeWidth)} />
+    </Svg>
+  );
+}
+
+export function ReplayIcon({
+  size = 22,
+  color = '#75777D',
+  strokeWidth = 2,
+}: IconProps) {
+  return (
+    <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+      <Path
+        d="M3 10a9 9 0 1 1 2.6 8.3M3 4v6h6"
+        {...stroke(color, strokeWidth)}
+      />
+    </Svg>
+  );
+}
+
 export function ChevronDownIcon({
   size = 20,
   color = '#75777D',
@@ -344,6 +383,15 @@ export function ChevronDownIcon({
   return (
     <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
       <Path d="m6 9 6 6 6-6" {...s} />
+    </Svg>
+  );
+}
+
+export function PlayCircleIcon({ size = 24, color = '#75777D' }: IconProps) {
+  return (
+    <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+      <Circle cx="12" cy="12" r="11" fill={color} />
+      <Path d="M10 7.5 17 12l-7 4.5z" fill="#FFFFFF" />
     </Svg>
   );
 }

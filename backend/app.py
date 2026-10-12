@@ -8,6 +8,7 @@ from auth import init_auth
 from learning import init_learning
 from speaking import init_speaking
 from vocabulary import init_vocabulary
+from shadowing import init_shadowing
 
 load_dotenv()
 
@@ -18,6 +19,7 @@ init_auth(app)
 init_learning(app)
 init_speaking(app)
 init_vocabulary(app)
+init_shadowing(app)
 
 
 @app.get("/")

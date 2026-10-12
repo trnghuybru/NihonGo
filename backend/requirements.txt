@@ -11,3 +11,6 @@ phonenumbers>=9,<10
 PyJWT[crypto]>=2.10,<3
 gunicorn>=23,<24
 boto3>=1.35,<2
+
+sudachipy>=0.6.8,<0.7
+sudachidict_core>=20240109,<20270000

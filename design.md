@@ -167,6 +167,41 @@ Thanh điều hướng xuất hiện sau khi người dùng đã hoàn tất thi
 
 ## Trang chủ học tập
 
+### Nghe và shadowing
+
+- Mục Nghe mở màn shadowing: form link YouTube ở trên trong khung tint, nhãn YouTube
+  và phần nhập nền trắng; bên dưới là “Video của bạn”. Không thêm filter chủ đề, upload,
+  danh mục hoặc dữ liệu chưa có. Có hai tab “Tất cả video” và “Video của tôi”: video
+  ready dùng chung, trạng thái xử lý/lỗi chỉ hiện cho người đã thêm. Nền kem, card
+  trắng bo 16, gap 16–20, token chung.
+- Danh sách video dùng FlatList. Mỗi thẻ có thumbnail YouTube 16:9 phủ ngang phía trên,
+  tên 14/20 tối đa hai dòng, trạng thái thật và CTA luyện ở phần dưới. Thumbnail sẵn sàng
+  có thể nhấn để mở bài; lỗi ảnh có placeholder, vẫn giữ nút luyện/thử lại.
+- Hiển thị trạng thái chờ/lấy dữ liệu/tạo phụ đề/chuẩn bị đoạn/ready/lỗi thật. Lỗi
+  không biến thành danh sách trống; có làm mới và thử lại khi failed.
+- Bài luyện theo bố cục video → câu đang phát căn giữa → thanh công cụ → bảng phụ đề.
+  Video bo 16 không có lớp card bao ngoài; quay lại nằm trên hàng riêng phía trên
+  video. Không đặt nút replay nổi lên video.
+  Cụm icon nhỏ trước/replay/tiếp nằm trên thanh công cụ, replay ở giữa; tuỳ chọn
+  không lặp lại các nút này. Lỗi video vẫn có nút thử phát lại.
+  Câu hiện tại có gạch chân, dùng cue ngắn riêng với timestamp nguồn. Cỡ chữ tự
+  điều chỉnh từ 22 xuống tối thiểu 16 theo độ dài/bề rộng, giữ font scale hệ thống.
+  Khung tối đa hai dòng có thể cuộn nếu nguồn thiếu mốc chia; không cắt bằng ellipsis.
+  Các câu luyện đầy đủ trong bảng chữ 14/22, nét thường, icon phát 18 bên trái.
+  Nút công cụ 32–36 px có hitSlop, nhãn 12 px; ẩn “Chọn kỹ năng khác” ở shadowing.
+  Thanh công cụ có Phụ đề, Bản dịch và nút `•••`; bảng có header, AB ẩn/hiện chữ,
+  nút theo dõi và nút đóng. Bản dịch chưa khả dụng khi video chưa có dữ liệu dịch.
+  Tốc độ/chế độ nghe/lặp câu nằm trong bảng tuỳ chọn mở bằng `•••`.
+- Bài luyện giữ player YouTube phía trên, danh sách phụ đề FlatList cuộn phía dưới.
+  Mặc định nghe liên tục: phụ đề bám theo thời gian video, tô sáng câu hiện tại và
+  tự cuộn; khoảng không có phụ đề không tô sáng câu cũ. Tua/đổi tốc độ vẫn đồng bộ.
+- Cuộn tay tạm ngừng tự cuộn, nút “Về câu hiện tại” bật theo dõi lại. Bấm một câu
+  để phát từ câu đó; chuyển câu/đổi tốc độ không tải lại video. Nút trước/replay/tiếp
+  dùng icon 48 px, replay phát câu hiện tại. Có mắt ẩn/hiện phụ đề và tốc độ
+  1× → 0.75× → 0.5×. Chế độ từng đoạn dừng cuối câu, “Lặp đoạn” lặp câu đã chọn.
+  Không hiển thị nút mở ngoài YouTube.
+- Phụ đề tự động được ghi rõ; không có điểm phát âm hoặc tiến độ giả.
+
 Home ưu tiên thao tác theo thứ tự: tra từ → tiếp tục mục tiêu hiện tại → chọn kỹ năng → khu vực từ vựng → panel giới thiệu NihonGO. Không hiển thị tiến độ, chuỗi ngày hoặc số từ giả khi backend chưa cung cấp dữ liệu.
 
 - Ô tra cứu đặt đầu nội dung, chấp nhận tiếng Nhật, romaji hoặc tiếng Việt. Cao 56 px, nền trắng, viền 1 px, bo 18 px; nút gửi tròn 48 px chỉ hoạt động khi nội dung sau khi trim không rỗng.
@@ -220,3 +255,17 @@ Sau khi thay đổi TTF hoặc cấu hình nhúng font, cần build lại (`npm 
 ## Logo và khởi động app
 
 Logo và icon launcher dùng đầu Momo cùng chữ NihonGO đen–cam theo mẫu người dùng. Native launch iOS/Android có nền kem và logo, không còn chữ frontend/React Native. Sau khi JavaScript sẵn sàng, `StartupSplash` cho Momo nhún và nghiêng chào trong khoảng 1,3 giây, rồi fade khi quá trình khôi phục phiên hoàn tất. Reduce Motion bỏ qua hoạt ảnh. Lỗi khôi phục vẫn dẫn đến giao diện thử lại hiện có. Asset và prompt nằm trong `frontend/src/assets/mascot/README.md` và `GENERATION.md`.
+
+
+### Tra từ trong phụ đề shadowing
+
+- Chỉ phụ đề lớn của câu hiện tại có thể nhấn để tra từ. Mỗi từ là một cụm riêng
+  có khoảng cách, gạch chân cam và furigana trên phần kanji; ghép đuôi biến đổi
+  thành từ hoàn chỉnh (ví dụ `立った`, `言って`). Từ được chọn nền cam nhạt.
+  Bảng phụ đề bên dưới chỉ hiển thị chữ, giữ nút play riêng của từng câu.
+- Bấm chữ tạm dừng video, không tua/replay. Nút play bên trái câu là thao tác luyện
+  riêng. Đóng popup giữ video dừng; người dùng chủ động bấm phát để tiếp tục.
+- Popup trắng bo 16 cạnh vị trí bấm, luôn nằm trong vùng an toàn; có chữ, cách đọc,
+  dạng gốc khi biến đổi, từ loại, nghĩa tiếng Việt và nút đóng 32 px + hitSlop.
+  Nội dung dài có thể cuộn. Thiếu nghĩa là trạng thái thật, không hiển thị nút giả.
+- Không gọi AI/tra từ online khi bấm. Không thêm romaji, lưu từ hoặc audio trong bản thử.

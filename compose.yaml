@@ -21,6 +21,38 @@ services:
     ports:
       - "127.0.0.1:1025:1025"
       - "127.0.0.1:8025:8025"
+  elasticmq:
+    image: softwaremill/elasticmq:1.7.1
+    user: "0:0"
+    profiles: [shadowing]
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:9324:9324"
+    volumes:
+      - ./backend/shadowing/elasticmq.conf:/opt/elasticmq.conf:ro
+      - elasticmq_data:/data
+  shadowing-worker:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.shadowing
+    profiles: [shadowing]
+    restart: unless-stopped
+    env_file: ./backend/.env
+    environment:
+      DATABASE_URL: postgresql+psycopg://nihongo:nihongo_local@postgres:5432/nihongo
+      SHADOWING_SQS_ENDPOINT: http://elasticmq:9324
+      SHADOWING_SQS_QUEUE_URL: ""
+      SHADOWING_MODEL_DIR: /models/whisper
+      HF_HOME: /models/huggingface
+    cpus: 2
+    mem_limit: 4g
+    volumes:
+      - shadowing_models:/models
+    depends_on:
+      postgres:
+        condition: service_healthy
+      elasticmq:
+        condition: service_started
   rustfs:
     image: ${RUSTFS_IMAGE:-rustfs/rustfs:1.0.1}
     profiles: [audio]
@@ -61,6 +93,8 @@ services:
       timeout: 3s
       retries: 10
 volumes:
+  elasticmq_data:
+  shadowing_models:
   postgres_data:
   localstack_data:
   rustfs_data:

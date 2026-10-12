@@ -26,7 +26,7 @@ def positive_number(value, allow_zero=False):
             and math.isfinite(value) and (value >= 0 if allow_zero else value > 0))
 
 
-def import_dataset(dataset):
+def import_dataset(dataset, *, commit=True):
     if dataset.get("schema_version") != 1:
         raise ValueError("Schema phụ đề không hợp lệ.")
     video, track, segments = dataset["video"], dataset["caption_track"], dataset["segments"]
@@ -65,7 +65,8 @@ def import_dataset(dataset):
     db.session.flush()
     db.session.execute(delete(CaptionSegment).where(CaptionSegment.video_id == video_id))
     db.session.add_all(prepared)
-    db.session.commit()
+    if commit:
+        db.session.commit()
     return {"video_id": video_id, "segments": len(prepared)}
 
 

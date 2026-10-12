@@ -22,6 +22,7 @@ import { AuthIcon } from '../components/AuthIcon';
 import { BrandLogo } from '../components/BrandLogo';
 import { HomeFeatureIcon } from '../components/HomeFeatureIcon';
 import {
+  ChevronLeftIcon,
   EyeIcon,
   EyeOffIcon,
   VolumeIcon,
@@ -126,11 +127,16 @@ const WordCard = memo(function WordCardView({
   useEffect(() => setRevealed(false), [hideMeaning]);
   const showMeaning = !hideMeaning || revealed;
   return (
-    <View style={styles.card}>
+    <View style={[styles.card, styles.wordCard]}>
       <View style={styles.wordHeading}>
-        <Text style={styles.word} selectable>
-          {word.word}
-        </Text>
+        <View style={styles.wordIdentity}>
+          <Text style={styles.word} selectable>
+            {word.word}
+          </Text>
+          <Text style={styles.reading} selectable>
+            {word.reading}
+          </Text>
+        </View>
         <View style={styles.wordActions}>
           <Text style={styles.caption}>#{word.number}</Text>
           {word.has_audio ? (
@@ -141,6 +147,7 @@ const WordCard = memo(function WordCardView({
               }`}
               accessibilityState={{ busy: audioLoading, selected: playing }}
               onPress={() => onAudio(word.id)}
+              hitSlop={6}
               style={({ pressed }) => [
                 styles.audioButton,
                 pressed && styles.pressed,
@@ -162,9 +169,6 @@ const WordCard = memo(function WordCardView({
           {audioError}
         </Text>
       ) : null}
-      <Text style={styles.reading} selectable>
-        {word.reading}
-      </Text>
       {showMeaning ? (
         <View style={styles.copy}>
           <Text style={styles.meaning} selectable>
@@ -179,6 +183,7 @@ const WordCard = memo(function WordCardView({
           accessibilityRole="button"
           accessibilityLabel={`Hiện nghĩa của ${word.word}`}
           onPress={() => setRevealed(true)}
+          hitSlop={6}
           style={styles.reveal}
         >
           <Text style={styles.link}>Nhấn để xem nghĩa</Text>
@@ -190,6 +195,7 @@ const WordCard = memo(function WordCardView({
           accessibilityLabel={`Ví dụ và từ liên quan của ${word.word}`}
           accessibilityState={{ expanded }}
           onPress={() => setExpanded(value => !value)}
+          hitSlop={6}
           style={styles.detailsButton}
         >
           <Text style={styles.link}>
@@ -518,6 +524,17 @@ export function VocabularyScreen({
         : { kind: 'search', query: searchText.trim(), page: 1 },
     );
   };
+  const backButton = (
+    <Pressable
+      accessibilityRole="button"
+      accessibilityLabel="Quay lại"
+      onPress={back}
+      hitSlop={6}
+      style={styles.back}
+    >
+      <ChevronLeftIcon size={18} color={colors.dark} />
+    </Pressable>
+  );
   const header = (
     <View style={styles.header}>
       {route.kind !== 'videos' ? (
@@ -526,27 +543,20 @@ export function VocabularyScreen({
           <Text style={styles.language}>日本語</Text>
         </View>
       ) : null}
-      {route.kind !== 'catalog' && route.kind !== 'lookup' ? (
+      {route.kind === 'videos' ? (
         <View style={styles.titleRow}>
-          <Pressable
-            accessibilityRole="button"
-            accessibilityLabel="Quay lại"
-            onPress={back}
-            style={styles.back}
-          >
-            <AuthIcon name="back" />
-            <Text style={styles.link}>Quay lại</Text>
-          </Pressable>
-          {route.kind === 'videos' ? (
-            <Text accessibilityRole="header" style={styles.videoTitle}>
-              {title}
-            </Text>
-          ) : null}
+          {backButton}
+          <Text accessibilityRole="header" style={styles.videoTitle}>
+            {title}
+          </Text>
         </View>
       ) : null}
       {route.kind !== 'videos' ? (
         <View style={styles.introduction}>
           <View style={styles.titleRow}>
+            {route.kind !== 'catalog' && route.kind !== 'lookup'
+              ? backButton
+              : null}
             <Text
               accessibilityRole="header"
               style={[styles.title, styles.titleCopy]}
@@ -1013,11 +1023,12 @@ const styles = StyleSheet.create({
   caption: { ...typography.caption, color: colors.muted },
   sectionTitle: { ...typography.heading, color: colors.dark },
   back: {
-    minHeight: layout.touchTarget,
-    flexDirection: 'row',
+    width: 36,
+    height: 36,
+    borderRadius: radius.pill,
+    backgroundColor: colors.surface,
     alignItems: 'center',
-    gap: spacing.sm,
-    alignSelf: 'flex-start',
+    justifyContent: 'center',
   },
   levels: { flexDirection: 'row', gap: spacing.sm },
   sections: { flexDirection: 'row', gap: spacing.sm },
@@ -1086,38 +1097,60 @@ const styles = StyleSheet.create({
   },
   lessonCountText: { ...typography.caption, color: colors.badgeText },
   pressed: { backgroundColor: colors.surfaceTint },
+  wordCard: {
+    padding: spacing.lg,
+    gap: spacing.sm,
+    borderRadius: radius.small,
+  },
+  wordIdentity: {
+    flex: 1,
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    alignItems: 'baseline',
+    gap: spacing.sm,
+  },
   wordHeading: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
     gap: spacing.md,
   },
-  word: { ...typography.title, color: colors.dark, flexShrink: 1 },
+  word: {
+    ...typography.title,
+    color: colors.dark,
+    flexShrink: 1,
+    maxWidth: '100%',
+  },
   wordActions: { flexDirection: 'row', alignItems: 'center', gap: spacing.xs },
   audioButton: {
-    width: layout.touchTarget,
-    height: layout.touchTarget,
+    width: 36,
+    height: 36,
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: radius.small,
   },
-  reading: { ...typography.label, color: colors.body },
+  reading: {
+    ...typography.label,
+    color: colors.body,
+    flexShrink: 1,
+    maxWidth: '100%',
+  },
   meaning: { ...typography.heading, color: colors.dark },
-  copy: { gap: spacing.xs, marginTop: spacing.xs },
+  copy: { gap: spacing.xs },
   reveal: {
-    minHeight: layout.touchTarget,
+    minHeight: 36,
     justifyContent: 'center',
     alignItems: 'flex-start',
   },
   link: { ...typography.link, color: colors.primaryText },
   detailsButton: {
-    minHeight: layout.touchTarget,
+    minHeight: 36,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
     borderTopWidth: 1,
     borderColor: colors.divider,
-    marginTop: spacing.sm,
+    marginTop: spacing.xs,
   },
   details: { gap: spacing.md },
   example: {

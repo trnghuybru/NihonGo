@@ -37,7 +37,7 @@ class VocabularyWord(db.Model):
     id = db.Column(db.String(128), primary_key=True)
     lesson_id = db.Column(db.String(100), db.ForeignKey("vocabulary_lessons.id", ondelete="CASCADE"), nullable=False)
     number = db.Column(db.Integer, nullable=False)
-    word = db.Column(db.Text, nullable=False)
+    word = db.Column(db.Text, nullable=False, index=True)
     reading = db.Column(db.Text, nullable=False)
     meaning_vi = db.Column(db.Text, nullable=False)
     han_viet = db.Column(db.Text)

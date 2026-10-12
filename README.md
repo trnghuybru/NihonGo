@@ -119,6 +119,18 @@ flask --app app vocabulary-audio-import --apkg /path/to/Mimikara_Oboeru_N1_T_Vng
 App hiện icon loa cạnh từ có audio. File lưu riêng trong bucket `vocabulary-audio`;
 xem [cấu hình, nhập audio và chuyển sang S3](backend/VOCABULARY.md#audio-từ-vựng-n1).
 
+Để chạy **Nghe / Shadowing** ở local, sau khi migration đã hoàn tất, chạy từ
+thư mục gốc dự án:
+
+```sh
+docker compose --env-file backend/.env --profile shadowing up -d --build
+```
+
+Mở **Nghe** trong app, dán link YouTube tiếng Nhật tối đa 20 phút. ElasticMQ và
+worker Faster-Whisper xử lý nền; video đã có phụ đề được dùng ngay. Audio mới
+chỉ lưu tạm rồi xóa, không upload S3/RustFS. Lần đầu cần tải model.
+Xem [hướng dẫn shadowing local](backend/SHADOWING.md).
+
 Kho video mẫu có 327 đoạn phụ đề tiếng Nhật. Trong app, tìm `社会`, `日本` hoặc
 `人生`, chọn **Video** rồi chạm **Xem đoạn này**. Chọn **Từ vựng** để tra bài học
 theo JLPT. Xem [hướng dẫn dữ liệu video](backend/data/video_examples/README.md).
@@ -322,6 +334,7 @@ npm test -- --runInBand --watchman=false
 
 - [Học từ vựng JLPT, lưu trữ và cách nhập dữ liệu](backend/VOCABULARY.md)
 - [Dữ liệu từ vựng N1–N5 và cách nhập từ website/PDF/Anki](backend/data/vocabulary/README.md)
+- [Shadowing local: ElasticMQ, Faster-Whisper và cách chạy](backend/SHADOWING.md)
 - [Thiết lập học tập](backend/LEARNING.md)
 - [API và luồng hội thoại](backend/SPEAKING.md)
 - [Cơ sở dữ liệu và migration hội thoại](backend/SPEAKING_DATABASE.md)
