@@ -1,0 +1,3262 @@
+{
+  "schema_version": 1,
+  "video": {
+    "youtube_id": "g6AHx_OWbhg",
+    "title": "I’m Going to Space: A Strategy for Achieving Your Dreams | Aki Takei | TEDxMarunouchi",
+    "channel": "TEDx Talks",
+    "duration_seconds": 790
+  },
+  "caption_track": {
+    "language": "ja",
+    "kind": "asr",
+    "source": "youtube_automatic"
+  },
+  "source_playlist": "https://www.youtube.com/playlist?list=PLsRNoUx8w3rOHjXIU5EE4KOiIagv9yQaG",
+  "fetched_at": "2026-10-13T13:23:59.506489+00:00",
+  "segment_count": 101,
+  "segments": [
+    {
+      "text": "[音楽]",
+      "start_seconds": 9.825,
+      "end_seconds": 11.844999999999999,
+      "id": "g6AHx_OWbhg-ja-0001",
+      "sequence": 1
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 13.755,
+      "end_seconds": 15.775,
+      "id": "g6AHx_OWbhg-ja-0002",
+      "sequence": 2
+    },
+    {
+      "text": "こんにちは。私は宇宙飛行士を目指す",
+      "start_seconds": 18.64,
+      "end_seconds": 23.72,
+      "id": "g6AHx_OWbhg-ja-0003",
+      "sequence": 3
+    },
+    {
+      "text": "29歳です。",
+      "start_seconds": 24.56,
+      "end_seconds": 27.679,
+      "id": "g6AHx_OWbhg-ja-0004",
+      "sequence": 4
+    },
+    {
+      "text": "宇宙に行為をして20年以上、宇宙飛行士になるために色々なことをしてきました。",
+      "start_seconds": 27.679,
+      "end_seconds": 35.16,
+      "id": "g6AHx_OWbhg-ja-0005",
+      "sequence": 5
+    },
+    {
+      "text": "大学でロケットエンジンの研究をし、経済産業省で官僚として働き、今は宇宙スタートアップにいます。",
+      "start_seconds": 35.16,
+      "end_seconds": 46.28,
+      "id": "g6AHx_OWbhg-ja-0006",
+      "sequence": 6
+    },
+    {
+      "text": "時には恋愛リアリティ賞で主役をしたり、番組で女性活躍や宇宙について話すこともあります。",
+      "start_seconds": 46.28,
+      "end_seconds": 57.160000000000004,
+      "id": "g6AHx_OWbhg-ja-0007",
+      "sequence": 7
+    },
+    {
+      "text": "今日は夢を叶えたい人が勇気を持って一歩踏み出そうと思える。そんなお話をします。",
+      "start_seconds": 57.199,
+      "end_seconds": 67.76,
+      "id": "g6AHx_OWbhg-ja-0008",
+      "sequence": 8
+    },
+    {
+      "text": "先ほどは色々な肩書きを並べましたが、大学時代の私は落ちこぼれでした。",
+      "start_seconds": 68.0,
+      "end_seconds": 76.84,
+      "id": "g6AHx_OWbhg-ja-0009",
+      "sequence": 9
+    },
+    {
+      "text": "私がいた東京大学航空中工学家は日本災難官の東大の中でも特に競争率の高い学部です。",
+      "start_seconds": 76.84,
+      "end_seconds": 86.4,
+      "id": "g6AHx_OWbhg-ja-0010",
+      "sequence": 10
+    },
+    {
+      "text": "日本人宇宙飛行士の多くが卒業していて、幼い頃から宇宙飛行士一筋だった私は自然とここを目指しました。",
+      "start_seconds": 86.4,
+      "end_seconds": 98.0,
+      "id": "g6AHx_OWbhg-ja-0011",
+      "sequence": 11
+    },
+    {
+      "text": "高校までは成績はいつもトップでした。",
+      "start_seconds": 98.0,
+      "end_seconds": 103.119,
+      "id": "g6AHx_OWbhg-ja-0012",
+      "sequence": 12
+    },
+    {
+      "text": "誰よりも勉強していた地震もありますが、それがちゃんと結果として現れていました。",
+      "start_seconds": 103.119,
+      "end_seconds": 111.64,
+      "id": "g6AHx_OWbhg-ja-0013",
+      "sequence": 13
+    },
+    {
+      "text": "大学受験も成功して学校の期待を背負って東大に進学しました。",
+      "start_seconds": 111.64,
+      "end_seconds": 120.521,
+      "id": "g6AHx_OWbhg-ja-0014",
+      "sequence": 14
+    },
+    {
+      "text": "[ため息]しかし入学してみると最難と言われるだけあってレベルの差に圧倒されました。",
+      "start_seconds": 120.521,
+      "end_seconds": 130.679,
+      "id": "g6AHx_OWbhg-ja-0015",
+      "sequence": 15
+    },
+    {
+      "text": "授業開始5分。教授の話を少し聞いたら私の周りの同級生たちはスらスらと演習問題を解き始めるのです。",
+      "start_seconds": 130.679,
+      "end_seconds": 141.72,
+      "id": "g6AHx_OWbhg-ja-0016",
+      "sequence": 16
+    },
+    {
+      "text": "一方、私は授業が終わってもまだ理解できず、家に帰って復讐して5時間かけてやっとわかる。",
+      "start_seconds": 141.72,
+      "end_seconds": 153.4,
+      "id": "g6AHx_OWbhg-ja-0017",
+      "sequence": 17
+    },
+    {
+      "text": "私がいたロケットの推進コースは女子は私1人だけでした。",
+      "start_seconds": 153.4,
+      "end_seconds": 160.8,
+      "id": "g6AHx_OWbhg-ja-0018",
+      "sequence": 18
+    },
+    {
+      "text": "ただでさえできない私は周りから浮いていました。",
+      "start_seconds": 163.08,
+      "end_seconds": 170.8,
+      "id": "g6AHx_OWbhg-ja-0019",
+      "sequence": 19
+    },
+    {
+      "text": "テスト期間にあいつが受かるはずないと言われたこともありました。",
+      "start_seconds": 170.959,
+      "end_seconds": 179.2,
+      "id": "g6AHx_OWbhg-ja-0020",
+      "sequence": 20
+    },
+    {
+      "text": "今まで経験したことのない苦い、恥ずかしいそんな思いをしました。",
+      "start_seconds": 179.44,
+      "end_seconds": 189.04,
+      "id": "g6AHx_OWbhg-ja-0021",
+      "sequence": 21
+    },
+    {
+      "text": "ああ、世の中にはどんなに努力をしても到達できない本当の天才がいるんだな。",
+      "start_seconds": 189.04,
+      "end_seconds": 197.0,
+      "id": "g6AHx_OWbhg-ja-0022",
+      "sequence": 22
+    },
+    {
+      "text": "そんな人たちと宇宙飛行士の座を競い合うなんて絶望した瞬間でした。",
+      "start_seconds": 197.0,
+      "end_seconds": 207.48,
+      "id": "g6AHx_OWbhg-ja-0023",
+      "sequence": 23
+    },
+    {
+      "text": "しかし宇宙への愛は誰にも負けていませんでした。",
+      "start_seconds": 207.92,
+      "end_seconds": 213.56,
+      "id": "g6AHx_OWbhg-ja-0024",
+      "sequence": 24
+    },
+    {
+      "text": "中学の時から大事にしていた宇宙物理の本があるのですが、辛い時はそれを守りに死に者類で頑張り",
+      "start_seconds": 213.56,
+      "end_seconds": 222.519,
+      "id": "g6AHx_OWbhg-ja-0025",
+      "sequence": 25
+    },
+    {
+      "text": "ました。",
+      "start_seconds": 222.519,
+      "end_seconds": 225.76000000000002,
+      "id": "g6AHx_OWbhg-ja-0026",
+      "sequence": 26
+    },
+    {
+      "text": "[ため息]さあ、皆さん、宇宙飛行士の募集の頻度はご存知ですか?",
+      "start_seconds": 225.977,
+      "end_seconds": 234.12,
+      "id": "g6AHx_OWbhg-ja-0027",
+      "sequence": 27
+    },
+    {
+      "text": "実は毎年ではありません。",
+      "start_seconds": 234.4,
+      "end_seconds": 237.959,
+      "id": "g6AHx_OWbhg-ja-0028",
+      "sequence": 28
+    },
+    {
+      "text": "それどころか直近は5年前の2021年。",
+      "start_seconds": 237.959,
+      "end_seconds": 243.439,
+      "id": "g6AHx_OWbhg-ja-0029",
+      "sequence": 29
+    },
+    {
+      "text": "合格者はたった2名でした。",
+      "start_seconds": 243.439,
+      "end_seconds": 247.28,
+      "id": "g6AHx_OWbhg-ja-0030",
+      "sequence": 30
+    },
+    {
+      "text": "そしてその前は13年も遡り、2008年。これまた合格者はたった3名。",
+      "start_seconds": 247.28,
+      "end_seconds": 256.04,
+      "id": "g6AHx_OWbhg-ja-0031",
+      "sequence": 31
+    },
+    {
+      "text": "倍率は2000倍にもなります。もちろん実務経験も必要です。",
+      "start_seconds": 256.04,
+      "end_seconds": 262.12,
+      "id": "g6AHx_OWbhg-ja-0032",
+      "sequence": 32
+    },
+    {
+      "text": "つまり大学を卒業してすぐ宇宙飛行士とはもちろんいかずどんな仕事に着こうかと考えていた時、",
+      "start_seconds": 262.12,
+      "end_seconds": 273.08,
+      "id": "g6AHx_OWbhg-ja-0033",
+      "sequence": 33
+    },
+    {
+      "text": "私は宇宙業界で働く人たちがより活躍できるそんな制度を作りたいと思い、技術として経済産業省に行くことに決め",
+      "start_seconds": 273.08,
+      "end_seconds": 284.72,
+      "id": "g6AHx_OWbhg-ja-0034",
+      "sequence": 34
+    },
+    {
+      "text": "ました。",
+      "start_seconds": 284.72,
+      "end_seconds": 287.759,
+      "id": "g6AHx_OWbhg-ja-0035",
+      "sequence": 35
+    },
+    {
+      "text": "就活が終わり、ある日学科の同期と話していた時、私の内定先を伝えるとすごいと言われました。",
+      "start_seconds": 288.8,
+      "end_seconds": 298.639,
+      "id": "g6AHx_OWbhg-ja-0036",
+      "sequence": 36
+    },
+    {
+      "text": "なんと大学4年間私が全く勉強で勝てなかった同期たちの中にも就活で苦労した人がいたのです。",
+      "start_seconds": 298.639,
+      "end_seconds": 310.36,
+      "id": "g6AHx_OWbhg-ja-0037",
+      "sequence": 37
+    },
+    {
+      "text": "アプローチを変えたら私でも彼らとは違う強みが見つかるのかもしれない。",
+      "start_seconds": 310.36,
+      "end_seconds": 319.84,
+      "id": "g6AHx_OWbhg-ja-0038",
+      "sequence": 38
+    },
+    {
+      "text": "そう思いました。",
+      "start_seconds": 319.84,
+      "end_seconds": 322.4,
+      "id": "g6AHx_OWbhg-ja-0039",
+      "sequence": 39
+    },
+    {
+      "text": "これが私が夢を叶える戦略の始まりです。",
+      "start_seconds": 322.4,
+      "end_seconds": 329.71999999999997,
+      "id": "g6AHx_OWbhg-ja-0040",
+      "sequence": 40
+    },
+    {
+      "text": "今の宇宙は民間の時代です。",
+      "start_seconds": 330.24,
+      "end_seconds": 334.919,
+      "id": "g6AHx_OWbhg-ja-0041",
+      "sequence": 41
+    },
+    {
+      "text": "今までの宇宙飛行士はNASAや弱差に所属するいわば公務員のような存在でした。しかし2027年から本格的に民間企業",
+      "start_seconds": 334.919,
+      "end_seconds": 345.4,
+      "id": "g6AHx_OWbhg-ja-0042",
+      "sequence": 42
+    },
+    {
+      "text": "の宇宙飛行士が宇宙ミッションに挑みます。理由は色々あるのですが2030年に約",
+      "start_seconds": 345.4,
+      "end_seconds": 353.84,
+      "id": "g6AHx_OWbhg-ja-0043",
+      "sequence": 43
+    },
+    {
+      "text": "30年間運用されたISS国際宇宙ステーションが退役します。",
+      "start_seconds": 353.84,
+      "end_seconds": 360.759,
+      "id": "g6AHx_OWbhg-ja-0044",
+      "sequence": 44
+    },
+    {
+      "text": "地球低起動の活動は国から民間企業にバトンタッチされます。そして政府は未会",
+      "start_seconds": 360.759,
+      "end_seconds": 370.639,
+      "id": "g6AHx_OWbhg-ja-0045",
+      "sequence": 45
+    },
+    {
+      "text": "月に家事を切るのです。",
+      "start_seconds": 370.639,
+      "end_seconds": 374.96,
+      "id": "g6AHx_OWbhg-ja-0046",
+      "sequence": 46
+    },
+    {
+      "text": "民間宇宙開発はビジネスです。",
+      "start_seconds": 374.96,
+      "end_seconds": 379.919,
+      "id": "g6AHx_OWbhg-ja-0047",
+      "sequence": 47
+    },
+    {
+      "text": "もちろん高い技術も求められますが、それだけではなくたくさんの人を巻き込んで産業全体を盛り上げるような人が必要です。",
+      "start_seconds": 380.039,
+      "end_seconds": 389.96,
+      "id": "g6AHx_OWbhg-ja-0048",
+      "sequence": 48
+    },
+    {
+      "text": "これは私にとって新しい宇宙飛行士の道が開けたのです。",
+      "start_seconds": 389.96,
+      "end_seconds": 397.0,
+      "id": "g6AHx_OWbhg-ja-0049",
+      "sequence": 49
+    },
+    {
+      "text": "私が宇宙を好きになったのは小学2年生の頃。",
+      "start_seconds": 398.88,
+      "end_seconds": 404.36,
+      "id": "g6AHx_OWbhg-ja-0050",
+      "sequence": 50
+    },
+    {
+      "text": "当時いじめられっこだった私は沖縄のキャンプで仲間外りにされ悔しくてテント",
+      "start_seconds": 404.36,
+      "end_seconds": 412.319,
+      "id": "g6AHx_OWbhg-ja-0051",
+      "sequence": 51
+    },
+    {
+      "text": "を抜け出してビーチで見上げた星空が宝石のように輝いていました。",
+      "start_seconds": 412.319,
+      "end_seconds": 420.08,
+      "id": "g6AHx_OWbhg-ja-0052",
+      "sequence": 52
+    },
+    {
+      "text": "君のままが1番いいんだよと。星空が天から力をくれた気がしました。",
+      "start_seconds": 420.08,
+      "end_seconds": 427.16,
+      "id": "g6AHx_OWbhg-ja-0053",
+      "sequence": 53
+    },
+    {
+      "text": "それ以来今でも星空を見上げると力が湧いてくるのです。心が古い立つのです。",
+      "start_seconds": 427.16,
+      "end_seconds": 436.759,
+      "id": "g6AHx_OWbhg-ja-0054",
+      "sequence": 54
+    },
+    {
+      "text": "だからどんなに大変でも、例え大学で挫折しても、宇宙飛行士の倍率が高すぎても",
+      "start_seconds": 436.759,
+      "end_seconds": 446.599,
+      "id": "g6AHx_OWbhg-ja-0055",
+      "sequence": 55
+    },
+    {
+      "text": "私は宇宙が好きだからこれからも宇宙を目指し続けます。",
+      "start_seconds": 446.599,
+      "end_seconds": 453.67999999999995,
+      "id": "g6AHx_OWbhg-ja-0056",
+      "sequence": 56
+    },
+    {
+      "text": "私の社会人のキャリアは経済産業省の完了としてスタートしました。",
+      "start_seconds": 455.479,
+      "end_seconds": 462.24,
+      "id": "g6AHx_OWbhg-ja-0057",
+      "sequence": 57
+    },
+    {
+      "text": "希望は宇宙産業家でしたが、新しい働き方や女性活躍を推進する人材化",
+      "start_seconds": 462.24,
+      "end_seconds": 470.56,
+      "id": "g6AHx_OWbhg-ja-0058",
+      "sequence": 58
+    },
+    {
+      "text": "というところに配属されました。",
+      "start_seconds": 470.56,
+      "end_seconds": 474.879,
+      "id": "g6AHx_OWbhg-ja-0059",
+      "sequence": 59
+    },
+    {
+      "text": "目の前で新しい働き方に関わるうちになんて素晴らしいんだ。",
+      "start_seconds": 475.199,
+      "end_seconds": 481.599,
+      "id": "g6AHx_OWbhg-ja-0060",
+      "sequence": 60
+    },
+    {
+      "text": "私もこの政策を対現したいと思うようになり、独立して宇宙業界に戻ることを決めました。",
+      "start_seconds": 481.599,
+      "end_seconds": 492.08,
+      "id": "g6AHx_OWbhg-ja-0061",
+      "sequence": 61
+    },
+    {
+      "text": "経済産業省を退職して宇宙の仕事を駆け持っていた時、とある番組の所役のオファーが来ました。",
+      "start_seconds": 493.319,
+      "end_seconds": 505.28,
+      "id": "g6AHx_OWbhg-ja-0062",
+      "sequence": 62
+    },
+    {
+      "text": "この番組は1人の女性が真実の愛を求めてパートナーを探すという人気の番組です。",
+      "start_seconds": 505.28,
+      "end_seconds": 514.8,
+      "id": "g6AHx_OWbhg-ja-0063",
+      "sequence": 63
+    },
+    {
+      "text": "この番組を通して多くの人に宇宙を知ってもらいました。",
+      "start_seconds": 515.0,
+      "end_seconds": 521.8,
+      "id": "g6AHx_OWbhg-ja-0064",
+      "sequence": 64
+    },
+    {
+      "text": "宇宙は難しくてハードルが高いと思われますが、この時のようにこれからも私が駆け橋になりたいです。",
+      "start_seconds": 521.8,
+      "end_seconds": 532.1600000000001,
+      "id": "g6AHx_OWbhg-ja-0065",
+      "sequence": 65
+    },
+    {
+      "text": "今は宇宙スタートアップで働いています。",
+      "start_seconds": 532.56,
+      "end_seconds": 537.08,
+      "id": "g6AHx_OWbhg-ja-0066",
+      "sequence": 66
+    },
+    {
+      "text": "最近はその他にも宇宙線のOSを開発するというプロジェクトに携わっています。",
+      "start_seconds": 537.08,
+      "end_seconds": 544.8,
+      "id": "g6AHx_OWbhg-ja-0067",
+      "sequence": 67
+    },
+    {
+      "text": "今までバラバラのパーツで開発されていた宇宙機を統合的に開発管理をしよう。そういう技術です。",
+      "start_seconds": 544.8,
+      "end_seconds": 555.4399999999999,
+      "id": "g6AHx_OWbhg-ja-0068",
+      "sequence": 68
+    },
+    {
+      "text": "今後はより実践に近い実際の機会を操縦したりったりできるそんな技術的なスキルを身につけ",
+      "start_seconds": 555.6,
+      "end_seconds": 565.68,
+      "id": "g6AHx_OWbhg-ja-0069",
+      "sequence": 69
+    },
+    {
+      "text": "たいと思っています。",
+      "start_seconds": 565.68,
+      "end_seconds": 569.4799999999999,
+      "id": "g6AHx_OWbhg-ja-0070",
+      "sequence": 70
+    },
+    {
+      "text": "さあ、ここまでお話を聞いていただき、この人は何を成し遂げた専門家なんだと。",
+      "start_seconds": 570.519,
+      "end_seconds": 581.2,
+      "id": "g6AHx_OWbhg-ja-0071",
+      "sequence": 71
+    },
+    {
+      "text": "そう思った人がいるかもしれません。",
+      "start_seconds": 581.2,
+      "end_seconds": 585.6,
+      "id": "g6AHx_OWbhg-ja-0072",
+      "sequence": 72
+    },
+    {
+      "text": "鋭いです。その通り。私は道場です。",
+      "start_seconds": 585.6,
+      "end_seconds": 593.24,
+      "id": "g6AHx_OWbhg-ja-0073",
+      "sequence": 73
+    },
+    {
+      "text": "そんな私がなぜこのステージに立っているかというと、昔の自分が私みたいな人を必要としていた",
+      "start_seconds": 593.76,
+      "end_seconds": 602.64,
+      "id": "g6AHx_OWbhg-ja-0074",
+      "sequence": 74
+    },
+    {
+      "text": "からです。",
+      "start_seconds": 602.64,
+      "end_seconds": 605.959,
+      "id": "g6AHx_OWbhg-ja-0075",
+      "sequence": 75
+    },
+    {
+      "text": "遡ること数年前。",
+      "start_seconds": 606.6,
+      "end_seconds": 609.72,
+      "id": "g6AHx_OWbhg-ja-0076",
+      "sequence": 76
+    },
+    {
+      "text": "新卒で入った経済産業省をやめる決断をした時、私はすごく迷いました。",
+      "start_seconds": 609.72,
+      "end_seconds": 618.88,
+      "id": "g6AHx_OWbhg-ja-0077",
+      "sequence": 77
+    },
+    {
+      "text": "必死に勉強してせっかく乗ったエリートのレールをこんなに簡単に手放していいのか。",
+      "start_seconds": 619.24,
+      "end_seconds": 626.32,
+      "id": "g6AHx_OWbhg-ja-0078",
+      "sequence": 78
+    },
+    {
+      "text": "周りに反対されました。",
+      "start_seconds": 626.32,
+      "end_seconds": 629.48,
+      "id": "g6AHx_OWbhg-ja-0079",
+      "sequence": 79
+    },
+    {
+      "text": "心配もかけてしまいました。",
+      "start_seconds": 629.48,
+      "end_seconds": 633.76,
+      "id": "g6AHx_OWbhg-ja-0080",
+      "sequence": 80
+    },
+    {
+      "text": "どうしたらいいか分からず不安で毎晩泣きました。",
+      "start_seconds": 633.76,
+      "end_seconds": 639.76,
+      "id": "g6AHx_OWbhg-ja-0081",
+      "sequence": 81
+    },
+    {
+      "text": "でも私の直感がここを飛び立って自由に羽たけと言っていたのです。",
+      "start_seconds": 639.76,
+      "end_seconds": 649.399,
+      "id": "g6AHx_OWbhg-ja-0082",
+      "sequence": 82
+    },
+    {
+      "text": "あは勇気が欲しかった。",
+      "start_seconds": 649.399,
+      "end_seconds": 653.04,
+      "id": "g6AHx_OWbhg-ja-0083",
+      "sequence": 83
+    },
+    {
+      "text": "同じような教遇の人の体験を読めば背中押されるかもとたくさんネットを調べました。",
+      "start_seconds": 653.04,
+      "end_seconds": 662.24,
+      "id": "g6AHx_OWbhg-ja-0084",
+      "sequence": 84
+    },
+    {
+      "text": "そこにあったインタビュー基準のほとんどがすでに成功を収めた人の話でした。",
+      "start_seconds": 662.24,
+      "end_seconds": 670.279,
+      "id": "g6AHx_OWbhg-ja-0085",
+      "sequence": 85
+    },
+    {
+      "text": "成功は実力と運の合わせです。",
+      "start_seconds": 672.44,
+      "end_seconds": 679.72,
+      "id": "g6AHx_OWbhg-ja-0086",
+      "sequence": 86
+    },
+    {
+      "text": "そりゃもううまくいった人はいくらでも辻妻のあった綺麗な話ができるでしょう。",
+      "start_seconds": 679.72,
+      "end_seconds": 686.839,
+      "id": "g6AHx_OWbhg-ja-0087",
+      "sequence": 87
+    },
+    {
+      "text": "当時不安でいっぱいだった私はそう思ってしまい、綺麗なサクセスストーリーは刺さりませんでした。",
+      "start_seconds": 686.839,
+      "end_seconds": 695.92,
+      "id": "g6AHx_OWbhg-ja-0088",
+      "sequence": 88
+    },
+    {
+      "text": "私は今挑戦中のどうなるか分からない未来だとしても信じて突き進んでいる人の話を",
+      "start_seconds": 695.92,
+      "end_seconds": 703.56,
+      "id": "g6AHx_OWbhg-ja-0089",
+      "sequence": 89
+    },
+    {
+      "text": "聞いて勇気をもらいたかったのです。",
+      "start_seconds": 703.56,
+      "end_seconds": 708.76,
+      "id": "g6AHx_OWbhg-ja-0090",
+      "sequence": 90
+    },
+    {
+      "text": "だからこそ今回幸運にもこの機会を頂いた時、私はあえて未感染な状態でもこの場に",
+      "start_seconds": 708.76,
+      "end_seconds": 717.48,
+      "id": "g6AHx_OWbhg-ja-0091",
+      "sequence": 91
+    },
+    {
+      "text": "立とうと思いました。",
+      "start_seconds": 717.48,
+      "end_seconds": 721.2,
+      "id": "g6AHx_OWbhg-ja-0092",
+      "sequence": 92
+    },
+    {
+      "text": "もちろん私がいつ夢を叶えるか分かりません。",
+      "start_seconds": 721.2,
+      "end_seconds": 728.959,
+      "id": "g6AHx_OWbhg-ja-0093",
+      "sequence": 93
+    },
+    {
+      "text": "完璧な人間ではないので今でもたくさん失敗します。",
+      "start_seconds": 729.0,
+      "end_seconds": 734.8,
+      "id": "g6AHx_OWbhg-ja-0094",
+      "sequence": 94
+    },
+    {
+      "text": "それでも挑戦中の今を話すことに意味があると思いました。",
+      "start_seconds": 734.8,
+      "end_seconds": 741.12,
+      "id": "g6AHx_OWbhg-ja-0095",
+      "sequence": 95
+    },
+    {
+      "text": "今日このスピーチの最初に今日は夢を叶えたい人が勇気を持って一歩踏み出せる。そんな話を",
+      "start_seconds": 744.639,
+      "end_seconds": 755.48,
+      "id": "g6AHx_OWbhg-ja-0096",
+      "sequence": 96
+    },
+    {
+      "text": "しますと言いました。",
+      "start_seconds": 755.48,
+      "end_seconds": 759.24,
+      "id": "g6AHx_OWbhg-ja-0097",
+      "sequence": 97
+    },
+    {
+      "text": "それは5年前の私だったらこの話を聞いてよし頑張って踏み出そう。そう思えると",
+      "start_seconds": 759.839,
+      "end_seconds": 769.76,
+      "id": "g6AHx_OWbhg-ja-0098",
+      "sequence": 98
+    },
+    {
+      "text": "思ったからです。",
+      "start_seconds": 769.76,
+      "end_seconds": 773.0,
+      "id": "g6AHx_OWbhg-ja-0099",
+      "sequence": 99
+    },
+    {
+      "text": "今日この会場にいる誰かがそう思ってくれたら嬉しいです。",
+      "start_seconds": 773.0,
+      "end_seconds": 778.519,
+      "id": "g6AHx_OWbhg-ja-0100",
+      "sequence": 100
+    },
+    {
+      "text": "ありがとうございました。[拍手]",
+      "start_seconds": 778.519,
+      "end_seconds": 782.788,
+      "id": "g6AHx_OWbhg-ja-0101",
+      "sequence": 101
+    }
+  ],
+  "raw_captions": [
+    {
+      "text": "[音楽]",
+      "start_seconds": 9.825,
+      "end_seconds": 11.844999999999999
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 13.755,
+      "end_seconds": 15.775
+    },
+    {
+      "text": "こんにちは。",
+      "start_seconds": 18.64,
+      "end_seconds": 23.72
+    },
+    {
+      "text": "こんにちは。私は宇宙飛行士を目指す",
+      "start_seconds": 20.72,
+      "end_seconds": 23.72
+    },
+    {
+      "text": "29歳です。",
+      "start_seconds": 24.56,
+      "end_seconds": 30.88
+    },
+    {
+      "text": "宇宙に行為をして20年以上、宇宙飛行士",
+      "start_seconds": 27.679,
+      "end_seconds": 35.16
+    },
+    {
+      "text": "になるために色々なことをしてきました。",
+      "start_seconds": 30.88,
+      "end_seconds": 38.879
+    },
+    {
+      "text": "大学でロケットエンジンの研究をし、経済",
+      "start_seconds": 35.16,
+      "end_seconds": 42.279999999999994
+    },
+    {
+      "text": "産業省で官僚として働き、",
+      "start_seconds": 38.879,
+      "end_seconds": 46.28
+    },
+    {
+      "text": "今は宇宙スタートアップにいます。",
+      "start_seconds": 42.28,
+      "end_seconds": 50.28
+    },
+    {
+      "text": "時には恋愛リアリティ賞で主役をしたり、",
+      "start_seconds": 46.28,
+      "end_seconds": 53.84
+    },
+    {
+      "text": "番組で女性活躍や宇宙について話すことも",
+      "start_seconds": 50.28,
+      "end_seconds": 57.160000000000004
+    },
+    {
+      "text": "あります。",
+      "start_seconds": 53.84,
+      "end_seconds": 57.160000000000004
+    },
+    {
+      "text": "今日は",
+      "start_seconds": 57.199,
+      "end_seconds": 62.399
+    },
+    {
+      "text": "夢を叶えたい人が勇気を持って一歩",
+      "start_seconds": 59.239,
+      "end_seconds": 64.75999999999999
+    },
+    {
+      "text": "踏み出そうと思える。そんなお話をします",
+      "start_seconds": 62.399,
+      "end_seconds": 67.76
+    },
+    {
+      "text": "。",
+      "start_seconds": 64.76,
+      "end_seconds": 67.76
+    },
+    {
+      "text": "先ほどは色々な肩書きを並べましたが、",
+      "start_seconds": 68.0,
+      "end_seconds": 76.84
+    },
+    {
+      "text": "大学時代の私は落ちこぼれでした。",
+      "start_seconds": 72.32,
+      "end_seconds": 81.35999999999999
+    },
+    {
+      "text": "私がいた東京大学航空中工学家は日本災難",
+      "start_seconds": 76.84,
+      "end_seconds": 84.159
+    },
+    {
+      "text": "官の東大の中でも特に競争率の高い学部",
+      "start_seconds": 81.36,
+      "end_seconds": 86.4
+    },
+    {
+      "text": "です。",
+      "start_seconds": 84.159,
+      "end_seconds": 90.24000000000001
+    },
+    {
+      "text": "日本人宇宙飛行士の多くが卒業していて、",
+      "start_seconds": 86.4,
+      "end_seconds": 93.88000000000001
+    },
+    {
+      "text": "幼い頃から宇宙飛行士一筋だった私は自然",
+      "start_seconds": 90.24,
+      "end_seconds": 98.0
+    },
+    {
+      "text": "とここを目指しました。",
+      "start_seconds": 93.88,
+      "end_seconds": 103.119
+    },
+    {
+      "text": "高校までは成績はいつもトップでした。",
+      "start_seconds": 98.0,
+      "end_seconds": 106.759
+    },
+    {
+      "text": "誰よりも勉強していた地震もありますが、",
+      "start_seconds": 103.119,
+      "end_seconds": 108.88
+    },
+    {
+      "text": "それがちゃんと結果として現れていました",
+      "start_seconds": 106.759,
+      "end_seconds": 111.64
+    },
+    {
+      "text": "。",
+      "start_seconds": 108.88,
+      "end_seconds": 114.719
+    },
+    {
+      "text": "大学受験も成功して",
+      "start_seconds": 111.64,
+      "end_seconds": 117.68
+    },
+    {
+      "text": "学校の期待を背負って東大に進学しました",
+      "start_seconds": 114.719,
+      "end_seconds": 120.52099999999999
+    },
+    {
+      "text": "。",
+      "start_seconds": 117.68,
+      "end_seconds": 121.47900000000001
+    },
+    {
+      "text": "[ため息]",
+      "start_seconds": 120.521,
+      "end_seconds": 125.68
+    },
+    {
+      "text": "しかし入学してみると最難と言われるだけ",
+      "start_seconds": 121.479,
+      "end_seconds": 130.679
+    },
+    {
+      "text": "あってレベルの差に圧倒されました。",
+      "start_seconds": 125.68,
+      "end_seconds": 135.56
+    },
+    {
+      "text": "授業開始5分。教授の話を少し聞いたら私",
+      "start_seconds": 130.679,
+      "end_seconds": 138.28
+    },
+    {
+      "text": "の周りの同級生たちはスらスらと演習問題",
+      "start_seconds": 135.56,
+      "end_seconds": 141.72
+    },
+    {
+      "text": "を解き始めるのです。",
+      "start_seconds": 138.28,
+      "end_seconds": 145.72
+    },
+    {
+      "text": "一方、私は授業が終わってもまだ理解でき",
+      "start_seconds": 141.72,
+      "end_seconds": 150.07999999999998
+    },
+    {
+      "text": "ず、家に帰って復讐して5時間かけて",
+      "start_seconds": 145.72,
+      "end_seconds": 153.4
+    },
+    {
+      "text": "やっとわかる。",
+      "start_seconds": 150.08,
+      "end_seconds": 157.12
+    },
+    {
+      "text": "私がいたロケットの推進コースは女子は私",
+      "start_seconds": 153.4,
+      "end_seconds": 160.8
+    },
+    {
+      "text": "1人だけでした。",
+      "start_seconds": 157.12,
+      "end_seconds": 160.8
+    },
+    {
+      "text": "ただでさえできない私は周りから浮いてい",
+      "start_seconds": 163.08,
+      "end_seconds": 170.8
+    },
+    {
+      "text": "ました。",
+      "start_seconds": 167.519,
+      "end_seconds": 170.8
+    },
+    {
+      "text": "テスト期間に",
+      "start_seconds": 170.959,
+      "end_seconds": 175.76
+    },
+    {
+      "text": "あいつが受かるはずないと言われたことも",
+      "start_seconds": 173.879,
+      "end_seconds": 179.2
+    },
+    {
+      "text": "ありました。",
+      "start_seconds": 175.76,
+      "end_seconds": 179.2
+    },
+    {
+      "text": "今まで経験したことのない",
+      "start_seconds": 179.44,
+      "end_seconds": 189.04
+    },
+    {
+      "text": "苦い、恥ずかしいそんな思いをしました。",
+      "start_seconds": 183.4,
+      "end_seconds": 192.36
+    },
+    {
+      "text": "ああ、世の中にはどんなに努力をしても",
+      "start_seconds": 189.04,
+      "end_seconds": 197.0
+    },
+    {
+      "text": "到達できない本当の天才がいるんだな。",
+      "start_seconds": 192.36,
+      "end_seconds": 200.959
+    },
+    {
+      "text": "そんな人たちと宇宙飛行士の座を競い合う",
+      "start_seconds": 197.0,
+      "end_seconds": 203.159
+    },
+    {
+      "text": "なんて",
+      "start_seconds": 200.959,
+      "end_seconds": 207.48
+    },
+    {
+      "text": "絶望した瞬間でした。",
+      "start_seconds": 203.159,
+      "end_seconds": 207.48
+    },
+    {
+      "text": "しかし宇宙への愛は誰にも負けていません",
+      "start_seconds": 207.92,
+      "end_seconds": 213.55999999999997
+    },
+    {
+      "text": "でした。",
+      "start_seconds": 211.2,
+      "end_seconds": 216.319
+    },
+    {
+      "text": "中学の時から大事にしていた宇宙物理の本",
+      "start_seconds": 213.56,
+      "end_seconds": 218.959
+    },
+    {
+      "text": "があるのですが、",
+      "start_seconds": 216.319,
+      "end_seconds": 222.51899999999998
+    },
+    {
+      "text": "辛い時はそれを守りに死に者類で頑張り",
+      "start_seconds": 218.959,
+      "end_seconds": 225.76
+    },
+    {
+      "text": "ました。",
+      "start_seconds": 222.519,
+      "end_seconds": 225.76000000000002
+    },
+    {
+      "text": "[ため息]",
+      "start_seconds": 225.977,
+      "end_seconds": 230.439
+    },
+    {
+      "text": "さあ、皆さん、宇宙飛行士の募集の頻度は",
+      "start_seconds": 226.72,
+      "end_seconds": 234.12
+    },
+    {
+      "text": "ご存知ですか?",
+      "start_seconds": 230.439,
+      "end_seconds": 234.12
+    },
+    {
+      "text": "実は毎年ではありません。",
+      "start_seconds": 234.4,
+      "end_seconds": 243.439
+    },
+    {
+      "text": "それどころか直近は5年前の2021年。",
+      "start_seconds": 237.959,
+      "end_seconds": 247.28
+    },
+    {
+      "text": "合格者はたった2名でした。",
+      "start_seconds": 243.439,
+      "end_seconds": 251.12
+    },
+    {
+      "text": "そしてその前は13年も遡り、2008年",
+      "start_seconds": 247.28,
+      "end_seconds": 256.04
+    },
+    {
+      "text": "。これまた合格者はたった3名。",
+      "start_seconds": 251.12,
+      "end_seconds": 259.28000000000003
+    },
+    {
+      "text": "倍率は2000倍にもなります。もちろん",
+      "start_seconds": 256.04,
+      "end_seconds": 262.12
+    },
+    {
+      "text": "実務経験も必要です。",
+      "start_seconds": 259.28,
+      "end_seconds": 265.55999999999995
+    },
+    {
+      "text": "つまり大学を卒業してすぐ宇宙飛行士とは",
+      "start_seconds": 262.12,
+      "end_seconds": 268.919
+    },
+    {
+      "text": "もちろんいかず",
+      "start_seconds": 265.56,
+      "end_seconds": 273.08
+    },
+    {
+      "text": "どんな仕事に着こうかと考えていた時、",
+      "start_seconds": 268.919,
+      "end_seconds": 274.919
+    },
+    {
+      "text": "私は",
+      "start_seconds": 273.08,
+      "end_seconds": 279.0
+    },
+    {
+      "text": "宇宙業界で働く人たちがより活躍できる",
+      "start_seconds": 274.919,
+      "end_seconds": 282.19899999999996
+    },
+    {
+      "text": "そんな制度を作りたいと思い、",
+      "start_seconds": 279.0,
+      "end_seconds": 284.72
+    },
+    {
+      "text": "技術として経済産業省に行くことに決め",
+      "start_seconds": 282.199,
+      "end_seconds": 287.759
+    },
+    {
+      "text": "ました。",
+      "start_seconds": 284.72,
+      "end_seconds": 287.759
+    },
+    {
+      "text": "就活が終わり、ある日学科の同期と話して",
+      "start_seconds": 288.8,
+      "end_seconds": 295.72
+    },
+    {
+      "text": "いた時、私の内定先を伝えるとすごいと",
+      "start_seconds": 291.12,
+      "end_seconds": 298.639
+    },
+    {
+      "text": "言われました。",
+      "start_seconds": 295.72,
+      "end_seconds": 302.6
+    },
+    {
+      "text": "なんと大学4年間私が全く勉強で勝て",
+      "start_seconds": 298.639,
+      "end_seconds": 305.8
+    },
+    {
+      "text": "なかった同期たちの中にも",
+      "start_seconds": 302.6,
+      "end_seconds": 310.36
+    },
+    {
+      "text": "就活で苦労した人がいたのです。",
+      "start_seconds": 305.8,
+      "end_seconds": 312.88
+    },
+    {
+      "text": "アプローチを変えたら",
+      "start_seconds": 310.36,
+      "end_seconds": 317.68
+    },
+    {
+      "text": "私でも彼らとは違う強みが見つかるのかも",
+      "start_seconds": 312.88,
+      "end_seconds": 319.84
+    },
+    {
+      "text": "しれない。",
+      "start_seconds": 317.68,
+      "end_seconds": 322.40000000000003
+    },
+    {
+      "text": "そう思いました。",
+      "start_seconds": 319.84,
+      "end_seconds": 329.71999999999997
+    },
+    {
+      "text": "これが私が夢を叶える戦略の始まりです。",
+      "start_seconds": 322.4,
+      "end_seconds": 329.71999999999997
+    },
+    {
+      "text": "今の宇宙は民間の時代です。",
+      "start_seconds": 330.24,
+      "end_seconds": 337.639
+    },
+    {
+      "text": "今までの宇宙飛行士はNASAや弱差に",
+      "start_seconds": 334.919,
+      "end_seconds": 340.479
+    },
+    {
+      "text": "所属するいわば公務員のような存在でした",
+      "start_seconds": 337.639,
+      "end_seconds": 345.40000000000003
+    },
+    {
+      "text": "。しかし2027年から本格的に民間企業",
+      "start_seconds": 340.479,
+      "end_seconds": 348.44
+    },
+    {
+      "text": "の宇宙飛行士が宇宙ミッションに挑みます",
+      "start_seconds": 345.4,
+      "end_seconds": 353.84
+    },
+    {
+      "text": "。理由は色々あるのですが2030年に約",
+      "start_seconds": 348.44,
+      "end_seconds": 357.52
+    },
+    {
+      "text": "30年間運用されたISS国際宇宙",
+      "start_seconds": 353.84,
+      "end_seconds": 360.75899999999996
+    },
+    {
+      "text": "ステーションが退役します。",
+      "start_seconds": 357.52,
+      "end_seconds": 365.479
+    },
+    {
+      "text": "地球低起動の活動は国から民間企業に",
+      "start_seconds": 360.759,
+      "end_seconds": 370.639
+    },
+    {
+      "text": "バトンタッチされます。そして政府は未会",
+      "start_seconds": 365.479,
+      "end_seconds": 374.96
+    },
+    {
+      "text": "月に家事を切るのです。",
+      "start_seconds": 370.639,
+      "end_seconds": 379.919
+    },
+    {
+      "text": "民間宇宙開発はビジネスです。",
+      "start_seconds": 374.96,
+      "end_seconds": 379.919
+    },
+    {
+      "text": "もちろん高い技術も求められますが、それ",
+      "start_seconds": 380.039,
+      "end_seconds": 385.919
+    },
+    {
+      "text": "だけではなくたくさんの人を巻き込んで",
+      "start_seconds": 383.28,
+      "end_seconds": 388.15999999999997
+    },
+    {
+      "text": "産業全体を盛り上げるような人が必要です",
+      "start_seconds": 385.919,
+      "end_seconds": 389.96
+    },
+    {
+      "text": "。",
+      "start_seconds": 388.16,
+      "end_seconds": 393.319
+    },
+    {
+      "text": "これは私にとって新しい宇宙飛行士の道が",
+      "start_seconds": 389.96,
+      "end_seconds": 397.0
+    },
+    {
+      "text": "開けたのです。",
+      "start_seconds": 393.319,
+      "end_seconds": 397.0
+    },
+    {
+      "text": "私が宇宙を好きになったのは小学2年生の",
+      "start_seconds": 398.88,
+      "end_seconds": 404.36
+    },
+    {
+      "text": "頃。",
+      "start_seconds": 402.36,
+      "end_seconds": 407.56
+    },
+    {
+      "text": "当時いじめられっこだった私は沖縄の",
+      "start_seconds": 404.36,
+      "end_seconds": 412.319
+    },
+    {
+      "text": "キャンプで仲間外りにされ悔しくてテント",
+      "start_seconds": 407.56,
+      "end_seconds": 416.56
+    },
+    {
+      "text": "を抜け出してビーチで見上げた星空が宝石",
+      "start_seconds": 412.319,
+      "end_seconds": 420.08000000000004
+    },
+    {
+      "text": "のように輝いていました。",
+      "start_seconds": 416.56,
+      "end_seconds": 423.8
+    },
+    {
+      "text": "君のままが1番いいんだよと。星空が天",
+      "start_seconds": 420.08,
+      "end_seconds": 427.15999999999997
+    },
+    {
+      "text": "から力をくれた気がしました。",
+      "start_seconds": 423.8,
+      "end_seconds": 430.72
+    },
+    {
+      "text": "それ以来今でも星空を見上げると",
+      "start_seconds": 427.16,
+      "end_seconds": 434.28000000000003
+    },
+    {
+      "text": "力が湧いてくるのです。心が古い立つの",
+      "start_seconds": 430.72,
+      "end_seconds": 436.759
+    },
+    {
+      "text": "です。",
+      "start_seconds": 434.28,
+      "end_seconds": 440.67999999999995
+    },
+    {
+      "text": "だからどんなに大変でも、例え大学で挫折",
+      "start_seconds": 436.759,
+      "end_seconds": 446.599
+    },
+    {
+      "text": "しても、宇宙飛行士の倍率が高すぎても",
+      "start_seconds": 440.68,
+      "end_seconds": 449.84000000000003
+    },
+    {
+      "text": "私は宇宙が好きだからこれからも宇宙を",
+      "start_seconds": 446.599,
+      "end_seconds": 453.68
+    },
+    {
+      "text": "目指し続けます。",
+      "start_seconds": 449.84,
+      "end_seconds": 453.67999999999995
+    },
+    {
+      "text": "私の社会人のキャリアは経済産業省の完了",
+      "start_seconds": 455.479,
+      "end_seconds": 462.24
+    },
+    {
+      "text": "としてスタートしました。",
+      "start_seconds": 458.4,
+      "end_seconds": 466.35999999999996
+    },
+    {
+      "text": "希望は宇宙産業家でしたが、",
+      "start_seconds": 462.24,
+      "end_seconds": 470.56
+    },
+    {
+      "text": "新しい働き方や女性活躍を推進する人材化",
+      "start_seconds": 466.36,
+      "end_seconds": 474.879
+    },
+    {
+      "text": "というところに配属されました。",
+      "start_seconds": 470.56,
+      "end_seconds": 474.879
+    },
+    {
+      "text": "目の前で新しい働き方に関わるうちに",
+      "start_seconds": 475.199,
+      "end_seconds": 481.599
+    },
+    {
+      "text": "なんて素晴らしいんだ。",
+      "start_seconds": 478.96,
+      "end_seconds": 484.159
+    },
+    {
+      "text": "私もこの政策を対現したいと思うように",
+      "start_seconds": 481.599,
+      "end_seconds": 486.479
+    },
+    {
+      "text": "なり、",
+      "start_seconds": 484.159,
+      "end_seconds": 489.08
+    },
+    {
+      "text": "独立して宇宙業界に戻ることを決めました",
+      "start_seconds": 486.479,
+      "end_seconds": 492.08
+    },
+    {
+      "text": "。",
+      "start_seconds": 489.08,
+      "end_seconds": 492.08
+    },
+    {
+      "text": "経済産業省を退職して宇宙の仕事を",
+      "start_seconds": 493.319,
+      "end_seconds": 499.91900000000004
+    },
+    {
+      "text": "駆け持っていた時、",
+      "start_seconds": 497.0,
+      "end_seconds": 505.28
+    },
+    {
+      "text": "とある番組の所役のオファーが来ました。",
+      "start_seconds": 499.919,
+      "end_seconds": 509.639
+    },
+    {
+      "text": "この番組は1人の女性が真実の愛を求めて",
+      "start_seconds": 505.28,
+      "end_seconds": 514.8
+    },
+    {
+      "text": "パートナーを探すという人気の番組です。",
+      "start_seconds": 509.639,
+      "end_seconds": 514.8
+    },
+    {
+      "text": "この番組を通して多くの人に宇宙を知って",
+      "start_seconds": 515.0,
+      "end_seconds": 521.8
+    },
+    {
+      "text": "もらいました。",
+      "start_seconds": 518.399,
+      "end_seconds": 523.959
+    },
+    {
+      "text": "宇宙は難しくてハードルが高いと思われ",
+      "start_seconds": 521.8,
+      "end_seconds": 528.0799999999999
+    },
+    {
+      "text": "ますが、この時のようにこれからも私が",
+      "start_seconds": 523.959,
+      "end_seconds": 532.16
+    },
+    {
+      "text": "駆け橋になりたいです。",
+      "start_seconds": 528.08,
+      "end_seconds": 532.1600000000001
+    },
+    {
+      "text": "今は宇宙スタートアップで働いています。",
+      "start_seconds": 532.56,
+      "end_seconds": 540.76
+    },
+    {
+      "text": "最近はその他にも宇宙線のOSを開発する",
+      "start_seconds": 537.08,
+      "end_seconds": 544.8000000000001
+    },
+    {
+      "text": "というプロジェクトに携わっています。",
+      "start_seconds": 540.76,
+      "end_seconds": 547.3199999999999
+    },
+    {
+      "text": "今までバラバラのパーツで開発されていた",
+      "start_seconds": 544.8,
+      "end_seconds": 551.8
+    },
+    {
+      "text": "宇宙機を統合的に開発管理をしよう。そう",
+      "start_seconds": 547.32,
+      "end_seconds": 555.44
+    },
+    {
+      "text": "いう技術です。",
+      "start_seconds": 551.8,
+      "end_seconds": 555.4399999999999
+    },
+    {
+      "text": "今後はより",
+      "start_seconds": 555.6,
+      "end_seconds": 562.839
+    },
+    {
+      "text": "実践に近い実際の機会を操縦したりったり",
+      "start_seconds": 558.2,
+      "end_seconds": 565.6800000000001
+    },
+    {
+      "text": "できるそんな技術的なスキルを身につけ",
+      "start_seconds": 562.839,
+      "end_seconds": 569.48
+    },
+    {
+      "text": "たいと思っています。",
+      "start_seconds": 565.68,
+      "end_seconds": 569.4799999999999
+    },
+    {
+      "text": "さあ、ここまでお話を聞いていただき、",
+      "start_seconds": 570.519,
+      "end_seconds": 581.2
+    },
+    {
+      "text": "この人は何を成し遂げた専門家なんだと。",
+      "start_seconds": 576.959,
+      "end_seconds": 585.5999999999999
+    },
+    {
+      "text": "そう思った人がいるかもしれません。",
+      "start_seconds": 581.2,
+      "end_seconds": 593.24
+    },
+    {
+      "text": "鋭いです。その通り。私は道場です。",
+      "start_seconds": 585.6,
+      "end_seconds": 593.24
+    },
+    {
+      "text": "そんな私がなぜこのステージに立っている",
+      "start_seconds": 593.76,
+      "end_seconds": 598.279
+    },
+    {
+      "text": "かというと、",
+      "start_seconds": 595.76,
+      "end_seconds": 602.64
+    },
+    {
+      "text": "昔の自分が私みたいな人を必要としていた",
+      "start_seconds": 598.279,
+      "end_seconds": 605.959
+    },
+    {
+      "text": "からです。",
+      "start_seconds": 602.64,
+      "end_seconds": 605.959
+    },
+    {
+      "text": "遡ること数年前。",
+      "start_seconds": 606.6,
+      "end_seconds": 612.2
+    },
+    {
+      "text": "新卒で入った経済産業省をやめる決断をし",
+      "start_seconds": 609.72,
+      "end_seconds": 618.88
+    },
+    {
+      "text": "た時、私はすごく迷いました。",
+      "start_seconds": 612.2,
+      "end_seconds": 618.88
+    },
+    {
+      "text": "必死に勉強してせっかく乗ったエリートの",
+      "start_seconds": 619.24,
+      "end_seconds": 624.04
+    },
+    {
+      "text": "レールをこんなに簡単に手放していいのか",
+      "start_seconds": 622.0,
+      "end_seconds": 626.32
+    },
+    {
+      "text": "。",
+      "start_seconds": 624.04,
+      "end_seconds": 629.48
+    },
+    {
+      "text": "周りに反対されました。",
+      "start_seconds": 626.32,
+      "end_seconds": 633.7600000000001
+    },
+    {
+      "text": "心配もかけてしまいました。",
+      "start_seconds": 629.48,
+      "end_seconds": 636.48
+    },
+    {
+      "text": "どうしたらいいか分からず不安で毎晩泣き",
+      "start_seconds": 633.76,
+      "end_seconds": 639.76
+    },
+    {
+      "text": "ました。",
+      "start_seconds": 636.48,
+      "end_seconds": 643.72
+    },
+    {
+      "text": "でも私の直感が",
+      "start_seconds": 639.76,
+      "end_seconds": 646.16
+    },
+    {
+      "text": "ここを飛び立って自由に羽たけと言ってい",
+      "start_seconds": 643.72,
+      "end_seconds": 649.399
+    },
+    {
+      "text": "たのです。",
+      "start_seconds": 646.16,
+      "end_seconds": 653.04
+    },
+    {
+      "text": "あは勇気が欲しかった。",
+      "start_seconds": 649.399,
+      "end_seconds": 656.68
+    },
+    {
+      "text": "同じような教遇の人の体験を読めば背中",
+      "start_seconds": 653.04,
+      "end_seconds": 658.88
+    },
+    {
+      "text": "押されるかもと",
+      "start_seconds": 656.68,
+      "end_seconds": 662.2399999999999
+    },
+    {
+      "text": "たくさんネットを調べました。",
+      "start_seconds": 658.88,
+      "end_seconds": 664.32
+    },
+    {
+      "text": "そこにあったインタビュー基準のほとんど",
+      "start_seconds": 662.24,
+      "end_seconds": 670.279
+    },
+    {
+      "text": "がすでに成功を収めた人の話でした。",
+      "start_seconds": 664.32,
+      "end_seconds": 670.279
+    },
+    {
+      "text": "成功は",
+      "start_seconds": 672.44,
+      "end_seconds": 679.72
+    },
+    {
+      "text": "実力と運の合わせです。",
+      "start_seconds": 675.279,
+      "end_seconds": 682.959
+    },
+    {
+      "text": "そりゃもううまくいった人はいくらでも",
+      "start_seconds": 679.72,
+      "end_seconds": 686.839
+    },
+    {
+      "text": "辻妻のあった綺麗な話ができるでしょう。",
+      "start_seconds": 682.959,
+      "end_seconds": 689.1999999999999
+    },
+    {
+      "text": "当時不安でいっぱいだった私はそう思って",
+      "start_seconds": 686.839,
+      "end_seconds": 692.519
+    },
+    {
+      "text": "しまい、綺麗なサクセスストーリーは",
+      "start_seconds": 689.2,
+      "end_seconds": 695.9200000000001
+    },
+    {
+      "text": "刺さりませんでした。",
+      "start_seconds": 692.519,
+      "end_seconds": 700.72
+    },
+    {
+      "text": "私は今挑戦中のどうなるか分からない未来",
+      "start_seconds": 695.92,
+      "end_seconds": 703.56
+    },
+    {
+      "text": "だとしても信じて突き進んでいる人の話を",
+      "start_seconds": 700.72,
+      "end_seconds": 708.76
+    },
+    {
+      "text": "聞いて勇気をもらいたかったのです。",
+      "start_seconds": 703.56,
+      "end_seconds": 712.16
+    },
+    {
+      "text": "だからこそ今回幸運にもこの機会を頂いた",
+      "start_seconds": 708.76,
+      "end_seconds": 714.36
+    },
+    {
+      "text": "時、",
+      "start_seconds": 712.16,
+      "end_seconds": 717.48
+    },
+    {
+      "text": "私はあえて未感染な状態でもこの場に",
+      "start_seconds": 714.36,
+      "end_seconds": 721.2
+    },
+    {
+      "text": "立とうと思いました。",
+      "start_seconds": 717.48,
+      "end_seconds": 724.04
+    },
+    {
+      "text": "もちろん",
+      "start_seconds": 721.2,
+      "end_seconds": 728.9590000000001
+    },
+    {
+      "text": "私がいつ夢を叶えるか分かりません。",
+      "start_seconds": 724.04,
+      "end_seconds": 728.959
+    },
+    {
+      "text": "完璧な人間ではないので今でもたくさん",
+      "start_seconds": 729.0,
+      "end_seconds": 734.8
+    },
+    {
+      "text": "失敗します。",
+      "start_seconds": 732.12,
+      "end_seconds": 737.32
+    },
+    {
+      "text": "それでも挑戦中の今を話すことに意味が",
+      "start_seconds": 734.8,
+      "end_seconds": 741.12
+    },
+    {
+      "text": "あると思いました。",
+      "start_seconds": 737.32,
+      "end_seconds": 741.12
+    },
+    {
+      "text": "今日このスピーチの最初に",
+      "start_seconds": 744.639,
+      "end_seconds": 752.6800000000001
+    },
+    {
+      "text": "今日は夢を叶えたい人が",
+      "start_seconds": 749.0,
+      "end_seconds": 755.48
+    },
+    {
+      "text": "勇気を持って一歩踏み出せる。そんな話を",
+      "start_seconds": 752.68,
+      "end_seconds": 759.2399999999999
+    },
+    {
+      "text": "しますと言いました。",
+      "start_seconds": 755.48,
+      "end_seconds": 759.24
+    },
+    {
+      "text": "それは5年前の私だったらこの話を聞いて",
+      "start_seconds": 759.839,
+      "end_seconds": 769.7600000000001
+    },
+    {
+      "text": "よし頑張って踏み出そう。そう思えると",
+      "start_seconds": 766.16,
+      "end_seconds": 773.0
+    },
+    {
+      "text": "思ったからです。",
+      "start_seconds": 769.76,
+      "end_seconds": 775.68
+    },
+    {
+      "text": "今日この会場にいる誰かがそう思ってくれ",
+      "start_seconds": 773.0,
+      "end_seconds": 778.519
+    },
+    {
+      "text": "たら嬉しいです。",
+      "start_seconds": 775.68,
+      "end_seconds": 782.7879999999999
+    },
+    {
+      "text": "ありがとうございました。[拍手]",
+      "start_seconds": 778.519,
+      "end_seconds": 782.788
+    }
+  ],
+  "display_captions": [
+    {
+      "text": "[音楽]",
+      "start_seconds": 9.825,
+      "end_seconds": 11.844999999999999,
+      "id": "g6AHx_OWbhg-display-0001",
+      "segment_id": "g6AHx_OWbhg-ja-0001"
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 13.755,
+      "end_seconds": 15.775,
+      "id": "g6AHx_OWbhg-display-0002",
+      "segment_id": "g6AHx_OWbhg-ja-0002"
+    },
+    {
+      "text": "こんにちは。",
+      "start_seconds": 18.64,
+      "end_seconds": 20.72,
+      "id": "g6AHx_OWbhg-display-0003",
+      "segment_id": "g6AHx_OWbhg-ja-0003"
+    },
+    {
+      "text": "こんにちは。私は宇宙飛行士を目指す",
+      "start_seconds": 20.72,
+      "end_seconds": 23.72,
+      "id": "g6AHx_OWbhg-display-0004",
+      "segment_id": "g6AHx_OWbhg-ja-0003"
+    },
+    {
+      "text": "29歳です。",
+      "start_seconds": 24.56,
+      "end_seconds": 27.679,
+      "id": "g6AHx_OWbhg-display-0005",
+      "segment_id": "g6AHx_OWbhg-ja-0004"
+    },
+    {
+      "text": "宇宙に行為をして20年以上、宇宙飛行士",
+      "start_seconds": 27.679,
+      "end_seconds": 30.88,
+      "id": "g6AHx_OWbhg-display-0006",
+      "segment_id": "g6AHx_OWbhg-ja-0005"
+    },
+    {
+      "text": "になるために色々なことをしてきました。",
+      "start_seconds": 30.88,
+      "end_seconds": 35.16,
+      "id": "g6AHx_OWbhg-display-0007",
+      "segment_id": "g6AHx_OWbhg-ja-0005"
+    },
+    {
+      "text": "大学でロケットエンジンの研究をし、経済",
+      "start_seconds": 35.16,
+      "end_seconds": 38.879,
+      "id": "g6AHx_OWbhg-display-0008",
+      "segment_id": "g6AHx_OWbhg-ja-0006"
+    },
+    {
+      "text": "産業省で官僚として働き、",
+      "start_seconds": 38.879,
+      "end_seconds": 42.28,
+      "id": "g6AHx_OWbhg-display-0009",
+      "segment_id": "g6AHx_OWbhg-ja-0006"
+    },
+    {
+      "text": "今は宇宙スタートアップにいます。",
+      "start_seconds": 42.28,
+      "end_seconds": 46.28,
+      "id": "g6AHx_OWbhg-display-0010",
+      "segment_id": "g6AHx_OWbhg-ja-0006"
+    },
+    {
+      "text": "時には恋愛リアリティ賞で主役をしたり、",
+      "start_seconds": 46.28,
+      "end_seconds": 50.28,
+      "id": "g6AHx_OWbhg-display-0011",
+      "segment_id": "g6AHx_OWbhg-ja-0007"
+    },
+    {
+      "text": "番組で女性活躍や宇宙について話すことも",
+      "start_seconds": 50.28,
+      "end_seconds": 53.84,
+      "id": "g6AHx_OWbhg-display-0012",
+      "segment_id": "g6AHx_OWbhg-ja-0007"
+    },
+    {
+      "text": "あります。",
+      "start_seconds": 53.84,
+      "end_seconds": 57.160000000000004,
+      "id": "g6AHx_OWbhg-display-0013",
+      "segment_id": "g6AHx_OWbhg-ja-0007"
+    },
+    {
+      "text": "今日は",
+      "start_seconds": 57.199,
+      "end_seconds": 59.239,
+      "id": "g6AHx_OWbhg-display-0014",
+      "segment_id": "g6AHx_OWbhg-ja-0008"
+    },
+    {
+      "text": "夢を叶えたい人が勇気を持って一歩",
+      "start_seconds": 59.239,
+      "end_seconds": 62.399,
+      "id": "g6AHx_OWbhg-display-0015",
+      "segment_id": "g6AHx_OWbhg-ja-0008"
+    },
+    {
+      "text": "踏み出そうと思える。そんなお話をします",
+      "start_seconds": 62.399,
+      "end_seconds": 64.76,
+      "id": "g6AHx_OWbhg-display-0016",
+      "segment_id": "g6AHx_OWbhg-ja-0008"
+    },
+    {
+      "text": "。",
+      "start_seconds": 64.76,
+      "end_seconds": 67.76,
+      "id": "g6AHx_OWbhg-display-0017",
+      "segment_id": "g6AHx_OWbhg-ja-0008"
+    },
+    {
+      "text": "先ほどは色々な肩書きを並べましたが、",
+      "start_seconds": 68.0,
+      "end_seconds": 72.32,
+      "id": "g6AHx_OWbhg-display-0018",
+      "segment_id": "g6AHx_OWbhg-ja-0009"
+    },
+    {
+      "text": "大学時代の私は落ちこぼれでした。",
+      "start_seconds": 72.32,
+      "end_seconds": 76.84,
+      "id": "g6AHx_OWbhg-display-0019",
+      "segment_id": "g6AHx_OWbhg-ja-0009"
+    },
+    {
+      "text": "私がいた東京大学航空中工学家は日本災難",
+      "start_seconds": 76.84,
+      "end_seconds": 81.36,
+      "id": "g6AHx_OWbhg-display-0020",
+      "segment_id": "g6AHx_OWbhg-ja-0010"
+    },
+    {
+      "text": "官の東大の中でも特に競争率の高い学部",
+      "start_seconds": 81.36,
+      "end_seconds": 84.159,
+      "id": "g6AHx_OWbhg-display-0021",
+      "segment_id": "g6AHx_OWbhg-ja-0010"
+    },
+    {
+      "text": "です。",
+      "start_seconds": 84.159,
+      "end_seconds": 86.4,
+      "id": "g6AHx_OWbhg-display-0022",
+      "segment_id": "g6AHx_OWbhg-ja-0010"
+    },
+    {
+      "text": "日本人宇宙飛行士の多くが卒業していて、",
+      "start_seconds": 86.4,
+      "end_seconds": 90.24,
+      "id": "g6AHx_OWbhg-display-0023",
+      "segment_id": "g6AHx_OWbhg-ja-0011"
+    },
+    {
+      "text": "幼い頃から宇宙飛行士一筋だった私は自然",
+      "start_seconds": 90.24,
+      "end_seconds": 93.88,
+      "id": "g6AHx_OWbhg-display-0024",
+      "segment_id": "g6AHx_OWbhg-ja-0011"
+    },
+    {
+      "text": "とここを目指しました。",
+      "start_seconds": 93.88,
+      "end_seconds": 98.0,
+      "id": "g6AHx_OWbhg-display-0025",
+      "segment_id": "g6AHx_OWbhg-ja-0011"
+    },
+    {
+      "text": "高校までは成績はいつもトップでした。",
+      "start_seconds": 98.0,
+      "end_seconds": 103.119,
+      "id": "g6AHx_OWbhg-display-0026",
+      "segment_id": "g6AHx_OWbhg-ja-0012"
+    },
+    {
+      "text": "誰よりも勉強していた地震もありますが、",
+      "start_seconds": 103.119,
+      "end_seconds": 106.759,
+      "id": "g6AHx_OWbhg-display-0027",
+      "segment_id": "g6AHx_OWbhg-ja-0013"
+    },
+    {
+      "text": "それがちゃんと結果として現れていました",
+      "start_seconds": 106.759,
+      "end_seconds": 108.88,
+      "id": "g6AHx_OWbhg-display-0028",
+      "segment_id": "g6AHx_OWbhg-ja-0013"
+    },
+    {
+      "text": "。",
+      "start_seconds": 108.88,
+      "end_seconds": 111.64,
+      "id": "g6AHx_OWbhg-display-0029",
+      "segment_id": "g6AHx_OWbhg-ja-0013"
+    },
+    {
+      "text": "大学受験も成功して",
+      "start_seconds": 111.64,
+      "end_seconds": 114.719,
+      "id": "g6AHx_OWbhg-display-0030",
+      "segment_id": "g6AHx_OWbhg-ja-0014"
+    },
+    {
+      "text": "学校の期待を背負って東大に進学しました",
+      "start_seconds": 114.719,
+      "end_seconds": 117.68,
+      "id": "g6AHx_OWbhg-display-0031",
+      "segment_id": "g6AHx_OWbhg-ja-0014"
+    },
+    {
+      "text": "。",
+      "start_seconds": 117.68,
+      "end_seconds": 120.521,
+      "id": "g6AHx_OWbhg-display-0032",
+      "segment_id": "g6AHx_OWbhg-ja-0014"
+    },
+    {
+      "text": "[ため息]",
+      "start_seconds": 120.521,
+      "end_seconds": 121.479,
+      "id": "g6AHx_OWbhg-display-0033",
+      "segment_id": "g6AHx_OWbhg-ja-0015"
+    },
+    {
+      "text": "しかし入学してみると最難と言われるだけ",
+      "start_seconds": 121.479,
+      "end_seconds": 125.68,
+      "id": "g6AHx_OWbhg-display-0034",
+      "segment_id": "g6AHx_OWbhg-ja-0015"
+    },
+    {
+      "text": "あってレベルの差に圧倒されました。",
+      "start_seconds": 125.68,
+      "end_seconds": 130.679,
+      "id": "g6AHx_OWbhg-display-0035",
+      "segment_id": "g6AHx_OWbhg-ja-0015"
+    },
+    {
+      "text": "授業開始5分。教授の話を少し聞いたら私",
+      "start_seconds": 130.679,
+      "end_seconds": 135.56,
+      "id": "g6AHx_OWbhg-display-0036",
+      "segment_id": "g6AHx_OWbhg-ja-0016"
+    },
+    {
+      "text": "の周りの同級生たちはスらスらと演習問題",
+      "start_seconds": 135.56,
+      "end_seconds": 138.28,
+      "id": "g6AHx_OWbhg-display-0037",
+      "segment_id": "g6AHx_OWbhg-ja-0016"
+    },
+    {
+      "text": "を解き始めるのです。",
+      "start_seconds": 138.28,
+      "end_seconds": 141.72,
+      "id": "g6AHx_OWbhg-display-0038",
+      "segment_id": "g6AHx_OWbhg-ja-0016"
+    },
+    {
+      "text": "一方、私は授業が終わってもまだ理解でき",
+      "start_seconds": 141.72,
+      "end_seconds": 145.72,
+      "id": "g6AHx_OWbhg-display-0039",
+      "segment_id": "g6AHx_OWbhg-ja-0017"
+    },
+    {
+      "text": "ず、家に帰って復讐して5時間かけて",
+      "start_seconds": 145.72,
+      "end_seconds": 150.08,
+      "id": "g6AHx_OWbhg-display-0040",
+      "segment_id": "g6AHx_OWbhg-ja-0017"
+    },
+    {
+      "text": "やっとわかる。",
+      "start_seconds": 150.08,
+      "end_seconds": 153.4,
+      "id": "g6AHx_OWbhg-display-0041",
+      "segment_id": "g6AHx_OWbhg-ja-0017"
+    },
+    {
+      "text": "私がいたロケットの推進コースは女子は私",
+      "start_seconds": 153.4,
+      "end_seconds": 157.12,
+      "id": "g6AHx_OWbhg-display-0042",
+      "segment_id": "g6AHx_OWbhg-ja-0018"
+    },
+    {
+      "text": "1人だけでした。",
+      "start_seconds": 157.12,
+      "end_seconds": 160.8,
+      "id": "g6AHx_OWbhg-display-0043",
+      "segment_id": "g6AHx_OWbhg-ja-0018"
+    },
+    {
+      "text": "ただでさえできない私は周りから浮いてい",
+      "start_seconds": 163.08,
+      "end_seconds": 167.519,
+      "id": "g6AHx_OWbhg-display-0044",
+      "segment_id": "g6AHx_OWbhg-ja-0019"
+    },
+    {
+      "text": "ました。",
+      "start_seconds": 167.519,
+      "end_seconds": 170.8,
+      "id": "g6AHx_OWbhg-display-0045",
+      "segment_id": "g6AHx_OWbhg-ja-0019"
+    },
+    {
+      "text": "テスト期間に",
+      "start_seconds": 170.959,
+      "end_seconds": 173.879,
+      "id": "g6AHx_OWbhg-display-0046",
+      "segment_id": "g6AHx_OWbhg-ja-0020"
+    },
+    {
+      "text": "あいつが受かるはずないと言われたことも",
+      "start_seconds": 173.879,
+      "end_seconds": 175.76,
+      "id": "g6AHx_OWbhg-display-0047",
+      "segment_id": "g6AHx_OWbhg-ja-0020"
+    },
+    {
+      "text": "ありました。",
+      "start_seconds": 175.76,
+      "end_seconds": 179.2,
+      "id": "g6AHx_OWbhg-display-0048",
+      "segment_id": "g6AHx_OWbhg-ja-0020"
+    },
+    {
+      "text": "今まで経験したことのない",
+      "start_seconds": 179.44,
+      "end_seconds": 183.4,
+      "id": "g6AHx_OWbhg-display-0049",
+      "segment_id": "g6AHx_OWbhg-ja-0021"
+    },
+    {
+      "text": "苦い、恥ずかしいそんな思いをしました。",
+      "start_seconds": 183.4,
+      "end_seconds": 189.04,
+      "id": "g6AHx_OWbhg-display-0050",
+      "segment_id": "g6AHx_OWbhg-ja-0021"
+    },
+    {
+      "text": "ああ、世の中にはどんなに努力をしても",
+      "start_seconds": 189.04,
+      "end_seconds": 192.36,
+      "id": "g6AHx_OWbhg-display-0051",
+      "segment_id": "g6AHx_OWbhg-ja-0022"
+    },
+    {
+      "text": "到達できない本当の天才がいるんだな。",
+      "start_seconds": 192.36,
+      "end_seconds": 197.0,
+      "id": "g6AHx_OWbhg-display-0052",
+      "segment_id": "g6AHx_OWbhg-ja-0022"
+    },
+    {
+      "text": "そんな人たちと宇宙飛行士の座を競い合う",
+      "start_seconds": 197.0,
+      "end_seconds": 200.959,
+      "id": "g6AHx_OWbhg-display-0053",
+      "segment_id": "g6AHx_OWbhg-ja-0023"
+    },
+    {
+      "text": "なんて",
+      "start_seconds": 200.959,
+      "end_seconds": 203.159,
+      "id": "g6AHx_OWbhg-display-0054",
+      "segment_id": "g6AHx_OWbhg-ja-0023"
+    },
+    {
+      "text": "絶望した瞬間でした。",
+      "start_seconds": 203.159,
+      "end_seconds": 207.48,
+      "id": "g6AHx_OWbhg-display-0055",
+      "segment_id": "g6AHx_OWbhg-ja-0023"
+    },
+    {
+      "text": "しかし宇宙への愛は誰にも負けていません",
+      "start_seconds": 207.92,
+      "end_seconds": 211.2,
+      "id": "g6AHx_OWbhg-display-0056",
+      "segment_id": "g6AHx_OWbhg-ja-0024"
+    },
+    {
+      "text": "でした。",
+      "start_seconds": 211.2,
+      "end_seconds": 213.56,
+      "id": "g6AHx_OWbhg-display-0057",
+      "segment_id": "g6AHx_OWbhg-ja-0024"
+    },
+    {
+      "text": "中学の時から大事にしていた宇宙物理の本",
+      "start_seconds": 213.56,
+      "end_seconds": 216.319,
+      "id": "g6AHx_OWbhg-display-0058",
+      "segment_id": "g6AHx_OWbhg-ja-0025"
+    },
+    {
+      "text": "があるのですが、",
+      "start_seconds": 216.319,
+      "end_seconds": 218.959,
+      "id": "g6AHx_OWbhg-display-0059",
+      "segment_id": "g6AHx_OWbhg-ja-0025"
+    },
+    {
+      "text": "辛い時はそれを守りに死に者類で頑張り",
+      "start_seconds": 218.959,
+      "end_seconds": 222.519,
+      "id": "g6AHx_OWbhg-display-0060",
+      "segment_id": "g6AHx_OWbhg-ja-0025"
+    },
+    {
+      "text": "ました。",
+      "start_seconds": 222.519,
+      "end_seconds": 225.76000000000002,
+      "id": "g6AHx_OWbhg-display-0061",
+      "segment_id": "g6AHx_OWbhg-ja-0026"
+    },
+    {
+      "text": "[ため息]",
+      "start_seconds": 225.977,
+      "end_seconds": 226.72,
+      "id": "g6AHx_OWbhg-display-0062",
+      "segment_id": "g6AHx_OWbhg-ja-0027"
+    },
+    {
+      "text": "さあ、皆さん、宇宙飛行士の募集の頻度は",
+      "start_seconds": 226.72,
+      "end_seconds": 230.439,
+      "id": "g6AHx_OWbhg-display-0063",
+      "segment_id": "g6AHx_OWbhg-ja-0027"
+    },
+    {
+      "text": "ご存知ですか?",
+      "start_seconds": 230.439,
+      "end_seconds": 234.12,
+      "id": "g6AHx_OWbhg-display-0064",
+      "segment_id": "g6AHx_OWbhg-ja-0027"
+    },
+    {
+      "text": "実は毎年ではありません。",
+      "start_seconds": 234.4,
+      "end_seconds": 237.959,
+      "id": "g6AHx_OWbhg-display-0065",
+      "segment_id": "g6AHx_OWbhg-ja-0028"
+    },
+    {
+      "text": "それどころか直近は5年前の2021年。",
+      "start_seconds": 237.959,
+      "end_seconds": 243.439,
+      "id": "g6AHx_OWbhg-display-0066",
+      "segment_id": "g6AHx_OWbhg-ja-0029"
+    },
+    {
+      "text": "合格者はたった2名でした。",
+      "start_seconds": 243.439,
+      "end_seconds": 247.28,
+      "id": "g6AHx_OWbhg-display-0067",
+      "segment_id": "g6AHx_OWbhg-ja-0030"
+    },
+    {
+      "text": "そしてその前は13年も遡り、2008年",
+      "start_seconds": 247.28,
+      "end_seconds": 251.12,
+      "id": "g6AHx_OWbhg-display-0068",
+      "segment_id": "g6AHx_OWbhg-ja-0031"
+    },
+    {
+      "text": "。これまた合格者はたった3名。",
+      "start_seconds": 251.12,
+      "end_seconds": 256.04,
+      "id": "g6AHx_OWbhg-display-0069",
+      "segment_id": "g6AHx_OWbhg-ja-0031"
+    },
+    {
+      "text": "倍率は2000倍にもなります。もちろん",
+      "start_seconds": 256.04,
+      "end_seconds": 259.28,
+      "id": "g6AHx_OWbhg-display-0070",
+      "segment_id": "g6AHx_OWbhg-ja-0032"
+    },
+    {
+      "text": "実務経験も必要です。",
+      "start_seconds": 259.28,
+      "end_seconds": 262.12,
+      "id": "g6AHx_OWbhg-display-0071",
+      "segment_id": "g6AHx_OWbhg-ja-0032"
+    },
+    {
+      "text": "つまり大学を卒業してすぐ宇宙飛行士とは",
+      "start_seconds": 262.12,
+      "end_seconds": 265.56,
+      "id": "g6AHx_OWbhg-display-0072",
+      "segment_id": "g6AHx_OWbhg-ja-0033"
+    },
+    {
+      "text": "もちろんいかず",
+      "start_seconds": 265.56,
+      "end_seconds": 268.919,
+      "id": "g6AHx_OWbhg-display-0073",
+      "segment_id": "g6AHx_OWbhg-ja-0033"
+    },
+    {
+      "text": "どんな仕事に着こうかと考えていた時、",
+      "start_seconds": 268.919,
+      "end_seconds": 273.08,
+      "id": "g6AHx_OWbhg-display-0074",
+      "segment_id": "g6AHx_OWbhg-ja-0033"
+    },
+    {
+      "text": "私は",
+      "start_seconds": 273.08,
+      "end_seconds": 274.919,
+      "id": "g6AHx_OWbhg-display-0075",
+      "segment_id": "g6AHx_OWbhg-ja-0034"
+    },
+    {
+      "text": "宇宙業界で働く人たちがより活躍できる",
+      "start_seconds": 274.919,
+      "end_seconds": 279.0,
+      "id": "g6AHx_OWbhg-display-0076",
+      "segment_id": "g6AHx_OWbhg-ja-0034"
+    },
+    {
+      "text": "そんな制度を作りたいと思い、",
+      "start_seconds": 279.0,
+      "end_seconds": 282.199,
+      "id": "g6AHx_OWbhg-display-0077",
+      "segment_id": "g6AHx_OWbhg-ja-0034"
+    },
+    {
+      "text": "技術として経済産業省に行くことに決め",
+      "start_seconds": 282.199,
+      "end_seconds": 284.72,
+      "id": "g6AHx_OWbhg-display-0078",
+      "segment_id": "g6AHx_OWbhg-ja-0034"
+    },
+    {
+      "text": "ました。",
+      "start_seconds": 284.72,
+      "end_seconds": 287.759,
+      "id": "g6AHx_OWbhg-display-0079",
+      "segment_id": "g6AHx_OWbhg-ja-0035"
+    },
+    {
+      "text": "就活が終わり、ある日学科の同期と話して",
+      "start_seconds": 288.8,
+      "end_seconds": 291.12,
+      "id": "g6AHx_OWbhg-display-0080",
+      "segment_id": "g6AHx_OWbhg-ja-0036"
+    },
+    {
+      "text": "いた時、私の内定先を伝えるとすごいと",
+      "start_seconds": 291.12,
+      "end_seconds": 295.72,
+      "id": "g6AHx_OWbhg-display-0081",
+      "segment_id": "g6AHx_OWbhg-ja-0036"
+    },
+    {
+      "text": "言われました。",
+      "start_seconds": 295.72,
+      "end_seconds": 298.639,
+      "id": "g6AHx_OWbhg-display-0082",
+      "segment_id": "g6AHx_OWbhg-ja-0036"
+    },
+    {
+      "text": "なんと大学4年間私が全く勉強で勝て",
+      "start_seconds": 298.639,
+      "end_seconds": 302.6,
+      "id": "g6AHx_OWbhg-display-0083",
+      "segment_id": "g6AHx_OWbhg-ja-0037"
+    },
+    {
+      "text": "なかった同期たちの中にも",
+      "start_seconds": 302.6,
+      "end_seconds": 305.8,
+      "id": "g6AHx_OWbhg-display-0084",
+      "segment_id": "g6AHx_OWbhg-ja-0037"
+    },
+    {
+      "text": "就活で苦労した人がいたのです。",
+      "start_seconds": 305.8,
+      "end_seconds": 310.36,
+      "id": "g6AHx_OWbhg-display-0085",
+      "segment_id": "g6AHx_OWbhg-ja-0037"
+    },
+    {
+      "text": "アプローチを変えたら",
+      "start_seconds": 310.36,
+      "end_seconds": 312.88,
+      "id": "g6AHx_OWbhg-display-0086",
+      "segment_id": "g6AHx_OWbhg-ja-0038"
+    },
+    {
+      "text": "私でも彼らとは違う強みが見つかるのかも",
+      "start_seconds": 312.88,
+      "end_seconds": 317.68,
+      "id": "g6AHx_OWbhg-display-0087",
+      "segment_id": "g6AHx_OWbhg-ja-0038"
+    },
+    {
+      "text": "しれない。",
+      "start_seconds": 317.68,
+      "end_seconds": 319.84,
+      "id": "g6AHx_OWbhg-display-0088",
+      "segment_id": "g6AHx_OWbhg-ja-0038"
+    },
+    {
+      "text": "そう思いました。",
+      "start_seconds": 319.84,
+      "end_seconds": 322.4,
+      "id": "g6AHx_OWbhg-display-0089",
+      "segment_id": "g6AHx_OWbhg-ja-0039"
+    },
+    {
+      "text": "これが私が夢を叶える戦略の始まりです。",
+      "start_seconds": 322.4,
+      "end_seconds": 329.71999999999997,
+      "id": "g6AHx_OWbhg-display-0090",
+      "segment_id": "g6AHx_OWbhg-ja-0040"
+    },
+    {
+      "text": "今の宇宙は民間の時代です。",
+      "start_seconds": 330.24,
+      "end_seconds": 334.919,
+      "id": "g6AHx_OWbhg-display-0091",
+      "segment_id": "g6AHx_OWbhg-ja-0041"
+    },
+    {
+      "text": "今までの宇宙飛行士はNASAや弱差に",
+      "start_seconds": 334.919,
+      "end_seconds": 337.639,
+      "id": "g6AHx_OWbhg-display-0092",
+      "segment_id": "g6AHx_OWbhg-ja-0042"
+    },
+    {
+      "text": "所属するいわば公務員のような存在でした",
+      "start_seconds": 337.639,
+      "end_seconds": 340.479,
+      "id": "g6AHx_OWbhg-display-0093",
+      "segment_id": "g6AHx_OWbhg-ja-0042"
+    },
+    {
+      "text": "。しかし2027年から本格的に民間企業",
+      "start_seconds": 340.479,
+      "end_seconds": 345.4,
+      "id": "g6AHx_OWbhg-display-0094",
+      "segment_id": "g6AHx_OWbhg-ja-0042"
+    },
+    {
+      "text": "の宇宙飛行士が宇宙ミッションに挑みます",
+      "start_seconds": 345.4,
+      "end_seconds": 348.44,
+      "id": "g6AHx_OWbhg-display-0095",
+      "segment_id": "g6AHx_OWbhg-ja-0043"
+    },
+    {
+      "text": "。理由は色々あるのですが2030年に約",
+      "start_seconds": 348.44,
+      "end_seconds": 353.84,
+      "id": "g6AHx_OWbhg-display-0096",
+      "segment_id": "g6AHx_OWbhg-ja-0043"
+    },
+    {
+      "text": "30年間運用されたISS国際宇宙",
+      "start_seconds": 353.84,
+      "end_seconds": 357.52,
+      "id": "g6AHx_OWbhg-display-0097",
+      "segment_id": "g6AHx_OWbhg-ja-0044"
+    },
+    {
+      "text": "ステーションが退役します。",
+      "start_seconds": 357.52,
+      "end_seconds": 360.759,
+      "id": "g6AHx_OWbhg-display-0098",
+      "segment_id": "g6AHx_OWbhg-ja-0044"
+    },
+    {
+      "text": "地球低起動の活動は国から民間企業に",
+      "start_seconds": 360.759,
+      "end_seconds": 365.479,
+      "id": "g6AHx_OWbhg-display-0099",
+      "segment_id": "g6AHx_OWbhg-ja-0045"
+    },
+    {
+      "text": "バトンタッチされます。そして政府は未会",
+      "start_seconds": 365.479,
+      "end_seconds": 370.639,
+      "id": "g6AHx_OWbhg-display-0100",
+      "segment_id": "g6AHx_OWbhg-ja-0045"
+    },
+    {
+      "text": "月に家事を切るのです。",
+      "start_seconds": 370.639,
+      "end_seconds": 374.96,
+      "id": "g6AHx_OWbhg-display-0101",
+      "segment_id": "g6AHx_OWbhg-ja-0046"
+    },
+    {
+      "text": "民間宇宙開発はビジネスです。",
+      "start_seconds": 374.96,
+      "end_seconds": 379.919,
+      "id": "g6AHx_OWbhg-display-0102",
+      "segment_id": "g6AHx_OWbhg-ja-0047"
+    },
+    {
+      "text": "もちろん高い技術も求められますが、それ",
+      "start_seconds": 380.039,
+      "end_seconds": 383.28,
+      "id": "g6AHx_OWbhg-display-0103",
+      "segment_id": "g6AHx_OWbhg-ja-0048"
+    },
+    {
+      "text": "だけではなくたくさんの人を巻き込んで",
+      "start_seconds": 383.28,
+      "end_seconds": 385.919,
+      "id": "g6AHx_OWbhg-display-0104",
+      "segment_id": "g6AHx_OWbhg-ja-0048"
+    },
+    {
+      "text": "産業全体を盛り上げるような人が必要です",
+      "start_seconds": 385.919,
+      "end_seconds": 388.16,
+      "id": "g6AHx_OWbhg-display-0105",
+      "segment_id": "g6AHx_OWbhg-ja-0048"
+    },
+    {
+      "text": "。",
+      "start_seconds": 388.16,
+      "end_seconds": 389.96,
+      "id": "g6AHx_OWbhg-display-0106",
+      "segment_id": "g6AHx_OWbhg-ja-0048"
+    },
+    {
+      "text": "これは私にとって新しい宇宙飛行士の道が",
+      "start_seconds": 389.96,
+      "end_seconds": 393.319,
+      "id": "g6AHx_OWbhg-display-0107",
+      "segment_id": "g6AHx_OWbhg-ja-0049"
+    },
+    {
+      "text": "開けたのです。",
+      "start_seconds": 393.319,
+      "end_seconds": 397.0,
+      "id": "g6AHx_OWbhg-display-0108",
+      "segment_id": "g6AHx_OWbhg-ja-0049"
+    },
+    {
+      "text": "私が宇宙を好きになったのは小学2年生の",
+      "start_seconds": 398.88,
+      "end_seconds": 402.36,
+      "id": "g6AHx_OWbhg-display-0109",
+      "segment_id": "g6AHx_OWbhg-ja-0050"
+    },
+    {
+      "text": "頃。",
+      "start_seconds": 402.36,
+      "end_seconds": 404.36,
+      "id": "g6AHx_OWbhg-display-0110",
+      "segment_id": "g6AHx_OWbhg-ja-0050"
+    },
+    {
+      "text": "当時いじめられっこだった私は沖縄の",
+      "start_seconds": 404.36,
+      "end_seconds": 407.56,
+      "id": "g6AHx_OWbhg-display-0111",
+      "segment_id": "g6AHx_OWbhg-ja-0051"
+    },
+    {
+      "text": "キャンプで仲間外りにされ悔しくてテント",
+      "start_seconds": 407.56,
+      "end_seconds": 412.319,
+      "id": "g6AHx_OWbhg-display-0112",
+      "segment_id": "g6AHx_OWbhg-ja-0051"
+    },
+    {
+      "text": "を抜け出してビーチで見上げた星空が宝石",
+      "start_seconds": 412.319,
+      "end_seconds": 416.56,
+      "id": "g6AHx_OWbhg-display-0113",
+      "segment_id": "g6AHx_OWbhg-ja-0052"
+    },
+    {
+      "text": "のように輝いていました。",
+      "start_seconds": 416.56,
+      "end_seconds": 420.08,
+      "id": "g6AHx_OWbhg-display-0114",
+      "segment_id": "g6AHx_OWbhg-ja-0052"
+    },
+    {
+      "text": "君のままが1番いいんだよと。星空が天",
+      "start_seconds": 420.08,
+      "end_seconds": 423.8,
+      "id": "g6AHx_OWbhg-display-0115",
+      "segment_id": "g6AHx_OWbhg-ja-0053"
+    },
+    {
+      "text": "から力をくれた気がしました。",
+      "start_seconds": 423.8,
+      "end_seconds": 427.16,
+      "id": "g6AHx_OWbhg-display-0116",
+      "segment_id": "g6AHx_OWbhg-ja-0053"
+    },
+    {
+      "text": "それ以来今でも星空を見上げると",
+      "start_seconds": 427.16,
+      "end_seconds": 430.72,
+      "id": "g6AHx_OWbhg-display-0117",
+      "segment_id": "g6AHx_OWbhg-ja-0054"
+    },
+    {
+      "text": "力が湧いてくるのです。心が古い立つの",
+      "start_seconds": 430.72,
+      "end_seconds": 434.28,
+      "id": "g6AHx_OWbhg-display-0118",
+      "segment_id": "g6AHx_OWbhg-ja-0054"
+    },
+    {
+      "text": "です。",
+      "start_seconds": 434.28,
+      "end_seconds": 436.759,
+      "id": "g6AHx_OWbhg-display-0119",
+      "segment_id": "g6AHx_OWbhg-ja-0054"
+    },
+    {
+      "text": "だからどんなに大変でも、例え大学で挫折",
+      "start_seconds": 436.759,
+      "end_seconds": 440.68,
+      "id": "g6AHx_OWbhg-display-0120",
+      "segment_id": "g6AHx_OWbhg-ja-0055"
+    },
+    {
+      "text": "しても、宇宙飛行士の倍率が高すぎても",
+      "start_seconds": 440.68,
+      "end_seconds": 446.599,
+      "id": "g6AHx_OWbhg-display-0121",
+      "segment_id": "g6AHx_OWbhg-ja-0055"
+    },
+    {
+      "text": "私は宇宙が好きだからこれからも宇宙を",
+      "start_seconds": 446.599,
+      "end_seconds": 449.84,
+      "id": "g6AHx_OWbhg-display-0122",
+      "segment_id": "g6AHx_OWbhg-ja-0056"
+    },
+    {
+      "text": "目指し続けます。",
+      "start_seconds": 449.84,
+      "end_seconds": 453.67999999999995,
+      "id": "g6AHx_OWbhg-display-0123",
+      "segment_id": "g6AHx_OWbhg-ja-0056"
+    },
+    {
+      "text": "私の社会人のキャリアは経済産業省の完了",
+      "start_seconds": 455.479,
+      "end_seconds": 458.4,
+      "id": "g6AHx_OWbhg-display-0124",
+      "segment_id": "g6AHx_OWbhg-ja-0057"
+    },
+    {
+      "text": "としてスタートしました。",
+      "start_seconds": 458.4,
+      "end_seconds": 462.24,
+      "id": "g6AHx_OWbhg-display-0125",
+      "segment_id": "g6AHx_OWbhg-ja-0057"
+    },
+    {
+      "text": "希望は宇宙産業家でしたが、",
+      "start_seconds": 462.24,
+      "end_seconds": 466.36,
+      "id": "g6AHx_OWbhg-display-0126",
+      "segment_id": "g6AHx_OWbhg-ja-0058"
+    },
+    {
+      "text": "新しい働き方や女性活躍を推進する人材化",
+      "start_seconds": 466.36,
+      "end_seconds": 470.56,
+      "id": "g6AHx_OWbhg-display-0127",
+      "segment_id": "g6AHx_OWbhg-ja-0058"
+    },
+    {
+      "text": "というところに配属されました。",
+      "start_seconds": 470.56,
+      "end_seconds": 474.879,
+      "id": "g6AHx_OWbhg-display-0128",
+      "segment_id": "g6AHx_OWbhg-ja-0059"
+    },
+    {
+      "text": "目の前で新しい働き方に関わるうちに",
+      "start_seconds": 475.199,
+      "end_seconds": 478.96,
+      "id": "g6AHx_OWbhg-display-0129",
+      "segment_id": "g6AHx_OWbhg-ja-0060"
+    },
+    {
+      "text": "なんて素晴らしいんだ。",
+      "start_seconds": 478.96,
+      "end_seconds": 481.599,
+      "id": "g6AHx_OWbhg-display-0130",
+      "segment_id": "g6AHx_OWbhg-ja-0060"
+    },
+    {
+      "text": "私もこの政策を対現したいと思うように",
+      "start_seconds": 481.599,
+      "end_seconds": 484.159,
+      "id": "g6AHx_OWbhg-display-0131",
+      "segment_id": "g6AHx_OWbhg-ja-0061"
+    },
+    {
+      "text": "なり、",
+      "start_seconds": 484.159,
+      "end_seconds": 486.479,
+      "id": "g6AHx_OWbhg-display-0132",
+      "segment_id": "g6AHx_OWbhg-ja-0061"
+    },
+    {
+      "text": "独立して宇宙業界に戻ることを決めました",
+      "start_seconds": 486.479,
+      "end_seconds": 489.08,
+      "id": "g6AHx_OWbhg-display-0133",
+      "segment_id": "g6AHx_OWbhg-ja-0061"
+    },
+    {
+      "text": "。",
+      "start_seconds": 489.08,
+      "end_seconds": 492.08,
+      "id": "g6AHx_OWbhg-display-0134",
+      "segment_id": "g6AHx_OWbhg-ja-0061"
+    },
+    {
+      "text": "経済産業省を退職して宇宙の仕事を",
+      "start_seconds": 493.319,
+      "end_seconds": 497.0,
+      "id": "g6AHx_OWbhg-display-0135",
+      "segment_id": "g6AHx_OWbhg-ja-0062"
+    },
+    {
+      "text": "駆け持っていた時、",
+      "start_seconds": 497.0,
+      "end_seconds": 499.919,
+      "id": "g6AHx_OWbhg-display-0136",
+      "segment_id": "g6AHx_OWbhg-ja-0062"
+    },
+    {
+      "text": "とある番組の所役のオファーが来ました。",
+      "start_seconds": 499.919,
+      "end_seconds": 505.28,
+      "id": "g6AHx_OWbhg-display-0137",
+      "segment_id": "g6AHx_OWbhg-ja-0062"
+    },
+    {
+      "text": "この番組は1人の女性が真実の愛を求めて",
+      "start_seconds": 505.28,
+      "end_seconds": 509.639,
+      "id": "g6AHx_OWbhg-display-0138",
+      "segment_id": "g6AHx_OWbhg-ja-0063"
+    },
+    {
+      "text": "パートナーを探すという人気の番組です。",
+      "start_seconds": 509.639,
+      "end_seconds": 514.8,
+      "id": "g6AHx_OWbhg-display-0139",
+      "segment_id": "g6AHx_OWbhg-ja-0063"
+    },
+    {
+      "text": "この番組を通して多くの人に宇宙を知って",
+      "start_seconds": 515.0,
+      "end_seconds": 518.399,
+      "id": "g6AHx_OWbhg-display-0140",
+      "segment_id": "g6AHx_OWbhg-ja-0064"
+    },
+    {
+      "text": "もらいました。",
+      "start_seconds": 518.399,
+      "end_seconds": 521.8,
+      "id": "g6AHx_OWbhg-display-0141",
+      "segment_id": "g6AHx_OWbhg-ja-0064"
+    },
+    {
+      "text": "宇宙は難しくてハードルが高いと思われ",
+      "start_seconds": 521.8,
+      "end_seconds": 523.959,
+      "id": "g6AHx_OWbhg-display-0142",
+      "segment_id": "g6AHx_OWbhg-ja-0065"
+    },
+    {
+      "text": "ますが、この時のようにこれからも私が",
+      "start_seconds": 523.959,
+      "end_seconds": 528.08,
+      "id": "g6AHx_OWbhg-display-0143",
+      "segment_id": "g6AHx_OWbhg-ja-0065"
+    },
+    {
+      "text": "駆け橋になりたいです。",
+      "start_seconds": 528.08,
+      "end_seconds": 532.1600000000001,
+      "id": "g6AHx_OWbhg-display-0144",
+      "segment_id": "g6AHx_OWbhg-ja-0065"
+    },
+    {
+      "text": "今は宇宙スタートアップで働いています。",
+      "start_seconds": 532.56,
+      "end_seconds": 537.08,
+      "id": "g6AHx_OWbhg-display-0145",
+      "segment_id": "g6AHx_OWbhg-ja-0066"
+    },
+    {
+      "text": "最近はその他にも宇宙線のOSを開発する",
+      "start_seconds": 537.08,
+      "end_seconds": 540.76,
+      "id": "g6AHx_OWbhg-display-0146",
+      "segment_id": "g6AHx_OWbhg-ja-0067"
+    },
+    {
+      "text": "というプロジェクトに携わっています。",
+      "start_seconds": 540.76,
+      "end_seconds": 544.8,
+      "id": "g6AHx_OWbhg-display-0147",
+      "segment_id": "g6AHx_OWbhg-ja-0067"
+    },
+    {
+      "text": "今までバラバラのパーツで開発されていた",
+      "start_seconds": 544.8,
+      "end_seconds": 547.32,
+      "id": "g6AHx_OWbhg-display-0148",
+      "segment_id": "g6AHx_OWbhg-ja-0068"
+    },
+    {
+      "text": "宇宙機を統合的に開発管理をしよう。そう",
+      "start_seconds": 547.32,
+      "end_seconds": 551.8,
+      "id": "g6AHx_OWbhg-display-0149",
+      "segment_id": "g6AHx_OWbhg-ja-0068"
+    },
+    {
+      "text": "いう技術です。",
+      "start_seconds": 551.8,
+      "end_seconds": 555.4399999999999,
+      "id": "g6AHx_OWbhg-display-0150",
+      "segment_id": "g6AHx_OWbhg-ja-0068"
+    },
+    {
+      "text": "今後はより",
+      "start_seconds": 555.6,
+      "end_seconds": 558.2,
+      "id": "g6AHx_OWbhg-display-0151",
+      "segment_id": "g6AHx_OWbhg-ja-0069"
+    },
+    {
+      "text": "実践に近い実際の機会を操縦したりったり",
+      "start_seconds": 558.2,
+      "end_seconds": 562.839,
+      "id": "g6AHx_OWbhg-display-0152",
+      "segment_id": "g6AHx_OWbhg-ja-0069"
+    },
+    {
+      "text": "できるそんな技術的なスキルを身につけ",
+      "start_seconds": 562.839,
+      "end_seconds": 565.68,
+      "id": "g6AHx_OWbhg-display-0153",
+      "segment_id": "g6AHx_OWbhg-ja-0069"
+    },
+    {
+      "text": "たいと思っています。",
+      "start_seconds": 565.68,
+      "end_seconds": 569.4799999999999,
+      "id": "g6AHx_OWbhg-display-0154",
+      "segment_id": "g6AHx_OWbhg-ja-0070"
+    },
+    {
+      "text": "さあ、ここまでお話を聞いていただき、",
+      "start_seconds": 570.519,
+      "end_seconds": 576.959,
+      "id": "g6AHx_OWbhg-display-0155",
+      "segment_id": "g6AHx_OWbhg-ja-0071"
+    },
+    {
+      "text": "この人は何を成し遂げた専門家なんだと。",
+      "start_seconds": 576.959,
+      "end_seconds": 581.2,
+      "id": "g6AHx_OWbhg-display-0156",
+      "segment_id": "g6AHx_OWbhg-ja-0071"
+    },
+    {
+      "text": "そう思った人がいるかもしれません。",
+      "start_seconds": 581.2,
+      "end_seconds": 585.6,
+      "id": "g6AHx_OWbhg-display-0157",
+      "segment_id": "g6AHx_OWbhg-ja-0072"
+    },
+    {
+      "text": "鋭いです。その通り。私は道場です。",
+      "start_seconds": 585.6,
+      "end_seconds": 593.24,
+      "id": "g6AHx_OWbhg-display-0158",
+      "segment_id": "g6AHx_OWbhg-ja-0073"
+    },
+    {
+      "text": "そんな私がなぜこのステージに立っている",
+      "start_seconds": 593.76,
+      "end_seconds": 595.76,
+      "id": "g6AHx_OWbhg-display-0159",
+      "segment_id": "g6AHx_OWbhg-ja-0074"
+    },
+    {
+      "text": "かというと、",
+      "start_seconds": 595.76,
+      "end_seconds": 598.279,
+      "id": "g6AHx_OWbhg-display-0160",
+      "segment_id": "g6AHx_OWbhg-ja-0074"
+    },
+    {
+      "text": "昔の自分が私みたいな人を必要としていた",
+      "start_seconds": 598.279,
+      "end_seconds": 602.64,
+      "id": "g6AHx_OWbhg-display-0161",
+      "segment_id": "g6AHx_OWbhg-ja-0074"
+    },
+    {
+      "text": "からです。",
+      "start_seconds": 602.64,
+      "end_seconds": 605.959,
+      "id": "g6AHx_OWbhg-display-0162",
+      "segment_id": "g6AHx_OWbhg-ja-0075"
+    },
+    {
+      "text": "遡ること数年前。",
+      "start_seconds": 606.6,
+      "end_seconds": 609.72,
+      "id": "g6AHx_OWbhg-display-0163",
+      "segment_id": "g6AHx_OWbhg-ja-0076"
+    },
+    {
+      "text": "新卒で入った経済産業省をやめる決断をし",
+      "start_seconds": 609.72,
+      "end_seconds": 612.2,
+      "id": "g6AHx_OWbhg-display-0164",
+      "segment_id": "g6AHx_OWbhg-ja-0077"
+    },
+    {
+      "text": "た時、私はすごく迷いました。",
+      "start_seconds": 612.2,
+      "end_seconds": 618.88,
+      "id": "g6AHx_OWbhg-display-0165",
+      "segment_id": "g6AHx_OWbhg-ja-0077"
+    },
+    {
+      "text": "必死に勉強してせっかく乗ったエリートの",
+      "start_seconds": 619.24,
+      "end_seconds": 622.0,
+      "id": "g6AHx_OWbhg-display-0166",
+      "segment_id": "g6AHx_OWbhg-ja-0078"
+    },
+    {
+      "text": "レールをこんなに簡単に手放していいのか",
+      "start_seconds": 622.0,
+      "end_seconds": 624.04,
+      "id": "g6AHx_OWbhg-display-0167",
+      "segment_id": "g6AHx_OWbhg-ja-0078"
+    },
+    {
+      "text": "。",
+      "start_seconds": 624.04,
+      "end_seconds": 626.32,
+      "id": "g6AHx_OWbhg-display-0168",
+      "segment_id": "g6AHx_OWbhg-ja-0078"
+    },
+    {
+      "text": "周りに反対されました。",
+      "start_seconds": 626.32,
+      "end_seconds": 629.48,
+      "id": "g6AHx_OWbhg-display-0169",
+      "segment_id": "g6AHx_OWbhg-ja-0079"
+    },
+    {
+      "text": "心配もかけてしまいました。",
+      "start_seconds": 629.48,
+      "end_seconds": 633.76,
+      "id": "g6AHx_OWbhg-display-0170",
+      "segment_id": "g6AHx_OWbhg-ja-0080"
+    },
+    {
+      "text": "どうしたらいいか分からず不安で毎晩泣き",
+      "start_seconds": 633.76,
+      "end_seconds": 636.48,
+      "id": "g6AHx_OWbhg-display-0171",
+      "segment_id": "g6AHx_OWbhg-ja-0081"
+    },
+    {
+      "text": "ました。",
+      "start_seconds": 636.48,
+      "end_seconds": 639.76,
+      "id": "g6AHx_OWbhg-display-0172",
+      "segment_id": "g6AHx_OWbhg-ja-0081"
+    },
+    {
+      "text": "でも私の直感が",
+      "start_seconds": 639.76,
+      "end_seconds": 643.72,
+      "id": "g6AHx_OWbhg-display-0173",
+      "segment_id": "g6AHx_OWbhg-ja-0082"
+    },
+    {
+      "text": "ここを飛び立って自由に羽たけと言ってい",
+      "start_seconds": 643.72,
+      "end_seconds": 646.16,
+      "id": "g6AHx_OWbhg-display-0174",
+      "segment_id": "g6AHx_OWbhg-ja-0082"
+    },
+    {
+      "text": "たのです。",
+      "start_seconds": 646.16,
+      "end_seconds": 649.399,
+      "id": "g6AHx_OWbhg-display-0175",
+      "segment_id": "g6AHx_OWbhg-ja-0082"
+    },
+    {
+      "text": "あは勇気が欲しかった。",
+      "start_seconds": 649.399,
+      "end_seconds": 653.04,
+      "id": "g6AHx_OWbhg-display-0176",
+      "segment_id": "g6AHx_OWbhg-ja-0083"
+    },
+    {
+      "text": "同じような教遇の人の体験を読めば背中",
+      "start_seconds": 653.04,
+      "end_seconds": 656.68,
+      "id": "g6AHx_OWbhg-display-0177",
+      "segment_id": "g6AHx_OWbhg-ja-0084"
+    },
+    {
+      "text": "押されるかもと",
+      "start_seconds": 656.68,
+      "end_seconds": 658.88,
+      "id": "g6AHx_OWbhg-display-0178",
+      "segment_id": "g6AHx_OWbhg-ja-0084"
+    },
+    {
+      "text": "たくさんネットを調べました。",
+      "start_seconds": 658.88,
+      "end_seconds": 662.24,
+      "id": "g6AHx_OWbhg-display-0179",
+      "segment_id": "g6AHx_OWbhg-ja-0084"
+    },
+    {
+      "text": "そこにあったインタビュー基準のほとんど",
+      "start_seconds": 662.24,
+      "end_seconds": 664.32,
+      "id": "g6AHx_OWbhg-display-0180",
+      "segment_id": "g6AHx_OWbhg-ja-0085"
+    },
+    {
+      "text": "がすでに成功を収めた人の話でした。",
+      "start_seconds": 664.32,
+      "end_seconds": 670.279,
+      "id": "g6AHx_OWbhg-display-0181",
+      "segment_id": "g6AHx_OWbhg-ja-0085"
+    },
+    {
+      "text": "成功は",
+      "start_seconds": 672.44,
+      "end_seconds": 675.279,
+      "id": "g6AHx_OWbhg-display-0182",
+      "segment_id": "g6AHx_OWbhg-ja-0086"
+    },
+    {
+      "text": "実力と運の合わせです。",
+      "start_seconds": 675.279,
+      "end_seconds": 679.72,
+      "id": "g6AHx_OWbhg-display-0183",
+      "segment_id": "g6AHx_OWbhg-ja-0086"
+    },
+    {
+      "text": "そりゃもううまくいった人はいくらでも",
+      "start_seconds": 679.72,
+      "end_seconds": 682.959,
+      "id": "g6AHx_OWbhg-display-0184",
+      "segment_id": "g6AHx_OWbhg-ja-0087"
+    },
+    {
+      "text": "辻妻のあった綺麗な話ができるでしょう。",
+      "start_seconds": 682.959,
+      "end_seconds": 686.839,
+      "id": "g6AHx_OWbhg-display-0185",
+      "segment_id": "g6AHx_OWbhg-ja-0087"
+    },
+    {
+      "text": "当時不安でいっぱいだった私はそう思って",
+      "start_seconds": 686.839,
+      "end_seconds": 689.2,
+      "id": "g6AHx_OWbhg-display-0186",
+      "segment_id": "g6AHx_OWbhg-ja-0088"
+    },
+    {
+      "text": "しまい、綺麗なサクセスストーリーは",
+      "start_seconds": 689.2,
+      "end_seconds": 692.519,
+      "id": "g6AHx_OWbhg-display-0187",
+      "segment_id": "g6AHx_OWbhg-ja-0088"
+    },
+    {
+      "text": "刺さりませんでした。",
+      "start_seconds": 692.519,
+      "end_seconds": 695.92,
+      "id": "g6AHx_OWbhg-display-0188",
+      "segment_id": "g6AHx_OWbhg-ja-0088"
+    },
+    {
+      "text": "私は今挑戦中のどうなるか分からない未来",
+      "start_seconds": 695.92,
+      "end_seconds": 700.72,
+      "id": "g6AHx_OWbhg-display-0189",
+      "segment_id": "g6AHx_OWbhg-ja-0089"
+    },
+    {
+      "text": "だとしても信じて突き進んでいる人の話を",
+      "start_seconds": 700.72,
+      "end_seconds": 703.56,
+      "id": "g6AHx_OWbhg-display-0190",
+      "segment_id": "g6AHx_OWbhg-ja-0089"
+    },
+    {
+      "text": "聞いて勇気をもらいたかったのです。",
+      "start_seconds": 703.56,
+      "end_seconds": 708.76,
+      "id": "g6AHx_OWbhg-display-0191",
+      "segment_id": "g6AHx_OWbhg-ja-0090"
+    },
+    {
+      "text": "だからこそ今回幸運にもこの機会を頂いた",
+      "start_seconds": 708.76,
+      "end_seconds": 712.16,
+      "id": "g6AHx_OWbhg-display-0192",
+      "segment_id": "g6AHx_OWbhg-ja-0091"
+    },
+    {
+      "text": "時、",
+      "start_seconds": 712.16,
+      "end_seconds": 714.36,
+      "id": "g6AHx_OWbhg-display-0193",
+      "segment_id": "g6AHx_OWbhg-ja-0091"
+    },
+    {
+      "text": "私はあえて未感染な状態でもこの場に",
+      "start_seconds": 714.36,
+      "end_seconds": 717.48,
+      "id": "g6AHx_OWbhg-display-0194",
+      "segment_id": "g6AHx_OWbhg-ja-0091"
+    },
+    {
+      "text": "立とうと思いました。",
+      "start_seconds": 717.48,
+      "end_seconds": 721.2,
+      "id": "g6AHx_OWbhg-display-0195",
+      "segment_id": "g6AHx_OWbhg-ja-0092"
+    },
+    {
+      "text": "もちろん",
+      "start_seconds": 721.2,
+      "end_seconds": 724.04,
+      "id": "g6AHx_OWbhg-display-0196",
+      "segment_id": "g6AHx_OWbhg-ja-0093"
+    },
+    {
+      "text": "私がいつ夢を叶えるか分かりません。",
+      "start_seconds": 724.04,
+      "end_seconds": 728.959,
+      "id": "g6AHx_OWbhg-display-0197",
+      "segment_id": "g6AHx_OWbhg-ja-0093"
+    },
+    {
+      "text": "完璧な人間ではないので今でもたくさん",
+      "start_seconds": 729.0,
+      "end_seconds": 732.12,
+      "id": "g6AHx_OWbhg-display-0198",
+      "segment_id": "g6AHx_OWbhg-ja-0094"
+    },
+    {
+      "text": "失敗します。",
+      "start_seconds": 732.12,
+      "end_seconds": 734.8,
+      "id": "g6AHx_OWbhg-display-0199",
+      "segment_id": "g6AHx_OWbhg-ja-0094"
+    },
+    {
+      "text": "それでも挑戦中の今を話すことに意味が",
+      "start_seconds": 734.8,
+      "end_seconds": 737.32,
+      "id": "g6AHx_OWbhg-display-0200",
+      "segment_id": "g6AHx_OWbhg-ja-0095"
+    },
+    {
+      "text": "あると思いました。",
+      "start_seconds": 737.32,
+      "end_seconds": 741.12,
+      "id": "g6AHx_OWbhg-display-0201",
+      "segment_id": "g6AHx_OWbhg-ja-0095"
+    },
+    {
+      "text": "今日このスピーチの最初に",
+      "start_seconds": 744.639,
+      "end_seconds": 749.0,
+      "id": "g6AHx_OWbhg-display-0202",
+      "segment_id": "g6AHx_OWbhg-ja-0096"
+    },
+    {
+      "text": "今日は夢を叶えたい人が",
+      "start_seconds": 749.0,
+      "end_seconds": 752.68,
+      "id": "g6AHx_OWbhg-display-0203",
+      "segment_id": "g6AHx_OWbhg-ja-0096"
+    },
+    {
+      "text": "勇気を持って一歩踏み出せる。そんな話を",
+      "start_seconds": 752.68,
+      "end_seconds": 755.48,
+      "id": "g6AHx_OWbhg-display-0204",
+      "segment_id": "g6AHx_OWbhg-ja-0096"
+    },
+    {
+      "text": "しますと言いました。",
+      "start_seconds": 755.48,
+      "end_seconds": 759.24,
+      "id": "g6AHx_OWbhg-display-0205",
+      "segment_id": "g6AHx_OWbhg-ja-0097"
+    },
+    {
+      "text": "それは5年前の私だったらこの話を聞いて",
+      "start_seconds": 759.839,
+      "end_seconds": 766.16,
+      "id": "g6AHx_OWbhg-display-0206",
+      "segment_id": "g6AHx_OWbhg-ja-0098"
+    },
+    {
+      "text": "よし頑張って踏み出そう。そう思えると",
+      "start_seconds": 766.16,
+      "end_seconds": 769.76,
+      "id": "g6AHx_OWbhg-display-0207",
+      "segment_id": "g6AHx_OWbhg-ja-0098"
+    },
+    {
+      "text": "思ったからです。",
+      "start_seconds": 769.76,
+      "end_seconds": 773.0,
+      "id": "g6AHx_OWbhg-display-0208",
+      "segment_id": "g6AHx_OWbhg-ja-0099"
+    },
+    {
+      "text": "今日この会場にいる誰かがそう思ってくれ",
+      "start_seconds": 773.0,
+      "end_seconds": 775.68,
+      "id": "g6AHx_OWbhg-display-0209",
+      "segment_id": "g6AHx_OWbhg-ja-0100"
+    },
+    {
+      "text": "たら嬉しいです。",
+      "start_seconds": 775.68,
+      "end_seconds": 778.519,
+      "id": "g6AHx_OWbhg-display-0210",
+      "segment_id": "g6AHx_OWbhg-ja-0100"
+    },
+    {
+      "text": "ありがとうございました。[拍手]",
+      "start_seconds": 778.519,
+      "end_seconds": 782.788,
+      "id": "g6AHx_OWbhg-display-0211",
+      "segment_id": "g6AHx_OWbhg-ja-0101"
+    }
+  ]
+}

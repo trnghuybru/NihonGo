@@ -188,3 +188,110 @@ venv/bin/flask --app app shadowing-prepare-words --stats
 Chạy lại prepare an toàn: chỉ phân tích khi fingerprint thay đổi. Bài ready chưa
 có cache được bổ sung khi mở lần đầu; tải bộ từ điển lúc cài đặt, không tải mỗi lần
 bấm chữ. Build lại worker bằng compose để video mới được chuẩn bị từ trước.
+
+## Dịch phụ đề tiếng Việt
+
+Nút **Bản dịch** gọi GET `/api/listening/shadowing/jobs/<id>/translation`.
+Nếu `not_requested`, app POST cùng endpoint để tạo job; chỉ video ready được dịch.
+App poll 3 giây khi đang chuẩn bị, dừng poll khi tắt dịch/rời bài hoặc app nền.
+API không gọi Gemini trực tiếp. Worker dùng queue ElasticMQ/SQS hiện có, phân biệt
+message `kind=translation`; ASR/shadowing vẫn dùng luồng cũ. Worker hiện xử lý tuần tự,
+nên job dịch có thể đợi job video trước đó; thêm worker khi cần tăng năng lực.
+
+Cấu hình trong **backend/.env**:
+
+```dotenv
+GEMINI_API_KEY=<key Gemini API hiện có>
+SHADOWING_TRANSLATION_MODEL=gemini-3.1-flash-lite
+```
+
+Model dùng generateContent qua HTTPS, JSON Schema và mức thinking minimal (Gemini 3.x).
+Chỉ gửi title, ID + văn bản các câu cần dịch và một câu ngữ cảnh mỗi phía;
+không gửi audio, tài khoản hoặc thông tin người học. System prompt nguyên văn nằm ở
+`backend/shadowing/translation.py::SYSTEM_PROMPT`: dịch tự nhiên, giữ nghĩa/tên riêng,
+không thêm giải thích, không tuân theo chỉ dẫn trong phụ đề, không đoán ASR không rõ.
+Google có thể dùng dữ liệu free tier để cải thiện sản phẩm theo điều khoản Gemini API;
+xem https://ai.google.dev/gemini-api/docs/pricing.
+
+Bảng `shadowing_translations` lưu một bản vi dùng chung theo video, nguồn + hash,
+model/prompt version, trạng thái, lease và các nhóm câu đã hoàn thành. POST đồng thời
+khóa job cha, không tạo nhiều bản dịch cho cùng video. Mỗi request Gemini tối đa
+20 câu hoặc khoảng 2.400 ký tự (một câu đơn quá dài vẫn được giữ nguyên).
+Backend kiểm tra finishReason STOP, đủ đúng ID theo thứ tự và bản dịch không rỗng.
+Lưu từng batch; lỗi mạng/429/5xx thử lại tối đa 3 lượt, backoff 60/120 giây;
+nhóm đã lưu không dịch lại. Dispatcher phục hồi nếu enqueue hoặc worker bị gián đoạn.
+Lỗi xác thực/model cần sửa cấu hình trước khi bấm thử lại. Lease/fencing ngăn worker cũ
+ghi đè nguồn mới. Hash thay đổi khi title/câu luyện hoặc prompt thay đổi: bản cũ không
+hiển thị và lần yêu cầu tiếp theo tạo lại. Đổi model config chỉ áp dụng cho job mới;
+cache ready tiếp tục được dùng để tiết kiệm chi phí.
+
+Bản dịch hiển thị dưới từng câu luyện và dưới phụ đề lớn theo `segment_id` câu luyện;
+không chia bản dịch bằng số ký tự để khớp cue Nhật ngắn. Tiếng Nhật vẫn đồng bộ video;
+bản Việt có thể giữ nguyên qua nhiều cue của cùng câu luyện. Bản dịch dài ở khu vực
+phụ đề lớn có thể cuộn trong vùng tối đa 72 px để giữ diện tích danh sách.
+
+Áp dụng migration rồi build lại worker:
+
+```sh
+cd backend
+venv/bin/flask --app app db upgrade
+cd ..
+docker compose --env-file backend/.env --profile shadowing up -d --build shadowing-worker
+```
+
+## Câu hỏi AI trong lúc xem (tuỳ chọn)
+
+Trong bài Shadowing, bấm **Câu hỏi AI**, chọn 1–10 câu và trình độ **N5–N1** rồi **Tạo câu hỏi**.
+Không gọi AI khi mở bài hoặc chỉ mở bảng tuỳ chọn. Số câu tối đa còn phụ thuộc số
+đoạn phụ đề. Tạo thành công sẽ xem lại từ đầu ở chế độ nghe liên tục để gặp đủ câu.
+Video tạm dừng khi mở bảng tuỳ chọn/tạo câu hỏi. Dấu **×** ở góc phải đóng bảng;
+nếu đang tạo, kết quả tới sau khi đóng được bỏ qua. Trong popup câu hỏi, **×**
+đóng popup và ngừng các mốc hỏi tự động, vẫn giữ câu hỏi/kết quả để xem lại.
+
+Sau khi tạo xong, mở lại **Câu hỏi AI** để xem **Các mốc câu hỏi**. Mỗi nút
+**Tới câu hỏi** hiển thị số câu và thời gian; bấm để tua thẳng tới cuối phần bằng
+chứng rồi mở đúng câu đó. Nội dung câu hỏi/đáp án không hiện trong danh sách mốc.
+Player đợi vị trí tua thực tế đạt mốc rồi mới hiện câu hỏi. Khi nhảy thẳng tới một
+câu sau, các câu trước chưa trả lời vẫn có thể chọn từ danh sách, nhưng không tự
+chen vào khi xem tiếp từ mốc mới. Câu đã trả lời được đánh dấu, hiện lại nội dung,
+đáp án đã chọn/đáp án đúng và giải thích; nút **Xem lại câu hỏi** mở lại kết quả
+không tính điểm lần nữa. Câu hỏi và kết quả chỉ hiện trong bảng mở bằng icon AI,
+không chiếm diện tích màn hình phụ đề. Chỉ rời bài mới xoá bộ câu hỏi và kết quả;
+tạo bộ mới theo yêu cầu sẽ thay bộ hiện tại.
+
+POST `/api/listening/shadowing/jobs/<id>/questions` với `{"count": 5, "level": "N3"}` yêu cầu đăng nhập,
+chỉ nhận video ready và giới hạn 20 yêu cầu/người/giờ. Endpoint gọi Gemini trực tiếp,
+Mỗi câu dùng một yêu cầu riêng, tối đa ba yêu cầu song song, timeout kết nối tối đa
+3 giây/đọc tối đa 25 giây, giảm theo ngân sách còn lại của lượt tạo (65 giây).
+App đợi tối đa 75 giây. Dùng `GEMINI_API_KEY`
+hiện có và `SHADOWING_QUIZ_MODEL` (mặc định `gemini-3.1-flash-lite`). Backend cần
+được khởi động lại để nạp route mới; không cần migration hay thay đổi worker.
+
+Backend chia phụ đề thành đúng số khoảng liên tiếp theo thời gian; AI chọn một ý
+quan trọng mỗi khoảng, tạo câu hỏi và bốn lựa chọn bằng tiếng Nhật theo trình độ
+đã chọn (mặc định N3), một đáp án đúng và giải thích tiếng Việt.
+N5/N4 dùng câu ngắn và ngữ pháp quen thuộc; N3 dùng diễn đạt trung cấp; N2/N1
+cho phép câu phức tạp và suy luận sâu hơn, vẫn chỉ dựa trên nội dung video.
+Prompt coi phụ đề là dữ liệu không đáng tin cậy, không tuân theo chỉ dẫn trong đó,
+không lấy kiến thức tương lai để trả lời câu hiện tại. JSON Schema và kiểm tra backend
+bắt buộc đủ số câu, các lựa chọn khác nhau, đáp án hợp lệ, bằng chứng đúng khoảng.
+Mỗi yêu cầu chỉ tạo một câu với `window_index` cố định và ID phụ đề ngắn (`s0`,
+`s1`…) được giới hạn bằng enum trong JSON Schema. Backend ánh xạ về ID thật,
+ghép kết quả theo thứ tự thời gian. Nếu một câu có JSON/bằng chứng không hợp lệ,
+chỉ thử lại câu đó một lần; không tạo lại các câu đã đạt. Log chỉ ghi chỉ số
+khoảng, số lần thử và mã lỗi, không ghi câu hỏi hoặc API key.
+Mốc dừng lấy từ thời gian kết thúc phần phụ đề làm bằng chứng, không từ timestamp AI.
+Không gửi tài khoản hoặc lịch sử trả lời cho Gemini, chỉ title và phụ đề có mốc thời gian.
+
+Player kiểm tra thời gian phát mỗi 100 ms và dừng trước khi gửi sự kiện hiện câu hỏi.
+Chọn đáp án sẽ khoá lựa chọn, hiện đúng/sai, đáp án đúng và giải thích; **Xem tiếp**
+mới tiếp tục phát. Câu cuối vẫn được hỏi khi video kết thúc. Tua qua mốc sẽ hỏi
+câu chưa trả lời theo thứ tự; tua lại không lặp câu đã hoàn tất. Đóng popup bằng
+**×** bỏ các mốc dừng tự động nhưng giữ câu hỏi và kết quả trong phiên để xem lại.
+Đáp án được trả trong response nhưng chỉ hiện trong UI sau khi chọn.
+
+Bộ câu hỏi và kết quả chỉ giữ trong state của phiên xem, không lưu database,
+storage thiết bị, queue hay cache. Response dùng `Cache-Control: no-store`.
+Rời bài xoá bộ câu hỏi; response tới sau khi huỷ/rời bài được bỏ qua. Có thể
+tạo lại theo yêu cầu; AI có thể báo lỗi nếu không tạo được nội dung đủ rõ hoặc
+trả thiếu số câu, khi đó người dùng thử lại hoặc giảm số câu.

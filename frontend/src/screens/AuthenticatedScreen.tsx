@@ -1,3 +1,4 @@
+import { BottomNavigationInsetContext } from '../hooks/useBottomNavigationInset';
 import { useCallback, useEffect, useState } from 'react';
 import { BackHandler, StyleSheet, View } from 'react-native';
 import { AuthButton, AuthNotice, AuthShell } from '../components/AuthForm';
@@ -42,6 +43,7 @@ function MainTabs({
   const [visitedVocabulary, setVisitedVocabulary] = useState(false);
   const [visitedLookup, setVisitedLookup] = useState(false);
   const [activeSkill, setActiveSkill] = useState<LearningSkill | null>(null);
+  const [navigationHeight, setNavigationHeight] = useState(0);
   useEffect(() => {
     if (selectedTab === 'vocabulary') setVisitedVocabulary(true);
     if (selectedTab === 'lookup') setVisitedLookup(true);
@@ -80,89 +82,106 @@ function MainTabs({
   }, [selectedTab, selectTab, showPlan, activeSkill]);
 
   return (
-    <View style={styles.main}>
-      <View style={styles.screen}>
-        {showPlan ? (
-          <LearningPlanScreen
-            profile={profile}
-            options={options}
-            onEdit={onEditLearning}
-            onBack={() => onSelectTab('home')}
-          />
-        ) : selectedTab === 'home' ? (
-          <HomeScreen
-            user={user}
-            profile={profile}
-            options={options}
-            onContinueLearning={onOpenPlan}
-            onOpenSkill={openSkill}
-            onSearchVocabulary={query => {
-              setVocabularyQuery(query);
-              onSelectTab('lookup');
-            }}
-            onOpenVocabulary={() => {
-              setVocabularyQuery('');
-              onSelectTab('vocabulary');
-            }}
-            onOpenPromotion={onOpenPlan}
-          />
-        ) : selectedTab === 'practice' ? (
-          activeSkill === 'speaking' ? (
-            <SpeakingScenariosScreen />
-          ) : activeSkill === 'listening' ? (
-            <ShadowingScreen onExit={() => setActiveSkill(null)} />
-          ) : activeSkill ? (
-            <LearningAreaScreen area={activeSkill} />
-          ) : (
-            <PracticeScreen onOpenSkill={openSkill} />
-          )
-        ) : selectedTab === 'profile' ? (
-          <AccountScreen
-            user={user}
-            learningProfile={profile}
-            learningOptions={options}
-            onEditLearning={onEditLearning}
-          />
-        ) : null}
-        {visitedVocabulary || selectedTab === 'vocabulary' ? (
-          <View
-            style={[
-              styles.screen,
-              selectedTab !== 'vocabulary' && styles.hidden,
-            ]}
-          >
-            <VocabularyScreen
-              area="lessons"
-              active={selectedTab === 'vocabulary'}
-              onExit={() => selectTab('home')}
+    <BottomNavigationInsetContext.Provider value={navigationHeight}>
+      <View style={styles.main}>
+        <View style={styles.screen}>
+          {showPlan ? (
+            <LearningPlanScreen
+              profile={profile}
+              options={options}
+              onEdit={onEditLearning}
+              onBack={() => onSelectTab('home')}
             />
-          </View>
-        ) : null}
-        {visitedLookup || selectedTab === 'lookup' ? (
-          <View
-            style={[styles.screen, selectedTab !== 'lookup' && styles.hidden]}
-          >
-            <VocabularyScreen
-              key={vocabularyQuery}
-              area="lookup"
-              query={vocabularyQuery}
-              active={selectedTab === 'lookup'}
-              onExit={() => selectTab('home')}
+          ) : selectedTab === 'home' ? (
+            <HomeScreen
+              user={user}
+              profile={profile}
+              options={options}
+              onContinueLearning={onOpenPlan}
+              onOpenSkill={openSkill}
+              onSearchVocabulary={query => {
+                setVocabularyQuery(query);
+                onSelectTab('lookup');
+              }}
+              onOpenVocabulary={() => {
+                setVocabularyQuery('');
+                onSelectTab('vocabulary');
+              }}
+              onOpenPromotion={onOpenPlan}
             />
-          </View>
-        ) : null}
+          ) : selectedTab === 'practice' ? (
+            activeSkill === 'speaking' ? (
+              <SpeakingScenariosScreen />
+            ) : activeSkill === 'listening' ? (
+              <ShadowingScreen
+                onExit={() => setActiveSkill(null)}
+                bottomOverlayHeight={navigationHeight}
+              />
+            ) : activeSkill ? (
+              <LearningAreaScreen area={activeSkill} />
+            ) : (
+              <PracticeScreen onOpenSkill={openSkill} />
+            )
+          ) : selectedTab === 'profile' ? (
+            <AccountScreen
+              user={user}
+              learningProfile={profile}
+              learningOptions={options}
+              onEditLearning={onEditLearning}
+            />
+          ) : null}
+          {visitedVocabulary || selectedTab === 'vocabulary' ? (
+            <View
+              style={[
+                styles.screen,
+                selectedTab !== 'vocabulary' && styles.hidden,
+              ]}
+            >
+              <VocabularyScreen
+                area="lessons"
+                active={selectedTab === 'vocabulary'}
+                onExit={() => selectTab('home')}
+              />
+            </View>
+          ) : null}
+          {visitedLookup || selectedTab === 'lookup' ? (
+            <View
+              style={[styles.screen, selectedTab !== 'lookup' && styles.hidden]}
+            >
+              <VocabularyScreen
+                key={vocabularyQuery}
+                area="lookup"
+                query={vocabularyQuery}
+                active={selectedTab === 'lookup'}
+                onExit={() => selectTab('home')}
+              />
+            </View>
+          ) : null}
+        </View>
+        <View
+          pointerEvents="box-none"
+          style={styles.floatingNavigation}
+          onLayout={event =>
+            setNavigationHeight(event.nativeEvent.layout.height)
+          }
+        >
+          {selectedTab === 'practice' &&
+          activeSkill &&
+          activeSkill !== 'listening' ? (
+            <AuthButton
+              label="Chọn kỹ năng khác"
+              variant="text"
+              onPress={() => setActiveSkill(null)}
+            />
+          ) : null}
+          <BottomNavigation
+            selectedTab={selectedTab}
+            onSelectTab={selectTab}
+            floating
+          />
+        </View>
       </View>
-      {selectedTab === 'practice' &&
-      activeSkill &&
-      activeSkill !== 'listening' ? (
-        <AuthButton
-          label="Chọn kỹ năng khác"
-          variant="text"
-          onPress={() => setActiveSkill(null)}
-        />
-      ) : null}
-      <BottomNavigation selectedTab={selectedTab} onSelectTab={selectTab} />
-    </View>
+    </BottomNavigationInsetContext.Provider>
   );
 }
 
@@ -261,4 +280,11 @@ const styles = StyleSheet.create({
   hidden: { display: 'none' },
   main: { flex: 1, backgroundColor: colors.background },
   screen: { flex: 1 },
+  floatingNavigation: {
+    position: 'absolute',
+    left: 0,
+    right: 0,
+    bottom: 0,
+    zIndex: 20,
+  },
 });

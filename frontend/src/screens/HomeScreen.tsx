@@ -62,9 +62,6 @@ export function HomeScreen({
           </Text>
         </View>
         <VocabularySearchBar onSearch={onSearchVocabulary} />
-        <Text style={styles.helper}>
-          Hỗ trợ tiếng Nhật, romaji và nghĩa tiếng Việt.
-        </Text>
       </View>
 
       <View style={styles.section}>
@@ -200,7 +197,6 @@ const styles = StyleSheet.create({
     backgroundColor: colors.divider,
     alignSelf: 'center',
   },
-  helper: { ...typography.body, color: colors.muted },
   continueCard: {
     borderRadius: radius.card,
     borderCurve: 'continuous',

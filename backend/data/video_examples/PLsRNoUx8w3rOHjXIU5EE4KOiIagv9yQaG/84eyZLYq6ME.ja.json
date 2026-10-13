@@ -1,0 +1,4318 @@
+{
+  "schema_version": 1,
+  "video": {
+    "youtube_id": "84eyZLYq6ME",
+    "title": "Seek Out the Single Lantern | Keigo Kansa | TEDxICU",
+    "channel": "TEDx Talks",
+    "duration_seconds": 1005
+  },
+  "caption_track": {
+    "language": "ja",
+    "kind": "asr",
+    "source": "youtube_automatic"
+  },
+  "source_playlist": "https://www.youtube.com/playlist?list=PLsRNoUx8w3rOHjXIU5EE4KOiIagv9yQaG",
+  "fetched_at": "2026-10-13T13:24:42.373957+00:00",
+  "segment_count": 113,
+  "segments": [
+    {
+      "text": "[音楽]",
+      "start_seconds": 4.584,
+      "end_seconds": 6.603999999999999,
+      "id": "84eyZLYq6ME-ja-0001",
+      "sequence": 1
+    },
+    {
+      "text": "こんにちは。敬号です。よろしくお願いします。今日はこのテックス",
+      "start_seconds": 13.679,
+      "end_seconds": 16.679000000000002,
+      "id": "84eyZLYq6ME-ja-0002",
+      "sequence": 2
+    },
+    {
+      "text": "ICUという素晴らしい場所にご招待ただきありがとうございます。",
+      "start_seconds": 19.8,
+      "end_seconds": 23.279,
+      "id": "84eyZLYq6ME-ja-0003",
+      "sequence": 3
+    },
+    {
+      "text": "今日この場で人生の奇跡としてのアイデンティティの創失と確率。これをテーマにお話ししようと思います。",
+      "start_seconds": 25.0,
+      "end_seconds": 35.36,
+      "id": "84eyZLYq6ME-ja-0004",
+      "sequence": 4
+    },
+    {
+      "text": "なぜこのテーマにしたかというと、今回デxICUのテーマでもあるオビit軌動と深く関係しているからです。軌道とは",
+      "start_seconds": 35.36,
+      "end_seconds": 47.079,
+      "id": "84eyZLYq6ME-ja-0005",
+      "sequence": 5
+    },
+    {
+      "text": "見えない力に引かれながらそれでもなお自らの速度で進むこと。それはその言葉を",
+      "start_seconds": 47.079,
+      "end_seconds": 55.399,
+      "id": "84eyZLYq6ME-ja-0006",
+      "sequence": 6
+    },
+    {
+      "text": "聞いた時にふと感じました。私たちの人生そのものではないかと。私たちもまた社会からの目や家族からの期待価値観や文化と",
+      "start_seconds": 55.399,
+      "end_seconds": 67.159,
+      "id": "84eyZLYq6ME-ja-0007",
+      "sequence": 7
+    },
+    {
+      "text": "いった見えない力に引かれながらそれでもなお自らの速度で独自の起動を描いています。",
+      "start_seconds": 67.159,
+      "end_seconds": 77.439,
+      "id": "84eyZLYq6ME-ja-0008",
+      "sequence": 8
+    },
+    {
+      "text": "その独自の軌動を描くのに重要となる力、その重力こそがアイデンティなのだと思い",
+      "start_seconds": 77.6,
+      "end_seconds": 85.84,
+      "id": "84eyZLYq6ME-ja-0009",
+      "sequence": 9
+    },
+    {
+      "text": "ます。一見交わらないように見える軌動もある一定感で影響し合い、交わり、新たな",
+      "start_seconds": 85.84,
+      "end_seconds": 96.079,
+      "id": "84eyZLYq6ME-ja-0010",
+      "sequence": 10
+    },
+    {
+      "text": "軌動を描いていく。今日この場に見てくださっている皆さんの軌動がこの瞬間交わり影響し合いそしてアイデンティティ",
+      "start_seconds": 96.079,
+      "end_seconds": 106.399,
+      "id": "84eyZLYq6ME-ja-0011",
+      "sequence": 11
+    },
+    {
+      "text": "という新しい考えもしくは見つめ直す機会となればなと思っております。",
+      "start_seconds": 106.399,
+      "end_seconds": 115.24,
+      "id": "84eyZLYq6ME-ja-0012",
+      "sequence": 12
+    },
+    {
+      "text": "昨今AIやソーシャルネットワークの普及により誰もが簡単に情報が手に入り答えが見つかりあらゆるあらゆるものを比較検討",
+      "start_seconds": 115.24,
+      "end_seconds": 125.6,
+      "id": "84eyZLYq6ME-ja-0013",
+      "sequence": 13
+    },
+    {
+      "text": "できるような世界になりました。",
+      "start_seconds": 125.6,
+      "end_seconds": 128.16,
+      "id": "84eyZLYq6ME-ja-0014",
+      "sequence": 14
+    },
+    {
+      "text": "それによって便利にはなった。ただその反面何を信じるべきかが分かりづらくなっています。",
+      "start_seconds": 128.16,
+      "end_seconds": 138.04,
+      "id": "84eyZLYq6ME-ja-0015",
+      "sequence": 15
+    },
+    {
+      "text": "だからこそその中心の重力となるもの導く力が必要なのです。",
+      "start_seconds": 138.04,
+      "end_seconds": 146.2,
+      "id": "84eyZLYq6ME-ja-0016",
+      "sequence": 16
+    },
+    {
+      "text": "そしてそれが人生という軌動を描いていく中での重要な力としてアイデンティティというものがあるのだと思います。この話を",
+      "start_seconds": 146.2,
+      "end_seconds": 155.879,
+      "id": "84eyZLYq6ME-ja-0017",
+      "sequence": 17
+    },
+    {
+      "text": "するにあたって軽く私の自己紹介をさせてください。私は2004年に大阪で生まれ、その後大阪で育ち、京都大学に進学し",
+      "start_seconds": 155.879,
+      "end_seconds": 166.28,
+      "id": "84eyZLYq6ME-ja-0018",
+      "sequence": 18
+    },
+    {
+      "text": "ました。その後1年から運欲京都の広告代理店ベンチャーに入り、そこでマネジメントやクリエイティブ、さらには",
+      "start_seconds": 166.28,
+      "end_seconds": 177.12,
+      "id": "84eyZLYq6ME-ja-0019",
+      "sequence": 19
+    },
+    {
+      "text": "経営といったものを学び、そっから2025年2月、今年の2月ですね、サイバーセキュリティの会社であるアラジンセキュリティを創業しました。",
+      "start_seconds": 177.12,
+      "end_seconds": 186.64,
+      "id": "84eyZLYq6ME-ja-0020",
+      "sequence": 20
+    },
+    {
+      "text": "この会社では今普及しているAIの安全性評価や保障、さらには脆弱性の特定といった研究や開発を行っております。",
+      "start_seconds": 186.64,
+      "end_seconds": 198.2,
+      "id": "84eyZLYq6ME-ja-0021",
+      "sequence": 21
+    },
+    {
+      "text": "誰しもが自分らしい価値観を教授しながら安心安全なAIを利用するための取り組みです。",
+      "start_seconds": 198.2,
+      "end_seconds": 206.44,
+      "id": "84eyZLYq6ME-ja-0022",
+      "sequence": 22
+    },
+    {
+      "text": "よくどうして起業したんですかと聞かれることが多いです。最近言語化したんですけど、意外とシンプルで本気になれる場所",
+      "start_seconds": 206.44,
+      "end_seconds": 215.599,
+      "id": "84eyZLYq6ME-ja-0023",
+      "sequence": 23
+    },
+    {
+      "text": "が欲しかった。私は中学高校とサッカー部に入っていました。特に高校ではキャプテンを務めさせていただき、リーグ",
+      "start_seconds": 215.599,
+      "end_seconds": 225.599,
+      "id": "84eyZLYq6ME-ja-0024",
+      "sequence": 24
+    },
+    {
+      "text": "戦や大会などいろんなものに出させていただきました。ただ、え、その部活は僕らの部活は高校3年の10月まであります",
+      "start_seconds": 225.599,
+      "end_seconds": 235.2,
+      "id": "84eyZLYq6ME-ja-0025",
+      "sequence": 25
+    },
+    {
+      "text": "。その10月まではずっとサッカーのことばかりを考えていたのですが、残り4ヶ月で受験が迫ってます。僕の周りにいる受験",
+      "start_seconds": 235.2,
+      "end_seconds": 245.48,
+      "id": "84eyZLYq6ME-ja-0026",
+      "sequence": 26
+    },
+    {
+      "text": "を、ま、京都大学に受ける受験をする人たちは3年の4月で引退していたり、もしくは高校3年間全て勉強に捧げてるような人たちばかりでした。そこに対して",
+      "start_seconds": 245.48,
+      "end_seconds": 257.4,
+      "id": "84eyZLYq6ME-ja-0027",
+      "sequence": 27
+    },
+    {
+      "text": "ちゃんと受かる、合格するってなると残りの4ヶ月間全て受験のことを考えて、え、やっていくしかなかったのです。結果無事",
+      "start_seconds": 257.4,
+      "end_seconds": 269.039,
+      "id": "84eyZLYq6ME-ja-0028",
+      "sequence": 28
+    },
+    {
+      "text": "に京都大学に進学することができました。",
+      "start_seconds": 269.039,
+      "end_seconds": 272.759,
+      "id": "84eyZLYq6ME-ja-0029",
+      "sequence": 29
+    },
+    {
+      "text": "ふとそのタイミングで気づいたんです。今までサッカーや受験、頭の中を閉めていたそのものがなくなってしまい、空気になっ",
+      "start_seconds": 272.759,
+      "end_seconds": 283.32,
+      "id": "84eyZLYq6ME-ja-0030",
+      "sequence": 30
+    },
+    {
+      "text": "てしまったと。そして朝起きて天井のシミの数を数える毎日でした。その穴を埋めるためにビジネスの世界に入っていったと",
+      "start_seconds": 283.32,
+      "end_seconds": 293.8,
+      "id": "84eyZLYq6ME-ja-0031",
+      "sequence": 31
+    },
+    {
+      "text": "言っても過言ではありません。そしてその全職の会社では色々なことを経験させていただき、人が増え、規模が大きくなり、",
+      "start_seconds": 293.8,
+      "end_seconds": 304.4,
+      "id": "84eyZLYq6ME-ja-0032",
+      "sequence": 32
+    },
+    {
+      "text": "売上もどんどん上がっていく。それを間近で見たことによって自分でもこういうような会社を作りたいなていうので、え、今のアラジンセキュリティを創業しました。今",
+      "start_seconds": 304.4,
+      "end_seconds": 316.16,
+      "id": "84eyZLYq6ME-ja-0033",
+      "sequence": 33
+    },
+    {
+      "text": "も社会からのプレッシャーや期待など様々なものを背負いながらそれでもなおそれを飲み込んでやろうと楽しんでやっております。",
+      "start_seconds": 316.16,
+      "end_seconds": 326.639,
+      "id": "84eyZLYq6ME-ja-0034",
+      "sequence": 34
+    },
+    {
+      "text": "だからこそ私がどういう風にアイデンチティを取られているのかそこをお話しさせていただければなという風に思っております。この話をさせていただく",
+      "start_seconds": 326.639,
+      "end_seconds": 335.72,
+      "id": "84eyZLYq6ME-ja-0035",
+      "sequence": 35
+    },
+    {
+      "text": "にあたってある人物のお話と1つの昔話をさしてください。私の尊敬する趣旨学者で",
+      "start_seconds": 335.72,
+      "end_seconds": 345.12,
+      "id": "84eyZLYq6ME-ja-0036",
+      "sequence": 36
+    },
+    {
+      "text": "吉田商員や最後高森といった明治心の支士たちの方の思想を片った佐藤一歳の原子録の言葉の中に本の中にこのような言葉が",
+      "start_seconds": 345.12,
+      "end_seconds": 355.199,
+      "id": "84eyZLYq6ME-ja-0037",
+      "sequence": 37
+    },
+    {
+      "text": "あります。",
+      "start_seconds": 355.199,
+      "end_seconds": 357.24,
+      "id": "84eyZLYq6ME-ja-0038",
+      "sequence": 38
+    },
+    {
+      "text": "一等を下げて安を行く。安を売れることなかれ。ただ一等を頼みて。暗闇みも恐れる必要はない。たった1つの光でも",
+      "start_seconds": 357.24,
+      "end_seconds": 367.039,
+      "id": "84eyZLYq6ME-ja-0039",
+      "sequence": 39
+    },
+    {
+      "text": "信じ抜いて歩いていくべきだ。そういった意味が込められています。もう1つ私の尊敬する方がお話ししてくれた昔話です。",
+      "start_seconds": 367.039,
+      "end_seconds": 377.319,
+      "id": "84eyZLYq6ME-ja-0040",
+      "sequence": 40
+    },
+    {
+      "text": "昔ハンガリー軍の偵察部隊がアルプス三脈に偵察に行きました。その時猛吹雪が起こり彷徨いやる誰もが死を感じました。",
+      "start_seconds": 377.319,
+      "end_seconds": 389.319,
+      "id": "84eyZLYq6ME-ja-0041",
+      "sequence": 41
+    },
+    {
+      "text": "そしてみんな希望を打ちしがれ、もうこのままなすべもなく死ぬしかないと思った先、1人の隊員から1枚の地図が見つかり",
+      "start_seconds": 389.319,
+      "end_seconds": 399.039,
+      "id": "84eyZLYq6ME-ja-0042",
+      "sequence": 42
+    },
+    {
+      "text": "ました。その地図で全員が希望を持ちなんとか行きながら下山することができました。後に下算してその地図を確認すると実は",
+      "start_seconds": 399.039,
+      "end_seconds": 410.84,
+      "id": "84eyZLYq6ME-ja-0043",
+      "sequence": 43
+    },
+    {
+      "text": "アルプス三脈の地図ではなくピレネー三脈の地図だったという意味です。どういうことが言いたいのかというと、ま、世の中は真っ暗で進んでいく道も本当にこれが",
+      "start_seconds": 410.84,
+      "end_seconds": 422.0,
+      "id": "84eyZLYq6ME-ja-0044",
+      "sequence": 44
+    },
+    {
+      "text": "合ってるのかといったものは分からない。",
+      "start_seconds": 422.0,
+      "end_seconds": 424.919,
+      "id": "84eyZLYq6ME-ja-0045",
+      "sequence": 45
+    },
+    {
+      "text": "そういった中でそれでも何か1つでも信じるものを信じ抜き歩いていくそういった覚悟が必要なんだと思います。そして",
+      "start_seconds": 424.919,
+      "end_seconds": 435.72,
+      "id": "84eyZLYq6ME-ja-0046",
+      "sequence": 46
+    },
+    {
+      "text": "そのアイデンティティという観点でいきますと、ま、辞書には辞書を引くとこういう風に書いています。",
+      "start_seconds": 435.72,
+      "end_seconds": 444.879,
+      "id": "84eyZLYq6ME-ja-0047",
+      "sequence": 47
+    },
+    {
+      "text": "自分は何者なのかという自己認識と私はこれでは不十分ではないかなという風に思ってます。私が思うにアイデンティティ",
+      "start_seconds": 444.879,
+      "end_seconds": 453.479,
+      "id": "84eyZLYq6ME-ja-0048",
+      "sequence": 48
+    },
+    {
+      "text": "とは先ほどの2つのお話の一等や地図のことだと思います。",
+      "start_seconds": 453.479,
+      "end_seconds": 461.52,
+      "id": "84eyZLYq6ME-ja-0049",
+      "sequence": 49
+    },
+    {
+      "text": "先ほどもあげたように暗闇みを歩いていく、さらには会っているかも分からない。",
+      "start_seconds": 461.52,
+      "end_seconds": 467.36,
+      "id": "84eyZLYq6ME-ja-0050",
+      "sequence": 50
+    },
+    {
+      "text": "そういったような道を進んでいく時の希望となりとなる。そういったような存在こそがアイデンティティなんだと思っており",
+      "start_seconds": 467.36,
+      "end_seconds": 474.84,
+      "id": "84eyZLYq6ME-ja-0051",
+      "sequence": 51
+    },
+    {
+      "text": "ます。そしてその軌動自分の人生を描いていくための軌動を片っていくためにはアイデンティティ、自分を導く重力が必要",
+      "start_seconds": 474.84,
+      "end_seconds": 485.919,
+      "id": "84eyZLYq6ME-ja-0052",
+      "sequence": 52
+    },
+    {
+      "text": "なんだと思います。では、どのようにアイデンティティを創失すればいいのでしょうか?",
+      "start_seconds": 485.919,
+      "end_seconds": 494.159,
+      "id": "84eyZLYq6ME-ja-0053",
+      "sequence": 53
+    },
+    {
+      "text": "私が思うにアイデンティとアイデンティティと言うとやはり難しく抽象的で感じてしまうものもあるかもしれません。ただそういったこともないかなと",
+      "start_seconds": 494.159,
+      "end_seconds": 504.879,
+      "id": "84eyZLYq6ME-ja-0054",
+      "sequence": 54
+    },
+    {
+      "text": "いう風には思っております。それこそ僕も若い人やいろんな方とお話させていただく時に一定数の覚悟が決まってこの道で進ん",
+      "start_seconds": 504.879,
+      "end_seconds": 514.919,
+      "id": "84eyZLYq6ME-ja-0055",
+      "sequence": 55
+    },
+    {
+      "text": "でいくと決めている人や未だに悩み続けている人、いろんな人とお会いしてお話をしていく中でこの差が見えてきました。それ",
+      "start_seconds": 514.919,
+      "end_seconds": 524.0,
+      "id": "84eyZLYq6ME-ja-0056",
+      "sequence": 56
+    },
+    {
+      "text": "はベンチマークとなる存在がいる方です。",
+      "start_seconds": 524.0,
+      "end_seconds": 527.839,
+      "id": "84eyZLYq6ME-ja-0057",
+      "sequence": 57
+    },
+    {
+      "text": "ベンチマークとは映画のキャラクターや漫画の漫画やドラマのキャラクター歴史上の人物や尊敬する身のりにいる人でも構い",
+      "start_seconds": 527.839,
+      "end_seconds": 537.279,
+      "id": "84eyZLYq6ME-ja-0058",
+      "sequence": 58
+    },
+    {
+      "text": "ません。何か意思決定をしなくてはいけないことが起こった時、困難が起こった時に彼女ならこうするよなという寄り所が",
+      "start_seconds": 537.279,
+      "end_seconds": 547.44,
+      "id": "84eyZLYq6ME-ja-0059",
+      "sequence": 59
+    },
+    {
+      "text": "大切なのです。そしてその決定基準を一旦外に置いてみることによってまた新たな",
+      "start_seconds": 547.44,
+      "end_seconds": 556.279,
+      "id": "84eyZLYq6ME-ja-0060",
+      "sequence": 60
+    },
+    {
+      "text": "世界が見えてきます。それは盲目的に真似をすることではありません。最初は憧れで",
+      "start_seconds": 556.279,
+      "end_seconds": 564.68,
+      "id": "84eyZLYq6ME-ja-0061",
+      "sequence": 61
+    },
+    {
+      "text": "も模法でもいい。そのベンチマークとなる人の軌動や奇跡を見ていくことによって、",
+      "start_seconds": 564.68,
+      "end_seconds": 575.2,
+      "id": "84eyZLYq6ME-ja-0062",
+      "sequence": 62
+    },
+    {
+      "text": "もしくは言葉を聞いていくことによって、それをまた新たな自分の軌動として考えていけばいいのだと思います。つまりその",
+      "start_seconds": 575.2,
+      "end_seconds": 586.959,
+      "id": "84eyZLYq6ME-ja-0063",
+      "sequence": 63
+    },
+    {
+      "text": "憧れベンチマークの描いた人生というのはただ単に他人の軌動ではなく自分がこれ",
+      "start_seconds": 586.959,
+      "end_seconds": 594.24,
+      "id": "84eyZLYq6ME-ja-0064",
+      "sequence": 64
+    },
+    {
+      "text": "から描く物語の予感なのだと思います。",
+      "start_seconds": 594.24,
+      "end_seconds": 599.16,
+      "id": "84eyZLYq6ME-ja-0065",
+      "sequence": 65
+    },
+    {
+      "text": "ではアイデンティティを確立させるためにはどうすればいいのでしょうか?",
+      "start_seconds": 599.16,
+      "end_seconds": 604.959,
+      "id": "84eyZLYq6ME-ja-0066",
+      "sequence": 66
+    },
+    {
+      "text": "私はこれが口に出すことだと思います。",
+      "start_seconds": 604.959,
+      "end_seconds": 608.64,
+      "id": "84eyZLYq6ME-ja-0067",
+      "sequence": 67
+    },
+    {
+      "text": "先ほど辞書に挙げたように人間の自己認識内面にとめるものというような一定数のバイアスがあるかと思いますが、そういう",
+      "start_seconds": 608.64,
+      "end_seconds": 617.959,
+      "id": "84eyZLYq6ME-ja-0068",
+      "sequence": 68
+    },
+    {
+      "text": "わけではないと思ってます。やはり自分が憧れるものや自分が思ってる信念、アイデンティティとなるものは口に出して",
+      "start_seconds": 617.959,
+      "end_seconds": 627.76,
+      "id": "84eyZLYq6ME-ja-0069",
+      "sequence": 69
+    },
+    {
+      "text": "こそ形になると思います。それが大きく繋がり広がりそして共鳴しうねりとなっていくアイデンティティは静かに電波して",
+      "start_seconds": 627.76,
+      "end_seconds": 639.399,
+      "id": "84eyZLYq6ME-ja-0070",
+      "sequence": 70
+    },
+    {
+      "text": "いくものなのです。",
+      "start_seconds": 639.399,
+      "end_seconds": 642.16,
+      "id": "84eyZLYq6ME-ja-0071",
+      "sequence": 71
+    },
+    {
+      "text": "私は最近歴史小説をよく読みます。特に北方健造の鼓電という物語はとても面白くて、ま、それをちょっと紹介させて",
+      "start_seconds": 642.16,
+      "end_seconds": 651.279,
+      "id": "84eyZLYq6ME-ja-0072",
+      "sequence": 72
+    },
+    {
+      "text": "いただければと思うんですけど、腐敗した国家や政府に対して立ち上がった男たちは大天行動という天に変わって道を行うと",
+      "start_seconds": 651.279,
+      "end_seconds": 661.959,
+      "id": "84eyZLYq6ME-ja-0073",
+      "sequence": 73
+    },
+    {
+      "text": "いう旗を掲げます。そして生さをし、それにの",
+      "start_seconds": 661.959,
+      "end_seconds": 669.6,
+      "id": "84eyZLYq6ME-ja-0074",
+      "sequence": 74
+    },
+    {
+      "text": "心志しに共鳴した地方の合結が都いうねりとなって大きな形となっていきます。",
+      "start_seconds": 669.6,
+      "end_seconds": 681.48,
+      "id": "84eyZLYq6ME-ja-0075",
+      "sequence": 75
+    },
+    {
+      "text": "これを読んでいるとふと私は思うのです。",
+      "start_seconds": 681.48,
+      "end_seconds": 684.44,
+      "id": "84eyZLYq6ME-ja-0076",
+      "sequence": 76
+    },
+    {
+      "text": "企業もこれに似ているのではないかなと。",
+      "start_seconds": 684.44,
+      "end_seconds": 688.279,
+      "id": "84eyZLYq6ME-ja-0077",
+      "sequence": 77
+    },
+    {
+      "text": "最初は小さな声にしかならないかもしれない。",
+      "start_seconds": 688.279,
+      "end_seconds": 694.519,
+      "id": "84eyZLYq6ME-ja-0078",
+      "sequence": 78
+    },
+    {
+      "text": "ただそれをつが、それをつなげることで繋がり広がり、そして仲間を呼び念を形にしていく。最初は",
+      "start_seconds": 694.519,
+      "end_seconds": 705.2,
+      "id": "84eyZLYq6ME-ja-0079",
+      "sequence": 79
+    },
+    {
+      "text": "もちろん無名でも笑われるような挑戦でもその覚悟を持って信念を口にしていく、言葉にしていくことによってそれが誰かに",
+      "start_seconds": 705.2,
+      "end_seconds": 715.48,
+      "id": "84eyZLYq6ME-ja-0080",
+      "sequence": 80
+    },
+    {
+      "text": "伝わり大きな世界を描いていくのだと思います。挑戦のためにはその大きな心志しアイデンティティを口に出していくべきだ",
+      "start_seconds": 715.48,
+      "end_seconds": 727.24,
+      "id": "84eyZLYq6ME-ja-0081",
+      "sequence": 81
+    },
+    {
+      "text": "と思います。それこそがアイデンティティが事故の個人にとまるものではなく社会に溶け出していくプロセスなんだと思います。",
+      "start_seconds": 727.24,
+      "end_seconds": 739.12,
+      "id": "84eyZLYq6ME-ja-0082",
+      "sequence": 82
+    },
+    {
+      "text": "そして恋に出した瞬間にやがてそのアイデンティティはかっこたるものとして確立していくのだと思います。",
+      "start_seconds": 739.12,
+      "end_seconds": 748.959,
+      "id": "84eyZLYq6ME-ja-0083",
+      "sequence": 83
+    },
+    {
+      "text": "私は会社のvalリューとして才能の集中と爆発というものを置いてます。これは何かと言うと誰しもが才能があると思っています。",
+      "start_seconds": 748.959,
+      "end_seconds": 760.88,
+      "id": "84eyZLYq6ME-ja-0084",
+      "sequence": 84
+    },
+    {
+      "text": "そのただその才能はほっておいても爆発はしませんし開花もしません。",
+      "start_seconds": 760.88,
+      "end_seconds": 767.56,
+      "id": "84eyZLYq6ME-ja-0085",
+      "sequence": 85
+    },
+    {
+      "text": "決して覚めない情熱を持って行動を繰り返し集中することによって自分では想像もできないような",
+      "start_seconds": 767.56,
+      "end_seconds": 778.6,
+      "id": "84eyZLYq6ME-ja-0086",
+      "sequence": 86
+    },
+    {
+      "text": "大きな爆発として才能が開化するのだと思います。",
+      "start_seconds": 778.6,
+      "end_seconds": 783.36,
+      "id": "84eyZLYq6ME-ja-0087",
+      "sequence": 87
+    },
+    {
+      "text": "これも信念を口にし伝えそして集中していくことが1つ欠かせないものとなっております。また今僕はここに多分今ここに",
+      "start_seconds": 783.36,
+      "end_seconds": 795.32,
+      "id": "84eyZLYq6ME-ja-0088",
+      "sequence": 88
+    },
+    {
+      "text": "見てくださっている皆さんとあまり年齢が変わらないにも関わらず大きな顔をして今た前に立っています。ただ私自身もまだ何も成し遂げていないし成功もしていない。",
+      "start_seconds": 795.32,
+      "end_seconds": 807.16,
+      "id": "84eyZLYq6ME-ja-0089",
+      "sequence": 89
+    },
+    {
+      "text": "だからここでアイデンティティの確立をしたいと思っております。",
+      "start_seconds": 807.16,
+      "end_seconds": 812.199,
+      "id": "84eyZLYq6ME-ja-0090",
+      "sequence": 90
+    },
+    {
+      "text": "ここ数十年でインターネットが出てき、ソーシャルネットワークが出て、クラウドが出てAIが出た。今後数十年で見たとし",
+      "start_seconds": 812.199,
+      "end_seconds": 821.0,
+      "id": "84eyZLYq6ME-ja-0091",
+      "sequence": 91
+    },
+    {
+      "text": "ても、新しい技術確信は絶対に起こると思っています。それによって技術の基盤は変わり、社会は変わる。価値観も変わって",
+      "start_seconds": 821.0,
+      "end_seconds": 832.36,
+      "id": "84eyZLYq6ME-ja-0092",
+      "sequence": 92
+    },
+    {
+      "text": "いき、働き方や生き方も変わっていく。",
+      "start_seconds": 832.36,
+      "end_seconds": 837.0,
+      "id": "84eyZLYq6ME-ja-0093",
+      "sequence": 93
+    },
+    {
+      "text": "ただそんな中でそれでも信じる存在、信じられるべき存在となっていくことが僕らの信念としては",
+      "start_seconds": 837.0,
+      "end_seconds": 846.079,
+      "id": "84eyZLYq6ME-ja-0094",
+      "sequence": 94
+    },
+    {
+      "text": "あります。新しい技術、新しい組織、面白いどでかい技術や組織に対して信頼を構築していく。それこそが私たちのできる",
+      "start_seconds": 846.079,
+      "end_seconds": 857.399,
+      "id": "84eyZLYq6ME-ja-0095",
+      "sequence": 95
+    },
+    {
+      "text": "ことなんだと思います。AIにおいても人間の倫理においても私たちはセキュリティという観点で信頼を作り上げていくそういったような存在になっていき",
+      "start_seconds": 857.399,
+      "end_seconds": 867.839,
+      "id": "84eyZLYq6ME-ja-0096",
+      "sequence": 96
+    },
+    {
+      "text": "ます。また先ほどあげたような一等や地図のように僕ら僕らの会社かつ僕自身が誰か",
+      "start_seconds": 867.839,
+      "end_seconds": 878.199,
+      "id": "84eyZLYq6ME-ja-0097",
+      "sequence": 97
+    },
+    {
+      "text": "にとっての一等となり誰かにとっての地図となるそういった存在になる。そういう風",
+      "start_seconds": 878.199,
+      "end_seconds": 886.199,
+      "id": "84eyZLYq6ME-ja-0098",
+      "sequence": 98
+    },
+    {
+      "text": "に考えております。",
+      "start_seconds": 886.199,
+      "end_seconds": 890.24,
+      "id": "84eyZLYq6ME-ja-0099",
+      "sequence": 99
+    },
+    {
+      "text": "そしてこの一等につが繋がることによって人が集まりそしてうりとなり大きな会社",
+      "start_seconds": 890.36,
+      "end_seconds": 900.44,
+      "id": "84eyZLYq6ME-ja-0100",
+      "sequence": 100
+    },
+    {
+      "text": "長く続く会社を作り上げていくのだと思っております。最後に、え、今ここに来ている方に伝えたいことがあります。もし今",
+      "start_seconds": 900.44,
+      "end_seconds": 912.16,
+      "id": "84eyZLYq6ME-ja-0101",
+      "sequence": 101
+    },
+    {
+      "text": "僕のお話を聞いて自分の中にも何か信じる光があるなともし感じられた方がいるので",
+      "start_seconds": 912.16,
+      "end_seconds": 920.519,
+      "id": "84eyZLYq6ME-ja-0102",
+      "sequence": 102
+    },
+    {
+      "text": "あればその光を信じてほしい。もちろん間違ってるかもしれない。ただその信じる",
+      "start_seconds": 920.519,
+      "end_seconds": 928.68,
+      "id": "84eyZLYq6ME-ja-0103",
+      "sequence": 103
+    },
+    {
+      "text": "光を信じ抜いて歩いていけば霧はいつか晴れそして大きな世界が広がってくる。",
+      "start_seconds": 928.68,
+      "end_seconds": 936.24,
+      "id": "84eyZLYq6ME-ja-0104",
+      "sequence": 104
+    },
+    {
+      "text": "またその先には暗闇みがあるのかもしれない。おそらく今後人生を生きていくと僕",
+      "start_seconds": 936.24,
+      "end_seconds": 943.56,
+      "id": "84eyZLYq6ME-ja-0105",
+      "sequence": 105
+    },
+    {
+      "text": "もですが不安や恐怖や焦りや嫉妬といった打算や外伝に飲み込まれそうになることも",
+      "start_seconds": 943.56,
+      "end_seconds": 952.279,
+      "id": "84eyZLYq6ME-ja-0106",
+      "sequence": 106
+    },
+    {
+      "text": "あると思います。そういった時にその自分の信じる信じている明りや地図を持って",
+      "start_seconds": 952.279,
+      "end_seconds": 961.199,
+      "id": "84eyZLYq6ME-ja-0107",
+      "sequence": 107
+    },
+    {
+      "text": "飲み込んでみてください。それこそが僕が思うに人生の醍醐みであり生きるっていうことなんだと思っております。",
+      "start_seconds": 961.199,
+      "end_seconds": 971.04,
+      "id": "84eyZLYq6ME-ja-0108",
+      "sequence": 108
+    },
+    {
+      "text": "そしてその光はやがて誰かにとっての明りとなり、そしてそれがこのテーマにある",
+      "start_seconds": 971.04,
+      "end_seconds": 980.04,
+      "id": "84eyZLYq6ME-ja-0109",
+      "sequence": 109
+    },
+    {
+      "text": "ように起動となっていき、そして星となっていく。そういう風に考えています。",
+      "start_seconds": 980.04,
+      "end_seconds": 987.56,
+      "id": "84eyZLYq6ME-ja-0110",
+      "sequence": 110
+    },
+    {
+      "text": "それこそが私が信じているアイデンティティの力であり、このテックスICUという場でお伝えしたかったことです。本日はこのような機会を",
+      "start_seconds": 987.56,
+      "end_seconds": 999.079,
+      "id": "84eyZLYq6ME-ja-0111",
+      "sequence": 111
+    },
+    {
+      "text": "いただきありがとうございました。",
+      "start_seconds": 999.079,
+      "end_seconds": 1002.161,
+      "id": "84eyZLYq6ME-ja-0112",
+      "sequence": 112
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 1002.161,
+      "end_seconds": 1004.1809999999999,
+      "id": "84eyZLYq6ME-ja-0113",
+      "sequence": 113
+    }
+  ],
+  "raw_captions": [
+    {
+      "text": "[音楽]",
+      "start_seconds": 4.584,
+      "end_seconds": 6.603999999999999
+    },
+    {
+      "text": "こんにちは。敬号です。よろしくお願いします。今日はこのテックス",
+      "start_seconds": 13.679,
+      "end_seconds": 16.679000000000002
+    },
+    {
+      "text": "ICU",
+      "start_seconds": 19.8,
+      "end_seconds": 23.279
+    },
+    {
+      "text": "という素晴らしい場所にご招待ただきありがとうございます。",
+      "start_seconds": 20.279,
+      "end_seconds": 23.279
+    },
+    {
+      "text": "今日この場で人生の奇跡としての",
+      "start_seconds": 25.0,
+      "end_seconds": 32.04
+    },
+    {
+      "text": "アイデンティティの創失と確率。これを",
+      "start_seconds": 29.679,
+      "end_seconds": 35.36
+    },
+    {
+      "text": "テーマにお話ししようと思います。",
+      "start_seconds": 32.04,
+      "end_seconds": 38.559
+    },
+    {
+      "text": "なぜこのテーマにしたかというと、今回",
+      "start_seconds": 35.36,
+      "end_seconds": 42.559
+    },
+    {
+      "text": "デxICUのテーマでもあるオビit軌動",
+      "start_seconds": 38.559,
+      "end_seconds": 47.07899999999999
+    },
+    {
+      "text": "と深く関係しているからです。軌道とは",
+      "start_seconds": 42.559,
+      "end_seconds": 49.959999999999994
+    },
+    {
+      "text": "見えない力に引かれながらそれでもなお",
+      "start_seconds": 47.079,
+      "end_seconds": 55.399
+    },
+    {
+      "text": "自らの速度で進むこと。それはその言葉を",
+      "start_seconds": 49.96,
+      "end_seconds": 59.120000000000005
+    },
+    {
+      "text": "聞いた時にふと感じました。私たちの人生",
+      "start_seconds": 55.399,
+      "end_seconds": 63.28
+    },
+    {
+      "text": "そのものではないかと。私たちもまた社会",
+      "start_seconds": 59.12,
+      "end_seconds": 67.15899999999999
+    },
+    {
+      "text": "からの目や家族からの期待価値観や文化と",
+      "start_seconds": 63.28,
+      "end_seconds": 70.52
+    },
+    {
+      "text": "いった見えない力に引かれながらそれでも",
+      "start_seconds": 67.159,
+      "end_seconds": 74.32000000000001
+    },
+    {
+      "text": "なお自らの速度で独自の起動を描いてい",
+      "start_seconds": 70.52,
+      "end_seconds": 77.439
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 74.32,
+      "end_seconds": 77.439
+    },
+    {
+      "text": "その独自の軌動を描くのに重要となる力、",
+      "start_seconds": 77.6,
+      "end_seconds": 85.83999999999999
+    },
+    {
+      "text": "その重力こそがアイデンティなのだと思い",
+      "start_seconds": 82.799,
+      "end_seconds": 91.43900000000001
+    },
+    {
+      "text": "ます。一見交わらないように見える軌動も",
+      "start_seconds": 85.84,
+      "end_seconds": 96.07900000000001
+    },
+    {
+      "text": "ある一定感で影響し合い、交わり、新たな",
+      "start_seconds": 91.439,
+      "end_seconds": 99.75899999999999
+    },
+    {
+      "text": "軌動を描いていく。今日この場に見て",
+      "start_seconds": 96.079,
+      "end_seconds": 103.19999999999999
+    },
+    {
+      "text": "くださっている皆さんの軌動がこの瞬間",
+      "start_seconds": 99.759,
+      "end_seconds": 106.399
+    },
+    {
+      "text": "交わり影響し合いそしてアイデンティティ",
+      "start_seconds": 103.2,
+      "end_seconds": 111.479
+    },
+    {
+      "text": "という新しい考えもしくは見つめ直す機会",
+      "start_seconds": 106.399,
+      "end_seconds": 115.24
+    },
+    {
+      "text": "となればなと思っております。",
+      "start_seconds": 111.479,
+      "end_seconds": 118.479
+    },
+    {
+      "text": "昨今AIやソーシャルネットワークの普及",
+      "start_seconds": 115.24,
+      "end_seconds": 122.6
+    },
+    {
+      "text": "により誰もが簡単に情報が手に入り答えが",
+      "start_seconds": 118.479,
+      "end_seconds": 125.6
+    },
+    {
+      "text": "見つかりあらゆるあらゆるものを比較検討",
+      "start_seconds": 122.6,
+      "end_seconds": 128.16
+    },
+    {
+      "text": "できるような世界になりました。",
+      "start_seconds": 125.6,
+      "end_seconds": 130.399
+    },
+    {
+      "text": "それによって",
+      "start_seconds": 128.16,
+      "end_seconds": 134.319
+    },
+    {
+      "text": "便利にはなった。ただその反面何を信じる",
+      "start_seconds": 130.399,
+      "end_seconds": 138.04
+    },
+    {
+      "text": "べきかが分かりづらくなっています。",
+      "start_seconds": 134.319,
+      "end_seconds": 143.16
+    },
+    {
+      "text": "だからこそその中心の重力となるもの導く",
+      "start_seconds": 138.04,
+      "end_seconds": 146.2
+    },
+    {
+      "text": "力が必要なのです。",
+      "start_seconds": 143.16,
+      "end_seconds": 149.07999999999998
+    },
+    {
+      "text": "そしてそれが人生という軌動を描いていく",
+      "start_seconds": 146.2,
+      "end_seconds": 152.67999999999998
+    },
+    {
+      "text": "中での重要な力としてアイデンティティと",
+      "start_seconds": 149.08,
+      "end_seconds": 155.87900000000002
+    },
+    {
+      "text": "いうものがあるのだと思います。この話を",
+      "start_seconds": 152.68,
+      "end_seconds": 158.959
+    },
+    {
+      "text": "するにあたって軽く私の自己紹介をさせて",
+      "start_seconds": 155.879,
+      "end_seconds": 163.0
+    },
+    {
+      "text": "ください。私は2004年に大阪で生まれ",
+      "start_seconds": 158.959,
+      "end_seconds": 166.28
+    },
+    {
+      "text": "、その後大阪で育ち、京都大学に進学し",
+      "start_seconds": 163.0,
+      "end_seconds": 171.4
+    },
+    {
+      "text": "ました。その後1年から運欲京都の広告",
+      "start_seconds": 166.28,
+      "end_seconds": 174.0
+    },
+    {
+      "text": "代理店ベンチャーに入り、そこで",
+      "start_seconds": 171.4,
+      "end_seconds": 177.12
+    },
+    {
+      "text": "マネジメントやクリエイティブ、さらには",
+      "start_seconds": 174.0,
+      "end_seconds": 179.879
+    },
+    {
+      "text": "経営といったものを学び、そっから",
+      "start_seconds": 177.12,
+      "end_seconds": 182.28
+    },
+    {
+      "text": "2025年2月、今年の2月ですね、",
+      "start_seconds": 179.879,
+      "end_seconds": 184.12
+    },
+    {
+      "text": "サイバーセキュリティの会社である",
+      "start_seconds": 182.28,
+      "end_seconds": 186.64000000000001
+    },
+    {
+      "text": "アラジンセキュリティを創業しました。",
+      "start_seconds": 184.12,
+      "end_seconds": 190.959
+    },
+    {
+      "text": "この会社では今普及しているAIの安全性",
+      "start_seconds": 186.64,
+      "end_seconds": 194.76
+    },
+    {
+      "text": "評価や保障、さらには脆弱性の特定といっ",
+      "start_seconds": 190.959,
+      "end_seconds": 198.2
+    },
+    {
+      "text": "た研究や開発を行っております。",
+      "start_seconds": 194.76,
+      "end_seconds": 201.44
+    },
+    {
+      "text": "誰しもが自分らしい価値観を教授しながら",
+      "start_seconds": 198.2,
+      "end_seconds": 204.44
+    },
+    {
+      "text": "安心安全なAIを利用するための取り組み",
+      "start_seconds": 201.44,
+      "end_seconds": 206.44
+    },
+    {
+      "text": "です。",
+      "start_seconds": 204.44,
+      "end_seconds": 209.35999999999999
+    },
+    {
+      "text": "よくどうして起業したんですかと聞かれる",
+      "start_seconds": 206.44,
+      "end_seconds": 212.799
+    },
+    {
+      "text": "ことが多いです。最近言語化したんです",
+      "start_seconds": 209.36,
+      "end_seconds": 215.59900000000002
+    },
+    {
+      "text": "けど、意外とシンプルで本気になれる場所",
+      "start_seconds": 212.799,
+      "end_seconds": 220.64000000000001
+    },
+    {
+      "text": "が欲しかった。私は中学高校とサッカー部",
+      "start_seconds": 215.599,
+      "end_seconds": 223.48
+    },
+    {
+      "text": "に入っていました。特に高校では",
+      "start_seconds": 220.64,
+      "end_seconds": 225.599
+    },
+    {
+      "text": "キャプテンを務めさせていただき、リーグ",
+      "start_seconds": 223.48,
+      "end_seconds": 228.28
+    },
+    {
+      "text": "戦や大会などいろんなものに出させて",
+      "start_seconds": 225.599,
+      "end_seconds": 232.28
+    },
+    {
+      "text": "いただきました。ただ、え、その部活は僕",
+      "start_seconds": 228.28,
+      "end_seconds": 235.2
+    },
+    {
+      "text": "らの部活は高校3年の10月まであります",
+      "start_seconds": 232.28,
+      "end_seconds": 238.92
+    },
+    {
+      "text": "。その10月まではずっとサッカーのこと",
+      "start_seconds": 235.2,
+      "end_seconds": 241.959
+    },
+    {
+      "text": "ばかりを考えていたのですが、残り4ヶ月",
+      "start_seconds": 238.92,
+      "end_seconds": 245.48
+    },
+    {
+      "text": "で受験が迫ってます。僕の周りにいる受験",
+      "start_seconds": 241.959,
+      "end_seconds": 247.68
+    },
+    {
+      "text": "を、ま、京都大学に受ける受験をする人",
+      "start_seconds": 245.48,
+      "end_seconds": 250.959
+    },
+    {
+      "text": "たちは3年の4月で引退していたり、",
+      "start_seconds": 247.68,
+      "end_seconds": 253.92000000000002
+    },
+    {
+      "text": "もしくは高校3年間全て勉強に捧げてる",
+      "start_seconds": 250.959,
+      "end_seconds": 257.4
+    },
+    {
+      "text": "ような人たちばかりでした。そこに対して",
+      "start_seconds": 253.92,
+      "end_seconds": 261.71999999999997
+    },
+    {
+      "text": "ちゃんと受かる、合格するってなると残り",
+      "start_seconds": 257.4,
+      "end_seconds": 265.88
+    },
+    {
+      "text": "の4ヶ月間全て受験のことを考えて、え、",
+      "start_seconds": 261.72,
+      "end_seconds": 269.03900000000004
+    },
+    {
+      "text": "やっていくしかなかったのです。結果無事",
+      "start_seconds": 265.88,
+      "end_seconds": 272.759
+    },
+    {
+      "text": "に京都大学に進学することができました。",
+      "start_seconds": 269.039,
+      "end_seconds": 275.8
+    },
+    {
+      "text": "ふとそのタイミングで気づいたんです。今",
+      "start_seconds": 272.759,
+      "end_seconds": 280.72
+    },
+    {
+      "text": "までサッカーや受験、頭の中を閉めていた",
+      "start_seconds": 275.8,
+      "end_seconds": 283.32
+    },
+    {
+      "text": "そのものがなくなってしまい、空気になっ",
+      "start_seconds": 280.72,
+      "end_seconds": 287.08000000000004
+    },
+    {
+      "text": "てしまったと。そして朝起きて天井のシミ",
+      "start_seconds": 283.32,
+      "end_seconds": 291.36
+    },
+    {
+      "text": "の数を数える毎日でした。その穴を埋める",
+      "start_seconds": 287.08,
+      "end_seconds": 293.8
+    },
+    {
+      "text": "ためにビジネスの世界に入っていったと",
+      "start_seconds": 291.36,
+      "end_seconds": 297.44
+    },
+    {
+      "text": "言っても過言ではありません。そしてその",
+      "start_seconds": 293.8,
+      "end_seconds": 300.52000000000004
+    },
+    {
+      "text": "全職の会社では色々なことを経験させて",
+      "start_seconds": 297.44,
+      "end_seconds": 304.4
+    },
+    {
+      "text": "いただき、人が増え、規模が大きくなり、",
+      "start_seconds": 300.52,
+      "end_seconds": 307.039
+    },
+    {
+      "text": "売上もどんどん上がっていく。それを間近",
+      "start_seconds": 304.4,
+      "end_seconds": 309.67999999999995
+    },
+    {
+      "text": "で見たことによって自分でもこういうよう",
+      "start_seconds": 307.039,
+      "end_seconds": 312.84
+    },
+    {
+      "text": "な会社を作りたいなていうので、え、今の",
+      "start_seconds": 309.68,
+      "end_seconds": 316.16
+    },
+    {
+      "text": "アラジンセキュリティを創業しました。今",
+      "start_seconds": 312.84,
+      "end_seconds": 320.08
+    },
+    {
+      "text": "も社会からのプレッシャーや期待など様々",
+      "start_seconds": 316.16,
+      "end_seconds": 322.47900000000004
+    },
+    {
+      "text": "なものを背負いながらそれでもなおそれを",
+      "start_seconds": 320.08,
+      "end_seconds": 325.35999999999996
+    },
+    {
+      "text": "飲み込んでやろうと楽しんでやっており",
+      "start_seconds": 322.479,
+      "end_seconds": 326.639
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 325.36,
+      "end_seconds": 329.16
+    },
+    {
+      "text": "だからこそ私がどういう風に",
+      "start_seconds": 326.639,
+      "end_seconds": 331.0
+    },
+    {
+      "text": "アイデンチティを取られているのかそこを",
+      "start_seconds": 329.16,
+      "end_seconds": 332.88000000000005
+    },
+    {
+      "text": "お話しさせていただければなという風に",
+      "start_seconds": 331.0,
+      "end_seconds": 335.72
+    },
+    {
+      "text": "思っております。この話をさせていただく",
+      "start_seconds": 332.88,
+      "end_seconds": 339.56
+    },
+    {
+      "text": "にあたってある人物のお話と1つの昔話を",
+      "start_seconds": 335.72,
+      "end_seconds": 345.12
+    },
+    {
+      "text": "さしてください。私の尊敬する趣旨学者で",
+      "start_seconds": 339.56,
+      "end_seconds": 348.88
+    },
+    {
+      "text": "吉田商員や最後高森といった明治心の支士",
+      "start_seconds": 345.12,
+      "end_seconds": 352.56
+    },
+    {
+      "text": "たちの方の思想を片った佐藤一歳の原子録",
+      "start_seconds": 348.88,
+      "end_seconds": 355.199
+    },
+    {
+      "text": "の言葉の中に本の中にこのような言葉が",
+      "start_seconds": 352.56,
+      "end_seconds": 357.24
+    },
+    {
+      "text": "あります。",
+      "start_seconds": 355.199,
+      "end_seconds": 360.08000000000004
+    },
+    {
+      "text": "一等を下げて安を行く。安を売れること",
+      "start_seconds": 357.24,
+      "end_seconds": 364.039
+    },
+    {
+      "text": "なかれ。ただ一等を頼みて。暗闇みも",
+      "start_seconds": 360.08,
+      "end_seconds": 367.039
+    },
+    {
+      "text": "恐れる必要はない。たった1つの光でも",
+      "start_seconds": 364.039,
+      "end_seconds": 369.479
+    },
+    {
+      "text": "信じ抜いて歩いていくべきだ。そういった",
+      "start_seconds": 367.039,
+      "end_seconds": 372.479
+    },
+    {
+      "text": "意味が込められています。もう1つ私の",
+      "start_seconds": 369.479,
+      "end_seconds": 377.31899999999996
+    },
+    {
+      "text": "尊敬する方がお話ししてくれた昔話です。",
+      "start_seconds": 372.479,
+      "end_seconds": 380.24
+    },
+    {
+      "text": "昔ハンガリー軍の偵察部隊がアルプス三脈",
+      "start_seconds": 377.319,
+      "end_seconds": 385.12
+    },
+    {
+      "text": "に偵察に行きました。その時猛吹雪が",
+      "start_seconds": 380.24,
+      "end_seconds": 389.319
+    },
+    {
+      "text": "起こり彷徨いやる誰もが死を感じました。",
+      "start_seconds": 385.12,
+      "end_seconds": 392.96
+    },
+    {
+      "text": "そしてみんな希望を打ちしがれ、もうこの",
+      "start_seconds": 389.319,
+      "end_seconds": 395.47900000000004
+    },
+    {
+      "text": "ままなすべもなく死ぬしかないと思った先",
+      "start_seconds": 392.96,
+      "end_seconds": 399.039
+    },
+    {
+      "text": "、1人の隊員から1枚の地図が見つかり",
+      "start_seconds": 395.479,
+      "end_seconds": 403.75899999999996
+    },
+    {
+      "text": "ました。その地図で全員が希望を持ちなん",
+      "start_seconds": 399.039,
+      "end_seconds": 406.08
+    },
+    {
+      "text": "とか行きながら下山することができました",
+      "start_seconds": 403.759,
+      "end_seconds": 410.84000000000003
+    },
+    {
+      "text": "。後に下算してその地図を確認すると実は",
+      "start_seconds": 406.08,
+      "end_seconds": 413.56
+    },
+    {
+      "text": "アルプス三脈の地図ではなくピレネー三脈",
+      "start_seconds": 410.84,
+      "end_seconds": 416.599
+    },
+    {
+      "text": "の地図だったという意味です。どういう",
+      "start_seconds": 413.56,
+      "end_seconds": 419.12
+    },
+    {
+      "text": "ことが言いたいのかというと、ま、世の中",
+      "start_seconds": 416.599,
+      "end_seconds": 422.0
+    },
+    {
+      "text": "は真っ暗で進んでいく道も本当にこれが",
+      "start_seconds": 419.12,
+      "end_seconds": 424.919
+    },
+    {
+      "text": "合ってるのかといったものは分からない。",
+      "start_seconds": 422.0,
+      "end_seconds": 428.28
+    },
+    {
+      "text": "そういった中でそれでも何か1つでも",
+      "start_seconds": 424.919,
+      "end_seconds": 431.35999999999996
+    },
+    {
+      "text": "信じるものを信じ抜き歩いていくそういっ",
+      "start_seconds": 428.28,
+      "end_seconds": 435.71999999999997
+    },
+    {
+      "text": "た覚悟が必要なんだと思います。そして",
+      "start_seconds": 431.36,
+      "end_seconds": 437.599
+    },
+    {
+      "text": "その",
+      "start_seconds": 435.72,
+      "end_seconds": 439.56
+    },
+    {
+      "text": "アイデンティティという観点でいきますと",
+      "start_seconds": 437.599,
+      "end_seconds": 442.56
+    },
+    {
+      "text": "、ま、辞書には辞書を引くとこういう風に",
+      "start_seconds": 439.56,
+      "end_seconds": 444.879
+    },
+    {
+      "text": "書いています。",
+      "start_seconds": 442.56,
+      "end_seconds": 448.479
+    },
+    {
+      "text": "自分は何者なのかという自己認識と私は",
+      "start_seconds": 444.879,
+      "end_seconds": 450.28000000000003
+    },
+    {
+      "text": "これでは不十分ではないかなという風に",
+      "start_seconds": 448.479,
+      "end_seconds": 453.479
+    },
+    {
+      "text": "思ってます。私が思うにアイデンティティ",
+      "start_seconds": 450.28,
+      "end_seconds": 457.67999999999995
+    },
+    {
+      "text": "とは先ほどの2つのお話の一等や地図の",
+      "start_seconds": 453.479,
+      "end_seconds": 461.52
+    },
+    {
+      "text": "ことだと思います。",
+      "start_seconds": 457.68,
+      "end_seconds": 464.599
+    },
+    {
+      "text": "先ほどもあげたように暗闇みを歩いていく",
+      "start_seconds": 461.52,
+      "end_seconds": 467.35999999999996
+    },
+    {
+      "text": "、さらには会っているかも分からない。",
+      "start_seconds": 464.599,
+      "end_seconds": 469.71999999999997
+    },
+    {
+      "text": "そういったような道を進んでいく時の希望",
+      "start_seconds": 467.36,
+      "end_seconds": 472.639
+    },
+    {
+      "text": "となりとなる。そういったような存在こそ",
+      "start_seconds": 469.72,
+      "end_seconds": 474.84000000000003
+    },
+    {
+      "text": "がアイデンティティなんだと思っており",
+      "start_seconds": 472.639,
+      "end_seconds": 480.039
+    },
+    {
+      "text": "ます。そしてその軌動自分の人生を描いて",
+      "start_seconds": 474.84,
+      "end_seconds": 483.039
+    },
+    {
+      "text": "いくための軌動を片っていくためには",
+      "start_seconds": 480.039,
+      "end_seconds": 485.919
+    },
+    {
+      "text": "アイデンティティ、自分を導く重力が必要",
+      "start_seconds": 483.039,
+      "end_seconds": 489.36
+    },
+    {
+      "text": "なんだと思います。では、どのように",
+      "start_seconds": 485.919,
+      "end_seconds": 491.12
+    },
+    {
+      "text": "アイデンティティを創失すればいいの",
+      "start_seconds": 489.36,
+      "end_seconds": 494.159
+    },
+    {
+      "text": "でしょうか?",
+      "start_seconds": 491.12,
+      "end_seconds": 497.039
+    },
+    {
+      "text": "私が思うにアイデンティと",
+      "start_seconds": 494.159,
+      "end_seconds": 499.879
+    },
+    {
+      "text": "アイデンティティと言うとやはり難しく",
+      "start_seconds": 497.039,
+      "end_seconds": 502.08
+    },
+    {
+      "text": "抽象的で感じてしまうものもあるかもしれ",
+      "start_seconds": 499.879,
+      "end_seconds": 504.879
+    },
+    {
+      "text": "ません。ただそういったこともないかなと",
+      "start_seconds": 502.08,
+      "end_seconds": 508.8
+    },
+    {
+      "text": "いう風には思っております。それこそ僕も",
+      "start_seconds": 504.879,
+      "end_seconds": 511.639
+    },
+    {
+      "text": "若い人やいろんな方とお話させていただく",
+      "start_seconds": 508.8,
+      "end_seconds": 514.919
+    },
+    {
+      "text": "時に一定数の覚悟が決まってこの道で進ん",
+      "start_seconds": 511.639,
+      "end_seconds": 518.159
+    },
+    {
+      "text": "でいくと決めている人や未だに悩み続けて",
+      "start_seconds": 514.919,
+      "end_seconds": 520.88
+    },
+    {
+      "text": "いる人、いろんな人とお会いしてお話をし",
+      "start_seconds": 518.159,
+      "end_seconds": 524.0
+    },
+    {
+      "text": "ていく中でこの差が見えてきました。それ",
+      "start_seconds": 520.88,
+      "end_seconds": 527.8389999999999
+    },
+    {
+      "text": "はベンチマークとなる存在がいる方です。",
+      "start_seconds": 524.0,
+      "end_seconds": 530.839
+    },
+    {
+      "text": "ベンチマークとは映画のキャラクターや",
+      "start_seconds": 527.839,
+      "end_seconds": 533.839
+    },
+    {
+      "text": "漫画の漫画やドラマのキャラクター歴史上",
+      "start_seconds": 530.839,
+      "end_seconds": 537.2790000000001
+    },
+    {
+      "text": "の人物や尊敬する身のりにいる人でも構い",
+      "start_seconds": 533.839,
+      "end_seconds": 541.519
+    },
+    {
+      "text": "ません。何か意思決定をしなくてはいけ",
+      "start_seconds": 537.279,
+      "end_seconds": 544.32
+    },
+    {
+      "text": "ないことが起こった時、困難が起こった時",
+      "start_seconds": 541.519,
+      "end_seconds": 547.44
+    },
+    {
+      "text": "に彼女ならこうするよなという寄り所が",
+      "start_seconds": 544.32,
+      "end_seconds": 552.9590000000001
+    },
+    {
+      "text": "大切なのです。そしてその決定基準を一旦",
+      "start_seconds": 547.44,
+      "end_seconds": 556.2790000000001
+    },
+    {
+      "text": "外に置いてみることによってまた新たな",
+      "start_seconds": 552.959,
+      "end_seconds": 560.4399999999999
+    },
+    {
+      "text": "世界が見えてきます。それは盲目的に真似",
+      "start_seconds": 556.279,
+      "end_seconds": 564.68
+    },
+    {
+      "text": "をすることではありません。最初は憧れで",
+      "start_seconds": 560.44,
+      "end_seconds": 568.9590000000001
+    },
+    {
+      "text": "も模法でもいい。その",
+      "start_seconds": 564.68,
+      "end_seconds": 571.64
+    },
+    {
+      "text": "ベンチマークとなる人の",
+      "start_seconds": 568.959,
+      "end_seconds": 575.1999999999999
+    },
+    {
+      "text": "軌動や奇跡を見ていくことによって、",
+      "start_seconds": 571.64,
+      "end_seconds": 577.8
+    },
+    {
+      "text": "もしくは言葉を聞いていくことによって、",
+      "start_seconds": 575.2,
+      "end_seconds": 581.72
+    },
+    {
+      "text": "それをまた新たな自分の軌動として考えて",
+      "start_seconds": 577.8,
+      "end_seconds": 586.959
+    },
+    {
+      "text": "いけばいいのだと思います。つまりその",
+      "start_seconds": 581.72,
+      "end_seconds": 590.6800000000001
+    },
+    {
+      "text": "憧れベンチマークの描いた人生というのは",
+      "start_seconds": 586.959,
+      "end_seconds": 594.2399999999999
+    },
+    {
+      "text": "ただ単に他人の軌動ではなく自分がこれ",
+      "start_seconds": 590.68,
+      "end_seconds": 599.16
+    },
+    {
+      "text": "から描く物語の予感なのだと思います。",
+      "start_seconds": 594.24,
+      "end_seconds": 602.16
+    },
+    {
+      "text": "ではアイデンティティを確立させるために",
+      "start_seconds": 599.16,
+      "end_seconds": 604.959
+    },
+    {
+      "text": "はどうすればいいのでしょうか?",
+      "start_seconds": 602.16,
+      "end_seconds": 608.64
+    },
+    {
+      "text": "私はこれが口に出すことだと思います。",
+      "start_seconds": 604.959,
+      "end_seconds": 612.5999999999999
+    },
+    {
+      "text": "先ほど辞書に挙げたように人間の自己認識",
+      "start_seconds": 608.64,
+      "end_seconds": 615.92
+    },
+    {
+      "text": "内面にとめるものというような一定数の",
+      "start_seconds": 612.6,
+      "end_seconds": 617.9590000000001
+    },
+    {
+      "text": "バイアスがあるかと思いますが、そういう",
+      "start_seconds": 615.92,
+      "end_seconds": 622.399
+    },
+    {
+      "text": "わけではないと思ってます。やはり自分が",
+      "start_seconds": 617.959,
+      "end_seconds": 625.4399999999999
+    },
+    {
+      "text": "憧れるものや自分が思ってる信念、",
+      "start_seconds": 622.399,
+      "end_seconds": 627.76
+    },
+    {
+      "text": "アイデンティティとなるものは口に出して",
+      "start_seconds": 625.44,
+      "end_seconds": 632.12
+    },
+    {
+      "text": "こそ形になると思います。それが大きく",
+      "start_seconds": 627.76,
+      "end_seconds": 636.48
+    },
+    {
+      "text": "繋がり広がりそして共鳴しうねりとなって",
+      "start_seconds": 632.12,
+      "end_seconds": 639.399
+    },
+    {
+      "text": "いくアイデンティティは静かに電波して",
+      "start_seconds": 636.48,
+      "end_seconds": 642.16
+    },
+    {
+      "text": "いくものなのです。",
+      "start_seconds": 639.399,
+      "end_seconds": 645.76
+    },
+    {
+      "text": "私は最近歴史小説をよく読みます。特に",
+      "start_seconds": 642.16,
+      "end_seconds": 649.76
+    },
+    {
+      "text": "北方健造の鼓電という物語はとても面白く",
+      "start_seconds": 645.76,
+      "end_seconds": 651.279
+    },
+    {
+      "text": "て、ま、それをちょっと紹介させて",
+      "start_seconds": 649.76,
+      "end_seconds": 654.4399999999999
+    },
+    {
+      "text": "いただければと思うんですけど、腐敗した",
+      "start_seconds": 651.279,
+      "end_seconds": 658.72
+    },
+    {
+      "text": "国家や政府に対して立ち上がった男たちは",
+      "start_seconds": 654.44,
+      "end_seconds": 661.9590000000001
+    },
+    {
+      "text": "大天行動という天に変わって道を行うと",
+      "start_seconds": 658.72,
+      "end_seconds": 664.36
+    },
+    {
+      "text": "いう",
+      "start_seconds": 661.959,
+      "end_seconds": 669.5999999999999
+    },
+    {
+      "text": "旗を掲げます。そして生さをし、それにの",
+      "start_seconds": 664.36,
+      "end_seconds": 676.519
+    },
+    {
+      "text": "心志しに共鳴した地方の合結が都いうねり",
+      "start_seconds": 669.6,
+      "end_seconds": 681.48
+    },
+    {
+      "text": "となって大きな形となっていきます。",
+      "start_seconds": 676.519,
+      "end_seconds": 684.44
+    },
+    {
+      "text": "これを読んでいるとふと私は思うのです。",
+      "start_seconds": 681.48,
+      "end_seconds": 688.279
+    },
+    {
+      "text": "企業もこれに似ているのではないかなと。",
+      "start_seconds": 684.44,
+      "end_seconds": 691.0790000000001
+    },
+    {
+      "text": "最初は",
+      "start_seconds": 688.279,
+      "end_seconds": 694.519
+    },
+    {
+      "text": "小さな声にしかならないかもしれない。",
+      "start_seconds": 691.079,
+      "end_seconds": 697.4799999999999
+    },
+    {
+      "text": "ただそれをつが、それをつなげることで",
+      "start_seconds": 694.519,
+      "end_seconds": 701.32
+    },
+    {
+      "text": "繋がり広がり、そして",
+      "start_seconds": 697.48,
+      "end_seconds": 705.2
+    },
+    {
+      "text": "仲間を呼び念を形にしていく。最初は",
+      "start_seconds": 701.32,
+      "end_seconds": 708.9590000000001
+    },
+    {
+      "text": "もちろん無名でも笑われるような挑戦でも",
+      "start_seconds": 705.2,
+      "end_seconds": 712.36
+    },
+    {
+      "text": "その覚悟を持って信念を口にしていく、",
+      "start_seconds": 708.959,
+      "end_seconds": 715.4799999999999
+    },
+    {
+      "text": "言葉にしていくことによってそれが誰かに",
+      "start_seconds": 712.36,
+      "end_seconds": 718.92
+    },
+    {
+      "text": "伝わり大きな世界を描いていくのだと思い",
+      "start_seconds": 715.48,
+      "end_seconds": 724.6
+    },
+    {
+      "text": "ます。挑戦のためにはその大きな心志し",
+      "start_seconds": 718.92,
+      "end_seconds": 727.24
+    },
+    {
+      "text": "アイデンティティを口に出していくべきだ",
+      "start_seconds": 724.6,
+      "end_seconds": 731.0
+    },
+    {
+      "text": "と思います。それこそがアイデンティティ",
+      "start_seconds": 727.24,
+      "end_seconds": 734.5600000000001
+    },
+    {
+      "text": "が事故の個人にとまるものではなく社会に",
+      "start_seconds": 731.0,
+      "end_seconds": 736.639
+    },
+    {
+      "text": "溶け出していくプロセスなんだと思います",
+      "start_seconds": 734.56,
+      "end_seconds": 739.1199999999999
+    },
+    {
+      "text": "。",
+      "start_seconds": 736.639,
+      "end_seconds": 740.76
+    },
+    {
+      "text": "そして",
+      "start_seconds": 739.12,
+      "end_seconds": 743.72
+    },
+    {
+      "text": "恋に出した瞬間にやがてその",
+      "start_seconds": 740.76,
+      "end_seconds": 745.68
+    },
+    {
+      "text": "アイデンティティはかっこたるものとして",
+      "start_seconds": 743.72,
+      "end_seconds": 748.9590000000001
+    },
+    {
+      "text": "確立していくのだと思います。",
+      "start_seconds": 745.68,
+      "end_seconds": 752.04
+    },
+    {
+      "text": "私は会社のvalリューとして才能の集中",
+      "start_seconds": 748.959,
+      "end_seconds": 755.8389999999999
+    },
+    {
+      "text": "と爆発というものを置いてます。これは",
+      "start_seconds": 752.04,
+      "end_seconds": 759.079
+    },
+    {
+      "text": "何かと言うと誰しもが才能があると思って",
+      "start_seconds": 755.839,
+      "end_seconds": 760.8800000000001
+    },
+    {
+      "text": "います。",
+      "start_seconds": 759.079,
+      "end_seconds": 764.519
+    },
+    {
+      "text": "そのただその才能はほっておいても爆発は",
+      "start_seconds": 760.88,
+      "end_seconds": 767.56
+    },
+    {
+      "text": "しませんし開花もしません。",
+      "start_seconds": 764.519,
+      "end_seconds": 771.24
+    },
+    {
+      "text": "決して覚めない情熱を持って行動を",
+      "start_seconds": 767.56,
+      "end_seconds": 773.2399999999999
+    },
+    {
+      "text": "繰り返し",
+      "start_seconds": 771.24,
+      "end_seconds": 776.6
+    },
+    {
+      "text": "集中することによって自分では想像もでき",
+      "start_seconds": 773.24,
+      "end_seconds": 778.6
+    },
+    {
+      "text": "ないような",
+      "start_seconds": 776.6,
+      "end_seconds": 781.48
+    },
+    {
+      "text": "大きな爆発として才能が開化するのだと",
+      "start_seconds": 778.6,
+      "end_seconds": 783.36
+    },
+    {
+      "text": "思います。",
+      "start_seconds": 781.48,
+      "end_seconds": 788.6
+    },
+    {
+      "text": "これも信念を口にし伝えそして集中して",
+      "start_seconds": 783.36,
+      "end_seconds": 790.6800000000001
+    },
+    {
+      "text": "いくことが1つ欠かせないものとなって",
+      "start_seconds": 788.6,
+      "end_seconds": 795.32
+    },
+    {
+      "text": "おります。また今僕はここに多分今ここに",
+      "start_seconds": 790.68,
+      "end_seconds": 797.8389999999999
+    },
+    {
+      "text": "見てくださっている皆さんとあまり年齢が",
+      "start_seconds": 795.32,
+      "end_seconds": 801.44
+    },
+    {
+      "text": "変わらないにも関わらず大きな顔をして今",
+      "start_seconds": 797.839,
+      "end_seconds": 804.839
+    },
+    {
+      "text": "た前に立っています。ただ私自身もまだ何",
+      "start_seconds": 801.44,
+      "end_seconds": 807.1600000000001
+    },
+    {
+      "text": "も成し遂げていないし成功もしていない。",
+      "start_seconds": 804.839,
+      "end_seconds": 809.399
+    },
+    {
+      "text": "だからここでアイデンティティの確立をし",
+      "start_seconds": 807.16,
+      "end_seconds": 812.199
+    },
+    {
+      "text": "たいと思っております。",
+      "start_seconds": 809.399,
+      "end_seconds": 815.12
+    },
+    {
+      "text": "ここ数十年でインターネットが出てき、",
+      "start_seconds": 812.199,
+      "end_seconds": 817.079
+    },
+    {
+      "text": "ソーシャルネットワークが出て、クラウド",
+      "start_seconds": 815.12,
+      "end_seconds": 821.0
+    },
+    {
+      "text": "が出てAIが出た。今後数十年で見たとし",
+      "start_seconds": 817.079,
+      "end_seconds": 824.959
+    },
+    {
+      "text": "ても、新しい技術確信は絶対に起こると",
+      "start_seconds": 821.0,
+      "end_seconds": 829.24
+    },
+    {
+      "text": "思っています。それによって技術の基盤は",
+      "start_seconds": 824.959,
+      "end_seconds": 832.3599999999999
+    },
+    {
+      "text": "変わり、社会は変わる。価値観も変わって",
+      "start_seconds": 829.24,
+      "end_seconds": 837.0
+    },
+    {
+      "text": "いき、働き方や生き方も変わっていく。",
+      "start_seconds": 832.36,
+      "end_seconds": 839.72
+    },
+    {
+      "text": "ただそんな中で",
+      "start_seconds": 837.0,
+      "end_seconds": 843.04
+    },
+    {
+      "text": "それでも信じる存在、信じられるべき存在",
+      "start_seconds": 839.72,
+      "end_seconds": 846.0790000000001
+    },
+    {
+      "text": "となっていくことが僕らの信念としては",
+      "start_seconds": 843.04,
+      "end_seconds": 850.399
+    },
+    {
+      "text": "あります。新しい技術、新しい組織、",
+      "start_seconds": 846.079,
+      "end_seconds": 853.959
+    },
+    {
+      "text": "面白いどでかい技術や組織に対して信頼を",
+      "start_seconds": 850.399,
+      "end_seconds": 857.399
+    },
+    {
+      "text": "構築していく。それこそが私たちのできる",
+      "start_seconds": 853.959,
+      "end_seconds": 860.7199999999999
+    },
+    {
+      "text": "ことなんだと思います。AIにおいても",
+      "start_seconds": 857.399,
+      "end_seconds": 863.0
+    },
+    {
+      "text": "人間の倫理においても私たちは",
+      "start_seconds": 860.72,
+      "end_seconds": 865.72
+    },
+    {
+      "text": "セキュリティという観点で信頼を作り上げ",
+      "start_seconds": 863.0,
+      "end_seconds": 867.839
+    },
+    {
+      "text": "ていくそういったような存在になっていき",
+      "start_seconds": 865.72,
+      "end_seconds": 872.839
+    },
+    {
+      "text": "ます。また先ほどあげたような一等や地図",
+      "start_seconds": 867.839,
+      "end_seconds": 878.1990000000001
+    },
+    {
+      "text": "のように僕ら僕らの会社かつ僕自身が誰か",
+      "start_seconds": 872.839,
+      "end_seconds": 881.72
+    },
+    {
+      "text": "にとっての一等となり誰かにとっての地図",
+      "start_seconds": 878.199,
+      "end_seconds": 886.199
+    },
+    {
+      "text": "となるそういった存在になる。そういう風",
+      "start_seconds": 881.72,
+      "end_seconds": 890.24
+    },
+    {
+      "text": "に考えております。",
+      "start_seconds": 886.199,
+      "end_seconds": 890.24
+    },
+    {
+      "text": "そしてこの一等につが繋がることによって",
+      "start_seconds": 890.36,
+      "end_seconds": 900.44
+    },
+    {
+      "text": "人が集まりそしてうりとなり大きな会社",
+      "start_seconds": 895.32,
+      "end_seconds": 903.0790000000001
+    },
+    {
+      "text": "長く続く会社を作り上げていくのだと思っ",
+      "start_seconds": 900.44,
+      "end_seconds": 907.2790000000001
+    },
+    {
+      "text": "ております。最後に、え、今ここに来て",
+      "start_seconds": 903.079,
+      "end_seconds": 912.16
+    },
+    {
+      "text": "いる方に伝えたいことがあります。もし今",
+      "start_seconds": 907.279,
+      "end_seconds": 916.639
+    },
+    {
+      "text": "僕のお話を聞いて自分の中にも何か信じる",
+      "start_seconds": 912.16,
+      "end_seconds": 920.519
+    },
+    {
+      "text": "光があるなともし感じられた方がいるので",
+      "start_seconds": 916.639,
+      "end_seconds": 925.399
+    },
+    {
+      "text": "あればその光を信じてほしい。もちろん",
+      "start_seconds": 920.519,
+      "end_seconds": 928.68
+    },
+    {
+      "text": "間違ってるかもしれない。ただその信じる",
+      "start_seconds": 925.399,
+      "end_seconds": 932.56
+    },
+    {
+      "text": "光を信じ抜いて歩いていけば霧はいつか",
+      "start_seconds": 928.68,
+      "end_seconds": 936.2399999999999
+    },
+    {
+      "text": "晴れそして大きな世界が広がってくる。",
+      "start_seconds": 932.56,
+      "end_seconds": 940.319
+    },
+    {
+      "text": "またその先には暗闇みがあるのかもしれ",
+      "start_seconds": 936.24,
+      "end_seconds": 943.5600000000001
+    },
+    {
+      "text": "ない。おそらく今後人生を生きていくと僕",
+      "start_seconds": 940.319,
+      "end_seconds": 949.24
+    },
+    {
+      "text": "もですが不安や恐怖や焦りや嫉妬といった",
+      "start_seconds": 943.56,
+      "end_seconds": 952.279
+    },
+    {
+      "text": "打算や外伝に飲み込まれそうになることも",
+      "start_seconds": 949.24,
+      "end_seconds": 955.72
+    },
+    {
+      "text": "あると思います。そういった時にその自分",
+      "start_seconds": 952.279,
+      "end_seconds": 961.199
+    },
+    {
+      "text": "の信じる信じている明りや地図を持って",
+      "start_seconds": 955.72,
+      "end_seconds": 964.6800000000001
+    },
+    {
+      "text": "飲み込んでみてください。それこそが僕が",
+      "start_seconds": 961.199,
+      "end_seconds": 968.0
+    },
+    {
+      "text": "思うに人生の醍醐みであり生き",
+      "start_seconds": 964.68,
+      "end_seconds": 971.04
+    },
+    {
+      "text": "るっていうことなんだと思っております。",
+      "start_seconds": 968.0,
+      "end_seconds": 975.92
+    },
+    {
+      "text": "そしてその光はやがて誰かにとっての明り",
+      "start_seconds": 971.04,
+      "end_seconds": 980.04
+    },
+    {
+      "text": "となり、そしてそれがこのテーマにある",
+      "start_seconds": 975.92,
+      "end_seconds": 984.12
+    },
+    {
+      "text": "ように起動となっていき、そして星となっ",
+      "start_seconds": 980.04,
+      "end_seconds": 987.56
+    },
+    {
+      "text": "ていく。そういう風に考えています。",
+      "start_seconds": 984.12,
+      "end_seconds": 990.16
+    },
+    {
+      "text": "それこそが私が信じている",
+      "start_seconds": 987.56,
+      "end_seconds": 992.5999999999999
+    },
+    {
+      "text": "アイデンティティの力であり、この",
+      "start_seconds": 990.16,
+      "end_seconds": 996.16
+    },
+    {
+      "text": "テックスICUという場でお伝えしたかっ",
+      "start_seconds": 992.6,
+      "end_seconds": 999.0790000000001
+    },
+    {
+      "text": "たことです。本日はこのような機会を",
+      "start_seconds": 996.16,
+      "end_seconds": 1002.161
+    },
+    {
+      "text": "いただきありがとうございました。",
+      "start_seconds": 999.079,
+      "end_seconds": 1004.1809999999999
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 1002.161,
+      "end_seconds": 1004.1809999999999
+    }
+  ],
+  "display_captions": [
+    {
+      "text": "[音楽]",
+      "start_seconds": 4.584,
+      "end_seconds": 6.603999999999999,
+      "id": "84eyZLYq6ME-display-0001",
+      "segment_id": "84eyZLYq6ME-ja-0001"
+    },
+    {
+      "text": "こんにちは。敬号です。よろしくお願いします。今日はこのテックス",
+      "start_seconds": 13.679,
+      "end_seconds": 16.679000000000002,
+      "id": "84eyZLYq6ME-display-0002",
+      "segment_id": "84eyZLYq6ME-ja-0002"
+    },
+    {
+      "text": "ICU",
+      "start_seconds": 19.8,
+      "end_seconds": 20.279,
+      "id": "84eyZLYq6ME-display-0003",
+      "segment_id": "84eyZLYq6ME-ja-0003"
+    },
+    {
+      "text": "という素晴らしい場所にご招待ただきありがとうございます。",
+      "start_seconds": 20.279,
+      "end_seconds": 23.279,
+      "id": "84eyZLYq6ME-display-0004",
+      "segment_id": "84eyZLYq6ME-ja-0003"
+    },
+    {
+      "text": "今日この場で人生の奇跡としての",
+      "start_seconds": 25.0,
+      "end_seconds": 29.679,
+      "id": "84eyZLYq6ME-display-0005",
+      "segment_id": "84eyZLYq6ME-ja-0004"
+    },
+    {
+      "text": "アイデンティティの創失と確率。これを",
+      "start_seconds": 29.679,
+      "end_seconds": 32.04,
+      "id": "84eyZLYq6ME-display-0006",
+      "segment_id": "84eyZLYq6ME-ja-0004"
+    },
+    {
+      "text": "テーマにお話ししようと思います。",
+      "start_seconds": 32.04,
+      "end_seconds": 35.36,
+      "id": "84eyZLYq6ME-display-0007",
+      "segment_id": "84eyZLYq6ME-ja-0004"
+    },
+    {
+      "text": "なぜこのテーマにしたかというと、今回",
+      "start_seconds": 35.36,
+      "end_seconds": 38.559,
+      "id": "84eyZLYq6ME-display-0008",
+      "segment_id": "84eyZLYq6ME-ja-0005"
+    },
+    {
+      "text": "デxICUのテーマでもあるオビit軌動",
+      "start_seconds": 38.559,
+      "end_seconds": 42.559,
+      "id": "84eyZLYq6ME-display-0009",
+      "segment_id": "84eyZLYq6ME-ja-0005"
+    },
+    {
+      "text": "と深く関係しているからです。軌道とは",
+      "start_seconds": 42.559,
+      "end_seconds": 47.079,
+      "id": "84eyZLYq6ME-display-0010",
+      "segment_id": "84eyZLYq6ME-ja-0005"
+    },
+    {
+      "text": "見えない力に引かれながらそれでもなお",
+      "start_seconds": 47.079,
+      "end_seconds": 49.96,
+      "id": "84eyZLYq6ME-display-0011",
+      "segment_id": "84eyZLYq6ME-ja-0006"
+    },
+    {
+      "text": "自らの速度で進むこと。それはその言葉を",
+      "start_seconds": 49.96,
+      "end_seconds": 55.399,
+      "id": "84eyZLYq6ME-display-0012",
+      "segment_id": "84eyZLYq6ME-ja-0006"
+    },
+    {
+      "text": "聞いた時にふと感じました。私たちの人生",
+      "start_seconds": 55.399,
+      "end_seconds": 59.12,
+      "id": "84eyZLYq6ME-display-0013",
+      "segment_id": "84eyZLYq6ME-ja-0007"
+    },
+    {
+      "text": "そのものではないかと。私たちもまた社会",
+      "start_seconds": 59.12,
+      "end_seconds": 63.28,
+      "id": "84eyZLYq6ME-display-0014",
+      "segment_id": "84eyZLYq6ME-ja-0007"
+    },
+    {
+      "text": "からの目や家族からの期待価値観や文化と",
+      "start_seconds": 63.28,
+      "end_seconds": 67.159,
+      "id": "84eyZLYq6ME-display-0015",
+      "segment_id": "84eyZLYq6ME-ja-0007"
+    },
+    {
+      "text": "いった見えない力に引かれながらそれでも",
+      "start_seconds": 67.159,
+      "end_seconds": 70.52,
+      "id": "84eyZLYq6ME-display-0016",
+      "segment_id": "84eyZLYq6ME-ja-0008"
+    },
+    {
+      "text": "なお自らの速度で独自の起動を描いてい",
+      "start_seconds": 70.52,
+      "end_seconds": 74.32,
+      "id": "84eyZLYq6ME-display-0017",
+      "segment_id": "84eyZLYq6ME-ja-0008"
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 74.32,
+      "end_seconds": 77.439,
+      "id": "84eyZLYq6ME-display-0018",
+      "segment_id": "84eyZLYq6ME-ja-0008"
+    },
+    {
+      "text": "その独自の軌動を描くのに重要となる力、",
+      "start_seconds": 77.6,
+      "end_seconds": 82.799,
+      "id": "84eyZLYq6ME-display-0019",
+      "segment_id": "84eyZLYq6ME-ja-0009"
+    },
+    {
+      "text": "その重力こそがアイデンティなのだと思い",
+      "start_seconds": 82.799,
+      "end_seconds": 85.84,
+      "id": "84eyZLYq6ME-display-0020",
+      "segment_id": "84eyZLYq6ME-ja-0009"
+    },
+    {
+      "text": "ます。一見交わらないように見える軌動も",
+      "start_seconds": 85.84,
+      "end_seconds": 91.439,
+      "id": "84eyZLYq6ME-display-0021",
+      "segment_id": "84eyZLYq6ME-ja-0010"
+    },
+    {
+      "text": "ある一定感で影響し合い、交わり、新たな",
+      "start_seconds": 91.439,
+      "end_seconds": 96.079,
+      "id": "84eyZLYq6ME-display-0022",
+      "segment_id": "84eyZLYq6ME-ja-0010"
+    },
+    {
+      "text": "軌動を描いていく。今日この場に見て",
+      "start_seconds": 96.079,
+      "end_seconds": 99.759,
+      "id": "84eyZLYq6ME-display-0023",
+      "segment_id": "84eyZLYq6ME-ja-0011"
+    },
+    {
+      "text": "くださっている皆さんの軌動がこの瞬間",
+      "start_seconds": 99.759,
+      "end_seconds": 103.2,
+      "id": "84eyZLYq6ME-display-0024",
+      "segment_id": "84eyZLYq6ME-ja-0011"
+    },
+    {
+      "text": "交わり影響し合いそしてアイデンティティ",
+      "start_seconds": 103.2,
+      "end_seconds": 106.399,
+      "id": "84eyZLYq6ME-display-0025",
+      "segment_id": "84eyZLYq6ME-ja-0011"
+    },
+    {
+      "text": "という新しい考えもしくは見つめ直す機会",
+      "start_seconds": 106.399,
+      "end_seconds": 111.479,
+      "id": "84eyZLYq6ME-display-0026",
+      "segment_id": "84eyZLYq6ME-ja-0012"
+    },
+    {
+      "text": "となればなと思っております。",
+      "start_seconds": 111.479,
+      "end_seconds": 115.24,
+      "id": "84eyZLYq6ME-display-0027",
+      "segment_id": "84eyZLYq6ME-ja-0012"
+    },
+    {
+      "text": "昨今AIやソーシャルネットワークの普及",
+      "start_seconds": 115.24,
+      "end_seconds": 118.479,
+      "id": "84eyZLYq6ME-display-0028",
+      "segment_id": "84eyZLYq6ME-ja-0013"
+    },
+    {
+      "text": "により誰もが簡単に情報が手に入り答えが",
+      "start_seconds": 118.479,
+      "end_seconds": 122.6,
+      "id": "84eyZLYq6ME-display-0029",
+      "segment_id": "84eyZLYq6ME-ja-0013"
+    },
+    {
+      "text": "見つかりあらゆるあらゆるものを比較検討",
+      "start_seconds": 122.6,
+      "end_seconds": 125.6,
+      "id": "84eyZLYq6ME-display-0030",
+      "segment_id": "84eyZLYq6ME-ja-0013"
+    },
+    {
+      "text": "できるような世界になりました。",
+      "start_seconds": 125.6,
+      "end_seconds": 128.16,
+      "id": "84eyZLYq6ME-display-0031",
+      "segment_id": "84eyZLYq6ME-ja-0014"
+    },
+    {
+      "text": "それによって",
+      "start_seconds": 128.16,
+      "end_seconds": 130.399,
+      "id": "84eyZLYq6ME-display-0032",
+      "segment_id": "84eyZLYq6ME-ja-0015"
+    },
+    {
+      "text": "便利にはなった。ただその反面何を信じる",
+      "start_seconds": 130.399,
+      "end_seconds": 134.319,
+      "id": "84eyZLYq6ME-display-0033",
+      "segment_id": "84eyZLYq6ME-ja-0015"
+    },
+    {
+      "text": "べきかが分かりづらくなっています。",
+      "start_seconds": 134.319,
+      "end_seconds": 138.04,
+      "id": "84eyZLYq6ME-display-0034",
+      "segment_id": "84eyZLYq6ME-ja-0015"
+    },
+    {
+      "text": "だからこそその中心の重力となるもの導く",
+      "start_seconds": 138.04,
+      "end_seconds": 143.16,
+      "id": "84eyZLYq6ME-display-0035",
+      "segment_id": "84eyZLYq6ME-ja-0016"
+    },
+    {
+      "text": "力が必要なのです。",
+      "start_seconds": 143.16,
+      "end_seconds": 146.2,
+      "id": "84eyZLYq6ME-display-0036",
+      "segment_id": "84eyZLYq6ME-ja-0016"
+    },
+    {
+      "text": "そしてそれが人生という軌動を描いていく",
+      "start_seconds": 146.2,
+      "end_seconds": 149.08,
+      "id": "84eyZLYq6ME-display-0037",
+      "segment_id": "84eyZLYq6ME-ja-0017"
+    },
+    {
+      "text": "中での重要な力としてアイデンティティと",
+      "start_seconds": 149.08,
+      "end_seconds": 152.68,
+      "id": "84eyZLYq6ME-display-0038",
+      "segment_id": "84eyZLYq6ME-ja-0017"
+    },
+    {
+      "text": "いうものがあるのだと思います。この話を",
+      "start_seconds": 152.68,
+      "end_seconds": 155.879,
+      "id": "84eyZLYq6ME-display-0039",
+      "segment_id": "84eyZLYq6ME-ja-0017"
+    },
+    {
+      "text": "するにあたって軽く私の自己紹介をさせて",
+      "start_seconds": 155.879,
+      "end_seconds": 158.959,
+      "id": "84eyZLYq6ME-display-0040",
+      "segment_id": "84eyZLYq6ME-ja-0018"
+    },
+    {
+      "text": "ください。私は2004年に大阪で生まれ",
+      "start_seconds": 158.959,
+      "end_seconds": 163.0,
+      "id": "84eyZLYq6ME-display-0041",
+      "segment_id": "84eyZLYq6ME-ja-0018"
+    },
+    {
+      "text": "、その後大阪で育ち、京都大学に進学し",
+      "start_seconds": 163.0,
+      "end_seconds": 166.28,
+      "id": "84eyZLYq6ME-display-0042",
+      "segment_id": "84eyZLYq6ME-ja-0018"
+    },
+    {
+      "text": "ました。その後1年から運欲京都の広告",
+      "start_seconds": 166.28,
+      "end_seconds": 171.4,
+      "id": "84eyZLYq6ME-display-0043",
+      "segment_id": "84eyZLYq6ME-ja-0019"
+    },
+    {
+      "text": "代理店ベンチャーに入り、そこで",
+      "start_seconds": 171.4,
+      "end_seconds": 174.0,
+      "id": "84eyZLYq6ME-display-0044",
+      "segment_id": "84eyZLYq6ME-ja-0019"
+    },
+    {
+      "text": "マネジメントやクリエイティブ、さらには",
+      "start_seconds": 174.0,
+      "end_seconds": 177.12,
+      "id": "84eyZLYq6ME-display-0045",
+      "segment_id": "84eyZLYq6ME-ja-0019"
+    },
+    {
+      "text": "経営といったものを学び、そっから",
+      "start_seconds": 177.12,
+      "end_seconds": 179.879,
+      "id": "84eyZLYq6ME-display-0046",
+      "segment_id": "84eyZLYq6ME-ja-0020"
+    },
+    {
+      "text": "2025年2月、今年の2月ですね、",
+      "start_seconds": 179.879,
+      "end_seconds": 182.28,
+      "id": "84eyZLYq6ME-display-0047",
+      "segment_id": "84eyZLYq6ME-ja-0020"
+    },
+    {
+      "text": "サイバーセキュリティの会社である",
+      "start_seconds": 182.28,
+      "end_seconds": 184.12,
+      "id": "84eyZLYq6ME-display-0048",
+      "segment_id": "84eyZLYq6ME-ja-0020"
+    },
+    {
+      "text": "アラジンセキュリティを創業しました。",
+      "start_seconds": 184.12,
+      "end_seconds": 186.64,
+      "id": "84eyZLYq6ME-display-0049",
+      "segment_id": "84eyZLYq6ME-ja-0020"
+    },
+    {
+      "text": "この会社では今普及しているAIの安全性",
+      "start_seconds": 186.64,
+      "end_seconds": 190.959,
+      "id": "84eyZLYq6ME-display-0050",
+      "segment_id": "84eyZLYq6ME-ja-0021"
+    },
+    {
+      "text": "評価や保障、さらには脆弱性の特定といっ",
+      "start_seconds": 190.959,
+      "end_seconds": 194.76,
+      "id": "84eyZLYq6ME-display-0051",
+      "segment_id": "84eyZLYq6ME-ja-0021"
+    },
+    {
+      "text": "た研究や開発を行っております。",
+      "start_seconds": 194.76,
+      "end_seconds": 198.2,
+      "id": "84eyZLYq6ME-display-0052",
+      "segment_id": "84eyZLYq6ME-ja-0021"
+    },
+    {
+      "text": "誰しもが自分らしい価値観を教授しながら",
+      "start_seconds": 198.2,
+      "end_seconds": 201.44,
+      "id": "84eyZLYq6ME-display-0053",
+      "segment_id": "84eyZLYq6ME-ja-0022"
+    },
+    {
+      "text": "安心安全なAIを利用するための取り組み",
+      "start_seconds": 201.44,
+      "end_seconds": 204.44,
+      "id": "84eyZLYq6ME-display-0054",
+      "segment_id": "84eyZLYq6ME-ja-0022"
+    },
+    {
+      "text": "です。",
+      "start_seconds": 204.44,
+      "end_seconds": 206.44,
+      "id": "84eyZLYq6ME-display-0055",
+      "segment_id": "84eyZLYq6ME-ja-0022"
+    },
+    {
+      "text": "よくどうして起業したんですかと聞かれる",
+      "start_seconds": 206.44,
+      "end_seconds": 209.36,
+      "id": "84eyZLYq6ME-display-0056",
+      "segment_id": "84eyZLYq6ME-ja-0023"
+    },
+    {
+      "text": "ことが多いです。最近言語化したんです",
+      "start_seconds": 209.36,
+      "end_seconds": 212.799,
+      "id": "84eyZLYq6ME-display-0057",
+      "segment_id": "84eyZLYq6ME-ja-0023"
+    },
+    {
+      "text": "けど、意外とシンプルで本気になれる場所",
+      "start_seconds": 212.799,
+      "end_seconds": 215.599,
+      "id": "84eyZLYq6ME-display-0058",
+      "segment_id": "84eyZLYq6ME-ja-0023"
+    },
+    {
+      "text": "が欲しかった。私は中学高校とサッカー部",
+      "start_seconds": 215.599,
+      "end_seconds": 220.64,
+      "id": "84eyZLYq6ME-display-0059",
+      "segment_id": "84eyZLYq6ME-ja-0024"
+    },
+    {
+      "text": "に入っていました。特に高校では",
+      "start_seconds": 220.64,
+      "end_seconds": 223.48,
+      "id": "84eyZLYq6ME-display-0060",
+      "segment_id": "84eyZLYq6ME-ja-0024"
+    },
+    {
+      "text": "キャプテンを務めさせていただき、リーグ",
+      "start_seconds": 223.48,
+      "end_seconds": 225.599,
+      "id": "84eyZLYq6ME-display-0061",
+      "segment_id": "84eyZLYq6ME-ja-0024"
+    },
+    {
+      "text": "戦や大会などいろんなものに出させて",
+      "start_seconds": 225.599,
+      "end_seconds": 228.28,
+      "id": "84eyZLYq6ME-display-0062",
+      "segment_id": "84eyZLYq6ME-ja-0025"
+    },
+    {
+      "text": "いただきました。ただ、え、その部活は僕",
+      "start_seconds": 228.28,
+      "end_seconds": 232.28,
+      "id": "84eyZLYq6ME-display-0063",
+      "segment_id": "84eyZLYq6ME-ja-0025"
+    },
+    {
+      "text": "らの部活は高校3年の10月まであります",
+      "start_seconds": 232.28,
+      "end_seconds": 235.2,
+      "id": "84eyZLYq6ME-display-0064",
+      "segment_id": "84eyZLYq6ME-ja-0025"
+    },
+    {
+      "text": "。その10月まではずっとサッカーのこと",
+      "start_seconds": 235.2,
+      "end_seconds": 238.92,
+      "id": "84eyZLYq6ME-display-0065",
+      "segment_id": "84eyZLYq6ME-ja-0026"
+    },
+    {
+      "text": "ばかりを考えていたのですが、残り4ヶ月",
+      "start_seconds": 238.92,
+      "end_seconds": 241.959,
+      "id": "84eyZLYq6ME-display-0066",
+      "segment_id": "84eyZLYq6ME-ja-0026"
+    },
+    {
+      "text": "で受験が迫ってます。僕の周りにいる受験",
+      "start_seconds": 241.959,
+      "end_seconds": 245.48,
+      "id": "84eyZLYq6ME-display-0067",
+      "segment_id": "84eyZLYq6ME-ja-0026"
+    },
+    {
+      "text": "を、ま、京都大学に受ける受験をする人",
+      "start_seconds": 245.48,
+      "end_seconds": 247.68,
+      "id": "84eyZLYq6ME-display-0068",
+      "segment_id": "84eyZLYq6ME-ja-0027"
+    },
+    {
+      "text": "たちは3年の4月で引退していたり、",
+      "start_seconds": 247.68,
+      "end_seconds": 250.959,
+      "id": "84eyZLYq6ME-display-0069",
+      "segment_id": "84eyZLYq6ME-ja-0027"
+    },
+    {
+      "text": "もしくは高校3年間全て勉強に捧げてる",
+      "start_seconds": 250.959,
+      "end_seconds": 253.92,
+      "id": "84eyZLYq6ME-display-0070",
+      "segment_id": "84eyZLYq6ME-ja-0027"
+    },
+    {
+      "text": "ような人たちばかりでした。そこに対して",
+      "start_seconds": 253.92,
+      "end_seconds": 257.4,
+      "id": "84eyZLYq6ME-display-0071",
+      "segment_id": "84eyZLYq6ME-ja-0027"
+    },
+    {
+      "text": "ちゃんと受かる、合格するってなると残り",
+      "start_seconds": 257.4,
+      "end_seconds": 261.72,
+      "id": "84eyZLYq6ME-display-0072",
+      "segment_id": "84eyZLYq6ME-ja-0028"
+    },
+    {
+      "text": "の4ヶ月間全て受験のことを考えて、え、",
+      "start_seconds": 261.72,
+      "end_seconds": 265.88,
+      "id": "84eyZLYq6ME-display-0073",
+      "segment_id": "84eyZLYq6ME-ja-0028"
+    },
+    {
+      "text": "やっていくしかなかったのです。結果無事",
+      "start_seconds": 265.88,
+      "end_seconds": 269.039,
+      "id": "84eyZLYq6ME-display-0074",
+      "segment_id": "84eyZLYq6ME-ja-0028"
+    },
+    {
+      "text": "に京都大学に進学することができました。",
+      "start_seconds": 269.039,
+      "end_seconds": 272.759,
+      "id": "84eyZLYq6ME-display-0075",
+      "segment_id": "84eyZLYq6ME-ja-0029"
+    },
+    {
+      "text": "ふとそのタイミングで気づいたんです。今",
+      "start_seconds": 272.759,
+      "end_seconds": 275.8,
+      "id": "84eyZLYq6ME-display-0076",
+      "segment_id": "84eyZLYq6ME-ja-0030"
+    },
+    {
+      "text": "までサッカーや受験、頭の中を閉めていた",
+      "start_seconds": 275.8,
+      "end_seconds": 280.72,
+      "id": "84eyZLYq6ME-display-0077",
+      "segment_id": "84eyZLYq6ME-ja-0030"
+    },
+    {
+      "text": "そのものがなくなってしまい、空気になっ",
+      "start_seconds": 280.72,
+      "end_seconds": 283.32,
+      "id": "84eyZLYq6ME-display-0078",
+      "segment_id": "84eyZLYq6ME-ja-0030"
+    },
+    {
+      "text": "てしまったと。そして朝起きて天井のシミ",
+      "start_seconds": 283.32,
+      "end_seconds": 287.08,
+      "id": "84eyZLYq6ME-display-0079",
+      "segment_id": "84eyZLYq6ME-ja-0031"
+    },
+    {
+      "text": "の数を数える毎日でした。その穴を埋める",
+      "start_seconds": 287.08,
+      "end_seconds": 291.36,
+      "id": "84eyZLYq6ME-display-0080",
+      "segment_id": "84eyZLYq6ME-ja-0031"
+    },
+    {
+      "text": "ためにビジネスの世界に入っていったと",
+      "start_seconds": 291.36,
+      "end_seconds": 293.8,
+      "id": "84eyZLYq6ME-display-0081",
+      "segment_id": "84eyZLYq6ME-ja-0031"
+    },
+    {
+      "text": "言っても過言ではありません。そしてその",
+      "start_seconds": 293.8,
+      "end_seconds": 297.44,
+      "id": "84eyZLYq6ME-display-0082",
+      "segment_id": "84eyZLYq6ME-ja-0032"
+    },
+    {
+      "text": "全職の会社では色々なことを経験させて",
+      "start_seconds": 297.44,
+      "end_seconds": 300.52,
+      "id": "84eyZLYq6ME-display-0083",
+      "segment_id": "84eyZLYq6ME-ja-0032"
+    },
+    {
+      "text": "いただき、人が増え、規模が大きくなり、",
+      "start_seconds": 300.52,
+      "end_seconds": 304.4,
+      "id": "84eyZLYq6ME-display-0084",
+      "segment_id": "84eyZLYq6ME-ja-0032"
+    },
+    {
+      "text": "売上もどんどん上がっていく。それを間近",
+      "start_seconds": 304.4,
+      "end_seconds": 307.039,
+      "id": "84eyZLYq6ME-display-0085",
+      "segment_id": "84eyZLYq6ME-ja-0033"
+    },
+    {
+      "text": "で見たことによって自分でもこういうよう",
+      "start_seconds": 307.039,
+      "end_seconds": 309.68,
+      "id": "84eyZLYq6ME-display-0086",
+      "segment_id": "84eyZLYq6ME-ja-0033"
+    },
+    {
+      "text": "な会社を作りたいなていうので、え、今の",
+      "start_seconds": 309.68,
+      "end_seconds": 312.84,
+      "id": "84eyZLYq6ME-display-0087",
+      "segment_id": "84eyZLYq6ME-ja-0033"
+    },
+    {
+      "text": "アラジンセキュリティを創業しました。今",
+      "start_seconds": 312.84,
+      "end_seconds": 316.16,
+      "id": "84eyZLYq6ME-display-0088",
+      "segment_id": "84eyZLYq6ME-ja-0033"
+    },
+    {
+      "text": "も社会からのプレッシャーや期待など様々",
+      "start_seconds": 316.16,
+      "end_seconds": 320.08,
+      "id": "84eyZLYq6ME-display-0089",
+      "segment_id": "84eyZLYq6ME-ja-0034"
+    },
+    {
+      "text": "なものを背負いながらそれでもなおそれを",
+      "start_seconds": 320.08,
+      "end_seconds": 322.479,
+      "id": "84eyZLYq6ME-display-0090",
+      "segment_id": "84eyZLYq6ME-ja-0034"
+    },
+    {
+      "text": "飲み込んでやろうと楽しんでやっており",
+      "start_seconds": 322.479,
+      "end_seconds": 325.36,
+      "id": "84eyZLYq6ME-display-0091",
+      "segment_id": "84eyZLYq6ME-ja-0034"
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 325.36,
+      "end_seconds": 326.639,
+      "id": "84eyZLYq6ME-display-0092",
+      "segment_id": "84eyZLYq6ME-ja-0034"
+    },
+    {
+      "text": "だからこそ私がどういう風に",
+      "start_seconds": 326.639,
+      "end_seconds": 329.16,
+      "id": "84eyZLYq6ME-display-0093",
+      "segment_id": "84eyZLYq6ME-ja-0035"
+    },
+    {
+      "text": "アイデンチティを取られているのかそこを",
+      "start_seconds": 329.16,
+      "end_seconds": 331.0,
+      "id": "84eyZLYq6ME-display-0094",
+      "segment_id": "84eyZLYq6ME-ja-0035"
+    },
+    {
+      "text": "お話しさせていただければなという風に",
+      "start_seconds": 331.0,
+      "end_seconds": 332.88,
+      "id": "84eyZLYq6ME-display-0095",
+      "segment_id": "84eyZLYq6ME-ja-0035"
+    },
+    {
+      "text": "思っております。この話をさせていただく",
+      "start_seconds": 332.88,
+      "end_seconds": 335.72,
+      "id": "84eyZLYq6ME-display-0096",
+      "segment_id": "84eyZLYq6ME-ja-0035"
+    },
+    {
+      "text": "にあたってある人物のお話と1つの昔話を",
+      "start_seconds": 335.72,
+      "end_seconds": 339.56,
+      "id": "84eyZLYq6ME-display-0097",
+      "segment_id": "84eyZLYq6ME-ja-0036"
+    },
+    {
+      "text": "さしてください。私の尊敬する趣旨学者で",
+      "start_seconds": 339.56,
+      "end_seconds": 345.12,
+      "id": "84eyZLYq6ME-display-0098",
+      "segment_id": "84eyZLYq6ME-ja-0036"
+    },
+    {
+      "text": "吉田商員や最後高森といった明治心の支士",
+      "start_seconds": 345.12,
+      "end_seconds": 348.88,
+      "id": "84eyZLYq6ME-display-0099",
+      "segment_id": "84eyZLYq6ME-ja-0037"
+    },
+    {
+      "text": "たちの方の思想を片った佐藤一歳の原子録",
+      "start_seconds": 348.88,
+      "end_seconds": 352.56,
+      "id": "84eyZLYq6ME-display-0100",
+      "segment_id": "84eyZLYq6ME-ja-0037"
+    },
+    {
+      "text": "の言葉の中に本の中にこのような言葉が",
+      "start_seconds": 352.56,
+      "end_seconds": 355.199,
+      "id": "84eyZLYq6ME-display-0101",
+      "segment_id": "84eyZLYq6ME-ja-0037"
+    },
+    {
+      "text": "あります。",
+      "start_seconds": 355.199,
+      "end_seconds": 357.24,
+      "id": "84eyZLYq6ME-display-0102",
+      "segment_id": "84eyZLYq6ME-ja-0038"
+    },
+    {
+      "text": "一等を下げて安を行く。安を売れること",
+      "start_seconds": 357.24,
+      "end_seconds": 360.08,
+      "id": "84eyZLYq6ME-display-0103",
+      "segment_id": "84eyZLYq6ME-ja-0039"
+    },
+    {
+      "text": "なかれ。ただ一等を頼みて。暗闇みも",
+      "start_seconds": 360.08,
+      "end_seconds": 364.039,
+      "id": "84eyZLYq6ME-display-0104",
+      "segment_id": "84eyZLYq6ME-ja-0039"
+    },
+    {
+      "text": "恐れる必要はない。たった1つの光でも",
+      "start_seconds": 364.039,
+      "end_seconds": 367.039,
+      "id": "84eyZLYq6ME-display-0105",
+      "segment_id": "84eyZLYq6ME-ja-0039"
+    },
+    {
+      "text": "信じ抜いて歩いていくべきだ。そういった",
+      "start_seconds": 367.039,
+      "end_seconds": 369.479,
+      "id": "84eyZLYq6ME-display-0106",
+      "segment_id": "84eyZLYq6ME-ja-0040"
+    },
+    {
+      "text": "意味が込められています。もう1つ私の",
+      "start_seconds": 369.479,
+      "end_seconds": 372.479,
+      "id": "84eyZLYq6ME-display-0107",
+      "segment_id": "84eyZLYq6ME-ja-0040"
+    },
+    {
+      "text": "尊敬する方がお話ししてくれた昔話です。",
+      "start_seconds": 372.479,
+      "end_seconds": 377.319,
+      "id": "84eyZLYq6ME-display-0108",
+      "segment_id": "84eyZLYq6ME-ja-0040"
+    },
+    {
+      "text": "昔ハンガリー軍の偵察部隊がアルプス三脈",
+      "start_seconds": 377.319,
+      "end_seconds": 380.24,
+      "id": "84eyZLYq6ME-display-0109",
+      "segment_id": "84eyZLYq6ME-ja-0041"
+    },
+    {
+      "text": "に偵察に行きました。その時猛吹雪が",
+      "start_seconds": 380.24,
+      "end_seconds": 385.12,
+      "id": "84eyZLYq6ME-display-0110",
+      "segment_id": "84eyZLYq6ME-ja-0041"
+    },
+    {
+      "text": "起こり彷徨いやる誰もが死を感じました。",
+      "start_seconds": 385.12,
+      "end_seconds": 389.319,
+      "id": "84eyZLYq6ME-display-0111",
+      "segment_id": "84eyZLYq6ME-ja-0041"
+    },
+    {
+      "text": "そしてみんな希望を打ちしがれ、もうこの",
+      "start_seconds": 389.319,
+      "end_seconds": 392.96,
+      "id": "84eyZLYq6ME-display-0112",
+      "segment_id": "84eyZLYq6ME-ja-0042"
+    },
+    {
+      "text": "ままなすべもなく死ぬしかないと思った先",
+      "start_seconds": 392.96,
+      "end_seconds": 395.479,
+      "id": "84eyZLYq6ME-display-0113",
+      "segment_id": "84eyZLYq6ME-ja-0042"
+    },
+    {
+      "text": "、1人の隊員から1枚の地図が見つかり",
+      "start_seconds": 395.479,
+      "end_seconds": 399.039,
+      "id": "84eyZLYq6ME-display-0114",
+      "segment_id": "84eyZLYq6ME-ja-0042"
+    },
+    {
+      "text": "ました。その地図で全員が希望を持ちなん",
+      "start_seconds": 399.039,
+      "end_seconds": 403.759,
+      "id": "84eyZLYq6ME-display-0115",
+      "segment_id": "84eyZLYq6ME-ja-0043"
+    },
+    {
+      "text": "とか行きながら下山することができました",
+      "start_seconds": 403.759,
+      "end_seconds": 406.08,
+      "id": "84eyZLYq6ME-display-0116",
+      "segment_id": "84eyZLYq6ME-ja-0043"
+    },
+    {
+      "text": "。後に下算してその地図を確認すると実は",
+      "start_seconds": 406.08,
+      "end_seconds": 410.84,
+      "id": "84eyZLYq6ME-display-0117",
+      "segment_id": "84eyZLYq6ME-ja-0043"
+    },
+    {
+      "text": "アルプス三脈の地図ではなくピレネー三脈",
+      "start_seconds": 410.84,
+      "end_seconds": 413.56,
+      "id": "84eyZLYq6ME-display-0118",
+      "segment_id": "84eyZLYq6ME-ja-0044"
+    },
+    {
+      "text": "の地図だったという意味です。どういう",
+      "start_seconds": 413.56,
+      "end_seconds": 416.599,
+      "id": "84eyZLYq6ME-display-0119",
+      "segment_id": "84eyZLYq6ME-ja-0044"
+    },
+    {
+      "text": "ことが言いたいのかというと、ま、世の中",
+      "start_seconds": 416.599,
+      "end_seconds": 419.12,
+      "id": "84eyZLYq6ME-display-0120",
+      "segment_id": "84eyZLYq6ME-ja-0044"
+    },
+    {
+      "text": "は真っ暗で進んでいく道も本当にこれが",
+      "start_seconds": 419.12,
+      "end_seconds": 422.0,
+      "id": "84eyZLYq6ME-display-0121",
+      "segment_id": "84eyZLYq6ME-ja-0044"
+    },
+    {
+      "text": "合ってるのかといったものは分からない。",
+      "start_seconds": 422.0,
+      "end_seconds": 424.919,
+      "id": "84eyZLYq6ME-display-0122",
+      "segment_id": "84eyZLYq6ME-ja-0045"
+    },
+    {
+      "text": "そういった中でそれでも何か1つでも",
+      "start_seconds": 424.919,
+      "end_seconds": 428.28,
+      "id": "84eyZLYq6ME-display-0123",
+      "segment_id": "84eyZLYq6ME-ja-0046"
+    },
+    {
+      "text": "信じるものを信じ抜き歩いていくそういっ",
+      "start_seconds": 428.28,
+      "end_seconds": 431.36,
+      "id": "84eyZLYq6ME-display-0124",
+      "segment_id": "84eyZLYq6ME-ja-0046"
+    },
+    {
+      "text": "た覚悟が必要なんだと思います。そして",
+      "start_seconds": 431.36,
+      "end_seconds": 435.72,
+      "id": "84eyZLYq6ME-display-0125",
+      "segment_id": "84eyZLYq6ME-ja-0046"
+    },
+    {
+      "text": "その",
+      "start_seconds": 435.72,
+      "end_seconds": 437.599,
+      "id": "84eyZLYq6ME-display-0126",
+      "segment_id": "84eyZLYq6ME-ja-0047"
+    },
+    {
+      "text": "アイデンティティという観点でいきますと",
+      "start_seconds": 437.599,
+      "end_seconds": 439.56,
+      "id": "84eyZLYq6ME-display-0127",
+      "segment_id": "84eyZLYq6ME-ja-0047"
+    },
+    {
+      "text": "、ま、辞書には辞書を引くとこういう風に",
+      "start_seconds": 439.56,
+      "end_seconds": 442.56,
+      "id": "84eyZLYq6ME-display-0128",
+      "segment_id": "84eyZLYq6ME-ja-0047"
+    },
+    {
+      "text": "書いています。",
+      "start_seconds": 442.56,
+      "end_seconds": 444.879,
+      "id": "84eyZLYq6ME-display-0129",
+      "segment_id": "84eyZLYq6ME-ja-0047"
+    },
+    {
+      "text": "自分は何者なのかという自己認識と私は",
+      "start_seconds": 444.879,
+      "end_seconds": 448.479,
+      "id": "84eyZLYq6ME-display-0130",
+      "segment_id": "84eyZLYq6ME-ja-0048"
+    },
+    {
+      "text": "これでは不十分ではないかなという風に",
+      "start_seconds": 448.479,
+      "end_seconds": 450.28,
+      "id": "84eyZLYq6ME-display-0131",
+      "segment_id": "84eyZLYq6ME-ja-0048"
+    },
+    {
+      "text": "思ってます。私が思うにアイデンティティ",
+      "start_seconds": 450.28,
+      "end_seconds": 453.479,
+      "id": "84eyZLYq6ME-display-0132",
+      "segment_id": "84eyZLYq6ME-ja-0048"
+    },
+    {
+      "text": "とは先ほどの2つのお話の一等や地図の",
+      "start_seconds": 453.479,
+      "end_seconds": 457.68,
+      "id": "84eyZLYq6ME-display-0133",
+      "segment_id": "84eyZLYq6ME-ja-0049"
+    },
+    {
+      "text": "ことだと思います。",
+      "start_seconds": 457.68,
+      "end_seconds": 461.52,
+      "id": "84eyZLYq6ME-display-0134",
+      "segment_id": "84eyZLYq6ME-ja-0049"
+    },
+    {
+      "text": "先ほどもあげたように暗闇みを歩いていく",
+      "start_seconds": 461.52,
+      "end_seconds": 464.599,
+      "id": "84eyZLYq6ME-display-0135",
+      "segment_id": "84eyZLYq6ME-ja-0050"
+    },
+    {
+      "text": "、さらには会っているかも分からない。",
+      "start_seconds": 464.599,
+      "end_seconds": 467.36,
+      "id": "84eyZLYq6ME-display-0136",
+      "segment_id": "84eyZLYq6ME-ja-0050"
+    },
+    {
+      "text": "そういったような道を進んでいく時の希望",
+      "start_seconds": 467.36,
+      "end_seconds": 469.72,
+      "id": "84eyZLYq6ME-display-0137",
+      "segment_id": "84eyZLYq6ME-ja-0051"
+    },
+    {
+      "text": "となりとなる。そういったような存在こそ",
+      "start_seconds": 469.72,
+      "end_seconds": 472.639,
+      "id": "84eyZLYq6ME-display-0138",
+      "segment_id": "84eyZLYq6ME-ja-0051"
+    },
+    {
+      "text": "がアイデンティティなんだと思っており",
+      "start_seconds": 472.639,
+      "end_seconds": 474.84,
+      "id": "84eyZLYq6ME-display-0139",
+      "segment_id": "84eyZLYq6ME-ja-0051"
+    },
+    {
+      "text": "ます。そしてその軌動自分の人生を描いて",
+      "start_seconds": 474.84,
+      "end_seconds": 480.039,
+      "id": "84eyZLYq6ME-display-0140",
+      "segment_id": "84eyZLYq6ME-ja-0052"
+    },
+    {
+      "text": "いくための軌動を片っていくためには",
+      "start_seconds": 480.039,
+      "end_seconds": 483.039,
+      "id": "84eyZLYq6ME-display-0141",
+      "segment_id": "84eyZLYq6ME-ja-0052"
+    },
+    {
+      "text": "アイデンティティ、自分を導く重力が必要",
+      "start_seconds": 483.039,
+      "end_seconds": 485.919,
+      "id": "84eyZLYq6ME-display-0142",
+      "segment_id": "84eyZLYq6ME-ja-0052"
+    },
+    {
+      "text": "なんだと思います。では、どのように",
+      "start_seconds": 485.919,
+      "end_seconds": 489.36,
+      "id": "84eyZLYq6ME-display-0143",
+      "segment_id": "84eyZLYq6ME-ja-0053"
+    },
+    {
+      "text": "アイデンティティを創失すればいいの",
+      "start_seconds": 489.36,
+      "end_seconds": 491.12,
+      "id": "84eyZLYq6ME-display-0144",
+      "segment_id": "84eyZLYq6ME-ja-0053"
+    },
+    {
+      "text": "でしょうか?",
+      "start_seconds": 491.12,
+      "end_seconds": 494.159,
+      "id": "84eyZLYq6ME-display-0145",
+      "segment_id": "84eyZLYq6ME-ja-0053"
+    },
+    {
+      "text": "私が思うにアイデンティと",
+      "start_seconds": 494.159,
+      "end_seconds": 497.039,
+      "id": "84eyZLYq6ME-display-0146",
+      "segment_id": "84eyZLYq6ME-ja-0054"
+    },
+    {
+      "text": "アイデンティティと言うとやはり難しく",
+      "start_seconds": 497.039,
+      "end_seconds": 499.879,
+      "id": "84eyZLYq6ME-display-0147",
+      "segment_id": "84eyZLYq6ME-ja-0054"
+    },
+    {
+      "text": "抽象的で感じてしまうものもあるかもしれ",
+      "start_seconds": 499.879,
+      "end_seconds": 502.08,
+      "id": "84eyZLYq6ME-display-0148",
+      "segment_id": "84eyZLYq6ME-ja-0054"
+    },
+    {
+      "text": "ません。ただそういったこともないかなと",
+      "start_seconds": 502.08,
+      "end_seconds": 504.879,
+      "id": "84eyZLYq6ME-display-0149",
+      "segment_id": "84eyZLYq6ME-ja-0054"
+    },
+    {
+      "text": "いう風には思っております。それこそ僕も",
+      "start_seconds": 504.879,
+      "end_seconds": 508.8,
+      "id": "84eyZLYq6ME-display-0150",
+      "segment_id": "84eyZLYq6ME-ja-0055"
+    },
+    {
+      "text": "若い人やいろんな方とお話させていただく",
+      "start_seconds": 508.8,
+      "end_seconds": 511.639,
+      "id": "84eyZLYq6ME-display-0151",
+      "segment_id": "84eyZLYq6ME-ja-0055"
+    },
+    {
+      "text": "時に一定数の覚悟が決まってこの道で進ん",
+      "start_seconds": 511.639,
+      "end_seconds": 514.919,
+      "id": "84eyZLYq6ME-display-0152",
+      "segment_id": "84eyZLYq6ME-ja-0055"
+    },
+    {
+      "text": "でいくと決めている人や未だに悩み続けて",
+      "start_seconds": 514.919,
+      "end_seconds": 518.159,
+      "id": "84eyZLYq6ME-display-0153",
+      "segment_id": "84eyZLYq6ME-ja-0056"
+    },
+    {
+      "text": "いる人、いろんな人とお会いしてお話をし",
+      "start_seconds": 518.159,
+      "end_seconds": 520.88,
+      "id": "84eyZLYq6ME-display-0154",
+      "segment_id": "84eyZLYq6ME-ja-0056"
+    },
+    {
+      "text": "ていく中でこの差が見えてきました。それ",
+      "start_seconds": 520.88,
+      "end_seconds": 524.0,
+      "id": "84eyZLYq6ME-display-0155",
+      "segment_id": "84eyZLYq6ME-ja-0056"
+    },
+    {
+      "text": "はベンチマークとなる存在がいる方です。",
+      "start_seconds": 524.0,
+      "end_seconds": 527.839,
+      "id": "84eyZLYq6ME-display-0156",
+      "segment_id": "84eyZLYq6ME-ja-0057"
+    },
+    {
+      "text": "ベンチマークとは映画のキャラクターや",
+      "start_seconds": 527.839,
+      "end_seconds": 530.839,
+      "id": "84eyZLYq6ME-display-0157",
+      "segment_id": "84eyZLYq6ME-ja-0058"
+    },
+    {
+      "text": "漫画の漫画やドラマのキャラクター歴史上",
+      "start_seconds": 530.839,
+      "end_seconds": 533.839,
+      "id": "84eyZLYq6ME-display-0158",
+      "segment_id": "84eyZLYq6ME-ja-0058"
+    },
+    {
+      "text": "の人物や尊敬する身のりにいる人でも構い",
+      "start_seconds": 533.839,
+      "end_seconds": 537.279,
+      "id": "84eyZLYq6ME-display-0159",
+      "segment_id": "84eyZLYq6ME-ja-0058"
+    },
+    {
+      "text": "ません。何か意思決定をしなくてはいけ",
+      "start_seconds": 537.279,
+      "end_seconds": 541.519,
+      "id": "84eyZLYq6ME-display-0160",
+      "segment_id": "84eyZLYq6ME-ja-0059"
+    },
+    {
+      "text": "ないことが起こった時、困難が起こった時",
+      "start_seconds": 541.519,
+      "end_seconds": 544.32,
+      "id": "84eyZLYq6ME-display-0161",
+      "segment_id": "84eyZLYq6ME-ja-0059"
+    },
+    {
+      "text": "に彼女ならこうするよなという寄り所が",
+      "start_seconds": 544.32,
+      "end_seconds": 547.44,
+      "id": "84eyZLYq6ME-display-0162",
+      "segment_id": "84eyZLYq6ME-ja-0059"
+    },
+    {
+      "text": "大切なのです。そしてその決定基準を一旦",
+      "start_seconds": 547.44,
+      "end_seconds": 552.959,
+      "id": "84eyZLYq6ME-display-0163",
+      "segment_id": "84eyZLYq6ME-ja-0060"
+    },
+    {
+      "text": "外に置いてみることによってまた新たな",
+      "start_seconds": 552.959,
+      "end_seconds": 556.279,
+      "id": "84eyZLYq6ME-display-0164",
+      "segment_id": "84eyZLYq6ME-ja-0060"
+    },
+    {
+      "text": "世界が見えてきます。それは盲目的に真似",
+      "start_seconds": 556.279,
+      "end_seconds": 560.44,
+      "id": "84eyZLYq6ME-display-0165",
+      "segment_id": "84eyZLYq6ME-ja-0061"
+    },
+    {
+      "text": "をすることではありません。最初は憧れで",
+      "start_seconds": 560.44,
+      "end_seconds": 564.68,
+      "id": "84eyZLYq6ME-display-0166",
+      "segment_id": "84eyZLYq6ME-ja-0061"
+    },
+    {
+      "text": "も模法でもいい。その",
+      "start_seconds": 564.68,
+      "end_seconds": 568.959,
+      "id": "84eyZLYq6ME-display-0167",
+      "segment_id": "84eyZLYq6ME-ja-0062"
+    },
+    {
+      "text": "ベンチマークとなる人の",
+      "start_seconds": 568.959,
+      "end_seconds": 571.64,
+      "id": "84eyZLYq6ME-display-0168",
+      "segment_id": "84eyZLYq6ME-ja-0062"
+    },
+    {
+      "text": "軌動や奇跡を見ていくことによって、",
+      "start_seconds": 571.64,
+      "end_seconds": 575.2,
+      "id": "84eyZLYq6ME-display-0169",
+      "segment_id": "84eyZLYq6ME-ja-0062"
+    },
+    {
+      "text": "もしくは言葉を聞いていくことによって、",
+      "start_seconds": 575.2,
+      "end_seconds": 577.8,
+      "id": "84eyZLYq6ME-display-0170",
+      "segment_id": "84eyZLYq6ME-ja-0063"
+    },
+    {
+      "text": "それをまた新たな自分の軌動として考えて",
+      "start_seconds": 577.8,
+      "end_seconds": 581.72,
+      "id": "84eyZLYq6ME-display-0171",
+      "segment_id": "84eyZLYq6ME-ja-0063"
+    },
+    {
+      "text": "いけばいいのだと思います。つまりその",
+      "start_seconds": 581.72,
+      "end_seconds": 586.959,
+      "id": "84eyZLYq6ME-display-0172",
+      "segment_id": "84eyZLYq6ME-ja-0063"
+    },
+    {
+      "text": "憧れベンチマークの描いた人生というのは",
+      "start_seconds": 586.959,
+      "end_seconds": 590.68,
+      "id": "84eyZLYq6ME-display-0173",
+      "segment_id": "84eyZLYq6ME-ja-0064"
+    },
+    {
+      "text": "ただ単に他人の軌動ではなく自分がこれ",
+      "start_seconds": 590.68,
+      "end_seconds": 594.24,
+      "id": "84eyZLYq6ME-display-0174",
+      "segment_id": "84eyZLYq6ME-ja-0064"
+    },
+    {
+      "text": "から描く物語の予感なのだと思います。",
+      "start_seconds": 594.24,
+      "end_seconds": 599.16,
+      "id": "84eyZLYq6ME-display-0175",
+      "segment_id": "84eyZLYq6ME-ja-0065"
+    },
+    {
+      "text": "ではアイデンティティを確立させるために",
+      "start_seconds": 599.16,
+      "end_seconds": 602.16,
+      "id": "84eyZLYq6ME-display-0176",
+      "segment_id": "84eyZLYq6ME-ja-0066"
+    },
+    {
+      "text": "はどうすればいいのでしょうか?",
+      "start_seconds": 602.16,
+      "end_seconds": 604.959,
+      "id": "84eyZLYq6ME-display-0177",
+      "segment_id": "84eyZLYq6ME-ja-0066"
+    },
+    {
+      "text": "私はこれが口に出すことだと思います。",
+      "start_seconds": 604.959,
+      "end_seconds": 608.64,
+      "id": "84eyZLYq6ME-display-0178",
+      "segment_id": "84eyZLYq6ME-ja-0067"
+    },
+    {
+      "text": "先ほど辞書に挙げたように人間の自己認識",
+      "start_seconds": 608.64,
+      "end_seconds": 612.6,
+      "id": "84eyZLYq6ME-display-0179",
+      "segment_id": "84eyZLYq6ME-ja-0068"
+    },
+    {
+      "text": "内面にとめるものというような一定数の",
+      "start_seconds": 612.6,
+      "end_seconds": 615.92,
+      "id": "84eyZLYq6ME-display-0180",
+      "segment_id": "84eyZLYq6ME-ja-0068"
+    },
+    {
+      "text": "バイアスがあるかと思いますが、そういう",
+      "start_seconds": 615.92,
+      "end_seconds": 617.959,
+      "id": "84eyZLYq6ME-display-0181",
+      "segment_id": "84eyZLYq6ME-ja-0068"
+    },
+    {
+      "text": "わけではないと思ってます。やはり自分が",
+      "start_seconds": 617.959,
+      "end_seconds": 622.399,
+      "id": "84eyZLYq6ME-display-0182",
+      "segment_id": "84eyZLYq6ME-ja-0069"
+    },
+    {
+      "text": "憧れるものや自分が思ってる信念、",
+      "start_seconds": 622.399,
+      "end_seconds": 625.44,
+      "id": "84eyZLYq6ME-display-0183",
+      "segment_id": "84eyZLYq6ME-ja-0069"
+    },
+    {
+      "text": "アイデンティティとなるものは口に出して",
+      "start_seconds": 625.44,
+      "end_seconds": 627.76,
+      "id": "84eyZLYq6ME-display-0184",
+      "segment_id": "84eyZLYq6ME-ja-0069"
+    },
+    {
+      "text": "こそ形になると思います。それが大きく",
+      "start_seconds": 627.76,
+      "end_seconds": 632.12,
+      "id": "84eyZLYq6ME-display-0185",
+      "segment_id": "84eyZLYq6ME-ja-0070"
+    },
+    {
+      "text": "繋がり広がりそして共鳴しうねりとなって",
+      "start_seconds": 632.12,
+      "end_seconds": 636.48,
+      "id": "84eyZLYq6ME-display-0186",
+      "segment_id": "84eyZLYq6ME-ja-0070"
+    },
+    {
+      "text": "いくアイデンティティは静かに電波して",
+      "start_seconds": 636.48,
+      "end_seconds": 639.399,
+      "id": "84eyZLYq6ME-display-0187",
+      "segment_id": "84eyZLYq6ME-ja-0070"
+    },
+    {
+      "text": "いくものなのです。",
+      "start_seconds": 639.399,
+      "end_seconds": 642.16,
+      "id": "84eyZLYq6ME-display-0188",
+      "segment_id": "84eyZLYq6ME-ja-0071"
+    },
+    {
+      "text": "私は最近歴史小説をよく読みます。特に",
+      "start_seconds": 642.16,
+      "end_seconds": 645.76,
+      "id": "84eyZLYq6ME-display-0189",
+      "segment_id": "84eyZLYq6ME-ja-0072"
+    },
+    {
+      "text": "北方健造の鼓電という物語はとても面白く",
+      "start_seconds": 645.76,
+      "end_seconds": 649.76,
+      "id": "84eyZLYq6ME-display-0190",
+      "segment_id": "84eyZLYq6ME-ja-0072"
+    },
+    {
+      "text": "て、ま、それをちょっと紹介させて",
+      "start_seconds": 649.76,
+      "end_seconds": 651.279,
+      "id": "84eyZLYq6ME-display-0191",
+      "segment_id": "84eyZLYq6ME-ja-0072"
+    },
+    {
+      "text": "いただければと思うんですけど、腐敗した",
+      "start_seconds": 651.279,
+      "end_seconds": 654.44,
+      "id": "84eyZLYq6ME-display-0192",
+      "segment_id": "84eyZLYq6ME-ja-0073"
+    },
+    {
+      "text": "国家や政府に対して立ち上がった男たちは",
+      "start_seconds": 654.44,
+      "end_seconds": 658.72,
+      "id": "84eyZLYq6ME-display-0193",
+      "segment_id": "84eyZLYq6ME-ja-0073"
+    },
+    {
+      "text": "大天行動という天に変わって道を行うと",
+      "start_seconds": 658.72,
+      "end_seconds": 661.959,
+      "id": "84eyZLYq6ME-display-0194",
+      "segment_id": "84eyZLYq6ME-ja-0073"
+    },
+    {
+      "text": "いう",
+      "start_seconds": 661.959,
+      "end_seconds": 664.36,
+      "id": "84eyZLYq6ME-display-0195",
+      "segment_id": "84eyZLYq6ME-ja-0074"
+    },
+    {
+      "text": "旗を掲げます。そして生さをし、それにの",
+      "start_seconds": 664.36,
+      "end_seconds": 669.6,
+      "id": "84eyZLYq6ME-display-0196",
+      "segment_id": "84eyZLYq6ME-ja-0074"
+    },
+    {
+      "text": "心志しに共鳴した地方の合結が都いうねり",
+      "start_seconds": 669.6,
+      "end_seconds": 676.519,
+      "id": "84eyZLYq6ME-display-0197",
+      "segment_id": "84eyZLYq6ME-ja-0075"
+    },
+    {
+      "text": "となって大きな形となっていきます。",
+      "start_seconds": 676.519,
+      "end_seconds": 681.48,
+      "id": "84eyZLYq6ME-display-0198",
+      "segment_id": "84eyZLYq6ME-ja-0075"
+    },
+    {
+      "text": "これを読んでいるとふと私は思うのです。",
+      "start_seconds": 681.48,
+      "end_seconds": 684.44,
+      "id": "84eyZLYq6ME-display-0199",
+      "segment_id": "84eyZLYq6ME-ja-0076"
+    },
+    {
+      "text": "企業もこれに似ているのではないかなと。",
+      "start_seconds": 684.44,
+      "end_seconds": 688.279,
+      "id": "84eyZLYq6ME-display-0200",
+      "segment_id": "84eyZLYq6ME-ja-0077"
+    },
+    {
+      "text": "最初は",
+      "start_seconds": 688.279,
+      "end_seconds": 691.079,
+      "id": "84eyZLYq6ME-display-0201",
+      "segment_id": "84eyZLYq6ME-ja-0078"
+    },
+    {
+      "text": "小さな声にしかならないかもしれない。",
+      "start_seconds": 691.079,
+      "end_seconds": 694.519,
+      "id": "84eyZLYq6ME-display-0202",
+      "segment_id": "84eyZLYq6ME-ja-0078"
+    },
+    {
+      "text": "ただそれをつが、それをつなげることで",
+      "start_seconds": 694.519,
+      "end_seconds": 697.48,
+      "id": "84eyZLYq6ME-display-0203",
+      "segment_id": "84eyZLYq6ME-ja-0079"
+    },
+    {
+      "text": "繋がり広がり、そして",
+      "start_seconds": 697.48,
+      "end_seconds": 701.32,
+      "id": "84eyZLYq6ME-display-0204",
+      "segment_id": "84eyZLYq6ME-ja-0079"
+    },
+    {
+      "text": "仲間を呼び念を形にしていく。最初は",
+      "start_seconds": 701.32,
+      "end_seconds": 705.2,
+      "id": "84eyZLYq6ME-display-0205",
+      "segment_id": "84eyZLYq6ME-ja-0079"
+    },
+    {
+      "text": "もちろん無名でも笑われるような挑戦でも",
+      "start_seconds": 705.2,
+      "end_seconds": 708.959,
+      "id": "84eyZLYq6ME-display-0206",
+      "segment_id": "84eyZLYq6ME-ja-0080"
+    },
+    {
+      "text": "その覚悟を持って信念を口にしていく、",
+      "start_seconds": 708.959,
+      "end_seconds": 712.36,
+      "id": "84eyZLYq6ME-display-0207",
+      "segment_id": "84eyZLYq6ME-ja-0080"
+    },
+    {
+      "text": "言葉にしていくことによってそれが誰かに",
+      "start_seconds": 712.36,
+      "end_seconds": 715.48,
+      "id": "84eyZLYq6ME-display-0208",
+      "segment_id": "84eyZLYq6ME-ja-0080"
+    },
+    {
+      "text": "伝わり大きな世界を描いていくのだと思い",
+      "start_seconds": 715.48,
+      "end_seconds": 718.92,
+      "id": "84eyZLYq6ME-display-0209",
+      "segment_id": "84eyZLYq6ME-ja-0081"
+    },
+    {
+      "text": "ます。挑戦のためにはその大きな心志し",
+      "start_seconds": 718.92,
+      "end_seconds": 724.6,
+      "id": "84eyZLYq6ME-display-0210",
+      "segment_id": "84eyZLYq6ME-ja-0081"
+    },
+    {
+      "text": "アイデンティティを口に出していくべきだ",
+      "start_seconds": 724.6,
+      "end_seconds": 727.24,
+      "id": "84eyZLYq6ME-display-0211",
+      "segment_id": "84eyZLYq6ME-ja-0081"
+    },
+    {
+      "text": "と思います。それこそがアイデンティティ",
+      "start_seconds": 727.24,
+      "end_seconds": 731.0,
+      "id": "84eyZLYq6ME-display-0212",
+      "segment_id": "84eyZLYq6ME-ja-0082"
+    },
+    {
+      "text": "が事故の個人にとまるものではなく社会に",
+      "start_seconds": 731.0,
+      "end_seconds": 734.56,
+      "id": "84eyZLYq6ME-display-0213",
+      "segment_id": "84eyZLYq6ME-ja-0082"
+    },
+    {
+      "text": "溶け出していくプロセスなんだと思います",
+      "start_seconds": 734.56,
+      "end_seconds": 736.639,
+      "id": "84eyZLYq6ME-display-0214",
+      "segment_id": "84eyZLYq6ME-ja-0082"
+    },
+    {
+      "text": "。",
+      "start_seconds": 736.639,
+      "end_seconds": 739.12,
+      "id": "84eyZLYq6ME-display-0215",
+      "segment_id": "84eyZLYq6ME-ja-0082"
+    },
+    {
+      "text": "そして",
+      "start_seconds": 739.12,
+      "end_seconds": 740.76,
+      "id": "84eyZLYq6ME-display-0216",
+      "segment_id": "84eyZLYq6ME-ja-0083"
+    },
+    {
+      "text": "恋に出した瞬間にやがてその",
+      "start_seconds": 740.76,
+      "end_seconds": 743.72,
+      "id": "84eyZLYq6ME-display-0217",
+      "segment_id": "84eyZLYq6ME-ja-0083"
+    },
+    {
+      "text": "アイデンティティはかっこたるものとして",
+      "start_seconds": 743.72,
+      "end_seconds": 745.68,
+      "id": "84eyZLYq6ME-display-0218",
+      "segment_id": "84eyZLYq6ME-ja-0083"
+    },
+    {
+      "text": "確立していくのだと思います。",
+      "start_seconds": 745.68,
+      "end_seconds": 748.959,
+      "id": "84eyZLYq6ME-display-0219",
+      "segment_id": "84eyZLYq6ME-ja-0083"
+    },
+    {
+      "text": "私は会社のvalリューとして才能の集中",
+      "start_seconds": 748.959,
+      "end_seconds": 752.04,
+      "id": "84eyZLYq6ME-display-0220",
+      "segment_id": "84eyZLYq6ME-ja-0084"
+    },
+    {
+      "text": "と爆発というものを置いてます。これは",
+      "start_seconds": 752.04,
+      "end_seconds": 755.839,
+      "id": "84eyZLYq6ME-display-0221",
+      "segment_id": "84eyZLYq6ME-ja-0084"
+    },
+    {
+      "text": "何かと言うと誰しもが才能があると思って",
+      "start_seconds": 755.839,
+      "end_seconds": 759.079,
+      "id": "84eyZLYq6ME-display-0222",
+      "segment_id": "84eyZLYq6ME-ja-0084"
+    },
+    {
+      "text": "います。",
+      "start_seconds": 759.079,
+      "end_seconds": 760.88,
+      "id": "84eyZLYq6ME-display-0223",
+      "segment_id": "84eyZLYq6ME-ja-0084"
+    },
+    {
+      "text": "そのただその才能はほっておいても爆発は",
+      "start_seconds": 760.88,
+      "end_seconds": 764.519,
+      "id": "84eyZLYq6ME-display-0224",
+      "segment_id": "84eyZLYq6ME-ja-0085"
+    },
+    {
+      "text": "しませんし開花もしません。",
+      "start_seconds": 764.519,
+      "end_seconds": 767.56,
+      "id": "84eyZLYq6ME-display-0225",
+      "segment_id": "84eyZLYq6ME-ja-0085"
+    },
+    {
+      "text": "決して覚めない情熱を持って行動を",
+      "start_seconds": 767.56,
+      "end_seconds": 771.24,
+      "id": "84eyZLYq6ME-display-0226",
+      "segment_id": "84eyZLYq6ME-ja-0086"
+    },
+    {
+      "text": "繰り返し",
+      "start_seconds": 771.24,
+      "end_seconds": 773.24,
+      "id": "84eyZLYq6ME-display-0227",
+      "segment_id": "84eyZLYq6ME-ja-0086"
+    },
+    {
+      "text": "集中することによって自分では想像もでき",
+      "start_seconds": 773.24,
+      "end_seconds": 776.6,
+      "id": "84eyZLYq6ME-display-0228",
+      "segment_id": "84eyZLYq6ME-ja-0086"
+    },
+    {
+      "text": "ないような",
+      "start_seconds": 776.6,
+      "end_seconds": 778.6,
+      "id": "84eyZLYq6ME-display-0229",
+      "segment_id": "84eyZLYq6ME-ja-0086"
+    },
+    {
+      "text": "大きな爆発として才能が開化するのだと",
+      "start_seconds": 778.6,
+      "end_seconds": 781.48,
+      "id": "84eyZLYq6ME-display-0230",
+      "segment_id": "84eyZLYq6ME-ja-0087"
+    },
+    {
+      "text": "思います。",
+      "start_seconds": 781.48,
+      "end_seconds": 783.36,
+      "id": "84eyZLYq6ME-display-0231",
+      "segment_id": "84eyZLYq6ME-ja-0087"
+    },
+    {
+      "text": "これも信念を口にし伝えそして集中して",
+      "start_seconds": 783.36,
+      "end_seconds": 788.6,
+      "id": "84eyZLYq6ME-display-0232",
+      "segment_id": "84eyZLYq6ME-ja-0088"
+    },
+    {
+      "text": "いくことが1つ欠かせないものとなって",
+      "start_seconds": 788.6,
+      "end_seconds": 790.68,
+      "id": "84eyZLYq6ME-display-0233",
+      "segment_id": "84eyZLYq6ME-ja-0088"
+    },
+    {
+      "text": "おります。また今僕はここに多分今ここに",
+      "start_seconds": 790.68,
+      "end_seconds": 795.32,
+      "id": "84eyZLYq6ME-display-0234",
+      "segment_id": "84eyZLYq6ME-ja-0088"
+    },
+    {
+      "text": "見てくださっている皆さんとあまり年齢が",
+      "start_seconds": 795.32,
+      "end_seconds": 797.839,
+      "id": "84eyZLYq6ME-display-0235",
+      "segment_id": "84eyZLYq6ME-ja-0089"
+    },
+    {
+      "text": "変わらないにも関わらず大きな顔をして今",
+      "start_seconds": 797.839,
+      "end_seconds": 801.44,
+      "id": "84eyZLYq6ME-display-0236",
+      "segment_id": "84eyZLYq6ME-ja-0089"
+    },
+    {
+      "text": "た前に立っています。ただ私自身もまだ何",
+      "start_seconds": 801.44,
+      "end_seconds": 804.839,
+      "id": "84eyZLYq6ME-display-0237",
+      "segment_id": "84eyZLYq6ME-ja-0089"
+    },
+    {
+      "text": "も成し遂げていないし成功もしていない。",
+      "start_seconds": 804.839,
+      "end_seconds": 807.16,
+      "id": "84eyZLYq6ME-display-0238",
+      "segment_id": "84eyZLYq6ME-ja-0089"
+    },
+    {
+      "text": "だからここでアイデンティティの確立をし",
+      "start_seconds": 807.16,
+      "end_seconds": 809.399,
+      "id": "84eyZLYq6ME-display-0239",
+      "segment_id": "84eyZLYq6ME-ja-0090"
+    },
+    {
+      "text": "たいと思っております。",
+      "start_seconds": 809.399,
+      "end_seconds": 812.199,
+      "id": "84eyZLYq6ME-display-0240",
+      "segment_id": "84eyZLYq6ME-ja-0090"
+    },
+    {
+      "text": "ここ数十年でインターネットが出てき、",
+      "start_seconds": 812.199,
+      "end_seconds": 815.12,
+      "id": "84eyZLYq6ME-display-0241",
+      "segment_id": "84eyZLYq6ME-ja-0091"
+    },
+    {
+      "text": "ソーシャルネットワークが出て、クラウド",
+      "start_seconds": 815.12,
+      "end_seconds": 817.079,
+      "id": "84eyZLYq6ME-display-0242",
+      "segment_id": "84eyZLYq6ME-ja-0091"
+    },
+    {
+      "text": "が出てAIが出た。今後数十年で見たとし",
+      "start_seconds": 817.079,
+      "end_seconds": 821.0,
+      "id": "84eyZLYq6ME-display-0243",
+      "segment_id": "84eyZLYq6ME-ja-0091"
+    },
+    {
+      "text": "ても、新しい技術確信は絶対に起こると",
+      "start_seconds": 821.0,
+      "end_seconds": 824.959,
+      "id": "84eyZLYq6ME-display-0244",
+      "segment_id": "84eyZLYq6ME-ja-0092"
+    },
+    {
+      "text": "思っています。それによって技術の基盤は",
+      "start_seconds": 824.959,
+      "end_seconds": 829.24,
+      "id": "84eyZLYq6ME-display-0245",
+      "segment_id": "84eyZLYq6ME-ja-0092"
+    },
+    {
+      "text": "変わり、社会は変わる。価値観も変わって",
+      "start_seconds": 829.24,
+      "end_seconds": 832.36,
+      "id": "84eyZLYq6ME-display-0246",
+      "segment_id": "84eyZLYq6ME-ja-0092"
+    },
+    {
+      "text": "いき、働き方や生き方も変わっていく。",
+      "start_seconds": 832.36,
+      "end_seconds": 837.0,
+      "id": "84eyZLYq6ME-display-0247",
+      "segment_id": "84eyZLYq6ME-ja-0093"
+    },
+    {
+      "text": "ただそんな中で",
+      "start_seconds": 837.0,
+      "end_seconds": 839.72,
+      "id": "84eyZLYq6ME-display-0248",
+      "segment_id": "84eyZLYq6ME-ja-0094"
+    },
+    {
+      "text": "それでも信じる存在、信じられるべき存在",
+      "start_seconds": 839.72,
+      "end_seconds": 843.04,
+      "id": "84eyZLYq6ME-display-0249",
+      "segment_id": "84eyZLYq6ME-ja-0094"
+    },
+    {
+      "text": "となっていくことが僕らの信念としては",
+      "start_seconds": 843.04,
+      "end_seconds": 846.079,
+      "id": "84eyZLYq6ME-display-0250",
+      "segment_id": "84eyZLYq6ME-ja-0094"
+    },
+    {
+      "text": "あります。新しい技術、新しい組織、",
+      "start_seconds": 846.079,
+      "end_seconds": 850.399,
+      "id": "84eyZLYq6ME-display-0251",
+      "segment_id": "84eyZLYq6ME-ja-0095"
+    },
+    {
+      "text": "面白いどでかい技術や組織に対して信頼を",
+      "start_seconds": 850.399,
+      "end_seconds": 853.959,
+      "id": "84eyZLYq6ME-display-0252",
+      "segment_id": "84eyZLYq6ME-ja-0095"
+    },
+    {
+      "text": "構築していく。それこそが私たちのできる",
+      "start_seconds": 853.959,
+      "end_seconds": 857.399,
+      "id": "84eyZLYq6ME-display-0253",
+      "segment_id": "84eyZLYq6ME-ja-0095"
+    },
+    {
+      "text": "ことなんだと思います。AIにおいても",
+      "start_seconds": 857.399,
+      "end_seconds": 860.72,
+      "id": "84eyZLYq6ME-display-0254",
+      "segment_id": "84eyZLYq6ME-ja-0096"
+    },
+    {
+      "text": "人間の倫理においても私たちは",
+      "start_seconds": 860.72,
+      "end_seconds": 863.0,
+      "id": "84eyZLYq6ME-display-0255",
+      "segment_id": "84eyZLYq6ME-ja-0096"
+    },
+    {
+      "text": "セキュリティという観点で信頼を作り上げ",
+      "start_seconds": 863.0,
+      "end_seconds": 865.72,
+      "id": "84eyZLYq6ME-display-0256",
+      "segment_id": "84eyZLYq6ME-ja-0096"
+    },
+    {
+      "text": "ていくそういったような存在になっていき",
+      "start_seconds": 865.72,
+      "end_seconds": 867.839,
+      "id": "84eyZLYq6ME-display-0257",
+      "segment_id": "84eyZLYq6ME-ja-0096"
+    },
+    {
+      "text": "ます。また先ほどあげたような一等や地図",
+      "start_seconds": 867.839,
+      "end_seconds": 872.839,
+      "id": "84eyZLYq6ME-display-0258",
+      "segment_id": "84eyZLYq6ME-ja-0097"
+    },
+    {
+      "text": "のように僕ら僕らの会社かつ僕自身が誰か",
+      "start_seconds": 872.839,
+      "end_seconds": 878.199,
+      "id": "84eyZLYq6ME-display-0259",
+      "segment_id": "84eyZLYq6ME-ja-0097"
+    },
+    {
+      "text": "にとっての一等となり誰かにとっての地図",
+      "start_seconds": 878.199,
+      "end_seconds": 881.72,
+      "id": "84eyZLYq6ME-display-0260",
+      "segment_id": "84eyZLYq6ME-ja-0098"
+    },
+    {
+      "text": "となるそういった存在になる。そういう風",
+      "start_seconds": 881.72,
+      "end_seconds": 886.199,
+      "id": "84eyZLYq6ME-display-0261",
+      "segment_id": "84eyZLYq6ME-ja-0098"
+    },
+    {
+      "text": "に考えております。",
+      "start_seconds": 886.199,
+      "end_seconds": 890.24,
+      "id": "84eyZLYq6ME-display-0262",
+      "segment_id": "84eyZLYq6ME-ja-0099"
+    },
+    {
+      "text": "そしてこの一等につが繋がることによって",
+      "start_seconds": 890.36,
+      "end_seconds": 895.32,
+      "id": "84eyZLYq6ME-display-0263",
+      "segment_id": "84eyZLYq6ME-ja-0100"
+    },
+    {
+      "text": "人が集まりそしてうりとなり大きな会社",
+      "start_seconds": 895.32,
+      "end_seconds": 900.44,
+      "id": "84eyZLYq6ME-display-0264",
+      "segment_id": "84eyZLYq6ME-ja-0100"
+    },
+    {
+      "text": "長く続く会社を作り上げていくのだと思っ",
+      "start_seconds": 900.44,
+      "end_seconds": 903.079,
+      "id": "84eyZLYq6ME-display-0265",
+      "segment_id": "84eyZLYq6ME-ja-0101"
+    },
+    {
+      "text": "ております。最後に、え、今ここに来て",
+      "start_seconds": 903.079,
+      "end_seconds": 907.279,
+      "id": "84eyZLYq6ME-display-0266",
+      "segment_id": "84eyZLYq6ME-ja-0101"
+    },
+    {
+      "text": "いる方に伝えたいことがあります。もし今",
+      "start_seconds": 907.279,
+      "end_seconds": 912.16,
+      "id": "84eyZLYq6ME-display-0267",
+      "segment_id": "84eyZLYq6ME-ja-0101"
+    },
+    {
+      "text": "僕のお話を聞いて自分の中にも何か信じる",
+      "start_seconds": 912.16,
+      "end_seconds": 916.639,
+      "id": "84eyZLYq6ME-display-0268",
+      "segment_id": "84eyZLYq6ME-ja-0102"
+    },
+    {
+      "text": "光があるなともし感じられた方がいるので",
+      "start_seconds": 916.639,
+      "end_seconds": 920.519,
+      "id": "84eyZLYq6ME-display-0269",
+      "segment_id": "84eyZLYq6ME-ja-0102"
+    },
+    {
+      "text": "あればその光を信じてほしい。もちろん",
+      "start_seconds": 920.519,
+      "end_seconds": 925.399,
+      "id": "84eyZLYq6ME-display-0270",
+      "segment_id": "84eyZLYq6ME-ja-0103"
+    },
+    {
+      "text": "間違ってるかもしれない。ただその信じる",
+      "start_seconds": 925.399,
+      "end_seconds": 928.68,
+      "id": "84eyZLYq6ME-display-0271",
+      "segment_id": "84eyZLYq6ME-ja-0103"
+    },
+    {
+      "text": "光を信じ抜いて歩いていけば霧はいつか",
+      "start_seconds": 928.68,
+      "end_seconds": 932.56,
+      "id": "84eyZLYq6ME-display-0272",
+      "segment_id": "84eyZLYq6ME-ja-0104"
+    },
+    {
+      "text": "晴れそして大きな世界が広がってくる。",
+      "start_seconds": 932.56,
+      "end_seconds": 936.24,
+      "id": "84eyZLYq6ME-display-0273",
+      "segment_id": "84eyZLYq6ME-ja-0104"
+    },
+    {
+      "text": "またその先には暗闇みがあるのかもしれ",
+      "start_seconds": 936.24,
+      "end_seconds": 940.319,
+      "id": "84eyZLYq6ME-display-0274",
+      "segment_id": "84eyZLYq6ME-ja-0105"
+    },
+    {
+      "text": "ない。おそらく今後人生を生きていくと僕",
+      "start_seconds": 940.319,
+      "end_seconds": 943.56,
+      "id": "84eyZLYq6ME-display-0275",
+      "segment_id": "84eyZLYq6ME-ja-0105"
+    },
+    {
+      "text": "もですが不安や恐怖や焦りや嫉妬といった",
+      "start_seconds": 943.56,
+      "end_seconds": 949.24,
+      "id": "84eyZLYq6ME-display-0276",
+      "segment_id": "84eyZLYq6ME-ja-0106"
+    },
+    {
+      "text": "打算や外伝に飲み込まれそうになることも",
+      "start_seconds": 949.24,
+      "end_seconds": 952.279,
+      "id": "84eyZLYq6ME-display-0277",
+      "segment_id": "84eyZLYq6ME-ja-0106"
+    },
+    {
+      "text": "あると思います。そういった時にその自分",
+      "start_seconds": 952.279,
+      "end_seconds": 955.72,
+      "id": "84eyZLYq6ME-display-0278",
+      "segment_id": "84eyZLYq6ME-ja-0107"
+    },
+    {
+      "text": "の信じる信じている明りや地図を持って",
+      "start_seconds": 955.72,
+      "end_seconds": 961.199,
+      "id": "84eyZLYq6ME-display-0279",
+      "segment_id": "84eyZLYq6ME-ja-0107"
+    },
+    {
+      "text": "飲み込んでみてください。それこそが僕が",
+      "start_seconds": 961.199,
+      "end_seconds": 964.68,
+      "id": "84eyZLYq6ME-display-0280",
+      "segment_id": "84eyZLYq6ME-ja-0108"
+    },
+    {
+      "text": "思うに人生の醍醐みであり生き",
+      "start_seconds": 964.68,
+      "end_seconds": 968.0,
+      "id": "84eyZLYq6ME-display-0281",
+      "segment_id": "84eyZLYq6ME-ja-0108"
+    },
+    {
+      "text": "るっていうことなんだと思っております。",
+      "start_seconds": 968.0,
+      "end_seconds": 971.04,
+      "id": "84eyZLYq6ME-display-0282",
+      "segment_id": "84eyZLYq6ME-ja-0108"
+    },
+    {
+      "text": "そしてその光はやがて誰かにとっての明り",
+      "start_seconds": 971.04,
+      "end_seconds": 975.92,
+      "id": "84eyZLYq6ME-display-0283",
+      "segment_id": "84eyZLYq6ME-ja-0109"
+    },
+    {
+      "text": "となり、そしてそれがこのテーマにある",
+      "start_seconds": 975.92,
+      "end_seconds": 980.04,
+      "id": "84eyZLYq6ME-display-0284",
+      "segment_id": "84eyZLYq6ME-ja-0109"
+    },
+    {
+      "text": "ように起動となっていき、そして星となっ",
+      "start_seconds": 980.04,
+      "end_seconds": 984.12,
+      "id": "84eyZLYq6ME-display-0285",
+      "segment_id": "84eyZLYq6ME-ja-0110"
+    },
+    {
+      "text": "ていく。そういう風に考えています。",
+      "start_seconds": 984.12,
+      "end_seconds": 987.56,
+      "id": "84eyZLYq6ME-display-0286",
+      "segment_id": "84eyZLYq6ME-ja-0110"
+    },
+    {
+      "text": "それこそが私が信じている",
+      "start_seconds": 987.56,
+      "end_seconds": 990.16,
+      "id": "84eyZLYq6ME-display-0287",
+      "segment_id": "84eyZLYq6ME-ja-0111"
+    },
+    {
+      "text": "アイデンティティの力であり、この",
+      "start_seconds": 990.16,
+      "end_seconds": 992.6,
+      "id": "84eyZLYq6ME-display-0288",
+      "segment_id": "84eyZLYq6ME-ja-0111"
+    },
+    {
+      "text": "テックスICUという場でお伝えしたかっ",
+      "start_seconds": 992.6,
+      "end_seconds": 996.16,
+      "id": "84eyZLYq6ME-display-0289",
+      "segment_id": "84eyZLYq6ME-ja-0111"
+    },
+    {
+      "text": "たことです。本日はこのような機会を",
+      "start_seconds": 996.16,
+      "end_seconds": 999.079,
+      "id": "84eyZLYq6ME-display-0290",
+      "segment_id": "84eyZLYq6ME-ja-0111"
+    },
+    {
+      "text": "いただきありがとうございました。",
+      "start_seconds": 999.079,
+      "end_seconds": 1002.161,
+      "id": "84eyZLYq6ME-display-0291",
+      "segment_id": "84eyZLYq6ME-ja-0112"
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 1002.161,
+      "end_seconds": 1004.1809999999999,
+      "id": "84eyZLYq6ME-display-0292",
+      "segment_id": "84eyZLYq6ME-ja-0113"
+    }
+  ]
+}

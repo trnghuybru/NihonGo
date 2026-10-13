@@ -6,6 +6,48 @@ type IconProps = {
   strokeWidth?: number;
 };
 
+export function AIIcon({
+  size = 20,
+  color = '#75777D',
+  strokeWidth = 1.7,
+}: IconProps) {
+  return (
+    <Svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      accessible={false}
+    >
+      <Path
+        d="m2 19 4-11 4 11M3.5 15h5M13 8v11M11.5 8h3M11.5 19h3M19 2l1.2 3.8L24 7l-3.8 1.2L19 12l-1.2-3.8L14 7l3.8-1.2Z"
+        {...stroke(color, strokeWidth)}
+      />
+    </Svg>
+  );
+}
+
+export function TranslateIcon({
+  size = 20,
+  color = '#75777D',
+  strokeWidth = 1.7,
+}: IconProps) {
+  return (
+    <Svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      accessible={false}
+    >
+      <Path
+        d="M2 5h12M7 2v3M11 5c-1 5-4 8-8 10M4 8c1 3 4 5 7 7M12 22l5-11 5 11M14 18h6"
+        {...stroke(color, strokeWidth)}
+      />
+    </Svg>
+  );
+}
+
 export function TrashIcon({
   size = 20,
   color = '#75777D',

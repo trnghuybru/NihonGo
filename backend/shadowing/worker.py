@@ -19,6 +19,7 @@ from .morphology import analyze
 from .processor import display_captions, attach_practice_segments
 from .queue import client, enqueue, queue_url
 from .service import ACTIVE
+from .translation import dispatch_translations, process_translation
 
 logger = logging.getLogger(__name__)
 MAX_ATTEMPTS = 3
@@ -127,13 +128,17 @@ def main():
         try:
             with app.app_context():
                 dispatch_pending()
+                dispatch_translations()
                 connection = client()
                 url = queue_url(connection)
                 response = connection.receive_message(QueueUrl=url, MaxNumberOfMessages=1,
                     WaitTimeSeconds=10, VisibilityTimeout=int(os.getenv('SHADOWING_JOB_TIMEOUT', '2400')) + 60)
                 for message in response.get('Messages', []):
                     payload = json.loads(message['Body'])
-                    process_job(payload['job_id'])
+                    if payload.get('kind') == 'translation':
+                        process_translation(payload['job_id'])
+                    else:
+                        process_job(payload['job_id'])
                     connection.delete_message(QueueUrl=url, ReceiptHandle=message['ReceiptHandle'])
         except KeyboardInterrupt:
             return

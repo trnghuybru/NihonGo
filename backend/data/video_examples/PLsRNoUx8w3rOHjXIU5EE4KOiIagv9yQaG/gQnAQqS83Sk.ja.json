@@ -1,0 +1,3756 @@
+{
+  "schema_version": 1,
+  "video": {
+    "youtube_id": "gQnAQqS83Sk",
+    "title": "Statistics that don't lead to happiness: Why Average Cannot Explain Your Life | TETSUYA INAGAKI |...",
+    "channel": "TEDx Talks",
+    "duration_seconds": 782
+  },
+  "caption_track": {
+    "language": "ja",
+    "kind": "asr",
+    "source": "youtube_automatic"
+  },
+  "source_playlist": "https://www.youtube.com/playlist?list=PLsRNoUx8w3rOHjXIU5EE4KOiIagv9yQaG",
+  "fetched_at": "2026-10-13T13:24:31.211357+00:00",
+  "segment_count": 91,
+  "segments": [
+    {
+      "text": "[音楽]",
+      "start_seconds": 3.274,
+      "end_seconds": 5.2940000000000005,
+      "id": "gQnAQqS83Sk-ja-0001",
+      "sequence": 1
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 7.86,
+      "end_seconds": 9.88,
+      "id": "gQnAQqS83Sk-ja-0002",
+      "sequence": 2
+    },
+    {
+      "text": "今私たち[笑い]はたくさんの言葉に囲まれて生きています。SNSを開くと成功の法則、そして幸せそうな写真。そして最近では生成系KAIが作った言葉もどんどん",
+      "start_seconds": 10.519,
+      "end_seconds": 21.56,
+      "id": "gQnAQqS83Sk-ja-0003",
+      "sequence": 3
+    },
+    {
+      "text": "流れてきます。こういった言葉を見ているとふと疑問に思うことがあります。人生の正解とは私は文行データというものを統計を使って",
+      "start_seconds": 21.56,
+      "end_seconds": 33.36,
+      "id": "gQnAQqS83Sk-ja-0004",
+      "sequence": 4
+    },
+    {
+      "text": "解析するという研究をしています。つまり物事を統計を使って理解しようとしている研究者です。ですから本日はこの問題について統計という視点から考えてみたいと",
+      "start_seconds": 33.36,
+      "end_seconds": 43.68,
+      "id": "gQnAQqS83Sk-ja-0005",
+      "sequence": 5
+    },
+    {
+      "text": "思います。",
+      "start_seconds": 43.68,
+      "end_seconds": 45.52,
+      "id": "gQnAQqS83Sk-ja-0006",
+      "sequence": 6
+    },
+    {
+      "text": "現代社会は統計に覆われています。科学技術も政治の世論調査も全て統計に基づいています。つまり統計は世界を理解する",
+      "start_seconds": 45.52,
+      "end_seconds": 55.6,
+      "id": "gQnAQqS83Sk-ja-0007",
+      "sequence": 7
+    },
+    {
+      "text": "ための枠組です。統計には様々な考え方がありますけども、本日はこの3つ頻度主義統計、因ガ論、そして真層学習中について",
+      "start_seconds": 55.6,
+      "end_seconds": 65.92,
+      "id": "gQnAQqS83Sk-ja-0008",
+      "sequence": 8
+    },
+    {
+      "text": "簡単にご紹介したいと思います。まず頻度主義統計です。一般的に統計といった場合はこの頻度主義統計を指す場合が多いです。ただ頻度主義統計にはとても面白い前提",
+      "start_seconds": 65.92,
+      "end_seconds": 77.72,
+      "id": "gQnAQqS83Sk-ja-0009",
+      "sequence": 9
+    },
+    {
+      "text": "があるんです。それがキ務仮説。仮説では差がないという前提から検証始めます。",
+      "start_seconds": 77.72,
+      "end_seconds": 86.04,
+      "id": "gQnAQqS83Sk-ja-0010",
+      "sequence": 10
+    },
+    {
+      "text": "普通研究と言うと何か差があるに違いないと思って研究始めますよね。でもキ務仮説逆なんです。きっと差がない。きっと何も来てない。そういった前提をもにデータを",
+      "start_seconds": 86.04,
+      "end_seconds": 96.28,
+      "id": "gQnAQqS83Sk-ja-0011",
+      "sequence": 11
+    },
+    {
+      "text": "眺めていきます。",
+      "start_seconds": 96.28,
+      "end_seconds": 98.759,
+      "id": "gQnAQqS83Sk-ja-0012",
+      "sequence": 12
+    },
+    {
+      "text": "さてこの観点で見ると大学生がやるような卒論テーマって少しポジティブすぎるんです。例えばこういったテーマあるとし",
+      "start_seconds": 98.759,
+      "end_seconds": 107.32,
+      "id": "gQnAQqS83Sk-ja-0013",
+      "sequence": 13
+    },
+    {
+      "text": "ます。名古屋U2026参加が将来の幸福に及ぼす影響について皆さんこの卒論テーマ与えられるとあがあるなと思って",
+      "start_seconds": 107.32,
+      "end_seconds": 118.24,
+      "id": "gQnAQqS83Sk-ja-0014",
+      "sequence": 14
+    },
+    {
+      "text": "研究始めてしまいますよね。でも頻度主義統計そんなに楽観的ではないんです。頻度主義統計キ務仮説を厳密に設定するので",
+      "start_seconds": 118.24,
+      "end_seconds": 127.759,
+      "id": "gQnAQqS83Sk-ja-0015",
+      "sequence": 15
+    },
+    {
+      "text": "あれば論トルはこうでなくてはいけません。Zデックス名古屋2026に参加しても将来の幸福には多分何も影響しない件に",
+      "start_seconds": 127.759,
+      "end_seconds": 137.2,
+      "id": "gQnAQqS83Sk-ja-0016",
+      "sequence": 16
+    },
+    {
+      "text": "ついてこの卒論テーマ全然やりたくなくなります。でもこれが頻度主義統計の前提なんです。でもちょっと考えるとこうも",
+      "start_seconds": 137.2,
+      "end_seconds": 148.12,
+      "id": "gQnAQqS83Sk-ja-0017",
+      "sequence": 17
+    },
+    {
+      "text": "思います。論タイトルが変わっても実験結果は変わらないのではとも我々は知識や期待によって見え方が変わってしまうん",
+      "start_seconds": 148.12,
+      "end_seconds": 158.08,
+      "id": "gQnAQqS83Sk-ja-0018",
+      "sequence": 18
+    },
+    {
+      "text": "です。この思い込みによる誤差のことは系統誤差の一種を出します。思い込みによって観察結果変わってしまうかもしれ",
+      "start_seconds": 158.08,
+      "end_seconds": 166.879,
+      "id": "gQnAQqS83Sk-ja-0019",
+      "sequence": 19
+    },
+    {
+      "text": "ません。でもやっぱり我々いや自分だけはそんなミスはしないと思ってしまう。では1つ実験をしてみましょう。左と右に2本の赤い棒があります。どちらが長い",
+      "start_seconds": 166.879,
+      "end_seconds": 177.68,
+      "id": "gQnAQqS83Sk-ja-0020",
+      "sequence": 20
+    },
+    {
+      "text": "でしょうか?",
+      "start_seconds": 177.68,
+      "end_seconds": 180.12,
+      "id": "gQnAQqS83Sk-ja-0021",
+      "sequence": 21
+    },
+    {
+      "text": "左の方が長く見えますよね。",
+      "start_seconds": 180.12,
+      "end_seconds": 183.72,
+      "id": "gQnAQqS83Sk-ja-0022",
+      "sequence": 22
+    },
+    {
+      "text": "でもここで鋭い皆さん、特に今ニヤっとされてる方、こう思ったかもしれません。あ、こいつごさな話してるな。その後にこの字出した",
+      "start_seconds": 183.72,
+      "end_seconds": 193.159,
+      "id": "gQnAQqS83Sk-ja-0023",
+      "sequence": 23
+    },
+    {
+      "text": "な。知ってるこれ錯覚でしょうと。そう思った方に非常に申し訳ないですけども、これ本当に左を少し長くしてあるんです。",
+      "start_seconds": 193.159,
+      "end_seconds": 202.959,
+      "id": "gQnAQqS83Sk-ja-0024",
+      "sequence": 24
+    },
+    {
+      "text": "意地悪の私に騙された方がいたらその方は左の方が長く見えたにも関わらず錯覚という知識のせいであ、同じ長さかもと思ってしまった。つまり皆さんは錯覚に騙され",
+      "start_seconds": 202.959,
+      "end_seconds": 214.56,
+      "id": "gQnAQqS83Sk-ja-0025",
+      "sequence": 25
+    },
+    {
+      "text": "たのではなくて知識に騙されたんです。では同じ長さの場合も見ておきましょう。",
+      "start_seconds": 214.56,
+      "end_seconds": 219.72,
+      "id": "gQnAQqS83Sk-ja-0026",
+      "sequence": 26
+    },
+    {
+      "text": "同じ長さでもやはり左の方が長く見える。",
+      "start_seconds": 219.72,
+      "end_seconds": 223.4,
+      "id": "gQnAQqS83Sk-ja-0027",
+      "sequence": 27
+    },
+    {
+      "text": "これが錯覚です。錯覚だけではなくて知識も誤差の元になります。我々知らないから誤差が生じるのではなくて知ってるからこそ誤差が生じる場合もあります。",
+      "start_seconds": 223.4,
+      "end_seconds": 234.28,
+      "id": "gQnAQqS83Sk-ja-0028",
+      "sequence": 28
+    },
+    {
+      "text": "もちろん科学は1つの観察データだけで結論を導き出すということはしません。",
+      "start_seconds": 234.28,
+      "end_seconds": 240.72,
+      "id": "gQnAQqS83Sk-ja-0029",
+      "sequence": 29
+    },
+    {
+      "text": "たくさんのデータを集めて一般的なルールを見つけようとします。こうした考え方は機能法と呼ばれる考え方につがります。",
+      "start_seconds": 240.72,
+      "end_seconds": 249.36,
+      "id": "gQnAQqS83Sk-ja-0030",
+      "sequence": 30
+    },
+    {
+      "text": "機能法というのは何度も現象を観察してきっとこういう法則があるだろうと推定するものです。そこで哲学者のヘンペルは",
+      "start_seconds": 249.36,
+      "end_seconds": 259.759,
+      "id": "gQnAQqS83Sk-ja-0031",
+      "sequence": 31
+    },
+    {
+      "text": "少し奇妙なことを思いついたんです。",
+      "start_seconds": 259.759,
+      "end_seconds": 262.0,
+      "id": "gQnAQqS83Sk-ja-0032",
+      "sequence": 32
+    },
+    {
+      "text": "ヘンペルが考えたことはこうです。カラスは黒い。論理的にはこれと同じ意味のある明題があります。それは黒くないものは",
+      "start_seconds": 262.0,
+      "end_seconds": 270.56,
+      "id": "gQnAQqS83Sk-ja-0033",
+      "sequence": 33
+    },
+    {
+      "text": "カラスではない。そして日の方にはもう1つ重要な考え方があります。それが格勝性の原理と呼ばれるものです。この仮説を",
+      "start_seconds": 270.56,
+      "end_seconds": 280.68,
+      "id": "gQnAQqS83Sk-ja-0034",
+      "sequence": 34
+    },
+    {
+      "text": "指示する例がたくさん見つかれば見つかるほどその仮説は最もらしくなるというもの。つまりカラスは黒いということを証明したかったら黒いカラスをたくさん見つけてやればいいわけです。そこでヘンペル",
+      "start_seconds": 280.68,
+      "end_seconds": 291.8,
+      "id": "gQnAQqS83Sk-ja-0035",
+      "sequence": 35
+    },
+    {
+      "text": "気づいたんです。いやカラスは黒いと黒くないものはカラスじゃない。これ審議一致する。つまりどっちかが正しければ片方はもう1個正しい。必ず正しい。そして格小",
+      "start_seconds": 291.8,
+      "end_seconds": 302.199,
+      "id": "gQnAQqS83Sk-ja-0036",
+      "sequence": 36
+    },
+    {
+      "text": "線の原理がということはカラスが黒いということを証明したかったら黒くないものそしてカラスでないものをたくさん見つければ証明できるのでつまりこういう",
+      "start_seconds": 302.199,
+      "end_seconds": 311.639,
+      "id": "gQnAQqS83Sk-ja-0037",
+      "sequence": 37
+    },
+    {
+      "text": "ことです。ここに椅子がありますね。赤色です。赤色で黒くない。つまり黒くないものはカラスでないという例を1個見つけ",
+      "start_seconds": 311.639,
+      "end_seconds": 322.16,
+      "id": "gQnAQqS83Sk-ja-0038",
+      "sequence": 38
+    },
+    {
+      "text": "てしま。しかもこのホールにはたくさんある。よし、これで辛しが黒いことが証明できた。これがヘンペルのカラスと呼ばれるですよね。このヘンペルのカラスを",
+      "start_seconds": 322.16,
+      "end_seconds": 331.56,
+      "id": "gQnAQqS83Sk-ja-0039",
+      "sequence": 39
+    },
+    {
+      "text": "使うと私が野球が上手であることも証明できるんです。で、野球やったことないんですけども、めちゃくちゃ上手なんです。",
+      "start_seconds": 331.56,
+      "end_seconds": 338.639,
+      "id": "gQnAQqS83Sk-ja-0040",
+      "sequence": 40
+    },
+    {
+      "text": "なぜなら証明できるんです。私は野球が上手である。これ野球が上手でないのは私ではないということと審議が1番しかも",
+      "start_seconds": 338.639,
+      "end_seconds": 348.08,
+      "id": "gQnAQqS83Sk-ja-0041",
+      "sequence": 41
+    },
+    {
+      "text": "格小の原理がある。では早速河川河に行って小学生がやってる野球を見てみましょうね。あ、あの子当下手だな。",
+      "start_seconds": 348.08,
+      "end_seconds": 357.8,
+      "id": "gQnAQqS83Sk-ja-0042",
+      "sequence": 42
+    },
+    {
+      "text": "下手野球が下手。しかも私ではない。",
+      "start_seconds": 357.8,
+      "end_seconds": 360.56,
+      "id": "gQnAQqS83Sk-ja-0043",
+      "sequence": 43
+    },
+    {
+      "text": "つまりこれは私が野球であることの証明になるのではということです。その前に練習しろよと思いますけども、私気づいたんです。破線時期でお父さんお母さんでも",
+      "start_seconds": 360.56,
+      "end_seconds": 372.0,
+      "id": "gQnAQqS83Sk-ja-0044",
+      "sequence": 44
+    },
+    {
+      "text": "ないのに1日こうやって見てる人いましたよね。皆さんも多分想像つくと思います。",
+      "start_seconds": 372.0,
+      "end_seconds": 376.68,
+      "id": "gQnAQqS83Sk-ja-0045",
+      "sequence": 45
+    },
+    {
+      "text": "あの方多分自分の証明をしてたんですね。",
+      "start_seconds": 376.68,
+      "end_seconds": 380.8,
+      "id": "gQnAQqS83Sk-ja-0046",
+      "sequence": 46
+    },
+    {
+      "text": "多いですよね。実学者でした実は。でも実は我々SNSを開くとこれと近いことやってるかもしれません。SNSを開くとアルゴリズムがあなたが見たい情報を選ん",
+      "start_seconds": 380.8,
+      "end_seconds": 391.56,
+      "id": "gQnAQqS83Sk-ja-0047",
+      "sequence": 47
+    },
+    {
+      "text": "でくれます。するとだんだんあなたが賛成できるもの、あなたと一緒な意見だけがどんどん集まってくること。そうするとどうなるでしょう?SNS上ではあなたの",
+      "start_seconds": 391.56,
+      "end_seconds": 402.8,
+      "id": "gQnAQqS83Sk-ja-0048",
+      "sequence": 48
+    },
+    {
+      "text": "意見を証明するデータだけがだんだん集まってくることになります。これをフィルターバブルという風に。",
+      "start_seconds": 402.8,
+      "end_seconds": 411.52,
+      "id": "gQnAQqS83Sk-ja-0049",
+      "sequence": 49
+    },
+    {
+      "text": "さて、話脱出しましたけども、頻度主義統計というのは一部のデータから全体のばらつきや平均を推定するものです。では、因果が知りたくなったらどうするか?",
+      "start_seconds": 411.52,
+      "end_seconds": 422.4,
+      "id": "gQnAQqS83Sk-ja-0050",
+      "sequence": 50
+    },
+    {
+      "text": "理由を知りたくなったら、例えば今日の例で言うと、今日参加されてる皆さんの将来の幸せに及ぼす影響について知りたい場合",
+      "start_seconds": 422.4,
+      "end_seconds": 431.08,
+      "id": "gQnAQqS83Sk-ja-0051",
+      "sequence": 51
+    },
+    {
+      "text": "、これ簡単そうですよね。参加されている皆さんと今日参加されていない方で10年後に幸せを比較して皆さんの方が幸せなら",
+      "start_seconds": 431.08,
+      "end_seconds": 441.8,
+      "id": "gQnAQqS83Sk-ja-0052",
+      "sequence": 52
+    },
+    {
+      "text": "今日の効果がありそうです。でもふと立ち止まって考えてみます。そもそも今日いらしてる皆さんどういった方でしょうか",
+      "start_seconds": 441.8,
+      "end_seconds": 449.84,
+      "id": "gQnAQqS83Sk-ja-0053",
+      "sequence": 53
+    },
+    {
+      "text": "?多分少し意識の高い方ですよね。新しいことに興味があって面白そうなイベントがあったらまず来てみる。そういった方は",
+      "start_seconds": 449.84,
+      "end_seconds": 460.36,
+      "id": "gQnAQqS83Sk-ja-0054",
+      "sequence": 54
+    },
+    {
+      "text": "これからもチャレンジし続けるはずです。",
+      "start_seconds": 460.36,
+      "end_seconds": 462.52,
+      "id": "gQnAQqS83Sk-ja-0055",
+      "sequence": 55
+    },
+    {
+      "text": "10年後には新しい仕事立ち上げてるかもしれない。だからもし皆さんの方が幸せそうだったとしてもそれは今日の効果なのかそもそも皆さんが意識が高かったからな",
+      "start_seconds": 462.52,
+      "end_seconds": 473.039,
+      "id": "gQnAQqS83Sk-ja-0056",
+      "sequence": 56
+    },
+    {
+      "text": "のか実は分からないんです。これを解決するために生まれたのが因果水論です。",
+      "start_seconds": 473.039,
+      "end_seconds": 478.28,
+      "id": "gQnAQqS83Sk-ja-0057",
+      "sequence": 57
+    },
+    {
+      "text": "統計学者はこのように考えました。もし同じぐらい意識が高くてテレックスに参加された方、参加されてない方を比較できた。統計はこれを疑似的に再現する方法も",
+      "start_seconds": 478.28,
+      "end_seconds": 488.52,
+      "id": "gQnAQqS83Sk-ja-0058",
+      "sequence": 58
+    },
+    {
+      "text": "作りました。それが平均処置効果と呼ばれる。ただここで重要なのは平均という言葉です。",
+      "start_seconds": 488.52,
+      "end_seconds": 498.159,
+      "id": "gQnAQqS83Sk-ja-0059",
+      "sequence": 59
+    },
+    {
+      "text": "因論が教えてくれるのは参加されてる皆さんの平均的な効果。これは統計的には極めて誠実な答えだと思いますけども、",
+      "start_seconds": 498.159,
+      "end_seconds": 508.28,
+      "id": "gQnAQqS83Sk-ja-0060",
+      "sequence": 60
+    },
+    {
+      "text": "それをそのまま皆さんの人生に当てはめることというのはできません。なぜならあなたの人生は平均ではないからです。",
+      "start_seconds": 508.28,
+      "end_seconds": 516.159,
+      "id": "gQnAQqS83Sk-ja-0061",
+      "sequence": 61
+    },
+    {
+      "text": "ですが、この限界を受け入れたまま極限まで予測だけを高めた技術があります。",
+      "start_seconds": 516.159,
+      "end_seconds": 521.599,
+      "id": "gQnAQqS83Sk-ja-0062",
+      "sequence": 62
+    },
+    {
+      "text": "これが真層学習です。真層学習には様々なモデルがあります。画像を認識するもの、そして言語を理解する。皆様前に使っているはずです。例えばスマホの画像認識",
+      "start_seconds": 521.599,
+      "end_seconds": 533.399,
+      "id": "gQnAQqS83Sk-ja-0063",
+      "sequence": 63
+    },
+    {
+      "text": "だったりチャットでしかし真層学習というのは原因を理解しようとはしません。ただ分布を学習します。ただ予測を当てることだけに注目し",
+      "start_seconds": 533.399,
+      "end_seconds": 544.68,
+      "id": "gQnAQqS83Sk-ja-0064",
+      "sequence": 64
+    },
+    {
+      "text": "ます。そしてその分布の中ではあなたはあなたではなくてあなたに似た人として取り扱われることになります。幻層学種は",
+      "start_seconds": 544.68,
+      "end_seconds": 554.839,
+      "id": "gQnAQqS83Sk-ja-0065",
+      "sequence": 65
+    },
+    {
+      "text": "あなたに似た人を見つけることができます。あなたの年齢、趣味、行動履歴こうしたデータからあなたが次に何を買うのか、次に何を見るのか制度で予測できます。それ",
+      "start_seconds": 554.839,
+      "end_seconds": 566.399,
+      "id": "gQnAQqS83Sk-ja-0066",
+      "sequence": 66
+    },
+    {
+      "text": "は確かに便利な社会です。ですが、もしあなたに似た人が犯罪を起こしやすいグループにあると判断されたらどうでしょう?機械将来あなたは何もしてい",
+      "start_seconds": 566.399,
+      "end_seconds": 577.839,
+      "id": "gQnAQqS83Sk-ja-0067",
+      "sequence": 67
+    },
+    {
+      "text": "ないのに念のためという理由で隔離されるかもしれない。それはもうあなたが何をしたかではなくて誰に似ているかで評価される社会です。そしてもっと大事なことが",
+      "start_seconds": 577.839,
+      "end_seconds": 589.279,
+      "id": "gQnAQqS83Sk-ja-0068",
+      "sequence": 68
+    },
+    {
+      "text": "あります。",
+      "start_seconds": 589.279,
+      "end_seconds": 591.2,
+      "id": "gQnAQqS83Sk-ja-0069",
+      "sequence": 69
+    },
+    {
+      "text": "それは真層学習というのはあなたの幸せは予測できないということ。なぜならあなたの幸せというのは文婦ではなくて経験だ",
+      "start_seconds": 591.2,
+      "end_seconds": 602.2,
+      "id": "gQnAQqS83Sk-ja-0070",
+      "sequence": 70
+    },
+    {
+      "text": "からです。我々の人生は1回切りです。",
+      "start_seconds": 602.2,
+      "end_seconds": 605.68,
+      "id": "gQnAQqS83Sk-ja-0071",
+      "sequence": 71
+    },
+    {
+      "text": "つまりサンプルサイズで言うとn=1です。だから我々は我々の人生の中で実験を繰り返す。さて、私は最初にこの問いをさ",
+      "start_seconds": 605.68,
+      "end_seconds": 616.04,
+      "id": "gQnAQqS83Sk-ja-0072",
+      "sequence": 72
+    },
+    {
+      "text": "せました。この問について考えるために統計についてご紹介します。統計というのはサンプルサイズが大きなものから何かしらを見い出すものですが、我々の人生は1回切れます。では",
+      "start_seconds": 616.04,
+      "end_seconds": 626.88,
+      "id": "gQnAQqS83Sk-ja-0073",
+      "sequence": 73
+    },
+    {
+      "text": "どうやってこの問題に立ち向かうでしょうか?",
+      "start_seconds": 626.88,
+      "end_seconds": 631.44,
+      "id": "gQnAQqS83Sk-ja-0074",
+      "sequence": 74
+    },
+    {
+      "text": "両方には大きく分けて2つあります。",
+      "start_seconds": 631.44,
+      "end_seconds": 633.959,
+      "id": "gQnAQqS83Sk-ja-0075",
+      "sequence": 75
+    },
+    {
+      "text": "プッシュ型とフル型。プッシュ型というのは向こうから押し付けられる情報です。",
+      "start_seconds": 633.959,
+      "end_seconds": 641.24,
+      "id": "gQnAQqS83Sk-ja-0076",
+      "sequence": 76
+    },
+    {
+      "text": "つまり向こうからやってくるところ。",
+      "start_seconds": 641.24,
+      "end_seconds": 643.56,
+      "id": "gQnAQqS83Sk-ja-0077",
+      "sequence": 77
+    },
+    {
+      "text": "例えばSNS、例えば動画です。対面でも例えば授業がこれに対応します。同じ言葉でも私は3種類あると思います。誰かの",
+      "start_seconds": 643.56,
+      "end_seconds": 653.88,
+      "id": "gQnAQqS83Sk-ja-0078",
+      "sequence": 78
+    },
+    {
+      "text": "言葉をただコピーしていること。1度自分で考えて言い換えてることで実際に実践している言葉です。同じ言葉でもこれらは",
+      "start_seconds": 653.88,
+      "end_seconds": 665.079,
+      "id": "gQnAQqS83Sk-ja-0079",
+      "sequence": 79
+    },
+    {
+      "text": "重みが全く違います。誰が話しているのかではなくてその基準で物事を見ることが大事だと。",
+      "start_seconds": 665.079,
+      "end_seconds": 675.0,
+      "id": "gQnAQqS83Sk-ja-0080",
+      "sequence": 80
+    },
+    {
+      "text": "そして古型は立ってくる情報です。例えばチャットGPTやジェネクション例えば最強型の情報というのはサンプルサイズで",
+      "start_seconds": 675.0,
+      "end_seconds": 685.639,
+      "id": "gQnAQqS83Sk-ja-0081",
+      "sequence": 81
+    },
+    {
+      "text": "言うと1位です。大切なのはプッシュを避けることではないと思います。プッシュ型の特性を理解してスルー型を増やすこと",
+      "start_seconds": 685.639,
+      "end_seconds": 695.399,
+      "id": "gQnAQqS83Sk-ja-0082",
+      "sequence": 82
+    },
+    {
+      "text": "になります。誰の言葉を信じるか、どの情報を疑うか、どんな実験をしてみるか。",
+      "start_seconds": 695.399,
+      "end_seconds": 700.88,
+      "id": "gQnAQqS83Sk-ja-0083",
+      "sequence": 83
+    },
+    {
+      "text": "これをプッシュと古型という枠組で考えてみてください。これがきっとあなた自身の実験を繰り返す第1歩となるパです。",
+      "start_seconds": 700.88,
+      "end_seconds": 711.92,
+      "id": "gQnAQqS83Sk-ja-0084",
+      "sequence": 84
+    },
+    {
+      "text": "統計は世界を説明します。世界は分布でできています。そして世界は平均でできています。そしてSNSというフィルターを",
+      "start_seconds": 711.92,
+      "end_seconds": 721.92,
+      "id": "gQnAQqS83Sk-ja-0085",
+      "sequence": 85
+    },
+    {
+      "text": "通している世界というのはとても派手です。抵抗し続ける方法を通って幸せそうな写真。でもあなたの人生は違います。",
+      "start_seconds": 721.92,
+      "end_seconds": 733.32,
+      "id": "gQnAQqS83Sk-ja-0086",
+      "sequence": 86
+    },
+    {
+      "text": "人生は平均ではありません。そしてあなたは分布の一部なんかではありません。",
+      "start_seconds": 733.32,
+      "end_seconds": 740.0,
+      "id": "gQnAQqS83Sk-ja-0087",
+      "sequence": 87
+    },
+    {
+      "text": "あなたの人生はn=1という実験の繰り返しです。そして実験というのは大抵とてもとても地味です。どうなるか分から",
+      "start_seconds": 740.0,
+      "end_seconds": 749.279,
+      "id": "gQnAQqS83Sk-ja-0088",
+      "sequence": 88
+    },
+    {
+      "text": "ないことをやって少し失敗してまた修正してそれの繰り返しでもその人生結果そして実験結果これを受け取ることができるのは",
+      "start_seconds": 749.279,
+      "end_seconds": 759.639,
+      "id": "gQnAQqS83Sk-ja-0089",
+      "sequence": 89
+    },
+    {
+      "text": "あなただけです。",
+      "start_seconds": 759.639,
+      "end_seconds": 763.839,
+      "id": "gQnAQqS83Sk-ja-0090",
+      "sequence": 90
+    },
+    {
+      "text": "統計は世界を説明します。も人生を説明するのはあなた自身の実験だと私は思います。",
+      "start_seconds": 766.24,
+      "end_seconds": 777.959,
+      "id": "gQnAQqS83Sk-ja-0091",
+      "sequence": 91
+    }
+  ],
+  "raw_captions": [
+    {
+      "text": "[音楽]",
+      "start_seconds": 3.274,
+      "end_seconds": 5.2940000000000005
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 7.86,
+      "end_seconds": 9.88
+    },
+    {
+      "text": "今私たち[笑い]はたくさんの言葉に囲ま",
+      "start_seconds": 10.519,
+      "end_seconds": 15.719000000000001
+    },
+    {
+      "text": "れて生きています。SNSを開くと成功の",
+      "start_seconds": 12.84,
+      "end_seconds": 19.08
+    },
+    {
+      "text": "法則、そして幸せそうな写真。そして最近",
+      "start_seconds": 15.719,
+      "end_seconds": 21.56
+    },
+    {
+      "text": "では生成系KAIが作った言葉もどんどん",
+      "start_seconds": 19.08,
+      "end_seconds": 24.0
+    },
+    {
+      "text": "流れてきます。こういった言葉を見ている",
+      "start_seconds": 21.56,
+      "end_seconds": 27.759999999999998
+    },
+    {
+      "text": "とふと疑問に思うことがあります。人生の",
+      "start_seconds": 24.0,
+      "end_seconds": 30.519
+    },
+    {
+      "text": "正解とは",
+      "start_seconds": 27.76,
+      "end_seconds": 33.36
+    },
+    {
+      "text": "私は文行データというものを統計を使って",
+      "start_seconds": 30.519,
+      "end_seconds": 35.36
+    },
+    {
+      "text": "解析するという研究をしています。つまり",
+      "start_seconds": 33.36,
+      "end_seconds": 38.36
+    },
+    {
+      "text": "物事を統計を使って理解しようとしている",
+      "start_seconds": 35.36,
+      "end_seconds": 40.96
+    },
+    {
+      "text": "研究者です。ですから本日はこの問題に",
+      "start_seconds": 38.36,
+      "end_seconds": 43.68
+    },
+    {
+      "text": "ついて統計という視点から考えてみたいと",
+      "start_seconds": 40.96,
+      "end_seconds": 45.52
+    },
+    {
+      "text": "思います。",
+      "start_seconds": 43.68,
+      "end_seconds": 48.0
+    },
+    {
+      "text": "現代社会は統計に覆われています。科学",
+      "start_seconds": 45.52,
+      "end_seconds": 51.399
+    },
+    {
+      "text": "技術も政治の世論調査も全て統計に基づい",
+      "start_seconds": 48.0,
+      "end_seconds": 55.6
+    },
+    {
+      "text": "ています。つまり統計は世界を理解する",
+      "start_seconds": 51.399,
+      "end_seconds": 60.079
+    },
+    {
+      "text": "ための枠組です。統計には様々な考え方が",
+      "start_seconds": 55.6,
+      "end_seconds": 62.84
+    },
+    {
+      "text": "ありますけども、本日はこの3つ頻度主義",
+      "start_seconds": 60.079,
+      "end_seconds": 65.92
+    },
+    {
+      "text": "統計、因ガ論、そして真層学習中について",
+      "start_seconds": 62.84,
+      "end_seconds": 68.08
+    },
+    {
+      "text": "簡単にご紹介したいと思います。まず頻度",
+      "start_seconds": 65.92,
+      "end_seconds": 71.32000000000001
+    },
+    {
+      "text": "主義統計です。一般的に統計といった場合",
+      "start_seconds": 68.08,
+      "end_seconds": 74.32
+    },
+    {
+      "text": "はこの頻度主義統計を指す場合が多いです",
+      "start_seconds": 71.32,
+      "end_seconds": 77.72
+    },
+    {
+      "text": "。ただ頻度主義統計にはとても面白い前提",
+      "start_seconds": 74.32,
+      "end_seconds": 82.6
+    },
+    {
+      "text": "があるんです。それがキ務仮説。仮説では",
+      "start_seconds": 77.72,
+      "end_seconds": 86.03999999999999
+    },
+    {
+      "text": "差がないという前提から検証始めます。",
+      "start_seconds": 82.6,
+      "end_seconds": 88.83999999999999
+    },
+    {
+      "text": "普通研究と言うと何か差があるに違いない",
+      "start_seconds": 86.04,
+      "end_seconds": 91.88000000000001
+    },
+    {
+      "text": "と思って研究始めますよね。でもキ務仮説",
+      "start_seconds": 88.84,
+      "end_seconds": 94.119
+    },
+    {
+      "text": "逆なんです。きっと差がない。きっと何も",
+      "start_seconds": 91.88,
+      "end_seconds": 96.28
+    },
+    {
+      "text": "来てない。そういった前提をもにデータを",
+      "start_seconds": 94.119,
+      "end_seconds": 98.759
+    },
+    {
+      "text": "眺めていきます。",
+      "start_seconds": 96.28,
+      "end_seconds": 103.399
+    },
+    {
+      "text": "さてこの観点で見ると大学生がやるような",
+      "start_seconds": 98.759,
+      "end_seconds": 105.32
+    },
+    {
+      "text": "卒論テーマって少しポジティブすぎるん",
+      "start_seconds": 103.399,
+      "end_seconds": 107.32000000000001
+    },
+    {
+      "text": "です。例えばこういったテーマあるとし",
+      "start_seconds": 105.32,
+      "end_seconds": 111.55999999999999
+    },
+    {
+      "text": "ます。名古屋U2026参加が将来の幸福",
+      "start_seconds": 107.32,
+      "end_seconds": 114.52
+    },
+    {
+      "text": "に及ぼす影響について皆さんこの卒論",
+      "start_seconds": 111.56,
+      "end_seconds": 118.24000000000001
+    },
+    {
+      "text": "テーマ与えられるとあがあるなと思って",
+      "start_seconds": 114.52,
+      "end_seconds": 121.15899999999999
+    },
+    {
+      "text": "研究始めてしまいますよね。でも頻度主義",
+      "start_seconds": 118.24,
+      "end_seconds": 124.52
+    },
+    {
+      "text": "統計そんなに楽観的ではないんです。頻度",
+      "start_seconds": 121.159,
+      "end_seconds": 127.759
+    },
+    {
+      "text": "主義統計キ務仮説を厳密に設定するので",
+      "start_seconds": 124.52,
+      "end_seconds": 131.319
+    },
+    {
+      "text": "あれば論トルはこうでなくてはいけません",
+      "start_seconds": 127.759,
+      "end_seconds": 134.28
+    },
+    {
+      "text": "。Zデックス名古屋2026に参加しても",
+      "start_seconds": 131.319,
+      "end_seconds": 137.2
+    },
+    {
+      "text": "将来の幸福には多分何も影響しない件に",
+      "start_seconds": 134.28,
+      "end_seconds": 141.239
+    },
+    {
+      "text": "ついてこの卒論テーマ全然やりたくなく",
+      "start_seconds": 137.2,
+      "end_seconds": 145.2
+    },
+    {
+      "text": "なります。でもこれが頻度主義統計の前提",
+      "start_seconds": 141.239,
+      "end_seconds": 148.12
+    },
+    {
+      "text": "なんです。でもちょっと考えるとこうも",
+      "start_seconds": 145.2,
+      "end_seconds": 151.51899999999998
+    },
+    {
+      "text": "思います。論タイトルが変わっても実験",
+      "start_seconds": 148.12,
+      "end_seconds": 155.519
+    },
+    {
+      "text": "結果は変わらないのではとも我々は知識や",
+      "start_seconds": 151.519,
+      "end_seconds": 158.08
+    },
+    {
+      "text": "期待によって見え方が変わってしまうん",
+      "start_seconds": 155.519,
+      "end_seconds": 162.36
+    },
+    {
+      "text": "です。この思い込みによる誤差のことは",
+      "start_seconds": 158.08,
+      "end_seconds": 164.87900000000002
+    },
+    {
+      "text": "系統誤差の一種を出します。思い込みに",
+      "start_seconds": 162.36,
+      "end_seconds": 166.87900000000002
+    },
+    {
+      "text": "よって観察結果変わってしまうかもしれ",
+      "start_seconds": 164.879,
+      "end_seconds": 170.319
+    },
+    {
+      "text": "ません。でもやっぱり我々いや自分だけは",
+      "start_seconds": 166.879,
+      "end_seconds": 172.84
+    },
+    {
+      "text": "そんなミスはしないと思ってしまう。では",
+      "start_seconds": 170.319,
+      "end_seconds": 175.79999999999998
+    },
+    {
+      "text": "1つ実験をしてみましょう。左と右に2本",
+      "start_seconds": 172.84,
+      "end_seconds": 177.68
+    },
+    {
+      "text": "の赤い棒があります。どちらが長い",
+      "start_seconds": 175.8,
+      "end_seconds": 180.12
+    },
+    {
+      "text": "でしょうか?",
+      "start_seconds": 177.68,
+      "end_seconds": 183.72
+    },
+    {
+      "text": "左の方が長く見えますよね。",
+      "start_seconds": 180.12,
+      "end_seconds": 187.12
+    },
+    {
+      "text": "でもここで鋭い皆さん、特に今ニヤっとさ",
+      "start_seconds": 183.72,
+      "end_seconds": 189.2
+    },
+    {
+      "text": "れてる方、こう思ったかもしれません。あ",
+      "start_seconds": 187.12,
+      "end_seconds": 191.159
+    },
+    {
+      "text": "、こいつ",
+      "start_seconds": 189.2,
+      "end_seconds": 193.159
+    },
+    {
+      "text": "ごさな話してるな。その後にこの字出した",
+      "start_seconds": 191.159,
+      "end_seconds": 197.39999999999998
+    },
+    {
+      "text": "な。知ってるこれ錯覚でしょうと。そう",
+      "start_seconds": 193.159,
+      "end_seconds": 199.56
+    },
+    {
+      "text": "思った方に非常に申し訳ないですけども、",
+      "start_seconds": 197.4,
+      "end_seconds": 202.959
+    },
+    {
+      "text": "これ本当に左を少し長くしてあるんです。",
+      "start_seconds": 199.56,
+      "end_seconds": 206.159
+    },
+    {
+      "text": "意地悪の私に騙された方がいたらその方は",
+      "start_seconds": 202.959,
+      "end_seconds": 209.36
+    },
+    {
+      "text": "左の方が長く見えたにも関わらず錯覚と",
+      "start_seconds": 206.159,
+      "end_seconds": 211.67999999999998
+    },
+    {
+      "text": "いう知識のせいであ、同じ長さかもと思っ",
+      "start_seconds": 209.36,
+      "end_seconds": 214.56
+    },
+    {
+      "text": "てしまった。つまり皆さんは錯覚に騙され",
+      "start_seconds": 211.68,
+      "end_seconds": 217.28
+    },
+    {
+      "text": "たのではなくて知識に騙されたんです。で",
+      "start_seconds": 214.56,
+      "end_seconds": 219.72
+    },
+    {
+      "text": "は同じ長さの場合も見ておきましょう。",
+      "start_seconds": 217.28,
+      "end_seconds": 223.4
+    },
+    {
+      "text": "同じ長さでもやはり左の方が長く見える。",
+      "start_seconds": 219.72,
+      "end_seconds": 226.879
+    },
+    {
+      "text": "これが錯覚です。錯覚だけではなくて知識",
+      "start_seconds": 223.4,
+      "end_seconds": 229.68
+    },
+    {
+      "text": "も誤差の元になります。我々知らないから",
+      "start_seconds": 226.879,
+      "end_seconds": 232.159
+    },
+    {
+      "text": "誤差が生じるのではなくて知ってるから",
+      "start_seconds": 229.68,
+      "end_seconds": 234.28
+    },
+    {
+      "text": "こそ誤差が生じる場合もあります。",
+      "start_seconds": 232.159,
+      "end_seconds": 238.39999999999998
+    },
+    {
+      "text": "もちろん科学は1つの観察データだけで",
+      "start_seconds": 234.28,
+      "end_seconds": 240.72
+    },
+    {
+      "text": "結論を導き出すということはしません。",
+      "start_seconds": 238.4,
+      "end_seconds": 242.84
+    },
+    {
+      "text": "たくさんのデータを集めて一般的なルール",
+      "start_seconds": 240.72,
+      "end_seconds": 246.28
+    },
+    {
+      "text": "を見つけようとします。こうした考え方は",
+      "start_seconds": 242.84,
+      "end_seconds": 249.36
+    },
+    {
+      "text": "機能法と呼ばれる考え方につがります。",
+      "start_seconds": 246.28,
+      "end_seconds": 252.92
+    },
+    {
+      "text": "機能法というのは何度も現象を観察して",
+      "start_seconds": 249.36,
+      "end_seconds": 255.84
+    },
+    {
+      "text": "きっとこういう法則があるだろうと推定",
+      "start_seconds": 252.92,
+      "end_seconds": 259.759
+    },
+    {
+      "text": "するものです。そこで哲学者のヘンペルは",
+      "start_seconds": 255.84,
+      "end_seconds": 262.0
+    },
+    {
+      "text": "少し奇妙なことを思いついたんです。",
+      "start_seconds": 259.759,
+      "end_seconds": 264.96000000000004
+    },
+    {
+      "text": "ヘンペルが考えたことはこうです。カラス",
+      "start_seconds": 262.0,
+      "end_seconds": 267.96
+    },
+    {
+      "text": "は黒い。論理的にはこれと同じ意味のある",
+      "start_seconds": 264.96,
+      "end_seconds": 270.56
+    },
+    {
+      "text": "明題があります。それは黒くないものは",
+      "start_seconds": 267.96,
+      "end_seconds": 274.08
+    },
+    {
+      "text": "カラスではない。そして日の方にはもう1",
+      "start_seconds": 270.56,
+      "end_seconds": 277.32
+    },
+    {
+      "text": "つ重要な考え方があります。それが格勝性",
+      "start_seconds": 274.08,
+      "end_seconds": 280.68
+    },
+    {
+      "text": "の原理と呼ばれるものです。この仮説を",
+      "start_seconds": 277.32,
+      "end_seconds": 283.15999999999997
+    },
+    {
+      "text": "指示する例がたくさん見つかれば見つかる",
+      "start_seconds": 280.68,
+      "end_seconds": 285.68
+    },
+    {
+      "text": "ほどその仮説は最もらしくなるというもの",
+      "start_seconds": 283.16,
+      "end_seconds": 288.03900000000004
+    },
+    {
+      "text": "。つまりカラスは黒いということを証明し",
+      "start_seconds": 285.68,
+      "end_seconds": 290.16
+    },
+    {
+      "text": "たかったら黒いカラスをたくさん見つけて",
+      "start_seconds": 288.039,
+      "end_seconds": 291.8
+    },
+    {
+      "text": "やればいいわけです。そこでヘンペル",
+      "start_seconds": 290.16,
+      "end_seconds": 295.24
+    },
+    {
+      "text": "気づいたんです。いやカラスは黒いと黒く",
+      "start_seconds": 291.8,
+      "end_seconds": 296.84000000000003
+    },
+    {
+      "text": "ないものはカラスじゃない。これ審議一致",
+      "start_seconds": 295.24,
+      "end_seconds": 299.24
+    },
+    {
+      "text": "する。つまりどっちかが正しければ片方は",
+      "start_seconds": 296.84,
+      "end_seconds": 302.19899999999996
+    },
+    {
+      "text": "もう1個正しい。必ず正しい。そして格小",
+      "start_seconds": 299.24,
+      "end_seconds": 305.44
+    },
+    {
+      "text": "線の原理がということはカラスが黒いと",
+      "start_seconds": 302.199,
+      "end_seconds": 307.8
+    },
+    {
+      "text": "いうことを証明したかったら黒くないもの",
+      "start_seconds": 305.44,
+      "end_seconds": 309.24
+    },
+    {
+      "text": "そしてカラスでないものをたくさん",
+      "start_seconds": 307.8,
+      "end_seconds": 311.639
+    },
+    {
+      "text": "見つければ証明できるのでつまりこういう",
+      "start_seconds": 309.24,
+      "end_seconds": 315.28000000000003
+    },
+    {
+      "text": "ことです。ここに椅子がありますね。赤色",
+      "start_seconds": 311.639,
+      "end_seconds": 319.919
+    },
+    {
+      "text": "です。赤色で黒くない。つまり黒くない",
+      "start_seconds": 315.28,
+      "end_seconds": 322.15999999999997
+    },
+    {
+      "text": "ものはカラスでないという例を1個見つけ",
+      "start_seconds": 319.919,
+      "end_seconds": 323.96
+    },
+    {
+      "text": "てしま。しかもこのホールにはたくさん",
+      "start_seconds": 322.16,
+      "end_seconds": 326.40000000000003
+    },
+    {
+      "text": "ある。よし、これで辛しが黒いことが証明",
+      "start_seconds": 323.96,
+      "end_seconds": 328.68
+    },
+    {
+      "text": "できた。これがヘンペルのカラスと呼ば",
+      "start_seconds": 326.4,
+      "end_seconds": 331.56
+    },
+    {
+      "text": "れるですよね。このヘンペルのカラスを",
+      "start_seconds": 328.68,
+      "end_seconds": 334.759
+    },
+    {
+      "text": "使うと私が野球が上手であることも証明",
+      "start_seconds": 331.56,
+      "end_seconds": 336.96
+    },
+    {
+      "text": "できるんです。で、野球やったことないん",
+      "start_seconds": 334.759,
+      "end_seconds": 338.639
+    },
+    {
+      "text": "ですけども、めちゃくちゃ上手なんです。",
+      "start_seconds": 336.96,
+      "end_seconds": 341.28
+    },
+    {
+      "text": "なぜなら証明できるんです。私は野球が",
+      "start_seconds": 338.639,
+      "end_seconds": 345.72
+    },
+    {
+      "text": "上手である。これ野球が上手でないのは私",
+      "start_seconds": 341.28,
+      "end_seconds": 348.08
+    },
+    {
+      "text": "ではないということと審議が1番しかも",
+      "start_seconds": 345.72,
+      "end_seconds": 351.6
+    },
+    {
+      "text": "格小の原理がある。では早速河川河に行っ",
+      "start_seconds": 348.08,
+      "end_seconds": 354.35999999999996
+    },
+    {
+      "text": "て小学生がやってる野球を見てみましょう",
+      "start_seconds": 351.6,
+      "end_seconds": 357.8
+    },
+    {
+      "text": "ね。あ、あの子当下手だな。",
+      "start_seconds": 354.36,
+      "end_seconds": 360.56
+    },
+    {
+      "text": "下手野球が下手。しかも私ではない。",
+      "start_seconds": 357.8,
+      "end_seconds": 363.40000000000003
+    },
+    {
+      "text": "つまりこれは私が野球であることの証明に",
+      "start_seconds": 360.56,
+      "end_seconds": 366.479
+    },
+    {
+      "text": "なるのではということです。その前に練習",
+      "start_seconds": 363.4,
+      "end_seconds": 368.479
+    },
+    {
+      "text": "しろよと思いますけども、私気づいたん",
+      "start_seconds": 366.479,
+      "end_seconds": 372.0
+    },
+    {
+      "text": "です。破線時期でお父さんお母さんでも",
+      "start_seconds": 368.479,
+      "end_seconds": 374.31899999999996
+    },
+    {
+      "text": "ないのに1日こうやって見てる人いました",
+      "start_seconds": 372.0,
+      "end_seconds": 376.68
+    },
+    {
+      "text": "よね。皆さんも多分想像つくと思います。",
+      "start_seconds": 374.319,
+      "end_seconds": 380.8
+    },
+    {
+      "text": "あの方多分自分の証明をしてたんですね。",
+      "start_seconds": 376.68,
+      "end_seconds": 384.0
+    },
+    {
+      "text": "多いですよね。実学者でした実は。でも実",
+      "start_seconds": 380.8,
+      "end_seconds": 386.56
+    },
+    {
+      "text": "は我々SNSを開くとこれと近いことやっ",
+      "start_seconds": 384.0,
+      "end_seconds": 389.56
+    },
+    {
+      "text": "てるかもしれません。SNSを開くと",
+      "start_seconds": 386.56,
+      "end_seconds": 391.56
+    },
+    {
+      "text": "アルゴリズムがあなたが見たい情報を選ん",
+      "start_seconds": 389.56,
+      "end_seconds": 394.52
+    },
+    {
+      "text": "でくれます。するとだんだんあなたが賛成",
+      "start_seconds": 391.56,
+      "end_seconds": 396.52
+    },
+    {
+      "text": "できるもの、あなたと一緒な意見だけが",
+      "start_seconds": 394.52,
+      "end_seconds": 399.12
+    },
+    {
+      "text": "どんどん集まってくること。そうすると",
+      "start_seconds": 396.52,
+      "end_seconds": 402.79999999999995
+    },
+    {
+      "text": "どうなるでしょう?SNS上ではあなたの",
+      "start_seconds": 399.12,
+      "end_seconds": 405.759
+    },
+    {
+      "text": "意見を証明するデータだけがだんだん",
+      "start_seconds": 402.8,
+      "end_seconds": 407.919
+    },
+    {
+      "text": "集まってくることになります。これを",
+      "start_seconds": 405.759,
+      "end_seconds": 411.52000000000004
+    },
+    {
+      "text": "フィルターバブルという風に。",
+      "start_seconds": 407.919,
+      "end_seconds": 413.96
+    },
+    {
+      "text": "さて、話脱出しましたけども、頻度主義",
+      "start_seconds": 411.52,
+      "end_seconds": 416.71999999999997
+    },
+    {
+      "text": "統計というのは一部のデータから全体の",
+      "start_seconds": 413.96,
+      "end_seconds": 420.35999999999996
+    },
+    {
+      "text": "ばらつきや平均を推定するものです。では",
+      "start_seconds": 416.72,
+      "end_seconds": 422.40000000000003
+    },
+    {
+      "text": "、因果が知りたくなったらどうするか?",
+      "start_seconds": 420.36,
+      "end_seconds": 424.8
+    },
+    {
+      "text": "理由を知りたくなったら、例えば今日の例",
+      "start_seconds": 422.4,
+      "end_seconds": 428.28
+    },
+    {
+      "text": "で言うと、今日参加されてる皆さんの将来",
+      "start_seconds": 424.8,
+      "end_seconds": 431.08
+    },
+    {
+      "text": "の幸せに及ぼす影響について知りたい場合",
+      "start_seconds": 428.28,
+      "end_seconds": 434.55999999999995
+    },
+    {
+      "text": "、これ簡単そうですよね。参加されている",
+      "start_seconds": 431.08,
+      "end_seconds": 437.8
+    },
+    {
+      "text": "皆さんと今日参加されていない方で10年",
+      "start_seconds": 434.56,
+      "end_seconds": 441.8
+    },
+    {
+      "text": "後に幸せを比較して皆さんの方が幸せなら",
+      "start_seconds": 437.8,
+      "end_seconds": 444.40000000000003
+    },
+    {
+      "text": "今日の効果がありそうです。でもふと",
+      "start_seconds": 441.8,
+      "end_seconds": 447.639
+    },
+    {
+      "text": "立ち止まって考えてみます。そもそも今日",
+      "start_seconds": 444.4,
+      "end_seconds": 449.84
+    },
+    {
+      "text": "いらしてる皆さんどういった方でしょうか",
+      "start_seconds": 447.639,
+      "end_seconds": 455.28000000000003
+    },
+    {
+      "text": "?多分少し意識の高い方ですよね。新しい",
+      "start_seconds": 449.84,
+      "end_seconds": 457.35999999999996
+    },
+    {
+      "text": "ことに興味があって面白そうなイベントが",
+      "start_seconds": 455.28,
+      "end_seconds": 460.35999999999996
+    },
+    {
+      "text": "あったらまず来てみる。そういった方は",
+      "start_seconds": 457.36,
+      "end_seconds": 462.52000000000004
+    },
+    {
+      "text": "これからもチャレンジし続けるはずです。",
+      "start_seconds": 460.36,
+      "end_seconds": 464.599
+    },
+    {
+      "text": "10年後には新しい仕事立ち上げてるかも",
+      "start_seconds": 462.52,
+      "end_seconds": 467.039
+    },
+    {
+      "text": "しれない。だからもし皆さんの方が幸せ",
+      "start_seconds": 464.599,
+      "end_seconds": 470.36
+    },
+    {
+      "text": "そうだったとしてもそれは今日の効果なの",
+      "start_seconds": 467.039,
+      "end_seconds": 473.039
+    },
+    {
+      "text": "かそもそも皆さんが意識が高かったからな",
+      "start_seconds": 470.36,
+      "end_seconds": 475.599
+    },
+    {
+      "text": "のか実は分からないんです。これを解決",
+      "start_seconds": 473.039,
+      "end_seconds": 478.28
+    },
+    {
+      "text": "するために生まれたのが因果水論です。",
+      "start_seconds": 475.599,
+      "end_seconds": 480.44
+    },
+    {
+      "text": "統計学者はこのように考えました。もし",
+      "start_seconds": 478.28,
+      "end_seconds": 483.039
+    },
+    {
+      "text": "同じぐらい意識が高くてテレックスに参加",
+      "start_seconds": 480.44,
+      "end_seconds": 485.44
+    },
+    {
+      "text": "された方、参加されてない方を比較できた",
+      "start_seconds": 483.039,
+      "end_seconds": 488.52
+    },
+    {
+      "text": "。統計はこれを疑似的に再現する方法も",
+      "start_seconds": 485.44,
+      "end_seconds": 492.199
+    },
+    {
+      "text": "作りました。それが平均処置効果と呼ば",
+      "start_seconds": 488.52,
+      "end_seconds": 495.71999999999997
+    },
+    {
+      "text": "れる。ただここで重要なのは平均という",
+      "start_seconds": 492.199,
+      "end_seconds": 498.159
+    },
+    {
+      "text": "言葉です。",
+      "start_seconds": 495.72,
+      "end_seconds": 500.96000000000004
+    },
+    {
+      "text": "因論が教えてくれるのは参加されてる皆",
+      "start_seconds": 498.159,
+      "end_seconds": 505.199
+    },
+    {
+      "text": "さんの平均的な効果。これは統計的には",
+      "start_seconds": 500.96,
+      "end_seconds": 508.28
+    },
+    {
+      "text": "極めて誠実な答えだと思いますけども、",
+      "start_seconds": 505.199,
+      "end_seconds": 510.24
+    },
+    {
+      "text": "それをそのまま皆さんの人生に当てはめる",
+      "start_seconds": 508.28,
+      "end_seconds": 512.36
+    },
+    {
+      "text": "ことというのはできません。なぜなら",
+      "start_seconds": 510.24,
+      "end_seconds": 516.159
+    },
+    {
+      "text": "あなたの人生は平均ではないからです。",
+      "start_seconds": 512.36,
+      "end_seconds": 519.159
+    },
+    {
+      "text": "ですが、この限界を受け入れたまま極限",
+      "start_seconds": 516.159,
+      "end_seconds": 521.599
+    },
+    {
+      "text": "まで予測だけを高めた技術があります。",
+      "start_seconds": 519.159,
+      "end_seconds": 525.279
+    },
+    {
+      "text": "これが真層学習です。真層学習には様々な",
+      "start_seconds": 521.599,
+      "end_seconds": 528.279
+    },
+    {
+      "text": "モデルがあります。画像を認識するもの、",
+      "start_seconds": 525.279,
+      "end_seconds": 530.88
+    },
+    {
+      "text": "そして言語を理解する。皆様前に使って",
+      "start_seconds": 528.279,
+      "end_seconds": 533.399
+    },
+    {
+      "text": "いるはずです。例えばスマホの画像認識",
+      "start_seconds": 530.88,
+      "end_seconds": 535.92
+    },
+    {
+      "text": "だったりチャットで",
+      "start_seconds": 533.399,
+      "end_seconds": 539.0
+    },
+    {
+      "text": "しかし真層学習というのは原因を理解",
+      "start_seconds": 535.92,
+      "end_seconds": 542.04
+    },
+    {
+      "text": "しようとはしません。ただ分布を学習し",
+      "start_seconds": 539.0,
+      "end_seconds": 544.68
+    },
+    {
+      "text": "ます。ただ予測を当てることだけに注目し",
+      "start_seconds": 542.04,
+      "end_seconds": 548.079
+    },
+    {
+      "text": "ます。そしてその分布の中ではあなたは",
+      "start_seconds": 544.68,
+      "end_seconds": 551.56
+    },
+    {
+      "text": "あなたではなくてあなたに似た人として",
+      "start_seconds": 548.079,
+      "end_seconds": 554.8389999999999
+    },
+    {
+      "text": "取り扱われることになります。幻層学種は",
+      "start_seconds": 551.56,
+      "end_seconds": 556.7199999999999
+    },
+    {
+      "text": "あなたに似た人を見つけることができます",
+      "start_seconds": 554.839,
+      "end_seconds": 560.9590000000001
+    },
+    {
+      "text": "。あなたの年齢、趣味、行動履歴こうした",
+      "start_seconds": 556.72,
+      "end_seconds": 563.12
+    },
+    {
+      "text": "データからあなたが次に何を買うのか、次",
+      "start_seconds": 560.959,
+      "end_seconds": 566.399
+    },
+    {
+      "text": "に何を見るのか制度で予測できます。それ",
+      "start_seconds": 563.12,
+      "end_seconds": 570.44
+    },
+    {
+      "text": "は確かに便利な社会です。ですが、もし",
+      "start_seconds": 566.399,
+      "end_seconds": 573.88
+    },
+    {
+      "text": "あなたに似た人が犯罪を起こしやすい",
+      "start_seconds": 570.44,
+      "end_seconds": 575.519
+    },
+    {
+      "text": "グループにあると判断されたらどう",
+      "start_seconds": 573.88,
+      "end_seconds": 577.8389999999999
+    },
+    {
+      "text": "でしょう?機械将来あなたは何もしてい",
+      "start_seconds": 575.519,
+      "end_seconds": 581.2
+    },
+    {
+      "text": "ないのに念のためという理由で隔離される",
+      "start_seconds": 577.839,
+      "end_seconds": 583.32
+    },
+    {
+      "text": "かもしれない。それはもうあなたが何をし",
+      "start_seconds": 581.2,
+      "end_seconds": 586.32
+    },
+    {
+      "text": "たかではなくて誰に似ているかで評価さ",
+      "start_seconds": 583.32,
+      "end_seconds": 589.279
+    },
+    {
+      "text": "れる社会です。そしてもっと大事なことが",
+      "start_seconds": 586.32,
+      "end_seconds": 591.2
+    },
+    {
+      "text": "あります。",
+      "start_seconds": 589.279,
+      "end_seconds": 595.76
+    },
+    {
+      "text": "それは真層学習というのはあなたの幸せは",
+      "start_seconds": 591.2,
+      "end_seconds": 598.24
+    },
+    {
+      "text": "予測できないということ。なぜならあなた",
+      "start_seconds": 595.76,
+      "end_seconds": 602.2
+    },
+    {
+      "text": "の幸せというのは文婦ではなくて経験だ",
+      "start_seconds": 598.24,
+      "end_seconds": 605.6800000000001
+    },
+    {
+      "text": "からです。我々の人生は1回切りです。",
+      "start_seconds": 602.2,
+      "end_seconds": 607.9590000000001
+    },
+    {
+      "text": "つまりサンプルサイズで言うとn=1です",
+      "start_seconds": 605.68,
+      "end_seconds": 612.12
+    },
+    {
+      "text": "。だから我々は我々の人生の中で実験を",
+      "start_seconds": 607.959,
+      "end_seconds": 616.04
+    },
+    {
+      "text": "繰り返す。さて、私は最初にこの問いをさ",
+      "start_seconds": 612.12,
+      "end_seconds": 618.04
+    },
+    {
+      "text": "せました。この問について考えるために",
+      "start_seconds": 616.04,
+      "end_seconds": 620.04
+    },
+    {
+      "text": "統計についてご紹介します。統計というの",
+      "start_seconds": 618.04,
+      "end_seconds": 621.92
+    },
+    {
+      "text": "はサンプルサイズが大きなものから",
+      "start_seconds": 620.04,
+      "end_seconds": 624.36
+    },
+    {
+      "text": "何かしらを見い出すもの",
+      "start_seconds": 621.92,
+      "end_seconds": 626.88
+    },
+    {
+      "text": "ですが、我々の人生は1回切れます。では",
+      "start_seconds": 624.36,
+      "end_seconds": 628.88
+    },
+    {
+      "text": "どうやってこの問題に立ち向かうでしょう",
+      "start_seconds": 626.88,
+      "end_seconds": 631.4399999999999
+    },
+    {
+      "text": "か?",
+      "start_seconds": 628.88,
+      "end_seconds": 633.959
+    },
+    {
+      "text": "両方には大きく分けて2つあります。",
+      "start_seconds": 631.44,
+      "end_seconds": 637.399
+    },
+    {
+      "text": "プッシュ型とフル型。プッシュ型というの",
+      "start_seconds": 633.959,
+      "end_seconds": 641.2399999999999
+    },
+    {
+      "text": "は向こうから押し付けられる情報です。",
+      "start_seconds": 637.399,
+      "end_seconds": 643.56
+    },
+    {
+      "text": "つまり向こうからやってくるところ。",
+      "start_seconds": 641.24,
+      "end_seconds": 647.24
+    },
+    {
+      "text": "例えばSNS、例えば動画です。対面でも",
+      "start_seconds": 643.56,
+      "end_seconds": 651.0
+    },
+    {
+      "text": "例えば授業がこれに対応します。同じ言葉",
+      "start_seconds": 647.24,
+      "end_seconds": 653.88
+    },
+    {
+      "text": "でも私は3種類あると思います。誰かの",
+      "start_seconds": 651.0,
+      "end_seconds": 656.48
+    },
+    {
+      "text": "言葉をただコピーしていること。1度自分",
+      "start_seconds": 653.88,
+      "end_seconds": 661.279
+    },
+    {
+      "text": "で考えて言い換えてることで実際に実践し",
+      "start_seconds": 656.48,
+      "end_seconds": 665.0790000000001
+    },
+    {
+      "text": "ている言葉です。同じ言葉でもこれらは",
+      "start_seconds": 661.279,
+      "end_seconds": 669.04
+    },
+    {
+      "text": "重みが全く違います。誰が話しているのか",
+      "start_seconds": 665.079,
+      "end_seconds": 672.8
+    },
+    {
+      "text": "ではなくてその基準で物事を見ることが",
+      "start_seconds": 669.04,
+      "end_seconds": 675.0
+    },
+    {
+      "text": "大事だと。",
+      "start_seconds": 672.8,
+      "end_seconds": 679.079
+    },
+    {
+      "text": "そして古型は立ってくる情報です。例えば",
+      "start_seconds": 675.0,
+      "end_seconds": 682.04
+    },
+    {
+      "text": "チャットGPTやジェネクション例えば",
+      "start_seconds": 679.079,
+      "end_seconds": 685.6389999999999
+    },
+    {
+      "text": "最強型の情報というのはサンプルサイズで",
+      "start_seconds": 682.04,
+      "end_seconds": 690.24
+    },
+    {
+      "text": "言うと1位です。大切なのはプッシュを",
+      "start_seconds": 685.639,
+      "end_seconds": 692.44
+    },
+    {
+      "text": "避けることではないと思います。プッシュ",
+      "start_seconds": 690.24,
+      "end_seconds": 695.399
+    },
+    {
+      "text": "型の特性を理解してスルー型を増やすこと",
+      "start_seconds": 692.44,
+      "end_seconds": 698.32
+    },
+    {
+      "text": "になります。誰の言葉を信じるか、どの",
+      "start_seconds": 695.399,
+      "end_seconds": 700.88
+    },
+    {
+      "text": "情報を疑うか、どんな実験をしてみるか。",
+      "start_seconds": 698.32,
+      "end_seconds": 704.6800000000001
+    },
+    {
+      "text": "これをプッシュと古型という枠組で考えて",
+      "start_seconds": 700.88,
+      "end_seconds": 707.12
+    },
+    {
+      "text": "みてください。これがきっとあなた自身の",
+      "start_seconds": 704.68,
+      "end_seconds": 711.92
+    },
+    {
+      "text": "実験を繰り返す第1歩となるパです。",
+      "start_seconds": 707.12,
+      "end_seconds": 716.279
+    },
+    {
+      "text": "統計は世界を説明します。世界は分布で",
+      "start_seconds": 711.92,
+      "end_seconds": 719.0
+    },
+    {
+      "text": "できています。そして世界は平均でできて",
+      "start_seconds": 716.279,
+      "end_seconds": 721.92
+    },
+    {
+      "text": "います。そしてSNSというフィルターを",
+      "start_seconds": 719.0,
+      "end_seconds": 725.04
+    },
+    {
+      "text": "通している世界というのはとても派手です",
+      "start_seconds": 721.92,
+      "end_seconds": 728.68
+    },
+    {
+      "text": "。抵抗し続ける方法を通って幸せそうな",
+      "start_seconds": 725.04,
+      "end_seconds": 733.3199999999999
+    },
+    {
+      "text": "写真。でもあなたの人生は違います。",
+      "start_seconds": 728.68,
+      "end_seconds": 736.279
+    },
+    {
+      "text": "人生は平均ではありません。そしてあなた",
+      "start_seconds": 733.32,
+      "end_seconds": 740.0
+    },
+    {
+      "text": "は分布の一部なんかではありません。",
+      "start_seconds": 736.279,
+      "end_seconds": 743.04
+    },
+    {
+      "text": "あなたの人生はn=1という実験の",
+      "start_seconds": 740.0,
+      "end_seconds": 746.399
+    },
+    {
+      "text": "繰り返しです。そして実験というのは大抵",
+      "start_seconds": 743.04,
+      "end_seconds": 749.279
+    },
+    {
+      "text": "とてもとても地味です。どうなるか分から",
+      "start_seconds": 746.399,
+      "end_seconds": 752.32
+    },
+    {
+      "text": "ないことをやって少し失敗してまた修正し",
+      "start_seconds": 749.279,
+      "end_seconds": 757.079
+    },
+    {
+      "text": "てそれの繰り返しでもその人生結果そして",
+      "start_seconds": 752.32,
+      "end_seconds": 759.639
+    },
+    {
+      "text": "実験結果これを受け取ることができるのは",
+      "start_seconds": 757.079,
+      "end_seconds": 763.8389999999999
+    },
+    {
+      "text": "あなただけです。",
+      "start_seconds": 759.639,
+      "end_seconds": 763.839
+    },
+    {
+      "text": "統計は世界を説明します。も人生を説明",
+      "start_seconds": 766.24,
+      "end_seconds": 774.8
+    },
+    {
+      "text": "するのはあなた自身の実験だと私は思い",
+      "start_seconds": 770.399,
+      "end_seconds": 777.959
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 774.8,
+      "end_seconds": 777.959
+    }
+  ],
+  "display_captions": [
+    {
+      "text": "[音楽]",
+      "start_seconds": 3.274,
+      "end_seconds": 5.2940000000000005,
+      "id": "gQnAQqS83Sk-display-0001",
+      "segment_id": "gQnAQqS83Sk-ja-0001"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 7.86,
+      "end_seconds": 9.88,
+      "id": "gQnAQqS83Sk-display-0002",
+      "segment_id": "gQnAQqS83Sk-ja-0002"
+    },
+    {
+      "text": "今私たち[笑い]はたくさんの言葉に囲ま",
+      "start_seconds": 10.519,
+      "end_seconds": 12.84,
+      "id": "gQnAQqS83Sk-display-0003",
+      "segment_id": "gQnAQqS83Sk-ja-0003"
+    },
+    {
+      "text": "れて生きています。SNSを開くと成功の",
+      "start_seconds": 12.84,
+      "end_seconds": 15.719,
+      "id": "gQnAQqS83Sk-display-0004",
+      "segment_id": "gQnAQqS83Sk-ja-0003"
+    },
+    {
+      "text": "法則、そして幸せそうな写真。そして最近",
+      "start_seconds": 15.719,
+      "end_seconds": 19.08,
+      "id": "gQnAQqS83Sk-display-0005",
+      "segment_id": "gQnAQqS83Sk-ja-0003"
+    },
+    {
+      "text": "では生成系KAIが作った言葉もどんどん",
+      "start_seconds": 19.08,
+      "end_seconds": 21.56,
+      "id": "gQnAQqS83Sk-display-0006",
+      "segment_id": "gQnAQqS83Sk-ja-0003"
+    },
+    {
+      "text": "流れてきます。こういった言葉を見ている",
+      "start_seconds": 21.56,
+      "end_seconds": 24.0,
+      "id": "gQnAQqS83Sk-display-0007",
+      "segment_id": "gQnAQqS83Sk-ja-0004"
+    },
+    {
+      "text": "とふと疑問に思うことがあります。人生の",
+      "start_seconds": 24.0,
+      "end_seconds": 27.76,
+      "id": "gQnAQqS83Sk-display-0008",
+      "segment_id": "gQnAQqS83Sk-ja-0004"
+    },
+    {
+      "text": "正解とは",
+      "start_seconds": 27.76,
+      "end_seconds": 30.519,
+      "id": "gQnAQqS83Sk-display-0009",
+      "segment_id": "gQnAQqS83Sk-ja-0004"
+    },
+    {
+      "text": "私は文行データというものを統計を使って",
+      "start_seconds": 30.519,
+      "end_seconds": 33.36,
+      "id": "gQnAQqS83Sk-display-0010",
+      "segment_id": "gQnAQqS83Sk-ja-0004"
+    },
+    {
+      "text": "解析するという研究をしています。つまり",
+      "start_seconds": 33.36,
+      "end_seconds": 35.36,
+      "id": "gQnAQqS83Sk-display-0011",
+      "segment_id": "gQnAQqS83Sk-ja-0005"
+    },
+    {
+      "text": "物事を統計を使って理解しようとしている",
+      "start_seconds": 35.36,
+      "end_seconds": 38.36,
+      "id": "gQnAQqS83Sk-display-0012",
+      "segment_id": "gQnAQqS83Sk-ja-0005"
+    },
+    {
+      "text": "研究者です。ですから本日はこの問題に",
+      "start_seconds": 38.36,
+      "end_seconds": 40.96,
+      "id": "gQnAQqS83Sk-display-0013",
+      "segment_id": "gQnAQqS83Sk-ja-0005"
+    },
+    {
+      "text": "ついて統計という視点から考えてみたいと",
+      "start_seconds": 40.96,
+      "end_seconds": 43.68,
+      "id": "gQnAQqS83Sk-display-0014",
+      "segment_id": "gQnAQqS83Sk-ja-0005"
+    },
+    {
+      "text": "思います。",
+      "start_seconds": 43.68,
+      "end_seconds": 45.52,
+      "id": "gQnAQqS83Sk-display-0015",
+      "segment_id": "gQnAQqS83Sk-ja-0006"
+    },
+    {
+      "text": "現代社会は統計に覆われています。科学",
+      "start_seconds": 45.52,
+      "end_seconds": 48.0,
+      "id": "gQnAQqS83Sk-display-0016",
+      "segment_id": "gQnAQqS83Sk-ja-0007"
+    },
+    {
+      "text": "技術も政治の世論調査も全て統計に基づい",
+      "start_seconds": 48.0,
+      "end_seconds": 51.399,
+      "id": "gQnAQqS83Sk-display-0017",
+      "segment_id": "gQnAQqS83Sk-ja-0007"
+    },
+    {
+      "text": "ています。つまり統計は世界を理解する",
+      "start_seconds": 51.399,
+      "end_seconds": 55.6,
+      "id": "gQnAQqS83Sk-display-0018",
+      "segment_id": "gQnAQqS83Sk-ja-0007"
+    },
+    {
+      "text": "ための枠組です。統計には様々な考え方が",
+      "start_seconds": 55.6,
+      "end_seconds": 60.079,
+      "id": "gQnAQqS83Sk-display-0019",
+      "segment_id": "gQnAQqS83Sk-ja-0008"
+    },
+    {
+      "text": "ありますけども、本日はこの3つ頻度主義",
+      "start_seconds": 60.079,
+      "end_seconds": 62.84,
+      "id": "gQnAQqS83Sk-display-0020",
+      "segment_id": "gQnAQqS83Sk-ja-0008"
+    },
+    {
+      "text": "統計、因ガ論、そして真層学習中について",
+      "start_seconds": 62.84,
+      "end_seconds": 65.92,
+      "id": "gQnAQqS83Sk-display-0021",
+      "segment_id": "gQnAQqS83Sk-ja-0008"
+    },
+    {
+      "text": "簡単にご紹介したいと思います。まず頻度",
+      "start_seconds": 65.92,
+      "end_seconds": 68.08,
+      "id": "gQnAQqS83Sk-display-0022",
+      "segment_id": "gQnAQqS83Sk-ja-0009"
+    },
+    {
+      "text": "主義統計です。一般的に統計といった場合",
+      "start_seconds": 68.08,
+      "end_seconds": 71.32,
+      "id": "gQnAQqS83Sk-display-0023",
+      "segment_id": "gQnAQqS83Sk-ja-0009"
+    },
+    {
+      "text": "はこの頻度主義統計を指す場合が多いです",
+      "start_seconds": 71.32,
+      "end_seconds": 74.32,
+      "id": "gQnAQqS83Sk-display-0024",
+      "segment_id": "gQnAQqS83Sk-ja-0009"
+    },
+    {
+      "text": "。ただ頻度主義統計にはとても面白い前提",
+      "start_seconds": 74.32,
+      "end_seconds": 77.72,
+      "id": "gQnAQqS83Sk-display-0025",
+      "segment_id": "gQnAQqS83Sk-ja-0009"
+    },
+    {
+      "text": "があるんです。それがキ務仮説。仮説では",
+      "start_seconds": 77.72,
+      "end_seconds": 82.6,
+      "id": "gQnAQqS83Sk-display-0026",
+      "segment_id": "gQnAQqS83Sk-ja-0010"
+    },
+    {
+      "text": "差がないという前提から検証始めます。",
+      "start_seconds": 82.6,
+      "end_seconds": 86.04,
+      "id": "gQnAQqS83Sk-display-0027",
+      "segment_id": "gQnAQqS83Sk-ja-0010"
+    },
+    {
+      "text": "普通研究と言うと何か差があるに違いない",
+      "start_seconds": 86.04,
+      "end_seconds": 88.84,
+      "id": "gQnAQqS83Sk-display-0028",
+      "segment_id": "gQnAQqS83Sk-ja-0011"
+    },
+    {
+      "text": "と思って研究始めますよね。でもキ務仮説",
+      "start_seconds": 88.84,
+      "end_seconds": 91.88,
+      "id": "gQnAQqS83Sk-display-0029",
+      "segment_id": "gQnAQqS83Sk-ja-0011"
+    },
+    {
+      "text": "逆なんです。きっと差がない。きっと何も",
+      "start_seconds": 91.88,
+      "end_seconds": 94.119,
+      "id": "gQnAQqS83Sk-display-0030",
+      "segment_id": "gQnAQqS83Sk-ja-0011"
+    },
+    {
+      "text": "来てない。そういった前提をもにデータを",
+      "start_seconds": 94.119,
+      "end_seconds": 96.28,
+      "id": "gQnAQqS83Sk-display-0031",
+      "segment_id": "gQnAQqS83Sk-ja-0011"
+    },
+    {
+      "text": "眺めていきます。",
+      "start_seconds": 96.28,
+      "end_seconds": 98.759,
+      "id": "gQnAQqS83Sk-display-0032",
+      "segment_id": "gQnAQqS83Sk-ja-0012"
+    },
+    {
+      "text": "さてこの観点で見ると大学生がやるような",
+      "start_seconds": 98.759,
+      "end_seconds": 103.399,
+      "id": "gQnAQqS83Sk-display-0033",
+      "segment_id": "gQnAQqS83Sk-ja-0013"
+    },
+    {
+      "text": "卒論テーマって少しポジティブすぎるん",
+      "start_seconds": 103.399,
+      "end_seconds": 105.32,
+      "id": "gQnAQqS83Sk-display-0034",
+      "segment_id": "gQnAQqS83Sk-ja-0013"
+    },
+    {
+      "text": "です。例えばこういったテーマあるとし",
+      "start_seconds": 105.32,
+      "end_seconds": 107.32,
+      "id": "gQnAQqS83Sk-display-0035",
+      "segment_id": "gQnAQqS83Sk-ja-0013"
+    },
+    {
+      "text": "ます。名古屋U2026参加が将来の幸福",
+      "start_seconds": 107.32,
+      "end_seconds": 111.56,
+      "id": "gQnAQqS83Sk-display-0036",
+      "segment_id": "gQnAQqS83Sk-ja-0014"
+    },
+    {
+      "text": "に及ぼす影響について皆さんこの卒論",
+      "start_seconds": 111.56,
+      "end_seconds": 114.52,
+      "id": "gQnAQqS83Sk-display-0037",
+      "segment_id": "gQnAQqS83Sk-ja-0014"
+    },
+    {
+      "text": "テーマ与えられるとあがあるなと思って",
+      "start_seconds": 114.52,
+      "end_seconds": 118.24,
+      "id": "gQnAQqS83Sk-display-0038",
+      "segment_id": "gQnAQqS83Sk-ja-0014"
+    },
+    {
+      "text": "研究始めてしまいますよね。でも頻度主義",
+      "start_seconds": 118.24,
+      "end_seconds": 121.159,
+      "id": "gQnAQqS83Sk-display-0039",
+      "segment_id": "gQnAQqS83Sk-ja-0015"
+    },
+    {
+      "text": "統計そんなに楽観的ではないんです。頻度",
+      "start_seconds": 121.159,
+      "end_seconds": 124.52,
+      "id": "gQnAQqS83Sk-display-0040",
+      "segment_id": "gQnAQqS83Sk-ja-0015"
+    },
+    {
+      "text": "主義統計キ務仮説を厳密に設定するので",
+      "start_seconds": 124.52,
+      "end_seconds": 127.759,
+      "id": "gQnAQqS83Sk-display-0041",
+      "segment_id": "gQnAQqS83Sk-ja-0015"
+    },
+    {
+      "text": "あれば論トルはこうでなくてはいけません",
+      "start_seconds": 127.759,
+      "end_seconds": 131.319,
+      "id": "gQnAQqS83Sk-display-0042",
+      "segment_id": "gQnAQqS83Sk-ja-0016"
+    },
+    {
+      "text": "。Zデックス名古屋2026に参加しても",
+      "start_seconds": 131.319,
+      "end_seconds": 134.28,
+      "id": "gQnAQqS83Sk-display-0043",
+      "segment_id": "gQnAQqS83Sk-ja-0016"
+    },
+    {
+      "text": "将来の幸福には多分何も影響しない件に",
+      "start_seconds": 134.28,
+      "end_seconds": 137.2,
+      "id": "gQnAQqS83Sk-display-0044",
+      "segment_id": "gQnAQqS83Sk-ja-0016"
+    },
+    {
+      "text": "ついてこの卒論テーマ全然やりたくなく",
+      "start_seconds": 137.2,
+      "end_seconds": 141.239,
+      "id": "gQnAQqS83Sk-display-0045",
+      "segment_id": "gQnAQqS83Sk-ja-0017"
+    },
+    {
+      "text": "なります。でもこれが頻度主義統計の前提",
+      "start_seconds": 141.239,
+      "end_seconds": 145.2,
+      "id": "gQnAQqS83Sk-display-0046",
+      "segment_id": "gQnAQqS83Sk-ja-0017"
+    },
+    {
+      "text": "なんです。でもちょっと考えるとこうも",
+      "start_seconds": 145.2,
+      "end_seconds": 148.12,
+      "id": "gQnAQqS83Sk-display-0047",
+      "segment_id": "gQnAQqS83Sk-ja-0017"
+    },
+    {
+      "text": "思います。論タイトルが変わっても実験",
+      "start_seconds": 148.12,
+      "end_seconds": 151.519,
+      "id": "gQnAQqS83Sk-display-0048",
+      "segment_id": "gQnAQqS83Sk-ja-0018"
+    },
+    {
+      "text": "結果は変わらないのではとも我々は知識や",
+      "start_seconds": 151.519,
+      "end_seconds": 155.519,
+      "id": "gQnAQqS83Sk-display-0049",
+      "segment_id": "gQnAQqS83Sk-ja-0018"
+    },
+    {
+      "text": "期待によって見え方が変わってしまうん",
+      "start_seconds": 155.519,
+      "end_seconds": 158.08,
+      "id": "gQnAQqS83Sk-display-0050",
+      "segment_id": "gQnAQqS83Sk-ja-0018"
+    },
+    {
+      "text": "です。この思い込みによる誤差のことは",
+      "start_seconds": 158.08,
+      "end_seconds": 162.36,
+      "id": "gQnAQqS83Sk-display-0051",
+      "segment_id": "gQnAQqS83Sk-ja-0019"
+    },
+    {
+      "text": "系統誤差の一種を出します。思い込みに",
+      "start_seconds": 162.36,
+      "end_seconds": 164.879,
+      "id": "gQnAQqS83Sk-display-0052",
+      "segment_id": "gQnAQqS83Sk-ja-0019"
+    },
+    {
+      "text": "よって観察結果変わってしまうかもしれ",
+      "start_seconds": 164.879,
+      "end_seconds": 166.879,
+      "id": "gQnAQqS83Sk-display-0053",
+      "segment_id": "gQnAQqS83Sk-ja-0019"
+    },
+    {
+      "text": "ません。でもやっぱり我々いや自分だけは",
+      "start_seconds": 166.879,
+      "end_seconds": 170.319,
+      "id": "gQnAQqS83Sk-display-0054",
+      "segment_id": "gQnAQqS83Sk-ja-0020"
+    },
+    {
+      "text": "そんなミスはしないと思ってしまう。では",
+      "start_seconds": 170.319,
+      "end_seconds": 172.84,
+      "id": "gQnAQqS83Sk-display-0055",
+      "segment_id": "gQnAQqS83Sk-ja-0020"
+    },
+    {
+      "text": "1つ実験をしてみましょう。左と右に2本",
+      "start_seconds": 172.84,
+      "end_seconds": 175.8,
+      "id": "gQnAQqS83Sk-display-0056",
+      "segment_id": "gQnAQqS83Sk-ja-0020"
+    },
+    {
+      "text": "の赤い棒があります。どちらが長い",
+      "start_seconds": 175.8,
+      "end_seconds": 177.68,
+      "id": "gQnAQqS83Sk-display-0057",
+      "segment_id": "gQnAQqS83Sk-ja-0020"
+    },
+    {
+      "text": "でしょうか?",
+      "start_seconds": 177.68,
+      "end_seconds": 180.12,
+      "id": "gQnAQqS83Sk-display-0058",
+      "segment_id": "gQnAQqS83Sk-ja-0021"
+    },
+    {
+      "text": "左の方が長く見えますよね。",
+      "start_seconds": 180.12,
+      "end_seconds": 183.72,
+      "id": "gQnAQqS83Sk-display-0059",
+      "segment_id": "gQnAQqS83Sk-ja-0022"
+    },
+    {
+      "text": "でもここで鋭い皆さん、特に今ニヤっとさ",
+      "start_seconds": 183.72,
+      "end_seconds": 187.12,
+      "id": "gQnAQqS83Sk-display-0060",
+      "segment_id": "gQnAQqS83Sk-ja-0023"
+    },
+    {
+      "text": "れてる方、こう思ったかもしれません。あ",
+      "start_seconds": 187.12,
+      "end_seconds": 189.2,
+      "id": "gQnAQqS83Sk-display-0061",
+      "segment_id": "gQnAQqS83Sk-ja-0023"
+    },
+    {
+      "text": "、こいつ",
+      "start_seconds": 189.2,
+      "end_seconds": 191.159,
+      "id": "gQnAQqS83Sk-display-0062",
+      "segment_id": "gQnAQqS83Sk-ja-0023"
+    },
+    {
+      "text": "ごさな話してるな。その後にこの字出した",
+      "start_seconds": 191.159,
+      "end_seconds": 193.159,
+      "id": "gQnAQqS83Sk-display-0063",
+      "segment_id": "gQnAQqS83Sk-ja-0023"
+    },
+    {
+      "text": "な。知ってるこれ錯覚でしょうと。そう",
+      "start_seconds": 193.159,
+      "end_seconds": 197.4,
+      "id": "gQnAQqS83Sk-display-0064",
+      "segment_id": "gQnAQqS83Sk-ja-0024"
+    },
+    {
+      "text": "思った方に非常に申し訳ないですけども、",
+      "start_seconds": 197.4,
+      "end_seconds": 199.56,
+      "id": "gQnAQqS83Sk-display-0065",
+      "segment_id": "gQnAQqS83Sk-ja-0024"
+    },
+    {
+      "text": "これ本当に左を少し長くしてあるんです。",
+      "start_seconds": 199.56,
+      "end_seconds": 202.959,
+      "id": "gQnAQqS83Sk-display-0066",
+      "segment_id": "gQnAQqS83Sk-ja-0024"
+    },
+    {
+      "text": "意地悪の私に騙された方がいたらその方は",
+      "start_seconds": 202.959,
+      "end_seconds": 206.159,
+      "id": "gQnAQqS83Sk-display-0067",
+      "segment_id": "gQnAQqS83Sk-ja-0025"
+    },
+    {
+      "text": "左の方が長く見えたにも関わらず錯覚と",
+      "start_seconds": 206.159,
+      "end_seconds": 209.36,
+      "id": "gQnAQqS83Sk-display-0068",
+      "segment_id": "gQnAQqS83Sk-ja-0025"
+    },
+    {
+      "text": "いう知識のせいであ、同じ長さかもと思っ",
+      "start_seconds": 209.36,
+      "end_seconds": 211.68,
+      "id": "gQnAQqS83Sk-display-0069",
+      "segment_id": "gQnAQqS83Sk-ja-0025"
+    },
+    {
+      "text": "てしまった。つまり皆さんは錯覚に騙され",
+      "start_seconds": 211.68,
+      "end_seconds": 214.56,
+      "id": "gQnAQqS83Sk-display-0070",
+      "segment_id": "gQnAQqS83Sk-ja-0025"
+    },
+    {
+      "text": "たのではなくて知識に騙されたんです。で",
+      "start_seconds": 214.56,
+      "end_seconds": 217.28,
+      "id": "gQnAQqS83Sk-display-0071",
+      "segment_id": "gQnAQqS83Sk-ja-0026"
+    },
+    {
+      "text": "は同じ長さの場合も見ておきましょう。",
+      "start_seconds": 217.28,
+      "end_seconds": 219.72,
+      "id": "gQnAQqS83Sk-display-0072",
+      "segment_id": "gQnAQqS83Sk-ja-0026"
+    },
+    {
+      "text": "同じ長さでもやはり左の方が長く見える。",
+      "start_seconds": 219.72,
+      "end_seconds": 223.4,
+      "id": "gQnAQqS83Sk-display-0073",
+      "segment_id": "gQnAQqS83Sk-ja-0027"
+    },
+    {
+      "text": "これが錯覚です。錯覚だけではなくて知識",
+      "start_seconds": 223.4,
+      "end_seconds": 226.879,
+      "id": "gQnAQqS83Sk-display-0074",
+      "segment_id": "gQnAQqS83Sk-ja-0028"
+    },
+    {
+      "text": "も誤差の元になります。我々知らないから",
+      "start_seconds": 226.879,
+      "end_seconds": 229.68,
+      "id": "gQnAQqS83Sk-display-0075",
+      "segment_id": "gQnAQqS83Sk-ja-0028"
+    },
+    {
+      "text": "誤差が生じるのではなくて知ってるから",
+      "start_seconds": 229.68,
+      "end_seconds": 232.159,
+      "id": "gQnAQqS83Sk-display-0076",
+      "segment_id": "gQnAQqS83Sk-ja-0028"
+    },
+    {
+      "text": "こそ誤差が生じる場合もあります。",
+      "start_seconds": 232.159,
+      "end_seconds": 234.28,
+      "id": "gQnAQqS83Sk-display-0077",
+      "segment_id": "gQnAQqS83Sk-ja-0028"
+    },
+    {
+      "text": "もちろん科学は1つの観察データだけで",
+      "start_seconds": 234.28,
+      "end_seconds": 238.4,
+      "id": "gQnAQqS83Sk-display-0078",
+      "segment_id": "gQnAQqS83Sk-ja-0029"
+    },
+    {
+      "text": "結論を導き出すということはしません。",
+      "start_seconds": 238.4,
+      "end_seconds": 240.72,
+      "id": "gQnAQqS83Sk-display-0079",
+      "segment_id": "gQnAQqS83Sk-ja-0029"
+    },
+    {
+      "text": "たくさんのデータを集めて一般的なルール",
+      "start_seconds": 240.72,
+      "end_seconds": 242.84,
+      "id": "gQnAQqS83Sk-display-0080",
+      "segment_id": "gQnAQqS83Sk-ja-0030"
+    },
+    {
+      "text": "を見つけようとします。こうした考え方は",
+      "start_seconds": 242.84,
+      "end_seconds": 246.28,
+      "id": "gQnAQqS83Sk-display-0081",
+      "segment_id": "gQnAQqS83Sk-ja-0030"
+    },
+    {
+      "text": "機能法と呼ばれる考え方につがります。",
+      "start_seconds": 246.28,
+      "end_seconds": 249.36,
+      "id": "gQnAQqS83Sk-display-0082",
+      "segment_id": "gQnAQqS83Sk-ja-0030"
+    },
+    {
+      "text": "機能法というのは何度も現象を観察して",
+      "start_seconds": 249.36,
+      "end_seconds": 252.92,
+      "id": "gQnAQqS83Sk-display-0083",
+      "segment_id": "gQnAQqS83Sk-ja-0031"
+    },
+    {
+      "text": "きっとこういう法則があるだろうと推定",
+      "start_seconds": 252.92,
+      "end_seconds": 255.84,
+      "id": "gQnAQqS83Sk-display-0084",
+      "segment_id": "gQnAQqS83Sk-ja-0031"
+    },
+    {
+      "text": "するものです。そこで哲学者のヘンペルは",
+      "start_seconds": 255.84,
+      "end_seconds": 259.759,
+      "id": "gQnAQqS83Sk-display-0085",
+      "segment_id": "gQnAQqS83Sk-ja-0031"
+    },
+    {
+      "text": "少し奇妙なことを思いついたんです。",
+      "start_seconds": 259.759,
+      "end_seconds": 262.0,
+      "id": "gQnAQqS83Sk-display-0086",
+      "segment_id": "gQnAQqS83Sk-ja-0032"
+    },
+    {
+      "text": "ヘンペルが考えたことはこうです。カラス",
+      "start_seconds": 262.0,
+      "end_seconds": 264.96,
+      "id": "gQnAQqS83Sk-display-0087",
+      "segment_id": "gQnAQqS83Sk-ja-0033"
+    },
+    {
+      "text": "は黒い。論理的にはこれと同じ意味のある",
+      "start_seconds": 264.96,
+      "end_seconds": 267.96,
+      "id": "gQnAQqS83Sk-display-0088",
+      "segment_id": "gQnAQqS83Sk-ja-0033"
+    },
+    {
+      "text": "明題があります。それは黒くないものは",
+      "start_seconds": 267.96,
+      "end_seconds": 270.56,
+      "id": "gQnAQqS83Sk-display-0089",
+      "segment_id": "gQnAQqS83Sk-ja-0033"
+    },
+    {
+      "text": "カラスではない。そして日の方にはもう1",
+      "start_seconds": 270.56,
+      "end_seconds": 274.08,
+      "id": "gQnAQqS83Sk-display-0090",
+      "segment_id": "gQnAQqS83Sk-ja-0034"
+    },
+    {
+      "text": "つ重要な考え方があります。それが格勝性",
+      "start_seconds": 274.08,
+      "end_seconds": 277.32,
+      "id": "gQnAQqS83Sk-display-0091",
+      "segment_id": "gQnAQqS83Sk-ja-0034"
+    },
+    {
+      "text": "の原理と呼ばれるものです。この仮説を",
+      "start_seconds": 277.32,
+      "end_seconds": 280.68,
+      "id": "gQnAQqS83Sk-display-0092",
+      "segment_id": "gQnAQqS83Sk-ja-0034"
+    },
+    {
+      "text": "指示する例がたくさん見つかれば見つかる",
+      "start_seconds": 280.68,
+      "end_seconds": 283.16,
+      "id": "gQnAQqS83Sk-display-0093",
+      "segment_id": "gQnAQqS83Sk-ja-0035"
+    },
+    {
+      "text": "ほどその仮説は最もらしくなるというもの",
+      "start_seconds": 283.16,
+      "end_seconds": 285.68,
+      "id": "gQnAQqS83Sk-display-0094",
+      "segment_id": "gQnAQqS83Sk-ja-0035"
+    },
+    {
+      "text": "。つまりカラスは黒いということを証明し",
+      "start_seconds": 285.68,
+      "end_seconds": 288.039,
+      "id": "gQnAQqS83Sk-display-0095",
+      "segment_id": "gQnAQqS83Sk-ja-0035"
+    },
+    {
+      "text": "たかったら黒いカラスをたくさん見つけて",
+      "start_seconds": 288.039,
+      "end_seconds": 290.16,
+      "id": "gQnAQqS83Sk-display-0096",
+      "segment_id": "gQnAQqS83Sk-ja-0035"
+    },
+    {
+      "text": "やればいいわけです。そこでヘンペル",
+      "start_seconds": 290.16,
+      "end_seconds": 291.8,
+      "id": "gQnAQqS83Sk-display-0097",
+      "segment_id": "gQnAQqS83Sk-ja-0035"
+    },
+    {
+      "text": "気づいたんです。いやカラスは黒いと黒く",
+      "start_seconds": 291.8,
+      "end_seconds": 295.24,
+      "id": "gQnAQqS83Sk-display-0098",
+      "segment_id": "gQnAQqS83Sk-ja-0036"
+    },
+    {
+      "text": "ないものはカラスじゃない。これ審議一致",
+      "start_seconds": 295.24,
+      "end_seconds": 296.84,
+      "id": "gQnAQqS83Sk-display-0099",
+      "segment_id": "gQnAQqS83Sk-ja-0036"
+    },
+    {
+      "text": "する。つまりどっちかが正しければ片方は",
+      "start_seconds": 296.84,
+      "end_seconds": 299.24,
+      "id": "gQnAQqS83Sk-display-0100",
+      "segment_id": "gQnAQqS83Sk-ja-0036"
+    },
+    {
+      "text": "もう1個正しい。必ず正しい。そして格小",
+      "start_seconds": 299.24,
+      "end_seconds": 302.199,
+      "id": "gQnAQqS83Sk-display-0101",
+      "segment_id": "gQnAQqS83Sk-ja-0036"
+    },
+    {
+      "text": "線の原理がということはカラスが黒いと",
+      "start_seconds": 302.199,
+      "end_seconds": 305.44,
+      "id": "gQnAQqS83Sk-display-0102",
+      "segment_id": "gQnAQqS83Sk-ja-0037"
+    },
+    {
+      "text": "いうことを証明したかったら黒くないもの",
+      "start_seconds": 305.44,
+      "end_seconds": 307.8,
+      "id": "gQnAQqS83Sk-display-0103",
+      "segment_id": "gQnAQqS83Sk-ja-0037"
+    },
+    {
+      "text": "そしてカラスでないものをたくさん",
+      "start_seconds": 307.8,
+      "end_seconds": 309.24,
+      "id": "gQnAQqS83Sk-display-0104",
+      "segment_id": "gQnAQqS83Sk-ja-0037"
+    },
+    {
+      "text": "見つければ証明できるのでつまりこういう",
+      "start_seconds": 309.24,
+      "end_seconds": 311.639,
+      "id": "gQnAQqS83Sk-display-0105",
+      "segment_id": "gQnAQqS83Sk-ja-0037"
+    },
+    {
+      "text": "ことです。ここに椅子がありますね。赤色",
+      "start_seconds": 311.639,
+      "end_seconds": 315.28,
+      "id": "gQnAQqS83Sk-display-0106",
+      "segment_id": "gQnAQqS83Sk-ja-0038"
+    },
+    {
+      "text": "です。赤色で黒くない。つまり黒くない",
+      "start_seconds": 315.28,
+      "end_seconds": 319.919,
+      "id": "gQnAQqS83Sk-display-0107",
+      "segment_id": "gQnAQqS83Sk-ja-0038"
+    },
+    {
+      "text": "ものはカラスでないという例を1個見つけ",
+      "start_seconds": 319.919,
+      "end_seconds": 322.16,
+      "id": "gQnAQqS83Sk-display-0108",
+      "segment_id": "gQnAQqS83Sk-ja-0038"
+    },
+    {
+      "text": "てしま。しかもこのホールにはたくさん",
+      "start_seconds": 322.16,
+      "end_seconds": 323.96,
+      "id": "gQnAQqS83Sk-display-0109",
+      "segment_id": "gQnAQqS83Sk-ja-0039"
+    },
+    {
+      "text": "ある。よし、これで辛しが黒いことが証明",
+      "start_seconds": 323.96,
+      "end_seconds": 326.4,
+      "id": "gQnAQqS83Sk-display-0110",
+      "segment_id": "gQnAQqS83Sk-ja-0039"
+    },
+    {
+      "text": "できた。これがヘンペルのカラスと呼ば",
+      "start_seconds": 326.4,
+      "end_seconds": 328.68,
+      "id": "gQnAQqS83Sk-display-0111",
+      "segment_id": "gQnAQqS83Sk-ja-0039"
+    },
+    {
+      "text": "れるですよね。このヘンペルのカラスを",
+      "start_seconds": 328.68,
+      "end_seconds": 331.56,
+      "id": "gQnAQqS83Sk-display-0112",
+      "segment_id": "gQnAQqS83Sk-ja-0039"
+    },
+    {
+      "text": "使うと私が野球が上手であることも証明",
+      "start_seconds": 331.56,
+      "end_seconds": 334.759,
+      "id": "gQnAQqS83Sk-display-0113",
+      "segment_id": "gQnAQqS83Sk-ja-0040"
+    },
+    {
+      "text": "できるんです。で、野球やったことないん",
+      "start_seconds": 334.759,
+      "end_seconds": 336.96,
+      "id": "gQnAQqS83Sk-display-0114",
+      "segment_id": "gQnAQqS83Sk-ja-0040"
+    },
+    {
+      "text": "ですけども、めちゃくちゃ上手なんです。",
+      "start_seconds": 336.96,
+      "end_seconds": 338.639,
+      "id": "gQnAQqS83Sk-display-0115",
+      "segment_id": "gQnAQqS83Sk-ja-0040"
+    },
+    {
+      "text": "なぜなら証明できるんです。私は野球が",
+      "start_seconds": 338.639,
+      "end_seconds": 341.28,
+      "id": "gQnAQqS83Sk-display-0116",
+      "segment_id": "gQnAQqS83Sk-ja-0041"
+    },
+    {
+      "text": "上手である。これ野球が上手でないのは私",
+      "start_seconds": 341.28,
+      "end_seconds": 345.72,
+      "id": "gQnAQqS83Sk-display-0117",
+      "segment_id": "gQnAQqS83Sk-ja-0041"
+    },
+    {
+      "text": "ではないということと審議が1番しかも",
+      "start_seconds": 345.72,
+      "end_seconds": 348.08,
+      "id": "gQnAQqS83Sk-display-0118",
+      "segment_id": "gQnAQqS83Sk-ja-0041"
+    },
+    {
+      "text": "格小の原理がある。では早速河川河に行っ",
+      "start_seconds": 348.08,
+      "end_seconds": 351.6,
+      "id": "gQnAQqS83Sk-display-0119",
+      "segment_id": "gQnAQqS83Sk-ja-0042"
+    },
+    {
+      "text": "て小学生がやってる野球を見てみましょう",
+      "start_seconds": 351.6,
+      "end_seconds": 354.36,
+      "id": "gQnAQqS83Sk-display-0120",
+      "segment_id": "gQnAQqS83Sk-ja-0042"
+    },
+    {
+      "text": "ね。あ、あの子当下手だな。",
+      "start_seconds": 354.36,
+      "end_seconds": 357.8,
+      "id": "gQnAQqS83Sk-display-0121",
+      "segment_id": "gQnAQqS83Sk-ja-0042"
+    },
+    {
+      "text": "下手野球が下手。しかも私ではない。",
+      "start_seconds": 357.8,
+      "end_seconds": 360.56,
+      "id": "gQnAQqS83Sk-display-0122",
+      "segment_id": "gQnAQqS83Sk-ja-0043"
+    },
+    {
+      "text": "つまりこれは私が野球であることの証明に",
+      "start_seconds": 360.56,
+      "end_seconds": 363.4,
+      "id": "gQnAQqS83Sk-display-0123",
+      "segment_id": "gQnAQqS83Sk-ja-0044"
+    },
+    {
+      "text": "なるのではということです。その前に練習",
+      "start_seconds": 363.4,
+      "end_seconds": 366.479,
+      "id": "gQnAQqS83Sk-display-0124",
+      "segment_id": "gQnAQqS83Sk-ja-0044"
+    },
+    {
+      "text": "しろよと思いますけども、私気づいたん",
+      "start_seconds": 366.479,
+      "end_seconds": 368.479,
+      "id": "gQnAQqS83Sk-display-0125",
+      "segment_id": "gQnAQqS83Sk-ja-0044"
+    },
+    {
+      "text": "です。破線時期でお父さんお母さんでも",
+      "start_seconds": 368.479,
+      "end_seconds": 372.0,
+      "id": "gQnAQqS83Sk-display-0126",
+      "segment_id": "gQnAQqS83Sk-ja-0044"
+    },
+    {
+      "text": "ないのに1日こうやって見てる人いました",
+      "start_seconds": 372.0,
+      "end_seconds": 374.319,
+      "id": "gQnAQqS83Sk-display-0127",
+      "segment_id": "gQnAQqS83Sk-ja-0045"
+    },
+    {
+      "text": "よね。皆さんも多分想像つくと思います。",
+      "start_seconds": 374.319,
+      "end_seconds": 376.68,
+      "id": "gQnAQqS83Sk-display-0128",
+      "segment_id": "gQnAQqS83Sk-ja-0045"
+    },
+    {
+      "text": "あの方多分自分の証明をしてたんですね。",
+      "start_seconds": 376.68,
+      "end_seconds": 380.8,
+      "id": "gQnAQqS83Sk-display-0129",
+      "segment_id": "gQnAQqS83Sk-ja-0046"
+    },
+    {
+      "text": "多いですよね。実学者でした実は。でも実",
+      "start_seconds": 380.8,
+      "end_seconds": 384.0,
+      "id": "gQnAQqS83Sk-display-0130",
+      "segment_id": "gQnAQqS83Sk-ja-0047"
+    },
+    {
+      "text": "は我々SNSを開くとこれと近いことやっ",
+      "start_seconds": 384.0,
+      "end_seconds": 386.56,
+      "id": "gQnAQqS83Sk-display-0131",
+      "segment_id": "gQnAQqS83Sk-ja-0047"
+    },
+    {
+      "text": "てるかもしれません。SNSを開くと",
+      "start_seconds": 386.56,
+      "end_seconds": 389.56,
+      "id": "gQnAQqS83Sk-display-0132",
+      "segment_id": "gQnAQqS83Sk-ja-0047"
+    },
+    {
+      "text": "アルゴリズムがあなたが見たい情報を選ん",
+      "start_seconds": 389.56,
+      "end_seconds": 391.56,
+      "id": "gQnAQqS83Sk-display-0133",
+      "segment_id": "gQnAQqS83Sk-ja-0047"
+    },
+    {
+      "text": "でくれます。するとだんだんあなたが賛成",
+      "start_seconds": 391.56,
+      "end_seconds": 394.52,
+      "id": "gQnAQqS83Sk-display-0134",
+      "segment_id": "gQnAQqS83Sk-ja-0048"
+    },
+    {
+      "text": "できるもの、あなたと一緒な意見だけが",
+      "start_seconds": 394.52,
+      "end_seconds": 396.52,
+      "id": "gQnAQqS83Sk-display-0135",
+      "segment_id": "gQnAQqS83Sk-ja-0048"
+    },
+    {
+      "text": "どんどん集まってくること。そうすると",
+      "start_seconds": 396.52,
+      "end_seconds": 399.12,
+      "id": "gQnAQqS83Sk-display-0136",
+      "segment_id": "gQnAQqS83Sk-ja-0048"
+    },
+    {
+      "text": "どうなるでしょう?SNS上ではあなたの",
+      "start_seconds": 399.12,
+      "end_seconds": 402.8,
+      "id": "gQnAQqS83Sk-display-0137",
+      "segment_id": "gQnAQqS83Sk-ja-0048"
+    },
+    {
+      "text": "意見を証明するデータだけがだんだん",
+      "start_seconds": 402.8,
+      "end_seconds": 405.759,
+      "id": "gQnAQqS83Sk-display-0138",
+      "segment_id": "gQnAQqS83Sk-ja-0049"
+    },
+    {
+      "text": "集まってくることになります。これを",
+      "start_seconds": 405.759,
+      "end_seconds": 407.919,
+      "id": "gQnAQqS83Sk-display-0139",
+      "segment_id": "gQnAQqS83Sk-ja-0049"
+    },
+    {
+      "text": "フィルターバブルという風に。",
+      "start_seconds": 407.919,
+      "end_seconds": 411.52,
+      "id": "gQnAQqS83Sk-display-0140",
+      "segment_id": "gQnAQqS83Sk-ja-0049"
+    },
+    {
+      "text": "さて、話脱出しましたけども、頻度主義",
+      "start_seconds": 411.52,
+      "end_seconds": 413.96,
+      "id": "gQnAQqS83Sk-display-0141",
+      "segment_id": "gQnAQqS83Sk-ja-0050"
+    },
+    {
+      "text": "統計というのは一部のデータから全体の",
+      "start_seconds": 413.96,
+      "end_seconds": 416.72,
+      "id": "gQnAQqS83Sk-display-0142",
+      "segment_id": "gQnAQqS83Sk-ja-0050"
+    },
+    {
+      "text": "ばらつきや平均を推定するものです。では",
+      "start_seconds": 416.72,
+      "end_seconds": 420.36,
+      "id": "gQnAQqS83Sk-display-0143",
+      "segment_id": "gQnAQqS83Sk-ja-0050"
+    },
+    {
+      "text": "、因果が知りたくなったらどうするか?",
+      "start_seconds": 420.36,
+      "end_seconds": 422.4,
+      "id": "gQnAQqS83Sk-display-0144",
+      "segment_id": "gQnAQqS83Sk-ja-0050"
+    },
+    {
+      "text": "理由を知りたくなったら、例えば今日の例",
+      "start_seconds": 422.4,
+      "end_seconds": 424.8,
+      "id": "gQnAQqS83Sk-display-0145",
+      "segment_id": "gQnAQqS83Sk-ja-0051"
+    },
+    {
+      "text": "で言うと、今日参加されてる皆さんの将来",
+      "start_seconds": 424.8,
+      "end_seconds": 428.28,
+      "id": "gQnAQqS83Sk-display-0146",
+      "segment_id": "gQnAQqS83Sk-ja-0051"
+    },
+    {
+      "text": "の幸せに及ぼす影響について知りたい場合",
+      "start_seconds": 428.28,
+      "end_seconds": 431.08,
+      "id": "gQnAQqS83Sk-display-0147",
+      "segment_id": "gQnAQqS83Sk-ja-0051"
+    },
+    {
+      "text": "、これ簡単そうですよね。参加されている",
+      "start_seconds": 431.08,
+      "end_seconds": 434.56,
+      "id": "gQnAQqS83Sk-display-0148",
+      "segment_id": "gQnAQqS83Sk-ja-0052"
+    },
+    {
+      "text": "皆さんと今日参加されていない方で10年",
+      "start_seconds": 434.56,
+      "end_seconds": 437.8,
+      "id": "gQnAQqS83Sk-display-0149",
+      "segment_id": "gQnAQqS83Sk-ja-0052"
+    },
+    {
+      "text": "後に幸せを比較して皆さんの方が幸せなら",
+      "start_seconds": 437.8,
+      "end_seconds": 441.8,
+      "id": "gQnAQqS83Sk-display-0150",
+      "segment_id": "gQnAQqS83Sk-ja-0052"
+    },
+    {
+      "text": "今日の効果がありそうです。でもふと",
+      "start_seconds": 441.8,
+      "end_seconds": 444.4,
+      "id": "gQnAQqS83Sk-display-0151",
+      "segment_id": "gQnAQqS83Sk-ja-0053"
+    },
+    {
+      "text": "立ち止まって考えてみます。そもそも今日",
+      "start_seconds": 444.4,
+      "end_seconds": 447.639,
+      "id": "gQnAQqS83Sk-display-0152",
+      "segment_id": "gQnAQqS83Sk-ja-0053"
+    },
+    {
+      "text": "いらしてる皆さんどういった方でしょうか",
+      "start_seconds": 447.639,
+      "end_seconds": 449.84,
+      "id": "gQnAQqS83Sk-display-0153",
+      "segment_id": "gQnAQqS83Sk-ja-0053"
+    },
+    {
+      "text": "?多分少し意識の高い方ですよね。新しい",
+      "start_seconds": 449.84,
+      "end_seconds": 455.28,
+      "id": "gQnAQqS83Sk-display-0154",
+      "segment_id": "gQnAQqS83Sk-ja-0054"
+    },
+    {
+      "text": "ことに興味があって面白そうなイベントが",
+      "start_seconds": 455.28,
+      "end_seconds": 457.36,
+      "id": "gQnAQqS83Sk-display-0155",
+      "segment_id": "gQnAQqS83Sk-ja-0054"
+    },
+    {
+      "text": "あったらまず来てみる。そういった方は",
+      "start_seconds": 457.36,
+      "end_seconds": 460.36,
+      "id": "gQnAQqS83Sk-display-0156",
+      "segment_id": "gQnAQqS83Sk-ja-0054"
+    },
+    {
+      "text": "これからもチャレンジし続けるはずです。",
+      "start_seconds": 460.36,
+      "end_seconds": 462.52,
+      "id": "gQnAQqS83Sk-display-0157",
+      "segment_id": "gQnAQqS83Sk-ja-0055"
+    },
+    {
+      "text": "10年後には新しい仕事立ち上げてるかも",
+      "start_seconds": 462.52,
+      "end_seconds": 464.599,
+      "id": "gQnAQqS83Sk-display-0158",
+      "segment_id": "gQnAQqS83Sk-ja-0056"
+    },
+    {
+      "text": "しれない。だからもし皆さんの方が幸せ",
+      "start_seconds": 464.599,
+      "end_seconds": 467.039,
+      "id": "gQnAQqS83Sk-display-0159",
+      "segment_id": "gQnAQqS83Sk-ja-0056"
+    },
+    {
+      "text": "そうだったとしてもそれは今日の効果なの",
+      "start_seconds": 467.039,
+      "end_seconds": 470.36,
+      "id": "gQnAQqS83Sk-display-0160",
+      "segment_id": "gQnAQqS83Sk-ja-0056"
+    },
+    {
+      "text": "かそもそも皆さんが意識が高かったからな",
+      "start_seconds": 470.36,
+      "end_seconds": 473.039,
+      "id": "gQnAQqS83Sk-display-0161",
+      "segment_id": "gQnAQqS83Sk-ja-0056"
+    },
+    {
+      "text": "のか実は分からないんです。これを解決",
+      "start_seconds": 473.039,
+      "end_seconds": 475.599,
+      "id": "gQnAQqS83Sk-display-0162",
+      "segment_id": "gQnAQqS83Sk-ja-0057"
+    },
+    {
+      "text": "するために生まれたのが因果水論です。",
+      "start_seconds": 475.599,
+      "end_seconds": 478.28,
+      "id": "gQnAQqS83Sk-display-0163",
+      "segment_id": "gQnAQqS83Sk-ja-0057"
+    },
+    {
+      "text": "統計学者はこのように考えました。もし",
+      "start_seconds": 478.28,
+      "end_seconds": 480.44,
+      "id": "gQnAQqS83Sk-display-0164",
+      "segment_id": "gQnAQqS83Sk-ja-0058"
+    },
+    {
+      "text": "同じぐらい意識が高くてテレックスに参加",
+      "start_seconds": 480.44,
+      "end_seconds": 483.039,
+      "id": "gQnAQqS83Sk-display-0165",
+      "segment_id": "gQnAQqS83Sk-ja-0058"
+    },
+    {
+      "text": "された方、参加されてない方を比較できた",
+      "start_seconds": 483.039,
+      "end_seconds": 485.44,
+      "id": "gQnAQqS83Sk-display-0166",
+      "segment_id": "gQnAQqS83Sk-ja-0058"
+    },
+    {
+      "text": "。統計はこれを疑似的に再現する方法も",
+      "start_seconds": 485.44,
+      "end_seconds": 488.52,
+      "id": "gQnAQqS83Sk-display-0167",
+      "segment_id": "gQnAQqS83Sk-ja-0058"
+    },
+    {
+      "text": "作りました。それが平均処置効果と呼ば",
+      "start_seconds": 488.52,
+      "end_seconds": 492.199,
+      "id": "gQnAQqS83Sk-display-0168",
+      "segment_id": "gQnAQqS83Sk-ja-0059"
+    },
+    {
+      "text": "れる。ただここで重要なのは平均という",
+      "start_seconds": 492.199,
+      "end_seconds": 495.72,
+      "id": "gQnAQqS83Sk-display-0169",
+      "segment_id": "gQnAQqS83Sk-ja-0059"
+    },
+    {
+      "text": "言葉です。",
+      "start_seconds": 495.72,
+      "end_seconds": 498.159,
+      "id": "gQnAQqS83Sk-display-0170",
+      "segment_id": "gQnAQqS83Sk-ja-0059"
+    },
+    {
+      "text": "因論が教えてくれるのは参加されてる皆",
+      "start_seconds": 498.159,
+      "end_seconds": 500.96,
+      "id": "gQnAQqS83Sk-display-0171",
+      "segment_id": "gQnAQqS83Sk-ja-0060"
+    },
+    {
+      "text": "さんの平均的な効果。これは統計的には",
+      "start_seconds": 500.96,
+      "end_seconds": 505.199,
+      "id": "gQnAQqS83Sk-display-0172",
+      "segment_id": "gQnAQqS83Sk-ja-0060"
+    },
+    {
+      "text": "極めて誠実な答えだと思いますけども、",
+      "start_seconds": 505.199,
+      "end_seconds": 508.28,
+      "id": "gQnAQqS83Sk-display-0173",
+      "segment_id": "gQnAQqS83Sk-ja-0060"
+    },
+    {
+      "text": "それをそのまま皆さんの人生に当てはめる",
+      "start_seconds": 508.28,
+      "end_seconds": 510.24,
+      "id": "gQnAQqS83Sk-display-0174",
+      "segment_id": "gQnAQqS83Sk-ja-0061"
+    },
+    {
+      "text": "ことというのはできません。なぜなら",
+      "start_seconds": 510.24,
+      "end_seconds": 512.36,
+      "id": "gQnAQqS83Sk-display-0175",
+      "segment_id": "gQnAQqS83Sk-ja-0061"
+    },
+    {
+      "text": "あなたの人生は平均ではないからです。",
+      "start_seconds": 512.36,
+      "end_seconds": 516.159,
+      "id": "gQnAQqS83Sk-display-0176",
+      "segment_id": "gQnAQqS83Sk-ja-0061"
+    },
+    {
+      "text": "ですが、この限界を受け入れたまま極限",
+      "start_seconds": 516.159,
+      "end_seconds": 519.159,
+      "id": "gQnAQqS83Sk-display-0177",
+      "segment_id": "gQnAQqS83Sk-ja-0062"
+    },
+    {
+      "text": "まで予測だけを高めた技術があります。",
+      "start_seconds": 519.159,
+      "end_seconds": 521.599,
+      "id": "gQnAQqS83Sk-display-0178",
+      "segment_id": "gQnAQqS83Sk-ja-0062"
+    },
+    {
+      "text": "これが真層学習です。真層学習には様々な",
+      "start_seconds": 521.599,
+      "end_seconds": 525.279,
+      "id": "gQnAQqS83Sk-display-0179",
+      "segment_id": "gQnAQqS83Sk-ja-0063"
+    },
+    {
+      "text": "モデルがあります。画像を認識するもの、",
+      "start_seconds": 525.279,
+      "end_seconds": 528.279,
+      "id": "gQnAQqS83Sk-display-0180",
+      "segment_id": "gQnAQqS83Sk-ja-0063"
+    },
+    {
+      "text": "そして言語を理解する。皆様前に使って",
+      "start_seconds": 528.279,
+      "end_seconds": 530.88,
+      "id": "gQnAQqS83Sk-display-0181",
+      "segment_id": "gQnAQqS83Sk-ja-0063"
+    },
+    {
+      "text": "いるはずです。例えばスマホの画像認識",
+      "start_seconds": 530.88,
+      "end_seconds": 533.399,
+      "id": "gQnAQqS83Sk-display-0182",
+      "segment_id": "gQnAQqS83Sk-ja-0063"
+    },
+    {
+      "text": "だったりチャットで",
+      "start_seconds": 533.399,
+      "end_seconds": 535.92,
+      "id": "gQnAQqS83Sk-display-0183",
+      "segment_id": "gQnAQqS83Sk-ja-0064"
+    },
+    {
+      "text": "しかし真層学習というのは原因を理解",
+      "start_seconds": 535.92,
+      "end_seconds": 539.0,
+      "id": "gQnAQqS83Sk-display-0184",
+      "segment_id": "gQnAQqS83Sk-ja-0064"
+    },
+    {
+      "text": "しようとはしません。ただ分布を学習し",
+      "start_seconds": 539.0,
+      "end_seconds": 542.04,
+      "id": "gQnAQqS83Sk-display-0185",
+      "segment_id": "gQnAQqS83Sk-ja-0064"
+    },
+    {
+      "text": "ます。ただ予測を当てることだけに注目し",
+      "start_seconds": 542.04,
+      "end_seconds": 544.68,
+      "id": "gQnAQqS83Sk-display-0186",
+      "segment_id": "gQnAQqS83Sk-ja-0064"
+    },
+    {
+      "text": "ます。そしてその分布の中ではあなたは",
+      "start_seconds": 544.68,
+      "end_seconds": 548.079,
+      "id": "gQnAQqS83Sk-display-0187",
+      "segment_id": "gQnAQqS83Sk-ja-0065"
+    },
+    {
+      "text": "あなたではなくてあなたに似た人として",
+      "start_seconds": 548.079,
+      "end_seconds": 551.56,
+      "id": "gQnAQqS83Sk-display-0188",
+      "segment_id": "gQnAQqS83Sk-ja-0065"
+    },
+    {
+      "text": "取り扱われることになります。幻層学種は",
+      "start_seconds": 551.56,
+      "end_seconds": 554.839,
+      "id": "gQnAQqS83Sk-display-0189",
+      "segment_id": "gQnAQqS83Sk-ja-0065"
+    },
+    {
+      "text": "あなたに似た人を見つけることができます",
+      "start_seconds": 554.839,
+      "end_seconds": 556.72,
+      "id": "gQnAQqS83Sk-display-0190",
+      "segment_id": "gQnAQqS83Sk-ja-0066"
+    },
+    {
+      "text": "。あなたの年齢、趣味、行動履歴こうした",
+      "start_seconds": 556.72,
+      "end_seconds": 560.959,
+      "id": "gQnAQqS83Sk-display-0191",
+      "segment_id": "gQnAQqS83Sk-ja-0066"
+    },
+    {
+      "text": "データからあなたが次に何を買うのか、次",
+      "start_seconds": 560.959,
+      "end_seconds": 563.12,
+      "id": "gQnAQqS83Sk-display-0192",
+      "segment_id": "gQnAQqS83Sk-ja-0066"
+    },
+    {
+      "text": "に何を見るのか制度で予測できます。それ",
+      "start_seconds": 563.12,
+      "end_seconds": 566.399,
+      "id": "gQnAQqS83Sk-display-0193",
+      "segment_id": "gQnAQqS83Sk-ja-0066"
+    },
+    {
+      "text": "は確かに便利な社会です。ですが、もし",
+      "start_seconds": 566.399,
+      "end_seconds": 570.44,
+      "id": "gQnAQqS83Sk-display-0194",
+      "segment_id": "gQnAQqS83Sk-ja-0067"
+    },
+    {
+      "text": "あなたに似た人が犯罪を起こしやすい",
+      "start_seconds": 570.44,
+      "end_seconds": 573.88,
+      "id": "gQnAQqS83Sk-display-0195",
+      "segment_id": "gQnAQqS83Sk-ja-0067"
+    },
+    {
+      "text": "グループにあると判断されたらどう",
+      "start_seconds": 573.88,
+      "end_seconds": 575.519,
+      "id": "gQnAQqS83Sk-display-0196",
+      "segment_id": "gQnAQqS83Sk-ja-0067"
+    },
+    {
+      "text": "でしょう?機械将来あなたは何もしてい",
+      "start_seconds": 575.519,
+      "end_seconds": 577.839,
+      "id": "gQnAQqS83Sk-display-0197",
+      "segment_id": "gQnAQqS83Sk-ja-0067"
+    },
+    {
+      "text": "ないのに念のためという理由で隔離される",
+      "start_seconds": 577.839,
+      "end_seconds": 581.2,
+      "id": "gQnAQqS83Sk-display-0198",
+      "segment_id": "gQnAQqS83Sk-ja-0068"
+    },
+    {
+      "text": "かもしれない。それはもうあなたが何をし",
+      "start_seconds": 581.2,
+      "end_seconds": 583.32,
+      "id": "gQnAQqS83Sk-display-0199",
+      "segment_id": "gQnAQqS83Sk-ja-0068"
+    },
+    {
+      "text": "たかではなくて誰に似ているかで評価さ",
+      "start_seconds": 583.32,
+      "end_seconds": 586.32,
+      "id": "gQnAQqS83Sk-display-0200",
+      "segment_id": "gQnAQqS83Sk-ja-0068"
+    },
+    {
+      "text": "れる社会です。そしてもっと大事なことが",
+      "start_seconds": 586.32,
+      "end_seconds": 589.279,
+      "id": "gQnAQqS83Sk-display-0201",
+      "segment_id": "gQnAQqS83Sk-ja-0068"
+    },
+    {
+      "text": "あります。",
+      "start_seconds": 589.279,
+      "end_seconds": 591.2,
+      "id": "gQnAQqS83Sk-display-0202",
+      "segment_id": "gQnAQqS83Sk-ja-0069"
+    },
+    {
+      "text": "それは真層学習というのはあなたの幸せは",
+      "start_seconds": 591.2,
+      "end_seconds": 595.76,
+      "id": "gQnAQqS83Sk-display-0203",
+      "segment_id": "gQnAQqS83Sk-ja-0070"
+    },
+    {
+      "text": "予測できないということ。なぜならあなた",
+      "start_seconds": 595.76,
+      "end_seconds": 598.24,
+      "id": "gQnAQqS83Sk-display-0204",
+      "segment_id": "gQnAQqS83Sk-ja-0070"
+    },
+    {
+      "text": "の幸せというのは文婦ではなくて経験だ",
+      "start_seconds": 598.24,
+      "end_seconds": 602.2,
+      "id": "gQnAQqS83Sk-display-0205",
+      "segment_id": "gQnAQqS83Sk-ja-0070"
+    },
+    {
+      "text": "からです。我々の人生は1回切りです。",
+      "start_seconds": 602.2,
+      "end_seconds": 605.68,
+      "id": "gQnAQqS83Sk-display-0206",
+      "segment_id": "gQnAQqS83Sk-ja-0071"
+    },
+    {
+      "text": "つまりサンプルサイズで言うとn=1です",
+      "start_seconds": 605.68,
+      "end_seconds": 607.959,
+      "id": "gQnAQqS83Sk-display-0207",
+      "segment_id": "gQnAQqS83Sk-ja-0072"
+    },
+    {
+      "text": "。だから我々は我々の人生の中で実験を",
+      "start_seconds": 607.959,
+      "end_seconds": 612.12,
+      "id": "gQnAQqS83Sk-display-0208",
+      "segment_id": "gQnAQqS83Sk-ja-0072"
+    },
+    {
+      "text": "繰り返す。さて、私は最初にこの問いをさ",
+      "start_seconds": 612.12,
+      "end_seconds": 616.04,
+      "id": "gQnAQqS83Sk-display-0209",
+      "segment_id": "gQnAQqS83Sk-ja-0072"
+    },
+    {
+      "text": "せました。この問について考えるために",
+      "start_seconds": 616.04,
+      "end_seconds": 618.04,
+      "id": "gQnAQqS83Sk-display-0210",
+      "segment_id": "gQnAQqS83Sk-ja-0073"
+    },
+    {
+      "text": "統計についてご紹介します。統計というの",
+      "start_seconds": 618.04,
+      "end_seconds": 620.04,
+      "id": "gQnAQqS83Sk-display-0211",
+      "segment_id": "gQnAQqS83Sk-ja-0073"
+    },
+    {
+      "text": "はサンプルサイズが大きなものから",
+      "start_seconds": 620.04,
+      "end_seconds": 621.92,
+      "id": "gQnAQqS83Sk-display-0212",
+      "segment_id": "gQnAQqS83Sk-ja-0073"
+    },
+    {
+      "text": "何かしらを見い出すもの",
+      "start_seconds": 621.92,
+      "end_seconds": 624.36,
+      "id": "gQnAQqS83Sk-display-0213",
+      "segment_id": "gQnAQqS83Sk-ja-0073"
+    },
+    {
+      "text": "ですが、我々の人生は1回切れます。では",
+      "start_seconds": 624.36,
+      "end_seconds": 626.88,
+      "id": "gQnAQqS83Sk-display-0214",
+      "segment_id": "gQnAQqS83Sk-ja-0073"
+    },
+    {
+      "text": "どうやってこの問題に立ち向かうでしょう",
+      "start_seconds": 626.88,
+      "end_seconds": 628.88,
+      "id": "gQnAQqS83Sk-display-0215",
+      "segment_id": "gQnAQqS83Sk-ja-0074"
+    },
+    {
+      "text": "か?",
+      "start_seconds": 628.88,
+      "end_seconds": 631.44,
+      "id": "gQnAQqS83Sk-display-0216",
+      "segment_id": "gQnAQqS83Sk-ja-0074"
+    },
+    {
+      "text": "両方には大きく分けて2つあります。",
+      "start_seconds": 631.44,
+      "end_seconds": 633.959,
+      "id": "gQnAQqS83Sk-display-0217",
+      "segment_id": "gQnAQqS83Sk-ja-0075"
+    },
+    {
+      "text": "プッシュ型とフル型。プッシュ型というの",
+      "start_seconds": 633.959,
+      "end_seconds": 637.399,
+      "id": "gQnAQqS83Sk-display-0218",
+      "segment_id": "gQnAQqS83Sk-ja-0076"
+    },
+    {
+      "text": "は向こうから押し付けられる情報です。",
+      "start_seconds": 637.399,
+      "end_seconds": 641.24,
+      "id": "gQnAQqS83Sk-display-0219",
+      "segment_id": "gQnAQqS83Sk-ja-0076"
+    },
+    {
+      "text": "つまり向こうからやってくるところ。",
+      "start_seconds": 641.24,
+      "end_seconds": 643.56,
+      "id": "gQnAQqS83Sk-display-0220",
+      "segment_id": "gQnAQqS83Sk-ja-0077"
+    },
+    {
+      "text": "例えばSNS、例えば動画です。対面でも",
+      "start_seconds": 643.56,
+      "end_seconds": 647.24,
+      "id": "gQnAQqS83Sk-display-0221",
+      "segment_id": "gQnAQqS83Sk-ja-0078"
+    },
+    {
+      "text": "例えば授業がこれに対応します。同じ言葉",
+      "start_seconds": 647.24,
+      "end_seconds": 651.0,
+      "id": "gQnAQqS83Sk-display-0222",
+      "segment_id": "gQnAQqS83Sk-ja-0078"
+    },
+    {
+      "text": "でも私は3種類あると思います。誰かの",
+      "start_seconds": 651.0,
+      "end_seconds": 653.88,
+      "id": "gQnAQqS83Sk-display-0223",
+      "segment_id": "gQnAQqS83Sk-ja-0078"
+    },
+    {
+      "text": "言葉をただコピーしていること。1度自分",
+      "start_seconds": 653.88,
+      "end_seconds": 656.48,
+      "id": "gQnAQqS83Sk-display-0224",
+      "segment_id": "gQnAQqS83Sk-ja-0079"
+    },
+    {
+      "text": "で考えて言い換えてることで実際に実践し",
+      "start_seconds": 656.48,
+      "end_seconds": 661.279,
+      "id": "gQnAQqS83Sk-display-0225",
+      "segment_id": "gQnAQqS83Sk-ja-0079"
+    },
+    {
+      "text": "ている言葉です。同じ言葉でもこれらは",
+      "start_seconds": 661.279,
+      "end_seconds": 665.079,
+      "id": "gQnAQqS83Sk-display-0226",
+      "segment_id": "gQnAQqS83Sk-ja-0079"
+    },
+    {
+      "text": "重みが全く違います。誰が話しているのか",
+      "start_seconds": 665.079,
+      "end_seconds": 669.04,
+      "id": "gQnAQqS83Sk-display-0227",
+      "segment_id": "gQnAQqS83Sk-ja-0080"
+    },
+    {
+      "text": "ではなくてその基準で物事を見ることが",
+      "start_seconds": 669.04,
+      "end_seconds": 672.8,
+      "id": "gQnAQqS83Sk-display-0228",
+      "segment_id": "gQnAQqS83Sk-ja-0080"
+    },
+    {
+      "text": "大事だと。",
+      "start_seconds": 672.8,
+      "end_seconds": 675.0,
+      "id": "gQnAQqS83Sk-display-0229",
+      "segment_id": "gQnAQqS83Sk-ja-0080"
+    },
+    {
+      "text": "そして古型は立ってくる情報です。例えば",
+      "start_seconds": 675.0,
+      "end_seconds": 679.079,
+      "id": "gQnAQqS83Sk-display-0230",
+      "segment_id": "gQnAQqS83Sk-ja-0081"
+    },
+    {
+      "text": "チャットGPTやジェネクション例えば",
+      "start_seconds": 679.079,
+      "end_seconds": 682.04,
+      "id": "gQnAQqS83Sk-display-0231",
+      "segment_id": "gQnAQqS83Sk-ja-0081"
+    },
+    {
+      "text": "最強型の情報というのはサンプルサイズで",
+      "start_seconds": 682.04,
+      "end_seconds": 685.639,
+      "id": "gQnAQqS83Sk-display-0232",
+      "segment_id": "gQnAQqS83Sk-ja-0081"
+    },
+    {
+      "text": "言うと1位です。大切なのはプッシュを",
+      "start_seconds": 685.639,
+      "end_seconds": 690.24,
+      "id": "gQnAQqS83Sk-display-0233",
+      "segment_id": "gQnAQqS83Sk-ja-0082"
+    },
+    {
+      "text": "避けることではないと思います。プッシュ",
+      "start_seconds": 690.24,
+      "end_seconds": 692.44,
+      "id": "gQnAQqS83Sk-display-0234",
+      "segment_id": "gQnAQqS83Sk-ja-0082"
+    },
+    {
+      "text": "型の特性を理解してスルー型を増やすこと",
+      "start_seconds": 692.44,
+      "end_seconds": 695.399,
+      "id": "gQnAQqS83Sk-display-0235",
+      "segment_id": "gQnAQqS83Sk-ja-0082"
+    },
+    {
+      "text": "になります。誰の言葉を信じるか、どの",
+      "start_seconds": 695.399,
+      "end_seconds": 698.32,
+      "id": "gQnAQqS83Sk-display-0236",
+      "segment_id": "gQnAQqS83Sk-ja-0083"
+    },
+    {
+      "text": "情報を疑うか、どんな実験をしてみるか。",
+      "start_seconds": 698.32,
+      "end_seconds": 700.88,
+      "id": "gQnAQqS83Sk-display-0237",
+      "segment_id": "gQnAQqS83Sk-ja-0083"
+    },
+    {
+      "text": "これをプッシュと古型という枠組で考えて",
+      "start_seconds": 700.88,
+      "end_seconds": 704.68,
+      "id": "gQnAQqS83Sk-display-0238",
+      "segment_id": "gQnAQqS83Sk-ja-0084"
+    },
+    {
+      "text": "みてください。これがきっとあなた自身の",
+      "start_seconds": 704.68,
+      "end_seconds": 707.12,
+      "id": "gQnAQqS83Sk-display-0239",
+      "segment_id": "gQnAQqS83Sk-ja-0084"
+    },
+    {
+      "text": "実験を繰り返す第1歩となるパです。",
+      "start_seconds": 707.12,
+      "end_seconds": 711.92,
+      "id": "gQnAQqS83Sk-display-0240",
+      "segment_id": "gQnAQqS83Sk-ja-0084"
+    },
+    {
+      "text": "統計は世界を説明します。世界は分布で",
+      "start_seconds": 711.92,
+      "end_seconds": 716.279,
+      "id": "gQnAQqS83Sk-display-0241",
+      "segment_id": "gQnAQqS83Sk-ja-0085"
+    },
+    {
+      "text": "できています。そして世界は平均でできて",
+      "start_seconds": 716.279,
+      "end_seconds": 719.0,
+      "id": "gQnAQqS83Sk-display-0242",
+      "segment_id": "gQnAQqS83Sk-ja-0085"
+    },
+    {
+      "text": "います。そしてSNSというフィルターを",
+      "start_seconds": 719.0,
+      "end_seconds": 721.92,
+      "id": "gQnAQqS83Sk-display-0243",
+      "segment_id": "gQnAQqS83Sk-ja-0085"
+    },
+    {
+      "text": "通している世界というのはとても派手です",
+      "start_seconds": 721.92,
+      "end_seconds": 725.04,
+      "id": "gQnAQqS83Sk-display-0244",
+      "segment_id": "gQnAQqS83Sk-ja-0086"
+    },
+    {
+      "text": "。抵抗し続ける方法を通って幸せそうな",
+      "start_seconds": 725.04,
+      "end_seconds": 728.68,
+      "id": "gQnAQqS83Sk-display-0245",
+      "segment_id": "gQnAQqS83Sk-ja-0086"
+    },
+    {
+      "text": "写真。でもあなたの人生は違います。",
+      "start_seconds": 728.68,
+      "end_seconds": 733.32,
+      "id": "gQnAQqS83Sk-display-0246",
+      "segment_id": "gQnAQqS83Sk-ja-0086"
+    },
+    {
+      "text": "人生は平均ではありません。そしてあなた",
+      "start_seconds": 733.32,
+      "end_seconds": 736.279,
+      "id": "gQnAQqS83Sk-display-0247",
+      "segment_id": "gQnAQqS83Sk-ja-0087"
+    },
+    {
+      "text": "は分布の一部なんかではありません。",
+      "start_seconds": 736.279,
+      "end_seconds": 740.0,
+      "id": "gQnAQqS83Sk-display-0248",
+      "segment_id": "gQnAQqS83Sk-ja-0087"
+    },
+    {
+      "text": "あなたの人生はn=1という実験の",
+      "start_seconds": 740.0,
+      "end_seconds": 743.04,
+      "id": "gQnAQqS83Sk-display-0249",
+      "segment_id": "gQnAQqS83Sk-ja-0088"
+    },
+    {
+      "text": "繰り返しです。そして実験というのは大抵",
+      "start_seconds": 743.04,
+      "end_seconds": 746.399,
+      "id": "gQnAQqS83Sk-display-0250",
+      "segment_id": "gQnAQqS83Sk-ja-0088"
+    },
+    {
+      "text": "とてもとても地味です。どうなるか分から",
+      "start_seconds": 746.399,
+      "end_seconds": 749.279,
+      "id": "gQnAQqS83Sk-display-0251",
+      "segment_id": "gQnAQqS83Sk-ja-0088"
+    },
+    {
+      "text": "ないことをやって少し失敗してまた修正し",
+      "start_seconds": 749.279,
+      "end_seconds": 752.32,
+      "id": "gQnAQqS83Sk-display-0252",
+      "segment_id": "gQnAQqS83Sk-ja-0089"
+    },
+    {
+      "text": "てそれの繰り返しでもその人生結果そして",
+      "start_seconds": 752.32,
+      "end_seconds": 757.079,
+      "id": "gQnAQqS83Sk-display-0253",
+      "segment_id": "gQnAQqS83Sk-ja-0089"
+    },
+    {
+      "text": "実験結果これを受け取ることができるのは",
+      "start_seconds": 757.079,
+      "end_seconds": 759.639,
+      "id": "gQnAQqS83Sk-display-0254",
+      "segment_id": "gQnAQqS83Sk-ja-0089"
+    },
+    {
+      "text": "あなただけです。",
+      "start_seconds": 759.639,
+      "end_seconds": 763.839,
+      "id": "gQnAQqS83Sk-display-0255",
+      "segment_id": "gQnAQqS83Sk-ja-0090"
+    },
+    {
+      "text": "統計は世界を説明します。も人生を説明",
+      "start_seconds": 766.24,
+      "end_seconds": 770.399,
+      "id": "gQnAQqS83Sk-display-0256",
+      "segment_id": "gQnAQqS83Sk-ja-0091"
+    },
+    {
+      "text": "するのはあなた自身の実験だと私は思い",
+      "start_seconds": 770.399,
+      "end_seconds": 774.8,
+      "id": "gQnAQqS83Sk-display-0257",
+      "segment_id": "gQnAQqS83Sk-ja-0091"
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 774.8,
+      "end_seconds": 777.959,
+      "id": "gQnAQqS83Sk-display-0258",
+      "segment_id": "gQnAQqS83Sk-ja-0091"
+    }
+  ]
+}

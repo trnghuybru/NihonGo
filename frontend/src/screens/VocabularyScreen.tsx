@@ -1,3 +1,4 @@
+import { useBottomNavigationInset } from '../hooks/useBottomNavigationInset';
 // @refresh reset
 // Remount during Fast Refresh when the screen's hook layout changes.
 import { memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
@@ -304,6 +305,7 @@ export function VocabularyScreen({
   compact?: boolean;
 }) {
   const insets = useSafeAreaInsets();
+  const navigationInset = useBottomNavigationInset();
   const { width: windowWidth, fontScale } = useWindowDimensions();
   const lessonColumns =
     windowWidth >= 360 && fontScale <= 1.15
@@ -919,7 +921,11 @@ export function VocabularyScreen({
         data={state.status === 'ready' ? state.data.items : []}
         renderItem={renderItem}
         keyExtractor={keyExtractor}
-        contentContainerStyle={contentStyle}
+        contentContainerStyle={[
+          contentStyle,
+          { paddingBottom: navigationInset + spacing.section },
+        ]}
+        scrollIndicatorInsets={{ bottom: navigationInset }}
         ListHeaderComponent={header}
         keyboardShouldPersistTaps="handled"
         keyboardDismissMode="on-drag"

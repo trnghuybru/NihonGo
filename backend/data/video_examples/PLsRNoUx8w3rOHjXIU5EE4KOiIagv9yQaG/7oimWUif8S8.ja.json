@@ -1,0 +1,4974 @@
+{
+  "schema_version": 1,
+  "video": {
+    "youtube_id": "7oimWUif8S8",
+    "title": "「そうじ力」で地球磨き！Clean Your Space, Change the World: Souji-ryoku | Mitsuhiro Masuda 舛田光洋 | TEDxMarunouchi",
+    "channel": "TEDx Talks",
+    "duration_seconds": 1073
+  },
+  "caption_track": {
+    "language": "ja",
+    "kind": "asr",
+    "source": "youtube_automatic"
+  },
+  "source_playlist": "https://www.youtube.com/playlist?list=PLsRNoUx8w3rOHjXIU5EE4KOiIagv9yQaG",
+  "fetched_at": "2026-10-13T13:23:58.068792+00:00",
+  "segment_count": 109,
+  "segments": [
+    {
+      "text": "[音楽]",
+      "start_seconds": 9.825,
+      "end_seconds": 11.844999999999999,
+      "id": "7oimWUif8S8-ja-0001",
+      "sequence": 1
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 13.755,
+      "end_seconds": 15.775,
+      "id": "7oimWUif8S8-ja-0002",
+      "sequence": 2
+    },
+    {
+      "text": "部屋が綺麗な人も汚い人も最高。掃除力の増田光です。さあ、皆さんこれから不思議な掃除のお話をします。まずはどう",
+      "start_seconds": 21.199,
+      "end_seconds": 32.52,
+      "id": "7oimWUif8S8-ja-0003",
+      "sequence": 3
+    },
+    {
+      "text": "でしょうか?皆さん、お掃除好きな人どのくらいいますか?",
+      "start_seconds": 32.52,
+      "end_seconds": 37.52,
+      "id": "7oimWUif8S8-ja-0004",
+      "sequence": 4
+    },
+    {
+      "text": "お、あ、パラパラバットね。はい。はい。",
+      "start_seconds": 37.52,
+      "end_seconds": 41.36,
+      "id": "7oimWUif8S8-ja-0005",
+      "sequence": 5
+    },
+    {
+      "text": "多くの人は苦手という感じでしょうか。では、苦手であっても部屋が綺麗な方がいいと思う人はどのくらいいますか?あ、ここ",
+      "start_seconds": 41.36,
+      "end_seconds": 51.32,
+      "id": "7oimWUif8S8-ja-0006",
+      "sequence": 6
+    },
+    {
+      "text": "は全員ね、ちょっと今どうしようかなと思って揚げ損ねた人は汚くてもいいってことになっちゃいますからね。ということで、えっと、ま、ちょっとですね、今日は",
+      "start_seconds": 51.32,
+      "end_seconds": 63.239,
+      "id": "7oimWUif8S8-ja-0007",
+      "sequence": 7
+    },
+    {
+      "text": "単なる掃除の話ではないんです。掃除だとですね、平和は綺麗になりますけれども、僕が今日皆さんにお伝えしたい掃除の力と",
+      "start_seconds": 63.239,
+      "end_seconds": 73.36,
+      "id": "7oimWUif8S8-ja-0008",
+      "sequence": 8
+    },
+    {
+      "text": "いうのは、なんと人生をより良い方向に向かわせる力なんです。もう少し具体的に言うとこの力を使った人たちはですね、",
+      "start_seconds": 73.36,
+      "end_seconds": 83.04,
+      "id": "7oimWUif8S8-ja-0009",
+      "sequence": 9
+    },
+    {
+      "text": "例えば学生であれば学力が上がります。",
+      "start_seconds": 83.04,
+      "end_seconds": 86.32,
+      "id": "7oimWUif8S8-ja-0010",
+      "sequence": 10
+    },
+    {
+      "text": "学力が上かり脂肪も何段階か上にアップして合格してですね、これはもう世界いろんなところでお話しさせていただきますけど国関係なくお母さんと一緒に来て",
+      "start_seconds": 86.32,
+      "end_seconds": 98.0,
+      "id": "7oimWUif8S8-ja-0011",
+      "sequence": 11
+    },
+    {
+      "text": "、え、死亡ましたっていうお話もいいております。また、あ、潰れそうな飲食店もこの力を使うと行列ができるようになり",
+      "start_seconds": 98.0,
+      "end_seconds": 108.079,
+      "id": "7oimWUif8S8-ja-0012",
+      "sequence": 12
+    },
+    {
+      "text": "ました。ちょっと行けてない方が、あ、この力を使うとモテモテになってですね、そして恋人ができて結婚したという方もい",
+      "start_seconds": 108.079,
+      "end_seconds": 117.159,
+      "id": "7oimWUif8S8-ja-0013",
+      "sequence": 13
+    },
+    {
+      "text": "ます。先日ある講演会に友達の講演会に出ていて、そして、え、エレベーターに乗って帰る途中に、ま、仲間たちがいたんで、",
+      "start_seconds": 117.159,
+      "end_seconds": 128.2,
+      "id": "7oimWUif8S8-ja-0014",
+      "sequence": 14
+    },
+    {
+      "text": "ま、マ田先生掃除力はって話をちょこっとしてたら、そのエレベーターに言わせた1人の女性がこう言ってきたんです。あの、掃除力のマスター先生ですかと言われて",
+      "start_seconds": 128.2,
+      "end_seconds": 139.4,
+      "id": "7oimWUif8S8-ja-0015",
+      "sequence": 15
+    },
+    {
+      "text": "、はいって言ったら17年前に実は私、あの、アドバイスをもらったことがあります。ちょっと記憶がちょっと出てこなかったんですけど、どんなアドバイス",
+      "start_seconds": 139.4,
+      "end_seconds": 149.319,
+      "id": "7oimWUif8S8-ja-0016",
+      "sequence": 16
+    },
+    {
+      "text": "をって言ったらですね、実はあの子供ができなくて悩んでいた話をしたと言うんですね。で、僕は、あ、どんなアドバイスしたんだろうと思ったら、寝室をよく磨き",
+      "start_seconds": 149.319,
+      "end_seconds": 160.959,
+      "id": "7oimWUif8S8-ja-0017",
+      "sequence": 17
+    },
+    {
+      "text": "なさいと、そして、えっと、古い下着きを捨てて新しくしなさいとアドバイスしたらしいんです。その結果、え、なんと息子が17歳になりましたっていうことで、",
+      "start_seconds": 160.959,
+      "end_seconds": 172.92,
+      "id": "7oimWUif8S8-ja-0018",
+      "sequence": 18
+    },
+    {
+      "text": "子供も授かるというこの力ですね。そんな[笑い]、え、不思議な力があるんですけれども、この力にはなぜ、え、そんな力",
+      "start_seconds": 172.92,
+      "end_seconds": 183.36,
+      "id": "7oimWUif8S8-ja-0019",
+      "sequence": 19
+    },
+    {
+      "text": "があるかと言いますと、これは掃除する行為の中に実は心の法則を入れているんですね。心の法則を入れてるから単なる",
+      "start_seconds": 183.36,
+      "end_seconds": 193.959,
+      "id": "7oimWUif8S8-ja-0020",
+      "sequence": 20
+    },
+    {
+      "text": "掃除で終わらないんです。そのキーワードになる言葉を今日お伝えします。これはもう記憶してお家に帰っていただきたい",
+      "start_seconds": 193.959,
+      "end_seconds": 203.12,
+      "id": "7oimWUif8S8-ja-0021",
+      "sequence": 21
+    },
+    {
+      "text": "です。それはあなたの部屋はあなた自身を表すということなんです。ちょっとね、俯ちゃったりね、あっち向いたり、こっち向いたりってなりますよね。大丈夫。",
+      "start_seconds": 203.12,
+      "end_seconds": 214.519,
+      "id": "7oimWUif8S8-ja-0022",
+      "sequence": 22
+    },
+    {
+      "text": "気持ちは分かります。それは後であの救いますんで、あのちょっと待っててください。そしてではですね、まずこの掃除力の",
+      "start_seconds": 214.519,
+      "end_seconds": 223.799,
+      "id": "7oimWUif8S8-ja-0023",
+      "sequence": 23
+    },
+    {
+      "text": "この力ですね。この力にまず最初に僕が気がついたのは心を込めて、え、掃場したという出来事だったのでそのエピソードをお",
+      "start_seconds": 223.799,
+      "end_seconds": 235.079,
+      "id": "7oimWUif8S8-ja-0024",
+      "sequence": 24
+    },
+    {
+      "text": "話しさせていただきます。小学校2年生の頃でした。もう本当にその頃はあの純粋でこのぐらいだったんですけれどもとても可愛く今こなになってますけどもこの",
+      "start_seconds": 235.079,
+      "end_seconds": 246.28,
+      "id": "7oimWUif8S8-ja-0025",
+      "sequence": 25
+    },
+    {
+      "text": "ぐらいイメージ僕でしないでくださいね。",
+      "start_seconds": 246.28,
+      "end_seconds": 248.72,
+      "id": "7oimWUif8S8-ja-0026",
+      "sequence": 26
+    },
+    {
+      "text": "可いらしい子供でした。ある日両親が大喧嘩をしてたんです。そしてそれを初めて見た僕はもう怖くてですね、なんとか止めたいと思ったんですけど全然止まら",
+      "start_seconds": 248.72,
+      "end_seconds": 260.16,
+      "id": "7oimWUif8S8-ja-0027",
+      "sequence": 27
+    },
+    {
+      "text": "ない。それでひらめいたんです。母が洗面上、あ、父がね、洗面上を綺麗にしてた時に母ってとても綺麗好きだったのですごく",
+      "start_seconds": 260.16,
+      "end_seconds": 269.88,
+      "id": "7oimWUif8S8-ja-0028",
+      "sequence": 28
+    },
+    {
+      "text": "喜んでるシーンを思い出したんです。それで僕は慌てて、え、洗面所に行き、なんとかそこにあったタオルとかスポンジを使ってシンクを磨き、そして蛇口をピカピカに",
+      "start_seconds": 269.88,
+      "end_seconds": 281.8,
+      "id": "7oimWUif8S8-ja-0029",
+      "sequence": 29
+    },
+    {
+      "text": "してこう言ったんです。顔を出して大変だ、大変だ。生面所が大変だって言ったんです。そしたら2人は何が何があったんだろうと思って駆けつけてきたんです。",
+      "start_seconds": 281.8,
+      "end_seconds": 293.12,
+      "id": "7oimWUif8S8-ja-0030",
+      "sequence": 30
+    },
+    {
+      "text": "そして駆けつけた2人にこらって言ってですね、洗面所がピカピカだよて言ったんです。そしたら2人は顔を見合わせて笑顔",
+      "start_seconds": 293.12,
+      "end_seconds": 303.039,
+      "id": "7oimWUif8S8-ja-0031",
+      "sequence": 31
+    },
+    {
+      "text": "になったんです。そしてお互いにごめんねって言って、え、僕にもごめんねって言って、そして僕にはありがとうって言ってくれたんです。こ",
+      "start_seconds": 303.039,
+      "end_seconds": 312.56,
+      "id": "7oimWUif8S8-ja-0032",
+      "sequence": 32
+    },
+    {
+      "text": "れってもう僕はすごくその時のことを未だに戦めに覚えてるんですけど僕の心を込めた掃除が喧嘩を止めたんです。争う心ってものを止めたんです。",
+      "start_seconds": 312.56,
+      "end_seconds": 315.56,
+      "id": "7oimWUif8S8-ja-0033",
+      "sequence": 33
+    },
+    {
+      "text": "僕はこれがすごく心に残って掃除が大好きになってその日から洗面所の登板はあの僕になってしまったんですけれどもそれまそれはそれで好きだったんで良かったん",
+      "start_seconds": 326.72,
+      "end_seconds": 337.52,
+      "id": "7oimWUif8S8-ja-0034",
+      "sequence": 34
+    },
+    {
+      "text": "ですなんですけどそんな僕も青年になりロックに目覚めそして作師作曲が大好きだったもんですから夢を叶えるために状況しました。ロックミュージシャンになろう",
+      "start_seconds": 337.52,
+      "end_seconds": 348.08,
+      "id": "7oimWUif8S8-ja-0035",
+      "sequence": 35
+    },
+    {
+      "text": "と思って状況したんです。東京に来てアルバイトでお金がなかったので食べていくためにはアルバイトをしなきゃいけないということで仕事を探しました。",
+      "start_seconds": 348.08,
+      "end_seconds": 358.039,
+      "id": "7oimWUif8S8-ja-0036",
+      "sequence": 36
+    },
+    {
+      "text": "ようやく見つかった仕事が掃除だったんです。ええ、ラッキーと思いました。その頃僕ね、もう掃除嫌いになってました。",
+      "start_seconds": 358.039,
+      "end_seconds": 368.114,
+      "id": "7oimWUif8S8-ja-0037",
+      "sequence": 37
+    },
+    {
+      "text": "[笑い]だってミュージシャンですよ。",
+      "start_seconds": 368.114,
+      "end_seconds": 370.52,
+      "id": "7oimWUif8S8-ja-0038",
+      "sequence": 38
+    },
+    {
+      "text": "ミュージシャンが掃除するの似合わないじゃないですか。格っこあると思ってですね。もうなんか掃除のアルバイトに行くことは本当に嫌でなんか作業服を着て汚い",
+      "start_seconds": 370.52,
+      "end_seconds": 380.919,
+      "id": "7oimWUif8S8-ja-0039",
+      "sequence": 39
+    },
+    {
+      "text": "ところをね綺麗にするて嫌だなと思いながらですねやってたんです。そんなような気持ちでやってるから上司にね、え、も適当にこうやって吐いてたら角にゴミが",
+      "start_seconds": 380.919,
+      "end_seconds": 392.44,
+      "id": "7oimWUif8S8-ja-0040",
+      "sequence": 40
+    },
+    {
+      "text": "詰まってて僕のやった後それを水で流してそうするとその角からね粉が出てきてまた汚くなるからそれで怒鳴られてお前こんな",
+      "start_seconds": 392.44,
+      "end_seconds": 403.0,
+      "id": "7oimWUif8S8-ja-0041",
+      "sequence": 41
+    },
+    {
+      "text": "いい加減な仕事をしてたらろな人間にならないぞとろな人生送らないぞとこういう風に言われたんですけど僕はまなんかなんと思って僕は将来ビッグになるからと思って[笑い]",
+      "start_seconds": 403.0,
+      "end_seconds": 414.52,
+      "id": "7oimWUif8S8-ja-0042",
+      "sequence": 42
+    },
+    {
+      "text": "思ってたんですね。その頃らはもう僕を中心にやっぱり地球が回ってるような感じでしたね。え、で、[笑い]え、そんな感じだったんで、あの、ひらめえたんです、その時ね。最初はロックミュージシャン",
+      "start_seconds": 414.52,
+      "end_seconds": 425.96,
+      "id": "7oimWUif8S8-ja-0043",
+      "sequence": 43
+    },
+    {
+      "text": "になってデビューをして女性たちやみんなにキャーキャー言われて因がってそれでビッグになるというような考え方だったん",
+      "start_seconds": 425.96,
+      "end_seconds": 436.479,
+      "id": "7oimWUif8S8-ja-0044",
+      "sequence": 44
+    },
+    {
+      "text": "ですけども、すごいひらめいたのが、あ、先にお金持ちになったらいいんじゃないかと思ってですね。で、ゆっくりミュージシャルになったらいいじゃないかと思って、それであ、天才だなと思って",
+      "start_seconds": 436.479,
+      "end_seconds": 448.44,
+      "id": "7oimWUif8S8-ja-0045",
+      "sequence": 45
+    },
+    {
+      "text": "授業を立ち上げたんです。お金を設けるために。え、その時は借金をして事業をしました。そしたらですね、どんどん借金が",
+      "start_seconds": 448.44,
+      "end_seconds": 459.24,
+      "id": "7oimWUif8S8-ja-0046",
+      "sequence": 46
+    },
+    {
+      "text": "増えてくんですね。不思議ですね。成功プログラムっていうの売ってたんですけれども、これ、え、社長さんに売りに行って、え、120万の成功プログラム1日投資いくらだと思いますか?みたいな",
+      "start_seconds": 459.24,
+      "end_seconds": 470.24,
+      "id": "7oimWUif8S8-ja-0047",
+      "sequence": 47
+    },
+    {
+      "text": "こと言ってたらね。心で君は成功してるのかって言われて、いや、僕はこれを売って成功しようと思ってます。君成功してからこれを売りなさいって言われてね、その言葉あってどんどんその結果借金に追われ",
+      "start_seconds": 470.24,
+      "end_seconds": 482.0,
+      "id": "7oimWUif8S8-ja-0048",
+      "sequence": 48
+    },
+    {
+      "text": "てですね、引きこもりました。部屋はぐちゃぐちゃカーテン閉めてそして、え、ずっとそんなような生活してるところに友人が訪ねてきたんです。友人が訪ねてき",
+      "start_seconds": 482.0,
+      "end_seconds": 493.24,
+      "id": "7oimWUif8S8-ja-0049",
+      "sequence": 49
+    },
+    {
+      "text": "てどんどんで何回かちょっとイルス使ったんですけどで仕方なくそれはその友人は清掃会社の時の友人でちょうどあ会社が",
+      "start_seconds": 493.24,
+      "end_seconds": 504.039,
+      "id": "7oimWUif8S8-ja-0050",
+      "sequence": 50
+    },
+    {
+      "text": "終わってねえ掃除を積んだ車で来てたんですけども僕の部屋を見てもうびっくりしてどんな生活してるんだお前こんなんじゃだめだとお前はここで終わる人間じゃない",
+      "start_seconds": 504.039,
+      "end_seconds": 514.959,
+      "id": "7oimWUif8S8-ja-0051",
+      "sequence": 51
+    },
+    {
+      "text": "からと言ってえ部屋に入ってきてカーテンを開けて窓を開けたんですよの光が入ってきて風が流れたんです。その時埃りが",
+      "start_seconds": 514.959,
+      "end_seconds": 526.279,
+      "id": "7oimWUif8S8-ja-0052",
+      "sequence": 52
+    },
+    {
+      "text": "わーっと待って玄関から出てくのが光で見えたんですね。その時パッと自分のぐっとこう",
+      "start_seconds": 526.279,
+      "end_seconds": 535.8,
+      "id": "7oimWUif8S8-ja-0053",
+      "sequence": 53
+    },
+    {
+      "text": "引きこもってた気持ちが一旦客観的に部屋が見えたんです。その時にはこれが自分なんだ。この部屋が自分なんだ。ボロボロで",
+      "start_seconds": 535.8,
+      "end_seconds": 545.839,
+      "id": "7oimWUif8S8-ja-0054",
+      "sequence": 54
+    },
+    {
+      "text": "ぐちゃぐちゃでもうどうしようもない部屋になってました。そうすると友どんどん物を捨ててくんです。そしてお前のトイレ、汚したトイレは俺はやり",
+      "start_seconds": 545.839,
+      "end_seconds": 556.64,
+      "id": "7oimWUif8S8-ja-0055",
+      "sequence": 55
+    },
+    {
+      "text": "たくないからお前自分でやれと言ってですね、トイレ装置もちょっといやいやながら始めたんです。いや、汚いトイレトイレでしたけどもそれが少しずつ綺麗になった",
+      "start_seconds": 556.64,
+      "end_seconds": 566.56,
+      "id": "7oimWUif8S8-ja-0056",
+      "sequence": 56
+    },
+    {
+      "text": "時に変化が起こりました。自分の感情がわーって出てきたんですね。ずっとこらてた気持ちがわって出て涙がもう止まらない",
+      "start_seconds": 566.56,
+      "end_seconds": 578.399,
+      "id": "7oimWUif8S8-ja-0057",
+      "sequence": 57
+    },
+    {
+      "text": "。ポタポタポタポタ落ちてきて、もうお越え越するような感じでトイレを磨いたんです。それは辛かったとか苦しかったとかもっと自分をすごく攻めてた気持ちです",
+      "start_seconds": 578.399,
+      "end_seconds": 589.92,
+      "id": "7oimWUif8S8-ja-0058",
+      "sequence": 58
+    },
+    {
+      "text": "ね。それらが全部出てきてその後にトイレがピカピカになったんです。トイレがピカピカになった時にまた不思議な力が",
+      "start_seconds": 589.92,
+      "end_seconds": 599.68,
+      "id": "7oimWUif8S8-ja-0059",
+      "sequence": 59
+    },
+    {
+      "text": "湧いてきたんです。もう1回やり直せるって。なんかこのトイレ綺麗にできたんだったらまだできるって思ったんです。",
+      "start_seconds": 599.68,
+      "end_seconds": 608.959,
+      "id": "7oimWUif8S8-ja-0060",
+      "sequence": 60
+    },
+    {
+      "text": "そして僕はそこから復活します。これは友達が心を込めて僕の部屋を掃除してくれたことによって今度は僕がそれを感じたん",
+      "start_seconds": 608.959,
+      "end_seconds": 620.72,
+      "id": "7oimWUif8S8-ja-0061",
+      "sequence": 61
+    },
+    {
+      "text": "ですね。そしてそこからもう一度仕事を探し始めたんですけどなかなか今度は年齢も言ってたんで仕事が見つからないんです",
+      "start_seconds": 620.72,
+      "end_seconds": 629.959,
+      "id": "7oimWUif8S8-ja-0062",
+      "sequence": 62
+    },
+    {
+      "text": "。仕事をさせて欲しいのに見つからなくて苦しくて苦しくてそしてその時ようやく見つかったのが掃除の仕事だったんです。",
+      "start_seconds": 629.959,
+      "end_seconds": 638.88,
+      "id": "7oimWUif8S8-ja-0063",
+      "sequence": 63
+    },
+    {
+      "text": "今度は違います。もうありがたくて。そしてまた吐き掃除の仕事でした。もう一吐きするのにも胸がいっぱいなんか[息をのむ音][笑い]",
+      "start_seconds": 638.88,
+      "end_seconds": 649.88,
+      "id": "7oimWUif8S8-ja-0064",
+      "sequence": 64
+    },
+    {
+      "text": "飛社会の[咳払い]1になったんですね。地球の中の中心だった僕が地球の中の1人になった瞬間でもあったんです。でもね、あの角をきちんと",
+      "start_seconds": 649.88,
+      "end_seconds": 660.24,
+      "id": "7oimWUif8S8-ja-0065",
+      "sequence": 65
+    },
+    {
+      "text": "こうやって掃除してたらその時の上司に言われました。マスダはいい仕事するね。",
+      "start_seconds": 660.24,
+      "end_seconds": 665.48,
+      "id": "7oimWUif8S8-ja-0066",
+      "sequence": 66
+    },
+    {
+      "text": "信用できるってこういう風に言われたんです。そこから僕は心を込めて仕事をすることによっていろんなお家に行ったらあなたもう1回来てねとかっていうそれを",
+      "start_seconds": 665.48,
+      "end_seconds": 674.72,
+      "id": "7oimWUif8S8-ja-0067",
+      "sequence": 67
+    },
+    {
+      "text": "また、え、みんなに教えたらあの会社も発展したんです。そんな心を込めるものを、え、今度は本にしてみないかと",
+      "start_seconds": 674.72,
+      "end_seconds": 685.68,
+      "id": "7oimWUif8S8-ja-0068",
+      "sequence": 68
+    },
+    {
+      "text": "いうことで、その時掃除しながら考えてたら降ってきたのが掃除録というネーミングだったんです。そしてこれが本人に2005年になりまして、そこから",
+      "start_seconds": 685.68,
+      "end_seconds": 696.36,
+      "id": "7oimWUif8S8-ja-0069",
+      "sequence": 69
+    },
+    {
+      "text": "何十冊も書かせていただきました。さあ、掃除力のお話です。あなたの部屋はあなた自身です。ちょっときつい言葉かもしれ",
+      "start_seconds": 696.36,
+      "end_seconds": 706.72,
+      "id": "7oimWUif8S8-ja-0070",
+      "sequence": 70
+    },
+    {
+      "text": "ません。自分の部屋を思い浮かべてあれは自分じゃないって思うかもしれないですけどもこれを受け入れて欲しいんです。",
+      "start_seconds": 706.72,
+      "end_seconds": 714.36,
+      "id": "7oimWUif8S8-ja-0071",
+      "sequence": 71
+    },
+    {
+      "text": "まずやって欲しい実践があります。これはね、どうしても汚い部屋だと自分を責めてしまうんです。僕自身もそうでした。掃除力の本を出してそれから全国回って",
+      "start_seconds": 714.36,
+      "end_seconds": 726.2,
+      "id": "7oimWUif8S8-ja-0072",
+      "sequence": 72
+    },
+    {
+      "text": "セミナーをやって皆さんにお掃除しましょう。捨てましょう。汚れを取りましょうと言っていていながらあなたの部屋あなた自身っていう時は僕も俯いてたんです。なぜなら僕の部屋も汚かった",
+      "start_seconds": 726.2,
+      "end_seconds": 737.839,
+      "id": "7oimWUif8S8-ja-0073",
+      "sequence": 73
+    },
+    {
+      "text": "からって[笑い]また行って戻ってああって言いながらまた全国巡ってたんで部屋がねぐちゃぐちゃだったんですね。でもねえ",
+      "start_seconds": 737.839,
+      "end_seconds": 747.36,
+      "id": "7oimWUif8S8-ja-0074",
+      "sequence": 74
+    },
+    {
+      "text": "、今から4年前もまた引きこもってた時期があったんですけれどもその時は部屋が綺麗だったんですよ。だからね皆さん部屋を見て乱れてるってことはどういうことか",
+      "start_seconds": 747.36,
+      "end_seconds": 758.36,
+      "id": "7oimWUif8S8-ja-0075",
+      "sequence": 75
+    },
+    {
+      "text": "と言うとそれは外で頑張ってる証拠なんですよ。そうじゃないですか?家に帰ってもあたやることがあって必要最低限のこと",
+      "start_seconds": 758.36,
+      "end_seconds": 768.56,
+      "id": "7oimWUif8S8-ja-0076",
+      "sequence": 76
+    },
+    {
+      "text": "やったらもう時間がなくなって綺麗にする時間がない。力がないだからね。まず部屋に行ってぐちゃぐちゃだったら言って",
+      "start_seconds": 768.56,
+      "end_seconds": 778.0,
+      "id": "7oimWUif8S8-ja-0077",
+      "sequence": 77
+    },
+    {
+      "text": "欲しいんです。その部屋を見てよく頑張ってるねって自分自身に言ってあげて欲しいんです。そしたらなんかちょっと胸がキュンってなるでしょ。そしたらその力を",
+      "start_seconds": 778.0,
+      "end_seconds": 788.6,
+      "id": "7oimWUif8S8-ja-0078",
+      "sequence": 78
+    },
+    {
+      "text": "使ってやって欲しいところがまずはね1箇所でいいです。蛇口、蛇口を磨いて欲しいんです。蛇口をピカピカに磨いて欲しいんです。そしてそれを自分自身だと",
+      "start_seconds": 788.6,
+      "end_seconds": 798.88,
+      "id": "7oimWUif8S8-ja-0079",
+      "sequence": 79
+    },
+    {
+      "text": "思って他はいいです。他は見なくていい。",
+      "start_seconds": 798.88,
+      "end_seconds": 801.729,
+      "id": "7oimWUif8S8-ja-0080",
+      "sequence": 80
+    },
+    {
+      "text": "[笑い]他は目をすりましょう。弱ジだけを磨いてこれは自分なんだって。素敵だね。綺麗だねって言ってあげてください。",
+      "start_seconds": 801.729,
+      "end_seconds": 810.279,
+      "id": "7oimWUif8S8-ja-0081",
+      "sequence": 81
+    },
+    {
+      "text": "そうすると今度は光り物をどんどん磨いていきたくなりますから。やっぱりねこっちにフォーカスする。綺麗なところにフォーカスするとそれが広がっていくん",
+      "start_seconds": 810.279,
+      "end_seconds": 820.959,
+      "id": "7oimWUif8S8-ja-0082",
+      "sequence": 82
+    },
+    {
+      "text": "ですね。",
+      "start_seconds": 820.959,
+      "end_seconds": 822.56,
+      "id": "7oimWUif8S8-ja-0083",
+      "sequence": 83
+    },
+    {
+      "text": "それをやってったら鏡も磨いてください。",
+      "start_seconds": 822.56,
+      "end_seconds": 824.76,
+      "id": "7oimWUif8S8-ja-0084",
+      "sequence": 84
+    },
+    {
+      "text": "鏡を磨いて、え、ピカピカになった鏡でね、こう言ってあげるんです。可愛いねって。綺麗だねって。あ、心の中でいいですよ",
+      "start_seconds": 824.76,
+      "end_seconds": 835.789,
+      "id": "7oimWUif8S8-ja-0085",
+      "sequence": 85
+    },
+    {
+      "text": "[笑い]ね。だから、ま、僕のね、セミナーで鏡を持ってきてもらって、鏡磨いて美しくなるセミナーがあるんですけども、鏡を鏡、鏡さんって言うんですね",
+      "start_seconds": 835.789,
+      "end_seconds": 845.199,
+      "id": "7oimWUif8S8-ja-0086",
+      "sequence": 86
+    },
+    {
+      "text": "。世界で1番美しいのは誰?言って、そしたらみんな自分映ってるからクスク笑うんですけど、それが真実ですって言ってですね、書いてもらうんですけど、これ効果がありますからやってみてください。可愛い",
+      "start_seconds": 845.199,
+      "end_seconds": 857.079,
+      "id": "7oimWUif8S8-ja-0087",
+      "sequence": 87
+    },
+    {
+      "text": "、綺麗、かっこいいて言うとですね、さっき水の話あったでしょ?同じように思いがこの人間さ、水でできております",
+      "start_seconds": 857.079,
+      "end_seconds": 865.56,
+      "id": "7oimWUif8S8-ja-0088",
+      "sequence": 88
+    },
+    {
+      "text": "から、あの水でこの細胞のところから活性化して美しくなりますという話をしてですね、もういい時間になってきました。で、",
+      "start_seconds": 865.56,
+      "end_seconds": 876.24,
+      "id": "7oimWUif8S8-ja-0089",
+      "sequence": 89
+    },
+    {
+      "text": "その次にやって欲しいことが何かと言うと、捨てる。そしてまた汚れ取り、整理正頓なんです。捨てるで前後裁談する力があり",
+      "start_seconds": 876.24,
+      "end_seconds": 886.32,
+      "id": "7oimWUif8S8-ja-0090",
+      "sequence": 90
+    },
+    {
+      "text": "ます。これもですね、例えばガラクタというものはいつかとつくものです。いつかは来ないでしょ。いつかって先伸ばしするんです。何を先にするかというと、使うか",
+      "start_seconds": 886.32,
+      "end_seconds": 898.0,
+      "id": "7oimWUif8S8-ja-0091",
+      "sequence": 91
+    },
+    {
+      "text": "もしれないなかったら困る不安の現れなんです。もう1つはいつか何か時間ができたらやりたいと思ってることなんで、これは投避の現れなんです。いつか世界一種",
+      "start_seconds": 898.0,
+      "end_seconds": 908.519,
+      "id": "7oimWUif8S8-ja-0092",
+      "sequence": 92
+    },
+    {
+      "text": "旅行をするためのね、ケース、スーツケース、これずっと撮ってる。いつか世界収録をするんだって。これ10年経っても同じこと言って、いつか世界主力をするん",
+      "start_seconds": 908.519,
+      "end_seconds": 918.279,
+      "id": "7oimWUif8S8-ja-0093",
+      "sequence": 93
+    },
+    {
+      "text": "だ。怖くないですか?ということでね、え、最後もっといっぱい話したいことあったんですけれども、最後はですね、僕の夢を",
+      "start_seconds": 918.279,
+      "end_seconds": 926.72,
+      "id": "7oimWUif8S8-ja-0094",
+      "sequence": 94
+    },
+    {
+      "text": "聞いてください。僕の世はこの掃除力を世界の隅々の人たちに伝えることなんです。そうすると部屋を綺麗にしながら心が綺麗になる人が増えていくんです。心が",
+      "start_seconds": 926.72,
+      "end_seconds": 938.6,
+      "id": "7oimWUif8S8-ja-0095",
+      "sequence": 95
+    },
+    {
+      "text": "綺麗になればその家庭1人心が綺麗になれば家庭が家族が綺麗になあの輝きますか",
+      "start_seconds": 938.6,
+      "end_seconds": 946.8,
+      "id": "7oimWUif8S8-ja-0096",
+      "sequence": 96
+    },
+    {
+      "text": "家族が輝くと大人り近所地域も輝きます。",
+      "start_seconds": 946.8,
+      "end_seconds": 952.639,
+      "id": "7oimWUif8S8-ja-0097",
+      "sequence": 97
+    },
+    {
+      "text": "地域が輝くと市町村が輝いて、そして国、日本が輝く。",
+      "start_seconds": 952.639,
+      "end_seconds": 958.44,
+      "id": "7oimWUif8S8-ja-0098",
+      "sequence": 98
+    },
+    {
+      "text": "日本が輝けば隣の国にも影響を与えられます。そして結果的には地球が輝くんです。そしてある日をもうこ、これは今年からやってきますけれども、世界掃除力でって",
+      "start_seconds": 958.44,
+      "end_seconds": 970.399,
+      "id": "7oimWUif8S8-ja-0099",
+      "sequence": 99
+    },
+    {
+      "text": "言って休日にしてこの日は地球にね、済ませていただいていることに感謝をするんです。酸素も無料で与えられてますよね。",
+      "start_seconds": 970.399,
+      "end_seconds": 981.12,
+      "id": "7oimWUif8S8-ja-0100",
+      "sequence": 100
+    },
+    {
+      "text": "止まれ、止められたことありますか?ないですよね。太陽の光も止められませんよね。無償で水は水道水ですけども、どっか水溜まり行けば飲もうと思えば飲めます",
+      "start_seconds": 981.12,
+      "end_seconds": 991.959,
+      "id": "7oimWUif8S8-ja-0101",
+      "sequence": 101
+    },
+    {
+      "text": "から。全部これ無料で与えられてるんです。済ませていただいてるんです。このことに感謝をして、感謝をしたら必ず行動になりますから。その行動は何かと言うと、",
+      "start_seconds": 991.959,
+      "end_seconds": 1002.279,
+      "id": "7oimWUif8S8-ja-0102",
+      "sequence": 102
+    },
+    {
+      "text": "これは綺麗。使った場所を綺麗にする。だからお掃除をみんなでする日を作りたい。",
+      "start_seconds": 1002.279,
+      "end_seconds": 1008.24,
+      "id": "7oimWUif8S8-ja-0103",
+      "sequence": 103
+    },
+    {
+      "text": "で、各国の首脳も集まって腕ままくりしてね、お掃除したら気持ちが1つになるから外交問題なんかもまた戦争も止まりますよ。そういうことを僕はやっていきたいと",
+      "start_seconds": 1008.24,
+      "end_seconds": 1019.56,
+      "id": "7oimWUif8S8-ja-0104",
+      "sequence": 104
+    },
+    {
+      "text": "思います。さあ、最後に僕は心を込めた相場を今ここでやって終わりたいと思い",
+      "start_seconds": 1019.56,
+      "end_seconds": 1026.16,
+      "id": "7oimWUif8S8-ja-0105",
+      "sequence": 105
+    },
+    {
+      "text": "ます。それではさせていただきましょう。",
+      "start_seconds": 1026.16,
+      "end_seconds": 1031.76,
+      "id": "7oimWUif8S8-ja-0106",
+      "sequence": 106
+    },
+    {
+      "text": "[鼻息]え、地球さんいつも本当に済ませていただいてありがとうございます。",
+      "start_seconds": 1032.291,
+      "end_seconds": 1042.52,
+      "id": "7oimWUif8S8-ja-0107",
+      "sequence": 107
+    },
+    {
+      "text": "これは世界で今喧嘩をしてる人たちに対する僕のメッセージです。大変だ、大変だ。ここ見て地球が綺麗になってるよ。",
+      "start_seconds": 1048.12,
+      "end_seconds": 1059.4,
+      "id": "7oimWUif8S8-ja-0108",
+      "sequence": 108
+    },
+    {
+      "text": "ありがとうございました。[拍手]",
+      "start_seconds": 1059.4,
+      "end_seconds": 1063.132,
+      "id": "7oimWUif8S8-ja-0109",
+      "sequence": 109
+    }
+  ],
+  "raw_captions": [
+    {
+      "text": "[音楽]",
+      "start_seconds": 9.825,
+      "end_seconds": 11.844999999999999
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 13.755,
+      "end_seconds": 15.775
+    },
+    {
+      "text": "部屋が綺麗な人も汚い人も最高。掃除力の",
+      "start_seconds": 21.199,
+      "end_seconds": 29.279000000000003
+    },
+    {
+      "text": "増田光です。さあ、皆さんこれから不思議",
+      "start_seconds": 25.439,
+      "end_seconds": 32.52
+    },
+    {
+      "text": "な掃除のお話をします。まずはどう",
+      "start_seconds": 29.279,
+      "end_seconds": 35.079
+    },
+    {
+      "text": "でしょうか?皆さん、お掃除好きな人どの",
+      "start_seconds": 32.52,
+      "end_seconds": 37.52
+    },
+    {
+      "text": "くらいいますか?",
+      "start_seconds": 35.079,
+      "end_seconds": 41.36
+    },
+    {
+      "text": "お、あ、パラパラバットね。はい。はい。",
+      "start_seconds": 37.52,
+      "end_seconds": 44.92
+    },
+    {
+      "text": "多くの人は苦手という感じでしょうか。で",
+      "start_seconds": 41.36,
+      "end_seconds": 48.519999999999996
+    },
+    {
+      "text": "は、苦手であっても部屋が綺麗な方がいい",
+      "start_seconds": 44.92,
+      "end_seconds": 51.32
+    },
+    {
+      "text": "と思う人はどのくらいいますか?あ、ここ",
+      "start_seconds": 48.52,
+      "end_seconds": 54.199000000000005
+    },
+    {
+      "text": "は全員ね、ちょっと今どうしようかなと",
+      "start_seconds": 51.32,
+      "end_seconds": 57.6
+    },
+    {
+      "text": "思って揚げ損ねた人は汚くてもいいって",
+      "start_seconds": 54.199,
+      "end_seconds": 59.44
+    },
+    {
+      "text": "ことになっちゃいますからね。ということ",
+      "start_seconds": 57.6,
+      "end_seconds": 63.239000000000004
+    },
+    {
+      "text": "で、えっと、ま、ちょっとですね、今日は",
+      "start_seconds": 59.44,
+      "end_seconds": 66.96
+    },
+    {
+      "text": "単なる掃除の話ではないんです。掃除だと",
+      "start_seconds": 63.239,
+      "end_seconds": 69.64
+    },
+    {
+      "text": "ですね、平和は綺麗になりますけれども、",
+      "start_seconds": 66.96,
+      "end_seconds": 73.36
+    },
+    {
+      "text": "僕が今日皆さんにお伝えしたい掃除の力と",
+      "start_seconds": 69.64,
+      "end_seconds": 76.799
+    },
+    {
+      "text": "いうのは、なんと人生をより良い方向に",
+      "start_seconds": 73.36,
+      "end_seconds": 79.88
+    },
+    {
+      "text": "向かわせる力なんです。もう少し具体的に",
+      "start_seconds": 76.799,
+      "end_seconds": 83.04
+    },
+    {
+      "text": "言うとこの力を使った人たちはですね、",
+      "start_seconds": 79.88,
+      "end_seconds": 86.32
+    },
+    {
+      "text": "例えば学生であれば学力が上がります。",
+      "start_seconds": 83.04,
+      "end_seconds": 89.72
+    },
+    {
+      "text": "学力が上かり脂肪も何段階か上にアップし",
+      "start_seconds": 86.32,
+      "end_seconds": 92.96
+    },
+    {
+      "text": "て合格してですね、これはもう世界",
+      "start_seconds": 89.72,
+      "end_seconds": 94.96
+    },
+    {
+      "text": "いろんなところでお話しさせていただき",
+      "start_seconds": 92.96,
+      "end_seconds": 98.0
+    },
+    {
+      "text": "ますけど国関係なくお母さんと一緒に来て",
+      "start_seconds": 94.96,
+      "end_seconds": 100.83999999999999
+    },
+    {
+      "text": "、え、死亡ましたっていうお話もいいて",
+      "start_seconds": 98.0,
+      "end_seconds": 105.479
+    },
+    {
+      "text": "おります。また、あ、潰れそうな飲食店も",
+      "start_seconds": 100.84,
+      "end_seconds": 108.07900000000001
+    },
+    {
+      "text": "この力を使うと行列ができるようになり",
+      "start_seconds": 105.479,
+      "end_seconds": 111.15899999999999
+    },
+    {
+      "text": "ました。ちょっと行けてない方が、あ、",
+      "start_seconds": 108.079,
+      "end_seconds": 114.27999999999999
+    },
+    {
+      "text": "この力を使うとモテモテになってですね、",
+      "start_seconds": 111.159,
+      "end_seconds": 117.159
+    },
+    {
+      "text": "そして恋人ができて結婚したという方もい",
+      "start_seconds": 114.28,
+      "end_seconds": 122.479
+    },
+    {
+      "text": "ます。先日ある講演会に友達の講演会に出",
+      "start_seconds": 117.159,
+      "end_seconds": 125.32000000000001
+    },
+    {
+      "text": "ていて、そして、え、エレベーターに乗っ",
+      "start_seconds": 122.479,
+      "end_seconds": 128.2
+    },
+    {
+      "text": "て帰る途中に、ま、仲間たちがいたんで、",
+      "start_seconds": 125.32,
+      "end_seconds": 130.56
+    },
+    {
+      "text": "ま、マ田先生掃除力はって話をちょこっと",
+      "start_seconds": 128.2,
+      "end_seconds": 134.07999999999998
+    },
+    {
+      "text": "してたら、そのエレベーターに言わせた",
+      "start_seconds": 130.56,
+      "end_seconds": 137.28
+    },
+    {
+      "text": "1人の女性がこう言ってきたんです。あの",
+      "start_seconds": 134.08,
+      "end_seconds": 139.4
+    },
+    {
+      "text": "、掃除力のマスター先生ですかと言われて",
+      "start_seconds": 137.28,
+      "end_seconds": 143.44
+    },
+    {
+      "text": "、はいって言ったら17年前に実は私、",
+      "start_seconds": 139.4,
+      "end_seconds": 145.72
+    },
+    {
+      "text": "あの、アドバイスをもらったことがあり",
+      "start_seconds": 143.44,
+      "end_seconds": 147.319
+    },
+    {
+      "text": "ます。ちょっと記憶がちょっと出てこ",
+      "start_seconds": 145.72,
+      "end_seconds": 149.319
+    },
+    {
+      "text": "なかったんですけど、どんなアドバイス",
+      "start_seconds": 147.319,
+      "end_seconds": 153.28
+    },
+    {
+      "text": "をって言ったらですね、実はあの子供が",
+      "start_seconds": 149.319,
+      "end_seconds": 155.92
+    },
+    {
+      "text": "できなくて悩んでいた話をしたと言うん",
+      "start_seconds": 153.28,
+      "end_seconds": 158.4
+    },
+    {
+      "text": "ですね。で、僕は、あ、どんなアドバイス",
+      "start_seconds": 155.92,
+      "end_seconds": 160.95899999999997
+    },
+    {
+      "text": "したんだろうと思ったら、寝室をよく磨き",
+      "start_seconds": 158.4,
+      "end_seconds": 165.08
+    },
+    {
+      "text": "なさいと、そして、えっと、古い下着きを",
+      "start_seconds": 160.959,
+      "end_seconds": 167.28
+    },
+    {
+      "text": "捨てて新しくしなさいとアドバイスした",
+      "start_seconds": 165.08,
+      "end_seconds": 170.36
+    },
+    {
+      "text": "らしいんです。その結果、え、なんと息子",
+      "start_seconds": 167.28,
+      "end_seconds": 172.92
+    },
+    {
+      "text": "が17歳になりましたっていうことで、",
+      "start_seconds": 170.36,
+      "end_seconds": 176.851
+    },
+    {
+      "text": "子供も授かるというこの力ですね。そんな",
+      "start_seconds": 172.92,
+      "end_seconds": 179.159
+    },
+    {
+      "text": "[笑い]、え、不思議な力があるんです",
+      "start_seconds": 176.851,
+      "end_seconds": 183.36
+    },
+    {
+      "text": "けれども、この力にはなぜ、え、そんな力",
+      "start_seconds": 179.159,
+      "end_seconds": 186.319
+    },
+    {
+      "text": "があるかと言いますと、これは掃除する",
+      "start_seconds": 183.36,
+      "end_seconds": 190.44000000000003
+    },
+    {
+      "text": "行為の中に実は心の法則を入れているん",
+      "start_seconds": 186.319,
+      "end_seconds": 193.95899999999997
+    },
+    {
+      "text": "ですね。心の法則を入れてるから単なる",
+      "start_seconds": 190.44,
+      "end_seconds": 197.72
+    },
+    {
+      "text": "掃除で終わらないんです。そのキーワード",
+      "start_seconds": 193.959,
+      "end_seconds": 200.4
+    },
+    {
+      "text": "になる言葉を今日お伝えします。これは",
+      "start_seconds": 197.72,
+      "end_seconds": 203.12
+    },
+    {
+      "text": "もう記憶してお家に帰っていただきたい",
+      "start_seconds": 200.4,
+      "end_seconds": 207.59900000000002
+    },
+    {
+      "text": "です。それはあなたの部屋はあなた自身を",
+      "start_seconds": 203.12,
+      "end_seconds": 210.92000000000002
+    },
+    {
+      "text": "表すということなんです。ちょっとね、俯",
+      "start_seconds": 207.599,
+      "end_seconds": 212.39999999999998
+    },
+    {
+      "text": "ちゃったりね、あっち向いたり、こっち",
+      "start_seconds": 210.92,
+      "end_seconds": 214.51899999999998
+    },
+    {
+      "text": "向いたりってなりますよね。大丈夫。",
+      "start_seconds": 212.4,
+      "end_seconds": 217.48000000000002
+    },
+    {
+      "text": "気持ちは分かります。それは後であの救い",
+      "start_seconds": 214.519,
+      "end_seconds": 220.239
+    },
+    {
+      "text": "ますんで、あのちょっと待っててください",
+      "start_seconds": 217.48,
+      "end_seconds": 223.79899999999998
+    },
+    {
+      "text": "。そしてではですね、まずこの掃除力の",
+      "start_seconds": 220.239,
+      "end_seconds": 227.92000000000002
+    },
+    {
+      "text": "この力ですね。この力にまず最初に僕が気",
+      "start_seconds": 223.799,
+      "end_seconds": 231.84
+    },
+    {
+      "text": "がついたのは心を込めて、え、掃場したと",
+      "start_seconds": 227.92,
+      "end_seconds": 235.07899999999998
+    },
+    {
+      "text": "いう出来事だったのでそのエピソードをお",
+      "start_seconds": 231.84,
+      "end_seconds": 238.20000000000002
+    },
+    {
+      "text": "話しさせていただきます。小学校2年生の",
+      "start_seconds": 235.079,
+      "end_seconds": 242.519
+    },
+    {
+      "text": "頃でした。もう本当にその頃はあの純粋で",
+      "start_seconds": 238.2,
+      "end_seconds": 244.51899999999998
+    },
+    {
+      "text": "このぐらいだったんですけれどもとても",
+      "start_seconds": 242.519,
+      "end_seconds": 246.28
+    },
+    {
+      "text": "可愛く今こなになってますけどもこの",
+      "start_seconds": 244.519,
+      "end_seconds": 248.72
+    },
+    {
+      "text": "ぐらいイメージ僕でしないでくださいね。",
+      "start_seconds": 246.28,
+      "end_seconds": 252.84
+    },
+    {
+      "text": "可いらしい子供でした。ある日両親が",
+      "start_seconds": 248.72,
+      "end_seconds": 255.079
+    },
+    {
+      "text": "大喧嘩をしてたんです。そしてそれを",
+      "start_seconds": 252.84,
+      "end_seconds": 257.759
+    },
+    {
+      "text": "初めて見た僕はもう怖くてですね、なんと",
+      "start_seconds": 255.079,
+      "end_seconds": 260.16
+    },
+    {
+      "text": "か止めたいと思ったんですけど全然止まら",
+      "start_seconds": 257.759,
+      "end_seconds": 263.88
+    },
+    {
+      "text": "ない。それでひらめいたんです。母が洗面",
+      "start_seconds": 260.16,
+      "end_seconds": 266.47900000000004
+    },
+    {
+      "text": "上、あ、父がね、洗面上を綺麗にしてた時",
+      "start_seconds": 263.88,
+      "end_seconds": 269.88
+    },
+    {
+      "text": "に母ってとても綺麗好きだったのですごく",
+      "start_seconds": 266.479,
+      "end_seconds": 272.28
+    },
+    {
+      "text": "喜んでるシーンを思い出したんです。それ",
+      "start_seconds": 269.88,
+      "end_seconds": 275.6
+    },
+    {
+      "text": "で僕は慌てて、え、洗面所に行き、なんと",
+      "start_seconds": 272.28,
+      "end_seconds": 278.23999999999995
+    },
+    {
+      "text": "かそこにあったタオルとかスポンジを使っ",
+      "start_seconds": 275.6,
+      "end_seconds": 281.8
+    },
+    {
+      "text": "てシンクを磨き、そして蛇口をピカピカに",
+      "start_seconds": 278.24,
+      "end_seconds": 285.52
+    },
+    {
+      "text": "してこう言ったんです。顔を出して大変だ",
+      "start_seconds": 281.8,
+      "end_seconds": 288.199
+    },
+    {
+      "text": "、大変だ。生面所が大変だって言ったん",
+      "start_seconds": 285.52,
+      "end_seconds": 290.79999999999995
+    },
+    {
+      "text": "です。そしたら2人は何が何があったん",
+      "start_seconds": 288.199,
+      "end_seconds": 293.12
+    },
+    {
+      "text": "だろうと思って駆けつけてきたんです。",
+      "start_seconds": 290.8,
+      "end_seconds": 296.0
+    },
+    {
+      "text": "そして駆けつけた2人にこらって言って",
+      "start_seconds": 293.12,
+      "end_seconds": 299.56
+    },
+    {
+      "text": "ですね、洗面所がピカピカだよて言ったん",
+      "start_seconds": 296.0,
+      "end_seconds": 303.039
+    },
+    {
+      "text": "です。そしたら2人は顔を見合わせて笑顔",
+      "start_seconds": 299.56,
+      "end_seconds": 306.12
+    },
+    {
+      "text": "になったんです。そしてお互いにごめん",
+      "start_seconds": 303.039,
+      "end_seconds": 308.919
+    },
+    {
+      "text": "ねって言って、え、僕にもごめんねって",
+      "start_seconds": 306.12,
+      "end_seconds": 311.16
+    },
+    {
+      "text": "言って、そして僕にはありがとうって言っ",
+      "start_seconds": 308.919,
+      "end_seconds": 312.56
+    },
+    {
+      "text": "てくれたんです。こ",
+      "start_seconds": 311.16,
+      "end_seconds": 315.56
+    },
+    {
+      "text": "れってもう僕はすごくその時のことを未だに戦めに覚えてるんですけど僕の心を込めた掃除が喧嘩を止めたんです。争う心ってものを止めたんです。",
+      "start_seconds": 312.56,
+      "end_seconds": 315.56
+    },
+    {
+      "text": "僕はこれがすごく心に残って掃除が大好き",
+      "start_seconds": 326.72,
+      "end_seconds": 333.72
+    },
+    {
+      "text": "になってその日から洗面所の登板はあの僕",
+      "start_seconds": 330.039,
+      "end_seconds": 335.919
+    },
+    {
+      "text": "になってしまったんですけれどもそれま",
+      "start_seconds": 333.72,
+      "end_seconds": 337.52000000000004
+    },
+    {
+      "text": "それはそれで好きだったんで良かったん",
+      "start_seconds": 335.919,
+      "end_seconds": 340.75899999999996
+    },
+    {
+      "text": "ですなんですけどそんな僕も青年になり",
+      "start_seconds": 337.52,
+      "end_seconds": 343.44
+    },
+    {
+      "text": "ロックに目覚めそして作師作曲が大好き",
+      "start_seconds": 340.759,
+      "end_seconds": 346.28000000000003
+    },
+    {
+      "text": "だったもんですから夢を叶えるために状況",
+      "start_seconds": 343.44,
+      "end_seconds": 348.08
+    },
+    {
+      "text": "しました。ロックミュージシャンになろう",
+      "start_seconds": 346.28,
+      "end_seconds": 351.55999999999995
+    },
+    {
+      "text": "と思って状況したんです。東京に来て",
+      "start_seconds": 348.08,
+      "end_seconds": 353.88
+    },
+    {
+      "text": "アルバイトでお金がなかったので食べて",
+      "start_seconds": 351.56,
+      "end_seconds": 355.56
+    },
+    {
+      "text": "いくためにはアルバイトをしなきゃいけ",
+      "start_seconds": 353.88,
+      "end_seconds": 358.039
+    },
+    {
+      "text": "ないということで仕事を探しました。",
+      "start_seconds": 355.56,
+      "end_seconds": 361.08
+    },
+    {
+      "text": "ようやく見つかった仕事が掃除だったん",
+      "start_seconds": 358.039,
+      "end_seconds": 365.24
+    },
+    {
+      "text": "です。ええ、ラッキーと思いました。その",
+      "start_seconds": 361.08,
+      "end_seconds": 368.114
+    },
+    {
+      "text": "頃僕ね、もう掃除嫌いになってました。",
+      "start_seconds": 365.24,
+      "end_seconds": 370.52
+    },
+    {
+      "text": "[笑い]だってミュージシャンですよ。",
+      "start_seconds": 368.114,
+      "end_seconds": 373.96
+    },
+    {
+      "text": "ミュージシャンが掃除するの似合わない",
+      "start_seconds": 370.52,
+      "end_seconds": 375.599
+    },
+    {
+      "text": "じゃないですか。格っこあると思ってです",
+      "start_seconds": 373.96,
+      "end_seconds": 378.19899999999996
+    },
+    {
+      "text": "ね。もうなんか掃除のアルバイトに行く",
+      "start_seconds": 375.599,
+      "end_seconds": 380.919
+    },
+    {
+      "text": "ことは本当に嫌でなんか作業服を着て汚い",
+      "start_seconds": 378.199,
+      "end_seconds": 384.039
+    },
+    {
+      "text": "ところをね綺麗にするて嫌だなと思い",
+      "start_seconds": 380.919,
+      "end_seconds": 386.28
+    },
+    {
+      "text": "ながらですねやってたんです。そんなよう",
+      "start_seconds": 384.039,
+      "end_seconds": 389.31899999999996
+    },
+    {
+      "text": "な気持ちでやってるから上司にね、え、も",
+      "start_seconds": 386.28,
+      "end_seconds": 392.44
+    },
+    {
+      "text": "適当にこうやって吐いてたら角にゴミが",
+      "start_seconds": 389.319,
+      "end_seconds": 396.639
+    },
+    {
+      "text": "詰まってて僕のやった後それを水で流して",
+      "start_seconds": 392.44,
+      "end_seconds": 399.759
+    },
+    {
+      "text": "そうするとその角からね粉が出てきてまた",
+      "start_seconds": 396.639,
+      "end_seconds": 403.0
+    },
+    {
+      "text": "汚くなるからそれで怒鳴られてお前こんな",
+      "start_seconds": 399.759,
+      "end_seconds": 406.039
+    },
+    {
+      "text": "いい加減な仕事をしてたらろな人間になら",
+      "start_seconds": 403.0,
+      "end_seconds": 408.479
+    },
+    {
+      "text": "ないぞとろな人生送らないぞとこういう風",
+      "start_seconds": 406.039,
+      "end_seconds": 410.68
+    },
+    {
+      "text": "に言われたんですけど僕はまなんかなんと",
+      "start_seconds": 408.479,
+      "end_seconds": 413.964
+    },
+    {
+      "text": "思って僕は将来ビッグになるからと思って",
+      "start_seconds": 410.68,
+      "end_seconds": 414.52
+    },
+    {
+      "text": "[笑い]",
+      "start_seconds": 413.964,
+      "end_seconds": 416.4
+    },
+    {
+      "text": "思ってたんですね。その頃らはもう僕を",
+      "start_seconds": 414.52,
+      "end_seconds": 418.4
+    },
+    {
+      "text": "中心にやっぱり地球が回ってるような感じ",
+      "start_seconds": 416.4,
+      "end_seconds": 420.84
+    },
+    {
+      "text": "でしたね。え、で、[笑い]え、そんな",
+      "start_seconds": 418.4,
+      "end_seconds": 423.08
+    },
+    {
+      "text": "感じだったんで、あの、ひらめえたんです",
+      "start_seconds": 420.84,
+      "end_seconds": 425.96
+    },
+    {
+      "text": "、その時ね。最初はロックミュージシャン",
+      "start_seconds": 423.08,
+      "end_seconds": 429.75899999999996
+    },
+    {
+      "text": "になってデビューをして女性たちやみんな",
+      "start_seconds": 425.96,
+      "end_seconds": 434.08
+    },
+    {
+      "text": "にキャーキャー言われて因がってそれで",
+      "start_seconds": 429.759,
+      "end_seconds": 436.47900000000004
+    },
+    {
+      "text": "ビッグになるというような考え方だったん",
+      "start_seconds": 434.08,
+      "end_seconds": 439.639
+    },
+    {
+      "text": "ですけども、すごいひらめいたのが、あ、",
+      "start_seconds": 436.479,
+      "end_seconds": 441.31899999999996
+    },
+    {
+      "text": "先にお金持ちになったらいいんじゃないか",
+      "start_seconds": 439.639,
+      "end_seconds": 443.84000000000003
+    },
+    {
+      "text": "と思ってですね。で、ゆっくり",
+      "start_seconds": 441.319,
+      "end_seconds": 445.24
+    },
+    {
+      "text": "ミュージシャルになったらいいじゃないか",
+      "start_seconds": 443.84,
+      "end_seconds": 448.44
+    },
+    {
+      "text": "と思って、それであ、天才だなと思って",
+      "start_seconds": 445.24,
+      "end_seconds": 451.319
+    },
+    {
+      "text": "授業を立ち上げたんです。お金を設ける",
+      "start_seconds": 448.44,
+      "end_seconds": 455.12
+    },
+    {
+      "text": "ために。え、その時は借金をして事業をし",
+      "start_seconds": 451.319,
+      "end_seconds": 459.24
+    },
+    {
+      "text": "ました。そしたらですね、どんどん借金が",
+      "start_seconds": 455.12,
+      "end_seconds": 461.919
+    },
+    {
+      "text": "増えてくんですね。不思議ですね。成功",
+      "start_seconds": 459.24,
+      "end_seconds": 463.199
+    },
+    {
+      "text": "プログラムっていうの売ってたんです",
+      "start_seconds": 461.919,
+      "end_seconds": 465.479
+    },
+    {
+      "text": "けれども、これ、え、社長さんに売りに",
+      "start_seconds": 463.199,
+      "end_seconds": 468.159
+    },
+    {
+      "text": "行って、え、120万の成功プログラム1",
+      "start_seconds": 465.479,
+      "end_seconds": 470.24
+    },
+    {
+      "text": "日投資いくらだと思いますか?みたいな",
+      "start_seconds": 468.159,
+      "end_seconds": 472.879
+    },
+    {
+      "text": "こと言ってたらね。心で君は成功してるの",
+      "start_seconds": 470.24,
+      "end_seconds": 474.52
+    },
+    {
+      "text": "かって言われて、いや、僕はこれを売って",
+      "start_seconds": 472.879,
+      "end_seconds": 476.96000000000004
+    },
+    {
+      "text": "成功しようと思ってます。君成功してから",
+      "start_seconds": 474.52,
+      "end_seconds": 479.08
+    },
+    {
+      "text": "これを売りなさいって言われてね、その",
+      "start_seconds": 476.96,
+      "end_seconds": 482.0
+    },
+    {
+      "text": "言葉あってどんどんその結果借金に追われ",
+      "start_seconds": 479.08,
+      "end_seconds": 485.12
+    },
+    {
+      "text": "てですね、引きこもりました。部屋は",
+      "start_seconds": 482.0,
+      "end_seconds": 487.919
+    },
+    {
+      "text": "ぐちゃぐちゃカーテン閉めてそして、え、",
+      "start_seconds": 485.12,
+      "end_seconds": 490.08
+    },
+    {
+      "text": "ずっとそんなような生活してるところに",
+      "start_seconds": 487.919,
+      "end_seconds": 493.24
+    },
+    {
+      "text": "友人が訪ねてきたんです。友人が訪ねてき",
+      "start_seconds": 490.08,
+      "end_seconds": 496.24
+    },
+    {
+      "text": "てどんどんで何回かちょっとイルス使った",
+      "start_seconds": 493.24,
+      "end_seconds": 500.159
+    },
+    {
+      "text": "んですけどで仕方なくそれはその友人は",
+      "start_seconds": 496.24,
+      "end_seconds": 504.039
+    },
+    {
+      "text": "清掃会社の時の友人でちょうどあ会社が",
+      "start_seconds": 500.159,
+      "end_seconds": 506.8
+    },
+    {
+      "text": "終わってねえ掃除を積んだ車で来てたん",
+      "start_seconds": 504.039,
+      "end_seconds": 509.159
+    },
+    {
+      "text": "ですけども僕の部屋を見てもうびっくりし",
+      "start_seconds": 506.8,
+      "end_seconds": 512.519
+    },
+    {
+      "text": "てどんな生活してるんだお前こんなんじゃ",
+      "start_seconds": 509.159,
+      "end_seconds": 514.959
+    },
+    {
+      "text": "だめだとお前はここで終わる人間じゃない",
+      "start_seconds": 512.519,
+      "end_seconds": 518.479
+    },
+    {
+      "text": "からと言ってえ部屋に入ってきてカーテン",
+      "start_seconds": 514.959,
+      "end_seconds": 523.279
+    },
+    {
+      "text": "を開けて窓を開けたんですよの光が入って",
+      "start_seconds": 518.479,
+      "end_seconds": 526.279
+    },
+    {
+      "text": "きて風が流れたんです。その時埃りが",
+      "start_seconds": 523.279,
+      "end_seconds": 530.16
+    },
+    {
+      "text": "わーっと待って玄関から出てくのが光で",
+      "start_seconds": 526.279,
+      "end_seconds": 533.64
+    },
+    {
+      "text": "見えたんですね。その時パッと自分の",
+      "start_seconds": 530.16,
+      "end_seconds": 535.8
+    },
+    {
+      "text": "ぐっとこう",
+      "start_seconds": 533.64,
+      "end_seconds": 539.279
+    },
+    {
+      "text": "引きこもってた気持ちが一旦客観的に部屋",
+      "start_seconds": 535.8,
+      "end_seconds": 543.04
+    },
+    {
+      "text": "が見えたんです。その時にはこれが自分な",
+      "start_seconds": 539.279,
+      "end_seconds": 545.8389999999999
+    },
+    {
+      "text": "んだ。この部屋が自分なんだ。ボロボロで",
+      "start_seconds": 543.04,
+      "end_seconds": 548.3199999999999
+    },
+    {
+      "text": "ぐちゃぐちゃでもうどうしようもない部屋",
+      "start_seconds": 545.839,
+      "end_seconds": 551.1600000000001
+    },
+    {
+      "text": "になってました。そうすると友どんどん物",
+      "start_seconds": 548.32,
+      "end_seconds": 554.0400000000001
+    },
+    {
+      "text": "を捨ててくんです。そして",
+      "start_seconds": 551.16,
+      "end_seconds": 556.64
+    },
+    {
+      "text": "お前のトイレ、汚したトイレは俺はやり",
+      "start_seconds": 554.04,
+      "end_seconds": 559.079
+    },
+    {
+      "text": "たくないからお前自分でやれと言ってです",
+      "start_seconds": 556.64,
+      "end_seconds": 561.519
+    },
+    {
+      "text": "ね、トイレ装置もちょっといやいやながら",
+      "start_seconds": 559.079,
+      "end_seconds": 564.1999999999999
+    },
+    {
+      "text": "始めたんです。いや、汚いトイレトイレ",
+      "start_seconds": 561.519,
+      "end_seconds": 566.5600000000001
+    },
+    {
+      "text": "でしたけどもそれが少しずつ綺麗になった",
+      "start_seconds": 564.2,
+      "end_seconds": 571.6800000000001
+    },
+    {
+      "text": "時に変化が起こりました。自分の感情が",
+      "start_seconds": 566.56,
+      "end_seconds": 574.7199999999999
+    },
+    {
+      "text": "わーって出てきたんですね。ずっとこらて",
+      "start_seconds": 571.68,
+      "end_seconds": 578.399
+    },
+    {
+      "text": "た気持ちがわって出て涙がもう止まらない",
+      "start_seconds": 574.72,
+      "end_seconds": 581.279
+    },
+    {
+      "text": "。ポタポタポタポタ落ちてきて、もう",
+      "start_seconds": 578.399,
+      "end_seconds": 583.959
+    },
+    {
+      "text": "お越え越するような感じでトイレを磨いた",
+      "start_seconds": 581.279,
+      "end_seconds": 587.0
+    },
+    {
+      "text": "んです。それは辛かったとか苦しかったと",
+      "start_seconds": 583.959,
+      "end_seconds": 589.92
+    },
+    {
+      "text": "かもっと自分をすごく攻めてた気持ちです",
+      "start_seconds": 587.0,
+      "end_seconds": 594.399
+    },
+    {
+      "text": "ね。それらが全部出てきてその後にトイレ",
+      "start_seconds": 589.92,
+      "end_seconds": 596.5999999999999
+    },
+    {
+      "text": "がピカピカになったんです。トイレが",
+      "start_seconds": 594.399,
+      "end_seconds": 599.68
+    },
+    {
+      "text": "ピカピカになった時にまた不思議な力が",
+      "start_seconds": 596.6,
+      "end_seconds": 602.36
+    },
+    {
+      "text": "湧いてきたんです。もう1回やり直せ",
+      "start_seconds": 599.68,
+      "end_seconds": 605.8
+    },
+    {
+      "text": "るって。なんかこのトイレ綺麗にできたん",
+      "start_seconds": 602.36,
+      "end_seconds": 608.9590000000001
+    },
+    {
+      "text": "だったらまだできるって思ったんです。",
+      "start_seconds": 605.8,
+      "end_seconds": 612.7199999999999
+    },
+    {
+      "text": "そして僕はそこから復活します。これは",
+      "start_seconds": 608.959,
+      "end_seconds": 616.92
+    },
+    {
+      "text": "友達が心を込めて僕の部屋を掃除してくれ",
+      "start_seconds": 612.72,
+      "end_seconds": 620.72
+    },
+    {
+      "text": "たことによって今度は僕がそれを感じたん",
+      "start_seconds": 616.92,
+      "end_seconds": 624.64
+    },
+    {
+      "text": "ですね。そしてそこからもう一度仕事を",
+      "start_seconds": 620.72,
+      "end_seconds": 627.839
+    },
+    {
+      "text": "探し始めたんですけどなかなか今度は年齢",
+      "start_seconds": 624.64,
+      "end_seconds": 629.959
+    },
+    {
+      "text": "も言ってたんで仕事が見つからないんです",
+      "start_seconds": 627.839,
+      "end_seconds": 632.839
+    },
+    {
+      "text": "。仕事をさせて欲しいのに見つからなくて",
+      "start_seconds": 629.959,
+      "end_seconds": 635.56
+    },
+    {
+      "text": "苦しくて苦しくてそしてその時ようやく",
+      "start_seconds": 632.839,
+      "end_seconds": 638.8800000000001
+    },
+    {
+      "text": "見つかったのが掃除の仕事だったんです。",
+      "start_seconds": 635.56,
+      "end_seconds": 642.1999999999999
+    },
+    {
+      "text": "今度は違います。もうありがたくて",
+      "start_seconds": 638.88,
+      "end_seconds": 645.2
+    },
+    {
+      "text": "ありがたくて。そしてまた吐き掃除の仕事",
+      "start_seconds": 642.2,
+      "end_seconds": 648.2
+    },
+    {
+      "text": "でした。もう一吐きするのにも胸が",
+      "start_seconds": 645.2,
+      "end_seconds": 649.88
+    },
+    {
+      "text": "いっぱいなんか[息をのむ音][笑い]",
+      "start_seconds": 648.2,
+      "end_seconds": 651.2
+    },
+    {
+      "text": "飛社会の[咳払い]",
+      "start_seconds": 649.88,
+      "end_seconds": 654.12
+    },
+    {
+      "text": "1になったんですね。地球の中の中心だっ",
+      "start_seconds": 651.2,
+      "end_seconds": 657.72
+    },
+    {
+      "text": "た僕が地球の中の1人になった瞬間でも",
+      "start_seconds": 654.12,
+      "end_seconds": 660.24
+    },
+    {
+      "text": "あったんです。でもね、あの角をきちんと",
+      "start_seconds": 657.72,
+      "end_seconds": 662.5600000000001
+    },
+    {
+      "text": "こうやって掃除してたらその時の上司に",
+      "start_seconds": 660.24,
+      "end_seconds": 665.48
+    },
+    {
+      "text": "言われました。マスダはいい仕事するね。",
+      "start_seconds": 662.56,
+      "end_seconds": 667.1199999999999
+    },
+    {
+      "text": "信用できるってこういう風に言われたん",
+      "start_seconds": 665.48,
+      "end_seconds": 670.399
+    },
+    {
+      "text": "です。そこから僕は心を込めて仕事をする",
+      "start_seconds": 667.12,
+      "end_seconds": 672.72
+    },
+    {
+      "text": "ことによっていろんなお家に行ったら",
+      "start_seconds": 670.399,
+      "end_seconds": 674.72
+    },
+    {
+      "text": "あなたもう1回来てねとかっていうそれを",
+      "start_seconds": 672.72,
+      "end_seconds": 678.6800000000001
+    },
+    {
+      "text": "また、え、みんなに教えたらあの会社も",
+      "start_seconds": 674.72,
+      "end_seconds": 682.44
+    },
+    {
+      "text": "発展したんです。そんな心を込める",
+      "start_seconds": 678.68,
+      "end_seconds": 685.68
+    },
+    {
+      "text": "ものを、え、今度は本にしてみないかと",
+      "start_seconds": 682.44,
+      "end_seconds": 688.12
+    },
+    {
+      "text": "いうことで、その時掃除しながら考えて",
+      "start_seconds": 685.68,
+      "end_seconds": 691.4799999999999
+    },
+    {
+      "text": "たら降ってきたのが掃除録という",
+      "start_seconds": 688.12,
+      "end_seconds": 693.8
+    },
+    {
+      "text": "ネーミングだったんです。そしてこれが",
+      "start_seconds": 691.48,
+      "end_seconds": 696.36
+    },
+    {
+      "text": "本人に2005年になりまして、そこから",
+      "start_seconds": 693.8,
+      "end_seconds": 700.04
+    },
+    {
+      "text": "何十冊も書かせていただきました。さあ、",
+      "start_seconds": 696.36,
+      "end_seconds": 704.16
+    },
+    {
+      "text": "掃除力のお話です。あなたの部屋はあなた",
+      "start_seconds": 700.04,
+      "end_seconds": 706.7199999999999
+    },
+    {
+      "text": "自身です。ちょっときつい言葉かもしれ",
+      "start_seconds": 704.16,
+      "end_seconds": 709.6
+    },
+    {
+      "text": "ません。自分の部屋を思い浮かべてあれは",
+      "start_seconds": 706.72,
+      "end_seconds": 712.0790000000001
+    },
+    {
+      "text": "自分じゃないって思うかもしれないです",
+      "start_seconds": 709.6,
+      "end_seconds": 714.36
+    },
+    {
+      "text": "けどもこれを受け入れて欲しいんです。",
+      "start_seconds": 712.079,
+      "end_seconds": 717.92
+    },
+    {
+      "text": "まずやって欲しい実践があります。これは",
+      "start_seconds": 714.36,
+      "end_seconds": 721.48
+    },
+    {
+      "text": "ね、どうしても汚い部屋だと自分を責めて",
+      "start_seconds": 717.92,
+      "end_seconds": 723.8
+    },
+    {
+      "text": "しまうんです。僕自身もそうでした。掃除",
+      "start_seconds": 721.48,
+      "end_seconds": 726.2
+    },
+    {
+      "text": "力の本を出してそれから全国回って",
+      "start_seconds": 723.8,
+      "end_seconds": 728.8389999999999
+    },
+    {
+      "text": "セミナーをやって皆さんにお掃除し",
+      "start_seconds": 726.2,
+      "end_seconds": 730.36
+    },
+    {
+      "text": "ましょう。捨てましょう。汚れを取り",
+      "start_seconds": 728.839,
+      "end_seconds": 733.839
+    },
+    {
+      "text": "ましょうと言っていていながらあなたの",
+      "start_seconds": 730.36,
+      "end_seconds": 736.0790000000001
+    },
+    {
+      "text": "部屋あなた自身っていう時は僕も俯いてた",
+      "start_seconds": 733.839,
+      "end_seconds": 737.839
+    },
+    {
+      "text": "んです。なぜなら僕の部屋も汚かった",
+      "start_seconds": 736.079,
+      "end_seconds": 741.4399999999999
+    },
+    {
+      "text": "からって[笑い]また行って戻ってああっ",
+      "start_seconds": 737.839,
+      "end_seconds": 744.0400000000001
+    },
+    {
+      "text": "て言いながらまた全国巡ってたんで部屋が",
+      "start_seconds": 741.44,
+      "end_seconds": 747.36
+    },
+    {
+      "text": "ねぐちゃぐちゃだったんですね。でもねえ",
+      "start_seconds": 744.04,
+      "end_seconds": 750.199
+    },
+    {
+      "text": "、今から4年前もまた引きこもってた時期",
+      "start_seconds": 747.36,
+      "end_seconds": 752.76
+    },
+    {
+      "text": "があったんですけれどもその時は部屋が",
+      "start_seconds": 750.199,
+      "end_seconds": 755.959
+    },
+    {
+      "text": "綺麗だったんですよ。だからね皆さん部屋",
+      "start_seconds": 752.76,
+      "end_seconds": 758.36
+    },
+    {
+      "text": "を見て乱れてるってことはどういうことか",
+      "start_seconds": 755.959,
+      "end_seconds": 762.68
+    },
+    {
+      "text": "と言うとそれは外で頑張ってる証拠なん",
+      "start_seconds": 758.36,
+      "end_seconds": 765.5600000000001
+    },
+    {
+      "text": "ですよ。そうじゃないですか?家に帰って",
+      "start_seconds": 762.68,
+      "end_seconds": 768.56
+    },
+    {
+      "text": "もあたやることがあって必要最低限のこと",
+      "start_seconds": 765.56,
+      "end_seconds": 771.92
+    },
+    {
+      "text": "やったらもう時間がなくなって綺麗にする",
+      "start_seconds": 768.56,
+      "end_seconds": 775.8389999999999
+    },
+    {
+      "text": "時間がない。力がないだからね。まず部屋",
+      "start_seconds": 771.92,
+      "end_seconds": 778.0
+    },
+    {
+      "text": "に行ってぐちゃぐちゃだったら言って",
+      "start_seconds": 775.839,
+      "end_seconds": 781.2790000000001
+    },
+    {
+      "text": "欲しいんです。その部屋を見てよく頑張っ",
+      "start_seconds": 778.0,
+      "end_seconds": 783.92
+    },
+    {
+      "text": "てるねって自分自身に言ってあげて欲しい",
+      "start_seconds": 781.279,
+      "end_seconds": 786.199
+    },
+    {
+      "text": "んです。そしたらなんかちょっと胸が",
+      "start_seconds": 783.92,
+      "end_seconds": 788.5999999999999
+    },
+    {
+      "text": "キュンってなるでしょ。そしたらその力を",
+      "start_seconds": 786.199,
+      "end_seconds": 791.4399999999999
+    },
+    {
+      "text": "使ってやって欲しいところがまずはね1",
+      "start_seconds": 788.6,
+      "end_seconds": 794.32
+    },
+    {
+      "text": "箇所でいいです。蛇口、蛇口を磨いて",
+      "start_seconds": 791.44,
+      "end_seconds": 796.6
+    },
+    {
+      "text": "欲しいんです。蛇口をピカピカに磨いて",
+      "start_seconds": 794.32,
+      "end_seconds": 798.88
+    },
+    {
+      "text": "欲しいんです。そしてそれを自分自身だと",
+      "start_seconds": 796.6,
+      "end_seconds": 801.729
+    },
+    {
+      "text": "思って他はいいです。他は見なくていい。",
+      "start_seconds": 798.88,
+      "end_seconds": 804.24
+    },
+    {
+      "text": "[笑い]他は目をすりましょう。弱ジだけ",
+      "start_seconds": 801.729,
+      "end_seconds": 808.279
+    },
+    {
+      "text": "を磨いてこれは自分なんだって。素敵だね",
+      "start_seconds": 804.24,
+      "end_seconds": 810.279
+    },
+    {
+      "text": "。綺麗だねって言ってあげてください。",
+      "start_seconds": 808.279,
+      "end_seconds": 812.519
+    },
+    {
+      "text": "そうすると今度は光り物をどんどん磨いて",
+      "start_seconds": 810.279,
+      "end_seconds": 815.56
+    },
+    {
+      "text": "いきたくなりますから。やっぱりねこっち",
+      "start_seconds": 812.519,
+      "end_seconds": 817.68
+    },
+    {
+      "text": "にフォーカスする。綺麗なところに",
+      "start_seconds": 815.56,
+      "end_seconds": 820.959
+    },
+    {
+      "text": "フォーカスするとそれが広がっていくん",
+      "start_seconds": 817.68,
+      "end_seconds": 822.56
+    },
+    {
+      "text": "ですね。",
+      "start_seconds": 820.959,
+      "end_seconds": 824.76
+    },
+    {
+      "text": "それをやってったら鏡も磨いてください。",
+      "start_seconds": 822.56,
+      "end_seconds": 828.88
+    },
+    {
+      "text": "鏡を磨いて、え、ピカピカになった鏡でね",
+      "start_seconds": 824.76,
+      "end_seconds": 832.04
+    },
+    {
+      "text": "、こう言ってあげるんです。可愛いねって",
+      "start_seconds": 828.88,
+      "end_seconds": 835.789
+    },
+    {
+      "text": "。綺麗だねって。あ、心の中でいいですよ",
+      "start_seconds": 832.04,
+      "end_seconds": 838.4399999999999
+    },
+    {
+      "text": "[笑い]ね。だから、ま、僕のね、",
+      "start_seconds": 835.789,
+      "end_seconds": 840.48
+    },
+    {
+      "text": "セミナーで鏡を持ってきてもらって、鏡",
+      "start_seconds": 838.44,
+      "end_seconds": 842.8000000000001
+    },
+    {
+      "text": "磨いて美しくなるセミナーがあるんです",
+      "start_seconds": 840.48,
+      "end_seconds": 845.1990000000001
+    },
+    {
+      "text": "けども、鏡を鏡、鏡さんって言うんですね",
+      "start_seconds": 842.8,
+      "end_seconds": 848.5999999999999
+    },
+    {
+      "text": "。世界で1番美しいのは誰?言って、そし",
+      "start_seconds": 845.199,
+      "end_seconds": 850.4399999999999
+    },
+    {
+      "text": "たらみんな自分映ってるからクスク笑うん",
+      "start_seconds": 848.6,
+      "end_seconds": 852.9590000000001
+    },
+    {
+      "text": "ですけど、それが真実ですって言ってです",
+      "start_seconds": 850.44,
+      "end_seconds": 855.0790000000001
+    },
+    {
+      "text": "ね、書いてもらうんですけど、これ効果が",
+      "start_seconds": 852.959,
+      "end_seconds": 857.079
+    },
+    {
+      "text": "ありますからやってみてください。可愛い",
+      "start_seconds": 855.079,
+      "end_seconds": 859.0
+    },
+    {
+      "text": "、綺麗、かっこいいて言うとですね、",
+      "start_seconds": 857.079,
+      "end_seconds": 861.7199999999999
+    },
+    {
+      "text": "さっき水の話あったでしょ?同じように",
+      "start_seconds": 859.0,
+      "end_seconds": 865.56
+    },
+    {
+      "text": "思いがこの人間さ、水でできております",
+      "start_seconds": 861.72,
+      "end_seconds": 869.6
+    },
+    {
+      "text": "から、あの水でこの細胞のところから活性",
+      "start_seconds": 865.56,
+      "end_seconds": 873.5189999999999
+    },
+    {
+      "text": "化して美しくなりますという話をしてです",
+      "start_seconds": 869.6,
+      "end_seconds": 876.24
+    },
+    {
+      "text": "ね、もういい時間になってきました。で、",
+      "start_seconds": 873.519,
+      "end_seconds": 879.12
+    },
+    {
+      "text": "その次にやって欲しいことが何かと言うと",
+      "start_seconds": 876.24,
+      "end_seconds": 883.5600000000001
+    },
+    {
+      "text": "、捨てる。そしてまた汚れ取り、整理正頓",
+      "start_seconds": 879.12,
+      "end_seconds": 886.32
+    },
+    {
+      "text": "なんです。捨てるで前後裁談する力があり",
+      "start_seconds": 883.56,
+      "end_seconds": 889.56
+    },
+    {
+      "text": "ます。これもですね、例えばガラクタと",
+      "start_seconds": 886.32,
+      "end_seconds": 892.5600000000001
+    },
+    {
+      "text": "いうものはいつかとつくものです。いつか",
+      "start_seconds": 889.56,
+      "end_seconds": 895.279
+    },
+    {
+      "text": "は来ないでしょ。いつかって先伸ばしする",
+      "start_seconds": 892.56,
+      "end_seconds": 898.0
+    },
+    {
+      "text": "んです。何を先にするかというと、使うか",
+      "start_seconds": 895.279,
+      "end_seconds": 901.04
+    },
+    {
+      "text": "もしれないなかったら困る不安の現れなん",
+      "start_seconds": 898.0,
+      "end_seconds": 903.72
+    },
+    {
+      "text": "です。もう1つはいつか何か時間ができ",
+      "start_seconds": 901.04,
+      "end_seconds": 905.519
+    },
+    {
+      "text": "たらやりたいと思ってることなんで、これ",
+      "start_seconds": 903.72,
+      "end_seconds": 908.519
+    },
+    {
+      "text": "は投避の現れなんです。いつか世界一種",
+      "start_seconds": 905.519,
+      "end_seconds": 910.5600000000001
+    },
+    {
+      "text": "旅行をするためのね、ケース、スーツ",
+      "start_seconds": 908.519,
+      "end_seconds": 912.88
+    },
+    {
+      "text": "ケース、これずっと撮ってる。いつか世界",
+      "start_seconds": 910.56,
+      "end_seconds": 916.1199999999999
+    },
+    {
+      "text": "収録をするんだって。これ10年経っても",
+      "start_seconds": 912.88,
+      "end_seconds": 918.279
+    },
+    {
+      "text": "同じこと言って、いつか世界主力をするん",
+      "start_seconds": 916.12,
+      "end_seconds": 921.6
+    },
+    {
+      "text": "だ。怖くないですか?ということでね、え",
+      "start_seconds": 918.279,
+      "end_seconds": 924.32
+    },
+    {
+      "text": "、最後もっといっぱい話したいことあった",
+      "start_seconds": 921.6,
+      "end_seconds": 926.72
+    },
+    {
+      "text": "んですけれども、最後はですね、僕の夢を",
+      "start_seconds": 924.32,
+      "end_seconds": 930.44
+    },
+    {
+      "text": "聞いてください。僕の世はこの掃除力を",
+      "start_seconds": 926.72,
+      "end_seconds": 933.0400000000001
+    },
+    {
+      "text": "世界の隅々の人たちに伝えることなんです",
+      "start_seconds": 930.44,
+      "end_seconds": 936.3190000000001
+    },
+    {
+      "text": "。そうすると部屋を綺麗にしながら心が",
+      "start_seconds": 933.04,
+      "end_seconds": 938.5999999999999
+    },
+    {
+      "text": "綺麗になる人が増えていくんです。心が",
+      "start_seconds": 936.319,
+      "end_seconds": 941.319
+    },
+    {
+      "text": "綺麗になればその家庭1人心が綺麗になれ",
+      "start_seconds": 938.6,
+      "end_seconds": 946.8000000000001
+    },
+    {
+      "text": "ば家庭が家族が綺麗になあの輝きますか",
+      "start_seconds": 941.319,
+      "end_seconds": 952.639
+    },
+    {
+      "text": "家族が輝くと大人り近所地域も輝きます。",
+      "start_seconds": 946.8,
+      "end_seconds": 955.279
+    },
+    {
+      "text": "地域が輝くと",
+      "start_seconds": 952.639,
+      "end_seconds": 958.44
+    },
+    {
+      "text": "市町村が輝いて、そして国、日本が輝く。",
+      "start_seconds": 955.279,
+      "end_seconds": 961.68
+    },
+    {
+      "text": "日本が輝けば隣の国にも影響を与えられ",
+      "start_seconds": 958.44,
+      "end_seconds": 964.399
+    },
+    {
+      "text": "ます。そして結果的には地球が輝くんです",
+      "start_seconds": 961.68,
+      "end_seconds": 967.8389999999999
+    },
+    {
+      "text": "。そしてある日をもうこ、これは今年から",
+      "start_seconds": 964.399,
+      "end_seconds": 970.399
+    },
+    {
+      "text": "やってきますけれども、世界掃除力でって",
+      "start_seconds": 967.839,
+      "end_seconds": 974.399
+    },
+    {
+      "text": "言って休日にしてこの日は地球にね、済ま",
+      "start_seconds": 970.399,
+      "end_seconds": 977.36
+    },
+    {
+      "text": "せていただいていることに感謝をするん",
+      "start_seconds": 974.399,
+      "end_seconds": 981.12
+    },
+    {
+      "text": "です。酸素も無料で与えられてますよね。",
+      "start_seconds": 977.36,
+      "end_seconds": 982.72
+    },
+    {
+      "text": "止まれ、止められたことありますか?ない",
+      "start_seconds": 981.12,
+      "end_seconds": 985.88
+    },
+    {
+      "text": "ですよね。太陽の光も止められませんよね",
+      "start_seconds": 982.72,
+      "end_seconds": 990.0400000000001
+    },
+    {
+      "text": "。無償で水は水道水ですけども、どっか",
+      "start_seconds": 985.88,
+      "end_seconds": 991.959
+    },
+    {
+      "text": "水溜まり行けば飲もうと思えば飲めます",
+      "start_seconds": 990.04,
+      "end_seconds": 994.279
+    },
+    {
+      "text": "から。全部これ無料で与えられてるんです",
+      "start_seconds": 991.959,
+      "end_seconds": 996.7199999999999
+    },
+    {
+      "text": "。済ませていただいてるんです。このこと",
+      "start_seconds": 994.279,
+      "end_seconds": 999.72
+    },
+    {
+      "text": "に感謝をして、感謝をしたら必ず行動に",
+      "start_seconds": 996.72,
+      "end_seconds": 1002.279
+    },
+    {
+      "text": "なりますから。その行動は何かと言うと、",
+      "start_seconds": 999.72,
+      "end_seconds": 1005.399
+    },
+    {
+      "text": "これは綺麗。使った場所を綺麗にする。だ",
+      "start_seconds": 1002.279,
+      "end_seconds": 1008.24
+    },
+    {
+      "text": "からお掃除をみんなでする日を作りたい。",
+      "start_seconds": 1005.399,
+      "end_seconds": 1011.92
+    },
+    {
+      "text": "で、各国の首脳も集まって腕ままくりして",
+      "start_seconds": 1008.24,
+      "end_seconds": 1014.72
+    },
+    {
+      "text": "ね、お掃除したら気持ちが1つになるから",
+      "start_seconds": 1011.92,
+      "end_seconds": 1017.519
+    },
+    {
+      "text": "外交問題なんかもまた戦争も止まりますよ",
+      "start_seconds": 1014.72,
+      "end_seconds": 1019.5600000000001
+    },
+    {
+      "text": "。そういうことを僕はやっていきたいと",
+      "start_seconds": 1017.519,
+      "end_seconds": 1022.9590000000001
+    },
+    {
+      "text": "思います。さあ、最後に僕は心を込めた",
+      "start_seconds": 1019.56,
+      "end_seconds": 1026.1599999999999
+    },
+    {
+      "text": "相場を今ここでやって終わりたいと思い",
+      "start_seconds": 1022.959,
+      "end_seconds": 1031.76
+    },
+    {
+      "text": "ます。それではさせていただきましょう。",
+      "start_seconds": 1026.16,
+      "end_seconds": 1031.76
+    },
+    {
+      "text": "[鼻息]",
+      "start_seconds": 1032.291,
+      "end_seconds": 1034.311
+    },
+    {
+      "text": "え、地球さんいつも本当に済ませて",
+      "start_seconds": 1034.559,
+      "end_seconds": 1042.52
+    },
+    {
+      "text": "いただいてありがとうございます。",
+      "start_seconds": 1037.4,
+      "end_seconds": 1042.52
+    },
+    {
+      "text": "これは世界で今喧嘩をしてる人たちに",
+      "start_seconds": 1048.12,
+      "end_seconds": 1055.32
+    },
+    {
+      "text": "対する僕のメッセージです。大変だ、大変",
+      "start_seconds": 1051.64,
+      "end_seconds": 1059.4
+    },
+    {
+      "text": "だ。ここ見て地球が綺麗になってるよ。",
+      "start_seconds": 1055.32,
+      "end_seconds": 1063.1319999999998
+    },
+    {
+      "text": "ありがとうございました。[拍手]",
+      "start_seconds": 1059.4,
+      "end_seconds": 1063.132
+    }
+  ],
+  "display_captions": [
+    {
+      "text": "[音楽]",
+      "start_seconds": 9.825,
+      "end_seconds": 11.844999999999999,
+      "id": "7oimWUif8S8-display-0001",
+      "segment_id": "7oimWUif8S8-ja-0001"
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 13.755,
+      "end_seconds": 15.775,
+      "id": "7oimWUif8S8-display-0002",
+      "segment_id": "7oimWUif8S8-ja-0002"
+    },
+    {
+      "text": "部屋が綺麗な人も汚い人も最高。掃除力の",
+      "start_seconds": 21.199,
+      "end_seconds": 25.439,
+      "id": "7oimWUif8S8-display-0003",
+      "segment_id": "7oimWUif8S8-ja-0003"
+    },
+    {
+      "text": "増田光です。さあ、皆さんこれから不思議",
+      "start_seconds": 25.439,
+      "end_seconds": 29.279,
+      "id": "7oimWUif8S8-display-0004",
+      "segment_id": "7oimWUif8S8-ja-0003"
+    },
+    {
+      "text": "な掃除のお話をします。まずはどう",
+      "start_seconds": 29.279,
+      "end_seconds": 32.52,
+      "id": "7oimWUif8S8-display-0005",
+      "segment_id": "7oimWUif8S8-ja-0003"
+    },
+    {
+      "text": "でしょうか?皆さん、お掃除好きな人どの",
+      "start_seconds": 32.52,
+      "end_seconds": 35.079,
+      "id": "7oimWUif8S8-display-0006",
+      "segment_id": "7oimWUif8S8-ja-0004"
+    },
+    {
+      "text": "くらいいますか?",
+      "start_seconds": 35.079,
+      "end_seconds": 37.52,
+      "id": "7oimWUif8S8-display-0007",
+      "segment_id": "7oimWUif8S8-ja-0004"
+    },
+    {
+      "text": "お、あ、パラパラバットね。はい。はい。",
+      "start_seconds": 37.52,
+      "end_seconds": 41.36,
+      "id": "7oimWUif8S8-display-0008",
+      "segment_id": "7oimWUif8S8-ja-0005"
+    },
+    {
+      "text": "多くの人は苦手という感じでしょうか。で",
+      "start_seconds": 41.36,
+      "end_seconds": 44.92,
+      "id": "7oimWUif8S8-display-0009",
+      "segment_id": "7oimWUif8S8-ja-0006"
+    },
+    {
+      "text": "は、苦手であっても部屋が綺麗な方がいい",
+      "start_seconds": 44.92,
+      "end_seconds": 48.52,
+      "id": "7oimWUif8S8-display-0010",
+      "segment_id": "7oimWUif8S8-ja-0006"
+    },
+    {
+      "text": "と思う人はどのくらいいますか?あ、ここ",
+      "start_seconds": 48.52,
+      "end_seconds": 51.32,
+      "id": "7oimWUif8S8-display-0011",
+      "segment_id": "7oimWUif8S8-ja-0006"
+    },
+    {
+      "text": "は全員ね、ちょっと今どうしようかなと",
+      "start_seconds": 51.32,
+      "end_seconds": 54.199,
+      "id": "7oimWUif8S8-display-0012",
+      "segment_id": "7oimWUif8S8-ja-0007"
+    },
+    {
+      "text": "思って揚げ損ねた人は汚くてもいいって",
+      "start_seconds": 54.199,
+      "end_seconds": 57.6,
+      "id": "7oimWUif8S8-display-0013",
+      "segment_id": "7oimWUif8S8-ja-0007"
+    },
+    {
+      "text": "ことになっちゃいますからね。ということ",
+      "start_seconds": 57.6,
+      "end_seconds": 59.44,
+      "id": "7oimWUif8S8-display-0014",
+      "segment_id": "7oimWUif8S8-ja-0007"
+    },
+    {
+      "text": "で、えっと、ま、ちょっとですね、今日は",
+      "start_seconds": 59.44,
+      "end_seconds": 63.239,
+      "id": "7oimWUif8S8-display-0015",
+      "segment_id": "7oimWUif8S8-ja-0007"
+    },
+    {
+      "text": "単なる掃除の話ではないんです。掃除だと",
+      "start_seconds": 63.239,
+      "end_seconds": 66.96,
+      "id": "7oimWUif8S8-display-0016",
+      "segment_id": "7oimWUif8S8-ja-0008"
+    },
+    {
+      "text": "ですね、平和は綺麗になりますけれども、",
+      "start_seconds": 66.96,
+      "end_seconds": 69.64,
+      "id": "7oimWUif8S8-display-0017",
+      "segment_id": "7oimWUif8S8-ja-0008"
+    },
+    {
+      "text": "僕が今日皆さんにお伝えしたい掃除の力と",
+      "start_seconds": 69.64,
+      "end_seconds": 73.36,
+      "id": "7oimWUif8S8-display-0018",
+      "segment_id": "7oimWUif8S8-ja-0008"
+    },
+    {
+      "text": "いうのは、なんと人生をより良い方向に",
+      "start_seconds": 73.36,
+      "end_seconds": 76.799,
+      "id": "7oimWUif8S8-display-0019",
+      "segment_id": "7oimWUif8S8-ja-0009"
+    },
+    {
+      "text": "向かわせる力なんです。もう少し具体的に",
+      "start_seconds": 76.799,
+      "end_seconds": 79.88,
+      "id": "7oimWUif8S8-display-0020",
+      "segment_id": "7oimWUif8S8-ja-0009"
+    },
+    {
+      "text": "言うとこの力を使った人たちはですね、",
+      "start_seconds": 79.88,
+      "end_seconds": 83.04,
+      "id": "7oimWUif8S8-display-0021",
+      "segment_id": "7oimWUif8S8-ja-0009"
+    },
+    {
+      "text": "例えば学生であれば学力が上がります。",
+      "start_seconds": 83.04,
+      "end_seconds": 86.32,
+      "id": "7oimWUif8S8-display-0022",
+      "segment_id": "7oimWUif8S8-ja-0010"
+    },
+    {
+      "text": "学力が上かり脂肪も何段階か上にアップし",
+      "start_seconds": 86.32,
+      "end_seconds": 89.72,
+      "id": "7oimWUif8S8-display-0023",
+      "segment_id": "7oimWUif8S8-ja-0011"
+    },
+    {
+      "text": "て合格してですね、これはもう世界",
+      "start_seconds": 89.72,
+      "end_seconds": 92.96,
+      "id": "7oimWUif8S8-display-0024",
+      "segment_id": "7oimWUif8S8-ja-0011"
+    },
+    {
+      "text": "いろんなところでお話しさせていただき",
+      "start_seconds": 92.96,
+      "end_seconds": 94.96,
+      "id": "7oimWUif8S8-display-0025",
+      "segment_id": "7oimWUif8S8-ja-0011"
+    },
+    {
+      "text": "ますけど国関係なくお母さんと一緒に来て",
+      "start_seconds": 94.96,
+      "end_seconds": 98.0,
+      "id": "7oimWUif8S8-display-0026",
+      "segment_id": "7oimWUif8S8-ja-0011"
+    },
+    {
+      "text": "、え、死亡ましたっていうお話もいいて",
+      "start_seconds": 98.0,
+      "end_seconds": 100.84,
+      "id": "7oimWUif8S8-display-0027",
+      "segment_id": "7oimWUif8S8-ja-0012"
+    },
+    {
+      "text": "おります。また、あ、潰れそうな飲食店も",
+      "start_seconds": 100.84,
+      "end_seconds": 105.479,
+      "id": "7oimWUif8S8-display-0028",
+      "segment_id": "7oimWUif8S8-ja-0012"
+    },
+    {
+      "text": "この力を使うと行列ができるようになり",
+      "start_seconds": 105.479,
+      "end_seconds": 108.079,
+      "id": "7oimWUif8S8-display-0029",
+      "segment_id": "7oimWUif8S8-ja-0012"
+    },
+    {
+      "text": "ました。ちょっと行けてない方が、あ、",
+      "start_seconds": 108.079,
+      "end_seconds": 111.159,
+      "id": "7oimWUif8S8-display-0030",
+      "segment_id": "7oimWUif8S8-ja-0013"
+    },
+    {
+      "text": "この力を使うとモテモテになってですね、",
+      "start_seconds": 111.159,
+      "end_seconds": 114.28,
+      "id": "7oimWUif8S8-display-0031",
+      "segment_id": "7oimWUif8S8-ja-0013"
+    },
+    {
+      "text": "そして恋人ができて結婚したという方もい",
+      "start_seconds": 114.28,
+      "end_seconds": 117.159,
+      "id": "7oimWUif8S8-display-0032",
+      "segment_id": "7oimWUif8S8-ja-0013"
+    },
+    {
+      "text": "ます。先日ある講演会に友達の講演会に出",
+      "start_seconds": 117.159,
+      "end_seconds": 122.479,
+      "id": "7oimWUif8S8-display-0033",
+      "segment_id": "7oimWUif8S8-ja-0014"
+    },
+    {
+      "text": "ていて、そして、え、エレベーターに乗っ",
+      "start_seconds": 122.479,
+      "end_seconds": 125.32,
+      "id": "7oimWUif8S8-display-0034",
+      "segment_id": "7oimWUif8S8-ja-0014"
+    },
+    {
+      "text": "て帰る途中に、ま、仲間たちがいたんで、",
+      "start_seconds": 125.32,
+      "end_seconds": 128.2,
+      "id": "7oimWUif8S8-display-0035",
+      "segment_id": "7oimWUif8S8-ja-0014"
+    },
+    {
+      "text": "ま、マ田先生掃除力はって話をちょこっと",
+      "start_seconds": 128.2,
+      "end_seconds": 130.56,
+      "id": "7oimWUif8S8-display-0036",
+      "segment_id": "7oimWUif8S8-ja-0015"
+    },
+    {
+      "text": "してたら、そのエレベーターに言わせた",
+      "start_seconds": 130.56,
+      "end_seconds": 134.08,
+      "id": "7oimWUif8S8-display-0037",
+      "segment_id": "7oimWUif8S8-ja-0015"
+    },
+    {
+      "text": "1人の女性がこう言ってきたんです。あの",
+      "start_seconds": 134.08,
+      "end_seconds": 137.28,
+      "id": "7oimWUif8S8-display-0038",
+      "segment_id": "7oimWUif8S8-ja-0015"
+    },
+    {
+      "text": "、掃除力のマスター先生ですかと言われて",
+      "start_seconds": 137.28,
+      "end_seconds": 139.4,
+      "id": "7oimWUif8S8-display-0039",
+      "segment_id": "7oimWUif8S8-ja-0015"
+    },
+    {
+      "text": "、はいって言ったら17年前に実は私、",
+      "start_seconds": 139.4,
+      "end_seconds": 143.44,
+      "id": "7oimWUif8S8-display-0040",
+      "segment_id": "7oimWUif8S8-ja-0016"
+    },
+    {
+      "text": "あの、アドバイスをもらったことがあり",
+      "start_seconds": 143.44,
+      "end_seconds": 145.72,
+      "id": "7oimWUif8S8-display-0041",
+      "segment_id": "7oimWUif8S8-ja-0016"
+    },
+    {
+      "text": "ます。ちょっと記憶がちょっと出てこ",
+      "start_seconds": 145.72,
+      "end_seconds": 147.319,
+      "id": "7oimWUif8S8-display-0042",
+      "segment_id": "7oimWUif8S8-ja-0016"
+    },
+    {
+      "text": "なかったんですけど、どんなアドバイス",
+      "start_seconds": 147.319,
+      "end_seconds": 149.319,
+      "id": "7oimWUif8S8-display-0043",
+      "segment_id": "7oimWUif8S8-ja-0016"
+    },
+    {
+      "text": "をって言ったらですね、実はあの子供が",
+      "start_seconds": 149.319,
+      "end_seconds": 153.28,
+      "id": "7oimWUif8S8-display-0044",
+      "segment_id": "7oimWUif8S8-ja-0017"
+    },
+    {
+      "text": "できなくて悩んでいた話をしたと言うん",
+      "start_seconds": 153.28,
+      "end_seconds": 155.92,
+      "id": "7oimWUif8S8-display-0045",
+      "segment_id": "7oimWUif8S8-ja-0017"
+    },
+    {
+      "text": "ですね。で、僕は、あ、どんなアドバイス",
+      "start_seconds": 155.92,
+      "end_seconds": 158.4,
+      "id": "7oimWUif8S8-display-0046",
+      "segment_id": "7oimWUif8S8-ja-0017"
+    },
+    {
+      "text": "したんだろうと思ったら、寝室をよく磨き",
+      "start_seconds": 158.4,
+      "end_seconds": 160.959,
+      "id": "7oimWUif8S8-display-0047",
+      "segment_id": "7oimWUif8S8-ja-0017"
+    },
+    {
+      "text": "なさいと、そして、えっと、古い下着きを",
+      "start_seconds": 160.959,
+      "end_seconds": 165.08,
+      "id": "7oimWUif8S8-display-0048",
+      "segment_id": "7oimWUif8S8-ja-0018"
+    },
+    {
+      "text": "捨てて新しくしなさいとアドバイスした",
+      "start_seconds": 165.08,
+      "end_seconds": 167.28,
+      "id": "7oimWUif8S8-display-0049",
+      "segment_id": "7oimWUif8S8-ja-0018"
+    },
+    {
+      "text": "らしいんです。その結果、え、なんと息子",
+      "start_seconds": 167.28,
+      "end_seconds": 170.36,
+      "id": "7oimWUif8S8-display-0050",
+      "segment_id": "7oimWUif8S8-ja-0018"
+    },
+    {
+      "text": "が17歳になりましたっていうことで、",
+      "start_seconds": 170.36,
+      "end_seconds": 172.92,
+      "id": "7oimWUif8S8-display-0051",
+      "segment_id": "7oimWUif8S8-ja-0018"
+    },
+    {
+      "text": "子供も授かるというこの力ですね。そんな",
+      "start_seconds": 172.92,
+      "end_seconds": 176.851,
+      "id": "7oimWUif8S8-display-0052",
+      "segment_id": "7oimWUif8S8-ja-0019"
+    },
+    {
+      "text": "[笑い]、え、不思議な力があるんです",
+      "start_seconds": 176.851,
+      "end_seconds": 179.159,
+      "id": "7oimWUif8S8-display-0053",
+      "segment_id": "7oimWUif8S8-ja-0019"
+    },
+    {
+      "text": "けれども、この力にはなぜ、え、そんな力",
+      "start_seconds": 179.159,
+      "end_seconds": 183.36,
+      "id": "7oimWUif8S8-display-0054",
+      "segment_id": "7oimWUif8S8-ja-0019"
+    },
+    {
+      "text": "があるかと言いますと、これは掃除する",
+      "start_seconds": 183.36,
+      "end_seconds": 186.319,
+      "id": "7oimWUif8S8-display-0055",
+      "segment_id": "7oimWUif8S8-ja-0020"
+    },
+    {
+      "text": "行為の中に実は心の法則を入れているん",
+      "start_seconds": 186.319,
+      "end_seconds": 190.44,
+      "id": "7oimWUif8S8-display-0056",
+      "segment_id": "7oimWUif8S8-ja-0020"
+    },
+    {
+      "text": "ですね。心の法則を入れてるから単なる",
+      "start_seconds": 190.44,
+      "end_seconds": 193.959,
+      "id": "7oimWUif8S8-display-0057",
+      "segment_id": "7oimWUif8S8-ja-0020"
+    },
+    {
+      "text": "掃除で終わらないんです。そのキーワード",
+      "start_seconds": 193.959,
+      "end_seconds": 197.72,
+      "id": "7oimWUif8S8-display-0058",
+      "segment_id": "7oimWUif8S8-ja-0021"
+    },
+    {
+      "text": "になる言葉を今日お伝えします。これは",
+      "start_seconds": 197.72,
+      "end_seconds": 200.4,
+      "id": "7oimWUif8S8-display-0059",
+      "segment_id": "7oimWUif8S8-ja-0021"
+    },
+    {
+      "text": "もう記憶してお家に帰っていただきたい",
+      "start_seconds": 200.4,
+      "end_seconds": 203.12,
+      "id": "7oimWUif8S8-display-0060",
+      "segment_id": "7oimWUif8S8-ja-0021"
+    },
+    {
+      "text": "です。それはあなたの部屋はあなた自身を",
+      "start_seconds": 203.12,
+      "end_seconds": 207.599,
+      "id": "7oimWUif8S8-display-0061",
+      "segment_id": "7oimWUif8S8-ja-0022"
+    },
+    {
+      "text": "表すということなんです。ちょっとね、俯",
+      "start_seconds": 207.599,
+      "end_seconds": 210.92,
+      "id": "7oimWUif8S8-display-0062",
+      "segment_id": "7oimWUif8S8-ja-0022"
+    },
+    {
+      "text": "ちゃったりね、あっち向いたり、こっち",
+      "start_seconds": 210.92,
+      "end_seconds": 212.4,
+      "id": "7oimWUif8S8-display-0063",
+      "segment_id": "7oimWUif8S8-ja-0022"
+    },
+    {
+      "text": "向いたりってなりますよね。大丈夫。",
+      "start_seconds": 212.4,
+      "end_seconds": 214.519,
+      "id": "7oimWUif8S8-display-0064",
+      "segment_id": "7oimWUif8S8-ja-0022"
+    },
+    {
+      "text": "気持ちは分かります。それは後であの救い",
+      "start_seconds": 214.519,
+      "end_seconds": 217.48,
+      "id": "7oimWUif8S8-display-0065",
+      "segment_id": "7oimWUif8S8-ja-0023"
+    },
+    {
+      "text": "ますんで、あのちょっと待っててください",
+      "start_seconds": 217.48,
+      "end_seconds": 220.239,
+      "id": "7oimWUif8S8-display-0066",
+      "segment_id": "7oimWUif8S8-ja-0023"
+    },
+    {
+      "text": "。そしてではですね、まずこの掃除力の",
+      "start_seconds": 220.239,
+      "end_seconds": 223.799,
+      "id": "7oimWUif8S8-display-0067",
+      "segment_id": "7oimWUif8S8-ja-0023"
+    },
+    {
+      "text": "この力ですね。この力にまず最初に僕が気",
+      "start_seconds": 223.799,
+      "end_seconds": 227.92,
+      "id": "7oimWUif8S8-display-0068",
+      "segment_id": "7oimWUif8S8-ja-0024"
+    },
+    {
+      "text": "がついたのは心を込めて、え、掃場したと",
+      "start_seconds": 227.92,
+      "end_seconds": 231.84,
+      "id": "7oimWUif8S8-display-0069",
+      "segment_id": "7oimWUif8S8-ja-0024"
+    },
+    {
+      "text": "いう出来事だったのでそのエピソードをお",
+      "start_seconds": 231.84,
+      "end_seconds": 235.079,
+      "id": "7oimWUif8S8-display-0070",
+      "segment_id": "7oimWUif8S8-ja-0024"
+    },
+    {
+      "text": "話しさせていただきます。小学校2年生の",
+      "start_seconds": 235.079,
+      "end_seconds": 238.2,
+      "id": "7oimWUif8S8-display-0071",
+      "segment_id": "7oimWUif8S8-ja-0025"
+    },
+    {
+      "text": "頃でした。もう本当にその頃はあの純粋で",
+      "start_seconds": 238.2,
+      "end_seconds": 242.519,
+      "id": "7oimWUif8S8-display-0072",
+      "segment_id": "7oimWUif8S8-ja-0025"
+    },
+    {
+      "text": "このぐらいだったんですけれどもとても",
+      "start_seconds": 242.519,
+      "end_seconds": 244.519,
+      "id": "7oimWUif8S8-display-0073",
+      "segment_id": "7oimWUif8S8-ja-0025"
+    },
+    {
+      "text": "可愛く今こなになってますけどもこの",
+      "start_seconds": 244.519,
+      "end_seconds": 246.28,
+      "id": "7oimWUif8S8-display-0074",
+      "segment_id": "7oimWUif8S8-ja-0025"
+    },
+    {
+      "text": "ぐらいイメージ僕でしないでくださいね。",
+      "start_seconds": 246.28,
+      "end_seconds": 248.72,
+      "id": "7oimWUif8S8-display-0075",
+      "segment_id": "7oimWUif8S8-ja-0026"
+    },
+    {
+      "text": "可いらしい子供でした。ある日両親が",
+      "start_seconds": 248.72,
+      "end_seconds": 252.84,
+      "id": "7oimWUif8S8-display-0076",
+      "segment_id": "7oimWUif8S8-ja-0027"
+    },
+    {
+      "text": "大喧嘩をしてたんです。そしてそれを",
+      "start_seconds": 252.84,
+      "end_seconds": 255.079,
+      "id": "7oimWUif8S8-display-0077",
+      "segment_id": "7oimWUif8S8-ja-0027"
+    },
+    {
+      "text": "初めて見た僕はもう怖くてですね、なんと",
+      "start_seconds": 255.079,
+      "end_seconds": 257.759,
+      "id": "7oimWUif8S8-display-0078",
+      "segment_id": "7oimWUif8S8-ja-0027"
+    },
+    {
+      "text": "か止めたいと思ったんですけど全然止まら",
+      "start_seconds": 257.759,
+      "end_seconds": 260.16,
+      "id": "7oimWUif8S8-display-0079",
+      "segment_id": "7oimWUif8S8-ja-0027"
+    },
+    {
+      "text": "ない。それでひらめいたんです。母が洗面",
+      "start_seconds": 260.16,
+      "end_seconds": 263.88,
+      "id": "7oimWUif8S8-display-0080",
+      "segment_id": "7oimWUif8S8-ja-0028"
+    },
+    {
+      "text": "上、あ、父がね、洗面上を綺麗にしてた時",
+      "start_seconds": 263.88,
+      "end_seconds": 266.479,
+      "id": "7oimWUif8S8-display-0081",
+      "segment_id": "7oimWUif8S8-ja-0028"
+    },
+    {
+      "text": "に母ってとても綺麗好きだったのですごく",
+      "start_seconds": 266.479,
+      "end_seconds": 269.88,
+      "id": "7oimWUif8S8-display-0082",
+      "segment_id": "7oimWUif8S8-ja-0028"
+    },
+    {
+      "text": "喜んでるシーンを思い出したんです。それ",
+      "start_seconds": 269.88,
+      "end_seconds": 272.28,
+      "id": "7oimWUif8S8-display-0083",
+      "segment_id": "7oimWUif8S8-ja-0029"
+    },
+    {
+      "text": "で僕は慌てて、え、洗面所に行き、なんと",
+      "start_seconds": 272.28,
+      "end_seconds": 275.6,
+      "id": "7oimWUif8S8-display-0084",
+      "segment_id": "7oimWUif8S8-ja-0029"
+    },
+    {
+      "text": "かそこにあったタオルとかスポンジを使っ",
+      "start_seconds": 275.6,
+      "end_seconds": 278.24,
+      "id": "7oimWUif8S8-display-0085",
+      "segment_id": "7oimWUif8S8-ja-0029"
+    },
+    {
+      "text": "てシンクを磨き、そして蛇口をピカピカに",
+      "start_seconds": 278.24,
+      "end_seconds": 281.8,
+      "id": "7oimWUif8S8-display-0086",
+      "segment_id": "7oimWUif8S8-ja-0029"
+    },
+    {
+      "text": "してこう言ったんです。顔を出して大変だ",
+      "start_seconds": 281.8,
+      "end_seconds": 285.52,
+      "id": "7oimWUif8S8-display-0087",
+      "segment_id": "7oimWUif8S8-ja-0030"
+    },
+    {
+      "text": "、大変だ。生面所が大変だって言ったん",
+      "start_seconds": 285.52,
+      "end_seconds": 288.199,
+      "id": "7oimWUif8S8-display-0088",
+      "segment_id": "7oimWUif8S8-ja-0030"
+    },
+    {
+      "text": "です。そしたら2人は何が何があったん",
+      "start_seconds": 288.199,
+      "end_seconds": 290.8,
+      "id": "7oimWUif8S8-display-0089",
+      "segment_id": "7oimWUif8S8-ja-0030"
+    },
+    {
+      "text": "だろうと思って駆けつけてきたんです。",
+      "start_seconds": 290.8,
+      "end_seconds": 293.12,
+      "id": "7oimWUif8S8-display-0090",
+      "segment_id": "7oimWUif8S8-ja-0030"
+    },
+    {
+      "text": "そして駆けつけた2人にこらって言って",
+      "start_seconds": 293.12,
+      "end_seconds": 296.0,
+      "id": "7oimWUif8S8-display-0091",
+      "segment_id": "7oimWUif8S8-ja-0031"
+    },
+    {
+      "text": "ですね、洗面所がピカピカだよて言ったん",
+      "start_seconds": 296.0,
+      "end_seconds": 299.56,
+      "id": "7oimWUif8S8-display-0092",
+      "segment_id": "7oimWUif8S8-ja-0031"
+    },
+    {
+      "text": "です。そしたら2人は顔を見合わせて笑顔",
+      "start_seconds": 299.56,
+      "end_seconds": 303.039,
+      "id": "7oimWUif8S8-display-0093",
+      "segment_id": "7oimWUif8S8-ja-0031"
+    },
+    {
+      "text": "になったんです。そしてお互いにごめん",
+      "start_seconds": 303.039,
+      "end_seconds": 306.12,
+      "id": "7oimWUif8S8-display-0094",
+      "segment_id": "7oimWUif8S8-ja-0032"
+    },
+    {
+      "text": "ねって言って、え、僕にもごめんねって",
+      "start_seconds": 306.12,
+      "end_seconds": 308.919,
+      "id": "7oimWUif8S8-display-0095",
+      "segment_id": "7oimWUif8S8-ja-0032"
+    },
+    {
+      "text": "言って、そして僕にはありがとうって言っ",
+      "start_seconds": 308.919,
+      "end_seconds": 311.16,
+      "id": "7oimWUif8S8-display-0096",
+      "segment_id": "7oimWUif8S8-ja-0032"
+    },
+    {
+      "text": "てくれたんです。こ",
+      "start_seconds": 311.16,
+      "end_seconds": 312.56,
+      "id": "7oimWUif8S8-display-0097",
+      "segment_id": "7oimWUif8S8-ja-0032"
+    },
+    {
+      "text": "れってもう僕はすごくその時のことを未だに戦めに覚えてるんですけど僕の心を込めた掃除が喧嘩を止めたんです。争う心ってものを止めたんです。",
+      "start_seconds": 312.56,
+      "end_seconds": 315.56,
+      "id": "7oimWUif8S8-display-0098",
+      "segment_id": "7oimWUif8S8-ja-0033"
+    },
+    {
+      "text": "僕はこれがすごく心に残って掃除が大好き",
+      "start_seconds": 326.72,
+      "end_seconds": 330.039,
+      "id": "7oimWUif8S8-display-0099",
+      "segment_id": "7oimWUif8S8-ja-0034"
+    },
+    {
+      "text": "になってその日から洗面所の登板はあの僕",
+      "start_seconds": 330.039,
+      "end_seconds": 333.72,
+      "id": "7oimWUif8S8-display-0100",
+      "segment_id": "7oimWUif8S8-ja-0034"
+    },
+    {
+      "text": "になってしまったんですけれどもそれま",
+      "start_seconds": 333.72,
+      "end_seconds": 335.919,
+      "id": "7oimWUif8S8-display-0101",
+      "segment_id": "7oimWUif8S8-ja-0034"
+    },
+    {
+      "text": "それはそれで好きだったんで良かったん",
+      "start_seconds": 335.919,
+      "end_seconds": 337.52,
+      "id": "7oimWUif8S8-display-0102",
+      "segment_id": "7oimWUif8S8-ja-0034"
+    },
+    {
+      "text": "ですなんですけどそんな僕も青年になり",
+      "start_seconds": 337.52,
+      "end_seconds": 340.759,
+      "id": "7oimWUif8S8-display-0103",
+      "segment_id": "7oimWUif8S8-ja-0035"
+    },
+    {
+      "text": "ロックに目覚めそして作師作曲が大好き",
+      "start_seconds": 340.759,
+      "end_seconds": 343.44,
+      "id": "7oimWUif8S8-display-0104",
+      "segment_id": "7oimWUif8S8-ja-0035"
+    },
+    {
+      "text": "だったもんですから夢を叶えるために状況",
+      "start_seconds": 343.44,
+      "end_seconds": 346.28,
+      "id": "7oimWUif8S8-display-0105",
+      "segment_id": "7oimWUif8S8-ja-0035"
+    },
+    {
+      "text": "しました。ロックミュージシャンになろう",
+      "start_seconds": 346.28,
+      "end_seconds": 348.08,
+      "id": "7oimWUif8S8-display-0106",
+      "segment_id": "7oimWUif8S8-ja-0035"
+    },
+    {
+      "text": "と思って状況したんです。東京に来て",
+      "start_seconds": 348.08,
+      "end_seconds": 351.56,
+      "id": "7oimWUif8S8-display-0107",
+      "segment_id": "7oimWUif8S8-ja-0036"
+    },
+    {
+      "text": "アルバイトでお金がなかったので食べて",
+      "start_seconds": 351.56,
+      "end_seconds": 353.88,
+      "id": "7oimWUif8S8-display-0108",
+      "segment_id": "7oimWUif8S8-ja-0036"
+    },
+    {
+      "text": "いくためにはアルバイトをしなきゃいけ",
+      "start_seconds": 353.88,
+      "end_seconds": 355.56,
+      "id": "7oimWUif8S8-display-0109",
+      "segment_id": "7oimWUif8S8-ja-0036"
+    },
+    {
+      "text": "ないということで仕事を探しました。",
+      "start_seconds": 355.56,
+      "end_seconds": 358.039,
+      "id": "7oimWUif8S8-display-0110",
+      "segment_id": "7oimWUif8S8-ja-0036"
+    },
+    {
+      "text": "ようやく見つかった仕事が掃除だったん",
+      "start_seconds": 358.039,
+      "end_seconds": 361.08,
+      "id": "7oimWUif8S8-display-0111",
+      "segment_id": "7oimWUif8S8-ja-0037"
+    },
+    {
+      "text": "です。ええ、ラッキーと思いました。その",
+      "start_seconds": 361.08,
+      "end_seconds": 365.24,
+      "id": "7oimWUif8S8-display-0112",
+      "segment_id": "7oimWUif8S8-ja-0037"
+    },
+    {
+      "text": "頃僕ね、もう掃除嫌いになってました。",
+      "start_seconds": 365.24,
+      "end_seconds": 368.114,
+      "id": "7oimWUif8S8-display-0113",
+      "segment_id": "7oimWUif8S8-ja-0037"
+    },
+    {
+      "text": "[笑い]だってミュージシャンですよ。",
+      "start_seconds": 368.114,
+      "end_seconds": 370.52,
+      "id": "7oimWUif8S8-display-0114",
+      "segment_id": "7oimWUif8S8-ja-0038"
+    },
+    {
+      "text": "ミュージシャンが掃除するの似合わない",
+      "start_seconds": 370.52,
+      "end_seconds": 373.96,
+      "id": "7oimWUif8S8-display-0115",
+      "segment_id": "7oimWUif8S8-ja-0039"
+    },
+    {
+      "text": "じゃないですか。格っこあると思ってです",
+      "start_seconds": 373.96,
+      "end_seconds": 375.599,
+      "id": "7oimWUif8S8-display-0116",
+      "segment_id": "7oimWUif8S8-ja-0039"
+    },
+    {
+      "text": "ね。もうなんか掃除のアルバイトに行く",
+      "start_seconds": 375.599,
+      "end_seconds": 378.199,
+      "id": "7oimWUif8S8-display-0117",
+      "segment_id": "7oimWUif8S8-ja-0039"
+    },
+    {
+      "text": "ことは本当に嫌でなんか作業服を着て汚い",
+      "start_seconds": 378.199,
+      "end_seconds": 380.919,
+      "id": "7oimWUif8S8-display-0118",
+      "segment_id": "7oimWUif8S8-ja-0039"
+    },
+    {
+      "text": "ところをね綺麗にするて嫌だなと思い",
+      "start_seconds": 380.919,
+      "end_seconds": 384.039,
+      "id": "7oimWUif8S8-display-0119",
+      "segment_id": "7oimWUif8S8-ja-0040"
+    },
+    {
+      "text": "ながらですねやってたんです。そんなよう",
+      "start_seconds": 384.039,
+      "end_seconds": 386.28,
+      "id": "7oimWUif8S8-display-0120",
+      "segment_id": "7oimWUif8S8-ja-0040"
+    },
+    {
+      "text": "な気持ちでやってるから上司にね、え、も",
+      "start_seconds": 386.28,
+      "end_seconds": 389.319,
+      "id": "7oimWUif8S8-display-0121",
+      "segment_id": "7oimWUif8S8-ja-0040"
+    },
+    {
+      "text": "適当にこうやって吐いてたら角にゴミが",
+      "start_seconds": 389.319,
+      "end_seconds": 392.44,
+      "id": "7oimWUif8S8-display-0122",
+      "segment_id": "7oimWUif8S8-ja-0040"
+    },
+    {
+      "text": "詰まってて僕のやった後それを水で流して",
+      "start_seconds": 392.44,
+      "end_seconds": 396.639,
+      "id": "7oimWUif8S8-display-0123",
+      "segment_id": "7oimWUif8S8-ja-0041"
+    },
+    {
+      "text": "そうするとその角からね粉が出てきてまた",
+      "start_seconds": 396.639,
+      "end_seconds": 399.759,
+      "id": "7oimWUif8S8-display-0124",
+      "segment_id": "7oimWUif8S8-ja-0041"
+    },
+    {
+      "text": "汚くなるからそれで怒鳴られてお前こんな",
+      "start_seconds": 399.759,
+      "end_seconds": 403.0,
+      "id": "7oimWUif8S8-display-0125",
+      "segment_id": "7oimWUif8S8-ja-0041"
+    },
+    {
+      "text": "いい加減な仕事をしてたらろな人間になら",
+      "start_seconds": 403.0,
+      "end_seconds": 406.039,
+      "id": "7oimWUif8S8-display-0126",
+      "segment_id": "7oimWUif8S8-ja-0042"
+    },
+    {
+      "text": "ないぞとろな人生送らないぞとこういう風",
+      "start_seconds": 406.039,
+      "end_seconds": 408.479,
+      "id": "7oimWUif8S8-display-0127",
+      "segment_id": "7oimWUif8S8-ja-0042"
+    },
+    {
+      "text": "に言われたんですけど僕はまなんかなんと",
+      "start_seconds": 408.479,
+      "end_seconds": 410.68,
+      "id": "7oimWUif8S8-display-0128",
+      "segment_id": "7oimWUif8S8-ja-0042"
+    },
+    {
+      "text": "思って僕は将来ビッグになるからと思って",
+      "start_seconds": 410.68,
+      "end_seconds": 413.964,
+      "id": "7oimWUif8S8-display-0129",
+      "segment_id": "7oimWUif8S8-ja-0042"
+    },
+    {
+      "text": "[笑い]",
+      "start_seconds": 413.964,
+      "end_seconds": 414.52,
+      "id": "7oimWUif8S8-display-0130",
+      "segment_id": "7oimWUif8S8-ja-0042"
+    },
+    {
+      "text": "思ってたんですね。その頃らはもう僕を",
+      "start_seconds": 414.52,
+      "end_seconds": 416.4,
+      "id": "7oimWUif8S8-display-0131",
+      "segment_id": "7oimWUif8S8-ja-0043"
+    },
+    {
+      "text": "中心にやっぱり地球が回ってるような感じ",
+      "start_seconds": 416.4,
+      "end_seconds": 418.4,
+      "id": "7oimWUif8S8-display-0132",
+      "segment_id": "7oimWUif8S8-ja-0043"
+    },
+    {
+      "text": "でしたね。え、で、[笑い]え、そんな",
+      "start_seconds": 418.4,
+      "end_seconds": 420.84,
+      "id": "7oimWUif8S8-display-0133",
+      "segment_id": "7oimWUif8S8-ja-0043"
+    },
+    {
+      "text": "感じだったんで、あの、ひらめえたんです",
+      "start_seconds": 420.84,
+      "end_seconds": 423.08,
+      "id": "7oimWUif8S8-display-0134",
+      "segment_id": "7oimWUif8S8-ja-0043"
+    },
+    {
+      "text": "、その時ね。最初はロックミュージシャン",
+      "start_seconds": 423.08,
+      "end_seconds": 425.96,
+      "id": "7oimWUif8S8-display-0135",
+      "segment_id": "7oimWUif8S8-ja-0043"
+    },
+    {
+      "text": "になってデビューをして女性たちやみんな",
+      "start_seconds": 425.96,
+      "end_seconds": 429.759,
+      "id": "7oimWUif8S8-display-0136",
+      "segment_id": "7oimWUif8S8-ja-0044"
+    },
+    {
+      "text": "にキャーキャー言われて因がってそれで",
+      "start_seconds": 429.759,
+      "end_seconds": 434.08,
+      "id": "7oimWUif8S8-display-0137",
+      "segment_id": "7oimWUif8S8-ja-0044"
+    },
+    {
+      "text": "ビッグになるというような考え方だったん",
+      "start_seconds": 434.08,
+      "end_seconds": 436.479,
+      "id": "7oimWUif8S8-display-0138",
+      "segment_id": "7oimWUif8S8-ja-0044"
+    },
+    {
+      "text": "ですけども、すごいひらめいたのが、あ、",
+      "start_seconds": 436.479,
+      "end_seconds": 439.639,
+      "id": "7oimWUif8S8-display-0139",
+      "segment_id": "7oimWUif8S8-ja-0045"
+    },
+    {
+      "text": "先にお金持ちになったらいいんじゃないか",
+      "start_seconds": 439.639,
+      "end_seconds": 441.319,
+      "id": "7oimWUif8S8-display-0140",
+      "segment_id": "7oimWUif8S8-ja-0045"
+    },
+    {
+      "text": "と思ってですね。で、ゆっくり",
+      "start_seconds": 441.319,
+      "end_seconds": 443.84,
+      "id": "7oimWUif8S8-display-0141",
+      "segment_id": "7oimWUif8S8-ja-0045"
+    },
+    {
+      "text": "ミュージシャルになったらいいじゃないか",
+      "start_seconds": 443.84,
+      "end_seconds": 445.24,
+      "id": "7oimWUif8S8-display-0142",
+      "segment_id": "7oimWUif8S8-ja-0045"
+    },
+    {
+      "text": "と思って、それであ、天才だなと思って",
+      "start_seconds": 445.24,
+      "end_seconds": 448.44,
+      "id": "7oimWUif8S8-display-0143",
+      "segment_id": "7oimWUif8S8-ja-0045"
+    },
+    {
+      "text": "授業を立ち上げたんです。お金を設ける",
+      "start_seconds": 448.44,
+      "end_seconds": 451.319,
+      "id": "7oimWUif8S8-display-0144",
+      "segment_id": "7oimWUif8S8-ja-0046"
+    },
+    {
+      "text": "ために。え、その時は借金をして事業をし",
+      "start_seconds": 451.319,
+      "end_seconds": 455.12,
+      "id": "7oimWUif8S8-display-0145",
+      "segment_id": "7oimWUif8S8-ja-0046"
+    },
+    {
+      "text": "ました。そしたらですね、どんどん借金が",
+      "start_seconds": 455.12,
+      "end_seconds": 459.24,
+      "id": "7oimWUif8S8-display-0146",
+      "segment_id": "7oimWUif8S8-ja-0046"
+    },
+    {
+      "text": "増えてくんですね。不思議ですね。成功",
+      "start_seconds": 459.24,
+      "end_seconds": 461.919,
+      "id": "7oimWUif8S8-display-0147",
+      "segment_id": "7oimWUif8S8-ja-0047"
+    },
+    {
+      "text": "プログラムっていうの売ってたんです",
+      "start_seconds": 461.919,
+      "end_seconds": 463.199,
+      "id": "7oimWUif8S8-display-0148",
+      "segment_id": "7oimWUif8S8-ja-0047"
+    },
+    {
+      "text": "けれども、これ、え、社長さんに売りに",
+      "start_seconds": 463.199,
+      "end_seconds": 465.479,
+      "id": "7oimWUif8S8-display-0149",
+      "segment_id": "7oimWUif8S8-ja-0047"
+    },
+    {
+      "text": "行って、え、120万の成功プログラム1",
+      "start_seconds": 465.479,
+      "end_seconds": 468.159,
+      "id": "7oimWUif8S8-display-0150",
+      "segment_id": "7oimWUif8S8-ja-0047"
+    },
+    {
+      "text": "日投資いくらだと思いますか?みたいな",
+      "start_seconds": 468.159,
+      "end_seconds": 470.24,
+      "id": "7oimWUif8S8-display-0151",
+      "segment_id": "7oimWUif8S8-ja-0047"
+    },
+    {
+      "text": "こと言ってたらね。心で君は成功してるの",
+      "start_seconds": 470.24,
+      "end_seconds": 472.879,
+      "id": "7oimWUif8S8-display-0152",
+      "segment_id": "7oimWUif8S8-ja-0048"
+    },
+    {
+      "text": "かって言われて、いや、僕はこれを売って",
+      "start_seconds": 472.879,
+      "end_seconds": 474.52,
+      "id": "7oimWUif8S8-display-0153",
+      "segment_id": "7oimWUif8S8-ja-0048"
+    },
+    {
+      "text": "成功しようと思ってます。君成功してから",
+      "start_seconds": 474.52,
+      "end_seconds": 476.96,
+      "id": "7oimWUif8S8-display-0154",
+      "segment_id": "7oimWUif8S8-ja-0048"
+    },
+    {
+      "text": "これを売りなさいって言われてね、その",
+      "start_seconds": 476.96,
+      "end_seconds": 479.08,
+      "id": "7oimWUif8S8-display-0155",
+      "segment_id": "7oimWUif8S8-ja-0048"
+    },
+    {
+      "text": "言葉あってどんどんその結果借金に追われ",
+      "start_seconds": 479.08,
+      "end_seconds": 482.0,
+      "id": "7oimWUif8S8-display-0156",
+      "segment_id": "7oimWUif8S8-ja-0048"
+    },
+    {
+      "text": "てですね、引きこもりました。部屋は",
+      "start_seconds": 482.0,
+      "end_seconds": 485.12,
+      "id": "7oimWUif8S8-display-0157",
+      "segment_id": "7oimWUif8S8-ja-0049"
+    },
+    {
+      "text": "ぐちゃぐちゃカーテン閉めてそして、え、",
+      "start_seconds": 485.12,
+      "end_seconds": 487.919,
+      "id": "7oimWUif8S8-display-0158",
+      "segment_id": "7oimWUif8S8-ja-0049"
+    },
+    {
+      "text": "ずっとそんなような生活してるところに",
+      "start_seconds": 487.919,
+      "end_seconds": 490.08,
+      "id": "7oimWUif8S8-display-0159",
+      "segment_id": "7oimWUif8S8-ja-0049"
+    },
+    {
+      "text": "友人が訪ねてきたんです。友人が訪ねてき",
+      "start_seconds": 490.08,
+      "end_seconds": 493.24,
+      "id": "7oimWUif8S8-display-0160",
+      "segment_id": "7oimWUif8S8-ja-0049"
+    },
+    {
+      "text": "てどんどんで何回かちょっとイルス使った",
+      "start_seconds": 493.24,
+      "end_seconds": 496.24,
+      "id": "7oimWUif8S8-display-0161",
+      "segment_id": "7oimWUif8S8-ja-0050"
+    },
+    {
+      "text": "んですけどで仕方なくそれはその友人は",
+      "start_seconds": 496.24,
+      "end_seconds": 500.159,
+      "id": "7oimWUif8S8-display-0162",
+      "segment_id": "7oimWUif8S8-ja-0050"
+    },
+    {
+      "text": "清掃会社の時の友人でちょうどあ会社が",
+      "start_seconds": 500.159,
+      "end_seconds": 504.039,
+      "id": "7oimWUif8S8-display-0163",
+      "segment_id": "7oimWUif8S8-ja-0050"
+    },
+    {
+      "text": "終わってねえ掃除を積んだ車で来てたん",
+      "start_seconds": 504.039,
+      "end_seconds": 506.8,
+      "id": "7oimWUif8S8-display-0164",
+      "segment_id": "7oimWUif8S8-ja-0051"
+    },
+    {
+      "text": "ですけども僕の部屋を見てもうびっくりし",
+      "start_seconds": 506.8,
+      "end_seconds": 509.159,
+      "id": "7oimWUif8S8-display-0165",
+      "segment_id": "7oimWUif8S8-ja-0051"
+    },
+    {
+      "text": "てどんな生活してるんだお前こんなんじゃ",
+      "start_seconds": 509.159,
+      "end_seconds": 512.519,
+      "id": "7oimWUif8S8-display-0166",
+      "segment_id": "7oimWUif8S8-ja-0051"
+    },
+    {
+      "text": "だめだとお前はここで終わる人間じゃない",
+      "start_seconds": 512.519,
+      "end_seconds": 514.959,
+      "id": "7oimWUif8S8-display-0167",
+      "segment_id": "7oimWUif8S8-ja-0051"
+    },
+    {
+      "text": "からと言ってえ部屋に入ってきてカーテン",
+      "start_seconds": 514.959,
+      "end_seconds": 518.479,
+      "id": "7oimWUif8S8-display-0168",
+      "segment_id": "7oimWUif8S8-ja-0052"
+    },
+    {
+      "text": "を開けて窓を開けたんですよの光が入って",
+      "start_seconds": 518.479,
+      "end_seconds": 523.279,
+      "id": "7oimWUif8S8-display-0169",
+      "segment_id": "7oimWUif8S8-ja-0052"
+    },
+    {
+      "text": "きて風が流れたんです。その時埃りが",
+      "start_seconds": 523.279,
+      "end_seconds": 526.279,
+      "id": "7oimWUif8S8-display-0170",
+      "segment_id": "7oimWUif8S8-ja-0052"
+    },
+    {
+      "text": "わーっと待って玄関から出てくのが光で",
+      "start_seconds": 526.279,
+      "end_seconds": 530.16,
+      "id": "7oimWUif8S8-display-0171",
+      "segment_id": "7oimWUif8S8-ja-0053"
+    },
+    {
+      "text": "見えたんですね。その時パッと自分の",
+      "start_seconds": 530.16,
+      "end_seconds": 533.64,
+      "id": "7oimWUif8S8-display-0172",
+      "segment_id": "7oimWUif8S8-ja-0053"
+    },
+    {
+      "text": "ぐっとこう",
+      "start_seconds": 533.64,
+      "end_seconds": 535.8,
+      "id": "7oimWUif8S8-display-0173",
+      "segment_id": "7oimWUif8S8-ja-0053"
+    },
+    {
+      "text": "引きこもってた気持ちが一旦客観的に部屋",
+      "start_seconds": 535.8,
+      "end_seconds": 539.279,
+      "id": "7oimWUif8S8-display-0174",
+      "segment_id": "7oimWUif8S8-ja-0054"
+    },
+    {
+      "text": "が見えたんです。その時にはこれが自分な",
+      "start_seconds": 539.279,
+      "end_seconds": 543.04,
+      "id": "7oimWUif8S8-display-0175",
+      "segment_id": "7oimWUif8S8-ja-0054"
+    },
+    {
+      "text": "んだ。この部屋が自分なんだ。ボロボロで",
+      "start_seconds": 543.04,
+      "end_seconds": 545.839,
+      "id": "7oimWUif8S8-display-0176",
+      "segment_id": "7oimWUif8S8-ja-0054"
+    },
+    {
+      "text": "ぐちゃぐちゃでもうどうしようもない部屋",
+      "start_seconds": 545.839,
+      "end_seconds": 548.32,
+      "id": "7oimWUif8S8-display-0177",
+      "segment_id": "7oimWUif8S8-ja-0055"
+    },
+    {
+      "text": "になってました。そうすると友どんどん物",
+      "start_seconds": 548.32,
+      "end_seconds": 551.16,
+      "id": "7oimWUif8S8-display-0178",
+      "segment_id": "7oimWUif8S8-ja-0055"
+    },
+    {
+      "text": "を捨ててくんです。そして",
+      "start_seconds": 551.16,
+      "end_seconds": 554.04,
+      "id": "7oimWUif8S8-display-0179",
+      "segment_id": "7oimWUif8S8-ja-0055"
+    },
+    {
+      "text": "お前のトイレ、汚したトイレは俺はやり",
+      "start_seconds": 554.04,
+      "end_seconds": 556.64,
+      "id": "7oimWUif8S8-display-0180",
+      "segment_id": "7oimWUif8S8-ja-0055"
+    },
+    {
+      "text": "たくないからお前自分でやれと言ってです",
+      "start_seconds": 556.64,
+      "end_seconds": 559.079,
+      "id": "7oimWUif8S8-display-0181",
+      "segment_id": "7oimWUif8S8-ja-0056"
+    },
+    {
+      "text": "ね、トイレ装置もちょっといやいやながら",
+      "start_seconds": 559.079,
+      "end_seconds": 561.519,
+      "id": "7oimWUif8S8-display-0182",
+      "segment_id": "7oimWUif8S8-ja-0056"
+    },
+    {
+      "text": "始めたんです。いや、汚いトイレトイレ",
+      "start_seconds": 561.519,
+      "end_seconds": 564.2,
+      "id": "7oimWUif8S8-display-0183",
+      "segment_id": "7oimWUif8S8-ja-0056"
+    },
+    {
+      "text": "でしたけどもそれが少しずつ綺麗になった",
+      "start_seconds": 564.2,
+      "end_seconds": 566.56,
+      "id": "7oimWUif8S8-display-0184",
+      "segment_id": "7oimWUif8S8-ja-0056"
+    },
+    {
+      "text": "時に変化が起こりました。自分の感情が",
+      "start_seconds": 566.56,
+      "end_seconds": 571.68,
+      "id": "7oimWUif8S8-display-0185",
+      "segment_id": "7oimWUif8S8-ja-0057"
+    },
+    {
+      "text": "わーって出てきたんですね。ずっとこらて",
+      "start_seconds": 571.68,
+      "end_seconds": 574.72,
+      "id": "7oimWUif8S8-display-0186",
+      "segment_id": "7oimWUif8S8-ja-0057"
+    },
+    {
+      "text": "た気持ちがわって出て涙がもう止まらない",
+      "start_seconds": 574.72,
+      "end_seconds": 578.399,
+      "id": "7oimWUif8S8-display-0187",
+      "segment_id": "7oimWUif8S8-ja-0057"
+    },
+    {
+      "text": "。ポタポタポタポタ落ちてきて、もう",
+      "start_seconds": 578.399,
+      "end_seconds": 581.279,
+      "id": "7oimWUif8S8-display-0188",
+      "segment_id": "7oimWUif8S8-ja-0058"
+    },
+    {
+      "text": "お越え越するような感じでトイレを磨いた",
+      "start_seconds": 581.279,
+      "end_seconds": 583.959,
+      "id": "7oimWUif8S8-display-0189",
+      "segment_id": "7oimWUif8S8-ja-0058"
+    },
+    {
+      "text": "んです。それは辛かったとか苦しかったと",
+      "start_seconds": 583.959,
+      "end_seconds": 587.0,
+      "id": "7oimWUif8S8-display-0190",
+      "segment_id": "7oimWUif8S8-ja-0058"
+    },
+    {
+      "text": "かもっと自分をすごく攻めてた気持ちです",
+      "start_seconds": 587.0,
+      "end_seconds": 589.92,
+      "id": "7oimWUif8S8-display-0191",
+      "segment_id": "7oimWUif8S8-ja-0058"
+    },
+    {
+      "text": "ね。それらが全部出てきてその後にトイレ",
+      "start_seconds": 589.92,
+      "end_seconds": 594.399,
+      "id": "7oimWUif8S8-display-0192",
+      "segment_id": "7oimWUif8S8-ja-0059"
+    },
+    {
+      "text": "がピカピカになったんです。トイレが",
+      "start_seconds": 594.399,
+      "end_seconds": 596.6,
+      "id": "7oimWUif8S8-display-0193",
+      "segment_id": "7oimWUif8S8-ja-0059"
+    },
+    {
+      "text": "ピカピカになった時にまた不思議な力が",
+      "start_seconds": 596.6,
+      "end_seconds": 599.68,
+      "id": "7oimWUif8S8-display-0194",
+      "segment_id": "7oimWUif8S8-ja-0059"
+    },
+    {
+      "text": "湧いてきたんです。もう1回やり直せ",
+      "start_seconds": 599.68,
+      "end_seconds": 602.36,
+      "id": "7oimWUif8S8-display-0195",
+      "segment_id": "7oimWUif8S8-ja-0060"
+    },
+    {
+      "text": "るって。なんかこのトイレ綺麗にできたん",
+      "start_seconds": 602.36,
+      "end_seconds": 605.8,
+      "id": "7oimWUif8S8-display-0196",
+      "segment_id": "7oimWUif8S8-ja-0060"
+    },
+    {
+      "text": "だったらまだできるって思ったんです。",
+      "start_seconds": 605.8,
+      "end_seconds": 608.959,
+      "id": "7oimWUif8S8-display-0197",
+      "segment_id": "7oimWUif8S8-ja-0060"
+    },
+    {
+      "text": "そして僕はそこから復活します。これは",
+      "start_seconds": 608.959,
+      "end_seconds": 612.72,
+      "id": "7oimWUif8S8-display-0198",
+      "segment_id": "7oimWUif8S8-ja-0061"
+    },
+    {
+      "text": "友達が心を込めて僕の部屋を掃除してくれ",
+      "start_seconds": 612.72,
+      "end_seconds": 616.92,
+      "id": "7oimWUif8S8-display-0199",
+      "segment_id": "7oimWUif8S8-ja-0061"
+    },
+    {
+      "text": "たことによって今度は僕がそれを感じたん",
+      "start_seconds": 616.92,
+      "end_seconds": 620.72,
+      "id": "7oimWUif8S8-display-0200",
+      "segment_id": "7oimWUif8S8-ja-0061"
+    },
+    {
+      "text": "ですね。そしてそこからもう一度仕事を",
+      "start_seconds": 620.72,
+      "end_seconds": 624.64,
+      "id": "7oimWUif8S8-display-0201",
+      "segment_id": "7oimWUif8S8-ja-0062"
+    },
+    {
+      "text": "探し始めたんですけどなかなか今度は年齢",
+      "start_seconds": 624.64,
+      "end_seconds": 627.839,
+      "id": "7oimWUif8S8-display-0202",
+      "segment_id": "7oimWUif8S8-ja-0062"
+    },
+    {
+      "text": "も言ってたんで仕事が見つからないんです",
+      "start_seconds": 627.839,
+      "end_seconds": 629.959,
+      "id": "7oimWUif8S8-display-0203",
+      "segment_id": "7oimWUif8S8-ja-0062"
+    },
+    {
+      "text": "。仕事をさせて欲しいのに見つからなくて",
+      "start_seconds": 629.959,
+      "end_seconds": 632.839,
+      "id": "7oimWUif8S8-display-0204",
+      "segment_id": "7oimWUif8S8-ja-0063"
+    },
+    {
+      "text": "苦しくて苦しくてそしてその時ようやく",
+      "start_seconds": 632.839,
+      "end_seconds": 635.56,
+      "id": "7oimWUif8S8-display-0205",
+      "segment_id": "7oimWUif8S8-ja-0063"
+    },
+    {
+      "text": "見つかったのが掃除の仕事だったんです。",
+      "start_seconds": 635.56,
+      "end_seconds": 638.88,
+      "id": "7oimWUif8S8-display-0206",
+      "segment_id": "7oimWUif8S8-ja-0063"
+    },
+    {
+      "text": "今度は違います。もうありがたくて",
+      "start_seconds": 638.88,
+      "end_seconds": 642.2,
+      "id": "7oimWUif8S8-display-0207",
+      "segment_id": "7oimWUif8S8-ja-0064"
+    },
+    {
+      "text": "ありがたくて。そしてまた吐き掃除の仕事",
+      "start_seconds": 642.2,
+      "end_seconds": 645.2,
+      "id": "7oimWUif8S8-display-0208",
+      "segment_id": "7oimWUif8S8-ja-0064"
+    },
+    {
+      "text": "でした。もう一吐きするのにも胸が",
+      "start_seconds": 645.2,
+      "end_seconds": 648.2,
+      "id": "7oimWUif8S8-display-0209",
+      "segment_id": "7oimWUif8S8-ja-0064"
+    },
+    {
+      "text": "いっぱいなんか[息をのむ音][笑い]",
+      "start_seconds": 648.2,
+      "end_seconds": 649.88,
+      "id": "7oimWUif8S8-display-0210",
+      "segment_id": "7oimWUif8S8-ja-0064"
+    },
+    {
+      "text": "飛社会の[咳払い]",
+      "start_seconds": 649.88,
+      "end_seconds": 651.2,
+      "id": "7oimWUif8S8-display-0211",
+      "segment_id": "7oimWUif8S8-ja-0065"
+    },
+    {
+      "text": "1になったんですね。地球の中の中心だっ",
+      "start_seconds": 651.2,
+      "end_seconds": 654.12,
+      "id": "7oimWUif8S8-display-0212",
+      "segment_id": "7oimWUif8S8-ja-0065"
+    },
+    {
+      "text": "た僕が地球の中の1人になった瞬間でも",
+      "start_seconds": 654.12,
+      "end_seconds": 657.72,
+      "id": "7oimWUif8S8-display-0213",
+      "segment_id": "7oimWUif8S8-ja-0065"
+    },
+    {
+      "text": "あったんです。でもね、あの角をきちんと",
+      "start_seconds": 657.72,
+      "end_seconds": 660.24,
+      "id": "7oimWUif8S8-display-0214",
+      "segment_id": "7oimWUif8S8-ja-0065"
+    },
+    {
+      "text": "こうやって掃除してたらその時の上司に",
+      "start_seconds": 660.24,
+      "end_seconds": 662.56,
+      "id": "7oimWUif8S8-display-0215",
+      "segment_id": "7oimWUif8S8-ja-0066"
+    },
+    {
+      "text": "言われました。マスダはいい仕事するね。",
+      "start_seconds": 662.56,
+      "end_seconds": 665.48,
+      "id": "7oimWUif8S8-display-0216",
+      "segment_id": "7oimWUif8S8-ja-0066"
+    },
+    {
+      "text": "信用できるってこういう風に言われたん",
+      "start_seconds": 665.48,
+      "end_seconds": 667.12,
+      "id": "7oimWUif8S8-display-0217",
+      "segment_id": "7oimWUif8S8-ja-0067"
+    },
+    {
+      "text": "です。そこから僕は心を込めて仕事をする",
+      "start_seconds": 667.12,
+      "end_seconds": 670.399,
+      "id": "7oimWUif8S8-display-0218",
+      "segment_id": "7oimWUif8S8-ja-0067"
+    },
+    {
+      "text": "ことによっていろんなお家に行ったら",
+      "start_seconds": 670.399,
+      "end_seconds": 672.72,
+      "id": "7oimWUif8S8-display-0219",
+      "segment_id": "7oimWUif8S8-ja-0067"
+    },
+    {
+      "text": "あなたもう1回来てねとかっていうそれを",
+      "start_seconds": 672.72,
+      "end_seconds": 674.72,
+      "id": "7oimWUif8S8-display-0220",
+      "segment_id": "7oimWUif8S8-ja-0067"
+    },
+    {
+      "text": "また、え、みんなに教えたらあの会社も",
+      "start_seconds": 674.72,
+      "end_seconds": 678.68,
+      "id": "7oimWUif8S8-display-0221",
+      "segment_id": "7oimWUif8S8-ja-0068"
+    },
+    {
+      "text": "発展したんです。そんな心を込める",
+      "start_seconds": 678.68,
+      "end_seconds": 682.44,
+      "id": "7oimWUif8S8-display-0222",
+      "segment_id": "7oimWUif8S8-ja-0068"
+    },
+    {
+      "text": "ものを、え、今度は本にしてみないかと",
+      "start_seconds": 682.44,
+      "end_seconds": 685.68,
+      "id": "7oimWUif8S8-display-0223",
+      "segment_id": "7oimWUif8S8-ja-0068"
+    },
+    {
+      "text": "いうことで、その時掃除しながら考えて",
+      "start_seconds": 685.68,
+      "end_seconds": 688.12,
+      "id": "7oimWUif8S8-display-0224",
+      "segment_id": "7oimWUif8S8-ja-0069"
+    },
+    {
+      "text": "たら降ってきたのが掃除録という",
+      "start_seconds": 688.12,
+      "end_seconds": 691.48,
+      "id": "7oimWUif8S8-display-0225",
+      "segment_id": "7oimWUif8S8-ja-0069"
+    },
+    {
+      "text": "ネーミングだったんです。そしてこれが",
+      "start_seconds": 691.48,
+      "end_seconds": 693.8,
+      "id": "7oimWUif8S8-display-0226",
+      "segment_id": "7oimWUif8S8-ja-0069"
+    },
+    {
+      "text": "本人に2005年になりまして、そこから",
+      "start_seconds": 693.8,
+      "end_seconds": 696.36,
+      "id": "7oimWUif8S8-display-0227",
+      "segment_id": "7oimWUif8S8-ja-0069"
+    },
+    {
+      "text": "何十冊も書かせていただきました。さあ、",
+      "start_seconds": 696.36,
+      "end_seconds": 700.04,
+      "id": "7oimWUif8S8-display-0228",
+      "segment_id": "7oimWUif8S8-ja-0070"
+    },
+    {
+      "text": "掃除力のお話です。あなたの部屋はあなた",
+      "start_seconds": 700.04,
+      "end_seconds": 704.16,
+      "id": "7oimWUif8S8-display-0229",
+      "segment_id": "7oimWUif8S8-ja-0070"
+    },
+    {
+      "text": "自身です。ちょっときつい言葉かもしれ",
+      "start_seconds": 704.16,
+      "end_seconds": 706.72,
+      "id": "7oimWUif8S8-display-0230",
+      "segment_id": "7oimWUif8S8-ja-0070"
+    },
+    {
+      "text": "ません。自分の部屋を思い浮かべてあれは",
+      "start_seconds": 706.72,
+      "end_seconds": 709.6,
+      "id": "7oimWUif8S8-display-0231",
+      "segment_id": "7oimWUif8S8-ja-0071"
+    },
+    {
+      "text": "自分じゃないって思うかもしれないです",
+      "start_seconds": 709.6,
+      "end_seconds": 712.079,
+      "id": "7oimWUif8S8-display-0232",
+      "segment_id": "7oimWUif8S8-ja-0071"
+    },
+    {
+      "text": "けどもこれを受け入れて欲しいんです。",
+      "start_seconds": 712.079,
+      "end_seconds": 714.36,
+      "id": "7oimWUif8S8-display-0233",
+      "segment_id": "7oimWUif8S8-ja-0071"
+    },
+    {
+      "text": "まずやって欲しい実践があります。これは",
+      "start_seconds": 714.36,
+      "end_seconds": 717.92,
+      "id": "7oimWUif8S8-display-0234",
+      "segment_id": "7oimWUif8S8-ja-0072"
+    },
+    {
+      "text": "ね、どうしても汚い部屋だと自分を責めて",
+      "start_seconds": 717.92,
+      "end_seconds": 721.48,
+      "id": "7oimWUif8S8-display-0235",
+      "segment_id": "7oimWUif8S8-ja-0072"
+    },
+    {
+      "text": "しまうんです。僕自身もそうでした。掃除",
+      "start_seconds": 721.48,
+      "end_seconds": 723.8,
+      "id": "7oimWUif8S8-display-0236",
+      "segment_id": "7oimWUif8S8-ja-0072"
+    },
+    {
+      "text": "力の本を出してそれから全国回って",
+      "start_seconds": 723.8,
+      "end_seconds": 726.2,
+      "id": "7oimWUif8S8-display-0237",
+      "segment_id": "7oimWUif8S8-ja-0072"
+    },
+    {
+      "text": "セミナーをやって皆さんにお掃除し",
+      "start_seconds": 726.2,
+      "end_seconds": 728.839,
+      "id": "7oimWUif8S8-display-0238",
+      "segment_id": "7oimWUif8S8-ja-0073"
+    },
+    {
+      "text": "ましょう。捨てましょう。汚れを取り",
+      "start_seconds": 728.839,
+      "end_seconds": 730.36,
+      "id": "7oimWUif8S8-display-0239",
+      "segment_id": "7oimWUif8S8-ja-0073"
+    },
+    {
+      "text": "ましょうと言っていていながらあなたの",
+      "start_seconds": 730.36,
+      "end_seconds": 733.839,
+      "id": "7oimWUif8S8-display-0240",
+      "segment_id": "7oimWUif8S8-ja-0073"
+    },
+    {
+      "text": "部屋あなた自身っていう時は僕も俯いてた",
+      "start_seconds": 733.839,
+      "end_seconds": 736.079,
+      "id": "7oimWUif8S8-display-0241",
+      "segment_id": "7oimWUif8S8-ja-0073"
+    },
+    {
+      "text": "んです。なぜなら僕の部屋も汚かった",
+      "start_seconds": 736.079,
+      "end_seconds": 737.839,
+      "id": "7oimWUif8S8-display-0242",
+      "segment_id": "7oimWUif8S8-ja-0073"
+    },
+    {
+      "text": "からって[笑い]また行って戻ってああっ",
+      "start_seconds": 737.839,
+      "end_seconds": 741.44,
+      "id": "7oimWUif8S8-display-0243",
+      "segment_id": "7oimWUif8S8-ja-0074"
+    },
+    {
+      "text": "て言いながらまた全国巡ってたんで部屋が",
+      "start_seconds": 741.44,
+      "end_seconds": 744.04,
+      "id": "7oimWUif8S8-display-0244",
+      "segment_id": "7oimWUif8S8-ja-0074"
+    },
+    {
+      "text": "ねぐちゃぐちゃだったんですね。でもねえ",
+      "start_seconds": 744.04,
+      "end_seconds": 747.36,
+      "id": "7oimWUif8S8-display-0245",
+      "segment_id": "7oimWUif8S8-ja-0074"
+    },
+    {
+      "text": "、今から4年前もまた引きこもってた時期",
+      "start_seconds": 747.36,
+      "end_seconds": 750.199,
+      "id": "7oimWUif8S8-display-0246",
+      "segment_id": "7oimWUif8S8-ja-0075"
+    },
+    {
+      "text": "があったんですけれどもその時は部屋が",
+      "start_seconds": 750.199,
+      "end_seconds": 752.76,
+      "id": "7oimWUif8S8-display-0247",
+      "segment_id": "7oimWUif8S8-ja-0075"
+    },
+    {
+      "text": "綺麗だったんですよ。だからね皆さん部屋",
+      "start_seconds": 752.76,
+      "end_seconds": 755.959,
+      "id": "7oimWUif8S8-display-0248",
+      "segment_id": "7oimWUif8S8-ja-0075"
+    },
+    {
+      "text": "を見て乱れてるってことはどういうことか",
+      "start_seconds": 755.959,
+      "end_seconds": 758.36,
+      "id": "7oimWUif8S8-display-0249",
+      "segment_id": "7oimWUif8S8-ja-0075"
+    },
+    {
+      "text": "と言うとそれは外で頑張ってる証拠なん",
+      "start_seconds": 758.36,
+      "end_seconds": 762.68,
+      "id": "7oimWUif8S8-display-0250",
+      "segment_id": "7oimWUif8S8-ja-0076"
+    },
+    {
+      "text": "ですよ。そうじゃないですか?家に帰って",
+      "start_seconds": 762.68,
+      "end_seconds": 765.56,
+      "id": "7oimWUif8S8-display-0251",
+      "segment_id": "7oimWUif8S8-ja-0076"
+    },
+    {
+      "text": "もあたやることがあって必要最低限のこと",
+      "start_seconds": 765.56,
+      "end_seconds": 768.56,
+      "id": "7oimWUif8S8-display-0252",
+      "segment_id": "7oimWUif8S8-ja-0076"
+    },
+    {
+      "text": "やったらもう時間がなくなって綺麗にする",
+      "start_seconds": 768.56,
+      "end_seconds": 771.92,
+      "id": "7oimWUif8S8-display-0253",
+      "segment_id": "7oimWUif8S8-ja-0077"
+    },
+    {
+      "text": "時間がない。力がないだからね。まず部屋",
+      "start_seconds": 771.92,
+      "end_seconds": 775.839,
+      "id": "7oimWUif8S8-display-0254",
+      "segment_id": "7oimWUif8S8-ja-0077"
+    },
+    {
+      "text": "に行ってぐちゃぐちゃだったら言って",
+      "start_seconds": 775.839,
+      "end_seconds": 778.0,
+      "id": "7oimWUif8S8-display-0255",
+      "segment_id": "7oimWUif8S8-ja-0077"
+    },
+    {
+      "text": "欲しいんです。その部屋を見てよく頑張っ",
+      "start_seconds": 778.0,
+      "end_seconds": 781.279,
+      "id": "7oimWUif8S8-display-0256",
+      "segment_id": "7oimWUif8S8-ja-0078"
+    },
+    {
+      "text": "てるねって自分自身に言ってあげて欲しい",
+      "start_seconds": 781.279,
+      "end_seconds": 783.92,
+      "id": "7oimWUif8S8-display-0257",
+      "segment_id": "7oimWUif8S8-ja-0078"
+    },
+    {
+      "text": "んです。そしたらなんかちょっと胸が",
+      "start_seconds": 783.92,
+      "end_seconds": 786.199,
+      "id": "7oimWUif8S8-display-0258",
+      "segment_id": "7oimWUif8S8-ja-0078"
+    },
+    {
+      "text": "キュンってなるでしょ。そしたらその力を",
+      "start_seconds": 786.199,
+      "end_seconds": 788.6,
+      "id": "7oimWUif8S8-display-0259",
+      "segment_id": "7oimWUif8S8-ja-0078"
+    },
+    {
+      "text": "使ってやって欲しいところがまずはね1",
+      "start_seconds": 788.6,
+      "end_seconds": 791.44,
+      "id": "7oimWUif8S8-display-0260",
+      "segment_id": "7oimWUif8S8-ja-0079"
+    },
+    {
+      "text": "箇所でいいです。蛇口、蛇口を磨いて",
+      "start_seconds": 791.44,
+      "end_seconds": 794.32,
+      "id": "7oimWUif8S8-display-0261",
+      "segment_id": "7oimWUif8S8-ja-0079"
+    },
+    {
+      "text": "欲しいんです。蛇口をピカピカに磨いて",
+      "start_seconds": 794.32,
+      "end_seconds": 796.6,
+      "id": "7oimWUif8S8-display-0262",
+      "segment_id": "7oimWUif8S8-ja-0079"
+    },
+    {
+      "text": "欲しいんです。そしてそれを自分自身だと",
+      "start_seconds": 796.6,
+      "end_seconds": 798.88,
+      "id": "7oimWUif8S8-display-0263",
+      "segment_id": "7oimWUif8S8-ja-0079"
+    },
+    {
+      "text": "思って他はいいです。他は見なくていい。",
+      "start_seconds": 798.88,
+      "end_seconds": 801.729,
+      "id": "7oimWUif8S8-display-0264",
+      "segment_id": "7oimWUif8S8-ja-0080"
+    },
+    {
+      "text": "[笑い]他は目をすりましょう。弱ジだけ",
+      "start_seconds": 801.729,
+      "end_seconds": 804.24,
+      "id": "7oimWUif8S8-display-0265",
+      "segment_id": "7oimWUif8S8-ja-0081"
+    },
+    {
+      "text": "を磨いてこれは自分なんだって。素敵だね",
+      "start_seconds": 804.24,
+      "end_seconds": 808.279,
+      "id": "7oimWUif8S8-display-0266",
+      "segment_id": "7oimWUif8S8-ja-0081"
+    },
+    {
+      "text": "。綺麗だねって言ってあげてください。",
+      "start_seconds": 808.279,
+      "end_seconds": 810.279,
+      "id": "7oimWUif8S8-display-0267",
+      "segment_id": "7oimWUif8S8-ja-0081"
+    },
+    {
+      "text": "そうすると今度は光り物をどんどん磨いて",
+      "start_seconds": 810.279,
+      "end_seconds": 812.519,
+      "id": "7oimWUif8S8-display-0268",
+      "segment_id": "7oimWUif8S8-ja-0082"
+    },
+    {
+      "text": "いきたくなりますから。やっぱりねこっち",
+      "start_seconds": 812.519,
+      "end_seconds": 815.56,
+      "id": "7oimWUif8S8-display-0269",
+      "segment_id": "7oimWUif8S8-ja-0082"
+    },
+    {
+      "text": "にフォーカスする。綺麗なところに",
+      "start_seconds": 815.56,
+      "end_seconds": 817.68,
+      "id": "7oimWUif8S8-display-0270",
+      "segment_id": "7oimWUif8S8-ja-0082"
+    },
+    {
+      "text": "フォーカスするとそれが広がっていくん",
+      "start_seconds": 817.68,
+      "end_seconds": 820.959,
+      "id": "7oimWUif8S8-display-0271",
+      "segment_id": "7oimWUif8S8-ja-0082"
+    },
+    {
+      "text": "ですね。",
+      "start_seconds": 820.959,
+      "end_seconds": 822.56,
+      "id": "7oimWUif8S8-display-0272",
+      "segment_id": "7oimWUif8S8-ja-0083"
+    },
+    {
+      "text": "それをやってったら鏡も磨いてください。",
+      "start_seconds": 822.56,
+      "end_seconds": 824.76,
+      "id": "7oimWUif8S8-display-0273",
+      "segment_id": "7oimWUif8S8-ja-0084"
+    },
+    {
+      "text": "鏡を磨いて、え、ピカピカになった鏡でね",
+      "start_seconds": 824.76,
+      "end_seconds": 828.88,
+      "id": "7oimWUif8S8-display-0274",
+      "segment_id": "7oimWUif8S8-ja-0085"
+    },
+    {
+      "text": "、こう言ってあげるんです。可愛いねって",
+      "start_seconds": 828.88,
+      "end_seconds": 832.04,
+      "id": "7oimWUif8S8-display-0275",
+      "segment_id": "7oimWUif8S8-ja-0085"
+    },
+    {
+      "text": "。綺麗だねって。あ、心の中でいいですよ",
+      "start_seconds": 832.04,
+      "end_seconds": 835.789,
+      "id": "7oimWUif8S8-display-0276",
+      "segment_id": "7oimWUif8S8-ja-0085"
+    },
+    {
+      "text": "[笑い]ね。だから、ま、僕のね、",
+      "start_seconds": 835.789,
+      "end_seconds": 838.44,
+      "id": "7oimWUif8S8-display-0277",
+      "segment_id": "7oimWUif8S8-ja-0086"
+    },
+    {
+      "text": "セミナーで鏡を持ってきてもらって、鏡",
+      "start_seconds": 838.44,
+      "end_seconds": 840.48,
+      "id": "7oimWUif8S8-display-0278",
+      "segment_id": "7oimWUif8S8-ja-0086"
+    },
+    {
+      "text": "磨いて美しくなるセミナーがあるんです",
+      "start_seconds": 840.48,
+      "end_seconds": 842.8,
+      "id": "7oimWUif8S8-display-0279",
+      "segment_id": "7oimWUif8S8-ja-0086"
+    },
+    {
+      "text": "けども、鏡を鏡、鏡さんって言うんですね",
+      "start_seconds": 842.8,
+      "end_seconds": 845.199,
+      "id": "7oimWUif8S8-display-0280",
+      "segment_id": "7oimWUif8S8-ja-0086"
+    },
+    {
+      "text": "。世界で1番美しいのは誰?言って、そし",
+      "start_seconds": 845.199,
+      "end_seconds": 848.6,
+      "id": "7oimWUif8S8-display-0281",
+      "segment_id": "7oimWUif8S8-ja-0087"
+    },
+    {
+      "text": "たらみんな自分映ってるからクスク笑うん",
+      "start_seconds": 848.6,
+      "end_seconds": 850.44,
+      "id": "7oimWUif8S8-display-0282",
+      "segment_id": "7oimWUif8S8-ja-0087"
+    },
+    {
+      "text": "ですけど、それが真実ですって言ってです",
+      "start_seconds": 850.44,
+      "end_seconds": 852.959,
+      "id": "7oimWUif8S8-display-0283",
+      "segment_id": "7oimWUif8S8-ja-0087"
+    },
+    {
+      "text": "ね、書いてもらうんですけど、これ効果が",
+      "start_seconds": 852.959,
+      "end_seconds": 855.079,
+      "id": "7oimWUif8S8-display-0284",
+      "segment_id": "7oimWUif8S8-ja-0087"
+    },
+    {
+      "text": "ありますからやってみてください。可愛い",
+      "start_seconds": 855.079,
+      "end_seconds": 857.079,
+      "id": "7oimWUif8S8-display-0285",
+      "segment_id": "7oimWUif8S8-ja-0087"
+    },
+    {
+      "text": "、綺麗、かっこいいて言うとですね、",
+      "start_seconds": 857.079,
+      "end_seconds": 859.0,
+      "id": "7oimWUif8S8-display-0286",
+      "segment_id": "7oimWUif8S8-ja-0088"
+    },
+    {
+      "text": "さっき水の話あったでしょ?同じように",
+      "start_seconds": 859.0,
+      "end_seconds": 861.72,
+      "id": "7oimWUif8S8-display-0287",
+      "segment_id": "7oimWUif8S8-ja-0088"
+    },
+    {
+      "text": "思いがこの人間さ、水でできております",
+      "start_seconds": 861.72,
+      "end_seconds": 865.56,
+      "id": "7oimWUif8S8-display-0288",
+      "segment_id": "7oimWUif8S8-ja-0088"
+    },
+    {
+      "text": "から、あの水でこの細胞のところから活性",
+      "start_seconds": 865.56,
+      "end_seconds": 869.6,
+      "id": "7oimWUif8S8-display-0289",
+      "segment_id": "7oimWUif8S8-ja-0089"
+    },
+    {
+      "text": "化して美しくなりますという話をしてです",
+      "start_seconds": 869.6,
+      "end_seconds": 873.519,
+      "id": "7oimWUif8S8-display-0290",
+      "segment_id": "7oimWUif8S8-ja-0089"
+    },
+    {
+      "text": "ね、もういい時間になってきました。で、",
+      "start_seconds": 873.519,
+      "end_seconds": 876.24,
+      "id": "7oimWUif8S8-display-0291",
+      "segment_id": "7oimWUif8S8-ja-0089"
+    },
+    {
+      "text": "その次にやって欲しいことが何かと言うと",
+      "start_seconds": 876.24,
+      "end_seconds": 879.12,
+      "id": "7oimWUif8S8-display-0292",
+      "segment_id": "7oimWUif8S8-ja-0090"
+    },
+    {
+      "text": "、捨てる。そしてまた汚れ取り、整理正頓",
+      "start_seconds": 879.12,
+      "end_seconds": 883.56,
+      "id": "7oimWUif8S8-display-0293",
+      "segment_id": "7oimWUif8S8-ja-0090"
+    },
+    {
+      "text": "なんです。捨てるで前後裁談する力があり",
+      "start_seconds": 883.56,
+      "end_seconds": 886.32,
+      "id": "7oimWUif8S8-display-0294",
+      "segment_id": "7oimWUif8S8-ja-0090"
+    },
+    {
+      "text": "ます。これもですね、例えばガラクタと",
+      "start_seconds": 886.32,
+      "end_seconds": 889.56,
+      "id": "7oimWUif8S8-display-0295",
+      "segment_id": "7oimWUif8S8-ja-0091"
+    },
+    {
+      "text": "いうものはいつかとつくものです。いつか",
+      "start_seconds": 889.56,
+      "end_seconds": 892.56,
+      "id": "7oimWUif8S8-display-0296",
+      "segment_id": "7oimWUif8S8-ja-0091"
+    },
+    {
+      "text": "は来ないでしょ。いつかって先伸ばしする",
+      "start_seconds": 892.56,
+      "end_seconds": 895.279,
+      "id": "7oimWUif8S8-display-0297",
+      "segment_id": "7oimWUif8S8-ja-0091"
+    },
+    {
+      "text": "んです。何を先にするかというと、使うか",
+      "start_seconds": 895.279,
+      "end_seconds": 898.0,
+      "id": "7oimWUif8S8-display-0298",
+      "segment_id": "7oimWUif8S8-ja-0091"
+    },
+    {
+      "text": "もしれないなかったら困る不安の現れなん",
+      "start_seconds": 898.0,
+      "end_seconds": 901.04,
+      "id": "7oimWUif8S8-display-0299",
+      "segment_id": "7oimWUif8S8-ja-0092"
+    },
+    {
+      "text": "です。もう1つはいつか何か時間ができ",
+      "start_seconds": 901.04,
+      "end_seconds": 903.72,
+      "id": "7oimWUif8S8-display-0300",
+      "segment_id": "7oimWUif8S8-ja-0092"
+    },
+    {
+      "text": "たらやりたいと思ってることなんで、これ",
+      "start_seconds": 903.72,
+      "end_seconds": 905.519,
+      "id": "7oimWUif8S8-display-0301",
+      "segment_id": "7oimWUif8S8-ja-0092"
+    },
+    {
+      "text": "は投避の現れなんです。いつか世界一種",
+      "start_seconds": 905.519,
+      "end_seconds": 908.519,
+      "id": "7oimWUif8S8-display-0302",
+      "segment_id": "7oimWUif8S8-ja-0092"
+    },
+    {
+      "text": "旅行をするためのね、ケース、スーツ",
+      "start_seconds": 908.519,
+      "end_seconds": 910.56,
+      "id": "7oimWUif8S8-display-0303",
+      "segment_id": "7oimWUif8S8-ja-0093"
+    },
+    {
+      "text": "ケース、これずっと撮ってる。いつか世界",
+      "start_seconds": 910.56,
+      "end_seconds": 912.88,
+      "id": "7oimWUif8S8-display-0304",
+      "segment_id": "7oimWUif8S8-ja-0093"
+    },
+    {
+      "text": "収録をするんだって。これ10年経っても",
+      "start_seconds": 912.88,
+      "end_seconds": 916.12,
+      "id": "7oimWUif8S8-display-0305",
+      "segment_id": "7oimWUif8S8-ja-0093"
+    },
+    {
+      "text": "同じこと言って、いつか世界主力をするん",
+      "start_seconds": 916.12,
+      "end_seconds": 918.279,
+      "id": "7oimWUif8S8-display-0306",
+      "segment_id": "7oimWUif8S8-ja-0093"
+    },
+    {
+      "text": "だ。怖くないですか?ということでね、え",
+      "start_seconds": 918.279,
+      "end_seconds": 921.6,
+      "id": "7oimWUif8S8-display-0307",
+      "segment_id": "7oimWUif8S8-ja-0094"
+    },
+    {
+      "text": "、最後もっといっぱい話したいことあった",
+      "start_seconds": 921.6,
+      "end_seconds": 924.32,
+      "id": "7oimWUif8S8-display-0308",
+      "segment_id": "7oimWUif8S8-ja-0094"
+    },
+    {
+      "text": "んですけれども、最後はですね、僕の夢を",
+      "start_seconds": 924.32,
+      "end_seconds": 926.72,
+      "id": "7oimWUif8S8-display-0309",
+      "segment_id": "7oimWUif8S8-ja-0094"
+    },
+    {
+      "text": "聞いてください。僕の世はこの掃除力を",
+      "start_seconds": 926.72,
+      "end_seconds": 930.44,
+      "id": "7oimWUif8S8-display-0310",
+      "segment_id": "7oimWUif8S8-ja-0095"
+    },
+    {
+      "text": "世界の隅々の人たちに伝えることなんです",
+      "start_seconds": 930.44,
+      "end_seconds": 933.04,
+      "id": "7oimWUif8S8-display-0311",
+      "segment_id": "7oimWUif8S8-ja-0095"
+    },
+    {
+      "text": "。そうすると部屋を綺麗にしながら心が",
+      "start_seconds": 933.04,
+      "end_seconds": 936.319,
+      "id": "7oimWUif8S8-display-0312",
+      "segment_id": "7oimWUif8S8-ja-0095"
+    },
+    {
+      "text": "綺麗になる人が増えていくんです。心が",
+      "start_seconds": 936.319,
+      "end_seconds": 938.6,
+      "id": "7oimWUif8S8-display-0313",
+      "segment_id": "7oimWUif8S8-ja-0095"
+    },
+    {
+      "text": "綺麗になればその家庭1人心が綺麗になれ",
+      "start_seconds": 938.6,
+      "end_seconds": 941.319,
+      "id": "7oimWUif8S8-display-0314",
+      "segment_id": "7oimWUif8S8-ja-0096"
+    },
+    {
+      "text": "ば家庭が家族が綺麗になあの輝きますか",
+      "start_seconds": 941.319,
+      "end_seconds": 946.8,
+      "id": "7oimWUif8S8-display-0315",
+      "segment_id": "7oimWUif8S8-ja-0096"
+    },
+    {
+      "text": "家族が輝くと大人り近所地域も輝きます。",
+      "start_seconds": 946.8,
+      "end_seconds": 952.639,
+      "id": "7oimWUif8S8-display-0316",
+      "segment_id": "7oimWUif8S8-ja-0097"
+    },
+    {
+      "text": "地域が輝くと",
+      "start_seconds": 952.639,
+      "end_seconds": 955.279,
+      "id": "7oimWUif8S8-display-0317",
+      "segment_id": "7oimWUif8S8-ja-0098"
+    },
+    {
+      "text": "市町村が輝いて、そして国、日本が輝く。",
+      "start_seconds": 955.279,
+      "end_seconds": 958.44,
+      "id": "7oimWUif8S8-display-0318",
+      "segment_id": "7oimWUif8S8-ja-0098"
+    },
+    {
+      "text": "日本が輝けば隣の国にも影響を与えられ",
+      "start_seconds": 958.44,
+      "end_seconds": 961.68,
+      "id": "7oimWUif8S8-display-0319",
+      "segment_id": "7oimWUif8S8-ja-0099"
+    },
+    {
+      "text": "ます。そして結果的には地球が輝くんです",
+      "start_seconds": 961.68,
+      "end_seconds": 964.399,
+      "id": "7oimWUif8S8-display-0320",
+      "segment_id": "7oimWUif8S8-ja-0099"
+    },
+    {
+      "text": "。そしてある日をもうこ、これは今年から",
+      "start_seconds": 964.399,
+      "end_seconds": 967.839,
+      "id": "7oimWUif8S8-display-0321",
+      "segment_id": "7oimWUif8S8-ja-0099"
+    },
+    {
+      "text": "やってきますけれども、世界掃除力でって",
+      "start_seconds": 967.839,
+      "end_seconds": 970.399,
+      "id": "7oimWUif8S8-display-0322",
+      "segment_id": "7oimWUif8S8-ja-0099"
+    },
+    {
+      "text": "言って休日にしてこの日は地球にね、済ま",
+      "start_seconds": 970.399,
+      "end_seconds": 974.399,
+      "id": "7oimWUif8S8-display-0323",
+      "segment_id": "7oimWUif8S8-ja-0100"
+    },
+    {
+      "text": "せていただいていることに感謝をするん",
+      "start_seconds": 974.399,
+      "end_seconds": 977.36,
+      "id": "7oimWUif8S8-display-0324",
+      "segment_id": "7oimWUif8S8-ja-0100"
+    },
+    {
+      "text": "です。酸素も無料で与えられてますよね。",
+      "start_seconds": 977.36,
+      "end_seconds": 981.12,
+      "id": "7oimWUif8S8-display-0325",
+      "segment_id": "7oimWUif8S8-ja-0100"
+    },
+    {
+      "text": "止まれ、止められたことありますか?ない",
+      "start_seconds": 981.12,
+      "end_seconds": 982.72,
+      "id": "7oimWUif8S8-display-0326",
+      "segment_id": "7oimWUif8S8-ja-0101"
+    },
+    {
+      "text": "ですよね。太陽の光も止められませんよね",
+      "start_seconds": 982.72,
+      "end_seconds": 985.88,
+      "id": "7oimWUif8S8-display-0327",
+      "segment_id": "7oimWUif8S8-ja-0101"
+    },
+    {
+      "text": "。無償で水は水道水ですけども、どっか",
+      "start_seconds": 985.88,
+      "end_seconds": 990.04,
+      "id": "7oimWUif8S8-display-0328",
+      "segment_id": "7oimWUif8S8-ja-0101"
+    },
+    {
+      "text": "水溜まり行けば飲もうと思えば飲めます",
+      "start_seconds": 990.04,
+      "end_seconds": 991.959,
+      "id": "7oimWUif8S8-display-0329",
+      "segment_id": "7oimWUif8S8-ja-0101"
+    },
+    {
+      "text": "から。全部これ無料で与えられてるんです",
+      "start_seconds": 991.959,
+      "end_seconds": 994.279,
+      "id": "7oimWUif8S8-display-0330",
+      "segment_id": "7oimWUif8S8-ja-0102"
+    },
+    {
+      "text": "。済ませていただいてるんです。このこと",
+      "start_seconds": 994.279,
+      "end_seconds": 996.72,
+      "id": "7oimWUif8S8-display-0331",
+      "segment_id": "7oimWUif8S8-ja-0102"
+    },
+    {
+      "text": "に感謝をして、感謝をしたら必ず行動に",
+      "start_seconds": 996.72,
+      "end_seconds": 999.72,
+      "id": "7oimWUif8S8-display-0332",
+      "segment_id": "7oimWUif8S8-ja-0102"
+    },
+    {
+      "text": "なりますから。その行動は何かと言うと、",
+      "start_seconds": 999.72,
+      "end_seconds": 1002.279,
+      "id": "7oimWUif8S8-display-0333",
+      "segment_id": "7oimWUif8S8-ja-0102"
+    },
+    {
+      "text": "これは綺麗。使った場所を綺麗にする。だ",
+      "start_seconds": 1002.279,
+      "end_seconds": 1005.399,
+      "id": "7oimWUif8S8-display-0334",
+      "segment_id": "7oimWUif8S8-ja-0103"
+    },
+    {
+      "text": "からお掃除をみんなでする日を作りたい。",
+      "start_seconds": 1005.399,
+      "end_seconds": 1008.24,
+      "id": "7oimWUif8S8-display-0335",
+      "segment_id": "7oimWUif8S8-ja-0103"
+    },
+    {
+      "text": "で、各国の首脳も集まって腕ままくりして",
+      "start_seconds": 1008.24,
+      "end_seconds": 1011.92,
+      "id": "7oimWUif8S8-display-0336",
+      "segment_id": "7oimWUif8S8-ja-0104"
+    },
+    {
+      "text": "ね、お掃除したら気持ちが1つになるから",
+      "start_seconds": 1011.92,
+      "end_seconds": 1014.72,
+      "id": "7oimWUif8S8-display-0337",
+      "segment_id": "7oimWUif8S8-ja-0104"
+    },
+    {
+      "text": "外交問題なんかもまた戦争も止まりますよ",
+      "start_seconds": 1014.72,
+      "end_seconds": 1017.519,
+      "id": "7oimWUif8S8-display-0338",
+      "segment_id": "7oimWUif8S8-ja-0104"
+    },
+    {
+      "text": "。そういうことを僕はやっていきたいと",
+      "start_seconds": 1017.519,
+      "end_seconds": 1019.56,
+      "id": "7oimWUif8S8-display-0339",
+      "segment_id": "7oimWUif8S8-ja-0104"
+    },
+    {
+      "text": "思います。さあ、最後に僕は心を込めた",
+      "start_seconds": 1019.56,
+      "end_seconds": 1022.959,
+      "id": "7oimWUif8S8-display-0340",
+      "segment_id": "7oimWUif8S8-ja-0105"
+    },
+    {
+      "text": "相場を今ここでやって終わりたいと思い",
+      "start_seconds": 1022.959,
+      "end_seconds": 1026.16,
+      "id": "7oimWUif8S8-display-0341",
+      "segment_id": "7oimWUif8S8-ja-0105"
+    },
+    {
+      "text": "ます。それではさせていただきましょう。",
+      "start_seconds": 1026.16,
+      "end_seconds": 1031.76,
+      "id": "7oimWUif8S8-display-0342",
+      "segment_id": "7oimWUif8S8-ja-0106"
+    },
+    {
+      "text": "[鼻息]",
+      "start_seconds": 1032.291,
+      "end_seconds": 1034.311,
+      "id": "7oimWUif8S8-display-0343",
+      "segment_id": "7oimWUif8S8-ja-0107"
+    },
+    {
+      "text": "え、地球さんいつも本当に済ませて",
+      "start_seconds": 1034.559,
+      "end_seconds": 1037.4,
+      "id": "7oimWUif8S8-display-0344",
+      "segment_id": "7oimWUif8S8-ja-0107"
+    },
+    {
+      "text": "いただいてありがとうございます。",
+      "start_seconds": 1037.4,
+      "end_seconds": 1042.52,
+      "id": "7oimWUif8S8-display-0345",
+      "segment_id": "7oimWUif8S8-ja-0107"
+    },
+    {
+      "text": "これは世界で今喧嘩をしてる人たちに",
+      "start_seconds": 1048.12,
+      "end_seconds": 1051.64,
+      "id": "7oimWUif8S8-display-0346",
+      "segment_id": "7oimWUif8S8-ja-0108"
+    },
+    {
+      "text": "対する僕のメッセージです。大変だ、大変",
+      "start_seconds": 1051.64,
+      "end_seconds": 1055.32,
+      "id": "7oimWUif8S8-display-0347",
+      "segment_id": "7oimWUif8S8-ja-0108"
+    },
+    {
+      "text": "だ。ここ見て地球が綺麗になってるよ。",
+      "start_seconds": 1055.32,
+      "end_seconds": 1059.4,
+      "id": "7oimWUif8S8-display-0348",
+      "segment_id": "7oimWUif8S8-ja-0108"
+    },
+    {
+      "text": "ありがとうございました。[拍手]",
+      "start_seconds": 1059.4,
+      "end_seconds": 1063.132,
+      "id": "7oimWUif8S8-display-0349",
+      "segment_id": "7oimWUif8S8-ja-0109"
+    }
+  ]
+}

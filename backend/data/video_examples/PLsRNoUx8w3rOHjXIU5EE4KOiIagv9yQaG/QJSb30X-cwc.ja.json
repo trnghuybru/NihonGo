@@ -1,0 +1,3449 @@
+{
+  "schema_version": 1,
+  "video": {
+    "youtube_id": "QJSb30X-cwc",
+    "title": "My Father's Hands, My Dance, and the Lion's Roar | Wakako Arima | TEDxInnovation U",
+    "channel": "TEDx Talks",
+    "duration_seconds": 1027
+  },
+  "caption_track": {
+    "language": "ja",
+    "kind": "asr",
+    "source": "youtube_automatic"
+  },
+  "source_playlist": "https://www.youtube.com/playlist?list=PLsRNoUx8w3rOHjXIU5EE4KOiIagv9yQaG",
+  "fetched_at": "2026-10-13T13:23:55.422384+00:00",
+  "segment_count": 114,
+  "segments": [
+    {
+      "text": "[音楽]",
+      "start_seconds": 1.964,
+      "end_seconds": 3.984,
+      "id": "QJSb30X-cwc-ja-0001",
+      "sequence": 1
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 7.205,
+      "end_seconds": 9.225,
+      "id": "QJSb30X-cwc-ja-0002",
+      "sequence": 2
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 10.48,
+      "end_seconds": 12.5,
+      "id": "QJSb30X-cwc-ja-0003",
+      "sequence": 3
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 15.065,
+      "end_seconds": 17.085,
+      "id": "QJSb30X-cwc-ja-0004",
+      "sequence": 4
+    },
+    {
+      "text": "人前に立つ時逃げ出したくなった経験は皆さんありますか",
+      "start_seconds": 23.359,
+      "end_seconds": 30.439,
+      "id": "QJSb30X-cwc-ja-0005",
+      "sequence": 5
+    },
+    {
+      "text": "心臓の音が早くなって足が救んでしまってあ、本番今日じゃなきゃ良かったのになと",
+      "start_seconds": 30.48,
+      "end_seconds": 39.12,
+      "id": "QJSb30X-cwc-ja-0006",
+      "sequence": 6
+    },
+    {
+      "text": "思うような、ま、そういう瞬間ですね。私は、え、何度も経験しています。",
+      "start_seconds": 39.12,
+      "end_seconds": 47.68,
+      "id": "QJSb30X-cwc-ja-0007",
+      "sequence": 7
+    },
+    {
+      "text": "それでも私は舞台に出る仕事を諦めません。なぜなら私たちの心はいつだってアップデートできると信じているからです",
+      "start_seconds": 47.68,
+      "end_seconds": 59.28,
+      "id": "QJSb30X-cwc-ja-0008",
+      "sequence": 8
+    },
+    {
+      "text": "。",
+      "start_seconds": 59.28,
+      "end_seconds": 61.359,
+      "id": "QJSb30X-cwc-ja-0009",
+      "sequence": 9
+    },
+    {
+      "text": "人の心はいつでもアップデートできます。",
+      "start_seconds": 61.359,
+      "end_seconds": 67.72,
+      "id": "QJSb30X-cwc-ja-0010",
+      "sequence": 10
+    },
+    {
+      "text": "そしてその方法は決して特別な才能やスキルはなく、誰にでもできるとても",
+      "start_seconds": 67.72,
+      "end_seconds": 76.68,
+      "id": "QJSb30X-cwc-ja-0011",
+      "sequence": 11
+    },
+    {
+      "text": "シンプルな方法だと思っています。",
+      "start_seconds": 76.68,
+      "end_seconds": 81.72000000000001,
+      "id": "QJSb30X-cwc-ja-0012",
+      "sequence": 12
+    },
+    {
+      "text": "私は日本武要化という仕事をしています。",
+      "start_seconds": 81.759,
+      "end_seconds": 86.2,
+      "id": "QJSb30X-cwc-ja-0013",
+      "sequence": 13
+    },
+    {
+      "text": "人前で舞台に立って、え、踊ったり表現をする仕事ではあるんですけれども、実は私はとても緊張しやすい人間です。逃げ出し",
+      "start_seconds": 86.2,
+      "end_seconds": 97.68,
+      "id": "QJSb30X-cwc-ja-0014",
+      "sequence": 14
+    },
+    {
+      "text": "たくなるほど緊張しやすいんです。今日は逃げずにここに立っております。[笑い]ありがとうございます。[拍手]",
+      "start_seconds": 97.68,
+      "end_seconds": 107.119,
+      "id": "QJSb30X-cwc-ja-0015",
+      "sequence": 15
+    },
+    {
+      "text": "ありがとうございます。私はいつも舞台に立つ時は必ずプレッシャーと向き合って、え、不安そして孤独感と戦っています。",
+      "start_seconds": 107.119,
+      "end_seconds": 118.32,
+      "id": "QJSb30X-cwc-ja-0016",
+      "sequence": 16
+    },
+    {
+      "text": "それでも私は舞台に立ち続けます。なぜかと言えば、この舞台を乗り越えたその先に",
+      "start_seconds": 118.32,
+      "end_seconds": 127.079,
+      "id": "QJSb30X-cwc-ja-0017",
+      "sequence": 17
+    },
+    {
+      "text": "ある成長や幸福感、それをもう私は知っているからです。",
+      "start_seconds": 127.079,
+      "end_seconds": 134.48,
+      "id": "QJSb30X-cwc-ja-0018",
+      "sequence": 18
+    },
+    {
+      "text": "私は先日鏡という日本部でも最も有名な作品の1つにチャレンジしてまいりました。これ1時間ほどのソロパートのとても",
+      "start_seconds": 134.48,
+      "end_seconds": 145.8,
+      "id": "QJSb30X-cwc-ja-0019",
+      "sequence": 19
+    },
+    {
+      "text": "長い対策なんですね。この舞台を乗り越えるために、え、私がしてきたこと、それは昨年の9月末から毎日毎日、え、",
+      "start_seconds": 145.8,
+      "end_seconds": 157.04,
+      "id": "QJSb30X-cwc-ja-0020",
+      "sequence": 20
+    },
+    {
+      "text": "稽古を続けるということでした。欠かさずです。体が重い日もありました。逆に心が重い日もありました。[鼻息]痛みを感じ",
+      "start_seconds": 157.04,
+      "end_seconds": 168.599,
+      "id": "QJSb30X-cwc-ja-0021",
+      "sequence": 21
+    },
+    {
+      "text": "やすかったり時にはプレッシャーに押しつされそうになって泣きながら踊る日も、え、少なくありませんでした。それで",
+      "start_seconds": 168.599,
+      "end_seconds": 178.92,
+      "id": "QJSb30X-cwc-ja-0022",
+      "sequence": 22
+    },
+    {
+      "text": "もその1回の稽古が終わると私はこう思うんです。あ、今日もできたじゃないかと。",
+      "start_seconds": 178.92,
+      "end_seconds": 186.64,
+      "id": "QJSb30X-cwc-ja-0023",
+      "sequence": 23
+    },
+    {
+      "text": "その、ま、小さな小さな1つずつの、ま、成功体験が私を少しずつ強くしてくれました。",
+      "start_seconds": 186.64,
+      "end_seconds": 196.84,
+      "id": "QJSb30X-cwc-ja-0024",
+      "sequence": 24
+    },
+    {
+      "text": "そして迎えた本番です。",
+      "start_seconds": 196.84,
+      "end_seconds": 200.12,
+      "id": "QJSb30X-cwc-ja-0025",
+      "sequence": 25
+    },
+    {
+      "text": "やっぱり舞台に立つまでは本当に押しつされそうなほど緊張しましたけれども、いざ舞台に立ってみると",
+      "start_seconds": 200.12,
+      "end_seconds": 209.599,
+      "id": "QJSb30X-cwc-ja-0026",
+      "sequence": 26
+    },
+    {
+      "text": "これまで経験してきた努力、積み重ねが自然と私を立ち上げてくれました。",
+      "start_seconds": 209.599,
+      "end_seconds": 219.04,
+      "id": "QJSb30X-cwc-ja-0027",
+      "sequence": 27
+    },
+    {
+      "text": "私はその時はっきりと気づきました。不安をなくす方法は1つしかないということです。",
+      "start_seconds": 219.04,
+      "end_seconds": 228.68,
+      "id": "QJSb30X-cwc-ja-0028",
+      "sequence": 28
+    },
+    {
+      "text": "これは自信を感じることではなくて、自信が積み上がる行動をすることでした。",
+      "start_seconds": 228.68,
+      "end_seconds": 239.519,
+      "id": "QJSb30X-cwc-ja-0029",
+      "sequence": 29
+    },
+    {
+      "text": "私はこの舞台が終わってからこの映像をSNSになんとなく投稿してみました。",
+      "start_seconds": 239.519,
+      "end_seconds": 246.28,
+      "id": "QJSb30X-cwc-ja-0030",
+      "sequence": 30
+    },
+    {
+      "text": "すると思いがけない反応があったんですね。え、海外の方を中心に世界中の方からこれまでに経験したことないぐらい",
+      "start_seconds": 246.28,
+      "end_seconds": 255.879,
+      "id": "QJSb30X-cwc-ja-0031",
+      "sequence": 31
+    },
+    {
+      "text": "たくさんの反応をいただきました。ま、要するにバズったわけです。私はありのまま自分の専門としている古典部の映像を",
+      "start_seconds": 255.879,
+      "end_seconds": 265.88,
+      "id": "QJSb30X-cwc-ja-0032",
+      "sequence": 32
+    },
+    {
+      "text": "ただ少しだけ紹介しただけでした。全く戦略も何もなかったんです。それがまさかこんなにたくさんの方から色々な言語で",
+      "start_seconds": 265.88,
+      "end_seconds": 276.08,
+      "id": "QJSb30X-cwc-ja-0033",
+      "sequence": 33
+    },
+    {
+      "text": "反応をもらえるとは思えもよりませんでした。その時私はこう思いました。あ、人の心を動かすのは見た目の華やかさだけでは",
+      "start_seconds": 276.08,
+      "end_seconds": 287.88,
+      "id": "QJSb30X-cwc-ja-0034",
+      "sequence": 34
+    },
+    {
+      "text": "ないのかもしれないなと。",
+      "start_seconds": 287.88,
+      "end_seconds": 290.72,
+      "id": "QJSb30X-cwc-ja-0035",
+      "sequence": 35
+    },
+    {
+      "text": "その裏にあった1人で向き合ってきた時間、努力、積み重ね、思い、そういうものが",
+      "start_seconds": 290.72,
+      "end_seconds": 299.88,
+      "id": "QJSb30X-cwc-ja-0036",
+      "sequence": 36
+    },
+    {
+      "text": "もしかしたら言葉の壁も何もかも超えて伝わったんじゃないかな。そう思いました。スポーツでも仕事でもアートでも誰かが",
+      "start_seconds": 299.88,
+      "end_seconds": 311.479,
+      "id": "QJSb30X-cwc-ja-0037",
+      "sequence": 37
+    },
+    {
+      "text": "一生懸命な姿に皆さん心を打たれたこときっとあるんじゃないでしょうか。",
+      "start_seconds": 311.479,
+      "end_seconds": 319.479,
+      "id": "QJSb30X-cwc-ja-0038",
+      "sequence": 38
+    },
+    {
+      "text": "さて日本には伝統と確信という言葉があります。多くの方はこの2つを反対の言葉と",
+      "start_seconds": 319.479,
+      "end_seconds": 329.199,
+      "id": "QJSb30X-cwc-ja-0039",
+      "sequence": 39
+    },
+    {
+      "text": "して語ることがありますけれども私はこの2つは反対の言葉とは思っていません。",
+      "start_seconds": 329.199,
+      "end_seconds": 338.4,
+      "id": "QJSb30X-cwc-ja-0040",
+      "sequence": 40
+    },
+    {
+      "text": "伝統というのは長い時間の中で作られてきた歴史や美しさ、品性のことだと考えてい",
+      "start_seconds": 338.4,
+      "end_seconds": 347.919,
+      "id": "QJSb30X-cwc-ja-0041",
+      "sequence": 41
+    },
+    {
+      "text": "ます。一方で確信はその積み上げられてきた歴史を今どんな風に喜んでもらうか、",
+      "start_seconds": 347.919,
+      "end_seconds": 357.479,
+      "id": "QJSb30X-cwc-ja-0042",
+      "sequence": 42
+    },
+    {
+      "text": "それを問い続けることだと思っています。",
+      "start_seconds": 357.479,
+      "end_seconds": 362.28,
+      "id": "QJSb30X-cwc-ja-0043",
+      "sequence": 43
+    },
+    {
+      "text": "この伝統と確信というのは対立するものではなくてお互いが共に共存することで初めて価値が生まれる。そのように考えて",
+      "start_seconds": 362.28,
+      "end_seconds": 373.28,
+      "id": "QJSb30X-cwc-ja-0044",
+      "sequence": 44
+    },
+    {
+      "text": "います。",
+      "start_seconds": 373.28,
+      "end_seconds": 375.599,
+      "id": "QJSb30X-cwc-ja-0045",
+      "sequence": 45
+    },
+    {
+      "text": "これは私の普段のポリシーですけれども、これは私たちの心にももしかしたら言えることではないかなと思っています。",
+      "start_seconds": 375.599,
+      "end_seconds": 386.8,
+      "id": "QJSb30X-cwc-ja-0046",
+      "sequence": 46
+    },
+    {
+      "text": "またもう1つご紹介しましょう。私は大学時代理術師の勉強をしていました。",
+      "start_seconds": 386.8,
+      "end_seconds": 395.44,
+      "id": "QJSb30X-cwc-ja-0047",
+      "sequence": 47
+    },
+    {
+      "text": "美術師ではディスクリプションという議法を学んできました。これは書いてある絵の中にどんなものが書いてあるかを徹底的に",
+      "start_seconds": 395.44,
+      "end_seconds": 406.68,
+      "id": "QJSb30X-cwc-ja-0048",
+      "sequence": 48
+    },
+    {
+      "text": "言葉にしていく。そういう訓練でした。",
+      "start_seconds": 406.68,
+      "end_seconds": 410.68,
+      "id": "QJSb30X-cwc-ja-0049",
+      "sequence": 49
+    },
+    {
+      "text": "何が書いてあるのかな?どんな色が使われてるのかな?それはどんな印象を与えるのかな?そういったものを1つの作品から",
+      "start_seconds": 410.68,
+      "end_seconds": 420.479,
+      "id": "QJSb30X-cwc-ja-0050",
+      "sequence": 50
+    },
+    {
+      "text": "徹底的に言語化していく。そういったことを学んできました。これもまた私たちの心に置き換えて考えることができるんじゃ",
+      "start_seconds": 420.479,
+      "end_seconds": 431.4,
+      "id": "QJSb30X-cwc-ja-0051",
+      "sequence": 51
+    },
+    {
+      "text": "ないかなと思っています。",
+      "start_seconds": 431.4,
+      "end_seconds": 434.36,
+      "id": "QJSb30X-cwc-ja-0052",
+      "sequence": 52
+    },
+    {
+      "text": "私たちは日々様々な感情を経験しますよね。でもその感情を意外と言語化することし",
+      "start_seconds": 434.36,
+      "end_seconds": 443.56,
+      "id": "QJSb30X-cwc-ja-0053",
+      "sequence": 53
+    },
+    {
+      "text": "てないですよね。あ、今日はなんとなく疲れちゃったな。なんとなく嫌なんだよな。なんとなくちょっと今日は頑張ったけど",
+      "start_seconds": 443.56,
+      "end_seconds": 454.44,
+      "id": "QJSb30X-cwc-ja-0054",
+      "sequence": 54
+    },
+    {
+      "text": "理由が分からない。意外となんとなくをそのままにしてしまうことって多いんじゃないかなと思います。でももし心をディスクリプションして自分の心を",
+      "start_seconds": 454.44,
+      "end_seconds": 465.919,
+      "id": "QJSb30X-cwc-ja-0055",
+      "sequence": 55
+    },
+    {
+      "text": "しっかり観察して言葉にすることができたらどうでしょう?",
+      "start_seconds": 465.919,
+      "end_seconds": 471.08,
+      "id": "QJSb30X-cwc-ja-0056",
+      "sequence": 56
+    },
+    {
+      "text": "そうやって自分の心を理解できた時に私たちは初めて自分の心を扱えるのかもしれないですよね。",
+      "start_seconds": 471.08,
+      "end_seconds": 481.0,
+      "id": "QJSb30X-cwc-ja-0057",
+      "sequence": 57
+    },
+    {
+      "text": "私は心をアップデートするために大切なことが3つあると思っています。",
+      "start_seconds": 481.0,
+      "end_seconds": 487.639,
+      "id": "QJSb30X-cwc-ja-0058",
+      "sequence": 58
+    },
+    {
+      "text": "まず1つ目。どんな心でありたいか、これを選ぶこと。",
+      "start_seconds": 487.639,
+      "end_seconds": 494.84,
+      "id": "QJSb30X-cwc-ja-0059",
+      "sequence": 59
+    },
+    {
+      "text": "外から起きてる出来事に対してただ反応するだけではなくて、自分がその中でどうありたいか、これを自ら選択すること。",
+      "start_seconds": 494.84,
+      "end_seconds": 506.24,
+      "id": "QJSb30X-cwc-ja-0060",
+      "sequence": 60
+    },
+    {
+      "text": "2つ目は自分のご機嫌を理解すること。ご機嫌というのはただ痛みを感じないことではないと思います。痛みを感じてもそれを",
+      "start_seconds": 506.24,
+      "end_seconds": 517.24,
+      "id": "QJSb30X-cwc-ja-0061",
+      "sequence": 61
+    },
+    {
+      "text": "きちんと自分の心の中で観察して会話して受け止めることそう考えています。",
+      "start_seconds": 517.24,
+      "end_seconds": 526.08,
+      "id": "QJSb30X-cwc-ja-0062",
+      "sequence": 62
+    },
+    {
+      "text": "そして3つ目が言葉にすること。自分の心と見つめ合って会話をしてディスクリプションして",
+      "start_seconds": 526.08,
+      "end_seconds": 537.44,
+      "id": "QJSb30X-cwc-ja-0063",
+      "sequence": 63
+    },
+    {
+      "text": "曖昧にしないで言葉にすること。これが心のディスクリプションだと思っています。",
+      "start_seconds": 537.44,
+      "end_seconds": 545.3199999999999,
+      "id": "QJSb30X-cwc-ja-0064",
+      "sequence": 64
+    },
+    {
+      "text": "伝統が時代と出会って確信していくように私たちの心も歴史と共に経験と共に徐々にアップデートしていっています。まるで",
+      "start_seconds": 546.32,
+      "end_seconds": 557.56,
+      "id": "QJSb30X-cwc-ja-0065",
+      "sequence": 65
+    },
+    {
+      "text": "伝統と確信が共存してるのと同じことが言えるのではないかと思います。そして人生において大切なのはほんの少しだけの",
+      "start_seconds": 557.56,
+      "end_seconds": 566.64,
+      "id": "QJSb30X-cwc-ja-0066",
+      "sequence": 66
+    },
+    {
+      "text": "勇気だと思っています。一歩踏み出せば視界が大きく開けることも多々あるのではないでしょうか。",
+      "start_seconds": 566.64,
+      "end_seconds": 576.2,
+      "id": "QJSb30X-cwc-ja-0067",
+      "sequence": 67
+    },
+    {
+      "text": "例え、間違えたとしても起動修正はいくらでもできます。",
+      "start_seconds": 576.2,
+      "end_seconds": 581.56,
+      "id": "QJSb30X-cwc-ja-0068",
+      "sequence": 68
+    },
+    {
+      "text": "伝統と確信、それは文化の話だけではありません。私たちの心にも伝統があります。",
+      "start_seconds": 581.56,
+      "end_seconds": 589.519,
+      "id": "QJSb30X-cwc-ja-0069",
+      "sequence": 69
+    },
+    {
+      "text": "そして確信があります。",
+      "start_seconds": 589.519,
+      "end_seconds": 592.76,
+      "id": "QJSb30X-cwc-ja-0070",
+      "sequence": 70
+    },
+    {
+      "text": "私たちの心はいつでもアップデートできる。その第1歩は自分の心と対話して",
+      "start_seconds": 592.76,
+      "end_seconds": 601.88,
+      "id": "QJSb30X-cwc-ja-0071",
+      "sequence": 71
+    },
+    {
+      "text": "少しの勇気で一歩踏み出してみる。",
+      "start_seconds": 601.88,
+      "end_seconds": 605.279,
+      "id": "QJSb30X-cwc-ja-0072",
+      "sequence": 72
+    },
+    {
+      "text": "そこから始まると思います。",
+      "start_seconds": 605.279,
+      "end_seconds": 607.88,
+      "id": "QJSb30X-cwc-ja-0073",
+      "sequence": 73
+    },
+    {
+      "text": "ありがとうございました。[拍手]",
+      "start_seconds": 607.88,
+      "end_seconds": 611.176,
+      "id": "QJSb30X-cwc-ja-0074",
+      "sequence": 74
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 613.741,
+      "end_seconds": 615.761,
+      "id": "QJSb30X-cwc-ja-0075",
+      "sequence": 75
+    },
+    {
+      "text": "よ。",
+      "start_seconds": 625.12,
+      "end_seconds": 628.12,
+      "id": "QJSb30X-cwc-ja-0076",
+      "sequence": 76
+    },
+    {
+      "text": "よさきに",
+      "start_seconds": 630.68,
+      "end_seconds": 637.04,
+      "id": "QJSb30X-cwc-ja-0077",
+      "sequence": 77
+    },
+    {
+      "text": "おお",
+      "start_seconds": 653.6,
+      "end_seconds": 656.6,
+      "id": "QJSb30X-cwc-ja-0078",
+      "sequence": 78
+    },
+    {
+      "text": "。",
+      "start_seconds": 657.12,
+      "end_seconds": 660.12,
+      "id": "QJSb30X-cwc-ja-0079",
+      "sequence": 79
+    },
+    {
+      "text": "うる",
+      "start_seconds": 665.56,
+      "end_seconds": 668.56,
+      "id": "QJSb30X-cwc-ja-0080",
+      "sequence": 80
+    },
+    {
+      "text": "。[歌声]",
+      "start_seconds": 680.36,
+      "end_seconds": 683.227,
+      "id": "QJSb30X-cwc-ja-0081",
+      "sequence": 81
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 688.412,
+      "end_seconds": 690.432,
+      "id": "QJSb30X-cwc-ja-0082",
+      "sequence": 82
+    },
+    {
+      "text": "個人に",
+      "start_seconds": 692.12,
+      "end_seconds": 698.44,
+      "id": "QJSb30X-cwc-ja-0083",
+      "sequence": 83
+    },
+    {
+      "text": "ある",
+      "start_seconds": 701.72,
+      "end_seconds": 704.72,
+      "id": "QJSb30X-cwc-ja-0084",
+      "sequence": 84
+    },
+    {
+      "text": "ほ",
+      "start_seconds": 707.2,
+      "end_seconds": 710.0790000000001,
+      "id": "QJSb30X-cwc-ja-0085",
+      "sequence": 85
+    },
+    {
+      "text": "おののみ",
+      "start_seconds": 714.56,
+      "end_seconds": 717.56,
+      "id": "QJSb30X-cwc-ja-0086",
+      "sequence": 86
+    },
+    {
+      "text": "[歌声]",
+      "start_seconds": 727.713,
+      "end_seconds": 729.733,
+      "id": "QJSb30X-cwc-ja-0087",
+      "sequence": 87
+    },
+    {
+      "text": "[音楽]おきつれ",
+      "start_seconds": 735.573,
+      "end_seconds": 740.48,
+      "id": "QJSb30X-cwc-ja-0088",
+      "sequence": 88
+    },
+    {
+      "text": "て[音楽]",
+      "start_seconds": 751.839,
+      "end_seconds": 756.588,
+      "id": "QJSb30X-cwc-ja-0089",
+      "sequence": 89
+    },
+    {
+      "text": "[叫び声]こほべい[ベル]",
+      "start_seconds": 772.253,
+      "end_seconds": 777.548,
+      "id": "QJSb30X-cwc-ja-0090",
+      "sequence": 90
+    },
+    {
+      "text": "[叫び声]",
+      "start_seconds": 786.664,
+      "end_seconds": 788.684,
+      "id": "QJSb30X-cwc-ja-0091",
+      "sequence": 91
+    },
+    {
+      "text": "へ[歌声]ミスる",
+      "start_seconds": 794.639,
+      "end_seconds": 800.6,
+      "id": "QJSb30X-cwc-ja-0092",
+      "sequence": 92
+    },
+    {
+      "text": "ミス",
+      "start_seconds": 805.639,
+      "end_seconds": 808.639,
+      "id": "QJSb30X-cwc-ja-0093",
+      "sequence": 93
+    },
+    {
+      "text": "を",
+      "start_seconds": 814.76,
+      "end_seconds": 817.76,
+      "id": "QJSb30X-cwc-ja-0094",
+      "sequence": 94
+    },
+    {
+      "text": "ちょと発",
+      "start_seconds": 819.48,
+      "end_seconds": 828.56,
+      "id": "QJSb30X-cwc-ja-0095",
+      "sequence": 95
+    },
+    {
+      "text": "[音楽]うお。",
+      "start_seconds": 830.549,
+      "end_seconds": 836.92,
+      "id": "QJSb30X-cwc-ja-0096",
+      "sequence": 96
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 839.719,
+      "end_seconds": 841.739,
+      "id": "QJSb30X-cwc-ja-0097",
+      "sequence": 97
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 847.579,
+      "end_seconds": 849.5989999999999,
+      "id": "QJSb30X-cwc-ja-0098",
+      "sequence": 98
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 861.334,
+      "end_seconds": 863.3539999999999,
+      "id": "QJSb30X-cwc-ja-0099",
+      "sequence": 99
+    },
+    {
+      "text": "のりその本て[叫び声]",
+      "start_seconds": 865.88,
+      "end_seconds": 871.2139999999999,
+      "id": "QJSb30X-cwc-ja-0100",
+      "sequence": 100
+    },
+    {
+      "text": "して",
+      "start_seconds": 893.6,
+      "end_seconds": 898.0400000000001,
+      "id": "QJSb30X-cwc-ja-0101",
+      "sequence": 101
+    },
+    {
+      "text": "保険[歌声]メ",
+      "start_seconds": 899.04,
+      "end_seconds": 905.0790000000001,
+      "id": "QJSb30X-cwc-ja-0102",
+      "sequence": 102
+    },
+    {
+      "text": "おふしをのりを白のみ",
+      "start_seconds": 910.839,
+      "end_seconds": 913.839,
+      "id": "QJSb30X-cwc-ja-0103",
+      "sequence": 103
+    },
+    {
+      "text": "しに響き[歌声]",
+      "start_seconds": 943.6,
+      "end_seconds": 949.16,
+      "id": "QJSb30X-cwc-ja-0104",
+      "sequence": 104
+    },
+    {
+      "text": "しこの歯のり着",
+      "start_seconds": 953.0,
+      "end_seconds": 960.399,
+      "id": "QJSb30X-cwc-ja-0105",
+      "sequence": 105
+    },
+    {
+      "text": "金",
+      "start_seconds": 963.8,
+      "end_seconds": 966.8,
+      "id": "QJSb30X-cwc-ja-0106",
+      "sequence": 106
+    },
+    {
+      "text": "のにこめきをきくと",
+      "start_seconds": 970.199,
+      "end_seconds": 973.199,
+      "id": "QJSb30X-cwc-ja-0107",
+      "sequence": 107
+    },
+    {
+      "text": "[歌声]",
+      "start_seconds": 978.581,
+      "end_seconds": 980.601,
+      "id": "QJSb30X-cwc-ja-0108",
+      "sequence": 108
+    },
+    {
+      "text": "[歌声]",
+      "start_seconds": 983.166,
+      "end_seconds": 985.186,
+      "id": "QJSb30X-cwc-ja-0109",
+      "sequence": 109
+    },
+    {
+      "text": "[歌声]",
+      "start_seconds": 989.061,
+      "end_seconds": 991.081,
+      "id": "QJSb30X-cwc-ja-0110",
+      "sequence": 110
+    },
+    {
+      "text": "[歌声]",
+      "start_seconds": 996.266,
+      "end_seconds": 998.286,
+      "id": "QJSb30X-cwc-ja-0111",
+      "sequence": 111
+    },
+    {
+      "text": "おおおはいよ。",
+      "start_seconds": 1007.079,
+      "end_seconds": 1012.24,
+      "id": "QJSb30X-cwc-ja-0112",
+      "sequence": 112
+    },
+    {
+      "text": "[ベル]",
+      "start_seconds": 1015.261,
+      "end_seconds": 1017.281,
+      "id": "QJSb30X-cwc-ja-0113",
+      "sequence": 113
+    },
+    {
+      "text": "おお。",
+      "start_seconds": 1023.04,
+      "end_seconds": 1026.04,
+      "id": "QJSb30X-cwc-ja-0114",
+      "sequence": 114
+    }
+  ],
+  "raw_captions": [
+    {
+      "text": "[音楽]",
+      "start_seconds": 1.964,
+      "end_seconds": 3.984
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 7.205,
+      "end_seconds": 9.225
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 10.48,
+      "end_seconds": 12.5
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 15.065,
+      "end_seconds": 17.085
+    },
+    {
+      "text": "人前に立つ時",
+      "start_seconds": 23.359,
+      "end_seconds": 28.279000000000003
+    },
+    {
+      "text": "逃げ出したくなった経験は皆さんあります",
+      "start_seconds": 25.68,
+      "end_seconds": 30.439
+    },
+    {
+      "text": "か",
+      "start_seconds": 28.279,
+      "end_seconds": 30.439
+    },
+    {
+      "text": "心臓の音が早くなって足が救んでしまって",
+      "start_seconds": 30.48,
+      "end_seconds": 39.120000000000005
+    },
+    {
+      "text": "あ、本番今日じゃなきゃ良かったのになと",
+      "start_seconds": 36.64,
+      "end_seconds": 42.96
+    },
+    {
+      "text": "思うような、ま、そういう瞬間ですね。私",
+      "start_seconds": 39.12,
+      "end_seconds": 47.68
+    },
+    {
+      "text": "は、え、何度も経験しています。",
+      "start_seconds": 42.96,
+      "end_seconds": 51.44
+    },
+    {
+      "text": "それでも私は舞台に出る仕事を諦めません",
+      "start_seconds": 47.68,
+      "end_seconds": 57.199
+    },
+    {
+      "text": "。なぜなら私たちの心はいつだって",
+      "start_seconds": 51.44,
+      "end_seconds": 59.28
+    },
+    {
+      "text": "アップデートできると信じているからです",
+      "start_seconds": 57.199,
+      "end_seconds": 61.358999999999995
+    },
+    {
+      "text": "。",
+      "start_seconds": 59.28,
+      "end_seconds": 67.72
+    },
+    {
+      "text": "人の心はいつでもアップデートできます。",
+      "start_seconds": 61.359,
+      "end_seconds": 72.4
+    },
+    {
+      "text": "そしてその方法は決して特別な才能や",
+      "start_seconds": 67.72,
+      "end_seconds": 76.68
+    },
+    {
+      "text": "スキルはなく、誰にでもできるとても",
+      "start_seconds": 72.4,
+      "end_seconds": 81.72
+    },
+    {
+      "text": "シンプルな方法だと思っています。",
+      "start_seconds": 76.68,
+      "end_seconds": 81.72000000000001
+    },
+    {
+      "text": "私は日本武要化という仕事をしています。",
+      "start_seconds": 81.759,
+      "end_seconds": 89.64
+    },
+    {
+      "text": "人前で舞台に立って、え、踊ったり表現を",
+      "start_seconds": 86.2,
+      "end_seconds": 93.119
+    },
+    {
+      "text": "する仕事ではあるんですけれども、実は私",
+      "start_seconds": 89.64,
+      "end_seconds": 97.68
+    },
+    {
+      "text": "はとても緊張しやすい人間です。逃げ出し",
+      "start_seconds": 93.119,
+      "end_seconds": 100.68
+    },
+    {
+      "text": "たくなるほど緊張しやすいんです。今日は",
+      "start_seconds": 97.68,
+      "end_seconds": 104.04
+    },
+    {
+      "text": "逃げずにここに立っております。[笑い]",
+      "start_seconds": 100.68,
+      "end_seconds": 107.119
+    },
+    {
+      "text": "ありがとうございます。[拍手]",
+      "start_seconds": 104.04,
+      "end_seconds": 110.0
+    },
+    {
+      "text": "ありがとうございます。私はいつも舞台に",
+      "start_seconds": 107.119,
+      "end_seconds": 114.119
+    },
+    {
+      "text": "立つ時は必ずプレッシャーと向き合って、",
+      "start_seconds": 110.0,
+      "end_seconds": 118.32
+    },
+    {
+      "text": "え、不安そして孤独感と戦っています。",
+      "start_seconds": 114.119,
+      "end_seconds": 122.439
+    },
+    {
+      "text": "それでも私は舞台に立ち続けます。なぜか",
+      "start_seconds": 118.32,
+      "end_seconds": 127.079
+    },
+    {
+      "text": "と言えば、この舞台を乗り越えたその先に",
+      "start_seconds": 122.439,
+      "end_seconds": 132.0
+    },
+    {
+      "text": "ある成長や幸福感、それをもう私は知って",
+      "start_seconds": 127.079,
+      "end_seconds": 134.48
+    },
+    {
+      "text": "いるからです。",
+      "start_seconds": 132.0,
+      "end_seconds": 139.44
+    },
+    {
+      "text": "私は先日鏡という日本部でも最も有名な",
+      "start_seconds": 134.48,
+      "end_seconds": 142.28
+    },
+    {
+      "text": "作品の1つにチャレンジしてまいりました",
+      "start_seconds": 139.44,
+      "end_seconds": 145.8
+    },
+    {
+      "text": "。これ1時間ほどのソロパートのとても",
+      "start_seconds": 142.28,
+      "end_seconds": 148.92
+    },
+    {
+      "text": "長い対策なんですね。この舞台を",
+      "start_seconds": 145.8,
+      "end_seconds": 151.72
+    },
+    {
+      "text": "乗り越えるために、え、私がしてきたこと",
+      "start_seconds": 148.92,
+      "end_seconds": 157.04
+    },
+    {
+      "text": "、それは昨年の9月末から毎日毎日、え、",
+      "start_seconds": 151.72,
+      "end_seconds": 160.44
+    },
+    {
+      "text": "稽古を続けるということでした。欠かさず",
+      "start_seconds": 157.04,
+      "end_seconds": 165.44
+    },
+    {
+      "text": "です。体が重い日もありました。逆に心が",
+      "start_seconds": 160.44,
+      "end_seconds": 168.599
+    },
+    {
+      "text": "重い日もありました。[鼻息]痛みを感じ",
+      "start_seconds": 165.44,
+      "end_seconds": 171.599
+    },
+    {
+      "text": "やすかったり時にはプレッシャーに",
+      "start_seconds": 168.599,
+      "end_seconds": 174.959
+    },
+    {
+      "text": "押しつされそうになって泣きながら踊る日",
+      "start_seconds": 171.599,
+      "end_seconds": 178.92
+    },
+    {
+      "text": "も、え、少なくありませんでした。それで",
+      "start_seconds": 174.959,
+      "end_seconds": 182.92000000000002
+    },
+    {
+      "text": "もその1回の稽古が終わると私はこう思う",
+      "start_seconds": 178.92,
+      "end_seconds": 186.64
+    },
+    {
+      "text": "んです。あ、今日もできたじゃないかと。",
+      "start_seconds": 182.92,
+      "end_seconds": 189.92
+    },
+    {
+      "text": "その、ま、小さな小さな1つずつの、ま、",
+      "start_seconds": 186.64,
+      "end_seconds": 194.879
+    },
+    {
+      "text": "成功体験が私を少しずつ強くしてくれまし",
+      "start_seconds": 189.92,
+      "end_seconds": 196.83999999999997
+    },
+    {
+      "text": "た。",
+      "start_seconds": 194.879,
+      "end_seconds": 200.12
+    },
+    {
+      "text": "そして迎えた本番です。",
+      "start_seconds": 196.84,
+      "end_seconds": 203.799
+    },
+    {
+      "text": "やっぱり舞台に立つまでは本当に押しつさ",
+      "start_seconds": 200.12,
+      "end_seconds": 207.12
+    },
+    {
+      "text": "れそうなほど緊張しましたけれども、いざ",
+      "start_seconds": 203.799,
+      "end_seconds": 209.59900000000002
+    },
+    {
+      "text": "舞台に立ってみると",
+      "start_seconds": 207.12,
+      "end_seconds": 213.92000000000002
+    },
+    {
+      "text": "これまで経験してきた努力、積み重ねが",
+      "start_seconds": 209.599,
+      "end_seconds": 219.04
+    },
+    {
+      "text": "自然と私を立ち上げてくれました。",
+      "start_seconds": 213.92,
+      "end_seconds": 223.159
+    },
+    {
+      "text": "私はその時はっきりと気づきました。不安",
+      "start_seconds": 219.04,
+      "end_seconds": 225.879
+    },
+    {
+      "text": "をなくす方法は1つしかないということ",
+      "start_seconds": 223.159,
+      "end_seconds": 228.67999999999998
+    },
+    {
+      "text": "です。",
+      "start_seconds": 225.879,
+      "end_seconds": 234.04
+    },
+    {
+      "text": "これは自信を感じることではなくて、自信",
+      "start_seconds": 228.68,
+      "end_seconds": 239.519
+    },
+    {
+      "text": "が積み上がる行動をすることでした。",
+      "start_seconds": 234.04,
+      "end_seconds": 242.39999999999998
+    },
+    {
+      "text": "私はこの舞台が終わってからこの映像を",
+      "start_seconds": 239.519,
+      "end_seconds": 246.28
+    },
+    {
+      "text": "SNSになんとなく投稿してみました。",
+      "start_seconds": 242.4,
+      "end_seconds": 249.12
+    },
+    {
+      "text": "すると思いがけない反応があったんですね",
+      "start_seconds": 246.28,
+      "end_seconds": 253.799
+    },
+    {
+      "text": "。え、海外の方を中心に世界中の方から",
+      "start_seconds": 249.12,
+      "end_seconds": 255.87900000000002
+    },
+    {
+      "text": "これまでに経験したことないぐらい",
+      "start_seconds": 253.799,
+      "end_seconds": 258.639
+    },
+    {
+      "text": "たくさんの反応をいただきました。ま、",
+      "start_seconds": 255.879,
+      "end_seconds": 261.759
+    },
+    {
+      "text": "要するにバズったわけです。私はありの",
+      "start_seconds": 258.639,
+      "end_seconds": 265.88
+    },
+    {
+      "text": "まま自分の専門としている古典部の映像を",
+      "start_seconds": 261.759,
+      "end_seconds": 269.47900000000004
+    },
+    {
+      "text": "ただ少しだけ紹介しただけでした。全く",
+      "start_seconds": 265.88,
+      "end_seconds": 272.919
+    },
+    {
+      "text": "戦略も何もなかったんです。それがまさか",
+      "start_seconds": 269.479,
+      "end_seconds": 276.08
+    },
+    {
+      "text": "こんなにたくさんの方から色々な言語で",
+      "start_seconds": 272.919,
+      "end_seconds": 278.639
+    },
+    {
+      "text": "反応をもらえるとは思えもよりませんでし",
+      "start_seconds": 276.08,
+      "end_seconds": 283.56
+    },
+    {
+      "text": "た。その時私はこう思いました。あ、人の",
+      "start_seconds": 278.639,
+      "end_seconds": 287.88
+    },
+    {
+      "text": "心を動かすのは見た目の華やかさだけでは",
+      "start_seconds": 283.56,
+      "end_seconds": 290.72
+    },
+    {
+      "text": "ないのかもしれないなと。",
+      "start_seconds": 287.88,
+      "end_seconds": 294.0
+    },
+    {
+      "text": "その裏にあった1人で向き合ってきた時間",
+      "start_seconds": 290.72,
+      "end_seconds": 295.56
+    },
+    {
+      "text": "、",
+      "start_seconds": 294.0,
+      "end_seconds": 299.88
+    },
+    {
+      "text": "努力、積み重ね、思い、そういうものが",
+      "start_seconds": 295.56,
+      "end_seconds": 303.919
+    },
+    {
+      "text": "もしかしたら言葉の壁も何もかも超えて",
+      "start_seconds": 299.88,
+      "end_seconds": 306.08
+    },
+    {
+      "text": "伝わったんじゃないかな。そう思いました",
+      "start_seconds": 303.919,
+      "end_seconds": 311.479
+    },
+    {
+      "text": "。スポーツでも仕事でもアートでも誰かが",
+      "start_seconds": 306.08,
+      "end_seconds": 315.59999999999997
+    },
+    {
+      "text": "一生懸命な姿に皆さん心を打たれたこと",
+      "start_seconds": 311.479,
+      "end_seconds": 319.479
+    },
+    {
+      "text": "きっとあるんじゃないでしょうか。",
+      "start_seconds": 315.6,
+      "end_seconds": 324.28000000000003
+    },
+    {
+      "text": "さて日本には伝統と確信という言葉があり",
+      "start_seconds": 319.479,
+      "end_seconds": 329.199
+    },
+    {
+      "text": "ます。多くの方はこの2つを反対の言葉と",
+      "start_seconds": 324.28,
+      "end_seconds": 332.59999999999997
+    },
+    {
+      "text": "して語ることがあります",
+      "start_seconds": 329.199,
+      "end_seconds": 335.56
+    },
+    {
+      "text": "けれども私はこの2つは反対の言葉とは",
+      "start_seconds": 332.6,
+      "end_seconds": 338.40000000000003
+    },
+    {
+      "text": "思っていません。",
+      "start_seconds": 335.56,
+      "end_seconds": 343.0
+    },
+    {
+      "text": "伝統というのは長い時間の中で作られてき",
+      "start_seconds": 338.4,
+      "end_seconds": 347.919
+    },
+    {
+      "text": "た歴史や美しさ、品性のことだと考えてい",
+      "start_seconds": 343.0,
+      "end_seconds": 352.639
+    },
+    {
+      "text": "ます。一方で確信はその積み上げられてき",
+      "start_seconds": 347.919,
+      "end_seconds": 357.479
+    },
+    {
+      "text": "た歴史を今どんな風に喜んでもらうか、",
+      "start_seconds": 352.639,
+      "end_seconds": 362.28000000000003
+    },
+    {
+      "text": "それを問い続けることだと思っています。",
+      "start_seconds": 357.479,
+      "end_seconds": 366.039
+    },
+    {
+      "text": "この伝統と確信というのは対立するもので",
+      "start_seconds": 362.28,
+      "end_seconds": 369.84
+    },
+    {
+      "text": "はなくてお互いが共に共存することで",
+      "start_seconds": 366.039,
+      "end_seconds": 373.28
+    },
+    {
+      "text": "初めて価値が生まれる。そのように考えて",
+      "start_seconds": 369.84,
+      "end_seconds": 375.599
+    },
+    {
+      "text": "います。",
+      "start_seconds": 373.28,
+      "end_seconds": 379.15999999999997
+    },
+    {
+      "text": "これは私の普段のポリシーですけれども、",
+      "start_seconds": 375.599,
+      "end_seconds": 383.199
+    },
+    {
+      "text": "これは私たちの心にももしかしたら言える",
+      "start_seconds": 379.16,
+      "end_seconds": 386.8
+    },
+    {
+      "text": "ことではないかなと思っています。",
+      "start_seconds": 383.199,
+      "end_seconds": 391.199
+    },
+    {
+      "text": "またもう1つご紹介しましょう。私は大学",
+      "start_seconds": 386.8,
+      "end_seconds": 395.44
+    },
+    {
+      "text": "時代理術師の勉強をしていました。",
+      "start_seconds": 391.199,
+      "end_seconds": 398.599
+    },
+    {
+      "text": "美術師ではディスクリプションという議法",
+      "start_seconds": 395.44,
+      "end_seconds": 402.52
+    },
+    {
+      "text": "を学んできました。これは書いてある絵の",
+      "start_seconds": 398.599,
+      "end_seconds": 406.68
+    },
+    {
+      "text": "中にどんなものが書いてあるかを徹底的に",
+      "start_seconds": 402.52,
+      "end_seconds": 410.68
+    },
+    {
+      "text": "言葉にしていく。そういう訓練でした。",
+      "start_seconds": 406.68,
+      "end_seconds": 413.88
+    },
+    {
+      "text": "何が書いてあるのかな?どんな色が使われ",
+      "start_seconds": 410.68,
+      "end_seconds": 417.08
+    },
+    {
+      "text": "てるのかな?それはどんな印象を与えるの",
+      "start_seconds": 413.88,
+      "end_seconds": 420.479
+    },
+    {
+      "text": "かな?そういったものを1つの作品から",
+      "start_seconds": 417.08,
+      "end_seconds": 423.639
+    },
+    {
+      "text": "徹底的に言語化していく。そういったこと",
+      "start_seconds": 420.479,
+      "end_seconds": 428.15999999999997
+    },
+    {
+      "text": "を学んできました。これもまた私たちの心",
+      "start_seconds": 423.639,
+      "end_seconds": 431.40000000000003
+    },
+    {
+      "text": "に置き換えて考えることができるんじゃ",
+      "start_seconds": 428.16,
+      "end_seconds": 434.36
+    },
+    {
+      "text": "ないかなと思っています。",
+      "start_seconds": 431.4,
+      "end_seconds": 438.12
+    },
+    {
+      "text": "私たちは日々様々な感情を経験しますよね",
+      "start_seconds": 434.36,
+      "end_seconds": 443.56
+    },
+    {
+      "text": "。でもその感情を意外と言語化することし",
+      "start_seconds": 438.12,
+      "end_seconds": 446.52
+    },
+    {
+      "text": "てないですよね。あ、今日はなんとなく",
+      "start_seconds": 443.56,
+      "end_seconds": 449.68
+    },
+    {
+      "text": "疲れちゃったな。なんとなく嫌なんだよな",
+      "start_seconds": 446.52,
+      "end_seconds": 454.44
+    },
+    {
+      "text": "。なんとなくちょっと今日は頑張ったけど",
+      "start_seconds": 449.68,
+      "end_seconds": 457.199
+    },
+    {
+      "text": "理由が分からない。意外となんとなくを",
+      "start_seconds": 454.44,
+      "end_seconds": 459.199
+    },
+    {
+      "text": "そのままにしてしまうことって多いんじゃ",
+      "start_seconds": 457.199,
+      "end_seconds": 463.12
+    },
+    {
+      "text": "ないかなと思います。でももし心を",
+      "start_seconds": 459.199,
+      "end_seconds": 465.91900000000004
+    },
+    {
+      "text": "ディスクリプションして自分の心を",
+      "start_seconds": 463.12,
+      "end_seconds": 468.84000000000003
+    },
+    {
+      "text": "しっかり観察して言葉にすることができ",
+      "start_seconds": 465.919,
+      "end_seconds": 471.08
+    },
+    {
+      "text": "たらどうでしょう?",
+      "start_seconds": 468.84,
+      "end_seconds": 474.28
+    },
+    {
+      "text": "そうやって自分の心を理解できた時に",
+      "start_seconds": 471.08,
+      "end_seconds": 477.919
+    },
+    {
+      "text": "私たちは初めて自分の心を扱えるのかも",
+      "start_seconds": 474.28,
+      "end_seconds": 481.0
+    },
+    {
+      "text": "しれないですよね。",
+      "start_seconds": 477.919,
+      "end_seconds": 483.68
+    },
+    {
+      "text": "私は心をアップデートするために大切な",
+      "start_seconds": 481.0,
+      "end_seconds": 487.639
+    },
+    {
+      "text": "ことが3つあると思っています。",
+      "start_seconds": 483.68,
+      "end_seconds": 492.28000000000003
+    },
+    {
+      "text": "まず1つ目。どんな心でありたいか、これ",
+      "start_seconds": 487.639,
+      "end_seconds": 494.84000000000003
+    },
+    {
+      "text": "を選ぶこと。",
+      "start_seconds": 492.28,
+      "end_seconds": 497.96
+    },
+    {
+      "text": "外から起きてる出来事に対してただ反応",
+      "start_seconds": 494.84,
+      "end_seconds": 501.479
+    },
+    {
+      "text": "するだけではなくて、自分がその中でどう",
+      "start_seconds": 497.96,
+      "end_seconds": 506.23999999999995
+    },
+    {
+      "text": "ありたいか、これを自ら選択すること。",
+      "start_seconds": 501.479,
+      "end_seconds": 510.8
+    },
+    {
+      "text": "2つ目は自分のご機嫌を理解すること。ご",
+      "start_seconds": 506.24,
+      "end_seconds": 513.919
+    },
+    {
+      "text": "機嫌というのはただ痛みを感じないことで",
+      "start_seconds": 510.8,
+      "end_seconds": 517.24
+    },
+    {
+      "text": "はないと思います。痛みを感じてもそれを",
+      "start_seconds": 513.919,
+      "end_seconds": 521.7189999999999
+    },
+    {
+      "text": "きちんと自分の心の中で観察して会話して",
+      "start_seconds": 517.24,
+      "end_seconds": 526.08
+    },
+    {
+      "text": "受け止めることそう考えています。",
+      "start_seconds": 521.719,
+      "end_seconds": 530.519
+    },
+    {
+      "text": "そして3つ目が言葉にすること。自分の心",
+      "start_seconds": 526.08,
+      "end_seconds": 534.12
+    },
+    {
+      "text": "と見つめ合って会話をして",
+      "start_seconds": 530.519,
+      "end_seconds": 537.44
+    },
+    {
+      "text": "ディスクリプションして",
+      "start_seconds": 534.12,
+      "end_seconds": 540.64
+    },
+    {
+      "text": "曖昧にしないで言葉にすること。これが心",
+      "start_seconds": 537.44,
+      "end_seconds": 545.32
+    },
+    {
+      "text": "のディスクリプションだと思っています。",
+      "start_seconds": 540.64,
+      "end_seconds": 545.3199999999999
+    },
+    {
+      "text": "伝統が時代と出会って確信していくように",
+      "start_seconds": 546.32,
+      "end_seconds": 555.0
+    },
+    {
+      "text": "私たちの心も歴史と共に経験と共に徐々に",
+      "start_seconds": 550.36,
+      "end_seconds": 557.5600000000001
+    },
+    {
+      "text": "アップデートしていっています。まるで",
+      "start_seconds": 555.0,
+      "end_seconds": 560.68
+    },
+    {
+      "text": "伝統と確信が共存してるのと同じことが",
+      "start_seconds": 557.56,
+      "end_seconds": 563.7199999999999
+    },
+    {
+      "text": "言えるのではないかと思います。そして",
+      "start_seconds": 560.68,
+      "end_seconds": 566.64
+    },
+    {
+      "text": "人生において大切なのはほんの少しだけの",
+      "start_seconds": 563.72,
+      "end_seconds": 571.24
+    },
+    {
+      "text": "勇気だと思っています。一歩踏み出せば",
+      "start_seconds": 566.64,
+      "end_seconds": 574.24
+    },
+    {
+      "text": "視界が大きく開けることも多々あるのでは",
+      "start_seconds": 571.24,
+      "end_seconds": 576.2
+    },
+    {
+      "text": "ないでしょうか。",
+      "start_seconds": 574.24,
+      "end_seconds": 578.8
+    },
+    {
+      "text": "例え、間違えたとしても起動修正はいくら",
+      "start_seconds": 576.2,
+      "end_seconds": 581.5600000000001
+    },
+    {
+      "text": "でもできます。",
+      "start_seconds": 578.8,
+      "end_seconds": 585.0
+    },
+    {
+      "text": "伝統と確信、それは文化の話だけではあり",
+      "start_seconds": 581.56,
+      "end_seconds": 589.5189999999999
+    },
+    {
+      "text": "ません。私たちの心にも伝統があります。",
+      "start_seconds": 585.0,
+      "end_seconds": 592.76
+    },
+    {
+      "text": "そして確信があります。",
+      "start_seconds": 589.519,
+      "end_seconds": 595.399
+    },
+    {
+      "text": "私たちの心はいつでもアップデートできる",
+      "start_seconds": 592.76,
+      "end_seconds": 601.88
+    },
+    {
+      "text": "。その第1歩は自分の心と対話して",
+      "start_seconds": 595.399,
+      "end_seconds": 605.279
+    },
+    {
+      "text": "少しの勇気で一歩踏み出してみる。",
+      "start_seconds": 601.88,
+      "end_seconds": 607.88
+    },
+    {
+      "text": "そこから始まると思います。",
+      "start_seconds": 605.279,
+      "end_seconds": 611.176
+    },
+    {
+      "text": "ありがとうございました。[拍手]",
+      "start_seconds": 607.88,
+      "end_seconds": 611.176
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 613.741,
+      "end_seconds": 615.761
+    },
+    {
+      "text": "よ。",
+      "start_seconds": 625.12,
+      "end_seconds": 628.12
+    },
+    {
+      "text": "よ",
+      "start_seconds": 630.68,
+      "end_seconds": 633.68
+    },
+    {
+      "text": "さきに",
+      "start_seconds": 634.04,
+      "end_seconds": 637.04
+    },
+    {
+      "text": "おお",
+      "start_seconds": 653.6,
+      "end_seconds": 656.6
+    },
+    {
+      "text": "。",
+      "start_seconds": 657.12,
+      "end_seconds": 660.12
+    },
+    {
+      "text": "うる",
+      "start_seconds": 665.56,
+      "end_seconds": 668.56
+    },
+    {
+      "text": "。[歌声]",
+      "start_seconds": 680.36,
+      "end_seconds": 683.227
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 688.412,
+      "end_seconds": 690.432
+    },
+    {
+      "text": "個人",
+      "start_seconds": 692.12,
+      "end_seconds": 695.12
+    },
+    {
+      "text": "に",
+      "start_seconds": 695.44,
+      "end_seconds": 698.44
+    },
+    {
+      "text": "ある",
+      "start_seconds": 701.72,
+      "end_seconds": 704.72
+    },
+    {
+      "text": "ほ",
+      "start_seconds": 707.2,
+      "end_seconds": 710.0790000000001
+    },
+    {
+      "text": "おののみ",
+      "start_seconds": 714.56,
+      "end_seconds": 717.56
+    },
+    {
+      "text": "[歌声]",
+      "start_seconds": 727.713,
+      "end_seconds": 729.733
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 735.573,
+      "end_seconds": 740.48
+    },
+    {
+      "text": "おきつれ",
+      "start_seconds": 737.48,
+      "end_seconds": 740.48
+    },
+    {
+      "text": "て",
+      "start_seconds": 751.839,
+      "end_seconds": 756.5880000000001
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 754.568,
+      "end_seconds": 756.588
+    },
+    {
+      "text": "[叫び声]",
+      "start_seconds": 772.253,
+      "end_seconds": 775.528
+    },
+    {
+      "text": "こほべい",
+      "start_seconds": 773.839,
+      "end_seconds": 777.548
+    },
+    {
+      "text": "[ベル]",
+      "start_seconds": 775.528,
+      "end_seconds": 777.548
+    },
+    {
+      "text": "[叫び声]",
+      "start_seconds": 786.664,
+      "end_seconds": 788.684
+    },
+    {
+      "text": "へ[歌声]",
+      "start_seconds": 794.639,
+      "end_seconds": 800.6
+    },
+    {
+      "text": "ミスる",
+      "start_seconds": 797.6,
+      "end_seconds": 800.6
+    },
+    {
+      "text": "ミス",
+      "start_seconds": 805.639,
+      "end_seconds": 808.639
+    },
+    {
+      "text": "を",
+      "start_seconds": 814.76,
+      "end_seconds": 817.76
+    },
+    {
+      "text": "ちょ",
+      "start_seconds": 819.48,
+      "end_seconds": 825.1990000000001
+    },
+    {
+      "text": "と",
+      "start_seconds": 822.199,
+      "end_seconds": 825.199
+    },
+    {
+      "text": "発",
+      "start_seconds": 825.56,
+      "end_seconds": 828.56
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 830.549,
+      "end_seconds": 832.569
+    },
+    {
+      "text": "うお。",
+      "start_seconds": 832.68,
+      "end_seconds": 836.92
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 839.719,
+      "end_seconds": 841.739
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 847.579,
+      "end_seconds": 849.5989999999999
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 861.334,
+      "end_seconds": 863.3539999999999
+    },
+    {
+      "text": "のりその本て",
+      "start_seconds": 865.88,
+      "end_seconds": 868.88
+    },
+    {
+      "text": "[叫び声]",
+      "start_seconds": 869.194,
+      "end_seconds": 871.2139999999999
+    },
+    {
+      "text": "して",
+      "start_seconds": 893.6,
+      "end_seconds": 898.0400000000001
+    },
+    {
+      "text": "保険",
+      "start_seconds": 899.04,
+      "end_seconds": 905.079
+    },
+    {
+      "text": "[歌声]メ",
+      "start_seconds": 901.945,
+      "end_seconds": 905.0790000000001
+    },
+    {
+      "text": "おふしをのりを白のみ",
+      "start_seconds": 910.839,
+      "end_seconds": 913.839
+    },
+    {
+      "text": "しに",
+      "start_seconds": 943.6,
+      "end_seconds": 949.16
+    },
+    {
+      "text": "響き[歌声]",
+      "start_seconds": 946.759,
+      "end_seconds": 949.16
+    },
+    {
+      "text": "しこ",
+      "start_seconds": 953.0,
+      "end_seconds": 960.399
+    },
+    {
+      "text": "の歯のり着",
+      "start_seconds": 955.639,
+      "end_seconds": 960.399
+    },
+    {
+      "text": "金",
+      "start_seconds": 963.8,
+      "end_seconds": 966.8
+    },
+    {
+      "text": "のにこめきをきくと",
+      "start_seconds": 970.199,
+      "end_seconds": 973.199
+    },
+    {
+      "text": "[歌声]",
+      "start_seconds": 978.581,
+      "end_seconds": 980.601
+    },
+    {
+      "text": "[歌声]",
+      "start_seconds": 983.166,
+      "end_seconds": 985.186
+    },
+    {
+      "text": "[歌声]",
+      "start_seconds": 989.061,
+      "end_seconds": 991.081
+    },
+    {
+      "text": "[歌声]",
+      "start_seconds": 996.266,
+      "end_seconds": 998.286
+    },
+    {
+      "text": "おお",
+      "start_seconds": 1007.079,
+      "end_seconds": 1012.2399999999999
+    },
+    {
+      "text": "おはいよ。",
+      "start_seconds": 1009.24,
+      "end_seconds": 1012.24
+    },
+    {
+      "text": "[ベル]",
+      "start_seconds": 1015.261,
+      "end_seconds": 1017.281
+    },
+    {
+      "text": "おお。",
+      "start_seconds": 1023.04,
+      "end_seconds": 1026.04
+    }
+  ],
+  "display_captions": [
+    {
+      "text": "[音楽]",
+      "start_seconds": 1.964,
+      "end_seconds": 3.984,
+      "id": "QJSb30X-cwc-display-0001",
+      "segment_id": "QJSb30X-cwc-ja-0001"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 7.205,
+      "end_seconds": 9.225,
+      "id": "QJSb30X-cwc-display-0002",
+      "segment_id": "QJSb30X-cwc-ja-0002"
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 10.48,
+      "end_seconds": 12.5,
+      "id": "QJSb30X-cwc-display-0003",
+      "segment_id": "QJSb30X-cwc-ja-0003"
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 15.065,
+      "end_seconds": 17.085,
+      "id": "QJSb30X-cwc-display-0004",
+      "segment_id": "QJSb30X-cwc-ja-0004"
+    },
+    {
+      "text": "人前に立つ時",
+      "start_seconds": 23.359,
+      "end_seconds": 25.68,
+      "id": "QJSb30X-cwc-display-0005",
+      "segment_id": "QJSb30X-cwc-ja-0005"
+    },
+    {
+      "text": "逃げ出したくなった経験は皆さんあります",
+      "start_seconds": 25.68,
+      "end_seconds": 28.279,
+      "id": "QJSb30X-cwc-display-0006",
+      "segment_id": "QJSb30X-cwc-ja-0005"
+    },
+    {
+      "text": "か",
+      "start_seconds": 28.279,
+      "end_seconds": 30.439,
+      "id": "QJSb30X-cwc-display-0007",
+      "segment_id": "QJSb30X-cwc-ja-0005"
+    },
+    {
+      "text": "心臓の音が早くなって足が救んでしまって",
+      "start_seconds": 30.48,
+      "end_seconds": 36.64,
+      "id": "QJSb30X-cwc-display-0008",
+      "segment_id": "QJSb30X-cwc-ja-0006"
+    },
+    {
+      "text": "あ、本番今日じゃなきゃ良かったのになと",
+      "start_seconds": 36.64,
+      "end_seconds": 39.12,
+      "id": "QJSb30X-cwc-display-0009",
+      "segment_id": "QJSb30X-cwc-ja-0006"
+    },
+    {
+      "text": "思うような、ま、そういう瞬間ですね。私",
+      "start_seconds": 39.12,
+      "end_seconds": 42.96,
+      "id": "QJSb30X-cwc-display-0010",
+      "segment_id": "QJSb30X-cwc-ja-0007"
+    },
+    {
+      "text": "は、え、何度も経験しています。",
+      "start_seconds": 42.96,
+      "end_seconds": 47.68,
+      "id": "QJSb30X-cwc-display-0011",
+      "segment_id": "QJSb30X-cwc-ja-0007"
+    },
+    {
+      "text": "それでも私は舞台に出る仕事を諦めません",
+      "start_seconds": 47.68,
+      "end_seconds": 51.44,
+      "id": "QJSb30X-cwc-display-0012",
+      "segment_id": "QJSb30X-cwc-ja-0008"
+    },
+    {
+      "text": "。なぜなら私たちの心はいつだって",
+      "start_seconds": 51.44,
+      "end_seconds": 57.199,
+      "id": "QJSb30X-cwc-display-0013",
+      "segment_id": "QJSb30X-cwc-ja-0008"
+    },
+    {
+      "text": "アップデートできると信じているからです",
+      "start_seconds": 57.199,
+      "end_seconds": 59.28,
+      "id": "QJSb30X-cwc-display-0014",
+      "segment_id": "QJSb30X-cwc-ja-0008"
+    },
+    {
+      "text": "。",
+      "start_seconds": 59.28,
+      "end_seconds": 61.359,
+      "id": "QJSb30X-cwc-display-0015",
+      "segment_id": "QJSb30X-cwc-ja-0009"
+    },
+    {
+      "text": "人の心はいつでもアップデートできます。",
+      "start_seconds": 61.359,
+      "end_seconds": 67.72,
+      "id": "QJSb30X-cwc-display-0016",
+      "segment_id": "QJSb30X-cwc-ja-0010"
+    },
+    {
+      "text": "そしてその方法は決して特別な才能や",
+      "start_seconds": 67.72,
+      "end_seconds": 72.4,
+      "id": "QJSb30X-cwc-display-0017",
+      "segment_id": "QJSb30X-cwc-ja-0011"
+    },
+    {
+      "text": "スキルはなく、誰にでもできるとても",
+      "start_seconds": 72.4,
+      "end_seconds": 76.68,
+      "id": "QJSb30X-cwc-display-0018",
+      "segment_id": "QJSb30X-cwc-ja-0011"
+    },
+    {
+      "text": "シンプルな方法だと思っています。",
+      "start_seconds": 76.68,
+      "end_seconds": 81.72000000000001,
+      "id": "QJSb30X-cwc-display-0019",
+      "segment_id": "QJSb30X-cwc-ja-0012"
+    },
+    {
+      "text": "私は日本武要化という仕事をしています。",
+      "start_seconds": 81.759,
+      "end_seconds": 86.2,
+      "id": "QJSb30X-cwc-display-0020",
+      "segment_id": "QJSb30X-cwc-ja-0013"
+    },
+    {
+      "text": "人前で舞台に立って、え、踊ったり表現を",
+      "start_seconds": 86.2,
+      "end_seconds": 89.64,
+      "id": "QJSb30X-cwc-display-0021",
+      "segment_id": "QJSb30X-cwc-ja-0014"
+    },
+    {
+      "text": "する仕事ではあるんですけれども、実は私",
+      "start_seconds": 89.64,
+      "end_seconds": 93.119,
+      "id": "QJSb30X-cwc-display-0022",
+      "segment_id": "QJSb30X-cwc-ja-0014"
+    },
+    {
+      "text": "はとても緊張しやすい人間です。逃げ出し",
+      "start_seconds": 93.119,
+      "end_seconds": 97.68,
+      "id": "QJSb30X-cwc-display-0023",
+      "segment_id": "QJSb30X-cwc-ja-0014"
+    },
+    {
+      "text": "たくなるほど緊張しやすいんです。今日は",
+      "start_seconds": 97.68,
+      "end_seconds": 100.68,
+      "id": "QJSb30X-cwc-display-0024",
+      "segment_id": "QJSb30X-cwc-ja-0015"
+    },
+    {
+      "text": "逃げずにここに立っております。[笑い]",
+      "start_seconds": 100.68,
+      "end_seconds": 104.04,
+      "id": "QJSb30X-cwc-display-0025",
+      "segment_id": "QJSb30X-cwc-ja-0015"
+    },
+    {
+      "text": "ありがとうございます。[拍手]",
+      "start_seconds": 104.04,
+      "end_seconds": 107.119,
+      "id": "QJSb30X-cwc-display-0026",
+      "segment_id": "QJSb30X-cwc-ja-0015"
+    },
+    {
+      "text": "ありがとうございます。私はいつも舞台に",
+      "start_seconds": 107.119,
+      "end_seconds": 110.0,
+      "id": "QJSb30X-cwc-display-0027",
+      "segment_id": "QJSb30X-cwc-ja-0016"
+    },
+    {
+      "text": "立つ時は必ずプレッシャーと向き合って、",
+      "start_seconds": 110.0,
+      "end_seconds": 114.119,
+      "id": "QJSb30X-cwc-display-0028",
+      "segment_id": "QJSb30X-cwc-ja-0016"
+    },
+    {
+      "text": "え、不安そして孤独感と戦っています。",
+      "start_seconds": 114.119,
+      "end_seconds": 118.32,
+      "id": "QJSb30X-cwc-display-0029",
+      "segment_id": "QJSb30X-cwc-ja-0016"
+    },
+    {
+      "text": "それでも私は舞台に立ち続けます。なぜか",
+      "start_seconds": 118.32,
+      "end_seconds": 122.439,
+      "id": "QJSb30X-cwc-display-0030",
+      "segment_id": "QJSb30X-cwc-ja-0017"
+    },
+    {
+      "text": "と言えば、この舞台を乗り越えたその先に",
+      "start_seconds": 122.439,
+      "end_seconds": 127.079,
+      "id": "QJSb30X-cwc-display-0031",
+      "segment_id": "QJSb30X-cwc-ja-0017"
+    },
+    {
+      "text": "ある成長や幸福感、それをもう私は知って",
+      "start_seconds": 127.079,
+      "end_seconds": 132.0,
+      "id": "QJSb30X-cwc-display-0032",
+      "segment_id": "QJSb30X-cwc-ja-0018"
+    },
+    {
+      "text": "いるからです。",
+      "start_seconds": 132.0,
+      "end_seconds": 134.48,
+      "id": "QJSb30X-cwc-display-0033",
+      "segment_id": "QJSb30X-cwc-ja-0018"
+    },
+    {
+      "text": "私は先日鏡という日本部でも最も有名な",
+      "start_seconds": 134.48,
+      "end_seconds": 139.44,
+      "id": "QJSb30X-cwc-display-0034",
+      "segment_id": "QJSb30X-cwc-ja-0019"
+    },
+    {
+      "text": "作品の1つにチャレンジしてまいりました",
+      "start_seconds": 139.44,
+      "end_seconds": 142.28,
+      "id": "QJSb30X-cwc-display-0035",
+      "segment_id": "QJSb30X-cwc-ja-0019"
+    },
+    {
+      "text": "。これ1時間ほどのソロパートのとても",
+      "start_seconds": 142.28,
+      "end_seconds": 145.8,
+      "id": "QJSb30X-cwc-display-0036",
+      "segment_id": "QJSb30X-cwc-ja-0019"
+    },
+    {
+      "text": "長い対策なんですね。この舞台を",
+      "start_seconds": 145.8,
+      "end_seconds": 148.92,
+      "id": "QJSb30X-cwc-display-0037",
+      "segment_id": "QJSb30X-cwc-ja-0020"
+    },
+    {
+      "text": "乗り越えるために、え、私がしてきたこと",
+      "start_seconds": 148.92,
+      "end_seconds": 151.72,
+      "id": "QJSb30X-cwc-display-0038",
+      "segment_id": "QJSb30X-cwc-ja-0020"
+    },
+    {
+      "text": "、それは昨年の9月末から毎日毎日、え、",
+      "start_seconds": 151.72,
+      "end_seconds": 157.04,
+      "id": "QJSb30X-cwc-display-0039",
+      "segment_id": "QJSb30X-cwc-ja-0020"
+    },
+    {
+      "text": "稽古を続けるということでした。欠かさず",
+      "start_seconds": 157.04,
+      "end_seconds": 160.44,
+      "id": "QJSb30X-cwc-display-0040",
+      "segment_id": "QJSb30X-cwc-ja-0021"
+    },
+    {
+      "text": "です。体が重い日もありました。逆に心が",
+      "start_seconds": 160.44,
+      "end_seconds": 165.44,
+      "id": "QJSb30X-cwc-display-0041",
+      "segment_id": "QJSb30X-cwc-ja-0021"
+    },
+    {
+      "text": "重い日もありました。[鼻息]痛みを感じ",
+      "start_seconds": 165.44,
+      "end_seconds": 168.599,
+      "id": "QJSb30X-cwc-display-0042",
+      "segment_id": "QJSb30X-cwc-ja-0021"
+    },
+    {
+      "text": "やすかったり時にはプレッシャーに",
+      "start_seconds": 168.599,
+      "end_seconds": 171.599,
+      "id": "QJSb30X-cwc-display-0043",
+      "segment_id": "QJSb30X-cwc-ja-0022"
+    },
+    {
+      "text": "押しつされそうになって泣きながら踊る日",
+      "start_seconds": 171.599,
+      "end_seconds": 174.959,
+      "id": "QJSb30X-cwc-display-0044",
+      "segment_id": "QJSb30X-cwc-ja-0022"
+    },
+    {
+      "text": "も、え、少なくありませんでした。それで",
+      "start_seconds": 174.959,
+      "end_seconds": 178.92,
+      "id": "QJSb30X-cwc-display-0045",
+      "segment_id": "QJSb30X-cwc-ja-0022"
+    },
+    {
+      "text": "もその1回の稽古が終わると私はこう思う",
+      "start_seconds": 178.92,
+      "end_seconds": 182.92,
+      "id": "QJSb30X-cwc-display-0046",
+      "segment_id": "QJSb30X-cwc-ja-0023"
+    },
+    {
+      "text": "んです。あ、今日もできたじゃないかと。",
+      "start_seconds": 182.92,
+      "end_seconds": 186.64,
+      "id": "QJSb30X-cwc-display-0047",
+      "segment_id": "QJSb30X-cwc-ja-0023"
+    },
+    {
+      "text": "その、ま、小さな小さな1つずつの、ま、",
+      "start_seconds": 186.64,
+      "end_seconds": 189.92,
+      "id": "QJSb30X-cwc-display-0048",
+      "segment_id": "QJSb30X-cwc-ja-0024"
+    },
+    {
+      "text": "成功体験が私を少しずつ強くしてくれまし",
+      "start_seconds": 189.92,
+      "end_seconds": 194.879,
+      "id": "QJSb30X-cwc-display-0049",
+      "segment_id": "QJSb30X-cwc-ja-0024"
+    },
+    {
+      "text": "た。",
+      "start_seconds": 194.879,
+      "end_seconds": 196.84,
+      "id": "QJSb30X-cwc-display-0050",
+      "segment_id": "QJSb30X-cwc-ja-0024"
+    },
+    {
+      "text": "そして迎えた本番です。",
+      "start_seconds": 196.84,
+      "end_seconds": 200.12,
+      "id": "QJSb30X-cwc-display-0051",
+      "segment_id": "QJSb30X-cwc-ja-0025"
+    },
+    {
+      "text": "やっぱり舞台に立つまでは本当に押しつさ",
+      "start_seconds": 200.12,
+      "end_seconds": 203.799,
+      "id": "QJSb30X-cwc-display-0052",
+      "segment_id": "QJSb30X-cwc-ja-0026"
+    },
+    {
+      "text": "れそうなほど緊張しましたけれども、いざ",
+      "start_seconds": 203.799,
+      "end_seconds": 207.12,
+      "id": "QJSb30X-cwc-display-0053",
+      "segment_id": "QJSb30X-cwc-ja-0026"
+    },
+    {
+      "text": "舞台に立ってみると",
+      "start_seconds": 207.12,
+      "end_seconds": 209.599,
+      "id": "QJSb30X-cwc-display-0054",
+      "segment_id": "QJSb30X-cwc-ja-0026"
+    },
+    {
+      "text": "これまで経験してきた努力、積み重ねが",
+      "start_seconds": 209.599,
+      "end_seconds": 213.92,
+      "id": "QJSb30X-cwc-display-0055",
+      "segment_id": "QJSb30X-cwc-ja-0027"
+    },
+    {
+      "text": "自然と私を立ち上げてくれました。",
+      "start_seconds": 213.92,
+      "end_seconds": 219.04,
+      "id": "QJSb30X-cwc-display-0056",
+      "segment_id": "QJSb30X-cwc-ja-0027"
+    },
+    {
+      "text": "私はその時はっきりと気づきました。不安",
+      "start_seconds": 219.04,
+      "end_seconds": 223.159,
+      "id": "QJSb30X-cwc-display-0057",
+      "segment_id": "QJSb30X-cwc-ja-0028"
+    },
+    {
+      "text": "をなくす方法は1つしかないということ",
+      "start_seconds": 223.159,
+      "end_seconds": 225.879,
+      "id": "QJSb30X-cwc-display-0058",
+      "segment_id": "QJSb30X-cwc-ja-0028"
+    },
+    {
+      "text": "です。",
+      "start_seconds": 225.879,
+      "end_seconds": 228.68,
+      "id": "QJSb30X-cwc-display-0059",
+      "segment_id": "QJSb30X-cwc-ja-0028"
+    },
+    {
+      "text": "これは自信を感じることではなくて、自信",
+      "start_seconds": 228.68,
+      "end_seconds": 234.04,
+      "id": "QJSb30X-cwc-display-0060",
+      "segment_id": "QJSb30X-cwc-ja-0029"
+    },
+    {
+      "text": "が積み上がる行動をすることでした。",
+      "start_seconds": 234.04,
+      "end_seconds": 239.519,
+      "id": "QJSb30X-cwc-display-0061",
+      "segment_id": "QJSb30X-cwc-ja-0029"
+    },
+    {
+      "text": "私はこの舞台が終わってからこの映像を",
+      "start_seconds": 239.519,
+      "end_seconds": 242.4,
+      "id": "QJSb30X-cwc-display-0062",
+      "segment_id": "QJSb30X-cwc-ja-0030"
+    },
+    {
+      "text": "SNSになんとなく投稿してみました。",
+      "start_seconds": 242.4,
+      "end_seconds": 246.28,
+      "id": "QJSb30X-cwc-display-0063",
+      "segment_id": "QJSb30X-cwc-ja-0030"
+    },
+    {
+      "text": "すると思いがけない反応があったんですね",
+      "start_seconds": 246.28,
+      "end_seconds": 249.12,
+      "id": "QJSb30X-cwc-display-0064",
+      "segment_id": "QJSb30X-cwc-ja-0031"
+    },
+    {
+      "text": "。え、海外の方を中心に世界中の方から",
+      "start_seconds": 249.12,
+      "end_seconds": 253.799,
+      "id": "QJSb30X-cwc-display-0065",
+      "segment_id": "QJSb30X-cwc-ja-0031"
+    },
+    {
+      "text": "これまでに経験したことないぐらい",
+      "start_seconds": 253.799,
+      "end_seconds": 255.879,
+      "id": "QJSb30X-cwc-display-0066",
+      "segment_id": "QJSb30X-cwc-ja-0031"
+    },
+    {
+      "text": "たくさんの反応をいただきました。ま、",
+      "start_seconds": 255.879,
+      "end_seconds": 258.639,
+      "id": "QJSb30X-cwc-display-0067",
+      "segment_id": "QJSb30X-cwc-ja-0032"
+    },
+    {
+      "text": "要するにバズったわけです。私はありの",
+      "start_seconds": 258.639,
+      "end_seconds": 261.759,
+      "id": "QJSb30X-cwc-display-0068",
+      "segment_id": "QJSb30X-cwc-ja-0032"
+    },
+    {
+      "text": "まま自分の専門としている古典部の映像を",
+      "start_seconds": 261.759,
+      "end_seconds": 265.88,
+      "id": "QJSb30X-cwc-display-0069",
+      "segment_id": "QJSb30X-cwc-ja-0032"
+    },
+    {
+      "text": "ただ少しだけ紹介しただけでした。全く",
+      "start_seconds": 265.88,
+      "end_seconds": 269.479,
+      "id": "QJSb30X-cwc-display-0070",
+      "segment_id": "QJSb30X-cwc-ja-0033"
+    },
+    {
+      "text": "戦略も何もなかったんです。それがまさか",
+      "start_seconds": 269.479,
+      "end_seconds": 272.919,
+      "id": "QJSb30X-cwc-display-0071",
+      "segment_id": "QJSb30X-cwc-ja-0033"
+    },
+    {
+      "text": "こんなにたくさんの方から色々な言語で",
+      "start_seconds": 272.919,
+      "end_seconds": 276.08,
+      "id": "QJSb30X-cwc-display-0072",
+      "segment_id": "QJSb30X-cwc-ja-0033"
+    },
+    {
+      "text": "反応をもらえるとは思えもよりませんでし",
+      "start_seconds": 276.08,
+      "end_seconds": 278.639,
+      "id": "QJSb30X-cwc-display-0073",
+      "segment_id": "QJSb30X-cwc-ja-0034"
+    },
+    {
+      "text": "た。その時私はこう思いました。あ、人の",
+      "start_seconds": 278.639,
+      "end_seconds": 283.56,
+      "id": "QJSb30X-cwc-display-0074",
+      "segment_id": "QJSb30X-cwc-ja-0034"
+    },
+    {
+      "text": "心を動かすのは見た目の華やかさだけでは",
+      "start_seconds": 283.56,
+      "end_seconds": 287.88,
+      "id": "QJSb30X-cwc-display-0075",
+      "segment_id": "QJSb30X-cwc-ja-0034"
+    },
+    {
+      "text": "ないのかもしれないなと。",
+      "start_seconds": 287.88,
+      "end_seconds": 290.72,
+      "id": "QJSb30X-cwc-display-0076",
+      "segment_id": "QJSb30X-cwc-ja-0035"
+    },
+    {
+      "text": "その裏にあった1人で向き合ってきた時間",
+      "start_seconds": 290.72,
+      "end_seconds": 294.0,
+      "id": "QJSb30X-cwc-display-0077",
+      "segment_id": "QJSb30X-cwc-ja-0036"
+    },
+    {
+      "text": "、",
+      "start_seconds": 294.0,
+      "end_seconds": 295.56,
+      "id": "QJSb30X-cwc-display-0078",
+      "segment_id": "QJSb30X-cwc-ja-0036"
+    },
+    {
+      "text": "努力、積み重ね、思い、そういうものが",
+      "start_seconds": 295.56,
+      "end_seconds": 299.88,
+      "id": "QJSb30X-cwc-display-0079",
+      "segment_id": "QJSb30X-cwc-ja-0036"
+    },
+    {
+      "text": "もしかしたら言葉の壁も何もかも超えて",
+      "start_seconds": 299.88,
+      "end_seconds": 303.919,
+      "id": "QJSb30X-cwc-display-0080",
+      "segment_id": "QJSb30X-cwc-ja-0037"
+    },
+    {
+      "text": "伝わったんじゃないかな。そう思いました",
+      "start_seconds": 303.919,
+      "end_seconds": 306.08,
+      "id": "QJSb30X-cwc-display-0081",
+      "segment_id": "QJSb30X-cwc-ja-0037"
+    },
+    {
+      "text": "。スポーツでも仕事でもアートでも誰かが",
+      "start_seconds": 306.08,
+      "end_seconds": 311.479,
+      "id": "QJSb30X-cwc-display-0082",
+      "segment_id": "QJSb30X-cwc-ja-0037"
+    },
+    {
+      "text": "一生懸命な姿に皆さん心を打たれたこと",
+      "start_seconds": 311.479,
+      "end_seconds": 315.6,
+      "id": "QJSb30X-cwc-display-0083",
+      "segment_id": "QJSb30X-cwc-ja-0038"
+    },
+    {
+      "text": "きっとあるんじゃないでしょうか。",
+      "start_seconds": 315.6,
+      "end_seconds": 319.479,
+      "id": "QJSb30X-cwc-display-0084",
+      "segment_id": "QJSb30X-cwc-ja-0038"
+    },
+    {
+      "text": "さて日本には伝統と確信という言葉があり",
+      "start_seconds": 319.479,
+      "end_seconds": 324.28,
+      "id": "QJSb30X-cwc-display-0085",
+      "segment_id": "QJSb30X-cwc-ja-0039"
+    },
+    {
+      "text": "ます。多くの方はこの2つを反対の言葉と",
+      "start_seconds": 324.28,
+      "end_seconds": 329.199,
+      "id": "QJSb30X-cwc-display-0086",
+      "segment_id": "QJSb30X-cwc-ja-0039"
+    },
+    {
+      "text": "して語ることがあります",
+      "start_seconds": 329.199,
+      "end_seconds": 332.6,
+      "id": "QJSb30X-cwc-display-0087",
+      "segment_id": "QJSb30X-cwc-ja-0040"
+    },
+    {
+      "text": "けれども私はこの2つは反対の言葉とは",
+      "start_seconds": 332.6,
+      "end_seconds": 335.56,
+      "id": "QJSb30X-cwc-display-0088",
+      "segment_id": "QJSb30X-cwc-ja-0040"
+    },
+    {
+      "text": "思っていません。",
+      "start_seconds": 335.56,
+      "end_seconds": 338.4,
+      "id": "QJSb30X-cwc-display-0089",
+      "segment_id": "QJSb30X-cwc-ja-0040"
+    },
+    {
+      "text": "伝統というのは長い時間の中で作られてき",
+      "start_seconds": 338.4,
+      "end_seconds": 343.0,
+      "id": "QJSb30X-cwc-display-0090",
+      "segment_id": "QJSb30X-cwc-ja-0041"
+    },
+    {
+      "text": "た歴史や美しさ、品性のことだと考えてい",
+      "start_seconds": 343.0,
+      "end_seconds": 347.919,
+      "id": "QJSb30X-cwc-display-0091",
+      "segment_id": "QJSb30X-cwc-ja-0041"
+    },
+    {
+      "text": "ます。一方で確信はその積み上げられてき",
+      "start_seconds": 347.919,
+      "end_seconds": 352.639,
+      "id": "QJSb30X-cwc-display-0092",
+      "segment_id": "QJSb30X-cwc-ja-0042"
+    },
+    {
+      "text": "た歴史を今どんな風に喜んでもらうか、",
+      "start_seconds": 352.639,
+      "end_seconds": 357.479,
+      "id": "QJSb30X-cwc-display-0093",
+      "segment_id": "QJSb30X-cwc-ja-0042"
+    },
+    {
+      "text": "それを問い続けることだと思っています。",
+      "start_seconds": 357.479,
+      "end_seconds": 362.28,
+      "id": "QJSb30X-cwc-display-0094",
+      "segment_id": "QJSb30X-cwc-ja-0043"
+    },
+    {
+      "text": "この伝統と確信というのは対立するもので",
+      "start_seconds": 362.28,
+      "end_seconds": 366.039,
+      "id": "QJSb30X-cwc-display-0095",
+      "segment_id": "QJSb30X-cwc-ja-0044"
+    },
+    {
+      "text": "はなくてお互いが共に共存することで",
+      "start_seconds": 366.039,
+      "end_seconds": 369.84,
+      "id": "QJSb30X-cwc-display-0096",
+      "segment_id": "QJSb30X-cwc-ja-0044"
+    },
+    {
+      "text": "初めて価値が生まれる。そのように考えて",
+      "start_seconds": 369.84,
+      "end_seconds": 373.28,
+      "id": "QJSb30X-cwc-display-0097",
+      "segment_id": "QJSb30X-cwc-ja-0044"
+    },
+    {
+      "text": "います。",
+      "start_seconds": 373.28,
+      "end_seconds": 375.599,
+      "id": "QJSb30X-cwc-display-0098",
+      "segment_id": "QJSb30X-cwc-ja-0045"
+    },
+    {
+      "text": "これは私の普段のポリシーですけれども、",
+      "start_seconds": 375.599,
+      "end_seconds": 379.16,
+      "id": "QJSb30X-cwc-display-0099",
+      "segment_id": "QJSb30X-cwc-ja-0046"
+    },
+    {
+      "text": "これは私たちの心にももしかしたら言える",
+      "start_seconds": 379.16,
+      "end_seconds": 383.199,
+      "id": "QJSb30X-cwc-display-0100",
+      "segment_id": "QJSb30X-cwc-ja-0046"
+    },
+    {
+      "text": "ことではないかなと思っています。",
+      "start_seconds": 383.199,
+      "end_seconds": 386.8,
+      "id": "QJSb30X-cwc-display-0101",
+      "segment_id": "QJSb30X-cwc-ja-0046"
+    },
+    {
+      "text": "またもう1つご紹介しましょう。私は大学",
+      "start_seconds": 386.8,
+      "end_seconds": 391.199,
+      "id": "QJSb30X-cwc-display-0102",
+      "segment_id": "QJSb30X-cwc-ja-0047"
+    },
+    {
+      "text": "時代理術師の勉強をしていました。",
+      "start_seconds": 391.199,
+      "end_seconds": 395.44,
+      "id": "QJSb30X-cwc-display-0103",
+      "segment_id": "QJSb30X-cwc-ja-0047"
+    },
+    {
+      "text": "美術師ではディスクリプションという議法",
+      "start_seconds": 395.44,
+      "end_seconds": 398.599,
+      "id": "QJSb30X-cwc-display-0104",
+      "segment_id": "QJSb30X-cwc-ja-0048"
+    },
+    {
+      "text": "を学んできました。これは書いてある絵の",
+      "start_seconds": 398.599,
+      "end_seconds": 402.52,
+      "id": "QJSb30X-cwc-display-0105",
+      "segment_id": "QJSb30X-cwc-ja-0048"
+    },
+    {
+      "text": "中にどんなものが書いてあるかを徹底的に",
+      "start_seconds": 402.52,
+      "end_seconds": 406.68,
+      "id": "QJSb30X-cwc-display-0106",
+      "segment_id": "QJSb30X-cwc-ja-0048"
+    },
+    {
+      "text": "言葉にしていく。そういう訓練でした。",
+      "start_seconds": 406.68,
+      "end_seconds": 410.68,
+      "id": "QJSb30X-cwc-display-0107",
+      "segment_id": "QJSb30X-cwc-ja-0049"
+    },
+    {
+      "text": "何が書いてあるのかな?どんな色が使われ",
+      "start_seconds": 410.68,
+      "end_seconds": 413.88,
+      "id": "QJSb30X-cwc-display-0108",
+      "segment_id": "QJSb30X-cwc-ja-0050"
+    },
+    {
+      "text": "てるのかな?それはどんな印象を与えるの",
+      "start_seconds": 413.88,
+      "end_seconds": 417.08,
+      "id": "QJSb30X-cwc-display-0109",
+      "segment_id": "QJSb30X-cwc-ja-0050"
+    },
+    {
+      "text": "かな?そういったものを1つの作品から",
+      "start_seconds": 417.08,
+      "end_seconds": 420.479,
+      "id": "QJSb30X-cwc-display-0110",
+      "segment_id": "QJSb30X-cwc-ja-0050"
+    },
+    {
+      "text": "徹底的に言語化していく。そういったこと",
+      "start_seconds": 420.479,
+      "end_seconds": 423.639,
+      "id": "QJSb30X-cwc-display-0111",
+      "segment_id": "QJSb30X-cwc-ja-0051"
+    },
+    {
+      "text": "を学んできました。これもまた私たちの心",
+      "start_seconds": 423.639,
+      "end_seconds": 428.16,
+      "id": "QJSb30X-cwc-display-0112",
+      "segment_id": "QJSb30X-cwc-ja-0051"
+    },
+    {
+      "text": "に置き換えて考えることができるんじゃ",
+      "start_seconds": 428.16,
+      "end_seconds": 431.4,
+      "id": "QJSb30X-cwc-display-0113",
+      "segment_id": "QJSb30X-cwc-ja-0051"
+    },
+    {
+      "text": "ないかなと思っています。",
+      "start_seconds": 431.4,
+      "end_seconds": 434.36,
+      "id": "QJSb30X-cwc-display-0114",
+      "segment_id": "QJSb30X-cwc-ja-0052"
+    },
+    {
+      "text": "私たちは日々様々な感情を経験しますよね",
+      "start_seconds": 434.36,
+      "end_seconds": 438.12,
+      "id": "QJSb30X-cwc-display-0115",
+      "segment_id": "QJSb30X-cwc-ja-0053"
+    },
+    {
+      "text": "。でもその感情を意外と言語化することし",
+      "start_seconds": 438.12,
+      "end_seconds": 443.56,
+      "id": "QJSb30X-cwc-display-0116",
+      "segment_id": "QJSb30X-cwc-ja-0053"
+    },
+    {
+      "text": "てないですよね。あ、今日はなんとなく",
+      "start_seconds": 443.56,
+      "end_seconds": 446.52,
+      "id": "QJSb30X-cwc-display-0117",
+      "segment_id": "QJSb30X-cwc-ja-0054"
+    },
+    {
+      "text": "疲れちゃったな。なんとなく嫌なんだよな",
+      "start_seconds": 446.52,
+      "end_seconds": 449.68,
+      "id": "QJSb30X-cwc-display-0118",
+      "segment_id": "QJSb30X-cwc-ja-0054"
+    },
+    {
+      "text": "。なんとなくちょっと今日は頑張ったけど",
+      "start_seconds": 449.68,
+      "end_seconds": 454.44,
+      "id": "QJSb30X-cwc-display-0119",
+      "segment_id": "QJSb30X-cwc-ja-0054"
+    },
+    {
+      "text": "理由が分からない。意外となんとなくを",
+      "start_seconds": 454.44,
+      "end_seconds": 457.199,
+      "id": "QJSb30X-cwc-display-0120",
+      "segment_id": "QJSb30X-cwc-ja-0055"
+    },
+    {
+      "text": "そのままにしてしまうことって多いんじゃ",
+      "start_seconds": 457.199,
+      "end_seconds": 459.199,
+      "id": "QJSb30X-cwc-display-0121",
+      "segment_id": "QJSb30X-cwc-ja-0055"
+    },
+    {
+      "text": "ないかなと思います。でももし心を",
+      "start_seconds": 459.199,
+      "end_seconds": 463.12,
+      "id": "QJSb30X-cwc-display-0122",
+      "segment_id": "QJSb30X-cwc-ja-0055"
+    },
+    {
+      "text": "ディスクリプションして自分の心を",
+      "start_seconds": 463.12,
+      "end_seconds": 465.919,
+      "id": "QJSb30X-cwc-display-0123",
+      "segment_id": "QJSb30X-cwc-ja-0055"
+    },
+    {
+      "text": "しっかり観察して言葉にすることができ",
+      "start_seconds": 465.919,
+      "end_seconds": 468.84,
+      "id": "QJSb30X-cwc-display-0124",
+      "segment_id": "QJSb30X-cwc-ja-0056"
+    },
+    {
+      "text": "たらどうでしょう?",
+      "start_seconds": 468.84,
+      "end_seconds": 471.08,
+      "id": "QJSb30X-cwc-display-0125",
+      "segment_id": "QJSb30X-cwc-ja-0056"
+    },
+    {
+      "text": "そうやって自分の心を理解できた時に",
+      "start_seconds": 471.08,
+      "end_seconds": 474.28,
+      "id": "QJSb30X-cwc-display-0126",
+      "segment_id": "QJSb30X-cwc-ja-0057"
+    },
+    {
+      "text": "私たちは初めて自分の心を扱えるのかも",
+      "start_seconds": 474.28,
+      "end_seconds": 477.919,
+      "id": "QJSb30X-cwc-display-0127",
+      "segment_id": "QJSb30X-cwc-ja-0057"
+    },
+    {
+      "text": "しれないですよね。",
+      "start_seconds": 477.919,
+      "end_seconds": 481.0,
+      "id": "QJSb30X-cwc-display-0128",
+      "segment_id": "QJSb30X-cwc-ja-0057"
+    },
+    {
+      "text": "私は心をアップデートするために大切な",
+      "start_seconds": 481.0,
+      "end_seconds": 483.68,
+      "id": "QJSb30X-cwc-display-0129",
+      "segment_id": "QJSb30X-cwc-ja-0058"
+    },
+    {
+      "text": "ことが3つあると思っています。",
+      "start_seconds": 483.68,
+      "end_seconds": 487.639,
+      "id": "QJSb30X-cwc-display-0130",
+      "segment_id": "QJSb30X-cwc-ja-0058"
+    },
+    {
+      "text": "まず1つ目。どんな心でありたいか、これ",
+      "start_seconds": 487.639,
+      "end_seconds": 492.28,
+      "id": "QJSb30X-cwc-display-0131",
+      "segment_id": "QJSb30X-cwc-ja-0059"
+    },
+    {
+      "text": "を選ぶこと。",
+      "start_seconds": 492.28,
+      "end_seconds": 494.84,
+      "id": "QJSb30X-cwc-display-0132",
+      "segment_id": "QJSb30X-cwc-ja-0059"
+    },
+    {
+      "text": "外から起きてる出来事に対してただ反応",
+      "start_seconds": 494.84,
+      "end_seconds": 497.96,
+      "id": "QJSb30X-cwc-display-0133",
+      "segment_id": "QJSb30X-cwc-ja-0060"
+    },
+    {
+      "text": "するだけではなくて、自分がその中でどう",
+      "start_seconds": 497.96,
+      "end_seconds": 501.479,
+      "id": "QJSb30X-cwc-display-0134",
+      "segment_id": "QJSb30X-cwc-ja-0060"
+    },
+    {
+      "text": "ありたいか、これを自ら選択すること。",
+      "start_seconds": 501.479,
+      "end_seconds": 506.24,
+      "id": "QJSb30X-cwc-display-0135",
+      "segment_id": "QJSb30X-cwc-ja-0060"
+    },
+    {
+      "text": "2つ目は自分のご機嫌を理解すること。ご",
+      "start_seconds": 506.24,
+      "end_seconds": 510.8,
+      "id": "QJSb30X-cwc-display-0136",
+      "segment_id": "QJSb30X-cwc-ja-0061"
+    },
+    {
+      "text": "機嫌というのはただ痛みを感じないことで",
+      "start_seconds": 510.8,
+      "end_seconds": 513.919,
+      "id": "QJSb30X-cwc-display-0137",
+      "segment_id": "QJSb30X-cwc-ja-0061"
+    },
+    {
+      "text": "はないと思います。痛みを感じてもそれを",
+      "start_seconds": 513.919,
+      "end_seconds": 517.24,
+      "id": "QJSb30X-cwc-display-0138",
+      "segment_id": "QJSb30X-cwc-ja-0061"
+    },
+    {
+      "text": "きちんと自分の心の中で観察して会話して",
+      "start_seconds": 517.24,
+      "end_seconds": 521.719,
+      "id": "QJSb30X-cwc-display-0139",
+      "segment_id": "QJSb30X-cwc-ja-0062"
+    },
+    {
+      "text": "受け止めることそう考えています。",
+      "start_seconds": 521.719,
+      "end_seconds": 526.08,
+      "id": "QJSb30X-cwc-display-0140",
+      "segment_id": "QJSb30X-cwc-ja-0062"
+    },
+    {
+      "text": "そして3つ目が言葉にすること。自分の心",
+      "start_seconds": 526.08,
+      "end_seconds": 530.519,
+      "id": "QJSb30X-cwc-display-0141",
+      "segment_id": "QJSb30X-cwc-ja-0063"
+    },
+    {
+      "text": "と見つめ合って会話をして",
+      "start_seconds": 530.519,
+      "end_seconds": 534.12,
+      "id": "QJSb30X-cwc-display-0142",
+      "segment_id": "QJSb30X-cwc-ja-0063"
+    },
+    {
+      "text": "ディスクリプションして",
+      "start_seconds": 534.12,
+      "end_seconds": 537.44,
+      "id": "QJSb30X-cwc-display-0143",
+      "segment_id": "QJSb30X-cwc-ja-0063"
+    },
+    {
+      "text": "曖昧にしないで言葉にすること。これが心",
+      "start_seconds": 537.44,
+      "end_seconds": 540.64,
+      "id": "QJSb30X-cwc-display-0144",
+      "segment_id": "QJSb30X-cwc-ja-0064"
+    },
+    {
+      "text": "のディスクリプションだと思っています。",
+      "start_seconds": 540.64,
+      "end_seconds": 545.3199999999999,
+      "id": "QJSb30X-cwc-display-0145",
+      "segment_id": "QJSb30X-cwc-ja-0064"
+    },
+    {
+      "text": "伝統が時代と出会って確信していくように",
+      "start_seconds": 546.32,
+      "end_seconds": 550.36,
+      "id": "QJSb30X-cwc-display-0146",
+      "segment_id": "QJSb30X-cwc-ja-0065"
+    },
+    {
+      "text": "私たちの心も歴史と共に経験と共に徐々に",
+      "start_seconds": 550.36,
+      "end_seconds": 555.0,
+      "id": "QJSb30X-cwc-display-0147",
+      "segment_id": "QJSb30X-cwc-ja-0065"
+    },
+    {
+      "text": "アップデートしていっています。まるで",
+      "start_seconds": 555.0,
+      "end_seconds": 557.56,
+      "id": "QJSb30X-cwc-display-0148",
+      "segment_id": "QJSb30X-cwc-ja-0065"
+    },
+    {
+      "text": "伝統と確信が共存してるのと同じことが",
+      "start_seconds": 557.56,
+      "end_seconds": 560.68,
+      "id": "QJSb30X-cwc-display-0149",
+      "segment_id": "QJSb30X-cwc-ja-0066"
+    },
+    {
+      "text": "言えるのではないかと思います。そして",
+      "start_seconds": 560.68,
+      "end_seconds": 563.72,
+      "id": "QJSb30X-cwc-display-0150",
+      "segment_id": "QJSb30X-cwc-ja-0066"
+    },
+    {
+      "text": "人生において大切なのはほんの少しだけの",
+      "start_seconds": 563.72,
+      "end_seconds": 566.64,
+      "id": "QJSb30X-cwc-display-0151",
+      "segment_id": "QJSb30X-cwc-ja-0066"
+    },
+    {
+      "text": "勇気だと思っています。一歩踏み出せば",
+      "start_seconds": 566.64,
+      "end_seconds": 571.24,
+      "id": "QJSb30X-cwc-display-0152",
+      "segment_id": "QJSb30X-cwc-ja-0067"
+    },
+    {
+      "text": "視界が大きく開けることも多々あるのでは",
+      "start_seconds": 571.24,
+      "end_seconds": 574.24,
+      "id": "QJSb30X-cwc-display-0153",
+      "segment_id": "QJSb30X-cwc-ja-0067"
+    },
+    {
+      "text": "ないでしょうか。",
+      "start_seconds": 574.24,
+      "end_seconds": 576.2,
+      "id": "QJSb30X-cwc-display-0154",
+      "segment_id": "QJSb30X-cwc-ja-0067"
+    },
+    {
+      "text": "例え、間違えたとしても起動修正はいくら",
+      "start_seconds": 576.2,
+      "end_seconds": 578.8,
+      "id": "QJSb30X-cwc-display-0155",
+      "segment_id": "QJSb30X-cwc-ja-0068"
+    },
+    {
+      "text": "でもできます。",
+      "start_seconds": 578.8,
+      "end_seconds": 581.56,
+      "id": "QJSb30X-cwc-display-0156",
+      "segment_id": "QJSb30X-cwc-ja-0068"
+    },
+    {
+      "text": "伝統と確信、それは文化の話だけではあり",
+      "start_seconds": 581.56,
+      "end_seconds": 585.0,
+      "id": "QJSb30X-cwc-display-0157",
+      "segment_id": "QJSb30X-cwc-ja-0069"
+    },
+    {
+      "text": "ません。私たちの心にも伝統があります。",
+      "start_seconds": 585.0,
+      "end_seconds": 589.519,
+      "id": "QJSb30X-cwc-display-0158",
+      "segment_id": "QJSb30X-cwc-ja-0069"
+    },
+    {
+      "text": "そして確信があります。",
+      "start_seconds": 589.519,
+      "end_seconds": 592.76,
+      "id": "QJSb30X-cwc-display-0159",
+      "segment_id": "QJSb30X-cwc-ja-0070"
+    },
+    {
+      "text": "私たちの心はいつでもアップデートできる",
+      "start_seconds": 592.76,
+      "end_seconds": 595.399,
+      "id": "QJSb30X-cwc-display-0160",
+      "segment_id": "QJSb30X-cwc-ja-0071"
+    },
+    {
+      "text": "。その第1歩は自分の心と対話して",
+      "start_seconds": 595.399,
+      "end_seconds": 601.88,
+      "id": "QJSb30X-cwc-display-0161",
+      "segment_id": "QJSb30X-cwc-ja-0071"
+    },
+    {
+      "text": "少しの勇気で一歩踏み出してみる。",
+      "start_seconds": 601.88,
+      "end_seconds": 605.279,
+      "id": "QJSb30X-cwc-display-0162",
+      "segment_id": "QJSb30X-cwc-ja-0072"
+    },
+    {
+      "text": "そこから始まると思います。",
+      "start_seconds": 605.279,
+      "end_seconds": 607.88,
+      "id": "QJSb30X-cwc-display-0163",
+      "segment_id": "QJSb30X-cwc-ja-0073"
+    },
+    {
+      "text": "ありがとうございました。[拍手]",
+      "start_seconds": 607.88,
+      "end_seconds": 611.176,
+      "id": "QJSb30X-cwc-display-0164",
+      "segment_id": "QJSb30X-cwc-ja-0074"
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 613.741,
+      "end_seconds": 615.761,
+      "id": "QJSb30X-cwc-display-0165",
+      "segment_id": "QJSb30X-cwc-ja-0075"
+    },
+    {
+      "text": "よ。",
+      "start_seconds": 625.12,
+      "end_seconds": 628.12,
+      "id": "QJSb30X-cwc-display-0166",
+      "segment_id": "QJSb30X-cwc-ja-0076"
+    },
+    {
+      "text": "よ",
+      "start_seconds": 630.68,
+      "end_seconds": 633.68,
+      "id": "QJSb30X-cwc-display-0167",
+      "segment_id": "QJSb30X-cwc-ja-0077"
+    },
+    {
+      "text": "さきに",
+      "start_seconds": 634.04,
+      "end_seconds": 637.04,
+      "id": "QJSb30X-cwc-display-0168",
+      "segment_id": "QJSb30X-cwc-ja-0077"
+    },
+    {
+      "text": "おお",
+      "start_seconds": 653.6,
+      "end_seconds": 656.6,
+      "id": "QJSb30X-cwc-display-0169",
+      "segment_id": "QJSb30X-cwc-ja-0078"
+    },
+    {
+      "text": "。",
+      "start_seconds": 657.12,
+      "end_seconds": 660.12,
+      "id": "QJSb30X-cwc-display-0170",
+      "segment_id": "QJSb30X-cwc-ja-0079"
+    },
+    {
+      "text": "うる",
+      "start_seconds": 665.56,
+      "end_seconds": 668.56,
+      "id": "QJSb30X-cwc-display-0171",
+      "segment_id": "QJSb30X-cwc-ja-0080"
+    },
+    {
+      "text": "。[歌声]",
+      "start_seconds": 680.36,
+      "end_seconds": 683.227,
+      "id": "QJSb30X-cwc-display-0172",
+      "segment_id": "QJSb30X-cwc-ja-0081"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 688.412,
+      "end_seconds": 690.432,
+      "id": "QJSb30X-cwc-display-0173",
+      "segment_id": "QJSb30X-cwc-ja-0082"
+    },
+    {
+      "text": "個人",
+      "start_seconds": 692.12,
+      "end_seconds": 695.12,
+      "id": "QJSb30X-cwc-display-0174",
+      "segment_id": "QJSb30X-cwc-ja-0083"
+    },
+    {
+      "text": "に",
+      "start_seconds": 695.44,
+      "end_seconds": 698.44,
+      "id": "QJSb30X-cwc-display-0175",
+      "segment_id": "QJSb30X-cwc-ja-0083"
+    },
+    {
+      "text": "ある",
+      "start_seconds": 701.72,
+      "end_seconds": 704.72,
+      "id": "QJSb30X-cwc-display-0176",
+      "segment_id": "QJSb30X-cwc-ja-0084"
+    },
+    {
+      "text": "ほ",
+      "start_seconds": 707.2,
+      "end_seconds": 710.0790000000001,
+      "id": "QJSb30X-cwc-display-0177",
+      "segment_id": "QJSb30X-cwc-ja-0085"
+    },
+    {
+      "text": "おののみ",
+      "start_seconds": 714.56,
+      "end_seconds": 717.56,
+      "id": "QJSb30X-cwc-display-0178",
+      "segment_id": "QJSb30X-cwc-ja-0086"
+    },
+    {
+      "text": "[歌声]",
+      "start_seconds": 727.713,
+      "end_seconds": 729.733,
+      "id": "QJSb30X-cwc-display-0179",
+      "segment_id": "QJSb30X-cwc-ja-0087"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 735.573,
+      "end_seconds": 737.48,
+      "id": "QJSb30X-cwc-display-0180",
+      "segment_id": "QJSb30X-cwc-ja-0088"
+    },
+    {
+      "text": "おきつれ",
+      "start_seconds": 737.48,
+      "end_seconds": 740.48,
+      "id": "QJSb30X-cwc-display-0181",
+      "segment_id": "QJSb30X-cwc-ja-0088"
+    },
+    {
+      "text": "て",
+      "start_seconds": 751.839,
+      "end_seconds": 754.568,
+      "id": "QJSb30X-cwc-display-0182",
+      "segment_id": "QJSb30X-cwc-ja-0089"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 754.568,
+      "end_seconds": 756.588,
+      "id": "QJSb30X-cwc-display-0183",
+      "segment_id": "QJSb30X-cwc-ja-0089"
+    },
+    {
+      "text": "[叫び声]",
+      "start_seconds": 772.253,
+      "end_seconds": 773.839,
+      "id": "QJSb30X-cwc-display-0184",
+      "segment_id": "QJSb30X-cwc-ja-0090"
+    },
+    {
+      "text": "こほべい",
+      "start_seconds": 773.839,
+      "end_seconds": 775.528,
+      "id": "QJSb30X-cwc-display-0185",
+      "segment_id": "QJSb30X-cwc-ja-0090"
+    },
+    {
+      "text": "[ベル]",
+      "start_seconds": 775.528,
+      "end_seconds": 777.548,
+      "id": "QJSb30X-cwc-display-0186",
+      "segment_id": "QJSb30X-cwc-ja-0090"
+    },
+    {
+      "text": "[叫び声]",
+      "start_seconds": 786.664,
+      "end_seconds": 788.684,
+      "id": "QJSb30X-cwc-display-0187",
+      "segment_id": "QJSb30X-cwc-ja-0091"
+    },
+    {
+      "text": "へ[歌声]",
+      "start_seconds": 794.639,
+      "end_seconds": 797.6,
+      "id": "QJSb30X-cwc-display-0188",
+      "segment_id": "QJSb30X-cwc-ja-0092"
+    },
+    {
+      "text": "ミスる",
+      "start_seconds": 797.6,
+      "end_seconds": 800.6,
+      "id": "QJSb30X-cwc-display-0189",
+      "segment_id": "QJSb30X-cwc-ja-0092"
+    },
+    {
+      "text": "ミス",
+      "start_seconds": 805.639,
+      "end_seconds": 808.639,
+      "id": "QJSb30X-cwc-display-0190",
+      "segment_id": "QJSb30X-cwc-ja-0093"
+    },
+    {
+      "text": "を",
+      "start_seconds": 814.76,
+      "end_seconds": 817.76,
+      "id": "QJSb30X-cwc-display-0191",
+      "segment_id": "QJSb30X-cwc-ja-0094"
+    },
+    {
+      "text": "ちょ",
+      "start_seconds": 819.48,
+      "end_seconds": 822.199,
+      "id": "QJSb30X-cwc-display-0192",
+      "segment_id": "QJSb30X-cwc-ja-0095"
+    },
+    {
+      "text": "と",
+      "start_seconds": 822.199,
+      "end_seconds": 825.199,
+      "id": "QJSb30X-cwc-display-0193",
+      "segment_id": "QJSb30X-cwc-ja-0095"
+    },
+    {
+      "text": "発",
+      "start_seconds": 825.56,
+      "end_seconds": 828.56,
+      "id": "QJSb30X-cwc-display-0194",
+      "segment_id": "QJSb30X-cwc-ja-0095"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 830.549,
+      "end_seconds": 832.569,
+      "id": "QJSb30X-cwc-display-0195",
+      "segment_id": "QJSb30X-cwc-ja-0096"
+    },
+    {
+      "text": "うお。",
+      "start_seconds": 832.68,
+      "end_seconds": 836.92,
+      "id": "QJSb30X-cwc-display-0196",
+      "segment_id": "QJSb30X-cwc-ja-0096"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 839.719,
+      "end_seconds": 841.739,
+      "id": "QJSb30X-cwc-display-0197",
+      "segment_id": "QJSb30X-cwc-ja-0097"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 847.579,
+      "end_seconds": 849.5989999999999,
+      "id": "QJSb30X-cwc-display-0198",
+      "segment_id": "QJSb30X-cwc-ja-0098"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 861.334,
+      "end_seconds": 863.3539999999999,
+      "id": "QJSb30X-cwc-display-0199",
+      "segment_id": "QJSb30X-cwc-ja-0099"
+    },
+    {
+      "text": "のりその本て",
+      "start_seconds": 865.88,
+      "end_seconds": 868.88,
+      "id": "QJSb30X-cwc-display-0200",
+      "segment_id": "QJSb30X-cwc-ja-0100"
+    },
+    {
+      "text": "[叫び声]",
+      "start_seconds": 869.194,
+      "end_seconds": 871.2139999999999,
+      "id": "QJSb30X-cwc-display-0201",
+      "segment_id": "QJSb30X-cwc-ja-0100"
+    },
+    {
+      "text": "して",
+      "start_seconds": 893.6,
+      "end_seconds": 898.0400000000001,
+      "id": "QJSb30X-cwc-display-0202",
+      "segment_id": "QJSb30X-cwc-ja-0101"
+    },
+    {
+      "text": "保険",
+      "start_seconds": 899.04,
+      "end_seconds": 901.945,
+      "id": "QJSb30X-cwc-display-0203",
+      "segment_id": "QJSb30X-cwc-ja-0102"
+    },
+    {
+      "text": "[歌声]メ",
+      "start_seconds": 901.945,
+      "end_seconds": 905.0790000000001,
+      "id": "QJSb30X-cwc-display-0204",
+      "segment_id": "QJSb30X-cwc-ja-0102"
+    },
+    {
+      "text": "おふしをのりを白のみ",
+      "start_seconds": 910.839,
+      "end_seconds": 913.839,
+      "id": "QJSb30X-cwc-display-0205",
+      "segment_id": "QJSb30X-cwc-ja-0103"
+    },
+    {
+      "text": "しに",
+      "start_seconds": 943.6,
+      "end_seconds": 946.759,
+      "id": "QJSb30X-cwc-display-0206",
+      "segment_id": "QJSb30X-cwc-ja-0104"
+    },
+    {
+      "text": "響き[歌声]",
+      "start_seconds": 946.759,
+      "end_seconds": 949.16,
+      "id": "QJSb30X-cwc-display-0207",
+      "segment_id": "QJSb30X-cwc-ja-0104"
+    },
+    {
+      "text": "しこ",
+      "start_seconds": 953.0,
+      "end_seconds": 955.639,
+      "id": "QJSb30X-cwc-display-0208",
+      "segment_id": "QJSb30X-cwc-ja-0105"
+    },
+    {
+      "text": "の歯のり着",
+      "start_seconds": 955.639,
+      "end_seconds": 960.399,
+      "id": "QJSb30X-cwc-display-0209",
+      "segment_id": "QJSb30X-cwc-ja-0105"
+    },
+    {
+      "text": "金",
+      "start_seconds": 963.8,
+      "end_seconds": 966.8,
+      "id": "QJSb30X-cwc-display-0210",
+      "segment_id": "QJSb30X-cwc-ja-0106"
+    },
+    {
+      "text": "のにこめきをきくと",
+      "start_seconds": 970.199,
+      "end_seconds": 973.199,
+      "id": "QJSb30X-cwc-display-0211",
+      "segment_id": "QJSb30X-cwc-ja-0107"
+    },
+    {
+      "text": "[歌声]",
+      "start_seconds": 978.581,
+      "end_seconds": 980.601,
+      "id": "QJSb30X-cwc-display-0212",
+      "segment_id": "QJSb30X-cwc-ja-0108"
+    },
+    {
+      "text": "[歌声]",
+      "start_seconds": 983.166,
+      "end_seconds": 985.186,
+      "id": "QJSb30X-cwc-display-0213",
+      "segment_id": "QJSb30X-cwc-ja-0109"
+    },
+    {
+      "text": "[歌声]",
+      "start_seconds": 989.061,
+      "end_seconds": 991.081,
+      "id": "QJSb30X-cwc-display-0214",
+      "segment_id": "QJSb30X-cwc-ja-0110"
+    },
+    {
+      "text": "[歌声]",
+      "start_seconds": 996.266,
+      "end_seconds": 998.286,
+      "id": "QJSb30X-cwc-display-0215",
+      "segment_id": "QJSb30X-cwc-ja-0111"
+    },
+    {
+      "text": "おお",
+      "start_seconds": 1007.079,
+      "end_seconds": 1009.24,
+      "id": "QJSb30X-cwc-display-0216",
+      "segment_id": "QJSb30X-cwc-ja-0112"
+    },
+    {
+      "text": "おはいよ。",
+      "start_seconds": 1009.24,
+      "end_seconds": 1012.24,
+      "id": "QJSb30X-cwc-display-0217",
+      "segment_id": "QJSb30X-cwc-ja-0112"
+    },
+    {
+      "text": "[ベル]",
+      "start_seconds": 1015.261,
+      "end_seconds": 1017.281,
+      "id": "QJSb30X-cwc-display-0218",
+      "segment_id": "QJSb30X-cwc-ja-0113"
+    },
+    {
+      "text": "おお。",
+      "start_seconds": 1023.04,
+      "end_seconds": 1026.04,
+      "id": "QJSb30X-cwc-display-0219",
+      "segment_id": "QJSb30X-cwc-ja-0114"
+    }
+  ]
+}

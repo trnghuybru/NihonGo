@@ -1,0 +1,4159 @@
+{
+  "schema_version": 1,
+  "video": {
+    "youtube_id": "52k7r5A9tO0",
+    "title": "The Prescription of Understanding | Kosei Nakamura | TEDxMarunouchi",
+    "channel": "TEDx Talks",
+    "duration_seconds": 940
+  },
+  "caption_track": {
+    "language": "ja",
+    "kind": "asr",
+    "source": "youtube_automatic"
+  },
+  "source_playlist": "https://www.youtube.com/playlist?list=PLsRNoUx8w3rOHjXIU5EE4KOiIagv9yQaG",
+  "fetched_at": "2026-10-13T13:24:08.824785+00:00",
+  "segment_count": 116,
+  "segments": [
+    {
+      "text": "[音楽]",
+      "start_seconds": 9.825,
+      "end_seconds": 11.844999999999999,
+      "id": "52k7r5A9tO0-ja-0001",
+      "sequence": 1
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 13.755,
+      "end_seconds": 15.775,
+      "id": "52k7r5A9tO0-ja-0002",
+      "sequence": 2
+    },
+    {
+      "text": "6万人に1人日本にこれだけの患者さんしかい希少な病気があります。",
+      "start_seconds": 23.08,
+      "end_seconds": 32.759,
+      "id": "52k7r5A9tO0-ja-0003",
+      "sequence": 3
+    },
+    {
+      "text": "6万人に1人というと普通に生きていれば出会うことはほぼないでしょう。皆さんも出会うことはないと思います。",
+      "start_seconds": 32.759,
+      "end_seconds": 44.2,
+      "id": "52k7r5A9tO0-ja-0004",
+      "sequence": 4
+    },
+    {
+      "text": "その病気を表皮と言います。",
+      "start_seconds": 44.2,
+      "end_seconds": 49.48,
+      "id": "52k7r5A9tO0-ja-0005",
+      "sequence": 5
+    },
+    {
+      "text": "患者さんは自分の肌を腸の羽のように繊細な皮膚と言います。",
+      "start_seconds": 49.48,
+      "end_seconds": 56.76,
+      "id": "52k7r5A9tO0-ja-0006",
+      "sequence": 6
+    },
+    {
+      "text": "たったの物理的な刺激で皮膚が破れてめくれて痛みを伴います。",
+      "start_seconds": 56.76,
+      "end_seconds": 64.92,
+      "id": "52k7r5A9tO0-ja-0007",
+      "sequence": 7
+    },
+    {
+      "text": "皆さん自分の左手でグーのポーズをしてみてください。しっかり親指が立って指の間に溝があって爪があってパーをしようと思ったらいつでもできると思います。",
+      "start_seconds": 64.92,
+      "end_seconds": 76.799,
+      "id": "52k7r5A9tO0-ja-0008",
+      "sequence": 8
+    },
+    {
+      "text": "しかしこの病気の患者さんの左手はこんな感じです。",
+      "start_seconds": 76.799,
+      "end_seconds": 81.159,
+      "id": "52k7r5A9tO0-ja-0009",
+      "sequence": 9
+    },
+    {
+      "text": "指の間はありません。もちろん爪もありません。指がくっついてしまってパーもできません。スマホを打つだけで一生懸命です。",
+      "start_seconds": 81.159,
+      "end_seconds": 91.0,
+      "id": "52k7r5A9tO0-ja-0010",
+      "sequence": 10
+    },
+    {
+      "text": "皮膚の薄りと海洋、癒着再生。これを繰り返すことで徐々にこういった指になっていきます。足も同じような状況と思って",
+      "start_seconds": 91.0,
+      "end_seconds": 100.079,
+      "id": "52k7r5A9tO0-ja-0011",
+      "sequence": 11
+    },
+    {
+      "text": "もらって構いません。口の中もこのような状況です。",
+      "start_seconds": 100.079,
+      "end_seconds": 106.43900000000001,
+      "id": "52k7r5A9tO0-ja-0012",
+      "sequence": 12
+    },
+    {
+      "text": "こういった病気のお話になります。",
+      "start_seconds": 107.04,
+      "end_seconds": 111.68,
+      "id": "52k7r5A9tO0-ja-0013",
+      "sequence": 13
+    },
+    {
+      "text": "私は中村厚生と申します。今北海道で消化切議会として医師のトレーニングを積んでおります。",
+      "start_seconds": 113.04,
+      "end_seconds": 122.6,
+      "id": "52k7r5A9tO0-ja-0014",
+      "sequence": 14
+    },
+    {
+      "text": "各私も心臓に大きな病気を持って生まれてきました。",
+      "start_seconds": 122.6,
+      "end_seconds": 127.64,
+      "id": "52k7r5A9tO0-ja-0015",
+      "sequence": 15
+    },
+    {
+      "text": "今僕のこの胸には15cmほどの海の跡があります。2歳と3歳の時に2回人口心配に乗りました。",
+      "start_seconds": 127.64,
+      "end_seconds": 138.08,
+      "id": "52k7r5A9tO0-ja-0016",
+      "sequence": 16
+    },
+    {
+      "text": "でもなんとかたくさんの医療スタッフの皆様のおかげで僕は今この場に立つことができています。",
+      "start_seconds": 138.08,
+      "end_seconds": 145.959,
+      "id": "52k7r5A9tO0-ja-0017",
+      "sequence": 17
+    },
+    {
+      "text": "そして僕はなんとか病気を乗り越えて成長して中学生になった時にとあるドキュメンタリーに出会いました。",
+      "start_seconds": 146.16,
+      "end_seconds": 158.0,
+      "id": "52k7r5A9tO0-ja-0018",
+      "sequence": 18
+    },
+    {
+      "text": "家でテレビを見ていると確かロシア人の男の子だったと思いますが両親をエイズで失ってしまい、家もなく",
+      "start_seconds": 158.0,
+      "end_seconds": 167.56,
+      "id": "52k7r5A9tO0-ja-0019",
+      "sequence": 19
+    },
+    {
+      "text": "当てもなく1人で町を彷徨っているといったドキュメンタリーでした。",
+      "start_seconds": 167.56,
+      "end_seconds": 174.599,
+      "id": "52k7r5A9tO0-ja-0020",
+      "sequence": 20
+    },
+    {
+      "text": "中学生の僕は自分の胸の傷はたくさんの人のおかげでこうやって直してもらって今元気に生きて",
+      "start_seconds": 174.599,
+      "end_seconds": 183.519,
+      "id": "52k7r5A9tO0-ja-0021",
+      "sequence": 21
+    },
+    {
+      "text": "いる。でも同じくらいの年の彼は1人で親が亡くなってしまって町を彷徨っていると。",
+      "start_seconds": 183.519,
+      "end_seconds": 193.92,
+      "id": "52k7r5A9tO0-ja-0022",
+      "sequence": 22
+    },
+    {
+      "text": "この事実を知って私は医療の道に進もうと決めました。",
+      "start_seconds": 195.72,
+      "end_seconds": 202.599,
+      "id": "52k7r5A9tO0-ja-0023",
+      "sequence": 23
+    },
+    {
+      "text": "で、まず私は薬学部に進学をしました。",
+      "start_seconds": 202.599,
+      "end_seconds": 207.56,
+      "id": "52k7r5A9tO0-ja-0024",
+      "sequence": 24
+    },
+    {
+      "text": "薬学部に進学をして解剖学、生物学、テミストリーの科学、物理学、",
+      "start_seconds": 207.56,
+      "end_seconds": 217.439,
+      "id": "52k7r5A9tO0-ja-0025",
+      "sequence": 25
+    },
+    {
+      "text": "いろんな学問も覚めながら低分子の医薬品の有号性科学を先行していました。",
+      "start_seconds": 217.439,
+      "end_seconds": 226.159,
+      "id": "52k7r5A9tO0-ja-0026",
+      "sequence": 26
+    },
+    {
+      "text": "そんな中で僕が思ったのは",
+      "start_seconds": 226.159,
+      "end_seconds": 230.28,
+      "id": "52k7r5A9tO0-ja-0027",
+      "sequence": 27
+    },
+    {
+      "text": "実際にどういう人に薬を届けるのかが研究をしてる中でよく分からなくなりました。",
+      "start_seconds": 231.319,
+      "end_seconds": 240.79899999999998,
+      "id": "52k7r5A9tO0-ja-0028",
+      "sequence": 28
+    },
+    {
+      "text": "直せない病気がたくさんあって、そのために僕らは一生懸命研究をしている。でも誰の何をどうやって直してどうしたらみんな",
+      "start_seconds": 241.599,
+      "end_seconds": 252.599,
+      "id": "52k7r5A9tO0-ja-0029",
+      "sequence": 29
+    },
+    {
+      "text": "がその患者さんが喜んでくれるのか全く分からなくなってしまいました。",
+      "start_seconds": 252.599,
+      "end_seconds": 258.799,
+      "id": "52k7r5A9tO0-ja-0030",
+      "sequence": 30
+    },
+    {
+      "text": "そこでベッドサイド、いわゆる臨床の場所を見ることが非常に重要なんじゃないかと僕は感じて、当時役部の4年生の学生だっ",
+      "start_seconds": 258.799,
+      "end_seconds": 270.52,
+      "id": "52k7r5A9tO0-ja-0031",
+      "sequence": 31
+    },
+    {
+      "text": "たので、ベッドサイドに行く機会はなかったのですが、知り合いの杖を探してミヤンマーの方の病院に行くことができました。",
+      "start_seconds": 270.52,
+      "end_seconds": 281.08,
+      "id": "52k7r5A9tO0-ja-0032",
+      "sequence": 32
+    },
+    {
+      "text": "居酒屋でバイトした二を握りしめてミヤンマーのお寺を回送した貧困地域の病院で2週間ベッドサイドで実施をさせて",
+      "start_seconds": 281.08,
+      "end_seconds": 290.8,
+      "id": "52k7r5A9tO0-ja-0033",
+      "sequence": 33
+    },
+    {
+      "text": "いただきました。",
+      "start_seconds": 290.8,
+      "end_seconds": 293.72,
+      "id": "52k7r5A9tO0-ja-0034",
+      "sequence": 34
+    },
+    {
+      "text": "この男の子は日本では簡単に良くなるような病気で薬もなく治療法もなく医療スタッフもない中で長い投票生活を",
+      "start_seconds": 293.72,
+      "end_seconds": 304.68,
+      "id": "52k7r5A9tO0-ja-0035",
+      "sequence": 35
+    },
+    {
+      "text": "送っていました。",
+      "start_seconds": 304.68,
+      "end_seconds": 307.44,
+      "id": "52k7r5A9tO0-ja-0036",
+      "sequence": 36
+    },
+    {
+      "text": "また麻水薬の量も限られているので日本では全身麻酔で行うような手術も現地では極所麻酔で行っていました。",
+      "start_seconds": 307.44,
+      "end_seconds": 318.8,
+      "id": "52k7r5A9tO0-ja-0037",
+      "sequence": 37
+    },
+    {
+      "text": "最低限の麻酔しか使わないので手術室から患者さんの叫ぶ声が聞こえてくることもありました。",
+      "start_seconds": 318.8,
+      "end_seconds": 326.56,
+      "id": "52k7r5A9tO0-ja-0038",
+      "sequence": 38
+    },
+    {
+      "text": "でもこれがこの国の現実なんだという風に知りました。",
+      "start_seconds": 326.56,
+      "end_seconds": 334.96,
+      "id": "52k7r5A9tO0-ja-0039",
+      "sequence": 39
+    },
+    {
+      "text": "生まれた場所、時代、これが治る、治らないよう決定的に決めてしまう。",
+      "start_seconds": 336.44,
+      "end_seconds": 345.56,
+      "id": "52k7r5A9tO0-ja-0040",
+      "sequence": 40
+    },
+    {
+      "text": "おそらく僕がもっと昔生まれていたら僕はこの場所に立っていないと思います。多分",
+      "start_seconds": 345.56,
+      "end_seconds": 353.52,
+      "id": "52k7r5A9tO0-ja-0041",
+      "sequence": 41
+    },
+    {
+      "text": "大人になることはできなかったでしょう。",
+      "start_seconds": 353.52,
+      "end_seconds": 358.08,
+      "id": "52k7r5A9tO0-ja-0042",
+      "sequence": 42
+    },
+    {
+      "text": "こういった学然たる事実を学び、僕は意思になることを決めました。",
+      "start_seconds": 358.08,
+      "end_seconds": 366.919,
+      "id": "52k7r5A9tO0-ja-0043",
+      "sequence": 43
+    },
+    {
+      "text": "医学部に進学をして5年間学問を収めて医免許を取得しました。",
+      "start_seconds": 367.319,
+      "end_seconds": 376.36,
+      "id": "52k7r5A9tO0-ja-0044",
+      "sequence": 44
+    },
+    {
+      "text": "そしてこの5年間の中で先ほどお見せした左手の画像表皮水保障の患者さんと出会う",
+      "start_seconds": 376.36,
+      "end_seconds": 384.639,
+      "id": "52k7r5A9tO0-ja-0045",
+      "sequence": 45
+    },
+    {
+      "text": "ことになります。",
+      "start_seconds": 384.639,
+      "end_seconds": 388.40000000000003,
+      "id": "52k7r5A9tO0-ja-0046",
+      "sequence": 46
+    },
+    {
+      "text": "これが患者会に参加した時の写真です。",
+      "start_seconds": 389.8,
+      "end_seconds": 394.12,
+      "id": "52k7r5A9tO0-ja-0047",
+      "sequence": 47
+    },
+    {
+      "text": "この中には20名ほどの患者さんがいらっしゃいます。",
+      "start_seconds": 394.12,
+      "end_seconds": 400.319,
+      "id": "52k7r5A9tO0-ja-0048",
+      "sequence": 48
+    },
+    {
+      "text": "お子さん、大人の患者さん、そのご家族を含めていろんな人とお話をしました。食事も一緒に撮りました。レクリエーションも",
+      "start_seconds": 402.0,
+      "end_seconds": 412.84,
+      "id": "52k7r5A9tO0-ja-0049",
+      "sequence": 49
+    },
+    {
+      "text": "しました。",
+      "start_seconds": 412.84,
+      "end_seconds": 416.19899999999996,
+      "id": "52k7r5A9tO0-ja-0050",
+      "sequence": 50
+    },
+    {
+      "text": "その中で彼らもまず患者である前に1人の人間として普通",
+      "start_seconds": 416.84,
+      "end_seconds": 427.08,
+      "id": "52k7r5A9tO0-ja-0051",
+      "sequence": 51
+    },
+    {
+      "text": "に生きているということを知りました。",
+      "start_seconds": 427.08,
+      "end_seconds": 431.68,
+      "id": "52k7r5A9tO0-ja-0052",
+      "sequence": 52
+    },
+    {
+      "text": "僕はほとんどの時間を病院で過ごしてますから出会う人たちは患者さんという肩書きで接します。病院の外で出会うことは",
+      "start_seconds": 431.68,
+      "end_seconds": 441.039,
+      "id": "52k7r5A9tO0-ja-0053",
+      "sequence": 53
+    },
+    {
+      "text": "ほとんどありません。でもまだ意思でなかった。この時医学生であった僕は今よりもフラットな立場で",
+      "start_seconds": 441.039,
+      "end_seconds": 451.44,
+      "id": "52k7r5A9tO0-ja-0054",
+      "sequence": 54
+    },
+    {
+      "text": "表皮書の方々と知り合うことができました。そして子供たちとお菓子を食べたりとかする中でやはり",
+      "start_seconds": 451.44,
+      "end_seconds": 462.479,
+      "id": "52k7r5A9tO0-ja-0055",
+      "sequence": 55
+    },
+    {
+      "text": "食べることの制約非常に大きいなという風に感じました。",
+      "start_seconds": 462.479,
+      "end_seconds": 468.56,
+      "id": "52k7r5A9tO0-ja-0056",
+      "sequence": 56
+    },
+    {
+      "text": "この病気の患者さんたちは体も細くて小柄な子が多いです。",
+      "start_seconds": 468.56,
+      "end_seconds": 474.12,
+      "id": "52k7r5A9tO0-ja-0057",
+      "sequence": 57
+    },
+    {
+      "text": "それは圧倒的に摂取できるカロリーや栄養の量が少ないいうことが",
+      "start_seconds": 474.12,
+      "end_seconds": 482.879,
+      "id": "52k7r5A9tO0-ja-0058",
+      "sequence": 58
+    },
+    {
+      "text": "この子たちのために何かできないかと別に食品の専門でも全く何もありません。",
+      "start_seconds": 484.96,
+      "end_seconds": 491.96,
+      "id": "52k7r5A9tO0-ja-0059",
+      "sequence": 59
+    },
+    {
+      "text": "ただの1人の大学生、1人暮らしをしてる大学生です。そんな人間がまともな装置を持っているわけもなく、近くのスーパーに",
+      "start_seconds": 491.96,
+      "end_seconds": 502.12,
+      "id": "52k7r5A9tO0-ja-0060",
+      "sequence": 60
+    },
+    {
+      "text": "行っていろんな揚げ物子供たちが食べれないものをですね、買ってきてたまたまミキサーを持っていましたのでそこに水を入れてた焼きを入れてとりあえずミキサー",
+      "start_seconds": 502.12,
+      "end_seconds": 514.039,
+      "id": "52k7r5A9tO0-ja-0061",
+      "sequence": 61
+    },
+    {
+      "text": "をかけてみる。この写真は夜中の2時半に自分の家で撮ったことを今でも覚えています。",
+      "start_seconds": 514.039,
+      "end_seconds": 522.76,
+      "id": "52k7r5A9tO0-ja-0062",
+      "sequence": 62
+    },
+    {
+      "text": "で、これを自分で食べるわけですが、到て美味しいわけがありません。",
+      "start_seconds": 522.76,
+      "end_seconds": 528.56,
+      "id": "52k7r5A9tO0-ja-0063",
+      "sequence": 63
+    },
+    {
+      "text": "でもこういうのを食べてるのが現実なんです。",
+      "start_seconds": 528.56,
+      "end_seconds": 534.839,
+      "id": "52k7r5A9tO0-ja-0064",
+      "sequence": 64
+    },
+    {
+      "text": "冗談抜きで焼肉に水を混ぜてミキサにかけて彼らは食べています。",
+      "start_seconds": 535.279,
+      "end_seconds": 542.079,
+      "id": "52k7r5A9tO0-ja-0065",
+      "sequence": 65
+    },
+    {
+      "text": "こんなんでいいのかなと思ったんですけども、あ、ここにもっといい食品があるじゃないかということにいろんな思考錯誤してる僕は気づきまして、",
+      "start_seconds": 542.079,
+      "end_seconds": 553.279,
+      "id": "52k7r5A9tO0-ja-0066",
+      "sequence": 66
+    },
+    {
+      "text": "チョコレートに行きつきました。",
+      "start_seconds": 553.279,
+      "end_seconds": 556.56,
+      "id": "52k7r5A9tO0-ja-0067",
+      "sequence": 67
+    },
+    {
+      "text": "上温では固形ですが、口の中に入れれば噛まずともそのうち溶けていきます。",
+      "start_seconds": 556.56,
+      "end_seconds": 564.24,
+      "id": "52k7r5A9tO0-ja-0068",
+      "sequence": 68
+    },
+    {
+      "text": "こんなにいいものはないなと僕は思い、さらに彼らは圧倒的に栄養が足りてないですから。",
+      "start_seconds": 564.24,
+      "end_seconds": 572.519,
+      "id": "52k7r5A9tO0-ja-0069",
+      "sequence": 69
+    },
+    {
+      "text": "栄養豊富な食品を入れてあげるということも非常に利にかなっています。皮膚の先生ともご相談させていただきながら、またチョコレートの専門家とも相談をさせて",
+      "start_seconds": 572.519,
+      "end_seconds": 582.519,
+      "id": "52k7r5A9tO0-ja-0070",
+      "sequence": 70
+    },
+    {
+      "text": "いただきながら、アーモンドやチアシード、キナコ抹っ茶昆布など栄養の高いものをどうしたら美味しく取れるかというところ",
+      "start_seconds": 582.519,
+      "end_seconds": 591.68,
+      "id": "52k7r5A9tO0-ja-0071",
+      "sequence": 71
+    },
+    {
+      "text": "のギリギリを攻めて美味しいチョコレートを作ることにしました。",
+      "start_seconds": 591.68,
+      "end_seconds": 599.04,
+      "id": "52k7r5A9tO0-ja-0072",
+      "sequence": 72
+    },
+    {
+      "text": "で、このチョコレートをですね、先ほどの患者さんのとこに持っていくと、たくさんの子供たちが近づいてきて、わ、チョコレートだと美味しく食べてくれるわけです。",
+      "start_seconds": 599.04,
+      "end_seconds": 610.839,
+      "id": "52k7r5A9tO0-ja-0073",
+      "sequence": 73
+    },
+    {
+      "text": "こんなに嬉しいことはないし、彼らの笑顔が間近で見れることはこんなに楽しい、嬉しい。そんなことはないなという風に",
+      "start_seconds": 610.839,
+      "end_seconds": 620.04,
+      "id": "52k7r5A9tO0-ja-0074",
+      "sequence": 74
+    },
+    {
+      "text": "思いました。",
+      "start_seconds": 620.04,
+      "end_seconds": 623.48,
+      "id": "52k7r5A9tO0-ja-0075",
+      "sequence": 75
+    },
+    {
+      "text": "そしてこの男の子も病気を持っていて、手もなかなか使えない中、一生懸命絵を描いてくれて、彼の絵をパッケージにしめまし",
+      "start_seconds": 623.519,
+      "end_seconds": 633.959,
+      "id": "52k7r5A9tO0-ja-0076",
+      "sequence": 76
+    },
+    {
+      "text": "た。",
+      "start_seconds": 633.959,
+      "end_seconds": 636.12,
+      "id": "52k7r5A9tO0-ja-0077",
+      "sequence": 77
+    },
+    {
+      "text": "恐竜が大好きな彼の書いた恐竜をですね、パッケージの方として抜いて、普段",
+      "start_seconds": 636.12,
+      "end_seconds": 645.32,
+      "id": "52k7r5A9tO0-ja-0078",
+      "sequence": 78
+    },
+    {
+      "text": "パソコンもスマホもなかなか満足に指ですから、こんなに発信するデバイスが発展した世の中でもなかなか自分のことを伝えるということが難しいです。でもこの",
+      "start_seconds": 645.32,
+      "end_seconds": 657.079,
+      "id": "52k7r5A9tO0-ja-0079",
+      "sequence": 79
+    },
+    {
+      "text": "パッケージを世の中に届けていろんな人から反響があってこの前彼と電話をしたらこんなに嬉しいことはないと自分の書いたものがみんなが見てくれてる。こんなに",
+      "start_seconds": 657.079,
+      "end_seconds": 668.48,
+      "id": "52k7r5A9tO0-ja-0080",
+      "sequence": 80
+    },
+    {
+      "text": "嬉しいことはないという風に電話越しに言ってくれました。",
+      "start_seconds": 668.48,
+      "end_seconds": 673.9590000000001,
+      "id": "52k7r5A9tO0-ja-0081",
+      "sequence": 81
+    },
+    {
+      "text": "そしてこの女の子も表皮を持っています。",
+      "start_seconds": 674.8,
+      "end_seconds": 678.079,
+      "id": "52k7r5A9tO0-ja-0082",
+      "sequence": 82
+    },
+    {
+      "text": "お兄ちゃんはこの病気を持っていません。",
+      "start_seconds": 678.079,
+      "end_seconds": 681.399,
+      "id": "52k7r5A9tO0-ja-0083",
+      "sequence": 83
+    },
+    {
+      "text": "この子普段は特別な食事を食べています。",
+      "start_seconds": 681.399,
+      "end_seconds": 684.92,
+      "id": "52k7r5A9tO0-ja-0084",
+      "sequence": 84
+    },
+    {
+      "text": "でもご自宅にチョコレートを持っていった時はお兄さんと争う家のように食べていました。結局チョコレートを通して栄養を",
+      "start_seconds": 684.92,
+      "end_seconds": 693.76,
+      "id": "52k7r5A9tO0-ja-0085",
+      "sequence": 85
+    },
+    {
+      "text": "届けるというのは最低限のことであって、これをパキッと割って誰かと一緒に食べる。その空間を共有する。",
+      "start_seconds": 693.76,
+      "end_seconds": 703.04,
+      "id": "52k7r5A9tO0-ja-0086",
+      "sequence": 86
+    },
+    {
+      "text": "コミュニケーションとして空間を作る。",
+      "start_seconds": 703.04,
+      "end_seconds": 706.44,
+      "id": "52k7r5A9tO0-ja-0087",
+      "sequence": 87
+    },
+    {
+      "text": "そういった部分も大事にしていたので、まさにお家の中でお子さん2人がその場を作ってくれたということは僕にとって非常に嬉しい事実",
+      "start_seconds": 706.44,
+      "end_seconds": 717.519,
+      "id": "52k7r5A9tO0-ja-0088",
+      "sequence": 88
+    },
+    {
+      "text": "でした。",
+      "start_seconds": 717.519,
+      "end_seconds": 720.76,
+      "id": "52k7r5A9tO0-ja-0089",
+      "sequence": 89
+    },
+    {
+      "text": "先ほどイラストを書いてくれた男の子ですが、彼の将来の夢はマンモスを蘇らせること。",
+      "start_seconds": 723.32,
+      "end_seconds": 733.399,
+      "id": "52k7r5A9tO0-ja-0090",
+      "sequence": 90
+    },
+    {
+      "text": "高校学者になりたいと強く言ってくれました。もう",
+      "start_seconds": 733.399,
+      "end_seconds": 736.399,
+      "id": "52k7r5A9tO0-ja-0091",
+      "sequence": 91
+    },
+    {
+      "text": "1人の赤いジャージを着た男の子。この子は消防隊になりたい。救急車や消防者が大好きだという風に言ってくれました。",
+      "start_seconds": 738.88,
+      "end_seconds": 742.0,
+      "id": "52k7r5A9tO0-ja-0092",
+      "sequence": 92
+    },
+    {
+      "text": "しかし事実として彼らに身体的なハンディキャップがあるのは紛れもない事実ではあります。",
+      "start_seconds": 751.88,
+      "end_seconds": 754.88,
+      "id": "52k7r5A9tO0-ja-0093",
+      "sequence": 93
+    },
+    {
+      "text": "でも彼らのそういった夢をサポートしてあげるのが我々のやるべきことではないかなと",
+      "start_seconds": 764.16,
+      "end_seconds": 773.48,
+      "id": "52k7r5A9tO0-ja-0094",
+      "sequence": 94
+    },
+    {
+      "text": "いう風に思っています。でも先ほどお話しした通り6万人に1人しかいませんから普通にしていては絶対社会は見てくれない",
+      "start_seconds": 773.48,
+      "end_seconds": 783.839,
+      "id": "52k7r5A9tO0-ja-0095",
+      "sequence": 95
+    },
+    {
+      "text": "と。",
+      "start_seconds": 783.839,
+      "end_seconds": 786.9590000000001,
+      "id": "52k7r5A9tO0-ja-0096",
+      "sequence": 96
+    },
+    {
+      "text": "それは僕は医療に携わるものとして理解していたので、このチョコレートというものを通して",
+      "start_seconds": 787.24,
+      "end_seconds": 798.12,
+      "id": "52k7r5A9tO0-ja-0097",
+      "sequence": 97
+    },
+    {
+      "text": "自然な形で世の中に発信をして理解をしてもらう。そして1周回って、あ、こんな病気があるんだと世の中が理解をしてくれ",
+      "start_seconds": 798.12,
+      "end_seconds": 808.16,
+      "id": "52k7r5A9tO0-ja-0098",
+      "sequence": 98
+    },
+    {
+      "text": "て彼らの未来につがっていく。",
+      "start_seconds": 808.16,
+      "end_seconds": 812.04,
+      "id": "52k7r5A9tO0-ja-0099",
+      "sequence": 99
+    },
+    {
+      "text": "もしかしたら週明け皆さんが職場に行ったらお客様として",
+      "start_seconds": 812.04,
+      "end_seconds": 822.12,
+      "id": "52k7r5A9tO0-ja-0100",
+      "sequence": 100
+    },
+    {
+      "text": "この患者さんたちが来るかもしれません。",
+      "start_seconds": 822.12,
+      "end_seconds": 824.839,
+      "id": "52k7r5A9tO0-ja-0101",
+      "sequence": 101
+    },
+    {
+      "text": "来年の就職活動面接で彼らが新卒として面接に来るかもしれません。",
+      "start_seconds": 824.839,
+      "end_seconds": 833.44,
+      "id": "52k7r5A9tO0-ja-0102",
+      "sequence": 102
+    },
+    {
+      "text": "その時にできないことを見るのではなくて、彼らも1人の人間として一生懸命生きている",
+      "start_seconds": 833.44,
+      "end_seconds": 843.92,
+      "id": "52k7r5A9tO0-ja-0103",
+      "sequence": 103
+    },
+    {
+      "text": "いうところをまず見ていただけたら僕は非常に嬉しいです。",
+      "start_seconds": 843.92,
+      "end_seconds": 848.959,
+      "id": "52k7r5A9tO0-ja-0104",
+      "sequence": 104
+    },
+    {
+      "text": "そして僕は残念ながらほとんどの時間を病院で過ごしてます。",
+      "start_seconds": 848.959,
+      "end_seconds": 857.56,
+      "id": "52k7r5A9tO0-ja-0105",
+      "sequence": 105
+    },
+    {
+      "text": "なので、こういった場所でこういったお話をさせていただく機会はほとんどありません。",
+      "start_seconds": 860.48,
+      "end_seconds": 867.88,
+      "id": "52k7r5A9tO0-ja-0106",
+      "sequence": 106
+    },
+    {
+      "text": "だから是非今日はこの場所に来ていたいただいた皆さんにこの病気だけで出なくても構いません。",
+      "start_seconds": 867.88,
+      "end_seconds": 878.399,
+      "id": "52k7r5A9tO0-ja-0107",
+      "sequence": 107
+    },
+    {
+      "text": "いろんな大変な病気があるんだよと。",
+      "start_seconds": 878.399,
+      "end_seconds": 880.639,
+      "id": "52k7r5A9tO0-ja-0108",
+      "sequence": 108
+    },
+    {
+      "text": "そして一歩待ちを歩けばもしかしたら自分もどこか出会うかもしれない。",
+      "start_seconds": 880.639,
+      "end_seconds": 886.72,
+      "id": "52k7r5A9tO0-ja-0109",
+      "sequence": 109
+    },
+    {
+      "text": "そういったアンテナを1本だけでもいいので立てていただいて僕が病院にいる代わりに社会の中で",
+      "start_seconds": 886.72,
+      "end_seconds": 897.44,
+      "id": "52k7r5A9tO0-ja-0110",
+      "sequence": 110
+    },
+    {
+      "text": "気を配っていただけたら非常に嬉しいなという風に思います。",
+      "start_seconds": 897.44,
+      "end_seconds": 903.56,
+      "id": "52k7r5A9tO0-ja-0111",
+      "sequence": 111
+    },
+    {
+      "text": "医療者だけではできないことがたくさんあります。",
+      "start_seconds": 903.56,
+      "end_seconds": 909.079,
+      "id": "52k7r5A9tO0-ja-0112",
+      "sequence": 112
+    },
+    {
+      "text": "だから社会全体としてこういった子たちをサポートしていただける仲間になっていただけたら",
+      "start_seconds": 909.079,
+      "end_seconds": 919.279,
+      "id": "52k7r5A9tO0-ja-0113",
+      "sequence": 113
+    },
+    {
+      "text": "意思である私としてこんなに嬉しいことはありません。",
+      "start_seconds": 921.04,
+      "end_seconds": 925.759,
+      "id": "52k7r5A9tO0-ja-0114",
+      "sequence": 114
+    },
+    {
+      "text": "是非仲間になっていただけたらありがたいです。ご清聴ありがとうございました。",
+      "start_seconds": 925.759,
+      "end_seconds": 931.42,
+      "id": "52k7r5A9tO0-ja-0115",
+      "sequence": 115
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 931.42,
+      "end_seconds": 933.4399999999999,
+      "id": "52k7r5A9tO0-ja-0116",
+      "sequence": 116
+    }
+  ],
+  "raw_captions": [
+    {
+      "text": "[音楽]",
+      "start_seconds": 9.825,
+      "end_seconds": 11.844999999999999
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 13.755,
+      "end_seconds": 15.775
+    },
+    {
+      "text": "6万人に1人",
+      "start_seconds": 23.08,
+      "end_seconds": 29.56
+    },
+    {
+      "text": "日本にこれだけの患者さんしかい",
+      "start_seconds": 26.56,
+      "end_seconds": 32.759
+    },
+    {
+      "text": "希少な病気があります。",
+      "start_seconds": 29.56,
+      "end_seconds": 36.92
+    },
+    {
+      "text": "6万人に1人というと普通に生きていれば",
+      "start_seconds": 32.759,
+      "end_seconds": 40.92
+    },
+    {
+      "text": "出会うことはほぼないでしょう。皆さんも",
+      "start_seconds": 36.92,
+      "end_seconds": 44.2
+    },
+    {
+      "text": "出会うことはないと思います。",
+      "start_seconds": 40.92,
+      "end_seconds": 49.480000000000004
+    },
+    {
+      "text": "その病気を表皮と言います。",
+      "start_seconds": 44.2,
+      "end_seconds": 53.440000000000005
+    },
+    {
+      "text": "患者さんは自分の肌を腸の羽のように繊細",
+      "start_seconds": 49.48,
+      "end_seconds": 56.76
+    },
+    {
+      "text": "な皮膚と言います。",
+      "start_seconds": 53.44,
+      "end_seconds": 60.718999999999994
+    },
+    {
+      "text": "たったの物理的な刺激で皮膚が破れて",
+      "start_seconds": 56.76,
+      "end_seconds": 64.92
+    },
+    {
+      "text": "めくれて痛みを伴います。",
+      "start_seconds": 60.719,
+      "end_seconds": 67.52
+    },
+    {
+      "text": "皆さん自分の左手でグーのポーズをしてみ",
+      "start_seconds": 64.92,
+      "end_seconds": 70.84
+    },
+    {
+      "text": "てください。しっかり親指が立って指の間",
+      "start_seconds": 67.52,
+      "end_seconds": 73.67999999999999
+    },
+    {
+      "text": "に溝があって爪があってパーをしようと",
+      "start_seconds": 70.84,
+      "end_seconds": 76.799
+    },
+    {
+      "text": "思ったらいつでもできると思います。",
+      "start_seconds": 73.68,
+      "end_seconds": 79.2
+    },
+    {
+      "text": "しかしこの病気の患者さんの左手はこんな",
+      "start_seconds": 76.799,
+      "end_seconds": 81.159
+    },
+    {
+      "text": "感じです。",
+      "start_seconds": 79.2,
+      "end_seconds": 83.759
+    },
+    {
+      "text": "指の間はありません。もちろん爪もあり",
+      "start_seconds": 81.159,
+      "end_seconds": 86.60000000000001
+    },
+    {
+      "text": "ません。指がくっついてしまってパーも",
+      "start_seconds": 83.759,
+      "end_seconds": 89.159
+    },
+    {
+      "text": "できません。スマホを打つだけで一生懸命",
+      "start_seconds": 86.6,
+      "end_seconds": 91.0
+    },
+    {
+      "text": "です。",
+      "start_seconds": 89.159,
+      "end_seconds": 95.2
+    },
+    {
+      "text": "皮膚の薄りと海洋、癒着再生。これを",
+      "start_seconds": 91.0,
+      "end_seconds": 97.399
+    },
+    {
+      "text": "繰り返すことで徐々にこういった指になっ",
+      "start_seconds": 95.2,
+      "end_seconds": 100.07900000000001
+    },
+    {
+      "text": "ていきます。足も同じような状況と思って",
+      "start_seconds": 97.399,
+      "end_seconds": 103.04
+    },
+    {
+      "text": "もらって構いません。口の中もこのような",
+      "start_seconds": 100.079,
+      "end_seconds": 106.439
+    },
+    {
+      "text": "状況です。",
+      "start_seconds": 103.04,
+      "end_seconds": 106.43900000000001
+    },
+    {
+      "text": "こういった病気のお話になります。",
+      "start_seconds": 107.04,
+      "end_seconds": 111.68
+    },
+    {
+      "text": "私は中村厚生と申します。今北海道で消化",
+      "start_seconds": 113.04,
+      "end_seconds": 120.68
+    },
+    {
+      "text": "切議会として医師のトレーニングを積んで",
+      "start_seconds": 117.84,
+      "end_seconds": 122.60000000000001
+    },
+    {
+      "text": "おります。",
+      "start_seconds": 120.68,
+      "end_seconds": 125.68
+    },
+    {
+      "text": "各私も心臓に大きな病気を持って生まれて",
+      "start_seconds": 122.6,
+      "end_seconds": 127.64
+    },
+    {
+      "text": "きました。",
+      "start_seconds": 125.68,
+      "end_seconds": 131.16
+    },
+    {
+      "text": "今僕のこの胸には15cmほどの海の跡が",
+      "start_seconds": 127.64,
+      "end_seconds": 135.239
+    },
+    {
+      "text": "あります。2歳と3歳の時に2回人口心配",
+      "start_seconds": 131.16,
+      "end_seconds": 138.07999999999998
+    },
+    {
+      "text": "に乗りました。",
+      "start_seconds": 135.239,
+      "end_seconds": 140.08
+    },
+    {
+      "text": "でもなんとかたくさんの医療スタッフの皆",
+      "start_seconds": 138.08,
+      "end_seconds": 142.48000000000002
+    },
+    {
+      "text": "様のおかげで僕は今この場に立つことが",
+      "start_seconds": 140.08,
+      "end_seconds": 145.959
+    },
+    {
+      "text": "できています。",
+      "start_seconds": 142.48,
+      "end_seconds": 145.959
+    },
+    {
+      "text": "そして僕はなんとか病気を乗り越えて成長",
+      "start_seconds": 146.16,
+      "end_seconds": 152.76
+    },
+    {
+      "text": "して",
+      "start_seconds": 150.239,
+      "end_seconds": 155.239
+    },
+    {
+      "text": "中学生になった時にとある",
+      "start_seconds": 152.76,
+      "end_seconds": 158.0
+    },
+    {
+      "text": "ドキュメンタリーに出会いました。",
+      "start_seconds": 155.239,
+      "end_seconds": 160.8
+    },
+    {
+      "text": "家でテレビを見ていると",
+      "start_seconds": 158.0,
+      "end_seconds": 164.519
+    },
+    {
+      "text": "確かロシア人の男の子だったと思いますが",
+      "start_seconds": 160.8,
+      "end_seconds": 167.56
+    },
+    {
+      "text": "両親をエイズで失ってしまい、家もなく",
+      "start_seconds": 164.519,
+      "end_seconds": 171.8
+    },
+    {
+      "text": "当てもなく1人で町を彷徨っているといっ",
+      "start_seconds": 167.56,
+      "end_seconds": 174.599
+    },
+    {
+      "text": "たドキュメンタリーでした。",
+      "start_seconds": 171.8,
+      "end_seconds": 177.64000000000001
+    },
+    {
+      "text": "中学生の僕は",
+      "start_seconds": 174.599,
+      "end_seconds": 181.04
+    },
+    {
+      "text": "自分の胸の傷はたくさんの人のおかげで",
+      "start_seconds": 177.64,
+      "end_seconds": 183.51899999999998
+    },
+    {
+      "text": "こうやって直してもらって今元気に生きて",
+      "start_seconds": 181.04,
+      "end_seconds": 188.76
+    },
+    {
+      "text": "いる。でも同じくらいの年の彼は1人で親",
+      "start_seconds": 183.519,
+      "end_seconds": 190.92000000000002
+    },
+    {
+      "text": "が亡くなってしまって町を彷徨っていると",
+      "start_seconds": 188.76,
+      "end_seconds": 193.92
+    },
+    {
+      "text": "。",
+      "start_seconds": 190.92,
+      "end_seconds": 193.92
+    },
+    {
+      "text": "この事実を知って私は医療の道に進もうと",
+      "start_seconds": 195.72,
+      "end_seconds": 202.599
+    },
+    {
+      "text": "決めました。",
+      "start_seconds": 199.12,
+      "end_seconds": 207.56
+    },
+    {
+      "text": "で、まず私は薬学部に進学をしました。",
+      "start_seconds": 202.599,
+      "end_seconds": 210.959
+    },
+    {
+      "text": "薬学部に進学をして",
+      "start_seconds": 207.56,
+      "end_seconds": 213.28
+    },
+    {
+      "text": "解剖学、",
+      "start_seconds": 210.959,
+      "end_seconds": 217.439
+    },
+    {
+      "text": "生物学、テミストリーの科学、物理学、",
+      "start_seconds": 213.28,
+      "end_seconds": 220.0
+    },
+    {
+      "text": "いろんな学問も覚めながら",
+      "start_seconds": 217.439,
+      "end_seconds": 223.319
+    },
+    {
+      "text": "低分子の医薬品の有号性科学を先行してい",
+      "start_seconds": 220.0,
+      "end_seconds": 226.159
+    },
+    {
+      "text": "ました。",
+      "start_seconds": 223.319,
+      "end_seconds": 230.28
+    },
+    {
+      "text": "そんな中で僕が思ったのは",
+      "start_seconds": 226.159,
+      "end_seconds": 230.28
+    },
+    {
+      "text": "実際に",
+      "start_seconds": 231.319,
+      "end_seconds": 235.879
+    },
+    {
+      "text": "どういう人に薬を届けるのかが研究をし",
+      "start_seconds": 233.36,
+      "end_seconds": 240.799
+    },
+    {
+      "text": "てる中でよく分からなくなりました。",
+      "start_seconds": 235.879,
+      "end_seconds": 240.79899999999998
+    },
+    {
+      "text": "直せない病気がたくさんあって、そのため",
+      "start_seconds": 241.599,
+      "end_seconds": 248.51899999999998
+    },
+    {
+      "text": "に僕らは一生懸命研究をしている。でも誰",
+      "start_seconds": 243.879,
+      "end_seconds": 252.599
+    },
+    {
+      "text": "の何をどうやって直してどうしたらみんな",
+      "start_seconds": 248.519,
+      "end_seconds": 256.0
+    },
+    {
+      "text": "がその患者さんが喜んでくれるのか全く",
+      "start_seconds": 252.599,
+      "end_seconds": 258.799
+    },
+    {
+      "text": "分からなくなってしまいました。",
+      "start_seconds": 256.0,
+      "end_seconds": 262.44
+    },
+    {
+      "text": "そこでベッドサイド、いわゆる臨床の場所",
+      "start_seconds": 258.799,
+      "end_seconds": 265.96
+    },
+    {
+      "text": "を見ることが非常に重要なんじゃないかと",
+      "start_seconds": 262.44,
+      "end_seconds": 270.52
+    },
+    {
+      "text": "僕は感じて、当時役部の4年生の学生だっ",
+      "start_seconds": 265.96,
+      "end_seconds": 273.039
+    },
+    {
+      "text": "たので、ベッドサイドに行く機会はなかっ",
+      "start_seconds": 270.52,
+      "end_seconds": 276.24
+    },
+    {
+      "text": "たのですが、知り合いの杖を探して",
+      "start_seconds": 273.039,
+      "end_seconds": 278.15999999999997
+    },
+    {
+      "text": "ミヤンマーの方の病院に行くことができ",
+      "start_seconds": 276.24,
+      "end_seconds": 281.08
+    },
+    {
+      "text": "ました。",
+      "start_seconds": 278.16,
+      "end_seconds": 283.8
+    },
+    {
+      "text": "居酒屋でバイトした二を握りしめて",
+      "start_seconds": 281.08,
+      "end_seconds": 287.479
+    },
+    {
+      "text": "ミヤンマーのお寺を回送した貧困地域の",
+      "start_seconds": 283.8,
+      "end_seconds": 290.8
+    },
+    {
+      "text": "病院で2週間ベッドサイドで実施をさせて",
+      "start_seconds": 287.479,
+      "end_seconds": 293.71999999999997
+    },
+    {
+      "text": "いただきました。",
+      "start_seconds": 290.8,
+      "end_seconds": 296.56
+    },
+    {
+      "text": "この男の子は日本では簡単に良くなるよう",
+      "start_seconds": 293.72,
+      "end_seconds": 302.12
+    },
+    {
+      "text": "な病気で薬もなく治療法もなく",
+      "start_seconds": 296.56,
+      "end_seconds": 304.68
+    },
+    {
+      "text": "医療スタッフもない中で長い投票生活を",
+      "start_seconds": 302.12,
+      "end_seconds": 307.44
+    },
+    {
+      "text": "送っていました。",
+      "start_seconds": 304.68,
+      "end_seconds": 309.96
+    },
+    {
+      "text": "また",
+      "start_seconds": 307.44,
+      "end_seconds": 313.16
+    },
+    {
+      "text": "麻水薬の量も限られているので日本では",
+      "start_seconds": 309.96,
+      "end_seconds": 316.23999999999995
+    },
+    {
+      "text": "全身麻酔で行うような手術も現地では極所",
+      "start_seconds": 313.16,
+      "end_seconds": 318.8
+    },
+    {
+      "text": "麻酔で行っていました。",
+      "start_seconds": 316.24,
+      "end_seconds": 322.319
+    },
+    {
+      "text": "最低限の麻酔しか使わないので手術室から",
+      "start_seconds": 318.8,
+      "end_seconds": 324.639
+    },
+    {
+      "text": "患者さんの叫ぶ声が聞こえてくることも",
+      "start_seconds": 322.319,
+      "end_seconds": 326.56
+    },
+    {
+      "text": "ありました。",
+      "start_seconds": 324.639,
+      "end_seconds": 331.479
+    },
+    {
+      "text": "でもこれがこの国の現実なんだという風に",
+      "start_seconds": 326.56,
+      "end_seconds": 334.96
+    },
+    {
+      "text": "知りました。",
+      "start_seconds": 331.479,
+      "end_seconds": 334.96
+    },
+    {
+      "text": "生まれた場所、時代、これが治る、治ら",
+      "start_seconds": 336.44,
+      "end_seconds": 345.56
+    },
+    {
+      "text": "ないよう決定的に決めてしまう。",
+      "start_seconds": 341.479,
+      "end_seconds": 350.36
+    },
+    {
+      "text": "おそらく僕がもっと昔生まれていたら僕は",
+      "start_seconds": 345.56,
+      "end_seconds": 353.52
+    },
+    {
+      "text": "この場所に立っていないと思います。多分",
+      "start_seconds": 350.36,
+      "end_seconds": 358.08000000000004
+    },
+    {
+      "text": "大人になることはできなかったでしょう。",
+      "start_seconds": 353.52,
+      "end_seconds": 362.88
+    },
+    {
+      "text": "こういった学然たる事実を学び、僕は意思",
+      "start_seconds": 358.08,
+      "end_seconds": 366.919
+    },
+    {
+      "text": "になることを決めました。",
+      "start_seconds": 362.88,
+      "end_seconds": 366.919
+    },
+    {
+      "text": "医学部に進学をして5年間学問を収めて医",
+      "start_seconds": 367.319,
+      "end_seconds": 376.36
+    },
+    {
+      "text": "免許を取得しました。",
+      "start_seconds": 372.639,
+      "end_seconds": 380.44
+    },
+    {
+      "text": "そしてこの5年間の中で先ほどお見せした",
+      "start_seconds": 376.36,
+      "end_seconds": 384.639
+    },
+    {
+      "text": "左手の画像表皮水保障の患者さんと出会う",
+      "start_seconds": 380.44,
+      "end_seconds": 388.4
+    },
+    {
+      "text": "ことになります。",
+      "start_seconds": 384.639,
+      "end_seconds": 388.40000000000003
+    },
+    {
+      "text": "これが患者会に参加した時の写真です。",
+      "start_seconds": 389.8,
+      "end_seconds": 396.759
+    },
+    {
+      "text": "この中には20名ほどの患者さんが",
+      "start_seconds": 394.12,
+      "end_seconds": 400.319
+    },
+    {
+      "text": "いらっしゃいます。",
+      "start_seconds": 396.759,
+      "end_seconds": 400.319
+    },
+    {
+      "text": "お子さん、大人の患者さん、そのご家族を",
+      "start_seconds": 402.0,
+      "end_seconds": 410.44
+    },
+    {
+      "text": "含めていろんな人とお話をしました。食事",
+      "start_seconds": 405.88,
+      "end_seconds": 412.84
+    },
+    {
+      "text": "も一緒に撮りました。レクリエーションも",
+      "start_seconds": 410.44,
+      "end_seconds": 416.199
+    },
+    {
+      "text": "しました。",
+      "start_seconds": 412.84,
+      "end_seconds": 416.19899999999996
+    },
+    {
+      "text": "その中で",
+      "start_seconds": 416.84,
+      "end_seconds": 422.31899999999996
+    },
+    {
+      "text": "彼らも",
+      "start_seconds": 419.56,
+      "end_seconds": 427.08
+    },
+    {
+      "text": "まず患者である前に1人の人間として普通",
+      "start_seconds": 422.319,
+      "end_seconds": 431.68
+    },
+    {
+      "text": "に生きているということを知りました。",
+      "start_seconds": 427.08,
+      "end_seconds": 433.479
+    },
+    {
+      "text": "僕はほとんどの時間を病院で過ごしてます",
+      "start_seconds": 431.68,
+      "end_seconds": 435.08
+    },
+    {
+      "text": "から",
+      "start_seconds": 433.479,
+      "end_seconds": 438.44
+    },
+    {
+      "text": "出会う人たちは患者さんという肩書きで",
+      "start_seconds": 435.08,
+      "end_seconds": 441.039
+    },
+    {
+      "text": "接します。病院の外で出会うことは",
+      "start_seconds": 438.44,
+      "end_seconds": 444.84
+    },
+    {
+      "text": "ほとんどありません。でもまだ意思で",
+      "start_seconds": 441.039,
+      "end_seconds": 448.599
+    },
+    {
+      "text": "なかった。この時医学生であった僕は今",
+      "start_seconds": 444.84,
+      "end_seconds": 451.44
+    },
+    {
+      "text": "よりもフラットな立場で",
+      "start_seconds": 448.599,
+      "end_seconds": 453.639
+    },
+    {
+      "text": "表皮書の方々と知り合うことができました",
+      "start_seconds": 451.44,
+      "end_seconds": 458.28
+    },
+    {
+      "text": "。そして子供たちとお菓子を食べたりとか",
+      "start_seconds": 453.639,
+      "end_seconds": 460.68
+    },
+    {
+      "text": "する中で",
+      "start_seconds": 458.28,
+      "end_seconds": 462.479
+    },
+    {
+      "text": "やはり",
+      "start_seconds": 460.68,
+      "end_seconds": 465.479
+    },
+    {
+      "text": "食べることの制約非常に大きいなという風",
+      "start_seconds": 462.479,
+      "end_seconds": 468.56
+    },
+    {
+      "text": "に感じました。",
+      "start_seconds": 465.479,
+      "end_seconds": 471.71999999999997
+    },
+    {
+      "text": "この病気の患者さんたちは体も細くて小柄",
+      "start_seconds": 468.56,
+      "end_seconds": 474.12
+    },
+    {
+      "text": "な子が多いです。",
+      "start_seconds": 471.72,
+      "end_seconds": 478.319
+    },
+    {
+      "text": "それは圧倒的に摂取できるカロリーや栄養",
+      "start_seconds": 474.12,
+      "end_seconds": 482.879
+    },
+    {
+      "text": "の量が少ないいうことが",
+      "start_seconds": 478.319,
+      "end_seconds": 482.879
+    },
+    {
+      "text": "この子たちのために何かできないかと",
+      "start_seconds": 484.96,
+      "end_seconds": 491.96
+    },
+    {
+      "text": "別に食品の専門でも全く何もありません。",
+      "start_seconds": 488.639,
+      "end_seconds": 495.8
+    },
+    {
+      "text": "ただの1人の大学生、1人暮らしをしてる",
+      "start_seconds": 491.96,
+      "end_seconds": 499.12
+    },
+    {
+      "text": "大学生です。そんな人間がまともな装置を",
+      "start_seconds": 495.8,
+      "end_seconds": 502.12
+    },
+    {
+      "text": "持っているわけもなく、近くのスーパーに",
+      "start_seconds": 499.12,
+      "end_seconds": 505.28000000000003
+    },
+    {
+      "text": "行っていろんな揚げ物子供たちが食べれ",
+      "start_seconds": 502.12,
+      "end_seconds": 508.159
+    },
+    {
+      "text": "ないものをですね、買ってきてたまたま",
+      "start_seconds": 505.28,
+      "end_seconds": 510.52
+    },
+    {
+      "text": "ミキサーを持っていましたのでそこに水を",
+      "start_seconds": 508.159,
+      "end_seconds": 514.039
+    },
+    {
+      "text": "入れてた焼きを入れてとりあえずミキサー",
+      "start_seconds": 510.52,
+      "end_seconds": 518.7189999999999
+    },
+    {
+      "text": "をかけてみる。この写真は夜中の2時半に",
+      "start_seconds": 514.039,
+      "end_seconds": 520.959
+    },
+    {
+      "text": "自分の家で撮ったことを今でも覚えてい",
+      "start_seconds": 518.719,
+      "end_seconds": 522.7600000000001
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 520.959,
+      "end_seconds": 525.92
+    },
+    {
+      "text": "で、これを自分で食べるわけですが、到て",
+      "start_seconds": 522.76,
+      "end_seconds": 528.56
+    },
+    {
+      "text": "美味しいわけがありません。",
+      "start_seconds": 525.92,
+      "end_seconds": 531.7199999999999
+    },
+    {
+      "text": "でもこういうのを食べてるのが現実なん",
+      "start_seconds": 528.56,
+      "end_seconds": 534.8389999999999
+    },
+    {
+      "text": "です。",
+      "start_seconds": 531.72,
+      "end_seconds": 534.839
+    },
+    {
+      "text": "冗談抜きで焼肉に水を混ぜてミキサにかけ",
+      "start_seconds": 535.279,
+      "end_seconds": 542.079
+    },
+    {
+      "text": "て彼らは食べています。",
+      "start_seconds": 539.079,
+      "end_seconds": 544.56
+    },
+    {
+      "text": "こんなんでいいのかなと思ったんですけど",
+      "start_seconds": 542.079,
+      "end_seconds": 547.92
+    },
+    {
+      "text": "も、あ、ここにもっといい食品があるじゃ",
+      "start_seconds": 544.56,
+      "end_seconds": 550.5999999999999
+    },
+    {
+      "text": "ないかということにいろんな思考錯誤し",
+      "start_seconds": 547.92,
+      "end_seconds": 553.279
+    },
+    {
+      "text": "てる僕は気づきまして、",
+      "start_seconds": 550.6,
+      "end_seconds": 556.5600000000001
+    },
+    {
+      "text": "チョコレートに行きつきました。",
+      "start_seconds": 553.279,
+      "end_seconds": 560.76
+    },
+    {
+      "text": "上温では固形ですが、口の中に入れれば",
+      "start_seconds": 556.56,
+      "end_seconds": 564.2399999999999
+    },
+    {
+      "text": "噛まずともそのうち溶けていきます。",
+      "start_seconds": 560.76,
+      "end_seconds": 568.079
+    },
+    {
+      "text": "こんなにいいものはないなと僕は思い、",
+      "start_seconds": 564.24,
+      "end_seconds": 570.64
+    },
+    {
+      "text": "さらに彼らは圧倒的に栄養が足りてない",
+      "start_seconds": 568.079,
+      "end_seconds": 572.519
+    },
+    {
+      "text": "ですから。",
+      "start_seconds": 570.64,
+      "end_seconds": 574.16
+    },
+    {
+      "text": "栄養豊富な食品を入れてあげるということ",
+      "start_seconds": 572.519,
+      "end_seconds": 577.839
+    },
+    {
+      "text": "も非常に利にかなっています。皮膚の先生",
+      "start_seconds": 574.16,
+      "end_seconds": 580.64
+    },
+    {
+      "text": "ともご相談させていただきながら、また",
+      "start_seconds": 577.839,
+      "end_seconds": 582.519
+    },
+    {
+      "text": "チョコレートの専門家とも相談をさせて",
+      "start_seconds": 580.64,
+      "end_seconds": 585.12
+    },
+    {
+      "text": "いただきながら、アーモンドやチアシード",
+      "start_seconds": 582.519,
+      "end_seconds": 589.5600000000001
+    },
+    {
+      "text": "、キナコ抹っ茶昆布など栄養の高いものを",
+      "start_seconds": 585.12,
+      "end_seconds": 591.68
+    },
+    {
+      "text": "どうしたら美味しく取れるかというところ",
+      "start_seconds": 589.56,
+      "end_seconds": 595.1199999999999
+    },
+    {
+      "text": "のギリギリを攻めて",
+      "start_seconds": 591.68,
+      "end_seconds": 597.12
+    },
+    {
+      "text": "美味しいチョコレートを作ることにしまし",
+      "start_seconds": 595.12,
+      "end_seconds": 599.04
+    },
+    {
+      "text": "た。",
+      "start_seconds": 597.12,
+      "end_seconds": 600.839
+    },
+    {
+      "text": "で、このチョコレートをですね、先ほどの",
+      "start_seconds": 599.04,
+      "end_seconds": 602.92
+    },
+    {
+      "text": "患者さんのとこに持っていくと、たくさん",
+      "start_seconds": 600.839,
+      "end_seconds": 605.1600000000001
+    },
+    {
+      "text": "の子供たちが近づいてきて、わ、",
+      "start_seconds": 602.92,
+      "end_seconds": 607.8
+    },
+    {
+      "text": "チョコレートだと美味しく食べてくれる",
+      "start_seconds": 605.16,
+      "end_seconds": 610.8389999999999
+    },
+    {
+      "text": "わけです。",
+      "start_seconds": 607.8,
+      "end_seconds": 614.68
+    },
+    {
+      "text": "こんなに嬉しいことはないし、彼らの笑顔",
+      "start_seconds": 610.839,
+      "end_seconds": 617.8000000000001
+    },
+    {
+      "text": "が間近で見れることはこんなに楽しい、",
+      "start_seconds": 614.68,
+      "end_seconds": 620.04
+    },
+    {
+      "text": "嬉しい。そんなことはないなという風に",
+      "start_seconds": 617.8,
+      "end_seconds": 623.4799999999999
+    },
+    {
+      "text": "思いました。",
+      "start_seconds": 620.04,
+      "end_seconds": 623.48
+    },
+    {
+      "text": "そしてこの男の子も病気を持っていて、手",
+      "start_seconds": 623.519,
+      "end_seconds": 630.48
+    },
+    {
+      "text": "もなかなか使えない中、一生懸命絵を描い",
+      "start_seconds": 627.76,
+      "end_seconds": 633.959
+    },
+    {
+      "text": "てくれて、彼の絵をパッケージにしめまし",
+      "start_seconds": 630.48,
+      "end_seconds": 636.12
+    },
+    {
+      "text": "た。",
+      "start_seconds": 633.959,
+      "end_seconds": 639.959
+    },
+    {
+      "text": "恐竜が大好きな彼の書いた恐竜をですね、",
+      "start_seconds": 636.12,
+      "end_seconds": 643.8
+    },
+    {
+      "text": "パッケージの方として抜いて、",
+      "start_seconds": 639.959,
+      "end_seconds": 645.3199999999999
+    },
+    {
+      "text": "普段",
+      "start_seconds": 643.8,
+      "end_seconds": 648.16
+    },
+    {
+      "text": "パソコンもスマホもなかなか満足に指です",
+      "start_seconds": 645.32,
+      "end_seconds": 651.32
+    },
+    {
+      "text": "から、こんなに発信するデバイスが発展し",
+      "start_seconds": 648.16,
+      "end_seconds": 653.76
+    },
+    {
+      "text": "た世の中でもなかなか自分のことを伝える",
+      "start_seconds": 651.32,
+      "end_seconds": 657.0790000000001
+    },
+    {
+      "text": "ということが難しいです。でもこの",
+      "start_seconds": 653.76,
+      "end_seconds": 659.24
+    },
+    {
+      "text": "パッケージを世の中に届けていろんな人",
+      "start_seconds": 657.079,
+      "end_seconds": 662.3199999999999
+    },
+    {
+      "text": "から反響があってこの前彼と電話をしたら",
+      "start_seconds": 659.24,
+      "end_seconds": 665.48
+    },
+    {
+      "text": "こんなに嬉しいことはないと自分の書いた",
+      "start_seconds": 662.32,
+      "end_seconds": 668.48
+    },
+    {
+      "text": "ものがみんなが見てくれてる。こんなに",
+      "start_seconds": 665.48,
+      "end_seconds": 670.36
+    },
+    {
+      "text": "嬉しいことはないという風に電話越しに",
+      "start_seconds": 668.48,
+      "end_seconds": 673.9590000000001
+    },
+    {
+      "text": "言ってくれました。",
+      "start_seconds": 670.36,
+      "end_seconds": 673.9590000000001
+    },
+    {
+      "text": "そしてこの女の子も表皮を持っています。",
+      "start_seconds": 674.8,
+      "end_seconds": 681.399
+    },
+    {
+      "text": "お兄ちゃんはこの病気を持っていません。",
+      "start_seconds": 678.079,
+      "end_seconds": 684.92
+    },
+    {
+      "text": "この子普段は特別な食事を食べています。",
+      "start_seconds": 681.399,
+      "end_seconds": 686.8
+    },
+    {
+      "text": "でもご自宅にチョコレートを持っていった",
+      "start_seconds": 684.92,
+      "end_seconds": 689.959
+    },
+    {
+      "text": "時はお兄さんと争う家のように食べてい",
+      "start_seconds": 686.8,
+      "end_seconds": 693.76
+    },
+    {
+      "text": "ました。結局チョコレートを通して栄養を",
+      "start_seconds": 689.959,
+      "end_seconds": 697.5189999999999
+    },
+    {
+      "text": "届けるというのは最低限のことであって、",
+      "start_seconds": 693.76,
+      "end_seconds": 700.399
+    },
+    {
+      "text": "これをパキッと割って誰かと一緒に食べる",
+      "start_seconds": 697.519,
+      "end_seconds": 703.04
+    },
+    {
+      "text": "。その空間を共有する。",
+      "start_seconds": 700.399,
+      "end_seconds": 706.44
+    },
+    {
+      "text": "コミュニケーションとして空間を作る。",
+      "start_seconds": 703.04,
+      "end_seconds": 708.76
+    },
+    {
+      "text": "そういった部分も大事にしていたので、",
+      "start_seconds": 706.44,
+      "end_seconds": 711.6800000000001
+    },
+    {
+      "text": "まさにお家の中で",
+      "start_seconds": 708.76,
+      "end_seconds": 714.76
+    },
+    {
+      "text": "お子さん2人がその場を作ってくれたと",
+      "start_seconds": 711.68,
+      "end_seconds": 717.519
+    },
+    {
+      "text": "いうことは僕にとって非常に嬉しい事実",
+      "start_seconds": 714.76,
+      "end_seconds": 720.76
+    },
+    {
+      "text": "でした。",
+      "start_seconds": 717.519,
+      "end_seconds": 720.76
+    },
+    {
+      "text": "先ほどイラストを書いてくれた男の子です",
+      "start_seconds": 723.32,
+      "end_seconds": 728.0790000000001
+    },
+    {
+      "text": "が、",
+      "start_seconds": 725.76,
+      "end_seconds": 733.399
+    },
+    {
+      "text": "彼の将来の夢はマンモスを蘇らせること。",
+      "start_seconds": 728.079,
+      "end_seconds": 736.399
+    },
+    {
+      "text": "高校学者になりたいと強く言ってくれました。もう",
+      "start_seconds": 733.399,
+      "end_seconds": 736.399
+    },
+    {
+      "text": "1",
+      "start_seconds": 738.88,
+      "end_seconds": 742.0
+    },
+    {
+      "text": "人の赤いジャージを着た男の子。この子は消防隊になりたい。救急車や消防者が大好きだという風に言ってくれました。",
+      "start_seconds": 739.0,
+      "end_seconds": 742.0
+    },
+    {
+      "text": "しかし事実として彼らに身体的なハンディキャップがあるのは紛れもない事実ではあります。",
+      "start_seconds": 751.88,
+      "end_seconds": 754.88
+    },
+    {
+      "text": "でも",
+      "start_seconds": 764.16,
+      "end_seconds": 769.8
+    },
+    {
+      "text": "彼らのそういった夢をサポートしてあげる",
+      "start_seconds": 766.04,
+      "end_seconds": 773.48
+    },
+    {
+      "text": "のが我々のやるべきことではないかなと",
+      "start_seconds": 769.8,
+      "end_seconds": 776.88
+    },
+    {
+      "text": "いう風に思っています。でも先ほどお話し",
+      "start_seconds": 773.48,
+      "end_seconds": 780.72
+    },
+    {
+      "text": "した通り6万人に1人しかいませんから",
+      "start_seconds": 776.88,
+      "end_seconds": 783.8389999999999
+    },
+    {
+      "text": "普通にしていては絶対社会は見てくれない",
+      "start_seconds": 780.72,
+      "end_seconds": 786.9590000000001
+    },
+    {
+      "text": "と。",
+      "start_seconds": 783.839,
+      "end_seconds": 786.9590000000001
+    },
+    {
+      "text": "それは僕は",
+      "start_seconds": 787.24,
+      "end_seconds": 793.72
+    },
+    {
+      "text": "医療に携わるものとして理解していたので",
+      "start_seconds": 790.399,
+      "end_seconds": 798.12
+    },
+    {
+      "text": "、このチョコレートというものを通して",
+      "start_seconds": 793.72,
+      "end_seconds": 801.6800000000001
+    },
+    {
+      "text": "自然な形で世の中に発信をして理解をして",
+      "start_seconds": 798.12,
+      "end_seconds": 805.519
+    },
+    {
+      "text": "もらう。そして1周回って、あ、こんな",
+      "start_seconds": 801.68,
+      "end_seconds": 808.16
+    },
+    {
+      "text": "病気があるんだと世の中が理解をしてくれ",
+      "start_seconds": 805.519,
+      "end_seconds": 812.04
+    },
+    {
+      "text": "て彼らの未来につがっていく。",
+      "start_seconds": 808.16,
+      "end_seconds": 814.639
+    },
+    {
+      "text": "もしかしたら",
+      "start_seconds": 812.04,
+      "end_seconds": 819.88
+    },
+    {
+      "text": "週明け皆さんが職場に行ったら",
+      "start_seconds": 814.639,
+      "end_seconds": 822.12
+    },
+    {
+      "text": "お客様として",
+      "start_seconds": 819.88,
+      "end_seconds": 824.8389999999999
+    },
+    {
+      "text": "この患者さんたちが来るかもしれません。",
+      "start_seconds": 822.12,
+      "end_seconds": 829.9590000000001
+    },
+    {
+      "text": "来年の就職活動面接で彼らが新卒として",
+      "start_seconds": 824.839,
+      "end_seconds": 833.44
+    },
+    {
+      "text": "面接に来るかもしれません。",
+      "start_seconds": 829.959,
+      "end_seconds": 835.4799999999999
+    },
+    {
+      "text": "その時に",
+      "start_seconds": 833.44,
+      "end_seconds": 838.6800000000001
+    },
+    {
+      "text": "できないことを見るのではなくて、",
+      "start_seconds": 835.48,
+      "end_seconds": 842.04
+    },
+    {
+      "text": "彼らも1人の人間として一生懸命生きて",
+      "start_seconds": 838.68,
+      "end_seconds": 843.92
+    },
+    {
+      "text": "いる",
+      "start_seconds": 842.04,
+      "end_seconds": 846.519
+    },
+    {
+      "text": "いうところをまず見ていただけたら僕は",
+      "start_seconds": 843.92,
+      "end_seconds": 848.959
+    },
+    {
+      "text": "非常に嬉しいです。",
+      "start_seconds": 846.519,
+      "end_seconds": 850.759
+    },
+    {
+      "text": "そして",
+      "start_seconds": 848.959,
+      "end_seconds": 854.04
+    },
+    {
+      "text": "僕は残念ながらほとんどの時間を病院で",
+      "start_seconds": 850.759,
+      "end_seconds": 857.5600000000001
+    },
+    {
+      "text": "過ごしてます。",
+      "start_seconds": 854.04,
+      "end_seconds": 857.56
+    },
+    {
+      "text": "なので、こういった場所でこういったお話",
+      "start_seconds": 860.48,
+      "end_seconds": 865.279
+    },
+    {
+      "text": "をさせていただく機会はほとんどありませ",
+      "start_seconds": 862.88,
+      "end_seconds": 867.88
+    },
+    {
+      "text": "ん。",
+      "start_seconds": 865.279,
+      "end_seconds": 870.12
+    },
+    {
+      "text": "だから",
+      "start_seconds": 867.88,
+      "end_seconds": 872.4399999999999
+    },
+    {
+      "text": "是非今日はこの場所に来ていたいただいた",
+      "start_seconds": 870.12,
+      "end_seconds": 874.639
+    },
+    {
+      "text": "皆さんに",
+      "start_seconds": 872.44,
+      "end_seconds": 878.399
+    },
+    {
+      "text": "この病気だけで出なくても構いません。",
+      "start_seconds": 874.639,
+      "end_seconds": 880.639
+    },
+    {
+      "text": "いろんな大変な病気があるんだよと。",
+      "start_seconds": 878.399,
+      "end_seconds": 883.759
+    },
+    {
+      "text": "そして一歩待ちを歩けばもしかしたら自分",
+      "start_seconds": 880.639,
+      "end_seconds": 886.72
+    },
+    {
+      "text": "もどこか出会うかもしれない。",
+      "start_seconds": 883.759,
+      "end_seconds": 889.16
+    },
+    {
+      "text": "そういったアンテナを1本だけでもいいの",
+      "start_seconds": 886.72,
+      "end_seconds": 892.44
+    },
+    {
+      "text": "で立てていただいて",
+      "start_seconds": 889.16,
+      "end_seconds": 897.4399999999999
+    },
+    {
+      "text": "僕が病院にいる代わりに社会の中で",
+      "start_seconds": 892.44,
+      "end_seconds": 900.44
+    },
+    {
+      "text": "気を配っていただけたら非常に嬉しいなと",
+      "start_seconds": 897.44,
+      "end_seconds": 903.5600000000001
+    },
+    {
+      "text": "いう風に思います。",
+      "start_seconds": 900.44,
+      "end_seconds": 906.9590000000001
+    },
+    {
+      "text": "医療者だけではできないことがたくさん",
+      "start_seconds": 903.56,
+      "end_seconds": 909.079
+    },
+    {
+      "text": "あります。",
+      "start_seconds": 906.959,
+      "end_seconds": 913.279
+    },
+    {
+      "text": "だから社会全体としてこういった子たちを",
+      "start_seconds": 909.079,
+      "end_seconds": 916.04
+    },
+    {
+      "text": "サポートしていただける仲間になって",
+      "start_seconds": 913.279,
+      "end_seconds": 919.279
+    },
+    {
+      "text": "いただけたら",
+      "start_seconds": 916.04,
+      "end_seconds": 919.279
+    },
+    {
+      "text": "意思である私としてこんなに嬉しいことは",
+      "start_seconds": 921.04,
+      "end_seconds": 925.759
+    },
+    {
+      "text": "ありません。",
+      "start_seconds": 923.639,
+      "end_seconds": 927.92
+    },
+    {
+      "text": "是非仲間になっていただけたらありがたい",
+      "start_seconds": 925.759,
+      "end_seconds": 931.42
+    },
+    {
+      "text": "です。ご清聴ありがとうございました。",
+      "start_seconds": 927.92,
+      "end_seconds": 933.4399999999999
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 931.42,
+      "end_seconds": 933.4399999999999
+    }
+  ],
+  "display_captions": [
+    {
+      "text": "[音楽]",
+      "start_seconds": 9.825,
+      "end_seconds": 11.844999999999999,
+      "id": "52k7r5A9tO0-display-0001",
+      "segment_id": "52k7r5A9tO0-ja-0001"
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 13.755,
+      "end_seconds": 15.775,
+      "id": "52k7r5A9tO0-display-0002",
+      "segment_id": "52k7r5A9tO0-ja-0002"
+    },
+    {
+      "text": "6万人に1人",
+      "start_seconds": 23.08,
+      "end_seconds": 26.56,
+      "id": "52k7r5A9tO0-display-0003",
+      "segment_id": "52k7r5A9tO0-ja-0003"
+    },
+    {
+      "text": "日本にこれだけの患者さんしかい",
+      "start_seconds": 26.56,
+      "end_seconds": 29.56,
+      "id": "52k7r5A9tO0-display-0004",
+      "segment_id": "52k7r5A9tO0-ja-0003"
+    },
+    {
+      "text": "希少な病気があります。",
+      "start_seconds": 29.56,
+      "end_seconds": 32.759,
+      "id": "52k7r5A9tO0-display-0005",
+      "segment_id": "52k7r5A9tO0-ja-0003"
+    },
+    {
+      "text": "6万人に1人というと普通に生きていれば",
+      "start_seconds": 32.759,
+      "end_seconds": 36.92,
+      "id": "52k7r5A9tO0-display-0006",
+      "segment_id": "52k7r5A9tO0-ja-0004"
+    },
+    {
+      "text": "出会うことはほぼないでしょう。皆さんも",
+      "start_seconds": 36.92,
+      "end_seconds": 40.92,
+      "id": "52k7r5A9tO0-display-0007",
+      "segment_id": "52k7r5A9tO0-ja-0004"
+    },
+    {
+      "text": "出会うことはないと思います。",
+      "start_seconds": 40.92,
+      "end_seconds": 44.2,
+      "id": "52k7r5A9tO0-display-0008",
+      "segment_id": "52k7r5A9tO0-ja-0004"
+    },
+    {
+      "text": "その病気を表皮と言います。",
+      "start_seconds": 44.2,
+      "end_seconds": 49.48,
+      "id": "52k7r5A9tO0-display-0009",
+      "segment_id": "52k7r5A9tO0-ja-0005"
+    },
+    {
+      "text": "患者さんは自分の肌を腸の羽のように繊細",
+      "start_seconds": 49.48,
+      "end_seconds": 53.44,
+      "id": "52k7r5A9tO0-display-0010",
+      "segment_id": "52k7r5A9tO0-ja-0006"
+    },
+    {
+      "text": "な皮膚と言います。",
+      "start_seconds": 53.44,
+      "end_seconds": 56.76,
+      "id": "52k7r5A9tO0-display-0011",
+      "segment_id": "52k7r5A9tO0-ja-0006"
+    },
+    {
+      "text": "たったの物理的な刺激で皮膚が破れて",
+      "start_seconds": 56.76,
+      "end_seconds": 60.719,
+      "id": "52k7r5A9tO0-display-0012",
+      "segment_id": "52k7r5A9tO0-ja-0007"
+    },
+    {
+      "text": "めくれて痛みを伴います。",
+      "start_seconds": 60.719,
+      "end_seconds": 64.92,
+      "id": "52k7r5A9tO0-display-0013",
+      "segment_id": "52k7r5A9tO0-ja-0007"
+    },
+    {
+      "text": "皆さん自分の左手でグーのポーズをしてみ",
+      "start_seconds": 64.92,
+      "end_seconds": 67.52,
+      "id": "52k7r5A9tO0-display-0014",
+      "segment_id": "52k7r5A9tO0-ja-0008"
+    },
+    {
+      "text": "てください。しっかり親指が立って指の間",
+      "start_seconds": 67.52,
+      "end_seconds": 70.84,
+      "id": "52k7r5A9tO0-display-0015",
+      "segment_id": "52k7r5A9tO0-ja-0008"
+    },
+    {
+      "text": "に溝があって爪があってパーをしようと",
+      "start_seconds": 70.84,
+      "end_seconds": 73.68,
+      "id": "52k7r5A9tO0-display-0016",
+      "segment_id": "52k7r5A9tO0-ja-0008"
+    },
+    {
+      "text": "思ったらいつでもできると思います。",
+      "start_seconds": 73.68,
+      "end_seconds": 76.799,
+      "id": "52k7r5A9tO0-display-0017",
+      "segment_id": "52k7r5A9tO0-ja-0008"
+    },
+    {
+      "text": "しかしこの病気の患者さんの左手はこんな",
+      "start_seconds": 76.799,
+      "end_seconds": 79.2,
+      "id": "52k7r5A9tO0-display-0018",
+      "segment_id": "52k7r5A9tO0-ja-0009"
+    },
+    {
+      "text": "感じです。",
+      "start_seconds": 79.2,
+      "end_seconds": 81.159,
+      "id": "52k7r5A9tO0-display-0019",
+      "segment_id": "52k7r5A9tO0-ja-0009"
+    },
+    {
+      "text": "指の間はありません。もちろん爪もあり",
+      "start_seconds": 81.159,
+      "end_seconds": 83.759,
+      "id": "52k7r5A9tO0-display-0020",
+      "segment_id": "52k7r5A9tO0-ja-0010"
+    },
+    {
+      "text": "ません。指がくっついてしまってパーも",
+      "start_seconds": 83.759,
+      "end_seconds": 86.6,
+      "id": "52k7r5A9tO0-display-0021",
+      "segment_id": "52k7r5A9tO0-ja-0010"
+    },
+    {
+      "text": "できません。スマホを打つだけで一生懸命",
+      "start_seconds": 86.6,
+      "end_seconds": 89.159,
+      "id": "52k7r5A9tO0-display-0022",
+      "segment_id": "52k7r5A9tO0-ja-0010"
+    },
+    {
+      "text": "です。",
+      "start_seconds": 89.159,
+      "end_seconds": 91.0,
+      "id": "52k7r5A9tO0-display-0023",
+      "segment_id": "52k7r5A9tO0-ja-0010"
+    },
+    {
+      "text": "皮膚の薄りと海洋、癒着再生。これを",
+      "start_seconds": 91.0,
+      "end_seconds": 95.2,
+      "id": "52k7r5A9tO0-display-0024",
+      "segment_id": "52k7r5A9tO0-ja-0011"
+    },
+    {
+      "text": "繰り返すことで徐々にこういった指になっ",
+      "start_seconds": 95.2,
+      "end_seconds": 97.399,
+      "id": "52k7r5A9tO0-display-0025",
+      "segment_id": "52k7r5A9tO0-ja-0011"
+    },
+    {
+      "text": "ていきます。足も同じような状況と思って",
+      "start_seconds": 97.399,
+      "end_seconds": 100.079,
+      "id": "52k7r5A9tO0-display-0026",
+      "segment_id": "52k7r5A9tO0-ja-0011"
+    },
+    {
+      "text": "もらって構いません。口の中もこのような",
+      "start_seconds": 100.079,
+      "end_seconds": 103.04,
+      "id": "52k7r5A9tO0-display-0027",
+      "segment_id": "52k7r5A9tO0-ja-0012"
+    },
+    {
+      "text": "状況です。",
+      "start_seconds": 103.04,
+      "end_seconds": 106.43900000000001,
+      "id": "52k7r5A9tO0-display-0028",
+      "segment_id": "52k7r5A9tO0-ja-0012"
+    },
+    {
+      "text": "こういった病気のお話になります。",
+      "start_seconds": 107.04,
+      "end_seconds": 111.68,
+      "id": "52k7r5A9tO0-display-0029",
+      "segment_id": "52k7r5A9tO0-ja-0013"
+    },
+    {
+      "text": "私は中村厚生と申します。今北海道で消化",
+      "start_seconds": 113.04,
+      "end_seconds": 117.84,
+      "id": "52k7r5A9tO0-display-0030",
+      "segment_id": "52k7r5A9tO0-ja-0014"
+    },
+    {
+      "text": "切議会として医師のトレーニングを積んで",
+      "start_seconds": 117.84,
+      "end_seconds": 120.68,
+      "id": "52k7r5A9tO0-display-0031",
+      "segment_id": "52k7r5A9tO0-ja-0014"
+    },
+    {
+      "text": "おります。",
+      "start_seconds": 120.68,
+      "end_seconds": 122.6,
+      "id": "52k7r5A9tO0-display-0032",
+      "segment_id": "52k7r5A9tO0-ja-0014"
+    },
+    {
+      "text": "各私も心臓に大きな病気を持って生まれて",
+      "start_seconds": 122.6,
+      "end_seconds": 125.68,
+      "id": "52k7r5A9tO0-display-0033",
+      "segment_id": "52k7r5A9tO0-ja-0015"
+    },
+    {
+      "text": "きました。",
+      "start_seconds": 125.68,
+      "end_seconds": 127.64,
+      "id": "52k7r5A9tO0-display-0034",
+      "segment_id": "52k7r5A9tO0-ja-0015"
+    },
+    {
+      "text": "今僕のこの胸には15cmほどの海の跡が",
+      "start_seconds": 127.64,
+      "end_seconds": 131.16,
+      "id": "52k7r5A9tO0-display-0035",
+      "segment_id": "52k7r5A9tO0-ja-0016"
+    },
+    {
+      "text": "あります。2歳と3歳の時に2回人口心配",
+      "start_seconds": 131.16,
+      "end_seconds": 135.239,
+      "id": "52k7r5A9tO0-display-0036",
+      "segment_id": "52k7r5A9tO0-ja-0016"
+    },
+    {
+      "text": "に乗りました。",
+      "start_seconds": 135.239,
+      "end_seconds": 138.08,
+      "id": "52k7r5A9tO0-display-0037",
+      "segment_id": "52k7r5A9tO0-ja-0016"
+    },
+    {
+      "text": "でもなんとかたくさんの医療スタッフの皆",
+      "start_seconds": 138.08,
+      "end_seconds": 140.08,
+      "id": "52k7r5A9tO0-display-0038",
+      "segment_id": "52k7r5A9tO0-ja-0017"
+    },
+    {
+      "text": "様のおかげで僕は今この場に立つことが",
+      "start_seconds": 140.08,
+      "end_seconds": 142.48,
+      "id": "52k7r5A9tO0-display-0039",
+      "segment_id": "52k7r5A9tO0-ja-0017"
+    },
+    {
+      "text": "できています。",
+      "start_seconds": 142.48,
+      "end_seconds": 145.959,
+      "id": "52k7r5A9tO0-display-0040",
+      "segment_id": "52k7r5A9tO0-ja-0017"
+    },
+    {
+      "text": "そして僕はなんとか病気を乗り越えて成長",
+      "start_seconds": 146.16,
+      "end_seconds": 150.239,
+      "id": "52k7r5A9tO0-display-0041",
+      "segment_id": "52k7r5A9tO0-ja-0018"
+    },
+    {
+      "text": "して",
+      "start_seconds": 150.239,
+      "end_seconds": 152.76,
+      "id": "52k7r5A9tO0-display-0042",
+      "segment_id": "52k7r5A9tO0-ja-0018"
+    },
+    {
+      "text": "中学生になった時にとある",
+      "start_seconds": 152.76,
+      "end_seconds": 155.239,
+      "id": "52k7r5A9tO0-display-0043",
+      "segment_id": "52k7r5A9tO0-ja-0018"
+    },
+    {
+      "text": "ドキュメンタリーに出会いました。",
+      "start_seconds": 155.239,
+      "end_seconds": 158.0,
+      "id": "52k7r5A9tO0-display-0044",
+      "segment_id": "52k7r5A9tO0-ja-0018"
+    },
+    {
+      "text": "家でテレビを見ていると",
+      "start_seconds": 158.0,
+      "end_seconds": 160.8,
+      "id": "52k7r5A9tO0-display-0045",
+      "segment_id": "52k7r5A9tO0-ja-0019"
+    },
+    {
+      "text": "確かロシア人の男の子だったと思いますが",
+      "start_seconds": 160.8,
+      "end_seconds": 164.519,
+      "id": "52k7r5A9tO0-display-0046",
+      "segment_id": "52k7r5A9tO0-ja-0019"
+    },
+    {
+      "text": "両親をエイズで失ってしまい、家もなく",
+      "start_seconds": 164.519,
+      "end_seconds": 167.56,
+      "id": "52k7r5A9tO0-display-0047",
+      "segment_id": "52k7r5A9tO0-ja-0019"
+    },
+    {
+      "text": "当てもなく1人で町を彷徨っているといっ",
+      "start_seconds": 167.56,
+      "end_seconds": 171.8,
+      "id": "52k7r5A9tO0-display-0048",
+      "segment_id": "52k7r5A9tO0-ja-0020"
+    },
+    {
+      "text": "たドキュメンタリーでした。",
+      "start_seconds": 171.8,
+      "end_seconds": 174.599,
+      "id": "52k7r5A9tO0-display-0049",
+      "segment_id": "52k7r5A9tO0-ja-0020"
+    },
+    {
+      "text": "中学生の僕は",
+      "start_seconds": 174.599,
+      "end_seconds": 177.64,
+      "id": "52k7r5A9tO0-display-0050",
+      "segment_id": "52k7r5A9tO0-ja-0021"
+    },
+    {
+      "text": "自分の胸の傷はたくさんの人のおかげで",
+      "start_seconds": 177.64,
+      "end_seconds": 181.04,
+      "id": "52k7r5A9tO0-display-0051",
+      "segment_id": "52k7r5A9tO0-ja-0021"
+    },
+    {
+      "text": "こうやって直してもらって今元気に生きて",
+      "start_seconds": 181.04,
+      "end_seconds": 183.519,
+      "id": "52k7r5A9tO0-display-0052",
+      "segment_id": "52k7r5A9tO0-ja-0021"
+    },
+    {
+      "text": "いる。でも同じくらいの年の彼は1人で親",
+      "start_seconds": 183.519,
+      "end_seconds": 188.76,
+      "id": "52k7r5A9tO0-display-0053",
+      "segment_id": "52k7r5A9tO0-ja-0022"
+    },
+    {
+      "text": "が亡くなってしまって町を彷徨っていると",
+      "start_seconds": 188.76,
+      "end_seconds": 190.92,
+      "id": "52k7r5A9tO0-display-0054",
+      "segment_id": "52k7r5A9tO0-ja-0022"
+    },
+    {
+      "text": "。",
+      "start_seconds": 190.92,
+      "end_seconds": 193.92,
+      "id": "52k7r5A9tO0-display-0055",
+      "segment_id": "52k7r5A9tO0-ja-0022"
+    },
+    {
+      "text": "この事実を知って私は医療の道に進もうと",
+      "start_seconds": 195.72,
+      "end_seconds": 199.12,
+      "id": "52k7r5A9tO0-display-0056",
+      "segment_id": "52k7r5A9tO0-ja-0023"
+    },
+    {
+      "text": "決めました。",
+      "start_seconds": 199.12,
+      "end_seconds": 202.599,
+      "id": "52k7r5A9tO0-display-0057",
+      "segment_id": "52k7r5A9tO0-ja-0023"
+    },
+    {
+      "text": "で、まず私は薬学部に進学をしました。",
+      "start_seconds": 202.599,
+      "end_seconds": 207.56,
+      "id": "52k7r5A9tO0-display-0058",
+      "segment_id": "52k7r5A9tO0-ja-0024"
+    },
+    {
+      "text": "薬学部に進学をして",
+      "start_seconds": 207.56,
+      "end_seconds": 210.959,
+      "id": "52k7r5A9tO0-display-0059",
+      "segment_id": "52k7r5A9tO0-ja-0025"
+    },
+    {
+      "text": "解剖学、",
+      "start_seconds": 210.959,
+      "end_seconds": 213.28,
+      "id": "52k7r5A9tO0-display-0060",
+      "segment_id": "52k7r5A9tO0-ja-0025"
+    },
+    {
+      "text": "生物学、テミストリーの科学、物理学、",
+      "start_seconds": 213.28,
+      "end_seconds": 217.439,
+      "id": "52k7r5A9tO0-display-0061",
+      "segment_id": "52k7r5A9tO0-ja-0025"
+    },
+    {
+      "text": "いろんな学問も覚めながら",
+      "start_seconds": 217.439,
+      "end_seconds": 220.0,
+      "id": "52k7r5A9tO0-display-0062",
+      "segment_id": "52k7r5A9tO0-ja-0026"
+    },
+    {
+      "text": "低分子の医薬品の有号性科学を先行してい",
+      "start_seconds": 220.0,
+      "end_seconds": 223.319,
+      "id": "52k7r5A9tO0-display-0063",
+      "segment_id": "52k7r5A9tO0-ja-0026"
+    },
+    {
+      "text": "ました。",
+      "start_seconds": 223.319,
+      "end_seconds": 226.159,
+      "id": "52k7r5A9tO0-display-0064",
+      "segment_id": "52k7r5A9tO0-ja-0026"
+    },
+    {
+      "text": "そんな中で僕が思ったのは",
+      "start_seconds": 226.159,
+      "end_seconds": 230.28,
+      "id": "52k7r5A9tO0-display-0065",
+      "segment_id": "52k7r5A9tO0-ja-0027"
+    },
+    {
+      "text": "実際に",
+      "start_seconds": 231.319,
+      "end_seconds": 233.36,
+      "id": "52k7r5A9tO0-display-0066",
+      "segment_id": "52k7r5A9tO0-ja-0028"
+    },
+    {
+      "text": "どういう人に薬を届けるのかが研究をし",
+      "start_seconds": 233.36,
+      "end_seconds": 235.879,
+      "id": "52k7r5A9tO0-display-0067",
+      "segment_id": "52k7r5A9tO0-ja-0028"
+    },
+    {
+      "text": "てる中でよく分からなくなりました。",
+      "start_seconds": 235.879,
+      "end_seconds": 240.79899999999998,
+      "id": "52k7r5A9tO0-display-0068",
+      "segment_id": "52k7r5A9tO0-ja-0028"
+    },
+    {
+      "text": "直せない病気がたくさんあって、そのため",
+      "start_seconds": 241.599,
+      "end_seconds": 243.879,
+      "id": "52k7r5A9tO0-display-0069",
+      "segment_id": "52k7r5A9tO0-ja-0029"
+    },
+    {
+      "text": "に僕らは一生懸命研究をしている。でも誰",
+      "start_seconds": 243.879,
+      "end_seconds": 248.519,
+      "id": "52k7r5A9tO0-display-0070",
+      "segment_id": "52k7r5A9tO0-ja-0029"
+    },
+    {
+      "text": "の何をどうやって直してどうしたらみんな",
+      "start_seconds": 248.519,
+      "end_seconds": 252.599,
+      "id": "52k7r5A9tO0-display-0071",
+      "segment_id": "52k7r5A9tO0-ja-0029"
+    },
+    {
+      "text": "がその患者さんが喜んでくれるのか全く",
+      "start_seconds": 252.599,
+      "end_seconds": 256.0,
+      "id": "52k7r5A9tO0-display-0072",
+      "segment_id": "52k7r5A9tO0-ja-0030"
+    },
+    {
+      "text": "分からなくなってしまいました。",
+      "start_seconds": 256.0,
+      "end_seconds": 258.799,
+      "id": "52k7r5A9tO0-display-0073",
+      "segment_id": "52k7r5A9tO0-ja-0030"
+    },
+    {
+      "text": "そこでベッドサイド、いわゆる臨床の場所",
+      "start_seconds": 258.799,
+      "end_seconds": 262.44,
+      "id": "52k7r5A9tO0-display-0074",
+      "segment_id": "52k7r5A9tO0-ja-0031"
+    },
+    {
+      "text": "を見ることが非常に重要なんじゃないかと",
+      "start_seconds": 262.44,
+      "end_seconds": 265.96,
+      "id": "52k7r5A9tO0-display-0075",
+      "segment_id": "52k7r5A9tO0-ja-0031"
+    },
+    {
+      "text": "僕は感じて、当時役部の4年生の学生だっ",
+      "start_seconds": 265.96,
+      "end_seconds": 270.52,
+      "id": "52k7r5A9tO0-display-0076",
+      "segment_id": "52k7r5A9tO0-ja-0031"
+    },
+    {
+      "text": "たので、ベッドサイドに行く機会はなかっ",
+      "start_seconds": 270.52,
+      "end_seconds": 273.039,
+      "id": "52k7r5A9tO0-display-0077",
+      "segment_id": "52k7r5A9tO0-ja-0032"
+    },
+    {
+      "text": "たのですが、知り合いの杖を探して",
+      "start_seconds": 273.039,
+      "end_seconds": 276.24,
+      "id": "52k7r5A9tO0-display-0078",
+      "segment_id": "52k7r5A9tO0-ja-0032"
+    },
+    {
+      "text": "ミヤンマーの方の病院に行くことができ",
+      "start_seconds": 276.24,
+      "end_seconds": 278.16,
+      "id": "52k7r5A9tO0-display-0079",
+      "segment_id": "52k7r5A9tO0-ja-0032"
+    },
+    {
+      "text": "ました。",
+      "start_seconds": 278.16,
+      "end_seconds": 281.08,
+      "id": "52k7r5A9tO0-display-0080",
+      "segment_id": "52k7r5A9tO0-ja-0032"
+    },
+    {
+      "text": "居酒屋でバイトした二を握りしめて",
+      "start_seconds": 281.08,
+      "end_seconds": 283.8,
+      "id": "52k7r5A9tO0-display-0081",
+      "segment_id": "52k7r5A9tO0-ja-0033"
+    },
+    {
+      "text": "ミヤンマーのお寺を回送した貧困地域の",
+      "start_seconds": 283.8,
+      "end_seconds": 287.479,
+      "id": "52k7r5A9tO0-display-0082",
+      "segment_id": "52k7r5A9tO0-ja-0033"
+    },
+    {
+      "text": "病院で2週間ベッドサイドで実施をさせて",
+      "start_seconds": 287.479,
+      "end_seconds": 290.8,
+      "id": "52k7r5A9tO0-display-0083",
+      "segment_id": "52k7r5A9tO0-ja-0033"
+    },
+    {
+      "text": "いただきました。",
+      "start_seconds": 290.8,
+      "end_seconds": 293.72,
+      "id": "52k7r5A9tO0-display-0084",
+      "segment_id": "52k7r5A9tO0-ja-0034"
+    },
+    {
+      "text": "この男の子は日本では簡単に良くなるよう",
+      "start_seconds": 293.72,
+      "end_seconds": 296.56,
+      "id": "52k7r5A9tO0-display-0085",
+      "segment_id": "52k7r5A9tO0-ja-0035"
+    },
+    {
+      "text": "な病気で薬もなく治療法もなく",
+      "start_seconds": 296.56,
+      "end_seconds": 302.12,
+      "id": "52k7r5A9tO0-display-0086",
+      "segment_id": "52k7r5A9tO0-ja-0035"
+    },
+    {
+      "text": "医療スタッフもない中で長い投票生活を",
+      "start_seconds": 302.12,
+      "end_seconds": 304.68,
+      "id": "52k7r5A9tO0-display-0087",
+      "segment_id": "52k7r5A9tO0-ja-0035"
+    },
+    {
+      "text": "送っていました。",
+      "start_seconds": 304.68,
+      "end_seconds": 307.44,
+      "id": "52k7r5A9tO0-display-0088",
+      "segment_id": "52k7r5A9tO0-ja-0036"
+    },
+    {
+      "text": "また",
+      "start_seconds": 307.44,
+      "end_seconds": 309.96,
+      "id": "52k7r5A9tO0-display-0089",
+      "segment_id": "52k7r5A9tO0-ja-0037"
+    },
+    {
+      "text": "麻水薬の量も限られているので日本では",
+      "start_seconds": 309.96,
+      "end_seconds": 313.16,
+      "id": "52k7r5A9tO0-display-0090",
+      "segment_id": "52k7r5A9tO0-ja-0037"
+    },
+    {
+      "text": "全身麻酔で行うような手術も現地では極所",
+      "start_seconds": 313.16,
+      "end_seconds": 316.24,
+      "id": "52k7r5A9tO0-display-0091",
+      "segment_id": "52k7r5A9tO0-ja-0037"
+    },
+    {
+      "text": "麻酔で行っていました。",
+      "start_seconds": 316.24,
+      "end_seconds": 318.8,
+      "id": "52k7r5A9tO0-display-0092",
+      "segment_id": "52k7r5A9tO0-ja-0037"
+    },
+    {
+      "text": "最低限の麻酔しか使わないので手術室から",
+      "start_seconds": 318.8,
+      "end_seconds": 322.319,
+      "id": "52k7r5A9tO0-display-0093",
+      "segment_id": "52k7r5A9tO0-ja-0038"
+    },
+    {
+      "text": "患者さんの叫ぶ声が聞こえてくることも",
+      "start_seconds": 322.319,
+      "end_seconds": 324.639,
+      "id": "52k7r5A9tO0-display-0094",
+      "segment_id": "52k7r5A9tO0-ja-0038"
+    },
+    {
+      "text": "ありました。",
+      "start_seconds": 324.639,
+      "end_seconds": 326.56,
+      "id": "52k7r5A9tO0-display-0095",
+      "segment_id": "52k7r5A9tO0-ja-0038"
+    },
+    {
+      "text": "でもこれがこの国の現実なんだという風に",
+      "start_seconds": 326.56,
+      "end_seconds": 331.479,
+      "id": "52k7r5A9tO0-display-0096",
+      "segment_id": "52k7r5A9tO0-ja-0039"
+    },
+    {
+      "text": "知りました。",
+      "start_seconds": 331.479,
+      "end_seconds": 334.96,
+      "id": "52k7r5A9tO0-display-0097",
+      "segment_id": "52k7r5A9tO0-ja-0039"
+    },
+    {
+      "text": "生まれた場所、時代、これが治る、治ら",
+      "start_seconds": 336.44,
+      "end_seconds": 341.479,
+      "id": "52k7r5A9tO0-display-0098",
+      "segment_id": "52k7r5A9tO0-ja-0040"
+    },
+    {
+      "text": "ないよう決定的に決めてしまう。",
+      "start_seconds": 341.479,
+      "end_seconds": 345.56,
+      "id": "52k7r5A9tO0-display-0099",
+      "segment_id": "52k7r5A9tO0-ja-0040"
+    },
+    {
+      "text": "おそらく僕がもっと昔生まれていたら僕は",
+      "start_seconds": 345.56,
+      "end_seconds": 350.36,
+      "id": "52k7r5A9tO0-display-0100",
+      "segment_id": "52k7r5A9tO0-ja-0041"
+    },
+    {
+      "text": "この場所に立っていないと思います。多分",
+      "start_seconds": 350.36,
+      "end_seconds": 353.52,
+      "id": "52k7r5A9tO0-display-0101",
+      "segment_id": "52k7r5A9tO0-ja-0041"
+    },
+    {
+      "text": "大人になることはできなかったでしょう。",
+      "start_seconds": 353.52,
+      "end_seconds": 358.08,
+      "id": "52k7r5A9tO0-display-0102",
+      "segment_id": "52k7r5A9tO0-ja-0042"
+    },
+    {
+      "text": "こういった学然たる事実を学び、僕は意思",
+      "start_seconds": 358.08,
+      "end_seconds": 362.88,
+      "id": "52k7r5A9tO0-display-0103",
+      "segment_id": "52k7r5A9tO0-ja-0043"
+    },
+    {
+      "text": "になることを決めました。",
+      "start_seconds": 362.88,
+      "end_seconds": 366.919,
+      "id": "52k7r5A9tO0-display-0104",
+      "segment_id": "52k7r5A9tO0-ja-0043"
+    },
+    {
+      "text": "医学部に進学をして5年間学問を収めて医",
+      "start_seconds": 367.319,
+      "end_seconds": 372.639,
+      "id": "52k7r5A9tO0-display-0105",
+      "segment_id": "52k7r5A9tO0-ja-0044"
+    },
+    {
+      "text": "免許を取得しました。",
+      "start_seconds": 372.639,
+      "end_seconds": 376.36,
+      "id": "52k7r5A9tO0-display-0106",
+      "segment_id": "52k7r5A9tO0-ja-0044"
+    },
+    {
+      "text": "そしてこの5年間の中で先ほどお見せした",
+      "start_seconds": 376.36,
+      "end_seconds": 380.44,
+      "id": "52k7r5A9tO0-display-0107",
+      "segment_id": "52k7r5A9tO0-ja-0045"
+    },
+    {
+      "text": "左手の画像表皮水保障の患者さんと出会う",
+      "start_seconds": 380.44,
+      "end_seconds": 384.639,
+      "id": "52k7r5A9tO0-display-0108",
+      "segment_id": "52k7r5A9tO0-ja-0045"
+    },
+    {
+      "text": "ことになります。",
+      "start_seconds": 384.639,
+      "end_seconds": 388.40000000000003,
+      "id": "52k7r5A9tO0-display-0109",
+      "segment_id": "52k7r5A9tO0-ja-0046"
+    },
+    {
+      "text": "これが患者会に参加した時の写真です。",
+      "start_seconds": 389.8,
+      "end_seconds": 394.12,
+      "id": "52k7r5A9tO0-display-0110",
+      "segment_id": "52k7r5A9tO0-ja-0047"
+    },
+    {
+      "text": "この中には20名ほどの患者さんが",
+      "start_seconds": 394.12,
+      "end_seconds": 396.759,
+      "id": "52k7r5A9tO0-display-0111",
+      "segment_id": "52k7r5A9tO0-ja-0048"
+    },
+    {
+      "text": "いらっしゃいます。",
+      "start_seconds": 396.759,
+      "end_seconds": 400.319,
+      "id": "52k7r5A9tO0-display-0112",
+      "segment_id": "52k7r5A9tO0-ja-0048"
+    },
+    {
+      "text": "お子さん、大人の患者さん、そのご家族を",
+      "start_seconds": 402.0,
+      "end_seconds": 405.88,
+      "id": "52k7r5A9tO0-display-0113",
+      "segment_id": "52k7r5A9tO0-ja-0049"
+    },
+    {
+      "text": "含めていろんな人とお話をしました。食事",
+      "start_seconds": 405.88,
+      "end_seconds": 410.44,
+      "id": "52k7r5A9tO0-display-0114",
+      "segment_id": "52k7r5A9tO0-ja-0049"
+    },
+    {
+      "text": "も一緒に撮りました。レクリエーションも",
+      "start_seconds": 410.44,
+      "end_seconds": 412.84,
+      "id": "52k7r5A9tO0-display-0115",
+      "segment_id": "52k7r5A9tO0-ja-0049"
+    },
+    {
+      "text": "しました。",
+      "start_seconds": 412.84,
+      "end_seconds": 416.19899999999996,
+      "id": "52k7r5A9tO0-display-0116",
+      "segment_id": "52k7r5A9tO0-ja-0050"
+    },
+    {
+      "text": "その中で",
+      "start_seconds": 416.84,
+      "end_seconds": 419.56,
+      "id": "52k7r5A9tO0-display-0117",
+      "segment_id": "52k7r5A9tO0-ja-0051"
+    },
+    {
+      "text": "彼らも",
+      "start_seconds": 419.56,
+      "end_seconds": 422.319,
+      "id": "52k7r5A9tO0-display-0118",
+      "segment_id": "52k7r5A9tO0-ja-0051"
+    },
+    {
+      "text": "まず患者である前に1人の人間として普通",
+      "start_seconds": 422.319,
+      "end_seconds": 427.08,
+      "id": "52k7r5A9tO0-display-0119",
+      "segment_id": "52k7r5A9tO0-ja-0051"
+    },
+    {
+      "text": "に生きているということを知りました。",
+      "start_seconds": 427.08,
+      "end_seconds": 431.68,
+      "id": "52k7r5A9tO0-display-0120",
+      "segment_id": "52k7r5A9tO0-ja-0052"
+    },
+    {
+      "text": "僕はほとんどの時間を病院で過ごしてます",
+      "start_seconds": 431.68,
+      "end_seconds": 433.479,
+      "id": "52k7r5A9tO0-display-0121",
+      "segment_id": "52k7r5A9tO0-ja-0053"
+    },
+    {
+      "text": "から",
+      "start_seconds": 433.479,
+      "end_seconds": 435.08,
+      "id": "52k7r5A9tO0-display-0122",
+      "segment_id": "52k7r5A9tO0-ja-0053"
+    },
+    {
+      "text": "出会う人たちは患者さんという肩書きで",
+      "start_seconds": 435.08,
+      "end_seconds": 438.44,
+      "id": "52k7r5A9tO0-display-0123",
+      "segment_id": "52k7r5A9tO0-ja-0053"
+    },
+    {
+      "text": "接します。病院の外で出会うことは",
+      "start_seconds": 438.44,
+      "end_seconds": 441.039,
+      "id": "52k7r5A9tO0-display-0124",
+      "segment_id": "52k7r5A9tO0-ja-0053"
+    },
+    {
+      "text": "ほとんどありません。でもまだ意思で",
+      "start_seconds": 441.039,
+      "end_seconds": 444.84,
+      "id": "52k7r5A9tO0-display-0125",
+      "segment_id": "52k7r5A9tO0-ja-0054"
+    },
+    {
+      "text": "なかった。この時医学生であった僕は今",
+      "start_seconds": 444.84,
+      "end_seconds": 448.599,
+      "id": "52k7r5A9tO0-display-0126",
+      "segment_id": "52k7r5A9tO0-ja-0054"
+    },
+    {
+      "text": "よりもフラットな立場で",
+      "start_seconds": 448.599,
+      "end_seconds": 451.44,
+      "id": "52k7r5A9tO0-display-0127",
+      "segment_id": "52k7r5A9tO0-ja-0054"
+    },
+    {
+      "text": "表皮書の方々と知り合うことができました",
+      "start_seconds": 451.44,
+      "end_seconds": 453.639,
+      "id": "52k7r5A9tO0-display-0128",
+      "segment_id": "52k7r5A9tO0-ja-0055"
+    },
+    {
+      "text": "。そして子供たちとお菓子を食べたりとか",
+      "start_seconds": 453.639,
+      "end_seconds": 458.28,
+      "id": "52k7r5A9tO0-display-0129",
+      "segment_id": "52k7r5A9tO0-ja-0055"
+    },
+    {
+      "text": "する中で",
+      "start_seconds": 458.28,
+      "end_seconds": 460.68,
+      "id": "52k7r5A9tO0-display-0130",
+      "segment_id": "52k7r5A9tO0-ja-0055"
+    },
+    {
+      "text": "やはり",
+      "start_seconds": 460.68,
+      "end_seconds": 462.479,
+      "id": "52k7r5A9tO0-display-0131",
+      "segment_id": "52k7r5A9tO0-ja-0055"
+    },
+    {
+      "text": "食べることの制約非常に大きいなという風",
+      "start_seconds": 462.479,
+      "end_seconds": 465.479,
+      "id": "52k7r5A9tO0-display-0132",
+      "segment_id": "52k7r5A9tO0-ja-0056"
+    },
+    {
+      "text": "に感じました。",
+      "start_seconds": 465.479,
+      "end_seconds": 468.56,
+      "id": "52k7r5A9tO0-display-0133",
+      "segment_id": "52k7r5A9tO0-ja-0056"
+    },
+    {
+      "text": "この病気の患者さんたちは体も細くて小柄",
+      "start_seconds": 468.56,
+      "end_seconds": 471.72,
+      "id": "52k7r5A9tO0-display-0134",
+      "segment_id": "52k7r5A9tO0-ja-0057"
+    },
+    {
+      "text": "な子が多いです。",
+      "start_seconds": 471.72,
+      "end_seconds": 474.12,
+      "id": "52k7r5A9tO0-display-0135",
+      "segment_id": "52k7r5A9tO0-ja-0057"
+    },
+    {
+      "text": "それは圧倒的に摂取できるカロリーや栄養",
+      "start_seconds": 474.12,
+      "end_seconds": 478.319,
+      "id": "52k7r5A9tO0-display-0136",
+      "segment_id": "52k7r5A9tO0-ja-0058"
+    },
+    {
+      "text": "の量が少ないいうことが",
+      "start_seconds": 478.319,
+      "end_seconds": 482.879,
+      "id": "52k7r5A9tO0-display-0137",
+      "segment_id": "52k7r5A9tO0-ja-0058"
+    },
+    {
+      "text": "この子たちのために何かできないかと",
+      "start_seconds": 484.96,
+      "end_seconds": 488.639,
+      "id": "52k7r5A9tO0-display-0138",
+      "segment_id": "52k7r5A9tO0-ja-0059"
+    },
+    {
+      "text": "別に食品の専門でも全く何もありません。",
+      "start_seconds": 488.639,
+      "end_seconds": 491.96,
+      "id": "52k7r5A9tO0-display-0139",
+      "segment_id": "52k7r5A9tO0-ja-0059"
+    },
+    {
+      "text": "ただの1人の大学生、1人暮らしをしてる",
+      "start_seconds": 491.96,
+      "end_seconds": 495.8,
+      "id": "52k7r5A9tO0-display-0140",
+      "segment_id": "52k7r5A9tO0-ja-0060"
+    },
+    {
+      "text": "大学生です。そんな人間がまともな装置を",
+      "start_seconds": 495.8,
+      "end_seconds": 499.12,
+      "id": "52k7r5A9tO0-display-0141",
+      "segment_id": "52k7r5A9tO0-ja-0060"
+    },
+    {
+      "text": "持っているわけもなく、近くのスーパーに",
+      "start_seconds": 499.12,
+      "end_seconds": 502.12,
+      "id": "52k7r5A9tO0-display-0142",
+      "segment_id": "52k7r5A9tO0-ja-0060"
+    },
+    {
+      "text": "行っていろんな揚げ物子供たちが食べれ",
+      "start_seconds": 502.12,
+      "end_seconds": 505.28,
+      "id": "52k7r5A9tO0-display-0143",
+      "segment_id": "52k7r5A9tO0-ja-0061"
+    },
+    {
+      "text": "ないものをですね、買ってきてたまたま",
+      "start_seconds": 505.28,
+      "end_seconds": 508.159,
+      "id": "52k7r5A9tO0-display-0144",
+      "segment_id": "52k7r5A9tO0-ja-0061"
+    },
+    {
+      "text": "ミキサーを持っていましたのでそこに水を",
+      "start_seconds": 508.159,
+      "end_seconds": 510.52,
+      "id": "52k7r5A9tO0-display-0145",
+      "segment_id": "52k7r5A9tO0-ja-0061"
+    },
+    {
+      "text": "入れてた焼きを入れてとりあえずミキサー",
+      "start_seconds": 510.52,
+      "end_seconds": 514.039,
+      "id": "52k7r5A9tO0-display-0146",
+      "segment_id": "52k7r5A9tO0-ja-0061"
+    },
+    {
+      "text": "をかけてみる。この写真は夜中の2時半に",
+      "start_seconds": 514.039,
+      "end_seconds": 518.719,
+      "id": "52k7r5A9tO0-display-0147",
+      "segment_id": "52k7r5A9tO0-ja-0062"
+    },
+    {
+      "text": "自分の家で撮ったことを今でも覚えてい",
+      "start_seconds": 518.719,
+      "end_seconds": 520.959,
+      "id": "52k7r5A9tO0-display-0148",
+      "segment_id": "52k7r5A9tO0-ja-0062"
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 520.959,
+      "end_seconds": 522.76,
+      "id": "52k7r5A9tO0-display-0149",
+      "segment_id": "52k7r5A9tO0-ja-0062"
+    },
+    {
+      "text": "で、これを自分で食べるわけですが、到て",
+      "start_seconds": 522.76,
+      "end_seconds": 525.92,
+      "id": "52k7r5A9tO0-display-0150",
+      "segment_id": "52k7r5A9tO0-ja-0063"
+    },
+    {
+      "text": "美味しいわけがありません。",
+      "start_seconds": 525.92,
+      "end_seconds": 528.56,
+      "id": "52k7r5A9tO0-display-0151",
+      "segment_id": "52k7r5A9tO0-ja-0063"
+    },
+    {
+      "text": "でもこういうのを食べてるのが現実なん",
+      "start_seconds": 528.56,
+      "end_seconds": 531.72,
+      "id": "52k7r5A9tO0-display-0152",
+      "segment_id": "52k7r5A9tO0-ja-0064"
+    },
+    {
+      "text": "です。",
+      "start_seconds": 531.72,
+      "end_seconds": 534.839,
+      "id": "52k7r5A9tO0-display-0153",
+      "segment_id": "52k7r5A9tO0-ja-0064"
+    },
+    {
+      "text": "冗談抜きで焼肉に水を混ぜてミキサにかけ",
+      "start_seconds": 535.279,
+      "end_seconds": 539.079,
+      "id": "52k7r5A9tO0-display-0154",
+      "segment_id": "52k7r5A9tO0-ja-0065"
+    },
+    {
+      "text": "て彼らは食べています。",
+      "start_seconds": 539.079,
+      "end_seconds": 542.079,
+      "id": "52k7r5A9tO0-display-0155",
+      "segment_id": "52k7r5A9tO0-ja-0065"
+    },
+    {
+      "text": "こんなんでいいのかなと思ったんですけど",
+      "start_seconds": 542.079,
+      "end_seconds": 544.56,
+      "id": "52k7r5A9tO0-display-0156",
+      "segment_id": "52k7r5A9tO0-ja-0066"
+    },
+    {
+      "text": "も、あ、ここにもっといい食品があるじゃ",
+      "start_seconds": 544.56,
+      "end_seconds": 547.92,
+      "id": "52k7r5A9tO0-display-0157",
+      "segment_id": "52k7r5A9tO0-ja-0066"
+    },
+    {
+      "text": "ないかということにいろんな思考錯誤し",
+      "start_seconds": 547.92,
+      "end_seconds": 550.6,
+      "id": "52k7r5A9tO0-display-0158",
+      "segment_id": "52k7r5A9tO0-ja-0066"
+    },
+    {
+      "text": "てる僕は気づきまして、",
+      "start_seconds": 550.6,
+      "end_seconds": 553.279,
+      "id": "52k7r5A9tO0-display-0159",
+      "segment_id": "52k7r5A9tO0-ja-0066"
+    },
+    {
+      "text": "チョコレートに行きつきました。",
+      "start_seconds": 553.279,
+      "end_seconds": 556.56,
+      "id": "52k7r5A9tO0-display-0160",
+      "segment_id": "52k7r5A9tO0-ja-0067"
+    },
+    {
+      "text": "上温では固形ですが、口の中に入れれば",
+      "start_seconds": 556.56,
+      "end_seconds": 560.76,
+      "id": "52k7r5A9tO0-display-0161",
+      "segment_id": "52k7r5A9tO0-ja-0068"
+    },
+    {
+      "text": "噛まずともそのうち溶けていきます。",
+      "start_seconds": 560.76,
+      "end_seconds": 564.24,
+      "id": "52k7r5A9tO0-display-0162",
+      "segment_id": "52k7r5A9tO0-ja-0068"
+    },
+    {
+      "text": "こんなにいいものはないなと僕は思い、",
+      "start_seconds": 564.24,
+      "end_seconds": 568.079,
+      "id": "52k7r5A9tO0-display-0163",
+      "segment_id": "52k7r5A9tO0-ja-0069"
+    },
+    {
+      "text": "さらに彼らは圧倒的に栄養が足りてない",
+      "start_seconds": 568.079,
+      "end_seconds": 570.64,
+      "id": "52k7r5A9tO0-display-0164",
+      "segment_id": "52k7r5A9tO0-ja-0069"
+    },
+    {
+      "text": "ですから。",
+      "start_seconds": 570.64,
+      "end_seconds": 572.519,
+      "id": "52k7r5A9tO0-display-0165",
+      "segment_id": "52k7r5A9tO0-ja-0069"
+    },
+    {
+      "text": "栄養豊富な食品を入れてあげるということ",
+      "start_seconds": 572.519,
+      "end_seconds": 574.16,
+      "id": "52k7r5A9tO0-display-0166",
+      "segment_id": "52k7r5A9tO0-ja-0070"
+    },
+    {
+      "text": "も非常に利にかなっています。皮膚の先生",
+      "start_seconds": 574.16,
+      "end_seconds": 577.839,
+      "id": "52k7r5A9tO0-display-0167",
+      "segment_id": "52k7r5A9tO0-ja-0070"
+    },
+    {
+      "text": "ともご相談させていただきながら、また",
+      "start_seconds": 577.839,
+      "end_seconds": 580.64,
+      "id": "52k7r5A9tO0-display-0168",
+      "segment_id": "52k7r5A9tO0-ja-0070"
+    },
+    {
+      "text": "チョコレートの専門家とも相談をさせて",
+      "start_seconds": 580.64,
+      "end_seconds": 582.519,
+      "id": "52k7r5A9tO0-display-0169",
+      "segment_id": "52k7r5A9tO0-ja-0070"
+    },
+    {
+      "text": "いただきながら、アーモンドやチアシード",
+      "start_seconds": 582.519,
+      "end_seconds": 585.12,
+      "id": "52k7r5A9tO0-display-0170",
+      "segment_id": "52k7r5A9tO0-ja-0071"
+    },
+    {
+      "text": "、キナコ抹っ茶昆布など栄養の高いものを",
+      "start_seconds": 585.12,
+      "end_seconds": 589.56,
+      "id": "52k7r5A9tO0-display-0171",
+      "segment_id": "52k7r5A9tO0-ja-0071"
+    },
+    {
+      "text": "どうしたら美味しく取れるかというところ",
+      "start_seconds": 589.56,
+      "end_seconds": 591.68,
+      "id": "52k7r5A9tO0-display-0172",
+      "segment_id": "52k7r5A9tO0-ja-0071"
+    },
+    {
+      "text": "のギリギリを攻めて",
+      "start_seconds": 591.68,
+      "end_seconds": 595.12,
+      "id": "52k7r5A9tO0-display-0173",
+      "segment_id": "52k7r5A9tO0-ja-0072"
+    },
+    {
+      "text": "美味しいチョコレートを作ることにしまし",
+      "start_seconds": 595.12,
+      "end_seconds": 597.12,
+      "id": "52k7r5A9tO0-display-0174",
+      "segment_id": "52k7r5A9tO0-ja-0072"
+    },
+    {
+      "text": "た。",
+      "start_seconds": 597.12,
+      "end_seconds": 599.04,
+      "id": "52k7r5A9tO0-display-0175",
+      "segment_id": "52k7r5A9tO0-ja-0072"
+    },
+    {
+      "text": "で、このチョコレートをですね、先ほどの",
+      "start_seconds": 599.04,
+      "end_seconds": 600.839,
+      "id": "52k7r5A9tO0-display-0176",
+      "segment_id": "52k7r5A9tO0-ja-0073"
+    },
+    {
+      "text": "患者さんのとこに持っていくと、たくさん",
+      "start_seconds": 600.839,
+      "end_seconds": 602.92,
+      "id": "52k7r5A9tO0-display-0177",
+      "segment_id": "52k7r5A9tO0-ja-0073"
+    },
+    {
+      "text": "の子供たちが近づいてきて、わ、",
+      "start_seconds": 602.92,
+      "end_seconds": 605.16,
+      "id": "52k7r5A9tO0-display-0178",
+      "segment_id": "52k7r5A9tO0-ja-0073"
+    },
+    {
+      "text": "チョコレートだと美味しく食べてくれる",
+      "start_seconds": 605.16,
+      "end_seconds": 607.8,
+      "id": "52k7r5A9tO0-display-0179",
+      "segment_id": "52k7r5A9tO0-ja-0073"
+    },
+    {
+      "text": "わけです。",
+      "start_seconds": 607.8,
+      "end_seconds": 610.839,
+      "id": "52k7r5A9tO0-display-0180",
+      "segment_id": "52k7r5A9tO0-ja-0073"
+    },
+    {
+      "text": "こんなに嬉しいことはないし、彼らの笑顔",
+      "start_seconds": 610.839,
+      "end_seconds": 614.68,
+      "id": "52k7r5A9tO0-display-0181",
+      "segment_id": "52k7r5A9tO0-ja-0074"
+    },
+    {
+      "text": "が間近で見れることはこんなに楽しい、",
+      "start_seconds": 614.68,
+      "end_seconds": 617.8,
+      "id": "52k7r5A9tO0-display-0182",
+      "segment_id": "52k7r5A9tO0-ja-0074"
+    },
+    {
+      "text": "嬉しい。そんなことはないなという風に",
+      "start_seconds": 617.8,
+      "end_seconds": 620.04,
+      "id": "52k7r5A9tO0-display-0183",
+      "segment_id": "52k7r5A9tO0-ja-0074"
+    },
+    {
+      "text": "思いました。",
+      "start_seconds": 620.04,
+      "end_seconds": 623.48,
+      "id": "52k7r5A9tO0-display-0184",
+      "segment_id": "52k7r5A9tO0-ja-0075"
+    },
+    {
+      "text": "そしてこの男の子も病気を持っていて、手",
+      "start_seconds": 623.519,
+      "end_seconds": 627.76,
+      "id": "52k7r5A9tO0-display-0185",
+      "segment_id": "52k7r5A9tO0-ja-0076"
+    },
+    {
+      "text": "もなかなか使えない中、一生懸命絵を描い",
+      "start_seconds": 627.76,
+      "end_seconds": 630.48,
+      "id": "52k7r5A9tO0-display-0186",
+      "segment_id": "52k7r5A9tO0-ja-0076"
+    },
+    {
+      "text": "てくれて、彼の絵をパッケージにしめまし",
+      "start_seconds": 630.48,
+      "end_seconds": 633.959,
+      "id": "52k7r5A9tO0-display-0187",
+      "segment_id": "52k7r5A9tO0-ja-0076"
+    },
+    {
+      "text": "た。",
+      "start_seconds": 633.959,
+      "end_seconds": 636.12,
+      "id": "52k7r5A9tO0-display-0188",
+      "segment_id": "52k7r5A9tO0-ja-0077"
+    },
+    {
+      "text": "恐竜が大好きな彼の書いた恐竜をですね、",
+      "start_seconds": 636.12,
+      "end_seconds": 639.959,
+      "id": "52k7r5A9tO0-display-0189",
+      "segment_id": "52k7r5A9tO0-ja-0078"
+    },
+    {
+      "text": "パッケージの方として抜いて、",
+      "start_seconds": 639.959,
+      "end_seconds": 643.8,
+      "id": "52k7r5A9tO0-display-0190",
+      "segment_id": "52k7r5A9tO0-ja-0078"
+    },
+    {
+      "text": "普段",
+      "start_seconds": 643.8,
+      "end_seconds": 645.32,
+      "id": "52k7r5A9tO0-display-0191",
+      "segment_id": "52k7r5A9tO0-ja-0078"
+    },
+    {
+      "text": "パソコンもスマホもなかなか満足に指です",
+      "start_seconds": 645.32,
+      "end_seconds": 648.16,
+      "id": "52k7r5A9tO0-display-0192",
+      "segment_id": "52k7r5A9tO0-ja-0079"
+    },
+    {
+      "text": "から、こんなに発信するデバイスが発展し",
+      "start_seconds": 648.16,
+      "end_seconds": 651.32,
+      "id": "52k7r5A9tO0-display-0193",
+      "segment_id": "52k7r5A9tO0-ja-0079"
+    },
+    {
+      "text": "た世の中でもなかなか自分のことを伝える",
+      "start_seconds": 651.32,
+      "end_seconds": 653.76,
+      "id": "52k7r5A9tO0-display-0194",
+      "segment_id": "52k7r5A9tO0-ja-0079"
+    },
+    {
+      "text": "ということが難しいです。でもこの",
+      "start_seconds": 653.76,
+      "end_seconds": 657.079,
+      "id": "52k7r5A9tO0-display-0195",
+      "segment_id": "52k7r5A9tO0-ja-0079"
+    },
+    {
+      "text": "パッケージを世の中に届けていろんな人",
+      "start_seconds": 657.079,
+      "end_seconds": 659.24,
+      "id": "52k7r5A9tO0-display-0196",
+      "segment_id": "52k7r5A9tO0-ja-0080"
+    },
+    {
+      "text": "から反響があってこの前彼と電話をしたら",
+      "start_seconds": 659.24,
+      "end_seconds": 662.32,
+      "id": "52k7r5A9tO0-display-0197",
+      "segment_id": "52k7r5A9tO0-ja-0080"
+    },
+    {
+      "text": "こんなに嬉しいことはないと自分の書いた",
+      "start_seconds": 662.32,
+      "end_seconds": 665.48,
+      "id": "52k7r5A9tO0-display-0198",
+      "segment_id": "52k7r5A9tO0-ja-0080"
+    },
+    {
+      "text": "ものがみんなが見てくれてる。こんなに",
+      "start_seconds": 665.48,
+      "end_seconds": 668.48,
+      "id": "52k7r5A9tO0-display-0199",
+      "segment_id": "52k7r5A9tO0-ja-0080"
+    },
+    {
+      "text": "嬉しいことはないという風に電話越しに",
+      "start_seconds": 668.48,
+      "end_seconds": 670.36,
+      "id": "52k7r5A9tO0-display-0200",
+      "segment_id": "52k7r5A9tO0-ja-0081"
+    },
+    {
+      "text": "言ってくれました。",
+      "start_seconds": 670.36,
+      "end_seconds": 673.9590000000001,
+      "id": "52k7r5A9tO0-display-0201",
+      "segment_id": "52k7r5A9tO0-ja-0081"
+    },
+    {
+      "text": "そしてこの女の子も表皮を持っています。",
+      "start_seconds": 674.8,
+      "end_seconds": 678.079,
+      "id": "52k7r5A9tO0-display-0202",
+      "segment_id": "52k7r5A9tO0-ja-0082"
+    },
+    {
+      "text": "お兄ちゃんはこの病気を持っていません。",
+      "start_seconds": 678.079,
+      "end_seconds": 681.399,
+      "id": "52k7r5A9tO0-display-0203",
+      "segment_id": "52k7r5A9tO0-ja-0083"
+    },
+    {
+      "text": "この子普段は特別な食事を食べています。",
+      "start_seconds": 681.399,
+      "end_seconds": 684.92,
+      "id": "52k7r5A9tO0-display-0204",
+      "segment_id": "52k7r5A9tO0-ja-0084"
+    },
+    {
+      "text": "でもご自宅にチョコレートを持っていった",
+      "start_seconds": 684.92,
+      "end_seconds": 686.8,
+      "id": "52k7r5A9tO0-display-0205",
+      "segment_id": "52k7r5A9tO0-ja-0085"
+    },
+    {
+      "text": "時はお兄さんと争う家のように食べてい",
+      "start_seconds": 686.8,
+      "end_seconds": 689.959,
+      "id": "52k7r5A9tO0-display-0206",
+      "segment_id": "52k7r5A9tO0-ja-0085"
+    },
+    {
+      "text": "ました。結局チョコレートを通して栄養を",
+      "start_seconds": 689.959,
+      "end_seconds": 693.76,
+      "id": "52k7r5A9tO0-display-0207",
+      "segment_id": "52k7r5A9tO0-ja-0085"
+    },
+    {
+      "text": "届けるというのは最低限のことであって、",
+      "start_seconds": 693.76,
+      "end_seconds": 697.519,
+      "id": "52k7r5A9tO0-display-0208",
+      "segment_id": "52k7r5A9tO0-ja-0086"
+    },
+    {
+      "text": "これをパキッと割って誰かと一緒に食べる",
+      "start_seconds": 697.519,
+      "end_seconds": 700.399,
+      "id": "52k7r5A9tO0-display-0209",
+      "segment_id": "52k7r5A9tO0-ja-0086"
+    },
+    {
+      "text": "。その空間を共有する。",
+      "start_seconds": 700.399,
+      "end_seconds": 703.04,
+      "id": "52k7r5A9tO0-display-0210",
+      "segment_id": "52k7r5A9tO0-ja-0086"
+    },
+    {
+      "text": "コミュニケーションとして空間を作る。",
+      "start_seconds": 703.04,
+      "end_seconds": 706.44,
+      "id": "52k7r5A9tO0-display-0211",
+      "segment_id": "52k7r5A9tO0-ja-0087"
+    },
+    {
+      "text": "そういった部分も大事にしていたので、",
+      "start_seconds": 706.44,
+      "end_seconds": 708.76,
+      "id": "52k7r5A9tO0-display-0212",
+      "segment_id": "52k7r5A9tO0-ja-0088"
+    },
+    {
+      "text": "まさにお家の中で",
+      "start_seconds": 708.76,
+      "end_seconds": 711.68,
+      "id": "52k7r5A9tO0-display-0213",
+      "segment_id": "52k7r5A9tO0-ja-0088"
+    },
+    {
+      "text": "お子さん2人がその場を作ってくれたと",
+      "start_seconds": 711.68,
+      "end_seconds": 714.76,
+      "id": "52k7r5A9tO0-display-0214",
+      "segment_id": "52k7r5A9tO0-ja-0088"
+    },
+    {
+      "text": "いうことは僕にとって非常に嬉しい事実",
+      "start_seconds": 714.76,
+      "end_seconds": 717.519,
+      "id": "52k7r5A9tO0-display-0215",
+      "segment_id": "52k7r5A9tO0-ja-0088"
+    },
+    {
+      "text": "でした。",
+      "start_seconds": 717.519,
+      "end_seconds": 720.76,
+      "id": "52k7r5A9tO0-display-0216",
+      "segment_id": "52k7r5A9tO0-ja-0089"
+    },
+    {
+      "text": "先ほどイラストを書いてくれた男の子です",
+      "start_seconds": 723.32,
+      "end_seconds": 725.76,
+      "id": "52k7r5A9tO0-display-0217",
+      "segment_id": "52k7r5A9tO0-ja-0090"
+    },
+    {
+      "text": "が、",
+      "start_seconds": 725.76,
+      "end_seconds": 728.079,
+      "id": "52k7r5A9tO0-display-0218",
+      "segment_id": "52k7r5A9tO0-ja-0090"
+    },
+    {
+      "text": "彼の将来の夢はマンモスを蘇らせること。",
+      "start_seconds": 728.079,
+      "end_seconds": 733.399,
+      "id": "52k7r5A9tO0-display-0219",
+      "segment_id": "52k7r5A9tO0-ja-0090"
+    },
+    {
+      "text": "高校学者になりたいと強く言ってくれました。もう",
+      "start_seconds": 733.399,
+      "end_seconds": 736.399,
+      "id": "52k7r5A9tO0-display-0220",
+      "segment_id": "52k7r5A9tO0-ja-0091"
+    },
+    {
+      "text": "1",
+      "start_seconds": 738.88,
+      "end_seconds": 739.0,
+      "id": "52k7r5A9tO0-display-0221",
+      "segment_id": "52k7r5A9tO0-ja-0092"
+    },
+    {
+      "text": "人の赤いジャージを着た男の子。この子は消防隊になりたい。救急車や消防者が大好きだという風に言ってくれました。",
+      "start_seconds": 739.0,
+      "end_seconds": 742.0,
+      "id": "52k7r5A9tO0-display-0222",
+      "segment_id": "52k7r5A9tO0-ja-0092"
+    },
+    {
+      "text": "しかし事実として彼らに身体的なハンディキャップがあるのは紛れもない事実ではあります。",
+      "start_seconds": 751.88,
+      "end_seconds": 754.88,
+      "id": "52k7r5A9tO0-display-0223",
+      "segment_id": "52k7r5A9tO0-ja-0093"
+    },
+    {
+      "text": "でも",
+      "start_seconds": 764.16,
+      "end_seconds": 766.04,
+      "id": "52k7r5A9tO0-display-0224",
+      "segment_id": "52k7r5A9tO0-ja-0094"
+    },
+    {
+      "text": "彼らのそういった夢をサポートしてあげる",
+      "start_seconds": 766.04,
+      "end_seconds": 769.8,
+      "id": "52k7r5A9tO0-display-0225",
+      "segment_id": "52k7r5A9tO0-ja-0094"
+    },
+    {
+      "text": "のが我々のやるべきことではないかなと",
+      "start_seconds": 769.8,
+      "end_seconds": 773.48,
+      "id": "52k7r5A9tO0-display-0226",
+      "segment_id": "52k7r5A9tO0-ja-0094"
+    },
+    {
+      "text": "いう風に思っています。でも先ほどお話し",
+      "start_seconds": 773.48,
+      "end_seconds": 776.88,
+      "id": "52k7r5A9tO0-display-0227",
+      "segment_id": "52k7r5A9tO0-ja-0095"
+    },
+    {
+      "text": "した通り6万人に1人しかいませんから",
+      "start_seconds": 776.88,
+      "end_seconds": 780.72,
+      "id": "52k7r5A9tO0-display-0228",
+      "segment_id": "52k7r5A9tO0-ja-0095"
+    },
+    {
+      "text": "普通にしていては絶対社会は見てくれない",
+      "start_seconds": 780.72,
+      "end_seconds": 783.839,
+      "id": "52k7r5A9tO0-display-0229",
+      "segment_id": "52k7r5A9tO0-ja-0095"
+    },
+    {
+      "text": "と。",
+      "start_seconds": 783.839,
+      "end_seconds": 786.9590000000001,
+      "id": "52k7r5A9tO0-display-0230",
+      "segment_id": "52k7r5A9tO0-ja-0096"
+    },
+    {
+      "text": "それは僕は",
+      "start_seconds": 787.24,
+      "end_seconds": 790.399,
+      "id": "52k7r5A9tO0-display-0231",
+      "segment_id": "52k7r5A9tO0-ja-0097"
+    },
+    {
+      "text": "医療に携わるものとして理解していたので",
+      "start_seconds": 790.399,
+      "end_seconds": 793.72,
+      "id": "52k7r5A9tO0-display-0232",
+      "segment_id": "52k7r5A9tO0-ja-0097"
+    },
+    {
+      "text": "、このチョコレートというものを通して",
+      "start_seconds": 793.72,
+      "end_seconds": 798.12,
+      "id": "52k7r5A9tO0-display-0233",
+      "segment_id": "52k7r5A9tO0-ja-0097"
+    },
+    {
+      "text": "自然な形で世の中に発信をして理解をして",
+      "start_seconds": 798.12,
+      "end_seconds": 801.68,
+      "id": "52k7r5A9tO0-display-0234",
+      "segment_id": "52k7r5A9tO0-ja-0098"
+    },
+    {
+      "text": "もらう。そして1周回って、あ、こんな",
+      "start_seconds": 801.68,
+      "end_seconds": 805.519,
+      "id": "52k7r5A9tO0-display-0235",
+      "segment_id": "52k7r5A9tO0-ja-0098"
+    },
+    {
+      "text": "病気があるんだと世の中が理解をしてくれ",
+      "start_seconds": 805.519,
+      "end_seconds": 808.16,
+      "id": "52k7r5A9tO0-display-0236",
+      "segment_id": "52k7r5A9tO0-ja-0098"
+    },
+    {
+      "text": "て彼らの未来につがっていく。",
+      "start_seconds": 808.16,
+      "end_seconds": 812.04,
+      "id": "52k7r5A9tO0-display-0237",
+      "segment_id": "52k7r5A9tO0-ja-0099"
+    },
+    {
+      "text": "もしかしたら",
+      "start_seconds": 812.04,
+      "end_seconds": 814.639,
+      "id": "52k7r5A9tO0-display-0238",
+      "segment_id": "52k7r5A9tO0-ja-0100"
+    },
+    {
+      "text": "週明け皆さんが職場に行ったら",
+      "start_seconds": 814.639,
+      "end_seconds": 819.88,
+      "id": "52k7r5A9tO0-display-0239",
+      "segment_id": "52k7r5A9tO0-ja-0100"
+    },
+    {
+      "text": "お客様として",
+      "start_seconds": 819.88,
+      "end_seconds": 822.12,
+      "id": "52k7r5A9tO0-display-0240",
+      "segment_id": "52k7r5A9tO0-ja-0100"
+    },
+    {
+      "text": "この患者さんたちが来るかもしれません。",
+      "start_seconds": 822.12,
+      "end_seconds": 824.839,
+      "id": "52k7r5A9tO0-display-0241",
+      "segment_id": "52k7r5A9tO0-ja-0101"
+    },
+    {
+      "text": "来年の就職活動面接で彼らが新卒として",
+      "start_seconds": 824.839,
+      "end_seconds": 829.959,
+      "id": "52k7r5A9tO0-display-0242",
+      "segment_id": "52k7r5A9tO0-ja-0102"
+    },
+    {
+      "text": "面接に来るかもしれません。",
+      "start_seconds": 829.959,
+      "end_seconds": 833.44,
+      "id": "52k7r5A9tO0-display-0243",
+      "segment_id": "52k7r5A9tO0-ja-0102"
+    },
+    {
+      "text": "その時に",
+      "start_seconds": 833.44,
+      "end_seconds": 835.48,
+      "id": "52k7r5A9tO0-display-0244",
+      "segment_id": "52k7r5A9tO0-ja-0103"
+    },
+    {
+      "text": "できないことを見るのではなくて、",
+      "start_seconds": 835.48,
+      "end_seconds": 838.68,
+      "id": "52k7r5A9tO0-display-0245",
+      "segment_id": "52k7r5A9tO0-ja-0103"
+    },
+    {
+      "text": "彼らも1人の人間として一生懸命生きて",
+      "start_seconds": 838.68,
+      "end_seconds": 842.04,
+      "id": "52k7r5A9tO0-display-0246",
+      "segment_id": "52k7r5A9tO0-ja-0103"
+    },
+    {
+      "text": "いる",
+      "start_seconds": 842.04,
+      "end_seconds": 843.92,
+      "id": "52k7r5A9tO0-display-0247",
+      "segment_id": "52k7r5A9tO0-ja-0103"
+    },
+    {
+      "text": "いうところをまず見ていただけたら僕は",
+      "start_seconds": 843.92,
+      "end_seconds": 846.519,
+      "id": "52k7r5A9tO0-display-0248",
+      "segment_id": "52k7r5A9tO0-ja-0104"
+    },
+    {
+      "text": "非常に嬉しいです。",
+      "start_seconds": 846.519,
+      "end_seconds": 848.959,
+      "id": "52k7r5A9tO0-display-0249",
+      "segment_id": "52k7r5A9tO0-ja-0104"
+    },
+    {
+      "text": "そして",
+      "start_seconds": 848.959,
+      "end_seconds": 850.759,
+      "id": "52k7r5A9tO0-display-0250",
+      "segment_id": "52k7r5A9tO0-ja-0105"
+    },
+    {
+      "text": "僕は残念ながらほとんどの時間を病院で",
+      "start_seconds": 850.759,
+      "end_seconds": 854.04,
+      "id": "52k7r5A9tO0-display-0251",
+      "segment_id": "52k7r5A9tO0-ja-0105"
+    },
+    {
+      "text": "過ごしてます。",
+      "start_seconds": 854.04,
+      "end_seconds": 857.56,
+      "id": "52k7r5A9tO0-display-0252",
+      "segment_id": "52k7r5A9tO0-ja-0105"
+    },
+    {
+      "text": "なので、こういった場所でこういったお話",
+      "start_seconds": 860.48,
+      "end_seconds": 862.88,
+      "id": "52k7r5A9tO0-display-0253",
+      "segment_id": "52k7r5A9tO0-ja-0106"
+    },
+    {
+      "text": "をさせていただく機会はほとんどありませ",
+      "start_seconds": 862.88,
+      "end_seconds": 865.279,
+      "id": "52k7r5A9tO0-display-0254",
+      "segment_id": "52k7r5A9tO0-ja-0106"
+    },
+    {
+      "text": "ん。",
+      "start_seconds": 865.279,
+      "end_seconds": 867.88,
+      "id": "52k7r5A9tO0-display-0255",
+      "segment_id": "52k7r5A9tO0-ja-0106"
+    },
+    {
+      "text": "だから",
+      "start_seconds": 867.88,
+      "end_seconds": 870.12,
+      "id": "52k7r5A9tO0-display-0256",
+      "segment_id": "52k7r5A9tO0-ja-0107"
+    },
+    {
+      "text": "是非今日はこの場所に来ていたいただいた",
+      "start_seconds": 870.12,
+      "end_seconds": 872.44,
+      "id": "52k7r5A9tO0-display-0257",
+      "segment_id": "52k7r5A9tO0-ja-0107"
+    },
+    {
+      "text": "皆さんに",
+      "start_seconds": 872.44,
+      "end_seconds": 874.639,
+      "id": "52k7r5A9tO0-display-0258",
+      "segment_id": "52k7r5A9tO0-ja-0107"
+    },
+    {
+      "text": "この病気だけで出なくても構いません。",
+      "start_seconds": 874.639,
+      "end_seconds": 878.399,
+      "id": "52k7r5A9tO0-display-0259",
+      "segment_id": "52k7r5A9tO0-ja-0107"
+    },
+    {
+      "text": "いろんな大変な病気があるんだよと。",
+      "start_seconds": 878.399,
+      "end_seconds": 880.639,
+      "id": "52k7r5A9tO0-display-0260",
+      "segment_id": "52k7r5A9tO0-ja-0108"
+    },
+    {
+      "text": "そして一歩待ちを歩けばもしかしたら自分",
+      "start_seconds": 880.639,
+      "end_seconds": 883.759,
+      "id": "52k7r5A9tO0-display-0261",
+      "segment_id": "52k7r5A9tO0-ja-0109"
+    },
+    {
+      "text": "もどこか出会うかもしれない。",
+      "start_seconds": 883.759,
+      "end_seconds": 886.72,
+      "id": "52k7r5A9tO0-display-0262",
+      "segment_id": "52k7r5A9tO0-ja-0109"
+    },
+    {
+      "text": "そういったアンテナを1本だけでもいいの",
+      "start_seconds": 886.72,
+      "end_seconds": 889.16,
+      "id": "52k7r5A9tO0-display-0263",
+      "segment_id": "52k7r5A9tO0-ja-0110"
+    },
+    {
+      "text": "で立てていただいて",
+      "start_seconds": 889.16,
+      "end_seconds": 892.44,
+      "id": "52k7r5A9tO0-display-0264",
+      "segment_id": "52k7r5A9tO0-ja-0110"
+    },
+    {
+      "text": "僕が病院にいる代わりに社会の中で",
+      "start_seconds": 892.44,
+      "end_seconds": 897.44,
+      "id": "52k7r5A9tO0-display-0265",
+      "segment_id": "52k7r5A9tO0-ja-0110"
+    },
+    {
+      "text": "気を配っていただけたら非常に嬉しいなと",
+      "start_seconds": 897.44,
+      "end_seconds": 900.44,
+      "id": "52k7r5A9tO0-display-0266",
+      "segment_id": "52k7r5A9tO0-ja-0111"
+    },
+    {
+      "text": "いう風に思います。",
+      "start_seconds": 900.44,
+      "end_seconds": 903.56,
+      "id": "52k7r5A9tO0-display-0267",
+      "segment_id": "52k7r5A9tO0-ja-0111"
+    },
+    {
+      "text": "医療者だけではできないことがたくさん",
+      "start_seconds": 903.56,
+      "end_seconds": 906.959,
+      "id": "52k7r5A9tO0-display-0268",
+      "segment_id": "52k7r5A9tO0-ja-0112"
+    },
+    {
+      "text": "あります。",
+      "start_seconds": 906.959,
+      "end_seconds": 909.079,
+      "id": "52k7r5A9tO0-display-0269",
+      "segment_id": "52k7r5A9tO0-ja-0112"
+    },
+    {
+      "text": "だから社会全体としてこういった子たちを",
+      "start_seconds": 909.079,
+      "end_seconds": 913.279,
+      "id": "52k7r5A9tO0-display-0270",
+      "segment_id": "52k7r5A9tO0-ja-0113"
+    },
+    {
+      "text": "サポートしていただける仲間になって",
+      "start_seconds": 913.279,
+      "end_seconds": 916.04,
+      "id": "52k7r5A9tO0-display-0271",
+      "segment_id": "52k7r5A9tO0-ja-0113"
+    },
+    {
+      "text": "いただけたら",
+      "start_seconds": 916.04,
+      "end_seconds": 919.279,
+      "id": "52k7r5A9tO0-display-0272",
+      "segment_id": "52k7r5A9tO0-ja-0113"
+    },
+    {
+      "text": "意思である私としてこんなに嬉しいことは",
+      "start_seconds": 921.04,
+      "end_seconds": 923.639,
+      "id": "52k7r5A9tO0-display-0273",
+      "segment_id": "52k7r5A9tO0-ja-0114"
+    },
+    {
+      "text": "ありません。",
+      "start_seconds": 923.639,
+      "end_seconds": 925.759,
+      "id": "52k7r5A9tO0-display-0274",
+      "segment_id": "52k7r5A9tO0-ja-0114"
+    },
+    {
+      "text": "是非仲間になっていただけたらありがたい",
+      "start_seconds": 925.759,
+      "end_seconds": 927.92,
+      "id": "52k7r5A9tO0-display-0275",
+      "segment_id": "52k7r5A9tO0-ja-0115"
+    },
+    {
+      "text": "です。ご清聴ありがとうございました。",
+      "start_seconds": 927.92,
+      "end_seconds": 931.42,
+      "id": "52k7r5A9tO0-display-0276",
+      "segment_id": "52k7r5A9tO0-ja-0115"
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 931.42,
+      "end_seconds": 933.4399999999999,
+      "id": "52k7r5A9tO0-display-0277",
+      "segment_id": "52k7r5A9tO0-ja-0116"
+    }
+  ]
+}

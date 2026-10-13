@@ -44,7 +44,7 @@ Mỗi góp ý có loại `error` (lỗi có bằng chứng) hoặc `alternative`
 
 ## API bên ngoài
 
-Đề xuất dùng OpenRouter qua backend, tái sử dụng cách gọi provider hiện có trong `speaking/ai.py`. Cấu hình model riêng bằng `SPEAKING_EVALUATION_MODEL`, không buộc đổi model hội thoại. API key giữ ở backend.
+Dùng Gemini qua backend với `GEMINI_API_KEY` hiện có. Cấu hình model riêng bằng `SPEAKING_EVALUATION_MODEL`, không buộc đổi model hội thoại. API key giữ ở backend.
 
 Payload chỉ gồm bối cảnh công khai của tình huống, mục tiêu học tập, trình độ, vai trò và transcript hoàn tất có `message_id`, `speaker`, `input_mode`, `content`. Câu AI giúp hiểu ngữ cảnh; chỉ câu của người dùng được chấm. Không gửi tài khoản/email/số điện thoại, private AI instructions, audio hoặc credentials. Nội dung cá nhân mà người dùng đã nói trong transcript vẫn có thể nằm trong payload.
 

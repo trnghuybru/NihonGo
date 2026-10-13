@@ -1,0 +1,2915 @@
+{
+  "schema_version": 1,
+  "video": {
+    "youtube_id": "Zl9u3m-tl3Q",
+    "title": "「何者か」にならなくてもいい。人生に疲れた時に「下を見る」べき理由 | Ken Sasaki | TEDxTIU",
+    "channel": "TEDx Talks",
+    "duration_seconds": 704
+  },
+  "caption_track": {
+    "language": "ja",
+    "kind": "asr",
+    "source": "youtube_automatic"
+  },
+  "source_playlist": "https://www.youtube.com/playlist?list=PLsRNoUx8w3rOHjXIU5EE4KOiIagv9yQaG",
+  "fetched_at": "2026-10-13T13:21:56.339989+00:00",
+  "segment_count": 84,
+  "segments": [
+    {
+      "text": "ですが55年前の私の写真です。通常ですとここから家庭環境や幼少期の思い出など家族のテーマのようなものが始まってく",
+      "start_seconds": 13.96,
+      "end_seconds": 25.8,
+      "id": "Zl9u3m-tl3Q-ja-0001",
+      "sequence": 1
+    },
+    {
+      "text": "最初の1番になると思うんですが私の場合は違います。可愛い自分の写真を見つけたから使ってるだけです。",
+      "start_seconds": 25.8,
+      "end_seconds": 36.28,
+      "id": "Zl9u3m-tl3Q-ja-0002",
+      "sequence": 2
+    },
+    {
+      "text": "はい。この写真で、え、さっきの赤ちゃんの写真で注目してもらいたいところが実は2つあったんです。スライドが次に行っ",
+      "start_seconds": 38.48,
+      "end_seconds": 47.559,
+      "id": "Zl9u3m-tl3Q-ja-0003",
+      "sequence": 3
+    },
+    {
+      "text": "ちゃったんでもう1回戻します。",
+      "start_seconds": 47.559,
+      "end_seconds": 51.6,
+      "id": "Zl9u3m-tl3Q-ja-0004",
+      "sequence": 4
+    },
+    {
+      "text": "2つ注目してもらいたいとこあります。",
+      "start_seconds": 51.6,
+      "end_seconds": 53.84,
+      "id": "Zl9u3m-tl3Q-ja-0005",
+      "sequence": 5
+    },
+    {
+      "text": "この目線見てください。このカメですね。",
+      "start_seconds": 53.84,
+      "end_seconds": 57.16,
+      "id": "Zl9u3m-tl3Q-ja-0006",
+      "sequence": 6
+    },
+    {
+      "text": "素晴らしいです。あともう1つはこのほっこりとしたお尻。これ可愛いと思います。",
+      "start_seconds": 57.16,
+      "end_seconds": 64.839,
+      "id": "Zl9u3m-tl3Q-ja-0007",
+      "sequence": 7
+    },
+    {
+      "text": "これが現在の私です。[咳払い]大事の中でのやろうよ。そういうことが言いたいんじゃないんです。見てもらいたいとこはお腹。このぽっこりしたお腹。",
+      "start_seconds": 64.839,
+      "end_seconds": 76.24,
+      "id": "Zl9u3m-tl3Q-ja-0008",
+      "sequence": 8
+    },
+    {
+      "text": "可愛く成長しました。",
+      "start_seconds": 76.24,
+      "end_seconds": 79.08,
+      "id": "Zl9u3m-tl3Q-ja-0009",
+      "sequence": 9
+    },
+    {
+      "text": "これ私が普段お茶してる時の写真です。見て欲しいのは1箇所お茶を押し作り方を説明したいんじゃないです。",
+      "start_seconds": 79.08,
+      "end_seconds": 89.24,
+      "id": "Zl9u3m-tl3Q-ja-0010",
+      "sequence": 10
+    },
+    {
+      "text": "の人かっこいいですよね。字が自さです。",
+      "start_seconds": 89.24,
+      "end_seconds": 94.28,
+      "id": "Zl9u3m-tl3Q-ja-0011",
+      "sequence": 11
+    },
+    {
+      "text": "こんなこと話してたら時間が経ってしまうのでそろそろ本題に入ります。あなたは何者ですか?",
+      "start_seconds": 94.28,
+      "end_seconds": 103.52,
+      "id": "Zl9u3m-tl3Q-ja-0012",
+      "sequence": 12
+    },
+    {
+      "text": "いきなり皆さんこのこと聞かれたら怖いですよね。怖いですから私は今日今皆さんには聞きません。今日話したいのはこう",
+      "start_seconds": 103.52,
+      "end_seconds": 112.479,
+      "id": "Zl9u3m-tl3Q-ja-0013",
+      "sequence": 13
+    },
+    {
+      "text": "いうことです。私はチ種としていろんな働きをなれ並べればそれなりの人に見えてしまいます。でもそんな話をしてきたん",
+      "start_seconds": 112.479,
+      "end_seconds": 123.68,
+      "id": "Zl9u3m-tl3Q-ja-0014",
+      "sequence": 14
+    },
+    {
+      "text": "じゃないんです。失敗や座。そのポンコの山の中からあなたは何者ですか?この答えを見つけ",
+      "start_seconds": 123.68,
+      "end_seconds": 133.44,
+      "id": "Zl9u3m-tl3Q-ja-0015",
+      "sequence": 15
+    },
+    {
+      "text": "ました。それを皆さんと共有したいと思います。小学生の頃目の前に育たクラスメイトからバスケットの練習に誘われました。",
+      "start_seconds": 133.44,
+      "end_seconds": 144.36,
+      "id": "Zl9u3m-tl3Q-ja-0016",
+      "sequence": 16
+    },
+    {
+      "text": "彼の練習を見ていたらとにかくすごいんです。うまいんです。一瞬でそうれるセンスがありました。僕はすぐに諦めまし",
+      "start_seconds": 144.36,
+      "end_seconds": 153.04,
+      "id": "Zl9u3m-tl3Q-ja-0017",
+      "sequence": 17
+    },
+    {
+      "text": "た。でもその顔は正しかったんです。後に彼はミスターバスケットボールと言われる偉大なプレイヤーになりました。よし、次",
+      "start_seconds": 153.04,
+      "end_seconds": 164.28,
+      "id": "Zl9u3m-tl3Q-ja-0018",
+      "sequence": 18
+    },
+    {
+      "text": "はサッカーが1年間ある時後輩が入ってきて彼の手段に立ってます。とんでもないものを受けてからあ、",
+      "start_seconds": 164.28,
+      "end_seconds": 175.319,
+      "id": "Zl9u3m-tl3Q-ja-0019",
+      "sequence": 19
+    },
+    {
+      "text": "ここは誰だ?",
+      "start_seconds": 175.319,
+      "end_seconds": 177.84,
+      "id": "Zl9u3m-tl3Q-ja-0020",
+      "sequence": 20
+    },
+    {
+      "text": "僕の何者の場所になるところじゃないと思いました。これもすぐ諦めました。彼は後にJBがあって有名な人気になって芸能",
+      "start_seconds": 177.84,
+      "end_seconds": 187.92,
+      "id": "Zl9u3m-tl3Q-ja-0021",
+      "sequence": 21
+    },
+    {
+      "text": "界になあんなの撮影したんですよ。やらなくてよかったです。そっか。こんなメジャーなスポーツばかりに挑戦するからダメだった。そう思いました。そう思って",
+      "start_seconds": 187.92,
+      "end_seconds": 198.12,
+      "id": "Zl9u3m-tl3Q-ja-0022",
+      "sequence": 22
+    },
+    {
+      "text": "僕はボーリングを始めました。小学生で本気でやってる人なんていなかったんです。お小遣いでマイボールを作り、いろんな",
+      "start_seconds": 198.12,
+      "end_seconds": 207.12,
+      "id": "Zl9u3m-tl3Q-ja-0023",
+      "sequence": 23
+    },
+    {
+      "text": "大談に出ました。でもこれも挫折をしてしまいました。ちなみにプロボーラーで1番になるというビジョンはあったんです。",
+      "start_seconds": 207.12,
+      "end_seconds": 218.12,
+      "id": "Zl9u3m-tl3Q-ja-0024",
+      "sequence": 24
+    },
+    {
+      "text": "当時第2人気だったプロレスラーでタイガーマスク選手というのがいました。",
+      "start_seconds": 218.12,
+      "end_seconds": 223.84,
+      "id": "Zl9u3m-tl3Q-ja-0025",
+      "sequence": 25
+    },
+    {
+      "text": "面をかぶって右手でも左手でもストライクが取れるそんなプロボーラーになってやろうと思ったんです。",
+      "start_seconds": 223.84,
+      "end_seconds": 233.079,
+      "id": "Zl9u3m-tl3Q-ja-0026",
+      "sequence": 26
+    },
+    {
+      "text": "小学生の企画と企画書としてはかなり奇だったと思います。こうやって振り返ると笑い話に聞こえるかもしれませんが当時の",
+      "start_seconds": 233.079,
+      "end_seconds": 243.879,
+      "id": "Zl9u3m-tl3Q-ja-0027",
+      "sequence": 27
+    },
+    {
+      "text": "僕は本気でした。勝てる場所を探し続けて見つからないまま中学生高校大学と卒業します。",
+      "start_seconds": 243.879,
+      "end_seconds": 254.12,
+      "id": "Zl9u3m-tl3Q-ja-0028",
+      "sequence": 28
+    },
+    {
+      "text": "収束先は中国料理の調理場でした。なぜならラーメンが好きだったんです。そして20",
+      "start_seconds": 254.12,
+      "end_seconds": 263.44,
+      "id": "Zl9u3m-tl3Q-ja-0029",
+      "sequence": 29
+    },
+    {
+      "text": "代で企業を決意します。普通の中国料理をやっても多分流行らないだろうと思いました。そうだ。小学生の時は企画書だ。覆面",
+      "start_seconds": 263.44,
+      "end_seconds": 274.44,
+      "id": "Zl9u3m-tl3Q-ja-0030",
+      "sequence": 30
+    },
+    {
+      "text": "かけるプロラ。これで行こう。中国料理のお店かけるおしゃるの屋。",
+      "start_seconds": 274.44,
+      "end_seconds": 281.639,
+      "id": "Zl9u3m-tl3Q-ja-0031",
+      "sequence": 31
+    },
+    {
+      "text": "こんな店です。",
+      "start_seconds": 281.639,
+      "end_seconds": 284.32,
+      "id": "Zl9u3m-tl3Q-ja-0032",
+      "sequence": 32
+    },
+    {
+      "text": "今まで寝なかった業体だったのでこれが大成功しました。あっという間に店舗は4店舗まで増え従業員がいっぱい入ってきて",
+      "start_seconds": 284.32,
+      "end_seconds": 293.12,
+      "id": "Zl9u3m-tl3Q-ja-0033",
+      "sequence": 33
+    },
+    {
+      "text": "くれました。正直に言います。この時の高用感は今でも覚えてます。みんなが自分の言葉に頷いてくれる数字がどんどん",
+      "start_seconds": 293.12,
+      "end_seconds": 304.479,
+      "id": "Zl9u3m-tl3Q-ja-0034",
+      "sequence": 34
+    },
+    {
+      "text": "上がっていく。ようやく僕は何者かに慣れたんじゃないかそう思ってました。",
+      "start_seconds": 304.479,
+      "end_seconds": 311.759,
+      "id": "Zl9u3m-tl3Q-ja-0035",
+      "sequence": 35
+    },
+    {
+      "text": "やっと見つけたような気になってました。",
+      "start_seconds": 311.759,
+      "end_seconds": 316.8,
+      "id": "Zl9u3m-tl3Q-ja-0036",
+      "sequence": 36
+    },
+    {
+      "text": "でも今振り返るとあれは見つけたんじゃなくてただ間当上がってただけなんです。",
+      "start_seconds": 316.84,
+      "end_seconds": 326.31899999999996,
+      "id": "Zl9u3m-tl3Q-ja-0037",
+      "sequence": 37
+    },
+    {
+      "text": "その経2008年日本茶業界に採用します。当時の日本家は車両産業いわゆる劣等者",
+      "start_seconds": 328.0,
+      "end_seconds": 336.8,
+      "id": "Zl9u3m-tl3Q-ja-0038",
+      "sequence": 38
+    },
+    {
+      "text": "なんです。アラジ各国の下落日本でいろんな問題が重なっていました。これをどうにかしてやろうと思っていました。今",
+      "start_seconds": 336.8,
+      "end_seconds": 347.88,
+      "id": "Zl9u3m-tl3Q-ja-0039",
+      "sequence": 39
+    },
+    {
+      "text": "は相当な思い上がりです。お店を作ったままも1年間はお客さんがほとんど来てくれなかったんです。そこでコンテストに",
+      "start_seconds": 347.88,
+      "end_seconds": 358.4,
+      "id": "Zl9u3m-tl3Q-ja-0040",
+      "sequence": 40
+    },
+    {
+      "text": "出して致名度を上げてやっとお客さんが来てくれるようになった。",
+      "start_seconds": 358.4,
+      "end_seconds": 364.16,
+      "id": "Zl9u3m-tl3Q-ja-0041",
+      "sequence": 41
+    },
+    {
+      "text": "お茶のおろしの出も始まりました。",
+      "start_seconds": 364.16,
+      "end_seconds": 368.4,
+      "id": "Zl9u3m-tl3Q-ja-0042",
+      "sequence": 42
+    },
+    {
+      "text": "飲食店とお茶業界から両方をうまく生き出したと思っていました。",
+      "start_seconds": 368.4,
+      "end_seconds": 375.44,
+      "id": "Zl9u3m-tl3Q-ja-0043",
+      "sequence": 43
+    },
+    {
+      "text": "もう1度自分は何者かに近づけた慣れたんだとそう信じていました。",
+      "start_seconds": 375.44,
+      "end_seconds": 384.12,
+      "id": "Zl9u3m-tl3Q-ja-0044",
+      "sequence": 44
+    },
+    {
+      "text": "しかし2011年日本を襲った大災害東日本大災害やってきます。",
+      "start_seconds": 384.12,
+      "end_seconds": 393.639,
+      "id": "Zl9u3m-tl3Q-ja-0045",
+      "sequence": 45
+    },
+    {
+      "text": "計画停電でお店は回転休業状態になりました。",
+      "start_seconds": 393.639,
+      "end_seconds": 399.319,
+      "id": "Zl9u3m-tl3Q-ja-0046",
+      "sequence": 46
+    },
+    {
+      "text": "5月には神奈川県さんのお茶からセシウムが検出されたというニュースが広がり風で出荷した商品が全部戻ってきてしまっ",
+      "start_seconds": 399.319,
+      "end_seconds": 411.08,
+      "id": "Zl9u3m-tl3Q-ja-0047",
+      "sequence": 47
+    },
+    {
+      "text": "たんです。お店は営業できない在庫はいっぱい戻ってくる。資金繰りも大変なことになりました。3ヶ月でギブアップを",
+      "start_seconds": 411.08,
+      "end_seconds": 421.52,
+      "id": "Zl9u3m-tl3Q-ja-0048",
+      "sequence": 48
+    },
+    {
+      "text": "しました。天を閉めるという決断をし、社員に頭を下げ、やめていただきました。",
+      "start_seconds": 421.52,
+      "end_seconds": 430.96,
+      "id": "Zl9u3m-tl3Q-ja-0049",
+      "sequence": 49
+    },
+    {
+      "text": "頭を下げながら情けなくて悔しくて涙が出そうなのを来えてきました。",
+      "start_seconds": 430.96,
+      "end_seconds": 438.879,
+      "id": "Zl9u3m-tl3Q-ja-0050",
+      "sequence": 50
+    },
+    {
+      "text": "私は在庫の山と一緒にプレ屋に引越しました。",
+      "start_seconds": 438.879,
+      "end_seconds": 445.68,
+      "id": "Zl9u3m-tl3Q-ja-0051",
+      "sequence": 51
+    },
+    {
+      "text": "ダンボールに囲まれて1人を過ごしたです。",
+      "start_seconds": 445.68,
+      "end_seconds": 451.36,
+      "id": "Zl9u3m-tl3Q-ja-0052",
+      "sequence": 52
+    },
+    {
+      "text": "何も書いになりたいってずっと走ってきた。そのたどり着いた先がここかとそう思うと情けなくてこうやって",
+      "start_seconds": 451.36,
+      "end_seconds": 463.319,
+      "id": "Zl9u3m-tl3Q-ja-0053",
+      "sequence": 53
+    },
+    {
+      "text": "人とも会いたくなかったんです。",
+      "start_seconds": 463.319,
+      "end_seconds": 467.12,
+      "id": "Zl9u3m-tl3Q-ja-0054",
+      "sequence": 54
+    },
+    {
+      "text": "少し受験ができたのでふと思ったんです。今東北に東北で震災に",
+      "start_seconds": 467.12,
+      "end_seconds": 476.8,
+      "id": "Zl9u3m-tl3Q-ja-0055",
+      "sequence": 55
+    },
+    {
+      "text": "会われた方がどうなっているんだろう。",
+      "start_seconds": 476.8,
+      "end_seconds": 479.72,
+      "id": "Zl9u3m-tl3Q-ja-0056",
+      "sequence": 56
+    },
+    {
+      "text": "そって連絡を取りました。そしたら東北[咳払い]の方たちは私が思ってるようなレベルでなくレベルではなく本当にきつい",
+      "start_seconds": 479.72,
+      "end_seconds": 491.08,
+      "id": "Zl9u3m-tl3Q-ja-0057",
+      "sequence": 57
+    },
+    {
+      "text": "思いをされていました。あ、私は何も見えていなかったんだ。",
+      "start_seconds": 491.08,
+      "end_seconds": 496.599,
+      "id": "Zl9u3m-tl3Q-ja-0058",
+      "sequence": 58
+    },
+    {
+      "text": "ダンボールに囲まれて1人で震いていた自分が急に小さく見えました。",
+      "start_seconds": 496.599,
+      "end_seconds": 504.039,
+      "id": "Zl9u3m-tl3Q-ja-0059",
+      "sequence": 59
+    },
+    {
+      "text": "ある日疲れた自分の話を聞きながら僕はお茶を入れました。そしたら怖っていた彼の",
+      "start_seconds": 504.039,
+      "end_seconds": 513.68,
+      "id": "Zl9u3m-tl3Q-ja-0060",
+      "sequence": 60
+    },
+    {
+      "text": "表情がふっと緩んでありとって言ってくれたわけです。その時僕は気づいたんです。",
+      "start_seconds": 513.68,
+      "end_seconds": 520.599,
+      "id": "Zl9u3m-tl3Q-ja-0061",
+      "sequence": 61
+    },
+    {
+      "text": "バスケの友人にもサッカーの後輩にも叶わなかったあの頃から僕はずっと勝てる場所を探していました。",
+      "start_seconds": 520.599,
+      "end_seconds": 532.16,
+      "id": "Zl9u3m-tl3Q-ja-0062",
+      "sequence": 62
+    },
+    {
+      "text": "そして起業してからは世間が求める何者であろうとずっと上を向いて走っていたんです。",
+      "start_seconds": 532.16,
+      "end_seconds": 540.88,
+      "id": "Zl9u3m-tl3Q-ja-0063",
+      "sequence": 63
+    },
+    {
+      "text": "でもそれはずっと同じことだったんです。",
+      "start_seconds": 540.88,
+      "end_seconds": 545.32,
+      "id": "Zl9u3m-tl3Q-ja-0064",
+      "sequence": 64
+    },
+    {
+      "text": "誰かに認められてる自分を探し続けてそれだけだったんです。でもふと下を見たら",
+      "start_seconds": 545.32,
+      "end_seconds": 554.76,
+      "id": "Zl9u3m-tl3Q-ja-0065",
+      "sequence": 65
+    },
+    {
+      "text": "もう手に握っていかないです。",
+      "start_seconds": 554.76,
+      "end_seconds": 557.839,
+      "id": "Zl9u3m-tl3Q-ja-0066",
+      "sequence": 66
+    },
+    {
+      "text": "お茶を入れることができる。あと人の話を聞く聞くということができる。今何者かに",
+      "start_seconds": 557.839,
+      "end_seconds": 566.399,
+      "id": "Zl9u3m-tl3Q-ja-0067",
+      "sequence": 67
+    },
+    {
+      "text": "なろうと思ってる苦しんでる人へ上から言ってると大変なことになってしまいます。[咳払い]",
+      "start_seconds": 566.399,
+      "end_seconds": 575.16,
+      "id": "Zl9u3m-tl3Q-ja-0068",
+      "sequence": 68
+    },
+    {
+      "text": "情報型の事態です。周りのプレッシャーで疲れてる人はいませんか?",
+      "start_seconds": 575.16,
+      "end_seconds": 582.12,
+      "id": "Zl9u3m-tl3Q-ja-0069",
+      "sequence": 69
+    },
+    {
+      "text": "皆さんはもう自分自身の自分自身の人生のストーリーを歩んでるんです。[咳払い]夢を見ること、理想的な人間になること、",
+      "start_seconds": 582.12,
+      "end_seconds": 593.279,
+      "id": "Zl9u3m-tl3Q-ja-0070",
+      "sequence": 70
+    },
+    {
+      "text": "これは素晴らしいことだと思います。でも疲れたらまず1回立ち止まって自分がもうすでに持っているものを他に与えて",
+      "start_seconds": 593.279,
+      "end_seconds": 604.0,
+      "id": "Zl9u3m-tl3Q-ja-0071",
+      "sequence": 71
+    },
+    {
+      "text": "ください。",
+      "start_seconds": 604.0,
+      "end_seconds": 606.92,
+      "id": "Zl9u3m-tl3Q-ja-0072",
+      "sequence": 72
+    },
+    {
+      "text": "まだ手にしてないもの、そんなものばっかり見ていると疲れてしまいます。",
+      "start_seconds": 606.92,
+      "end_seconds": 612.64,
+      "id": "Zl9u3m-tl3Q-ja-0073",
+      "sequence": 73
+    },
+    {
+      "text": "疲れた時は1回下を見てください。もう必ず皆さんの中に何者かがあるんです。",
+      "start_seconds": 612.64,
+      "end_seconds": 622.12,
+      "id": "Zl9u3m-tl3Q-ja-0074",
+      "sequence": 74
+    },
+    {
+      "text": "それを相手に是非プレゼントしてください。私は立派な実業家にも優れた経済にもし",
+      "start_seconds": 622.12,
+      "end_seconds": 631.92,
+      "id": "Zl9u3m-tl3Q-ja-0075",
+      "sequence": 75
+    },
+    {
+      "text": "や復をかぶったプロホーラーにも多分もうならないでしょう。でもそれでもいいと思っています。あの日疲れ果てた地上に",
+      "start_seconds": 631.92,
+      "end_seconds": 642.48,
+      "id": "Zl9u3m-tl3Q-ja-0076",
+      "sequence": 76
+    },
+    {
+      "text": "入れた1杯のお茶。",
+      "start_seconds": 642.48,
+      "end_seconds": 646.72,
+      "id": "Zl9u3m-tl3Q-ja-0077",
+      "sequence": 77
+    },
+    {
+      "text": "あれこそが私がずっと探していた何者かの答えだったのかもしれないからです。",
+      "start_seconds": 647.76,
+      "end_seconds": 655.16,
+      "id": "Zl9u3m-tl3Q-ja-0078",
+      "sequence": 78
+    },
+    {
+      "text": "あの時のお茶が温かいお茶の文化として100年後の教科書の片隅に残っていただ",
+      "start_seconds": 655.16,
+      "end_seconds": 663.68,
+      "id": "Zl9u3m-tl3Q-ja-0079",
+      "sequence": 79
+    },
+    {
+      "text": "と思うと私は幸せです。",
+      "start_seconds": 663.68,
+      "end_seconds": 667.24,
+      "id": "Zl9u3m-tl3Q-ja-0080",
+      "sequence": 80
+    },
+    {
+      "text": "で私は皆さんに問いませんでした。あなたは何者ですかって?",
+      "start_seconds": 667.24,
+      "end_seconds": 673.6,
+      "id": "Zl9u3m-tl3Q-ja-0081",
+      "sequence": 81
+    },
+    {
+      "text": "でももし私が今聞かれたら自信を持ってこう答えます。私はお茶で人を幸せに",
+      "start_seconds": 673.6,
+      "end_seconds": 682.88,
+      "id": "Zl9u3m-tl3Q-ja-0082",
+      "sequence": 82
+    },
+    {
+      "text": "できる人間です。ご成長ありがとうございました。",
+      "start_seconds": 682.88,
+      "end_seconds": 688.412,
+      "id": "Zl9u3m-tl3Q-ja-0083",
+      "sequence": 83
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 688.412,
+      "end_seconds": 690.432,
+      "id": "Zl9u3m-tl3Q-ja-0084",
+      "sequence": 84
+    }
+  ],
+  "raw_captions": [
+    {
+      "text": "ですが55年前の私の写真です。通常です",
+      "start_seconds": 13.96,
+      "end_seconds": 22.72
+    },
+    {
+      "text": "とここから家庭環境や幼少期の思い出など",
+      "start_seconds": 17.88,
+      "end_seconds": 25.799999999999997
+    },
+    {
+      "text": "家族のテーマのようなものが始まってく",
+      "start_seconds": 22.72,
+      "end_seconds": 28.799999999999997
+    },
+    {
+      "text": "最初の1番になると思うんですが私の場合",
+      "start_seconds": 25.8,
+      "end_seconds": 31.8
+    },
+    {
+      "text": "は違います。可愛い自分の写真を見つけた",
+      "start_seconds": 28.8,
+      "end_seconds": 36.28
+    },
+    {
+      "text": "から使ってるだけです。",
+      "start_seconds": 31.8,
+      "end_seconds": 36.28
+    },
+    {
+      "text": "はい。この写真で、え、さっきの赤ちゃん",
+      "start_seconds": 38.48,
+      "end_seconds": 45.239
+    },
+    {
+      "text": "の写真で注目してもらいたいところが実は",
+      "start_seconds": 43.32,
+      "end_seconds": 47.559
+    },
+    {
+      "text": "2つあったんです。スライドが次に行っ",
+      "start_seconds": 45.239,
+      "end_seconds": 51.599999999999994
+    },
+    {
+      "text": "ちゃったんでもう1回戻します。",
+      "start_seconds": 47.559,
+      "end_seconds": 53.839999999999996
+    },
+    {
+      "text": "2つ注目してもらいたいとこあります。",
+      "start_seconds": 51.6,
+      "end_seconds": 57.160000000000004
+    },
+    {
+      "text": "この目線見てください。このカメですね。",
+      "start_seconds": 53.84,
+      "end_seconds": 59.879000000000005
+    },
+    {
+      "text": "素晴らしいです。あともう1つはこの",
+      "start_seconds": 57.16,
+      "end_seconds": 62.839999999999996
+    },
+    {
+      "text": "ほっこりとしたお尻。これ可愛いと思い",
+      "start_seconds": 59.879,
+      "end_seconds": 64.839
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 62.84,
+      "end_seconds": 66.96000000000001
+    },
+    {
+      "text": "これが現在の私です。[咳払い]",
+      "start_seconds": 64.839,
+      "end_seconds": 69.96
+    },
+    {
+      "text": "大事の中でのやろうよ。そういうことが",
+      "start_seconds": 66.96,
+      "end_seconds": 72.08
+    },
+    {
+      "text": "言いたいんじゃないんです。見てもらい",
+      "start_seconds": 69.96,
+      "end_seconds": 76.24
+    },
+    {
+      "text": "たいとこはお腹。このぽっこりしたお腹。",
+      "start_seconds": 72.08,
+      "end_seconds": 79.08
+    },
+    {
+      "text": "可愛く成長しました。",
+      "start_seconds": 76.24,
+      "end_seconds": 83.52
+    },
+    {
+      "text": "これ私が普段お茶してる時の写真です。見",
+      "start_seconds": 79.08,
+      "end_seconds": 86.72
+    },
+    {
+      "text": "て欲しいのは1箇所お茶を押し作り方を",
+      "start_seconds": 83.52,
+      "end_seconds": 89.24
+    },
+    {
+      "text": "説明したいんじゃないです。",
+      "start_seconds": 86.72,
+      "end_seconds": 94.28
+    },
+    {
+      "text": "の人かっこいいですよね。字が自さです。",
+      "start_seconds": 89.24,
+      "end_seconds": 97.15899999999999
+    },
+    {
+      "text": "こんなこと話してたら時間が経ってしまう",
+      "start_seconds": 94.28,
+      "end_seconds": 101.2
+    },
+    {
+      "text": "のでそろそろ本題に入ります。あなたは",
+      "start_seconds": 97.159,
+      "end_seconds": 103.52000000000001
+    },
+    {
+      "text": "何者ですか?",
+      "start_seconds": 101.2,
+      "end_seconds": 105.32000000000001
+    },
+    {
+      "text": "いきなり皆さんこのこと聞かれたら怖い",
+      "start_seconds": 103.52,
+      "end_seconds": 108.84
+    },
+    {
+      "text": "ですよね。怖いですから私は今日今皆さん",
+      "start_seconds": 105.32,
+      "end_seconds": 112.479
+    },
+    {
+      "text": "には聞きません。今日話したいのはこう",
+      "start_seconds": 108.84,
+      "end_seconds": 116.24000000000001
+    },
+    {
+      "text": "いうことです。私はチ種としていろんな",
+      "start_seconds": 112.479,
+      "end_seconds": 120.2
+    },
+    {
+      "text": "働きをなれ並べればそれなりの人に見えて",
+      "start_seconds": 116.24,
+      "end_seconds": 123.67999999999999
+    },
+    {
+      "text": "しまいます。でもそんな話をしてきたん",
+      "start_seconds": 120.2,
+      "end_seconds": 127.84
+    },
+    {
+      "text": "じゃないんです。失敗や座。そのポンコの",
+      "start_seconds": 123.68,
+      "end_seconds": 130.36
+    },
+    {
+      "text": "山の中から",
+      "start_seconds": 127.84,
+      "end_seconds": 133.44
+    },
+    {
+      "text": "あなたは何者ですか?この答えを見つけ",
+      "start_seconds": 130.36,
+      "end_seconds": 136.519
+    },
+    {
+      "text": "ました。それを皆さんと共有したいと思い",
+      "start_seconds": 133.44,
+      "end_seconds": 140.68
+    },
+    {
+      "text": "ます。小学生の頃目の前に育た",
+      "start_seconds": 136.519,
+      "end_seconds": 142.68
+    },
+    {
+      "text": "クラスメイトからバスケットの練習に誘わ",
+      "start_seconds": 140.68,
+      "end_seconds": 144.36
+    },
+    {
+      "text": "れました。",
+      "start_seconds": 142.68,
+      "end_seconds": 146.8
+    },
+    {
+      "text": "彼の練習を見ていたらとにかくすごいん",
+      "start_seconds": 144.36,
+      "end_seconds": 150.12
+    },
+    {
+      "text": "です。うまいんです。一瞬でそうれる",
+      "start_seconds": 146.8,
+      "end_seconds": 153.04000000000002
+    },
+    {
+      "text": "センスがありました。僕はすぐに諦めまし",
+      "start_seconds": 150.12,
+      "end_seconds": 157.48000000000002
+    },
+    {
+      "text": "た。でもその顔は正しかったんです。後に",
+      "start_seconds": 153.04,
+      "end_seconds": 160.35999999999999
+    },
+    {
+      "text": "彼はミスターバスケットボールと言われる",
+      "start_seconds": 157.48,
+      "end_seconds": 164.28
+    },
+    {
+      "text": "偉大なプレイヤーになりました。よし、次",
+      "start_seconds": 160.36,
+      "end_seconds": 168.68
+    },
+    {
+      "text": "はサッカーが1年間",
+      "start_seconds": 164.28,
+      "end_seconds": 171.64000000000001
+    },
+    {
+      "text": "ある時後輩が入ってきて彼の手段に立って",
+      "start_seconds": 168.68,
+      "end_seconds": 175.31900000000002
+    },
+    {
+      "text": "ます。とんでもないものを受けてからあ、",
+      "start_seconds": 171.64,
+      "end_seconds": 177.83999999999997
+    },
+    {
+      "text": "ここは誰だ?",
+      "start_seconds": 175.319,
+      "end_seconds": 180.35999999999999
+    },
+    {
+      "text": "僕の何者の場所になるところじゃないと",
+      "start_seconds": 177.84,
+      "end_seconds": 183.76
+    },
+    {
+      "text": "思いました。これもすぐ諦めました。彼は",
+      "start_seconds": 180.36,
+      "end_seconds": 187.92000000000002
+    },
+    {
+      "text": "後にJBがあって有名な人気になって芸能",
+      "start_seconds": 183.76,
+      "end_seconds": 190.44
+    },
+    {
+      "text": "界になあんなの撮影したんですよ。やら",
+      "start_seconds": 187.92,
+      "end_seconds": 193.11999999999998
+    },
+    {
+      "text": "なくてよかったです。そっか。こんな",
+      "start_seconds": 190.44,
+      "end_seconds": 195.04
+    },
+    {
+      "text": "メジャーなスポーツばかりに挑戦するから",
+      "start_seconds": 193.12,
+      "end_seconds": 198.12
+    },
+    {
+      "text": "ダメだった。そう思いました。そう思って",
+      "start_seconds": 195.04,
+      "end_seconds": 201.879
+    },
+    {
+      "text": "僕はボーリングを始めました。小学生で",
+      "start_seconds": 198.12,
+      "end_seconds": 203.92000000000002
+    },
+    {
+      "text": "本気でやってる人なんていなかったんです",
+      "start_seconds": 201.879,
+      "end_seconds": 207.12
+    },
+    {
+      "text": "。お小遣いでマイボールを作り、いろんな",
+      "start_seconds": 203.92,
+      "end_seconds": 210.35999999999999
+    },
+    {
+      "text": "大談に出ました。でもこれも挫折をして",
+      "start_seconds": 207.12,
+      "end_seconds": 214.56
+    },
+    {
+      "text": "しまいました。ちなみにプロボーラーで1",
+      "start_seconds": 210.36,
+      "end_seconds": 218.12
+    },
+    {
+      "text": "番になるというビジョンはあったんです。",
+      "start_seconds": 214.56,
+      "end_seconds": 220.56
+    },
+    {
+      "text": "当時第2人気だったプロレスラーで",
+      "start_seconds": 218.12,
+      "end_seconds": 223.84
+    },
+    {
+      "text": "タイガーマスク選手というのがいました。",
+      "start_seconds": 220.56,
+      "end_seconds": 228.12
+    },
+    {
+      "text": "面をかぶって右手でも左手でもストライク",
+      "start_seconds": 223.84,
+      "end_seconds": 230.04
+    },
+    {
+      "text": "が取れるそんなプロボーラーになって",
+      "start_seconds": 228.12,
+      "end_seconds": 233.079
+    },
+    {
+      "text": "やろうと思ったんです。",
+      "start_seconds": 230.04,
+      "end_seconds": 236.76
+    },
+    {
+      "text": "小学生の企画と企画書としてはかなり奇",
+      "start_seconds": 233.079,
+      "end_seconds": 240.43900000000002
+    },
+    {
+      "text": "だったと思います。こうやって振り返ると",
+      "start_seconds": 236.76,
+      "end_seconds": 243.879
+    },
+    {
+      "text": "笑い話に聞こえるかもしれませんが当時の",
+      "start_seconds": 240.439,
+      "end_seconds": 248.04
+    },
+    {
+      "text": "僕は本気でした。勝てる場所を探し続けて",
+      "start_seconds": 243.879,
+      "end_seconds": 252.48
+    },
+    {
+      "text": "見つからないまま中学生高校大学と卒業し",
+      "start_seconds": 248.04,
+      "end_seconds": 254.12
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 252.48,
+      "end_seconds": 258.239
+    },
+    {
+      "text": "収束先は中国料理の調理場でした。なぜ",
+      "start_seconds": 254.12,
+      "end_seconds": 259.759
+    },
+    {
+      "text": "なら",
+      "start_seconds": 258.239,
+      "end_seconds": 263.44
+    },
+    {
+      "text": "ラーメンが好きだったんです。そして20",
+      "start_seconds": 259.759,
+      "end_seconds": 267.56
+    },
+    {
+      "text": "代で企業を決意します。普通の中国料理を",
+      "start_seconds": 263.44,
+      "end_seconds": 269.88
+    },
+    {
+      "text": "やっても多分流行らないだろうと思いまし",
+      "start_seconds": 267.56,
+      "end_seconds": 274.44
+    },
+    {
+      "text": "た。そうだ。小学生の時は企画書だ。覆面",
+      "start_seconds": 269.88,
+      "end_seconds": 278.24
+    },
+    {
+      "text": "かけるプロラ。これで行こう。中国料理の",
+      "start_seconds": 274.44,
+      "end_seconds": 281.639
+    },
+    {
+      "text": "お店かけるおしゃるの屋。",
+      "start_seconds": 278.24,
+      "end_seconds": 284.32
+    },
+    {
+      "text": "こんな店です。",
+      "start_seconds": 281.639,
+      "end_seconds": 287.36
+    },
+    {
+      "text": "今まで寝なかった業体だったのでこれが大",
+      "start_seconds": 284.32,
+      "end_seconds": 290.479
+    },
+    {
+      "text": "成功しました。あっという間に店舗は4",
+      "start_seconds": 287.36,
+      "end_seconds": 293.12
+    },
+    {
+      "text": "店舗まで増え従業員がいっぱい入ってきて",
+      "start_seconds": 290.479,
+      "end_seconds": 297.52
+    },
+    {
+      "text": "くれました。正直に言います。この時の",
+      "start_seconds": 293.12,
+      "end_seconds": 301.36
+    },
+    {
+      "text": "高用感は今でも覚えてます。みんなが自分",
+      "start_seconds": 297.52,
+      "end_seconds": 304.479
+    },
+    {
+      "text": "の言葉に頷いてくれる数字がどんどん",
+      "start_seconds": 301.36,
+      "end_seconds": 308.08000000000004
+    },
+    {
+      "text": "上がっていく。ようやく僕は何者かに慣れ",
+      "start_seconds": 304.479,
+      "end_seconds": 311.75899999999996
+    },
+    {
+      "text": "たんじゃないかそう思ってました。",
+      "start_seconds": 308.08,
+      "end_seconds": 316.8
+    },
+    {
+      "text": "やっと見つけたような気になってました。",
+      "start_seconds": 311.759,
+      "end_seconds": 316.8
+    },
+    {
+      "text": "でも今振り返るとあれは見つけたんじゃ",
+      "start_seconds": 316.84,
+      "end_seconds": 326.31899999999996
+    },
+    {
+      "text": "なくてただ間当上がってただけなんです。",
+      "start_seconds": 320.52,
+      "end_seconds": 326.31899999999996
+    },
+    {
+      "text": "その経2008年日本茶業界に採用します",
+      "start_seconds": 328.0,
+      "end_seconds": 336.8
+    },
+    {
+      "text": "。当時の日本家は車両産業いわゆる劣等者",
+      "start_seconds": 332.0,
+      "end_seconds": 340.84
+    },
+    {
+      "text": "なんです。アラジ各国の下落日本で",
+      "start_seconds": 336.8,
+      "end_seconds": 344.16
+    },
+    {
+      "text": "いろんな問題が重なっていました。これを",
+      "start_seconds": 340.84,
+      "end_seconds": 347.88
+    },
+    {
+      "text": "どうにかしてやろうと思っていました。今",
+      "start_seconds": 344.16,
+      "end_seconds": 351.96000000000004
+    },
+    {
+      "text": "は相当な思い上がりです。お店を作った",
+      "start_seconds": 347.88,
+      "end_seconds": 354.639
+    },
+    {
+      "text": "ままも1年間はお客さんがほとんど来て",
+      "start_seconds": 351.96,
+      "end_seconds": 358.4
+    },
+    {
+      "text": "くれなかったんです。そこでコンテストに",
+      "start_seconds": 354.639,
+      "end_seconds": 361.72
+    },
+    {
+      "text": "出して致名度を上げてやっとお客さんが来",
+      "start_seconds": 358.4,
+      "end_seconds": 364.15999999999997
+    },
+    {
+      "text": "てくれるようになった。",
+      "start_seconds": 361.72,
+      "end_seconds": 368.40000000000003
+    },
+    {
+      "text": "お茶のおろしの出も始まりました。",
+      "start_seconds": 364.16,
+      "end_seconds": 371.40000000000003
+    },
+    {
+      "text": "飲食店とお茶業界から両方をうまく",
+      "start_seconds": 368.4,
+      "end_seconds": 375.44
+    },
+    {
+      "text": "生き出したと思っていました。",
+      "start_seconds": 371.4,
+      "end_seconds": 381.08
+    },
+    {
+      "text": "もう1度自分は何者かに近づけた慣れたん",
+      "start_seconds": 375.44,
+      "end_seconds": 384.12
+    },
+    {
+      "text": "だとそう信じていました。",
+      "start_seconds": 381.08,
+      "end_seconds": 385.71999999999997
+    },
+    {
+      "text": "しかし",
+      "start_seconds": 384.12,
+      "end_seconds": 390.24
+    },
+    {
+      "text": "2011年日本を襲った大災害東日本大",
+      "start_seconds": 385.72,
+      "end_seconds": 393.639
+    },
+    {
+      "text": "災害やってきます。",
+      "start_seconds": 390.24,
+      "end_seconds": 397.56
+    },
+    {
+      "text": "計画停電でお店は回転休業状態になりまし",
+      "start_seconds": 393.639,
+      "end_seconds": 399.319
+    },
+    {
+      "text": "た。",
+      "start_seconds": 397.56,
+      "end_seconds": 402.96
+    },
+    {
+      "text": "5月には神奈川県さんのお茶からセシウム",
+      "start_seconds": 399.319,
+      "end_seconds": 406.8
+    },
+    {
+      "text": "が検出されたというニュースが広がり",
+      "start_seconds": 402.96,
+      "end_seconds": 411.08
+    },
+    {
+      "text": "風で出荷した商品が全部戻ってきてしまっ",
+      "start_seconds": 406.8,
+      "end_seconds": 415.16
+    },
+    {
+      "text": "たんです。お店は営業できない在庫は",
+      "start_seconds": 411.08,
+      "end_seconds": 418.479
+    },
+    {
+      "text": "いっぱい戻ってくる。資金繰りも大変な",
+      "start_seconds": 415.16,
+      "end_seconds": 421.52000000000004
+    },
+    {
+      "text": "ことになりました。3ヶ月でギブアップを",
+      "start_seconds": 418.479,
+      "end_seconds": 425.75899999999996
+    },
+    {
+      "text": "しました。天を閉めるという決断をし、",
+      "start_seconds": 421.52,
+      "end_seconds": 430.96
+    },
+    {
+      "text": "社員に頭を下げ、やめていただきました。",
+      "start_seconds": 425.759,
+      "end_seconds": 435.40000000000003
+    },
+    {
+      "text": "頭を下げながら情けなくて悔しくて涙が出",
+      "start_seconds": 430.96,
+      "end_seconds": 438.87899999999996
+    },
+    {
+      "text": "そうなのを来えてきました。",
+      "start_seconds": 435.4,
+      "end_seconds": 442.35999999999996
+    },
+    {
+      "text": "私は在庫の山と一緒に",
+      "start_seconds": 438.879,
+      "end_seconds": 445.68
+    },
+    {
+      "text": "プレ屋に引越しました。",
+      "start_seconds": 442.36,
+      "end_seconds": 449.28000000000003
+    },
+    {
+      "text": "ダンボールに囲まれて1人を過ごしたです",
+      "start_seconds": 445.68,
+      "end_seconds": 451.36
+    },
+    {
+      "text": "。",
+      "start_seconds": 449.28,
+      "end_seconds": 454.4
+    },
+    {
+      "text": "何も書いになりたいってずっと走ってきた",
+      "start_seconds": 451.36,
+      "end_seconds": 458.68
+    },
+    {
+      "text": "。そのたどり着いた先がここかと",
+      "start_seconds": 454.4,
+      "end_seconds": 463.31899999999996
+    },
+    {
+      "text": "そう思うと情けなくてこうやって",
+      "start_seconds": 458.68,
+      "end_seconds": 467.12
+    },
+    {
+      "text": "人とも会いたくなかったんです。",
+      "start_seconds": 463.319,
+      "end_seconds": 470.36
+    },
+    {
+      "text": "少し受験ができたので",
+      "start_seconds": 467.12,
+      "end_seconds": 476.8
+    },
+    {
+      "text": "ふと思ったんです。今東北に東北で震災に",
+      "start_seconds": 470.36,
+      "end_seconds": 479.72
+    },
+    {
+      "text": "会われた方がどうなっているんだろう。",
+      "start_seconds": 476.8,
+      "end_seconds": 484.059
+    },
+    {
+      "text": "そって連絡を取りました。そしたら東北",
+      "start_seconds": 479.72,
+      "end_seconds": 486.96000000000004
+    },
+    {
+      "text": "[咳払い]の方たちは私が思ってるような",
+      "start_seconds": 484.059,
+      "end_seconds": 491.08000000000004
+    },
+    {
+      "text": "レベルでなくレベルではなく本当にきつい",
+      "start_seconds": 486.96,
+      "end_seconds": 494.159
+    },
+    {
+      "text": "思いをされていました。あ、私は何も見え",
+      "start_seconds": 491.08,
+      "end_seconds": 496.599
+    },
+    {
+      "text": "ていなかったんだ。",
+      "start_seconds": 494.159,
+      "end_seconds": 499.96
+    },
+    {
+      "text": "ダンボールに囲まれて1人で震いていた",
+      "start_seconds": 496.599,
+      "end_seconds": 504.039
+    },
+    {
+      "text": "自分が急に小さく見えました。",
+      "start_seconds": 499.96,
+      "end_seconds": 508.71999999999997
+    },
+    {
+      "text": "ある日疲れた自分の話を聞きながら僕はお",
+      "start_seconds": 504.039,
+      "end_seconds": 513.68
+    },
+    {
+      "text": "茶を入れました。そしたら怖っていた彼の",
+      "start_seconds": 508.72,
+      "end_seconds": 517.0
+    },
+    {
+      "text": "表情がふっと緩んでありとって言ってくれ",
+      "start_seconds": 513.68,
+      "end_seconds": 520.5989999999999
+    },
+    {
+      "text": "たわけです。その時僕は気づいたんです。",
+      "start_seconds": 517.0,
+      "end_seconds": 525.519
+    },
+    {
+      "text": "バスケの友人にもサッカーの後輩にも",
+      "start_seconds": 520.599,
+      "end_seconds": 529.44
+    },
+    {
+      "text": "叶わなかったあの頃から僕はずっと勝てる",
+      "start_seconds": 525.519,
+      "end_seconds": 532.16
+    },
+    {
+      "text": "場所を探していました。",
+      "start_seconds": 529.44,
+      "end_seconds": 536.44
+    },
+    {
+      "text": "そして起業してからは世間が求める何者で",
+      "start_seconds": 532.16,
+      "end_seconds": 539.16
+    },
+    {
+      "text": "あろうとずっと上を向いて走っていたん",
+      "start_seconds": 536.44,
+      "end_seconds": 540.8800000000001
+    },
+    {
+      "text": "です。",
+      "start_seconds": 539.16,
+      "end_seconds": 545.3199999999999
+    },
+    {
+      "text": "でもそれはずっと同じことだったんです。",
+      "start_seconds": 540.88,
+      "end_seconds": 549.8389999999999
+    },
+    {
+      "text": "誰かに認められてる自分を探し続けてそれ",
+      "start_seconds": 545.32,
+      "end_seconds": 554.7600000000001
+    },
+    {
+      "text": "だけだったんです。でもふと下を見たら",
+      "start_seconds": 549.839,
+      "end_seconds": 557.839
+    },
+    {
+      "text": "もう手に握っていかないです。",
+      "start_seconds": 554.76,
+      "end_seconds": 561.12
+    },
+    {
+      "text": "お茶を入れることができる。あと人の話を",
+      "start_seconds": 557.839,
+      "end_seconds": 566.399
+    },
+    {
+      "text": "聞く聞くということができる。今何者かに",
+      "start_seconds": 561.12,
+      "end_seconds": 569.88
+    },
+    {
+      "text": "なろうと思ってる苦しんでる人へ",
+      "start_seconds": 566.399,
+      "end_seconds": 573.04
+    },
+    {
+      "text": "上から言ってると大変なことになって",
+      "start_seconds": 569.88,
+      "end_seconds": 575.16
+    },
+    {
+      "text": "しまいます。[咳払い]",
+      "start_seconds": 573.04,
+      "end_seconds": 578.92
+    },
+    {
+      "text": "情報型の事態です。周りのプレッシャーで",
+      "start_seconds": 575.16,
+      "end_seconds": 582.12
+    },
+    {
+      "text": "疲れてる人はいませんか?",
+      "start_seconds": 578.92,
+      "end_seconds": 586.8
+    },
+    {
+      "text": "皆さんはもう自分自身の自分自身の人生の",
+      "start_seconds": 582.12,
+      "end_seconds": 589.5600000000001
+    },
+    {
+      "text": "ストーリーを歩んでるんです。[咳払い]",
+      "start_seconds": 586.8,
+      "end_seconds": 593.279
+    },
+    {
+      "text": "夢を見ること、理想的な人間になること、",
+      "start_seconds": 589.56,
+      "end_seconds": 597.1999999999999
+    },
+    {
+      "text": "これは素晴らしいことだと思います。でも",
+      "start_seconds": 593.279,
+      "end_seconds": 600.76
+    },
+    {
+      "text": "疲れたらまず1回立ち止まって自分がもう",
+      "start_seconds": 597.2,
+      "end_seconds": 604.0
+    },
+    {
+      "text": "すでに持っているものを他に与えて",
+      "start_seconds": 600.76,
+      "end_seconds": 606.92
+    },
+    {
+      "text": "ください。",
+      "start_seconds": 604.0,
+      "end_seconds": 609.16
+    },
+    {
+      "text": "まだ手にしてないもの、そんなもの",
+      "start_seconds": 606.92,
+      "end_seconds": 612.64
+    },
+    {
+      "text": "ばっかり見ていると疲れてしまいます。",
+      "start_seconds": 609.16,
+      "end_seconds": 616.6
+    },
+    {
+      "text": "疲れた時は1回下を見てください。もう",
+      "start_seconds": 612.64,
+      "end_seconds": 622.12
+    },
+    {
+      "text": "必ず皆さんの中に何者かがあるんです。",
+      "start_seconds": 616.6,
+      "end_seconds": 624.2
+    },
+    {
+      "text": "それを相手に是非プレゼントしてください",
+      "start_seconds": 622.12,
+      "end_seconds": 631.92
+    },
+    {
+      "text": "。私は立派な実業家にも優れた経済にもし",
+      "start_seconds": 624.2,
+      "end_seconds": 636.0
+    },
+    {
+      "text": "や復をかぶったプロホーラーにも多分もう",
+      "start_seconds": 631.92,
+      "end_seconds": 638.7199999999999
+    },
+    {
+      "text": "ならないでしょう。でもそれでもいいと",
+      "start_seconds": 636.0,
+      "end_seconds": 642.48
+    },
+    {
+      "text": "思っています。あの日疲れ果てた地上に",
+      "start_seconds": 638.72,
+      "end_seconds": 646.72
+    },
+    {
+      "text": "入れた1杯のお茶。",
+      "start_seconds": 642.48,
+      "end_seconds": 646.72
+    },
+    {
+      "text": "あれこそが私がずっと探していた何者かの",
+      "start_seconds": 647.76,
+      "end_seconds": 655.16
+    },
+    {
+      "text": "答えだったのかもしれないからです。",
+      "start_seconds": 651.519,
+      "end_seconds": 660.2
+    },
+    {
+      "text": "あの時のお茶が温かいお茶の文化として",
+      "start_seconds": 655.16,
+      "end_seconds": 663.68
+    },
+    {
+      "text": "100年後の教科書の片隅に残っていただ",
+      "start_seconds": 660.2,
+      "end_seconds": 667.24
+    },
+    {
+      "text": "と思うと私は幸せです。",
+      "start_seconds": 663.68,
+      "end_seconds": 670.079
+    },
+    {
+      "text": "で私は皆さんに問いませんでした。あなた",
+      "start_seconds": 667.24,
+      "end_seconds": 673.6
+    },
+    {
+      "text": "は何者ですかって?",
+      "start_seconds": 670.079,
+      "end_seconds": 677.3199999999999
+    },
+    {
+      "text": "でももし私が今聞かれたら自信を持って",
+      "start_seconds": 673.6,
+      "end_seconds": 682.88
+    },
+    {
+      "text": "こう答えます。私はお茶で人を幸せに",
+      "start_seconds": 677.32,
+      "end_seconds": 686.36
+    },
+    {
+      "text": "できる人間です。ご成長ありがとうござい",
+      "start_seconds": 682.88,
+      "end_seconds": 688.412
+    },
+    {
+      "text": "ました。",
+      "start_seconds": 686.36,
+      "end_seconds": 690.432
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 688.412,
+      "end_seconds": 690.432
+    }
+  ],
+  "display_captions": [
+    {
+      "text": "ですが55年前の私の写真です。通常です",
+      "start_seconds": 13.96,
+      "end_seconds": 17.88,
+      "id": "Zl9u3m-tl3Q-display-0001",
+      "segment_id": "Zl9u3m-tl3Q-ja-0001"
+    },
+    {
+      "text": "とここから家庭環境や幼少期の思い出など",
+      "start_seconds": 17.88,
+      "end_seconds": 22.72,
+      "id": "Zl9u3m-tl3Q-display-0002",
+      "segment_id": "Zl9u3m-tl3Q-ja-0001"
+    },
+    {
+      "text": "家族のテーマのようなものが始まってく",
+      "start_seconds": 22.72,
+      "end_seconds": 25.8,
+      "id": "Zl9u3m-tl3Q-display-0003",
+      "segment_id": "Zl9u3m-tl3Q-ja-0001"
+    },
+    {
+      "text": "最初の1番になると思うんですが私の場合",
+      "start_seconds": 25.8,
+      "end_seconds": 28.8,
+      "id": "Zl9u3m-tl3Q-display-0004",
+      "segment_id": "Zl9u3m-tl3Q-ja-0002"
+    },
+    {
+      "text": "は違います。可愛い自分の写真を見つけた",
+      "start_seconds": 28.8,
+      "end_seconds": 31.8,
+      "id": "Zl9u3m-tl3Q-display-0005",
+      "segment_id": "Zl9u3m-tl3Q-ja-0002"
+    },
+    {
+      "text": "から使ってるだけです。",
+      "start_seconds": 31.8,
+      "end_seconds": 36.28,
+      "id": "Zl9u3m-tl3Q-display-0006",
+      "segment_id": "Zl9u3m-tl3Q-ja-0002"
+    },
+    {
+      "text": "はい。この写真で、え、さっきの赤ちゃん",
+      "start_seconds": 38.48,
+      "end_seconds": 43.32,
+      "id": "Zl9u3m-tl3Q-display-0007",
+      "segment_id": "Zl9u3m-tl3Q-ja-0003"
+    },
+    {
+      "text": "の写真で注目してもらいたいところが実は",
+      "start_seconds": 43.32,
+      "end_seconds": 45.239,
+      "id": "Zl9u3m-tl3Q-display-0008",
+      "segment_id": "Zl9u3m-tl3Q-ja-0003"
+    },
+    {
+      "text": "2つあったんです。スライドが次に行っ",
+      "start_seconds": 45.239,
+      "end_seconds": 47.559,
+      "id": "Zl9u3m-tl3Q-display-0009",
+      "segment_id": "Zl9u3m-tl3Q-ja-0003"
+    },
+    {
+      "text": "ちゃったんでもう1回戻します。",
+      "start_seconds": 47.559,
+      "end_seconds": 51.6,
+      "id": "Zl9u3m-tl3Q-display-0010",
+      "segment_id": "Zl9u3m-tl3Q-ja-0004"
+    },
+    {
+      "text": "2つ注目してもらいたいとこあります。",
+      "start_seconds": 51.6,
+      "end_seconds": 53.84,
+      "id": "Zl9u3m-tl3Q-display-0011",
+      "segment_id": "Zl9u3m-tl3Q-ja-0005"
+    },
+    {
+      "text": "この目線見てください。このカメですね。",
+      "start_seconds": 53.84,
+      "end_seconds": 57.16,
+      "id": "Zl9u3m-tl3Q-display-0012",
+      "segment_id": "Zl9u3m-tl3Q-ja-0006"
+    },
+    {
+      "text": "素晴らしいです。あともう1つはこの",
+      "start_seconds": 57.16,
+      "end_seconds": 59.879,
+      "id": "Zl9u3m-tl3Q-display-0013",
+      "segment_id": "Zl9u3m-tl3Q-ja-0007"
+    },
+    {
+      "text": "ほっこりとしたお尻。これ可愛いと思い",
+      "start_seconds": 59.879,
+      "end_seconds": 62.84,
+      "id": "Zl9u3m-tl3Q-display-0014",
+      "segment_id": "Zl9u3m-tl3Q-ja-0007"
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 62.84,
+      "end_seconds": 64.839,
+      "id": "Zl9u3m-tl3Q-display-0015",
+      "segment_id": "Zl9u3m-tl3Q-ja-0007"
+    },
+    {
+      "text": "これが現在の私です。[咳払い]",
+      "start_seconds": 64.839,
+      "end_seconds": 66.96,
+      "id": "Zl9u3m-tl3Q-display-0016",
+      "segment_id": "Zl9u3m-tl3Q-ja-0008"
+    },
+    {
+      "text": "大事の中でのやろうよ。そういうことが",
+      "start_seconds": 66.96,
+      "end_seconds": 69.96,
+      "id": "Zl9u3m-tl3Q-display-0017",
+      "segment_id": "Zl9u3m-tl3Q-ja-0008"
+    },
+    {
+      "text": "言いたいんじゃないんです。見てもらい",
+      "start_seconds": 69.96,
+      "end_seconds": 72.08,
+      "id": "Zl9u3m-tl3Q-display-0018",
+      "segment_id": "Zl9u3m-tl3Q-ja-0008"
+    },
+    {
+      "text": "たいとこはお腹。このぽっこりしたお腹。",
+      "start_seconds": 72.08,
+      "end_seconds": 76.24,
+      "id": "Zl9u3m-tl3Q-display-0019",
+      "segment_id": "Zl9u3m-tl3Q-ja-0008"
+    },
+    {
+      "text": "可愛く成長しました。",
+      "start_seconds": 76.24,
+      "end_seconds": 79.08,
+      "id": "Zl9u3m-tl3Q-display-0020",
+      "segment_id": "Zl9u3m-tl3Q-ja-0009"
+    },
+    {
+      "text": "これ私が普段お茶してる時の写真です。見",
+      "start_seconds": 79.08,
+      "end_seconds": 83.52,
+      "id": "Zl9u3m-tl3Q-display-0021",
+      "segment_id": "Zl9u3m-tl3Q-ja-0010"
+    },
+    {
+      "text": "て欲しいのは1箇所お茶を押し作り方を",
+      "start_seconds": 83.52,
+      "end_seconds": 86.72,
+      "id": "Zl9u3m-tl3Q-display-0022",
+      "segment_id": "Zl9u3m-tl3Q-ja-0010"
+    },
+    {
+      "text": "説明したいんじゃないです。",
+      "start_seconds": 86.72,
+      "end_seconds": 89.24,
+      "id": "Zl9u3m-tl3Q-display-0023",
+      "segment_id": "Zl9u3m-tl3Q-ja-0010"
+    },
+    {
+      "text": "の人かっこいいですよね。字が自さです。",
+      "start_seconds": 89.24,
+      "end_seconds": 94.28,
+      "id": "Zl9u3m-tl3Q-display-0024",
+      "segment_id": "Zl9u3m-tl3Q-ja-0011"
+    },
+    {
+      "text": "こんなこと話してたら時間が経ってしまう",
+      "start_seconds": 94.28,
+      "end_seconds": 97.159,
+      "id": "Zl9u3m-tl3Q-display-0025",
+      "segment_id": "Zl9u3m-tl3Q-ja-0012"
+    },
+    {
+      "text": "のでそろそろ本題に入ります。あなたは",
+      "start_seconds": 97.159,
+      "end_seconds": 101.2,
+      "id": "Zl9u3m-tl3Q-display-0026",
+      "segment_id": "Zl9u3m-tl3Q-ja-0012"
+    },
+    {
+      "text": "何者ですか?",
+      "start_seconds": 101.2,
+      "end_seconds": 103.52,
+      "id": "Zl9u3m-tl3Q-display-0027",
+      "segment_id": "Zl9u3m-tl3Q-ja-0012"
+    },
+    {
+      "text": "いきなり皆さんこのこと聞かれたら怖い",
+      "start_seconds": 103.52,
+      "end_seconds": 105.32,
+      "id": "Zl9u3m-tl3Q-display-0028",
+      "segment_id": "Zl9u3m-tl3Q-ja-0013"
+    },
+    {
+      "text": "ですよね。怖いですから私は今日今皆さん",
+      "start_seconds": 105.32,
+      "end_seconds": 108.84,
+      "id": "Zl9u3m-tl3Q-display-0029",
+      "segment_id": "Zl9u3m-tl3Q-ja-0013"
+    },
+    {
+      "text": "には聞きません。今日話したいのはこう",
+      "start_seconds": 108.84,
+      "end_seconds": 112.479,
+      "id": "Zl9u3m-tl3Q-display-0030",
+      "segment_id": "Zl9u3m-tl3Q-ja-0013"
+    },
+    {
+      "text": "いうことです。私はチ種としていろんな",
+      "start_seconds": 112.479,
+      "end_seconds": 116.24,
+      "id": "Zl9u3m-tl3Q-display-0031",
+      "segment_id": "Zl9u3m-tl3Q-ja-0014"
+    },
+    {
+      "text": "働きをなれ並べればそれなりの人に見えて",
+      "start_seconds": 116.24,
+      "end_seconds": 120.2,
+      "id": "Zl9u3m-tl3Q-display-0032",
+      "segment_id": "Zl9u3m-tl3Q-ja-0014"
+    },
+    {
+      "text": "しまいます。でもそんな話をしてきたん",
+      "start_seconds": 120.2,
+      "end_seconds": 123.68,
+      "id": "Zl9u3m-tl3Q-display-0033",
+      "segment_id": "Zl9u3m-tl3Q-ja-0014"
+    },
+    {
+      "text": "じゃないんです。失敗や座。そのポンコの",
+      "start_seconds": 123.68,
+      "end_seconds": 127.84,
+      "id": "Zl9u3m-tl3Q-display-0034",
+      "segment_id": "Zl9u3m-tl3Q-ja-0015"
+    },
+    {
+      "text": "山の中から",
+      "start_seconds": 127.84,
+      "end_seconds": 130.36,
+      "id": "Zl9u3m-tl3Q-display-0035",
+      "segment_id": "Zl9u3m-tl3Q-ja-0015"
+    },
+    {
+      "text": "あなたは何者ですか?この答えを見つけ",
+      "start_seconds": 130.36,
+      "end_seconds": 133.44,
+      "id": "Zl9u3m-tl3Q-display-0036",
+      "segment_id": "Zl9u3m-tl3Q-ja-0015"
+    },
+    {
+      "text": "ました。それを皆さんと共有したいと思い",
+      "start_seconds": 133.44,
+      "end_seconds": 136.519,
+      "id": "Zl9u3m-tl3Q-display-0037",
+      "segment_id": "Zl9u3m-tl3Q-ja-0016"
+    },
+    {
+      "text": "ます。小学生の頃目の前に育た",
+      "start_seconds": 136.519,
+      "end_seconds": 140.68,
+      "id": "Zl9u3m-tl3Q-display-0038",
+      "segment_id": "Zl9u3m-tl3Q-ja-0016"
+    },
+    {
+      "text": "クラスメイトからバスケットの練習に誘わ",
+      "start_seconds": 140.68,
+      "end_seconds": 142.68,
+      "id": "Zl9u3m-tl3Q-display-0039",
+      "segment_id": "Zl9u3m-tl3Q-ja-0016"
+    },
+    {
+      "text": "れました。",
+      "start_seconds": 142.68,
+      "end_seconds": 144.36,
+      "id": "Zl9u3m-tl3Q-display-0040",
+      "segment_id": "Zl9u3m-tl3Q-ja-0016"
+    },
+    {
+      "text": "彼の練習を見ていたらとにかくすごいん",
+      "start_seconds": 144.36,
+      "end_seconds": 146.8,
+      "id": "Zl9u3m-tl3Q-display-0041",
+      "segment_id": "Zl9u3m-tl3Q-ja-0017"
+    },
+    {
+      "text": "です。うまいんです。一瞬でそうれる",
+      "start_seconds": 146.8,
+      "end_seconds": 150.12,
+      "id": "Zl9u3m-tl3Q-display-0042",
+      "segment_id": "Zl9u3m-tl3Q-ja-0017"
+    },
+    {
+      "text": "センスがありました。僕はすぐに諦めまし",
+      "start_seconds": 150.12,
+      "end_seconds": 153.04,
+      "id": "Zl9u3m-tl3Q-display-0043",
+      "segment_id": "Zl9u3m-tl3Q-ja-0017"
+    },
+    {
+      "text": "た。でもその顔は正しかったんです。後に",
+      "start_seconds": 153.04,
+      "end_seconds": 157.48,
+      "id": "Zl9u3m-tl3Q-display-0044",
+      "segment_id": "Zl9u3m-tl3Q-ja-0018"
+    },
+    {
+      "text": "彼はミスターバスケットボールと言われる",
+      "start_seconds": 157.48,
+      "end_seconds": 160.36,
+      "id": "Zl9u3m-tl3Q-display-0045",
+      "segment_id": "Zl9u3m-tl3Q-ja-0018"
+    },
+    {
+      "text": "偉大なプレイヤーになりました。よし、次",
+      "start_seconds": 160.36,
+      "end_seconds": 164.28,
+      "id": "Zl9u3m-tl3Q-display-0046",
+      "segment_id": "Zl9u3m-tl3Q-ja-0018"
+    },
+    {
+      "text": "はサッカーが1年間",
+      "start_seconds": 164.28,
+      "end_seconds": 168.68,
+      "id": "Zl9u3m-tl3Q-display-0047",
+      "segment_id": "Zl9u3m-tl3Q-ja-0019"
+    },
+    {
+      "text": "ある時後輩が入ってきて彼の手段に立って",
+      "start_seconds": 168.68,
+      "end_seconds": 171.64,
+      "id": "Zl9u3m-tl3Q-display-0048",
+      "segment_id": "Zl9u3m-tl3Q-ja-0019"
+    },
+    {
+      "text": "ます。とんでもないものを受けてからあ、",
+      "start_seconds": 171.64,
+      "end_seconds": 175.319,
+      "id": "Zl9u3m-tl3Q-display-0049",
+      "segment_id": "Zl9u3m-tl3Q-ja-0019"
+    },
+    {
+      "text": "ここは誰だ?",
+      "start_seconds": 175.319,
+      "end_seconds": 177.84,
+      "id": "Zl9u3m-tl3Q-display-0050",
+      "segment_id": "Zl9u3m-tl3Q-ja-0020"
+    },
+    {
+      "text": "僕の何者の場所になるところじゃないと",
+      "start_seconds": 177.84,
+      "end_seconds": 180.36,
+      "id": "Zl9u3m-tl3Q-display-0051",
+      "segment_id": "Zl9u3m-tl3Q-ja-0021"
+    },
+    {
+      "text": "思いました。これもすぐ諦めました。彼は",
+      "start_seconds": 180.36,
+      "end_seconds": 183.76,
+      "id": "Zl9u3m-tl3Q-display-0052",
+      "segment_id": "Zl9u3m-tl3Q-ja-0021"
+    },
+    {
+      "text": "後にJBがあって有名な人気になって芸能",
+      "start_seconds": 183.76,
+      "end_seconds": 187.92,
+      "id": "Zl9u3m-tl3Q-display-0053",
+      "segment_id": "Zl9u3m-tl3Q-ja-0021"
+    },
+    {
+      "text": "界になあんなの撮影したんですよ。やら",
+      "start_seconds": 187.92,
+      "end_seconds": 190.44,
+      "id": "Zl9u3m-tl3Q-display-0054",
+      "segment_id": "Zl9u3m-tl3Q-ja-0022"
+    },
+    {
+      "text": "なくてよかったです。そっか。こんな",
+      "start_seconds": 190.44,
+      "end_seconds": 193.12,
+      "id": "Zl9u3m-tl3Q-display-0055",
+      "segment_id": "Zl9u3m-tl3Q-ja-0022"
+    },
+    {
+      "text": "メジャーなスポーツばかりに挑戦するから",
+      "start_seconds": 193.12,
+      "end_seconds": 195.04,
+      "id": "Zl9u3m-tl3Q-display-0056",
+      "segment_id": "Zl9u3m-tl3Q-ja-0022"
+    },
+    {
+      "text": "ダメだった。そう思いました。そう思って",
+      "start_seconds": 195.04,
+      "end_seconds": 198.12,
+      "id": "Zl9u3m-tl3Q-display-0057",
+      "segment_id": "Zl9u3m-tl3Q-ja-0022"
+    },
+    {
+      "text": "僕はボーリングを始めました。小学生で",
+      "start_seconds": 198.12,
+      "end_seconds": 201.879,
+      "id": "Zl9u3m-tl3Q-display-0058",
+      "segment_id": "Zl9u3m-tl3Q-ja-0023"
+    },
+    {
+      "text": "本気でやってる人なんていなかったんです",
+      "start_seconds": 201.879,
+      "end_seconds": 203.92,
+      "id": "Zl9u3m-tl3Q-display-0059",
+      "segment_id": "Zl9u3m-tl3Q-ja-0023"
+    },
+    {
+      "text": "。お小遣いでマイボールを作り、いろんな",
+      "start_seconds": 203.92,
+      "end_seconds": 207.12,
+      "id": "Zl9u3m-tl3Q-display-0060",
+      "segment_id": "Zl9u3m-tl3Q-ja-0023"
+    },
+    {
+      "text": "大談に出ました。でもこれも挫折をして",
+      "start_seconds": 207.12,
+      "end_seconds": 210.36,
+      "id": "Zl9u3m-tl3Q-display-0061",
+      "segment_id": "Zl9u3m-tl3Q-ja-0024"
+    },
+    {
+      "text": "しまいました。ちなみにプロボーラーで1",
+      "start_seconds": 210.36,
+      "end_seconds": 214.56,
+      "id": "Zl9u3m-tl3Q-display-0062",
+      "segment_id": "Zl9u3m-tl3Q-ja-0024"
+    },
+    {
+      "text": "番になるというビジョンはあったんです。",
+      "start_seconds": 214.56,
+      "end_seconds": 218.12,
+      "id": "Zl9u3m-tl3Q-display-0063",
+      "segment_id": "Zl9u3m-tl3Q-ja-0024"
+    },
+    {
+      "text": "当時第2人気だったプロレスラーで",
+      "start_seconds": 218.12,
+      "end_seconds": 220.56,
+      "id": "Zl9u3m-tl3Q-display-0064",
+      "segment_id": "Zl9u3m-tl3Q-ja-0025"
+    },
+    {
+      "text": "タイガーマスク選手というのがいました。",
+      "start_seconds": 220.56,
+      "end_seconds": 223.84,
+      "id": "Zl9u3m-tl3Q-display-0065",
+      "segment_id": "Zl9u3m-tl3Q-ja-0025"
+    },
+    {
+      "text": "面をかぶって右手でも左手でもストライク",
+      "start_seconds": 223.84,
+      "end_seconds": 228.12,
+      "id": "Zl9u3m-tl3Q-display-0066",
+      "segment_id": "Zl9u3m-tl3Q-ja-0026"
+    },
+    {
+      "text": "が取れるそんなプロボーラーになって",
+      "start_seconds": 228.12,
+      "end_seconds": 230.04,
+      "id": "Zl9u3m-tl3Q-display-0067",
+      "segment_id": "Zl9u3m-tl3Q-ja-0026"
+    },
+    {
+      "text": "やろうと思ったんです。",
+      "start_seconds": 230.04,
+      "end_seconds": 233.079,
+      "id": "Zl9u3m-tl3Q-display-0068",
+      "segment_id": "Zl9u3m-tl3Q-ja-0026"
+    },
+    {
+      "text": "小学生の企画と企画書としてはかなり奇",
+      "start_seconds": 233.079,
+      "end_seconds": 236.76,
+      "id": "Zl9u3m-tl3Q-display-0069",
+      "segment_id": "Zl9u3m-tl3Q-ja-0027"
+    },
+    {
+      "text": "だったと思います。こうやって振り返ると",
+      "start_seconds": 236.76,
+      "end_seconds": 240.439,
+      "id": "Zl9u3m-tl3Q-display-0070",
+      "segment_id": "Zl9u3m-tl3Q-ja-0027"
+    },
+    {
+      "text": "笑い話に聞こえるかもしれませんが当時の",
+      "start_seconds": 240.439,
+      "end_seconds": 243.879,
+      "id": "Zl9u3m-tl3Q-display-0071",
+      "segment_id": "Zl9u3m-tl3Q-ja-0027"
+    },
+    {
+      "text": "僕は本気でした。勝てる場所を探し続けて",
+      "start_seconds": 243.879,
+      "end_seconds": 248.04,
+      "id": "Zl9u3m-tl3Q-display-0072",
+      "segment_id": "Zl9u3m-tl3Q-ja-0028"
+    },
+    {
+      "text": "見つからないまま中学生高校大学と卒業し",
+      "start_seconds": 248.04,
+      "end_seconds": 252.48,
+      "id": "Zl9u3m-tl3Q-display-0073",
+      "segment_id": "Zl9u3m-tl3Q-ja-0028"
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 252.48,
+      "end_seconds": 254.12,
+      "id": "Zl9u3m-tl3Q-display-0074",
+      "segment_id": "Zl9u3m-tl3Q-ja-0028"
+    },
+    {
+      "text": "収束先は中国料理の調理場でした。なぜ",
+      "start_seconds": 254.12,
+      "end_seconds": 258.239,
+      "id": "Zl9u3m-tl3Q-display-0075",
+      "segment_id": "Zl9u3m-tl3Q-ja-0029"
+    },
+    {
+      "text": "なら",
+      "start_seconds": 258.239,
+      "end_seconds": 259.759,
+      "id": "Zl9u3m-tl3Q-display-0076",
+      "segment_id": "Zl9u3m-tl3Q-ja-0029"
+    },
+    {
+      "text": "ラーメンが好きだったんです。そして20",
+      "start_seconds": 259.759,
+      "end_seconds": 263.44,
+      "id": "Zl9u3m-tl3Q-display-0077",
+      "segment_id": "Zl9u3m-tl3Q-ja-0029"
+    },
+    {
+      "text": "代で企業を決意します。普通の中国料理を",
+      "start_seconds": 263.44,
+      "end_seconds": 267.56,
+      "id": "Zl9u3m-tl3Q-display-0078",
+      "segment_id": "Zl9u3m-tl3Q-ja-0030"
+    },
+    {
+      "text": "やっても多分流行らないだろうと思いまし",
+      "start_seconds": 267.56,
+      "end_seconds": 269.88,
+      "id": "Zl9u3m-tl3Q-display-0079",
+      "segment_id": "Zl9u3m-tl3Q-ja-0030"
+    },
+    {
+      "text": "た。そうだ。小学生の時は企画書だ。覆面",
+      "start_seconds": 269.88,
+      "end_seconds": 274.44,
+      "id": "Zl9u3m-tl3Q-display-0080",
+      "segment_id": "Zl9u3m-tl3Q-ja-0030"
+    },
+    {
+      "text": "かけるプロラ。これで行こう。中国料理の",
+      "start_seconds": 274.44,
+      "end_seconds": 278.24,
+      "id": "Zl9u3m-tl3Q-display-0081",
+      "segment_id": "Zl9u3m-tl3Q-ja-0031"
+    },
+    {
+      "text": "お店かけるおしゃるの屋。",
+      "start_seconds": 278.24,
+      "end_seconds": 281.639,
+      "id": "Zl9u3m-tl3Q-display-0082",
+      "segment_id": "Zl9u3m-tl3Q-ja-0031"
+    },
+    {
+      "text": "こんな店です。",
+      "start_seconds": 281.639,
+      "end_seconds": 284.32,
+      "id": "Zl9u3m-tl3Q-display-0083",
+      "segment_id": "Zl9u3m-tl3Q-ja-0032"
+    },
+    {
+      "text": "今まで寝なかった業体だったのでこれが大",
+      "start_seconds": 284.32,
+      "end_seconds": 287.36,
+      "id": "Zl9u3m-tl3Q-display-0084",
+      "segment_id": "Zl9u3m-tl3Q-ja-0033"
+    },
+    {
+      "text": "成功しました。あっという間に店舗は4",
+      "start_seconds": 287.36,
+      "end_seconds": 290.479,
+      "id": "Zl9u3m-tl3Q-display-0085",
+      "segment_id": "Zl9u3m-tl3Q-ja-0033"
+    },
+    {
+      "text": "店舗まで増え従業員がいっぱい入ってきて",
+      "start_seconds": 290.479,
+      "end_seconds": 293.12,
+      "id": "Zl9u3m-tl3Q-display-0086",
+      "segment_id": "Zl9u3m-tl3Q-ja-0033"
+    },
+    {
+      "text": "くれました。正直に言います。この時の",
+      "start_seconds": 293.12,
+      "end_seconds": 297.52,
+      "id": "Zl9u3m-tl3Q-display-0087",
+      "segment_id": "Zl9u3m-tl3Q-ja-0034"
+    },
+    {
+      "text": "高用感は今でも覚えてます。みんなが自分",
+      "start_seconds": 297.52,
+      "end_seconds": 301.36,
+      "id": "Zl9u3m-tl3Q-display-0088",
+      "segment_id": "Zl9u3m-tl3Q-ja-0034"
+    },
+    {
+      "text": "の言葉に頷いてくれる数字がどんどん",
+      "start_seconds": 301.36,
+      "end_seconds": 304.479,
+      "id": "Zl9u3m-tl3Q-display-0089",
+      "segment_id": "Zl9u3m-tl3Q-ja-0034"
+    },
+    {
+      "text": "上がっていく。ようやく僕は何者かに慣れ",
+      "start_seconds": 304.479,
+      "end_seconds": 308.08,
+      "id": "Zl9u3m-tl3Q-display-0090",
+      "segment_id": "Zl9u3m-tl3Q-ja-0035"
+    },
+    {
+      "text": "たんじゃないかそう思ってました。",
+      "start_seconds": 308.08,
+      "end_seconds": 311.759,
+      "id": "Zl9u3m-tl3Q-display-0091",
+      "segment_id": "Zl9u3m-tl3Q-ja-0035"
+    },
+    {
+      "text": "やっと見つけたような気になってました。",
+      "start_seconds": 311.759,
+      "end_seconds": 316.8,
+      "id": "Zl9u3m-tl3Q-display-0092",
+      "segment_id": "Zl9u3m-tl3Q-ja-0036"
+    },
+    {
+      "text": "でも今振り返るとあれは見つけたんじゃ",
+      "start_seconds": 316.84,
+      "end_seconds": 320.52,
+      "id": "Zl9u3m-tl3Q-display-0093",
+      "segment_id": "Zl9u3m-tl3Q-ja-0037"
+    },
+    {
+      "text": "なくてただ間当上がってただけなんです。",
+      "start_seconds": 320.52,
+      "end_seconds": 326.31899999999996,
+      "id": "Zl9u3m-tl3Q-display-0094",
+      "segment_id": "Zl9u3m-tl3Q-ja-0037"
+    },
+    {
+      "text": "その経2008年日本茶業界に採用します",
+      "start_seconds": 328.0,
+      "end_seconds": 332.0,
+      "id": "Zl9u3m-tl3Q-display-0095",
+      "segment_id": "Zl9u3m-tl3Q-ja-0038"
+    },
+    {
+      "text": "。当時の日本家は車両産業いわゆる劣等者",
+      "start_seconds": 332.0,
+      "end_seconds": 336.8,
+      "id": "Zl9u3m-tl3Q-display-0096",
+      "segment_id": "Zl9u3m-tl3Q-ja-0038"
+    },
+    {
+      "text": "なんです。アラジ各国の下落日本で",
+      "start_seconds": 336.8,
+      "end_seconds": 340.84,
+      "id": "Zl9u3m-tl3Q-display-0097",
+      "segment_id": "Zl9u3m-tl3Q-ja-0039"
+    },
+    {
+      "text": "いろんな問題が重なっていました。これを",
+      "start_seconds": 340.84,
+      "end_seconds": 344.16,
+      "id": "Zl9u3m-tl3Q-display-0098",
+      "segment_id": "Zl9u3m-tl3Q-ja-0039"
+    },
+    {
+      "text": "どうにかしてやろうと思っていました。今",
+      "start_seconds": 344.16,
+      "end_seconds": 347.88,
+      "id": "Zl9u3m-tl3Q-display-0099",
+      "segment_id": "Zl9u3m-tl3Q-ja-0039"
+    },
+    {
+      "text": "は相当な思い上がりです。お店を作った",
+      "start_seconds": 347.88,
+      "end_seconds": 351.96,
+      "id": "Zl9u3m-tl3Q-display-0100",
+      "segment_id": "Zl9u3m-tl3Q-ja-0040"
+    },
+    {
+      "text": "ままも1年間はお客さんがほとんど来て",
+      "start_seconds": 351.96,
+      "end_seconds": 354.639,
+      "id": "Zl9u3m-tl3Q-display-0101",
+      "segment_id": "Zl9u3m-tl3Q-ja-0040"
+    },
+    {
+      "text": "くれなかったんです。そこでコンテストに",
+      "start_seconds": 354.639,
+      "end_seconds": 358.4,
+      "id": "Zl9u3m-tl3Q-display-0102",
+      "segment_id": "Zl9u3m-tl3Q-ja-0040"
+    },
+    {
+      "text": "出して致名度を上げてやっとお客さんが来",
+      "start_seconds": 358.4,
+      "end_seconds": 361.72,
+      "id": "Zl9u3m-tl3Q-display-0103",
+      "segment_id": "Zl9u3m-tl3Q-ja-0041"
+    },
+    {
+      "text": "てくれるようになった。",
+      "start_seconds": 361.72,
+      "end_seconds": 364.16,
+      "id": "Zl9u3m-tl3Q-display-0104",
+      "segment_id": "Zl9u3m-tl3Q-ja-0041"
+    },
+    {
+      "text": "お茶のおろしの出も始まりました。",
+      "start_seconds": 364.16,
+      "end_seconds": 368.4,
+      "id": "Zl9u3m-tl3Q-display-0105",
+      "segment_id": "Zl9u3m-tl3Q-ja-0042"
+    },
+    {
+      "text": "飲食店とお茶業界から両方をうまく",
+      "start_seconds": 368.4,
+      "end_seconds": 371.4,
+      "id": "Zl9u3m-tl3Q-display-0106",
+      "segment_id": "Zl9u3m-tl3Q-ja-0043"
+    },
+    {
+      "text": "生き出したと思っていました。",
+      "start_seconds": 371.4,
+      "end_seconds": 375.44,
+      "id": "Zl9u3m-tl3Q-display-0107",
+      "segment_id": "Zl9u3m-tl3Q-ja-0043"
+    },
+    {
+      "text": "もう1度自分は何者かに近づけた慣れたん",
+      "start_seconds": 375.44,
+      "end_seconds": 381.08,
+      "id": "Zl9u3m-tl3Q-display-0108",
+      "segment_id": "Zl9u3m-tl3Q-ja-0044"
+    },
+    {
+      "text": "だとそう信じていました。",
+      "start_seconds": 381.08,
+      "end_seconds": 384.12,
+      "id": "Zl9u3m-tl3Q-display-0109",
+      "segment_id": "Zl9u3m-tl3Q-ja-0044"
+    },
+    {
+      "text": "しかし",
+      "start_seconds": 384.12,
+      "end_seconds": 385.72,
+      "id": "Zl9u3m-tl3Q-display-0110",
+      "segment_id": "Zl9u3m-tl3Q-ja-0045"
+    },
+    {
+      "text": "2011年日本を襲った大災害東日本大",
+      "start_seconds": 385.72,
+      "end_seconds": 390.24,
+      "id": "Zl9u3m-tl3Q-display-0111",
+      "segment_id": "Zl9u3m-tl3Q-ja-0045"
+    },
+    {
+      "text": "災害やってきます。",
+      "start_seconds": 390.24,
+      "end_seconds": 393.639,
+      "id": "Zl9u3m-tl3Q-display-0112",
+      "segment_id": "Zl9u3m-tl3Q-ja-0045"
+    },
+    {
+      "text": "計画停電でお店は回転休業状態になりまし",
+      "start_seconds": 393.639,
+      "end_seconds": 397.56,
+      "id": "Zl9u3m-tl3Q-display-0113",
+      "segment_id": "Zl9u3m-tl3Q-ja-0046"
+    },
+    {
+      "text": "た。",
+      "start_seconds": 397.56,
+      "end_seconds": 399.319,
+      "id": "Zl9u3m-tl3Q-display-0114",
+      "segment_id": "Zl9u3m-tl3Q-ja-0046"
+    },
+    {
+      "text": "5月には神奈川県さんのお茶からセシウム",
+      "start_seconds": 399.319,
+      "end_seconds": 402.96,
+      "id": "Zl9u3m-tl3Q-display-0115",
+      "segment_id": "Zl9u3m-tl3Q-ja-0047"
+    },
+    {
+      "text": "が検出されたというニュースが広がり",
+      "start_seconds": 402.96,
+      "end_seconds": 406.8,
+      "id": "Zl9u3m-tl3Q-display-0116",
+      "segment_id": "Zl9u3m-tl3Q-ja-0047"
+    },
+    {
+      "text": "風で出荷した商品が全部戻ってきてしまっ",
+      "start_seconds": 406.8,
+      "end_seconds": 411.08,
+      "id": "Zl9u3m-tl3Q-display-0117",
+      "segment_id": "Zl9u3m-tl3Q-ja-0047"
+    },
+    {
+      "text": "たんです。お店は営業できない在庫は",
+      "start_seconds": 411.08,
+      "end_seconds": 415.16,
+      "id": "Zl9u3m-tl3Q-display-0118",
+      "segment_id": "Zl9u3m-tl3Q-ja-0048"
+    },
+    {
+      "text": "いっぱい戻ってくる。資金繰りも大変な",
+      "start_seconds": 415.16,
+      "end_seconds": 418.479,
+      "id": "Zl9u3m-tl3Q-display-0119",
+      "segment_id": "Zl9u3m-tl3Q-ja-0048"
+    },
+    {
+      "text": "ことになりました。3ヶ月でギブアップを",
+      "start_seconds": 418.479,
+      "end_seconds": 421.52,
+      "id": "Zl9u3m-tl3Q-display-0120",
+      "segment_id": "Zl9u3m-tl3Q-ja-0048"
+    },
+    {
+      "text": "しました。天を閉めるという決断をし、",
+      "start_seconds": 421.52,
+      "end_seconds": 425.759,
+      "id": "Zl9u3m-tl3Q-display-0121",
+      "segment_id": "Zl9u3m-tl3Q-ja-0049"
+    },
+    {
+      "text": "社員に頭を下げ、やめていただきました。",
+      "start_seconds": 425.759,
+      "end_seconds": 430.96,
+      "id": "Zl9u3m-tl3Q-display-0122",
+      "segment_id": "Zl9u3m-tl3Q-ja-0049"
+    },
+    {
+      "text": "頭を下げながら情けなくて悔しくて涙が出",
+      "start_seconds": 430.96,
+      "end_seconds": 435.4,
+      "id": "Zl9u3m-tl3Q-display-0123",
+      "segment_id": "Zl9u3m-tl3Q-ja-0050"
+    },
+    {
+      "text": "そうなのを来えてきました。",
+      "start_seconds": 435.4,
+      "end_seconds": 438.879,
+      "id": "Zl9u3m-tl3Q-display-0124",
+      "segment_id": "Zl9u3m-tl3Q-ja-0050"
+    },
+    {
+      "text": "私は在庫の山と一緒に",
+      "start_seconds": 438.879,
+      "end_seconds": 442.36,
+      "id": "Zl9u3m-tl3Q-display-0125",
+      "segment_id": "Zl9u3m-tl3Q-ja-0051"
+    },
+    {
+      "text": "プレ屋に引越しました。",
+      "start_seconds": 442.36,
+      "end_seconds": 445.68,
+      "id": "Zl9u3m-tl3Q-display-0126",
+      "segment_id": "Zl9u3m-tl3Q-ja-0051"
+    },
+    {
+      "text": "ダンボールに囲まれて1人を過ごしたです",
+      "start_seconds": 445.68,
+      "end_seconds": 449.28,
+      "id": "Zl9u3m-tl3Q-display-0127",
+      "segment_id": "Zl9u3m-tl3Q-ja-0052"
+    },
+    {
+      "text": "。",
+      "start_seconds": 449.28,
+      "end_seconds": 451.36,
+      "id": "Zl9u3m-tl3Q-display-0128",
+      "segment_id": "Zl9u3m-tl3Q-ja-0052"
+    },
+    {
+      "text": "何も書いになりたいってずっと走ってきた",
+      "start_seconds": 451.36,
+      "end_seconds": 454.4,
+      "id": "Zl9u3m-tl3Q-display-0129",
+      "segment_id": "Zl9u3m-tl3Q-ja-0053"
+    },
+    {
+      "text": "。そのたどり着いた先がここかと",
+      "start_seconds": 454.4,
+      "end_seconds": 458.68,
+      "id": "Zl9u3m-tl3Q-display-0130",
+      "segment_id": "Zl9u3m-tl3Q-ja-0053"
+    },
+    {
+      "text": "そう思うと情けなくてこうやって",
+      "start_seconds": 458.68,
+      "end_seconds": 463.319,
+      "id": "Zl9u3m-tl3Q-display-0131",
+      "segment_id": "Zl9u3m-tl3Q-ja-0053"
+    },
+    {
+      "text": "人とも会いたくなかったんです。",
+      "start_seconds": 463.319,
+      "end_seconds": 467.12,
+      "id": "Zl9u3m-tl3Q-display-0132",
+      "segment_id": "Zl9u3m-tl3Q-ja-0054"
+    },
+    {
+      "text": "少し受験ができたので",
+      "start_seconds": 467.12,
+      "end_seconds": 470.36,
+      "id": "Zl9u3m-tl3Q-display-0133",
+      "segment_id": "Zl9u3m-tl3Q-ja-0055"
+    },
+    {
+      "text": "ふと思ったんです。今東北に東北で震災に",
+      "start_seconds": 470.36,
+      "end_seconds": 476.8,
+      "id": "Zl9u3m-tl3Q-display-0134",
+      "segment_id": "Zl9u3m-tl3Q-ja-0055"
+    },
+    {
+      "text": "会われた方がどうなっているんだろう。",
+      "start_seconds": 476.8,
+      "end_seconds": 479.72,
+      "id": "Zl9u3m-tl3Q-display-0135",
+      "segment_id": "Zl9u3m-tl3Q-ja-0056"
+    },
+    {
+      "text": "そって連絡を取りました。そしたら東北",
+      "start_seconds": 479.72,
+      "end_seconds": 484.059,
+      "id": "Zl9u3m-tl3Q-display-0136",
+      "segment_id": "Zl9u3m-tl3Q-ja-0057"
+    },
+    {
+      "text": "[咳払い]の方たちは私が思ってるような",
+      "start_seconds": 484.059,
+      "end_seconds": 486.96,
+      "id": "Zl9u3m-tl3Q-display-0137",
+      "segment_id": "Zl9u3m-tl3Q-ja-0057"
+    },
+    {
+      "text": "レベルでなくレベルではなく本当にきつい",
+      "start_seconds": 486.96,
+      "end_seconds": 491.08,
+      "id": "Zl9u3m-tl3Q-display-0138",
+      "segment_id": "Zl9u3m-tl3Q-ja-0057"
+    },
+    {
+      "text": "思いをされていました。あ、私は何も見え",
+      "start_seconds": 491.08,
+      "end_seconds": 494.159,
+      "id": "Zl9u3m-tl3Q-display-0139",
+      "segment_id": "Zl9u3m-tl3Q-ja-0058"
+    },
+    {
+      "text": "ていなかったんだ。",
+      "start_seconds": 494.159,
+      "end_seconds": 496.599,
+      "id": "Zl9u3m-tl3Q-display-0140",
+      "segment_id": "Zl9u3m-tl3Q-ja-0058"
+    },
+    {
+      "text": "ダンボールに囲まれて1人で震いていた",
+      "start_seconds": 496.599,
+      "end_seconds": 499.96,
+      "id": "Zl9u3m-tl3Q-display-0141",
+      "segment_id": "Zl9u3m-tl3Q-ja-0059"
+    },
+    {
+      "text": "自分が急に小さく見えました。",
+      "start_seconds": 499.96,
+      "end_seconds": 504.039,
+      "id": "Zl9u3m-tl3Q-display-0142",
+      "segment_id": "Zl9u3m-tl3Q-ja-0059"
+    },
+    {
+      "text": "ある日疲れた自分の話を聞きながら僕はお",
+      "start_seconds": 504.039,
+      "end_seconds": 508.72,
+      "id": "Zl9u3m-tl3Q-display-0143",
+      "segment_id": "Zl9u3m-tl3Q-ja-0060"
+    },
+    {
+      "text": "茶を入れました。そしたら怖っていた彼の",
+      "start_seconds": 508.72,
+      "end_seconds": 513.68,
+      "id": "Zl9u3m-tl3Q-display-0144",
+      "segment_id": "Zl9u3m-tl3Q-ja-0060"
+    },
+    {
+      "text": "表情がふっと緩んでありとって言ってくれ",
+      "start_seconds": 513.68,
+      "end_seconds": 517.0,
+      "id": "Zl9u3m-tl3Q-display-0145",
+      "segment_id": "Zl9u3m-tl3Q-ja-0061"
+    },
+    {
+      "text": "たわけです。その時僕は気づいたんです。",
+      "start_seconds": 517.0,
+      "end_seconds": 520.599,
+      "id": "Zl9u3m-tl3Q-display-0146",
+      "segment_id": "Zl9u3m-tl3Q-ja-0061"
+    },
+    {
+      "text": "バスケの友人にもサッカーの後輩にも",
+      "start_seconds": 520.599,
+      "end_seconds": 525.519,
+      "id": "Zl9u3m-tl3Q-display-0147",
+      "segment_id": "Zl9u3m-tl3Q-ja-0062"
+    },
+    {
+      "text": "叶わなかったあの頃から僕はずっと勝てる",
+      "start_seconds": 525.519,
+      "end_seconds": 529.44,
+      "id": "Zl9u3m-tl3Q-display-0148",
+      "segment_id": "Zl9u3m-tl3Q-ja-0062"
+    },
+    {
+      "text": "場所を探していました。",
+      "start_seconds": 529.44,
+      "end_seconds": 532.16,
+      "id": "Zl9u3m-tl3Q-display-0149",
+      "segment_id": "Zl9u3m-tl3Q-ja-0062"
+    },
+    {
+      "text": "そして起業してからは世間が求める何者で",
+      "start_seconds": 532.16,
+      "end_seconds": 536.44,
+      "id": "Zl9u3m-tl3Q-display-0150",
+      "segment_id": "Zl9u3m-tl3Q-ja-0063"
+    },
+    {
+      "text": "あろうとずっと上を向いて走っていたん",
+      "start_seconds": 536.44,
+      "end_seconds": 539.16,
+      "id": "Zl9u3m-tl3Q-display-0151",
+      "segment_id": "Zl9u3m-tl3Q-ja-0063"
+    },
+    {
+      "text": "です。",
+      "start_seconds": 539.16,
+      "end_seconds": 540.88,
+      "id": "Zl9u3m-tl3Q-display-0152",
+      "segment_id": "Zl9u3m-tl3Q-ja-0063"
+    },
+    {
+      "text": "でもそれはずっと同じことだったんです。",
+      "start_seconds": 540.88,
+      "end_seconds": 545.32,
+      "id": "Zl9u3m-tl3Q-display-0153",
+      "segment_id": "Zl9u3m-tl3Q-ja-0064"
+    },
+    {
+      "text": "誰かに認められてる自分を探し続けてそれ",
+      "start_seconds": 545.32,
+      "end_seconds": 549.839,
+      "id": "Zl9u3m-tl3Q-display-0154",
+      "segment_id": "Zl9u3m-tl3Q-ja-0065"
+    },
+    {
+      "text": "だけだったんです。でもふと下を見たら",
+      "start_seconds": 549.839,
+      "end_seconds": 554.76,
+      "id": "Zl9u3m-tl3Q-display-0155",
+      "segment_id": "Zl9u3m-tl3Q-ja-0065"
+    },
+    {
+      "text": "もう手に握っていかないです。",
+      "start_seconds": 554.76,
+      "end_seconds": 557.839,
+      "id": "Zl9u3m-tl3Q-display-0156",
+      "segment_id": "Zl9u3m-tl3Q-ja-0066"
+    },
+    {
+      "text": "お茶を入れることができる。あと人の話を",
+      "start_seconds": 557.839,
+      "end_seconds": 561.12,
+      "id": "Zl9u3m-tl3Q-display-0157",
+      "segment_id": "Zl9u3m-tl3Q-ja-0067"
+    },
+    {
+      "text": "聞く聞くということができる。今何者かに",
+      "start_seconds": 561.12,
+      "end_seconds": 566.399,
+      "id": "Zl9u3m-tl3Q-display-0158",
+      "segment_id": "Zl9u3m-tl3Q-ja-0067"
+    },
+    {
+      "text": "なろうと思ってる苦しんでる人へ",
+      "start_seconds": 566.399,
+      "end_seconds": 569.88,
+      "id": "Zl9u3m-tl3Q-display-0159",
+      "segment_id": "Zl9u3m-tl3Q-ja-0068"
+    },
+    {
+      "text": "上から言ってると大変なことになって",
+      "start_seconds": 569.88,
+      "end_seconds": 573.04,
+      "id": "Zl9u3m-tl3Q-display-0160",
+      "segment_id": "Zl9u3m-tl3Q-ja-0068"
+    },
+    {
+      "text": "しまいます。[咳払い]",
+      "start_seconds": 573.04,
+      "end_seconds": 575.16,
+      "id": "Zl9u3m-tl3Q-display-0161",
+      "segment_id": "Zl9u3m-tl3Q-ja-0068"
+    },
+    {
+      "text": "情報型の事態です。周りのプレッシャーで",
+      "start_seconds": 575.16,
+      "end_seconds": 578.92,
+      "id": "Zl9u3m-tl3Q-display-0162",
+      "segment_id": "Zl9u3m-tl3Q-ja-0069"
+    },
+    {
+      "text": "疲れてる人はいませんか?",
+      "start_seconds": 578.92,
+      "end_seconds": 582.12,
+      "id": "Zl9u3m-tl3Q-display-0163",
+      "segment_id": "Zl9u3m-tl3Q-ja-0069"
+    },
+    {
+      "text": "皆さんはもう自分自身の自分自身の人生の",
+      "start_seconds": 582.12,
+      "end_seconds": 586.8,
+      "id": "Zl9u3m-tl3Q-display-0164",
+      "segment_id": "Zl9u3m-tl3Q-ja-0070"
+    },
+    {
+      "text": "ストーリーを歩んでるんです。[咳払い]",
+      "start_seconds": 586.8,
+      "end_seconds": 589.56,
+      "id": "Zl9u3m-tl3Q-display-0165",
+      "segment_id": "Zl9u3m-tl3Q-ja-0070"
+    },
+    {
+      "text": "夢を見ること、理想的な人間になること、",
+      "start_seconds": 589.56,
+      "end_seconds": 593.279,
+      "id": "Zl9u3m-tl3Q-display-0166",
+      "segment_id": "Zl9u3m-tl3Q-ja-0070"
+    },
+    {
+      "text": "これは素晴らしいことだと思います。でも",
+      "start_seconds": 593.279,
+      "end_seconds": 597.2,
+      "id": "Zl9u3m-tl3Q-display-0167",
+      "segment_id": "Zl9u3m-tl3Q-ja-0071"
+    },
+    {
+      "text": "疲れたらまず1回立ち止まって自分がもう",
+      "start_seconds": 597.2,
+      "end_seconds": 600.76,
+      "id": "Zl9u3m-tl3Q-display-0168",
+      "segment_id": "Zl9u3m-tl3Q-ja-0071"
+    },
+    {
+      "text": "すでに持っているものを他に与えて",
+      "start_seconds": 600.76,
+      "end_seconds": 604.0,
+      "id": "Zl9u3m-tl3Q-display-0169",
+      "segment_id": "Zl9u3m-tl3Q-ja-0071"
+    },
+    {
+      "text": "ください。",
+      "start_seconds": 604.0,
+      "end_seconds": 606.92,
+      "id": "Zl9u3m-tl3Q-display-0170",
+      "segment_id": "Zl9u3m-tl3Q-ja-0072"
+    },
+    {
+      "text": "まだ手にしてないもの、そんなもの",
+      "start_seconds": 606.92,
+      "end_seconds": 609.16,
+      "id": "Zl9u3m-tl3Q-display-0171",
+      "segment_id": "Zl9u3m-tl3Q-ja-0073"
+    },
+    {
+      "text": "ばっかり見ていると疲れてしまいます。",
+      "start_seconds": 609.16,
+      "end_seconds": 612.64,
+      "id": "Zl9u3m-tl3Q-display-0172",
+      "segment_id": "Zl9u3m-tl3Q-ja-0073"
+    },
+    {
+      "text": "疲れた時は1回下を見てください。もう",
+      "start_seconds": 612.64,
+      "end_seconds": 616.6,
+      "id": "Zl9u3m-tl3Q-display-0173",
+      "segment_id": "Zl9u3m-tl3Q-ja-0074"
+    },
+    {
+      "text": "必ず皆さんの中に何者かがあるんです。",
+      "start_seconds": 616.6,
+      "end_seconds": 622.12,
+      "id": "Zl9u3m-tl3Q-display-0174",
+      "segment_id": "Zl9u3m-tl3Q-ja-0074"
+    },
+    {
+      "text": "それを相手に是非プレゼントしてください",
+      "start_seconds": 622.12,
+      "end_seconds": 624.2,
+      "id": "Zl9u3m-tl3Q-display-0175",
+      "segment_id": "Zl9u3m-tl3Q-ja-0075"
+    },
+    {
+      "text": "。私は立派な実業家にも優れた経済にもし",
+      "start_seconds": 624.2,
+      "end_seconds": 631.92,
+      "id": "Zl9u3m-tl3Q-display-0176",
+      "segment_id": "Zl9u3m-tl3Q-ja-0075"
+    },
+    {
+      "text": "や復をかぶったプロホーラーにも多分もう",
+      "start_seconds": 631.92,
+      "end_seconds": 636.0,
+      "id": "Zl9u3m-tl3Q-display-0177",
+      "segment_id": "Zl9u3m-tl3Q-ja-0076"
+    },
+    {
+      "text": "ならないでしょう。でもそれでもいいと",
+      "start_seconds": 636.0,
+      "end_seconds": 638.72,
+      "id": "Zl9u3m-tl3Q-display-0178",
+      "segment_id": "Zl9u3m-tl3Q-ja-0076"
+    },
+    {
+      "text": "思っています。あの日疲れ果てた地上に",
+      "start_seconds": 638.72,
+      "end_seconds": 642.48,
+      "id": "Zl9u3m-tl3Q-display-0179",
+      "segment_id": "Zl9u3m-tl3Q-ja-0076"
+    },
+    {
+      "text": "入れた1杯のお茶。",
+      "start_seconds": 642.48,
+      "end_seconds": 646.72,
+      "id": "Zl9u3m-tl3Q-display-0180",
+      "segment_id": "Zl9u3m-tl3Q-ja-0077"
+    },
+    {
+      "text": "あれこそが私がずっと探していた何者かの",
+      "start_seconds": 647.76,
+      "end_seconds": 651.519,
+      "id": "Zl9u3m-tl3Q-display-0181",
+      "segment_id": "Zl9u3m-tl3Q-ja-0078"
+    },
+    {
+      "text": "答えだったのかもしれないからです。",
+      "start_seconds": 651.519,
+      "end_seconds": 655.16,
+      "id": "Zl9u3m-tl3Q-display-0182",
+      "segment_id": "Zl9u3m-tl3Q-ja-0078"
+    },
+    {
+      "text": "あの時のお茶が温かいお茶の文化として",
+      "start_seconds": 655.16,
+      "end_seconds": 660.2,
+      "id": "Zl9u3m-tl3Q-display-0183",
+      "segment_id": "Zl9u3m-tl3Q-ja-0079"
+    },
+    {
+      "text": "100年後の教科書の片隅に残っていただ",
+      "start_seconds": 660.2,
+      "end_seconds": 663.68,
+      "id": "Zl9u3m-tl3Q-display-0184",
+      "segment_id": "Zl9u3m-tl3Q-ja-0079"
+    },
+    {
+      "text": "と思うと私は幸せです。",
+      "start_seconds": 663.68,
+      "end_seconds": 667.24,
+      "id": "Zl9u3m-tl3Q-display-0185",
+      "segment_id": "Zl9u3m-tl3Q-ja-0080"
+    },
+    {
+      "text": "で私は皆さんに問いませんでした。あなた",
+      "start_seconds": 667.24,
+      "end_seconds": 670.079,
+      "id": "Zl9u3m-tl3Q-display-0186",
+      "segment_id": "Zl9u3m-tl3Q-ja-0081"
+    },
+    {
+      "text": "は何者ですかって?",
+      "start_seconds": 670.079,
+      "end_seconds": 673.6,
+      "id": "Zl9u3m-tl3Q-display-0187",
+      "segment_id": "Zl9u3m-tl3Q-ja-0081"
+    },
+    {
+      "text": "でももし私が今聞かれたら自信を持って",
+      "start_seconds": 673.6,
+      "end_seconds": 677.32,
+      "id": "Zl9u3m-tl3Q-display-0188",
+      "segment_id": "Zl9u3m-tl3Q-ja-0082"
+    },
+    {
+      "text": "こう答えます。私はお茶で人を幸せに",
+      "start_seconds": 677.32,
+      "end_seconds": 682.88,
+      "id": "Zl9u3m-tl3Q-display-0189",
+      "segment_id": "Zl9u3m-tl3Q-ja-0082"
+    },
+    {
+      "text": "できる人間です。ご成長ありがとうござい",
+      "start_seconds": 682.88,
+      "end_seconds": 686.36,
+      "id": "Zl9u3m-tl3Q-display-0190",
+      "segment_id": "Zl9u3m-tl3Q-ja-0083"
+    },
+    {
+      "text": "ました。",
+      "start_seconds": 686.36,
+      "end_seconds": 688.412,
+      "id": "Zl9u3m-tl3Q-display-0191",
+      "segment_id": "Zl9u3m-tl3Q-ja-0083"
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 688.412,
+      "end_seconds": 690.432,
+      "id": "Zl9u3m-tl3Q-display-0192",
+      "segment_id": "Zl9u3m-tl3Q-ja-0084"
+    }
+  ]
+}

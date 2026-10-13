@@ -16,6 +16,9 @@ import {
   useWindowDimensions,
 } from 'react-native';
 import { BrandLogo } from '../components/BrandLogo';
+import { useShadowingTranslation } from '../hooks/useShadowingTranslation';
+import { useShadowingQuiz } from '../hooks/useShadowingQuiz';
+import { ShadowingQuiz } from '../components/ShadowingQuiz';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { AuthButton, AuthNotice } from '../components/AuthForm';
 import {
@@ -25,6 +28,10 @@ import {
   MessageSquareIcon,
   PlayCircleIcon,
   XIcon,
+  EyeIcon,
+  EyeOffIcon,
+  TranslateIcon,
+  AIIcon,
 } from '../components/icons';
 import {
   ShadowingTokenText,
@@ -32,7 +39,6 @@ import {
 } from '../components/ShadowingWordLookup';
 import { VideoExamplePlayer } from '../components/VideoExamplePlayer';
 import type { VideoExample } from '../services/videoExamplesService';
-import { videoTimestamp } from '../components/VideoExampleCard';
 import {
   shadowingService,
   ShadowingJob,
@@ -60,14 +66,14 @@ const SegmentRow = memo(function CaptionSegment({
   segment,
   position,
   active,
-  hidden,
   onSelect,
+  translation,
 }: {
   segment: VideoExample;
   position: number;
   active: boolean;
-  hidden: boolean;
   onSelect: (index: number) => void;
+  translation?: string;
 }) {
   const onPress = useCallback(() => onSelect(position), [onSelect, position]);
   return (
@@ -82,15 +88,12 @@ const SegmentRow = memo(function CaptionSegment({
         <PlayCircleIcon size={18} color={active ? colors.dark : colors.muted} />
       </Pressable>
       <View style={styles.segmentText}>
-        {!hidden ? (
-          <Text style={[styles.subtitleText, active && styles.activeText]}>
-            {segment.text}
-          </Text>
-        ) : (
-          <Text style={styles.caption}>
-            {videoTimestamp(segment.start_seconds)} · Phụ đề đang ẩn
-          </Text>
-        )}
+        <Text style={[styles.subtitleText, active && styles.activeText]}>
+          {segment.text}
+        </Text>
+        {translation ? (
+          <Text style={styles.translationText}>{translation}</Text>
+        ) : null}
       </View>
     </View>
   );
@@ -202,8 +205,15 @@ function CatalogSeparator() {
   return <View style={styles.catalogSeparator} />;
 }
 
-export function ShadowingScreen({ onExit }: { onExit?: () => void }) {
+export function ShadowingScreen({
+  onExit,
+  bottomOverlayHeight = 0,
+}: {
+  onExit?: () => void;
+  bottomOverlayHeight?: number;
+}) {
   const insets = useSafeAreaInsets();
+  const bottomScreenInset = bottomOverlayHeight ? 0 : insets.bottom;
   const { width: windowWidth, fontScale } = useWindowDimensions();
   const [captionWidth, setCaptionWidth] = useState(0);
   const listRef = useRef<FlatList>(null);
@@ -217,6 +227,9 @@ export function ShadowingScreen({ onExit }: { onExit?: () => void }) {
   const [selectedWordKey, setSelectedWordKey] = useState<string | null>(null);
   const [lookupAnchor, setLookupAnchor] = useState(0);
   const [lesson, setLesson] = useState<ShadowingLesson | null>(null);
+  const quiz = useShadowingQuiz(lesson?.job.id);
+  const [showTranslation, setShowTranslation] = useState(false);
+  const translation = useShadowingTranslation(lesson?.job.id, showTranslation);
   const [index, setIndex] = useState(0);
   const lastCaptionIndex = useRef(0);
   const [seekRequest, setSeekRequest] = useState(0);
@@ -237,12 +250,17 @@ export function ShadowingScreen({ onExit }: { onExit?: () => void }) {
   const [listError, setListError] = useState('');
   const listGeneration = useRef(0);
   const mounted = useRef(true);
+  const [foreground, setForeground] = useState(
+    AppState.currentState !== 'background' &&
+      AppState.currentState !== 'inactive',
+  );
   const generation = useRef(0);
   const leaveLesson = useCallback(() => {
     generation.current += 1;
     setSettingsOpen(false);
     setSelectedWordKey(null);
     setLesson(null);
+    setShowTranslation(false);
     setBusy(false);
     setError('');
   }, []);
@@ -293,25 +311,37 @@ export function ShadowingScreen({ onExit }: { onExit?: () => void }) {
   }, [scope]);
   useEffect(() => {
     mounted.current = true;
-    let timer: ReturnType<typeof setTimeout>;
-    let disposed = false;
-    let active = AppState.currentState !== 'background';
-    const poll = async () => {
-      if (active && !disposed) await refresh();
-      if (mounted.current && !disposed) timer = setTimeout(poll, 5000);
-    };
-    poll();
     const subscription = AppState.addEventListener('change', state => {
-      active = state === 'active';
+      setForeground(state === 'active');
     });
     return () => {
-      disposed = true;
       mounted.current = false;
       generation.current += 1;
-      clearTimeout(timer);
+      listGeneration.current += 1;
       subscription.remove();
     };
-  }, [refresh]);
+  }, []);
+  const catalogVisible = lesson === null;
+  useEffect(() => {
+    if (foreground && catalogVisible) refresh();
+  }, [refresh, foreground, catalogVisible]);
+  useEffect(() => {
+    const pending = jobs.some(
+      job => job.status !== 'ready' && job.status !== 'failed',
+    );
+    if (!foreground || !pending) return;
+    let disposed = false;
+    let timer: ReturnType<typeof setTimeout>;
+    const poll = async () => {
+      await refresh();
+      if (!disposed) timer = setTimeout(poll, 5000);
+    };
+    timer = setTimeout(poll, 5000);
+    return () => {
+      disposed = true;
+      clearTimeout(timer);
+    };
+  }, [jobs, refresh, foreground]);
   const selectScope = (next: 'all' | 'mine') => {
     if (scope === next) return;
     listGeneration.current += 1;
@@ -362,6 +392,7 @@ export function ShadowingScreen({ onExit }: { onExit?: () => void }) {
       if (mounted.current && current === generation.current) {
         setSelectedWordKey(null);
         setLesson(result);
+        setShowTranslation(false);
         setIndex(0);
         setPanelOpen(true);
         setSettingsOpen(false);
@@ -484,11 +515,13 @@ export function ShadowingScreen({ onExit }: { onExit?: () => void }) {
         segment={item}
         position={position}
         active={position === liveIndex}
-        hidden={hideCaption}
         onSelect={selectSegment}
+        translation={
+          showTranslation ? translation.data?.items[item.id] : undefined
+        }
       />
     ),
-    [liveIndex, hideCaption, selectSegment],
+    [liveIndex, selectSegment, showTranslation, translation.data],
   );
   const stopFollowing = useCallback(() => {
     setFollow(false);
@@ -523,11 +556,10 @@ export function ShadowingScreen({ onExit }: { onExit?: () => void }) {
   );
   if (lesson) {
     const current = liveIndex >= 0 ? liveIndex : lastCaptionIndex.current;
-    const captionText = hideCaption
-      ? 'Phụ đề đang ẩn.'
-      : captionIndex >= 0 && captions?.[captionIndex]
-      ? captions[captionIndex].text
-      : 'Chưa có phụ đề tại thời điểm này.';
+    const captionText =
+      captionIndex >= 0 && captions?.[captionIndex]
+        ? captions[captionIndex].text
+        : '';
     const currentTokens =
       !hideCaption && captionIndex >= 0
         ? lesson.tokens?.captions[captions?.[captionIndex]?.id ?? ''] ??
@@ -572,7 +604,7 @@ export function ShadowingScreen({ onExit }: { onExit?: () => void }) {
           styles.screen,
           {
             paddingTop: insets.top,
-            paddingBottom: insets.bottom,
+            paddingBottom: bottomScreenInset,
             paddingHorizontal: spacing.sm,
           },
         ]}
@@ -594,6 +626,11 @@ export function ShadowingScreen({ onExit }: { onExit?: () => void }) {
             {lesson.segments[index] ? (
               <VideoExamplePlayer
                 pausedForLookup={Boolean(lookupWord)}
+                pausedForQuiz={quiz.paused}
+                quizCheckpoints={quiz.checkpoints}
+                onQuizQuestion={quiz.showQuestion}
+                resumeRequest={quiz.resumeRequest}
+                quizJumpRequest={quiz.jumpRequest}
                 videoOnly
                 key={lesson.job.id}
                 example={lesson.segments[index]}
@@ -620,43 +657,110 @@ export function ShadowingScreen({ onExit }: { onExit?: () => void }) {
             ) : null}
           </View>
           <AuthNotice error message={error} />
-          <View style={styles.currentCaptionArea}>
-            <View
-              testID="shadowing-current-caption"
-              style={styles.currentCaptionBox}
-            >
-              <ScrollView
-                key={captionIndex}
-                style={[
-                  styles.currentCaptionScroll,
-                  {
-                    maxHeight: Math.ceil(
-                      (lineHeight + 18) * fontScale * 2 + spacing.xs,
-                    ),
-                  },
-                ]}
-                onLayout={event =>
-                  setCaptionWidth(Math.round(event.nativeEvent.layout.width))
-                }
-                nestedScrollEnabled
+          {!hideCaption ? (
+            <View style={styles.currentCaptionArea}>
+              <View
+                testID="shadowing-current-caption"
+                style={styles.currentCaptionBox}
               >
-                <ShadowingTokenText
-                  text={captionText}
-                  tokens={currentTokens}
-                  words={lesson.words}
-                  selectedKey={selectedWordKey}
-                  onWordPress={showWord}
-                  style={[styles.currentCaptionText, { fontSize, lineHeight }]}
-                />
-              </ScrollView>
-              {!hideCaption && captionIndex >= 0 && captionOverflows ? (
-                <Text style={styles.captionOverflowHint}>
-                  Cuộn để đọc đầy đủ
+                <Pressable
+                  accessibilityRole="button"
+                  accessibilityLabel={hideCaption ? 'Hiện phụ đề' : 'Ẩn phụ đề'}
+                  accessibilityState={{ selected: !hideCaption }}
+                  onPress={() => setHideCaption(value => !value)}
+                  hitSlop={6}
+                  style={styles.captionVisibility}
+                >
+                  {hideCaption ? (
+                    <EyeOffIcon size={18} color={colors.muted} />
+                  ) : (
+                    <EyeIcon size={18} color={colors.primaryText} />
+                  )}
+                </Pressable>
+                <ScrollView
+                  key={captionIndex}
+                  style={[
+                    styles.currentCaptionScroll,
+                    {
+                      maxHeight: Math.ceil(
+                        (lineHeight + 18) * fontScale * 2 + spacing.xs,
+                      ),
+                    },
+                  ]}
+                  onLayout={event =>
+                    setCaptionWidth(Math.round(event.nativeEvent.layout.width))
+                  }
+                  nestedScrollEnabled
+                >
+                  <ShadowingTokenText
+                    text={captionText}
+                    tokens={currentTokens}
+                    words={lesson.words}
+                    selectedKey={selectedWordKey}
+                    onWordPress={showWord}
+                    style={[
+                      styles.currentCaptionText,
+                      { fontSize, lineHeight },
+                    ]}
+                  />
+                </ScrollView>
+                {!hideCaption && captionIndex >= 0 && captionOverflows ? (
+                  <Text style={styles.captionOverflowHint}>
+                    Cuộn để đọc đầy đủ
+                  </Text>
+                ) : null}
+              </View>
+            </View>
+          ) : null}
+          {showTranslation && !hideCaption ? (
+            <View style={styles.translationArea}>
+              {!hideCaption &&
+              liveIndex >= 0 &&
+              translation.data?.items[lesson.segments[liveIndex]?.id] ? (
+                <ScrollView
+                  style={styles.translationScroll}
+                  nestedScrollEnabled
+                >
+                  <Text style={styles.currentTranslation}>
+                    {translation.data.items[lesson.segments[liveIndex].id]}
+                  </Text>
+                </ScrollView>
+              ) : null}
+              {translation.loading ||
+              translation.data?.status === 'queued' ||
+              translation.data?.status === 'translating' ? (
+                <Text style={styles.caption}>
+                  Đang chuẩn bị bản dịch
+                  {translation.data
+                    ? ` · ${translation.data.completed}/${translation.data.total} câu`
+                    : '…'}
                 </Text>
               ) : null}
+              {translation.error || translation.data?.status === 'failed' ? (
+                <View style={styles.translationRetry}>
+                  <Text style={styles.caption}>
+                    {translation.error ||
+                      translation.data?.error_message ||
+                      'Chưa dịch được phụ đề.'}
+                  </Text>
+                  <Pressable
+                    accessibilityRole="button"
+                    accessibilityLabel="Thử lại bản dịch"
+                    onPress={translation.retry}
+                    hitSlop={8}
+                  >
+                    <Text style={styles.label}>Thử lại</Text>
+                  </Pressable>
+                </View>
+              ) : null}
             </View>
-          </View>
-          <View style={styles.toolbar}>
+          ) : null}
+          <ScrollView
+            horizontal
+            showsHorizontalScrollIndicator={false}
+            style={styles.toolbarFrame}
+            contentContainerStyle={styles.toolbar}
+          >
             <Pressable
               accessibilityRole="button"
               accessibilityLabel="Phụ đề"
@@ -665,21 +769,66 @@ export function ShadowingScreen({ onExit }: { onExit?: () => void }) {
                 setPanelOpen(value => !value);
               }}
               hitSlop={6}
-              style={[styles.toolbarChip, panelOpen && styles.selected]}
+              style={[styles.toolIcon, panelOpen && styles.selected]}
             >
-              <MessageSquareIcon color={colors.primaryText} size={16} />
-              <Text style={styles.label}>Phụ đề</Text>
+              <MessageSquareIcon color={colors.primaryText} size={18} />
             </Pressable>
             <Pressable
               accessibilityRole="button"
-              accessibilityLabel="Bản dịch chưa có cho video này"
-              accessibilityState={{ disabled: true }}
-              disabled
-              style={styles.toolbarChip}
+              accessibilityLabel="Bản dịch"
+              accessibilityState={{ selected: showTranslation }}
+              onPress={() => setShowTranslation(value => !value)}
+              hitSlop={6}
+              style={[styles.toolIcon, showTranslation && styles.selected]}
             >
-              <Text style={styles.disabledLabel}>Bản dịch</Text>
+              <TranslateIcon
+                size={18}
+                color={showTranslation ? colors.primaryText : colors.body}
+              />
             </Pressable>
             <View style={styles.toolbarSpace} />
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel="Câu hỏi AI"
+              accessibilityHint={`Mở câu hỏi AI. Đã trả lời ${quiz.completed.length}/${quiz.questions.length} câu.`}
+              accessibilityState={{ selected: quiz.questions.length > 0 }}
+              onPress={() => quiz.setSetupOpen(true)}
+              style={[
+                styles.toolIcon,
+                quiz.questions.length > 0 && styles.selected,
+              ]}
+            >
+              <AIIcon
+                size={20}
+                color={quiz.questions.length ? colors.primaryText : colors.body}
+              />
+            </Pressable>
+            {hideCaption ? (
+              <Pressable
+                accessibilityRole="button"
+                accessibilityLabel="Hiện phụ đề"
+                accessibilityState={{ selected: false }}
+                onPress={() => setHideCaption(false)}
+                hitSlop={6}
+                style={styles.toolIcon}
+              >
+                <EyeOffIcon size={18} color={colors.muted} />
+              </Pressable>
+            ) : null}
+            <Pressable
+              accessibilityRole="switch"
+              accessibilityLabel="Theo dõi phụ đề"
+              accessibilityHint="Quay về câu hiện tại và tự cuộn theo video."
+              accessibilityState={{ checked: follow }}
+              onPress={() => {
+                if (follow) stopFollowing();
+                else setFollow(true);
+              }}
+              hitSlop={8}
+              style={[styles.toolIcon, follow && styles.selected]}
+            >
+              <Text style={styles.label}>↓</Text>
+            </Pressable>
             <View style={styles.playbackControls}>
               <Pressable
                 accessibilityRole="button"
@@ -734,54 +883,21 @@ export function ShadowingScreen({ onExit }: { onExit?: () => void }) {
             >
               <Text style={styles.moreIcon}>•••</Text>
             </Pressable>
-          </View>
+          </ScrollView>
         </View>
         {panelOpen ? (
           <View style={styles.subtitlePanel}>
-            <View style={styles.panelHeader}>
-              <Text style={styles.panelTitle}>Phụ đề</Text>
-              <View style={styles.toolbarSpace} />
-              <Pressable
-                accessibilityRole="switch"
-                accessibilityLabel="Theo dõi phụ đề"
-                accessibilityHint="Quay về câu hiện tại và tự cuộn theo video."
-                accessibilityState={{ checked: follow }}
-                onPress={() => {
-                  if (follow) stopFollowing();
-                  else setFollow(true);
-                }}
-                hitSlop={8}
-                style={[styles.toolIcon, follow && styles.selected]}
-              >
-                <Text style={styles.label}>↓</Text>
-              </Pressable>
-              <Pressable
-                accessibilityRole="button"
-                accessibilityLabel={hideCaption ? 'Hiện phụ đề' : 'Ẩn phụ đề'}
-                accessibilityState={{ selected: !hideCaption }}
-                onPress={() => setHideCaption(value => !value)}
-                hitSlop={8}
-                style={styles.toolIcon}
-              >
-                <Text style={styles.label}>AB</Text>
-              </Pressable>
-              <Pressable
-                accessibilityRole="button"
-                accessibilityLabel="Đóng bảng phụ đề"
-                onPress={() => setPanelOpen(false)}
-                hitSlop={8}
-                style={styles.toolIcon}
-              >
-                <XIcon size={16} color={colors.body} />
-              </Pressable>
-            </View>
             <FlatList
               ref={listRef}
               style={styles.subtitleList}
               data={lesson.segments}
               keyExtractor={item => item.id}
-              extraData={{ liveIndex, hideCaption }}
-              contentContainerStyle={styles.lessonContent}
+              extraData={{ liveIndex, showTranslation }}
+              contentContainerStyle={[
+                styles.lessonContent,
+                { paddingBottom: bottomOverlayHeight + spacing.xl },
+              ]}
+              scrollIndicatorInsets={{ bottom: bottomOverlayHeight }}
               onScrollBeginDrag={stopFollowing}
               onScrollToIndexFailed={info => {
                 listRef.current?.scrollToOffset({
@@ -821,6 +937,16 @@ export function ShadowingScreen({ onExit }: { onExit?: () => void }) {
           word={lookupWord}
           anchorY={lookupAnchor}
           onClose={closeWord}
+        />
+        <ShadowingQuiz
+          quiz={quiz}
+          maxCount={Math.min(10, lesson.segments.length)}
+          onStarted={() => {
+            setContinuous(true);
+            setLoop(false);
+            setSelectedWordKey(null);
+            selectSegment(0);
+          }}
         />
         <Modal
           visible={settingsOpen}
@@ -934,7 +1060,8 @@ export function ShadowingScreen({ onExit }: { onExit?: () => void }) {
           styles.catalogContent,
           {
             paddingTop: insets.top + spacing.lg,
-            paddingBottom: insets.bottom + spacing.xl,
+            paddingBottom:
+              Math.max(insets.bottom, bottomOverlayHeight) + spacing.xl,
           },
         ]}
         ListHeaderComponent={
@@ -1041,6 +1168,28 @@ export function ShadowingScreen({ onExit }: { onExit?: () => void }) {
 }
 
 const styles = StyleSheet.create({
+  translationText: {
+    ...typography.body,
+    color: colors.muted,
+    lineHeight: 18,
+    marginTop: spacing.xs,
+  },
+  translationArea: {
+    gap: spacing.xs,
+    paddingHorizontal: spacing.md,
+    paddingBottom: spacing.sm,
+  },
+  translationScroll: { maxHeight: 72 },
+  currentTranslation: {
+    ...typography.label,
+    color: colors.body,
+    textAlign: 'center',
+  },
+  translationRetry: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: spacing.sm,
+  },
   screen: { flex: 1, backgroundColor: colors.background },
   catalogContent: {
     width: '100%',
@@ -1177,9 +1326,20 @@ const styles = StyleSheet.create({
     backgroundColor: colors.surfaceTint,
     borderRadius: radius.small,
     paddingHorizontal: spacing.lg,
+    paddingRight: spacing.lg + 32,
     paddingVertical: spacing.md,
     width: '100%',
     minHeight: layout.touchTarget,
+  },
+  captionVisibility: {
+    position: 'absolute',
+    top: spacing.xs,
+    right: spacing.xs,
+    width: 32,
+    height: 32,
+    alignItems: 'center',
+    justifyContent: 'center',
+    zIndex: 1,
   },
   captionOverflowHint: {
     ...typography.caption,
@@ -1197,24 +1357,15 @@ const styles = StyleSheet.create({
     textDecorationLine: 'underline',
     textDecorationColor: colors.primary,
   },
+  toolbarFrame: { flexGrow: 0 },
   toolbar: {
+    flexGrow: 1,
     flexDirection: 'row',
     alignItems: 'center',
     gap: spacing.xs,
     borderTopWidth: 1,
     borderTopColor: colors.divider,
     paddingVertical: spacing.sm,
-  },
-  toolbarChip: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: spacing.sm,
-    minHeight: 36,
-    paddingHorizontal: spacing.sm,
-    borderRadius: 12,
-    backgroundColor: colors.surface,
-    borderWidth: 1,
-    borderColor: colors.divider,
   },
   toolbarSpace: { flex: 1 },
   playbackControls: {
@@ -1247,7 +1398,6 @@ const styles = StyleSheet.create({
     backgroundColor: colors.surfaceTint,
   },
   moreIcon: { ...typography.label, color: colors.body },
-  disabledLabel: { ...typography.caption, color: colors.disabledText },
   subtitlePanel: {
     flex: 1,
     width: '100%',
@@ -1258,15 +1408,6 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: colors.divider,
     overflow: 'hidden',
-  },
-  panelHeader: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: spacing.sm,
-    paddingHorizontal: spacing.lg,
-    paddingVertical: spacing.sm,
-    borderBottomWidth: 1,
-    borderBottomColor: colors.divider,
   },
   panelTitle: { ...typography.heading, color: colors.dark },
   subtitleText: {

@@ -1,0 +1,4322 @@
+{
+  "schema_version": 1,
+  "video": {
+    "youtube_id": "eGuF3Z0EaPc",
+    "title": "The Art of Letting Go | Kenichiro Kusuyama | TEDxAwaji",
+    "channel": "TEDx Talks",
+    "duration_seconds": 1037
+  },
+  "caption_track": {
+    "language": "ja",
+    "kind": "asr",
+    "source": "youtube_automatic"
+  },
+  "source_playlist": "https://www.youtube.com/playlist?list=PLsRNoUx8w3rOHjXIU5EE4KOiIagv9yQaG",
+  "fetched_at": "2026-10-13T13:23:33.752196+00:00",
+  "segment_count": 129,
+  "segments": [
+    {
+      "text": "[拍手]",
+      "start_seconds": 1.309,
+      "end_seconds": 3.3289999999999997,
+      "id": "eGuF3Z0EaPc-ja-0001",
+      "sequence": 1
+    },
+    {
+      "text": "皆さん、ちょっと想像してみてください。",
+      "start_seconds": 6.399,
+      "end_seconds": 10.639,
+      "id": "eGuF3Z0EaPc-ja-0002",
+      "sequence": 2
+    },
+    {
+      "text": "皆さんは、え、経営者です。",
+      "start_seconds": 10.639,
+      "end_seconds": 13.92,
+      "id": "eGuF3Z0EaPc-ja-0003",
+      "sequence": 3
+    },
+    {
+      "text": "非常に優秀な人材を採用できました。",
+      "start_seconds": 13.92,
+      "end_seconds": 18.76,
+      "id": "eGuF3Z0EaPc-ja-0004",
+      "sequence": 4
+    },
+    {
+      "text": "価値観も合ってる、条件もいい、周りの人もいい。ある日、私が彼に訪ねました。",
+      "start_seconds": 18.76,
+      "end_seconds": 28.039,
+      "id": "eGuF3Z0EaPc-ja-0005",
+      "sequence": 5
+    },
+    {
+      "text": "今日うちの会社いいでしょ?",
+      "start_seconds": 28.039,
+      "end_seconds": 32.599,
+      "id": "eGuF3Z0EaPc-ja-0006",
+      "sequence": 6
+    },
+    {
+      "text": "社長実はやめたいと思ってるんです。オーマイガー。",
+      "start_seconds": 32.599,
+      "end_seconds": 40.52,
+      "id": "eGuF3Z0EaPc-ja-0007",
+      "sequence": 7
+    },
+    {
+      "text": "もう1つ今日ここにいらっしゃる皆さん、親子さん多いと思います。",
+      "start_seconds": 40.52,
+      "end_seconds": 48.28,
+      "id": "eGuF3Z0EaPc-ja-0008",
+      "sequence": 8
+    },
+    {
+      "text": "いい学校にも通せ、塾にも通せ投資をしています。そんな子供が勉強してる時にどう勉強している?",
+      "start_seconds": 48.28,
+      "end_seconds": 57.68,
+      "id": "eGuF3Z0EaPc-ja-0009",
+      "sequence": 9
+    },
+    {
+      "text": "パパうるさい。出てって。おおオーマイガー。",
+      "start_seconds": 57.68,
+      "end_seconds": 64.44,
+      "id": "eGuF3Z0EaPc-ja-0010",
+      "sequence": 10
+    },
+    {
+      "text": "この2つに共通していることはコントロールしようとしすぎていることです。つまり手放そうとしてできてないと",
+      "start_seconds": 64.96,
+      "end_seconds": 75.119,
+      "id": "eGuF3Z0EaPc-ja-0011",
+      "sequence": 11
+    },
+    {
+      "text": "いうことです。",
+      "start_seconds": 75.119,
+      "end_seconds": 78.64,
+      "id": "eGuF3Z0EaPc-ja-0012",
+      "sequence": 12
+    },
+    {
+      "text": "私は今手放している最中です。私は今アメリカカリフォルニアのシリコンバレーに住んでおり、アメリカフィリピン拠点が",
+      "start_seconds": 81.04,
+      "end_seconds": 92.72,
+      "id": "eGuF3Z0EaPc-ja-0013",
+      "sequence": 13
+    },
+    {
+      "text": "ありまして100名以上の従業員を抱えております。",
+      "start_seconds": 92.72,
+      "end_seconds": 97.24,
+      "id": "eGuF3Z0EaPc-ja-0014",
+      "sequence": 14
+    },
+    {
+      "text": "最初この会社を作った時は自分がリーダーであって自分が引っ張っていこうそんな思いで会社を運営していました。",
+      "start_seconds": 97.24,
+      "end_seconds": 108.68,
+      "id": "eGuF3Z0EaPc-ja-0015",
+      "sequence": 15
+    },
+    {
+      "text": "ただ今は信頼できる周りの人に任せて私なしで回る",
+      "start_seconds": 108.68,
+      "end_seconds": 117.24,
+      "id": "eGuF3Z0EaPc-ja-0016",
+      "sequence": 16
+    },
+    {
+      "text": "仕組みを作ってそして会社が社長なしで回るようになっています。ですので私は今日こういった場で私にとって新しい",
+      "start_seconds": 117.24,
+      "end_seconds": 129.16,
+      "id": "eGuF3Z0EaPc-ja-0017",
+      "sequence": 17
+    },
+    {
+      "text": "チャレンジさせてもらってます。そんな自分の人生を振り返った時に私は手放しの連続でした。",
+      "start_seconds": 129.16,
+      "end_seconds": 140.28,
+      "id": "eGuF3Z0EaPc-ja-0018",
+      "sequence": 18
+    },
+    {
+      "text": "例えば高校生の時アメリカで勉強したい。",
+      "start_seconds": 140.28,
+      "end_seconds": 145.4,
+      "id": "eGuF3Z0EaPc-ja-0019",
+      "sequence": 19
+    },
+    {
+      "text": "そしてアメリカの高校を受けました。実際受かったんですね。受かったんで日本の高校を退学して実際にま、行こうと思ったんですけども最後の最後でお金がなくて",
+      "start_seconds": 145.4,
+      "end_seconds": 156.599,
+      "id": "eGuF3Z0EaPc-ja-0020",
+      "sequence": 20
+    },
+    {
+      "text": "行けなかったんですね。え、手放し失敗でございます。ただ高校生の時から日本のレールというのを手放そうとしました。",
+      "start_seconds": 156.599,
+      "end_seconds": 168.319,
+      "id": "eGuF3Z0EaPc-ja-0021",
+      "sequence": 21
+    },
+    {
+      "text": "2つ目は大企業での経験、大企業というレールを手放しました。",
+      "start_seconds": 168.319,
+      "end_seconds": 175.84,
+      "id": "eGuF3Z0EaPc-ja-0022",
+      "sequence": 22
+    },
+    {
+      "text": "そこそこ有名な企業で安定していて海外部門もただ人数が多い、責任は少ない。",
+      "start_seconds": 175.84,
+      "end_seconds": 183.519,
+      "id": "eGuF3Z0EaPc-ja-0023",
+      "sequence": 23
+    },
+    {
+      "text": "少し時間がかかるかなと思いましてそのレールをました。",
+      "start_seconds": 183.519,
+      "end_seconds": 190.799,
+      "id": "eGuF3Z0EaPc-ja-0024",
+      "sequence": 24
+    },
+    {
+      "text": "3番目は企業です。",
+      "start_seconds": 192.0,
+      "end_seconds": 196.319,
+      "id": "eGuF3Z0EaPc-ja-0025",
+      "sequence": 25
+    },
+    {
+      "text": "起業というのは雇われるというレールを降りることです。そして自分でレールを敷いていくということです。ですので私は",
+      "start_seconds": 196.319,
+      "end_seconds": 206.959,
+      "id": "eGuF3Z0EaPc-ja-0026",
+      "sequence": 26
+    },
+    {
+      "text": "自分の夢を叶えるために自分でレールを敷いていこうなので雇われるんじゃなくて自分で会社を作る。そういった決意をして",
+      "start_seconds": 206.959,
+      "end_seconds": 215.56,
+      "id": "eGuF3Z0EaPc-ja-0027",
+      "sequence": 27
+    },
+    {
+      "text": "それがきっかけで起業しました。",
+      "start_seconds": 215.56,
+      "end_seconds": 220.239,
+      "id": "eGuF3Z0EaPc-ja-0028",
+      "sequence": 28
+    },
+    {
+      "text": "そして4つ目、夢叶い10年前、2016年会社を大きくしてアメリカに進出という",
+      "start_seconds": 221.04,
+      "end_seconds": 229.48,
+      "id": "eGuF3Z0EaPc-ja-0029",
+      "sequence": 29
+    },
+    {
+      "text": "形で家族5人と犬1匹連れてアメリカカリフォルニアの方に移住をしました。",
+      "start_seconds": 229.48,
+      "end_seconds": 238.599,
+      "id": "eGuF3Z0EaPc-ja-0030",
+      "sequence": 30
+    },
+    {
+      "text": "これは今まで慣れしんできた言葉、文化、食べ物、そういった日本というものを手放してアメリカでチャレンジをすると",
+      "start_seconds": 238.599,
+      "end_seconds": 248.28,
+      "id": "eGuF3Z0EaPc-ja-0031",
+      "sequence": 31
+    },
+    {
+      "text": "いうものでした。手放す。確かに言葉で聞くとできるかもしれないんですけども、実は毎回毎回本当に怖かったん",
+      "start_seconds": 248.28,
+      "end_seconds": 258.56,
+      "id": "eGuF3Z0EaPc-ja-0032",
+      "sequence": 32
+    },
+    {
+      "text": "です。起業した時は3ヶ月目でもう倒産の危機。そんな時はなんでこんなこと",
+      "start_seconds": 258.56,
+      "end_seconds": 267.919,
+      "id": "eGuF3Z0EaPc-ja-0033",
+      "sequence": 33
+    },
+    {
+      "text": "やっちゃったんだ。そんな後悔の連続ですね。こんなネールを続けた私は経営者とし",
+      "start_seconds": 267.919,
+      "end_seconds": 276.16,
+      "id": "eGuF3Z0EaPc-ja-0034",
+      "sequence": 34
+    },
+    {
+      "text": "て親としては手放すいったものはあんまりうまくありませんでした。会社では自分が全部決めていく",
+      "start_seconds": 276.16,
+      "end_seconds": 287.84,
+      "id": "eGuF3Z0EaPc-ja-0035",
+      "sequence": 35
+    },
+    {
+      "text": "意見を出していくもちろん作業もやる。",
+      "start_seconds": 287.84,
+      "end_seconds": 290.4,
+      "id": "eGuF3Z0EaPc-ja-0036",
+      "sequence": 36
+    },
+    {
+      "text": "あらゆるものに目を配らしてそして細かいことに口を出していきました。",
+      "start_seconds": 290.4,
+      "end_seconds": 297.639,
+      "id": "eGuF3Z0EaPc-ja-0037",
+      "sequence": 37
+    },
+    {
+      "text": "例えばミーティングがある時は、ま、こんなこと私言うわけですよね。皆さん、もうどんどん自分のいいこと、思ったこと",
+      "start_seconds": 297.639,
+      "end_seconds": 308.0,
+      "id": "eGuF3Z0EaPc-ja-0038",
+      "sequence": 38
+    },
+    {
+      "text": "言っていいよ。",
+      "start_seconds": 308.0,
+      "end_seconds": 311.0,
+      "id": "eGuF3Z0EaPc-ja-0039",
+      "sequence": 39
+    },
+    {
+      "text": "ま、最終的にはですね、私の思ったようになっちゃうんですけども、こんな会社にいるとですね、冒頭のように人はやめてっちゃうんですね。",
+      "start_seconds": 311.0,
+      "end_seconds": 321.88,
+      "id": "eGuF3Z0EaPc-ja-0040",
+      "sequence": 40
+    },
+    {
+      "text": "子育てでも全く同じでした。",
+      "start_seconds": 322.36,
+      "end_seconds": 325.84,
+      "id": "eGuF3Z0EaPc-ja-0041",
+      "sequence": 41
+    },
+    {
+      "text": "長男の中学受験、この中学を目指そう。そのためにはこういう風に勉強した方がいいよなんて自分が",
+      "start_seconds": 325.84,
+      "end_seconds": 335.72,
+      "id": "eGuF3Z0EaPc-ja-0042",
+      "sequence": 42
+    },
+    {
+      "text": "決めちゃったりしてるんですよね。そして合格するには",
+      "start_seconds": 335.72,
+      "end_seconds": 342.68,
+      "id": "eGuF3Z0EaPc-ja-0043",
+      "sequence": 43
+    },
+    {
+      "text": "合格したい大中学の名前を紙に書いて机の前にえ張ってそれを毎日見る。そうすれば",
+      "start_seconds": 342.68,
+      "end_seconds": 352.56,
+      "id": "eGuF3Z0EaPc-ja-0044",
+      "sequence": 44
+    },
+    {
+      "text": "合格で生きる。夢は叶う。そんなようなことを言ってたんですね。",
+      "start_seconds": 352.56,
+      "end_seconds": 358.16,
+      "id": "eGuF3Z0EaPc-ja-0045",
+      "sequence": 45
+    },
+    {
+      "text": "で、実際子供が見てたのはその目の前の紙ではなくてスマホの画面を見てました。",
+      "start_seconds": 358.16,
+      "end_seconds": 365.6,
+      "id": "eGuF3Z0EaPc-ja-0046",
+      "sequence": 46
+    },
+    {
+      "text": "結局子供は子供の目死んでいました。",
+      "start_seconds": 365.6,
+      "end_seconds": 371.16,
+      "id": "eGuF3Z0EaPc-ja-0047",
+      "sequence": 47
+    },
+    {
+      "text": "そして親が勝手に、え、期待した学校、そういったものとはほどい結果になり、",
+      "start_seconds": 371.16,
+      "end_seconds": 378.8,
+      "id": "eGuF3Z0EaPc-ja-0048",
+      "sequence": 48
+    },
+    {
+      "text": "地元の学校に入ってきました。",
+      "start_seconds": 378.8,
+      "end_seconds": 383.199,
+      "id": "eGuF3Z0EaPc-ja-0049",
+      "sequence": 49
+    },
+    {
+      "text": "この2つに共通しているのはコントロールしすぎていたということなんです。",
+      "start_seconds": 383.199,
+      "end_seconds": 391.039,
+      "id": "eGuF3Z0EaPc-ja-0050",
+      "sequence": 50
+    },
+    {
+      "text": "実は私経営者としてコーチがいました。",
+      "start_seconds": 391.039,
+      "end_seconds": 395.0,
+      "id": "eGuF3Z0EaPc-ja-0051",
+      "sequence": 51
+    },
+    {
+      "text": "その工事に相談したんです。そしたら言われました。あなたは従業員子供の成長をあなたが出ていくこと",
+      "start_seconds": 395.0,
+      "end_seconds": 405.639,
+      "id": "eGuF3Z0EaPc-ja-0052",
+      "sequence": 52
+    },
+    {
+      "text": "によって阻害している。奪っているんだ。",
+      "start_seconds": 405.639,
+      "end_seconds": 410.759,
+      "id": "eGuF3Z0EaPc-ja-0053",
+      "sequence": 53
+    },
+    {
+      "text": "え、いや、僕は子供のことを考えて、いや、メンバーのことを考えて、それでよかれと思って言ってるんだよ。いやいや、それ",
+      "start_seconds": 410.759,
+      "end_seconds": 421.24,
+      "id": "eGuF3Z0EaPc-ja-0054",
+      "sequence": 54
+    },
+    {
+      "text": "はその人たちの成長を奪っているんだ。",
+      "start_seconds": 421.24,
+      "end_seconds": 425.24,
+      "id": "eGuF3Z0EaPc-ja-0055",
+      "sequence": 55
+    },
+    {
+      "text": "相当強烈な言葉でした。",
+      "start_seconds": 425.24,
+      "end_seconds": 429.4,
+      "id": "eGuF3Z0EaPc-ja-0056",
+      "sequence": 56
+    },
+    {
+      "text": "さすがに私もこれは手放さなきゃいけないと思いました。そしてそっから私の手放していく経営、そして子育てが始まっていっ",
+      "start_seconds": 429.4,
+      "end_seconds": 439.599,
+      "id": "eGuF3Z0EaPc-ja-0057",
+      "sequence": 57
+    },
+    {
+      "text": "たんです。",
+      "start_seconds": 439.599,
+      "end_seconds": 442.44,
+      "id": "eGuF3Z0EaPc-ja-0058",
+      "sequence": 58
+    },
+    {
+      "text": "そんな時、2020年、え、コロナ危機が起きました。そん中で私も会社どうなっ",
+      "start_seconds": 444.28,
+      "end_seconds": 453.36,
+      "id": "eGuF3Z0EaPc-ja-0059",
+      "sequence": 59
+    },
+    {
+      "text": "ちゃうんだろう。みんなも自分たちの生活どうなっちゃうんだろう。そんな不安が蔓延していました。我慢していた人に任せていた私が今こそリーダーが出てかなきゃ",
+      "start_seconds": 453.36,
+      "end_seconds": 465.159,
+      "id": "eGuF3Z0EaPc-ja-0060",
+      "sequence": 60
+    },
+    {
+      "text": "いけない自分の出番だと解決するぞという風に思ったんですね。",
+      "start_seconds": 465.159,
+      "end_seconds": 473.08,
+      "id": "eGuF3Z0EaPc-ja-0061",
+      "sequence": 61
+    },
+    {
+      "text": "ただそこでも止められました。社長今まで我慢して任せてきたじゃないですか。この",
+      "start_seconds": 473.08,
+      "end_seconds": 482.36,
+      "id": "eGuF3Z0EaPc-ja-0062",
+      "sequence": 62
+    },
+    {
+      "text": "1番難しい危機こそみんなに任せて、そしてみんなに頑張ってもらおう。そういう風に言われました。",
+      "start_seconds": 482.36,
+      "end_seconds": 492.52,
+      "id": "eGuF3Z0EaPc-ja-0063",
+      "sequence": 63
+    },
+    {
+      "text": "え、会社なくなっちゃうかもしれない。倒産しちゃうかもしれない。そんな恐怖に支配されました。ただそれでも任せることに",
+      "start_seconds": 492.52,
+      "end_seconds": 502.56,
+      "id": "eGuF3Z0EaPc-ja-0064",
+      "sequence": 64
+    },
+    {
+      "text": "決めるという覚悟をしたんです。すると皆さん色々考えてですね、セミナーっていうものをこう対面で開いてやってたんですけども、それができないであれば",
+      "start_seconds": 502.56,
+      "end_seconds": 514.479,
+      "id": "eGuF3Z0EaPc-ja-0065",
+      "sequence": 65
+    },
+    {
+      "text": "ウェビナーオンライン上のセミナーをやろうとうちの会社50人ぐらい話せる人いるよね。だったらそれが全員登壇しちゃう最大級のウェビナーをやってみよう",
+      "start_seconds": 514.479,
+      "end_seconds": 525.839,
+      "id": "eGuF3Z0EaPc-ja-0066",
+      "sequence": 66
+    },
+    {
+      "text": "。そんなアイデアが社員から出てきたんです。",
+      "start_seconds": 525.839,
+      "end_seconds": 530.519,
+      "id": "eGuF3Z0EaPc-ja-0067",
+      "sequence": 67
+    },
+    {
+      "text": "そして皆さん話した経験もない。え、初めてスピーカーとして登場する人も本当に多かったです。",
+      "start_seconds": 530.519,
+      "end_seconds": 542.399,
+      "id": "eGuF3Z0EaPc-ja-0068",
+      "sequence": 68
+    },
+    {
+      "text": "ですが結果的には皆さん私なんかよりも上手にスピーチしてました。",
+      "start_seconds": 542.399,
+      "end_seconds": 551.8000000000001,
+      "id": "eGuF3Z0EaPc-ja-0069",
+      "sequence": 69
+    },
+    {
+      "text": "結果的には売上は30%この中で伸ばすことができました。大成功でした。",
+      "start_seconds": 553.279,
+      "end_seconds": 563.16,
+      "id": "eGuF3Z0EaPc-ja-0070",
+      "sequence": 70
+    },
+    {
+      "text": "このアイデアは私が考えてリーダーシップを取っていたらおそらく出てこなかったアイデアでしょう。絶対出てこなかった",
+      "start_seconds": 564.12,
+      "end_seconds": 572.76,
+      "id": "eGuF3Z0EaPc-ja-0071",
+      "sequence": 71
+    },
+    {
+      "text": "でしょ。皆さんに任したから出てきて、そしてそれをやった皆さんは大きく自信を",
+      "start_seconds": 572.76,
+      "end_seconds": 580.56,
+      "id": "eGuF3Z0EaPc-ja-0072",
+      "sequence": 72
+    },
+    {
+      "text": "持って成長していったんです。",
+      "start_seconds": 580.56,
+      "end_seconds": 584.8,
+      "id": "eGuF3Z0EaPc-ja-0073",
+      "sequence": 73
+    },
+    {
+      "text": "手放すことで今のように成長が起きます。",
+      "start_seconds": 587.2,
+      "end_seconds": 591.8,
+      "id": "eGuF3Z0EaPc-ja-0074",
+      "sequence": 74
+    },
+    {
+      "text": "ただ手放せばいいというわけではない。",
+      "start_seconds": 591.8,
+      "end_seconds": 597.399,
+      "id": "eGuF3Z0EaPc-ja-0075",
+      "sequence": 75
+    },
+    {
+      "text": "手放すには設計が必要だ。そういうことを私は経営者として親として",
+      "start_seconds": 597.399,
+      "end_seconds": 607.079,
+      "id": "eGuF3Z0EaPc-ja-0076",
+      "sequence": 76
+    },
+    {
+      "text": "実際にやってみてもがいてみてその間の設計が必要だと思ったんですね。",
+      "start_seconds": 607.079,
+      "end_seconds": 616.68,
+      "id": "eGuF3Z0EaPc-ja-0077",
+      "sequence": 77
+    },
+    {
+      "text": "ここで言う間とは何か?それは任せる側",
+      "start_seconds": 616.68,
+      "end_seconds": 625.04,
+      "id": "eGuF3Z0EaPc-ja-0078",
+      "sequence": 78
+    },
+    {
+      "text": "と任される側、この間に存在する間です。",
+      "start_seconds": 625.04,
+      "end_seconds": 632.279,
+      "id": "eGuF3Z0EaPc-ja-0079",
+      "sequence": 79
+    },
+    {
+      "text": "ここには3つの重要なことがあると思っています。",
+      "start_seconds": 632.279,
+      "end_seconds": 638.72,
+      "id": "eGuF3Z0EaPc-ja-0080",
+      "sequence": 80
+    },
+    {
+      "text": "1つ目、それは枠組の設計。",
+      "start_seconds": 638.72,
+      "end_seconds": 643.72,
+      "id": "eGuF3Z0EaPc-ja-0081",
+      "sequence": 81
+    },
+    {
+      "text": "任せるのでこれを達成しよう。というゴールですね。そのゴールにはこういうルールでやっていきましょう。",
+      "start_seconds": 643.72,
+      "end_seconds": 652.8,
+      "id": "eGuF3Z0EaPc-ja-0082",
+      "sequence": 82
+    },
+    {
+      "text": "例えば企業で言うと行動規範がこうやってあるので、この行動規範に沿ってやっていきましょう。ま、子供でしたらこういうような学校行こうよ",
+      "start_seconds": 652.8,
+      "end_seconds": 662.56,
+      "id": "eGuF3Z0EaPc-ja-0083",
+      "sequence": 83
+    },
+    {
+      "text": "ね。だったらこれだけは勉強しようよね。",
+      "start_seconds": 662.56,
+      "end_seconds": 665.959,
+      "id": "eGuF3Z0EaPc-ja-0084",
+      "sequence": 84
+    },
+    {
+      "text": "ま、そういった一緒に作っていくゴールを設定していくそういった枠組。これが1つ目。",
+      "start_seconds": 665.959,
+      "end_seconds": 675.16,
+      "id": "eGuF3Z0EaPc-ja-0085",
+      "sequence": 85
+    },
+    {
+      "text": "2つ目。これはですね、時間の設計です。",
+      "start_seconds": 675.519,
+      "end_seconds": 681.519,
+      "id": "eGuF3Z0EaPc-ja-0086",
+      "sequence": 86
+    },
+    {
+      "text": "やっぱりやったことがない人にいきなりこれやってと手放してもそれは丸投げになります。",
+      "start_seconds": 681.519,
+      "end_seconds": 691.839,
+      "id": "eGuF3Z0EaPc-ja-0087",
+      "sequence": 87
+    },
+    {
+      "text": "経験のない人にはやっぱり伴奏して丁寧に教えてチェックしてそして悩みを聞いてあげる。",
+      "start_seconds": 691.839,
+      "end_seconds": 701.639,
+      "id": "eGuF3Z0EaPc-ja-0088",
+      "sequence": 88
+    },
+    {
+      "text": "ただもう自分でできるようになった。自分でどんどん進めていく。そういう人には口を出していくというよりもどんなサポート",
+      "start_seconds": 701.639,
+      "end_seconds": 712.24,
+      "id": "eGuF3Z0EaPc-ja-0089",
+      "sequence": 89
+    },
+    {
+      "text": "が必要、そういう風に聞いていく。そして支援していく。そして3つ目。これが実は",
+      "start_seconds": 712.24,
+      "end_seconds": 720.399,
+      "id": "eGuF3Z0EaPc-ja-0090",
+      "sequence": 90
+    },
+    {
+      "text": "やってみて経営者として1番辛かった。",
+      "start_seconds": 720.399,
+      "end_seconds": 725.399,
+      "id": "eGuF3Z0EaPc-ja-0091",
+      "sequence": 91
+    },
+    {
+      "text": "それは手放す側の心の設計です。",
+      "start_seconds": 725.399,
+      "end_seconds": 732.56,
+      "id": "eGuF3Z0EaPc-ja-0092",
+      "sequence": 92
+    },
+    {
+      "text": "手放す。そうするとそれは我慢をすることなんです。",
+      "start_seconds": 732.56,
+      "end_seconds": 739.399,
+      "id": "eGuF3Z0EaPc-ja-0093",
+      "sequence": 93
+    },
+    {
+      "text": "自分がやっちゃった方が早いよね。正しいよね。あ、これ自分の経験からすると失敗するでも我慢するんです。時には失敗させ",
+      "start_seconds": 739.399,
+      "end_seconds": 750.8,
+      "id": "eGuF3Z0EaPc-ja-0094",
+      "sequence": 94
+    },
+    {
+      "text": "ちゃうんです。そうしないと人は伸びないですのでこの我慢する。これが非常に",
+      "start_seconds": 750.8,
+      "end_seconds": 761.279,
+      "id": "eGuF3Z0EaPc-ja-0095",
+      "sequence": 95
+    },
+    {
+      "text": "心の設計という意味では大変でした。",
+      "start_seconds": 761.279,
+      "end_seconds": 764.88,
+      "id": "eGuF3Z0EaPc-ja-0096",
+      "sequence": 96
+    },
+    {
+      "text": "そしてもう1つ、みんなが成長してくると確かに自分なしで回ってくるんですね。",
+      "start_seconds": 764.88,
+      "end_seconds": 773.279,
+      "id": "eGuF3Z0EaPc-ja-0097",
+      "sequence": 97
+    },
+    {
+      "text": "そうするとある人が言ってきます。あれ、これ社長いらないんじゃない?",
+      "start_seconds": 773.279,
+      "end_seconds": 780.92,
+      "id": "eGuF3Z0EaPc-ja-0098",
+      "sequence": 98
+    },
+    {
+      "text": "あれ確かに。",
+      "start_seconds": 780.92,
+      "end_seconds": 784.639,
+      "id": "eGuF3Z0EaPc-ja-0099",
+      "sequence": 99
+    },
+    {
+      "text": "じゃあ自分何をやるのかな?自分の存在の心の設計ですね。この2つの自連マ",
+      "start_seconds": 784.639,
+      "end_seconds": 794.519,
+      "id": "eGuF3Z0EaPc-ja-0100",
+      "sequence": 100
+    },
+    {
+      "text": "会社は回っている。でも自分はそうどう何をすればいいのかこういった間ができ",
+      "start_seconds": 794.519,
+      "end_seconds": 802.48,
+      "id": "eGuF3Z0EaPc-ja-0101",
+      "sequence": 101
+    },
+    {
+      "text": "ちゃうですね。その時に私が考えて考えて思いついたのが",
+      "start_seconds": 802.48,
+      "end_seconds": 811.519,
+      "id": "eGuF3Z0EaPc-ja-0102",
+      "sequence": 102
+    },
+    {
+      "text": "我慢をするんじゃない。自分のやりたいことに没頭しろということです。",
+      "start_seconds": 811.519,
+      "end_seconds": 820.7199999999999,
+      "id": "eGuF3Z0EaPc-ja-0103",
+      "sequence": 103
+    },
+    {
+      "text": "例えばアメリカに行きました。それは行きたいから行ったんじゃなくてアメリカでビジネスをしたいからです。",
+      "start_seconds": 821.16,
+      "end_seconds": 829.0,
+      "id": "eGuF3Z0EaPc-ja-0104",
+      "sequence": 104
+    },
+    {
+      "text": "最初の5年間。そしてでもアメリカ行って何にも詰め跡を残さないまま帰ってくることはできない。なんとか必死に売上を",
+      "start_seconds": 829.0,
+      "end_seconds": 839.12,
+      "id": "eGuF3Z0EaPc-ja-0105",
+      "sequence": 105
+    },
+    {
+      "text": "利益を作ろうとしました。",
+      "start_seconds": 839.12,
+      "end_seconds": 841.88,
+      "id": "eGuF3Z0EaPc-ja-0106",
+      "sequence": 106
+    },
+    {
+      "text": "最終的にはアメリカの会社を買ってとにかくアメリカの収益家っていうことに没頭しました。",
+      "start_seconds": 841.88,
+      "end_seconds": 850.639,
+      "id": "eGuF3Z0EaPc-ja-0107",
+      "sequence": 107
+    },
+    {
+      "text": "その間日本のオペレーションに口を出しているそんな余裕はありませんでした。",
+      "start_seconds": 850.639,
+      "end_seconds": 858.24,
+      "id": "eGuF3Z0EaPc-ja-0108",
+      "sequence": 108
+    },
+    {
+      "text": "その間日本のチームは自分たちで成長していってくれました。",
+      "start_seconds": 858.24,
+      "end_seconds": 865.16,
+      "id": "eGuF3Z0EaPc-ja-0109",
+      "sequence": 109
+    },
+    {
+      "text": "教育でも一緒でした。私自身アメリカの教育制度で育ってないので正直どうやって大学に行ってそしてどうその",
+      "start_seconds": 865.959,
+      "end_seconds": 876.959,
+      "id": "eGuF3Z0EaPc-ja-0110",
+      "sequence": 110
+    },
+    {
+      "text": "仕組みどうなってんの分かりません。私ができることはこの人だったらそういうことを教えてくれんじゃない?そういう人をこう紹介したりとか、えー、ま、そういう",
+      "start_seconds": 876.959,
+      "end_seconds": 888.12,
+      "id": "eGuF3Z0EaPc-ja-0111",
+      "sequence": 111
+    },
+    {
+      "text": "環境を整えるそういうことしかできませんでした。",
+      "start_seconds": 888.12,
+      "end_seconds": 892.36,
+      "id": "eGuF3Z0EaPc-ja-0112",
+      "sequence": 112
+    },
+    {
+      "text": "ただ結局子供たちはこ友達に聞いたり、学校のカウンセラーに聞いたり塾の先生に",
+      "start_seconds": 892.36,
+      "end_seconds": 901.04,
+      "id": "eGuF3Z0EaPc-ja-0113",
+      "sequence": 113
+    },
+    {
+      "text": "聞いたりしながら勝手に勉強してそして先ほどで言うと親が勝手に期待してたんですけども私たち私の期待した以上の学校",
+      "start_seconds": 901.04,
+      "end_seconds": 913.0,
+      "id": "eGuF3Z0EaPc-ja-0114",
+      "sequence": 114
+    },
+    {
+      "text": "に入ってえ入っていくことになりました。",
+      "start_seconds": 913.0,
+      "end_seconds": 918.16,
+      "id": "eGuF3Z0EaPc-ja-0115",
+      "sequence": 115
+    },
+    {
+      "text": "手放すというのは単に任せることではない。",
+      "start_seconds": 918.16,
+      "end_seconds": 926.079,
+      "id": "eGuF3Z0EaPc-ja-0116",
+      "sequence": 116
+    },
+    {
+      "text": "手放すというのは自分が挑戦する没頭して挑戦する姿を見せ続けることだと思っています。",
+      "start_seconds": 926.079,
+      "end_seconds": 937.36,
+      "id": "eGuF3Z0EaPc-ja-0117",
+      "sequence": 117
+    },
+    {
+      "text": "人は言われた通りには動かない。お父さんが言う、上司が言う。それでは動かない。人",
+      "start_seconds": 937.36,
+      "end_seconds": 945.6,
+      "id": "eGuF3Z0EaPc-ja-0118",
+      "sequence": 118
+    },
+    {
+      "text": "は見た通りに動く。",
+      "start_seconds": 945.6,
+      "end_seconds": 949.9200000000001,
+      "id": "eGuF3Z0EaPc-ja-0119",
+      "sequence": 119
+    },
+    {
+      "text": "つまりそういった人たちが挑戦している姿、それもセットになって自分も頑張ろうやってやろうそういうもんになってくるん",
+      "start_seconds": 950.12,
+      "end_seconds": 959.48,
+      "id": "eGuF3Z0EaPc-ja-0120",
+      "sequence": 120
+    },
+    {
+      "text": "ですね。",
+      "start_seconds": 959.48,
+      "end_seconds": 962.56,
+      "id": "eGuF3Z0EaPc-ja-0121",
+      "sequence": 121
+    },
+    {
+      "text": "ですので私も今手放すという挑戦をし続けてます。それによってみんなが成長し、",
+      "start_seconds": 962.56,
+      "end_seconds": 971.639,
+      "id": "eGuF3Z0EaPc-ja-0122",
+      "sequence": 122
+    },
+    {
+      "text": "自分もまた新しい部隊に、え、舞台で成長するとこういった場を、え、与えられて",
+      "start_seconds": 971.639,
+      "end_seconds": 980.199,
+      "id": "eGuF3Z0EaPc-ja-0123",
+      "sequence": 123
+    },
+    {
+      "text": "いるわけです。その姿を家族であったりとか、会社の人であったりとか、また皆さんであったりとか、そういう人に見せ続けること、このことが非常に重要だと思って",
+      "start_seconds": 980.199,
+      "end_seconds": 991.839,
+      "id": "eGuF3Z0EaPc-ja-0124",
+      "sequence": 124
+    },
+    {
+      "text": "おります。",
+      "start_seconds": 991.839,
+      "end_seconds": 995.12,
+      "id": "eGuF3Z0EaPc-ja-0125",
+      "sequence": 125
+    },
+    {
+      "text": "最後になりますけども、今日この話を聞いて何か参考になったなと思いましたら是非",
+      "start_seconds": 995.24,
+      "end_seconds": 1004.04,
+      "id": "eGuF3Z0EaPc-ja-0126",
+      "sequence": 126
+    },
+    {
+      "text": "職場でも家でも何か1つ手放してみてください。小さなことでも大丈夫です。",
+      "start_seconds": 1004.04,
+      "end_seconds": 1012.959,
+      "id": "eGuF3Z0EaPc-ja-0127",
+      "sequence": 127
+    },
+    {
+      "text": "ただですね、家事を手放しました。その代わり自分はワールドカップ見るのに没頭します。こんなことを言うとですね、",
+      "start_seconds": 1012.959,
+      "end_seconds": 1022.88,
+      "id": "eGuF3Z0EaPc-ja-0128",
+      "sequence": 128
+    },
+    {
+      "text": "ちょっと大きな問題になると思いますので、そこは自己責任でやっていただければと思います。ご清聴ありがとうございました。[拍手]",
+      "start_seconds": 1022.88,
+      "end_seconds": 1034.311,
+      "id": "eGuF3Z0EaPc-ja-0129",
+      "sequence": 129
+    }
+  ],
+  "raw_captions": [
+    {
+      "text": "[拍手]",
+      "start_seconds": 1.309,
+      "end_seconds": 3.3289999999999997
+    },
+    {
+      "text": "皆さん、ちょっと想像してみてください。",
+      "start_seconds": 6.399,
+      "end_seconds": 13.92
+    },
+    {
+      "text": "皆さんは、え、経営者です。",
+      "start_seconds": 10.639,
+      "end_seconds": 18.759999999999998
+    },
+    {
+      "text": "非常に優秀な人材を採用できました。",
+      "start_seconds": 13.92,
+      "end_seconds": 22.72
+    },
+    {
+      "text": "価値観も合ってる、条件もいい、周りの人",
+      "start_seconds": 18.76,
+      "end_seconds": 28.039
+    },
+    {
+      "text": "もいい。ある日、私が彼に訪ねました。",
+      "start_seconds": 22.72,
+      "end_seconds": 32.599
+    },
+    {
+      "text": "今日うちの会社いいでしょ?",
+      "start_seconds": 28.039,
+      "end_seconds": 37.160000000000004
+    },
+    {
+      "text": "社長実はやめたいと思ってるんです。オー",
+      "start_seconds": 32.599,
+      "end_seconds": 40.519999999999996
+    },
+    {
+      "text": "マイガー。",
+      "start_seconds": 37.16,
+      "end_seconds": 43.07899999999999
+    },
+    {
+      "text": "もう1つ",
+      "start_seconds": 40.52,
+      "end_seconds": 45.68000000000001
+    },
+    {
+      "text": "今日ここにいらっしゃる皆さん、親子さん",
+      "start_seconds": 43.079,
+      "end_seconds": 48.28
+    },
+    {
+      "text": "多いと思います。",
+      "start_seconds": 45.68,
+      "end_seconds": 51.519999999999996
+    },
+    {
+      "text": "いい学校にも通せ、塾にも通せ投資をして",
+      "start_seconds": 48.28,
+      "end_seconds": 55.44
+    },
+    {
+      "text": "います。そんな子供が勉強してる時にどう",
+      "start_seconds": 51.52,
+      "end_seconds": 57.68000000000001
+    },
+    {
+      "text": "勉強している?",
+      "start_seconds": 55.44,
+      "end_seconds": 61.239
+    },
+    {
+      "text": "パパうるさい。出てって。おおオーマイ",
+      "start_seconds": 57.68,
+      "end_seconds": 64.44
+    },
+    {
+      "text": "ガー。",
+      "start_seconds": 61.239,
+      "end_seconds": 64.44
+    },
+    {
+      "text": "この2つに共通していることは",
+      "start_seconds": 64.96,
+      "end_seconds": 69.91999999999999
+    },
+    {
+      "text": "コントロールしようとしすぎていること",
+      "start_seconds": 67.92,
+      "end_seconds": 75.119
+    },
+    {
+      "text": "です。つまり手放そうとしてできてないと",
+      "start_seconds": 69.92,
+      "end_seconds": 78.64
+    },
+    {
+      "text": "いうことです。",
+      "start_seconds": 75.119,
+      "end_seconds": 78.64
+    },
+    {
+      "text": "私は今手放している最中です。私は今",
+      "start_seconds": 81.04,
+      "end_seconds": 89.32000000000001
+    },
+    {
+      "text": "アメリカカリフォルニアのシリコンバレー",
+      "start_seconds": 87.079,
+      "end_seconds": 92.72
+    },
+    {
+      "text": "に住んでおり、アメリカフィリピン拠点が",
+      "start_seconds": 89.32,
+      "end_seconds": 94.63999999999999
+    },
+    {
+      "text": "ありまして100名以上の従業員を抱えて",
+      "start_seconds": 92.72,
+      "end_seconds": 97.24
+    },
+    {
+      "text": "おります。",
+      "start_seconds": 94.64,
+      "end_seconds": 100.56
+    },
+    {
+      "text": "最初この会社を作った時は自分がリーダー",
+      "start_seconds": 97.24,
+      "end_seconds": 103.439
+    },
+    {
+      "text": "であって自分が引っ張っていこうそんな",
+      "start_seconds": 100.56,
+      "end_seconds": 108.68
+    },
+    {
+      "text": "思いで会社を運営していました。",
+      "start_seconds": 103.439,
+      "end_seconds": 112.03999999999999
+    },
+    {
+      "text": "ただ今は",
+      "start_seconds": 108.68,
+      "end_seconds": 117.24000000000001
+    },
+    {
+      "text": "信頼できる周りの人に任せて私なしで回る",
+      "start_seconds": 112.04,
+      "end_seconds": 121.24000000000001
+    },
+    {
+      "text": "仕組みを作ってそして会社が社長なしで",
+      "start_seconds": 117.24,
+      "end_seconds": 125.83999999999999
+    },
+    {
+      "text": "回るようになっています。ですので私は",
+      "start_seconds": 121.24,
+      "end_seconds": 129.16
+    },
+    {
+      "text": "今日こういった場で私にとって新しい",
+      "start_seconds": 125.84,
+      "end_seconds": 132.599
+    },
+    {
+      "text": "チャレンジさせてもらってます。そんな",
+      "start_seconds": 129.16,
+      "end_seconds": 136.16
+    },
+    {
+      "text": "自分の人生を振り返った時に",
+      "start_seconds": 132.599,
+      "end_seconds": 140.28
+    },
+    {
+      "text": "私は手放しの連続でした。",
+      "start_seconds": 136.16,
+      "end_seconds": 145.4
+    },
+    {
+      "text": "例えば高校生の時アメリカで勉強したい。",
+      "start_seconds": 140.28,
+      "end_seconds": 147.879
+    },
+    {
+      "text": "そしてアメリカの高校を受けました。実際",
+      "start_seconds": 145.4,
+      "end_seconds": 150.48000000000002
+    },
+    {
+      "text": "受かったんですね。受かったんで日本の",
+      "start_seconds": 147.879,
+      "end_seconds": 154.16
+    },
+    {
+      "text": "高校を退学して実際にま、行こうと思った",
+      "start_seconds": 150.48,
+      "end_seconds": 156.599
+    },
+    {
+      "text": "んですけども最後の最後でお金がなくて",
+      "start_seconds": 154.16,
+      "end_seconds": 159.84
+    },
+    {
+      "text": "行けなかったんですね。え、手放し失敗で",
+      "start_seconds": 156.599,
+      "end_seconds": 163.39999999999998
+    },
+    {
+      "text": "ございます。ただ高校生の時から日本の",
+      "start_seconds": 159.84,
+      "end_seconds": 168.31900000000002
+    },
+    {
+      "text": "レールというのを手放そうとしました。",
+      "start_seconds": 163.4,
+      "end_seconds": 172.44
+    },
+    {
+      "text": "2つ目は大企業での経験、大企業という",
+      "start_seconds": 168.319,
+      "end_seconds": 175.83999999999997
+    },
+    {
+      "text": "レールを手放しました。",
+      "start_seconds": 172.44,
+      "end_seconds": 179.84
+    },
+    {
+      "text": "そこそこ有名な企業で安定していて海外",
+      "start_seconds": 175.84,
+      "end_seconds": 183.519
+    },
+    {
+      "text": "部門もただ人数が多い、責任は少ない。",
+      "start_seconds": 179.84,
+      "end_seconds": 186.36
+    },
+    {
+      "text": "少し時間がかかるかなと思いましてその",
+      "start_seconds": 183.519,
+      "end_seconds": 190.799
+    },
+    {
+      "text": "レールをました。",
+      "start_seconds": 186.36,
+      "end_seconds": 190.799
+    },
+    {
+      "text": "3番目は企業です。",
+      "start_seconds": 192.0,
+      "end_seconds": 199.519
+    },
+    {
+      "text": "起業というのは雇われるというレールを",
+      "start_seconds": 196.319,
+      "end_seconds": 202.92
+    },
+    {
+      "text": "降りることです。そして自分でレールを",
+      "start_seconds": 199.519,
+      "end_seconds": 206.959
+    },
+    {
+      "text": "敷いていくということです。ですので私は",
+      "start_seconds": 202.92,
+      "end_seconds": 209.39999999999998
+    },
+    {
+      "text": "自分の夢を叶えるために自分でレールを",
+      "start_seconds": 206.959,
+      "end_seconds": 212.439
+    },
+    {
+      "text": "敷いていこうなので雇われるんじゃなくて",
+      "start_seconds": 209.4,
+      "end_seconds": 215.56
+    },
+    {
+      "text": "自分で会社を作る。そういった決意をして",
+      "start_seconds": 212.439,
+      "end_seconds": 220.239
+    },
+    {
+      "text": "それがきっかけで起業しました。",
+      "start_seconds": 215.56,
+      "end_seconds": 220.239
+    },
+    {
+      "text": "そして4つ目、夢叶い10年前、2016",
+      "start_seconds": 221.04,
+      "end_seconds": 229.48
+    },
+    {
+      "text": "年会社を大きくしてアメリカに進出という",
+      "start_seconds": 225.519,
+      "end_seconds": 235.12
+    },
+    {
+      "text": "形で家族5人と犬1匹連れてアメリカ",
+      "start_seconds": 229.48,
+      "end_seconds": 238.599
+    },
+    {
+      "text": "カリフォルニアの方に移住をしました。",
+      "start_seconds": 235.12,
+      "end_seconds": 243.239
+    },
+    {
+      "text": "これは今まで慣れしんできた言葉、文化、",
+      "start_seconds": 238.599,
+      "end_seconds": 245.67999999999998
+    },
+    {
+      "text": "食べ物、そういった日本というものを",
+      "start_seconds": 243.239,
+      "end_seconds": 248.28
+    },
+    {
+      "text": "手放してアメリカでチャレンジをすると",
+      "start_seconds": 245.68,
+      "end_seconds": 253.43900000000002
+    },
+    {
+      "text": "いうものでした。手放す。確かに",
+      "start_seconds": 248.28,
+      "end_seconds": 255.599
+    },
+    {
+      "text": "言葉で聞くとできるかもしれないんです",
+      "start_seconds": 253.439,
+      "end_seconds": 258.56
+    },
+    {
+      "text": "けども、実は毎回毎回本当に怖かったん",
+      "start_seconds": 255.599,
+      "end_seconds": 263.84
+    },
+    {
+      "text": "です。起業した時は3ヶ月目でもう",
+      "start_seconds": 258.56,
+      "end_seconds": 267.919
+    },
+    {
+      "text": "倒産の危機。そんな時はなんでこんなこと",
+      "start_seconds": 263.84,
+      "end_seconds": 271.44
+    },
+    {
+      "text": "やっちゃったんだ。そんな後悔の連続です",
+      "start_seconds": 267.919,
+      "end_seconds": 276.15999999999997
+    },
+    {
+      "text": "ね。こんなネールを続けた私は経営者とし",
+      "start_seconds": 271.44,
+      "end_seconds": 280.71999999999997
+    },
+    {
+      "text": "て親としては手放すいったものはあんまり",
+      "start_seconds": 276.16,
+      "end_seconds": 285.03900000000004
+    },
+    {
+      "text": "うまくありませんでした。会社では自分が",
+      "start_seconds": 280.72,
+      "end_seconds": 287.84000000000003
+    },
+    {
+      "text": "全部決めていく",
+      "start_seconds": 285.039,
+      "end_seconds": 290.4
+    },
+    {
+      "text": "意見を出していくもちろん作業もやる。",
+      "start_seconds": 287.84,
+      "end_seconds": 293.75899999999996
+    },
+    {
+      "text": "あらゆるものに目を配らしてそして細かい",
+      "start_seconds": 290.4,
+      "end_seconds": 297.63899999999995
+    },
+    {
+      "text": "ことに口を出していきました。",
+      "start_seconds": 293.759,
+      "end_seconds": 301.759
+    },
+    {
+      "text": "例えばミーティングがある時は、ま、",
+      "start_seconds": 297.639,
+      "end_seconds": 304.919
+    },
+    {
+      "text": "こんなこと私言うわけですよね。皆さん、",
+      "start_seconds": 301.759,
+      "end_seconds": 308.0
+    },
+    {
+      "text": "もうどんどん自分のいいこと、思ったこと",
+      "start_seconds": 304.919,
+      "end_seconds": 311.0
+    },
+    {
+      "text": "言っていいよ。",
+      "start_seconds": 308.0,
+      "end_seconds": 313.84
+    },
+    {
+      "text": "ま、最終的にはですね、私の思ったように",
+      "start_seconds": 311.0,
+      "end_seconds": 315.72
+    },
+    {
+      "text": "なっちゃうんですけども、こんな会社に",
+      "start_seconds": 313.84,
+      "end_seconds": 318.52
+    },
+    {
+      "text": "いるとですね、冒頭のように人はやめてっ",
+      "start_seconds": 315.72,
+      "end_seconds": 321.88000000000005
+    },
+    {
+      "text": "ちゃうんですね。",
+      "start_seconds": 318.52,
+      "end_seconds": 321.88
+    },
+    {
+      "text": "子育てでも全く同じでした。",
+      "start_seconds": 322.36,
+      "end_seconds": 329.28000000000003
+    },
+    {
+      "text": "長男の中学受験、",
+      "start_seconds": 325.84,
+      "end_seconds": 332.84
+    },
+    {
+      "text": "この中学を目指そう。そのためにはこう",
+      "start_seconds": 329.28,
+      "end_seconds": 335.71999999999997
+    },
+    {
+      "text": "いう風に勉強した方がいいよなんて自分が",
+      "start_seconds": 332.84,
+      "end_seconds": 339.71999999999997
+    },
+    {
+      "text": "決めちゃったりしてるんですよね。そして",
+      "start_seconds": 335.72,
+      "end_seconds": 342.68
+    },
+    {
+      "text": "合格するには",
+      "start_seconds": 339.72,
+      "end_seconds": 348.56
+    },
+    {
+      "text": "合格したい大中学の名前を紙に書いて机の",
+      "start_seconds": 342.68,
+      "end_seconds": 352.56
+    },
+    {
+      "text": "前にえ張ってそれを毎日見る。そうすれば",
+      "start_seconds": 348.56,
+      "end_seconds": 355.319
+    },
+    {
+      "text": "合格で生きる。夢は叶う。そんなような",
+      "start_seconds": 352.56,
+      "end_seconds": 358.16
+    },
+    {
+      "text": "ことを言ってたんですね。",
+      "start_seconds": 355.319,
+      "end_seconds": 361.319
+    },
+    {
+      "text": "で、実際子供が見てたのはその目の前の紙",
+      "start_seconds": 358.16,
+      "end_seconds": 365.6
+    },
+    {
+      "text": "ではなくてスマホの画面を見てました。",
+      "start_seconds": 361.319,
+      "end_seconds": 371.16
+    },
+    {
+      "text": "結局子供は子供の目死んでいました。",
+      "start_seconds": 365.6,
+      "end_seconds": 375.639
+    },
+    {
+      "text": "そして親が勝手に、え、期待した学校、",
+      "start_seconds": 371.16,
+      "end_seconds": 378.8
+    },
+    {
+      "text": "そういったものとはほどい結果になり、",
+      "start_seconds": 375.639,
+      "end_seconds": 383.199
+    },
+    {
+      "text": "地元の学校に入ってきました。",
+      "start_seconds": 378.8,
+      "end_seconds": 386.16
+    },
+    {
+      "text": "この2つに共通しているのはコントロール",
+      "start_seconds": 383.199,
+      "end_seconds": 391.039
+    },
+    {
+      "text": "しすぎていたということなんです。",
+      "start_seconds": 386.16,
+      "end_seconds": 395.0
+    },
+    {
+      "text": "実は私経営者としてコーチがいました。",
+      "start_seconds": 391.039,
+      "end_seconds": 397.88
+    },
+    {
+      "text": "その工事に相談したんです。そしたら言わ",
+      "start_seconds": 395.0,
+      "end_seconds": 401.4
+    },
+    {
+      "text": "れました。あなたは",
+      "start_seconds": 397.88,
+      "end_seconds": 405.639
+    },
+    {
+      "text": "従業員子供の成長をあなたが出ていくこと",
+      "start_seconds": 401.4,
+      "end_seconds": 410.75899999999996
+    },
+    {
+      "text": "によって阻害している。奪っているんだ。",
+      "start_seconds": 405.639,
+      "end_seconds": 414.36
+    },
+    {
+      "text": "え、いや、僕は子供のことを考えて、いや",
+      "start_seconds": 410.759,
+      "end_seconds": 418.0
+    },
+    {
+      "text": "、メンバーのことを考えて、それでよかれ",
+      "start_seconds": 414.36,
+      "end_seconds": 421.24
+    },
+    {
+      "text": "と思って言ってるんだよ。いやいや、それ",
+      "start_seconds": 418.0,
+      "end_seconds": 425.24
+    },
+    {
+      "text": "はその人たちの成長を奪っているんだ。",
+      "start_seconds": 421.24,
+      "end_seconds": 429.40000000000003
+    },
+    {
+      "text": "相当強烈な言葉でした。",
+      "start_seconds": 425.24,
+      "end_seconds": 432.08
+    },
+    {
+      "text": "さすがに私もこれは手放さなきゃいけない",
+      "start_seconds": 429.4,
+      "end_seconds": 436.039
+    },
+    {
+      "text": "と思いました。そしてそっから私の手放し",
+      "start_seconds": 432.08,
+      "end_seconds": 439.599
+    },
+    {
+      "text": "ていく経営、そして子育てが始まっていっ",
+      "start_seconds": 436.039,
+      "end_seconds": 442.44
+    },
+    {
+      "text": "たんです。",
+      "start_seconds": 439.599,
+      "end_seconds": 442.44
+    },
+    {
+      "text": "そんな時、2020年、え、コロナ危機が",
+      "start_seconds": 444.28,
+      "end_seconds": 453.35999999999996
+    },
+    {
+      "text": "起きました。そん中で私も会社どうなっ",
+      "start_seconds": 448.599,
+      "end_seconds": 456.639
+    },
+    {
+      "text": "ちゃうんだろう。みんなも自分たちの生活",
+      "start_seconds": 453.36,
+      "end_seconds": 458.52000000000004
+    },
+    {
+      "text": "どうなっちゃうんだろう。そんな不安が",
+      "start_seconds": 456.639,
+      "end_seconds": 462.0
+    },
+    {
+      "text": "蔓延していました。我慢していた人に任せ",
+      "start_seconds": 458.52,
+      "end_seconds": 465.159
+    },
+    {
+      "text": "ていた私が今こそリーダーが出てかなきゃ",
+      "start_seconds": 462.0,
+      "end_seconds": 469.72
+    },
+    {
+      "text": "いけない自分の出番だと解決するぞという",
+      "start_seconds": 465.159,
+      "end_seconds": 473.08
+    },
+    {
+      "text": "風に思ったんですね。",
+      "start_seconds": 469.72,
+      "end_seconds": 478.8
+    },
+    {
+      "text": "ただそこでも止められました。社長今まで",
+      "start_seconds": 473.08,
+      "end_seconds": 482.35999999999996
+    },
+    {
+      "text": "我慢して任せてきたじゃないですか。この",
+      "start_seconds": 478.8,
+      "end_seconds": 487.12
+    },
+    {
+      "text": "1番難しい危機こそみんなに任せて、",
+      "start_seconds": 482.36,
+      "end_seconds": 490.199
+    },
+    {
+      "text": "そしてみんなに頑張ってもらおう。そう",
+      "start_seconds": 487.12,
+      "end_seconds": 492.52
+    },
+    {
+      "text": "いう風に言われました。",
+      "start_seconds": 490.199,
+      "end_seconds": 494.199
+    },
+    {
+      "text": "え、",
+      "start_seconds": 492.52,
+      "end_seconds": 496.159
+    },
+    {
+      "text": "会社なくなっちゃうかもしれない。倒産し",
+      "start_seconds": 494.199,
+      "end_seconds": 498.52000000000004
+    },
+    {
+      "text": "ちゃうかもしれない。そんな恐怖に支配さ",
+      "start_seconds": 496.159,
+      "end_seconds": 502.56
+    },
+    {
+      "text": "れました。ただそれでも任せることに",
+      "start_seconds": 498.52,
+      "end_seconds": 507.0
+    },
+    {
+      "text": "決めるという覚悟をしたんです。すると皆",
+      "start_seconds": 502.56,
+      "end_seconds": 510.44
+    },
+    {
+      "text": "さん色々考えてですね、セミナーっていう",
+      "start_seconds": 507.0,
+      "end_seconds": 512.56
+    },
+    {
+      "text": "ものをこう対面で開いてやってたんです",
+      "start_seconds": 510.44,
+      "end_seconds": 514.479
+    },
+    {
+      "text": "けども、それができないであれば",
+      "start_seconds": 512.56,
+      "end_seconds": 516.279
+    },
+    {
+      "text": "ウェビナーオンライン上のセミナーを",
+      "start_seconds": 514.479,
+      "end_seconds": 519.719
+    },
+    {
+      "text": "やろうとうちの会社50人ぐらい話せる人",
+      "start_seconds": 516.279,
+      "end_seconds": 523.599
+    },
+    {
+      "text": "いるよね。だったらそれが全員登壇し",
+      "start_seconds": 519.719,
+      "end_seconds": 525.839
+    },
+    {
+      "text": "ちゃう最大級のウェビナーをやってみよう",
+      "start_seconds": 523.599,
+      "end_seconds": 528.6800000000001
+    },
+    {
+      "text": "。そんなアイデアが社員から出てきたん",
+      "start_seconds": 525.839,
+      "end_seconds": 530.519
+    },
+    {
+      "text": "です。",
+      "start_seconds": 528.68,
+      "end_seconds": 535.399
+    },
+    {
+      "text": "そして皆さん話した経験も",
+      "start_seconds": 530.519,
+      "end_seconds": 538.12
+    },
+    {
+      "text": "ない。え、初めてスピーカーとして登場",
+      "start_seconds": 535.399,
+      "end_seconds": 542.399
+    },
+    {
+      "text": "する人も本当に多かったです。",
+      "start_seconds": 538.12,
+      "end_seconds": 547.36
+    },
+    {
+      "text": "ですが結果的には皆さん私なんかよりも",
+      "start_seconds": 542.399,
+      "end_seconds": 551.8
+    },
+    {
+      "text": "上手にスピーチしてました。",
+      "start_seconds": 547.36,
+      "end_seconds": 551.8000000000001
+    },
+    {
+      "text": "結果的には売上は30%",
+      "start_seconds": 553.279,
+      "end_seconds": 559.88
+    },
+    {
+      "text": "この中で伸ばすことができました。大成功",
+      "start_seconds": 556.92,
+      "end_seconds": 563.16
+    },
+    {
+      "text": "でした。",
+      "start_seconds": 559.88,
+      "end_seconds": 563.16
+    },
+    {
+      "text": "このアイデアは私が考えてリーダーシップ",
+      "start_seconds": 564.12,
+      "end_seconds": 570.92
+    },
+    {
+      "text": "を取っていたらおそらく出てこなかった",
+      "start_seconds": 568.519,
+      "end_seconds": 572.76
+    },
+    {
+      "text": "アイデアでしょう。絶対出てこなかった",
+      "start_seconds": 570.92,
+      "end_seconds": 576.8389999999999
+    },
+    {
+      "text": "でしょ。皆さんに任したから出てきて、",
+      "start_seconds": 572.76,
+      "end_seconds": 580.56
+    },
+    {
+      "text": "そしてそれをやった皆さんは大きく自信を",
+      "start_seconds": 576.839,
+      "end_seconds": 584.8000000000001
+    },
+    {
+      "text": "持って成長していったんです。",
+      "start_seconds": 580.56,
+      "end_seconds": 584.8
+    },
+    {
+      "text": "手放すことで今のように成長が起きます。",
+      "start_seconds": 587.2,
+      "end_seconds": 597.399
+    },
+    {
+      "text": "ただ手放せばいいというわけではない。",
+      "start_seconds": 591.8,
+      "end_seconds": 601.8389999999999
+    },
+    {
+      "text": "手放すには設計が必要だ。そういうことを",
+      "start_seconds": 597.399,
+      "end_seconds": 607.079
+    },
+    {
+      "text": "私は経営者として親として",
+      "start_seconds": 601.839,
+      "end_seconds": 611.24
+    },
+    {
+      "text": "実際にやってみてもがいてみてその間の",
+      "start_seconds": 607.079,
+      "end_seconds": 616.68
+    },
+    {
+      "text": "設計が必要だと思ったんですね。",
+      "start_seconds": 611.24,
+      "end_seconds": 622.48
+    },
+    {
+      "text": "ここで言う間とは何か?それは",
+      "start_seconds": 616.68,
+      "end_seconds": 625.04
+    },
+    {
+      "text": "任せる側",
+      "start_seconds": 622.48,
+      "end_seconds": 632.279
+    },
+    {
+      "text": "と任される側、この間に存在する間です。",
+      "start_seconds": 625.04,
+      "end_seconds": 635.8
+    },
+    {
+      "text": "ここには3つの重要なことがあると思って",
+      "start_seconds": 632.279,
+      "end_seconds": 638.72
+    },
+    {
+      "text": "います。",
+      "start_seconds": 635.8,
+      "end_seconds": 643.7199999999999
+    },
+    {
+      "text": "1つ目、それは枠組の設計。",
+      "start_seconds": 638.72,
+      "end_seconds": 646.6800000000001
+    },
+    {
+      "text": "任せるのでこれを達成しよう。という",
+      "start_seconds": 643.72,
+      "end_seconds": 650.12
+    },
+    {
+      "text": "ゴールですね。そのゴールにはこういう",
+      "start_seconds": 646.68,
+      "end_seconds": 652.8
+    },
+    {
+      "text": "ルールでやっていきましょう。",
+      "start_seconds": 650.12,
+      "end_seconds": 655.399
+    },
+    {
+      "text": "例えば企業で言うと",
+      "start_seconds": 652.8,
+      "end_seconds": 657.519
+    },
+    {
+      "text": "行動規範がこうやってあるので、この行動",
+      "start_seconds": 655.399,
+      "end_seconds": 659.839
+    },
+    {
+      "text": "規範に沿ってやっていきましょう。ま、",
+      "start_seconds": 657.519,
+      "end_seconds": 662.5600000000001
+    },
+    {
+      "text": "子供でしたらこういうような学校行こうよ",
+      "start_seconds": 659.839,
+      "end_seconds": 665.9590000000001
+    },
+    {
+      "text": "ね。だったらこれだけは勉強しようよね。",
+      "start_seconds": 662.56,
+      "end_seconds": 669.04
+    },
+    {
+      "text": "ま、そういった一緒に作っていくゴールを",
+      "start_seconds": 665.959,
+      "end_seconds": 672.0
+    },
+    {
+      "text": "設定していくそういった枠組。これが1つ",
+      "start_seconds": 669.04,
+      "end_seconds": 675.16
+    },
+    {
+      "text": "目。",
+      "start_seconds": 672.0,
+      "end_seconds": 675.16
+    },
+    {
+      "text": "2つ目。これはですね、時間の設計です。",
+      "start_seconds": 675.519,
+      "end_seconds": 685.079
+    },
+    {
+      "text": "やっぱりやったことがない人にいきなり",
+      "start_seconds": 681.519,
+      "end_seconds": 689.48
+    },
+    {
+      "text": "これやってと手放してもそれは丸投げに",
+      "start_seconds": 685.079,
+      "end_seconds": 691.8389999999999
+    },
+    {
+      "text": "なります。",
+      "start_seconds": 689.48,
+      "end_seconds": 696.04
+    },
+    {
+      "text": "経験のない人にはやっぱり伴奏して丁寧に",
+      "start_seconds": 691.839,
+      "end_seconds": 699.2790000000001
+    },
+    {
+      "text": "教えてチェックしてそして悩みを聞いて",
+      "start_seconds": 696.04,
+      "end_seconds": 701.639
+    },
+    {
+      "text": "あげる。",
+      "start_seconds": 699.279,
+      "end_seconds": 705.12
+    },
+    {
+      "text": "ただもう自分でできるようになった。自分",
+      "start_seconds": 701.639,
+      "end_seconds": 708.76
+    },
+    {
+      "text": "でどんどん進めていく。そういう人には口",
+      "start_seconds": 705.12,
+      "end_seconds": 712.24
+    },
+    {
+      "text": "を出していくというよりもどんなサポート",
+      "start_seconds": 708.76,
+      "end_seconds": 715.48
+    },
+    {
+      "text": "が必要、そういう風に聞いていく。そして",
+      "start_seconds": 712.24,
+      "end_seconds": 720.399
+    },
+    {
+      "text": "支援していく。そして3つ目。これが実は",
+      "start_seconds": 715.48,
+      "end_seconds": 725.399
+    },
+    {
+      "text": "やってみて経営者として1番辛かった。",
+      "start_seconds": 720.399,
+      "end_seconds": 732.56
+    },
+    {
+      "text": "それは手放す側の心の設計です。",
+      "start_seconds": 725.399,
+      "end_seconds": 736.959
+    },
+    {
+      "text": "手放す。そうするとそれは我慢をすること",
+      "start_seconds": 732.56,
+      "end_seconds": 739.399
+    },
+    {
+      "text": "なんです。",
+      "start_seconds": 736.959,
+      "end_seconds": 742.88
+    },
+    {
+      "text": "自分がやっちゃった方が早いよね。正しい",
+      "start_seconds": 739.399,
+      "end_seconds": 746.24
+    },
+    {
+      "text": "よね。あ、これ自分の経験からすると失敗",
+      "start_seconds": 742.88,
+      "end_seconds": 750.8
+    },
+    {
+      "text": "するでも我慢するんです。時には失敗させ",
+      "start_seconds": 746.24,
+      "end_seconds": 756.399
+    },
+    {
+      "text": "ちゃうんです。そうしないと人は伸びない",
+      "start_seconds": 750.8,
+      "end_seconds": 761.279
+    },
+    {
+      "text": "ですのでこの我慢する。これが非常に",
+      "start_seconds": 756.399,
+      "end_seconds": 764.88
+    },
+    {
+      "text": "心の設計という意味では大変でした。",
+      "start_seconds": 761.279,
+      "end_seconds": 769.16
+    },
+    {
+      "text": "そしてもう1つ、みんなが成長してくると",
+      "start_seconds": 764.88,
+      "end_seconds": 773.279
+    },
+    {
+      "text": "確かに自分なしで回ってくるんですね。",
+      "start_seconds": 769.16,
+      "end_seconds": 775.3199999999999
+    },
+    {
+      "text": "そうすると",
+      "start_seconds": 773.279,
+      "end_seconds": 778.6
+    },
+    {
+      "text": "ある人が言ってきます。あれ、これ社長",
+      "start_seconds": 775.32,
+      "end_seconds": 780.9200000000001
+    },
+    {
+      "text": "いらないんじゃない?",
+      "start_seconds": 778.6,
+      "end_seconds": 784.639
+    },
+    {
+      "text": "あれ確かに。",
+      "start_seconds": 780.92,
+      "end_seconds": 789.199
+    },
+    {
+      "text": "じゃあ自分何をやるのかな?自分の存在の",
+      "start_seconds": 784.639,
+      "end_seconds": 794.519
+    },
+    {
+      "text": "心の設計ですね。この2つの自連マ",
+      "start_seconds": 789.199,
+      "end_seconds": 798.16
+    },
+    {
+      "text": "会社は回っている。でも自分はそうどう何",
+      "start_seconds": 794.519,
+      "end_seconds": 802.48
+    },
+    {
+      "text": "をすればいいのかこういった間ができ",
+      "start_seconds": 798.16,
+      "end_seconds": 808.04
+    },
+    {
+      "text": "ちゃうですね。その時に私が考えて考えて",
+      "start_seconds": 802.48,
+      "end_seconds": 811.519
+    },
+    {
+      "text": "思いついたのが",
+      "start_seconds": 808.04,
+      "end_seconds": 814.92
+    },
+    {
+      "text": "我慢をするんじゃない。自分のやりたい",
+      "start_seconds": 811.519,
+      "end_seconds": 820.72
+    },
+    {
+      "text": "ことに没頭しろということです。",
+      "start_seconds": 814.92,
+      "end_seconds": 820.7199999999999
+    },
+    {
+      "text": "例えば",
+      "start_seconds": 821.16,
+      "end_seconds": 825.04
+    },
+    {
+      "text": "アメリカに行きました。それは行きたい",
+      "start_seconds": 822.72,
+      "end_seconds": 826.32
+    },
+    {
+      "text": "から行ったんじゃなくてアメリカで",
+      "start_seconds": 825.04,
+      "end_seconds": 829.0
+    },
+    {
+      "text": "ビジネスをしたいからです。",
+      "start_seconds": 826.32,
+      "end_seconds": 833.88
+    },
+    {
+      "text": "最初の5年間。そしてでもアメリカ行って",
+      "start_seconds": 829.0,
+      "end_seconds": 835.88
+    },
+    {
+      "text": "何にも詰め跡を残さないまま帰ってくる",
+      "start_seconds": 833.88,
+      "end_seconds": 839.12
+    },
+    {
+      "text": "ことはできない。なんとか必死に売上を",
+      "start_seconds": 835.88,
+      "end_seconds": 841.88
+    },
+    {
+      "text": "利益を作ろうとしました。",
+      "start_seconds": 839.12,
+      "end_seconds": 845.24
+    },
+    {
+      "text": "最終的にはアメリカの会社を買って",
+      "start_seconds": 841.88,
+      "end_seconds": 848.16
+    },
+    {
+      "text": "とにかくアメリカの収益家っていうことに",
+      "start_seconds": 845.24,
+      "end_seconds": 850.639
+    },
+    {
+      "text": "没頭しました。",
+      "start_seconds": 848.16,
+      "end_seconds": 854.12
+    },
+    {
+      "text": "その間日本のオペレーションに口を出して",
+      "start_seconds": 850.639,
+      "end_seconds": 858.24
+    },
+    {
+      "text": "いるそんな余裕はありませんでした。",
+      "start_seconds": 854.12,
+      "end_seconds": 861.519
+    },
+    {
+      "text": "その間日本のチームは自分たちで成長して",
+      "start_seconds": 858.24,
+      "end_seconds": 865.16
+    },
+    {
+      "text": "いってくれました。",
+      "start_seconds": 861.519,
+      "end_seconds": 865.16
+    },
+    {
+      "text": "教育でも一緒でした。私自身アメリカの",
+      "start_seconds": 865.959,
+      "end_seconds": 874.279
+    },
+    {
+      "text": "教育制度で育ってないので正直どうやって",
+      "start_seconds": 869.759,
+      "end_seconds": 876.9590000000001
+    },
+    {
+      "text": "どうやって大学に行ってそしてどうその",
+      "start_seconds": 874.279,
+      "end_seconds": 880.12
+    },
+    {
+      "text": "仕組みどうなってんの分かりません。私が",
+      "start_seconds": 876.959,
+      "end_seconds": 882.2399999999999
+    },
+    {
+      "text": "できることはこの人だったらそういうこと",
+      "start_seconds": 880.12,
+      "end_seconds": 884.12
+    },
+    {
+      "text": "を教えてくれんじゃない?そういう人を",
+      "start_seconds": 882.24,
+      "end_seconds": 888.12
+    },
+    {
+      "text": "こう紹介したりとか、えー、ま、そういう",
+      "start_seconds": 884.12,
+      "end_seconds": 890.399
+    },
+    {
+      "text": "環境を整えるそういうことしかできません",
+      "start_seconds": 888.12,
+      "end_seconds": 892.36
+    },
+    {
+      "text": "でした。",
+      "start_seconds": 890.399,
+      "end_seconds": 897.72
+    },
+    {
+      "text": "ただ結局子供たちはこ友達に聞いたり、",
+      "start_seconds": 892.36,
+      "end_seconds": 901.04
+    },
+    {
+      "text": "学校のカウンセラーに聞いたり塾の先生に",
+      "start_seconds": 897.72,
+      "end_seconds": 906.0
+    },
+    {
+      "text": "聞いたりしながら勝手に勉強してそして",
+      "start_seconds": 901.04,
+      "end_seconds": 909.48
+    },
+    {
+      "text": "先ほどで言うと親が勝手に期待してたん",
+      "start_seconds": 906.0,
+      "end_seconds": 913.0
+    },
+    {
+      "text": "ですけども私たち私の期待した以上の学校",
+      "start_seconds": 909.48,
+      "end_seconds": 918.16
+    },
+    {
+      "text": "に入ってえ入っていくことになりました。",
+      "start_seconds": 913.0,
+      "end_seconds": 919.839
+    },
+    {
+      "text": "手放す",
+      "start_seconds": 918.16,
+      "end_seconds": 923.079
+    },
+    {
+      "text": "というのは単に",
+      "start_seconds": 919.839,
+      "end_seconds": 926.0790000000001
+    },
+    {
+      "text": "任せることではない。",
+      "start_seconds": 923.079,
+      "end_seconds": 930.519
+    },
+    {
+      "text": "手放すというのは自分が挑戦する没頭して",
+      "start_seconds": 926.079,
+      "end_seconds": 934.519
+    },
+    {
+      "text": "挑戦する姿を見せ続けること",
+      "start_seconds": 930.519,
+      "end_seconds": 937.36
+    },
+    {
+      "text": "だと思っています。",
+      "start_seconds": 934.519,
+      "end_seconds": 939.12
+    },
+    {
+      "text": "人は",
+      "start_seconds": 937.36,
+      "end_seconds": 941.759
+    },
+    {
+      "text": "言われた通りには動かない。お父さんが",
+      "start_seconds": 939.12,
+      "end_seconds": 945.6
+    },
+    {
+      "text": "言う、上司が言う。それでは動かない。人",
+      "start_seconds": 941.759,
+      "end_seconds": 949.92
+    },
+    {
+      "text": "は見た通りに動く。",
+      "start_seconds": 945.6,
+      "end_seconds": 949.9200000000001
+    },
+    {
+      "text": "つまりそういった人たちが挑戦している姿",
+      "start_seconds": 950.12,
+      "end_seconds": 957.8
+    },
+    {
+      "text": "、それもセットになって自分も頑張ろう",
+      "start_seconds": 953.399,
+      "end_seconds": 959.48
+    },
+    {
+      "text": "やってやろうそういうもんになってくるん",
+      "start_seconds": 957.8,
+      "end_seconds": 962.56
+    },
+    {
+      "text": "ですね。",
+      "start_seconds": 959.48,
+      "end_seconds": 967.5600000000001
+    },
+    {
+      "text": "ですので私も今手放すという挑戦をし続け",
+      "start_seconds": 962.56,
+      "end_seconds": 971.6389999999999
+    },
+    {
+      "text": "てます。それによってみんなが成長し、",
+      "start_seconds": 967.56,
+      "end_seconds": 976.16
+    },
+    {
+      "text": "自分もまた新しい部隊に、え、舞台で成長",
+      "start_seconds": 971.639,
+      "end_seconds": 980.199
+    },
+    {
+      "text": "するとこういった場を、え、与えられて",
+      "start_seconds": 976.16,
+      "end_seconds": 983.88
+    },
+    {
+      "text": "いるわけです。その姿を家族であったりと",
+      "start_seconds": 980.199,
+      "end_seconds": 987.199
+    },
+    {
+      "text": "か、会社の人であったりとか、また皆さん",
+      "start_seconds": 983.88,
+      "end_seconds": 989.24
+    },
+    {
+      "text": "であったりとか、そういう人に見せ続ける",
+      "start_seconds": 987.199,
+      "end_seconds": 991.8389999999999
+    },
+    {
+      "text": "こと、このことが非常に重要だと思って",
+      "start_seconds": 989.24,
+      "end_seconds": 995.12
+    },
+    {
+      "text": "おります。",
+      "start_seconds": 991.839,
+      "end_seconds": 995.12
+    },
+    {
+      "text": "最後になりますけども、今日この話を聞い",
+      "start_seconds": 995.24,
+      "end_seconds": 1004.04
+    },
+    {
+      "text": "て何か参考になったなと思いましたら是非",
+      "start_seconds": 998.16,
+      "end_seconds": 1009.04
+    },
+    {
+      "text": "職場でも家でも何か1つ手放してみて",
+      "start_seconds": 1004.04,
+      "end_seconds": 1012.959
+    },
+    {
+      "text": "ください。小さなことでも大丈夫です。",
+      "start_seconds": 1009.04,
+      "end_seconds": 1017.16
+    },
+    {
+      "text": "ただですね、家事を手放しました。その",
+      "start_seconds": 1012.959,
+      "end_seconds": 1019.88
+    },
+    {
+      "text": "代わり自分はワールドカップ見るのに没頭",
+      "start_seconds": 1017.16,
+      "end_seconds": 1022.88
+    },
+    {
+      "text": "します。こんなことを言うとですね、",
+      "start_seconds": 1019.88,
+      "end_seconds": 1025.0
+    },
+    {
+      "text": "ちょっと大きな問題になると思いますので",
+      "start_seconds": 1022.88,
+      "end_seconds": 1028.12
+    },
+    {
+      "text": "、そこは自己責任でやっていただければと",
+      "start_seconds": 1025.0,
+      "end_seconds": 1031.079
+    },
+    {
+      "text": "思います。ご清聴ありがとうございました",
+      "start_seconds": 1028.12,
+      "end_seconds": 1034.311
+    },
+    {
+      "text": "。[拍手]",
+      "start_seconds": 1031.079,
+      "end_seconds": 1034.311
+    }
+  ],
+  "display_captions": [
+    {
+      "text": "[拍手]",
+      "start_seconds": 1.309,
+      "end_seconds": 3.3289999999999997,
+      "id": "eGuF3Z0EaPc-display-0001",
+      "segment_id": "eGuF3Z0EaPc-ja-0001"
+    },
+    {
+      "text": "皆さん、ちょっと想像してみてください。",
+      "start_seconds": 6.399,
+      "end_seconds": 10.639,
+      "id": "eGuF3Z0EaPc-display-0002",
+      "segment_id": "eGuF3Z0EaPc-ja-0002"
+    },
+    {
+      "text": "皆さんは、え、経営者です。",
+      "start_seconds": 10.639,
+      "end_seconds": 13.92,
+      "id": "eGuF3Z0EaPc-display-0003",
+      "segment_id": "eGuF3Z0EaPc-ja-0003"
+    },
+    {
+      "text": "非常に優秀な人材を採用できました。",
+      "start_seconds": 13.92,
+      "end_seconds": 18.76,
+      "id": "eGuF3Z0EaPc-display-0004",
+      "segment_id": "eGuF3Z0EaPc-ja-0004"
+    },
+    {
+      "text": "価値観も合ってる、条件もいい、周りの人",
+      "start_seconds": 18.76,
+      "end_seconds": 22.72,
+      "id": "eGuF3Z0EaPc-display-0005",
+      "segment_id": "eGuF3Z0EaPc-ja-0005"
+    },
+    {
+      "text": "もいい。ある日、私が彼に訪ねました。",
+      "start_seconds": 22.72,
+      "end_seconds": 28.039,
+      "id": "eGuF3Z0EaPc-display-0006",
+      "segment_id": "eGuF3Z0EaPc-ja-0005"
+    },
+    {
+      "text": "今日うちの会社いいでしょ?",
+      "start_seconds": 28.039,
+      "end_seconds": 32.599,
+      "id": "eGuF3Z0EaPc-display-0007",
+      "segment_id": "eGuF3Z0EaPc-ja-0006"
+    },
+    {
+      "text": "社長実はやめたいと思ってるんです。オー",
+      "start_seconds": 32.599,
+      "end_seconds": 37.16,
+      "id": "eGuF3Z0EaPc-display-0008",
+      "segment_id": "eGuF3Z0EaPc-ja-0007"
+    },
+    {
+      "text": "マイガー。",
+      "start_seconds": 37.16,
+      "end_seconds": 40.52,
+      "id": "eGuF3Z0EaPc-display-0009",
+      "segment_id": "eGuF3Z0EaPc-ja-0007"
+    },
+    {
+      "text": "もう1つ",
+      "start_seconds": 40.52,
+      "end_seconds": 43.079,
+      "id": "eGuF3Z0EaPc-display-0010",
+      "segment_id": "eGuF3Z0EaPc-ja-0008"
+    },
+    {
+      "text": "今日ここにいらっしゃる皆さん、親子さん",
+      "start_seconds": 43.079,
+      "end_seconds": 45.68,
+      "id": "eGuF3Z0EaPc-display-0011",
+      "segment_id": "eGuF3Z0EaPc-ja-0008"
+    },
+    {
+      "text": "多いと思います。",
+      "start_seconds": 45.68,
+      "end_seconds": 48.28,
+      "id": "eGuF3Z0EaPc-display-0012",
+      "segment_id": "eGuF3Z0EaPc-ja-0008"
+    },
+    {
+      "text": "いい学校にも通せ、塾にも通せ投資をして",
+      "start_seconds": 48.28,
+      "end_seconds": 51.52,
+      "id": "eGuF3Z0EaPc-display-0013",
+      "segment_id": "eGuF3Z0EaPc-ja-0009"
+    },
+    {
+      "text": "います。そんな子供が勉強してる時にどう",
+      "start_seconds": 51.52,
+      "end_seconds": 55.44,
+      "id": "eGuF3Z0EaPc-display-0014",
+      "segment_id": "eGuF3Z0EaPc-ja-0009"
+    },
+    {
+      "text": "勉強している?",
+      "start_seconds": 55.44,
+      "end_seconds": 57.68,
+      "id": "eGuF3Z0EaPc-display-0015",
+      "segment_id": "eGuF3Z0EaPc-ja-0009"
+    },
+    {
+      "text": "パパうるさい。出てって。おおオーマイ",
+      "start_seconds": 57.68,
+      "end_seconds": 61.239,
+      "id": "eGuF3Z0EaPc-display-0016",
+      "segment_id": "eGuF3Z0EaPc-ja-0010"
+    },
+    {
+      "text": "ガー。",
+      "start_seconds": 61.239,
+      "end_seconds": 64.44,
+      "id": "eGuF3Z0EaPc-display-0017",
+      "segment_id": "eGuF3Z0EaPc-ja-0010"
+    },
+    {
+      "text": "この2つに共通していることは",
+      "start_seconds": 64.96,
+      "end_seconds": 67.92,
+      "id": "eGuF3Z0EaPc-display-0018",
+      "segment_id": "eGuF3Z0EaPc-ja-0011"
+    },
+    {
+      "text": "コントロールしようとしすぎていること",
+      "start_seconds": 67.92,
+      "end_seconds": 69.92,
+      "id": "eGuF3Z0EaPc-display-0019",
+      "segment_id": "eGuF3Z0EaPc-ja-0011"
+    },
+    {
+      "text": "です。つまり手放そうとしてできてないと",
+      "start_seconds": 69.92,
+      "end_seconds": 75.119,
+      "id": "eGuF3Z0EaPc-display-0020",
+      "segment_id": "eGuF3Z0EaPc-ja-0011"
+    },
+    {
+      "text": "いうことです。",
+      "start_seconds": 75.119,
+      "end_seconds": 78.64,
+      "id": "eGuF3Z0EaPc-display-0021",
+      "segment_id": "eGuF3Z0EaPc-ja-0012"
+    },
+    {
+      "text": "私は今手放している最中です。私は今",
+      "start_seconds": 81.04,
+      "end_seconds": 87.079,
+      "id": "eGuF3Z0EaPc-display-0022",
+      "segment_id": "eGuF3Z0EaPc-ja-0013"
+    },
+    {
+      "text": "アメリカカリフォルニアのシリコンバレー",
+      "start_seconds": 87.079,
+      "end_seconds": 89.32,
+      "id": "eGuF3Z0EaPc-display-0023",
+      "segment_id": "eGuF3Z0EaPc-ja-0013"
+    },
+    {
+      "text": "に住んでおり、アメリカフィリピン拠点が",
+      "start_seconds": 89.32,
+      "end_seconds": 92.72,
+      "id": "eGuF3Z0EaPc-display-0024",
+      "segment_id": "eGuF3Z0EaPc-ja-0013"
+    },
+    {
+      "text": "ありまして100名以上の従業員を抱えて",
+      "start_seconds": 92.72,
+      "end_seconds": 94.64,
+      "id": "eGuF3Z0EaPc-display-0025",
+      "segment_id": "eGuF3Z0EaPc-ja-0014"
+    },
+    {
+      "text": "おります。",
+      "start_seconds": 94.64,
+      "end_seconds": 97.24,
+      "id": "eGuF3Z0EaPc-display-0026",
+      "segment_id": "eGuF3Z0EaPc-ja-0014"
+    },
+    {
+      "text": "最初この会社を作った時は自分がリーダー",
+      "start_seconds": 97.24,
+      "end_seconds": 100.56,
+      "id": "eGuF3Z0EaPc-display-0027",
+      "segment_id": "eGuF3Z0EaPc-ja-0015"
+    },
+    {
+      "text": "であって自分が引っ張っていこうそんな",
+      "start_seconds": 100.56,
+      "end_seconds": 103.439,
+      "id": "eGuF3Z0EaPc-display-0028",
+      "segment_id": "eGuF3Z0EaPc-ja-0015"
+    },
+    {
+      "text": "思いで会社を運営していました。",
+      "start_seconds": 103.439,
+      "end_seconds": 108.68,
+      "id": "eGuF3Z0EaPc-display-0029",
+      "segment_id": "eGuF3Z0EaPc-ja-0015"
+    },
+    {
+      "text": "ただ今は",
+      "start_seconds": 108.68,
+      "end_seconds": 112.04,
+      "id": "eGuF3Z0EaPc-display-0030",
+      "segment_id": "eGuF3Z0EaPc-ja-0016"
+    },
+    {
+      "text": "信頼できる周りの人に任せて私なしで回る",
+      "start_seconds": 112.04,
+      "end_seconds": 117.24,
+      "id": "eGuF3Z0EaPc-display-0031",
+      "segment_id": "eGuF3Z0EaPc-ja-0016"
+    },
+    {
+      "text": "仕組みを作ってそして会社が社長なしで",
+      "start_seconds": 117.24,
+      "end_seconds": 121.24,
+      "id": "eGuF3Z0EaPc-display-0032",
+      "segment_id": "eGuF3Z0EaPc-ja-0017"
+    },
+    {
+      "text": "回るようになっています。ですので私は",
+      "start_seconds": 121.24,
+      "end_seconds": 125.84,
+      "id": "eGuF3Z0EaPc-display-0033",
+      "segment_id": "eGuF3Z0EaPc-ja-0017"
+    },
+    {
+      "text": "今日こういった場で私にとって新しい",
+      "start_seconds": 125.84,
+      "end_seconds": 129.16,
+      "id": "eGuF3Z0EaPc-display-0034",
+      "segment_id": "eGuF3Z0EaPc-ja-0017"
+    },
+    {
+      "text": "チャレンジさせてもらってます。そんな",
+      "start_seconds": 129.16,
+      "end_seconds": 132.599,
+      "id": "eGuF3Z0EaPc-display-0035",
+      "segment_id": "eGuF3Z0EaPc-ja-0018"
+    },
+    {
+      "text": "自分の人生を振り返った時に",
+      "start_seconds": 132.599,
+      "end_seconds": 136.16,
+      "id": "eGuF3Z0EaPc-display-0036",
+      "segment_id": "eGuF3Z0EaPc-ja-0018"
+    },
+    {
+      "text": "私は手放しの連続でした。",
+      "start_seconds": 136.16,
+      "end_seconds": 140.28,
+      "id": "eGuF3Z0EaPc-display-0037",
+      "segment_id": "eGuF3Z0EaPc-ja-0018"
+    },
+    {
+      "text": "例えば高校生の時アメリカで勉強したい。",
+      "start_seconds": 140.28,
+      "end_seconds": 145.4,
+      "id": "eGuF3Z0EaPc-display-0038",
+      "segment_id": "eGuF3Z0EaPc-ja-0019"
+    },
+    {
+      "text": "そしてアメリカの高校を受けました。実際",
+      "start_seconds": 145.4,
+      "end_seconds": 147.879,
+      "id": "eGuF3Z0EaPc-display-0039",
+      "segment_id": "eGuF3Z0EaPc-ja-0020"
+    },
+    {
+      "text": "受かったんですね。受かったんで日本の",
+      "start_seconds": 147.879,
+      "end_seconds": 150.48,
+      "id": "eGuF3Z0EaPc-display-0040",
+      "segment_id": "eGuF3Z0EaPc-ja-0020"
+    },
+    {
+      "text": "高校を退学して実際にま、行こうと思った",
+      "start_seconds": 150.48,
+      "end_seconds": 154.16,
+      "id": "eGuF3Z0EaPc-display-0041",
+      "segment_id": "eGuF3Z0EaPc-ja-0020"
+    },
+    {
+      "text": "んですけども最後の最後でお金がなくて",
+      "start_seconds": 154.16,
+      "end_seconds": 156.599,
+      "id": "eGuF3Z0EaPc-display-0042",
+      "segment_id": "eGuF3Z0EaPc-ja-0020"
+    },
+    {
+      "text": "行けなかったんですね。え、手放し失敗で",
+      "start_seconds": 156.599,
+      "end_seconds": 159.84,
+      "id": "eGuF3Z0EaPc-display-0043",
+      "segment_id": "eGuF3Z0EaPc-ja-0021"
+    },
+    {
+      "text": "ございます。ただ高校生の時から日本の",
+      "start_seconds": 159.84,
+      "end_seconds": 163.4,
+      "id": "eGuF3Z0EaPc-display-0044",
+      "segment_id": "eGuF3Z0EaPc-ja-0021"
+    },
+    {
+      "text": "レールというのを手放そうとしました。",
+      "start_seconds": 163.4,
+      "end_seconds": 168.319,
+      "id": "eGuF3Z0EaPc-display-0045",
+      "segment_id": "eGuF3Z0EaPc-ja-0021"
+    },
+    {
+      "text": "2つ目は大企業での経験、大企業という",
+      "start_seconds": 168.319,
+      "end_seconds": 172.44,
+      "id": "eGuF3Z0EaPc-display-0046",
+      "segment_id": "eGuF3Z0EaPc-ja-0022"
+    },
+    {
+      "text": "レールを手放しました。",
+      "start_seconds": 172.44,
+      "end_seconds": 175.84,
+      "id": "eGuF3Z0EaPc-display-0047",
+      "segment_id": "eGuF3Z0EaPc-ja-0022"
+    },
+    {
+      "text": "そこそこ有名な企業で安定していて海外",
+      "start_seconds": 175.84,
+      "end_seconds": 179.84,
+      "id": "eGuF3Z0EaPc-display-0048",
+      "segment_id": "eGuF3Z0EaPc-ja-0023"
+    },
+    {
+      "text": "部門もただ人数が多い、責任は少ない。",
+      "start_seconds": 179.84,
+      "end_seconds": 183.519,
+      "id": "eGuF3Z0EaPc-display-0049",
+      "segment_id": "eGuF3Z0EaPc-ja-0023"
+    },
+    {
+      "text": "少し時間がかかるかなと思いましてその",
+      "start_seconds": 183.519,
+      "end_seconds": 186.36,
+      "id": "eGuF3Z0EaPc-display-0050",
+      "segment_id": "eGuF3Z0EaPc-ja-0024"
+    },
+    {
+      "text": "レールをました。",
+      "start_seconds": 186.36,
+      "end_seconds": 190.799,
+      "id": "eGuF3Z0EaPc-display-0051",
+      "segment_id": "eGuF3Z0EaPc-ja-0024"
+    },
+    {
+      "text": "3番目は企業です。",
+      "start_seconds": 192.0,
+      "end_seconds": 196.319,
+      "id": "eGuF3Z0EaPc-display-0052",
+      "segment_id": "eGuF3Z0EaPc-ja-0025"
+    },
+    {
+      "text": "起業というのは雇われるというレールを",
+      "start_seconds": 196.319,
+      "end_seconds": 199.519,
+      "id": "eGuF3Z0EaPc-display-0053",
+      "segment_id": "eGuF3Z0EaPc-ja-0026"
+    },
+    {
+      "text": "降りることです。そして自分でレールを",
+      "start_seconds": 199.519,
+      "end_seconds": 202.92,
+      "id": "eGuF3Z0EaPc-display-0054",
+      "segment_id": "eGuF3Z0EaPc-ja-0026"
+    },
+    {
+      "text": "敷いていくということです。ですので私は",
+      "start_seconds": 202.92,
+      "end_seconds": 206.959,
+      "id": "eGuF3Z0EaPc-display-0055",
+      "segment_id": "eGuF3Z0EaPc-ja-0026"
+    },
+    {
+      "text": "自分の夢を叶えるために自分でレールを",
+      "start_seconds": 206.959,
+      "end_seconds": 209.4,
+      "id": "eGuF3Z0EaPc-display-0056",
+      "segment_id": "eGuF3Z0EaPc-ja-0027"
+    },
+    {
+      "text": "敷いていこうなので雇われるんじゃなくて",
+      "start_seconds": 209.4,
+      "end_seconds": 212.439,
+      "id": "eGuF3Z0EaPc-display-0057",
+      "segment_id": "eGuF3Z0EaPc-ja-0027"
+    },
+    {
+      "text": "自分で会社を作る。そういった決意をして",
+      "start_seconds": 212.439,
+      "end_seconds": 215.56,
+      "id": "eGuF3Z0EaPc-display-0058",
+      "segment_id": "eGuF3Z0EaPc-ja-0027"
+    },
+    {
+      "text": "それがきっかけで起業しました。",
+      "start_seconds": 215.56,
+      "end_seconds": 220.239,
+      "id": "eGuF3Z0EaPc-display-0059",
+      "segment_id": "eGuF3Z0EaPc-ja-0028"
+    },
+    {
+      "text": "そして4つ目、夢叶い10年前、2016",
+      "start_seconds": 221.04,
+      "end_seconds": 225.519,
+      "id": "eGuF3Z0EaPc-display-0060",
+      "segment_id": "eGuF3Z0EaPc-ja-0029"
+    },
+    {
+      "text": "年会社を大きくしてアメリカに進出という",
+      "start_seconds": 225.519,
+      "end_seconds": 229.48,
+      "id": "eGuF3Z0EaPc-display-0061",
+      "segment_id": "eGuF3Z0EaPc-ja-0029"
+    },
+    {
+      "text": "形で家族5人と犬1匹連れてアメリカ",
+      "start_seconds": 229.48,
+      "end_seconds": 235.12,
+      "id": "eGuF3Z0EaPc-display-0062",
+      "segment_id": "eGuF3Z0EaPc-ja-0030"
+    },
+    {
+      "text": "カリフォルニアの方に移住をしました。",
+      "start_seconds": 235.12,
+      "end_seconds": 238.599,
+      "id": "eGuF3Z0EaPc-display-0063",
+      "segment_id": "eGuF3Z0EaPc-ja-0030"
+    },
+    {
+      "text": "これは今まで慣れしんできた言葉、文化、",
+      "start_seconds": 238.599,
+      "end_seconds": 243.239,
+      "id": "eGuF3Z0EaPc-display-0064",
+      "segment_id": "eGuF3Z0EaPc-ja-0031"
+    },
+    {
+      "text": "食べ物、そういった日本というものを",
+      "start_seconds": 243.239,
+      "end_seconds": 245.68,
+      "id": "eGuF3Z0EaPc-display-0065",
+      "segment_id": "eGuF3Z0EaPc-ja-0031"
+    },
+    {
+      "text": "手放してアメリカでチャレンジをすると",
+      "start_seconds": 245.68,
+      "end_seconds": 248.28,
+      "id": "eGuF3Z0EaPc-display-0066",
+      "segment_id": "eGuF3Z0EaPc-ja-0031"
+    },
+    {
+      "text": "いうものでした。手放す。確かに",
+      "start_seconds": 248.28,
+      "end_seconds": 253.439,
+      "id": "eGuF3Z0EaPc-display-0067",
+      "segment_id": "eGuF3Z0EaPc-ja-0032"
+    },
+    {
+      "text": "言葉で聞くとできるかもしれないんです",
+      "start_seconds": 253.439,
+      "end_seconds": 255.599,
+      "id": "eGuF3Z0EaPc-display-0068",
+      "segment_id": "eGuF3Z0EaPc-ja-0032"
+    },
+    {
+      "text": "けども、実は毎回毎回本当に怖かったん",
+      "start_seconds": 255.599,
+      "end_seconds": 258.56,
+      "id": "eGuF3Z0EaPc-display-0069",
+      "segment_id": "eGuF3Z0EaPc-ja-0032"
+    },
+    {
+      "text": "です。起業した時は3ヶ月目でもう",
+      "start_seconds": 258.56,
+      "end_seconds": 263.84,
+      "id": "eGuF3Z0EaPc-display-0070",
+      "segment_id": "eGuF3Z0EaPc-ja-0033"
+    },
+    {
+      "text": "倒産の危機。そんな時はなんでこんなこと",
+      "start_seconds": 263.84,
+      "end_seconds": 267.919,
+      "id": "eGuF3Z0EaPc-display-0071",
+      "segment_id": "eGuF3Z0EaPc-ja-0033"
+    },
+    {
+      "text": "やっちゃったんだ。そんな後悔の連続です",
+      "start_seconds": 267.919,
+      "end_seconds": 271.44,
+      "id": "eGuF3Z0EaPc-display-0072",
+      "segment_id": "eGuF3Z0EaPc-ja-0034"
+    },
+    {
+      "text": "ね。こんなネールを続けた私は経営者とし",
+      "start_seconds": 271.44,
+      "end_seconds": 276.16,
+      "id": "eGuF3Z0EaPc-display-0073",
+      "segment_id": "eGuF3Z0EaPc-ja-0034"
+    },
+    {
+      "text": "て親としては手放すいったものはあんまり",
+      "start_seconds": 276.16,
+      "end_seconds": 280.72,
+      "id": "eGuF3Z0EaPc-display-0074",
+      "segment_id": "eGuF3Z0EaPc-ja-0035"
+    },
+    {
+      "text": "うまくありませんでした。会社では自分が",
+      "start_seconds": 280.72,
+      "end_seconds": 285.039,
+      "id": "eGuF3Z0EaPc-display-0075",
+      "segment_id": "eGuF3Z0EaPc-ja-0035"
+    },
+    {
+      "text": "全部決めていく",
+      "start_seconds": 285.039,
+      "end_seconds": 287.84,
+      "id": "eGuF3Z0EaPc-display-0076",
+      "segment_id": "eGuF3Z0EaPc-ja-0035"
+    },
+    {
+      "text": "意見を出していくもちろん作業もやる。",
+      "start_seconds": 287.84,
+      "end_seconds": 290.4,
+      "id": "eGuF3Z0EaPc-display-0077",
+      "segment_id": "eGuF3Z0EaPc-ja-0036"
+    },
+    {
+      "text": "あらゆるものに目を配らしてそして細かい",
+      "start_seconds": 290.4,
+      "end_seconds": 293.759,
+      "id": "eGuF3Z0EaPc-display-0078",
+      "segment_id": "eGuF3Z0EaPc-ja-0037"
+    },
+    {
+      "text": "ことに口を出していきました。",
+      "start_seconds": 293.759,
+      "end_seconds": 297.639,
+      "id": "eGuF3Z0EaPc-display-0079",
+      "segment_id": "eGuF3Z0EaPc-ja-0037"
+    },
+    {
+      "text": "例えばミーティングがある時は、ま、",
+      "start_seconds": 297.639,
+      "end_seconds": 301.759,
+      "id": "eGuF3Z0EaPc-display-0080",
+      "segment_id": "eGuF3Z0EaPc-ja-0038"
+    },
+    {
+      "text": "こんなこと私言うわけですよね。皆さん、",
+      "start_seconds": 301.759,
+      "end_seconds": 304.919,
+      "id": "eGuF3Z0EaPc-display-0081",
+      "segment_id": "eGuF3Z0EaPc-ja-0038"
+    },
+    {
+      "text": "もうどんどん自分のいいこと、思ったこと",
+      "start_seconds": 304.919,
+      "end_seconds": 308.0,
+      "id": "eGuF3Z0EaPc-display-0082",
+      "segment_id": "eGuF3Z0EaPc-ja-0038"
+    },
+    {
+      "text": "言っていいよ。",
+      "start_seconds": 308.0,
+      "end_seconds": 311.0,
+      "id": "eGuF3Z0EaPc-display-0083",
+      "segment_id": "eGuF3Z0EaPc-ja-0039"
+    },
+    {
+      "text": "ま、最終的にはですね、私の思ったように",
+      "start_seconds": 311.0,
+      "end_seconds": 313.84,
+      "id": "eGuF3Z0EaPc-display-0084",
+      "segment_id": "eGuF3Z0EaPc-ja-0040"
+    },
+    {
+      "text": "なっちゃうんですけども、こんな会社に",
+      "start_seconds": 313.84,
+      "end_seconds": 315.72,
+      "id": "eGuF3Z0EaPc-display-0085",
+      "segment_id": "eGuF3Z0EaPc-ja-0040"
+    },
+    {
+      "text": "いるとですね、冒頭のように人はやめてっ",
+      "start_seconds": 315.72,
+      "end_seconds": 318.52,
+      "id": "eGuF3Z0EaPc-display-0086",
+      "segment_id": "eGuF3Z0EaPc-ja-0040"
+    },
+    {
+      "text": "ちゃうんですね。",
+      "start_seconds": 318.52,
+      "end_seconds": 321.88,
+      "id": "eGuF3Z0EaPc-display-0087",
+      "segment_id": "eGuF3Z0EaPc-ja-0040"
+    },
+    {
+      "text": "子育てでも全く同じでした。",
+      "start_seconds": 322.36,
+      "end_seconds": 325.84,
+      "id": "eGuF3Z0EaPc-display-0088",
+      "segment_id": "eGuF3Z0EaPc-ja-0041"
+    },
+    {
+      "text": "長男の中学受験、",
+      "start_seconds": 325.84,
+      "end_seconds": 329.28,
+      "id": "eGuF3Z0EaPc-display-0089",
+      "segment_id": "eGuF3Z0EaPc-ja-0042"
+    },
+    {
+      "text": "この中学を目指そう。そのためにはこう",
+      "start_seconds": 329.28,
+      "end_seconds": 332.84,
+      "id": "eGuF3Z0EaPc-display-0090",
+      "segment_id": "eGuF3Z0EaPc-ja-0042"
+    },
+    {
+      "text": "いう風に勉強した方がいいよなんて自分が",
+      "start_seconds": 332.84,
+      "end_seconds": 335.72,
+      "id": "eGuF3Z0EaPc-display-0091",
+      "segment_id": "eGuF3Z0EaPc-ja-0042"
+    },
+    {
+      "text": "決めちゃったりしてるんですよね。そして",
+      "start_seconds": 335.72,
+      "end_seconds": 339.72,
+      "id": "eGuF3Z0EaPc-display-0092",
+      "segment_id": "eGuF3Z0EaPc-ja-0043"
+    },
+    {
+      "text": "合格するには",
+      "start_seconds": 339.72,
+      "end_seconds": 342.68,
+      "id": "eGuF3Z0EaPc-display-0093",
+      "segment_id": "eGuF3Z0EaPc-ja-0043"
+    },
+    {
+      "text": "合格したい大中学の名前を紙に書いて机の",
+      "start_seconds": 342.68,
+      "end_seconds": 348.56,
+      "id": "eGuF3Z0EaPc-display-0094",
+      "segment_id": "eGuF3Z0EaPc-ja-0044"
+    },
+    {
+      "text": "前にえ張ってそれを毎日見る。そうすれば",
+      "start_seconds": 348.56,
+      "end_seconds": 352.56,
+      "id": "eGuF3Z0EaPc-display-0095",
+      "segment_id": "eGuF3Z0EaPc-ja-0044"
+    },
+    {
+      "text": "合格で生きる。夢は叶う。そんなような",
+      "start_seconds": 352.56,
+      "end_seconds": 355.319,
+      "id": "eGuF3Z0EaPc-display-0096",
+      "segment_id": "eGuF3Z0EaPc-ja-0045"
+    },
+    {
+      "text": "ことを言ってたんですね。",
+      "start_seconds": 355.319,
+      "end_seconds": 358.16,
+      "id": "eGuF3Z0EaPc-display-0097",
+      "segment_id": "eGuF3Z0EaPc-ja-0045"
+    },
+    {
+      "text": "で、実際子供が見てたのはその目の前の紙",
+      "start_seconds": 358.16,
+      "end_seconds": 361.319,
+      "id": "eGuF3Z0EaPc-display-0098",
+      "segment_id": "eGuF3Z0EaPc-ja-0046"
+    },
+    {
+      "text": "ではなくてスマホの画面を見てました。",
+      "start_seconds": 361.319,
+      "end_seconds": 365.6,
+      "id": "eGuF3Z0EaPc-display-0099",
+      "segment_id": "eGuF3Z0EaPc-ja-0046"
+    },
+    {
+      "text": "結局子供は子供の目死んでいました。",
+      "start_seconds": 365.6,
+      "end_seconds": 371.16,
+      "id": "eGuF3Z0EaPc-display-0100",
+      "segment_id": "eGuF3Z0EaPc-ja-0047"
+    },
+    {
+      "text": "そして親が勝手に、え、期待した学校、",
+      "start_seconds": 371.16,
+      "end_seconds": 375.639,
+      "id": "eGuF3Z0EaPc-display-0101",
+      "segment_id": "eGuF3Z0EaPc-ja-0048"
+    },
+    {
+      "text": "そういったものとはほどい結果になり、",
+      "start_seconds": 375.639,
+      "end_seconds": 378.8,
+      "id": "eGuF3Z0EaPc-display-0102",
+      "segment_id": "eGuF3Z0EaPc-ja-0048"
+    },
+    {
+      "text": "地元の学校に入ってきました。",
+      "start_seconds": 378.8,
+      "end_seconds": 383.199,
+      "id": "eGuF3Z0EaPc-display-0103",
+      "segment_id": "eGuF3Z0EaPc-ja-0049"
+    },
+    {
+      "text": "この2つに共通しているのはコントロール",
+      "start_seconds": 383.199,
+      "end_seconds": 386.16,
+      "id": "eGuF3Z0EaPc-display-0104",
+      "segment_id": "eGuF3Z0EaPc-ja-0050"
+    },
+    {
+      "text": "しすぎていたということなんです。",
+      "start_seconds": 386.16,
+      "end_seconds": 391.039,
+      "id": "eGuF3Z0EaPc-display-0105",
+      "segment_id": "eGuF3Z0EaPc-ja-0050"
+    },
+    {
+      "text": "実は私経営者としてコーチがいました。",
+      "start_seconds": 391.039,
+      "end_seconds": 395.0,
+      "id": "eGuF3Z0EaPc-display-0106",
+      "segment_id": "eGuF3Z0EaPc-ja-0051"
+    },
+    {
+      "text": "その工事に相談したんです。そしたら言わ",
+      "start_seconds": 395.0,
+      "end_seconds": 397.88,
+      "id": "eGuF3Z0EaPc-display-0107",
+      "segment_id": "eGuF3Z0EaPc-ja-0052"
+    },
+    {
+      "text": "れました。あなたは",
+      "start_seconds": 397.88,
+      "end_seconds": 401.4,
+      "id": "eGuF3Z0EaPc-display-0108",
+      "segment_id": "eGuF3Z0EaPc-ja-0052"
+    },
+    {
+      "text": "従業員子供の成長をあなたが出ていくこと",
+      "start_seconds": 401.4,
+      "end_seconds": 405.639,
+      "id": "eGuF3Z0EaPc-display-0109",
+      "segment_id": "eGuF3Z0EaPc-ja-0052"
+    },
+    {
+      "text": "によって阻害している。奪っているんだ。",
+      "start_seconds": 405.639,
+      "end_seconds": 410.759,
+      "id": "eGuF3Z0EaPc-display-0110",
+      "segment_id": "eGuF3Z0EaPc-ja-0053"
+    },
+    {
+      "text": "え、いや、僕は子供のことを考えて、いや",
+      "start_seconds": 410.759,
+      "end_seconds": 414.36,
+      "id": "eGuF3Z0EaPc-display-0111",
+      "segment_id": "eGuF3Z0EaPc-ja-0054"
+    },
+    {
+      "text": "、メンバーのことを考えて、それでよかれ",
+      "start_seconds": 414.36,
+      "end_seconds": 418.0,
+      "id": "eGuF3Z0EaPc-display-0112",
+      "segment_id": "eGuF3Z0EaPc-ja-0054"
+    },
+    {
+      "text": "と思って言ってるんだよ。いやいや、それ",
+      "start_seconds": 418.0,
+      "end_seconds": 421.24,
+      "id": "eGuF3Z0EaPc-display-0113",
+      "segment_id": "eGuF3Z0EaPc-ja-0054"
+    },
+    {
+      "text": "はその人たちの成長を奪っているんだ。",
+      "start_seconds": 421.24,
+      "end_seconds": 425.24,
+      "id": "eGuF3Z0EaPc-display-0114",
+      "segment_id": "eGuF3Z0EaPc-ja-0055"
+    },
+    {
+      "text": "相当強烈な言葉でした。",
+      "start_seconds": 425.24,
+      "end_seconds": 429.4,
+      "id": "eGuF3Z0EaPc-display-0115",
+      "segment_id": "eGuF3Z0EaPc-ja-0056"
+    },
+    {
+      "text": "さすがに私もこれは手放さなきゃいけない",
+      "start_seconds": 429.4,
+      "end_seconds": 432.08,
+      "id": "eGuF3Z0EaPc-display-0116",
+      "segment_id": "eGuF3Z0EaPc-ja-0057"
+    },
+    {
+      "text": "と思いました。そしてそっから私の手放し",
+      "start_seconds": 432.08,
+      "end_seconds": 436.039,
+      "id": "eGuF3Z0EaPc-display-0117",
+      "segment_id": "eGuF3Z0EaPc-ja-0057"
+    },
+    {
+      "text": "ていく経営、そして子育てが始まっていっ",
+      "start_seconds": 436.039,
+      "end_seconds": 439.599,
+      "id": "eGuF3Z0EaPc-display-0118",
+      "segment_id": "eGuF3Z0EaPc-ja-0057"
+    },
+    {
+      "text": "たんです。",
+      "start_seconds": 439.599,
+      "end_seconds": 442.44,
+      "id": "eGuF3Z0EaPc-display-0119",
+      "segment_id": "eGuF3Z0EaPc-ja-0058"
+    },
+    {
+      "text": "そんな時、2020年、え、コロナ危機が",
+      "start_seconds": 444.28,
+      "end_seconds": 448.599,
+      "id": "eGuF3Z0EaPc-display-0120",
+      "segment_id": "eGuF3Z0EaPc-ja-0059"
+    },
+    {
+      "text": "起きました。そん中で私も会社どうなっ",
+      "start_seconds": 448.599,
+      "end_seconds": 453.36,
+      "id": "eGuF3Z0EaPc-display-0121",
+      "segment_id": "eGuF3Z0EaPc-ja-0059"
+    },
+    {
+      "text": "ちゃうんだろう。みんなも自分たちの生活",
+      "start_seconds": 453.36,
+      "end_seconds": 456.639,
+      "id": "eGuF3Z0EaPc-display-0122",
+      "segment_id": "eGuF3Z0EaPc-ja-0060"
+    },
+    {
+      "text": "どうなっちゃうんだろう。そんな不安が",
+      "start_seconds": 456.639,
+      "end_seconds": 458.52,
+      "id": "eGuF3Z0EaPc-display-0123",
+      "segment_id": "eGuF3Z0EaPc-ja-0060"
+    },
+    {
+      "text": "蔓延していました。我慢していた人に任せ",
+      "start_seconds": 458.52,
+      "end_seconds": 462.0,
+      "id": "eGuF3Z0EaPc-display-0124",
+      "segment_id": "eGuF3Z0EaPc-ja-0060"
+    },
+    {
+      "text": "ていた私が今こそリーダーが出てかなきゃ",
+      "start_seconds": 462.0,
+      "end_seconds": 465.159,
+      "id": "eGuF3Z0EaPc-display-0125",
+      "segment_id": "eGuF3Z0EaPc-ja-0060"
+    },
+    {
+      "text": "いけない自分の出番だと解決するぞという",
+      "start_seconds": 465.159,
+      "end_seconds": 469.72,
+      "id": "eGuF3Z0EaPc-display-0126",
+      "segment_id": "eGuF3Z0EaPc-ja-0061"
+    },
+    {
+      "text": "風に思ったんですね。",
+      "start_seconds": 469.72,
+      "end_seconds": 473.08,
+      "id": "eGuF3Z0EaPc-display-0127",
+      "segment_id": "eGuF3Z0EaPc-ja-0061"
+    },
+    {
+      "text": "ただそこでも止められました。社長今まで",
+      "start_seconds": 473.08,
+      "end_seconds": 478.8,
+      "id": "eGuF3Z0EaPc-display-0128",
+      "segment_id": "eGuF3Z0EaPc-ja-0062"
+    },
+    {
+      "text": "我慢して任せてきたじゃないですか。この",
+      "start_seconds": 478.8,
+      "end_seconds": 482.36,
+      "id": "eGuF3Z0EaPc-display-0129",
+      "segment_id": "eGuF3Z0EaPc-ja-0062"
+    },
+    {
+      "text": "1番難しい危機こそみんなに任せて、",
+      "start_seconds": 482.36,
+      "end_seconds": 487.12,
+      "id": "eGuF3Z0EaPc-display-0130",
+      "segment_id": "eGuF3Z0EaPc-ja-0063"
+    },
+    {
+      "text": "そしてみんなに頑張ってもらおう。そう",
+      "start_seconds": 487.12,
+      "end_seconds": 490.199,
+      "id": "eGuF3Z0EaPc-display-0131",
+      "segment_id": "eGuF3Z0EaPc-ja-0063"
+    },
+    {
+      "text": "いう風に言われました。",
+      "start_seconds": 490.199,
+      "end_seconds": 492.52,
+      "id": "eGuF3Z0EaPc-display-0132",
+      "segment_id": "eGuF3Z0EaPc-ja-0063"
+    },
+    {
+      "text": "え、",
+      "start_seconds": 492.52,
+      "end_seconds": 494.199,
+      "id": "eGuF3Z0EaPc-display-0133",
+      "segment_id": "eGuF3Z0EaPc-ja-0064"
+    },
+    {
+      "text": "会社なくなっちゃうかもしれない。倒産し",
+      "start_seconds": 494.199,
+      "end_seconds": 496.159,
+      "id": "eGuF3Z0EaPc-display-0134",
+      "segment_id": "eGuF3Z0EaPc-ja-0064"
+    },
+    {
+      "text": "ちゃうかもしれない。そんな恐怖に支配さ",
+      "start_seconds": 496.159,
+      "end_seconds": 498.52,
+      "id": "eGuF3Z0EaPc-display-0135",
+      "segment_id": "eGuF3Z0EaPc-ja-0064"
+    },
+    {
+      "text": "れました。ただそれでも任せることに",
+      "start_seconds": 498.52,
+      "end_seconds": 502.56,
+      "id": "eGuF3Z0EaPc-display-0136",
+      "segment_id": "eGuF3Z0EaPc-ja-0064"
+    },
+    {
+      "text": "決めるという覚悟をしたんです。すると皆",
+      "start_seconds": 502.56,
+      "end_seconds": 507.0,
+      "id": "eGuF3Z0EaPc-display-0137",
+      "segment_id": "eGuF3Z0EaPc-ja-0065"
+    },
+    {
+      "text": "さん色々考えてですね、セミナーっていう",
+      "start_seconds": 507.0,
+      "end_seconds": 510.44,
+      "id": "eGuF3Z0EaPc-display-0138",
+      "segment_id": "eGuF3Z0EaPc-ja-0065"
+    },
+    {
+      "text": "ものをこう対面で開いてやってたんです",
+      "start_seconds": 510.44,
+      "end_seconds": 512.56,
+      "id": "eGuF3Z0EaPc-display-0139",
+      "segment_id": "eGuF3Z0EaPc-ja-0065"
+    },
+    {
+      "text": "けども、それができないであれば",
+      "start_seconds": 512.56,
+      "end_seconds": 514.479,
+      "id": "eGuF3Z0EaPc-display-0140",
+      "segment_id": "eGuF3Z0EaPc-ja-0065"
+    },
+    {
+      "text": "ウェビナーオンライン上のセミナーを",
+      "start_seconds": 514.479,
+      "end_seconds": 516.279,
+      "id": "eGuF3Z0EaPc-display-0141",
+      "segment_id": "eGuF3Z0EaPc-ja-0066"
+    },
+    {
+      "text": "やろうとうちの会社50人ぐらい話せる人",
+      "start_seconds": 516.279,
+      "end_seconds": 519.719,
+      "id": "eGuF3Z0EaPc-display-0142",
+      "segment_id": "eGuF3Z0EaPc-ja-0066"
+    },
+    {
+      "text": "いるよね。だったらそれが全員登壇し",
+      "start_seconds": 519.719,
+      "end_seconds": 523.599,
+      "id": "eGuF3Z0EaPc-display-0143",
+      "segment_id": "eGuF3Z0EaPc-ja-0066"
+    },
+    {
+      "text": "ちゃう最大級のウェビナーをやってみよう",
+      "start_seconds": 523.599,
+      "end_seconds": 525.839,
+      "id": "eGuF3Z0EaPc-display-0144",
+      "segment_id": "eGuF3Z0EaPc-ja-0066"
+    },
+    {
+      "text": "。そんなアイデアが社員から出てきたん",
+      "start_seconds": 525.839,
+      "end_seconds": 528.68,
+      "id": "eGuF3Z0EaPc-display-0145",
+      "segment_id": "eGuF3Z0EaPc-ja-0067"
+    },
+    {
+      "text": "です。",
+      "start_seconds": 528.68,
+      "end_seconds": 530.519,
+      "id": "eGuF3Z0EaPc-display-0146",
+      "segment_id": "eGuF3Z0EaPc-ja-0067"
+    },
+    {
+      "text": "そして皆さん話した経験も",
+      "start_seconds": 530.519,
+      "end_seconds": 535.399,
+      "id": "eGuF3Z0EaPc-display-0147",
+      "segment_id": "eGuF3Z0EaPc-ja-0068"
+    },
+    {
+      "text": "ない。え、初めてスピーカーとして登場",
+      "start_seconds": 535.399,
+      "end_seconds": 538.12,
+      "id": "eGuF3Z0EaPc-display-0148",
+      "segment_id": "eGuF3Z0EaPc-ja-0068"
+    },
+    {
+      "text": "する人も本当に多かったです。",
+      "start_seconds": 538.12,
+      "end_seconds": 542.399,
+      "id": "eGuF3Z0EaPc-display-0149",
+      "segment_id": "eGuF3Z0EaPc-ja-0068"
+    },
+    {
+      "text": "ですが結果的には皆さん私なんかよりも",
+      "start_seconds": 542.399,
+      "end_seconds": 547.36,
+      "id": "eGuF3Z0EaPc-display-0150",
+      "segment_id": "eGuF3Z0EaPc-ja-0069"
+    },
+    {
+      "text": "上手にスピーチしてました。",
+      "start_seconds": 547.36,
+      "end_seconds": 551.8000000000001,
+      "id": "eGuF3Z0EaPc-display-0151",
+      "segment_id": "eGuF3Z0EaPc-ja-0069"
+    },
+    {
+      "text": "結果的には売上は30%",
+      "start_seconds": 553.279,
+      "end_seconds": 556.92,
+      "id": "eGuF3Z0EaPc-display-0152",
+      "segment_id": "eGuF3Z0EaPc-ja-0070"
+    },
+    {
+      "text": "この中で伸ばすことができました。大成功",
+      "start_seconds": 556.92,
+      "end_seconds": 559.88,
+      "id": "eGuF3Z0EaPc-display-0153",
+      "segment_id": "eGuF3Z0EaPc-ja-0070"
+    },
+    {
+      "text": "でした。",
+      "start_seconds": 559.88,
+      "end_seconds": 563.16,
+      "id": "eGuF3Z0EaPc-display-0154",
+      "segment_id": "eGuF3Z0EaPc-ja-0070"
+    },
+    {
+      "text": "このアイデアは私が考えてリーダーシップ",
+      "start_seconds": 564.12,
+      "end_seconds": 568.519,
+      "id": "eGuF3Z0EaPc-display-0155",
+      "segment_id": "eGuF3Z0EaPc-ja-0071"
+    },
+    {
+      "text": "を取っていたらおそらく出てこなかった",
+      "start_seconds": 568.519,
+      "end_seconds": 570.92,
+      "id": "eGuF3Z0EaPc-display-0156",
+      "segment_id": "eGuF3Z0EaPc-ja-0071"
+    },
+    {
+      "text": "アイデアでしょう。絶対出てこなかった",
+      "start_seconds": 570.92,
+      "end_seconds": 572.76,
+      "id": "eGuF3Z0EaPc-display-0157",
+      "segment_id": "eGuF3Z0EaPc-ja-0071"
+    },
+    {
+      "text": "でしょ。皆さんに任したから出てきて、",
+      "start_seconds": 572.76,
+      "end_seconds": 576.839,
+      "id": "eGuF3Z0EaPc-display-0158",
+      "segment_id": "eGuF3Z0EaPc-ja-0072"
+    },
+    {
+      "text": "そしてそれをやった皆さんは大きく自信を",
+      "start_seconds": 576.839,
+      "end_seconds": 580.56,
+      "id": "eGuF3Z0EaPc-display-0159",
+      "segment_id": "eGuF3Z0EaPc-ja-0072"
+    },
+    {
+      "text": "持って成長していったんです。",
+      "start_seconds": 580.56,
+      "end_seconds": 584.8,
+      "id": "eGuF3Z0EaPc-display-0160",
+      "segment_id": "eGuF3Z0EaPc-ja-0073"
+    },
+    {
+      "text": "手放すことで今のように成長が起きます。",
+      "start_seconds": 587.2,
+      "end_seconds": 591.8,
+      "id": "eGuF3Z0EaPc-display-0161",
+      "segment_id": "eGuF3Z0EaPc-ja-0074"
+    },
+    {
+      "text": "ただ手放せばいいというわけではない。",
+      "start_seconds": 591.8,
+      "end_seconds": 597.399,
+      "id": "eGuF3Z0EaPc-display-0162",
+      "segment_id": "eGuF3Z0EaPc-ja-0075"
+    },
+    {
+      "text": "手放すには設計が必要だ。そういうことを",
+      "start_seconds": 597.399,
+      "end_seconds": 601.839,
+      "id": "eGuF3Z0EaPc-display-0163",
+      "segment_id": "eGuF3Z0EaPc-ja-0076"
+    },
+    {
+      "text": "私は経営者として親として",
+      "start_seconds": 601.839,
+      "end_seconds": 607.079,
+      "id": "eGuF3Z0EaPc-display-0164",
+      "segment_id": "eGuF3Z0EaPc-ja-0076"
+    },
+    {
+      "text": "実際にやってみてもがいてみてその間の",
+      "start_seconds": 607.079,
+      "end_seconds": 611.24,
+      "id": "eGuF3Z0EaPc-display-0165",
+      "segment_id": "eGuF3Z0EaPc-ja-0077"
+    },
+    {
+      "text": "設計が必要だと思ったんですね。",
+      "start_seconds": 611.24,
+      "end_seconds": 616.68,
+      "id": "eGuF3Z0EaPc-display-0166",
+      "segment_id": "eGuF3Z0EaPc-ja-0077"
+    },
+    {
+      "text": "ここで言う間とは何か?それは",
+      "start_seconds": 616.68,
+      "end_seconds": 622.48,
+      "id": "eGuF3Z0EaPc-display-0167",
+      "segment_id": "eGuF3Z0EaPc-ja-0078"
+    },
+    {
+      "text": "任せる側",
+      "start_seconds": 622.48,
+      "end_seconds": 625.04,
+      "id": "eGuF3Z0EaPc-display-0168",
+      "segment_id": "eGuF3Z0EaPc-ja-0078"
+    },
+    {
+      "text": "と任される側、この間に存在する間です。",
+      "start_seconds": 625.04,
+      "end_seconds": 632.279,
+      "id": "eGuF3Z0EaPc-display-0169",
+      "segment_id": "eGuF3Z0EaPc-ja-0079"
+    },
+    {
+      "text": "ここには3つの重要なことがあると思って",
+      "start_seconds": 632.279,
+      "end_seconds": 635.8,
+      "id": "eGuF3Z0EaPc-display-0170",
+      "segment_id": "eGuF3Z0EaPc-ja-0080"
+    },
+    {
+      "text": "います。",
+      "start_seconds": 635.8,
+      "end_seconds": 638.72,
+      "id": "eGuF3Z0EaPc-display-0171",
+      "segment_id": "eGuF3Z0EaPc-ja-0080"
+    },
+    {
+      "text": "1つ目、それは枠組の設計。",
+      "start_seconds": 638.72,
+      "end_seconds": 643.72,
+      "id": "eGuF3Z0EaPc-display-0172",
+      "segment_id": "eGuF3Z0EaPc-ja-0081"
+    },
+    {
+      "text": "任せるのでこれを達成しよう。という",
+      "start_seconds": 643.72,
+      "end_seconds": 646.68,
+      "id": "eGuF3Z0EaPc-display-0173",
+      "segment_id": "eGuF3Z0EaPc-ja-0082"
+    },
+    {
+      "text": "ゴールですね。そのゴールにはこういう",
+      "start_seconds": 646.68,
+      "end_seconds": 650.12,
+      "id": "eGuF3Z0EaPc-display-0174",
+      "segment_id": "eGuF3Z0EaPc-ja-0082"
+    },
+    {
+      "text": "ルールでやっていきましょう。",
+      "start_seconds": 650.12,
+      "end_seconds": 652.8,
+      "id": "eGuF3Z0EaPc-display-0175",
+      "segment_id": "eGuF3Z0EaPc-ja-0082"
+    },
+    {
+      "text": "例えば企業で言うと",
+      "start_seconds": 652.8,
+      "end_seconds": 655.399,
+      "id": "eGuF3Z0EaPc-display-0176",
+      "segment_id": "eGuF3Z0EaPc-ja-0083"
+    },
+    {
+      "text": "行動規範がこうやってあるので、この行動",
+      "start_seconds": 655.399,
+      "end_seconds": 657.519,
+      "id": "eGuF3Z0EaPc-display-0177",
+      "segment_id": "eGuF3Z0EaPc-ja-0083"
+    },
+    {
+      "text": "規範に沿ってやっていきましょう。ま、",
+      "start_seconds": 657.519,
+      "end_seconds": 659.839,
+      "id": "eGuF3Z0EaPc-display-0178",
+      "segment_id": "eGuF3Z0EaPc-ja-0083"
+    },
+    {
+      "text": "子供でしたらこういうような学校行こうよ",
+      "start_seconds": 659.839,
+      "end_seconds": 662.56,
+      "id": "eGuF3Z0EaPc-display-0179",
+      "segment_id": "eGuF3Z0EaPc-ja-0083"
+    },
+    {
+      "text": "ね。だったらこれだけは勉強しようよね。",
+      "start_seconds": 662.56,
+      "end_seconds": 665.959,
+      "id": "eGuF3Z0EaPc-display-0180",
+      "segment_id": "eGuF3Z0EaPc-ja-0084"
+    },
+    {
+      "text": "ま、そういった一緒に作っていくゴールを",
+      "start_seconds": 665.959,
+      "end_seconds": 669.04,
+      "id": "eGuF3Z0EaPc-display-0181",
+      "segment_id": "eGuF3Z0EaPc-ja-0085"
+    },
+    {
+      "text": "設定していくそういった枠組。これが1つ",
+      "start_seconds": 669.04,
+      "end_seconds": 672.0,
+      "id": "eGuF3Z0EaPc-display-0182",
+      "segment_id": "eGuF3Z0EaPc-ja-0085"
+    },
+    {
+      "text": "目。",
+      "start_seconds": 672.0,
+      "end_seconds": 675.16,
+      "id": "eGuF3Z0EaPc-display-0183",
+      "segment_id": "eGuF3Z0EaPc-ja-0085"
+    },
+    {
+      "text": "2つ目。これはですね、時間の設計です。",
+      "start_seconds": 675.519,
+      "end_seconds": 681.519,
+      "id": "eGuF3Z0EaPc-display-0184",
+      "segment_id": "eGuF3Z0EaPc-ja-0086"
+    },
+    {
+      "text": "やっぱりやったことがない人にいきなり",
+      "start_seconds": 681.519,
+      "end_seconds": 685.079,
+      "id": "eGuF3Z0EaPc-display-0185",
+      "segment_id": "eGuF3Z0EaPc-ja-0087"
+    },
+    {
+      "text": "これやってと手放してもそれは丸投げに",
+      "start_seconds": 685.079,
+      "end_seconds": 689.48,
+      "id": "eGuF3Z0EaPc-display-0186",
+      "segment_id": "eGuF3Z0EaPc-ja-0087"
+    },
+    {
+      "text": "なります。",
+      "start_seconds": 689.48,
+      "end_seconds": 691.839,
+      "id": "eGuF3Z0EaPc-display-0187",
+      "segment_id": "eGuF3Z0EaPc-ja-0087"
+    },
+    {
+      "text": "経験のない人にはやっぱり伴奏して丁寧に",
+      "start_seconds": 691.839,
+      "end_seconds": 696.04,
+      "id": "eGuF3Z0EaPc-display-0188",
+      "segment_id": "eGuF3Z0EaPc-ja-0088"
+    },
+    {
+      "text": "教えてチェックしてそして悩みを聞いて",
+      "start_seconds": 696.04,
+      "end_seconds": 699.279,
+      "id": "eGuF3Z0EaPc-display-0189",
+      "segment_id": "eGuF3Z0EaPc-ja-0088"
+    },
+    {
+      "text": "あげる。",
+      "start_seconds": 699.279,
+      "end_seconds": 701.639,
+      "id": "eGuF3Z0EaPc-display-0190",
+      "segment_id": "eGuF3Z0EaPc-ja-0088"
+    },
+    {
+      "text": "ただもう自分でできるようになった。自分",
+      "start_seconds": 701.639,
+      "end_seconds": 705.12,
+      "id": "eGuF3Z0EaPc-display-0191",
+      "segment_id": "eGuF3Z0EaPc-ja-0089"
+    },
+    {
+      "text": "でどんどん進めていく。そういう人には口",
+      "start_seconds": 705.12,
+      "end_seconds": 708.76,
+      "id": "eGuF3Z0EaPc-display-0192",
+      "segment_id": "eGuF3Z0EaPc-ja-0089"
+    },
+    {
+      "text": "を出していくというよりもどんなサポート",
+      "start_seconds": 708.76,
+      "end_seconds": 712.24,
+      "id": "eGuF3Z0EaPc-display-0193",
+      "segment_id": "eGuF3Z0EaPc-ja-0089"
+    },
+    {
+      "text": "が必要、そういう風に聞いていく。そして",
+      "start_seconds": 712.24,
+      "end_seconds": 715.48,
+      "id": "eGuF3Z0EaPc-display-0194",
+      "segment_id": "eGuF3Z0EaPc-ja-0090"
+    },
+    {
+      "text": "支援していく。そして3つ目。これが実は",
+      "start_seconds": 715.48,
+      "end_seconds": 720.399,
+      "id": "eGuF3Z0EaPc-display-0195",
+      "segment_id": "eGuF3Z0EaPc-ja-0090"
+    },
+    {
+      "text": "やってみて経営者として1番辛かった。",
+      "start_seconds": 720.399,
+      "end_seconds": 725.399,
+      "id": "eGuF3Z0EaPc-display-0196",
+      "segment_id": "eGuF3Z0EaPc-ja-0091"
+    },
+    {
+      "text": "それは手放す側の心の設計です。",
+      "start_seconds": 725.399,
+      "end_seconds": 732.56,
+      "id": "eGuF3Z0EaPc-display-0197",
+      "segment_id": "eGuF3Z0EaPc-ja-0092"
+    },
+    {
+      "text": "手放す。そうするとそれは我慢をすること",
+      "start_seconds": 732.56,
+      "end_seconds": 736.959,
+      "id": "eGuF3Z0EaPc-display-0198",
+      "segment_id": "eGuF3Z0EaPc-ja-0093"
+    },
+    {
+      "text": "なんです。",
+      "start_seconds": 736.959,
+      "end_seconds": 739.399,
+      "id": "eGuF3Z0EaPc-display-0199",
+      "segment_id": "eGuF3Z0EaPc-ja-0093"
+    },
+    {
+      "text": "自分がやっちゃった方が早いよね。正しい",
+      "start_seconds": 739.399,
+      "end_seconds": 742.88,
+      "id": "eGuF3Z0EaPc-display-0200",
+      "segment_id": "eGuF3Z0EaPc-ja-0094"
+    },
+    {
+      "text": "よね。あ、これ自分の経験からすると失敗",
+      "start_seconds": 742.88,
+      "end_seconds": 746.24,
+      "id": "eGuF3Z0EaPc-display-0201",
+      "segment_id": "eGuF3Z0EaPc-ja-0094"
+    },
+    {
+      "text": "するでも我慢するんです。時には失敗させ",
+      "start_seconds": 746.24,
+      "end_seconds": 750.8,
+      "id": "eGuF3Z0EaPc-display-0202",
+      "segment_id": "eGuF3Z0EaPc-ja-0094"
+    },
+    {
+      "text": "ちゃうんです。そうしないと人は伸びない",
+      "start_seconds": 750.8,
+      "end_seconds": 756.399,
+      "id": "eGuF3Z0EaPc-display-0203",
+      "segment_id": "eGuF3Z0EaPc-ja-0095"
+    },
+    {
+      "text": "ですのでこの我慢する。これが非常に",
+      "start_seconds": 756.399,
+      "end_seconds": 761.279,
+      "id": "eGuF3Z0EaPc-display-0204",
+      "segment_id": "eGuF3Z0EaPc-ja-0095"
+    },
+    {
+      "text": "心の設計という意味では大変でした。",
+      "start_seconds": 761.279,
+      "end_seconds": 764.88,
+      "id": "eGuF3Z0EaPc-display-0205",
+      "segment_id": "eGuF3Z0EaPc-ja-0096"
+    },
+    {
+      "text": "そしてもう1つ、みんなが成長してくると",
+      "start_seconds": 764.88,
+      "end_seconds": 769.16,
+      "id": "eGuF3Z0EaPc-display-0206",
+      "segment_id": "eGuF3Z0EaPc-ja-0097"
+    },
+    {
+      "text": "確かに自分なしで回ってくるんですね。",
+      "start_seconds": 769.16,
+      "end_seconds": 773.279,
+      "id": "eGuF3Z0EaPc-display-0207",
+      "segment_id": "eGuF3Z0EaPc-ja-0097"
+    },
+    {
+      "text": "そうすると",
+      "start_seconds": 773.279,
+      "end_seconds": 775.32,
+      "id": "eGuF3Z0EaPc-display-0208",
+      "segment_id": "eGuF3Z0EaPc-ja-0098"
+    },
+    {
+      "text": "ある人が言ってきます。あれ、これ社長",
+      "start_seconds": 775.32,
+      "end_seconds": 778.6,
+      "id": "eGuF3Z0EaPc-display-0209",
+      "segment_id": "eGuF3Z0EaPc-ja-0098"
+    },
+    {
+      "text": "いらないんじゃない?",
+      "start_seconds": 778.6,
+      "end_seconds": 780.92,
+      "id": "eGuF3Z0EaPc-display-0210",
+      "segment_id": "eGuF3Z0EaPc-ja-0098"
+    },
+    {
+      "text": "あれ確かに。",
+      "start_seconds": 780.92,
+      "end_seconds": 784.639,
+      "id": "eGuF3Z0EaPc-display-0211",
+      "segment_id": "eGuF3Z0EaPc-ja-0099"
+    },
+    {
+      "text": "じゃあ自分何をやるのかな?自分の存在の",
+      "start_seconds": 784.639,
+      "end_seconds": 789.199,
+      "id": "eGuF3Z0EaPc-display-0212",
+      "segment_id": "eGuF3Z0EaPc-ja-0100"
+    },
+    {
+      "text": "心の設計ですね。この2つの自連マ",
+      "start_seconds": 789.199,
+      "end_seconds": 794.519,
+      "id": "eGuF3Z0EaPc-display-0213",
+      "segment_id": "eGuF3Z0EaPc-ja-0100"
+    },
+    {
+      "text": "会社は回っている。でも自分はそうどう何",
+      "start_seconds": 794.519,
+      "end_seconds": 798.16,
+      "id": "eGuF3Z0EaPc-display-0214",
+      "segment_id": "eGuF3Z0EaPc-ja-0101"
+    },
+    {
+      "text": "をすればいいのかこういった間ができ",
+      "start_seconds": 798.16,
+      "end_seconds": 802.48,
+      "id": "eGuF3Z0EaPc-display-0215",
+      "segment_id": "eGuF3Z0EaPc-ja-0101"
+    },
+    {
+      "text": "ちゃうですね。その時に私が考えて考えて",
+      "start_seconds": 802.48,
+      "end_seconds": 808.04,
+      "id": "eGuF3Z0EaPc-display-0216",
+      "segment_id": "eGuF3Z0EaPc-ja-0102"
+    },
+    {
+      "text": "思いついたのが",
+      "start_seconds": 808.04,
+      "end_seconds": 811.519,
+      "id": "eGuF3Z0EaPc-display-0217",
+      "segment_id": "eGuF3Z0EaPc-ja-0102"
+    },
+    {
+      "text": "我慢をするんじゃない。自分のやりたい",
+      "start_seconds": 811.519,
+      "end_seconds": 814.92,
+      "id": "eGuF3Z0EaPc-display-0218",
+      "segment_id": "eGuF3Z0EaPc-ja-0103"
+    },
+    {
+      "text": "ことに没頭しろということです。",
+      "start_seconds": 814.92,
+      "end_seconds": 820.7199999999999,
+      "id": "eGuF3Z0EaPc-display-0219",
+      "segment_id": "eGuF3Z0EaPc-ja-0103"
+    },
+    {
+      "text": "例えば",
+      "start_seconds": 821.16,
+      "end_seconds": 822.72,
+      "id": "eGuF3Z0EaPc-display-0220",
+      "segment_id": "eGuF3Z0EaPc-ja-0104"
+    },
+    {
+      "text": "アメリカに行きました。それは行きたい",
+      "start_seconds": 822.72,
+      "end_seconds": 825.04,
+      "id": "eGuF3Z0EaPc-display-0221",
+      "segment_id": "eGuF3Z0EaPc-ja-0104"
+    },
+    {
+      "text": "から行ったんじゃなくてアメリカで",
+      "start_seconds": 825.04,
+      "end_seconds": 826.32,
+      "id": "eGuF3Z0EaPc-display-0222",
+      "segment_id": "eGuF3Z0EaPc-ja-0104"
+    },
+    {
+      "text": "ビジネスをしたいからです。",
+      "start_seconds": 826.32,
+      "end_seconds": 829.0,
+      "id": "eGuF3Z0EaPc-display-0223",
+      "segment_id": "eGuF3Z0EaPc-ja-0104"
+    },
+    {
+      "text": "最初の5年間。そしてでもアメリカ行って",
+      "start_seconds": 829.0,
+      "end_seconds": 833.88,
+      "id": "eGuF3Z0EaPc-display-0224",
+      "segment_id": "eGuF3Z0EaPc-ja-0105"
+    },
+    {
+      "text": "何にも詰め跡を残さないまま帰ってくる",
+      "start_seconds": 833.88,
+      "end_seconds": 835.88,
+      "id": "eGuF3Z0EaPc-display-0225",
+      "segment_id": "eGuF3Z0EaPc-ja-0105"
+    },
+    {
+      "text": "ことはできない。なんとか必死に売上を",
+      "start_seconds": 835.88,
+      "end_seconds": 839.12,
+      "id": "eGuF3Z0EaPc-display-0226",
+      "segment_id": "eGuF3Z0EaPc-ja-0105"
+    },
+    {
+      "text": "利益を作ろうとしました。",
+      "start_seconds": 839.12,
+      "end_seconds": 841.88,
+      "id": "eGuF3Z0EaPc-display-0227",
+      "segment_id": "eGuF3Z0EaPc-ja-0106"
+    },
+    {
+      "text": "最終的にはアメリカの会社を買って",
+      "start_seconds": 841.88,
+      "end_seconds": 845.24,
+      "id": "eGuF3Z0EaPc-display-0228",
+      "segment_id": "eGuF3Z0EaPc-ja-0107"
+    },
+    {
+      "text": "とにかくアメリカの収益家っていうことに",
+      "start_seconds": 845.24,
+      "end_seconds": 848.16,
+      "id": "eGuF3Z0EaPc-display-0229",
+      "segment_id": "eGuF3Z0EaPc-ja-0107"
+    },
+    {
+      "text": "没頭しました。",
+      "start_seconds": 848.16,
+      "end_seconds": 850.639,
+      "id": "eGuF3Z0EaPc-display-0230",
+      "segment_id": "eGuF3Z0EaPc-ja-0107"
+    },
+    {
+      "text": "その間日本のオペレーションに口を出して",
+      "start_seconds": 850.639,
+      "end_seconds": 854.12,
+      "id": "eGuF3Z0EaPc-display-0231",
+      "segment_id": "eGuF3Z0EaPc-ja-0108"
+    },
+    {
+      "text": "いるそんな余裕はありませんでした。",
+      "start_seconds": 854.12,
+      "end_seconds": 858.24,
+      "id": "eGuF3Z0EaPc-display-0232",
+      "segment_id": "eGuF3Z0EaPc-ja-0108"
+    },
+    {
+      "text": "その間日本のチームは自分たちで成長して",
+      "start_seconds": 858.24,
+      "end_seconds": 861.519,
+      "id": "eGuF3Z0EaPc-display-0233",
+      "segment_id": "eGuF3Z0EaPc-ja-0109"
+    },
+    {
+      "text": "いってくれました。",
+      "start_seconds": 861.519,
+      "end_seconds": 865.16,
+      "id": "eGuF3Z0EaPc-display-0234",
+      "segment_id": "eGuF3Z0EaPc-ja-0109"
+    },
+    {
+      "text": "教育でも一緒でした。私自身アメリカの",
+      "start_seconds": 865.959,
+      "end_seconds": 869.759,
+      "id": "eGuF3Z0EaPc-display-0235",
+      "segment_id": "eGuF3Z0EaPc-ja-0110"
+    },
+    {
+      "text": "教育制度で育ってないので正直どうやって",
+      "start_seconds": 869.759,
+      "end_seconds": 874.279,
+      "id": "eGuF3Z0EaPc-display-0236",
+      "segment_id": "eGuF3Z0EaPc-ja-0110"
+    },
+    {
+      "text": "どうやって大学に行ってそしてどうその",
+      "start_seconds": 874.279,
+      "end_seconds": 876.959,
+      "id": "eGuF3Z0EaPc-display-0237",
+      "segment_id": "eGuF3Z0EaPc-ja-0110"
+    },
+    {
+      "text": "仕組みどうなってんの分かりません。私が",
+      "start_seconds": 876.959,
+      "end_seconds": 880.12,
+      "id": "eGuF3Z0EaPc-display-0238",
+      "segment_id": "eGuF3Z0EaPc-ja-0111"
+    },
+    {
+      "text": "できることはこの人だったらそういうこと",
+      "start_seconds": 880.12,
+      "end_seconds": 882.24,
+      "id": "eGuF3Z0EaPc-display-0239",
+      "segment_id": "eGuF3Z0EaPc-ja-0111"
+    },
+    {
+      "text": "を教えてくれんじゃない?そういう人を",
+      "start_seconds": 882.24,
+      "end_seconds": 884.12,
+      "id": "eGuF3Z0EaPc-display-0240",
+      "segment_id": "eGuF3Z0EaPc-ja-0111"
+    },
+    {
+      "text": "こう紹介したりとか、えー、ま、そういう",
+      "start_seconds": 884.12,
+      "end_seconds": 888.12,
+      "id": "eGuF3Z0EaPc-display-0241",
+      "segment_id": "eGuF3Z0EaPc-ja-0111"
+    },
+    {
+      "text": "環境を整えるそういうことしかできません",
+      "start_seconds": 888.12,
+      "end_seconds": 890.399,
+      "id": "eGuF3Z0EaPc-display-0242",
+      "segment_id": "eGuF3Z0EaPc-ja-0112"
+    },
+    {
+      "text": "でした。",
+      "start_seconds": 890.399,
+      "end_seconds": 892.36,
+      "id": "eGuF3Z0EaPc-display-0243",
+      "segment_id": "eGuF3Z0EaPc-ja-0112"
+    },
+    {
+      "text": "ただ結局子供たちはこ友達に聞いたり、",
+      "start_seconds": 892.36,
+      "end_seconds": 897.72,
+      "id": "eGuF3Z0EaPc-display-0244",
+      "segment_id": "eGuF3Z0EaPc-ja-0113"
+    },
+    {
+      "text": "学校のカウンセラーに聞いたり塾の先生に",
+      "start_seconds": 897.72,
+      "end_seconds": 901.04,
+      "id": "eGuF3Z0EaPc-display-0245",
+      "segment_id": "eGuF3Z0EaPc-ja-0113"
+    },
+    {
+      "text": "聞いたりしながら勝手に勉強してそして",
+      "start_seconds": 901.04,
+      "end_seconds": 906.0,
+      "id": "eGuF3Z0EaPc-display-0246",
+      "segment_id": "eGuF3Z0EaPc-ja-0114"
+    },
+    {
+      "text": "先ほどで言うと親が勝手に期待してたん",
+      "start_seconds": 906.0,
+      "end_seconds": 909.48,
+      "id": "eGuF3Z0EaPc-display-0247",
+      "segment_id": "eGuF3Z0EaPc-ja-0114"
+    },
+    {
+      "text": "ですけども私たち私の期待した以上の学校",
+      "start_seconds": 909.48,
+      "end_seconds": 913.0,
+      "id": "eGuF3Z0EaPc-display-0248",
+      "segment_id": "eGuF3Z0EaPc-ja-0114"
+    },
+    {
+      "text": "に入ってえ入っていくことになりました。",
+      "start_seconds": 913.0,
+      "end_seconds": 918.16,
+      "id": "eGuF3Z0EaPc-display-0249",
+      "segment_id": "eGuF3Z0EaPc-ja-0115"
+    },
+    {
+      "text": "手放す",
+      "start_seconds": 918.16,
+      "end_seconds": 919.839,
+      "id": "eGuF3Z0EaPc-display-0250",
+      "segment_id": "eGuF3Z0EaPc-ja-0116"
+    },
+    {
+      "text": "というのは単に",
+      "start_seconds": 919.839,
+      "end_seconds": 923.079,
+      "id": "eGuF3Z0EaPc-display-0251",
+      "segment_id": "eGuF3Z0EaPc-ja-0116"
+    },
+    {
+      "text": "任せることではない。",
+      "start_seconds": 923.079,
+      "end_seconds": 926.079,
+      "id": "eGuF3Z0EaPc-display-0252",
+      "segment_id": "eGuF3Z0EaPc-ja-0116"
+    },
+    {
+      "text": "手放すというのは自分が挑戦する没頭して",
+      "start_seconds": 926.079,
+      "end_seconds": 930.519,
+      "id": "eGuF3Z0EaPc-display-0253",
+      "segment_id": "eGuF3Z0EaPc-ja-0117"
+    },
+    {
+      "text": "挑戦する姿を見せ続けること",
+      "start_seconds": 930.519,
+      "end_seconds": 934.519,
+      "id": "eGuF3Z0EaPc-display-0254",
+      "segment_id": "eGuF3Z0EaPc-ja-0117"
+    },
+    {
+      "text": "だと思っています。",
+      "start_seconds": 934.519,
+      "end_seconds": 937.36,
+      "id": "eGuF3Z0EaPc-display-0255",
+      "segment_id": "eGuF3Z0EaPc-ja-0117"
+    },
+    {
+      "text": "人は",
+      "start_seconds": 937.36,
+      "end_seconds": 939.12,
+      "id": "eGuF3Z0EaPc-display-0256",
+      "segment_id": "eGuF3Z0EaPc-ja-0118"
+    },
+    {
+      "text": "言われた通りには動かない。お父さんが",
+      "start_seconds": 939.12,
+      "end_seconds": 941.759,
+      "id": "eGuF3Z0EaPc-display-0257",
+      "segment_id": "eGuF3Z0EaPc-ja-0118"
+    },
+    {
+      "text": "言う、上司が言う。それでは動かない。人",
+      "start_seconds": 941.759,
+      "end_seconds": 945.6,
+      "id": "eGuF3Z0EaPc-display-0258",
+      "segment_id": "eGuF3Z0EaPc-ja-0118"
+    },
+    {
+      "text": "は見た通りに動く。",
+      "start_seconds": 945.6,
+      "end_seconds": 949.9200000000001,
+      "id": "eGuF3Z0EaPc-display-0259",
+      "segment_id": "eGuF3Z0EaPc-ja-0119"
+    },
+    {
+      "text": "つまりそういった人たちが挑戦している姿",
+      "start_seconds": 950.12,
+      "end_seconds": 953.399,
+      "id": "eGuF3Z0EaPc-display-0260",
+      "segment_id": "eGuF3Z0EaPc-ja-0120"
+    },
+    {
+      "text": "、それもセットになって自分も頑張ろう",
+      "start_seconds": 953.399,
+      "end_seconds": 957.8,
+      "id": "eGuF3Z0EaPc-display-0261",
+      "segment_id": "eGuF3Z0EaPc-ja-0120"
+    },
+    {
+      "text": "やってやろうそういうもんになってくるん",
+      "start_seconds": 957.8,
+      "end_seconds": 959.48,
+      "id": "eGuF3Z0EaPc-display-0262",
+      "segment_id": "eGuF3Z0EaPc-ja-0120"
+    },
+    {
+      "text": "ですね。",
+      "start_seconds": 959.48,
+      "end_seconds": 962.56,
+      "id": "eGuF3Z0EaPc-display-0263",
+      "segment_id": "eGuF3Z0EaPc-ja-0121"
+    },
+    {
+      "text": "ですので私も今手放すという挑戦をし続け",
+      "start_seconds": 962.56,
+      "end_seconds": 967.56,
+      "id": "eGuF3Z0EaPc-display-0264",
+      "segment_id": "eGuF3Z0EaPc-ja-0122"
+    },
+    {
+      "text": "てます。それによってみんなが成長し、",
+      "start_seconds": 967.56,
+      "end_seconds": 971.639,
+      "id": "eGuF3Z0EaPc-display-0265",
+      "segment_id": "eGuF3Z0EaPc-ja-0122"
+    },
+    {
+      "text": "自分もまた新しい部隊に、え、舞台で成長",
+      "start_seconds": 971.639,
+      "end_seconds": 976.16,
+      "id": "eGuF3Z0EaPc-display-0266",
+      "segment_id": "eGuF3Z0EaPc-ja-0123"
+    },
+    {
+      "text": "するとこういった場を、え、与えられて",
+      "start_seconds": 976.16,
+      "end_seconds": 980.199,
+      "id": "eGuF3Z0EaPc-display-0267",
+      "segment_id": "eGuF3Z0EaPc-ja-0123"
+    },
+    {
+      "text": "いるわけです。その姿を家族であったりと",
+      "start_seconds": 980.199,
+      "end_seconds": 983.88,
+      "id": "eGuF3Z0EaPc-display-0268",
+      "segment_id": "eGuF3Z0EaPc-ja-0124"
+    },
+    {
+      "text": "か、会社の人であったりとか、また皆さん",
+      "start_seconds": 983.88,
+      "end_seconds": 987.199,
+      "id": "eGuF3Z0EaPc-display-0269",
+      "segment_id": "eGuF3Z0EaPc-ja-0124"
+    },
+    {
+      "text": "であったりとか、そういう人に見せ続ける",
+      "start_seconds": 987.199,
+      "end_seconds": 989.24,
+      "id": "eGuF3Z0EaPc-display-0270",
+      "segment_id": "eGuF3Z0EaPc-ja-0124"
+    },
+    {
+      "text": "こと、このことが非常に重要だと思って",
+      "start_seconds": 989.24,
+      "end_seconds": 991.839,
+      "id": "eGuF3Z0EaPc-display-0271",
+      "segment_id": "eGuF3Z0EaPc-ja-0124"
+    },
+    {
+      "text": "おります。",
+      "start_seconds": 991.839,
+      "end_seconds": 995.12,
+      "id": "eGuF3Z0EaPc-display-0272",
+      "segment_id": "eGuF3Z0EaPc-ja-0125"
+    },
+    {
+      "text": "最後になりますけども、今日この話を聞い",
+      "start_seconds": 995.24,
+      "end_seconds": 998.16,
+      "id": "eGuF3Z0EaPc-display-0273",
+      "segment_id": "eGuF3Z0EaPc-ja-0126"
+    },
+    {
+      "text": "て何か参考になったなと思いましたら是非",
+      "start_seconds": 998.16,
+      "end_seconds": 1004.04,
+      "id": "eGuF3Z0EaPc-display-0274",
+      "segment_id": "eGuF3Z0EaPc-ja-0126"
+    },
+    {
+      "text": "職場でも家でも何か1つ手放してみて",
+      "start_seconds": 1004.04,
+      "end_seconds": 1009.04,
+      "id": "eGuF3Z0EaPc-display-0275",
+      "segment_id": "eGuF3Z0EaPc-ja-0127"
+    },
+    {
+      "text": "ください。小さなことでも大丈夫です。",
+      "start_seconds": 1009.04,
+      "end_seconds": 1012.959,
+      "id": "eGuF3Z0EaPc-display-0276",
+      "segment_id": "eGuF3Z0EaPc-ja-0127"
+    },
+    {
+      "text": "ただですね、家事を手放しました。その",
+      "start_seconds": 1012.959,
+      "end_seconds": 1017.16,
+      "id": "eGuF3Z0EaPc-display-0277",
+      "segment_id": "eGuF3Z0EaPc-ja-0128"
+    },
+    {
+      "text": "代わり自分はワールドカップ見るのに没頭",
+      "start_seconds": 1017.16,
+      "end_seconds": 1019.88,
+      "id": "eGuF3Z0EaPc-display-0278",
+      "segment_id": "eGuF3Z0EaPc-ja-0128"
+    },
+    {
+      "text": "します。こんなことを言うとですね、",
+      "start_seconds": 1019.88,
+      "end_seconds": 1022.88,
+      "id": "eGuF3Z0EaPc-display-0279",
+      "segment_id": "eGuF3Z0EaPc-ja-0128"
+    },
+    {
+      "text": "ちょっと大きな問題になると思いますので",
+      "start_seconds": 1022.88,
+      "end_seconds": 1025.0,
+      "id": "eGuF3Z0EaPc-display-0280",
+      "segment_id": "eGuF3Z0EaPc-ja-0129"
+    },
+    {
+      "text": "、そこは自己責任でやっていただければと",
+      "start_seconds": 1025.0,
+      "end_seconds": 1028.12,
+      "id": "eGuF3Z0EaPc-display-0281",
+      "segment_id": "eGuF3Z0EaPc-ja-0129"
+    },
+    {
+      "text": "思います。ご清聴ありがとうございました",
+      "start_seconds": 1028.12,
+      "end_seconds": 1031.079,
+      "id": "eGuF3Z0EaPc-display-0282",
+      "segment_id": "eGuF3Z0EaPc-ja-0129"
+    },
+    {
+      "text": "。[拍手]",
+      "start_seconds": 1031.079,
+      "end_seconds": 1034.311,
+      "id": "eGuF3Z0EaPc-display-0283",
+      "segment_id": "eGuF3Z0EaPc-ja-0129"
+    }
+  ]
+}

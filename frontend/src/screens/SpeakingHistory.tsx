@@ -1,3 +1,4 @@
+import { useBottomNavigationInset } from '../hooks/useBottomNavigationInset';
 import { memo, useCallback, useEffect, useRef, useState } from 'react';
 import {
   ActivityIndicator,
@@ -141,6 +142,7 @@ export function SpeakingHistory({
   onOpen: (id: string) => void;
 }) {
   const [data, setData] = useState<ConversationHistory | null>(null);
+  const navigationInset = useBottomNavigationInset();
   const [loading, setLoading] = useState(true);
   const [more, setMore] = useState(false);
   const [error, setError] = useState('');
@@ -264,7 +266,11 @@ export function SpeakingHistory({
       data={data?.items || []}
       keyExtractor={keyExtractor}
       renderItem={renderItem}
-      contentContainerStyle={styles.list}
+      contentContainerStyle={[
+        styles.list,
+        { paddingBottom: navigationInset + spacing.section },
+      ]}
+      scrollIndicatorInsets={{ bottom: navigationInset }}
       refreshing={loading}
       onRefresh={() => fetchPage()}
       ListHeaderComponent={

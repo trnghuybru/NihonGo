@@ -1,0 +1,5399 @@
+{
+  "schema_version": 1,
+  "video": {
+    "youtube_id": "5Gi3S6L5XYs",
+    "title": "Reconnecting with Curiosity: 3 Keys to Lifelong Learning Found Across 5 Continents | Keishi Okamo...",
+    "channel": "TEDx Talks",
+    "duration_seconds": 1184
+  },
+  "caption_track": {
+    "language": "ja",
+    "kind": "asr",
+    "source": "youtube_automatic"
+  },
+  "source_playlist": "https://www.youtube.com/playlist?list=PLsRNoUx8w3rOHjXIU5EE4KOiIagv9yQaG",
+  "fetched_at": "2026-10-13T13:23:32.367002+00:00",
+  "segment_count": 144,
+  "segments": [
+    {
+      "text": "[拍手]",
+      "start_seconds": 5.239,
+      "end_seconds": 7.259,
+      "id": "5Gi3S6L5XYs-ja-0001",
+      "sequence": 1
+    },
+    {
+      "text": "いきなりですが、皆さんにとって学びとは何でしょうか?",
+      "start_seconds": 9.28,
+      "end_seconds": 15.519,
+      "id": "5Gi3S6L5XYs-ja-0002",
+      "sequence": 2
+    },
+    {
+      "text": "良い成績を取ること、資格を取ること、知識を増やすことなど色々あるかもしれません。辞書によると学びとは勉強や教え",
+      "start_seconds": 15.519,
+      "end_seconds": 25.439,
+      "id": "5Gi3S6L5XYs-ja-0003",
+      "sequence": 3
+    },
+    {
+      "text": "を通して知識やスキルを身につける。",
+      "start_seconds": 25.439,
+      "end_seconds": 30.24,
+      "id": "5Gi3S6L5XYs-ja-0004",
+      "sequence": 4
+    },
+    {
+      "text": "私にとって学びとは見えなかった世界が見えるようになること。",
+      "start_seconds": 30.24,
+      "end_seconds": 36.92,
+      "id": "5Gi3S6L5XYs-ja-0005",
+      "sequence": 5
+    },
+    {
+      "text": "単に知識を増やすだけではありません。",
+      "start_seconds": 36.92,
+      "end_seconds": 39.2,
+      "id": "5Gi3S6L5XYs-ja-0006",
+      "sequence": 6
+    },
+    {
+      "text": "もし学んだことを忘れてしまったらそれは暗記だったのかもしれません。学びとは本来自分の中で変化を感じておることだと思っています。自分の好きな匂いに出会う",
+      "start_seconds": 39.2,
+      "end_seconds": 50.0,
+      "id": "5Gi3S6L5XYs-ja-0007",
+      "sequence": 7
+    },
+    {
+      "text": "、自分らしさに出会う地球の裏側で人生感がひっくり返えるなど多に渡ります。",
+      "start_seconds": 50.0,
+      "end_seconds": 58.519,
+      "id": "5Gi3S6L5XYs-ja-0008",
+      "sequence": 8
+    },
+    {
+      "text": "ではここでもう1つ。昔この中で赤ちゃんだったという人はいますか?",
+      "start_seconds": 58.519,
+      "end_seconds": 65.72,
+      "id": "5Gi3S6L5XYs-ja-0009",
+      "sequence": 9
+    },
+    {
+      "text": "はい。まだまだ人間の集まりがいるということで安心しました。では赤ちゃんだった時に歩くための学校に行ったという人はいますか?",
+      "start_seconds": 65.72,
+      "end_seconds": 76.92,
+      "id": "5Gi3S6L5XYs-ja-0010",
+      "sequence": 10
+    },
+    {
+      "text": "いませんね。赤ちゃんは数ヶ月の青向け生活を経て願いりした立ち、そして何度こけても立ち上がる。",
+      "start_seconds": 76.92,
+      "end_seconds": 88.4,
+      "id": "5Gi3S6L5XYs-ja-0011",
+      "sequence": 11
+    },
+    {
+      "text": "気づけば歩けるようになっている。誰に言われたわけでも学校に行ったわけでもありません。そう、人は本来学びたい生き物、いやもっと言うと新しい世界を見",
+      "start_seconds": 88.4,
+      "end_seconds": 100.28,
+      "id": "5Gi3S6L5XYs-ja-0012",
+      "sequence": 12
+    },
+    {
+      "text": "たい生き物です。でも大人になるにつれて学ばない人が増えてくる。それはなぜでしょうか?",
+      "start_seconds": 100.28,
+      "end_seconds": 109.159,
+      "id": "5Gi3S6L5XYs-ja-0013",
+      "sequence": 13
+    },
+    {
+      "text": "私はそれは好奇心に蓋をしてしまうからだと思っています。",
+      "start_seconds": 109.159,
+      "end_seconds": 114.92,
+      "id": "5Gi3S6L5XYs-ja-0014",
+      "sequence": 14
+    },
+    {
+      "text": "失敗したらどうしよう。周りの目が気になる。外に出るのが怖い。初心者に戻りたくない。時間がない。お金がない。人は",
+      "start_seconds": 114.92,
+      "end_seconds": 123.92,
+      "id": "5Gi3S6L5XYs-ja-0015",
+      "sequence": 15
+    },
+    {
+      "text": "いろんな理由で国奇に負担をします。",
+      "start_seconds": 123.92,
+      "end_seconds": 127.68,
+      "id": "5Gi3S6L5XYs-ja-0016",
+      "sequence": 16
+    },
+    {
+      "text": "でも一方で変化の激しい時代の中で学び直しや学び続けることの大切さは多くの人が実感しています。",
+      "start_seconds": 127.68,
+      "end_seconds": 136.8,
+      "id": "5Gi3S6L5XYs-ja-0017",
+      "sequence": 17
+    },
+    {
+      "text": "今日は私が世界ご大陸で学んだ後好奇心と再開し学び続けるためのヒントをについてお話しします。",
+      "start_seconds": 136.8,
+      "end_seconds": 148.519,
+      "id": "5Gi3S6L5XYs-ja-0018",
+      "sequence": 18
+    },
+    {
+      "text": "私は世界ご大陸に住み国連などを経て50カ国以上の教育支援をしてほぼ独学で6年後以上話せるようになりました。日本語、",
+      "start_seconds": 148.519,
+      "end_seconds": 158.68,
+      "id": "5Gi3S6L5XYs-ja-0019",
+      "sequence": 19
+    },
+    {
+      "text": "英語、スペイン語、フランス語、ポルトガル語、そして最も習得が難しいと言われる関西弁です。",
+      "start_seconds": 158.68,
+      "end_seconds": 168.92,
+      "id": "5Gi3S6L5XYs-ja-0020",
+      "sequence": 20
+    },
+    {
+      "text": "経歴の一部だけを見るとエリートだねと思われることはありますが、私の中学生時代は落ちこぼれでした。",
+      "start_seconds": 168.92,
+      "end_seconds": 178.4,
+      "id": "5Gi3S6L5XYs-ja-0021",
+      "sequence": 21
+    },
+    {
+      "text": "勉強もダめ、運動も苦手。唯一得意だったのは人の家に上がり込んではポテトチップスを食べてゲームをする。",
+      "start_seconds": 178.4,
+      "end_seconds": 187.56,
+      "id": "5Gi3S6L5XYs-ja-0022",
+      "sequence": 22
+    },
+    {
+      "text": "気づけば歩くだけでまたれがして血が出るぐらいのまるまる太った中学生になっていました。",
+      "start_seconds": 187.56,
+      "end_seconds": 195.84,
+      "id": "5Gi3S6L5XYs-ja-0023",
+      "sequence": 23
+    },
+    {
+      "text": "でも高奇心だけはありました。だから授業中によく質問していたんです。すると先生からある日言われました。もう質問やめて授業にならんわ。",
+      "start_seconds": 195.84,
+      "end_seconds": 207.519,
+      "id": "5Gi3S6L5XYs-ja-0024",
+      "sequence": 24
+    },
+    {
+      "text": "その瞬間ショックと共に自分の中の好奇心に静かに蓋が降りてきました。",
+      "start_seconds": 207.519,
+      "end_seconds": 214.519,
+      "id": "5Gi3S6L5XYs-ja-0025",
+      "sequence": 25
+    },
+    {
+      "text": "私は放課後でも落ちこぼれ陸上部の長距離に所属していた私は周りのペースについていけず疲れたらすぐ歩く。",
+      "start_seconds": 214.519,
+      "end_seconds": 224.92,
+      "id": "5Gi3S6L5XYs-ja-0026",
+      "sequence": 26
+    },
+    {
+      "text": "歩きながら瞑想して風の音を感じリラックスなんてことありません。ずっと歩きながら",
+      "start_seconds": 224.92,
+      "end_seconds": 234.239,
+      "id": "5Gi3S6L5XYs-ja-0027",
+      "sequence": 27
+    },
+    {
+      "text": "下向いて辛いやめたい。なんでこんなことをとそんな日々が続きました。",
+      "start_seconds": 234.239,
+      "end_seconds": 241.64,
+      "id": "5Gi3S6L5XYs-ja-0028",
+      "sequence": 28
+    },
+    {
+      "text": "そんなやらせない日々が続いて1年半が経ったある日、部員から理不尽にられ部活を辞めました。",
+      "start_seconds": 241.64,
+      "end_seconds": 250.0,
+      "id": "5Gi3S6L5XYs-ja-0029",
+      "sequence": 29
+    },
+    {
+      "text": "東方に暮れた次の日の放課後、不思議なことになぜか足はいつもの河川敷のランディングコースに向かっていました。",
+      "start_seconds": 250.0,
+      "end_seconds": 259.359,
+      "id": "5Gi3S6L5XYs-ja-0030",
+      "sequence": 30
+    },
+    {
+      "text": "もう1度だけ走ってみようかなと心の即で心の奥で声がしたのです。",
+      "start_seconds": 259.359,
+      "end_seconds": 267.55999999999995,
+      "id": "5Gi3S6L5XYs-ja-0031",
+      "sequence": 31
+    },
+    {
+      "text": "まるまる太った自分も目の前のコースも昨日までと何も変わりません。唯一違うのは周りに合わせるべきグループがいないと",
+      "start_seconds": 268.0,
+      "end_seconds": 275.84,
+      "id": "5Gi3S6L5XYs-ja-0032",
+      "sequence": 32
+    },
+    {
+      "text": "いうこと。すると結果驚きでした。4kmぐらいの河敷のコースを疲れずに乾燥できたのです。周りに合わせずに自分のペース",
+      "start_seconds": 275.84,
+      "end_seconds": 286.56,
+      "id": "5Gi3S6L5XYs-ja-0033",
+      "sequence": 33
+    },
+    {
+      "text": "で走ったからでした。",
+      "start_seconds": 286.56,
+      "end_seconds": 289.6,
+      "id": "5Gi3S6L5XYs-ja-0034",
+      "sequence": 34
+    },
+    {
+      "text": "そこで18ヶ月下を向いて歩いたコースを初めて前を向いて走れた。",
+      "start_seconds": 289.6,
+      "end_seconds": 297.16,
+      "id": "5Gi3S6L5XYs-ja-0035",
+      "sequence": 35
+    },
+    {
+      "text": "そこで気づきました。",
+      "start_seconds": 297.16,
+      "end_seconds": 300.32,
+      "id": "5Gi3S6L5XYs-ja-0036",
+      "sequence": 36
+    },
+    {
+      "text": "風の音、自分の呼吸、青い空や緑や水が広がる景色、川の匂い。そして思いました",
+      "start_seconds": 300.32,
+      "end_seconds": 309.44,
+      "id": "5Gi3S6L5XYs-ja-0037",
+      "sequence": 37
+    },
+    {
+      "text": "。ああ、ここはこんな綺麗な世界やったんか。",
+      "start_seconds": 309.44,
+      "end_seconds": 315.4,
+      "id": "5Gi3S6L5XYs-ja-0038",
+      "sequence": 38
+    },
+    {
+      "text": "こんな自分でもできるんかなと胸が震えた瞬間でした。",
+      "start_seconds": 315.4,
+      "end_seconds": 321.6,
+      "id": "5Gi3S6L5XYs-ja-0039",
+      "sequence": 39
+    },
+    {
+      "text": "あの日私は塞がりていた後期と再開しました。まさに新しい世界が見えた瞬間、マイペースできることを覚えてからは",
+      "start_seconds": 321.6,
+      "end_seconds": 333.6,
+      "id": "5Gi3S6L5XYs-ja-0040",
+      "sequence": 40
+    },
+    {
+      "text": "いろんなものをに手をつけました。",
+      "start_seconds": 333.6,
+      "end_seconds": 337.72,
+      "id": "5Gi3S6L5XYs-ja-0041",
+      "sequence": 41
+    },
+    {
+      "text": "教育",
+      "start_seconds": 337.72,
+      "end_seconds": 340.72,
+      "id": "5Gi3S6L5XYs-ja-0042",
+      "sequence": 42
+    },
+    {
+      "text": "ダンス都米して演劇料理",
+      "start_seconds": 342.68,
+      "end_seconds": 351.319,
+      "id": "5Gi3S6L5XYs-ja-0043",
+      "sequence": 43
+    },
+    {
+      "text": "世界の教育どれも一見バラバラなようなものに見えますが全て好奇心が次の世界に連れて行ってくれました。",
+      "start_seconds": 351.319,
+      "end_seconds": 360.72,
+      "id": "5Gi3S6L5XYs-ja-0044",
+      "sequence": 44
+    },
+    {
+      "text": "質問やめてと言われて、あの環境を何とかしたいと思う教育に言語を超えて自己表現し人が繋がるダンス。",
+      "start_seconds": 360.72,
+      "end_seconds": 370.68,
+      "id": "5Gi3S6L5XYs-ja-0045",
+      "sequence": 45
+    },
+    {
+      "text": "教育とダンスを通して人を動かし学びを動かすのは表現力と思い米して演劇に。",
+      "start_seconds": 370.68,
+      "end_seconds": 379.52,
+      "id": "5Gi3S6L5XYs-ja-0046",
+      "sequence": 46
+    },
+    {
+      "text": "そこで始めた自炊が楽しくて料理の世界にそして料理人時代の同僚たちを通して世界の各者",
+      "start_seconds": 379.52,
+      "end_seconds": 389.4,
+      "id": "5Gi3S6L5XYs-ja-0047",
+      "sequence": 47
+    },
+    {
+      "text": "境を実感し世界の教育へ気がつけば世界ご大陸に住んでいました。",
+      "start_seconds": 389.4,
+      "end_seconds": 398.759,
+      "id": "5Gi3S6L5XYs-ja-0048",
+      "sequence": 48
+    },
+    {
+      "text": "灼熱の砂漠極感の草減終日真っ暗な空間もあれば太陽が照り続けてる日々もある。",
+      "start_seconds": 398.759,
+      "end_seconds": 408.56,
+      "id": "5Gi3S6L5XYs-ja-0049",
+      "sequence": 49
+    },
+    {
+      "text": "気合だけではなく世界では宗教や文化、価値観も食べるものも挨拶の仕方も恋愛の仕方も違う。",
+      "start_seconds": 408.56,
+      "end_seconds": 418.0,
+      "id": "5Gi3S6L5XYs-ja-0050",
+      "sequence": 50
+    },
+    {
+      "text": "そして世界に出て気づきました。違いに触れるということは自分のいたところや自分自身が見えるということ。人はよく",
+      "start_seconds": 418.0,
+      "end_seconds": 429.479,
+      "id": "5Gi3S6L5XYs-ja-0051",
+      "sequence": 51
+    },
+    {
+      "text": "コンフォートゾーンから抜けようという話をします。でも実は自分がそこにいるところに慣れているだけで居心地が悪いということにも気づかないこともあります。",
+      "start_seconds": 429.479,
+      "end_seconds": 440.759,
+      "id": "5Gi3S6L5XYs-ja-0052",
+      "sequence": 52
+    },
+    {
+      "text": "例えばずっと暑いところ、寒いところ、暗いところ、寒いところにいる人がそれが当たり前だと思ってしまうように。でも",
+      "start_seconds": 440.759,
+      "end_seconds": 449.24,
+      "id": "5Gi3S6L5XYs-ja-0053",
+      "sequence": 53
+    },
+    {
+      "text": "違う世界に触れると自分が居心地がいられる環境に気づくこともあります。",
+      "start_seconds": 449.24,
+      "end_seconds": 456.039,
+      "id": "5Gi3S6L5XYs-ja-0054",
+      "sequence": 54
+    },
+    {
+      "text": "どこぞの元陸上部員が1人で河川軸走ったかのように",
+      "start_seconds": 456.039,
+      "end_seconds": 462.47900000000004,
+      "id": "5Gi3S6L5XYs-ja-0055",
+      "sequence": 55
+    },
+    {
+      "text": "ご大陸で50カ国以上の教育支援をし、ある不思議なことに気づきました。世界では文化や宗教価値観も違うのになぜか教育",
+      "start_seconds": 465.44,
+      "end_seconds": 477.12,
+      "id": "5Gi3S6L5XYs-ja-0056",
+      "sequence": 56
+    },
+    {
+      "text": "だけは驚くほど似ていたんです。同じような構成、同じような当たり前、同じようなこあるべきまるで世界中で教育メニューという定職が提供されているような感覚でし",
+      "start_seconds": 477.12,
+      "end_seconds": 488.96,
+      "id": "5Gi3S6L5XYs-ja-0057",
+      "sequence": 57
+    },
+    {
+      "text": "た。そのような中、そして大変な環境でも学び続けたいと意欲を燃やしている若者たちにも出会ってきました。今日は世界も",
+      "start_seconds": 488.96,
+      "end_seconds": 499.8,
+      "id": "5Gi3S6L5XYs-ja-0058",
+      "sequence": 58
+    },
+    {
+      "text": "のつく3つの国の紹介をしたいと思います。",
+      "start_seconds": 499.8,
+      "end_seconds": 503.68,
+      "id": "5Gi3S6L5XYs-ja-0059",
+      "sequence": 59
+    },
+    {
+      "text": "1つ目はモンゴル標40度以下畜の世話をし学校を何ヶ月以上も休んだ遊国",
+      "start_seconds": 503.68,
+      "end_seconds": 513.0,
+      "id": "5Gi3S6L5XYs-ja-0060",
+      "sequence": 60
+    },
+    {
+      "text": "民生隊の子供たちやっとのことで学校に戻ってきて親元離れて両生活が始まり夜は寒い中外にあるトイレにも行かなきゃ",
+      "start_seconds": 513.0,
+      "end_seconds": 523.24,
+      "id": "5Gi3S6L5XYs-ja-0061",
+      "sequence": 61
+    },
+    {
+      "text": "いけない食事を管理も自分でそんな大変な環境にいてでも学びたいと意欲を燃やす若者たちに出会ってきました。彼らは彼女",
+      "start_seconds": 523.24,
+      "end_seconds": 534.68,
+      "id": "5Gi3S6L5XYs-ja-0062",
+      "sequence": 62
+    },
+    {
+      "text": "らは教育の機会を奪われたからこそその学びたいという熱い投資は極家の中でも覚めなかったのかもしれしれません。次は",
+      "start_seconds": 534.68,
+      "end_seconds": 543.399,
+      "id": "5Gi3S6L5XYs-ja-0063",
+      "sequence": 63
+    },
+    {
+      "text": "モザンビク。ここでは生徒1人1人が教室に入る前に自分の好きな挨拶を先生としました。当時",
+      "start_seconds": 543.399,
+      "end_seconds": 554.32,
+      "id": "5Gi3S6L5XYs-ja-0064",
+      "sequence": 64
+    },
+    {
+      "text": "先生は生徒の名前を覚えることも1人1人と挨拶することもありませんでした。",
+      "start_seconds": 554.32,
+      "end_seconds": 561.04,
+      "id": "5Gi3S6L5XYs-ja-0065",
+      "sequence": 65
+    },
+    {
+      "text": "先生1人当たりに70人以上生徒がいたのもその国では当たり前でした。でも朝の選べる挨拶を取り入れてからは人間関係や",
+      "start_seconds": 561.04,
+      "end_seconds": 570.88,
+      "id": "5Gi3S6L5XYs-ja-0066",
+      "sequence": 66
+    },
+    {
+      "text": "教室の空気が一変したんです。",
+      "start_seconds": 570.88,
+      "end_seconds": 574.519,
+      "id": "5Gi3S6L5XYs-ja-0067",
+      "sequence": 67
+    },
+    {
+      "text": "ハグ、ハ立ち、肘ち、握手、ジャンプ選ばないというのもある。",
+      "start_seconds": 574.519,
+      "end_seconds": 583.44,
+      "id": "5Gi3S6L5XYs-ja-0068",
+      "sequence": 68
+    },
+    {
+      "text": "先生はそれに対応する。答えがない楽しい。",
+      "start_seconds": 583.44,
+      "end_seconds": 588.88,
+      "id": "5Gi3S6L5XYs-ja-0069",
+      "sequence": 69
+    },
+    {
+      "text": "教室に入った時はすでに安心安全な学びやすい環境ができていました。",
+      "start_seconds": 588.88,
+      "end_seconds": 595.2,
+      "id": "5Gi3S6L5XYs-ja-0070",
+      "sequence": 70
+    },
+    {
+      "text": "そして最後のこれは今でも忘れられないモ谷ニアで出会った若者です。難民支援をしていた私は若者たちが自分の好きな種類のワークショップを選ぶということを実施",
+      "start_seconds": 595.2,
+      "end_seconds": 607.2,
+      "id": "5Gi3S6L5XYs-ja-0071",
+      "sequence": 71
+    },
+    {
+      "text": "しており、私はダンス担当でした。",
+      "start_seconds": 607.2,
+      "end_seconds": 610.839,
+      "id": "5Gi3S6L5XYs-ja-0072",
+      "sequence": 72
+    },
+    {
+      "text": "すると絵を描くワークショップの会場から1人の若者が抜け出してきて僕もダンスをしたい。と言ってきました。",
+      "start_seconds": 610.839,
+      "end_seconds": 621.04,
+      "id": "5Gi3S6L5XYs-ja-0073",
+      "sequence": 73
+    },
+    {
+      "text": "なんとその子は片足が1本なかったんです。もちろんいいよと心よく迎え、その子は片足でぴょんぴょんと全力で踊りました。",
+      "start_seconds": 621.04,
+      "end_seconds": 631.68,
+      "id": "5Gi3S6L5XYs-ja-0074",
+      "sequence": 74
+    },
+    {
+      "text": "我々も手押師と一緒に片足でダンスして迎えました。会場大盛り上がり。そして",
+      "start_seconds": 631.68,
+      "end_seconds": 639.48,
+      "id": "5Gi3S6L5XYs-ja-0075",
+      "sequence": 75
+    },
+    {
+      "text": "その後その子は私のとこに来ていました。",
+      "start_seconds": 639.48,
+      "end_seconds": 643.839,
+      "id": "5Gi3S6L5XYs-ja-0076",
+      "sequence": 76
+    },
+    {
+      "text": "今日で僕の人生が変わった。",
+      "start_seconds": 643.839,
+      "end_seconds": 647.6,
+      "id": "5Gi3S6L5XYs-ja-0077",
+      "sequence": 77
+    },
+    {
+      "text": "え、どういうこと?",
+      "start_seconds": 647.6,
+      "end_seconds": 650.36,
+      "id": "5Gi3S6L5XYs-ja-0078",
+      "sequence": 78
+    },
+    {
+      "text": "僕の村では障害者は人の前には出てはいけない。まししてや踊るなんて。でも今日初めて人前踊ってこんなに楽しいものだと",
+      "start_seconds": 650.36,
+      "end_seconds": 659.639,
+      "id": "5Gi3S6L5XYs-ja-0079",
+      "sequence": 79
+    },
+    {
+      "text": "思わなかった。だからこれからは人に何を言われても踊り続けたい。",
+      "start_seconds": 659.639,
+      "end_seconds": 667.0,
+      "id": "5Gi3S6L5XYs-ja-0080",
+      "sequence": 80
+    },
+    {
+      "text": "その瞬間河川敷を走っていた昔の自分を思い出しました。ああ、この子も新しい世界が見えたんだ。",
+      "start_seconds": 667.0,
+      "end_seconds": 677.639,
+      "id": "5Gi3S6L5XYs-ja-0081",
+      "sequence": 81
+    },
+    {
+      "text": "それでは皆さん少しでもその時の状況を実感していただくためにどうぞ少しだけご起立お願いします。そして私の手吉と一緒に片足1本で5秒",
+      "start_seconds": 677.639,
+      "end_seconds": 688.76,
+      "id": "5Gi3S6L5XYs-ja-0082",
+      "sequence": 82
+    },
+    {
+      "text": "ほどダンスをしていただければありがたいです。いきましょう。せーの",
+      "start_seconds": 688.76,
+      "end_seconds": 695.16,
+      "id": "5Gi3S6L5XYs-ja-0083",
+      "sequence": 83
+    },
+    {
+      "text": "ありがとうございました。",
+      "start_seconds": 697.88,
+      "end_seconds": 701.56,
+      "id": "5Gi3S6L5XYs-ja-0084",
+      "sequence": 84
+    },
+    {
+      "text": "世界、え、今まで紹介してきた世界もつく3つの国の子供たちや他の国組で出会ってきた若者たちに共通するのは",
+      "start_seconds": 702.519,
+      "end_seconds": 714.2,
+      "id": "5Gi3S6L5XYs-ja-0085",
+      "sequence": 85
+    },
+    {
+      "text": "やってみたい。やりやすい環境やってみるということです。思い起こすとほぼ独学で他言者になった私もそれぞれのそれぞれの",
+      "start_seconds": 714.2,
+      "end_seconds": 724.88,
+      "id": "5Gi3S6L5XYs-ja-0086",
+      "sequence": 86
+    },
+    {
+      "text": "言語はその国でニーズや仕事のニーズも生活のニーズもありませんでした。でも面白そうやってみたいと思い、やりやすい",
+      "start_seconds": 724.88,
+      "end_seconds": 734.72,
+      "id": "5Gi3S6L5XYs-ja-0087",
+      "sequence": 87
+    },
+    {
+      "text": "環境を整え整え、少しずつ自分のペースでやっていくという結果でした。",
+      "start_seconds": 734.72,
+      "end_seconds": 742.48,
+      "id": "5Gi3S6L5XYs-ja-0088",
+      "sequence": 88
+    },
+    {
+      "text": "そこで気づきました。",
+      "start_seconds": 742.48,
+      "end_seconds": 744.92,
+      "id": "5Gi3S6L5XYs-ja-0089",
+      "sequence": 89
+    },
+    {
+      "text": "人を動かす、そして学びの言動力になるのはやってみたいということ。その気持ちが才能や能力も先に大事な好奇心として言動",
+      "start_seconds": 744.92,
+      "end_seconds": 755.68,
+      "id": "5Gi3S6L5XYs-ja-0090",
+      "sequence": 90
+    },
+    {
+      "text": "力となります。アインシュタインは言いました。私には特別な才能はなかった。",
+      "start_seconds": 755.68,
+      "end_seconds": 760.48,
+      "id": "5Gi3S6L5XYs-ja-0091",
+      "sequence": 91
+    },
+    {
+      "text": "ただ猛烈に好奇心があっただけだ。ではその好奇心と再開し学び続けるための3つの鍵を紹介します。1つ目は多様な世界に",
+      "start_seconds": 760.48,
+      "end_seconds": 771.399,
+      "id": "5Gi3S6L5XYs-ja-0092",
+      "sequence": 92
+    },
+    {
+      "text": "触れること。ここでは高奇士の負担を外しその状態をキープすることを目指します。",
+      "start_seconds": 771.399,
+      "end_seconds": 779.6,
+      "id": "5Gi3S6L5XYs-ja-0093",
+      "sequence": 93
+    },
+    {
+      "text": "いろんな度に出ましょう。海外だけじゃなくてもいい。普段やらないことやいろんな人本に出会いましょう。違う世界",
+      "start_seconds": 779.6,
+      "end_seconds": 788.6,
+      "id": "5Gi3S6L5XYs-ja-0094",
+      "sequence": 94
+    },
+    {
+      "text": "に触れると、あ、こんなのもあるんだと気づくことがあります。そして視野が広がり、どんどん学びたくなる。違う世界",
+      "start_seconds": 788.6,
+      "end_seconds": 798.279,
+      "id": "5Gi3S6L5XYs-ja-0095",
+      "sequence": 95
+    },
+    {
+      "text": "に触れるということは何事にも上には上がいて並びに終わりがない。そして気づかなかったことに気づく",
+      "start_seconds": 798.279,
+      "end_seconds": 808.279,
+      "id": "5Gi3S6L5XYs-ja-0096",
+      "sequence": 96
+    },
+    {
+      "text": "。そうリミッターを外し視野を広げ学びたいと思うことにつがります。2つ目の鍵。これは自分をよく知りより良い状態をに",
+      "start_seconds": 808.279,
+      "end_seconds": 818.519,
+      "id": "5Gi3S6L5XYs-ja-0097",
+      "sequence": 97
+    },
+    {
+      "text": "持っていくこと。ここでは自分をどういう方向に持っていくかを決めます。",
+      "start_seconds": 818.519,
+      "end_seconds": 824.639,
+      "id": "5Gi3S6L5XYs-ja-0098",
+      "sequence": 98
+    },
+    {
+      "text": "自分は何者で何が好きで何がやりたくて自分のペースってのはどういうものなのか。数多くの先人たちが自分を知ることの",
+      "start_seconds": 824.639,
+      "end_seconds": 834.199,
+      "id": "5Gi3S6L5XYs-ja-0099",
+      "sequence": 99
+    },
+    {
+      "text": "大切さを唱えたのもそれが本当に大切で難しいからです。",
+      "start_seconds": 834.199,
+      "end_seconds": 840.92,
+      "id": "5Gi3S6L5XYs-ja-0100",
+      "sequence": 100
+    },
+    {
+      "text": "SNSやスマホ、情報が溢れる中で自分軸、他人軸ではなく自分軸で生きることは本当に難しい。でも自分を知ること、自己認識は本当に大切になってきてます",
+      "start_seconds": 845.8,
+      "end_seconds": 857.079,
+      "id": "5Gi3S6L5XYs-ja-0101",
+      "sequence": 101
+    },
+    {
+      "text": "。",
+      "start_seconds": 857.079,
+      "end_seconds": 859.199,
+      "id": "5Gi3S6L5XYs-ja-0102",
+      "sequence": 102
+    },
+    {
+      "text": "世界の教育の調流として自己認識を含めたソーシャルエモーショナルラーニング通称Sが各国で実施されているのも希望に溢れる話です。ただこれはすごい長し長い",
+      "start_seconds": 859.199,
+      "end_seconds": 870.92,
+      "id": "5Gi3S6L5XYs-ja-0103",
+      "sequence": 103
+    },
+    {
+      "text": "話になるので、また別の日に",
+      "start_seconds": 870.92,
+      "end_seconds": 874.959,
+      "id": "5Gi3S6L5XYs-ja-0104",
+      "sequence": 104
+    },
+    {
+      "text": "打ち向きにな、自分だけ自分のことを知ると打ち向きに1人だけで考えてもどうせ自分なんてとリミッターがかかってしまうことがあるので1つ目の鍵である世界に",
+      "start_seconds": 875.92,
+      "end_seconds": 887.56,
+      "id": "5Gi3S6L5XYs-ja-0105",
+      "sequence": 105
+    },
+    {
+      "text": "触れて高奇心の蓋を外すということを並行して行いましょう。そして3つ目の鍵。",
+      "start_seconds": 887.56,
+      "end_seconds": 893.88,
+      "id": "5Gi3S6L5XYs-ja-0106",
+      "sequence": 106
+    },
+    {
+      "text": "これはとにかく行動すること。世界中で見てきた、学び続ける人たちに共通してるのはとにかく動いていること。[鼻息]しかも小さく素早く",
+      "start_seconds": 893.88,
+      "end_seconds": 904.759,
+      "id": "5Gi3S6L5XYs-ja-0107",
+      "sequence": 107
+    },
+    {
+      "text": "瞬発力がある。",
+      "start_seconds": 904.759,
+      "end_seconds": 907.36,
+      "id": "5Gi3S6L5XYs-ja-0108",
+      "sequence": 108
+    },
+    {
+      "text": "頭で分かってるんだけどねとなかなか行動が起こせない人に紹介したいのが10秒ルール。",
+      "start_seconds": 907.36,
+      "end_seconds": 916.199,
+      "id": "5Gi3S6L5XYs-ja-0109",
+      "sequence": 109
+    },
+    {
+      "text": "人生は選択肢の連続です。何をやるにしてもこれをやろうかな、どうしようかなと思う時があります。",
+      "start_seconds": 916.199,
+      "end_seconds": 924.36,
+      "id": "5Gi3S6L5XYs-ja-0110",
+      "sequence": 110
+    },
+    {
+      "text": "質問をしてみる。話しかける。目覚めた時にガバっと起きてみる。口説き文句を言ってみる。滑るかもしれないけどジョークやザりをダザリを言ってみる。何でもいい",
+      "start_seconds": 924.36,
+      "end_seconds": 935.6,
+      "id": "5Gi3S6L5XYs-ja-0111",
+      "sequence": 111
+    },
+    {
+      "text": "んです。",
+      "start_seconds": 935.6,
+      "end_seconds": 937.399,
+      "id": "5Gi3S6L5XYs-ja-0112",
+      "sequence": 112
+    },
+    {
+      "text": "何かに迷った時、頭の中で10秒のカウントダウンを描いても頭に描いてみてください。",
+      "start_seconds": 937.399,
+      "end_seconds": 946.04,
+      "id": "5Gi3S6L5XYs-ja-0113",
+      "sequence": 113
+    },
+    {
+      "text": "10987。そしてそれが0になる前にエイヤと行動してみる。なぜなら好奇心は時間が経つと",
+      "start_seconds": 946.04,
+      "end_seconds": 956.839,
+      "id": "5Gi3S6L5XYs-ja-0114",
+      "sequence": 114
+    },
+    {
+      "text": "薄れ考えすぎるほど行動できなくなるからです。",
+      "start_seconds": 956.839,
+      "end_seconds": 961.68,
+      "id": "5Gi3S6L5XYs-ja-0115",
+      "sequence": 115
+    },
+    {
+      "text": "これは実は演劇時代の本番10秒前というのとメルロビンさんの5秒ルールという本にヒントをもらって改良したものです。",
+      "start_seconds": 961.68,
+      "end_seconds": 971.399,
+      "id": "5Gi3S6L5XYs-ja-0116",
+      "sequence": 116
+    },
+    {
+      "text": "それらをつなげて頭でイメージを描いてみてください。",
+      "start_seconds": 971.399,
+      "end_seconds": 976.399,
+      "id": "5Gi3S6L5XYs-ja-0117",
+      "sequence": 117
+    },
+    {
+      "text": "10秒間98そして5秒で止めてみる。",
+      "start_seconds": 976.399,
+      "end_seconds": 982.92,
+      "id": "5Gi3S6L5XYs-ja-0118",
+      "sequence": 118
+    },
+    {
+      "text": "それまでにやってみる。",
+      "start_seconds": 982.92,
+      "end_seconds": 985.24,
+      "id": "5Gi3S6L5XYs-ja-0119",
+      "sequence": 119
+    },
+    {
+      "text": "その5をイメージしてみるとCの逆のような文字になる。そしてもう1回10秒ルールの10を持ってくる。",
+      "start_seconds": 985.24,
+      "end_seconds": 994.48,
+      "id": "5Gi3S6L5XYs-ja-0120",
+      "sequence": 120
+    },
+    {
+      "text": "それらをつげるとなんとどこかで見たことになるdoになります。",
+      "start_seconds": 994.48,
+      "end_seconds": 1003.16,
+      "id": "5Gi3S6L5XYs-ja-0121",
+      "sequence": 121
+    },
+    {
+      "text": "何かに迷った時は是非ゲーム感覚でやってみてください。ただこれを悪いことに使うのはやめてください。ははかげ様で[荒い息][ため息]10秒",
+      "start_seconds": 1003.16,
+      "end_seconds": 1013.44,
+      "id": "5Gi3S6L5XYs-ja-0122",
+      "sequence": 122
+    },
+    {
+      "text": "ルールで銀行動できましたというのはやめてください。私は一切",
+      "start_seconds": 1013.44,
+      "end_seconds": 1016.44,
+      "id": "5Gi3S6L5XYs-ja-0123",
+      "sequence": 123
+    },
+    {
+      "text": "責任を取りません。もしこの",
+      "start_seconds": 1017.0,
+      "end_seconds": 1020.0,
+      "id": "5Gi3S6L5XYs-ja-0124",
+      "sequence": 124
+    },
+    {
+      "text": "10秒というのが前に進み学ぶチャンスだとしたら実は1年間の間に食事や、仕事やないも",
+      "start_seconds": 1020.519,
+      "end_seconds": 1028.3600000000001,
+      "id": "5Gi3S6L5XYs-ja-0125",
+      "sequence": 125
+    },
+    {
+      "text": "100万以上のチャンスが訪れます。",
+      "start_seconds": 1029.4,
+      "end_seconds": 1032.16,
+      "id": "5Gi3S6L5XYs-ja-0126",
+      "sequence": 126
+    },
+    {
+      "text": "もしよければこの10秒というのを学び続けるための3つの鍵に使って新しい",
+      "start_seconds": 1032.16,
+      "end_seconds": 1039.36,
+      "id": "5Gi3S6L5XYs-ja-0127",
+      "sequence": 127
+    },
+    {
+      "text": "世界の扉を開けてみませんか?",
+      "start_seconds": 1039.36,
+      "end_seconds": 1044.52,
+      "id": "5Gi3S6L5XYs-ja-0128",
+      "sequence": 128
+    },
+    {
+      "text": "今日紹介した3つのもの国の若者や他の国々で学んできた人たちもこの3つの鍵を備わ持っていたと思います。世界を知ること、自分を知ること、そして行動する",
+      "start_seconds": 1044.52,
+      "end_seconds": 1056.4,
+      "id": "5Gi3S6L5XYs-ja-0129",
+      "sequence": 129
+    },
+    {
+      "text": "こと私も常に持ち歩くようにはしています。",
+      "start_seconds": 1056.4,
+      "end_seconds": 1060.72,
+      "id": "5Gi3S6L5XYs-ja-0130",
+      "sequence": 130
+    },
+    {
+      "text": "さて、男や演劇、料理や国連、18カ国を経て、あ、18年間海外生活を経て私は",
+      "start_seconds": 1060.72,
+      "end_seconds": 1071.16,
+      "id": "5Gi3S6L5XYs-ja-0131",
+      "sequence": 131
+    },
+    {
+      "text": "日本に戻ってきました。",
+      "start_seconds": 1071.16,
+      "end_seconds": 1075.039,
+      "id": "5Gi3S6L5XYs-ja-0132",
+      "sequence": 132
+    },
+    {
+      "text": "そこは神戸、元なき祖母が運営していた小さな要塞学校の、後地の物置き、そこで始めたのが日り団体グローバル学びア",
+      "start_seconds": 1075.4,
+      "end_seconds": 1084.28,
+      "id": "5Gi3S6L5XYs-ja-0133",
+      "sequence": 133
+    },
+    {
+      "text": "ミエルです。ここでは世界の料理を囲み美味しく食べて作ってそしていろんな国のアートや遊びゲーム",
+      "start_seconds": 1084.28,
+      "end_seconds": 1096.12,
+      "id": "5Gi3S6L5XYs-ja-0134",
+      "sequence": 134
+    },
+    {
+      "text": "肺材を使って何かを作る。国籍や年齢を超えていろんな人が繋がる。そして実践を通した楽しい学びの場がある。そして自分",
+      "start_seconds": 1096.12,
+      "end_seconds": 1107.08,
+      "id": "5Gi3S6L5XYs-ja-0135",
+      "sequence": 135
+    },
+    {
+      "text": "自身も知る一見バラバラのようなものをつげ合わせて新しい世界が見えるきっかけ作りをしています。ここで大事にしてるのは3つのLンリブラブ",
+      "start_seconds": 1107.08,
+      "end_seconds": 1118.919,
+      "id": "5Gi3S6L5XYs-ja-0136",
+      "sequence": 136
+    },
+    {
+      "text": "学ぶ生きる自分を大切にする世界を世界が見えることで自分自身が見える自分が見えることで世界がもっと見えてくる",
+      "start_seconds": 1119.2,
+      "end_seconds": 1131.12,
+      "id": "5Gi3S6L5XYs-ja-0137",
+      "sequence": 137
+    },
+    {
+      "text": "答えのない激道の時代ですがdoを続けています。そして分かっていることは学びとは知識を増やすことだけではなく新しい",
+      "start_seconds": 1131.12,
+      "end_seconds": 1142.6,
+      "id": "5Gi3S6L5XYs-ja-0138",
+      "sequence": 138
+    },
+    {
+      "text": "世界を見ること。もし皆さんが最近学ぶ気力がないな、学んでないなと思った時はもしかしてまだ知らない世界や自分最初の一歩を踏み出してないだけかもしれません",
+      "start_seconds": 1142.6,
+      "end_seconds": 1154.559,
+      "id": "5Gi3S6L5XYs-ja-0139",
+      "sequence": 139
+    },
+    {
+      "text": "。",
+      "start_seconds": 1154.559,
+      "end_seconds": 1156.679,
+      "id": "5Gi3S6L5XYs-ja-0140",
+      "sequence": 140
+    },
+    {
+      "text": "好奇心は誰もが持ちます。その蓋を外すのはに年齢は関係ありません。",
+      "start_seconds": 1156.679,
+      "end_seconds": 1164.28,
+      "id": "5Gi3S6L5XYs-ja-0141",
+      "sequence": 141
+    },
+    {
+      "text": "世界はまだまだ広い。",
+      "start_seconds": 1164.28,
+      "end_seconds": 1167.0,
+      "id": "5Gi3S6L5XYs-ja-0142",
+      "sequence": 142
+    },
+    {
+      "text": "これからの10秒の連続の人生。我々はどんな新しい世界が見えるでしょうか?ご成聴ありがとうございました。",
+      "start_seconds": 1167.0,
+      "end_seconds": 1174.159,
+      "id": "5Gi3S6L5XYs-ja-0143",
+      "sequence": 143
+    },
+    {
+      "text": "thanキュー。グラスOB[拍手]",
+      "start_seconds": 1174.159,
+      "end_seconds": 1181.033,
+      "id": "5Gi3S6L5XYs-ja-0144",
+      "sequence": 144
+    }
+  ],
+  "raw_captions": [
+    {
+      "text": "[拍手]",
+      "start_seconds": 5.239,
+      "end_seconds": 7.259
+    },
+    {
+      "text": "いきなりですが、皆さんにとって学びとは",
+      "start_seconds": 9.28,
+      "end_seconds": 15.518999999999998
+    },
+    {
+      "text": "何でしょうか?",
+      "start_seconds": 13.08,
+      "end_seconds": 18.119
+    },
+    {
+      "text": "良い成績を取ること、資格を取ること、",
+      "start_seconds": 15.519,
+      "end_seconds": 20.32
+    },
+    {
+      "text": "知識を増やすことなど色々あるかもしれ",
+      "start_seconds": 18.119,
+      "end_seconds": 25.439
+    },
+    {
+      "text": "ません。辞書によると学びとは勉強や教え",
+      "start_seconds": 20.32,
+      "end_seconds": 30.240000000000002
+    },
+    {
+      "text": "を通して知識やスキルを身につける。",
+      "start_seconds": 25.439,
+      "end_seconds": 33.6
+    },
+    {
+      "text": "私にとって学びとは見えなかった世界が",
+      "start_seconds": 30.24,
+      "end_seconds": 36.92
+    },
+    {
+      "text": "見えるようになること。",
+      "start_seconds": 33.6,
+      "end_seconds": 39.2
+    },
+    {
+      "text": "単に知識を増やすだけではありません。",
+      "start_seconds": 36.92,
+      "end_seconds": 41.52
+    },
+    {
+      "text": "もし学んだことを忘れてしまったらそれは",
+      "start_seconds": 39.2,
+      "end_seconds": 44.079
+    },
+    {
+      "text": "暗記だったのかもしれません。学びとは",
+      "start_seconds": 41.52,
+      "end_seconds": 47.079
+    },
+    {
+      "text": "本来自分の中で変化を感じておることだと",
+      "start_seconds": 44.079,
+      "end_seconds": 50.0
+    },
+    {
+      "text": "思っています。自分の好きな匂いに出会う",
+      "start_seconds": 47.079,
+      "end_seconds": 54.079
+    },
+    {
+      "text": "、自分らしさに出会う地球の裏側で人生感",
+      "start_seconds": 50.0,
+      "end_seconds": 55.76
+    },
+    {
+      "text": "がひっくり返える",
+      "start_seconds": 54.079,
+      "end_seconds": 58.519
+    },
+    {
+      "text": "など多に渡ります。",
+      "start_seconds": 55.76,
+      "end_seconds": 62.199
+    },
+    {
+      "text": "ではここでもう1つ。昔この中で赤ちゃん",
+      "start_seconds": 58.519,
+      "end_seconds": 65.72
+    },
+    {
+      "text": "だったという人はいますか?",
+      "start_seconds": 62.199,
+      "end_seconds": 67.759
+    },
+    {
+      "text": "はい。まだまだ人間の集まりがいるという",
+      "start_seconds": 65.72,
+      "end_seconds": 71.56
+    },
+    {
+      "text": "ことで安心しました。では赤ちゃんだった",
+      "start_seconds": 67.759,
+      "end_seconds": 74.92
+    },
+    {
+      "text": "時に歩くための学校に行ったという人はい",
+      "start_seconds": 71.56,
+      "end_seconds": 76.92
+    },
+    {
+      "text": "ますか?",
+      "start_seconds": 74.92,
+      "end_seconds": 81.07900000000001
+    },
+    {
+      "text": "いませんね。赤ちゃんは数ヶ月の青向け",
+      "start_seconds": 76.92,
+      "end_seconds": 84.759
+    },
+    {
+      "text": "生活を経て願いりし",
+      "start_seconds": 81.079,
+      "end_seconds": 88.39999999999999
+    },
+    {
+      "text": "た立ち、そして何度こけても立ち上がる。",
+      "start_seconds": 84.759,
+      "end_seconds": 91.6
+    },
+    {
+      "text": "気づけば歩けるようになっている。誰に",
+      "start_seconds": 88.4,
+      "end_seconds": 93.72
+    },
+    {
+      "text": "言われたわけでも学校に行ったわけでも",
+      "start_seconds": 91.6,
+      "end_seconds": 97.439
+    },
+    {
+      "text": "ありません。そう、人は本来学びたい",
+      "start_seconds": 93.72,
+      "end_seconds": 100.28
+    },
+    {
+      "text": "生き物、いやもっと言うと新しい世界を見",
+      "start_seconds": 97.439,
+      "end_seconds": 104.39899999999999
+    },
+    {
+      "text": "たい生き物です。でも大人になるにつれて",
+      "start_seconds": 100.28,
+      "end_seconds": 106.92
+    },
+    {
+      "text": "学ばない人が増えてくる。それはなぜ",
+      "start_seconds": 104.399,
+      "end_seconds": 109.159
+    },
+    {
+      "text": "でしょうか?",
+      "start_seconds": 106.92,
+      "end_seconds": 112.479
+    },
+    {
+      "text": "私はそれは好奇心に蓋をしてしまうからだ",
+      "start_seconds": 109.159,
+      "end_seconds": 114.92
+    },
+    {
+      "text": "と思っています。",
+      "start_seconds": 112.479,
+      "end_seconds": 117.15899999999999
+    },
+    {
+      "text": "失敗したらどうしよう。周りの目が気に",
+      "start_seconds": 114.92,
+      "end_seconds": 120.52
+    },
+    {
+      "text": "なる。外に出るのが怖い。初心者に戻り",
+      "start_seconds": 117.159,
+      "end_seconds": 123.92
+    },
+    {
+      "text": "たくない。時間がない。お金がない。人は",
+      "start_seconds": 120.52,
+      "end_seconds": 127.67999999999999
+    },
+    {
+      "text": "いろんな理由で国奇に負担をします。",
+      "start_seconds": 123.92,
+      "end_seconds": 131.12
+    },
+    {
+      "text": "でも一方で変化の激しい時代の中で",
+      "start_seconds": 127.68,
+      "end_seconds": 134.08
+    },
+    {
+      "text": "学び直しや学び続けることの大切さは多く",
+      "start_seconds": 131.12,
+      "end_seconds": 136.8
+    },
+    {
+      "text": "の人が実感しています。",
+      "start_seconds": 134.08,
+      "end_seconds": 141.48000000000002
+    },
+    {
+      "text": "今日は私が世界ご大陸で学んだ",
+      "start_seconds": 136.8,
+      "end_seconds": 144.31900000000002
+    },
+    {
+      "text": "後好奇心と再開し学び続けるためのヒント",
+      "start_seconds": 141.48,
+      "end_seconds": 148.51899999999998
+    },
+    {
+      "text": "をについてお話しします。",
+      "start_seconds": 144.319,
+      "end_seconds": 151.83999999999997
+    },
+    {
+      "text": "私は世界ご大陸に住み国連などを経て50",
+      "start_seconds": 148.519,
+      "end_seconds": 155.36
+    },
+    {
+      "text": "カ国以上の教育支援をしてほぼ独学で6年",
+      "start_seconds": 151.84,
+      "end_seconds": 158.68
+    },
+    {
+      "text": "後以上話せるようになりました。日本語、",
+      "start_seconds": 155.36,
+      "end_seconds": 161.4
+    },
+    {
+      "text": "英語、スペイン語、フランス語、",
+      "start_seconds": 158.68,
+      "end_seconds": 164.84
+    },
+    {
+      "text": "ポルトガル語、そして最も習得が難しいと",
+      "start_seconds": 161.4,
+      "end_seconds": 168.92000000000002
+    },
+    {
+      "text": "言われる関西弁です。",
+      "start_seconds": 164.84,
+      "end_seconds": 171.879
+    },
+    {
+      "text": "経歴の一部だけを見るとエリートだねと",
+      "start_seconds": 168.92,
+      "end_seconds": 174.95899999999997
+    },
+    {
+      "text": "思われることはありますが、私の中学生",
+      "start_seconds": 171.879,
+      "end_seconds": 178.39999999999998
+    },
+    {
+      "text": "時代は落ちこぼれでした。",
+      "start_seconds": 174.959,
+      "end_seconds": 181.92000000000002
+    },
+    {
+      "text": "勉強もダめ、運動も苦手。唯一得意だった",
+      "start_seconds": 178.4,
+      "end_seconds": 184.31900000000002
+    },
+    {
+      "text": "のは人の家に上がり込んではポテト",
+      "start_seconds": 181.92,
+      "end_seconds": 187.55999999999997
+    },
+    {
+      "text": "チップスを食べてゲームをする。",
+      "start_seconds": 184.319,
+      "end_seconds": 191.319
+    },
+    {
+      "text": "気づけば歩くだけでまたれがして血が出る",
+      "start_seconds": 187.56,
+      "end_seconds": 193.519
+    },
+    {
+      "text": "ぐらいのまるまる太った中学生になってい",
+      "start_seconds": 191.319,
+      "end_seconds": 195.83999999999997
+    },
+    {
+      "text": "ました。",
+      "start_seconds": 193.519,
+      "end_seconds": 198.36
+    },
+    {
+      "text": "でも高奇心だけはありました。だから授業",
+      "start_seconds": 195.84,
+      "end_seconds": 201.0
+    },
+    {
+      "text": "中によく質問していたんです。すると先生",
+      "start_seconds": 198.36,
+      "end_seconds": 204.44000000000003
+    },
+    {
+      "text": "からある日言われました。もう質問やめて",
+      "start_seconds": 201.0,
+      "end_seconds": 207.519
+    },
+    {
+      "text": "授業にならんわ。",
+      "start_seconds": 204.44,
+      "end_seconds": 210.439
+    },
+    {
+      "text": "その瞬間ショックと共に自分の中の好奇心",
+      "start_seconds": 207.519,
+      "end_seconds": 214.519
+    },
+    {
+      "text": "に静かに蓋が降りてきました。",
+      "start_seconds": 210.439,
+      "end_seconds": 217.07999999999998
+    },
+    {
+      "text": "私は放課後でも落ちこぼれ",
+      "start_seconds": 214.519,
+      "end_seconds": 220.48000000000002
+    },
+    {
+      "text": "陸上部の長距離に所属していた私は",
+      "start_seconds": 217.08,
+      "end_seconds": 222.959
+    },
+    {
+      "text": "周りのペースについていけず疲れたらすぐ",
+      "start_seconds": 220.48,
+      "end_seconds": 224.92
+    },
+    {
+      "text": "歩く。",
+      "start_seconds": 222.959,
+      "end_seconds": 229.56
+    },
+    {
+      "text": "歩きながら瞑想して風の音を感じ",
+      "start_seconds": 224.92,
+      "end_seconds": 231.64
+    },
+    {
+      "text": "リラックス",
+      "start_seconds": 229.56,
+      "end_seconds": 234.239
+    },
+    {
+      "text": "なんてことありません。ずっと歩きながら",
+      "start_seconds": 231.64,
+      "end_seconds": 237.23899999999998
+    },
+    {
+      "text": "下向いて辛いやめたい。なんでこんなこと",
+      "start_seconds": 234.239,
+      "end_seconds": 241.64000000000001
+    },
+    {
+      "text": "をとそんな日々が続きました。",
+      "start_seconds": 237.239,
+      "end_seconds": 243.64000000000001
+    },
+    {
+      "text": "そんなやらせない日々が続いて1年半が",
+      "start_seconds": 241.64,
+      "end_seconds": 247.319
+    },
+    {
+      "text": "経ったある日、部員から理不尽にられ部活",
+      "start_seconds": 243.64,
+      "end_seconds": 250.0
+    },
+    {
+      "text": "を辞めました。",
+      "start_seconds": 247.319,
+      "end_seconds": 252.83999999999997
+    },
+    {
+      "text": "東方に暮れた次の日の放課後、不思議な",
+      "start_seconds": 250.0,
+      "end_seconds": 255.92
+    },
+    {
+      "text": "ことになぜか足はいつもの河川敷の",
+      "start_seconds": 252.84,
+      "end_seconds": 259.359
+    },
+    {
+      "text": "ランディングコースに向かっていました。",
+      "start_seconds": 255.92,
+      "end_seconds": 263.28
+    },
+    {
+      "text": "もう1度だけ走ってみようかなと心の即で",
+      "start_seconds": 259.359,
+      "end_seconds": 267.56
+    },
+    {
+      "text": "心の奥で声がしたのです。",
+      "start_seconds": 263.28,
+      "end_seconds": 267.55999999999995
+    },
+    {
+      "text": "まるまる太った自分も目の前のコースも",
+      "start_seconds": 268.0,
+      "end_seconds": 273.6
+    },
+    {
+      "text": "昨日までと何も変わりません。唯一違うの",
+      "start_seconds": 271.039,
+      "end_seconds": 275.84
+    },
+    {
+      "text": "は周りに合わせるべきグループがいないと",
+      "start_seconds": 273.6,
+      "end_seconds": 280.28000000000003
+    },
+    {
+      "text": "いうこと。すると結果驚きでした。4km",
+      "start_seconds": 275.84,
+      "end_seconds": 283.23999999999995
+    },
+    {
+      "text": "ぐらいの河敷のコースを疲れずに乾燥でき",
+      "start_seconds": 280.28,
+      "end_seconds": 286.55999999999995
+    },
+    {
+      "text": "たのです。周りに合わせずに自分のペース",
+      "start_seconds": 283.24,
+      "end_seconds": 289.6
+    },
+    {
+      "text": "で走ったからでした。",
+      "start_seconds": 286.56,
+      "end_seconds": 293.72
+    },
+    {
+      "text": "そこで18ヶ月下を向いて歩いたコースを",
+      "start_seconds": 289.6,
+      "end_seconds": 297.16
+    },
+    {
+      "text": "初めて前を向いて走れた。",
+      "start_seconds": 293.72,
+      "end_seconds": 300.32000000000005
+    },
+    {
+      "text": "そこで気づきました。",
+      "start_seconds": 297.16,
+      "end_seconds": 304.91900000000004
+    },
+    {
+      "text": "風の音、自分の呼吸、青い空や緑や水が",
+      "start_seconds": 300.32,
+      "end_seconds": 309.44
+    },
+    {
+      "text": "広がる景色、川の匂い。そして思いました",
+      "start_seconds": 304.919,
+      "end_seconds": 313.52
+    },
+    {
+      "text": "。ああ、ここはこんな綺麗な世界やったん",
+      "start_seconds": 309.44,
+      "end_seconds": 315.4
+    },
+    {
+      "text": "か。",
+      "start_seconds": 313.52,
+      "end_seconds": 319.28
+    },
+    {
+      "text": "こんな自分でもできるんかなと胸が震えた",
+      "start_seconds": 315.4,
+      "end_seconds": 321.59999999999997
+    },
+    {
+      "text": "瞬間でした。",
+      "start_seconds": 319.28,
+      "end_seconds": 325.039
+    },
+    {
+      "text": "あの日私は塞がりていた後期と再開しまし",
+      "start_seconds": 321.6,
+      "end_seconds": 331.52000000000004
+    },
+    {
+      "text": "た。まさに新しい世界が見えた瞬間、",
+      "start_seconds": 325.039,
+      "end_seconds": 333.59999999999997
+    },
+    {
+      "text": "マイペースできることを覚えてからは",
+      "start_seconds": 331.52,
+      "end_seconds": 337.71999999999997
+    },
+    {
+      "text": "いろんなものをに手をつけました。",
+      "start_seconds": 333.6,
+      "end_seconds": 340.72
+    },
+    {
+      "text": "教育",
+      "start_seconds": 337.72,
+      "end_seconds": 340.72
+    },
+    {
+      "text": "ダンス",
+      "start_seconds": 342.68,
+      "end_seconds": 345.68
+    },
+    {
+      "text": "都米して演劇",
+      "start_seconds": 345.88,
+      "end_seconds": 351.319
+    },
+    {
+      "text": "料理",
+      "start_seconds": 348.919,
+      "end_seconds": 354.71999999999997
+    },
+    {
+      "text": "世界の教育どれも一見バラバラなような",
+      "start_seconds": 351.319,
+      "end_seconds": 357.52000000000004
+    },
+    {
+      "text": "ものに見えますが全て好奇心が次の世界に",
+      "start_seconds": 354.72,
+      "end_seconds": 360.72
+    },
+    {
+      "text": "連れて行ってくれました。",
+      "start_seconds": 357.52,
+      "end_seconds": 362.919
+    },
+    {
+      "text": "質問やめてと言われて、あの環境を何とか",
+      "start_seconds": 360.72,
+      "end_seconds": 365.56
+    },
+    {
+      "text": "したいと思う教育に",
+      "start_seconds": 362.919,
+      "end_seconds": 368.639
+    },
+    {
+      "text": "言語を超えて自己表現し人が繋がるダンス",
+      "start_seconds": 365.56,
+      "end_seconds": 370.68
+    },
+    {
+      "text": "。",
+      "start_seconds": 368.639,
+      "end_seconds": 373.8
+    },
+    {
+      "text": "教育とダンスを通して人を動かし学びを",
+      "start_seconds": 370.68,
+      "end_seconds": 379.52
+    },
+    {
+      "text": "動かすのは表現力と思い米して演劇に。",
+      "start_seconds": 373.8,
+      "end_seconds": 383.68
+    },
+    {
+      "text": "そこで始めた自炊が楽しくて料理の世界に",
+      "start_seconds": 379.52,
+      "end_seconds": 386.12
+    },
+    {
+      "text": "そして",
+      "start_seconds": 383.68,
+      "end_seconds": 389.40000000000003
+    },
+    {
+      "text": "料理人時代の同僚たちを通して世界の各者",
+      "start_seconds": 386.12,
+      "end_seconds": 393.639
+    },
+    {
+      "text": "境を実感し世界の教育へ",
+      "start_seconds": 389.4,
+      "end_seconds": 398.75899999999996
+    },
+    {
+      "text": "気がつけば世界ご大陸に住んでいました。",
+      "start_seconds": 393.639,
+      "end_seconds": 403.199
+    },
+    {
+      "text": "灼熱の砂漠極感の草減",
+      "start_seconds": 398.759,
+      "end_seconds": 406.36
+    },
+    {
+      "text": "終日真っ暗な空間もあれば太陽が照り続け",
+      "start_seconds": 403.199,
+      "end_seconds": 408.56
+    },
+    {
+      "text": "てる日々もある。",
+      "start_seconds": 406.36,
+      "end_seconds": 411.56
+    },
+    {
+      "text": "気合だけではなく世界では宗教や文化、",
+      "start_seconds": 408.56,
+      "end_seconds": 415.16
+    },
+    {
+      "text": "価値観も食べるものも挨拶の仕方も恋愛の",
+      "start_seconds": 411.56,
+      "end_seconds": 418.0
+    },
+    {
+      "text": "仕方も違う。",
+      "start_seconds": 415.16,
+      "end_seconds": 419.8
+    },
+    {
+      "text": "そして",
+      "start_seconds": 418.0,
+      "end_seconds": 422.4
+    },
+    {
+      "text": "世界に出て気づきました。違いに触れると",
+      "start_seconds": 419.8,
+      "end_seconds": 425.52000000000004
+    },
+    {
+      "text": "いうことは自分のいたところや自分自身が",
+      "start_seconds": 422.4,
+      "end_seconds": 429.479
+    },
+    {
+      "text": "見えるということ。人はよく",
+      "start_seconds": 425.52,
+      "end_seconds": 431.79999999999995
+    },
+    {
+      "text": "コンフォートゾーンから抜けようという話",
+      "start_seconds": 429.479,
+      "end_seconds": 435.28
+    },
+    {
+      "text": "をします。でも実は自分がそこにいる",
+      "start_seconds": 431.8,
+      "end_seconds": 438.28000000000003
+    },
+    {
+      "text": "ところに慣れているだけで居心地が悪いと",
+      "start_seconds": 435.28,
+      "end_seconds": 440.75899999999996
+    },
+    {
+      "text": "いうことにも気づかないこともあります。",
+      "start_seconds": 438.28,
+      "end_seconds": 443.08
+    },
+    {
+      "text": "例えばずっと暑いところ、寒いところ、",
+      "start_seconds": 440.759,
+      "end_seconds": 445.68
+    },
+    {
+      "text": "暗いところ、寒いところにいる人がそれが",
+      "start_seconds": 443.08,
+      "end_seconds": 449.24
+    },
+    {
+      "text": "当たり前だと思ってしまうように。でも",
+      "start_seconds": 445.68,
+      "end_seconds": 452.84000000000003
+    },
+    {
+      "text": "違う世界に触れると自分が居心地がい",
+      "start_seconds": 449.24,
+      "end_seconds": 456.039
+    },
+    {
+      "text": "られる環境に気づくこともあります。",
+      "start_seconds": 452.84,
+      "end_seconds": 459.15999999999997
+    },
+    {
+      "text": "どこぞの元陸上部員が1人で河川軸走った",
+      "start_seconds": 456.039,
+      "end_seconds": 462.479
+    },
+    {
+      "text": "かのように",
+      "start_seconds": 459.16,
+      "end_seconds": 462.47900000000004
+    },
+    {
+      "text": "ご大陸で50カ国以上の教育支援をし、",
+      "start_seconds": 465.44,
+      "end_seconds": 472.879
+    },
+    {
+      "text": "ある不思議なことに気づきました。世界で",
+      "start_seconds": 470.12,
+      "end_seconds": 477.12
+    },
+    {
+      "text": "は文化や宗教価値観も違うのになぜか教育",
+      "start_seconds": 472.879,
+      "end_seconds": 480.319
+    },
+    {
+      "text": "だけは驚くほど似ていたんです。同じよう",
+      "start_seconds": 477.12,
+      "end_seconds": 483.039
+    },
+    {
+      "text": "な構成、同じような当たり前、同じような",
+      "start_seconds": 480.319,
+      "end_seconds": 486.639
+    },
+    {
+      "text": "こあるべきまるで世界中で教育メニューと",
+      "start_seconds": 483.039,
+      "end_seconds": 488.96
+    },
+    {
+      "text": "いう定職が提供されているような感覚でし",
+      "start_seconds": 486.639,
+      "end_seconds": 493.12
+    },
+    {
+      "text": "た。そのような中、そして大変な環境でも",
+      "start_seconds": 488.96,
+      "end_seconds": 495.96
+    },
+    {
+      "text": "学び続けたいと意欲を燃やしている若者",
+      "start_seconds": 493.12,
+      "end_seconds": 499.8
+    },
+    {
+      "text": "たちにも出会ってきました。今日は世界も",
+      "start_seconds": 495.96,
+      "end_seconds": 502.039
+    },
+    {
+      "text": "のつく3つの国の紹介をしたいと思います",
+      "start_seconds": 499.8,
+      "end_seconds": 503.68
+    },
+    {
+      "text": "。",
+      "start_seconds": 502.039,
+      "end_seconds": 506.8
+    },
+    {
+      "text": "1つ目はモンゴル",
+      "start_seconds": 503.68,
+      "end_seconds": 510.0
+    },
+    {
+      "text": "標40度以下畜",
+      "start_seconds": 506.8,
+      "end_seconds": 513.0
+    },
+    {
+      "text": "の世話をし学校を何ヶ月以上も休んだ遊国",
+      "start_seconds": 510.0,
+      "end_seconds": 515.88
+    },
+    {
+      "text": "民生隊の子供たち",
+      "start_seconds": 513.0,
+      "end_seconds": 518.399
+    },
+    {
+      "text": "やっとのことで学校に戻ってきて親元離れ",
+      "start_seconds": 515.88,
+      "end_seconds": 520.68
+    },
+    {
+      "text": "て両生活が始まり",
+      "start_seconds": 518.399,
+      "end_seconds": 523.24
+    },
+    {
+      "text": "夜は寒い中外にあるトイレにも行かなきゃ",
+      "start_seconds": 520.68,
+      "end_seconds": 527.279
+    },
+    {
+      "text": "いけない食事を管理も自分でそんな大変な",
+      "start_seconds": 523.24,
+      "end_seconds": 531.279
+    },
+    {
+      "text": "環境にいてでも学びたいと意欲を燃やす",
+      "start_seconds": 527.279,
+      "end_seconds": 534.68
+    },
+    {
+      "text": "若者たちに出会ってきました。彼らは彼女",
+      "start_seconds": 531.279,
+      "end_seconds": 537.16
+    },
+    {
+      "text": "らは教育の機会を奪われたからこそその",
+      "start_seconds": 534.68,
+      "end_seconds": 539.8
+    },
+    {
+      "text": "学びたいという熱い投資は極家の中でも",
+      "start_seconds": 537.16,
+      "end_seconds": 543.399
+    },
+    {
+      "text": "覚めなかったのかもしれしれません。次は",
+      "start_seconds": 539.8,
+      "end_seconds": 547.76
+    },
+    {
+      "text": "モザンビク。ここでは生徒1人1人が教室",
+      "start_seconds": 543.399,
+      "end_seconds": 550.68
+    },
+    {
+      "text": "に入る前に自分の好きな挨拶を先生とし",
+      "start_seconds": 547.76,
+      "end_seconds": 554.3199999999999
+    },
+    {
+      "text": "ました。当時",
+      "start_seconds": 550.68,
+      "end_seconds": 557.8389999999999
+    },
+    {
+      "text": "先生は生徒の名前を覚えることも1人1人",
+      "start_seconds": 554.32,
+      "end_seconds": 561.0400000000001
+    },
+    {
+      "text": "と挨拶することもありませんでした。",
+      "start_seconds": 557.839,
+      "end_seconds": 564.32
+    },
+    {
+      "text": "先生1人当たりに70人以上生徒がいたの",
+      "start_seconds": 561.04,
+      "end_seconds": 567.36
+    },
+    {
+      "text": "もその国では当たり前でした。でも朝の",
+      "start_seconds": 564.32,
+      "end_seconds": 570.88
+    },
+    {
+      "text": "選べる挨拶を取り入れてからは人間関係や",
+      "start_seconds": 567.36,
+      "end_seconds": 574.519
+    },
+    {
+      "text": "教室の空気が一変したんです。",
+      "start_seconds": 570.88,
+      "end_seconds": 580.88
+    },
+    {
+      "text": "ハグ、ハ立ち、肘ち、握手、ジャンプ",
+      "start_seconds": 574.519,
+      "end_seconds": 583.44
+    },
+    {
+      "text": "選ばないというのもある。",
+      "start_seconds": 580.88,
+      "end_seconds": 586.959
+    },
+    {
+      "text": "先生はそれに対応する。答えがない楽しい",
+      "start_seconds": 583.44,
+      "end_seconds": 588.8800000000001
+    },
+    {
+      "text": "。",
+      "start_seconds": 586.959,
+      "end_seconds": 592.4799999999999
+    },
+    {
+      "text": "教室に入った時はすでに安心安全な学び",
+      "start_seconds": 588.88,
+      "end_seconds": 595.2
+    },
+    {
+      "text": "やすい環境ができていました。",
+      "start_seconds": 592.48,
+      "end_seconds": 598.6
+    },
+    {
+      "text": "そして最後のこれは今でも忘れられない",
+      "start_seconds": 595.2,
+      "end_seconds": 602.0
+    },
+    {
+      "text": "モ谷ニアで出会った若者です。難民支援を",
+      "start_seconds": 598.6,
+      "end_seconds": 605.0790000000001
+    },
+    {
+      "text": "していた私は若者たちが自分の好きな種類",
+      "start_seconds": 602.0,
+      "end_seconds": 607.2
+    },
+    {
+      "text": "のワークショップを選ぶということを実施",
+      "start_seconds": 605.079,
+      "end_seconds": 610.8389999999999
+    },
+    {
+      "text": "しており、私はダンス担当でした。",
+      "start_seconds": 607.2,
+      "end_seconds": 614.1600000000001
+    },
+    {
+      "text": "すると絵を描くワークショップの会場から",
+      "start_seconds": 610.839,
+      "end_seconds": 617.24
+    },
+    {
+      "text": "1人の若者が抜け出してきて僕もダンスを",
+      "start_seconds": 614.16,
+      "end_seconds": 621.04
+    },
+    {
+      "text": "したい。と言ってきました。",
+      "start_seconds": 617.24,
+      "end_seconds": 623.8
+    },
+    {
+      "text": "なんとその子は片足が1本なかったんです",
+      "start_seconds": 621.04,
+      "end_seconds": 628.279
+    },
+    {
+      "text": "。もちろんいいよと心よく迎え、その子は",
+      "start_seconds": 623.8,
+      "end_seconds": 631.68
+    },
+    {
+      "text": "片足でぴょんぴょんと全力で踊りました。",
+      "start_seconds": 628.279,
+      "end_seconds": 635.639
+    },
+    {
+      "text": "我々も手押師と一緒に片足でダンスして",
+      "start_seconds": 631.68,
+      "end_seconds": 639.4799999999999
+    },
+    {
+      "text": "迎えました。会場大盛り上がり。そして",
+      "start_seconds": 635.639,
+      "end_seconds": 643.839
+    },
+    {
+      "text": "その後その子は私のとこに来ていました。",
+      "start_seconds": 639.48,
+      "end_seconds": 647.6
+    },
+    {
+      "text": "今日で僕の人生が変わった。",
+      "start_seconds": 643.839,
+      "end_seconds": 650.36
+    },
+    {
+      "text": "え、どういうこと?",
+      "start_seconds": 647.6,
+      "end_seconds": 653.12
+    },
+    {
+      "text": "僕の村では障害者は人の前には出てはいけ",
+      "start_seconds": 650.36,
+      "end_seconds": 656.92
+    },
+    {
+      "text": "ない。まししてや踊るなんて。でも今日",
+      "start_seconds": 653.12,
+      "end_seconds": 659.639
+    },
+    {
+      "text": "初めて人前踊ってこんなに楽しいものだと",
+      "start_seconds": 656.92,
+      "end_seconds": 662.68
+    },
+    {
+      "text": "思わなかった。だからこれからは人に何を",
+      "start_seconds": 659.639,
+      "end_seconds": 667.0
+    },
+    {
+      "text": "言われても踊り続けたい。",
+      "start_seconds": 662.68,
+      "end_seconds": 670.4799999999999
+    },
+    {
+      "text": "その瞬間河川敷を走っていた昔の自分を",
+      "start_seconds": 667.0,
+      "end_seconds": 674.72
+    },
+    {
+      "text": "思い出しました。ああ、この子も新しい",
+      "start_seconds": 670.48,
+      "end_seconds": 677.639
+    },
+    {
+      "text": "世界が見えたんだ。",
+      "start_seconds": 674.72,
+      "end_seconds": 679.9590000000001
+    },
+    {
+      "text": "それでは皆さん",
+      "start_seconds": 677.639,
+      "end_seconds": 682.519
+    },
+    {
+      "text": "少しでもその時の状況を実感していただく",
+      "start_seconds": 679.959,
+      "end_seconds": 684.5999999999999
+    },
+    {
+      "text": "ためにどうぞ少しだけご起立お願いします",
+      "start_seconds": 682.519,
+      "end_seconds": 688.76
+    },
+    {
+      "text": "。そして私の手吉と一緒に片足1本で5秒",
+      "start_seconds": 684.6,
+      "end_seconds": 690.519
+    },
+    {
+      "text": "ほどダンスをしていただければありがたい",
+      "start_seconds": 688.76,
+      "end_seconds": 695.16
+    },
+    {
+      "text": "です。いきましょう。せーの",
+      "start_seconds": 690.519,
+      "end_seconds": 695.16
+    },
+    {
+      "text": "ありがとうございました。",
+      "start_seconds": 697.88,
+      "end_seconds": 701.56
+    },
+    {
+      "text": "世界、え、今まで紹介してきた世界もつく",
+      "start_seconds": 702.519,
+      "end_seconds": 710.48
+    },
+    {
+      "text": "3つの国の子供たちや他の国組で出会って",
+      "start_seconds": 707.44,
+      "end_seconds": 714.2
+    },
+    {
+      "text": "きた若者たちに共通するのは",
+      "start_seconds": 710.48,
+      "end_seconds": 718.48
+    },
+    {
+      "text": "やってみたい。やりやすい環境やってみる",
+      "start_seconds": 714.2,
+      "end_seconds": 722.519
+    },
+    {
+      "text": "ということです。思い起こすとほぼ独学で",
+      "start_seconds": 718.48,
+      "end_seconds": 724.88
+    },
+    {
+      "text": "他言者になった私もそれぞれのそれぞれの",
+      "start_seconds": 722.519,
+      "end_seconds": 729.04
+    },
+    {
+      "text": "言語はその国でニーズや仕事のニーズも",
+      "start_seconds": 724.88,
+      "end_seconds": 731.12
+    },
+    {
+      "text": "生活のニーズもありませんでした。でも",
+      "start_seconds": 729.04,
+      "end_seconds": 734.7199999999999
+    },
+    {
+      "text": "面白そうやってみたいと思い、やりやすい",
+      "start_seconds": 731.12,
+      "end_seconds": 737.36
+    },
+    {
+      "text": "環境を整え整え、",
+      "start_seconds": 734.72,
+      "end_seconds": 739.399
+    },
+    {
+      "text": "少しずつ自分のペースでやっていくという",
+      "start_seconds": 737.36,
+      "end_seconds": 742.48
+    },
+    {
+      "text": "結果でした。",
+      "start_seconds": 739.399,
+      "end_seconds": 744.92
+    },
+    {
+      "text": "そこで気づきました。",
+      "start_seconds": 742.48,
+      "end_seconds": 747.1990000000001
+    },
+    {
+      "text": "人を動かす、そして学びの言動力になるの",
+      "start_seconds": 744.92,
+      "end_seconds": 752.04
+    },
+    {
+      "text": "はやってみたいということ。その気持ちが",
+      "start_seconds": 747.199,
+      "end_seconds": 755.68
+    },
+    {
+      "text": "才能や能力も先に大事な好奇心として言動",
+      "start_seconds": 752.04,
+      "end_seconds": 757.8389999999999
+    },
+    {
+      "text": "力となります。アインシュタインは言い",
+      "start_seconds": 755.68,
+      "end_seconds": 760.4799999999999
+    },
+    {
+      "text": "ました。私には特別な才能はなかった。",
+      "start_seconds": 757.839,
+      "end_seconds": 763.839
+    },
+    {
+      "text": "ただ猛烈に好奇心があっただけだ。では",
+      "start_seconds": 760.48,
+      "end_seconds": 767.519
+    },
+    {
+      "text": "その好奇心と再開し学び続けるための3つ",
+      "start_seconds": 763.839,
+      "end_seconds": 771.399
+    },
+    {
+      "text": "の鍵を紹介します。1つ目は多様な世界に",
+      "start_seconds": 767.519,
+      "end_seconds": 775.44
+    },
+    {
+      "text": "触れること。ここでは高奇士の負担を外し",
+      "start_seconds": 771.399,
+      "end_seconds": 779.6
+    },
+    {
+      "text": "その状態をキープすることを目指します。",
+      "start_seconds": 775.44,
+      "end_seconds": 781.72
+    },
+    {
+      "text": "いろんな度に出ましょう。海外だけじゃ",
+      "start_seconds": 779.6,
+      "end_seconds": 784.9590000000001
+    },
+    {
+      "text": "なくてもいい。普段やらないことや",
+      "start_seconds": 781.72,
+      "end_seconds": 788.6
+    },
+    {
+      "text": "いろんな人本に出会いましょう。違う世界",
+      "start_seconds": 784.959,
+      "end_seconds": 791.76
+    },
+    {
+      "text": "に触れると、あ、こんなのもあるんだと",
+      "start_seconds": 788.6,
+      "end_seconds": 794.24
+    },
+    {
+      "text": "気づくことがあります。そして視野が",
+      "start_seconds": 791.76,
+      "end_seconds": 798.279
+    },
+    {
+      "text": "広がり、どんどん学びたくなる。違う世界",
+      "start_seconds": 794.24,
+      "end_seconds": 801.279
+    },
+    {
+      "text": "に触れるということは",
+      "start_seconds": 798.279,
+      "end_seconds": 806.0
+    },
+    {
+      "text": "何事にも上には上がいて並びに終わりが",
+      "start_seconds": 801.279,
+      "end_seconds": 808.279
+    },
+    {
+      "text": "ない。そして気づかなかったことに気づく",
+      "start_seconds": 806.0,
+      "end_seconds": 811.519
+    },
+    {
+      "text": "。そうリミッターを外し視野を広げ学び",
+      "start_seconds": 808.279,
+      "end_seconds": 814.76
+    },
+    {
+      "text": "たいと思うことにつがります。2つ目の鍵",
+      "start_seconds": 811.519,
+      "end_seconds": 818.519
+    },
+    {
+      "text": "。これは自分をよく知りより良い状態をに",
+      "start_seconds": 814.76,
+      "end_seconds": 821.16
+    },
+    {
+      "text": "持っていくこと。ここでは自分をどういう",
+      "start_seconds": 818.519,
+      "end_seconds": 824.639
+    },
+    {
+      "text": "方向に持っていくかを決めます。",
+      "start_seconds": 821.16,
+      "end_seconds": 828.76
+    },
+    {
+      "text": "自分は何者で何が好きで何がやりたくて",
+      "start_seconds": 824.639,
+      "end_seconds": 830.48
+    },
+    {
+      "text": "自分のペースってのはどういうものなのか",
+      "start_seconds": 828.76,
+      "end_seconds": 834.199
+    },
+    {
+      "text": "。数多くの先人たちが自分を知ることの",
+      "start_seconds": 830.48,
+      "end_seconds": 837.1990000000001
+    },
+    {
+      "text": "大切さを唱えたのもそれが本当に大切で",
+      "start_seconds": 834.199,
+      "end_seconds": 840.92
+    },
+    {
+      "text": "難しいからです。",
+      "start_seconds": 837.199,
+      "end_seconds": 840.92
+    },
+    {
+      "text": "SNSやスマホ、情報が溢れる中で",
+      "start_seconds": 845.8,
+      "end_seconds": 852.5999999999999
+    },
+    {
+      "text": "自分軸、他人軸ではなく自分軸で生きる",
+      "start_seconds": 850.56,
+      "end_seconds": 855.199
+    },
+    {
+      "text": "ことは本当に難しい。でも自分を知ること",
+      "start_seconds": 852.6,
+      "end_seconds": 857.0790000000001
+    },
+    {
+      "text": "、自己認識は本当に大切になってきてます",
+      "start_seconds": 855.199,
+      "end_seconds": 859.199
+    },
+    {
+      "text": "。",
+      "start_seconds": 857.079,
+      "end_seconds": 863.0
+    },
+    {
+      "text": "世界の教育の調流として自己認識を含めた",
+      "start_seconds": 859.199,
+      "end_seconds": 864.959
+    },
+    {
+      "text": "ソーシャルエモーショナルラーニング通称",
+      "start_seconds": 863.0,
+      "end_seconds": 868.12
+    },
+    {
+      "text": "Sが各国で実施されているのも希望に",
+      "start_seconds": 864.959,
+      "end_seconds": 870.92
+    },
+    {
+      "text": "溢れる話です。ただこれはすごい長し長い",
+      "start_seconds": 868.12,
+      "end_seconds": 874.9590000000001
+    },
+    {
+      "text": "話になるので、また別の日に",
+      "start_seconds": 870.92,
+      "end_seconds": 874.959
+    },
+    {
+      "text": "打ち向きにな、自分だけ自分のことを知る",
+      "start_seconds": 875.92,
+      "end_seconds": 882.279
+    },
+    {
+      "text": "と打ち向きに1人だけで考えてもどうせ",
+      "start_seconds": 879.8,
+      "end_seconds": 884.4399999999999
+    },
+    {
+      "text": "自分なんてとリミッターがかかってしまう",
+      "start_seconds": 882.279,
+      "end_seconds": 887.56
+    },
+    {
+      "text": "ことがあるので1つ目の鍵である世界に",
+      "start_seconds": 884.44,
+      "end_seconds": 890.6800000000001
+    },
+    {
+      "text": "触れて高奇心の蓋を外すということを並行",
+      "start_seconds": 887.56,
+      "end_seconds": 893.88
+    },
+    {
+      "text": "して行いましょう。そして3つ目の鍵。",
+      "start_seconds": 890.68,
+      "end_seconds": 897.079
+    },
+    {
+      "text": "これはとにかく行動すること。世界中で見",
+      "start_seconds": 893.88,
+      "end_seconds": 899.079
+    },
+    {
+      "text": "てきた、学び続ける人たちに共通してるの",
+      "start_seconds": 897.079,
+      "end_seconds": 902.12
+    },
+    {
+      "text": "はとにかく動いていること。[鼻息]",
+      "start_seconds": 899.079,
+      "end_seconds": 904.7589999999999
+    },
+    {
+      "text": "しかも小さく素早く",
+      "start_seconds": 902.12,
+      "end_seconds": 907.36
+    },
+    {
+      "text": "瞬発力がある。",
+      "start_seconds": 904.759,
+      "end_seconds": 910.92
+    },
+    {
+      "text": "頭で分かってるんだけどねとなかなか行動",
+      "start_seconds": 907.36,
+      "end_seconds": 913.759
+    },
+    {
+      "text": "が起こせない人に紹介したいのが10秒",
+      "start_seconds": 910.92,
+      "end_seconds": 916.199
+    },
+    {
+      "text": "ルール。",
+      "start_seconds": 913.759,
+      "end_seconds": 918.9590000000001
+    },
+    {
+      "text": "人生は選択肢の連続です。何をやるにして",
+      "start_seconds": 916.199,
+      "end_seconds": 921.4799999999999
+    },
+    {
+      "text": "もこれをやろうかな、どうしようかなと",
+      "start_seconds": 918.959,
+      "end_seconds": 924.3599999999999
+    },
+    {
+      "text": "思う時があります。",
+      "start_seconds": 921.48,
+      "end_seconds": 928.519
+    },
+    {
+      "text": "質問をしてみる。話しかける。目覚めた時",
+      "start_seconds": 924.36,
+      "end_seconds": 930.9590000000001
+    },
+    {
+      "text": "にガバっと起きてみる。口説き文句を言っ",
+      "start_seconds": 928.519,
+      "end_seconds": 933.24
+    },
+    {
+      "text": "てみる。滑るかもしれないけどジョーク",
+      "start_seconds": 930.959,
+      "end_seconds": 935.5999999999999
+    },
+    {
+      "text": "やザりをダザリを言ってみる。何でもいい",
+      "start_seconds": 933.24,
+      "end_seconds": 937.399
+    },
+    {
+      "text": "んです。",
+      "start_seconds": 935.6,
+      "end_seconds": 940.399
+    },
+    {
+      "text": "何かに迷った時、頭の中で10秒の",
+      "start_seconds": 937.399,
+      "end_seconds": 943.16
+    },
+    {
+      "text": "カウントダウンを描いても頭に描いてみて",
+      "start_seconds": 940.399,
+      "end_seconds": 946.04
+    },
+    {
+      "text": "ください。",
+      "start_seconds": 943.16,
+      "end_seconds": 949.04
+    },
+    {
+      "text": "10987",
+      "start_seconds": 946.04,
+      "end_seconds": 949.04
+    },
+    {
+      "text": "。そしてそれが0になる前にエイヤと行動",
+      "start_seconds": 949.24,
+      "end_seconds": 956.839
+    },
+    {
+      "text": "してみる。なぜなら好奇心は時間が経つと",
+      "start_seconds": 952.959,
+      "end_seconds": 959.959
+    },
+    {
+      "text": "薄れ考えすぎるほど行動できなくなるから",
+      "start_seconds": 956.839,
+      "end_seconds": 961.6800000000001
+    },
+    {
+      "text": "です。",
+      "start_seconds": 959.959,
+      "end_seconds": 965.8
+    },
+    {
+      "text": "これは実は演劇時代の本番10秒前という",
+      "start_seconds": 961.68,
+      "end_seconds": 968.4399999999999
+    },
+    {
+      "text": "のとメルロビンさんの5秒ルールという本",
+      "start_seconds": 965.8,
+      "end_seconds": 971.399
+    },
+    {
+      "text": "にヒントをもらって改良したものです。",
+      "start_seconds": 968.44,
+      "end_seconds": 973.6
+    },
+    {
+      "text": "それらをつなげて頭でイメージを描いてみ",
+      "start_seconds": 971.399,
+      "end_seconds": 976.399
+    },
+    {
+      "text": "てください。",
+      "start_seconds": 973.6,
+      "end_seconds": 982.9200000000001
+    },
+    {
+      "text": "10秒間98そして5秒で止めてみる。",
+      "start_seconds": 976.399,
+      "end_seconds": 985.24
+    },
+    {
+      "text": "それまでにやってみる。",
+      "start_seconds": 982.92,
+      "end_seconds": 989.88
+    },
+    {
+      "text": "その5をイメージしてみるとCの逆のよう",
+      "start_seconds": 985.24,
+      "end_seconds": 991.839
+    },
+    {
+      "text": "な文字になる。そしてもう1回10秒",
+      "start_seconds": 989.88,
+      "end_seconds": 994.48
+    },
+    {
+      "text": "ルールの10を持ってくる。",
+      "start_seconds": 991.839,
+      "end_seconds": 998.2790000000001
+    },
+    {
+      "text": "それらをつげるとなんとどこかで見たこと",
+      "start_seconds": 994.48,
+      "end_seconds": 1000.639
+    },
+    {
+      "text": "になるdo",
+      "start_seconds": 998.279,
+      "end_seconds": 1003.16
+    },
+    {
+      "text": "になります。",
+      "start_seconds": 1000.639,
+      "end_seconds": 1005.36
+    },
+    {
+      "text": "何かに迷った時は是非ゲーム感覚でやって",
+      "start_seconds": 1003.16,
+      "end_seconds": 1008.639
+    },
+    {
+      "text": "みてください。ただこれを悪いことに使う",
+      "start_seconds": 1005.36,
+      "end_seconds": 1011.331
+    },
+    {
+      "text": "のはやめてください。ははかげ様で",
+      "start_seconds": 1008.639,
+      "end_seconds": 1013.12
+    },
+    {
+      "text": "[荒い息][ため息]",
+      "start_seconds": 1011.331,
+      "end_seconds": 1013.44
+    },
+    {
+      "text": "10秒",
+      "start_seconds": 1013.12,
+      "end_seconds": 1016.44
+    },
+    {
+      "text": "ルールで銀行動できましたというのはやめてください。私は一切",
+      "start_seconds": 1013.44,
+      "end_seconds": 1016.44
+    },
+    {
+      "text": "責任を取りません。もしこの",
+      "start_seconds": 1017.0,
+      "end_seconds": 1020.0
+    },
+    {
+      "text": "10秒というのが前に進み",
+      "start_seconds": 1020.519,
+      "end_seconds": 1025.199
+    },
+    {
+      "text": "学ぶチャンスだとしたら実は",
+      "start_seconds": 1023.16,
+      "end_seconds": 1028.36
+    },
+    {
+      "text": "1年間の間に食事や、仕事やないも",
+      "start_seconds": 1025.199,
+      "end_seconds": 1028.3600000000001
+    },
+    {
+      "text": "100万以上のチャンスが訪れます。",
+      "start_seconds": 1029.4,
+      "end_seconds": 1036.16
+    },
+    {
+      "text": "もしよければこの10秒というのを",
+      "start_seconds": 1032.16,
+      "end_seconds": 1039.3600000000001
+    },
+    {
+      "text": "学び続けるための3つの鍵に使って新しい",
+      "start_seconds": 1036.16,
+      "end_seconds": 1044.52
+    },
+    {
+      "text": "世界の扉を開けてみませんか?",
+      "start_seconds": 1039.36,
+      "end_seconds": 1047.4389999999999
+    },
+    {
+      "text": "今日紹介した3つのもの国の若者や他の",
+      "start_seconds": 1044.52,
+      "end_seconds": 1051.559
+    },
+    {
+      "text": "国々で学んできた人たちもこの3つの鍵を",
+      "start_seconds": 1047.439,
+      "end_seconds": 1054.76
+    },
+    {
+      "text": "備わ持っていたと思います。世界を知る",
+      "start_seconds": 1051.559,
+      "end_seconds": 1056.3999999999999
+    },
+    {
+      "text": "こと、自分を知ること、そして行動する",
+      "start_seconds": 1054.76,
+      "end_seconds": 1059.16
+    },
+    {
+      "text": "こと私も常に持ち歩くようにはしています",
+      "start_seconds": 1056.4,
+      "end_seconds": 1060.72
+    },
+    {
+      "text": "。",
+      "start_seconds": 1059.16,
+      "end_seconds": 1067.4
+    },
+    {
+      "text": "さて、男や演劇、料理や国連、18カ国を",
+      "start_seconds": 1060.72,
+      "end_seconds": 1071.16
+    },
+    {
+      "text": "経て、あ、18年間海外生活を経て私は",
+      "start_seconds": 1067.4,
+      "end_seconds": 1075.039
+    },
+    {
+      "text": "日本に戻ってきました。",
+      "start_seconds": 1071.16,
+      "end_seconds": 1075.039
+    },
+    {
+      "text": "そこは神戸、元なき祖母が運営していた",
+      "start_seconds": 1075.4,
+      "end_seconds": 1081.2800000000002
+    },
+    {
+      "text": "小さな要塞学校の、後地の物置き、そこで",
+      "start_seconds": 1077.919,
+      "end_seconds": 1084.2800000000002
+    },
+    {
+      "text": "始めたのが日り団体グローバル学びア",
+      "start_seconds": 1081.28,
+      "end_seconds": 1089.0
+    },
+    {
+      "text": "ミエルです。ここでは世界の料理を囲み",
+      "start_seconds": 1084.28,
+      "end_seconds": 1092.799
+    },
+    {
+      "text": "美味しく食べて作ってそしていろんな国の",
+      "start_seconds": 1089.0,
+      "end_seconds": 1096.12
+    },
+    {
+      "text": "アートや遊びゲーム",
+      "start_seconds": 1092.799,
+      "end_seconds": 1099.8799999999999
+    },
+    {
+      "text": "肺材を使って何かを作る。国籍や年齢を",
+      "start_seconds": 1096.12,
+      "end_seconds": 1104.1589999999999
+    },
+    {
+      "text": "超えていろんな人が繋がる。そして実践を",
+      "start_seconds": 1099.88,
+      "end_seconds": 1107.0800000000002
+    },
+    {
+      "text": "通した楽しい学びの場がある。そして自分",
+      "start_seconds": 1104.159,
+      "end_seconds": 1109.3600000000001
+    },
+    {
+      "text": "自身も知る一見バラバラのようなものを",
+      "start_seconds": 1107.08,
+      "end_seconds": 1112.1589999999999
+    },
+    {
+      "text": "つげ合わせて新しい世界が見える",
+      "start_seconds": 1109.36,
+      "end_seconds": 1114.76
+    },
+    {
+      "text": "きっかけ作りをしています。ここで大事に",
+      "start_seconds": 1112.159,
+      "end_seconds": 1118.919
+    },
+    {
+      "text": "してるのは3つのLンリブラブ",
+      "start_seconds": 1114.76,
+      "end_seconds": 1118.919
+    },
+    {
+      "text": "学ぶ生きる自分を大切にする",
+      "start_seconds": 1119.2,
+      "end_seconds": 1125.3600000000001
+    },
+    {
+      "text": "世界を世界が見えることで自分自身が",
+      "start_seconds": 1123.0,
+      "end_seconds": 1128.12
+    },
+    {
+      "text": "見える自分が見えることで世界がもっと",
+      "start_seconds": 1125.36,
+      "end_seconds": 1131.12
+    },
+    {
+      "text": "見えてくる",
+      "start_seconds": 1128.12,
+      "end_seconds": 1135.08
+    },
+    {
+      "text": "答えのない激道の時代ですがdoを続けて",
+      "start_seconds": 1131.12,
+      "end_seconds": 1139.08
+    },
+    {
+      "text": "います。そして分かっていることは学びと",
+      "start_seconds": 1135.08,
+      "end_seconds": 1142.6
+    },
+    {
+      "text": "は知識を増やすことだけではなく新しい",
+      "start_seconds": 1139.08,
+      "end_seconds": 1147.1999999999998
+    },
+    {
+      "text": "世界を見ること。もし皆さんが最近学ぶ",
+      "start_seconds": 1142.6,
+      "end_seconds": 1150.4399999999998
+    },
+    {
+      "text": "気力がないな、学んでないなと思った時は",
+      "start_seconds": 1147.2,
+      "end_seconds": 1152.96
+    },
+    {
+      "text": "もしかしてまだ知らない世界や自分最初の",
+      "start_seconds": 1150.44,
+      "end_seconds": 1154.559
+    },
+    {
+      "text": "一歩を踏み出してないだけかもしれません",
+      "start_seconds": 1152.96,
+      "end_seconds": 1156.679
+    },
+    {
+      "text": "。",
+      "start_seconds": 1154.559,
+      "end_seconds": 1160.1589999999999
+    },
+    {
+      "text": "好奇心は誰もが持ちます。その蓋を外すの",
+      "start_seconds": 1156.679,
+      "end_seconds": 1164.2800000000002
+    },
+    {
+      "text": "はに年齢は関係ありません。",
+      "start_seconds": 1160.159,
+      "end_seconds": 1167.0
+    },
+    {
+      "text": "世界はまだまだ広い。",
+      "start_seconds": 1164.28,
+      "end_seconds": 1170.3999999999999
+    },
+    {
+      "text": "これからの10秒の連続の人生。我々は",
+      "start_seconds": 1167.0,
+      "end_seconds": 1172.88
+    },
+    {
+      "text": "どんな新しい世界が見えるでしょうか?ご",
+      "start_seconds": 1170.4,
+      "end_seconds": 1174.159
+    },
+    {
+      "text": "成聴ありがとうございました。",
+      "start_seconds": 1172.88,
+      "end_seconds": 1179.0130000000001
+    },
+    {
+      "text": "thanキュー。グラスOB",
+      "start_seconds": 1174.159,
+      "end_seconds": 1181.0330000000001
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 1179.013,
+      "end_seconds": 1181.033
+    }
+  ],
+  "display_captions": [
+    {
+      "text": "[拍手]",
+      "start_seconds": 5.239,
+      "end_seconds": 7.259,
+      "id": "5Gi3S6L5XYs-display-0001",
+      "segment_id": "5Gi3S6L5XYs-ja-0001"
+    },
+    {
+      "text": "いきなりですが、皆さんにとって学びとは",
+      "start_seconds": 9.28,
+      "end_seconds": 13.08,
+      "id": "5Gi3S6L5XYs-display-0002",
+      "segment_id": "5Gi3S6L5XYs-ja-0002"
+    },
+    {
+      "text": "何でしょうか?",
+      "start_seconds": 13.08,
+      "end_seconds": 15.519,
+      "id": "5Gi3S6L5XYs-display-0003",
+      "segment_id": "5Gi3S6L5XYs-ja-0002"
+    },
+    {
+      "text": "良い成績を取ること、資格を取ること、",
+      "start_seconds": 15.519,
+      "end_seconds": 18.119,
+      "id": "5Gi3S6L5XYs-display-0004",
+      "segment_id": "5Gi3S6L5XYs-ja-0003"
+    },
+    {
+      "text": "知識を増やすことなど色々あるかもしれ",
+      "start_seconds": 18.119,
+      "end_seconds": 20.32,
+      "id": "5Gi3S6L5XYs-display-0005",
+      "segment_id": "5Gi3S6L5XYs-ja-0003"
+    },
+    {
+      "text": "ません。辞書によると学びとは勉強や教え",
+      "start_seconds": 20.32,
+      "end_seconds": 25.439,
+      "id": "5Gi3S6L5XYs-display-0006",
+      "segment_id": "5Gi3S6L5XYs-ja-0003"
+    },
+    {
+      "text": "を通して知識やスキルを身につける。",
+      "start_seconds": 25.439,
+      "end_seconds": 30.24,
+      "id": "5Gi3S6L5XYs-display-0007",
+      "segment_id": "5Gi3S6L5XYs-ja-0004"
+    },
+    {
+      "text": "私にとって学びとは見えなかった世界が",
+      "start_seconds": 30.24,
+      "end_seconds": 33.6,
+      "id": "5Gi3S6L5XYs-display-0008",
+      "segment_id": "5Gi3S6L5XYs-ja-0005"
+    },
+    {
+      "text": "見えるようになること。",
+      "start_seconds": 33.6,
+      "end_seconds": 36.92,
+      "id": "5Gi3S6L5XYs-display-0009",
+      "segment_id": "5Gi3S6L5XYs-ja-0005"
+    },
+    {
+      "text": "単に知識を増やすだけではありません。",
+      "start_seconds": 36.92,
+      "end_seconds": 39.2,
+      "id": "5Gi3S6L5XYs-display-0010",
+      "segment_id": "5Gi3S6L5XYs-ja-0006"
+    },
+    {
+      "text": "もし学んだことを忘れてしまったらそれは",
+      "start_seconds": 39.2,
+      "end_seconds": 41.52,
+      "id": "5Gi3S6L5XYs-display-0011",
+      "segment_id": "5Gi3S6L5XYs-ja-0007"
+    },
+    {
+      "text": "暗記だったのかもしれません。学びとは",
+      "start_seconds": 41.52,
+      "end_seconds": 44.079,
+      "id": "5Gi3S6L5XYs-display-0012",
+      "segment_id": "5Gi3S6L5XYs-ja-0007"
+    },
+    {
+      "text": "本来自分の中で変化を感じておることだと",
+      "start_seconds": 44.079,
+      "end_seconds": 47.079,
+      "id": "5Gi3S6L5XYs-display-0013",
+      "segment_id": "5Gi3S6L5XYs-ja-0007"
+    },
+    {
+      "text": "思っています。自分の好きな匂いに出会う",
+      "start_seconds": 47.079,
+      "end_seconds": 50.0,
+      "id": "5Gi3S6L5XYs-display-0014",
+      "segment_id": "5Gi3S6L5XYs-ja-0007"
+    },
+    {
+      "text": "、自分らしさに出会う地球の裏側で人生感",
+      "start_seconds": 50.0,
+      "end_seconds": 54.079,
+      "id": "5Gi3S6L5XYs-display-0015",
+      "segment_id": "5Gi3S6L5XYs-ja-0008"
+    },
+    {
+      "text": "がひっくり返える",
+      "start_seconds": 54.079,
+      "end_seconds": 55.76,
+      "id": "5Gi3S6L5XYs-display-0016",
+      "segment_id": "5Gi3S6L5XYs-ja-0008"
+    },
+    {
+      "text": "など多に渡ります。",
+      "start_seconds": 55.76,
+      "end_seconds": 58.519,
+      "id": "5Gi3S6L5XYs-display-0017",
+      "segment_id": "5Gi3S6L5XYs-ja-0008"
+    },
+    {
+      "text": "ではここでもう1つ。昔この中で赤ちゃん",
+      "start_seconds": 58.519,
+      "end_seconds": 62.199,
+      "id": "5Gi3S6L5XYs-display-0018",
+      "segment_id": "5Gi3S6L5XYs-ja-0009"
+    },
+    {
+      "text": "だったという人はいますか?",
+      "start_seconds": 62.199,
+      "end_seconds": 65.72,
+      "id": "5Gi3S6L5XYs-display-0019",
+      "segment_id": "5Gi3S6L5XYs-ja-0009"
+    },
+    {
+      "text": "はい。まだまだ人間の集まりがいるという",
+      "start_seconds": 65.72,
+      "end_seconds": 67.759,
+      "id": "5Gi3S6L5XYs-display-0020",
+      "segment_id": "5Gi3S6L5XYs-ja-0010"
+    },
+    {
+      "text": "ことで安心しました。では赤ちゃんだった",
+      "start_seconds": 67.759,
+      "end_seconds": 71.56,
+      "id": "5Gi3S6L5XYs-display-0021",
+      "segment_id": "5Gi3S6L5XYs-ja-0010"
+    },
+    {
+      "text": "時に歩くための学校に行ったという人はい",
+      "start_seconds": 71.56,
+      "end_seconds": 74.92,
+      "id": "5Gi3S6L5XYs-display-0022",
+      "segment_id": "5Gi3S6L5XYs-ja-0010"
+    },
+    {
+      "text": "ますか?",
+      "start_seconds": 74.92,
+      "end_seconds": 76.92,
+      "id": "5Gi3S6L5XYs-display-0023",
+      "segment_id": "5Gi3S6L5XYs-ja-0010"
+    },
+    {
+      "text": "いませんね。赤ちゃんは数ヶ月の青向け",
+      "start_seconds": 76.92,
+      "end_seconds": 81.079,
+      "id": "5Gi3S6L5XYs-display-0024",
+      "segment_id": "5Gi3S6L5XYs-ja-0011"
+    },
+    {
+      "text": "生活を経て願いりし",
+      "start_seconds": 81.079,
+      "end_seconds": 84.759,
+      "id": "5Gi3S6L5XYs-display-0025",
+      "segment_id": "5Gi3S6L5XYs-ja-0011"
+    },
+    {
+      "text": "た立ち、そして何度こけても立ち上がる。",
+      "start_seconds": 84.759,
+      "end_seconds": 88.4,
+      "id": "5Gi3S6L5XYs-display-0026",
+      "segment_id": "5Gi3S6L5XYs-ja-0011"
+    },
+    {
+      "text": "気づけば歩けるようになっている。誰に",
+      "start_seconds": 88.4,
+      "end_seconds": 91.6,
+      "id": "5Gi3S6L5XYs-display-0027",
+      "segment_id": "5Gi3S6L5XYs-ja-0012"
+    },
+    {
+      "text": "言われたわけでも学校に行ったわけでも",
+      "start_seconds": 91.6,
+      "end_seconds": 93.72,
+      "id": "5Gi3S6L5XYs-display-0028",
+      "segment_id": "5Gi3S6L5XYs-ja-0012"
+    },
+    {
+      "text": "ありません。そう、人は本来学びたい",
+      "start_seconds": 93.72,
+      "end_seconds": 97.439,
+      "id": "5Gi3S6L5XYs-display-0029",
+      "segment_id": "5Gi3S6L5XYs-ja-0012"
+    },
+    {
+      "text": "生き物、いやもっと言うと新しい世界を見",
+      "start_seconds": 97.439,
+      "end_seconds": 100.28,
+      "id": "5Gi3S6L5XYs-display-0030",
+      "segment_id": "5Gi3S6L5XYs-ja-0012"
+    },
+    {
+      "text": "たい生き物です。でも大人になるにつれて",
+      "start_seconds": 100.28,
+      "end_seconds": 104.399,
+      "id": "5Gi3S6L5XYs-display-0031",
+      "segment_id": "5Gi3S6L5XYs-ja-0013"
+    },
+    {
+      "text": "学ばない人が増えてくる。それはなぜ",
+      "start_seconds": 104.399,
+      "end_seconds": 106.92,
+      "id": "5Gi3S6L5XYs-display-0032",
+      "segment_id": "5Gi3S6L5XYs-ja-0013"
+    },
+    {
+      "text": "でしょうか?",
+      "start_seconds": 106.92,
+      "end_seconds": 109.159,
+      "id": "5Gi3S6L5XYs-display-0033",
+      "segment_id": "5Gi3S6L5XYs-ja-0013"
+    },
+    {
+      "text": "私はそれは好奇心に蓋をしてしまうからだ",
+      "start_seconds": 109.159,
+      "end_seconds": 112.479,
+      "id": "5Gi3S6L5XYs-display-0034",
+      "segment_id": "5Gi3S6L5XYs-ja-0014"
+    },
+    {
+      "text": "と思っています。",
+      "start_seconds": 112.479,
+      "end_seconds": 114.92,
+      "id": "5Gi3S6L5XYs-display-0035",
+      "segment_id": "5Gi3S6L5XYs-ja-0014"
+    },
+    {
+      "text": "失敗したらどうしよう。周りの目が気に",
+      "start_seconds": 114.92,
+      "end_seconds": 117.159,
+      "id": "5Gi3S6L5XYs-display-0036",
+      "segment_id": "5Gi3S6L5XYs-ja-0015"
+    },
+    {
+      "text": "なる。外に出るのが怖い。初心者に戻り",
+      "start_seconds": 117.159,
+      "end_seconds": 120.52,
+      "id": "5Gi3S6L5XYs-display-0037",
+      "segment_id": "5Gi3S6L5XYs-ja-0015"
+    },
+    {
+      "text": "たくない。時間がない。お金がない。人は",
+      "start_seconds": 120.52,
+      "end_seconds": 123.92,
+      "id": "5Gi3S6L5XYs-display-0038",
+      "segment_id": "5Gi3S6L5XYs-ja-0015"
+    },
+    {
+      "text": "いろんな理由で国奇に負担をします。",
+      "start_seconds": 123.92,
+      "end_seconds": 127.68,
+      "id": "5Gi3S6L5XYs-display-0039",
+      "segment_id": "5Gi3S6L5XYs-ja-0016"
+    },
+    {
+      "text": "でも一方で変化の激しい時代の中で",
+      "start_seconds": 127.68,
+      "end_seconds": 131.12,
+      "id": "5Gi3S6L5XYs-display-0040",
+      "segment_id": "5Gi3S6L5XYs-ja-0017"
+    },
+    {
+      "text": "学び直しや学び続けることの大切さは多く",
+      "start_seconds": 131.12,
+      "end_seconds": 134.08,
+      "id": "5Gi3S6L5XYs-display-0041",
+      "segment_id": "5Gi3S6L5XYs-ja-0017"
+    },
+    {
+      "text": "の人が実感しています。",
+      "start_seconds": 134.08,
+      "end_seconds": 136.8,
+      "id": "5Gi3S6L5XYs-display-0042",
+      "segment_id": "5Gi3S6L5XYs-ja-0017"
+    },
+    {
+      "text": "今日は私が世界ご大陸で学んだ",
+      "start_seconds": 136.8,
+      "end_seconds": 141.48,
+      "id": "5Gi3S6L5XYs-display-0043",
+      "segment_id": "5Gi3S6L5XYs-ja-0018"
+    },
+    {
+      "text": "後好奇心と再開し学び続けるためのヒント",
+      "start_seconds": 141.48,
+      "end_seconds": 144.319,
+      "id": "5Gi3S6L5XYs-display-0044",
+      "segment_id": "5Gi3S6L5XYs-ja-0018"
+    },
+    {
+      "text": "をについてお話しします。",
+      "start_seconds": 144.319,
+      "end_seconds": 148.519,
+      "id": "5Gi3S6L5XYs-display-0045",
+      "segment_id": "5Gi3S6L5XYs-ja-0018"
+    },
+    {
+      "text": "私は世界ご大陸に住み国連などを経て50",
+      "start_seconds": 148.519,
+      "end_seconds": 151.84,
+      "id": "5Gi3S6L5XYs-display-0046",
+      "segment_id": "5Gi3S6L5XYs-ja-0019"
+    },
+    {
+      "text": "カ国以上の教育支援をしてほぼ独学で6年",
+      "start_seconds": 151.84,
+      "end_seconds": 155.36,
+      "id": "5Gi3S6L5XYs-display-0047",
+      "segment_id": "5Gi3S6L5XYs-ja-0019"
+    },
+    {
+      "text": "後以上話せるようになりました。日本語、",
+      "start_seconds": 155.36,
+      "end_seconds": 158.68,
+      "id": "5Gi3S6L5XYs-display-0048",
+      "segment_id": "5Gi3S6L5XYs-ja-0019"
+    },
+    {
+      "text": "英語、スペイン語、フランス語、",
+      "start_seconds": 158.68,
+      "end_seconds": 161.4,
+      "id": "5Gi3S6L5XYs-display-0049",
+      "segment_id": "5Gi3S6L5XYs-ja-0020"
+    },
+    {
+      "text": "ポルトガル語、そして最も習得が難しいと",
+      "start_seconds": 161.4,
+      "end_seconds": 164.84,
+      "id": "5Gi3S6L5XYs-display-0050",
+      "segment_id": "5Gi3S6L5XYs-ja-0020"
+    },
+    {
+      "text": "言われる関西弁です。",
+      "start_seconds": 164.84,
+      "end_seconds": 168.92,
+      "id": "5Gi3S6L5XYs-display-0051",
+      "segment_id": "5Gi3S6L5XYs-ja-0020"
+    },
+    {
+      "text": "経歴の一部だけを見るとエリートだねと",
+      "start_seconds": 168.92,
+      "end_seconds": 171.879,
+      "id": "5Gi3S6L5XYs-display-0052",
+      "segment_id": "5Gi3S6L5XYs-ja-0021"
+    },
+    {
+      "text": "思われることはありますが、私の中学生",
+      "start_seconds": 171.879,
+      "end_seconds": 174.959,
+      "id": "5Gi3S6L5XYs-display-0053",
+      "segment_id": "5Gi3S6L5XYs-ja-0021"
+    },
+    {
+      "text": "時代は落ちこぼれでした。",
+      "start_seconds": 174.959,
+      "end_seconds": 178.4,
+      "id": "5Gi3S6L5XYs-display-0054",
+      "segment_id": "5Gi3S6L5XYs-ja-0021"
+    },
+    {
+      "text": "勉強もダめ、運動も苦手。唯一得意だった",
+      "start_seconds": 178.4,
+      "end_seconds": 181.92,
+      "id": "5Gi3S6L5XYs-display-0055",
+      "segment_id": "5Gi3S6L5XYs-ja-0022"
+    },
+    {
+      "text": "のは人の家に上がり込んではポテト",
+      "start_seconds": 181.92,
+      "end_seconds": 184.319,
+      "id": "5Gi3S6L5XYs-display-0056",
+      "segment_id": "5Gi3S6L5XYs-ja-0022"
+    },
+    {
+      "text": "チップスを食べてゲームをする。",
+      "start_seconds": 184.319,
+      "end_seconds": 187.56,
+      "id": "5Gi3S6L5XYs-display-0057",
+      "segment_id": "5Gi3S6L5XYs-ja-0022"
+    },
+    {
+      "text": "気づけば歩くだけでまたれがして血が出る",
+      "start_seconds": 187.56,
+      "end_seconds": 191.319,
+      "id": "5Gi3S6L5XYs-display-0058",
+      "segment_id": "5Gi3S6L5XYs-ja-0023"
+    },
+    {
+      "text": "ぐらいのまるまる太った中学生になってい",
+      "start_seconds": 191.319,
+      "end_seconds": 193.519,
+      "id": "5Gi3S6L5XYs-display-0059",
+      "segment_id": "5Gi3S6L5XYs-ja-0023"
+    },
+    {
+      "text": "ました。",
+      "start_seconds": 193.519,
+      "end_seconds": 195.84,
+      "id": "5Gi3S6L5XYs-display-0060",
+      "segment_id": "5Gi3S6L5XYs-ja-0023"
+    },
+    {
+      "text": "でも高奇心だけはありました。だから授業",
+      "start_seconds": 195.84,
+      "end_seconds": 198.36,
+      "id": "5Gi3S6L5XYs-display-0061",
+      "segment_id": "5Gi3S6L5XYs-ja-0024"
+    },
+    {
+      "text": "中によく質問していたんです。すると先生",
+      "start_seconds": 198.36,
+      "end_seconds": 201.0,
+      "id": "5Gi3S6L5XYs-display-0062",
+      "segment_id": "5Gi3S6L5XYs-ja-0024"
+    },
+    {
+      "text": "からある日言われました。もう質問やめて",
+      "start_seconds": 201.0,
+      "end_seconds": 204.44,
+      "id": "5Gi3S6L5XYs-display-0063",
+      "segment_id": "5Gi3S6L5XYs-ja-0024"
+    },
+    {
+      "text": "授業にならんわ。",
+      "start_seconds": 204.44,
+      "end_seconds": 207.519,
+      "id": "5Gi3S6L5XYs-display-0064",
+      "segment_id": "5Gi3S6L5XYs-ja-0024"
+    },
+    {
+      "text": "その瞬間ショックと共に自分の中の好奇心",
+      "start_seconds": 207.519,
+      "end_seconds": 210.439,
+      "id": "5Gi3S6L5XYs-display-0065",
+      "segment_id": "5Gi3S6L5XYs-ja-0025"
+    },
+    {
+      "text": "に静かに蓋が降りてきました。",
+      "start_seconds": 210.439,
+      "end_seconds": 214.519,
+      "id": "5Gi3S6L5XYs-display-0066",
+      "segment_id": "5Gi3S6L5XYs-ja-0025"
+    },
+    {
+      "text": "私は放課後でも落ちこぼれ",
+      "start_seconds": 214.519,
+      "end_seconds": 217.08,
+      "id": "5Gi3S6L5XYs-display-0067",
+      "segment_id": "5Gi3S6L5XYs-ja-0026"
+    },
+    {
+      "text": "陸上部の長距離に所属していた私は",
+      "start_seconds": 217.08,
+      "end_seconds": 220.48,
+      "id": "5Gi3S6L5XYs-display-0068",
+      "segment_id": "5Gi3S6L5XYs-ja-0026"
+    },
+    {
+      "text": "周りのペースについていけず疲れたらすぐ",
+      "start_seconds": 220.48,
+      "end_seconds": 222.959,
+      "id": "5Gi3S6L5XYs-display-0069",
+      "segment_id": "5Gi3S6L5XYs-ja-0026"
+    },
+    {
+      "text": "歩く。",
+      "start_seconds": 222.959,
+      "end_seconds": 224.92,
+      "id": "5Gi3S6L5XYs-display-0070",
+      "segment_id": "5Gi3S6L5XYs-ja-0026"
+    },
+    {
+      "text": "歩きながら瞑想して風の音を感じ",
+      "start_seconds": 224.92,
+      "end_seconds": 229.56,
+      "id": "5Gi3S6L5XYs-display-0071",
+      "segment_id": "5Gi3S6L5XYs-ja-0027"
+    },
+    {
+      "text": "リラックス",
+      "start_seconds": 229.56,
+      "end_seconds": 231.64,
+      "id": "5Gi3S6L5XYs-display-0072",
+      "segment_id": "5Gi3S6L5XYs-ja-0027"
+    },
+    {
+      "text": "なんてことありません。ずっと歩きながら",
+      "start_seconds": 231.64,
+      "end_seconds": 234.239,
+      "id": "5Gi3S6L5XYs-display-0073",
+      "segment_id": "5Gi3S6L5XYs-ja-0027"
+    },
+    {
+      "text": "下向いて辛いやめたい。なんでこんなこと",
+      "start_seconds": 234.239,
+      "end_seconds": 237.239,
+      "id": "5Gi3S6L5XYs-display-0074",
+      "segment_id": "5Gi3S6L5XYs-ja-0028"
+    },
+    {
+      "text": "をとそんな日々が続きました。",
+      "start_seconds": 237.239,
+      "end_seconds": 241.64,
+      "id": "5Gi3S6L5XYs-display-0075",
+      "segment_id": "5Gi3S6L5XYs-ja-0028"
+    },
+    {
+      "text": "そんなやらせない日々が続いて1年半が",
+      "start_seconds": 241.64,
+      "end_seconds": 243.64,
+      "id": "5Gi3S6L5XYs-display-0076",
+      "segment_id": "5Gi3S6L5XYs-ja-0029"
+    },
+    {
+      "text": "経ったある日、部員から理不尽にられ部活",
+      "start_seconds": 243.64,
+      "end_seconds": 247.319,
+      "id": "5Gi3S6L5XYs-display-0077",
+      "segment_id": "5Gi3S6L5XYs-ja-0029"
+    },
+    {
+      "text": "を辞めました。",
+      "start_seconds": 247.319,
+      "end_seconds": 250.0,
+      "id": "5Gi3S6L5XYs-display-0078",
+      "segment_id": "5Gi3S6L5XYs-ja-0029"
+    },
+    {
+      "text": "東方に暮れた次の日の放課後、不思議な",
+      "start_seconds": 250.0,
+      "end_seconds": 252.84,
+      "id": "5Gi3S6L5XYs-display-0079",
+      "segment_id": "5Gi3S6L5XYs-ja-0030"
+    },
+    {
+      "text": "ことになぜか足はいつもの河川敷の",
+      "start_seconds": 252.84,
+      "end_seconds": 255.92,
+      "id": "5Gi3S6L5XYs-display-0080",
+      "segment_id": "5Gi3S6L5XYs-ja-0030"
+    },
+    {
+      "text": "ランディングコースに向かっていました。",
+      "start_seconds": 255.92,
+      "end_seconds": 259.359,
+      "id": "5Gi3S6L5XYs-display-0081",
+      "segment_id": "5Gi3S6L5XYs-ja-0030"
+    },
+    {
+      "text": "もう1度だけ走ってみようかなと心の即で",
+      "start_seconds": 259.359,
+      "end_seconds": 263.28,
+      "id": "5Gi3S6L5XYs-display-0082",
+      "segment_id": "5Gi3S6L5XYs-ja-0031"
+    },
+    {
+      "text": "心の奥で声がしたのです。",
+      "start_seconds": 263.28,
+      "end_seconds": 267.55999999999995,
+      "id": "5Gi3S6L5XYs-display-0083",
+      "segment_id": "5Gi3S6L5XYs-ja-0031"
+    },
+    {
+      "text": "まるまる太った自分も目の前のコースも",
+      "start_seconds": 268.0,
+      "end_seconds": 271.039,
+      "id": "5Gi3S6L5XYs-display-0084",
+      "segment_id": "5Gi3S6L5XYs-ja-0032"
+    },
+    {
+      "text": "昨日までと何も変わりません。唯一違うの",
+      "start_seconds": 271.039,
+      "end_seconds": 273.6,
+      "id": "5Gi3S6L5XYs-display-0085",
+      "segment_id": "5Gi3S6L5XYs-ja-0032"
+    },
+    {
+      "text": "は周りに合わせるべきグループがいないと",
+      "start_seconds": 273.6,
+      "end_seconds": 275.84,
+      "id": "5Gi3S6L5XYs-display-0086",
+      "segment_id": "5Gi3S6L5XYs-ja-0032"
+    },
+    {
+      "text": "いうこと。すると結果驚きでした。4km",
+      "start_seconds": 275.84,
+      "end_seconds": 280.28,
+      "id": "5Gi3S6L5XYs-display-0087",
+      "segment_id": "5Gi3S6L5XYs-ja-0033"
+    },
+    {
+      "text": "ぐらいの河敷のコースを疲れずに乾燥でき",
+      "start_seconds": 280.28,
+      "end_seconds": 283.24,
+      "id": "5Gi3S6L5XYs-display-0088",
+      "segment_id": "5Gi3S6L5XYs-ja-0033"
+    },
+    {
+      "text": "たのです。周りに合わせずに自分のペース",
+      "start_seconds": 283.24,
+      "end_seconds": 286.56,
+      "id": "5Gi3S6L5XYs-display-0089",
+      "segment_id": "5Gi3S6L5XYs-ja-0033"
+    },
+    {
+      "text": "で走ったからでした。",
+      "start_seconds": 286.56,
+      "end_seconds": 289.6,
+      "id": "5Gi3S6L5XYs-display-0090",
+      "segment_id": "5Gi3S6L5XYs-ja-0034"
+    },
+    {
+      "text": "そこで18ヶ月下を向いて歩いたコースを",
+      "start_seconds": 289.6,
+      "end_seconds": 293.72,
+      "id": "5Gi3S6L5XYs-display-0091",
+      "segment_id": "5Gi3S6L5XYs-ja-0035"
+    },
+    {
+      "text": "初めて前を向いて走れた。",
+      "start_seconds": 293.72,
+      "end_seconds": 297.16,
+      "id": "5Gi3S6L5XYs-display-0092",
+      "segment_id": "5Gi3S6L5XYs-ja-0035"
+    },
+    {
+      "text": "そこで気づきました。",
+      "start_seconds": 297.16,
+      "end_seconds": 300.32,
+      "id": "5Gi3S6L5XYs-display-0093",
+      "segment_id": "5Gi3S6L5XYs-ja-0036"
+    },
+    {
+      "text": "風の音、自分の呼吸、青い空や緑や水が",
+      "start_seconds": 300.32,
+      "end_seconds": 304.919,
+      "id": "5Gi3S6L5XYs-display-0094",
+      "segment_id": "5Gi3S6L5XYs-ja-0037"
+    },
+    {
+      "text": "広がる景色、川の匂い。そして思いました",
+      "start_seconds": 304.919,
+      "end_seconds": 309.44,
+      "id": "5Gi3S6L5XYs-display-0095",
+      "segment_id": "5Gi3S6L5XYs-ja-0037"
+    },
+    {
+      "text": "。ああ、ここはこんな綺麗な世界やったん",
+      "start_seconds": 309.44,
+      "end_seconds": 313.52,
+      "id": "5Gi3S6L5XYs-display-0096",
+      "segment_id": "5Gi3S6L5XYs-ja-0038"
+    },
+    {
+      "text": "か。",
+      "start_seconds": 313.52,
+      "end_seconds": 315.4,
+      "id": "5Gi3S6L5XYs-display-0097",
+      "segment_id": "5Gi3S6L5XYs-ja-0038"
+    },
+    {
+      "text": "こんな自分でもできるんかなと胸が震えた",
+      "start_seconds": 315.4,
+      "end_seconds": 319.28,
+      "id": "5Gi3S6L5XYs-display-0098",
+      "segment_id": "5Gi3S6L5XYs-ja-0039"
+    },
+    {
+      "text": "瞬間でした。",
+      "start_seconds": 319.28,
+      "end_seconds": 321.6,
+      "id": "5Gi3S6L5XYs-display-0099",
+      "segment_id": "5Gi3S6L5XYs-ja-0039"
+    },
+    {
+      "text": "あの日私は塞がりていた後期と再開しまし",
+      "start_seconds": 321.6,
+      "end_seconds": 325.039,
+      "id": "5Gi3S6L5XYs-display-0100",
+      "segment_id": "5Gi3S6L5XYs-ja-0040"
+    },
+    {
+      "text": "た。まさに新しい世界が見えた瞬間、",
+      "start_seconds": 325.039,
+      "end_seconds": 331.52,
+      "id": "5Gi3S6L5XYs-display-0101",
+      "segment_id": "5Gi3S6L5XYs-ja-0040"
+    },
+    {
+      "text": "マイペースできることを覚えてからは",
+      "start_seconds": 331.52,
+      "end_seconds": 333.6,
+      "id": "5Gi3S6L5XYs-display-0102",
+      "segment_id": "5Gi3S6L5XYs-ja-0040"
+    },
+    {
+      "text": "いろんなものをに手をつけました。",
+      "start_seconds": 333.6,
+      "end_seconds": 337.72,
+      "id": "5Gi3S6L5XYs-display-0103",
+      "segment_id": "5Gi3S6L5XYs-ja-0041"
+    },
+    {
+      "text": "教育",
+      "start_seconds": 337.72,
+      "end_seconds": 340.72,
+      "id": "5Gi3S6L5XYs-display-0104",
+      "segment_id": "5Gi3S6L5XYs-ja-0042"
+    },
+    {
+      "text": "ダンス",
+      "start_seconds": 342.68,
+      "end_seconds": 345.68,
+      "id": "5Gi3S6L5XYs-display-0105",
+      "segment_id": "5Gi3S6L5XYs-ja-0043"
+    },
+    {
+      "text": "都米して演劇",
+      "start_seconds": 345.88,
+      "end_seconds": 348.919,
+      "id": "5Gi3S6L5XYs-display-0106",
+      "segment_id": "5Gi3S6L5XYs-ja-0043"
+    },
+    {
+      "text": "料理",
+      "start_seconds": 348.919,
+      "end_seconds": 351.319,
+      "id": "5Gi3S6L5XYs-display-0107",
+      "segment_id": "5Gi3S6L5XYs-ja-0043"
+    },
+    {
+      "text": "世界の教育どれも一見バラバラなような",
+      "start_seconds": 351.319,
+      "end_seconds": 354.72,
+      "id": "5Gi3S6L5XYs-display-0108",
+      "segment_id": "5Gi3S6L5XYs-ja-0044"
+    },
+    {
+      "text": "ものに見えますが全て好奇心が次の世界に",
+      "start_seconds": 354.72,
+      "end_seconds": 357.52,
+      "id": "5Gi3S6L5XYs-display-0109",
+      "segment_id": "5Gi3S6L5XYs-ja-0044"
+    },
+    {
+      "text": "連れて行ってくれました。",
+      "start_seconds": 357.52,
+      "end_seconds": 360.72,
+      "id": "5Gi3S6L5XYs-display-0110",
+      "segment_id": "5Gi3S6L5XYs-ja-0044"
+    },
+    {
+      "text": "質問やめてと言われて、あの環境を何とか",
+      "start_seconds": 360.72,
+      "end_seconds": 362.919,
+      "id": "5Gi3S6L5XYs-display-0111",
+      "segment_id": "5Gi3S6L5XYs-ja-0045"
+    },
+    {
+      "text": "したいと思う教育に",
+      "start_seconds": 362.919,
+      "end_seconds": 365.56,
+      "id": "5Gi3S6L5XYs-display-0112",
+      "segment_id": "5Gi3S6L5XYs-ja-0045"
+    },
+    {
+      "text": "言語を超えて自己表現し人が繋がるダンス",
+      "start_seconds": 365.56,
+      "end_seconds": 368.639,
+      "id": "5Gi3S6L5XYs-display-0113",
+      "segment_id": "5Gi3S6L5XYs-ja-0045"
+    },
+    {
+      "text": "。",
+      "start_seconds": 368.639,
+      "end_seconds": 370.68,
+      "id": "5Gi3S6L5XYs-display-0114",
+      "segment_id": "5Gi3S6L5XYs-ja-0045"
+    },
+    {
+      "text": "教育とダンスを通して人を動かし学びを",
+      "start_seconds": 370.68,
+      "end_seconds": 373.8,
+      "id": "5Gi3S6L5XYs-display-0115",
+      "segment_id": "5Gi3S6L5XYs-ja-0046"
+    },
+    {
+      "text": "動かすのは表現力と思い米して演劇に。",
+      "start_seconds": 373.8,
+      "end_seconds": 379.52,
+      "id": "5Gi3S6L5XYs-display-0116",
+      "segment_id": "5Gi3S6L5XYs-ja-0046"
+    },
+    {
+      "text": "そこで始めた自炊が楽しくて料理の世界に",
+      "start_seconds": 379.52,
+      "end_seconds": 383.68,
+      "id": "5Gi3S6L5XYs-display-0117",
+      "segment_id": "5Gi3S6L5XYs-ja-0047"
+    },
+    {
+      "text": "そして",
+      "start_seconds": 383.68,
+      "end_seconds": 386.12,
+      "id": "5Gi3S6L5XYs-display-0118",
+      "segment_id": "5Gi3S6L5XYs-ja-0047"
+    },
+    {
+      "text": "料理人時代の同僚たちを通して世界の各者",
+      "start_seconds": 386.12,
+      "end_seconds": 389.4,
+      "id": "5Gi3S6L5XYs-display-0119",
+      "segment_id": "5Gi3S6L5XYs-ja-0047"
+    },
+    {
+      "text": "境を実感し世界の教育へ",
+      "start_seconds": 389.4,
+      "end_seconds": 393.639,
+      "id": "5Gi3S6L5XYs-display-0120",
+      "segment_id": "5Gi3S6L5XYs-ja-0048"
+    },
+    {
+      "text": "気がつけば世界ご大陸に住んでいました。",
+      "start_seconds": 393.639,
+      "end_seconds": 398.759,
+      "id": "5Gi3S6L5XYs-display-0121",
+      "segment_id": "5Gi3S6L5XYs-ja-0048"
+    },
+    {
+      "text": "灼熱の砂漠極感の草減",
+      "start_seconds": 398.759,
+      "end_seconds": 403.199,
+      "id": "5Gi3S6L5XYs-display-0122",
+      "segment_id": "5Gi3S6L5XYs-ja-0049"
+    },
+    {
+      "text": "終日真っ暗な空間もあれば太陽が照り続け",
+      "start_seconds": 403.199,
+      "end_seconds": 406.36,
+      "id": "5Gi3S6L5XYs-display-0123",
+      "segment_id": "5Gi3S6L5XYs-ja-0049"
+    },
+    {
+      "text": "てる日々もある。",
+      "start_seconds": 406.36,
+      "end_seconds": 408.56,
+      "id": "5Gi3S6L5XYs-display-0124",
+      "segment_id": "5Gi3S6L5XYs-ja-0049"
+    },
+    {
+      "text": "気合だけではなく世界では宗教や文化、",
+      "start_seconds": 408.56,
+      "end_seconds": 411.56,
+      "id": "5Gi3S6L5XYs-display-0125",
+      "segment_id": "5Gi3S6L5XYs-ja-0050"
+    },
+    {
+      "text": "価値観も食べるものも挨拶の仕方も恋愛の",
+      "start_seconds": 411.56,
+      "end_seconds": 415.16,
+      "id": "5Gi3S6L5XYs-display-0126",
+      "segment_id": "5Gi3S6L5XYs-ja-0050"
+    },
+    {
+      "text": "仕方も違う。",
+      "start_seconds": 415.16,
+      "end_seconds": 418.0,
+      "id": "5Gi3S6L5XYs-display-0127",
+      "segment_id": "5Gi3S6L5XYs-ja-0050"
+    },
+    {
+      "text": "そして",
+      "start_seconds": 418.0,
+      "end_seconds": 419.8,
+      "id": "5Gi3S6L5XYs-display-0128",
+      "segment_id": "5Gi3S6L5XYs-ja-0051"
+    },
+    {
+      "text": "世界に出て気づきました。違いに触れると",
+      "start_seconds": 419.8,
+      "end_seconds": 422.4,
+      "id": "5Gi3S6L5XYs-display-0129",
+      "segment_id": "5Gi3S6L5XYs-ja-0051"
+    },
+    {
+      "text": "いうことは自分のいたところや自分自身が",
+      "start_seconds": 422.4,
+      "end_seconds": 425.52,
+      "id": "5Gi3S6L5XYs-display-0130",
+      "segment_id": "5Gi3S6L5XYs-ja-0051"
+    },
+    {
+      "text": "見えるということ。人はよく",
+      "start_seconds": 425.52,
+      "end_seconds": 429.479,
+      "id": "5Gi3S6L5XYs-display-0131",
+      "segment_id": "5Gi3S6L5XYs-ja-0051"
+    },
+    {
+      "text": "コンフォートゾーンから抜けようという話",
+      "start_seconds": 429.479,
+      "end_seconds": 431.8,
+      "id": "5Gi3S6L5XYs-display-0132",
+      "segment_id": "5Gi3S6L5XYs-ja-0052"
+    },
+    {
+      "text": "をします。でも実は自分がそこにいる",
+      "start_seconds": 431.8,
+      "end_seconds": 435.28,
+      "id": "5Gi3S6L5XYs-display-0133",
+      "segment_id": "5Gi3S6L5XYs-ja-0052"
+    },
+    {
+      "text": "ところに慣れているだけで居心地が悪いと",
+      "start_seconds": 435.28,
+      "end_seconds": 438.28,
+      "id": "5Gi3S6L5XYs-display-0134",
+      "segment_id": "5Gi3S6L5XYs-ja-0052"
+    },
+    {
+      "text": "いうことにも気づかないこともあります。",
+      "start_seconds": 438.28,
+      "end_seconds": 440.759,
+      "id": "5Gi3S6L5XYs-display-0135",
+      "segment_id": "5Gi3S6L5XYs-ja-0052"
+    },
+    {
+      "text": "例えばずっと暑いところ、寒いところ、",
+      "start_seconds": 440.759,
+      "end_seconds": 443.08,
+      "id": "5Gi3S6L5XYs-display-0136",
+      "segment_id": "5Gi3S6L5XYs-ja-0053"
+    },
+    {
+      "text": "暗いところ、寒いところにいる人がそれが",
+      "start_seconds": 443.08,
+      "end_seconds": 445.68,
+      "id": "5Gi3S6L5XYs-display-0137",
+      "segment_id": "5Gi3S6L5XYs-ja-0053"
+    },
+    {
+      "text": "当たり前だと思ってしまうように。でも",
+      "start_seconds": 445.68,
+      "end_seconds": 449.24,
+      "id": "5Gi3S6L5XYs-display-0138",
+      "segment_id": "5Gi3S6L5XYs-ja-0053"
+    },
+    {
+      "text": "違う世界に触れると自分が居心地がい",
+      "start_seconds": 449.24,
+      "end_seconds": 452.84,
+      "id": "5Gi3S6L5XYs-display-0139",
+      "segment_id": "5Gi3S6L5XYs-ja-0054"
+    },
+    {
+      "text": "られる環境に気づくこともあります。",
+      "start_seconds": 452.84,
+      "end_seconds": 456.039,
+      "id": "5Gi3S6L5XYs-display-0140",
+      "segment_id": "5Gi3S6L5XYs-ja-0054"
+    },
+    {
+      "text": "どこぞの元陸上部員が1人で河川軸走った",
+      "start_seconds": 456.039,
+      "end_seconds": 459.16,
+      "id": "5Gi3S6L5XYs-display-0141",
+      "segment_id": "5Gi3S6L5XYs-ja-0055"
+    },
+    {
+      "text": "かのように",
+      "start_seconds": 459.16,
+      "end_seconds": 462.47900000000004,
+      "id": "5Gi3S6L5XYs-display-0142",
+      "segment_id": "5Gi3S6L5XYs-ja-0055"
+    },
+    {
+      "text": "ご大陸で50カ国以上の教育支援をし、",
+      "start_seconds": 465.44,
+      "end_seconds": 470.12,
+      "id": "5Gi3S6L5XYs-display-0143",
+      "segment_id": "5Gi3S6L5XYs-ja-0056"
+    },
+    {
+      "text": "ある不思議なことに気づきました。世界で",
+      "start_seconds": 470.12,
+      "end_seconds": 472.879,
+      "id": "5Gi3S6L5XYs-display-0144",
+      "segment_id": "5Gi3S6L5XYs-ja-0056"
+    },
+    {
+      "text": "は文化や宗教価値観も違うのになぜか教育",
+      "start_seconds": 472.879,
+      "end_seconds": 477.12,
+      "id": "5Gi3S6L5XYs-display-0145",
+      "segment_id": "5Gi3S6L5XYs-ja-0056"
+    },
+    {
+      "text": "だけは驚くほど似ていたんです。同じよう",
+      "start_seconds": 477.12,
+      "end_seconds": 480.319,
+      "id": "5Gi3S6L5XYs-display-0146",
+      "segment_id": "5Gi3S6L5XYs-ja-0057"
+    },
+    {
+      "text": "な構成、同じような当たり前、同じような",
+      "start_seconds": 480.319,
+      "end_seconds": 483.039,
+      "id": "5Gi3S6L5XYs-display-0147",
+      "segment_id": "5Gi3S6L5XYs-ja-0057"
+    },
+    {
+      "text": "こあるべきまるで世界中で教育メニューと",
+      "start_seconds": 483.039,
+      "end_seconds": 486.639,
+      "id": "5Gi3S6L5XYs-display-0148",
+      "segment_id": "5Gi3S6L5XYs-ja-0057"
+    },
+    {
+      "text": "いう定職が提供されているような感覚でし",
+      "start_seconds": 486.639,
+      "end_seconds": 488.96,
+      "id": "5Gi3S6L5XYs-display-0149",
+      "segment_id": "5Gi3S6L5XYs-ja-0057"
+    },
+    {
+      "text": "た。そのような中、そして大変な環境でも",
+      "start_seconds": 488.96,
+      "end_seconds": 493.12,
+      "id": "5Gi3S6L5XYs-display-0150",
+      "segment_id": "5Gi3S6L5XYs-ja-0058"
+    },
+    {
+      "text": "学び続けたいと意欲を燃やしている若者",
+      "start_seconds": 493.12,
+      "end_seconds": 495.96,
+      "id": "5Gi3S6L5XYs-display-0151",
+      "segment_id": "5Gi3S6L5XYs-ja-0058"
+    },
+    {
+      "text": "たちにも出会ってきました。今日は世界も",
+      "start_seconds": 495.96,
+      "end_seconds": 499.8,
+      "id": "5Gi3S6L5XYs-display-0152",
+      "segment_id": "5Gi3S6L5XYs-ja-0058"
+    },
+    {
+      "text": "のつく3つの国の紹介をしたいと思います",
+      "start_seconds": 499.8,
+      "end_seconds": 502.039,
+      "id": "5Gi3S6L5XYs-display-0153",
+      "segment_id": "5Gi3S6L5XYs-ja-0059"
+    },
+    {
+      "text": "。",
+      "start_seconds": 502.039,
+      "end_seconds": 503.68,
+      "id": "5Gi3S6L5XYs-display-0154",
+      "segment_id": "5Gi3S6L5XYs-ja-0059"
+    },
+    {
+      "text": "1つ目はモンゴル",
+      "start_seconds": 503.68,
+      "end_seconds": 506.8,
+      "id": "5Gi3S6L5XYs-display-0155",
+      "segment_id": "5Gi3S6L5XYs-ja-0060"
+    },
+    {
+      "text": "標40度以下畜",
+      "start_seconds": 506.8,
+      "end_seconds": 510.0,
+      "id": "5Gi3S6L5XYs-display-0156",
+      "segment_id": "5Gi3S6L5XYs-ja-0060"
+    },
+    {
+      "text": "の世話をし学校を何ヶ月以上も休んだ遊国",
+      "start_seconds": 510.0,
+      "end_seconds": 513.0,
+      "id": "5Gi3S6L5XYs-display-0157",
+      "segment_id": "5Gi3S6L5XYs-ja-0060"
+    },
+    {
+      "text": "民生隊の子供たち",
+      "start_seconds": 513.0,
+      "end_seconds": 515.88,
+      "id": "5Gi3S6L5XYs-display-0158",
+      "segment_id": "5Gi3S6L5XYs-ja-0061"
+    },
+    {
+      "text": "やっとのことで学校に戻ってきて親元離れ",
+      "start_seconds": 515.88,
+      "end_seconds": 518.399,
+      "id": "5Gi3S6L5XYs-display-0159",
+      "segment_id": "5Gi3S6L5XYs-ja-0061"
+    },
+    {
+      "text": "て両生活が始まり",
+      "start_seconds": 518.399,
+      "end_seconds": 520.68,
+      "id": "5Gi3S6L5XYs-display-0160",
+      "segment_id": "5Gi3S6L5XYs-ja-0061"
+    },
+    {
+      "text": "夜は寒い中外にあるトイレにも行かなきゃ",
+      "start_seconds": 520.68,
+      "end_seconds": 523.24,
+      "id": "5Gi3S6L5XYs-display-0161",
+      "segment_id": "5Gi3S6L5XYs-ja-0061"
+    },
+    {
+      "text": "いけない食事を管理も自分でそんな大変な",
+      "start_seconds": 523.24,
+      "end_seconds": 527.279,
+      "id": "5Gi3S6L5XYs-display-0162",
+      "segment_id": "5Gi3S6L5XYs-ja-0062"
+    },
+    {
+      "text": "環境にいてでも学びたいと意欲を燃やす",
+      "start_seconds": 527.279,
+      "end_seconds": 531.279,
+      "id": "5Gi3S6L5XYs-display-0163",
+      "segment_id": "5Gi3S6L5XYs-ja-0062"
+    },
+    {
+      "text": "若者たちに出会ってきました。彼らは彼女",
+      "start_seconds": 531.279,
+      "end_seconds": 534.68,
+      "id": "5Gi3S6L5XYs-display-0164",
+      "segment_id": "5Gi3S6L5XYs-ja-0062"
+    },
+    {
+      "text": "らは教育の機会を奪われたからこそその",
+      "start_seconds": 534.68,
+      "end_seconds": 537.16,
+      "id": "5Gi3S6L5XYs-display-0165",
+      "segment_id": "5Gi3S6L5XYs-ja-0063"
+    },
+    {
+      "text": "学びたいという熱い投資は極家の中でも",
+      "start_seconds": 537.16,
+      "end_seconds": 539.8,
+      "id": "5Gi3S6L5XYs-display-0166",
+      "segment_id": "5Gi3S6L5XYs-ja-0063"
+    },
+    {
+      "text": "覚めなかったのかもしれしれません。次は",
+      "start_seconds": 539.8,
+      "end_seconds": 543.399,
+      "id": "5Gi3S6L5XYs-display-0167",
+      "segment_id": "5Gi3S6L5XYs-ja-0063"
+    },
+    {
+      "text": "モザンビク。ここでは生徒1人1人が教室",
+      "start_seconds": 543.399,
+      "end_seconds": 547.76,
+      "id": "5Gi3S6L5XYs-display-0168",
+      "segment_id": "5Gi3S6L5XYs-ja-0064"
+    },
+    {
+      "text": "に入る前に自分の好きな挨拶を先生とし",
+      "start_seconds": 547.76,
+      "end_seconds": 550.68,
+      "id": "5Gi3S6L5XYs-display-0169",
+      "segment_id": "5Gi3S6L5XYs-ja-0064"
+    },
+    {
+      "text": "ました。当時",
+      "start_seconds": 550.68,
+      "end_seconds": 554.32,
+      "id": "5Gi3S6L5XYs-display-0170",
+      "segment_id": "5Gi3S6L5XYs-ja-0064"
+    },
+    {
+      "text": "先生は生徒の名前を覚えることも1人1人",
+      "start_seconds": 554.32,
+      "end_seconds": 557.839,
+      "id": "5Gi3S6L5XYs-display-0171",
+      "segment_id": "5Gi3S6L5XYs-ja-0065"
+    },
+    {
+      "text": "と挨拶することもありませんでした。",
+      "start_seconds": 557.839,
+      "end_seconds": 561.04,
+      "id": "5Gi3S6L5XYs-display-0172",
+      "segment_id": "5Gi3S6L5XYs-ja-0065"
+    },
+    {
+      "text": "先生1人当たりに70人以上生徒がいたの",
+      "start_seconds": 561.04,
+      "end_seconds": 564.32,
+      "id": "5Gi3S6L5XYs-display-0173",
+      "segment_id": "5Gi3S6L5XYs-ja-0066"
+    },
+    {
+      "text": "もその国では当たり前でした。でも朝の",
+      "start_seconds": 564.32,
+      "end_seconds": 567.36,
+      "id": "5Gi3S6L5XYs-display-0174",
+      "segment_id": "5Gi3S6L5XYs-ja-0066"
+    },
+    {
+      "text": "選べる挨拶を取り入れてからは人間関係や",
+      "start_seconds": 567.36,
+      "end_seconds": 570.88,
+      "id": "5Gi3S6L5XYs-display-0175",
+      "segment_id": "5Gi3S6L5XYs-ja-0066"
+    },
+    {
+      "text": "教室の空気が一変したんです。",
+      "start_seconds": 570.88,
+      "end_seconds": 574.519,
+      "id": "5Gi3S6L5XYs-display-0176",
+      "segment_id": "5Gi3S6L5XYs-ja-0067"
+    },
+    {
+      "text": "ハグ、ハ立ち、肘ち、握手、ジャンプ",
+      "start_seconds": 574.519,
+      "end_seconds": 580.88,
+      "id": "5Gi3S6L5XYs-display-0177",
+      "segment_id": "5Gi3S6L5XYs-ja-0068"
+    },
+    {
+      "text": "選ばないというのもある。",
+      "start_seconds": 580.88,
+      "end_seconds": 583.44,
+      "id": "5Gi3S6L5XYs-display-0178",
+      "segment_id": "5Gi3S6L5XYs-ja-0068"
+    },
+    {
+      "text": "先生はそれに対応する。答えがない楽しい",
+      "start_seconds": 583.44,
+      "end_seconds": 586.959,
+      "id": "5Gi3S6L5XYs-display-0179",
+      "segment_id": "5Gi3S6L5XYs-ja-0069"
+    },
+    {
+      "text": "。",
+      "start_seconds": 586.959,
+      "end_seconds": 588.88,
+      "id": "5Gi3S6L5XYs-display-0180",
+      "segment_id": "5Gi3S6L5XYs-ja-0069"
+    },
+    {
+      "text": "教室に入った時はすでに安心安全な学び",
+      "start_seconds": 588.88,
+      "end_seconds": 592.48,
+      "id": "5Gi3S6L5XYs-display-0181",
+      "segment_id": "5Gi3S6L5XYs-ja-0070"
+    },
+    {
+      "text": "やすい環境ができていました。",
+      "start_seconds": 592.48,
+      "end_seconds": 595.2,
+      "id": "5Gi3S6L5XYs-display-0182",
+      "segment_id": "5Gi3S6L5XYs-ja-0070"
+    },
+    {
+      "text": "そして最後のこれは今でも忘れられない",
+      "start_seconds": 595.2,
+      "end_seconds": 598.6,
+      "id": "5Gi3S6L5XYs-display-0183",
+      "segment_id": "5Gi3S6L5XYs-ja-0071"
+    },
+    {
+      "text": "モ谷ニアで出会った若者です。難民支援を",
+      "start_seconds": 598.6,
+      "end_seconds": 602.0,
+      "id": "5Gi3S6L5XYs-display-0184",
+      "segment_id": "5Gi3S6L5XYs-ja-0071"
+    },
+    {
+      "text": "していた私は若者たちが自分の好きな種類",
+      "start_seconds": 602.0,
+      "end_seconds": 605.079,
+      "id": "5Gi3S6L5XYs-display-0185",
+      "segment_id": "5Gi3S6L5XYs-ja-0071"
+    },
+    {
+      "text": "のワークショップを選ぶということを実施",
+      "start_seconds": 605.079,
+      "end_seconds": 607.2,
+      "id": "5Gi3S6L5XYs-display-0186",
+      "segment_id": "5Gi3S6L5XYs-ja-0071"
+    },
+    {
+      "text": "しており、私はダンス担当でした。",
+      "start_seconds": 607.2,
+      "end_seconds": 610.839,
+      "id": "5Gi3S6L5XYs-display-0187",
+      "segment_id": "5Gi3S6L5XYs-ja-0072"
+    },
+    {
+      "text": "すると絵を描くワークショップの会場から",
+      "start_seconds": 610.839,
+      "end_seconds": 614.16,
+      "id": "5Gi3S6L5XYs-display-0188",
+      "segment_id": "5Gi3S6L5XYs-ja-0073"
+    },
+    {
+      "text": "1人の若者が抜け出してきて僕もダンスを",
+      "start_seconds": 614.16,
+      "end_seconds": 617.24,
+      "id": "5Gi3S6L5XYs-display-0189",
+      "segment_id": "5Gi3S6L5XYs-ja-0073"
+    },
+    {
+      "text": "したい。と言ってきました。",
+      "start_seconds": 617.24,
+      "end_seconds": 621.04,
+      "id": "5Gi3S6L5XYs-display-0190",
+      "segment_id": "5Gi3S6L5XYs-ja-0073"
+    },
+    {
+      "text": "なんとその子は片足が1本なかったんです",
+      "start_seconds": 621.04,
+      "end_seconds": 623.8,
+      "id": "5Gi3S6L5XYs-display-0191",
+      "segment_id": "5Gi3S6L5XYs-ja-0074"
+    },
+    {
+      "text": "。もちろんいいよと心よく迎え、その子は",
+      "start_seconds": 623.8,
+      "end_seconds": 628.279,
+      "id": "5Gi3S6L5XYs-display-0192",
+      "segment_id": "5Gi3S6L5XYs-ja-0074"
+    },
+    {
+      "text": "片足でぴょんぴょんと全力で踊りました。",
+      "start_seconds": 628.279,
+      "end_seconds": 631.68,
+      "id": "5Gi3S6L5XYs-display-0193",
+      "segment_id": "5Gi3S6L5XYs-ja-0074"
+    },
+    {
+      "text": "我々も手押師と一緒に片足でダンスして",
+      "start_seconds": 631.68,
+      "end_seconds": 635.639,
+      "id": "5Gi3S6L5XYs-display-0194",
+      "segment_id": "5Gi3S6L5XYs-ja-0075"
+    },
+    {
+      "text": "迎えました。会場大盛り上がり。そして",
+      "start_seconds": 635.639,
+      "end_seconds": 639.48,
+      "id": "5Gi3S6L5XYs-display-0195",
+      "segment_id": "5Gi3S6L5XYs-ja-0075"
+    },
+    {
+      "text": "その後その子は私のとこに来ていました。",
+      "start_seconds": 639.48,
+      "end_seconds": 643.839,
+      "id": "5Gi3S6L5XYs-display-0196",
+      "segment_id": "5Gi3S6L5XYs-ja-0076"
+    },
+    {
+      "text": "今日で僕の人生が変わった。",
+      "start_seconds": 643.839,
+      "end_seconds": 647.6,
+      "id": "5Gi3S6L5XYs-display-0197",
+      "segment_id": "5Gi3S6L5XYs-ja-0077"
+    },
+    {
+      "text": "え、どういうこと?",
+      "start_seconds": 647.6,
+      "end_seconds": 650.36,
+      "id": "5Gi3S6L5XYs-display-0198",
+      "segment_id": "5Gi3S6L5XYs-ja-0078"
+    },
+    {
+      "text": "僕の村では障害者は人の前には出てはいけ",
+      "start_seconds": 650.36,
+      "end_seconds": 653.12,
+      "id": "5Gi3S6L5XYs-display-0199",
+      "segment_id": "5Gi3S6L5XYs-ja-0079"
+    },
+    {
+      "text": "ない。まししてや踊るなんて。でも今日",
+      "start_seconds": 653.12,
+      "end_seconds": 656.92,
+      "id": "5Gi3S6L5XYs-display-0200",
+      "segment_id": "5Gi3S6L5XYs-ja-0079"
+    },
+    {
+      "text": "初めて人前踊ってこんなに楽しいものだと",
+      "start_seconds": 656.92,
+      "end_seconds": 659.639,
+      "id": "5Gi3S6L5XYs-display-0201",
+      "segment_id": "5Gi3S6L5XYs-ja-0079"
+    },
+    {
+      "text": "思わなかった。だからこれからは人に何を",
+      "start_seconds": 659.639,
+      "end_seconds": 662.68,
+      "id": "5Gi3S6L5XYs-display-0202",
+      "segment_id": "5Gi3S6L5XYs-ja-0080"
+    },
+    {
+      "text": "言われても踊り続けたい。",
+      "start_seconds": 662.68,
+      "end_seconds": 667.0,
+      "id": "5Gi3S6L5XYs-display-0203",
+      "segment_id": "5Gi3S6L5XYs-ja-0080"
+    },
+    {
+      "text": "その瞬間河川敷を走っていた昔の自分を",
+      "start_seconds": 667.0,
+      "end_seconds": 670.48,
+      "id": "5Gi3S6L5XYs-display-0204",
+      "segment_id": "5Gi3S6L5XYs-ja-0081"
+    },
+    {
+      "text": "思い出しました。ああ、この子も新しい",
+      "start_seconds": 670.48,
+      "end_seconds": 674.72,
+      "id": "5Gi3S6L5XYs-display-0205",
+      "segment_id": "5Gi3S6L5XYs-ja-0081"
+    },
+    {
+      "text": "世界が見えたんだ。",
+      "start_seconds": 674.72,
+      "end_seconds": 677.639,
+      "id": "5Gi3S6L5XYs-display-0206",
+      "segment_id": "5Gi3S6L5XYs-ja-0081"
+    },
+    {
+      "text": "それでは皆さん",
+      "start_seconds": 677.639,
+      "end_seconds": 679.959,
+      "id": "5Gi3S6L5XYs-display-0207",
+      "segment_id": "5Gi3S6L5XYs-ja-0082"
+    },
+    {
+      "text": "少しでもその時の状況を実感していただく",
+      "start_seconds": 679.959,
+      "end_seconds": 682.519,
+      "id": "5Gi3S6L5XYs-display-0208",
+      "segment_id": "5Gi3S6L5XYs-ja-0082"
+    },
+    {
+      "text": "ためにどうぞ少しだけご起立お願いします",
+      "start_seconds": 682.519,
+      "end_seconds": 684.6,
+      "id": "5Gi3S6L5XYs-display-0209",
+      "segment_id": "5Gi3S6L5XYs-ja-0082"
+    },
+    {
+      "text": "。そして私の手吉と一緒に片足1本で5秒",
+      "start_seconds": 684.6,
+      "end_seconds": 688.76,
+      "id": "5Gi3S6L5XYs-display-0210",
+      "segment_id": "5Gi3S6L5XYs-ja-0082"
+    },
+    {
+      "text": "ほどダンスをしていただければありがたい",
+      "start_seconds": 688.76,
+      "end_seconds": 690.519,
+      "id": "5Gi3S6L5XYs-display-0211",
+      "segment_id": "5Gi3S6L5XYs-ja-0083"
+    },
+    {
+      "text": "です。いきましょう。せーの",
+      "start_seconds": 690.519,
+      "end_seconds": 695.16,
+      "id": "5Gi3S6L5XYs-display-0212",
+      "segment_id": "5Gi3S6L5XYs-ja-0083"
+    },
+    {
+      "text": "ありがとうございました。",
+      "start_seconds": 697.88,
+      "end_seconds": 701.56,
+      "id": "5Gi3S6L5XYs-display-0213",
+      "segment_id": "5Gi3S6L5XYs-ja-0084"
+    },
+    {
+      "text": "世界、え、今まで紹介してきた世界もつく",
+      "start_seconds": 702.519,
+      "end_seconds": 707.44,
+      "id": "5Gi3S6L5XYs-display-0214",
+      "segment_id": "5Gi3S6L5XYs-ja-0085"
+    },
+    {
+      "text": "3つの国の子供たちや他の国組で出会って",
+      "start_seconds": 707.44,
+      "end_seconds": 710.48,
+      "id": "5Gi3S6L5XYs-display-0215",
+      "segment_id": "5Gi3S6L5XYs-ja-0085"
+    },
+    {
+      "text": "きた若者たちに共通するのは",
+      "start_seconds": 710.48,
+      "end_seconds": 714.2,
+      "id": "5Gi3S6L5XYs-display-0216",
+      "segment_id": "5Gi3S6L5XYs-ja-0085"
+    },
+    {
+      "text": "やってみたい。やりやすい環境やってみる",
+      "start_seconds": 714.2,
+      "end_seconds": 718.48,
+      "id": "5Gi3S6L5XYs-display-0217",
+      "segment_id": "5Gi3S6L5XYs-ja-0086"
+    },
+    {
+      "text": "ということです。思い起こすとほぼ独学で",
+      "start_seconds": 718.48,
+      "end_seconds": 722.519,
+      "id": "5Gi3S6L5XYs-display-0218",
+      "segment_id": "5Gi3S6L5XYs-ja-0086"
+    },
+    {
+      "text": "他言者になった私もそれぞれのそれぞれの",
+      "start_seconds": 722.519,
+      "end_seconds": 724.88,
+      "id": "5Gi3S6L5XYs-display-0219",
+      "segment_id": "5Gi3S6L5XYs-ja-0086"
+    },
+    {
+      "text": "言語はその国でニーズや仕事のニーズも",
+      "start_seconds": 724.88,
+      "end_seconds": 729.04,
+      "id": "5Gi3S6L5XYs-display-0220",
+      "segment_id": "5Gi3S6L5XYs-ja-0087"
+    },
+    {
+      "text": "生活のニーズもありませんでした。でも",
+      "start_seconds": 729.04,
+      "end_seconds": 731.12,
+      "id": "5Gi3S6L5XYs-display-0221",
+      "segment_id": "5Gi3S6L5XYs-ja-0087"
+    },
+    {
+      "text": "面白そうやってみたいと思い、やりやすい",
+      "start_seconds": 731.12,
+      "end_seconds": 734.72,
+      "id": "5Gi3S6L5XYs-display-0222",
+      "segment_id": "5Gi3S6L5XYs-ja-0087"
+    },
+    {
+      "text": "環境を整え整え、",
+      "start_seconds": 734.72,
+      "end_seconds": 737.36,
+      "id": "5Gi3S6L5XYs-display-0223",
+      "segment_id": "5Gi3S6L5XYs-ja-0088"
+    },
+    {
+      "text": "少しずつ自分のペースでやっていくという",
+      "start_seconds": 737.36,
+      "end_seconds": 739.399,
+      "id": "5Gi3S6L5XYs-display-0224",
+      "segment_id": "5Gi3S6L5XYs-ja-0088"
+    },
+    {
+      "text": "結果でした。",
+      "start_seconds": 739.399,
+      "end_seconds": 742.48,
+      "id": "5Gi3S6L5XYs-display-0225",
+      "segment_id": "5Gi3S6L5XYs-ja-0088"
+    },
+    {
+      "text": "そこで気づきました。",
+      "start_seconds": 742.48,
+      "end_seconds": 744.92,
+      "id": "5Gi3S6L5XYs-display-0226",
+      "segment_id": "5Gi3S6L5XYs-ja-0089"
+    },
+    {
+      "text": "人を動かす、そして学びの言動力になるの",
+      "start_seconds": 744.92,
+      "end_seconds": 747.199,
+      "id": "5Gi3S6L5XYs-display-0227",
+      "segment_id": "5Gi3S6L5XYs-ja-0090"
+    },
+    {
+      "text": "はやってみたいということ。その気持ちが",
+      "start_seconds": 747.199,
+      "end_seconds": 752.04,
+      "id": "5Gi3S6L5XYs-display-0228",
+      "segment_id": "5Gi3S6L5XYs-ja-0090"
+    },
+    {
+      "text": "才能や能力も先に大事な好奇心として言動",
+      "start_seconds": 752.04,
+      "end_seconds": 755.68,
+      "id": "5Gi3S6L5XYs-display-0229",
+      "segment_id": "5Gi3S6L5XYs-ja-0090"
+    },
+    {
+      "text": "力となります。アインシュタインは言い",
+      "start_seconds": 755.68,
+      "end_seconds": 757.839,
+      "id": "5Gi3S6L5XYs-display-0230",
+      "segment_id": "5Gi3S6L5XYs-ja-0091"
+    },
+    {
+      "text": "ました。私には特別な才能はなかった。",
+      "start_seconds": 757.839,
+      "end_seconds": 760.48,
+      "id": "5Gi3S6L5XYs-display-0231",
+      "segment_id": "5Gi3S6L5XYs-ja-0091"
+    },
+    {
+      "text": "ただ猛烈に好奇心があっただけだ。では",
+      "start_seconds": 760.48,
+      "end_seconds": 763.839,
+      "id": "5Gi3S6L5XYs-display-0232",
+      "segment_id": "5Gi3S6L5XYs-ja-0092"
+    },
+    {
+      "text": "その好奇心と再開し学び続けるための3つ",
+      "start_seconds": 763.839,
+      "end_seconds": 767.519,
+      "id": "5Gi3S6L5XYs-display-0233",
+      "segment_id": "5Gi3S6L5XYs-ja-0092"
+    },
+    {
+      "text": "の鍵を紹介します。1つ目は多様な世界に",
+      "start_seconds": 767.519,
+      "end_seconds": 771.399,
+      "id": "5Gi3S6L5XYs-display-0234",
+      "segment_id": "5Gi3S6L5XYs-ja-0092"
+    },
+    {
+      "text": "触れること。ここでは高奇士の負担を外し",
+      "start_seconds": 771.399,
+      "end_seconds": 775.44,
+      "id": "5Gi3S6L5XYs-display-0235",
+      "segment_id": "5Gi3S6L5XYs-ja-0093"
+    },
+    {
+      "text": "その状態をキープすることを目指します。",
+      "start_seconds": 775.44,
+      "end_seconds": 779.6,
+      "id": "5Gi3S6L5XYs-display-0236",
+      "segment_id": "5Gi3S6L5XYs-ja-0093"
+    },
+    {
+      "text": "いろんな度に出ましょう。海外だけじゃ",
+      "start_seconds": 779.6,
+      "end_seconds": 781.72,
+      "id": "5Gi3S6L5XYs-display-0237",
+      "segment_id": "5Gi3S6L5XYs-ja-0094"
+    },
+    {
+      "text": "なくてもいい。普段やらないことや",
+      "start_seconds": 781.72,
+      "end_seconds": 784.959,
+      "id": "5Gi3S6L5XYs-display-0238",
+      "segment_id": "5Gi3S6L5XYs-ja-0094"
+    },
+    {
+      "text": "いろんな人本に出会いましょう。違う世界",
+      "start_seconds": 784.959,
+      "end_seconds": 788.6,
+      "id": "5Gi3S6L5XYs-display-0239",
+      "segment_id": "5Gi3S6L5XYs-ja-0094"
+    },
+    {
+      "text": "に触れると、あ、こんなのもあるんだと",
+      "start_seconds": 788.6,
+      "end_seconds": 791.76,
+      "id": "5Gi3S6L5XYs-display-0240",
+      "segment_id": "5Gi3S6L5XYs-ja-0095"
+    },
+    {
+      "text": "気づくことがあります。そして視野が",
+      "start_seconds": 791.76,
+      "end_seconds": 794.24,
+      "id": "5Gi3S6L5XYs-display-0241",
+      "segment_id": "5Gi3S6L5XYs-ja-0095"
+    },
+    {
+      "text": "広がり、どんどん学びたくなる。違う世界",
+      "start_seconds": 794.24,
+      "end_seconds": 798.279,
+      "id": "5Gi3S6L5XYs-display-0242",
+      "segment_id": "5Gi3S6L5XYs-ja-0095"
+    },
+    {
+      "text": "に触れるということは",
+      "start_seconds": 798.279,
+      "end_seconds": 801.279,
+      "id": "5Gi3S6L5XYs-display-0243",
+      "segment_id": "5Gi3S6L5XYs-ja-0096"
+    },
+    {
+      "text": "何事にも上には上がいて並びに終わりが",
+      "start_seconds": 801.279,
+      "end_seconds": 806.0,
+      "id": "5Gi3S6L5XYs-display-0244",
+      "segment_id": "5Gi3S6L5XYs-ja-0096"
+    },
+    {
+      "text": "ない。そして気づかなかったことに気づく",
+      "start_seconds": 806.0,
+      "end_seconds": 808.279,
+      "id": "5Gi3S6L5XYs-display-0245",
+      "segment_id": "5Gi3S6L5XYs-ja-0096"
+    },
+    {
+      "text": "。そうリミッターを外し視野を広げ学び",
+      "start_seconds": 808.279,
+      "end_seconds": 811.519,
+      "id": "5Gi3S6L5XYs-display-0246",
+      "segment_id": "5Gi3S6L5XYs-ja-0097"
+    },
+    {
+      "text": "たいと思うことにつがります。2つ目の鍵",
+      "start_seconds": 811.519,
+      "end_seconds": 814.76,
+      "id": "5Gi3S6L5XYs-display-0247",
+      "segment_id": "5Gi3S6L5XYs-ja-0097"
+    },
+    {
+      "text": "。これは自分をよく知りより良い状態をに",
+      "start_seconds": 814.76,
+      "end_seconds": 818.519,
+      "id": "5Gi3S6L5XYs-display-0248",
+      "segment_id": "5Gi3S6L5XYs-ja-0097"
+    },
+    {
+      "text": "持っていくこと。ここでは自分をどういう",
+      "start_seconds": 818.519,
+      "end_seconds": 821.16,
+      "id": "5Gi3S6L5XYs-display-0249",
+      "segment_id": "5Gi3S6L5XYs-ja-0098"
+    },
+    {
+      "text": "方向に持っていくかを決めます。",
+      "start_seconds": 821.16,
+      "end_seconds": 824.639,
+      "id": "5Gi3S6L5XYs-display-0250",
+      "segment_id": "5Gi3S6L5XYs-ja-0098"
+    },
+    {
+      "text": "自分は何者で何が好きで何がやりたくて",
+      "start_seconds": 824.639,
+      "end_seconds": 828.76,
+      "id": "5Gi3S6L5XYs-display-0251",
+      "segment_id": "5Gi3S6L5XYs-ja-0099"
+    },
+    {
+      "text": "自分のペースってのはどういうものなのか",
+      "start_seconds": 828.76,
+      "end_seconds": 830.48,
+      "id": "5Gi3S6L5XYs-display-0252",
+      "segment_id": "5Gi3S6L5XYs-ja-0099"
+    },
+    {
+      "text": "。数多くの先人たちが自分を知ることの",
+      "start_seconds": 830.48,
+      "end_seconds": 834.199,
+      "id": "5Gi3S6L5XYs-display-0253",
+      "segment_id": "5Gi3S6L5XYs-ja-0099"
+    },
+    {
+      "text": "大切さを唱えたのもそれが本当に大切で",
+      "start_seconds": 834.199,
+      "end_seconds": 837.199,
+      "id": "5Gi3S6L5XYs-display-0254",
+      "segment_id": "5Gi3S6L5XYs-ja-0100"
+    },
+    {
+      "text": "難しいからです。",
+      "start_seconds": 837.199,
+      "end_seconds": 840.92,
+      "id": "5Gi3S6L5XYs-display-0255",
+      "segment_id": "5Gi3S6L5XYs-ja-0100"
+    },
+    {
+      "text": "SNSやスマホ、情報が溢れる中で",
+      "start_seconds": 845.8,
+      "end_seconds": 850.56,
+      "id": "5Gi3S6L5XYs-display-0256",
+      "segment_id": "5Gi3S6L5XYs-ja-0101"
+    },
+    {
+      "text": "自分軸、他人軸ではなく自分軸で生きる",
+      "start_seconds": 850.56,
+      "end_seconds": 852.6,
+      "id": "5Gi3S6L5XYs-display-0257",
+      "segment_id": "5Gi3S6L5XYs-ja-0101"
+    },
+    {
+      "text": "ことは本当に難しい。でも自分を知ること",
+      "start_seconds": 852.6,
+      "end_seconds": 855.199,
+      "id": "5Gi3S6L5XYs-display-0258",
+      "segment_id": "5Gi3S6L5XYs-ja-0101"
+    },
+    {
+      "text": "、自己認識は本当に大切になってきてます",
+      "start_seconds": 855.199,
+      "end_seconds": 857.079,
+      "id": "5Gi3S6L5XYs-display-0259",
+      "segment_id": "5Gi3S6L5XYs-ja-0101"
+    },
+    {
+      "text": "。",
+      "start_seconds": 857.079,
+      "end_seconds": 859.199,
+      "id": "5Gi3S6L5XYs-display-0260",
+      "segment_id": "5Gi3S6L5XYs-ja-0102"
+    },
+    {
+      "text": "世界の教育の調流として自己認識を含めた",
+      "start_seconds": 859.199,
+      "end_seconds": 863.0,
+      "id": "5Gi3S6L5XYs-display-0261",
+      "segment_id": "5Gi3S6L5XYs-ja-0103"
+    },
+    {
+      "text": "ソーシャルエモーショナルラーニング通称",
+      "start_seconds": 863.0,
+      "end_seconds": 864.959,
+      "id": "5Gi3S6L5XYs-display-0262",
+      "segment_id": "5Gi3S6L5XYs-ja-0103"
+    },
+    {
+      "text": "Sが各国で実施されているのも希望に",
+      "start_seconds": 864.959,
+      "end_seconds": 868.12,
+      "id": "5Gi3S6L5XYs-display-0263",
+      "segment_id": "5Gi3S6L5XYs-ja-0103"
+    },
+    {
+      "text": "溢れる話です。ただこれはすごい長し長い",
+      "start_seconds": 868.12,
+      "end_seconds": 870.92,
+      "id": "5Gi3S6L5XYs-display-0264",
+      "segment_id": "5Gi3S6L5XYs-ja-0103"
+    },
+    {
+      "text": "話になるので、また別の日に",
+      "start_seconds": 870.92,
+      "end_seconds": 874.959,
+      "id": "5Gi3S6L5XYs-display-0265",
+      "segment_id": "5Gi3S6L5XYs-ja-0104"
+    },
+    {
+      "text": "打ち向きにな、自分だけ自分のことを知る",
+      "start_seconds": 875.92,
+      "end_seconds": 879.8,
+      "id": "5Gi3S6L5XYs-display-0266",
+      "segment_id": "5Gi3S6L5XYs-ja-0105"
+    },
+    {
+      "text": "と打ち向きに1人だけで考えてもどうせ",
+      "start_seconds": 879.8,
+      "end_seconds": 882.279,
+      "id": "5Gi3S6L5XYs-display-0267",
+      "segment_id": "5Gi3S6L5XYs-ja-0105"
+    },
+    {
+      "text": "自分なんてとリミッターがかかってしまう",
+      "start_seconds": 882.279,
+      "end_seconds": 884.44,
+      "id": "5Gi3S6L5XYs-display-0268",
+      "segment_id": "5Gi3S6L5XYs-ja-0105"
+    },
+    {
+      "text": "ことがあるので1つ目の鍵である世界に",
+      "start_seconds": 884.44,
+      "end_seconds": 887.56,
+      "id": "5Gi3S6L5XYs-display-0269",
+      "segment_id": "5Gi3S6L5XYs-ja-0105"
+    },
+    {
+      "text": "触れて高奇心の蓋を外すということを並行",
+      "start_seconds": 887.56,
+      "end_seconds": 890.68,
+      "id": "5Gi3S6L5XYs-display-0270",
+      "segment_id": "5Gi3S6L5XYs-ja-0106"
+    },
+    {
+      "text": "して行いましょう。そして3つ目の鍵。",
+      "start_seconds": 890.68,
+      "end_seconds": 893.88,
+      "id": "5Gi3S6L5XYs-display-0271",
+      "segment_id": "5Gi3S6L5XYs-ja-0106"
+    },
+    {
+      "text": "これはとにかく行動すること。世界中で見",
+      "start_seconds": 893.88,
+      "end_seconds": 897.079,
+      "id": "5Gi3S6L5XYs-display-0272",
+      "segment_id": "5Gi3S6L5XYs-ja-0107"
+    },
+    {
+      "text": "てきた、学び続ける人たちに共通してるの",
+      "start_seconds": 897.079,
+      "end_seconds": 899.079,
+      "id": "5Gi3S6L5XYs-display-0273",
+      "segment_id": "5Gi3S6L5XYs-ja-0107"
+    },
+    {
+      "text": "はとにかく動いていること。[鼻息]",
+      "start_seconds": 899.079,
+      "end_seconds": 902.12,
+      "id": "5Gi3S6L5XYs-display-0274",
+      "segment_id": "5Gi3S6L5XYs-ja-0107"
+    },
+    {
+      "text": "しかも小さく素早く",
+      "start_seconds": 902.12,
+      "end_seconds": 904.759,
+      "id": "5Gi3S6L5XYs-display-0275",
+      "segment_id": "5Gi3S6L5XYs-ja-0107"
+    },
+    {
+      "text": "瞬発力がある。",
+      "start_seconds": 904.759,
+      "end_seconds": 907.36,
+      "id": "5Gi3S6L5XYs-display-0276",
+      "segment_id": "5Gi3S6L5XYs-ja-0108"
+    },
+    {
+      "text": "頭で分かってるんだけどねとなかなか行動",
+      "start_seconds": 907.36,
+      "end_seconds": 910.92,
+      "id": "5Gi3S6L5XYs-display-0277",
+      "segment_id": "5Gi3S6L5XYs-ja-0109"
+    },
+    {
+      "text": "が起こせない人に紹介したいのが10秒",
+      "start_seconds": 910.92,
+      "end_seconds": 913.759,
+      "id": "5Gi3S6L5XYs-display-0278",
+      "segment_id": "5Gi3S6L5XYs-ja-0109"
+    },
+    {
+      "text": "ルール。",
+      "start_seconds": 913.759,
+      "end_seconds": 916.199,
+      "id": "5Gi3S6L5XYs-display-0279",
+      "segment_id": "5Gi3S6L5XYs-ja-0109"
+    },
+    {
+      "text": "人生は選択肢の連続です。何をやるにして",
+      "start_seconds": 916.199,
+      "end_seconds": 918.959,
+      "id": "5Gi3S6L5XYs-display-0280",
+      "segment_id": "5Gi3S6L5XYs-ja-0110"
+    },
+    {
+      "text": "もこれをやろうかな、どうしようかなと",
+      "start_seconds": 918.959,
+      "end_seconds": 921.48,
+      "id": "5Gi3S6L5XYs-display-0281",
+      "segment_id": "5Gi3S6L5XYs-ja-0110"
+    },
+    {
+      "text": "思う時があります。",
+      "start_seconds": 921.48,
+      "end_seconds": 924.36,
+      "id": "5Gi3S6L5XYs-display-0282",
+      "segment_id": "5Gi3S6L5XYs-ja-0110"
+    },
+    {
+      "text": "質問をしてみる。話しかける。目覚めた時",
+      "start_seconds": 924.36,
+      "end_seconds": 928.519,
+      "id": "5Gi3S6L5XYs-display-0283",
+      "segment_id": "5Gi3S6L5XYs-ja-0111"
+    },
+    {
+      "text": "にガバっと起きてみる。口説き文句を言っ",
+      "start_seconds": 928.519,
+      "end_seconds": 930.959,
+      "id": "5Gi3S6L5XYs-display-0284",
+      "segment_id": "5Gi3S6L5XYs-ja-0111"
+    },
+    {
+      "text": "てみる。滑るかもしれないけどジョーク",
+      "start_seconds": 930.959,
+      "end_seconds": 933.24,
+      "id": "5Gi3S6L5XYs-display-0285",
+      "segment_id": "5Gi3S6L5XYs-ja-0111"
+    },
+    {
+      "text": "やザりをダザリを言ってみる。何でもいい",
+      "start_seconds": 933.24,
+      "end_seconds": 935.6,
+      "id": "5Gi3S6L5XYs-display-0286",
+      "segment_id": "5Gi3S6L5XYs-ja-0111"
+    },
+    {
+      "text": "んです。",
+      "start_seconds": 935.6,
+      "end_seconds": 937.399,
+      "id": "5Gi3S6L5XYs-display-0287",
+      "segment_id": "5Gi3S6L5XYs-ja-0112"
+    },
+    {
+      "text": "何かに迷った時、頭の中で10秒の",
+      "start_seconds": 937.399,
+      "end_seconds": 940.399,
+      "id": "5Gi3S6L5XYs-display-0288",
+      "segment_id": "5Gi3S6L5XYs-ja-0113"
+    },
+    {
+      "text": "カウントダウンを描いても頭に描いてみて",
+      "start_seconds": 940.399,
+      "end_seconds": 943.16,
+      "id": "5Gi3S6L5XYs-display-0289",
+      "segment_id": "5Gi3S6L5XYs-ja-0113"
+    },
+    {
+      "text": "ください。",
+      "start_seconds": 943.16,
+      "end_seconds": 946.04,
+      "id": "5Gi3S6L5XYs-display-0290",
+      "segment_id": "5Gi3S6L5XYs-ja-0113"
+    },
+    {
+      "text": "10987",
+      "start_seconds": 946.04,
+      "end_seconds": 949.04,
+      "id": "5Gi3S6L5XYs-display-0291",
+      "segment_id": "5Gi3S6L5XYs-ja-0114"
+    },
+    {
+      "text": "。そしてそれが0になる前にエイヤと行動",
+      "start_seconds": 949.24,
+      "end_seconds": 952.959,
+      "id": "5Gi3S6L5XYs-display-0292",
+      "segment_id": "5Gi3S6L5XYs-ja-0114"
+    },
+    {
+      "text": "してみる。なぜなら好奇心は時間が経つと",
+      "start_seconds": 952.959,
+      "end_seconds": 956.839,
+      "id": "5Gi3S6L5XYs-display-0293",
+      "segment_id": "5Gi3S6L5XYs-ja-0114"
+    },
+    {
+      "text": "薄れ考えすぎるほど行動できなくなるから",
+      "start_seconds": 956.839,
+      "end_seconds": 959.959,
+      "id": "5Gi3S6L5XYs-display-0294",
+      "segment_id": "5Gi3S6L5XYs-ja-0115"
+    },
+    {
+      "text": "です。",
+      "start_seconds": 959.959,
+      "end_seconds": 961.68,
+      "id": "5Gi3S6L5XYs-display-0295",
+      "segment_id": "5Gi3S6L5XYs-ja-0115"
+    },
+    {
+      "text": "これは実は演劇時代の本番10秒前という",
+      "start_seconds": 961.68,
+      "end_seconds": 965.8,
+      "id": "5Gi3S6L5XYs-display-0296",
+      "segment_id": "5Gi3S6L5XYs-ja-0116"
+    },
+    {
+      "text": "のとメルロビンさんの5秒ルールという本",
+      "start_seconds": 965.8,
+      "end_seconds": 968.44,
+      "id": "5Gi3S6L5XYs-display-0297",
+      "segment_id": "5Gi3S6L5XYs-ja-0116"
+    },
+    {
+      "text": "にヒントをもらって改良したものです。",
+      "start_seconds": 968.44,
+      "end_seconds": 971.399,
+      "id": "5Gi3S6L5XYs-display-0298",
+      "segment_id": "5Gi3S6L5XYs-ja-0116"
+    },
+    {
+      "text": "それらをつなげて頭でイメージを描いてみ",
+      "start_seconds": 971.399,
+      "end_seconds": 973.6,
+      "id": "5Gi3S6L5XYs-display-0299",
+      "segment_id": "5Gi3S6L5XYs-ja-0117"
+    },
+    {
+      "text": "てください。",
+      "start_seconds": 973.6,
+      "end_seconds": 976.399,
+      "id": "5Gi3S6L5XYs-display-0300",
+      "segment_id": "5Gi3S6L5XYs-ja-0117"
+    },
+    {
+      "text": "10秒間98そして5秒で止めてみる。",
+      "start_seconds": 976.399,
+      "end_seconds": 982.92,
+      "id": "5Gi3S6L5XYs-display-0301",
+      "segment_id": "5Gi3S6L5XYs-ja-0118"
+    },
+    {
+      "text": "それまでにやってみる。",
+      "start_seconds": 982.92,
+      "end_seconds": 985.24,
+      "id": "5Gi3S6L5XYs-display-0302",
+      "segment_id": "5Gi3S6L5XYs-ja-0119"
+    },
+    {
+      "text": "その5をイメージしてみるとCの逆のよう",
+      "start_seconds": 985.24,
+      "end_seconds": 989.88,
+      "id": "5Gi3S6L5XYs-display-0303",
+      "segment_id": "5Gi3S6L5XYs-ja-0120"
+    },
+    {
+      "text": "な文字になる。そしてもう1回10秒",
+      "start_seconds": 989.88,
+      "end_seconds": 991.839,
+      "id": "5Gi3S6L5XYs-display-0304",
+      "segment_id": "5Gi3S6L5XYs-ja-0120"
+    },
+    {
+      "text": "ルールの10を持ってくる。",
+      "start_seconds": 991.839,
+      "end_seconds": 994.48,
+      "id": "5Gi3S6L5XYs-display-0305",
+      "segment_id": "5Gi3S6L5XYs-ja-0120"
+    },
+    {
+      "text": "それらをつげるとなんとどこかで見たこと",
+      "start_seconds": 994.48,
+      "end_seconds": 998.279,
+      "id": "5Gi3S6L5XYs-display-0306",
+      "segment_id": "5Gi3S6L5XYs-ja-0121"
+    },
+    {
+      "text": "になるdo",
+      "start_seconds": 998.279,
+      "end_seconds": 1000.639,
+      "id": "5Gi3S6L5XYs-display-0307",
+      "segment_id": "5Gi3S6L5XYs-ja-0121"
+    },
+    {
+      "text": "になります。",
+      "start_seconds": 1000.639,
+      "end_seconds": 1003.16,
+      "id": "5Gi3S6L5XYs-display-0308",
+      "segment_id": "5Gi3S6L5XYs-ja-0121"
+    },
+    {
+      "text": "何かに迷った時は是非ゲーム感覚でやって",
+      "start_seconds": 1003.16,
+      "end_seconds": 1005.36,
+      "id": "5Gi3S6L5XYs-display-0309",
+      "segment_id": "5Gi3S6L5XYs-ja-0122"
+    },
+    {
+      "text": "みてください。ただこれを悪いことに使う",
+      "start_seconds": 1005.36,
+      "end_seconds": 1008.639,
+      "id": "5Gi3S6L5XYs-display-0310",
+      "segment_id": "5Gi3S6L5XYs-ja-0122"
+    },
+    {
+      "text": "のはやめてください。ははかげ様で",
+      "start_seconds": 1008.639,
+      "end_seconds": 1011.331,
+      "id": "5Gi3S6L5XYs-display-0311",
+      "segment_id": "5Gi3S6L5XYs-ja-0122"
+    },
+    {
+      "text": "[荒い息][ため息]",
+      "start_seconds": 1011.331,
+      "end_seconds": 1013.12,
+      "id": "5Gi3S6L5XYs-display-0312",
+      "segment_id": "5Gi3S6L5XYs-ja-0122"
+    },
+    {
+      "text": "10秒",
+      "start_seconds": 1013.12,
+      "end_seconds": 1013.44,
+      "id": "5Gi3S6L5XYs-display-0313",
+      "segment_id": "5Gi3S6L5XYs-ja-0122"
+    },
+    {
+      "text": "ルールで銀行動できましたというのはやめてください。私は一切",
+      "start_seconds": 1013.44,
+      "end_seconds": 1016.44,
+      "id": "5Gi3S6L5XYs-display-0314",
+      "segment_id": "5Gi3S6L5XYs-ja-0123"
+    },
+    {
+      "text": "責任を取りません。もしこの",
+      "start_seconds": 1017.0,
+      "end_seconds": 1020.0,
+      "id": "5Gi3S6L5XYs-display-0315",
+      "segment_id": "5Gi3S6L5XYs-ja-0124"
+    },
+    {
+      "text": "10秒というのが前に進み",
+      "start_seconds": 1020.519,
+      "end_seconds": 1023.16,
+      "id": "5Gi3S6L5XYs-display-0316",
+      "segment_id": "5Gi3S6L5XYs-ja-0125"
+    },
+    {
+      "text": "学ぶチャンスだとしたら実は",
+      "start_seconds": 1023.16,
+      "end_seconds": 1025.199,
+      "id": "5Gi3S6L5XYs-display-0317",
+      "segment_id": "5Gi3S6L5XYs-ja-0125"
+    },
+    {
+      "text": "1年間の間に食事や、仕事やないも",
+      "start_seconds": 1025.199,
+      "end_seconds": 1028.3600000000001,
+      "id": "5Gi3S6L5XYs-display-0318",
+      "segment_id": "5Gi3S6L5XYs-ja-0125"
+    },
+    {
+      "text": "100万以上のチャンスが訪れます。",
+      "start_seconds": 1029.4,
+      "end_seconds": 1032.16,
+      "id": "5Gi3S6L5XYs-display-0319",
+      "segment_id": "5Gi3S6L5XYs-ja-0126"
+    },
+    {
+      "text": "もしよければこの10秒というのを",
+      "start_seconds": 1032.16,
+      "end_seconds": 1036.16,
+      "id": "5Gi3S6L5XYs-display-0320",
+      "segment_id": "5Gi3S6L5XYs-ja-0127"
+    },
+    {
+      "text": "学び続けるための3つの鍵に使って新しい",
+      "start_seconds": 1036.16,
+      "end_seconds": 1039.36,
+      "id": "5Gi3S6L5XYs-display-0321",
+      "segment_id": "5Gi3S6L5XYs-ja-0127"
+    },
+    {
+      "text": "世界の扉を開けてみませんか?",
+      "start_seconds": 1039.36,
+      "end_seconds": 1044.52,
+      "id": "5Gi3S6L5XYs-display-0322",
+      "segment_id": "5Gi3S6L5XYs-ja-0128"
+    },
+    {
+      "text": "今日紹介した3つのもの国の若者や他の",
+      "start_seconds": 1044.52,
+      "end_seconds": 1047.439,
+      "id": "5Gi3S6L5XYs-display-0323",
+      "segment_id": "5Gi3S6L5XYs-ja-0129"
+    },
+    {
+      "text": "国々で学んできた人たちもこの3つの鍵を",
+      "start_seconds": 1047.439,
+      "end_seconds": 1051.559,
+      "id": "5Gi3S6L5XYs-display-0324",
+      "segment_id": "5Gi3S6L5XYs-ja-0129"
+    },
+    {
+      "text": "備わ持っていたと思います。世界を知る",
+      "start_seconds": 1051.559,
+      "end_seconds": 1054.76,
+      "id": "5Gi3S6L5XYs-display-0325",
+      "segment_id": "5Gi3S6L5XYs-ja-0129"
+    },
+    {
+      "text": "こと、自分を知ること、そして行動する",
+      "start_seconds": 1054.76,
+      "end_seconds": 1056.4,
+      "id": "5Gi3S6L5XYs-display-0326",
+      "segment_id": "5Gi3S6L5XYs-ja-0129"
+    },
+    {
+      "text": "こと私も常に持ち歩くようにはしています",
+      "start_seconds": 1056.4,
+      "end_seconds": 1059.16,
+      "id": "5Gi3S6L5XYs-display-0327",
+      "segment_id": "5Gi3S6L5XYs-ja-0130"
+    },
+    {
+      "text": "。",
+      "start_seconds": 1059.16,
+      "end_seconds": 1060.72,
+      "id": "5Gi3S6L5XYs-display-0328",
+      "segment_id": "5Gi3S6L5XYs-ja-0130"
+    },
+    {
+      "text": "さて、男や演劇、料理や国連、18カ国を",
+      "start_seconds": 1060.72,
+      "end_seconds": 1067.4,
+      "id": "5Gi3S6L5XYs-display-0329",
+      "segment_id": "5Gi3S6L5XYs-ja-0131"
+    },
+    {
+      "text": "経て、あ、18年間海外生活を経て私は",
+      "start_seconds": 1067.4,
+      "end_seconds": 1071.16,
+      "id": "5Gi3S6L5XYs-display-0330",
+      "segment_id": "5Gi3S6L5XYs-ja-0131"
+    },
+    {
+      "text": "日本に戻ってきました。",
+      "start_seconds": 1071.16,
+      "end_seconds": 1075.039,
+      "id": "5Gi3S6L5XYs-display-0331",
+      "segment_id": "5Gi3S6L5XYs-ja-0132"
+    },
+    {
+      "text": "そこは神戸、元なき祖母が運営していた",
+      "start_seconds": 1075.4,
+      "end_seconds": 1077.919,
+      "id": "5Gi3S6L5XYs-display-0332",
+      "segment_id": "5Gi3S6L5XYs-ja-0133"
+    },
+    {
+      "text": "小さな要塞学校の、後地の物置き、そこで",
+      "start_seconds": 1077.919,
+      "end_seconds": 1081.28,
+      "id": "5Gi3S6L5XYs-display-0333",
+      "segment_id": "5Gi3S6L5XYs-ja-0133"
+    },
+    {
+      "text": "始めたのが日り団体グローバル学びア",
+      "start_seconds": 1081.28,
+      "end_seconds": 1084.28,
+      "id": "5Gi3S6L5XYs-display-0334",
+      "segment_id": "5Gi3S6L5XYs-ja-0133"
+    },
+    {
+      "text": "ミエルです。ここでは世界の料理を囲み",
+      "start_seconds": 1084.28,
+      "end_seconds": 1089.0,
+      "id": "5Gi3S6L5XYs-display-0335",
+      "segment_id": "5Gi3S6L5XYs-ja-0134"
+    },
+    {
+      "text": "美味しく食べて作ってそしていろんな国の",
+      "start_seconds": 1089.0,
+      "end_seconds": 1092.799,
+      "id": "5Gi3S6L5XYs-display-0336",
+      "segment_id": "5Gi3S6L5XYs-ja-0134"
+    },
+    {
+      "text": "アートや遊びゲーム",
+      "start_seconds": 1092.799,
+      "end_seconds": 1096.12,
+      "id": "5Gi3S6L5XYs-display-0337",
+      "segment_id": "5Gi3S6L5XYs-ja-0134"
+    },
+    {
+      "text": "肺材を使って何かを作る。国籍や年齢を",
+      "start_seconds": 1096.12,
+      "end_seconds": 1099.88,
+      "id": "5Gi3S6L5XYs-display-0338",
+      "segment_id": "5Gi3S6L5XYs-ja-0135"
+    },
+    {
+      "text": "超えていろんな人が繋がる。そして実践を",
+      "start_seconds": 1099.88,
+      "end_seconds": 1104.159,
+      "id": "5Gi3S6L5XYs-display-0339",
+      "segment_id": "5Gi3S6L5XYs-ja-0135"
+    },
+    {
+      "text": "通した楽しい学びの場がある。そして自分",
+      "start_seconds": 1104.159,
+      "end_seconds": 1107.08,
+      "id": "5Gi3S6L5XYs-display-0340",
+      "segment_id": "5Gi3S6L5XYs-ja-0135"
+    },
+    {
+      "text": "自身も知る一見バラバラのようなものを",
+      "start_seconds": 1107.08,
+      "end_seconds": 1109.36,
+      "id": "5Gi3S6L5XYs-display-0341",
+      "segment_id": "5Gi3S6L5XYs-ja-0136"
+    },
+    {
+      "text": "つげ合わせて新しい世界が見える",
+      "start_seconds": 1109.36,
+      "end_seconds": 1112.159,
+      "id": "5Gi3S6L5XYs-display-0342",
+      "segment_id": "5Gi3S6L5XYs-ja-0136"
+    },
+    {
+      "text": "きっかけ作りをしています。ここで大事に",
+      "start_seconds": 1112.159,
+      "end_seconds": 1114.76,
+      "id": "5Gi3S6L5XYs-display-0343",
+      "segment_id": "5Gi3S6L5XYs-ja-0136"
+    },
+    {
+      "text": "してるのは3つのLンリブラブ",
+      "start_seconds": 1114.76,
+      "end_seconds": 1118.919,
+      "id": "5Gi3S6L5XYs-display-0344",
+      "segment_id": "5Gi3S6L5XYs-ja-0136"
+    },
+    {
+      "text": "学ぶ生きる自分を大切にする",
+      "start_seconds": 1119.2,
+      "end_seconds": 1123.0,
+      "id": "5Gi3S6L5XYs-display-0345",
+      "segment_id": "5Gi3S6L5XYs-ja-0137"
+    },
+    {
+      "text": "世界を世界が見えることで自分自身が",
+      "start_seconds": 1123.0,
+      "end_seconds": 1125.36,
+      "id": "5Gi3S6L5XYs-display-0346",
+      "segment_id": "5Gi3S6L5XYs-ja-0137"
+    },
+    {
+      "text": "見える自分が見えることで世界がもっと",
+      "start_seconds": 1125.36,
+      "end_seconds": 1128.12,
+      "id": "5Gi3S6L5XYs-display-0347",
+      "segment_id": "5Gi3S6L5XYs-ja-0137"
+    },
+    {
+      "text": "見えてくる",
+      "start_seconds": 1128.12,
+      "end_seconds": 1131.12,
+      "id": "5Gi3S6L5XYs-display-0348",
+      "segment_id": "5Gi3S6L5XYs-ja-0137"
+    },
+    {
+      "text": "答えのない激道の時代ですがdoを続けて",
+      "start_seconds": 1131.12,
+      "end_seconds": 1135.08,
+      "id": "5Gi3S6L5XYs-display-0349",
+      "segment_id": "5Gi3S6L5XYs-ja-0138"
+    },
+    {
+      "text": "います。そして分かっていることは学びと",
+      "start_seconds": 1135.08,
+      "end_seconds": 1139.08,
+      "id": "5Gi3S6L5XYs-display-0350",
+      "segment_id": "5Gi3S6L5XYs-ja-0138"
+    },
+    {
+      "text": "は知識を増やすことだけではなく新しい",
+      "start_seconds": 1139.08,
+      "end_seconds": 1142.6,
+      "id": "5Gi3S6L5XYs-display-0351",
+      "segment_id": "5Gi3S6L5XYs-ja-0138"
+    },
+    {
+      "text": "世界を見ること。もし皆さんが最近学ぶ",
+      "start_seconds": 1142.6,
+      "end_seconds": 1147.2,
+      "id": "5Gi3S6L5XYs-display-0352",
+      "segment_id": "5Gi3S6L5XYs-ja-0139"
+    },
+    {
+      "text": "気力がないな、学んでないなと思った時は",
+      "start_seconds": 1147.2,
+      "end_seconds": 1150.44,
+      "id": "5Gi3S6L5XYs-display-0353",
+      "segment_id": "5Gi3S6L5XYs-ja-0139"
+    },
+    {
+      "text": "もしかしてまだ知らない世界や自分最初の",
+      "start_seconds": 1150.44,
+      "end_seconds": 1152.96,
+      "id": "5Gi3S6L5XYs-display-0354",
+      "segment_id": "5Gi3S6L5XYs-ja-0139"
+    },
+    {
+      "text": "一歩を踏み出してないだけかもしれません",
+      "start_seconds": 1152.96,
+      "end_seconds": 1154.559,
+      "id": "5Gi3S6L5XYs-display-0355",
+      "segment_id": "5Gi3S6L5XYs-ja-0139"
+    },
+    {
+      "text": "。",
+      "start_seconds": 1154.559,
+      "end_seconds": 1156.679,
+      "id": "5Gi3S6L5XYs-display-0356",
+      "segment_id": "5Gi3S6L5XYs-ja-0140"
+    },
+    {
+      "text": "好奇心は誰もが持ちます。その蓋を外すの",
+      "start_seconds": 1156.679,
+      "end_seconds": 1160.159,
+      "id": "5Gi3S6L5XYs-display-0357",
+      "segment_id": "5Gi3S6L5XYs-ja-0141"
+    },
+    {
+      "text": "はに年齢は関係ありません。",
+      "start_seconds": 1160.159,
+      "end_seconds": 1164.28,
+      "id": "5Gi3S6L5XYs-display-0358",
+      "segment_id": "5Gi3S6L5XYs-ja-0141"
+    },
+    {
+      "text": "世界はまだまだ広い。",
+      "start_seconds": 1164.28,
+      "end_seconds": 1167.0,
+      "id": "5Gi3S6L5XYs-display-0359",
+      "segment_id": "5Gi3S6L5XYs-ja-0142"
+    },
+    {
+      "text": "これからの10秒の連続の人生。我々は",
+      "start_seconds": 1167.0,
+      "end_seconds": 1170.4,
+      "id": "5Gi3S6L5XYs-display-0360",
+      "segment_id": "5Gi3S6L5XYs-ja-0143"
+    },
+    {
+      "text": "どんな新しい世界が見えるでしょうか?ご",
+      "start_seconds": 1170.4,
+      "end_seconds": 1172.88,
+      "id": "5Gi3S6L5XYs-display-0361",
+      "segment_id": "5Gi3S6L5XYs-ja-0143"
+    },
+    {
+      "text": "成聴ありがとうございました。",
+      "start_seconds": 1172.88,
+      "end_seconds": 1174.159,
+      "id": "5Gi3S6L5XYs-display-0362",
+      "segment_id": "5Gi3S6L5XYs-ja-0143"
+    },
+    {
+      "text": "thanキュー。グラスOB",
+      "start_seconds": 1174.159,
+      "end_seconds": 1179.013,
+      "id": "5Gi3S6L5XYs-display-0363",
+      "segment_id": "5Gi3S6L5XYs-ja-0144"
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 1179.013,
+      "end_seconds": 1181.033,
+      "id": "5Gi3S6L5XYs-display-0364",
+      "segment_id": "5Gi3S6L5XYs-ja-0144"
+    }
+  ]
+}

@@ -59,9 +59,6 @@ jest.mock('../src/services/learningService', () => ({
 jest.mock('../src/services/authService', () => ({
   authService: { logout: jest.fn() },
 }));
-jest.mock('../src/screens/VoiceChatScreen', () => ({
-  VoiceChatScreen: () => null,
-}));
 const user = {
   id: 'u1',
   name: 'Minh',

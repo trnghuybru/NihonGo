@@ -1,0 +1,5086 @@
+{
+  "schema_version": 1,
+  "video": {
+    "youtube_id": "O47DJaRJZDY",
+    "title": "The Uniqueness of Humans Through the Lens of Early Childhood Education | Toya Hirose | TEDxHirano...",
+    "channel": "TEDx Talks",
+    "duration_seconds": 1105
+  },
+  "caption_track": {
+    "language": "ja",
+    "kind": "asr",
+    "source": "youtube_automatic"
+  },
+  "source_playlist": "https://www.youtube.com/playlist?list=PLsRNoUx8w3rOHjXIU5EE4KOiIagv9yQaG",
+  "fetched_at": "2026-10-13T13:23:36.844916+00:00",
+  "segment_count": 113,
+  "segments": [
+    {
+      "text": "はい。え、ただいまご紹介預かりました奈良教育大学の広瀬です。え、本日はこのような機会を与えていただきましてありがとうございます。え、",
+      "start_seconds": 2.8,
+      "end_seconds": 13.96,
+      "id": "O47DJaRJZDY-ja-0001",
+      "sequence": 1
+    },
+    {
+      "text": "ま、大体私はですね、大学で普段、ま、90分ぐらいの講議をしていまして、で、え、ま、講演等では、ま、まあ60分から",
+      "start_seconds": 13.96,
+      "end_seconds": 25.32,
+      "id": "O47DJaRJZDY-ja-0002",
+      "sequence": 2
+    },
+    {
+      "text": "、え、120分ぐらいで講議してるんですけど、今日が大体、え、15分から18分で納めてくださいということで、あの、途中早口になるかもしれませんけれども、",
+      "start_seconds": 25.32,
+      "end_seconds": 35.32,
+      "id": "O47DJaRJZDY-ja-0003",
+      "sequence": 3
+    },
+    {
+      "text": "あの、ご容赦いただけたらという風に思います。で、あの、お題いただいてですね、あの、本日は険な存在の力という風なことで、ま、どちらかというと私の研究という",
+      "start_seconds": 35.32,
+      "end_seconds": 45.559,
+      "id": "O47DJaRJZDY-ja-0004",
+      "sequence": 4
+    },
+    {
+      "text": "方はよりかはどういう風なあのことを、ま、経験してけたかという風なことについて、え、お話をさせていただきたいという風に思います。え、これはですね、あの、",
+      "start_seconds": 45.559,
+      "end_seconds": 56.48,
+      "id": "O47DJaRJZDY-ja-0005",
+      "sequence": 5
+    },
+    {
+      "text": "略歴という風なことになりますけれども、えっと、幼稚園に務め、その幼稚園を行きながら大学院に行き、そして今現在、ま、",
+      "start_seconds": 56.48,
+      "end_seconds": 66.479,
+      "id": "O47DJaRJZDY-ja-0006",
+      "sequence": 6
+    },
+    {
+      "text": "奈良教育大学の教授をしています。で、それと同時に子供の学び育ちセンターのセンターもさせていただきます。",
+      "start_seconds": 66.479,
+      "end_seconds": 77.0,
+      "id": "O47DJaRJZDY-ja-0007",
+      "sequence": 7
+    },
+    {
+      "text": "で、えっと、ま、これまでの学びの流れとしてはですね、あの、小学生の時にですね、やはりあの、生物が好きで、え、ま、",
+      "start_seconds": 78.88,
+      "end_seconds": 90.28,
+      "id": "O47DJaRJZDY-ja-0008",
+      "sequence": 8
+    },
+    {
+      "text": "科学者になりたいという風に思っていました。で、中学高校になった時にですね、あの、とにかくあの環境という風なものが",
+      "start_seconds": 90.28,
+      "end_seconds": 100.84,
+      "id": "O47DJaRJZDY-ja-0009",
+      "sequence": 9
+    },
+    {
+      "text": "その頃あの取りざされてですね、工学の力で環境を変えたいという環境の問題を解決したいという風に思うようになり、そして",
+      "start_seconds": 100.84,
+      "end_seconds": 111.92,
+      "id": "O47DJaRJZDY-ja-0010",
+      "sequence": 10
+    },
+    {
+      "text": "大学ではあの工学部の科学工学家というところに進学あのしました。入学をしました。で、これがあの学部の時のあの卒論の",
+      "start_seconds": 111.92,
+      "end_seconds": 122.439,
+      "id": "O47DJaRJZDY-ja-0011",
+      "sequence": 11
+    },
+    {
+      "text": "研究になります。で、あの、工学部の場合はですね、え、大半が大学院に進学するという風なこともあり、私も例に漏れず大学",
+      "start_seconds": 122.439,
+      "end_seconds": 133.44,
+      "id": "O47DJaRJZDY-ja-0012",
+      "sequence": 12
+    },
+    {
+      "text": "院に行ったという風なことになります。で、ちなみにこのシュドモナスアルギノーザLST03株由来のリパーズ遺伝子のシークエス及び大金での発言というのが",
+      "start_seconds": 133.44,
+      "end_seconds": 144.4,
+      "id": "O47DJaRJZDY-ja-0013",
+      "sequence": 13
+    },
+    {
+      "text": "あの大学院の収支論文の研究テーマになります。何を言ってるかと言うと、シュートマスターエルギノーザLSD3株っていう",
+      "start_seconds": 144.4,
+      "end_seconds": 153.08,
+      "id": "O47DJaRJZDY-ja-0014",
+      "sequence": 14
+    },
+    {
+      "text": "金ででこの金はあの有気だから石油とか便税とかああいう風な",
+      "start_seconds": 153.08,
+      "end_seconds": 161.4,
+      "id": "O47DJaRJZDY-ja-0015",
+      "sequence": 15
+    },
+    {
+      "text": "有気給の中で死なない金なんですね。で、そういう風な死なない金でそういう風なものが分解してくれたらで、リパーゼの",
+      "start_seconds": 161.4,
+      "end_seconds": 171.44,
+      "id": "O47DJaRJZDY-ja-0016",
+      "sequence": 16
+    },
+    {
+      "text": "遺伝子もリパーゼという風なもの酵素があるんですけども、それもあの要はえっと活性が落ちない。有の中で活性が落ちない",
+      "start_seconds": 171.44,
+      "end_seconds": 182.239,
+      "id": "O47DJaRJZDY-ja-0017",
+      "sequence": 17
+    },
+    {
+      "text": "という風なことなので、ま、そういう風なもののシークエンス遺伝子の配列を調べてさらに大腸金の中にその遺伝子を入れて",
+      "start_seconds": 182.239,
+      "end_seconds": 192.319,
+      "id": "O47DJaRJZDY-ja-0018",
+      "sequence": 18
+    },
+    {
+      "text": "大腸金で大量に増やすという風なことを、ま、研究をしていました。次お願いします。",
+      "start_seconds": 192.319,
+      "end_seconds": 200.48,
+      "id": "O47DJaRJZDY-ja-0019",
+      "sequence": 19
+    },
+    {
+      "text": "で、そうすると私はその後ですね、工学部の大学院にも行きそのまま就職するか、先ほどあの冒頭でお伝えしましたように業が幼稚園をやっていますので[鼻息]",
+      "start_seconds": 200.48,
+      "end_seconds": 212.2,
+      "id": "O47DJaRJZDY-ja-0020",
+      "sequence": 20
+    },
+    {
+      "text": "幼稚園に就職するかっていう風な事柄を悩んだわけなんですね。で、あの、そこでまず1つ目の選択があって、で、ま、遅れ",
+      "start_seconds": 212.2,
+      "end_seconds": 222.12,
+      "id": "O47DJaRJZDY-ja-0021",
+      "sequence": 21
+    },
+    {
+      "text": "早かれ過業のようなことをするという風なことであるのであれば、ま、子供について学びたい、研究したいということで、あの",
+      "start_seconds": 222.12,
+      "end_seconds": 231.159,
+      "id": "O47DJaRJZDY-ja-0022",
+      "sequence": 22
+    },
+    {
+      "text": "、大学院を受けようという風に思ったんですね。で、その時にあの複数の大学院をですね、ま、訪問させていただいてで、ま",
+      "start_seconds": 231.159,
+      "end_seconds": 242.319,
+      "id": "O47DJaRJZDY-ja-0023",
+      "sequence": 23
+    },
+    {
+      "text": "、初めて理系の人間が初めてあの心理学とかそういう風なことの大学院の研究室の先生とお会いすると。そうすると、ま、",
+      "start_seconds": 242.319,
+      "end_seconds": 252.0,
+      "id": "O47DJaRJZDY-ja-0024",
+      "sequence": 24
+    },
+    {
+      "text": "例えば心理学の先生なんかであれば私の心が見つかされてるんじゃないかっていう風に話をしながら、あの、ビクビクして汗を",
+      "start_seconds": 252.0,
+      "end_seconds": 261.04,
+      "id": "O47DJaRJZDY-ja-0025",
+      "sequence": 25
+    },
+    {
+      "text": "かいた覚えがあります。で、先生からひさんは、あの、子供が好きですかっていう風に言われて、その当時子供と関わった",
+      "start_seconds": 261.04,
+      "end_seconds": 270.12,
+      "id": "O47DJaRJZDY-ja-0026",
+      "sequence": 26
+    },
+    {
+      "text": "ことがなかったので、いやこの人、私子供と関わったことないがないのも分かってて、こういう風に質問してるんだという風に思って、あの、非常に緊張した覚えがあり",
+      "start_seconds": 270.12,
+      "end_seconds": 281.52,
+      "id": "O47DJaRJZDY-ja-0027",
+      "sequence": 27
+    },
+    {
+      "text": "ます。で、そんな中で被学発達心理学という、ま、あの猿を研究することによって人という風な",
+      "start_seconds": 281.52,
+      "end_seconds": 293.32,
+      "id": "O47DJaRJZDY-ja-0028",
+      "sequence": 28
+    },
+    {
+      "text": "ものの特徴を明らかにしようという風な研究分野があって比較というのはそういう意味なんですけれどもでそれなこと柄の",
+      "start_seconds": 293.32,
+      "end_seconds": 303.28,
+      "id": "O47DJaRJZDY-ja-0029",
+      "sequence": 29
+    },
+    {
+      "text": "あの研究士つまり人も生物なので私は生物が好きですしあのそういう風なことができるということでここが1番しっくりした来たということで、ここの研究室に行き",
+      "start_seconds": 303.28,
+      "end_seconds": 313.96,
+      "id": "O47DJaRJZDY-ja-0030",
+      "sequence": 30
+    },
+    {
+      "text": "ました。で、えっと、ま、ここを破す前期家程、収支家程なんですけども、ま、あの、入時の2速歩行の研究をし、その後です",
+      "start_seconds": 313.96,
+      "end_seconds": 324.199,
+      "id": "O47DJaRJZDY-ja-0031",
+      "sequence": 31
+    },
+    {
+      "text": "。ちょっと紹介しますけれども、あの、博士後期家庭では屋内と屋の自由場面における幼児の遊び行動と仲間関係について",
+      "start_seconds": 324.199,
+      "end_seconds": 332.88,
+      "id": "O47DJaRJZDY-ja-0032",
+      "sequence": 32
+    },
+    {
+      "text": "、ま、研究をしました。",
+      "start_seconds": 332.88,
+      "end_seconds": 337.039,
+      "id": "O47DJaRJZDY-ja-0033",
+      "sequence": 33
+    },
+    {
+      "text": "で、あ、えっと、幼稚園に、えっと、就職してですね、あの、そもそも思ったことはですね、あの、",
+      "start_seconds": 337.039,
+      "end_seconds": 348.12,
+      "id": "O47DJaRJZDY-ja-0034",
+      "sequence": 34
+    },
+    {
+      "text": "幼稚園は必要か?これがあの、[咳払い]そういう風なことを研究しようとか、そういう就職をしようと思ってたら幼稚園って大切っていう風に思ってるので、そんな",
+      "start_seconds": 348.12,
+      "end_seconds": 359.68,
+      "id": "O47DJaRJZDY-ja-0035",
+      "sequence": 35
+    },
+    {
+      "text": "こと思わなかったと思うんですよね。でも私は異なる分野から言ってるのでそもそも幼稚園って必要かっていう風なことを思っ",
+      "start_seconds": 359.68,
+      "end_seconds": 368.56,
+      "id": "O47DJaRJZDY-ja-0036",
+      "sequence": 36
+    },
+    {
+      "text": "たわけなんですね。で、え、さらに良い教育保育とは何かっていう風な事柄についても、ま、これは今現在も考えてるところ",
+      "start_seconds": 368.56,
+      "end_seconds": 380.44,
+      "id": "O47DJaRJZDY-ja-0037",
+      "sequence": 37
+    },
+    {
+      "text": "ではあります。で、皆さんも多くの方高校生なんですけども、今受けてる教育が本当にいいのかどうかっていう風な事柄についても大切だと思うんですよね。で、そう",
+      "start_seconds": 380.44,
+      "end_seconds": 391.44,
+      "id": "O47DJaRJZDY-ja-0038",
+      "sequence": 38
+    },
+    {
+      "text": "いう風な事柄を考えて次お願いします。で、あの、そんな中で、あの、これはですね、あの、1972年の古い研究なんです",
+      "start_seconds": 391.44,
+      "end_seconds": 401.16,
+      "id": "O47DJaRJZDY-ja-0039",
+      "sequence": 39
+    },
+    {
+      "text": "けれども、3種の刑事でですね、32時間、あの、ネズミを飼育、ラット飼育するという風な研究です。ちょっと押してください。で、あの、これがあの、1匹で",
+      "start_seconds": 401.16,
+      "end_seconds": 412.319,
+      "id": "O47DJaRJZDY-ja-0040",
+      "sequence": 40
+    },
+    {
+      "text": "買っている。これは3匹買っている。これはあの複数で買っていてかつ立致な環境があるという風な感じで30日間それぞれ",
+      "start_seconds": 412.319,
+      "end_seconds": 421.12,
+      "id": "O47DJaRJZDY-ja-0041",
+      "sequence": 41
+    },
+    {
+      "text": "比較するとそうすると豊かな環境のラットは脳の重さが重くてそれからあの神経回路もあの育って発達しているっていう風な",
+      "start_seconds": 421.12,
+      "end_seconds": 432.12,
+      "id": "O47DJaRJZDY-ja-0042",
+      "sequence": 42
+    },
+    {
+      "text": "ことが分かってえ次お願いします。あの、幼稚園はどうやらこう必要だという風なことが集団保育場面であるし、環境もあの",
+      "start_seconds": 432.12,
+      "end_seconds": 443.96,
+      "id": "O47DJaRJZDY-ja-0043",
+      "sequence": 43
+    },
+    {
+      "text": "リッチなの場合が多いですのでどうやら必要だということが、ま、自分の中で腑に落ちたっていうことなんですね。次お願いします。で、その後、ま、先ほどの博士",
+      "start_seconds": 443.96,
+      "end_seconds": 455.16,
+      "id": "O47DJaRJZDY-ja-0044",
+      "sequence": 44
+    },
+    {
+      "text": "論文の研究テーマである屋内屋外の自由遊び場面で、屋内屋外の自由遊び場面ってあると思うんですけれども、ま、一般的に",
+      "start_seconds": 455.16,
+      "end_seconds": 464.28,
+      "id": "O47DJaRJZDY-ja-0045",
+      "sequence": 45
+    },
+    {
+      "text": "外は体を使ったダイナミックな部屋の中は静かな性的な遊びがっていう風に思われると思うんですけれども、じゃあ仲間関係どうなのかっていうのを調べたいなという",
+      "start_seconds": 464.28,
+      "end_seconds": 475.039,
+      "id": "O47DJaRJZDY-ja-0046",
+      "sequence": 46
+    },
+    {
+      "text": "風に思ったわけなんですね。で、そうすると遊び相手の種類、ま、外の方がいろんなことと関わり、えっと、中の方が固定的な",
+      "start_seconds": 475.039,
+      "end_seconds": 484.72,
+      "id": "O47DJaRJZDY-ja-0047",
+      "sequence": 47
+    },
+    {
+      "text": "口と関わるのかどうかとかっていうだけではなくって、やっぱりあのそれ仲間ってそれだけじゃないかなという風に思って、この多様性指数、多陽性を図る指標として",
+      "start_seconds": 484.72,
+      "end_seconds": 496.639,
+      "id": "O47DJaRJZDY-ja-0048",
+      "sequence": 48
+    },
+    {
+      "text": "生体額を用いられる社ナの多様性指数っていうのを仲間関係に当てはめたということなんですね。次お願いします。で、多性指数っていうのは値が大きくなると例えば",
+      "start_seconds": 496.639,
+      "end_seconds": 508.039,
+      "id": "O47DJaRJZDY-ja-0049",
+      "sequence": 49
+    },
+    {
+      "text": "先ほど言ってる通り種類が多くなるっていう風なこととそれからそれだけではなくて個体数が均等に分布する例えば山",
+      "start_seconds": 508.039,
+      "end_seconds": 516.159,
+      "id": "O47DJaRJZDY-ja-0050",
+      "sequence": 50
+    },
+    {
+      "text": "があって杉火の木やまもみやなんやらという風なことがま例えば6種類の木が上ってるとそうしたら杉だけが95%あって",
+      "start_seconds": 516.159,
+      "end_seconds": 527.76,
+      "id": "O47DJaRJZDY-ja-0051",
+      "sequence": 51
+    },
+    {
+      "text": "残りの種類は同じでもあのあとは1%ずつっていうパターンもあればえそれぞれが均等な割合で山を構成してると。だから",
+      "start_seconds": 527.76,
+      "end_seconds": 537.04,
+      "id": "O47DJaRJZDY-ja-0052",
+      "sequence": 52
+    },
+    {
+      "text": "どっちが多様性のある山かっていうと、あの要は均等にいろんな種類のものが生えてるっていう方が多様性があり、ま、健康な山になるわけなんですよね。で、それを",
+      "start_seconds": 537.04,
+      "end_seconds": 549.0,
+      "id": "O47DJaRJZDY-ja-0053",
+      "sequence": 53
+    },
+    {
+      "text": "あ、すいません。戻してください。で、それを多くの異なる相手と均等に関わるということで仲間関係に用いたということです。はい、お願いします。",
+      "start_seconds": 549.0,
+      "end_seconds": 559.8,
+      "id": "O47DJaRJZDY-ja-0054",
+      "sequence": 54
+    },
+    {
+      "text": "で、え、これがですね、あの、3歳、4歳、5歳で、え、屋内と屋外で調べると34",
+      "start_seconds": 559.8,
+      "end_seconds": 568.12,
+      "id": "O47DJaRJZDY-ja-0055",
+      "sequence": 55
+    },
+    {
+      "text": "歳では屋内、屋外の方が様々な相手と関わり、屋内の方があの割と多様性指数が低いということが分かり、これ両方もどっちも大事だという風に思うんですね。",
+      "start_seconds": 568.12,
+      "end_seconds": 579.76,
+      "id": "O47DJaRJZDY-ja-0056",
+      "sequence": 56
+    },
+    {
+      "text": "ですので34歳事にとっては環境っていうのがとても特に大事という風なことが分かっていただけると思うんですね。はい。お願いします。で、ま、そういう風な、",
+      "start_seconds": 579.76,
+      "end_seconds": 590.24,
+      "id": "O47DJaRJZDY-ja-0057",
+      "sequence": 57
+    },
+    {
+      "text": "あの、異なる分野知見を取り入れながら研究するっていう風な事柄で、あの、浩さんはキメラですねという風に、あの、指導の教授から言われたりですね。それ",
+      "start_seconds": 590.24,
+      "end_seconds": 602.24,
+      "id": "O47DJaRJZDY-ja-0058",
+      "sequence": 58
+    },
+    {
+      "text": "から、あの、今日ちょっと紹介できなかったんですけど、火先生っていう私が尊敬する先生もちょっとなくなられたんですけれども、あの、先生がいらっしゃって、",
+      "start_seconds": 602.24,
+      "end_seconds": 611.959,
+      "id": "O47DJaRJZDY-ja-0059",
+      "sequence": 59
+    },
+    {
+      "text": "で、剣な存在ですねという風に評価をいいたりしました。で、火先生の研究としては2歳から5歳度ごこ遊びで泥団号などを",
+      "start_seconds": 611.959,
+      "end_seconds": 622.2,
+      "id": "O47DJaRJZDY-ja-0060",
+      "sequence": 60
+    },
+    {
+      "text": "実際に子供が見てるまでバクって食べて子供がどうリアクションするかっていうのを100何人で子供で試したっていう先生なんです。できますか?僕はできません。",
+      "start_seconds": 622.2,
+      "end_seconds": 631.959,
+      "id": "O47DJaRJZDY-ja-0061",
+      "sequence": 61
+    },
+    {
+      "text": "で、これをあ、もうあかんか。あんまり喋ったらもう全然時間なく、ま、後でまた調べてください。はい。で、次お願いし",
+      "start_seconds": 631.959,
+      "end_seconds": 640.399,
+      "id": "O47DJaRJZDY-ja-0062",
+      "sequence": 62
+    },
+    {
+      "text": "ます。で、その当時は私はそれの重要性については感じてなかったんですね。このケウであったりとかキメラっていう風に言われてもそれは感じていなかったんです",
+      "start_seconds": 640.399,
+      "end_seconds": 651.959,
+      "id": "O47DJaRJZDY-ja-0063",
+      "sequence": 63
+    },
+    {
+      "text": "ね。はい。お願いします。で、ま、そういう風なことで今現在ですね、あの子供の学び育ちセンターという風なことで4つの",
+      "start_seconds": 651.959,
+      "end_seconds": 660.8,
+      "id": "O47DJaRJZDY-ja-0064",
+      "sequence": 64
+    },
+    {
+      "text": "取り組みをし、次お願いします。で、その中の1つとして人間というの子育ての特徴という風なことを改めてあの捉え直すと",
+      "start_seconds": 660.8,
+      "end_seconds": 671.36,
+      "id": "O47DJaRJZDY-ja-0065",
+      "sequence": 65
+    },
+    {
+      "text": "いう風なことをやっていて、で、非常に未熟てのかかる子供を生みます人は。それから子供が非常に長いです。で、さらに",
+      "start_seconds": 671.36,
+      "end_seconds": 681.44,
+      "id": "O47DJaRJZDY-ja-0066",
+      "sequence": 66
+    },
+    {
+      "text": "言うなら、ま、人間の出産感覚は短くて手のかかる子供を同時に複数育てています。",
+      "start_seconds": 681.44,
+      "end_seconds": 688.6,
+      "id": "O47DJaRJZDY-ja-0067",
+      "sequence": 67
+    },
+    {
+      "text": "で、ちなみにチンパンジーは6年から8年、人の場合は年後ができますよね。もう翌年子供を産むことができるということな",
+      "start_seconds": 688.6,
+      "end_seconds": 697.44,
+      "id": "O47DJaRJZDY-ja-0068",
+      "sequence": 68
+    },
+    {
+      "text": "ので、手のかかる子供を産んでるで出産価格も短いということです。次お願いします。つまり母親以外が子育てに参加する",
+      "start_seconds": 697.44,
+      "end_seconds": 709.399,
+      "id": "O47DJaRJZDY-ja-0069",
+      "sequence": 69
+    },
+    {
+      "text": "共同養育を獲得して人っていうのはそもそも進化して引きた生問ですよと。",
+      "start_seconds": 709.399,
+      "end_seconds": 714.88,
+      "id": "O47DJaRJZDY-ja-0070",
+      "sequence": 70
+    },
+    {
+      "text": "一方で今現者現在ですねの子育ては人間の本来の姿ではない。つまり、えっと、お父さんやお母さんだけが子育てをしてい",
+      "start_seconds": 714.88,
+      "end_seconds": 725.44,
+      "id": "O47DJaRJZDY-ja-0071",
+      "sequence": 71
+    },
+    {
+      "text": "るっていう風状態は、ま、あの、人の生物としての人としてはおかしい状態であるということなんですね。そして次お願いし",
+      "start_seconds": 725.44,
+      "end_seconds": 735.079,
+      "id": "O47DJaRJZDY-ja-0072",
+      "sequence": 72
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 735.079,
+      "end_seconds": 737.56,
+      "id": "O47DJaRJZDY-ja-0073",
+      "sequence": 73
+    },
+    {
+      "text": "今現在構想している、え、事柄としてはですね、え、少子家による子育て世代のマイノリティ化、要は地域にですね、あの",
+      "start_seconds": 737.56,
+      "end_seconds": 746.92,
+      "id": "O47DJaRJZDY-ja-0074",
+      "sequence": 74
+    },
+    {
+      "text": "、子育て世代が非常に少なくなってきて、昔は自然に子供を見たり関わったりすることができてたんですけれども、そういう",
+      "start_seconds": 746.92,
+      "end_seconds": 755.72,
+      "id": "O47DJaRJZDY-ja-0075",
+      "sequence": 75
+    },
+    {
+      "text": "風な状態が非常に少なくなってきている。",
+      "start_seconds": 755.72,
+      "end_seconds": 759.24,
+      "id": "O47DJaRJZDY-ja-0076",
+      "sequence": 76
+    },
+    {
+      "text": "で、さらには、え、共同養育によって獲得読されるはずのお野せをどのように育むか。今までは自然と子供と関わり野生っていう風なものを獲得してきたんだ",
+      "start_seconds": 759.24,
+      "end_seconds": 771.16,
+      "id": "O47DJaRJZDY-ja-0077",
+      "sequence": 77
+    },
+    {
+      "text": "けれども、それができなくなってきているという風な厳重があると。で、えっと、共同養育の新しい仕組みとしての、え、",
+      "start_seconds": 771.16,
+      "end_seconds": 780.399,
+      "id": "O47DJaRJZDY-ja-0078",
+      "sequence": 78
+    },
+    {
+      "text": "修学前施設の新たな役割、ま、地域に子供が普通にいてで、こう関わるような機会がなくなってきてるのであれば修学施設",
+      "start_seconds": 780.399,
+      "end_seconds": 791.04,
+      "id": "O47DJaRJZDY-ja-0079",
+      "sequence": 79
+    },
+    {
+      "text": "つまり幼稚園とか保育所とか子供園が何かしら新しい役割を担うことが必要なんじゃないかなと。で、さらにはそれが少子",
+      "start_seconds": 791.04,
+      "end_seconds": 800.839,
+      "id": "O47DJaRJZDY-ja-0080",
+      "sequence": 80
+    },
+    {
+      "text": "家の対策になるんじゃないかなという風なことで、今現在研究をしているということです。はい、次お願いします。で、これ何に見えますか?ということで冗談ですね、",
+      "start_seconds": 800.839,
+      "end_seconds": 812.6,
+      "id": "O47DJaRJZDY-ja-0081",
+      "sequence": 81
+    },
+    {
+      "text": "これ。おっさん、おっさん。おっさん。",
+      "start_seconds": 812.6,
+      "end_seconds": 815.04,
+      "id": "O47DJaRJZDY-ja-0082",
+      "sequence": 82
+    },
+    {
+      "text": "おっさんですよね。",
+      "start_seconds": 815.04,
+      "end_seconds": 817.24,
+      "id": "O47DJaRJZDY-ja-0083",
+      "sequence": 83
+    },
+    {
+      "text": "分かりますか?次、下段。女の人ですね。",
+      "start_seconds": 817.24,
+      "end_seconds": 822.199,
+      "id": "O47DJaRJZDY-ja-0084",
+      "sequence": 84
+    },
+    {
+      "text": "女の人。女の人。女の人ですよね。もう分かっていただいたと思いますけれども、これとこれは同じ絵です。",
+      "start_seconds": 822.199,
+      "end_seconds": 833.16,
+      "id": "O47DJaRJZDY-ja-0085",
+      "sequence": 85
+    },
+    {
+      "text": "そうですよね。でもその分野でおっさんだと思ったらもうこれはおっさんに見えてしまうんですね。でも異なる視点を持って",
+      "start_seconds": 833.16,
+      "end_seconds": 843.6,
+      "id": "O47DJaRJZDY-ja-0086",
+      "sequence": 86
+    },
+    {
+      "text": "いたらこのおっさんもこのこういう風な見方ができるっていうことなんですね。だからその点非常に大事かなと思います。次お願いし",
+      "start_seconds": 843.6,
+      "end_seconds": 855.079,
+      "id": "O47DJaRJZDY-ja-0087",
+      "sequence": 87
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 855.079,
+      "end_seconds": 857.399,
+      "id": "O47DJaRJZDY-ja-0088",
+      "sequence": 88
+    },
+    {
+      "text": "で、人生のキ露では気づかないけれども、今思いすと今回こういうお題を与えていただいて、で、あの、改めて自分の人生を考えたら、ま、そういう風な事柄って",
+      "start_seconds": 857.399,
+      "end_seconds": 867.759,
+      "id": "O47DJaRJZDY-ja-0089",
+      "sequence": 89
+    },
+    {
+      "text": "いうのは気づきにくい。その時は聞きつきにくいけれども思い返すとですね、幼児教育の研究者として工学部での学びは直接的には役に立ちませんでした。ま、唯一、",
+      "start_seconds": 867.759,
+      "end_seconds": 879.12,
+      "id": "O47DJaRJZDY-ja-0090",
+      "sequence": 90
+    },
+    {
+      "text": "ま、4時教育というか延長にな、あ、副園延長になった時に役立ったのがO157がちょうど流行ってですね。あの工学部の時山ほどあの大腸金扱ってたのでどういう風",
+      "start_seconds": 879.12,
+      "end_seconds": 889.36,
+      "id": "O47DJaRJZDY-ja-0091",
+      "sequence": 91
+    },
+    {
+      "text": "に消毒するかっていうのは役立ちましたけどそれぐらいであの異なる経験をしたからこそ新しい発想が生まれるのかなと",
+      "start_seconds": 889.36,
+      "end_seconds": 899.6,
+      "id": "O47DJaRJZDY-ja-0092",
+      "sequence": 92
+    },
+    {
+      "text": "いう風に思っています。さっきのおっさんと女の人みたいにね。で、これは大学教員だけではなくて皆さんのように様々な触種",
+      "start_seconds": 899.6,
+      "end_seconds": 911.36,
+      "id": "O47DJaRJZDY-ja-0093",
+      "sequence": 93
+    },
+    {
+      "text": "を目指していると思うので、あらゆる職業に植えることかなという風に思っています。",
+      "start_seconds": 911.36,
+      "end_seconds": 917.68,
+      "id": "O47DJaRJZDY-ja-0094",
+      "sequence": 94
+    },
+    {
+      "text": "で、かつ人生において無駄な経験は一切ありません。で、一方で生成AIが今非常",
+      "start_seconds": 917.68,
+      "end_seconds": 926.959,
+      "id": "O47DJaRJZDY-ja-0095",
+      "sequence": 95
+    },
+    {
+      "text": "に進んでいますよね。はい。次お願いします。で、ちなみにこれ、あの、私、あの、副学庁なんで、あの、挨拶文をですね、",
+      "start_seconds": 926.959,
+      "end_seconds": 938.88,
+      "id": "O47DJaRJZDY-ja-0096",
+      "sequence": 96
+    },
+    {
+      "text": "あの、学生生活が、これ2026年のあの、現行依があってですね、今文章を考えて、例えばここの文章をですね、次お願いします。",
+      "start_seconds": 938.88,
+      "end_seconds": 949.319,
+      "id": "O47DJaRJZDY-ja-0097",
+      "sequence": 97
+    },
+    {
+      "text": "え、原文ですけれども、こうこれがあって、で、ま、大学1年生により理解してように、ま、",
+      "start_seconds": 949.319,
+      "end_seconds": 959.199,
+      "id": "O47DJaRJZDY-ja-0098",
+      "sequence": 98
+    },
+    {
+      "text": "あの、チャットGPTにですね、あの、転索してもらったんですけど、で、そうするとこう転索されたんですけど、特にですね、ここ教育保育がなければ現在の",
+      "start_seconds": 959.199,
+      "end_seconds": 970.92,
+      "id": "O47DJaRJZDY-ja-0099",
+      "sequence": 99
+    },
+    {
+      "text": "人類の進化や文化がないと言っても過言ではありませんっていう風なところをですね、え、教に営みがなければ現在の人類の",
+      "start_seconds": 970.92,
+      "end_seconds": 981.24,
+      "id": "O47DJaRJZDY-ja-0100",
+      "sequence": 100
+    },
+    {
+      "text": "発展や文化の継承はありえないっていう風に書き換えてくださったんですね、チャットさんは。で、えっと、ここの方がやはりあの平たい文章にはなっ",
+      "start_seconds": 981.24,
+      "end_seconds": 993.199,
+      "id": "O47DJaRJZDY-ja-0101",
+      "sequence": 101
+    },
+    {
+      "text": "てるんですよね。でも私のバックグラウンドで人っていう教育保育っていう風な営波みっていう風なものを",
+      "start_seconds": 993.199,
+      "end_seconds": 1002.44,
+      "id": "O47DJaRJZDY-ja-0102",
+      "sequence": 102
+    },
+    {
+      "text": "もっと進化的にも的に見たかったのであえてここに進化人類の進化実際問題そうなんです。人類の進化は教育保育の営みが",
+      "start_seconds": 1002.44,
+      "end_seconds": 1012.24,
+      "id": "O47DJaRJZDY-ja-0103",
+      "sequence": 103
+    },
+    {
+      "text": "なかったらないんですよね。ですのであのここはあえてそういう風にしたけれども人類の発展や文化の継承はないっていう風",
+      "start_seconds": 1012.24,
+      "end_seconds": 1020.92,
+      "id": "O47DJaRJZDY-ja-0104",
+      "sequence": 104
+    },
+    {
+      "text": "になったんですよね。だからこれはやはりいろんな分野を経験するからこそ風な視点につがるしでちゃあのAIなんかではより",
+      "start_seconds": 1020.92,
+      "end_seconds": 1032.12,
+      "id": "O47DJaRJZDY-ja-0105",
+      "sequence": 105
+    },
+    {
+      "text": "平たい文章で理解しやすくはなるかもしれないけれどもそういう異なる視点っていうのが結び継続きにくいあのディープラーニングに結びつきにくいのかなという風に思っています。はい、次お願いします",
+      "start_seconds": 1032.12,
+      "end_seconds": 1044.079,
+      "id": "O47DJaRJZDY-ja-0106",
+      "sequence": 106
+    },
+    {
+      "text": "。",
+      "start_seconds": 1044.079,
+      "end_seconds": 1045.679,
+      "id": "O47DJaRJZDY-ja-0107",
+      "sequence": 107
+    },
+    {
+      "text": "で、えっと、皆さんに期待することとしてですね、生成が生活にどんどん浸透もっとしてくると思います。",
+      "start_seconds": 1045.679,
+      "end_seconds": 1053.0,
+      "id": "O47DJaRJZDY-ja-0108",
+      "sequence": 108
+    },
+    {
+      "text": "で、水平型な学びをして欲しいなと。様々な分野学びを垂直のですね、深く極めるのではなくて広く学んで欲しいなという風に",
+      "start_seconds": 1053.0,
+      "end_seconds": 1062.72,
+      "id": "O47DJaRJZDY-ja-0109",
+      "sequence": 109
+    },
+    {
+      "text": "思っています。で、様々な数事柄を受け入れるという風な需要性をも受けていただきたいなと思います。で、興味を持ったことに挑戦し、そこで得られたこと",
+      "start_seconds": 1062.72,
+      "end_seconds": 1073.679,
+      "id": "O47DJaRJZDY-ja-0110",
+      "sequence": 110
+    },
+    {
+      "text": "こそが皆さんの武器になります。で、その価値は後に分かりますと。で、自分さらには人間だけが有するものを考えてくださいということで、これあのスターウォーズ",
+      "start_seconds": 1073.679,
+      "end_seconds": 1083.919,
+      "id": "O47DJaRJZDY-ja-0111",
+      "sequence": 111
+    },
+    {
+      "text": "ですけれどもの酒場の様子ですけれども、いろんな人種がいい、ロボットがいい、人がいてる。しかしロボットもAIも対当してくるけれども、人というものがどんな",
+      "start_seconds": 1083.919,
+      "end_seconds": 1095.159,
+      "id": "O47DJaRJZDY-ja-0112",
+      "sequence": 112
+    },
+    {
+      "text": "存在なのか、あるいは自分の武器が何なのかっていうのをしっかり考えていただきたいなという風に思います。ご成聴ありがとうございました。",
+      "start_seconds": 1095.159,
+      "end_seconds": 1105,
+      "id": "O47DJaRJZDY-ja-0113",
+      "sequence": 113
+    }
+  ],
+  "raw_captions": [
+    {
+      "text": "はい。え、ただいまご紹介預かりました",
+      "start_seconds": 2.8,
+      "end_seconds": 7.68
+    },
+    {
+      "text": "奈良教育大学の広瀬です。え、本日はこの",
+      "start_seconds": 4.92,
+      "end_seconds": 9.36
+    },
+    {
+      "text": "ような機会を与えていただきまして",
+      "start_seconds": 7.68,
+      "end_seconds": 13.96
+    },
+    {
+      "text": "ありがとうございます。え、",
+      "start_seconds": 9.36,
+      "end_seconds": 16.919999999999998
+    },
+    {
+      "text": "ま、大体私はですね、大学で普段、ま、",
+      "start_seconds": 13.96,
+      "end_seconds": 20.76
+    },
+    {
+      "text": "90分ぐらいの講議をしていまして、で、",
+      "start_seconds": 16.92,
+      "end_seconds": 25.32
+    },
+    {
+      "text": "え、ま、講演等では、ま、まあ60分から",
+      "start_seconds": 20.76,
+      "end_seconds": 28.32
+    },
+    {
+      "text": "、え、120分ぐらいで講議してるんです",
+      "start_seconds": 25.32,
+      "end_seconds": 31.16
+    },
+    {
+      "text": "けど、今日が大体、え、15分から18分",
+      "start_seconds": 28.32,
+      "end_seconds": 32.8
+    },
+    {
+      "text": "で納めてくださいということで、あの、",
+      "start_seconds": 31.16,
+      "end_seconds": 35.32
+    },
+    {
+      "text": "途中早口になるかもしれませんけれども、",
+      "start_seconds": 32.8,
+      "end_seconds": 37.718999999999994
+    },
+    {
+      "text": "あの、ご容赦いただけたらという風に思い",
+      "start_seconds": 35.32,
+      "end_seconds": 40.0
+    },
+    {
+      "text": "ます。で、あの、お題いただいてですね、",
+      "start_seconds": 37.719,
+      "end_seconds": 42.92
+    },
+    {
+      "text": "あの、本日は険な存在の力という風なこと",
+      "start_seconds": 40.0,
+      "end_seconds": 45.559
+    },
+    {
+      "text": "で、ま、どちらかというと私の研究という",
+      "start_seconds": 42.92,
+      "end_seconds": 48.84
+    },
+    {
+      "text": "方はよりかはどういう風なあのことを、ま",
+      "start_seconds": 45.559,
+      "end_seconds": 51.199
+    },
+    {
+      "text": "、経験してけたかという風なことについて",
+      "start_seconds": 48.84,
+      "end_seconds": 53.120000000000005
+    },
+    {
+      "text": "、え、お話をさせていただきたいという風",
+      "start_seconds": 51.199,
+      "end_seconds": 56.48
+    },
+    {
+      "text": "に思います。え、これはですね、あの、",
+      "start_seconds": 53.12,
+      "end_seconds": 59.599999999999994
+    },
+    {
+      "text": "略歴という風なことになりますけれども、",
+      "start_seconds": 56.48,
+      "end_seconds": 63.398999999999994
+    },
+    {
+      "text": "えっと、幼稚園に務め、その幼稚園を行き",
+      "start_seconds": 59.6,
+      "end_seconds": 66.479
+    },
+    {
+      "text": "ながら大学院に行き、そして今現在、ま、",
+      "start_seconds": 63.399,
+      "end_seconds": 69.799
+    },
+    {
+      "text": "奈良教育大学の教授をしています。で、",
+      "start_seconds": 66.479,
+      "end_seconds": 72.2
+    },
+    {
+      "text": "それと同時に子供の学び育ちセンターの",
+      "start_seconds": 69.799,
+      "end_seconds": 77.0
+    },
+    {
+      "text": "センターもさせていただきます。",
+      "start_seconds": 72.2,
+      "end_seconds": 77.0
+    },
+    {
+      "text": "で、えっと、ま、これまでの学びの流れと",
+      "start_seconds": 78.88,
+      "end_seconds": 85.67999999999999
+    },
+    {
+      "text": "してはですね、あの、小学生の時にですね",
+      "start_seconds": 82.72,
+      "end_seconds": 90.28
+    },
+    {
+      "text": "、やはりあの、生物が好きで、え、ま、",
+      "start_seconds": 85.68,
+      "end_seconds": 93.07900000000001
+    },
+    {
+      "text": "科学者になりたいという風に思っていまし",
+      "start_seconds": 90.28,
+      "end_seconds": 96.759
+    },
+    {
+      "text": "た。で、中学高校になった時にですね、",
+      "start_seconds": 93.079,
+      "end_seconds": 100.83999999999999
+    },
+    {
+      "text": "あの、とにかくあの環境という風なものが",
+      "start_seconds": 96.759,
+      "end_seconds": 105.0
+    },
+    {
+      "text": "その頃あの取りざされてですね、工学の力",
+      "start_seconds": 100.84,
+      "end_seconds": 108.799
+    },
+    {
+      "text": "で環境を変えたいという環境の問題を解決",
+      "start_seconds": 105.0,
+      "end_seconds": 111.92
+    },
+    {
+      "text": "したいという風に思うようになり、そして",
+      "start_seconds": 108.799,
+      "end_seconds": 115.159
+    },
+    {
+      "text": "大学ではあの工学部の科学工学家という",
+      "start_seconds": 111.92,
+      "end_seconds": 117.96000000000001
+    },
+    {
+      "text": "ところに進学あのしました。入学をしまし",
+      "start_seconds": 115.159,
+      "end_seconds": 122.43900000000001
+    },
+    {
+      "text": "た。で、これがあの学部の時のあの卒論の",
+      "start_seconds": 117.96,
+      "end_seconds": 125.91999999999999
+    },
+    {
+      "text": "研究になります。で、あの、工学部の場合",
+      "start_seconds": 122.439,
+      "end_seconds": 130.239
+    },
+    {
+      "text": "はですね、え、大半が大学院に進学すると",
+      "start_seconds": 125.92,
+      "end_seconds": 133.44
+    },
+    {
+      "text": "いう風なこともあり、私も例に漏れず大学",
+      "start_seconds": 130.239,
+      "end_seconds": 136.28
+    },
+    {
+      "text": "院に行ったという風なことになります。で",
+      "start_seconds": 133.44,
+      "end_seconds": 138.76
+    },
+    {
+      "text": "、ちなみにこのシュドモナスアルギノーザ",
+      "start_seconds": 136.28,
+      "end_seconds": 141.319
+    },
+    {
+      "text": "LST03株由来のリパーズ遺伝子の",
+      "start_seconds": 138.76,
+      "end_seconds": 144.39999999999998
+    },
+    {
+      "text": "シークエス及び大金での発言というのが",
+      "start_seconds": 141.319,
+      "end_seconds": 147.72
+    },
+    {
+      "text": "あの大学院の収支論文の研究テーマになり",
+      "start_seconds": 144.4,
+      "end_seconds": 150.4
+    },
+    {
+      "text": "ます。何を言ってるかと言うと、シュート",
+      "start_seconds": 147.72,
+      "end_seconds": 153.08
+    },
+    {
+      "text": "マスターエルギノーザLSD3株っていう",
+      "start_seconds": 150.4,
+      "end_seconds": 158.56
+    },
+    {
+      "text": "金ででこの金はあの有気",
+      "start_seconds": 153.08,
+      "end_seconds": 161.4
+    },
+    {
+      "text": "だから石油とか便税とかああいう風な",
+      "start_seconds": 158.56,
+      "end_seconds": 165.159
+    },
+    {
+      "text": "有気給の中で死なない金なんですね。で、",
+      "start_seconds": 161.4,
+      "end_seconds": 167.84
+    },
+    {
+      "text": "そういう風な死なない金でそういう風な",
+      "start_seconds": 165.159,
+      "end_seconds": 171.44
+    },
+    {
+      "text": "ものが分解してくれたらで、リパーゼの",
+      "start_seconds": 167.84,
+      "end_seconds": 174.519
+    },
+    {
+      "text": "遺伝子もリパーゼという風なもの酵素が",
+      "start_seconds": 171.44,
+      "end_seconds": 179.2
+    },
+    {
+      "text": "あるんですけども、それもあの要はえっと",
+      "start_seconds": 174.519,
+      "end_seconds": 182.239
+    },
+    {
+      "text": "活性が落ちない。有の中で活性が落ちない",
+      "start_seconds": 179.2,
+      "end_seconds": 184.599
+    },
+    {
+      "text": "という風なことなので、ま、そういう風な",
+      "start_seconds": 182.239,
+      "end_seconds": 188.92000000000002
+    },
+    {
+      "text": "もののシークエンス遺伝子の配列を調べて",
+      "start_seconds": 184.599,
+      "end_seconds": 192.319
+    },
+    {
+      "text": "さらに大腸金の中にその遺伝子を入れて",
+      "start_seconds": 188.92,
+      "end_seconds": 195.319
+    },
+    {
+      "text": "大腸金で大量に増やすという風なことを、",
+      "start_seconds": 192.319,
+      "end_seconds": 198.879
+    },
+    {
+      "text": "ま、研究をしていました。次お願いします",
+      "start_seconds": 195.319,
+      "end_seconds": 200.48
+    },
+    {
+      "text": "。",
+      "start_seconds": 198.879,
+      "end_seconds": 204.04
+    },
+    {
+      "text": "で、そうすると私はその後ですね、工学部",
+      "start_seconds": 200.48,
+      "end_seconds": 207.07999999999998
+    },
+    {
+      "text": "の大学院にも行きそのまま就職するか、",
+      "start_seconds": 204.04,
+      "end_seconds": 209.959
+    },
+    {
+      "text": "先ほどあの冒頭でお伝えしましたように業",
+      "start_seconds": 207.08,
+      "end_seconds": 212.20000000000002
+    },
+    {
+      "text": "が幼稚園をやっていますので[鼻息]",
+      "start_seconds": 209.959,
+      "end_seconds": 214.84
+    },
+    {
+      "text": "幼稚園に就職するかっていう風な事柄を",
+      "start_seconds": 212.2,
+      "end_seconds": 218.28
+    },
+    {
+      "text": "悩んだわけなんですね。で、あの、そこで",
+      "start_seconds": 214.84,
+      "end_seconds": 222.12
+    },
+    {
+      "text": "まず1つ目の選択があって、で、ま、遅れ",
+      "start_seconds": 218.28,
+      "end_seconds": 224.36
+    },
+    {
+      "text": "早かれ過業のようなことをするという風な",
+      "start_seconds": 222.12,
+      "end_seconds": 228.12
+    },
+    {
+      "text": "ことであるのであれば、ま、子供について",
+      "start_seconds": 224.36,
+      "end_seconds": 231.15900000000002
+    },
+    {
+      "text": "学びたい、研究したいということで、あの",
+      "start_seconds": 228.12,
+      "end_seconds": 234.36
+    },
+    {
+      "text": "、大学院を受けようという風に思ったん",
+      "start_seconds": 231.159,
+      "end_seconds": 237.92
+    },
+    {
+      "text": "ですね。で、その時にあの複数の大学院を",
+      "start_seconds": 234.36,
+      "end_seconds": 242.31900000000002
+    },
+    {
+      "text": "ですね、ま、訪問させていただいてで、ま",
+      "start_seconds": 237.92,
+      "end_seconds": 246.11999999999998
+    },
+    {
+      "text": "、初めて理系の人間が初めてあの心理学と",
+      "start_seconds": 242.319,
+      "end_seconds": 249.319
+    },
+    {
+      "text": "かそういう風なことの大学院の研究室の",
+      "start_seconds": 246.12,
+      "end_seconds": 252.0
+    },
+    {
+      "text": "先生とお会いすると。そうすると、ま、",
+      "start_seconds": 249.319,
+      "end_seconds": 255.67999999999998
+    },
+    {
+      "text": "例えば心理学の先生なんかであれば私の心",
+      "start_seconds": 252.0,
+      "end_seconds": 257.72
+    },
+    {
+      "text": "が見つかされてるんじゃないかっていう風",
+      "start_seconds": 255.68,
+      "end_seconds": 261.04
+    },
+    {
+      "text": "に話をしながら、あの、ビクビクして汗を",
+      "start_seconds": 257.72,
+      "end_seconds": 264.44000000000005
+    },
+    {
+      "text": "かいた覚えがあります。で、先生からひ",
+      "start_seconds": 261.04,
+      "end_seconds": 267.08000000000004
+    },
+    {
+      "text": "さんは、あの、子供が好きですかっていう",
+      "start_seconds": 264.44,
+      "end_seconds": 270.12
+    },
+    {
+      "text": "風に言われて、その当時子供と関わった",
+      "start_seconds": 267.08,
+      "end_seconds": 273.28
+    },
+    {
+      "text": "ことがなかったので、いやこの人、私子供",
+      "start_seconds": 270.12,
+      "end_seconds": 275.919
+    },
+    {
+      "text": "と関わったことないがないのも分かってて",
+      "start_seconds": 273.28,
+      "end_seconds": 278.919
+    },
+    {
+      "text": "、こういう風に質問してるんだという風に",
+      "start_seconds": 275.919,
+      "end_seconds": 281.52
+    },
+    {
+      "text": "思って、あの、非常に緊張した覚えがあり",
+      "start_seconds": 278.919,
+      "end_seconds": 286.039
+    },
+    {
+      "text": "ます。で、そんな中で被学発達心理学と",
+      "start_seconds": 281.52,
+      "end_seconds": 288.639
+    },
+    {
+      "text": "いう、ま、あの",
+      "start_seconds": 286.039,
+      "end_seconds": 293.32
+    },
+    {
+      "text": "猿を研究することによって人という風な",
+      "start_seconds": 288.639,
+      "end_seconds": 296.84000000000003
+    },
+    {
+      "text": "ものの特徴を明らかにしようという風な",
+      "start_seconds": 293.32,
+      "end_seconds": 299.639
+    },
+    {
+      "text": "研究分野があって比較というのはそういう",
+      "start_seconds": 296.84,
+      "end_seconds": 303.28
+    },
+    {
+      "text": "意味なんですけれどもでそれなこと柄の",
+      "start_seconds": 299.639,
+      "end_seconds": 307.08
+    },
+    {
+      "text": "あの研究士つまり人も生物なので私は生物",
+      "start_seconds": 303.28,
+      "end_seconds": 309.479
+    },
+    {
+      "text": "が好きですしあのそういう風なことが",
+      "start_seconds": 307.08,
+      "end_seconds": 311.32
+    },
+    {
+      "text": "できるということでここが1番しっくりし",
+      "start_seconds": 309.479,
+      "end_seconds": 313.96
+    },
+    {
+      "text": "た来たということで、ここの研究室に行き",
+      "start_seconds": 311.32,
+      "end_seconds": 318.199
+    },
+    {
+      "text": "ました。で、えっと、ま、ここを破す前期",
+      "start_seconds": 313.96,
+      "end_seconds": 320.52
+    },
+    {
+      "text": "家程、収支家程なんですけども、ま、あの",
+      "start_seconds": 318.199,
+      "end_seconds": 324.199
+    },
+    {
+      "text": "、入時の2速歩行の研究をし、その後です",
+      "start_seconds": 320.52,
+      "end_seconds": 326.15999999999997
+    },
+    {
+      "text": "。ちょっと紹介しますけれども、あの、",
+      "start_seconds": 324.199,
+      "end_seconds": 329.8
+    },
+    {
+      "text": "博士後期家庭では屋内と屋の自由場面に",
+      "start_seconds": 326.16,
+      "end_seconds": 332.88000000000005
+    },
+    {
+      "text": "おける幼児の遊び行動と仲間関係について",
+      "start_seconds": 329.8,
+      "end_seconds": 337.039
+    },
+    {
+      "text": "、ま、研究をしました。",
+      "start_seconds": 332.88,
+      "end_seconds": 340.96
+    },
+    {
+      "text": "で、あ、えっと、幼稚園に、えっと、就職",
+      "start_seconds": 337.039,
+      "end_seconds": 343.88
+    },
+    {
+      "text": "してですね、あの、そもそも思ったことは",
+      "start_seconds": 340.96,
+      "end_seconds": 348.12
+    },
+    {
+      "text": "ですね、あの、",
+      "start_seconds": 343.88,
+      "end_seconds": 352.44
+    },
+    {
+      "text": "幼稚園は必要か?これがあの、[咳払い]",
+      "start_seconds": 348.12,
+      "end_seconds": 354.6
+    },
+    {
+      "text": "そういう風なことを研究しようとか、そう",
+      "start_seconds": 352.44,
+      "end_seconds": 357.56
+    },
+    {
+      "text": "いう就職をしようと思ってたら幼稚園って",
+      "start_seconds": 354.6,
+      "end_seconds": 359.68
+    },
+    {
+      "text": "大切っていう風に思ってるので、そんな",
+      "start_seconds": 357.56,
+      "end_seconds": 361.84
+    },
+    {
+      "text": "こと思わなかったと思うんですよね。でも",
+      "start_seconds": 359.68,
+      "end_seconds": 364.8
+    },
+    {
+      "text": "私は異なる分野から言ってるのでそもそも",
+      "start_seconds": 361.84,
+      "end_seconds": 368.56
+    },
+    {
+      "text": "幼稚園って必要かっていう風なことを思っ",
+      "start_seconds": 364.8,
+      "end_seconds": 374.0
+    },
+    {
+      "text": "たわけなんですね。で、え、さらに良い",
+      "start_seconds": 368.56,
+      "end_seconds": 377.12
+    },
+    {
+      "text": "教育保育とは何かっていう風な事柄につい",
+      "start_seconds": 374.0,
+      "end_seconds": 380.44
+    },
+    {
+      "text": "ても、ま、これは今現在も考えてるところ",
+      "start_seconds": 377.12,
+      "end_seconds": 383.44
+    },
+    {
+      "text": "ではあります。で、皆さんも多くの方高校",
+      "start_seconds": 380.44,
+      "end_seconds": 386.039
+    },
+    {
+      "text": "生なんですけども、今受けてる教育が本当",
+      "start_seconds": 383.44,
+      "end_seconds": 389.039
+    },
+    {
+      "text": "にいいのかどうかっていう風な事柄につい",
+      "start_seconds": 386.039,
+      "end_seconds": 391.44
+    },
+    {
+      "text": "ても大切だと思うんですよね。で、そう",
+      "start_seconds": 389.039,
+      "end_seconds": 395.15999999999997
+    },
+    {
+      "text": "いう風な事柄を考えて次お願いします。で",
+      "start_seconds": 391.44,
+      "end_seconds": 397.919
+    },
+    {
+      "text": "、あの、そんな中で、あの、これはですね",
+      "start_seconds": 395.16,
+      "end_seconds": 401.16
+    },
+    {
+      "text": "、あの、1972年の古い研究なんです",
+      "start_seconds": 397.919,
+      "end_seconds": 404.4
+    },
+    {
+      "text": "けれども、3種の刑事でですね、32時間",
+      "start_seconds": 401.16,
+      "end_seconds": 406.52000000000004
+    },
+    {
+      "text": "、あの、ネズミを飼育、ラット飼育すると",
+      "start_seconds": 404.4,
+      "end_seconds": 408.63899999999995
+    },
+    {
+      "text": "いう風な研究です。ちょっと押して",
+      "start_seconds": 406.52,
+      "end_seconds": 412.31899999999996
+    },
+    {
+      "text": "ください。で、あの、これがあの、1匹で",
+      "start_seconds": 408.639,
+      "end_seconds": 414.319
+    },
+    {
+      "text": "買っている。これは3匹買っている。これ",
+      "start_seconds": 412.319,
+      "end_seconds": 417.47900000000004
+    },
+    {
+      "text": "はあの複数で買っていてかつ立致な環境が",
+      "start_seconds": 414.319,
+      "end_seconds": 421.12
+    },
+    {
+      "text": "あるという風な感じで30日間それぞれ",
+      "start_seconds": 417.479,
+      "end_seconds": 425.24
+    },
+    {
+      "text": "比較するとそうすると豊かな環境のラット",
+      "start_seconds": 421.12,
+      "end_seconds": 429.479
+    },
+    {
+      "text": "は脳の重さが重くてそれからあの神経回路",
+      "start_seconds": 425.24,
+      "end_seconds": 432.12
+    },
+    {
+      "text": "もあの育って発達しているっていう風な",
+      "start_seconds": 429.479,
+      "end_seconds": 435.71999999999997
+    },
+    {
+      "text": "ことが分かってえ次お願いします。あの、",
+      "start_seconds": 432.12,
+      "end_seconds": 439.56
+    },
+    {
+      "text": "幼稚園はどうやらこう必要だという風な",
+      "start_seconds": 435.72,
+      "end_seconds": 443.96000000000004
+    },
+    {
+      "text": "ことが集団保育場面であるし、環境もあの",
+      "start_seconds": 439.56,
+      "end_seconds": 446.24
+    },
+    {
+      "text": "リッチなの場合が多いですのでどうやら",
+      "start_seconds": 443.96,
+      "end_seconds": 448.84
+    },
+    {
+      "text": "必要だということが、ま、自分の中で腑に",
+      "start_seconds": 446.24,
+      "end_seconds": 451.36
+    },
+    {
+      "text": "落ちたっていうことなんですね。次お願い",
+      "start_seconds": 448.84,
+      "end_seconds": 455.15999999999997
+    },
+    {
+      "text": "します。で、その後、ま、先ほどの博士",
+      "start_seconds": 451.36,
+      "end_seconds": 458.28000000000003
+    },
+    {
+      "text": "論文の研究テーマである屋内屋外の自由",
+      "start_seconds": 455.16,
+      "end_seconds": 461.96000000000004
+    },
+    {
+      "text": "遊び場面で、屋内屋外の自由遊び場面って",
+      "start_seconds": 458.28,
+      "end_seconds": 464.28
+    },
+    {
+      "text": "あると思うんですけれども、ま、一般的に",
+      "start_seconds": 461.96,
+      "end_seconds": 467.79999999999995
+    },
+    {
+      "text": "外は体を使ったダイナミックな部屋の中は",
+      "start_seconds": 464.28,
+      "end_seconds": 470.35999999999996
+    },
+    {
+      "text": "静かな性的な遊びがっていう風に思われる",
+      "start_seconds": 467.8,
+      "end_seconds": 473.039
+    },
+    {
+      "text": "と思うんですけれども、じゃあ仲間関係",
+      "start_seconds": 470.36,
+      "end_seconds": 475.039
+    },
+    {
+      "text": "どうなのかっていうのを調べたいなという",
+      "start_seconds": 473.039,
+      "end_seconds": 477.639
+    },
+    {
+      "text": "風に思ったわけなんですね。で、そうする",
+      "start_seconds": 475.039,
+      "end_seconds": 481.759
+    },
+    {
+      "text": "と遊び相手の種類、ま、外の方がいろんな",
+      "start_seconds": 477.639,
+      "end_seconds": 484.72
+    },
+    {
+      "text": "ことと関わり、えっと、中の方が固定的な",
+      "start_seconds": 481.759,
+      "end_seconds": 487.159
+    },
+    {
+      "text": "口と関わるのかどうかとかっていうだけで",
+      "start_seconds": 484.72,
+      "end_seconds": 490.639
+    },
+    {
+      "text": "はなくって、やっぱりあのそれ仲間って",
+      "start_seconds": 487.159,
+      "end_seconds": 493.4
+    },
+    {
+      "text": "それだけじゃないかなという風に思って、",
+      "start_seconds": 490.639,
+      "end_seconds": 496.639
+    },
+    {
+      "text": "この多様性指数、多陽性を図る指標として",
+      "start_seconds": 493.4,
+      "end_seconds": 499.56
+    },
+    {
+      "text": "生体額を用いられる社ナの多様性指数って",
+      "start_seconds": 496.639,
+      "end_seconds": 502.40000000000003
+    },
+    {
+      "text": "いうのを仲間関係に当てはめたということ",
+      "start_seconds": 499.56,
+      "end_seconds": 505.28000000000003
+    },
+    {
+      "text": "なんですね。次お願いします。で、多性",
+      "start_seconds": 502.4,
+      "end_seconds": 508.039
+    },
+    {
+      "text": "指数っていうのは値が大きくなると例えば",
+      "start_seconds": 505.28,
+      "end_seconds": 509.919
+    },
+    {
+      "text": "先ほど言ってる通り種類が多くな",
+      "start_seconds": 508.039,
+      "end_seconds": 512.76
+    },
+    {
+      "text": "るっていう風なこととそれからそれだけで",
+      "start_seconds": 509.919,
+      "end_seconds": 516.159
+    },
+    {
+      "text": "はなくて個体数が均等に分布する例えば山",
+      "start_seconds": 512.76,
+      "end_seconds": 520.24
+    },
+    {
+      "text": "があって杉火の木やまもみやなんやらと",
+      "start_seconds": 516.159,
+      "end_seconds": 523.279
+    },
+    {
+      "text": "いう風なことがま例えば6種類の木が上っ",
+      "start_seconds": 520.24,
+      "end_seconds": 527.76
+    },
+    {
+      "text": "てるとそうしたら杉だけが95%あって",
+      "start_seconds": 523.279,
+      "end_seconds": 530.76
+    },
+    {
+      "text": "残りの種類は同じでもあのあとは1%",
+      "start_seconds": 527.76,
+      "end_seconds": 533.64
+    },
+    {
+      "text": "ずつっていうパターンもあればえそれぞれ",
+      "start_seconds": 530.76,
+      "end_seconds": 537.04
+    },
+    {
+      "text": "が均等な割合で山を構成してると。だから",
+      "start_seconds": 533.64,
+      "end_seconds": 540.3199999999999
+    },
+    {
+      "text": "どっちが多様性のある山かっていうと、",
+      "start_seconds": 537.04,
+      "end_seconds": 543.5999999999999
+    },
+    {
+      "text": "あの要は均等にいろんな種類のものが生え",
+      "start_seconds": 540.32,
+      "end_seconds": 545.6800000000001
+    },
+    {
+      "text": "てるっていう方が多様性があり、ま、健康",
+      "start_seconds": 543.6,
+      "end_seconds": 549.0
+    },
+    {
+      "text": "な山になるわけなんですよね。で、それを",
+      "start_seconds": 545.68,
+      "end_seconds": 551.16
+    },
+    {
+      "text": "あ、すいません。戻してください。で、",
+      "start_seconds": 549.0,
+      "end_seconds": 554.6
+    },
+    {
+      "text": "それを多くの異なる相手と均等に関わると",
+      "start_seconds": 551.16,
+      "end_seconds": 557.0
+    },
+    {
+      "text": "いうことで仲間関係に用いたということ",
+      "start_seconds": 554.6,
+      "end_seconds": 559.8000000000001
+    },
+    {
+      "text": "です。はい、お願いします。",
+      "start_seconds": 557.0,
+      "end_seconds": 563.16
+    },
+    {
+      "text": "で、え、これがですね、あの、3歳、4歳",
+      "start_seconds": 559.8,
+      "end_seconds": 568.12
+    },
+    {
+      "text": "、5歳で、え、屋内と屋外で調べると34",
+      "start_seconds": 563.16,
+      "end_seconds": 572.0
+    },
+    {
+      "text": "歳では屋内、屋外の方が様々な相手と",
+      "start_seconds": 568.12,
+      "end_seconds": 575.16
+    },
+    {
+      "text": "関わり、屋内の方があの割と多様性指数が",
+      "start_seconds": 572.0,
+      "end_seconds": 577.399
+    },
+    {
+      "text": "低いということが分かり、これ両方も",
+      "start_seconds": 575.16,
+      "end_seconds": 579.76
+    },
+    {
+      "text": "どっちも大事だという風に思うんですね。",
+      "start_seconds": 577.399,
+      "end_seconds": 582.44
+    },
+    {
+      "text": "ですので34歳事にとっては環境っていう",
+      "start_seconds": 579.76,
+      "end_seconds": 584.64
+    },
+    {
+      "text": "のがとても特に大事という風なことが",
+      "start_seconds": 582.44,
+      "end_seconds": 586.9200000000001
+    },
+    {
+      "text": "分かっていただけると思うんですね。はい",
+      "start_seconds": 584.64,
+      "end_seconds": 590.24
+    },
+    {
+      "text": "。お願いします。で、ま、そういう風な、",
+      "start_seconds": 586.92,
+      "end_seconds": 594.0
+    },
+    {
+      "text": "あの、異なる分野知見を取り入れながら",
+      "start_seconds": 590.24,
+      "end_seconds": 597.279
+    },
+    {
+      "text": "研究するっていう風な事柄で、あの、浩",
+      "start_seconds": 594.0,
+      "end_seconds": 599.68
+    },
+    {
+      "text": "さんはキメラですねという風に、あの、",
+      "start_seconds": 597.279,
+      "end_seconds": 602.24
+    },
+    {
+      "text": "指導の教授から言われたりですね。それ",
+      "start_seconds": 599.68,
+      "end_seconds": 604.5999999999999
+    },
+    {
+      "text": "から、あの、今日ちょっと紹介できなかっ",
+      "start_seconds": 602.24,
+      "end_seconds": 607.0
+    },
+    {
+      "text": "たんですけど、火先生っていう私が尊敬",
+      "start_seconds": 604.6,
+      "end_seconds": 609.0790000000001
+    },
+    {
+      "text": "する先生もちょっとなくなられたんです",
+      "start_seconds": 607.0,
+      "end_seconds": 611.959
+    },
+    {
+      "text": "けれども、あの、先生がいらっしゃって、",
+      "start_seconds": 609.079,
+      "end_seconds": 614.88
+    },
+    {
+      "text": "で、剣な存在ですねという風に評価をいい",
+      "start_seconds": 611.959,
+      "end_seconds": 618.0
+    },
+    {
+      "text": "たりしました。で、火先生の研究としては",
+      "start_seconds": 614.88,
+      "end_seconds": 622.2
+    },
+    {
+      "text": "2歳から5歳度ごこ遊びで泥団号などを",
+      "start_seconds": 618.0,
+      "end_seconds": 624.839
+    },
+    {
+      "text": "実際に子供が見てるまでバクって食べて",
+      "start_seconds": 622.2,
+      "end_seconds": 626.6800000000001
+    },
+    {
+      "text": "子供がどうリアクションするかっていうの",
+      "start_seconds": 624.839,
+      "end_seconds": 628.9200000000001
+    },
+    {
+      "text": "を100何人で子供で試したっていう先生",
+      "start_seconds": 626.68,
+      "end_seconds": 631.959
+    },
+    {
+      "text": "なんです。できますか?僕はできません。",
+      "start_seconds": 628.92,
+      "end_seconds": 634.56
+    },
+    {
+      "text": "で、これをあ、もうあかんか。あんまり",
+      "start_seconds": 631.959,
+      "end_seconds": 637.1999999999999
+    },
+    {
+      "text": "喋ったらもう全然時間なく、ま、後でまた",
+      "start_seconds": 634.56,
+      "end_seconds": 640.399
+    },
+    {
+      "text": "調べてください。はい。で、次お願いし",
+      "start_seconds": 637.2,
+      "end_seconds": 645.76
+    },
+    {
+      "text": "ます。で、その当時は私はそれの重要性に",
+      "start_seconds": 640.399,
+      "end_seconds": 647.88
+    },
+    {
+      "text": "ついては感じてなかったんですね。この",
+      "start_seconds": 645.76,
+      "end_seconds": 649.959
+    },
+    {
+      "text": "ケウであったりとかキメラっていう風に",
+      "start_seconds": 647.88,
+      "end_seconds": 651.959
+    },
+    {
+      "text": "言われてもそれは感じていなかったんです",
+      "start_seconds": 649.959,
+      "end_seconds": 655.68
+    },
+    {
+      "text": "ね。はい。お願いします。で、ま、そう",
+      "start_seconds": 651.959,
+      "end_seconds": 658.3199999999999
+    },
+    {
+      "text": "いう風なことで今現在ですね、あの子供の",
+      "start_seconds": 655.68,
+      "end_seconds": 660.8
+    },
+    {
+      "text": "学び育ちセンターという風なことで4つの",
+      "start_seconds": 658.32,
+      "end_seconds": 664.12
+    },
+    {
+      "text": "取り組みをし、次お願いします。で、その",
+      "start_seconds": 660.8,
+      "end_seconds": 668.16
+    },
+    {
+      "text": "中の1つとして人間というの子育ての特徴",
+      "start_seconds": 664.12,
+      "end_seconds": 671.36
+    },
+    {
+      "text": "という風なことを改めてあの捉え直すと",
+      "start_seconds": 668.16,
+      "end_seconds": 674.24
+    },
+    {
+      "text": "いう風なことをやっていて、で、非常に",
+      "start_seconds": 671.36,
+      "end_seconds": 677.76
+    },
+    {
+      "text": "未熟てのかかる子供を生みます人は。それ",
+      "start_seconds": 674.24,
+      "end_seconds": 681.44
+    },
+    {
+      "text": "から子供が非常に長いです。で、さらに",
+      "start_seconds": 677.76,
+      "end_seconds": 684.2
+    },
+    {
+      "text": "言うなら、ま、人間の出産感覚は短くて手",
+      "start_seconds": 681.44,
+      "end_seconds": 688.6
+    },
+    {
+      "text": "のかかる子供を同時に複数育てています。",
+      "start_seconds": 684.2,
+      "end_seconds": 691.76
+    },
+    {
+      "text": "で、ちなみにチンパンジーは6年から8年",
+      "start_seconds": 688.6,
+      "end_seconds": 694.6
+    },
+    {
+      "text": "、人の場合は年後ができますよね。もう",
+      "start_seconds": 691.76,
+      "end_seconds": 697.4399999999999
+    },
+    {
+      "text": "翌年子供を産むことができるということな",
+      "start_seconds": 694.6,
+      "end_seconds": 701.16
+    },
+    {
+      "text": "ので、手のかかる子供を産んでるで出産",
+      "start_seconds": 697.44,
+      "end_seconds": 703.48
+    },
+    {
+      "text": "価格も短いということです。次お願いし",
+      "start_seconds": 701.16,
+      "end_seconds": 709.399
+    },
+    {
+      "text": "ます。つまり母親以外が子育てに参加する",
+      "start_seconds": 703.48,
+      "end_seconds": 711.9590000000001
+    },
+    {
+      "text": "共同養育を獲得して人っていうのは",
+      "start_seconds": 709.399,
+      "end_seconds": 714.88
+    },
+    {
+      "text": "そもそも進化して引きた生問ですよと。",
+      "start_seconds": 711.959,
+      "end_seconds": 719.399
+    },
+    {
+      "text": "一方で今現者現在ですねの子育ては人間の",
+      "start_seconds": 714.88,
+      "end_seconds": 722.8389999999999
+    },
+    {
+      "text": "本来の姿ではない。つまり、えっと、",
+      "start_seconds": 719.399,
+      "end_seconds": 725.44
+    },
+    {
+      "text": "お父さんやお母さんだけが子育てをしてい",
+      "start_seconds": 722.839,
+      "end_seconds": 729.9590000000001
+    },
+    {
+      "text": "るっていう風状態は、ま、あの、人の生物",
+      "start_seconds": 725.44,
+      "end_seconds": 732.399
+    },
+    {
+      "text": "としての人としてはおかしい状態であると",
+      "start_seconds": 729.959,
+      "end_seconds": 735.079
+    },
+    {
+      "text": "いうことなんですね。そして次お願いし",
+      "start_seconds": 732.399,
+      "end_seconds": 737.56
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 735.079,
+      "end_seconds": 740.4799999999999
+    },
+    {
+      "text": "今現在構想している、え、事柄としては",
+      "start_seconds": 737.56,
+      "end_seconds": 743.8389999999999
+    },
+    {
+      "text": "ですね、え、少子家による子育て世代の",
+      "start_seconds": 740.48,
+      "end_seconds": 746.9200000000001
+    },
+    {
+      "text": "マイノリティ化、要は地域にですね、あの",
+      "start_seconds": 743.839,
+      "end_seconds": 750.1990000000001
+    },
+    {
+      "text": "、子育て世代が非常に少なくなってきて、",
+      "start_seconds": 746.92,
+      "end_seconds": 753.399
+    },
+    {
+      "text": "昔は自然に子供を見たり関わったりする",
+      "start_seconds": 750.199,
+      "end_seconds": 755.7199999999999
+    },
+    {
+      "text": "ことができてたんですけれども、そういう",
+      "start_seconds": 753.399,
+      "end_seconds": 759.24
+    },
+    {
+      "text": "風な状態が非常に少なくなってきている。",
+      "start_seconds": 755.72,
+      "end_seconds": 761.88
+    },
+    {
+      "text": "で、さらには、え、共同養育によって",
+      "start_seconds": 759.24,
+      "end_seconds": 764.0790000000001
+    },
+    {
+      "text": "獲得読されるはずのお野せをどのように",
+      "start_seconds": 761.88,
+      "end_seconds": 768.72
+    },
+    {
+      "text": "育むか。今までは自然と子供と関わり野生",
+      "start_seconds": 764.079,
+      "end_seconds": 771.16
+    },
+    {
+      "text": "っていう風なものを獲得してきたんだ",
+      "start_seconds": 768.72,
+      "end_seconds": 773.76
+    },
+    {
+      "text": "けれども、それができなくなってきている",
+      "start_seconds": 771.16,
+      "end_seconds": 777.0
+    },
+    {
+      "text": "という風な厳重があると。で、えっと、",
+      "start_seconds": 773.76,
+      "end_seconds": 780.399
+    },
+    {
+      "text": "共同養育の新しい仕組みとしての、え、",
+      "start_seconds": 777.0,
+      "end_seconds": 784.72
+    },
+    {
+      "text": "修学前施設の新たな役割、ま、地域に子供",
+      "start_seconds": 780.399,
+      "end_seconds": 787.76
+    },
+    {
+      "text": "が普通にいてで、こう関わるような機会が",
+      "start_seconds": 784.72,
+      "end_seconds": 791.0400000000001
+    },
+    {
+      "text": "なくなってきてるのであれば修学施設",
+      "start_seconds": 787.76,
+      "end_seconds": 793.959
+    },
+    {
+      "text": "つまり幼稚園とか保育所とか子供園が",
+      "start_seconds": 791.04,
+      "end_seconds": 797.16
+    },
+    {
+      "text": "何かしら新しい役割を担うことが必要なん",
+      "start_seconds": 793.959,
+      "end_seconds": 800.8389999999999
+    },
+    {
+      "text": "じゃないかなと。で、さらにはそれが少子",
+      "start_seconds": 797.16,
+      "end_seconds": 803.399
+    },
+    {
+      "text": "家の対策になるんじゃないかなという風な",
+      "start_seconds": 800.839,
+      "end_seconds": 805.5600000000001
+    },
+    {
+      "text": "ことで、今現在研究をしているということ",
+      "start_seconds": 803.399,
+      "end_seconds": 809.04
+    },
+    {
+      "text": "です。はい、次お願いします。で、これ何",
+      "start_seconds": 805.56,
+      "end_seconds": 812.5999999999999
+    },
+    {
+      "text": "に見えますか?ということで冗談ですね、",
+      "start_seconds": 809.04,
+      "end_seconds": 815.04
+    },
+    {
+      "text": "これ。おっさん、おっさん。おっさん。",
+      "start_seconds": 812.6,
+      "end_seconds": 817.24
+    },
+    {
+      "text": "おっさん。おっさん。おっさんですよね。",
+      "start_seconds": 815.04,
+      "end_seconds": 822.199
+    },
+    {
+      "text": "分かりますか?次、下段。女の人ですね。",
+      "start_seconds": 817.24,
+      "end_seconds": 825.5600000000001
+    },
+    {
+      "text": "女の人。女の人。女の人ですよね。もう",
+      "start_seconds": 822.199,
+      "end_seconds": 828.079
+    },
+    {
+      "text": "分かっていただいたと思いますけれども、",
+      "start_seconds": 825.56,
+      "end_seconds": 833.16
+    },
+    {
+      "text": "これとこれは同じ絵です。",
+      "start_seconds": 828.079,
+      "end_seconds": 837.12
+    },
+    {
+      "text": "そうですよね。でもその分野でおっさんだ",
+      "start_seconds": 833.16,
+      "end_seconds": 839.399
+    },
+    {
+      "text": "と思ったらもうこれはおっさんに見えて",
+      "start_seconds": 837.12,
+      "end_seconds": 843.6
+    },
+    {
+      "text": "しまうんですね。でも異なる視点を持って",
+      "start_seconds": 839.399,
+      "end_seconds": 848.12
+    },
+    {
+      "text": "いたらこのおっさんもこのこういう風な見",
+      "start_seconds": 843.6,
+      "end_seconds": 850.12
+    },
+    {
+      "text": "方ができる",
+      "start_seconds": 848.12,
+      "end_seconds": 852.44
+    },
+    {
+      "text": "っていうことなんですね。だからその点",
+      "start_seconds": 850.12,
+      "end_seconds": 855.079
+    },
+    {
+      "text": "非常に大事かなと思います。次お願いし",
+      "start_seconds": 852.44,
+      "end_seconds": 857.399
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 855.079,
+      "end_seconds": 859.92
+    },
+    {
+      "text": "で、人生のキ露では気づかないけれども、",
+      "start_seconds": 857.399,
+      "end_seconds": 862.519
+    },
+    {
+      "text": "今思いすと今回こういうお題を与えて",
+      "start_seconds": 859.92,
+      "end_seconds": 865.56
+    },
+    {
+      "text": "いただいて、で、あの、改めて自分の人生",
+      "start_seconds": 862.519,
+      "end_seconds": 867.759
+    },
+    {
+      "text": "を考えたら、ま、そういう風な事柄って",
+      "start_seconds": 865.56,
+      "end_seconds": 869.88
+    },
+    {
+      "text": "いうのは気づきにくい。その時は聞きつき",
+      "start_seconds": 867.759,
+      "end_seconds": 873.5600000000001
+    },
+    {
+      "text": "にくいけれども思い返すとですね、幼児",
+      "start_seconds": 869.88,
+      "end_seconds": 876.92
+    },
+    {
+      "text": "教育の研究者として工学部での学びは直接",
+      "start_seconds": 873.56,
+      "end_seconds": 879.1199999999999
+    },
+    {
+      "text": "的には役に立ちませんでした。ま、唯一、",
+      "start_seconds": 876.92,
+      "end_seconds": 881.24
+    },
+    {
+      "text": "ま、4時教育というか延長にな、あ、副園",
+      "start_seconds": 879.12,
+      "end_seconds": 883.6
+    },
+    {
+      "text": "延長になった時に役立ったのがO157が",
+      "start_seconds": 881.24,
+      "end_seconds": 886.759
+    },
+    {
+      "text": "ちょうど流行ってですね。あの工学部の時",
+      "start_seconds": 883.6,
+      "end_seconds": 889.36
+    },
+    {
+      "text": "山ほどあの大腸金扱ってたのでどういう風",
+      "start_seconds": 886.759,
+      "end_seconds": 892.16
+    },
+    {
+      "text": "に消毒するかっていうのは役立ちました",
+      "start_seconds": 889.36,
+      "end_seconds": 896.279
+    },
+    {
+      "text": "けどそれぐらいであの異なる経験をした",
+      "start_seconds": 892.16,
+      "end_seconds": 899.6
+    },
+    {
+      "text": "からこそ新しい発想が生まれるのかなと",
+      "start_seconds": 896.279,
+      "end_seconds": 901.68
+    },
+    {
+      "text": "いう風に思っています。さっきのおっさん",
+      "start_seconds": 899.6,
+      "end_seconds": 907.32
+    },
+    {
+      "text": "と女の人みたいにね。で、これは大学教員",
+      "start_seconds": 901.68,
+      "end_seconds": 911.3599999999999
+    },
+    {
+      "text": "だけではなくて皆さんのように様々な触種",
+      "start_seconds": 907.32,
+      "end_seconds": 913.72
+    },
+    {
+      "text": "を目指していると思うので、あらゆる職業",
+      "start_seconds": 911.36,
+      "end_seconds": 915.88
+    },
+    {
+      "text": "に植えることかなという風に思っています",
+      "start_seconds": 913.72,
+      "end_seconds": 917.6800000000001
+    },
+    {
+      "text": "。",
+      "start_seconds": 915.88,
+      "end_seconds": 921.92
+    },
+    {
+      "text": "で、かつ人生において無駄な経験は一切",
+      "start_seconds": 917.68,
+      "end_seconds": 926.959
+    },
+    {
+      "text": "ありません。で、一方で生成AIが今非常",
+      "start_seconds": 921.92,
+      "end_seconds": 930.279
+    },
+    {
+      "text": "に進んでいますよね。はい。次お願いし",
+      "start_seconds": 926.959,
+      "end_seconds": 934.1199999999999
+    },
+    {
+      "text": "ます。で、ちなみにこれ、あの、私、あの",
+      "start_seconds": 930.279,
+      "end_seconds": 938.88
+    },
+    {
+      "text": "、副学庁なんで、あの、挨拶文をですね、",
+      "start_seconds": 934.12,
+      "end_seconds": 941.92
+    },
+    {
+      "text": "あの、学生生活が、これ2026年のあの",
+      "start_seconds": 938.88,
+      "end_seconds": 944.8389999999999
+    },
+    {
+      "text": "、現行依があってですね、今文章を考えて",
+      "start_seconds": 941.92,
+      "end_seconds": 947.279
+    },
+    {
+      "text": "、例えばここの文章をですね、次お願いし",
+      "start_seconds": 944.839,
+      "end_seconds": 949.3190000000001
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 947.279,
+      "end_seconds": 953.04
+    },
+    {
+      "text": "え、原文ですけれども、こうこれがあって",
+      "start_seconds": 949.319,
+      "end_seconds": 955.959
+    },
+    {
+      "text": "、で、ま、",
+      "start_seconds": 953.04,
+      "end_seconds": 959.199
+    },
+    {
+      "text": "大学1年生により理解してように、ま、",
+      "start_seconds": 955.959,
+      "end_seconds": 961.8389999999999
+    },
+    {
+      "text": "あの、チャットGPTにですね、あの、",
+      "start_seconds": 959.199,
+      "end_seconds": 964.639
+    },
+    {
+      "text": "転索してもらったんですけど、で、そう",
+      "start_seconds": 961.839,
+      "end_seconds": 967.6800000000001
+    },
+    {
+      "text": "するとこう転索されたんですけど、特に",
+      "start_seconds": 964.639,
+      "end_seconds": 970.92
+    },
+    {
+      "text": "ですね、ここ教育保育がなければ現在の",
+      "start_seconds": 967.68,
+      "end_seconds": 973.8389999999999
+    },
+    {
+      "text": "人類の進化や文化がないと言っても過言で",
+      "start_seconds": 970.92,
+      "end_seconds": 976.4399999999999
+    },
+    {
+      "text": "はありませんっていう風なところをですね",
+      "start_seconds": 973.839,
+      "end_seconds": 981.24
+    },
+    {
+      "text": "、え、教に営みがなければ現在の人類の",
+      "start_seconds": 976.44,
+      "end_seconds": 983.9590000000001
+    },
+    {
+      "text": "発展や文化の継承はありえないっていう風",
+      "start_seconds": 981.24,
+      "end_seconds": 985.839
+    },
+    {
+      "text": "に書き換えてくださったんですね、",
+      "start_seconds": 983.959,
+      "end_seconds": 990.1199999999999
+    },
+    {
+      "text": "チャットさんは。で、えっと、",
+      "start_seconds": 985.839,
+      "end_seconds": 993.1990000000001
+    },
+    {
+      "text": "ここの方がやはりあの平たい文章にはなっ",
+      "start_seconds": 990.12,
+      "end_seconds": 995.399
+    },
+    {
+      "text": "てるんですよね。でも私の",
+      "start_seconds": 993.199,
+      "end_seconds": 999.16
+    },
+    {
+      "text": "バックグラウンドで人っていう教育保育",
+      "start_seconds": 995.399,
+      "end_seconds": 1002.44
+    },
+    {
+      "text": "っていう風な営波みっていう風なものを",
+      "start_seconds": 999.16,
+      "end_seconds": 1005.68
+    },
+    {
+      "text": "もっと進化的にも的に見たかったので",
+      "start_seconds": 1002.44,
+      "end_seconds": 1009.1600000000001
+    },
+    {
+      "text": "あえてここに進化人類の進化実際問題そう",
+      "start_seconds": 1005.68,
+      "end_seconds": 1012.2399999999999
+    },
+    {
+      "text": "なんです。人類の進化は教育保育の営みが",
+      "start_seconds": 1009.16,
+      "end_seconds": 1016.16
+    },
+    {
+      "text": "なかったらないんですよね。ですのであの",
+      "start_seconds": 1012.24,
+      "end_seconds": 1018.16
+    },
+    {
+      "text": "ここはあえてそういう風にしたけれども",
+      "start_seconds": 1016.16,
+      "end_seconds": 1020.92
+    },
+    {
+      "text": "人類の発展や文化の継承はないっていう風",
+      "start_seconds": 1018.16,
+      "end_seconds": 1024.28
+    },
+    {
+      "text": "になったんですよね。だからこれはやはり",
+      "start_seconds": 1020.92,
+      "end_seconds": 1028.28
+    },
+    {
+      "text": "いろんな分野を経験するからこそ風な視点",
+      "start_seconds": 1024.28,
+      "end_seconds": 1032.12
+    },
+    {
+      "text": "につがるしでちゃあのAIなんかではより",
+      "start_seconds": 1028.28,
+      "end_seconds": 1034.959
+    },
+    {
+      "text": "平たい文章で理解しやすくはなるかもしれ",
+      "start_seconds": 1032.12,
+      "end_seconds": 1037.7199999999998
+    },
+    {
+      "text": "ないけれどもそういう異なる視点っていう",
+      "start_seconds": 1034.959,
+      "end_seconds": 1039.959
+    },
+    {
+      "text": "のが結び継続きにくいあのディープ",
+      "start_seconds": 1037.72,
+      "end_seconds": 1041.88
+    },
+    {
+      "text": "ラーニングに結びつきにくいのかなという",
+      "start_seconds": 1039.959,
+      "end_seconds": 1044.079
+    },
+    {
+      "text": "風に思っています。はい、次お願いします",
+      "start_seconds": 1041.88,
+      "end_seconds": 1045.679
+    },
+    {
+      "text": "。",
+      "start_seconds": 1044.079,
+      "end_seconds": 1048.559
+    },
+    {
+      "text": "で、えっと、皆さんに期待することとして",
+      "start_seconds": 1045.679,
+      "end_seconds": 1051.24
+    },
+    {
+      "text": "ですね、生成が生活にどんどん浸透もっと",
+      "start_seconds": 1048.559,
+      "end_seconds": 1053.0
+    },
+    {
+      "text": "してくると思います。",
+      "start_seconds": 1051.24,
+      "end_seconds": 1056.28
+    },
+    {
+      "text": "で、水平型な学びをして欲しいなと。様々",
+      "start_seconds": 1053.0,
+      "end_seconds": 1059.96
+    },
+    {
+      "text": "な分野学びを垂直のですね、深く極めるの",
+      "start_seconds": 1056.28,
+      "end_seconds": 1062.72
+    },
+    {
+      "text": "ではなくて広く学んで欲しいなという風に",
+      "start_seconds": 1059.96,
+      "end_seconds": 1065.8400000000001
+    },
+    {
+      "text": "思っています。で、様々な数事柄を",
+      "start_seconds": 1062.72,
+      "end_seconds": 1069.0
+    },
+    {
+      "text": "受け入れるという風な需要性をも受けて",
+      "start_seconds": 1065.84,
+      "end_seconds": 1071.48
+    },
+    {
+      "text": "いただきたいなと思います。で、興味を",
+      "start_seconds": 1069.0,
+      "end_seconds": 1073.679
+    },
+    {
+      "text": "持ったことに挑戦し、そこで得られたこと",
+      "start_seconds": 1071.48,
+      "end_seconds": 1077.039
+    },
+    {
+      "text": "こそが皆さんの武器になります。で、その",
+      "start_seconds": 1073.679,
+      "end_seconds": 1079.799
+    },
+    {
+      "text": "価値は後に分かりますと。で、自分さらに",
+      "start_seconds": 1077.039,
+      "end_seconds": 1082.32
+    },
+    {
+      "text": "は人間だけが有するものを考えてください",
+      "start_seconds": 1079.799,
+      "end_seconds": 1083.9189999999999
+    },
+    {
+      "text": "ということで、これあのスターウォーズ",
+      "start_seconds": 1082.32,
+      "end_seconds": 1086.8799999999999
+    },
+    {
+      "text": "ですけれどもの酒場の様子ですけれども、",
+      "start_seconds": 1083.919,
+      "end_seconds": 1089.1200000000001
+    },
+    {
+      "text": "いろんな人種がいい、ロボットがいい、人",
+      "start_seconds": 1086.88,
+      "end_seconds": 1092.679
+    },
+    {
+      "text": "がいてる。しかしロボットもAIも対当し",
+      "start_seconds": 1089.12,
+      "end_seconds": 1095.1589999999999
+    },
+    {
+      "text": "てくるけれども、人というものがどんな",
+      "start_seconds": 1092.679,
+      "end_seconds": 1097.6000000000001
+    },
+    {
+      "text": "存在なのか、あるいは自分の武器が何なの",
+      "start_seconds": 1095.159,
+      "end_seconds": 1099.2
+    },
+    {
+      "text": "かっていうのをしっかり考えていただき",
+      "start_seconds": 1097.6,
+      "end_seconds": 1101.12
+    },
+    {
+      "text": "たいなという風に思います。ご成聴",
+      "start_seconds": 1099.2,
+      "end_seconds": 1105.1200000000001
+    },
+    {
+      "text": "ありがとうございました。",
+      "start_seconds": 1101.12,
+      "end_seconds": 1105.12
+    }
+  ],
+  "display_captions": [
+    {
+      "text": "はい。え、ただいまご紹介預かりました",
+      "start_seconds": 2.8,
+      "end_seconds": 4.92,
+      "id": "O47DJaRJZDY-display-0001",
+      "segment_id": "O47DJaRJZDY-ja-0001"
+    },
+    {
+      "text": "奈良教育大学の広瀬です。え、本日はこの",
+      "start_seconds": 4.92,
+      "end_seconds": 7.68,
+      "id": "O47DJaRJZDY-display-0002",
+      "segment_id": "O47DJaRJZDY-ja-0001"
+    },
+    {
+      "text": "ような機会を与えていただきまして",
+      "start_seconds": 7.68,
+      "end_seconds": 9.36,
+      "id": "O47DJaRJZDY-display-0003",
+      "segment_id": "O47DJaRJZDY-ja-0001"
+    },
+    {
+      "text": "ありがとうございます。え、",
+      "start_seconds": 9.36,
+      "end_seconds": 13.96,
+      "id": "O47DJaRJZDY-display-0004",
+      "segment_id": "O47DJaRJZDY-ja-0001"
+    },
+    {
+      "text": "ま、大体私はですね、大学で普段、ま、",
+      "start_seconds": 13.96,
+      "end_seconds": 16.92,
+      "id": "O47DJaRJZDY-display-0005",
+      "segment_id": "O47DJaRJZDY-ja-0002"
+    },
+    {
+      "text": "90分ぐらいの講議をしていまして、で、",
+      "start_seconds": 16.92,
+      "end_seconds": 20.76,
+      "id": "O47DJaRJZDY-display-0006",
+      "segment_id": "O47DJaRJZDY-ja-0002"
+    },
+    {
+      "text": "え、ま、講演等では、ま、まあ60分から",
+      "start_seconds": 20.76,
+      "end_seconds": 25.32,
+      "id": "O47DJaRJZDY-display-0007",
+      "segment_id": "O47DJaRJZDY-ja-0002"
+    },
+    {
+      "text": "、え、120分ぐらいで講議してるんです",
+      "start_seconds": 25.32,
+      "end_seconds": 28.32,
+      "id": "O47DJaRJZDY-display-0008",
+      "segment_id": "O47DJaRJZDY-ja-0003"
+    },
+    {
+      "text": "けど、今日が大体、え、15分から18分",
+      "start_seconds": 28.32,
+      "end_seconds": 31.16,
+      "id": "O47DJaRJZDY-display-0009",
+      "segment_id": "O47DJaRJZDY-ja-0003"
+    },
+    {
+      "text": "で納めてくださいということで、あの、",
+      "start_seconds": 31.16,
+      "end_seconds": 32.8,
+      "id": "O47DJaRJZDY-display-0010",
+      "segment_id": "O47DJaRJZDY-ja-0003"
+    },
+    {
+      "text": "途中早口になるかもしれませんけれども、",
+      "start_seconds": 32.8,
+      "end_seconds": 35.32,
+      "id": "O47DJaRJZDY-display-0011",
+      "segment_id": "O47DJaRJZDY-ja-0003"
+    },
+    {
+      "text": "あの、ご容赦いただけたらという風に思い",
+      "start_seconds": 35.32,
+      "end_seconds": 37.719,
+      "id": "O47DJaRJZDY-display-0012",
+      "segment_id": "O47DJaRJZDY-ja-0004"
+    },
+    {
+      "text": "ます。で、あの、お題いただいてですね、",
+      "start_seconds": 37.719,
+      "end_seconds": 40.0,
+      "id": "O47DJaRJZDY-display-0013",
+      "segment_id": "O47DJaRJZDY-ja-0004"
+    },
+    {
+      "text": "あの、本日は険な存在の力という風なこと",
+      "start_seconds": 40.0,
+      "end_seconds": 42.92,
+      "id": "O47DJaRJZDY-display-0014",
+      "segment_id": "O47DJaRJZDY-ja-0004"
+    },
+    {
+      "text": "で、ま、どちらかというと私の研究という",
+      "start_seconds": 42.92,
+      "end_seconds": 45.559,
+      "id": "O47DJaRJZDY-display-0015",
+      "segment_id": "O47DJaRJZDY-ja-0004"
+    },
+    {
+      "text": "方はよりかはどういう風なあのことを、ま",
+      "start_seconds": 45.559,
+      "end_seconds": 48.84,
+      "id": "O47DJaRJZDY-display-0016",
+      "segment_id": "O47DJaRJZDY-ja-0005"
+    },
+    {
+      "text": "、経験してけたかという風なことについて",
+      "start_seconds": 48.84,
+      "end_seconds": 51.199,
+      "id": "O47DJaRJZDY-display-0017",
+      "segment_id": "O47DJaRJZDY-ja-0005"
+    },
+    {
+      "text": "、え、お話をさせていただきたいという風",
+      "start_seconds": 51.199,
+      "end_seconds": 53.12,
+      "id": "O47DJaRJZDY-display-0018",
+      "segment_id": "O47DJaRJZDY-ja-0005"
+    },
+    {
+      "text": "に思います。え、これはですね、あの、",
+      "start_seconds": 53.12,
+      "end_seconds": 56.48,
+      "id": "O47DJaRJZDY-display-0019",
+      "segment_id": "O47DJaRJZDY-ja-0005"
+    },
+    {
+      "text": "略歴という風なことになりますけれども、",
+      "start_seconds": 56.48,
+      "end_seconds": 59.6,
+      "id": "O47DJaRJZDY-display-0020",
+      "segment_id": "O47DJaRJZDY-ja-0006"
+    },
+    {
+      "text": "えっと、幼稚園に務め、その幼稚園を行き",
+      "start_seconds": 59.6,
+      "end_seconds": 63.399,
+      "id": "O47DJaRJZDY-display-0021",
+      "segment_id": "O47DJaRJZDY-ja-0006"
+    },
+    {
+      "text": "ながら大学院に行き、そして今現在、ま、",
+      "start_seconds": 63.399,
+      "end_seconds": 66.479,
+      "id": "O47DJaRJZDY-display-0022",
+      "segment_id": "O47DJaRJZDY-ja-0006"
+    },
+    {
+      "text": "奈良教育大学の教授をしています。で、",
+      "start_seconds": 66.479,
+      "end_seconds": 69.799,
+      "id": "O47DJaRJZDY-display-0023",
+      "segment_id": "O47DJaRJZDY-ja-0007"
+    },
+    {
+      "text": "それと同時に子供の学び育ちセンターの",
+      "start_seconds": 69.799,
+      "end_seconds": 72.2,
+      "id": "O47DJaRJZDY-display-0024",
+      "segment_id": "O47DJaRJZDY-ja-0007"
+    },
+    {
+      "text": "センターもさせていただきます。",
+      "start_seconds": 72.2,
+      "end_seconds": 77.0,
+      "id": "O47DJaRJZDY-display-0025",
+      "segment_id": "O47DJaRJZDY-ja-0007"
+    },
+    {
+      "text": "で、えっと、ま、これまでの学びの流れと",
+      "start_seconds": 78.88,
+      "end_seconds": 82.72,
+      "id": "O47DJaRJZDY-display-0026",
+      "segment_id": "O47DJaRJZDY-ja-0008"
+    },
+    {
+      "text": "してはですね、あの、小学生の時にですね",
+      "start_seconds": 82.72,
+      "end_seconds": 85.68,
+      "id": "O47DJaRJZDY-display-0027",
+      "segment_id": "O47DJaRJZDY-ja-0008"
+    },
+    {
+      "text": "、やはりあの、生物が好きで、え、ま、",
+      "start_seconds": 85.68,
+      "end_seconds": 90.28,
+      "id": "O47DJaRJZDY-display-0028",
+      "segment_id": "O47DJaRJZDY-ja-0008"
+    },
+    {
+      "text": "科学者になりたいという風に思っていまし",
+      "start_seconds": 90.28,
+      "end_seconds": 93.079,
+      "id": "O47DJaRJZDY-display-0029",
+      "segment_id": "O47DJaRJZDY-ja-0009"
+    },
+    {
+      "text": "た。で、中学高校になった時にですね、",
+      "start_seconds": 93.079,
+      "end_seconds": 96.759,
+      "id": "O47DJaRJZDY-display-0030",
+      "segment_id": "O47DJaRJZDY-ja-0009"
+    },
+    {
+      "text": "あの、とにかくあの環境という風なものが",
+      "start_seconds": 96.759,
+      "end_seconds": 100.84,
+      "id": "O47DJaRJZDY-display-0031",
+      "segment_id": "O47DJaRJZDY-ja-0009"
+    },
+    {
+      "text": "その頃あの取りざされてですね、工学の力",
+      "start_seconds": 100.84,
+      "end_seconds": 105.0,
+      "id": "O47DJaRJZDY-display-0032",
+      "segment_id": "O47DJaRJZDY-ja-0010"
+    },
+    {
+      "text": "で環境を変えたいという環境の問題を解決",
+      "start_seconds": 105.0,
+      "end_seconds": 108.799,
+      "id": "O47DJaRJZDY-display-0033",
+      "segment_id": "O47DJaRJZDY-ja-0010"
+    },
+    {
+      "text": "したいという風に思うようになり、そして",
+      "start_seconds": 108.799,
+      "end_seconds": 111.92,
+      "id": "O47DJaRJZDY-display-0034",
+      "segment_id": "O47DJaRJZDY-ja-0010"
+    },
+    {
+      "text": "大学ではあの工学部の科学工学家という",
+      "start_seconds": 111.92,
+      "end_seconds": 115.159,
+      "id": "O47DJaRJZDY-display-0035",
+      "segment_id": "O47DJaRJZDY-ja-0011"
+    },
+    {
+      "text": "ところに進学あのしました。入学をしまし",
+      "start_seconds": 115.159,
+      "end_seconds": 117.96,
+      "id": "O47DJaRJZDY-display-0036",
+      "segment_id": "O47DJaRJZDY-ja-0011"
+    },
+    {
+      "text": "た。で、これがあの学部の時のあの卒論の",
+      "start_seconds": 117.96,
+      "end_seconds": 122.439,
+      "id": "O47DJaRJZDY-display-0037",
+      "segment_id": "O47DJaRJZDY-ja-0011"
+    },
+    {
+      "text": "研究になります。で、あの、工学部の場合",
+      "start_seconds": 122.439,
+      "end_seconds": 125.92,
+      "id": "O47DJaRJZDY-display-0038",
+      "segment_id": "O47DJaRJZDY-ja-0012"
+    },
+    {
+      "text": "はですね、え、大半が大学院に進学すると",
+      "start_seconds": 125.92,
+      "end_seconds": 130.239,
+      "id": "O47DJaRJZDY-display-0039",
+      "segment_id": "O47DJaRJZDY-ja-0012"
+    },
+    {
+      "text": "いう風なこともあり、私も例に漏れず大学",
+      "start_seconds": 130.239,
+      "end_seconds": 133.44,
+      "id": "O47DJaRJZDY-display-0040",
+      "segment_id": "O47DJaRJZDY-ja-0012"
+    },
+    {
+      "text": "院に行ったという風なことになります。で",
+      "start_seconds": 133.44,
+      "end_seconds": 136.28,
+      "id": "O47DJaRJZDY-display-0041",
+      "segment_id": "O47DJaRJZDY-ja-0013"
+    },
+    {
+      "text": "、ちなみにこのシュドモナスアルギノーザ",
+      "start_seconds": 136.28,
+      "end_seconds": 138.76,
+      "id": "O47DJaRJZDY-display-0042",
+      "segment_id": "O47DJaRJZDY-ja-0013"
+    },
+    {
+      "text": "LST03株由来のリパーズ遺伝子の",
+      "start_seconds": 138.76,
+      "end_seconds": 141.319,
+      "id": "O47DJaRJZDY-display-0043",
+      "segment_id": "O47DJaRJZDY-ja-0013"
+    },
+    {
+      "text": "シークエス及び大金での発言というのが",
+      "start_seconds": 141.319,
+      "end_seconds": 144.4,
+      "id": "O47DJaRJZDY-display-0044",
+      "segment_id": "O47DJaRJZDY-ja-0013"
+    },
+    {
+      "text": "あの大学院の収支論文の研究テーマになり",
+      "start_seconds": 144.4,
+      "end_seconds": 147.72,
+      "id": "O47DJaRJZDY-display-0045",
+      "segment_id": "O47DJaRJZDY-ja-0014"
+    },
+    {
+      "text": "ます。何を言ってるかと言うと、シュート",
+      "start_seconds": 147.72,
+      "end_seconds": 150.4,
+      "id": "O47DJaRJZDY-display-0046",
+      "segment_id": "O47DJaRJZDY-ja-0014"
+    },
+    {
+      "text": "マスターエルギノーザLSD3株っていう",
+      "start_seconds": 150.4,
+      "end_seconds": 153.08,
+      "id": "O47DJaRJZDY-display-0047",
+      "segment_id": "O47DJaRJZDY-ja-0014"
+    },
+    {
+      "text": "金ででこの金はあの有気",
+      "start_seconds": 153.08,
+      "end_seconds": 158.56,
+      "id": "O47DJaRJZDY-display-0048",
+      "segment_id": "O47DJaRJZDY-ja-0015"
+    },
+    {
+      "text": "だから石油とか便税とかああいう風な",
+      "start_seconds": 158.56,
+      "end_seconds": 161.4,
+      "id": "O47DJaRJZDY-display-0049",
+      "segment_id": "O47DJaRJZDY-ja-0015"
+    },
+    {
+      "text": "有気給の中で死なない金なんですね。で、",
+      "start_seconds": 161.4,
+      "end_seconds": 165.159,
+      "id": "O47DJaRJZDY-display-0050",
+      "segment_id": "O47DJaRJZDY-ja-0016"
+    },
+    {
+      "text": "そういう風な死なない金でそういう風な",
+      "start_seconds": 165.159,
+      "end_seconds": 167.84,
+      "id": "O47DJaRJZDY-display-0051",
+      "segment_id": "O47DJaRJZDY-ja-0016"
+    },
+    {
+      "text": "ものが分解してくれたらで、リパーゼの",
+      "start_seconds": 167.84,
+      "end_seconds": 171.44,
+      "id": "O47DJaRJZDY-display-0052",
+      "segment_id": "O47DJaRJZDY-ja-0016"
+    },
+    {
+      "text": "遺伝子もリパーゼという風なもの酵素が",
+      "start_seconds": 171.44,
+      "end_seconds": 174.519,
+      "id": "O47DJaRJZDY-display-0053",
+      "segment_id": "O47DJaRJZDY-ja-0017"
+    },
+    {
+      "text": "あるんですけども、それもあの要はえっと",
+      "start_seconds": 174.519,
+      "end_seconds": 179.2,
+      "id": "O47DJaRJZDY-display-0054",
+      "segment_id": "O47DJaRJZDY-ja-0017"
+    },
+    {
+      "text": "活性が落ちない。有の中で活性が落ちない",
+      "start_seconds": 179.2,
+      "end_seconds": 182.239,
+      "id": "O47DJaRJZDY-display-0055",
+      "segment_id": "O47DJaRJZDY-ja-0017"
+    },
+    {
+      "text": "という風なことなので、ま、そういう風な",
+      "start_seconds": 182.239,
+      "end_seconds": 184.599,
+      "id": "O47DJaRJZDY-display-0056",
+      "segment_id": "O47DJaRJZDY-ja-0018"
+    },
+    {
+      "text": "もののシークエンス遺伝子の配列を調べて",
+      "start_seconds": 184.599,
+      "end_seconds": 188.92,
+      "id": "O47DJaRJZDY-display-0057",
+      "segment_id": "O47DJaRJZDY-ja-0018"
+    },
+    {
+      "text": "さらに大腸金の中にその遺伝子を入れて",
+      "start_seconds": 188.92,
+      "end_seconds": 192.319,
+      "id": "O47DJaRJZDY-display-0058",
+      "segment_id": "O47DJaRJZDY-ja-0018"
+    },
+    {
+      "text": "大腸金で大量に増やすという風なことを、",
+      "start_seconds": 192.319,
+      "end_seconds": 195.319,
+      "id": "O47DJaRJZDY-display-0059",
+      "segment_id": "O47DJaRJZDY-ja-0019"
+    },
+    {
+      "text": "ま、研究をしていました。次お願いします",
+      "start_seconds": 195.319,
+      "end_seconds": 198.879,
+      "id": "O47DJaRJZDY-display-0060",
+      "segment_id": "O47DJaRJZDY-ja-0019"
+    },
+    {
+      "text": "。",
+      "start_seconds": 198.879,
+      "end_seconds": 200.48,
+      "id": "O47DJaRJZDY-display-0061",
+      "segment_id": "O47DJaRJZDY-ja-0019"
+    },
+    {
+      "text": "で、そうすると私はその後ですね、工学部",
+      "start_seconds": 200.48,
+      "end_seconds": 204.04,
+      "id": "O47DJaRJZDY-display-0062",
+      "segment_id": "O47DJaRJZDY-ja-0020"
+    },
+    {
+      "text": "の大学院にも行きそのまま就職するか、",
+      "start_seconds": 204.04,
+      "end_seconds": 207.08,
+      "id": "O47DJaRJZDY-display-0063",
+      "segment_id": "O47DJaRJZDY-ja-0020"
+    },
+    {
+      "text": "先ほどあの冒頭でお伝えしましたように業",
+      "start_seconds": 207.08,
+      "end_seconds": 209.959,
+      "id": "O47DJaRJZDY-display-0064",
+      "segment_id": "O47DJaRJZDY-ja-0020"
+    },
+    {
+      "text": "が幼稚園をやっていますので[鼻息]",
+      "start_seconds": 209.959,
+      "end_seconds": 212.2,
+      "id": "O47DJaRJZDY-display-0065",
+      "segment_id": "O47DJaRJZDY-ja-0020"
+    },
+    {
+      "text": "幼稚園に就職するかっていう風な事柄を",
+      "start_seconds": 212.2,
+      "end_seconds": 214.84,
+      "id": "O47DJaRJZDY-display-0066",
+      "segment_id": "O47DJaRJZDY-ja-0021"
+    },
+    {
+      "text": "悩んだわけなんですね。で、あの、そこで",
+      "start_seconds": 214.84,
+      "end_seconds": 218.28,
+      "id": "O47DJaRJZDY-display-0067",
+      "segment_id": "O47DJaRJZDY-ja-0021"
+    },
+    {
+      "text": "まず1つ目の選択があって、で、ま、遅れ",
+      "start_seconds": 218.28,
+      "end_seconds": 222.12,
+      "id": "O47DJaRJZDY-display-0068",
+      "segment_id": "O47DJaRJZDY-ja-0021"
+    },
+    {
+      "text": "早かれ過業のようなことをするという風な",
+      "start_seconds": 222.12,
+      "end_seconds": 224.36,
+      "id": "O47DJaRJZDY-display-0069",
+      "segment_id": "O47DJaRJZDY-ja-0022"
+    },
+    {
+      "text": "ことであるのであれば、ま、子供について",
+      "start_seconds": 224.36,
+      "end_seconds": 228.12,
+      "id": "O47DJaRJZDY-display-0070",
+      "segment_id": "O47DJaRJZDY-ja-0022"
+    },
+    {
+      "text": "学びたい、研究したいということで、あの",
+      "start_seconds": 228.12,
+      "end_seconds": 231.159,
+      "id": "O47DJaRJZDY-display-0071",
+      "segment_id": "O47DJaRJZDY-ja-0022"
+    },
+    {
+      "text": "、大学院を受けようという風に思ったん",
+      "start_seconds": 231.159,
+      "end_seconds": 234.36,
+      "id": "O47DJaRJZDY-display-0072",
+      "segment_id": "O47DJaRJZDY-ja-0023"
+    },
+    {
+      "text": "ですね。で、その時にあの複数の大学院を",
+      "start_seconds": 234.36,
+      "end_seconds": 237.92,
+      "id": "O47DJaRJZDY-display-0073",
+      "segment_id": "O47DJaRJZDY-ja-0023"
+    },
+    {
+      "text": "ですね、ま、訪問させていただいてで、ま",
+      "start_seconds": 237.92,
+      "end_seconds": 242.319,
+      "id": "O47DJaRJZDY-display-0074",
+      "segment_id": "O47DJaRJZDY-ja-0023"
+    },
+    {
+      "text": "、初めて理系の人間が初めてあの心理学と",
+      "start_seconds": 242.319,
+      "end_seconds": 246.12,
+      "id": "O47DJaRJZDY-display-0075",
+      "segment_id": "O47DJaRJZDY-ja-0024"
+    },
+    {
+      "text": "かそういう風なことの大学院の研究室の",
+      "start_seconds": 246.12,
+      "end_seconds": 249.319,
+      "id": "O47DJaRJZDY-display-0076",
+      "segment_id": "O47DJaRJZDY-ja-0024"
+    },
+    {
+      "text": "先生とお会いすると。そうすると、ま、",
+      "start_seconds": 249.319,
+      "end_seconds": 252.0,
+      "id": "O47DJaRJZDY-display-0077",
+      "segment_id": "O47DJaRJZDY-ja-0024"
+    },
+    {
+      "text": "例えば心理学の先生なんかであれば私の心",
+      "start_seconds": 252.0,
+      "end_seconds": 255.68,
+      "id": "O47DJaRJZDY-display-0078",
+      "segment_id": "O47DJaRJZDY-ja-0025"
+    },
+    {
+      "text": "が見つかされてるんじゃないかっていう風",
+      "start_seconds": 255.68,
+      "end_seconds": 257.72,
+      "id": "O47DJaRJZDY-display-0079",
+      "segment_id": "O47DJaRJZDY-ja-0025"
+    },
+    {
+      "text": "に話をしながら、あの、ビクビクして汗を",
+      "start_seconds": 257.72,
+      "end_seconds": 261.04,
+      "id": "O47DJaRJZDY-display-0080",
+      "segment_id": "O47DJaRJZDY-ja-0025"
+    },
+    {
+      "text": "かいた覚えがあります。で、先生からひ",
+      "start_seconds": 261.04,
+      "end_seconds": 264.44,
+      "id": "O47DJaRJZDY-display-0081",
+      "segment_id": "O47DJaRJZDY-ja-0026"
+    },
+    {
+      "text": "さんは、あの、子供が好きですかっていう",
+      "start_seconds": 264.44,
+      "end_seconds": 267.08,
+      "id": "O47DJaRJZDY-display-0082",
+      "segment_id": "O47DJaRJZDY-ja-0026"
+    },
+    {
+      "text": "風に言われて、その当時子供と関わった",
+      "start_seconds": 267.08,
+      "end_seconds": 270.12,
+      "id": "O47DJaRJZDY-display-0083",
+      "segment_id": "O47DJaRJZDY-ja-0026"
+    },
+    {
+      "text": "ことがなかったので、いやこの人、私子供",
+      "start_seconds": 270.12,
+      "end_seconds": 273.28,
+      "id": "O47DJaRJZDY-display-0084",
+      "segment_id": "O47DJaRJZDY-ja-0027"
+    },
+    {
+      "text": "と関わったことないがないのも分かってて",
+      "start_seconds": 273.28,
+      "end_seconds": 275.919,
+      "id": "O47DJaRJZDY-display-0085",
+      "segment_id": "O47DJaRJZDY-ja-0027"
+    },
+    {
+      "text": "、こういう風に質問してるんだという風に",
+      "start_seconds": 275.919,
+      "end_seconds": 278.919,
+      "id": "O47DJaRJZDY-display-0086",
+      "segment_id": "O47DJaRJZDY-ja-0027"
+    },
+    {
+      "text": "思って、あの、非常に緊張した覚えがあり",
+      "start_seconds": 278.919,
+      "end_seconds": 281.52,
+      "id": "O47DJaRJZDY-display-0087",
+      "segment_id": "O47DJaRJZDY-ja-0027"
+    },
+    {
+      "text": "ます。で、そんな中で被学発達心理学と",
+      "start_seconds": 281.52,
+      "end_seconds": 286.039,
+      "id": "O47DJaRJZDY-display-0088",
+      "segment_id": "O47DJaRJZDY-ja-0028"
+    },
+    {
+      "text": "いう、ま、あの",
+      "start_seconds": 286.039,
+      "end_seconds": 288.639,
+      "id": "O47DJaRJZDY-display-0089",
+      "segment_id": "O47DJaRJZDY-ja-0028"
+    },
+    {
+      "text": "猿を研究することによって人という風な",
+      "start_seconds": 288.639,
+      "end_seconds": 293.32,
+      "id": "O47DJaRJZDY-display-0090",
+      "segment_id": "O47DJaRJZDY-ja-0028"
+    },
+    {
+      "text": "ものの特徴を明らかにしようという風な",
+      "start_seconds": 293.32,
+      "end_seconds": 296.84,
+      "id": "O47DJaRJZDY-display-0091",
+      "segment_id": "O47DJaRJZDY-ja-0029"
+    },
+    {
+      "text": "研究分野があって比較というのはそういう",
+      "start_seconds": 296.84,
+      "end_seconds": 299.639,
+      "id": "O47DJaRJZDY-display-0092",
+      "segment_id": "O47DJaRJZDY-ja-0029"
+    },
+    {
+      "text": "意味なんですけれどもでそれなこと柄の",
+      "start_seconds": 299.639,
+      "end_seconds": 303.28,
+      "id": "O47DJaRJZDY-display-0093",
+      "segment_id": "O47DJaRJZDY-ja-0029"
+    },
+    {
+      "text": "あの研究士つまり人も生物なので私は生物",
+      "start_seconds": 303.28,
+      "end_seconds": 307.08,
+      "id": "O47DJaRJZDY-display-0094",
+      "segment_id": "O47DJaRJZDY-ja-0030"
+    },
+    {
+      "text": "が好きですしあのそういう風なことが",
+      "start_seconds": 307.08,
+      "end_seconds": 309.479,
+      "id": "O47DJaRJZDY-display-0095",
+      "segment_id": "O47DJaRJZDY-ja-0030"
+    },
+    {
+      "text": "できるということでここが1番しっくりし",
+      "start_seconds": 309.479,
+      "end_seconds": 311.32,
+      "id": "O47DJaRJZDY-display-0096",
+      "segment_id": "O47DJaRJZDY-ja-0030"
+    },
+    {
+      "text": "た来たということで、ここの研究室に行き",
+      "start_seconds": 311.32,
+      "end_seconds": 313.96,
+      "id": "O47DJaRJZDY-display-0097",
+      "segment_id": "O47DJaRJZDY-ja-0030"
+    },
+    {
+      "text": "ました。で、えっと、ま、ここを破す前期",
+      "start_seconds": 313.96,
+      "end_seconds": 318.199,
+      "id": "O47DJaRJZDY-display-0098",
+      "segment_id": "O47DJaRJZDY-ja-0031"
+    },
+    {
+      "text": "家程、収支家程なんですけども、ま、あの",
+      "start_seconds": 318.199,
+      "end_seconds": 320.52,
+      "id": "O47DJaRJZDY-display-0099",
+      "segment_id": "O47DJaRJZDY-ja-0031"
+    },
+    {
+      "text": "、入時の2速歩行の研究をし、その後です",
+      "start_seconds": 320.52,
+      "end_seconds": 324.199,
+      "id": "O47DJaRJZDY-display-0100",
+      "segment_id": "O47DJaRJZDY-ja-0031"
+    },
+    {
+      "text": "。ちょっと紹介しますけれども、あの、",
+      "start_seconds": 324.199,
+      "end_seconds": 326.16,
+      "id": "O47DJaRJZDY-display-0101",
+      "segment_id": "O47DJaRJZDY-ja-0032"
+    },
+    {
+      "text": "博士後期家庭では屋内と屋の自由場面に",
+      "start_seconds": 326.16,
+      "end_seconds": 329.8,
+      "id": "O47DJaRJZDY-display-0102",
+      "segment_id": "O47DJaRJZDY-ja-0032"
+    },
+    {
+      "text": "おける幼児の遊び行動と仲間関係について",
+      "start_seconds": 329.8,
+      "end_seconds": 332.88,
+      "id": "O47DJaRJZDY-display-0103",
+      "segment_id": "O47DJaRJZDY-ja-0032"
+    },
+    {
+      "text": "、ま、研究をしました。",
+      "start_seconds": 332.88,
+      "end_seconds": 337.039,
+      "id": "O47DJaRJZDY-display-0104",
+      "segment_id": "O47DJaRJZDY-ja-0033"
+    },
+    {
+      "text": "で、あ、えっと、幼稚園に、えっと、就職",
+      "start_seconds": 337.039,
+      "end_seconds": 340.96,
+      "id": "O47DJaRJZDY-display-0105",
+      "segment_id": "O47DJaRJZDY-ja-0034"
+    },
+    {
+      "text": "してですね、あの、そもそも思ったことは",
+      "start_seconds": 340.96,
+      "end_seconds": 343.88,
+      "id": "O47DJaRJZDY-display-0106",
+      "segment_id": "O47DJaRJZDY-ja-0034"
+    },
+    {
+      "text": "ですね、あの、",
+      "start_seconds": 343.88,
+      "end_seconds": 348.12,
+      "id": "O47DJaRJZDY-display-0107",
+      "segment_id": "O47DJaRJZDY-ja-0034"
+    },
+    {
+      "text": "幼稚園は必要か?これがあの、[咳払い]",
+      "start_seconds": 348.12,
+      "end_seconds": 352.44,
+      "id": "O47DJaRJZDY-display-0108",
+      "segment_id": "O47DJaRJZDY-ja-0035"
+    },
+    {
+      "text": "そういう風なことを研究しようとか、そう",
+      "start_seconds": 352.44,
+      "end_seconds": 354.6,
+      "id": "O47DJaRJZDY-display-0109",
+      "segment_id": "O47DJaRJZDY-ja-0035"
+    },
+    {
+      "text": "いう就職をしようと思ってたら幼稚園って",
+      "start_seconds": 354.6,
+      "end_seconds": 357.56,
+      "id": "O47DJaRJZDY-display-0110",
+      "segment_id": "O47DJaRJZDY-ja-0035"
+    },
+    {
+      "text": "大切っていう風に思ってるので、そんな",
+      "start_seconds": 357.56,
+      "end_seconds": 359.68,
+      "id": "O47DJaRJZDY-display-0111",
+      "segment_id": "O47DJaRJZDY-ja-0035"
+    },
+    {
+      "text": "こと思わなかったと思うんですよね。でも",
+      "start_seconds": 359.68,
+      "end_seconds": 361.84,
+      "id": "O47DJaRJZDY-display-0112",
+      "segment_id": "O47DJaRJZDY-ja-0036"
+    },
+    {
+      "text": "私は異なる分野から言ってるのでそもそも",
+      "start_seconds": 361.84,
+      "end_seconds": 364.8,
+      "id": "O47DJaRJZDY-display-0113",
+      "segment_id": "O47DJaRJZDY-ja-0036"
+    },
+    {
+      "text": "幼稚園って必要かっていう風なことを思っ",
+      "start_seconds": 364.8,
+      "end_seconds": 368.56,
+      "id": "O47DJaRJZDY-display-0114",
+      "segment_id": "O47DJaRJZDY-ja-0036"
+    },
+    {
+      "text": "たわけなんですね。で、え、さらに良い",
+      "start_seconds": 368.56,
+      "end_seconds": 374.0,
+      "id": "O47DJaRJZDY-display-0115",
+      "segment_id": "O47DJaRJZDY-ja-0037"
+    },
+    {
+      "text": "教育保育とは何かっていう風な事柄につい",
+      "start_seconds": 374.0,
+      "end_seconds": 377.12,
+      "id": "O47DJaRJZDY-display-0116",
+      "segment_id": "O47DJaRJZDY-ja-0037"
+    },
+    {
+      "text": "ても、ま、これは今現在も考えてるところ",
+      "start_seconds": 377.12,
+      "end_seconds": 380.44,
+      "id": "O47DJaRJZDY-display-0117",
+      "segment_id": "O47DJaRJZDY-ja-0037"
+    },
+    {
+      "text": "ではあります。で、皆さんも多くの方高校",
+      "start_seconds": 380.44,
+      "end_seconds": 383.44,
+      "id": "O47DJaRJZDY-display-0118",
+      "segment_id": "O47DJaRJZDY-ja-0038"
+    },
+    {
+      "text": "生なんですけども、今受けてる教育が本当",
+      "start_seconds": 383.44,
+      "end_seconds": 386.039,
+      "id": "O47DJaRJZDY-display-0119",
+      "segment_id": "O47DJaRJZDY-ja-0038"
+    },
+    {
+      "text": "にいいのかどうかっていう風な事柄につい",
+      "start_seconds": 386.039,
+      "end_seconds": 389.039,
+      "id": "O47DJaRJZDY-display-0120",
+      "segment_id": "O47DJaRJZDY-ja-0038"
+    },
+    {
+      "text": "ても大切だと思うんですよね。で、そう",
+      "start_seconds": 389.039,
+      "end_seconds": 391.44,
+      "id": "O47DJaRJZDY-display-0121",
+      "segment_id": "O47DJaRJZDY-ja-0038"
+    },
+    {
+      "text": "いう風な事柄を考えて次お願いします。で",
+      "start_seconds": 391.44,
+      "end_seconds": 395.16,
+      "id": "O47DJaRJZDY-display-0122",
+      "segment_id": "O47DJaRJZDY-ja-0039"
+    },
+    {
+      "text": "、あの、そんな中で、あの、これはですね",
+      "start_seconds": 395.16,
+      "end_seconds": 397.919,
+      "id": "O47DJaRJZDY-display-0123",
+      "segment_id": "O47DJaRJZDY-ja-0039"
+    },
+    {
+      "text": "、あの、1972年の古い研究なんです",
+      "start_seconds": 397.919,
+      "end_seconds": 401.16,
+      "id": "O47DJaRJZDY-display-0124",
+      "segment_id": "O47DJaRJZDY-ja-0039"
+    },
+    {
+      "text": "けれども、3種の刑事でですね、32時間",
+      "start_seconds": 401.16,
+      "end_seconds": 404.4,
+      "id": "O47DJaRJZDY-display-0125",
+      "segment_id": "O47DJaRJZDY-ja-0040"
+    },
+    {
+      "text": "、あの、ネズミを飼育、ラット飼育すると",
+      "start_seconds": 404.4,
+      "end_seconds": 406.52,
+      "id": "O47DJaRJZDY-display-0126",
+      "segment_id": "O47DJaRJZDY-ja-0040"
+    },
+    {
+      "text": "いう風な研究です。ちょっと押して",
+      "start_seconds": 406.52,
+      "end_seconds": 408.639,
+      "id": "O47DJaRJZDY-display-0127",
+      "segment_id": "O47DJaRJZDY-ja-0040"
+    },
+    {
+      "text": "ください。で、あの、これがあの、1匹で",
+      "start_seconds": 408.639,
+      "end_seconds": 412.319,
+      "id": "O47DJaRJZDY-display-0128",
+      "segment_id": "O47DJaRJZDY-ja-0040"
+    },
+    {
+      "text": "買っている。これは3匹買っている。これ",
+      "start_seconds": 412.319,
+      "end_seconds": 414.319,
+      "id": "O47DJaRJZDY-display-0129",
+      "segment_id": "O47DJaRJZDY-ja-0041"
+    },
+    {
+      "text": "はあの複数で買っていてかつ立致な環境が",
+      "start_seconds": 414.319,
+      "end_seconds": 417.479,
+      "id": "O47DJaRJZDY-display-0130",
+      "segment_id": "O47DJaRJZDY-ja-0041"
+    },
+    {
+      "text": "あるという風な感じで30日間それぞれ",
+      "start_seconds": 417.479,
+      "end_seconds": 421.12,
+      "id": "O47DJaRJZDY-display-0131",
+      "segment_id": "O47DJaRJZDY-ja-0041"
+    },
+    {
+      "text": "比較するとそうすると豊かな環境のラット",
+      "start_seconds": 421.12,
+      "end_seconds": 425.24,
+      "id": "O47DJaRJZDY-display-0132",
+      "segment_id": "O47DJaRJZDY-ja-0042"
+    },
+    {
+      "text": "は脳の重さが重くてそれからあの神経回路",
+      "start_seconds": 425.24,
+      "end_seconds": 429.479,
+      "id": "O47DJaRJZDY-display-0133",
+      "segment_id": "O47DJaRJZDY-ja-0042"
+    },
+    {
+      "text": "もあの育って発達しているっていう風な",
+      "start_seconds": 429.479,
+      "end_seconds": 432.12,
+      "id": "O47DJaRJZDY-display-0134",
+      "segment_id": "O47DJaRJZDY-ja-0042"
+    },
+    {
+      "text": "ことが分かってえ次お願いします。あの、",
+      "start_seconds": 432.12,
+      "end_seconds": 435.72,
+      "id": "O47DJaRJZDY-display-0135",
+      "segment_id": "O47DJaRJZDY-ja-0043"
+    },
+    {
+      "text": "幼稚園はどうやらこう必要だという風な",
+      "start_seconds": 435.72,
+      "end_seconds": 439.56,
+      "id": "O47DJaRJZDY-display-0136",
+      "segment_id": "O47DJaRJZDY-ja-0043"
+    },
+    {
+      "text": "ことが集団保育場面であるし、環境もあの",
+      "start_seconds": 439.56,
+      "end_seconds": 443.96,
+      "id": "O47DJaRJZDY-display-0137",
+      "segment_id": "O47DJaRJZDY-ja-0043"
+    },
+    {
+      "text": "リッチなの場合が多いですのでどうやら",
+      "start_seconds": 443.96,
+      "end_seconds": 446.24,
+      "id": "O47DJaRJZDY-display-0138",
+      "segment_id": "O47DJaRJZDY-ja-0044"
+    },
+    {
+      "text": "必要だということが、ま、自分の中で腑に",
+      "start_seconds": 446.24,
+      "end_seconds": 448.84,
+      "id": "O47DJaRJZDY-display-0139",
+      "segment_id": "O47DJaRJZDY-ja-0044"
+    },
+    {
+      "text": "落ちたっていうことなんですね。次お願い",
+      "start_seconds": 448.84,
+      "end_seconds": 451.36,
+      "id": "O47DJaRJZDY-display-0140",
+      "segment_id": "O47DJaRJZDY-ja-0044"
+    },
+    {
+      "text": "します。で、その後、ま、先ほどの博士",
+      "start_seconds": 451.36,
+      "end_seconds": 455.16,
+      "id": "O47DJaRJZDY-display-0141",
+      "segment_id": "O47DJaRJZDY-ja-0044"
+    },
+    {
+      "text": "論文の研究テーマである屋内屋外の自由",
+      "start_seconds": 455.16,
+      "end_seconds": 458.28,
+      "id": "O47DJaRJZDY-display-0142",
+      "segment_id": "O47DJaRJZDY-ja-0045"
+    },
+    {
+      "text": "遊び場面で、屋内屋外の自由遊び場面って",
+      "start_seconds": 458.28,
+      "end_seconds": 461.96,
+      "id": "O47DJaRJZDY-display-0143",
+      "segment_id": "O47DJaRJZDY-ja-0045"
+    },
+    {
+      "text": "あると思うんですけれども、ま、一般的に",
+      "start_seconds": 461.96,
+      "end_seconds": 464.28,
+      "id": "O47DJaRJZDY-display-0144",
+      "segment_id": "O47DJaRJZDY-ja-0045"
+    },
+    {
+      "text": "外は体を使ったダイナミックな部屋の中は",
+      "start_seconds": 464.28,
+      "end_seconds": 467.8,
+      "id": "O47DJaRJZDY-display-0145",
+      "segment_id": "O47DJaRJZDY-ja-0046"
+    },
+    {
+      "text": "静かな性的な遊びがっていう風に思われる",
+      "start_seconds": 467.8,
+      "end_seconds": 470.36,
+      "id": "O47DJaRJZDY-display-0146",
+      "segment_id": "O47DJaRJZDY-ja-0046"
+    },
+    {
+      "text": "と思うんですけれども、じゃあ仲間関係",
+      "start_seconds": 470.36,
+      "end_seconds": 473.039,
+      "id": "O47DJaRJZDY-display-0147",
+      "segment_id": "O47DJaRJZDY-ja-0046"
+    },
+    {
+      "text": "どうなのかっていうのを調べたいなという",
+      "start_seconds": 473.039,
+      "end_seconds": 475.039,
+      "id": "O47DJaRJZDY-display-0148",
+      "segment_id": "O47DJaRJZDY-ja-0046"
+    },
+    {
+      "text": "風に思ったわけなんですね。で、そうする",
+      "start_seconds": 475.039,
+      "end_seconds": 477.639,
+      "id": "O47DJaRJZDY-display-0149",
+      "segment_id": "O47DJaRJZDY-ja-0047"
+    },
+    {
+      "text": "と遊び相手の種類、ま、外の方がいろんな",
+      "start_seconds": 477.639,
+      "end_seconds": 481.759,
+      "id": "O47DJaRJZDY-display-0150",
+      "segment_id": "O47DJaRJZDY-ja-0047"
+    },
+    {
+      "text": "ことと関わり、えっと、中の方が固定的な",
+      "start_seconds": 481.759,
+      "end_seconds": 484.72,
+      "id": "O47DJaRJZDY-display-0151",
+      "segment_id": "O47DJaRJZDY-ja-0047"
+    },
+    {
+      "text": "口と関わるのかどうかとかっていうだけで",
+      "start_seconds": 484.72,
+      "end_seconds": 487.159,
+      "id": "O47DJaRJZDY-display-0152",
+      "segment_id": "O47DJaRJZDY-ja-0048"
+    },
+    {
+      "text": "はなくって、やっぱりあのそれ仲間って",
+      "start_seconds": 487.159,
+      "end_seconds": 490.639,
+      "id": "O47DJaRJZDY-display-0153",
+      "segment_id": "O47DJaRJZDY-ja-0048"
+    },
+    {
+      "text": "それだけじゃないかなという風に思って、",
+      "start_seconds": 490.639,
+      "end_seconds": 493.4,
+      "id": "O47DJaRJZDY-display-0154",
+      "segment_id": "O47DJaRJZDY-ja-0048"
+    },
+    {
+      "text": "この多様性指数、多陽性を図る指標として",
+      "start_seconds": 493.4,
+      "end_seconds": 496.639,
+      "id": "O47DJaRJZDY-display-0155",
+      "segment_id": "O47DJaRJZDY-ja-0048"
+    },
+    {
+      "text": "生体額を用いられる社ナの多様性指数って",
+      "start_seconds": 496.639,
+      "end_seconds": 499.56,
+      "id": "O47DJaRJZDY-display-0156",
+      "segment_id": "O47DJaRJZDY-ja-0049"
+    },
+    {
+      "text": "いうのを仲間関係に当てはめたということ",
+      "start_seconds": 499.56,
+      "end_seconds": 502.4,
+      "id": "O47DJaRJZDY-display-0157",
+      "segment_id": "O47DJaRJZDY-ja-0049"
+    },
+    {
+      "text": "なんですね。次お願いします。で、多性",
+      "start_seconds": 502.4,
+      "end_seconds": 505.28,
+      "id": "O47DJaRJZDY-display-0158",
+      "segment_id": "O47DJaRJZDY-ja-0049"
+    },
+    {
+      "text": "指数っていうのは値が大きくなると例えば",
+      "start_seconds": 505.28,
+      "end_seconds": 508.039,
+      "id": "O47DJaRJZDY-display-0159",
+      "segment_id": "O47DJaRJZDY-ja-0049"
+    },
+    {
+      "text": "先ほど言ってる通り種類が多くな",
+      "start_seconds": 508.039,
+      "end_seconds": 509.919,
+      "id": "O47DJaRJZDY-display-0160",
+      "segment_id": "O47DJaRJZDY-ja-0050"
+    },
+    {
+      "text": "るっていう風なこととそれからそれだけで",
+      "start_seconds": 509.919,
+      "end_seconds": 512.76,
+      "id": "O47DJaRJZDY-display-0161",
+      "segment_id": "O47DJaRJZDY-ja-0050"
+    },
+    {
+      "text": "はなくて個体数が均等に分布する例えば山",
+      "start_seconds": 512.76,
+      "end_seconds": 516.159,
+      "id": "O47DJaRJZDY-display-0162",
+      "segment_id": "O47DJaRJZDY-ja-0050"
+    },
+    {
+      "text": "があって杉火の木やまもみやなんやらと",
+      "start_seconds": 516.159,
+      "end_seconds": 520.24,
+      "id": "O47DJaRJZDY-display-0163",
+      "segment_id": "O47DJaRJZDY-ja-0051"
+    },
+    {
+      "text": "いう風なことがま例えば6種類の木が上っ",
+      "start_seconds": 520.24,
+      "end_seconds": 523.279,
+      "id": "O47DJaRJZDY-display-0164",
+      "segment_id": "O47DJaRJZDY-ja-0051"
+    },
+    {
+      "text": "てるとそうしたら杉だけが95%あって",
+      "start_seconds": 523.279,
+      "end_seconds": 527.76,
+      "id": "O47DJaRJZDY-display-0165",
+      "segment_id": "O47DJaRJZDY-ja-0051"
+    },
+    {
+      "text": "残りの種類は同じでもあのあとは1%",
+      "start_seconds": 527.76,
+      "end_seconds": 530.76,
+      "id": "O47DJaRJZDY-display-0166",
+      "segment_id": "O47DJaRJZDY-ja-0052"
+    },
+    {
+      "text": "ずつっていうパターンもあればえそれぞれ",
+      "start_seconds": 530.76,
+      "end_seconds": 533.64,
+      "id": "O47DJaRJZDY-display-0167",
+      "segment_id": "O47DJaRJZDY-ja-0052"
+    },
+    {
+      "text": "が均等な割合で山を構成してると。だから",
+      "start_seconds": 533.64,
+      "end_seconds": 537.04,
+      "id": "O47DJaRJZDY-display-0168",
+      "segment_id": "O47DJaRJZDY-ja-0052"
+    },
+    {
+      "text": "どっちが多様性のある山かっていうと、",
+      "start_seconds": 537.04,
+      "end_seconds": 540.32,
+      "id": "O47DJaRJZDY-display-0169",
+      "segment_id": "O47DJaRJZDY-ja-0053"
+    },
+    {
+      "text": "あの要は均等にいろんな種類のものが生え",
+      "start_seconds": 540.32,
+      "end_seconds": 543.6,
+      "id": "O47DJaRJZDY-display-0170",
+      "segment_id": "O47DJaRJZDY-ja-0053"
+    },
+    {
+      "text": "てるっていう方が多様性があり、ま、健康",
+      "start_seconds": 543.6,
+      "end_seconds": 545.68,
+      "id": "O47DJaRJZDY-display-0171",
+      "segment_id": "O47DJaRJZDY-ja-0053"
+    },
+    {
+      "text": "な山になるわけなんですよね。で、それを",
+      "start_seconds": 545.68,
+      "end_seconds": 549.0,
+      "id": "O47DJaRJZDY-display-0172",
+      "segment_id": "O47DJaRJZDY-ja-0053"
+    },
+    {
+      "text": "あ、すいません。戻してください。で、",
+      "start_seconds": 549.0,
+      "end_seconds": 551.16,
+      "id": "O47DJaRJZDY-display-0173",
+      "segment_id": "O47DJaRJZDY-ja-0054"
+    },
+    {
+      "text": "それを多くの異なる相手と均等に関わると",
+      "start_seconds": 551.16,
+      "end_seconds": 554.6,
+      "id": "O47DJaRJZDY-display-0174",
+      "segment_id": "O47DJaRJZDY-ja-0054"
+    },
+    {
+      "text": "いうことで仲間関係に用いたということ",
+      "start_seconds": 554.6,
+      "end_seconds": 557.0,
+      "id": "O47DJaRJZDY-display-0175",
+      "segment_id": "O47DJaRJZDY-ja-0054"
+    },
+    {
+      "text": "です。はい、お願いします。",
+      "start_seconds": 557.0,
+      "end_seconds": 559.8,
+      "id": "O47DJaRJZDY-display-0176",
+      "segment_id": "O47DJaRJZDY-ja-0054"
+    },
+    {
+      "text": "で、え、これがですね、あの、3歳、4歳",
+      "start_seconds": 559.8,
+      "end_seconds": 563.16,
+      "id": "O47DJaRJZDY-display-0177",
+      "segment_id": "O47DJaRJZDY-ja-0055"
+    },
+    {
+      "text": "、5歳で、え、屋内と屋外で調べると34",
+      "start_seconds": 563.16,
+      "end_seconds": 568.12,
+      "id": "O47DJaRJZDY-display-0178",
+      "segment_id": "O47DJaRJZDY-ja-0055"
+    },
+    {
+      "text": "歳では屋内、屋外の方が様々な相手と",
+      "start_seconds": 568.12,
+      "end_seconds": 572.0,
+      "id": "O47DJaRJZDY-display-0179",
+      "segment_id": "O47DJaRJZDY-ja-0056"
+    },
+    {
+      "text": "関わり、屋内の方があの割と多様性指数が",
+      "start_seconds": 572.0,
+      "end_seconds": 575.16,
+      "id": "O47DJaRJZDY-display-0180",
+      "segment_id": "O47DJaRJZDY-ja-0056"
+    },
+    {
+      "text": "低いということが分かり、これ両方も",
+      "start_seconds": 575.16,
+      "end_seconds": 577.399,
+      "id": "O47DJaRJZDY-display-0181",
+      "segment_id": "O47DJaRJZDY-ja-0056"
+    },
+    {
+      "text": "どっちも大事だという風に思うんですね。",
+      "start_seconds": 577.399,
+      "end_seconds": 579.76,
+      "id": "O47DJaRJZDY-display-0182",
+      "segment_id": "O47DJaRJZDY-ja-0056"
+    },
+    {
+      "text": "ですので34歳事にとっては環境っていう",
+      "start_seconds": 579.76,
+      "end_seconds": 582.44,
+      "id": "O47DJaRJZDY-display-0183",
+      "segment_id": "O47DJaRJZDY-ja-0057"
+    },
+    {
+      "text": "のがとても特に大事という風なことが",
+      "start_seconds": 582.44,
+      "end_seconds": 584.64,
+      "id": "O47DJaRJZDY-display-0184",
+      "segment_id": "O47DJaRJZDY-ja-0057"
+    },
+    {
+      "text": "分かっていただけると思うんですね。はい",
+      "start_seconds": 584.64,
+      "end_seconds": 586.92,
+      "id": "O47DJaRJZDY-display-0185",
+      "segment_id": "O47DJaRJZDY-ja-0057"
+    },
+    {
+      "text": "。お願いします。で、ま、そういう風な、",
+      "start_seconds": 586.92,
+      "end_seconds": 590.24,
+      "id": "O47DJaRJZDY-display-0186",
+      "segment_id": "O47DJaRJZDY-ja-0057"
+    },
+    {
+      "text": "あの、異なる分野知見を取り入れながら",
+      "start_seconds": 590.24,
+      "end_seconds": 594.0,
+      "id": "O47DJaRJZDY-display-0187",
+      "segment_id": "O47DJaRJZDY-ja-0058"
+    },
+    {
+      "text": "研究するっていう風な事柄で、あの、浩",
+      "start_seconds": 594.0,
+      "end_seconds": 597.279,
+      "id": "O47DJaRJZDY-display-0188",
+      "segment_id": "O47DJaRJZDY-ja-0058"
+    },
+    {
+      "text": "さんはキメラですねという風に、あの、",
+      "start_seconds": 597.279,
+      "end_seconds": 599.68,
+      "id": "O47DJaRJZDY-display-0189",
+      "segment_id": "O47DJaRJZDY-ja-0058"
+    },
+    {
+      "text": "指導の教授から言われたりですね。それ",
+      "start_seconds": 599.68,
+      "end_seconds": 602.24,
+      "id": "O47DJaRJZDY-display-0190",
+      "segment_id": "O47DJaRJZDY-ja-0058"
+    },
+    {
+      "text": "から、あの、今日ちょっと紹介できなかっ",
+      "start_seconds": 602.24,
+      "end_seconds": 604.6,
+      "id": "O47DJaRJZDY-display-0191",
+      "segment_id": "O47DJaRJZDY-ja-0059"
+    },
+    {
+      "text": "たんですけど、火先生っていう私が尊敬",
+      "start_seconds": 604.6,
+      "end_seconds": 607.0,
+      "id": "O47DJaRJZDY-display-0192",
+      "segment_id": "O47DJaRJZDY-ja-0059"
+    },
+    {
+      "text": "する先生もちょっとなくなられたんです",
+      "start_seconds": 607.0,
+      "end_seconds": 609.079,
+      "id": "O47DJaRJZDY-display-0193",
+      "segment_id": "O47DJaRJZDY-ja-0059"
+    },
+    {
+      "text": "けれども、あの、先生がいらっしゃって、",
+      "start_seconds": 609.079,
+      "end_seconds": 611.959,
+      "id": "O47DJaRJZDY-display-0194",
+      "segment_id": "O47DJaRJZDY-ja-0059"
+    },
+    {
+      "text": "で、剣な存在ですねという風に評価をいい",
+      "start_seconds": 611.959,
+      "end_seconds": 614.88,
+      "id": "O47DJaRJZDY-display-0195",
+      "segment_id": "O47DJaRJZDY-ja-0060"
+    },
+    {
+      "text": "たりしました。で、火先生の研究としては",
+      "start_seconds": 614.88,
+      "end_seconds": 618.0,
+      "id": "O47DJaRJZDY-display-0196",
+      "segment_id": "O47DJaRJZDY-ja-0060"
+    },
+    {
+      "text": "2歳から5歳度ごこ遊びで泥団号などを",
+      "start_seconds": 618.0,
+      "end_seconds": 622.2,
+      "id": "O47DJaRJZDY-display-0197",
+      "segment_id": "O47DJaRJZDY-ja-0060"
+    },
+    {
+      "text": "実際に子供が見てるまでバクって食べて",
+      "start_seconds": 622.2,
+      "end_seconds": 624.839,
+      "id": "O47DJaRJZDY-display-0198",
+      "segment_id": "O47DJaRJZDY-ja-0061"
+    },
+    {
+      "text": "子供がどうリアクションするかっていうの",
+      "start_seconds": 624.839,
+      "end_seconds": 626.68,
+      "id": "O47DJaRJZDY-display-0199",
+      "segment_id": "O47DJaRJZDY-ja-0061"
+    },
+    {
+      "text": "を100何人で子供で試したっていう先生",
+      "start_seconds": 626.68,
+      "end_seconds": 628.92,
+      "id": "O47DJaRJZDY-display-0200",
+      "segment_id": "O47DJaRJZDY-ja-0061"
+    },
+    {
+      "text": "なんです。できますか?僕はできません。",
+      "start_seconds": 628.92,
+      "end_seconds": 631.959,
+      "id": "O47DJaRJZDY-display-0201",
+      "segment_id": "O47DJaRJZDY-ja-0061"
+    },
+    {
+      "text": "で、これをあ、もうあかんか。あんまり",
+      "start_seconds": 631.959,
+      "end_seconds": 634.56,
+      "id": "O47DJaRJZDY-display-0202",
+      "segment_id": "O47DJaRJZDY-ja-0062"
+    },
+    {
+      "text": "喋ったらもう全然時間なく、ま、後でまた",
+      "start_seconds": 634.56,
+      "end_seconds": 637.2,
+      "id": "O47DJaRJZDY-display-0203",
+      "segment_id": "O47DJaRJZDY-ja-0062"
+    },
+    {
+      "text": "調べてください。はい。で、次お願いし",
+      "start_seconds": 637.2,
+      "end_seconds": 640.399,
+      "id": "O47DJaRJZDY-display-0204",
+      "segment_id": "O47DJaRJZDY-ja-0062"
+    },
+    {
+      "text": "ます。で、その当時は私はそれの重要性に",
+      "start_seconds": 640.399,
+      "end_seconds": 645.76,
+      "id": "O47DJaRJZDY-display-0205",
+      "segment_id": "O47DJaRJZDY-ja-0063"
+    },
+    {
+      "text": "ついては感じてなかったんですね。この",
+      "start_seconds": 645.76,
+      "end_seconds": 647.88,
+      "id": "O47DJaRJZDY-display-0206",
+      "segment_id": "O47DJaRJZDY-ja-0063"
+    },
+    {
+      "text": "ケウであったりとかキメラっていう風に",
+      "start_seconds": 647.88,
+      "end_seconds": 649.959,
+      "id": "O47DJaRJZDY-display-0207",
+      "segment_id": "O47DJaRJZDY-ja-0063"
+    },
+    {
+      "text": "言われてもそれは感じていなかったんです",
+      "start_seconds": 649.959,
+      "end_seconds": 651.959,
+      "id": "O47DJaRJZDY-display-0208",
+      "segment_id": "O47DJaRJZDY-ja-0063"
+    },
+    {
+      "text": "ね。はい。お願いします。で、ま、そう",
+      "start_seconds": 651.959,
+      "end_seconds": 655.68,
+      "id": "O47DJaRJZDY-display-0209",
+      "segment_id": "O47DJaRJZDY-ja-0064"
+    },
+    {
+      "text": "いう風なことで今現在ですね、あの子供の",
+      "start_seconds": 655.68,
+      "end_seconds": 658.32,
+      "id": "O47DJaRJZDY-display-0210",
+      "segment_id": "O47DJaRJZDY-ja-0064"
+    },
+    {
+      "text": "学び育ちセンターという風なことで4つの",
+      "start_seconds": 658.32,
+      "end_seconds": 660.8,
+      "id": "O47DJaRJZDY-display-0211",
+      "segment_id": "O47DJaRJZDY-ja-0064"
+    },
+    {
+      "text": "取り組みをし、次お願いします。で、その",
+      "start_seconds": 660.8,
+      "end_seconds": 664.12,
+      "id": "O47DJaRJZDY-display-0212",
+      "segment_id": "O47DJaRJZDY-ja-0065"
+    },
+    {
+      "text": "中の1つとして人間というの子育ての特徴",
+      "start_seconds": 664.12,
+      "end_seconds": 668.16,
+      "id": "O47DJaRJZDY-display-0213",
+      "segment_id": "O47DJaRJZDY-ja-0065"
+    },
+    {
+      "text": "という風なことを改めてあの捉え直すと",
+      "start_seconds": 668.16,
+      "end_seconds": 671.36,
+      "id": "O47DJaRJZDY-display-0214",
+      "segment_id": "O47DJaRJZDY-ja-0065"
+    },
+    {
+      "text": "いう風なことをやっていて、で、非常に",
+      "start_seconds": 671.36,
+      "end_seconds": 674.24,
+      "id": "O47DJaRJZDY-display-0215",
+      "segment_id": "O47DJaRJZDY-ja-0066"
+    },
+    {
+      "text": "未熟てのかかる子供を生みます人は。それ",
+      "start_seconds": 674.24,
+      "end_seconds": 677.76,
+      "id": "O47DJaRJZDY-display-0216",
+      "segment_id": "O47DJaRJZDY-ja-0066"
+    },
+    {
+      "text": "から子供が非常に長いです。で、さらに",
+      "start_seconds": 677.76,
+      "end_seconds": 681.44,
+      "id": "O47DJaRJZDY-display-0217",
+      "segment_id": "O47DJaRJZDY-ja-0066"
+    },
+    {
+      "text": "言うなら、ま、人間の出産感覚は短くて手",
+      "start_seconds": 681.44,
+      "end_seconds": 684.2,
+      "id": "O47DJaRJZDY-display-0218",
+      "segment_id": "O47DJaRJZDY-ja-0067"
+    },
+    {
+      "text": "のかかる子供を同時に複数育てています。",
+      "start_seconds": 684.2,
+      "end_seconds": 688.6,
+      "id": "O47DJaRJZDY-display-0219",
+      "segment_id": "O47DJaRJZDY-ja-0067"
+    },
+    {
+      "text": "で、ちなみにチンパンジーは6年から8年",
+      "start_seconds": 688.6,
+      "end_seconds": 691.76,
+      "id": "O47DJaRJZDY-display-0220",
+      "segment_id": "O47DJaRJZDY-ja-0068"
+    },
+    {
+      "text": "、人の場合は年後ができますよね。もう",
+      "start_seconds": 691.76,
+      "end_seconds": 694.6,
+      "id": "O47DJaRJZDY-display-0221",
+      "segment_id": "O47DJaRJZDY-ja-0068"
+    },
+    {
+      "text": "翌年子供を産むことができるということな",
+      "start_seconds": 694.6,
+      "end_seconds": 697.44,
+      "id": "O47DJaRJZDY-display-0222",
+      "segment_id": "O47DJaRJZDY-ja-0068"
+    },
+    {
+      "text": "ので、手のかかる子供を産んでるで出産",
+      "start_seconds": 697.44,
+      "end_seconds": 701.16,
+      "id": "O47DJaRJZDY-display-0223",
+      "segment_id": "O47DJaRJZDY-ja-0069"
+    },
+    {
+      "text": "価格も短いということです。次お願いし",
+      "start_seconds": 701.16,
+      "end_seconds": 703.48,
+      "id": "O47DJaRJZDY-display-0224",
+      "segment_id": "O47DJaRJZDY-ja-0069"
+    },
+    {
+      "text": "ます。つまり母親以外が子育てに参加する",
+      "start_seconds": 703.48,
+      "end_seconds": 709.399,
+      "id": "O47DJaRJZDY-display-0225",
+      "segment_id": "O47DJaRJZDY-ja-0069"
+    },
+    {
+      "text": "共同養育を獲得して人っていうのは",
+      "start_seconds": 709.399,
+      "end_seconds": 711.959,
+      "id": "O47DJaRJZDY-display-0226",
+      "segment_id": "O47DJaRJZDY-ja-0070"
+    },
+    {
+      "text": "そもそも進化して引きた生問ですよと。",
+      "start_seconds": 711.959,
+      "end_seconds": 714.88,
+      "id": "O47DJaRJZDY-display-0227",
+      "segment_id": "O47DJaRJZDY-ja-0070"
+    },
+    {
+      "text": "一方で今現者現在ですねの子育ては人間の",
+      "start_seconds": 714.88,
+      "end_seconds": 719.399,
+      "id": "O47DJaRJZDY-display-0228",
+      "segment_id": "O47DJaRJZDY-ja-0071"
+    },
+    {
+      "text": "本来の姿ではない。つまり、えっと、",
+      "start_seconds": 719.399,
+      "end_seconds": 722.839,
+      "id": "O47DJaRJZDY-display-0229",
+      "segment_id": "O47DJaRJZDY-ja-0071"
+    },
+    {
+      "text": "お父さんやお母さんだけが子育てをしてい",
+      "start_seconds": 722.839,
+      "end_seconds": 725.44,
+      "id": "O47DJaRJZDY-display-0230",
+      "segment_id": "O47DJaRJZDY-ja-0071"
+    },
+    {
+      "text": "るっていう風状態は、ま、あの、人の生物",
+      "start_seconds": 725.44,
+      "end_seconds": 729.959,
+      "id": "O47DJaRJZDY-display-0231",
+      "segment_id": "O47DJaRJZDY-ja-0072"
+    },
+    {
+      "text": "としての人としてはおかしい状態であると",
+      "start_seconds": 729.959,
+      "end_seconds": 732.399,
+      "id": "O47DJaRJZDY-display-0232",
+      "segment_id": "O47DJaRJZDY-ja-0072"
+    },
+    {
+      "text": "いうことなんですね。そして次お願いし",
+      "start_seconds": 732.399,
+      "end_seconds": 735.079,
+      "id": "O47DJaRJZDY-display-0233",
+      "segment_id": "O47DJaRJZDY-ja-0072"
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 735.079,
+      "end_seconds": 737.56,
+      "id": "O47DJaRJZDY-display-0234",
+      "segment_id": "O47DJaRJZDY-ja-0073"
+    },
+    {
+      "text": "今現在構想している、え、事柄としては",
+      "start_seconds": 737.56,
+      "end_seconds": 740.48,
+      "id": "O47DJaRJZDY-display-0235",
+      "segment_id": "O47DJaRJZDY-ja-0074"
+    },
+    {
+      "text": "ですね、え、少子家による子育て世代の",
+      "start_seconds": 740.48,
+      "end_seconds": 743.839,
+      "id": "O47DJaRJZDY-display-0236",
+      "segment_id": "O47DJaRJZDY-ja-0074"
+    },
+    {
+      "text": "マイノリティ化、要は地域にですね、あの",
+      "start_seconds": 743.839,
+      "end_seconds": 746.92,
+      "id": "O47DJaRJZDY-display-0237",
+      "segment_id": "O47DJaRJZDY-ja-0074"
+    },
+    {
+      "text": "、子育て世代が非常に少なくなってきて、",
+      "start_seconds": 746.92,
+      "end_seconds": 750.199,
+      "id": "O47DJaRJZDY-display-0238",
+      "segment_id": "O47DJaRJZDY-ja-0075"
+    },
+    {
+      "text": "昔は自然に子供を見たり関わったりする",
+      "start_seconds": 750.199,
+      "end_seconds": 753.399,
+      "id": "O47DJaRJZDY-display-0239",
+      "segment_id": "O47DJaRJZDY-ja-0075"
+    },
+    {
+      "text": "ことができてたんですけれども、そういう",
+      "start_seconds": 753.399,
+      "end_seconds": 755.72,
+      "id": "O47DJaRJZDY-display-0240",
+      "segment_id": "O47DJaRJZDY-ja-0075"
+    },
+    {
+      "text": "風な状態が非常に少なくなってきている。",
+      "start_seconds": 755.72,
+      "end_seconds": 759.24,
+      "id": "O47DJaRJZDY-display-0241",
+      "segment_id": "O47DJaRJZDY-ja-0076"
+    },
+    {
+      "text": "で、さらには、え、共同養育によって",
+      "start_seconds": 759.24,
+      "end_seconds": 761.88,
+      "id": "O47DJaRJZDY-display-0242",
+      "segment_id": "O47DJaRJZDY-ja-0077"
+    },
+    {
+      "text": "獲得読されるはずのお野せをどのように",
+      "start_seconds": 761.88,
+      "end_seconds": 764.079,
+      "id": "O47DJaRJZDY-display-0243",
+      "segment_id": "O47DJaRJZDY-ja-0077"
+    },
+    {
+      "text": "育むか。今までは自然と子供と関わり野生",
+      "start_seconds": 764.079,
+      "end_seconds": 768.72,
+      "id": "O47DJaRJZDY-display-0244",
+      "segment_id": "O47DJaRJZDY-ja-0077"
+    },
+    {
+      "text": "っていう風なものを獲得してきたんだ",
+      "start_seconds": 768.72,
+      "end_seconds": 771.16,
+      "id": "O47DJaRJZDY-display-0245",
+      "segment_id": "O47DJaRJZDY-ja-0077"
+    },
+    {
+      "text": "けれども、それができなくなってきている",
+      "start_seconds": 771.16,
+      "end_seconds": 773.76,
+      "id": "O47DJaRJZDY-display-0246",
+      "segment_id": "O47DJaRJZDY-ja-0078"
+    },
+    {
+      "text": "という風な厳重があると。で、えっと、",
+      "start_seconds": 773.76,
+      "end_seconds": 777.0,
+      "id": "O47DJaRJZDY-display-0247",
+      "segment_id": "O47DJaRJZDY-ja-0078"
+    },
+    {
+      "text": "共同養育の新しい仕組みとしての、え、",
+      "start_seconds": 777.0,
+      "end_seconds": 780.399,
+      "id": "O47DJaRJZDY-display-0248",
+      "segment_id": "O47DJaRJZDY-ja-0078"
+    },
+    {
+      "text": "修学前施設の新たな役割、ま、地域に子供",
+      "start_seconds": 780.399,
+      "end_seconds": 784.72,
+      "id": "O47DJaRJZDY-display-0249",
+      "segment_id": "O47DJaRJZDY-ja-0079"
+    },
+    {
+      "text": "が普通にいてで、こう関わるような機会が",
+      "start_seconds": 784.72,
+      "end_seconds": 787.76,
+      "id": "O47DJaRJZDY-display-0250",
+      "segment_id": "O47DJaRJZDY-ja-0079"
+    },
+    {
+      "text": "なくなってきてるのであれば修学施設",
+      "start_seconds": 787.76,
+      "end_seconds": 791.04,
+      "id": "O47DJaRJZDY-display-0251",
+      "segment_id": "O47DJaRJZDY-ja-0079"
+    },
+    {
+      "text": "つまり幼稚園とか保育所とか子供園が",
+      "start_seconds": 791.04,
+      "end_seconds": 793.959,
+      "id": "O47DJaRJZDY-display-0252",
+      "segment_id": "O47DJaRJZDY-ja-0080"
+    },
+    {
+      "text": "何かしら新しい役割を担うことが必要なん",
+      "start_seconds": 793.959,
+      "end_seconds": 797.16,
+      "id": "O47DJaRJZDY-display-0253",
+      "segment_id": "O47DJaRJZDY-ja-0080"
+    },
+    {
+      "text": "じゃないかなと。で、さらにはそれが少子",
+      "start_seconds": 797.16,
+      "end_seconds": 800.839,
+      "id": "O47DJaRJZDY-display-0254",
+      "segment_id": "O47DJaRJZDY-ja-0080"
+    },
+    {
+      "text": "家の対策になるんじゃないかなという風な",
+      "start_seconds": 800.839,
+      "end_seconds": 803.399,
+      "id": "O47DJaRJZDY-display-0255",
+      "segment_id": "O47DJaRJZDY-ja-0081"
+    },
+    {
+      "text": "ことで、今現在研究をしているということ",
+      "start_seconds": 803.399,
+      "end_seconds": 805.56,
+      "id": "O47DJaRJZDY-display-0256",
+      "segment_id": "O47DJaRJZDY-ja-0081"
+    },
+    {
+      "text": "です。はい、次お願いします。で、これ何",
+      "start_seconds": 805.56,
+      "end_seconds": 809.04,
+      "id": "O47DJaRJZDY-display-0257",
+      "segment_id": "O47DJaRJZDY-ja-0081"
+    },
+    {
+      "text": "に見えますか?ということで冗談ですね、",
+      "start_seconds": 809.04,
+      "end_seconds": 812.6,
+      "id": "O47DJaRJZDY-display-0258",
+      "segment_id": "O47DJaRJZDY-ja-0081"
+    },
+    {
+      "text": "これ。おっさん、おっさん。おっさん。",
+      "start_seconds": 812.6,
+      "end_seconds": 815.04,
+      "id": "O47DJaRJZDY-display-0259",
+      "segment_id": "O47DJaRJZDY-ja-0082"
+    },
+    {
+      "text": "おっさん。おっさん。おっさんですよね。",
+      "start_seconds": 815.04,
+      "end_seconds": 817.24,
+      "id": "O47DJaRJZDY-display-0260",
+      "segment_id": "O47DJaRJZDY-ja-0083"
+    },
+    {
+      "text": "分かりますか?次、下段。女の人ですね。",
+      "start_seconds": 817.24,
+      "end_seconds": 822.199,
+      "id": "O47DJaRJZDY-display-0261",
+      "segment_id": "O47DJaRJZDY-ja-0084"
+    },
+    {
+      "text": "女の人。女の人。女の人ですよね。もう",
+      "start_seconds": 822.199,
+      "end_seconds": 825.56,
+      "id": "O47DJaRJZDY-display-0262",
+      "segment_id": "O47DJaRJZDY-ja-0085"
+    },
+    {
+      "text": "分かっていただいたと思いますけれども、",
+      "start_seconds": 825.56,
+      "end_seconds": 828.079,
+      "id": "O47DJaRJZDY-display-0263",
+      "segment_id": "O47DJaRJZDY-ja-0085"
+    },
+    {
+      "text": "これとこれは同じ絵です。",
+      "start_seconds": 828.079,
+      "end_seconds": 833.16,
+      "id": "O47DJaRJZDY-display-0264",
+      "segment_id": "O47DJaRJZDY-ja-0085"
+    },
+    {
+      "text": "そうですよね。でもその分野でおっさんだ",
+      "start_seconds": 833.16,
+      "end_seconds": 837.12,
+      "id": "O47DJaRJZDY-display-0265",
+      "segment_id": "O47DJaRJZDY-ja-0086"
+    },
+    {
+      "text": "と思ったらもうこれはおっさんに見えて",
+      "start_seconds": 837.12,
+      "end_seconds": 839.399,
+      "id": "O47DJaRJZDY-display-0266",
+      "segment_id": "O47DJaRJZDY-ja-0086"
+    },
+    {
+      "text": "しまうんですね。でも異なる視点を持って",
+      "start_seconds": 839.399,
+      "end_seconds": 843.6,
+      "id": "O47DJaRJZDY-display-0267",
+      "segment_id": "O47DJaRJZDY-ja-0086"
+    },
+    {
+      "text": "いたらこのおっさんもこのこういう風な見",
+      "start_seconds": 843.6,
+      "end_seconds": 848.12,
+      "id": "O47DJaRJZDY-display-0268",
+      "segment_id": "O47DJaRJZDY-ja-0087"
+    },
+    {
+      "text": "方ができる",
+      "start_seconds": 848.12,
+      "end_seconds": 850.12,
+      "id": "O47DJaRJZDY-display-0269",
+      "segment_id": "O47DJaRJZDY-ja-0087"
+    },
+    {
+      "text": "っていうことなんですね。だからその点",
+      "start_seconds": 850.12,
+      "end_seconds": 852.44,
+      "id": "O47DJaRJZDY-display-0270",
+      "segment_id": "O47DJaRJZDY-ja-0087"
+    },
+    {
+      "text": "非常に大事かなと思います。次お願いし",
+      "start_seconds": 852.44,
+      "end_seconds": 855.079,
+      "id": "O47DJaRJZDY-display-0271",
+      "segment_id": "O47DJaRJZDY-ja-0087"
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 855.079,
+      "end_seconds": 857.399,
+      "id": "O47DJaRJZDY-display-0272",
+      "segment_id": "O47DJaRJZDY-ja-0088"
+    },
+    {
+      "text": "で、人生のキ露では気づかないけれども、",
+      "start_seconds": 857.399,
+      "end_seconds": 859.92,
+      "id": "O47DJaRJZDY-display-0273",
+      "segment_id": "O47DJaRJZDY-ja-0089"
+    },
+    {
+      "text": "今思いすと今回こういうお題を与えて",
+      "start_seconds": 859.92,
+      "end_seconds": 862.519,
+      "id": "O47DJaRJZDY-display-0274",
+      "segment_id": "O47DJaRJZDY-ja-0089"
+    },
+    {
+      "text": "いただいて、で、あの、改めて自分の人生",
+      "start_seconds": 862.519,
+      "end_seconds": 865.56,
+      "id": "O47DJaRJZDY-display-0275",
+      "segment_id": "O47DJaRJZDY-ja-0089"
+    },
+    {
+      "text": "を考えたら、ま、そういう風な事柄って",
+      "start_seconds": 865.56,
+      "end_seconds": 867.759,
+      "id": "O47DJaRJZDY-display-0276",
+      "segment_id": "O47DJaRJZDY-ja-0089"
+    },
+    {
+      "text": "いうのは気づきにくい。その時は聞きつき",
+      "start_seconds": 867.759,
+      "end_seconds": 869.88,
+      "id": "O47DJaRJZDY-display-0277",
+      "segment_id": "O47DJaRJZDY-ja-0090"
+    },
+    {
+      "text": "にくいけれども思い返すとですね、幼児",
+      "start_seconds": 869.88,
+      "end_seconds": 873.56,
+      "id": "O47DJaRJZDY-display-0278",
+      "segment_id": "O47DJaRJZDY-ja-0090"
+    },
+    {
+      "text": "教育の研究者として工学部での学びは直接",
+      "start_seconds": 873.56,
+      "end_seconds": 876.92,
+      "id": "O47DJaRJZDY-display-0279",
+      "segment_id": "O47DJaRJZDY-ja-0090"
+    },
+    {
+      "text": "的には役に立ちませんでした。ま、唯一、",
+      "start_seconds": 876.92,
+      "end_seconds": 879.12,
+      "id": "O47DJaRJZDY-display-0280",
+      "segment_id": "O47DJaRJZDY-ja-0090"
+    },
+    {
+      "text": "ま、4時教育というか延長にな、あ、副園",
+      "start_seconds": 879.12,
+      "end_seconds": 881.24,
+      "id": "O47DJaRJZDY-display-0281",
+      "segment_id": "O47DJaRJZDY-ja-0091"
+    },
+    {
+      "text": "延長になった時に役立ったのがO157が",
+      "start_seconds": 881.24,
+      "end_seconds": 883.6,
+      "id": "O47DJaRJZDY-display-0282",
+      "segment_id": "O47DJaRJZDY-ja-0091"
+    },
+    {
+      "text": "ちょうど流行ってですね。あの工学部の時",
+      "start_seconds": 883.6,
+      "end_seconds": 886.759,
+      "id": "O47DJaRJZDY-display-0283",
+      "segment_id": "O47DJaRJZDY-ja-0091"
+    },
+    {
+      "text": "山ほどあの大腸金扱ってたのでどういう風",
+      "start_seconds": 886.759,
+      "end_seconds": 889.36,
+      "id": "O47DJaRJZDY-display-0284",
+      "segment_id": "O47DJaRJZDY-ja-0091"
+    },
+    {
+      "text": "に消毒するかっていうのは役立ちました",
+      "start_seconds": 889.36,
+      "end_seconds": 892.16,
+      "id": "O47DJaRJZDY-display-0285",
+      "segment_id": "O47DJaRJZDY-ja-0092"
+    },
+    {
+      "text": "けどそれぐらいであの異なる経験をした",
+      "start_seconds": 892.16,
+      "end_seconds": 896.279,
+      "id": "O47DJaRJZDY-display-0286",
+      "segment_id": "O47DJaRJZDY-ja-0092"
+    },
+    {
+      "text": "からこそ新しい発想が生まれるのかなと",
+      "start_seconds": 896.279,
+      "end_seconds": 899.6,
+      "id": "O47DJaRJZDY-display-0287",
+      "segment_id": "O47DJaRJZDY-ja-0092"
+    },
+    {
+      "text": "いう風に思っています。さっきのおっさん",
+      "start_seconds": 899.6,
+      "end_seconds": 901.68,
+      "id": "O47DJaRJZDY-display-0288",
+      "segment_id": "O47DJaRJZDY-ja-0093"
+    },
+    {
+      "text": "と女の人みたいにね。で、これは大学教員",
+      "start_seconds": 901.68,
+      "end_seconds": 907.32,
+      "id": "O47DJaRJZDY-display-0289",
+      "segment_id": "O47DJaRJZDY-ja-0093"
+    },
+    {
+      "text": "だけではなくて皆さんのように様々な触種",
+      "start_seconds": 907.32,
+      "end_seconds": 911.36,
+      "id": "O47DJaRJZDY-display-0290",
+      "segment_id": "O47DJaRJZDY-ja-0093"
+    },
+    {
+      "text": "を目指していると思うので、あらゆる職業",
+      "start_seconds": 911.36,
+      "end_seconds": 913.72,
+      "id": "O47DJaRJZDY-display-0291",
+      "segment_id": "O47DJaRJZDY-ja-0094"
+    },
+    {
+      "text": "に植えることかなという風に思っています",
+      "start_seconds": 913.72,
+      "end_seconds": 915.88,
+      "id": "O47DJaRJZDY-display-0292",
+      "segment_id": "O47DJaRJZDY-ja-0094"
+    },
+    {
+      "text": "。",
+      "start_seconds": 915.88,
+      "end_seconds": 917.68,
+      "id": "O47DJaRJZDY-display-0293",
+      "segment_id": "O47DJaRJZDY-ja-0094"
+    },
+    {
+      "text": "で、かつ人生において無駄な経験は一切",
+      "start_seconds": 917.68,
+      "end_seconds": 921.92,
+      "id": "O47DJaRJZDY-display-0294",
+      "segment_id": "O47DJaRJZDY-ja-0095"
+    },
+    {
+      "text": "ありません。で、一方で生成AIが今非常",
+      "start_seconds": 921.92,
+      "end_seconds": 926.959,
+      "id": "O47DJaRJZDY-display-0295",
+      "segment_id": "O47DJaRJZDY-ja-0095"
+    },
+    {
+      "text": "に進んでいますよね。はい。次お願いし",
+      "start_seconds": 926.959,
+      "end_seconds": 930.279,
+      "id": "O47DJaRJZDY-display-0296",
+      "segment_id": "O47DJaRJZDY-ja-0096"
+    },
+    {
+      "text": "ます。で、ちなみにこれ、あの、私、あの",
+      "start_seconds": 930.279,
+      "end_seconds": 934.12,
+      "id": "O47DJaRJZDY-display-0297",
+      "segment_id": "O47DJaRJZDY-ja-0096"
+    },
+    {
+      "text": "、副学庁なんで、あの、挨拶文をですね、",
+      "start_seconds": 934.12,
+      "end_seconds": 938.88,
+      "id": "O47DJaRJZDY-display-0298",
+      "segment_id": "O47DJaRJZDY-ja-0096"
+    },
+    {
+      "text": "あの、学生生活が、これ2026年のあの",
+      "start_seconds": 938.88,
+      "end_seconds": 941.92,
+      "id": "O47DJaRJZDY-display-0299",
+      "segment_id": "O47DJaRJZDY-ja-0097"
+    },
+    {
+      "text": "、現行依があってですね、今文章を考えて",
+      "start_seconds": 941.92,
+      "end_seconds": 944.839,
+      "id": "O47DJaRJZDY-display-0300",
+      "segment_id": "O47DJaRJZDY-ja-0097"
+    },
+    {
+      "text": "、例えばここの文章をですね、次お願いし",
+      "start_seconds": 944.839,
+      "end_seconds": 947.279,
+      "id": "O47DJaRJZDY-display-0301",
+      "segment_id": "O47DJaRJZDY-ja-0097"
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 947.279,
+      "end_seconds": 949.319,
+      "id": "O47DJaRJZDY-display-0302",
+      "segment_id": "O47DJaRJZDY-ja-0097"
+    },
+    {
+      "text": "え、原文ですけれども、こうこれがあって",
+      "start_seconds": 949.319,
+      "end_seconds": 953.04,
+      "id": "O47DJaRJZDY-display-0303",
+      "segment_id": "O47DJaRJZDY-ja-0098"
+    },
+    {
+      "text": "、で、ま、",
+      "start_seconds": 953.04,
+      "end_seconds": 955.959,
+      "id": "O47DJaRJZDY-display-0304",
+      "segment_id": "O47DJaRJZDY-ja-0098"
+    },
+    {
+      "text": "大学1年生により理解してように、ま、",
+      "start_seconds": 955.959,
+      "end_seconds": 959.199,
+      "id": "O47DJaRJZDY-display-0305",
+      "segment_id": "O47DJaRJZDY-ja-0098"
+    },
+    {
+      "text": "あの、チャットGPTにですね、あの、",
+      "start_seconds": 959.199,
+      "end_seconds": 961.839,
+      "id": "O47DJaRJZDY-display-0306",
+      "segment_id": "O47DJaRJZDY-ja-0099"
+    },
+    {
+      "text": "転索してもらったんですけど、で、そう",
+      "start_seconds": 961.839,
+      "end_seconds": 964.639,
+      "id": "O47DJaRJZDY-display-0307",
+      "segment_id": "O47DJaRJZDY-ja-0099"
+    },
+    {
+      "text": "するとこう転索されたんですけど、特に",
+      "start_seconds": 964.639,
+      "end_seconds": 967.68,
+      "id": "O47DJaRJZDY-display-0308",
+      "segment_id": "O47DJaRJZDY-ja-0099"
+    },
+    {
+      "text": "ですね、ここ教育保育がなければ現在の",
+      "start_seconds": 967.68,
+      "end_seconds": 970.92,
+      "id": "O47DJaRJZDY-display-0309",
+      "segment_id": "O47DJaRJZDY-ja-0099"
+    },
+    {
+      "text": "人類の進化や文化がないと言っても過言で",
+      "start_seconds": 970.92,
+      "end_seconds": 973.839,
+      "id": "O47DJaRJZDY-display-0310",
+      "segment_id": "O47DJaRJZDY-ja-0100"
+    },
+    {
+      "text": "はありませんっていう風なところをですね",
+      "start_seconds": 973.839,
+      "end_seconds": 976.44,
+      "id": "O47DJaRJZDY-display-0311",
+      "segment_id": "O47DJaRJZDY-ja-0100"
+    },
+    {
+      "text": "、え、教に営みがなければ現在の人類の",
+      "start_seconds": 976.44,
+      "end_seconds": 981.24,
+      "id": "O47DJaRJZDY-display-0312",
+      "segment_id": "O47DJaRJZDY-ja-0100"
+    },
+    {
+      "text": "発展や文化の継承はありえないっていう風",
+      "start_seconds": 981.24,
+      "end_seconds": 983.959,
+      "id": "O47DJaRJZDY-display-0313",
+      "segment_id": "O47DJaRJZDY-ja-0101"
+    },
+    {
+      "text": "に書き換えてくださったんですね、",
+      "start_seconds": 983.959,
+      "end_seconds": 985.839,
+      "id": "O47DJaRJZDY-display-0314",
+      "segment_id": "O47DJaRJZDY-ja-0101"
+    },
+    {
+      "text": "チャットさんは。で、えっと、",
+      "start_seconds": 985.839,
+      "end_seconds": 990.12,
+      "id": "O47DJaRJZDY-display-0315",
+      "segment_id": "O47DJaRJZDY-ja-0101"
+    },
+    {
+      "text": "ここの方がやはりあの平たい文章にはなっ",
+      "start_seconds": 990.12,
+      "end_seconds": 993.199,
+      "id": "O47DJaRJZDY-display-0316",
+      "segment_id": "O47DJaRJZDY-ja-0101"
+    },
+    {
+      "text": "てるんですよね。でも私の",
+      "start_seconds": 993.199,
+      "end_seconds": 995.399,
+      "id": "O47DJaRJZDY-display-0317",
+      "segment_id": "O47DJaRJZDY-ja-0102"
+    },
+    {
+      "text": "バックグラウンドで人っていう教育保育",
+      "start_seconds": 995.399,
+      "end_seconds": 999.16,
+      "id": "O47DJaRJZDY-display-0318",
+      "segment_id": "O47DJaRJZDY-ja-0102"
+    },
+    {
+      "text": "っていう風な営波みっていう風なものを",
+      "start_seconds": 999.16,
+      "end_seconds": 1002.44,
+      "id": "O47DJaRJZDY-display-0319",
+      "segment_id": "O47DJaRJZDY-ja-0102"
+    },
+    {
+      "text": "もっと進化的にも的に見たかったので",
+      "start_seconds": 1002.44,
+      "end_seconds": 1005.68,
+      "id": "O47DJaRJZDY-display-0320",
+      "segment_id": "O47DJaRJZDY-ja-0103"
+    },
+    {
+      "text": "あえてここに進化人類の進化実際問題そう",
+      "start_seconds": 1005.68,
+      "end_seconds": 1009.16,
+      "id": "O47DJaRJZDY-display-0321",
+      "segment_id": "O47DJaRJZDY-ja-0103"
+    },
+    {
+      "text": "なんです。人類の進化は教育保育の営みが",
+      "start_seconds": 1009.16,
+      "end_seconds": 1012.24,
+      "id": "O47DJaRJZDY-display-0322",
+      "segment_id": "O47DJaRJZDY-ja-0103"
+    },
+    {
+      "text": "なかったらないんですよね。ですのであの",
+      "start_seconds": 1012.24,
+      "end_seconds": 1016.16,
+      "id": "O47DJaRJZDY-display-0323",
+      "segment_id": "O47DJaRJZDY-ja-0104"
+    },
+    {
+      "text": "ここはあえてそういう風にしたけれども",
+      "start_seconds": 1016.16,
+      "end_seconds": 1018.16,
+      "id": "O47DJaRJZDY-display-0324",
+      "segment_id": "O47DJaRJZDY-ja-0104"
+    },
+    {
+      "text": "人類の発展や文化の継承はないっていう風",
+      "start_seconds": 1018.16,
+      "end_seconds": 1020.92,
+      "id": "O47DJaRJZDY-display-0325",
+      "segment_id": "O47DJaRJZDY-ja-0104"
+    },
+    {
+      "text": "になったんですよね。だからこれはやはり",
+      "start_seconds": 1020.92,
+      "end_seconds": 1024.28,
+      "id": "O47DJaRJZDY-display-0326",
+      "segment_id": "O47DJaRJZDY-ja-0105"
+    },
+    {
+      "text": "いろんな分野を経験するからこそ風な視点",
+      "start_seconds": 1024.28,
+      "end_seconds": 1028.28,
+      "id": "O47DJaRJZDY-display-0327",
+      "segment_id": "O47DJaRJZDY-ja-0105"
+    },
+    {
+      "text": "につがるしでちゃあのAIなんかではより",
+      "start_seconds": 1028.28,
+      "end_seconds": 1032.12,
+      "id": "O47DJaRJZDY-display-0328",
+      "segment_id": "O47DJaRJZDY-ja-0105"
+    },
+    {
+      "text": "平たい文章で理解しやすくはなるかもしれ",
+      "start_seconds": 1032.12,
+      "end_seconds": 1034.959,
+      "id": "O47DJaRJZDY-display-0329",
+      "segment_id": "O47DJaRJZDY-ja-0106"
+    },
+    {
+      "text": "ないけれどもそういう異なる視点っていう",
+      "start_seconds": 1034.959,
+      "end_seconds": 1037.72,
+      "id": "O47DJaRJZDY-display-0330",
+      "segment_id": "O47DJaRJZDY-ja-0106"
+    },
+    {
+      "text": "のが結び継続きにくいあのディープ",
+      "start_seconds": 1037.72,
+      "end_seconds": 1039.959,
+      "id": "O47DJaRJZDY-display-0331",
+      "segment_id": "O47DJaRJZDY-ja-0106"
+    },
+    {
+      "text": "ラーニングに結びつきにくいのかなという",
+      "start_seconds": 1039.959,
+      "end_seconds": 1041.88,
+      "id": "O47DJaRJZDY-display-0332",
+      "segment_id": "O47DJaRJZDY-ja-0106"
+    },
+    {
+      "text": "風に思っています。はい、次お願いします",
+      "start_seconds": 1041.88,
+      "end_seconds": 1044.079,
+      "id": "O47DJaRJZDY-display-0333",
+      "segment_id": "O47DJaRJZDY-ja-0106"
+    },
+    {
+      "text": "。",
+      "start_seconds": 1044.079,
+      "end_seconds": 1045.679,
+      "id": "O47DJaRJZDY-display-0334",
+      "segment_id": "O47DJaRJZDY-ja-0107"
+    },
+    {
+      "text": "で、えっと、皆さんに期待することとして",
+      "start_seconds": 1045.679,
+      "end_seconds": 1048.559,
+      "id": "O47DJaRJZDY-display-0335",
+      "segment_id": "O47DJaRJZDY-ja-0108"
+    },
+    {
+      "text": "ですね、生成が生活にどんどん浸透もっと",
+      "start_seconds": 1048.559,
+      "end_seconds": 1051.24,
+      "id": "O47DJaRJZDY-display-0336",
+      "segment_id": "O47DJaRJZDY-ja-0108"
+    },
+    {
+      "text": "してくると思います。",
+      "start_seconds": 1051.24,
+      "end_seconds": 1053.0,
+      "id": "O47DJaRJZDY-display-0337",
+      "segment_id": "O47DJaRJZDY-ja-0108"
+    },
+    {
+      "text": "で、水平型な学びをして欲しいなと。様々",
+      "start_seconds": 1053.0,
+      "end_seconds": 1056.28,
+      "id": "O47DJaRJZDY-display-0338",
+      "segment_id": "O47DJaRJZDY-ja-0109"
+    },
+    {
+      "text": "な分野学びを垂直のですね、深く極めるの",
+      "start_seconds": 1056.28,
+      "end_seconds": 1059.96,
+      "id": "O47DJaRJZDY-display-0339",
+      "segment_id": "O47DJaRJZDY-ja-0109"
+    },
+    {
+      "text": "ではなくて広く学んで欲しいなという風に",
+      "start_seconds": 1059.96,
+      "end_seconds": 1062.72,
+      "id": "O47DJaRJZDY-display-0340",
+      "segment_id": "O47DJaRJZDY-ja-0109"
+    },
+    {
+      "text": "思っています。で、様々な数事柄を",
+      "start_seconds": 1062.72,
+      "end_seconds": 1065.84,
+      "id": "O47DJaRJZDY-display-0341",
+      "segment_id": "O47DJaRJZDY-ja-0110"
+    },
+    {
+      "text": "受け入れるという風な需要性をも受けて",
+      "start_seconds": 1065.84,
+      "end_seconds": 1069.0,
+      "id": "O47DJaRJZDY-display-0342",
+      "segment_id": "O47DJaRJZDY-ja-0110"
+    },
+    {
+      "text": "いただきたいなと思います。で、興味を",
+      "start_seconds": 1069.0,
+      "end_seconds": 1071.48,
+      "id": "O47DJaRJZDY-display-0343",
+      "segment_id": "O47DJaRJZDY-ja-0110"
+    },
+    {
+      "text": "持ったことに挑戦し、そこで得られたこと",
+      "start_seconds": 1071.48,
+      "end_seconds": 1073.679,
+      "id": "O47DJaRJZDY-display-0344",
+      "segment_id": "O47DJaRJZDY-ja-0110"
+    },
+    {
+      "text": "こそが皆さんの武器になります。で、その",
+      "start_seconds": 1073.679,
+      "end_seconds": 1077.039,
+      "id": "O47DJaRJZDY-display-0345",
+      "segment_id": "O47DJaRJZDY-ja-0111"
+    },
+    {
+      "text": "価値は後に分かりますと。で、自分さらに",
+      "start_seconds": 1077.039,
+      "end_seconds": 1079.799,
+      "id": "O47DJaRJZDY-display-0346",
+      "segment_id": "O47DJaRJZDY-ja-0111"
+    },
+    {
+      "text": "は人間だけが有するものを考えてください",
+      "start_seconds": 1079.799,
+      "end_seconds": 1082.32,
+      "id": "O47DJaRJZDY-display-0347",
+      "segment_id": "O47DJaRJZDY-ja-0111"
+    },
+    {
+      "text": "ということで、これあのスターウォーズ",
+      "start_seconds": 1082.32,
+      "end_seconds": 1083.919,
+      "id": "O47DJaRJZDY-display-0348",
+      "segment_id": "O47DJaRJZDY-ja-0111"
+    },
+    {
+      "text": "ですけれどもの酒場の様子ですけれども、",
+      "start_seconds": 1083.919,
+      "end_seconds": 1086.88,
+      "id": "O47DJaRJZDY-display-0349",
+      "segment_id": "O47DJaRJZDY-ja-0112"
+    },
+    {
+      "text": "いろんな人種がいい、ロボットがいい、人",
+      "start_seconds": 1086.88,
+      "end_seconds": 1089.12,
+      "id": "O47DJaRJZDY-display-0350",
+      "segment_id": "O47DJaRJZDY-ja-0112"
+    },
+    {
+      "text": "がいてる。しかしロボットもAIも対当し",
+      "start_seconds": 1089.12,
+      "end_seconds": 1092.679,
+      "id": "O47DJaRJZDY-display-0351",
+      "segment_id": "O47DJaRJZDY-ja-0112"
+    },
+    {
+      "text": "てくるけれども、人というものがどんな",
+      "start_seconds": 1092.679,
+      "end_seconds": 1095.159,
+      "id": "O47DJaRJZDY-display-0352",
+      "segment_id": "O47DJaRJZDY-ja-0112"
+    },
+    {
+      "text": "存在なのか、あるいは自分の武器が何なの",
+      "start_seconds": 1095.159,
+      "end_seconds": 1097.6,
+      "id": "O47DJaRJZDY-display-0353",
+      "segment_id": "O47DJaRJZDY-ja-0113"
+    },
+    {
+      "text": "かっていうのをしっかり考えていただき",
+      "start_seconds": 1097.6,
+      "end_seconds": 1099.2,
+      "id": "O47DJaRJZDY-display-0354",
+      "segment_id": "O47DJaRJZDY-ja-0113"
+    },
+    {
+      "text": "たいなという風に思います。ご成聴",
+      "start_seconds": 1099.2,
+      "end_seconds": 1101.12,
+      "id": "O47DJaRJZDY-display-0355",
+      "segment_id": "O47DJaRJZDY-ja-0113"
+    },
+    {
+      "text": "ありがとうございました。",
+      "start_seconds": 1101.12,
+      "end_seconds": 1105,
+      "id": "O47DJaRJZDY-display-0356",
+      "segment_id": "O47DJaRJZDY-ja-0113"
+    }
+  ]
+}

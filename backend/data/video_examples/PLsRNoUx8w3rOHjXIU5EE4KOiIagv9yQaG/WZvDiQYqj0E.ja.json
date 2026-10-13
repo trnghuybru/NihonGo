@@ -1,0 +1,3382 @@
+{
+  "schema_version": 1,
+  "video": {
+    "youtube_id": "WZvDiQYqj0E",
+    "title": "Keep Going, and Your World Expands | ATSUKI | TEDxNagoyaU",
+    "channel": "TEDx Talks",
+    "duration_seconds": 885
+  },
+  "caption_track": {
+    "language": "ja",
+    "kind": "asr",
+    "source": "youtube_automatic"
+  },
+  "source_playlist": "https://www.youtube.com/playlist?list=PLsRNoUx8w3rOHjXIU5EE4KOiIagv9yQaG",
+  "fetched_at": "2026-10-13T13:24:21.077138+00:00",
+  "segment_count": 113,
+  "segments": [
+    {
+      "text": "[音楽]",
+      "start_seconds": 7.86,
+      "end_seconds": 9.88,
+      "id": "WZvDiQYqj0E-ja-0001",
+      "sequence": 1
+    },
+    {
+      "text": "今皆さんは熱中するほど好きなことはありますか?",
+      "start_seconds": 13.0,
+      "end_seconds": 18.64,
+      "id": "WZvDiQYqj0E-ja-0002",
+      "sequence": 2
+    },
+    {
+      "text": "でもそれを途中で諦めたりしていませんか?失敗して落ち込んだり、お金や時間が足りなかっあり",
+      "start_seconds": 18.64,
+      "end_seconds": 30.359,
+      "id": "WZvDiQYqj0E-ja-0003",
+      "sequence": 3
+    },
+    {
+      "text": "続けたかったのにやめてしまったこと誰にでも1つや2つあると思います。",
+      "start_seconds": 30.359,
+      "end_seconds": 38.84,
+      "id": "WZvDiQYqj0E-ja-0004",
+      "sequence": 4
+    },
+    {
+      "text": "僕は好きな音楽を続けてきたことで人生が大きく変わりました。",
+      "start_seconds": 38.84,
+      "end_seconds": 46.6,
+      "id": "WZvDiQYqj0E-ja-0005",
+      "sequence": 5
+    },
+    {
+      "text": "国籍も職業も年齢も違う人たちと出会い、様々な経験をし、自分では想像もしてい",
+      "start_seconds": 46.6,
+      "end_seconds": 56.16,
+      "id": "WZvDiQYqj0E-ja-0006",
+      "sequence": 6
+    },
+    {
+      "text": "なかった景色を見ることができました。",
+      "start_seconds": 56.16,
+      "end_seconds": 60.879,
+      "id": "WZvDiQYqj0E-ja-0007",
+      "sequence": 7
+    },
+    {
+      "text": "今日は好きなことを続けることで何が起きたのか、僕自身の体験をお話ししたいと思います。",
+      "start_seconds": 60.879,
+      "end_seconds": 71.28,
+      "id": "WZvDiQYqj0E-ja-0008",
+      "sequence": 8
+    },
+    {
+      "text": "皆さん、こんにちは。バイリニストのあ木です。",
+      "start_seconds": 71.28,
+      "end_seconds": 76.4,
+      "id": "WZvDiQYqj0E-ja-0009",
+      "sequence": 9
+    },
+    {
+      "text": "バイオリント聞くとクラシック音楽を思い浮かべる方も多いと思います。でも僕が引いてるのはポップスR&B",
+      "start_seconds": 76.4,
+      "end_seconds": 87.68,
+      "id": "WZvDiQYqj0E-ja-0010",
+      "sequence": 10
+    },
+    {
+      "text": "ヒップホップいわゆるクラシックとは少し違う音楽です。僕は5歳の頃からバイオリンを始め、",
+      "start_seconds": 87.68,
+      "end_seconds": 98.799,
+      "id": "WZvDiQYqj0E-ja-0011",
+      "sequence": 11
+    },
+    {
+      "text": "レッスンではずっとクラシックを演奏していました。",
+      "start_seconds": 98.799,
+      "end_seconds": 104.439,
+      "id": "WZvDiQYqj0E-ja-0012",
+      "sequence": 12
+    },
+    {
+      "text": "しかし当時から夢中だったのは洋楽でした。",
+      "start_seconds": 104.439,
+      "end_seconds": 110.68,
+      "id": "WZvDiQYqj0E-ja-0013",
+      "sequence": 13
+    },
+    {
+      "text": "マイケルジャクソンやビートルズ、エルビスプレスリーなど海外の音楽を聞くのが大好きでした。",
+      "start_seconds": 110.68,
+      "end_seconds": 121.799,
+      "id": "WZvDiQYqj0E-ja-0014",
+      "sequence": 14
+    },
+    {
+      "text": "また小学校や中学校では野球にも取り組んでいました。",
+      "start_seconds": 121.799,
+      "end_seconds": 128.599,
+      "id": "WZvDiQYqj0E-ja-0015",
+      "sequence": 15
+    },
+    {
+      "text": "正直当時はバイオリンより野球の方が中心でした。",
+      "start_seconds": 128.599,
+      "end_seconds": 134.48,
+      "id": "WZvDiQYqj0E-ja-0016",
+      "sequence": 16
+    },
+    {
+      "text": "それでもバイオリンだけはやめませんでした。理由はシンプルで引くことがただ好きだったからです。",
+      "start_seconds": 134.48,
+      "end_seconds": 144.239,
+      "id": "WZvDiQYqj0E-ja-0017",
+      "sequence": 17
+    },
+    {
+      "text": "今振り返るとそれが最初の続けた選択だったと思います。",
+      "start_seconds": 144.239,
+      "end_seconds": 152.239,
+      "id": "WZvDiQYqj0E-ja-0018",
+      "sequence": 18
+    },
+    {
+      "text": "大学に進み音楽大学でクラシックを専門に学びました。",
+      "start_seconds": 152.239,
+      "end_seconds": 159.12,
+      "id": "WZvDiQYqj0E-ja-0019",
+      "sequence": 19
+    },
+    {
+      "text": "学譜を読み解き、曲の背景や歴史、作曲家の思いを知る中で音楽への理解はどんどん深くなってきまし",
+      "start_seconds": 159.12,
+      "end_seconds": 169.12,
+      "id": "WZvDiQYqj0E-ja-0020",
+      "sequence": 20
+    },
+    {
+      "text": "た。",
+      "start_seconds": 169.12,
+      "end_seconds": 171.159,
+      "id": "WZvDiQYqj0E-ja-0021",
+      "sequence": 21
+    },
+    {
+      "text": "音楽はただ音を並べるだけのものではなくて、1つ1つのフレーズに意味があり、",
+      "start_seconds": 171.159,
+      "end_seconds": 178.36,
+      "id": "WZvDiQYqj0E-ja-0022",
+      "sequence": 22
+    },
+    {
+      "text": "そこに時代や人生が刻まれている。その経験は僕の音楽への印象をより深く豊かな",
+      "start_seconds": 178.36,
+      "end_seconds": 187.879,
+      "id": "WZvDiQYqj0E-ja-0023",
+      "sequence": 23
+    },
+    {
+      "text": "ものにしてくれました。",
+      "start_seconds": 187.879,
+      "end_seconds": 190.879,
+      "id": "WZvDiQYqj0E-ja-0024",
+      "sequence": 24
+    },
+    {
+      "text": "でも一方で心のどこかではずっとこう思っていました。クラシックだけではなくて",
+      "start_seconds": 190.879,
+      "end_seconds": 198.92,
+      "id": "WZvDiQYqj0E-ja-0025",
+      "sequence": 25
+    },
+    {
+      "text": "もっと自分の好きな音楽を聞きたい。",
+      "start_seconds": 198.92,
+      "end_seconds": 203.599,
+      "id": "WZvDiQYqj0E-ja-0026",
+      "sequence": 26
+    },
+    {
+      "text": "そこで僕は子供の頃から聞いていた洋楽やポップス音楽をバイオリンで演奏し始め",
+      "start_seconds": 203.599,
+      "end_seconds": 211.64,
+      "id": "WZvDiQYqj0E-ja-0027",
+      "sequence": 27
+    },
+    {
+      "text": "ました。グループでもまた1人でもステージに立つ機会がどんどん増えていきました。",
+      "start_seconds": 211.64,
+      "end_seconds": 220.84,
+      "id": "WZvDiQYqj0E-ja-0028",
+      "sequence": 28
+    },
+    {
+      "text": "好きな音楽を自分の楽器で表現してみたい。その気持ちに少しずつ正直になっていったんです。",
+      "start_seconds": 220.84,
+      "end_seconds": 230.879,
+      "id": "WZvDiQYqj0E-ja-0029",
+      "sequence": 29
+    },
+    {
+      "text": "そうして演奏し続けるうちにこのままでいいのかという思いが強くなっていきました。",
+      "start_seconds": 230.879,
+      "end_seconds": 239.079,
+      "id": "WZvDiQYqj0E-ja-0030",
+      "sequence": 30
+    },
+    {
+      "text": "本当にやりたい音楽は何か?またそれをどこで表現したいのか。",
+      "start_seconds": 239.079,
+      "end_seconds": 246.36,
+      "id": "WZvDiQYqj0E-ja-0031",
+      "sequence": 31
+    },
+    {
+      "text": "その答えを探す中でふと思ったんです。",
+      "start_seconds": 246.36,
+      "end_seconds": 251.04,
+      "id": "WZvDiQYqj0E-ja-0032",
+      "sequence": 32
+    },
+    {
+      "text": "ほんまに行ってみようと。",
+      "start_seconds": 251.04,
+      "end_seconds": 254.28,
+      "id": "WZvDiQYqj0E-ja-0033",
+      "sequence": 33
+    },
+    {
+      "text": "もちろん簡単な決断ではありませんでした。",
+      "start_seconds": 254.28,
+      "end_seconds": 259.0,
+      "id": "WZvDiQYqj0E-ja-0034",
+      "sequence": 34
+    },
+    {
+      "text": "お金もない。英語もろに話せない。それでも今動かなければ",
+      "start_seconds": 259.0,
+      "end_seconds": 267.28,
+      "id": "WZvDiQYqj0E-ja-0035",
+      "sequence": 35
+    },
+    {
+      "text": "絶対に後悔する。そう思いました。",
+      "start_seconds": 267.28,
+      "end_seconds": 272.36,
+      "id": "WZvDiQYqj0E-ja-0036",
+      "sequence": 36
+    },
+    {
+      "text": "そして僕はロサンゼルスへの留学を決意しました。",
+      "start_seconds": 272.36,
+      "end_seconds": 278.6,
+      "id": "WZvDiQYqj0E-ja-0037",
+      "sequence": 37
+    },
+    {
+      "text": "一度実家のある福岡県に戻り留学資金を貯めるためにゴミ収集者のアルバイトや",
+      "start_seconds": 278.6,
+      "end_seconds": 288.919,
+      "id": "WZvDiQYqj0E-ja-0038",
+      "sequence": 38
+    },
+    {
+      "text": "地元の工場で働きながら仕事から帰ってバイオリンの練習をする。",
+      "start_seconds": 288.919,
+      "end_seconds": 296.759,
+      "id": "WZvDiQYqj0E-ja-0039",
+      "sequence": 39
+    },
+    {
+      "text": "そんな日々を続けました。",
+      "start_seconds": 296.759,
+      "end_seconds": 300.08,
+      "id": "WZvDiQYqj0E-ja-0040",
+      "sequence": 40
+    },
+    {
+      "text": "そうして半年後、ようやくロサンゼルスの空港に降り立ちました。",
+      "start_seconds": 300.08,
+      "end_seconds": 308.32,
+      "id": "WZvDiQYqj0E-ja-0041",
+      "sequence": 41
+    },
+    {
+      "text": "ロサンゼルスについてまず驚いたのは音楽が人々の生活の中に自然と溶け込んでいることでした。",
+      "start_seconds": 308.32,
+      "end_seconds": 319.52,
+      "id": "WZvDiQYqj0E-ja-0042",
+      "sequence": 42
+    },
+    {
+      "text": "街中でもレストランやビーチでも中夜問わずあらゆる場所で音楽が鳴っている。",
+      "start_seconds": 319.52,
+      "end_seconds": 328.56,
+      "id": "WZvDiQYqj0E-ja-0043",
+      "sequence": 43
+    },
+    {
+      "text": "その光景を見て僕はこう思いました。",
+      "start_seconds": 328.56,
+      "end_seconds": 333.16,
+      "id": "WZvDiQYqj0E-ja-0044",
+      "sequence": 44
+    },
+    {
+      "text": "ここで路上ライブをやってみようと。",
+      "start_seconds": 333.16,
+      "end_seconds": 338.52,
+      "id": "WZvDiQYqj0E-ja-0045",
+      "sequence": 45
+    },
+    {
+      "text": "いざ路上ライブを始めてみるとクラシックとはまた違った反応が返ってきたんです。",
+      "start_seconds": 338.52,
+      "end_seconds": 347.4,
+      "id": "WZvDiQYqj0E-ja-0046",
+      "sequence": 46
+    },
+    {
+      "text": "完成が違う。ノりが違う。自然と人が踊り出す、歌い出す。気づけば隣で演奏し",
+      "start_seconds": 347.4,
+      "end_seconds": 357.0,
+      "id": "WZvDiQYqj0E-ja-0047",
+      "sequence": 47
+    },
+    {
+      "text": "ていたミュージシャンと即興でコラボが始まる。その全てが新鮮でもっと続けたい",
+      "start_seconds": 357.0,
+      "end_seconds": 366.88,
+      "id": "WZvDiQYqj0E-ja-0048",
+      "sequence": 48
+    },
+    {
+      "text": "そう思えた瞬間でした。",
+      "start_seconds": 366.88,
+      "end_seconds": 370.96,
+      "id": "WZvDiQYqj0E-ja-0049",
+      "sequence": 49
+    },
+    {
+      "text": "路上ライブの楽しさを知ってからビーチやハリウッド、サンタモニカやラスベガスなど様々な場所でバイオリンの",
+      "start_seconds": 370.96,
+      "end_seconds": 382.44,
+      "id": "WZvDiQYqj0E-ja-0050",
+      "sequence": 50
+    },
+    {
+      "text": "演奏をするようになりました。",
+      "start_seconds": 382.44,
+      "end_seconds": 386.12,
+      "id": "WZvDiQYqj0E-ja-0051",
+      "sequence": 51
+    },
+    {
+      "text": "中でもよく言っていたのがハンティントンビーチでした。",
+      "start_seconds": 386.12,
+      "end_seconds": 393.88,
+      "id": "WZvDiQYqj0E-ja-0052",
+      "sequence": 52
+    },
+    {
+      "text": "そこは夕日がとっても綺麗で長い三橋があり、僕は週に2回くらいそこで路ライブしていました。",
+      "start_seconds": 393.96,
+      "end_seconds": 405.039,
+      "id": "WZvDiQYqj0E-ja-0053",
+      "sequence": 53
+    },
+    {
+      "text": "夕日が沈む時間になると人がたくさん集まってきてカップルも多くそのタイミングで",
+      "start_seconds": 405.039,
+      "end_seconds": 414.319,
+      "id": "WZvDiQYqj0E-ja-0054",
+      "sequence": 54
+    },
+    {
+      "text": "タイタニックとかロマンチックな曲を演奏するとカップルがいい感じになってですね。",
+      "start_seconds": 414.319,
+      "end_seconds": 424.08,
+      "id": "WZvDiQYqj0E-ja-0055",
+      "sequence": 55
+    },
+    {
+      "text": "はい。たくさんチップが入るんです。",
+      "start_seconds": 424.08,
+      "end_seconds": 428.56,
+      "id": "WZvDiQYqj0E-ja-0056",
+      "sequence": 56
+    },
+    {
+      "text": "その時僕はこう思いました。",
+      "start_seconds": 428.56,
+      "end_seconds": 432.199,
+      "id": "WZvDiQYqj0E-ja-0057",
+      "sequence": 57
+    },
+    {
+      "text": "これは夕日で稼いでんだって。",
+      "start_seconds": 432.199,
+      "end_seconds": 436.08,
+      "id": "WZvDiQYqj0E-ja-0058",
+      "sequence": 58
+    },
+    {
+      "text": "でもそんな日々は突然終わりました。",
+      "start_seconds": 436.08,
+      "end_seconds": 440.039,
+      "id": "WZvDiQYqj0E-ja-0059",
+      "sequence": 59
+    },
+    {
+      "text": "コロナでした。路上ライブはできなくなり、外出することすらできない。家にこもる",
+      "start_seconds": 440.039,
+      "end_seconds": 448.72,
+      "id": "WZvDiQYqj0E-ja-0060",
+      "sequence": 60
+    },
+    {
+      "text": "生活が続いて精神的にも金銭的にも正直しんどかったです。",
+      "start_seconds": 448.72,
+      "end_seconds": 457.84,
+      "id": "WZvDiQYqj0E-ja-0061",
+      "sequence": 61
+    },
+    {
+      "text": "でもその時間があったからこそまた僕は新しい一歩を踏み出しました。",
+      "start_seconds": 457.84,
+      "end_seconds": 465.68,
+      "id": "WZvDiQYqj0E-ja-0062",
+      "sequence": 62
+    },
+    {
+      "text": "マイクをオンラインで購入して自宅でバイオリンのレコーディングを始めたんです。音を取ってはSNSに投稿する。",
+      "start_seconds": 465.68,
+      "end_seconds": 476.479,
+      "id": "WZvDiQYqj0E-ja-0063",
+      "sequence": 63
+    },
+    {
+      "text": "取っては投稿する。それを繰り返していくうちに少しずつ変化が起き始めたんです。",
+      "start_seconds": 476.479,
+      "end_seconds": 486.879,
+      "id": "WZvDiQYqj0E-ja-0064",
+      "sequence": 64
+    },
+    {
+      "text": "ウェディングで引いてほしい。フェスやイベントに出てほしい。ヒップホップのバンドに加入してほしい。",
+      "start_seconds": 486.879,
+      "end_seconds": 495.44,
+      "id": "WZvDiQYqj0E-ja-0065",
+      "sequence": 65
+    },
+    {
+      "text": "そんな声が届くようになったんです。",
+      "start_seconds": 495.44,
+      "end_seconds": 499.24,
+      "id": "WZvDiQYqj0E-ja-0066",
+      "sequence": 66
+    },
+    {
+      "text": "あの時立ち止まっていた時間も無駄ではなかったんだと思いました。",
+      "start_seconds": 499.24,
+      "end_seconds": 507.52,
+      "id": "WZvDiQYqj0E-ja-0067",
+      "sequence": 67
+    },
+    {
+      "text": "好きなことを続けていたら国境を超えて多くの人と出会い共感し様々な経験をする",
+      "start_seconds": 507.52,
+      "end_seconds": 516.32,
+      "id": "WZvDiQYqj0E-ja-0068",
+      "sequence": 68
+    },
+    {
+      "text": "ことができました。",
+      "start_seconds": 516.32,
+      "end_seconds": 519.88,
+      "id": "WZvDiQYqj0E-ja-0069",
+      "sequence": 69
+    },
+    {
+      "text": "その後僕は日本に帰国しました。",
+      "start_seconds": 519.88,
+      "end_seconds": 524.48,
+      "id": "WZvDiQYqj0E-ja-0070",
+      "sequence": 70
+    },
+    {
+      "text": "今は軽井沢に住んでいます。実はそれまで軽井沢には1度も来たことがありませんでした。でもロサンゼルスで様々な場所に",
+      "start_seconds": 524.48,
+      "end_seconds": 536.2,
+      "id": "WZvDiQYqj0E-ja-0071",
+      "sequence": 71
+    },
+    {
+      "text": "住み、いろんな景色を見てきた中でふと軽い竿に住んでみたい。そう思うようになったんです。そして気づいたら本当に",
+      "start_seconds": 536.2,
+      "end_seconds": 546.8,
+      "id": "WZvDiQYqj0E-ja-0072",
+      "sequence": 72
+    },
+    {
+      "text": "移住していました。",
+      "start_seconds": 546.8,
+      "end_seconds": 549.56,
+      "id": "WZvDiQYqj0E-ja-0073",
+      "sequence": 73
+    },
+    {
+      "text": "不思議なもので好きなことを続けていると思いもよらない場所へ導かれるんだと感じています。",
+      "start_seconds": 549.56,
+      "end_seconds": 559.72,
+      "id": "WZvDiQYqj0E-ja-0074",
+      "sequence": 74
+    },
+    {
+      "text": "軽井沢に来てからはまずバイオリンのレッスンから始めました。",
+      "start_seconds": 559.72,
+      "end_seconds": 566.68,
+      "id": "WZvDiQYqj0E-ja-0075",
+      "sequence": 75
+    },
+    {
+      "text": "最初は出張のレッスンからスタートしましたが、今では隣町の小室市にバイリン教室を構えています。",
+      "start_seconds": 566.68,
+      "end_seconds": 577.56,
+      "id": "WZvDiQYqj0E-ja-0076",
+      "sequence": 76
+    },
+    {
+      "text": "そしてここでもまた新しい出会いがたくさん生まれました。",
+      "start_seconds": 577.56,
+      "end_seconds": 584.16,
+      "id": "WZvDiQYqj0E-ja-0077",
+      "sequence": 77
+    },
+    {
+      "text": "レッスンを通して出会った生徒さん、演奏を通して出会った方々、その語が少しずつ",
+      "start_seconds": 584.16,
+      "end_seconds": 591.6,
+      "id": "WZvDiQYqj0E-ja-0078",
+      "sequence": 78
+    },
+    {
+      "text": "広がり、大学で演奏する機会をいいたり、オーケストラと共演させていただいたり、",
+      "start_seconds": 591.6,
+      "end_seconds": 600.04,
+      "id": "WZvDiQYqj0E-ja-0079",
+      "sequence": 79
+    },
+    {
+      "text": "地元の福岡では小学校や中学校の学校講演にも参加させていただいたりしました。",
+      "start_seconds": 600.04,
+      "end_seconds": 609.2,
+      "id": "WZvDiQYqj0E-ja-0080",
+      "sequence": 80
+    },
+    {
+      "text": "昔の僕には想像もできなかった景色です。",
+      "start_seconds": 609.2,
+      "end_seconds": 615.72,
+      "id": "WZvDiQYqj0E-ja-0081",
+      "sequence": 81
+    },
+    {
+      "text": "振り返ると僕はずっと好きなことを続けてきました。",
+      "start_seconds": 615.72,
+      "end_seconds": 621.64,
+      "id": "WZvDiQYqj0E-ja-0082",
+      "sequence": 82
+    },
+    {
+      "text": "続けたからこそロサンゼルスン行くきっかけが生まれた。",
+      "start_seconds": 621.64,
+      "end_seconds": 627.24,
+      "id": "WZvDiQYqj0E-ja-0083",
+      "sequence": 83
+    },
+    {
+      "text": "続けたからこそたくさんの人と出会い、そしてジャンルを超えて自分の好きな音楽を表現できています。",
+      "start_seconds": 627.24,
+      "end_seconds": 638.12,
+      "id": "WZvDiQYqj0E-ja-0084",
+      "sequence": 84
+    },
+    {
+      "text": "今僕にとって音楽そしてバイオリンは心を整え、感情を動かし、",
+      "start_seconds": 638.12,
+      "end_seconds": 647.639,
+      "id": "WZvDiQYqj0E-ja-0085",
+      "sequence": 85
+    },
+    {
+      "text": "未来を思い描かせてくれるような家がのない存在です。",
+      "start_seconds": 647.639,
+      "end_seconds": 654.88,
+      "id": "WZvDiQYqj0E-ja-0086",
+      "sequence": 86
+    },
+    {
+      "text": "僕は最初から自信があったわけでも特別な才能があったわけでもありません。それでもここまで来られたのはやっぱり続けてき",
+      "start_seconds": 654.88,
+      "end_seconds": 666.12,
+      "id": "WZvDiQYqj0E-ja-0087",
+      "sequence": 87
+    },
+    {
+      "text": "たからこそだと思っています。",
+      "start_seconds": 666.12,
+      "end_seconds": 671.279,
+      "id": "WZvDiQYqj0E-ja-0088",
+      "sequence": 88
+    },
+    {
+      "text": "好きなことを続けるというのはただ同じことを繰り返すわけではありません。続け",
+      "start_seconds": 671.279,
+      "end_seconds": 677.8,
+      "id": "WZvDiQYqj0E-ja-0089",
+      "sequence": 89
+    },
+    {
+      "text": "ていく中で出会う人が増え、感謝が増え、環境が変わり、考えが変わり、気づけば",
+      "start_seconds": 677.8,
+      "end_seconds": 688.56,
+      "id": "WZvDiQYqj0E-ja-0090",
+      "sequence": 90
+    },
+    {
+      "text": "自分自身が変わっていく。",
+      "start_seconds": 688.56,
+      "end_seconds": 692.12,
+      "id": "WZvDiQYqj0E-ja-0091",
+      "sequence": 91
+    },
+    {
+      "text": "それは未来への可能性を広げてくれる、新しい世界へつげてくれる扉でもあります。",
+      "start_seconds": 692.12,
+      "end_seconds": 701.76,
+      "id": "WZvDiQYqj0E-ja-0092",
+      "sequence": 92
+    },
+    {
+      "text": "しかし好きなことを続けるということは決して楽なことではありません。",
+      "start_seconds": 701.76,
+      "end_seconds": 708.839,
+      "id": "WZvDiQYqj0E-ja-0093",
+      "sequence": 93
+    },
+    {
+      "text": "思い通りに行かないこともあるし、迷うこともたくさんある。",
+      "start_seconds": 708.839,
+      "end_seconds": 714.76,
+      "id": "WZvDiQYqj0E-ja-0094",
+      "sequence": 94
+    },
+    {
+      "text": "枕にバイオリンを投げることだってある。",
+      "start_seconds": 714.76,
+      "end_seconds": 719.24,
+      "id": "WZvDiQYqj0E-ja-0095",
+      "sequence": 95
+    },
+    {
+      "text": "それでも人生に彩取りを与え、ワクワクさせてくれる。刺激的な人生を送ることが",
+      "start_seconds": 719.24,
+      "end_seconds": 727.959,
+      "id": "WZvDiQYqj0E-ja-0096",
+      "sequence": 96
+    },
+    {
+      "text": "できると僕は信じています。",
+      "start_seconds": 727.959,
+      "end_seconds": 732.48,
+      "id": "WZvDiQYqj0E-ja-0097",
+      "sequence": 97
+    },
+    {
+      "text": "うまくいかなくてもいい。遠回りでもいい。",
+      "start_seconds": 732.48,
+      "end_seconds": 737.44,
+      "id": "WZvDiQYqj0E-ja-0098",
+      "sequence": 98
+    },
+    {
+      "text": "もし今迷っている人がいたら、まだ好きと言いきれない人がいたら焦らなくていいの",
+      "start_seconds": 737.44,
+      "end_seconds": 745.44,
+      "id": "WZvDiQYqj0E-ja-0099",
+      "sequence": 99
+    },
+    {
+      "text": "でもう少しだけ続けてみてください。",
+      "start_seconds": 745.44,
+      "end_seconds": 750.32,
+      "id": "WZvDiQYqj0E-ja-0100",
+      "sequence": 100
+    },
+    {
+      "text": "その先に自分だけの景色がきっとあります。",
+      "start_seconds": 750.32,
+      "end_seconds": 755.959,
+      "id": "WZvDiQYqj0E-ja-0101",
+      "sequence": 101
+    },
+    {
+      "text": "好きなことを続けると世界が広がる。",
+      "start_seconds": 755.959,
+      "end_seconds": 758.68,
+      "id": "WZvDiQYqj0E-ja-0102",
+      "sequence": 102
+    },
+    {
+      "text": "そして世界が広がるともっと好きになる。",
+      "start_seconds": 758.68,
+      "end_seconds": 764.279,
+      "id": "WZvDiQYqj0E-ja-0103",
+      "sequence": 103
+    },
+    {
+      "text": "最後に少しだけバイオリンの演奏をさせていただきます。",
+      "start_seconds": 764.279,
+      "end_seconds": 770.199,
+      "id": "WZvDiQYqj0E-ja-0104",
+      "sequence": 104
+    },
+    {
+      "text": "今までの経験や留学を通して生まれた曲です。どうぞ聞いてください。",
+      "start_seconds": 770.199,
+      "end_seconds": 778.8,
+      "id": "WZvDiQYqj0E-ja-0105",
+      "sequence": 105
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 780.768,
+      "end_seconds": 782.788,
+      "id": "WZvDiQYqj0E-ja-0106",
+      "sequence": 106
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 803.694,
+      "end_seconds": 805.7139999999999,
+      "id": "WZvDiQYqj0E-ja-0107",
+      "sequence": 107
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 820.724,
+      "end_seconds": 822.744,
+      "id": "WZvDiQYqj0E-ja-0108",
+      "sequence": 108
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 827.274,
+      "end_seconds": 829.294,
+      "id": "WZvDiQYqj0E-ja-0109",
+      "sequence": 109
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 852.819,
+      "end_seconds": 854.8389999999999,
+      "id": "WZvDiQYqj0E-ja-0110",
+      "sequence": 110
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 869.849,
+      "end_seconds": 871.869,
+      "id": "WZvDiQYqj0E-ja-0111",
+      "sequence": 111
+    },
+    {
+      "text": "ありがとうございました。",
+      "start_seconds": 877.72,
+      "end_seconds": 880.33,
+      "id": "WZvDiQYqj0E-ja-0112",
+      "sequence": 112
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 880.33,
+      "end_seconds": 882.35,
+      "id": "WZvDiQYqj0E-ja-0113",
+      "sequence": 113
+    }
+  ],
+  "raw_captions": [
+    {
+      "text": "[音楽]",
+      "start_seconds": 7.86,
+      "end_seconds": 9.88
+    },
+    {
+      "text": "今皆さんは熱中するほど好きなことはあり",
+      "start_seconds": 13.0,
+      "end_seconds": 18.64
+    },
+    {
+      "text": "ますか?",
+      "start_seconds": 16.52,
+      "end_seconds": 22.439
+    },
+    {
+      "text": "でもそれを途中で諦めたりしていませんか",
+      "start_seconds": 18.64,
+      "end_seconds": 27.759999999999998
+    },
+    {
+      "text": "?失敗して落ち込んだり、お金や時間が",
+      "start_seconds": 22.439,
+      "end_seconds": 30.359
+    },
+    {
+      "text": "足りなかっあり",
+      "start_seconds": 27.76,
+      "end_seconds": 33.760000000000005
+    },
+    {
+      "text": "続けたかったのにやめてしまったこと",
+      "start_seconds": 30.359,
+      "end_seconds": 38.84
+    },
+    {
+      "text": "誰にでも1つや2つあると思います。",
+      "start_seconds": 33.76,
+      "end_seconds": 43.079
+    },
+    {
+      "text": "僕は好きな音楽を続けてきたことで人生が",
+      "start_seconds": 38.84,
+      "end_seconds": 46.6
+    },
+    {
+      "text": "大きく変わりました。",
+      "start_seconds": 43.079,
+      "end_seconds": 51.559
+    },
+    {
+      "text": "国籍も職業も年齢も違う人たちと出会い、",
+      "start_seconds": 46.6,
+      "end_seconds": 56.160000000000004
+    },
+    {
+      "text": "様々な経験をし、自分では想像もしてい",
+      "start_seconds": 51.559,
+      "end_seconds": 60.879
+    },
+    {
+      "text": "なかった景色を見ることができました。",
+      "start_seconds": 56.16,
+      "end_seconds": 64.239
+    },
+    {
+      "text": "今日は好きなことを続けることで何が起き",
+      "start_seconds": 60.879,
+      "end_seconds": 68.39999999999999
+    },
+    {
+      "text": "たのか、僕自身の体験をお話ししたいと",
+      "start_seconds": 64.239,
+      "end_seconds": 71.28
+    },
+    {
+      "text": "思います。",
+      "start_seconds": 68.4,
+      "end_seconds": 74.4
+    },
+    {
+      "text": "皆さん、こんにちは。バイリニストのあ木",
+      "start_seconds": 71.28,
+      "end_seconds": 76.4
+    },
+    {
+      "text": "です。",
+      "start_seconds": 74.4,
+      "end_seconds": 79.64
+    },
+    {
+      "text": "バイオリント聞くとクラシック音楽を",
+      "start_seconds": 76.4,
+      "end_seconds": 83.72
+    },
+    {
+      "text": "思い浮かべる方も多いと思います。でも僕",
+      "start_seconds": 79.64,
+      "end_seconds": 87.68
+    },
+    {
+      "text": "が引いてるのはポップスR&B",
+      "start_seconds": 83.72,
+      "end_seconds": 89.84
+    },
+    {
+      "text": "ヒップホップ",
+      "start_seconds": 87.68,
+      "end_seconds": 93.32000000000001
+    },
+    {
+      "text": "いわゆるクラシックとは少し違う音楽です",
+      "start_seconds": 89.84,
+      "end_seconds": 98.799
+    },
+    {
+      "text": "。僕は5歳の頃からバイオリンを始め、",
+      "start_seconds": 93.32,
+      "end_seconds": 102.119
+    },
+    {
+      "text": "レッスンではずっとクラシックを演奏して",
+      "start_seconds": 98.799,
+      "end_seconds": 104.43900000000001
+    },
+    {
+      "text": "いました。",
+      "start_seconds": 102.119,
+      "end_seconds": 109.119
+    },
+    {
+      "text": "しかし当時から夢中だったのは洋楽でした",
+      "start_seconds": 104.439,
+      "end_seconds": 110.67999999999999
+    },
+    {
+      "text": "。",
+      "start_seconds": 109.119,
+      "end_seconds": 114.159
+    },
+    {
+      "text": "マイケルジャクソンやビートルズ、",
+      "start_seconds": 110.68,
+      "end_seconds": 118.039
+    },
+    {
+      "text": "エルビスプレスリーなど海外の音楽を聞く",
+      "start_seconds": 114.159,
+      "end_seconds": 121.799
+    },
+    {
+      "text": "のが大好きでした。",
+      "start_seconds": 118.039,
+      "end_seconds": 126.6
+    },
+    {
+      "text": "また小学校や中学校では野球にも取り組ん",
+      "start_seconds": 121.799,
+      "end_seconds": 128.59900000000002
+    },
+    {
+      "text": "でいました。",
+      "start_seconds": 126.6,
+      "end_seconds": 132.12
+    },
+    {
+      "text": "正直当時はバイオリンより野球の方が中心",
+      "start_seconds": 128.599,
+      "end_seconds": 134.48
+    },
+    {
+      "text": "でした。",
+      "start_seconds": 132.12,
+      "end_seconds": 137.16
+    },
+    {
+      "text": "それでもバイオリンだけはやめませんでし",
+      "start_seconds": 134.48,
+      "end_seconds": 141.64
+    },
+    {
+      "text": "た。理由はシンプルで引くことがただ好き",
+      "start_seconds": 137.16,
+      "end_seconds": 144.239
+    },
+    {
+      "text": "だったからです。",
+      "start_seconds": 141.64,
+      "end_seconds": 148.83999999999997
+    },
+    {
+      "text": "今振り返るとそれが最初の続けた選択だっ",
+      "start_seconds": 144.239,
+      "end_seconds": 152.239
+    },
+    {
+      "text": "たと思います。",
+      "start_seconds": 148.84,
+      "end_seconds": 156.68
+    },
+    {
+      "text": "大学に進み音楽大学でクラシックを専門に",
+      "start_seconds": 152.239,
+      "end_seconds": 159.12
+    },
+    {
+      "text": "学びました。",
+      "start_seconds": 156.68,
+      "end_seconds": 163.68
+    },
+    {
+      "text": "学譜を読み解き、曲の背景や歴史、作曲家",
+      "start_seconds": 159.12,
+      "end_seconds": 166.31900000000002
+    },
+    {
+      "text": "の思いを知る中で",
+      "start_seconds": 163.68,
+      "end_seconds": 169.12
+    },
+    {
+      "text": "音楽への理解はどんどん深くなってきまし",
+      "start_seconds": 166.319,
+      "end_seconds": 171.159
+    },
+    {
+      "text": "た。",
+      "start_seconds": 169.12,
+      "end_seconds": 174.56
+    },
+    {
+      "text": "音楽はただ音を並べるだけのものではなく",
+      "start_seconds": 171.159,
+      "end_seconds": 178.35999999999999
+    },
+    {
+      "text": "て、1つ1つのフレーズに意味があり、",
+      "start_seconds": 174.56,
+      "end_seconds": 183.44
+    },
+    {
+      "text": "そこに時代や人生が刻まれている。その",
+      "start_seconds": 178.36,
+      "end_seconds": 187.87900000000002
+    },
+    {
+      "text": "経験は僕の音楽への印象をより深く豊かな",
+      "start_seconds": 183.44,
+      "end_seconds": 190.879
+    },
+    {
+      "text": "ものにしてくれました。",
+      "start_seconds": 187.879,
+      "end_seconds": 195.28
+    },
+    {
+      "text": "でも一方で心のどこかではずっとこう思っ",
+      "start_seconds": 190.879,
+      "end_seconds": 198.92
+    },
+    {
+      "text": "ていました。クラシックだけではなくて",
+      "start_seconds": 195.28,
+      "end_seconds": 203.599
+    },
+    {
+      "text": "もっと自分の好きな音楽を聞きたい。",
+      "start_seconds": 198.92,
+      "end_seconds": 208.51899999999998
+    },
+    {
+      "text": "そこで僕は子供の頃から聞いていた洋楽や",
+      "start_seconds": 203.599,
+      "end_seconds": 211.64
+    },
+    {
+      "text": "ポップス音楽をバイオリンで演奏し始め",
+      "start_seconds": 208.519,
+      "end_seconds": 215.84
+    },
+    {
+      "text": "ました。グループでもまた1人でも",
+      "start_seconds": 211.64,
+      "end_seconds": 218.72
+    },
+    {
+      "text": "ステージに立つ機会がどんどん増えていき",
+      "start_seconds": 215.84,
+      "end_seconds": 220.84
+    },
+    {
+      "text": "ました。",
+      "start_seconds": 218.72,
+      "end_seconds": 224.159
+    },
+    {
+      "text": "好きな音楽を自分の楽器で表現してみたい",
+      "start_seconds": 220.84,
+      "end_seconds": 228.31900000000002
+    },
+    {
+      "text": "。その気持ちに少しずつ正直になっていっ",
+      "start_seconds": 224.159,
+      "end_seconds": 230.879
+    },
+    {
+      "text": "たんです。",
+      "start_seconds": 228.319,
+      "end_seconds": 234.23899999999998
+    },
+    {
+      "text": "そうして演奏し続けるうちにこのままで",
+      "start_seconds": 230.879,
+      "end_seconds": 237.0
+    },
+    {
+      "text": "いいのかという思いが強くなっていきまし",
+      "start_seconds": 234.239,
+      "end_seconds": 239.079
+    },
+    {
+      "text": "た。",
+      "start_seconds": 237.0,
+      "end_seconds": 242.84
+    },
+    {
+      "text": "本当にやりたい音楽は何か?またそれを",
+      "start_seconds": 239.079,
+      "end_seconds": 246.36
+    },
+    {
+      "text": "どこで表現したいのか。",
+      "start_seconds": 242.84,
+      "end_seconds": 251.04
+    },
+    {
+      "text": "その答えを探す中でふと思ったんです。",
+      "start_seconds": 246.36,
+      "end_seconds": 254.28
+    },
+    {
+      "text": "ほんまに行ってみようと。",
+      "start_seconds": 251.04,
+      "end_seconds": 257.359
+    },
+    {
+      "text": "もちろん簡単な決断ではありませんでした",
+      "start_seconds": 254.28,
+      "end_seconds": 259.0
+    },
+    {
+      "text": "。",
+      "start_seconds": 257.359,
+      "end_seconds": 263.79999999999995
+    },
+    {
+      "text": "お金もない。英語もろに話せない。それで",
+      "start_seconds": 259.0,
+      "end_seconds": 267.28
+    },
+    {
+      "text": "も今動かなければ",
+      "start_seconds": 263.8,
+      "end_seconds": 272.36
+    },
+    {
+      "text": "絶対に後悔する。そう思いました。",
+      "start_seconds": 267.28,
+      "end_seconds": 276.44
+    },
+    {
+      "text": "そして僕はロサンゼルスへの留学を決意し",
+      "start_seconds": 272.36,
+      "end_seconds": 278.6
+    },
+    {
+      "text": "ました。",
+      "start_seconds": 276.44,
+      "end_seconds": 283.12
+    },
+    {
+      "text": "一度実家のある福岡県に戻り",
+      "start_seconds": 278.6,
+      "end_seconds": 286.72
+    },
+    {
+      "text": "留学資金を貯めるためにゴミ収集者の",
+      "start_seconds": 283.12,
+      "end_seconds": 288.919
+    },
+    {
+      "text": "アルバイトや",
+      "start_seconds": 286.72,
+      "end_seconds": 292.68
+    },
+    {
+      "text": "地元の工場で働きながら",
+      "start_seconds": 288.919,
+      "end_seconds": 296.75899999999996
+    },
+    {
+      "text": "仕事から帰ってバイオリンの練習をする。",
+      "start_seconds": 292.68,
+      "end_seconds": 300.08
+    },
+    {
+      "text": "そんな日々を続けました。",
+      "start_seconds": 296.759,
+      "end_seconds": 304.36
+    },
+    {
+      "text": "そうして半年後、ようやくロサンゼルスの",
+      "start_seconds": 300.08,
+      "end_seconds": 308.32
+    },
+    {
+      "text": "空港に降り立ちました。",
+      "start_seconds": 304.36,
+      "end_seconds": 313.12
+    },
+    {
+      "text": "ロサンゼルスについてまず驚いたのは音楽",
+      "start_seconds": 308.32,
+      "end_seconds": 317.28
+    },
+    {
+      "text": "が人々の生活の中に自然と溶け込んでいる",
+      "start_seconds": 313.12,
+      "end_seconds": 319.52
+    },
+    {
+      "text": "ことでした。",
+      "start_seconds": 317.28,
+      "end_seconds": 323.919
+    },
+    {
+      "text": "街中でもレストランやビーチでも中夜問わ",
+      "start_seconds": 319.52,
+      "end_seconds": 328.56
+    },
+    {
+      "text": "ずあらゆる場所で音楽が鳴っている。",
+      "start_seconds": 323.919,
+      "end_seconds": 333.15999999999997
+    },
+    {
+      "text": "その光景を見て僕はこう思いました。",
+      "start_seconds": 328.56,
+      "end_seconds": 338.52
+    },
+    {
+      "text": "ここで路上ライブをやってみようと。",
+      "start_seconds": 333.16,
+      "end_seconds": 342.199
+    },
+    {
+      "text": "いざ路上ライブを始めてみるとクラシック",
+      "start_seconds": 338.52,
+      "end_seconds": 347.4
+    },
+    {
+      "text": "とはまた違った反応が返ってきたんです。",
+      "start_seconds": 342.199,
+      "end_seconds": 352.039
+    },
+    {
+      "text": "完成が違う。ノりが違う。自然と人が",
+      "start_seconds": 347.4,
+      "end_seconds": 357.0
+    },
+    {
+      "text": "踊り出す、歌い出す。気づけば隣で演奏し",
+      "start_seconds": 352.039,
+      "end_seconds": 360.36
+    },
+    {
+      "text": "ていたミュージシャンと即興でコラボが",
+      "start_seconds": 357.0,
+      "end_seconds": 366.88
+    },
+    {
+      "text": "始まる。その全てが新鮮でもっと続けたい",
+      "start_seconds": 360.36,
+      "end_seconds": 370.96000000000004
+    },
+    {
+      "text": "そう思えた瞬間でした。",
+      "start_seconds": 366.88,
+      "end_seconds": 374.4
+    },
+    {
+      "text": "路上ライブの楽しさを知ってから",
+      "start_seconds": 370.96,
+      "end_seconds": 378.4
+    },
+    {
+      "text": "ビーチやハリウッド、サンタモニカや",
+      "start_seconds": 374.4,
+      "end_seconds": 382.44
+    },
+    {
+      "text": "ラスベガスなど様々な場所でバイオリンの",
+      "start_seconds": 378.4,
+      "end_seconds": 386.12
+    },
+    {
+      "text": "演奏をするようになりました。",
+      "start_seconds": 382.44,
+      "end_seconds": 390.24
+    },
+    {
+      "text": "中でもよく言っていたのがハンティントン",
+      "start_seconds": 386.12,
+      "end_seconds": 393.88
+    },
+    {
+      "text": "ビーチでした。",
+      "start_seconds": 390.24,
+      "end_seconds": 393.88
+    },
+    {
+      "text": "そこは夕日がとっても綺麗で長い三橋が",
+      "start_seconds": 393.96,
+      "end_seconds": 402.599
+    },
+    {
+      "text": "あり、僕は週に2回くらいそこで路ライブ",
+      "start_seconds": 397.919,
+      "end_seconds": 405.039
+    },
+    {
+      "text": "していました。",
+      "start_seconds": 402.599,
+      "end_seconds": 408.12
+    },
+    {
+      "text": "夕日が沈む時間になると人がたくさん",
+      "start_seconds": 405.039,
+      "end_seconds": 410.28
+    },
+    {
+      "text": "集まってきて",
+      "start_seconds": 408.12,
+      "end_seconds": 414.319
+    },
+    {
+      "text": "カップルも多くそのタイミングで",
+      "start_seconds": 410.28,
+      "end_seconds": 419.11999999999995
+    },
+    {
+      "text": "タイタニックとかロマンチックな曲を演奏",
+      "start_seconds": 414.319,
+      "end_seconds": 422.47900000000004
+    },
+    {
+      "text": "するとカップルがいい感じになってですね",
+      "start_seconds": 419.12,
+      "end_seconds": 424.08
+    },
+    {
+      "text": "。",
+      "start_seconds": 422.479,
+      "end_seconds": 428.56
+    },
+    {
+      "text": "はい。たくさんチップが入るんです。",
+      "start_seconds": 424.08,
+      "end_seconds": 432.19899999999996
+    },
+    {
+      "text": "その時僕はこう思いました。",
+      "start_seconds": 428.56,
+      "end_seconds": 436.08
+    },
+    {
+      "text": "これは夕日で稼いでんだって。",
+      "start_seconds": 432.199,
+      "end_seconds": 440.039
+    },
+    {
+      "text": "でもそんな日々は突然終わりました。",
+      "start_seconds": 436.08,
+      "end_seconds": 443.96
+    },
+    {
+      "text": "コロナでした。路上ライブはできなくなり",
+      "start_seconds": 440.039,
+      "end_seconds": 448.71999999999997
+    },
+    {
+      "text": "、外出することすらできない。家にこもる",
+      "start_seconds": 443.96,
+      "end_seconds": 454.56
+    },
+    {
+      "text": "生活が続いて精神的にも金銭的にも正直",
+      "start_seconds": 448.72,
+      "end_seconds": 457.84000000000003
+    },
+    {
+      "text": "しんどかったです。",
+      "start_seconds": 454.56,
+      "end_seconds": 462.28000000000003
+    },
+    {
+      "text": "でもその時間があったからこそまた僕は",
+      "start_seconds": 457.84,
+      "end_seconds": 465.67999999999995
+    },
+    {
+      "text": "新しい一歩を踏み出しました。",
+      "start_seconds": 462.28,
+      "end_seconds": 469.87899999999996
+    },
+    {
+      "text": "マイクをオンラインで購入して自宅で",
+      "start_seconds": 465.68,
+      "end_seconds": 472.039
+    },
+    {
+      "text": "バイオリンのレコーディングを始めたん",
+      "start_seconds": 469.879,
+      "end_seconds": 476.47900000000004
+    },
+    {
+      "text": "です。音を取ってはSNSに投稿する。",
+      "start_seconds": 472.039,
+      "end_seconds": 479.84
+    },
+    {
+      "text": "取っては投稿する。それを繰り返していく",
+      "start_seconds": 476.479,
+      "end_seconds": 486.87899999999996
+    },
+    {
+      "text": "うちに少しずつ変化が起き始めたんです。",
+      "start_seconds": 479.84,
+      "end_seconds": 489.159
+    },
+    {
+      "text": "ウェディングで引いてほしい。フェスや",
+      "start_seconds": 486.879,
+      "end_seconds": 492.84000000000003
+    },
+    {
+      "text": "イベントに出てほしい。ヒップホップの",
+      "start_seconds": 489.159,
+      "end_seconds": 495.44
+    },
+    {
+      "text": "バンドに加入してほしい。",
+      "start_seconds": 492.84,
+      "end_seconds": 499.23999999999995
+    },
+    {
+      "text": "そんな声が届くようになったんです。",
+      "start_seconds": 495.44,
+      "end_seconds": 503.28
+    },
+    {
+      "text": "あの時立ち止まっていた時間も無駄では",
+      "start_seconds": 499.24,
+      "end_seconds": 507.52
+    },
+    {
+      "text": "なかったんだと思いました。",
+      "start_seconds": 503.28,
+      "end_seconds": 511.4
+    },
+    {
+      "text": "好きなことを続けていたら国境を超えて",
+      "start_seconds": 507.52,
+      "end_seconds": 516.3199999999999
+    },
+    {
+      "text": "多くの人と出会い共感し様々な経験をする",
+      "start_seconds": 511.4,
+      "end_seconds": 519.88
+    },
+    {
+      "text": "ことができました。",
+      "start_seconds": 516.32,
+      "end_seconds": 524.48
+    },
+    {
+      "text": "その後僕は日本に帰国しました。",
+      "start_seconds": 519.88,
+      "end_seconds": 528.72
+    },
+    {
+      "text": "今は軽井沢に住んでいます。実はそれまで",
+      "start_seconds": 524.48,
+      "end_seconds": 531.36
+    },
+    {
+      "text": "軽井沢には1度も来たことがありません",
+      "start_seconds": 528.72,
+      "end_seconds": 536.2
+    },
+    {
+      "text": "でした。でもロサンゼルスで様々な場所に",
+      "start_seconds": 531.36,
+      "end_seconds": 540.5600000000001
+    },
+    {
+      "text": "住み、いろんな景色を見てきた中でふと",
+      "start_seconds": 536.2,
+      "end_seconds": 543.32
+    },
+    {
+      "text": "軽い竿に住んでみたい。そう思うように",
+      "start_seconds": 540.56,
+      "end_seconds": 546.8
+    },
+    {
+      "text": "なったんです。そして気づいたら本当に",
+      "start_seconds": 543.32,
+      "end_seconds": 549.5600000000001
+    },
+    {
+      "text": "移住していました。",
+      "start_seconds": 546.8,
+      "end_seconds": 552.8
+    },
+    {
+      "text": "不思議なもので好きなことを続けていると",
+      "start_seconds": 549.56,
+      "end_seconds": 556.68
+    },
+    {
+      "text": "思いもよらない場所へ導かれるんだと感じ",
+      "start_seconds": 552.8,
+      "end_seconds": 559.7199999999999
+    },
+    {
+      "text": "ています。",
+      "start_seconds": 556.68,
+      "end_seconds": 562.92
+    },
+    {
+      "text": "軽井沢に来てからはまずバイオリンの",
+      "start_seconds": 559.72,
+      "end_seconds": 566.6800000000001
+    },
+    {
+      "text": "レッスンから始めました。",
+      "start_seconds": 562.92,
+      "end_seconds": 569.8
+    },
+    {
+      "text": "最初は出張のレッスンからスタートしまし",
+      "start_seconds": 566.68,
+      "end_seconds": 574.7199999999999
+    },
+    {
+      "text": "たが、今では隣町の小室市にバイリン教室",
+      "start_seconds": 569.8,
+      "end_seconds": 577.56
+    },
+    {
+      "text": "を構えています。",
+      "start_seconds": 574.72,
+      "end_seconds": 581.279
+    },
+    {
+      "text": "そしてここでもまた新しい出会いが",
+      "start_seconds": 577.56,
+      "end_seconds": 584.16
+    },
+    {
+      "text": "たくさん生まれました。",
+      "start_seconds": 581.279,
+      "end_seconds": 586.92
+    },
+    {
+      "text": "レッスンを通して出会った生徒さん、演奏",
+      "start_seconds": 584.16,
+      "end_seconds": 591.6
+    },
+    {
+      "text": "を通して出会った方々、その語が少しずつ",
+      "start_seconds": 586.92,
+      "end_seconds": 596.56
+    },
+    {
+      "text": "広がり、大学で演奏する機会をいいたり、",
+      "start_seconds": 591.6,
+      "end_seconds": 600.0400000000001
+    },
+    {
+      "text": "オーケストラと共演させていただいたり、",
+      "start_seconds": 596.56,
+      "end_seconds": 605.0
+    },
+    {
+      "text": "地元の福岡では小学校や中学校の学校講演",
+      "start_seconds": 600.04,
+      "end_seconds": 609.1999999999999
+    },
+    {
+      "text": "にも参加させていただいたりしました。",
+      "start_seconds": 605.0,
+      "end_seconds": 615.72
+    },
+    {
+      "text": "昔の僕には想像もできなかった景色です。",
+      "start_seconds": 609.2,
+      "end_seconds": 619.6
+    },
+    {
+      "text": "振り返ると僕はずっと好きなことを続けて",
+      "start_seconds": 615.72,
+      "end_seconds": 621.64
+    },
+    {
+      "text": "きました。",
+      "start_seconds": 619.6,
+      "end_seconds": 624.48
+    },
+    {
+      "text": "続けたからこそロサンゼルスン行く",
+      "start_seconds": 621.64,
+      "end_seconds": 627.24
+    },
+    {
+      "text": "きっかけが生まれた。",
+      "start_seconds": 624.48,
+      "end_seconds": 631.6
+    },
+    {
+      "text": "続けたからこそたくさんの人と出会い、",
+      "start_seconds": 627.24,
+      "end_seconds": 634.8
+    },
+    {
+      "text": "そしてジャンルを超えて自分の好きな音楽",
+      "start_seconds": 631.6,
+      "end_seconds": 638.12
+    },
+    {
+      "text": "を表現できています。",
+      "start_seconds": 634.8,
+      "end_seconds": 643.5999999999999
+    },
+    {
+      "text": "今僕にとって音楽そしてバイオリンは心を",
+      "start_seconds": 638.12,
+      "end_seconds": 647.639
+    },
+    {
+      "text": "整え、感情を動かし、",
+      "start_seconds": 643.6,
+      "end_seconds": 651.36
+    },
+    {
+      "text": "未来を思い描かせてくれるような家がの",
+      "start_seconds": 647.639,
+      "end_seconds": 654.88
+    },
+    {
+      "text": "ない存在です。",
+      "start_seconds": 651.36,
+      "end_seconds": 658.639
+    },
+    {
+      "text": "僕は最初から自信があったわけでも特別な",
+      "start_seconds": 654.88,
+      "end_seconds": 662.04
+    },
+    {
+      "text": "才能があったわけでもありません。それで",
+      "start_seconds": 658.639,
+      "end_seconds": 666.12
+    },
+    {
+      "text": "もここまで来られたのはやっぱり続けてき",
+      "start_seconds": 662.04,
+      "end_seconds": 671.279
+    },
+    {
+      "text": "たからこそだと思っています。",
+      "start_seconds": 666.12,
+      "end_seconds": 674.519
+    },
+    {
+      "text": "好きなことを続けるというのはただ同じ",
+      "start_seconds": 671.279,
+      "end_seconds": 677.8
+    },
+    {
+      "text": "ことを繰り返すわけではありません。続け",
+      "start_seconds": 674.519,
+      "end_seconds": 683.9590000000001
+    },
+    {
+      "text": "ていく中で出会う人が増え、感謝が増え、",
+      "start_seconds": 677.8,
+      "end_seconds": 688.56
+    },
+    {
+      "text": "環境が変わり、考えが変わり、気づけば",
+      "start_seconds": 683.959,
+      "end_seconds": 692.1199999999999
+    },
+    {
+      "text": "自分自身が変わっていく。",
+      "start_seconds": 688.56,
+      "end_seconds": 696.3199999999999
+    },
+    {
+      "text": "それは未来への可能性を広げてくれる、",
+      "start_seconds": 692.12,
+      "end_seconds": 700.079
+    },
+    {
+      "text": "新しい世界へつげてくれる扉でもあります",
+      "start_seconds": 696.32,
+      "end_seconds": 701.7600000000001
+    },
+    {
+      "text": "。",
+      "start_seconds": 700.079,
+      "end_seconds": 704.88
+    },
+    {
+      "text": "しかし好きなことを続けるということは",
+      "start_seconds": 701.76,
+      "end_seconds": 708.8389999999999
+    },
+    {
+      "text": "決して楽なことではありません。",
+      "start_seconds": 704.88,
+      "end_seconds": 712.0
+    },
+    {
+      "text": "思い通りに行かないこともあるし、迷う",
+      "start_seconds": 708.839,
+      "end_seconds": 714.7600000000001
+    },
+    {
+      "text": "こともたくさんある。",
+      "start_seconds": 712.0,
+      "end_seconds": 719.24
+    },
+    {
+      "text": "枕にバイオリンを投げることだってある。",
+      "start_seconds": 714.76,
+      "end_seconds": 724.0
+    },
+    {
+      "text": "それでも人生に彩取りを与え、ワクワクさ",
+      "start_seconds": 719.24,
+      "end_seconds": 727.9590000000001
+    },
+    {
+      "text": "せてくれる。刺激的な人生を送ることが",
+      "start_seconds": 724.0,
+      "end_seconds": 732.48
+    },
+    {
+      "text": "できると僕は信じています。",
+      "start_seconds": 727.959,
+      "end_seconds": 735.88
+    },
+    {
+      "text": "うまくいかなくてもいい。遠回りでもいい",
+      "start_seconds": 732.48,
+      "end_seconds": 737.44
+    },
+    {
+      "text": "。",
+      "start_seconds": 735.88,
+      "end_seconds": 741.6
+    },
+    {
+      "text": "もし今迷っている人がいたら、まだ好きと",
+      "start_seconds": 737.44,
+      "end_seconds": 745.44
+    },
+    {
+      "text": "言いきれない人がいたら焦らなくていいの",
+      "start_seconds": 741.6,
+      "end_seconds": 750.32
+    },
+    {
+      "text": "でもう少しだけ続けてみてください。",
+      "start_seconds": 745.44,
+      "end_seconds": 753.839
+    },
+    {
+      "text": "その先に自分だけの景色がきっとあります",
+      "start_seconds": 750.32,
+      "end_seconds": 755.9590000000001
+    },
+    {
+      "text": "。",
+      "start_seconds": 753.839,
+      "end_seconds": 758.6800000000001
+    },
+    {
+      "text": "好きなことを続けると世界が広がる。",
+      "start_seconds": 755.959,
+      "end_seconds": 764.279
+    },
+    {
+      "text": "そして世界が広がるともっと好きになる。",
+      "start_seconds": 758.68,
+      "end_seconds": 767.8
+    },
+    {
+      "text": "最後に少しだけバイオリンの演奏をさせて",
+      "start_seconds": 764.279,
+      "end_seconds": 770.199
+    },
+    {
+      "text": "いただきます。",
+      "start_seconds": 767.8,
+      "end_seconds": 773.959
+    },
+    {
+      "text": "今までの経験や留学を通して生まれた曲",
+      "start_seconds": 770.199,
+      "end_seconds": 778.8
+    },
+    {
+      "text": "です。どうぞ聞いてください。",
+      "start_seconds": 773.959,
+      "end_seconds": 778.8
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 780.768,
+      "end_seconds": 782.788
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 803.694,
+      "end_seconds": 805.7139999999999
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 820.724,
+      "end_seconds": 822.744
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 827.274,
+      "end_seconds": 829.294
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 852.819,
+      "end_seconds": 854.8389999999999
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 869.849,
+      "end_seconds": 871.869
+    },
+    {
+      "text": "ありがとうございました。",
+      "start_seconds": 877.72,
+      "end_seconds": 882.35
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 880.33,
+      "end_seconds": 882.35
+    }
+  ],
+  "display_captions": [
+    {
+      "text": "[音楽]",
+      "start_seconds": 7.86,
+      "end_seconds": 9.88,
+      "id": "WZvDiQYqj0E-display-0001",
+      "segment_id": "WZvDiQYqj0E-ja-0001"
+    },
+    {
+      "text": "今皆さんは熱中するほど好きなことはあり",
+      "start_seconds": 13.0,
+      "end_seconds": 16.52,
+      "id": "WZvDiQYqj0E-display-0002",
+      "segment_id": "WZvDiQYqj0E-ja-0002"
+    },
+    {
+      "text": "ますか?",
+      "start_seconds": 16.52,
+      "end_seconds": 18.64,
+      "id": "WZvDiQYqj0E-display-0003",
+      "segment_id": "WZvDiQYqj0E-ja-0002"
+    },
+    {
+      "text": "でもそれを途中で諦めたりしていませんか",
+      "start_seconds": 18.64,
+      "end_seconds": 22.439,
+      "id": "WZvDiQYqj0E-display-0004",
+      "segment_id": "WZvDiQYqj0E-ja-0003"
+    },
+    {
+      "text": "?失敗して落ち込んだり、お金や時間が",
+      "start_seconds": 22.439,
+      "end_seconds": 27.76,
+      "id": "WZvDiQYqj0E-display-0005",
+      "segment_id": "WZvDiQYqj0E-ja-0003"
+    },
+    {
+      "text": "足りなかっあり",
+      "start_seconds": 27.76,
+      "end_seconds": 30.359,
+      "id": "WZvDiQYqj0E-display-0006",
+      "segment_id": "WZvDiQYqj0E-ja-0003"
+    },
+    {
+      "text": "続けたかったのにやめてしまったこと",
+      "start_seconds": 30.359,
+      "end_seconds": 33.76,
+      "id": "WZvDiQYqj0E-display-0007",
+      "segment_id": "WZvDiQYqj0E-ja-0004"
+    },
+    {
+      "text": "誰にでも1つや2つあると思います。",
+      "start_seconds": 33.76,
+      "end_seconds": 38.84,
+      "id": "WZvDiQYqj0E-display-0008",
+      "segment_id": "WZvDiQYqj0E-ja-0004"
+    },
+    {
+      "text": "僕は好きな音楽を続けてきたことで人生が",
+      "start_seconds": 38.84,
+      "end_seconds": 43.079,
+      "id": "WZvDiQYqj0E-display-0009",
+      "segment_id": "WZvDiQYqj0E-ja-0005"
+    },
+    {
+      "text": "大きく変わりました。",
+      "start_seconds": 43.079,
+      "end_seconds": 46.6,
+      "id": "WZvDiQYqj0E-display-0010",
+      "segment_id": "WZvDiQYqj0E-ja-0005"
+    },
+    {
+      "text": "国籍も職業も年齢も違う人たちと出会い、",
+      "start_seconds": 46.6,
+      "end_seconds": 51.559,
+      "id": "WZvDiQYqj0E-display-0011",
+      "segment_id": "WZvDiQYqj0E-ja-0006"
+    },
+    {
+      "text": "様々な経験をし、自分では想像もしてい",
+      "start_seconds": 51.559,
+      "end_seconds": 56.16,
+      "id": "WZvDiQYqj0E-display-0012",
+      "segment_id": "WZvDiQYqj0E-ja-0006"
+    },
+    {
+      "text": "なかった景色を見ることができました。",
+      "start_seconds": 56.16,
+      "end_seconds": 60.879,
+      "id": "WZvDiQYqj0E-display-0013",
+      "segment_id": "WZvDiQYqj0E-ja-0007"
+    },
+    {
+      "text": "今日は好きなことを続けることで何が起き",
+      "start_seconds": 60.879,
+      "end_seconds": 64.239,
+      "id": "WZvDiQYqj0E-display-0014",
+      "segment_id": "WZvDiQYqj0E-ja-0008"
+    },
+    {
+      "text": "たのか、僕自身の体験をお話ししたいと",
+      "start_seconds": 64.239,
+      "end_seconds": 68.4,
+      "id": "WZvDiQYqj0E-display-0015",
+      "segment_id": "WZvDiQYqj0E-ja-0008"
+    },
+    {
+      "text": "思います。",
+      "start_seconds": 68.4,
+      "end_seconds": 71.28,
+      "id": "WZvDiQYqj0E-display-0016",
+      "segment_id": "WZvDiQYqj0E-ja-0008"
+    },
+    {
+      "text": "皆さん、こんにちは。バイリニストのあ木",
+      "start_seconds": 71.28,
+      "end_seconds": 74.4,
+      "id": "WZvDiQYqj0E-display-0017",
+      "segment_id": "WZvDiQYqj0E-ja-0009"
+    },
+    {
+      "text": "です。",
+      "start_seconds": 74.4,
+      "end_seconds": 76.4,
+      "id": "WZvDiQYqj0E-display-0018",
+      "segment_id": "WZvDiQYqj0E-ja-0009"
+    },
+    {
+      "text": "バイオリント聞くとクラシック音楽を",
+      "start_seconds": 76.4,
+      "end_seconds": 79.64,
+      "id": "WZvDiQYqj0E-display-0019",
+      "segment_id": "WZvDiQYqj0E-ja-0010"
+    },
+    {
+      "text": "思い浮かべる方も多いと思います。でも僕",
+      "start_seconds": 79.64,
+      "end_seconds": 83.72,
+      "id": "WZvDiQYqj0E-display-0020",
+      "segment_id": "WZvDiQYqj0E-ja-0010"
+    },
+    {
+      "text": "が引いてるのはポップスR&B",
+      "start_seconds": 83.72,
+      "end_seconds": 87.68,
+      "id": "WZvDiQYqj0E-display-0021",
+      "segment_id": "WZvDiQYqj0E-ja-0010"
+    },
+    {
+      "text": "ヒップホップ",
+      "start_seconds": 87.68,
+      "end_seconds": 89.84,
+      "id": "WZvDiQYqj0E-display-0022",
+      "segment_id": "WZvDiQYqj0E-ja-0011"
+    },
+    {
+      "text": "いわゆるクラシックとは少し違う音楽です",
+      "start_seconds": 89.84,
+      "end_seconds": 93.32,
+      "id": "WZvDiQYqj0E-display-0023",
+      "segment_id": "WZvDiQYqj0E-ja-0011"
+    },
+    {
+      "text": "。僕は5歳の頃からバイオリンを始め、",
+      "start_seconds": 93.32,
+      "end_seconds": 98.799,
+      "id": "WZvDiQYqj0E-display-0024",
+      "segment_id": "WZvDiQYqj0E-ja-0011"
+    },
+    {
+      "text": "レッスンではずっとクラシックを演奏して",
+      "start_seconds": 98.799,
+      "end_seconds": 102.119,
+      "id": "WZvDiQYqj0E-display-0025",
+      "segment_id": "WZvDiQYqj0E-ja-0012"
+    },
+    {
+      "text": "いました。",
+      "start_seconds": 102.119,
+      "end_seconds": 104.439,
+      "id": "WZvDiQYqj0E-display-0026",
+      "segment_id": "WZvDiQYqj0E-ja-0012"
+    },
+    {
+      "text": "しかし当時から夢中だったのは洋楽でした",
+      "start_seconds": 104.439,
+      "end_seconds": 109.119,
+      "id": "WZvDiQYqj0E-display-0027",
+      "segment_id": "WZvDiQYqj0E-ja-0013"
+    },
+    {
+      "text": "。",
+      "start_seconds": 109.119,
+      "end_seconds": 110.68,
+      "id": "WZvDiQYqj0E-display-0028",
+      "segment_id": "WZvDiQYqj0E-ja-0013"
+    },
+    {
+      "text": "マイケルジャクソンやビートルズ、",
+      "start_seconds": 110.68,
+      "end_seconds": 114.159,
+      "id": "WZvDiQYqj0E-display-0029",
+      "segment_id": "WZvDiQYqj0E-ja-0014"
+    },
+    {
+      "text": "エルビスプレスリーなど海外の音楽を聞く",
+      "start_seconds": 114.159,
+      "end_seconds": 118.039,
+      "id": "WZvDiQYqj0E-display-0030",
+      "segment_id": "WZvDiQYqj0E-ja-0014"
+    },
+    {
+      "text": "のが大好きでした。",
+      "start_seconds": 118.039,
+      "end_seconds": 121.799,
+      "id": "WZvDiQYqj0E-display-0031",
+      "segment_id": "WZvDiQYqj0E-ja-0014"
+    },
+    {
+      "text": "また小学校や中学校では野球にも取り組ん",
+      "start_seconds": 121.799,
+      "end_seconds": 126.6,
+      "id": "WZvDiQYqj0E-display-0032",
+      "segment_id": "WZvDiQYqj0E-ja-0015"
+    },
+    {
+      "text": "でいました。",
+      "start_seconds": 126.6,
+      "end_seconds": 128.599,
+      "id": "WZvDiQYqj0E-display-0033",
+      "segment_id": "WZvDiQYqj0E-ja-0015"
+    },
+    {
+      "text": "正直当時はバイオリンより野球の方が中心",
+      "start_seconds": 128.599,
+      "end_seconds": 132.12,
+      "id": "WZvDiQYqj0E-display-0034",
+      "segment_id": "WZvDiQYqj0E-ja-0016"
+    },
+    {
+      "text": "でした。",
+      "start_seconds": 132.12,
+      "end_seconds": 134.48,
+      "id": "WZvDiQYqj0E-display-0035",
+      "segment_id": "WZvDiQYqj0E-ja-0016"
+    },
+    {
+      "text": "それでもバイオリンだけはやめませんでし",
+      "start_seconds": 134.48,
+      "end_seconds": 137.16,
+      "id": "WZvDiQYqj0E-display-0036",
+      "segment_id": "WZvDiQYqj0E-ja-0017"
+    },
+    {
+      "text": "た。理由はシンプルで引くことがただ好き",
+      "start_seconds": 137.16,
+      "end_seconds": 141.64,
+      "id": "WZvDiQYqj0E-display-0037",
+      "segment_id": "WZvDiQYqj0E-ja-0017"
+    },
+    {
+      "text": "だったからです。",
+      "start_seconds": 141.64,
+      "end_seconds": 144.239,
+      "id": "WZvDiQYqj0E-display-0038",
+      "segment_id": "WZvDiQYqj0E-ja-0017"
+    },
+    {
+      "text": "今振り返るとそれが最初の続けた選択だっ",
+      "start_seconds": 144.239,
+      "end_seconds": 148.84,
+      "id": "WZvDiQYqj0E-display-0039",
+      "segment_id": "WZvDiQYqj0E-ja-0018"
+    },
+    {
+      "text": "たと思います。",
+      "start_seconds": 148.84,
+      "end_seconds": 152.239,
+      "id": "WZvDiQYqj0E-display-0040",
+      "segment_id": "WZvDiQYqj0E-ja-0018"
+    },
+    {
+      "text": "大学に進み音楽大学でクラシックを専門に",
+      "start_seconds": 152.239,
+      "end_seconds": 156.68,
+      "id": "WZvDiQYqj0E-display-0041",
+      "segment_id": "WZvDiQYqj0E-ja-0019"
+    },
+    {
+      "text": "学びました。",
+      "start_seconds": 156.68,
+      "end_seconds": 159.12,
+      "id": "WZvDiQYqj0E-display-0042",
+      "segment_id": "WZvDiQYqj0E-ja-0019"
+    },
+    {
+      "text": "学譜を読み解き、曲の背景や歴史、作曲家",
+      "start_seconds": 159.12,
+      "end_seconds": 163.68,
+      "id": "WZvDiQYqj0E-display-0043",
+      "segment_id": "WZvDiQYqj0E-ja-0020"
+    },
+    {
+      "text": "の思いを知る中で",
+      "start_seconds": 163.68,
+      "end_seconds": 166.319,
+      "id": "WZvDiQYqj0E-display-0044",
+      "segment_id": "WZvDiQYqj0E-ja-0020"
+    },
+    {
+      "text": "音楽への理解はどんどん深くなってきまし",
+      "start_seconds": 166.319,
+      "end_seconds": 169.12,
+      "id": "WZvDiQYqj0E-display-0045",
+      "segment_id": "WZvDiQYqj0E-ja-0020"
+    },
+    {
+      "text": "た。",
+      "start_seconds": 169.12,
+      "end_seconds": 171.159,
+      "id": "WZvDiQYqj0E-display-0046",
+      "segment_id": "WZvDiQYqj0E-ja-0021"
+    },
+    {
+      "text": "音楽はただ音を並べるだけのものではなく",
+      "start_seconds": 171.159,
+      "end_seconds": 174.56,
+      "id": "WZvDiQYqj0E-display-0047",
+      "segment_id": "WZvDiQYqj0E-ja-0022"
+    },
+    {
+      "text": "て、1つ1つのフレーズに意味があり、",
+      "start_seconds": 174.56,
+      "end_seconds": 178.36,
+      "id": "WZvDiQYqj0E-display-0048",
+      "segment_id": "WZvDiQYqj0E-ja-0022"
+    },
+    {
+      "text": "そこに時代や人生が刻まれている。その",
+      "start_seconds": 178.36,
+      "end_seconds": 183.44,
+      "id": "WZvDiQYqj0E-display-0049",
+      "segment_id": "WZvDiQYqj0E-ja-0023"
+    },
+    {
+      "text": "経験は僕の音楽への印象をより深く豊かな",
+      "start_seconds": 183.44,
+      "end_seconds": 187.879,
+      "id": "WZvDiQYqj0E-display-0050",
+      "segment_id": "WZvDiQYqj0E-ja-0023"
+    },
+    {
+      "text": "ものにしてくれました。",
+      "start_seconds": 187.879,
+      "end_seconds": 190.879,
+      "id": "WZvDiQYqj0E-display-0051",
+      "segment_id": "WZvDiQYqj0E-ja-0024"
+    },
+    {
+      "text": "でも一方で心のどこかではずっとこう思っ",
+      "start_seconds": 190.879,
+      "end_seconds": 195.28,
+      "id": "WZvDiQYqj0E-display-0052",
+      "segment_id": "WZvDiQYqj0E-ja-0025"
+    },
+    {
+      "text": "ていました。クラシックだけではなくて",
+      "start_seconds": 195.28,
+      "end_seconds": 198.92,
+      "id": "WZvDiQYqj0E-display-0053",
+      "segment_id": "WZvDiQYqj0E-ja-0025"
+    },
+    {
+      "text": "もっと自分の好きな音楽を聞きたい。",
+      "start_seconds": 198.92,
+      "end_seconds": 203.599,
+      "id": "WZvDiQYqj0E-display-0054",
+      "segment_id": "WZvDiQYqj0E-ja-0026"
+    },
+    {
+      "text": "そこで僕は子供の頃から聞いていた洋楽や",
+      "start_seconds": 203.599,
+      "end_seconds": 208.519,
+      "id": "WZvDiQYqj0E-display-0055",
+      "segment_id": "WZvDiQYqj0E-ja-0027"
+    },
+    {
+      "text": "ポップス音楽をバイオリンで演奏し始め",
+      "start_seconds": 208.519,
+      "end_seconds": 211.64,
+      "id": "WZvDiQYqj0E-display-0056",
+      "segment_id": "WZvDiQYqj0E-ja-0027"
+    },
+    {
+      "text": "ました。グループでもまた1人でも",
+      "start_seconds": 211.64,
+      "end_seconds": 215.84,
+      "id": "WZvDiQYqj0E-display-0057",
+      "segment_id": "WZvDiQYqj0E-ja-0028"
+    },
+    {
+      "text": "ステージに立つ機会がどんどん増えていき",
+      "start_seconds": 215.84,
+      "end_seconds": 218.72,
+      "id": "WZvDiQYqj0E-display-0058",
+      "segment_id": "WZvDiQYqj0E-ja-0028"
+    },
+    {
+      "text": "ました。",
+      "start_seconds": 218.72,
+      "end_seconds": 220.84,
+      "id": "WZvDiQYqj0E-display-0059",
+      "segment_id": "WZvDiQYqj0E-ja-0028"
+    },
+    {
+      "text": "好きな音楽を自分の楽器で表現してみたい",
+      "start_seconds": 220.84,
+      "end_seconds": 224.159,
+      "id": "WZvDiQYqj0E-display-0060",
+      "segment_id": "WZvDiQYqj0E-ja-0029"
+    },
+    {
+      "text": "。その気持ちに少しずつ正直になっていっ",
+      "start_seconds": 224.159,
+      "end_seconds": 228.319,
+      "id": "WZvDiQYqj0E-display-0061",
+      "segment_id": "WZvDiQYqj0E-ja-0029"
+    },
+    {
+      "text": "たんです。",
+      "start_seconds": 228.319,
+      "end_seconds": 230.879,
+      "id": "WZvDiQYqj0E-display-0062",
+      "segment_id": "WZvDiQYqj0E-ja-0029"
+    },
+    {
+      "text": "そうして演奏し続けるうちにこのままで",
+      "start_seconds": 230.879,
+      "end_seconds": 234.239,
+      "id": "WZvDiQYqj0E-display-0063",
+      "segment_id": "WZvDiQYqj0E-ja-0030"
+    },
+    {
+      "text": "いいのかという思いが強くなっていきまし",
+      "start_seconds": 234.239,
+      "end_seconds": 237.0,
+      "id": "WZvDiQYqj0E-display-0064",
+      "segment_id": "WZvDiQYqj0E-ja-0030"
+    },
+    {
+      "text": "た。",
+      "start_seconds": 237.0,
+      "end_seconds": 239.079,
+      "id": "WZvDiQYqj0E-display-0065",
+      "segment_id": "WZvDiQYqj0E-ja-0030"
+    },
+    {
+      "text": "本当にやりたい音楽は何か?またそれを",
+      "start_seconds": 239.079,
+      "end_seconds": 242.84,
+      "id": "WZvDiQYqj0E-display-0066",
+      "segment_id": "WZvDiQYqj0E-ja-0031"
+    },
+    {
+      "text": "どこで表現したいのか。",
+      "start_seconds": 242.84,
+      "end_seconds": 246.36,
+      "id": "WZvDiQYqj0E-display-0067",
+      "segment_id": "WZvDiQYqj0E-ja-0031"
+    },
+    {
+      "text": "その答えを探す中でふと思ったんです。",
+      "start_seconds": 246.36,
+      "end_seconds": 251.04,
+      "id": "WZvDiQYqj0E-display-0068",
+      "segment_id": "WZvDiQYqj0E-ja-0032"
+    },
+    {
+      "text": "ほんまに行ってみようと。",
+      "start_seconds": 251.04,
+      "end_seconds": 254.28,
+      "id": "WZvDiQYqj0E-display-0069",
+      "segment_id": "WZvDiQYqj0E-ja-0033"
+    },
+    {
+      "text": "もちろん簡単な決断ではありませんでした",
+      "start_seconds": 254.28,
+      "end_seconds": 257.359,
+      "id": "WZvDiQYqj0E-display-0070",
+      "segment_id": "WZvDiQYqj0E-ja-0034"
+    },
+    {
+      "text": "。",
+      "start_seconds": 257.359,
+      "end_seconds": 259.0,
+      "id": "WZvDiQYqj0E-display-0071",
+      "segment_id": "WZvDiQYqj0E-ja-0034"
+    },
+    {
+      "text": "お金もない。英語もろに話せない。それで",
+      "start_seconds": 259.0,
+      "end_seconds": 263.8,
+      "id": "WZvDiQYqj0E-display-0072",
+      "segment_id": "WZvDiQYqj0E-ja-0035"
+    },
+    {
+      "text": "も今動かなければ",
+      "start_seconds": 263.8,
+      "end_seconds": 267.28,
+      "id": "WZvDiQYqj0E-display-0073",
+      "segment_id": "WZvDiQYqj0E-ja-0035"
+    },
+    {
+      "text": "絶対に後悔する。そう思いました。",
+      "start_seconds": 267.28,
+      "end_seconds": 272.36,
+      "id": "WZvDiQYqj0E-display-0074",
+      "segment_id": "WZvDiQYqj0E-ja-0036"
+    },
+    {
+      "text": "そして僕はロサンゼルスへの留学を決意し",
+      "start_seconds": 272.36,
+      "end_seconds": 276.44,
+      "id": "WZvDiQYqj0E-display-0075",
+      "segment_id": "WZvDiQYqj0E-ja-0037"
+    },
+    {
+      "text": "ました。",
+      "start_seconds": 276.44,
+      "end_seconds": 278.6,
+      "id": "WZvDiQYqj0E-display-0076",
+      "segment_id": "WZvDiQYqj0E-ja-0037"
+    },
+    {
+      "text": "一度実家のある福岡県に戻り",
+      "start_seconds": 278.6,
+      "end_seconds": 283.12,
+      "id": "WZvDiQYqj0E-display-0077",
+      "segment_id": "WZvDiQYqj0E-ja-0038"
+    },
+    {
+      "text": "留学資金を貯めるためにゴミ収集者の",
+      "start_seconds": 283.12,
+      "end_seconds": 286.72,
+      "id": "WZvDiQYqj0E-display-0078",
+      "segment_id": "WZvDiQYqj0E-ja-0038"
+    },
+    {
+      "text": "アルバイトや",
+      "start_seconds": 286.72,
+      "end_seconds": 288.919,
+      "id": "WZvDiQYqj0E-display-0079",
+      "segment_id": "WZvDiQYqj0E-ja-0038"
+    },
+    {
+      "text": "地元の工場で働きながら",
+      "start_seconds": 288.919,
+      "end_seconds": 292.68,
+      "id": "WZvDiQYqj0E-display-0080",
+      "segment_id": "WZvDiQYqj0E-ja-0039"
+    },
+    {
+      "text": "仕事から帰ってバイオリンの練習をする。",
+      "start_seconds": 292.68,
+      "end_seconds": 296.759,
+      "id": "WZvDiQYqj0E-display-0081",
+      "segment_id": "WZvDiQYqj0E-ja-0039"
+    },
+    {
+      "text": "そんな日々を続けました。",
+      "start_seconds": 296.759,
+      "end_seconds": 300.08,
+      "id": "WZvDiQYqj0E-display-0082",
+      "segment_id": "WZvDiQYqj0E-ja-0040"
+    },
+    {
+      "text": "そうして半年後、ようやくロサンゼルスの",
+      "start_seconds": 300.08,
+      "end_seconds": 304.36,
+      "id": "WZvDiQYqj0E-display-0083",
+      "segment_id": "WZvDiQYqj0E-ja-0041"
+    },
+    {
+      "text": "空港に降り立ちました。",
+      "start_seconds": 304.36,
+      "end_seconds": 308.32,
+      "id": "WZvDiQYqj0E-display-0084",
+      "segment_id": "WZvDiQYqj0E-ja-0041"
+    },
+    {
+      "text": "ロサンゼルスについてまず驚いたのは音楽",
+      "start_seconds": 308.32,
+      "end_seconds": 313.12,
+      "id": "WZvDiQYqj0E-display-0085",
+      "segment_id": "WZvDiQYqj0E-ja-0042"
+    },
+    {
+      "text": "が人々の生活の中に自然と溶け込んでいる",
+      "start_seconds": 313.12,
+      "end_seconds": 317.28,
+      "id": "WZvDiQYqj0E-display-0086",
+      "segment_id": "WZvDiQYqj0E-ja-0042"
+    },
+    {
+      "text": "ことでした。",
+      "start_seconds": 317.28,
+      "end_seconds": 319.52,
+      "id": "WZvDiQYqj0E-display-0087",
+      "segment_id": "WZvDiQYqj0E-ja-0042"
+    },
+    {
+      "text": "街中でもレストランやビーチでも中夜問わ",
+      "start_seconds": 319.52,
+      "end_seconds": 323.919,
+      "id": "WZvDiQYqj0E-display-0088",
+      "segment_id": "WZvDiQYqj0E-ja-0043"
+    },
+    {
+      "text": "ずあらゆる場所で音楽が鳴っている。",
+      "start_seconds": 323.919,
+      "end_seconds": 328.56,
+      "id": "WZvDiQYqj0E-display-0089",
+      "segment_id": "WZvDiQYqj0E-ja-0043"
+    },
+    {
+      "text": "その光景を見て僕はこう思いました。",
+      "start_seconds": 328.56,
+      "end_seconds": 333.16,
+      "id": "WZvDiQYqj0E-display-0090",
+      "segment_id": "WZvDiQYqj0E-ja-0044"
+    },
+    {
+      "text": "ここで路上ライブをやってみようと。",
+      "start_seconds": 333.16,
+      "end_seconds": 338.52,
+      "id": "WZvDiQYqj0E-display-0091",
+      "segment_id": "WZvDiQYqj0E-ja-0045"
+    },
+    {
+      "text": "いざ路上ライブを始めてみるとクラシック",
+      "start_seconds": 338.52,
+      "end_seconds": 342.199,
+      "id": "WZvDiQYqj0E-display-0092",
+      "segment_id": "WZvDiQYqj0E-ja-0046"
+    },
+    {
+      "text": "とはまた違った反応が返ってきたんです。",
+      "start_seconds": 342.199,
+      "end_seconds": 347.4,
+      "id": "WZvDiQYqj0E-display-0093",
+      "segment_id": "WZvDiQYqj0E-ja-0046"
+    },
+    {
+      "text": "完成が違う。ノりが違う。自然と人が",
+      "start_seconds": 347.4,
+      "end_seconds": 352.039,
+      "id": "WZvDiQYqj0E-display-0094",
+      "segment_id": "WZvDiQYqj0E-ja-0047"
+    },
+    {
+      "text": "踊り出す、歌い出す。気づけば隣で演奏し",
+      "start_seconds": 352.039,
+      "end_seconds": 357.0,
+      "id": "WZvDiQYqj0E-display-0095",
+      "segment_id": "WZvDiQYqj0E-ja-0047"
+    },
+    {
+      "text": "ていたミュージシャンと即興でコラボが",
+      "start_seconds": 357.0,
+      "end_seconds": 360.36,
+      "id": "WZvDiQYqj0E-display-0096",
+      "segment_id": "WZvDiQYqj0E-ja-0048"
+    },
+    {
+      "text": "始まる。その全てが新鮮でもっと続けたい",
+      "start_seconds": 360.36,
+      "end_seconds": 366.88,
+      "id": "WZvDiQYqj0E-display-0097",
+      "segment_id": "WZvDiQYqj0E-ja-0048"
+    },
+    {
+      "text": "そう思えた瞬間でした。",
+      "start_seconds": 366.88,
+      "end_seconds": 370.96,
+      "id": "WZvDiQYqj0E-display-0098",
+      "segment_id": "WZvDiQYqj0E-ja-0049"
+    },
+    {
+      "text": "路上ライブの楽しさを知ってから",
+      "start_seconds": 370.96,
+      "end_seconds": 374.4,
+      "id": "WZvDiQYqj0E-display-0099",
+      "segment_id": "WZvDiQYqj0E-ja-0050"
+    },
+    {
+      "text": "ビーチやハリウッド、サンタモニカや",
+      "start_seconds": 374.4,
+      "end_seconds": 378.4,
+      "id": "WZvDiQYqj0E-display-0100",
+      "segment_id": "WZvDiQYqj0E-ja-0050"
+    },
+    {
+      "text": "ラスベガスなど様々な場所でバイオリンの",
+      "start_seconds": 378.4,
+      "end_seconds": 382.44,
+      "id": "WZvDiQYqj0E-display-0101",
+      "segment_id": "WZvDiQYqj0E-ja-0050"
+    },
+    {
+      "text": "演奏をするようになりました。",
+      "start_seconds": 382.44,
+      "end_seconds": 386.12,
+      "id": "WZvDiQYqj0E-display-0102",
+      "segment_id": "WZvDiQYqj0E-ja-0051"
+    },
+    {
+      "text": "中でもよく言っていたのがハンティントン",
+      "start_seconds": 386.12,
+      "end_seconds": 390.24,
+      "id": "WZvDiQYqj0E-display-0103",
+      "segment_id": "WZvDiQYqj0E-ja-0052"
+    },
+    {
+      "text": "ビーチでした。",
+      "start_seconds": 390.24,
+      "end_seconds": 393.88,
+      "id": "WZvDiQYqj0E-display-0104",
+      "segment_id": "WZvDiQYqj0E-ja-0052"
+    },
+    {
+      "text": "そこは夕日がとっても綺麗で長い三橋が",
+      "start_seconds": 393.96,
+      "end_seconds": 397.919,
+      "id": "WZvDiQYqj0E-display-0105",
+      "segment_id": "WZvDiQYqj0E-ja-0053"
+    },
+    {
+      "text": "あり、僕は週に2回くらいそこで路ライブ",
+      "start_seconds": 397.919,
+      "end_seconds": 402.599,
+      "id": "WZvDiQYqj0E-display-0106",
+      "segment_id": "WZvDiQYqj0E-ja-0053"
+    },
+    {
+      "text": "していました。",
+      "start_seconds": 402.599,
+      "end_seconds": 405.039,
+      "id": "WZvDiQYqj0E-display-0107",
+      "segment_id": "WZvDiQYqj0E-ja-0053"
+    },
+    {
+      "text": "夕日が沈む時間になると人がたくさん",
+      "start_seconds": 405.039,
+      "end_seconds": 408.12,
+      "id": "WZvDiQYqj0E-display-0108",
+      "segment_id": "WZvDiQYqj0E-ja-0054"
+    },
+    {
+      "text": "集まってきて",
+      "start_seconds": 408.12,
+      "end_seconds": 410.28,
+      "id": "WZvDiQYqj0E-display-0109",
+      "segment_id": "WZvDiQYqj0E-ja-0054"
+    },
+    {
+      "text": "カップルも多くそのタイミングで",
+      "start_seconds": 410.28,
+      "end_seconds": 414.319,
+      "id": "WZvDiQYqj0E-display-0110",
+      "segment_id": "WZvDiQYqj0E-ja-0054"
+    },
+    {
+      "text": "タイタニックとかロマンチックな曲を演奏",
+      "start_seconds": 414.319,
+      "end_seconds": 419.12,
+      "id": "WZvDiQYqj0E-display-0111",
+      "segment_id": "WZvDiQYqj0E-ja-0055"
+    },
+    {
+      "text": "するとカップルがいい感じになってですね",
+      "start_seconds": 419.12,
+      "end_seconds": 422.479,
+      "id": "WZvDiQYqj0E-display-0112",
+      "segment_id": "WZvDiQYqj0E-ja-0055"
+    },
+    {
+      "text": "。",
+      "start_seconds": 422.479,
+      "end_seconds": 424.08,
+      "id": "WZvDiQYqj0E-display-0113",
+      "segment_id": "WZvDiQYqj0E-ja-0055"
+    },
+    {
+      "text": "はい。たくさんチップが入るんです。",
+      "start_seconds": 424.08,
+      "end_seconds": 428.56,
+      "id": "WZvDiQYqj0E-display-0114",
+      "segment_id": "WZvDiQYqj0E-ja-0056"
+    },
+    {
+      "text": "その時僕はこう思いました。",
+      "start_seconds": 428.56,
+      "end_seconds": 432.199,
+      "id": "WZvDiQYqj0E-display-0115",
+      "segment_id": "WZvDiQYqj0E-ja-0057"
+    },
+    {
+      "text": "これは夕日で稼いでんだって。",
+      "start_seconds": 432.199,
+      "end_seconds": 436.08,
+      "id": "WZvDiQYqj0E-display-0116",
+      "segment_id": "WZvDiQYqj0E-ja-0058"
+    },
+    {
+      "text": "でもそんな日々は突然終わりました。",
+      "start_seconds": 436.08,
+      "end_seconds": 440.039,
+      "id": "WZvDiQYqj0E-display-0117",
+      "segment_id": "WZvDiQYqj0E-ja-0059"
+    },
+    {
+      "text": "コロナでした。路上ライブはできなくなり",
+      "start_seconds": 440.039,
+      "end_seconds": 443.96,
+      "id": "WZvDiQYqj0E-display-0118",
+      "segment_id": "WZvDiQYqj0E-ja-0060"
+    },
+    {
+      "text": "、外出することすらできない。家にこもる",
+      "start_seconds": 443.96,
+      "end_seconds": 448.72,
+      "id": "WZvDiQYqj0E-display-0119",
+      "segment_id": "WZvDiQYqj0E-ja-0060"
+    },
+    {
+      "text": "生活が続いて精神的にも金銭的にも正直",
+      "start_seconds": 448.72,
+      "end_seconds": 454.56,
+      "id": "WZvDiQYqj0E-display-0120",
+      "segment_id": "WZvDiQYqj0E-ja-0061"
+    },
+    {
+      "text": "しんどかったです。",
+      "start_seconds": 454.56,
+      "end_seconds": 457.84,
+      "id": "WZvDiQYqj0E-display-0121",
+      "segment_id": "WZvDiQYqj0E-ja-0061"
+    },
+    {
+      "text": "でもその時間があったからこそまた僕は",
+      "start_seconds": 457.84,
+      "end_seconds": 462.28,
+      "id": "WZvDiQYqj0E-display-0122",
+      "segment_id": "WZvDiQYqj0E-ja-0062"
+    },
+    {
+      "text": "新しい一歩を踏み出しました。",
+      "start_seconds": 462.28,
+      "end_seconds": 465.68,
+      "id": "WZvDiQYqj0E-display-0123",
+      "segment_id": "WZvDiQYqj0E-ja-0062"
+    },
+    {
+      "text": "マイクをオンラインで購入して自宅で",
+      "start_seconds": 465.68,
+      "end_seconds": 469.879,
+      "id": "WZvDiQYqj0E-display-0124",
+      "segment_id": "WZvDiQYqj0E-ja-0063"
+    },
+    {
+      "text": "バイオリンのレコーディングを始めたん",
+      "start_seconds": 469.879,
+      "end_seconds": 472.039,
+      "id": "WZvDiQYqj0E-display-0125",
+      "segment_id": "WZvDiQYqj0E-ja-0063"
+    },
+    {
+      "text": "です。音を取ってはSNSに投稿する。",
+      "start_seconds": 472.039,
+      "end_seconds": 476.479,
+      "id": "WZvDiQYqj0E-display-0126",
+      "segment_id": "WZvDiQYqj0E-ja-0063"
+    },
+    {
+      "text": "取っては投稿する。それを繰り返していく",
+      "start_seconds": 476.479,
+      "end_seconds": 479.84,
+      "id": "WZvDiQYqj0E-display-0127",
+      "segment_id": "WZvDiQYqj0E-ja-0064"
+    },
+    {
+      "text": "うちに少しずつ変化が起き始めたんです。",
+      "start_seconds": 479.84,
+      "end_seconds": 486.879,
+      "id": "WZvDiQYqj0E-display-0128",
+      "segment_id": "WZvDiQYqj0E-ja-0064"
+    },
+    {
+      "text": "ウェディングで引いてほしい。フェスや",
+      "start_seconds": 486.879,
+      "end_seconds": 489.159,
+      "id": "WZvDiQYqj0E-display-0129",
+      "segment_id": "WZvDiQYqj0E-ja-0065"
+    },
+    {
+      "text": "イベントに出てほしい。ヒップホップの",
+      "start_seconds": 489.159,
+      "end_seconds": 492.84,
+      "id": "WZvDiQYqj0E-display-0130",
+      "segment_id": "WZvDiQYqj0E-ja-0065"
+    },
+    {
+      "text": "バンドに加入してほしい。",
+      "start_seconds": 492.84,
+      "end_seconds": 495.44,
+      "id": "WZvDiQYqj0E-display-0131",
+      "segment_id": "WZvDiQYqj0E-ja-0065"
+    },
+    {
+      "text": "そんな声が届くようになったんです。",
+      "start_seconds": 495.44,
+      "end_seconds": 499.24,
+      "id": "WZvDiQYqj0E-display-0132",
+      "segment_id": "WZvDiQYqj0E-ja-0066"
+    },
+    {
+      "text": "あの時立ち止まっていた時間も無駄では",
+      "start_seconds": 499.24,
+      "end_seconds": 503.28,
+      "id": "WZvDiQYqj0E-display-0133",
+      "segment_id": "WZvDiQYqj0E-ja-0067"
+    },
+    {
+      "text": "なかったんだと思いました。",
+      "start_seconds": 503.28,
+      "end_seconds": 507.52,
+      "id": "WZvDiQYqj0E-display-0134",
+      "segment_id": "WZvDiQYqj0E-ja-0067"
+    },
+    {
+      "text": "好きなことを続けていたら国境を超えて",
+      "start_seconds": 507.52,
+      "end_seconds": 511.4,
+      "id": "WZvDiQYqj0E-display-0135",
+      "segment_id": "WZvDiQYqj0E-ja-0068"
+    },
+    {
+      "text": "多くの人と出会い共感し様々な経験をする",
+      "start_seconds": 511.4,
+      "end_seconds": 516.32,
+      "id": "WZvDiQYqj0E-display-0136",
+      "segment_id": "WZvDiQYqj0E-ja-0068"
+    },
+    {
+      "text": "ことができました。",
+      "start_seconds": 516.32,
+      "end_seconds": 519.88,
+      "id": "WZvDiQYqj0E-display-0137",
+      "segment_id": "WZvDiQYqj0E-ja-0069"
+    },
+    {
+      "text": "その後僕は日本に帰国しました。",
+      "start_seconds": 519.88,
+      "end_seconds": 524.48,
+      "id": "WZvDiQYqj0E-display-0138",
+      "segment_id": "WZvDiQYqj0E-ja-0070"
+    },
+    {
+      "text": "今は軽井沢に住んでいます。実はそれまで",
+      "start_seconds": 524.48,
+      "end_seconds": 528.72,
+      "id": "WZvDiQYqj0E-display-0139",
+      "segment_id": "WZvDiQYqj0E-ja-0071"
+    },
+    {
+      "text": "軽井沢には1度も来たことがありません",
+      "start_seconds": 528.72,
+      "end_seconds": 531.36,
+      "id": "WZvDiQYqj0E-display-0140",
+      "segment_id": "WZvDiQYqj0E-ja-0071"
+    },
+    {
+      "text": "でした。でもロサンゼルスで様々な場所に",
+      "start_seconds": 531.36,
+      "end_seconds": 536.2,
+      "id": "WZvDiQYqj0E-display-0141",
+      "segment_id": "WZvDiQYqj0E-ja-0071"
+    },
+    {
+      "text": "住み、いろんな景色を見てきた中でふと",
+      "start_seconds": 536.2,
+      "end_seconds": 540.56,
+      "id": "WZvDiQYqj0E-display-0142",
+      "segment_id": "WZvDiQYqj0E-ja-0072"
+    },
+    {
+      "text": "軽い竿に住んでみたい。そう思うように",
+      "start_seconds": 540.56,
+      "end_seconds": 543.32,
+      "id": "WZvDiQYqj0E-display-0143",
+      "segment_id": "WZvDiQYqj0E-ja-0072"
+    },
+    {
+      "text": "なったんです。そして気づいたら本当に",
+      "start_seconds": 543.32,
+      "end_seconds": 546.8,
+      "id": "WZvDiQYqj0E-display-0144",
+      "segment_id": "WZvDiQYqj0E-ja-0072"
+    },
+    {
+      "text": "移住していました。",
+      "start_seconds": 546.8,
+      "end_seconds": 549.56,
+      "id": "WZvDiQYqj0E-display-0145",
+      "segment_id": "WZvDiQYqj0E-ja-0073"
+    },
+    {
+      "text": "不思議なもので好きなことを続けていると",
+      "start_seconds": 549.56,
+      "end_seconds": 552.8,
+      "id": "WZvDiQYqj0E-display-0146",
+      "segment_id": "WZvDiQYqj0E-ja-0074"
+    },
+    {
+      "text": "思いもよらない場所へ導かれるんだと感じ",
+      "start_seconds": 552.8,
+      "end_seconds": 556.68,
+      "id": "WZvDiQYqj0E-display-0147",
+      "segment_id": "WZvDiQYqj0E-ja-0074"
+    },
+    {
+      "text": "ています。",
+      "start_seconds": 556.68,
+      "end_seconds": 559.72,
+      "id": "WZvDiQYqj0E-display-0148",
+      "segment_id": "WZvDiQYqj0E-ja-0074"
+    },
+    {
+      "text": "軽井沢に来てからはまずバイオリンの",
+      "start_seconds": 559.72,
+      "end_seconds": 562.92,
+      "id": "WZvDiQYqj0E-display-0149",
+      "segment_id": "WZvDiQYqj0E-ja-0075"
+    },
+    {
+      "text": "レッスンから始めました。",
+      "start_seconds": 562.92,
+      "end_seconds": 566.68,
+      "id": "WZvDiQYqj0E-display-0150",
+      "segment_id": "WZvDiQYqj0E-ja-0075"
+    },
+    {
+      "text": "最初は出張のレッスンからスタートしまし",
+      "start_seconds": 566.68,
+      "end_seconds": 569.8,
+      "id": "WZvDiQYqj0E-display-0151",
+      "segment_id": "WZvDiQYqj0E-ja-0076"
+    },
+    {
+      "text": "たが、今では隣町の小室市にバイリン教室",
+      "start_seconds": 569.8,
+      "end_seconds": 574.72,
+      "id": "WZvDiQYqj0E-display-0152",
+      "segment_id": "WZvDiQYqj0E-ja-0076"
+    },
+    {
+      "text": "を構えています。",
+      "start_seconds": 574.72,
+      "end_seconds": 577.56,
+      "id": "WZvDiQYqj0E-display-0153",
+      "segment_id": "WZvDiQYqj0E-ja-0076"
+    },
+    {
+      "text": "そしてここでもまた新しい出会いが",
+      "start_seconds": 577.56,
+      "end_seconds": 581.279,
+      "id": "WZvDiQYqj0E-display-0154",
+      "segment_id": "WZvDiQYqj0E-ja-0077"
+    },
+    {
+      "text": "たくさん生まれました。",
+      "start_seconds": 581.279,
+      "end_seconds": 584.16,
+      "id": "WZvDiQYqj0E-display-0155",
+      "segment_id": "WZvDiQYqj0E-ja-0077"
+    },
+    {
+      "text": "レッスンを通して出会った生徒さん、演奏",
+      "start_seconds": 584.16,
+      "end_seconds": 586.92,
+      "id": "WZvDiQYqj0E-display-0156",
+      "segment_id": "WZvDiQYqj0E-ja-0078"
+    },
+    {
+      "text": "を通して出会った方々、その語が少しずつ",
+      "start_seconds": 586.92,
+      "end_seconds": 591.6,
+      "id": "WZvDiQYqj0E-display-0157",
+      "segment_id": "WZvDiQYqj0E-ja-0078"
+    },
+    {
+      "text": "広がり、大学で演奏する機会をいいたり、",
+      "start_seconds": 591.6,
+      "end_seconds": 596.56,
+      "id": "WZvDiQYqj0E-display-0158",
+      "segment_id": "WZvDiQYqj0E-ja-0079"
+    },
+    {
+      "text": "オーケストラと共演させていただいたり、",
+      "start_seconds": 596.56,
+      "end_seconds": 600.04,
+      "id": "WZvDiQYqj0E-display-0159",
+      "segment_id": "WZvDiQYqj0E-ja-0079"
+    },
+    {
+      "text": "地元の福岡では小学校や中学校の学校講演",
+      "start_seconds": 600.04,
+      "end_seconds": 605.0,
+      "id": "WZvDiQYqj0E-display-0160",
+      "segment_id": "WZvDiQYqj0E-ja-0080"
+    },
+    {
+      "text": "にも参加させていただいたりしました。",
+      "start_seconds": 605.0,
+      "end_seconds": 609.2,
+      "id": "WZvDiQYqj0E-display-0161",
+      "segment_id": "WZvDiQYqj0E-ja-0080"
+    },
+    {
+      "text": "昔の僕には想像もできなかった景色です。",
+      "start_seconds": 609.2,
+      "end_seconds": 615.72,
+      "id": "WZvDiQYqj0E-display-0162",
+      "segment_id": "WZvDiQYqj0E-ja-0081"
+    },
+    {
+      "text": "振り返ると僕はずっと好きなことを続けて",
+      "start_seconds": 615.72,
+      "end_seconds": 619.6,
+      "id": "WZvDiQYqj0E-display-0163",
+      "segment_id": "WZvDiQYqj0E-ja-0082"
+    },
+    {
+      "text": "きました。",
+      "start_seconds": 619.6,
+      "end_seconds": 621.64,
+      "id": "WZvDiQYqj0E-display-0164",
+      "segment_id": "WZvDiQYqj0E-ja-0082"
+    },
+    {
+      "text": "続けたからこそロサンゼルスン行く",
+      "start_seconds": 621.64,
+      "end_seconds": 624.48,
+      "id": "WZvDiQYqj0E-display-0165",
+      "segment_id": "WZvDiQYqj0E-ja-0083"
+    },
+    {
+      "text": "きっかけが生まれた。",
+      "start_seconds": 624.48,
+      "end_seconds": 627.24,
+      "id": "WZvDiQYqj0E-display-0166",
+      "segment_id": "WZvDiQYqj0E-ja-0083"
+    },
+    {
+      "text": "続けたからこそたくさんの人と出会い、",
+      "start_seconds": 627.24,
+      "end_seconds": 631.6,
+      "id": "WZvDiQYqj0E-display-0167",
+      "segment_id": "WZvDiQYqj0E-ja-0084"
+    },
+    {
+      "text": "そしてジャンルを超えて自分の好きな音楽",
+      "start_seconds": 631.6,
+      "end_seconds": 634.8,
+      "id": "WZvDiQYqj0E-display-0168",
+      "segment_id": "WZvDiQYqj0E-ja-0084"
+    },
+    {
+      "text": "を表現できています。",
+      "start_seconds": 634.8,
+      "end_seconds": 638.12,
+      "id": "WZvDiQYqj0E-display-0169",
+      "segment_id": "WZvDiQYqj0E-ja-0084"
+    },
+    {
+      "text": "今僕にとって音楽そしてバイオリンは心を",
+      "start_seconds": 638.12,
+      "end_seconds": 643.6,
+      "id": "WZvDiQYqj0E-display-0170",
+      "segment_id": "WZvDiQYqj0E-ja-0085"
+    },
+    {
+      "text": "整え、感情を動かし、",
+      "start_seconds": 643.6,
+      "end_seconds": 647.639,
+      "id": "WZvDiQYqj0E-display-0171",
+      "segment_id": "WZvDiQYqj0E-ja-0085"
+    },
+    {
+      "text": "未来を思い描かせてくれるような家がの",
+      "start_seconds": 647.639,
+      "end_seconds": 651.36,
+      "id": "WZvDiQYqj0E-display-0172",
+      "segment_id": "WZvDiQYqj0E-ja-0086"
+    },
+    {
+      "text": "ない存在です。",
+      "start_seconds": 651.36,
+      "end_seconds": 654.88,
+      "id": "WZvDiQYqj0E-display-0173",
+      "segment_id": "WZvDiQYqj0E-ja-0086"
+    },
+    {
+      "text": "僕は最初から自信があったわけでも特別な",
+      "start_seconds": 654.88,
+      "end_seconds": 658.639,
+      "id": "WZvDiQYqj0E-display-0174",
+      "segment_id": "WZvDiQYqj0E-ja-0087"
+    },
+    {
+      "text": "才能があったわけでもありません。それで",
+      "start_seconds": 658.639,
+      "end_seconds": 662.04,
+      "id": "WZvDiQYqj0E-display-0175",
+      "segment_id": "WZvDiQYqj0E-ja-0087"
+    },
+    {
+      "text": "もここまで来られたのはやっぱり続けてき",
+      "start_seconds": 662.04,
+      "end_seconds": 666.12,
+      "id": "WZvDiQYqj0E-display-0176",
+      "segment_id": "WZvDiQYqj0E-ja-0087"
+    },
+    {
+      "text": "たからこそだと思っています。",
+      "start_seconds": 666.12,
+      "end_seconds": 671.279,
+      "id": "WZvDiQYqj0E-display-0177",
+      "segment_id": "WZvDiQYqj0E-ja-0088"
+    },
+    {
+      "text": "好きなことを続けるというのはただ同じ",
+      "start_seconds": 671.279,
+      "end_seconds": 674.519,
+      "id": "WZvDiQYqj0E-display-0178",
+      "segment_id": "WZvDiQYqj0E-ja-0089"
+    },
+    {
+      "text": "ことを繰り返すわけではありません。続け",
+      "start_seconds": 674.519,
+      "end_seconds": 677.8,
+      "id": "WZvDiQYqj0E-display-0179",
+      "segment_id": "WZvDiQYqj0E-ja-0089"
+    },
+    {
+      "text": "ていく中で出会う人が増え、感謝が増え、",
+      "start_seconds": 677.8,
+      "end_seconds": 683.959,
+      "id": "WZvDiQYqj0E-display-0180",
+      "segment_id": "WZvDiQYqj0E-ja-0090"
+    },
+    {
+      "text": "環境が変わり、考えが変わり、気づけば",
+      "start_seconds": 683.959,
+      "end_seconds": 688.56,
+      "id": "WZvDiQYqj0E-display-0181",
+      "segment_id": "WZvDiQYqj0E-ja-0090"
+    },
+    {
+      "text": "自分自身が変わっていく。",
+      "start_seconds": 688.56,
+      "end_seconds": 692.12,
+      "id": "WZvDiQYqj0E-display-0182",
+      "segment_id": "WZvDiQYqj0E-ja-0091"
+    },
+    {
+      "text": "それは未来への可能性を広げてくれる、",
+      "start_seconds": 692.12,
+      "end_seconds": 696.32,
+      "id": "WZvDiQYqj0E-display-0183",
+      "segment_id": "WZvDiQYqj0E-ja-0092"
+    },
+    {
+      "text": "新しい世界へつげてくれる扉でもあります",
+      "start_seconds": 696.32,
+      "end_seconds": 700.079,
+      "id": "WZvDiQYqj0E-display-0184",
+      "segment_id": "WZvDiQYqj0E-ja-0092"
+    },
+    {
+      "text": "。",
+      "start_seconds": 700.079,
+      "end_seconds": 701.76,
+      "id": "WZvDiQYqj0E-display-0185",
+      "segment_id": "WZvDiQYqj0E-ja-0092"
+    },
+    {
+      "text": "しかし好きなことを続けるということは",
+      "start_seconds": 701.76,
+      "end_seconds": 704.88,
+      "id": "WZvDiQYqj0E-display-0186",
+      "segment_id": "WZvDiQYqj0E-ja-0093"
+    },
+    {
+      "text": "決して楽なことではありません。",
+      "start_seconds": 704.88,
+      "end_seconds": 708.839,
+      "id": "WZvDiQYqj0E-display-0187",
+      "segment_id": "WZvDiQYqj0E-ja-0093"
+    },
+    {
+      "text": "思い通りに行かないこともあるし、迷う",
+      "start_seconds": 708.839,
+      "end_seconds": 712.0,
+      "id": "WZvDiQYqj0E-display-0188",
+      "segment_id": "WZvDiQYqj0E-ja-0094"
+    },
+    {
+      "text": "こともたくさんある。",
+      "start_seconds": 712.0,
+      "end_seconds": 714.76,
+      "id": "WZvDiQYqj0E-display-0189",
+      "segment_id": "WZvDiQYqj0E-ja-0094"
+    },
+    {
+      "text": "枕にバイオリンを投げることだってある。",
+      "start_seconds": 714.76,
+      "end_seconds": 719.24,
+      "id": "WZvDiQYqj0E-display-0190",
+      "segment_id": "WZvDiQYqj0E-ja-0095"
+    },
+    {
+      "text": "それでも人生に彩取りを与え、ワクワクさ",
+      "start_seconds": 719.24,
+      "end_seconds": 724.0,
+      "id": "WZvDiQYqj0E-display-0191",
+      "segment_id": "WZvDiQYqj0E-ja-0096"
+    },
+    {
+      "text": "せてくれる。刺激的な人生を送ることが",
+      "start_seconds": 724.0,
+      "end_seconds": 727.959,
+      "id": "WZvDiQYqj0E-display-0192",
+      "segment_id": "WZvDiQYqj0E-ja-0096"
+    },
+    {
+      "text": "できると僕は信じています。",
+      "start_seconds": 727.959,
+      "end_seconds": 732.48,
+      "id": "WZvDiQYqj0E-display-0193",
+      "segment_id": "WZvDiQYqj0E-ja-0097"
+    },
+    {
+      "text": "うまくいかなくてもいい。遠回りでもいい",
+      "start_seconds": 732.48,
+      "end_seconds": 735.88,
+      "id": "WZvDiQYqj0E-display-0194",
+      "segment_id": "WZvDiQYqj0E-ja-0098"
+    },
+    {
+      "text": "。",
+      "start_seconds": 735.88,
+      "end_seconds": 737.44,
+      "id": "WZvDiQYqj0E-display-0195",
+      "segment_id": "WZvDiQYqj0E-ja-0098"
+    },
+    {
+      "text": "もし今迷っている人がいたら、まだ好きと",
+      "start_seconds": 737.44,
+      "end_seconds": 741.6,
+      "id": "WZvDiQYqj0E-display-0196",
+      "segment_id": "WZvDiQYqj0E-ja-0099"
+    },
+    {
+      "text": "言いきれない人がいたら焦らなくていいの",
+      "start_seconds": 741.6,
+      "end_seconds": 745.44,
+      "id": "WZvDiQYqj0E-display-0197",
+      "segment_id": "WZvDiQYqj0E-ja-0099"
+    },
+    {
+      "text": "でもう少しだけ続けてみてください。",
+      "start_seconds": 745.44,
+      "end_seconds": 750.32,
+      "id": "WZvDiQYqj0E-display-0198",
+      "segment_id": "WZvDiQYqj0E-ja-0100"
+    },
+    {
+      "text": "その先に自分だけの景色がきっとあります",
+      "start_seconds": 750.32,
+      "end_seconds": 753.839,
+      "id": "WZvDiQYqj0E-display-0199",
+      "segment_id": "WZvDiQYqj0E-ja-0101"
+    },
+    {
+      "text": "。",
+      "start_seconds": 753.839,
+      "end_seconds": 755.959,
+      "id": "WZvDiQYqj0E-display-0200",
+      "segment_id": "WZvDiQYqj0E-ja-0101"
+    },
+    {
+      "text": "好きなことを続けると世界が広がる。",
+      "start_seconds": 755.959,
+      "end_seconds": 758.68,
+      "id": "WZvDiQYqj0E-display-0201",
+      "segment_id": "WZvDiQYqj0E-ja-0102"
+    },
+    {
+      "text": "そして世界が広がるともっと好きになる。",
+      "start_seconds": 758.68,
+      "end_seconds": 764.279,
+      "id": "WZvDiQYqj0E-display-0202",
+      "segment_id": "WZvDiQYqj0E-ja-0103"
+    },
+    {
+      "text": "最後に少しだけバイオリンの演奏をさせて",
+      "start_seconds": 764.279,
+      "end_seconds": 767.8,
+      "id": "WZvDiQYqj0E-display-0203",
+      "segment_id": "WZvDiQYqj0E-ja-0104"
+    },
+    {
+      "text": "いただきます。",
+      "start_seconds": 767.8,
+      "end_seconds": 770.199,
+      "id": "WZvDiQYqj0E-display-0204",
+      "segment_id": "WZvDiQYqj0E-ja-0104"
+    },
+    {
+      "text": "今までの経験や留学を通して生まれた曲",
+      "start_seconds": 770.199,
+      "end_seconds": 773.959,
+      "id": "WZvDiQYqj0E-display-0205",
+      "segment_id": "WZvDiQYqj0E-ja-0105"
+    },
+    {
+      "text": "です。どうぞ聞いてください。",
+      "start_seconds": 773.959,
+      "end_seconds": 778.8,
+      "id": "WZvDiQYqj0E-display-0206",
+      "segment_id": "WZvDiQYqj0E-ja-0105"
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 780.768,
+      "end_seconds": 782.788,
+      "id": "WZvDiQYqj0E-display-0207",
+      "segment_id": "WZvDiQYqj0E-ja-0106"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 803.694,
+      "end_seconds": 805.7139999999999,
+      "id": "WZvDiQYqj0E-display-0208",
+      "segment_id": "WZvDiQYqj0E-ja-0107"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 820.724,
+      "end_seconds": 822.744,
+      "id": "WZvDiQYqj0E-display-0209",
+      "segment_id": "WZvDiQYqj0E-ja-0108"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 827.274,
+      "end_seconds": 829.294,
+      "id": "WZvDiQYqj0E-display-0210",
+      "segment_id": "WZvDiQYqj0E-ja-0109"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 852.819,
+      "end_seconds": 854.8389999999999,
+      "id": "WZvDiQYqj0E-display-0211",
+      "segment_id": "WZvDiQYqj0E-ja-0110"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 869.849,
+      "end_seconds": 871.869,
+      "id": "WZvDiQYqj0E-display-0212",
+      "segment_id": "WZvDiQYqj0E-ja-0111"
+    },
+    {
+      "text": "ありがとうございました。",
+      "start_seconds": 877.72,
+      "end_seconds": 880.33,
+      "id": "WZvDiQYqj0E-display-0213",
+      "segment_id": "WZvDiQYqj0E-ja-0112"
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 880.33,
+      "end_seconds": 882.35,
+      "id": "WZvDiQYqj0E-display-0214",
+      "segment_id": "WZvDiQYqj0E-ja-0113"
+    }
+  ]
+}

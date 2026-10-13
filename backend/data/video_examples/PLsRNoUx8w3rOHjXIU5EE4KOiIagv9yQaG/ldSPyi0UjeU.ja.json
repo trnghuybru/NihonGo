@@ -1,0 +1,4479 @@
+{
+  "schema_version": 1,
+  "video": {
+    "youtube_id": "ldSPyi0UjeU",
+    "title": "Making it the Norm to Work While Caregiving | Kaori Shiraishi | TEDxAwaji",
+    "channel": "TEDx Talks",
+    "duration_seconds": 1059
+  },
+  "caption_track": {
+    "language": "ja",
+    "kind": "asr",
+    "source": "youtube_automatic"
+  },
+  "source_playlist": "https://www.youtube.com/playlist?list=PLsRNoUx8w3rOHjXIU5EE4KOiIagv9yQaG",
+  "fetched_at": "2026-10-13T13:23:30.913746+00:00",
+  "segment_count": 124,
+  "segments": [
+    {
+      "text": "想像してみてください。",
+      "start_seconds": 3.36,
+      "end_seconds": 6.319,
+      "id": "ldSPyi0UjeU-ja-0001",
+      "sequence": 1
+    },
+    {
+      "text": "長く静まり返った真っ白な廊下を。",
+      "start_seconds": 6.319,
+      "end_seconds": 13.28,
+      "id": "ldSPyi0UjeU-ja-0002",
+      "sequence": 2
+    },
+    {
+      "text": "12年前、私はこの廊下を車椅子で渡っていました。",
+      "start_seconds": 13.28,
+      "end_seconds": 20.199,
+      "id": "ldSPyi0UjeU-ja-0003",
+      "sequence": 3
+    },
+    {
+      "text": "お腹には新しい命が宿っていました。",
+      "start_seconds": 20.199,
+      "end_seconds": 25.359,
+      "id": "ldSPyi0UjeU-ja-0004",
+      "sequence": 4
+    },
+    {
+      "text": "でもこの廊下の先にある病室には末期の母が静かに死へと向かっていました。",
+      "start_seconds": 25.359,
+      "end_seconds": 36.879,
+      "id": "ldSPyi0UjeU-ja-0005",
+      "sequence": 5
+    },
+    {
+      "text": "当時待望の大師を妊娠し、座りに耐いながらも私は日中はフルタイムで働き夜に",
+      "start_seconds": 36.879,
+      "end_seconds": 45.559,
+      "id": "ldSPyi0UjeU-ja-0006",
+      "sequence": 6
+    },
+    {
+      "text": "なると母の病室に駆けつける。そんな少し無理をした生活をしていました。",
+      "start_seconds": 45.559,
+      "end_seconds": 53.52,
+      "id": "ldSPyi0UjeU-ja-0007",
+      "sequence": 7
+    },
+    {
+      "text": "でも当時は本気でこう信じていたんです。",
+      "start_seconds": 53.52,
+      "end_seconds": 57.039,
+      "id": "ldSPyi0UjeU-ja-0008",
+      "sequence": 8
+    },
+    {
+      "text": "私が頑張りさえすれば育児も介護も仕事も母の病気でさえもなんとかなるはずだと。",
+      "start_seconds": 57.039,
+      "end_seconds": 68.2,
+      "id": "ldSPyi0UjeU-ja-0009",
+      "sequence": 9
+    },
+    {
+      "text": "でも現実はそうは甘くはなかった。ある日にこ告けられました。",
+      "start_seconds": 68.2,
+      "end_seconds": 75.92,
+      "id": "ldSPyi0UjeU-ja-0010",
+      "sequence": 10
+    },
+    {
+      "text": "切迫です。今すぐ入院してください。",
+      "start_seconds": 75.92,
+      "end_seconds": 81.4,
+      "id": "ldSPyi0UjeU-ja-0011",
+      "sequence": 11
+    },
+    {
+      "text": "私は母がいたホスピスと同じ病院に入院をしました。",
+      "start_seconds": 81.4,
+      "end_seconds": 87.439,
+      "id": "ldSPyi0UjeU-ja-0012",
+      "sequence": 12
+    },
+    {
+      "text": "ベッドから一歩も動いてはいけないという絶対安静の中でどうしても母に会いに来たかった。",
+      "start_seconds": 87.439,
+      "end_seconds": 97.28,
+      "id": "ldSPyi0UjeU-ja-0013",
+      "sequence": 13
+    },
+    {
+      "text": "なので看護師さんにお願いをして車椅子を押してもらいこの白い廊下を渡って毎日",
+      "start_seconds": 97.28,
+      "end_seconds": 107.56,
+      "id": "ldSPyi0UjeU-ja-0014",
+      "sequence": 14
+    },
+    {
+      "text": "母に会いに行きました。",
+      "start_seconds": 107.56,
+      "end_seconds": 112.399,
+      "id": "ldSPyi0UjeU-ja-0015",
+      "sequence": 15
+    },
+    {
+      "text": "命を宿した体が死を待つ部屋へと向かう。",
+      "start_seconds": 112.399,
+      "end_seconds": 119.68,
+      "id": "ldSPyi0UjeU-ja-0016",
+      "sequence": 16
+    },
+    {
+      "text": "この廊下で私は様々なインビトンにいました。",
+      "start_seconds": 119.68,
+      "end_seconds": 126.119,
+      "id": "ldSPyi0UjeU-ja-0017",
+      "sequence": 17
+    },
+    {
+      "text": "聖と死の間、キャリアとケアの間、そして強さと弱さの間。",
+      "start_seconds": 126.119,
+      "end_seconds": 135.56,
+      "id": "ldSPyi0UjeU-ja-0018",
+      "sequence": 18
+    },
+    {
+      "text": "この廊下は私の人生で最も孤独な場所でした。",
+      "start_seconds": 135.56,
+      "end_seconds": 141.959,
+      "id": "ldSPyi0UjeU-ja-0019",
+      "sequence": 19
+    },
+    {
+      "text": "でもこれは単なる始まりに過ぎなかったんです。ここからの10年間私はケアの嵐を歩むことになります。",
+      "start_seconds": 141.959,
+      "end_seconds": 151.959,
+      "id": "ldSPyi0UjeU-ja-0020",
+      "sequence": 20
+    },
+    {
+      "text": "3人の子供の妊娠出産育児、2度の親の介護、4年間の不妊治療。そして最後は",
+      "start_seconds": 151.959,
+      "end_seconds": 160.68,
+      "id": "ldSPyi0UjeU-ja-0021",
+      "sequence": 21
+    },
+    {
+      "text": "自分自身の病と向き合うことになります。",
+      "start_seconds": 160.68,
+      "end_seconds": 165.319,
+      "id": "ldSPyi0UjeU-ja-0022",
+      "sequence": 22
+    },
+    {
+      "text": "このケアの嵐経験する前の私はいつでもどこでも正約なく働けることが当たり前だと思っていました。",
+      "start_seconds": 165.319,
+      "end_seconds": 176.56,
+      "id": "ldSPyi0UjeU-ja-0023",
+      "sequence": 23
+    },
+    {
+      "text": "でもこのケアの嵐を経験して初めて気がついたんです。人は例え能力があったとし",
+      "start_seconds": 176.56,
+      "end_seconds": 185.2,
+      "id": "ldSPyi0UjeU-ja-0024",
+      "sequence": 24
+    },
+    {
+      "text": "ても抱えた瞬間自分の思う通りには働けなくなるということに突然電話が鳴る。今",
+      "start_seconds": 185.2,
+      "end_seconds": 195.68,
+      "id": "ldSPyi0UjeU-ja-0025",
+      "sequence": 25
+    },
+    {
+      "text": "やってる仕事を全部中断して病院や保育園、学校施設に駆けつける。",
+      "start_seconds": 195.68,
+      "end_seconds": 204.879,
+      "id": "ldSPyi0UjeU-ja-0026",
+      "sequence": 26
+    },
+    {
+      "text": "仕事と病院と自分の家庭の予定をこうパスルのように組み合わせながらなんとか",
+      "start_seconds": 204.879,
+      "end_seconds": 211.84,
+      "id": "ldSPyi0UjeU-ja-0027",
+      "sequence": 27
+    },
+    {
+      "text": "1日を得る。そんな綱渡りのような毎日の中で私はいつも自分自身に問いかけてい",
+      "start_seconds": 211.84,
+      "end_seconds": 220.4,
+      "id": "ldSPyi0UjeU-ja-0028",
+      "sequence": 28
+    },
+    {
+      "text": "ました。なぜケアをしながら働くということがこんなにも大変なんだろうと。",
+      "start_seconds": 220.4,
+      "end_seconds": 228.64,
+      "id": "ldSPyi0UjeU-ja-0029",
+      "sequence": 29
+    },
+    {
+      "text": "そして当時シンクタンクで労働分野の研究をしていた私は自分自身のこの経験とデータを照らし合わせた時にあることに気",
+      "start_seconds": 228.64,
+      "end_seconds": 238.48,
+      "id": "ldSPyi0UjeU-ja-0030",
+      "sequence": 30
+    },
+    {
+      "text": "がついたんです。それはこの嵐の中にいたのは私1人ではなかったということ。",
+      "start_seconds": 238.48,
+      "end_seconds": 246.4,
+      "id": "ldSPyi0UjeU-ja-0031",
+      "sequence": 31
+    },
+    {
+      "text": "そしてケアをしながら働くことがこんなにも大変なのは私たちが弱いからでもない。",
+      "start_seconds": 246.4,
+      "end_seconds": 253.56,
+      "id": "ldSPyi0UjeU-ja-0032",
+      "sequence": 32
+    },
+    {
+      "text": "私たちが能力が足りないわけでもない。",
+      "start_seconds": 253.56,
+      "end_seconds": 257.04,
+      "id": "ldSPyi0UjeU-ja-0033",
+      "sequence": 33
+    },
+    {
+      "text": "仕事自体がケアをしながら働くということを前提に設計されていない。このことに気がついたんです。",
+      "start_seconds": 257.04,
+      "end_seconds": 266.72,
+      "id": "ldSPyi0UjeU-ja-0034",
+      "sequence": 34
+    },
+    {
+      "text": "日本には今ケアをしながら働く人がたくさんいます。働く人約6800万人のうち2300万人は自分の病気と治療に",
+      "start_seconds": 266.72,
+      "end_seconds": 278.36,
+      "id": "ldSPyi0UjeU-ja-0035",
+      "sequence": 35
+    },
+    {
+      "text": "向き合いながら働いている。",
+      "start_seconds": 278.36,
+      "end_seconds": 281.44,
+      "id": "ldSPyi0UjeU-ja-0036",
+      "sequence": 36
+    },
+    {
+      "text": "800万人は育児をしながら、360万人は介護をしながら働いている。これらの数値って単純に立ち合わせることはでき",
+      "start_seconds": 281.44,
+      "end_seconds": 291.24,
+      "id": "ldSPyi0UjeU-ja-0037",
+      "sequence": 37
+    },
+    {
+      "text": "ないんです。なぜかと言うと、私のように1人の人間が育児と介護、介護と治療になってる場合があるから。でもたった1つ",
+      "start_seconds": 291.24,
+      "end_seconds": 300.639,
+      "id": "ldSPyi0UjeU-ja-0038",
+      "sequence": 38
+    },
+    {
+      "text": "確かなことがあります。それはこの日本でケアをしながら働くということはもはや例外ではないということなんです。",
+      "start_seconds": 300.639,
+      "end_seconds": 311.479,
+      "id": "ldSPyi0UjeU-ja-0039",
+      "sequence": 39
+    },
+    {
+      "text": "こちらを見ていただきます通り例外ではない。つまりあの働くことがもう当たり前になってるということなんですね。これ",
+      "start_seconds": 312.72,
+      "end_seconds": 321.84,
+      "id": "ldSPyi0UjeU-ja-0040",
+      "sequence": 40
+    },
+    {
+      "text": "から友働きがどんどん吹いてきます。少子高齢化が進んでいきます。そんな中でむしろいつでもどこでも制約なく働ける人",
+      "start_seconds": 321.84,
+      "end_seconds": 331.24,
+      "id": "ldSPyi0UjeU-ja-0041",
+      "sequence": 41
+    },
+    {
+      "text": "の方が少数派になっていくはずなんです。",
+      "start_seconds": 331.24,
+      "end_seconds": 334.639,
+      "id": "ldSPyi0UjeU-ja-0042",
+      "sequence": 42
+    },
+    {
+      "text": "それにも関わらず、私たちの社会や職場は未だにケアをしながら働く人を例外として扱う傾向にある。そうするとどういうこと",
+      "start_seconds": 334.639,
+      "end_seconds": 344.4,
+      "id": "ldSPyi0UjeU-ja-0043",
+      "sequence": 43
+    },
+    {
+      "text": "が起こるかというと、職場の中でケアをしながら働くということが組み込まれていないので、例えば明日から1週間入院し",
+      "start_seconds": 344.4,
+      "end_seconds": 354.24,
+      "id": "ldSPyi0UjeU-ja-0044",
+      "sequence": 44
+    },
+    {
+      "text": "ますとなった時に突然誰かが休むことを前提としてない職場では仕事が届かもしくはあなたの隣にいる同僚にし寄せが",
+      "start_seconds": 354.24,
+      "end_seconds": 365.319,
+      "id": "ldSPyi0UjeU-ja-0045",
+      "sequence": 45
+    },
+    {
+      "text": "行ってしまったりする。",
+      "start_seconds": 365.319,
+      "end_seconds": 367.68,
+      "id": "ldSPyi0UjeU-ja-0046",
+      "sequence": 46
+    },
+    {
+      "text": "転金や出張、残業、世の懇心会、こういったものが全ての人が対応できるという前提の職場ではケアをしながら働く人は常に",
+      "start_seconds": 367.68,
+      "end_seconds": 379.12,
+      "id": "ldSPyi0UjeU-ja-0047",
+      "sequence": 47
+    },
+    {
+      "text": "職場の期待に答えられない人材になってしまう。",
+      "start_seconds": 379.12,
+      "end_seconds": 383.84,
+      "id": "ldSPyi0UjeU-ja-0048",
+      "sequence": 48
+    },
+    {
+      "text": "つまりは働く人の現状がここまで変わっているのにも関わらず職場の前提が変わっていない。ここにギャップが生じているん",
+      "start_seconds": 383.84,
+      "end_seconds": 394.199,
+      "id": "ldSPyi0UjeU-ja-0049",
+      "sequence": 49
+    },
+    {
+      "text": "です。",
+      "start_seconds": 394.199,
+      "end_seconds": 396.039,
+      "id": "ldSPyi0UjeU-ja-0050",
+      "sequence": 50
+    },
+    {
+      "text": "で、このギャップ、このギャップこそがケアをしながら働くことをこんなにも大変にしている。そしてこのギャップ放置して",
+      "start_seconds": 396.039,
+      "end_seconds": 405.72,
+      "id": "ldSPyi0UjeU-ja-0051",
+      "sequence": 51
+    },
+    {
+      "text": "おくことによって働く人が追い詰められるだけではなくて、やがて社会や職場に大きな損失なって帰ってくるのです。実際",
+      "start_seconds": 405.72,
+      "end_seconds": 417.4,
+      "id": "ldSPyi0UjeU-ja-0052",
+      "sequence": 52
+    },
+    {
+      "text": "に経済産業省の資産によると2030年に介護と仕事をしながら働く人が増えること",
+      "start_seconds": 417.4,
+      "end_seconds": 425.879,
+      "id": "ldSPyi0UjeU-ja-0053",
+      "sequence": 53
+    },
+    {
+      "text": "による日本経済の損失9.2兆円と出産されています。9.2兆円です。でも大事な",
+      "start_seconds": 425.879,
+      "end_seconds": 434.4,
+      "id": "ldSPyi0UjeU-ja-0054",
+      "sequence": 54
+    },
+    {
+      "text": "のはこの打ち訳けなんです。9.2兆円のうち約1兆円。これは仕事と介護の両立がままならずやめてしまう人が出ることに",
+      "start_seconds": 434.4,
+      "end_seconds": 444.8,
+      "id": "ldSPyi0UjeU-ja-0055",
+      "sequence": 55
+    },
+    {
+      "text": "よる損失。じゃあ残りの8兆円は何か?",
+      "start_seconds": 444.8,
+      "end_seconds": 449.56,
+      "id": "ldSPyi0UjeU-ja-0056",
+      "sequence": 56
+    },
+    {
+      "text": "介護と仕事の両立によって働く人の生産性が下がることによる損失なんです。これはどういうことかと言うと彼らは仕事はやめ",
+      "start_seconds": 449.56,
+      "end_seconds": 461.199,
+      "id": "ldSPyi0UjeU-ja-0057",
+      "sequence": 57
+    },
+    {
+      "text": "ていないんです。職場にもいる。会議にも出てる。メールをすれば返信も来るんです。でも体は日々の家族の介護や看護で疲れ",
+      "start_seconds": 461.199,
+      "end_seconds": 473.0,
+      "id": "ldSPyi0UjeU-ja-0058",
+      "sequence": 58
+    },
+    {
+      "text": "きっている。",
+      "start_seconds": 473.0,
+      "end_seconds": 476.08,
+      "id": "ldSPyi0UjeU-ja-0059",
+      "sequence": 59
+    },
+    {
+      "text": "旅重なる病院からの呼び出しで常に仕事を中断しなければいけない。家族の病院での様子が気になって仕事に集中できない。",
+      "start_seconds": 476.08,
+      "end_seconds": 486.0,
+      "id": "ldSPyi0UjeU-ja-0060",
+      "sequence": 60
+    },
+    {
+      "text": "こういった人たちが職場に増えることによって9.2兆円までこれ介護だけなんです。最後だけで9兆9.2兆円",
+      "start_seconds": 486.0,
+      "end_seconds": 495.319,
+      "id": "ldSPyi0UjeU-ja-0061",
+      "sequence": 61
+    },
+    {
+      "text": "の損失まで押し上げているのです。ではこの損失するにはどうすればいいのか?それはケア",
+      "start_seconds": 495.319,
+      "end_seconds": 504.8,
+      "id": "ldSPyi0UjeU-ja-0062",
+      "sequence": 62
+    },
+    {
+      "text": "をしながら働く人への支援ではないんです。そうではなく職場の前提を変える。この",
+      "start_seconds": 504.8,
+      "end_seconds": 513.2,
+      "id": "ldSPyi0UjeU-ja-0063",
+      "sequence": 63
+    },
+    {
+      "text": "ことにあります。日本企業では今様々とな両立支援制度が整備されていますよね。",
+      "start_seconds": 513.2,
+      "end_seconds": 520.919,
+      "id": "ldSPyi0UjeU-ja-0064",
+      "sequence": 64
+    },
+    {
+      "text": "例えば育児休業、介護休業、短時間勤務制度。私もこれらの制度には本当にお世話になりました。制度は大事です。でも制度",
+      "start_seconds": 520.919,
+      "end_seconds": 531.839,
+      "id": "ldSPyi0UjeU-ja-0065",
+      "sequence": 65
+    },
+    {
+      "text": "だけではダメなんです。私はよくこのスマホのアプリとOSに例えてお話をします。",
+      "start_seconds": 531.839,
+      "end_seconds": 540.72,
+      "id": "ldSPyi0UjeU-ja-0066",
+      "sequence": 66
+    },
+    {
+      "text": "両立先生制度というのはスマホで言うとアプリに過ぎないんですね。アプリ、どんないいアプリがあったとしてもOSが古かったらどうでしょう?ま、そもそも",
+      "start_seconds": 540.72,
+      "end_seconds": 551.92,
+      "id": "ldSPyi0UjeU-ja-0067",
+      "sequence": 67
+    },
+    {
+      "text": "ダウンロードできなかったりとかダウンロードしたとしてもフリーズしてしまうそういうことが起きます。職場でも同じなんです。どんなにいい両立支援制度",
+      "start_seconds": 551.92,
+      "end_seconds": 561.8,
+      "id": "ldSPyi0UjeU-ja-0068",
+      "sequence": 68
+    },
+    {
+      "text": "があったとしても職場のOSが例えばいつでもどこでも制約なく働ける人を前提としていたとしたらその両立先生制度は機能し",
+      "start_seconds": 561.8,
+      "end_seconds": 573.32,
+      "id": "ldSPyi0UjeU-ja-0069",
+      "sequence": 69
+    },
+    {
+      "text": "ません。",
+      "start_seconds": 573.32,
+      "end_seconds": 575.279,
+      "id": "ldSPyi0UjeU-ja-0070",
+      "sequence": 70
+    },
+    {
+      "text": "なので今やるべきことは両立制度の拡充、それではなく職場の前提を変えるこのことにあります。",
+      "start_seconds": 575.279,
+      "end_seconds": 586.36,
+      "id": "ldSPyi0UjeU-ja-0071",
+      "sequence": 71
+    },
+    {
+      "text": "つまり職場のOSのアップデートですね。",
+      "start_seconds": 586.36,
+      "end_seconds": 589.8,
+      "id": "ldSPyi0UjeU-ja-0072",
+      "sequence": 72
+    },
+    {
+      "text": "では職場のOSのアップデート、これをするにはどうしたらいいのか?これは簡単ではないんです。",
+      "start_seconds": 589.8,
+      "end_seconds": 597.6,
+      "id": "ldSPyi0UjeU-ja-0073",
+      "sequence": 73
+    },
+    {
+      "text": "社会企業の法制度変える必要がある。会社の働き方仕組み自体を変える必要がある。",
+      "start_seconds": 597.6,
+      "end_seconds": 605.399,
+      "id": "ldSPyi0UjeU-ja-0074",
+      "sequence": 74
+    },
+    {
+      "text": "大きな変革が伴います。",
+      "start_seconds": 605.399,
+      "end_seconds": 608.519,
+      "id": "ldSPyi0UjeU-ja-0075",
+      "sequence": 75
+    },
+    {
+      "text": "大きな変革って時間かかりますよね。でも私はこう思うんです。大きな変革も常に出発点は私たちのマインドセットを変えることにある。で、このマインドセットを",
+      "start_seconds": 608.519,
+      "end_seconds": 619.519,
+      "id": "ldSPyi0UjeU-ja-0076",
+      "sequence": 76
+    },
+    {
+      "text": "変えるその時に必要なのが当たり前を疑うということです。",
+      "start_seconds": 619.519,
+      "end_seconds": 626.2,
+      "id": "ldSPyi0UjeU-ja-0077",
+      "sequence": 77
+    },
+    {
+      "text": "この当たり前いっていうのは当たり前なんですが、私たちの価値観とか観念とか親から言われたこととかそういったことが折り混ざって当たり前を作っていきます。",
+      "start_seconds": 626.2,
+      "end_seconds": 637.04,
+      "id": "ldSPyi0UjeU-ja-0078",
+      "sequence": 78
+    },
+    {
+      "text": "なので今日はこの会場で皆さんと一緒に2つの当たり前を見直してみたいと思います。1つ目は職場の当たり前を疑うです。",
+      "start_seconds": 637.04,
+      "end_seconds": 648.24,
+      "id": "ldSPyi0UjeU-ja-0079",
+      "sequence": 79
+    },
+    {
+      "text": "その定例会議本当に毎週1時間全員が参加する必要ありますか?その出張本当にそのメンバーが現地に行く必要ありますか?",
+      "start_seconds": 648.24,
+      "end_seconds": 659.44,
+      "id": "ldSPyi0UjeU-ja-0080",
+      "sequence": 80
+    },
+    {
+      "text": "その夜の渾新会本当に夜にやる必要ありますか?私たちの職場の当たり前いってのは実はケアをしながら働く人が本当に職場",
+      "start_seconds": 659.44,
+      "end_seconds": 669.32,
+      "id": "ldSPyi0UjeU-ja-0081",
+      "sequence": 81
+    },
+    {
+      "text": "で少なかった時代の昔の監修を単に引きずってるだけのことが多いんです。なので当たり前を見直してみる。",
+      "start_seconds": 669.32,
+      "end_seconds": 678.8,
+      "id": "ldSPyi0UjeU-ja-0082",
+      "sequence": 82
+    },
+    {
+      "text": "そして日本企業にはこの当たり前を見直し職場のOS企業、OSを書き換えてる企業",
+      "start_seconds": 678.8,
+      "end_seconds": 685.48,
+      "id": "ldSPyi0UjeU-ja-0083",
+      "sequence": 83
+    },
+    {
+      "text": "が足元で増えています。例えばA社ではケアをしてる人だけが有給休暇をたくさん取るという当たり前を見直しました。有給",
+      "start_seconds": 685.48,
+      "end_seconds": 696.839,
+      "id": "ldSPyi0UjeU-ja-0084",
+      "sequence": 84
+    },
+    {
+      "text": "休暇、ま、通は20日なんですけれども、それを56日に拡充し、いつでも誰でも理由を問わず取れるような制度にしたん",
+      "start_seconds": 696.839,
+      "end_seconds": 706.24,
+      "id": "ldSPyi0UjeU-ja-0085",
+      "sequence": 85
+    },
+    {
+      "text": "です。もちろん育児中の人、介護中の人、不妊治療中の人は理由を申請することなく取ることができます。でも今ケアをしてない人もいますよね。そういう人たちは",
+      "start_seconds": 706.24,
+      "end_seconds": 718.04,
+      "id": "ldSPyi0UjeU-ja-0086",
+      "sequence": 86
+    },
+    {
+      "text": "自分たちの旅行、リフレッシュ、学び直しにも使えることができる。つまり誰もが使える制度にしたことによってこのケアを",
+      "start_seconds": 718.04,
+      "end_seconds": 728.48,
+      "id": "ldSPyi0UjeU-ja-0087",
+      "sequence": 87
+    },
+    {
+      "text": "してる人だけが感じる自分だけ休んで申し訳ないというあの罪悪感が消え去って誰もが自分の人生を豊かにするために休み",
+      "start_seconds": 728.48,
+      "end_seconds": 737.279,
+      "id": "ldSPyi0UjeU-ja-0088",
+      "sequence": 88
+    },
+    {
+      "text": "が取れる職場になったんです。私が前いた職場にも小さな職場のOSのアップデートがありました。それは渾新会は夜やるもの",
+      "start_seconds": 737.279,
+      "end_seconds": 748.44,
+      "id": "ldSPyi0UjeU-ja-0089",
+      "sequence": 89
+    },
+    {
+      "text": "だという当たり前を見直したんです。渾新会は基本的にランチでもお酒が飲みたい時もありますよね。そういった時は夕方開催",
+      "start_seconds": 748.44,
+      "end_seconds": 758.6,
+      "id": "ldSPyi0UjeU-ja-0090",
+      "sequence": 90
+    },
+    {
+      "text": "。夕方の4時半スタート。そうすると何が起きたか育児中の人も介護中の人も治療中の人も家庭の調整をすることなく誰もが",
+      "start_seconds": 758.6,
+      "end_seconds": 769.199,
+      "id": "ldSPyi0UjeU-ja-0091",
+      "sequence": 91
+    },
+    {
+      "text": "参加できる側になった。職場のコミュニケーションが無理なく活性化されました。",
+      "start_seconds": 769.199,
+      "end_seconds": 777.04,
+      "id": "ldSPyi0UjeU-ja-0092",
+      "sequence": 92
+    },
+    {
+      "text": "是非ですね、明日職場でも家庭でもいいです。そこでの当たり前を1つ見直してみてください。その当たり前は誰を前提に",
+      "start_seconds": 777.04,
+      "end_seconds": 788.36,
+      "id": "ldSPyi0UjeU-ja-0093",
+      "sequence": 93
+    },
+    {
+      "text": "設計されているのか見直してみてください。では疑うべき2つ目の当たり前があります。それはケアはコストであるという",
+      "start_seconds": 788.36,
+      "end_seconds": 798.92,
+      "id": "ldSPyi0UjeU-ja-0094",
+      "sequence": 94
+    },
+    {
+      "text": "考えた方です。コストつまりマイナスなことということですね。私も10年前ぐらいはそう思ってました。ケアをすると長期間休まなきゃいけなかったり、その",
+      "start_seconds": 798.92,
+      "end_seconds": 809.48,
+      "id": "ldSPyi0UjeU-ja-0095",
+      "sequence": 95
+    },
+    {
+      "text": "期間昇が止まってしまったり、何よりケアにキャリアにこう空白ができてしまうもの。そういう風に思っていました。でもこの",
+      "start_seconds": 809.48,
+      "end_seconds": 819.24,
+      "id": "ldSPyi0UjeU-ja-0096",
+      "sequence": 96
+    },
+    {
+      "text": "ケアの10年間を経てそして研究員としてこの研究を見直した時に全く違う結論に至ったんです。",
+      "start_seconds": 819.24,
+      "end_seconds": 829.36,
+      "id": "ldSPyi0UjeU-ja-0097",
+      "sequence": 97
+    },
+    {
+      "text": "それはケアをするという経験はこれからの人生を時代を人間が生き抜くための最高のリスキリングの場ではないかということなんです。",
+      "start_seconds": 829.36,
+      "end_seconds": 840.92,
+      "id": "ldSPyi0UjeU-ja-0098",
+      "sequence": 98
+    },
+    {
+      "text": "例えば危機対応能力良きのことが突然起きた時に今ある情報の中で家族にとって自分",
+      "start_seconds": 840.92,
+      "end_seconds": 849.079,
+      "id": "ldSPyi0UjeU-ja-0099",
+      "sequence": 99
+    },
+    {
+      "text": "にとってベストな判断を下す力2つ目は優先順位をつける力限りある体力限りある時間の中でやるやらないべき仕事を",
+      "start_seconds": 849.079,
+      "end_seconds": 860.68,
+      "id": "ldSPyi0UjeU-ja-0100",
+      "sequence": 100
+    },
+    {
+      "text": "切り捨てやるべき仕事にフォーカスする。",
+      "start_seconds": 860.68,
+      "end_seconds": 864.36,
+      "id": "ldSPyi0UjeU-ja-0101",
+      "sequence": 101
+    },
+    {
+      "text": "そして3つ目は共感力です。相手の言葉にならない痛みや感情に寄り添い、信頼関係",
+      "start_seconds": 864.36,
+      "end_seconds": 872.8,
+      "id": "ldSPyi0UjeU-ja-0102",
+      "sequence": 102
+    },
+    {
+      "text": "を気づく力。これらの力はケアの現場で毎日描かれていきます。そしてこれからAIが私たちの仕事どんどん代替していく",
+      "start_seconds": 872.8,
+      "end_seconds": 883.36,
+      "id": "ldSPyi0UjeU-ja-0103",
+      "sequence": 103
+    },
+    {
+      "text": "中で人間にこそ求められる価値のある能力だと思うのです。",
+      "start_seconds": 883.36,
+      "end_seconds": 890.959,
+      "id": "ldSPyi0UjeU-ja-0104",
+      "sequence": 104
+    },
+    {
+      "text": "なので私はこう思います。",
+      "start_seconds": 890.959,
+      "end_seconds": 895.079,
+      "id": "ldSPyi0UjeU-ja-0105",
+      "sequence": 105
+    },
+    {
+      "text": "ケアはコストではない。ギャップでもない。これからのAI時代を人間が生きるための最高の資産アセットだと思うのです。",
+      "start_seconds": 897.0,
+      "end_seconds": 907.92,
+      "id": "ldSPyi0UjeU-ja-0106",
+      "sequence": 106
+    },
+    {
+      "text": "では最後にあの廊下にもう1度戻りたいと思います。",
+      "start_seconds": 907.92,
+      "end_seconds": 913.88,
+      "id": "ldSPyi0UjeU-ja-0107",
+      "sequence": 107
+    },
+    {
+      "text": "12年前私はこの廊下で様々なインビトン狭にいました。",
+      "start_seconds": 913.88,
+      "end_seconds": 923.04,
+      "id": "ldSPyi0UjeU-ja-0108",
+      "sequence": 108
+    },
+    {
+      "text": "聖と死の間、キャリアとケアの間、そして強さと弱さの間",
+      "start_seconds": 923.04,
+      "end_seconds": 933.0,
+      "id": "ldSPyi0UjeU-ja-0109",
+      "sequence": 109
+    },
+    {
+      "text": "しんどかった。",
+      "start_seconds": 933.0,
+      "end_seconds": 935.319,
+      "id": "ldSPyi0UjeU-ja-0110",
+      "sequence": 110
+    },
+    {
+      "text": "でもこの廊下は私に大切なことを教えてくれました。それはケアは私たち人生において例外ではないということなんです。",
+      "start_seconds": 935.319,
+      "end_seconds": 945.56,
+      "id": "ldSPyi0UjeU-ja-0111",
+      "sequence": 111
+    },
+    {
+      "text": "私たちは生まれた瞬間ケアをされて生まれてきます。やがてケアをする側になる。",
+      "start_seconds": 945.56,
+      "end_seconds": 952.48,
+      "id": "ldSPyi0UjeU-ja-0112",
+      "sequence": 112
+    },
+    {
+      "text": "そして人生を終える時にケアをするされる側に戻っていく。つまりケアをする側される側このイントbetweenトインを",
+      "start_seconds": 952.48,
+      "end_seconds": 962.319,
+      "id": "ldSPyi0UjeU-ja-0113",
+      "sequence": 113
+    },
+    {
+      "text": "行ったり来たりするんですね。なので誰1人例外ではない。そして人間が人間らしく生きることそのものだと思うのです",
+      "start_seconds": 962.319,
+      "end_seconds": 972.6,
+      "id": "ldSPyi0UjeU-ja-0114",
+      "sequence": 114
+    },
+    {
+      "text": "。",
+      "start_seconds": 972.6,
+      "end_seconds": 974.48,
+      "id": "ldSPyi0UjeU-ja-0115",
+      "sequence": 115
+    },
+    {
+      "text": "そして日本はこれから世界に先じて人口減少社会、そして超高齢化社会に入っていきます。",
+      "start_seconds": 974.48,
+      "end_seconds": 983.12,
+      "id": "ldSPyi0UjeU-ja-0116",
+      "sequence": 116
+    },
+    {
+      "text": "ケアを必要とする人が増える一方でケアをする側、そして働いて社会を支える側はどんどん減っていきます。",
+      "start_seconds": 983.12,
+      "end_seconds": 992.079,
+      "id": "ldSPyi0UjeU-ja-0117",
+      "sequence": 117
+    },
+    {
+      "text": "そんな中で私たちが目指すべき社会は限りある人で無理をして働く社会ではない。",
+      "start_seconds": 992.079,
+      "end_seconds": 1000.079,
+      "id": "ldSPyi0UjeU-ja-0118",
+      "sequence": 118
+    },
+    {
+      "text": "そうではなく働きたい人が働くことができケアをしながらでもキャリアを諦めない。",
+      "start_seconds": 1000.079,
+      "end_seconds": 1007.44,
+      "id": "ldSPyi0UjeU-ja-0119",
+      "sequence": 119
+    },
+    {
+      "text": "そしてケアの経験でさえも未来の力に変えていけるそんな社会です。それは単に優しい社会ではないんですね。私たちの",
+      "start_seconds": 1007.44,
+      "end_seconds": 1019.319,
+      "id": "ldSPyi0UjeU-ja-0120",
+      "sequence": 120
+    },
+    {
+      "text": "モてる最大の能力をフルに活用し、経済を回す力に変えていく。本当の意味で狂人で持続可能な社会だと思います。",
+      "start_seconds": 1019.319,
+      "end_seconds": 1031.199,
+      "id": "ldSPyi0UjeU-ja-0121",
+      "sequence": 121
+    },
+    {
+      "text": "そんな社会にしていくためにケアをしながら働くことを職場の前提にしていきましょう。そして支えながら働くことを",
+      "start_seconds": 1031.199,
+      "end_seconds": 1041.6,
+      "id": "ldSPyi0UjeU-ja-0122",
+      "sequence": 122
+    },
+    {
+      "text": "私たちの当たり前にしていきましょう。",
+      "start_seconds": 1041.6,
+      "end_seconds": 1047.1599999999999,
+      "id": "ldSPyi0UjeU-ja-0123",
+      "sequence": 123
+    },
+    {
+      "text": "workfornooneisleftinT",
+      "start_seconds": 1047.6,
+      "end_seconds": 1055.88,
+      "id": "ldSPyi0UjeU-ja-0124",
+      "sequence": 124
+    }
+  ],
+  "raw_captions": [
+    {
+      "text": "想像してみてください。",
+      "start_seconds": 3.36,
+      "end_seconds": 7.879
+    },
+    {
+      "text": "長く",
+      "start_seconds": 6.319,
+      "end_seconds": 13.280000000000001
+    },
+    {
+      "text": "静まり返った真っ白な廊下を。",
+      "start_seconds": 7.879,
+      "end_seconds": 17.799999999999997
+    },
+    {
+      "text": "12年前、私はこの廊下を車椅子で渡って",
+      "start_seconds": 13.28,
+      "end_seconds": 20.198999999999998
+    },
+    {
+      "text": "いました。",
+      "start_seconds": 17.8,
+      "end_seconds": 25.359
+    },
+    {
+      "text": "お腹には新しい命が宿っていました。",
+      "start_seconds": 20.199,
+      "end_seconds": 30.759
+    },
+    {
+      "text": "でもこの廊下の先にある病室には末期の母",
+      "start_seconds": 25.359,
+      "end_seconds": 36.879000000000005
+    },
+    {
+      "text": "が静かに死へと向かっていました。",
+      "start_seconds": 30.759,
+      "end_seconds": 40.92
+    },
+    {
+      "text": "当時待望の大師を妊娠し、座りに耐い",
+      "start_seconds": 36.879,
+      "end_seconds": 45.559
+    },
+    {
+      "text": "ながらも私は日中はフルタイムで働き夜に",
+      "start_seconds": 40.92,
+      "end_seconds": 49.84
+    },
+    {
+      "text": "なると母の病室に駆けつける。そんな少し",
+      "start_seconds": 45.559,
+      "end_seconds": 53.519999999999996
+    },
+    {
+      "text": "無理をした生活をしていました。",
+      "start_seconds": 49.84,
+      "end_seconds": 57.039
+    },
+    {
+      "text": "でも当時は本気でこう信じていたんです。",
+      "start_seconds": 53.52,
+      "end_seconds": 62.879000000000005
+    },
+    {
+      "text": "私が頑張りさえすれば育児も介護も仕事も",
+      "start_seconds": 57.039,
+      "end_seconds": 68.2
+    },
+    {
+      "text": "母の病気でさえもなんとかなるはずだと。",
+      "start_seconds": 62.879,
+      "end_seconds": 73.4
+    },
+    {
+      "text": "でも現実はそうは甘くはなかった。ある日",
+      "start_seconds": 68.2,
+      "end_seconds": 75.92
+    },
+    {
+      "text": "にこ告けられました。",
+      "start_seconds": 73.4,
+      "end_seconds": 81.4
+    },
+    {
+      "text": "切迫です。今すぐ入院してください。",
+      "start_seconds": 75.92,
+      "end_seconds": 85.56
+    },
+    {
+      "text": "私は母がいたホスピスと同じ病院に入院を",
+      "start_seconds": 81.4,
+      "end_seconds": 87.43900000000001
+    },
+    {
+      "text": "しました。",
+      "start_seconds": 85.56,
+      "end_seconds": 90.60000000000001
+    },
+    {
+      "text": "ベッドから一歩も動いてはいけないという",
+      "start_seconds": 87.439,
+      "end_seconds": 93.75899999999999
+    },
+    {
+      "text": "絶対安静の中で",
+      "start_seconds": 90.6,
+      "end_seconds": 97.28
+    },
+    {
+      "text": "どうしても母に会いに来たかった。",
+      "start_seconds": 93.759,
+      "end_seconds": 102.0
+    },
+    {
+      "text": "なので看護師さんにお願いをして車椅子を",
+      "start_seconds": 97.28,
+      "end_seconds": 107.56
+    },
+    {
+      "text": "押してもらいこの白い廊下を渡って毎日",
+      "start_seconds": 102.0,
+      "end_seconds": 112.399
+    },
+    {
+      "text": "毎日母に会いに行きました。",
+      "start_seconds": 107.56,
+      "end_seconds": 115.28
+    },
+    {
+      "text": "命を宿した体が",
+      "start_seconds": 112.399,
+      "end_seconds": 119.68
+    },
+    {
+      "text": "死を待つ部屋へと向かう。",
+      "start_seconds": 115.28,
+      "end_seconds": 123.92
+    },
+    {
+      "text": "この廊下で私は様々なインビトン",
+      "start_seconds": 119.68,
+      "end_seconds": 126.119
+    },
+    {
+      "text": "にいました。",
+      "start_seconds": 123.92,
+      "end_seconds": 131.64000000000001
+    },
+    {
+      "text": "聖と死の間、キャリアとケアの間、そして",
+      "start_seconds": 126.119,
+      "end_seconds": 135.56
+    },
+    {
+      "text": "強さと弱さの間。",
+      "start_seconds": 131.64,
+      "end_seconds": 139.83999999999997
+    },
+    {
+      "text": "この廊下は私の人生で最も孤独な場所でし",
+      "start_seconds": 135.56,
+      "end_seconds": 141.959
+    },
+    {
+      "text": "た。",
+      "start_seconds": 139.84,
+      "end_seconds": 144.959
+    },
+    {
+      "text": "でもこれは単なる始まりに過ぎなかったん",
+      "start_seconds": 141.959,
+      "end_seconds": 149.4
+    },
+    {
+      "text": "です。ここからの10年間私はケアの嵐を",
+      "start_seconds": 144.959,
+      "end_seconds": 151.959
+    },
+    {
+      "text": "歩むことになります。",
+      "start_seconds": 149.4,
+      "end_seconds": 156.44
+    },
+    {
+      "text": "3人の子供の妊娠出産育児、2度の親の",
+      "start_seconds": 151.959,
+      "end_seconds": 160.68
+    },
+    {
+      "text": "介護、4年間の不妊治療。そして最後は",
+      "start_seconds": 156.44,
+      "end_seconds": 165.319
+    },
+    {
+      "text": "自分自身の病と向き合うことになります。",
+      "start_seconds": 160.68,
+      "end_seconds": 170.159
+    },
+    {
+      "text": "このケアの嵐経験する前の私はいつでも",
+      "start_seconds": 165.319,
+      "end_seconds": 173.67999999999998
+    },
+    {
+      "text": "どこでも正約なく働けることが当たり前だ",
+      "start_seconds": 170.159,
+      "end_seconds": 176.56
+    },
+    {
+      "text": "と思っていました。",
+      "start_seconds": 173.68,
+      "end_seconds": 180.8
+    },
+    {
+      "text": "でもこのケアの嵐を経験して初めて気が",
+      "start_seconds": 176.56,
+      "end_seconds": 185.2
+    },
+    {
+      "text": "ついたんです。人は例え能力があったとし",
+      "start_seconds": 180.8,
+      "end_seconds": 189.799
+    },
+    {
+      "text": "ても抱えた瞬間自分の思う通りには働け",
+      "start_seconds": 185.2,
+      "end_seconds": 195.67999999999998
+    },
+    {
+      "text": "なくなるということに突然電話が鳴る。今",
+      "start_seconds": 189.799,
+      "end_seconds": 200.28
+    },
+    {
+      "text": "やってる仕事を全部中断して病院や保育園",
+      "start_seconds": 195.68,
+      "end_seconds": 204.87900000000002
+    },
+    {
+      "text": "、学校施設に駆けつける。",
+      "start_seconds": 200.28,
+      "end_seconds": 208.799
+    },
+    {
+      "text": "仕事と病院と自分の家庭の予定をこう",
+      "start_seconds": 204.879,
+      "end_seconds": 211.84
+    },
+    {
+      "text": "パスルのように組み合わせながらなんとか",
+      "start_seconds": 208.799,
+      "end_seconds": 217.0
+    },
+    {
+      "text": "1日を得る。そんな綱渡りのような毎日の",
+      "start_seconds": 211.84,
+      "end_seconds": 220.4
+    },
+    {
+      "text": "中で私はいつも自分自身に問いかけてい",
+      "start_seconds": 217.0,
+      "end_seconds": 224.519
+    },
+    {
+      "text": "ました。なぜケアをしながら働くという",
+      "start_seconds": 220.4,
+      "end_seconds": 228.64000000000001
+    },
+    {
+      "text": "ことがこんなにも大変なんだろうと。",
+      "start_seconds": 224.519,
+      "end_seconds": 231.68
+    },
+    {
+      "text": "そして当時シンクタンクで労働分野の研究",
+      "start_seconds": 228.64,
+      "end_seconds": 235.11999999999998
+    },
+    {
+      "text": "をしていた私は自分自身のこの経験と",
+      "start_seconds": 231.68,
+      "end_seconds": 238.48000000000002
+    },
+    {
+      "text": "データを照らし合わせた時にあることに気",
+      "start_seconds": 235.12,
+      "end_seconds": 242.76
+    },
+    {
+      "text": "がついたんです。それはこの嵐の中にいた",
+      "start_seconds": 238.48,
+      "end_seconds": 246.39999999999998
+    },
+    {
+      "text": "のは私1人ではなかったということ。",
+      "start_seconds": 242.76,
+      "end_seconds": 249.72
+    },
+    {
+      "text": "そしてケアをしながら働くことがこんなに",
+      "start_seconds": 246.4,
+      "end_seconds": 253.56
+    },
+    {
+      "text": "も大変なのは私たちが弱いからでもない。",
+      "start_seconds": 249.72,
+      "end_seconds": 257.04
+    },
+    {
+      "text": "私たちが能力が足りないわけでもない。",
+      "start_seconds": 253.56,
+      "end_seconds": 260.72
+    },
+    {
+      "text": "仕事自体がケアをしながら働くということ",
+      "start_seconds": 257.04,
+      "end_seconds": 264.0
+    },
+    {
+      "text": "を前提に設計されていない。このことに気",
+      "start_seconds": 260.72,
+      "end_seconds": 266.72
+    },
+    {
+      "text": "がついたんです。",
+      "start_seconds": 264.0,
+      "end_seconds": 270.6
+    },
+    {
+      "text": "日本には今ケアをしながら働く人が",
+      "start_seconds": 266.72,
+      "end_seconds": 274.32000000000005
+    },
+    {
+      "text": "たくさんいます。働く人約6800万人の",
+      "start_seconds": 270.6,
+      "end_seconds": 278.36
+    },
+    {
+      "text": "うち2300万人は自分の病気と治療に",
+      "start_seconds": 274.32,
+      "end_seconds": 281.44
+    },
+    {
+      "text": "向き合いながら働いている。",
+      "start_seconds": 278.36,
+      "end_seconds": 284.759
+    },
+    {
+      "text": "800万人は育児をしながら、360万人",
+      "start_seconds": 281.44,
+      "end_seconds": 288.71999999999997
+    },
+    {
+      "text": "は介護をしながら働いている。これらの",
+      "start_seconds": 284.759,
+      "end_seconds": 291.24
+    },
+    {
+      "text": "数値って単純に立ち合わせることはでき",
+      "start_seconds": 288.72,
+      "end_seconds": 293.72
+    },
+    {
+      "text": "ないんです。なぜかと言うと、私のように",
+      "start_seconds": 291.24,
+      "end_seconds": 297.24
+    },
+    {
+      "text": "1人の人間が育児と介護、介護と治療に",
+      "start_seconds": 293.72,
+      "end_seconds": 300.639
+    },
+    {
+      "text": "なってる場合があるから。でもたった1つ",
+      "start_seconds": 297.24,
+      "end_seconds": 304.56
+    },
+    {
+      "text": "確かなことがあります。それはこの日本で",
+      "start_seconds": 300.639,
+      "end_seconds": 307.0
+    },
+    {
+      "text": "ケアをしながら働くということはもはや",
+      "start_seconds": 304.56,
+      "end_seconds": 311.479
+    },
+    {
+      "text": "例外ではないということなんです。",
+      "start_seconds": 307.0,
+      "end_seconds": 311.479
+    },
+    {
+      "text": "こちらを見ていただきます通り例外では",
+      "start_seconds": 312.72,
+      "end_seconds": 319.44000000000005
+    },
+    {
+      "text": "ない。つまりあの働くことがもう当たり前",
+      "start_seconds": 315.0,
+      "end_seconds": 321.84
+    },
+    {
+      "text": "になってるということなんですね。これ",
+      "start_seconds": 319.44,
+      "end_seconds": 325.0
+    },
+    {
+      "text": "から友働きがどんどん吹いてきます。少子",
+      "start_seconds": 321.84,
+      "end_seconds": 327.19899999999996
+    },
+    {
+      "text": "高齢化が進んでいきます。そんな中で",
+      "start_seconds": 325.0,
+      "end_seconds": 331.24
+    },
+    {
+      "text": "むしろいつでもどこでも制約なく働ける人",
+      "start_seconds": 327.199,
+      "end_seconds": 334.639
+    },
+    {
+      "text": "の方が少数派になっていくはずなんです。",
+      "start_seconds": 331.24,
+      "end_seconds": 338.28000000000003
+    },
+    {
+      "text": "それにも関わらず、私たちの社会や職場は",
+      "start_seconds": 334.639,
+      "end_seconds": 341.56
+    },
+    {
+      "text": "未だにケアをしながら働く人を例外として",
+      "start_seconds": 338.28,
+      "end_seconds": 344.4
+    },
+    {
+      "text": "扱う傾向にある。そうするとどういうこと",
+      "start_seconds": 341.56,
+      "end_seconds": 347.36
+    },
+    {
+      "text": "が起こるかというと、職場の中でケアをし",
+      "start_seconds": 344.4,
+      "end_seconds": 349.96
+    },
+    {
+      "text": "ながら働くということが組み込まれてい",
+      "start_seconds": 347.36,
+      "end_seconds": 354.24
+    },
+    {
+      "text": "ないので、例えば明日から1週間入院し",
+      "start_seconds": 349.96,
+      "end_seconds": 358.23999999999995
+    },
+    {
+      "text": "ますとなった時に突然誰かが休むことを",
+      "start_seconds": 354.24,
+      "end_seconds": 362.08
+    },
+    {
+      "text": "前提としてない職場では仕事が届か",
+      "start_seconds": 358.24,
+      "end_seconds": 365.319
+    },
+    {
+      "text": "もしくはあなたの隣にいる同僚にし寄せが",
+      "start_seconds": 362.08,
+      "end_seconds": 367.68
+    },
+    {
+      "text": "行ってしまったりする。",
+      "start_seconds": 365.319,
+      "end_seconds": 371.44
+    },
+    {
+      "text": "転金や出張、残業、世の懇心会、こういっ",
+      "start_seconds": 367.68,
+      "end_seconds": 374.44
+    },
+    {
+      "text": "たものが全ての人が対応できるという前提",
+      "start_seconds": 371.44,
+      "end_seconds": 379.12
+    },
+    {
+      "text": "の職場ではケアをしながら働く人は常に",
+      "start_seconds": 374.44,
+      "end_seconds": 382.039
+    },
+    {
+      "text": "職場の期待に答えられない人材になって",
+      "start_seconds": 379.12,
+      "end_seconds": 383.84000000000003
+    },
+    {
+      "text": "しまう。",
+      "start_seconds": 382.039,
+      "end_seconds": 387.52
+    },
+    {
+      "text": "つまりは働く人の現状がここまで変わって",
+      "start_seconds": 383.84,
+      "end_seconds": 390.75899999999996
+    },
+    {
+      "text": "いるのにも関わらず職場の前提が変わって",
+      "start_seconds": 387.52,
+      "end_seconds": 394.19899999999996
+    },
+    {
+      "text": "いない。ここにギャップが生じているん",
+      "start_seconds": 390.759,
+      "end_seconds": 396.039
+    },
+    {
+      "text": "です。",
+      "start_seconds": 394.199,
+      "end_seconds": 399.12
+    },
+    {
+      "text": "で、このギャップ、このギャップこそが",
+      "start_seconds": 396.039,
+      "end_seconds": 402.31899999999996
+    },
+    {
+      "text": "ケアをしながら働くことをこんなにも大変",
+      "start_seconds": 399.12,
+      "end_seconds": 405.72
+    },
+    {
+      "text": "にしている。そしてこのギャップ放置して",
+      "start_seconds": 402.319,
+      "end_seconds": 408.319
+    },
+    {
+      "text": "おくことによって働く人が追い詰められる",
+      "start_seconds": 405.72,
+      "end_seconds": 413.12
+    },
+    {
+      "text": "だけではなくて、やがて社会や職場に",
+      "start_seconds": 408.319,
+      "end_seconds": 417.40000000000003
+    },
+    {
+      "text": "大きな損失なって帰ってくるのです。実際",
+      "start_seconds": 413.12,
+      "end_seconds": 422.16
+    },
+    {
+      "text": "に経済産業省の資産によると2030年に",
+      "start_seconds": 417.4,
+      "end_seconds": 425.87899999999996
+    },
+    {
+      "text": "介護と仕事をしながら働く人が増えること",
+      "start_seconds": 422.16,
+      "end_seconds": 430.24
+    },
+    {
+      "text": "による日本経済の損失9.2兆円と出産さ",
+      "start_seconds": 425.879,
+      "end_seconds": 434.40000000000003
+    },
+    {
+      "text": "れています。9.2兆円です。でも大事な",
+      "start_seconds": 430.24,
+      "end_seconds": 438.40000000000003
+    },
+    {
+      "text": "のはこの打ち訳けなんです。9.2兆円の",
+      "start_seconds": 434.4,
+      "end_seconds": 442.28
+    },
+    {
+      "text": "うち約1兆円。これは仕事と介護の両立が",
+      "start_seconds": 438.4,
+      "end_seconds": 444.79999999999995
+    },
+    {
+      "text": "ままならずやめてしまう人が出ることに",
+      "start_seconds": 442.28,
+      "end_seconds": 449.55999999999995
+    },
+    {
+      "text": "よる損失。じゃあ残りの8兆円は何か?",
+      "start_seconds": 444.8,
+      "end_seconds": 454.0
+    },
+    {
+      "text": "介護と仕事の両立によって働く人の生産性",
+      "start_seconds": 449.56,
+      "end_seconds": 457.8
+    },
+    {
+      "text": "が下がることによる損失なんです。これは",
+      "start_seconds": 454.0,
+      "end_seconds": 461.199
+    },
+    {
+      "text": "どういうことかと言うと彼らは仕事はやめ",
+      "start_seconds": 457.8,
+      "end_seconds": 463.879
+    },
+    {
+      "text": "ていないんです。職場にもいる。会議にも",
+      "start_seconds": 461.199,
+      "end_seconds": 466.159
+    },
+    {
+      "text": "出てる。メールをすれば返信も来るんです",
+      "start_seconds": 463.879,
+      "end_seconds": 473.0
+    },
+    {
+      "text": "。でも体は日々の家族の介護や看護で疲れ",
+      "start_seconds": 466.159,
+      "end_seconds": 476.08
+    },
+    {
+      "text": "きっている。",
+      "start_seconds": 473.0,
+      "end_seconds": 479.159
+    },
+    {
+      "text": "旅重なる病院からの呼び出しで常に仕事を",
+      "start_seconds": 476.08,
+      "end_seconds": 482.8
+    },
+    {
+      "text": "中断しなければいけない。家族の病院での",
+      "start_seconds": 479.159,
+      "end_seconds": 486.0
+    },
+    {
+      "text": "様子が気になって仕事に集中できない。",
+      "start_seconds": 482.8,
+      "end_seconds": 488.639
+    },
+    {
+      "text": "こういった人たちが職場に増えることに",
+      "start_seconds": 486.0,
+      "end_seconds": 492.44
+    },
+    {
+      "text": "よって9.2兆円までこれ介護だけなん",
+      "start_seconds": 488.639,
+      "end_seconds": 495.319
+    },
+    {
+      "text": "です。最後だけで9兆9.2兆円",
+      "start_seconds": 492.44,
+      "end_seconds": 499.4
+    },
+    {
+      "text": "の損失まで押し上げているのです。では",
+      "start_seconds": 495.319,
+      "end_seconds": 501.12
+    },
+    {
+      "text": "この損失",
+      "start_seconds": 499.4,
+      "end_seconds": 504.79999999999995
+    },
+    {
+      "text": "するにはどうすればいいのか?それはケア",
+      "start_seconds": 501.12,
+      "end_seconds": 508.56
+    },
+    {
+      "text": "をしながら働く人への支援ではないんです",
+      "start_seconds": 504.8,
+      "end_seconds": 513.2
+    },
+    {
+      "text": "。そうではなく職場の前提を変える。この",
+      "start_seconds": 508.56,
+      "end_seconds": 518.159
+    },
+    {
+      "text": "ことにあります。日本企業では今様々とな",
+      "start_seconds": 513.2,
+      "end_seconds": 520.9190000000001
+    },
+    {
+      "text": "両立支援制度が整備されていますよね。",
+      "start_seconds": 518.159,
+      "end_seconds": 524.68
+    },
+    {
+      "text": "例えば育児休業、介護休業、短時間勤務",
+      "start_seconds": 520.919,
+      "end_seconds": 527.48
+    },
+    {
+      "text": "制度。私もこれらの制度には本当にお世話",
+      "start_seconds": 524.68,
+      "end_seconds": 531.8389999999999
+    },
+    {
+      "text": "になりました。制度は大事です。でも制度",
+      "start_seconds": 527.48,
+      "end_seconds": 535.88
+    },
+    {
+      "text": "だけではダメなんです。私はよくこの",
+      "start_seconds": 531.839,
+      "end_seconds": 539.0400000000001
+    },
+    {
+      "text": "スマホのアプリとOSに例えてお話をし",
+      "start_seconds": 535.88,
+      "end_seconds": 540.72
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 539.04,
+      "end_seconds": 543.4399999999999
+    },
+    {
+      "text": "両立先生制度というのはスマホで言うと",
+      "start_seconds": 540.72,
+      "end_seconds": 546.32
+    },
+    {
+      "text": "アプリに過ぎないんですね。アプリ、",
+      "start_seconds": 543.44,
+      "end_seconds": 548.9200000000001
+    },
+    {
+      "text": "どんないいアプリがあったとしてもOSが",
+      "start_seconds": 546.32,
+      "end_seconds": 551.9200000000001
+    },
+    {
+      "text": "古かったらどうでしょう?ま、そもそも",
+      "start_seconds": 548.92,
+      "end_seconds": 553.76
+    },
+    {
+      "text": "ダウンロードできなかったりとか",
+      "start_seconds": 551.92,
+      "end_seconds": 555.8389999999999
+    },
+    {
+      "text": "ダウンロードしたとしてもフリーズして",
+      "start_seconds": 553.76,
+      "end_seconds": 558.92
+    },
+    {
+      "text": "しまうそういうことが起きます。職場でも",
+      "start_seconds": 555.839,
+      "end_seconds": 561.8000000000001
+    },
+    {
+      "text": "同じなんです。どんなにいい両立支援制度",
+      "start_seconds": 558.92,
+      "end_seconds": 566.279
+    },
+    {
+      "text": "があったとしても職場のOSが例えばいつ",
+      "start_seconds": 561.8,
+      "end_seconds": 569.88
+    },
+    {
+      "text": "でもどこでも制約なく働ける人を前提とし",
+      "start_seconds": 566.279,
+      "end_seconds": 573.32
+    },
+    {
+      "text": "ていたとしたらその両立先生制度は機能し",
+      "start_seconds": 569.88,
+      "end_seconds": 575.279
+    },
+    {
+      "text": "ません。",
+      "start_seconds": 573.32,
+      "end_seconds": 579.44
+    },
+    {
+      "text": "なので今やるべきことは両立制度の拡充、",
+      "start_seconds": 575.279,
+      "end_seconds": 583.64
+    },
+    {
+      "text": "それではなく職場の前提を変えるこのこと",
+      "start_seconds": 579.44,
+      "end_seconds": 586.36
+    },
+    {
+      "text": "にあります。",
+      "start_seconds": 583.64,
+      "end_seconds": 589.8
+    },
+    {
+      "text": "つまり職場のOSのアップデートですね。",
+      "start_seconds": 586.36,
+      "end_seconds": 592.279
+    },
+    {
+      "text": "では職場のOSのアップデート、これを",
+      "start_seconds": 589.8,
+      "end_seconds": 595.12
+    },
+    {
+      "text": "するにはどうしたらいいのか?これは簡単",
+      "start_seconds": 592.279,
+      "end_seconds": 597.6
+    },
+    {
+      "text": "ではないんです。",
+      "start_seconds": 595.12,
+      "end_seconds": 601.88
+    },
+    {
+      "text": "社会企業の法制度変える必要がある。会社",
+      "start_seconds": 597.6,
+      "end_seconds": 605.399
+    },
+    {
+      "text": "の働き方仕組み自体を変える必要がある。",
+      "start_seconds": 601.88,
+      "end_seconds": 608.519
+    },
+    {
+      "text": "大きな変革が伴います。",
+      "start_seconds": 605.399,
+      "end_seconds": 611.68
+    },
+    {
+      "text": "大きな変革って時間かかりますよね。でも",
+      "start_seconds": 608.519,
+      "end_seconds": 614.68
+    },
+    {
+      "text": "私はこう思うんです。大きな変革も常に",
+      "start_seconds": 611.68,
+      "end_seconds": 617.3199999999999
+    },
+    {
+      "text": "出発点は私たちのマインドセットを変える",
+      "start_seconds": 614.68,
+      "end_seconds": 619.519
+    },
+    {
+      "text": "ことにある。で、このマインドセットを",
+      "start_seconds": 617.32,
+      "end_seconds": 623.839
+    },
+    {
+      "text": "変えるその時に必要なのが当たり前を疑う",
+      "start_seconds": 619.519,
+      "end_seconds": 626.2
+    },
+    {
+      "text": "ということです。",
+      "start_seconds": 623.839,
+      "end_seconds": 628.0400000000001
+    },
+    {
+      "text": "この当たり前いっていうのは当たり前なん",
+      "start_seconds": 626.2,
+      "end_seconds": 631.1600000000001
+    },
+    {
+      "text": "ですが、私たちの価値観とか観念とか親",
+      "start_seconds": 628.04,
+      "end_seconds": 632.959
+    },
+    {
+      "text": "から言われたこととかそういったことが",
+      "start_seconds": 631.16,
+      "end_seconds": 637.04
+    },
+    {
+      "text": "折り混ざって当たり前を作っていきます。",
+      "start_seconds": 632.959,
+      "end_seconds": 639.959
+    },
+    {
+      "text": "なので今日はこの会場で皆さんと一緒に2",
+      "start_seconds": 637.04,
+      "end_seconds": 642.399
+    },
+    {
+      "text": "つの当たり前を見直してみたいと思います",
+      "start_seconds": 639.959,
+      "end_seconds": 648.2399999999999
+    },
+    {
+      "text": "。1つ目は職場の当たり前を疑うです。",
+      "start_seconds": 642.399,
+      "end_seconds": 651.92
+    },
+    {
+      "text": "その定例会議本当に毎週1時間全員が参加",
+      "start_seconds": 648.24,
+      "end_seconds": 656.399
+    },
+    {
+      "text": "する必要ありますか?その出張本当にその",
+      "start_seconds": 651.92,
+      "end_seconds": 659.4399999999999
+    },
+    {
+      "text": "メンバーが現地に行く必要ありますか?",
+      "start_seconds": 656.399,
+      "end_seconds": 662.88
+    },
+    {
+      "text": "その夜の渾新会本当に夜にやる必要あり",
+      "start_seconds": 659.44,
+      "end_seconds": 666.2
+    },
+    {
+      "text": "ますか?私たちの職場の当たり前いっての",
+      "start_seconds": 662.88,
+      "end_seconds": 669.32
+    },
+    {
+      "text": "は実はケアをしながら働く人が本当に職場",
+      "start_seconds": 666.2,
+      "end_seconds": 672.6800000000001
+    },
+    {
+      "text": "で少なかった時代の昔の監修を単に",
+      "start_seconds": 669.32,
+      "end_seconds": 676.24
+    },
+    {
+      "text": "引きずってるだけのことが多いんです。な",
+      "start_seconds": 672.68,
+      "end_seconds": 678.8
+    },
+    {
+      "text": "ので当たり前を見直してみる。",
+      "start_seconds": 676.24,
+      "end_seconds": 682.639
+    },
+    {
+      "text": "そして日本企業にはこの当たり前を見直し",
+      "start_seconds": 678.8,
+      "end_seconds": 685.4799999999999
+    },
+    {
+      "text": "職場のOS企業、OSを書き換えてる企業",
+      "start_seconds": 682.639,
+      "end_seconds": 691.0
+    },
+    {
+      "text": "が足元で増えています。例えばA社では",
+      "start_seconds": 685.48,
+      "end_seconds": 693.2
+    },
+    {
+      "text": "ケアをしてる人だけが有給休暇をたくさん",
+      "start_seconds": 691.0,
+      "end_seconds": 696.839
+    },
+    {
+      "text": "取るという当たり前を見直しました。有給",
+      "start_seconds": 693.2,
+      "end_seconds": 698.72
+    },
+    {
+      "text": "休暇、ま、通は20日なんですけれども、",
+      "start_seconds": 696.839,
+      "end_seconds": 703.9200000000001
+    },
+    {
+      "text": "それを56日に拡充し、いつでも誰でも",
+      "start_seconds": 698.72,
+      "end_seconds": 706.24
+    },
+    {
+      "text": "理由を問わず取れるような制度にしたん",
+      "start_seconds": 703.92,
+      "end_seconds": 709.7199999999999
+    },
+    {
+      "text": "です。もちろん育児中の人、介護中の人、",
+      "start_seconds": 706.24,
+      "end_seconds": 712.839
+    },
+    {
+      "text": "不妊治療中の人は理由を申請することなく",
+      "start_seconds": 709.72,
+      "end_seconds": 715.5600000000001
+    },
+    {
+      "text": "取ることができます。でも今ケアをして",
+      "start_seconds": 712.839,
+      "end_seconds": 718.0400000000001
+    },
+    {
+      "text": "ない人もいますよね。そういう人たちは",
+      "start_seconds": 715.56,
+      "end_seconds": 721.2399999999999
+    },
+    {
+      "text": "自分たちの旅行、リフレッシュ、学び直し",
+      "start_seconds": 718.04,
+      "end_seconds": 725.24
+    },
+    {
+      "text": "にも使えることができる。つまり誰もが",
+      "start_seconds": 721.24,
+      "end_seconds": 728.48
+    },
+    {
+      "text": "使える制度にしたことによってこのケアを",
+      "start_seconds": 725.24,
+      "end_seconds": 730.839
+    },
+    {
+      "text": "してる人だけが感じる自分だけ休んで",
+      "start_seconds": 728.48,
+      "end_seconds": 733.639
+    },
+    {
+      "text": "申し訳ないというあの罪悪感が消え去って",
+      "start_seconds": 730.839,
+      "end_seconds": 737.2790000000001
+    },
+    {
+      "text": "誰もが自分の人生を豊かにするために休み",
+      "start_seconds": 733.639,
+      "end_seconds": 741.0
+    },
+    {
+      "text": "が取れる職場になったんです。私が前いた",
+      "start_seconds": 737.279,
+      "end_seconds": 744.48
+    },
+    {
+      "text": "職場にも小さな職場のOSのアップデート",
+      "start_seconds": 741.0,
+      "end_seconds": 748.44
+    },
+    {
+      "text": "がありました。それは渾新会は夜やるもの",
+      "start_seconds": 744.48,
+      "end_seconds": 752.5600000000001
+    },
+    {
+      "text": "だという当たり前を見直したんです。渾新",
+      "start_seconds": 748.44,
+      "end_seconds": 755.44
+    },
+    {
+      "text": "会は基本的にランチでもお酒が飲みたい時",
+      "start_seconds": 752.56,
+      "end_seconds": 758.5999999999999
+    },
+    {
+      "text": "もありますよね。そういった時は夕方開催",
+      "start_seconds": 755.44,
+      "end_seconds": 761.36
+    },
+    {
+      "text": "。夕方の4時半スタート。そうすると何が",
+      "start_seconds": 758.6,
+      "end_seconds": 765.519
+    },
+    {
+      "text": "起きたか育児中の人も介護中の人も治療中",
+      "start_seconds": 761.36,
+      "end_seconds": 769.1990000000001
+    },
+    {
+      "text": "の人も家庭の調整をすることなく誰もが",
+      "start_seconds": 765.519,
+      "end_seconds": 772.12
+    },
+    {
+      "text": "参加できる側になった。職場の",
+      "start_seconds": 769.199,
+      "end_seconds": 775.199
+    },
+    {
+      "text": "コミュニケーションが無理なく活性化され",
+      "start_seconds": 772.12,
+      "end_seconds": 777.04
+    },
+    {
+      "text": "ました。",
+      "start_seconds": 775.199,
+      "end_seconds": 779.8389999999999
+    },
+    {
+      "text": "是非ですね、明日職場でも家庭でもいい",
+      "start_seconds": 777.04,
+      "end_seconds": 783.3199999999999
+    },
+    {
+      "text": "です。そこでの当たり前を1つ見直してみ",
+      "start_seconds": 779.839,
+      "end_seconds": 788.36
+    },
+    {
+      "text": "てください。その当たり前は誰を前提に",
+      "start_seconds": 783.32,
+      "end_seconds": 791.1990000000001
+    },
+    {
+      "text": "設計されているのか見直してみてください",
+      "start_seconds": 788.36,
+      "end_seconds": 795.6800000000001
+    },
+    {
+      "text": "。では疑うべき2つ目の当たり前があり",
+      "start_seconds": 791.199,
+      "end_seconds": 798.92
+    },
+    {
+      "text": "ます。それはケアはコストであるという",
+      "start_seconds": 795.68,
+      "end_seconds": 802.2399999999999
+    },
+    {
+      "text": "考えた方です。コストつまりマイナスな",
+      "start_seconds": 798.92,
+      "end_seconds": 804.76
+    },
+    {
+      "text": "ことということですね。私も10年前",
+      "start_seconds": 802.24,
+      "end_seconds": 807.36
+    },
+    {
+      "text": "ぐらいはそう思ってました。ケアをすると",
+      "start_seconds": 804.76,
+      "end_seconds": 809.48
+    },
+    {
+      "text": "長期間休まなきゃいけなかったり、その",
+      "start_seconds": 807.36,
+      "end_seconds": 812.48
+    },
+    {
+      "text": "期間昇が止まってしまったり、何よりケア",
+      "start_seconds": 809.48,
+      "end_seconds": 816.04
+    },
+    {
+      "text": "にキャリアにこう空白ができてしまうもの",
+      "start_seconds": 812.48,
+      "end_seconds": 819.24
+    },
+    {
+      "text": "。そういう風に思っていました。でもこの",
+      "start_seconds": 816.04,
+      "end_seconds": 823.24
+    },
+    {
+      "text": "ケアの10年間を経てそして研究員として",
+      "start_seconds": 819.24,
+      "end_seconds": 826.519
+    },
+    {
+      "text": "この研究を見直した時に全く違う結論に",
+      "start_seconds": 823.24,
+      "end_seconds": 829.36
+    },
+    {
+      "text": "至ったんです。",
+      "start_seconds": 826.519,
+      "end_seconds": 832.48
+    },
+    {
+      "text": "それはケアをするという経験はこれからの",
+      "start_seconds": 829.36,
+      "end_seconds": 837.48
+    },
+    {
+      "text": "人生を時代を人間が生き抜くための最高の",
+      "start_seconds": 832.48,
+      "end_seconds": 839.16
+    },
+    {
+      "text": "リスキリングの場ではないかということな",
+      "start_seconds": 837.48,
+      "end_seconds": 840.9200000000001
+    },
+    {
+      "text": "んです。",
+      "start_seconds": 839.16,
+      "end_seconds": 845.759
+    },
+    {
+      "text": "例えば危機対応能力良きのことが突然起き",
+      "start_seconds": 840.92,
+      "end_seconds": 849.079
+    },
+    {
+      "text": "た時に今ある情報の中で家族にとって自分",
+      "start_seconds": 845.759,
+      "end_seconds": 853.48
+    },
+    {
+      "text": "にとってベストな判断を下す力2つ目は",
+      "start_seconds": 849.079,
+      "end_seconds": 857.519
+    },
+    {
+      "text": "優先順位をつける力限りある体力限りある",
+      "start_seconds": 853.48,
+      "end_seconds": 860.6800000000001
+    },
+    {
+      "text": "時間の中でやるやらないべき仕事を",
+      "start_seconds": 857.519,
+      "end_seconds": 864.36
+    },
+    {
+      "text": "切り捨てやるべき仕事にフォーカスする。",
+      "start_seconds": 860.68,
+      "end_seconds": 868.7199999999999
+    },
+    {
+      "text": "そして3つ目は共感力です。相手の言葉に",
+      "start_seconds": 864.36,
+      "end_seconds": 872.8000000000001
+    },
+    {
+      "text": "ならない痛みや感情に寄り添い、信頼関係",
+      "start_seconds": 868.72,
+      "end_seconds": 876.8000000000001
+    },
+    {
+      "text": "を気づく力。これらの力はケアの現場で",
+      "start_seconds": 872.8,
+      "end_seconds": 880.079
+    },
+    {
+      "text": "毎日描かれていきます。そしてこれから",
+      "start_seconds": 876.8,
+      "end_seconds": 883.3599999999999
+    },
+    {
+      "text": "AIが私たちの仕事どんどん代替していく",
+      "start_seconds": 880.079,
+      "end_seconds": 887.7589999999999
+    },
+    {
+      "text": "中で人間にこそ求められる価値のある能力",
+      "start_seconds": 883.36,
+      "end_seconds": 890.9590000000001
+    },
+    {
+      "text": "だと思うのです。",
+      "start_seconds": 887.759,
+      "end_seconds": 895.0790000000001
+    },
+    {
+      "text": "なので私はこう思います。",
+      "start_seconds": 890.959,
+      "end_seconds": 895.079
+    },
+    {
+      "text": "ケアはコストではない。ギャップでもない",
+      "start_seconds": 897.0,
+      "end_seconds": 902.44
+    },
+    {
+      "text": "。これからのAI時代を人間が生きるため",
+      "start_seconds": 899.12,
+      "end_seconds": 907.92
+    },
+    {
+      "text": "の最高の資産アセットだと思うのです。",
+      "start_seconds": 902.44,
+      "end_seconds": 911.9590000000001
+    },
+    {
+      "text": "では最後にあの廊下にもう1度戻りたいと",
+      "start_seconds": 907.92,
+      "end_seconds": 913.88
+    },
+    {
+      "text": "思います。",
+      "start_seconds": 911.959,
+      "end_seconds": 920.399
+    },
+    {
+      "text": "12年前私はこの廊下で様々なインビトン",
+      "start_seconds": 913.88,
+      "end_seconds": 923.04
+    },
+    {
+      "text": "狭にいました。",
+      "start_seconds": 920.399,
+      "end_seconds": 925.72
+    },
+    {
+      "text": "聖と死の間、",
+      "start_seconds": 923.04,
+      "end_seconds": 930.079
+    },
+    {
+      "text": "キャリアとケアの間、そして強さと弱さの",
+      "start_seconds": 925.72,
+      "end_seconds": 933.0
+    },
+    {
+      "text": "間",
+      "start_seconds": 930.079,
+      "end_seconds": 935.319
+    },
+    {
+      "text": "しんどかった。",
+      "start_seconds": 933.0,
+      "end_seconds": 938.6
+    },
+    {
+      "text": "でもこの廊下は私に大切なことを教えて",
+      "start_seconds": 935.319,
+      "end_seconds": 942.24
+    },
+    {
+      "text": "くれました。それはケアは私たち人生に",
+      "start_seconds": 938.6,
+      "end_seconds": 945.5600000000001
+    },
+    {
+      "text": "おいて例外ではないということなんです。",
+      "start_seconds": 942.24,
+      "end_seconds": 948.399
+    },
+    {
+      "text": "私たちは生まれた瞬間ケアをされて生まれ",
+      "start_seconds": 945.56,
+      "end_seconds": 952.4799999999999
+    },
+    {
+      "text": "てきます。やがてケアをする側になる。",
+      "start_seconds": 948.399,
+      "end_seconds": 956.72
+    },
+    {
+      "text": "そして人生を終える時にケアをするされる",
+      "start_seconds": 952.48,
+      "end_seconds": 960.04
+    },
+    {
+      "text": "側に戻っていく。つまりケアをする側さ",
+      "start_seconds": 956.72,
+      "end_seconds": 962.3190000000001
+    },
+    {
+      "text": "れる側このイントbetweenトインを",
+      "start_seconds": 960.04,
+      "end_seconds": 965.8389999999999
+    },
+    {
+      "text": "行ったり来たりするんですね。なので誰",
+      "start_seconds": 962.319,
+      "end_seconds": 969.8389999999999
+    },
+    {
+      "text": "1人例外ではない。そして人間が人間",
+      "start_seconds": 965.839,
+      "end_seconds": 972.6
+    },
+    {
+      "text": "らしく生きることそのものだと思うのです",
+      "start_seconds": 969.839,
+      "end_seconds": 974.48
+    },
+    {
+      "text": "。",
+      "start_seconds": 972.6,
+      "end_seconds": 978.48
+    },
+    {
+      "text": "そして日本はこれから世界に先じて人口",
+      "start_seconds": 974.48,
+      "end_seconds": 981.48
+    },
+    {
+      "text": "減少社会、そして超高齢化社会に入って",
+      "start_seconds": 978.48,
+      "end_seconds": 983.12
+    },
+    {
+      "text": "いきます。",
+      "start_seconds": 981.48,
+      "end_seconds": 986.16
+    },
+    {
+      "text": "ケアを必要とする人が増える一方でケアを",
+      "start_seconds": 983.12,
+      "end_seconds": 989.279
+    },
+    {
+      "text": "する側、そして働いて社会を支える側は",
+      "start_seconds": 986.16,
+      "end_seconds": 992.079
+    },
+    {
+      "text": "どんどん減っていきます。",
+      "start_seconds": 989.279,
+      "end_seconds": 995.639
+    },
+    {
+      "text": "そんな中で私たちが目指すべき社会は限り",
+      "start_seconds": 992.079,
+      "end_seconds": 1000.079
+    },
+    {
+      "text": "ある人で無理をして働く社会ではない。",
+      "start_seconds": 995.639,
+      "end_seconds": 1004.5600000000001
+    },
+    {
+      "text": "そうではなく働きたい人が働くことができ",
+      "start_seconds": 1000.079,
+      "end_seconds": 1007.4399999999999
+    },
+    {
+      "text": "ケアをしながらでもキャリアを諦めない。",
+      "start_seconds": 1004.56,
+      "end_seconds": 1011.92
+    },
+    {
+      "text": "そしてケアの経験でさえも未来の力に変え",
+      "start_seconds": 1007.44,
+      "end_seconds": 1016.24
+    },
+    {
+      "text": "ていけるそんな社会です。それは単に",
+      "start_seconds": 1011.92,
+      "end_seconds": 1019.319
+    },
+    {
+      "text": "優しい社会ではないんですね。私たちの",
+      "start_seconds": 1016.24,
+      "end_seconds": 1023.199
+    },
+    {
+      "text": "モてる最大の能力をフルに活用し、経済を",
+      "start_seconds": 1019.319,
+      "end_seconds": 1027.959
+    },
+    {
+      "text": "回す力に変えていく。本当の意味で狂人で",
+      "start_seconds": 1023.199,
+      "end_seconds": 1031.199
+    },
+    {
+      "text": "持続可能な社会だと思います。",
+      "start_seconds": 1027.959,
+      "end_seconds": 1033.88
+    },
+    {
+      "text": "そんな社会にしていくためにケアをし",
+      "start_seconds": 1031.199,
+      "end_seconds": 1036.919
+    },
+    {
+      "text": "ながら働くことを職場の前提にしていき",
+      "start_seconds": 1033.88,
+      "end_seconds": 1041.6000000000001
+    },
+    {
+      "text": "ましょう。そして支えながら働くことを",
+      "start_seconds": 1036.919,
+      "end_seconds": 1047.16
+    },
+    {
+      "text": "私たちの当たり前にしていきましょう。",
+      "start_seconds": 1041.6,
+      "end_seconds": 1047.1599999999999
+    },
+    {
+      "text": "workfor",
+      "start_seconds": 1047.6,
+      "end_seconds": 1052.8799999999999
+    },
+    {
+      "text": "nooneisleftin",
+      "start_seconds": 1050.76,
+      "end_seconds": 1055.8799999999999
+    },
+    {
+      "text": "T",
+      "start_seconds": 1052.88,
+      "end_seconds": 1055.88
+    }
+  ],
+  "display_captions": [
+    {
+      "text": "想像してみてください。",
+      "start_seconds": 3.36,
+      "end_seconds": 6.319,
+      "id": "ldSPyi0UjeU-display-0001",
+      "segment_id": "ldSPyi0UjeU-ja-0001"
+    },
+    {
+      "text": "長く",
+      "start_seconds": 6.319,
+      "end_seconds": 7.879,
+      "id": "ldSPyi0UjeU-display-0002",
+      "segment_id": "ldSPyi0UjeU-ja-0002"
+    },
+    {
+      "text": "静まり返った真っ白な廊下を。",
+      "start_seconds": 7.879,
+      "end_seconds": 13.28,
+      "id": "ldSPyi0UjeU-display-0003",
+      "segment_id": "ldSPyi0UjeU-ja-0002"
+    },
+    {
+      "text": "12年前、私はこの廊下を車椅子で渡って",
+      "start_seconds": 13.28,
+      "end_seconds": 17.8,
+      "id": "ldSPyi0UjeU-display-0004",
+      "segment_id": "ldSPyi0UjeU-ja-0003"
+    },
+    {
+      "text": "いました。",
+      "start_seconds": 17.8,
+      "end_seconds": 20.199,
+      "id": "ldSPyi0UjeU-display-0005",
+      "segment_id": "ldSPyi0UjeU-ja-0003"
+    },
+    {
+      "text": "お腹には新しい命が宿っていました。",
+      "start_seconds": 20.199,
+      "end_seconds": 25.359,
+      "id": "ldSPyi0UjeU-display-0006",
+      "segment_id": "ldSPyi0UjeU-ja-0004"
+    },
+    {
+      "text": "でもこの廊下の先にある病室には末期の母",
+      "start_seconds": 25.359,
+      "end_seconds": 30.759,
+      "id": "ldSPyi0UjeU-display-0007",
+      "segment_id": "ldSPyi0UjeU-ja-0005"
+    },
+    {
+      "text": "が静かに死へと向かっていました。",
+      "start_seconds": 30.759,
+      "end_seconds": 36.879,
+      "id": "ldSPyi0UjeU-display-0008",
+      "segment_id": "ldSPyi0UjeU-ja-0005"
+    },
+    {
+      "text": "当時待望の大師を妊娠し、座りに耐い",
+      "start_seconds": 36.879,
+      "end_seconds": 40.92,
+      "id": "ldSPyi0UjeU-display-0009",
+      "segment_id": "ldSPyi0UjeU-ja-0006"
+    },
+    {
+      "text": "ながらも私は日中はフルタイムで働き夜に",
+      "start_seconds": 40.92,
+      "end_seconds": 45.559,
+      "id": "ldSPyi0UjeU-display-0010",
+      "segment_id": "ldSPyi0UjeU-ja-0006"
+    },
+    {
+      "text": "なると母の病室に駆けつける。そんな少し",
+      "start_seconds": 45.559,
+      "end_seconds": 49.84,
+      "id": "ldSPyi0UjeU-display-0011",
+      "segment_id": "ldSPyi0UjeU-ja-0007"
+    },
+    {
+      "text": "無理をした生活をしていました。",
+      "start_seconds": 49.84,
+      "end_seconds": 53.52,
+      "id": "ldSPyi0UjeU-display-0012",
+      "segment_id": "ldSPyi0UjeU-ja-0007"
+    },
+    {
+      "text": "でも当時は本気でこう信じていたんです。",
+      "start_seconds": 53.52,
+      "end_seconds": 57.039,
+      "id": "ldSPyi0UjeU-display-0013",
+      "segment_id": "ldSPyi0UjeU-ja-0008"
+    },
+    {
+      "text": "私が頑張りさえすれば育児も介護も仕事も",
+      "start_seconds": 57.039,
+      "end_seconds": 62.879,
+      "id": "ldSPyi0UjeU-display-0014",
+      "segment_id": "ldSPyi0UjeU-ja-0009"
+    },
+    {
+      "text": "母の病気でさえもなんとかなるはずだと。",
+      "start_seconds": 62.879,
+      "end_seconds": 68.2,
+      "id": "ldSPyi0UjeU-display-0015",
+      "segment_id": "ldSPyi0UjeU-ja-0009"
+    },
+    {
+      "text": "でも現実はそうは甘くはなかった。ある日",
+      "start_seconds": 68.2,
+      "end_seconds": 73.4,
+      "id": "ldSPyi0UjeU-display-0016",
+      "segment_id": "ldSPyi0UjeU-ja-0010"
+    },
+    {
+      "text": "にこ告けられました。",
+      "start_seconds": 73.4,
+      "end_seconds": 75.92,
+      "id": "ldSPyi0UjeU-display-0017",
+      "segment_id": "ldSPyi0UjeU-ja-0010"
+    },
+    {
+      "text": "切迫です。今すぐ入院してください。",
+      "start_seconds": 75.92,
+      "end_seconds": 81.4,
+      "id": "ldSPyi0UjeU-display-0018",
+      "segment_id": "ldSPyi0UjeU-ja-0011"
+    },
+    {
+      "text": "私は母がいたホスピスと同じ病院に入院を",
+      "start_seconds": 81.4,
+      "end_seconds": 85.56,
+      "id": "ldSPyi0UjeU-display-0019",
+      "segment_id": "ldSPyi0UjeU-ja-0012"
+    },
+    {
+      "text": "しました。",
+      "start_seconds": 85.56,
+      "end_seconds": 87.439,
+      "id": "ldSPyi0UjeU-display-0020",
+      "segment_id": "ldSPyi0UjeU-ja-0012"
+    },
+    {
+      "text": "ベッドから一歩も動いてはいけないという",
+      "start_seconds": 87.439,
+      "end_seconds": 90.6,
+      "id": "ldSPyi0UjeU-display-0021",
+      "segment_id": "ldSPyi0UjeU-ja-0013"
+    },
+    {
+      "text": "絶対安静の中で",
+      "start_seconds": 90.6,
+      "end_seconds": 93.759,
+      "id": "ldSPyi0UjeU-display-0022",
+      "segment_id": "ldSPyi0UjeU-ja-0013"
+    },
+    {
+      "text": "どうしても母に会いに来たかった。",
+      "start_seconds": 93.759,
+      "end_seconds": 97.28,
+      "id": "ldSPyi0UjeU-display-0023",
+      "segment_id": "ldSPyi0UjeU-ja-0013"
+    },
+    {
+      "text": "なので看護師さんにお願いをして車椅子を",
+      "start_seconds": 97.28,
+      "end_seconds": 102.0,
+      "id": "ldSPyi0UjeU-display-0024",
+      "segment_id": "ldSPyi0UjeU-ja-0014"
+    },
+    {
+      "text": "押してもらいこの白い廊下を渡って毎日",
+      "start_seconds": 102.0,
+      "end_seconds": 107.56,
+      "id": "ldSPyi0UjeU-display-0025",
+      "segment_id": "ldSPyi0UjeU-ja-0014"
+    },
+    {
+      "text": "毎日母に会いに行きました。",
+      "start_seconds": 107.56,
+      "end_seconds": 112.399,
+      "id": "ldSPyi0UjeU-display-0026",
+      "segment_id": "ldSPyi0UjeU-ja-0015"
+    },
+    {
+      "text": "命を宿した体が",
+      "start_seconds": 112.399,
+      "end_seconds": 115.28,
+      "id": "ldSPyi0UjeU-display-0027",
+      "segment_id": "ldSPyi0UjeU-ja-0016"
+    },
+    {
+      "text": "死を待つ部屋へと向かう。",
+      "start_seconds": 115.28,
+      "end_seconds": 119.68,
+      "id": "ldSPyi0UjeU-display-0028",
+      "segment_id": "ldSPyi0UjeU-ja-0016"
+    },
+    {
+      "text": "この廊下で私は様々なインビトン",
+      "start_seconds": 119.68,
+      "end_seconds": 123.92,
+      "id": "ldSPyi0UjeU-display-0029",
+      "segment_id": "ldSPyi0UjeU-ja-0017"
+    },
+    {
+      "text": "にいました。",
+      "start_seconds": 123.92,
+      "end_seconds": 126.119,
+      "id": "ldSPyi0UjeU-display-0030",
+      "segment_id": "ldSPyi0UjeU-ja-0017"
+    },
+    {
+      "text": "聖と死の間、キャリアとケアの間、そして",
+      "start_seconds": 126.119,
+      "end_seconds": 131.64,
+      "id": "ldSPyi0UjeU-display-0031",
+      "segment_id": "ldSPyi0UjeU-ja-0018"
+    },
+    {
+      "text": "強さと弱さの間。",
+      "start_seconds": 131.64,
+      "end_seconds": 135.56,
+      "id": "ldSPyi0UjeU-display-0032",
+      "segment_id": "ldSPyi0UjeU-ja-0018"
+    },
+    {
+      "text": "この廊下は私の人生で最も孤独な場所でし",
+      "start_seconds": 135.56,
+      "end_seconds": 139.84,
+      "id": "ldSPyi0UjeU-display-0033",
+      "segment_id": "ldSPyi0UjeU-ja-0019"
+    },
+    {
+      "text": "た。",
+      "start_seconds": 139.84,
+      "end_seconds": 141.959,
+      "id": "ldSPyi0UjeU-display-0034",
+      "segment_id": "ldSPyi0UjeU-ja-0019"
+    },
+    {
+      "text": "でもこれは単なる始まりに過ぎなかったん",
+      "start_seconds": 141.959,
+      "end_seconds": 144.959,
+      "id": "ldSPyi0UjeU-display-0035",
+      "segment_id": "ldSPyi0UjeU-ja-0020"
+    },
+    {
+      "text": "です。ここからの10年間私はケアの嵐を",
+      "start_seconds": 144.959,
+      "end_seconds": 149.4,
+      "id": "ldSPyi0UjeU-display-0036",
+      "segment_id": "ldSPyi0UjeU-ja-0020"
+    },
+    {
+      "text": "歩むことになります。",
+      "start_seconds": 149.4,
+      "end_seconds": 151.959,
+      "id": "ldSPyi0UjeU-display-0037",
+      "segment_id": "ldSPyi0UjeU-ja-0020"
+    },
+    {
+      "text": "3人の子供の妊娠出産育児、2度の親の",
+      "start_seconds": 151.959,
+      "end_seconds": 156.44,
+      "id": "ldSPyi0UjeU-display-0038",
+      "segment_id": "ldSPyi0UjeU-ja-0021"
+    },
+    {
+      "text": "介護、4年間の不妊治療。そして最後は",
+      "start_seconds": 156.44,
+      "end_seconds": 160.68,
+      "id": "ldSPyi0UjeU-display-0039",
+      "segment_id": "ldSPyi0UjeU-ja-0021"
+    },
+    {
+      "text": "自分自身の病と向き合うことになります。",
+      "start_seconds": 160.68,
+      "end_seconds": 165.319,
+      "id": "ldSPyi0UjeU-display-0040",
+      "segment_id": "ldSPyi0UjeU-ja-0022"
+    },
+    {
+      "text": "このケアの嵐経験する前の私はいつでも",
+      "start_seconds": 165.319,
+      "end_seconds": 170.159,
+      "id": "ldSPyi0UjeU-display-0041",
+      "segment_id": "ldSPyi0UjeU-ja-0023"
+    },
+    {
+      "text": "どこでも正約なく働けることが当たり前だ",
+      "start_seconds": 170.159,
+      "end_seconds": 173.68,
+      "id": "ldSPyi0UjeU-display-0042",
+      "segment_id": "ldSPyi0UjeU-ja-0023"
+    },
+    {
+      "text": "と思っていました。",
+      "start_seconds": 173.68,
+      "end_seconds": 176.56,
+      "id": "ldSPyi0UjeU-display-0043",
+      "segment_id": "ldSPyi0UjeU-ja-0023"
+    },
+    {
+      "text": "でもこのケアの嵐を経験して初めて気が",
+      "start_seconds": 176.56,
+      "end_seconds": 180.8,
+      "id": "ldSPyi0UjeU-display-0044",
+      "segment_id": "ldSPyi0UjeU-ja-0024"
+    },
+    {
+      "text": "ついたんです。人は例え能力があったとし",
+      "start_seconds": 180.8,
+      "end_seconds": 185.2,
+      "id": "ldSPyi0UjeU-display-0045",
+      "segment_id": "ldSPyi0UjeU-ja-0024"
+    },
+    {
+      "text": "ても抱えた瞬間自分の思う通りには働け",
+      "start_seconds": 185.2,
+      "end_seconds": 189.799,
+      "id": "ldSPyi0UjeU-display-0046",
+      "segment_id": "ldSPyi0UjeU-ja-0025"
+    },
+    {
+      "text": "なくなるということに突然電話が鳴る。今",
+      "start_seconds": 189.799,
+      "end_seconds": 195.68,
+      "id": "ldSPyi0UjeU-display-0047",
+      "segment_id": "ldSPyi0UjeU-ja-0025"
+    },
+    {
+      "text": "やってる仕事を全部中断して病院や保育園",
+      "start_seconds": 195.68,
+      "end_seconds": 200.28,
+      "id": "ldSPyi0UjeU-display-0048",
+      "segment_id": "ldSPyi0UjeU-ja-0026"
+    },
+    {
+      "text": "、学校施設に駆けつける。",
+      "start_seconds": 200.28,
+      "end_seconds": 204.879,
+      "id": "ldSPyi0UjeU-display-0049",
+      "segment_id": "ldSPyi0UjeU-ja-0026"
+    },
+    {
+      "text": "仕事と病院と自分の家庭の予定をこう",
+      "start_seconds": 204.879,
+      "end_seconds": 208.799,
+      "id": "ldSPyi0UjeU-display-0050",
+      "segment_id": "ldSPyi0UjeU-ja-0027"
+    },
+    {
+      "text": "パスルのように組み合わせながらなんとか",
+      "start_seconds": 208.799,
+      "end_seconds": 211.84,
+      "id": "ldSPyi0UjeU-display-0051",
+      "segment_id": "ldSPyi0UjeU-ja-0027"
+    },
+    {
+      "text": "1日を得る。そんな綱渡りのような毎日の",
+      "start_seconds": 211.84,
+      "end_seconds": 217.0,
+      "id": "ldSPyi0UjeU-display-0052",
+      "segment_id": "ldSPyi0UjeU-ja-0028"
+    },
+    {
+      "text": "中で私はいつも自分自身に問いかけてい",
+      "start_seconds": 217.0,
+      "end_seconds": 220.4,
+      "id": "ldSPyi0UjeU-display-0053",
+      "segment_id": "ldSPyi0UjeU-ja-0028"
+    },
+    {
+      "text": "ました。なぜケアをしながら働くという",
+      "start_seconds": 220.4,
+      "end_seconds": 224.519,
+      "id": "ldSPyi0UjeU-display-0054",
+      "segment_id": "ldSPyi0UjeU-ja-0029"
+    },
+    {
+      "text": "ことがこんなにも大変なんだろうと。",
+      "start_seconds": 224.519,
+      "end_seconds": 228.64,
+      "id": "ldSPyi0UjeU-display-0055",
+      "segment_id": "ldSPyi0UjeU-ja-0029"
+    },
+    {
+      "text": "そして当時シンクタンクで労働分野の研究",
+      "start_seconds": 228.64,
+      "end_seconds": 231.68,
+      "id": "ldSPyi0UjeU-display-0056",
+      "segment_id": "ldSPyi0UjeU-ja-0030"
+    },
+    {
+      "text": "をしていた私は自分自身のこの経験と",
+      "start_seconds": 231.68,
+      "end_seconds": 235.12,
+      "id": "ldSPyi0UjeU-display-0057",
+      "segment_id": "ldSPyi0UjeU-ja-0030"
+    },
+    {
+      "text": "データを照らし合わせた時にあることに気",
+      "start_seconds": 235.12,
+      "end_seconds": 238.48,
+      "id": "ldSPyi0UjeU-display-0058",
+      "segment_id": "ldSPyi0UjeU-ja-0030"
+    },
+    {
+      "text": "がついたんです。それはこの嵐の中にいた",
+      "start_seconds": 238.48,
+      "end_seconds": 242.76,
+      "id": "ldSPyi0UjeU-display-0059",
+      "segment_id": "ldSPyi0UjeU-ja-0031"
+    },
+    {
+      "text": "のは私1人ではなかったということ。",
+      "start_seconds": 242.76,
+      "end_seconds": 246.4,
+      "id": "ldSPyi0UjeU-display-0060",
+      "segment_id": "ldSPyi0UjeU-ja-0031"
+    },
+    {
+      "text": "そしてケアをしながら働くことがこんなに",
+      "start_seconds": 246.4,
+      "end_seconds": 249.72,
+      "id": "ldSPyi0UjeU-display-0061",
+      "segment_id": "ldSPyi0UjeU-ja-0032"
+    },
+    {
+      "text": "も大変なのは私たちが弱いからでもない。",
+      "start_seconds": 249.72,
+      "end_seconds": 253.56,
+      "id": "ldSPyi0UjeU-display-0062",
+      "segment_id": "ldSPyi0UjeU-ja-0032"
+    },
+    {
+      "text": "私たちが能力が足りないわけでもない。",
+      "start_seconds": 253.56,
+      "end_seconds": 257.04,
+      "id": "ldSPyi0UjeU-display-0063",
+      "segment_id": "ldSPyi0UjeU-ja-0033"
+    },
+    {
+      "text": "仕事自体がケアをしながら働くということ",
+      "start_seconds": 257.04,
+      "end_seconds": 260.72,
+      "id": "ldSPyi0UjeU-display-0064",
+      "segment_id": "ldSPyi0UjeU-ja-0034"
+    },
+    {
+      "text": "を前提に設計されていない。このことに気",
+      "start_seconds": 260.72,
+      "end_seconds": 264.0,
+      "id": "ldSPyi0UjeU-display-0065",
+      "segment_id": "ldSPyi0UjeU-ja-0034"
+    },
+    {
+      "text": "がついたんです。",
+      "start_seconds": 264.0,
+      "end_seconds": 266.72,
+      "id": "ldSPyi0UjeU-display-0066",
+      "segment_id": "ldSPyi0UjeU-ja-0034"
+    },
+    {
+      "text": "日本には今ケアをしながら働く人が",
+      "start_seconds": 266.72,
+      "end_seconds": 270.6,
+      "id": "ldSPyi0UjeU-display-0067",
+      "segment_id": "ldSPyi0UjeU-ja-0035"
+    },
+    {
+      "text": "たくさんいます。働く人約6800万人の",
+      "start_seconds": 270.6,
+      "end_seconds": 274.32,
+      "id": "ldSPyi0UjeU-display-0068",
+      "segment_id": "ldSPyi0UjeU-ja-0035"
+    },
+    {
+      "text": "うち2300万人は自分の病気と治療に",
+      "start_seconds": 274.32,
+      "end_seconds": 278.36,
+      "id": "ldSPyi0UjeU-display-0069",
+      "segment_id": "ldSPyi0UjeU-ja-0035"
+    },
+    {
+      "text": "向き合いながら働いている。",
+      "start_seconds": 278.36,
+      "end_seconds": 281.44,
+      "id": "ldSPyi0UjeU-display-0070",
+      "segment_id": "ldSPyi0UjeU-ja-0036"
+    },
+    {
+      "text": "800万人は育児をしながら、360万人",
+      "start_seconds": 281.44,
+      "end_seconds": 284.759,
+      "id": "ldSPyi0UjeU-display-0071",
+      "segment_id": "ldSPyi0UjeU-ja-0037"
+    },
+    {
+      "text": "は介護をしながら働いている。これらの",
+      "start_seconds": 284.759,
+      "end_seconds": 288.72,
+      "id": "ldSPyi0UjeU-display-0072",
+      "segment_id": "ldSPyi0UjeU-ja-0037"
+    },
+    {
+      "text": "数値って単純に立ち合わせることはでき",
+      "start_seconds": 288.72,
+      "end_seconds": 291.24,
+      "id": "ldSPyi0UjeU-display-0073",
+      "segment_id": "ldSPyi0UjeU-ja-0037"
+    },
+    {
+      "text": "ないんです。なぜかと言うと、私のように",
+      "start_seconds": 291.24,
+      "end_seconds": 293.72,
+      "id": "ldSPyi0UjeU-display-0074",
+      "segment_id": "ldSPyi0UjeU-ja-0038"
+    },
+    {
+      "text": "1人の人間が育児と介護、介護と治療に",
+      "start_seconds": 293.72,
+      "end_seconds": 297.24,
+      "id": "ldSPyi0UjeU-display-0075",
+      "segment_id": "ldSPyi0UjeU-ja-0038"
+    },
+    {
+      "text": "なってる場合があるから。でもたった1つ",
+      "start_seconds": 297.24,
+      "end_seconds": 300.639,
+      "id": "ldSPyi0UjeU-display-0076",
+      "segment_id": "ldSPyi0UjeU-ja-0038"
+    },
+    {
+      "text": "確かなことがあります。それはこの日本で",
+      "start_seconds": 300.639,
+      "end_seconds": 304.56,
+      "id": "ldSPyi0UjeU-display-0077",
+      "segment_id": "ldSPyi0UjeU-ja-0039"
+    },
+    {
+      "text": "ケアをしながら働くということはもはや",
+      "start_seconds": 304.56,
+      "end_seconds": 307.0,
+      "id": "ldSPyi0UjeU-display-0078",
+      "segment_id": "ldSPyi0UjeU-ja-0039"
+    },
+    {
+      "text": "例外ではないということなんです。",
+      "start_seconds": 307.0,
+      "end_seconds": 311.479,
+      "id": "ldSPyi0UjeU-display-0079",
+      "segment_id": "ldSPyi0UjeU-ja-0039"
+    },
+    {
+      "text": "こちらを見ていただきます通り例外では",
+      "start_seconds": 312.72,
+      "end_seconds": 315.0,
+      "id": "ldSPyi0UjeU-display-0080",
+      "segment_id": "ldSPyi0UjeU-ja-0040"
+    },
+    {
+      "text": "ない。つまりあの働くことがもう当たり前",
+      "start_seconds": 315.0,
+      "end_seconds": 319.44,
+      "id": "ldSPyi0UjeU-display-0081",
+      "segment_id": "ldSPyi0UjeU-ja-0040"
+    },
+    {
+      "text": "になってるということなんですね。これ",
+      "start_seconds": 319.44,
+      "end_seconds": 321.84,
+      "id": "ldSPyi0UjeU-display-0082",
+      "segment_id": "ldSPyi0UjeU-ja-0040"
+    },
+    {
+      "text": "から友働きがどんどん吹いてきます。少子",
+      "start_seconds": 321.84,
+      "end_seconds": 325.0,
+      "id": "ldSPyi0UjeU-display-0083",
+      "segment_id": "ldSPyi0UjeU-ja-0041"
+    },
+    {
+      "text": "高齢化が進んでいきます。そんな中で",
+      "start_seconds": 325.0,
+      "end_seconds": 327.199,
+      "id": "ldSPyi0UjeU-display-0084",
+      "segment_id": "ldSPyi0UjeU-ja-0041"
+    },
+    {
+      "text": "むしろいつでもどこでも制約なく働ける人",
+      "start_seconds": 327.199,
+      "end_seconds": 331.24,
+      "id": "ldSPyi0UjeU-display-0085",
+      "segment_id": "ldSPyi0UjeU-ja-0041"
+    },
+    {
+      "text": "の方が少数派になっていくはずなんです。",
+      "start_seconds": 331.24,
+      "end_seconds": 334.639,
+      "id": "ldSPyi0UjeU-display-0086",
+      "segment_id": "ldSPyi0UjeU-ja-0042"
+    },
+    {
+      "text": "それにも関わらず、私たちの社会や職場は",
+      "start_seconds": 334.639,
+      "end_seconds": 338.28,
+      "id": "ldSPyi0UjeU-display-0087",
+      "segment_id": "ldSPyi0UjeU-ja-0043"
+    },
+    {
+      "text": "未だにケアをしながら働く人を例外として",
+      "start_seconds": 338.28,
+      "end_seconds": 341.56,
+      "id": "ldSPyi0UjeU-display-0088",
+      "segment_id": "ldSPyi0UjeU-ja-0043"
+    },
+    {
+      "text": "扱う傾向にある。そうするとどういうこと",
+      "start_seconds": 341.56,
+      "end_seconds": 344.4,
+      "id": "ldSPyi0UjeU-display-0089",
+      "segment_id": "ldSPyi0UjeU-ja-0043"
+    },
+    {
+      "text": "が起こるかというと、職場の中でケアをし",
+      "start_seconds": 344.4,
+      "end_seconds": 347.36,
+      "id": "ldSPyi0UjeU-display-0090",
+      "segment_id": "ldSPyi0UjeU-ja-0044"
+    },
+    {
+      "text": "ながら働くということが組み込まれてい",
+      "start_seconds": 347.36,
+      "end_seconds": 349.96,
+      "id": "ldSPyi0UjeU-display-0091",
+      "segment_id": "ldSPyi0UjeU-ja-0044"
+    },
+    {
+      "text": "ないので、例えば明日から1週間入院し",
+      "start_seconds": 349.96,
+      "end_seconds": 354.24,
+      "id": "ldSPyi0UjeU-display-0092",
+      "segment_id": "ldSPyi0UjeU-ja-0044"
+    },
+    {
+      "text": "ますとなった時に突然誰かが休むことを",
+      "start_seconds": 354.24,
+      "end_seconds": 358.24,
+      "id": "ldSPyi0UjeU-display-0093",
+      "segment_id": "ldSPyi0UjeU-ja-0045"
+    },
+    {
+      "text": "前提としてない職場では仕事が届か",
+      "start_seconds": 358.24,
+      "end_seconds": 362.08,
+      "id": "ldSPyi0UjeU-display-0094",
+      "segment_id": "ldSPyi0UjeU-ja-0045"
+    },
+    {
+      "text": "もしくはあなたの隣にいる同僚にし寄せが",
+      "start_seconds": 362.08,
+      "end_seconds": 365.319,
+      "id": "ldSPyi0UjeU-display-0095",
+      "segment_id": "ldSPyi0UjeU-ja-0045"
+    },
+    {
+      "text": "行ってしまったりする。",
+      "start_seconds": 365.319,
+      "end_seconds": 367.68,
+      "id": "ldSPyi0UjeU-display-0096",
+      "segment_id": "ldSPyi0UjeU-ja-0046"
+    },
+    {
+      "text": "転金や出張、残業、世の懇心会、こういっ",
+      "start_seconds": 367.68,
+      "end_seconds": 371.44,
+      "id": "ldSPyi0UjeU-display-0097",
+      "segment_id": "ldSPyi0UjeU-ja-0047"
+    },
+    {
+      "text": "たものが全ての人が対応できるという前提",
+      "start_seconds": 371.44,
+      "end_seconds": 374.44,
+      "id": "ldSPyi0UjeU-display-0098",
+      "segment_id": "ldSPyi0UjeU-ja-0047"
+    },
+    {
+      "text": "の職場ではケアをしながら働く人は常に",
+      "start_seconds": 374.44,
+      "end_seconds": 379.12,
+      "id": "ldSPyi0UjeU-display-0099",
+      "segment_id": "ldSPyi0UjeU-ja-0047"
+    },
+    {
+      "text": "職場の期待に答えられない人材になって",
+      "start_seconds": 379.12,
+      "end_seconds": 382.039,
+      "id": "ldSPyi0UjeU-display-0100",
+      "segment_id": "ldSPyi0UjeU-ja-0048"
+    },
+    {
+      "text": "しまう。",
+      "start_seconds": 382.039,
+      "end_seconds": 383.84,
+      "id": "ldSPyi0UjeU-display-0101",
+      "segment_id": "ldSPyi0UjeU-ja-0048"
+    },
+    {
+      "text": "つまりは働く人の現状がここまで変わって",
+      "start_seconds": 383.84,
+      "end_seconds": 387.52,
+      "id": "ldSPyi0UjeU-display-0102",
+      "segment_id": "ldSPyi0UjeU-ja-0049"
+    },
+    {
+      "text": "いるのにも関わらず職場の前提が変わって",
+      "start_seconds": 387.52,
+      "end_seconds": 390.759,
+      "id": "ldSPyi0UjeU-display-0103",
+      "segment_id": "ldSPyi0UjeU-ja-0049"
+    },
+    {
+      "text": "いない。ここにギャップが生じているん",
+      "start_seconds": 390.759,
+      "end_seconds": 394.199,
+      "id": "ldSPyi0UjeU-display-0104",
+      "segment_id": "ldSPyi0UjeU-ja-0049"
+    },
+    {
+      "text": "です。",
+      "start_seconds": 394.199,
+      "end_seconds": 396.039,
+      "id": "ldSPyi0UjeU-display-0105",
+      "segment_id": "ldSPyi0UjeU-ja-0050"
+    },
+    {
+      "text": "で、このギャップ、このギャップこそが",
+      "start_seconds": 396.039,
+      "end_seconds": 399.12,
+      "id": "ldSPyi0UjeU-display-0106",
+      "segment_id": "ldSPyi0UjeU-ja-0051"
+    },
+    {
+      "text": "ケアをしながら働くことをこんなにも大変",
+      "start_seconds": 399.12,
+      "end_seconds": 402.319,
+      "id": "ldSPyi0UjeU-display-0107",
+      "segment_id": "ldSPyi0UjeU-ja-0051"
+    },
+    {
+      "text": "にしている。そしてこのギャップ放置して",
+      "start_seconds": 402.319,
+      "end_seconds": 405.72,
+      "id": "ldSPyi0UjeU-display-0108",
+      "segment_id": "ldSPyi0UjeU-ja-0051"
+    },
+    {
+      "text": "おくことによって働く人が追い詰められる",
+      "start_seconds": 405.72,
+      "end_seconds": 408.319,
+      "id": "ldSPyi0UjeU-display-0109",
+      "segment_id": "ldSPyi0UjeU-ja-0052"
+    },
+    {
+      "text": "だけではなくて、やがて社会や職場に",
+      "start_seconds": 408.319,
+      "end_seconds": 413.12,
+      "id": "ldSPyi0UjeU-display-0110",
+      "segment_id": "ldSPyi0UjeU-ja-0052"
+    },
+    {
+      "text": "大きな損失なって帰ってくるのです。実際",
+      "start_seconds": 413.12,
+      "end_seconds": 417.4,
+      "id": "ldSPyi0UjeU-display-0111",
+      "segment_id": "ldSPyi0UjeU-ja-0052"
+    },
+    {
+      "text": "に経済産業省の資産によると2030年に",
+      "start_seconds": 417.4,
+      "end_seconds": 422.16,
+      "id": "ldSPyi0UjeU-display-0112",
+      "segment_id": "ldSPyi0UjeU-ja-0053"
+    },
+    {
+      "text": "介護と仕事をしながら働く人が増えること",
+      "start_seconds": 422.16,
+      "end_seconds": 425.879,
+      "id": "ldSPyi0UjeU-display-0113",
+      "segment_id": "ldSPyi0UjeU-ja-0053"
+    },
+    {
+      "text": "による日本経済の損失9.2兆円と出産さ",
+      "start_seconds": 425.879,
+      "end_seconds": 430.24,
+      "id": "ldSPyi0UjeU-display-0114",
+      "segment_id": "ldSPyi0UjeU-ja-0054"
+    },
+    {
+      "text": "れています。9.2兆円です。でも大事な",
+      "start_seconds": 430.24,
+      "end_seconds": 434.4,
+      "id": "ldSPyi0UjeU-display-0115",
+      "segment_id": "ldSPyi0UjeU-ja-0054"
+    },
+    {
+      "text": "のはこの打ち訳けなんです。9.2兆円の",
+      "start_seconds": 434.4,
+      "end_seconds": 438.4,
+      "id": "ldSPyi0UjeU-display-0116",
+      "segment_id": "ldSPyi0UjeU-ja-0055"
+    },
+    {
+      "text": "うち約1兆円。これは仕事と介護の両立が",
+      "start_seconds": 438.4,
+      "end_seconds": 442.28,
+      "id": "ldSPyi0UjeU-display-0117",
+      "segment_id": "ldSPyi0UjeU-ja-0055"
+    },
+    {
+      "text": "ままならずやめてしまう人が出ることに",
+      "start_seconds": 442.28,
+      "end_seconds": 444.8,
+      "id": "ldSPyi0UjeU-display-0118",
+      "segment_id": "ldSPyi0UjeU-ja-0055"
+    },
+    {
+      "text": "よる損失。じゃあ残りの8兆円は何か?",
+      "start_seconds": 444.8,
+      "end_seconds": 449.56,
+      "id": "ldSPyi0UjeU-display-0119",
+      "segment_id": "ldSPyi0UjeU-ja-0056"
+    },
+    {
+      "text": "介護と仕事の両立によって働く人の生産性",
+      "start_seconds": 449.56,
+      "end_seconds": 454.0,
+      "id": "ldSPyi0UjeU-display-0120",
+      "segment_id": "ldSPyi0UjeU-ja-0057"
+    },
+    {
+      "text": "が下がることによる損失なんです。これは",
+      "start_seconds": 454.0,
+      "end_seconds": 457.8,
+      "id": "ldSPyi0UjeU-display-0121",
+      "segment_id": "ldSPyi0UjeU-ja-0057"
+    },
+    {
+      "text": "どういうことかと言うと彼らは仕事はやめ",
+      "start_seconds": 457.8,
+      "end_seconds": 461.199,
+      "id": "ldSPyi0UjeU-display-0122",
+      "segment_id": "ldSPyi0UjeU-ja-0057"
+    },
+    {
+      "text": "ていないんです。職場にもいる。会議にも",
+      "start_seconds": 461.199,
+      "end_seconds": 463.879,
+      "id": "ldSPyi0UjeU-display-0123",
+      "segment_id": "ldSPyi0UjeU-ja-0058"
+    },
+    {
+      "text": "出てる。メールをすれば返信も来るんです",
+      "start_seconds": 463.879,
+      "end_seconds": 466.159,
+      "id": "ldSPyi0UjeU-display-0124",
+      "segment_id": "ldSPyi0UjeU-ja-0058"
+    },
+    {
+      "text": "。でも体は日々の家族の介護や看護で疲れ",
+      "start_seconds": 466.159,
+      "end_seconds": 473.0,
+      "id": "ldSPyi0UjeU-display-0125",
+      "segment_id": "ldSPyi0UjeU-ja-0058"
+    },
+    {
+      "text": "きっている。",
+      "start_seconds": 473.0,
+      "end_seconds": 476.08,
+      "id": "ldSPyi0UjeU-display-0126",
+      "segment_id": "ldSPyi0UjeU-ja-0059"
+    },
+    {
+      "text": "旅重なる病院からの呼び出しで常に仕事を",
+      "start_seconds": 476.08,
+      "end_seconds": 479.159,
+      "id": "ldSPyi0UjeU-display-0127",
+      "segment_id": "ldSPyi0UjeU-ja-0060"
+    },
+    {
+      "text": "中断しなければいけない。家族の病院での",
+      "start_seconds": 479.159,
+      "end_seconds": 482.8,
+      "id": "ldSPyi0UjeU-display-0128",
+      "segment_id": "ldSPyi0UjeU-ja-0060"
+    },
+    {
+      "text": "様子が気になって仕事に集中できない。",
+      "start_seconds": 482.8,
+      "end_seconds": 486.0,
+      "id": "ldSPyi0UjeU-display-0129",
+      "segment_id": "ldSPyi0UjeU-ja-0060"
+    },
+    {
+      "text": "こういった人たちが職場に増えることに",
+      "start_seconds": 486.0,
+      "end_seconds": 488.639,
+      "id": "ldSPyi0UjeU-display-0130",
+      "segment_id": "ldSPyi0UjeU-ja-0061"
+    },
+    {
+      "text": "よって9.2兆円までこれ介護だけなん",
+      "start_seconds": 488.639,
+      "end_seconds": 492.44,
+      "id": "ldSPyi0UjeU-display-0131",
+      "segment_id": "ldSPyi0UjeU-ja-0061"
+    },
+    {
+      "text": "です。最後だけで9兆9.2兆円",
+      "start_seconds": 492.44,
+      "end_seconds": 495.319,
+      "id": "ldSPyi0UjeU-display-0132",
+      "segment_id": "ldSPyi0UjeU-ja-0061"
+    },
+    {
+      "text": "の損失まで押し上げているのです。では",
+      "start_seconds": 495.319,
+      "end_seconds": 499.4,
+      "id": "ldSPyi0UjeU-display-0133",
+      "segment_id": "ldSPyi0UjeU-ja-0062"
+    },
+    {
+      "text": "この損失",
+      "start_seconds": 499.4,
+      "end_seconds": 501.12,
+      "id": "ldSPyi0UjeU-display-0134",
+      "segment_id": "ldSPyi0UjeU-ja-0062"
+    },
+    {
+      "text": "するにはどうすればいいのか?それはケア",
+      "start_seconds": 501.12,
+      "end_seconds": 504.8,
+      "id": "ldSPyi0UjeU-display-0135",
+      "segment_id": "ldSPyi0UjeU-ja-0062"
+    },
+    {
+      "text": "をしながら働く人への支援ではないんです",
+      "start_seconds": 504.8,
+      "end_seconds": 508.56,
+      "id": "ldSPyi0UjeU-display-0136",
+      "segment_id": "ldSPyi0UjeU-ja-0063"
+    },
+    {
+      "text": "。そうではなく職場の前提を変える。この",
+      "start_seconds": 508.56,
+      "end_seconds": 513.2,
+      "id": "ldSPyi0UjeU-display-0137",
+      "segment_id": "ldSPyi0UjeU-ja-0063"
+    },
+    {
+      "text": "ことにあります。日本企業では今様々とな",
+      "start_seconds": 513.2,
+      "end_seconds": 518.159,
+      "id": "ldSPyi0UjeU-display-0138",
+      "segment_id": "ldSPyi0UjeU-ja-0064"
+    },
+    {
+      "text": "両立支援制度が整備されていますよね。",
+      "start_seconds": 518.159,
+      "end_seconds": 520.919,
+      "id": "ldSPyi0UjeU-display-0139",
+      "segment_id": "ldSPyi0UjeU-ja-0064"
+    },
+    {
+      "text": "例えば育児休業、介護休業、短時間勤務",
+      "start_seconds": 520.919,
+      "end_seconds": 524.68,
+      "id": "ldSPyi0UjeU-display-0140",
+      "segment_id": "ldSPyi0UjeU-ja-0065"
+    },
+    {
+      "text": "制度。私もこれらの制度には本当にお世話",
+      "start_seconds": 524.68,
+      "end_seconds": 527.48,
+      "id": "ldSPyi0UjeU-display-0141",
+      "segment_id": "ldSPyi0UjeU-ja-0065"
+    },
+    {
+      "text": "になりました。制度は大事です。でも制度",
+      "start_seconds": 527.48,
+      "end_seconds": 531.839,
+      "id": "ldSPyi0UjeU-display-0142",
+      "segment_id": "ldSPyi0UjeU-ja-0065"
+    },
+    {
+      "text": "だけではダメなんです。私はよくこの",
+      "start_seconds": 531.839,
+      "end_seconds": 535.88,
+      "id": "ldSPyi0UjeU-display-0143",
+      "segment_id": "ldSPyi0UjeU-ja-0066"
+    },
+    {
+      "text": "スマホのアプリとOSに例えてお話をし",
+      "start_seconds": 535.88,
+      "end_seconds": 539.04,
+      "id": "ldSPyi0UjeU-display-0144",
+      "segment_id": "ldSPyi0UjeU-ja-0066"
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 539.04,
+      "end_seconds": 540.72,
+      "id": "ldSPyi0UjeU-display-0145",
+      "segment_id": "ldSPyi0UjeU-ja-0066"
+    },
+    {
+      "text": "両立先生制度というのはスマホで言うと",
+      "start_seconds": 540.72,
+      "end_seconds": 543.44,
+      "id": "ldSPyi0UjeU-display-0146",
+      "segment_id": "ldSPyi0UjeU-ja-0067"
+    },
+    {
+      "text": "アプリに過ぎないんですね。アプリ、",
+      "start_seconds": 543.44,
+      "end_seconds": 546.32,
+      "id": "ldSPyi0UjeU-display-0147",
+      "segment_id": "ldSPyi0UjeU-ja-0067"
+    },
+    {
+      "text": "どんないいアプリがあったとしてもOSが",
+      "start_seconds": 546.32,
+      "end_seconds": 548.92,
+      "id": "ldSPyi0UjeU-display-0148",
+      "segment_id": "ldSPyi0UjeU-ja-0067"
+    },
+    {
+      "text": "古かったらどうでしょう?ま、そもそも",
+      "start_seconds": 548.92,
+      "end_seconds": 551.92,
+      "id": "ldSPyi0UjeU-display-0149",
+      "segment_id": "ldSPyi0UjeU-ja-0067"
+    },
+    {
+      "text": "ダウンロードできなかったりとか",
+      "start_seconds": 551.92,
+      "end_seconds": 553.76,
+      "id": "ldSPyi0UjeU-display-0150",
+      "segment_id": "ldSPyi0UjeU-ja-0068"
+    },
+    {
+      "text": "ダウンロードしたとしてもフリーズして",
+      "start_seconds": 553.76,
+      "end_seconds": 555.839,
+      "id": "ldSPyi0UjeU-display-0151",
+      "segment_id": "ldSPyi0UjeU-ja-0068"
+    },
+    {
+      "text": "しまうそういうことが起きます。職場でも",
+      "start_seconds": 555.839,
+      "end_seconds": 558.92,
+      "id": "ldSPyi0UjeU-display-0152",
+      "segment_id": "ldSPyi0UjeU-ja-0068"
+    },
+    {
+      "text": "同じなんです。どんなにいい両立支援制度",
+      "start_seconds": 558.92,
+      "end_seconds": 561.8,
+      "id": "ldSPyi0UjeU-display-0153",
+      "segment_id": "ldSPyi0UjeU-ja-0068"
+    },
+    {
+      "text": "があったとしても職場のOSが例えばいつ",
+      "start_seconds": 561.8,
+      "end_seconds": 566.279,
+      "id": "ldSPyi0UjeU-display-0154",
+      "segment_id": "ldSPyi0UjeU-ja-0069"
+    },
+    {
+      "text": "でもどこでも制約なく働ける人を前提とし",
+      "start_seconds": 566.279,
+      "end_seconds": 569.88,
+      "id": "ldSPyi0UjeU-display-0155",
+      "segment_id": "ldSPyi0UjeU-ja-0069"
+    },
+    {
+      "text": "ていたとしたらその両立先生制度は機能し",
+      "start_seconds": 569.88,
+      "end_seconds": 573.32,
+      "id": "ldSPyi0UjeU-display-0156",
+      "segment_id": "ldSPyi0UjeU-ja-0069"
+    },
+    {
+      "text": "ません。",
+      "start_seconds": 573.32,
+      "end_seconds": 575.279,
+      "id": "ldSPyi0UjeU-display-0157",
+      "segment_id": "ldSPyi0UjeU-ja-0070"
+    },
+    {
+      "text": "なので今やるべきことは両立制度の拡充、",
+      "start_seconds": 575.279,
+      "end_seconds": 579.44,
+      "id": "ldSPyi0UjeU-display-0158",
+      "segment_id": "ldSPyi0UjeU-ja-0071"
+    },
+    {
+      "text": "それではなく職場の前提を変えるこのこと",
+      "start_seconds": 579.44,
+      "end_seconds": 583.64,
+      "id": "ldSPyi0UjeU-display-0159",
+      "segment_id": "ldSPyi0UjeU-ja-0071"
+    },
+    {
+      "text": "にあります。",
+      "start_seconds": 583.64,
+      "end_seconds": 586.36,
+      "id": "ldSPyi0UjeU-display-0160",
+      "segment_id": "ldSPyi0UjeU-ja-0071"
+    },
+    {
+      "text": "つまり職場のOSのアップデートですね。",
+      "start_seconds": 586.36,
+      "end_seconds": 589.8,
+      "id": "ldSPyi0UjeU-display-0161",
+      "segment_id": "ldSPyi0UjeU-ja-0072"
+    },
+    {
+      "text": "では職場のOSのアップデート、これを",
+      "start_seconds": 589.8,
+      "end_seconds": 592.279,
+      "id": "ldSPyi0UjeU-display-0162",
+      "segment_id": "ldSPyi0UjeU-ja-0073"
+    },
+    {
+      "text": "するにはどうしたらいいのか?これは簡単",
+      "start_seconds": 592.279,
+      "end_seconds": 595.12,
+      "id": "ldSPyi0UjeU-display-0163",
+      "segment_id": "ldSPyi0UjeU-ja-0073"
+    },
+    {
+      "text": "ではないんです。",
+      "start_seconds": 595.12,
+      "end_seconds": 597.6,
+      "id": "ldSPyi0UjeU-display-0164",
+      "segment_id": "ldSPyi0UjeU-ja-0073"
+    },
+    {
+      "text": "社会企業の法制度変える必要がある。会社",
+      "start_seconds": 597.6,
+      "end_seconds": 601.88,
+      "id": "ldSPyi0UjeU-display-0165",
+      "segment_id": "ldSPyi0UjeU-ja-0074"
+    },
+    {
+      "text": "の働き方仕組み自体を変える必要がある。",
+      "start_seconds": 601.88,
+      "end_seconds": 605.399,
+      "id": "ldSPyi0UjeU-display-0166",
+      "segment_id": "ldSPyi0UjeU-ja-0074"
+    },
+    {
+      "text": "大きな変革が伴います。",
+      "start_seconds": 605.399,
+      "end_seconds": 608.519,
+      "id": "ldSPyi0UjeU-display-0167",
+      "segment_id": "ldSPyi0UjeU-ja-0075"
+    },
+    {
+      "text": "大きな変革って時間かかりますよね。でも",
+      "start_seconds": 608.519,
+      "end_seconds": 611.68,
+      "id": "ldSPyi0UjeU-display-0168",
+      "segment_id": "ldSPyi0UjeU-ja-0076"
+    },
+    {
+      "text": "私はこう思うんです。大きな変革も常に",
+      "start_seconds": 611.68,
+      "end_seconds": 614.68,
+      "id": "ldSPyi0UjeU-display-0169",
+      "segment_id": "ldSPyi0UjeU-ja-0076"
+    },
+    {
+      "text": "出発点は私たちのマインドセットを変える",
+      "start_seconds": 614.68,
+      "end_seconds": 617.32,
+      "id": "ldSPyi0UjeU-display-0170",
+      "segment_id": "ldSPyi0UjeU-ja-0076"
+    },
+    {
+      "text": "ことにある。で、このマインドセットを",
+      "start_seconds": 617.32,
+      "end_seconds": 619.519,
+      "id": "ldSPyi0UjeU-display-0171",
+      "segment_id": "ldSPyi0UjeU-ja-0076"
+    },
+    {
+      "text": "変えるその時に必要なのが当たり前を疑う",
+      "start_seconds": 619.519,
+      "end_seconds": 623.839,
+      "id": "ldSPyi0UjeU-display-0172",
+      "segment_id": "ldSPyi0UjeU-ja-0077"
+    },
+    {
+      "text": "ということです。",
+      "start_seconds": 623.839,
+      "end_seconds": 626.2,
+      "id": "ldSPyi0UjeU-display-0173",
+      "segment_id": "ldSPyi0UjeU-ja-0077"
+    },
+    {
+      "text": "この当たり前いっていうのは当たり前なん",
+      "start_seconds": 626.2,
+      "end_seconds": 628.04,
+      "id": "ldSPyi0UjeU-display-0174",
+      "segment_id": "ldSPyi0UjeU-ja-0078"
+    },
+    {
+      "text": "ですが、私たちの価値観とか観念とか親",
+      "start_seconds": 628.04,
+      "end_seconds": 631.16,
+      "id": "ldSPyi0UjeU-display-0175",
+      "segment_id": "ldSPyi0UjeU-ja-0078"
+    },
+    {
+      "text": "から言われたこととかそういったことが",
+      "start_seconds": 631.16,
+      "end_seconds": 632.959,
+      "id": "ldSPyi0UjeU-display-0176",
+      "segment_id": "ldSPyi0UjeU-ja-0078"
+    },
+    {
+      "text": "折り混ざって当たり前を作っていきます。",
+      "start_seconds": 632.959,
+      "end_seconds": 637.04,
+      "id": "ldSPyi0UjeU-display-0177",
+      "segment_id": "ldSPyi0UjeU-ja-0078"
+    },
+    {
+      "text": "なので今日はこの会場で皆さんと一緒に2",
+      "start_seconds": 637.04,
+      "end_seconds": 639.959,
+      "id": "ldSPyi0UjeU-display-0178",
+      "segment_id": "ldSPyi0UjeU-ja-0079"
+    },
+    {
+      "text": "つの当たり前を見直してみたいと思います",
+      "start_seconds": 639.959,
+      "end_seconds": 642.399,
+      "id": "ldSPyi0UjeU-display-0179",
+      "segment_id": "ldSPyi0UjeU-ja-0079"
+    },
+    {
+      "text": "。1つ目は職場の当たり前を疑うです。",
+      "start_seconds": 642.399,
+      "end_seconds": 648.24,
+      "id": "ldSPyi0UjeU-display-0180",
+      "segment_id": "ldSPyi0UjeU-ja-0079"
+    },
+    {
+      "text": "その定例会議本当に毎週1時間全員が参加",
+      "start_seconds": 648.24,
+      "end_seconds": 651.92,
+      "id": "ldSPyi0UjeU-display-0181",
+      "segment_id": "ldSPyi0UjeU-ja-0080"
+    },
+    {
+      "text": "する必要ありますか?その出張本当にその",
+      "start_seconds": 651.92,
+      "end_seconds": 656.399,
+      "id": "ldSPyi0UjeU-display-0182",
+      "segment_id": "ldSPyi0UjeU-ja-0080"
+    },
+    {
+      "text": "メンバーが現地に行く必要ありますか?",
+      "start_seconds": 656.399,
+      "end_seconds": 659.44,
+      "id": "ldSPyi0UjeU-display-0183",
+      "segment_id": "ldSPyi0UjeU-ja-0080"
+    },
+    {
+      "text": "その夜の渾新会本当に夜にやる必要あり",
+      "start_seconds": 659.44,
+      "end_seconds": 662.88,
+      "id": "ldSPyi0UjeU-display-0184",
+      "segment_id": "ldSPyi0UjeU-ja-0081"
+    },
+    {
+      "text": "ますか?私たちの職場の当たり前いっての",
+      "start_seconds": 662.88,
+      "end_seconds": 666.2,
+      "id": "ldSPyi0UjeU-display-0185",
+      "segment_id": "ldSPyi0UjeU-ja-0081"
+    },
+    {
+      "text": "は実はケアをしながら働く人が本当に職場",
+      "start_seconds": 666.2,
+      "end_seconds": 669.32,
+      "id": "ldSPyi0UjeU-display-0186",
+      "segment_id": "ldSPyi0UjeU-ja-0081"
+    },
+    {
+      "text": "で少なかった時代の昔の監修を単に",
+      "start_seconds": 669.32,
+      "end_seconds": 672.68,
+      "id": "ldSPyi0UjeU-display-0187",
+      "segment_id": "ldSPyi0UjeU-ja-0082"
+    },
+    {
+      "text": "引きずってるだけのことが多いんです。な",
+      "start_seconds": 672.68,
+      "end_seconds": 676.24,
+      "id": "ldSPyi0UjeU-display-0188",
+      "segment_id": "ldSPyi0UjeU-ja-0082"
+    },
+    {
+      "text": "ので当たり前を見直してみる。",
+      "start_seconds": 676.24,
+      "end_seconds": 678.8,
+      "id": "ldSPyi0UjeU-display-0189",
+      "segment_id": "ldSPyi0UjeU-ja-0082"
+    },
+    {
+      "text": "そして日本企業にはこの当たり前を見直し",
+      "start_seconds": 678.8,
+      "end_seconds": 682.639,
+      "id": "ldSPyi0UjeU-display-0190",
+      "segment_id": "ldSPyi0UjeU-ja-0083"
+    },
+    {
+      "text": "職場のOS企業、OSを書き換えてる企業",
+      "start_seconds": 682.639,
+      "end_seconds": 685.48,
+      "id": "ldSPyi0UjeU-display-0191",
+      "segment_id": "ldSPyi0UjeU-ja-0083"
+    },
+    {
+      "text": "が足元で増えています。例えばA社では",
+      "start_seconds": 685.48,
+      "end_seconds": 691.0,
+      "id": "ldSPyi0UjeU-display-0192",
+      "segment_id": "ldSPyi0UjeU-ja-0084"
+    },
+    {
+      "text": "ケアをしてる人だけが有給休暇をたくさん",
+      "start_seconds": 691.0,
+      "end_seconds": 693.2,
+      "id": "ldSPyi0UjeU-display-0193",
+      "segment_id": "ldSPyi0UjeU-ja-0084"
+    },
+    {
+      "text": "取るという当たり前を見直しました。有給",
+      "start_seconds": 693.2,
+      "end_seconds": 696.839,
+      "id": "ldSPyi0UjeU-display-0194",
+      "segment_id": "ldSPyi0UjeU-ja-0084"
+    },
+    {
+      "text": "休暇、ま、通は20日なんですけれども、",
+      "start_seconds": 696.839,
+      "end_seconds": 698.72,
+      "id": "ldSPyi0UjeU-display-0195",
+      "segment_id": "ldSPyi0UjeU-ja-0085"
+    },
+    {
+      "text": "それを56日に拡充し、いつでも誰でも",
+      "start_seconds": 698.72,
+      "end_seconds": 703.92,
+      "id": "ldSPyi0UjeU-display-0196",
+      "segment_id": "ldSPyi0UjeU-ja-0085"
+    },
+    {
+      "text": "理由を問わず取れるような制度にしたん",
+      "start_seconds": 703.92,
+      "end_seconds": 706.24,
+      "id": "ldSPyi0UjeU-display-0197",
+      "segment_id": "ldSPyi0UjeU-ja-0085"
+    },
+    {
+      "text": "です。もちろん育児中の人、介護中の人、",
+      "start_seconds": 706.24,
+      "end_seconds": 709.72,
+      "id": "ldSPyi0UjeU-display-0198",
+      "segment_id": "ldSPyi0UjeU-ja-0086"
+    },
+    {
+      "text": "不妊治療中の人は理由を申請することなく",
+      "start_seconds": 709.72,
+      "end_seconds": 712.839,
+      "id": "ldSPyi0UjeU-display-0199",
+      "segment_id": "ldSPyi0UjeU-ja-0086"
+    },
+    {
+      "text": "取ることができます。でも今ケアをして",
+      "start_seconds": 712.839,
+      "end_seconds": 715.56,
+      "id": "ldSPyi0UjeU-display-0200",
+      "segment_id": "ldSPyi0UjeU-ja-0086"
+    },
+    {
+      "text": "ない人もいますよね。そういう人たちは",
+      "start_seconds": 715.56,
+      "end_seconds": 718.04,
+      "id": "ldSPyi0UjeU-display-0201",
+      "segment_id": "ldSPyi0UjeU-ja-0086"
+    },
+    {
+      "text": "自分たちの旅行、リフレッシュ、学び直し",
+      "start_seconds": 718.04,
+      "end_seconds": 721.24,
+      "id": "ldSPyi0UjeU-display-0202",
+      "segment_id": "ldSPyi0UjeU-ja-0087"
+    },
+    {
+      "text": "にも使えることができる。つまり誰もが",
+      "start_seconds": 721.24,
+      "end_seconds": 725.24,
+      "id": "ldSPyi0UjeU-display-0203",
+      "segment_id": "ldSPyi0UjeU-ja-0087"
+    },
+    {
+      "text": "使える制度にしたことによってこのケアを",
+      "start_seconds": 725.24,
+      "end_seconds": 728.48,
+      "id": "ldSPyi0UjeU-display-0204",
+      "segment_id": "ldSPyi0UjeU-ja-0087"
+    },
+    {
+      "text": "してる人だけが感じる自分だけ休んで",
+      "start_seconds": 728.48,
+      "end_seconds": 730.839,
+      "id": "ldSPyi0UjeU-display-0205",
+      "segment_id": "ldSPyi0UjeU-ja-0088"
+    },
+    {
+      "text": "申し訳ないというあの罪悪感が消え去って",
+      "start_seconds": 730.839,
+      "end_seconds": 733.639,
+      "id": "ldSPyi0UjeU-display-0206",
+      "segment_id": "ldSPyi0UjeU-ja-0088"
+    },
+    {
+      "text": "誰もが自分の人生を豊かにするために休み",
+      "start_seconds": 733.639,
+      "end_seconds": 737.279,
+      "id": "ldSPyi0UjeU-display-0207",
+      "segment_id": "ldSPyi0UjeU-ja-0088"
+    },
+    {
+      "text": "が取れる職場になったんです。私が前いた",
+      "start_seconds": 737.279,
+      "end_seconds": 741.0,
+      "id": "ldSPyi0UjeU-display-0208",
+      "segment_id": "ldSPyi0UjeU-ja-0089"
+    },
+    {
+      "text": "職場にも小さな職場のOSのアップデート",
+      "start_seconds": 741.0,
+      "end_seconds": 744.48,
+      "id": "ldSPyi0UjeU-display-0209",
+      "segment_id": "ldSPyi0UjeU-ja-0089"
+    },
+    {
+      "text": "がありました。それは渾新会は夜やるもの",
+      "start_seconds": 744.48,
+      "end_seconds": 748.44,
+      "id": "ldSPyi0UjeU-display-0210",
+      "segment_id": "ldSPyi0UjeU-ja-0089"
+    },
+    {
+      "text": "だという当たり前を見直したんです。渾新",
+      "start_seconds": 748.44,
+      "end_seconds": 752.56,
+      "id": "ldSPyi0UjeU-display-0211",
+      "segment_id": "ldSPyi0UjeU-ja-0090"
+    },
+    {
+      "text": "会は基本的にランチでもお酒が飲みたい時",
+      "start_seconds": 752.56,
+      "end_seconds": 755.44,
+      "id": "ldSPyi0UjeU-display-0212",
+      "segment_id": "ldSPyi0UjeU-ja-0090"
+    },
+    {
+      "text": "もありますよね。そういった時は夕方開催",
+      "start_seconds": 755.44,
+      "end_seconds": 758.6,
+      "id": "ldSPyi0UjeU-display-0213",
+      "segment_id": "ldSPyi0UjeU-ja-0090"
+    },
+    {
+      "text": "。夕方の4時半スタート。そうすると何が",
+      "start_seconds": 758.6,
+      "end_seconds": 761.36,
+      "id": "ldSPyi0UjeU-display-0214",
+      "segment_id": "ldSPyi0UjeU-ja-0091"
+    },
+    {
+      "text": "起きたか育児中の人も介護中の人も治療中",
+      "start_seconds": 761.36,
+      "end_seconds": 765.519,
+      "id": "ldSPyi0UjeU-display-0215",
+      "segment_id": "ldSPyi0UjeU-ja-0091"
+    },
+    {
+      "text": "の人も家庭の調整をすることなく誰もが",
+      "start_seconds": 765.519,
+      "end_seconds": 769.199,
+      "id": "ldSPyi0UjeU-display-0216",
+      "segment_id": "ldSPyi0UjeU-ja-0091"
+    },
+    {
+      "text": "参加できる側になった。職場の",
+      "start_seconds": 769.199,
+      "end_seconds": 772.12,
+      "id": "ldSPyi0UjeU-display-0217",
+      "segment_id": "ldSPyi0UjeU-ja-0092"
+    },
+    {
+      "text": "コミュニケーションが無理なく活性化され",
+      "start_seconds": 772.12,
+      "end_seconds": 775.199,
+      "id": "ldSPyi0UjeU-display-0218",
+      "segment_id": "ldSPyi0UjeU-ja-0092"
+    },
+    {
+      "text": "ました。",
+      "start_seconds": 775.199,
+      "end_seconds": 777.04,
+      "id": "ldSPyi0UjeU-display-0219",
+      "segment_id": "ldSPyi0UjeU-ja-0092"
+    },
+    {
+      "text": "是非ですね、明日職場でも家庭でもいい",
+      "start_seconds": 777.04,
+      "end_seconds": 779.839,
+      "id": "ldSPyi0UjeU-display-0220",
+      "segment_id": "ldSPyi0UjeU-ja-0093"
+    },
+    {
+      "text": "です。そこでの当たり前を1つ見直してみ",
+      "start_seconds": 779.839,
+      "end_seconds": 783.32,
+      "id": "ldSPyi0UjeU-display-0221",
+      "segment_id": "ldSPyi0UjeU-ja-0093"
+    },
+    {
+      "text": "てください。その当たり前は誰を前提に",
+      "start_seconds": 783.32,
+      "end_seconds": 788.36,
+      "id": "ldSPyi0UjeU-display-0222",
+      "segment_id": "ldSPyi0UjeU-ja-0093"
+    },
+    {
+      "text": "設計されているのか見直してみてください",
+      "start_seconds": 788.36,
+      "end_seconds": 791.199,
+      "id": "ldSPyi0UjeU-display-0223",
+      "segment_id": "ldSPyi0UjeU-ja-0094"
+    },
+    {
+      "text": "。では疑うべき2つ目の当たり前があり",
+      "start_seconds": 791.199,
+      "end_seconds": 795.68,
+      "id": "ldSPyi0UjeU-display-0224",
+      "segment_id": "ldSPyi0UjeU-ja-0094"
+    },
+    {
+      "text": "ます。それはケアはコストであるという",
+      "start_seconds": 795.68,
+      "end_seconds": 798.92,
+      "id": "ldSPyi0UjeU-display-0225",
+      "segment_id": "ldSPyi0UjeU-ja-0094"
+    },
+    {
+      "text": "考えた方です。コストつまりマイナスな",
+      "start_seconds": 798.92,
+      "end_seconds": 802.24,
+      "id": "ldSPyi0UjeU-display-0226",
+      "segment_id": "ldSPyi0UjeU-ja-0095"
+    },
+    {
+      "text": "ことということですね。私も10年前",
+      "start_seconds": 802.24,
+      "end_seconds": 804.76,
+      "id": "ldSPyi0UjeU-display-0227",
+      "segment_id": "ldSPyi0UjeU-ja-0095"
+    },
+    {
+      "text": "ぐらいはそう思ってました。ケアをすると",
+      "start_seconds": 804.76,
+      "end_seconds": 807.36,
+      "id": "ldSPyi0UjeU-display-0228",
+      "segment_id": "ldSPyi0UjeU-ja-0095"
+    },
+    {
+      "text": "長期間休まなきゃいけなかったり、その",
+      "start_seconds": 807.36,
+      "end_seconds": 809.48,
+      "id": "ldSPyi0UjeU-display-0229",
+      "segment_id": "ldSPyi0UjeU-ja-0095"
+    },
+    {
+      "text": "期間昇が止まってしまったり、何よりケア",
+      "start_seconds": 809.48,
+      "end_seconds": 812.48,
+      "id": "ldSPyi0UjeU-display-0230",
+      "segment_id": "ldSPyi0UjeU-ja-0096"
+    },
+    {
+      "text": "にキャリアにこう空白ができてしまうもの",
+      "start_seconds": 812.48,
+      "end_seconds": 816.04,
+      "id": "ldSPyi0UjeU-display-0231",
+      "segment_id": "ldSPyi0UjeU-ja-0096"
+    },
+    {
+      "text": "。そういう風に思っていました。でもこの",
+      "start_seconds": 816.04,
+      "end_seconds": 819.24,
+      "id": "ldSPyi0UjeU-display-0232",
+      "segment_id": "ldSPyi0UjeU-ja-0096"
+    },
+    {
+      "text": "ケアの10年間を経てそして研究員として",
+      "start_seconds": 819.24,
+      "end_seconds": 823.24,
+      "id": "ldSPyi0UjeU-display-0233",
+      "segment_id": "ldSPyi0UjeU-ja-0097"
+    },
+    {
+      "text": "この研究を見直した時に全く違う結論に",
+      "start_seconds": 823.24,
+      "end_seconds": 826.519,
+      "id": "ldSPyi0UjeU-display-0234",
+      "segment_id": "ldSPyi0UjeU-ja-0097"
+    },
+    {
+      "text": "至ったんです。",
+      "start_seconds": 826.519,
+      "end_seconds": 829.36,
+      "id": "ldSPyi0UjeU-display-0235",
+      "segment_id": "ldSPyi0UjeU-ja-0097"
+    },
+    {
+      "text": "それはケアをするという経験はこれからの",
+      "start_seconds": 829.36,
+      "end_seconds": 832.48,
+      "id": "ldSPyi0UjeU-display-0236",
+      "segment_id": "ldSPyi0UjeU-ja-0098"
+    },
+    {
+      "text": "人生を時代を人間が生き抜くための最高の",
+      "start_seconds": 832.48,
+      "end_seconds": 837.48,
+      "id": "ldSPyi0UjeU-display-0237",
+      "segment_id": "ldSPyi0UjeU-ja-0098"
+    },
+    {
+      "text": "リスキリングの場ではないかということな",
+      "start_seconds": 837.48,
+      "end_seconds": 839.16,
+      "id": "ldSPyi0UjeU-display-0238",
+      "segment_id": "ldSPyi0UjeU-ja-0098"
+    },
+    {
+      "text": "んです。",
+      "start_seconds": 839.16,
+      "end_seconds": 840.92,
+      "id": "ldSPyi0UjeU-display-0239",
+      "segment_id": "ldSPyi0UjeU-ja-0098"
+    },
+    {
+      "text": "例えば危機対応能力良きのことが突然起き",
+      "start_seconds": 840.92,
+      "end_seconds": 845.759,
+      "id": "ldSPyi0UjeU-display-0240",
+      "segment_id": "ldSPyi0UjeU-ja-0099"
+    },
+    {
+      "text": "た時に今ある情報の中で家族にとって自分",
+      "start_seconds": 845.759,
+      "end_seconds": 849.079,
+      "id": "ldSPyi0UjeU-display-0241",
+      "segment_id": "ldSPyi0UjeU-ja-0099"
+    },
+    {
+      "text": "にとってベストな判断を下す力2つ目は",
+      "start_seconds": 849.079,
+      "end_seconds": 853.48,
+      "id": "ldSPyi0UjeU-display-0242",
+      "segment_id": "ldSPyi0UjeU-ja-0100"
+    },
+    {
+      "text": "優先順位をつける力限りある体力限りある",
+      "start_seconds": 853.48,
+      "end_seconds": 857.519,
+      "id": "ldSPyi0UjeU-display-0243",
+      "segment_id": "ldSPyi0UjeU-ja-0100"
+    },
+    {
+      "text": "時間の中でやるやらないべき仕事を",
+      "start_seconds": 857.519,
+      "end_seconds": 860.68,
+      "id": "ldSPyi0UjeU-display-0244",
+      "segment_id": "ldSPyi0UjeU-ja-0100"
+    },
+    {
+      "text": "切り捨てやるべき仕事にフォーカスする。",
+      "start_seconds": 860.68,
+      "end_seconds": 864.36,
+      "id": "ldSPyi0UjeU-display-0245",
+      "segment_id": "ldSPyi0UjeU-ja-0101"
+    },
+    {
+      "text": "そして3つ目は共感力です。相手の言葉に",
+      "start_seconds": 864.36,
+      "end_seconds": 868.72,
+      "id": "ldSPyi0UjeU-display-0246",
+      "segment_id": "ldSPyi0UjeU-ja-0102"
+    },
+    {
+      "text": "ならない痛みや感情に寄り添い、信頼関係",
+      "start_seconds": 868.72,
+      "end_seconds": 872.8,
+      "id": "ldSPyi0UjeU-display-0247",
+      "segment_id": "ldSPyi0UjeU-ja-0102"
+    },
+    {
+      "text": "を気づく力。これらの力はケアの現場で",
+      "start_seconds": 872.8,
+      "end_seconds": 876.8,
+      "id": "ldSPyi0UjeU-display-0248",
+      "segment_id": "ldSPyi0UjeU-ja-0103"
+    },
+    {
+      "text": "毎日描かれていきます。そしてこれから",
+      "start_seconds": 876.8,
+      "end_seconds": 880.079,
+      "id": "ldSPyi0UjeU-display-0249",
+      "segment_id": "ldSPyi0UjeU-ja-0103"
+    },
+    {
+      "text": "AIが私たちの仕事どんどん代替していく",
+      "start_seconds": 880.079,
+      "end_seconds": 883.36,
+      "id": "ldSPyi0UjeU-display-0250",
+      "segment_id": "ldSPyi0UjeU-ja-0103"
+    },
+    {
+      "text": "中で人間にこそ求められる価値のある能力",
+      "start_seconds": 883.36,
+      "end_seconds": 887.759,
+      "id": "ldSPyi0UjeU-display-0251",
+      "segment_id": "ldSPyi0UjeU-ja-0104"
+    },
+    {
+      "text": "だと思うのです。",
+      "start_seconds": 887.759,
+      "end_seconds": 890.959,
+      "id": "ldSPyi0UjeU-display-0252",
+      "segment_id": "ldSPyi0UjeU-ja-0104"
+    },
+    {
+      "text": "なので私はこう思います。",
+      "start_seconds": 890.959,
+      "end_seconds": 895.079,
+      "id": "ldSPyi0UjeU-display-0253",
+      "segment_id": "ldSPyi0UjeU-ja-0105"
+    },
+    {
+      "text": "ケアはコストではない。ギャップでもない",
+      "start_seconds": 897.0,
+      "end_seconds": 899.12,
+      "id": "ldSPyi0UjeU-display-0254",
+      "segment_id": "ldSPyi0UjeU-ja-0106"
+    },
+    {
+      "text": "。これからのAI時代を人間が生きるため",
+      "start_seconds": 899.12,
+      "end_seconds": 902.44,
+      "id": "ldSPyi0UjeU-display-0255",
+      "segment_id": "ldSPyi0UjeU-ja-0106"
+    },
+    {
+      "text": "の最高の資産アセットだと思うのです。",
+      "start_seconds": 902.44,
+      "end_seconds": 907.92,
+      "id": "ldSPyi0UjeU-display-0256",
+      "segment_id": "ldSPyi0UjeU-ja-0106"
+    },
+    {
+      "text": "では最後にあの廊下にもう1度戻りたいと",
+      "start_seconds": 907.92,
+      "end_seconds": 911.959,
+      "id": "ldSPyi0UjeU-display-0257",
+      "segment_id": "ldSPyi0UjeU-ja-0107"
+    },
+    {
+      "text": "思います。",
+      "start_seconds": 911.959,
+      "end_seconds": 913.88,
+      "id": "ldSPyi0UjeU-display-0258",
+      "segment_id": "ldSPyi0UjeU-ja-0107"
+    },
+    {
+      "text": "12年前私はこの廊下で様々なインビトン",
+      "start_seconds": 913.88,
+      "end_seconds": 920.399,
+      "id": "ldSPyi0UjeU-display-0259",
+      "segment_id": "ldSPyi0UjeU-ja-0108"
+    },
+    {
+      "text": "狭にいました。",
+      "start_seconds": 920.399,
+      "end_seconds": 923.04,
+      "id": "ldSPyi0UjeU-display-0260",
+      "segment_id": "ldSPyi0UjeU-ja-0108"
+    },
+    {
+      "text": "聖と死の間、",
+      "start_seconds": 923.04,
+      "end_seconds": 925.72,
+      "id": "ldSPyi0UjeU-display-0261",
+      "segment_id": "ldSPyi0UjeU-ja-0109"
+    },
+    {
+      "text": "キャリアとケアの間、そして強さと弱さの",
+      "start_seconds": 925.72,
+      "end_seconds": 930.079,
+      "id": "ldSPyi0UjeU-display-0262",
+      "segment_id": "ldSPyi0UjeU-ja-0109"
+    },
+    {
+      "text": "間",
+      "start_seconds": 930.079,
+      "end_seconds": 933.0,
+      "id": "ldSPyi0UjeU-display-0263",
+      "segment_id": "ldSPyi0UjeU-ja-0109"
+    },
+    {
+      "text": "しんどかった。",
+      "start_seconds": 933.0,
+      "end_seconds": 935.319,
+      "id": "ldSPyi0UjeU-display-0264",
+      "segment_id": "ldSPyi0UjeU-ja-0110"
+    },
+    {
+      "text": "でもこの廊下は私に大切なことを教えて",
+      "start_seconds": 935.319,
+      "end_seconds": 938.6,
+      "id": "ldSPyi0UjeU-display-0265",
+      "segment_id": "ldSPyi0UjeU-ja-0111"
+    },
+    {
+      "text": "くれました。それはケアは私たち人生に",
+      "start_seconds": 938.6,
+      "end_seconds": 942.24,
+      "id": "ldSPyi0UjeU-display-0266",
+      "segment_id": "ldSPyi0UjeU-ja-0111"
+    },
+    {
+      "text": "おいて例外ではないということなんです。",
+      "start_seconds": 942.24,
+      "end_seconds": 945.56,
+      "id": "ldSPyi0UjeU-display-0267",
+      "segment_id": "ldSPyi0UjeU-ja-0111"
+    },
+    {
+      "text": "私たちは生まれた瞬間ケアをされて生まれ",
+      "start_seconds": 945.56,
+      "end_seconds": 948.399,
+      "id": "ldSPyi0UjeU-display-0268",
+      "segment_id": "ldSPyi0UjeU-ja-0112"
+    },
+    {
+      "text": "てきます。やがてケアをする側になる。",
+      "start_seconds": 948.399,
+      "end_seconds": 952.48,
+      "id": "ldSPyi0UjeU-display-0269",
+      "segment_id": "ldSPyi0UjeU-ja-0112"
+    },
+    {
+      "text": "そして人生を終える時にケアをするされる",
+      "start_seconds": 952.48,
+      "end_seconds": 956.72,
+      "id": "ldSPyi0UjeU-display-0270",
+      "segment_id": "ldSPyi0UjeU-ja-0113"
+    },
+    {
+      "text": "側に戻っていく。つまりケアをする側さ",
+      "start_seconds": 956.72,
+      "end_seconds": 960.04,
+      "id": "ldSPyi0UjeU-display-0271",
+      "segment_id": "ldSPyi0UjeU-ja-0113"
+    },
+    {
+      "text": "れる側このイントbetweenトインを",
+      "start_seconds": 960.04,
+      "end_seconds": 962.319,
+      "id": "ldSPyi0UjeU-display-0272",
+      "segment_id": "ldSPyi0UjeU-ja-0113"
+    },
+    {
+      "text": "行ったり来たりするんですね。なので誰",
+      "start_seconds": 962.319,
+      "end_seconds": 965.839,
+      "id": "ldSPyi0UjeU-display-0273",
+      "segment_id": "ldSPyi0UjeU-ja-0114"
+    },
+    {
+      "text": "1人例外ではない。そして人間が人間",
+      "start_seconds": 965.839,
+      "end_seconds": 969.839,
+      "id": "ldSPyi0UjeU-display-0274",
+      "segment_id": "ldSPyi0UjeU-ja-0114"
+    },
+    {
+      "text": "らしく生きることそのものだと思うのです",
+      "start_seconds": 969.839,
+      "end_seconds": 972.6,
+      "id": "ldSPyi0UjeU-display-0275",
+      "segment_id": "ldSPyi0UjeU-ja-0114"
+    },
+    {
+      "text": "。",
+      "start_seconds": 972.6,
+      "end_seconds": 974.48,
+      "id": "ldSPyi0UjeU-display-0276",
+      "segment_id": "ldSPyi0UjeU-ja-0115"
+    },
+    {
+      "text": "そして日本はこれから世界に先じて人口",
+      "start_seconds": 974.48,
+      "end_seconds": 978.48,
+      "id": "ldSPyi0UjeU-display-0277",
+      "segment_id": "ldSPyi0UjeU-ja-0116"
+    },
+    {
+      "text": "減少社会、そして超高齢化社会に入って",
+      "start_seconds": 978.48,
+      "end_seconds": 981.48,
+      "id": "ldSPyi0UjeU-display-0278",
+      "segment_id": "ldSPyi0UjeU-ja-0116"
+    },
+    {
+      "text": "いきます。",
+      "start_seconds": 981.48,
+      "end_seconds": 983.12,
+      "id": "ldSPyi0UjeU-display-0279",
+      "segment_id": "ldSPyi0UjeU-ja-0116"
+    },
+    {
+      "text": "ケアを必要とする人が増える一方でケアを",
+      "start_seconds": 983.12,
+      "end_seconds": 986.16,
+      "id": "ldSPyi0UjeU-display-0280",
+      "segment_id": "ldSPyi0UjeU-ja-0117"
+    },
+    {
+      "text": "する側、そして働いて社会を支える側は",
+      "start_seconds": 986.16,
+      "end_seconds": 989.279,
+      "id": "ldSPyi0UjeU-display-0281",
+      "segment_id": "ldSPyi0UjeU-ja-0117"
+    },
+    {
+      "text": "どんどん減っていきます。",
+      "start_seconds": 989.279,
+      "end_seconds": 992.079,
+      "id": "ldSPyi0UjeU-display-0282",
+      "segment_id": "ldSPyi0UjeU-ja-0117"
+    },
+    {
+      "text": "そんな中で私たちが目指すべき社会は限り",
+      "start_seconds": 992.079,
+      "end_seconds": 995.639,
+      "id": "ldSPyi0UjeU-display-0283",
+      "segment_id": "ldSPyi0UjeU-ja-0118"
+    },
+    {
+      "text": "ある人で無理をして働く社会ではない。",
+      "start_seconds": 995.639,
+      "end_seconds": 1000.079,
+      "id": "ldSPyi0UjeU-display-0284",
+      "segment_id": "ldSPyi0UjeU-ja-0118"
+    },
+    {
+      "text": "そうではなく働きたい人が働くことができ",
+      "start_seconds": 1000.079,
+      "end_seconds": 1004.56,
+      "id": "ldSPyi0UjeU-display-0285",
+      "segment_id": "ldSPyi0UjeU-ja-0119"
+    },
+    {
+      "text": "ケアをしながらでもキャリアを諦めない。",
+      "start_seconds": 1004.56,
+      "end_seconds": 1007.44,
+      "id": "ldSPyi0UjeU-display-0286",
+      "segment_id": "ldSPyi0UjeU-ja-0119"
+    },
+    {
+      "text": "そしてケアの経験でさえも未来の力に変え",
+      "start_seconds": 1007.44,
+      "end_seconds": 1011.92,
+      "id": "ldSPyi0UjeU-display-0287",
+      "segment_id": "ldSPyi0UjeU-ja-0120"
+    },
+    {
+      "text": "ていけるそんな社会です。それは単に",
+      "start_seconds": 1011.92,
+      "end_seconds": 1016.24,
+      "id": "ldSPyi0UjeU-display-0288",
+      "segment_id": "ldSPyi0UjeU-ja-0120"
+    },
+    {
+      "text": "優しい社会ではないんですね。私たちの",
+      "start_seconds": 1016.24,
+      "end_seconds": 1019.319,
+      "id": "ldSPyi0UjeU-display-0289",
+      "segment_id": "ldSPyi0UjeU-ja-0120"
+    },
+    {
+      "text": "モてる最大の能力をフルに活用し、経済を",
+      "start_seconds": 1019.319,
+      "end_seconds": 1023.199,
+      "id": "ldSPyi0UjeU-display-0290",
+      "segment_id": "ldSPyi0UjeU-ja-0121"
+    },
+    {
+      "text": "回す力に変えていく。本当の意味で狂人で",
+      "start_seconds": 1023.199,
+      "end_seconds": 1027.959,
+      "id": "ldSPyi0UjeU-display-0291",
+      "segment_id": "ldSPyi0UjeU-ja-0121"
+    },
+    {
+      "text": "持続可能な社会だと思います。",
+      "start_seconds": 1027.959,
+      "end_seconds": 1031.199,
+      "id": "ldSPyi0UjeU-display-0292",
+      "segment_id": "ldSPyi0UjeU-ja-0121"
+    },
+    {
+      "text": "そんな社会にしていくためにケアをし",
+      "start_seconds": 1031.199,
+      "end_seconds": 1033.88,
+      "id": "ldSPyi0UjeU-display-0293",
+      "segment_id": "ldSPyi0UjeU-ja-0122"
+    },
+    {
+      "text": "ながら働くことを職場の前提にしていき",
+      "start_seconds": 1033.88,
+      "end_seconds": 1036.919,
+      "id": "ldSPyi0UjeU-display-0294",
+      "segment_id": "ldSPyi0UjeU-ja-0122"
+    },
+    {
+      "text": "ましょう。そして支えながら働くことを",
+      "start_seconds": 1036.919,
+      "end_seconds": 1041.6,
+      "id": "ldSPyi0UjeU-display-0295",
+      "segment_id": "ldSPyi0UjeU-ja-0122"
+    },
+    {
+      "text": "私たちの当たり前にしていきましょう。",
+      "start_seconds": 1041.6,
+      "end_seconds": 1047.1599999999999,
+      "id": "ldSPyi0UjeU-display-0296",
+      "segment_id": "ldSPyi0UjeU-ja-0123"
+    },
+    {
+      "text": "workfor",
+      "start_seconds": 1047.6,
+      "end_seconds": 1050.76,
+      "id": "ldSPyi0UjeU-display-0297",
+      "segment_id": "ldSPyi0UjeU-ja-0124"
+    },
+    {
+      "text": "nooneisleftin",
+      "start_seconds": 1050.76,
+      "end_seconds": 1052.88,
+      "id": "ldSPyi0UjeU-display-0298",
+      "segment_id": "ldSPyi0UjeU-ja-0124"
+    },
+    {
+      "text": "T",
+      "start_seconds": 1052.88,
+      "end_seconds": 1055.88,
+      "id": "ldSPyi0UjeU-display-0299",
+      "segment_id": "ldSPyi0UjeU-ja-0124"
+    }
+  ]
+}

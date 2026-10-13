@@ -8,12 +8,46 @@ from api_errors import ApiError
 from auth.security import require_auth
 from extensions import db
 from video_examples.models import CaptionSegment, ExampleVideo
-from .models import ShadowingJob, ShadowingRequest
+from .models import ShadowingJob, ShadowingRequest, ShadowingTranslation
 from .processor import display_captions, attach_practice_segments
 from .service import owned_job, public_job, submit
 from .words import cached_analysis, dictionary_entries
+from .translation import source_for, public_translation, request_translation
 
 bp = Blueprint('shadowing', __name__, url_prefix='/api/listening/shadowing')
+
+
+@bp.post('/jobs/<job_id>/questions')
+@require_auth
+def questions(job_id):
+    from auth.security import limit
+    from .quiz import quiz_source, generate_questions
+    data = request.get_json(silent=True)
+    if not isinstance(data, dict):
+        raise ApiError('Cần chọn số câu hỏi.', 400, 'quiz_invalid_count')
+    source = quiz_source(job_id, data.get('count'), data.get('level', 'N3'))
+    limit('shadowing-quiz', g.user.id, 20, 3600)
+    # Release the read transaction while awaiting the provider; nothing is stored.
+    db.session.rollback()
+    response = jsonify(generate_questions(source))
+    response.headers['Cache-Control'] = 'no-store'
+    return response
+
+
+@bp.route('/jobs/<job_id>/translation', methods=['GET', 'POST'])
+@require_auth
+def translation(job_id):
+    if request.method == 'POST':
+        from auth.security import limit
+        limit('shadowing-translation', g.user.id, 30, 3600)
+        row, source = request_translation(job_id)
+    else:
+        source = source_for(job_id)
+        row = db.session.scalar(select(ShadowingTranslation).where(ShadowingTranslation.job_id == job_id))
+    result = public_translation(row, source)
+    response = jsonify(result)
+    response.headers['Cache-Control'] = 'no-store'
+    return response, 202 if request.method == 'POST' and result['status'] != 'ready' else 200
 
 
 @bp.errorhandler(ApiError)

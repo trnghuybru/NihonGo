@@ -1,0 +1,3774 @@
+{
+  "schema_version": 1,
+  "video": {
+    "youtube_id": "vtX_N7K4iLM",
+    "title": "How does the past reach the future? | Tetsuro Kamura | TEDxKeioU",
+    "channel": "TEDx Talks",
+    "duration_seconds": 951
+  },
+  "caption_track": {
+    "language": "ja",
+    "kind": "asr",
+    "source": "youtube_automatic"
+  },
+  "source_playlist": "https://www.youtube.com/playlist?list=PLsRNoUx8w3rOHjXIU5EE4KOiIagv9yQaG",
+  "fetched_at": "2026-10-13T13:23:07.736343+00:00",
+  "segment_count": 121,
+  "segments": [
+    {
+      "text": "[拍手]",
+      "start_seconds": 6.55,
+      "end_seconds": 8.57,
+      "id": "vtX_N7K4iLM-ja-0001",
+      "sequence": 1
+    },
+    {
+      "text": "財布を忘れるよりスマホを忘れた方が焦る。最近はそんな人の方が多いんではないでしょうか。",
+      "start_seconds": 10.28,
+      "end_seconds": 20.439,
+      "id": "vtX_N7K4iLM-ja-0002",
+      "sequence": 2
+    },
+    {
+      "text": "予定も地図も連絡先も写真も全部そこに入っている。",
+      "start_seconds": 20.439,
+      "end_seconds": 28.679,
+      "id": "vtX_N7K4iLM-ja-0003",
+      "sequence": 3
+    },
+    {
+      "text": "もはや単なる具という記憶や記録の一部を機械に預けているようなものかもしれません。私たちはその面を通したくさんの情報を見ています。字や画像、映像も検索すれば手に入るとても",
+      "start_seconds": 28.679,
+      "end_seconds": 31.679,
+      "id": "vtX_N7K4iLM-ja-0004",
+      "sequence": 4
+    },
+    {
+      "text": "便利な時代になりました。",
+      "start_seconds": 54.0,
+      "end_seconds": 57.0,
+      "id": "vtX_N7K4iLM-ja-0005",
+      "sequence": 5
+    },
+    {
+      "text": "一方、こう思うようにもなりました。",
+      "start_seconds": 58.239,
+      "end_seconds": 62.559,
+      "id": "vtX_N7K4iLM-ja-0006",
+      "sequence": 6
+    },
+    {
+      "text": "表示された画面の情報はどんな道のりを経てここに現れているのだろうか。",
+      "start_seconds": 62.559,
+      "end_seconds": 70.64,
+      "id": "vtX_N7K4iLM-ja-0007",
+      "sequence": 7
+    },
+    {
+      "text": "私たちはそこから何を受け取っているのだろうか。",
+      "start_seconds": 70.64,
+      "end_seconds": 76.96,
+      "id": "vtX_N7K4iLM-ja-0008",
+      "sequence": 8
+    },
+    {
+      "text": "今日の問はここにあります。過去はどう未来へ届くのか。",
+      "start_seconds": 76.96,
+      "end_seconds": 85.119,
+      "id": "vtX_N7K4iLM-ja-0009",
+      "sequence": 9
+    },
+    {
+      "text": "まずは1枚の紙のチケットから考えてみたいと思います。",
+      "start_seconds": 85.119,
+      "end_seconds": 92.36000000000001,
+      "id": "vtX_N7K4iLM-ja-0010",
+      "sequence": 10
+    },
+    {
+      "text": "これは旅先で立ち寄った施設の入場券です。皆さんもコンサートやミュージアムのチケットなどなんとなく捨てられずに残し",
+      "start_seconds": 93.88,
+      "end_seconds": 105.6,
+      "id": "vtX_N7K4iLM-ja-0011",
+      "sequence": 11
+    },
+    {
+      "text": "ていないでしょうか?",
+      "start_seconds": 105.6,
+      "end_seconds": 108.32,
+      "id": "vtX_N7K4iLM-ja-0012",
+      "sequence": 12
+    },
+    {
+      "text": "鞄の片隅で折れていたり、机の引き出しに入れたままだったり気づいたら何年も残っている。",
+      "start_seconds": 108.32,
+      "end_seconds": 117.159,
+      "id": "vtX_N7K4iLM-ja-0013",
+      "sequence": 13
+    },
+    {
+      "text": "このようなものが突然出てくると、その日そこへ行ったことや見たもの、感じたことが鮮明に蘇えるといった経験をしたことは",
+      "start_seconds": 117.159,
+      "end_seconds": 126.92,
+      "id": "vtX_N7K4iLM-ja-0014",
+      "sequence": 14
+    },
+    {
+      "text": "ないでしょうか?",
+      "start_seconds": 126.92,
+      "end_seconds": 129.36,
+      "id": "vtX_N7K4iLM-ja-0015",
+      "sequence": 15
+    },
+    {
+      "text": "一緒に行った友人との会話、立ち寄ったカフェ、その場所の空気や匂いまでもが思い出される。",
+      "start_seconds": 129.36,
+      "end_seconds": 137.84,
+      "id": "vtX_N7K4iLM-ja-0016",
+      "sequence": 16
+    },
+    {
+      "text": "そう考えるとそこに残っていたものはチケットに書かれた情報というよりその時間を自分が確かに経験したという感覚",
+      "start_seconds": 137.84,
+      "end_seconds": 149.44,
+      "id": "vtX_N7K4iLM-ja-0017",
+      "sequence": 17
+    },
+    {
+      "text": "そのものだったのかもしれません。",
+      "start_seconds": 149.44,
+      "end_seconds": 153.8,
+      "id": "vtX_N7K4iLM-ja-0018",
+      "sequence": 18
+    },
+    {
+      "text": "今ではスマホがチケット代わりになり、予約が残ります。いつどこへ行ったという情報だけならばデジタルデータの方が正確",
+      "start_seconds": 153.8,
+      "end_seconds": 165.76,
+      "id": "vtX_N7K4iLM-ja-0019",
+      "sequence": 19
+    },
+    {
+      "text": "に残るでしょう。",
+      "start_seconds": 165.76,
+      "end_seconds": 168.239,
+      "id": "vtX_N7K4iLM-ja-0020",
+      "sequence": 20
+    },
+    {
+      "text": "一方、紙のチケットを写真に撮って残すこともできます。これも同じチケットの情報を別の形で残しているということです。",
+      "start_seconds": 168.239,
+      "end_seconds": 179.879,
+      "id": "vtX_N7K4iLM-ja-0021",
+      "sequence": 21
+    },
+    {
+      "text": "ただ実物にせよ、データにせよ、私たちが普段目にしているのは表面にすぎません。",
+      "start_seconds": 179.879,
+      "end_seconds": 189.68,
+      "id": "vtX_N7K4iLM-ja-0022",
+      "sequence": 22
+    },
+    {
+      "text": "そのどちらにも共通するのは表面の奥に見えない厚みが広がっているということです。",
+      "start_seconds": 189.68,
+      "end_seconds": 198.2,
+      "id": "vtX_N7K4iLM-ja-0023",
+      "sequence": 23
+    },
+    {
+      "text": "この厚みとは一体何なのか?これをうるしの器を礼に考えてみます。",
+      "start_seconds": 198.2,
+      "end_seconds": 207.2,
+      "id": "vtX_N7K4iLM-ja-0024",
+      "sequence": 24
+    },
+    {
+      "text": "百貨点やお土産屋さんで見かけるうしの器を思い浮かべてください。",
+      "start_seconds": 207.2,
+      "end_seconds": 215.0,
+      "id": "vtX_N7K4iLM-ja-0025",
+      "sequence": 25
+    },
+    {
+      "text": "これを見た時まず目に入るのはその色や形の美しさではないでしょうか。",
+      "start_seconds": 215.72,
+      "end_seconds": 224.68,
+      "id": "vtX_N7K4iLM-ja-0026",
+      "sequence": 26
+    },
+    {
+      "text": "深い色合い、滑らかな手触り、1つの器として完成されたものに見えます。",
+      "start_seconds": 224.68,
+      "end_seconds": 233.079,
+      "id": "vtX_N7K4iLM-ja-0027",
+      "sequence": 27
+    },
+    {
+      "text": "でもその器はある日突然そこに現れたわけではありません。",
+      "start_seconds": 233.079,
+      "end_seconds": 240.72,
+      "id": "vtX_N7K4iLM-ja-0028",
+      "sequence": 28
+    },
+    {
+      "text": "器の元となる木を選び、形を作る人がいる。",
+      "start_seconds": 240.72,
+      "end_seconds": 245.92,
+      "id": "vtX_N7K4iLM-ja-0029",
+      "sequence": 29
+    },
+    {
+      "text": "木の樹液からうしを取る職人がいる。",
+      "start_seconds": 245.92,
+      "end_seconds": 250.319,
+      "id": "vtX_N7K4iLM-ja-0030",
+      "sequence": 30
+    },
+    {
+      "text": "1人前の売る職人になるためには10年以上の修行が必要だとも言われており、今では担いても少なく国産うしの技術をどう",
+      "start_seconds": 250.319,
+      "end_seconds": 260.32,
+      "id": "vtX_N7K4iLM-ja-0031",
+      "sequence": 31
+    },
+    {
+      "text": "受け継いでいくか大きな課題になっています。",
+      "start_seconds": 260.32,
+      "end_seconds": 265.68,
+      "id": "vtX_N7K4iLM-ja-0032",
+      "sequence": 32
+    },
+    {
+      "text": "そのうしを塗り乾かし重ね、磨きながら少しずつ仕上げていく。そして出来上がっ",
+      "start_seconds": 265.68,
+      "end_seconds": 274.84,
+      "id": "vtX_N7K4iLM-ja-0033",
+      "sequence": 33
+    },
+    {
+      "text": "たものを運び店頭へ届ける人もいる。",
+      "start_seconds": 274.84,
+      "end_seconds": 279.68,
+      "id": "vtX_N7K4iLM-ja-0034",
+      "sequence": 34
+    },
+    {
+      "text": "ここで大事なのはうしの器の価値は表面の美しさだけでは語れないということです。",
+      "start_seconds": 279.68,
+      "end_seconds": 287.639,
+      "id": "vtX_N7K4iLM-ja-0035",
+      "sequence": 35
+    },
+    {
+      "text": "そこには素材を選び手間をかけてきた営波がある。たくさんの人の仕事と伝統技術と",
+      "start_seconds": 287.639,
+      "end_seconds": 296.28,
+      "id": "vtX_N7K4iLM-ja-0036",
+      "sequence": 36
+    },
+    {
+      "text": "いう長い年月が重なっている。",
+      "start_seconds": 296.28,
+      "end_seconds": 301.24,
+      "id": "vtX_N7K4iLM-ja-0037",
+      "sequence": 37
+    },
+    {
+      "text": "そうして並んだ器は1つの作品として目に入ります。",
+      "start_seconds": 301.24,
+      "end_seconds": 307.56,
+      "id": "vtX_N7K4iLM-ja-0038",
+      "sequence": 38
+    },
+    {
+      "text": "つまり私たちが見ているのは単なるものではなくて人の手を経てきた歴史そのもので",
+      "start_seconds": 307.56,
+      "end_seconds": 315.199,
+      "id": "vtX_N7K4iLM-ja-0039",
+      "sequence": 39
+    },
+    {
+      "text": "ある。日本の文化や芸術の歴史は魅力はこうした見えにくい厚みの中にあると言えないでしょうか。",
+      "start_seconds": 315.199,
+      "end_seconds": 326.96,
+      "id": "vtX_N7K4iLM-ja-0040",
+      "sequence": 40
+    },
+    {
+      "text": "では、こうした作品の存在を私たちはどうやって知るのでしょうか?",
+      "start_seconds": 326.96,
+      "end_seconds": 334.52,
+      "id": "vtX_N7K4iLM-ja-0041",
+      "sequence": 41
+    },
+    {
+      "text": "美術館や百貨点で実物を見ることもあれば、本やインターネットで写真を見ることもある。ここにもう1つの道乗りがあります",
+      "start_seconds": 334.52,
+      "end_seconds": 346.0,
+      "id": "vtX_N7K4iLM-ja-0042",
+      "sequence": 42
+    },
+    {
+      "text": "。",
+      "start_seconds": 346.0,
+      "end_seconds": 347.88,
+      "id": "vtX_N7K4iLM-ja-0043",
+      "sequence": 43
+    },
+    {
+      "text": "実物を撮影する人、来歴や疑法を調べる人、情報を整えて公開し、維持する人がいる。",
+      "start_seconds": 347.88,
+      "end_seconds": 359.28,
+      "id": "vtX_N7K4iLM-ja-0044",
+      "sequence": 44
+    },
+    {
+      "text": "ここに表示されているようにうしの器の価値は作り手だけでなくそれを記録し、伝える人たちにも支えられています。",
+      "start_seconds": 359.28,
+      "end_seconds": 370.8,
+      "id": "vtX_N7K4iLM-ja-0045",
+      "sequence": 45
+    },
+    {
+      "text": "そうして作られたデータは実物とは違う形で作品の価値を運んでいます。",
+      "start_seconds": 370.8,
+      "end_seconds": 379.4,
+      "id": "vtX_N7K4iLM-ja-0046",
+      "sequence": 46
+    },
+    {
+      "text": "では私たちが日々見ている画像や映像はどんな道のりでスマホの画面に現れているのでしょうか?",
+      "start_seconds": 379.4,
+      "end_seconds": 390.319,
+      "id": "vtX_N7K4iLM-ja-0047",
+      "sequence": 47
+    },
+    {
+      "text": "インスタやXを開けば写真や動画が次々と流れてくる。YouTubeでは古い絵画や文化剤の画像が解説動画の中で使われて",
+      "start_seconds": 390.319,
+      "end_seconds": 402.039,
+      "id": "vtX_N7K4iLM-ja-0048",
+      "sequence": 48
+    },
+    {
+      "text": "いる。とても綺麗だな。これは面白い。俺は知らなかったな。ま、そう思いながら無",
+      "start_seconds": 402.039,
+      "end_seconds": 410.56,
+      "id": "vtX_N7K4iLM-ja-0049",
+      "sequence": 49
+    },
+    {
+      "text": "意識のうちに次の動画へ住んでいる。",
+      "start_seconds": 410.56,
+      "end_seconds": 416.08,
+      "id": "vtX_N7K4iLM-ja-0050",
+      "sequence": 50
+    },
+    {
+      "text": "その時こう問いかけてみます。その画像どんな背景で公開されたものなんだろうか。",
+      "start_seconds": 416.08,
+      "end_seconds": 425.16,
+      "id": "vtX_N7K4iLM-ja-0051",
+      "sequence": 51
+    },
+    {
+      "text": "元は作品情報と一緒に公開されていたかもしれません。",
+      "start_seconds": 425.16,
+      "end_seconds": 431.36,
+      "id": "vtX_N7K4iLM-ja-0052",
+      "sequence": 52
+    },
+    {
+      "text": "画像がSNSや動画になると情報は少しずつ姿を変えます。",
+      "start_seconds": 431.36,
+      "end_seconds": 439.639,
+      "id": "vtX_N7K4iLM-ja-0053",
+      "sequence": 53
+    },
+    {
+      "text": "大きな画像がサムネイルになり、一部が切り取られる。長い解説は短い一言に置き換えられる。",
+      "start_seconds": 439.639,
+      "end_seconds": 451.319,
+      "id": "vtX_N7K4iLM-ja-0054",
+      "sequence": 54
+    },
+    {
+      "text": "変わること自体が悪いわけではありません。変化があるからこそスマホでも見やすくなる。短い動画をきっかけに初めてその",
+      "start_seconds": 451.319,
+      "end_seconds": 460.56,
+      "id": "vtX_N7K4iLM-ja-0055",
+      "sequence": 55
+    },
+    {
+      "text": "文化に触れることもある。",
+      "start_seconds": 460.56,
+      "end_seconds": 463.72,
+      "id": "vtX_N7K4iLM-ja-0056",
+      "sequence": 56
+    },
+    {
+      "text": "しかしその過程で見えなくなる、見えにくくなるものがあります。",
+      "start_seconds": 463.72,
+      "end_seconds": 471.159,
+      "id": "vtX_N7K4iLM-ja-0057",
+      "sequence": 57
+    },
+    {
+      "text": "元々添えられていた説明や作者名、作品名、撮影者や公開元といった情報です。",
+      "start_seconds": 471.199,
+      "end_seconds": 481.479,
+      "id": "vtX_N7K4iLM-ja-0058",
+      "sequence": 58
+    },
+    {
+      "text": "それらが抜け落ちると情報の意味は不安定になり時には元の文脈とは全く違う意味で受け取られることもあります。",
+      "start_seconds": 481.479,
+      "end_seconds": 492.4,
+      "id": "vtX_N7K4iLM-ja-0059",
+      "sequence": 59
+    },
+    {
+      "text": "画像の出所を明示することはその情報を信頼して受け取るための手がかりであり",
+      "start_seconds": 492.4,
+      "end_seconds": 499.12,
+      "id": "vtX_N7K4iLM-ja-0060",
+      "sequence": 60
+    },
+    {
+      "text": "関わった人たちへの経緯でもあります。",
+      "start_seconds": 499.12,
+      "end_seconds": 504.44,
+      "id": "vtX_N7K4iLM-ja-0061",
+      "sequence": 61
+    },
+    {
+      "text": "今ではAIによってリアルな画像や映像が作られる時代です。この画像は先ほどの",
+      "start_seconds": 504.44,
+      "end_seconds": 512.399,
+      "id": "vtX_N7K4iLM-ja-0062",
+      "sequence": 62
+    },
+    {
+      "text": "写真をもにAIで生成したものです。",
+      "start_seconds": 512.399,
+      "end_seconds": 516.839,
+      "id": "vtX_N7K4iLM-ja-0063",
+      "sequence": 63
+    },
+    {
+      "text": "情報がなければ本物との見分は難しい。だからこそ情報の出所や文脈は意識すること",
+      "start_seconds": 516.839,
+      "end_seconds": 525.72,
+      "id": "vtX_N7K4iLM-ja-0064",
+      "sequence": 64
+    },
+    {
+      "text": "はこれまで以上に重要になっています。",
+      "start_seconds": 525.72,
+      "end_seconds": 530.519,
+      "id": "vtX_N7K4iLM-ja-0065",
+      "sequence": 65
+    },
+    {
+      "text": "では情報を残すということにはどんな厚みがあるのでしょうか?",
+      "start_seconds": 530.519,
+      "end_seconds": 539.12,
+      "id": "vtX_N7K4iLM-ja-0066",
+      "sequence": 66
+    },
+    {
+      "text": "古いうしの器であれば文化剤として見られる状態を保ち続ける必要があります。",
+      "start_seconds": 539.12,
+      "end_seconds": 546.16,
+      "id": "vtX_N7K4iLM-ja-0067",
+      "sequence": 67
+    },
+    {
+      "text": "音質度を整え痛まないように扱い誰かから誰かへ受け継ぐ。そうした積み重ねが何代にもわたって続いてきたことで今も残って",
+      "start_seconds": 546.16,
+      "end_seconds": 557.8,
+      "id": "vtX_N7K4iLM-ja-0068",
+      "sequence": 68
+    },
+    {
+      "text": "いる。",
+      "start_seconds": 557.8,
+      "end_seconds": 559.6,
+      "id": "vtX_N7K4iLM-ja-0069",
+      "sequence": 69
+    },
+    {
+      "text": "そこにはただ保管するだけではない信頼できるものとして残し続ける重さがあり",
+      "start_seconds": 559.6,
+      "end_seconds": 566.839,
+      "id": "vtX_N7K4iLM-ja-0070",
+      "sequence": 70
+    },
+    {
+      "text": "ます。そしてこれは実物だけではなくデジタルデータにも当てはまります。",
+      "start_seconds": 566.839,
+      "end_seconds": 576.04,
+      "id": "vtX_N7K4iLM-ja-0071",
+      "sequence": 71
+    },
+    {
+      "text": "例えばKO技塾図書館の42行政デジタルコンテンツは1997年に公開され、今も",
+      "start_seconds": 576.04,
+      "end_seconds": 586.079,
+      "id": "vtX_N7K4iLM-ja-0072",
+      "sequence": 72
+    },
+    {
+      "text": "見ることができます。",
+      "start_seconds": 586.079,
+      "end_seconds": 588.72,
+      "id": "vtX_N7K4iLM-ja-0073",
+      "sequence": 73
+    },
+    {
+      "text": "30年の間にウェブサイトの形も画像サイズも保存場所も変わってきました。",
+      "start_seconds": 588.72,
+      "end_seconds": 596.8,
+      "id": "vtX_N7K4iLM-ja-0074",
+      "sequence": 74
+    },
+    {
+      "text": "その度に誰かがデータを映し替え、内容を点検し、説明やリンクを見直してきました。",
+      "start_seconds": 596.8,
+      "end_seconds": 605.72,
+      "id": "vtX_N7K4iLM-ja-0075",
+      "sequence": 75
+    },
+    {
+      "text": "このコンテンツはまさに30年にわたる人の判断と意思、そして責任が積み重ねられてきた結果なのです。",
+      "start_seconds": 605.72,
+      "end_seconds": 617.48,
+      "id": "vtX_N7K4iLM-ja-0076",
+      "sequence": 76
+    },
+    {
+      "text": "その時間の厚みがデータに信頼という価値を与えます。",
+      "start_seconds": 617.48,
+      "end_seconds": 623.959,
+      "id": "vtX_N7K4iLM-ja-0077",
+      "sequence": 77
+    },
+    {
+      "text": "私たちが何かを調べたい時に安心してたどれる場所がある。データはただ保存すれば残るわけではありません。",
+      "start_seconds": 623.959,
+      "end_seconds": 634.12,
+      "id": "vtX_N7K4iLM-ja-0078",
+      "sequence": 78
+    },
+    {
+      "text": "文化に関わる情報や記録をデジタルで整え、長く残し、必要な人が使えるようにする。",
+      "start_seconds": 634.12,
+      "end_seconds": 644.68,
+      "id": "vtX_N7K4iLM-ja-0079",
+      "sequence": 79
+    },
+    {
+      "text": "このようなプロセス全体をデジタルアーカイブと呼んでいます。",
+      "start_seconds": 644.68,
+      "end_seconds": 651.8,
+      "id": "vtX_N7K4iLM-ja-0080",
+      "sequence": 80
+    },
+    {
+      "text": "そしてこれは専門の人たちだけの仕事ではありません。私たち1人1人もすでに",
+      "start_seconds": 651.8,
+      "end_seconds": 660.04,
+      "id": "vtX_N7K4iLM-ja-0081",
+      "sequence": 81
+    },
+    {
+      "text": "プロセスの流れの中にいます。",
+      "start_seconds": 660.04,
+      "end_seconds": 664.68,
+      "id": "vtX_N7K4iLM-ja-0082",
+      "sequence": 82
+    },
+    {
+      "text": "最初に示した1枚の紙チケットがその日の出来事を呼び戻す手がかりだったように",
+      "start_seconds": 665.839,
+      "end_seconds": 674.12,
+      "id": "vtX_N7K4iLM-ja-0083",
+      "sequence": 83
+    },
+    {
+      "text": "私たちのスマホの中にもそんな写真が何千と眠っています。",
+      "start_seconds": 674.12,
+      "end_seconds": 682.56,
+      "id": "vtX_N7K4iLM-ja-0084",
+      "sequence": 84
+    },
+    {
+      "text": "今日撮った写真、友人との交流、旅先の風景、家族との時間きっとたくさん入っ",
+      "start_seconds": 682.56,
+      "end_seconds": 691.68,
+      "id": "vtX_N7K4iLM-ja-0085",
+      "sequence": 85
+    },
+    {
+      "text": "てるはずです。綺麗だと思ったから取る。",
+      "start_seconds": 691.68,
+      "end_seconds": 695.399,
+      "id": "vtX_N7K4iLM-ja-0086",
+      "sequence": 86
+    },
+    {
+      "text": "誰かに見てもらえたいから投稿する。忘れたくないから残しておく。特別なことはし",
+      "start_seconds": 695.399,
+      "end_seconds": 702.399,
+      "id": "vtX_N7K4iLM-ja-0087",
+      "sequence": 87
+    },
+    {
+      "text": "ていません。でもそれは今この時代のこの場所で生きている私たちの暮らしを",
+      "start_seconds": 702.399,
+      "end_seconds": 710.44,
+      "id": "vtX_N7K4iLM-ja-0088",
+      "sequence": 88
+    },
+    {
+      "text": "映し取っているということでもあります。",
+      "start_seconds": 710.44,
+      "end_seconds": 714.959,
+      "id": "vtX_N7K4iLM-ja-0089",
+      "sequence": 89
+    },
+    {
+      "text": "朝の通勤、通学風景季節の食卓や地域のお祭り。そうした小さな記録の中にも未来",
+      "start_seconds": 714.959,
+      "end_seconds": 724.16,
+      "id": "vtX_N7K4iLM-ja-0090",
+      "sequence": 90
+    },
+    {
+      "text": "から見れば文化の断片が含まれているかもしれません。",
+      "start_seconds": 724.16,
+      "end_seconds": 729.6,
+      "id": "vtX_N7K4iLM-ja-0091",
+      "sequence": 91
+    },
+    {
+      "text": "ただデジタル写真は簡単に増えてきます。",
+      "start_seconds": 729.6,
+      "end_seconds": 735.6,
+      "id": "vtX_N7K4iLM-ja-0092",
+      "sequence": 92
+    },
+    {
+      "text": "見返されることや使われることがなければ大量のデータに埋もれていく。",
+      "start_seconds": 735.6,
+      "end_seconds": 742.519,
+      "id": "vtX_N7K4iLM-ja-0093",
+      "sequence": 93
+    },
+    {
+      "text": "冒頭でスマホは記憶や感覚の一部を預けているようなものかもしれないと言いました。",
+      "start_seconds": 742.519,
+      "end_seconds": 751.279,
+      "id": "vtX_N7K4iLM-ja-0094",
+      "sequence": 94
+    },
+    {
+      "text": "だとすれば、その中にある写真は単なる画像ではなく、私たちが何を見て、何を感じたのかという断片と言えないでしょう",
+      "start_seconds": 751.279,
+      "end_seconds": 762.36,
+      "id": "vtX_N7K4iLM-ja-0095",
+      "sequence": 95
+    },
+    {
+      "text": "か。",
+      "start_seconds": 762.36,
+      "end_seconds": 764.639,
+      "id": "vtX_N7K4iLM-ja-0096",
+      "sequence": 96
+    },
+    {
+      "text": "そこに追加の一言があると、その断片は後からたどり直せる手がかりになります。",
+      "start_seconds": 764.639,
+      "end_seconds": 773.24,
+      "id": "vtX_N7K4iLM-ja-0097",
+      "sequence": 97
+    },
+    {
+      "text": "何かを残す時にはほんの少しだけ文脈を添えてみて欲しいのです。",
+      "start_seconds": 773.24,
+      "end_seconds": 781.12,
+      "id": "vtX_N7K4iLM-ja-0098",
+      "sequence": 98
+    },
+    {
+      "text": "例えば1日の終わりにその日撮った写真を1枚選ぶ。写真アプリの説明欄やの投稿で",
+      "start_seconds": 781.12,
+      "end_seconds": 789.76,
+      "id": "vtX_N7K4iLM-ja-0099",
+      "sequence": 99
+    },
+    {
+      "text": "も構いません。写真に対して3つ問いかけてください。",
+      "start_seconds": 789.76,
+      "end_seconds": 796.44,
+      "id": "vtX_N7K4iLM-ja-0100",
+      "sequence": 100
+    },
+    {
+      "text": "1つ、これは何を取ったのか。",
+      "start_seconds": 796.44,
+      "end_seconds": 801.36,
+      "id": "vtX_N7K4iLM-ja-0101",
+      "sequence": 101
+    },
+    {
+      "text": "2つ、なぜこれを残したいと思ったのか。",
+      "start_seconds": 801.36,
+      "end_seconds": 806.88,
+      "id": "vtX_N7K4iLM-ja-0102",
+      "sequence": 102
+    },
+    {
+      "text": "3つ写真からは分からないことは何か?",
+      "start_seconds": 806.88,
+      "end_seconds": 812.48,
+      "id": "vtX_N7K4iLM-ja-0103",
+      "sequence": 103
+    },
+    {
+      "text": "朝の駅前を撮った写真ならば毎朝通っている駅前。今日は天気が良くて駅前の空気が違って見えた。",
+      "start_seconds": 812.48,
+      "end_seconds": 822.12,
+      "id": "vtX_N7K4iLM-ja-0104",
+      "sequence": 104
+    },
+    {
+      "text": "この角には小さな本屋があった。今はさらちになっている。",
+      "start_seconds": 822.12,
+      "end_seconds": 827.72,
+      "id": "vtX_N7K4iLM-ja-0105",
+      "sequence": 105
+    },
+    {
+      "text": "そんな一言があるだけでその写真は数十年後そこに何があり、何が変わったのかを読み取る手がかりになります。",
+      "start_seconds": 827.72,
+      "end_seconds": 838.72,
+      "id": "vtX_N7K4iLM-ja-0106",
+      "sequence": 106
+    },
+    {
+      "text": "大事なのは綺麗な文章を書くことではありません。ほんの一言で十分です。",
+      "start_seconds": 838.72,
+      "end_seconds": 847.8,
+      "id": "vtX_N7K4iLM-ja-0107",
+      "sequence": 107
+    },
+    {
+      "text": "最初に私はこう問いかけました。",
+      "start_seconds": 847.8,
+      "end_seconds": 852.759,
+      "id": "vtX_N7K4iLM-ja-0108",
+      "sequence": 108
+    },
+    {
+      "text": "過去はどう未来へ届くのか。",
+      "start_seconds": 852.759,
+      "end_seconds": 858.04,
+      "id": "vtX_N7K4iLM-ja-0109",
+      "sequence": 109
+    },
+    {
+      "text": "過去は自然に未来へ届くわけではありません。誰かが残し文脈を添え、また誰かが",
+      "start_seconds": 858.04,
+      "end_seconds": 867.199,
+      "id": "vtX_N7K4iLM-ja-0110",
+      "sequence": 110
+    },
+    {
+      "text": "受け取ることで次の時代へ手渡されていく。",
+      "start_seconds": 867.199,
+      "end_seconds": 872.48,
+      "id": "vtX_N7K4iLM-ja-0111",
+      "sequence": 111
+    },
+    {
+      "text": "それは遠い時代の文化財だけの話ではありません。",
+      "start_seconds": 872.48,
+      "end_seconds": 877.279,
+      "id": "vtX_N7K4iLM-ja-0112",
+      "sequence": 112
+    },
+    {
+      "text": "今はただ日常の写真に見えるかもしれない。でも時間が経てばその街や暮らしがどう変わったのかを伝える記録になる。",
+      "start_seconds": 877.279,
+      "end_seconds": 887.72,
+      "id": "vtX_N7K4iLM-ja-0113",
+      "sequence": 113
+    },
+    {
+      "text": "だからこそ何気なく取った1枚にも意味を残しておくことが大切なのです。",
+      "start_seconds": 887.72,
+      "end_seconds": 895.68,
+      "id": "vtX_N7K4iLM-ja-0114",
+      "sequence": 114
+    },
+    {
+      "text": "一言添えられた写真は何十年が経った後、過去の自分に出会うための手がかりとなる",
+      "start_seconds": 895.68,
+      "end_seconds": 902.92,
+      "id": "vtX_N7K4iLM-ja-0115",
+      "sequence": 115
+    },
+    {
+      "text": "。この頃自分は何を見ていたのか何を綺麗だと思ったのか何を残したいと思ったのか",
+      "start_seconds": 902.92,
+      "end_seconds": 912.92,
+      "id": "vtX_N7K4iLM-ja-0116",
+      "sequence": 116
+    },
+    {
+      "text": "その記録にたどり着くのは未来の自分かもしれない。",
+      "start_seconds": 912.92,
+      "end_seconds": 918.12,
+      "id": "vtX_N7K4iLM-ja-0117",
+      "sequence": 117
+    },
+    {
+      "text": "あるいは進化したAIかもしれません。",
+      "start_seconds": 918.12,
+      "end_seconds": 923.079,
+      "id": "vtX_N7K4iLM-ja-0118",
+      "sequence": 118
+    },
+    {
+      "text": "私たちは過去を受け取り今を残す。その積み重ねが未来の私と文化を作ります。",
+      "start_seconds": 923.079,
+      "end_seconds": 932.68,
+      "id": "vtX_N7K4iLM-ja-0119",
+      "sequence": 119
+    },
+    {
+      "text": "今夜寝る前に写真を1枚だけ選んで一言添えてみる。その一言が未来へ届きます。",
+      "start_seconds": 932.68,
+      "end_seconds": 944.6,
+      "id": "vtX_N7K4iLM-ja-0120",
+      "sequence": 120
+    },
+    {
+      "text": "ありがとうございました。",
+      "start_seconds": 944.6,
+      "end_seconds": 948.48,
+      "id": "vtX_N7K4iLM-ja-0121",
+      "sequence": 121
+    }
+  ],
+  "raw_captions": [
+    {
+      "text": "[拍手]",
+      "start_seconds": 6.55,
+      "end_seconds": 8.57
+    },
+    {
+      "text": "財布を忘れるよりスマホを忘れた方が焦る",
+      "start_seconds": 10.28,
+      "end_seconds": 18.359
+    },
+    {
+      "text": "。最近はそんな人の方が多いんではない",
+      "start_seconds": 13.719,
+      "end_seconds": 20.439
+    },
+    {
+      "text": "でしょうか。",
+      "start_seconds": 18.359,
+      "end_seconds": 26.599000000000004
+    },
+    {
+      "text": "予定も地図も連絡先も写真も全部そこに",
+      "start_seconds": 20.439,
+      "end_seconds": 28.679000000000002
+    },
+    {
+      "text": "入っている。",
+      "start_seconds": 26.599,
+      "end_seconds": 31.679000000000002
+    },
+    {
+      "text": "もはや単なる具という記憶や記録の一部を機械に預けているようなものかもしれません。私たちはその面を通したくさんの情報を見ています。字や画像、映像も検索すれば手に入るとても",
+      "start_seconds": 28.679,
+      "end_seconds": 31.679
+    },
+    {
+      "text": "便利な時代になりました。",
+      "start_seconds": 54.0,
+      "end_seconds": 57.0
+    },
+    {
+      "text": "一方、こう思うようにもなりました。",
+      "start_seconds": 58.239,
+      "end_seconds": 66.52
+    },
+    {
+      "text": "表示された画面の情報はどんな道のりを経",
+      "start_seconds": 62.559,
+      "end_seconds": 70.64
+    },
+    {
+      "text": "てここに現れているのだろうか。",
+      "start_seconds": 66.52,
+      "end_seconds": 74.32
+    },
+    {
+      "text": "私たちはそこから何を受け取っているの",
+      "start_seconds": 70.64,
+      "end_seconds": 76.96000000000001
+    },
+    {
+      "text": "だろうか。",
+      "start_seconds": 74.32,
+      "end_seconds": 81.88
+    },
+    {
+      "text": "今日の問はここにあります。過去はどう",
+      "start_seconds": 76.96,
+      "end_seconds": 85.119
+    },
+    {
+      "text": "未来へ届くのか。",
+      "start_seconds": 81.88,
+      "end_seconds": 88.67999999999999
+    },
+    {
+      "text": "まずは1枚の紙のチケットから考えてみ",
+      "start_seconds": 85.119,
+      "end_seconds": 92.36
+    },
+    {
+      "text": "たいと思います。",
+      "start_seconds": 88.68,
+      "end_seconds": 92.36000000000001
+    },
+    {
+      "text": "これは旅先で立ち寄った施設の入場券です",
+      "start_seconds": 93.88,
+      "end_seconds": 102.15899999999999
+    },
+    {
+      "text": "。皆さんもコンサートやミュージアムの",
+      "start_seconds": 97.84,
+      "end_seconds": 105.60000000000001
+    },
+    {
+      "text": "チケットなどなんとなく捨てられずに残し",
+      "start_seconds": 102.159,
+      "end_seconds": 108.32000000000001
+    },
+    {
+      "text": "ていないでしょうか?",
+      "start_seconds": 105.6,
+      "end_seconds": 111.55999999999999
+    },
+    {
+      "text": "鞄の片隅で折れていたり、机の引き出しに",
+      "start_seconds": 108.32,
+      "end_seconds": 114.67999999999999
+    },
+    {
+      "text": "入れたままだったり気づいたら何年も残っ",
+      "start_seconds": 111.56,
+      "end_seconds": 117.159
+    },
+    {
+      "text": "ている。",
+      "start_seconds": 114.68,
+      "end_seconds": 120.799
+    },
+    {
+      "text": "このようなものが突然出てくると、その日",
+      "start_seconds": 117.159,
+      "end_seconds": 123.60000000000001
+    },
+    {
+      "text": "そこへ行ったことや見たもの、感じたこと",
+      "start_seconds": 120.799,
+      "end_seconds": 126.92
+    },
+    {
+      "text": "が鮮明に蘇えるといった経験をしたことは",
+      "start_seconds": 123.6,
+      "end_seconds": 129.35999999999999
+    },
+    {
+      "text": "ないでしょうか?",
+      "start_seconds": 126.92,
+      "end_seconds": 132.44
+    },
+    {
+      "text": "一緒に行った友人との会話、立ち寄った",
+      "start_seconds": 129.36,
+      "end_seconds": 135.59900000000002
+    },
+    {
+      "text": "カフェ、その場所の空気や匂いまでもが",
+      "start_seconds": 132.44,
+      "end_seconds": 137.84
+    },
+    {
+      "text": "思い出される。",
+      "start_seconds": 135.599,
+      "end_seconds": 141.319
+    },
+    {
+      "text": "そう考えるとそこに残っていたものは",
+      "start_seconds": 137.84,
+      "end_seconds": 144.84
+    },
+    {
+      "text": "チケットに書かれた情報というよりその",
+      "start_seconds": 141.319,
+      "end_seconds": 149.44
+    },
+    {
+      "text": "時間を自分が確かに経験したという感覚",
+      "start_seconds": 144.84,
+      "end_seconds": 153.8
+    },
+    {
+      "text": "そのものだったのかもしれません。",
+      "start_seconds": 149.44,
+      "end_seconds": 157.16
+    },
+    {
+      "text": "今ではスマホがチケット代わりになり、",
+      "start_seconds": 153.8,
+      "end_seconds": 162.44
+    },
+    {
+      "text": "予約が残ります。いつどこへ行ったという",
+      "start_seconds": 157.16,
+      "end_seconds": 165.76
+    },
+    {
+      "text": "情報だけならばデジタルデータの方が正確",
+      "start_seconds": 162.44,
+      "end_seconds": 168.239
+    },
+    {
+      "text": "に残るでしょう。",
+      "start_seconds": 165.76,
+      "end_seconds": 171.48
+    },
+    {
+      "text": "一方、紙のチケットを写真に撮って残す",
+      "start_seconds": 168.239,
+      "end_seconds": 175.20000000000002
+    },
+    {
+      "text": "こともできます。これも同じチケットの",
+      "start_seconds": 171.48,
+      "end_seconds": 178.35999999999999
+    },
+    {
+      "text": "情報を別の形で残しているということです",
+      "start_seconds": 175.2,
+      "end_seconds": 179.879
+    },
+    {
+      "text": "。",
+      "start_seconds": 178.36,
+      "end_seconds": 184.68
+    },
+    {
+      "text": "ただ実物にせよ、データにせよ、私たちが",
+      "start_seconds": 179.879,
+      "end_seconds": 189.67999999999998
+    },
+    {
+      "text": "普段目にしているのは表面にすぎません。",
+      "start_seconds": 184.68,
+      "end_seconds": 194.28
+    },
+    {
+      "text": "そのどちらにも共通するのは表面の奥に",
+      "start_seconds": 189.68,
+      "end_seconds": 196.92000000000002
+    },
+    {
+      "text": "見えない厚みが広がっているということ",
+      "start_seconds": 194.28,
+      "end_seconds": 198.2
+    },
+    {
+      "text": "です。",
+      "start_seconds": 196.92,
+      "end_seconds": 203.23899999999998
+    },
+    {
+      "text": "この厚みとは一体何なのか?これをうるし",
+      "start_seconds": 198.2,
+      "end_seconds": 207.2
+    },
+    {
+      "text": "の器を礼に考えてみます。",
+      "start_seconds": 203.239,
+      "end_seconds": 210.72
+    },
+    {
+      "text": "百貨点やお土産屋さんで見かけるうしの器",
+      "start_seconds": 207.2,
+      "end_seconds": 215.0
+    },
+    {
+      "text": "を思い浮かべてください。",
+      "start_seconds": 210.72,
+      "end_seconds": 215.0
+    },
+    {
+      "text": "これを見た時まず目に入るのはその色や形",
+      "start_seconds": 215.72,
+      "end_seconds": 224.68
+    },
+    {
+      "text": "の美しさではないでしょうか。",
+      "start_seconds": 221.04,
+      "end_seconds": 229.159
+    },
+    {
+      "text": "深い色合い、滑らかな手触り、1つの器と",
+      "start_seconds": 224.68,
+      "end_seconds": 233.079
+    },
+    {
+      "text": "して完成されたものに見えます。",
+      "start_seconds": 229.159,
+      "end_seconds": 237.68
+    },
+    {
+      "text": "でもその器はある日突然そこに現れたわけ",
+      "start_seconds": 233.079,
+      "end_seconds": 240.72
+    },
+    {
+      "text": "ではありません。",
+      "start_seconds": 237.68,
+      "end_seconds": 244.28
+    },
+    {
+      "text": "器の元となる木を選び、形を作る人がいる",
+      "start_seconds": 240.72,
+      "end_seconds": 245.92
+    },
+    {
+      "text": "。",
+      "start_seconds": 244.28,
+      "end_seconds": 250.319
+    },
+    {
+      "text": "木の樹液からうしを取る職人がいる。",
+      "start_seconds": 245.92,
+      "end_seconds": 253.11999999999998
+    },
+    {
+      "text": "1人前の売る職人になるためには10年",
+      "start_seconds": 250.319,
+      "end_seconds": 255.92
+    },
+    {
+      "text": "以上の修行が必要だとも言われており、今",
+      "start_seconds": 253.12,
+      "end_seconds": 260.32
+    },
+    {
+      "text": "では担いても少なく国産うしの技術をどう",
+      "start_seconds": 255.92,
+      "end_seconds": 262.919
+    },
+    {
+      "text": "受け継いでいくか大きな課題になってい",
+      "start_seconds": 260.32,
+      "end_seconds": 265.68
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 262.919,
+      "end_seconds": 270.68
+    },
+    {
+      "text": "そのうしを塗り乾かし重ね、磨きながら",
+      "start_seconds": 265.68,
+      "end_seconds": 274.84000000000003
+    },
+    {
+      "text": "少しずつ仕上げていく。そして出来上がっ",
+      "start_seconds": 270.68,
+      "end_seconds": 279.68
+    },
+    {
+      "text": "たものを運び店頭へ届ける人もいる。",
+      "start_seconds": 274.84,
+      "end_seconds": 283.479
+    },
+    {
+      "text": "ここで大事なのはうしの器の価値は表面の",
+      "start_seconds": 279.68,
+      "end_seconds": 287.639
+    },
+    {
+      "text": "美しさだけでは語れないということです。",
+      "start_seconds": 283.479,
+      "end_seconds": 291.44
+    },
+    {
+      "text": "そこには素材を選び手間をかけてきた営波",
+      "start_seconds": 287.639,
+      "end_seconds": 296.28000000000003
+    },
+    {
+      "text": "がある。たくさんの人の仕事と伝統技術と",
+      "start_seconds": 291.44,
+      "end_seconds": 301.24
+    },
+    {
+      "text": "いう長い年月が重なっている。",
+      "start_seconds": 296.28,
+      "end_seconds": 305.039
+    },
+    {
+      "text": "そうして並んだ器は1つの作品として目に",
+      "start_seconds": 301.24,
+      "end_seconds": 307.56
+    },
+    {
+      "text": "入ります。",
+      "start_seconds": 305.039,
+      "end_seconds": 312.039
+    },
+    {
+      "text": "つまり私たちが見ているのは単なるもので",
+      "start_seconds": 307.56,
+      "end_seconds": 315.199
+    },
+    {
+      "text": "はなくて人の手を経てきた歴史そのもので",
+      "start_seconds": 312.039,
+      "end_seconds": 319.919
+    },
+    {
+      "text": "ある。日本の文化や芸術の歴史は魅力は",
+      "start_seconds": 315.199,
+      "end_seconds": 323.44
+    },
+    {
+      "text": "こうした見えにくい厚みの中にあると言え",
+      "start_seconds": 319.919,
+      "end_seconds": 326.96
+    },
+    {
+      "text": "ないでしょうか。",
+      "start_seconds": 323.44,
+      "end_seconds": 331.28
+    },
+    {
+      "text": "では、こうした作品の存在を私たちはどう",
+      "start_seconds": 326.96,
+      "end_seconds": 334.52
+    },
+    {
+      "text": "やって知るのでしょうか?",
+      "start_seconds": 331.28,
+      "end_seconds": 337.75899999999996
+    },
+    {
+      "text": "美術館や百貨点で実物を見ることもあれば",
+      "start_seconds": 334.52,
+      "end_seconds": 342.08
+    },
+    {
+      "text": "、本やインターネットで写真を見ることも",
+      "start_seconds": 337.759,
+      "end_seconds": 346.0
+    },
+    {
+      "text": "ある。ここにもう1つの道乗りがあります",
+      "start_seconds": 342.08,
+      "end_seconds": 347.88
+    },
+    {
+      "text": "。",
+      "start_seconds": 346.0,
+      "end_seconds": 352.0
+    },
+    {
+      "text": "実物を撮影する人、来歴や疑法を調べる人",
+      "start_seconds": 347.88,
+      "end_seconds": 353.6
+    },
+    {
+      "text": "、",
+      "start_seconds": 352.0,
+      "end_seconds": 359.28
+    },
+    {
+      "text": "情報を整えて公開し、維持する人がいる。",
+      "start_seconds": 353.6,
+      "end_seconds": 362.44
+    },
+    {
+      "text": "ここに表示されているようにうしの器の",
+      "start_seconds": 359.28,
+      "end_seconds": 366.55999999999995
+    },
+    {
+      "text": "価値は作り手だけでなくそれを記録し、",
+      "start_seconds": 362.44,
+      "end_seconds": 370.8
+    },
+    {
+      "text": "伝える人たちにも支えられています。",
+      "start_seconds": 366.56,
+      "end_seconds": 374.199
+    },
+    {
+      "text": "そうして作られたデータは実物とは違う形",
+      "start_seconds": 370.8,
+      "end_seconds": 379.40000000000003
+    },
+    {
+      "text": "で作品の価値を運んでいます。",
+      "start_seconds": 374.199,
+      "end_seconds": 384.039
+    },
+    {
+      "text": "では私たちが日々見ている画像や映像は",
+      "start_seconds": 379.4,
+      "end_seconds": 387.15999999999997
+    },
+    {
+      "text": "どんな道のりでスマホの画面に現れている",
+      "start_seconds": 384.039,
+      "end_seconds": 390.31899999999996
+    },
+    {
+      "text": "のでしょうか?",
+      "start_seconds": 387.16,
+      "end_seconds": 394.44
+    },
+    {
+      "text": "インスタやXを開けば写真や動画が次々と",
+      "start_seconds": 390.319,
+      "end_seconds": 397.91900000000004
+    },
+    {
+      "text": "流れてくる。YouTubeでは古い絵画",
+      "start_seconds": 394.44,
+      "end_seconds": 402.039
+    },
+    {
+      "text": "や文化剤の画像が解説動画の中で使われて",
+      "start_seconds": 397.919,
+      "end_seconds": 406.84
+    },
+    {
+      "text": "いる。とても綺麗だな。これは面白い。俺",
+      "start_seconds": 402.039,
+      "end_seconds": 410.56
+    },
+    {
+      "text": "は知らなかったな。ま、そう思いながら無",
+      "start_seconds": 406.84,
+      "end_seconds": 416.08
+    },
+    {
+      "text": "意識のうちに次の動画へ住んでいる。",
+      "start_seconds": 410.56,
+      "end_seconds": 420.68
+    },
+    {
+      "text": "その時こう問いかけてみます。その画像",
+      "start_seconds": 416.08,
+      "end_seconds": 423.039
+    },
+    {
+      "text": "どんな背景で公開されたものなんだろうか",
+      "start_seconds": 420.68,
+      "end_seconds": 425.16
+    },
+    {
+      "text": "。",
+      "start_seconds": 423.039,
+      "end_seconds": 429.24
+    },
+    {
+      "text": "元は作品情報と一緒に公開されていたかも",
+      "start_seconds": 425.16,
+      "end_seconds": 431.36
+    },
+    {
+      "text": "しれません。",
+      "start_seconds": 429.24,
+      "end_seconds": 436.56
+    },
+    {
+      "text": "画像がSNSや動画になると情報は少し",
+      "start_seconds": 431.36,
+      "end_seconds": 439.639
+    },
+    {
+      "text": "ずつ姿を変えます。",
+      "start_seconds": 436.56,
+      "end_seconds": 442.919
+    },
+    {
+      "text": "大きな画像がサムネイルになり、一部が",
+      "start_seconds": 439.639,
+      "end_seconds": 448.40000000000003
+    },
+    {
+      "text": "切り取られる。長い解説は短い一言に",
+      "start_seconds": 442.919,
+      "end_seconds": 451.31899999999996
+    },
+    {
+      "text": "置き換えられる。",
+      "start_seconds": 448.4,
+      "end_seconds": 453.23999999999995
+    },
+    {
+      "text": "変わること自体が悪いわけではありません",
+      "start_seconds": 451.319,
+      "end_seconds": 456.8
+    },
+    {
+      "text": "。変化があるからこそスマホでも見やすく",
+      "start_seconds": 453.24,
+      "end_seconds": 460.56
+    },
+    {
+      "text": "なる。短い動画をきっかけに初めてその",
+      "start_seconds": 456.8,
+      "end_seconds": 463.72
+    },
+    {
+      "text": "文化に触れることもある。",
+      "start_seconds": 460.56,
+      "end_seconds": 466.68
+    },
+    {
+      "text": "しかしその過程で見えなくなる、見え",
+      "start_seconds": 463.72,
+      "end_seconds": 471.15900000000005
+    },
+    {
+      "text": "にくくなるものがあります。",
+      "start_seconds": 466.68,
+      "end_seconds": 471.159
+    },
+    {
+      "text": "元々添えられていた説明や作者名、作品名",
+      "start_seconds": 471.199,
+      "end_seconds": 481.479
+    },
+    {
+      "text": "、撮影者や公開元といった情報です。",
+      "start_seconds": 475.0,
+      "end_seconds": 484.44
+    },
+    {
+      "text": "それらが抜け落ちると情報の意味は不安定",
+      "start_seconds": 481.479,
+      "end_seconds": 489.159
+    },
+    {
+      "text": "になり時には元の文脈とは全く違う意味で",
+      "start_seconds": 484.44,
+      "end_seconds": 492.4
+    },
+    {
+      "text": "受け取られることもあります。",
+      "start_seconds": 489.159,
+      "end_seconds": 496.039
+    },
+    {
+      "text": "画像の出所を明示することはその情報を",
+      "start_seconds": 492.4,
+      "end_seconds": 499.12
+    },
+    {
+      "text": "信頼して受け取るための手がかりであり",
+      "start_seconds": 496.039,
+      "end_seconds": 504.44
+    },
+    {
+      "text": "関わった人たちへの経緯でもあります。",
+      "start_seconds": 499.12,
+      "end_seconds": 508.36
+    },
+    {
+      "text": "今ではAIによってリアルな画像や映像が",
+      "start_seconds": 504.44,
+      "end_seconds": 512.399
+    },
+    {
+      "text": "作られる時代です。この画像は先ほどの",
+      "start_seconds": 508.36,
+      "end_seconds": 516.839
+    },
+    {
+      "text": "写真をもにAIで生成したものです。",
+      "start_seconds": 512.399,
+      "end_seconds": 521.519
+    },
+    {
+      "text": "情報がなければ本物との見分は難しい。だ",
+      "start_seconds": 516.839,
+      "end_seconds": 525.72
+    },
+    {
+      "text": "からこそ情報の出所や文脈は意識すること",
+      "start_seconds": 521.519,
+      "end_seconds": 530.519
+    },
+    {
+      "text": "はこれまで以上に重要になっています。",
+      "start_seconds": 525.72,
+      "end_seconds": 535.32
+    },
+    {
+      "text": "では情報を残すということにはどんな厚み",
+      "start_seconds": 530.519,
+      "end_seconds": 539.12
+    },
+    {
+      "text": "があるのでしょうか?",
+      "start_seconds": 535.32,
+      "end_seconds": 543.0
+    },
+    {
+      "text": "古いうしの器であれば文化剤として見",
+      "start_seconds": 539.12,
+      "end_seconds": 546.16
+    },
+    {
+      "text": "られる状態を保ち続ける必要があります。",
+      "start_seconds": 543.0,
+      "end_seconds": 550.2
+    },
+    {
+      "text": "音質度を整え痛まないように扱い誰かから",
+      "start_seconds": 546.16,
+      "end_seconds": 555.0
+    },
+    {
+      "text": "誰かへ受け継ぐ。そうした積み重ねが何代",
+      "start_seconds": 550.2,
+      "end_seconds": 557.8000000000001
+    },
+    {
+      "text": "にもわたって続いてきたことで今も残って",
+      "start_seconds": 555.0,
+      "end_seconds": 559.6
+    },
+    {
+      "text": "いる。",
+      "start_seconds": 557.8,
+      "end_seconds": 563.8389999999999
+    },
+    {
+      "text": "そこにはただ保管するだけではない信頼",
+      "start_seconds": 559.6,
+      "end_seconds": 566.839
+    },
+    {
+      "text": "できるものとして残し続ける重さがあり",
+      "start_seconds": 563.839,
+      "end_seconds": 572.24
+    },
+    {
+      "text": "ます。そしてこれは実物だけではなく",
+      "start_seconds": 566.839,
+      "end_seconds": 576.0400000000001
+    },
+    {
+      "text": "デジタルデータにも当てはまります。",
+      "start_seconds": 572.24,
+      "end_seconds": 581.0790000000001
+    },
+    {
+      "text": "例えばKO技塾図書館の42行政デジタル",
+      "start_seconds": 576.04,
+      "end_seconds": 586.079
+    },
+    {
+      "text": "コンテンツは1997年に公開され、今も",
+      "start_seconds": 581.079,
+      "end_seconds": 588.7199999999999
+    },
+    {
+      "text": "見ることができます。",
+      "start_seconds": 586.079,
+      "end_seconds": 592.7199999999999
+    },
+    {
+      "text": "30年の間にウェブサイトの形も画像",
+      "start_seconds": 588.72,
+      "end_seconds": 596.8000000000001
+    },
+    {
+      "text": "サイズも保存場所も変わってきました。",
+      "start_seconds": 592.72,
+      "end_seconds": 601.0400000000001
+    },
+    {
+      "text": "その度に誰かがデータを映し替え、内容を",
+      "start_seconds": 596.8,
+      "end_seconds": 604.16
+    },
+    {
+      "text": "点検し、説明やリンクを見直してきました",
+      "start_seconds": 601.04,
+      "end_seconds": 605.7199999999999
+    },
+    {
+      "text": "。",
+      "start_seconds": 604.16,
+      "end_seconds": 609.76
+    },
+    {
+      "text": "このコンテンツはまさに30年にわたる人",
+      "start_seconds": 605.72,
+      "end_seconds": 613.72
+    },
+    {
+      "text": "の判断と意思、そして責任が積み重ねられ",
+      "start_seconds": 609.76,
+      "end_seconds": 617.48
+    },
+    {
+      "text": "てきた結果なのです。",
+      "start_seconds": 613.72,
+      "end_seconds": 621.24
+    },
+    {
+      "text": "その時間の厚みがデータに信頼という価値",
+      "start_seconds": 617.48,
+      "end_seconds": 623.9590000000001
+    },
+    {
+      "text": "を与えます。",
+      "start_seconds": 621.24,
+      "end_seconds": 626.8
+    },
+    {
+      "text": "私たちが何かを調べたい時に安心して",
+      "start_seconds": 623.959,
+      "end_seconds": 630.64
+    },
+    {
+      "text": "たどれる場所がある。データはただ保存",
+      "start_seconds": 626.8,
+      "end_seconds": 634.12
+    },
+    {
+      "text": "すれば残るわけではありません。",
+      "start_seconds": 630.64,
+      "end_seconds": 637.88
+    },
+    {
+      "text": "文化に関わる情報や記録をデジタルで整え",
+      "start_seconds": 634.12,
+      "end_seconds": 642.5600000000001
+    },
+    {
+      "text": "、長く残し、必要な人が使えるようにする",
+      "start_seconds": 637.88,
+      "end_seconds": 644.68
+    },
+    {
+      "text": "。",
+      "start_seconds": 642.56,
+      "end_seconds": 647.3199999999999
+    },
+    {
+      "text": "このようなプロセス全体をデジタル",
+      "start_seconds": 644.68,
+      "end_seconds": 651.8
+    },
+    {
+      "text": "アーカイブと呼んでいます。",
+      "start_seconds": 647.32,
+      "end_seconds": 655.44
+    },
+    {
+      "text": "そしてこれは専門の人たちだけの仕事では",
+      "start_seconds": 651.8,
+      "end_seconds": 660.04
+    },
+    {
+      "text": "ありません。私たち1人1人もすでに",
+      "start_seconds": 655.44,
+      "end_seconds": 664.6800000000001
+    },
+    {
+      "text": "プロセスの流れの中にいます。",
+      "start_seconds": 660.04,
+      "end_seconds": 664.68
+    },
+    {
+      "text": "最初に示した1枚の紙チケットがその日の",
+      "start_seconds": 665.839,
+      "end_seconds": 674.12
+    },
+    {
+      "text": "出来事を呼び戻す手がかりだったように",
+      "start_seconds": 670.079,
+      "end_seconds": 678.4799999999999
+    },
+    {
+      "text": "私たちのスマホの中にもそんな写真が何千",
+      "start_seconds": 674.12,
+      "end_seconds": 682.5600000000001
+    },
+    {
+      "text": "と眠っています。",
+      "start_seconds": 678.48,
+      "end_seconds": 687.36
+    },
+    {
+      "text": "今日撮った写真、友人との交流、旅先の",
+      "start_seconds": 682.56,
+      "end_seconds": 691.68
+    },
+    {
+      "text": "風景、家族との時間きっとたくさん入っ",
+      "start_seconds": 687.36,
+      "end_seconds": 695.399
+    },
+    {
+      "text": "てるはずです。綺麗だと思ったから取る。",
+      "start_seconds": 691.68,
+      "end_seconds": 699.279
+    },
+    {
+      "text": "誰かに見てもらえたいから投稿する。忘れ",
+      "start_seconds": 695.399,
+      "end_seconds": 702.399
+    },
+    {
+      "text": "たくないから残しておく。特別なことはし",
+      "start_seconds": 699.279,
+      "end_seconds": 708.04
+    },
+    {
+      "text": "ていません。でもそれは今この時代のこの",
+      "start_seconds": 702.399,
+      "end_seconds": 710.44
+    },
+    {
+      "text": "場所で生きている私たちの暮らしを",
+      "start_seconds": 708.04,
+      "end_seconds": 714.959
+    },
+    {
+      "text": "映し取っているということでもあります。",
+      "start_seconds": 710.44,
+      "end_seconds": 719.8800000000001
+    },
+    {
+      "text": "朝の通勤、通学風景季節の食卓や地域のお",
+      "start_seconds": 714.959,
+      "end_seconds": 724.16
+    },
+    {
+      "text": "祭り。そうした小さな記録の中にも未来",
+      "start_seconds": 719.88,
+      "end_seconds": 727.16
+    },
+    {
+      "text": "から見れば文化の断片が含まれているかも",
+      "start_seconds": 724.16,
+      "end_seconds": 729.6
+    },
+    {
+      "text": "しれません。",
+      "start_seconds": 727.16,
+      "end_seconds": 735.6
+    },
+    {
+      "text": "ただデジタル写真は簡単に増えてきます。",
+      "start_seconds": 729.6,
+      "end_seconds": 739.0400000000001
+    },
+    {
+      "text": "見返されることや使われることがなければ",
+      "start_seconds": 735.6,
+      "end_seconds": 742.519
+    },
+    {
+      "text": "大量のデータに埋もれていく。",
+      "start_seconds": 739.04,
+      "end_seconds": 747.36
+    },
+    {
+      "text": "冒頭でスマホは記憶や感覚の一部を預けて",
+      "start_seconds": 742.519,
+      "end_seconds": 749.48
+    },
+    {
+      "text": "いるようなものかもしれないと言いました",
+      "start_seconds": 747.36,
+      "end_seconds": 751.279
+    },
+    {
+      "text": "。",
+      "start_seconds": 749.48,
+      "end_seconds": 755.24
+    },
+    {
+      "text": "だとすれば、その中にある写真は単なる",
+      "start_seconds": 751.279,
+      "end_seconds": 759.56
+    },
+    {
+      "text": "画像ではなく、私たちが何を見て、何を",
+      "start_seconds": 755.24,
+      "end_seconds": 762.36
+    },
+    {
+      "text": "感じたのかという断片と言えないでしょう",
+      "start_seconds": 759.56,
+      "end_seconds": 764.6389999999999
+    },
+    {
+      "text": "か。",
+      "start_seconds": 762.36,
+      "end_seconds": 768.8000000000001
+    },
+    {
+      "text": "そこに追加の一言があると、その断片は後",
+      "start_seconds": 764.639,
+      "end_seconds": 773.24
+    },
+    {
+      "text": "からたどり直せる手がかりになります。",
+      "start_seconds": 768.8,
+      "end_seconds": 777.399
+    },
+    {
+      "text": "何かを残す時にはほんの少しだけ文脈を",
+      "start_seconds": 773.24,
+      "end_seconds": 781.12
+    },
+    {
+      "text": "添えてみて欲しいのです。",
+      "start_seconds": 777.399,
+      "end_seconds": 784.92
+    },
+    {
+      "text": "例えば1日の終わりにその日撮った写真を",
+      "start_seconds": 781.12,
+      "end_seconds": 789.76
+    },
+    {
+      "text": "1枚選ぶ。写真アプリの説明欄やの投稿で",
+      "start_seconds": 784.92,
+      "end_seconds": 794.12
+    },
+    {
+      "text": "も構いません。写真に対して3つ問いかけ",
+      "start_seconds": 789.76,
+      "end_seconds": 796.4399999999999
+    },
+    {
+      "text": "てください。",
+      "start_seconds": 794.12,
+      "end_seconds": 801.36
+    },
+    {
+      "text": "1つ、これは何を取ったのか。",
+      "start_seconds": 796.44,
+      "end_seconds": 806.8800000000001
+    },
+    {
+      "text": "2つ、なぜこれを残したいと思ったのか。",
+      "start_seconds": 801.36,
+      "end_seconds": 812.48
+    },
+    {
+      "text": "3つ写真からは分からないことは何か?",
+      "start_seconds": 806.88,
+      "end_seconds": 815.76
+    },
+    {
+      "text": "朝の駅前を撮った写真ならば毎朝通って",
+      "start_seconds": 812.48,
+      "end_seconds": 819.76
+    },
+    {
+      "text": "いる駅前。今日は天気が良くて駅前の空気",
+      "start_seconds": 815.76,
+      "end_seconds": 822.12
+    },
+    {
+      "text": "が違って見えた。",
+      "start_seconds": 819.76,
+      "end_seconds": 825.199
+    },
+    {
+      "text": "この角には小さな本屋があった。今は",
+      "start_seconds": 822.12,
+      "end_seconds": 827.72
+    },
+    {
+      "text": "さらちになっている。",
+      "start_seconds": 825.199,
+      "end_seconds": 831.279
+    },
+    {
+      "text": "そんな一言があるだけでその写真は数十年",
+      "start_seconds": 827.72,
+      "end_seconds": 835.32
+    },
+    {
+      "text": "後そこに何があり、何が変わったのかを",
+      "start_seconds": 831.279,
+      "end_seconds": 838.72
+    },
+    {
+      "text": "読み取る手がかりになります。",
+      "start_seconds": 835.32,
+      "end_seconds": 841.519
+    },
+    {
+      "text": "大事なのは綺麗な文章を書くことではあり",
+      "start_seconds": 838.72,
+      "end_seconds": 847.8000000000001
+    },
+    {
+      "text": "ません。ほんの一言で十分です。",
+      "start_seconds": 841.519,
+      "end_seconds": 852.759
+    },
+    {
+      "text": "最初に私はこう問いかけました。",
+      "start_seconds": 847.8,
+      "end_seconds": 858.04
+    },
+    {
+      "text": "過去はどう未来へ届くのか。",
+      "start_seconds": 852.759,
+      "end_seconds": 861.1990000000001
+    },
+    {
+      "text": "過去は自然に未来へ届くわけではありませ",
+      "start_seconds": 858.04,
+      "end_seconds": 867.199
+    },
+    {
+      "text": "ん。誰かが残し文脈を添え、また誰かが",
+      "start_seconds": 861.199,
+      "end_seconds": 870.56
+    },
+    {
+      "text": "受け取ることで次の時代へ手渡されていく",
+      "start_seconds": 867.199,
+      "end_seconds": 872.4799999999999
+    },
+    {
+      "text": "。",
+      "start_seconds": 870.56,
+      "end_seconds": 875.399
+    },
+    {
+      "text": "それは遠い時代の文化財だけの話ではあり",
+      "start_seconds": 872.48,
+      "end_seconds": 877.279
+    },
+    {
+      "text": "ません。",
+      "start_seconds": 875.399,
+      "end_seconds": 880.0
+    },
+    {
+      "text": "今はただ日常の写真に見えるかもしれない",
+      "start_seconds": 877.279,
+      "end_seconds": 884.24
+    },
+    {
+      "text": "。でも時間が経てばその街や暮らしがどう",
+      "start_seconds": 880.0,
+      "end_seconds": 887.72
+    },
+    {
+      "text": "変わったのかを伝える記録になる。",
+      "start_seconds": 884.24,
+      "end_seconds": 891.44
+    },
+    {
+      "text": "だからこそ何気なく取った1枚にも意味を",
+      "start_seconds": 887.72,
+      "end_seconds": 895.6800000000001
+    },
+    {
+      "text": "残しておくことが大切なのです。",
+      "start_seconds": 891.44,
+      "end_seconds": 900.12
+    },
+    {
+      "text": "一言添えられた写真は何十年が経った後、",
+      "start_seconds": 895.68,
+      "end_seconds": 902.92
+    },
+    {
+      "text": "過去の自分に出会うための手がかりとなる",
+      "start_seconds": 900.12,
+      "end_seconds": 908.519
+    },
+    {
+      "text": "。この頃自分は何を見ていたのか何を綺麗",
+      "start_seconds": 902.92,
+      "end_seconds": 912.92
+    },
+    {
+      "text": "だと思ったのか何を残したいと思ったのか",
+      "start_seconds": 908.519,
+      "end_seconds": 915.759
+    },
+    {
+      "text": "その記録にたどり着くのは未来の自分かも",
+      "start_seconds": 912.92,
+      "end_seconds": 918.12
+    },
+    {
+      "text": "しれない。",
+      "start_seconds": 915.759,
+      "end_seconds": 923.0790000000001
+    },
+    {
+      "text": "あるいは進化したAIかもしれません。",
+      "start_seconds": 918.12,
+      "end_seconds": 927.839
+    },
+    {
+      "text": "私たちは過去を受け取り今を残す。その",
+      "start_seconds": 923.079,
+      "end_seconds": 932.68
+    },
+    {
+      "text": "積み重ねが未来の私と文化を作ります。",
+      "start_seconds": 927.839,
+      "end_seconds": 937.6800000000001
+    },
+    {
+      "text": "今夜寝る前に写真を1枚だけ選んで一言",
+      "start_seconds": 932.68,
+      "end_seconds": 944.5999999999999
+    },
+    {
+      "text": "添えてみる。その一言が未来へ届きます。",
+      "start_seconds": 937.68,
+      "end_seconds": 948.4799999999999
+    },
+    {
+      "text": "ありがとうございました。",
+      "start_seconds": 944.6,
+      "end_seconds": 948.48
+    }
+  ],
+  "display_captions": [
+    {
+      "text": "[拍手]",
+      "start_seconds": 6.55,
+      "end_seconds": 8.57,
+      "id": "vtX_N7K4iLM-display-0001",
+      "segment_id": "vtX_N7K4iLM-ja-0001"
+    },
+    {
+      "text": "財布を忘れるよりスマホを忘れた方が焦る",
+      "start_seconds": 10.28,
+      "end_seconds": 13.719,
+      "id": "vtX_N7K4iLM-display-0002",
+      "segment_id": "vtX_N7K4iLM-ja-0002"
+    },
+    {
+      "text": "。最近はそんな人の方が多いんではない",
+      "start_seconds": 13.719,
+      "end_seconds": 18.359,
+      "id": "vtX_N7K4iLM-display-0003",
+      "segment_id": "vtX_N7K4iLM-ja-0002"
+    },
+    {
+      "text": "でしょうか。",
+      "start_seconds": 18.359,
+      "end_seconds": 20.439,
+      "id": "vtX_N7K4iLM-display-0004",
+      "segment_id": "vtX_N7K4iLM-ja-0002"
+    },
+    {
+      "text": "予定も地図も連絡先も写真も全部そこに",
+      "start_seconds": 20.439,
+      "end_seconds": 26.599,
+      "id": "vtX_N7K4iLM-display-0005",
+      "segment_id": "vtX_N7K4iLM-ja-0003"
+    },
+    {
+      "text": "入っている。",
+      "start_seconds": 26.599,
+      "end_seconds": 28.679,
+      "id": "vtX_N7K4iLM-display-0006",
+      "segment_id": "vtX_N7K4iLM-ja-0003"
+    },
+    {
+      "text": "もはや単なる具という記憶や記録の一部を機械に預けているようなものかもしれません。私たちはその面を通したくさんの情報を見ています。字や画像、映像も検索すれば手に入るとても",
+      "start_seconds": 28.679,
+      "end_seconds": 31.679,
+      "id": "vtX_N7K4iLM-display-0007",
+      "segment_id": "vtX_N7K4iLM-ja-0004"
+    },
+    {
+      "text": "便利な時代になりました。",
+      "start_seconds": 54.0,
+      "end_seconds": 57.0,
+      "id": "vtX_N7K4iLM-display-0008",
+      "segment_id": "vtX_N7K4iLM-ja-0005"
+    },
+    {
+      "text": "一方、こう思うようにもなりました。",
+      "start_seconds": 58.239,
+      "end_seconds": 62.559,
+      "id": "vtX_N7K4iLM-display-0009",
+      "segment_id": "vtX_N7K4iLM-ja-0006"
+    },
+    {
+      "text": "表示された画面の情報はどんな道のりを経",
+      "start_seconds": 62.559,
+      "end_seconds": 66.52,
+      "id": "vtX_N7K4iLM-display-0010",
+      "segment_id": "vtX_N7K4iLM-ja-0007"
+    },
+    {
+      "text": "てここに現れているのだろうか。",
+      "start_seconds": 66.52,
+      "end_seconds": 70.64,
+      "id": "vtX_N7K4iLM-display-0011",
+      "segment_id": "vtX_N7K4iLM-ja-0007"
+    },
+    {
+      "text": "私たちはそこから何を受け取っているの",
+      "start_seconds": 70.64,
+      "end_seconds": 74.32,
+      "id": "vtX_N7K4iLM-display-0012",
+      "segment_id": "vtX_N7K4iLM-ja-0008"
+    },
+    {
+      "text": "だろうか。",
+      "start_seconds": 74.32,
+      "end_seconds": 76.96,
+      "id": "vtX_N7K4iLM-display-0013",
+      "segment_id": "vtX_N7K4iLM-ja-0008"
+    },
+    {
+      "text": "今日の問はここにあります。過去はどう",
+      "start_seconds": 76.96,
+      "end_seconds": 81.88,
+      "id": "vtX_N7K4iLM-display-0014",
+      "segment_id": "vtX_N7K4iLM-ja-0009"
+    },
+    {
+      "text": "未来へ届くのか。",
+      "start_seconds": 81.88,
+      "end_seconds": 85.119,
+      "id": "vtX_N7K4iLM-display-0015",
+      "segment_id": "vtX_N7K4iLM-ja-0009"
+    },
+    {
+      "text": "まずは1枚の紙のチケットから考えてみ",
+      "start_seconds": 85.119,
+      "end_seconds": 88.68,
+      "id": "vtX_N7K4iLM-display-0016",
+      "segment_id": "vtX_N7K4iLM-ja-0010"
+    },
+    {
+      "text": "たいと思います。",
+      "start_seconds": 88.68,
+      "end_seconds": 92.36000000000001,
+      "id": "vtX_N7K4iLM-display-0017",
+      "segment_id": "vtX_N7K4iLM-ja-0010"
+    },
+    {
+      "text": "これは旅先で立ち寄った施設の入場券です",
+      "start_seconds": 93.88,
+      "end_seconds": 97.84,
+      "id": "vtX_N7K4iLM-display-0018",
+      "segment_id": "vtX_N7K4iLM-ja-0011"
+    },
+    {
+      "text": "。皆さんもコンサートやミュージアムの",
+      "start_seconds": 97.84,
+      "end_seconds": 102.159,
+      "id": "vtX_N7K4iLM-display-0019",
+      "segment_id": "vtX_N7K4iLM-ja-0011"
+    },
+    {
+      "text": "チケットなどなんとなく捨てられずに残し",
+      "start_seconds": 102.159,
+      "end_seconds": 105.6,
+      "id": "vtX_N7K4iLM-display-0020",
+      "segment_id": "vtX_N7K4iLM-ja-0011"
+    },
+    {
+      "text": "ていないでしょうか?",
+      "start_seconds": 105.6,
+      "end_seconds": 108.32,
+      "id": "vtX_N7K4iLM-display-0021",
+      "segment_id": "vtX_N7K4iLM-ja-0012"
+    },
+    {
+      "text": "鞄の片隅で折れていたり、机の引き出しに",
+      "start_seconds": 108.32,
+      "end_seconds": 111.56,
+      "id": "vtX_N7K4iLM-display-0022",
+      "segment_id": "vtX_N7K4iLM-ja-0013"
+    },
+    {
+      "text": "入れたままだったり気づいたら何年も残っ",
+      "start_seconds": 111.56,
+      "end_seconds": 114.68,
+      "id": "vtX_N7K4iLM-display-0023",
+      "segment_id": "vtX_N7K4iLM-ja-0013"
+    },
+    {
+      "text": "ている。",
+      "start_seconds": 114.68,
+      "end_seconds": 117.159,
+      "id": "vtX_N7K4iLM-display-0024",
+      "segment_id": "vtX_N7K4iLM-ja-0013"
+    },
+    {
+      "text": "このようなものが突然出てくると、その日",
+      "start_seconds": 117.159,
+      "end_seconds": 120.799,
+      "id": "vtX_N7K4iLM-display-0025",
+      "segment_id": "vtX_N7K4iLM-ja-0014"
+    },
+    {
+      "text": "そこへ行ったことや見たもの、感じたこと",
+      "start_seconds": 120.799,
+      "end_seconds": 123.6,
+      "id": "vtX_N7K4iLM-display-0026",
+      "segment_id": "vtX_N7K4iLM-ja-0014"
+    },
+    {
+      "text": "が鮮明に蘇えるといった経験をしたことは",
+      "start_seconds": 123.6,
+      "end_seconds": 126.92,
+      "id": "vtX_N7K4iLM-display-0027",
+      "segment_id": "vtX_N7K4iLM-ja-0014"
+    },
+    {
+      "text": "ないでしょうか?",
+      "start_seconds": 126.92,
+      "end_seconds": 129.36,
+      "id": "vtX_N7K4iLM-display-0028",
+      "segment_id": "vtX_N7K4iLM-ja-0015"
+    },
+    {
+      "text": "一緒に行った友人との会話、立ち寄った",
+      "start_seconds": 129.36,
+      "end_seconds": 132.44,
+      "id": "vtX_N7K4iLM-display-0029",
+      "segment_id": "vtX_N7K4iLM-ja-0016"
+    },
+    {
+      "text": "カフェ、その場所の空気や匂いまでもが",
+      "start_seconds": 132.44,
+      "end_seconds": 135.599,
+      "id": "vtX_N7K4iLM-display-0030",
+      "segment_id": "vtX_N7K4iLM-ja-0016"
+    },
+    {
+      "text": "思い出される。",
+      "start_seconds": 135.599,
+      "end_seconds": 137.84,
+      "id": "vtX_N7K4iLM-display-0031",
+      "segment_id": "vtX_N7K4iLM-ja-0016"
+    },
+    {
+      "text": "そう考えるとそこに残っていたものは",
+      "start_seconds": 137.84,
+      "end_seconds": 141.319,
+      "id": "vtX_N7K4iLM-display-0032",
+      "segment_id": "vtX_N7K4iLM-ja-0017"
+    },
+    {
+      "text": "チケットに書かれた情報というよりその",
+      "start_seconds": 141.319,
+      "end_seconds": 144.84,
+      "id": "vtX_N7K4iLM-display-0033",
+      "segment_id": "vtX_N7K4iLM-ja-0017"
+    },
+    {
+      "text": "時間を自分が確かに経験したという感覚",
+      "start_seconds": 144.84,
+      "end_seconds": 149.44,
+      "id": "vtX_N7K4iLM-display-0034",
+      "segment_id": "vtX_N7K4iLM-ja-0017"
+    },
+    {
+      "text": "そのものだったのかもしれません。",
+      "start_seconds": 149.44,
+      "end_seconds": 153.8,
+      "id": "vtX_N7K4iLM-display-0035",
+      "segment_id": "vtX_N7K4iLM-ja-0018"
+    },
+    {
+      "text": "今ではスマホがチケット代わりになり、",
+      "start_seconds": 153.8,
+      "end_seconds": 157.16,
+      "id": "vtX_N7K4iLM-display-0036",
+      "segment_id": "vtX_N7K4iLM-ja-0019"
+    },
+    {
+      "text": "予約が残ります。いつどこへ行ったという",
+      "start_seconds": 157.16,
+      "end_seconds": 162.44,
+      "id": "vtX_N7K4iLM-display-0037",
+      "segment_id": "vtX_N7K4iLM-ja-0019"
+    },
+    {
+      "text": "情報だけならばデジタルデータの方が正確",
+      "start_seconds": 162.44,
+      "end_seconds": 165.76,
+      "id": "vtX_N7K4iLM-display-0038",
+      "segment_id": "vtX_N7K4iLM-ja-0019"
+    },
+    {
+      "text": "に残るでしょう。",
+      "start_seconds": 165.76,
+      "end_seconds": 168.239,
+      "id": "vtX_N7K4iLM-display-0039",
+      "segment_id": "vtX_N7K4iLM-ja-0020"
+    },
+    {
+      "text": "一方、紙のチケットを写真に撮って残す",
+      "start_seconds": 168.239,
+      "end_seconds": 171.48,
+      "id": "vtX_N7K4iLM-display-0040",
+      "segment_id": "vtX_N7K4iLM-ja-0021"
+    },
+    {
+      "text": "こともできます。これも同じチケットの",
+      "start_seconds": 171.48,
+      "end_seconds": 175.2,
+      "id": "vtX_N7K4iLM-display-0041",
+      "segment_id": "vtX_N7K4iLM-ja-0021"
+    },
+    {
+      "text": "情報を別の形で残しているということです",
+      "start_seconds": 175.2,
+      "end_seconds": 178.36,
+      "id": "vtX_N7K4iLM-display-0042",
+      "segment_id": "vtX_N7K4iLM-ja-0021"
+    },
+    {
+      "text": "。",
+      "start_seconds": 178.36,
+      "end_seconds": 179.879,
+      "id": "vtX_N7K4iLM-display-0043",
+      "segment_id": "vtX_N7K4iLM-ja-0021"
+    },
+    {
+      "text": "ただ実物にせよ、データにせよ、私たちが",
+      "start_seconds": 179.879,
+      "end_seconds": 184.68,
+      "id": "vtX_N7K4iLM-display-0044",
+      "segment_id": "vtX_N7K4iLM-ja-0022"
+    },
+    {
+      "text": "普段目にしているのは表面にすぎません。",
+      "start_seconds": 184.68,
+      "end_seconds": 189.68,
+      "id": "vtX_N7K4iLM-display-0045",
+      "segment_id": "vtX_N7K4iLM-ja-0022"
+    },
+    {
+      "text": "そのどちらにも共通するのは表面の奥に",
+      "start_seconds": 189.68,
+      "end_seconds": 194.28,
+      "id": "vtX_N7K4iLM-display-0046",
+      "segment_id": "vtX_N7K4iLM-ja-0023"
+    },
+    {
+      "text": "見えない厚みが広がっているということ",
+      "start_seconds": 194.28,
+      "end_seconds": 196.92,
+      "id": "vtX_N7K4iLM-display-0047",
+      "segment_id": "vtX_N7K4iLM-ja-0023"
+    },
+    {
+      "text": "です。",
+      "start_seconds": 196.92,
+      "end_seconds": 198.2,
+      "id": "vtX_N7K4iLM-display-0048",
+      "segment_id": "vtX_N7K4iLM-ja-0023"
+    },
+    {
+      "text": "この厚みとは一体何なのか?これをうるし",
+      "start_seconds": 198.2,
+      "end_seconds": 203.239,
+      "id": "vtX_N7K4iLM-display-0049",
+      "segment_id": "vtX_N7K4iLM-ja-0024"
+    },
+    {
+      "text": "の器を礼に考えてみます。",
+      "start_seconds": 203.239,
+      "end_seconds": 207.2,
+      "id": "vtX_N7K4iLM-display-0050",
+      "segment_id": "vtX_N7K4iLM-ja-0024"
+    },
+    {
+      "text": "百貨点やお土産屋さんで見かけるうしの器",
+      "start_seconds": 207.2,
+      "end_seconds": 210.72,
+      "id": "vtX_N7K4iLM-display-0051",
+      "segment_id": "vtX_N7K4iLM-ja-0025"
+    },
+    {
+      "text": "を思い浮かべてください。",
+      "start_seconds": 210.72,
+      "end_seconds": 215.0,
+      "id": "vtX_N7K4iLM-display-0052",
+      "segment_id": "vtX_N7K4iLM-ja-0025"
+    },
+    {
+      "text": "これを見た時まず目に入るのはその色や形",
+      "start_seconds": 215.72,
+      "end_seconds": 221.04,
+      "id": "vtX_N7K4iLM-display-0053",
+      "segment_id": "vtX_N7K4iLM-ja-0026"
+    },
+    {
+      "text": "の美しさではないでしょうか。",
+      "start_seconds": 221.04,
+      "end_seconds": 224.68,
+      "id": "vtX_N7K4iLM-display-0054",
+      "segment_id": "vtX_N7K4iLM-ja-0026"
+    },
+    {
+      "text": "深い色合い、滑らかな手触り、1つの器と",
+      "start_seconds": 224.68,
+      "end_seconds": 229.159,
+      "id": "vtX_N7K4iLM-display-0055",
+      "segment_id": "vtX_N7K4iLM-ja-0027"
+    },
+    {
+      "text": "して完成されたものに見えます。",
+      "start_seconds": 229.159,
+      "end_seconds": 233.079,
+      "id": "vtX_N7K4iLM-display-0056",
+      "segment_id": "vtX_N7K4iLM-ja-0027"
+    },
+    {
+      "text": "でもその器はある日突然そこに現れたわけ",
+      "start_seconds": 233.079,
+      "end_seconds": 237.68,
+      "id": "vtX_N7K4iLM-display-0057",
+      "segment_id": "vtX_N7K4iLM-ja-0028"
+    },
+    {
+      "text": "ではありません。",
+      "start_seconds": 237.68,
+      "end_seconds": 240.72,
+      "id": "vtX_N7K4iLM-display-0058",
+      "segment_id": "vtX_N7K4iLM-ja-0028"
+    },
+    {
+      "text": "器の元となる木を選び、形を作る人がいる",
+      "start_seconds": 240.72,
+      "end_seconds": 244.28,
+      "id": "vtX_N7K4iLM-display-0059",
+      "segment_id": "vtX_N7K4iLM-ja-0029"
+    },
+    {
+      "text": "。",
+      "start_seconds": 244.28,
+      "end_seconds": 245.92,
+      "id": "vtX_N7K4iLM-display-0060",
+      "segment_id": "vtX_N7K4iLM-ja-0029"
+    },
+    {
+      "text": "木の樹液からうしを取る職人がいる。",
+      "start_seconds": 245.92,
+      "end_seconds": 250.319,
+      "id": "vtX_N7K4iLM-display-0061",
+      "segment_id": "vtX_N7K4iLM-ja-0030"
+    },
+    {
+      "text": "1人前の売る職人になるためには10年",
+      "start_seconds": 250.319,
+      "end_seconds": 253.12,
+      "id": "vtX_N7K4iLM-display-0062",
+      "segment_id": "vtX_N7K4iLM-ja-0031"
+    },
+    {
+      "text": "以上の修行が必要だとも言われており、今",
+      "start_seconds": 253.12,
+      "end_seconds": 255.92,
+      "id": "vtX_N7K4iLM-display-0063",
+      "segment_id": "vtX_N7K4iLM-ja-0031"
+    },
+    {
+      "text": "では担いても少なく国産うしの技術をどう",
+      "start_seconds": 255.92,
+      "end_seconds": 260.32,
+      "id": "vtX_N7K4iLM-display-0064",
+      "segment_id": "vtX_N7K4iLM-ja-0031"
+    },
+    {
+      "text": "受け継いでいくか大きな課題になってい",
+      "start_seconds": 260.32,
+      "end_seconds": 262.919,
+      "id": "vtX_N7K4iLM-display-0065",
+      "segment_id": "vtX_N7K4iLM-ja-0032"
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 262.919,
+      "end_seconds": 265.68,
+      "id": "vtX_N7K4iLM-display-0066",
+      "segment_id": "vtX_N7K4iLM-ja-0032"
+    },
+    {
+      "text": "そのうしを塗り乾かし重ね、磨きながら",
+      "start_seconds": 265.68,
+      "end_seconds": 270.68,
+      "id": "vtX_N7K4iLM-display-0067",
+      "segment_id": "vtX_N7K4iLM-ja-0033"
+    },
+    {
+      "text": "少しずつ仕上げていく。そして出来上がっ",
+      "start_seconds": 270.68,
+      "end_seconds": 274.84,
+      "id": "vtX_N7K4iLM-display-0068",
+      "segment_id": "vtX_N7K4iLM-ja-0033"
+    },
+    {
+      "text": "たものを運び店頭へ届ける人もいる。",
+      "start_seconds": 274.84,
+      "end_seconds": 279.68,
+      "id": "vtX_N7K4iLM-display-0069",
+      "segment_id": "vtX_N7K4iLM-ja-0034"
+    },
+    {
+      "text": "ここで大事なのはうしの器の価値は表面の",
+      "start_seconds": 279.68,
+      "end_seconds": 283.479,
+      "id": "vtX_N7K4iLM-display-0070",
+      "segment_id": "vtX_N7K4iLM-ja-0035"
+    },
+    {
+      "text": "美しさだけでは語れないということです。",
+      "start_seconds": 283.479,
+      "end_seconds": 287.639,
+      "id": "vtX_N7K4iLM-display-0071",
+      "segment_id": "vtX_N7K4iLM-ja-0035"
+    },
+    {
+      "text": "そこには素材を選び手間をかけてきた営波",
+      "start_seconds": 287.639,
+      "end_seconds": 291.44,
+      "id": "vtX_N7K4iLM-display-0072",
+      "segment_id": "vtX_N7K4iLM-ja-0036"
+    },
+    {
+      "text": "がある。たくさんの人の仕事と伝統技術と",
+      "start_seconds": 291.44,
+      "end_seconds": 296.28,
+      "id": "vtX_N7K4iLM-display-0073",
+      "segment_id": "vtX_N7K4iLM-ja-0036"
+    },
+    {
+      "text": "いう長い年月が重なっている。",
+      "start_seconds": 296.28,
+      "end_seconds": 301.24,
+      "id": "vtX_N7K4iLM-display-0074",
+      "segment_id": "vtX_N7K4iLM-ja-0037"
+    },
+    {
+      "text": "そうして並んだ器は1つの作品として目に",
+      "start_seconds": 301.24,
+      "end_seconds": 305.039,
+      "id": "vtX_N7K4iLM-display-0075",
+      "segment_id": "vtX_N7K4iLM-ja-0038"
+    },
+    {
+      "text": "入ります。",
+      "start_seconds": 305.039,
+      "end_seconds": 307.56,
+      "id": "vtX_N7K4iLM-display-0076",
+      "segment_id": "vtX_N7K4iLM-ja-0038"
+    },
+    {
+      "text": "つまり私たちが見ているのは単なるもので",
+      "start_seconds": 307.56,
+      "end_seconds": 312.039,
+      "id": "vtX_N7K4iLM-display-0077",
+      "segment_id": "vtX_N7K4iLM-ja-0039"
+    },
+    {
+      "text": "はなくて人の手を経てきた歴史そのもので",
+      "start_seconds": 312.039,
+      "end_seconds": 315.199,
+      "id": "vtX_N7K4iLM-display-0078",
+      "segment_id": "vtX_N7K4iLM-ja-0039"
+    },
+    {
+      "text": "ある。日本の文化や芸術の歴史は魅力は",
+      "start_seconds": 315.199,
+      "end_seconds": 319.919,
+      "id": "vtX_N7K4iLM-display-0079",
+      "segment_id": "vtX_N7K4iLM-ja-0040"
+    },
+    {
+      "text": "こうした見えにくい厚みの中にあると言え",
+      "start_seconds": 319.919,
+      "end_seconds": 323.44,
+      "id": "vtX_N7K4iLM-display-0080",
+      "segment_id": "vtX_N7K4iLM-ja-0040"
+    },
+    {
+      "text": "ないでしょうか。",
+      "start_seconds": 323.44,
+      "end_seconds": 326.96,
+      "id": "vtX_N7K4iLM-display-0081",
+      "segment_id": "vtX_N7K4iLM-ja-0040"
+    },
+    {
+      "text": "では、こうした作品の存在を私たちはどう",
+      "start_seconds": 326.96,
+      "end_seconds": 331.28,
+      "id": "vtX_N7K4iLM-display-0082",
+      "segment_id": "vtX_N7K4iLM-ja-0041"
+    },
+    {
+      "text": "やって知るのでしょうか?",
+      "start_seconds": 331.28,
+      "end_seconds": 334.52,
+      "id": "vtX_N7K4iLM-display-0083",
+      "segment_id": "vtX_N7K4iLM-ja-0041"
+    },
+    {
+      "text": "美術館や百貨点で実物を見ることもあれば",
+      "start_seconds": 334.52,
+      "end_seconds": 337.759,
+      "id": "vtX_N7K4iLM-display-0084",
+      "segment_id": "vtX_N7K4iLM-ja-0042"
+    },
+    {
+      "text": "、本やインターネットで写真を見ることも",
+      "start_seconds": 337.759,
+      "end_seconds": 342.08,
+      "id": "vtX_N7K4iLM-display-0085",
+      "segment_id": "vtX_N7K4iLM-ja-0042"
+    },
+    {
+      "text": "ある。ここにもう1つの道乗りがあります",
+      "start_seconds": 342.08,
+      "end_seconds": 346.0,
+      "id": "vtX_N7K4iLM-display-0086",
+      "segment_id": "vtX_N7K4iLM-ja-0042"
+    },
+    {
+      "text": "。",
+      "start_seconds": 346.0,
+      "end_seconds": 347.88,
+      "id": "vtX_N7K4iLM-display-0087",
+      "segment_id": "vtX_N7K4iLM-ja-0043"
+    },
+    {
+      "text": "実物を撮影する人、来歴や疑法を調べる人",
+      "start_seconds": 347.88,
+      "end_seconds": 352.0,
+      "id": "vtX_N7K4iLM-display-0088",
+      "segment_id": "vtX_N7K4iLM-ja-0044"
+    },
+    {
+      "text": "、",
+      "start_seconds": 352.0,
+      "end_seconds": 353.6,
+      "id": "vtX_N7K4iLM-display-0089",
+      "segment_id": "vtX_N7K4iLM-ja-0044"
+    },
+    {
+      "text": "情報を整えて公開し、維持する人がいる。",
+      "start_seconds": 353.6,
+      "end_seconds": 359.28,
+      "id": "vtX_N7K4iLM-display-0090",
+      "segment_id": "vtX_N7K4iLM-ja-0044"
+    },
+    {
+      "text": "ここに表示されているようにうしの器の",
+      "start_seconds": 359.28,
+      "end_seconds": 362.44,
+      "id": "vtX_N7K4iLM-display-0091",
+      "segment_id": "vtX_N7K4iLM-ja-0045"
+    },
+    {
+      "text": "価値は作り手だけでなくそれを記録し、",
+      "start_seconds": 362.44,
+      "end_seconds": 366.56,
+      "id": "vtX_N7K4iLM-display-0092",
+      "segment_id": "vtX_N7K4iLM-ja-0045"
+    },
+    {
+      "text": "伝える人たちにも支えられています。",
+      "start_seconds": 366.56,
+      "end_seconds": 370.8,
+      "id": "vtX_N7K4iLM-display-0093",
+      "segment_id": "vtX_N7K4iLM-ja-0045"
+    },
+    {
+      "text": "そうして作られたデータは実物とは違う形",
+      "start_seconds": 370.8,
+      "end_seconds": 374.199,
+      "id": "vtX_N7K4iLM-display-0094",
+      "segment_id": "vtX_N7K4iLM-ja-0046"
+    },
+    {
+      "text": "で作品の価値を運んでいます。",
+      "start_seconds": 374.199,
+      "end_seconds": 379.4,
+      "id": "vtX_N7K4iLM-display-0095",
+      "segment_id": "vtX_N7K4iLM-ja-0046"
+    },
+    {
+      "text": "では私たちが日々見ている画像や映像は",
+      "start_seconds": 379.4,
+      "end_seconds": 384.039,
+      "id": "vtX_N7K4iLM-display-0096",
+      "segment_id": "vtX_N7K4iLM-ja-0047"
+    },
+    {
+      "text": "どんな道のりでスマホの画面に現れている",
+      "start_seconds": 384.039,
+      "end_seconds": 387.16,
+      "id": "vtX_N7K4iLM-display-0097",
+      "segment_id": "vtX_N7K4iLM-ja-0047"
+    },
+    {
+      "text": "のでしょうか?",
+      "start_seconds": 387.16,
+      "end_seconds": 390.319,
+      "id": "vtX_N7K4iLM-display-0098",
+      "segment_id": "vtX_N7K4iLM-ja-0047"
+    },
+    {
+      "text": "インスタやXを開けば写真や動画が次々と",
+      "start_seconds": 390.319,
+      "end_seconds": 394.44,
+      "id": "vtX_N7K4iLM-display-0099",
+      "segment_id": "vtX_N7K4iLM-ja-0048"
+    },
+    {
+      "text": "流れてくる。YouTubeでは古い絵画",
+      "start_seconds": 394.44,
+      "end_seconds": 397.919,
+      "id": "vtX_N7K4iLM-display-0100",
+      "segment_id": "vtX_N7K4iLM-ja-0048"
+    },
+    {
+      "text": "や文化剤の画像が解説動画の中で使われて",
+      "start_seconds": 397.919,
+      "end_seconds": 402.039,
+      "id": "vtX_N7K4iLM-display-0101",
+      "segment_id": "vtX_N7K4iLM-ja-0048"
+    },
+    {
+      "text": "いる。とても綺麗だな。これは面白い。俺",
+      "start_seconds": 402.039,
+      "end_seconds": 406.84,
+      "id": "vtX_N7K4iLM-display-0102",
+      "segment_id": "vtX_N7K4iLM-ja-0049"
+    },
+    {
+      "text": "は知らなかったな。ま、そう思いながら無",
+      "start_seconds": 406.84,
+      "end_seconds": 410.56,
+      "id": "vtX_N7K4iLM-display-0103",
+      "segment_id": "vtX_N7K4iLM-ja-0049"
+    },
+    {
+      "text": "意識のうちに次の動画へ住んでいる。",
+      "start_seconds": 410.56,
+      "end_seconds": 416.08,
+      "id": "vtX_N7K4iLM-display-0104",
+      "segment_id": "vtX_N7K4iLM-ja-0050"
+    },
+    {
+      "text": "その時こう問いかけてみます。その画像",
+      "start_seconds": 416.08,
+      "end_seconds": 420.68,
+      "id": "vtX_N7K4iLM-display-0105",
+      "segment_id": "vtX_N7K4iLM-ja-0051"
+    },
+    {
+      "text": "どんな背景で公開されたものなんだろうか",
+      "start_seconds": 420.68,
+      "end_seconds": 423.039,
+      "id": "vtX_N7K4iLM-display-0106",
+      "segment_id": "vtX_N7K4iLM-ja-0051"
+    },
+    {
+      "text": "。",
+      "start_seconds": 423.039,
+      "end_seconds": 425.16,
+      "id": "vtX_N7K4iLM-display-0107",
+      "segment_id": "vtX_N7K4iLM-ja-0051"
+    },
+    {
+      "text": "元は作品情報と一緒に公開されていたかも",
+      "start_seconds": 425.16,
+      "end_seconds": 429.24,
+      "id": "vtX_N7K4iLM-display-0108",
+      "segment_id": "vtX_N7K4iLM-ja-0052"
+    },
+    {
+      "text": "しれません。",
+      "start_seconds": 429.24,
+      "end_seconds": 431.36,
+      "id": "vtX_N7K4iLM-display-0109",
+      "segment_id": "vtX_N7K4iLM-ja-0052"
+    },
+    {
+      "text": "画像がSNSや動画になると情報は少し",
+      "start_seconds": 431.36,
+      "end_seconds": 436.56,
+      "id": "vtX_N7K4iLM-display-0110",
+      "segment_id": "vtX_N7K4iLM-ja-0053"
+    },
+    {
+      "text": "ずつ姿を変えます。",
+      "start_seconds": 436.56,
+      "end_seconds": 439.639,
+      "id": "vtX_N7K4iLM-display-0111",
+      "segment_id": "vtX_N7K4iLM-ja-0053"
+    },
+    {
+      "text": "大きな画像がサムネイルになり、一部が",
+      "start_seconds": 439.639,
+      "end_seconds": 442.919,
+      "id": "vtX_N7K4iLM-display-0112",
+      "segment_id": "vtX_N7K4iLM-ja-0054"
+    },
+    {
+      "text": "切り取られる。長い解説は短い一言に",
+      "start_seconds": 442.919,
+      "end_seconds": 448.4,
+      "id": "vtX_N7K4iLM-display-0113",
+      "segment_id": "vtX_N7K4iLM-ja-0054"
+    },
+    {
+      "text": "置き換えられる。",
+      "start_seconds": 448.4,
+      "end_seconds": 451.319,
+      "id": "vtX_N7K4iLM-display-0114",
+      "segment_id": "vtX_N7K4iLM-ja-0054"
+    },
+    {
+      "text": "変わること自体が悪いわけではありません",
+      "start_seconds": 451.319,
+      "end_seconds": 453.24,
+      "id": "vtX_N7K4iLM-display-0115",
+      "segment_id": "vtX_N7K4iLM-ja-0055"
+    },
+    {
+      "text": "。変化があるからこそスマホでも見やすく",
+      "start_seconds": 453.24,
+      "end_seconds": 456.8,
+      "id": "vtX_N7K4iLM-display-0116",
+      "segment_id": "vtX_N7K4iLM-ja-0055"
+    },
+    {
+      "text": "なる。短い動画をきっかけに初めてその",
+      "start_seconds": 456.8,
+      "end_seconds": 460.56,
+      "id": "vtX_N7K4iLM-display-0117",
+      "segment_id": "vtX_N7K4iLM-ja-0055"
+    },
+    {
+      "text": "文化に触れることもある。",
+      "start_seconds": 460.56,
+      "end_seconds": 463.72,
+      "id": "vtX_N7K4iLM-display-0118",
+      "segment_id": "vtX_N7K4iLM-ja-0056"
+    },
+    {
+      "text": "しかしその過程で見えなくなる、見え",
+      "start_seconds": 463.72,
+      "end_seconds": 466.68,
+      "id": "vtX_N7K4iLM-display-0119",
+      "segment_id": "vtX_N7K4iLM-ja-0057"
+    },
+    {
+      "text": "にくくなるものがあります。",
+      "start_seconds": 466.68,
+      "end_seconds": 471.159,
+      "id": "vtX_N7K4iLM-display-0120",
+      "segment_id": "vtX_N7K4iLM-ja-0057"
+    },
+    {
+      "text": "元々添えられていた説明や作者名、作品名",
+      "start_seconds": 471.199,
+      "end_seconds": 475.0,
+      "id": "vtX_N7K4iLM-display-0121",
+      "segment_id": "vtX_N7K4iLM-ja-0058"
+    },
+    {
+      "text": "、撮影者や公開元といった情報です。",
+      "start_seconds": 475.0,
+      "end_seconds": 481.479,
+      "id": "vtX_N7K4iLM-display-0122",
+      "segment_id": "vtX_N7K4iLM-ja-0058"
+    },
+    {
+      "text": "それらが抜け落ちると情報の意味は不安定",
+      "start_seconds": 481.479,
+      "end_seconds": 484.44,
+      "id": "vtX_N7K4iLM-display-0123",
+      "segment_id": "vtX_N7K4iLM-ja-0059"
+    },
+    {
+      "text": "になり時には元の文脈とは全く違う意味で",
+      "start_seconds": 484.44,
+      "end_seconds": 489.159,
+      "id": "vtX_N7K4iLM-display-0124",
+      "segment_id": "vtX_N7K4iLM-ja-0059"
+    },
+    {
+      "text": "受け取られることもあります。",
+      "start_seconds": 489.159,
+      "end_seconds": 492.4,
+      "id": "vtX_N7K4iLM-display-0125",
+      "segment_id": "vtX_N7K4iLM-ja-0059"
+    },
+    {
+      "text": "画像の出所を明示することはその情報を",
+      "start_seconds": 492.4,
+      "end_seconds": 496.039,
+      "id": "vtX_N7K4iLM-display-0126",
+      "segment_id": "vtX_N7K4iLM-ja-0060"
+    },
+    {
+      "text": "信頼して受け取るための手がかりであり",
+      "start_seconds": 496.039,
+      "end_seconds": 499.12,
+      "id": "vtX_N7K4iLM-display-0127",
+      "segment_id": "vtX_N7K4iLM-ja-0060"
+    },
+    {
+      "text": "関わった人たちへの経緯でもあります。",
+      "start_seconds": 499.12,
+      "end_seconds": 504.44,
+      "id": "vtX_N7K4iLM-display-0128",
+      "segment_id": "vtX_N7K4iLM-ja-0061"
+    },
+    {
+      "text": "今ではAIによってリアルな画像や映像が",
+      "start_seconds": 504.44,
+      "end_seconds": 508.36,
+      "id": "vtX_N7K4iLM-display-0129",
+      "segment_id": "vtX_N7K4iLM-ja-0062"
+    },
+    {
+      "text": "作られる時代です。この画像は先ほどの",
+      "start_seconds": 508.36,
+      "end_seconds": 512.399,
+      "id": "vtX_N7K4iLM-display-0130",
+      "segment_id": "vtX_N7K4iLM-ja-0062"
+    },
+    {
+      "text": "写真をもにAIで生成したものです。",
+      "start_seconds": 512.399,
+      "end_seconds": 516.839,
+      "id": "vtX_N7K4iLM-display-0131",
+      "segment_id": "vtX_N7K4iLM-ja-0063"
+    },
+    {
+      "text": "情報がなければ本物との見分は難しい。だ",
+      "start_seconds": 516.839,
+      "end_seconds": 521.519,
+      "id": "vtX_N7K4iLM-display-0132",
+      "segment_id": "vtX_N7K4iLM-ja-0064"
+    },
+    {
+      "text": "からこそ情報の出所や文脈は意識すること",
+      "start_seconds": 521.519,
+      "end_seconds": 525.72,
+      "id": "vtX_N7K4iLM-display-0133",
+      "segment_id": "vtX_N7K4iLM-ja-0064"
+    },
+    {
+      "text": "はこれまで以上に重要になっています。",
+      "start_seconds": 525.72,
+      "end_seconds": 530.519,
+      "id": "vtX_N7K4iLM-display-0134",
+      "segment_id": "vtX_N7K4iLM-ja-0065"
+    },
+    {
+      "text": "では情報を残すということにはどんな厚み",
+      "start_seconds": 530.519,
+      "end_seconds": 535.32,
+      "id": "vtX_N7K4iLM-display-0135",
+      "segment_id": "vtX_N7K4iLM-ja-0066"
+    },
+    {
+      "text": "があるのでしょうか?",
+      "start_seconds": 535.32,
+      "end_seconds": 539.12,
+      "id": "vtX_N7K4iLM-display-0136",
+      "segment_id": "vtX_N7K4iLM-ja-0066"
+    },
+    {
+      "text": "古いうしの器であれば文化剤として見",
+      "start_seconds": 539.12,
+      "end_seconds": 543.0,
+      "id": "vtX_N7K4iLM-display-0137",
+      "segment_id": "vtX_N7K4iLM-ja-0067"
+    },
+    {
+      "text": "られる状態を保ち続ける必要があります。",
+      "start_seconds": 543.0,
+      "end_seconds": 546.16,
+      "id": "vtX_N7K4iLM-display-0138",
+      "segment_id": "vtX_N7K4iLM-ja-0067"
+    },
+    {
+      "text": "音質度を整え痛まないように扱い誰かから",
+      "start_seconds": 546.16,
+      "end_seconds": 550.2,
+      "id": "vtX_N7K4iLM-display-0139",
+      "segment_id": "vtX_N7K4iLM-ja-0068"
+    },
+    {
+      "text": "誰かへ受け継ぐ。そうした積み重ねが何代",
+      "start_seconds": 550.2,
+      "end_seconds": 555.0,
+      "id": "vtX_N7K4iLM-display-0140",
+      "segment_id": "vtX_N7K4iLM-ja-0068"
+    },
+    {
+      "text": "にもわたって続いてきたことで今も残って",
+      "start_seconds": 555.0,
+      "end_seconds": 557.8,
+      "id": "vtX_N7K4iLM-display-0141",
+      "segment_id": "vtX_N7K4iLM-ja-0068"
+    },
+    {
+      "text": "いる。",
+      "start_seconds": 557.8,
+      "end_seconds": 559.6,
+      "id": "vtX_N7K4iLM-display-0142",
+      "segment_id": "vtX_N7K4iLM-ja-0069"
+    },
+    {
+      "text": "そこにはただ保管するだけではない信頼",
+      "start_seconds": 559.6,
+      "end_seconds": 563.839,
+      "id": "vtX_N7K4iLM-display-0143",
+      "segment_id": "vtX_N7K4iLM-ja-0070"
+    },
+    {
+      "text": "できるものとして残し続ける重さがあり",
+      "start_seconds": 563.839,
+      "end_seconds": 566.839,
+      "id": "vtX_N7K4iLM-display-0144",
+      "segment_id": "vtX_N7K4iLM-ja-0070"
+    },
+    {
+      "text": "ます。そしてこれは実物だけではなく",
+      "start_seconds": 566.839,
+      "end_seconds": 572.24,
+      "id": "vtX_N7K4iLM-display-0145",
+      "segment_id": "vtX_N7K4iLM-ja-0071"
+    },
+    {
+      "text": "デジタルデータにも当てはまります。",
+      "start_seconds": 572.24,
+      "end_seconds": 576.04,
+      "id": "vtX_N7K4iLM-display-0146",
+      "segment_id": "vtX_N7K4iLM-ja-0071"
+    },
+    {
+      "text": "例えばKO技塾図書館の42行政デジタル",
+      "start_seconds": 576.04,
+      "end_seconds": 581.079,
+      "id": "vtX_N7K4iLM-display-0147",
+      "segment_id": "vtX_N7K4iLM-ja-0072"
+    },
+    {
+      "text": "コンテンツは1997年に公開され、今も",
+      "start_seconds": 581.079,
+      "end_seconds": 586.079,
+      "id": "vtX_N7K4iLM-display-0148",
+      "segment_id": "vtX_N7K4iLM-ja-0072"
+    },
+    {
+      "text": "見ることができます。",
+      "start_seconds": 586.079,
+      "end_seconds": 588.72,
+      "id": "vtX_N7K4iLM-display-0149",
+      "segment_id": "vtX_N7K4iLM-ja-0073"
+    },
+    {
+      "text": "30年の間にウェブサイトの形も画像",
+      "start_seconds": 588.72,
+      "end_seconds": 592.72,
+      "id": "vtX_N7K4iLM-display-0150",
+      "segment_id": "vtX_N7K4iLM-ja-0074"
+    },
+    {
+      "text": "サイズも保存場所も変わってきました。",
+      "start_seconds": 592.72,
+      "end_seconds": 596.8,
+      "id": "vtX_N7K4iLM-display-0151",
+      "segment_id": "vtX_N7K4iLM-ja-0074"
+    },
+    {
+      "text": "その度に誰かがデータを映し替え、内容を",
+      "start_seconds": 596.8,
+      "end_seconds": 601.04,
+      "id": "vtX_N7K4iLM-display-0152",
+      "segment_id": "vtX_N7K4iLM-ja-0075"
+    },
+    {
+      "text": "点検し、説明やリンクを見直してきました",
+      "start_seconds": 601.04,
+      "end_seconds": 604.16,
+      "id": "vtX_N7K4iLM-display-0153",
+      "segment_id": "vtX_N7K4iLM-ja-0075"
+    },
+    {
+      "text": "。",
+      "start_seconds": 604.16,
+      "end_seconds": 605.72,
+      "id": "vtX_N7K4iLM-display-0154",
+      "segment_id": "vtX_N7K4iLM-ja-0075"
+    },
+    {
+      "text": "このコンテンツはまさに30年にわたる人",
+      "start_seconds": 605.72,
+      "end_seconds": 609.76,
+      "id": "vtX_N7K4iLM-display-0155",
+      "segment_id": "vtX_N7K4iLM-ja-0076"
+    },
+    {
+      "text": "の判断と意思、そして責任が積み重ねられ",
+      "start_seconds": 609.76,
+      "end_seconds": 613.72,
+      "id": "vtX_N7K4iLM-display-0156",
+      "segment_id": "vtX_N7K4iLM-ja-0076"
+    },
+    {
+      "text": "てきた結果なのです。",
+      "start_seconds": 613.72,
+      "end_seconds": 617.48,
+      "id": "vtX_N7K4iLM-display-0157",
+      "segment_id": "vtX_N7K4iLM-ja-0076"
+    },
+    {
+      "text": "その時間の厚みがデータに信頼という価値",
+      "start_seconds": 617.48,
+      "end_seconds": 621.24,
+      "id": "vtX_N7K4iLM-display-0158",
+      "segment_id": "vtX_N7K4iLM-ja-0077"
+    },
+    {
+      "text": "を与えます。",
+      "start_seconds": 621.24,
+      "end_seconds": 623.959,
+      "id": "vtX_N7K4iLM-display-0159",
+      "segment_id": "vtX_N7K4iLM-ja-0077"
+    },
+    {
+      "text": "私たちが何かを調べたい時に安心して",
+      "start_seconds": 623.959,
+      "end_seconds": 626.8,
+      "id": "vtX_N7K4iLM-display-0160",
+      "segment_id": "vtX_N7K4iLM-ja-0078"
+    },
+    {
+      "text": "たどれる場所がある。データはただ保存",
+      "start_seconds": 626.8,
+      "end_seconds": 630.64,
+      "id": "vtX_N7K4iLM-display-0161",
+      "segment_id": "vtX_N7K4iLM-ja-0078"
+    },
+    {
+      "text": "すれば残るわけではありません。",
+      "start_seconds": 630.64,
+      "end_seconds": 634.12,
+      "id": "vtX_N7K4iLM-display-0162",
+      "segment_id": "vtX_N7K4iLM-ja-0078"
+    },
+    {
+      "text": "文化に関わる情報や記録をデジタルで整え",
+      "start_seconds": 634.12,
+      "end_seconds": 637.88,
+      "id": "vtX_N7K4iLM-display-0163",
+      "segment_id": "vtX_N7K4iLM-ja-0079"
+    },
+    {
+      "text": "、長く残し、必要な人が使えるようにする",
+      "start_seconds": 637.88,
+      "end_seconds": 642.56,
+      "id": "vtX_N7K4iLM-display-0164",
+      "segment_id": "vtX_N7K4iLM-ja-0079"
+    },
+    {
+      "text": "。",
+      "start_seconds": 642.56,
+      "end_seconds": 644.68,
+      "id": "vtX_N7K4iLM-display-0165",
+      "segment_id": "vtX_N7K4iLM-ja-0079"
+    },
+    {
+      "text": "このようなプロセス全体をデジタル",
+      "start_seconds": 644.68,
+      "end_seconds": 647.32,
+      "id": "vtX_N7K4iLM-display-0166",
+      "segment_id": "vtX_N7K4iLM-ja-0080"
+    },
+    {
+      "text": "アーカイブと呼んでいます。",
+      "start_seconds": 647.32,
+      "end_seconds": 651.8,
+      "id": "vtX_N7K4iLM-display-0167",
+      "segment_id": "vtX_N7K4iLM-ja-0080"
+    },
+    {
+      "text": "そしてこれは専門の人たちだけの仕事では",
+      "start_seconds": 651.8,
+      "end_seconds": 655.44,
+      "id": "vtX_N7K4iLM-display-0168",
+      "segment_id": "vtX_N7K4iLM-ja-0081"
+    },
+    {
+      "text": "ありません。私たち1人1人もすでに",
+      "start_seconds": 655.44,
+      "end_seconds": 660.04,
+      "id": "vtX_N7K4iLM-display-0169",
+      "segment_id": "vtX_N7K4iLM-ja-0081"
+    },
+    {
+      "text": "プロセスの流れの中にいます。",
+      "start_seconds": 660.04,
+      "end_seconds": 664.68,
+      "id": "vtX_N7K4iLM-display-0170",
+      "segment_id": "vtX_N7K4iLM-ja-0082"
+    },
+    {
+      "text": "最初に示した1枚の紙チケットがその日の",
+      "start_seconds": 665.839,
+      "end_seconds": 670.079,
+      "id": "vtX_N7K4iLM-display-0171",
+      "segment_id": "vtX_N7K4iLM-ja-0083"
+    },
+    {
+      "text": "出来事を呼び戻す手がかりだったように",
+      "start_seconds": 670.079,
+      "end_seconds": 674.12,
+      "id": "vtX_N7K4iLM-display-0172",
+      "segment_id": "vtX_N7K4iLM-ja-0083"
+    },
+    {
+      "text": "私たちのスマホの中にもそんな写真が何千",
+      "start_seconds": 674.12,
+      "end_seconds": 678.48,
+      "id": "vtX_N7K4iLM-display-0173",
+      "segment_id": "vtX_N7K4iLM-ja-0084"
+    },
+    {
+      "text": "と眠っています。",
+      "start_seconds": 678.48,
+      "end_seconds": 682.56,
+      "id": "vtX_N7K4iLM-display-0174",
+      "segment_id": "vtX_N7K4iLM-ja-0084"
+    },
+    {
+      "text": "今日撮った写真、友人との交流、旅先の",
+      "start_seconds": 682.56,
+      "end_seconds": 687.36,
+      "id": "vtX_N7K4iLM-display-0175",
+      "segment_id": "vtX_N7K4iLM-ja-0085"
+    },
+    {
+      "text": "風景、家族との時間きっとたくさん入っ",
+      "start_seconds": 687.36,
+      "end_seconds": 691.68,
+      "id": "vtX_N7K4iLM-display-0176",
+      "segment_id": "vtX_N7K4iLM-ja-0085"
+    },
+    {
+      "text": "てるはずです。綺麗だと思ったから取る。",
+      "start_seconds": 691.68,
+      "end_seconds": 695.399,
+      "id": "vtX_N7K4iLM-display-0177",
+      "segment_id": "vtX_N7K4iLM-ja-0086"
+    },
+    {
+      "text": "誰かに見てもらえたいから投稿する。忘れ",
+      "start_seconds": 695.399,
+      "end_seconds": 699.279,
+      "id": "vtX_N7K4iLM-display-0178",
+      "segment_id": "vtX_N7K4iLM-ja-0087"
+    },
+    {
+      "text": "たくないから残しておく。特別なことはし",
+      "start_seconds": 699.279,
+      "end_seconds": 702.399,
+      "id": "vtX_N7K4iLM-display-0179",
+      "segment_id": "vtX_N7K4iLM-ja-0087"
+    },
+    {
+      "text": "ていません。でもそれは今この時代のこの",
+      "start_seconds": 702.399,
+      "end_seconds": 708.04,
+      "id": "vtX_N7K4iLM-display-0180",
+      "segment_id": "vtX_N7K4iLM-ja-0088"
+    },
+    {
+      "text": "場所で生きている私たちの暮らしを",
+      "start_seconds": 708.04,
+      "end_seconds": 710.44,
+      "id": "vtX_N7K4iLM-display-0181",
+      "segment_id": "vtX_N7K4iLM-ja-0088"
+    },
+    {
+      "text": "映し取っているということでもあります。",
+      "start_seconds": 710.44,
+      "end_seconds": 714.959,
+      "id": "vtX_N7K4iLM-display-0182",
+      "segment_id": "vtX_N7K4iLM-ja-0089"
+    },
+    {
+      "text": "朝の通勤、通学風景季節の食卓や地域のお",
+      "start_seconds": 714.959,
+      "end_seconds": 719.88,
+      "id": "vtX_N7K4iLM-display-0183",
+      "segment_id": "vtX_N7K4iLM-ja-0090"
+    },
+    {
+      "text": "祭り。そうした小さな記録の中にも未来",
+      "start_seconds": 719.88,
+      "end_seconds": 724.16,
+      "id": "vtX_N7K4iLM-display-0184",
+      "segment_id": "vtX_N7K4iLM-ja-0090"
+    },
+    {
+      "text": "から見れば文化の断片が含まれているかも",
+      "start_seconds": 724.16,
+      "end_seconds": 727.16,
+      "id": "vtX_N7K4iLM-display-0185",
+      "segment_id": "vtX_N7K4iLM-ja-0091"
+    },
+    {
+      "text": "しれません。",
+      "start_seconds": 727.16,
+      "end_seconds": 729.6,
+      "id": "vtX_N7K4iLM-display-0186",
+      "segment_id": "vtX_N7K4iLM-ja-0091"
+    },
+    {
+      "text": "ただデジタル写真は簡単に増えてきます。",
+      "start_seconds": 729.6,
+      "end_seconds": 735.6,
+      "id": "vtX_N7K4iLM-display-0187",
+      "segment_id": "vtX_N7K4iLM-ja-0092"
+    },
+    {
+      "text": "見返されることや使われることがなければ",
+      "start_seconds": 735.6,
+      "end_seconds": 739.04,
+      "id": "vtX_N7K4iLM-display-0188",
+      "segment_id": "vtX_N7K4iLM-ja-0093"
+    },
+    {
+      "text": "大量のデータに埋もれていく。",
+      "start_seconds": 739.04,
+      "end_seconds": 742.519,
+      "id": "vtX_N7K4iLM-display-0189",
+      "segment_id": "vtX_N7K4iLM-ja-0093"
+    },
+    {
+      "text": "冒頭でスマホは記憶や感覚の一部を預けて",
+      "start_seconds": 742.519,
+      "end_seconds": 747.36,
+      "id": "vtX_N7K4iLM-display-0190",
+      "segment_id": "vtX_N7K4iLM-ja-0094"
+    },
+    {
+      "text": "いるようなものかもしれないと言いました",
+      "start_seconds": 747.36,
+      "end_seconds": 749.48,
+      "id": "vtX_N7K4iLM-display-0191",
+      "segment_id": "vtX_N7K4iLM-ja-0094"
+    },
+    {
+      "text": "。",
+      "start_seconds": 749.48,
+      "end_seconds": 751.279,
+      "id": "vtX_N7K4iLM-display-0192",
+      "segment_id": "vtX_N7K4iLM-ja-0094"
+    },
+    {
+      "text": "だとすれば、その中にある写真は単なる",
+      "start_seconds": 751.279,
+      "end_seconds": 755.24,
+      "id": "vtX_N7K4iLM-display-0193",
+      "segment_id": "vtX_N7K4iLM-ja-0095"
+    },
+    {
+      "text": "画像ではなく、私たちが何を見て、何を",
+      "start_seconds": 755.24,
+      "end_seconds": 759.56,
+      "id": "vtX_N7K4iLM-display-0194",
+      "segment_id": "vtX_N7K4iLM-ja-0095"
+    },
+    {
+      "text": "感じたのかという断片と言えないでしょう",
+      "start_seconds": 759.56,
+      "end_seconds": 762.36,
+      "id": "vtX_N7K4iLM-display-0195",
+      "segment_id": "vtX_N7K4iLM-ja-0095"
+    },
+    {
+      "text": "か。",
+      "start_seconds": 762.36,
+      "end_seconds": 764.639,
+      "id": "vtX_N7K4iLM-display-0196",
+      "segment_id": "vtX_N7K4iLM-ja-0096"
+    },
+    {
+      "text": "そこに追加の一言があると、その断片は後",
+      "start_seconds": 764.639,
+      "end_seconds": 768.8,
+      "id": "vtX_N7K4iLM-display-0197",
+      "segment_id": "vtX_N7K4iLM-ja-0097"
+    },
+    {
+      "text": "からたどり直せる手がかりになります。",
+      "start_seconds": 768.8,
+      "end_seconds": 773.24,
+      "id": "vtX_N7K4iLM-display-0198",
+      "segment_id": "vtX_N7K4iLM-ja-0097"
+    },
+    {
+      "text": "何かを残す時にはほんの少しだけ文脈を",
+      "start_seconds": 773.24,
+      "end_seconds": 777.399,
+      "id": "vtX_N7K4iLM-display-0199",
+      "segment_id": "vtX_N7K4iLM-ja-0098"
+    },
+    {
+      "text": "添えてみて欲しいのです。",
+      "start_seconds": 777.399,
+      "end_seconds": 781.12,
+      "id": "vtX_N7K4iLM-display-0200",
+      "segment_id": "vtX_N7K4iLM-ja-0098"
+    },
+    {
+      "text": "例えば1日の終わりにその日撮った写真を",
+      "start_seconds": 781.12,
+      "end_seconds": 784.92,
+      "id": "vtX_N7K4iLM-display-0201",
+      "segment_id": "vtX_N7K4iLM-ja-0099"
+    },
+    {
+      "text": "1枚選ぶ。写真アプリの説明欄やの投稿で",
+      "start_seconds": 784.92,
+      "end_seconds": 789.76,
+      "id": "vtX_N7K4iLM-display-0202",
+      "segment_id": "vtX_N7K4iLM-ja-0099"
+    },
+    {
+      "text": "も構いません。写真に対して3つ問いかけ",
+      "start_seconds": 789.76,
+      "end_seconds": 794.12,
+      "id": "vtX_N7K4iLM-display-0203",
+      "segment_id": "vtX_N7K4iLM-ja-0100"
+    },
+    {
+      "text": "てください。",
+      "start_seconds": 794.12,
+      "end_seconds": 796.44,
+      "id": "vtX_N7K4iLM-display-0204",
+      "segment_id": "vtX_N7K4iLM-ja-0100"
+    },
+    {
+      "text": "1つ、これは何を取ったのか。",
+      "start_seconds": 796.44,
+      "end_seconds": 801.36,
+      "id": "vtX_N7K4iLM-display-0205",
+      "segment_id": "vtX_N7K4iLM-ja-0101"
+    },
+    {
+      "text": "2つ、なぜこれを残したいと思ったのか。",
+      "start_seconds": 801.36,
+      "end_seconds": 806.88,
+      "id": "vtX_N7K4iLM-display-0206",
+      "segment_id": "vtX_N7K4iLM-ja-0102"
+    },
+    {
+      "text": "3つ写真からは分からないことは何か?",
+      "start_seconds": 806.88,
+      "end_seconds": 812.48,
+      "id": "vtX_N7K4iLM-display-0207",
+      "segment_id": "vtX_N7K4iLM-ja-0103"
+    },
+    {
+      "text": "朝の駅前を撮った写真ならば毎朝通って",
+      "start_seconds": 812.48,
+      "end_seconds": 815.76,
+      "id": "vtX_N7K4iLM-display-0208",
+      "segment_id": "vtX_N7K4iLM-ja-0104"
+    },
+    {
+      "text": "いる駅前。今日は天気が良くて駅前の空気",
+      "start_seconds": 815.76,
+      "end_seconds": 819.76,
+      "id": "vtX_N7K4iLM-display-0209",
+      "segment_id": "vtX_N7K4iLM-ja-0104"
+    },
+    {
+      "text": "が違って見えた。",
+      "start_seconds": 819.76,
+      "end_seconds": 822.12,
+      "id": "vtX_N7K4iLM-display-0210",
+      "segment_id": "vtX_N7K4iLM-ja-0104"
+    },
+    {
+      "text": "この角には小さな本屋があった。今は",
+      "start_seconds": 822.12,
+      "end_seconds": 825.199,
+      "id": "vtX_N7K4iLM-display-0211",
+      "segment_id": "vtX_N7K4iLM-ja-0105"
+    },
+    {
+      "text": "さらちになっている。",
+      "start_seconds": 825.199,
+      "end_seconds": 827.72,
+      "id": "vtX_N7K4iLM-display-0212",
+      "segment_id": "vtX_N7K4iLM-ja-0105"
+    },
+    {
+      "text": "そんな一言があるだけでその写真は数十年",
+      "start_seconds": 827.72,
+      "end_seconds": 831.279,
+      "id": "vtX_N7K4iLM-display-0213",
+      "segment_id": "vtX_N7K4iLM-ja-0106"
+    },
+    {
+      "text": "後そこに何があり、何が変わったのかを",
+      "start_seconds": 831.279,
+      "end_seconds": 835.32,
+      "id": "vtX_N7K4iLM-display-0214",
+      "segment_id": "vtX_N7K4iLM-ja-0106"
+    },
+    {
+      "text": "読み取る手がかりになります。",
+      "start_seconds": 835.32,
+      "end_seconds": 838.72,
+      "id": "vtX_N7K4iLM-display-0215",
+      "segment_id": "vtX_N7K4iLM-ja-0106"
+    },
+    {
+      "text": "大事なのは綺麗な文章を書くことではあり",
+      "start_seconds": 838.72,
+      "end_seconds": 841.519,
+      "id": "vtX_N7K4iLM-display-0216",
+      "segment_id": "vtX_N7K4iLM-ja-0107"
+    },
+    {
+      "text": "ません。ほんの一言で十分です。",
+      "start_seconds": 841.519,
+      "end_seconds": 847.8,
+      "id": "vtX_N7K4iLM-display-0217",
+      "segment_id": "vtX_N7K4iLM-ja-0107"
+    },
+    {
+      "text": "最初に私はこう問いかけました。",
+      "start_seconds": 847.8,
+      "end_seconds": 852.759,
+      "id": "vtX_N7K4iLM-display-0218",
+      "segment_id": "vtX_N7K4iLM-ja-0108"
+    },
+    {
+      "text": "過去はどう未来へ届くのか。",
+      "start_seconds": 852.759,
+      "end_seconds": 858.04,
+      "id": "vtX_N7K4iLM-display-0219",
+      "segment_id": "vtX_N7K4iLM-ja-0109"
+    },
+    {
+      "text": "過去は自然に未来へ届くわけではありませ",
+      "start_seconds": 858.04,
+      "end_seconds": 861.199,
+      "id": "vtX_N7K4iLM-display-0220",
+      "segment_id": "vtX_N7K4iLM-ja-0110"
+    },
+    {
+      "text": "ん。誰かが残し文脈を添え、また誰かが",
+      "start_seconds": 861.199,
+      "end_seconds": 867.199,
+      "id": "vtX_N7K4iLM-display-0221",
+      "segment_id": "vtX_N7K4iLM-ja-0110"
+    },
+    {
+      "text": "受け取ることで次の時代へ手渡されていく",
+      "start_seconds": 867.199,
+      "end_seconds": 870.56,
+      "id": "vtX_N7K4iLM-display-0222",
+      "segment_id": "vtX_N7K4iLM-ja-0111"
+    },
+    {
+      "text": "。",
+      "start_seconds": 870.56,
+      "end_seconds": 872.48,
+      "id": "vtX_N7K4iLM-display-0223",
+      "segment_id": "vtX_N7K4iLM-ja-0111"
+    },
+    {
+      "text": "それは遠い時代の文化財だけの話ではあり",
+      "start_seconds": 872.48,
+      "end_seconds": 875.399,
+      "id": "vtX_N7K4iLM-display-0224",
+      "segment_id": "vtX_N7K4iLM-ja-0112"
+    },
+    {
+      "text": "ません。",
+      "start_seconds": 875.399,
+      "end_seconds": 877.279,
+      "id": "vtX_N7K4iLM-display-0225",
+      "segment_id": "vtX_N7K4iLM-ja-0112"
+    },
+    {
+      "text": "今はただ日常の写真に見えるかもしれない",
+      "start_seconds": 877.279,
+      "end_seconds": 880.0,
+      "id": "vtX_N7K4iLM-display-0226",
+      "segment_id": "vtX_N7K4iLM-ja-0113"
+    },
+    {
+      "text": "。でも時間が経てばその街や暮らしがどう",
+      "start_seconds": 880.0,
+      "end_seconds": 884.24,
+      "id": "vtX_N7K4iLM-display-0227",
+      "segment_id": "vtX_N7K4iLM-ja-0113"
+    },
+    {
+      "text": "変わったのかを伝える記録になる。",
+      "start_seconds": 884.24,
+      "end_seconds": 887.72,
+      "id": "vtX_N7K4iLM-display-0228",
+      "segment_id": "vtX_N7K4iLM-ja-0113"
+    },
+    {
+      "text": "だからこそ何気なく取った1枚にも意味を",
+      "start_seconds": 887.72,
+      "end_seconds": 891.44,
+      "id": "vtX_N7K4iLM-display-0229",
+      "segment_id": "vtX_N7K4iLM-ja-0114"
+    },
+    {
+      "text": "残しておくことが大切なのです。",
+      "start_seconds": 891.44,
+      "end_seconds": 895.68,
+      "id": "vtX_N7K4iLM-display-0230",
+      "segment_id": "vtX_N7K4iLM-ja-0114"
+    },
+    {
+      "text": "一言添えられた写真は何十年が経った後、",
+      "start_seconds": 895.68,
+      "end_seconds": 900.12,
+      "id": "vtX_N7K4iLM-display-0231",
+      "segment_id": "vtX_N7K4iLM-ja-0115"
+    },
+    {
+      "text": "過去の自分に出会うための手がかりとなる",
+      "start_seconds": 900.12,
+      "end_seconds": 902.92,
+      "id": "vtX_N7K4iLM-display-0232",
+      "segment_id": "vtX_N7K4iLM-ja-0115"
+    },
+    {
+      "text": "。この頃自分は何を見ていたのか何を綺麗",
+      "start_seconds": 902.92,
+      "end_seconds": 908.519,
+      "id": "vtX_N7K4iLM-display-0233",
+      "segment_id": "vtX_N7K4iLM-ja-0116"
+    },
+    {
+      "text": "だと思ったのか何を残したいと思ったのか",
+      "start_seconds": 908.519,
+      "end_seconds": 912.92,
+      "id": "vtX_N7K4iLM-display-0234",
+      "segment_id": "vtX_N7K4iLM-ja-0116"
+    },
+    {
+      "text": "その記録にたどり着くのは未来の自分かも",
+      "start_seconds": 912.92,
+      "end_seconds": 915.759,
+      "id": "vtX_N7K4iLM-display-0235",
+      "segment_id": "vtX_N7K4iLM-ja-0117"
+    },
+    {
+      "text": "しれない。",
+      "start_seconds": 915.759,
+      "end_seconds": 918.12,
+      "id": "vtX_N7K4iLM-display-0236",
+      "segment_id": "vtX_N7K4iLM-ja-0117"
+    },
+    {
+      "text": "あるいは進化したAIかもしれません。",
+      "start_seconds": 918.12,
+      "end_seconds": 923.079,
+      "id": "vtX_N7K4iLM-display-0237",
+      "segment_id": "vtX_N7K4iLM-ja-0118"
+    },
+    {
+      "text": "私たちは過去を受け取り今を残す。その",
+      "start_seconds": 923.079,
+      "end_seconds": 927.839,
+      "id": "vtX_N7K4iLM-display-0238",
+      "segment_id": "vtX_N7K4iLM-ja-0119"
+    },
+    {
+      "text": "積み重ねが未来の私と文化を作ります。",
+      "start_seconds": 927.839,
+      "end_seconds": 932.68,
+      "id": "vtX_N7K4iLM-display-0239",
+      "segment_id": "vtX_N7K4iLM-ja-0119"
+    },
+    {
+      "text": "今夜寝る前に写真を1枚だけ選んで一言",
+      "start_seconds": 932.68,
+      "end_seconds": 937.68,
+      "id": "vtX_N7K4iLM-display-0240",
+      "segment_id": "vtX_N7K4iLM-ja-0120"
+    },
+    {
+      "text": "添えてみる。その一言が未来へ届きます。",
+      "start_seconds": 937.68,
+      "end_seconds": 944.6,
+      "id": "vtX_N7K4iLM-display-0241",
+      "segment_id": "vtX_N7K4iLM-ja-0120"
+    },
+    {
+      "text": "ありがとうございました。",
+      "start_seconds": 944.6,
+      "end_seconds": 948.48,
+      "id": "vtX_N7K4iLM-display-0242",
+      "segment_id": "vtX_N7K4iLM-ja-0121"
+    }
+  ]
+}

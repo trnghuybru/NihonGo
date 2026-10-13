@@ -69,7 +69,39 @@ var lastCaption=-2;
 var endTimer=null;
 var sentencePausePending=true;
 var lastLoopSeek=0;
+var quizCheckpoints=[];
+var quizPending=null;
+var quizHold=false;
+var quizTarget=null;
+var quizAutoFloor=-1;
 function send(type,code){if(window.ReactNativeWebView){window.ReactNativeWebView.postMessage(JSON.stringify({type:type,code:code}));}}
+window.configureQuiz=function(checkpoints,hold){
+ if(!checkpoints.some(function(q){return quizCheckpoints.some(function(old){return old.id===q.id;});}))quizAutoFloor=-1;
+ quizCheckpoints=checkpoints;quizHold=hold;
+ if(quizPending && !checkpoints.some(function(q){return q.id===quizPending;}))quizPending=null;
+ if(quizTarget && !checkpoints.some(function(q){return q.id===quizTarget.id;}))quizTarget=null;
+ if(hold && window.player)window.player.pauseVideo();
+};
+window.jumpToQuiz=function(id){
+ var question=quizCheckpoints.find(function(q){return q.id===id;});
+ if(!question || !window.player)return;
+ quizTarget=question;quizPending=null;quizHold=false;quizAutoFloor=question.seconds;
+ window.player.pauseVideo();window.player.seekTo(question.seconds,true);
+};
+function checkQuiz(target){
+ if(quizHold || quizPending){target.pauseVideo();return true;}
+ var time=target.getCurrentTime();
+ var due;
+ if(quizTarget){
+  if(time<quizTarget.seconds)return true;
+  due=quizTarget;quizTarget=null;
+ }else{
+  if(time<quizAutoFloor)quizAutoFloor=time;
+  due=quizCheckpoints.find(function(q){return q.seconds>quizAutoFloor && time>=q.seconds;});
+ }
+ if(!due)return false;
+ quizPending=due.id;target.pauseVideo();send('quiz-question',{id:due.id});return true;
+}
 function clearEndTimer(){if(endTimer!==null){clearInterval(endTimer);endTimer=null;}}
 function updateCaption(target){
  if(!timeline)return;
@@ -92,6 +124,7 @@ window.updateShadowing=function(next){
 };
 function checkSentenceEnd(target){
  updateCaption(target);
+ if(checkQuiz(target))return;
  if(!clip.continuous && sentencePausePending && target.getCurrentTime()>=clip.endSeconds){
   if(clip.loop){
    if(Date.now()-lastLoopSeek>500){lastLoopSeek=Date.now();target.seekTo(clip.startSeconds,true);target.playVideo();}
@@ -105,8 +138,9 @@ function onPlaybackState(e){
  if(e.data===YT.PlayerState.PLAYING)send('playing');
  clearEndTimer();
  updateCaption(e.target);
+ if(e.data===0)checkQuiz(e.target);
  if(timeline || (sentencePausePending && e.data===YT.PlayerState.PLAYING)){
-  endTimer=setInterval(function(){if(!timeline || e.target.getPlayerState()===YT.PlayerState.PLAYING){checkSentenceEnd(e.target);}else{updateCaption(e.target);}},100);
+  endTimer=setInterval(function(){if(quizTarget || !timeline || e.target.getPlayerState()===YT.PlayerState.PLAYING){checkSentenceEnd(e.target);}else{updateCaption(e.target);}},100);
   if(e.data===YT.PlayerState.PLAYING)checkSentenceEnd(e.target);
  }
 }
@@ -144,6 +178,11 @@ export function VideoExamplePlayer({
   seekRequest = 0,
   videoOnly = false,
   pausedForLookup = false,
+  pausedForQuiz = false,
+  quizCheckpoints,
+  onQuizQuestion,
+  resumeRequest = 0,
+  quizJumpRequest,
 }: {
   example: VideoExample;
   query: string;
@@ -161,8 +200,15 @@ export function VideoExamplePlayer({
   seekRequest?: number;
   videoOnly?: boolean;
   pausedForLookup?: boolean;
+  pausedForQuiz?: boolean;
+  quizCheckpoints?: { id: string; seconds: number }[];
+  onQuizQuestion?: (id: string) => void;
+  resumeRequest?: number;
+  quizJumpRequest?: { id: string; request: number } | null;
 }) {
   const lastSeekRequest = useRef(0);
+  const lastResumeRequest = useRef(0);
+  const lastQuizJump = useRef<typeof quizJumpRequest>(null);
   const playerRef = useRef<WebView<unknown>>(null);
   const [generation, setGeneration] = useState(0);
   const [loaded, setLoaded] = useState(false);
@@ -221,6 +267,35 @@ export function VideoExamplePlayer({
       );
   }, [pausedForLookup, loaded, active, generation]);
   useEffect(() => {
+    if (!loaded || !active) return;
+    playerRef.current?.injectJavaScript(
+      `window.configureQuiz && window.configureQuiz(${JSON.stringify(
+        quizCheckpoints ?? [],
+      )},${pausedForQuiz});true;`,
+    );
+  }, [quizCheckpoints, pausedForQuiz, loaded, active, generation]);
+  useEffect(() => {
+    if (!quizJumpRequest) {
+      lastQuizJump.current = null;
+      return;
+    }
+    if (!loaded || !active || lastQuizJump.current === quizJumpRequest) return;
+    lastQuizJump.current = quizJumpRequest;
+    playerRef.current?.injectJavaScript(
+      `window.jumpToQuiz && window.jumpToQuiz(${JSON.stringify(
+        quizJumpRequest.id,
+      )});true;`,
+    );
+  }, [quizJumpRequest, loaded, active]);
+  useEffect(() => {
+    if (!loaded || !active || pausedForQuiz || pausedForLookup) return;
+    if (lastResumeRequest.current === resumeRequest) return;
+    lastResumeRequest.current = resumeRequest;
+    playerRef.current?.injectJavaScript(
+      'window.player && window.player.playVideo();true;',
+    );
+  }, [resumeRequest, loaded, active, pausedForQuiz, pausedForLookup]);
+  useEffect(() => {
     const listener = AppState.addEventListener('change', state =>
       setActive(state === 'active'),
     );
@@ -258,9 +333,15 @@ export function VideoExamplePlayer({
       }
       if (message.type === 'error')
         setError('Không phát được video. Nhấn nút replay để thử lại.');
+      if (
+        message.type === 'quiz-question' &&
+        quizCheckpoints?.some(question => question.id === message.code?.id)
+      ) {
+        onQuizQuestion?.(message.code.id);
+      }
       if (message.type === 'playing') {
         setAutoplayBlocked(false);
-        if (pausedForLookup)
+        if (pausedForLookup || pausedForQuiz)
           playerRef.current?.injectJavaScript(
             'window.player && window.player.pauseVideo();true;',
           );
@@ -336,7 +417,7 @@ export function VideoExamplePlayer({
         ) : null}
       </View>
       {!loaded && !error ? (
-        <Text style={styles.body}>Đang tải video…</Text>
+        <Text style={styles.loadingText}>Đang tải video…</Text>
       ) : null}
       {autoplayBlocked ? (
         <Text style={styles.body}>Nhấn nút phát trong video để nghe.</Text>
@@ -490,6 +571,12 @@ const styles = StyleSheet.create({
   },
   webview: { flex: 1, backgroundColor: colors.dark },
   body: { ...typography.body, color: colors.body },
+  loadingText: {
+    ...typography.body,
+    color: colors.body,
+    textAlign: 'center',
+    paddingVertical: spacing.xs,
+  },
   caption: { ...typography.caption, color: colors.muted },
   actions: {
     flexDirection: 'row',

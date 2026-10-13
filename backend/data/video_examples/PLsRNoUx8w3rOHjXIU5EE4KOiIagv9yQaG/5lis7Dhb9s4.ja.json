@@ -1,0 +1,3801 @@
+{
+  "schema_version": 1,
+  "video": {
+    "youtube_id": "5lis7Dhb9s4",
+    "title": "Spinning Our \"Kuniumi\" Creation Myth for the Next 1,000 Years | Fujiko Taketani | TEDxAwaji",
+    "channel": "TEDx Talks",
+    "duration_seconds": 1123
+  },
+  "caption_track": {
+    "language": "ja",
+    "kind": "asr",
+    "source": "youtube_automatic"
+  },
+  "source_playlist": "https://www.youtube.com/playlist?list=PLsRNoUx8w3rOHjXIU5EE4KOiIagv9yQaG",
+  "fetched_at": "2026-10-13T13:23:29.192029+00:00",
+  "segment_count": 130,
+  "segments": [
+    {
+      "text": "ねえ、今あなたが目の前に見ているものは一体何だと思う?",
+      "start_seconds": 6.759,
+      "end_seconds": 14.08,
+      "id": "5lis7Dhb9s4-ja-0001",
+      "sequence": 1
+    },
+    {
+      "text": "私がこの岩を島から初めて見た時、大きな亀に見えて浦島太郎の昔話を思い出しました。",
+      "start_seconds": 14.08,
+      "end_seconds": 23.8,
+      "id": "5lis7Dhb9s4-ja-0002",
+      "sequence": 2
+    },
+    {
+      "text": "ところが船に乗り、海側から見た瞬間、あれ、スフィンクスやと息を飲みました。",
+      "start_seconds": 23.8,
+      "end_seconds": 34.44,
+      "id": "5lis7Dhb9s4-ja-0003",
+      "sequence": 3
+    },
+    {
+      "text": "実に美しい曲線をしたスフィンクスの姿。",
+      "start_seconds": 34.44,
+      "end_seconds": 39.76,
+      "id": "5lis7Dhb9s4-ja-0004",
+      "sequence": 4
+    },
+    {
+      "text": "しかもよく調べると高さ16m、幅25m、長さは73mとエジプトギザノ",
+      "start_seconds": 39.76,
+      "end_seconds": 51.12,
+      "id": "5lis7Dhb9s4-ja-0005",
+      "sequence": 5
+    },
+    {
+      "text": "スフィンクスとほぼ同じ大きさだったのです。",
+      "start_seconds": 51.12,
+      "end_seconds": 57.199,
+      "id": "5lis7Dhb9s4-ja-0006",
+      "sequence": 6
+    },
+    {
+      "text": "これは自然にできたもの。",
+      "start_seconds": 57.199,
+      "end_seconds": 60.84,
+      "id": "5lis7Dhb9s4-ja-0007",
+      "sequence": 7
+    },
+    {
+      "text": "誰かが作ったの?なぜ国海神の原点お島と呼ばれる虫にあるの?",
+      "start_seconds": 60.84,
+      "end_seconds": 72.52,
+      "id": "5lis7Dhb9s4-ja-0008",
+      "sequence": 8
+    },
+    {
+      "text": "皆さんこんちは。淡路島生まれ淡路島育の竹谷藤子やで。あんな私相方のムーサと島",
+      "start_seconds": 75.2,
+      "end_seconds": 85.88,
+      "id": "5lis7Dhb9s4-ja-0009",
+      "sequence": 9
+    },
+    {
+      "text": "でウェルネスツアをしとんねんか。私らのガイドは一味も2味もちゃうねんで世界初",
+      "start_seconds": 85.88,
+      "end_seconds": 94.92,
+      "id": "5lis7Dhb9s4-ja-0010",
+      "sequence": 10
+    },
+    {
+      "text": "世界でここだけの海ホタル賞や国海神話を紐解く聖地を案内しとんねん。",
+      "start_seconds": 94.92,
+      "end_seconds": 102.92,
+      "id": "5lis7Dhb9s4-ja-0011",
+      "sequence": 11
+    },
+    {
+      "text": "実を言うと私淡路島によっさある漁軍の1つ一族の神様を古代から守り続けとる法斎",
+      "start_seconds": 102.92,
+      "end_seconds": 114.28,
+      "id": "5lis7Dhb9s4-ja-0012",
+      "sequence": 12
+    },
+    {
+      "text": "の松江なんやは今日話をすんのは",
+      "start_seconds": 114.28,
+      "end_seconds": 121.28,
+      "id": "5lis7Dhb9s4-ja-0013",
+      "sequence": 13
+    },
+    {
+      "text": "何年もかけて私らが路島の卑境を探索しそして顧問所を研究して見つけ出し",
+      "start_seconds": 121.28,
+      "end_seconds": 133.08,
+      "id": "5lis7Dhb9s4-ja-0014",
+      "sequence": 14
+    },
+    {
+      "text": "驚くべき新発見とご先祖さんたちが私たちに託してくれた太鼓のメッセージなんや。教科書にも載っ",
+      "start_seconds": 133.08,
+      "end_seconds": 144.76,
+      "id": "5lis7Dhb9s4-ja-0015",
+      "sequence": 15
+    },
+    {
+      "text": "てへん。ガイドブックにも載ってへん。私らにしか伝えられへんことやねん。",
+      "start_seconds": 144.76,
+      "end_seconds": 153.599,
+      "id": "5lis7Dhb9s4-ja-0016",
+      "sequence": 16
+    },
+    {
+      "text": "なあなあ。日本がどうやって生まれたか知っとっけ?",
+      "start_seconds": 156.04,
+      "end_seconds": 163.48,
+      "id": "5lis7Dhb9s4-ja-0017",
+      "sequence": 17
+    },
+    {
+      "text": "今から1300年前に偏された日本最古の歴史書には壮大な国神話が記されとんねん",
+      "start_seconds": 163.48,
+      "end_seconds": 174.4,
+      "id": "5lis7Dhb9s4-ja-0018",
+      "sequence": 18
+    },
+    {
+      "text": "。そこには伊さんとイ波さんのご夫婦の神",
+      "start_seconds": 174.4,
+      "end_seconds": 180.68,
+      "id": "5lis7Dhb9s4-ja-0019",
+      "sequence": 19
+    },
+    {
+      "text": "様が天の浮き橋から大きな祠でコロ",
+      "start_seconds": 180.68,
+      "end_seconds": 188.36,
+      "id": "5lis7Dhb9s4-ja-0020",
+      "sequence": 20
+    },
+    {
+      "text": "と海をかき混ぜてとりと落ちた雫しが固まってしまう島となった。それが",
+      "start_seconds": 188.36,
+      "end_seconds": 198.68,
+      "id": "5lis7Dhb9s4-ja-0021",
+      "sequence": 21
+    },
+    {
+      "text": "お島現代の虫と地元では伝わっとんねん。",
+      "start_seconds": 198.68,
+      "end_seconds": 205.319,
+      "id": "5lis7Dhb9s4-ja-0022",
+      "sequence": 22
+    },
+    {
+      "text": "お2人は初めに淡路島を、そして日本の国土や神々を次々生み出してん。",
+      "start_seconds": 205.319,
+      "end_seconds": 215.519,
+      "id": "5lis7Dhb9s4-ja-0023",
+      "sequence": 23
+    },
+    {
+      "text": "そやからな、虫島とここ淡路島が日本の始まりなんやで。",
+      "start_seconds": 215.519,
+      "end_seconds": 226.36,
+      "id": "5lis7Dhb9s4-ja-0024",
+      "sequence": 24
+    },
+    {
+      "text": "やけど、なんで日本の始まりが奈良や出雲と千主島",
+      "start_seconds": 226.36,
+      "end_seconds": 234.519,
+      "id": "5lis7Dhb9s4-ja-0025",
+      "sequence": 25
+    },
+    {
+      "text": "や淡路島なんやと思う。",
+      "start_seconds": 234.519,
+      "end_seconds": 239.319,
+      "id": "5lis7Dhb9s4-ja-0026",
+      "sequence": 26
+    },
+    {
+      "text": "私はな、乞食ができるもっと昔古代において虫と",
+      "start_seconds": 239.319,
+      "end_seconds": 247.959,
+      "id": "5lis7Dhb9s4-ja-0027",
+      "sequence": 27
+    },
+    {
+      "text": "淡路島が外な重要な場所やったからちゃうかなと思っとんねん。",
+      "start_seconds": 247.959,
+      "end_seconds": 256.44,
+      "id": "5lis7Dhb9s4-ja-0028",
+      "sequence": 28
+    },
+    {
+      "text": "そんな思いながらガイドしとったらその痕跡を付ける確信するべきものがどんどん出てきてん。",
+      "start_seconds": 256.44,
+      "end_seconds": 266.919,
+      "id": "5lis7Dhb9s4-ja-0029",
+      "sequence": 29
+    },
+    {
+      "text": "うちの浦山で虚軍を見つけてんけど単なる岩とちゃうかった。なんと4000年もの",
+      "start_seconds": 266.919,
+      "end_seconds": 276.16,
+      "id": "5lis7Dhb9s4-ja-0030",
+      "sequence": 30
+    },
+    {
+      "text": "間静かに眠り続けとった歴史的自然遺産やってそこには企科学、天文学、知質学に基づい",
+      "start_seconds": 276.16,
+      "end_seconds": 287.84,
+      "id": "5lis7Dhb9s4-ja-0031",
+      "sequence": 31
+    },
+    {
+      "text": "た太鼓の人からの明確なメッセージが刻まれとった。",
+      "start_seconds": 287.84,
+      "end_seconds": 294.639,
+      "id": "5lis7Dhb9s4-ja-0032",
+      "sequence": 32
+    },
+    {
+      "text": "現代の科学で紐も解けば紐も解くほど想像を超える神話の世界が広がっとって",
+      "start_seconds": 294.639,
+      "end_seconds": 304.88,
+      "id": "5lis7Dhb9s4-ja-0033",
+      "sequence": 33
+    },
+    {
+      "text": "なあなあなんかワクワクしてけえへんけ?",
+      "start_seconds": 304.88,
+      "end_seconds": 309.24,
+      "id": "5lis7Dhb9s4-ja-0034",
+      "sequence": 34
+    },
+    {
+      "text": "ほんなら今からその未知なる世界へ出かけっからな。",
+      "start_seconds": 309.24,
+      "end_seconds": 317.32,
+      "id": "5lis7Dhb9s4-ja-0035",
+      "sequence": 35
+    },
+    {
+      "text": "な、皆さんはエジプトのピラミッドが巨大な宇宙の設計図やったって知っとった。",
+      "start_seconds": 320.96,
+      "end_seconds": 331.639,
+      "id": "5lis7Dhb9s4-ja-0036",
+      "sequence": 36
+    },
+    {
+      "text": "3つのピラミッドがオリオン座る側が天野川に配置されとんねん。古代の人は",
+      "start_seconds": 331.639,
+      "end_seconds": 340.84,
+      "id": "5lis7Dhb9s4-ja-0037",
+      "sequence": 37
+    },
+    {
+      "text": "夜空の星座を地上に下ろして聖地を作っとったんやわ。",
+      "start_seconds": 340.84,
+      "end_seconds": 348.0,
+      "id": "5lis7Dhb9s4-ja-0038",
+      "sequence": 38
+    },
+    {
+      "text": "ほんなら淡路島の7大政治をついだこの形は何やと思う?",
+      "start_seconds": 348.0,
+      "end_seconds": 358.96000000000004,
+      "id": "5lis7Dhb9s4-ja-0039",
+      "sequence": 39
+    },
+    {
+      "text": "北斗星に似とんねんけど小座なんやんか。",
+      "start_seconds": 359.12,
+      "end_seconds": 363.88,
+      "id": "5lis7Dhb9s4-ja-0040",
+      "sequence": 40
+    },
+    {
+      "text": "ほんで大熊座は和歌山の熊野にほんでな淡路島は昔から竜二に囲まれとると言われ",
+      "start_seconds": 363.88,
+      "end_seconds": 373.08,
+      "id": "5lis7Dhb9s4-ja-0041",
+      "sequence": 41
+    },
+    {
+      "text": "てんねんけど淡路市の周りには竜座は琴平神宮",
+      "start_seconds": 373.08,
+      "end_seconds": 381.24,
+      "id": "5lis7Dhb9s4-ja-0042",
+      "sequence": 42
+    },
+    {
+      "text": "カオペア座はカオと東おがダブルで安念でそれからなんとな2万6000年の周期の",
+      "start_seconds": 381.24,
+      "end_seconds": 392.919,
+      "id": "5lis7Dhb9s4-ja-0043",
+      "sequence": 43
+    },
+    {
+      "text": "再運まで同じやねん。当てはまっとんねんか。",
+      "start_seconds": 392.919,
+      "end_seconds": 398.68,
+      "id": "5lis7Dhb9s4-ja-0044",
+      "sequence": 44
+    },
+    {
+      "text": "今の北極生ポラリスは淡路島北部の八丁は日しとんねんけど4000年前の北極生番",
+      "start_seconds": 398.68,
+      "end_seconds": 407.039,
+      "id": "5lis7Dhb9s4-ja-0045",
+      "sequence": 45
+    },
+    {
+      "text": "はなんと盗島にドンピシャで当てはまっ",
+      "start_seconds": 407.039,
+      "end_seconds": 412.56,
+      "id": "5lis7Dhb9s4-ja-0046",
+      "sequence": 46
+    },
+    {
+      "text": "とってん。ほんまびっくりやで。",
+      "start_seconds": 412.56,
+      "end_seconds": 419.479,
+      "id": "5lis7Dhb9s4-ja-0047",
+      "sequence": 47
+    },
+    {
+      "text": "それからな、冒頭で触れたスフィンクスはなんやけど、エジプトのスフィンクスと形が似るだけとちゃうで、",
+      "start_seconds": 419.68,
+      "end_seconds": 431.16,
+      "id": "5lis7Dhb9s4-ja-0048",
+      "sequence": 48
+    },
+    {
+      "text": "なんと太陽の動きを清密に計算して厳選された特別な場所やってん。",
+      "start_seconds": 431.16,
+      "end_seconds": 440.96,
+      "id": "5lis7Dhb9s4-ja-0049",
+      "sequence": 49
+    },
+    {
+      "text": "目の前には高さ30mの神立て神岩が見えんねんけど、こ地図で調べたら昔はなんと",
+      "start_seconds": 440.96,
+      "end_seconds": 450.56,
+      "id": "5lis7Dhb9s4-ja-0050",
+      "sequence": 50
+    },
+    {
+      "text": "100m以上の高さがあってんか。",
+      "start_seconds": 450.56,
+      "end_seconds": 454.72,
+      "id": "5lis7Dhb9s4-ja-0051",
+      "sequence": 51
+    },
+    {
+      "text": "ほんで竜宮の門と呼ばれとって古代からオベリスクとして伊さんイ波さんの2柱と",
+      "start_seconds": 454.72,
+      "end_seconds": 464.44,
+      "id": "5lis7Dhb9s4-ja-0052",
+      "sequence": 52
+    },
+    {
+      "text": "して退地されてきててスフィンクス岩から見て古代の下子には神立て神岩から太陽が登り",
+      "start_seconds": 464.44,
+      "end_seconds": 476.08,
+      "id": "5lis7Dhb9s4-ja-0053",
+      "sequence": 53
+    },
+    {
+      "text": "春分週終の日にはお山の山頂に沈んだったそれだけとちゃうで今は海の底なんやけど",
+      "start_seconds": 476.08,
+      "end_seconds": 486.0,
+      "id": "5lis7Dhb9s4-ja-0054",
+      "sequence": 54
+    },
+    {
+      "text": "、",
+      "start_seconds": 486.0,
+      "end_seconds": 489.0,
+      "id": "5lis7Dhb9s4-ja-0055",
+      "sequence": 55
+    },
+    {
+      "text": "春分、終聞、当時の日の出の方にも方向にも巨大な岩があって、",
+      "start_seconds": 489.879,
+      "end_seconds": 498.72,
+      "id": "5lis7Dhb9s4-ja-0056",
+      "sequence": 56
+    },
+    {
+      "text": "両門早期には海面が今より100mぐらい低かったから、実は海面上のランドマーク",
+      "start_seconds": 498.72,
+      "end_seconds": 507.44,
+      "id": "5lis7Dhb9s4-ja-0057",
+      "sequence": 57
+    },
+    {
+      "text": "になっとって、つまり全ての方向にレイポイントがあっで、その中心点が",
+      "start_seconds": 507.44,
+      "end_seconds": 516.12,
+      "id": "5lis7Dhb9s4-ja-0058",
+      "sequence": 58
+    },
+    {
+      "text": "スフィンクス岩と神立て神岩やった。",
+      "start_seconds": 516.12,
+      "end_seconds": 520.76,
+      "id": "5lis7Dhb9s4-ja-0059",
+      "sequence": 59
+    },
+    {
+      "text": "そう、ここが国海神話の舞台。日本の原点やったんやで。",
+      "start_seconds": 520.76,
+      "end_seconds": 530.959,
+      "id": "5lis7Dhb9s4-ja-0060",
+      "sequence": 60
+    },
+    {
+      "text": "そこにはな、驚くことに太鼓の昔に完璧に設計された太陽の道の設計図があった。",
+      "start_seconds": 530.959,
+      "end_seconds": 542.0,
+      "id": "5lis7Dhb9s4-ja-0061",
+      "sequence": 61
+    },
+    {
+      "text": "その設計図の形がな、実は上から見ると巨大なXになっとんねん。",
+      "start_seconds": 542.0,
+      "end_seconds": 551.399,
+      "id": "5lis7Dhb9s4-ja-0062",
+      "sequence": 62
+    },
+    {
+      "text": "その設計図は虫だけと淡路島本当にもあって伊神宮を拠点にXになっとる。それ",
+      "start_seconds": 551.399,
+      "end_seconds": 563.24,
+      "id": "5lis7Dhb9s4-ja-0063",
+      "sequence": 63
+    },
+    {
+      "text": "が奈良や異性出雲へと展開しとんねんで",
+      "start_seconds": 563.24,
+      "end_seconds": 571.24,
+      "id": "5lis7Dhb9s4-ja-0064",
+      "sequence": 64
+    },
+    {
+      "text": "の神立て神岩は男性のイ岩下神岩は女性神のイ波岩",
+      "start_seconds": 572.6,
+      "end_seconds": 584.12,
+      "id": "5lis7Dhb9s4-ja-0065",
+      "sequence": 65
+    },
+    {
+      "text": "エジプトのオシリスとイシスのオベリスクと同じやねん。実はオベリスクが陸から",
+      "start_seconds": 584.12,
+      "end_seconds": 592.839,
+      "id": "5lis7Dhb9s4-ja-0066",
+      "sequence": 66
+    },
+    {
+      "text": "伝わったんが鳥海から伝わったんが男女心の岩が柱なんか",
+      "start_seconds": 592.839,
+      "end_seconds": 602.279,
+      "id": "5lis7Dhb9s4-ja-0067",
+      "sequence": 67
+    },
+    {
+      "text": "その先端のオベリスクの上にある便子を上から見たらXになっとんねん。なんと",
+      "start_seconds": 602.279,
+      "end_seconds": 613.16,
+      "id": "5lis7Dhb9s4-ja-0068",
+      "sequence": 68
+    },
+    {
+      "text": "ピラビントも上から見たらXなんやで。それがな古代出雲の新門や",
+      "start_seconds": 613.16,
+      "end_seconds": 623.92,
+      "id": "5lis7Dhb9s4-ja-0069",
+      "sequence": 69
+    },
+    {
+      "text": "神社の屋根のちぎにもXが入っとんねん。",
+      "start_seconds": 623.92,
+      "end_seconds": 629.399,
+      "id": "5lis7Dhb9s4-ja-0070",
+      "sequence": 70
+    },
+    {
+      "text": "このXは男性と著精神の交わり。つまり",
+      "start_seconds": 629.399,
+      "end_seconds": 636.92,
+      "id": "5lis7Dhb9s4-ja-0071",
+      "sequence": 71
+    },
+    {
+      "text": "子孫繁栄を意味しとんねん。別の時代も",
+      "start_seconds": 636.92,
+      "end_seconds": 641.44,
+      "id": "5lis7Dhb9s4-ja-0072",
+      "sequence": 72
+    },
+    {
+      "text": "世界中どこでも大切なことは一緒やなあ。",
+      "start_seconds": 641.44,
+      "end_seconds": 648.9200000000001,
+      "id": "5lis7Dhb9s4-ja-0073",
+      "sequence": 73
+    },
+    {
+      "text": "ところでな、皆さんこの国神話の舞台の海底を探したら絶対なんか出てくると思わ",
+      "start_seconds": 649.279,
+      "end_seconds": 658.16,
+      "id": "5lis7Dhb9s4-ja-0074",
+      "sequence": 74
+    },
+    {
+      "text": "へん。実は今陸と海の秘怯をつなぐ広大な海底探査プロジェクト計画しとんねん。の",
+      "start_seconds": 658.16,
+      "end_seconds": 670.12,
+      "id": "5lis7Dhb9s4-ja-0075",
+      "sequence": 75
+    },
+    {
+      "text": "中からも歴史的自然遺産を見つけし楽しみにしとってな。",
+      "start_seconds": 670.12,
+      "end_seconds": 678.12,
+      "id": "5lis7Dhb9s4-ja-0076",
+      "sequence": 76
+    },
+    {
+      "text": "これからな海の中だけとちゃうで淡路市の",
+      "start_seconds": 680.16,
+      "end_seconds": 685.48,
+      "id": "5lis7Dhb9s4-ja-0077",
+      "sequence": 77
+    },
+    {
+      "text": "山の中にも空にそびえる巨大なイ波さんの",
+      "start_seconds": 685.48,
+      "end_seconds": 692.6,
+      "id": "5lis7Dhb9s4-ja-0078",
+      "sequence": 78
+    },
+    {
+      "text": "シンボルヒモロギがあんねん。じゃあついになるさんの岩はどこにあんのやろうって",
+      "start_seconds": 692.6,
+      "end_seconds": 703.16,
+      "id": "5lis7Dhb9s4-ja-0079",
+      "sequence": 79
+    },
+    {
+      "text": "私らは古代の例を研究して絶対ここにあるはずやと密林の中を探してとうとう",
+      "start_seconds": 703.16,
+      "end_seconds": 712.959,
+      "id": "5lis7Dhb9s4-ja-0080",
+      "sequence": 80
+    },
+    {
+      "text": "見つけ出したその挙石軍には人1人が通れぐらいの穴が開いとってもう",
+      "start_seconds": 712.959,
+      "end_seconds": 721.88,
+      "id": "5lis7Dhb9s4-ja-0081",
+      "sequence": 81
+    },
+    {
+      "text": "1度生まれることを体験できんね私らはイ波岩の体内くぐりって呼んどる。",
+      "start_seconds": 721.88,
+      "end_seconds": 732.48,
+      "id": "5lis7Dhb9s4-ja-0082",
+      "sequence": 82
+    },
+    {
+      "text": "暗くて狭い岩の間をくぐり抜ける時ドキドキするなとかその先にある絶景を見",
+      "start_seconds": 732.48,
+      "end_seconds": 741.32,
+      "id": "5lis7Dhb9s4-ja-0083",
+      "sequence": 83
+    },
+    {
+      "text": "てなんて世界は美しいんだろうって。",
+      "start_seconds": 741.32,
+      "end_seconds": 747.04,
+      "id": "5lis7Dhb9s4-ja-0084",
+      "sequence": 84
+    },
+    {
+      "text": "お母さんの中の中から生まれてくる時の記憶とし苦したわ。ほんでこの形な虫",
+      "start_seconds": 747.04,
+      "end_seconds": 756.959,
+      "id": "5lis7Dhb9s4-ja-0085",
+      "sequence": 85
+    },
+    {
+      "text": "そっくりやねん。",
+      "start_seconds": 756.959,
+      "end_seconds": 760.68,
+      "id": "5lis7Dhb9s4-ja-0086",
+      "sequence": 86
+    },
+    {
+      "text": "私な各新視点子宮っていう友字は子供のおさんって書くやろう。私ら1人1人はお宮",
+      "start_seconds": 760.959,
+      "end_seconds": 771.839,
+      "id": "5lis7Dhb9s4-ja-0087",
+      "sequence": 87
+    },
+    {
+      "text": "さんから生まれた伊さんやイ波さんのように尊い存在で今ここに生き取る神様その",
+      "start_seconds": 771.839,
+      "end_seconds": 782.92,
+      "id": "5lis7Dhb9s4-ja-0088",
+      "sequence": 88
+    },
+    {
+      "text": "ものなんやと。",
+      "start_seconds": 782.92,
+      "end_seconds": 786.76,
+      "id": "5lis7Dhb9s4-ja-0089",
+      "sequence": 89
+    },
+    {
+      "text": "そんな風に山に出かけるたびにあ、あの岩に目玉が見える。",
+      "start_seconds": 788.68,
+      "end_seconds": 797.199,
+      "id": "5lis7Dhb9s4-ja-0090",
+      "sequence": 90
+    },
+    {
+      "text": "ペトログリフちゃうか。",
+      "start_seconds": 797.199,
+      "end_seconds": 800.04,
+      "id": "5lis7Dhb9s4-ja-0091",
+      "sequence": 91
+    },
+    {
+      "text": "今も驚くような発見が続いとんねんか。",
+      "start_seconds": 800.04,
+      "end_seconds": 805.36,
+      "id": "5lis7Dhb9s4-ja-0092",
+      "sequence": 92
+    },
+    {
+      "text": "ヒモロギや籍軍にはインダスやシュメール文字ルーズのペトログリフが残っとる。",
+      "start_seconds": 805.36,
+      "end_seconds": 815.399,
+      "id": "5lis7Dhb9s4-ja-0093",
+      "sequence": 93
+    },
+    {
+      "text": "そやけど不思議に思わへん。",
+      "start_seconds": 815.399,
+      "end_seconds": 819.959,
+      "id": "5lis7Dhb9s4-ja-0094",
+      "sequence": 94
+    },
+    {
+      "text": "エジプトやメソポタミアと日本はガな離れとんのになんで淡路島にペトロクリフが",
+      "start_seconds": 819.959,
+      "end_seconds": 830.32,
+      "id": "5lis7Dhb9s4-ja-0095",
+      "sequence": 95
+    },
+    {
+      "text": "あるんやろう。",
+      "start_seconds": 830.32,
+      "end_seconds": 832.8,
+      "id": "5lis7Dhb9s4-ja-0096",
+      "sequence": 96
+    },
+    {
+      "text": "それだけとちゃう太陽を観測する仕組みや星座の配置の一致Xのシンボルそれからな日本神話と",
+      "start_seconds": 832.8,
+      "end_seconds": 844.48,
+      "id": "5lis7Dhb9s4-ja-0097",
+      "sequence": 97
+    },
+    {
+      "text": "エジプト神話も2とんねん。",
+      "start_seconds": 844.48,
+      "end_seconds": 848.32,
+      "id": "5lis7Dhb9s4-ja-0098",
+      "sequence": 98
+    },
+    {
+      "text": "日本神話は伊さんが亡くなった伊波さんを探しに富の国に行った帰りにみぎをして",
+      "start_seconds": 848.32,
+      "end_seconds": 858.199,
+      "id": "5lis7Dhb9s4-ja-0099",
+      "sequence": 99
+    },
+    {
+      "text": "右目を洗ったら月の神つ読み左目を洗ったら太陽神アマテラス花を洗ったら",
+      "start_seconds": 858.199,
+      "end_seconds": 868.079,
+      "id": "5lis7Dhb9s4-ja-0100",
+      "sequence": 100
+    },
+    {
+      "text": "暴れん坊のスノーが生まれてんエジプト神話ではイシスがオシリスを探しに行っ",
+      "start_seconds": 868.079,
+      "end_seconds": 878.68,
+      "id": "5lis7Dhb9s4-ja-0101",
+      "sequence": 101
+    },
+    {
+      "text": "右の目は太陽神ラー左の目は月の神ウド",
+      "start_seconds": 878.68,
+      "end_seconds": 886.56,
+      "id": "5lis7Dhb9s4-ja-0102",
+      "sequence": 102
+    },
+    {
+      "text": "そしてな大きな花が特徴で暴れん坊の瀬戸心まで登場すんねん",
+      "start_seconds": 886.56,
+      "end_seconds": 894.519,
+      "id": "5lis7Dhb9s4-ja-0103",
+      "sequence": 103
+    },
+    {
+      "text": "なあなあここまで同じもんがあるってどういうことやと思う",
+      "start_seconds": 894.519,
+      "end_seconds": 903.12,
+      "id": "5lis7Dhb9s4-ja-0104",
+      "sequence": 104
+    },
+    {
+      "text": "それはな、かつて世界は国や国境もなかった。全てがネットワークのように繋がっ",
+      "start_seconds": 906.04,
+      "end_seconds": 914.92,
+      "id": "5lis7Dhb9s4-ja-0105",
+      "sequence": 105
+    },
+    {
+      "text": "とって自由に生きしとった世界は1つワンの時代があったってことなんや。",
+      "start_seconds": 914.92,
+      "end_seconds": 924.36,
+      "id": "5lis7Dhb9s4-ja-0106",
+      "sequence": 106
+    },
+    {
+      "text": "つまり神話は人類の公開にしやったてこと。",
+      "start_seconds": 924.36,
+      "end_seconds": 932.16,
+      "id": "5lis7Dhb9s4-ja-0107",
+      "sequence": 107
+    },
+    {
+      "text": "神話は単なる作り話とちゃうで。今も淡路島の山の中や海の底に行き続けとるご",
+      "start_seconds": 932.16,
+      "end_seconds": 942.0,
+      "id": "5lis7Dhb9s4-ja-0108",
+      "sequence": 108
+    },
+    {
+      "text": "先祖さんたちの実はやその真層に触れるっていうことは狭い世界を飛び出して人類の壮大なルーツを思い出",
+      "start_seconds": 942.0,
+      "end_seconds": 953.959,
+      "id": "5lis7Dhb9s4-ja-0109",
+      "sequence": 109
+    },
+    {
+      "text": "すってことなんや。",
+      "start_seconds": 953.959,
+      "end_seconds": 957.56,
+      "id": "5lis7Dhb9s4-ja-0110",
+      "sequence": 110
+    },
+    {
+      "text": "ほんでこの証海峡お足単なる橋とちゃうで",
+      "start_seconds": 957.56,
+      "end_seconds": 966.959,
+      "id": "5lis7Dhb9s4-ja-0111",
+      "sequence": 111
+    },
+    {
+      "text": "巨大な日本の首は伊さんと伊波さんの2柱",
+      "start_seconds": 966.959,
+      "end_seconds": 975.12,
+      "id": "5lis7Dhb9s4-ja-0112",
+      "sequence": 112
+    },
+    {
+      "text": "そこにかかった釣り橋はまさに現代の天の浮き橋島",
+      "start_seconds": 975.12,
+      "end_seconds": 985.399,
+      "id": "5lis7Dhb9s4-ja-0113",
+      "sequence": 113
+    },
+    {
+      "text": "で自分この中の神様を目覚めさせたあなたがあの橋を渡って日常生活へと戻っていく。",
+      "start_seconds": 985.959,
+      "end_seconds": 996.319,
+      "id": "5lis7Dhb9s4-ja-0114",
+      "sequence": 114
+    },
+    {
+      "text": "それはあなたが新しい人生という国づりのために再出発するっていうことなんや。",
+      "start_seconds": 996.319,
+      "end_seconds": 1008.16,
+      "id": "5lis7Dhb9s4-ja-0115",
+      "sequence": 115
+    },
+    {
+      "text": "最後にもう1回言うよう聞いといてな。",
+      "start_seconds": 1008.759,
+      "end_seconds": 1013.88,
+      "id": "5lis7Dhb9s4-ja-0116",
+      "sequence": 116
+    },
+    {
+      "text": "神話は昔の物語で読むもんちゃうで。",
+      "start_seconds": 1013.88,
+      "end_seconds": 1019.759,
+      "id": "5lis7Dhb9s4-ja-0117",
+      "sequence": 117
+    },
+    {
+      "text": "あなた自身が今日この瞬間から救っていくもんや。",
+      "start_seconds": 1019.759,
+      "end_seconds": 1027.039,
+      "id": "5lis7Dhb9s4-ja-0118",
+      "sequence": 118
+    },
+    {
+      "text": "自分が神話の主人公やって思ったら人生の景色がりと変わんで",
+      "start_seconds": 1027.039,
+      "end_seconds": 1036.679,
+      "id": "5lis7Dhb9s4-ja-0119",
+      "sequence": 119
+    },
+    {
+      "text": "自分が神様やったら隣におる人も神様お互いを尊重し合えたらそこに争いはも",
+      "start_seconds": 1036.679,
+      "end_seconds": 1047.28,
+      "id": "5lis7Dhb9s4-ja-0120",
+      "sequence": 120
+    },
+    {
+      "text": "あれへん。",
+      "start_seconds": 1047.28,
+      "end_seconds": 1050.76,
+      "id": "5lis7Dhb9s4-ja-0121",
+      "sequence": 121
+    },
+    {
+      "text": "それがこれからの人類が平和につがっていく鍵で",
+      "start_seconds": 1050.919,
+      "end_seconds": 1059.48,
+      "id": "5lis7Dhb9s4-ja-0122",
+      "sequence": 122
+    },
+    {
+      "text": "今日からあなたの言葉、あなたの行動、その1つ1つが神話の1ページになるから",
+      "start_seconds": 1059.48,
+      "end_seconds": 1069.799,
+      "id": "5lis7Dhb9s4-ja-0123",
+      "sequence": 123
+    },
+    {
+      "text": "な。",
+      "start_seconds": 1069.799,
+      "end_seconds": 1073.0,
+      "id": "5lis7Dhb9s4-ja-0124",
+      "sequence": 124
+    },
+    {
+      "text": "なあ[息をのむ音]なあ、淡路島から初めて見ひんか?",
+      "start_seconds": 1074.0,
+      "end_seconds": 1079.679,
+      "id": "5lis7Dhb9s4-ja-0125",
+      "sequence": 125
+    },
+    {
+      "text": "あなたという神様が作る新しい素晴らしい神話の世界を",
+      "start_seconds": 1079.679,
+      "end_seconds": 1089.039,
+      "id": "5lis7Dhb9s4-ja-0126",
+      "sequence": 126
+    },
+    {
+      "text": "2026年6月21日下の今日が1000年先、2000年先へと続く",
+      "start_seconds": 1089.44,
+      "end_seconds": 1099.039,
+      "id": "5lis7Dhb9s4-ja-0127",
+      "sequence": 127
+    },
+    {
+      "text": "私たちの新たな神話の幕明けやから絶対忘れんといてや。",
+      "start_seconds": 1099.039,
+      "end_seconds": 1110.6000000000001,
+      "id": "5lis7Dhb9s4-ja-0128",
+      "sequence": 128
+    },
+    {
+      "text": "皆さん最後まで聞いてくれてほんまありがとう。",
+      "start_seconds": 1110.679,
+      "end_seconds": 1117.442,
+      "id": "5lis7Dhb9s4-ja-0129",
+      "sequence": 129
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 1117.442,
+      "end_seconds": 1119.462,
+      "id": "5lis7Dhb9s4-ja-0130",
+      "sequence": 130
+    }
+  ],
+  "raw_captions": [
+    {
+      "text": "ねえ、今あなたが目の前に見ているものは",
+      "start_seconds": 6.759,
+      "end_seconds": 14.08
+    },
+    {
+      "text": "一体何だと思う?",
+      "start_seconds": 11.04,
+      "end_seconds": 18.038999999999998
+    },
+    {
+      "text": "私がこの岩を島から初めて見た時、大きな",
+      "start_seconds": 14.08,
+      "end_seconds": 22.16
+    },
+    {
+      "text": "亀に見えて浦島太郎の昔話を思い出しまし",
+      "start_seconds": 18.039,
+      "end_seconds": 23.8
+    },
+    {
+      "text": "た。",
+      "start_seconds": 22.16,
+      "end_seconds": 28.039
+    },
+    {
+      "text": "ところが船に乗り、海側から見た瞬間、",
+      "start_seconds": 23.8,
+      "end_seconds": 34.44
+    },
+    {
+      "text": "あれ、スフィンクスやと息を飲みました。",
+      "start_seconds": 28.039,
+      "end_seconds": 39.760000000000005
+    },
+    {
+      "text": "実に美しい曲線をしたスフィンクスの姿。",
+      "start_seconds": 34.44,
+      "end_seconds": 45.76
+    },
+    {
+      "text": "しかもよく調べると高さ16m、幅25m",
+      "start_seconds": 39.76,
+      "end_seconds": 51.12
+    },
+    {
+      "text": "、長さは73mとエジプトギザノ",
+      "start_seconds": 45.76,
+      "end_seconds": 54.44
+    },
+    {
+      "text": "スフィンクスとほぼ同じ大きさだったの",
+      "start_seconds": 51.12,
+      "end_seconds": 57.199
+    },
+    {
+      "text": "です。",
+      "start_seconds": 54.44,
+      "end_seconds": 60.839999999999996
+    },
+    {
+      "text": "これは自然にできたもの。",
+      "start_seconds": 57.199,
+      "end_seconds": 67.6
+    },
+    {
+      "text": "誰かが作ったの?なぜ国海神の原点お島と",
+      "start_seconds": 60.84,
+      "end_seconds": 72.52000000000001
+    },
+    {
+      "text": "呼ばれる虫にあるの?",
+      "start_seconds": 67.6,
+      "end_seconds": 72.52
+    },
+    {
+      "text": "皆さんこんちは。淡路島生まれ淡路島育の",
+      "start_seconds": 75.2,
+      "end_seconds": 85.88
+    },
+    {
+      "text": "竹谷藤子やで。あんな私相方のムーサと島",
+      "start_seconds": 79.759,
+      "end_seconds": 89.439
+    },
+    {
+      "text": "でウェルネスツアをしとんねんか。私らの",
+      "start_seconds": 85.88,
+      "end_seconds": 94.91999999999999
+    },
+    {
+      "text": "ガイドは一味も2味もちゃうねんで世界初",
+      "start_seconds": 89.439,
+      "end_seconds": 98.83999999999999
+    },
+    {
+      "text": "世界でここだけの海ホタル賞や国海神話を",
+      "start_seconds": 94.92,
+      "end_seconds": 102.92
+    },
+    {
+      "text": "紐解く聖地を案内しとんねん。",
+      "start_seconds": 98.84,
+      "end_seconds": 108.479
+    },
+    {
+      "text": "実を言うと私淡路島によっさある漁軍の1",
+      "start_seconds": 102.92,
+      "end_seconds": 114.28
+    },
+    {
+      "text": "つ一族の神様を古代から守り続けとる法斎",
+      "start_seconds": 108.479,
+      "end_seconds": 117.64
+    },
+    {
+      "text": "の松江なんやは",
+      "start_seconds": 114.28,
+      "end_seconds": 121.28
+    },
+    {
+      "text": "今日話をすんのは",
+      "start_seconds": 117.64,
+      "end_seconds": 128.56
+    },
+    {
+      "text": "何年もかけて私らが路島の卑境を探索し",
+      "start_seconds": 121.28,
+      "end_seconds": 133.08
+    },
+    {
+      "text": "そして顧問所を研究して見つけ出し",
+      "start_seconds": 128.56,
+      "end_seconds": 137.2
+    },
+    {
+      "text": "驚くべき新発見と",
+      "start_seconds": 133.08,
+      "end_seconds": 140.31900000000002
+    },
+    {
+      "text": "ご先祖さんたちが私たちに託してくれた",
+      "start_seconds": 137.2,
+      "end_seconds": 144.76
+    },
+    {
+      "text": "太鼓のメッセージなんや。教科書にも載っ",
+      "start_seconds": 140.319,
+      "end_seconds": 148.2
+    },
+    {
+      "text": "てへん。ガイドブックにも載ってへん。私",
+      "start_seconds": 144.76,
+      "end_seconds": 153.599
+    },
+    {
+      "text": "らにしか伝えられへんことやねん。",
+      "start_seconds": 148.2,
+      "end_seconds": 153.599
+    },
+    {
+      "text": "なあなあ。日本がどうやって生まれたか",
+      "start_seconds": 156.04,
+      "end_seconds": 163.48
+    },
+    {
+      "text": "知っとっけ?",
+      "start_seconds": 161.12,
+      "end_seconds": 168.56
+    },
+    {
+      "text": "今から1300年前に偏された日本最古の",
+      "start_seconds": 163.48,
+      "end_seconds": 174.39999999999998
+    },
+    {
+      "text": "歴史書には壮大な国神話が記されとんねん",
+      "start_seconds": 168.56,
+      "end_seconds": 180.68
+    },
+    {
+      "text": "。そこには伊さんとイ波さんのご夫婦の神",
+      "start_seconds": 174.4,
+      "end_seconds": 188.36
+    },
+    {
+      "text": "様が天の浮き橋から大きな祠でコロ",
+      "start_seconds": 180.68,
+      "end_seconds": 194.59900000000002
+    },
+    {
+      "text": "コロと海をかき混ぜてとりと落ちた雫しが",
+      "start_seconds": 188.36,
+      "end_seconds": 198.68
+    },
+    {
+      "text": "固まってしまう島となった。それが",
+      "start_seconds": 194.599,
+      "end_seconds": 205.319
+    },
+    {
+      "text": "お島現代の虫と地元では伝わっとんねん。",
+      "start_seconds": 198.68,
+      "end_seconds": 210.36
+    },
+    {
+      "text": "お2人は初めに淡路島を、そして日本の",
+      "start_seconds": 205.319,
+      "end_seconds": 215.51899999999998
+    },
+    {
+      "text": "国土や神々を次々生み出してん。",
+      "start_seconds": 210.36,
+      "end_seconds": 222.59900000000002
+    },
+    {
+      "text": "そやからな、虫島とここ淡路島が日本の",
+      "start_seconds": 215.519,
+      "end_seconds": 226.36
+    },
+    {
+      "text": "始まりなんやで。",
+      "start_seconds": 222.599,
+      "end_seconds": 232.35999999999999
+    },
+    {
+      "text": "やけど、なんで日本の始まりが奈良や出雲",
+      "start_seconds": 226.36,
+      "end_seconds": 234.519
+    },
+    {
+      "text": "と千主島",
+      "start_seconds": 232.36,
+      "end_seconds": 239.31900000000002
+    },
+    {
+      "text": "や淡路島なんやと思う。",
+      "start_seconds": 234.519,
+      "end_seconds": 241.87900000000002
+    },
+    {
+      "text": "私はな、",
+      "start_seconds": 239.319,
+      "end_seconds": 247.959
+    },
+    {
+      "text": "乞食ができるもっと昔古代において虫と",
+      "start_seconds": 241.879,
+      "end_seconds": 252.28
+    },
+    {
+      "text": "淡路島が外な重要な場所やったからちゃう",
+      "start_seconds": 247.959,
+      "end_seconds": 256.44
+    },
+    {
+      "text": "かなと思っとんねん。",
+      "start_seconds": 252.28,
+      "end_seconds": 259.44
+    },
+    {
+      "text": "そんな思いながらガイドしとったらその",
+      "start_seconds": 256.44,
+      "end_seconds": 264.56
+    },
+    {
+      "text": "痕跡を付ける確信するべきものがどんどん",
+      "start_seconds": 259.44,
+      "end_seconds": 266.919
+    },
+    {
+      "text": "出てきてん。",
+      "start_seconds": 264.56,
+      "end_seconds": 271.919
+    },
+    {
+      "text": "うちの浦山で虚軍を見つけてんけど単なる",
+      "start_seconds": 266.919,
+      "end_seconds": 276.15999999999997
+    },
+    {
+      "text": "岩とちゃうかった。なんと4000年もの",
+      "start_seconds": 271.919,
+      "end_seconds": 281.039
+    },
+    {
+      "text": "間静かに眠り続けとった歴史的自然遺産",
+      "start_seconds": 276.16,
+      "end_seconds": 282.8
+    },
+    {
+      "text": "やって",
+      "start_seconds": 281.039,
+      "end_seconds": 287.84
+    },
+    {
+      "text": "そこには企科学、天文学、知質学に基づい",
+      "start_seconds": 282.8,
+      "end_seconds": 292.32
+    },
+    {
+      "text": "た太鼓の人からの明確なメッセージが刻ま",
+      "start_seconds": 287.84,
+      "end_seconds": 294.63899999999995
+    },
+    {
+      "text": "れとった。",
+      "start_seconds": 292.32,
+      "end_seconds": 299.0
+    },
+    {
+      "text": "現代の科学で紐も解けば紐も解くほど",
+      "start_seconds": 294.639,
+      "end_seconds": 304.88
+    },
+    {
+      "text": "想像を超える神話の世界が広がっとって",
+      "start_seconds": 299.0,
+      "end_seconds": 309.24
+    },
+    {
+      "text": "なあなあなんかワクワクしてけえへんけ?",
+      "start_seconds": 304.88,
+      "end_seconds": 313.32
+    },
+    {
+      "text": "ほんなら今からその未知なる世界へ",
+      "start_seconds": 309.24,
+      "end_seconds": 317.32
+    },
+    {
+      "text": "出かけっからな。",
+      "start_seconds": 313.32,
+      "end_seconds": 317.32
+    },
+    {
+      "text": "な、皆さんは",
+      "start_seconds": 320.96,
+      "end_seconds": 328.23999999999995
+    },
+    {
+      "text": "エジプトのピラミッドが巨大な宇宙の設計",
+      "start_seconds": 324.84,
+      "end_seconds": 331.63899999999995
+    },
+    {
+      "text": "図やったって知っとった。",
+      "start_seconds": 328.24,
+      "end_seconds": 336.40000000000003
+    },
+    {
+      "text": "3つのピラミッドがオリオン座る側が",
+      "start_seconds": 331.639,
+      "end_seconds": 340.84000000000003
+    },
+    {
+      "text": "天野川に配置されとんねん。古代の人は",
+      "start_seconds": 336.4,
+      "end_seconds": 345.28
+    },
+    {
+      "text": "夜空の星座を地上に下ろして聖地を作っ",
+      "start_seconds": 340.84,
+      "end_seconds": 348.0
+    },
+    {
+      "text": "とったんやわ。",
+      "start_seconds": 345.28,
+      "end_seconds": 354.23999999999995
+    },
+    {
+      "text": "ほんなら淡路島の7大政治をついだこの形",
+      "start_seconds": 348.0,
+      "end_seconds": 358.96
+    },
+    {
+      "text": "は何やと思う?",
+      "start_seconds": 354.24,
+      "end_seconds": 358.96000000000004
+    },
+    {
+      "text": "北斗星に似とんねんけど小座なんやんか。",
+      "start_seconds": 359.12,
+      "end_seconds": 369.88
+    },
+    {
+      "text": "ほんで大熊座は和歌山の熊野にほんでな",
+      "start_seconds": 363.88,
+      "end_seconds": 373.08
+    },
+    {
+      "text": "淡路島は昔から竜二に囲まれとると言われ",
+      "start_seconds": 369.88,
+      "end_seconds": 378.4
+    },
+    {
+      "text": "てんねんけど淡路市の周りには竜座",
+      "start_seconds": 373.08,
+      "end_seconds": 381.24
+    },
+    {
+      "text": "は琴平神宮",
+      "start_seconds": 378.4,
+      "end_seconds": 388.19899999999996
+    },
+    {
+      "text": "カオペア座はカオと東おがダブルで安念で",
+      "start_seconds": 381.24,
+      "end_seconds": 392.919
+    },
+    {
+      "text": "それからなんとな2万6000年の周期の",
+      "start_seconds": 388.199,
+      "end_seconds": 396.91900000000004
+    },
+    {
+      "text": "再運まで同じやねん。当てはまっとんねん",
+      "start_seconds": 392.919,
+      "end_seconds": 398.68
+    },
+    {
+      "text": "か。",
+      "start_seconds": 396.919,
+      "end_seconds": 402.75899999999996
+    },
+    {
+      "text": "今の北極生ポラリスは淡路島北部の八丁は",
+      "start_seconds": 398.68,
+      "end_seconds": 407.039
+    },
+    {
+      "text": "日しとんねんけど4000年前の北極生番",
+      "start_seconds": 402.759,
+      "end_seconds": 412.56
+    },
+    {
+      "text": "はなんと盗島にドンピシャで当てはまっ",
+      "start_seconds": 407.039,
+      "end_seconds": 419.479
+    },
+    {
+      "text": "とってん。ほんまびっくりやで。",
+      "start_seconds": 412.56,
+      "end_seconds": 419.479
+    },
+    {
+      "text": "それからな、冒頭で触れたスフィンクスは",
+      "start_seconds": 419.68,
+      "end_seconds": 427.40000000000003
+    },
+    {
+      "text": "なんやけど、エジプトのスフィンクスと形",
+      "start_seconds": 423.44,
+      "end_seconds": 431.16
+    },
+    {
+      "text": "が似るだけとちゃうで、",
+      "start_seconds": 427.4,
+      "end_seconds": 435.87899999999996
+    },
+    {
+      "text": "なんと太陽の動きを清密に計算して厳選さ",
+      "start_seconds": 431.16,
+      "end_seconds": 440.96000000000004
+    },
+    {
+      "text": "れた特別な場所やってん。",
+      "start_seconds": 435.879,
+      "end_seconds": 445.319
+    },
+    {
+      "text": "目の前には高さ30mの神立て神岩が見え",
+      "start_seconds": 440.96,
+      "end_seconds": 450.56
+    },
+    {
+      "text": "んねんけど、こ地図で調べたら昔はなんと",
+      "start_seconds": 445.319,
+      "end_seconds": 454.72
+    },
+    {
+      "text": "100m以上の高さがあってんか。",
+      "start_seconds": 450.56,
+      "end_seconds": 460.52
+    },
+    {
+      "text": "ほんで竜宮の門と呼ばれとって古代から",
+      "start_seconds": 454.72,
+      "end_seconds": 464.44000000000005
+    },
+    {
+      "text": "オベリスクとして伊さんイ波さんの2柱と",
+      "start_seconds": 460.52,
+      "end_seconds": 468.599
+    },
+    {
+      "text": "して退地されてきてて",
+      "start_seconds": 464.44,
+      "end_seconds": 472.4
+    },
+    {
+      "text": "スフィンクス岩から見て古代の下子には",
+      "start_seconds": 468.599,
+      "end_seconds": 476.08
+    },
+    {
+      "text": "神立て神岩から太陽が登り",
+      "start_seconds": 472.4,
+      "end_seconds": 482.31899999999996
+    },
+    {
+      "text": "春分週終の日にはお山の山頂に沈んだった",
+      "start_seconds": 476.08,
+      "end_seconds": 486.0
+    },
+    {
+      "text": "それだけとちゃうで今は海の底なんやけど",
+      "start_seconds": 482.319,
+      "end_seconds": 489.0
+    },
+    {
+      "text": "、",
+      "start_seconds": 486.0,
+      "end_seconds": 489.0
+    },
+    {
+      "text": "春分、終聞、当時の日の出の方にも方向に",
+      "start_seconds": 489.879,
+      "end_seconds": 498.72
+    },
+    {
+      "text": "も巨大な岩があって、",
+      "start_seconds": 494.039,
+      "end_seconds": 503.0
+    },
+    {
+      "text": "両門早期には海面が今より100mぐらい",
+      "start_seconds": 498.72,
+      "end_seconds": 507.44000000000005
+    },
+    {
+      "text": "低かったから、実は海面上のランドマーク",
+      "start_seconds": 503.0,
+      "end_seconds": 512.64
+    },
+    {
+      "text": "になっとって、つまり全ての方向にレイ",
+      "start_seconds": 507.44,
+      "end_seconds": 516.12
+    },
+    {
+      "text": "ポイントがあっで、その中心点が",
+      "start_seconds": 512.64,
+      "end_seconds": 520.76
+    },
+    {
+      "text": "スフィンクス岩と神立て神岩やった。",
+      "start_seconds": 516.12,
+      "end_seconds": 527.88
+    },
+    {
+      "text": "そう、ここが国海神話の舞台。日本の原点",
+      "start_seconds": 520.76,
+      "end_seconds": 530.959
+    },
+    {
+      "text": "やったんやで。",
+      "start_seconds": 527.88,
+      "end_seconds": 536.12
+    },
+    {
+      "text": "そこにはな、驚くことに太鼓の昔に完璧に",
+      "start_seconds": 530.959,
+      "end_seconds": 542.0
+    },
+    {
+      "text": "設計された太陽の道の設計図があった。",
+      "start_seconds": 536.12,
+      "end_seconds": 546.36
+    },
+    {
+      "text": "その設計図の形がな、実は上から見ると",
+      "start_seconds": 542.0,
+      "end_seconds": 551.399
+    },
+    {
+      "text": "巨大なXになっとんねん。",
+      "start_seconds": 546.36,
+      "end_seconds": 557.04
+    },
+    {
+      "text": "その設計図は虫だけと淡路島本当にもあっ",
+      "start_seconds": 551.399,
+      "end_seconds": 563.24
+    },
+    {
+      "text": "て伊神宮を拠点にXになっとる。それ",
+      "start_seconds": 557.04,
+      "end_seconds": 571.24
+    },
+    {
+      "text": "が奈良や異性出雲へと展開しとんねんで",
+      "start_seconds": 563.24,
+      "end_seconds": 571.24
+    },
+    {
+      "text": "の神立て神岩は",
+      "start_seconds": 572.6,
+      "end_seconds": 580.0
+    },
+    {
+      "text": "男性のイ岩",
+      "start_seconds": 577.68,
+      "end_seconds": 584.12
+    },
+    {
+      "text": "下神岩は女性神のイ波岩",
+      "start_seconds": 580.0,
+      "end_seconds": 587.8
+    },
+    {
+      "text": "エジプトのオシリスとイシスのオベリスク",
+      "start_seconds": 584.12,
+      "end_seconds": 592.839
+    },
+    {
+      "text": "と同じやねん。実はオベリスクが陸から",
+      "start_seconds": 587.8,
+      "end_seconds": 598.0
+    },
+    {
+      "text": "伝わったんが鳥海から伝わったんが男女心",
+      "start_seconds": 592.839,
+      "end_seconds": 602.2790000000001
+    },
+    {
+      "text": "の岩が柱なんか",
+      "start_seconds": 598.0,
+      "end_seconds": 605.12
+    },
+    {
+      "text": "その",
+      "start_seconds": 602.279,
+      "end_seconds": 609.279
+    },
+    {
+      "text": "先端のオベリスクの上にある便子を上から",
+      "start_seconds": 605.12,
+      "end_seconds": 613.16
+    },
+    {
+      "text": "見たらXになっとんねん。なんと",
+      "start_seconds": 609.279,
+      "end_seconds": 616.519
+    },
+    {
+      "text": "ピラビントも上から見たら",
+      "start_seconds": 613.16,
+      "end_seconds": 623.92
+    },
+    {
+      "text": "Xなんやで。それがな古代出雲の新門や",
+      "start_seconds": 616.519,
+      "end_seconds": 629.399
+    },
+    {
+      "text": "神社の屋根のちぎにもXが入っとんねん。",
+      "start_seconds": 623.92,
+      "end_seconds": 636.92
+    },
+    {
+      "text": "このXは男性と著精神の交わり。つまり",
+      "start_seconds": 629.399,
+      "end_seconds": 641.44
+    },
+    {
+      "text": "子孫繁栄を意味しとんねん。別の時代も",
+      "start_seconds": 636.92,
+      "end_seconds": 648.92
+    },
+    {
+      "text": "世界中どこでも大切なことは一緒やなあ。",
+      "start_seconds": 641.44,
+      "end_seconds": 648.9200000000001
+    },
+    {
+      "text": "ところでな、皆さんこの国神話の舞台の",
+      "start_seconds": 649.279,
+      "end_seconds": 658.16
+    },
+    {
+      "text": "海底を探したら絶対なんか出てくると思わ",
+      "start_seconds": 653.8,
+      "end_seconds": 665.76
+    },
+    {
+      "text": "へん。実は今陸と海の秘怯をつなぐ広大な",
+      "start_seconds": 658.16,
+      "end_seconds": 670.12
+    },
+    {
+      "text": "海底探査プロジェクト計画しとんねん。の",
+      "start_seconds": 665.76,
+      "end_seconds": 674.36
+    },
+    {
+      "text": "中からも歴史的自然遺産を見つけし楽しみ",
+      "start_seconds": 670.12,
+      "end_seconds": 678.12
+    },
+    {
+      "text": "にしとってな。",
+      "start_seconds": 674.36,
+      "end_seconds": 678.12
+    },
+    {
+      "text": "これからな海の中だけとちゃうで淡路市の",
+      "start_seconds": 680.16,
+      "end_seconds": 692.6
+    },
+    {
+      "text": "山の中にも空にそびえる巨大なイ波さんの",
+      "start_seconds": 685.48,
+      "end_seconds": 697.9200000000001
+    },
+    {
+      "text": "シンボルヒモロギがあんねん。じゃあつい",
+      "start_seconds": 692.6,
+      "end_seconds": 703.16
+    },
+    {
+      "text": "になるさんの岩はどこにあんのやろうって",
+      "start_seconds": 697.92,
+      "end_seconds": 707.959
+    },
+    {
+      "text": "私らは古代の例を研究して絶対ここにある",
+      "start_seconds": 703.16,
+      "end_seconds": 712.959
+    },
+    {
+      "text": "はずやと密林の中を探してとうとう",
+      "start_seconds": 707.959,
+      "end_seconds": 717.399
+    },
+    {
+      "text": "見つけ出したその挙石軍には",
+      "start_seconds": 712.959,
+      "end_seconds": 721.88
+    },
+    {
+      "text": "人1人が通れぐらいの穴が開いとってもう",
+      "start_seconds": 717.399,
+      "end_seconds": 726.36
+    },
+    {
+      "text": "1度生まれることを体験できんね",
+      "start_seconds": 721.88,
+      "end_seconds": 732.48
+    },
+    {
+      "text": "私らはイ波岩の体内くぐりって呼んどる。",
+      "start_seconds": 726.36,
+      "end_seconds": 736.9590000000001
+    },
+    {
+      "text": "暗くて狭い岩の間をくぐり抜ける時",
+      "start_seconds": 732.48,
+      "end_seconds": 741.32
+    },
+    {
+      "text": "ドキドキするなとかその先にある絶景を見",
+      "start_seconds": 736.959,
+      "end_seconds": 747.04
+    },
+    {
+      "text": "てなんて世界は美しいんだろうって。",
+      "start_seconds": 741.32,
+      "end_seconds": 750.1990000000001
+    },
+    {
+      "text": "お母さんの中の中から生まれてくる時の",
+      "start_seconds": 747.04,
+      "end_seconds": 756.959
+    },
+    {
+      "text": "記憶とし苦したわ。ほんでこの形な虫",
+      "start_seconds": 750.199,
+      "end_seconds": 760.68
+    },
+    {
+      "text": "そっくりやねん。",
+      "start_seconds": 756.959,
+      "end_seconds": 760.68
+    },
+    {
+      "text": "私な各新視点子宮っていう友字は子供のお",
+      "start_seconds": 760.959,
+      "end_seconds": 771.8389999999999
+    },
+    {
+      "text": "さんって書くやろう。私ら1人1人はお宮",
+      "start_seconds": 766.959,
+      "end_seconds": 776.2399999999999
+    },
+    {
+      "text": "さんから生まれた伊さんやイ波さんのよう",
+      "start_seconds": 771.839,
+      "end_seconds": 782.9200000000001
+    },
+    {
+      "text": "に尊い存在で今ここに生き取る神様その",
+      "start_seconds": 776.24,
+      "end_seconds": 786.76
+    },
+    {
+      "text": "ものなんやと。",
+      "start_seconds": 782.92,
+      "end_seconds": 786.76
+    },
+    {
+      "text": "そんな風に山に出かけるたびにあ、あの岩",
+      "start_seconds": 788.68,
+      "end_seconds": 797.199
+    },
+    {
+      "text": "に目玉が見える。",
+      "start_seconds": 793.839,
+      "end_seconds": 800.0400000000001
+    },
+    {
+      "text": "ペトログリフちゃうか。",
+      "start_seconds": 797.199,
+      "end_seconds": 805.3599999999999
+    },
+    {
+      "text": "今も驚くような発見が続いとんねんか。",
+      "start_seconds": 800.04,
+      "end_seconds": 810.079
+    },
+    {
+      "text": "ヒモロギや籍軍にはインダスやシュメール",
+      "start_seconds": 805.36,
+      "end_seconds": 815.399
+    },
+    {
+      "text": "文字ルーズのペトログリフが残っとる。",
+      "start_seconds": 810.079,
+      "end_seconds": 819.959
+    },
+    {
+      "text": "そやけど不思議に思わへん。",
+      "start_seconds": 815.399,
+      "end_seconds": 825.279
+    },
+    {
+      "text": "エジプトやメソポタミアと日本はガな離れ",
+      "start_seconds": 819.959,
+      "end_seconds": 830.3199999999999
+    },
+    {
+      "text": "とんのになんで淡路島にペトロクリフが",
+      "start_seconds": 825.279,
+      "end_seconds": 832.8
+    },
+    {
+      "text": "あるんやろう。",
+      "start_seconds": 830.32,
+      "end_seconds": 836.88
+    },
+    {
+      "text": "それだけとちゃう太陽を観測する仕組みや",
+      "start_seconds": 832.8,
+      "end_seconds": 839.92
+    },
+    {
+      "text": "星座の配置の一致",
+      "start_seconds": 836.88,
+      "end_seconds": 844.48
+    },
+    {
+      "text": "Xのシンボルそれからな日本神話と",
+      "start_seconds": 839.92,
+      "end_seconds": 848.3199999999999
+    },
+    {
+      "text": "エジプト神話も2とんねん。",
+      "start_seconds": 844.48,
+      "end_seconds": 853.72
+    },
+    {
+      "text": "日本神話は伊さんが亡くなった伊波さんを",
+      "start_seconds": 848.32,
+      "end_seconds": 858.1990000000001
+    },
+    {
+      "text": "探しに富の国に行った帰りにみぎをして",
+      "start_seconds": 853.72,
+      "end_seconds": 863.48
+    },
+    {
+      "text": "右目を洗ったら月の神つ読み左目を洗っ",
+      "start_seconds": 858.199,
+      "end_seconds": 868.079
+    },
+    {
+      "text": "たら太陽神アマテラス花を洗ったら",
+      "start_seconds": 863.48,
+      "end_seconds": 872.44
+    },
+    {
+      "text": "暴れん坊のスノーが生まれてん",
+      "start_seconds": 868.079,
+      "end_seconds": 877.04
+    },
+    {
+      "text": "エジプト神話ではイシスがオシリスを探し",
+      "start_seconds": 872.44,
+      "end_seconds": 878.6800000000001
+    },
+    {
+      "text": "に行っ",
+      "start_seconds": 877.04,
+      "end_seconds": 886.56
+    },
+    {
+      "text": "右の目は太陽神ラー左の目は月の神ウド",
+      "start_seconds": 878.68,
+      "end_seconds": 891.16
+    },
+    {
+      "text": "そしてな大きな花が特徴で暴れん坊の",
+      "start_seconds": 886.56,
+      "end_seconds": 894.5189999999999
+    },
+    {
+      "text": "瀬戸心まで登場すんねん",
+      "start_seconds": 891.16,
+      "end_seconds": 899.36
+    },
+    {
+      "text": "なあなあここまで同じもんがあるってどう",
+      "start_seconds": 894.519,
+      "end_seconds": 903.12
+    },
+    {
+      "text": "いうことやと思う",
+      "start_seconds": 899.36,
+      "end_seconds": 903.12
+    },
+    {
+      "text": "それはな、かつて世界は国や国境もなかっ",
+      "start_seconds": 906.04,
+      "end_seconds": 914.92
+    },
+    {
+      "text": "た。全てがネットワークのように繋がっ",
+      "start_seconds": 910.92,
+      "end_seconds": 920.759
+    },
+    {
+      "text": "とって自由に生きしとった世界は1つワン",
+      "start_seconds": 914.92,
+      "end_seconds": 924.36
+    },
+    {
+      "text": "の時代があったってことなんや。",
+      "start_seconds": 920.759,
+      "end_seconds": 929.6
+    },
+    {
+      "text": "つまり神話は人類の公開にしやったてこと",
+      "start_seconds": 924.36,
+      "end_seconds": 932.16
+    },
+    {
+      "text": "。",
+      "start_seconds": 929.6,
+      "end_seconds": 937.0
+    },
+    {
+      "text": "神話は単なる作り話とちゃうで。今も",
+      "start_seconds": 932.16,
+      "end_seconds": 942.0
+    },
+    {
+      "text": "淡路島の山の中や海の底に行き続けとるご",
+      "start_seconds": 937.0,
+      "end_seconds": 946.36
+    },
+    {
+      "text": "先祖さんたちの実はや",
+      "start_seconds": 942.0,
+      "end_seconds": 949.72
+    },
+    {
+      "text": "その真層に触れるっていうことは狭い世界",
+      "start_seconds": 946.36,
+      "end_seconds": 953.9590000000001
+    },
+    {
+      "text": "を飛び出して人類の壮大なルーツを思い出",
+      "start_seconds": 949.72,
+      "end_seconds": 957.5600000000001
+    },
+    {
+      "text": "すってことなんや。",
+      "start_seconds": 953.959,
+      "end_seconds": 962.56
+    },
+    {
+      "text": "ほんでこの証海峡お足",
+      "start_seconds": 957.56,
+      "end_seconds": 966.959
+    },
+    {
+      "text": "単なる橋とちゃうで",
+      "start_seconds": 962.56,
+      "end_seconds": 970.88
+    },
+    {
+      "text": "巨大な日本の首は",
+      "start_seconds": 966.959,
+      "end_seconds": 975.1199999999999
+    },
+    {
+      "text": "伊さんと伊波さんの2柱",
+      "start_seconds": 970.88,
+      "end_seconds": 979.399
+    },
+    {
+      "text": "そこにかかった釣り橋は",
+      "start_seconds": 975.12,
+      "end_seconds": 985.399
+    },
+    {
+      "text": "まさに現代の天の浮き橋島",
+      "start_seconds": 979.399,
+      "end_seconds": 985.399
+    },
+    {
+      "text": "で自分この中の神様を目覚めさせたあなた",
+      "start_seconds": 985.959,
+      "end_seconds": 994.5999999999999
+    },
+    {
+      "text": "があの橋を渡って日常生活へと戻っていく",
+      "start_seconds": 989.68,
+      "end_seconds": 996.319
+    },
+    {
+      "text": "。",
+      "start_seconds": 994.6,
+      "end_seconds": 998.0400000000001
+    },
+    {
+      "text": "それは",
+      "start_seconds": 996.319,
+      "end_seconds": 1003.16
+    },
+    {
+      "text": "あなたが新しい人生という国づりのために",
+      "start_seconds": 998.04,
+      "end_seconds": 1008.16
+    },
+    {
+      "text": "再出発するっていうことなんや。",
+      "start_seconds": 1003.16,
+      "end_seconds": 1008.16
+    },
+    {
+      "text": "最後にもう1回言うよう聞いといてな。",
+      "start_seconds": 1008.759,
+      "end_seconds": 1019.759
+    },
+    {
+      "text": "神話は昔の物語で読むもんちゃうで。",
+      "start_seconds": 1013.88,
+      "end_seconds": 1025.0
+    },
+    {
+      "text": "あなた自身が今日この瞬間から救っていく",
+      "start_seconds": 1019.759,
+      "end_seconds": 1027.039
+    },
+    {
+      "text": "もんや。",
+      "start_seconds": 1025.0,
+      "end_seconds": 1031.799
+    },
+    {
+      "text": "自分が神話の主人公やって思ったら人生の",
+      "start_seconds": 1027.039,
+      "end_seconds": 1036.679
+    },
+    {
+      "text": "景色がりと変わんで",
+      "start_seconds": 1031.799,
+      "end_seconds": 1043.039
+    },
+    {
+      "text": "自分が神様やったら隣におる人も神様",
+      "start_seconds": 1036.679,
+      "end_seconds": 1047.2800000000002
+    },
+    {
+      "text": "お互いを尊重し合えたらそこに争いはも",
+      "start_seconds": 1043.039,
+      "end_seconds": 1050.76
+    },
+    {
+      "text": "あれへん。",
+      "start_seconds": 1047.28,
+      "end_seconds": 1050.76
+    },
+    {
+      "text": "それがこれからの人類が平和につがって",
+      "start_seconds": 1050.919,
+      "end_seconds": 1059.48
+    },
+    {
+      "text": "いく鍵で",
+      "start_seconds": 1056.0,
+      "end_seconds": 1064.679
+    },
+    {
+      "text": "今日からあなたの言葉、あなたの行動、",
+      "start_seconds": 1059.48,
+      "end_seconds": 1069.799
+    },
+    {
+      "text": "その1つ1つが神話の1ページになるから",
+      "start_seconds": 1064.679,
+      "end_seconds": 1073.0
+    },
+    {
+      "text": "な。",
+      "start_seconds": 1069.799,
+      "end_seconds": 1073.0
+    },
+    {
+      "text": "なあ[息をのむ音]なあ、淡路島から",
+      "start_seconds": 1074.0,
+      "end_seconds": 1079.679
+    },
+    {
+      "text": "初めて見ひんか?",
+      "start_seconds": 1076.96,
+      "end_seconds": 1084.2
+    },
+    {
+      "text": "あなたという神様が作る新しい素晴らしい",
+      "start_seconds": 1079.679,
+      "end_seconds": 1089.039
+    },
+    {
+      "text": "神話の世界を",
+      "start_seconds": 1084.2,
+      "end_seconds": 1089.039
+    },
+    {
+      "text": "2026年6月21日下の今日が1000",
+      "start_seconds": 1089.44,
+      "end_seconds": 1099.039
+    },
+    {
+      "text": "年先、2000年先へと続く",
+      "start_seconds": 1094.2,
+      "end_seconds": 1105.4
+    },
+    {
+      "text": "私たちの新たな神話の幕明けやから",
+      "start_seconds": 1099.039,
+      "end_seconds": 1110.6
+    },
+    {
+      "text": "絶対忘れんといてや。",
+      "start_seconds": 1105.4,
+      "end_seconds": 1110.6000000000001
+    },
+    {
+      "text": "皆さん最後まで聞いてくれてほんま",
+      "start_seconds": 1110.679,
+      "end_seconds": 1117.442
+    },
+    {
+      "text": "ありがとう。",
+      "start_seconds": 1114.12,
+      "end_seconds": 1119.462
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 1117.442,
+      "end_seconds": 1119.462
+    }
+  ],
+  "display_captions": [
+    {
+      "text": "ねえ、今あなたが目の前に見ているものは",
+      "start_seconds": 6.759,
+      "end_seconds": 11.04,
+      "id": "5lis7Dhb9s4-display-0001",
+      "segment_id": "5lis7Dhb9s4-ja-0001"
+    },
+    {
+      "text": "一体何だと思う?",
+      "start_seconds": 11.04,
+      "end_seconds": 14.08,
+      "id": "5lis7Dhb9s4-display-0002",
+      "segment_id": "5lis7Dhb9s4-ja-0001"
+    },
+    {
+      "text": "私がこの岩を島から初めて見た時、大きな",
+      "start_seconds": 14.08,
+      "end_seconds": 18.039,
+      "id": "5lis7Dhb9s4-display-0003",
+      "segment_id": "5lis7Dhb9s4-ja-0002"
+    },
+    {
+      "text": "亀に見えて浦島太郎の昔話を思い出しまし",
+      "start_seconds": 18.039,
+      "end_seconds": 22.16,
+      "id": "5lis7Dhb9s4-display-0004",
+      "segment_id": "5lis7Dhb9s4-ja-0002"
+    },
+    {
+      "text": "た。",
+      "start_seconds": 22.16,
+      "end_seconds": 23.8,
+      "id": "5lis7Dhb9s4-display-0005",
+      "segment_id": "5lis7Dhb9s4-ja-0002"
+    },
+    {
+      "text": "ところが船に乗り、海側から見た瞬間、",
+      "start_seconds": 23.8,
+      "end_seconds": 28.039,
+      "id": "5lis7Dhb9s4-display-0006",
+      "segment_id": "5lis7Dhb9s4-ja-0003"
+    },
+    {
+      "text": "あれ、スフィンクスやと息を飲みました。",
+      "start_seconds": 28.039,
+      "end_seconds": 34.44,
+      "id": "5lis7Dhb9s4-display-0007",
+      "segment_id": "5lis7Dhb9s4-ja-0003"
+    },
+    {
+      "text": "実に美しい曲線をしたスフィンクスの姿。",
+      "start_seconds": 34.44,
+      "end_seconds": 39.76,
+      "id": "5lis7Dhb9s4-display-0008",
+      "segment_id": "5lis7Dhb9s4-ja-0004"
+    },
+    {
+      "text": "しかもよく調べると高さ16m、幅25m",
+      "start_seconds": 39.76,
+      "end_seconds": 45.76,
+      "id": "5lis7Dhb9s4-display-0009",
+      "segment_id": "5lis7Dhb9s4-ja-0005"
+    },
+    {
+      "text": "、長さは73mとエジプトギザノ",
+      "start_seconds": 45.76,
+      "end_seconds": 51.12,
+      "id": "5lis7Dhb9s4-display-0010",
+      "segment_id": "5lis7Dhb9s4-ja-0005"
+    },
+    {
+      "text": "スフィンクスとほぼ同じ大きさだったの",
+      "start_seconds": 51.12,
+      "end_seconds": 54.44,
+      "id": "5lis7Dhb9s4-display-0011",
+      "segment_id": "5lis7Dhb9s4-ja-0006"
+    },
+    {
+      "text": "です。",
+      "start_seconds": 54.44,
+      "end_seconds": 57.199,
+      "id": "5lis7Dhb9s4-display-0012",
+      "segment_id": "5lis7Dhb9s4-ja-0006"
+    },
+    {
+      "text": "これは自然にできたもの。",
+      "start_seconds": 57.199,
+      "end_seconds": 60.84,
+      "id": "5lis7Dhb9s4-display-0013",
+      "segment_id": "5lis7Dhb9s4-ja-0007"
+    },
+    {
+      "text": "誰かが作ったの?なぜ国海神の原点お島と",
+      "start_seconds": 60.84,
+      "end_seconds": 67.6,
+      "id": "5lis7Dhb9s4-display-0014",
+      "segment_id": "5lis7Dhb9s4-ja-0008"
+    },
+    {
+      "text": "呼ばれる虫にあるの?",
+      "start_seconds": 67.6,
+      "end_seconds": 72.52,
+      "id": "5lis7Dhb9s4-display-0015",
+      "segment_id": "5lis7Dhb9s4-ja-0008"
+    },
+    {
+      "text": "皆さんこんちは。淡路島生まれ淡路島育の",
+      "start_seconds": 75.2,
+      "end_seconds": 79.759,
+      "id": "5lis7Dhb9s4-display-0016",
+      "segment_id": "5lis7Dhb9s4-ja-0009"
+    },
+    {
+      "text": "竹谷藤子やで。あんな私相方のムーサと島",
+      "start_seconds": 79.759,
+      "end_seconds": 85.88,
+      "id": "5lis7Dhb9s4-display-0017",
+      "segment_id": "5lis7Dhb9s4-ja-0009"
+    },
+    {
+      "text": "でウェルネスツアをしとんねんか。私らの",
+      "start_seconds": 85.88,
+      "end_seconds": 89.439,
+      "id": "5lis7Dhb9s4-display-0018",
+      "segment_id": "5lis7Dhb9s4-ja-0010"
+    },
+    {
+      "text": "ガイドは一味も2味もちゃうねんで世界初",
+      "start_seconds": 89.439,
+      "end_seconds": 94.92,
+      "id": "5lis7Dhb9s4-display-0019",
+      "segment_id": "5lis7Dhb9s4-ja-0010"
+    },
+    {
+      "text": "世界でここだけの海ホタル賞や国海神話を",
+      "start_seconds": 94.92,
+      "end_seconds": 98.84,
+      "id": "5lis7Dhb9s4-display-0020",
+      "segment_id": "5lis7Dhb9s4-ja-0011"
+    },
+    {
+      "text": "紐解く聖地を案内しとんねん。",
+      "start_seconds": 98.84,
+      "end_seconds": 102.92,
+      "id": "5lis7Dhb9s4-display-0021",
+      "segment_id": "5lis7Dhb9s4-ja-0011"
+    },
+    {
+      "text": "実を言うと私淡路島によっさある漁軍の1",
+      "start_seconds": 102.92,
+      "end_seconds": 108.479,
+      "id": "5lis7Dhb9s4-display-0022",
+      "segment_id": "5lis7Dhb9s4-ja-0012"
+    },
+    {
+      "text": "つ一族の神様を古代から守り続けとる法斎",
+      "start_seconds": 108.479,
+      "end_seconds": 114.28,
+      "id": "5lis7Dhb9s4-display-0023",
+      "segment_id": "5lis7Dhb9s4-ja-0012"
+    },
+    {
+      "text": "の松江なんやは",
+      "start_seconds": 114.28,
+      "end_seconds": 117.64,
+      "id": "5lis7Dhb9s4-display-0024",
+      "segment_id": "5lis7Dhb9s4-ja-0013"
+    },
+    {
+      "text": "今日話をすんのは",
+      "start_seconds": 117.64,
+      "end_seconds": 121.28,
+      "id": "5lis7Dhb9s4-display-0025",
+      "segment_id": "5lis7Dhb9s4-ja-0013"
+    },
+    {
+      "text": "何年もかけて私らが路島の卑境を探索し",
+      "start_seconds": 121.28,
+      "end_seconds": 128.56,
+      "id": "5lis7Dhb9s4-display-0026",
+      "segment_id": "5lis7Dhb9s4-ja-0014"
+    },
+    {
+      "text": "そして顧問所を研究して見つけ出し",
+      "start_seconds": 128.56,
+      "end_seconds": 133.08,
+      "id": "5lis7Dhb9s4-display-0027",
+      "segment_id": "5lis7Dhb9s4-ja-0014"
+    },
+    {
+      "text": "驚くべき新発見と",
+      "start_seconds": 133.08,
+      "end_seconds": 137.2,
+      "id": "5lis7Dhb9s4-display-0028",
+      "segment_id": "5lis7Dhb9s4-ja-0015"
+    },
+    {
+      "text": "ご先祖さんたちが私たちに託してくれた",
+      "start_seconds": 137.2,
+      "end_seconds": 140.319,
+      "id": "5lis7Dhb9s4-display-0029",
+      "segment_id": "5lis7Dhb9s4-ja-0015"
+    },
+    {
+      "text": "太鼓のメッセージなんや。教科書にも載っ",
+      "start_seconds": 140.319,
+      "end_seconds": 144.76,
+      "id": "5lis7Dhb9s4-display-0030",
+      "segment_id": "5lis7Dhb9s4-ja-0015"
+    },
+    {
+      "text": "てへん。ガイドブックにも載ってへん。私",
+      "start_seconds": 144.76,
+      "end_seconds": 148.2,
+      "id": "5lis7Dhb9s4-display-0031",
+      "segment_id": "5lis7Dhb9s4-ja-0016"
+    },
+    {
+      "text": "らにしか伝えられへんことやねん。",
+      "start_seconds": 148.2,
+      "end_seconds": 153.599,
+      "id": "5lis7Dhb9s4-display-0032",
+      "segment_id": "5lis7Dhb9s4-ja-0016"
+    },
+    {
+      "text": "なあなあ。日本がどうやって生まれたか",
+      "start_seconds": 156.04,
+      "end_seconds": 161.12,
+      "id": "5lis7Dhb9s4-display-0033",
+      "segment_id": "5lis7Dhb9s4-ja-0017"
+    },
+    {
+      "text": "知っとっけ?",
+      "start_seconds": 161.12,
+      "end_seconds": 163.48,
+      "id": "5lis7Dhb9s4-display-0034",
+      "segment_id": "5lis7Dhb9s4-ja-0017"
+    },
+    {
+      "text": "今から1300年前に偏された日本最古の",
+      "start_seconds": 163.48,
+      "end_seconds": 168.56,
+      "id": "5lis7Dhb9s4-display-0035",
+      "segment_id": "5lis7Dhb9s4-ja-0018"
+    },
+    {
+      "text": "歴史書には壮大な国神話が記されとんねん",
+      "start_seconds": 168.56,
+      "end_seconds": 174.4,
+      "id": "5lis7Dhb9s4-display-0036",
+      "segment_id": "5lis7Dhb9s4-ja-0018"
+    },
+    {
+      "text": "。そこには伊さんとイ波さんのご夫婦の神",
+      "start_seconds": 174.4,
+      "end_seconds": 180.68,
+      "id": "5lis7Dhb9s4-display-0037",
+      "segment_id": "5lis7Dhb9s4-ja-0019"
+    },
+    {
+      "text": "様が天の浮き橋から大きな祠でコロ",
+      "start_seconds": 180.68,
+      "end_seconds": 188.36,
+      "id": "5lis7Dhb9s4-display-0038",
+      "segment_id": "5lis7Dhb9s4-ja-0020"
+    },
+    {
+      "text": "コロと海をかき混ぜてとりと落ちた雫しが",
+      "start_seconds": 188.36,
+      "end_seconds": 194.599,
+      "id": "5lis7Dhb9s4-display-0039",
+      "segment_id": "5lis7Dhb9s4-ja-0021"
+    },
+    {
+      "text": "固まってしまう島となった。それが",
+      "start_seconds": 194.599,
+      "end_seconds": 198.68,
+      "id": "5lis7Dhb9s4-display-0040",
+      "segment_id": "5lis7Dhb9s4-ja-0021"
+    },
+    {
+      "text": "お島現代の虫と地元では伝わっとんねん。",
+      "start_seconds": 198.68,
+      "end_seconds": 205.319,
+      "id": "5lis7Dhb9s4-display-0041",
+      "segment_id": "5lis7Dhb9s4-ja-0022"
+    },
+    {
+      "text": "お2人は初めに淡路島を、そして日本の",
+      "start_seconds": 205.319,
+      "end_seconds": 210.36,
+      "id": "5lis7Dhb9s4-display-0042",
+      "segment_id": "5lis7Dhb9s4-ja-0023"
+    },
+    {
+      "text": "国土や神々を次々生み出してん。",
+      "start_seconds": 210.36,
+      "end_seconds": 215.519,
+      "id": "5lis7Dhb9s4-display-0043",
+      "segment_id": "5lis7Dhb9s4-ja-0023"
+    },
+    {
+      "text": "そやからな、虫島とここ淡路島が日本の",
+      "start_seconds": 215.519,
+      "end_seconds": 222.599,
+      "id": "5lis7Dhb9s4-display-0044",
+      "segment_id": "5lis7Dhb9s4-ja-0024"
+    },
+    {
+      "text": "始まりなんやで。",
+      "start_seconds": 222.599,
+      "end_seconds": 226.36,
+      "id": "5lis7Dhb9s4-display-0045",
+      "segment_id": "5lis7Dhb9s4-ja-0024"
+    },
+    {
+      "text": "やけど、なんで日本の始まりが奈良や出雲",
+      "start_seconds": 226.36,
+      "end_seconds": 232.36,
+      "id": "5lis7Dhb9s4-display-0046",
+      "segment_id": "5lis7Dhb9s4-ja-0025"
+    },
+    {
+      "text": "と千主島",
+      "start_seconds": 232.36,
+      "end_seconds": 234.519,
+      "id": "5lis7Dhb9s4-display-0047",
+      "segment_id": "5lis7Dhb9s4-ja-0025"
+    },
+    {
+      "text": "や淡路島なんやと思う。",
+      "start_seconds": 234.519,
+      "end_seconds": 239.319,
+      "id": "5lis7Dhb9s4-display-0048",
+      "segment_id": "5lis7Dhb9s4-ja-0026"
+    },
+    {
+      "text": "私はな、",
+      "start_seconds": 239.319,
+      "end_seconds": 241.879,
+      "id": "5lis7Dhb9s4-display-0049",
+      "segment_id": "5lis7Dhb9s4-ja-0027"
+    },
+    {
+      "text": "乞食ができるもっと昔古代において虫と",
+      "start_seconds": 241.879,
+      "end_seconds": 247.959,
+      "id": "5lis7Dhb9s4-display-0050",
+      "segment_id": "5lis7Dhb9s4-ja-0027"
+    },
+    {
+      "text": "淡路島が外な重要な場所やったからちゃう",
+      "start_seconds": 247.959,
+      "end_seconds": 252.28,
+      "id": "5lis7Dhb9s4-display-0051",
+      "segment_id": "5lis7Dhb9s4-ja-0028"
+    },
+    {
+      "text": "かなと思っとんねん。",
+      "start_seconds": 252.28,
+      "end_seconds": 256.44,
+      "id": "5lis7Dhb9s4-display-0052",
+      "segment_id": "5lis7Dhb9s4-ja-0028"
+    },
+    {
+      "text": "そんな思いながらガイドしとったらその",
+      "start_seconds": 256.44,
+      "end_seconds": 259.44,
+      "id": "5lis7Dhb9s4-display-0053",
+      "segment_id": "5lis7Dhb9s4-ja-0029"
+    },
+    {
+      "text": "痕跡を付ける確信するべきものがどんどん",
+      "start_seconds": 259.44,
+      "end_seconds": 264.56,
+      "id": "5lis7Dhb9s4-display-0054",
+      "segment_id": "5lis7Dhb9s4-ja-0029"
+    },
+    {
+      "text": "出てきてん。",
+      "start_seconds": 264.56,
+      "end_seconds": 266.919,
+      "id": "5lis7Dhb9s4-display-0055",
+      "segment_id": "5lis7Dhb9s4-ja-0029"
+    },
+    {
+      "text": "うちの浦山で虚軍を見つけてんけど単なる",
+      "start_seconds": 266.919,
+      "end_seconds": 271.919,
+      "id": "5lis7Dhb9s4-display-0056",
+      "segment_id": "5lis7Dhb9s4-ja-0030"
+    },
+    {
+      "text": "岩とちゃうかった。なんと4000年もの",
+      "start_seconds": 271.919,
+      "end_seconds": 276.16,
+      "id": "5lis7Dhb9s4-display-0057",
+      "segment_id": "5lis7Dhb9s4-ja-0030"
+    },
+    {
+      "text": "間静かに眠り続けとった歴史的自然遺産",
+      "start_seconds": 276.16,
+      "end_seconds": 281.039,
+      "id": "5lis7Dhb9s4-display-0058",
+      "segment_id": "5lis7Dhb9s4-ja-0031"
+    },
+    {
+      "text": "やって",
+      "start_seconds": 281.039,
+      "end_seconds": 282.8,
+      "id": "5lis7Dhb9s4-display-0059",
+      "segment_id": "5lis7Dhb9s4-ja-0031"
+    },
+    {
+      "text": "そこには企科学、天文学、知質学に基づい",
+      "start_seconds": 282.8,
+      "end_seconds": 287.84,
+      "id": "5lis7Dhb9s4-display-0060",
+      "segment_id": "5lis7Dhb9s4-ja-0031"
+    },
+    {
+      "text": "た太鼓の人からの明確なメッセージが刻ま",
+      "start_seconds": 287.84,
+      "end_seconds": 292.32,
+      "id": "5lis7Dhb9s4-display-0061",
+      "segment_id": "5lis7Dhb9s4-ja-0032"
+    },
+    {
+      "text": "れとった。",
+      "start_seconds": 292.32,
+      "end_seconds": 294.639,
+      "id": "5lis7Dhb9s4-display-0062",
+      "segment_id": "5lis7Dhb9s4-ja-0032"
+    },
+    {
+      "text": "現代の科学で紐も解けば紐も解くほど",
+      "start_seconds": 294.639,
+      "end_seconds": 299.0,
+      "id": "5lis7Dhb9s4-display-0063",
+      "segment_id": "5lis7Dhb9s4-ja-0033"
+    },
+    {
+      "text": "想像を超える神話の世界が広がっとって",
+      "start_seconds": 299.0,
+      "end_seconds": 304.88,
+      "id": "5lis7Dhb9s4-display-0064",
+      "segment_id": "5lis7Dhb9s4-ja-0033"
+    },
+    {
+      "text": "なあなあなんかワクワクしてけえへんけ?",
+      "start_seconds": 304.88,
+      "end_seconds": 309.24,
+      "id": "5lis7Dhb9s4-display-0065",
+      "segment_id": "5lis7Dhb9s4-ja-0034"
+    },
+    {
+      "text": "ほんなら今からその未知なる世界へ",
+      "start_seconds": 309.24,
+      "end_seconds": 313.32,
+      "id": "5lis7Dhb9s4-display-0066",
+      "segment_id": "5lis7Dhb9s4-ja-0035"
+    },
+    {
+      "text": "出かけっからな。",
+      "start_seconds": 313.32,
+      "end_seconds": 317.32,
+      "id": "5lis7Dhb9s4-display-0067",
+      "segment_id": "5lis7Dhb9s4-ja-0035"
+    },
+    {
+      "text": "な、皆さんは",
+      "start_seconds": 320.96,
+      "end_seconds": 324.84,
+      "id": "5lis7Dhb9s4-display-0068",
+      "segment_id": "5lis7Dhb9s4-ja-0036"
+    },
+    {
+      "text": "エジプトのピラミッドが巨大な宇宙の設計",
+      "start_seconds": 324.84,
+      "end_seconds": 328.24,
+      "id": "5lis7Dhb9s4-display-0069",
+      "segment_id": "5lis7Dhb9s4-ja-0036"
+    },
+    {
+      "text": "図やったって知っとった。",
+      "start_seconds": 328.24,
+      "end_seconds": 331.639,
+      "id": "5lis7Dhb9s4-display-0070",
+      "segment_id": "5lis7Dhb9s4-ja-0036"
+    },
+    {
+      "text": "3つのピラミッドがオリオン座る側が",
+      "start_seconds": 331.639,
+      "end_seconds": 336.4,
+      "id": "5lis7Dhb9s4-display-0071",
+      "segment_id": "5lis7Dhb9s4-ja-0037"
+    },
+    {
+      "text": "天野川に配置されとんねん。古代の人は",
+      "start_seconds": 336.4,
+      "end_seconds": 340.84,
+      "id": "5lis7Dhb9s4-display-0072",
+      "segment_id": "5lis7Dhb9s4-ja-0037"
+    },
+    {
+      "text": "夜空の星座を地上に下ろして聖地を作っ",
+      "start_seconds": 340.84,
+      "end_seconds": 345.28,
+      "id": "5lis7Dhb9s4-display-0073",
+      "segment_id": "5lis7Dhb9s4-ja-0038"
+    },
+    {
+      "text": "とったんやわ。",
+      "start_seconds": 345.28,
+      "end_seconds": 348.0,
+      "id": "5lis7Dhb9s4-display-0074",
+      "segment_id": "5lis7Dhb9s4-ja-0038"
+    },
+    {
+      "text": "ほんなら淡路島の7大政治をついだこの形",
+      "start_seconds": 348.0,
+      "end_seconds": 354.24,
+      "id": "5lis7Dhb9s4-display-0075",
+      "segment_id": "5lis7Dhb9s4-ja-0039"
+    },
+    {
+      "text": "は何やと思う?",
+      "start_seconds": 354.24,
+      "end_seconds": 358.96000000000004,
+      "id": "5lis7Dhb9s4-display-0076",
+      "segment_id": "5lis7Dhb9s4-ja-0039"
+    },
+    {
+      "text": "北斗星に似とんねんけど小座なんやんか。",
+      "start_seconds": 359.12,
+      "end_seconds": 363.88,
+      "id": "5lis7Dhb9s4-display-0077",
+      "segment_id": "5lis7Dhb9s4-ja-0040"
+    },
+    {
+      "text": "ほんで大熊座は和歌山の熊野にほんでな",
+      "start_seconds": 363.88,
+      "end_seconds": 369.88,
+      "id": "5lis7Dhb9s4-display-0078",
+      "segment_id": "5lis7Dhb9s4-ja-0041"
+    },
+    {
+      "text": "淡路島は昔から竜二に囲まれとると言われ",
+      "start_seconds": 369.88,
+      "end_seconds": 373.08,
+      "id": "5lis7Dhb9s4-display-0079",
+      "segment_id": "5lis7Dhb9s4-ja-0041"
+    },
+    {
+      "text": "てんねんけど淡路市の周りには竜座",
+      "start_seconds": 373.08,
+      "end_seconds": 378.4,
+      "id": "5lis7Dhb9s4-display-0080",
+      "segment_id": "5lis7Dhb9s4-ja-0042"
+    },
+    {
+      "text": "は琴平神宮",
+      "start_seconds": 378.4,
+      "end_seconds": 381.24,
+      "id": "5lis7Dhb9s4-display-0081",
+      "segment_id": "5lis7Dhb9s4-ja-0042"
+    },
+    {
+      "text": "カオペア座はカオと東おがダブルで安念で",
+      "start_seconds": 381.24,
+      "end_seconds": 388.199,
+      "id": "5lis7Dhb9s4-display-0082",
+      "segment_id": "5lis7Dhb9s4-ja-0043"
+    },
+    {
+      "text": "それからなんとな2万6000年の周期の",
+      "start_seconds": 388.199,
+      "end_seconds": 392.919,
+      "id": "5lis7Dhb9s4-display-0083",
+      "segment_id": "5lis7Dhb9s4-ja-0043"
+    },
+    {
+      "text": "再運まで同じやねん。当てはまっとんねん",
+      "start_seconds": 392.919,
+      "end_seconds": 396.919,
+      "id": "5lis7Dhb9s4-display-0084",
+      "segment_id": "5lis7Dhb9s4-ja-0044"
+    },
+    {
+      "text": "か。",
+      "start_seconds": 396.919,
+      "end_seconds": 398.68,
+      "id": "5lis7Dhb9s4-display-0085",
+      "segment_id": "5lis7Dhb9s4-ja-0044"
+    },
+    {
+      "text": "今の北極生ポラリスは淡路島北部の八丁は",
+      "start_seconds": 398.68,
+      "end_seconds": 402.759,
+      "id": "5lis7Dhb9s4-display-0086",
+      "segment_id": "5lis7Dhb9s4-ja-0045"
+    },
+    {
+      "text": "日しとんねんけど4000年前の北極生番",
+      "start_seconds": 402.759,
+      "end_seconds": 407.039,
+      "id": "5lis7Dhb9s4-display-0087",
+      "segment_id": "5lis7Dhb9s4-ja-0045"
+    },
+    {
+      "text": "はなんと盗島にドンピシャで当てはまっ",
+      "start_seconds": 407.039,
+      "end_seconds": 412.56,
+      "id": "5lis7Dhb9s4-display-0088",
+      "segment_id": "5lis7Dhb9s4-ja-0046"
+    },
+    {
+      "text": "とってん。ほんまびっくりやで。",
+      "start_seconds": 412.56,
+      "end_seconds": 419.479,
+      "id": "5lis7Dhb9s4-display-0089",
+      "segment_id": "5lis7Dhb9s4-ja-0047"
+    },
+    {
+      "text": "それからな、冒頭で触れたスフィンクスは",
+      "start_seconds": 419.68,
+      "end_seconds": 423.44,
+      "id": "5lis7Dhb9s4-display-0090",
+      "segment_id": "5lis7Dhb9s4-ja-0048"
+    },
+    {
+      "text": "なんやけど、エジプトのスフィンクスと形",
+      "start_seconds": 423.44,
+      "end_seconds": 427.4,
+      "id": "5lis7Dhb9s4-display-0091",
+      "segment_id": "5lis7Dhb9s4-ja-0048"
+    },
+    {
+      "text": "が似るだけとちゃうで、",
+      "start_seconds": 427.4,
+      "end_seconds": 431.16,
+      "id": "5lis7Dhb9s4-display-0092",
+      "segment_id": "5lis7Dhb9s4-ja-0048"
+    },
+    {
+      "text": "なんと太陽の動きを清密に計算して厳選さ",
+      "start_seconds": 431.16,
+      "end_seconds": 435.879,
+      "id": "5lis7Dhb9s4-display-0093",
+      "segment_id": "5lis7Dhb9s4-ja-0049"
+    },
+    {
+      "text": "れた特別な場所やってん。",
+      "start_seconds": 435.879,
+      "end_seconds": 440.96,
+      "id": "5lis7Dhb9s4-display-0094",
+      "segment_id": "5lis7Dhb9s4-ja-0049"
+    },
+    {
+      "text": "目の前には高さ30mの神立て神岩が見え",
+      "start_seconds": 440.96,
+      "end_seconds": 445.319,
+      "id": "5lis7Dhb9s4-display-0095",
+      "segment_id": "5lis7Dhb9s4-ja-0050"
+    },
+    {
+      "text": "んねんけど、こ地図で調べたら昔はなんと",
+      "start_seconds": 445.319,
+      "end_seconds": 450.56,
+      "id": "5lis7Dhb9s4-display-0096",
+      "segment_id": "5lis7Dhb9s4-ja-0050"
+    },
+    {
+      "text": "100m以上の高さがあってんか。",
+      "start_seconds": 450.56,
+      "end_seconds": 454.72,
+      "id": "5lis7Dhb9s4-display-0097",
+      "segment_id": "5lis7Dhb9s4-ja-0051"
+    },
+    {
+      "text": "ほんで竜宮の門と呼ばれとって古代から",
+      "start_seconds": 454.72,
+      "end_seconds": 460.52,
+      "id": "5lis7Dhb9s4-display-0098",
+      "segment_id": "5lis7Dhb9s4-ja-0052"
+    },
+    {
+      "text": "オベリスクとして伊さんイ波さんの2柱と",
+      "start_seconds": 460.52,
+      "end_seconds": 464.44,
+      "id": "5lis7Dhb9s4-display-0099",
+      "segment_id": "5lis7Dhb9s4-ja-0052"
+    },
+    {
+      "text": "して退地されてきてて",
+      "start_seconds": 464.44,
+      "end_seconds": 468.599,
+      "id": "5lis7Dhb9s4-display-0100",
+      "segment_id": "5lis7Dhb9s4-ja-0053"
+    },
+    {
+      "text": "スフィンクス岩から見て古代の下子には",
+      "start_seconds": 468.599,
+      "end_seconds": 472.4,
+      "id": "5lis7Dhb9s4-display-0101",
+      "segment_id": "5lis7Dhb9s4-ja-0053"
+    },
+    {
+      "text": "神立て神岩から太陽が登り",
+      "start_seconds": 472.4,
+      "end_seconds": 476.08,
+      "id": "5lis7Dhb9s4-display-0102",
+      "segment_id": "5lis7Dhb9s4-ja-0053"
+    },
+    {
+      "text": "春分週終の日にはお山の山頂に沈んだった",
+      "start_seconds": 476.08,
+      "end_seconds": 482.319,
+      "id": "5lis7Dhb9s4-display-0103",
+      "segment_id": "5lis7Dhb9s4-ja-0054"
+    },
+    {
+      "text": "それだけとちゃうで今は海の底なんやけど",
+      "start_seconds": 482.319,
+      "end_seconds": 486.0,
+      "id": "5lis7Dhb9s4-display-0104",
+      "segment_id": "5lis7Dhb9s4-ja-0054"
+    },
+    {
+      "text": "、",
+      "start_seconds": 486.0,
+      "end_seconds": 489.0,
+      "id": "5lis7Dhb9s4-display-0105",
+      "segment_id": "5lis7Dhb9s4-ja-0055"
+    },
+    {
+      "text": "春分、終聞、当時の日の出の方にも方向に",
+      "start_seconds": 489.879,
+      "end_seconds": 494.039,
+      "id": "5lis7Dhb9s4-display-0106",
+      "segment_id": "5lis7Dhb9s4-ja-0056"
+    },
+    {
+      "text": "も巨大な岩があって、",
+      "start_seconds": 494.039,
+      "end_seconds": 498.72,
+      "id": "5lis7Dhb9s4-display-0107",
+      "segment_id": "5lis7Dhb9s4-ja-0056"
+    },
+    {
+      "text": "両門早期には海面が今より100mぐらい",
+      "start_seconds": 498.72,
+      "end_seconds": 503.0,
+      "id": "5lis7Dhb9s4-display-0108",
+      "segment_id": "5lis7Dhb9s4-ja-0057"
+    },
+    {
+      "text": "低かったから、実は海面上のランドマーク",
+      "start_seconds": 503.0,
+      "end_seconds": 507.44,
+      "id": "5lis7Dhb9s4-display-0109",
+      "segment_id": "5lis7Dhb9s4-ja-0057"
+    },
+    {
+      "text": "になっとって、つまり全ての方向にレイ",
+      "start_seconds": 507.44,
+      "end_seconds": 512.64,
+      "id": "5lis7Dhb9s4-display-0110",
+      "segment_id": "5lis7Dhb9s4-ja-0058"
+    },
+    {
+      "text": "ポイントがあっで、その中心点が",
+      "start_seconds": 512.64,
+      "end_seconds": 516.12,
+      "id": "5lis7Dhb9s4-display-0111",
+      "segment_id": "5lis7Dhb9s4-ja-0058"
+    },
+    {
+      "text": "スフィンクス岩と神立て神岩やった。",
+      "start_seconds": 516.12,
+      "end_seconds": 520.76,
+      "id": "5lis7Dhb9s4-display-0112",
+      "segment_id": "5lis7Dhb9s4-ja-0059"
+    },
+    {
+      "text": "そう、ここが国海神話の舞台。日本の原点",
+      "start_seconds": 520.76,
+      "end_seconds": 527.88,
+      "id": "5lis7Dhb9s4-display-0113",
+      "segment_id": "5lis7Dhb9s4-ja-0060"
+    },
+    {
+      "text": "やったんやで。",
+      "start_seconds": 527.88,
+      "end_seconds": 530.959,
+      "id": "5lis7Dhb9s4-display-0114",
+      "segment_id": "5lis7Dhb9s4-ja-0060"
+    },
+    {
+      "text": "そこにはな、驚くことに太鼓の昔に完璧に",
+      "start_seconds": 530.959,
+      "end_seconds": 536.12,
+      "id": "5lis7Dhb9s4-display-0115",
+      "segment_id": "5lis7Dhb9s4-ja-0061"
+    },
+    {
+      "text": "設計された太陽の道の設計図があった。",
+      "start_seconds": 536.12,
+      "end_seconds": 542.0,
+      "id": "5lis7Dhb9s4-display-0116",
+      "segment_id": "5lis7Dhb9s4-ja-0061"
+    },
+    {
+      "text": "その設計図の形がな、実は上から見ると",
+      "start_seconds": 542.0,
+      "end_seconds": 546.36,
+      "id": "5lis7Dhb9s4-display-0117",
+      "segment_id": "5lis7Dhb9s4-ja-0062"
+    },
+    {
+      "text": "巨大なXになっとんねん。",
+      "start_seconds": 546.36,
+      "end_seconds": 551.399,
+      "id": "5lis7Dhb9s4-display-0118",
+      "segment_id": "5lis7Dhb9s4-ja-0062"
+    },
+    {
+      "text": "その設計図は虫だけと淡路島本当にもあっ",
+      "start_seconds": 551.399,
+      "end_seconds": 557.04,
+      "id": "5lis7Dhb9s4-display-0119",
+      "segment_id": "5lis7Dhb9s4-ja-0063"
+    },
+    {
+      "text": "て伊神宮を拠点にXになっとる。それ",
+      "start_seconds": 557.04,
+      "end_seconds": 563.24,
+      "id": "5lis7Dhb9s4-display-0120",
+      "segment_id": "5lis7Dhb9s4-ja-0063"
+    },
+    {
+      "text": "が奈良や異性出雲へと展開しとんねんで",
+      "start_seconds": 563.24,
+      "end_seconds": 571.24,
+      "id": "5lis7Dhb9s4-display-0121",
+      "segment_id": "5lis7Dhb9s4-ja-0064"
+    },
+    {
+      "text": "の神立て神岩は",
+      "start_seconds": 572.6,
+      "end_seconds": 577.68,
+      "id": "5lis7Dhb9s4-display-0122",
+      "segment_id": "5lis7Dhb9s4-ja-0065"
+    },
+    {
+      "text": "男性のイ岩",
+      "start_seconds": 577.68,
+      "end_seconds": 580.0,
+      "id": "5lis7Dhb9s4-display-0123",
+      "segment_id": "5lis7Dhb9s4-ja-0065"
+    },
+    {
+      "text": "下神岩は女性神のイ波岩",
+      "start_seconds": 580.0,
+      "end_seconds": 584.12,
+      "id": "5lis7Dhb9s4-display-0124",
+      "segment_id": "5lis7Dhb9s4-ja-0065"
+    },
+    {
+      "text": "エジプトのオシリスとイシスのオベリスク",
+      "start_seconds": 584.12,
+      "end_seconds": 587.8,
+      "id": "5lis7Dhb9s4-display-0125",
+      "segment_id": "5lis7Dhb9s4-ja-0066"
+    },
+    {
+      "text": "と同じやねん。実はオベリスクが陸から",
+      "start_seconds": 587.8,
+      "end_seconds": 592.839,
+      "id": "5lis7Dhb9s4-display-0126",
+      "segment_id": "5lis7Dhb9s4-ja-0066"
+    },
+    {
+      "text": "伝わったんが鳥海から伝わったんが男女心",
+      "start_seconds": 592.839,
+      "end_seconds": 598.0,
+      "id": "5lis7Dhb9s4-display-0127",
+      "segment_id": "5lis7Dhb9s4-ja-0067"
+    },
+    {
+      "text": "の岩が柱なんか",
+      "start_seconds": 598.0,
+      "end_seconds": 602.279,
+      "id": "5lis7Dhb9s4-display-0128",
+      "segment_id": "5lis7Dhb9s4-ja-0067"
+    },
+    {
+      "text": "その",
+      "start_seconds": 602.279,
+      "end_seconds": 605.12,
+      "id": "5lis7Dhb9s4-display-0129",
+      "segment_id": "5lis7Dhb9s4-ja-0068"
+    },
+    {
+      "text": "先端のオベリスクの上にある便子を上から",
+      "start_seconds": 605.12,
+      "end_seconds": 609.279,
+      "id": "5lis7Dhb9s4-display-0130",
+      "segment_id": "5lis7Dhb9s4-ja-0068"
+    },
+    {
+      "text": "見たらXになっとんねん。なんと",
+      "start_seconds": 609.279,
+      "end_seconds": 613.16,
+      "id": "5lis7Dhb9s4-display-0131",
+      "segment_id": "5lis7Dhb9s4-ja-0068"
+    },
+    {
+      "text": "ピラビントも上から見たら",
+      "start_seconds": 613.16,
+      "end_seconds": 616.519,
+      "id": "5lis7Dhb9s4-display-0132",
+      "segment_id": "5lis7Dhb9s4-ja-0069"
+    },
+    {
+      "text": "Xなんやで。それがな古代出雲の新門や",
+      "start_seconds": 616.519,
+      "end_seconds": 623.92,
+      "id": "5lis7Dhb9s4-display-0133",
+      "segment_id": "5lis7Dhb9s4-ja-0069"
+    },
+    {
+      "text": "神社の屋根のちぎにもXが入っとんねん。",
+      "start_seconds": 623.92,
+      "end_seconds": 629.399,
+      "id": "5lis7Dhb9s4-display-0134",
+      "segment_id": "5lis7Dhb9s4-ja-0070"
+    },
+    {
+      "text": "このXは男性と著精神の交わり。つまり",
+      "start_seconds": 629.399,
+      "end_seconds": 636.92,
+      "id": "5lis7Dhb9s4-display-0135",
+      "segment_id": "5lis7Dhb9s4-ja-0071"
+    },
+    {
+      "text": "子孫繁栄を意味しとんねん。別の時代も",
+      "start_seconds": 636.92,
+      "end_seconds": 641.44,
+      "id": "5lis7Dhb9s4-display-0136",
+      "segment_id": "5lis7Dhb9s4-ja-0072"
+    },
+    {
+      "text": "世界中どこでも大切なことは一緒やなあ。",
+      "start_seconds": 641.44,
+      "end_seconds": 648.9200000000001,
+      "id": "5lis7Dhb9s4-display-0137",
+      "segment_id": "5lis7Dhb9s4-ja-0073"
+    },
+    {
+      "text": "ところでな、皆さんこの国神話の舞台の",
+      "start_seconds": 649.279,
+      "end_seconds": 653.8,
+      "id": "5lis7Dhb9s4-display-0138",
+      "segment_id": "5lis7Dhb9s4-ja-0074"
+    },
+    {
+      "text": "海底を探したら絶対なんか出てくると思わ",
+      "start_seconds": 653.8,
+      "end_seconds": 658.16,
+      "id": "5lis7Dhb9s4-display-0139",
+      "segment_id": "5lis7Dhb9s4-ja-0074"
+    },
+    {
+      "text": "へん。実は今陸と海の秘怯をつなぐ広大な",
+      "start_seconds": 658.16,
+      "end_seconds": 665.76,
+      "id": "5lis7Dhb9s4-display-0140",
+      "segment_id": "5lis7Dhb9s4-ja-0075"
+    },
+    {
+      "text": "海底探査プロジェクト計画しとんねん。の",
+      "start_seconds": 665.76,
+      "end_seconds": 670.12,
+      "id": "5lis7Dhb9s4-display-0141",
+      "segment_id": "5lis7Dhb9s4-ja-0075"
+    },
+    {
+      "text": "中からも歴史的自然遺産を見つけし楽しみ",
+      "start_seconds": 670.12,
+      "end_seconds": 674.36,
+      "id": "5lis7Dhb9s4-display-0142",
+      "segment_id": "5lis7Dhb9s4-ja-0076"
+    },
+    {
+      "text": "にしとってな。",
+      "start_seconds": 674.36,
+      "end_seconds": 678.12,
+      "id": "5lis7Dhb9s4-display-0143",
+      "segment_id": "5lis7Dhb9s4-ja-0076"
+    },
+    {
+      "text": "これからな海の中だけとちゃうで淡路市の",
+      "start_seconds": 680.16,
+      "end_seconds": 685.48,
+      "id": "5lis7Dhb9s4-display-0144",
+      "segment_id": "5lis7Dhb9s4-ja-0077"
+    },
+    {
+      "text": "山の中にも空にそびえる巨大なイ波さんの",
+      "start_seconds": 685.48,
+      "end_seconds": 692.6,
+      "id": "5lis7Dhb9s4-display-0145",
+      "segment_id": "5lis7Dhb9s4-ja-0078"
+    },
+    {
+      "text": "シンボルヒモロギがあんねん。じゃあつい",
+      "start_seconds": 692.6,
+      "end_seconds": 697.92,
+      "id": "5lis7Dhb9s4-display-0146",
+      "segment_id": "5lis7Dhb9s4-ja-0079"
+    },
+    {
+      "text": "になるさんの岩はどこにあんのやろうって",
+      "start_seconds": 697.92,
+      "end_seconds": 703.16,
+      "id": "5lis7Dhb9s4-display-0147",
+      "segment_id": "5lis7Dhb9s4-ja-0079"
+    },
+    {
+      "text": "私らは古代の例を研究して絶対ここにある",
+      "start_seconds": 703.16,
+      "end_seconds": 707.959,
+      "id": "5lis7Dhb9s4-display-0148",
+      "segment_id": "5lis7Dhb9s4-ja-0080"
+    },
+    {
+      "text": "はずやと密林の中を探してとうとう",
+      "start_seconds": 707.959,
+      "end_seconds": 712.959,
+      "id": "5lis7Dhb9s4-display-0149",
+      "segment_id": "5lis7Dhb9s4-ja-0080"
+    },
+    {
+      "text": "見つけ出したその挙石軍には",
+      "start_seconds": 712.959,
+      "end_seconds": 717.399,
+      "id": "5lis7Dhb9s4-display-0150",
+      "segment_id": "5lis7Dhb9s4-ja-0081"
+    },
+    {
+      "text": "人1人が通れぐらいの穴が開いとってもう",
+      "start_seconds": 717.399,
+      "end_seconds": 721.88,
+      "id": "5lis7Dhb9s4-display-0151",
+      "segment_id": "5lis7Dhb9s4-ja-0081"
+    },
+    {
+      "text": "1度生まれることを体験できんね",
+      "start_seconds": 721.88,
+      "end_seconds": 726.36,
+      "id": "5lis7Dhb9s4-display-0152",
+      "segment_id": "5lis7Dhb9s4-ja-0082"
+    },
+    {
+      "text": "私らはイ波岩の体内くぐりって呼んどる。",
+      "start_seconds": 726.36,
+      "end_seconds": 732.48,
+      "id": "5lis7Dhb9s4-display-0153",
+      "segment_id": "5lis7Dhb9s4-ja-0082"
+    },
+    {
+      "text": "暗くて狭い岩の間をくぐり抜ける時",
+      "start_seconds": 732.48,
+      "end_seconds": 736.959,
+      "id": "5lis7Dhb9s4-display-0154",
+      "segment_id": "5lis7Dhb9s4-ja-0083"
+    },
+    {
+      "text": "ドキドキするなとかその先にある絶景を見",
+      "start_seconds": 736.959,
+      "end_seconds": 741.32,
+      "id": "5lis7Dhb9s4-display-0155",
+      "segment_id": "5lis7Dhb9s4-ja-0083"
+    },
+    {
+      "text": "てなんて世界は美しいんだろうって。",
+      "start_seconds": 741.32,
+      "end_seconds": 747.04,
+      "id": "5lis7Dhb9s4-display-0156",
+      "segment_id": "5lis7Dhb9s4-ja-0084"
+    },
+    {
+      "text": "お母さんの中の中から生まれてくる時の",
+      "start_seconds": 747.04,
+      "end_seconds": 750.199,
+      "id": "5lis7Dhb9s4-display-0157",
+      "segment_id": "5lis7Dhb9s4-ja-0085"
+    },
+    {
+      "text": "記憶とし苦したわ。ほんでこの形な虫",
+      "start_seconds": 750.199,
+      "end_seconds": 756.959,
+      "id": "5lis7Dhb9s4-display-0158",
+      "segment_id": "5lis7Dhb9s4-ja-0085"
+    },
+    {
+      "text": "そっくりやねん。",
+      "start_seconds": 756.959,
+      "end_seconds": 760.68,
+      "id": "5lis7Dhb9s4-display-0159",
+      "segment_id": "5lis7Dhb9s4-ja-0086"
+    },
+    {
+      "text": "私な各新視点子宮っていう友字は子供のお",
+      "start_seconds": 760.959,
+      "end_seconds": 766.959,
+      "id": "5lis7Dhb9s4-display-0160",
+      "segment_id": "5lis7Dhb9s4-ja-0087"
+    },
+    {
+      "text": "さんって書くやろう。私ら1人1人はお宮",
+      "start_seconds": 766.959,
+      "end_seconds": 771.839,
+      "id": "5lis7Dhb9s4-display-0161",
+      "segment_id": "5lis7Dhb9s4-ja-0087"
+    },
+    {
+      "text": "さんから生まれた伊さんやイ波さんのよう",
+      "start_seconds": 771.839,
+      "end_seconds": 776.24,
+      "id": "5lis7Dhb9s4-display-0162",
+      "segment_id": "5lis7Dhb9s4-ja-0088"
+    },
+    {
+      "text": "に尊い存在で今ここに生き取る神様その",
+      "start_seconds": 776.24,
+      "end_seconds": 782.92,
+      "id": "5lis7Dhb9s4-display-0163",
+      "segment_id": "5lis7Dhb9s4-ja-0088"
+    },
+    {
+      "text": "ものなんやと。",
+      "start_seconds": 782.92,
+      "end_seconds": 786.76,
+      "id": "5lis7Dhb9s4-display-0164",
+      "segment_id": "5lis7Dhb9s4-ja-0089"
+    },
+    {
+      "text": "そんな風に山に出かけるたびにあ、あの岩",
+      "start_seconds": 788.68,
+      "end_seconds": 793.839,
+      "id": "5lis7Dhb9s4-display-0165",
+      "segment_id": "5lis7Dhb9s4-ja-0090"
+    },
+    {
+      "text": "に目玉が見える。",
+      "start_seconds": 793.839,
+      "end_seconds": 797.199,
+      "id": "5lis7Dhb9s4-display-0166",
+      "segment_id": "5lis7Dhb9s4-ja-0090"
+    },
+    {
+      "text": "ペトログリフちゃうか。",
+      "start_seconds": 797.199,
+      "end_seconds": 800.04,
+      "id": "5lis7Dhb9s4-display-0167",
+      "segment_id": "5lis7Dhb9s4-ja-0091"
+    },
+    {
+      "text": "今も驚くような発見が続いとんねんか。",
+      "start_seconds": 800.04,
+      "end_seconds": 805.36,
+      "id": "5lis7Dhb9s4-display-0168",
+      "segment_id": "5lis7Dhb9s4-ja-0092"
+    },
+    {
+      "text": "ヒモロギや籍軍にはインダスやシュメール",
+      "start_seconds": 805.36,
+      "end_seconds": 810.079,
+      "id": "5lis7Dhb9s4-display-0169",
+      "segment_id": "5lis7Dhb9s4-ja-0093"
+    },
+    {
+      "text": "文字ルーズのペトログリフが残っとる。",
+      "start_seconds": 810.079,
+      "end_seconds": 815.399,
+      "id": "5lis7Dhb9s4-display-0170",
+      "segment_id": "5lis7Dhb9s4-ja-0093"
+    },
+    {
+      "text": "そやけど不思議に思わへん。",
+      "start_seconds": 815.399,
+      "end_seconds": 819.959,
+      "id": "5lis7Dhb9s4-display-0171",
+      "segment_id": "5lis7Dhb9s4-ja-0094"
+    },
+    {
+      "text": "エジプトやメソポタミアと日本はガな離れ",
+      "start_seconds": 819.959,
+      "end_seconds": 825.279,
+      "id": "5lis7Dhb9s4-display-0172",
+      "segment_id": "5lis7Dhb9s4-ja-0095"
+    },
+    {
+      "text": "とんのになんで淡路島にペトロクリフが",
+      "start_seconds": 825.279,
+      "end_seconds": 830.32,
+      "id": "5lis7Dhb9s4-display-0173",
+      "segment_id": "5lis7Dhb9s4-ja-0095"
+    },
+    {
+      "text": "あるんやろう。",
+      "start_seconds": 830.32,
+      "end_seconds": 832.8,
+      "id": "5lis7Dhb9s4-display-0174",
+      "segment_id": "5lis7Dhb9s4-ja-0096"
+    },
+    {
+      "text": "それだけとちゃう太陽を観測する仕組みや",
+      "start_seconds": 832.8,
+      "end_seconds": 836.88,
+      "id": "5lis7Dhb9s4-display-0175",
+      "segment_id": "5lis7Dhb9s4-ja-0097"
+    },
+    {
+      "text": "星座の配置の一致",
+      "start_seconds": 836.88,
+      "end_seconds": 839.92,
+      "id": "5lis7Dhb9s4-display-0176",
+      "segment_id": "5lis7Dhb9s4-ja-0097"
+    },
+    {
+      "text": "Xのシンボルそれからな日本神話と",
+      "start_seconds": 839.92,
+      "end_seconds": 844.48,
+      "id": "5lis7Dhb9s4-display-0177",
+      "segment_id": "5lis7Dhb9s4-ja-0097"
+    },
+    {
+      "text": "エジプト神話も2とんねん。",
+      "start_seconds": 844.48,
+      "end_seconds": 848.32,
+      "id": "5lis7Dhb9s4-display-0178",
+      "segment_id": "5lis7Dhb9s4-ja-0098"
+    },
+    {
+      "text": "日本神話は伊さんが亡くなった伊波さんを",
+      "start_seconds": 848.32,
+      "end_seconds": 853.72,
+      "id": "5lis7Dhb9s4-display-0179",
+      "segment_id": "5lis7Dhb9s4-ja-0099"
+    },
+    {
+      "text": "探しに富の国に行った帰りにみぎをして",
+      "start_seconds": 853.72,
+      "end_seconds": 858.199,
+      "id": "5lis7Dhb9s4-display-0180",
+      "segment_id": "5lis7Dhb9s4-ja-0099"
+    },
+    {
+      "text": "右目を洗ったら月の神つ読み左目を洗っ",
+      "start_seconds": 858.199,
+      "end_seconds": 863.48,
+      "id": "5lis7Dhb9s4-display-0181",
+      "segment_id": "5lis7Dhb9s4-ja-0100"
+    },
+    {
+      "text": "たら太陽神アマテラス花を洗ったら",
+      "start_seconds": 863.48,
+      "end_seconds": 868.079,
+      "id": "5lis7Dhb9s4-display-0182",
+      "segment_id": "5lis7Dhb9s4-ja-0100"
+    },
+    {
+      "text": "暴れん坊のスノーが生まれてん",
+      "start_seconds": 868.079,
+      "end_seconds": 872.44,
+      "id": "5lis7Dhb9s4-display-0183",
+      "segment_id": "5lis7Dhb9s4-ja-0101"
+    },
+    {
+      "text": "エジプト神話ではイシスがオシリスを探し",
+      "start_seconds": 872.44,
+      "end_seconds": 877.04,
+      "id": "5lis7Dhb9s4-display-0184",
+      "segment_id": "5lis7Dhb9s4-ja-0101"
+    },
+    {
+      "text": "に行っ",
+      "start_seconds": 877.04,
+      "end_seconds": 878.68,
+      "id": "5lis7Dhb9s4-display-0185",
+      "segment_id": "5lis7Dhb9s4-ja-0101"
+    },
+    {
+      "text": "右の目は太陽神ラー左の目は月の神ウド",
+      "start_seconds": 878.68,
+      "end_seconds": 886.56,
+      "id": "5lis7Dhb9s4-display-0186",
+      "segment_id": "5lis7Dhb9s4-ja-0102"
+    },
+    {
+      "text": "そしてな大きな花が特徴で暴れん坊の",
+      "start_seconds": 886.56,
+      "end_seconds": 891.16,
+      "id": "5lis7Dhb9s4-display-0187",
+      "segment_id": "5lis7Dhb9s4-ja-0103"
+    },
+    {
+      "text": "瀬戸心まで登場すんねん",
+      "start_seconds": 891.16,
+      "end_seconds": 894.519,
+      "id": "5lis7Dhb9s4-display-0188",
+      "segment_id": "5lis7Dhb9s4-ja-0103"
+    },
+    {
+      "text": "なあなあここまで同じもんがあるってどう",
+      "start_seconds": 894.519,
+      "end_seconds": 899.36,
+      "id": "5lis7Dhb9s4-display-0189",
+      "segment_id": "5lis7Dhb9s4-ja-0104"
+    },
+    {
+      "text": "いうことやと思う",
+      "start_seconds": 899.36,
+      "end_seconds": 903.12,
+      "id": "5lis7Dhb9s4-display-0190",
+      "segment_id": "5lis7Dhb9s4-ja-0104"
+    },
+    {
+      "text": "それはな、かつて世界は国や国境もなかっ",
+      "start_seconds": 906.04,
+      "end_seconds": 910.92,
+      "id": "5lis7Dhb9s4-display-0191",
+      "segment_id": "5lis7Dhb9s4-ja-0105"
+    },
+    {
+      "text": "た。全てがネットワークのように繋がっ",
+      "start_seconds": 910.92,
+      "end_seconds": 914.92,
+      "id": "5lis7Dhb9s4-display-0192",
+      "segment_id": "5lis7Dhb9s4-ja-0105"
+    },
+    {
+      "text": "とって自由に生きしとった世界は1つワン",
+      "start_seconds": 914.92,
+      "end_seconds": 920.759,
+      "id": "5lis7Dhb9s4-display-0193",
+      "segment_id": "5lis7Dhb9s4-ja-0106"
+    },
+    {
+      "text": "の時代があったってことなんや。",
+      "start_seconds": 920.759,
+      "end_seconds": 924.36,
+      "id": "5lis7Dhb9s4-display-0194",
+      "segment_id": "5lis7Dhb9s4-ja-0106"
+    },
+    {
+      "text": "つまり神話は人類の公開にしやったてこと",
+      "start_seconds": 924.36,
+      "end_seconds": 929.6,
+      "id": "5lis7Dhb9s4-display-0195",
+      "segment_id": "5lis7Dhb9s4-ja-0107"
+    },
+    {
+      "text": "。",
+      "start_seconds": 929.6,
+      "end_seconds": 932.16,
+      "id": "5lis7Dhb9s4-display-0196",
+      "segment_id": "5lis7Dhb9s4-ja-0107"
+    },
+    {
+      "text": "神話は単なる作り話とちゃうで。今も",
+      "start_seconds": 932.16,
+      "end_seconds": 937.0,
+      "id": "5lis7Dhb9s4-display-0197",
+      "segment_id": "5lis7Dhb9s4-ja-0108"
+    },
+    {
+      "text": "淡路島の山の中や海の底に行き続けとるご",
+      "start_seconds": 937.0,
+      "end_seconds": 942.0,
+      "id": "5lis7Dhb9s4-display-0198",
+      "segment_id": "5lis7Dhb9s4-ja-0108"
+    },
+    {
+      "text": "先祖さんたちの実はや",
+      "start_seconds": 942.0,
+      "end_seconds": 946.36,
+      "id": "5lis7Dhb9s4-display-0199",
+      "segment_id": "5lis7Dhb9s4-ja-0109"
+    },
+    {
+      "text": "その真層に触れるっていうことは狭い世界",
+      "start_seconds": 946.36,
+      "end_seconds": 949.72,
+      "id": "5lis7Dhb9s4-display-0200",
+      "segment_id": "5lis7Dhb9s4-ja-0109"
+    },
+    {
+      "text": "を飛び出して人類の壮大なルーツを思い出",
+      "start_seconds": 949.72,
+      "end_seconds": 953.959,
+      "id": "5lis7Dhb9s4-display-0201",
+      "segment_id": "5lis7Dhb9s4-ja-0109"
+    },
+    {
+      "text": "すってことなんや。",
+      "start_seconds": 953.959,
+      "end_seconds": 957.56,
+      "id": "5lis7Dhb9s4-display-0202",
+      "segment_id": "5lis7Dhb9s4-ja-0110"
+    },
+    {
+      "text": "ほんでこの証海峡お足",
+      "start_seconds": 957.56,
+      "end_seconds": 962.56,
+      "id": "5lis7Dhb9s4-display-0203",
+      "segment_id": "5lis7Dhb9s4-ja-0111"
+    },
+    {
+      "text": "単なる橋とちゃうで",
+      "start_seconds": 962.56,
+      "end_seconds": 966.959,
+      "id": "5lis7Dhb9s4-display-0204",
+      "segment_id": "5lis7Dhb9s4-ja-0111"
+    },
+    {
+      "text": "巨大な日本の首は",
+      "start_seconds": 966.959,
+      "end_seconds": 970.88,
+      "id": "5lis7Dhb9s4-display-0205",
+      "segment_id": "5lis7Dhb9s4-ja-0112"
+    },
+    {
+      "text": "伊さんと伊波さんの2柱",
+      "start_seconds": 970.88,
+      "end_seconds": 975.12,
+      "id": "5lis7Dhb9s4-display-0206",
+      "segment_id": "5lis7Dhb9s4-ja-0112"
+    },
+    {
+      "text": "そこにかかった釣り橋は",
+      "start_seconds": 975.12,
+      "end_seconds": 979.399,
+      "id": "5lis7Dhb9s4-display-0207",
+      "segment_id": "5lis7Dhb9s4-ja-0113"
+    },
+    {
+      "text": "まさに現代の天の浮き橋島",
+      "start_seconds": 979.399,
+      "end_seconds": 985.399,
+      "id": "5lis7Dhb9s4-display-0208",
+      "segment_id": "5lis7Dhb9s4-ja-0113"
+    },
+    {
+      "text": "で自分この中の神様を目覚めさせたあなた",
+      "start_seconds": 985.959,
+      "end_seconds": 989.68,
+      "id": "5lis7Dhb9s4-display-0209",
+      "segment_id": "5lis7Dhb9s4-ja-0114"
+    },
+    {
+      "text": "があの橋を渡って日常生活へと戻っていく",
+      "start_seconds": 989.68,
+      "end_seconds": 994.6,
+      "id": "5lis7Dhb9s4-display-0210",
+      "segment_id": "5lis7Dhb9s4-ja-0114"
+    },
+    {
+      "text": "。",
+      "start_seconds": 994.6,
+      "end_seconds": 996.319,
+      "id": "5lis7Dhb9s4-display-0211",
+      "segment_id": "5lis7Dhb9s4-ja-0114"
+    },
+    {
+      "text": "それは",
+      "start_seconds": 996.319,
+      "end_seconds": 998.04,
+      "id": "5lis7Dhb9s4-display-0212",
+      "segment_id": "5lis7Dhb9s4-ja-0115"
+    },
+    {
+      "text": "あなたが新しい人生という国づりのために",
+      "start_seconds": 998.04,
+      "end_seconds": 1003.16,
+      "id": "5lis7Dhb9s4-display-0213",
+      "segment_id": "5lis7Dhb9s4-ja-0115"
+    },
+    {
+      "text": "再出発するっていうことなんや。",
+      "start_seconds": 1003.16,
+      "end_seconds": 1008.16,
+      "id": "5lis7Dhb9s4-display-0214",
+      "segment_id": "5lis7Dhb9s4-ja-0115"
+    },
+    {
+      "text": "最後にもう1回言うよう聞いといてな。",
+      "start_seconds": 1008.759,
+      "end_seconds": 1013.88,
+      "id": "5lis7Dhb9s4-display-0215",
+      "segment_id": "5lis7Dhb9s4-ja-0116"
+    },
+    {
+      "text": "神話は昔の物語で読むもんちゃうで。",
+      "start_seconds": 1013.88,
+      "end_seconds": 1019.759,
+      "id": "5lis7Dhb9s4-display-0216",
+      "segment_id": "5lis7Dhb9s4-ja-0117"
+    },
+    {
+      "text": "あなた自身が今日この瞬間から救っていく",
+      "start_seconds": 1019.759,
+      "end_seconds": 1025.0,
+      "id": "5lis7Dhb9s4-display-0217",
+      "segment_id": "5lis7Dhb9s4-ja-0118"
+    },
+    {
+      "text": "もんや。",
+      "start_seconds": 1025.0,
+      "end_seconds": 1027.039,
+      "id": "5lis7Dhb9s4-display-0218",
+      "segment_id": "5lis7Dhb9s4-ja-0118"
+    },
+    {
+      "text": "自分が神話の主人公やって思ったら人生の",
+      "start_seconds": 1027.039,
+      "end_seconds": 1031.799,
+      "id": "5lis7Dhb9s4-display-0219",
+      "segment_id": "5lis7Dhb9s4-ja-0119"
+    },
+    {
+      "text": "景色がりと変わんで",
+      "start_seconds": 1031.799,
+      "end_seconds": 1036.679,
+      "id": "5lis7Dhb9s4-display-0220",
+      "segment_id": "5lis7Dhb9s4-ja-0119"
+    },
+    {
+      "text": "自分が神様やったら隣におる人も神様",
+      "start_seconds": 1036.679,
+      "end_seconds": 1043.039,
+      "id": "5lis7Dhb9s4-display-0221",
+      "segment_id": "5lis7Dhb9s4-ja-0120"
+    },
+    {
+      "text": "お互いを尊重し合えたらそこに争いはも",
+      "start_seconds": 1043.039,
+      "end_seconds": 1047.28,
+      "id": "5lis7Dhb9s4-display-0222",
+      "segment_id": "5lis7Dhb9s4-ja-0120"
+    },
+    {
+      "text": "あれへん。",
+      "start_seconds": 1047.28,
+      "end_seconds": 1050.76,
+      "id": "5lis7Dhb9s4-display-0223",
+      "segment_id": "5lis7Dhb9s4-ja-0121"
+    },
+    {
+      "text": "それがこれからの人類が平和につがって",
+      "start_seconds": 1050.919,
+      "end_seconds": 1056.0,
+      "id": "5lis7Dhb9s4-display-0224",
+      "segment_id": "5lis7Dhb9s4-ja-0122"
+    },
+    {
+      "text": "いく鍵で",
+      "start_seconds": 1056.0,
+      "end_seconds": 1059.48,
+      "id": "5lis7Dhb9s4-display-0225",
+      "segment_id": "5lis7Dhb9s4-ja-0122"
+    },
+    {
+      "text": "今日からあなたの言葉、あなたの行動、",
+      "start_seconds": 1059.48,
+      "end_seconds": 1064.679,
+      "id": "5lis7Dhb9s4-display-0226",
+      "segment_id": "5lis7Dhb9s4-ja-0123"
+    },
+    {
+      "text": "その1つ1つが神話の1ページになるから",
+      "start_seconds": 1064.679,
+      "end_seconds": 1069.799,
+      "id": "5lis7Dhb9s4-display-0227",
+      "segment_id": "5lis7Dhb9s4-ja-0123"
+    },
+    {
+      "text": "な。",
+      "start_seconds": 1069.799,
+      "end_seconds": 1073.0,
+      "id": "5lis7Dhb9s4-display-0228",
+      "segment_id": "5lis7Dhb9s4-ja-0124"
+    },
+    {
+      "text": "なあ[息をのむ音]なあ、淡路島から",
+      "start_seconds": 1074.0,
+      "end_seconds": 1076.96,
+      "id": "5lis7Dhb9s4-display-0229",
+      "segment_id": "5lis7Dhb9s4-ja-0125"
+    },
+    {
+      "text": "初めて見ひんか?",
+      "start_seconds": 1076.96,
+      "end_seconds": 1079.679,
+      "id": "5lis7Dhb9s4-display-0230",
+      "segment_id": "5lis7Dhb9s4-ja-0125"
+    },
+    {
+      "text": "あなたという神様が作る新しい素晴らしい",
+      "start_seconds": 1079.679,
+      "end_seconds": 1084.2,
+      "id": "5lis7Dhb9s4-display-0231",
+      "segment_id": "5lis7Dhb9s4-ja-0126"
+    },
+    {
+      "text": "神話の世界を",
+      "start_seconds": 1084.2,
+      "end_seconds": 1089.039,
+      "id": "5lis7Dhb9s4-display-0232",
+      "segment_id": "5lis7Dhb9s4-ja-0126"
+    },
+    {
+      "text": "2026年6月21日下の今日が1000",
+      "start_seconds": 1089.44,
+      "end_seconds": 1094.2,
+      "id": "5lis7Dhb9s4-display-0233",
+      "segment_id": "5lis7Dhb9s4-ja-0127"
+    },
+    {
+      "text": "年先、2000年先へと続く",
+      "start_seconds": 1094.2,
+      "end_seconds": 1099.039,
+      "id": "5lis7Dhb9s4-display-0234",
+      "segment_id": "5lis7Dhb9s4-ja-0127"
+    },
+    {
+      "text": "私たちの新たな神話の幕明けやから",
+      "start_seconds": 1099.039,
+      "end_seconds": 1105.4,
+      "id": "5lis7Dhb9s4-display-0235",
+      "segment_id": "5lis7Dhb9s4-ja-0128"
+    },
+    {
+      "text": "絶対忘れんといてや。",
+      "start_seconds": 1105.4,
+      "end_seconds": 1110.6000000000001,
+      "id": "5lis7Dhb9s4-display-0236",
+      "segment_id": "5lis7Dhb9s4-ja-0128"
+    },
+    {
+      "text": "皆さん最後まで聞いてくれてほんま",
+      "start_seconds": 1110.679,
+      "end_seconds": 1114.12,
+      "id": "5lis7Dhb9s4-display-0237",
+      "segment_id": "5lis7Dhb9s4-ja-0129"
+    },
+    {
+      "text": "ありがとう。",
+      "start_seconds": 1114.12,
+      "end_seconds": 1117.442,
+      "id": "5lis7Dhb9s4-display-0238",
+      "segment_id": "5lis7Dhb9s4-ja-0129"
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 1117.442,
+      "end_seconds": 1119.462,
+      "id": "5lis7Dhb9s4-display-0239",
+      "segment_id": "5lis7Dhb9s4-ja-0130"
+    }
+  ]
+}

@@ -1,3 +1,4 @@
+import { useBottomNavigationInset } from '../hooks/useBottomNavigationInset';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import {
   AppState,
@@ -55,6 +56,7 @@ export function ConversationScreen({
   onBack: () => void;
 }) {
   const insets = useSafeAreaInsets();
+  const navigationInset = useBottomNavigationInset();
   const chat = useConversation(result.session.id);
   const replay = useAudioReplay(result.session.id);
   const sentenceFeedback = useSentenceFeedback(result.session.id);
@@ -314,7 +316,7 @@ export function ConversationScreen({
   );
   return (
     <KeyboardAvoidingView
-      style={styles.screen}
+      style={[styles.screen, { paddingBottom: navigationInset }]}
       behavior={Platform.OS === 'ios' ? 'padding' : undefined}
     >
       <View style={[styles.header, { paddingTop: insets.top + spacing.md }]}>

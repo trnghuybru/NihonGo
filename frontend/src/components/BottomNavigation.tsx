@@ -26,14 +26,21 @@ export const APP_TABS: readonly TabDefinition[] = [
 interface Props {
   selectedTab: AppTab;
   onSelectTab: (tab: AppTab) => void;
+  floating?: boolean;
 }
 
-function BottomNavigationComponent({ selectedTab, onSelectTab }: Props) {
+function BottomNavigationComponent({
+  selectedTab,
+  onSelectTab,
+  floating = false,
+}: Props) {
   const insets = useSafeAreaInsets();
   return (
     <View
+      pointerEvents="box-none"
       style={[
         styles.safeArea,
+        floating && styles.floating,
         { paddingBottom: Math.max(12, insets.bottom + 8) },
       ]}
     >
@@ -99,6 +106,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: spacing.lg,
     backgroundColor: colors.background,
   },
+  floating: { backgroundColor: 'transparent' },
   container: {
     minHeight: 72,
     width: '100%',

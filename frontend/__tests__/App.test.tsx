@@ -19,9 +19,6 @@ import { StartupSplash } from '../src/components/StartupSplash';
 jest.mock('../src/services/learningService', () => ({
   learningService: { load: jest.fn(), save: jest.fn() },
 }));
-jest.mock('../src/screens/VoiceChatScreen', () => ({
-  VoiceChatScreen: () => null,
-}));
 beforeEach(() => {
   jest.mocked(learningService.load).mockResolvedValue({ profile, options });
 });

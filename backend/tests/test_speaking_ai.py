@@ -18,7 +18,7 @@ class SpeakingAITests(unittest.TestCase):
         for header, expected in (("12", 12), ("", 30), ("invalid", 30), ("900", 300)):
             response = MagicMock(status_code=429, headers={"Retry-After": header})
             response.__enter__.return_value = response
-            with patch.dict(os.environ, {"OPENROUTER_API_KEY": "server-key"}), \
+            with patch.dict(os.environ, {"GEMINI_API_KEY": "server-key"}), \
                     patch("speaking.ai.requests.post", return_value=response):
                 with self.assertRaises(ApiError) as error:
                     generate_reply(SNAPSHOT, [])
@@ -31,30 +31,30 @@ class SpeakingAITests(unittest.TestCase):
     def test_provider_uses_saved_role_and_server_configuration(self):
         response = MagicMock()
         response.__enter__.return_value = response
-        response.json.return_value = {"choices": [{"message": {"content": "こんにちは！"}}]}
-        with patch.dict(os.environ, {"OPENROUTER_API_KEY": "server-key", "OPENROUTER_MODEL": "configured-model"}), \
+        response.json.return_value = {"candidates": [{"finishReason": "STOP", "content": {"parts": [{"text": "こんにちは！"}]}}]}
+        with patch.dict(os.environ, {"GEMINI_API_KEY": "server-key", "GEMINI_CHAT_MODEL": "configured-model"}), \
                 patch("speaking.ai.requests.post", return_value=response) as post:
             self.assertEqual(generate_reply(SNAPSHOT, [{"role": "user", "content": "こんにちは"}]), "こんにちは！")
         payload = post.call_args.kwargs["json"]
-        self.assertEqual(payload["model"], "configured-model")
-        self.assertIn("PRIVATE ROLE", payload["messages"][0]["content"])
-        self.assertEqual(payload["messages"][0]["role"], "system")
+        self.assertIn("/configured-model:generateContent", post.call_args.args[0])
+        self.assertEqual(post.call_args.kwargs["headers"]["x-goog-api-key"], "server-key")
+        self.assertIn("PRIVATE ROLE", payload["systemInstruction"]["parts"][0]["text"])
+        self.assertEqual(payload["contents"][0]["role"], "user")
         for value in ("Interview", "Office", "Experience", "Interviewer", "ja-JP", "N3"):
-            self.assertIn(value, payload["messages"][0]["content"])
-        self.assertEqual(payload["messages"][-1]["content"], "こんにちは")
-        self.assertFalse(payload["stream"])
-        self.assertEqual(payload["reasoning"], {"enabled": False, "exclude": True})
-        self.assertEqual(payload["max_tokens"], 256)
+            self.assertIn(value, payload["systemInstruction"]["parts"][0]["text"])
+        self.assertEqual(payload["contents"][-1]["parts"][0]["text"], "こんにちは")
+        self.assertEqual(payload["generationConfig"]["maxOutputTokens"], 1024)
 
     def test_default_model_returns_only_dialogue_not_reasoning(self):
         response = MagicMock()
         response.__enter__.return_value = response
-        response.json.return_value = {"choices": [{"message": {
-            "content": "ご注文は？", "reasoning": "PRIVATE THINKING"}}]}
-        with patch.dict(os.environ, {"OPENROUTER_API_KEY": "server-key", "OPENROUTER_MODEL": ""}), \
+        response.json.return_value = {"candidates": [{"finishReason": "STOP", "content": {"parts": [
+            {"text": "PRIVATE THINKING", "thought": True}, {"text": "ご注文は？"}]}}]}
+        with patch.dict(os.environ, {"GEMINI_API_KEY": "server-key", "GEMINI_CHAT_MODEL": ""}), \
                 patch("speaking.ai.requests.post", return_value=response) as post:
             self.assertEqual(generate_reply(SNAPSHOT, []), "ご注文は？")
-        self.assertEqual(post.call_args.kwargs["json"]["model"], "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free")
+        self.assertIn("/gemini-3.1-flash-lite:generateContent", post.call_args.args[0])
+        self.assertEqual(post.call_args.kwargs["json"]["generationConfig"]["thinkingConfig"], {"thinkingLevel": "minimal"})
 
     def test_prompt_changes_with_scenario_role_and_level(self):
         restaurant = {**SNAPSHOT, "title": "Restaurant", "context": "Taking an order",
@@ -69,7 +69,7 @@ class SpeakingAITests(unittest.TestCase):
         self.assertNotIn("JLPT", build_scenario_system_prompt({**SNAPSHOT, "language_code": "vi-VN"}))
 
     def test_missing_credentials_never_generate_mock_content(self):
-        with patch.dict(os.environ, {"OPENROUTER_API_KEY": ""}), patch("speaking.ai.requests.post") as post:
+        with patch.dict(os.environ, {"GEMINI_API_KEY": ""}), patch("speaking.ai.requests.post") as post:
             with self.assertRaises(ApiError) as error:
                 generate_reply(SNAPSHOT, [])
         self.assertEqual(error.exception.code, "ai_unavailable")
@@ -77,7 +77,7 @@ class SpeakingAITests(unittest.TestCase):
 
     def test_timeout_and_provider_errors_are_safe(self):
         for failure, status in ((requests.Timeout("private-key"), 504), (requests.HTTPError("private-key"), 502)):
-            with patch.dict(os.environ, {"OPENROUTER_API_KEY": "server-key"}), \
+            with patch.dict(os.environ, {"GEMINI_API_KEY": "server-key"}), \
                     patch("speaking.ai.requests.post", side_effect=failure):
                 with self.assertRaises(ApiError) as error:
                     generate_reply(SNAPSHOT, [])
@@ -85,11 +85,13 @@ class SpeakingAITests(unittest.TestCase):
                 self.assertNotIn("private-key", str(error.exception))
 
     def test_empty_or_malformed_completion_is_rejected(self):
-        for data in ({"choices": []}, {"choices": [{"message": {"content": ""}}]}, {"error": "provider failed"}):
+        for data in ({"candidates": []}, {"candidates": [{"finishReason": "STOP", "content": {"parts": []}}]},
+                     {"error": "provider failed"}, {"promptFeedback": {"blockReason": "SAFETY"}},
+                     {"candidates": [{"finishReason": "MAX_TOKENS", "content": {"parts": [{"text": "partial"}]}}]}):
             response = MagicMock()
             response.__enter__.return_value = response
             response.json.return_value = data
-            with patch.dict(os.environ, {"OPENROUTER_API_KEY": "server-key"}), \
+            with patch.dict(os.environ, {"GEMINI_API_KEY": "server-key"}), \
                     patch("speaking.ai.requests.post", return_value=response):
                 with self.assertRaises(ApiError) as error:
                     generate_reply(SNAPSHOT, [])

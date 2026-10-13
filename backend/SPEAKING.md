@@ -31,8 +31,8 @@ GEMINI_LIVE_VOICE=Kore
 Khởi động lại backend sau khi thay `.env`. Model mặc định lấy từ
 [tài liệu WebSocket của Google](https://ai.google.dev/gemini-api/docs/live-api/get-started-websocket);
 đổi biến model nếu tài khoản dùng model Live khác. Không đặt API key trong frontend.
-`OPENROUTER_API_KEY` chỉ phục vụ endpoint `/messages` và demo legacy;
-không cần cho màn hình Aoi mới.
+Hội thoại văn bản `/messages` cũng dùng `GEMINI_API_KEY`;
+`GEMINI_CHAT_MODEL` mặc định `gemini-3.1-flash-lite`.
 
 ## Danh sách và lọc
 
@@ -213,10 +213,9 @@ System prompt luôn là tin nhắn đầu tiên, gồm bối cảnh, mục tiêu
 riêng tư, ngôn ngữ và trình độ. AI được yêu cầu chỉ nói lời của nhân vật,
 trả lời 1–2 câu ngắn và giữ cuộc hội thoại trong tình huống.
 
-Hai luồng chat gửi `reasoning: {"enabled": false, "exclude": true}` và giới hạn
-256 token đầu ra để tránh bật thinking mặc định và trả lời dài. Chỉ ẩn reasoning
-không tắt tính toán; tham số `enabled=false` mới yêu cầu tắt reasoning.
-Tham khảo [OpenRouter reasoning](https://openrouter.ai/docs/guides/best-practices/reasoning-tokens).
+API hội thoại văn bản dùng Gemini REST, giới hạn 1024 token đầu ra và đặt
+`thinkingLevel: "minimal"` cho model Gemini 3. Backend chỉ trả các phần văn bản
+hội thoại, bỏ qua phần thinking.
 Transcript đầy đủ vẫn được lưu trong database. API buổi luyện tập chờ phản hồi
 hoàn tất và lưu vào database trước khi hiển thị; độ trễ thực tế còn tùy provider.
 Khởi động lại backend sau khi sửa `.env` để áp dụng model mới.
@@ -432,18 +431,21 @@ khoản hoặc audio/URL S3. Nội dung cá nhân nói trong transcript vẫn c�
 đến provider.
 
 Prompt thực tế: `speaking/evaluation_prompt.txt`; schema và provider:
-`speaking/evaluation_ai.py`. `SPEAKING_EVALUATION_MODEL` rỗng dùng model hiện
-có `OPENROUTER_MODEL`. Cấu hình mẫu dùng model miễn phí
-`nvidia/nemotron-3-super-120b-a12b:free` và `SPEAKING_EVALUATION_FORMAT=json_schema`.
-Nếu không cấu hình format, mặc định `text` vẫn yêu cầu JSON và xác thực backend;
-`json_schema` chỉ dùng với model/provider hỗ trợ structured outputs, đặt
-`require_parameters: true`.
+`speaking/evaluation_ai.py`. Chấm điểm toàn buổi và nhận xét từng câu đều dùng
+Gemini với `GEMINI_API_KEY`; `SPEAKING_EVALUATION_MODEL` mặc định
+`gemini-3.1-flash-lite`. Gọi REST `generateContent`
+với `systemInstruction`, transcript trong `contents` và JSON Schema trong
+`generationConfig.responseJsonSchema`. Mức thinking minimal cho model Gemini 3.x.
+Đặt model trong `.env` bằng tên
+model Gemini và khởi động lại backend; không cần migration và kết quả đã lưu
+vẫn được đọc lại như trước.
 
 Lần gọi AI đầu dùng timeout kết nối 5 giây, đọc tối đa 60 giây; frontend chờ POST tối
 đa 90 giây. Thử lại tự động tối đa một lần khi lỗi provider tạm thời hoặc output
 không hợp lệ; lần thứ hai đọc tối đa 30 giây và giảm theo ngân sách chờ còn lại
 (80 giây từ đầu lần phân tích). Không tự thử lại rate limit, lỗi cấu hình hay timeout.
-HTTP 200 có `error` vẫn được coi là lỗi provider. Một code fence JSON ngoài cùng
+HTTP 200 có `error` vẫn được coi là lỗi provider. Chỉ nhận candidate có
+`finishReason=STOP`; bỏ các phần thinking và không thử lại khi Gemini chặn nội dung. Một code fence JSON ngoài cùng
 được bỏ trước khi kiểm tra; góp ý trùng câu gốc/câu sửa được gộp, các gợi ý khác
 nhau cho cùng câu vẫn được giữ. Trích dẫn bịa hoặc điểm không hợp lệ không được
 chấp nhận. Log chỉ chứa loại lỗi, không ghi response body/transcript/credentials.

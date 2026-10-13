@@ -22,10 +22,10 @@ def queue_url(connection):
     return configured or connection.get_queue_url(QueueName='shadowing')['QueueUrl']
 
 
-def enqueue(job):
+def enqueue(job, kind='shadowing'):
     try:
         connection = client(read_timeout=3)
-        connection.send_message(QueueUrl=queue_url(connection), MessageBody=json.dumps({'job_id': job.id}))
+        connection.send_message(QueueUrl=queue_url(connection), MessageBody=json.dumps({'job_id': job.id, 'kind': kind}))
         job.last_enqueued_at = int(time.time())
         db.session.commit()
         return True

@@ -1,0 +1,5615 @@
+{
+  "schema_version": 1,
+  "video": {
+    "youtube_id": "hOCiiFaMGv4",
+    "title": "Empowering People Who Change Society | Yoji Nagahama | TEDxSapporo Youth",
+    "channel": "TEDx Talks",
+    "duration_seconds": 1061
+  },
+  "caption_track": {
+    "language": "ja",
+    "kind": "asr",
+    "source": "youtube_automatic"
+  },
+  "source_playlist": "https://www.youtube.com/playlist?list=PLsRNoUx8w3rOHjXIU5EE4KOiIagv9yQaG",
+  "fetched_at": "2026-10-13T13:24:11.809199+00:00",
+  "segment_count": 120,
+  "segments": [
+    {
+      "text": "人を構成する要素を整理してみるとあり方とですね、やり方この2つに分解することができます。あり方というのは英語では",
+      "start_seconds": 7.08,
+      "end_seconds": 16.8,
+      "id": "hOCiiFaMGv4-ja-0001",
+      "sequence": 1
+    },
+    {
+      "text": "beング、やり方は英語ではdoイングという言い方をしますけども、あり方は人の基盤鬼軸になるようなものだと思ってください。自分はどう生きるのか、どんな生き方をするのか、どうありたいのか。",
+      "start_seconds": 16.8,
+      "end_seconds": 28.599,
+      "id": "hOCiiFaMGv4-ja-0002",
+      "sequence": 2
+    },
+    {
+      "text": "そんなことです。そしてもう1方のやり方、こちらについてはじゃそのあり方を実現するために具体的にどういう行動をしていくのかということ。これを明らかにして",
+      "start_seconds": 28.599,
+      "end_seconds": 39.36,
+      "id": "hOCiiFaMGv4-ja-0003",
+      "sequence": 3
+    },
+    {
+      "text": "いくサポートをするということが一づりということになります。そしてこの2つ、これを仕事というものに置き換えてみるとコーチングとコンサルティングという風な",
+      "start_seconds": 39.36,
+      "end_seconds": 50.84,
+      "id": "hOCiiFaMGv4-ja-0004",
+      "sequence": 4
+    },
+    {
+      "text": "専門的な仕事になります。少しこの2つについて、え、さらに皆さんにご説明をさせていただきたいと思います。",
+      "start_seconds": 50.84,
+      "end_seconds": 60.039,
+      "id": "hOCiiFaMGv4-ja-0005",
+      "sequence": 5
+    },
+    {
+      "text": "まずコーチングです。",
+      "start_seconds": 60.039,
+      "end_seconds": 62.8,
+      "id": "hOCiiFaMGv4-ja-0006",
+      "sequence": 6
+    },
+    {
+      "text": "コーチという言葉を聞くと何かスポーツの世界すごくイメージしやすいんじゃないかなと思います。選手がいて、そしてコーチがいて、その選手が目指す目標に対してコーチがサポートしたり指導するという、",
+      "start_seconds": 62.8,
+      "end_seconds": 74.2,
+      "id": "hOCiiFaMGv4-ja-0007",
+      "sequence": 7
+    },
+    {
+      "text": "そういう世界ですよね。で、これビジネスの世界にもあります。相手が個人のこともあれば複数の個人からなる集団とかチームとか組織であることもあります。個人で",
+      "start_seconds": 74.2,
+      "end_seconds": 85.68,
+      "id": "hOCiiFaMGv4-ja-0008",
+      "sequence": 8
+    },
+    {
+      "text": "ある組織であるそこにはですね、必ず何かしらの願いとか思いというものがあって、他にもどんな価値観を大事にしているのか、どんな信念こだわりを持っているの",
+      "start_seconds": 85.68,
+      "end_seconds": 97.64,
+      "id": "hOCiiFaMGv4-ja-0009",
+      "sequence": 9
+    },
+    {
+      "text": "か、そもそもどこにたどり着いていきたいのか、じゃ、そこに向かっていく時にどんな自分でいたいのか、態度とかスタンスとかそういうことですね。そう",
+      "start_seconds": 97.64,
+      "end_seconds": 109.399,
+      "id": "hOCiiFaMGv4-ja-0010",
+      "sequence": 10
+    },
+    {
+      "text": "いったことを明らかにしていく、探求していくお手伝いをコーチングという仕事ではしていく。",
+      "start_seconds": 109.399,
+      "end_seconds": 115.159,
+      "id": "hOCiiFaMGv4-ja-0011",
+      "sequence": 11
+    },
+    {
+      "text": "もう一方のコンサルティングです。こちらは例えばお医者さんとか学校の先生のようなものがイメージしやすいかもしれません。例えばお医者さんであれば",
+      "start_seconds": 115.159,
+      "end_seconds": 125.88,
+      "id": "hOCiiFaMGv4-ja-0012",
+      "sequence": 12
+    },
+    {
+      "text": "何かしらの課題お悩みを持った患者さんに対して診断をして処方戦お薬を提供していったりとかですね。場合によっては下科",
+      "start_seconds": 125.88,
+      "end_seconds": 135.319,
+      "id": "hOCiiFaMGv4-ja-0013",
+      "sequence": 13
+    },
+    {
+      "text": "手術をするということもあると思います。",
+      "start_seconds": 135.319,
+      "end_seconds": 138.239,
+      "id": "hOCiiFaMGv4-ja-0014",
+      "sequence": 14
+    },
+    {
+      "text": "当然相手に違うわけですけれども、時には知識を提供したり技術を提供したり、ノンハウとかスキルとかですね、テクノロジーとかいろんなものを提供して",
+      "start_seconds": 138.239,
+      "end_seconds": 148.36,
+      "id": "hOCiiFaMGv4-ja-0015",
+      "sequence": 15
+    },
+    {
+      "text": "いきながらその相手の方が目指しているゴールに立つくお手伝いをしていく。これがね、コンサルティングという仕事になります。",
+      "start_seconds": 148.36,
+      "end_seconds": 158.68,
+      "id": "hOCiiFaMGv4-ja-0016",
+      "sequence": 16
+    },
+    {
+      "text": "そして僕はこの2つの仕事、コーチングとコンサルティングっていうことを、ま、両輪のように持ちながら相手の置かれてる状態を、え、見ていきながらですね、必要",
+      "start_seconds": 158.68,
+      "end_seconds": 169.28,
+      "id": "hOCiiFaMGv4-ja-0017",
+      "sequence": 17
+    },
+    {
+      "text": "なものを適義組み合わせながら提供してるというそんな仕事の仕方をしています。",
+      "start_seconds": 169.28,
+      "end_seconds": 174.8,
+      "id": "hOCiiFaMGv4-ja-0018",
+      "sequence": 18
+    },
+    {
+      "text": "じゃあ一体ですね、どんな分野の、どんな人たちに対してこんな仕事をしてるかということをもうちょっとだけお伝えしたいと思います。",
+      "start_seconds": 174.8,
+      "end_seconds": 182.76,
+      "id": "hOCiiFaMGv4-ja-0019",
+      "sequence": 19
+    },
+    {
+      "text": "日本の社外って大きく分けるとですね、3つのセクターと言われてるものに分けることができます。1つ目がパブリックセクターと言われて政府とか自治体が活躍しているフィールド。2つ目が",
+      "start_seconds": 182.76,
+      "end_seconds": 194.72,
+      "id": "hOCiiFaMGv4-ja-0020",
+      "sequence": 20
+    },
+    {
+      "text": "プライベートセクターと言って民間企業ですね。企業が活動してるフィールド。",
+      "start_seconds": 194.72,
+      "end_seconds": 199.76,
+      "id": "hOCiiFaMGv4-ja-0021",
+      "sequence": 21
+    },
+    {
+      "text": "そして3つ目がソーシャルセクターと言いますが、NPOとかNGOとかソーシャルビジネスとかそういった社会課題の解決と",
+      "start_seconds": 199.76,
+      "end_seconds": 209.239,
+      "id": "hOCiiFaMGv4-ja-0022",
+      "sequence": 22
+    },
+    {
+      "text": "かですね、地域課題の解決、さらには地域作りとか地域の活性化、こんなことに携わってる人たちが活躍しているフィールドです。で、僕はここに熟足を置きながら他のセクターにもかかるという",
+      "start_seconds": 209.239,
+      "end_seconds": 221.159,
+      "id": "hOCiiFaMGv4-ja-0023",
+      "sequence": 23
+    },
+    {
+      "text": "風なそんな仕事をしています。で、実はこのソーシャルセクターですけれども、さっきも非常に高い注目を浴びていたりとか、関心を寄せられたりしています。期待",
+      "start_seconds": 221.159,
+      "end_seconds": 231.159,
+      "id": "hOCiiFaMGv4-ja-0024",
+      "sequence": 24
+    },
+    {
+      "text": "も寄せられています。ちょっとその背景を簡単にお伝えしていきたいんですけども、ま、日本は戦後ですね、高度経済成長の事態を経て",
+      "start_seconds": 231.159,
+      "end_seconds": 241.159,
+      "id": "hOCiiFaMGv4-ja-0025",
+      "sequence": 25
+    },
+    {
+      "text": "豊かな経済資源と共にですね、先進国の仲間入りを果たすようになりました。",
+      "start_seconds": 241.159,
+      "end_seconds": 248.48,
+      "id": "hOCiiFaMGv4-ja-0026",
+      "sequence": 26
+    },
+    {
+      "text": "ただ昨今は社会課題先進国なんていう風に言われています。",
+      "start_seconds": 248.48,
+      "end_seconds": 255.36,
+      "id": "hOCiiFaMGv4-ja-0027",
+      "sequence": 27
+    },
+    {
+      "text": "確かに我々の日常の周りを見渡してみると様々な社会課題で溢れ返っていて、ま、テレビのニュースもそうですし、Webブの記事なんかを見ていてもそうですが、",
+      "start_seconds": 255.36,
+      "end_seconds": 266.28,
+      "id": "hOCiiFaMGv4-ja-0028",
+      "sequence": 28
+    },
+    {
+      "text": "こういった境課題を目にしない日はないと言っても過言ではないぐらいの日常を送っていると思います。実はこれが日本の今の実態なんですね。",
+      "start_seconds": 266.28,
+      "end_seconds": 275.72,
+      "id": "hOCiiFaMGv4-ja-0029",
+      "sequence": 29
+    },
+    {
+      "text": "繰り返しになりますけども、ソーシャルセクターに活動する人たち、こういった社会課題を掲げて、それの解決に向かってですね、知恵とか汗とか工夫を重ねていきながらお仕事をされていて、僕はそれを",
+      "start_seconds": 275.72,
+      "end_seconds": 287.16,
+      "id": "hOCiiFaMGv4-ja-0030",
+      "sequence": 30
+    },
+    {
+      "text": "後ろから後するような形でサポートしています。",
+      "start_seconds": 287.16,
+      "end_seconds": 293.84000000000003,
+      "id": "hOCiiFaMGv4-ja-0031",
+      "sequence": 31
+    },
+    {
+      "text": "ここまで僕がどんな仕事をしてるかということをざっくりお伝えをしてきました。",
+      "start_seconds": 294.56,
+      "end_seconds": 299.12,
+      "id": "hOCiiFaMGv4-ja-0032",
+      "sequence": 32
+    },
+    {
+      "text": "社会を変える人を作るという仕事をしていますけれども、それに加えて社会を変える人をつぐということがさらに必要だなと",
+      "start_seconds": 299.12,
+      "end_seconds": 308.12,
+      "id": "hOCiiFaMGv4-ja-0033",
+      "sequence": 33
+    },
+    {
+      "text": "いうことを思っています。",
+      "start_seconds": 308.12,
+      "end_seconds": 311.4,
+      "id": "hOCiiFaMGv4-ja-0034",
+      "sequence": 34
+    },
+    {
+      "text": "どういうことかと言うと、特にこれコロナ以降だと思いますけども、世の中の至るところに対立とか分断って",
+      "start_seconds": 311.4,
+      "end_seconds": 320.16,
+      "id": "hOCiiFaMGv4-ja-0035",
+      "sequence": 35
+    },
+    {
+      "text": "いうものがありますよね。",
+      "start_seconds": 320.16,
+      "end_seconds": 323.56,
+      "id": "hOCiiFaMGv4-ja-0036",
+      "sequence": 36
+    },
+    {
+      "text": "これ先ほどお伝えしたそれぞれの人なり組織なりにあり方とやり方ってものがあるわけですけども、これがバランスをある時っていいんです。ただそれがぐっと力強い",
+      "start_seconds": 323.56,
+      "end_seconds": 334.199,
+      "id": "hOCiiFaMGv4-ja-0037",
+      "sequence": 37
+    },
+    {
+      "text": "ものになりすぎていったりするとだんだんこうファイティングポーズみたいになるんですね。",
+      "start_seconds": 334.199,
+      "end_seconds": 339.56,
+      "id": "hOCiiFaMGv4-ja-0038",
+      "sequence": 38
+    },
+    {
+      "text": "で、お互いこの構えから抜け出すことができなくていうことになってきます。で、この立場から相手に対してパンチを",
+      "start_seconds": 339.56,
+      "end_seconds": 349.96,
+      "id": "hOCiiFaMGv4-ja-0039",
+      "sequence": 39
+    },
+    {
+      "text": "繰り出すかのように自分の都合なり主張なりを一方的に突きつけていくとそれを受け止めていこうという風な共感的な指勢でのがどこかに行ってしまって",
+      "start_seconds": 349.96,
+      "end_seconds": 360.319,
+      "id": "hOCiiFaMGv4-ja-0040",
+      "sequence": 40
+    },
+    {
+      "text": "るってことが今世の中で起きているんじゃないかなと思っています。",
+      "start_seconds": 360.319,
+      "end_seconds": 364.84,
+      "id": "hOCiiFaMGv4-ja-0041",
+      "sequence": 41
+    },
+    {
+      "text": "そういったことにやはり外部から関わっていきながらそこを解けぐしていってきちんと繋がりができるような社会を作っていかないと先ほど言った社会課題え大国",
+      "start_seconds": 364.84,
+      "end_seconds": 375.8,
+      "id": "hOCiiFaMGv4-ja-0042",
+      "sequence": 42
+    },
+    {
+      "text": "日本これは変わっていかないんじゃないかってことが僕の問題意識としてあります。",
+      "start_seconds": 375.8,
+      "end_seconds": 382.28,
+      "id": "hOCiiFaMGv4-ja-0043",
+      "sequence": 43
+    },
+    {
+      "text": "もう少し具体的なですね、事例を1つ皆さんにご紹介していきながら今やってる仕事についてお話をしていきたいと思いますが、ここではまさにこのテレデックス",
+      "start_seconds": 382.28,
+      "end_seconds": 392.16,
+      "id": "hOCiiFaMGv4-ja-0044",
+      "sequence": 44
+    },
+    {
+      "text": "札幌ユース1つの地域活性イベントですよね。で、これを素材にしながら、え、ちょっとお話をしていきたいと思います。",
+      "start_seconds": 392.16,
+      "end_seconds": 399.84,
+      "id": "hOCiiFaMGv4-ja-0045",
+      "sequence": 45
+    },
+    {
+      "text": "ま、テデックスというよりも日本全国いろんなところでいろんな形で行われている地域活性化イベントです。これも地域の課題をね、解決していこうとして実践されている取り組みの1つになると思います",
+      "start_seconds": 399.84,
+      "end_seconds": 410.919,
+      "id": "hOCiiFaMGv4-ja-0046",
+      "sequence": 46
+    },
+    {
+      "text": "が、こういった大人と若者の対列的な図識って結構ありませんかね。特に他世代でやっていくイベントであれば、こういった",
+      "start_seconds": 410.919,
+      "end_seconds": 421.96,
+      "id": "hOCiiFaMGv4-ja-0047",
+      "sequence": 47
+    },
+    {
+      "text": "若い人とベテランの人たち、これが対立して攻め合うみたいなことって結構いろんな地域で起きてます。僕も仕事でそんな場面に出くわしてそこの介議を依頼されること",
+      "start_seconds": 421.96,
+      "end_seconds": 433.36,
+      "id": "hOCiiFaMGv4-ja-0048",
+      "sequence": 48
+    },
+    {
+      "text": "もあったりします。",
+      "start_seconds": 433.36,
+      "end_seconds": 437.039,
+      "id": "hOCiiFaMGv4-ja-0049",
+      "sequence": 49
+    },
+    {
+      "text": "最初の頃はですね、大人の方々も、ま、次世代は若い人が作っていくんだから僕らサポートに回るよねみたいなこと言われているんですけどね。だんだんだんだんこと",
+      "start_seconds": 437.16,
+      "end_seconds": 446.599,
+      "id": "hOCiiFaMGv4-ja-0050",
+      "sequence": 50
+    },
+    {
+      "text": "が進んでくるとなんか殺伐としてきた空気になってきていってなっていってだんだんとみんなが悲しそうな顔して下を向くということが結構地域で起きています",
+      "start_seconds": 446.599,
+      "end_seconds": 456.44,
+      "id": "hOCiiFaMGv4-ja-0051",
+      "sequence": 51
+    },
+    {
+      "text": "。",
+      "start_seconds": 456.44,
+      "end_seconds": 458.759,
+      "id": "hOCiiFaMGv4-ja-0052",
+      "sequence": 52
+    },
+    {
+      "text": "ちょっとその典型的なシーンをですね、僕今から1人二役で演してみるんで、ちょっと簡単に見ていただきたいと思います。",
+      "start_seconds": 458.759,
+      "end_seconds": 466.36,
+      "id": "hOCiiFaMGv4-ja-0053",
+      "sequence": 53
+    },
+    {
+      "text": "ここに大人の役割と若者の役割がね、あると思ってください。",
+      "start_seconds": 466.36,
+      "end_seconds": 471.72,
+      "id": "hOCiiFaMGv4-ja-0054",
+      "sequence": 54
+    },
+    {
+      "text": "まず若者です。",
+      "start_seconds": 471.72,
+      "end_seconds": 475.52000000000004,
+      "id": "hOCiiFaMGv4-ja-0055",
+      "sequence": 55
+    },
+    {
+      "text": "いや、僕たちに任せてくれるって言ったじゃないですか。今回のイベント企画からやってもいいよって言われたんで、それで手上げてここに来たんですよね。",
+      "start_seconds": 475.68,
+      "end_seconds": 485.36,
+      "id": "hOCiiFaMGv4-ja-0056",
+      "sequence": 56
+    },
+    {
+      "text": "今度大人です。",
+      "start_seconds": 485.36,
+      "end_seconds": 489.08000000000004,
+      "id": "hOCiiFaMGv4-ja-0057",
+      "sequence": 57
+    },
+    {
+      "text": "いやいや、そうだけどさ、ちょっと君たちのやり方見てるとなんか本当任せきれないんだよ。なんか危なかしいしさ、なんかもう雑なんだよね。爪が甘いっていうかさ",
+      "start_seconds": 489.12,
+      "end_seconds": 500.639,
+      "id": "hOCiiFaMGv4-ja-0058",
+      "sequence": 58
+    },
+    {
+      "text": "。",
+      "start_seconds": 500.639,
+      "end_seconds": 503.639,
+      "id": "hOCiiFaMGv4-ja-0059",
+      "sequence": 59
+    },
+    {
+      "text": "なんだ結局最後はそうやって口出してくるんですよね。なんかまたいつものパターンじゃないですか?やっていいって言うからやってるのに結局最後はなんかまとめする",
+      "start_seconds": 505.319,
+      "end_seconds": 514.479,
+      "id": "hOCiiFaMGv4-ja-0060",
+      "sequence": 60
+    },
+    {
+      "text": "んですよね。そうやって。",
+      "start_seconds": 514.479,
+      "end_seconds": 518.399,
+      "id": "hOCiiFaMGv4-ja-0061",
+      "sequence": 61
+    },
+    {
+      "text": "いやいや、そうじゃないんだよね。僕らだって任せと思ってるしとみたいにね、口うるさく言いたいわけじゃないんだよ。でもね、ちょっと",
+      "start_seconds": 520.36,
+      "end_seconds": 532.0,
+      "id": "hOCiiFaMGv4-ja-0062",
+      "sequence": 62
+    },
+    {
+      "text": "[ため息]だったらもう最初から自分たちでやればよかったな。なんか仲間同士でやった方が早いしさ、いろんな新しいね、インターネット使った仕掛けとかいっぱい",
+      "start_seconds": 537.106,
+      "end_seconds": 546.76,
+      "id": "hOCiiFaMGv4-ja-0063",
+      "sequence": 63
+    },
+    {
+      "text": "できるしさ。",
+      "start_seconds": 546.76,
+      "end_seconds": 549.12,
+      "id": "hOCiiFaMGv4-ja-0064",
+      "sequence": 64
+    },
+    {
+      "text": "ああ。",
+      "start_seconds": 549.12,
+      "end_seconds": 552.32,
+      "id": "hOCiiFaMGv4-ja-0065",
+      "sequence": 65
+    },
+    {
+      "text": "いや、ちゃんとやってくればね、任せるんだよ。なんかおまけできないかな。分かってくれないかな。やっぱり最近の若者は",
+      "start_seconds": 556.399,
+      "end_seconds": 568.0,
+      "id": "hOCiiFaMGv4-ja-0066",
+      "sequence": 66
+    },
+    {
+      "text": "ということが結構起きてませんかね。",
+      "start_seconds": 569.519,
+      "end_seconds": 572.48,
+      "id": "hOCiiFaMGv4-ja-0067",
+      "sequence": 67
+    },
+    {
+      "text": "いろんな地域で。これね、かなりデフォルムして感想化したものですけども、やっぱりこんなことが、ま、起きてるわけです。そこに僕はあの、コーチとして",
+      "start_seconds": 572.48,
+      "end_seconds": 582.36,
+      "id": "hOCiiFaMGv4-ja-0068",
+      "sequence": 68
+    },
+    {
+      "text": "かかることがあります。その時は個人というよりも組織というよりもある意味地域丸ごという形でね、関わっていくんですけども、まずはまあまあという風にそっから入って",
+      "start_seconds": 582.36,
+      "end_seconds": 592.959,
+      "id": "hOCiiFaMGv4-ja-0069",
+      "sequence": 69
+    },
+    {
+      "text": "いきます。",
+      "start_seconds": 592.959,
+      "end_seconds": 594.8,
+      "id": "hOCiiFaMGv4-ja-0070",
+      "sequence": 70
+    },
+    {
+      "text": "で、何をするかと言うと、対話の場を作るということです。お互い聞く耳がモテていない状態になってるわけですよね。そこに入っていくってことをしていきます。",
+      "start_seconds": 594.8,
+      "end_seconds": 604.16,
+      "id": "hOCiiFaMGv4-ja-0071",
+      "sequence": 71
+    },
+    {
+      "text": "そして改めて今のやり取りの中で語られていないところというのをお互いが聞き換えるようなそんな場を作っていきます。",
+      "start_seconds": 604.16,
+      "end_seconds": 614.12,
+      "id": "hOCiiFaMGv4-ja-0072",
+      "sequence": 72
+    },
+    {
+      "text": "例えばこんなことがひょっとしたらお互いを思ってるかもしれませんね。",
+      "start_seconds": 614.12,
+      "end_seconds": 619.04,
+      "id": "hOCiiFaMGv4-ja-0073",
+      "sequence": 73
+    },
+    {
+      "text": "若者、大人それぞれです。例えば若者であればいや僕たちだってこれからいろんな失敗を繰り返やるかもしんないけどもそれをやっぱり乗り越えでいきながら経験を",
+      "start_seconds": 619.04,
+      "end_seconds": 630.48,
+      "id": "hOCiiFaMGv4-ja-0074",
+      "sequence": 74
+    },
+    {
+      "text": "積んでいってやっぱり10年先、20年先の地域って僕たちが担っていくじゃないですか。だからこそ今少しでもチャレンジをしていろんな経験積んでいきたいんです",
+      "start_seconds": 630.48,
+      "end_seconds": 640.88,
+      "id": "hOCiiFaMGv4-ja-0075",
+      "sequence": 75
+    },
+    {
+      "text": "よ。大人の皆さんだってそうやってやられてきたでしょ。っていうことを例えば思ってるかもしれませんね。",
+      "start_seconds": 640.88,
+      "end_seconds": 649.48,
+      "id": "hOCiiFaMGv4-ja-0076",
+      "sequence": 76
+    },
+    {
+      "text": "で、大人の方も大人の方で、いやいや、このイベントってさ、この地域でずっと昔からやっていて、これ失敗できないんだよ。",
+      "start_seconds": 649.48,
+      "end_seconds": 660.04,
+      "id": "hOCiiFaMGv4-ja-0077",
+      "sequence": 77
+    },
+    {
+      "text": "前の世代から続いてるやつだし、伝統的なものだし、この地域のシンボルみたいなもんだし、これ自治体からも助成金とか補助金もらってやってるしさ、企業からの共産金もあんだよ。",
+      "start_seconds": 660.04,
+      "end_seconds": 671.76,
+      "id": "hOCiiFaMGv4-ja-0078",
+      "sequence": 78
+    },
+    {
+      "text": "だから集客が昨年の半分になったりするってことはとてもありえないんだよね。",
+      "start_seconds": 671.76,
+      "end_seconds": 679.279,
+      "id": "hOCiiFaMGv4-ja-0079",
+      "sequence": 79
+    },
+    {
+      "text": "何しろお金もらえなくなったりすると継続できないしさ、それにずっとやってきてくれた方にも申し訳なくて",
+      "start_seconds": 679.279,
+      "end_seconds": 688.639,
+      "id": "hOCiiFaMGv4-ja-0080",
+      "sequence": 80
+    },
+    {
+      "text": "っていう痛み辛さみたいなものが大人には大人にあるかもしれないですね。",
+      "start_seconds": 688.639,
+      "end_seconds": 696.88,
+      "id": "hOCiiFaMGv4-ja-0081",
+      "sequence": 81
+    },
+    {
+      "text": "これどうでしょうか?先ほどのやり合いをしているところと比べてまたちょっと知う質感の空気が出てきてるんじゃないかなと",
+      "start_seconds": 696.88,
+      "end_seconds": 706.04,
+      "id": "hOCiiFaMGv4-ja-0082",
+      "sequence": 82
+    },
+    {
+      "text": "思います。でもここって当事者同士がいきなり話せるかと言うとそれは難しいんですよね。やっぱりファイティングボードを取ってるんでかファイティングボード",
+      "start_seconds": 706.04,
+      "end_seconds": 717.839,
+      "id": "hOCiiFaMGv4-ja-0083",
+      "sequence": 83
+    },
+    {
+      "text": "解いだら負けなんですね。やられちゃうんで。だからこそ第3世が介入していくことでその場を話せる場にしていくということをしたりします。",
+      "start_seconds": 717.839,
+      "end_seconds": 728.24,
+      "id": "hOCiiFaMGv4-ja-0084",
+      "sequence": 84
+    },
+    {
+      "text": "その時に大事にしてることが薪を燃やし尽くすという風な表現があるんですけど思いきり全部言い切ってもらう吐き出してもらうということなんですね。",
+      "start_seconds": 728.24,
+      "end_seconds": 737.8,
+      "id": "hOCiiFaMGv4-ja-0085",
+      "sequence": 85
+    },
+    {
+      "text": "これをしていかないとまた魂が彷徨って成仏できずにまた戻ってきて同じことが繰り返されるということがあります。で、この瞬間っていうのが実はコーチとしてかかる自分にも1番ヒリヒリするところな",
+      "start_seconds": 737.8,
+      "end_seconds": 749.72,
+      "id": "hOCiiFaMGv4-ja-0086",
+      "sequence": 86
+    },
+    {
+      "text": "んですね。思いっきり感情出てくるんですよ、いろんな人たちから。で、時には僕がアタックされるんですね。なんだと?お前は何時にここに来てんだと。俺たちの言うことを後ししてくれんじゃないかっていう",
+      "start_seconds": 749.72,
+      "end_seconds": 761.48,
+      "id": "hOCiiFaMGv4-ja-0087",
+      "sequence": 87
+    },
+    {
+      "text": "風に大人から言われたり、逆に若者から僕たちの味方になってくれんじゃないですかなんていうように期待されたりとかですね。ってことが結構あるんですよ。だから僕",
+      "start_seconds": 761.48,
+      "end_seconds": 770.92,
+      "id": "hOCiiFaMGv4-ja-0088",
+      "sequence": 88
+    },
+    {
+      "text": "もその中の炎の中に立ち続けるという風ななんか気持ちというか精神性っていうのが高知の場にも求められていくということがあります。ここは",
+      "start_seconds": 770.92,
+      "end_seconds": 782.92,
+      "id": "hOCiiFaMGv4-ja-0089",
+      "sequence": 89
+    },
+    {
+      "text": "本当に関係者全員がヒリヒリするんですね。僕も足がガクガク触れながらその場にいるんです。平成さを一生懸命んですけど。でもそうやって本音で出てきた言葉に",
+      "start_seconds": 782.92,
+      "end_seconds": 792.44,
+      "id": "hOCiiFaMGv4-ja-0090",
+      "sequence": 90
+    },
+    {
+      "text": "対しては皆さんその後の行動にも確実につがっていくってことがあります。",
+      "start_seconds": 792.44,
+      "end_seconds": 799.32,
+      "id": "hOCiiFaMGv4-ja-0091",
+      "sequence": 91
+    },
+    {
+      "text": "そしてもう1つ大事なことがロールスイッチなんて言いますけど役割を変えるということです。ロールというのは役割です。それを書いて相手の立場になってみ",
+      "start_seconds": 799.32,
+      "end_seconds": 808.639,
+      "id": "hOCiiFaMGv4-ja-0092",
+      "sequence": 92
+    },
+    {
+      "text": "るってことを促していきます。これ僕らが、え、生まれてからこの方ですね、親とか学校の先生から言われてきて、人の気持ちになって考えなさい、行動しなさいって言われてきますよね。でもこれなかなか",
+      "start_seconds": 808.639,
+      "end_seconds": 820.24,
+      "id": "hOCiiFaMGv4-ja-0093",
+      "sequence": 93
+    },
+    {
+      "text": "できないんですよ。そこを実際に物理的なスペースを作ったりして、じゃあ大人の人は若者の世界に入ってください。若者は大人の世界に入ってくださいみたいな促し",
+      "start_seconds": 820.24,
+      "end_seconds": 831.399,
+      "id": "hOCiiFaMGv4-ja-0094",
+      "sequence": 94
+    },
+    {
+      "text": "をしていきながら実際に体ごと相手の気持ちになってみる、なり切ってみるということをサポートしていきます。",
+      "start_seconds": 831.399,
+      "end_seconds": 839.959,
+      "id": "hOCiiFaMGv4-ja-0095",
+      "sequence": 95
+    },
+    {
+      "text": "そうするとですね、ただ単に言葉だけではなくて、その場にいる質感みたいなこともじーンと体に染みてきて、いきなりその場で100%分かりましたと",
+      "start_seconds": 839.959,
+      "end_seconds": 851.079,
+      "id": "hOCiiFaMGv4-ja-0096",
+      "sequence": 96
+    },
+    {
+      "text": "、あなた方の言ってることが正しかったです。なんてこと[鼻息]にはならないですけど、やっぱりまずはそうなんだね、そういう思いがあるんだねっていうことを一旦受け止めるということができるように",
+      "start_seconds": 851.079,
+      "end_seconds": 861.6,
+      "id": "hOCiiFaMGv4-ja-0097",
+      "sequence": 97
+    },
+    {
+      "text": "なります。いきなり全部受け入れられなくても受け止めるということができていくようになります。そうすると次はじゃあどんな話しようかねという対話の場が開か",
+      "start_seconds": 861.6,
+      "end_seconds": 870.8,
+      "id": "hOCiiFaMGv4-ja-0098",
+      "sequence": 98
+    },
+    {
+      "text": "れたりということで次のステージに進んでいくってことができるようになります。",
+      "start_seconds": 870.8,
+      "end_seconds": 877.6,
+      "id": "hOCiiFaMGv4-ja-0099",
+      "sequence": 99
+    },
+    {
+      "text": "改めてこういったですね、今回今地域イベントということを1つ素材として皆さんにご提供してみましたけども、やはりどうしてもイベントなんかある時には中身何にしよう、プログラムどうしようとか",
+      "start_seconds": 877.6,
+      "end_seconds": 889.24,
+      "id": "hOCiiFaMGv4-ja-0100",
+      "sequence": 100
+    },
+    {
+      "text": "タイムラインどうしようとかですね、集客どうしようってことに意識が向きかしだと思います。でも大事なのはなぜそれをやるんだっていう風な気持ちの部分であり願い",
+      "start_seconds": 889.24,
+      "end_seconds": 898.759,
+      "id": "hOCiiFaMGv4-ja-0101",
+      "sequence": 101
+    },
+    {
+      "text": "の部分なんですね。そこをやっぱり大事にしていかないとなかなかいい感じで前に進まずに本当に関わる人みんなが不幸せな状態になってしまうとことが起きると思い",
+      "start_seconds": 898.759,
+      "end_seconds": 908.6,
+      "id": "hOCiiFaMGv4-ja-0102",
+      "sequence": 102
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 908.6,
+      "end_seconds": 910.88,
+      "id": "hOCiiFaMGv4-ja-0103",
+      "sequence": 103
+    },
+    {
+      "text": "というと随分ですね、なんかイラのこと言ってるような気がしますがこれも僕自身の本当に失敗から学んでることなんです。",
+      "start_seconds": 910.88,
+      "end_seconds": 917.16,
+      "id": "hOCiiFaMGv4-ja-0104",
+      "sequence": 104
+    },
+    {
+      "text": "外部から関わる時にですね、色々お招きをされます。いろんな地域に。でも僕いろんなケース事例とか知っていて、ある意味正解をしてるような気持ちでそこに",
+      "start_seconds": 917.16,
+      "end_seconds": 927.68,
+      "id": "hOCiiFaMGv4-ja-0105",
+      "sequence": 105
+    },
+    {
+      "text": "入っていくんですけど、やっぱりそこの地域には地域、組織には組織、人には人の文脈があったり感情があったりするってことが当たり前ですけどあるんですよね。",
+      "start_seconds": 927.68,
+      "end_seconds": 937.44,
+      "id": "hOCiiFaMGv4-ja-0106",
+      "sequence": 106
+    },
+    {
+      "text": "そこをいきなりポンと入っていくっていうこと。",
+      "start_seconds": 937.44,
+      "end_seconds": 941.24,
+      "id": "hOCiiFaMGv4-ja-0107",
+      "sequence": 107
+    },
+    {
+      "text": "本当にそこは相手の気持ちなり相手の状態をちゃんと理解してるかというと、特にコンサルティングの仕事をし始めた当初っていうのはよしやるぜみたいな気持ちで",
+      "start_seconds": 941.24,
+      "end_seconds": 950.319,
+      "id": "hOCiiFaMGv4-ja-0108",
+      "sequence": 108
+    },
+    {
+      "text": "いるんで結構ぐっと入ってくんですよ。",
+      "start_seconds": 950.319,
+      "end_seconds": 953.279,
+      "id": "hOCiiFaMGv4-ja-0109",
+      "sequence": 109
+    },
+    {
+      "text": "ただそこでうまくいかずに一旦計画なり戦略なり作るんですけど数ヶ月後どうですか?この前のやつうまく進んでますって",
+      "start_seconds": 953.279,
+      "end_seconds": 962.959,
+      "id": "hOCiiFaMGv4-ja-0110",
+      "sequence": 110
+    },
+    {
+      "text": "言うといやちょっと忙しくてねっていう風に買わされるんですよね。で、またしばらくっていくんですけど、いや人がやめちゃってさあみたいなことが結構起きるんです",
+      "start_seconds": 962.959,
+      "end_seconds": 974.68,
+      "id": "hOCiiFaMGv4-ja-0111",
+      "sequence": 111
+    },
+    {
+      "text": "というぐらいやっぱりこのあり方やり方ということはしっかりと自分の中でも意識をして入っていかないとなかなかうまくいか",
+      "start_seconds": 974.68,
+      "end_seconds": 983.6,
+      "id": "hOCiiFaMGv4-ja-0112",
+      "sequence": 112
+    },
+    {
+      "text": "ないと。ただ当事者同士が当事者だけでその厳しい状況を変えていけるかというとそこはそこで非常にハードルが高いことなんですね。だからこそやはり外部から",
+      "start_seconds": 983.6,
+      "end_seconds": 994.24,
+      "id": "hOCiiFaMGv4-ja-0113",
+      "sequence": 113
+    },
+    {
+      "text": "関わる人、それからコンサルタントであり、コーチであれ、そういった人が入っていくことでしっかりとその場を解きほぐしていって前に進めていくっていうこんな仕事っていうのは本当にこれからの世の中",
+      "start_seconds": 994.24,
+      "end_seconds": 1006.0,
+      "id": "hOCiiFaMGv4-ja-0114",
+      "sequence": 114
+    },
+    {
+      "text": "求められるもんじゃないかなと思ってます。",
+      "start_seconds": 1006.0,
+      "end_seconds": 1010.16,
+      "id": "hOCiiFaMGv4-ja-0115",
+      "sequence": 115
+    },
+    {
+      "text": "で、このテレックス札幌ユース2025ってテーマが繋がりなんですよね。ただ繋がりって本当に言葉と違って非常に難しい人筋なではいかないものです。でも",
+      "start_seconds": 1010.16,
+      "end_seconds": 1021.88,
+      "id": "hOCiiFaMGv4-ja-0116",
+      "sequence": 116
+    },
+    {
+      "text": "やっぱり改めて相手の気持ちになってみるということ。そこからこの繋がりって本当にできていくと思ってるので、これをもっともっと僕は世の中に広げていきたい",
+      "start_seconds": 1021.88,
+      "end_seconds": 1031.76,
+      "id": "hOCiiFaMGv4-ja-0117",
+      "sequence": 117
+    },
+    {
+      "text": "なと思ってます。そして繋がりということを続いてですね、自分自身が何かなくしてたものをもう1度自分の中で取り戻す、自分自身と繋がるみたいなことも改めて",
+      "start_seconds": 1031.76,
+      "end_seconds": 1043.0,
+      "id": "hOCiiFaMGv4-ja-0118",
+      "sequence": 118
+    },
+    {
+      "text": "やっていきたいなという風に思っています。ご成聴ありがとうございました。",
+      "start_seconds": 1043.0,
+      "end_seconds": 1050.4,
+      "id": "hOCiiFaMGv4-ja-0119",
+      "sequence": 119
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 1051.287,
+      "end_seconds": 1053.307,
+      "id": "hOCiiFaMGv4-ja-0120",
+      "sequence": 120
+    }
+  ],
+  "raw_captions": [
+    {
+      "text": "人を構成する要素を整理してみるとあり方",
+      "start_seconds": 7.08,
+      "end_seconds": 13.36
+    },
+    {
+      "text": "とですね、やり方この2つに分解すること",
+      "start_seconds": 10.84,
+      "end_seconds": 16.8
+    },
+    {
+      "text": "ができます。あり方というのは英語では",
+      "start_seconds": 13.36,
+      "end_seconds": 19.24
+    },
+    {
+      "text": "beング、やり方は英語ではdoイングと",
+      "start_seconds": 16.8,
+      "end_seconds": 21.76
+    },
+    {
+      "text": "いう言い方をしますけども、あり方は人の",
+      "start_seconds": 19.24,
+      "end_seconds": 23.56
+    },
+    {
+      "text": "基盤鬼軸になるようなものだと思って",
+      "start_seconds": 21.76,
+      "end_seconds": 26.48
+    },
+    {
+      "text": "ください。自分はどう生きるのか、どんな",
+      "start_seconds": 23.56,
+      "end_seconds": 28.598999999999997
+    },
+    {
+      "text": "生き方をするのか、どうありたいのか。",
+      "start_seconds": 26.48,
+      "end_seconds": 31.359
+    },
+    {
+      "text": "そんなことです。そしてもう1方のやり方",
+      "start_seconds": 28.599,
+      "end_seconds": 34.32
+    },
+    {
+      "text": "、こちらについてはじゃそのあり方を実現",
+      "start_seconds": 31.359,
+      "end_seconds": 37.079
+    },
+    {
+      "text": "するために具体的にどういう行動をして",
+      "start_seconds": 34.32,
+      "end_seconds": 39.36
+    },
+    {
+      "text": "いくのかということ。これを明らかにして",
+      "start_seconds": 37.079,
+      "end_seconds": 42.079
+    },
+    {
+      "text": "いくサポートをするということが一づりと",
+      "start_seconds": 39.36,
+      "end_seconds": 45.0
+    },
+    {
+      "text": "いうことになります。そしてこの2つ、",
+      "start_seconds": 42.079,
+      "end_seconds": 48.199
+    },
+    {
+      "text": "これを仕事というものに置き換えてみると",
+      "start_seconds": 45.0,
+      "end_seconds": 50.84
+    },
+    {
+      "text": "コーチングとコンサルティングという風な",
+      "start_seconds": 48.199,
+      "end_seconds": 54.64
+    },
+    {
+      "text": "専門的な仕事になります。少しこの2つに",
+      "start_seconds": 50.84,
+      "end_seconds": 57.120000000000005
+    },
+    {
+      "text": "ついて、え、さらに皆さんにご説明をさせ",
+      "start_seconds": 54.64,
+      "end_seconds": 60.039
+    },
+    {
+      "text": "ていただきたいと思います。",
+      "start_seconds": 57.12,
+      "end_seconds": 62.8
+    },
+    {
+      "text": "まずコーチングです。",
+      "start_seconds": 60.039,
+      "end_seconds": 65.199
+    },
+    {
+      "text": "コーチという言葉を聞くと何かスポーツの",
+      "start_seconds": 62.8,
+      "end_seconds": 66.92
+    },
+    {
+      "text": "世界すごくイメージしやすいんじゃないか",
+      "start_seconds": 65.199,
+      "end_seconds": 70.0
+    },
+    {
+      "text": "なと思います。選手がいて、そしてコーチ",
+      "start_seconds": 66.92,
+      "end_seconds": 72.52
+    },
+    {
+      "text": "がいて、その選手が目指す目標に対して",
+      "start_seconds": 70.0,
+      "end_seconds": 74.2
+    },
+    {
+      "text": "コーチがサポートしたり指導するという、",
+      "start_seconds": 72.52,
+      "end_seconds": 76.79899999999999
+    },
+    {
+      "text": "そういう世界ですよね。で、これビジネス",
+      "start_seconds": 74.2,
+      "end_seconds": 79.36
+    },
+    {
+      "text": "の世界にもあります。相手が個人のことも",
+      "start_seconds": 76.799,
+      "end_seconds": 82.52000000000001
+    },
+    {
+      "text": "あれば複数の個人からなる集団とかチーム",
+      "start_seconds": 79.36,
+      "end_seconds": 85.68
+    },
+    {
+      "text": "とか組織であることもあります。個人で",
+      "start_seconds": 82.52,
+      "end_seconds": 87.79899999999999
+    },
+    {
+      "text": "ある組織であるそこにはですね、必ず",
+      "start_seconds": 85.68,
+      "end_seconds": 90.60000000000001
+    },
+    {
+      "text": "何かしらの願いとか思いというものがあっ",
+      "start_seconds": 87.799,
+      "end_seconds": 94.52000000000001
+    },
+    {
+      "text": "て、他にもどんな価値観を大事にしている",
+      "start_seconds": 90.6,
+      "end_seconds": 97.64
+    },
+    {
+      "text": "のか、どんな信念こだわりを持っているの",
+      "start_seconds": 94.52,
+      "end_seconds": 100.399
+    },
+    {
+      "text": "か、そもそもどこにたどり着いていきたい",
+      "start_seconds": 97.64,
+      "end_seconds": 104.36
+    },
+    {
+      "text": "のか、じゃ、そこに向かっていく時に",
+      "start_seconds": 100.399,
+      "end_seconds": 106.88
+    },
+    {
+      "text": "どんな自分でいたいのか、態度とか",
+      "start_seconds": 104.36,
+      "end_seconds": 109.399
+    },
+    {
+      "text": "スタンスとかそういうことですね。そう",
+      "start_seconds": 106.88,
+      "end_seconds": 111.479
+    },
+    {
+      "text": "いったことを明らかにしていく、探求して",
+      "start_seconds": 109.399,
+      "end_seconds": 113.159
+    },
+    {
+      "text": "いくお手伝いをコーチングという仕事では",
+      "start_seconds": 111.479,
+      "end_seconds": 115.159
+    },
+    {
+      "text": "していく。",
+      "start_seconds": 113.159,
+      "end_seconds": 117.159
+    },
+    {
+      "text": "もう一方のコンサルティングです。こちら",
+      "start_seconds": 115.159,
+      "end_seconds": 120.52000000000001
+    },
+    {
+      "text": "は例えばお医者さんとか学校の先生のよう",
+      "start_seconds": 117.159,
+      "end_seconds": 122.07900000000001
+    },
+    {
+      "text": "なものがイメージしやすいかもしれません",
+      "start_seconds": 120.52,
+      "end_seconds": 125.88
+    },
+    {
+      "text": "。例えばお医者さんであれば",
+      "start_seconds": 122.079,
+      "end_seconds": 128.35999999999999
+    },
+    {
+      "text": "何かしらの課題お悩みを持った患者さんに",
+      "start_seconds": 125.88,
+      "end_seconds": 133.12
+    },
+    {
+      "text": "対して診断をして処方戦お薬を提供して",
+      "start_seconds": 128.36,
+      "end_seconds": 135.31900000000002
+    },
+    {
+      "text": "いったりとかですね。場合によっては下科",
+      "start_seconds": 133.12,
+      "end_seconds": 138.239
+    },
+    {
+      "text": "手術をするということもあると思います。",
+      "start_seconds": 135.319,
+      "end_seconds": 141.04
+    },
+    {
+      "text": "当然相手に違うわけですけれども、時には",
+      "start_seconds": 138.239,
+      "end_seconds": 144.12
+    },
+    {
+      "text": "知識を提供したり技術を提供したり、",
+      "start_seconds": 141.04,
+      "end_seconds": 145.92
+    },
+    {
+      "text": "ノンハウとかスキルとかですね、",
+      "start_seconds": 144.12,
+      "end_seconds": 148.36
+    },
+    {
+      "text": "テクノロジーとかいろんなものを提供して",
+      "start_seconds": 145.92,
+      "end_seconds": 151.23899999999998
+    },
+    {
+      "text": "いきながらその相手の方が目指している",
+      "start_seconds": 148.36,
+      "end_seconds": 154.04000000000002
+    },
+    {
+      "text": "ゴールに立つくお手伝いをしていく。これ",
+      "start_seconds": 151.239,
+      "end_seconds": 155.8
+    },
+    {
+      "text": "がね、コンサルティングという仕事になり",
+      "start_seconds": 154.04,
+      "end_seconds": 158.67999999999998
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 155.8,
+      "end_seconds": 161.8
+    },
+    {
+      "text": "そして僕はこの2つの仕事、コーチングと",
+      "start_seconds": 158.68,
+      "end_seconds": 163.4
+    },
+    {
+      "text": "コンサルティングっていうことを、ま、",
+      "start_seconds": 161.8,
+      "end_seconds": 165.959
+    },
+    {
+      "text": "両輪のように持ちながら相手の置かれてる",
+      "start_seconds": 163.4,
+      "end_seconds": 169.28
+    },
+    {
+      "text": "状態を、え、見ていきながらですね、必要",
+      "start_seconds": 165.959,
+      "end_seconds": 172.28
+    },
+    {
+      "text": "なものを適義組み合わせながら提供してる",
+      "start_seconds": 169.28,
+      "end_seconds": 174.8
+    },
+    {
+      "text": "というそんな仕事の仕方をしています。",
+      "start_seconds": 172.28,
+      "end_seconds": 177.36
+    },
+    {
+      "text": "じゃあ一体ですね、どんな分野の、どんな",
+      "start_seconds": 174.8,
+      "end_seconds": 179.08
+    },
+    {
+      "text": "人たちに対してこんな仕事をしてるかと",
+      "start_seconds": 177.36,
+      "end_seconds": 180.36
+    },
+    {
+      "text": "いうことをもうちょっとだけお伝えしたい",
+      "start_seconds": 179.08,
+      "end_seconds": 182.76000000000002
+    },
+    {
+      "text": "と思います。",
+      "start_seconds": 180.36,
+      "end_seconds": 184.72000000000003
+    },
+    {
+      "text": "日本の社外って大きく分けるとですね、3",
+      "start_seconds": 182.76,
+      "end_seconds": 186.48
+    },
+    {
+      "text": "つのセクターと言われてるものに分ける",
+      "start_seconds": 184.72,
+      "end_seconds": 189.239
+    },
+    {
+      "text": "ことができます。1つ目がパブリック",
+      "start_seconds": 186.48,
+      "end_seconds": 192.72
+    },
+    {
+      "text": "セクターと言われて政府とか自治体が活躍",
+      "start_seconds": 189.239,
+      "end_seconds": 194.72
+    },
+    {
+      "text": "しているフィールド。2つ目が",
+      "start_seconds": 192.72,
+      "end_seconds": 197.08
+    },
+    {
+      "text": "プライベートセクターと言って民間企業",
+      "start_seconds": 194.72,
+      "end_seconds": 199.76
+    },
+    {
+      "text": "ですね。企業が活動してるフィールド。",
+      "start_seconds": 197.08,
+      "end_seconds": 202.0
+    },
+    {
+      "text": "そして3つ目がソーシャルセクターと言い",
+      "start_seconds": 199.76,
+      "end_seconds": 205.879
+    },
+    {
+      "text": "ますが、NPOとかNGOとかソーシャル",
+      "start_seconds": 202.0,
+      "end_seconds": 209.239
+    },
+    {
+      "text": "ビジネスとかそういった社会課題の解決と",
+      "start_seconds": 205.879,
+      "end_seconds": 212.2
+    },
+    {
+      "text": "かですね、地域課題の解決、さらには",
+      "start_seconds": 209.239,
+      "end_seconds": 214.92000000000002
+    },
+    {
+      "text": "地域作りとか地域の活性化、こんなことに",
+      "start_seconds": 212.2,
+      "end_seconds": 217.07999999999998
+    },
+    {
+      "text": "携わってる人たちが活躍している",
+      "start_seconds": 214.92,
+      "end_seconds": 219.11999999999998
+    },
+    {
+      "text": "フィールドです。で、僕はここに熟足を",
+      "start_seconds": 217.08,
+      "end_seconds": 221.15900000000002
+    },
+    {
+      "text": "置きながら他のセクターにもかかるという",
+      "start_seconds": 219.12,
+      "end_seconds": 223.84
+    },
+    {
+      "text": "風なそんな仕事をしています。で、実は",
+      "start_seconds": 221.159,
+      "end_seconds": 225.64
+    },
+    {
+      "text": "このソーシャルセクターですけれども、",
+      "start_seconds": 223.84,
+      "end_seconds": 228.31900000000002
+    },
+    {
+      "text": "さっきも非常に高い注目を浴びていたりと",
+      "start_seconds": 225.64,
+      "end_seconds": 231.159
+    },
+    {
+      "text": "か、関心を寄せられたりしています。期待",
+      "start_seconds": 228.319,
+      "end_seconds": 233.92
+    },
+    {
+      "text": "も寄せられています。ちょっとその背景を",
+      "start_seconds": 231.159,
+      "end_seconds": 236.12
+    },
+    {
+      "text": "簡単にお伝えしていきたいんですけども、",
+      "start_seconds": 233.92,
+      "end_seconds": 238.92
+    },
+    {
+      "text": "ま、日本は戦後ですね、高度経済成長の",
+      "start_seconds": 236.12,
+      "end_seconds": 241.159
+    },
+    {
+      "text": "事態を経て",
+      "start_seconds": 238.92,
+      "end_seconds": 244.95899999999997
+    },
+    {
+      "text": "豊かな経済資源と共にですね、先進国の",
+      "start_seconds": 241.159,
+      "end_seconds": 248.48
+    },
+    {
+      "text": "仲間入りを果たすようになりました。",
+      "start_seconds": 244.959,
+      "end_seconds": 250.0
+    },
+    {
+      "text": "ただ",
+      "start_seconds": 248.48,
+      "end_seconds": 253.319
+    },
+    {
+      "text": "昨今は社会課題先進国なんていう風に言わ",
+      "start_seconds": 250.0,
+      "end_seconds": 255.36
+    },
+    {
+      "text": "れています。",
+      "start_seconds": 253.319,
+      "end_seconds": 259.12
+    },
+    {
+      "text": "確かに我々の日常の周りを見渡してみると",
+      "start_seconds": 255.36,
+      "end_seconds": 262.32
+    },
+    {
+      "text": "様々な社会課題で溢れ返っていて、ま、",
+      "start_seconds": 259.12,
+      "end_seconds": 264.44
+    },
+    {
+      "text": "テレビのニュースもそうですし、Webブ",
+      "start_seconds": 262.32,
+      "end_seconds": 266.28
+    },
+    {
+      "text": "の記事なんかを見ていてもそうですが、",
+      "start_seconds": 264.44,
+      "end_seconds": 268.28
+    },
+    {
+      "text": "こういった境課題を目にしない日はないと",
+      "start_seconds": 266.28,
+      "end_seconds": 270.79999999999995
+    },
+    {
+      "text": "言っても過言ではないぐらいの日常を送っ",
+      "start_seconds": 268.28,
+      "end_seconds": 273.11999999999995
+    },
+    {
+      "text": "ていると思います。実はこれが日本の今の",
+      "start_seconds": 270.8,
+      "end_seconds": 275.72
+    },
+    {
+      "text": "実態なんですね。",
+      "start_seconds": 273.12,
+      "end_seconds": 276.919
+    },
+    {
+      "text": "繰り返しになりますけども、ソーシャル",
+      "start_seconds": 275.72,
+      "end_seconds": 279.16
+    },
+    {
+      "text": "セクターに活動する人たち、こういった",
+      "start_seconds": 276.919,
+      "end_seconds": 282.24
+    },
+    {
+      "text": "社会課題を掲げて、それの解決に向かって",
+      "start_seconds": 279.16,
+      "end_seconds": 284.68
+    },
+    {
+      "text": "ですね、知恵とか汗とか工夫を重ねていき",
+      "start_seconds": 282.24,
+      "end_seconds": 287.16
+    },
+    {
+      "text": "ながらお仕事をされていて、僕はそれを",
+      "start_seconds": 284.68,
+      "end_seconds": 290.72
+    },
+    {
+      "text": "後ろから後するような形でサポートしてい",
+      "start_seconds": 287.16,
+      "end_seconds": 293.84000000000003
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 290.72,
+      "end_seconds": 293.84000000000003
+    },
+    {
+      "text": "ここまで僕がどんな仕事をしてるかという",
+      "start_seconds": 294.56,
+      "end_seconds": 299.12
+    },
+    {
+      "text": "ことをざっくりお伝えをしてきました。",
+      "start_seconds": 296.8,
+      "end_seconds": 300.96000000000004
+    },
+    {
+      "text": "社会を変える人を作るという仕事をしてい",
+      "start_seconds": 299.12,
+      "end_seconds": 304.84000000000003
+    },
+    {
+      "text": "ますけれども、それに加えて社会を変える",
+      "start_seconds": 300.96,
+      "end_seconds": 308.12
+    },
+    {
+      "text": "人をつぐということがさらに必要だなと",
+      "start_seconds": 304.84,
+      "end_seconds": 311.4
+    },
+    {
+      "text": "いうことを思っています。",
+      "start_seconds": 308.12,
+      "end_seconds": 314.24
+    },
+    {
+      "text": "どういうことかと言うと、特にこれコロナ",
+      "start_seconds": 311.4,
+      "end_seconds": 317.52
+    },
+    {
+      "text": "以降だと思いますけども、",
+      "start_seconds": 314.24,
+      "end_seconds": 320.16
+    },
+    {
+      "text": "世の中の至るところに対立とか分断って",
+      "start_seconds": 317.52,
+      "end_seconds": 323.56
+    },
+    {
+      "text": "いうものがありますよね。",
+      "start_seconds": 320.16,
+      "end_seconds": 325.91900000000004
+    },
+    {
+      "text": "これ先ほどお伝えしたそれぞれの人なり",
+      "start_seconds": 323.56,
+      "end_seconds": 328.12
+    },
+    {
+      "text": "組織なりにあり方とやり方ってものがある",
+      "start_seconds": 325.919,
+      "end_seconds": 330.52
+    },
+    {
+      "text": "わけですけども、これがバランスをある時",
+      "start_seconds": 328.12,
+      "end_seconds": 334.199
+    },
+    {
+      "text": "っていいんです。ただそれがぐっと力強い",
+      "start_seconds": 330.52,
+      "end_seconds": 336.35999999999996
+    },
+    {
+      "text": "ものになりすぎていったりするとだんだん",
+      "start_seconds": 334.199,
+      "end_seconds": 337.52000000000004
+    },
+    {
+      "text": "こうファイティングポーズみたいになるん",
+      "start_seconds": 336.36,
+      "end_seconds": 339.56
+    },
+    {
+      "text": "ですね。",
+      "start_seconds": 337.52,
+      "end_seconds": 343.59999999999997
+    },
+    {
+      "text": "で、お互いこの構えから抜け出すことが",
+      "start_seconds": 339.56,
+      "end_seconds": 346.639
+    },
+    {
+      "text": "できなくていうことになってきます。で、",
+      "start_seconds": 343.6,
+      "end_seconds": 349.96000000000004
+    },
+    {
+      "text": "この立場から相手に対してパンチを",
+      "start_seconds": 346.639,
+      "end_seconds": 353.16
+    },
+    {
+      "text": "繰り出すかのように自分の都合なり主張",
+      "start_seconds": 349.96,
+      "end_seconds": 356.31899999999996
+    },
+    {
+      "text": "なりを一方的に突きつけていくとそれを",
+      "start_seconds": 353.16,
+      "end_seconds": 358.72
+    },
+    {
+      "text": "受け止めていこうという風な共感的な指勢",
+      "start_seconds": 356.319,
+      "end_seconds": 360.319
+    },
+    {
+      "text": "でのがどこかに行ってしまって",
+      "start_seconds": 358.72,
+      "end_seconds": 362.40000000000003
+    },
+    {
+      "text": "るってことが今世の中で起きているんじゃ",
+      "start_seconds": 360.319,
+      "end_seconds": 364.84000000000003
+    },
+    {
+      "text": "ないかなと思っています。",
+      "start_seconds": 362.4,
+      "end_seconds": 366.88
+    },
+    {
+      "text": "そういったことにやはり外部から関わって",
+      "start_seconds": 364.84,
+      "end_seconds": 369.71999999999997
+    },
+    {
+      "text": "いきながらそこを解けぐしていって",
+      "start_seconds": 366.88,
+      "end_seconds": 371.599
+    },
+    {
+      "text": "きちんと繋がりができるような社会を作っ",
+      "start_seconds": 369.72,
+      "end_seconds": 375.8
+    },
+    {
+      "text": "ていかないと先ほど言った社会課題え大国",
+      "start_seconds": 371.599,
+      "end_seconds": 377.68
+    },
+    {
+      "text": "日本これは変わっていかないんじゃない",
+      "start_seconds": 375.8,
+      "end_seconds": 379.88
+    },
+    {
+      "text": "かってことが僕の問題意識としてあります",
+      "start_seconds": 377.68,
+      "end_seconds": 382.28000000000003
+    },
+    {
+      "text": "。",
+      "start_seconds": 379.88,
+      "end_seconds": 385.15999999999997
+    },
+    {
+      "text": "もう少し具体的なですね、事例を1つ皆",
+      "start_seconds": 382.28,
+      "end_seconds": 387.15999999999997
+    },
+    {
+      "text": "さんにご紹介していきながら今やってる",
+      "start_seconds": 385.16,
+      "end_seconds": 388.72
+    },
+    {
+      "text": "仕事についてお話をしていきたいと思い",
+      "start_seconds": 387.16,
+      "end_seconds": 392.16
+    },
+    {
+      "text": "ますが、ここではまさにこのテレデックス",
+      "start_seconds": 388.72,
+      "end_seconds": 395.08000000000004
+    },
+    {
+      "text": "札幌ユース1つの地域活性イベントですよ",
+      "start_seconds": 392.16,
+      "end_seconds": 398.36
+    },
+    {
+      "text": "ね。で、これを素材にしながら、え、",
+      "start_seconds": 395.08,
+      "end_seconds": 399.84
+    },
+    {
+      "text": "ちょっとお話をしていきたいと思います。",
+      "start_seconds": 398.36,
+      "end_seconds": 402.12
+    },
+    {
+      "text": "ま、テデックスというよりも日本全国",
+      "start_seconds": 399.84,
+      "end_seconds": 403.88
+    },
+    {
+      "text": "いろんなところでいろんな形で行われて",
+      "start_seconds": 402.12,
+      "end_seconds": 406.68
+    },
+    {
+      "text": "いる地域活性化イベントです。これも地域",
+      "start_seconds": 403.88,
+      "end_seconds": 408.919
+    },
+    {
+      "text": "の課題をね、解決していこうとして実践さ",
+      "start_seconds": 406.68,
+      "end_seconds": 410.919
+    },
+    {
+      "text": "れている取り組みの1つになると思います",
+      "start_seconds": 408.919,
+      "end_seconds": 416.52
+    },
+    {
+      "text": "が、こういった大人と若者の対列的な図識",
+      "start_seconds": 410.919,
+      "end_seconds": 419.84
+    },
+    {
+      "text": "って結構ありませんかね。特に他世代で",
+      "start_seconds": 416.52,
+      "end_seconds": 421.96
+    },
+    {
+      "text": "やっていくイベントであれば、こういった",
+      "start_seconds": 419.84,
+      "end_seconds": 426.08
+    },
+    {
+      "text": "若い人とベテランの人たち、これが対立し",
+      "start_seconds": 421.96,
+      "end_seconds": 427.919
+    },
+    {
+      "text": "て攻め合うみたいなことって結構いろんな",
+      "start_seconds": 426.08,
+      "end_seconds": 430.71999999999997
+    },
+    {
+      "text": "地域で起きてます。僕も仕事でそんな場面",
+      "start_seconds": 427.919,
+      "end_seconds": 433.35999999999996
+    },
+    {
+      "text": "に出くわしてそこの介議を依頼されること",
+      "start_seconds": 430.72,
+      "end_seconds": 437.03900000000004
+    },
+    {
+      "text": "もあったりします。",
+      "start_seconds": 433.36,
+      "end_seconds": 437.039
+    },
+    {
+      "text": "最初の頃はですね、大人の方々も、ま、次",
+      "start_seconds": 437.16,
+      "end_seconds": 443.12
+    },
+    {
+      "text": "世代は若い人が作っていくんだから僕ら",
+      "start_seconds": 440.08,
+      "end_seconds": 444.919
+    },
+    {
+      "text": "サポートに回るよねみたいなこと言われて",
+      "start_seconds": 443.12,
+      "end_seconds": 446.599
+    },
+    {
+      "text": "いるんですけどね。だんだんだんだんこと",
+      "start_seconds": 444.919,
+      "end_seconds": 449.68
+    },
+    {
+      "text": "が進んでくるとなんか殺伐としてきた空気",
+      "start_seconds": 446.599,
+      "end_seconds": 452.319
+    },
+    {
+      "text": "になってきていってなっていってだんだん",
+      "start_seconds": 449.68,
+      "end_seconds": 454.16
+    },
+    {
+      "text": "だんだんとみんなが悲しそうな顔して下を",
+      "start_seconds": 452.319,
+      "end_seconds": 456.44
+    },
+    {
+      "text": "向くということが結構地域で起きています",
+      "start_seconds": 454.16,
+      "end_seconds": 458.759
+    },
+    {
+      "text": "。",
+      "start_seconds": 456.44,
+      "end_seconds": 460.879
+    },
+    {
+      "text": "ちょっとその典型的なシーンをですね、僕",
+      "start_seconds": 458.759,
+      "end_seconds": 463.47900000000004
+    },
+    {
+      "text": "今から1人二役で演してみるんで、",
+      "start_seconds": 460.879,
+      "end_seconds": 464.96000000000004
+    },
+    {
+      "text": "ちょっと簡単に見ていただきたいと思い",
+      "start_seconds": 463.479,
+      "end_seconds": 466.35999999999996
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 464.96,
+      "end_seconds": 468.84
+    },
+    {
+      "text": "ここに大人の役割と若者の役割がね、ある",
+      "start_seconds": 466.36,
+      "end_seconds": 471.72
+    },
+    {
+      "text": "と思ってください。",
+      "start_seconds": 468.84,
+      "end_seconds": 475.52
+    },
+    {
+      "text": "まず若者です。",
+      "start_seconds": 471.72,
+      "end_seconds": 475.52000000000004
+    },
+    {
+      "text": "いや、僕たちに任せてくれるって言った",
+      "start_seconds": 475.68,
+      "end_seconds": 479.599
+    },
+    {
+      "text": "じゃないですか。今回のイベント企画から",
+      "start_seconds": 477.44,
+      "end_seconds": 481.56
+    },
+    {
+      "text": "やってもいいよって言われたんで、それで",
+      "start_seconds": 479.599,
+      "end_seconds": 485.36
+    },
+    {
+      "text": "手上げてここに来たんですよね。",
+      "start_seconds": 481.56,
+      "end_seconds": 489.08
+    },
+    {
+      "text": "今度大人です。",
+      "start_seconds": 485.36,
+      "end_seconds": 489.08000000000004
+    },
+    {
+      "text": "いやいや、そうだけどさ、ちょっと君たち",
+      "start_seconds": 489.12,
+      "end_seconds": 494.319
+    },
+    {
+      "text": "のやり方見てるとなんか本当任せきれない",
+      "start_seconds": 491.759,
+      "end_seconds": 497.28000000000003
+    },
+    {
+      "text": "んだよ。なんか危なかしいしさ、なんか",
+      "start_seconds": 494.319,
+      "end_seconds": 500.639
+    },
+    {
+      "text": "もう雑なんだよね。爪が甘いっていうかさ",
+      "start_seconds": 497.28,
+      "end_seconds": 503.63899999999995
+    },
+    {
+      "text": "。",
+      "start_seconds": 500.639,
+      "end_seconds": 503.639
+    },
+    {
+      "text": "なんだ結局最後はそうやって口出してくる",
+      "start_seconds": 505.319,
+      "end_seconds": 509.52000000000004
+    },
+    {
+      "text": "んですよね。なんかまたいつものパターン",
+      "start_seconds": 507.52,
+      "end_seconds": 511.71999999999997
+    },
+    {
+      "text": "じゃないですか?やっていいって言うから",
+      "start_seconds": 509.52,
+      "end_seconds": 514.4789999999999
+    },
+    {
+      "text": "やってるのに結局最後はなんかまとめする",
+      "start_seconds": 511.72,
+      "end_seconds": 518.399
+    },
+    {
+      "text": "んですよね。そうやって。",
+      "start_seconds": 514.479,
+      "end_seconds": 518.399
+    },
+    {
+      "text": "いやいや、そうじゃないんだよね。僕ら",
+      "start_seconds": 520.36,
+      "end_seconds": 525.12
+    },
+    {
+      "text": "だって任せと思ってるしとみたいにね、口",
+      "start_seconds": 522.8,
+      "end_seconds": 527.4799999999999
+    },
+    {
+      "text": "うるさく言いたいわけじゃないんだよ。で",
+      "start_seconds": 525.12,
+      "end_seconds": 532.0
+    },
+    {
+      "text": "もね、ちょっと",
+      "start_seconds": 527.48,
+      "end_seconds": 532.0
+    },
+    {
+      "text": "[ため息]",
+      "start_seconds": 537.106,
+      "end_seconds": 540.0
+    },
+    {
+      "text": "だったらもう最初から自分たちでやれば",
+      "start_seconds": 538.279,
+      "end_seconds": 542.8
+    },
+    {
+      "text": "よかったな。なんか仲間同士でやった方が",
+      "start_seconds": 540.0,
+      "end_seconds": 545.079
+    },
+    {
+      "text": "早いしさ、いろんな新しいね、",
+      "start_seconds": 542.8,
+      "end_seconds": 546.76
+    },
+    {
+      "text": "インターネット使った仕掛けとかいっぱい",
+      "start_seconds": 545.079,
+      "end_seconds": 549.12
+    },
+    {
+      "text": "できるしさ。",
+      "start_seconds": 546.76,
+      "end_seconds": 552.3199999999999
+    },
+    {
+      "text": "ああ。",
+      "start_seconds": 549.12,
+      "end_seconds": 552.32
+    },
+    {
+      "text": "いや、ちゃんとやってくればね、任せるん",
+      "start_seconds": 556.399,
+      "end_seconds": 562.0
+    },
+    {
+      "text": "だよ。なんかおまけできないかな。分かっ",
+      "start_seconds": 558.12,
+      "end_seconds": 568.0
+    },
+    {
+      "text": "てくれないかな。やっぱり最近の若者は",
+      "start_seconds": 562.0,
+      "end_seconds": 568.0
+    },
+    {
+      "text": "ということが結構起きてませんかね。",
+      "start_seconds": 569.519,
+      "end_seconds": 575.36
+    },
+    {
+      "text": "いろんな地域で。これね、かなり",
+      "start_seconds": 572.48,
+      "end_seconds": 577.36
+    },
+    {
+      "text": "デフォルムして感想化したものですけども",
+      "start_seconds": 575.36,
+      "end_seconds": 580.0790000000001
+    },
+    {
+      "text": "、やっぱりこんなことが、ま、起きてる",
+      "start_seconds": 577.36,
+      "end_seconds": 582.36
+    },
+    {
+      "text": "わけです。そこに僕はあの、コーチとして",
+      "start_seconds": 580.079,
+      "end_seconds": 585.16
+    },
+    {
+      "text": "かかることがあります。その時は個人と",
+      "start_seconds": 582.36,
+      "end_seconds": 586.9590000000001
+    },
+    {
+      "text": "いうよりも組織というよりもある意味地域",
+      "start_seconds": 585.16,
+      "end_seconds": 588.6
+    },
+    {
+      "text": "丸ごという形でね、関わっていくんです",
+      "start_seconds": 586.959,
+      "end_seconds": 591.0
+    },
+    {
+      "text": "けども、",
+      "start_seconds": 588.6,
+      "end_seconds": 592.9590000000001
+    },
+    {
+      "text": "まずはまあまあという風にそっから入って",
+      "start_seconds": 591.0,
+      "end_seconds": 594.8
+    },
+    {
+      "text": "いきます。",
+      "start_seconds": 592.959,
+      "end_seconds": 597.1199999999999
+    },
+    {
+      "text": "で、何をするかと言うと、対話の場を作る",
+      "start_seconds": 594.8,
+      "end_seconds": 599.519
+    },
+    {
+      "text": "ということです。お互い聞く耳がモテてい",
+      "start_seconds": 597.12,
+      "end_seconds": 601.44
+    },
+    {
+      "text": "ない状態になってるわけですよね。そこに",
+      "start_seconds": 599.519,
+      "end_seconds": 604.16
+    },
+    {
+      "text": "入っていくってことをしていきます。",
+      "start_seconds": 601.44,
+      "end_seconds": 607.72
+    },
+    {
+      "text": "そして改めて今のやり取りの中で語られて",
+      "start_seconds": 604.16,
+      "end_seconds": 609.92
+    },
+    {
+      "text": "いないところというのをお互いが",
+      "start_seconds": 607.72,
+      "end_seconds": 611.9200000000001
+    },
+    {
+      "text": "聞き換えるようなそんな場を作っていき",
+      "start_seconds": 609.92,
+      "end_seconds": 614.12
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 611.92,
+      "end_seconds": 616.4399999999999
+    },
+    {
+      "text": "例えばこんなことがひょっとしたらお互い",
+      "start_seconds": 614.12,
+      "end_seconds": 619.04
+    },
+    {
+      "text": "を思ってるかもしれませんね。",
+      "start_seconds": 616.44,
+      "end_seconds": 622.8800000000001
+    },
+    {
+      "text": "若者、大人それぞれです。例えば若者で",
+      "start_seconds": 619.04,
+      "end_seconds": 626.399
+    },
+    {
+      "text": "あればいや僕たちだってこれからいろんな",
+      "start_seconds": 622.88,
+      "end_seconds": 628.88
+    },
+    {
+      "text": "失敗を繰り返やるかもしんないけどもそれ",
+      "start_seconds": 626.399,
+      "end_seconds": 630.48
+    },
+    {
+      "text": "をやっぱり乗り越えでいきながら経験を",
+      "start_seconds": 628.88,
+      "end_seconds": 633.36
+    },
+    {
+      "text": "積んでいってやっぱり10年先、20年先",
+      "start_seconds": 630.48,
+      "end_seconds": 636.04
+    },
+    {
+      "text": "の地域って僕たちが担っていくじゃない",
+      "start_seconds": 633.36,
+      "end_seconds": 638.72
+    },
+    {
+      "text": "ですか。だからこそ今少しでもチャレンジ",
+      "start_seconds": 636.04,
+      "end_seconds": 640.88
+    },
+    {
+      "text": "をしていろんな経験積んでいきたいんです",
+      "start_seconds": 638.72,
+      "end_seconds": 643.32
+    },
+    {
+      "text": "よ。大人の皆さんだってそうやってやられ",
+      "start_seconds": 640.88,
+      "end_seconds": 646.04
+    },
+    {
+      "text": "てきたでしょ。っていうことを例えば思っ",
+      "start_seconds": 643.32,
+      "end_seconds": 649.48
+    },
+    {
+      "text": "てるかもしれませんね。",
+      "start_seconds": 646.04,
+      "end_seconds": 652.5999999999999
+    },
+    {
+      "text": "で、大人の方も大人の方で、いやいや、",
+      "start_seconds": 649.48,
+      "end_seconds": 654.8000000000001
+    },
+    {
+      "text": "このイベントってさ、この地域でずっと昔",
+      "start_seconds": 652.6,
+      "end_seconds": 657.6800000000001
+    },
+    {
+      "text": "からやっていて、これ失敗できないんだよ",
+      "start_seconds": 654.8,
+      "end_seconds": 660.04
+    },
+    {
+      "text": "。",
+      "start_seconds": 657.68,
+      "end_seconds": 662.3199999999999
+    },
+    {
+      "text": "前の世代から続いてるやつだし、伝統的な",
+      "start_seconds": 660.04,
+      "end_seconds": 664.279
+    },
+    {
+      "text": "ものだし、この地域のシンボルみたいな",
+      "start_seconds": 662.32,
+      "end_seconds": 667.12
+    },
+    {
+      "text": "もんだし、これ自治体からも助成金とか",
+      "start_seconds": 664.279,
+      "end_seconds": 669.4399999999999
+    },
+    {
+      "text": "補助金もらってやってるしさ、企業からの",
+      "start_seconds": 667.12,
+      "end_seconds": 671.76
+    },
+    {
+      "text": "共産金もあんだよ。",
+      "start_seconds": 669.44,
+      "end_seconds": 673.9590000000001
+    },
+    {
+      "text": "だから",
+      "start_seconds": 671.76,
+      "end_seconds": 676.48
+    },
+    {
+      "text": "集客が昨年の半分になったりするっ",
+      "start_seconds": 673.959,
+      "end_seconds": 679.279
+    },
+    {
+      "text": "てことはとてもありえないんだよね。",
+      "start_seconds": 676.48,
+      "end_seconds": 682.0
+    },
+    {
+      "text": "何しろお金もらえなくなったりすると継続",
+      "start_seconds": 679.279,
+      "end_seconds": 684.16
+    },
+    {
+      "text": "できないしさ、",
+      "start_seconds": 682.0,
+      "end_seconds": 686.0
+    },
+    {
+      "text": "それにずっとやってきてくれた方にも",
+      "start_seconds": 684.16,
+      "end_seconds": 688.639
+    },
+    {
+      "text": "申し訳なくて",
+      "start_seconds": 686.0,
+      "end_seconds": 693.399
+    },
+    {
+      "text": "っていう痛み辛さみたいなものが大人には",
+      "start_seconds": 688.639,
+      "end_seconds": 696.88
+    },
+    {
+      "text": "大人にあるかもしれないですね。",
+      "start_seconds": 693.399,
+      "end_seconds": 699.44
+    },
+    {
+      "text": "これどうでしょうか?先ほどのやり合いを",
+      "start_seconds": 696.88,
+      "end_seconds": 702.6
+    },
+    {
+      "text": "しているところと比べてまたちょっと知う",
+      "start_seconds": 699.44,
+      "end_seconds": 706.0400000000001
+    },
+    {
+      "text": "質感の空気が出てきてるんじゃないかなと",
+      "start_seconds": 702.6,
+      "end_seconds": 709.8000000000001
+    },
+    {
+      "text": "思います。でもここって当事者同士が",
+      "start_seconds": 706.04,
+      "end_seconds": 712.76
+    },
+    {
+      "text": "いきなり話せるかと言うとそれは難しいん",
+      "start_seconds": 709.8,
+      "end_seconds": 714.3199999999999
+    },
+    {
+      "text": "ですよね。やっぱりファイティングボード",
+      "start_seconds": 712.76,
+      "end_seconds": 717.8389999999999
+    },
+    {
+      "text": "を取ってるんでかファイティングボード",
+      "start_seconds": 714.32,
+      "end_seconds": 720.32
+    },
+    {
+      "text": "解いだら負けなんですね。やられちゃうん",
+      "start_seconds": 717.839,
+      "end_seconds": 723.0790000000001
+    },
+    {
+      "text": "で。だからこそ第3世が介入していくこと",
+      "start_seconds": 720.32,
+      "end_seconds": 725.839
+    },
+    {
+      "text": "でその場を話せる場にしていくということ",
+      "start_seconds": 723.079,
+      "end_seconds": 728.2399999999999
+    },
+    {
+      "text": "をしたりします。",
+      "start_seconds": 725.839,
+      "end_seconds": 731.0790000000001
+    },
+    {
+      "text": "その時に大事にしてることが薪を",
+      "start_seconds": 728.24,
+      "end_seconds": 732.9590000000001
+    },
+    {
+      "text": "燃やし尽くすという風な表現があるんです",
+      "start_seconds": 731.079,
+      "end_seconds": 735.5999999999999
+    },
+    {
+      "text": "けど思いきり全部言い切ってもらう",
+      "start_seconds": 732.959,
+      "end_seconds": 737.8
+    },
+    {
+      "text": "吐き出してもらうということなんですね。",
+      "start_seconds": 735.6,
+      "end_seconds": 741.32
+    },
+    {
+      "text": "これをしていかないとまた魂が彷徨って",
+      "start_seconds": 737.8,
+      "end_seconds": 743.3599999999999
+    },
+    {
+      "text": "成仏できずにまた戻ってきて同じことが",
+      "start_seconds": 741.32,
+      "end_seconds": 746.0400000000001
+    },
+    {
+      "text": "繰り返されるということがあります。で、",
+      "start_seconds": 743.36,
+      "end_seconds": 747.92
+    },
+    {
+      "text": "この瞬間っていうのが実はコーチとして",
+      "start_seconds": 746.04,
+      "end_seconds": 749.7199999999999
+    },
+    {
+      "text": "かかる自分にも1番ヒリヒリするところな",
+      "start_seconds": 747.92,
+      "end_seconds": 752.24
+    },
+    {
+      "text": "んですね。思いっきり感情出てくるんです",
+      "start_seconds": 749.72,
+      "end_seconds": 754.88
+    },
+    {
+      "text": "よ、いろんな人たちから。で、時には僕が",
+      "start_seconds": 752.24,
+      "end_seconds": 757.44
+    },
+    {
+      "text": "アタックされるんですね。なんだと?お前",
+      "start_seconds": 754.88,
+      "end_seconds": 760.04
+    },
+    {
+      "text": "は何時にここに来てんだと。俺たちの言う",
+      "start_seconds": 757.44,
+      "end_seconds": 761.48
+    },
+    {
+      "text": "ことを後ししてくれんじゃないかっていう",
+      "start_seconds": 760.04,
+      "end_seconds": 764.76
+    },
+    {
+      "text": "風に大人から言われたり、逆に若者から僕",
+      "start_seconds": 761.48,
+      "end_seconds": 766.399
+    },
+    {
+      "text": "たちの味方になってくれんじゃないですか",
+      "start_seconds": 764.76,
+      "end_seconds": 768.199
+    },
+    {
+      "text": "なんていうように期待されたりとかですね",
+      "start_seconds": 766.399,
+      "end_seconds": 770.92
+    },
+    {
+      "text": "。ってことが結構あるんですよ。だから僕",
+      "start_seconds": 768.199,
+      "end_seconds": 773.68
+    },
+    {
+      "text": "もその中の炎の中に",
+      "start_seconds": 770.92,
+      "end_seconds": 777.3199999999999
+    },
+    {
+      "text": "立ち続けるという風ななんか気持ちという",
+      "start_seconds": 773.68,
+      "end_seconds": 780.199
+    },
+    {
+      "text": "か精神性っていうのが高知の場にも求め",
+      "start_seconds": 777.32,
+      "end_seconds": 782.9200000000001
+    },
+    {
+      "text": "られていくということがあります。ここは",
+      "start_seconds": 780.199,
+      "end_seconds": 784.639
+    },
+    {
+      "text": "本当に関係者全員がヒリヒリするんですね",
+      "start_seconds": 782.92,
+      "end_seconds": 787.24
+    },
+    {
+      "text": "。僕も足がガクガク触れながらその場に",
+      "start_seconds": 784.639,
+      "end_seconds": 789.72
+    },
+    {
+      "text": "いるんです。平成さを一生懸命んですけど",
+      "start_seconds": 787.24,
+      "end_seconds": 792.44
+    },
+    {
+      "text": "。でもそうやって本音で出てきた言葉に",
+      "start_seconds": 789.72,
+      "end_seconds": 795.1990000000001
+    },
+    {
+      "text": "対しては皆さんその後の行動にも確実に",
+      "start_seconds": 792.44,
+      "end_seconds": 799.32
+    },
+    {
+      "text": "つがっていくってことがあります。",
+      "start_seconds": 795.199,
+      "end_seconds": 801.56
+    },
+    {
+      "text": "そしてもう1つ大事なことがロール",
+      "start_seconds": 799.32,
+      "end_seconds": 804.0400000000001
+    },
+    {
+      "text": "スイッチなんて言いますけど役割を変える",
+      "start_seconds": 801.56,
+      "end_seconds": 805.5189999999999
+    },
+    {
+      "text": "ということです。ロールというのは役割",
+      "start_seconds": 804.04,
+      "end_seconds": 808.639
+    },
+    {
+      "text": "です。それを書いて相手の立場になってみ",
+      "start_seconds": 805.519,
+      "end_seconds": 811.399
+    },
+    {
+      "text": "るってことを促していきます。これ僕らが",
+      "start_seconds": 808.639,
+      "end_seconds": 813.639
+    },
+    {
+      "text": "、え、生まれてからこの方ですね、親とか",
+      "start_seconds": 811.399,
+      "end_seconds": 816.399
+    },
+    {
+      "text": "学校の先生から言われてきて、人の気持ち",
+      "start_seconds": 813.639,
+      "end_seconds": 818.04
+    },
+    {
+      "text": "になって考えなさい、行動しなさいって",
+      "start_seconds": 816.399,
+      "end_seconds": 820.24
+    },
+    {
+      "text": "言われてきますよね。でもこれなかなか",
+      "start_seconds": 818.04,
+      "end_seconds": 823.88
+    },
+    {
+      "text": "できないんですよ。そこを実際に物理的な",
+      "start_seconds": 820.24,
+      "end_seconds": 826.04
+    },
+    {
+      "text": "スペースを作ったりして、じゃあ大人の人",
+      "start_seconds": 823.88,
+      "end_seconds": 829.12
+    },
+    {
+      "text": "は若者の世界に入ってください。若者は",
+      "start_seconds": 826.04,
+      "end_seconds": 831.399
+    },
+    {
+      "text": "大人の世界に入ってくださいみたいな促し",
+      "start_seconds": 829.12,
+      "end_seconds": 834.759
+    },
+    {
+      "text": "をしていきながら実際に体ごと相手の",
+      "start_seconds": 831.399,
+      "end_seconds": 836.639
+    },
+    {
+      "text": "気持ちになってみる、なり切ってみると",
+      "start_seconds": 834.759,
+      "end_seconds": 839.9590000000001
+    },
+    {
+      "text": "いうことをサポートしていきます。",
+      "start_seconds": 836.639,
+      "end_seconds": 843.0790000000001
+    },
+    {
+      "text": "そうするとですね、ただ単に言葉だけでは",
+      "start_seconds": 839.959,
+      "end_seconds": 845.3599999999999
+    },
+    {
+      "text": "なくて、その場にいる質感みたいなことも",
+      "start_seconds": 843.079,
+      "end_seconds": 848.56
+    },
+    {
+      "text": "じーンと体に染みてきて、",
+      "start_seconds": 845.36,
+      "end_seconds": 851.0790000000001
+    },
+    {
+      "text": "いきなりその場で100%分かりましたと",
+      "start_seconds": 848.56,
+      "end_seconds": 852.8
+    },
+    {
+      "text": "、あなた方の言ってることが正しかった",
+      "start_seconds": 851.079,
+      "end_seconds": 854.12
+    },
+    {
+      "text": "です。なんてこと[鼻息]にはならない",
+      "start_seconds": 852.8,
+      "end_seconds": 857.7199999999999
+    },
+    {
+      "text": "ですけど、やっぱりまずはそうなんだね、",
+      "start_seconds": 854.12,
+      "end_seconds": 859.68
+    },
+    {
+      "text": "そういう思いがあるんだねっていうことを",
+      "start_seconds": 857.72,
+      "end_seconds": 861.6
+    },
+    {
+      "text": "一旦受け止めるということができるように",
+      "start_seconds": 859.68,
+      "end_seconds": 864.16
+    },
+    {
+      "text": "なります。いきなり全部受け入れられなく",
+      "start_seconds": 861.6,
+      "end_seconds": 865.759
+    },
+    {
+      "text": "ても受け止めるということができていく",
+      "start_seconds": 864.16,
+      "end_seconds": 868.639
+    },
+    {
+      "text": "ようになります。そうすると次はじゃあ",
+      "start_seconds": 865.759,
+      "end_seconds": 870.8000000000001
+    },
+    {
+      "text": "どんな話しようかねという対話の場が開か",
+      "start_seconds": 868.639,
+      "end_seconds": 873.8
+    },
+    {
+      "text": "れたりということで次のステージに進んで",
+      "start_seconds": 870.8,
+      "end_seconds": 877.5999999999999
+    },
+    {
+      "text": "いくってことができるようになります。",
+      "start_seconds": 873.8,
+      "end_seconds": 879.519
+    },
+    {
+      "text": "改めてこういったですね、今回今地域",
+      "start_seconds": 877.6,
+      "end_seconds": 882.1990000000001
+    },
+    {
+      "text": "イベントということを1つ素材として皆",
+      "start_seconds": 879.519,
+      "end_seconds": 885.0
+    },
+    {
+      "text": "さんにご提供してみましたけども、やはり",
+      "start_seconds": 882.199,
+      "end_seconds": 887.7199999999999
+    },
+    {
+      "text": "どうしてもイベントなんかある時には中身",
+      "start_seconds": 885.0,
+      "end_seconds": 889.24
+    },
+    {
+      "text": "何にしよう、プログラムどうしようとか",
+      "start_seconds": 887.72,
+      "end_seconds": 890.9590000000001
+    },
+    {
+      "text": "タイムラインどうしようとかですね、集客",
+      "start_seconds": 889.24,
+      "end_seconds": 893.0
+    },
+    {
+      "text": "どうしようってことに意識が向きかしだと",
+      "start_seconds": 890.959,
+      "end_seconds": 896.04
+    },
+    {
+      "text": "思います。でも大事なのはなぜそれをやる",
+      "start_seconds": 893.0,
+      "end_seconds": 898.759
+    },
+    {
+      "text": "んだっていう風な気持ちの部分であり願い",
+      "start_seconds": 896.04,
+      "end_seconds": 901.519
+    },
+    {
+      "text": "の部分なんですね。そこをやっぱり大事に",
+      "start_seconds": 898.759,
+      "end_seconds": 903.16
+    },
+    {
+      "text": "していかないとなかなかいい感じで前に",
+      "start_seconds": 901.519,
+      "end_seconds": 906.36
+    },
+    {
+      "text": "進まずに本当に関わる人みんなが不幸せな",
+      "start_seconds": 903.16,
+      "end_seconds": 908.6
+    },
+    {
+      "text": "状態になってしまうとことが起きると思い",
+      "start_seconds": 906.36,
+      "end_seconds": 910.88
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 908.6,
+      "end_seconds": 912.6
+    },
+    {
+      "text": "というと随分ですね、なんかイラのこと",
+      "start_seconds": 910.88,
+      "end_seconds": 914.48
+    },
+    {
+      "text": "言ってるような気がしますがこれも僕自身",
+      "start_seconds": 912.6,
+      "end_seconds": 917.16
+    },
+    {
+      "text": "の本当に失敗から学んでることなんです。",
+      "start_seconds": 914.48,
+      "end_seconds": 919.32
+    },
+    {
+      "text": "外部から関わる時にですね、色々お招きを",
+      "start_seconds": 917.16,
+      "end_seconds": 923.12
+    },
+    {
+      "text": "されます。いろんな地域に。でも僕",
+      "start_seconds": 919.32,
+      "end_seconds": 926.1600000000001
+    },
+    {
+      "text": "いろんなケース事例とか知っていて、ある",
+      "start_seconds": 923.12,
+      "end_seconds": 927.68
+    },
+    {
+      "text": "意味正解をしてるような気持ちでそこに",
+      "start_seconds": 926.16,
+      "end_seconds": 929.68
+    },
+    {
+      "text": "入っていくんですけど、やっぱりそこの",
+      "start_seconds": 927.68,
+      "end_seconds": 932.319
+    },
+    {
+      "text": "地域には地域、組織には組織、人には人の",
+      "start_seconds": 929.68,
+      "end_seconds": 934.88
+    },
+    {
+      "text": "文脈があったり感情があったりするって",
+      "start_seconds": 932.319,
+      "end_seconds": 937.4399999999999
+    },
+    {
+      "text": "ことが当たり前ですけどあるんですよね。",
+      "start_seconds": 934.88,
+      "end_seconds": 939.16
+    },
+    {
+      "text": "そこをいきなりポンと入っていくっていう",
+      "start_seconds": 937.44,
+      "end_seconds": 941.24
+    },
+    {
+      "text": "こと。",
+      "start_seconds": 939.16,
+      "end_seconds": 943.48
+    },
+    {
+      "text": "本当にそこは相手の気持ちなり相手の状態",
+      "start_seconds": 941.24,
+      "end_seconds": 946.319
+    },
+    {
+      "text": "をちゃんと理解してるかというと、特に",
+      "start_seconds": 943.48,
+      "end_seconds": 948.279
+    },
+    {
+      "text": "コンサルティングの仕事をし始めた当初",
+      "start_seconds": 946.319,
+      "end_seconds": 950.319
+    },
+    {
+      "text": "っていうのはよしやるぜみたいな気持ちで",
+      "start_seconds": 948.279,
+      "end_seconds": 953.279
+    },
+    {
+      "text": "いるんで結構ぐっと入ってくんですよ。",
+      "start_seconds": 950.319,
+      "end_seconds": 957.16
+    },
+    {
+      "text": "ただそこでうまくいかずに一旦計画なり",
+      "start_seconds": 953.279,
+      "end_seconds": 960.399
+    },
+    {
+      "text": "戦略なり作るんですけど数ヶ月後どうです",
+      "start_seconds": 957.16,
+      "end_seconds": 962.959
+    },
+    {
+      "text": "か?この前のやつうまく進んでますって",
+      "start_seconds": 960.399,
+      "end_seconds": 965.56
+    },
+    {
+      "text": "言うといやちょっと忙しくてねっていう風",
+      "start_seconds": 962.959,
+      "end_seconds": 968.3599999999999
+    },
+    {
+      "text": "に買わされるんですよね。で、また",
+      "start_seconds": 965.56,
+      "end_seconds": 970.68
+    },
+    {
+      "text": "しばらくっていくんですけど、いや人が",
+      "start_seconds": 968.36,
+      "end_seconds": 972.5600000000001
+    },
+    {
+      "text": "やめちゃってさあみたいなことが結構",
+      "start_seconds": 970.68,
+      "end_seconds": 974.68
+    },
+    {
+      "text": "起きるんです",
+      "start_seconds": 972.56,
+      "end_seconds": 977.3599999999999
+    },
+    {
+      "text": "というぐらいやっぱりこのあり方やり方と",
+      "start_seconds": 974.68,
+      "end_seconds": 980.3599999999999
+    },
+    {
+      "text": "いうことはしっかりと自分の中でも意識を",
+      "start_seconds": 977.36,
+      "end_seconds": 983.6
+    },
+    {
+      "text": "して入っていかないとなかなかうまくいか",
+      "start_seconds": 980.36,
+      "end_seconds": 987.16
+    },
+    {
+      "text": "ないと。ただ当事者同士が当事者だけで",
+      "start_seconds": 983.6,
+      "end_seconds": 989.8000000000001
+    },
+    {
+      "text": "その厳しい状況を変えていけるかというと",
+      "start_seconds": 987.16,
+      "end_seconds": 991.68
+    },
+    {
+      "text": "そこはそこで非常にハードルが高いことな",
+      "start_seconds": 989.8,
+      "end_seconds": 994.24
+    },
+    {
+      "text": "んですね。だからこそやはり外部から",
+      "start_seconds": 991.68,
+      "end_seconds": 997.199
+    },
+    {
+      "text": "関わる人、それからコンサルタントであり",
+      "start_seconds": 994.24,
+      "end_seconds": 998.839
+    },
+    {
+      "text": "、コーチであれ、そういった人が入って",
+      "start_seconds": 997.199,
+      "end_seconds": 1001.519
+    },
+    {
+      "text": "いくことでしっかりとその場を解きほぐし",
+      "start_seconds": 998.839,
+      "end_seconds": 1003.639
+    },
+    {
+      "text": "ていって前に進めていくっていうこんな",
+      "start_seconds": 1001.519,
+      "end_seconds": 1006.0
+    },
+    {
+      "text": "仕事っていうのは本当にこれからの世の中",
+      "start_seconds": 1003.639,
+      "end_seconds": 1007.88
+    },
+    {
+      "text": "求められるもんじゃないかなと思ってます",
+      "start_seconds": 1006.0,
+      "end_seconds": 1010.16
+    },
+    {
+      "text": "。",
+      "start_seconds": 1007.88,
+      "end_seconds": 1012.92
+    },
+    {
+      "text": "で、このテレックス札幌ユース2025",
+      "start_seconds": 1010.16,
+      "end_seconds": 1016.04
+    },
+    {
+      "text": "ってテーマが繋がりなんですよね。ただ",
+      "start_seconds": 1012.92,
+      "end_seconds": 1018.7199999999999
+    },
+    {
+      "text": "繋がりって本当に言葉と違って非常に",
+      "start_seconds": 1016.04,
+      "end_seconds": 1021.88
+    },
+    {
+      "text": "難しい人筋なではいかないものです。でも",
+      "start_seconds": 1018.72,
+      "end_seconds": 1023.9590000000001
+    },
+    {
+      "text": "やっぱり改めて相手の気持ちになってみる",
+      "start_seconds": 1021.88,
+      "end_seconds": 1026.959
+    },
+    {
+      "text": "ということ。そこからこの繋がりって本当",
+      "start_seconds": 1023.959,
+      "end_seconds": 1029.319
+    },
+    {
+      "text": "にできていくと思ってるので、これを",
+      "start_seconds": 1026.959,
+      "end_seconds": 1031.76
+    },
+    {
+      "text": "もっともっと僕は世の中に広げていきたい",
+      "start_seconds": 1029.319,
+      "end_seconds": 1034.839
+    },
+    {
+      "text": "なと思ってます。そして繋がりということ",
+      "start_seconds": 1031.76,
+      "end_seconds": 1037.72
+    },
+    {
+      "text": "を続いてですね、自分自身が何かなくして",
+      "start_seconds": 1034.839,
+      "end_seconds": 1040.48
+    },
+    {
+      "text": "たものをもう1度自分の中で取り戻す、",
+      "start_seconds": 1037.72,
+      "end_seconds": 1043.0
+    },
+    {
+      "text": "自分自身と繋がるみたいなことも改めて",
+      "start_seconds": 1040.48,
+      "end_seconds": 1044.72
+    },
+    {
+      "text": "やっていきたいなという風に思っています",
+      "start_seconds": 1043.0,
+      "end_seconds": 1050.4
+    },
+    {
+      "text": "。ご成聴ありがとうございました。",
+      "start_seconds": 1044.72,
+      "end_seconds": 1050.4
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 1051.287,
+      "end_seconds": 1053.307
+    }
+  ],
+  "display_captions": [
+    {
+      "text": "人を構成する要素を整理してみるとあり方",
+      "start_seconds": 7.08,
+      "end_seconds": 10.84,
+      "id": "hOCiiFaMGv4-display-0001",
+      "segment_id": "hOCiiFaMGv4-ja-0001"
+    },
+    {
+      "text": "とですね、やり方この2つに分解すること",
+      "start_seconds": 10.84,
+      "end_seconds": 13.36,
+      "id": "hOCiiFaMGv4-display-0002",
+      "segment_id": "hOCiiFaMGv4-ja-0001"
+    },
+    {
+      "text": "ができます。あり方というのは英語では",
+      "start_seconds": 13.36,
+      "end_seconds": 16.8,
+      "id": "hOCiiFaMGv4-display-0003",
+      "segment_id": "hOCiiFaMGv4-ja-0001"
+    },
+    {
+      "text": "beング、やり方は英語ではdoイングと",
+      "start_seconds": 16.8,
+      "end_seconds": 19.24,
+      "id": "hOCiiFaMGv4-display-0004",
+      "segment_id": "hOCiiFaMGv4-ja-0002"
+    },
+    {
+      "text": "いう言い方をしますけども、あり方は人の",
+      "start_seconds": 19.24,
+      "end_seconds": 21.76,
+      "id": "hOCiiFaMGv4-display-0005",
+      "segment_id": "hOCiiFaMGv4-ja-0002"
+    },
+    {
+      "text": "基盤鬼軸になるようなものだと思って",
+      "start_seconds": 21.76,
+      "end_seconds": 23.56,
+      "id": "hOCiiFaMGv4-display-0006",
+      "segment_id": "hOCiiFaMGv4-ja-0002"
+    },
+    {
+      "text": "ください。自分はどう生きるのか、どんな",
+      "start_seconds": 23.56,
+      "end_seconds": 26.48,
+      "id": "hOCiiFaMGv4-display-0007",
+      "segment_id": "hOCiiFaMGv4-ja-0002"
+    },
+    {
+      "text": "生き方をするのか、どうありたいのか。",
+      "start_seconds": 26.48,
+      "end_seconds": 28.599,
+      "id": "hOCiiFaMGv4-display-0008",
+      "segment_id": "hOCiiFaMGv4-ja-0002"
+    },
+    {
+      "text": "そんなことです。そしてもう1方のやり方",
+      "start_seconds": 28.599,
+      "end_seconds": 31.359,
+      "id": "hOCiiFaMGv4-display-0009",
+      "segment_id": "hOCiiFaMGv4-ja-0003"
+    },
+    {
+      "text": "、こちらについてはじゃそのあり方を実現",
+      "start_seconds": 31.359,
+      "end_seconds": 34.32,
+      "id": "hOCiiFaMGv4-display-0010",
+      "segment_id": "hOCiiFaMGv4-ja-0003"
+    },
+    {
+      "text": "するために具体的にどういう行動をして",
+      "start_seconds": 34.32,
+      "end_seconds": 37.079,
+      "id": "hOCiiFaMGv4-display-0011",
+      "segment_id": "hOCiiFaMGv4-ja-0003"
+    },
+    {
+      "text": "いくのかということ。これを明らかにして",
+      "start_seconds": 37.079,
+      "end_seconds": 39.36,
+      "id": "hOCiiFaMGv4-display-0012",
+      "segment_id": "hOCiiFaMGv4-ja-0003"
+    },
+    {
+      "text": "いくサポートをするということが一づりと",
+      "start_seconds": 39.36,
+      "end_seconds": 42.079,
+      "id": "hOCiiFaMGv4-display-0013",
+      "segment_id": "hOCiiFaMGv4-ja-0004"
+    },
+    {
+      "text": "いうことになります。そしてこの2つ、",
+      "start_seconds": 42.079,
+      "end_seconds": 45.0,
+      "id": "hOCiiFaMGv4-display-0014",
+      "segment_id": "hOCiiFaMGv4-ja-0004"
+    },
+    {
+      "text": "これを仕事というものに置き換えてみると",
+      "start_seconds": 45.0,
+      "end_seconds": 48.199,
+      "id": "hOCiiFaMGv4-display-0015",
+      "segment_id": "hOCiiFaMGv4-ja-0004"
+    },
+    {
+      "text": "コーチングとコンサルティングという風な",
+      "start_seconds": 48.199,
+      "end_seconds": 50.84,
+      "id": "hOCiiFaMGv4-display-0016",
+      "segment_id": "hOCiiFaMGv4-ja-0004"
+    },
+    {
+      "text": "専門的な仕事になります。少しこの2つに",
+      "start_seconds": 50.84,
+      "end_seconds": 54.64,
+      "id": "hOCiiFaMGv4-display-0017",
+      "segment_id": "hOCiiFaMGv4-ja-0005"
+    },
+    {
+      "text": "ついて、え、さらに皆さんにご説明をさせ",
+      "start_seconds": 54.64,
+      "end_seconds": 57.12,
+      "id": "hOCiiFaMGv4-display-0018",
+      "segment_id": "hOCiiFaMGv4-ja-0005"
+    },
+    {
+      "text": "ていただきたいと思います。",
+      "start_seconds": 57.12,
+      "end_seconds": 60.039,
+      "id": "hOCiiFaMGv4-display-0019",
+      "segment_id": "hOCiiFaMGv4-ja-0005"
+    },
+    {
+      "text": "まずコーチングです。",
+      "start_seconds": 60.039,
+      "end_seconds": 62.8,
+      "id": "hOCiiFaMGv4-display-0020",
+      "segment_id": "hOCiiFaMGv4-ja-0006"
+    },
+    {
+      "text": "コーチという言葉を聞くと何かスポーツの",
+      "start_seconds": 62.8,
+      "end_seconds": 65.199,
+      "id": "hOCiiFaMGv4-display-0021",
+      "segment_id": "hOCiiFaMGv4-ja-0007"
+    },
+    {
+      "text": "世界すごくイメージしやすいんじゃないか",
+      "start_seconds": 65.199,
+      "end_seconds": 66.92,
+      "id": "hOCiiFaMGv4-display-0022",
+      "segment_id": "hOCiiFaMGv4-ja-0007"
+    },
+    {
+      "text": "なと思います。選手がいて、そしてコーチ",
+      "start_seconds": 66.92,
+      "end_seconds": 70.0,
+      "id": "hOCiiFaMGv4-display-0023",
+      "segment_id": "hOCiiFaMGv4-ja-0007"
+    },
+    {
+      "text": "がいて、その選手が目指す目標に対して",
+      "start_seconds": 70.0,
+      "end_seconds": 72.52,
+      "id": "hOCiiFaMGv4-display-0024",
+      "segment_id": "hOCiiFaMGv4-ja-0007"
+    },
+    {
+      "text": "コーチがサポートしたり指導するという、",
+      "start_seconds": 72.52,
+      "end_seconds": 74.2,
+      "id": "hOCiiFaMGv4-display-0025",
+      "segment_id": "hOCiiFaMGv4-ja-0007"
+    },
+    {
+      "text": "そういう世界ですよね。で、これビジネス",
+      "start_seconds": 74.2,
+      "end_seconds": 76.799,
+      "id": "hOCiiFaMGv4-display-0026",
+      "segment_id": "hOCiiFaMGv4-ja-0008"
+    },
+    {
+      "text": "の世界にもあります。相手が個人のことも",
+      "start_seconds": 76.799,
+      "end_seconds": 79.36,
+      "id": "hOCiiFaMGv4-display-0027",
+      "segment_id": "hOCiiFaMGv4-ja-0008"
+    },
+    {
+      "text": "あれば複数の個人からなる集団とかチーム",
+      "start_seconds": 79.36,
+      "end_seconds": 82.52,
+      "id": "hOCiiFaMGv4-display-0028",
+      "segment_id": "hOCiiFaMGv4-ja-0008"
+    },
+    {
+      "text": "とか組織であることもあります。個人で",
+      "start_seconds": 82.52,
+      "end_seconds": 85.68,
+      "id": "hOCiiFaMGv4-display-0029",
+      "segment_id": "hOCiiFaMGv4-ja-0008"
+    },
+    {
+      "text": "ある組織であるそこにはですね、必ず",
+      "start_seconds": 85.68,
+      "end_seconds": 87.799,
+      "id": "hOCiiFaMGv4-display-0030",
+      "segment_id": "hOCiiFaMGv4-ja-0009"
+    },
+    {
+      "text": "何かしらの願いとか思いというものがあっ",
+      "start_seconds": 87.799,
+      "end_seconds": 90.6,
+      "id": "hOCiiFaMGv4-display-0031",
+      "segment_id": "hOCiiFaMGv4-ja-0009"
+    },
+    {
+      "text": "て、他にもどんな価値観を大事にしている",
+      "start_seconds": 90.6,
+      "end_seconds": 94.52,
+      "id": "hOCiiFaMGv4-display-0032",
+      "segment_id": "hOCiiFaMGv4-ja-0009"
+    },
+    {
+      "text": "のか、どんな信念こだわりを持っているの",
+      "start_seconds": 94.52,
+      "end_seconds": 97.64,
+      "id": "hOCiiFaMGv4-display-0033",
+      "segment_id": "hOCiiFaMGv4-ja-0009"
+    },
+    {
+      "text": "か、そもそもどこにたどり着いていきたい",
+      "start_seconds": 97.64,
+      "end_seconds": 100.399,
+      "id": "hOCiiFaMGv4-display-0034",
+      "segment_id": "hOCiiFaMGv4-ja-0010"
+    },
+    {
+      "text": "のか、じゃ、そこに向かっていく時に",
+      "start_seconds": 100.399,
+      "end_seconds": 104.36,
+      "id": "hOCiiFaMGv4-display-0035",
+      "segment_id": "hOCiiFaMGv4-ja-0010"
+    },
+    {
+      "text": "どんな自分でいたいのか、態度とか",
+      "start_seconds": 104.36,
+      "end_seconds": 106.88,
+      "id": "hOCiiFaMGv4-display-0036",
+      "segment_id": "hOCiiFaMGv4-ja-0010"
+    },
+    {
+      "text": "スタンスとかそういうことですね。そう",
+      "start_seconds": 106.88,
+      "end_seconds": 109.399,
+      "id": "hOCiiFaMGv4-display-0037",
+      "segment_id": "hOCiiFaMGv4-ja-0010"
+    },
+    {
+      "text": "いったことを明らかにしていく、探求して",
+      "start_seconds": 109.399,
+      "end_seconds": 111.479,
+      "id": "hOCiiFaMGv4-display-0038",
+      "segment_id": "hOCiiFaMGv4-ja-0011"
+    },
+    {
+      "text": "いくお手伝いをコーチングという仕事では",
+      "start_seconds": 111.479,
+      "end_seconds": 113.159,
+      "id": "hOCiiFaMGv4-display-0039",
+      "segment_id": "hOCiiFaMGv4-ja-0011"
+    },
+    {
+      "text": "していく。",
+      "start_seconds": 113.159,
+      "end_seconds": 115.159,
+      "id": "hOCiiFaMGv4-display-0040",
+      "segment_id": "hOCiiFaMGv4-ja-0011"
+    },
+    {
+      "text": "もう一方のコンサルティングです。こちら",
+      "start_seconds": 115.159,
+      "end_seconds": 117.159,
+      "id": "hOCiiFaMGv4-display-0041",
+      "segment_id": "hOCiiFaMGv4-ja-0012"
+    },
+    {
+      "text": "は例えばお医者さんとか学校の先生のよう",
+      "start_seconds": 117.159,
+      "end_seconds": 120.52,
+      "id": "hOCiiFaMGv4-display-0042",
+      "segment_id": "hOCiiFaMGv4-ja-0012"
+    },
+    {
+      "text": "なものがイメージしやすいかもしれません",
+      "start_seconds": 120.52,
+      "end_seconds": 122.079,
+      "id": "hOCiiFaMGv4-display-0043",
+      "segment_id": "hOCiiFaMGv4-ja-0012"
+    },
+    {
+      "text": "。例えばお医者さんであれば",
+      "start_seconds": 122.079,
+      "end_seconds": 125.88,
+      "id": "hOCiiFaMGv4-display-0044",
+      "segment_id": "hOCiiFaMGv4-ja-0012"
+    },
+    {
+      "text": "何かしらの課題お悩みを持った患者さんに",
+      "start_seconds": 125.88,
+      "end_seconds": 128.36,
+      "id": "hOCiiFaMGv4-display-0045",
+      "segment_id": "hOCiiFaMGv4-ja-0013"
+    },
+    {
+      "text": "対して診断をして処方戦お薬を提供して",
+      "start_seconds": 128.36,
+      "end_seconds": 133.12,
+      "id": "hOCiiFaMGv4-display-0046",
+      "segment_id": "hOCiiFaMGv4-ja-0013"
+    },
+    {
+      "text": "いったりとかですね。場合によっては下科",
+      "start_seconds": 133.12,
+      "end_seconds": 135.319,
+      "id": "hOCiiFaMGv4-display-0047",
+      "segment_id": "hOCiiFaMGv4-ja-0013"
+    },
+    {
+      "text": "手術をするということもあると思います。",
+      "start_seconds": 135.319,
+      "end_seconds": 138.239,
+      "id": "hOCiiFaMGv4-display-0048",
+      "segment_id": "hOCiiFaMGv4-ja-0014"
+    },
+    {
+      "text": "当然相手に違うわけですけれども、時には",
+      "start_seconds": 138.239,
+      "end_seconds": 141.04,
+      "id": "hOCiiFaMGv4-display-0049",
+      "segment_id": "hOCiiFaMGv4-ja-0015"
+    },
+    {
+      "text": "知識を提供したり技術を提供したり、",
+      "start_seconds": 141.04,
+      "end_seconds": 144.12,
+      "id": "hOCiiFaMGv4-display-0050",
+      "segment_id": "hOCiiFaMGv4-ja-0015"
+    },
+    {
+      "text": "ノンハウとかスキルとかですね、",
+      "start_seconds": 144.12,
+      "end_seconds": 145.92,
+      "id": "hOCiiFaMGv4-display-0051",
+      "segment_id": "hOCiiFaMGv4-ja-0015"
+    },
+    {
+      "text": "テクノロジーとかいろんなものを提供して",
+      "start_seconds": 145.92,
+      "end_seconds": 148.36,
+      "id": "hOCiiFaMGv4-display-0052",
+      "segment_id": "hOCiiFaMGv4-ja-0015"
+    },
+    {
+      "text": "いきながらその相手の方が目指している",
+      "start_seconds": 148.36,
+      "end_seconds": 151.239,
+      "id": "hOCiiFaMGv4-display-0053",
+      "segment_id": "hOCiiFaMGv4-ja-0016"
+    },
+    {
+      "text": "ゴールに立つくお手伝いをしていく。これ",
+      "start_seconds": 151.239,
+      "end_seconds": 154.04,
+      "id": "hOCiiFaMGv4-display-0054",
+      "segment_id": "hOCiiFaMGv4-ja-0016"
+    },
+    {
+      "text": "がね、コンサルティングという仕事になり",
+      "start_seconds": 154.04,
+      "end_seconds": 155.8,
+      "id": "hOCiiFaMGv4-display-0055",
+      "segment_id": "hOCiiFaMGv4-ja-0016"
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 155.8,
+      "end_seconds": 158.68,
+      "id": "hOCiiFaMGv4-display-0056",
+      "segment_id": "hOCiiFaMGv4-ja-0016"
+    },
+    {
+      "text": "そして僕はこの2つの仕事、コーチングと",
+      "start_seconds": 158.68,
+      "end_seconds": 161.8,
+      "id": "hOCiiFaMGv4-display-0057",
+      "segment_id": "hOCiiFaMGv4-ja-0017"
+    },
+    {
+      "text": "コンサルティングっていうことを、ま、",
+      "start_seconds": 161.8,
+      "end_seconds": 163.4,
+      "id": "hOCiiFaMGv4-display-0058",
+      "segment_id": "hOCiiFaMGv4-ja-0017"
+    },
+    {
+      "text": "両輪のように持ちながら相手の置かれてる",
+      "start_seconds": 163.4,
+      "end_seconds": 165.959,
+      "id": "hOCiiFaMGv4-display-0059",
+      "segment_id": "hOCiiFaMGv4-ja-0017"
+    },
+    {
+      "text": "状態を、え、見ていきながらですね、必要",
+      "start_seconds": 165.959,
+      "end_seconds": 169.28,
+      "id": "hOCiiFaMGv4-display-0060",
+      "segment_id": "hOCiiFaMGv4-ja-0017"
+    },
+    {
+      "text": "なものを適義組み合わせながら提供してる",
+      "start_seconds": 169.28,
+      "end_seconds": 172.28,
+      "id": "hOCiiFaMGv4-display-0061",
+      "segment_id": "hOCiiFaMGv4-ja-0018"
+    },
+    {
+      "text": "というそんな仕事の仕方をしています。",
+      "start_seconds": 172.28,
+      "end_seconds": 174.8,
+      "id": "hOCiiFaMGv4-display-0062",
+      "segment_id": "hOCiiFaMGv4-ja-0018"
+    },
+    {
+      "text": "じゃあ一体ですね、どんな分野の、どんな",
+      "start_seconds": 174.8,
+      "end_seconds": 177.36,
+      "id": "hOCiiFaMGv4-display-0063",
+      "segment_id": "hOCiiFaMGv4-ja-0019"
+    },
+    {
+      "text": "人たちに対してこんな仕事をしてるかと",
+      "start_seconds": 177.36,
+      "end_seconds": 179.08,
+      "id": "hOCiiFaMGv4-display-0064",
+      "segment_id": "hOCiiFaMGv4-ja-0019"
+    },
+    {
+      "text": "いうことをもうちょっとだけお伝えしたい",
+      "start_seconds": 179.08,
+      "end_seconds": 180.36,
+      "id": "hOCiiFaMGv4-display-0065",
+      "segment_id": "hOCiiFaMGv4-ja-0019"
+    },
+    {
+      "text": "と思います。",
+      "start_seconds": 180.36,
+      "end_seconds": 182.76,
+      "id": "hOCiiFaMGv4-display-0066",
+      "segment_id": "hOCiiFaMGv4-ja-0019"
+    },
+    {
+      "text": "日本の社外って大きく分けるとですね、3",
+      "start_seconds": 182.76,
+      "end_seconds": 184.72,
+      "id": "hOCiiFaMGv4-display-0067",
+      "segment_id": "hOCiiFaMGv4-ja-0020"
+    },
+    {
+      "text": "つのセクターと言われてるものに分ける",
+      "start_seconds": 184.72,
+      "end_seconds": 186.48,
+      "id": "hOCiiFaMGv4-display-0068",
+      "segment_id": "hOCiiFaMGv4-ja-0020"
+    },
+    {
+      "text": "ことができます。1つ目がパブリック",
+      "start_seconds": 186.48,
+      "end_seconds": 189.239,
+      "id": "hOCiiFaMGv4-display-0069",
+      "segment_id": "hOCiiFaMGv4-ja-0020"
+    },
+    {
+      "text": "セクターと言われて政府とか自治体が活躍",
+      "start_seconds": 189.239,
+      "end_seconds": 192.72,
+      "id": "hOCiiFaMGv4-display-0070",
+      "segment_id": "hOCiiFaMGv4-ja-0020"
+    },
+    {
+      "text": "しているフィールド。2つ目が",
+      "start_seconds": 192.72,
+      "end_seconds": 194.72,
+      "id": "hOCiiFaMGv4-display-0071",
+      "segment_id": "hOCiiFaMGv4-ja-0020"
+    },
+    {
+      "text": "プライベートセクターと言って民間企業",
+      "start_seconds": 194.72,
+      "end_seconds": 197.08,
+      "id": "hOCiiFaMGv4-display-0072",
+      "segment_id": "hOCiiFaMGv4-ja-0021"
+    },
+    {
+      "text": "ですね。企業が活動してるフィールド。",
+      "start_seconds": 197.08,
+      "end_seconds": 199.76,
+      "id": "hOCiiFaMGv4-display-0073",
+      "segment_id": "hOCiiFaMGv4-ja-0021"
+    },
+    {
+      "text": "そして3つ目がソーシャルセクターと言い",
+      "start_seconds": 199.76,
+      "end_seconds": 202.0,
+      "id": "hOCiiFaMGv4-display-0074",
+      "segment_id": "hOCiiFaMGv4-ja-0022"
+    },
+    {
+      "text": "ますが、NPOとかNGOとかソーシャル",
+      "start_seconds": 202.0,
+      "end_seconds": 205.879,
+      "id": "hOCiiFaMGv4-display-0075",
+      "segment_id": "hOCiiFaMGv4-ja-0022"
+    },
+    {
+      "text": "ビジネスとかそういった社会課題の解決と",
+      "start_seconds": 205.879,
+      "end_seconds": 209.239,
+      "id": "hOCiiFaMGv4-display-0076",
+      "segment_id": "hOCiiFaMGv4-ja-0022"
+    },
+    {
+      "text": "かですね、地域課題の解決、さらには",
+      "start_seconds": 209.239,
+      "end_seconds": 212.2,
+      "id": "hOCiiFaMGv4-display-0077",
+      "segment_id": "hOCiiFaMGv4-ja-0023"
+    },
+    {
+      "text": "地域作りとか地域の活性化、こんなことに",
+      "start_seconds": 212.2,
+      "end_seconds": 214.92,
+      "id": "hOCiiFaMGv4-display-0078",
+      "segment_id": "hOCiiFaMGv4-ja-0023"
+    },
+    {
+      "text": "携わってる人たちが活躍している",
+      "start_seconds": 214.92,
+      "end_seconds": 217.08,
+      "id": "hOCiiFaMGv4-display-0079",
+      "segment_id": "hOCiiFaMGv4-ja-0023"
+    },
+    {
+      "text": "フィールドです。で、僕はここに熟足を",
+      "start_seconds": 217.08,
+      "end_seconds": 219.12,
+      "id": "hOCiiFaMGv4-display-0080",
+      "segment_id": "hOCiiFaMGv4-ja-0023"
+    },
+    {
+      "text": "置きながら他のセクターにもかかるという",
+      "start_seconds": 219.12,
+      "end_seconds": 221.159,
+      "id": "hOCiiFaMGv4-display-0081",
+      "segment_id": "hOCiiFaMGv4-ja-0023"
+    },
+    {
+      "text": "風なそんな仕事をしています。で、実は",
+      "start_seconds": 221.159,
+      "end_seconds": 223.84,
+      "id": "hOCiiFaMGv4-display-0082",
+      "segment_id": "hOCiiFaMGv4-ja-0024"
+    },
+    {
+      "text": "このソーシャルセクターですけれども、",
+      "start_seconds": 223.84,
+      "end_seconds": 225.64,
+      "id": "hOCiiFaMGv4-display-0083",
+      "segment_id": "hOCiiFaMGv4-ja-0024"
+    },
+    {
+      "text": "さっきも非常に高い注目を浴びていたりと",
+      "start_seconds": 225.64,
+      "end_seconds": 228.319,
+      "id": "hOCiiFaMGv4-display-0084",
+      "segment_id": "hOCiiFaMGv4-ja-0024"
+    },
+    {
+      "text": "か、関心を寄せられたりしています。期待",
+      "start_seconds": 228.319,
+      "end_seconds": 231.159,
+      "id": "hOCiiFaMGv4-display-0085",
+      "segment_id": "hOCiiFaMGv4-ja-0024"
+    },
+    {
+      "text": "も寄せられています。ちょっとその背景を",
+      "start_seconds": 231.159,
+      "end_seconds": 233.92,
+      "id": "hOCiiFaMGv4-display-0086",
+      "segment_id": "hOCiiFaMGv4-ja-0025"
+    },
+    {
+      "text": "簡単にお伝えしていきたいんですけども、",
+      "start_seconds": 233.92,
+      "end_seconds": 236.12,
+      "id": "hOCiiFaMGv4-display-0087",
+      "segment_id": "hOCiiFaMGv4-ja-0025"
+    },
+    {
+      "text": "ま、日本は戦後ですね、高度経済成長の",
+      "start_seconds": 236.12,
+      "end_seconds": 238.92,
+      "id": "hOCiiFaMGv4-display-0088",
+      "segment_id": "hOCiiFaMGv4-ja-0025"
+    },
+    {
+      "text": "事態を経て",
+      "start_seconds": 238.92,
+      "end_seconds": 241.159,
+      "id": "hOCiiFaMGv4-display-0089",
+      "segment_id": "hOCiiFaMGv4-ja-0025"
+    },
+    {
+      "text": "豊かな経済資源と共にですね、先進国の",
+      "start_seconds": 241.159,
+      "end_seconds": 244.959,
+      "id": "hOCiiFaMGv4-display-0090",
+      "segment_id": "hOCiiFaMGv4-ja-0026"
+    },
+    {
+      "text": "仲間入りを果たすようになりました。",
+      "start_seconds": 244.959,
+      "end_seconds": 248.48,
+      "id": "hOCiiFaMGv4-display-0091",
+      "segment_id": "hOCiiFaMGv4-ja-0026"
+    },
+    {
+      "text": "ただ",
+      "start_seconds": 248.48,
+      "end_seconds": 250.0,
+      "id": "hOCiiFaMGv4-display-0092",
+      "segment_id": "hOCiiFaMGv4-ja-0027"
+    },
+    {
+      "text": "昨今は社会課題先進国なんていう風に言わ",
+      "start_seconds": 250.0,
+      "end_seconds": 253.319,
+      "id": "hOCiiFaMGv4-display-0093",
+      "segment_id": "hOCiiFaMGv4-ja-0027"
+    },
+    {
+      "text": "れています。",
+      "start_seconds": 253.319,
+      "end_seconds": 255.36,
+      "id": "hOCiiFaMGv4-display-0094",
+      "segment_id": "hOCiiFaMGv4-ja-0027"
+    },
+    {
+      "text": "確かに我々の日常の周りを見渡してみると",
+      "start_seconds": 255.36,
+      "end_seconds": 259.12,
+      "id": "hOCiiFaMGv4-display-0095",
+      "segment_id": "hOCiiFaMGv4-ja-0028"
+    },
+    {
+      "text": "様々な社会課題で溢れ返っていて、ま、",
+      "start_seconds": 259.12,
+      "end_seconds": 262.32,
+      "id": "hOCiiFaMGv4-display-0096",
+      "segment_id": "hOCiiFaMGv4-ja-0028"
+    },
+    {
+      "text": "テレビのニュースもそうですし、Webブ",
+      "start_seconds": 262.32,
+      "end_seconds": 264.44,
+      "id": "hOCiiFaMGv4-display-0097",
+      "segment_id": "hOCiiFaMGv4-ja-0028"
+    },
+    {
+      "text": "の記事なんかを見ていてもそうですが、",
+      "start_seconds": 264.44,
+      "end_seconds": 266.28,
+      "id": "hOCiiFaMGv4-display-0098",
+      "segment_id": "hOCiiFaMGv4-ja-0028"
+    },
+    {
+      "text": "こういった境課題を目にしない日はないと",
+      "start_seconds": 266.28,
+      "end_seconds": 268.28,
+      "id": "hOCiiFaMGv4-display-0099",
+      "segment_id": "hOCiiFaMGv4-ja-0029"
+    },
+    {
+      "text": "言っても過言ではないぐらいの日常を送っ",
+      "start_seconds": 268.28,
+      "end_seconds": 270.8,
+      "id": "hOCiiFaMGv4-display-0100",
+      "segment_id": "hOCiiFaMGv4-ja-0029"
+    },
+    {
+      "text": "ていると思います。実はこれが日本の今の",
+      "start_seconds": 270.8,
+      "end_seconds": 273.12,
+      "id": "hOCiiFaMGv4-display-0101",
+      "segment_id": "hOCiiFaMGv4-ja-0029"
+    },
+    {
+      "text": "実態なんですね。",
+      "start_seconds": 273.12,
+      "end_seconds": 275.72,
+      "id": "hOCiiFaMGv4-display-0102",
+      "segment_id": "hOCiiFaMGv4-ja-0029"
+    },
+    {
+      "text": "繰り返しになりますけども、ソーシャル",
+      "start_seconds": 275.72,
+      "end_seconds": 276.919,
+      "id": "hOCiiFaMGv4-display-0103",
+      "segment_id": "hOCiiFaMGv4-ja-0030"
+    },
+    {
+      "text": "セクターに活動する人たち、こういった",
+      "start_seconds": 276.919,
+      "end_seconds": 279.16,
+      "id": "hOCiiFaMGv4-display-0104",
+      "segment_id": "hOCiiFaMGv4-ja-0030"
+    },
+    {
+      "text": "社会課題を掲げて、それの解決に向かって",
+      "start_seconds": 279.16,
+      "end_seconds": 282.24,
+      "id": "hOCiiFaMGv4-display-0105",
+      "segment_id": "hOCiiFaMGv4-ja-0030"
+    },
+    {
+      "text": "ですね、知恵とか汗とか工夫を重ねていき",
+      "start_seconds": 282.24,
+      "end_seconds": 284.68,
+      "id": "hOCiiFaMGv4-display-0106",
+      "segment_id": "hOCiiFaMGv4-ja-0030"
+    },
+    {
+      "text": "ながらお仕事をされていて、僕はそれを",
+      "start_seconds": 284.68,
+      "end_seconds": 287.16,
+      "id": "hOCiiFaMGv4-display-0107",
+      "segment_id": "hOCiiFaMGv4-ja-0030"
+    },
+    {
+      "text": "後ろから後するような形でサポートしてい",
+      "start_seconds": 287.16,
+      "end_seconds": 290.72,
+      "id": "hOCiiFaMGv4-display-0108",
+      "segment_id": "hOCiiFaMGv4-ja-0031"
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 290.72,
+      "end_seconds": 293.84000000000003,
+      "id": "hOCiiFaMGv4-display-0109",
+      "segment_id": "hOCiiFaMGv4-ja-0031"
+    },
+    {
+      "text": "ここまで僕がどんな仕事をしてるかという",
+      "start_seconds": 294.56,
+      "end_seconds": 296.8,
+      "id": "hOCiiFaMGv4-display-0110",
+      "segment_id": "hOCiiFaMGv4-ja-0032"
+    },
+    {
+      "text": "ことをざっくりお伝えをしてきました。",
+      "start_seconds": 296.8,
+      "end_seconds": 299.12,
+      "id": "hOCiiFaMGv4-display-0111",
+      "segment_id": "hOCiiFaMGv4-ja-0032"
+    },
+    {
+      "text": "社会を変える人を作るという仕事をしてい",
+      "start_seconds": 299.12,
+      "end_seconds": 300.96,
+      "id": "hOCiiFaMGv4-display-0112",
+      "segment_id": "hOCiiFaMGv4-ja-0033"
+    },
+    {
+      "text": "ますけれども、それに加えて社会を変える",
+      "start_seconds": 300.96,
+      "end_seconds": 304.84,
+      "id": "hOCiiFaMGv4-display-0113",
+      "segment_id": "hOCiiFaMGv4-ja-0033"
+    },
+    {
+      "text": "人をつぐということがさらに必要だなと",
+      "start_seconds": 304.84,
+      "end_seconds": 308.12,
+      "id": "hOCiiFaMGv4-display-0114",
+      "segment_id": "hOCiiFaMGv4-ja-0033"
+    },
+    {
+      "text": "いうことを思っています。",
+      "start_seconds": 308.12,
+      "end_seconds": 311.4,
+      "id": "hOCiiFaMGv4-display-0115",
+      "segment_id": "hOCiiFaMGv4-ja-0034"
+    },
+    {
+      "text": "どういうことかと言うと、特にこれコロナ",
+      "start_seconds": 311.4,
+      "end_seconds": 314.24,
+      "id": "hOCiiFaMGv4-display-0116",
+      "segment_id": "hOCiiFaMGv4-ja-0035"
+    },
+    {
+      "text": "以降だと思いますけども、",
+      "start_seconds": 314.24,
+      "end_seconds": 317.52,
+      "id": "hOCiiFaMGv4-display-0117",
+      "segment_id": "hOCiiFaMGv4-ja-0035"
+    },
+    {
+      "text": "世の中の至るところに対立とか分断って",
+      "start_seconds": 317.52,
+      "end_seconds": 320.16,
+      "id": "hOCiiFaMGv4-display-0118",
+      "segment_id": "hOCiiFaMGv4-ja-0035"
+    },
+    {
+      "text": "いうものがありますよね。",
+      "start_seconds": 320.16,
+      "end_seconds": 323.56,
+      "id": "hOCiiFaMGv4-display-0119",
+      "segment_id": "hOCiiFaMGv4-ja-0036"
+    },
+    {
+      "text": "これ先ほどお伝えしたそれぞれの人なり",
+      "start_seconds": 323.56,
+      "end_seconds": 325.919,
+      "id": "hOCiiFaMGv4-display-0120",
+      "segment_id": "hOCiiFaMGv4-ja-0037"
+    },
+    {
+      "text": "組織なりにあり方とやり方ってものがある",
+      "start_seconds": 325.919,
+      "end_seconds": 328.12,
+      "id": "hOCiiFaMGv4-display-0121",
+      "segment_id": "hOCiiFaMGv4-ja-0037"
+    },
+    {
+      "text": "わけですけども、これがバランスをある時",
+      "start_seconds": 328.12,
+      "end_seconds": 330.52,
+      "id": "hOCiiFaMGv4-display-0122",
+      "segment_id": "hOCiiFaMGv4-ja-0037"
+    },
+    {
+      "text": "っていいんです。ただそれがぐっと力強い",
+      "start_seconds": 330.52,
+      "end_seconds": 334.199,
+      "id": "hOCiiFaMGv4-display-0123",
+      "segment_id": "hOCiiFaMGv4-ja-0037"
+    },
+    {
+      "text": "ものになりすぎていったりするとだんだん",
+      "start_seconds": 334.199,
+      "end_seconds": 336.36,
+      "id": "hOCiiFaMGv4-display-0124",
+      "segment_id": "hOCiiFaMGv4-ja-0038"
+    },
+    {
+      "text": "こうファイティングポーズみたいになるん",
+      "start_seconds": 336.36,
+      "end_seconds": 337.52,
+      "id": "hOCiiFaMGv4-display-0125",
+      "segment_id": "hOCiiFaMGv4-ja-0038"
+    },
+    {
+      "text": "ですね。",
+      "start_seconds": 337.52,
+      "end_seconds": 339.56,
+      "id": "hOCiiFaMGv4-display-0126",
+      "segment_id": "hOCiiFaMGv4-ja-0038"
+    },
+    {
+      "text": "で、お互いこの構えから抜け出すことが",
+      "start_seconds": 339.56,
+      "end_seconds": 343.6,
+      "id": "hOCiiFaMGv4-display-0127",
+      "segment_id": "hOCiiFaMGv4-ja-0039"
+    },
+    {
+      "text": "できなくていうことになってきます。で、",
+      "start_seconds": 343.6,
+      "end_seconds": 346.639,
+      "id": "hOCiiFaMGv4-display-0128",
+      "segment_id": "hOCiiFaMGv4-ja-0039"
+    },
+    {
+      "text": "この立場から相手に対してパンチを",
+      "start_seconds": 346.639,
+      "end_seconds": 349.96,
+      "id": "hOCiiFaMGv4-display-0129",
+      "segment_id": "hOCiiFaMGv4-ja-0039"
+    },
+    {
+      "text": "繰り出すかのように自分の都合なり主張",
+      "start_seconds": 349.96,
+      "end_seconds": 353.16,
+      "id": "hOCiiFaMGv4-display-0130",
+      "segment_id": "hOCiiFaMGv4-ja-0040"
+    },
+    {
+      "text": "なりを一方的に突きつけていくとそれを",
+      "start_seconds": 353.16,
+      "end_seconds": 356.319,
+      "id": "hOCiiFaMGv4-display-0131",
+      "segment_id": "hOCiiFaMGv4-ja-0040"
+    },
+    {
+      "text": "受け止めていこうという風な共感的な指勢",
+      "start_seconds": 356.319,
+      "end_seconds": 358.72,
+      "id": "hOCiiFaMGv4-display-0132",
+      "segment_id": "hOCiiFaMGv4-ja-0040"
+    },
+    {
+      "text": "でのがどこかに行ってしまって",
+      "start_seconds": 358.72,
+      "end_seconds": 360.319,
+      "id": "hOCiiFaMGv4-display-0133",
+      "segment_id": "hOCiiFaMGv4-ja-0040"
+    },
+    {
+      "text": "るってことが今世の中で起きているんじゃ",
+      "start_seconds": 360.319,
+      "end_seconds": 362.4,
+      "id": "hOCiiFaMGv4-display-0134",
+      "segment_id": "hOCiiFaMGv4-ja-0041"
+    },
+    {
+      "text": "ないかなと思っています。",
+      "start_seconds": 362.4,
+      "end_seconds": 364.84,
+      "id": "hOCiiFaMGv4-display-0135",
+      "segment_id": "hOCiiFaMGv4-ja-0041"
+    },
+    {
+      "text": "そういったことにやはり外部から関わって",
+      "start_seconds": 364.84,
+      "end_seconds": 366.88,
+      "id": "hOCiiFaMGv4-display-0136",
+      "segment_id": "hOCiiFaMGv4-ja-0042"
+    },
+    {
+      "text": "いきながらそこを解けぐしていって",
+      "start_seconds": 366.88,
+      "end_seconds": 369.72,
+      "id": "hOCiiFaMGv4-display-0137",
+      "segment_id": "hOCiiFaMGv4-ja-0042"
+    },
+    {
+      "text": "きちんと繋がりができるような社会を作っ",
+      "start_seconds": 369.72,
+      "end_seconds": 371.599,
+      "id": "hOCiiFaMGv4-display-0138",
+      "segment_id": "hOCiiFaMGv4-ja-0042"
+    },
+    {
+      "text": "ていかないと先ほど言った社会課題え大国",
+      "start_seconds": 371.599,
+      "end_seconds": 375.8,
+      "id": "hOCiiFaMGv4-display-0139",
+      "segment_id": "hOCiiFaMGv4-ja-0042"
+    },
+    {
+      "text": "日本これは変わっていかないんじゃない",
+      "start_seconds": 375.8,
+      "end_seconds": 377.68,
+      "id": "hOCiiFaMGv4-display-0140",
+      "segment_id": "hOCiiFaMGv4-ja-0043"
+    },
+    {
+      "text": "かってことが僕の問題意識としてあります",
+      "start_seconds": 377.68,
+      "end_seconds": 379.88,
+      "id": "hOCiiFaMGv4-display-0141",
+      "segment_id": "hOCiiFaMGv4-ja-0043"
+    },
+    {
+      "text": "。",
+      "start_seconds": 379.88,
+      "end_seconds": 382.28,
+      "id": "hOCiiFaMGv4-display-0142",
+      "segment_id": "hOCiiFaMGv4-ja-0043"
+    },
+    {
+      "text": "もう少し具体的なですね、事例を1つ皆",
+      "start_seconds": 382.28,
+      "end_seconds": 385.16,
+      "id": "hOCiiFaMGv4-display-0143",
+      "segment_id": "hOCiiFaMGv4-ja-0044"
+    },
+    {
+      "text": "さんにご紹介していきながら今やってる",
+      "start_seconds": 385.16,
+      "end_seconds": 387.16,
+      "id": "hOCiiFaMGv4-display-0144",
+      "segment_id": "hOCiiFaMGv4-ja-0044"
+    },
+    {
+      "text": "仕事についてお話をしていきたいと思い",
+      "start_seconds": 387.16,
+      "end_seconds": 388.72,
+      "id": "hOCiiFaMGv4-display-0145",
+      "segment_id": "hOCiiFaMGv4-ja-0044"
+    },
+    {
+      "text": "ますが、ここではまさにこのテレデックス",
+      "start_seconds": 388.72,
+      "end_seconds": 392.16,
+      "id": "hOCiiFaMGv4-display-0146",
+      "segment_id": "hOCiiFaMGv4-ja-0044"
+    },
+    {
+      "text": "札幌ユース1つの地域活性イベントですよ",
+      "start_seconds": 392.16,
+      "end_seconds": 395.08,
+      "id": "hOCiiFaMGv4-display-0147",
+      "segment_id": "hOCiiFaMGv4-ja-0045"
+    },
+    {
+      "text": "ね。で、これを素材にしながら、え、",
+      "start_seconds": 395.08,
+      "end_seconds": 398.36,
+      "id": "hOCiiFaMGv4-display-0148",
+      "segment_id": "hOCiiFaMGv4-ja-0045"
+    },
+    {
+      "text": "ちょっとお話をしていきたいと思います。",
+      "start_seconds": 398.36,
+      "end_seconds": 399.84,
+      "id": "hOCiiFaMGv4-display-0149",
+      "segment_id": "hOCiiFaMGv4-ja-0045"
+    },
+    {
+      "text": "ま、テデックスというよりも日本全国",
+      "start_seconds": 399.84,
+      "end_seconds": 402.12,
+      "id": "hOCiiFaMGv4-display-0150",
+      "segment_id": "hOCiiFaMGv4-ja-0046"
+    },
+    {
+      "text": "いろんなところでいろんな形で行われて",
+      "start_seconds": 402.12,
+      "end_seconds": 403.88,
+      "id": "hOCiiFaMGv4-display-0151",
+      "segment_id": "hOCiiFaMGv4-ja-0046"
+    },
+    {
+      "text": "いる地域活性化イベントです。これも地域",
+      "start_seconds": 403.88,
+      "end_seconds": 406.68,
+      "id": "hOCiiFaMGv4-display-0152",
+      "segment_id": "hOCiiFaMGv4-ja-0046"
+    },
+    {
+      "text": "の課題をね、解決していこうとして実践さ",
+      "start_seconds": 406.68,
+      "end_seconds": 408.919,
+      "id": "hOCiiFaMGv4-display-0153",
+      "segment_id": "hOCiiFaMGv4-ja-0046"
+    },
+    {
+      "text": "れている取り組みの1つになると思います",
+      "start_seconds": 408.919,
+      "end_seconds": 410.919,
+      "id": "hOCiiFaMGv4-display-0154",
+      "segment_id": "hOCiiFaMGv4-ja-0046"
+    },
+    {
+      "text": "が、こういった大人と若者の対列的な図識",
+      "start_seconds": 410.919,
+      "end_seconds": 416.52,
+      "id": "hOCiiFaMGv4-display-0155",
+      "segment_id": "hOCiiFaMGv4-ja-0047"
+    },
+    {
+      "text": "って結構ありませんかね。特に他世代で",
+      "start_seconds": 416.52,
+      "end_seconds": 419.84,
+      "id": "hOCiiFaMGv4-display-0156",
+      "segment_id": "hOCiiFaMGv4-ja-0047"
+    },
+    {
+      "text": "やっていくイベントであれば、こういった",
+      "start_seconds": 419.84,
+      "end_seconds": 421.96,
+      "id": "hOCiiFaMGv4-display-0157",
+      "segment_id": "hOCiiFaMGv4-ja-0047"
+    },
+    {
+      "text": "若い人とベテランの人たち、これが対立し",
+      "start_seconds": 421.96,
+      "end_seconds": 426.08,
+      "id": "hOCiiFaMGv4-display-0158",
+      "segment_id": "hOCiiFaMGv4-ja-0048"
+    },
+    {
+      "text": "て攻め合うみたいなことって結構いろんな",
+      "start_seconds": 426.08,
+      "end_seconds": 427.919,
+      "id": "hOCiiFaMGv4-display-0159",
+      "segment_id": "hOCiiFaMGv4-ja-0048"
+    },
+    {
+      "text": "地域で起きてます。僕も仕事でそんな場面",
+      "start_seconds": 427.919,
+      "end_seconds": 430.72,
+      "id": "hOCiiFaMGv4-display-0160",
+      "segment_id": "hOCiiFaMGv4-ja-0048"
+    },
+    {
+      "text": "に出くわしてそこの介議を依頼されること",
+      "start_seconds": 430.72,
+      "end_seconds": 433.36,
+      "id": "hOCiiFaMGv4-display-0161",
+      "segment_id": "hOCiiFaMGv4-ja-0048"
+    },
+    {
+      "text": "もあったりします。",
+      "start_seconds": 433.36,
+      "end_seconds": 437.039,
+      "id": "hOCiiFaMGv4-display-0162",
+      "segment_id": "hOCiiFaMGv4-ja-0049"
+    },
+    {
+      "text": "最初の頃はですね、大人の方々も、ま、次",
+      "start_seconds": 437.16,
+      "end_seconds": 440.08,
+      "id": "hOCiiFaMGv4-display-0163",
+      "segment_id": "hOCiiFaMGv4-ja-0050"
+    },
+    {
+      "text": "世代は若い人が作っていくんだから僕ら",
+      "start_seconds": 440.08,
+      "end_seconds": 443.12,
+      "id": "hOCiiFaMGv4-display-0164",
+      "segment_id": "hOCiiFaMGv4-ja-0050"
+    },
+    {
+      "text": "サポートに回るよねみたいなこと言われて",
+      "start_seconds": 443.12,
+      "end_seconds": 444.919,
+      "id": "hOCiiFaMGv4-display-0165",
+      "segment_id": "hOCiiFaMGv4-ja-0050"
+    },
+    {
+      "text": "いるんですけどね。だんだんだんだんこと",
+      "start_seconds": 444.919,
+      "end_seconds": 446.599,
+      "id": "hOCiiFaMGv4-display-0166",
+      "segment_id": "hOCiiFaMGv4-ja-0050"
+    },
+    {
+      "text": "が進んでくるとなんか殺伐としてきた空気",
+      "start_seconds": 446.599,
+      "end_seconds": 449.68,
+      "id": "hOCiiFaMGv4-display-0167",
+      "segment_id": "hOCiiFaMGv4-ja-0051"
+    },
+    {
+      "text": "になってきていってなっていってだんだん",
+      "start_seconds": 449.68,
+      "end_seconds": 452.319,
+      "id": "hOCiiFaMGv4-display-0168",
+      "segment_id": "hOCiiFaMGv4-ja-0051"
+    },
+    {
+      "text": "だんだんとみんなが悲しそうな顔して下を",
+      "start_seconds": 452.319,
+      "end_seconds": 454.16,
+      "id": "hOCiiFaMGv4-display-0169",
+      "segment_id": "hOCiiFaMGv4-ja-0051"
+    },
+    {
+      "text": "向くということが結構地域で起きています",
+      "start_seconds": 454.16,
+      "end_seconds": 456.44,
+      "id": "hOCiiFaMGv4-display-0170",
+      "segment_id": "hOCiiFaMGv4-ja-0051"
+    },
+    {
+      "text": "。",
+      "start_seconds": 456.44,
+      "end_seconds": 458.759,
+      "id": "hOCiiFaMGv4-display-0171",
+      "segment_id": "hOCiiFaMGv4-ja-0052"
+    },
+    {
+      "text": "ちょっとその典型的なシーンをですね、僕",
+      "start_seconds": 458.759,
+      "end_seconds": 460.879,
+      "id": "hOCiiFaMGv4-display-0172",
+      "segment_id": "hOCiiFaMGv4-ja-0053"
+    },
+    {
+      "text": "今から1人二役で演してみるんで、",
+      "start_seconds": 460.879,
+      "end_seconds": 463.479,
+      "id": "hOCiiFaMGv4-display-0173",
+      "segment_id": "hOCiiFaMGv4-ja-0053"
+    },
+    {
+      "text": "ちょっと簡単に見ていただきたいと思い",
+      "start_seconds": 463.479,
+      "end_seconds": 464.96,
+      "id": "hOCiiFaMGv4-display-0174",
+      "segment_id": "hOCiiFaMGv4-ja-0053"
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 464.96,
+      "end_seconds": 466.36,
+      "id": "hOCiiFaMGv4-display-0175",
+      "segment_id": "hOCiiFaMGv4-ja-0053"
+    },
+    {
+      "text": "ここに大人の役割と若者の役割がね、ある",
+      "start_seconds": 466.36,
+      "end_seconds": 468.84,
+      "id": "hOCiiFaMGv4-display-0176",
+      "segment_id": "hOCiiFaMGv4-ja-0054"
+    },
+    {
+      "text": "と思ってください。",
+      "start_seconds": 468.84,
+      "end_seconds": 471.72,
+      "id": "hOCiiFaMGv4-display-0177",
+      "segment_id": "hOCiiFaMGv4-ja-0054"
+    },
+    {
+      "text": "まず若者です。",
+      "start_seconds": 471.72,
+      "end_seconds": 475.52000000000004,
+      "id": "hOCiiFaMGv4-display-0178",
+      "segment_id": "hOCiiFaMGv4-ja-0055"
+    },
+    {
+      "text": "いや、僕たちに任せてくれるって言った",
+      "start_seconds": 475.68,
+      "end_seconds": 477.44,
+      "id": "hOCiiFaMGv4-display-0179",
+      "segment_id": "hOCiiFaMGv4-ja-0056"
+    },
+    {
+      "text": "じゃないですか。今回のイベント企画から",
+      "start_seconds": 477.44,
+      "end_seconds": 479.599,
+      "id": "hOCiiFaMGv4-display-0180",
+      "segment_id": "hOCiiFaMGv4-ja-0056"
+    },
+    {
+      "text": "やってもいいよって言われたんで、それで",
+      "start_seconds": 479.599,
+      "end_seconds": 481.56,
+      "id": "hOCiiFaMGv4-display-0181",
+      "segment_id": "hOCiiFaMGv4-ja-0056"
+    },
+    {
+      "text": "手上げてここに来たんですよね。",
+      "start_seconds": 481.56,
+      "end_seconds": 485.36,
+      "id": "hOCiiFaMGv4-display-0182",
+      "segment_id": "hOCiiFaMGv4-ja-0056"
+    },
+    {
+      "text": "今度大人です。",
+      "start_seconds": 485.36,
+      "end_seconds": 489.08000000000004,
+      "id": "hOCiiFaMGv4-display-0183",
+      "segment_id": "hOCiiFaMGv4-ja-0057"
+    },
+    {
+      "text": "いやいや、そうだけどさ、ちょっと君たち",
+      "start_seconds": 489.12,
+      "end_seconds": 491.759,
+      "id": "hOCiiFaMGv4-display-0184",
+      "segment_id": "hOCiiFaMGv4-ja-0058"
+    },
+    {
+      "text": "のやり方見てるとなんか本当任せきれない",
+      "start_seconds": 491.759,
+      "end_seconds": 494.319,
+      "id": "hOCiiFaMGv4-display-0185",
+      "segment_id": "hOCiiFaMGv4-ja-0058"
+    },
+    {
+      "text": "んだよ。なんか危なかしいしさ、なんか",
+      "start_seconds": 494.319,
+      "end_seconds": 497.28,
+      "id": "hOCiiFaMGv4-display-0186",
+      "segment_id": "hOCiiFaMGv4-ja-0058"
+    },
+    {
+      "text": "もう雑なんだよね。爪が甘いっていうかさ",
+      "start_seconds": 497.28,
+      "end_seconds": 500.639,
+      "id": "hOCiiFaMGv4-display-0187",
+      "segment_id": "hOCiiFaMGv4-ja-0058"
+    },
+    {
+      "text": "。",
+      "start_seconds": 500.639,
+      "end_seconds": 503.639,
+      "id": "hOCiiFaMGv4-display-0188",
+      "segment_id": "hOCiiFaMGv4-ja-0059"
+    },
+    {
+      "text": "なんだ結局最後はそうやって口出してくる",
+      "start_seconds": 505.319,
+      "end_seconds": 507.52,
+      "id": "hOCiiFaMGv4-display-0189",
+      "segment_id": "hOCiiFaMGv4-ja-0060"
+    },
+    {
+      "text": "んですよね。なんかまたいつものパターン",
+      "start_seconds": 507.52,
+      "end_seconds": 509.52,
+      "id": "hOCiiFaMGv4-display-0190",
+      "segment_id": "hOCiiFaMGv4-ja-0060"
+    },
+    {
+      "text": "じゃないですか?やっていいって言うから",
+      "start_seconds": 509.52,
+      "end_seconds": 511.72,
+      "id": "hOCiiFaMGv4-display-0191",
+      "segment_id": "hOCiiFaMGv4-ja-0060"
+    },
+    {
+      "text": "やってるのに結局最後はなんかまとめする",
+      "start_seconds": 511.72,
+      "end_seconds": 514.479,
+      "id": "hOCiiFaMGv4-display-0192",
+      "segment_id": "hOCiiFaMGv4-ja-0060"
+    },
+    {
+      "text": "んですよね。そうやって。",
+      "start_seconds": 514.479,
+      "end_seconds": 518.399,
+      "id": "hOCiiFaMGv4-display-0193",
+      "segment_id": "hOCiiFaMGv4-ja-0061"
+    },
+    {
+      "text": "いやいや、そうじゃないんだよね。僕ら",
+      "start_seconds": 520.36,
+      "end_seconds": 522.8,
+      "id": "hOCiiFaMGv4-display-0194",
+      "segment_id": "hOCiiFaMGv4-ja-0062"
+    },
+    {
+      "text": "だって任せと思ってるしとみたいにね、口",
+      "start_seconds": 522.8,
+      "end_seconds": 525.12,
+      "id": "hOCiiFaMGv4-display-0195",
+      "segment_id": "hOCiiFaMGv4-ja-0062"
+    },
+    {
+      "text": "うるさく言いたいわけじゃないんだよ。で",
+      "start_seconds": 525.12,
+      "end_seconds": 527.48,
+      "id": "hOCiiFaMGv4-display-0196",
+      "segment_id": "hOCiiFaMGv4-ja-0062"
+    },
+    {
+      "text": "もね、ちょっと",
+      "start_seconds": 527.48,
+      "end_seconds": 532.0,
+      "id": "hOCiiFaMGv4-display-0197",
+      "segment_id": "hOCiiFaMGv4-ja-0062"
+    },
+    {
+      "text": "[ため息]",
+      "start_seconds": 537.106,
+      "end_seconds": 538.279,
+      "id": "hOCiiFaMGv4-display-0198",
+      "segment_id": "hOCiiFaMGv4-ja-0063"
+    },
+    {
+      "text": "だったらもう最初から自分たちでやれば",
+      "start_seconds": 538.279,
+      "end_seconds": 540.0,
+      "id": "hOCiiFaMGv4-display-0199",
+      "segment_id": "hOCiiFaMGv4-ja-0063"
+    },
+    {
+      "text": "よかったな。なんか仲間同士でやった方が",
+      "start_seconds": 540.0,
+      "end_seconds": 542.8,
+      "id": "hOCiiFaMGv4-display-0200",
+      "segment_id": "hOCiiFaMGv4-ja-0063"
+    },
+    {
+      "text": "早いしさ、いろんな新しいね、",
+      "start_seconds": 542.8,
+      "end_seconds": 545.079,
+      "id": "hOCiiFaMGv4-display-0201",
+      "segment_id": "hOCiiFaMGv4-ja-0063"
+    },
+    {
+      "text": "インターネット使った仕掛けとかいっぱい",
+      "start_seconds": 545.079,
+      "end_seconds": 546.76,
+      "id": "hOCiiFaMGv4-display-0202",
+      "segment_id": "hOCiiFaMGv4-ja-0063"
+    },
+    {
+      "text": "できるしさ。",
+      "start_seconds": 546.76,
+      "end_seconds": 549.12,
+      "id": "hOCiiFaMGv4-display-0203",
+      "segment_id": "hOCiiFaMGv4-ja-0064"
+    },
+    {
+      "text": "ああ。",
+      "start_seconds": 549.12,
+      "end_seconds": 552.32,
+      "id": "hOCiiFaMGv4-display-0204",
+      "segment_id": "hOCiiFaMGv4-ja-0065"
+    },
+    {
+      "text": "いや、ちゃんとやってくればね、任せるん",
+      "start_seconds": 556.399,
+      "end_seconds": 558.12,
+      "id": "hOCiiFaMGv4-display-0205",
+      "segment_id": "hOCiiFaMGv4-ja-0066"
+    },
+    {
+      "text": "だよ。なんかおまけできないかな。分かっ",
+      "start_seconds": 558.12,
+      "end_seconds": 562.0,
+      "id": "hOCiiFaMGv4-display-0206",
+      "segment_id": "hOCiiFaMGv4-ja-0066"
+    },
+    {
+      "text": "てくれないかな。やっぱり最近の若者は",
+      "start_seconds": 562.0,
+      "end_seconds": 568.0,
+      "id": "hOCiiFaMGv4-display-0207",
+      "segment_id": "hOCiiFaMGv4-ja-0066"
+    },
+    {
+      "text": "ということが結構起きてませんかね。",
+      "start_seconds": 569.519,
+      "end_seconds": 572.48,
+      "id": "hOCiiFaMGv4-display-0208",
+      "segment_id": "hOCiiFaMGv4-ja-0067"
+    },
+    {
+      "text": "いろんな地域で。これね、かなり",
+      "start_seconds": 572.48,
+      "end_seconds": 575.36,
+      "id": "hOCiiFaMGv4-display-0209",
+      "segment_id": "hOCiiFaMGv4-ja-0068"
+    },
+    {
+      "text": "デフォルムして感想化したものですけども",
+      "start_seconds": 575.36,
+      "end_seconds": 577.36,
+      "id": "hOCiiFaMGv4-display-0210",
+      "segment_id": "hOCiiFaMGv4-ja-0068"
+    },
+    {
+      "text": "、やっぱりこんなことが、ま、起きてる",
+      "start_seconds": 577.36,
+      "end_seconds": 580.079,
+      "id": "hOCiiFaMGv4-display-0211",
+      "segment_id": "hOCiiFaMGv4-ja-0068"
+    },
+    {
+      "text": "わけです。そこに僕はあの、コーチとして",
+      "start_seconds": 580.079,
+      "end_seconds": 582.36,
+      "id": "hOCiiFaMGv4-display-0212",
+      "segment_id": "hOCiiFaMGv4-ja-0068"
+    },
+    {
+      "text": "かかることがあります。その時は個人と",
+      "start_seconds": 582.36,
+      "end_seconds": 585.16,
+      "id": "hOCiiFaMGv4-display-0213",
+      "segment_id": "hOCiiFaMGv4-ja-0069"
+    },
+    {
+      "text": "いうよりも組織というよりもある意味地域",
+      "start_seconds": 585.16,
+      "end_seconds": 586.959,
+      "id": "hOCiiFaMGv4-display-0214",
+      "segment_id": "hOCiiFaMGv4-ja-0069"
+    },
+    {
+      "text": "丸ごという形でね、関わっていくんです",
+      "start_seconds": 586.959,
+      "end_seconds": 588.6,
+      "id": "hOCiiFaMGv4-display-0215",
+      "segment_id": "hOCiiFaMGv4-ja-0069"
+    },
+    {
+      "text": "けども、",
+      "start_seconds": 588.6,
+      "end_seconds": 591.0,
+      "id": "hOCiiFaMGv4-display-0216",
+      "segment_id": "hOCiiFaMGv4-ja-0069"
+    },
+    {
+      "text": "まずはまあまあという風にそっから入って",
+      "start_seconds": 591.0,
+      "end_seconds": 592.959,
+      "id": "hOCiiFaMGv4-display-0217",
+      "segment_id": "hOCiiFaMGv4-ja-0069"
+    },
+    {
+      "text": "いきます。",
+      "start_seconds": 592.959,
+      "end_seconds": 594.8,
+      "id": "hOCiiFaMGv4-display-0218",
+      "segment_id": "hOCiiFaMGv4-ja-0070"
+    },
+    {
+      "text": "で、何をするかと言うと、対話の場を作る",
+      "start_seconds": 594.8,
+      "end_seconds": 597.12,
+      "id": "hOCiiFaMGv4-display-0219",
+      "segment_id": "hOCiiFaMGv4-ja-0071"
+    },
+    {
+      "text": "ということです。お互い聞く耳がモテてい",
+      "start_seconds": 597.12,
+      "end_seconds": 599.519,
+      "id": "hOCiiFaMGv4-display-0220",
+      "segment_id": "hOCiiFaMGv4-ja-0071"
+    },
+    {
+      "text": "ない状態になってるわけですよね。そこに",
+      "start_seconds": 599.519,
+      "end_seconds": 601.44,
+      "id": "hOCiiFaMGv4-display-0221",
+      "segment_id": "hOCiiFaMGv4-ja-0071"
+    },
+    {
+      "text": "入っていくってことをしていきます。",
+      "start_seconds": 601.44,
+      "end_seconds": 604.16,
+      "id": "hOCiiFaMGv4-display-0222",
+      "segment_id": "hOCiiFaMGv4-ja-0071"
+    },
+    {
+      "text": "そして改めて今のやり取りの中で語られて",
+      "start_seconds": 604.16,
+      "end_seconds": 607.72,
+      "id": "hOCiiFaMGv4-display-0223",
+      "segment_id": "hOCiiFaMGv4-ja-0072"
+    },
+    {
+      "text": "いないところというのをお互いが",
+      "start_seconds": 607.72,
+      "end_seconds": 609.92,
+      "id": "hOCiiFaMGv4-display-0224",
+      "segment_id": "hOCiiFaMGv4-ja-0072"
+    },
+    {
+      "text": "聞き換えるようなそんな場を作っていき",
+      "start_seconds": 609.92,
+      "end_seconds": 611.92,
+      "id": "hOCiiFaMGv4-display-0225",
+      "segment_id": "hOCiiFaMGv4-ja-0072"
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 611.92,
+      "end_seconds": 614.12,
+      "id": "hOCiiFaMGv4-display-0226",
+      "segment_id": "hOCiiFaMGv4-ja-0072"
+    },
+    {
+      "text": "例えばこんなことがひょっとしたらお互い",
+      "start_seconds": 614.12,
+      "end_seconds": 616.44,
+      "id": "hOCiiFaMGv4-display-0227",
+      "segment_id": "hOCiiFaMGv4-ja-0073"
+    },
+    {
+      "text": "を思ってるかもしれませんね。",
+      "start_seconds": 616.44,
+      "end_seconds": 619.04,
+      "id": "hOCiiFaMGv4-display-0228",
+      "segment_id": "hOCiiFaMGv4-ja-0073"
+    },
+    {
+      "text": "若者、大人それぞれです。例えば若者で",
+      "start_seconds": 619.04,
+      "end_seconds": 622.88,
+      "id": "hOCiiFaMGv4-display-0229",
+      "segment_id": "hOCiiFaMGv4-ja-0074"
+    },
+    {
+      "text": "あればいや僕たちだってこれからいろんな",
+      "start_seconds": 622.88,
+      "end_seconds": 626.399,
+      "id": "hOCiiFaMGv4-display-0230",
+      "segment_id": "hOCiiFaMGv4-ja-0074"
+    },
+    {
+      "text": "失敗を繰り返やるかもしんないけどもそれ",
+      "start_seconds": 626.399,
+      "end_seconds": 628.88,
+      "id": "hOCiiFaMGv4-display-0231",
+      "segment_id": "hOCiiFaMGv4-ja-0074"
+    },
+    {
+      "text": "をやっぱり乗り越えでいきながら経験を",
+      "start_seconds": 628.88,
+      "end_seconds": 630.48,
+      "id": "hOCiiFaMGv4-display-0232",
+      "segment_id": "hOCiiFaMGv4-ja-0074"
+    },
+    {
+      "text": "積んでいってやっぱり10年先、20年先",
+      "start_seconds": 630.48,
+      "end_seconds": 633.36,
+      "id": "hOCiiFaMGv4-display-0233",
+      "segment_id": "hOCiiFaMGv4-ja-0075"
+    },
+    {
+      "text": "の地域って僕たちが担っていくじゃない",
+      "start_seconds": 633.36,
+      "end_seconds": 636.04,
+      "id": "hOCiiFaMGv4-display-0234",
+      "segment_id": "hOCiiFaMGv4-ja-0075"
+    },
+    {
+      "text": "ですか。だからこそ今少しでもチャレンジ",
+      "start_seconds": 636.04,
+      "end_seconds": 638.72,
+      "id": "hOCiiFaMGv4-display-0235",
+      "segment_id": "hOCiiFaMGv4-ja-0075"
+    },
+    {
+      "text": "をしていろんな経験積んでいきたいんです",
+      "start_seconds": 638.72,
+      "end_seconds": 640.88,
+      "id": "hOCiiFaMGv4-display-0236",
+      "segment_id": "hOCiiFaMGv4-ja-0075"
+    },
+    {
+      "text": "よ。大人の皆さんだってそうやってやられ",
+      "start_seconds": 640.88,
+      "end_seconds": 643.32,
+      "id": "hOCiiFaMGv4-display-0237",
+      "segment_id": "hOCiiFaMGv4-ja-0076"
+    },
+    {
+      "text": "てきたでしょ。っていうことを例えば思っ",
+      "start_seconds": 643.32,
+      "end_seconds": 646.04,
+      "id": "hOCiiFaMGv4-display-0238",
+      "segment_id": "hOCiiFaMGv4-ja-0076"
+    },
+    {
+      "text": "てるかもしれませんね。",
+      "start_seconds": 646.04,
+      "end_seconds": 649.48,
+      "id": "hOCiiFaMGv4-display-0239",
+      "segment_id": "hOCiiFaMGv4-ja-0076"
+    },
+    {
+      "text": "で、大人の方も大人の方で、いやいや、",
+      "start_seconds": 649.48,
+      "end_seconds": 652.6,
+      "id": "hOCiiFaMGv4-display-0240",
+      "segment_id": "hOCiiFaMGv4-ja-0077"
+    },
+    {
+      "text": "このイベントってさ、この地域でずっと昔",
+      "start_seconds": 652.6,
+      "end_seconds": 654.8,
+      "id": "hOCiiFaMGv4-display-0241",
+      "segment_id": "hOCiiFaMGv4-ja-0077"
+    },
+    {
+      "text": "からやっていて、これ失敗できないんだよ",
+      "start_seconds": 654.8,
+      "end_seconds": 657.68,
+      "id": "hOCiiFaMGv4-display-0242",
+      "segment_id": "hOCiiFaMGv4-ja-0077"
+    },
+    {
+      "text": "。",
+      "start_seconds": 657.68,
+      "end_seconds": 660.04,
+      "id": "hOCiiFaMGv4-display-0243",
+      "segment_id": "hOCiiFaMGv4-ja-0077"
+    },
+    {
+      "text": "前の世代から続いてるやつだし、伝統的な",
+      "start_seconds": 660.04,
+      "end_seconds": 662.32,
+      "id": "hOCiiFaMGv4-display-0244",
+      "segment_id": "hOCiiFaMGv4-ja-0078"
+    },
+    {
+      "text": "ものだし、この地域のシンボルみたいな",
+      "start_seconds": 662.32,
+      "end_seconds": 664.279,
+      "id": "hOCiiFaMGv4-display-0245",
+      "segment_id": "hOCiiFaMGv4-ja-0078"
+    },
+    {
+      "text": "もんだし、これ自治体からも助成金とか",
+      "start_seconds": 664.279,
+      "end_seconds": 667.12,
+      "id": "hOCiiFaMGv4-display-0246",
+      "segment_id": "hOCiiFaMGv4-ja-0078"
+    },
+    {
+      "text": "補助金もらってやってるしさ、企業からの",
+      "start_seconds": 667.12,
+      "end_seconds": 669.44,
+      "id": "hOCiiFaMGv4-display-0247",
+      "segment_id": "hOCiiFaMGv4-ja-0078"
+    },
+    {
+      "text": "共産金もあんだよ。",
+      "start_seconds": 669.44,
+      "end_seconds": 671.76,
+      "id": "hOCiiFaMGv4-display-0248",
+      "segment_id": "hOCiiFaMGv4-ja-0078"
+    },
+    {
+      "text": "だから",
+      "start_seconds": 671.76,
+      "end_seconds": 673.959,
+      "id": "hOCiiFaMGv4-display-0249",
+      "segment_id": "hOCiiFaMGv4-ja-0079"
+    },
+    {
+      "text": "集客が昨年の半分になったりするっ",
+      "start_seconds": 673.959,
+      "end_seconds": 676.48,
+      "id": "hOCiiFaMGv4-display-0250",
+      "segment_id": "hOCiiFaMGv4-ja-0079"
+    },
+    {
+      "text": "てことはとてもありえないんだよね。",
+      "start_seconds": 676.48,
+      "end_seconds": 679.279,
+      "id": "hOCiiFaMGv4-display-0251",
+      "segment_id": "hOCiiFaMGv4-ja-0079"
+    },
+    {
+      "text": "何しろお金もらえなくなったりすると継続",
+      "start_seconds": 679.279,
+      "end_seconds": 682.0,
+      "id": "hOCiiFaMGv4-display-0252",
+      "segment_id": "hOCiiFaMGv4-ja-0080"
+    },
+    {
+      "text": "できないしさ、",
+      "start_seconds": 682.0,
+      "end_seconds": 684.16,
+      "id": "hOCiiFaMGv4-display-0253",
+      "segment_id": "hOCiiFaMGv4-ja-0080"
+    },
+    {
+      "text": "それにずっとやってきてくれた方にも",
+      "start_seconds": 684.16,
+      "end_seconds": 686.0,
+      "id": "hOCiiFaMGv4-display-0254",
+      "segment_id": "hOCiiFaMGv4-ja-0080"
+    },
+    {
+      "text": "申し訳なくて",
+      "start_seconds": 686.0,
+      "end_seconds": 688.639,
+      "id": "hOCiiFaMGv4-display-0255",
+      "segment_id": "hOCiiFaMGv4-ja-0080"
+    },
+    {
+      "text": "っていう痛み辛さみたいなものが大人には",
+      "start_seconds": 688.639,
+      "end_seconds": 693.399,
+      "id": "hOCiiFaMGv4-display-0256",
+      "segment_id": "hOCiiFaMGv4-ja-0081"
+    },
+    {
+      "text": "大人にあるかもしれないですね。",
+      "start_seconds": 693.399,
+      "end_seconds": 696.88,
+      "id": "hOCiiFaMGv4-display-0257",
+      "segment_id": "hOCiiFaMGv4-ja-0081"
+    },
+    {
+      "text": "これどうでしょうか?先ほどのやり合いを",
+      "start_seconds": 696.88,
+      "end_seconds": 699.44,
+      "id": "hOCiiFaMGv4-display-0258",
+      "segment_id": "hOCiiFaMGv4-ja-0082"
+    },
+    {
+      "text": "しているところと比べてまたちょっと知う",
+      "start_seconds": 699.44,
+      "end_seconds": 702.6,
+      "id": "hOCiiFaMGv4-display-0259",
+      "segment_id": "hOCiiFaMGv4-ja-0082"
+    },
+    {
+      "text": "質感の空気が出てきてるんじゃないかなと",
+      "start_seconds": 702.6,
+      "end_seconds": 706.04,
+      "id": "hOCiiFaMGv4-display-0260",
+      "segment_id": "hOCiiFaMGv4-ja-0082"
+    },
+    {
+      "text": "思います。でもここって当事者同士が",
+      "start_seconds": 706.04,
+      "end_seconds": 709.8,
+      "id": "hOCiiFaMGv4-display-0261",
+      "segment_id": "hOCiiFaMGv4-ja-0083"
+    },
+    {
+      "text": "いきなり話せるかと言うとそれは難しいん",
+      "start_seconds": 709.8,
+      "end_seconds": 712.76,
+      "id": "hOCiiFaMGv4-display-0262",
+      "segment_id": "hOCiiFaMGv4-ja-0083"
+    },
+    {
+      "text": "ですよね。やっぱりファイティングボード",
+      "start_seconds": 712.76,
+      "end_seconds": 714.32,
+      "id": "hOCiiFaMGv4-display-0263",
+      "segment_id": "hOCiiFaMGv4-ja-0083"
+    },
+    {
+      "text": "を取ってるんでかファイティングボード",
+      "start_seconds": 714.32,
+      "end_seconds": 717.839,
+      "id": "hOCiiFaMGv4-display-0264",
+      "segment_id": "hOCiiFaMGv4-ja-0083"
+    },
+    {
+      "text": "解いだら負けなんですね。やられちゃうん",
+      "start_seconds": 717.839,
+      "end_seconds": 720.32,
+      "id": "hOCiiFaMGv4-display-0265",
+      "segment_id": "hOCiiFaMGv4-ja-0084"
+    },
+    {
+      "text": "で。だからこそ第3世が介入していくこと",
+      "start_seconds": 720.32,
+      "end_seconds": 723.079,
+      "id": "hOCiiFaMGv4-display-0266",
+      "segment_id": "hOCiiFaMGv4-ja-0084"
+    },
+    {
+      "text": "でその場を話せる場にしていくということ",
+      "start_seconds": 723.079,
+      "end_seconds": 725.839,
+      "id": "hOCiiFaMGv4-display-0267",
+      "segment_id": "hOCiiFaMGv4-ja-0084"
+    },
+    {
+      "text": "をしたりします。",
+      "start_seconds": 725.839,
+      "end_seconds": 728.24,
+      "id": "hOCiiFaMGv4-display-0268",
+      "segment_id": "hOCiiFaMGv4-ja-0084"
+    },
+    {
+      "text": "その時に大事にしてることが薪を",
+      "start_seconds": 728.24,
+      "end_seconds": 731.079,
+      "id": "hOCiiFaMGv4-display-0269",
+      "segment_id": "hOCiiFaMGv4-ja-0085"
+    },
+    {
+      "text": "燃やし尽くすという風な表現があるんです",
+      "start_seconds": 731.079,
+      "end_seconds": 732.959,
+      "id": "hOCiiFaMGv4-display-0270",
+      "segment_id": "hOCiiFaMGv4-ja-0085"
+    },
+    {
+      "text": "けど思いきり全部言い切ってもらう",
+      "start_seconds": 732.959,
+      "end_seconds": 735.6,
+      "id": "hOCiiFaMGv4-display-0271",
+      "segment_id": "hOCiiFaMGv4-ja-0085"
+    },
+    {
+      "text": "吐き出してもらうということなんですね。",
+      "start_seconds": 735.6,
+      "end_seconds": 737.8,
+      "id": "hOCiiFaMGv4-display-0272",
+      "segment_id": "hOCiiFaMGv4-ja-0085"
+    },
+    {
+      "text": "これをしていかないとまた魂が彷徨って",
+      "start_seconds": 737.8,
+      "end_seconds": 741.32,
+      "id": "hOCiiFaMGv4-display-0273",
+      "segment_id": "hOCiiFaMGv4-ja-0086"
+    },
+    {
+      "text": "成仏できずにまた戻ってきて同じことが",
+      "start_seconds": 741.32,
+      "end_seconds": 743.36,
+      "id": "hOCiiFaMGv4-display-0274",
+      "segment_id": "hOCiiFaMGv4-ja-0086"
+    },
+    {
+      "text": "繰り返されるということがあります。で、",
+      "start_seconds": 743.36,
+      "end_seconds": 746.04,
+      "id": "hOCiiFaMGv4-display-0275",
+      "segment_id": "hOCiiFaMGv4-ja-0086"
+    },
+    {
+      "text": "この瞬間っていうのが実はコーチとして",
+      "start_seconds": 746.04,
+      "end_seconds": 747.92,
+      "id": "hOCiiFaMGv4-display-0276",
+      "segment_id": "hOCiiFaMGv4-ja-0086"
+    },
+    {
+      "text": "かかる自分にも1番ヒリヒリするところな",
+      "start_seconds": 747.92,
+      "end_seconds": 749.72,
+      "id": "hOCiiFaMGv4-display-0277",
+      "segment_id": "hOCiiFaMGv4-ja-0086"
+    },
+    {
+      "text": "んですね。思いっきり感情出てくるんです",
+      "start_seconds": 749.72,
+      "end_seconds": 752.24,
+      "id": "hOCiiFaMGv4-display-0278",
+      "segment_id": "hOCiiFaMGv4-ja-0087"
+    },
+    {
+      "text": "よ、いろんな人たちから。で、時には僕が",
+      "start_seconds": 752.24,
+      "end_seconds": 754.88,
+      "id": "hOCiiFaMGv4-display-0279",
+      "segment_id": "hOCiiFaMGv4-ja-0087"
+    },
+    {
+      "text": "アタックされるんですね。なんだと?お前",
+      "start_seconds": 754.88,
+      "end_seconds": 757.44,
+      "id": "hOCiiFaMGv4-display-0280",
+      "segment_id": "hOCiiFaMGv4-ja-0087"
+    },
+    {
+      "text": "は何時にここに来てんだと。俺たちの言う",
+      "start_seconds": 757.44,
+      "end_seconds": 760.04,
+      "id": "hOCiiFaMGv4-display-0281",
+      "segment_id": "hOCiiFaMGv4-ja-0087"
+    },
+    {
+      "text": "ことを後ししてくれんじゃないかっていう",
+      "start_seconds": 760.04,
+      "end_seconds": 761.48,
+      "id": "hOCiiFaMGv4-display-0282",
+      "segment_id": "hOCiiFaMGv4-ja-0087"
+    },
+    {
+      "text": "風に大人から言われたり、逆に若者から僕",
+      "start_seconds": 761.48,
+      "end_seconds": 764.76,
+      "id": "hOCiiFaMGv4-display-0283",
+      "segment_id": "hOCiiFaMGv4-ja-0088"
+    },
+    {
+      "text": "たちの味方になってくれんじゃないですか",
+      "start_seconds": 764.76,
+      "end_seconds": 766.399,
+      "id": "hOCiiFaMGv4-display-0284",
+      "segment_id": "hOCiiFaMGv4-ja-0088"
+    },
+    {
+      "text": "なんていうように期待されたりとかですね",
+      "start_seconds": 766.399,
+      "end_seconds": 768.199,
+      "id": "hOCiiFaMGv4-display-0285",
+      "segment_id": "hOCiiFaMGv4-ja-0088"
+    },
+    {
+      "text": "。ってことが結構あるんですよ。だから僕",
+      "start_seconds": 768.199,
+      "end_seconds": 770.92,
+      "id": "hOCiiFaMGv4-display-0286",
+      "segment_id": "hOCiiFaMGv4-ja-0088"
+    },
+    {
+      "text": "もその中の炎の中に",
+      "start_seconds": 770.92,
+      "end_seconds": 773.68,
+      "id": "hOCiiFaMGv4-display-0287",
+      "segment_id": "hOCiiFaMGv4-ja-0089"
+    },
+    {
+      "text": "立ち続けるという風ななんか気持ちという",
+      "start_seconds": 773.68,
+      "end_seconds": 777.32,
+      "id": "hOCiiFaMGv4-display-0288",
+      "segment_id": "hOCiiFaMGv4-ja-0089"
+    },
+    {
+      "text": "か精神性っていうのが高知の場にも求め",
+      "start_seconds": 777.32,
+      "end_seconds": 780.199,
+      "id": "hOCiiFaMGv4-display-0289",
+      "segment_id": "hOCiiFaMGv4-ja-0089"
+    },
+    {
+      "text": "られていくということがあります。ここは",
+      "start_seconds": 780.199,
+      "end_seconds": 782.92,
+      "id": "hOCiiFaMGv4-display-0290",
+      "segment_id": "hOCiiFaMGv4-ja-0089"
+    },
+    {
+      "text": "本当に関係者全員がヒリヒリするんですね",
+      "start_seconds": 782.92,
+      "end_seconds": 784.639,
+      "id": "hOCiiFaMGv4-display-0291",
+      "segment_id": "hOCiiFaMGv4-ja-0090"
+    },
+    {
+      "text": "。僕も足がガクガク触れながらその場に",
+      "start_seconds": 784.639,
+      "end_seconds": 787.24,
+      "id": "hOCiiFaMGv4-display-0292",
+      "segment_id": "hOCiiFaMGv4-ja-0090"
+    },
+    {
+      "text": "いるんです。平成さを一生懸命んですけど",
+      "start_seconds": 787.24,
+      "end_seconds": 789.72,
+      "id": "hOCiiFaMGv4-display-0293",
+      "segment_id": "hOCiiFaMGv4-ja-0090"
+    },
+    {
+      "text": "。でもそうやって本音で出てきた言葉に",
+      "start_seconds": 789.72,
+      "end_seconds": 792.44,
+      "id": "hOCiiFaMGv4-display-0294",
+      "segment_id": "hOCiiFaMGv4-ja-0090"
+    },
+    {
+      "text": "対しては皆さんその後の行動にも確実に",
+      "start_seconds": 792.44,
+      "end_seconds": 795.199,
+      "id": "hOCiiFaMGv4-display-0295",
+      "segment_id": "hOCiiFaMGv4-ja-0091"
+    },
+    {
+      "text": "つがっていくってことがあります。",
+      "start_seconds": 795.199,
+      "end_seconds": 799.32,
+      "id": "hOCiiFaMGv4-display-0296",
+      "segment_id": "hOCiiFaMGv4-ja-0091"
+    },
+    {
+      "text": "そしてもう1つ大事なことがロール",
+      "start_seconds": 799.32,
+      "end_seconds": 801.56,
+      "id": "hOCiiFaMGv4-display-0297",
+      "segment_id": "hOCiiFaMGv4-ja-0092"
+    },
+    {
+      "text": "スイッチなんて言いますけど役割を変える",
+      "start_seconds": 801.56,
+      "end_seconds": 804.04,
+      "id": "hOCiiFaMGv4-display-0298",
+      "segment_id": "hOCiiFaMGv4-ja-0092"
+    },
+    {
+      "text": "ということです。ロールというのは役割",
+      "start_seconds": 804.04,
+      "end_seconds": 805.519,
+      "id": "hOCiiFaMGv4-display-0299",
+      "segment_id": "hOCiiFaMGv4-ja-0092"
+    },
+    {
+      "text": "です。それを書いて相手の立場になってみ",
+      "start_seconds": 805.519,
+      "end_seconds": 808.639,
+      "id": "hOCiiFaMGv4-display-0300",
+      "segment_id": "hOCiiFaMGv4-ja-0092"
+    },
+    {
+      "text": "るってことを促していきます。これ僕らが",
+      "start_seconds": 808.639,
+      "end_seconds": 811.399,
+      "id": "hOCiiFaMGv4-display-0301",
+      "segment_id": "hOCiiFaMGv4-ja-0093"
+    },
+    {
+      "text": "、え、生まれてからこの方ですね、親とか",
+      "start_seconds": 811.399,
+      "end_seconds": 813.639,
+      "id": "hOCiiFaMGv4-display-0302",
+      "segment_id": "hOCiiFaMGv4-ja-0093"
+    },
+    {
+      "text": "学校の先生から言われてきて、人の気持ち",
+      "start_seconds": 813.639,
+      "end_seconds": 816.399,
+      "id": "hOCiiFaMGv4-display-0303",
+      "segment_id": "hOCiiFaMGv4-ja-0093"
+    },
+    {
+      "text": "になって考えなさい、行動しなさいって",
+      "start_seconds": 816.399,
+      "end_seconds": 818.04,
+      "id": "hOCiiFaMGv4-display-0304",
+      "segment_id": "hOCiiFaMGv4-ja-0093"
+    },
+    {
+      "text": "言われてきますよね。でもこれなかなか",
+      "start_seconds": 818.04,
+      "end_seconds": 820.24,
+      "id": "hOCiiFaMGv4-display-0305",
+      "segment_id": "hOCiiFaMGv4-ja-0093"
+    },
+    {
+      "text": "できないんですよ。そこを実際に物理的な",
+      "start_seconds": 820.24,
+      "end_seconds": 823.88,
+      "id": "hOCiiFaMGv4-display-0306",
+      "segment_id": "hOCiiFaMGv4-ja-0094"
+    },
+    {
+      "text": "スペースを作ったりして、じゃあ大人の人",
+      "start_seconds": 823.88,
+      "end_seconds": 826.04,
+      "id": "hOCiiFaMGv4-display-0307",
+      "segment_id": "hOCiiFaMGv4-ja-0094"
+    },
+    {
+      "text": "は若者の世界に入ってください。若者は",
+      "start_seconds": 826.04,
+      "end_seconds": 829.12,
+      "id": "hOCiiFaMGv4-display-0308",
+      "segment_id": "hOCiiFaMGv4-ja-0094"
+    },
+    {
+      "text": "大人の世界に入ってくださいみたいな促し",
+      "start_seconds": 829.12,
+      "end_seconds": 831.399,
+      "id": "hOCiiFaMGv4-display-0309",
+      "segment_id": "hOCiiFaMGv4-ja-0094"
+    },
+    {
+      "text": "をしていきながら実際に体ごと相手の",
+      "start_seconds": 831.399,
+      "end_seconds": 834.759,
+      "id": "hOCiiFaMGv4-display-0310",
+      "segment_id": "hOCiiFaMGv4-ja-0095"
+    },
+    {
+      "text": "気持ちになってみる、なり切ってみると",
+      "start_seconds": 834.759,
+      "end_seconds": 836.639,
+      "id": "hOCiiFaMGv4-display-0311",
+      "segment_id": "hOCiiFaMGv4-ja-0095"
+    },
+    {
+      "text": "いうことをサポートしていきます。",
+      "start_seconds": 836.639,
+      "end_seconds": 839.959,
+      "id": "hOCiiFaMGv4-display-0312",
+      "segment_id": "hOCiiFaMGv4-ja-0095"
+    },
+    {
+      "text": "そうするとですね、ただ単に言葉だけでは",
+      "start_seconds": 839.959,
+      "end_seconds": 843.079,
+      "id": "hOCiiFaMGv4-display-0313",
+      "segment_id": "hOCiiFaMGv4-ja-0096"
+    },
+    {
+      "text": "なくて、その場にいる質感みたいなことも",
+      "start_seconds": 843.079,
+      "end_seconds": 845.36,
+      "id": "hOCiiFaMGv4-display-0314",
+      "segment_id": "hOCiiFaMGv4-ja-0096"
+    },
+    {
+      "text": "じーンと体に染みてきて、",
+      "start_seconds": 845.36,
+      "end_seconds": 848.56,
+      "id": "hOCiiFaMGv4-display-0315",
+      "segment_id": "hOCiiFaMGv4-ja-0096"
+    },
+    {
+      "text": "いきなりその場で100%分かりましたと",
+      "start_seconds": 848.56,
+      "end_seconds": 851.079,
+      "id": "hOCiiFaMGv4-display-0316",
+      "segment_id": "hOCiiFaMGv4-ja-0096"
+    },
+    {
+      "text": "、あなた方の言ってることが正しかった",
+      "start_seconds": 851.079,
+      "end_seconds": 852.8,
+      "id": "hOCiiFaMGv4-display-0317",
+      "segment_id": "hOCiiFaMGv4-ja-0097"
+    },
+    {
+      "text": "です。なんてこと[鼻息]にはならない",
+      "start_seconds": 852.8,
+      "end_seconds": 854.12,
+      "id": "hOCiiFaMGv4-display-0318",
+      "segment_id": "hOCiiFaMGv4-ja-0097"
+    },
+    {
+      "text": "ですけど、やっぱりまずはそうなんだね、",
+      "start_seconds": 854.12,
+      "end_seconds": 857.72,
+      "id": "hOCiiFaMGv4-display-0319",
+      "segment_id": "hOCiiFaMGv4-ja-0097"
+    },
+    {
+      "text": "そういう思いがあるんだねっていうことを",
+      "start_seconds": 857.72,
+      "end_seconds": 859.68,
+      "id": "hOCiiFaMGv4-display-0320",
+      "segment_id": "hOCiiFaMGv4-ja-0097"
+    },
+    {
+      "text": "一旦受け止めるということができるように",
+      "start_seconds": 859.68,
+      "end_seconds": 861.6,
+      "id": "hOCiiFaMGv4-display-0321",
+      "segment_id": "hOCiiFaMGv4-ja-0097"
+    },
+    {
+      "text": "なります。いきなり全部受け入れられなく",
+      "start_seconds": 861.6,
+      "end_seconds": 864.16,
+      "id": "hOCiiFaMGv4-display-0322",
+      "segment_id": "hOCiiFaMGv4-ja-0098"
+    },
+    {
+      "text": "ても受け止めるということができていく",
+      "start_seconds": 864.16,
+      "end_seconds": 865.759,
+      "id": "hOCiiFaMGv4-display-0323",
+      "segment_id": "hOCiiFaMGv4-ja-0098"
+    },
+    {
+      "text": "ようになります。そうすると次はじゃあ",
+      "start_seconds": 865.759,
+      "end_seconds": 868.639,
+      "id": "hOCiiFaMGv4-display-0324",
+      "segment_id": "hOCiiFaMGv4-ja-0098"
+    },
+    {
+      "text": "どんな話しようかねという対話の場が開か",
+      "start_seconds": 868.639,
+      "end_seconds": 870.8,
+      "id": "hOCiiFaMGv4-display-0325",
+      "segment_id": "hOCiiFaMGv4-ja-0098"
+    },
+    {
+      "text": "れたりということで次のステージに進んで",
+      "start_seconds": 870.8,
+      "end_seconds": 873.8,
+      "id": "hOCiiFaMGv4-display-0326",
+      "segment_id": "hOCiiFaMGv4-ja-0099"
+    },
+    {
+      "text": "いくってことができるようになります。",
+      "start_seconds": 873.8,
+      "end_seconds": 877.6,
+      "id": "hOCiiFaMGv4-display-0327",
+      "segment_id": "hOCiiFaMGv4-ja-0099"
+    },
+    {
+      "text": "改めてこういったですね、今回今地域",
+      "start_seconds": 877.6,
+      "end_seconds": 879.519,
+      "id": "hOCiiFaMGv4-display-0328",
+      "segment_id": "hOCiiFaMGv4-ja-0100"
+    },
+    {
+      "text": "イベントということを1つ素材として皆",
+      "start_seconds": 879.519,
+      "end_seconds": 882.199,
+      "id": "hOCiiFaMGv4-display-0329",
+      "segment_id": "hOCiiFaMGv4-ja-0100"
+    },
+    {
+      "text": "さんにご提供してみましたけども、やはり",
+      "start_seconds": 882.199,
+      "end_seconds": 885.0,
+      "id": "hOCiiFaMGv4-display-0330",
+      "segment_id": "hOCiiFaMGv4-ja-0100"
+    },
+    {
+      "text": "どうしてもイベントなんかある時には中身",
+      "start_seconds": 885.0,
+      "end_seconds": 887.72,
+      "id": "hOCiiFaMGv4-display-0331",
+      "segment_id": "hOCiiFaMGv4-ja-0100"
+    },
+    {
+      "text": "何にしよう、プログラムどうしようとか",
+      "start_seconds": 887.72,
+      "end_seconds": 889.24,
+      "id": "hOCiiFaMGv4-display-0332",
+      "segment_id": "hOCiiFaMGv4-ja-0100"
+    },
+    {
+      "text": "タイムラインどうしようとかですね、集客",
+      "start_seconds": 889.24,
+      "end_seconds": 890.959,
+      "id": "hOCiiFaMGv4-display-0333",
+      "segment_id": "hOCiiFaMGv4-ja-0101"
+    },
+    {
+      "text": "どうしようってことに意識が向きかしだと",
+      "start_seconds": 890.959,
+      "end_seconds": 893.0,
+      "id": "hOCiiFaMGv4-display-0334",
+      "segment_id": "hOCiiFaMGv4-ja-0101"
+    },
+    {
+      "text": "思います。でも大事なのはなぜそれをやる",
+      "start_seconds": 893.0,
+      "end_seconds": 896.04,
+      "id": "hOCiiFaMGv4-display-0335",
+      "segment_id": "hOCiiFaMGv4-ja-0101"
+    },
+    {
+      "text": "んだっていう風な気持ちの部分であり願い",
+      "start_seconds": 896.04,
+      "end_seconds": 898.759,
+      "id": "hOCiiFaMGv4-display-0336",
+      "segment_id": "hOCiiFaMGv4-ja-0101"
+    },
+    {
+      "text": "の部分なんですね。そこをやっぱり大事に",
+      "start_seconds": 898.759,
+      "end_seconds": 901.519,
+      "id": "hOCiiFaMGv4-display-0337",
+      "segment_id": "hOCiiFaMGv4-ja-0102"
+    },
+    {
+      "text": "していかないとなかなかいい感じで前に",
+      "start_seconds": 901.519,
+      "end_seconds": 903.16,
+      "id": "hOCiiFaMGv4-display-0338",
+      "segment_id": "hOCiiFaMGv4-ja-0102"
+    },
+    {
+      "text": "進まずに本当に関わる人みんなが不幸せな",
+      "start_seconds": 903.16,
+      "end_seconds": 906.36,
+      "id": "hOCiiFaMGv4-display-0339",
+      "segment_id": "hOCiiFaMGv4-ja-0102"
+    },
+    {
+      "text": "状態になってしまうとことが起きると思い",
+      "start_seconds": 906.36,
+      "end_seconds": 908.6,
+      "id": "hOCiiFaMGv4-display-0340",
+      "segment_id": "hOCiiFaMGv4-ja-0102"
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 908.6,
+      "end_seconds": 910.88,
+      "id": "hOCiiFaMGv4-display-0341",
+      "segment_id": "hOCiiFaMGv4-ja-0103"
+    },
+    {
+      "text": "というと随分ですね、なんかイラのこと",
+      "start_seconds": 910.88,
+      "end_seconds": 912.6,
+      "id": "hOCiiFaMGv4-display-0342",
+      "segment_id": "hOCiiFaMGv4-ja-0104"
+    },
+    {
+      "text": "言ってるような気がしますがこれも僕自身",
+      "start_seconds": 912.6,
+      "end_seconds": 914.48,
+      "id": "hOCiiFaMGv4-display-0343",
+      "segment_id": "hOCiiFaMGv4-ja-0104"
+    },
+    {
+      "text": "の本当に失敗から学んでることなんです。",
+      "start_seconds": 914.48,
+      "end_seconds": 917.16,
+      "id": "hOCiiFaMGv4-display-0344",
+      "segment_id": "hOCiiFaMGv4-ja-0104"
+    },
+    {
+      "text": "外部から関わる時にですね、色々お招きを",
+      "start_seconds": 917.16,
+      "end_seconds": 919.32,
+      "id": "hOCiiFaMGv4-display-0345",
+      "segment_id": "hOCiiFaMGv4-ja-0105"
+    },
+    {
+      "text": "されます。いろんな地域に。でも僕",
+      "start_seconds": 919.32,
+      "end_seconds": 923.12,
+      "id": "hOCiiFaMGv4-display-0346",
+      "segment_id": "hOCiiFaMGv4-ja-0105"
+    },
+    {
+      "text": "いろんなケース事例とか知っていて、ある",
+      "start_seconds": 923.12,
+      "end_seconds": 926.16,
+      "id": "hOCiiFaMGv4-display-0347",
+      "segment_id": "hOCiiFaMGv4-ja-0105"
+    },
+    {
+      "text": "意味正解をしてるような気持ちでそこに",
+      "start_seconds": 926.16,
+      "end_seconds": 927.68,
+      "id": "hOCiiFaMGv4-display-0348",
+      "segment_id": "hOCiiFaMGv4-ja-0105"
+    },
+    {
+      "text": "入っていくんですけど、やっぱりそこの",
+      "start_seconds": 927.68,
+      "end_seconds": 929.68,
+      "id": "hOCiiFaMGv4-display-0349",
+      "segment_id": "hOCiiFaMGv4-ja-0106"
+    },
+    {
+      "text": "地域には地域、組織には組織、人には人の",
+      "start_seconds": 929.68,
+      "end_seconds": 932.319,
+      "id": "hOCiiFaMGv4-display-0350",
+      "segment_id": "hOCiiFaMGv4-ja-0106"
+    },
+    {
+      "text": "文脈があったり感情があったりするって",
+      "start_seconds": 932.319,
+      "end_seconds": 934.88,
+      "id": "hOCiiFaMGv4-display-0351",
+      "segment_id": "hOCiiFaMGv4-ja-0106"
+    },
+    {
+      "text": "ことが当たり前ですけどあるんですよね。",
+      "start_seconds": 934.88,
+      "end_seconds": 937.44,
+      "id": "hOCiiFaMGv4-display-0352",
+      "segment_id": "hOCiiFaMGv4-ja-0106"
+    },
+    {
+      "text": "そこをいきなりポンと入っていくっていう",
+      "start_seconds": 937.44,
+      "end_seconds": 939.16,
+      "id": "hOCiiFaMGv4-display-0353",
+      "segment_id": "hOCiiFaMGv4-ja-0107"
+    },
+    {
+      "text": "こと。",
+      "start_seconds": 939.16,
+      "end_seconds": 941.24,
+      "id": "hOCiiFaMGv4-display-0354",
+      "segment_id": "hOCiiFaMGv4-ja-0107"
+    },
+    {
+      "text": "本当にそこは相手の気持ちなり相手の状態",
+      "start_seconds": 941.24,
+      "end_seconds": 943.48,
+      "id": "hOCiiFaMGv4-display-0355",
+      "segment_id": "hOCiiFaMGv4-ja-0108"
+    },
+    {
+      "text": "をちゃんと理解してるかというと、特に",
+      "start_seconds": 943.48,
+      "end_seconds": 946.319,
+      "id": "hOCiiFaMGv4-display-0356",
+      "segment_id": "hOCiiFaMGv4-ja-0108"
+    },
+    {
+      "text": "コンサルティングの仕事をし始めた当初",
+      "start_seconds": 946.319,
+      "end_seconds": 948.279,
+      "id": "hOCiiFaMGv4-display-0357",
+      "segment_id": "hOCiiFaMGv4-ja-0108"
+    },
+    {
+      "text": "っていうのはよしやるぜみたいな気持ちで",
+      "start_seconds": 948.279,
+      "end_seconds": 950.319,
+      "id": "hOCiiFaMGv4-display-0358",
+      "segment_id": "hOCiiFaMGv4-ja-0108"
+    },
+    {
+      "text": "いるんで結構ぐっと入ってくんですよ。",
+      "start_seconds": 950.319,
+      "end_seconds": 953.279,
+      "id": "hOCiiFaMGv4-display-0359",
+      "segment_id": "hOCiiFaMGv4-ja-0109"
+    },
+    {
+      "text": "ただそこでうまくいかずに一旦計画なり",
+      "start_seconds": 953.279,
+      "end_seconds": 957.16,
+      "id": "hOCiiFaMGv4-display-0360",
+      "segment_id": "hOCiiFaMGv4-ja-0110"
+    },
+    {
+      "text": "戦略なり作るんですけど数ヶ月後どうです",
+      "start_seconds": 957.16,
+      "end_seconds": 960.399,
+      "id": "hOCiiFaMGv4-display-0361",
+      "segment_id": "hOCiiFaMGv4-ja-0110"
+    },
+    {
+      "text": "か?この前のやつうまく進んでますって",
+      "start_seconds": 960.399,
+      "end_seconds": 962.959,
+      "id": "hOCiiFaMGv4-display-0362",
+      "segment_id": "hOCiiFaMGv4-ja-0110"
+    },
+    {
+      "text": "言うといやちょっと忙しくてねっていう風",
+      "start_seconds": 962.959,
+      "end_seconds": 965.56,
+      "id": "hOCiiFaMGv4-display-0363",
+      "segment_id": "hOCiiFaMGv4-ja-0111"
+    },
+    {
+      "text": "に買わされるんですよね。で、また",
+      "start_seconds": 965.56,
+      "end_seconds": 968.36,
+      "id": "hOCiiFaMGv4-display-0364",
+      "segment_id": "hOCiiFaMGv4-ja-0111"
+    },
+    {
+      "text": "しばらくっていくんですけど、いや人が",
+      "start_seconds": 968.36,
+      "end_seconds": 970.68,
+      "id": "hOCiiFaMGv4-display-0365",
+      "segment_id": "hOCiiFaMGv4-ja-0111"
+    },
+    {
+      "text": "やめちゃってさあみたいなことが結構",
+      "start_seconds": 970.68,
+      "end_seconds": 972.56,
+      "id": "hOCiiFaMGv4-display-0366",
+      "segment_id": "hOCiiFaMGv4-ja-0111"
+    },
+    {
+      "text": "起きるんです",
+      "start_seconds": 972.56,
+      "end_seconds": 974.68,
+      "id": "hOCiiFaMGv4-display-0367",
+      "segment_id": "hOCiiFaMGv4-ja-0111"
+    },
+    {
+      "text": "というぐらいやっぱりこのあり方やり方と",
+      "start_seconds": 974.68,
+      "end_seconds": 977.36,
+      "id": "hOCiiFaMGv4-display-0368",
+      "segment_id": "hOCiiFaMGv4-ja-0112"
+    },
+    {
+      "text": "いうことはしっかりと自分の中でも意識を",
+      "start_seconds": 977.36,
+      "end_seconds": 980.36,
+      "id": "hOCiiFaMGv4-display-0369",
+      "segment_id": "hOCiiFaMGv4-ja-0112"
+    },
+    {
+      "text": "して入っていかないとなかなかうまくいか",
+      "start_seconds": 980.36,
+      "end_seconds": 983.6,
+      "id": "hOCiiFaMGv4-display-0370",
+      "segment_id": "hOCiiFaMGv4-ja-0112"
+    },
+    {
+      "text": "ないと。ただ当事者同士が当事者だけで",
+      "start_seconds": 983.6,
+      "end_seconds": 987.16,
+      "id": "hOCiiFaMGv4-display-0371",
+      "segment_id": "hOCiiFaMGv4-ja-0113"
+    },
+    {
+      "text": "その厳しい状況を変えていけるかというと",
+      "start_seconds": 987.16,
+      "end_seconds": 989.8,
+      "id": "hOCiiFaMGv4-display-0372",
+      "segment_id": "hOCiiFaMGv4-ja-0113"
+    },
+    {
+      "text": "そこはそこで非常にハードルが高いことな",
+      "start_seconds": 989.8,
+      "end_seconds": 991.68,
+      "id": "hOCiiFaMGv4-display-0373",
+      "segment_id": "hOCiiFaMGv4-ja-0113"
+    },
+    {
+      "text": "んですね。だからこそやはり外部から",
+      "start_seconds": 991.68,
+      "end_seconds": 994.24,
+      "id": "hOCiiFaMGv4-display-0374",
+      "segment_id": "hOCiiFaMGv4-ja-0113"
+    },
+    {
+      "text": "関わる人、それからコンサルタントであり",
+      "start_seconds": 994.24,
+      "end_seconds": 997.199,
+      "id": "hOCiiFaMGv4-display-0375",
+      "segment_id": "hOCiiFaMGv4-ja-0114"
+    },
+    {
+      "text": "、コーチであれ、そういった人が入って",
+      "start_seconds": 997.199,
+      "end_seconds": 998.839,
+      "id": "hOCiiFaMGv4-display-0376",
+      "segment_id": "hOCiiFaMGv4-ja-0114"
+    },
+    {
+      "text": "いくことでしっかりとその場を解きほぐし",
+      "start_seconds": 998.839,
+      "end_seconds": 1001.519,
+      "id": "hOCiiFaMGv4-display-0377",
+      "segment_id": "hOCiiFaMGv4-ja-0114"
+    },
+    {
+      "text": "ていって前に進めていくっていうこんな",
+      "start_seconds": 1001.519,
+      "end_seconds": 1003.639,
+      "id": "hOCiiFaMGv4-display-0378",
+      "segment_id": "hOCiiFaMGv4-ja-0114"
+    },
+    {
+      "text": "仕事っていうのは本当にこれからの世の中",
+      "start_seconds": 1003.639,
+      "end_seconds": 1006.0,
+      "id": "hOCiiFaMGv4-display-0379",
+      "segment_id": "hOCiiFaMGv4-ja-0114"
+    },
+    {
+      "text": "求められるもんじゃないかなと思ってます",
+      "start_seconds": 1006.0,
+      "end_seconds": 1007.88,
+      "id": "hOCiiFaMGv4-display-0380",
+      "segment_id": "hOCiiFaMGv4-ja-0115"
+    },
+    {
+      "text": "。",
+      "start_seconds": 1007.88,
+      "end_seconds": 1010.16,
+      "id": "hOCiiFaMGv4-display-0381",
+      "segment_id": "hOCiiFaMGv4-ja-0115"
+    },
+    {
+      "text": "で、このテレックス札幌ユース2025",
+      "start_seconds": 1010.16,
+      "end_seconds": 1012.92,
+      "id": "hOCiiFaMGv4-display-0382",
+      "segment_id": "hOCiiFaMGv4-ja-0116"
+    },
+    {
+      "text": "ってテーマが繋がりなんですよね。ただ",
+      "start_seconds": 1012.92,
+      "end_seconds": 1016.04,
+      "id": "hOCiiFaMGv4-display-0383",
+      "segment_id": "hOCiiFaMGv4-ja-0116"
+    },
+    {
+      "text": "繋がりって本当に言葉と違って非常に",
+      "start_seconds": 1016.04,
+      "end_seconds": 1018.72,
+      "id": "hOCiiFaMGv4-display-0384",
+      "segment_id": "hOCiiFaMGv4-ja-0116"
+    },
+    {
+      "text": "難しい人筋なではいかないものです。でも",
+      "start_seconds": 1018.72,
+      "end_seconds": 1021.88,
+      "id": "hOCiiFaMGv4-display-0385",
+      "segment_id": "hOCiiFaMGv4-ja-0116"
+    },
+    {
+      "text": "やっぱり改めて相手の気持ちになってみる",
+      "start_seconds": 1021.88,
+      "end_seconds": 1023.959,
+      "id": "hOCiiFaMGv4-display-0386",
+      "segment_id": "hOCiiFaMGv4-ja-0117"
+    },
+    {
+      "text": "ということ。そこからこの繋がりって本当",
+      "start_seconds": 1023.959,
+      "end_seconds": 1026.959,
+      "id": "hOCiiFaMGv4-display-0387",
+      "segment_id": "hOCiiFaMGv4-ja-0117"
+    },
+    {
+      "text": "にできていくと思ってるので、これを",
+      "start_seconds": 1026.959,
+      "end_seconds": 1029.319,
+      "id": "hOCiiFaMGv4-display-0388",
+      "segment_id": "hOCiiFaMGv4-ja-0117"
+    },
+    {
+      "text": "もっともっと僕は世の中に広げていきたい",
+      "start_seconds": 1029.319,
+      "end_seconds": 1031.76,
+      "id": "hOCiiFaMGv4-display-0389",
+      "segment_id": "hOCiiFaMGv4-ja-0117"
+    },
+    {
+      "text": "なと思ってます。そして繋がりということ",
+      "start_seconds": 1031.76,
+      "end_seconds": 1034.839,
+      "id": "hOCiiFaMGv4-display-0390",
+      "segment_id": "hOCiiFaMGv4-ja-0118"
+    },
+    {
+      "text": "を続いてですね、自分自身が何かなくして",
+      "start_seconds": 1034.839,
+      "end_seconds": 1037.72,
+      "id": "hOCiiFaMGv4-display-0391",
+      "segment_id": "hOCiiFaMGv4-ja-0118"
+    },
+    {
+      "text": "たものをもう1度自分の中で取り戻す、",
+      "start_seconds": 1037.72,
+      "end_seconds": 1040.48,
+      "id": "hOCiiFaMGv4-display-0392",
+      "segment_id": "hOCiiFaMGv4-ja-0118"
+    },
+    {
+      "text": "自分自身と繋がるみたいなことも改めて",
+      "start_seconds": 1040.48,
+      "end_seconds": 1043.0,
+      "id": "hOCiiFaMGv4-display-0393",
+      "segment_id": "hOCiiFaMGv4-ja-0118"
+    },
+    {
+      "text": "やっていきたいなという風に思っています",
+      "start_seconds": 1043.0,
+      "end_seconds": 1044.72,
+      "id": "hOCiiFaMGv4-display-0394",
+      "segment_id": "hOCiiFaMGv4-ja-0119"
+    },
+    {
+      "text": "。ご成聴ありがとうございました。",
+      "start_seconds": 1044.72,
+      "end_seconds": 1050.4,
+      "id": "hOCiiFaMGv4-display-0395",
+      "segment_id": "hOCiiFaMGv4-ja-0119"
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 1051.287,
+      "end_seconds": 1053.307,
+      "id": "hOCiiFaMGv4-display-0396",
+      "segment_id": "hOCiiFaMGv4-ja-0120"
+    }
+  ]
+}

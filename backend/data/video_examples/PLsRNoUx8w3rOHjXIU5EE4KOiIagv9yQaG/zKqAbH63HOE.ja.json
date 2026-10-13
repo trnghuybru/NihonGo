@@ -1,0 +1,1163 @@
+{
+  "schema_version": 1,
+  "video": {
+    "youtube_id": "zKqAbH63HOE",
+    "title": "In today's world, is anime culture worth developing? | Ziye Zhang | TEDxWXFLS Youth",
+    "channel": "TEDx Talks",
+    "duration_seconds": 339
+  },
+  "caption_track": {
+    "language": "ja",
+    "kind": "asr",
+    "source": "youtube_automatic"
+  },
+  "source_playlist": "https://www.youtube.com/playlist?list=PLsRNoUx8w3rOHjXIU5EE4KOiIagv9yQaG",
+  "fetched_at": "2026-10-13T13:24:19.797432+00:00",
+  "segment_count": 36,
+  "segments": [
+    {
+      "text": "皆さん、こんにちは。長王と申します。",
+      "start_seconds": 9.719,
+      "end_seconds": 15.48,
+      "id": "zKqAbH63HOE-ja-0001",
+      "sequence": 1
+    },
+    {
+      "text": "私たちはよく大人からアニメは子供が見るものだと言われたり、アニメを見るのは時の無駄だと思われたりすることがあります",
+      "start_seconds": 21.039,
+      "end_seconds": 31.88,
+      "id": "zKqAbH63HOE-ja-0002",
+      "sequence": 2
+    },
+    {
+      "text": "。しかしそれは本当でしょうか?",
+      "start_seconds": 31.88,
+      "end_seconds": 36.64,
+      "id": "zKqAbH63HOE-ja-0003",
+      "sequence": 3
+    },
+    {
+      "text": "アニメはもう子供だけのものではなく、今の時代に深く寝付いた文化です。でも今",
+      "start_seconds": 36.64,
+      "end_seconds": 46.32,
+      "id": "zKqAbH63HOE-ja-0004",
+      "sequence": 4
+    },
+    {
+      "text": "アニメは今の世界にアニメは発展させる価値があるのでしょうか?",
+      "start_seconds": 46.32,
+      "end_seconds": 55.879,
+      "id": "zKqAbH63HOE-ja-0005",
+      "sequence": 5
+    },
+    {
+      "text": "その問題について私は個人と社会の面から考えてみたいと思います。",
+      "start_seconds": 55.879,
+      "end_seconds": 64.799,
+      "id": "zKqAbH63HOE-ja-0006",
+      "sequence": 6
+    },
+    {
+      "text": "まず個人の面から見るとアニメは多くの人にとって心の支えで成長の助けになっています。",
+      "start_seconds": 64.799,
+      "end_seconds": 74.84,
+      "id": "zKqAbH63HOE-ja-0007",
+      "sequence": 7
+    },
+    {
+      "text": "今の社会は忙しく私たちは勉強や仕事のストレスを感じています。でもアニメはまるで別の世界への扉",
+      "start_seconds": 74.84,
+      "end_seconds": 86.6,
+      "id": "zKqAbH63HOE-ja-0008",
+      "sequence": 8
+    },
+    {
+      "text": "のように毎日の疲れを癒してくれます。",
+      "start_seconds": 86.6,
+      "end_seconds": 91.64,
+      "id": "zKqAbH63HOE-ja-0009",
+      "sequence": 9
+    },
+    {
+      "text": "夏目友人長の優しい物語に癒されたり、進撃の巨人のキャラクターの生き方を感動したりすると疲れた心がだんだん軽くなり",
+      "start_seconds": 91.64,
+      "end_seconds": 103.24,
+      "id": "zKqAbH63HOE-ja-0010",
+      "sequence": 10
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 103.24,
+      "end_seconds": 105.92,
+      "id": "zKqAbH63HOE-ja-0011",
+      "sequence": 11
+    },
+    {
+      "text": "さらに重要なのはアニメが私たちに大切なものを教えてくれる点です。先頭ジェヒロ",
+      "start_seconds": 106.159,
+      "end_seconds": 114.28,
+      "id": "zKqAbH63HOE-ja-0012",
+      "sequence": 12
+    },
+    {
+      "text": "の神隠しは本当の自分を忘れない大切さを教え風が強く吹いているのは強さとは勝つこと",
+      "start_seconds": 114.28,
+      "end_seconds": 125.36,
+      "id": "zKqAbH63HOE-ja-0013",
+      "sequence": 13
+    },
+    {
+      "text": "だけではなく自分の弱さを認めて前に進む勇気だと伝えています。",
+      "start_seconds": 125.36,
+      "end_seconds": 133.8,
+      "id": "zKqAbH63HOE-ja-0014",
+      "sequence": 14
+    },
+    {
+      "text": "そういったメッセージは私たちの生活上での力になります。",
+      "start_seconds": 133.8,
+      "end_seconds": 141.44,
+      "id": "zKqAbH63HOE-ja-0015",
+      "sequence": 15
+    },
+    {
+      "text": "次に社会全体を見るとアニメ文化は文化の交流と経済の発展には役立ちます。",
+      "start_seconds": 144.04,
+      "end_seconds": 154.879,
+      "id": "zKqAbH63HOE-ja-0016",
+      "sequence": 16
+    },
+    {
+      "text": "アニメは国の文化や考え方を",
+      "start_seconds": 154.879,
+      "end_seconds": 160.76,
+      "id": "zKqAbH63HOE-ja-0017",
+      "sequence": 17
+    },
+    {
+      "text": "考え方を世界に伝えることができます。",
+      "start_seconds": 163.0,
+      "end_seconds": 170.64,
+      "id": "zKqAbH63HOE-ja-0018",
+      "sequence": 18
+    },
+    {
+      "text": "日本の文化はナルトや鬼滅の刃によって世界中に知られ、中国の物語は白蛇演技",
+      "start_seconds": 170.64,
+      "end_seconds": 179.92,
+      "id": "zKqAbH63HOE-ja-0019",
+      "sequence": 19
+    },
+    {
+      "text": "などの作品を通して海外にその魅力を伝えることができます。言葉が近うした文化交流は",
+      "start_seconds": 179.92,
+      "end_seconds": 191.84,
+      "id": "zKqAbH63HOE-ja-0020",
+      "sequence": 20
+    },
+    {
+      "text": "世界の人々の心を動かします。",
+      "start_seconds": 191.84,
+      "end_seconds": 197.68,
+      "id": "zKqAbH63HOE-ja-0021",
+      "sequence": 21
+    },
+    {
+      "text": "次に刑者の面から見るとああ、アニメは作品、アニメの価値は作品",
+      "start_seconds": 198.28,
+      "end_seconds": 209.56,
+      "id": "zKqAbH63HOE-ja-0022",
+      "sequence": 22
+    },
+    {
+      "text": "だけではありません。",
+      "start_seconds": 209.56,
+      "end_seconds": 213.72,
+      "id": "zKqAbH63HOE-ja-0023",
+      "sequence": 23
+    },
+    {
+      "text": "人気アニメのグッズの売上を伸ばし物を作る残業に役立ちます。",
+      "start_seconds": 217.72,
+      "end_seconds": 225.599,
+      "id": "zKqAbH63HOE-ja-0024",
+      "sequence": 24
+    },
+    {
+      "text": "また大きなイベントはたくさんのファンを集めるだけではありません。周りのホテルやレストラン、電車の利用も増やし、",
+      "start_seconds": 225.599,
+      "end_seconds": 236.72,
+      "id": "zKqAbH63HOE-ja-0025",
+      "sequence": 25
+    },
+    {
+      "text": "大きなビジネスになっています。",
+      "start_seconds": 236.72,
+      "end_seconds": 241.799,
+      "id": "zKqAbH63HOE-ja-0026",
+      "sequence": 26
+    },
+    {
+      "text": "もちろんアニメ文化の果てには問題点もあります。の人はアニメに夢中になり、",
+      "start_seconds": 244.12,
+      "end_seconds": 251.76,
+      "id": "zKqAbH63HOE-ja-0027",
+      "sequence": 27
+    },
+    {
+      "text": "現実と世界への区別ができなくなり、悪い影響を与える恐れもあります。また靴",
+      "start_seconds": 251.76,
+      "end_seconds": 263.56,
+      "id": "zKqAbH63HOE-ja-0028",
+      "sequence": 28
+    },
+    {
+      "text": "を買ったり、ネットでお金を払りすることでトラブルになることもあります。さらに小さい子供に",
+      "start_seconds": 263.56,
+      "end_seconds": 275.52,
+      "id": "zKqAbH63HOE-ja-0029",
+      "sequence": 29
+    },
+    {
+      "text": "とっては年齢制御のない作品にある暴力的な真などが悪い影響を与える恐れもあり",
+      "start_seconds": 275.52,
+      "end_seconds": 283.56,
+      "id": "zKqAbH63HOE-ja-0030",
+      "sequence": 30
+    },
+    {
+      "text": "ます。しかしこういったメッセージはアニメ文化を筆するのは良くないことです。",
+      "start_seconds": 283.56,
+      "end_seconds": 294.639,
+      "id": "zKqAbH63HOE-ja-0031",
+      "sequence": 31
+    },
+    {
+      "text": "アニメ文化は完璧ではありませんが、その魅力は欠点よりもずっと大きいです。それ",
+      "start_seconds": 295.56,
+      "end_seconds": 303.72,
+      "id": "zKqAbH63HOE-ja-0032",
+      "sequence": 32
+    },
+    {
+      "text": "は作った人の心をこもたり、",
+      "start_seconds": 303.72,
+      "end_seconds": 309.16,
+      "id": "zKqAbH63HOE-ja-0033",
+      "sequence": 33
+    },
+    {
+      "text": "もっと広い心でアニメ文化を受け入れ、良い方向へ発展していくように見守っていきましょう。",
+      "start_seconds": 314.759,
+      "end_seconds": 326.52,
+      "id": "zKqAbH63HOE-ja-0034",
+      "sequence": 34
+    },
+    {
+      "text": "ご成聴ありがとうございました。",
+      "start_seconds": 326.8,
+      "end_seconds": 331.433,
+      "id": "zKqAbH63HOE-ja-0035",
+      "sequence": 35
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 331.433,
+      "end_seconds": 333.453,
+      "id": "zKqAbH63HOE-ja-0036",
+      "sequence": 36
+    }
+  ],
+  "raw_captions": [
+    {
+      "text": "皆さん、こんにちは。長王と申します。",
+      "start_seconds": 9.719,
+      "end_seconds": 15.48
+    },
+    {
+      "text": "私たちはよく大人からアニメは子供が見る",
+      "start_seconds": 21.039,
+      "end_seconds": 28.64
+    },
+    {
+      "text": "ものだと言われたり、アニメを見るのは時",
+      "start_seconds": 25.08,
+      "end_seconds": 31.88
+    },
+    {
+      "text": "の無駄だと思われたりすることがあります",
+      "start_seconds": 28.64,
+      "end_seconds": 36.64
+    },
+    {
+      "text": "。しかしそれは本当でしょうか?",
+      "start_seconds": 31.88,
+      "end_seconds": 40.12
+    },
+    {
+      "text": "アニメはもう子供だけのものではなく、今",
+      "start_seconds": 36.64,
+      "end_seconds": 46.32
+    },
+    {
+      "text": "の時代に深く寝付いた文化です。でも今",
+      "start_seconds": 40.12,
+      "end_seconds": 49.519999999999996
+    },
+    {
+      "text": "アニメは",
+      "start_seconds": 46.32,
+      "end_seconds": 53.12
+    },
+    {
+      "text": "今の世界にアニメは発展させる価値がある",
+      "start_seconds": 49.52,
+      "end_seconds": 55.879000000000005
+    },
+    {
+      "text": "のでしょうか?",
+      "start_seconds": 53.12,
+      "end_seconds": 60.44
+    },
+    {
+      "text": "その問題について私は個人と社会の面から",
+      "start_seconds": 55.879,
+      "end_seconds": 64.79899999999999
+    },
+    {
+      "text": "考えてみたいと思います。",
+      "start_seconds": 60.44,
+      "end_seconds": 69.08
+    },
+    {
+      "text": "まず個人の面から見るとアニメは多くの人",
+      "start_seconds": 64.799,
+      "end_seconds": 73.36000000000001
+    },
+    {
+      "text": "にとって心の支えで成長の助けになってい",
+      "start_seconds": 69.08,
+      "end_seconds": 74.84
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 73.36,
+      "end_seconds": 77.799
+    },
+    {
+      "text": "今の社会は忙しく",
+      "start_seconds": 74.84,
+      "end_seconds": 81.759
+    },
+    {
+      "text": "私たちは勉強や仕事のストレスを感じてい",
+      "start_seconds": 77.799,
+      "end_seconds": 86.60000000000001
+    },
+    {
+      "text": "ます。でもアニメはまるで別の世界への扉",
+      "start_seconds": 81.759,
+      "end_seconds": 91.64
+    },
+    {
+      "text": "のように毎日の疲れを癒してくれます。",
+      "start_seconds": 86.6,
+      "end_seconds": 96.079
+    },
+    {
+      "text": "夏目友人長の優しい物語に癒されたり、",
+      "start_seconds": 91.64,
+      "end_seconds": 99.28
+    },
+    {
+      "text": "進撃の巨人のキャラクターの生き方を感動",
+      "start_seconds": 96.079,
+      "end_seconds": 103.24
+    },
+    {
+      "text": "したりすると疲れた心がだんだん軽くなり",
+      "start_seconds": 99.28,
+      "end_seconds": 105.92
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 103.24,
+      "end_seconds": 105.92
+    },
+    {
+      "text": "さらに重要なのはアニメが私たちに大切な",
+      "start_seconds": 106.159,
+      "end_seconds": 114.28
+    },
+    {
+      "text": "ものを教えてくれる点です。先頭ジェヒロ",
+      "start_seconds": 110.479,
+      "end_seconds": 118.96
+    },
+    {
+      "text": "の神隠しは本当の自分を忘れない大切さを",
+      "start_seconds": 114.28,
+      "end_seconds": 121.159
+    },
+    {
+      "text": "教え",
+      "start_seconds": 118.96,
+      "end_seconds": 125.36
+    },
+    {
+      "text": "風が強く吹いているのは強さとは勝つこと",
+      "start_seconds": 121.159,
+      "end_seconds": 130.119
+    },
+    {
+      "text": "だけではなく自分の弱さを認めて前に進む",
+      "start_seconds": 125.36,
+      "end_seconds": 133.8
+    },
+    {
+      "text": "勇気だと伝えています。",
+      "start_seconds": 130.119,
+      "end_seconds": 137.04
+    },
+    {
+      "text": "そういったメッセージは私たちの生活上で",
+      "start_seconds": 133.8,
+      "end_seconds": 141.44
+    },
+    {
+      "text": "の力になります。",
+      "start_seconds": 137.04,
+      "end_seconds": 141.44
+    },
+    {
+      "text": "次に社会全体を見るとアニメ文化は文化の",
+      "start_seconds": 144.04,
+      "end_seconds": 154.879
+    },
+    {
+      "text": "交流と経済の発展には役立ちます。",
+      "start_seconds": 149.12,
+      "end_seconds": 160.76
+    },
+    {
+      "text": "アニメは国の文化や考え方を",
+      "start_seconds": 154.879,
+      "end_seconds": 160.76
+    },
+    {
+      "text": "考え方を",
+      "start_seconds": 163.0,
+      "end_seconds": 166.72
+    },
+    {
+      "text": "世界に伝えることができます。",
+      "start_seconds": 166.8,
+      "end_seconds": 175.0
+    },
+    {
+      "text": "日本の文化はナルトや鬼滅の刃によって",
+      "start_seconds": 170.64,
+      "end_seconds": 179.92
+    },
+    {
+      "text": "世界中に知られ、中国の物語は白蛇演技",
+      "start_seconds": 175.0,
+      "end_seconds": 183.68
+    },
+    {
+      "text": "などの作品を通して海外にその魅力を",
+      "start_seconds": 179.92,
+      "end_seconds": 188.159
+    },
+    {
+      "text": "伝えることができます。言葉が近うした",
+      "start_seconds": 183.68,
+      "end_seconds": 191.84
+    },
+    {
+      "text": "文化交流は",
+      "start_seconds": 188.159,
+      "end_seconds": 197.68
+    },
+    {
+      "text": "世界の人々の心を動かします。",
+      "start_seconds": 191.84,
+      "end_seconds": 197.68
+    },
+    {
+      "text": "次に",
+      "start_seconds": 198.28,
+      "end_seconds": 204.879
+    },
+    {
+      "text": "刑者の面から見ると",
+      "start_seconds": 200.239,
+      "end_seconds": 209.56
+    },
+    {
+      "text": "ああ、アニメは作品、アニメの価値は作品",
+      "start_seconds": 204.879,
+      "end_seconds": 213.72
+    },
+    {
+      "text": "だけではありません。",
+      "start_seconds": 209.56,
+      "end_seconds": 213.72
+    },
+    {
+      "text": "人気アニメのグッズの売上を伸ばし物を",
+      "start_seconds": 217.72,
+      "end_seconds": 225.599
+    },
+    {
+      "text": "作る残業に役立ちます。",
+      "start_seconds": 221.84,
+      "end_seconds": 229.12
+    },
+    {
+      "text": "また大きなイベントはたくさんのファンを",
+      "start_seconds": 225.599,
+      "end_seconds": 233.11999999999998
+    },
+    {
+      "text": "集めるだけではありません。周りのホテル",
+      "start_seconds": 229.12,
+      "end_seconds": 236.72
+    },
+    {
+      "text": "やレストラン、電車の利用も増やし、",
+      "start_seconds": 233.12,
+      "end_seconds": 241.799
+    },
+    {
+      "text": "大きなビジネスになっています。",
+      "start_seconds": 236.72,
+      "end_seconds": 241.799
+    },
+    {
+      "text": "もちろんアニメ文化の果てには問題点も",
+      "start_seconds": 244.12,
+      "end_seconds": 251.76
+    },
+    {
+      "text": "あります。の人はアニメに夢中になり、",
+      "start_seconds": 247.48,
+      "end_seconds": 257.639
+    },
+    {
+      "text": "現実と世界への区別ができなくなり、",
+      "start_seconds": 251.76,
+      "end_seconds": 263.56
+    },
+    {
+      "text": "悪い影響を与える恐れもあります。また靴",
+      "start_seconds": 257.639,
+      "end_seconds": 266.919
+    },
+    {
+      "text": "を買ったり、ネットでお金を払りすること",
+      "start_seconds": 263.56,
+      "end_seconds": 268.639
+    },
+    {
+      "text": "で",
+      "start_seconds": 266.919,
+      "end_seconds": 270.96
+    },
+    {
+      "text": "トラブルに",
+      "start_seconds": 268.639,
+      "end_seconds": 275.52
+    },
+    {
+      "text": "なることもあります。さらに小さい子供に",
+      "start_seconds": 270.96,
+      "end_seconds": 279.75899999999996
+    },
+    {
+      "text": "とっては年齢制御のない作品にある暴力的",
+      "start_seconds": 275.52,
+      "end_seconds": 283.56
+    },
+    {
+      "text": "な真などが悪い影響を与える恐れもあり",
+      "start_seconds": 279.759,
+      "end_seconds": 288.199
+    },
+    {
+      "text": "ます。しかしこういったメッセージは",
+      "start_seconds": 283.56,
+      "end_seconds": 291.639
+    },
+    {
+      "text": "アニメ文化を筆するのは良くないことです",
+      "start_seconds": 288.199,
+      "end_seconds": 294.639
+    },
+    {
+      "text": "。",
+      "start_seconds": 291.639,
+      "end_seconds": 294.639
+    },
+    {
+      "text": "アニメ文化は完璧ではありませんが、その",
+      "start_seconds": 295.56,
+      "end_seconds": 303.72
+    },
+    {
+      "text": "魅力は欠点よりもずっと大きいです。それ",
+      "start_seconds": 299.28,
+      "end_seconds": 309.15999999999997
+    },
+    {
+      "text": "は作った人の心をこもたり、",
+      "start_seconds": 303.72,
+      "end_seconds": 309.16
+    },
+    {
+      "text": "もっと広い心でアニメ文化を受け入れ、",
+      "start_seconds": 314.759,
+      "end_seconds": 322.91900000000004
+    },
+    {
+      "text": "良い方向へ発展していくように見守って",
+      "start_seconds": 318.68,
+      "end_seconds": 326.52
+    },
+    {
+      "text": "いきましょう。",
+      "start_seconds": 322.919,
+      "end_seconds": 326.52
+    },
+    {
+      "text": "ご成聴ありがとうございました。",
+      "start_seconds": 326.8,
+      "end_seconds": 333.45300000000003
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 331.433,
+      "end_seconds": 333.453
+    }
+  ],
+  "display_captions": [
+    {
+      "text": "皆さん、こんにちは。長王と申します。",
+      "start_seconds": 9.719,
+      "end_seconds": 15.48,
+      "id": "zKqAbH63HOE-display-0001",
+      "segment_id": "zKqAbH63HOE-ja-0001"
+    },
+    {
+      "text": "私たちはよく大人からアニメは子供が見る",
+      "start_seconds": 21.039,
+      "end_seconds": 25.08,
+      "id": "zKqAbH63HOE-display-0002",
+      "segment_id": "zKqAbH63HOE-ja-0002"
+    },
+    {
+      "text": "ものだと言われたり、アニメを見るのは時",
+      "start_seconds": 25.08,
+      "end_seconds": 28.64,
+      "id": "zKqAbH63HOE-display-0003",
+      "segment_id": "zKqAbH63HOE-ja-0002"
+    },
+    {
+      "text": "の無駄だと思われたりすることがあります",
+      "start_seconds": 28.64,
+      "end_seconds": 31.88,
+      "id": "zKqAbH63HOE-display-0004",
+      "segment_id": "zKqAbH63HOE-ja-0002"
+    },
+    {
+      "text": "。しかしそれは本当でしょうか?",
+      "start_seconds": 31.88,
+      "end_seconds": 36.64,
+      "id": "zKqAbH63HOE-display-0005",
+      "segment_id": "zKqAbH63HOE-ja-0003"
+    },
+    {
+      "text": "アニメはもう子供だけのものではなく、今",
+      "start_seconds": 36.64,
+      "end_seconds": 40.12,
+      "id": "zKqAbH63HOE-display-0006",
+      "segment_id": "zKqAbH63HOE-ja-0004"
+    },
+    {
+      "text": "の時代に深く寝付いた文化です。でも今",
+      "start_seconds": 40.12,
+      "end_seconds": 46.32,
+      "id": "zKqAbH63HOE-display-0007",
+      "segment_id": "zKqAbH63HOE-ja-0004"
+    },
+    {
+      "text": "アニメは",
+      "start_seconds": 46.32,
+      "end_seconds": 49.52,
+      "id": "zKqAbH63HOE-display-0008",
+      "segment_id": "zKqAbH63HOE-ja-0005"
+    },
+    {
+      "text": "今の世界にアニメは発展させる価値がある",
+      "start_seconds": 49.52,
+      "end_seconds": 53.12,
+      "id": "zKqAbH63HOE-display-0009",
+      "segment_id": "zKqAbH63HOE-ja-0005"
+    },
+    {
+      "text": "のでしょうか?",
+      "start_seconds": 53.12,
+      "end_seconds": 55.879,
+      "id": "zKqAbH63HOE-display-0010",
+      "segment_id": "zKqAbH63HOE-ja-0005"
+    },
+    {
+      "text": "その問題について私は個人と社会の面から",
+      "start_seconds": 55.879,
+      "end_seconds": 60.44,
+      "id": "zKqAbH63HOE-display-0011",
+      "segment_id": "zKqAbH63HOE-ja-0006"
+    },
+    {
+      "text": "考えてみたいと思います。",
+      "start_seconds": 60.44,
+      "end_seconds": 64.799,
+      "id": "zKqAbH63HOE-display-0012",
+      "segment_id": "zKqAbH63HOE-ja-0006"
+    },
+    {
+      "text": "まず個人の面から見るとアニメは多くの人",
+      "start_seconds": 64.799,
+      "end_seconds": 69.08,
+      "id": "zKqAbH63HOE-display-0013",
+      "segment_id": "zKqAbH63HOE-ja-0007"
+    },
+    {
+      "text": "にとって心の支えで成長の助けになってい",
+      "start_seconds": 69.08,
+      "end_seconds": 73.36,
+      "id": "zKqAbH63HOE-display-0014",
+      "segment_id": "zKqAbH63HOE-ja-0007"
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 73.36,
+      "end_seconds": 74.84,
+      "id": "zKqAbH63HOE-display-0015",
+      "segment_id": "zKqAbH63HOE-ja-0007"
+    },
+    {
+      "text": "今の社会は忙しく",
+      "start_seconds": 74.84,
+      "end_seconds": 77.799,
+      "id": "zKqAbH63HOE-display-0016",
+      "segment_id": "zKqAbH63HOE-ja-0008"
+    },
+    {
+      "text": "私たちは勉強や仕事のストレスを感じてい",
+      "start_seconds": 77.799,
+      "end_seconds": 81.759,
+      "id": "zKqAbH63HOE-display-0017",
+      "segment_id": "zKqAbH63HOE-ja-0008"
+    },
+    {
+      "text": "ます。でもアニメはまるで別の世界への扉",
+      "start_seconds": 81.759,
+      "end_seconds": 86.6,
+      "id": "zKqAbH63HOE-display-0018",
+      "segment_id": "zKqAbH63HOE-ja-0008"
+    },
+    {
+      "text": "のように毎日の疲れを癒してくれます。",
+      "start_seconds": 86.6,
+      "end_seconds": 91.64,
+      "id": "zKqAbH63HOE-display-0019",
+      "segment_id": "zKqAbH63HOE-ja-0009"
+    },
+    {
+      "text": "夏目友人長の優しい物語に癒されたり、",
+      "start_seconds": 91.64,
+      "end_seconds": 96.079,
+      "id": "zKqAbH63HOE-display-0020",
+      "segment_id": "zKqAbH63HOE-ja-0010"
+    },
+    {
+      "text": "進撃の巨人のキャラクターの生き方を感動",
+      "start_seconds": 96.079,
+      "end_seconds": 99.28,
+      "id": "zKqAbH63HOE-display-0021",
+      "segment_id": "zKqAbH63HOE-ja-0010"
+    },
+    {
+      "text": "したりすると疲れた心がだんだん軽くなり",
+      "start_seconds": 99.28,
+      "end_seconds": 103.24,
+      "id": "zKqAbH63HOE-display-0022",
+      "segment_id": "zKqAbH63HOE-ja-0010"
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 103.24,
+      "end_seconds": 105.92,
+      "id": "zKqAbH63HOE-display-0023",
+      "segment_id": "zKqAbH63HOE-ja-0011"
+    },
+    {
+      "text": "さらに重要なのはアニメが私たちに大切な",
+      "start_seconds": 106.159,
+      "end_seconds": 110.479,
+      "id": "zKqAbH63HOE-display-0024",
+      "segment_id": "zKqAbH63HOE-ja-0012"
+    },
+    {
+      "text": "ものを教えてくれる点です。先頭ジェヒロ",
+      "start_seconds": 110.479,
+      "end_seconds": 114.28,
+      "id": "zKqAbH63HOE-display-0025",
+      "segment_id": "zKqAbH63HOE-ja-0012"
+    },
+    {
+      "text": "の神隠しは本当の自分を忘れない大切さを",
+      "start_seconds": 114.28,
+      "end_seconds": 118.96,
+      "id": "zKqAbH63HOE-display-0026",
+      "segment_id": "zKqAbH63HOE-ja-0013"
+    },
+    {
+      "text": "教え",
+      "start_seconds": 118.96,
+      "end_seconds": 121.159,
+      "id": "zKqAbH63HOE-display-0027",
+      "segment_id": "zKqAbH63HOE-ja-0013"
+    },
+    {
+      "text": "風が強く吹いているのは強さとは勝つこと",
+      "start_seconds": 121.159,
+      "end_seconds": 125.36,
+      "id": "zKqAbH63HOE-display-0028",
+      "segment_id": "zKqAbH63HOE-ja-0013"
+    },
+    {
+      "text": "だけではなく自分の弱さを認めて前に進む",
+      "start_seconds": 125.36,
+      "end_seconds": 130.119,
+      "id": "zKqAbH63HOE-display-0029",
+      "segment_id": "zKqAbH63HOE-ja-0014"
+    },
+    {
+      "text": "勇気だと伝えています。",
+      "start_seconds": 130.119,
+      "end_seconds": 133.8,
+      "id": "zKqAbH63HOE-display-0030",
+      "segment_id": "zKqAbH63HOE-ja-0014"
+    },
+    {
+      "text": "そういったメッセージは私たちの生活上で",
+      "start_seconds": 133.8,
+      "end_seconds": 137.04,
+      "id": "zKqAbH63HOE-display-0031",
+      "segment_id": "zKqAbH63HOE-ja-0015"
+    },
+    {
+      "text": "の力になります。",
+      "start_seconds": 137.04,
+      "end_seconds": 141.44,
+      "id": "zKqAbH63HOE-display-0032",
+      "segment_id": "zKqAbH63HOE-ja-0015"
+    },
+    {
+      "text": "次に社会全体を見るとアニメ文化は文化の",
+      "start_seconds": 144.04,
+      "end_seconds": 149.12,
+      "id": "zKqAbH63HOE-display-0033",
+      "segment_id": "zKqAbH63HOE-ja-0016"
+    },
+    {
+      "text": "交流と経済の発展には役立ちます。",
+      "start_seconds": 149.12,
+      "end_seconds": 154.879,
+      "id": "zKqAbH63HOE-display-0034",
+      "segment_id": "zKqAbH63HOE-ja-0016"
+    },
+    {
+      "text": "アニメは国の文化や考え方を",
+      "start_seconds": 154.879,
+      "end_seconds": 160.76,
+      "id": "zKqAbH63HOE-display-0035",
+      "segment_id": "zKqAbH63HOE-ja-0017"
+    },
+    {
+      "text": "考え方を",
+      "start_seconds": 163.0,
+      "end_seconds": 166.72,
+      "id": "zKqAbH63HOE-display-0036",
+      "segment_id": "zKqAbH63HOE-ja-0018"
+    },
+    {
+      "text": "世界に伝えることができます。",
+      "start_seconds": 166.8,
+      "end_seconds": 170.64,
+      "id": "zKqAbH63HOE-display-0037",
+      "segment_id": "zKqAbH63HOE-ja-0018"
+    },
+    {
+      "text": "日本の文化はナルトや鬼滅の刃によって",
+      "start_seconds": 170.64,
+      "end_seconds": 175.0,
+      "id": "zKqAbH63HOE-display-0038",
+      "segment_id": "zKqAbH63HOE-ja-0019"
+    },
+    {
+      "text": "世界中に知られ、中国の物語は白蛇演技",
+      "start_seconds": 175.0,
+      "end_seconds": 179.92,
+      "id": "zKqAbH63HOE-display-0039",
+      "segment_id": "zKqAbH63HOE-ja-0019"
+    },
+    {
+      "text": "などの作品を通して海外にその魅力を",
+      "start_seconds": 179.92,
+      "end_seconds": 183.68,
+      "id": "zKqAbH63HOE-display-0040",
+      "segment_id": "zKqAbH63HOE-ja-0020"
+    },
+    {
+      "text": "伝えることができます。言葉が近うした",
+      "start_seconds": 183.68,
+      "end_seconds": 188.159,
+      "id": "zKqAbH63HOE-display-0041",
+      "segment_id": "zKqAbH63HOE-ja-0020"
+    },
+    {
+      "text": "文化交流は",
+      "start_seconds": 188.159,
+      "end_seconds": 191.84,
+      "id": "zKqAbH63HOE-display-0042",
+      "segment_id": "zKqAbH63HOE-ja-0020"
+    },
+    {
+      "text": "世界の人々の心を動かします。",
+      "start_seconds": 191.84,
+      "end_seconds": 197.68,
+      "id": "zKqAbH63HOE-display-0043",
+      "segment_id": "zKqAbH63HOE-ja-0021"
+    },
+    {
+      "text": "次に",
+      "start_seconds": 198.28,
+      "end_seconds": 200.239,
+      "id": "zKqAbH63HOE-display-0044",
+      "segment_id": "zKqAbH63HOE-ja-0022"
+    },
+    {
+      "text": "刑者の面から見ると",
+      "start_seconds": 200.239,
+      "end_seconds": 204.879,
+      "id": "zKqAbH63HOE-display-0045",
+      "segment_id": "zKqAbH63HOE-ja-0022"
+    },
+    {
+      "text": "ああ、アニメは作品、アニメの価値は作品",
+      "start_seconds": 204.879,
+      "end_seconds": 209.56,
+      "id": "zKqAbH63HOE-display-0046",
+      "segment_id": "zKqAbH63HOE-ja-0022"
+    },
+    {
+      "text": "だけではありません。",
+      "start_seconds": 209.56,
+      "end_seconds": 213.72,
+      "id": "zKqAbH63HOE-display-0047",
+      "segment_id": "zKqAbH63HOE-ja-0023"
+    },
+    {
+      "text": "人気アニメのグッズの売上を伸ばし物を",
+      "start_seconds": 217.72,
+      "end_seconds": 221.84,
+      "id": "zKqAbH63HOE-display-0048",
+      "segment_id": "zKqAbH63HOE-ja-0024"
+    },
+    {
+      "text": "作る残業に役立ちます。",
+      "start_seconds": 221.84,
+      "end_seconds": 225.599,
+      "id": "zKqAbH63HOE-display-0049",
+      "segment_id": "zKqAbH63HOE-ja-0024"
+    },
+    {
+      "text": "また大きなイベントはたくさんのファンを",
+      "start_seconds": 225.599,
+      "end_seconds": 229.12,
+      "id": "zKqAbH63HOE-display-0050",
+      "segment_id": "zKqAbH63HOE-ja-0025"
+    },
+    {
+      "text": "集めるだけではありません。周りのホテル",
+      "start_seconds": 229.12,
+      "end_seconds": 233.12,
+      "id": "zKqAbH63HOE-display-0051",
+      "segment_id": "zKqAbH63HOE-ja-0025"
+    },
+    {
+      "text": "やレストラン、電車の利用も増やし、",
+      "start_seconds": 233.12,
+      "end_seconds": 236.72,
+      "id": "zKqAbH63HOE-display-0052",
+      "segment_id": "zKqAbH63HOE-ja-0025"
+    },
+    {
+      "text": "大きなビジネスになっています。",
+      "start_seconds": 236.72,
+      "end_seconds": 241.799,
+      "id": "zKqAbH63HOE-display-0053",
+      "segment_id": "zKqAbH63HOE-ja-0026"
+    },
+    {
+      "text": "もちろんアニメ文化の果てには問題点も",
+      "start_seconds": 244.12,
+      "end_seconds": 247.48,
+      "id": "zKqAbH63HOE-display-0054",
+      "segment_id": "zKqAbH63HOE-ja-0027"
+    },
+    {
+      "text": "あります。の人はアニメに夢中になり、",
+      "start_seconds": 247.48,
+      "end_seconds": 251.76,
+      "id": "zKqAbH63HOE-display-0055",
+      "segment_id": "zKqAbH63HOE-ja-0027"
+    },
+    {
+      "text": "現実と世界への区別ができなくなり、",
+      "start_seconds": 251.76,
+      "end_seconds": 257.639,
+      "id": "zKqAbH63HOE-display-0056",
+      "segment_id": "zKqAbH63HOE-ja-0028"
+    },
+    {
+      "text": "悪い影響を与える恐れもあります。また靴",
+      "start_seconds": 257.639,
+      "end_seconds": 263.56,
+      "id": "zKqAbH63HOE-display-0057",
+      "segment_id": "zKqAbH63HOE-ja-0028"
+    },
+    {
+      "text": "を買ったり、ネットでお金を払りすること",
+      "start_seconds": 263.56,
+      "end_seconds": 266.919,
+      "id": "zKqAbH63HOE-display-0058",
+      "segment_id": "zKqAbH63HOE-ja-0029"
+    },
+    {
+      "text": "で",
+      "start_seconds": 266.919,
+      "end_seconds": 268.639,
+      "id": "zKqAbH63HOE-display-0059",
+      "segment_id": "zKqAbH63HOE-ja-0029"
+    },
+    {
+      "text": "トラブルに",
+      "start_seconds": 268.639,
+      "end_seconds": 270.96,
+      "id": "zKqAbH63HOE-display-0060",
+      "segment_id": "zKqAbH63HOE-ja-0029"
+    },
+    {
+      "text": "なることもあります。さらに小さい子供に",
+      "start_seconds": 270.96,
+      "end_seconds": 275.52,
+      "id": "zKqAbH63HOE-display-0061",
+      "segment_id": "zKqAbH63HOE-ja-0029"
+    },
+    {
+      "text": "とっては年齢制御のない作品にある暴力的",
+      "start_seconds": 275.52,
+      "end_seconds": 279.759,
+      "id": "zKqAbH63HOE-display-0062",
+      "segment_id": "zKqAbH63HOE-ja-0030"
+    },
+    {
+      "text": "な真などが悪い影響を与える恐れもあり",
+      "start_seconds": 279.759,
+      "end_seconds": 283.56,
+      "id": "zKqAbH63HOE-display-0063",
+      "segment_id": "zKqAbH63HOE-ja-0030"
+    },
+    {
+      "text": "ます。しかしこういったメッセージは",
+      "start_seconds": 283.56,
+      "end_seconds": 288.199,
+      "id": "zKqAbH63HOE-display-0064",
+      "segment_id": "zKqAbH63HOE-ja-0031"
+    },
+    {
+      "text": "アニメ文化を筆するのは良くないことです",
+      "start_seconds": 288.199,
+      "end_seconds": 291.639,
+      "id": "zKqAbH63HOE-display-0065",
+      "segment_id": "zKqAbH63HOE-ja-0031"
+    },
+    {
+      "text": "。",
+      "start_seconds": 291.639,
+      "end_seconds": 294.639,
+      "id": "zKqAbH63HOE-display-0066",
+      "segment_id": "zKqAbH63HOE-ja-0031"
+    },
+    {
+      "text": "アニメ文化は完璧ではありませんが、その",
+      "start_seconds": 295.56,
+      "end_seconds": 299.28,
+      "id": "zKqAbH63HOE-display-0067",
+      "segment_id": "zKqAbH63HOE-ja-0032"
+    },
+    {
+      "text": "魅力は欠点よりもずっと大きいです。それ",
+      "start_seconds": 299.28,
+      "end_seconds": 303.72,
+      "id": "zKqAbH63HOE-display-0068",
+      "segment_id": "zKqAbH63HOE-ja-0032"
+    },
+    {
+      "text": "は作った人の心をこもたり、",
+      "start_seconds": 303.72,
+      "end_seconds": 309.16,
+      "id": "zKqAbH63HOE-display-0069",
+      "segment_id": "zKqAbH63HOE-ja-0033"
+    },
+    {
+      "text": "もっと広い心でアニメ文化を受け入れ、",
+      "start_seconds": 314.759,
+      "end_seconds": 318.68,
+      "id": "zKqAbH63HOE-display-0070",
+      "segment_id": "zKqAbH63HOE-ja-0034"
+    },
+    {
+      "text": "良い方向へ発展していくように見守って",
+      "start_seconds": 318.68,
+      "end_seconds": 322.919,
+      "id": "zKqAbH63HOE-display-0071",
+      "segment_id": "zKqAbH63HOE-ja-0034"
+    },
+    {
+      "text": "いきましょう。",
+      "start_seconds": 322.919,
+      "end_seconds": 326.52,
+      "id": "zKqAbH63HOE-display-0072",
+      "segment_id": "zKqAbH63HOE-ja-0034"
+    },
+    {
+      "text": "ご成聴ありがとうございました。",
+      "start_seconds": 326.8,
+      "end_seconds": 331.433,
+      "id": "zKqAbH63HOE-display-0073",
+      "segment_id": "zKqAbH63HOE-ja-0035"
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 331.433,
+      "end_seconds": 333.453,
+      "id": "zKqAbH63HOE-display-0074",
+      "segment_id": "zKqAbH63HOE-ja-0036"
+    }
+  ]
+}

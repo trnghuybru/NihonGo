@@ -1,6 +1,6 @@
 import React from 'react';
 import Renderer, { act } from 'react-test-renderer';
-import { FlatList, Text, TextInput } from 'react-native';
+import { AppState, FlatList, Text, TextInput } from 'react-native';
 import { AuthButton } from '../src/components/AuthForm';
 import { ShadowingScreen } from '../src/screens/ShadowingScreen';
 import { VideoExamplePlayer } from '../src/components/VideoExamplePlayer';
@@ -15,6 +15,9 @@ jest.mock('../src/services/shadowingService', () => ({
     submit: jest.fn(),
     lesson: jest.fn(),
     retry: jest.fn(),
+    translation: jest.fn(),
+    requestTranslation: jest.fn(),
+    questions: jest.fn(),
   },
 }));
 const job: ShadowingJob = {
@@ -57,10 +60,38 @@ beforeEach(() => {
     ],
   });
   jest.mocked(shadowingService.submit).mockResolvedValue({ job });
+  jest.mocked(shadowingService.questions).mockResolvedValue({
+    questions: [
+      {
+        id: 'q1',
+        question: '話している人は何語を使っていますか。',
+        choices: ['日本語', 'ベトナム語', '英語', 'フランス語'],
+        correct_index: 0,
+        explanation: 'Người nói giới thiệu đây là tiếng Nhật.',
+        trigger_seconds: 3,
+        evidence_segment_ids: ['one'],
+      },
+      {
+        id: 'q2',
+        question: 'その後、話している人は何をしますか。',
+        choices: [
+          '終わります',
+          '次の文を言います',
+          '歌います',
+          '数字を読みます',
+        ],
+        correct_index: 1,
+        explanation: 'Người nói chuyển sang câu tiếp theo.',
+        trigger_seconds: 6,
+        evidence_segment_ids: ['two'],
+      },
+    ],
+  });
 });
 afterEach(async () => {
   await act(async () => tree?.unmount());
   jest.useRealTimers();
+  jest.restoreAllMocks();
 });
 async function render() {
   await act(async () => {
@@ -103,6 +134,17 @@ test('opens a ready lesson, controls caption visibility speed and looping, and r
   expect(tree.root.findByType(VideoExamplePlayer).props.example.id).toBe('one');
   await press('Ẩn phụ đề');
   expect(tree.root.findByType(VideoExamplePlayer).props.hideCaption).toBe(true);
+  expect(
+    tree.root.findAllByProps({ testID: 'shadowing-current-caption' }),
+  ).toHaveLength(0);
+  expect(visibleText()).toContain('日本語です。');
+  await press('Hiện phụ đề');
+  expect(
+    tree.root.findByProps({ testID: 'shadowing-current-caption' }),
+  ).toBeDefined();
+  expect(tree.root.findByType(VideoExamplePlayer).props.hideCaption).toBe(
+    false,
+  );
   await press('Tuỳ chọn shadowing');
   await press('Tốc độ 1x');
   await press('Lặp đoạn');
@@ -117,7 +159,38 @@ test('opens a ready lesson, controls caption visibility speed and looping, and r
   expect(tree.root.findAllByType(VideoExamplePlayer)).toHaveLength(0);
 });
 
-test('submits link, shows queued state, then polling shows ready without a blocking request', async () => {
+test.each(['ready', 'failed', 'empty'] as const)(
+  'does not poll an idle catalog (%s)',
+  async status => {
+    jest.useFakeTimers();
+    jest.mocked(shadowingService.list).mockResolvedValue({
+      items: status === 'empty' ? [] : [{ ...job, status }],
+    });
+    await render();
+    await act(async () => jest.advanceTimersByTime(20000));
+    expect(shadowingService.list).toHaveBeenCalledTimes(1);
+  },
+);
+
+test('refreshes on foreground and pauses pending polling in the background', async () => {
+  jest.useFakeTimers();
+  const listener = jest.spyOn(AppState, 'addEventListener');
+  jest.mocked(shadowingService.list).mockResolvedValue({
+    items: [{ ...job, status: 'queued' }],
+  });
+  await render();
+  const change = listener.mock.calls.find(([event]) => event === 'change')![1];
+  await act(async () => change('background'));
+  await act(async () => jest.advanceTimersByTime(20000));
+  expect(shadowingService.list).toHaveBeenCalledTimes(1);
+  jest.mocked(shadowingService.list).mockResolvedValue({ items: [job] });
+  await act(async () => change('active'));
+  expect(shadowingService.list).toHaveBeenCalledTimes(2);
+  await act(async () => jest.advanceTimersByTime(20000));
+  expect(shadowingService.list).toHaveBeenCalledTimes(2);
+});
+
+test('submits link, polls queued job until ready, then stops', async () => {
   jest.useFakeTimers();
   jest.mocked(shadowingService.list).mockResolvedValue({ items: [] });
   jest
@@ -140,6 +213,9 @@ test('submits link, shows queued state, then polling shows ready without a block
     jest.advanceTimersByTime(5000);
   });
   expect(visibleText()).toContain('Sẵn sàng luyện');
+  expect(shadowingService.list).toHaveBeenCalledTimes(2);
+  await act(async () => jest.advanceTimersByTime(20000));
+  expect(shadowingService.list).toHaveBeenCalledTimes(2);
 });
 
 test('failed source displays actionable error and retry requeues the same job', async () => {
@@ -301,7 +377,7 @@ test('reference layout shows a synced current sentence, collapses the subtitle p
   });
   expect(currentCaption.findByType(Text).props.children).toBe('次の文。');
   expect(tree.root.findByType(VideoExamplePlayer).props.videoOnly).toBe(true);
-  await press('Đóng bảng phụ đề');
+  await press('Phụ đề');
   expect(tree.root.findAllByType(FlatList)).toHaveLength(0);
   expect(webview.props.source).toBe(source);
   await press('Phụ đề');
@@ -309,10 +385,11 @@ test('reference layout shows a synced current sentence, collapses the subtitle p
   expect(webview.props.source).toBe(source);
   const translation = tree.root.findAll(
     node =>
-      node.props.accessibilityLabel === 'Bản dịch chưa có cho video này' &&
-      typeof node.props.disabled === 'boolean',
+      node.props.accessibilityLabel === 'Bản dịch' &&
+      typeof node.props.onPress === 'function',
   )[0];
-  expect(translation.props.disabled).toBe(true);
+  expect(translation.props.accessibilityState.selected).toBe(false);
+  expect(shadowingService.translation).not.toHaveBeenCalled();
 });
 
 test('short display cues advance independently while replay keeps the full practice phrase', async () => {
@@ -440,7 +517,10 @@ test('foreground polling does not discard a pending next-page request', async ()
       ? new Promise(resolve => {
           finishPage = resolve;
         })
-      : Promise.resolve({ items: [job], next_cursor: 'page-2' }),
+      : Promise.resolve({
+          items: [{ ...job, status: 'queued' }],
+          next_cursor: 'page-2',
+        }),
   );
   await render();
   await act(async () => {
@@ -605,4 +685,325 @@ test('unknown words show a clear missing-meaning state without replaying the sen
   expect(tree.root.findByType(VideoExamplePlayer).props.seekRequest).toBe(
     request + 1,
   );
+});
+
+test('translation is loaded on demand, maps practice sentences and keeps the player mounted', async () => {
+  jest.mocked(shadowingService.translation).mockResolvedValue({
+    status: 'ready',
+    language: 'vi',
+    items: { one: 'Đây là tiếng Nhật.', two: 'Câu tiếp theo.' },
+    completed: 2,
+    total: 2,
+    error_message: null,
+  });
+  await render();
+  await press('Luyện shadowing');
+  const player = tree.root.findByType(VideoExamplePlayer);
+  const source = tree.root.findByProps({ testID: 'youtube-example-player' })
+    .props.source;
+  expect(shadowingService.translation).not.toHaveBeenCalled();
+  await press('Bản dịch');
+  expect(visibleText()).toContain('Đây là tiếng Nhật.');
+  expect(shadowingService.requestTranslation).not.toHaveBeenCalled();
+  await press('Luyện đoạn 1');
+  const translated = tree.root
+    .findAllByType(Text)
+    .filter(node => node.props.children === 'Đây là tiếng Nhật.');
+  expect(translated).toHaveLength(2); // Main caption and practice list.
+  expect(tree.root.findByType(VideoExamplePlayer)).toBe(player);
+  expect(
+    tree.root.findByProps({ testID: 'youtube-example-player' }).props.source,
+  ).toBe(source);
+  await press('Bản dịch');
+  expect(visibleText()).not.toContain('Đây là tiếng Nhật.');
+});
+
+test('missing translation creates one job then polls for partial results', async () => {
+  jest.useFakeTimers();
+  jest
+    .mocked(shadowingService.translation)
+    .mockResolvedValueOnce({
+      status: 'not_requested',
+      language: 'vi',
+      items: {},
+      completed: 0,
+      total: 2,
+      error_message: null,
+    })
+    .mockResolvedValue({
+      status: 'ready',
+      language: 'vi',
+      items: { one: 'Đây là tiếng Nhật.' },
+      completed: 2,
+      total: 2,
+      error_message: null,
+    });
+  jest.mocked(shadowingService.requestTranslation).mockResolvedValue({
+    status: 'queued',
+    language: 'vi',
+    items: {},
+    completed: 0,
+    total: 2,
+    error_message: null,
+  });
+  await render();
+  await press('Luyện shadowing');
+  await press('Bản dịch');
+  expect(shadowingService.requestTranslation).toHaveBeenCalledTimes(1);
+  expect(visibleText()).toContain('Đang chuẩn bị bản dịch');
+  await act(async () => jest.advanceTimersByTime(3000));
+  expect(visibleText()).toContain('Đây là tiếng Nhật.');
+  await press('Bản dịch');
+  const calls = jest.mocked(shadowingService.translation).mock.calls.length;
+  await act(async () => jest.advanceTimersByTime(6000));
+  expect(shadowingService.translation).toHaveBeenCalledTimes(calls);
+});
+
+test('failed translation offers retry without resetting video playback', async () => {
+  jest.useFakeTimers();
+  jest.mocked(shadowingService.translation).mockResolvedValue({
+    status: 'failed',
+    language: 'vi',
+    items: {},
+    completed: 0,
+    total: 2,
+    error_message: 'Gemini đang giới hạn lượt dịch.',
+  });
+  jest.mocked(shadowingService.requestTranslation).mockResolvedValue({
+    status: 'queued',
+    language: 'vi',
+    items: {},
+    completed: 0,
+    total: 2,
+    error_message: null,
+  });
+  await render();
+  await press('Luyện shadowing');
+  const request = tree.root.findByType(VideoExamplePlayer).props.seekRequest;
+  await press('Bản dịch');
+  expect(visibleText()).toContain('Gemini đang giới hạn lượt dịch.');
+  expect(shadowingService.requestTranslation).not.toHaveBeenCalled();
+  await press('Thử lại bản dịch');
+  expect(shadowingService.requestTranslation).toHaveBeenCalledTimes(1);
+  expect(tree.root.findByType(VideoExamplePlayer).props.seekRequest).toBe(
+    request,
+  );
+});
+
+test('quiz is opt-in, hides future questions, grades once, and continues without replacing the player', async () => {
+  await render();
+  await press('Luyện shadowing');
+  expect(shadowingService.questions).not.toHaveBeenCalled();
+  const source = tree.root.findByProps({ testID: 'youtube-example-player' })
+    .props.source;
+  await press('Câu hỏi AI');
+  expect(shadowingService.questions).not.toHaveBeenCalled();
+  expect(tree.root.findByType(VideoExamplePlayer).props.pausedForQuiz).toBe(
+    true,
+  );
+  await press('2 câu hỏi');
+  await press('Tạo câu hỏi');
+  expect(shadowingService.questions).toHaveBeenCalledWith('job-1', 2, 'N3');
+  expect(visibleText()).not.toContain('話している人は何語を使っていますか。');
+  expect(visibleText()).not.toContain('その後、話している人は何をしますか。');
+  expect(tree.root.findByType(VideoExamplePlayer).props.continuous).toBe(true);
+  const webview = tree.root.findByProps({ testID: 'youtube-example-player' });
+  await act(async () =>
+    webview.props.onMessage({
+      nativeEvent: {
+        data: JSON.stringify({ type: 'quiz-question', code: { id: 'q1' } }),
+      },
+    }),
+  );
+  expect(visibleText()).toContain('話している人は何語を使っていますか。');
+  expect(visibleText()).not.toContain(
+    'Người nói giới thiệu đây là tiếng Nhật.',
+  );
+  const next = tree.root
+    .findAllByType(AuthButton)
+    .find(node => node.props.label === 'Xem tiếp')!;
+  expect(next.props.disabled).toBe(true);
+  await press('Đáp án A: 日本語');
+  expect(visibleText()).toContain('Chính xác!');
+  expect(visibleText()).toContain('Người nói giới thiệu đây là tiếng Nhật.');
+  await press('Đáp án B: ベトナム語');
+  expect(visibleText()).toContain('Đã đúng 1/1 câu');
+  await press('Xem tiếp');
+  expect(
+    tree.root.findByType(VideoExamplePlayer).props.quizCheckpoints,
+  ).toEqual([{ id: 'q2', seconds: 6 }]);
+  expect(tree.root.findByType(VideoExamplePlayer).props.pausedForQuiz).toBe(
+    false,
+  );
+  expect(
+    tree.root.findByProps({ testID: 'youtube-example-player' }).props.source,
+  ).toBe(source);
+  await act(async () =>
+    webview.props.onMessage({
+      nativeEvent: {
+        data: JSON.stringify({ type: 'quiz-question', code: { id: 'q2' } }),
+      },
+    }),
+  );
+  await press('Đáp án A: 終わります');
+  expect(visibleText()).toContain('Chưa đúng.');
+  expect(visibleText()).toContain('Đáp án đúng: B. 次の文を言います');
+  await press('Xem tiếp');
+  expect(
+    tree.root.findByType(VideoExamplePlayer).props.quizCheckpoints,
+  ).toEqual([]);
+  await press('Danh sách video');
+  await press('Luyện shadowing');
+  expect(
+    tree.root.findByType(VideoExamplePlayer).props.quizCheckpoints,
+  ).toEqual([]);
+  expect(shadowingService.questions).toHaveBeenCalledTimes(1);
+});
+
+test('quiz generation can be retried after failure and turned off during a question', async () => {
+  jest
+    .mocked(shadowingService.questions)
+    .mockRejectedValueOnce(new Error('AI tạm thời gián đoạn.'));
+  await render();
+  await press('Luyện shadowing');
+  await press('Câu hỏi AI');
+  await press('Tạo câu hỏi');
+  expect(visibleText()).toContain('AI tạm thời gián đoạn.');
+  await press('Tạo câu hỏi');
+  await act(async () =>
+    tree.root.findByType(VideoExamplePlayer).props.onQuizQuestion('q1'),
+  );
+  await press('Đóng câu hỏi');
+  expect(
+    tree.root.findByType(VideoExamplePlayer).props.quizCheckpoints,
+  ).toEqual([]);
+  expect(tree.root.findByType(VideoExamplePlayer).props.pausedForQuiz).toBe(
+    false,
+  );
+});
+
+test.each(['cancel', 'leave'] as const)(
+  'ignores a late quiz response after %s',
+  async action => {
+    let finish!: (
+      value: Awaited<ReturnType<typeof shadowingService.questions>>,
+    ) => void;
+    const result = await shadowingService.questions('job-1', 2);
+    jest.mocked(shadowingService.questions).mockImplementation(
+      () =>
+        new Promise(resolve => {
+          finish = resolve;
+        }),
+    );
+    await render();
+    await press('Luyện shadowing');
+    await press('Câu hỏi AI');
+    await act(async () => {
+      tree.root
+        .findAllByType(AuthButton)
+        .find(node => node.props.label === 'Tạo câu hỏi')!
+        .props.onPress();
+    });
+    if (action === 'cancel') await press('Đóng câu hỏi AI');
+    else {
+      await press('Danh sách video');
+      await press('Luyện shadowing');
+    }
+    await act(async () => finish(result));
+    expect(
+      tree.root.findByType(VideoExamplePlayer).props.quizCheckpoints,
+    ).toEqual([]);
+    expect(tree.root.findByType(VideoExamplePlayer).props.pausedForQuiz).toBe(
+      false,
+    );
+  },
+);
+
+test('quiz lists stop times and jumps to the selected question without generating again or revealing it before seeking', async () => {
+  await render();
+  await press('Luyện shadowing');
+  await press('Câu hỏi AI');
+  await press('2 câu hỏi');
+  await press('Tạo câu hỏi');
+  const webview = tree.root.findByProps({ testID: 'youtube-example-player' });
+  const source = webview.props.source;
+  await act(async () =>
+    webview.props.onMessage({ nativeEvent: { data: '{"type":"ready"}' } }),
+  );
+  await press('Câu hỏi AI');
+  expect(visibleText()).toContain('Câu 1 · 0:03');
+  expect(visibleText()).toContain('Câu 2 · 0:06');
+  expect(visibleText()).not.toContain('その後、話している人は何をしますか。');
+  await press('Tới câu hỏi 2');
+  expect(
+    injectJavaScript.mock.calls.some(([script]) =>
+      script.includes('window.jumpToQuiz("q2")'),
+    ),
+  ).toBe(true);
+  expect(visibleText()).not.toContain('その後、話している人は何をしますか。');
+  await act(async () =>
+    webview.props.onMessage({
+      nativeEvent: { data: '{"type":"quiz-question","code":{"id":"q2"}}' },
+    }),
+  );
+  expect(visibleText()).toContain('Câu 2/2');
+  expect(visibleText()).toContain('その後、話している人は何をしますか。');
+  expect(tree.root.findByType(VideoExamplePlayer).props.pausedForQuiz).toBe(
+    true,
+  );
+  expect(
+    tree.root.findByProps({ testID: 'youtube-example-player' }).props.source,
+  ).toBe(source);
+  await press('Đáp án B: 次の文を言います');
+  await press('Xem tiếp');
+  await press('Câu hỏi AI');
+  const completed = tree.root.findAll(
+    node =>
+      node.props.accessibilityLabel === 'Xem lại câu hỏi 2' &&
+      typeof node.props.onPress === 'function',
+  )[0];
+  expect(completed.props.accessibilityState.disabled).toBe(false);
+  await press('Tới câu hỏi 1');
+  expect(
+    injectJavaScript.mock.calls.some(([script]) =>
+      script.includes('window.jumpToQuiz("q1")'),
+    ),
+  ).toBe(true);
+  expect(shadowingService.questions).toHaveBeenCalledTimes(1);
+});
+
+test('uses the selected JLPT level and retains answers for review until leaving the lesson', async () => {
+  await render();
+  await press('Luyện shadowing');
+  await press('Câu hỏi AI');
+  await press('Trình độ N5');
+  await press('1 câu hỏi');
+  await press('Tạo câu hỏi');
+  expect(shadowingService.questions).toHaveBeenCalledWith('job-1', 1, 'N5');
+  await act(async () =>
+    tree.root.findByType(VideoExamplePlayer).props.onQuizQuestion('q1'),
+  );
+  await press('Đáp án A: 日本語');
+  await press('Xem tiếp');
+  expect(visibleText()).not.toContain('話している人は何語を使っていますか。');
+  await press('Câu hỏi AI');
+  await press('Xem lại câu hỏi 1');
+  expect(visibleText()).toContain('話している人は何語を使っていますか。');
+  expect(visibleText()).toContain('Bạn chọn: A. 日本語');
+  await press('Xem lại câu 1');
+  expect(visibleText()).toContain('Chính xác!');
+  await press('Đáp án B: ベトナム語');
+  expect(visibleText()).toContain('Đã đúng 1/1 câu');
+  await press('Xem tiếp');
+  await press('Câu hỏi AI');
+  await press('Đóng câu hỏi AI');
+  expect(visibleText()).not.toContain('話している人は何語を使っていますか。');
+  expect(
+    tree.root.findByType(VideoExamplePlayer).props.quizCheckpoints,
+  ).toEqual([{ id: 'q2', seconds: 6 }]);
+  await press('Danh sách video');
+  await press('Luyện shadowing');
+  expect(visibleText()).not.toContain('話している人は何語を使っていますか。');
+  expect(visibleText()).not.toContain('Câu hỏi đã trả lời');
+  expect(shadowingService.questions).toHaveBeenCalledTimes(1);
 });

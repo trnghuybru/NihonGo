@@ -91,14 +91,14 @@ class MessageFeedbackTests(TestCase):
         value = {"summary": "Cần chỉnh dạng quá khứ.", "items": []}
         response = MagicMock(status_code=200)
         response.__enter__.return_value = response
-        response.json.return_value = {"choices": [{"message": {"content": json.dumps(value)}}]}
-        with patch.dict("os.environ", {"OPENROUTER_API_KEY": "test-key", "SPEAKING_EVALUATION_FORMAT": "json_schema"}), patch("speaking.evaluation_ai.requests.post", return_value=response) as provider:
+        response.json.return_value = {"candidates": [{"finishReason": "STOP", "content": {"parts": [{"text": json.dumps(value)}]}}]}
+        with patch.dict("os.environ", {"GEMINI_API_KEY": "test-key"}), patch("speaking.evaluation_ai.requests.post", return_value=response) as provider:
             result = generate_evaluation({"title": "Interview", "role": {"name": "Aoi", "ai_instructions": "PRIVATE"}},
                 [target], prompt=PROMPT, schema=SCHEMA, parser=parse_feedback, target_message_id=target["message_id"])
         self.assertEqual(result, value)
         body = provider.call_args.kwargs["json"]
-        self.assertIn(PROMPT, body["messages"][0]["content"])
-        self.assertEqual(body["response_format"]["json_schema"]["schema"], SCHEMA)
-        payload = json.loads(body["messages"][1]["content"])
+        self.assertIn(PROMPT, body["systemInstruction"]["parts"][0]["text"])
+        self.assertEqual(body["generationConfig"]["responseJsonSchema"], SCHEMA)
+        payload = json.loads(body["contents"][0]["parts"][0]["text"])
         self.assertEqual(payload["target_message_id"], target["message_id"])
         self.assertNotIn("PRIVATE", json.dumps(payload))

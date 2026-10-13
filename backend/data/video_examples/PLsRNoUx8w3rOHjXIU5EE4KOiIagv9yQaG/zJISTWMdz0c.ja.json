@@ -1,0 +1,3844 @@
+{
+  "schema_version": 1,
+  "video": {
+    "youtube_id": "zJISTWMdz0c",
+    "title": "The Power of Total Immersion | Erena Shimoda | TEDxMarunouchi",
+    "channel": "TEDx Talks",
+    "duration_seconds": 941
+  },
+  "caption_track": {
+    "language": "ja",
+    "kind": "asr",
+    "source": "youtube_automatic"
+  },
+  "source_playlist": "https://www.youtube.com/playlist?list=PLsRNoUx8w3rOHjXIU5EE4KOiIagv9yQaG",
+  "fetched_at": "2026-10-13T13:24:05.411347+00:00",
+  "segment_count": 143,
+  "segments": [
+    {
+      "text": "皆さんは最後に心から息を吐いたのはいつですか?ただ呼吸をするというのではなく、心の奥に詰まっていたものまで手放す",
+      "start_seconds": 21.6,
+      "end_seconds": 31.84,
+      "id": "zJISTWMdz0c-ja-0001",
+      "sequence": 1
+    },
+    {
+      "text": "ように履いたのはいつだったでしょうか?",
+      "start_seconds": 31.84,
+      "end_seconds": 35.399,
+      "id": "zJISTWMdz0c-ja-0002",
+      "sequence": 2
+    },
+    {
+      "text": "皆さん今日は水中の世界へようこそ。",
+      "start_seconds": 35.399,
+      "end_seconds": 40.039,
+      "id": "zJISTWMdz0c-ja-0003",
+      "sequence": 3
+    },
+    {
+      "text": "私は人が水の中で変わる瞬間を取り続けています。でも本当に映しているのは重さを手放した瞬間です。",
+      "start_seconds": 40.039,
+      "end_seconds": 50.879,
+      "id": "zJISTWMdz0c-ja-0004",
+      "sequence": 4
+    },
+    {
+      "text": "水に入ると人は変わります。でもその扉を開くにはいくつかの重要な鍵が必要です。",
+      "start_seconds": 50.879,
+      "end_seconds": 60.399,
+      "id": "zJISTWMdz0c-ja-0005",
+      "sequence": 5
+    },
+    {
+      "text": "恐れを、後悔を、余分なものを全部手放すこと。",
+      "start_seconds": 60.399,
+      "end_seconds": 66.36,
+      "id": "zJISTWMdz0c-ja-0006",
+      "sequence": 6
+    },
+    {
+      "text": "では、その手放し方を一緒に練習しましょう。そして皆様にも少しだけ没入の体験をしてしていただきたいと思います。",
+      "start_seconds": 66.36,
+      "end_seconds": 77.52,
+      "id": "zJISTWMdz0c-ja-0007",
+      "sequence": 7
+    },
+    {
+      "text": "まずは呼吸から5秒吸って5秒ゆっくり吐きます。",
+      "start_seconds": 77.52,
+      "end_seconds": 84.84,
+      "id": "zJISTWMdz0c-ja-0008",
+      "sequence": 8
+    },
+    {
+      "text": "肩から吸うのではなく、胸とお腹の合間に手を当てて、ここが広がるように2回だけ",
+      "start_seconds": 84.84,
+      "end_seconds": 93.159,
+      "id": "zJISTWMdz0c-ja-0009",
+      "sequence": 9
+    },
+    {
+      "text": "一緒にしましょう。いいですか?",
+      "start_seconds": 93.159,
+      "end_seconds": 97.64,
+      "id": "zJISTWMdz0c-ja-0010",
+      "sequence": 10
+    },
+    {
+      "text": "吸って。",
+      "start_seconds": 97.64,
+      "end_seconds": 101.119,
+      "id": "zJISTWMdz0c-ja-0011",
+      "sequence": 11
+    },
+    {
+      "text": "吐いて。",
+      "start_seconds": 104.439,
+      "end_seconds": 107.88,
+      "id": "zJISTWMdz0c-ja-0012",
+      "sequence": 12
+    },
+    {
+      "text": "吸って",
+      "start_seconds": 111.24,
+      "end_seconds": 114.52,
+      "id": "zJISTWMdz0c-ja-0013",
+      "sequence": 13
+    },
+    {
+      "text": "吐いて。",
+      "start_seconds": 118.36,
+      "end_seconds": 121.84,
+      "id": "zJISTWMdz0c-ja-0014",
+      "sequence": 14
+    },
+    {
+      "text": "ありがとうございます。",
+      "start_seconds": 124.88,
+      "end_seconds": 127.24,
+      "id": "zJISTWMdz0c-ja-0015",
+      "sequence": 15
+    },
+    {
+      "text": "この中にスクーバダイバーの方はいらっしゃいますか?",
+      "start_seconds": 127.24,
+      "end_seconds": 132.56,
+      "id": "zJISTWMdz0c-ja-0016",
+      "sequence": 16
+    },
+    {
+      "text": "ダイバーの方はもうよくご存知だと思いますが、スクーバにはある1つの面白い真実があります。",
+      "start_seconds": 132.56,
+      "end_seconds": 141.08,
+      "id": "zJISTWMdz0c-ja-0017",
+      "sequence": 17
+    },
+    {
+      "text": "沈むためには息を吐かなければならない。",
+      "start_seconds": 141.08,
+      "end_seconds": 145.28,
+      "id": "zJISTWMdz0c-ja-0018",
+      "sequence": 18
+    },
+    {
+      "text": "肺は風船のようなものです。空気が入っていれば浮き、空気を抜けば沈みます。",
+      "start_seconds": 145.28,
+      "end_seconds": 153.16,
+      "id": "zJISTWMdz0c-ja-0019",
+      "sequence": 19
+    },
+    {
+      "text": "私はこのことが人生にとてもよく似ていると思っています。",
+      "start_seconds": 153.16,
+      "end_seconds": 158.959,
+      "id": "zJISTWMdz0c-ja-0020",
+      "sequence": 20
+    },
+    {
+      "text": "地上では私たちはいつも何かを抱えています。",
+      "start_seconds": 158.959,
+      "end_seconds": 163.72,
+      "id": "zJISTWMdz0c-ja-0021",
+      "sequence": 21
+    },
+    {
+      "text": "重力、責任そして過去でも水の中ではその重さが消えます。",
+      "start_seconds": 163.72,
+      "end_seconds": 171.44,
+      "id": "zJISTWMdz0c-ja-0022",
+      "sequence": 22
+    },
+    {
+      "text": "そして私は気づきました。",
+      "start_seconds": 171.44,
+      "end_seconds": 175.12,
+      "id": "zJISTWMdz0c-ja-0023",
+      "sequence": 23
+    },
+    {
+      "text": "何かを手放した時人は軽くなる。",
+      "start_seconds": 175.12,
+      "end_seconds": 179.56,
+      "id": "zJISTWMdz0c-ja-0024",
+      "sequence": 24
+    },
+    {
+      "text": "今日はそのことについてお話ししたいと思います。",
+      "start_seconds": 179.56,
+      "end_seconds": 184.92,
+      "id": "zJISTWMdz0c-ja-0025",
+      "sequence": 25
+    },
+    {
+      "text": "私は日本で生まれ、東京で育ちました。",
+      "start_seconds": 186.0,
+      "end_seconds": 191.0,
+      "id": "zJISTWMdz0c-ja-0026",
+      "sequence": 26
+    },
+    {
+      "text": "1989年、父の転勤で家族と共にカリフォルニアに移住しました。",
+      "start_seconds": 191.0,
+      "end_seconds": 199.0,
+      "id": "zJISTWMdz0c-ja-0027",
+      "sequence": 27
+    },
+    {
+      "text": "毎年夏になると私たちは家族でドライブ旅行に出かけてました。",
+      "start_seconds": 199.0,
+      "end_seconds": 206.0,
+      "id": "zJISTWMdz0c-ja-0028",
+      "sequence": 28
+    },
+    {
+      "text": "それが当たり前のように続くはずでした。",
+      "start_seconds": 206.0,
+      "end_seconds": 210.72,
+      "id": "zJISTWMdz0c-ja-0029",
+      "sequence": 29
+    },
+    {
+      "text": "でもある夏、私たちは大きな交通事故に会いました。",
+      "start_seconds": 210.72,
+      "end_seconds": 217.599,
+      "id": "zJISTWMdz0c-ja-0030",
+      "sequence": 30
+    },
+    {
+      "text": "私は車の窓から外へ投げ出され、重度の脳害を追い、ほぼ全身日々と骨折を追いました。",
+      "start_seconds": 217.599,
+      "end_seconds": 228.76,
+      "id": "zJISTWMdz0c-ja-0031",
+      "sequence": 31
+    },
+    {
+      "text": "普通の生活に戻るまで2年と数ヶ月かかりました。",
+      "start_seconds": 228.76,
+      "end_seconds": 235.599,
+      "id": "zJISTWMdz0c-ja-0032",
+      "sequence": 32
+    },
+    {
+      "text": "私は生き残りました。",
+      "start_seconds": 235.599,
+      "end_seconds": 239.0,
+      "id": "zJISTWMdz0c-ja-0033",
+      "sequence": 33
+    },
+    {
+      "text": "でも父はなくなりました。",
+      "start_seconds": 239.0,
+      "end_seconds": 243.319,
+      "id": "zJISTWMdz0c-ja-0034",
+      "sequence": 34
+    },
+    {
+      "text": "ずっと思っていたのがどうして私が生き残ったんだろうという問いでした。",
+      "start_seconds": 243.319,
+      "end_seconds": 250.76,
+      "id": "zJISTWMdz0c-ja-0035",
+      "sequence": 35
+    },
+    {
+      "text": "でもある方がこう教えてくれたんです。",
+      "start_seconds": 250.76,
+      "end_seconds": 254.439,
+      "id": "zJISTWMdz0c-ja-0036",
+      "sequence": 36
+    },
+    {
+      "text": "あなたのお父さんが守ってくれたんだよと。",
+      "start_seconds": 254.439,
+      "end_seconds": 258.639,
+      "id": "zJISTWMdz0c-ja-0037",
+      "sequence": 37
+    },
+    {
+      "text": "でも私は感謝よりも罪悪感の方が大きかった。",
+      "start_seconds": 258.639,
+      "end_seconds": 264.88,
+      "id": "zJISTWMdz0c-ja-0038",
+      "sequence": 38
+    },
+    {
+      "text": "生存者の罪悪感、欲鬱。として生きている意味がよくわからなくなっていく感覚",
+      "start_seconds": 264.88,
+      "end_seconds": 273.88,
+      "id": "zJISTWMdz0c-ja-0039",
+      "sequence": 39
+    },
+    {
+      "text": "でも心のどこかでこうも持ってました。",
+      "start_seconds": 273.88,
+      "end_seconds": 278.479,
+      "id": "zJISTWMdz0c-ja-0040",
+      "sequence": 40
+    },
+    {
+      "text": "もし生き残ったのならこの命を無駄にしたくない。社会にコミュニティに恩返しのできる生き方をしたい。そして父に誇りに",
+      "start_seconds": 278.479,
+      "end_seconds": 290.28,
+      "id": "zJISTWMdz0c-ja-0041",
+      "sequence": 41
+    },
+    {
+      "text": "持ってもらえる人生を歩みたい。",
+      "start_seconds": 290.28,
+      "end_seconds": 294.44,
+      "id": "zJISTWMdz0c-ja-0042",
+      "sequence": 42
+    },
+    {
+      "text": "その大きな天気になったのがスクーバ大便との出会いでした。",
+      "start_seconds": 294.44,
+      "end_seconds": 301.84,
+      "id": "zJISTWMdz0c-ja-0043",
+      "sequence": 43
+    },
+    {
+      "text": "初めて海に潜った時、私は驚きました。",
+      "start_seconds": 301.84,
+      "end_seconds": 306.759,
+      "id": "zJISTWMdz0c-ja-0044",
+      "sequence": 44
+    },
+    {
+      "text": "ああ、これだと思いました。",
+      "start_seconds": 306.759,
+      "end_seconds": 311.759,
+      "id": "zJISTWMdz0c-ja-0045",
+      "sequence": 45
+    },
+    {
+      "text": "海の毛布に包み込まれるような温かくて安心できる場所でした。",
+      "start_seconds": 311.759,
+      "end_seconds": 319.12,
+      "id": "zJISTWMdz0c-ja-0046",
+      "sequence": 46
+    },
+    {
+      "text": "そこには成準がありました。",
+      "start_seconds": 319.12,
+      "end_seconds": 323.319,
+      "id": "zJISTWMdz0c-ja-0047",
+      "sequence": 47
+    },
+    {
+      "text": "人生で初めて頭の中が静かになりました。",
+      "start_seconds": 323.319,
+      "end_seconds": 329.36,
+      "id": "zJISTWMdz0c-ja-0048",
+      "sequence": 48
+    },
+    {
+      "text": "全てがスローモーションで精神と身体がゆっくり癒されていく感覚。",
+      "start_seconds": 329.36,
+      "end_seconds": 337.039,
+      "id": "zJISTWMdz0c-ja-0049",
+      "sequence": 49
+    },
+    {
+      "text": "そこで私はこの空間が自分にとって1番安心できる場所だと気づき始めました。",
+      "start_seconds": 337.039,
+      "end_seconds": 345.919,
+      "id": "zJISTWMdz0c-ja-0050",
+      "sequence": 50
+    },
+    {
+      "text": "そしてこの美しい空間をやがて写真となっていきました。",
+      "start_seconds": 345.919,
+      "end_seconds": 351.84,
+      "id": "zJISTWMdz0c-ja-0051",
+      "sequence": 51
+    },
+    {
+      "text": "その写真をみんなとシェアして楽しんでいるうちに気づけばスクーバダイビングと水中写真が私の生きがいとなっていました。",
+      "start_seconds": 351.84,
+      "end_seconds": 363.52,
+      "id": "zJISTWMdz0c-ja-0052",
+      "sequence": 52
+    },
+    {
+      "text": "初めの飛車隊は海の生き物たちでした。",
+      "start_seconds": 363.52,
+      "end_seconds": 368.16,
+      "id": "zJISTWMdz0c-ja-0053",
+      "sequence": 53
+    },
+    {
+      "text": "そして海にも潜れない時はプールへ人を取るようになりました。",
+      "start_seconds": 368.16,
+      "end_seconds": 374.68,
+      "id": "zJISTWMdz0c-ja-0054",
+      "sequence": 54
+    },
+    {
+      "text": "私が撮影で大切にしているのはこれが本当の自分として水に入ることです。",
+      "start_seconds": 374.68,
+      "end_seconds": 382.319,
+      "id": "zJISTWMdz0c-ja-0055",
+      "sequence": 55
+    },
+    {
+      "text": "だから水着だけではなく自分の好きな服を選んでもらってます。",
+      "start_seconds": 382.319,
+      "end_seconds": 389.24,
+      "id": "zJISTWMdz0c-ja-0056",
+      "sequence": 56
+    },
+    {
+      "text": "そして数年後、私の飛者隊は癌の克服者、癌のサバイバーへと変わっていきました。",
+      "start_seconds": 389.24,
+      "end_seconds": 397.8,
+      "id": "zJISTWMdz0c-ja-0057",
+      "sequence": 57
+    },
+    {
+      "text": "そのきっかけは私が癌がの患者さんが集まるミーティングでボランティアをしたのが始まりです。",
+      "start_seconds": 397.8,
+      "end_seconds": 406.12,
+      "id": "zJISTWMdz0c-ja-0058",
+      "sequence": 58
+    },
+    {
+      "text": "現在はプロジェクトの幅を広め、PTSTトラウマ、障害を抱えた人たちの撮影を",
+      "start_seconds": 406.12,
+      "end_seconds": 414.28,
+      "id": "zJISTWMdz0c-ja-0059",
+      "sequence": 59
+    },
+    {
+      "text": "水中で行っています。",
+      "start_seconds": 414.28,
+      "end_seconds": 418.24,
+      "id": "zJISTWMdz0c-ja-0060",
+      "sequence": 60
+    },
+    {
+      "text": "これまで何百人の人が水に入りました。",
+      "start_seconds": 418.24,
+      "end_seconds": 423.919,
+      "id": "zJISTWMdz0c-ja-0061",
+      "sequence": 61
+    },
+    {
+      "text": "そして私は彼らの変化を見てきました。",
+      "start_seconds": 423.919,
+      "end_seconds": 429.56,
+      "id": "zJISTWMdz0c-ja-0062",
+      "sequence": 62
+    },
+    {
+      "text": "その中の3つの大きな変化をお話しします。",
+      "start_seconds": 429.56,
+      "end_seconds": 435.96,
+      "id": "zJISTWMdz0c-ja-0063",
+      "sequence": 63
+    },
+    {
+      "text": "1つ目は身体の自由です。",
+      "start_seconds": 436.759,
+      "end_seconds": 441.44,
+      "id": "zJISTWMdz0c-ja-0064",
+      "sequence": 64
+    },
+    {
+      "text": "車椅子の人、偽則の人、慢性的な痛みを抱える人。",
+      "start_seconds": 441.44,
+      "end_seconds": 448.28,
+      "id": "zJISTWMdz0c-ja-0065",
+      "sequence": 65
+    },
+    {
+      "text": "水の中では身体の重さが消える。",
+      "start_seconds": 448.28,
+      "end_seconds": 452.12,
+      "id": "zJISTWMdz0c-ja-0066",
+      "sequence": 66
+    },
+    {
+      "text": "関節への負担が軽くなる。",
+      "start_seconds": 452.12,
+      "end_seconds": 455.84,
+      "id": "zJISTWMdz0c-ja-0067",
+      "sequence": 67
+    },
+    {
+      "text": "ビッグの上でできなかった動きができるようになる。",
+      "start_seconds": 455.84,
+      "end_seconds": 460.12,
+      "id": "zJISTWMdz0c-ja-0068",
+      "sequence": 68
+    },
+    {
+      "text": "不は人を支え平等にしてくれます。",
+      "start_seconds": 460.12,
+      "end_seconds": 466.08,
+      "id": "zJISTWMdz0c-ja-0069",
+      "sequence": 69
+    },
+    {
+      "text": "地上では私たちはいつも分類されます。",
+      "start_seconds": 466.159,
+      "end_seconds": 471.24,
+      "id": "zJISTWMdz0c-ja-0070",
+      "sequence": 70
+    },
+    {
+      "text": "できる人、できない人、強い人、弱い人。",
+      "start_seconds": 471.24,
+      "end_seconds": 476.96,
+      "id": "zJISTWMdz0c-ja-0071",
+      "sequence": 71
+    },
+    {
+      "text": "でも水の中では誰もがその環境をシェアします。",
+      "start_seconds": 476.96,
+      "end_seconds": 482.68,
+      "id": "zJISTWMdz0c-ja-0072",
+      "sequence": 72
+    },
+    {
+      "text": "誰もが呼吸を意識します。",
+      "start_seconds": 482.68,
+      "end_seconds": 486.36,
+      "id": "zJISTWMdz0c-ja-0073",
+      "sequence": 73
+    },
+    {
+      "text": "誰もが支え合って存在します。",
+      "start_seconds": 486.36,
+      "end_seconds": 491.879,
+      "id": "zJISTWMdz0c-ja-0074",
+      "sequence": 74
+    },
+    {
+      "text": "撮影の後、彼らは嬉しそうにこう教えてくれました。",
+      "start_seconds": 492.4,
+      "end_seconds": 498.68,
+      "id": "zJISTWMdz0c-ja-0075",
+      "sequence": 75
+    },
+    {
+      "text": "水の中では痛みを感じない。",
+      "start_seconds": 498.84,
+      "end_seconds": 502.52,
+      "id": "zJISTWMdz0c-ja-0076",
+      "sequence": 76
+    },
+    {
+      "text": "車椅子なしで動くことができた。",
+      "start_seconds": 502.52,
+      "end_seconds": 506.319,
+      "id": "zJISTWMdz0c-ja-0077",
+      "sequence": 77
+    },
+    {
+      "text": "初めて立つことができた。",
+      "start_seconds": 506.319,
+      "end_seconds": 509.919,
+      "id": "zJISTWMdz0c-ja-0078",
+      "sequence": 78
+    },
+    {
+      "text": "彼らはもう障害のある身体ではありません。ただ自由に動く美しい存在になるんです。",
+      "start_seconds": 509.919,
+      "end_seconds": 520.08,
+      "id": "zJISTWMdz0c-ja-0079",
+      "sequence": 79
+    },
+    {
+      "text": "水が彼らに自由をくれたんです。",
+      "start_seconds": 520.08,
+      "end_seconds": 525.44,
+      "id": "zJISTWMdz0c-ja-0080",
+      "sequence": 80
+    },
+    {
+      "text": "2つ目は感情の解放です。",
+      "start_seconds": 526.08,
+      "end_seconds": 530.519,
+      "id": "zJISTWMdz0c-ja-0081",
+      "sequence": 81
+    },
+    {
+      "text": "ドメスティックバレンス。人身取引の被害者。PTSDを抱える軍人。",
+      "start_seconds": 530.519,
+      "end_seconds": 538.56,
+      "id": "zJISTWMdz0c-ja-0082",
+      "sequence": 82
+    },
+    {
+      "text": "水の中で彼らの表情が変わる瞬間があります。",
+      "start_seconds": 538.56,
+      "end_seconds": 544.68,
+      "id": "zJISTWMdz0c-ja-0083",
+      "sequence": 83
+    },
+    {
+      "text": "恐怖が勇気に変わる瞬間です。",
+      "start_seconds": 544.68,
+      "end_seconds": 549.32,
+      "id": "zJISTWMdz0c-ja-0084",
+      "sequence": 84
+    },
+    {
+      "text": "地上では人は仮面をかぶっています。",
+      "start_seconds": 549.32,
+      "end_seconds": 554.88,
+      "id": "zJISTWMdz0c-ja-0085",
+      "sequence": 85
+    },
+    {
+      "text": "強く見せようとする仮面、大丈夫なふりをする仮面。",
+      "start_seconds": 554.88,
+      "end_seconds": 561.24,
+      "id": "zJISTWMdz0c-ja-0086",
+      "sequence": 86
+    },
+    {
+      "text": "皆さんも心当たりありませんか?",
+      "start_seconds": 561.24,
+      "end_seconds": 565.36,
+      "id": "zJISTWMdz0c-ja-0087",
+      "sequence": 87
+    },
+    {
+      "text": "でもその仮面は水の中で溶けていきます。",
+      "start_seconds": 565.36,
+      "end_seconds": 569.2,
+      "id": "zJISTWMdz0c-ja-0088",
+      "sequence": 88
+    },
+    {
+      "text": "それはなぜか?水の中が静寂で平和です。",
+      "start_seconds": 569.2,
+      "end_seconds": 575.88,
+      "id": "zJISTWMdz0c-ja-0089",
+      "sequence": 89
+    },
+    {
+      "text": "誰もいないし何も聞こえない。",
+      "start_seconds": 575.88,
+      "end_seconds": 579.839,
+      "id": "zJISTWMdz0c-ja-0090",
+      "sequence": 90
+    },
+    {
+      "text": "水は誰もを受け入れジャッジしません。だから人は安心して正直になろうとする。",
+      "start_seconds": 579.839,
+      "end_seconds": 590.36,
+      "id": "zJISTWMdz0c-ja-0091",
+      "sequence": 91
+    },
+    {
+      "text": "撮影の後涙む人もいます。",
+      "start_seconds": 590.36,
+      "end_seconds": 594.6,
+      "id": "zJISTWMdz0c-ja-0092",
+      "sequence": 92
+    },
+    {
+      "text": "今まで言葉に出せなかったことを話してくる人もいます。",
+      "start_seconds": 594.6,
+      "end_seconds": 599.92,
+      "id": "zJISTWMdz0c-ja-0093",
+      "sequence": 93
+    },
+    {
+      "text": "後日連絡をくれてこう言ってくれる人もいます。",
+      "start_seconds": 599.92,
+      "end_seconds": 605.32,
+      "id": "zJISTWMdz0c-ja-0094",
+      "sequence": 94
+    },
+    {
+      "text": "やっと自分に優しくなれた。",
+      "start_seconds": 605.32,
+      "end_seconds": 608.64,
+      "id": "zJISTWMdz0c-ja-0095",
+      "sequence": 95
+    },
+    {
+      "text": "恥ではなく自分に誇りを持てるようになった。",
+      "start_seconds": 608.64,
+      "end_seconds": 615.1999999999999,
+      "id": "zJISTWMdz0c-ja-0096",
+      "sequence": 96
+    },
+    {
+      "text": "水が彼らの重さを引き取ってくれたんです。",
+      "start_seconds": 615.64,
+      "end_seconds": 621.519,
+      "id": "zJISTWMdz0c-ja-0097",
+      "sequence": 97
+    },
+    {
+      "text": "3つ目は自分との再開です。",
+      "start_seconds": 622.64,
+      "end_seconds": 627.2,
+      "id": "zJISTWMdz0c-ja-0098",
+      "sequence": 98
+    },
+    {
+      "text": "癌のサバイバーの方たちも多く参加されています。彼らはよくこう言います。",
+      "start_seconds": 627.2,
+      "end_seconds": 634.839,
+      "id": "zJISTWMdz0c-ja-0099",
+      "sequence": 99
+    },
+    {
+      "text": "私はもう前の自分ではない。",
+      "start_seconds": 634.839,
+      "end_seconds": 639.16,
+      "id": "zJISTWMdz0c-ja-0100",
+      "sequence": 100
+    },
+    {
+      "text": "手術の後、薬の副作用眠れない夜鏡で自分を見るたびに遠くなる。",
+      "start_seconds": 639.16,
+      "end_seconds": 650.519,
+      "id": "zJISTWMdz0c-ja-0101",
+      "sequence": 101
+    },
+    {
+      "text": "でも水の中では彼らは優雅に動きます。",
+      "start_seconds": 650.519,
+      "end_seconds": 655.2,
+      "id": "zJISTWMdz0c-ja-0102",
+      "sequence": 102
+    },
+    {
+      "text": "そして写真を見てこう驚くんです。",
+      "start_seconds": 655.2,
+      "end_seconds": 660.399,
+      "id": "zJISTWMdz0c-ja-0103",
+      "sequence": 103
+    },
+    {
+      "text": "まるで昔の自分を見ているみたいだ。",
+      "start_seconds": 660.399,
+      "end_seconds": 666.56,
+      "id": "zJISTWMdz0c-ja-0104",
+      "sequence": 104
+    },
+    {
+      "text": "写真はただの記録ではありません。",
+      "start_seconds": 666.88,
+      "end_seconds": 670.8,
+      "id": "zJISTWMdz0c-ja-0105",
+      "sequence": 105
+    },
+    {
+      "text": "私はまだ私だ。そう思い出させてくれる一生のお守りです。",
+      "start_seconds": 670.8,
+      "end_seconds": 678.9590000000001,
+      "id": "zJISTWMdz0c-ja-0106",
+      "sequence": 106
+    },
+    {
+      "text": "ある方の家族がこう私に教えてくれました。",
+      "start_seconds": 679.88,
+      "end_seconds": 685.2,
+      "id": "zJISTWMdz0c-ja-0107",
+      "sequence": 107
+    },
+    {
+      "text": "娘の案内笑顔もう見られないと思っていたと声を振わせながら最後にありがとうとハグをしてくれました。",
+      "start_seconds": 685.2,
+      "end_seconds": 696.36,
+      "id": "zJISTWMdz0c-ja-0108",
+      "sequence": 108
+    },
+    {
+      "text": "水が彼女を引き戻してくれたんです。",
+      "start_seconds": 696.399,
+      "end_seconds": 703.1999999999999,
+      "id": "zJISTWMdz0c-ja-0109",
+      "sequence": 109
+    },
+    {
+      "text": "このプロジェクトは決して病気を直すものではありません。でも回復の長い道乗りの中でもう1度自分にチャンスをくれると私",
+      "start_seconds": 704.079,
+      "end_seconds": 716.079,
+      "id": "zJISTWMdz0c-ja-0110",
+      "sequence": 110
+    },
+    {
+      "text": "は信じています。",
+      "start_seconds": 716.079,
+      "end_seconds": 720.12,
+      "id": "zJISTWMdz0c-ja-0111",
+      "sequence": 111
+    },
+    {
+      "text": "水は平等にする。ジャッジしない。私たちをつぎ直してくれる。それではなぜ水なの",
+      "start_seconds": 720.639,
+      "end_seconds": 731.279,
+      "id": "zJISTWMdz0c-ja-0112",
+      "sequence": 112
+    },
+    {
+      "text": "でしょうか?",
+      "start_seconds": 731.279,
+      "end_seconds": 733.639,
+      "id": "zJISTWMdz0c-ja-0113",
+      "sequence": 113
+    },
+    {
+      "text": "水による癒しは世界中の文化に存在しています。",
+      "start_seconds": 733.639,
+      "end_seconds": 738.959,
+      "id": "zJISTWMdz0c-ja-0114",
+      "sequence": 114
+    },
+    {
+      "text": "キリスト教では精霊があります。",
+      "start_seconds": 738.959,
+      "end_seconds": 742.88,
+      "id": "zJISTWMdz0c-ja-0115",
+      "sequence": 115
+    },
+    {
+      "text": "ヒル教では元実側で目欲します。",
+      "start_seconds": 742.88,
+      "end_seconds": 748.48,
+      "id": "zJISTWMdz0c-ja-0116",
+      "sequence": 116
+    },
+    {
+      "text": "新党では他企業があります。",
+      "start_seconds": 748.48,
+      "end_seconds": 752.04,
+      "id": "zJISTWMdz0c-ja-0117",
+      "sequence": 117
+    },
+    {
+      "text": "私は思います。人類は知っていたんです。",
+      "start_seconds": 752.04,
+      "end_seconds": 757.079,
+      "id": "zJISTWMdz0c-ja-0118",
+      "sequence": 118
+    },
+    {
+      "text": "水に没入すること自体が癒しになる。心を清め、整え、生まれ変わらせる。",
+      "start_seconds": 757.079,
+      "end_seconds": 768.16,
+      "id": "zJISTWMdz0c-ja-0119",
+      "sequence": 119
+    },
+    {
+      "text": "覚えていますか?私がお話しした生存者の罪悪感のこと。",
+      "start_seconds": 768.36,
+      "end_seconds": 775.72,
+      "id": "zJISTWMdz0c-ja-0120",
+      "sequence": 120
+    },
+    {
+      "text": "実はもう1つお話ししていないことがあります。",
+      "start_seconds": 775.72,
+      "end_seconds": 781.88,
+      "id": "zJISTWMdz0c-ja-0121",
+      "sequence": 121
+    },
+    {
+      "text": "事故の日運転していたのは地でした。",
+      "start_seconds": 783.399,
+      "end_seconds": 789.48,
+      "id": "zJISTWMdz0c-ja-0122",
+      "sequence": 122
+    },
+    {
+      "text": "でもその前まで私が運転してたんです。",
+      "start_seconds": 790.04,
+      "end_seconds": 795.199,
+      "id": "zJISTWMdz0c-ja-0123",
+      "sequence": 123
+    },
+    {
+      "text": "夜も疲れていた私は父に運転を変わってと頼みました。",
+      "start_seconds": 795.199,
+      "end_seconds": 803.72,
+      "id": "zJISTWMdz0c-ja-0124",
+      "sequence": 124
+    },
+    {
+      "text": "父の方が疲れていたはずです。でも彼は優しく運転を変わってくれました。",
+      "start_seconds": 803.72,
+      "end_seconds": 811.36,
+      "id": "zJISTWMdz0c-ja-0125",
+      "sequence": 125
+    },
+    {
+      "text": "そしてその後タイヤが破裂し、事故が起きました。",
+      "start_seconds": 811.36,
+      "end_seconds": 818.6800000000001,
+      "id": "zJISTWMdz0c-ja-0126",
+      "sequence": 126
+    },
+    {
+      "text": "私は長い間館の中にいました。",
+      "start_seconds": 818.839,
+      "end_seconds": 824.0,
+      "id": "zJISTWMdz0c-ja-0127",
+      "sequence": 127
+    },
+    {
+      "text": "後悔と怒りをずっと心の奥に沈めていました。",
+      "start_seconds": 824.0,
+      "end_seconds": 830.16,
+      "id": "zJISTWMdz0c-ja-0128",
+      "sequence": 128
+    },
+    {
+      "text": "でもスキューバと水泳を始めて何かが変わったんです。",
+      "start_seconds": 830.16,
+      "end_seconds": 836.44,
+      "id": "zJISTWMdz0c-ja-0129",
+      "sequence": 129
+    },
+    {
+      "text": "水の中でその沈めていたことと向き合うことができた。",
+      "start_seconds": 836.44,
+      "end_seconds": 843.079,
+      "id": "zJISTWMdz0c-ja-0130",
+      "sequence": 130
+    },
+    {
+      "text": "恋に出したら何か少し軽くなりました。",
+      "start_seconds": 844.44,
+      "end_seconds": 850.72,
+      "id": "zJISTWMdz0c-ja-0131",
+      "sequence": 131
+    },
+    {
+      "text": "そしてずっと重かったのは事故そのものではなくずっと誰にも言えなかったその内緒の重さでした。",
+      "start_seconds": 850.72,
+      "end_seconds": 861.199,
+      "id": "zJISTWMdz0c-ja-0132",
+      "sequence": 132
+    },
+    {
+      "text": "もちろん今でも後悔はあります。怒りがある時もあります。でもそれはもう私を",
+      "start_seconds": 861.199,
+      "end_seconds": 869.199,
+      "id": "zJISTWMdz0c-ja-0133",
+      "sequence": 133
+    },
+    {
+      "text": "押しつすような重さではなくなりました。",
+      "start_seconds": 869.199,
+      "end_seconds": 873.92,
+      "id": "zJISTWMdz0c-ja-0134",
+      "sequence": 134
+    },
+    {
+      "text": "本当の癒しは強く見せることからではなく正直さから始まるんだと思います。そして",
+      "start_seconds": 873.92,
+      "end_seconds": 882.36,
+      "id": "zJISTWMdz0c-ja-0135",
+      "sequence": 135
+    },
+    {
+      "text": "正直になった時人はやっと前を向けるんだと。",
+      "start_seconds": 882.36,
+      "end_seconds": 888.399,
+      "id": "zJISTWMdz0c-ja-0136",
+      "sequence": 136
+    },
+    {
+      "text": "だから皆さんにもお願いがあります。",
+      "start_seconds": 888.399,
+      "end_seconds": 893.079,
+      "id": "zJISTWMdz0c-ja-0137",
+      "sequence": 137
+    },
+    {
+      "text": "あなたの水を見つけてください。",
+      "start_seconds": 893.079,
+      "end_seconds": 897.12,
+      "id": "zJISTWMdz0c-ja-0138",
+      "sequence": 138
+    },
+    {
+      "text": "悪ヨガでもいい。悪セラピーでもいい。",
+      "start_seconds": 897.12,
+      "end_seconds": 900.519,
+      "id": "zJISTWMdz0c-ja-0139",
+      "sequence": 139
+    },
+    {
+      "text": "水泳スクーバでもいい。あなたが完全に没入できる場所。",
+      "start_seconds": 900.519,
+      "end_seconds": 907.24,
+      "id": "zJISTWMdz0c-ja-0140",
+      "sequence": 140
+    },
+    {
+      "text": "守りを少し緩めて重さを手放して本当の自分に戻れる場所持ってて欲しいなと思います。",
+      "start_seconds": 907.24,
+      "end_seconds": 917.399,
+      "id": "zJISTWMdz0c-ja-0141",
+      "sequence": 141
+    },
+    {
+      "text": "なぜなら完全なる没入は本当の自分を呼び戻してくれるからです。",
+      "start_seconds": 917.399,
+      "end_seconds": 926.16,
+      "id": "zJISTWMdz0c-ja-0142",
+      "sequence": 142
+    },
+    {
+      "text": "ありがとうございました。",
+      "start_seconds": 926.16,
+      "end_seconds": 929.959,
+      "id": "zJISTWMdz0c-ja-0143",
+      "sequence": 143
+    }
+  ],
+  "raw_captions": [
+    {
+      "text": "皆さんは最後に心から息を吐いたのはいつ",
+      "start_seconds": 21.6,
+      "end_seconds": 28.32
+    },
+    {
+      "text": "ですか?ただ呼吸をするというのではなく",
+      "start_seconds": 24.72,
+      "end_seconds": 31.84
+    },
+    {
+      "text": "、心の奥に詰まっていたものまで手放す",
+      "start_seconds": 28.32,
+      "end_seconds": 35.399
+    },
+    {
+      "text": "ように履いたのはいつだったでしょうか?",
+      "start_seconds": 31.84,
+      "end_seconds": 40.039
+    },
+    {
+      "text": "皆さん今日は水中の世界へようこそ。",
+      "start_seconds": 35.399,
+      "end_seconds": 43.559
+    },
+    {
+      "text": "私は人が水の中で変わる瞬間を取り続けて",
+      "start_seconds": 40.039,
+      "end_seconds": 47.52
+    },
+    {
+      "text": "います。でも本当に映しているのは重さを",
+      "start_seconds": 43.559,
+      "end_seconds": 50.879
+    },
+    {
+      "text": "手放した瞬間です。",
+      "start_seconds": 47.52,
+      "end_seconds": 55.399
+    },
+    {
+      "text": "水に入ると人は変わります。でもその扉を",
+      "start_seconds": 50.879,
+      "end_seconds": 60.399
+    },
+    {
+      "text": "開くにはいくつかの重要な鍵が必要です。",
+      "start_seconds": 55.399,
+      "end_seconds": 64.559
+    },
+    {
+      "text": "恐れを、後悔を、余分なものを全部手放す",
+      "start_seconds": 60.399,
+      "end_seconds": 66.36
+    },
+    {
+      "text": "こと。",
+      "start_seconds": 64.559,
+      "end_seconds": 69.08
+    },
+    {
+      "text": "では、その手放し方を一緒に練習し",
+      "start_seconds": 66.36,
+      "end_seconds": 72.88
+    },
+    {
+      "text": "ましょう。そして皆様にも少しだけ没入の",
+      "start_seconds": 69.08,
+      "end_seconds": 77.52
+    },
+    {
+      "text": "体験をしてしていただきたいと思います。",
+      "start_seconds": 72.88,
+      "end_seconds": 80.67999999999999
+    },
+    {
+      "text": "まずは呼吸から",
+      "start_seconds": 77.52,
+      "end_seconds": 84.84
+    },
+    {
+      "text": "5秒吸って5秒ゆっくり吐きます。",
+      "start_seconds": 80.68,
+      "end_seconds": 88.75900000000001
+    },
+    {
+      "text": "肩から吸うのではなく、胸とお腹の合間に",
+      "start_seconds": 84.84,
+      "end_seconds": 93.159
+    },
+    {
+      "text": "手を当てて、ここが広がるように2回だけ",
+      "start_seconds": 88.759,
+      "end_seconds": 97.64
+    },
+    {
+      "text": "一緒にしましょう。いいですか?",
+      "start_seconds": 93.159,
+      "end_seconds": 101.119
+    },
+    {
+      "text": "吸って。",
+      "start_seconds": 97.64,
+      "end_seconds": 101.119
+    },
+    {
+      "text": "吐いて。",
+      "start_seconds": 104.439,
+      "end_seconds": 107.88
+    },
+    {
+      "text": "吸って",
+      "start_seconds": 111.24,
+      "end_seconds": 114.52
+    },
+    {
+      "text": "吐いて。",
+      "start_seconds": 118.36,
+      "end_seconds": 121.84
+    },
+    {
+      "text": "ありがとうございます。",
+      "start_seconds": 124.88,
+      "end_seconds": 129.16
+    },
+    {
+      "text": "この中にスクーバダイバーの方は",
+      "start_seconds": 127.24,
+      "end_seconds": 132.56
+    },
+    {
+      "text": "いらっしゃいますか?",
+      "start_seconds": 129.16,
+      "end_seconds": 134.519
+    },
+    {
+      "text": "ダイバーの方はもうよくご存知だと思い",
+      "start_seconds": 132.56,
+      "end_seconds": 137.72
+    },
+    {
+      "text": "ますが、スクーバにはある1つの面白い",
+      "start_seconds": 134.519,
+      "end_seconds": 141.08
+    },
+    {
+      "text": "真実があります。",
+      "start_seconds": 137.72,
+      "end_seconds": 145.28
+    },
+    {
+      "text": "沈むためには息を吐かなければならない。",
+      "start_seconds": 141.08,
+      "end_seconds": 148.56
+    },
+    {
+      "text": "肺は風船のようなものです。空気が入って",
+      "start_seconds": 145.28,
+      "end_seconds": 153.16
+    },
+    {
+      "text": "いれば浮き、空気を抜けば沈みます。",
+      "start_seconds": 148.56,
+      "end_seconds": 156.239
+    },
+    {
+      "text": "私はこのことが人生にとてもよく似ている",
+      "start_seconds": 153.16,
+      "end_seconds": 158.959
+    },
+    {
+      "text": "と思っています。",
+      "start_seconds": 156.239,
+      "end_seconds": 161.8
+    },
+    {
+      "text": "地上では私たちはいつも何かを抱えてい",
+      "start_seconds": 158.959,
+      "end_seconds": 163.72
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 161.8,
+      "end_seconds": 167.64000000000001
+    },
+    {
+      "text": "重力、責任そして過去",
+      "start_seconds": 163.72,
+      "end_seconds": 171.44
+    },
+    {
+      "text": "でも水の中ではその重さが消えます。",
+      "start_seconds": 167.64,
+      "end_seconds": 175.11999999999998
+    },
+    {
+      "text": "そして私は気づきました。",
+      "start_seconds": 171.44,
+      "end_seconds": 179.56
+    },
+    {
+      "text": "何かを手放した時人は軽くなる。",
+      "start_seconds": 175.12,
+      "end_seconds": 181.64000000000001
+    },
+    {
+      "text": "今日はそのことについてお話ししたいと",
+      "start_seconds": 179.56,
+      "end_seconds": 184.92000000000002
+    },
+    {
+      "text": "思います。",
+      "start_seconds": 181.64,
+      "end_seconds": 184.92
+    },
+    {
+      "text": "私は日本で生まれ、東京で育ちました。",
+      "start_seconds": 186.0,
+      "end_seconds": 195.599
+    },
+    {
+      "text": "1989年、父の転勤で家族と共に",
+      "start_seconds": 191.0,
+      "end_seconds": 199.0
+    },
+    {
+      "text": "カリフォルニアに移住しました。",
+      "start_seconds": 195.599,
+      "end_seconds": 202.48
+    },
+    {
+      "text": "毎年夏になると私たちは家族でドライブ",
+      "start_seconds": 199.0,
+      "end_seconds": 206.0
+    },
+    {
+      "text": "旅行に出かけてました。",
+      "start_seconds": 202.48,
+      "end_seconds": 210.72
+    },
+    {
+      "text": "それが当たり前のように続くはずでした。",
+      "start_seconds": 206.0,
+      "end_seconds": 214.599
+    },
+    {
+      "text": "でもある夏、私たちは大きな交通事故に",
+      "start_seconds": 210.72,
+      "end_seconds": 217.599
+    },
+    {
+      "text": "会いました。",
+      "start_seconds": 214.599,
+      "end_seconds": 221.92
+    },
+    {
+      "text": "私は車の窓から外へ投げ出され、重度の",
+      "start_seconds": 217.599,
+      "end_seconds": 226.35999999999999
+    },
+    {
+      "text": "脳害を追い、ほぼ全身日々と骨折を追い",
+      "start_seconds": 221.92,
+      "end_seconds": 228.76
+    },
+    {
+      "text": "ました。",
+      "start_seconds": 226.36,
+      "end_seconds": 231.72000000000003
+    },
+    {
+      "text": "普通の生活に戻るまで",
+      "start_seconds": 228.76,
+      "end_seconds": 235.599
+    },
+    {
+      "text": "2年と数ヶ月かかりました。",
+      "start_seconds": 231.72,
+      "end_seconds": 239.0
+    },
+    {
+      "text": "私は生き残りました。",
+      "start_seconds": 235.599,
+      "end_seconds": 243.319
+    },
+    {
+      "text": "でも父はなくなりました。",
+      "start_seconds": 239.0,
+      "end_seconds": 246.519
+    },
+    {
+      "text": "ずっと思っていたのがどうして私が",
+      "start_seconds": 243.319,
+      "end_seconds": 250.76
+    },
+    {
+      "text": "生き残ったんだろうという問いでした。",
+      "start_seconds": 246.519,
+      "end_seconds": 254.439
+    },
+    {
+      "text": "でもある方がこう教えてくれたんです。",
+      "start_seconds": 250.76,
+      "end_seconds": 256.479
+    },
+    {
+      "text": "あなたのお父さんが守ってくれたんだよと",
+      "start_seconds": 254.439,
+      "end_seconds": 258.639
+    },
+    {
+      "text": "。",
+      "start_seconds": 256.479,
+      "end_seconds": 262.56
+    },
+    {
+      "text": "でも私は感謝よりも罪悪感の方が大きかっ",
+      "start_seconds": 258.639,
+      "end_seconds": 264.88
+    },
+    {
+      "text": "た。",
+      "start_seconds": 262.56,
+      "end_seconds": 269.4
+    },
+    {
+      "text": "生存者の罪悪感、欲鬱。として生きている",
+      "start_seconds": 264.88,
+      "end_seconds": 273.88
+    },
+    {
+      "text": "意味がよくわからなくなっていく感覚",
+      "start_seconds": 269.4,
+      "end_seconds": 278.479
+    },
+    {
+      "text": "でも心のどこかでこうも持ってました。",
+      "start_seconds": 273.88,
+      "end_seconds": 281.56
+    },
+    {
+      "text": "もし生き残ったのならこの命を無駄にし",
+      "start_seconds": 278.479,
+      "end_seconds": 285.88
+    },
+    {
+      "text": "たくない。社会にコミュニティに恩返しの",
+      "start_seconds": 281.56,
+      "end_seconds": 290.28000000000003
+    },
+    {
+      "text": "できる生き方をしたい。そして父に誇りに",
+      "start_seconds": 285.88,
+      "end_seconds": 294.44
+    },
+    {
+      "text": "持ってもらえる人生を歩みたい。",
+      "start_seconds": 290.28,
+      "end_seconds": 297.75899999999996
+    },
+    {
+      "text": "その大きな天気になったのが",
+      "start_seconds": 294.44,
+      "end_seconds": 301.84
+    },
+    {
+      "text": "スクーバ大便との出会いでした。",
+      "start_seconds": 297.759,
+      "end_seconds": 306.759
+    },
+    {
+      "text": "初めて海に潜った時、私は驚きました。",
+      "start_seconds": 301.84,
+      "end_seconds": 311.75899999999996
+    },
+    {
+      "text": "ああ、これだと思いました。",
+      "start_seconds": 306.759,
+      "end_seconds": 315.6
+    },
+    {
+      "text": "海の毛布に包み込まれるような温かくて",
+      "start_seconds": 311.759,
+      "end_seconds": 319.12
+    },
+    {
+      "text": "安心できる場所でした。",
+      "start_seconds": 315.6,
+      "end_seconds": 323.319
+    },
+    {
+      "text": "そこには成準がありました。",
+      "start_seconds": 319.12,
+      "end_seconds": 329.36
+    },
+    {
+      "text": "人生で初めて頭の中が静かになりました。",
+      "start_seconds": 323.319,
+      "end_seconds": 333.319
+    },
+    {
+      "text": "全てがスローモーションで精神と身体が",
+      "start_seconds": 329.36,
+      "end_seconds": 337.039
+    },
+    {
+      "text": "ゆっくり癒されていく感覚。",
+      "start_seconds": 333.319,
+      "end_seconds": 340.96000000000004
+    },
+    {
+      "text": "そこで私はこの空間が自分にとって1番",
+      "start_seconds": 337.039,
+      "end_seconds": 345.919
+    },
+    {
+      "text": "安心できる場所だと気づき始めました。",
+      "start_seconds": 340.96,
+      "end_seconds": 348.88
+    },
+    {
+      "text": "そしてこの美しい空間をやがて写真となっ",
+      "start_seconds": 345.919,
+      "end_seconds": 351.84
+    },
+    {
+      "text": "ていきました。",
+      "start_seconds": 348.88,
+      "end_seconds": 354.479
+    },
+    {
+      "text": "その写真をみんなとシェアして楽しんで",
+      "start_seconds": 351.84,
+      "end_seconds": 358.0
+    },
+    {
+      "text": "いるうちに気づけばスクーバダイビングと",
+      "start_seconds": 354.479,
+      "end_seconds": 361.039
+    },
+    {
+      "text": "水中写真が私の生きがいとなっていました",
+      "start_seconds": 358.0,
+      "end_seconds": 363.52
+    },
+    {
+      "text": "。",
+      "start_seconds": 361.039,
+      "end_seconds": 368.15999999999997
+    },
+    {
+      "text": "初めの飛車隊は海の生き物たちでした。",
+      "start_seconds": 363.52,
+      "end_seconds": 371.35999999999996
+    },
+    {
+      "text": "そして海にも潜れない時はプールへ人を",
+      "start_seconds": 368.16,
+      "end_seconds": 374.68
+    },
+    {
+      "text": "取るようになりました。",
+      "start_seconds": 371.36,
+      "end_seconds": 378.56
+    },
+    {
+      "text": "私が撮影で大切にしているのはこれが本当",
+      "start_seconds": 374.68,
+      "end_seconds": 382.319
+    },
+    {
+      "text": "の自分として水に入ることです。",
+      "start_seconds": 378.56,
+      "end_seconds": 386.12
+    },
+    {
+      "text": "だから水着だけではなく自分の好きな服を",
+      "start_seconds": 382.319,
+      "end_seconds": 389.24
+    },
+    {
+      "text": "選んでもらってます。",
+      "start_seconds": 386.12,
+      "end_seconds": 394.16
+    },
+    {
+      "text": "そして数年後、私の飛者隊は癌の克服者、",
+      "start_seconds": 389.24,
+      "end_seconds": 397.8
+    },
+    {
+      "text": "癌のサバイバーへと変わっていきました。",
+      "start_seconds": 394.16,
+      "end_seconds": 400.96000000000004
+    },
+    {
+      "text": "そのきっかけは私が癌がの患者さんが",
+      "start_seconds": 397.8,
+      "end_seconds": 403.0
+    },
+    {
+      "text": "集まるミーティングでボランティアをした",
+      "start_seconds": 400.96,
+      "end_seconds": 406.12
+    },
+    {
+      "text": "のが始まりです。",
+      "start_seconds": 403.0,
+      "end_seconds": 411.039
+    },
+    {
+      "text": "現在はプロジェクトの幅を広め、PTST",
+      "start_seconds": 406.12,
+      "end_seconds": 414.28000000000003
+    },
+    {
+      "text": "トラウマ、障害を抱えた人たちの撮影を",
+      "start_seconds": 411.039,
+      "end_seconds": 418.24
+    },
+    {
+      "text": "水中で行っています。",
+      "start_seconds": 414.28,
+      "end_seconds": 423.919
+    },
+    {
+      "text": "これまで何百人の人が水に入りました。",
+      "start_seconds": 418.24,
+      "end_seconds": 429.56
+    },
+    {
+      "text": "そして私は彼らの変化を見てきました。",
+      "start_seconds": 423.919,
+      "end_seconds": 432.96
+    },
+    {
+      "text": "その中の3つの大きな変化をお話しします",
+      "start_seconds": 429.56,
+      "end_seconds": 435.96
+    },
+    {
+      "text": "。",
+      "start_seconds": 432.96,
+      "end_seconds": 435.96
+    },
+    {
+      "text": "1つ目は身体の自由です。",
+      "start_seconds": 436.759,
+      "end_seconds": 445.68
+    },
+    {
+      "text": "車椅子の人、偽則の人、慢性的な痛みを",
+      "start_seconds": 441.44,
+      "end_seconds": 448.28
+    },
+    {
+      "text": "抱える人。",
+      "start_seconds": 445.68,
+      "end_seconds": 452.12
+    },
+    {
+      "text": "水の中では身体の重さが消える。",
+      "start_seconds": 448.28,
+      "end_seconds": 455.84
+    },
+    {
+      "text": "関節への負担が軽くなる。",
+      "start_seconds": 452.12,
+      "end_seconds": 457.8
+    },
+    {
+      "text": "ビッグの上でできなかった動きができる",
+      "start_seconds": 455.84,
+      "end_seconds": 460.11999999999995
+    },
+    {
+      "text": "ようになる。",
+      "start_seconds": 457.8,
+      "end_seconds": 466.08
+    },
+    {
+      "text": "不は人を支え平等にしてくれます。",
+      "start_seconds": 460.12,
+      "end_seconds": 466.08
+    },
+    {
+      "text": "地上では私たちはいつも分類されます。",
+      "start_seconds": 466.159,
+      "end_seconds": 476.96
+    },
+    {
+      "text": "できる人、できない人、強い人、弱い人。",
+      "start_seconds": 471.24,
+      "end_seconds": 480.8
+    },
+    {
+      "text": "でも水の中では誰もがその環境をシェアし",
+      "start_seconds": 476.96,
+      "end_seconds": 482.68
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 480.8,
+      "end_seconds": 486.36
+    },
+    {
+      "text": "誰もが呼吸を意識します。",
+      "start_seconds": 482.68,
+      "end_seconds": 491.879
+    },
+    {
+      "text": "誰もが支え合って存在します。",
+      "start_seconds": 486.36,
+      "end_seconds": 491.879
+    },
+    {
+      "text": "撮影の後、彼らは嬉しそうにこう教えて",
+      "start_seconds": 492.4,
+      "end_seconds": 498.67999999999995
+    },
+    {
+      "text": "くれました。",
+      "start_seconds": 495.159,
+      "end_seconds": 498.68
+    },
+    {
+      "text": "水の中では痛みを感じない。",
+      "start_seconds": 498.84,
+      "end_seconds": 506.31899999999996
+    },
+    {
+      "text": "車椅子なしで動くことができた。",
+      "start_seconds": 502.52,
+      "end_seconds": 509.919
+    },
+    {
+      "text": "初めて立つことができた。",
+      "start_seconds": 506.319,
+      "end_seconds": 513.039
+    },
+    {
+      "text": "彼らはもう障害のある身体ではありません",
+      "start_seconds": 509.919,
+      "end_seconds": 517.64
+    },
+    {
+      "text": "。ただ自由に動く美しい存在になるんです",
+      "start_seconds": 513.039,
+      "end_seconds": 520.08
+    },
+    {
+      "text": "。",
+      "start_seconds": 517.64,
+      "end_seconds": 525.4399999999999
+    },
+    {
+      "text": "水が彼らに自由をくれたんです。",
+      "start_seconds": 520.08,
+      "end_seconds": 525.44
+    },
+    {
+      "text": "2つ目は感情の解放です。",
+      "start_seconds": 526.08,
+      "end_seconds": 533.8000000000001
+    },
+    {
+      "text": "ドメスティックバレンス。人身取引の被害",
+      "start_seconds": 530.519,
+      "end_seconds": 538.5600000000001
+    },
+    {
+      "text": "者。PTSDを抱える軍人。",
+      "start_seconds": 533.8,
+      "end_seconds": 541.5999999999999
+    },
+    {
+      "text": "水の中で彼らの表情が変わる瞬間があり",
+      "start_seconds": 538.56,
+      "end_seconds": 544.68
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 541.6,
+      "end_seconds": 549.32
+    },
+    {
+      "text": "恐怖が勇気に変わる瞬間です。",
+      "start_seconds": 544.68,
+      "end_seconds": 554.88
+    },
+    {
+      "text": "地上では人は仮面をかぶっています。",
+      "start_seconds": 549.32,
+      "end_seconds": 558.0790000000001
+    },
+    {
+      "text": "強く見せようとする仮面、",
+      "start_seconds": 554.88,
+      "end_seconds": 561.24
+    },
+    {
+      "text": "大丈夫なふりをする仮面。",
+      "start_seconds": 558.079,
+      "end_seconds": 565.3599999999999
+    },
+    {
+      "text": "皆さんも心当たりありませんか?",
+      "start_seconds": 561.24,
+      "end_seconds": 569.2
+    },
+    {
+      "text": "でもその仮面は水の中で溶けていきます。",
+      "start_seconds": 565.36,
+      "end_seconds": 575.88
+    },
+    {
+      "text": "それはなぜか?水の中が静寂で平和です。",
+      "start_seconds": 569.2,
+      "end_seconds": 579.839
+    },
+    {
+      "text": "誰もいないし何も聞こえない。",
+      "start_seconds": 575.88,
+      "end_seconds": 584.24
+    },
+    {
+      "text": "水は誰もを受け入れジャッジしません。だ",
+      "start_seconds": 579.839,
+      "end_seconds": 590.36
+    },
+    {
+      "text": "から人は安心して正直になろうとする。",
+      "start_seconds": 584.24,
+      "end_seconds": 594.6
+    },
+    {
+      "text": "撮影の後涙む人もいます。",
+      "start_seconds": 590.36,
+      "end_seconds": 597.0790000000001
+    },
+    {
+      "text": "今まで言葉に出せなかったことを話して",
+      "start_seconds": 594.6,
+      "end_seconds": 599.9200000000001
+    },
+    {
+      "text": "くる人もいます。",
+      "start_seconds": 597.079,
+      "end_seconds": 603.399
+    },
+    {
+      "text": "後日連絡をくれてこう言ってくれる人もい",
+      "start_seconds": 599.92,
+      "end_seconds": 605.3199999999999
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 603.399,
+      "end_seconds": 608.64
+    },
+    {
+      "text": "やっと自分に優しくなれた。",
+      "start_seconds": 605.32,
+      "end_seconds": 612.0790000000001
+    },
+    {
+      "text": "恥ではなく自分に誇りを持てるようになっ",
+      "start_seconds": 608.64,
+      "end_seconds": 615.1999999999999
+    },
+    {
+      "text": "た。",
+      "start_seconds": 612.079,
+      "end_seconds": 615.1999999999999
+    },
+    {
+      "text": "水が彼らの重さを引き取ってくれたんです",
+      "start_seconds": 615.64,
+      "end_seconds": 621.519
+    },
+    {
+      "text": "。",
+      "start_seconds": 618.519,
+      "end_seconds": 621.519
+    },
+    {
+      "text": "3つ目は自分との再開です。",
+      "start_seconds": 622.64,
+      "end_seconds": 629.76
+    },
+    {
+      "text": "癌のサバイバーの方たちも多く参加されて",
+      "start_seconds": 627.2,
+      "end_seconds": 634.839
+    },
+    {
+      "text": "います。彼らはよくこう言います。",
+      "start_seconds": 629.76,
+      "end_seconds": 639.16
+    },
+    {
+      "text": "私はもう前の自分ではない。",
+      "start_seconds": 634.839,
+      "end_seconds": 646.12
+    },
+    {
+      "text": "手術の後、薬の副作用眠れない夜",
+      "start_seconds": 639.16,
+      "end_seconds": 650.519
+    },
+    {
+      "text": "鏡で自分を見るたびに遠くなる。",
+      "start_seconds": 646.12,
+      "end_seconds": 655.2
+    },
+    {
+      "text": "でも水の中では彼らは優雅に動きます。",
+      "start_seconds": 650.519,
+      "end_seconds": 660.399
+    },
+    {
+      "text": "そして写真を見てこう驚くんです。",
+      "start_seconds": 655.2,
+      "end_seconds": 662.0400000000001
+    },
+    {
+      "text": "まるで",
+      "start_seconds": 660.399,
+      "end_seconds": 666.56
+    },
+    {
+      "text": "昔の自分を見ているみたいだ。",
+      "start_seconds": 662.04,
+      "end_seconds": 666.56
+    },
+    {
+      "text": "写真はただの記録ではありません。",
+      "start_seconds": 666.88,
+      "end_seconds": 674.48
+    },
+    {
+      "text": "私はまだ私だ。そう思い出させてくれる",
+      "start_seconds": 670.8,
+      "end_seconds": 678.959
+    },
+    {
+      "text": "一生のお守りです。",
+      "start_seconds": 674.48,
+      "end_seconds": 678.9590000000001
+    },
+    {
+      "text": "ある方の家族がこう私に教えてくれました",
+      "start_seconds": 679.88,
+      "end_seconds": 685.2
+    },
+    {
+      "text": "。",
+      "start_seconds": 682.48,
+      "end_seconds": 688.0790000000001
+    },
+    {
+      "text": "娘の案内笑顔もう見られないと思っていた",
+      "start_seconds": 685.2,
+      "end_seconds": 691.519
+    },
+    {
+      "text": "と声を振わせながら",
+      "start_seconds": 688.079,
+      "end_seconds": 693.8389999999999
+    },
+    {
+      "text": "最後にありがとうとハグをしてくれました",
+      "start_seconds": 691.519,
+      "end_seconds": 696.36
+    },
+    {
+      "text": "。",
+      "start_seconds": 693.839,
+      "end_seconds": 696.36
+    },
+    {
+      "text": "水が",
+      "start_seconds": 696.399,
+      "end_seconds": 703.2
+    },
+    {
+      "text": "彼女を引き戻してくれたんです。",
+      "start_seconds": 698.16,
+      "end_seconds": 703.1999999999999
+    },
+    {
+      "text": "このプロジェクトは決して病気を直すもの",
+      "start_seconds": 704.079,
+      "end_seconds": 711.3199999999999
+    },
+    {
+      "text": "ではありません。でも回復の長い道乗りの",
+      "start_seconds": 707.16,
+      "end_seconds": 716.079
+    },
+    {
+      "text": "中でもう1度自分にチャンスをくれると私",
+      "start_seconds": 711.32,
+      "end_seconds": 720.12
+    },
+    {
+      "text": "は信じています。",
+      "start_seconds": 716.079,
+      "end_seconds": 720.12
+    },
+    {
+      "text": "水は平等にする。ジャッジしない。私たち",
+      "start_seconds": 720.639,
+      "end_seconds": 731.279
+    },
+    {
+      "text": "をつぎ直してくれる。それではなぜ水なの",
+      "start_seconds": 726.72,
+      "end_seconds": 733.639
+    },
+    {
+      "text": "でしょうか?",
+      "start_seconds": 731.279,
+      "end_seconds": 736.68
+    },
+    {
+      "text": "水による癒しは世界中の文化に存在してい",
+      "start_seconds": 733.639,
+      "end_seconds": 738.9590000000001
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 736.68,
+      "end_seconds": 742.88
+    },
+    {
+      "text": "キリスト教では精霊があります。",
+      "start_seconds": 738.959,
+      "end_seconds": 748.4799999999999
+    },
+    {
+      "text": "ヒル教では元実側で目欲します。",
+      "start_seconds": 742.88,
+      "end_seconds": 752.04
+    },
+    {
+      "text": "新党では他企業があります。",
+      "start_seconds": 748.48,
+      "end_seconds": 757.0790000000001
+    },
+    {
+      "text": "私は思います。人類は知っていたんです。",
+      "start_seconds": 752.04,
+      "end_seconds": 762.5999999999999
+    },
+    {
+      "text": "水に没入すること自体が癒しになる。心を",
+      "start_seconds": 757.079,
+      "end_seconds": 768.16
+    },
+    {
+      "text": "清め、整え、生まれ変わらせる。",
+      "start_seconds": 762.6,
+      "end_seconds": 768.16
+    },
+    {
+      "text": "覚えていますか?私がお話しした生存者の",
+      "start_seconds": 768.36,
+      "end_seconds": 775.72
+    },
+    {
+      "text": "罪悪感のこと。",
+      "start_seconds": 773.12,
+      "end_seconds": 778.72
+    },
+    {
+      "text": "実はもう1つお話ししていないことがあり",
+      "start_seconds": 775.72,
+      "end_seconds": 781.88
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 778.72,
+      "end_seconds": 781.88
+    },
+    {
+      "text": "事故の日運転していたのは地でした。",
+      "start_seconds": 783.399,
+      "end_seconds": 789.48
+    },
+    {
+      "text": "でもその前まで私が運転してたんです。",
+      "start_seconds": 790.04,
+      "end_seconds": 797.04
+    },
+    {
+      "text": "夜も",
+      "start_seconds": 795.199,
+      "end_seconds": 800.8
+    },
+    {
+      "text": "疲れていた私は父に運転を変わってと頼み",
+      "start_seconds": 797.04,
+      "end_seconds": 803.7199999999999
+    },
+    {
+      "text": "ました。",
+      "start_seconds": 800.8,
+      "end_seconds": 807.8
+    },
+    {
+      "text": "父の方が疲れていたはずです。でも彼は",
+      "start_seconds": 803.72,
+      "end_seconds": 811.36
+    },
+    {
+      "text": "優しく運転を変わってくれました。",
+      "start_seconds": 807.8,
+      "end_seconds": 815.4399999999999
+    },
+    {
+      "text": "そしてその後タイヤが破裂し、事故が起き",
+      "start_seconds": 811.36,
+      "end_seconds": 818.6800000000001
+    },
+    {
+      "text": "ました。",
+      "start_seconds": 815.44,
+      "end_seconds": 818.6800000000001
+    },
+    {
+      "text": "私は長い間館の中にいました。",
+      "start_seconds": 818.839,
+      "end_seconds": 827.32
+    },
+    {
+      "text": "後悔と怒りをずっと心の奥に沈めていまし",
+      "start_seconds": 824.0,
+      "end_seconds": 830.16
+    },
+    {
+      "text": "た。",
+      "start_seconds": 827.32,
+      "end_seconds": 833.519
+    },
+    {
+      "text": "でもスキューバと水泳を始めて何かが",
+      "start_seconds": 830.16,
+      "end_seconds": 836.4399999999999
+    },
+    {
+      "text": "変わったんです。",
+      "start_seconds": 833.519,
+      "end_seconds": 840.279
+    },
+    {
+      "text": "水の中でその沈めていたことと向き合う",
+      "start_seconds": 836.44,
+      "end_seconds": 843.0790000000001
+    },
+    {
+      "text": "ことができた。",
+      "start_seconds": 840.279,
+      "end_seconds": 843.079
+    },
+    {
+      "text": "恋に出したら何か少し軽くなりました。",
+      "start_seconds": 844.44,
+      "end_seconds": 853.44
+    },
+    {
+      "text": "そしてずっと重かったのは",
+      "start_seconds": 850.72,
+      "end_seconds": 856.8000000000001
+    },
+    {
+      "text": "事故そのものではなくずっと誰にも言え",
+      "start_seconds": 853.44,
+      "end_seconds": 861.1990000000001
+    },
+    {
+      "text": "なかったその内緒の重さでした。",
+      "start_seconds": 856.8,
+      "end_seconds": 865.04
+    },
+    {
+      "text": "もちろん今でも後悔はあります。怒りが",
+      "start_seconds": 861.199,
+      "end_seconds": 869.199
+    },
+    {
+      "text": "ある時もあります。でもそれはもう私を",
+      "start_seconds": 865.04,
+      "end_seconds": 873.92
+    },
+    {
+      "text": "押しつすような重さではなくなりました。",
+      "start_seconds": 869.199,
+      "end_seconds": 878.3599999999999
+    },
+    {
+      "text": "本当の癒しは強く見せることからではなく",
+      "start_seconds": 873.92,
+      "end_seconds": 882.36
+    },
+    {
+      "text": "正直さから始まるんだと思います。そして",
+      "start_seconds": 878.36,
+      "end_seconds": 886.0
+    },
+    {
+      "text": "正直になった時人はやっと前を向けるんだ",
+      "start_seconds": 882.36,
+      "end_seconds": 888.399
+    },
+    {
+      "text": "と。",
+      "start_seconds": 886.0,
+      "end_seconds": 893.079
+    },
+    {
+      "text": "だから皆さんにもお願いがあります。",
+      "start_seconds": 888.399,
+      "end_seconds": 897.12
+    },
+    {
+      "text": "あなたの水を見つけてください。",
+      "start_seconds": 893.079,
+      "end_seconds": 900.519
+    },
+    {
+      "text": "悪ヨガでもいい。悪セラピーでもいい。",
+      "start_seconds": 897.12,
+      "end_seconds": 904.48
+    },
+    {
+      "text": "水泳スクーバでもいい。あなたが完全に",
+      "start_seconds": 900.519,
+      "end_seconds": 907.24
+    },
+    {
+      "text": "没入できる場所。",
+      "start_seconds": 904.48,
+      "end_seconds": 911.36
+    },
+    {
+      "text": "守りを少し緩めて重さを手放して本当の",
+      "start_seconds": 907.24,
+      "end_seconds": 914.12
+    },
+    {
+      "text": "自分に戻れる場所",
+      "start_seconds": 911.36,
+      "end_seconds": 917.399
+    },
+    {
+      "text": "持ってて欲しいなと思います。",
+      "start_seconds": 914.12,
+      "end_seconds": 922.24
+    },
+    {
+      "text": "なぜなら完全なる没入は本当の自分を",
+      "start_seconds": 917.399,
+      "end_seconds": 926.16
+    },
+    {
+      "text": "呼び戻してくれるからです。",
+      "start_seconds": 922.24,
+      "end_seconds": 929.9590000000001
+    },
+    {
+      "text": "ありがとうございました。",
+      "start_seconds": 926.16,
+      "end_seconds": 929.959
+    }
+  ],
+  "display_captions": [
+    {
+      "text": "皆さんは最後に心から息を吐いたのはいつ",
+      "start_seconds": 21.6,
+      "end_seconds": 24.72,
+      "id": "zJISTWMdz0c-display-0001",
+      "segment_id": "zJISTWMdz0c-ja-0001"
+    },
+    {
+      "text": "ですか?ただ呼吸をするというのではなく",
+      "start_seconds": 24.72,
+      "end_seconds": 28.32,
+      "id": "zJISTWMdz0c-display-0002",
+      "segment_id": "zJISTWMdz0c-ja-0001"
+    },
+    {
+      "text": "、心の奥に詰まっていたものまで手放す",
+      "start_seconds": 28.32,
+      "end_seconds": 31.84,
+      "id": "zJISTWMdz0c-display-0003",
+      "segment_id": "zJISTWMdz0c-ja-0001"
+    },
+    {
+      "text": "ように履いたのはいつだったでしょうか?",
+      "start_seconds": 31.84,
+      "end_seconds": 35.399,
+      "id": "zJISTWMdz0c-display-0004",
+      "segment_id": "zJISTWMdz0c-ja-0002"
+    },
+    {
+      "text": "皆さん今日は水中の世界へようこそ。",
+      "start_seconds": 35.399,
+      "end_seconds": 40.039,
+      "id": "zJISTWMdz0c-display-0005",
+      "segment_id": "zJISTWMdz0c-ja-0003"
+    },
+    {
+      "text": "私は人が水の中で変わる瞬間を取り続けて",
+      "start_seconds": 40.039,
+      "end_seconds": 43.559,
+      "id": "zJISTWMdz0c-display-0006",
+      "segment_id": "zJISTWMdz0c-ja-0004"
+    },
+    {
+      "text": "います。でも本当に映しているのは重さを",
+      "start_seconds": 43.559,
+      "end_seconds": 47.52,
+      "id": "zJISTWMdz0c-display-0007",
+      "segment_id": "zJISTWMdz0c-ja-0004"
+    },
+    {
+      "text": "手放した瞬間です。",
+      "start_seconds": 47.52,
+      "end_seconds": 50.879,
+      "id": "zJISTWMdz0c-display-0008",
+      "segment_id": "zJISTWMdz0c-ja-0004"
+    },
+    {
+      "text": "水に入ると人は変わります。でもその扉を",
+      "start_seconds": 50.879,
+      "end_seconds": 55.399,
+      "id": "zJISTWMdz0c-display-0009",
+      "segment_id": "zJISTWMdz0c-ja-0005"
+    },
+    {
+      "text": "開くにはいくつかの重要な鍵が必要です。",
+      "start_seconds": 55.399,
+      "end_seconds": 60.399,
+      "id": "zJISTWMdz0c-display-0010",
+      "segment_id": "zJISTWMdz0c-ja-0005"
+    },
+    {
+      "text": "恐れを、後悔を、余分なものを全部手放す",
+      "start_seconds": 60.399,
+      "end_seconds": 64.559,
+      "id": "zJISTWMdz0c-display-0011",
+      "segment_id": "zJISTWMdz0c-ja-0006"
+    },
+    {
+      "text": "こと。",
+      "start_seconds": 64.559,
+      "end_seconds": 66.36,
+      "id": "zJISTWMdz0c-display-0012",
+      "segment_id": "zJISTWMdz0c-ja-0006"
+    },
+    {
+      "text": "では、その手放し方を一緒に練習し",
+      "start_seconds": 66.36,
+      "end_seconds": 69.08,
+      "id": "zJISTWMdz0c-display-0013",
+      "segment_id": "zJISTWMdz0c-ja-0007"
+    },
+    {
+      "text": "ましょう。そして皆様にも少しだけ没入の",
+      "start_seconds": 69.08,
+      "end_seconds": 72.88,
+      "id": "zJISTWMdz0c-display-0014",
+      "segment_id": "zJISTWMdz0c-ja-0007"
+    },
+    {
+      "text": "体験をしてしていただきたいと思います。",
+      "start_seconds": 72.88,
+      "end_seconds": 77.52,
+      "id": "zJISTWMdz0c-display-0015",
+      "segment_id": "zJISTWMdz0c-ja-0007"
+    },
+    {
+      "text": "まずは呼吸から",
+      "start_seconds": 77.52,
+      "end_seconds": 80.68,
+      "id": "zJISTWMdz0c-display-0016",
+      "segment_id": "zJISTWMdz0c-ja-0008"
+    },
+    {
+      "text": "5秒吸って5秒ゆっくり吐きます。",
+      "start_seconds": 80.68,
+      "end_seconds": 84.84,
+      "id": "zJISTWMdz0c-display-0017",
+      "segment_id": "zJISTWMdz0c-ja-0008"
+    },
+    {
+      "text": "肩から吸うのではなく、胸とお腹の合間に",
+      "start_seconds": 84.84,
+      "end_seconds": 88.759,
+      "id": "zJISTWMdz0c-display-0018",
+      "segment_id": "zJISTWMdz0c-ja-0009"
+    },
+    {
+      "text": "手を当てて、ここが広がるように2回だけ",
+      "start_seconds": 88.759,
+      "end_seconds": 93.159,
+      "id": "zJISTWMdz0c-display-0019",
+      "segment_id": "zJISTWMdz0c-ja-0009"
+    },
+    {
+      "text": "一緒にしましょう。いいですか?",
+      "start_seconds": 93.159,
+      "end_seconds": 97.64,
+      "id": "zJISTWMdz0c-display-0020",
+      "segment_id": "zJISTWMdz0c-ja-0010"
+    },
+    {
+      "text": "吸って。",
+      "start_seconds": 97.64,
+      "end_seconds": 101.119,
+      "id": "zJISTWMdz0c-display-0021",
+      "segment_id": "zJISTWMdz0c-ja-0011"
+    },
+    {
+      "text": "吐いて。",
+      "start_seconds": 104.439,
+      "end_seconds": 107.88,
+      "id": "zJISTWMdz0c-display-0022",
+      "segment_id": "zJISTWMdz0c-ja-0012"
+    },
+    {
+      "text": "吸って",
+      "start_seconds": 111.24,
+      "end_seconds": 114.52,
+      "id": "zJISTWMdz0c-display-0023",
+      "segment_id": "zJISTWMdz0c-ja-0013"
+    },
+    {
+      "text": "吐いて。",
+      "start_seconds": 118.36,
+      "end_seconds": 121.84,
+      "id": "zJISTWMdz0c-display-0024",
+      "segment_id": "zJISTWMdz0c-ja-0014"
+    },
+    {
+      "text": "ありがとうございます。",
+      "start_seconds": 124.88,
+      "end_seconds": 127.24,
+      "id": "zJISTWMdz0c-display-0025",
+      "segment_id": "zJISTWMdz0c-ja-0015"
+    },
+    {
+      "text": "この中にスクーバダイバーの方は",
+      "start_seconds": 127.24,
+      "end_seconds": 129.16,
+      "id": "zJISTWMdz0c-display-0026",
+      "segment_id": "zJISTWMdz0c-ja-0016"
+    },
+    {
+      "text": "いらっしゃいますか?",
+      "start_seconds": 129.16,
+      "end_seconds": 132.56,
+      "id": "zJISTWMdz0c-display-0027",
+      "segment_id": "zJISTWMdz0c-ja-0016"
+    },
+    {
+      "text": "ダイバーの方はもうよくご存知だと思い",
+      "start_seconds": 132.56,
+      "end_seconds": 134.519,
+      "id": "zJISTWMdz0c-display-0028",
+      "segment_id": "zJISTWMdz0c-ja-0017"
+    },
+    {
+      "text": "ますが、スクーバにはある1つの面白い",
+      "start_seconds": 134.519,
+      "end_seconds": 137.72,
+      "id": "zJISTWMdz0c-display-0029",
+      "segment_id": "zJISTWMdz0c-ja-0017"
+    },
+    {
+      "text": "真実があります。",
+      "start_seconds": 137.72,
+      "end_seconds": 141.08,
+      "id": "zJISTWMdz0c-display-0030",
+      "segment_id": "zJISTWMdz0c-ja-0017"
+    },
+    {
+      "text": "沈むためには息を吐かなければならない。",
+      "start_seconds": 141.08,
+      "end_seconds": 145.28,
+      "id": "zJISTWMdz0c-display-0031",
+      "segment_id": "zJISTWMdz0c-ja-0018"
+    },
+    {
+      "text": "肺は風船のようなものです。空気が入って",
+      "start_seconds": 145.28,
+      "end_seconds": 148.56,
+      "id": "zJISTWMdz0c-display-0032",
+      "segment_id": "zJISTWMdz0c-ja-0019"
+    },
+    {
+      "text": "いれば浮き、空気を抜けば沈みます。",
+      "start_seconds": 148.56,
+      "end_seconds": 153.16,
+      "id": "zJISTWMdz0c-display-0033",
+      "segment_id": "zJISTWMdz0c-ja-0019"
+    },
+    {
+      "text": "私はこのことが人生にとてもよく似ている",
+      "start_seconds": 153.16,
+      "end_seconds": 156.239,
+      "id": "zJISTWMdz0c-display-0034",
+      "segment_id": "zJISTWMdz0c-ja-0020"
+    },
+    {
+      "text": "と思っています。",
+      "start_seconds": 156.239,
+      "end_seconds": 158.959,
+      "id": "zJISTWMdz0c-display-0035",
+      "segment_id": "zJISTWMdz0c-ja-0020"
+    },
+    {
+      "text": "地上では私たちはいつも何かを抱えてい",
+      "start_seconds": 158.959,
+      "end_seconds": 161.8,
+      "id": "zJISTWMdz0c-display-0036",
+      "segment_id": "zJISTWMdz0c-ja-0021"
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 161.8,
+      "end_seconds": 163.72,
+      "id": "zJISTWMdz0c-display-0037",
+      "segment_id": "zJISTWMdz0c-ja-0021"
+    },
+    {
+      "text": "重力、責任そして過去",
+      "start_seconds": 163.72,
+      "end_seconds": 167.64,
+      "id": "zJISTWMdz0c-display-0038",
+      "segment_id": "zJISTWMdz0c-ja-0022"
+    },
+    {
+      "text": "でも水の中ではその重さが消えます。",
+      "start_seconds": 167.64,
+      "end_seconds": 171.44,
+      "id": "zJISTWMdz0c-display-0039",
+      "segment_id": "zJISTWMdz0c-ja-0022"
+    },
+    {
+      "text": "そして私は気づきました。",
+      "start_seconds": 171.44,
+      "end_seconds": 175.12,
+      "id": "zJISTWMdz0c-display-0040",
+      "segment_id": "zJISTWMdz0c-ja-0023"
+    },
+    {
+      "text": "何かを手放した時人は軽くなる。",
+      "start_seconds": 175.12,
+      "end_seconds": 179.56,
+      "id": "zJISTWMdz0c-display-0041",
+      "segment_id": "zJISTWMdz0c-ja-0024"
+    },
+    {
+      "text": "今日はそのことについてお話ししたいと",
+      "start_seconds": 179.56,
+      "end_seconds": 181.64,
+      "id": "zJISTWMdz0c-display-0042",
+      "segment_id": "zJISTWMdz0c-ja-0025"
+    },
+    {
+      "text": "思います。",
+      "start_seconds": 181.64,
+      "end_seconds": 184.92,
+      "id": "zJISTWMdz0c-display-0043",
+      "segment_id": "zJISTWMdz0c-ja-0025"
+    },
+    {
+      "text": "私は日本で生まれ、東京で育ちました。",
+      "start_seconds": 186.0,
+      "end_seconds": 191.0,
+      "id": "zJISTWMdz0c-display-0044",
+      "segment_id": "zJISTWMdz0c-ja-0026"
+    },
+    {
+      "text": "1989年、父の転勤で家族と共に",
+      "start_seconds": 191.0,
+      "end_seconds": 195.599,
+      "id": "zJISTWMdz0c-display-0045",
+      "segment_id": "zJISTWMdz0c-ja-0027"
+    },
+    {
+      "text": "カリフォルニアに移住しました。",
+      "start_seconds": 195.599,
+      "end_seconds": 199.0,
+      "id": "zJISTWMdz0c-display-0046",
+      "segment_id": "zJISTWMdz0c-ja-0027"
+    },
+    {
+      "text": "毎年夏になると私たちは家族でドライブ",
+      "start_seconds": 199.0,
+      "end_seconds": 202.48,
+      "id": "zJISTWMdz0c-display-0047",
+      "segment_id": "zJISTWMdz0c-ja-0028"
+    },
+    {
+      "text": "旅行に出かけてました。",
+      "start_seconds": 202.48,
+      "end_seconds": 206.0,
+      "id": "zJISTWMdz0c-display-0048",
+      "segment_id": "zJISTWMdz0c-ja-0028"
+    },
+    {
+      "text": "それが当たり前のように続くはずでした。",
+      "start_seconds": 206.0,
+      "end_seconds": 210.72,
+      "id": "zJISTWMdz0c-display-0049",
+      "segment_id": "zJISTWMdz0c-ja-0029"
+    },
+    {
+      "text": "でもある夏、私たちは大きな交通事故に",
+      "start_seconds": 210.72,
+      "end_seconds": 214.599,
+      "id": "zJISTWMdz0c-display-0050",
+      "segment_id": "zJISTWMdz0c-ja-0030"
+    },
+    {
+      "text": "会いました。",
+      "start_seconds": 214.599,
+      "end_seconds": 217.599,
+      "id": "zJISTWMdz0c-display-0051",
+      "segment_id": "zJISTWMdz0c-ja-0030"
+    },
+    {
+      "text": "私は車の窓から外へ投げ出され、重度の",
+      "start_seconds": 217.599,
+      "end_seconds": 221.92,
+      "id": "zJISTWMdz0c-display-0052",
+      "segment_id": "zJISTWMdz0c-ja-0031"
+    },
+    {
+      "text": "脳害を追い、ほぼ全身日々と骨折を追い",
+      "start_seconds": 221.92,
+      "end_seconds": 226.36,
+      "id": "zJISTWMdz0c-display-0053",
+      "segment_id": "zJISTWMdz0c-ja-0031"
+    },
+    {
+      "text": "ました。",
+      "start_seconds": 226.36,
+      "end_seconds": 228.76,
+      "id": "zJISTWMdz0c-display-0054",
+      "segment_id": "zJISTWMdz0c-ja-0031"
+    },
+    {
+      "text": "普通の生活に戻るまで",
+      "start_seconds": 228.76,
+      "end_seconds": 231.72,
+      "id": "zJISTWMdz0c-display-0055",
+      "segment_id": "zJISTWMdz0c-ja-0032"
+    },
+    {
+      "text": "2年と数ヶ月かかりました。",
+      "start_seconds": 231.72,
+      "end_seconds": 235.599,
+      "id": "zJISTWMdz0c-display-0056",
+      "segment_id": "zJISTWMdz0c-ja-0032"
+    },
+    {
+      "text": "私は生き残りました。",
+      "start_seconds": 235.599,
+      "end_seconds": 239.0,
+      "id": "zJISTWMdz0c-display-0057",
+      "segment_id": "zJISTWMdz0c-ja-0033"
+    },
+    {
+      "text": "でも父はなくなりました。",
+      "start_seconds": 239.0,
+      "end_seconds": 243.319,
+      "id": "zJISTWMdz0c-display-0058",
+      "segment_id": "zJISTWMdz0c-ja-0034"
+    },
+    {
+      "text": "ずっと思っていたのがどうして私が",
+      "start_seconds": 243.319,
+      "end_seconds": 246.519,
+      "id": "zJISTWMdz0c-display-0059",
+      "segment_id": "zJISTWMdz0c-ja-0035"
+    },
+    {
+      "text": "生き残ったんだろうという問いでした。",
+      "start_seconds": 246.519,
+      "end_seconds": 250.76,
+      "id": "zJISTWMdz0c-display-0060",
+      "segment_id": "zJISTWMdz0c-ja-0035"
+    },
+    {
+      "text": "でもある方がこう教えてくれたんです。",
+      "start_seconds": 250.76,
+      "end_seconds": 254.439,
+      "id": "zJISTWMdz0c-display-0061",
+      "segment_id": "zJISTWMdz0c-ja-0036"
+    },
+    {
+      "text": "あなたのお父さんが守ってくれたんだよと",
+      "start_seconds": 254.439,
+      "end_seconds": 256.479,
+      "id": "zJISTWMdz0c-display-0062",
+      "segment_id": "zJISTWMdz0c-ja-0037"
+    },
+    {
+      "text": "。",
+      "start_seconds": 256.479,
+      "end_seconds": 258.639,
+      "id": "zJISTWMdz0c-display-0063",
+      "segment_id": "zJISTWMdz0c-ja-0037"
+    },
+    {
+      "text": "でも私は感謝よりも罪悪感の方が大きかっ",
+      "start_seconds": 258.639,
+      "end_seconds": 262.56,
+      "id": "zJISTWMdz0c-display-0064",
+      "segment_id": "zJISTWMdz0c-ja-0038"
+    },
+    {
+      "text": "た。",
+      "start_seconds": 262.56,
+      "end_seconds": 264.88,
+      "id": "zJISTWMdz0c-display-0065",
+      "segment_id": "zJISTWMdz0c-ja-0038"
+    },
+    {
+      "text": "生存者の罪悪感、欲鬱。として生きている",
+      "start_seconds": 264.88,
+      "end_seconds": 269.4,
+      "id": "zJISTWMdz0c-display-0066",
+      "segment_id": "zJISTWMdz0c-ja-0039"
+    },
+    {
+      "text": "意味がよくわからなくなっていく感覚",
+      "start_seconds": 269.4,
+      "end_seconds": 273.88,
+      "id": "zJISTWMdz0c-display-0067",
+      "segment_id": "zJISTWMdz0c-ja-0039"
+    },
+    {
+      "text": "でも心のどこかでこうも持ってました。",
+      "start_seconds": 273.88,
+      "end_seconds": 278.479,
+      "id": "zJISTWMdz0c-display-0068",
+      "segment_id": "zJISTWMdz0c-ja-0040"
+    },
+    {
+      "text": "もし生き残ったのならこの命を無駄にし",
+      "start_seconds": 278.479,
+      "end_seconds": 281.56,
+      "id": "zJISTWMdz0c-display-0069",
+      "segment_id": "zJISTWMdz0c-ja-0041"
+    },
+    {
+      "text": "たくない。社会にコミュニティに恩返しの",
+      "start_seconds": 281.56,
+      "end_seconds": 285.88,
+      "id": "zJISTWMdz0c-display-0070",
+      "segment_id": "zJISTWMdz0c-ja-0041"
+    },
+    {
+      "text": "できる生き方をしたい。そして父に誇りに",
+      "start_seconds": 285.88,
+      "end_seconds": 290.28,
+      "id": "zJISTWMdz0c-display-0071",
+      "segment_id": "zJISTWMdz0c-ja-0041"
+    },
+    {
+      "text": "持ってもらえる人生を歩みたい。",
+      "start_seconds": 290.28,
+      "end_seconds": 294.44,
+      "id": "zJISTWMdz0c-display-0072",
+      "segment_id": "zJISTWMdz0c-ja-0042"
+    },
+    {
+      "text": "その大きな天気になったのが",
+      "start_seconds": 294.44,
+      "end_seconds": 297.759,
+      "id": "zJISTWMdz0c-display-0073",
+      "segment_id": "zJISTWMdz0c-ja-0043"
+    },
+    {
+      "text": "スクーバ大便との出会いでした。",
+      "start_seconds": 297.759,
+      "end_seconds": 301.84,
+      "id": "zJISTWMdz0c-display-0074",
+      "segment_id": "zJISTWMdz0c-ja-0043"
+    },
+    {
+      "text": "初めて海に潜った時、私は驚きました。",
+      "start_seconds": 301.84,
+      "end_seconds": 306.759,
+      "id": "zJISTWMdz0c-display-0075",
+      "segment_id": "zJISTWMdz0c-ja-0044"
+    },
+    {
+      "text": "ああ、これだと思いました。",
+      "start_seconds": 306.759,
+      "end_seconds": 311.759,
+      "id": "zJISTWMdz0c-display-0076",
+      "segment_id": "zJISTWMdz0c-ja-0045"
+    },
+    {
+      "text": "海の毛布に包み込まれるような温かくて",
+      "start_seconds": 311.759,
+      "end_seconds": 315.6,
+      "id": "zJISTWMdz0c-display-0077",
+      "segment_id": "zJISTWMdz0c-ja-0046"
+    },
+    {
+      "text": "安心できる場所でした。",
+      "start_seconds": 315.6,
+      "end_seconds": 319.12,
+      "id": "zJISTWMdz0c-display-0078",
+      "segment_id": "zJISTWMdz0c-ja-0046"
+    },
+    {
+      "text": "そこには成準がありました。",
+      "start_seconds": 319.12,
+      "end_seconds": 323.319,
+      "id": "zJISTWMdz0c-display-0079",
+      "segment_id": "zJISTWMdz0c-ja-0047"
+    },
+    {
+      "text": "人生で初めて頭の中が静かになりました。",
+      "start_seconds": 323.319,
+      "end_seconds": 329.36,
+      "id": "zJISTWMdz0c-display-0080",
+      "segment_id": "zJISTWMdz0c-ja-0048"
+    },
+    {
+      "text": "全てがスローモーションで精神と身体が",
+      "start_seconds": 329.36,
+      "end_seconds": 333.319,
+      "id": "zJISTWMdz0c-display-0081",
+      "segment_id": "zJISTWMdz0c-ja-0049"
+    },
+    {
+      "text": "ゆっくり癒されていく感覚。",
+      "start_seconds": 333.319,
+      "end_seconds": 337.039,
+      "id": "zJISTWMdz0c-display-0082",
+      "segment_id": "zJISTWMdz0c-ja-0049"
+    },
+    {
+      "text": "そこで私はこの空間が自分にとって1番",
+      "start_seconds": 337.039,
+      "end_seconds": 340.96,
+      "id": "zJISTWMdz0c-display-0083",
+      "segment_id": "zJISTWMdz0c-ja-0050"
+    },
+    {
+      "text": "安心できる場所だと気づき始めました。",
+      "start_seconds": 340.96,
+      "end_seconds": 345.919,
+      "id": "zJISTWMdz0c-display-0084",
+      "segment_id": "zJISTWMdz0c-ja-0050"
+    },
+    {
+      "text": "そしてこの美しい空間をやがて写真となっ",
+      "start_seconds": 345.919,
+      "end_seconds": 348.88,
+      "id": "zJISTWMdz0c-display-0085",
+      "segment_id": "zJISTWMdz0c-ja-0051"
+    },
+    {
+      "text": "ていきました。",
+      "start_seconds": 348.88,
+      "end_seconds": 351.84,
+      "id": "zJISTWMdz0c-display-0086",
+      "segment_id": "zJISTWMdz0c-ja-0051"
+    },
+    {
+      "text": "その写真をみんなとシェアして楽しんで",
+      "start_seconds": 351.84,
+      "end_seconds": 354.479,
+      "id": "zJISTWMdz0c-display-0087",
+      "segment_id": "zJISTWMdz0c-ja-0052"
+    },
+    {
+      "text": "いるうちに気づけばスクーバダイビングと",
+      "start_seconds": 354.479,
+      "end_seconds": 358.0,
+      "id": "zJISTWMdz0c-display-0088",
+      "segment_id": "zJISTWMdz0c-ja-0052"
+    },
+    {
+      "text": "水中写真が私の生きがいとなっていました",
+      "start_seconds": 358.0,
+      "end_seconds": 361.039,
+      "id": "zJISTWMdz0c-display-0089",
+      "segment_id": "zJISTWMdz0c-ja-0052"
+    },
+    {
+      "text": "。",
+      "start_seconds": 361.039,
+      "end_seconds": 363.52,
+      "id": "zJISTWMdz0c-display-0090",
+      "segment_id": "zJISTWMdz0c-ja-0052"
+    },
+    {
+      "text": "初めの飛車隊は海の生き物たちでした。",
+      "start_seconds": 363.52,
+      "end_seconds": 368.16,
+      "id": "zJISTWMdz0c-display-0091",
+      "segment_id": "zJISTWMdz0c-ja-0053"
+    },
+    {
+      "text": "そして海にも潜れない時はプールへ人を",
+      "start_seconds": 368.16,
+      "end_seconds": 371.36,
+      "id": "zJISTWMdz0c-display-0092",
+      "segment_id": "zJISTWMdz0c-ja-0054"
+    },
+    {
+      "text": "取るようになりました。",
+      "start_seconds": 371.36,
+      "end_seconds": 374.68,
+      "id": "zJISTWMdz0c-display-0093",
+      "segment_id": "zJISTWMdz0c-ja-0054"
+    },
+    {
+      "text": "私が撮影で大切にしているのはこれが本当",
+      "start_seconds": 374.68,
+      "end_seconds": 378.56,
+      "id": "zJISTWMdz0c-display-0094",
+      "segment_id": "zJISTWMdz0c-ja-0055"
+    },
+    {
+      "text": "の自分として水に入ることです。",
+      "start_seconds": 378.56,
+      "end_seconds": 382.319,
+      "id": "zJISTWMdz0c-display-0095",
+      "segment_id": "zJISTWMdz0c-ja-0055"
+    },
+    {
+      "text": "だから水着だけではなく自分の好きな服を",
+      "start_seconds": 382.319,
+      "end_seconds": 386.12,
+      "id": "zJISTWMdz0c-display-0096",
+      "segment_id": "zJISTWMdz0c-ja-0056"
+    },
+    {
+      "text": "選んでもらってます。",
+      "start_seconds": 386.12,
+      "end_seconds": 389.24,
+      "id": "zJISTWMdz0c-display-0097",
+      "segment_id": "zJISTWMdz0c-ja-0056"
+    },
+    {
+      "text": "そして数年後、私の飛者隊は癌の克服者、",
+      "start_seconds": 389.24,
+      "end_seconds": 394.16,
+      "id": "zJISTWMdz0c-display-0098",
+      "segment_id": "zJISTWMdz0c-ja-0057"
+    },
+    {
+      "text": "癌のサバイバーへと変わっていきました。",
+      "start_seconds": 394.16,
+      "end_seconds": 397.8,
+      "id": "zJISTWMdz0c-display-0099",
+      "segment_id": "zJISTWMdz0c-ja-0057"
+    },
+    {
+      "text": "そのきっかけは私が癌がの患者さんが",
+      "start_seconds": 397.8,
+      "end_seconds": 400.96,
+      "id": "zJISTWMdz0c-display-0100",
+      "segment_id": "zJISTWMdz0c-ja-0058"
+    },
+    {
+      "text": "集まるミーティングでボランティアをした",
+      "start_seconds": 400.96,
+      "end_seconds": 403.0,
+      "id": "zJISTWMdz0c-display-0101",
+      "segment_id": "zJISTWMdz0c-ja-0058"
+    },
+    {
+      "text": "のが始まりです。",
+      "start_seconds": 403.0,
+      "end_seconds": 406.12,
+      "id": "zJISTWMdz0c-display-0102",
+      "segment_id": "zJISTWMdz0c-ja-0058"
+    },
+    {
+      "text": "現在はプロジェクトの幅を広め、PTST",
+      "start_seconds": 406.12,
+      "end_seconds": 411.039,
+      "id": "zJISTWMdz0c-display-0103",
+      "segment_id": "zJISTWMdz0c-ja-0059"
+    },
+    {
+      "text": "トラウマ、障害を抱えた人たちの撮影を",
+      "start_seconds": 411.039,
+      "end_seconds": 414.28,
+      "id": "zJISTWMdz0c-display-0104",
+      "segment_id": "zJISTWMdz0c-ja-0059"
+    },
+    {
+      "text": "水中で行っています。",
+      "start_seconds": 414.28,
+      "end_seconds": 418.24,
+      "id": "zJISTWMdz0c-display-0105",
+      "segment_id": "zJISTWMdz0c-ja-0060"
+    },
+    {
+      "text": "これまで何百人の人が水に入りました。",
+      "start_seconds": 418.24,
+      "end_seconds": 423.919,
+      "id": "zJISTWMdz0c-display-0106",
+      "segment_id": "zJISTWMdz0c-ja-0061"
+    },
+    {
+      "text": "そして私は彼らの変化を見てきました。",
+      "start_seconds": 423.919,
+      "end_seconds": 429.56,
+      "id": "zJISTWMdz0c-display-0107",
+      "segment_id": "zJISTWMdz0c-ja-0062"
+    },
+    {
+      "text": "その中の3つの大きな変化をお話しします",
+      "start_seconds": 429.56,
+      "end_seconds": 432.96,
+      "id": "zJISTWMdz0c-display-0108",
+      "segment_id": "zJISTWMdz0c-ja-0063"
+    },
+    {
+      "text": "。",
+      "start_seconds": 432.96,
+      "end_seconds": 435.96,
+      "id": "zJISTWMdz0c-display-0109",
+      "segment_id": "zJISTWMdz0c-ja-0063"
+    },
+    {
+      "text": "1つ目は身体の自由です。",
+      "start_seconds": 436.759,
+      "end_seconds": 441.44,
+      "id": "zJISTWMdz0c-display-0110",
+      "segment_id": "zJISTWMdz0c-ja-0064"
+    },
+    {
+      "text": "車椅子の人、偽則の人、慢性的な痛みを",
+      "start_seconds": 441.44,
+      "end_seconds": 445.68,
+      "id": "zJISTWMdz0c-display-0111",
+      "segment_id": "zJISTWMdz0c-ja-0065"
+    },
+    {
+      "text": "抱える人。",
+      "start_seconds": 445.68,
+      "end_seconds": 448.28,
+      "id": "zJISTWMdz0c-display-0112",
+      "segment_id": "zJISTWMdz0c-ja-0065"
+    },
+    {
+      "text": "水の中では身体の重さが消える。",
+      "start_seconds": 448.28,
+      "end_seconds": 452.12,
+      "id": "zJISTWMdz0c-display-0113",
+      "segment_id": "zJISTWMdz0c-ja-0066"
+    },
+    {
+      "text": "関節への負担が軽くなる。",
+      "start_seconds": 452.12,
+      "end_seconds": 455.84,
+      "id": "zJISTWMdz0c-display-0114",
+      "segment_id": "zJISTWMdz0c-ja-0067"
+    },
+    {
+      "text": "ビッグの上でできなかった動きができる",
+      "start_seconds": 455.84,
+      "end_seconds": 457.8,
+      "id": "zJISTWMdz0c-display-0115",
+      "segment_id": "zJISTWMdz0c-ja-0068"
+    },
+    {
+      "text": "ようになる。",
+      "start_seconds": 457.8,
+      "end_seconds": 460.12,
+      "id": "zJISTWMdz0c-display-0116",
+      "segment_id": "zJISTWMdz0c-ja-0068"
+    },
+    {
+      "text": "不は人を支え平等にしてくれます。",
+      "start_seconds": 460.12,
+      "end_seconds": 466.08,
+      "id": "zJISTWMdz0c-display-0117",
+      "segment_id": "zJISTWMdz0c-ja-0069"
+    },
+    {
+      "text": "地上では私たちはいつも分類されます。",
+      "start_seconds": 466.159,
+      "end_seconds": 471.24,
+      "id": "zJISTWMdz0c-display-0118",
+      "segment_id": "zJISTWMdz0c-ja-0070"
+    },
+    {
+      "text": "できる人、できない人、強い人、弱い人。",
+      "start_seconds": 471.24,
+      "end_seconds": 476.96,
+      "id": "zJISTWMdz0c-display-0119",
+      "segment_id": "zJISTWMdz0c-ja-0071"
+    },
+    {
+      "text": "でも水の中では誰もがその環境をシェアし",
+      "start_seconds": 476.96,
+      "end_seconds": 480.8,
+      "id": "zJISTWMdz0c-display-0120",
+      "segment_id": "zJISTWMdz0c-ja-0072"
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 480.8,
+      "end_seconds": 482.68,
+      "id": "zJISTWMdz0c-display-0121",
+      "segment_id": "zJISTWMdz0c-ja-0072"
+    },
+    {
+      "text": "誰もが呼吸を意識します。",
+      "start_seconds": 482.68,
+      "end_seconds": 486.36,
+      "id": "zJISTWMdz0c-display-0122",
+      "segment_id": "zJISTWMdz0c-ja-0073"
+    },
+    {
+      "text": "誰もが支え合って存在します。",
+      "start_seconds": 486.36,
+      "end_seconds": 491.879,
+      "id": "zJISTWMdz0c-display-0123",
+      "segment_id": "zJISTWMdz0c-ja-0074"
+    },
+    {
+      "text": "撮影の後、彼らは嬉しそうにこう教えて",
+      "start_seconds": 492.4,
+      "end_seconds": 495.159,
+      "id": "zJISTWMdz0c-display-0124",
+      "segment_id": "zJISTWMdz0c-ja-0075"
+    },
+    {
+      "text": "くれました。",
+      "start_seconds": 495.159,
+      "end_seconds": 498.68,
+      "id": "zJISTWMdz0c-display-0125",
+      "segment_id": "zJISTWMdz0c-ja-0075"
+    },
+    {
+      "text": "水の中では痛みを感じない。",
+      "start_seconds": 498.84,
+      "end_seconds": 502.52,
+      "id": "zJISTWMdz0c-display-0126",
+      "segment_id": "zJISTWMdz0c-ja-0076"
+    },
+    {
+      "text": "車椅子なしで動くことができた。",
+      "start_seconds": 502.52,
+      "end_seconds": 506.319,
+      "id": "zJISTWMdz0c-display-0127",
+      "segment_id": "zJISTWMdz0c-ja-0077"
+    },
+    {
+      "text": "初めて立つことができた。",
+      "start_seconds": 506.319,
+      "end_seconds": 509.919,
+      "id": "zJISTWMdz0c-display-0128",
+      "segment_id": "zJISTWMdz0c-ja-0078"
+    },
+    {
+      "text": "彼らはもう障害のある身体ではありません",
+      "start_seconds": 509.919,
+      "end_seconds": 513.039,
+      "id": "zJISTWMdz0c-display-0129",
+      "segment_id": "zJISTWMdz0c-ja-0079"
+    },
+    {
+      "text": "。ただ自由に動く美しい存在になるんです",
+      "start_seconds": 513.039,
+      "end_seconds": 517.64,
+      "id": "zJISTWMdz0c-display-0130",
+      "segment_id": "zJISTWMdz0c-ja-0079"
+    },
+    {
+      "text": "。",
+      "start_seconds": 517.64,
+      "end_seconds": 520.08,
+      "id": "zJISTWMdz0c-display-0131",
+      "segment_id": "zJISTWMdz0c-ja-0079"
+    },
+    {
+      "text": "水が彼らに自由をくれたんです。",
+      "start_seconds": 520.08,
+      "end_seconds": 525.44,
+      "id": "zJISTWMdz0c-display-0132",
+      "segment_id": "zJISTWMdz0c-ja-0080"
+    },
+    {
+      "text": "2つ目は感情の解放です。",
+      "start_seconds": 526.08,
+      "end_seconds": 530.519,
+      "id": "zJISTWMdz0c-display-0133",
+      "segment_id": "zJISTWMdz0c-ja-0081"
+    },
+    {
+      "text": "ドメスティックバレンス。人身取引の被害",
+      "start_seconds": 530.519,
+      "end_seconds": 533.8,
+      "id": "zJISTWMdz0c-display-0134",
+      "segment_id": "zJISTWMdz0c-ja-0082"
+    },
+    {
+      "text": "者。PTSDを抱える軍人。",
+      "start_seconds": 533.8,
+      "end_seconds": 538.56,
+      "id": "zJISTWMdz0c-display-0135",
+      "segment_id": "zJISTWMdz0c-ja-0082"
+    },
+    {
+      "text": "水の中で彼らの表情が変わる瞬間があり",
+      "start_seconds": 538.56,
+      "end_seconds": 541.6,
+      "id": "zJISTWMdz0c-display-0136",
+      "segment_id": "zJISTWMdz0c-ja-0083"
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 541.6,
+      "end_seconds": 544.68,
+      "id": "zJISTWMdz0c-display-0137",
+      "segment_id": "zJISTWMdz0c-ja-0083"
+    },
+    {
+      "text": "恐怖が勇気に変わる瞬間です。",
+      "start_seconds": 544.68,
+      "end_seconds": 549.32,
+      "id": "zJISTWMdz0c-display-0138",
+      "segment_id": "zJISTWMdz0c-ja-0084"
+    },
+    {
+      "text": "地上では人は仮面をかぶっています。",
+      "start_seconds": 549.32,
+      "end_seconds": 554.88,
+      "id": "zJISTWMdz0c-display-0139",
+      "segment_id": "zJISTWMdz0c-ja-0085"
+    },
+    {
+      "text": "強く見せようとする仮面、",
+      "start_seconds": 554.88,
+      "end_seconds": 558.079,
+      "id": "zJISTWMdz0c-display-0140",
+      "segment_id": "zJISTWMdz0c-ja-0086"
+    },
+    {
+      "text": "大丈夫なふりをする仮面。",
+      "start_seconds": 558.079,
+      "end_seconds": 561.24,
+      "id": "zJISTWMdz0c-display-0141",
+      "segment_id": "zJISTWMdz0c-ja-0086"
+    },
+    {
+      "text": "皆さんも心当たりありませんか?",
+      "start_seconds": 561.24,
+      "end_seconds": 565.36,
+      "id": "zJISTWMdz0c-display-0142",
+      "segment_id": "zJISTWMdz0c-ja-0087"
+    },
+    {
+      "text": "でもその仮面は水の中で溶けていきます。",
+      "start_seconds": 565.36,
+      "end_seconds": 569.2,
+      "id": "zJISTWMdz0c-display-0143",
+      "segment_id": "zJISTWMdz0c-ja-0088"
+    },
+    {
+      "text": "それはなぜか?水の中が静寂で平和です。",
+      "start_seconds": 569.2,
+      "end_seconds": 575.88,
+      "id": "zJISTWMdz0c-display-0144",
+      "segment_id": "zJISTWMdz0c-ja-0089"
+    },
+    {
+      "text": "誰もいないし何も聞こえない。",
+      "start_seconds": 575.88,
+      "end_seconds": 579.839,
+      "id": "zJISTWMdz0c-display-0145",
+      "segment_id": "zJISTWMdz0c-ja-0090"
+    },
+    {
+      "text": "水は誰もを受け入れジャッジしません。だ",
+      "start_seconds": 579.839,
+      "end_seconds": 584.24,
+      "id": "zJISTWMdz0c-display-0146",
+      "segment_id": "zJISTWMdz0c-ja-0091"
+    },
+    {
+      "text": "から人は安心して正直になろうとする。",
+      "start_seconds": 584.24,
+      "end_seconds": 590.36,
+      "id": "zJISTWMdz0c-display-0147",
+      "segment_id": "zJISTWMdz0c-ja-0091"
+    },
+    {
+      "text": "撮影の後涙む人もいます。",
+      "start_seconds": 590.36,
+      "end_seconds": 594.6,
+      "id": "zJISTWMdz0c-display-0148",
+      "segment_id": "zJISTWMdz0c-ja-0092"
+    },
+    {
+      "text": "今まで言葉に出せなかったことを話して",
+      "start_seconds": 594.6,
+      "end_seconds": 597.079,
+      "id": "zJISTWMdz0c-display-0149",
+      "segment_id": "zJISTWMdz0c-ja-0093"
+    },
+    {
+      "text": "くる人もいます。",
+      "start_seconds": 597.079,
+      "end_seconds": 599.92,
+      "id": "zJISTWMdz0c-display-0150",
+      "segment_id": "zJISTWMdz0c-ja-0093"
+    },
+    {
+      "text": "後日連絡をくれてこう言ってくれる人もい",
+      "start_seconds": 599.92,
+      "end_seconds": 603.399,
+      "id": "zJISTWMdz0c-display-0151",
+      "segment_id": "zJISTWMdz0c-ja-0094"
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 603.399,
+      "end_seconds": 605.32,
+      "id": "zJISTWMdz0c-display-0152",
+      "segment_id": "zJISTWMdz0c-ja-0094"
+    },
+    {
+      "text": "やっと自分に優しくなれた。",
+      "start_seconds": 605.32,
+      "end_seconds": 608.64,
+      "id": "zJISTWMdz0c-display-0153",
+      "segment_id": "zJISTWMdz0c-ja-0095"
+    },
+    {
+      "text": "恥ではなく自分に誇りを持てるようになっ",
+      "start_seconds": 608.64,
+      "end_seconds": 612.079,
+      "id": "zJISTWMdz0c-display-0154",
+      "segment_id": "zJISTWMdz0c-ja-0096"
+    },
+    {
+      "text": "た。",
+      "start_seconds": 612.079,
+      "end_seconds": 615.1999999999999,
+      "id": "zJISTWMdz0c-display-0155",
+      "segment_id": "zJISTWMdz0c-ja-0096"
+    },
+    {
+      "text": "水が彼らの重さを引き取ってくれたんです",
+      "start_seconds": 615.64,
+      "end_seconds": 618.519,
+      "id": "zJISTWMdz0c-display-0156",
+      "segment_id": "zJISTWMdz0c-ja-0097"
+    },
+    {
+      "text": "。",
+      "start_seconds": 618.519,
+      "end_seconds": 621.519,
+      "id": "zJISTWMdz0c-display-0157",
+      "segment_id": "zJISTWMdz0c-ja-0097"
+    },
+    {
+      "text": "3つ目は自分との再開です。",
+      "start_seconds": 622.64,
+      "end_seconds": 627.2,
+      "id": "zJISTWMdz0c-display-0158",
+      "segment_id": "zJISTWMdz0c-ja-0098"
+    },
+    {
+      "text": "癌のサバイバーの方たちも多く参加されて",
+      "start_seconds": 627.2,
+      "end_seconds": 629.76,
+      "id": "zJISTWMdz0c-display-0159",
+      "segment_id": "zJISTWMdz0c-ja-0099"
+    },
+    {
+      "text": "います。彼らはよくこう言います。",
+      "start_seconds": 629.76,
+      "end_seconds": 634.839,
+      "id": "zJISTWMdz0c-display-0160",
+      "segment_id": "zJISTWMdz0c-ja-0099"
+    },
+    {
+      "text": "私はもう前の自分ではない。",
+      "start_seconds": 634.839,
+      "end_seconds": 639.16,
+      "id": "zJISTWMdz0c-display-0161",
+      "segment_id": "zJISTWMdz0c-ja-0100"
+    },
+    {
+      "text": "手術の後、薬の副作用眠れない夜",
+      "start_seconds": 639.16,
+      "end_seconds": 646.12,
+      "id": "zJISTWMdz0c-display-0162",
+      "segment_id": "zJISTWMdz0c-ja-0101"
+    },
+    {
+      "text": "鏡で自分を見るたびに遠くなる。",
+      "start_seconds": 646.12,
+      "end_seconds": 650.519,
+      "id": "zJISTWMdz0c-display-0163",
+      "segment_id": "zJISTWMdz0c-ja-0101"
+    },
+    {
+      "text": "でも水の中では彼らは優雅に動きます。",
+      "start_seconds": 650.519,
+      "end_seconds": 655.2,
+      "id": "zJISTWMdz0c-display-0164",
+      "segment_id": "zJISTWMdz0c-ja-0102"
+    },
+    {
+      "text": "そして写真を見てこう驚くんです。",
+      "start_seconds": 655.2,
+      "end_seconds": 660.399,
+      "id": "zJISTWMdz0c-display-0165",
+      "segment_id": "zJISTWMdz0c-ja-0103"
+    },
+    {
+      "text": "まるで",
+      "start_seconds": 660.399,
+      "end_seconds": 662.04,
+      "id": "zJISTWMdz0c-display-0166",
+      "segment_id": "zJISTWMdz0c-ja-0104"
+    },
+    {
+      "text": "昔の自分を見ているみたいだ。",
+      "start_seconds": 662.04,
+      "end_seconds": 666.56,
+      "id": "zJISTWMdz0c-display-0167",
+      "segment_id": "zJISTWMdz0c-ja-0104"
+    },
+    {
+      "text": "写真はただの記録ではありません。",
+      "start_seconds": 666.88,
+      "end_seconds": 670.8,
+      "id": "zJISTWMdz0c-display-0168",
+      "segment_id": "zJISTWMdz0c-ja-0105"
+    },
+    {
+      "text": "私はまだ私だ。そう思い出させてくれる",
+      "start_seconds": 670.8,
+      "end_seconds": 674.48,
+      "id": "zJISTWMdz0c-display-0169",
+      "segment_id": "zJISTWMdz0c-ja-0106"
+    },
+    {
+      "text": "一生のお守りです。",
+      "start_seconds": 674.48,
+      "end_seconds": 678.9590000000001,
+      "id": "zJISTWMdz0c-display-0170",
+      "segment_id": "zJISTWMdz0c-ja-0106"
+    },
+    {
+      "text": "ある方の家族がこう私に教えてくれました",
+      "start_seconds": 679.88,
+      "end_seconds": 682.48,
+      "id": "zJISTWMdz0c-display-0171",
+      "segment_id": "zJISTWMdz0c-ja-0107"
+    },
+    {
+      "text": "。",
+      "start_seconds": 682.48,
+      "end_seconds": 685.2,
+      "id": "zJISTWMdz0c-display-0172",
+      "segment_id": "zJISTWMdz0c-ja-0107"
+    },
+    {
+      "text": "娘の案内笑顔もう見られないと思っていた",
+      "start_seconds": 685.2,
+      "end_seconds": 688.079,
+      "id": "zJISTWMdz0c-display-0173",
+      "segment_id": "zJISTWMdz0c-ja-0108"
+    },
+    {
+      "text": "と声を振わせながら",
+      "start_seconds": 688.079,
+      "end_seconds": 691.519,
+      "id": "zJISTWMdz0c-display-0174",
+      "segment_id": "zJISTWMdz0c-ja-0108"
+    },
+    {
+      "text": "最後にありがとうとハグをしてくれました",
+      "start_seconds": 691.519,
+      "end_seconds": 693.839,
+      "id": "zJISTWMdz0c-display-0175",
+      "segment_id": "zJISTWMdz0c-ja-0108"
+    },
+    {
+      "text": "。",
+      "start_seconds": 693.839,
+      "end_seconds": 696.36,
+      "id": "zJISTWMdz0c-display-0176",
+      "segment_id": "zJISTWMdz0c-ja-0108"
+    },
+    {
+      "text": "水が",
+      "start_seconds": 696.399,
+      "end_seconds": 698.16,
+      "id": "zJISTWMdz0c-display-0177",
+      "segment_id": "zJISTWMdz0c-ja-0109"
+    },
+    {
+      "text": "彼女を引き戻してくれたんです。",
+      "start_seconds": 698.16,
+      "end_seconds": 703.1999999999999,
+      "id": "zJISTWMdz0c-display-0178",
+      "segment_id": "zJISTWMdz0c-ja-0109"
+    },
+    {
+      "text": "このプロジェクトは決して病気を直すもの",
+      "start_seconds": 704.079,
+      "end_seconds": 707.16,
+      "id": "zJISTWMdz0c-display-0179",
+      "segment_id": "zJISTWMdz0c-ja-0110"
+    },
+    {
+      "text": "ではありません。でも回復の長い道乗りの",
+      "start_seconds": 707.16,
+      "end_seconds": 711.32,
+      "id": "zJISTWMdz0c-display-0180",
+      "segment_id": "zJISTWMdz0c-ja-0110"
+    },
+    {
+      "text": "中でもう1度自分にチャンスをくれると私",
+      "start_seconds": 711.32,
+      "end_seconds": 716.079,
+      "id": "zJISTWMdz0c-display-0181",
+      "segment_id": "zJISTWMdz0c-ja-0110"
+    },
+    {
+      "text": "は信じています。",
+      "start_seconds": 716.079,
+      "end_seconds": 720.12,
+      "id": "zJISTWMdz0c-display-0182",
+      "segment_id": "zJISTWMdz0c-ja-0111"
+    },
+    {
+      "text": "水は平等にする。ジャッジしない。私たち",
+      "start_seconds": 720.639,
+      "end_seconds": 726.72,
+      "id": "zJISTWMdz0c-display-0183",
+      "segment_id": "zJISTWMdz0c-ja-0112"
+    },
+    {
+      "text": "をつぎ直してくれる。それではなぜ水なの",
+      "start_seconds": 726.72,
+      "end_seconds": 731.279,
+      "id": "zJISTWMdz0c-display-0184",
+      "segment_id": "zJISTWMdz0c-ja-0112"
+    },
+    {
+      "text": "でしょうか?",
+      "start_seconds": 731.279,
+      "end_seconds": 733.639,
+      "id": "zJISTWMdz0c-display-0185",
+      "segment_id": "zJISTWMdz0c-ja-0113"
+    },
+    {
+      "text": "水による癒しは世界中の文化に存在してい",
+      "start_seconds": 733.639,
+      "end_seconds": 736.68,
+      "id": "zJISTWMdz0c-display-0186",
+      "segment_id": "zJISTWMdz0c-ja-0114"
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 736.68,
+      "end_seconds": 738.959,
+      "id": "zJISTWMdz0c-display-0187",
+      "segment_id": "zJISTWMdz0c-ja-0114"
+    },
+    {
+      "text": "キリスト教では精霊があります。",
+      "start_seconds": 738.959,
+      "end_seconds": 742.88,
+      "id": "zJISTWMdz0c-display-0188",
+      "segment_id": "zJISTWMdz0c-ja-0115"
+    },
+    {
+      "text": "ヒル教では元実側で目欲します。",
+      "start_seconds": 742.88,
+      "end_seconds": 748.48,
+      "id": "zJISTWMdz0c-display-0189",
+      "segment_id": "zJISTWMdz0c-ja-0116"
+    },
+    {
+      "text": "新党では他企業があります。",
+      "start_seconds": 748.48,
+      "end_seconds": 752.04,
+      "id": "zJISTWMdz0c-display-0190",
+      "segment_id": "zJISTWMdz0c-ja-0117"
+    },
+    {
+      "text": "私は思います。人類は知っていたんです。",
+      "start_seconds": 752.04,
+      "end_seconds": 757.079,
+      "id": "zJISTWMdz0c-display-0191",
+      "segment_id": "zJISTWMdz0c-ja-0118"
+    },
+    {
+      "text": "水に没入すること自体が癒しになる。心を",
+      "start_seconds": 757.079,
+      "end_seconds": 762.6,
+      "id": "zJISTWMdz0c-display-0192",
+      "segment_id": "zJISTWMdz0c-ja-0119"
+    },
+    {
+      "text": "清め、整え、生まれ変わらせる。",
+      "start_seconds": 762.6,
+      "end_seconds": 768.16,
+      "id": "zJISTWMdz0c-display-0193",
+      "segment_id": "zJISTWMdz0c-ja-0119"
+    },
+    {
+      "text": "覚えていますか?私がお話しした生存者の",
+      "start_seconds": 768.36,
+      "end_seconds": 773.12,
+      "id": "zJISTWMdz0c-display-0194",
+      "segment_id": "zJISTWMdz0c-ja-0120"
+    },
+    {
+      "text": "罪悪感のこと。",
+      "start_seconds": 773.12,
+      "end_seconds": 775.72,
+      "id": "zJISTWMdz0c-display-0195",
+      "segment_id": "zJISTWMdz0c-ja-0120"
+    },
+    {
+      "text": "実はもう1つお話ししていないことがあり",
+      "start_seconds": 775.72,
+      "end_seconds": 778.72,
+      "id": "zJISTWMdz0c-display-0196",
+      "segment_id": "zJISTWMdz0c-ja-0121"
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 778.72,
+      "end_seconds": 781.88,
+      "id": "zJISTWMdz0c-display-0197",
+      "segment_id": "zJISTWMdz0c-ja-0121"
+    },
+    {
+      "text": "事故の日運転していたのは地でした。",
+      "start_seconds": 783.399,
+      "end_seconds": 789.48,
+      "id": "zJISTWMdz0c-display-0198",
+      "segment_id": "zJISTWMdz0c-ja-0122"
+    },
+    {
+      "text": "でもその前まで私が運転してたんです。",
+      "start_seconds": 790.04,
+      "end_seconds": 795.199,
+      "id": "zJISTWMdz0c-display-0199",
+      "segment_id": "zJISTWMdz0c-ja-0123"
+    },
+    {
+      "text": "夜も",
+      "start_seconds": 795.199,
+      "end_seconds": 797.04,
+      "id": "zJISTWMdz0c-display-0200",
+      "segment_id": "zJISTWMdz0c-ja-0124"
+    },
+    {
+      "text": "疲れていた私は父に運転を変わってと頼み",
+      "start_seconds": 797.04,
+      "end_seconds": 800.8,
+      "id": "zJISTWMdz0c-display-0201",
+      "segment_id": "zJISTWMdz0c-ja-0124"
+    },
+    {
+      "text": "ました。",
+      "start_seconds": 800.8,
+      "end_seconds": 803.72,
+      "id": "zJISTWMdz0c-display-0202",
+      "segment_id": "zJISTWMdz0c-ja-0124"
+    },
+    {
+      "text": "父の方が疲れていたはずです。でも彼は",
+      "start_seconds": 803.72,
+      "end_seconds": 807.8,
+      "id": "zJISTWMdz0c-display-0203",
+      "segment_id": "zJISTWMdz0c-ja-0125"
+    },
+    {
+      "text": "優しく運転を変わってくれました。",
+      "start_seconds": 807.8,
+      "end_seconds": 811.36,
+      "id": "zJISTWMdz0c-display-0204",
+      "segment_id": "zJISTWMdz0c-ja-0125"
+    },
+    {
+      "text": "そしてその後タイヤが破裂し、事故が起き",
+      "start_seconds": 811.36,
+      "end_seconds": 815.44,
+      "id": "zJISTWMdz0c-display-0205",
+      "segment_id": "zJISTWMdz0c-ja-0126"
+    },
+    {
+      "text": "ました。",
+      "start_seconds": 815.44,
+      "end_seconds": 818.6800000000001,
+      "id": "zJISTWMdz0c-display-0206",
+      "segment_id": "zJISTWMdz0c-ja-0126"
+    },
+    {
+      "text": "私は長い間館の中にいました。",
+      "start_seconds": 818.839,
+      "end_seconds": 824.0,
+      "id": "zJISTWMdz0c-display-0207",
+      "segment_id": "zJISTWMdz0c-ja-0127"
+    },
+    {
+      "text": "後悔と怒りをずっと心の奥に沈めていまし",
+      "start_seconds": 824.0,
+      "end_seconds": 827.32,
+      "id": "zJISTWMdz0c-display-0208",
+      "segment_id": "zJISTWMdz0c-ja-0128"
+    },
+    {
+      "text": "た。",
+      "start_seconds": 827.32,
+      "end_seconds": 830.16,
+      "id": "zJISTWMdz0c-display-0209",
+      "segment_id": "zJISTWMdz0c-ja-0128"
+    },
+    {
+      "text": "でもスキューバと水泳を始めて何かが",
+      "start_seconds": 830.16,
+      "end_seconds": 833.519,
+      "id": "zJISTWMdz0c-display-0210",
+      "segment_id": "zJISTWMdz0c-ja-0129"
+    },
+    {
+      "text": "変わったんです。",
+      "start_seconds": 833.519,
+      "end_seconds": 836.44,
+      "id": "zJISTWMdz0c-display-0211",
+      "segment_id": "zJISTWMdz0c-ja-0129"
+    },
+    {
+      "text": "水の中でその沈めていたことと向き合う",
+      "start_seconds": 836.44,
+      "end_seconds": 840.279,
+      "id": "zJISTWMdz0c-display-0212",
+      "segment_id": "zJISTWMdz0c-ja-0130"
+    },
+    {
+      "text": "ことができた。",
+      "start_seconds": 840.279,
+      "end_seconds": 843.079,
+      "id": "zJISTWMdz0c-display-0213",
+      "segment_id": "zJISTWMdz0c-ja-0130"
+    },
+    {
+      "text": "恋に出したら何か少し軽くなりました。",
+      "start_seconds": 844.44,
+      "end_seconds": 850.72,
+      "id": "zJISTWMdz0c-display-0214",
+      "segment_id": "zJISTWMdz0c-ja-0131"
+    },
+    {
+      "text": "そしてずっと重かったのは",
+      "start_seconds": 850.72,
+      "end_seconds": 853.44,
+      "id": "zJISTWMdz0c-display-0215",
+      "segment_id": "zJISTWMdz0c-ja-0132"
+    },
+    {
+      "text": "事故そのものではなくずっと誰にも言え",
+      "start_seconds": 853.44,
+      "end_seconds": 856.8,
+      "id": "zJISTWMdz0c-display-0216",
+      "segment_id": "zJISTWMdz0c-ja-0132"
+    },
+    {
+      "text": "なかったその内緒の重さでした。",
+      "start_seconds": 856.8,
+      "end_seconds": 861.199,
+      "id": "zJISTWMdz0c-display-0217",
+      "segment_id": "zJISTWMdz0c-ja-0132"
+    },
+    {
+      "text": "もちろん今でも後悔はあります。怒りが",
+      "start_seconds": 861.199,
+      "end_seconds": 865.04,
+      "id": "zJISTWMdz0c-display-0218",
+      "segment_id": "zJISTWMdz0c-ja-0133"
+    },
+    {
+      "text": "ある時もあります。でもそれはもう私を",
+      "start_seconds": 865.04,
+      "end_seconds": 869.199,
+      "id": "zJISTWMdz0c-display-0219",
+      "segment_id": "zJISTWMdz0c-ja-0133"
+    },
+    {
+      "text": "押しつすような重さではなくなりました。",
+      "start_seconds": 869.199,
+      "end_seconds": 873.92,
+      "id": "zJISTWMdz0c-display-0220",
+      "segment_id": "zJISTWMdz0c-ja-0134"
+    },
+    {
+      "text": "本当の癒しは強く見せることからではなく",
+      "start_seconds": 873.92,
+      "end_seconds": 878.36,
+      "id": "zJISTWMdz0c-display-0221",
+      "segment_id": "zJISTWMdz0c-ja-0135"
+    },
+    {
+      "text": "正直さから始まるんだと思います。そして",
+      "start_seconds": 878.36,
+      "end_seconds": 882.36,
+      "id": "zJISTWMdz0c-display-0222",
+      "segment_id": "zJISTWMdz0c-ja-0135"
+    },
+    {
+      "text": "正直になった時人はやっと前を向けるんだ",
+      "start_seconds": 882.36,
+      "end_seconds": 886.0,
+      "id": "zJISTWMdz0c-display-0223",
+      "segment_id": "zJISTWMdz0c-ja-0136"
+    },
+    {
+      "text": "と。",
+      "start_seconds": 886.0,
+      "end_seconds": 888.399,
+      "id": "zJISTWMdz0c-display-0224",
+      "segment_id": "zJISTWMdz0c-ja-0136"
+    },
+    {
+      "text": "だから皆さんにもお願いがあります。",
+      "start_seconds": 888.399,
+      "end_seconds": 893.079,
+      "id": "zJISTWMdz0c-display-0225",
+      "segment_id": "zJISTWMdz0c-ja-0137"
+    },
+    {
+      "text": "あなたの水を見つけてください。",
+      "start_seconds": 893.079,
+      "end_seconds": 897.12,
+      "id": "zJISTWMdz0c-display-0226",
+      "segment_id": "zJISTWMdz0c-ja-0138"
+    },
+    {
+      "text": "悪ヨガでもいい。悪セラピーでもいい。",
+      "start_seconds": 897.12,
+      "end_seconds": 900.519,
+      "id": "zJISTWMdz0c-display-0227",
+      "segment_id": "zJISTWMdz0c-ja-0139"
+    },
+    {
+      "text": "水泳スクーバでもいい。あなたが完全に",
+      "start_seconds": 900.519,
+      "end_seconds": 904.48,
+      "id": "zJISTWMdz0c-display-0228",
+      "segment_id": "zJISTWMdz0c-ja-0140"
+    },
+    {
+      "text": "没入できる場所。",
+      "start_seconds": 904.48,
+      "end_seconds": 907.24,
+      "id": "zJISTWMdz0c-display-0229",
+      "segment_id": "zJISTWMdz0c-ja-0140"
+    },
+    {
+      "text": "守りを少し緩めて重さを手放して本当の",
+      "start_seconds": 907.24,
+      "end_seconds": 911.36,
+      "id": "zJISTWMdz0c-display-0230",
+      "segment_id": "zJISTWMdz0c-ja-0141"
+    },
+    {
+      "text": "自分に戻れる場所",
+      "start_seconds": 911.36,
+      "end_seconds": 914.12,
+      "id": "zJISTWMdz0c-display-0231",
+      "segment_id": "zJISTWMdz0c-ja-0141"
+    },
+    {
+      "text": "持ってて欲しいなと思います。",
+      "start_seconds": 914.12,
+      "end_seconds": 917.399,
+      "id": "zJISTWMdz0c-display-0232",
+      "segment_id": "zJISTWMdz0c-ja-0141"
+    },
+    {
+      "text": "なぜなら完全なる没入は本当の自分を",
+      "start_seconds": 917.399,
+      "end_seconds": 922.24,
+      "id": "zJISTWMdz0c-display-0233",
+      "segment_id": "zJISTWMdz0c-ja-0142"
+    },
+    {
+      "text": "呼び戻してくれるからです。",
+      "start_seconds": 922.24,
+      "end_seconds": 926.16,
+      "id": "zJISTWMdz0c-display-0234",
+      "segment_id": "zJISTWMdz0c-ja-0142"
+    },
+    {
+      "text": "ありがとうございました。",
+      "start_seconds": 926.16,
+      "end_seconds": 929.959,
+      "id": "zJISTWMdz0c-display-0235",
+      "segment_id": "zJISTWMdz0c-ja-0143"
+    }
+  ]
+}

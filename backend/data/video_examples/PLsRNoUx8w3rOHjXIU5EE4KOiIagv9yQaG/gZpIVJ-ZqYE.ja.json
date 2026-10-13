@@ -1,0 +1,2214 @@
+{
+  "schema_version": 1,
+  "video": {
+    "youtube_id": "gZpIVJ-ZqYE",
+    "title": "人権保障とは何か | Atsubumi Sugimoto | TEDxTIU",
+    "channel": "TEDx Talks",
+    "duration_seconds": 518
+  },
+  "caption_track": {
+    "language": "ja",
+    "kind": "asr",
+    "source": "youtube_automatic"
+  },
+  "source_playlist": "https://www.youtube.com/playlist?list=PLsRNoUx8w3rOHjXIU5EE4KOiIagv9yQaG",
+  "fetched_at": "2026-10-13T13:23:04.710662+00:00",
+  "segment_count": 61,
+  "segments": [
+    {
+      "text": "え、皆さんこんにちは。今日はこのイベントの平均年齢を上げるために参加しています。私が今日皆さんと一緒に考え",
+      "start_seconds": 11.799,
+      "end_seconds": 20.64,
+      "id": "gZpIVJ-ZqYE-ja-0001",
+      "sequence": 1
+    },
+    {
+      "text": "たいことは人権とは何かということです。",
+      "start_seconds": 20.64,
+      "end_seconds": 24.88,
+      "id": "gZpIVJ-ZqYE-ja-0002",
+      "sequence": 2
+    },
+    {
+      "text": "特に日本で生まれた座った人たちに教えて考えてもらいたいと思っています。",
+      "start_seconds": 24.88,
+      "end_seconds": 31.88,
+      "id": "gZpIVJ-ZqYE-ja-0003",
+      "sequence": 3
+    },
+    {
+      "text": "人権保障とは何か試しにGoogleに聞いてみました。その答えはま、何というかとても教科書的ですが正しい要約ではありました。",
+      "start_seconds": 31.88,
+      "end_seconds": 42.68,
+      "id": "gZpIVJ-ZqYE-ja-0004",
+      "sequence": 4
+    },
+    {
+      "text": "ところで時々に意する権利を主張するものは義務を果たさなければならないという現設ですが、基本的人権について言えば",
+      "start_seconds": 42.68,
+      "end_seconds": 52.48,
+      "id": "gZpIVJ-ZqYE-ja-0005",
+      "sequence": 5
+    },
+    {
+      "text": "これは半分正解で半分は誤解です。",
+      "start_seconds": 52.48,
+      "end_seconds": 57.6,
+      "id": "gZpIVJ-ZqYE-ja-0006",
+      "sequence": 6
+    },
+    {
+      "text": "他人の人権を侵害してはならない。警備の乱をしてはならないという意味では七人権の視聴行使には確かに責任が伴います。",
+      "start_seconds": 57.6,
+      "end_seconds": 68.2,
+      "id": "gZpIVJ-ZqYE-ja-0007",
+      "sequence": 7
+    },
+    {
+      "text": "しかし、日本憲法に定められた3大である納税、教育、金労を果たさなければ人権の",
+      "start_seconds": 68.2,
+      "end_seconds": 76.479,
+      "id": "gZpIVJ-ZqYE-ja-0008",
+      "sequence": 8
+    },
+    {
+      "text": "主張はできないというのは謝りです。もしそうだすると健康で文化的な最低限度の生活を送る権利を主張でできる人は健康で",
+      "start_seconds": 76.479,
+      "end_seconds": 86.96,
+      "id": "gZpIVJ-ZqYE-ja-0009",
+      "sequence": 9
+    },
+    {
+      "text": "文化的な最低限度の生活を送れる視力や体力をすでに持っている人だけになってしまうからです。",
+      "start_seconds": 86.96,
+      "end_seconds": 94.72,
+      "id": "gZpIVJ-ZqYE-ja-0010",
+      "sequence": 10
+    },
+    {
+      "text": "この誤解は単なる概念の問題ではなく日本では現実の社会問題を満たしています。",
+      "start_seconds": 94.72,
+      "end_seconds": 103.24,
+      "id": "gZpIVJ-ZqYE-ja-0011",
+      "sequence": 11
+    },
+    {
+      "text": "例えばSNSなどでは生活保護を受けている人の批判的な現設が多数見られます。",
+      "start_seconds": 103.24,
+      "end_seconds": 111.56,
+      "id": "gZpIVJ-ZqYE-ja-0012",
+      "sequence": 12
+    },
+    {
+      "text": "外国人の生活保護法の規制受給についても補調して語られているのをよく見かけます。",
+      "start_seconds": 111.56,
+      "end_seconds": 118.96,
+      "id": "gZpIVJ-ZqYE-ja-0013",
+      "sequence": 13
+    },
+    {
+      "text": "現実の数字で言えばワーキングはつまり働いているのに生活保護受給来年以下の生活をしている人は働いている人の5人に",
+      "start_seconds": 118.96,
+      "end_seconds": 129.36,
+      "id": "gZpIVJ-ZqYE-ja-0014",
+      "sequence": 14
+    },
+    {
+      "text": "1人と推計されています。これは東京都の人口とほぼ同じ程度の人前です。禁止され",
+      "start_seconds": 129.36,
+      "end_seconds": 138.36,
+      "id": "gZpIVJ-ZqYE-ja-0015",
+      "sequence": 15
+    },
+    {
+      "text": "ているの生活保護申請の役所での窓口拒否が投稿しています。",
+      "start_seconds": 138.36,
+      "end_seconds": 146.04,
+      "id": "gZpIVJ-ZqYE-ja-0016",
+      "sequence": 16
+    },
+    {
+      "text": "本来貧困のスパイラルを防ぐための社会装置である生活保護制度がこれほどまでに利用しにくいのはなぜでしょうか?",
+      "start_seconds": 146.04,
+      "end_seconds": 157.28,
+      "id": "gZpIVJ-ZqYE-ja-0017",
+      "sequence": 17
+    },
+    {
+      "text": "私は日本社会が道徳依存していて法制度としての人権保障という考え方を未だ少年から受け入れていないことに問題があると",
+      "start_seconds": 157.28,
+      "end_seconds": 167.08,
+      "id": "gZpIVJ-ZqYE-ja-0018",
+      "sequence": 18
+    },
+    {
+      "text": "考えています。",
+      "start_seconds": 167.08,
+      "end_seconds": 169.319,
+      "id": "gZpIVJ-ZqYE-ja-0019",
+      "sequence": 19
+    },
+    {
+      "text": "日本では法務省が人権啓発活動に責任をしっていますが、今から10年ほど前にはこのようなスローンが啓発に使われてい",
+      "start_seconds": 169.319,
+      "end_seconds": 178.959,
+      "id": "gZpIVJ-ZqYE-ja-0020",
+      "sequence": 20
+    },
+    {
+      "text": "ました。",
+      "start_seconds": 178.959,
+      "end_seconds": 181.92,
+      "id": "gZpIVJ-ZqYE-ja-0021",
+      "sequence": 21
+    },
+    {
+      "text": "このポスターと言いたいことはつまり日本で人権保障を推進するには人々が他者の気持ちを考え",
+      "start_seconds": 181.92,
+      "end_seconds": 191.519,
+      "id": "gZpIVJ-ZqYE-ja-0022",
+      "sequence": 22
+    },
+    {
+      "text": "の気持ちを持つ必要があるということです。",
+      "start_seconds": 191.519,
+      "end_seconds": 195.68,
+      "id": "gZpIVJ-ZqYE-ja-0023",
+      "sequence": 23
+    },
+    {
+      "text": "本当でしょうか?",
+      "start_seconds": 195.68,
+      "end_seconds": 198.0,
+      "id": "gZpIVJ-ZqYE-ja-0024",
+      "sequence": 24
+    },
+    {
+      "text": "私の主張はこれとは規約です。他者の思い合いの心に依存する社会の仕組みでは人権保障問題は解決しないのです。",
+      "start_seconds": 198.0,
+      "end_seconds": 208.84,
+      "id": "gZpIVJ-ZqYE-ja-0025",
+      "sequence": 25
+    },
+    {
+      "text": "さらに言えば日本では人々の動作心に依存する社会構造が人権問題の解決を難しくしているです。こんな例を考えてみましょう",
+      "start_seconds": 208.84,
+      "end_seconds": 219.84,
+      "id": "gZpIVJ-ZqYE-ja-0026",
+      "sequence": 26
+    },
+    {
+      "text": "。資格障害のある人は鉄道の駅のホームを歩いています。この人は今にもホームから線路に転落しそうです。ここで声をかけて",
+      "start_seconds": 219.84,
+      "end_seconds": 231.56,
+      "id": "gZpIVJ-ZqYE-ja-0027",
+      "sequence": 27
+    },
+    {
+      "text": "肩を叩いてするのは道徳的行動です。同徳的行動はもちろん解説です。これからも是非続けてください。他方でホームの橋に",
+      "start_seconds": 231.56,
+      "end_seconds": 243.319,
+      "id": "gZpIVJ-ZqYE-ja-0028",
+      "sequence": 28
+    },
+    {
+      "text": "安全策が設置されていて利用者の添を防ぐは人権保障です。この2つの違いは何でしょうか?",
+      "start_seconds": 243.319,
+      "end_seconds": 253.439,
+      "id": "gZpIVJ-ZqYE-ja-0029",
+      "sequence": 29
+    },
+    {
+      "text": "もし人権保障施策の実施に責任を国や自治体がそれの政治策変わりに人々に道徳的行動の実践を呼びかけていったらどうなる",
+      "start_seconds": 253.439,
+      "end_seconds": 265.4,
+      "id": "gZpIVJ-ZqYE-ja-0030",
+      "sequence": 30
+    },
+    {
+      "text": "でしょうか?この例では資格障害のある人は他人がいないと鉄道を利用できないことになります。",
+      "start_seconds": 265.4,
+      "end_seconds": 273.4,
+      "id": "gZpIVJ-ZqYE-ja-0031",
+      "sequence": 31
+    },
+    {
+      "text": "そして助けてくれる人にいつもお礼を言わなくてはなりません。日本の文化的特徴としてきっとすみませんと謝り続けることに",
+      "start_seconds": 273.4,
+      "end_seconds": 284.24,
+      "id": "gZpIVJ-ZqYE-ja-0032",
+      "sequence": 32
+    },
+    {
+      "text": "なるかもしれません。",
+      "start_seconds": 284.24,
+      "end_seconds": 286.72,
+      "id": "gZpIVJ-ZqYE-ja-0033",
+      "sequence": 33
+    },
+    {
+      "text": "そして本当はなぜホームドアを設置してくれないの?そうすれば私は1人で鉄道に乗れるのと言いたいのですが、そんなこと",
+      "start_seconds": 286.72,
+      "end_seconds": 297.039,
+      "id": "gZpIVJ-ZqYE-ja-0034",
+      "sequence": 34
+    },
+    {
+      "text": "言えばSNSなどで袋叩きにあるでしょう。長大人の全員はありがたく思うよと",
+      "start_seconds": 297.039,
+      "end_seconds": 306.4,
+      "id": "gZpIVJ-ZqYE-ja-0035",
+      "sequence": 35
+    },
+    {
+      "text": "ところで日本の政府はかつてこんな内容の新聞広告を出したことがあります。",
+      "start_seconds": 306.4,
+      "end_seconds": 314.96,
+      "id": "gZpIVJ-ZqYE-ja-0036",
+      "sequence": 36
+    },
+    {
+      "text": "子供の銀行を解決する使命は本来は民間の人々ではなく国や自治体であらずだと思いますが皆さんはどう思いますか?",
+      "start_seconds": 315.56,
+      "end_seconds": 326.08,
+      "id": "gZpIVJ-ZqYE-ja-0037",
+      "sequence": 37
+    },
+    {
+      "text": "そして最近のお米の価格等により日本で1番最初に子供食堂を名乗って活動を開始した人がついに子供食堂の経てしまいまし",
+      "start_seconds": 326.08,
+      "end_seconds": 337.8,
+      "id": "gZpIVJ-ZqYE-ja-0038",
+      "sequence": 38
+    },
+    {
+      "text": "た。",
+      "start_seconds": 337.8,
+      "end_seconds": 339.4,
+      "id": "gZpIVJ-ZqYE-ja-0039",
+      "sequence": 39
+    },
+    {
+      "text": "彼女はメディアの資材に答えてこう言っています。",
+      "start_seconds": 339.4,
+      "end_seconds": 343.08,
+      "id": "gZpIVJ-ZqYE-ja-0040",
+      "sequence": 40
+    },
+    {
+      "text": "日本の体制って国民を聞させるようにできているのではないかと思うこともあります。",
+      "start_seconds": 343.08,
+      "end_seconds": 351.16,
+      "id": "gZpIVJ-ZqYE-ja-0041",
+      "sequence": 41
+    },
+    {
+      "text": "繰り返しますが、人々の道徳に国家が頼っているだけでは人権保障は実現しないのです。ではどうすればいいんでしょうか?",
+      "start_seconds": 351.16,
+      "end_seconds": 362.919,
+      "id": "gZpIVJ-ZqYE-ja-0042",
+      "sequence": 42
+    },
+    {
+      "text": "色々考えて欲しいことはたくさんあります。もっと色々考えてみたいという人は是非私の方に受行してください。お待ちしています。",
+      "start_seconds": 362.919,
+      "end_seconds": 372.68,
+      "id": "gZpIVJ-ZqYE-ja-0043",
+      "sequence": 43
+    },
+    {
+      "text": "でもとりあえず第1項し日本の政治、特に人権保障政策の実施状況に関心を持ってください。",
+      "start_seconds": 372.68,
+      "end_seconds": 382.24,
+      "id": "gZpIVJ-ZqYE-ja-0044",
+      "sequence": 44
+    },
+    {
+      "text": "そして選挙に行ってください。選挙を通じてこの国の政府が人権保障政策を実施しているかを皆さんが主権者として監視して",
+      "start_seconds": 382.24,
+      "end_seconds": 393.199,
+      "id": "gZpIVJ-ZqYE-ja-0045",
+      "sequence": 45
+    },
+    {
+      "text": "いるということを示してください。",
+      "start_seconds": 393.199,
+      "end_seconds": 397.84,
+      "id": "gZpIVJ-ZqYE-ja-0046",
+      "sequence": 46
+    },
+    {
+      "text": "この画像は怖いですか?先生に作ってました。",
+      "start_seconds": 397.84,
+      "end_seconds": 403.199,
+      "id": "gZpIVJ-ZqYE-ja-0047",
+      "sequence": 47
+    },
+    {
+      "text": "先ほどの続きですが、若い世代の政治への震がこの国の人権保障の実現には不可欠です。",
+      "start_seconds": 403.199,
+      "end_seconds": 411.8,
+      "id": "gZpIVJ-ZqYE-ja-0048",
+      "sequence": 48
+    },
+    {
+      "text": "日本では若者が政治について語ることはなんとなく多分と見られていますが、これは欧米諸国の若者とはだいぶ異なます。",
+      "start_seconds": 411.8,
+      "end_seconds": 423.199,
+      "id": "gZpIVJ-ZqYE-ja-0049",
+      "sequence": 49
+    },
+    {
+      "text": "自分の国の政治や経済社会問題に関心がないという大学生が圧倒的多数だということ。海外の説明書もなかなか理解して",
+      "start_seconds": 423.199,
+      "end_seconds": 432.919,
+      "id": "gZpIVJ-ZqYE-ja-0050",
+      "sequence": 50
+    },
+    {
+      "text": "もらいません。ありえないことだからです。しかしそれは皆さんの責任ではありません。日本の教育政策では皆さんを政治から",
+      "start_seconds": 432.919,
+      "end_seconds": 443.36,
+      "id": "gZpIVJ-ZqYE-ja-0051",
+      "sequence": 51
+    },
+    {
+      "text": "遠ざけてきたからです。",
+      "start_seconds": 443.36,
+      "end_seconds": 446.12,
+      "id": "gZpIVJ-ZqYE-ja-0052",
+      "sequence": 52
+    },
+    {
+      "text": "だから私は皆さんにお願いしたい。政治監視を持って政治について率直に話し合える空間を仲間と作ってください。",
+      "start_seconds": 446.12,
+      "end_seconds": 456.919,
+      "id": "gZpIVJ-ZqYE-ja-0053",
+      "sequence": 53
+    },
+    {
+      "text": "そしてもしこの会場に愛、障害者、外国人、無理、女性、貧困、接着、ブラクなどの",
+      "start_seconds": 456.919,
+      "end_seconds": 468.84,
+      "id": "gZpIVJ-ZqYE-ja-0054",
+      "sequence": 54
+    },
+    {
+      "text": "言葉に拒否感を持つ人がいたとしたら自分が何に対してなぜ腹を立てているのかを今一度立ち止まって考えて欲しいと思い",
+      "start_seconds": 468.84,
+      "end_seconds": 478.599,
+      "id": "gZpIVJ-ZqYE-ja-0055",
+      "sequence": 55
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 478.599,
+      "end_seconds": 481.0,
+      "id": "gZpIVJ-ZqYE-ja-0056",
+      "sequence": 56
+    },
+    {
+      "text": "改定は1度のない人たちに対してネットの電話をみにして腹を立てているだけなのですから。",
+      "start_seconds": 481.0,
+      "end_seconds": 490.24,
+      "id": "gZpIVJ-ZqYE-ja-0057",
+      "sequence": 57
+    },
+    {
+      "text": "そしてこれらの差別問題は差別される側の問題ではなく差別する側の問題であることも考えてほしいと思います。以上です。ご",
+      "start_seconds": 490.24,
+      "end_seconds": 500.759,
+      "id": "gZpIVJ-ZqYE-ja-0058",
+      "sequence": 58
+    },
+    {
+      "text": "成聴ありがとうございました。[拍手]",
+      "start_seconds": 500.759,
+      "end_seconds": 505.065,
+      "id": "gZpIVJ-ZqYE-ja-0059",
+      "sequence": 59
+    },
+    {
+      "text": "あ",
+      "start_seconds": 510.919,
+      "end_seconds": 513.919,
+      "id": "gZpIVJ-ZqYE-ja-0060",
+      "sequence": 60
+    },
+    {
+      "text": "。",
+      "start_seconds": 517.039,
+      "end_seconds": 518,
+      "id": "gZpIVJ-ZqYE-ja-0061",
+      "sequence": 61
+    }
+  ],
+  "raw_captions": [
+    {
+      "text": "え、皆さんこんにちは。今日はこの",
+      "start_seconds": 11.799,
+      "end_seconds": 17.759999999999998
+    },
+    {
+      "text": "イベントの平均年齢を上げるために参加し",
+      "start_seconds": 14.96,
+      "end_seconds": 20.64
+    },
+    {
+      "text": "ています。私が今日皆さんと一緒に考え",
+      "start_seconds": 17.76,
+      "end_seconds": 24.880000000000003
+    },
+    {
+      "text": "たいことは人権とは何かということです。",
+      "start_seconds": 20.64,
+      "end_seconds": 28.359
+    },
+    {
+      "text": "特に日本で生まれた座った人たちに教えて",
+      "start_seconds": 24.88,
+      "end_seconds": 31.88
+    },
+    {
+      "text": "考えてもらいたいと思っています。",
+      "start_seconds": 28.359,
+      "end_seconds": 34.760000000000005
+    },
+    {
+      "text": "人権保障とは何か試しにGoogleに",
+      "start_seconds": 31.88,
+      "end_seconds": 37.399
+    },
+    {
+      "text": "聞いてみました。その答えはま、何という",
+      "start_seconds": 34.76,
+      "end_seconds": 40.68
+    },
+    {
+      "text": "かとても教科書的ですが正しい要約では",
+      "start_seconds": 37.399,
+      "end_seconds": 42.68
+    },
+    {
+      "text": "ありました。",
+      "start_seconds": 40.68,
+      "end_seconds": 46.36
+    },
+    {
+      "text": "ところで時々に意する権利を主張するもの",
+      "start_seconds": 42.68,
+      "end_seconds": 49.0
+    },
+    {
+      "text": "は義務を果たさなければならないという",
+      "start_seconds": 46.36,
+      "end_seconds": 52.48
+    },
+    {
+      "text": "現設ですが、基本的人権について言えば",
+      "start_seconds": 49.0,
+      "end_seconds": 57.6
+    },
+    {
+      "text": "これは半分正解で半分は誤解です。",
+      "start_seconds": 52.48,
+      "end_seconds": 60.919999999999995
+    },
+    {
+      "text": "他人の人権を侵害してはならない。警備の",
+      "start_seconds": 57.6,
+      "end_seconds": 64.28
+    },
+    {
+      "text": "乱をしてはならないという意味では七人権",
+      "start_seconds": 60.92,
+      "end_seconds": 68.2
+    },
+    {
+      "text": "の視聴行使には確かに責任が伴います。",
+      "start_seconds": 64.28,
+      "end_seconds": 72.159
+    },
+    {
+      "text": "しかし、日本憲法に定められた3大である",
+      "start_seconds": 68.2,
+      "end_seconds": 76.479
+    },
+    {
+      "text": "納税、教育、金労を果たさなければ人権の",
+      "start_seconds": 72.159,
+      "end_seconds": 80.4
+    },
+    {
+      "text": "主張はできないというのは謝りです。もし",
+      "start_seconds": 76.479,
+      "end_seconds": 83.92
+    },
+    {
+      "text": "そうだすると健康で文化的な最低限度の",
+      "start_seconds": 80.4,
+      "end_seconds": 86.96000000000001
+    },
+    {
+      "text": "生活を送る権利を主張でできる人は健康で",
+      "start_seconds": 83.92,
+      "end_seconds": 90.04
+    },
+    {
+      "text": "文化的な最低限度の生活を送れる視力や",
+      "start_seconds": 86.96,
+      "end_seconds": 92.67999999999999
+    },
+    {
+      "text": "体力をすでに持っている人だけになって",
+      "start_seconds": 90.04,
+      "end_seconds": 94.72
+    },
+    {
+      "text": "しまうからです。",
+      "start_seconds": 92.68,
+      "end_seconds": 98.68
+    },
+    {
+      "text": "この誤解は単なる概念の問題ではなく日本",
+      "start_seconds": 94.72,
+      "end_seconds": 103.24
+    },
+    {
+      "text": "では現実の社会問題を満たしています。",
+      "start_seconds": 98.68,
+      "end_seconds": 106.64
+    },
+    {
+      "text": "例えばSNSなどでは生活保護を受けて",
+      "start_seconds": 103.24,
+      "end_seconds": 111.56
+    },
+    {
+      "text": "いる人の批判的な現設が多数見られます。",
+      "start_seconds": 106.64,
+      "end_seconds": 114.68
+    },
+    {
+      "text": "外国人の生活保護法の規制受給についても",
+      "start_seconds": 111.56,
+      "end_seconds": 117.119
+    },
+    {
+      "text": "補調して語られているのをよく見かけます",
+      "start_seconds": 114.68,
+      "end_seconds": 118.96000000000001
+    },
+    {
+      "text": "。",
+      "start_seconds": 117.119,
+      "end_seconds": 123.0
+    },
+    {
+      "text": "現実の数字で言えばワーキングはつまり",
+      "start_seconds": 118.96,
+      "end_seconds": 125.67999999999999
+    },
+    {
+      "text": "働いているのに生活保護受給来年以下の",
+      "start_seconds": 123.0,
+      "end_seconds": 129.36
+    },
+    {
+      "text": "生活をしている人は働いている人の5人に",
+      "start_seconds": 125.68,
+      "end_seconds": 133.959
+    },
+    {
+      "text": "1人と推計されています。これは東京都の",
+      "start_seconds": 129.36,
+      "end_seconds": 138.36
+    },
+    {
+      "text": "人口とほぼ同じ程度の人前です。禁止され",
+      "start_seconds": 133.959,
+      "end_seconds": 143.04
+    },
+    {
+      "text": "ているの生活保護申請の役所での窓口拒否",
+      "start_seconds": 138.36,
+      "end_seconds": 146.04000000000002
+    },
+    {
+      "text": "が投稿しています。",
+      "start_seconds": 143.04,
+      "end_seconds": 149.35999999999999
+    },
+    {
+      "text": "本来貧困のスパイラルを防ぐための社会",
+      "start_seconds": 146.04,
+      "end_seconds": 153.16
+    },
+    {
+      "text": "装置である生活保護制度がこれほどまでに",
+      "start_seconds": 149.36,
+      "end_seconds": 157.28
+    },
+    {
+      "text": "利用しにくいのはなぜでしょうか?",
+      "start_seconds": 153.16,
+      "end_seconds": 161.35999999999999
+    },
+    {
+      "text": "私は日本社会が道徳依存していて法制度と",
+      "start_seconds": 157.28,
+      "end_seconds": 164.56
+    },
+    {
+      "text": "しての人権保障という考え方を未だ少年",
+      "start_seconds": 161.36,
+      "end_seconds": 167.08
+    },
+    {
+      "text": "から受け入れていないことに問題があると",
+      "start_seconds": 164.56,
+      "end_seconds": 169.31900000000002
+    },
+    {
+      "text": "考えています。",
+      "start_seconds": 167.08,
+      "end_seconds": 172.87900000000002
+    },
+    {
+      "text": "日本では法務省が人権啓発活動に責任を",
+      "start_seconds": 169.319,
+      "end_seconds": 175.67999999999998
+    },
+    {
+      "text": "しっていますが、今から10年ほど前には",
+      "start_seconds": 172.879,
+      "end_seconds": 178.959
+    },
+    {
+      "text": "このようなスローンが啓発に使われてい",
+      "start_seconds": 175.68,
+      "end_seconds": 181.92000000000002
+    },
+    {
+      "text": "ました。",
+      "start_seconds": 178.959,
+      "end_seconds": 185.08
+    },
+    {
+      "text": "このポスターと言いたいことはつまり",
+      "start_seconds": 181.92,
+      "end_seconds": 189.159
+    },
+    {
+      "text": "日本で人権保障を推進するには人々が他者",
+      "start_seconds": 185.08,
+      "end_seconds": 191.519
+    },
+    {
+      "text": "の気持ちを考え",
+      "start_seconds": 189.159,
+      "end_seconds": 194.12
+    },
+    {
+      "text": "の気持ちを持つ必要があるということです",
+      "start_seconds": 191.519,
+      "end_seconds": 195.68
+    },
+    {
+      "text": "。",
+      "start_seconds": 194.12,
+      "end_seconds": 198.0
+    },
+    {
+      "text": "本当でしょうか?",
+      "start_seconds": 195.68,
+      "end_seconds": 201.56
+    },
+    {
+      "text": "私の主張はこれとは規約です。他者の",
+      "start_seconds": 198.0,
+      "end_seconds": 204.44
+    },
+    {
+      "text": "思い合いの心に依存する社会の仕組みでは",
+      "start_seconds": 201.56,
+      "end_seconds": 208.84
+    },
+    {
+      "text": "人権保障問題は解決しないのです。",
+      "start_seconds": 204.44,
+      "end_seconds": 212.439
+    },
+    {
+      "text": "さらに言えば日本では人々の動作心に依存",
+      "start_seconds": 208.84,
+      "end_seconds": 216.439
+    },
+    {
+      "text": "する社会構造が人権問題の解決を難しくし",
+      "start_seconds": 212.439,
+      "end_seconds": 219.84
+    },
+    {
+      "text": "ているです。こんな例を考えてみましょう",
+      "start_seconds": 216.439,
+      "end_seconds": 223.76
+    },
+    {
+      "text": "。資格障害のある人は鉄道の駅のホームを",
+      "start_seconds": 219.84,
+      "end_seconds": 226.84
+    },
+    {
+      "text": "歩いています。この人は今にもホームから",
+      "start_seconds": 223.76,
+      "end_seconds": 231.56
+    },
+    {
+      "text": "線路に転落しそうです。ここで声をかけて",
+      "start_seconds": 226.84,
+      "end_seconds": 236.0
+    },
+    {
+      "text": "肩を叩いてするのは道徳的行動です。同徳",
+      "start_seconds": 231.56,
+      "end_seconds": 238.519
+    },
+    {
+      "text": "的行動はもちろん解説です。これからも",
+      "start_seconds": 236.0,
+      "end_seconds": 243.319
+    },
+    {
+      "text": "是非続けてください。他方でホームの橋に",
+      "start_seconds": 238.519,
+      "end_seconds": 246.76
+    },
+    {
+      "text": "安全策が設置されていて利用者の添を防ぐ",
+      "start_seconds": 243.319,
+      "end_seconds": 251.11999999999998
+    },
+    {
+      "text": "は人権保障です。この2つの違いは何",
+      "start_seconds": 246.76,
+      "end_seconds": 253.439
+    },
+    {
+      "text": "でしょうか?",
+      "start_seconds": 251.12,
+      "end_seconds": 257.359
+    },
+    {
+      "text": "もし人権保障施策の実施に責任を国や自治",
+      "start_seconds": 253.439,
+      "end_seconds": 262.88
+    },
+    {
+      "text": "体がそれの政治策変わりに人々に道徳的",
+      "start_seconds": 257.359,
+      "end_seconds": 265.4
+    },
+    {
+      "text": "行動の実践を呼びかけていったらどうなる",
+      "start_seconds": 262.88,
+      "end_seconds": 268.44
+    },
+    {
+      "text": "でしょうか?この例では資格障害のある人",
+      "start_seconds": 265.4,
+      "end_seconds": 271.35999999999996
+    },
+    {
+      "text": "は他人がいないと鉄道を利用できないこと",
+      "start_seconds": 268.44,
+      "end_seconds": 273.4
+    },
+    {
+      "text": "になります。",
+      "start_seconds": 271.36,
+      "end_seconds": 277.28000000000003
+    },
+    {
+      "text": "そして助けてくれる人にいつもお礼を言わ",
+      "start_seconds": 273.4,
+      "end_seconds": 280.44
+    },
+    {
+      "text": "なくてはなりません。日本の文化的特徴と",
+      "start_seconds": 277.28,
+      "end_seconds": 284.23999999999995
+    },
+    {
+      "text": "してきっとすみませんと謝り続けることに",
+      "start_seconds": 280.44,
+      "end_seconds": 286.71999999999997
+    },
+    {
+      "text": "なるかもしれません。",
+      "start_seconds": 284.24,
+      "end_seconds": 289.6
+    },
+    {
+      "text": "そして本当はなぜホームドアを設置して",
+      "start_seconds": 286.72,
+      "end_seconds": 293.32000000000005
+    },
+    {
+      "text": "くれないの?そうすれば私は1人で鉄道に",
+      "start_seconds": 289.6,
+      "end_seconds": 297.03900000000004
+    },
+    {
+      "text": "乗れるのと言いたいのですが、そんなこと",
+      "start_seconds": 293.32,
+      "end_seconds": 300.0
+    },
+    {
+      "text": "言えばSNSなどで袋叩きにあるでしょう",
+      "start_seconds": 297.039,
+      "end_seconds": 306.4
+    },
+    {
+      "text": "。長大人の全員はありがたく思うよと",
+      "start_seconds": 300.0,
+      "end_seconds": 309.96
+    },
+    {
+      "text": "ところで日本の政府はかつてこんな内容の",
+      "start_seconds": 306.4,
+      "end_seconds": 314.96
+    },
+    {
+      "text": "新聞広告を出したことがあります。",
+      "start_seconds": 309.96,
+      "end_seconds": 314.96
+    },
+    {
+      "text": "子供の銀行を解決する使命は本来は民間の",
+      "start_seconds": 315.56,
+      "end_seconds": 322.08
+    },
+    {
+      "text": "人々ではなく国や自治体であらずだと思い",
+      "start_seconds": 319.0,
+      "end_seconds": 326.08
+    },
+    {
+      "text": "ますが皆さんはどう思いますか?",
+      "start_seconds": 322.08,
+      "end_seconds": 330.19899999999996
+    },
+    {
+      "text": "そして最近のお米の価格等により日本で",
+      "start_seconds": 326.08,
+      "end_seconds": 333.71999999999997
+    },
+    {
+      "text": "1番最初に子供食堂を名乗って活動を開始",
+      "start_seconds": 330.199,
+      "end_seconds": 337.8
+    },
+    {
+      "text": "した人がついに子供食堂の経てしまいまし",
+      "start_seconds": 333.72,
+      "end_seconds": 339.40000000000003
+    },
+    {
+      "text": "た。",
+      "start_seconds": 337.8,
+      "end_seconds": 341.28000000000003
+    },
+    {
+      "text": "彼女はメディアの資材に答えてこう言って",
+      "start_seconds": 339.4,
+      "end_seconds": 343.08
+    },
+    {
+      "text": "います。",
+      "start_seconds": 341.28,
+      "end_seconds": 346.79999999999995
+    },
+    {
+      "text": "日本の体制って国民を聞させるようにでき",
+      "start_seconds": 343.08,
+      "end_seconds": 348.479
+    },
+    {
+      "text": "ているのではないかと思うこともあります",
+      "start_seconds": 346.8,
+      "end_seconds": 351.16
+    },
+    {
+      "text": "。",
+      "start_seconds": 348.479,
+      "end_seconds": 354.75899999999996
+    },
+    {
+      "text": "繰り返しますが、人々の道徳に国家が頼っ",
+      "start_seconds": 351.16,
+      "end_seconds": 357.84000000000003
+    },
+    {
+      "text": "ているだけでは人権保障は実現しないの",
+      "start_seconds": 354.759,
+      "end_seconds": 362.91900000000004
+    },
+    {
+      "text": "です。ではどうすればいいんでしょうか?",
+      "start_seconds": 357.84,
+      "end_seconds": 364.63899999999995
+    },
+    {
+      "text": "色々考えて欲しいことはたくさんあります",
+      "start_seconds": 362.919,
+      "end_seconds": 368.12
+    },
+    {
+      "text": "。もっと色々考えてみたいという人は是非",
+      "start_seconds": 364.639,
+      "end_seconds": 370.72
+    },
+    {
+      "text": "私の方に受行してください。お待ちしてい",
+      "start_seconds": 368.12,
+      "end_seconds": 372.68
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 370.72,
+      "end_seconds": 377.16
+    },
+    {
+      "text": "でもとりあえず第1項し日本の政治、特に",
+      "start_seconds": 372.68,
+      "end_seconds": 380.28000000000003
+    },
+    {
+      "text": "人権保障政策の実施状況に関心を持って",
+      "start_seconds": 377.16,
+      "end_seconds": 382.24
+    },
+    {
+      "text": "ください。",
+      "start_seconds": 380.28,
+      "end_seconds": 386.15999999999997
+    },
+    {
+      "text": "そして選挙に行ってください。選挙を通じ",
+      "start_seconds": 382.24,
+      "end_seconds": 389.72
+    },
+    {
+      "text": "てこの国の政府が人権保障政策を実施して",
+      "start_seconds": 386.16,
+      "end_seconds": 393.199
+    },
+    {
+      "text": "いるかを皆さんが主権者として監視して",
+      "start_seconds": 389.72,
+      "end_seconds": 397.84000000000003
+    },
+    {
+      "text": "いるということを示してください。",
+      "start_seconds": 393.199,
+      "end_seconds": 401.96000000000004
+    },
+    {
+      "text": "この画像は怖いですか?先生に作ってまし",
+      "start_seconds": 397.84,
+      "end_seconds": 403.19899999999996
+    },
+    {
+      "text": "た。",
+      "start_seconds": 401.96,
+      "end_seconds": 406.44
+    },
+    {
+      "text": "先ほどの続きですが、若い世代の政治への",
+      "start_seconds": 403.199,
+      "end_seconds": 409.84000000000003
+    },
+    {
+      "text": "震がこの国の人権保障の実現には不可欠",
+      "start_seconds": 406.44,
+      "end_seconds": 411.8
+    },
+    {
+      "text": "です。",
+      "start_seconds": 409.84,
+      "end_seconds": 415.15999999999997
+    },
+    {
+      "text": "日本では若者が政治について語ることは",
+      "start_seconds": 411.8,
+      "end_seconds": 418.479
+    },
+    {
+      "text": "なんとなく多分と見られていますが、これ",
+      "start_seconds": 415.16,
+      "end_seconds": 423.199
+    },
+    {
+      "text": "は欧米諸国の若者とはだいぶ異なます。",
+      "start_seconds": 418.479,
+      "end_seconds": 426.36
+    },
+    {
+      "text": "自分の国の政治や経済社会問題に関心が",
+      "start_seconds": 423.199,
+      "end_seconds": 430.0
+    },
+    {
+      "text": "ないという大学生が圧倒的多数だという",
+      "start_seconds": 426.36,
+      "end_seconds": 432.91900000000004
+    },
+    {
+      "text": "こと。海外の説明書もなかなか理解して",
+      "start_seconds": 430.0,
+      "end_seconds": 435.479
+    },
+    {
+      "text": "もらいません。ありえないことだからです",
+      "start_seconds": 432.919,
+      "end_seconds": 439.75899999999996
+    },
+    {
+      "text": "。しかしそれは皆さんの責任ではありませ",
+      "start_seconds": 435.479,
+      "end_seconds": 443.36
+    },
+    {
+      "text": "ん。日本の教育政策では皆さんを政治から",
+      "start_seconds": 439.759,
+      "end_seconds": 446.12
+    },
+    {
+      "text": "遠ざけてきたからです。",
+      "start_seconds": 443.36,
+      "end_seconds": 449.52000000000004
+    },
+    {
+      "text": "だから私は皆さんにお願いしたい。政治",
+      "start_seconds": 446.12,
+      "end_seconds": 452.44
+    },
+    {
+      "text": "監視を持って政治について率直に",
+      "start_seconds": 449.52,
+      "end_seconds": 456.919
+    },
+    {
+      "text": "話し合える空間を仲間と作ってください。",
+      "start_seconds": 452.44,
+      "end_seconds": 462.36
+    },
+    {
+      "text": "そしてもしこの会場に愛、障害者、外国人",
+      "start_seconds": 456.919,
+      "end_seconds": 468.84
+    },
+    {
+      "text": "、無理、女性、貧困、接着、ブラクなどの",
+      "start_seconds": 462.36,
+      "end_seconds": 472.28000000000003
+    },
+    {
+      "text": "言葉に拒否感を持つ人がいたとしたら自分",
+      "start_seconds": 468.84,
+      "end_seconds": 475.84
+    },
+    {
+      "text": "が何に対してなぜ腹を立てているのかを",
+      "start_seconds": 472.28,
+      "end_seconds": 478.599
+    },
+    {
+      "text": "今一度立ち止まって考えて欲しいと思い",
+      "start_seconds": 475.84,
+      "end_seconds": 481.0
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 478.599,
+      "end_seconds": 485.159
+    },
+    {
+      "text": "改定は1度のない人たちに対してネットの",
+      "start_seconds": 481.0,
+      "end_seconds": 488.0
+    },
+    {
+      "text": "電話をみにして腹を立てているだけなの",
+      "start_seconds": 485.159,
+      "end_seconds": 490.24
+    },
+    {
+      "text": "ですから。",
+      "start_seconds": 488.0,
+      "end_seconds": 493.639
+    },
+    {
+      "text": "そしてこれらの差別問題は差別される側の",
+      "start_seconds": 490.24,
+      "end_seconds": 497.0
+    },
+    {
+      "text": "問題ではなく差別する側の問題であること",
+      "start_seconds": 493.639,
+      "end_seconds": 500.759
+    },
+    {
+      "text": "も考えてほしいと思います。以上です。ご",
+      "start_seconds": 497.0,
+      "end_seconds": 505.065
+    },
+    {
+      "text": "成聴ありがとうございました。[拍手]",
+      "start_seconds": 500.759,
+      "end_seconds": 505.065
+    },
+    {
+      "text": "あ",
+      "start_seconds": 510.919,
+      "end_seconds": 513.919
+    },
+    {
+      "text": "。",
+      "start_seconds": 517.039,
+      "end_seconds": 519.08
+    }
+  ],
+  "display_captions": [
+    {
+      "text": "え、皆さんこんにちは。今日はこの",
+      "start_seconds": 11.799,
+      "end_seconds": 14.96,
+      "id": "gZpIVJ-ZqYE-display-0001",
+      "segment_id": "gZpIVJ-ZqYE-ja-0001"
+    },
+    {
+      "text": "イベントの平均年齢を上げるために参加し",
+      "start_seconds": 14.96,
+      "end_seconds": 17.76,
+      "id": "gZpIVJ-ZqYE-display-0002",
+      "segment_id": "gZpIVJ-ZqYE-ja-0001"
+    },
+    {
+      "text": "ています。私が今日皆さんと一緒に考え",
+      "start_seconds": 17.76,
+      "end_seconds": 20.64,
+      "id": "gZpIVJ-ZqYE-display-0003",
+      "segment_id": "gZpIVJ-ZqYE-ja-0001"
+    },
+    {
+      "text": "たいことは人権とは何かということです。",
+      "start_seconds": 20.64,
+      "end_seconds": 24.88,
+      "id": "gZpIVJ-ZqYE-display-0004",
+      "segment_id": "gZpIVJ-ZqYE-ja-0002"
+    },
+    {
+      "text": "特に日本で生まれた座った人たちに教えて",
+      "start_seconds": 24.88,
+      "end_seconds": 28.359,
+      "id": "gZpIVJ-ZqYE-display-0005",
+      "segment_id": "gZpIVJ-ZqYE-ja-0003"
+    },
+    {
+      "text": "考えてもらいたいと思っています。",
+      "start_seconds": 28.359,
+      "end_seconds": 31.88,
+      "id": "gZpIVJ-ZqYE-display-0006",
+      "segment_id": "gZpIVJ-ZqYE-ja-0003"
+    },
+    {
+      "text": "人権保障とは何か試しにGoogleに",
+      "start_seconds": 31.88,
+      "end_seconds": 34.76,
+      "id": "gZpIVJ-ZqYE-display-0007",
+      "segment_id": "gZpIVJ-ZqYE-ja-0004"
+    },
+    {
+      "text": "聞いてみました。その答えはま、何という",
+      "start_seconds": 34.76,
+      "end_seconds": 37.399,
+      "id": "gZpIVJ-ZqYE-display-0008",
+      "segment_id": "gZpIVJ-ZqYE-ja-0004"
+    },
+    {
+      "text": "かとても教科書的ですが正しい要約では",
+      "start_seconds": 37.399,
+      "end_seconds": 40.68,
+      "id": "gZpIVJ-ZqYE-display-0009",
+      "segment_id": "gZpIVJ-ZqYE-ja-0004"
+    },
+    {
+      "text": "ありました。",
+      "start_seconds": 40.68,
+      "end_seconds": 42.68,
+      "id": "gZpIVJ-ZqYE-display-0010",
+      "segment_id": "gZpIVJ-ZqYE-ja-0004"
+    },
+    {
+      "text": "ところで時々に意する権利を主張するもの",
+      "start_seconds": 42.68,
+      "end_seconds": 46.36,
+      "id": "gZpIVJ-ZqYE-display-0011",
+      "segment_id": "gZpIVJ-ZqYE-ja-0005"
+    },
+    {
+      "text": "は義務を果たさなければならないという",
+      "start_seconds": 46.36,
+      "end_seconds": 49.0,
+      "id": "gZpIVJ-ZqYE-display-0012",
+      "segment_id": "gZpIVJ-ZqYE-ja-0005"
+    },
+    {
+      "text": "現設ですが、基本的人権について言えば",
+      "start_seconds": 49.0,
+      "end_seconds": 52.48,
+      "id": "gZpIVJ-ZqYE-display-0013",
+      "segment_id": "gZpIVJ-ZqYE-ja-0005"
+    },
+    {
+      "text": "これは半分正解で半分は誤解です。",
+      "start_seconds": 52.48,
+      "end_seconds": 57.6,
+      "id": "gZpIVJ-ZqYE-display-0014",
+      "segment_id": "gZpIVJ-ZqYE-ja-0006"
+    },
+    {
+      "text": "他人の人権を侵害してはならない。警備の",
+      "start_seconds": 57.6,
+      "end_seconds": 60.92,
+      "id": "gZpIVJ-ZqYE-display-0015",
+      "segment_id": "gZpIVJ-ZqYE-ja-0007"
+    },
+    {
+      "text": "乱をしてはならないという意味では七人権",
+      "start_seconds": 60.92,
+      "end_seconds": 64.28,
+      "id": "gZpIVJ-ZqYE-display-0016",
+      "segment_id": "gZpIVJ-ZqYE-ja-0007"
+    },
+    {
+      "text": "の視聴行使には確かに責任が伴います。",
+      "start_seconds": 64.28,
+      "end_seconds": 68.2,
+      "id": "gZpIVJ-ZqYE-display-0017",
+      "segment_id": "gZpIVJ-ZqYE-ja-0007"
+    },
+    {
+      "text": "しかし、日本憲法に定められた3大である",
+      "start_seconds": 68.2,
+      "end_seconds": 72.159,
+      "id": "gZpIVJ-ZqYE-display-0018",
+      "segment_id": "gZpIVJ-ZqYE-ja-0008"
+    },
+    {
+      "text": "納税、教育、金労を果たさなければ人権の",
+      "start_seconds": 72.159,
+      "end_seconds": 76.479,
+      "id": "gZpIVJ-ZqYE-display-0019",
+      "segment_id": "gZpIVJ-ZqYE-ja-0008"
+    },
+    {
+      "text": "主張はできないというのは謝りです。もし",
+      "start_seconds": 76.479,
+      "end_seconds": 80.4,
+      "id": "gZpIVJ-ZqYE-display-0020",
+      "segment_id": "gZpIVJ-ZqYE-ja-0009"
+    },
+    {
+      "text": "そうだすると健康で文化的な最低限度の",
+      "start_seconds": 80.4,
+      "end_seconds": 83.92,
+      "id": "gZpIVJ-ZqYE-display-0021",
+      "segment_id": "gZpIVJ-ZqYE-ja-0009"
+    },
+    {
+      "text": "生活を送る権利を主張でできる人は健康で",
+      "start_seconds": 83.92,
+      "end_seconds": 86.96,
+      "id": "gZpIVJ-ZqYE-display-0022",
+      "segment_id": "gZpIVJ-ZqYE-ja-0009"
+    },
+    {
+      "text": "文化的な最低限度の生活を送れる視力や",
+      "start_seconds": 86.96,
+      "end_seconds": 90.04,
+      "id": "gZpIVJ-ZqYE-display-0023",
+      "segment_id": "gZpIVJ-ZqYE-ja-0010"
+    },
+    {
+      "text": "体力をすでに持っている人だけになって",
+      "start_seconds": 90.04,
+      "end_seconds": 92.68,
+      "id": "gZpIVJ-ZqYE-display-0024",
+      "segment_id": "gZpIVJ-ZqYE-ja-0010"
+    },
+    {
+      "text": "しまうからです。",
+      "start_seconds": 92.68,
+      "end_seconds": 94.72,
+      "id": "gZpIVJ-ZqYE-display-0025",
+      "segment_id": "gZpIVJ-ZqYE-ja-0010"
+    },
+    {
+      "text": "この誤解は単なる概念の問題ではなく日本",
+      "start_seconds": 94.72,
+      "end_seconds": 98.68,
+      "id": "gZpIVJ-ZqYE-display-0026",
+      "segment_id": "gZpIVJ-ZqYE-ja-0011"
+    },
+    {
+      "text": "では現実の社会問題を満たしています。",
+      "start_seconds": 98.68,
+      "end_seconds": 103.24,
+      "id": "gZpIVJ-ZqYE-display-0027",
+      "segment_id": "gZpIVJ-ZqYE-ja-0011"
+    },
+    {
+      "text": "例えばSNSなどでは生活保護を受けて",
+      "start_seconds": 103.24,
+      "end_seconds": 106.64,
+      "id": "gZpIVJ-ZqYE-display-0028",
+      "segment_id": "gZpIVJ-ZqYE-ja-0012"
+    },
+    {
+      "text": "いる人の批判的な現設が多数見られます。",
+      "start_seconds": 106.64,
+      "end_seconds": 111.56,
+      "id": "gZpIVJ-ZqYE-display-0029",
+      "segment_id": "gZpIVJ-ZqYE-ja-0012"
+    },
+    {
+      "text": "外国人の生活保護法の規制受給についても",
+      "start_seconds": 111.56,
+      "end_seconds": 114.68,
+      "id": "gZpIVJ-ZqYE-display-0030",
+      "segment_id": "gZpIVJ-ZqYE-ja-0013"
+    },
+    {
+      "text": "補調して語られているのをよく見かけます",
+      "start_seconds": 114.68,
+      "end_seconds": 117.119,
+      "id": "gZpIVJ-ZqYE-display-0031",
+      "segment_id": "gZpIVJ-ZqYE-ja-0013"
+    },
+    {
+      "text": "。",
+      "start_seconds": 117.119,
+      "end_seconds": 118.96,
+      "id": "gZpIVJ-ZqYE-display-0032",
+      "segment_id": "gZpIVJ-ZqYE-ja-0013"
+    },
+    {
+      "text": "現実の数字で言えばワーキングはつまり",
+      "start_seconds": 118.96,
+      "end_seconds": 123.0,
+      "id": "gZpIVJ-ZqYE-display-0033",
+      "segment_id": "gZpIVJ-ZqYE-ja-0014"
+    },
+    {
+      "text": "働いているのに生活保護受給来年以下の",
+      "start_seconds": 123.0,
+      "end_seconds": 125.68,
+      "id": "gZpIVJ-ZqYE-display-0034",
+      "segment_id": "gZpIVJ-ZqYE-ja-0014"
+    },
+    {
+      "text": "生活をしている人は働いている人の5人に",
+      "start_seconds": 125.68,
+      "end_seconds": 129.36,
+      "id": "gZpIVJ-ZqYE-display-0035",
+      "segment_id": "gZpIVJ-ZqYE-ja-0014"
+    },
+    {
+      "text": "1人と推計されています。これは東京都の",
+      "start_seconds": 129.36,
+      "end_seconds": 133.959,
+      "id": "gZpIVJ-ZqYE-display-0036",
+      "segment_id": "gZpIVJ-ZqYE-ja-0015"
+    },
+    {
+      "text": "人口とほぼ同じ程度の人前です。禁止され",
+      "start_seconds": 133.959,
+      "end_seconds": 138.36,
+      "id": "gZpIVJ-ZqYE-display-0037",
+      "segment_id": "gZpIVJ-ZqYE-ja-0015"
+    },
+    {
+      "text": "ているの生活保護申請の役所での窓口拒否",
+      "start_seconds": 138.36,
+      "end_seconds": 143.04,
+      "id": "gZpIVJ-ZqYE-display-0038",
+      "segment_id": "gZpIVJ-ZqYE-ja-0016"
+    },
+    {
+      "text": "が投稿しています。",
+      "start_seconds": 143.04,
+      "end_seconds": 146.04,
+      "id": "gZpIVJ-ZqYE-display-0039",
+      "segment_id": "gZpIVJ-ZqYE-ja-0016"
+    },
+    {
+      "text": "本来貧困のスパイラルを防ぐための社会",
+      "start_seconds": 146.04,
+      "end_seconds": 149.36,
+      "id": "gZpIVJ-ZqYE-display-0040",
+      "segment_id": "gZpIVJ-ZqYE-ja-0017"
+    },
+    {
+      "text": "装置である生活保護制度がこれほどまでに",
+      "start_seconds": 149.36,
+      "end_seconds": 153.16,
+      "id": "gZpIVJ-ZqYE-display-0041",
+      "segment_id": "gZpIVJ-ZqYE-ja-0017"
+    },
+    {
+      "text": "利用しにくいのはなぜでしょうか?",
+      "start_seconds": 153.16,
+      "end_seconds": 157.28,
+      "id": "gZpIVJ-ZqYE-display-0042",
+      "segment_id": "gZpIVJ-ZqYE-ja-0017"
+    },
+    {
+      "text": "私は日本社会が道徳依存していて法制度と",
+      "start_seconds": 157.28,
+      "end_seconds": 161.36,
+      "id": "gZpIVJ-ZqYE-display-0043",
+      "segment_id": "gZpIVJ-ZqYE-ja-0018"
+    },
+    {
+      "text": "しての人権保障という考え方を未だ少年",
+      "start_seconds": 161.36,
+      "end_seconds": 164.56,
+      "id": "gZpIVJ-ZqYE-display-0044",
+      "segment_id": "gZpIVJ-ZqYE-ja-0018"
+    },
+    {
+      "text": "から受け入れていないことに問題があると",
+      "start_seconds": 164.56,
+      "end_seconds": 167.08,
+      "id": "gZpIVJ-ZqYE-display-0045",
+      "segment_id": "gZpIVJ-ZqYE-ja-0018"
+    },
+    {
+      "text": "考えています。",
+      "start_seconds": 167.08,
+      "end_seconds": 169.319,
+      "id": "gZpIVJ-ZqYE-display-0046",
+      "segment_id": "gZpIVJ-ZqYE-ja-0019"
+    },
+    {
+      "text": "日本では法務省が人権啓発活動に責任を",
+      "start_seconds": 169.319,
+      "end_seconds": 172.879,
+      "id": "gZpIVJ-ZqYE-display-0047",
+      "segment_id": "gZpIVJ-ZqYE-ja-0020"
+    },
+    {
+      "text": "しっていますが、今から10年ほど前には",
+      "start_seconds": 172.879,
+      "end_seconds": 175.68,
+      "id": "gZpIVJ-ZqYE-display-0048",
+      "segment_id": "gZpIVJ-ZqYE-ja-0020"
+    },
+    {
+      "text": "このようなスローンが啓発に使われてい",
+      "start_seconds": 175.68,
+      "end_seconds": 178.959,
+      "id": "gZpIVJ-ZqYE-display-0049",
+      "segment_id": "gZpIVJ-ZqYE-ja-0020"
+    },
+    {
+      "text": "ました。",
+      "start_seconds": 178.959,
+      "end_seconds": 181.92,
+      "id": "gZpIVJ-ZqYE-display-0050",
+      "segment_id": "gZpIVJ-ZqYE-ja-0021"
+    },
+    {
+      "text": "このポスターと言いたいことはつまり",
+      "start_seconds": 181.92,
+      "end_seconds": 185.08,
+      "id": "gZpIVJ-ZqYE-display-0051",
+      "segment_id": "gZpIVJ-ZqYE-ja-0022"
+    },
+    {
+      "text": "日本で人権保障を推進するには人々が他者",
+      "start_seconds": 185.08,
+      "end_seconds": 189.159,
+      "id": "gZpIVJ-ZqYE-display-0052",
+      "segment_id": "gZpIVJ-ZqYE-ja-0022"
+    },
+    {
+      "text": "の気持ちを考え",
+      "start_seconds": 189.159,
+      "end_seconds": 191.519,
+      "id": "gZpIVJ-ZqYE-display-0053",
+      "segment_id": "gZpIVJ-ZqYE-ja-0022"
+    },
+    {
+      "text": "の気持ちを持つ必要があるということです",
+      "start_seconds": 191.519,
+      "end_seconds": 194.12,
+      "id": "gZpIVJ-ZqYE-display-0054",
+      "segment_id": "gZpIVJ-ZqYE-ja-0023"
+    },
+    {
+      "text": "。",
+      "start_seconds": 194.12,
+      "end_seconds": 195.68,
+      "id": "gZpIVJ-ZqYE-display-0055",
+      "segment_id": "gZpIVJ-ZqYE-ja-0023"
+    },
+    {
+      "text": "本当でしょうか?",
+      "start_seconds": 195.68,
+      "end_seconds": 198.0,
+      "id": "gZpIVJ-ZqYE-display-0056",
+      "segment_id": "gZpIVJ-ZqYE-ja-0024"
+    },
+    {
+      "text": "私の主張はこれとは規約です。他者の",
+      "start_seconds": 198.0,
+      "end_seconds": 201.56,
+      "id": "gZpIVJ-ZqYE-display-0057",
+      "segment_id": "gZpIVJ-ZqYE-ja-0025"
+    },
+    {
+      "text": "思い合いの心に依存する社会の仕組みでは",
+      "start_seconds": 201.56,
+      "end_seconds": 204.44,
+      "id": "gZpIVJ-ZqYE-display-0058",
+      "segment_id": "gZpIVJ-ZqYE-ja-0025"
+    },
+    {
+      "text": "人権保障問題は解決しないのです。",
+      "start_seconds": 204.44,
+      "end_seconds": 208.84,
+      "id": "gZpIVJ-ZqYE-display-0059",
+      "segment_id": "gZpIVJ-ZqYE-ja-0025"
+    },
+    {
+      "text": "さらに言えば日本では人々の動作心に依存",
+      "start_seconds": 208.84,
+      "end_seconds": 212.439,
+      "id": "gZpIVJ-ZqYE-display-0060",
+      "segment_id": "gZpIVJ-ZqYE-ja-0026"
+    },
+    {
+      "text": "する社会構造が人権問題の解決を難しくし",
+      "start_seconds": 212.439,
+      "end_seconds": 216.439,
+      "id": "gZpIVJ-ZqYE-display-0061",
+      "segment_id": "gZpIVJ-ZqYE-ja-0026"
+    },
+    {
+      "text": "ているです。こんな例を考えてみましょう",
+      "start_seconds": 216.439,
+      "end_seconds": 219.84,
+      "id": "gZpIVJ-ZqYE-display-0062",
+      "segment_id": "gZpIVJ-ZqYE-ja-0026"
+    },
+    {
+      "text": "。資格障害のある人は鉄道の駅のホームを",
+      "start_seconds": 219.84,
+      "end_seconds": 223.76,
+      "id": "gZpIVJ-ZqYE-display-0063",
+      "segment_id": "gZpIVJ-ZqYE-ja-0027"
+    },
+    {
+      "text": "歩いています。この人は今にもホームから",
+      "start_seconds": 223.76,
+      "end_seconds": 226.84,
+      "id": "gZpIVJ-ZqYE-display-0064",
+      "segment_id": "gZpIVJ-ZqYE-ja-0027"
+    },
+    {
+      "text": "線路に転落しそうです。ここで声をかけて",
+      "start_seconds": 226.84,
+      "end_seconds": 231.56,
+      "id": "gZpIVJ-ZqYE-display-0065",
+      "segment_id": "gZpIVJ-ZqYE-ja-0027"
+    },
+    {
+      "text": "肩を叩いてするのは道徳的行動です。同徳",
+      "start_seconds": 231.56,
+      "end_seconds": 236.0,
+      "id": "gZpIVJ-ZqYE-display-0066",
+      "segment_id": "gZpIVJ-ZqYE-ja-0028"
+    },
+    {
+      "text": "的行動はもちろん解説です。これからも",
+      "start_seconds": 236.0,
+      "end_seconds": 238.519,
+      "id": "gZpIVJ-ZqYE-display-0067",
+      "segment_id": "gZpIVJ-ZqYE-ja-0028"
+    },
+    {
+      "text": "是非続けてください。他方でホームの橋に",
+      "start_seconds": 238.519,
+      "end_seconds": 243.319,
+      "id": "gZpIVJ-ZqYE-display-0068",
+      "segment_id": "gZpIVJ-ZqYE-ja-0028"
+    },
+    {
+      "text": "安全策が設置されていて利用者の添を防ぐ",
+      "start_seconds": 243.319,
+      "end_seconds": 246.76,
+      "id": "gZpIVJ-ZqYE-display-0069",
+      "segment_id": "gZpIVJ-ZqYE-ja-0029"
+    },
+    {
+      "text": "は人権保障です。この2つの違いは何",
+      "start_seconds": 246.76,
+      "end_seconds": 251.12,
+      "id": "gZpIVJ-ZqYE-display-0070",
+      "segment_id": "gZpIVJ-ZqYE-ja-0029"
+    },
+    {
+      "text": "でしょうか?",
+      "start_seconds": 251.12,
+      "end_seconds": 253.439,
+      "id": "gZpIVJ-ZqYE-display-0071",
+      "segment_id": "gZpIVJ-ZqYE-ja-0029"
+    },
+    {
+      "text": "もし人権保障施策の実施に責任を国や自治",
+      "start_seconds": 253.439,
+      "end_seconds": 257.359,
+      "id": "gZpIVJ-ZqYE-display-0072",
+      "segment_id": "gZpIVJ-ZqYE-ja-0030"
+    },
+    {
+      "text": "体がそれの政治策変わりに人々に道徳的",
+      "start_seconds": 257.359,
+      "end_seconds": 262.88,
+      "id": "gZpIVJ-ZqYE-display-0073",
+      "segment_id": "gZpIVJ-ZqYE-ja-0030"
+    },
+    {
+      "text": "行動の実践を呼びかけていったらどうなる",
+      "start_seconds": 262.88,
+      "end_seconds": 265.4,
+      "id": "gZpIVJ-ZqYE-display-0074",
+      "segment_id": "gZpIVJ-ZqYE-ja-0030"
+    },
+    {
+      "text": "でしょうか?この例では資格障害のある人",
+      "start_seconds": 265.4,
+      "end_seconds": 268.44,
+      "id": "gZpIVJ-ZqYE-display-0075",
+      "segment_id": "gZpIVJ-ZqYE-ja-0031"
+    },
+    {
+      "text": "は他人がいないと鉄道を利用できないこと",
+      "start_seconds": 268.44,
+      "end_seconds": 271.36,
+      "id": "gZpIVJ-ZqYE-display-0076",
+      "segment_id": "gZpIVJ-ZqYE-ja-0031"
+    },
+    {
+      "text": "になります。",
+      "start_seconds": 271.36,
+      "end_seconds": 273.4,
+      "id": "gZpIVJ-ZqYE-display-0077",
+      "segment_id": "gZpIVJ-ZqYE-ja-0031"
+    },
+    {
+      "text": "そして助けてくれる人にいつもお礼を言わ",
+      "start_seconds": 273.4,
+      "end_seconds": 277.28,
+      "id": "gZpIVJ-ZqYE-display-0078",
+      "segment_id": "gZpIVJ-ZqYE-ja-0032"
+    },
+    {
+      "text": "なくてはなりません。日本の文化的特徴と",
+      "start_seconds": 277.28,
+      "end_seconds": 280.44,
+      "id": "gZpIVJ-ZqYE-display-0079",
+      "segment_id": "gZpIVJ-ZqYE-ja-0032"
+    },
+    {
+      "text": "してきっとすみませんと謝り続けることに",
+      "start_seconds": 280.44,
+      "end_seconds": 284.24,
+      "id": "gZpIVJ-ZqYE-display-0080",
+      "segment_id": "gZpIVJ-ZqYE-ja-0032"
+    },
+    {
+      "text": "なるかもしれません。",
+      "start_seconds": 284.24,
+      "end_seconds": 286.72,
+      "id": "gZpIVJ-ZqYE-display-0081",
+      "segment_id": "gZpIVJ-ZqYE-ja-0033"
+    },
+    {
+      "text": "そして本当はなぜホームドアを設置して",
+      "start_seconds": 286.72,
+      "end_seconds": 289.6,
+      "id": "gZpIVJ-ZqYE-display-0082",
+      "segment_id": "gZpIVJ-ZqYE-ja-0034"
+    },
+    {
+      "text": "くれないの?そうすれば私は1人で鉄道に",
+      "start_seconds": 289.6,
+      "end_seconds": 293.32,
+      "id": "gZpIVJ-ZqYE-display-0083",
+      "segment_id": "gZpIVJ-ZqYE-ja-0034"
+    },
+    {
+      "text": "乗れるのと言いたいのですが、そんなこと",
+      "start_seconds": 293.32,
+      "end_seconds": 297.039,
+      "id": "gZpIVJ-ZqYE-display-0084",
+      "segment_id": "gZpIVJ-ZqYE-ja-0034"
+    },
+    {
+      "text": "言えばSNSなどで袋叩きにあるでしょう",
+      "start_seconds": 297.039,
+      "end_seconds": 300.0,
+      "id": "gZpIVJ-ZqYE-display-0085",
+      "segment_id": "gZpIVJ-ZqYE-ja-0035"
+    },
+    {
+      "text": "。長大人の全員はありがたく思うよと",
+      "start_seconds": 300.0,
+      "end_seconds": 306.4,
+      "id": "gZpIVJ-ZqYE-display-0086",
+      "segment_id": "gZpIVJ-ZqYE-ja-0035"
+    },
+    {
+      "text": "ところで日本の政府はかつてこんな内容の",
+      "start_seconds": 306.4,
+      "end_seconds": 309.96,
+      "id": "gZpIVJ-ZqYE-display-0087",
+      "segment_id": "gZpIVJ-ZqYE-ja-0036"
+    },
+    {
+      "text": "新聞広告を出したことがあります。",
+      "start_seconds": 309.96,
+      "end_seconds": 314.96,
+      "id": "gZpIVJ-ZqYE-display-0088",
+      "segment_id": "gZpIVJ-ZqYE-ja-0036"
+    },
+    {
+      "text": "子供の銀行を解決する使命は本来は民間の",
+      "start_seconds": 315.56,
+      "end_seconds": 319.0,
+      "id": "gZpIVJ-ZqYE-display-0089",
+      "segment_id": "gZpIVJ-ZqYE-ja-0037"
+    },
+    {
+      "text": "人々ではなく国や自治体であらずだと思い",
+      "start_seconds": 319.0,
+      "end_seconds": 322.08,
+      "id": "gZpIVJ-ZqYE-display-0090",
+      "segment_id": "gZpIVJ-ZqYE-ja-0037"
+    },
+    {
+      "text": "ますが皆さんはどう思いますか?",
+      "start_seconds": 322.08,
+      "end_seconds": 326.08,
+      "id": "gZpIVJ-ZqYE-display-0091",
+      "segment_id": "gZpIVJ-ZqYE-ja-0037"
+    },
+    {
+      "text": "そして最近のお米の価格等により日本で",
+      "start_seconds": 326.08,
+      "end_seconds": 330.199,
+      "id": "gZpIVJ-ZqYE-display-0092",
+      "segment_id": "gZpIVJ-ZqYE-ja-0038"
+    },
+    {
+      "text": "1番最初に子供食堂を名乗って活動を開始",
+      "start_seconds": 330.199,
+      "end_seconds": 333.72,
+      "id": "gZpIVJ-ZqYE-display-0093",
+      "segment_id": "gZpIVJ-ZqYE-ja-0038"
+    },
+    {
+      "text": "した人がついに子供食堂の経てしまいまし",
+      "start_seconds": 333.72,
+      "end_seconds": 337.8,
+      "id": "gZpIVJ-ZqYE-display-0094",
+      "segment_id": "gZpIVJ-ZqYE-ja-0038"
+    },
+    {
+      "text": "た。",
+      "start_seconds": 337.8,
+      "end_seconds": 339.4,
+      "id": "gZpIVJ-ZqYE-display-0095",
+      "segment_id": "gZpIVJ-ZqYE-ja-0039"
+    },
+    {
+      "text": "彼女はメディアの資材に答えてこう言って",
+      "start_seconds": 339.4,
+      "end_seconds": 341.28,
+      "id": "gZpIVJ-ZqYE-display-0096",
+      "segment_id": "gZpIVJ-ZqYE-ja-0040"
+    },
+    {
+      "text": "います。",
+      "start_seconds": 341.28,
+      "end_seconds": 343.08,
+      "id": "gZpIVJ-ZqYE-display-0097",
+      "segment_id": "gZpIVJ-ZqYE-ja-0040"
+    },
+    {
+      "text": "日本の体制って国民を聞させるようにでき",
+      "start_seconds": 343.08,
+      "end_seconds": 346.8,
+      "id": "gZpIVJ-ZqYE-display-0098",
+      "segment_id": "gZpIVJ-ZqYE-ja-0041"
+    },
+    {
+      "text": "ているのではないかと思うこともあります",
+      "start_seconds": 346.8,
+      "end_seconds": 348.479,
+      "id": "gZpIVJ-ZqYE-display-0099",
+      "segment_id": "gZpIVJ-ZqYE-ja-0041"
+    },
+    {
+      "text": "。",
+      "start_seconds": 348.479,
+      "end_seconds": 351.16,
+      "id": "gZpIVJ-ZqYE-display-0100",
+      "segment_id": "gZpIVJ-ZqYE-ja-0041"
+    },
+    {
+      "text": "繰り返しますが、人々の道徳に国家が頼っ",
+      "start_seconds": 351.16,
+      "end_seconds": 354.759,
+      "id": "gZpIVJ-ZqYE-display-0101",
+      "segment_id": "gZpIVJ-ZqYE-ja-0042"
+    },
+    {
+      "text": "ているだけでは人権保障は実現しないの",
+      "start_seconds": 354.759,
+      "end_seconds": 357.84,
+      "id": "gZpIVJ-ZqYE-display-0102",
+      "segment_id": "gZpIVJ-ZqYE-ja-0042"
+    },
+    {
+      "text": "です。ではどうすればいいんでしょうか?",
+      "start_seconds": 357.84,
+      "end_seconds": 362.919,
+      "id": "gZpIVJ-ZqYE-display-0103",
+      "segment_id": "gZpIVJ-ZqYE-ja-0042"
+    },
+    {
+      "text": "色々考えて欲しいことはたくさんあります",
+      "start_seconds": 362.919,
+      "end_seconds": 364.639,
+      "id": "gZpIVJ-ZqYE-display-0104",
+      "segment_id": "gZpIVJ-ZqYE-ja-0043"
+    },
+    {
+      "text": "。もっと色々考えてみたいという人は是非",
+      "start_seconds": 364.639,
+      "end_seconds": 368.12,
+      "id": "gZpIVJ-ZqYE-display-0105",
+      "segment_id": "gZpIVJ-ZqYE-ja-0043"
+    },
+    {
+      "text": "私の方に受行してください。お待ちしてい",
+      "start_seconds": 368.12,
+      "end_seconds": 370.72,
+      "id": "gZpIVJ-ZqYE-display-0106",
+      "segment_id": "gZpIVJ-ZqYE-ja-0043"
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 370.72,
+      "end_seconds": 372.68,
+      "id": "gZpIVJ-ZqYE-display-0107",
+      "segment_id": "gZpIVJ-ZqYE-ja-0043"
+    },
+    {
+      "text": "でもとりあえず第1項し日本の政治、特に",
+      "start_seconds": 372.68,
+      "end_seconds": 377.16,
+      "id": "gZpIVJ-ZqYE-display-0108",
+      "segment_id": "gZpIVJ-ZqYE-ja-0044"
+    },
+    {
+      "text": "人権保障政策の実施状況に関心を持って",
+      "start_seconds": 377.16,
+      "end_seconds": 380.28,
+      "id": "gZpIVJ-ZqYE-display-0109",
+      "segment_id": "gZpIVJ-ZqYE-ja-0044"
+    },
+    {
+      "text": "ください。",
+      "start_seconds": 380.28,
+      "end_seconds": 382.24,
+      "id": "gZpIVJ-ZqYE-display-0110",
+      "segment_id": "gZpIVJ-ZqYE-ja-0044"
+    },
+    {
+      "text": "そして選挙に行ってください。選挙を通じ",
+      "start_seconds": 382.24,
+      "end_seconds": 386.16,
+      "id": "gZpIVJ-ZqYE-display-0111",
+      "segment_id": "gZpIVJ-ZqYE-ja-0045"
+    },
+    {
+      "text": "てこの国の政府が人権保障政策を実施して",
+      "start_seconds": 386.16,
+      "end_seconds": 389.72,
+      "id": "gZpIVJ-ZqYE-display-0112",
+      "segment_id": "gZpIVJ-ZqYE-ja-0045"
+    },
+    {
+      "text": "いるかを皆さんが主権者として監視して",
+      "start_seconds": 389.72,
+      "end_seconds": 393.199,
+      "id": "gZpIVJ-ZqYE-display-0113",
+      "segment_id": "gZpIVJ-ZqYE-ja-0045"
+    },
+    {
+      "text": "いるということを示してください。",
+      "start_seconds": 393.199,
+      "end_seconds": 397.84,
+      "id": "gZpIVJ-ZqYE-display-0114",
+      "segment_id": "gZpIVJ-ZqYE-ja-0046"
+    },
+    {
+      "text": "この画像は怖いですか?先生に作ってまし",
+      "start_seconds": 397.84,
+      "end_seconds": 401.96,
+      "id": "gZpIVJ-ZqYE-display-0115",
+      "segment_id": "gZpIVJ-ZqYE-ja-0047"
+    },
+    {
+      "text": "た。",
+      "start_seconds": 401.96,
+      "end_seconds": 403.199,
+      "id": "gZpIVJ-ZqYE-display-0116",
+      "segment_id": "gZpIVJ-ZqYE-ja-0047"
+    },
+    {
+      "text": "先ほどの続きですが、若い世代の政治への",
+      "start_seconds": 403.199,
+      "end_seconds": 406.44,
+      "id": "gZpIVJ-ZqYE-display-0117",
+      "segment_id": "gZpIVJ-ZqYE-ja-0048"
+    },
+    {
+      "text": "震がこの国の人権保障の実現には不可欠",
+      "start_seconds": 406.44,
+      "end_seconds": 409.84,
+      "id": "gZpIVJ-ZqYE-display-0118",
+      "segment_id": "gZpIVJ-ZqYE-ja-0048"
+    },
+    {
+      "text": "です。",
+      "start_seconds": 409.84,
+      "end_seconds": 411.8,
+      "id": "gZpIVJ-ZqYE-display-0119",
+      "segment_id": "gZpIVJ-ZqYE-ja-0048"
+    },
+    {
+      "text": "日本では若者が政治について語ることは",
+      "start_seconds": 411.8,
+      "end_seconds": 415.16,
+      "id": "gZpIVJ-ZqYE-display-0120",
+      "segment_id": "gZpIVJ-ZqYE-ja-0049"
+    },
+    {
+      "text": "なんとなく多分と見られていますが、これ",
+      "start_seconds": 415.16,
+      "end_seconds": 418.479,
+      "id": "gZpIVJ-ZqYE-display-0121",
+      "segment_id": "gZpIVJ-ZqYE-ja-0049"
+    },
+    {
+      "text": "は欧米諸国の若者とはだいぶ異なます。",
+      "start_seconds": 418.479,
+      "end_seconds": 423.199,
+      "id": "gZpIVJ-ZqYE-display-0122",
+      "segment_id": "gZpIVJ-ZqYE-ja-0049"
+    },
+    {
+      "text": "自分の国の政治や経済社会問題に関心が",
+      "start_seconds": 423.199,
+      "end_seconds": 426.36,
+      "id": "gZpIVJ-ZqYE-display-0123",
+      "segment_id": "gZpIVJ-ZqYE-ja-0050"
+    },
+    {
+      "text": "ないという大学生が圧倒的多数だという",
+      "start_seconds": 426.36,
+      "end_seconds": 430.0,
+      "id": "gZpIVJ-ZqYE-display-0124",
+      "segment_id": "gZpIVJ-ZqYE-ja-0050"
+    },
+    {
+      "text": "こと。海外の説明書もなかなか理解して",
+      "start_seconds": 430.0,
+      "end_seconds": 432.919,
+      "id": "gZpIVJ-ZqYE-display-0125",
+      "segment_id": "gZpIVJ-ZqYE-ja-0050"
+    },
+    {
+      "text": "もらいません。ありえないことだからです",
+      "start_seconds": 432.919,
+      "end_seconds": 435.479,
+      "id": "gZpIVJ-ZqYE-display-0126",
+      "segment_id": "gZpIVJ-ZqYE-ja-0051"
+    },
+    {
+      "text": "。しかしそれは皆さんの責任ではありませ",
+      "start_seconds": 435.479,
+      "end_seconds": 439.759,
+      "id": "gZpIVJ-ZqYE-display-0127",
+      "segment_id": "gZpIVJ-ZqYE-ja-0051"
+    },
+    {
+      "text": "ん。日本の教育政策では皆さんを政治から",
+      "start_seconds": 439.759,
+      "end_seconds": 443.36,
+      "id": "gZpIVJ-ZqYE-display-0128",
+      "segment_id": "gZpIVJ-ZqYE-ja-0051"
+    },
+    {
+      "text": "遠ざけてきたからです。",
+      "start_seconds": 443.36,
+      "end_seconds": 446.12,
+      "id": "gZpIVJ-ZqYE-display-0129",
+      "segment_id": "gZpIVJ-ZqYE-ja-0052"
+    },
+    {
+      "text": "だから私は皆さんにお願いしたい。政治",
+      "start_seconds": 446.12,
+      "end_seconds": 449.52,
+      "id": "gZpIVJ-ZqYE-display-0130",
+      "segment_id": "gZpIVJ-ZqYE-ja-0053"
+    },
+    {
+      "text": "監視を持って政治について率直に",
+      "start_seconds": 449.52,
+      "end_seconds": 452.44,
+      "id": "gZpIVJ-ZqYE-display-0131",
+      "segment_id": "gZpIVJ-ZqYE-ja-0053"
+    },
+    {
+      "text": "話し合える空間を仲間と作ってください。",
+      "start_seconds": 452.44,
+      "end_seconds": 456.919,
+      "id": "gZpIVJ-ZqYE-display-0132",
+      "segment_id": "gZpIVJ-ZqYE-ja-0053"
+    },
+    {
+      "text": "そしてもしこの会場に愛、障害者、外国人",
+      "start_seconds": 456.919,
+      "end_seconds": 462.36,
+      "id": "gZpIVJ-ZqYE-display-0133",
+      "segment_id": "gZpIVJ-ZqYE-ja-0054"
+    },
+    {
+      "text": "、無理、女性、貧困、接着、ブラクなどの",
+      "start_seconds": 462.36,
+      "end_seconds": 468.84,
+      "id": "gZpIVJ-ZqYE-display-0134",
+      "segment_id": "gZpIVJ-ZqYE-ja-0054"
+    },
+    {
+      "text": "言葉に拒否感を持つ人がいたとしたら自分",
+      "start_seconds": 468.84,
+      "end_seconds": 472.28,
+      "id": "gZpIVJ-ZqYE-display-0135",
+      "segment_id": "gZpIVJ-ZqYE-ja-0055"
+    },
+    {
+      "text": "が何に対してなぜ腹を立てているのかを",
+      "start_seconds": 472.28,
+      "end_seconds": 475.84,
+      "id": "gZpIVJ-ZqYE-display-0136",
+      "segment_id": "gZpIVJ-ZqYE-ja-0055"
+    },
+    {
+      "text": "今一度立ち止まって考えて欲しいと思い",
+      "start_seconds": 475.84,
+      "end_seconds": 478.599,
+      "id": "gZpIVJ-ZqYE-display-0137",
+      "segment_id": "gZpIVJ-ZqYE-ja-0055"
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 478.599,
+      "end_seconds": 481.0,
+      "id": "gZpIVJ-ZqYE-display-0138",
+      "segment_id": "gZpIVJ-ZqYE-ja-0056"
+    },
+    {
+      "text": "改定は1度のない人たちに対してネットの",
+      "start_seconds": 481.0,
+      "end_seconds": 485.159,
+      "id": "gZpIVJ-ZqYE-display-0139",
+      "segment_id": "gZpIVJ-ZqYE-ja-0057"
+    },
+    {
+      "text": "電話をみにして腹を立てているだけなの",
+      "start_seconds": 485.159,
+      "end_seconds": 488.0,
+      "id": "gZpIVJ-ZqYE-display-0140",
+      "segment_id": "gZpIVJ-ZqYE-ja-0057"
+    },
+    {
+      "text": "ですから。",
+      "start_seconds": 488.0,
+      "end_seconds": 490.24,
+      "id": "gZpIVJ-ZqYE-display-0141",
+      "segment_id": "gZpIVJ-ZqYE-ja-0057"
+    },
+    {
+      "text": "そしてこれらの差別問題は差別される側の",
+      "start_seconds": 490.24,
+      "end_seconds": 493.639,
+      "id": "gZpIVJ-ZqYE-display-0142",
+      "segment_id": "gZpIVJ-ZqYE-ja-0058"
+    },
+    {
+      "text": "問題ではなく差別する側の問題であること",
+      "start_seconds": 493.639,
+      "end_seconds": 497.0,
+      "id": "gZpIVJ-ZqYE-display-0143",
+      "segment_id": "gZpIVJ-ZqYE-ja-0058"
+    },
+    {
+      "text": "も考えてほしいと思います。以上です。ご",
+      "start_seconds": 497.0,
+      "end_seconds": 500.759,
+      "id": "gZpIVJ-ZqYE-display-0144",
+      "segment_id": "gZpIVJ-ZqYE-ja-0058"
+    },
+    {
+      "text": "成聴ありがとうございました。[拍手]",
+      "start_seconds": 500.759,
+      "end_seconds": 505.065,
+      "id": "gZpIVJ-ZqYE-display-0145",
+      "segment_id": "gZpIVJ-ZqYE-ja-0059"
+    },
+    {
+      "text": "あ",
+      "start_seconds": 510.919,
+      "end_seconds": 513.919,
+      "id": "gZpIVJ-ZqYE-display-0146",
+      "segment_id": "gZpIVJ-ZqYE-ja-0060"
+    },
+    {
+      "text": "。",
+      "start_seconds": 517.039,
+      "end_seconds": 518,
+      "id": "gZpIVJ-ZqYE-display-0147",
+      "segment_id": "gZpIVJ-ZqYE-ja-0061"
+    }
+  ]
+}

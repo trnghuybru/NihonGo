@@ -1,0 +1,1720 @@
+{
+  "schema_version": 1,
+  "video": {
+    "youtube_id": "gVEK3y59TLc",
+    "title": "AI Can Write the Recipe, But Only You Can Taste the Dish | Kenji Yoshizawa | TEDxInnovation U",
+    "channel": "TEDx Talks",
+    "duration_seconds": 418
+  },
+  "caption_track": {
+    "language": "ja",
+    "kind": "asr",
+    "source": "youtube_automatic"
+  },
+  "source_playlist": "https://www.youtube.com/playlist?list=PLsRNoUx8w3rOHjXIU5EE4KOiIagv9yQaG",
+  "fetched_at": "2026-10-13T13:23:54.106277+00:00",
+  "segment_count": 47,
+  "segments": [
+    {
+      "text": "[音楽]",
+      "start_seconds": 1.964,
+      "end_seconds": 3.984,
+      "id": "gVEK3y59TLc-ja-0001",
+      "sequence": 1
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 7.205,
+      "end_seconds": 9.225,
+      "id": "gVEK3y59TLc-ja-0002",
+      "sequence": 2
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 11.79,
+      "end_seconds": 13.809999999999999,
+      "id": "gVEK3y59TLc-ja-0003",
+      "sequence": 3
+    },
+    {
+      "text": "[拍手]皆さん、こんにちは。さあ、突然ですが皆さんAIにホームランの打ち方を皆さん聞いたことありますか?AIにホームラン",
+      "start_seconds": 16.375,
+      "end_seconds": 27.8,
+      "id": "gVEK3y59TLc-ja-0004",
+      "sequence": 4
+    },
+    {
+      "text": "の打ち方を聞くと、スイング、ホーム完璧なまでにホームランはどうやって打てばいいかをAIを教えてくれます。そうする",
+      "start_seconds": 27.8,
+      "end_seconds": 37.96,
+      "id": "gVEK3y59TLc-ja-0005",
+      "sequence": 5
+    },
+    {
+      "text": "と皆さんホームランの打ち方をAIに教えてもらうことができます。さあ、で、皆さんAIにホームランの打ち方を教えて",
+      "start_seconds": 37.96,
+      "end_seconds": 48.0,
+      "id": "gVEK3y59TLc-ja-0006",
+      "sequence": 6
+    },
+    {
+      "text": "もらって、明日からホームラン打つことができますかいう話です。",
+      "start_seconds": 48.0,
+      "end_seconds": 55.559,
+      "id": "gVEK3y59TLc-ja-0007",
+      "sequence": 7
+    },
+    {
+      "text": "できませんよね。ホームラン打つには1回でも多くバッターボックスに立ってバット",
+      "start_seconds": 55.559,
+      "end_seconds": 64.159,
+      "id": "gVEK3y59TLc-ja-0008",
+      "sequence": 8
+    },
+    {
+      "text": "を振ること。これにつきるわけです。",
+      "start_seconds": 64.159,
+      "end_seconds": 67.96,
+      "id": "gVEK3y59TLc-ja-0009",
+      "sequence": 9
+    },
+    {
+      "text": "さあ、AIに新しいビジネスを聞いてみてください。",
+      "start_seconds": 67.96,
+      "end_seconds": 74.04,
+      "id": "gVEK3y59TLc-ja-0010",
+      "sequence": 10
+    },
+    {
+      "text": "AIはいろんなビジネスのアイデアを教えてくれます。ビジネスモデル、市場分析、そして事業計画、競合調査、いろんなこと",
+      "start_seconds": 74.04,
+      "end_seconds": 84.759,
+      "id": "gVEK3y59TLc-ja-0011",
+      "sequence": 11
+    },
+    {
+      "text": "を教えてくれます。そしてそれを資料に落としてくれます。皆さんは新しいビジネスを、新しいビジネスを",
+      "start_seconds": 84.759,
+      "end_seconds": 94.6,
+      "id": "gVEK3y59TLc-ja-0012",
+      "sequence": 12
+    },
+    {
+      "text": "起こすために完璧なレシピが手に入るわけです。すごい便利な時代です。",
+      "start_seconds": 94.6,
+      "end_seconds": 102.2,
+      "id": "gVEK3y59TLc-ja-0013",
+      "sequence": 13
+    },
+    {
+      "text": "そして誰でも新しいビジネスを考えられる時代になりました。ということは簡単にこれだけビジネスが考えられると",
+      "start_seconds": 102.2,
+      "end_seconds": 113.159,
+      "id": "gVEK3y59TLc-ja-0014",
+      "sequence": 14
+    },
+    {
+      "text": "いうことはもっともっとビジネスって増えてもいいと思いませんか?もっとイノベーションが起こってもいい",
+      "start_seconds": 113.159,
+      "end_seconds": 122.439,
+      "id": "gVEK3y59TLc-ja-0015",
+      "sequence": 15
+    },
+    {
+      "text": "と思いませんか?じゃ、実際にそうなっているんでしょうかという話です。そうはなってないですよね。じゃあなんで新しい",
+      "start_seconds": 122.439,
+      "end_seconds": 131.959,
+      "id": "gVEK3y59TLc-ja-0016",
+      "sequence": 16
+    },
+    {
+      "text": "ビジネスやイノベーションが増えてないんだというお話が今日のテーマになります。",
+      "start_seconds": 131.959,
+      "end_seconds": 138.519,
+      "id": "gVEK3y59TLc-ja-0017",
+      "sequence": 17
+    },
+    {
+      "text": "それが実行というお話です。さあ、多くの人はイノベーションをアイデアだと思っているかもしれませんが、私はそう思いませ",
+      "start_seconds": 138.519,
+      "end_seconds": 150.2,
+      "id": "gVEK3y59TLc-ja-0018",
+      "sequence": 18
+    },
+    {
+      "text": "ん。イノベーションというのは実験、つまり学びのある実行と思います。そうです。",
+      "start_seconds": 150.2,
+      "end_seconds": 161.12,
+      "id": "gVEK3y59TLc-ja-0019",
+      "sequence": 19
+    },
+    {
+      "text": "やってみる。そして失敗する。そして学ぶ、そしてまたやる。この繰り返しがイノベーションと思います。",
+      "start_seconds": 161.12,
+      "end_seconds": 172.44,
+      "id": "gVEK3y59TLc-ja-0020",
+      "sequence": 20
+    },
+    {
+      "text": "さあ、私も今までいろんなビジネスを立ち上げて企業家として立ち上げてきました。そしていろんなビジネスのお手伝いをしてます。いろんな立ち上げのお手伝いを",
+      "start_seconds": 172.44,
+      "end_seconds": 183.84,
+      "id": "gVEK3y59TLc-ja-0021",
+      "sequence": 21
+    },
+    {
+      "text": "してます。さあ、こんな話が、え、昔ありました。ある大企業の話です。数億円の予算をかけて数年間",
+      "start_seconds": 183.84,
+      "end_seconds": 194.4,
+      "id": "gVEK3y59TLc-ja-0022",
+      "sequence": 22
+    },
+    {
+      "text": "新商品の開発をしてそして満を実して2年間の期間を経て新商品を世に出しました。",
+      "start_seconds": 194.4,
+      "end_seconds": 204.519,
+      "id": "gVEK3y59TLc-ja-0023",
+      "sequence": 23
+    },
+    {
+      "text": "しかし売れた商品がたったの数行という話が昔にありました。一方で、え、こんな話もあり",
+      "start_seconds": 204.519,
+      "end_seconds": 215.239,
+      "id": "gVEK3y59TLc-ja-0024",
+      "sequence": 24
+    },
+    {
+      "text": "ます。あるスタートアップの話です。",
+      "start_seconds": 215.239,
+      "end_seconds": 220.159,
+      "id": "gVEK3y59TLc-ja-0025",
+      "sequence": 25
+    },
+    {
+      "text": "ある会議で新商品作ってみようというアイデアが出まして、その日のうちに予約",
+      "start_seconds": 220.159,
+      "end_seconds": 228.12,
+      "id": "gVEK3y59TLc-ja-0026",
+      "sequence": 26
+    },
+    {
+      "text": "ページを作って、そして予約を次の日から取り始めて、まだ商品ができてない中で",
+      "start_seconds": 228.12,
+      "end_seconds": 236.079,
+      "id": "gVEK3y59TLc-ja-0027",
+      "sequence": 27
+    },
+    {
+      "text": "予約を取り始めたところ、なんと1ヶ月で数千予約が取れたというお話があります。",
+      "start_seconds": 236.079,
+      "end_seconds": 244.84,
+      "id": "gVEK3y59TLc-ja-0028",
+      "sequence": 28
+    },
+    {
+      "text": "そしてその商品はそれから商品化をしてヒット商品に育てていったというお話が過去にありました。さあ、今のお話から",
+      "start_seconds": 244.84,
+      "end_seconds": 254.879,
+      "id": "gVEK3y59TLc-ja-0029",
+      "sequence": 29
+    },
+    {
+      "text": "分かるようにいかに完璧なレシピよりも不完全な味みの方が",
+      "start_seconds": 254.879,
+      "end_seconds": 263.199,
+      "id": "gVEK3y59TLc-ja-0030",
+      "sequence": 30
+    },
+    {
+      "text": "価値があるかというお話です。さあ、AIにできることはたくさんあります。本当に",
+      "start_seconds": 263.199,
+      "end_seconds": 271.759,
+      "id": "gVEK3y59TLc-ja-0031",
+      "sequence": 31
+    },
+    {
+      "text": "便利な時代になりました。AIはビジネスモデルを作ってくれます。そして市場分析、競合調査、事業計画全てやってくれます",
+      "start_seconds": 271.759,
+      "end_seconds": 283.44,
+      "id": "gVEK3y59TLc-ja-0032",
+      "sequence": 32
+    },
+    {
+      "text": "。ただAIにできないことがあります。",
+      "start_seconds": 283.44,
+      "end_seconds": 290.0,
+      "id": "gVEK3y59TLc-ja-0033",
+      "sequence": 33
+    },
+    {
+      "text": "それは何か?AIは断られることできません。恥を書くことできません。",
+      "start_seconds": 290.0,
+      "end_seconds": 298.8,
+      "id": "gVEK3y59TLc-ja-0034",
+      "sequence": 34
+    },
+    {
+      "text": "そして怒られることできません。そして泥臭いことできません。つまりAIは",
+      "start_seconds": 298.8,
+      "end_seconds": 307.52,
+      "id": "gVEK3y59TLc-ja-0035",
+      "sequence": 35
+    },
+    {
+      "text": "レシピは作れますけど味みはできないということです。",
+      "start_seconds": 307.52,
+      "end_seconds": 313.8,
+      "id": "gVEK3y59TLc-ja-0036",
+      "sequence": 36
+    },
+    {
+      "text": "さあ、AIによって知識の差は本当になくなりました。誰でもビジネスを考えられる時代になりました。そしてビジネス",
+      "start_seconds": 313.8,
+      "end_seconds": 325.12,
+      "id": "gVEK3y59TLc-ja-0037",
+      "sequence": 37
+    },
+    {
+      "text": "アイデアが出せる時代になりました。",
+      "start_seconds": 325.12,
+      "end_seconds": 327.0,
+      "id": "gVEK3y59TLc-ja-0038",
+      "sequence": 38
+    },
+    {
+      "text": "つまりアイデアや知識ではもう差がつかないということです。実行できるのは我々人間",
+      "start_seconds": 327.0,
+      "end_seconds": 336.039,
+      "id": "gVEK3y59TLc-ja-0039",
+      "sequence": 39
+    },
+    {
+      "text": "だけというお話になります。さあ、ではイノベーションを増やすには、え、どうすればいいかいうお話です。",
+      "start_seconds": 336.039,
+      "end_seconds": 346.16,
+      "id": "gVEK3y59TLc-ja-0040",
+      "sequence": 40
+    },
+    {
+      "text": "イノベーションを増やすには実行が止まらない仕組みが必要だと私は考えます。さあ、実行は止まらない仕組みというのがどう",
+      "start_seconds": 346.16,
+      "end_seconds": 357.84,
+      "id": "gVEK3y59TLc-ja-0041",
+      "sequence": 41
+    },
+    {
+      "text": "いう仕組みかと言いますと、小さな決済を現場に渡したり、そして挑戦した回数を評価したり、失敗を評価したり、あとは",
+      "start_seconds": 357.84,
+      "end_seconds": 369.44,
+      "id": "gVEK3y59TLc-ja-0042",
+      "sequence": 42
+    },
+    {
+      "text": "小さな実験失敗を許す、こういった組織や社会がイノベーションを生む。そんな風に",
+      "start_seconds": 369.44,
+      "end_seconds": 378.68,
+      "id": "gVEK3y59TLc-ja-0043",
+      "sequence": 43
+    },
+    {
+      "text": "私は思います。さあ、ということで、AIは戦略を作れます。しかしイノベーションを生むのは我々人間だけです。さあ、",
+      "start_seconds": 378.68,
+      "end_seconds": 390.199,
+      "id": "gVEK3y59TLc-ja-0044",
+      "sequence": 44
+    },
+    {
+      "text": "イノベーションを生むのは人間の実行だけなんです。そして必要なのは実行が止まらない仕組み。そしてそんな仕組みの中で",
+      "start_seconds": 390.199,
+      "end_seconds": 400.56,
+      "id": "gVEK3y59TLc-ja-0045",
+      "sequence": 45
+    },
+    {
+      "text": "我々イノベーションは自然に生まれていくという風に思います。是非皆さんも実行をしてイノベーションを一緒に生み出し",
+      "start_seconds": 400.56,
+      "end_seconds": 411.12,
+      "id": "gVEK3y59TLc-ja-0046",
+      "sequence": 46
+    },
+    {
+      "text": "ましょう。どうもありがとうございました。[拍手]",
+      "start_seconds": 411.12,
+      "end_seconds": 415.329,
+      "id": "gVEK3y59TLc-ja-0047",
+      "sequence": 47
+    }
+  ],
+  "raw_captions": [
+    {
+      "text": "[音楽]",
+      "start_seconds": 1.964,
+      "end_seconds": 3.984
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 7.205,
+      "end_seconds": 9.225
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 11.79,
+      "end_seconds": 13.809999999999999
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 16.375,
+      "end_seconds": 21.32
+    },
+    {
+      "text": "皆さん、こんにちは。さあ、突然ですが皆",
+      "start_seconds": 18.279,
+      "end_seconds": 24.759999999999998
+    },
+    {
+      "text": "さんAIにホームランの打ち方を皆さん",
+      "start_seconds": 21.32,
+      "end_seconds": 27.8
+    },
+    {
+      "text": "聞いたことありますか?AIにホームラン",
+      "start_seconds": 24.76,
+      "end_seconds": 32.399
+    },
+    {
+      "text": "の打ち方を聞くと、スイング、ホーム完璧",
+      "start_seconds": 27.8,
+      "end_seconds": 34.92
+    },
+    {
+      "text": "なまでにホームランはどうやって打てば",
+      "start_seconds": 32.399,
+      "end_seconds": 37.96
+    },
+    {
+      "text": "いいかをAIを教えてくれます。そうする",
+      "start_seconds": 34.92,
+      "end_seconds": 42.039
+    },
+    {
+      "text": "と皆さんホームランの打ち方をAIに教え",
+      "start_seconds": 37.96,
+      "end_seconds": 45.52
+    },
+    {
+      "text": "てもらうことができます。さあ、で、皆",
+      "start_seconds": 42.039,
+      "end_seconds": 48.0
+    },
+    {
+      "text": "さんAIにホームランの打ち方を教えて",
+      "start_seconds": 45.52,
+      "end_seconds": 51.84
+    },
+    {
+      "text": "もらって、明日からホームラン打つことが",
+      "start_seconds": 48.0,
+      "end_seconds": 55.559
+    },
+    {
+      "text": "できますかいう話です。",
+      "start_seconds": 51.84,
+      "end_seconds": 60.28
+    },
+    {
+      "text": "できませんよね。ホームラン打つには1回",
+      "start_seconds": 55.559,
+      "end_seconds": 64.15899999999999
+    },
+    {
+      "text": "でも多くバッターボックスに立ってバット",
+      "start_seconds": 60.28,
+      "end_seconds": 67.96000000000001
+    },
+    {
+      "text": "を振ること。これにつきるわけです。",
+      "start_seconds": 64.159,
+      "end_seconds": 72.08000000000001
+    },
+    {
+      "text": "さあ、AIに新しいビジネスを聞いてみて",
+      "start_seconds": 67.96,
+      "end_seconds": 74.03999999999999
+    },
+    {
+      "text": "ください。",
+      "start_seconds": 72.08,
+      "end_seconds": 77.119
+    },
+    {
+      "text": "AIはいろんなビジネスのアイデアを教え",
+      "start_seconds": 74.04,
+      "end_seconds": 80.4
+    },
+    {
+      "text": "てくれます。ビジネスモデル、市場分析、",
+      "start_seconds": 77.119,
+      "end_seconds": 84.759
+    },
+    {
+      "text": "そして事業計画、競合調査、いろんなこと",
+      "start_seconds": 80.4,
+      "end_seconds": 87.56
+    },
+    {
+      "text": "を教えてくれます。そして",
+      "start_seconds": 84.759,
+      "end_seconds": 91.799
+    },
+    {
+      "text": "それを資料に落としてくれます。皆さんは",
+      "start_seconds": 87.56,
+      "end_seconds": 94.60000000000001
+    },
+    {
+      "text": "新しいビジネスを、新しいビジネスを",
+      "start_seconds": 91.799,
+      "end_seconds": 98.56
+    },
+    {
+      "text": "起こすために完璧なレシピが手に入るわけ",
+      "start_seconds": 94.6,
+      "end_seconds": 102.19999999999999
+    },
+    {
+      "text": "です。すごい便利な時代です。",
+      "start_seconds": 98.56,
+      "end_seconds": 105.92
+    },
+    {
+      "text": "そして誰でも新しいビジネスを考えられる",
+      "start_seconds": 102.2,
+      "end_seconds": 110.119
+    },
+    {
+      "text": "時代になりました。ということは",
+      "start_seconds": 105.92,
+      "end_seconds": 113.159
+    },
+    {
+      "text": "簡単にこれだけビジネスが考えられると",
+      "start_seconds": 110.119,
+      "end_seconds": 116.36
+    },
+    {
+      "text": "いうことはもっともっと",
+      "start_seconds": 113.159,
+      "end_seconds": 119.759
+    },
+    {
+      "text": "ビジネスって増えてもいいと思いませんか",
+      "start_seconds": 116.36,
+      "end_seconds": 122.439
+    },
+    {
+      "text": "?もっとイノベーションが起こってもいい",
+      "start_seconds": 119.759,
+      "end_seconds": 125.92
+    },
+    {
+      "text": "と思いませんか?じゃ、実際にそうなって",
+      "start_seconds": 122.439,
+      "end_seconds": 128.84
+    },
+    {
+      "text": "いるんでしょうかという話です。そうは",
+      "start_seconds": 125.92,
+      "end_seconds": 131.959
+    },
+    {
+      "text": "なってないですよね。じゃあなんで新しい",
+      "start_seconds": 128.84,
+      "end_seconds": 134.84
+    },
+    {
+      "text": "ビジネスやイノベーションが増えてないん",
+      "start_seconds": 131.959,
+      "end_seconds": 138.519
+    },
+    {
+      "text": "だというお話が今日のテーマになります。",
+      "start_seconds": 134.84,
+      "end_seconds": 143.08
+    },
+    {
+      "text": "それが実行というお話です。さあ、多くの",
+      "start_seconds": 138.519,
+      "end_seconds": 147.44
+    },
+    {
+      "text": "人はイノベーションをアイデアだと思って",
+      "start_seconds": 143.08,
+      "end_seconds": 150.20000000000002
+    },
+    {
+      "text": "いるかもしれませんが、私はそう思いませ",
+      "start_seconds": 147.44,
+      "end_seconds": 154.0
+    },
+    {
+      "text": "ん。イノベーションというのは実験、",
+      "start_seconds": 150.2,
+      "end_seconds": 159.39999999999998
+    },
+    {
+      "text": "つまり学びのある実行と思います。そう",
+      "start_seconds": 154.0,
+      "end_seconds": 161.12
+    },
+    {
+      "text": "です。",
+      "start_seconds": 159.4,
+      "end_seconds": 164.92000000000002
+    },
+    {
+      "text": "やってみる。そして失敗する。そして学ぶ",
+      "start_seconds": 161.12,
+      "end_seconds": 167.959
+    },
+    {
+      "text": "、そしてまたやる。この繰り返しが",
+      "start_seconds": 164.92,
+      "end_seconds": 172.44
+    },
+    {
+      "text": "イノベーションと思います。",
+      "start_seconds": 167.959,
+      "end_seconds": 175.959
+    },
+    {
+      "text": "さあ、私も今までいろんなビジネスを",
+      "start_seconds": 172.44,
+      "end_seconds": 178.2
+    },
+    {
+      "text": "立ち上げて企業家として立ち上げてきまし",
+      "start_seconds": 175.959,
+      "end_seconds": 181.31900000000002
+    },
+    {
+      "text": "た。そしていろんなビジネスのお手伝いを",
+      "start_seconds": 178.2,
+      "end_seconds": 183.83999999999997
+    },
+    {
+      "text": "してます。いろんな立ち上げのお手伝いを",
+      "start_seconds": 181.319,
+      "end_seconds": 187.159
+    },
+    {
+      "text": "してます。さあ、こんな話が、え、昔あり",
+      "start_seconds": 183.84,
+      "end_seconds": 191.0
+    },
+    {
+      "text": "ました。ある大企業の話です。数億円の",
+      "start_seconds": 187.159,
+      "end_seconds": 194.39999999999998
+    },
+    {
+      "text": "予算をかけて数年間",
+      "start_seconds": 191.0,
+      "end_seconds": 199.319
+    },
+    {
+      "text": "新商品の開発をしてそして満を実して2",
+      "start_seconds": 194.4,
+      "end_seconds": 202.87900000000002
+    },
+    {
+      "text": "年間の期間を経て新商品を世に出しました",
+      "start_seconds": 199.319,
+      "end_seconds": 204.51899999999998
+    },
+    {
+      "text": "。",
+      "start_seconds": 202.879,
+      "end_seconds": 206.84
+    },
+    {
+      "text": "しかし",
+      "start_seconds": 204.519,
+      "end_seconds": 212.08
+    },
+    {
+      "text": "売れた商品がたったの数行という話が昔に",
+      "start_seconds": 206.84,
+      "end_seconds": 215.239
+    },
+    {
+      "text": "ありました。一方で、え、こんな話もあり",
+      "start_seconds": 212.08,
+      "end_seconds": 220.15900000000002
+    },
+    {
+      "text": "ます。あるスタートアップの話です。",
+      "start_seconds": 215.239,
+      "end_seconds": 224.72
+    },
+    {
+      "text": "ある会議で新商品作ってみようという",
+      "start_seconds": 220.159,
+      "end_seconds": 228.12
+    },
+    {
+      "text": "アイデアが出まして、その日のうちに予約",
+      "start_seconds": 224.72,
+      "end_seconds": 232.519
+    },
+    {
+      "text": "ページを作って、そして予約を次の日から",
+      "start_seconds": 228.12,
+      "end_seconds": 236.079
+    },
+    {
+      "text": "取り始めて、まだ商品ができてない中で",
+      "start_seconds": 232.519,
+      "end_seconds": 240.4
+    },
+    {
+      "text": "予約を取り始めたところ、なんと1ヶ月で",
+      "start_seconds": 236.079,
+      "end_seconds": 244.84
+    },
+    {
+      "text": "数千予約が取れたというお話があります。",
+      "start_seconds": 240.4,
+      "end_seconds": 248.04
+    },
+    {
+      "text": "そしてその商品はそれから商品化をして",
+      "start_seconds": 244.84,
+      "end_seconds": 251.48
+    },
+    {
+      "text": "ヒット商品に育てていったというお話が",
+      "start_seconds": 248.04,
+      "end_seconds": 254.879
+    },
+    {
+      "text": "過去にありました。さあ、今のお話から",
+      "start_seconds": 251.48,
+      "end_seconds": 257.959
+    },
+    {
+      "text": "分かるようにいかに",
+      "start_seconds": 254.879,
+      "end_seconds": 263.199
+    },
+    {
+      "text": "完璧なレシピよりも不完全な味みの方が",
+      "start_seconds": 257.959,
+      "end_seconds": 268.24
+    },
+    {
+      "text": "価値があるかというお話です。さあ、AI",
+      "start_seconds": 263.199,
+      "end_seconds": 271.759
+    },
+    {
+      "text": "にできることはたくさんあります。本当に",
+      "start_seconds": 268.24,
+      "end_seconds": 275.68
+    },
+    {
+      "text": "便利な時代になりました。AIはビジネス",
+      "start_seconds": 271.759,
+      "end_seconds": 278.639
+    },
+    {
+      "text": "モデルを作ってくれます。そして市場分析",
+      "start_seconds": 275.68,
+      "end_seconds": 283.44
+    },
+    {
+      "text": "、競合調査、事業計画全てやってくれます",
+      "start_seconds": 278.639,
+      "end_seconds": 290.0
+    },
+    {
+      "text": "。ただAIにできないことがあります。",
+      "start_seconds": 283.44,
+      "end_seconds": 295.52
+    },
+    {
+      "text": "それは何か?AIは断られること",
+      "start_seconds": 290.0,
+      "end_seconds": 298.8
+    },
+    {
+      "text": "できません。恥を書くことできません。",
+      "start_seconds": 295.52,
+      "end_seconds": 303.0
+    },
+    {
+      "text": "そして怒られることできません。そして",
+      "start_seconds": 298.8,
+      "end_seconds": 307.52000000000004
+    },
+    {
+      "text": "泥臭いことできません。つまりAIは",
+      "start_seconds": 303.0,
+      "end_seconds": 311.68
+    },
+    {
+      "text": "レシピは作れますけど味みはできないと",
+      "start_seconds": 307.52,
+      "end_seconds": 313.79999999999995
+    },
+    {
+      "text": "いうことです。",
+      "start_seconds": 311.68,
+      "end_seconds": 318.12
+    },
+    {
+      "text": "さあ、AIによって知識の差は本当に",
+      "start_seconds": 313.8,
+      "end_seconds": 322.039
+    },
+    {
+      "text": "なくなりました。誰でもビジネスを考え",
+      "start_seconds": 318.12,
+      "end_seconds": 325.12
+    },
+    {
+      "text": "られる時代になりました。そしてビジネス",
+      "start_seconds": 322.039,
+      "end_seconds": 327.0
+    },
+    {
+      "text": "アイデアが出せる時代になりました。",
+      "start_seconds": 325.12,
+      "end_seconds": 328.52
+    },
+    {
+      "text": "つまり",
+      "start_seconds": 327.0,
+      "end_seconds": 331.479
+    },
+    {
+      "text": "アイデアや知識ではもう差がつかないと",
+      "start_seconds": 328.52,
+      "end_seconds": 336.039
+    },
+    {
+      "text": "いうことです。実行できるのは我々人間",
+      "start_seconds": 331.479,
+      "end_seconds": 340.639
+    },
+    {
+      "text": "だけというお話になります。さあ、では",
+      "start_seconds": 336.039,
+      "end_seconds": 343.15999999999997
+    },
+    {
+      "text": "イノベーションを増やすには、え、どう",
+      "start_seconds": 340.639,
+      "end_seconds": 346.16
+    },
+    {
+      "text": "すればいいかいうお話です。",
+      "start_seconds": 343.16,
+      "end_seconds": 349.6
+    },
+    {
+      "text": "イノベーションを増やすには実行が止まら",
+      "start_seconds": 346.16,
+      "end_seconds": 354.36
+    },
+    {
+      "text": "ない仕組みが必要だと私は考えます。さあ",
+      "start_seconds": 349.6,
+      "end_seconds": 357.84000000000003
+    },
+    {
+      "text": "、実行は止まらない仕組みというのがどう",
+      "start_seconds": 354.36,
+      "end_seconds": 361.639
+    },
+    {
+      "text": "いう仕組みかと言いますと、小さな決済を",
+      "start_seconds": 357.84,
+      "end_seconds": 365.67999999999995
+    },
+    {
+      "text": "現場に渡したり、そして挑戦した回数を",
+      "start_seconds": 361.639,
+      "end_seconds": 369.44
+    },
+    {
+      "text": "評価したり、失敗を評価したり、あとは",
+      "start_seconds": 365.68,
+      "end_seconds": 374.68
+    },
+    {
+      "text": "小さな実験失敗を許す、こういった組織や",
+      "start_seconds": 369.44,
+      "end_seconds": 378.68
+    },
+    {
+      "text": "社会がイノベーションを生む。そんな風に",
+      "start_seconds": 374.68,
+      "end_seconds": 382.84000000000003
+    },
+    {
+      "text": "私は思います。さあ、ということで、AI",
+      "start_seconds": 378.68,
+      "end_seconds": 386.24
+    },
+    {
+      "text": "は戦略を作れます。しかしイノベーション",
+      "start_seconds": 382.84,
+      "end_seconds": 390.19899999999996
+    },
+    {
+      "text": "を生むのは我々人間だけです。さあ、",
+      "start_seconds": 386.24,
+      "end_seconds": 393.12
+    },
+    {
+      "text": "イノベーションを生むのは人間の実行だけ",
+      "start_seconds": 390.199,
+      "end_seconds": 397.56
+    },
+    {
+      "text": "なんです。そして必要なのは実行が止まら",
+      "start_seconds": 393.12,
+      "end_seconds": 400.56
+    },
+    {
+      "text": "ない仕組み。そしてそんな仕組みの中で",
+      "start_seconds": 397.56,
+      "end_seconds": 403.68
+    },
+    {
+      "text": "我々イノベーションは自然に生まれていく",
+      "start_seconds": 400.56,
+      "end_seconds": 408.28000000000003
+    },
+    {
+      "text": "という風に思います。是非皆さんも実行を",
+      "start_seconds": 403.68,
+      "end_seconds": 411.12
+    },
+    {
+      "text": "してイノベーションを一緒に生み出し",
+      "start_seconds": 408.28,
+      "end_seconds": 412.599
+    },
+    {
+      "text": "ましょう。どうもありがとうございました",
+      "start_seconds": 411.12,
+      "end_seconds": 415.329
+    },
+    {
+      "text": "。[拍手]",
+      "start_seconds": 412.599,
+      "end_seconds": 415.329
+    }
+  ],
+  "display_captions": [
+    {
+      "text": "[音楽]",
+      "start_seconds": 1.964,
+      "end_seconds": 3.984,
+      "id": "gVEK3y59TLc-display-0001",
+      "segment_id": "gVEK3y59TLc-ja-0001"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 7.205,
+      "end_seconds": 9.225,
+      "id": "gVEK3y59TLc-display-0002",
+      "segment_id": "gVEK3y59TLc-ja-0002"
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 11.79,
+      "end_seconds": 13.809999999999999,
+      "id": "gVEK3y59TLc-display-0003",
+      "segment_id": "gVEK3y59TLc-ja-0003"
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 16.375,
+      "end_seconds": 18.279,
+      "id": "gVEK3y59TLc-display-0004",
+      "segment_id": "gVEK3y59TLc-ja-0004"
+    },
+    {
+      "text": "皆さん、こんにちは。さあ、突然ですが皆",
+      "start_seconds": 18.279,
+      "end_seconds": 21.32,
+      "id": "gVEK3y59TLc-display-0005",
+      "segment_id": "gVEK3y59TLc-ja-0004"
+    },
+    {
+      "text": "さんAIにホームランの打ち方を皆さん",
+      "start_seconds": 21.32,
+      "end_seconds": 24.76,
+      "id": "gVEK3y59TLc-display-0006",
+      "segment_id": "gVEK3y59TLc-ja-0004"
+    },
+    {
+      "text": "聞いたことありますか?AIにホームラン",
+      "start_seconds": 24.76,
+      "end_seconds": 27.8,
+      "id": "gVEK3y59TLc-display-0007",
+      "segment_id": "gVEK3y59TLc-ja-0004"
+    },
+    {
+      "text": "の打ち方を聞くと、スイング、ホーム完璧",
+      "start_seconds": 27.8,
+      "end_seconds": 32.399,
+      "id": "gVEK3y59TLc-display-0008",
+      "segment_id": "gVEK3y59TLc-ja-0005"
+    },
+    {
+      "text": "なまでにホームランはどうやって打てば",
+      "start_seconds": 32.399,
+      "end_seconds": 34.92,
+      "id": "gVEK3y59TLc-display-0009",
+      "segment_id": "gVEK3y59TLc-ja-0005"
+    },
+    {
+      "text": "いいかをAIを教えてくれます。そうする",
+      "start_seconds": 34.92,
+      "end_seconds": 37.96,
+      "id": "gVEK3y59TLc-display-0010",
+      "segment_id": "gVEK3y59TLc-ja-0005"
+    },
+    {
+      "text": "と皆さんホームランの打ち方をAIに教え",
+      "start_seconds": 37.96,
+      "end_seconds": 42.039,
+      "id": "gVEK3y59TLc-display-0011",
+      "segment_id": "gVEK3y59TLc-ja-0006"
+    },
+    {
+      "text": "てもらうことができます。さあ、で、皆",
+      "start_seconds": 42.039,
+      "end_seconds": 45.52,
+      "id": "gVEK3y59TLc-display-0012",
+      "segment_id": "gVEK3y59TLc-ja-0006"
+    },
+    {
+      "text": "さんAIにホームランの打ち方を教えて",
+      "start_seconds": 45.52,
+      "end_seconds": 48.0,
+      "id": "gVEK3y59TLc-display-0013",
+      "segment_id": "gVEK3y59TLc-ja-0006"
+    },
+    {
+      "text": "もらって、明日からホームラン打つことが",
+      "start_seconds": 48.0,
+      "end_seconds": 51.84,
+      "id": "gVEK3y59TLc-display-0014",
+      "segment_id": "gVEK3y59TLc-ja-0007"
+    },
+    {
+      "text": "できますかいう話です。",
+      "start_seconds": 51.84,
+      "end_seconds": 55.559,
+      "id": "gVEK3y59TLc-display-0015",
+      "segment_id": "gVEK3y59TLc-ja-0007"
+    },
+    {
+      "text": "できませんよね。ホームラン打つには1回",
+      "start_seconds": 55.559,
+      "end_seconds": 60.28,
+      "id": "gVEK3y59TLc-display-0016",
+      "segment_id": "gVEK3y59TLc-ja-0008"
+    },
+    {
+      "text": "でも多くバッターボックスに立ってバット",
+      "start_seconds": 60.28,
+      "end_seconds": 64.159,
+      "id": "gVEK3y59TLc-display-0017",
+      "segment_id": "gVEK3y59TLc-ja-0008"
+    },
+    {
+      "text": "を振ること。これにつきるわけです。",
+      "start_seconds": 64.159,
+      "end_seconds": 67.96,
+      "id": "gVEK3y59TLc-display-0018",
+      "segment_id": "gVEK3y59TLc-ja-0009"
+    },
+    {
+      "text": "さあ、AIに新しいビジネスを聞いてみて",
+      "start_seconds": 67.96,
+      "end_seconds": 72.08,
+      "id": "gVEK3y59TLc-display-0019",
+      "segment_id": "gVEK3y59TLc-ja-0010"
+    },
+    {
+      "text": "ください。",
+      "start_seconds": 72.08,
+      "end_seconds": 74.04,
+      "id": "gVEK3y59TLc-display-0020",
+      "segment_id": "gVEK3y59TLc-ja-0010"
+    },
+    {
+      "text": "AIはいろんなビジネスのアイデアを教え",
+      "start_seconds": 74.04,
+      "end_seconds": 77.119,
+      "id": "gVEK3y59TLc-display-0021",
+      "segment_id": "gVEK3y59TLc-ja-0011"
+    },
+    {
+      "text": "てくれます。ビジネスモデル、市場分析、",
+      "start_seconds": 77.119,
+      "end_seconds": 80.4,
+      "id": "gVEK3y59TLc-display-0022",
+      "segment_id": "gVEK3y59TLc-ja-0011"
+    },
+    {
+      "text": "そして事業計画、競合調査、いろんなこと",
+      "start_seconds": 80.4,
+      "end_seconds": 84.759,
+      "id": "gVEK3y59TLc-display-0023",
+      "segment_id": "gVEK3y59TLc-ja-0011"
+    },
+    {
+      "text": "を教えてくれます。そして",
+      "start_seconds": 84.759,
+      "end_seconds": 87.56,
+      "id": "gVEK3y59TLc-display-0024",
+      "segment_id": "gVEK3y59TLc-ja-0012"
+    },
+    {
+      "text": "それを資料に落としてくれます。皆さんは",
+      "start_seconds": 87.56,
+      "end_seconds": 91.799,
+      "id": "gVEK3y59TLc-display-0025",
+      "segment_id": "gVEK3y59TLc-ja-0012"
+    },
+    {
+      "text": "新しいビジネスを、新しいビジネスを",
+      "start_seconds": 91.799,
+      "end_seconds": 94.6,
+      "id": "gVEK3y59TLc-display-0026",
+      "segment_id": "gVEK3y59TLc-ja-0012"
+    },
+    {
+      "text": "起こすために完璧なレシピが手に入るわけ",
+      "start_seconds": 94.6,
+      "end_seconds": 98.56,
+      "id": "gVEK3y59TLc-display-0027",
+      "segment_id": "gVEK3y59TLc-ja-0013"
+    },
+    {
+      "text": "です。すごい便利な時代です。",
+      "start_seconds": 98.56,
+      "end_seconds": 102.2,
+      "id": "gVEK3y59TLc-display-0028",
+      "segment_id": "gVEK3y59TLc-ja-0013"
+    },
+    {
+      "text": "そして誰でも新しいビジネスを考えられる",
+      "start_seconds": 102.2,
+      "end_seconds": 105.92,
+      "id": "gVEK3y59TLc-display-0029",
+      "segment_id": "gVEK3y59TLc-ja-0014"
+    },
+    {
+      "text": "時代になりました。ということは",
+      "start_seconds": 105.92,
+      "end_seconds": 110.119,
+      "id": "gVEK3y59TLc-display-0030",
+      "segment_id": "gVEK3y59TLc-ja-0014"
+    },
+    {
+      "text": "簡単にこれだけビジネスが考えられると",
+      "start_seconds": 110.119,
+      "end_seconds": 113.159,
+      "id": "gVEK3y59TLc-display-0031",
+      "segment_id": "gVEK3y59TLc-ja-0014"
+    },
+    {
+      "text": "いうことはもっともっと",
+      "start_seconds": 113.159,
+      "end_seconds": 116.36,
+      "id": "gVEK3y59TLc-display-0032",
+      "segment_id": "gVEK3y59TLc-ja-0015"
+    },
+    {
+      "text": "ビジネスって増えてもいいと思いませんか",
+      "start_seconds": 116.36,
+      "end_seconds": 119.759,
+      "id": "gVEK3y59TLc-display-0033",
+      "segment_id": "gVEK3y59TLc-ja-0015"
+    },
+    {
+      "text": "?もっとイノベーションが起こってもいい",
+      "start_seconds": 119.759,
+      "end_seconds": 122.439,
+      "id": "gVEK3y59TLc-display-0034",
+      "segment_id": "gVEK3y59TLc-ja-0015"
+    },
+    {
+      "text": "と思いませんか?じゃ、実際にそうなって",
+      "start_seconds": 122.439,
+      "end_seconds": 125.92,
+      "id": "gVEK3y59TLc-display-0035",
+      "segment_id": "gVEK3y59TLc-ja-0016"
+    },
+    {
+      "text": "いるんでしょうかという話です。そうは",
+      "start_seconds": 125.92,
+      "end_seconds": 128.84,
+      "id": "gVEK3y59TLc-display-0036",
+      "segment_id": "gVEK3y59TLc-ja-0016"
+    },
+    {
+      "text": "なってないですよね。じゃあなんで新しい",
+      "start_seconds": 128.84,
+      "end_seconds": 131.959,
+      "id": "gVEK3y59TLc-display-0037",
+      "segment_id": "gVEK3y59TLc-ja-0016"
+    },
+    {
+      "text": "ビジネスやイノベーションが増えてないん",
+      "start_seconds": 131.959,
+      "end_seconds": 134.84,
+      "id": "gVEK3y59TLc-display-0038",
+      "segment_id": "gVEK3y59TLc-ja-0017"
+    },
+    {
+      "text": "だというお話が今日のテーマになります。",
+      "start_seconds": 134.84,
+      "end_seconds": 138.519,
+      "id": "gVEK3y59TLc-display-0039",
+      "segment_id": "gVEK3y59TLc-ja-0017"
+    },
+    {
+      "text": "それが実行というお話です。さあ、多くの",
+      "start_seconds": 138.519,
+      "end_seconds": 143.08,
+      "id": "gVEK3y59TLc-display-0040",
+      "segment_id": "gVEK3y59TLc-ja-0018"
+    },
+    {
+      "text": "人はイノベーションをアイデアだと思って",
+      "start_seconds": 143.08,
+      "end_seconds": 147.44,
+      "id": "gVEK3y59TLc-display-0041",
+      "segment_id": "gVEK3y59TLc-ja-0018"
+    },
+    {
+      "text": "いるかもしれませんが、私はそう思いませ",
+      "start_seconds": 147.44,
+      "end_seconds": 150.2,
+      "id": "gVEK3y59TLc-display-0042",
+      "segment_id": "gVEK3y59TLc-ja-0018"
+    },
+    {
+      "text": "ん。イノベーションというのは実験、",
+      "start_seconds": 150.2,
+      "end_seconds": 154.0,
+      "id": "gVEK3y59TLc-display-0043",
+      "segment_id": "gVEK3y59TLc-ja-0019"
+    },
+    {
+      "text": "つまり学びのある実行と思います。そう",
+      "start_seconds": 154.0,
+      "end_seconds": 159.4,
+      "id": "gVEK3y59TLc-display-0044",
+      "segment_id": "gVEK3y59TLc-ja-0019"
+    },
+    {
+      "text": "です。",
+      "start_seconds": 159.4,
+      "end_seconds": 161.12,
+      "id": "gVEK3y59TLc-display-0045",
+      "segment_id": "gVEK3y59TLc-ja-0019"
+    },
+    {
+      "text": "やってみる。そして失敗する。そして学ぶ",
+      "start_seconds": 161.12,
+      "end_seconds": 164.92,
+      "id": "gVEK3y59TLc-display-0046",
+      "segment_id": "gVEK3y59TLc-ja-0020"
+    },
+    {
+      "text": "、そしてまたやる。この繰り返しが",
+      "start_seconds": 164.92,
+      "end_seconds": 167.959,
+      "id": "gVEK3y59TLc-display-0047",
+      "segment_id": "gVEK3y59TLc-ja-0020"
+    },
+    {
+      "text": "イノベーションと思います。",
+      "start_seconds": 167.959,
+      "end_seconds": 172.44,
+      "id": "gVEK3y59TLc-display-0048",
+      "segment_id": "gVEK3y59TLc-ja-0020"
+    },
+    {
+      "text": "さあ、私も今までいろんなビジネスを",
+      "start_seconds": 172.44,
+      "end_seconds": 175.959,
+      "id": "gVEK3y59TLc-display-0049",
+      "segment_id": "gVEK3y59TLc-ja-0021"
+    },
+    {
+      "text": "立ち上げて企業家として立ち上げてきまし",
+      "start_seconds": 175.959,
+      "end_seconds": 178.2,
+      "id": "gVEK3y59TLc-display-0050",
+      "segment_id": "gVEK3y59TLc-ja-0021"
+    },
+    {
+      "text": "た。そしていろんなビジネスのお手伝いを",
+      "start_seconds": 178.2,
+      "end_seconds": 181.319,
+      "id": "gVEK3y59TLc-display-0051",
+      "segment_id": "gVEK3y59TLc-ja-0021"
+    },
+    {
+      "text": "してます。いろんな立ち上げのお手伝いを",
+      "start_seconds": 181.319,
+      "end_seconds": 183.84,
+      "id": "gVEK3y59TLc-display-0052",
+      "segment_id": "gVEK3y59TLc-ja-0021"
+    },
+    {
+      "text": "してます。さあ、こんな話が、え、昔あり",
+      "start_seconds": 183.84,
+      "end_seconds": 187.159,
+      "id": "gVEK3y59TLc-display-0053",
+      "segment_id": "gVEK3y59TLc-ja-0022"
+    },
+    {
+      "text": "ました。ある大企業の話です。数億円の",
+      "start_seconds": 187.159,
+      "end_seconds": 191.0,
+      "id": "gVEK3y59TLc-display-0054",
+      "segment_id": "gVEK3y59TLc-ja-0022"
+    },
+    {
+      "text": "予算をかけて数年間",
+      "start_seconds": 191.0,
+      "end_seconds": 194.4,
+      "id": "gVEK3y59TLc-display-0055",
+      "segment_id": "gVEK3y59TLc-ja-0022"
+    },
+    {
+      "text": "新商品の開発をしてそして満を実して2",
+      "start_seconds": 194.4,
+      "end_seconds": 199.319,
+      "id": "gVEK3y59TLc-display-0056",
+      "segment_id": "gVEK3y59TLc-ja-0023"
+    },
+    {
+      "text": "年間の期間を経て新商品を世に出しました",
+      "start_seconds": 199.319,
+      "end_seconds": 202.879,
+      "id": "gVEK3y59TLc-display-0057",
+      "segment_id": "gVEK3y59TLc-ja-0023"
+    },
+    {
+      "text": "。",
+      "start_seconds": 202.879,
+      "end_seconds": 204.519,
+      "id": "gVEK3y59TLc-display-0058",
+      "segment_id": "gVEK3y59TLc-ja-0023"
+    },
+    {
+      "text": "しかし",
+      "start_seconds": 204.519,
+      "end_seconds": 206.84,
+      "id": "gVEK3y59TLc-display-0059",
+      "segment_id": "gVEK3y59TLc-ja-0024"
+    },
+    {
+      "text": "売れた商品がたったの数行という話が昔に",
+      "start_seconds": 206.84,
+      "end_seconds": 212.08,
+      "id": "gVEK3y59TLc-display-0060",
+      "segment_id": "gVEK3y59TLc-ja-0024"
+    },
+    {
+      "text": "ありました。一方で、え、こんな話もあり",
+      "start_seconds": 212.08,
+      "end_seconds": 215.239,
+      "id": "gVEK3y59TLc-display-0061",
+      "segment_id": "gVEK3y59TLc-ja-0024"
+    },
+    {
+      "text": "ます。あるスタートアップの話です。",
+      "start_seconds": 215.239,
+      "end_seconds": 220.159,
+      "id": "gVEK3y59TLc-display-0062",
+      "segment_id": "gVEK3y59TLc-ja-0025"
+    },
+    {
+      "text": "ある会議で新商品作ってみようという",
+      "start_seconds": 220.159,
+      "end_seconds": 224.72,
+      "id": "gVEK3y59TLc-display-0063",
+      "segment_id": "gVEK3y59TLc-ja-0026"
+    },
+    {
+      "text": "アイデアが出まして、その日のうちに予約",
+      "start_seconds": 224.72,
+      "end_seconds": 228.12,
+      "id": "gVEK3y59TLc-display-0064",
+      "segment_id": "gVEK3y59TLc-ja-0026"
+    },
+    {
+      "text": "ページを作って、そして予約を次の日から",
+      "start_seconds": 228.12,
+      "end_seconds": 232.519,
+      "id": "gVEK3y59TLc-display-0065",
+      "segment_id": "gVEK3y59TLc-ja-0027"
+    },
+    {
+      "text": "取り始めて、まだ商品ができてない中で",
+      "start_seconds": 232.519,
+      "end_seconds": 236.079,
+      "id": "gVEK3y59TLc-display-0066",
+      "segment_id": "gVEK3y59TLc-ja-0027"
+    },
+    {
+      "text": "予約を取り始めたところ、なんと1ヶ月で",
+      "start_seconds": 236.079,
+      "end_seconds": 240.4,
+      "id": "gVEK3y59TLc-display-0067",
+      "segment_id": "gVEK3y59TLc-ja-0028"
+    },
+    {
+      "text": "数千予約が取れたというお話があります。",
+      "start_seconds": 240.4,
+      "end_seconds": 244.84,
+      "id": "gVEK3y59TLc-display-0068",
+      "segment_id": "gVEK3y59TLc-ja-0028"
+    },
+    {
+      "text": "そしてその商品はそれから商品化をして",
+      "start_seconds": 244.84,
+      "end_seconds": 248.04,
+      "id": "gVEK3y59TLc-display-0069",
+      "segment_id": "gVEK3y59TLc-ja-0029"
+    },
+    {
+      "text": "ヒット商品に育てていったというお話が",
+      "start_seconds": 248.04,
+      "end_seconds": 251.48,
+      "id": "gVEK3y59TLc-display-0070",
+      "segment_id": "gVEK3y59TLc-ja-0029"
+    },
+    {
+      "text": "過去にありました。さあ、今のお話から",
+      "start_seconds": 251.48,
+      "end_seconds": 254.879,
+      "id": "gVEK3y59TLc-display-0071",
+      "segment_id": "gVEK3y59TLc-ja-0029"
+    },
+    {
+      "text": "分かるようにいかに",
+      "start_seconds": 254.879,
+      "end_seconds": 257.959,
+      "id": "gVEK3y59TLc-display-0072",
+      "segment_id": "gVEK3y59TLc-ja-0030"
+    },
+    {
+      "text": "完璧なレシピよりも不完全な味みの方が",
+      "start_seconds": 257.959,
+      "end_seconds": 263.199,
+      "id": "gVEK3y59TLc-display-0073",
+      "segment_id": "gVEK3y59TLc-ja-0030"
+    },
+    {
+      "text": "価値があるかというお話です。さあ、AI",
+      "start_seconds": 263.199,
+      "end_seconds": 268.24,
+      "id": "gVEK3y59TLc-display-0074",
+      "segment_id": "gVEK3y59TLc-ja-0031"
+    },
+    {
+      "text": "にできることはたくさんあります。本当に",
+      "start_seconds": 268.24,
+      "end_seconds": 271.759,
+      "id": "gVEK3y59TLc-display-0075",
+      "segment_id": "gVEK3y59TLc-ja-0031"
+    },
+    {
+      "text": "便利な時代になりました。AIはビジネス",
+      "start_seconds": 271.759,
+      "end_seconds": 275.68,
+      "id": "gVEK3y59TLc-display-0076",
+      "segment_id": "gVEK3y59TLc-ja-0032"
+    },
+    {
+      "text": "モデルを作ってくれます。そして市場分析",
+      "start_seconds": 275.68,
+      "end_seconds": 278.639,
+      "id": "gVEK3y59TLc-display-0077",
+      "segment_id": "gVEK3y59TLc-ja-0032"
+    },
+    {
+      "text": "、競合調査、事業計画全てやってくれます",
+      "start_seconds": 278.639,
+      "end_seconds": 283.44,
+      "id": "gVEK3y59TLc-display-0078",
+      "segment_id": "gVEK3y59TLc-ja-0032"
+    },
+    {
+      "text": "。ただAIにできないことがあります。",
+      "start_seconds": 283.44,
+      "end_seconds": 290.0,
+      "id": "gVEK3y59TLc-display-0079",
+      "segment_id": "gVEK3y59TLc-ja-0033"
+    },
+    {
+      "text": "それは何か?AIは断られること",
+      "start_seconds": 290.0,
+      "end_seconds": 295.52,
+      "id": "gVEK3y59TLc-display-0080",
+      "segment_id": "gVEK3y59TLc-ja-0034"
+    },
+    {
+      "text": "できません。恥を書くことできません。",
+      "start_seconds": 295.52,
+      "end_seconds": 298.8,
+      "id": "gVEK3y59TLc-display-0081",
+      "segment_id": "gVEK3y59TLc-ja-0034"
+    },
+    {
+      "text": "そして怒られることできません。そして",
+      "start_seconds": 298.8,
+      "end_seconds": 303.0,
+      "id": "gVEK3y59TLc-display-0082",
+      "segment_id": "gVEK3y59TLc-ja-0035"
+    },
+    {
+      "text": "泥臭いことできません。つまりAIは",
+      "start_seconds": 303.0,
+      "end_seconds": 307.52,
+      "id": "gVEK3y59TLc-display-0083",
+      "segment_id": "gVEK3y59TLc-ja-0035"
+    },
+    {
+      "text": "レシピは作れますけど味みはできないと",
+      "start_seconds": 307.52,
+      "end_seconds": 311.68,
+      "id": "gVEK3y59TLc-display-0084",
+      "segment_id": "gVEK3y59TLc-ja-0036"
+    },
+    {
+      "text": "いうことです。",
+      "start_seconds": 311.68,
+      "end_seconds": 313.8,
+      "id": "gVEK3y59TLc-display-0085",
+      "segment_id": "gVEK3y59TLc-ja-0036"
+    },
+    {
+      "text": "さあ、AIによって知識の差は本当に",
+      "start_seconds": 313.8,
+      "end_seconds": 318.12,
+      "id": "gVEK3y59TLc-display-0086",
+      "segment_id": "gVEK3y59TLc-ja-0037"
+    },
+    {
+      "text": "なくなりました。誰でもビジネスを考え",
+      "start_seconds": 318.12,
+      "end_seconds": 322.039,
+      "id": "gVEK3y59TLc-display-0087",
+      "segment_id": "gVEK3y59TLc-ja-0037"
+    },
+    {
+      "text": "られる時代になりました。そしてビジネス",
+      "start_seconds": 322.039,
+      "end_seconds": 325.12,
+      "id": "gVEK3y59TLc-display-0088",
+      "segment_id": "gVEK3y59TLc-ja-0037"
+    },
+    {
+      "text": "アイデアが出せる時代になりました。",
+      "start_seconds": 325.12,
+      "end_seconds": 327.0,
+      "id": "gVEK3y59TLc-display-0089",
+      "segment_id": "gVEK3y59TLc-ja-0038"
+    },
+    {
+      "text": "つまり",
+      "start_seconds": 327.0,
+      "end_seconds": 328.52,
+      "id": "gVEK3y59TLc-display-0090",
+      "segment_id": "gVEK3y59TLc-ja-0039"
+    },
+    {
+      "text": "アイデアや知識ではもう差がつかないと",
+      "start_seconds": 328.52,
+      "end_seconds": 331.479,
+      "id": "gVEK3y59TLc-display-0091",
+      "segment_id": "gVEK3y59TLc-ja-0039"
+    },
+    {
+      "text": "いうことです。実行できるのは我々人間",
+      "start_seconds": 331.479,
+      "end_seconds": 336.039,
+      "id": "gVEK3y59TLc-display-0092",
+      "segment_id": "gVEK3y59TLc-ja-0039"
+    },
+    {
+      "text": "だけというお話になります。さあ、では",
+      "start_seconds": 336.039,
+      "end_seconds": 340.639,
+      "id": "gVEK3y59TLc-display-0093",
+      "segment_id": "gVEK3y59TLc-ja-0040"
+    },
+    {
+      "text": "イノベーションを増やすには、え、どう",
+      "start_seconds": 340.639,
+      "end_seconds": 343.16,
+      "id": "gVEK3y59TLc-display-0094",
+      "segment_id": "gVEK3y59TLc-ja-0040"
+    },
+    {
+      "text": "すればいいかいうお話です。",
+      "start_seconds": 343.16,
+      "end_seconds": 346.16,
+      "id": "gVEK3y59TLc-display-0095",
+      "segment_id": "gVEK3y59TLc-ja-0040"
+    },
+    {
+      "text": "イノベーションを増やすには実行が止まら",
+      "start_seconds": 346.16,
+      "end_seconds": 349.6,
+      "id": "gVEK3y59TLc-display-0096",
+      "segment_id": "gVEK3y59TLc-ja-0041"
+    },
+    {
+      "text": "ない仕組みが必要だと私は考えます。さあ",
+      "start_seconds": 349.6,
+      "end_seconds": 354.36,
+      "id": "gVEK3y59TLc-display-0097",
+      "segment_id": "gVEK3y59TLc-ja-0041"
+    },
+    {
+      "text": "、実行は止まらない仕組みというのがどう",
+      "start_seconds": 354.36,
+      "end_seconds": 357.84,
+      "id": "gVEK3y59TLc-display-0098",
+      "segment_id": "gVEK3y59TLc-ja-0041"
+    },
+    {
+      "text": "いう仕組みかと言いますと、小さな決済を",
+      "start_seconds": 357.84,
+      "end_seconds": 361.639,
+      "id": "gVEK3y59TLc-display-0099",
+      "segment_id": "gVEK3y59TLc-ja-0042"
+    },
+    {
+      "text": "現場に渡したり、そして挑戦した回数を",
+      "start_seconds": 361.639,
+      "end_seconds": 365.68,
+      "id": "gVEK3y59TLc-display-0100",
+      "segment_id": "gVEK3y59TLc-ja-0042"
+    },
+    {
+      "text": "評価したり、失敗を評価したり、あとは",
+      "start_seconds": 365.68,
+      "end_seconds": 369.44,
+      "id": "gVEK3y59TLc-display-0101",
+      "segment_id": "gVEK3y59TLc-ja-0042"
+    },
+    {
+      "text": "小さな実験失敗を許す、こういった組織や",
+      "start_seconds": 369.44,
+      "end_seconds": 374.68,
+      "id": "gVEK3y59TLc-display-0102",
+      "segment_id": "gVEK3y59TLc-ja-0043"
+    },
+    {
+      "text": "社会がイノベーションを生む。そんな風に",
+      "start_seconds": 374.68,
+      "end_seconds": 378.68,
+      "id": "gVEK3y59TLc-display-0103",
+      "segment_id": "gVEK3y59TLc-ja-0043"
+    },
+    {
+      "text": "私は思います。さあ、ということで、AI",
+      "start_seconds": 378.68,
+      "end_seconds": 382.84,
+      "id": "gVEK3y59TLc-display-0104",
+      "segment_id": "gVEK3y59TLc-ja-0044"
+    },
+    {
+      "text": "は戦略を作れます。しかしイノベーション",
+      "start_seconds": 382.84,
+      "end_seconds": 386.24,
+      "id": "gVEK3y59TLc-display-0105",
+      "segment_id": "gVEK3y59TLc-ja-0044"
+    },
+    {
+      "text": "を生むのは我々人間だけです。さあ、",
+      "start_seconds": 386.24,
+      "end_seconds": 390.199,
+      "id": "gVEK3y59TLc-display-0106",
+      "segment_id": "gVEK3y59TLc-ja-0044"
+    },
+    {
+      "text": "イノベーションを生むのは人間の実行だけ",
+      "start_seconds": 390.199,
+      "end_seconds": 393.12,
+      "id": "gVEK3y59TLc-display-0107",
+      "segment_id": "gVEK3y59TLc-ja-0045"
+    },
+    {
+      "text": "なんです。そして必要なのは実行が止まら",
+      "start_seconds": 393.12,
+      "end_seconds": 397.56,
+      "id": "gVEK3y59TLc-display-0108",
+      "segment_id": "gVEK3y59TLc-ja-0045"
+    },
+    {
+      "text": "ない仕組み。そしてそんな仕組みの中で",
+      "start_seconds": 397.56,
+      "end_seconds": 400.56,
+      "id": "gVEK3y59TLc-display-0109",
+      "segment_id": "gVEK3y59TLc-ja-0045"
+    },
+    {
+      "text": "我々イノベーションは自然に生まれていく",
+      "start_seconds": 400.56,
+      "end_seconds": 403.68,
+      "id": "gVEK3y59TLc-display-0110",
+      "segment_id": "gVEK3y59TLc-ja-0046"
+    },
+    {
+      "text": "という風に思います。是非皆さんも実行を",
+      "start_seconds": 403.68,
+      "end_seconds": 408.28,
+      "id": "gVEK3y59TLc-display-0111",
+      "segment_id": "gVEK3y59TLc-ja-0046"
+    },
+    {
+      "text": "してイノベーションを一緒に生み出し",
+      "start_seconds": 408.28,
+      "end_seconds": 411.12,
+      "id": "gVEK3y59TLc-display-0112",
+      "segment_id": "gVEK3y59TLc-ja-0046"
+    },
+    {
+      "text": "ましょう。どうもありがとうございました",
+      "start_seconds": 411.12,
+      "end_seconds": 412.599,
+      "id": "gVEK3y59TLc-display-0113",
+      "segment_id": "gVEK3y59TLc-ja-0047"
+    },
+    {
+      "text": "。[拍手]",
+      "start_seconds": 412.599,
+      "end_seconds": 415.329,
+      "id": "gVEK3y59TLc-display-0114",
+      "segment_id": "gVEK3y59TLc-ja-0047"
+    }
+  ]
+}

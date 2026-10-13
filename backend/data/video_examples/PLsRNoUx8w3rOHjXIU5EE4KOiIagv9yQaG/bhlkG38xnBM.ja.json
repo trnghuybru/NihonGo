@@ -1,0 +1,3282 @@
+{
+  "schema_version": 1,
+  "video": {
+    "youtube_id": "bhlkG38xnBM",
+    "title": "Reiwa: Ethics and Economics in Education | Masashi Ichiguchi | TEDxDoshishaU",
+    "channel": "TEDx Talks",
+    "duration_seconds": 766
+  },
+  "caption_track": {
+    "language": "ja",
+    "kind": "asr",
+    "source": "youtube_automatic"
+  },
+  "source_playlist": "https://www.youtube.com/playlist?list=PLsRNoUx8w3rOHjXIU5EE4KOiIagv9yQaG",
+  "fetched_at": "2026-10-13T13:23:52.512831+00:00",
+  "segment_count": 85,
+  "segments": [
+    {
+      "text": "社会に出て生きていくために必要な力とはなるか。私が小学校教師の時に最も探求し子供たちに伝えていたメッセージです。",
+      "start_seconds": 8.48,
+      "end_seconds": 19.199,
+      "id": "bhlkG38xnBM-ja-0001",
+      "sequence": 1
+    },
+    {
+      "text": "そんな私が1つ大きな疑問に持ち当たりました。私は社会に出たことがあると見えるのかということです。教育系の大学",
+      "start_seconds": 19.199,
+      "end_seconds": 29.08,
+      "id": "bhlkG38xnBM-ja-0002",
+      "sequence": 2
+    },
+    {
+      "text": "で塾の交渉し学校の兄弟に立ったわけですが、まさに教育教育教育一食の人生。",
+      "start_seconds": 29.08,
+      "end_seconds": 36.64,
+      "id": "bhlkG38xnBM-ja-0003",
+      "sequence": 3
+    },
+    {
+      "text": "そんな私が一体社会の何を語れるというのか。よし、今受け持っているこの6年生たちと一緒に私も学校卒業しよう。人生",
+      "start_seconds": 36.64,
+      "end_seconds": 47.6,
+      "id": "bhlkG38xnBM-ja-0004",
+      "sequence": 4
+    },
+    {
+      "text": "決意30歳で社会に出たそんな教師の下申し遅れました。一口正39歳です。本日",
+      "start_seconds": 47.6,
+      "end_seconds": 57.16,
+      "id": "bhlkG38xnBM-ja-0005",
+      "sequence": 5
+    },
+    {
+      "text": "のテーマは始まり始まり。今日は私39歳の人生そして私が立ち上げた会社の始まりをもに皆様の人生の何か始まりにつながれ",
+      "start_seconds": 57.16,
+      "end_seconds": 69.0,
+      "id": "bhlkG38xnBM-ja-0006",
+      "sequence": 6
+    },
+    {
+      "text": "ば幸いです。中学校の音楽教師の母そして会社務めの父兄弟の次難として大阪で生まれ育ちました",
+      "start_seconds": 69.0,
+      "end_seconds": 78.759,
+      "id": "bhlkG38xnBM-ja-0007",
+      "sequence": 7
+    },
+    {
+      "text": "。母親が音楽の教師ということもあり幼い頃から2つの夢がありました。プロのミュージシャンになると、そして学校の",
+      "start_seconds": 78.759,
+      "end_seconds": 89.24,
+      "id": "bhlkG38xnBM-ja-0008",
+      "sequence": 8
+    },
+    {
+      "text": "女学の話です。若い時にチャレンジするならばとミュージシャンの道を懸命に心出したんですけれども、プロの道はそんなに甘くありませんでした。私の幼き",
+      "start_seconds": 89.24,
+      "end_seconds": 100.399,
+      "id": "bhlkG38xnBM-ja-0009",
+      "sequence": 9
+    },
+    {
+      "text": "は静かに幕を閉じました。余談ですけれども歌はです。",
+      "start_seconds": 100.399,
+      "end_seconds": 106.96,
+      "id": "bhlkG38xnBM-ja-0010",
+      "sequence": 10
+    },
+    {
+      "text": "そしてプロのミュージシャン音楽の教師を心出してましたので残念ながらあ、勉強はあまりしていませんでした。で、そんな私",
+      "start_seconds": 106.96,
+      "end_seconds": 115.799,
+      "id": "bhlkG38xnBM-ja-0011",
+      "sequence": 11
+    },
+    {
+      "text": "が教団に立つまで実は教員採用試験2度落ちてしまった。3度目の正直教師にならせるました。また余談ですけれどもやはり",
+      "start_seconds": 115.799,
+      "end_seconds": 127.6,
+      "id": "bhlkG38xnBM-ja-0012",
+      "sequence": 12
+    },
+    {
+      "text": "勉強はしておく。話は冒頭に戻ります。",
+      "start_seconds": 127.6,
+      "end_seconds": 132.64,
+      "id": "bhlkG38xnBM-ja-0013",
+      "sequence": 13
+    },
+    {
+      "text": "社会で生きていくために必要な力とは何か。私が最後に卒業させた6年生とある1つの約束をしました。",
+      "start_seconds": 132.64,
+      "end_seconds": 142.8,
+      "id": "bhlkG38xnBM-ja-0014",
+      "sequence": 14
+    },
+    {
+      "text": "皆さん卒業おめでとうございます。一口先生も君たちと一緒にこの学校を卒業します。一口先生が社会に出て改めて",
+      "start_seconds": 142.8,
+      "end_seconds": 152.76,
+      "id": "bhlkG38xnBM-ja-0015",
+      "sequence": 15
+    },
+    {
+      "text": "いろんな職業の方とお話をして、え、そして社会で生きていくために必要な力とは何ですかと先生自身が実際に聞いてき",
+      "start_seconds": 152.76,
+      "end_seconds": 160.879,
+      "id": "bhlkG38xnBM-ja-0016",
+      "sequence": 16
+    },
+    {
+      "text": "ます。そして10年後一口を教材にみんなの元に帰ってみますね。と約束しました。",
+      "start_seconds": 160.879,
+      "end_seconds": 169.4,
+      "id": "bhlkG38xnBM-ja-0017",
+      "sequence": 17
+    },
+    {
+      "text": "そして早いことで10年たち今子供たちとの約束通り学校で登壇になっています。",
+      "start_seconds": 169.4,
+      "end_seconds": 176.92,
+      "id": "bhlkG38xnBM-ja-0018",
+      "sequence": 18
+    },
+    {
+      "text": "学校の教師をやめまず最初に就職したのが外し系の金融機関で生命保険を扱うライフランナーという仕事でした。私仕事",
+      "start_seconds": 176.92,
+      "end_seconds": 188.12,
+      "id": "bhlkG38xnBM-ja-0019",
+      "sequence": 19
+    },
+    {
+      "text": "ですけれども最愛の母親を中学校2年生の時宮がしています。え、最愛の母親が亡くなったこの悲しい。え、これを1つ",
+      "start_seconds": 188.12,
+      "end_seconds": 197.72,
+      "id": "bhlkG38xnBM-ja-0020",
+      "sequence": 20
+    },
+    {
+      "text": "意味を持たせたかったんです。え、そして何よりもたくさんの方々とお話をし、その方の人生ドラマを聞いてそこに伴奏する。",
+      "start_seconds": 197.72,
+      "end_seconds": 206.84,
+      "id": "bhlkG38xnBM-ja-0021",
+      "sequence": 21
+    },
+    {
+      "text": "そのライフランナーという仕事が聞いては子供たちへと社会のことを喋れる。そういった確信があったからです。ただそんなライフランナーとして活動していたある日",
+      "start_seconds": 206.84,
+      "end_seconds": 218.48,
+      "id": "bhlkG38xnBM-ja-0022",
+      "sequence": 22
+    },
+    {
+      "text": "、また1つ大きな呪文が頭を見りました。",
+      "start_seconds": 218.48,
+      "end_seconds": 223.08,
+      "id": "bhlkG38xnBM-ja-0023",
+      "sequence": 23
+    },
+    {
+      "text": "生命保険という枠を超え、様々な他の金融商品を勉強し、それに対してトータル的にサポートする別になんじゃない。そして",
+      "start_seconds": 223.08,
+      "end_seconds": 233.56,
+      "id": "bhlkG38xnBM-ja-0024",
+      "sequence": 24
+    },
+    {
+      "text": "人生なんと2度目の転職。次はファイナンシャルプランナーがたくさん所得する会社の部長職として採用して",
+      "start_seconds": 233.56,
+      "end_seconds": 241.76,
+      "id": "bhlkG38xnBM-ja-0025",
+      "sequence": 25
+    },
+    {
+      "text": "いただいました。そして時は2025年。",
+      "start_seconds": 241.76,
+      "end_seconds": 247.239,
+      "id": "bhlkG38xnBM-ja-0026",
+      "sequence": 26
+    },
+    {
+      "text": "え、この会社を設立させていただきまして、基本的には教育委員会、そして市野行政と提供をし、全国の小中高校にですね、",
+      "start_seconds": 247.239,
+      "end_seconds": 257.04,
+      "id": "bhlkG38xnBM-ja-0027",
+      "sequence": 27
+    },
+    {
+      "text": "金融経済教育と心を育む女装教育の活動を行っております。教育現場を飛び出し、",
+      "start_seconds": 257.04,
+      "end_seconds": 265.4,
+      "id": "bhlkG38xnBM-ja-0028",
+      "sequence": 28
+    },
+    {
+      "text": "10年越しに今子供たちに伝えたいこと。",
+      "start_seconds": 265.4,
+      "end_seconds": 269.28,
+      "id": "bhlkG38xnBM-ja-0029",
+      "sequence": 29
+    },
+    {
+      "text": "それは誰でもない今1万冊の顔になっております。渋沢さんが残した言葉。うんごと揃です。え、ロングとは道徳、そして",
+      "start_seconds": 269.28,
+      "end_seconds": 279.56,
+      "id": "bhlkG38xnBM-ja-0030",
+      "sequence": 30
+    },
+    {
+      "text": "ソロ版とは経済を意します。今は令和ですので令和版の論語とその番教育を実施してです。この論語の道徳とは我々の団体で",
+      "start_seconds": 279.56,
+      "end_seconds": 291.56,
+      "id": "bhlkG38xnBM-ja-0031",
+      "sequence": 31
+    },
+    {
+      "text": "言うとこの人としての心のあり方、え、そしてこのソ番の部分はそうです。お金について子供たちに伝えているということな",
+      "start_seconds": 291.56,
+      "end_seconds": 300.6,
+      "id": "bhlkG38xnBM-ja-0032",
+      "sequence": 32
+    },
+    {
+      "text": "んですね。さあ、ではここからは後半に参ります。ここからは少し皆様と一緒に考えていきたいなという思います。え、",
+      "start_seconds": 300.6,
+      "end_seconds": 309.4,
+      "id": "bhlkG38xnBM-ja-0033",
+      "sequence": 33
+    },
+    {
+      "text": "まずですね、少し皆様の小中学校の頃を思い出していただきたいんですけれども、小中学校の頃どのような勉強をされてか、どのような強化がありますでしょうか?",
+      "start_seconds": 309.4,
+      "end_seconds": 321.12,
+      "id": "bhlkG38xnBM-ja-0034",
+      "sequence": 34
+    },
+    {
+      "text": "少しお考えます。",
+      "start_seconds": 321.12,
+      "end_seconds": 325.08,
+      "id": "bhlkG38xnBM-ja-0035",
+      "sequence": 35
+    },
+    {
+      "text": "そうですね、英国者、ま、そのような強化がなされてたと。それではもう少し深く考えていきましょう。なぜこの英国者など",
+      "start_seconds": 325.199,
+      "end_seconds": 335.759,
+      "id": "bhlkG38xnBM-ja-0036",
+      "sequence": 36
+    },
+    {
+      "text": "の強化を勉強するんでしょうか?",
+      "start_seconds": 335.759,
+      "end_seconds": 340.639,
+      "id": "bhlkG38xnBM-ja-0037",
+      "sequence": 37
+    },
+    {
+      "text": "ある児童はこう言います。え、口先生学校に入った瞬間そういうカルキュラムだったから考えたことあります。さあ、皆さん",
+      "start_seconds": 340.639,
+      "end_seconds": 350.56,
+      "id": "bhlkG38xnBM-ja-0038",
+      "sequence": 38
+    },
+    {
+      "text": "ですね。ではもう少し深く考えていきたいと思います。なぜ勉強が必要なんでしょう?",
+      "start_seconds": 350.56,
+      "end_seconds": 361.72,
+      "id": "bhlkG38xnBM-ja-0039",
+      "sequence": 39
+    },
+    {
+      "text": "いらっしゃるですね。ある事童はこう言います。一口先生勉強すると学力が上がります。学力が上がるといい高校、いい大学",
+      "start_seconds": 362.199,
+      "end_seconds": 372.12,
+      "id": "bhlkG38xnBM-ja-0040",
+      "sequence": 40
+    },
+    {
+      "text": "入金、自分が就職できる選択政府が広がるんです。自分先生そのために勉強するんです。なるほどです。それではさらに深く",
+      "start_seconds": 372.12,
+      "end_seconds": 381.8,
+      "id": "bhlkG38xnBM-ja-0041",
+      "sequence": 41
+    },
+    {
+      "text": "考えていきたいと思います。なぜ働く必要があるのかです。",
+      "start_seconds": 381.8,
+      "end_seconds": 388.88,
+      "id": "bhlkG38xnBM-ja-0042",
+      "sequence": 42
+    },
+    {
+      "text": "これはまだ働いたことがない方々であるとこないかもしれませんが、私は実際にライフプランナー時代約7年で1万人を",
+      "start_seconds": 388.88,
+      "end_seconds": 397.84,
+      "id": "bhlkG38xnBM-ja-0043",
+      "sequence": 43
+    },
+    {
+      "text": "超える方々と対話をしてですね、え、実際に質問してきました。え、まるまるさん何のために働かれてるんでしょうか?そう",
+      "start_seconds": 397.84,
+      "end_seconds": 407.36,
+      "id": "bhlkG38xnBM-ja-0044",
+      "sequence": 44
+    },
+    {
+      "text": "ながら多くの方はこうしていました。さん家族のために働いてます。生活のために働いてるんです。",
+      "start_seconds": 407.36,
+      "end_seconds": 415.84,
+      "id": "bhlkG38xnBM-ja-0045",
+      "sequence": 45
+    },
+    {
+      "text": "皆さんいかがでしょうか?その収入のため、つまりお金のために働いているんだという方が実際思ったよりもということが",
+      "start_seconds": 415.84,
+      "end_seconds": 426.12,
+      "id": "bhlkG38xnBM-ja-0046",
+      "sequence": 46
+    },
+    {
+      "text": "分かったんです。ではここで逆算してみましょう。なぜ勉強しますかという問に",
+      "start_seconds": 426.12,
+      "end_seconds": 434.16,
+      "id": "bhlkG38xnBM-ja-0047",
+      "sequence": 47
+    },
+    {
+      "text": "対してゴールがお金のためですと答える。",
+      "start_seconds": 434.16,
+      "end_seconds": 438.56,
+      "id": "bhlkG38xnBM-ja-0048",
+      "sequence": 48
+    },
+    {
+      "text": "ま、これが1つの過程として出てきたわけですよね。では考えなければいけないのが人生におけるキーワード。このお金というものが1つポイントになってきそうじゃ",
+      "start_seconds": 438.56,
+      "end_seconds": 449.56,
+      "id": "bhlkG38xnBM-ja-0049",
+      "sequence": 49
+    },
+    {
+      "text": "ないでしょうか。さあ、ではこっからポンポンの話に戻っていきたいと思いますが人生の目的とは何だじゃないですか?",
+      "start_seconds": 449.56,
+      "end_seconds": 460.639,
+      "id": "bhlkG38xnBM-ja-0050",
+      "sequence": 50
+    },
+    {
+      "text": "多くの方々は反対おっしゃるかもしれませ。",
+      "start_seconds": 460.639,
+      "end_seconds": 465.12,
+      "id": "bhlkG38xnBM-ja-0051",
+      "sequence": 51
+    },
+    {
+      "text": "え、ある方はこう言います。うん。一口さん幸せになるたです。皆さんいかがでしょうか?私も多くの方々にお話を聞き",
+      "start_seconds": 465.12,
+      "end_seconds": 474.639,
+      "id": "bhlkG38xnBM-ja-0052",
+      "sequence": 52
+    },
+    {
+      "text": "ましたが不幸になりたい。不幸になるために生きているという方は、ま、全くいらっしゃいませんでした。人生の目的は",
+      "start_seconds": 474.639,
+      "end_seconds": 482.84,
+      "id": "bhlkG38xnBM-ja-0053",
+      "sequence": 53
+    },
+    {
+      "text": "幸せになるだけ。これが1つ仮説としてまた出てくるわけですよね。ではここで皆さん考えなければいけないわけです。幸せ",
+      "start_seconds": 482.84,
+      "end_seconds": 492.919,
+      "id": "bhlkG38xnBM-ja-0054",
+      "sequence": 54
+    },
+    {
+      "text": "とはどった状態定義を運んでしょう。少し考えます。",
+      "start_seconds": 492.919,
+      "end_seconds": 500.68,
+      "id": "bhlkG38xnBM-ja-0055",
+      "sequence": 55
+    },
+    {
+      "text": "私はいろんな授業そして研修を重ね自分なりですけれども1つの答えにってついてます。幸せ",
+      "start_seconds": 500.68,
+      "end_seconds": 509.759,
+      "id": "bhlkG38xnBM-ja-0056",
+      "sequence": 56
+    },
+    {
+      "text": "物心両面の豊かさであった。つまりこの物とは物が豊かである。そしてこの真とは体",
+      "start_seconds": 509.759,
+      "end_seconds": 519.68,
+      "id": "bhlkG38xnBM-ja-0057",
+      "sequence": 57
+    },
+    {
+      "text": "が健康で心が乱されている状態をする。",
+      "start_seconds": 519.68,
+      "end_seconds": 524.959,
+      "id": "bhlkG38xnBM-ja-0058",
+      "sequence": 58
+    },
+    {
+      "text": "物心両面の豊かさですから、またどちらか片方だけでもなくてどちらも見されている状態ということなんですね。ではまずこの物について考えていきたいと思いますが、",
+      "start_seconds": 524.959,
+      "end_seconds": 536.959,
+      "id": "bhlkG38xnBM-ja-0059",
+      "sequence": 59
+    },
+    {
+      "text": "この物はあ、どうして買うことができるでしょう?",
+      "start_seconds": 536.959,
+      "end_seconds": 541.64,
+      "id": "bhlkG38xnBM-ja-0060",
+      "sequence": 60
+    },
+    {
+      "text": "そうです。当然買うわけですよね。何を使ってお金を使って買うことが多いわけですよね。また出てきましたね。お金という。そしてこの真、これはどのようにし",
+      "start_seconds": 541.64,
+      "end_seconds": 553.519,
+      "id": "bhlkG38xnBM-ja-0061",
+      "sequence": 61
+    },
+    {
+      "text": "たら心が体が満たされるでしょう。",
+      "start_seconds": 553.519,
+      "end_seconds": 558.44,
+      "id": "bhlkG38xnBM-ja-0062",
+      "sequence": 62
+    },
+    {
+      "text": "健康に流意しながら心が満たされる状態です。そうですね。愛する人、信頼できる家族や友人や知人が周りで満たされてる。",
+      "start_seconds": 558.44,
+      "end_seconds": 568.0,
+      "id": "bhlkG38xnBM-ja-0063",
+      "sequence": 63
+    },
+    {
+      "text": "こういったことを察しですね。では話を教育に戻したいと思います。我々はこの",
+      "start_seconds": 568.0,
+      "end_seconds": 576.0,
+      "id": "bhlkG38xnBM-ja-0064",
+      "sequence": 64
+    },
+    {
+      "text": "教育現場で行われている人が人生の目的でつまり幸せになることに直結すべきだと",
+      "start_seconds": 576.0,
+      "end_seconds": 583.24,
+      "id": "bhlkG38xnBM-ja-0065",
+      "sequence": 65
+    },
+    {
+      "text": "考えてです。つまり論語は心を育てその番はお金の知識を勉強する。この2つ",
+      "start_seconds": 583.24,
+      "end_seconds": 594.079,
+      "id": "bhlkG38xnBM-ja-0066",
+      "sequence": 66
+    },
+    {
+      "text": "が学校現場で教育がなかないと勉強だと思っているということです。我々の会社の半数は元学校の先生、京都校長先生まで",
+      "start_seconds": 594.079,
+      "end_seconds": 604.519,
+      "id": "bhlkG38xnBM-ja-0067",
+      "sequence": 67
+    },
+    {
+      "text": "いらっしゃいます。実際に学校現場を経験しながら今学校に不足しているもの課題学校現場でやりたいけれどもなかなかできないそういった現場がありますので、え、",
+      "start_seconds": 604.519,
+      "end_seconds": 615.6,
+      "id": "bhlkG38xnBM-ja-0068",
+      "sequence": 68
+    },
+    {
+      "text": "外部からではなりますけれども、そこの作ろうと支援をしてそういった会社の成り立ちがあると思たらと思います。ではこっから本日皆様にお伝えしたいまとめに",
+      "start_seconds": 615.6,
+      "end_seconds": 626.24,
+      "id": "bhlkG38xnBM-ja-0069",
+      "sequence": 69
+    },
+    {
+      "text": "入っていきたいと思います。",
+      "start_seconds": 626.24,
+      "end_seconds": 629.36,
+      "id": "bhlkG38xnBM-ja-0070",
+      "sequence": 70
+    },
+    {
+      "text": "物事の本質を捉える力。そしてそのことについて深く深く深く探求してそして自分",
+      "start_seconds": 629.36,
+      "end_seconds": 639.399,
+      "id": "bhlkG38xnBM-ja-0071",
+      "sequence": 71
+    },
+    {
+      "text": "なりで結構です仮説を立て自分の足で立証検証を重ねて是非これをですね皆さん今日からやっていただけたらと思います。",
+      "start_seconds": 639.399,
+      "end_seconds": 649.44,
+      "id": "bhlkG38xnBM-ja-0072",
+      "sequence": 72
+    },
+    {
+      "text": "例えばこういった例もありです。一口先生本当にお金のために勉強するんでしょうか?私は違うと思います。私は英国総理者を",
+      "start_seconds": 649.44,
+      "end_seconds": 659.92,
+      "id": "bhlkG38xnBM-ja-0073",
+      "sequence": 73
+    },
+    {
+      "text": "勉強するのは自分が何に興味があって何に興味がないのか。そういった自分の特徴を抑える。自分の特徴をし自分のその特徴",
+      "start_seconds": 659.92,
+      "end_seconds": 670.56,
+      "id": "bhlkG38xnBM-ja-0074",
+      "sequence": 74
+    },
+    {
+      "text": "好きなことをさらに高校大学に深めることがあって自分が最も適した就職先を狙う。",
+      "start_seconds": 670.56,
+      "end_seconds": 677.32,
+      "id": "bhlkG38xnBM-ja-0075",
+      "sequence": 75
+    },
+    {
+      "text": "それが引いては日本世界の光景につがる。",
+      "start_seconds": 677.32,
+      "end_seconds": 681.079,
+      "id": "bhlkG38xnBM-ja-0076",
+      "sequence": 76
+    },
+    {
+      "text": "一物先生私は学校での勉強は自分の自己実現の場を果たす。そういった役割があると思います。一先先生とあ、つまりこう",
+      "start_seconds": 681.079,
+      "end_seconds": 692.0,
+      "id": "bhlkG38xnBM-ja-0077",
+      "sequence": 77
+    },
+    {
+      "text": "いったことですね。え、私が言ったことが全てではなくて反応してみる、疑ってみる。自分なりに答えを仮説としてあげそして大事なのが自分らして一生検証し。この",
+      "start_seconds": 692.0,
+      "end_seconds": 703.32,
+      "id": "bhlkG38xnBM-ja-0078",
+      "sequence": 78
+    },
+    {
+      "text": "ことを是非これからの皆さんは取りたいなというです。では最後に皆様に1つメッセージをいただきます。それは人生は",
+      "start_seconds": 703.32,
+      "end_seconds": 713.88,
+      "id": "bhlkG38xnBM-ja-0079",
+      "sequence": 79
+    },
+    {
+      "text": "たった1度切りだということです。",
+      "start_seconds": 713.88,
+      "end_seconds": 717.399,
+      "id": "bhlkG38xnBM-ja-0080",
+      "sequence": 80
+    },
+    {
+      "text": "私は残念ながら中学校の生の時に母親を連学しています。え、誰よりも明日を行きたかったですね、母親の1日を生かさせて",
+      "start_seconds": 717.399,
+      "end_seconds": 726.76,
+      "id": "bhlkG38xnBM-ja-0081",
+      "sequence": 81
+    },
+    {
+      "text": "いただいてる。当たり前に明日は来ないと体感した人間です。たった1度の人生、掛けがにない人生ですが、主人公はという",
+      "start_seconds": 726.76,
+      "end_seconds": 737.44,
+      "id": "bhlkG38xnBM-ja-0082",
+      "sequence": 82
+    },
+    {
+      "text": "と当然誰でもない皆さん自身なわけです。",
+      "start_seconds": 737.44,
+      "end_seconds": 742.44,
+      "id": "bhlkG38xnBM-ja-0083",
+      "sequence": 83
+    },
+    {
+      "text": "今日は39年の私の物語をお話しさせていただきました。今度は皆様の人生の物語を聞かせていただけばです。是非これから",
+      "start_seconds": 742.44,
+      "end_seconds": 753.16,
+      "id": "bhlkG38xnBM-ja-0084",
+      "sequence": 84
+    },
+    {
+      "text": "1ページ、1ページ大切に大切に来ていただきたいと思います。またどこかでお会いしましょう。ありがとうございました。[拍手]",
+      "start_seconds": 753.16,
+      "end_seconds": 763.793,
+      "id": "bhlkG38xnBM-ja-0085",
+      "sequence": 85
+    }
+  ],
+  "raw_captions": [
+    {
+      "text": "社会に出て生きていくために必要な力とは",
+      "start_seconds": 8.48,
+      "end_seconds": 15.879000000000001
+    },
+    {
+      "text": "なるか。私が小学校教師の時に最も探求し",
+      "start_seconds": 11.12,
+      "end_seconds": 19.198999999999998
+    },
+    {
+      "text": "子供たちに伝えていたメッセージです。",
+      "start_seconds": 15.879,
+      "end_seconds": 22.4
+    },
+    {
+      "text": "そんな私が1つ大きな疑問に持ち当たり",
+      "start_seconds": 19.199,
+      "end_seconds": 25.199
+    },
+    {
+      "text": "ました。私は社会に出たことがあると",
+      "start_seconds": 22.4,
+      "end_seconds": 29.08
+    },
+    {
+      "text": "見えるのかということです。教育系の大学",
+      "start_seconds": 25.199,
+      "end_seconds": 32.119
+    },
+    {
+      "text": "で塾の交渉し学校の兄弟に立ったわけです",
+      "start_seconds": 29.08,
+      "end_seconds": 36.64
+    },
+    {
+      "text": "が、まさに教育教育教育一食の人生。",
+      "start_seconds": 32.119,
+      "end_seconds": 39.559
+    },
+    {
+      "text": "そんな私が一体社会の何を語れるというの",
+      "start_seconds": 36.64,
+      "end_seconds": 43.28
+    },
+    {
+      "text": "か。よし、今受け持っているこの6年生",
+      "start_seconds": 39.559,
+      "end_seconds": 47.599999999999994
+    },
+    {
+      "text": "たちと一緒に私も学校卒業しよう。人生",
+      "start_seconds": 43.28,
+      "end_seconds": 53.0
+    },
+    {
+      "text": "決意30歳で社会に出たそんな教師の下",
+      "start_seconds": 47.6,
+      "end_seconds": 57.160000000000004
+    },
+    {
+      "text": "申し遅れました。一口正39歳です。本日",
+      "start_seconds": 53.0,
+      "end_seconds": 61.399
+    },
+    {
+      "text": "のテーマは始まり始まり。今日は私39歳",
+      "start_seconds": 57.16,
+      "end_seconds": 65.239
+    },
+    {
+      "text": "の人生そして私が立ち上げた会社の始まり",
+      "start_seconds": 61.399,
+      "end_seconds": 69.0
+    },
+    {
+      "text": "をもに皆様の人生の何か始まりにつながれ",
+      "start_seconds": 65.239,
+      "end_seconds": 73.4
+    },
+    {
+      "text": "ば幸いです。中学校の音楽教師の母そして",
+      "start_seconds": 69.0,
+      "end_seconds": 75.92
+    },
+    {
+      "text": "会社務めの父",
+      "start_seconds": 73.4,
+      "end_seconds": 78.759
+    },
+    {
+      "text": "兄弟の次難として大阪で生まれ育ちました",
+      "start_seconds": 75.92,
+      "end_seconds": 83.36
+    },
+    {
+      "text": "。母親が音楽の教師ということもあり幼い",
+      "start_seconds": 78.759,
+      "end_seconds": 86.56
+    },
+    {
+      "text": "頃から2つの夢がありました。プロの",
+      "start_seconds": 83.36,
+      "end_seconds": 89.24
+    },
+    {
+      "text": "ミュージシャンになると、そして学校の",
+      "start_seconds": 86.56,
+      "end_seconds": 92.799
+    },
+    {
+      "text": "女学の話です。若い時にチャレンジする",
+      "start_seconds": 89.24,
+      "end_seconds": 94.88
+    },
+    {
+      "text": "ならばとミュージシャンの道を懸命に",
+      "start_seconds": 92.799,
+      "end_seconds": 97.04
+    },
+    {
+      "text": "心出したんですけれども、プロの道は",
+      "start_seconds": 94.88,
+      "end_seconds": 100.399
+    },
+    {
+      "text": "そんなに甘くありませんでした。私の幼き",
+      "start_seconds": 97.04,
+      "end_seconds": 103.96000000000001
+    },
+    {
+      "text": "は静かに幕を閉じました。余談ですけれど",
+      "start_seconds": 100.399,
+      "end_seconds": 106.96000000000001
+    },
+    {
+      "text": "も歌はです。",
+      "start_seconds": 103.96,
+      "end_seconds": 109.67999999999999
+    },
+    {
+      "text": "そしてプロのミュージシャン音楽の教師を",
+      "start_seconds": 106.96,
+      "end_seconds": 112.91999999999999
+    },
+    {
+      "text": "心出してましたので残念ながらあ、勉強は",
+      "start_seconds": 109.68,
+      "end_seconds": 115.799
+    },
+    {
+      "text": "あまりしていませんでした。で、そんな私",
+      "start_seconds": 112.92,
+      "end_seconds": 119.64
+    },
+    {
+      "text": "が教団に立つまで実は教員採用試験2度",
+      "start_seconds": 115.799,
+      "end_seconds": 123.759
+    },
+    {
+      "text": "落ちてしまった。3度目の正直教師になら",
+      "start_seconds": 119.64,
+      "end_seconds": 127.6
+    },
+    {
+      "text": "せるました。また余談ですけれどもやはり",
+      "start_seconds": 123.759,
+      "end_seconds": 132.64
+    },
+    {
+      "text": "勉強はしておく。話は冒頭に戻ります。",
+      "start_seconds": 127.6,
+      "end_seconds": 135.599
+    },
+    {
+      "text": "社会で生きていくために必要な力とは何か",
+      "start_seconds": 132.64,
+      "end_seconds": 139.879
+    },
+    {
+      "text": "。私が最後に卒業させた6年生とある1つ",
+      "start_seconds": 135.599,
+      "end_seconds": 142.79999999999998
+    },
+    {
+      "text": "の約束をしました。",
+      "start_seconds": 139.879,
+      "end_seconds": 145.72
+    },
+    {
+      "text": "皆さん卒業おめでとうございます。一口",
+      "start_seconds": 142.8,
+      "end_seconds": 148.87900000000002
+    },
+    {
+      "text": "先生も君たちと一緒にこの学校を卒業し",
+      "start_seconds": 145.72,
+      "end_seconds": 152.76
+    },
+    {
+      "text": "ます。一口先生が社会に出て改めて",
+      "start_seconds": 148.879,
+      "end_seconds": 155.84
+    },
+    {
+      "text": "いろんな職業の方とお話をして、え、",
+      "start_seconds": 152.76,
+      "end_seconds": 157.959
+    },
+    {
+      "text": "そして社会で生きていくために必要な力と",
+      "start_seconds": 155.84,
+      "end_seconds": 160.879
+    },
+    {
+      "text": "は何ですかと先生自身が実際に聞いてき",
+      "start_seconds": 157.959,
+      "end_seconds": 165.08
+    },
+    {
+      "text": "ます。そして10年後一口を教材にみんな",
+      "start_seconds": 160.879,
+      "end_seconds": 169.39999999999998
+    },
+    {
+      "text": "の元に帰ってみますね。と約束しました。",
+      "start_seconds": 165.08,
+      "end_seconds": 172.87900000000002
+    },
+    {
+      "text": "そして早いことで10年たち今子供たちと",
+      "start_seconds": 169.4,
+      "end_seconds": 176.92000000000002
+    },
+    {
+      "text": "の約束通り学校で登壇になっています。",
+      "start_seconds": 172.879,
+      "end_seconds": 181.319
+    },
+    {
+      "text": "学校の教師をやめまず最初に就職したのが",
+      "start_seconds": 176.92,
+      "end_seconds": 184.39999999999998
+    },
+    {
+      "text": "外し系の金融機関で生命保険を扱う",
+      "start_seconds": 181.319,
+      "end_seconds": 188.11999999999998
+    },
+    {
+      "text": "ライフランナーという仕事でした。私仕事",
+      "start_seconds": 184.4,
+      "end_seconds": 191.20000000000002
+    },
+    {
+      "text": "ですけれども最愛の母親を中学校2年生の",
+      "start_seconds": 188.12,
+      "end_seconds": 195.0
+    },
+    {
+      "text": "時宮がしています。え、最愛の母親が",
+      "start_seconds": 191.2,
+      "end_seconds": 197.72
+    },
+    {
+      "text": "亡くなったこの悲しい。え、これを1つ",
+      "start_seconds": 195.0,
+      "end_seconds": 200.599
+    },
+    {
+      "text": "意味を持たせたかったんです。え、そして",
+      "start_seconds": 197.72,
+      "end_seconds": 203.879
+    },
+    {
+      "text": "何よりもたくさんの方々とお話をし、その",
+      "start_seconds": 200.599,
+      "end_seconds": 206.83999999999997
+    },
+    {
+      "text": "方の人生ドラマを聞いてそこに伴奏する。",
+      "start_seconds": 203.879,
+      "end_seconds": 209.39999999999998
+    },
+    {
+      "text": "そのライフランナーという仕事が聞いては",
+      "start_seconds": 206.84,
+      "end_seconds": 212.31900000000002
+    },
+    {
+      "text": "子供たちへと社会のことを喋れる。そう",
+      "start_seconds": 209.4,
+      "end_seconds": 216.12
+    },
+    {
+      "text": "いった確信があったからです。ただそんな",
+      "start_seconds": 212.319,
+      "end_seconds": 218.48
+    },
+    {
+      "text": "ライフランナーとして活動していたある日",
+      "start_seconds": 216.12,
+      "end_seconds": 223.08
+    },
+    {
+      "text": "、また1つ大きな呪文が頭を見りました。",
+      "start_seconds": 218.48,
+      "end_seconds": 227.04
+    },
+    {
+      "text": "生命保険という枠を超え、様々な他の金融",
+      "start_seconds": 223.08,
+      "end_seconds": 230.28
+    },
+    {
+      "text": "商品を勉強し、それに対してトータル的に",
+      "start_seconds": 227.04,
+      "end_seconds": 233.56
+    },
+    {
+      "text": "サポートする別になんじゃない。そして",
+      "start_seconds": 230.28,
+      "end_seconds": 236.76
+    },
+    {
+      "text": "人生なんと2度目の転職。次は",
+      "start_seconds": 233.56,
+      "end_seconds": 238.4
+    },
+    {
+      "text": "ファイナンシャルプランナーがたくさん",
+      "start_seconds": 236.76,
+      "end_seconds": 241.76
+    },
+    {
+      "text": "所得する会社の部長職として採用して",
+      "start_seconds": 238.4,
+      "end_seconds": 247.239
+    },
+    {
+      "text": "いただいました。そして時は2025年。",
+      "start_seconds": 241.76,
+      "end_seconds": 249.519
+    },
+    {
+      "text": "え、この会社を設立させていただきまして",
+      "start_seconds": 247.239,
+      "end_seconds": 253.36
+    },
+    {
+      "text": "、基本的には教育委員会、そして市野行政",
+      "start_seconds": 249.519,
+      "end_seconds": 257.04
+    },
+    {
+      "text": "と提供をし、全国の小中高校にですね、",
+      "start_seconds": 253.36,
+      "end_seconds": 261.639
+    },
+    {
+      "text": "金融経済教育と心を育む女装教育の活動を",
+      "start_seconds": 257.04,
+      "end_seconds": 265.40000000000003
+    },
+    {
+      "text": "行っております。教育現場を飛び出し、",
+      "start_seconds": 261.639,
+      "end_seconds": 269.28000000000003
+    },
+    {
+      "text": "10年越しに今子供たちに伝えたいこと。",
+      "start_seconds": 265.4,
+      "end_seconds": 272.56
+    },
+    {
+      "text": "それは誰でもない今1万冊の顔になって",
+      "start_seconds": 269.28,
+      "end_seconds": 275.59999999999997
+    },
+    {
+      "text": "おります。渋沢さんが残した言葉。うんご",
+      "start_seconds": 272.56,
+      "end_seconds": 279.56
+    },
+    {
+      "text": "と揃です。え、ロングとは道徳、そして",
+      "start_seconds": 275.6,
+      "end_seconds": 283.44
+    },
+    {
+      "text": "ソロ版とは経済を意します。今は令和です",
+      "start_seconds": 279.56,
+      "end_seconds": 286.88
+    },
+    {
+      "text": "ので令和版の論語とその番教育を実施して",
+      "start_seconds": 283.44,
+      "end_seconds": 291.56
+    },
+    {
+      "text": "です。この論語の道徳とは我々の団体で",
+      "start_seconds": 286.88,
+      "end_seconds": 294.8
+    },
+    {
+      "text": "言うとこの人としての心のあり方、え、",
+      "start_seconds": 291.56,
+      "end_seconds": 298.12
+    },
+    {
+      "text": "そしてこのソ番の部分はそうです。お金に",
+      "start_seconds": 294.8,
+      "end_seconds": 300.6
+    },
+    {
+      "text": "ついて子供たちに伝えているということな",
+      "start_seconds": 298.12,
+      "end_seconds": 303.759
+    },
+    {
+      "text": "んですね。さあ、ではここからは後半に",
+      "start_seconds": 300.6,
+      "end_seconds": 306.639
+    },
+    {
+      "text": "参ります。ここからは少し皆様と一緒に",
+      "start_seconds": 303.759,
+      "end_seconds": 309.40000000000003
+    },
+    {
+      "text": "考えていきたいなという思います。え、",
+      "start_seconds": 306.639,
+      "end_seconds": 312.88
+    },
+    {
+      "text": "まずですね、少し皆様の小中学校の頃を",
+      "start_seconds": 309.4,
+      "end_seconds": 315.12
+    },
+    {
+      "text": "思い出していただきたいんですけれども、",
+      "start_seconds": 312.88,
+      "end_seconds": 319.08
+    },
+    {
+      "text": "小中学校の頃どのような勉強をされてか、",
+      "start_seconds": 315.12,
+      "end_seconds": 321.12
+    },
+    {
+      "text": "どのような強化がありますでしょうか?",
+      "start_seconds": 319.08,
+      "end_seconds": 325.08
+    },
+    {
+      "text": "少しお考えます。",
+      "start_seconds": 321.12,
+      "end_seconds": 325.08
+    },
+    {
+      "text": "そうですね、英国者、ま、そのような強化",
+      "start_seconds": 325.199,
+      "end_seconds": 332.0
+    },
+    {
+      "text": "がなされてたと。それではもう少し深く",
+      "start_seconds": 327.72,
+      "end_seconds": 335.759
+    },
+    {
+      "text": "考えていきましょう。なぜこの英国者など",
+      "start_seconds": 332.0,
+      "end_seconds": 340.639
+    },
+    {
+      "text": "の強化を勉強するんでしょうか?",
+      "start_seconds": 335.759,
+      "end_seconds": 344.56
+    },
+    {
+      "text": "ある児童はこう言います。え、口先生学校",
+      "start_seconds": 340.639,
+      "end_seconds": 346.56
+    },
+    {
+      "text": "に入った瞬間そういうカルキュラムだった",
+      "start_seconds": 344.56,
+      "end_seconds": 350.56
+    },
+    {
+      "text": "から考えたことあります。さあ、皆さん",
+      "start_seconds": 346.56,
+      "end_seconds": 355.0
+    },
+    {
+      "text": "ですね。ではもう少し深く考えていきたい",
+      "start_seconds": 350.56,
+      "end_seconds": 358.72
+    },
+    {
+      "text": "と思います。なぜ勉強が必要なんでしょう",
+      "start_seconds": 355.0,
+      "end_seconds": 361.72
+    },
+    {
+      "text": "?",
+      "start_seconds": 358.72,
+      "end_seconds": 361.72
+    },
+    {
+      "text": "いらっしゃるですね。ある事童はこう言い",
+      "start_seconds": 362.199,
+      "end_seconds": 369.0
+    },
+    {
+      "text": "ます。一口先生勉強すると学力が上がり",
+      "start_seconds": 364.68,
+      "end_seconds": 372.12
+    },
+    {
+      "text": "ます。学力が上がるといい高校、いい大学",
+      "start_seconds": 369.0,
+      "end_seconds": 375.44
+    },
+    {
+      "text": "入金、自分が就職できる選択政府が広がる",
+      "start_seconds": 372.12,
+      "end_seconds": 377.44
+    },
+    {
+      "text": "んです。自分先生そのために勉強するん",
+      "start_seconds": 375.44,
+      "end_seconds": 381.8
+    },
+    {
+      "text": "です。なるほどです。それではさらに深く",
+      "start_seconds": 377.44,
+      "end_seconds": 385.759
+    },
+    {
+      "text": "考えていきたいと思います。なぜ働く必要",
+      "start_seconds": 381.8,
+      "end_seconds": 388.88
+    },
+    {
+      "text": "があるのかです。",
+      "start_seconds": 385.759,
+      "end_seconds": 392.16
+    },
+    {
+      "text": "これはまだ働いたことがない方々であると",
+      "start_seconds": 388.88,
+      "end_seconds": 394.8
+    },
+    {
+      "text": "こないかもしれませんが、私は実際に",
+      "start_seconds": 392.16,
+      "end_seconds": 397.84000000000003
+    },
+    {
+      "text": "ライフプランナー時代約7年で1万人を",
+      "start_seconds": 394.8,
+      "end_seconds": 401.319
+    },
+    {
+      "text": "超える方々と対話をしてですね、え、実際",
+      "start_seconds": 397.84,
+      "end_seconds": 404.79999999999995
+    },
+    {
+      "text": "に質問してきました。え、まるまるさん何",
+      "start_seconds": 401.319,
+      "end_seconds": 407.36
+    },
+    {
+      "text": "のために働かれてるんでしょうか?そう",
+      "start_seconds": 404.8,
+      "end_seconds": 410.36
+    },
+    {
+      "text": "ながら多くの方はこうしていました。さん",
+      "start_seconds": 407.36,
+      "end_seconds": 413.44
+    },
+    {
+      "text": "家族のために働いてます。生活のために",
+      "start_seconds": 410.36,
+      "end_seconds": 415.84000000000003
+    },
+    {
+      "text": "働いてるんです。",
+      "start_seconds": 413.44,
+      "end_seconds": 419.16
+    },
+    {
+      "text": "皆さんいかがでしょうか?その収入のため",
+      "start_seconds": 415.84,
+      "end_seconds": 422.31899999999996
+    },
+    {
+      "text": "、つまりお金のために働いているんだと",
+      "start_seconds": 419.16,
+      "end_seconds": 426.12
+    },
+    {
+      "text": "いう方が実際思ったよりもということが",
+      "start_seconds": 422.319,
+      "end_seconds": 430.03900000000004
+    },
+    {
+      "text": "分かったんです。ではここで逆算してみ",
+      "start_seconds": 426.12,
+      "end_seconds": 434.16
+    },
+    {
+      "text": "ましょう。なぜ勉強しますかという問に",
+      "start_seconds": 430.039,
+      "end_seconds": 438.56
+    },
+    {
+      "text": "対してゴールがお金のためですと答える。",
+      "start_seconds": 434.16,
+      "end_seconds": 441.16
+    },
+    {
+      "text": "ま、これが1つの過程として出てきたわけ",
+      "start_seconds": 438.56,
+      "end_seconds": 444.28000000000003
+    },
+    {
+      "text": "ですよね。では考えなければいけないのが",
+      "start_seconds": 441.16,
+      "end_seconds": 447.16
+    },
+    {
+      "text": "人生におけるキーワード。このお金という",
+      "start_seconds": 444.28,
+      "end_seconds": 449.55999999999995
+    },
+    {
+      "text": "ものが1つポイントになってきそうじゃ",
+      "start_seconds": 447.16,
+      "end_seconds": 452.44
+    },
+    {
+      "text": "ないでしょうか。さあ、ではこっから",
+      "start_seconds": 449.56,
+      "end_seconds": 454.44
+    },
+    {
+      "text": "ポンポンの話に戻っていきたいと思います",
+      "start_seconds": 452.44,
+      "end_seconds": 460.639
+    },
+    {
+      "text": "が人生の目的とは何だじゃないですか?",
+      "start_seconds": 454.44,
+      "end_seconds": 463.56
+    },
+    {
+      "text": "多くの方々は反対おっしゃるかもしれませ",
+      "start_seconds": 460.639,
+      "end_seconds": 465.12
+    },
+    {
+      "text": "。",
+      "start_seconds": 463.56,
+      "end_seconds": 467.84
+    },
+    {
+      "text": "え、ある方はこう言います。うん。一口",
+      "start_seconds": 465.12,
+      "end_seconds": 471.28000000000003
+    },
+    {
+      "text": "さん幸せになるたです。皆さんいかが",
+      "start_seconds": 467.84,
+      "end_seconds": 474.63899999999995
+    },
+    {
+      "text": "でしょうか?私も多くの方々にお話を聞き",
+      "start_seconds": 471.28,
+      "end_seconds": 477.84
+    },
+    {
+      "text": "ましたが不幸になりたい。不幸になるため",
+      "start_seconds": 474.639,
+      "end_seconds": 480.159
+    },
+    {
+      "text": "に生きているという方は、ま、全く",
+      "start_seconds": 477.84,
+      "end_seconds": 482.84
+    },
+    {
+      "text": "いらっしゃいませんでした。人生の目的は",
+      "start_seconds": 480.159,
+      "end_seconds": 486.879
+    },
+    {
+      "text": "幸せになるだけ。これが1つ仮説として",
+      "start_seconds": 482.84,
+      "end_seconds": 489.63899999999995
+    },
+    {
+      "text": "また出てくるわけですよね。ではここで皆",
+      "start_seconds": 486.879,
+      "end_seconds": 492.91900000000004
+    },
+    {
+      "text": "さん考えなければいけないわけです。幸せ",
+      "start_seconds": 489.639,
+      "end_seconds": 497.479
+    },
+    {
+      "text": "とはどった状態定義を運んでしょう。少し",
+      "start_seconds": 492.919,
+      "end_seconds": 500.68
+    },
+    {
+      "text": "考えます。",
+      "start_seconds": 497.479,
+      "end_seconds": 504.31899999999996
+    },
+    {
+      "text": "私はいろんな授業そして研修を重ね自分",
+      "start_seconds": 500.68,
+      "end_seconds": 506.879
+    },
+    {
+      "text": "なりですけれども1つの答えにってついて",
+      "start_seconds": 504.319,
+      "end_seconds": 509.759
+    },
+    {
+      "text": "ます。幸せ",
+      "start_seconds": 506.879,
+      "end_seconds": 515.0
+    },
+    {
+      "text": "物心両面の豊かさであった。つまりこの物",
+      "start_seconds": 509.759,
+      "end_seconds": 519.6800000000001
+    },
+    {
+      "text": "とは物が豊かである。そしてこの真とは体",
+      "start_seconds": 515.0,
+      "end_seconds": 524.959
+    },
+    {
+      "text": "が健康で心が乱されている状態をする。",
+      "start_seconds": 519.68,
+      "end_seconds": 528.519
+    },
+    {
+      "text": "物心両面の豊かさですから、またどちらか",
+      "start_seconds": 524.959,
+      "end_seconds": 531.5189999999999
+    },
+    {
+      "text": "片方だけでもなくてどちらも見されている",
+      "start_seconds": 528.519,
+      "end_seconds": 534.68
+    },
+    {
+      "text": "状態ということなんですね。ではまずこの",
+      "start_seconds": 531.519,
+      "end_seconds": 536.9590000000001
+    },
+    {
+      "text": "物について考えていきたいと思いますが、",
+      "start_seconds": 534.68,
+      "end_seconds": 539.76
+    },
+    {
+      "text": "この物はあ、どうして買うことができる",
+      "start_seconds": 536.959,
+      "end_seconds": 541.64
+    },
+    {
+      "text": "でしょう?",
+      "start_seconds": 539.76,
+      "end_seconds": 543.76
+    },
+    {
+      "text": "そうです。当然買うわけですよね。何を",
+      "start_seconds": 541.64,
+      "end_seconds": 546.959
+    },
+    {
+      "text": "使ってお金を使って買うことが多いわけ",
+      "start_seconds": 543.76,
+      "end_seconds": 549.12
+    },
+    {
+      "text": "ですよね。また出てきましたね。お金と",
+      "start_seconds": 546.959,
+      "end_seconds": 553.5189999999999
+    },
+    {
+      "text": "いう。そしてこの真、これはどのようにし",
+      "start_seconds": 549.12,
+      "end_seconds": 558.44
+    },
+    {
+      "text": "たら心が体が満たされるでしょう。",
+      "start_seconds": 553.519,
+      "end_seconds": 561.399
+    },
+    {
+      "text": "健康に流意しながら心が満たされる状態",
+      "start_seconds": 558.44,
+      "end_seconds": 564.36
+    },
+    {
+      "text": "です。そうですね。愛する人、信頼できる",
+      "start_seconds": 561.399,
+      "end_seconds": 568.0
+    },
+    {
+      "text": "家族や友人や知人が周りで満たされてる。",
+      "start_seconds": 564.36,
+      "end_seconds": 572.279
+    },
+    {
+      "text": "こういったことを察しですね。では話を",
+      "start_seconds": 568.0,
+      "end_seconds": 576.0
+    },
+    {
+      "text": "教育に戻したいと思います。我々はこの",
+      "start_seconds": 572.279,
+      "end_seconds": 580.6
+    },
+    {
+      "text": "教育現場で行われている人が人生の目的で",
+      "start_seconds": 576.0,
+      "end_seconds": 583.24
+    },
+    {
+      "text": "つまり幸せになることに直結すべきだと",
+      "start_seconds": 580.6,
+      "end_seconds": 589.6800000000001
+    },
+    {
+      "text": "考えてです。つまり論語は心を育て",
+      "start_seconds": 583.24,
+      "end_seconds": 594.0790000000001
+    },
+    {
+      "text": "その番はお金の知識を勉強する。この2つ",
+      "start_seconds": 589.68,
+      "end_seconds": 597.279
+    },
+    {
+      "text": "が学校現場で教育がなかないと勉強だと",
+      "start_seconds": 594.079,
+      "end_seconds": 600.0
+    },
+    {
+      "text": "思っているということです。我々の会社の",
+      "start_seconds": 597.279,
+      "end_seconds": 604.519
+    },
+    {
+      "text": "半数は元学校の先生、京都校長先生まで",
+      "start_seconds": 600.0,
+      "end_seconds": 607.68
+    },
+    {
+      "text": "いらっしゃいます。実際に学校現場を経験",
+      "start_seconds": 604.519,
+      "end_seconds": 611.12
+    },
+    {
+      "text": "しながら今学校に不足しているもの課題",
+      "start_seconds": 607.68,
+      "end_seconds": 613.3199999999999
+    },
+    {
+      "text": "学校現場でやりたいけれどもなかなかでき",
+      "start_seconds": 611.12,
+      "end_seconds": 615.6
+    },
+    {
+      "text": "ないそういった現場がありますので、え、",
+      "start_seconds": 613.32,
+      "end_seconds": 617.5600000000001
+    },
+    {
+      "text": "外部からではなりますけれども、そこの",
+      "start_seconds": 615.6,
+      "end_seconds": 619.8000000000001
+    },
+    {
+      "text": "作ろうと支援をしてそういった会社の",
+      "start_seconds": 617.56,
+      "end_seconds": 623.7199999999999
+    },
+    {
+      "text": "成り立ちがあると思たらと思います。では",
+      "start_seconds": 619.8,
+      "end_seconds": 626.24
+    },
+    {
+      "text": "こっから本日皆様にお伝えしたいまとめに",
+      "start_seconds": 623.72,
+      "end_seconds": 629.36
+    },
+    {
+      "text": "入っていきたいと思います。",
+      "start_seconds": 626.24,
+      "end_seconds": 634.0
+    },
+    {
+      "text": "物事の本質を捉える力。そしてそのことに",
+      "start_seconds": 629.36,
+      "end_seconds": 639.399
+    },
+    {
+      "text": "ついて深く深く深く探求してそして自分",
+      "start_seconds": 634.0,
+      "end_seconds": 644.0
+    },
+    {
+      "text": "なりで結構です仮説を立て自分の足で立証",
+      "start_seconds": 639.399,
+      "end_seconds": 647.36
+    },
+    {
+      "text": "検証を重ねて是非これをですね皆さん今日",
+      "start_seconds": 644.0,
+      "end_seconds": 649.44
+    },
+    {
+      "text": "からやっていただけたらと思います。",
+      "start_seconds": 647.36,
+      "end_seconds": 653.519
+    },
+    {
+      "text": "例えばこういった例もありです。一口先生",
+      "start_seconds": 649.44,
+      "end_seconds": 655.5600000000001
+    },
+    {
+      "text": "本当にお金のために勉強するんでしょうか",
+      "start_seconds": 653.519,
+      "end_seconds": 659.92
+    },
+    {
+      "text": "?私は違うと思います。私は英国総理者を",
+      "start_seconds": 655.56,
+      "end_seconds": 663.2399999999999
+    },
+    {
+      "text": "勉強するのは自分が何に興味があって何に",
+      "start_seconds": 659.92,
+      "end_seconds": 666.3199999999999
+    },
+    {
+      "text": "興味がないのか。そういった自分の特徴を",
+      "start_seconds": 663.24,
+      "end_seconds": 670.5600000000001
+    },
+    {
+      "text": "抑える。自分の特徴をし自分のその特徴",
+      "start_seconds": 666.32,
+      "end_seconds": 673.2
+    },
+    {
+      "text": "好きなことをさらに高校大学に深めること",
+      "start_seconds": 670.56,
+      "end_seconds": 677.3199999999999
+    },
+    {
+      "text": "があって自分が最も適した就職先を狙う。",
+      "start_seconds": 673.2,
+      "end_seconds": 681.0790000000001
+    },
+    {
+      "text": "それが引いては日本世界の光景につがる。",
+      "start_seconds": 677.32,
+      "end_seconds": 685.519
+    },
+    {
+      "text": "一物先生私は学校での勉強は自分の自己",
+      "start_seconds": 681.079,
+      "end_seconds": 688.6389999999999
+    },
+    {
+      "text": "実現の場を果たす。そういった役割がある",
+      "start_seconds": 685.519,
+      "end_seconds": 692.0
+    },
+    {
+      "text": "と思います。一先先生とあ、つまりこう",
+      "start_seconds": 688.639,
+      "end_seconds": 694.2
+    },
+    {
+      "text": "いったことですね。え、私が言ったことが",
+      "start_seconds": 692.0,
+      "end_seconds": 697.079
+    },
+    {
+      "text": "全てではなくて反応してみる、疑ってみる",
+      "start_seconds": 694.2,
+      "end_seconds": 700.279
+    },
+    {
+      "text": "。自分なりに答えを仮説としてあげそして",
+      "start_seconds": 697.079,
+      "end_seconds": 703.3199999999999
+    },
+    {
+      "text": "大事なのが自分らして一生検証し。この",
+      "start_seconds": 700.279,
+      "end_seconds": 706.399
+    },
+    {
+      "text": "ことを是非これからの皆さんは取りたいな",
+      "start_seconds": 703.32,
+      "end_seconds": 710.0400000000001
+    },
+    {
+      "text": "というです。では最後に皆様に1つ",
+      "start_seconds": 706.399,
+      "end_seconds": 713.88
+    },
+    {
+      "text": "メッセージをいただきます。それは人生は",
+      "start_seconds": 710.04,
+      "end_seconds": 717.399
+    },
+    {
+      "text": "たった1度切りだということです。",
+      "start_seconds": 713.88,
+      "end_seconds": 720.88
+    },
+    {
+      "text": "私は残念ながら中学校の生の時に母親を",
+      "start_seconds": 717.399,
+      "end_seconds": 723.8
+    },
+    {
+      "text": "連学しています。え、誰よりも明日を行き",
+      "start_seconds": 720.88,
+      "end_seconds": 726.76
+    },
+    {
+      "text": "たかったですね、母親の1日を生かさせて",
+      "start_seconds": 723.8,
+      "end_seconds": 730.3599999999999
+    },
+    {
+      "text": "いただいてる。当たり前に明日は来ないと",
+      "start_seconds": 726.76,
+      "end_seconds": 734.48
+    },
+    {
+      "text": "体感した人間です。たった1度の人生、",
+      "start_seconds": 730.36,
+      "end_seconds": 737.44
+    },
+    {
+      "text": "掛けがにない人生ですが、主人公はという",
+      "start_seconds": 734.48,
+      "end_seconds": 742.44
+    },
+    {
+      "text": "と当然誰でもない皆さん自身なわけです。",
+      "start_seconds": 737.44,
+      "end_seconds": 746.12
+    },
+    {
+      "text": "今日は39年の私の物語をお話しさせて",
+      "start_seconds": 742.44,
+      "end_seconds": 749.48
+    },
+    {
+      "text": "いただきました。今度は皆様の人生の物語",
+      "start_seconds": 746.12,
+      "end_seconds": 753.16
+    },
+    {
+      "text": "を聞かせていただけばです。是非これから",
+      "start_seconds": 749.48,
+      "end_seconds": 756.5600000000001
+    },
+    {
+      "text": "1ページ、1ページ大切に大切に来て",
+      "start_seconds": 753.16,
+      "end_seconds": 758.7199999999999
+    },
+    {
+      "text": "いただきたいと思います。またどこかでお",
+      "start_seconds": 756.56,
+      "end_seconds": 760.4799999999999
+    },
+    {
+      "text": "会いしましょう。ありがとうございました",
+      "start_seconds": 758.72,
+      "end_seconds": 763.793
+    },
+    {
+      "text": "。[拍手]",
+      "start_seconds": 760.48,
+      "end_seconds": 763.793
+    }
+  ],
+  "display_captions": [
+    {
+      "text": "社会に出て生きていくために必要な力とは",
+      "start_seconds": 8.48,
+      "end_seconds": 11.12,
+      "id": "bhlkG38xnBM-display-0001",
+      "segment_id": "bhlkG38xnBM-ja-0001"
+    },
+    {
+      "text": "なるか。私が小学校教師の時に最も探求し",
+      "start_seconds": 11.12,
+      "end_seconds": 15.879,
+      "id": "bhlkG38xnBM-display-0002",
+      "segment_id": "bhlkG38xnBM-ja-0001"
+    },
+    {
+      "text": "子供たちに伝えていたメッセージです。",
+      "start_seconds": 15.879,
+      "end_seconds": 19.199,
+      "id": "bhlkG38xnBM-display-0003",
+      "segment_id": "bhlkG38xnBM-ja-0001"
+    },
+    {
+      "text": "そんな私が1つ大きな疑問に持ち当たり",
+      "start_seconds": 19.199,
+      "end_seconds": 22.4,
+      "id": "bhlkG38xnBM-display-0004",
+      "segment_id": "bhlkG38xnBM-ja-0002"
+    },
+    {
+      "text": "ました。私は社会に出たことがあると",
+      "start_seconds": 22.4,
+      "end_seconds": 25.199,
+      "id": "bhlkG38xnBM-display-0005",
+      "segment_id": "bhlkG38xnBM-ja-0002"
+    },
+    {
+      "text": "見えるのかということです。教育系の大学",
+      "start_seconds": 25.199,
+      "end_seconds": 29.08,
+      "id": "bhlkG38xnBM-display-0006",
+      "segment_id": "bhlkG38xnBM-ja-0002"
+    },
+    {
+      "text": "で塾の交渉し学校の兄弟に立ったわけです",
+      "start_seconds": 29.08,
+      "end_seconds": 32.119,
+      "id": "bhlkG38xnBM-display-0007",
+      "segment_id": "bhlkG38xnBM-ja-0003"
+    },
+    {
+      "text": "が、まさに教育教育教育一食の人生。",
+      "start_seconds": 32.119,
+      "end_seconds": 36.64,
+      "id": "bhlkG38xnBM-display-0008",
+      "segment_id": "bhlkG38xnBM-ja-0003"
+    },
+    {
+      "text": "そんな私が一体社会の何を語れるというの",
+      "start_seconds": 36.64,
+      "end_seconds": 39.559,
+      "id": "bhlkG38xnBM-display-0009",
+      "segment_id": "bhlkG38xnBM-ja-0004"
+    },
+    {
+      "text": "か。よし、今受け持っているこの6年生",
+      "start_seconds": 39.559,
+      "end_seconds": 43.28,
+      "id": "bhlkG38xnBM-display-0010",
+      "segment_id": "bhlkG38xnBM-ja-0004"
+    },
+    {
+      "text": "たちと一緒に私も学校卒業しよう。人生",
+      "start_seconds": 43.28,
+      "end_seconds": 47.6,
+      "id": "bhlkG38xnBM-display-0011",
+      "segment_id": "bhlkG38xnBM-ja-0004"
+    },
+    {
+      "text": "決意30歳で社会に出たそんな教師の下",
+      "start_seconds": 47.6,
+      "end_seconds": 53.0,
+      "id": "bhlkG38xnBM-display-0012",
+      "segment_id": "bhlkG38xnBM-ja-0005"
+    },
+    {
+      "text": "申し遅れました。一口正39歳です。本日",
+      "start_seconds": 53.0,
+      "end_seconds": 57.16,
+      "id": "bhlkG38xnBM-display-0013",
+      "segment_id": "bhlkG38xnBM-ja-0005"
+    },
+    {
+      "text": "のテーマは始まり始まり。今日は私39歳",
+      "start_seconds": 57.16,
+      "end_seconds": 61.399,
+      "id": "bhlkG38xnBM-display-0014",
+      "segment_id": "bhlkG38xnBM-ja-0006"
+    },
+    {
+      "text": "の人生そして私が立ち上げた会社の始まり",
+      "start_seconds": 61.399,
+      "end_seconds": 65.239,
+      "id": "bhlkG38xnBM-display-0015",
+      "segment_id": "bhlkG38xnBM-ja-0006"
+    },
+    {
+      "text": "をもに皆様の人生の何か始まりにつながれ",
+      "start_seconds": 65.239,
+      "end_seconds": 69.0,
+      "id": "bhlkG38xnBM-display-0016",
+      "segment_id": "bhlkG38xnBM-ja-0006"
+    },
+    {
+      "text": "ば幸いです。中学校の音楽教師の母そして",
+      "start_seconds": 69.0,
+      "end_seconds": 73.4,
+      "id": "bhlkG38xnBM-display-0017",
+      "segment_id": "bhlkG38xnBM-ja-0007"
+    },
+    {
+      "text": "会社務めの父",
+      "start_seconds": 73.4,
+      "end_seconds": 75.92,
+      "id": "bhlkG38xnBM-display-0018",
+      "segment_id": "bhlkG38xnBM-ja-0007"
+    },
+    {
+      "text": "兄弟の次難として大阪で生まれ育ちました",
+      "start_seconds": 75.92,
+      "end_seconds": 78.759,
+      "id": "bhlkG38xnBM-display-0019",
+      "segment_id": "bhlkG38xnBM-ja-0007"
+    },
+    {
+      "text": "。母親が音楽の教師ということもあり幼い",
+      "start_seconds": 78.759,
+      "end_seconds": 83.36,
+      "id": "bhlkG38xnBM-display-0020",
+      "segment_id": "bhlkG38xnBM-ja-0008"
+    },
+    {
+      "text": "頃から2つの夢がありました。プロの",
+      "start_seconds": 83.36,
+      "end_seconds": 86.56,
+      "id": "bhlkG38xnBM-display-0021",
+      "segment_id": "bhlkG38xnBM-ja-0008"
+    },
+    {
+      "text": "ミュージシャンになると、そして学校の",
+      "start_seconds": 86.56,
+      "end_seconds": 89.24,
+      "id": "bhlkG38xnBM-display-0022",
+      "segment_id": "bhlkG38xnBM-ja-0008"
+    },
+    {
+      "text": "女学の話です。若い時にチャレンジする",
+      "start_seconds": 89.24,
+      "end_seconds": 92.799,
+      "id": "bhlkG38xnBM-display-0023",
+      "segment_id": "bhlkG38xnBM-ja-0009"
+    },
+    {
+      "text": "ならばとミュージシャンの道を懸命に",
+      "start_seconds": 92.799,
+      "end_seconds": 94.88,
+      "id": "bhlkG38xnBM-display-0024",
+      "segment_id": "bhlkG38xnBM-ja-0009"
+    },
+    {
+      "text": "心出したんですけれども、プロの道は",
+      "start_seconds": 94.88,
+      "end_seconds": 97.04,
+      "id": "bhlkG38xnBM-display-0025",
+      "segment_id": "bhlkG38xnBM-ja-0009"
+    },
+    {
+      "text": "そんなに甘くありませんでした。私の幼き",
+      "start_seconds": 97.04,
+      "end_seconds": 100.399,
+      "id": "bhlkG38xnBM-display-0026",
+      "segment_id": "bhlkG38xnBM-ja-0009"
+    },
+    {
+      "text": "は静かに幕を閉じました。余談ですけれど",
+      "start_seconds": 100.399,
+      "end_seconds": 103.96,
+      "id": "bhlkG38xnBM-display-0027",
+      "segment_id": "bhlkG38xnBM-ja-0010"
+    },
+    {
+      "text": "も歌はです。",
+      "start_seconds": 103.96,
+      "end_seconds": 106.96,
+      "id": "bhlkG38xnBM-display-0028",
+      "segment_id": "bhlkG38xnBM-ja-0010"
+    },
+    {
+      "text": "そしてプロのミュージシャン音楽の教師を",
+      "start_seconds": 106.96,
+      "end_seconds": 109.68,
+      "id": "bhlkG38xnBM-display-0029",
+      "segment_id": "bhlkG38xnBM-ja-0011"
+    },
+    {
+      "text": "心出してましたので残念ながらあ、勉強は",
+      "start_seconds": 109.68,
+      "end_seconds": 112.92,
+      "id": "bhlkG38xnBM-display-0030",
+      "segment_id": "bhlkG38xnBM-ja-0011"
+    },
+    {
+      "text": "あまりしていませんでした。で、そんな私",
+      "start_seconds": 112.92,
+      "end_seconds": 115.799,
+      "id": "bhlkG38xnBM-display-0031",
+      "segment_id": "bhlkG38xnBM-ja-0011"
+    },
+    {
+      "text": "が教団に立つまで実は教員採用試験2度",
+      "start_seconds": 115.799,
+      "end_seconds": 119.64,
+      "id": "bhlkG38xnBM-display-0032",
+      "segment_id": "bhlkG38xnBM-ja-0012"
+    },
+    {
+      "text": "落ちてしまった。3度目の正直教師になら",
+      "start_seconds": 119.64,
+      "end_seconds": 123.759,
+      "id": "bhlkG38xnBM-display-0033",
+      "segment_id": "bhlkG38xnBM-ja-0012"
+    },
+    {
+      "text": "せるました。また余談ですけれどもやはり",
+      "start_seconds": 123.759,
+      "end_seconds": 127.6,
+      "id": "bhlkG38xnBM-display-0034",
+      "segment_id": "bhlkG38xnBM-ja-0012"
+    },
+    {
+      "text": "勉強はしておく。話は冒頭に戻ります。",
+      "start_seconds": 127.6,
+      "end_seconds": 132.64,
+      "id": "bhlkG38xnBM-display-0035",
+      "segment_id": "bhlkG38xnBM-ja-0013"
+    },
+    {
+      "text": "社会で生きていくために必要な力とは何か",
+      "start_seconds": 132.64,
+      "end_seconds": 135.599,
+      "id": "bhlkG38xnBM-display-0036",
+      "segment_id": "bhlkG38xnBM-ja-0014"
+    },
+    {
+      "text": "。私が最後に卒業させた6年生とある1つ",
+      "start_seconds": 135.599,
+      "end_seconds": 139.879,
+      "id": "bhlkG38xnBM-display-0037",
+      "segment_id": "bhlkG38xnBM-ja-0014"
+    },
+    {
+      "text": "の約束をしました。",
+      "start_seconds": 139.879,
+      "end_seconds": 142.8,
+      "id": "bhlkG38xnBM-display-0038",
+      "segment_id": "bhlkG38xnBM-ja-0014"
+    },
+    {
+      "text": "皆さん卒業おめでとうございます。一口",
+      "start_seconds": 142.8,
+      "end_seconds": 145.72,
+      "id": "bhlkG38xnBM-display-0039",
+      "segment_id": "bhlkG38xnBM-ja-0015"
+    },
+    {
+      "text": "先生も君たちと一緒にこの学校を卒業し",
+      "start_seconds": 145.72,
+      "end_seconds": 148.879,
+      "id": "bhlkG38xnBM-display-0040",
+      "segment_id": "bhlkG38xnBM-ja-0015"
+    },
+    {
+      "text": "ます。一口先生が社会に出て改めて",
+      "start_seconds": 148.879,
+      "end_seconds": 152.76,
+      "id": "bhlkG38xnBM-display-0041",
+      "segment_id": "bhlkG38xnBM-ja-0015"
+    },
+    {
+      "text": "いろんな職業の方とお話をして、え、",
+      "start_seconds": 152.76,
+      "end_seconds": 155.84,
+      "id": "bhlkG38xnBM-display-0042",
+      "segment_id": "bhlkG38xnBM-ja-0016"
+    },
+    {
+      "text": "そして社会で生きていくために必要な力と",
+      "start_seconds": 155.84,
+      "end_seconds": 157.959,
+      "id": "bhlkG38xnBM-display-0043",
+      "segment_id": "bhlkG38xnBM-ja-0016"
+    },
+    {
+      "text": "は何ですかと先生自身が実際に聞いてき",
+      "start_seconds": 157.959,
+      "end_seconds": 160.879,
+      "id": "bhlkG38xnBM-display-0044",
+      "segment_id": "bhlkG38xnBM-ja-0016"
+    },
+    {
+      "text": "ます。そして10年後一口を教材にみんな",
+      "start_seconds": 160.879,
+      "end_seconds": 165.08,
+      "id": "bhlkG38xnBM-display-0045",
+      "segment_id": "bhlkG38xnBM-ja-0017"
+    },
+    {
+      "text": "の元に帰ってみますね。と約束しました。",
+      "start_seconds": 165.08,
+      "end_seconds": 169.4,
+      "id": "bhlkG38xnBM-display-0046",
+      "segment_id": "bhlkG38xnBM-ja-0017"
+    },
+    {
+      "text": "そして早いことで10年たち今子供たちと",
+      "start_seconds": 169.4,
+      "end_seconds": 172.879,
+      "id": "bhlkG38xnBM-display-0047",
+      "segment_id": "bhlkG38xnBM-ja-0018"
+    },
+    {
+      "text": "の約束通り学校で登壇になっています。",
+      "start_seconds": 172.879,
+      "end_seconds": 176.92,
+      "id": "bhlkG38xnBM-display-0048",
+      "segment_id": "bhlkG38xnBM-ja-0018"
+    },
+    {
+      "text": "学校の教師をやめまず最初に就職したのが",
+      "start_seconds": 176.92,
+      "end_seconds": 181.319,
+      "id": "bhlkG38xnBM-display-0049",
+      "segment_id": "bhlkG38xnBM-ja-0019"
+    },
+    {
+      "text": "外し系の金融機関で生命保険を扱う",
+      "start_seconds": 181.319,
+      "end_seconds": 184.4,
+      "id": "bhlkG38xnBM-display-0050",
+      "segment_id": "bhlkG38xnBM-ja-0019"
+    },
+    {
+      "text": "ライフランナーという仕事でした。私仕事",
+      "start_seconds": 184.4,
+      "end_seconds": 188.12,
+      "id": "bhlkG38xnBM-display-0051",
+      "segment_id": "bhlkG38xnBM-ja-0019"
+    },
+    {
+      "text": "ですけれども最愛の母親を中学校2年生の",
+      "start_seconds": 188.12,
+      "end_seconds": 191.2,
+      "id": "bhlkG38xnBM-display-0052",
+      "segment_id": "bhlkG38xnBM-ja-0020"
+    },
+    {
+      "text": "時宮がしています。え、最愛の母親が",
+      "start_seconds": 191.2,
+      "end_seconds": 195.0,
+      "id": "bhlkG38xnBM-display-0053",
+      "segment_id": "bhlkG38xnBM-ja-0020"
+    },
+    {
+      "text": "亡くなったこの悲しい。え、これを1つ",
+      "start_seconds": 195.0,
+      "end_seconds": 197.72,
+      "id": "bhlkG38xnBM-display-0054",
+      "segment_id": "bhlkG38xnBM-ja-0020"
+    },
+    {
+      "text": "意味を持たせたかったんです。え、そして",
+      "start_seconds": 197.72,
+      "end_seconds": 200.599,
+      "id": "bhlkG38xnBM-display-0055",
+      "segment_id": "bhlkG38xnBM-ja-0021"
+    },
+    {
+      "text": "何よりもたくさんの方々とお話をし、その",
+      "start_seconds": 200.599,
+      "end_seconds": 203.879,
+      "id": "bhlkG38xnBM-display-0056",
+      "segment_id": "bhlkG38xnBM-ja-0021"
+    },
+    {
+      "text": "方の人生ドラマを聞いてそこに伴奏する。",
+      "start_seconds": 203.879,
+      "end_seconds": 206.84,
+      "id": "bhlkG38xnBM-display-0057",
+      "segment_id": "bhlkG38xnBM-ja-0021"
+    },
+    {
+      "text": "そのライフランナーという仕事が聞いては",
+      "start_seconds": 206.84,
+      "end_seconds": 209.4,
+      "id": "bhlkG38xnBM-display-0058",
+      "segment_id": "bhlkG38xnBM-ja-0022"
+    },
+    {
+      "text": "子供たちへと社会のことを喋れる。そう",
+      "start_seconds": 209.4,
+      "end_seconds": 212.319,
+      "id": "bhlkG38xnBM-display-0059",
+      "segment_id": "bhlkG38xnBM-ja-0022"
+    },
+    {
+      "text": "いった確信があったからです。ただそんな",
+      "start_seconds": 212.319,
+      "end_seconds": 216.12,
+      "id": "bhlkG38xnBM-display-0060",
+      "segment_id": "bhlkG38xnBM-ja-0022"
+    },
+    {
+      "text": "ライフランナーとして活動していたある日",
+      "start_seconds": 216.12,
+      "end_seconds": 218.48,
+      "id": "bhlkG38xnBM-display-0061",
+      "segment_id": "bhlkG38xnBM-ja-0022"
+    },
+    {
+      "text": "、また1つ大きな呪文が頭を見りました。",
+      "start_seconds": 218.48,
+      "end_seconds": 223.08,
+      "id": "bhlkG38xnBM-display-0062",
+      "segment_id": "bhlkG38xnBM-ja-0023"
+    },
+    {
+      "text": "生命保険という枠を超え、様々な他の金融",
+      "start_seconds": 223.08,
+      "end_seconds": 227.04,
+      "id": "bhlkG38xnBM-display-0063",
+      "segment_id": "bhlkG38xnBM-ja-0024"
+    },
+    {
+      "text": "商品を勉強し、それに対してトータル的に",
+      "start_seconds": 227.04,
+      "end_seconds": 230.28,
+      "id": "bhlkG38xnBM-display-0064",
+      "segment_id": "bhlkG38xnBM-ja-0024"
+    },
+    {
+      "text": "サポートする別になんじゃない。そして",
+      "start_seconds": 230.28,
+      "end_seconds": 233.56,
+      "id": "bhlkG38xnBM-display-0065",
+      "segment_id": "bhlkG38xnBM-ja-0024"
+    },
+    {
+      "text": "人生なんと2度目の転職。次は",
+      "start_seconds": 233.56,
+      "end_seconds": 236.76,
+      "id": "bhlkG38xnBM-display-0066",
+      "segment_id": "bhlkG38xnBM-ja-0025"
+    },
+    {
+      "text": "ファイナンシャルプランナーがたくさん",
+      "start_seconds": 236.76,
+      "end_seconds": 238.4,
+      "id": "bhlkG38xnBM-display-0067",
+      "segment_id": "bhlkG38xnBM-ja-0025"
+    },
+    {
+      "text": "所得する会社の部長職として採用して",
+      "start_seconds": 238.4,
+      "end_seconds": 241.76,
+      "id": "bhlkG38xnBM-display-0068",
+      "segment_id": "bhlkG38xnBM-ja-0025"
+    },
+    {
+      "text": "いただいました。そして時は2025年。",
+      "start_seconds": 241.76,
+      "end_seconds": 247.239,
+      "id": "bhlkG38xnBM-display-0069",
+      "segment_id": "bhlkG38xnBM-ja-0026"
+    },
+    {
+      "text": "え、この会社を設立させていただきまして",
+      "start_seconds": 247.239,
+      "end_seconds": 249.519,
+      "id": "bhlkG38xnBM-display-0070",
+      "segment_id": "bhlkG38xnBM-ja-0027"
+    },
+    {
+      "text": "、基本的には教育委員会、そして市野行政",
+      "start_seconds": 249.519,
+      "end_seconds": 253.36,
+      "id": "bhlkG38xnBM-display-0071",
+      "segment_id": "bhlkG38xnBM-ja-0027"
+    },
+    {
+      "text": "と提供をし、全国の小中高校にですね、",
+      "start_seconds": 253.36,
+      "end_seconds": 257.04,
+      "id": "bhlkG38xnBM-display-0072",
+      "segment_id": "bhlkG38xnBM-ja-0027"
+    },
+    {
+      "text": "金融経済教育と心を育む女装教育の活動を",
+      "start_seconds": 257.04,
+      "end_seconds": 261.639,
+      "id": "bhlkG38xnBM-display-0073",
+      "segment_id": "bhlkG38xnBM-ja-0028"
+    },
+    {
+      "text": "行っております。教育現場を飛び出し、",
+      "start_seconds": 261.639,
+      "end_seconds": 265.4,
+      "id": "bhlkG38xnBM-display-0074",
+      "segment_id": "bhlkG38xnBM-ja-0028"
+    },
+    {
+      "text": "10年越しに今子供たちに伝えたいこと。",
+      "start_seconds": 265.4,
+      "end_seconds": 269.28,
+      "id": "bhlkG38xnBM-display-0075",
+      "segment_id": "bhlkG38xnBM-ja-0029"
+    },
+    {
+      "text": "それは誰でもない今1万冊の顔になって",
+      "start_seconds": 269.28,
+      "end_seconds": 272.56,
+      "id": "bhlkG38xnBM-display-0076",
+      "segment_id": "bhlkG38xnBM-ja-0030"
+    },
+    {
+      "text": "おります。渋沢さんが残した言葉。うんご",
+      "start_seconds": 272.56,
+      "end_seconds": 275.6,
+      "id": "bhlkG38xnBM-display-0077",
+      "segment_id": "bhlkG38xnBM-ja-0030"
+    },
+    {
+      "text": "と揃です。え、ロングとは道徳、そして",
+      "start_seconds": 275.6,
+      "end_seconds": 279.56,
+      "id": "bhlkG38xnBM-display-0078",
+      "segment_id": "bhlkG38xnBM-ja-0030"
+    },
+    {
+      "text": "ソロ版とは経済を意します。今は令和です",
+      "start_seconds": 279.56,
+      "end_seconds": 283.44,
+      "id": "bhlkG38xnBM-display-0079",
+      "segment_id": "bhlkG38xnBM-ja-0031"
+    },
+    {
+      "text": "ので令和版の論語とその番教育を実施して",
+      "start_seconds": 283.44,
+      "end_seconds": 286.88,
+      "id": "bhlkG38xnBM-display-0080",
+      "segment_id": "bhlkG38xnBM-ja-0031"
+    },
+    {
+      "text": "です。この論語の道徳とは我々の団体で",
+      "start_seconds": 286.88,
+      "end_seconds": 291.56,
+      "id": "bhlkG38xnBM-display-0081",
+      "segment_id": "bhlkG38xnBM-ja-0031"
+    },
+    {
+      "text": "言うとこの人としての心のあり方、え、",
+      "start_seconds": 291.56,
+      "end_seconds": 294.8,
+      "id": "bhlkG38xnBM-display-0082",
+      "segment_id": "bhlkG38xnBM-ja-0032"
+    },
+    {
+      "text": "そしてこのソ番の部分はそうです。お金に",
+      "start_seconds": 294.8,
+      "end_seconds": 298.12,
+      "id": "bhlkG38xnBM-display-0083",
+      "segment_id": "bhlkG38xnBM-ja-0032"
+    },
+    {
+      "text": "ついて子供たちに伝えているということな",
+      "start_seconds": 298.12,
+      "end_seconds": 300.6,
+      "id": "bhlkG38xnBM-display-0084",
+      "segment_id": "bhlkG38xnBM-ja-0032"
+    },
+    {
+      "text": "んですね。さあ、ではここからは後半に",
+      "start_seconds": 300.6,
+      "end_seconds": 303.759,
+      "id": "bhlkG38xnBM-display-0085",
+      "segment_id": "bhlkG38xnBM-ja-0033"
+    },
+    {
+      "text": "参ります。ここからは少し皆様と一緒に",
+      "start_seconds": 303.759,
+      "end_seconds": 306.639,
+      "id": "bhlkG38xnBM-display-0086",
+      "segment_id": "bhlkG38xnBM-ja-0033"
+    },
+    {
+      "text": "考えていきたいなという思います。え、",
+      "start_seconds": 306.639,
+      "end_seconds": 309.4,
+      "id": "bhlkG38xnBM-display-0087",
+      "segment_id": "bhlkG38xnBM-ja-0033"
+    },
+    {
+      "text": "まずですね、少し皆様の小中学校の頃を",
+      "start_seconds": 309.4,
+      "end_seconds": 312.88,
+      "id": "bhlkG38xnBM-display-0088",
+      "segment_id": "bhlkG38xnBM-ja-0034"
+    },
+    {
+      "text": "思い出していただきたいんですけれども、",
+      "start_seconds": 312.88,
+      "end_seconds": 315.12,
+      "id": "bhlkG38xnBM-display-0089",
+      "segment_id": "bhlkG38xnBM-ja-0034"
+    },
+    {
+      "text": "小中学校の頃どのような勉強をされてか、",
+      "start_seconds": 315.12,
+      "end_seconds": 319.08,
+      "id": "bhlkG38xnBM-display-0090",
+      "segment_id": "bhlkG38xnBM-ja-0034"
+    },
+    {
+      "text": "どのような強化がありますでしょうか?",
+      "start_seconds": 319.08,
+      "end_seconds": 321.12,
+      "id": "bhlkG38xnBM-display-0091",
+      "segment_id": "bhlkG38xnBM-ja-0034"
+    },
+    {
+      "text": "少しお考えます。",
+      "start_seconds": 321.12,
+      "end_seconds": 325.08,
+      "id": "bhlkG38xnBM-display-0092",
+      "segment_id": "bhlkG38xnBM-ja-0035"
+    },
+    {
+      "text": "そうですね、英国者、ま、そのような強化",
+      "start_seconds": 325.199,
+      "end_seconds": 327.72,
+      "id": "bhlkG38xnBM-display-0093",
+      "segment_id": "bhlkG38xnBM-ja-0036"
+    },
+    {
+      "text": "がなされてたと。それではもう少し深く",
+      "start_seconds": 327.72,
+      "end_seconds": 332.0,
+      "id": "bhlkG38xnBM-display-0094",
+      "segment_id": "bhlkG38xnBM-ja-0036"
+    },
+    {
+      "text": "考えていきましょう。なぜこの英国者など",
+      "start_seconds": 332.0,
+      "end_seconds": 335.759,
+      "id": "bhlkG38xnBM-display-0095",
+      "segment_id": "bhlkG38xnBM-ja-0036"
+    },
+    {
+      "text": "の強化を勉強するんでしょうか?",
+      "start_seconds": 335.759,
+      "end_seconds": 340.639,
+      "id": "bhlkG38xnBM-display-0096",
+      "segment_id": "bhlkG38xnBM-ja-0037"
+    },
+    {
+      "text": "ある児童はこう言います。え、口先生学校",
+      "start_seconds": 340.639,
+      "end_seconds": 344.56,
+      "id": "bhlkG38xnBM-display-0097",
+      "segment_id": "bhlkG38xnBM-ja-0038"
+    },
+    {
+      "text": "に入った瞬間そういうカルキュラムだった",
+      "start_seconds": 344.56,
+      "end_seconds": 346.56,
+      "id": "bhlkG38xnBM-display-0098",
+      "segment_id": "bhlkG38xnBM-ja-0038"
+    },
+    {
+      "text": "から考えたことあります。さあ、皆さん",
+      "start_seconds": 346.56,
+      "end_seconds": 350.56,
+      "id": "bhlkG38xnBM-display-0099",
+      "segment_id": "bhlkG38xnBM-ja-0038"
+    },
+    {
+      "text": "ですね。ではもう少し深く考えていきたい",
+      "start_seconds": 350.56,
+      "end_seconds": 355.0,
+      "id": "bhlkG38xnBM-display-0100",
+      "segment_id": "bhlkG38xnBM-ja-0039"
+    },
+    {
+      "text": "と思います。なぜ勉強が必要なんでしょう",
+      "start_seconds": 355.0,
+      "end_seconds": 358.72,
+      "id": "bhlkG38xnBM-display-0101",
+      "segment_id": "bhlkG38xnBM-ja-0039"
+    },
+    {
+      "text": "?",
+      "start_seconds": 358.72,
+      "end_seconds": 361.72,
+      "id": "bhlkG38xnBM-display-0102",
+      "segment_id": "bhlkG38xnBM-ja-0039"
+    },
+    {
+      "text": "いらっしゃるですね。ある事童はこう言い",
+      "start_seconds": 362.199,
+      "end_seconds": 364.68,
+      "id": "bhlkG38xnBM-display-0103",
+      "segment_id": "bhlkG38xnBM-ja-0040"
+    },
+    {
+      "text": "ます。一口先生勉強すると学力が上がり",
+      "start_seconds": 364.68,
+      "end_seconds": 369.0,
+      "id": "bhlkG38xnBM-display-0104",
+      "segment_id": "bhlkG38xnBM-ja-0040"
+    },
+    {
+      "text": "ます。学力が上がるといい高校、いい大学",
+      "start_seconds": 369.0,
+      "end_seconds": 372.12,
+      "id": "bhlkG38xnBM-display-0105",
+      "segment_id": "bhlkG38xnBM-ja-0040"
+    },
+    {
+      "text": "入金、自分が就職できる選択政府が広がる",
+      "start_seconds": 372.12,
+      "end_seconds": 375.44,
+      "id": "bhlkG38xnBM-display-0106",
+      "segment_id": "bhlkG38xnBM-ja-0041"
+    },
+    {
+      "text": "んです。自分先生そのために勉強するん",
+      "start_seconds": 375.44,
+      "end_seconds": 377.44,
+      "id": "bhlkG38xnBM-display-0107",
+      "segment_id": "bhlkG38xnBM-ja-0041"
+    },
+    {
+      "text": "です。なるほどです。それではさらに深く",
+      "start_seconds": 377.44,
+      "end_seconds": 381.8,
+      "id": "bhlkG38xnBM-display-0108",
+      "segment_id": "bhlkG38xnBM-ja-0041"
+    },
+    {
+      "text": "考えていきたいと思います。なぜ働く必要",
+      "start_seconds": 381.8,
+      "end_seconds": 385.759,
+      "id": "bhlkG38xnBM-display-0109",
+      "segment_id": "bhlkG38xnBM-ja-0042"
+    },
+    {
+      "text": "があるのかです。",
+      "start_seconds": 385.759,
+      "end_seconds": 388.88,
+      "id": "bhlkG38xnBM-display-0110",
+      "segment_id": "bhlkG38xnBM-ja-0042"
+    },
+    {
+      "text": "これはまだ働いたことがない方々であると",
+      "start_seconds": 388.88,
+      "end_seconds": 392.16,
+      "id": "bhlkG38xnBM-display-0111",
+      "segment_id": "bhlkG38xnBM-ja-0043"
+    },
+    {
+      "text": "こないかもしれませんが、私は実際に",
+      "start_seconds": 392.16,
+      "end_seconds": 394.8,
+      "id": "bhlkG38xnBM-display-0112",
+      "segment_id": "bhlkG38xnBM-ja-0043"
+    },
+    {
+      "text": "ライフプランナー時代約7年で1万人を",
+      "start_seconds": 394.8,
+      "end_seconds": 397.84,
+      "id": "bhlkG38xnBM-display-0113",
+      "segment_id": "bhlkG38xnBM-ja-0043"
+    },
+    {
+      "text": "超える方々と対話をしてですね、え、実際",
+      "start_seconds": 397.84,
+      "end_seconds": 401.319,
+      "id": "bhlkG38xnBM-display-0114",
+      "segment_id": "bhlkG38xnBM-ja-0044"
+    },
+    {
+      "text": "に質問してきました。え、まるまるさん何",
+      "start_seconds": 401.319,
+      "end_seconds": 404.8,
+      "id": "bhlkG38xnBM-display-0115",
+      "segment_id": "bhlkG38xnBM-ja-0044"
+    },
+    {
+      "text": "のために働かれてるんでしょうか?そう",
+      "start_seconds": 404.8,
+      "end_seconds": 407.36,
+      "id": "bhlkG38xnBM-display-0116",
+      "segment_id": "bhlkG38xnBM-ja-0044"
+    },
+    {
+      "text": "ながら多くの方はこうしていました。さん",
+      "start_seconds": 407.36,
+      "end_seconds": 410.36,
+      "id": "bhlkG38xnBM-display-0117",
+      "segment_id": "bhlkG38xnBM-ja-0045"
+    },
+    {
+      "text": "家族のために働いてます。生活のために",
+      "start_seconds": 410.36,
+      "end_seconds": 413.44,
+      "id": "bhlkG38xnBM-display-0118",
+      "segment_id": "bhlkG38xnBM-ja-0045"
+    },
+    {
+      "text": "働いてるんです。",
+      "start_seconds": 413.44,
+      "end_seconds": 415.84,
+      "id": "bhlkG38xnBM-display-0119",
+      "segment_id": "bhlkG38xnBM-ja-0045"
+    },
+    {
+      "text": "皆さんいかがでしょうか?その収入のため",
+      "start_seconds": 415.84,
+      "end_seconds": 419.16,
+      "id": "bhlkG38xnBM-display-0120",
+      "segment_id": "bhlkG38xnBM-ja-0046"
+    },
+    {
+      "text": "、つまりお金のために働いているんだと",
+      "start_seconds": 419.16,
+      "end_seconds": 422.319,
+      "id": "bhlkG38xnBM-display-0121",
+      "segment_id": "bhlkG38xnBM-ja-0046"
+    },
+    {
+      "text": "いう方が実際思ったよりもということが",
+      "start_seconds": 422.319,
+      "end_seconds": 426.12,
+      "id": "bhlkG38xnBM-display-0122",
+      "segment_id": "bhlkG38xnBM-ja-0046"
+    },
+    {
+      "text": "分かったんです。ではここで逆算してみ",
+      "start_seconds": 426.12,
+      "end_seconds": 430.039,
+      "id": "bhlkG38xnBM-display-0123",
+      "segment_id": "bhlkG38xnBM-ja-0047"
+    },
+    {
+      "text": "ましょう。なぜ勉強しますかという問に",
+      "start_seconds": 430.039,
+      "end_seconds": 434.16,
+      "id": "bhlkG38xnBM-display-0124",
+      "segment_id": "bhlkG38xnBM-ja-0047"
+    },
+    {
+      "text": "対してゴールがお金のためですと答える。",
+      "start_seconds": 434.16,
+      "end_seconds": 438.56,
+      "id": "bhlkG38xnBM-display-0125",
+      "segment_id": "bhlkG38xnBM-ja-0048"
+    },
+    {
+      "text": "ま、これが1つの過程として出てきたわけ",
+      "start_seconds": 438.56,
+      "end_seconds": 441.16,
+      "id": "bhlkG38xnBM-display-0126",
+      "segment_id": "bhlkG38xnBM-ja-0049"
+    },
+    {
+      "text": "ですよね。では考えなければいけないのが",
+      "start_seconds": 441.16,
+      "end_seconds": 444.28,
+      "id": "bhlkG38xnBM-display-0127",
+      "segment_id": "bhlkG38xnBM-ja-0049"
+    },
+    {
+      "text": "人生におけるキーワード。このお金という",
+      "start_seconds": 444.28,
+      "end_seconds": 447.16,
+      "id": "bhlkG38xnBM-display-0128",
+      "segment_id": "bhlkG38xnBM-ja-0049"
+    },
+    {
+      "text": "ものが1つポイントになってきそうじゃ",
+      "start_seconds": 447.16,
+      "end_seconds": 449.56,
+      "id": "bhlkG38xnBM-display-0129",
+      "segment_id": "bhlkG38xnBM-ja-0049"
+    },
+    {
+      "text": "ないでしょうか。さあ、ではこっから",
+      "start_seconds": 449.56,
+      "end_seconds": 452.44,
+      "id": "bhlkG38xnBM-display-0130",
+      "segment_id": "bhlkG38xnBM-ja-0050"
+    },
+    {
+      "text": "ポンポンの話に戻っていきたいと思います",
+      "start_seconds": 452.44,
+      "end_seconds": 454.44,
+      "id": "bhlkG38xnBM-display-0131",
+      "segment_id": "bhlkG38xnBM-ja-0050"
+    },
+    {
+      "text": "が人生の目的とは何だじゃないですか?",
+      "start_seconds": 454.44,
+      "end_seconds": 460.639,
+      "id": "bhlkG38xnBM-display-0132",
+      "segment_id": "bhlkG38xnBM-ja-0050"
+    },
+    {
+      "text": "多くの方々は反対おっしゃるかもしれませ",
+      "start_seconds": 460.639,
+      "end_seconds": 463.56,
+      "id": "bhlkG38xnBM-display-0133",
+      "segment_id": "bhlkG38xnBM-ja-0051"
+    },
+    {
+      "text": "。",
+      "start_seconds": 463.56,
+      "end_seconds": 465.12,
+      "id": "bhlkG38xnBM-display-0134",
+      "segment_id": "bhlkG38xnBM-ja-0051"
+    },
+    {
+      "text": "え、ある方はこう言います。うん。一口",
+      "start_seconds": 465.12,
+      "end_seconds": 467.84,
+      "id": "bhlkG38xnBM-display-0135",
+      "segment_id": "bhlkG38xnBM-ja-0052"
+    },
+    {
+      "text": "さん幸せになるたです。皆さんいかが",
+      "start_seconds": 467.84,
+      "end_seconds": 471.28,
+      "id": "bhlkG38xnBM-display-0136",
+      "segment_id": "bhlkG38xnBM-ja-0052"
+    },
+    {
+      "text": "でしょうか?私も多くの方々にお話を聞き",
+      "start_seconds": 471.28,
+      "end_seconds": 474.639,
+      "id": "bhlkG38xnBM-display-0137",
+      "segment_id": "bhlkG38xnBM-ja-0052"
+    },
+    {
+      "text": "ましたが不幸になりたい。不幸になるため",
+      "start_seconds": 474.639,
+      "end_seconds": 477.84,
+      "id": "bhlkG38xnBM-display-0138",
+      "segment_id": "bhlkG38xnBM-ja-0053"
+    },
+    {
+      "text": "に生きているという方は、ま、全く",
+      "start_seconds": 477.84,
+      "end_seconds": 480.159,
+      "id": "bhlkG38xnBM-display-0139",
+      "segment_id": "bhlkG38xnBM-ja-0053"
+    },
+    {
+      "text": "いらっしゃいませんでした。人生の目的は",
+      "start_seconds": 480.159,
+      "end_seconds": 482.84,
+      "id": "bhlkG38xnBM-display-0140",
+      "segment_id": "bhlkG38xnBM-ja-0053"
+    },
+    {
+      "text": "幸せになるだけ。これが1つ仮説として",
+      "start_seconds": 482.84,
+      "end_seconds": 486.879,
+      "id": "bhlkG38xnBM-display-0141",
+      "segment_id": "bhlkG38xnBM-ja-0054"
+    },
+    {
+      "text": "また出てくるわけですよね。ではここで皆",
+      "start_seconds": 486.879,
+      "end_seconds": 489.639,
+      "id": "bhlkG38xnBM-display-0142",
+      "segment_id": "bhlkG38xnBM-ja-0054"
+    },
+    {
+      "text": "さん考えなければいけないわけです。幸せ",
+      "start_seconds": 489.639,
+      "end_seconds": 492.919,
+      "id": "bhlkG38xnBM-display-0143",
+      "segment_id": "bhlkG38xnBM-ja-0054"
+    },
+    {
+      "text": "とはどった状態定義を運んでしょう。少し",
+      "start_seconds": 492.919,
+      "end_seconds": 497.479,
+      "id": "bhlkG38xnBM-display-0144",
+      "segment_id": "bhlkG38xnBM-ja-0055"
+    },
+    {
+      "text": "考えます。",
+      "start_seconds": 497.479,
+      "end_seconds": 500.68,
+      "id": "bhlkG38xnBM-display-0145",
+      "segment_id": "bhlkG38xnBM-ja-0055"
+    },
+    {
+      "text": "私はいろんな授業そして研修を重ね自分",
+      "start_seconds": 500.68,
+      "end_seconds": 504.319,
+      "id": "bhlkG38xnBM-display-0146",
+      "segment_id": "bhlkG38xnBM-ja-0056"
+    },
+    {
+      "text": "なりですけれども1つの答えにってついて",
+      "start_seconds": 504.319,
+      "end_seconds": 506.879,
+      "id": "bhlkG38xnBM-display-0147",
+      "segment_id": "bhlkG38xnBM-ja-0056"
+    },
+    {
+      "text": "ます。幸せ",
+      "start_seconds": 506.879,
+      "end_seconds": 509.759,
+      "id": "bhlkG38xnBM-display-0148",
+      "segment_id": "bhlkG38xnBM-ja-0056"
+    },
+    {
+      "text": "物心両面の豊かさであった。つまりこの物",
+      "start_seconds": 509.759,
+      "end_seconds": 515.0,
+      "id": "bhlkG38xnBM-display-0149",
+      "segment_id": "bhlkG38xnBM-ja-0057"
+    },
+    {
+      "text": "とは物が豊かである。そしてこの真とは体",
+      "start_seconds": 515.0,
+      "end_seconds": 519.68,
+      "id": "bhlkG38xnBM-display-0150",
+      "segment_id": "bhlkG38xnBM-ja-0057"
+    },
+    {
+      "text": "が健康で心が乱されている状態をする。",
+      "start_seconds": 519.68,
+      "end_seconds": 524.959,
+      "id": "bhlkG38xnBM-display-0151",
+      "segment_id": "bhlkG38xnBM-ja-0058"
+    },
+    {
+      "text": "物心両面の豊かさですから、またどちらか",
+      "start_seconds": 524.959,
+      "end_seconds": 528.519,
+      "id": "bhlkG38xnBM-display-0152",
+      "segment_id": "bhlkG38xnBM-ja-0059"
+    },
+    {
+      "text": "片方だけでもなくてどちらも見されている",
+      "start_seconds": 528.519,
+      "end_seconds": 531.519,
+      "id": "bhlkG38xnBM-display-0153",
+      "segment_id": "bhlkG38xnBM-ja-0059"
+    },
+    {
+      "text": "状態ということなんですね。ではまずこの",
+      "start_seconds": 531.519,
+      "end_seconds": 534.68,
+      "id": "bhlkG38xnBM-display-0154",
+      "segment_id": "bhlkG38xnBM-ja-0059"
+    },
+    {
+      "text": "物について考えていきたいと思いますが、",
+      "start_seconds": 534.68,
+      "end_seconds": 536.959,
+      "id": "bhlkG38xnBM-display-0155",
+      "segment_id": "bhlkG38xnBM-ja-0059"
+    },
+    {
+      "text": "この物はあ、どうして買うことができる",
+      "start_seconds": 536.959,
+      "end_seconds": 539.76,
+      "id": "bhlkG38xnBM-display-0156",
+      "segment_id": "bhlkG38xnBM-ja-0060"
+    },
+    {
+      "text": "でしょう?",
+      "start_seconds": 539.76,
+      "end_seconds": 541.64,
+      "id": "bhlkG38xnBM-display-0157",
+      "segment_id": "bhlkG38xnBM-ja-0060"
+    },
+    {
+      "text": "そうです。当然買うわけですよね。何を",
+      "start_seconds": 541.64,
+      "end_seconds": 543.76,
+      "id": "bhlkG38xnBM-display-0158",
+      "segment_id": "bhlkG38xnBM-ja-0061"
+    },
+    {
+      "text": "使ってお金を使って買うことが多いわけ",
+      "start_seconds": 543.76,
+      "end_seconds": 546.959,
+      "id": "bhlkG38xnBM-display-0159",
+      "segment_id": "bhlkG38xnBM-ja-0061"
+    },
+    {
+      "text": "ですよね。また出てきましたね。お金と",
+      "start_seconds": 546.959,
+      "end_seconds": 549.12,
+      "id": "bhlkG38xnBM-display-0160",
+      "segment_id": "bhlkG38xnBM-ja-0061"
+    },
+    {
+      "text": "いう。そしてこの真、これはどのようにし",
+      "start_seconds": 549.12,
+      "end_seconds": 553.519,
+      "id": "bhlkG38xnBM-display-0161",
+      "segment_id": "bhlkG38xnBM-ja-0061"
+    },
+    {
+      "text": "たら心が体が満たされるでしょう。",
+      "start_seconds": 553.519,
+      "end_seconds": 558.44,
+      "id": "bhlkG38xnBM-display-0162",
+      "segment_id": "bhlkG38xnBM-ja-0062"
+    },
+    {
+      "text": "健康に流意しながら心が満たされる状態",
+      "start_seconds": 558.44,
+      "end_seconds": 561.399,
+      "id": "bhlkG38xnBM-display-0163",
+      "segment_id": "bhlkG38xnBM-ja-0063"
+    },
+    {
+      "text": "です。そうですね。愛する人、信頼できる",
+      "start_seconds": 561.399,
+      "end_seconds": 564.36,
+      "id": "bhlkG38xnBM-display-0164",
+      "segment_id": "bhlkG38xnBM-ja-0063"
+    },
+    {
+      "text": "家族や友人や知人が周りで満たされてる。",
+      "start_seconds": 564.36,
+      "end_seconds": 568.0,
+      "id": "bhlkG38xnBM-display-0165",
+      "segment_id": "bhlkG38xnBM-ja-0063"
+    },
+    {
+      "text": "こういったことを察しですね。では話を",
+      "start_seconds": 568.0,
+      "end_seconds": 572.279,
+      "id": "bhlkG38xnBM-display-0166",
+      "segment_id": "bhlkG38xnBM-ja-0064"
+    },
+    {
+      "text": "教育に戻したいと思います。我々はこの",
+      "start_seconds": 572.279,
+      "end_seconds": 576.0,
+      "id": "bhlkG38xnBM-display-0167",
+      "segment_id": "bhlkG38xnBM-ja-0064"
+    },
+    {
+      "text": "教育現場で行われている人が人生の目的で",
+      "start_seconds": 576.0,
+      "end_seconds": 580.6,
+      "id": "bhlkG38xnBM-display-0168",
+      "segment_id": "bhlkG38xnBM-ja-0065"
+    },
+    {
+      "text": "つまり幸せになることに直結すべきだと",
+      "start_seconds": 580.6,
+      "end_seconds": 583.24,
+      "id": "bhlkG38xnBM-display-0169",
+      "segment_id": "bhlkG38xnBM-ja-0065"
+    },
+    {
+      "text": "考えてです。つまり論語は心を育て",
+      "start_seconds": 583.24,
+      "end_seconds": 589.68,
+      "id": "bhlkG38xnBM-display-0170",
+      "segment_id": "bhlkG38xnBM-ja-0066"
+    },
+    {
+      "text": "その番はお金の知識を勉強する。この2つ",
+      "start_seconds": 589.68,
+      "end_seconds": 594.079,
+      "id": "bhlkG38xnBM-display-0171",
+      "segment_id": "bhlkG38xnBM-ja-0066"
+    },
+    {
+      "text": "が学校現場で教育がなかないと勉強だと",
+      "start_seconds": 594.079,
+      "end_seconds": 597.279,
+      "id": "bhlkG38xnBM-display-0172",
+      "segment_id": "bhlkG38xnBM-ja-0067"
+    },
+    {
+      "text": "思っているということです。我々の会社の",
+      "start_seconds": 597.279,
+      "end_seconds": 600.0,
+      "id": "bhlkG38xnBM-display-0173",
+      "segment_id": "bhlkG38xnBM-ja-0067"
+    },
+    {
+      "text": "半数は元学校の先生、京都校長先生まで",
+      "start_seconds": 600.0,
+      "end_seconds": 604.519,
+      "id": "bhlkG38xnBM-display-0174",
+      "segment_id": "bhlkG38xnBM-ja-0067"
+    },
+    {
+      "text": "いらっしゃいます。実際に学校現場を経験",
+      "start_seconds": 604.519,
+      "end_seconds": 607.68,
+      "id": "bhlkG38xnBM-display-0175",
+      "segment_id": "bhlkG38xnBM-ja-0068"
+    },
+    {
+      "text": "しながら今学校に不足しているもの課題",
+      "start_seconds": 607.68,
+      "end_seconds": 611.12,
+      "id": "bhlkG38xnBM-display-0176",
+      "segment_id": "bhlkG38xnBM-ja-0068"
+    },
+    {
+      "text": "学校現場でやりたいけれどもなかなかでき",
+      "start_seconds": 611.12,
+      "end_seconds": 613.32,
+      "id": "bhlkG38xnBM-display-0177",
+      "segment_id": "bhlkG38xnBM-ja-0068"
+    },
+    {
+      "text": "ないそういった現場がありますので、え、",
+      "start_seconds": 613.32,
+      "end_seconds": 615.6,
+      "id": "bhlkG38xnBM-display-0178",
+      "segment_id": "bhlkG38xnBM-ja-0068"
+    },
+    {
+      "text": "外部からではなりますけれども、そこの",
+      "start_seconds": 615.6,
+      "end_seconds": 617.56,
+      "id": "bhlkG38xnBM-display-0179",
+      "segment_id": "bhlkG38xnBM-ja-0069"
+    },
+    {
+      "text": "作ろうと支援をしてそういった会社の",
+      "start_seconds": 617.56,
+      "end_seconds": 619.8,
+      "id": "bhlkG38xnBM-display-0180",
+      "segment_id": "bhlkG38xnBM-ja-0069"
+    },
+    {
+      "text": "成り立ちがあると思たらと思います。では",
+      "start_seconds": 619.8,
+      "end_seconds": 623.72,
+      "id": "bhlkG38xnBM-display-0181",
+      "segment_id": "bhlkG38xnBM-ja-0069"
+    },
+    {
+      "text": "こっから本日皆様にお伝えしたいまとめに",
+      "start_seconds": 623.72,
+      "end_seconds": 626.24,
+      "id": "bhlkG38xnBM-display-0182",
+      "segment_id": "bhlkG38xnBM-ja-0069"
+    },
+    {
+      "text": "入っていきたいと思います。",
+      "start_seconds": 626.24,
+      "end_seconds": 629.36,
+      "id": "bhlkG38xnBM-display-0183",
+      "segment_id": "bhlkG38xnBM-ja-0070"
+    },
+    {
+      "text": "物事の本質を捉える力。そしてそのことに",
+      "start_seconds": 629.36,
+      "end_seconds": 634.0,
+      "id": "bhlkG38xnBM-display-0184",
+      "segment_id": "bhlkG38xnBM-ja-0071"
+    },
+    {
+      "text": "ついて深く深く深く探求してそして自分",
+      "start_seconds": 634.0,
+      "end_seconds": 639.399,
+      "id": "bhlkG38xnBM-display-0185",
+      "segment_id": "bhlkG38xnBM-ja-0071"
+    },
+    {
+      "text": "なりで結構です仮説を立て自分の足で立証",
+      "start_seconds": 639.399,
+      "end_seconds": 644.0,
+      "id": "bhlkG38xnBM-display-0186",
+      "segment_id": "bhlkG38xnBM-ja-0072"
+    },
+    {
+      "text": "検証を重ねて是非これをですね皆さん今日",
+      "start_seconds": 644.0,
+      "end_seconds": 647.36,
+      "id": "bhlkG38xnBM-display-0187",
+      "segment_id": "bhlkG38xnBM-ja-0072"
+    },
+    {
+      "text": "からやっていただけたらと思います。",
+      "start_seconds": 647.36,
+      "end_seconds": 649.44,
+      "id": "bhlkG38xnBM-display-0188",
+      "segment_id": "bhlkG38xnBM-ja-0072"
+    },
+    {
+      "text": "例えばこういった例もありです。一口先生",
+      "start_seconds": 649.44,
+      "end_seconds": 653.519,
+      "id": "bhlkG38xnBM-display-0189",
+      "segment_id": "bhlkG38xnBM-ja-0073"
+    },
+    {
+      "text": "本当にお金のために勉強するんでしょうか",
+      "start_seconds": 653.519,
+      "end_seconds": 655.56,
+      "id": "bhlkG38xnBM-display-0190",
+      "segment_id": "bhlkG38xnBM-ja-0073"
+    },
+    {
+      "text": "?私は違うと思います。私は英国総理者を",
+      "start_seconds": 655.56,
+      "end_seconds": 659.92,
+      "id": "bhlkG38xnBM-display-0191",
+      "segment_id": "bhlkG38xnBM-ja-0073"
+    },
+    {
+      "text": "勉強するのは自分が何に興味があって何に",
+      "start_seconds": 659.92,
+      "end_seconds": 663.24,
+      "id": "bhlkG38xnBM-display-0192",
+      "segment_id": "bhlkG38xnBM-ja-0074"
+    },
+    {
+      "text": "興味がないのか。そういった自分の特徴を",
+      "start_seconds": 663.24,
+      "end_seconds": 666.32,
+      "id": "bhlkG38xnBM-display-0193",
+      "segment_id": "bhlkG38xnBM-ja-0074"
+    },
+    {
+      "text": "抑える。自分の特徴をし自分のその特徴",
+      "start_seconds": 666.32,
+      "end_seconds": 670.56,
+      "id": "bhlkG38xnBM-display-0194",
+      "segment_id": "bhlkG38xnBM-ja-0074"
+    },
+    {
+      "text": "好きなことをさらに高校大学に深めること",
+      "start_seconds": 670.56,
+      "end_seconds": 673.2,
+      "id": "bhlkG38xnBM-display-0195",
+      "segment_id": "bhlkG38xnBM-ja-0075"
+    },
+    {
+      "text": "があって自分が最も適した就職先を狙う。",
+      "start_seconds": 673.2,
+      "end_seconds": 677.32,
+      "id": "bhlkG38xnBM-display-0196",
+      "segment_id": "bhlkG38xnBM-ja-0075"
+    },
+    {
+      "text": "それが引いては日本世界の光景につがる。",
+      "start_seconds": 677.32,
+      "end_seconds": 681.079,
+      "id": "bhlkG38xnBM-display-0197",
+      "segment_id": "bhlkG38xnBM-ja-0076"
+    },
+    {
+      "text": "一物先生私は学校での勉強は自分の自己",
+      "start_seconds": 681.079,
+      "end_seconds": 685.519,
+      "id": "bhlkG38xnBM-display-0198",
+      "segment_id": "bhlkG38xnBM-ja-0077"
+    },
+    {
+      "text": "実現の場を果たす。そういった役割がある",
+      "start_seconds": 685.519,
+      "end_seconds": 688.639,
+      "id": "bhlkG38xnBM-display-0199",
+      "segment_id": "bhlkG38xnBM-ja-0077"
+    },
+    {
+      "text": "と思います。一先先生とあ、つまりこう",
+      "start_seconds": 688.639,
+      "end_seconds": 692.0,
+      "id": "bhlkG38xnBM-display-0200",
+      "segment_id": "bhlkG38xnBM-ja-0077"
+    },
+    {
+      "text": "いったことですね。え、私が言ったことが",
+      "start_seconds": 692.0,
+      "end_seconds": 694.2,
+      "id": "bhlkG38xnBM-display-0201",
+      "segment_id": "bhlkG38xnBM-ja-0078"
+    },
+    {
+      "text": "全てではなくて反応してみる、疑ってみる",
+      "start_seconds": 694.2,
+      "end_seconds": 697.079,
+      "id": "bhlkG38xnBM-display-0202",
+      "segment_id": "bhlkG38xnBM-ja-0078"
+    },
+    {
+      "text": "。自分なりに答えを仮説としてあげそして",
+      "start_seconds": 697.079,
+      "end_seconds": 700.279,
+      "id": "bhlkG38xnBM-display-0203",
+      "segment_id": "bhlkG38xnBM-ja-0078"
+    },
+    {
+      "text": "大事なのが自分らして一生検証し。この",
+      "start_seconds": 700.279,
+      "end_seconds": 703.32,
+      "id": "bhlkG38xnBM-display-0204",
+      "segment_id": "bhlkG38xnBM-ja-0078"
+    },
+    {
+      "text": "ことを是非これからの皆さんは取りたいな",
+      "start_seconds": 703.32,
+      "end_seconds": 706.399,
+      "id": "bhlkG38xnBM-display-0205",
+      "segment_id": "bhlkG38xnBM-ja-0079"
+    },
+    {
+      "text": "というです。では最後に皆様に1つ",
+      "start_seconds": 706.399,
+      "end_seconds": 710.04,
+      "id": "bhlkG38xnBM-display-0206",
+      "segment_id": "bhlkG38xnBM-ja-0079"
+    },
+    {
+      "text": "メッセージをいただきます。それは人生は",
+      "start_seconds": 710.04,
+      "end_seconds": 713.88,
+      "id": "bhlkG38xnBM-display-0207",
+      "segment_id": "bhlkG38xnBM-ja-0079"
+    },
+    {
+      "text": "たった1度切りだということです。",
+      "start_seconds": 713.88,
+      "end_seconds": 717.399,
+      "id": "bhlkG38xnBM-display-0208",
+      "segment_id": "bhlkG38xnBM-ja-0080"
+    },
+    {
+      "text": "私は残念ながら中学校の生の時に母親を",
+      "start_seconds": 717.399,
+      "end_seconds": 720.88,
+      "id": "bhlkG38xnBM-display-0209",
+      "segment_id": "bhlkG38xnBM-ja-0081"
+    },
+    {
+      "text": "連学しています。え、誰よりも明日を行き",
+      "start_seconds": 720.88,
+      "end_seconds": 723.8,
+      "id": "bhlkG38xnBM-display-0210",
+      "segment_id": "bhlkG38xnBM-ja-0081"
+    },
+    {
+      "text": "たかったですね、母親の1日を生かさせて",
+      "start_seconds": 723.8,
+      "end_seconds": 726.76,
+      "id": "bhlkG38xnBM-display-0211",
+      "segment_id": "bhlkG38xnBM-ja-0081"
+    },
+    {
+      "text": "いただいてる。当たり前に明日は来ないと",
+      "start_seconds": 726.76,
+      "end_seconds": 730.36,
+      "id": "bhlkG38xnBM-display-0212",
+      "segment_id": "bhlkG38xnBM-ja-0082"
+    },
+    {
+      "text": "体感した人間です。たった1度の人生、",
+      "start_seconds": 730.36,
+      "end_seconds": 734.48,
+      "id": "bhlkG38xnBM-display-0213",
+      "segment_id": "bhlkG38xnBM-ja-0082"
+    },
+    {
+      "text": "掛けがにない人生ですが、主人公はという",
+      "start_seconds": 734.48,
+      "end_seconds": 737.44,
+      "id": "bhlkG38xnBM-display-0214",
+      "segment_id": "bhlkG38xnBM-ja-0082"
+    },
+    {
+      "text": "と当然誰でもない皆さん自身なわけです。",
+      "start_seconds": 737.44,
+      "end_seconds": 742.44,
+      "id": "bhlkG38xnBM-display-0215",
+      "segment_id": "bhlkG38xnBM-ja-0083"
+    },
+    {
+      "text": "今日は39年の私の物語をお話しさせて",
+      "start_seconds": 742.44,
+      "end_seconds": 746.12,
+      "id": "bhlkG38xnBM-display-0216",
+      "segment_id": "bhlkG38xnBM-ja-0084"
+    },
+    {
+      "text": "いただきました。今度は皆様の人生の物語",
+      "start_seconds": 746.12,
+      "end_seconds": 749.48,
+      "id": "bhlkG38xnBM-display-0217",
+      "segment_id": "bhlkG38xnBM-ja-0084"
+    },
+    {
+      "text": "を聞かせていただけばです。是非これから",
+      "start_seconds": 749.48,
+      "end_seconds": 753.16,
+      "id": "bhlkG38xnBM-display-0218",
+      "segment_id": "bhlkG38xnBM-ja-0084"
+    },
+    {
+      "text": "1ページ、1ページ大切に大切に来て",
+      "start_seconds": 753.16,
+      "end_seconds": 756.56,
+      "id": "bhlkG38xnBM-display-0219",
+      "segment_id": "bhlkG38xnBM-ja-0085"
+    },
+    {
+      "text": "いただきたいと思います。またどこかでお",
+      "start_seconds": 756.56,
+      "end_seconds": 758.72,
+      "id": "bhlkG38xnBM-display-0220",
+      "segment_id": "bhlkG38xnBM-ja-0085"
+    },
+    {
+      "text": "会いしましょう。ありがとうございました",
+      "start_seconds": 758.72,
+      "end_seconds": 760.48,
+      "id": "bhlkG38xnBM-display-0221",
+      "segment_id": "bhlkG38xnBM-ja-0085"
+    },
+    {
+      "text": "。[拍手]",
+      "start_seconds": 760.48,
+      "end_seconds": 763.793,
+      "id": "bhlkG38xnBM-display-0222",
+      "segment_id": "bhlkG38xnBM-ja-0085"
+    }
+  ]
+}

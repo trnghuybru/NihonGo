@@ -1,0 +1,3549 @@
+{
+  "schema_version": 1,
+  "video": {
+    "youtube_id": "2PZHoGx4mLU",
+    "title": "Because we don't know | Toshiki Matsuzaka | TEDxSaikai",
+    "channel": "TEDx Talks",
+    "duration_seconds": 688
+  },
+  "caption_track": {
+    "language": "ja",
+    "kind": "asr",
+    "source": "youtube_automatic"
+  },
+  "source_playlist": "https://www.youtube.com/playlist?list=PLsRNoUx8w3rOHjXIU5EE4KOiIagv9yQaG",
+  "fetched_at": "2026-10-13T13:24:38.442679+00:00",
+  "segment_count": 82,
+  "segments": [
+    {
+      "text": "[拍手]",
+      "start_seconds": 4.584,
+      "end_seconds": 6.603999999999999,
+      "id": "2PZHoGx4mLU-ja-0001",
+      "sequence": 1
+    },
+    {
+      "text": "こんにちは。数学者です。数学者というのは少しイメージのしにくい職業だと思います。",
+      "start_seconds": 11.639,
+      "end_seconds": 20.08,
+      "id": "2PZHoGx4mLU-ja-0002",
+      "sequence": 2
+    },
+    {
+      "text": "大学では数学の先生として授業を行いますが、それだけが仕事というわけでありません。研究者としての一面も持っています。",
+      "start_seconds": 20.08,
+      "end_seconds": 28.92,
+      "id": "2PZHoGx4mLU-ja-0003",
+      "sequence": 3
+    },
+    {
+      "text": "でも数学の研究って一体何をするんでしょうか?",
+      "start_seconds": 28.92,
+      "end_seconds": 33.16,
+      "id": "2PZHoGx4mLU-ja-0004",
+      "sequence": 4
+    },
+    {
+      "text": "白意を着て研究室で試験官を扱うわけでもなさそうですし、古代の遺跡へ調査に出かけるわけでもなさそうです。この得体",
+      "start_seconds": 33.16,
+      "end_seconds": 42.8,
+      "id": "2PZHoGx4mLU-ja-0005",
+      "sequence": 5
+    },
+    {
+      "text": "の知れない数学者が今日皆さんにお伝えしたいことは僕がどうやってこの不思議な数学者人生を面白おかしく張り切って過ごしているのかそのアイデアについて",
+      "start_seconds": 42.8,
+      "end_seconds": 52.8,
+      "id": "2PZHoGx4mLU-ja-0006",
+      "sequence": 6
+    },
+    {
+      "text": "です。でもまずは数学者が一体何をする人なのか簡単なデモンストレーションを通して皆さんに体験していただこうと思います。",
+      "start_seconds": 52.8,
+      "end_seconds": 63.16,
+      "id": "2PZHoGx4mLU-ja-0007",
+      "sequence": 7
+    },
+    {
+      "text": "子供の頃に指を折って数を数えた経験はありますでしょうか?例えば1+2とか3+4とかはなんとか指を使って計算でき",
+      "start_seconds": 63.16,
+      "end_seconds": 73.04,
+      "id": "2PZHoGx4mLU-ja-0008",
+      "sequence": 8
+    },
+    {
+      "text": "ますが数が大きくなると足の指を使っても足りなくなるねとなるあれです。もちろん掛け算なんていうのは持っての他のように思うわけですが、実は掛け算クを指を使っ",
+      "start_seconds": 73.04,
+      "end_seconds": 84.68,
+      "id": "2PZHoGx4mLU-ja-0009",
+      "sequence": 9
+    },
+    {
+      "text": "て計算できること皆さんご存知でしょうか?やってみましょう。まず皆さん手のひを広げて目の前に出してみてください。1番",
+      "start_seconds": 84.68,
+      "end_seconds": 94.56,
+      "id": "2PZHoGx4mLU-ja-0010",
+      "sequence": 10
+    },
+    {
+      "text": "大きな9の段を使って説明してみますね。",
+      "start_seconds": 94.56,
+      "end_seconds": 97.56,
+      "id": "2PZHoGx4mLU-ja-0011",
+      "sequence": 11
+    },
+    {
+      "text": "例えば9×3の答えが知りたい時、9×3の3番目というところから左から3番目の指を折ってみるといいんです。左から3番目の指を折ってみると、折った指の左側に",
+      "start_seconds": 97.56,
+      "end_seconds": 109.159,
+      "id": "2PZHoGx4mLU-ja-0012",
+      "sequence": 12
+    },
+    {
+      "text": "2本、右側に7本の指が残っている状態かと思います。この",
+      "start_seconds": 111.0,
+      "end_seconds": 115.439,
+      "id": "2PZHoGx4mLU-ja-0013",
+      "sequence": 13
+    },
+    {
+      "text": "2と7、27というのがまさに9×3の答えなんです。",
+      "start_seconds": 115.96,
+      "end_seconds": 121.96,
+      "id": "2PZHoGx4mLU-ja-0014",
+      "sequence": 14
+    },
+    {
+      "text": "9×9だってできます。もし9×9を計算したければ左から9番目の指を追ってみるんです。すると8本と1本残ってますね。",
+      "start_seconds": 122.119,
+      "end_seconds": 132.56,
+      "id": "2PZHoGx4mLU-ja-0015",
+      "sequence": 15
+    },
+    {
+      "text": "この81、81がまさにク81なんです。",
+      "start_seconds": 132.56,
+      "end_seconds": 136.879,
+      "id": "2PZHoGx4mLU-ja-0016",
+      "sequence": 16
+    },
+    {
+      "text": "面白いですよね。",
+      "start_seconds": 136.879,
+      "end_seconds": 139.599,
+      "id": "2PZHoGx4mLU-ja-0017",
+      "sequence": 17
+    },
+    {
+      "text": "さて、この話を聞いた時にこういう疑問を持った方もおられるかもしれません。ま、9の段分かったと。じゃ、8の段とか7の段とか他の段ってどうやって計算するんで",
+      "start_seconds": 139.599,
+      "end_seconds": 150.2,
+      "id": "2PZHoGx4mLU-ja-0018",
+      "sequence": 18
+    },
+    {
+      "text": "すかって。",
+      "start_seconds": 150.2,
+      "end_seconds": 152.239,
+      "id": "2PZHoGx4mLU-ja-0019",
+      "sequence": 19
+    },
+    {
+      "text": "で、こういう風にこの新しいことを何か聞いた時にそれに対して何か新しい疑問を持つというのがまさに数学者の仕事の1つです。ただし、もちろん疑問を持つだけで",
+      "start_seconds": 152.239,
+      "end_seconds": 163.68,
+      "id": "2PZHoGx4mLU-ja-0020",
+      "sequence": 20
+    },
+    {
+      "text": "は数学者を名乗ることはできません。ここで重要なのは疑問を持ったことに対して解決に向けて何か行動を起こすということです。例えば自分なりに8の段の場合を",
+      "start_seconds": 163.68,
+      "end_seconds": 175.0,
+      "id": "2PZHoGx4mLU-ja-0021",
+      "sequence": 21
+    },
+    {
+      "text": "考えてみたというのでもいいですし、そこまでしなくても知ってそうな人に聞いてみるとかですね。あとはインターネットで検索するという程度でもいいでしょう。",
+      "start_seconds": 175.0,
+      "end_seconds": 183.4,
+      "id": "2PZHoGx4mLU-ja-0022",
+      "sequence": 22
+    },
+    {
+      "text": "とにかく自分が疑問に思ったことに対して解決するための行動を起こすこと、そしてその挑戦を続けていくことこそが僕が考える数学者という仕事なんです。でも",
+      "start_seconds": 183.4,
+      "end_seconds": 194.959,
+      "id": "2PZHoGx4mLU-ja-0023",
+      "sequence": 23
+    },
+    {
+      "text": "もちろん新しいことを何か聞いた時にそれに対して疑問を持つことと疑問に対して行動を起こすことの間には非常に大きな",
+      "start_seconds": 194.959,
+      "end_seconds": 204.08,
+      "id": "2PZHoGx4mLU-ja-0024",
+      "sequence": 24
+    },
+    {
+      "text": "ギャップがあると思います。実際どれほどの方が行動を移すまで行くでしょうか?時には自分には難しすぎるんじゃないかと",
+      "start_seconds": 204.08,
+      "end_seconds": 213.239,
+      "id": "2PZHoGx4mLU-ja-0025",
+      "sequence": 25
+    },
+    {
+      "text": "なることもあるでしょうし、人に訪ねて笑われたらどうしようとか、自分よりすごい人はこんなにいっぱいいるのに自分がやる必要ないんじゃないかと諦めてしまうこともあるかもしれません。",
+      "start_seconds": 213.239,
+      "end_seconds": 225.08,
+      "id": "2PZHoGx4mLU-ja-0026",
+      "sequence": 26
+    },
+    {
+      "text": "どうやったらこのネガティブな感情に負けずに挑戦を続けていくことができるんでしょうか?",
+      "start_seconds": 225.08,
+      "end_seconds": 231.64,
+      "id": "2PZHoGx4mLU-ja-0027",
+      "sequence": 27
+    },
+    {
+      "text": "高校卒業して間もない頃数学者になりたかった僕はそういうことに悩んでいました。悩んだ末とる教授に率直に聞いてみればいいんじゃないかと思ったんです。聞い",
+      "start_seconds": 231.64,
+      "end_seconds": 242.319,
+      "id": "2PZHoGx4mLU-ja-0028",
+      "sequence": 28
+    },
+    {
+      "text": "てみました。どうやったら難しい問題に挑戦していけるんですか?て、ま、どうせたくさん勉強しなさいと言われるんだろうなと思ったんですが違ったんです。先生",
+      "start_seconds": 242.319,
+      "end_seconds": 252.84,
+      "id": "2PZHoGx4mLU-ja-0029",
+      "sequence": 29
+    },
+    {
+      "text": "こう言いました。知らないからこそ何も気にせずに挑戦してみたらいいんじゃないですかって。つまりですよ。勉強[鼻息]して難しいことを知ってしまうと怖くなっ",
+      "start_seconds": 252.84,
+      "end_seconds": 264.72,
+      "id": "2PZHoGx4mLU-ja-0030",
+      "sequence": 30
+    },
+    {
+      "text": "て挑戦すらできなくなってしまいますよと言うんです。",
+      "start_seconds": 264.72,
+      "end_seconds": 269.28,
+      "id": "2PZHoGx4mLU-ja-0031",
+      "sequence": 31
+    },
+    {
+      "text": "最近この先生の言葉を強く僕に印象付ける大きな出来事があったのでここで紹介させてください。",
+      "start_seconds": 269.28,
+      "end_seconds": 276.52,
+      "id": "2PZHoGx4mLU-ja-0032",
+      "sequence": 32
+    },
+    {
+      "text": "皆さんご存知でしょうか?日本には漫画という面白い文化があります。",
+      "start_seconds": 276.52,
+      "end_seconds": 282.28,
+      "id": "2PZHoGx4mLU-ja-0033",
+      "sequence": 33
+    },
+    {
+      "text": "スポーツ漫画に影響を受けてスポーツ選手になったという方も多いでしょう。",
+      "start_seconds": 282.28,
+      "end_seconds": 285.28,
+      "id": "2PZHoGx4mLU-ja-0034",
+      "sequence": 34
+    },
+    {
+      "text": "とにかくそのバリエーションの豊かさには驚かされるばかりであらゆる分野に対してそれをテーマにした漫画があるんじゃないかと思うほどです。数学だって例外ではありません。数学の漫画というのもすごく",
+      "start_seconds": 285.28,
+      "end_seconds": 296.479,
+      "id": "2PZHoGx4mLU-ja-0035",
+      "sequence": 35
+    },
+    {
+      "text": "たくさんあるんです。そこで思いました。",
+      "start_seconds": 296.479,
+      "end_seconds": 299.88,
+      "id": "2PZHoGx4mLU-ja-0036",
+      "sequence": 36
+    },
+    {
+      "text": "この数学の漫画授業の教科書として使ってみたら面白いんじゃないかと。早速やってみたんです。整数端という数学の漫画があります。これを僕の授業の教科書として",
+      "start_seconds": 299.88,
+      "end_seconds": 311.52,
+      "id": "2PZHoGx4mLU-ja-0037",
+      "sequence": 37
+    },
+    {
+      "text": "使ってみることにしました。狙いは単純です。数学というのはその学問の特性上歴史の積み重ねの上に出来上がったもの",
+      "start_seconds": 311.52,
+      "end_seconds": 320.72,
+      "id": "2PZHoGx4mLU-ja-0038",
+      "sequence": 38
+    },
+    {
+      "text": "なので最先端の数学をしろうと思うととにかくたくさんの勉強をしなければならないと言われています。",
+      "start_seconds": 320.72,
+      "end_seconds": 329.44,
+      "id": "2PZHoGx4mLU-ja-0039",
+      "sequence": 39
+    },
+    {
+      "text": "でもその雰囲気だけなら何とか伝えられるんじゃないかと思ってこの漫画を通して最先端の雰囲気を学生たちに伝えようと思ったんです。ここで皆さんにも1つその",
+      "start_seconds": 329.44,
+      "end_seconds": 340.96,
+      "id": "2PZHoGx4mLU-ja-0040",
+      "sequence": 40
+    },
+    {
+      "text": "最先端の数学手アを紹介したいと思います。",
+      "start_seconds": 340.96,
+      "end_seconds": 345.12,
+      "id": "2PZHoGx4mLU-ja-0041",
+      "sequence": 41
+    },
+    {
+      "text": "整数端第3話においてゲーベル数列という数列が登場します。これは専門用語を用いると全科式というものを用いて定義さ",
+      "start_seconds": 345.12,
+      "end_seconds": 353.72,
+      "id": "2PZHoGx4mLU-ja-0042",
+      "sequence": 42
+    },
+    {
+      "text": "れる数列で最初の項0番目の項を1だと定めます。",
+      "start_seconds": 353.72,
+      "end_seconds": 359.36,
+      "id": "2PZHoGx4mLU-ja-0043",
+      "sequence": 43
+    },
+    {
+      "text": "次の項を計算するにはそれまでに出てきた項の2乗自分自身の掛け算ですねを計算して1を足して番目で割る。この場合1番目の1ではあるということを行うと2という",
+      "start_seconds": 359.36,
+      "end_seconds": 370.88,
+      "id": "2PZHoGx4mLU-ja-0044",
+      "sequence": 44
+    },
+    {
+      "text": "数が得られます。同じようにさらに次の項を計算しようと思うとそれまでの項の2乗を計算して1を足して番目である。それまでの項の2乗を足して1を足して番目で",
+      "start_seconds": 370.88,
+      "end_seconds": 382.68,
+      "id": "2PZHoGx4mLU-ja-0045",
+      "sequence": 45
+    },
+    {
+      "text": "ある。これを繰り返すことでどんどん新しい数が得られてこれをゲーベル数列と言うんです。",
+      "start_seconds": 382.68,
+      "end_seconds": 389.36,
+      "id": "2PZHoGx4mLU-ja-0046",
+      "sequence": 46
+    },
+    {
+      "text": "この定義の中に悪という操作が含まれているので時には割りきれることなくあまりが出る分数になってしまうという可能性もあるわけですが不思議なことに今のところ",
+      "start_seconds": 389.36,
+      "end_seconds": 399.96,
+      "id": "2PZHoGx4mLU-ja-0047",
+      "sequence": 47
+    },
+    {
+      "text": "全ての計算において割りきれるという状況が続いています。実はこのゲーベル数列発見当初はこのままずっと割り切れるという状況が続いていくんじゃないかと思わ",
+      "start_seconds": 399.96,
+      "end_seconds": 409.8,
+      "id": "2PZHoGx4mLU-ja-0048",
+      "sequence": 48
+    },
+    {
+      "text": "れていたんですが1975年についに43番目の計算において割りきれないことつまりあまりが出て分数になってしまう",
+      "start_seconds": 409.8,
+      "end_seconds": 419.0,
+      "id": "2PZHoGx4mLU-ja-0049",
+      "sequence": 49
+    },
+    {
+      "text": "ことが発見されて注目を集めました。",
+      "start_seconds": 419.0,
+      "end_seconds": 422.919,
+      "id": "2PZHoGx4mLU-ja-0050",
+      "sequence": 50
+    },
+    {
+      "text": "さて数学者とは新しいことを聞いたら疑問を持ってそれに挑戦をしていく人たちだと言いました。この場合もそうです。様々な数学者がこの現象を目にして多くの観点",
+      "start_seconds": 422.919,
+      "end_seconds": 434.16,
+      "id": "2PZHoGx4mLU-ja-0051",
+      "sequence": 51
+    },
+    {
+      "text": "から疑問を持ち、様々な考察を行いました。例えばこの定義にあった2乗というところを3条4乗、ま、色々できるでしょう。色々取り替えてみるとどうなる",
+      "start_seconds": 434.16,
+      "end_seconds": 443.759,
+      "id": "2PZHoGx4mLU-ja-0052",
+      "sequence": 52
+    },
+    {
+      "text": "かと。その考察からさらにこのマジックナンバー43というのも8997とその仲間を増やしていきました。こうしてできる新しいマジックナンバーたちから",
+      "start_seconds": 443.759,
+      "end_seconds": 455.199,
+      "id": "2PZHoGx4mLU-ja-0053",
+      "sequence": 53
+    },
+    {
+      "text": "なる数列NKというのがこの整数端第3話に紹介されているんです。",
+      "start_seconds": 455.199,
+      "end_seconds": 461.24,
+      "id": "2PZHoGx4mLU-ja-0054",
+      "sequence": 54
+    },
+    {
+      "text": "漫画の中のキャラクターも何やらその数列を眺めて疑問を投げかけているようです。",
+      "start_seconds": 461.24,
+      "end_seconds": 467.72,
+      "id": "2PZHoGx4mLU-ja-0055",
+      "sequence": 55
+    },
+    {
+      "text": "で、この何の変哲もないたった1つのセリフなんですが、これが大きな事件を呼ぶことになったんです。忘れもしません。2023年の5月、ちょうどゴールデン",
+      "start_seconds": 467.72,
+      "end_seconds": 478.039,
+      "id": "2PZHoGx4mLU-ja-0056",
+      "sequence": 56
+    },
+    {
+      "text": "ウィークが開けた頃ですかね、高校卒業して間もない学生たちが授業の初めにこういうこと言うんです。先生、このNKの最小値がいくつになるかという問題を考え",
+      "start_seconds": 478.039,
+      "end_seconds": 487.52,
+      "id": "2PZHoGx4mLU-ja-0057",
+      "sequence": 57
+    },
+    {
+      "text": "てきたので聞いてください。",
+      "start_seconds": 487.52,
+      "end_seconds": 490.96,
+      "id": "2PZHoGx4mLU-ja-0058",
+      "sequence": 58
+    },
+    {
+      "text": "これは非常に驚きました。というのも僕この問題数学の問題だと認識すらできていなかったんです。仮に認識できていたとし",
+      "start_seconds": 490.96,
+      "end_seconds": 500.68,
+      "id": "2PZHoGx4mLU-ja-0059",
+      "sequence": 59
+    },
+    {
+      "text": "ても僕はきっと挑戦できなかったと思います。なぜなら僕はゲーベル数列のことをよく知っていたのであの有名なすごい数学者たちが取り組んで解けなかった問題の",
+      "start_seconds": 500.68,
+      "end_seconds": 511.639,
+      "id": "2PZHoGx4mLU-ja-0060",
+      "sequence": 60
+    },
+    {
+      "text": "はずだから僕には溶けっこないだろうと諦めていたことでしょう。しかし彼ら違いました。彼ら学生たちはこの問題に挑戦をして素晴らしいアプローチを見い出しまし",
+      "start_seconds": 511.639,
+      "end_seconds": 521.159,
+      "id": "2PZHoGx4mLU-ja-0061",
+      "sequence": 61
+    },
+    {
+      "text": "た。そして次の美しい定理を見つけたんです。",
+      "start_seconds": 521.159,
+      "end_seconds": 525.64,
+      "id": "2PZHoGx4mLU-ja-0062",
+      "sequence": 62
+    },
+    {
+      "text": "この結果その後共同研究として発表し、つい先日ですね、100年以上の歴史を持つとる有名なアメリカの数学雑誌から新しい数学の定理として発表されたばかり",
+      "start_seconds": 525.64,
+      "end_seconds": 537.48,
+      "id": "2PZHoGx4mLU-ja-0063",
+      "sequence": 63
+    },
+    {
+      "text": "です。",
+      "start_seconds": 537.48,
+      "end_seconds": 539.399,
+      "id": "2PZHoGx4mLU-ja-0064",
+      "sequence": 64
+    },
+    {
+      "text": "一体僕と彼らで何が違ったのでしょうか?",
+      "start_seconds": 539.399,
+      "end_seconds": 542.2,
+      "id": "2PZHoGx4mLU-ja-0065",
+      "sequence": 65
+    },
+    {
+      "text": "ここで先生の言葉が思い出されるわけです。彼らは知らなかったんです。知らなかったからこそ挑戦できたんだと僕は思っています。",
+      "start_seconds": 542.2,
+      "end_seconds": 551.92,
+      "id": "2PZHoGx4mLU-ja-0066",
+      "sequence": 66
+    },
+    {
+      "text": "現代数学の内容をふんふんわりと伝えるという授業の目的でしたが、意図せずして先端の数学に爪跡を残す形となりました。",
+      "start_seconds": 551.92,
+      "end_seconds": 562.24,
+      "id": "2PZHoGx4mLU-ja-0067",
+      "sequence": 67
+    },
+    {
+      "text": "さて、新しい結果を新しい疑問を新しい数学者を見します。この結果に1番最初に影響を受けたのは一体誰だったでしょうか?他でもない彼らの1つ上の先輩たちでし",
+      "start_seconds": 562.24,
+      "end_seconds": 572.92,
+      "id": "2PZHoGx4mLU-ja-0068",
+      "sequence": 68
+    },
+    {
+      "text": "た。彼らもまた独自の疑問を持ち、それに挑戦することでこのNKの最小値に関する、より一般的な次の定理を得ました。この",
+      "start_seconds": 572.92,
+      "end_seconds": 583.519,
+      "id": "2PZHoGx4mLU-ja-0069",
+      "sequence": 69
+    },
+    {
+      "text": "結果もまたつい先日学術論文として発表されたばかりです。今度は彼らは自分たちにもできるかもしれないという可能性を知ったことで挑戦が始まったんだと思います。",
+      "start_seconds": 583.519,
+      "end_seconds": 594.839,
+      "id": "2PZHoGx4mLU-ja-0070",
+      "sequence": 70
+    },
+    {
+      "text": "ともかく彼ら学生たちのおかげでこのゲーベル数列の面白さは全世界が知ることになりました。つい先日も今度は日本人の2人の数学者によって新しい発見が発表さ",
+      "start_seconds": 594.839,
+      "end_seconds": 605.16,
+      "id": "2PZHoGx4mLU-ja-0071",
+      "sequence": 71
+    },
+    {
+      "text": "れたところです。学生たちの知らないことへの挑戦が今まさに数学の最先端を動かしているんです。",
+      "start_seconds": 605.16,
+      "end_seconds": 615.279,
+      "id": "2PZHoGx4mLU-ja-0072",
+      "sequence": 72
+    },
+    {
+      "text": "さて、我々は年齢を重ねると知識がどんどん増えていきます。知っていることが増えるともちろんできることの幅も広がっていきますが、それと同時に挑戦することの幅の可能性というのはどんどん",
+      "start_seconds": 615.279,
+      "end_seconds": 626.6,
+      "id": "2PZHoGx4mLU-ja-0073",
+      "sequence": 73
+    },
+    {
+      "text": "狭まっていってるんじゃないかと感じているところです。今日僕がお伝えしたかったアイデアというのはこの知らないことこそ挑戦しいがあるということです。先生",
+      "start_seconds": 626.6,
+      "end_seconds": 637.279,
+      "id": "2PZHoGx4mLU-ja-0074",
+      "sequence": 74
+    },
+    {
+      "text": "の言葉はいつでも僕に勇気をくれます。",
+      "start_seconds": 637.279,
+      "end_seconds": 639.839,
+      "id": "2PZHoGx4mLU-ja-0075",
+      "sequence": 75
+    },
+    {
+      "text": "知らないからこそ僕にできることがあるはずだといつでも思わせてくれるんです。",
+      "start_seconds": 639.839,
+      "end_seconds": 645.519,
+      "id": "2PZHoGx4mLU-ja-0076",
+      "sequence": 76
+    },
+    {
+      "text": "このテットトークもそうでした。もし僕が事前にこの赤い絨毯の緊張感を知っていたらこのトークは引き受けなかったかもしれませんですが僕は知らなかったんです",
+      "start_seconds": 645.519,
+      "end_seconds": 655.2,
+      "id": "2PZHoGx4mLU-ja-0077",
+      "sequence": 77
+    },
+    {
+      "text": "。知らなかったからこそ今日こうして無謀にも皆さんの前に立つことができました。",
+      "start_seconds": 655.2,
+      "end_seconds": 661.44,
+      "id": "2PZHoGx4mLU-ja-0078",
+      "sequence": 78
+    },
+    {
+      "text": "僕はまた明日からも知らないことにどんどん挑戦していくつもりです。皆さんもきっとそうだと思います。またどこか僕や皆さんがまだ知らない場所で再開できることを楽しみにしています。ありがとう",
+      "start_seconds": 661.44,
+      "end_seconds": 671.839,
+      "id": "2PZHoGx4mLU-ja-0079",
+      "sequence": 79
+    },
+    {
+      "text": "ございました。",
+      "start_seconds": 671.839,
+      "end_seconds": 674.002,
+      "id": "2PZHoGx4mLU-ja-0080",
+      "sequence": 80
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 674.002,
+      "end_seconds": 676.0219999999999,
+      "id": "2PZHoGx4mLU-ja-0081",
+      "sequence": 81
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 678.587,
+      "end_seconds": 680.607,
+      "id": "2PZHoGx4mLU-ja-0082",
+      "sequence": 82
+    }
+  ],
+  "raw_captions": [
+    {
+      "text": "[拍手]",
+      "start_seconds": 4.584,
+      "end_seconds": 6.603999999999999
+    },
+    {
+      "text": "こんにちは。数学者です。数学者というの",
+      "start_seconds": 11.639,
+      "end_seconds": 18.32
+    },
+    {
+      "text": "は少しイメージのしにくい職業だと思い",
+      "start_seconds": 15.32,
+      "end_seconds": 20.08
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 18.32,
+      "end_seconds": 22.96
+    },
+    {
+      "text": "大学では数学の先生として授業を行います",
+      "start_seconds": 20.08,
+      "end_seconds": 25.08
+    },
+    {
+      "text": "が、それだけが仕事というわけでありませ",
+      "start_seconds": 22.96,
+      "end_seconds": 28.92
+    },
+    {
+      "text": "ん。研究者としての一面も持っています。",
+      "start_seconds": 25.08,
+      "end_seconds": 31.278999999999996
+    },
+    {
+      "text": "でも数学の研究って一体何をするん",
+      "start_seconds": 28.92,
+      "end_seconds": 33.160000000000004
+    },
+    {
+      "text": "でしょうか?",
+      "start_seconds": 31.279,
+      "end_seconds": 36.76
+    },
+    {
+      "text": "白意を着て研究室で試験官を扱うわけでも",
+      "start_seconds": 33.16,
+      "end_seconds": 39.76
+    },
+    {
+      "text": "なさそうですし、古代の遺跡へ調査に",
+      "start_seconds": 36.76,
+      "end_seconds": 42.8
+    },
+    {
+      "text": "出かけるわけでもなさそうです。この得体",
+      "start_seconds": 39.76,
+      "end_seconds": 45.32
+    },
+    {
+      "text": "の知れない数学者が今日皆さんにお伝えし",
+      "start_seconds": 42.8,
+      "end_seconds": 47.959999999999994
+    },
+    {
+      "text": "たいことは僕がどうやってこの不思議な",
+      "start_seconds": 45.32,
+      "end_seconds": 50.68
+    },
+    {
+      "text": "数学者人生を面白おかしく張り切って",
+      "start_seconds": 47.96,
+      "end_seconds": 52.8
+    },
+    {
+      "text": "過ごしているのかそのアイデアについて",
+      "start_seconds": 50.68,
+      "end_seconds": 56.68
+    },
+    {
+      "text": "です。でもまずは数学者が一体何をする人",
+      "start_seconds": 52.8,
+      "end_seconds": 58.64
+    },
+    {
+      "text": "なのか簡単なデモンストレーションを通し",
+      "start_seconds": 56.68,
+      "end_seconds": 61.199
+    },
+    {
+      "text": "て皆さんに体験していただこうと思います",
+      "start_seconds": 58.64,
+      "end_seconds": 63.16
+    },
+    {
+      "text": "。",
+      "start_seconds": 61.199,
+      "end_seconds": 66.2
+    },
+    {
+      "text": "子供の頃に指を折って数を数えた経験は",
+      "start_seconds": 63.16,
+      "end_seconds": 70.479
+    },
+    {
+      "text": "ありますでしょうか?例えば1+2とか3",
+      "start_seconds": 66.2,
+      "end_seconds": 73.04
+    },
+    {
+      "text": "+4とかはなんとか指を使って計算でき",
+      "start_seconds": 70.479,
+      "end_seconds": 75.88
+    },
+    {
+      "text": "ますが数が大きくなると足の指を使っても",
+      "start_seconds": 73.04,
+      "end_seconds": 78.92
+    },
+    {
+      "text": "足りなくなるねとなるあれです。もちろん",
+      "start_seconds": 75.88,
+      "end_seconds": 80.52
+    },
+    {
+      "text": "掛け算なんていうのは持っての他のように",
+      "start_seconds": 78.92,
+      "end_seconds": 84.68
+    },
+    {
+      "text": "思うわけですが、実は掛け算クを指を使っ",
+      "start_seconds": 80.52,
+      "end_seconds": 86.64
+    },
+    {
+      "text": "て計算できること皆さんご存知でしょうか",
+      "start_seconds": 84.68,
+      "end_seconds": 91.04
+    },
+    {
+      "text": "?やってみましょう。まず皆さん手のひを",
+      "start_seconds": 86.64,
+      "end_seconds": 94.56
+    },
+    {
+      "text": "広げて目の前に出してみてください。1番",
+      "start_seconds": 91.04,
+      "end_seconds": 97.56
+    },
+    {
+      "text": "大きな9の段を使って説明してみますね。",
+      "start_seconds": 94.56,
+      "end_seconds": 101.159
+    },
+    {
+      "text": "例えば9×3の答えが知りたい時、9×3",
+      "start_seconds": 97.56,
+      "end_seconds": 104.119
+    },
+    {
+      "text": "の3番目というところから左から3番目の",
+      "start_seconds": 101.159,
+      "end_seconds": 106.159
+    },
+    {
+      "text": "指を折ってみるといいんです。左から3",
+      "start_seconds": 104.119,
+      "end_seconds": 109.159
+    },
+    {
+      "text": "番目の指を折ってみると、折った指の左側に",
+      "start_seconds": 106.159,
+      "end_seconds": 109.159
+    },
+    {
+      "text": "2本、右側に7",
+      "start_seconds": 111.0,
+      "end_seconds": 115.439
+    },
+    {
+      "text": "本の指が残っている状態かと思います。この",
+      "start_seconds": 112.439,
+      "end_seconds": 115.439
+    },
+    {
+      "text": "2と7、27というのがまさに9×3",
+      "start_seconds": 115.96,
+      "end_seconds": 121.96
+    },
+    {
+      "text": "の答えなんです。",
+      "start_seconds": 118.96,
+      "end_seconds": 121.96
+    },
+    {
+      "text": "9×9だってできます。もし9×9",
+      "start_seconds": 122.119,
+      "end_seconds": 126.479
+    },
+    {
+      "text": "を計算したければ左から9",
+      "start_seconds": 124.799,
+      "end_seconds": 129.479
+    },
+    {
+      "text": "番目の指を追ってみるんです。すると",
+      "start_seconds": 126.479,
+      "end_seconds": 129.47899999999998
+    },
+    {
+      "text": "8本と1本残ってますね。",
+      "start_seconds": 129.92,
+      "end_seconds": 136.879
+    },
+    {
+      "text": "この81、81がまさにク81なんです。",
+      "start_seconds": 132.56,
+      "end_seconds": 139.599
+    },
+    {
+      "text": "面白いですよね。",
+      "start_seconds": 136.879,
+      "end_seconds": 143.04
+    },
+    {
+      "text": "さて、この話を聞いた時にこういう疑問を",
+      "start_seconds": 139.599,
+      "end_seconds": 145.64
+    },
+    {
+      "text": "持った方もおられるかもしれません。ま、",
+      "start_seconds": 143.04,
+      "end_seconds": 148.28
+    },
+    {
+      "text": "9の段分かったと。じゃ、8の段とか7の",
+      "start_seconds": 145.64,
+      "end_seconds": 150.2
+    },
+    {
+      "text": "段とか他の段ってどうやって計算するんで",
+      "start_seconds": 148.28,
+      "end_seconds": 152.239
+    },
+    {
+      "text": "すかって。",
+      "start_seconds": 150.2,
+      "end_seconds": 154.72
+    },
+    {
+      "text": "で、こういう風にこの新しいことを何か",
+      "start_seconds": 152.239,
+      "end_seconds": 158.0
+    },
+    {
+      "text": "聞いた時にそれに対して何か新しい疑問を",
+      "start_seconds": 154.72,
+      "end_seconds": 160.599
+    },
+    {
+      "text": "持つというのがまさに数学者の仕事の1つ",
+      "start_seconds": 158.0,
+      "end_seconds": 163.68
+    },
+    {
+      "text": "です。ただし、もちろん疑問を持つだけで",
+      "start_seconds": 160.599,
+      "end_seconds": 166.0
+    },
+    {
+      "text": "は数学者を名乗ることはできません。ここ",
+      "start_seconds": 163.68,
+      "end_seconds": 169.20000000000002
+    },
+    {
+      "text": "で重要なのは疑問を持ったことに対して",
+      "start_seconds": 166.0,
+      "end_seconds": 172.0
+    },
+    {
+      "text": "解決に向けて何か行動を起こすということ",
+      "start_seconds": 169.2,
+      "end_seconds": 175.0
+    },
+    {
+      "text": "です。例えば自分なりに8の段の場合を",
+      "start_seconds": 172.0,
+      "end_seconds": 177.2
+    },
+    {
+      "text": "考えてみたというのでもいいですし、そこ",
+      "start_seconds": 175.0,
+      "end_seconds": 179.64
+    },
+    {
+      "text": "までしなくても知ってそうな人に聞いて",
+      "start_seconds": 177.2,
+      "end_seconds": 181.44
+    },
+    {
+      "text": "みるとかですね。あとはインターネットで",
+      "start_seconds": 179.64,
+      "end_seconds": 183.39999999999998
+    },
+    {
+      "text": "検索するという程度でもいいでしょう。",
+      "start_seconds": 181.44,
+      "end_seconds": 186.0
+    },
+    {
+      "text": "とにかく自分が疑問に思ったことに対して",
+      "start_seconds": 183.4,
+      "end_seconds": 188.56
+    },
+    {
+      "text": "解決するための行動を起こすこと、そして",
+      "start_seconds": 186.0,
+      "end_seconds": 191.519
+    },
+    {
+      "text": "その挑戦を続けていくことこそが僕が",
+      "start_seconds": 188.56,
+      "end_seconds": 194.959
+    },
+    {
+      "text": "考える数学者という仕事なんです。でも",
+      "start_seconds": 191.519,
+      "end_seconds": 198.519
+    },
+    {
+      "text": "もちろん新しいことを何か聞いた時にそれ",
+      "start_seconds": 194.959,
+      "end_seconds": 202.0
+    },
+    {
+      "text": "に対して疑問を持つことと疑問に対して",
+      "start_seconds": 198.519,
+      "end_seconds": 204.08
+    },
+    {
+      "text": "行動を起こすことの間には非常に大きな",
+      "start_seconds": 202.0,
+      "end_seconds": 207.04
+    },
+    {
+      "text": "ギャップがあると思います。実際どれほど",
+      "start_seconds": 204.08,
+      "end_seconds": 210.72
+    },
+    {
+      "text": "の方が行動を移すまで行くでしょうか?時",
+      "start_seconds": 207.04,
+      "end_seconds": 213.239
+    },
+    {
+      "text": "には自分には難しすぎるんじゃないかと",
+      "start_seconds": 210.72,
+      "end_seconds": 216.28
+    },
+    {
+      "text": "なることもあるでしょうし、人に訪ねて",
+      "start_seconds": 213.239,
+      "end_seconds": 218.48000000000002
+    },
+    {
+      "text": "笑われたらどうしようとか、自分より",
+      "start_seconds": 216.28,
+      "end_seconds": 220.08
+    },
+    {
+      "text": "すごい人はこんなにいっぱいいるのに自分",
+      "start_seconds": 218.48,
+      "end_seconds": 222.439
+    },
+    {
+      "text": "がやる必要ないんじゃないかと諦めて",
+      "start_seconds": 220.08,
+      "end_seconds": 225.08
+    },
+    {
+      "text": "しまうこともあるかもしれません。",
+      "start_seconds": 222.439,
+      "end_seconds": 226.84
+    },
+    {
+      "text": "どうやったらこのネガティブな感情に負け",
+      "start_seconds": 225.08,
+      "end_seconds": 228.84
+    },
+    {
+      "text": "ずに挑戦を続けていくことができるん",
+      "start_seconds": 226.84,
+      "end_seconds": 231.64000000000001
+    },
+    {
+      "text": "でしょうか?",
+      "start_seconds": 228.84,
+      "end_seconds": 234.31900000000002
+    },
+    {
+      "text": "高校卒業して間もない頃数学者になり",
+      "start_seconds": 231.64,
+      "end_seconds": 236.04
+    },
+    {
+      "text": "たかった僕はそういうことに悩んでいまし",
+      "start_seconds": 234.319,
+      "end_seconds": 240.48
+    },
+    {
+      "text": "た。悩んだ末とる教授に率直に聞いてみれ",
+      "start_seconds": 236.04,
+      "end_seconds": 242.319
+    },
+    {
+      "text": "ばいいんじゃないかと思ったんです。聞い",
+      "start_seconds": 240.48,
+      "end_seconds": 245.0
+    },
+    {
+      "text": "てみました。どうやったら難しい問題に",
+      "start_seconds": 242.319,
+      "end_seconds": 248.28
+    },
+    {
+      "text": "挑戦していけるんですか?て、ま、どうせ",
+      "start_seconds": 245.0,
+      "end_seconds": 249.799
+    },
+    {
+      "text": "たくさん勉強しなさいと言われるんだろう",
+      "start_seconds": 248.28,
+      "end_seconds": 252.84
+    },
+    {
+      "text": "なと思ったんですが違ったんです。先生",
+      "start_seconds": 249.799,
+      "end_seconds": 256.519
+    },
+    {
+      "text": "こう言いました。知らないからこそ何も気",
+      "start_seconds": 252.84,
+      "end_seconds": 257.959
+    },
+    {
+      "text": "にせずに挑戦してみたらいいんじゃない",
+      "start_seconds": 256.519,
+      "end_seconds": 261.639
+    },
+    {
+      "text": "ですかって。つまりですよ。勉強[鼻息]",
+      "start_seconds": 257.959,
+      "end_seconds": 264.72
+    },
+    {
+      "text": "して難しいことを知ってしまうと怖くなっ",
+      "start_seconds": 261.639,
+      "end_seconds": 267.199
+    },
+    {
+      "text": "て挑戦すらできなくなってしまいますよと",
+      "start_seconds": 264.72,
+      "end_seconds": 269.28000000000003
+    },
+    {
+      "text": "言うんです。",
+      "start_seconds": 267.199,
+      "end_seconds": 272.0
+    },
+    {
+      "text": "最近この先生の言葉を強く僕に印象付ける",
+      "start_seconds": 269.28,
+      "end_seconds": 274.11999999999995
+    },
+    {
+      "text": "大きな出来事があったのでここで紹介させ",
+      "start_seconds": 272.0,
+      "end_seconds": 276.52
+    },
+    {
+      "text": "てください。",
+      "start_seconds": 274.12,
+      "end_seconds": 279.12
+    },
+    {
+      "text": "皆さんご存知でしょうか?日本には漫画と",
+      "start_seconds": 276.52,
+      "end_seconds": 282.28
+    },
+    {
+      "text": "いう面白い文化があります。",
+      "start_seconds": 279.12,
+      "end_seconds": 283.96
+    },
+    {
+      "text": "スポーツ漫画に影響を受けてスポーツ選手",
+      "start_seconds": 282.28,
+      "end_seconds": 285.28
+    },
+    {
+      "text": "になったという方も多いでしょう。",
+      "start_seconds": 283.96,
+      "end_seconds": 286.88
+    },
+    {
+      "text": "とにかくそのバリエーションの豊かさには",
+      "start_seconds": 285.28,
+      "end_seconds": 289.75899999999996
+    },
+    {
+      "text": "驚かされるばかりであらゆる分野に対して",
+      "start_seconds": 286.88,
+      "end_seconds": 291.4
+    },
+    {
+      "text": "それをテーマにした漫画があるんじゃない",
+      "start_seconds": 289.759,
+      "end_seconds": 293.96000000000004
+    },
+    {
+      "text": "かと思うほどです。数学だって例外では",
+      "start_seconds": 291.4,
+      "end_seconds": 296.479
+    },
+    {
+      "text": "ありません。数学の漫画というのもすごく",
+      "start_seconds": 293.96,
+      "end_seconds": 299.88
+    },
+    {
+      "text": "たくさんあるんです。そこで思いました。",
+      "start_seconds": 296.479,
+      "end_seconds": 302.71999999999997
+    },
+    {
+      "text": "この数学の漫画授業の教科書として使って",
+      "start_seconds": 299.88,
+      "end_seconds": 305.68
+    },
+    {
+      "text": "みたら面白いんじゃないかと。早速やって",
+      "start_seconds": 302.72,
+      "end_seconds": 309.0
+    },
+    {
+      "text": "みたんです。整数端という数学の漫画が",
+      "start_seconds": 305.68,
+      "end_seconds": 311.52
+    },
+    {
+      "text": "あります。これを僕の授業の教科書として",
+      "start_seconds": 309.0,
+      "end_seconds": 314.24
+    },
+    {
+      "text": "使ってみることにしました。狙いは単純",
+      "start_seconds": 311.52,
+      "end_seconds": 317.4
+    },
+    {
+      "text": "です。数学というのはその学問の特性",
+      "start_seconds": 314.24,
+      "end_seconds": 320.72
+    },
+    {
+      "text": "上歴史の積み重ねの上に出来上がったもの",
+      "start_seconds": 317.4,
+      "end_seconds": 324.19899999999996
+    },
+    {
+      "text": "なので最先端の数学をしろうと思うと",
+      "start_seconds": 320.72,
+      "end_seconds": 326.759
+    },
+    {
+      "text": "とにかくたくさんの勉強をしなければなら",
+      "start_seconds": 324.199,
+      "end_seconds": 329.44
+    },
+    {
+      "text": "ないと言われています。",
+      "start_seconds": 326.759,
+      "end_seconds": 332.88
+    },
+    {
+      "text": "でもその雰囲気だけなら何とか伝えられる",
+      "start_seconds": 329.44,
+      "end_seconds": 335.639
+    },
+    {
+      "text": "んじゃないかと思ってこの漫画を通して",
+      "start_seconds": 332.88,
+      "end_seconds": 337.71999999999997
+    },
+    {
+      "text": "最先端の雰囲気を学生たちに伝えようと",
+      "start_seconds": 335.639,
+      "end_seconds": 340.96000000000004
+    },
+    {
+      "text": "思ったんです。ここで皆さんにも1つその",
+      "start_seconds": 337.72,
+      "end_seconds": 343.40000000000003
+    },
+    {
+      "text": "最先端の数学手アを紹介したいと思います",
+      "start_seconds": 340.96,
+      "end_seconds": 345.12
+    },
+    {
+      "text": "。",
+      "start_seconds": 343.4,
+      "end_seconds": 348.0
+    },
+    {
+      "text": "整数端第3話においてゲーベル数列という",
+      "start_seconds": 345.12,
+      "end_seconds": 351.12
+    },
+    {
+      "text": "数列が登場します。これは専門用語を",
+      "start_seconds": 348.0,
+      "end_seconds": 353.72
+    },
+    {
+      "text": "用いると全科式というものを用いて定義さ",
+      "start_seconds": 351.12,
+      "end_seconds": 357.199
+    },
+    {
+      "text": "れる数列で最初の項0番目の項を1だと",
+      "start_seconds": 353.72,
+      "end_seconds": 359.36
+    },
+    {
+      "text": "定めます。",
+      "start_seconds": 357.199,
+      "end_seconds": 362.039
+    },
+    {
+      "text": "次の項を計算するにはそれまでに出てきた",
+      "start_seconds": 359.36,
+      "end_seconds": 365.28000000000003
+    },
+    {
+      "text": "項の2乗自分自身の掛け算ですねを計算し",
+      "start_seconds": 362.039,
+      "end_seconds": 368.28
+    },
+    {
+      "text": "て1を足して番目で割る。この場合1番目",
+      "start_seconds": 365.28,
+      "end_seconds": 370.88
+    },
+    {
+      "text": "の1ではあるということを行うと2という",
+      "start_seconds": 368.28,
+      "end_seconds": 374.15999999999997
+    },
+    {
+      "text": "数が得られます。同じようにさらに次の項",
+      "start_seconds": 370.88,
+      "end_seconds": 376.759
+    },
+    {
+      "text": "を計算しようと思うとそれまでの項の2乗",
+      "start_seconds": 374.16,
+      "end_seconds": 380.08000000000004
+    },
+    {
+      "text": "を計算して1を足して番目である。それ",
+      "start_seconds": 376.759,
+      "end_seconds": 382.68
+    },
+    {
+      "text": "までの項の2乗を足して1を足して番目で",
+      "start_seconds": 380.08,
+      "end_seconds": 384.639
+    },
+    {
+      "text": "ある。これを繰り返すことでどんどん",
+      "start_seconds": 382.68,
+      "end_seconds": 387.08
+    },
+    {
+      "text": "新しい数が得られてこれをゲーベル数列と",
+      "start_seconds": 384.639,
+      "end_seconds": 389.36
+    },
+    {
+      "text": "言うんです。",
+      "start_seconds": 387.08,
+      "end_seconds": 391.96
+    },
+    {
+      "text": "この定義の中に悪という操作が含まれて",
+      "start_seconds": 389.36,
+      "end_seconds": 394.84000000000003
+    },
+    {
+      "text": "いるので時には割りきれることなくあまり",
+      "start_seconds": 391.96,
+      "end_seconds": 396.84
+    },
+    {
+      "text": "が出る分数になってしまうという可能性も",
+      "start_seconds": 394.84,
+      "end_seconds": 399.96
+    },
+    {
+      "text": "あるわけですが不思議なことに今のところ",
+      "start_seconds": 396.84,
+      "end_seconds": 402.039
+    },
+    {
+      "text": "全ての計算において割りきれるという状況",
+      "start_seconds": 399.96,
+      "end_seconds": 405.28
+    },
+    {
+      "text": "が続いています。実はこのゲーベル数列",
+      "start_seconds": 402.039,
+      "end_seconds": 407.88
+    },
+    {
+      "text": "発見当初はこのままずっと割り切れると",
+      "start_seconds": 405.28,
+      "end_seconds": 409.79999999999995
+    },
+    {
+      "text": "いう状況が続いていくんじゃないかと思わ",
+      "start_seconds": 407.88,
+      "end_seconds": 414.56
+    },
+    {
+      "text": "れていたんですが1975年についに43",
+      "start_seconds": 409.8,
+      "end_seconds": 417.24
+    },
+    {
+      "text": "番目の計算において割りきれないこと",
+      "start_seconds": 414.56,
+      "end_seconds": 419.0
+    },
+    {
+      "text": "つまりあまりが出て分数になってしまう",
+      "start_seconds": 417.24,
+      "end_seconds": 422.919
+    },
+    {
+      "text": "ことが発見されて注目を集めました。",
+      "start_seconds": 419.0,
+      "end_seconds": 426.12
+    },
+    {
+      "text": "さて数学者とは新しいことを聞いたら疑問",
+      "start_seconds": 422.919,
+      "end_seconds": 428.919
+    },
+    {
+      "text": "を持ってそれに挑戦をしていく人たちだと",
+      "start_seconds": 426.12,
+      "end_seconds": 431.319
+    },
+    {
+      "text": "言いました。この場合もそうです。様々な",
+      "start_seconds": 428.919,
+      "end_seconds": 434.15999999999997
+    },
+    {
+      "text": "数学者がこの現象を目にして多くの観点",
+      "start_seconds": 431.319,
+      "end_seconds": 436.52000000000004
+    },
+    {
+      "text": "から疑問を持ち、様々な考察を行いました",
+      "start_seconds": 434.16,
+      "end_seconds": 439.47900000000004
+    },
+    {
+      "text": "。例えばこの定義にあった2乗という",
+      "start_seconds": 436.52,
+      "end_seconds": 441.71999999999997
+    },
+    {
+      "text": "ところを3条4乗、ま、色々できる",
+      "start_seconds": 439.479,
+      "end_seconds": 443.75899999999996
+    },
+    {
+      "text": "でしょう。色々取り替えてみるとどうなる",
+      "start_seconds": 441.72,
+      "end_seconds": 447.08000000000004
+    },
+    {
+      "text": "かと。その考察からさらにこのマジック",
+      "start_seconds": 443.759,
+      "end_seconds": 450.44
+    },
+    {
+      "text": "ナンバー43というのも8997とその",
+      "start_seconds": 447.08,
+      "end_seconds": 453.12
+    },
+    {
+      "text": "仲間を増やしていきました。こうして",
+      "start_seconds": 450.44,
+      "end_seconds": 455.199
+    },
+    {
+      "text": "できる新しいマジックナンバーたちから",
+      "start_seconds": 453.12,
+      "end_seconds": 458.84000000000003
+    },
+    {
+      "text": "なる数列NKというのがこの整数端第3話",
+      "start_seconds": 455.199,
+      "end_seconds": 461.24
+    },
+    {
+      "text": "に紹介されているんです。",
+      "start_seconds": 458.84,
+      "end_seconds": 463.71999999999997
+    },
+    {
+      "text": "漫画の中のキャラクターも何やらその数列",
+      "start_seconds": 461.24,
+      "end_seconds": 467.72
+    },
+    {
+      "text": "を眺めて疑問を投げかけているようです。",
+      "start_seconds": 463.72,
+      "end_seconds": 469.759
+    },
+    {
+      "text": "で、この何の変哲もないたった1つの",
+      "start_seconds": 467.72,
+      "end_seconds": 471.84000000000003
+    },
+    {
+      "text": "セリフなんですが、これが大きな事件を",
+      "start_seconds": 469.759,
+      "end_seconds": 474.599
+    },
+    {
+      "text": "呼ぶことになったんです。忘れもしません",
+      "start_seconds": 471.84,
+      "end_seconds": 478.039
+    },
+    {
+      "text": "。2023年の5月、ちょうどゴールデン",
+      "start_seconds": 474.599,
+      "end_seconds": 480.71999999999997
+    },
+    {
+      "text": "ウィークが開けた頃ですかね、高校卒業し",
+      "start_seconds": 478.039,
+      "end_seconds": 482.759
+    },
+    {
+      "text": "て間もない学生たちが授業の初めにこう",
+      "start_seconds": 480.72,
+      "end_seconds": 485.72
+    },
+    {
+      "text": "いうこと言うんです。先生、このNKの",
+      "start_seconds": 482.759,
+      "end_seconds": 487.52000000000004
+    },
+    {
+      "text": "最小値がいくつになるかという問題を考え",
+      "start_seconds": 485.72,
+      "end_seconds": 490.96000000000004
+    },
+    {
+      "text": "てきたので聞いてください。",
+      "start_seconds": 487.52,
+      "end_seconds": 493.96
+    },
+    {
+      "text": "これは非常に驚きました。というのも僕",
+      "start_seconds": 490.96,
+      "end_seconds": 497.28
+    },
+    {
+      "text": "この問題数学の問題だと認識すらできてい",
+      "start_seconds": 493.96,
+      "end_seconds": 500.68
+    },
+    {
+      "text": "なかったんです。仮に認識できていたとし",
+      "start_seconds": 497.28,
+      "end_seconds": 503.28
+    },
+    {
+      "text": "ても僕はきっと挑戦できなかったと思い",
+      "start_seconds": 500.68,
+      "end_seconds": 505.84000000000003
+    },
+    {
+      "text": "ます。なぜなら僕はゲーベル数列のことを",
+      "start_seconds": 503.28,
+      "end_seconds": 509.75899999999996
+    },
+    {
+      "text": "よく知っていたのであの有名なすごい数学",
+      "start_seconds": 505.84,
+      "end_seconds": 511.63899999999995
+    },
+    {
+      "text": "者たちが取り組んで解けなかった問題の",
+      "start_seconds": 509.759,
+      "end_seconds": 513.8000000000001
+    },
+    {
+      "text": "はずだから僕には溶けっこないだろうと",
+      "start_seconds": 511.639,
+      "end_seconds": 516.2
+    },
+    {
+      "text": "諦めていたことでしょう。しかし彼ら違い",
+      "start_seconds": 513.8,
+      "end_seconds": 518.76
+    },
+    {
+      "text": "ました。彼ら学生たちはこの問題に挑戦を",
+      "start_seconds": 516.2,
+      "end_seconds": 521.159
+    },
+    {
+      "text": "して素晴らしいアプローチを見い出しまし",
+      "start_seconds": 518.76,
+      "end_seconds": 523.88
+    },
+    {
+      "text": "た。そして次の美しい定理を見つけたん",
+      "start_seconds": 521.159,
+      "end_seconds": 525.64
+    },
+    {
+      "text": "です。",
+      "start_seconds": 523.88,
+      "end_seconds": 529.8389999999999
+    },
+    {
+      "text": "この結果その後共同研究として発表し、",
+      "start_seconds": 525.64,
+      "end_seconds": 532.04
+    },
+    {
+      "text": "つい先日ですね、100年以上の歴史を",
+      "start_seconds": 529.839,
+      "end_seconds": 535.32
+    },
+    {
+      "text": "持つとる有名なアメリカの数学雑誌から",
+      "start_seconds": 532.04,
+      "end_seconds": 537.48
+    },
+    {
+      "text": "新しい数学の定理として発表されたばかり",
+      "start_seconds": 535.32,
+      "end_seconds": 539.399
+    },
+    {
+      "text": "です。",
+      "start_seconds": 537.48,
+      "end_seconds": 542.2
+    },
+    {
+      "text": "一体僕と彼らで何が違ったのでしょうか?",
+      "start_seconds": 539.399,
+      "end_seconds": 544.2
+    },
+    {
+      "text": "ここで先生の言葉が思い出されるわけです",
+      "start_seconds": 542.2,
+      "end_seconds": 547.0
+    },
+    {
+      "text": "。彼らは知らなかったんです。知らなかっ",
+      "start_seconds": 544.2,
+      "end_seconds": 549.8000000000001
+    },
+    {
+      "text": "たからこそ挑戦できたんだと僕は思ってい",
+      "start_seconds": 547.0,
+      "end_seconds": 551.92
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 549.8,
+      "end_seconds": 554.12
+    },
+    {
+      "text": "現代数学の内容をふんふんわりと伝えると",
+      "start_seconds": 551.92,
+      "end_seconds": 558.4399999999999
+    },
+    {
+      "text": "いう授業の目的でしたが、意図せずして",
+      "start_seconds": 554.12,
+      "end_seconds": 562.24
+    },
+    {
+      "text": "先端の数学に爪跡を残す形となりました。",
+      "start_seconds": 558.44,
+      "end_seconds": 564.399
+    },
+    {
+      "text": "さて、新しい結果を新しい疑問を新しい",
+      "start_seconds": 562.24,
+      "end_seconds": 567.76
+    },
+    {
+      "text": "数学者を見します。この結果に1番最初に",
+      "start_seconds": 564.399,
+      "end_seconds": 569.48
+    },
+    {
+      "text": "影響を受けたのは一体誰だったでしょうか",
+      "start_seconds": 567.76,
+      "end_seconds": 572.92
+    },
+    {
+      "text": "?他でもない彼らの1つ上の先輩たちでし",
+      "start_seconds": 569.48,
+      "end_seconds": 576.72
+    },
+    {
+      "text": "た。彼らもまた独自の疑問を持ち、それに",
+      "start_seconds": 572.92,
+      "end_seconds": 579.3199999999999
+    },
+    {
+      "text": "挑戦することでこのNKの最小値に関する",
+      "start_seconds": 576.72,
+      "end_seconds": 583.519
+    },
+    {
+      "text": "、より一般的な次の定理を得ました。この",
+      "start_seconds": 579.32,
+      "end_seconds": 586.24
+    },
+    {
+      "text": "結果もまたつい先日学術論文として発表さ",
+      "start_seconds": 583.519,
+      "end_seconds": 589.519
+    },
+    {
+      "text": "れたばかりです。今度は彼らは自分たちに",
+      "start_seconds": 586.24,
+      "end_seconds": 591.5600000000001
+    },
+    {
+      "text": "もできるかもしれないという可能性を知っ",
+      "start_seconds": 589.519,
+      "end_seconds": 594.839
+    },
+    {
+      "text": "たことで挑戦が始まったんだと思います。",
+      "start_seconds": 591.56,
+      "end_seconds": 596.76
+    },
+    {
+      "text": "ともかく彼ら学生たちのおかげでこの",
+      "start_seconds": 594.839,
+      "end_seconds": 599.519
+    },
+    {
+      "text": "ゲーベル数列の面白さは全世界が知ること",
+      "start_seconds": 596.76,
+      "end_seconds": 602.4399999999999
+    },
+    {
+      "text": "になりました。つい先日も今度は日本人の",
+      "start_seconds": 599.519,
+      "end_seconds": 605.16
+    },
+    {
+      "text": "2人の数学者によって新しい発見が発表さ",
+      "start_seconds": 602.44,
+      "end_seconds": 608.2790000000001
+    },
+    {
+      "text": "れたところです。学生たちの知らないこと",
+      "start_seconds": 605.16,
+      "end_seconds": 611.88
+    },
+    {
+      "text": "への挑戦が今まさに数学の最先端を動かし",
+      "start_seconds": 608.279,
+      "end_seconds": 615.279
+    },
+    {
+      "text": "ているんです。",
+      "start_seconds": 611.88,
+      "end_seconds": 617.92
+    },
+    {
+      "text": "さて、我々は年齢を重ねると知識が",
+      "start_seconds": 615.279,
+      "end_seconds": 619.88
+    },
+    {
+      "text": "どんどん増えていきます。知っていること",
+      "start_seconds": 617.92,
+      "end_seconds": 621.76
+    },
+    {
+      "text": "が増えるともちろんできることの幅も",
+      "start_seconds": 619.88,
+      "end_seconds": 624.68
+    },
+    {
+      "text": "広がっていきますが、それと同時に挑戦",
+      "start_seconds": 621.76,
+      "end_seconds": 626.6
+    },
+    {
+      "text": "することの幅の可能性というのはどんどん",
+      "start_seconds": 624.68,
+      "end_seconds": 628.3599999999999
+    },
+    {
+      "text": "狭まっていってるんじゃないかと感じて",
+      "start_seconds": 626.6,
+      "end_seconds": 631.16
+    },
+    {
+      "text": "いるところです。今日僕がお伝えしたかっ",
+      "start_seconds": 628.36,
+      "end_seconds": 633.36
+    },
+    {
+      "text": "たアイデアというのはこの知らないこと",
+      "start_seconds": 631.16,
+      "end_seconds": 637.279
+    },
+    {
+      "text": "こそ挑戦しいがあるということです。先生",
+      "start_seconds": 633.36,
+      "end_seconds": 639.839
+    },
+    {
+      "text": "の言葉はいつでも僕に勇気をくれます。",
+      "start_seconds": 637.279,
+      "end_seconds": 642.12
+    },
+    {
+      "text": "知らないからこそ僕にできることがある",
+      "start_seconds": 639.839,
+      "end_seconds": 645.519
+    },
+    {
+      "text": "はずだといつでも思わせてくれるんです。",
+      "start_seconds": 642.12,
+      "end_seconds": 648.24
+    },
+    {
+      "text": "このテットトークもそうでした。もし僕が",
+      "start_seconds": 645.519,
+      "end_seconds": 650.8
+    },
+    {
+      "text": "事前にこの赤い絨毯の緊張感を知ってい",
+      "start_seconds": 648.24,
+      "end_seconds": 652.72
+    },
+    {
+      "text": "たらこのトークは引き受けなかったかも",
+      "start_seconds": 650.8,
+      "end_seconds": 655.1999999999999
+    },
+    {
+      "text": "しれませんですが僕は知らなかったんです",
+      "start_seconds": 652.72,
+      "end_seconds": 657.6800000000001
+    },
+    {
+      "text": "。知らなかったからこそ今日こうして無謀",
+      "start_seconds": 655.2,
+      "end_seconds": 661.44
+    },
+    {
+      "text": "にも皆さんの前に立つことができました。",
+      "start_seconds": 657.68,
+      "end_seconds": 663.0
+    },
+    {
+      "text": "僕はまた明日からも知らないことに",
+      "start_seconds": 661.44,
+      "end_seconds": 664.7600000000001
+    },
+    {
+      "text": "どんどん挑戦していくつもりです。皆さん",
+      "start_seconds": 663.0,
+      "end_seconds": 667.24
+    },
+    {
+      "text": "もきっとそうだと思います。またどこか僕",
+      "start_seconds": 664.76,
+      "end_seconds": 669.8
+    },
+    {
+      "text": "や皆さんがまだ知らない場所で再開できる",
+      "start_seconds": 667.24,
+      "end_seconds": 671.839
+    },
+    {
+      "text": "ことを楽しみにしています。ありがとう",
+      "start_seconds": 669.8,
+      "end_seconds": 674.002
+    },
+    {
+      "text": "ございました。",
+      "start_seconds": 671.839,
+      "end_seconds": 676.022
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 674.002,
+      "end_seconds": 676.0219999999999
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 678.587,
+      "end_seconds": 680.607
+    }
+  ],
+  "display_captions": [
+    {
+      "text": "[拍手]",
+      "start_seconds": 4.584,
+      "end_seconds": 6.603999999999999,
+      "id": "2PZHoGx4mLU-display-0001",
+      "segment_id": "2PZHoGx4mLU-ja-0001"
+    },
+    {
+      "text": "こんにちは。数学者です。数学者というの",
+      "start_seconds": 11.639,
+      "end_seconds": 15.32,
+      "id": "2PZHoGx4mLU-display-0002",
+      "segment_id": "2PZHoGx4mLU-ja-0002"
+    },
+    {
+      "text": "は少しイメージのしにくい職業だと思い",
+      "start_seconds": 15.32,
+      "end_seconds": 18.32,
+      "id": "2PZHoGx4mLU-display-0003",
+      "segment_id": "2PZHoGx4mLU-ja-0002"
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 18.32,
+      "end_seconds": 20.08,
+      "id": "2PZHoGx4mLU-display-0004",
+      "segment_id": "2PZHoGx4mLU-ja-0002"
+    },
+    {
+      "text": "大学では数学の先生として授業を行います",
+      "start_seconds": 20.08,
+      "end_seconds": 22.96,
+      "id": "2PZHoGx4mLU-display-0005",
+      "segment_id": "2PZHoGx4mLU-ja-0003"
+    },
+    {
+      "text": "が、それだけが仕事というわけでありませ",
+      "start_seconds": 22.96,
+      "end_seconds": 25.08,
+      "id": "2PZHoGx4mLU-display-0006",
+      "segment_id": "2PZHoGx4mLU-ja-0003"
+    },
+    {
+      "text": "ん。研究者としての一面も持っています。",
+      "start_seconds": 25.08,
+      "end_seconds": 28.92,
+      "id": "2PZHoGx4mLU-display-0007",
+      "segment_id": "2PZHoGx4mLU-ja-0003"
+    },
+    {
+      "text": "でも数学の研究って一体何をするん",
+      "start_seconds": 28.92,
+      "end_seconds": 31.279,
+      "id": "2PZHoGx4mLU-display-0008",
+      "segment_id": "2PZHoGx4mLU-ja-0004"
+    },
+    {
+      "text": "でしょうか?",
+      "start_seconds": 31.279,
+      "end_seconds": 33.16,
+      "id": "2PZHoGx4mLU-display-0009",
+      "segment_id": "2PZHoGx4mLU-ja-0004"
+    },
+    {
+      "text": "白意を着て研究室で試験官を扱うわけでも",
+      "start_seconds": 33.16,
+      "end_seconds": 36.76,
+      "id": "2PZHoGx4mLU-display-0010",
+      "segment_id": "2PZHoGx4mLU-ja-0005"
+    },
+    {
+      "text": "なさそうですし、古代の遺跡へ調査に",
+      "start_seconds": 36.76,
+      "end_seconds": 39.76,
+      "id": "2PZHoGx4mLU-display-0011",
+      "segment_id": "2PZHoGx4mLU-ja-0005"
+    },
+    {
+      "text": "出かけるわけでもなさそうです。この得体",
+      "start_seconds": 39.76,
+      "end_seconds": 42.8,
+      "id": "2PZHoGx4mLU-display-0012",
+      "segment_id": "2PZHoGx4mLU-ja-0005"
+    },
+    {
+      "text": "の知れない数学者が今日皆さんにお伝えし",
+      "start_seconds": 42.8,
+      "end_seconds": 45.32,
+      "id": "2PZHoGx4mLU-display-0013",
+      "segment_id": "2PZHoGx4mLU-ja-0006"
+    },
+    {
+      "text": "たいことは僕がどうやってこの不思議な",
+      "start_seconds": 45.32,
+      "end_seconds": 47.96,
+      "id": "2PZHoGx4mLU-display-0014",
+      "segment_id": "2PZHoGx4mLU-ja-0006"
+    },
+    {
+      "text": "数学者人生を面白おかしく張り切って",
+      "start_seconds": 47.96,
+      "end_seconds": 50.68,
+      "id": "2PZHoGx4mLU-display-0015",
+      "segment_id": "2PZHoGx4mLU-ja-0006"
+    },
+    {
+      "text": "過ごしているのかそのアイデアについて",
+      "start_seconds": 50.68,
+      "end_seconds": 52.8,
+      "id": "2PZHoGx4mLU-display-0016",
+      "segment_id": "2PZHoGx4mLU-ja-0006"
+    },
+    {
+      "text": "です。でもまずは数学者が一体何をする人",
+      "start_seconds": 52.8,
+      "end_seconds": 56.68,
+      "id": "2PZHoGx4mLU-display-0017",
+      "segment_id": "2PZHoGx4mLU-ja-0007"
+    },
+    {
+      "text": "なのか簡単なデモンストレーションを通し",
+      "start_seconds": 56.68,
+      "end_seconds": 58.64,
+      "id": "2PZHoGx4mLU-display-0018",
+      "segment_id": "2PZHoGx4mLU-ja-0007"
+    },
+    {
+      "text": "て皆さんに体験していただこうと思います",
+      "start_seconds": 58.64,
+      "end_seconds": 61.199,
+      "id": "2PZHoGx4mLU-display-0019",
+      "segment_id": "2PZHoGx4mLU-ja-0007"
+    },
+    {
+      "text": "。",
+      "start_seconds": 61.199,
+      "end_seconds": 63.16,
+      "id": "2PZHoGx4mLU-display-0020",
+      "segment_id": "2PZHoGx4mLU-ja-0007"
+    },
+    {
+      "text": "子供の頃に指を折って数を数えた経験は",
+      "start_seconds": 63.16,
+      "end_seconds": 66.2,
+      "id": "2PZHoGx4mLU-display-0021",
+      "segment_id": "2PZHoGx4mLU-ja-0008"
+    },
+    {
+      "text": "ありますでしょうか?例えば1+2とか3",
+      "start_seconds": 66.2,
+      "end_seconds": 70.479,
+      "id": "2PZHoGx4mLU-display-0022",
+      "segment_id": "2PZHoGx4mLU-ja-0008"
+    },
+    {
+      "text": "+4とかはなんとか指を使って計算でき",
+      "start_seconds": 70.479,
+      "end_seconds": 73.04,
+      "id": "2PZHoGx4mLU-display-0023",
+      "segment_id": "2PZHoGx4mLU-ja-0008"
+    },
+    {
+      "text": "ますが数が大きくなると足の指を使っても",
+      "start_seconds": 73.04,
+      "end_seconds": 75.88,
+      "id": "2PZHoGx4mLU-display-0024",
+      "segment_id": "2PZHoGx4mLU-ja-0009"
+    },
+    {
+      "text": "足りなくなるねとなるあれです。もちろん",
+      "start_seconds": 75.88,
+      "end_seconds": 78.92,
+      "id": "2PZHoGx4mLU-display-0025",
+      "segment_id": "2PZHoGx4mLU-ja-0009"
+    },
+    {
+      "text": "掛け算なんていうのは持っての他のように",
+      "start_seconds": 78.92,
+      "end_seconds": 80.52,
+      "id": "2PZHoGx4mLU-display-0026",
+      "segment_id": "2PZHoGx4mLU-ja-0009"
+    },
+    {
+      "text": "思うわけですが、実は掛け算クを指を使っ",
+      "start_seconds": 80.52,
+      "end_seconds": 84.68,
+      "id": "2PZHoGx4mLU-display-0027",
+      "segment_id": "2PZHoGx4mLU-ja-0009"
+    },
+    {
+      "text": "て計算できること皆さんご存知でしょうか",
+      "start_seconds": 84.68,
+      "end_seconds": 86.64,
+      "id": "2PZHoGx4mLU-display-0028",
+      "segment_id": "2PZHoGx4mLU-ja-0010"
+    },
+    {
+      "text": "?やってみましょう。まず皆さん手のひを",
+      "start_seconds": 86.64,
+      "end_seconds": 91.04,
+      "id": "2PZHoGx4mLU-display-0029",
+      "segment_id": "2PZHoGx4mLU-ja-0010"
+    },
+    {
+      "text": "広げて目の前に出してみてください。1番",
+      "start_seconds": 91.04,
+      "end_seconds": 94.56,
+      "id": "2PZHoGx4mLU-display-0030",
+      "segment_id": "2PZHoGx4mLU-ja-0010"
+    },
+    {
+      "text": "大きな9の段を使って説明してみますね。",
+      "start_seconds": 94.56,
+      "end_seconds": 97.56,
+      "id": "2PZHoGx4mLU-display-0031",
+      "segment_id": "2PZHoGx4mLU-ja-0011"
+    },
+    {
+      "text": "例えば9×3の答えが知りたい時、9×3",
+      "start_seconds": 97.56,
+      "end_seconds": 101.159,
+      "id": "2PZHoGx4mLU-display-0032",
+      "segment_id": "2PZHoGx4mLU-ja-0012"
+    },
+    {
+      "text": "の3番目というところから左から3番目の",
+      "start_seconds": 101.159,
+      "end_seconds": 104.119,
+      "id": "2PZHoGx4mLU-display-0033",
+      "segment_id": "2PZHoGx4mLU-ja-0012"
+    },
+    {
+      "text": "指を折ってみるといいんです。左から3",
+      "start_seconds": 104.119,
+      "end_seconds": 106.159,
+      "id": "2PZHoGx4mLU-display-0034",
+      "segment_id": "2PZHoGx4mLU-ja-0012"
+    },
+    {
+      "text": "番目の指を折ってみると、折った指の左側に",
+      "start_seconds": 106.159,
+      "end_seconds": 109.159,
+      "id": "2PZHoGx4mLU-display-0035",
+      "segment_id": "2PZHoGx4mLU-ja-0012"
+    },
+    {
+      "text": "2本、右側に7",
+      "start_seconds": 111.0,
+      "end_seconds": 112.439,
+      "id": "2PZHoGx4mLU-display-0036",
+      "segment_id": "2PZHoGx4mLU-ja-0013"
+    },
+    {
+      "text": "本の指が残っている状態かと思います。この",
+      "start_seconds": 112.439,
+      "end_seconds": 115.439,
+      "id": "2PZHoGx4mLU-display-0037",
+      "segment_id": "2PZHoGx4mLU-ja-0013"
+    },
+    {
+      "text": "2と7、27というのがまさに9×3",
+      "start_seconds": 115.96,
+      "end_seconds": 118.96,
+      "id": "2PZHoGx4mLU-display-0038",
+      "segment_id": "2PZHoGx4mLU-ja-0014"
+    },
+    {
+      "text": "の答えなんです。",
+      "start_seconds": 118.96,
+      "end_seconds": 121.96,
+      "id": "2PZHoGx4mLU-display-0039",
+      "segment_id": "2PZHoGx4mLU-ja-0014"
+    },
+    {
+      "text": "9×9だってできます。もし9×9",
+      "start_seconds": 122.119,
+      "end_seconds": 124.799,
+      "id": "2PZHoGx4mLU-display-0040",
+      "segment_id": "2PZHoGx4mLU-ja-0015"
+    },
+    {
+      "text": "を計算したければ左から9",
+      "start_seconds": 124.799,
+      "end_seconds": 126.479,
+      "id": "2PZHoGx4mLU-display-0041",
+      "segment_id": "2PZHoGx4mLU-ja-0015"
+    },
+    {
+      "text": "番目の指を追ってみるんです。すると",
+      "start_seconds": 126.479,
+      "end_seconds": 129.47899999999998,
+      "id": "2PZHoGx4mLU-display-0042",
+      "segment_id": "2PZHoGx4mLU-ja-0015"
+    },
+    {
+      "text": "8本と1本残ってますね。",
+      "start_seconds": 129.92,
+      "end_seconds": 132.56,
+      "id": "2PZHoGx4mLU-display-0043",
+      "segment_id": "2PZHoGx4mLU-ja-0015"
+    },
+    {
+      "text": "この81、81がまさにク81なんです。",
+      "start_seconds": 132.56,
+      "end_seconds": 136.879,
+      "id": "2PZHoGx4mLU-display-0044",
+      "segment_id": "2PZHoGx4mLU-ja-0016"
+    },
+    {
+      "text": "面白いですよね。",
+      "start_seconds": 136.879,
+      "end_seconds": 139.599,
+      "id": "2PZHoGx4mLU-display-0045",
+      "segment_id": "2PZHoGx4mLU-ja-0017"
+    },
+    {
+      "text": "さて、この話を聞いた時にこういう疑問を",
+      "start_seconds": 139.599,
+      "end_seconds": 143.04,
+      "id": "2PZHoGx4mLU-display-0046",
+      "segment_id": "2PZHoGx4mLU-ja-0018"
+    },
+    {
+      "text": "持った方もおられるかもしれません。ま、",
+      "start_seconds": 143.04,
+      "end_seconds": 145.64,
+      "id": "2PZHoGx4mLU-display-0047",
+      "segment_id": "2PZHoGx4mLU-ja-0018"
+    },
+    {
+      "text": "9の段分かったと。じゃ、8の段とか7の",
+      "start_seconds": 145.64,
+      "end_seconds": 148.28,
+      "id": "2PZHoGx4mLU-display-0048",
+      "segment_id": "2PZHoGx4mLU-ja-0018"
+    },
+    {
+      "text": "段とか他の段ってどうやって計算するんで",
+      "start_seconds": 148.28,
+      "end_seconds": 150.2,
+      "id": "2PZHoGx4mLU-display-0049",
+      "segment_id": "2PZHoGx4mLU-ja-0018"
+    },
+    {
+      "text": "すかって。",
+      "start_seconds": 150.2,
+      "end_seconds": 152.239,
+      "id": "2PZHoGx4mLU-display-0050",
+      "segment_id": "2PZHoGx4mLU-ja-0019"
+    },
+    {
+      "text": "で、こういう風にこの新しいことを何か",
+      "start_seconds": 152.239,
+      "end_seconds": 154.72,
+      "id": "2PZHoGx4mLU-display-0051",
+      "segment_id": "2PZHoGx4mLU-ja-0020"
+    },
+    {
+      "text": "聞いた時にそれに対して何か新しい疑問を",
+      "start_seconds": 154.72,
+      "end_seconds": 158.0,
+      "id": "2PZHoGx4mLU-display-0052",
+      "segment_id": "2PZHoGx4mLU-ja-0020"
+    },
+    {
+      "text": "持つというのがまさに数学者の仕事の1つ",
+      "start_seconds": 158.0,
+      "end_seconds": 160.599,
+      "id": "2PZHoGx4mLU-display-0053",
+      "segment_id": "2PZHoGx4mLU-ja-0020"
+    },
+    {
+      "text": "です。ただし、もちろん疑問を持つだけで",
+      "start_seconds": 160.599,
+      "end_seconds": 163.68,
+      "id": "2PZHoGx4mLU-display-0054",
+      "segment_id": "2PZHoGx4mLU-ja-0020"
+    },
+    {
+      "text": "は数学者を名乗ることはできません。ここ",
+      "start_seconds": 163.68,
+      "end_seconds": 166.0,
+      "id": "2PZHoGx4mLU-display-0055",
+      "segment_id": "2PZHoGx4mLU-ja-0021"
+    },
+    {
+      "text": "で重要なのは疑問を持ったことに対して",
+      "start_seconds": 166.0,
+      "end_seconds": 169.2,
+      "id": "2PZHoGx4mLU-display-0056",
+      "segment_id": "2PZHoGx4mLU-ja-0021"
+    },
+    {
+      "text": "解決に向けて何か行動を起こすということ",
+      "start_seconds": 169.2,
+      "end_seconds": 172.0,
+      "id": "2PZHoGx4mLU-display-0057",
+      "segment_id": "2PZHoGx4mLU-ja-0021"
+    },
+    {
+      "text": "です。例えば自分なりに8の段の場合を",
+      "start_seconds": 172.0,
+      "end_seconds": 175.0,
+      "id": "2PZHoGx4mLU-display-0058",
+      "segment_id": "2PZHoGx4mLU-ja-0021"
+    },
+    {
+      "text": "考えてみたというのでもいいですし、そこ",
+      "start_seconds": 175.0,
+      "end_seconds": 177.2,
+      "id": "2PZHoGx4mLU-display-0059",
+      "segment_id": "2PZHoGx4mLU-ja-0022"
+    },
+    {
+      "text": "までしなくても知ってそうな人に聞いて",
+      "start_seconds": 177.2,
+      "end_seconds": 179.64,
+      "id": "2PZHoGx4mLU-display-0060",
+      "segment_id": "2PZHoGx4mLU-ja-0022"
+    },
+    {
+      "text": "みるとかですね。あとはインターネットで",
+      "start_seconds": 179.64,
+      "end_seconds": 181.44,
+      "id": "2PZHoGx4mLU-display-0061",
+      "segment_id": "2PZHoGx4mLU-ja-0022"
+    },
+    {
+      "text": "検索するという程度でもいいでしょう。",
+      "start_seconds": 181.44,
+      "end_seconds": 183.4,
+      "id": "2PZHoGx4mLU-display-0062",
+      "segment_id": "2PZHoGx4mLU-ja-0022"
+    },
+    {
+      "text": "とにかく自分が疑問に思ったことに対して",
+      "start_seconds": 183.4,
+      "end_seconds": 186.0,
+      "id": "2PZHoGx4mLU-display-0063",
+      "segment_id": "2PZHoGx4mLU-ja-0023"
+    },
+    {
+      "text": "解決するための行動を起こすこと、そして",
+      "start_seconds": 186.0,
+      "end_seconds": 188.56,
+      "id": "2PZHoGx4mLU-display-0064",
+      "segment_id": "2PZHoGx4mLU-ja-0023"
+    },
+    {
+      "text": "その挑戦を続けていくことこそが僕が",
+      "start_seconds": 188.56,
+      "end_seconds": 191.519,
+      "id": "2PZHoGx4mLU-display-0065",
+      "segment_id": "2PZHoGx4mLU-ja-0023"
+    },
+    {
+      "text": "考える数学者という仕事なんです。でも",
+      "start_seconds": 191.519,
+      "end_seconds": 194.959,
+      "id": "2PZHoGx4mLU-display-0066",
+      "segment_id": "2PZHoGx4mLU-ja-0023"
+    },
+    {
+      "text": "もちろん新しいことを何か聞いた時にそれ",
+      "start_seconds": 194.959,
+      "end_seconds": 198.519,
+      "id": "2PZHoGx4mLU-display-0067",
+      "segment_id": "2PZHoGx4mLU-ja-0024"
+    },
+    {
+      "text": "に対して疑問を持つことと疑問に対して",
+      "start_seconds": 198.519,
+      "end_seconds": 202.0,
+      "id": "2PZHoGx4mLU-display-0068",
+      "segment_id": "2PZHoGx4mLU-ja-0024"
+    },
+    {
+      "text": "行動を起こすことの間には非常に大きな",
+      "start_seconds": 202.0,
+      "end_seconds": 204.08,
+      "id": "2PZHoGx4mLU-display-0069",
+      "segment_id": "2PZHoGx4mLU-ja-0024"
+    },
+    {
+      "text": "ギャップがあると思います。実際どれほど",
+      "start_seconds": 204.08,
+      "end_seconds": 207.04,
+      "id": "2PZHoGx4mLU-display-0070",
+      "segment_id": "2PZHoGx4mLU-ja-0025"
+    },
+    {
+      "text": "の方が行動を移すまで行くでしょうか?時",
+      "start_seconds": 207.04,
+      "end_seconds": 210.72,
+      "id": "2PZHoGx4mLU-display-0071",
+      "segment_id": "2PZHoGx4mLU-ja-0025"
+    },
+    {
+      "text": "には自分には難しすぎるんじゃないかと",
+      "start_seconds": 210.72,
+      "end_seconds": 213.239,
+      "id": "2PZHoGx4mLU-display-0072",
+      "segment_id": "2PZHoGx4mLU-ja-0025"
+    },
+    {
+      "text": "なることもあるでしょうし、人に訪ねて",
+      "start_seconds": 213.239,
+      "end_seconds": 216.28,
+      "id": "2PZHoGx4mLU-display-0073",
+      "segment_id": "2PZHoGx4mLU-ja-0026"
+    },
+    {
+      "text": "笑われたらどうしようとか、自分より",
+      "start_seconds": 216.28,
+      "end_seconds": 218.48,
+      "id": "2PZHoGx4mLU-display-0074",
+      "segment_id": "2PZHoGx4mLU-ja-0026"
+    },
+    {
+      "text": "すごい人はこんなにいっぱいいるのに自分",
+      "start_seconds": 218.48,
+      "end_seconds": 220.08,
+      "id": "2PZHoGx4mLU-display-0075",
+      "segment_id": "2PZHoGx4mLU-ja-0026"
+    },
+    {
+      "text": "がやる必要ないんじゃないかと諦めて",
+      "start_seconds": 220.08,
+      "end_seconds": 222.439,
+      "id": "2PZHoGx4mLU-display-0076",
+      "segment_id": "2PZHoGx4mLU-ja-0026"
+    },
+    {
+      "text": "しまうこともあるかもしれません。",
+      "start_seconds": 222.439,
+      "end_seconds": 225.08,
+      "id": "2PZHoGx4mLU-display-0077",
+      "segment_id": "2PZHoGx4mLU-ja-0026"
+    },
+    {
+      "text": "どうやったらこのネガティブな感情に負け",
+      "start_seconds": 225.08,
+      "end_seconds": 226.84,
+      "id": "2PZHoGx4mLU-display-0078",
+      "segment_id": "2PZHoGx4mLU-ja-0027"
+    },
+    {
+      "text": "ずに挑戦を続けていくことができるん",
+      "start_seconds": 226.84,
+      "end_seconds": 228.84,
+      "id": "2PZHoGx4mLU-display-0079",
+      "segment_id": "2PZHoGx4mLU-ja-0027"
+    },
+    {
+      "text": "でしょうか?",
+      "start_seconds": 228.84,
+      "end_seconds": 231.64,
+      "id": "2PZHoGx4mLU-display-0080",
+      "segment_id": "2PZHoGx4mLU-ja-0027"
+    },
+    {
+      "text": "高校卒業して間もない頃数学者になり",
+      "start_seconds": 231.64,
+      "end_seconds": 234.319,
+      "id": "2PZHoGx4mLU-display-0081",
+      "segment_id": "2PZHoGx4mLU-ja-0028"
+    },
+    {
+      "text": "たかった僕はそういうことに悩んでいまし",
+      "start_seconds": 234.319,
+      "end_seconds": 236.04,
+      "id": "2PZHoGx4mLU-display-0082",
+      "segment_id": "2PZHoGx4mLU-ja-0028"
+    },
+    {
+      "text": "た。悩んだ末とる教授に率直に聞いてみれ",
+      "start_seconds": 236.04,
+      "end_seconds": 240.48,
+      "id": "2PZHoGx4mLU-display-0083",
+      "segment_id": "2PZHoGx4mLU-ja-0028"
+    },
+    {
+      "text": "ばいいんじゃないかと思ったんです。聞い",
+      "start_seconds": 240.48,
+      "end_seconds": 242.319,
+      "id": "2PZHoGx4mLU-display-0084",
+      "segment_id": "2PZHoGx4mLU-ja-0028"
+    },
+    {
+      "text": "てみました。どうやったら難しい問題に",
+      "start_seconds": 242.319,
+      "end_seconds": 245.0,
+      "id": "2PZHoGx4mLU-display-0085",
+      "segment_id": "2PZHoGx4mLU-ja-0029"
+    },
+    {
+      "text": "挑戦していけるんですか?て、ま、どうせ",
+      "start_seconds": 245.0,
+      "end_seconds": 248.28,
+      "id": "2PZHoGx4mLU-display-0086",
+      "segment_id": "2PZHoGx4mLU-ja-0029"
+    },
+    {
+      "text": "たくさん勉強しなさいと言われるんだろう",
+      "start_seconds": 248.28,
+      "end_seconds": 249.799,
+      "id": "2PZHoGx4mLU-display-0087",
+      "segment_id": "2PZHoGx4mLU-ja-0029"
+    },
+    {
+      "text": "なと思ったんですが違ったんです。先生",
+      "start_seconds": 249.799,
+      "end_seconds": 252.84,
+      "id": "2PZHoGx4mLU-display-0088",
+      "segment_id": "2PZHoGx4mLU-ja-0029"
+    },
+    {
+      "text": "こう言いました。知らないからこそ何も気",
+      "start_seconds": 252.84,
+      "end_seconds": 256.519,
+      "id": "2PZHoGx4mLU-display-0089",
+      "segment_id": "2PZHoGx4mLU-ja-0030"
+    },
+    {
+      "text": "にせずに挑戦してみたらいいんじゃない",
+      "start_seconds": 256.519,
+      "end_seconds": 257.959,
+      "id": "2PZHoGx4mLU-display-0090",
+      "segment_id": "2PZHoGx4mLU-ja-0030"
+    },
+    {
+      "text": "ですかって。つまりですよ。勉強[鼻息]",
+      "start_seconds": 257.959,
+      "end_seconds": 261.639,
+      "id": "2PZHoGx4mLU-display-0091",
+      "segment_id": "2PZHoGx4mLU-ja-0030"
+    },
+    {
+      "text": "して難しいことを知ってしまうと怖くなっ",
+      "start_seconds": 261.639,
+      "end_seconds": 264.72,
+      "id": "2PZHoGx4mLU-display-0092",
+      "segment_id": "2PZHoGx4mLU-ja-0030"
+    },
+    {
+      "text": "て挑戦すらできなくなってしまいますよと",
+      "start_seconds": 264.72,
+      "end_seconds": 267.199,
+      "id": "2PZHoGx4mLU-display-0093",
+      "segment_id": "2PZHoGx4mLU-ja-0031"
+    },
+    {
+      "text": "言うんです。",
+      "start_seconds": 267.199,
+      "end_seconds": 269.28,
+      "id": "2PZHoGx4mLU-display-0094",
+      "segment_id": "2PZHoGx4mLU-ja-0031"
+    },
+    {
+      "text": "最近この先生の言葉を強く僕に印象付ける",
+      "start_seconds": 269.28,
+      "end_seconds": 272.0,
+      "id": "2PZHoGx4mLU-display-0095",
+      "segment_id": "2PZHoGx4mLU-ja-0032"
+    },
+    {
+      "text": "大きな出来事があったのでここで紹介させ",
+      "start_seconds": 272.0,
+      "end_seconds": 274.12,
+      "id": "2PZHoGx4mLU-display-0096",
+      "segment_id": "2PZHoGx4mLU-ja-0032"
+    },
+    {
+      "text": "てください。",
+      "start_seconds": 274.12,
+      "end_seconds": 276.52,
+      "id": "2PZHoGx4mLU-display-0097",
+      "segment_id": "2PZHoGx4mLU-ja-0032"
+    },
+    {
+      "text": "皆さんご存知でしょうか?日本には漫画と",
+      "start_seconds": 276.52,
+      "end_seconds": 279.12,
+      "id": "2PZHoGx4mLU-display-0098",
+      "segment_id": "2PZHoGx4mLU-ja-0033"
+    },
+    {
+      "text": "いう面白い文化があります。",
+      "start_seconds": 279.12,
+      "end_seconds": 282.28,
+      "id": "2PZHoGx4mLU-display-0099",
+      "segment_id": "2PZHoGx4mLU-ja-0033"
+    },
+    {
+      "text": "スポーツ漫画に影響を受けてスポーツ選手",
+      "start_seconds": 282.28,
+      "end_seconds": 283.96,
+      "id": "2PZHoGx4mLU-display-0100",
+      "segment_id": "2PZHoGx4mLU-ja-0034"
+    },
+    {
+      "text": "になったという方も多いでしょう。",
+      "start_seconds": 283.96,
+      "end_seconds": 285.28,
+      "id": "2PZHoGx4mLU-display-0101",
+      "segment_id": "2PZHoGx4mLU-ja-0034"
+    },
+    {
+      "text": "とにかくそのバリエーションの豊かさには",
+      "start_seconds": 285.28,
+      "end_seconds": 286.88,
+      "id": "2PZHoGx4mLU-display-0102",
+      "segment_id": "2PZHoGx4mLU-ja-0035"
+    },
+    {
+      "text": "驚かされるばかりであらゆる分野に対して",
+      "start_seconds": 286.88,
+      "end_seconds": 289.759,
+      "id": "2PZHoGx4mLU-display-0103",
+      "segment_id": "2PZHoGx4mLU-ja-0035"
+    },
+    {
+      "text": "それをテーマにした漫画があるんじゃない",
+      "start_seconds": 289.759,
+      "end_seconds": 291.4,
+      "id": "2PZHoGx4mLU-display-0104",
+      "segment_id": "2PZHoGx4mLU-ja-0035"
+    },
+    {
+      "text": "かと思うほどです。数学だって例外では",
+      "start_seconds": 291.4,
+      "end_seconds": 293.96,
+      "id": "2PZHoGx4mLU-display-0105",
+      "segment_id": "2PZHoGx4mLU-ja-0035"
+    },
+    {
+      "text": "ありません。数学の漫画というのもすごく",
+      "start_seconds": 293.96,
+      "end_seconds": 296.479,
+      "id": "2PZHoGx4mLU-display-0106",
+      "segment_id": "2PZHoGx4mLU-ja-0035"
+    },
+    {
+      "text": "たくさんあるんです。そこで思いました。",
+      "start_seconds": 296.479,
+      "end_seconds": 299.88,
+      "id": "2PZHoGx4mLU-display-0107",
+      "segment_id": "2PZHoGx4mLU-ja-0036"
+    },
+    {
+      "text": "この数学の漫画授業の教科書として使って",
+      "start_seconds": 299.88,
+      "end_seconds": 302.72,
+      "id": "2PZHoGx4mLU-display-0108",
+      "segment_id": "2PZHoGx4mLU-ja-0037"
+    },
+    {
+      "text": "みたら面白いんじゃないかと。早速やって",
+      "start_seconds": 302.72,
+      "end_seconds": 305.68,
+      "id": "2PZHoGx4mLU-display-0109",
+      "segment_id": "2PZHoGx4mLU-ja-0037"
+    },
+    {
+      "text": "みたんです。整数端という数学の漫画が",
+      "start_seconds": 305.68,
+      "end_seconds": 309.0,
+      "id": "2PZHoGx4mLU-display-0110",
+      "segment_id": "2PZHoGx4mLU-ja-0037"
+    },
+    {
+      "text": "あります。これを僕の授業の教科書として",
+      "start_seconds": 309.0,
+      "end_seconds": 311.52,
+      "id": "2PZHoGx4mLU-display-0111",
+      "segment_id": "2PZHoGx4mLU-ja-0037"
+    },
+    {
+      "text": "使ってみることにしました。狙いは単純",
+      "start_seconds": 311.52,
+      "end_seconds": 314.24,
+      "id": "2PZHoGx4mLU-display-0112",
+      "segment_id": "2PZHoGx4mLU-ja-0038"
+    },
+    {
+      "text": "です。数学というのはその学問の特性",
+      "start_seconds": 314.24,
+      "end_seconds": 317.4,
+      "id": "2PZHoGx4mLU-display-0113",
+      "segment_id": "2PZHoGx4mLU-ja-0038"
+    },
+    {
+      "text": "上歴史の積み重ねの上に出来上がったもの",
+      "start_seconds": 317.4,
+      "end_seconds": 320.72,
+      "id": "2PZHoGx4mLU-display-0114",
+      "segment_id": "2PZHoGx4mLU-ja-0038"
+    },
+    {
+      "text": "なので最先端の数学をしろうと思うと",
+      "start_seconds": 320.72,
+      "end_seconds": 324.199,
+      "id": "2PZHoGx4mLU-display-0115",
+      "segment_id": "2PZHoGx4mLU-ja-0039"
+    },
+    {
+      "text": "とにかくたくさんの勉強をしなければなら",
+      "start_seconds": 324.199,
+      "end_seconds": 326.759,
+      "id": "2PZHoGx4mLU-display-0116",
+      "segment_id": "2PZHoGx4mLU-ja-0039"
+    },
+    {
+      "text": "ないと言われています。",
+      "start_seconds": 326.759,
+      "end_seconds": 329.44,
+      "id": "2PZHoGx4mLU-display-0117",
+      "segment_id": "2PZHoGx4mLU-ja-0039"
+    },
+    {
+      "text": "でもその雰囲気だけなら何とか伝えられる",
+      "start_seconds": 329.44,
+      "end_seconds": 332.88,
+      "id": "2PZHoGx4mLU-display-0118",
+      "segment_id": "2PZHoGx4mLU-ja-0040"
+    },
+    {
+      "text": "んじゃないかと思ってこの漫画を通して",
+      "start_seconds": 332.88,
+      "end_seconds": 335.639,
+      "id": "2PZHoGx4mLU-display-0119",
+      "segment_id": "2PZHoGx4mLU-ja-0040"
+    },
+    {
+      "text": "最先端の雰囲気を学生たちに伝えようと",
+      "start_seconds": 335.639,
+      "end_seconds": 337.72,
+      "id": "2PZHoGx4mLU-display-0120",
+      "segment_id": "2PZHoGx4mLU-ja-0040"
+    },
+    {
+      "text": "思ったんです。ここで皆さんにも1つその",
+      "start_seconds": 337.72,
+      "end_seconds": 340.96,
+      "id": "2PZHoGx4mLU-display-0121",
+      "segment_id": "2PZHoGx4mLU-ja-0040"
+    },
+    {
+      "text": "最先端の数学手アを紹介したいと思います",
+      "start_seconds": 340.96,
+      "end_seconds": 343.4,
+      "id": "2PZHoGx4mLU-display-0122",
+      "segment_id": "2PZHoGx4mLU-ja-0041"
+    },
+    {
+      "text": "。",
+      "start_seconds": 343.4,
+      "end_seconds": 345.12,
+      "id": "2PZHoGx4mLU-display-0123",
+      "segment_id": "2PZHoGx4mLU-ja-0041"
+    },
+    {
+      "text": "整数端第3話においてゲーベル数列という",
+      "start_seconds": 345.12,
+      "end_seconds": 348.0,
+      "id": "2PZHoGx4mLU-display-0124",
+      "segment_id": "2PZHoGx4mLU-ja-0042"
+    },
+    {
+      "text": "数列が登場します。これは専門用語を",
+      "start_seconds": 348.0,
+      "end_seconds": 351.12,
+      "id": "2PZHoGx4mLU-display-0125",
+      "segment_id": "2PZHoGx4mLU-ja-0042"
+    },
+    {
+      "text": "用いると全科式というものを用いて定義さ",
+      "start_seconds": 351.12,
+      "end_seconds": 353.72,
+      "id": "2PZHoGx4mLU-display-0126",
+      "segment_id": "2PZHoGx4mLU-ja-0042"
+    },
+    {
+      "text": "れる数列で最初の項0番目の項を1だと",
+      "start_seconds": 353.72,
+      "end_seconds": 357.199,
+      "id": "2PZHoGx4mLU-display-0127",
+      "segment_id": "2PZHoGx4mLU-ja-0043"
+    },
+    {
+      "text": "定めます。",
+      "start_seconds": 357.199,
+      "end_seconds": 359.36,
+      "id": "2PZHoGx4mLU-display-0128",
+      "segment_id": "2PZHoGx4mLU-ja-0043"
+    },
+    {
+      "text": "次の項を計算するにはそれまでに出てきた",
+      "start_seconds": 359.36,
+      "end_seconds": 362.039,
+      "id": "2PZHoGx4mLU-display-0129",
+      "segment_id": "2PZHoGx4mLU-ja-0044"
+    },
+    {
+      "text": "項の2乗自分自身の掛け算ですねを計算し",
+      "start_seconds": 362.039,
+      "end_seconds": 365.28,
+      "id": "2PZHoGx4mLU-display-0130",
+      "segment_id": "2PZHoGx4mLU-ja-0044"
+    },
+    {
+      "text": "て1を足して番目で割る。この場合1番目",
+      "start_seconds": 365.28,
+      "end_seconds": 368.28,
+      "id": "2PZHoGx4mLU-display-0131",
+      "segment_id": "2PZHoGx4mLU-ja-0044"
+    },
+    {
+      "text": "の1ではあるということを行うと2という",
+      "start_seconds": 368.28,
+      "end_seconds": 370.88,
+      "id": "2PZHoGx4mLU-display-0132",
+      "segment_id": "2PZHoGx4mLU-ja-0044"
+    },
+    {
+      "text": "数が得られます。同じようにさらに次の項",
+      "start_seconds": 370.88,
+      "end_seconds": 374.16,
+      "id": "2PZHoGx4mLU-display-0133",
+      "segment_id": "2PZHoGx4mLU-ja-0045"
+    },
+    {
+      "text": "を計算しようと思うとそれまでの項の2乗",
+      "start_seconds": 374.16,
+      "end_seconds": 376.759,
+      "id": "2PZHoGx4mLU-display-0134",
+      "segment_id": "2PZHoGx4mLU-ja-0045"
+    },
+    {
+      "text": "を計算して1を足して番目である。それ",
+      "start_seconds": 376.759,
+      "end_seconds": 380.08,
+      "id": "2PZHoGx4mLU-display-0135",
+      "segment_id": "2PZHoGx4mLU-ja-0045"
+    },
+    {
+      "text": "までの項の2乗を足して1を足して番目で",
+      "start_seconds": 380.08,
+      "end_seconds": 382.68,
+      "id": "2PZHoGx4mLU-display-0136",
+      "segment_id": "2PZHoGx4mLU-ja-0045"
+    },
+    {
+      "text": "ある。これを繰り返すことでどんどん",
+      "start_seconds": 382.68,
+      "end_seconds": 384.639,
+      "id": "2PZHoGx4mLU-display-0137",
+      "segment_id": "2PZHoGx4mLU-ja-0046"
+    },
+    {
+      "text": "新しい数が得られてこれをゲーベル数列と",
+      "start_seconds": 384.639,
+      "end_seconds": 387.08,
+      "id": "2PZHoGx4mLU-display-0138",
+      "segment_id": "2PZHoGx4mLU-ja-0046"
+    },
+    {
+      "text": "言うんです。",
+      "start_seconds": 387.08,
+      "end_seconds": 389.36,
+      "id": "2PZHoGx4mLU-display-0139",
+      "segment_id": "2PZHoGx4mLU-ja-0046"
+    },
+    {
+      "text": "この定義の中に悪という操作が含まれて",
+      "start_seconds": 389.36,
+      "end_seconds": 391.96,
+      "id": "2PZHoGx4mLU-display-0140",
+      "segment_id": "2PZHoGx4mLU-ja-0047"
+    },
+    {
+      "text": "いるので時には割りきれることなくあまり",
+      "start_seconds": 391.96,
+      "end_seconds": 394.84,
+      "id": "2PZHoGx4mLU-display-0141",
+      "segment_id": "2PZHoGx4mLU-ja-0047"
+    },
+    {
+      "text": "が出る分数になってしまうという可能性も",
+      "start_seconds": 394.84,
+      "end_seconds": 396.84,
+      "id": "2PZHoGx4mLU-display-0142",
+      "segment_id": "2PZHoGx4mLU-ja-0047"
+    },
+    {
+      "text": "あるわけですが不思議なことに今のところ",
+      "start_seconds": 396.84,
+      "end_seconds": 399.96,
+      "id": "2PZHoGx4mLU-display-0143",
+      "segment_id": "2PZHoGx4mLU-ja-0047"
+    },
+    {
+      "text": "全ての計算において割りきれるという状況",
+      "start_seconds": 399.96,
+      "end_seconds": 402.039,
+      "id": "2PZHoGx4mLU-display-0144",
+      "segment_id": "2PZHoGx4mLU-ja-0048"
+    },
+    {
+      "text": "が続いています。実はこのゲーベル数列",
+      "start_seconds": 402.039,
+      "end_seconds": 405.28,
+      "id": "2PZHoGx4mLU-display-0145",
+      "segment_id": "2PZHoGx4mLU-ja-0048"
+    },
+    {
+      "text": "発見当初はこのままずっと割り切れると",
+      "start_seconds": 405.28,
+      "end_seconds": 407.88,
+      "id": "2PZHoGx4mLU-display-0146",
+      "segment_id": "2PZHoGx4mLU-ja-0048"
+    },
+    {
+      "text": "いう状況が続いていくんじゃないかと思わ",
+      "start_seconds": 407.88,
+      "end_seconds": 409.8,
+      "id": "2PZHoGx4mLU-display-0147",
+      "segment_id": "2PZHoGx4mLU-ja-0048"
+    },
+    {
+      "text": "れていたんですが1975年についに43",
+      "start_seconds": 409.8,
+      "end_seconds": 414.56,
+      "id": "2PZHoGx4mLU-display-0148",
+      "segment_id": "2PZHoGx4mLU-ja-0049"
+    },
+    {
+      "text": "番目の計算において割りきれないこと",
+      "start_seconds": 414.56,
+      "end_seconds": 417.24,
+      "id": "2PZHoGx4mLU-display-0149",
+      "segment_id": "2PZHoGx4mLU-ja-0049"
+    },
+    {
+      "text": "つまりあまりが出て分数になってしまう",
+      "start_seconds": 417.24,
+      "end_seconds": 419.0,
+      "id": "2PZHoGx4mLU-display-0150",
+      "segment_id": "2PZHoGx4mLU-ja-0049"
+    },
+    {
+      "text": "ことが発見されて注目を集めました。",
+      "start_seconds": 419.0,
+      "end_seconds": 422.919,
+      "id": "2PZHoGx4mLU-display-0151",
+      "segment_id": "2PZHoGx4mLU-ja-0050"
+    },
+    {
+      "text": "さて数学者とは新しいことを聞いたら疑問",
+      "start_seconds": 422.919,
+      "end_seconds": 426.12,
+      "id": "2PZHoGx4mLU-display-0152",
+      "segment_id": "2PZHoGx4mLU-ja-0051"
+    },
+    {
+      "text": "を持ってそれに挑戦をしていく人たちだと",
+      "start_seconds": 426.12,
+      "end_seconds": 428.919,
+      "id": "2PZHoGx4mLU-display-0153",
+      "segment_id": "2PZHoGx4mLU-ja-0051"
+    },
+    {
+      "text": "言いました。この場合もそうです。様々な",
+      "start_seconds": 428.919,
+      "end_seconds": 431.319,
+      "id": "2PZHoGx4mLU-display-0154",
+      "segment_id": "2PZHoGx4mLU-ja-0051"
+    },
+    {
+      "text": "数学者がこの現象を目にして多くの観点",
+      "start_seconds": 431.319,
+      "end_seconds": 434.16,
+      "id": "2PZHoGx4mLU-display-0155",
+      "segment_id": "2PZHoGx4mLU-ja-0051"
+    },
+    {
+      "text": "から疑問を持ち、様々な考察を行いました",
+      "start_seconds": 434.16,
+      "end_seconds": 436.52,
+      "id": "2PZHoGx4mLU-display-0156",
+      "segment_id": "2PZHoGx4mLU-ja-0052"
+    },
+    {
+      "text": "。例えばこの定義にあった2乗という",
+      "start_seconds": 436.52,
+      "end_seconds": 439.479,
+      "id": "2PZHoGx4mLU-display-0157",
+      "segment_id": "2PZHoGx4mLU-ja-0052"
+    },
+    {
+      "text": "ところを3条4乗、ま、色々できる",
+      "start_seconds": 439.479,
+      "end_seconds": 441.72,
+      "id": "2PZHoGx4mLU-display-0158",
+      "segment_id": "2PZHoGx4mLU-ja-0052"
+    },
+    {
+      "text": "でしょう。色々取り替えてみるとどうなる",
+      "start_seconds": 441.72,
+      "end_seconds": 443.759,
+      "id": "2PZHoGx4mLU-display-0159",
+      "segment_id": "2PZHoGx4mLU-ja-0052"
+    },
+    {
+      "text": "かと。その考察からさらにこのマジック",
+      "start_seconds": 443.759,
+      "end_seconds": 447.08,
+      "id": "2PZHoGx4mLU-display-0160",
+      "segment_id": "2PZHoGx4mLU-ja-0053"
+    },
+    {
+      "text": "ナンバー43というのも8997とその",
+      "start_seconds": 447.08,
+      "end_seconds": 450.44,
+      "id": "2PZHoGx4mLU-display-0161",
+      "segment_id": "2PZHoGx4mLU-ja-0053"
+    },
+    {
+      "text": "仲間を増やしていきました。こうして",
+      "start_seconds": 450.44,
+      "end_seconds": 453.12,
+      "id": "2PZHoGx4mLU-display-0162",
+      "segment_id": "2PZHoGx4mLU-ja-0053"
+    },
+    {
+      "text": "できる新しいマジックナンバーたちから",
+      "start_seconds": 453.12,
+      "end_seconds": 455.199,
+      "id": "2PZHoGx4mLU-display-0163",
+      "segment_id": "2PZHoGx4mLU-ja-0053"
+    },
+    {
+      "text": "なる数列NKというのがこの整数端第3話",
+      "start_seconds": 455.199,
+      "end_seconds": 458.84,
+      "id": "2PZHoGx4mLU-display-0164",
+      "segment_id": "2PZHoGx4mLU-ja-0054"
+    },
+    {
+      "text": "に紹介されているんです。",
+      "start_seconds": 458.84,
+      "end_seconds": 461.24,
+      "id": "2PZHoGx4mLU-display-0165",
+      "segment_id": "2PZHoGx4mLU-ja-0054"
+    },
+    {
+      "text": "漫画の中のキャラクターも何やらその数列",
+      "start_seconds": 461.24,
+      "end_seconds": 463.72,
+      "id": "2PZHoGx4mLU-display-0166",
+      "segment_id": "2PZHoGx4mLU-ja-0055"
+    },
+    {
+      "text": "を眺めて疑問を投げかけているようです。",
+      "start_seconds": 463.72,
+      "end_seconds": 467.72,
+      "id": "2PZHoGx4mLU-display-0167",
+      "segment_id": "2PZHoGx4mLU-ja-0055"
+    },
+    {
+      "text": "で、この何の変哲もないたった1つの",
+      "start_seconds": 467.72,
+      "end_seconds": 469.759,
+      "id": "2PZHoGx4mLU-display-0168",
+      "segment_id": "2PZHoGx4mLU-ja-0056"
+    },
+    {
+      "text": "セリフなんですが、これが大きな事件を",
+      "start_seconds": 469.759,
+      "end_seconds": 471.84,
+      "id": "2PZHoGx4mLU-display-0169",
+      "segment_id": "2PZHoGx4mLU-ja-0056"
+    },
+    {
+      "text": "呼ぶことになったんです。忘れもしません",
+      "start_seconds": 471.84,
+      "end_seconds": 474.599,
+      "id": "2PZHoGx4mLU-display-0170",
+      "segment_id": "2PZHoGx4mLU-ja-0056"
+    },
+    {
+      "text": "。2023年の5月、ちょうどゴールデン",
+      "start_seconds": 474.599,
+      "end_seconds": 478.039,
+      "id": "2PZHoGx4mLU-display-0171",
+      "segment_id": "2PZHoGx4mLU-ja-0056"
+    },
+    {
+      "text": "ウィークが開けた頃ですかね、高校卒業し",
+      "start_seconds": 478.039,
+      "end_seconds": 480.72,
+      "id": "2PZHoGx4mLU-display-0172",
+      "segment_id": "2PZHoGx4mLU-ja-0057"
+    },
+    {
+      "text": "て間もない学生たちが授業の初めにこう",
+      "start_seconds": 480.72,
+      "end_seconds": 482.759,
+      "id": "2PZHoGx4mLU-display-0173",
+      "segment_id": "2PZHoGx4mLU-ja-0057"
+    },
+    {
+      "text": "いうこと言うんです。先生、このNKの",
+      "start_seconds": 482.759,
+      "end_seconds": 485.72,
+      "id": "2PZHoGx4mLU-display-0174",
+      "segment_id": "2PZHoGx4mLU-ja-0057"
+    },
+    {
+      "text": "最小値がいくつになるかという問題を考え",
+      "start_seconds": 485.72,
+      "end_seconds": 487.52,
+      "id": "2PZHoGx4mLU-display-0175",
+      "segment_id": "2PZHoGx4mLU-ja-0057"
+    },
+    {
+      "text": "てきたので聞いてください。",
+      "start_seconds": 487.52,
+      "end_seconds": 490.96,
+      "id": "2PZHoGx4mLU-display-0176",
+      "segment_id": "2PZHoGx4mLU-ja-0058"
+    },
+    {
+      "text": "これは非常に驚きました。というのも僕",
+      "start_seconds": 490.96,
+      "end_seconds": 493.96,
+      "id": "2PZHoGx4mLU-display-0177",
+      "segment_id": "2PZHoGx4mLU-ja-0059"
+    },
+    {
+      "text": "この問題数学の問題だと認識すらできてい",
+      "start_seconds": 493.96,
+      "end_seconds": 497.28,
+      "id": "2PZHoGx4mLU-display-0178",
+      "segment_id": "2PZHoGx4mLU-ja-0059"
+    },
+    {
+      "text": "なかったんです。仮に認識できていたとし",
+      "start_seconds": 497.28,
+      "end_seconds": 500.68,
+      "id": "2PZHoGx4mLU-display-0179",
+      "segment_id": "2PZHoGx4mLU-ja-0059"
+    },
+    {
+      "text": "ても僕はきっと挑戦できなかったと思い",
+      "start_seconds": 500.68,
+      "end_seconds": 503.28,
+      "id": "2PZHoGx4mLU-display-0180",
+      "segment_id": "2PZHoGx4mLU-ja-0060"
+    },
+    {
+      "text": "ます。なぜなら僕はゲーベル数列のことを",
+      "start_seconds": 503.28,
+      "end_seconds": 505.84,
+      "id": "2PZHoGx4mLU-display-0181",
+      "segment_id": "2PZHoGx4mLU-ja-0060"
+    },
+    {
+      "text": "よく知っていたのであの有名なすごい数学",
+      "start_seconds": 505.84,
+      "end_seconds": 509.759,
+      "id": "2PZHoGx4mLU-display-0182",
+      "segment_id": "2PZHoGx4mLU-ja-0060"
+    },
+    {
+      "text": "者たちが取り組んで解けなかった問題の",
+      "start_seconds": 509.759,
+      "end_seconds": 511.639,
+      "id": "2PZHoGx4mLU-display-0183",
+      "segment_id": "2PZHoGx4mLU-ja-0060"
+    },
+    {
+      "text": "はずだから僕には溶けっこないだろうと",
+      "start_seconds": 511.639,
+      "end_seconds": 513.8,
+      "id": "2PZHoGx4mLU-display-0184",
+      "segment_id": "2PZHoGx4mLU-ja-0061"
+    },
+    {
+      "text": "諦めていたことでしょう。しかし彼ら違い",
+      "start_seconds": 513.8,
+      "end_seconds": 516.2,
+      "id": "2PZHoGx4mLU-display-0185",
+      "segment_id": "2PZHoGx4mLU-ja-0061"
+    },
+    {
+      "text": "ました。彼ら学生たちはこの問題に挑戦を",
+      "start_seconds": 516.2,
+      "end_seconds": 518.76,
+      "id": "2PZHoGx4mLU-display-0186",
+      "segment_id": "2PZHoGx4mLU-ja-0061"
+    },
+    {
+      "text": "して素晴らしいアプローチを見い出しまし",
+      "start_seconds": 518.76,
+      "end_seconds": 521.159,
+      "id": "2PZHoGx4mLU-display-0187",
+      "segment_id": "2PZHoGx4mLU-ja-0061"
+    },
+    {
+      "text": "た。そして次の美しい定理を見つけたん",
+      "start_seconds": 521.159,
+      "end_seconds": 523.88,
+      "id": "2PZHoGx4mLU-display-0188",
+      "segment_id": "2PZHoGx4mLU-ja-0062"
+    },
+    {
+      "text": "です。",
+      "start_seconds": 523.88,
+      "end_seconds": 525.64,
+      "id": "2PZHoGx4mLU-display-0189",
+      "segment_id": "2PZHoGx4mLU-ja-0062"
+    },
+    {
+      "text": "この結果その後共同研究として発表し、",
+      "start_seconds": 525.64,
+      "end_seconds": 529.839,
+      "id": "2PZHoGx4mLU-display-0190",
+      "segment_id": "2PZHoGx4mLU-ja-0063"
+    },
+    {
+      "text": "つい先日ですね、100年以上の歴史を",
+      "start_seconds": 529.839,
+      "end_seconds": 532.04,
+      "id": "2PZHoGx4mLU-display-0191",
+      "segment_id": "2PZHoGx4mLU-ja-0063"
+    },
+    {
+      "text": "持つとる有名なアメリカの数学雑誌から",
+      "start_seconds": 532.04,
+      "end_seconds": 535.32,
+      "id": "2PZHoGx4mLU-display-0192",
+      "segment_id": "2PZHoGx4mLU-ja-0063"
+    },
+    {
+      "text": "新しい数学の定理として発表されたばかり",
+      "start_seconds": 535.32,
+      "end_seconds": 537.48,
+      "id": "2PZHoGx4mLU-display-0193",
+      "segment_id": "2PZHoGx4mLU-ja-0063"
+    },
+    {
+      "text": "です。",
+      "start_seconds": 537.48,
+      "end_seconds": 539.399,
+      "id": "2PZHoGx4mLU-display-0194",
+      "segment_id": "2PZHoGx4mLU-ja-0064"
+    },
+    {
+      "text": "一体僕と彼らで何が違ったのでしょうか?",
+      "start_seconds": 539.399,
+      "end_seconds": 542.2,
+      "id": "2PZHoGx4mLU-display-0195",
+      "segment_id": "2PZHoGx4mLU-ja-0065"
+    },
+    {
+      "text": "ここで先生の言葉が思い出されるわけです",
+      "start_seconds": 542.2,
+      "end_seconds": 544.2,
+      "id": "2PZHoGx4mLU-display-0196",
+      "segment_id": "2PZHoGx4mLU-ja-0066"
+    },
+    {
+      "text": "。彼らは知らなかったんです。知らなかっ",
+      "start_seconds": 544.2,
+      "end_seconds": 547.0,
+      "id": "2PZHoGx4mLU-display-0197",
+      "segment_id": "2PZHoGx4mLU-ja-0066"
+    },
+    {
+      "text": "たからこそ挑戦できたんだと僕は思ってい",
+      "start_seconds": 547.0,
+      "end_seconds": 549.8,
+      "id": "2PZHoGx4mLU-display-0198",
+      "segment_id": "2PZHoGx4mLU-ja-0066"
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 549.8,
+      "end_seconds": 551.92,
+      "id": "2PZHoGx4mLU-display-0199",
+      "segment_id": "2PZHoGx4mLU-ja-0066"
+    },
+    {
+      "text": "現代数学の内容をふんふんわりと伝えると",
+      "start_seconds": 551.92,
+      "end_seconds": 554.12,
+      "id": "2PZHoGx4mLU-display-0200",
+      "segment_id": "2PZHoGx4mLU-ja-0067"
+    },
+    {
+      "text": "いう授業の目的でしたが、意図せずして",
+      "start_seconds": 554.12,
+      "end_seconds": 558.44,
+      "id": "2PZHoGx4mLU-display-0201",
+      "segment_id": "2PZHoGx4mLU-ja-0067"
+    },
+    {
+      "text": "先端の数学に爪跡を残す形となりました。",
+      "start_seconds": 558.44,
+      "end_seconds": 562.24,
+      "id": "2PZHoGx4mLU-display-0202",
+      "segment_id": "2PZHoGx4mLU-ja-0067"
+    },
+    {
+      "text": "さて、新しい結果を新しい疑問を新しい",
+      "start_seconds": 562.24,
+      "end_seconds": 564.399,
+      "id": "2PZHoGx4mLU-display-0203",
+      "segment_id": "2PZHoGx4mLU-ja-0068"
+    },
+    {
+      "text": "数学者を見します。この結果に1番最初に",
+      "start_seconds": 564.399,
+      "end_seconds": 567.76,
+      "id": "2PZHoGx4mLU-display-0204",
+      "segment_id": "2PZHoGx4mLU-ja-0068"
+    },
+    {
+      "text": "影響を受けたのは一体誰だったでしょうか",
+      "start_seconds": 567.76,
+      "end_seconds": 569.48,
+      "id": "2PZHoGx4mLU-display-0205",
+      "segment_id": "2PZHoGx4mLU-ja-0068"
+    },
+    {
+      "text": "?他でもない彼らの1つ上の先輩たちでし",
+      "start_seconds": 569.48,
+      "end_seconds": 572.92,
+      "id": "2PZHoGx4mLU-display-0206",
+      "segment_id": "2PZHoGx4mLU-ja-0068"
+    },
+    {
+      "text": "た。彼らもまた独自の疑問を持ち、それに",
+      "start_seconds": 572.92,
+      "end_seconds": 576.72,
+      "id": "2PZHoGx4mLU-display-0207",
+      "segment_id": "2PZHoGx4mLU-ja-0069"
+    },
+    {
+      "text": "挑戦することでこのNKの最小値に関する",
+      "start_seconds": 576.72,
+      "end_seconds": 579.32,
+      "id": "2PZHoGx4mLU-display-0208",
+      "segment_id": "2PZHoGx4mLU-ja-0069"
+    },
+    {
+      "text": "、より一般的な次の定理を得ました。この",
+      "start_seconds": 579.32,
+      "end_seconds": 583.519,
+      "id": "2PZHoGx4mLU-display-0209",
+      "segment_id": "2PZHoGx4mLU-ja-0069"
+    },
+    {
+      "text": "結果もまたつい先日学術論文として発表さ",
+      "start_seconds": 583.519,
+      "end_seconds": 586.24,
+      "id": "2PZHoGx4mLU-display-0210",
+      "segment_id": "2PZHoGx4mLU-ja-0070"
+    },
+    {
+      "text": "れたばかりです。今度は彼らは自分たちに",
+      "start_seconds": 586.24,
+      "end_seconds": 589.519,
+      "id": "2PZHoGx4mLU-display-0211",
+      "segment_id": "2PZHoGx4mLU-ja-0070"
+    },
+    {
+      "text": "もできるかもしれないという可能性を知っ",
+      "start_seconds": 589.519,
+      "end_seconds": 591.56,
+      "id": "2PZHoGx4mLU-display-0212",
+      "segment_id": "2PZHoGx4mLU-ja-0070"
+    },
+    {
+      "text": "たことで挑戦が始まったんだと思います。",
+      "start_seconds": 591.56,
+      "end_seconds": 594.839,
+      "id": "2PZHoGx4mLU-display-0213",
+      "segment_id": "2PZHoGx4mLU-ja-0070"
+    },
+    {
+      "text": "ともかく彼ら学生たちのおかげでこの",
+      "start_seconds": 594.839,
+      "end_seconds": 596.76,
+      "id": "2PZHoGx4mLU-display-0214",
+      "segment_id": "2PZHoGx4mLU-ja-0071"
+    },
+    {
+      "text": "ゲーベル数列の面白さは全世界が知ること",
+      "start_seconds": 596.76,
+      "end_seconds": 599.519,
+      "id": "2PZHoGx4mLU-display-0215",
+      "segment_id": "2PZHoGx4mLU-ja-0071"
+    },
+    {
+      "text": "になりました。つい先日も今度は日本人の",
+      "start_seconds": 599.519,
+      "end_seconds": 602.44,
+      "id": "2PZHoGx4mLU-display-0216",
+      "segment_id": "2PZHoGx4mLU-ja-0071"
+    },
+    {
+      "text": "2人の数学者によって新しい発見が発表さ",
+      "start_seconds": 602.44,
+      "end_seconds": 605.16,
+      "id": "2PZHoGx4mLU-display-0217",
+      "segment_id": "2PZHoGx4mLU-ja-0071"
+    },
+    {
+      "text": "れたところです。学生たちの知らないこと",
+      "start_seconds": 605.16,
+      "end_seconds": 608.279,
+      "id": "2PZHoGx4mLU-display-0218",
+      "segment_id": "2PZHoGx4mLU-ja-0072"
+    },
+    {
+      "text": "への挑戦が今まさに数学の最先端を動かし",
+      "start_seconds": 608.279,
+      "end_seconds": 611.88,
+      "id": "2PZHoGx4mLU-display-0219",
+      "segment_id": "2PZHoGx4mLU-ja-0072"
+    },
+    {
+      "text": "ているんです。",
+      "start_seconds": 611.88,
+      "end_seconds": 615.279,
+      "id": "2PZHoGx4mLU-display-0220",
+      "segment_id": "2PZHoGx4mLU-ja-0072"
+    },
+    {
+      "text": "さて、我々は年齢を重ねると知識が",
+      "start_seconds": 615.279,
+      "end_seconds": 617.92,
+      "id": "2PZHoGx4mLU-display-0221",
+      "segment_id": "2PZHoGx4mLU-ja-0073"
+    },
+    {
+      "text": "どんどん増えていきます。知っていること",
+      "start_seconds": 617.92,
+      "end_seconds": 619.88,
+      "id": "2PZHoGx4mLU-display-0222",
+      "segment_id": "2PZHoGx4mLU-ja-0073"
+    },
+    {
+      "text": "が増えるともちろんできることの幅も",
+      "start_seconds": 619.88,
+      "end_seconds": 621.76,
+      "id": "2PZHoGx4mLU-display-0223",
+      "segment_id": "2PZHoGx4mLU-ja-0073"
+    },
+    {
+      "text": "広がっていきますが、それと同時に挑戦",
+      "start_seconds": 621.76,
+      "end_seconds": 624.68,
+      "id": "2PZHoGx4mLU-display-0224",
+      "segment_id": "2PZHoGx4mLU-ja-0073"
+    },
+    {
+      "text": "することの幅の可能性というのはどんどん",
+      "start_seconds": 624.68,
+      "end_seconds": 626.6,
+      "id": "2PZHoGx4mLU-display-0225",
+      "segment_id": "2PZHoGx4mLU-ja-0073"
+    },
+    {
+      "text": "狭まっていってるんじゃないかと感じて",
+      "start_seconds": 626.6,
+      "end_seconds": 628.36,
+      "id": "2PZHoGx4mLU-display-0226",
+      "segment_id": "2PZHoGx4mLU-ja-0074"
+    },
+    {
+      "text": "いるところです。今日僕がお伝えしたかっ",
+      "start_seconds": 628.36,
+      "end_seconds": 631.16,
+      "id": "2PZHoGx4mLU-display-0227",
+      "segment_id": "2PZHoGx4mLU-ja-0074"
+    },
+    {
+      "text": "たアイデアというのはこの知らないこと",
+      "start_seconds": 631.16,
+      "end_seconds": 633.36,
+      "id": "2PZHoGx4mLU-display-0228",
+      "segment_id": "2PZHoGx4mLU-ja-0074"
+    },
+    {
+      "text": "こそ挑戦しいがあるということです。先生",
+      "start_seconds": 633.36,
+      "end_seconds": 637.279,
+      "id": "2PZHoGx4mLU-display-0229",
+      "segment_id": "2PZHoGx4mLU-ja-0074"
+    },
+    {
+      "text": "の言葉はいつでも僕に勇気をくれます。",
+      "start_seconds": 637.279,
+      "end_seconds": 639.839,
+      "id": "2PZHoGx4mLU-display-0230",
+      "segment_id": "2PZHoGx4mLU-ja-0075"
+    },
+    {
+      "text": "知らないからこそ僕にできることがある",
+      "start_seconds": 639.839,
+      "end_seconds": 642.12,
+      "id": "2PZHoGx4mLU-display-0231",
+      "segment_id": "2PZHoGx4mLU-ja-0076"
+    },
+    {
+      "text": "はずだといつでも思わせてくれるんです。",
+      "start_seconds": 642.12,
+      "end_seconds": 645.519,
+      "id": "2PZHoGx4mLU-display-0232",
+      "segment_id": "2PZHoGx4mLU-ja-0076"
+    },
+    {
+      "text": "このテットトークもそうでした。もし僕が",
+      "start_seconds": 645.519,
+      "end_seconds": 648.24,
+      "id": "2PZHoGx4mLU-display-0233",
+      "segment_id": "2PZHoGx4mLU-ja-0077"
+    },
+    {
+      "text": "事前にこの赤い絨毯の緊張感を知ってい",
+      "start_seconds": 648.24,
+      "end_seconds": 650.8,
+      "id": "2PZHoGx4mLU-display-0234",
+      "segment_id": "2PZHoGx4mLU-ja-0077"
+    },
+    {
+      "text": "たらこのトークは引き受けなかったかも",
+      "start_seconds": 650.8,
+      "end_seconds": 652.72,
+      "id": "2PZHoGx4mLU-display-0235",
+      "segment_id": "2PZHoGx4mLU-ja-0077"
+    },
+    {
+      "text": "しれませんですが僕は知らなかったんです",
+      "start_seconds": 652.72,
+      "end_seconds": 655.2,
+      "id": "2PZHoGx4mLU-display-0236",
+      "segment_id": "2PZHoGx4mLU-ja-0077"
+    },
+    {
+      "text": "。知らなかったからこそ今日こうして無謀",
+      "start_seconds": 655.2,
+      "end_seconds": 657.68,
+      "id": "2PZHoGx4mLU-display-0237",
+      "segment_id": "2PZHoGx4mLU-ja-0078"
+    },
+    {
+      "text": "にも皆さんの前に立つことができました。",
+      "start_seconds": 657.68,
+      "end_seconds": 661.44,
+      "id": "2PZHoGx4mLU-display-0238",
+      "segment_id": "2PZHoGx4mLU-ja-0078"
+    },
+    {
+      "text": "僕はまた明日からも知らないことに",
+      "start_seconds": 661.44,
+      "end_seconds": 663.0,
+      "id": "2PZHoGx4mLU-display-0239",
+      "segment_id": "2PZHoGx4mLU-ja-0079"
+    },
+    {
+      "text": "どんどん挑戦していくつもりです。皆さん",
+      "start_seconds": 663.0,
+      "end_seconds": 664.76,
+      "id": "2PZHoGx4mLU-display-0240",
+      "segment_id": "2PZHoGx4mLU-ja-0079"
+    },
+    {
+      "text": "もきっとそうだと思います。またどこか僕",
+      "start_seconds": 664.76,
+      "end_seconds": 667.24,
+      "id": "2PZHoGx4mLU-display-0241",
+      "segment_id": "2PZHoGx4mLU-ja-0079"
+    },
+    {
+      "text": "や皆さんがまだ知らない場所で再開できる",
+      "start_seconds": 667.24,
+      "end_seconds": 669.8,
+      "id": "2PZHoGx4mLU-display-0242",
+      "segment_id": "2PZHoGx4mLU-ja-0079"
+    },
+    {
+      "text": "ことを楽しみにしています。ありがとう",
+      "start_seconds": 669.8,
+      "end_seconds": 671.839,
+      "id": "2PZHoGx4mLU-display-0243",
+      "segment_id": "2PZHoGx4mLU-ja-0079"
+    },
+    {
+      "text": "ございました。",
+      "start_seconds": 671.839,
+      "end_seconds": 674.002,
+      "id": "2PZHoGx4mLU-display-0244",
+      "segment_id": "2PZHoGx4mLU-ja-0080"
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 674.002,
+      "end_seconds": 676.0219999999999,
+      "id": "2PZHoGx4mLU-display-0245",
+      "segment_id": "2PZHoGx4mLU-ja-0081"
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 678.587,
+      "end_seconds": 680.607,
+      "id": "2PZHoGx4mLU-display-0246",
+      "segment_id": "2PZHoGx4mLU-ja-0082"
+    }
+  ]
+}

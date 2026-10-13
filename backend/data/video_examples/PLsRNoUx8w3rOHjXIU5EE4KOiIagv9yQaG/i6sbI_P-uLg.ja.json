@@ -1,0 +1,4108 @@
+{
+  "schema_version": 1,
+  "video": {
+    "youtube_id": "i6sbI_P-uLg",
+    "title": "The Game-Filter Mindset: A Win-Win-Win Approach | Kozo Yamada | TEDxMarunouchi",
+    "channel": "TEDx Talks",
+    "duration_seconds": 917
+  },
+  "caption_track": {
+    "language": "ja",
+    "kind": "asr",
+    "source": "youtube_automatic"
+  },
+  "source_playlist": "https://www.youtube.com/playlist?list=PLsRNoUx8w3rOHjXIU5EE4KOiIagv9yQaG",
+  "fetched_at": "2026-10-13T13:24:01.426201+00:00",
+  "segment_count": 95,
+  "segments": [
+    {
+      "text": "[拍手]",
+      "start_seconds": 14.41,
+      "end_seconds": 16.43,
+      "id": "i6sbI_P-uLg-ja-0001",
+      "sequence": 1
+    },
+    {
+      "text": "はい[拍手]。え、株なご紹介いただきました山田高でございます。今日は、あの、皆さんの課題解決に役立つ、え、ゲームフィルター思考というものを、え、ご紹介",
+      "start_seconds": 18.84,
+      "end_seconds": 29.279,
+      "id": "i6sbI_P-uLg-ja-0002",
+      "sequence": 2
+    },
+    {
+      "text": "させていただきたいと思います。はい。え、早速ですけれども、皆さんそれぞれ解決したいなと思ってらっしゃる課題ございますか?いろんなものあると思います。",
+      "start_seconds": 29.279,
+      "end_seconds": 41.2,
+      "id": "i6sbI_P-uLg-ja-0003",
+      "sequence": 3
+    },
+    {
+      "text": "個人的なものから、あの、社会的なもの、世界的なものあると思いますけれども、あ、意外と今日は手を上げられない方々が多い。はい。はい。おそらくですね、",
+      "start_seconds": 41.2,
+      "end_seconds": 52.559,
+      "id": "i6sbI_P-uLg-ja-0004",
+      "sequence": 4
+    },
+    {
+      "text": "300の課題がここには存在してると思います。そしてもう1つ、皆さん普段ゲーム",
+      "start_seconds": 52.559,
+      "end_seconds": 59.519,
+      "id": "i6sbI_P-uLg-ja-0005",
+      "sequence": 5
+    },
+    {
+      "text": "やられますか?あ、まさか。え、ゼロに近い。はい。これ非常に重要なマフりでございます。つまり皆さんにとってゲーム",
+      "start_seconds": 59.519,
+      "end_seconds": 70.64,
+      "id": "i6sbI_P-uLg-ja-0006",
+      "sequence": 6
+    },
+    {
+      "text": "をやってる世界っていうのはほぼ関係がないってことです。この数字全人類82億人の中で35億人がゲームをやってます。皆",
+      "start_seconds": 70.64,
+      "end_seconds": 82.28,
+      "id": "i6sbI_P-uLg-ja-0007",
+      "sequence": 7
+    },
+    {
+      "text": "さんはやられてませんが驚くべき数字でそして驚くべきエネルギーお金え動いてます。ゲームの世界。このエネルギーを皆",
+      "start_seconds": 82.28,
+      "end_seconds": 92.479,
+      "id": "i6sbI_P-uLg-ja-0008",
+      "sequence": 8
+    },
+    {
+      "text": "さんの300個の課題の解決にこう流し込んでみようというのがゲームフィルター思考でございます。ゲームフィルター思考でですね、1番大事なのは",
+      "start_seconds": 92.479,
+      "end_seconds": 102.399,
+      "id": "i6sbI_P-uLg-ja-0009",
+      "sequence": 9
+    },
+    {
+      "text": "これから何回も言いますけども、その皆さんの課題に関係ない人を見つけてください。関係ない人。ここがめちゃくちゃポイントでございます。はい",
+      "start_seconds": 102.399,
+      "end_seconds": 113.32,
+      "id": "i6sbI_P-uLg-ja-0010",
+      "sequence": 10
+    },
+    {
+      "text": "。",
+      "start_seconds": 113.32,
+      "end_seconds": 115.079,
+      "id": "i6sbI_P-uLg-ja-0011",
+      "sequence": 11
+    },
+    {
+      "text": "私ですね、元々、え、民法テレビ局で、え、番組企画、ま、バラエティ番組とか、え、作っていた人間でございます。え、テレビ局の商売っていうのは結構変わった",
+      "start_seconds": 115.079,
+      "end_seconds": 126.6,
+      "id": "i6sbI_P-uLg-ja-0012",
+      "sequence": 12
+    },
+    {
+      "text": "商売で、こちらは普通の商売ですね。",
+      "start_seconds": 126.6,
+      "end_seconds": 128.64,
+      "id": "i6sbI_P-uLg-ja-0013",
+      "sequence": 13
+    },
+    {
+      "text": "ほとんどの商売これかなと。え、りんご売ってる方りんごを渡してそのお客さんからお金いただく。これが普通の商売です",
+      "start_seconds": 128.64,
+      "end_seconds": 137.0,
+      "id": "i6sbI_P-uLg-ja-0014",
+      "sequence": 14
+    },
+    {
+      "text": "けども民法テレビ局は私ですね、徹夜であの地道を履きながら番組作ってですね、皆さんに見てもらっても一応1円もお題",
+      "start_seconds": 137.0,
+      "end_seconds": 147.239,
+      "id": "i6sbI_P-uLg-ja-0015",
+      "sequence": 15
+    },
+    {
+      "text": "いただかない。これがテレビ局の仕事でございます。で、違うところからスポンサー企業様のお金が動いて巨大な経済権、巨大な影響力もすっかりあの言い",
+      "start_seconds": 147.239,
+      "end_seconds": 157.44,
+      "id": "i6sbI_P-uLg-ja-0016",
+      "sequence": 16
+    },
+    {
+      "text": "方下がりになってしまいましたが、あのそういうものを作ってきたというような業界で、え、ずっと15年やってまいりました。で、あのテレビを卒業してですね",
+      "start_seconds": 157.44,
+      "end_seconds": 167.08,
+      "id": "i6sbI_P-uLg-ja-0017",
+      "sequence": 17
+    },
+    {
+      "text": "、え、課題解決ゲームっていう事業に進んだ今、え、テレビ素晴らしい影響力持ちえますけれどもゲームすごいんですよ。見てるだけだとゲームできないんで",
+      "start_seconds": 167.08,
+      "end_seconds": 177.56,
+      "id": "i6sbI_P-uLg-ja-0018",
+      "sequence": 18
+    },
+    {
+      "text": "アクション取らないといけない。これと課題を解決することの相性がめちゃくちゃいいっていうわけですね。この数字何か分かる方がいたらすごいんですけど、これ",
+      "start_seconds": 177.56,
+      "end_seconds": 188.36,
+      "id": "i6sbI_P-uLg-ja-0019",
+      "sequence": 19
+    },
+    {
+      "text": "は日本中に、え、設置されている電柱電身柱の総数です。え、日本のあのあらゆるインフラがですね、え、今老朽化、え、",
+      "start_seconds": 188.36,
+      "end_seconds": 198.959,
+      "id": "i6sbI_P-uLg-ja-0020",
+      "sequence": 20
+    },
+    {
+      "text": "機器を迎えています。道路に穴が開いちゃったみたいなのもありますけれども、電柱、え、電身柱も非常に重要なインフラです。元気がちゃんと皆さんの手元に届く",
+      "start_seconds": 198.959,
+      "end_seconds": 208.64,
+      "id": "i6sbI_P-uLg-ja-0021",
+      "sequence": 21
+    },
+    {
+      "text": "ためにはこの電柱がしっかり機能してないといけない。これをですね、点検するのめちゃくちゃ大変なんですね。全部調べるのに年間で100億円ぐらいかかって",
+      "start_seconds": 208.64,
+      "end_seconds": 217.64,
+      "id": "i6sbI_P-uLg-ja-0022",
+      "sequence": 22
+    },
+    {
+      "text": "るっていうようなお話があります。さあ、この点検関係ない人見つけてきてですね、散歩余しにできないか。これがゲームフィルター思考です。",
+      "start_seconds": 217.64,
+      "end_seconds": 229.4,
+      "id": "i6sbI_P-uLg-ja-0023",
+      "sequence": 23
+    },
+    {
+      "text": "電柱に関係ない人誰だろうっていう風に考えてみてください。これはもうすごくシンプルででして、電柱あることには、ま、気づいてるというか、え、その前は毎日",
+      "start_seconds": 229.4,
+      "end_seconds": 240.76,
+      "id": "i6sbI_P-uLg-ja-0024",
+      "sequence": 24
+    },
+    {
+      "text": "歩いてる、つまり皆さんですね、大体電柱を避けて歩くのほぼ日本では不可能なので、あの、皆さんが元々電柱に関係ない人",
+      "start_seconds": 240.76,
+      "end_seconds": 249.879,
+      "id": "i6sbI_P-uLg-ja-0025",
+      "sequence": 25
+    },
+    {
+      "text": "たちですと。で、ゲームフィルター思考でですね、え、これを、え、ジト合戦ゲームみたいな形でチームに分れてどんどん取ってくぞと、領土を拡大してくぞっていう",
+      "start_seconds": 249.879,
+      "end_seconds": 261.639,
+      "id": "i6sbI_P-uLg-ja-0026",
+      "sequence": 26
+    },
+    {
+      "text": "ゲームを、え、作ってみました。",
+      "start_seconds": 261.639,
+      "end_seconds": 263.96,
+      "id": "i6sbI_P-uLg-ja-0027",
+      "sequence": 27
+    },
+    {
+      "text": "そこで撮影された、え、写真がそのインフラの責任入体に届くという形です。",
+      "start_seconds": 263.96,
+      "end_seconds": 266.96,
+      "id": "i6sbI_P-uLg-ja-0028",
+      "sequence": 28
+    },
+    {
+      "text": "写真で撮られたカラスが、え、現地にもあることができました。",
+      "start_seconds": 271.039,
+      "end_seconds": 274.039,
+      "id": "i6sbI_P-uLg-ja-0029",
+      "sequence": 29
+    },
+    {
+      "text": "カラスの巣があるとね、停電の危機があるんですね。",
+      "start_seconds": 277.0,
+      "end_seconds": 280.0,
+      "id": "i6sbI_P-uLg-ja-0030",
+      "sequence": 30
+    },
+    {
+      "text": "ながら、ま、我々のあの仕事につがる、え、非常に有効な写真を送っていただける。",
+      "start_seconds": 280.0,
+      "end_seconds": 283.0,
+      "id": "i6sbI_P-uLg-ja-0031",
+      "sequence": 31
+    },
+    {
+      "text": "このチームと競むのがすごい楽しかったです。",
+      "start_seconds": 286.88,
+      "end_seconds": 289.88,
+      "id": "i6sbI_P-uLg-ja-0032",
+      "sequence": 32
+    },
+    {
+      "text": "街をもう1度改めて回って知らない地面を見れたり",
+      "start_seconds": 290.72,
+      "end_seconds": 294.56,
+      "id": "i6sbI_P-uLg-ja-0033",
+      "sequence": 33
+    },
+    {
+      "text": "というような形でゲームにしちゃうと大変だった電柱点検作業っていうのが関係なかった人の力を借りて一気に効率化できる。それってゲームミフケーションじゃないのっていう風に思われた方いらっしゃいます。ま、その通りです。",
+      "start_seconds": 295.28,
+      "end_seconds": 298.28,
+      "id": "i6sbI_P-uLg-ja-0034",
+      "sequence": 34
+    },
+    {
+      "text": "ゲーミフィケーションていう言葉の定義、ま、色々ありますけれども、世間一般のゲーミフィケーションはですね、あの、内部の人たちにポイントつけたり、え、色々報酬つけたりして頑張ってもらうん",
+      "start_seconds": 309.36,
+      "end_seconds": 320.319,
+      "id": "i6sbI_P-uLg-ja-0035",
+      "sequence": 35
+    },
+    {
+      "text": "ですね。でも今日皆さんにお話してるゲームフィルター思考は無関係だった人を新しい関係者にする。だからゼロサムから離脱できるっていうわけですね。ここが",
+      "start_seconds": 320.319,
+      "end_seconds": 330.8,
+      "id": "i6sbI_P-uLg-ja-0036",
+      "sequence": 36
+    },
+    {
+      "text": "めちゃくちゃ重要なところです。3.6倍。こちらはですね、ゴミの、え、廃棄物の",
+      "start_seconds": 330.8,
+      "end_seconds": 338.479,
+      "id": "i6sbI_P-uLg-ja-0037",
+      "sequence": 37
+    },
+    {
+      "text": "処理の、え、事業領域におけるが発生する確率が全事業平均の3.6倍高いってわけです。ゴミの分別ってやりたい職業かって",
+      "start_seconds": 338.479,
+      "end_seconds": 350.479,
+      "id": "i6sbI_P-uLg-ja-0038",
+      "sequence": 38
+    },
+    {
+      "text": "言うととてもそうではない。おそらく、ま、汚い臭いっていうのもありますけれども、危ないんですよね。こういったところもあって、誰かがやんないといけない仕事",
+      "start_seconds": 350.479,
+      "end_seconds": 359.96,
+      "id": "i6sbI_P-uLg-ja-0039",
+      "sequence": 39
+    },
+    {
+      "text": "ですが、やはり成りも少なく、え、大変な業界です。ここに無関係な人を連れてきましょう。ま、大体、あの、この場で無関係な話は大体ゲーム業界に引き取って",
+      "start_seconds": 359.96,
+      "end_seconds": 371.0,
+      "id": "i6sbI_P-uLg-ja-0040",
+      "sequence": 40
+    },
+    {
+      "text": "もらえば関係なかったはずの人なので、ゲーム業界連れてきましょう。eスポーツ業界。私民法テレビ局でやってた時も、あの、高校生がですね、部活でeスポーツ",
+      "start_seconds": 371.0,
+      "end_seconds": 381.72,
+      "id": "i6sbI_P-uLg-ja-0041",
+      "sequence": 41
+    },
+    {
+      "text": "で青春を燃やしてる様子を取材したことがあります。え、敵をですね、こう戦争ゲームでやっつけるために、え、めちゃくちゃ練習して大会の時に、え、勝ったらですね、もうハイタッチで泣いて",
+      "start_seconds": 381.72,
+      "end_seconds": 392.599,
+      "id": "i6sbI_P-uLg-ja-0042",
+      "sequence": 42
+    },
+    {
+      "text": "喜ぶ。これがeスポーツの世界ずっと日本世界で起きています。こういった話をですね、今最先端のテクノロジー遠隔ですね。",
+      "start_seconds": 392.599,
+      "end_seconds": 401.44,
+      "id": "i6sbI_P-uLg-ja-0043",
+      "sequence": 43
+    },
+    {
+      "text": "ま、ネットワークその他いろんなロボティクスが進化していますので、え、遠くの力を、え、正確にどこかに伝えるってことができる。これを組み合わせれ",
+      "start_seconds": 401.44,
+      "end_seconds": 411.759,
+      "id": "i6sbI_P-uLg-ja-0044",
+      "sequence": 44
+    },
+    {
+      "text": "ばこういうことができる。ゲームで分別していったその、え、指示をどこか遠隔に",
+      "start_seconds": 411.759,
+      "end_seconds": 419.639,
+      "id": "i6sbI_P-uLg-ja-0045",
+      "sequence": 45
+    },
+    {
+      "text": "ある、え、工場のロボットに連携させてゲームを遊んでる気分の人の作業が実際の",
+      "start_seconds": 419.639,
+      "end_seconds": 428.479,
+      "id": "i6sbI_P-uLg-ja-0046",
+      "sequence": 46
+    },
+    {
+      "text": "向場に、え、伝わるようにする。これがゲームフルター。それとどうなるか。",
+      "start_seconds": 428.479,
+      "end_seconds": 436.24,
+      "id": "i6sbI_P-uLg-ja-0047",
+      "sequence": 47
+    },
+    {
+      "text": "すげえ。なんかすげえ。",
+      "start_seconds": 436.24,
+      "end_seconds": 438.8,
+      "id": "i6sbI_P-uLg-ja-0048",
+      "sequence": 48
+    },
+    {
+      "text": "この人たちフィリピンから新潟動かしてます。",
+      "start_seconds": 438.8,
+      "end_seconds": 441.8,
+      "id": "i6sbI_P-uLg-ja-0049",
+      "sequence": 49
+    },
+    {
+      "text": "世界中にはですね、35億人のゲームやりたい人たちがいるんですよ。そのエネルギーを使うと、見てください。これやりたかったやつ。ゴミの分別してよっしゃって喜んでるんですよね。これができる。",
+      "start_seconds": 444.759,
+      "end_seconds": 449.759,
+      "id": "i6sbI_P-uLg-ja-0050",
+      "sequence": 50
+    },
+    {
+      "text": "だから危なくて誰もやりたくない仕事でもゲームフィルター思考を使っば関係ない人の力を、え、持ってきてこれだけ盛り上がることができる。これがゲーム",
+      "start_seconds": 458.879,
+      "end_seconds": 469.159,
+      "id": "i6sbI_P-uLg-ja-0051",
+      "sequence": 51
+    },
+    {
+      "text": "フィルター思考です。896。これは衝撃的な数字です。日本には1719の、え、",
+      "start_seconds": 469.159,
+      "end_seconds": 477.319,
+      "id": "i6sbI_P-uLg-ja-0052",
+      "sequence": 52
+    },
+    {
+      "text": "自治体があります。そのうち896が2040年までに消滅する可能性があると",
+      "start_seconds": 477.319,
+      "end_seconds": 485.28,
+      "id": "i6sbI_P-uLg-ja-0053",
+      "sequence": 53
+    },
+    {
+      "text": "言われている数字です。もう1つ39%は2050年までに人口が半分になってしまう自治体の数です。つまり日本はです",
+      "start_seconds": 485.28,
+      "end_seconds": 496.12,
+      "id": "i6sbI_P-uLg-ja-0054",
+      "sequence": 54
+    },
+    {
+      "text": "ね、もう消えていこうとしている地方からっていう状態ですね。例えばそん中でも先進と言われている北海道黄色いところ",
+      "start_seconds": 496.12,
+      "end_seconds": 504.44,
+      "id": "i6sbI_P-uLg-ja-0055",
+      "sequence": 55
+    },
+    {
+      "text": "が消滅可能性のあるところです。",
+      "start_seconds": 504.44,
+      "end_seconds": 508.199,
+      "id": "i6sbI_P-uLg-ja-0056",
+      "sequence": 56
+    },
+    {
+      "text": "函館市例えばその函館市すら消滅可能性の、え、黄色に、え、なってしまっています。では函館市に関係ない人、目一杯関係",
+      "start_seconds": 508.199,
+      "end_seconds": 519.12,
+      "id": "i6sbI_P-uLg-ja-0057",
+      "sequence": 57
+    },
+    {
+      "text": "ない人連れてきこようじゃないかっていうわけですね。ゲームの世界ではですね、え、ポイカっていうのがちょっとあります。",
+      "start_seconds": 519.12,
+      "end_seconds": 526.32,
+      "id": "i6sbI_P-uLg-ja-0058",
+      "sequence": 58
+    },
+    {
+      "text": "え、ポイント活動っていうのをやってほんのちょっとお金を稼ぐってのが日本中世界中で存在している。",
+      "start_seconds": 526.32,
+      "end_seconds": 532.48,
+      "id": "i6sbI_P-uLg-ja-0059",
+      "sequence": 59
+    },
+    {
+      "text": "どこかでそれをやってる人を連れてきてみたらどうだ?中米2から具の人を連れてきてみようっていう形でやってみたらですね。",
+      "start_seconds": 532.48,
+      "end_seconds": 538.72,
+      "id": "i6sbI_P-uLg-ja-0060",
+      "sequence": 60
+    },
+    {
+      "text": "1日1個だけあの2分で拡散できる情報を毎日60個彼女は、え、拡散し続けました。そうするとおそらくここにいる皆さんよりずっと函館に詳しくなったんですよね",
+      "start_seconds": 560.04,
+      "end_seconds": 570.88,
+      "id": "i6sbI_P-uLg-ja-0061",
+      "sequence": 61
+    },
+    {
+      "text": "。だから言ったこともない、聞いたこともなかったけど、もうすっかりデジタルの関係人口がこうやって生まれたっていうわけです。これをうまく自治体と連携させて使っていこうというのがゲムフルター",
+      "start_seconds": 570.88,
+      "end_seconds": 582.519,
+      "id": "i6sbI_P-uLg-ja-0062",
+      "sequence": 62
+    },
+    {
+      "text": "思考です。4割。え、これはですね、川の、え、魚の炭水魚の絶滅器具の割合、もう",
+      "start_seconds": 582.519,
+      "end_seconds": 591.0,
+      "id": "i6sbI_P-uLg-ja-0063",
+      "sequence": 63
+    },
+    {
+      "text": "環境の破壊みたいな話は、ま、川ではなく海や山やいろんなところで起きていますが、え、川、え、川のお魚、え、その環境を",
+      "start_seconds": 591.0,
+      "end_seconds": 601.44,
+      "id": "i6sbI_P-uLg-ja-0064",
+      "sequence": 64
+    },
+    {
+      "text": "守るにはどうしたら関係ない人、ま、得意のゲームユーザー連れてきましょうというわけですね。リビングからスマホで実際に",
+      "start_seconds": 601.44,
+      "end_seconds": 610.8,
+      "id": "i6sbI_P-uLg-ja-0065",
+      "sequence": 65
+    },
+    {
+      "text": "釣りができる仕組みがあって1回、ま、海外の人ね、お金いっぱい持ってますから1回3000円、5000円、30ドル",
+      "start_seconds": 610.8,
+      "end_seconds": 619.72,
+      "id": "i6sbI_P-uLg-ja-0066",
+      "sequence": 66
+    },
+    {
+      "text": "多分いける。で、そういう人たちのお金がどこか地域の、え、置かれているロボットの世話をしている人たちの、え、雇用に",
+      "start_seconds": 619.72,
+      "end_seconds": 629.079,
+      "id": "i6sbI_P-uLg-ja-0067",
+      "sequence": 67
+    },
+    {
+      "text": "当てられたり、行くばっかのお金が川を守る、え、お金に使われる。こういった仕組みを世界を、え、舞台に作っていこう。ゲームフィルター思考です。4.4%。",
+      "start_seconds": 629.079,
+      "end_seconds": 640.48,
+      "id": "i6sbI_P-uLg-ja-0068",
+      "sequence": 68
+    },
+    {
+      "text": "これはですね、関係ない人がいないはずの、え、防災に関する話です。普段避難訓練があった時にいっつもちゃんと参加してる",
+      "start_seconds": 640.48,
+      "end_seconds": 650.8,
+      "id": "i6sbI_P-uLg-ja-0069",
+      "sequence": 69
+    },
+    {
+      "text": "よって人は4.4%。これちょっとまた手を上げて聞いてみたいんですけど、えっと私調べてはですね、避難訓練に1回も参加したことない人は64.5%",
+      "start_seconds": 650.8,
+      "end_seconds": 662.44,
+      "id": "i6sbI_P-uLg-ja-0070",
+      "sequence": 70
+    },
+    {
+      "text": "参加したことあるよっていう人、あ、やはりですね、皆さんここにいらっしゃる方意識がちゃんと高いんで[笑い]、あの",
+      "start_seconds": 662.44,
+      "end_seconds": 671.56,
+      "id": "i6sbI_P-uLg-ja-0071",
+      "sequence": 71
+    },
+    {
+      "text": "大丈夫なんですけど、つまり日本ではですね、もうきるべき大災害に向けてやばいやばいと言いながら何もしてないっていうのが現実なんですよ。じゃあ関係",
+      "start_seconds": 671.56,
+      "end_seconds": 682.32,
+      "id": "i6sbI_P-uLg-ja-0072",
+      "sequence": 72
+    },
+    {
+      "text": "ない人はもういないわけです。災害ですから。じゃあですね、普段の皆さんがやっている元々夢中になってることに被せちゃえばいいんじゃないの。例えば高校",
+      "start_seconds": 682.32,
+      "end_seconds": 692.24,
+      "id": "i6sbI_P-uLg-ja-0073",
+      "sequence": 73
+    },
+    {
+      "text": "野球、高校野球不思議です。僕自身も野球やんないですけど、自分の地元の高校が勝ちんでるとですね、なんかめちゃくちゃ",
+      "start_seconds": 692.24,
+      "end_seconds": 701.32,
+      "id": "i6sbI_P-uLg-ja-0074",
+      "sequence": 74
+    },
+    {
+      "text": "応援しちゃうみたいな老女ですよね。関係ない人がなんかこう向きになって応援するみたいなことが毎年起きてます。ここを",
+      "start_seconds": 701.32,
+      "end_seconds": 711.12,
+      "id": "i6sbI_P-uLg-ja-0075",
+      "sequence": 75
+    },
+    {
+      "text": "防災の、え、住民のポイントで競い合う全国防災チャンピオンシップっていうのを作ったらどうなるか今年動きます。ゲーム",
+      "start_seconds": 711.12,
+      "end_seconds": 720.92,
+      "id": "i6sbI_P-uLg-ja-0076",
+      "sequence": 76
+    },
+    {
+      "text": "振りたこ色々とお話をしてきましたが、皆さんですね、課題を解決する、え、その時には必ず関係者が集まってそれぞれの知見",
+      "start_seconds": 720.92,
+      "end_seconds": 731.24,
+      "id": "i6sbI_P-uLg-ja-0077",
+      "sequence": 77
+    },
+    {
+      "text": "で頭を悩ます。これが普通の課題解決のやり方です。今日皆さんに是非あの覚えて帰っていただきたいゲーミーフルター思考",
+      "start_seconds": 731.24,
+      "end_seconds": 740.24,
+      "id": "i6sbI_P-uLg-ja-0078",
+      "sequence": 78
+    },
+    {
+      "text": "はそうではない。この世の中にはですね、視界を広げればエネルギーや興味や活力や知識をいっぱい持ってるいろんな人たちが",
+      "start_seconds": 740.24,
+      "end_seconds": 749.639,
+      "id": "i6sbI_P-uLg-ja-0079",
+      "sequence": 79
+    },
+    {
+      "text": "いるんですね。その人たちは皆さんは関係ないと思ってる。でも関係あるようにしてあげればいいっていうわけですね。",
+      "start_seconds": 749.639,
+      "end_seconds": 757.76,
+      "id": "i6sbI_P-uLg-ja-0080",
+      "sequence": 80
+    },
+    {
+      "text": "いろんな人たちの力を借りる。これがゲームフィルター思考ですけれども、例えば600万人、この数字は、え、日本における精神障害をお持ちの方々の人数",
+      "start_seconds": 757.76,
+      "end_seconds": 769.399,
+      "id": "i6sbI_P-uLg-ja-0081",
+      "sequence": 81
+    },
+    {
+      "text": "です。どんどん増えている。いわゆる家から出られない引きこもりみたいな方々もこの数字に含まれます。そういった方々が何をしてるかというと、実質であるいは",
+      "start_seconds": 769.399,
+      "end_seconds": 780.56,
+      "id": "i6sbI_P-uLg-ja-0082",
+      "sequence": 82
+    },
+    {
+      "text": "施設で、え、テレビモニターや、え、パソコンやゲーム機の前で座ってるそういった活力ですね。え、エネルギー、え、",
+      "start_seconds": 780.56,
+      "end_seconds": 789.68,
+      "id": "i6sbI_P-uLg-ja-0083",
+      "sequence": 83
+    },
+    {
+      "text": "そういったものをちゃんと社会に誰かが必要としてるところにつぎ込むことができるんじゃないか。これが、え、ゲームフィルター思考ということになります。",
+      "start_seconds": 789.68,
+      "end_seconds": 801.12,
+      "id": "i6sbI_P-uLg-ja-0084",
+      "sequence": 84
+    },
+    {
+      "text": "是非ですね、あの、皆様最初に頭に浮かんだご自身の課題、ここに全く関係ない人は誰だろうって一度考えてみてください。皆",
+      "start_seconds": 801.12,
+      "end_seconds": 813.079,
+      "id": "i6sbI_P-uLg-ja-0085",
+      "sequence": 85
+    },
+    {
+      "text": "さんが忘れていますが、いつも地球の裏側には2側の人がいるんですよね。2側の人に手伝ってもらうわけにはいかないのか",
+      "start_seconds": 813.079,
+      "end_seconds": 822.12,
+      "id": "i6sbI_P-uLg-ja-0086",
+      "sequence": 86
+    },
+    {
+      "text": "なっていう考え方。今のテクノロジーをうまく活用してそういう風な、え、仕組みづりをする。それはできる話なん",
+      "start_seconds": 822.12,
+      "end_seconds": 831.519,
+      "id": "i6sbI_P-uLg-ja-0087",
+      "sequence": 87
+    },
+    {
+      "text": "ですよね。もし残り時間があれば僕は300個の課題を全部あのゲームで解決するアイデアを1個1個お渡しできる。",
+      "start_seconds": 831.519,
+      "end_seconds": 842.399,
+      "id": "i6sbI_P-uLg-ja-0088",
+      "sequence": 88
+    },
+    {
+      "text": "そういう自信が[笑い][息をのむ音]あります。是非ですね、今日あのこの考え方を覚えて帰っていただいて、え、まず皆さんが抱えて本当に困っている課題に対し",
+      "start_seconds": 842.399,
+      "end_seconds": 852.759,
+      "id": "i6sbI_P-uLg-ja-0089",
+      "sequence": 89
+    },
+    {
+      "text": "て関係ない人っていうのを、え、想定してみてください。そしてその人に嫌な作業を押し付けるんじゃなくて、その人が今何し",
+      "start_seconds": 852.759,
+      "end_seconds": 863.36,
+      "id": "i6sbI_P-uLg-ja-0090",
+      "sequence": 90
+    },
+    {
+      "text": "てるんだろう?その人が普段してることって何だろう?その延長線上で力をちょっと貸していただくわけにはいかないか。こういうような考え方。これがゲーム",
+      "start_seconds": 863.36,
+      "end_seconds": 874.279,
+      "id": "i6sbI_P-uLg-ja-0091",
+      "sequence": 91
+    },
+    {
+      "text": "フィルター思考でございます。ということで、え、散歩良し、誰かに、え、負担を押し付けるのではなくて、え、繋がりを",
+      "start_seconds": 874.279,
+      "end_seconds": 884.56,
+      "id": "i6sbI_P-uLg-ja-0092",
+      "sequence": 92
+    },
+    {
+      "text": "世界に感じながら関係ないと思い込んでいた人達っていうのを関係者にして、その皆さん全体で散歩良しになる仕組みというの",
+      "start_seconds": 884.56,
+      "end_seconds": 894.56,
+      "id": "i6sbI_P-uLg-ja-0093",
+      "sequence": 93
+    },
+    {
+      "text": "を、え、作っていければと思っております。ということで、え、今日は山田から皆様に、え、ゲームフィルター思考について、え、お話をさせていただきました。はい、",
+      "start_seconds": 894.56,
+      "end_seconds": 906.399,
+      "id": "i6sbI_P-uLg-ja-0094",
+      "sequence": 94
+    },
+    {
+      "text": "ご成聴ありがとうございました。[拍手]",
+      "start_seconds": 906.399,
+      "end_seconds": 910.515,
+      "id": "i6sbI_P-uLg-ja-0095",
+      "sequence": 95
+    }
+  ],
+  "raw_captions": [
+    {
+      "text": "[拍手]",
+      "start_seconds": 14.41,
+      "end_seconds": 16.43
+    },
+    {
+      "text": "はい[拍手]。え、株なご紹介いただき",
+      "start_seconds": 18.84,
+      "end_seconds": 23.72
+    },
+    {
+      "text": "ました山田高でございます。今日は、あの",
+      "start_seconds": 21.56,
+      "end_seconds": 26.919999999999998
+    },
+    {
+      "text": "、皆さんの課題解決に役立つ、え、ゲーム",
+      "start_seconds": 23.72,
+      "end_seconds": 29.279
+    },
+    {
+      "text": "フィルター思考というものを、え、ご紹介",
+      "start_seconds": 26.92,
+      "end_seconds": 32.92
+    },
+    {
+      "text": "させていただきたいと思います。はい。え",
+      "start_seconds": 29.279,
+      "end_seconds": 36.12
+    },
+    {
+      "text": "、早速ですけれども、皆さんそれぞれ解決",
+      "start_seconds": 32.92,
+      "end_seconds": 38.64
+    },
+    {
+      "text": "したいなと思ってらっしゃる課題ござい",
+      "start_seconds": 36.12,
+      "end_seconds": 41.199999999999996
+    },
+    {
+      "text": "ますか?いろんなものあると思います。",
+      "start_seconds": 38.64,
+      "end_seconds": 43.879
+    },
+    {
+      "text": "個人的なものから、あの、社会的なもの、",
+      "start_seconds": 41.2,
+      "end_seconds": 46.68000000000001
+    },
+    {
+      "text": "世界的なものあると思いますけれども、あ",
+      "start_seconds": 43.879,
+      "end_seconds": 49.879
+    },
+    {
+      "text": "、意外と今日は手を上げられない方々が",
+      "start_seconds": 46.68,
+      "end_seconds": 52.559
+    },
+    {
+      "text": "多い。はい。はい。おそらくですね、",
+      "start_seconds": 49.879,
+      "end_seconds": 55.48
+    },
+    {
+      "text": "300の課題がここには存在してると思い",
+      "start_seconds": 52.559,
+      "end_seconds": 59.519
+    },
+    {
+      "text": "ます。そしてもう1つ、皆さん普段ゲーム",
+      "start_seconds": 55.48,
+      "end_seconds": 64.92
+    },
+    {
+      "text": "やられますか?あ、まさか。え、ゼロに",
+      "start_seconds": 59.519,
+      "end_seconds": 68.24
+    },
+    {
+      "text": "近い。はい。これ非常に重要なマフりで",
+      "start_seconds": 64.92,
+      "end_seconds": 70.64
+    },
+    {
+      "text": "ございます。つまり皆さんにとってゲーム",
+      "start_seconds": 68.24,
+      "end_seconds": 73.15899999999999
+    },
+    {
+      "text": "をやってる世界っていうのはほぼ関係がな",
+      "start_seconds": 70.64,
+      "end_seconds": 78.43900000000001
+    },
+    {
+      "text": "いってことです。この数字全人類82億人",
+      "start_seconds": 73.159,
+      "end_seconds": 82.28
+    },
+    {
+      "text": "の中で35億人がゲームをやってます。皆",
+      "start_seconds": 78.439,
+      "end_seconds": 85.83999999999999
+    },
+    {
+      "text": "さんはやられてませんが驚くべき数字で",
+      "start_seconds": 82.28,
+      "end_seconds": 89.32000000000001
+    },
+    {
+      "text": "そして驚くべきエネルギーお金え動いて",
+      "start_seconds": 85.84,
+      "end_seconds": 92.479
+    },
+    {
+      "text": "ます。ゲームの世界。このエネルギーを皆",
+      "start_seconds": 89.32,
+      "end_seconds": 95.03999999999999
+    },
+    {
+      "text": "さんの300個の課題の解決にこう",
+      "start_seconds": 92.479,
+      "end_seconds": 96.52
+    },
+    {
+      "text": "流し込んでみようというのがゲーム",
+      "start_seconds": 95.04,
+      "end_seconds": 99.88000000000001
+    },
+    {
+      "text": "フィルター思考でございます。ゲーム",
+      "start_seconds": 96.52,
+      "end_seconds": 102.399
+    },
+    {
+      "text": "フィルター思考でですね、1番大事なのは",
+      "start_seconds": 99.88,
+      "end_seconds": 105.399
+    },
+    {
+      "text": "これから何回も言いますけども、その皆",
+      "start_seconds": 102.399,
+      "end_seconds": 108.759
+    },
+    {
+      "text": "さんの課題に関係ない人を見つけて",
+      "start_seconds": 105.399,
+      "end_seconds": 111.28
+    },
+    {
+      "text": "ください。関係ない人。ここが",
+      "start_seconds": 108.759,
+      "end_seconds": 113.32
+    },
+    {
+      "text": "めちゃくちゃポイントでございます。はい",
+      "start_seconds": 111.28,
+      "end_seconds": 115.07900000000001
+    },
+    {
+      "text": "。",
+      "start_seconds": 113.32,
+      "end_seconds": 118.79899999999999
+    },
+    {
+      "text": "私ですね、元々、え、民法テレビ局で、え",
+      "start_seconds": 115.079,
+      "end_seconds": 121.52
+    },
+    {
+      "text": "、番組企画、ま、バラエティ番組とか、え",
+      "start_seconds": 118.799,
+      "end_seconds": 124.92
+    },
+    {
+      "text": "、作っていた人間でございます。え、",
+      "start_seconds": 121.52,
+      "end_seconds": 126.6
+    },
+    {
+      "text": "テレビ局の商売っていうのは結構変わった",
+      "start_seconds": 124.92,
+      "end_seconds": 128.64000000000001
+    },
+    {
+      "text": "商売で、こちらは普通の商売ですね。",
+      "start_seconds": 126.6,
+      "end_seconds": 132.04
+    },
+    {
+      "text": "ほとんどの商売これかなと。え、りんご",
+      "start_seconds": 128.64,
+      "end_seconds": 134.95899999999997
+    },
+    {
+      "text": "売ってる方りんごを渡してそのお客さん",
+      "start_seconds": 132.04,
+      "end_seconds": 137.0
+    },
+    {
+      "text": "からお金いただく。これが普通の商売です",
+      "start_seconds": 134.959,
+      "end_seconds": 141.04
+    },
+    {
+      "text": "けども民法テレビ局は私ですね、徹夜で",
+      "start_seconds": 137.0,
+      "end_seconds": 144.28
+    },
+    {
+      "text": "あの地道を履きながら番組作ってですね、",
+      "start_seconds": 141.04,
+      "end_seconds": 147.239
+    },
+    {
+      "text": "皆さんに見てもらっても一応1円もお題",
+      "start_seconds": 144.28,
+      "end_seconds": 149.44
+    },
+    {
+      "text": "いただかない。これがテレビ局の仕事で",
+      "start_seconds": 147.239,
+      "end_seconds": 151.519
+    },
+    {
+      "text": "ございます。で、違うところから",
+      "start_seconds": 149.44,
+      "end_seconds": 154.239
+    },
+    {
+      "text": "スポンサー企業様のお金が動いて巨大な",
+      "start_seconds": 151.519,
+      "end_seconds": 157.44
+    },
+    {
+      "text": "経済権、巨大な影響力もすっかりあの言い",
+      "start_seconds": 154.239,
+      "end_seconds": 159.72
+    },
+    {
+      "text": "方下がりになってしまいましたが、あの",
+      "start_seconds": 157.44,
+      "end_seconds": 161.159
+    },
+    {
+      "text": "そういうものを作ってきたというような",
+      "start_seconds": 159.72,
+      "end_seconds": 163.8
+    },
+    {
+      "text": "業界で、え、ずっと15年やってまいり",
+      "start_seconds": 161.159,
+      "end_seconds": 167.07999999999998
+    },
+    {
+      "text": "ました。で、あのテレビを卒業してですね",
+      "start_seconds": 163.8,
+      "end_seconds": 170.239
+    },
+    {
+      "text": "、え、課題解決ゲームっていう事業に進ん",
+      "start_seconds": 167.08,
+      "end_seconds": 173.28
+    },
+    {
+      "text": "だ今、え、テレビ素晴らしい影響力持ちえ",
+      "start_seconds": 170.239,
+      "end_seconds": 175.48000000000002
+    },
+    {
+      "text": "ますけれどもゲームすごいんですよ。見",
+      "start_seconds": 173.28,
+      "end_seconds": 177.56
+    },
+    {
+      "text": "てるだけだとゲームできないんで",
+      "start_seconds": 175.48,
+      "end_seconds": 179.64
+    },
+    {
+      "text": "アクション取らないといけない。これと",
+      "start_seconds": 177.56,
+      "end_seconds": 181.84
+    },
+    {
+      "text": "課題を解決することの相性がめちゃくちゃ",
+      "start_seconds": 179.64,
+      "end_seconds": 185.51899999999998
+    },
+    {
+      "text": "いいっていうわけですね。この数字何か",
+      "start_seconds": 181.84,
+      "end_seconds": 188.36
+    },
+    {
+      "text": "分かる方がいたらすごいんですけど、これ",
+      "start_seconds": 185.519,
+      "end_seconds": 192.84
+    },
+    {
+      "text": "は日本中に、え、設置されている電柱電身",
+      "start_seconds": 188.36,
+      "end_seconds": 196.239
+    },
+    {
+      "text": "柱の総数です。え、日本のあのあらゆる",
+      "start_seconds": 192.84,
+      "end_seconds": 198.959
+    },
+    {
+      "text": "インフラがですね、え、今老朽化、え、",
+      "start_seconds": 196.239,
+      "end_seconds": 200.799
+    },
+    {
+      "text": "機器を迎えています。道路に穴が開い",
+      "start_seconds": 198.959,
+      "end_seconds": 202.799
+    },
+    {
+      "text": "ちゃったみたいなのもありますけれども、",
+      "start_seconds": 200.799,
+      "end_seconds": 205.76000000000002
+    },
+    {
+      "text": "電柱、え、電身柱も非常に重要なインフラ",
+      "start_seconds": 202.799,
+      "end_seconds": 208.64000000000001
+    },
+    {
+      "text": "です。元気がちゃんと皆さんの手元に届く",
+      "start_seconds": 205.76,
+      "end_seconds": 211.12
+    },
+    {
+      "text": "ためにはこの電柱がしっかり機能してない",
+      "start_seconds": 208.64,
+      "end_seconds": 213.64
+    },
+    {
+      "text": "といけない。これをですね、点検するの",
+      "start_seconds": 211.12,
+      "end_seconds": 216.04
+    },
+    {
+      "text": "めちゃくちゃ大変なんですね。全部調べる",
+      "start_seconds": 213.64,
+      "end_seconds": 217.64
+    },
+    {
+      "text": "のに年間で100億円ぐらいかかって",
+      "start_seconds": 216.04,
+      "end_seconds": 220.959
+    },
+    {
+      "text": "るっていうようなお話があります。さあ、",
+      "start_seconds": 217.64,
+      "end_seconds": 225.159
+    },
+    {
+      "text": "この点検関係ない人見つけてきてですね、",
+      "start_seconds": 220.959,
+      "end_seconds": 226.799
+    },
+    {
+      "text": "散歩余しにできないか。これがゲーム",
+      "start_seconds": 225.159,
+      "end_seconds": 229.39999999999998
+    },
+    {
+      "text": "フィルター思考です。",
+      "start_seconds": 226.799,
+      "end_seconds": 232.519
+    },
+    {
+      "text": "電柱に関係ない人誰だろうっていう風に",
+      "start_seconds": 229.4,
+      "end_seconds": 235.159
+    },
+    {
+      "text": "考えてみてください。これはもうすごく",
+      "start_seconds": 232.519,
+      "end_seconds": 237.92000000000002
+    },
+    {
+      "text": "シンプルででして、電柱あることには、ま",
+      "start_seconds": 235.159,
+      "end_seconds": 240.76
+    },
+    {
+      "text": "、気づいてるというか、え、その前は毎日",
+      "start_seconds": 237.92,
+      "end_seconds": 243.67999999999998
+    },
+    {
+      "text": "歩いてる、つまり皆さんですね、大体電柱",
+      "start_seconds": 240.76,
+      "end_seconds": 245.959
+    },
+    {
+      "text": "を避けて歩くのほぼ日本では不可能なので",
+      "start_seconds": 243.68,
+      "end_seconds": 249.87900000000002
+    },
+    {
+      "text": "、あの、皆さんが元々電柱に関係ない人",
+      "start_seconds": 245.959,
+      "end_seconds": 252.84
+    },
+    {
+      "text": "たちですと。で、ゲームフィルター思考で",
+      "start_seconds": 249.879,
+      "end_seconds": 256.479
+    },
+    {
+      "text": "ですね、え、これを、え、ジト合戦ゲーム",
+      "start_seconds": 252.84,
+      "end_seconds": 259.199
+    },
+    {
+      "text": "みたいな形でチームに分れてどんどん取っ",
+      "start_seconds": 256.479,
+      "end_seconds": 261.639
+    },
+    {
+      "text": "てくぞと、領土を拡大してくぞっていう",
+      "start_seconds": 259.199,
+      "end_seconds": 263.96000000000004
+    },
+    {
+      "text": "ゲームを、え、作ってみました。",
+      "start_seconds": 261.639,
+      "end_seconds": 266.96000000000004
+    },
+    {
+      "text": "そこで撮影された、え、写真がそのインフラの責任入体に届くという形です。",
+      "start_seconds": 263.96,
+      "end_seconds": 266.96
+    },
+    {
+      "text": "写真で撮られたカラスが、え、現地にもあることができました。",
+      "start_seconds": 271.039,
+      "end_seconds": 274.039
+    },
+    {
+      "text": "カラスの巣があるとね、停電の危機があるんですね。",
+      "start_seconds": 277.0,
+      "end_seconds": 283.0
+    },
+    {
+      "text": "ながら、ま、我々のあの仕事につがる、え、非常に有効な写真を送っていただける。",
+      "start_seconds": 280.0,
+      "end_seconds": 283.0
+    },
+    {
+      "text": "このチームと競むのがすごい楽しかったです。",
+      "start_seconds": 286.88,
+      "end_seconds": 289.88
+    },
+    {
+      "text": "街をもう1",
+      "start_seconds": 290.72,
+      "end_seconds": 294.56
+    },
+    {
+      "text": "度改めて回って知らない地面を見れたり",
+      "start_seconds": 291.56,
+      "end_seconds": 294.56
+    },
+    {
+      "text": "というような形でゲームにしちゃうと大変だった電柱点検作業っていうのが関係なかった人の力を借りて一気に効率化できる。それってゲームミフケーションじゃないのっていう風に思われた方いらっしゃいます。ま、その通りです。",
+      "start_seconds": 295.28,
+      "end_seconds": 298.28
+    },
+    {
+      "text": "ゲーミフィケーションていう言葉の定義、",
+      "start_seconds": 309.36,
+      "end_seconds": 313.24
+    },
+    {
+      "text": "ま、色々ありますけれども、世間一般の",
+      "start_seconds": 310.72,
+      "end_seconds": 315.40000000000003
+    },
+    {
+      "text": "ゲーミフィケーションはですね、あの、",
+      "start_seconds": 313.24,
+      "end_seconds": 318.479
+    },
+    {
+      "text": "内部の人たちにポイントつけたり、え、",
+      "start_seconds": 315.4,
+      "end_seconds": 320.31899999999996
+    },
+    {
+      "text": "色々報酬つけたりして頑張ってもらうん",
+      "start_seconds": 318.479,
+      "end_seconds": 322.68
+    },
+    {
+      "text": "ですね。でも今日皆さんにお話してる",
+      "start_seconds": 320.319,
+      "end_seconds": 325.759
+    },
+    {
+      "text": "ゲームフィルター思考は無関係だった人を",
+      "start_seconds": 322.68,
+      "end_seconds": 329.199
+    },
+    {
+      "text": "新しい関係者にする。だからゼロサムから",
+      "start_seconds": 325.759,
+      "end_seconds": 330.8
+    },
+    {
+      "text": "離脱できるっていうわけですね。ここが",
+      "start_seconds": 329.199,
+      "end_seconds": 333.88
+    },
+    {
+      "text": "めちゃくちゃ重要なところです。3.6倍",
+      "start_seconds": 330.8,
+      "end_seconds": 338.479
+    },
+    {
+      "text": "。こちらはですね、ゴミの、え、廃棄物の",
+      "start_seconds": 333.88,
+      "end_seconds": 343.15999999999997
+    },
+    {
+      "text": "処理の、え、事業領域におけるが発生する",
+      "start_seconds": 338.479,
+      "end_seconds": 347.15999999999997
+    },
+    {
+      "text": "確率が全事業平均の3.6倍高いってわけ",
+      "start_seconds": 343.16,
+      "end_seconds": 350.47900000000004
+    },
+    {
+      "text": "です。ゴミの分別ってやりたい職業かって",
+      "start_seconds": 347.16,
+      "end_seconds": 352.8
+    },
+    {
+      "text": "言うととてもそうではない。おそらく、ま",
+      "start_seconds": 350.479,
+      "end_seconds": 354.75899999999996
+    },
+    {
+      "text": "、汚い臭いっていうのもありますけれども",
+      "start_seconds": 352.8,
+      "end_seconds": 357.68
+    },
+    {
+      "text": "、危ないんですよね。こういったところも",
+      "start_seconds": 354.759,
+      "end_seconds": 359.96000000000004
+    },
+    {
+      "text": "あって、誰かがやんないといけない仕事",
+      "start_seconds": 357.68,
+      "end_seconds": 363.039
+    },
+    {
+      "text": "ですが、やはり成りも少なく、え、大変な",
+      "start_seconds": 359.96,
+      "end_seconds": 366.19899999999996
+    },
+    {
+      "text": "業界です。ここに無関係な人を連れてき",
+      "start_seconds": 363.039,
+      "end_seconds": 368.759
+    },
+    {
+      "text": "ましょう。ま、大体、あの、この場で無",
+      "start_seconds": 366.199,
+      "end_seconds": 371.0
+    },
+    {
+      "text": "関係な話は大体ゲーム業界に引き取って",
+      "start_seconds": 368.759,
+      "end_seconds": 373.52000000000004
+    },
+    {
+      "text": "もらえば関係なかったはずの人なので、",
+      "start_seconds": 371.0,
+      "end_seconds": 376.08
+    },
+    {
+      "text": "ゲーム業界連れてきましょう。eスポーツ",
+      "start_seconds": 373.52,
+      "end_seconds": 379.35999999999996
+    },
+    {
+      "text": "業界。私民法テレビ局でやってた時も、",
+      "start_seconds": 376.08,
+      "end_seconds": 381.71999999999997
+    },
+    {
+      "text": "あの、高校生がですね、部活でeスポーツ",
+      "start_seconds": 379.36,
+      "end_seconds": 383.88
+    },
+    {
+      "text": "で青春を燃やしてる様子を取材したことが",
+      "start_seconds": 381.72,
+      "end_seconds": 386.59900000000005
+    },
+    {
+      "text": "あります。え、敵をですね、こう戦争",
+      "start_seconds": 383.88,
+      "end_seconds": 388.199
+    },
+    {
+      "text": "ゲームでやっつけるために、え、",
+      "start_seconds": 386.599,
+      "end_seconds": 390.8
+    },
+    {
+      "text": "めちゃくちゃ練習して大会の時に、え、",
+      "start_seconds": 388.199,
+      "end_seconds": 392.599
+    },
+    {
+      "text": "勝ったらですね、もうハイタッチで泣いて",
+      "start_seconds": 390.8,
+      "end_seconds": 394.919
+    },
+    {
+      "text": "喜ぶ。これがeスポーツの世界ずっと日本",
+      "start_seconds": 392.599,
+      "end_seconds": 397.84
+    },
+    {
+      "text": "世界で起きています。こういった話をです",
+      "start_seconds": 394.919,
+      "end_seconds": 401.44
+    },
+    {
+      "text": "ね、今最先端のテクノロジー遠隔ですね。",
+      "start_seconds": 397.84,
+      "end_seconds": 403.15999999999997
+    },
+    {
+      "text": "ま、ネットワークその他いろんな",
+      "start_seconds": 401.44,
+      "end_seconds": 405.759
+    },
+    {
+      "text": "ロボティクスが進化していますので、え、",
+      "start_seconds": 403.16,
+      "end_seconds": 409.16
+    },
+    {
+      "text": "遠くの力を、え、正確にどこかに伝え",
+      "start_seconds": 405.759,
+      "end_seconds": 411.759
+    },
+    {
+      "text": "るってことができる。これを組み合わせれ",
+      "start_seconds": 409.16,
+      "end_seconds": 415.84000000000003
+    },
+    {
+      "text": "ばこういうことができる。ゲームで分別し",
+      "start_seconds": 411.759,
+      "end_seconds": 419.639
+    },
+    {
+      "text": "ていったその、え、指示をどこか遠隔に",
+      "start_seconds": 415.84,
+      "end_seconds": 423.96
+    },
+    {
+      "text": "ある、え、工場のロボットに連携させて",
+      "start_seconds": 419.639,
+      "end_seconds": 428.479
+    },
+    {
+      "text": "ゲームを遊んでる気分の人の作業が実際の",
+      "start_seconds": 423.96,
+      "end_seconds": 432.31899999999996
+    },
+    {
+      "text": "向場に、え、伝わるようにする。これが",
+      "start_seconds": 428.479,
+      "end_seconds": 436.24
+    },
+    {
+      "text": "ゲームフルター。それとどうなるか。",
+      "start_seconds": 432.319,
+      "end_seconds": 438.8
+    },
+    {
+      "text": "すげえ。なんかすげえ。",
+      "start_seconds": 436.24,
+      "end_seconds": 441.8
+    },
+    {
+      "text": "この人たちフィリピンから新潟動かしてます。",
+      "start_seconds": 438.8,
+      "end_seconds": 441.8
+    },
+    {
+      "text": "世界中にはですね、35",
+      "start_seconds": 444.759,
+      "end_seconds": 449.759
+    },
+    {
+      "text": "億人のゲームやりたい人たちがいるんですよ。そのエネルギーを使うと、見てください。これやりたかったやつ。ゴミの分別してよっしゃって喜んでるんですよね。これができる。",
+      "start_seconds": 446.759,
+      "end_seconds": 449.759
+    },
+    {
+      "text": "だから危なくて誰もやりたくない仕事でも",
+      "start_seconds": 458.879,
+      "end_seconds": 464.24
+    },
+    {
+      "text": "ゲームフィルター思考を使っば関係ない人",
+      "start_seconds": 461.84,
+      "end_seconds": 466.71999999999997
+    },
+    {
+      "text": "の力を、え、持ってきてこれだけ",
+      "start_seconds": 464.24,
+      "end_seconds": 469.159
+    },
+    {
+      "text": "盛り上がることができる。これがゲーム",
+      "start_seconds": 466.72,
+      "end_seconds": 472.28000000000003
+    },
+    {
+      "text": "フィルター思考です。896。これは衝撃",
+      "start_seconds": 469.159,
+      "end_seconds": 477.319
+    },
+    {
+      "text": "的な数字です。日本には1719の、え、",
+      "start_seconds": 472.28,
+      "end_seconds": 481.87899999999996
+    },
+    {
+      "text": "自治体があります。そのうち896が",
+      "start_seconds": 477.319,
+      "end_seconds": 485.28000000000003
+    },
+    {
+      "text": "2040年までに消滅する可能性があると",
+      "start_seconds": 481.879,
+      "end_seconds": 489.639
+    },
+    {
+      "text": "言われている数字です。もう1つ39%は",
+      "start_seconds": 485.28,
+      "end_seconds": 492.84
+    },
+    {
+      "text": "2050年までに人口が半分になって",
+      "start_seconds": 489.639,
+      "end_seconds": 496.12
+    },
+    {
+      "text": "しまう自治体の数です。つまり日本はです",
+      "start_seconds": 492.84,
+      "end_seconds": 498.919
+    },
+    {
+      "text": "ね、もう消えていこうとしている地方",
+      "start_seconds": 496.12,
+      "end_seconds": 501.44
+    },
+    {
+      "text": "からっていう状態ですね。例えばそん中で",
+      "start_seconds": 498.919,
+      "end_seconds": 504.44
+    },
+    {
+      "text": "も先進と言われている北海道黄色いところ",
+      "start_seconds": 501.44,
+      "end_seconds": 508.199
+    },
+    {
+      "text": "が消滅可能性のあるところです。",
+      "start_seconds": 504.44,
+      "end_seconds": 512.12
+    },
+    {
+      "text": "函館市例えばその函館市すら消滅可能性の",
+      "start_seconds": 508.199,
+      "end_seconds": 514.839
+    },
+    {
+      "text": "、え、黄色に、え、なってしまっています",
+      "start_seconds": 512.12,
+      "end_seconds": 519.12
+    },
+    {
+      "text": "。では函館市に関係ない人、目一杯関係",
+      "start_seconds": 514.839,
+      "end_seconds": 520.719
+    },
+    {
+      "text": "ない人連れてきこようじゃないかっていう",
+      "start_seconds": 519.12,
+      "end_seconds": 524.2
+    },
+    {
+      "text": "わけですね。ゲームの世界ではですね、え",
+      "start_seconds": 520.719,
+      "end_seconds": 526.32
+    },
+    {
+      "text": "、ポイカっていうのがちょっとあります。",
+      "start_seconds": 524.2,
+      "end_seconds": 528.32
+    },
+    {
+      "text": "え、ポイント活動っていうのをやって",
+      "start_seconds": 526.32,
+      "end_seconds": 530.32
+    },
+    {
+      "text": "ほんのちょっとお金を稼ぐってのが日本中",
+      "start_seconds": 528.32,
+      "end_seconds": 532.48
+    },
+    {
+      "text": "世界中で存在している。",
+      "start_seconds": 530.32,
+      "end_seconds": 535.48
+    },
+    {
+      "text": "どこかでそれをやってる人を連れてきてみたらどうだ?中米",
+      "start_seconds": 532.48,
+      "end_seconds": 535.48
+    },
+    {
+      "text": "2",
+      "start_seconds": 535.56,
+      "end_seconds": 538.7199999999999
+    },
+    {
+      "text": "から具の人を連れてきてみようっていう形でやってみたらですね。",
+      "start_seconds": 535.72,
+      "end_seconds": 538.72
+    },
+    {
+      "text": "1日1個だけあの2分で拡散できる情報を",
+      "start_seconds": 560.04,
+      "end_seconds": 566.68
+    },
+    {
+      "text": "毎日60個彼女は、え、拡散し続けました",
+      "start_seconds": 563.64,
+      "end_seconds": 568.959
+    },
+    {
+      "text": "。そうするとおそらくここにいる皆さん",
+      "start_seconds": 566.68,
+      "end_seconds": 570.88
+    },
+    {
+      "text": "よりずっと函館に詳しくなったんですよね",
+      "start_seconds": 568.959,
+      "end_seconds": 573.5999999999999
+    },
+    {
+      "text": "。だから言ったこともない、聞いたことも",
+      "start_seconds": 570.88,
+      "end_seconds": 576.12
+    },
+    {
+      "text": "なかったけど、もうすっかりデジタルの",
+      "start_seconds": 573.6,
+      "end_seconds": 578.0
+    },
+    {
+      "text": "関係人口がこうやって生まれたっていう",
+      "start_seconds": 576.12,
+      "end_seconds": 580.68
+    },
+    {
+      "text": "わけです。これをうまく自治体と連携させ",
+      "start_seconds": 578.0,
+      "end_seconds": 582.519
+    },
+    {
+      "text": "て使っていこうというのがゲムフルター",
+      "start_seconds": 580.68,
+      "end_seconds": 585.88
+    },
+    {
+      "text": "思考です。4割。え、これはですね、川の",
+      "start_seconds": 582.519,
+      "end_seconds": 591.0
+    },
+    {
+      "text": "、え、魚の炭水魚の絶滅器具の割合、もう",
+      "start_seconds": 585.88,
+      "end_seconds": 594.8
+    },
+    {
+      "text": "環境の破壊みたいな話は、ま、川ではなく",
+      "start_seconds": 591.0,
+      "end_seconds": 597.36
+    },
+    {
+      "text": "海や山やいろんなところで起きていますが",
+      "start_seconds": 594.8,
+      "end_seconds": 601.4399999999999
+    },
+    {
+      "text": "、え、川、え、川のお魚、え、その環境を",
+      "start_seconds": 597.36,
+      "end_seconds": 604.04
+    },
+    {
+      "text": "守るにはどうしたら関係ない人、ま、得意",
+      "start_seconds": 601.44,
+      "end_seconds": 605.6400000000001
+    },
+    {
+      "text": "のゲームユーザー連れてきましょうという",
+      "start_seconds": 604.04,
+      "end_seconds": 610.8
+    },
+    {
+      "text": "わけですね。リビングからスマホで実際に",
+      "start_seconds": 605.64,
+      "end_seconds": 614.92
+    },
+    {
+      "text": "釣りができる仕組みがあって1回、ま、",
+      "start_seconds": 610.8,
+      "end_seconds": 616.959
+    },
+    {
+      "text": "海外の人ね、お金いっぱい持ってますから",
+      "start_seconds": 614.92,
+      "end_seconds": 619.7199999999999
+    },
+    {
+      "text": "1回3000円、5000円、30ドル",
+      "start_seconds": 616.959,
+      "end_seconds": 623.2399999999999
+    },
+    {
+      "text": "多分いける。で、そういう人たちのお金が",
+      "start_seconds": 619.72,
+      "end_seconds": 625.9590000000001
+    },
+    {
+      "text": "どこか地域の、え、置かれているロボット",
+      "start_seconds": 623.24,
+      "end_seconds": 629.0790000000001
+    },
+    {
+      "text": "の世話をしている人たちの、え、雇用に",
+      "start_seconds": 625.959,
+      "end_seconds": 631.76
+    },
+    {
+      "text": "当てられたり、行くばっかのお金が川を",
+      "start_seconds": 629.079,
+      "end_seconds": 634.1999999999999
+    },
+    {
+      "text": "守る、え、お金に使われる。こういった",
+      "start_seconds": 631.76,
+      "end_seconds": 637.04
+    },
+    {
+      "text": "仕組みを世界を、え、舞台に作っていこう",
+      "start_seconds": 634.2,
+      "end_seconds": 640.48
+    },
+    {
+      "text": "。ゲームフィルター思考です。4.4%。",
+      "start_seconds": 637.04,
+      "end_seconds": 644.04
+    },
+    {
+      "text": "これはですね、関係ない人がいないはずの",
+      "start_seconds": 640.48,
+      "end_seconds": 648.32
+    },
+    {
+      "text": "、え、防災に関する話です。普段避難訓練",
+      "start_seconds": 644.04,
+      "end_seconds": 650.8
+    },
+    {
+      "text": "があった時にいっつもちゃんと参加してる",
+      "start_seconds": 648.32,
+      "end_seconds": 653.72
+    },
+    {
+      "text": "よって人は4.4%。これちょっとまた手",
+      "start_seconds": 650.8,
+      "end_seconds": 655.3599999999999
+    },
+    {
+      "text": "を上げて聞いてみたいんですけど、えっと",
+      "start_seconds": 653.72,
+      "end_seconds": 658.6
+    },
+    {
+      "text": "私調べてはですね、避難訓練に1回も参加",
+      "start_seconds": 655.36,
+      "end_seconds": 662.44
+    },
+    {
+      "text": "したことない人は64.5%",
+      "start_seconds": 658.6,
+      "end_seconds": 666.48
+    },
+    {
+      "text": "参加したことあるよっていう人、あ、",
+      "start_seconds": 662.44,
+      "end_seconds": 668.44
+    },
+    {
+      "text": "やはりですね、皆さんここにいらっしゃる",
+      "start_seconds": 666.48,
+      "end_seconds": 671.5600000000001
+    },
+    {
+      "text": "方意識がちゃんと高いんで[笑い]、あの",
+      "start_seconds": 668.44,
+      "end_seconds": 674.5600000000001
+    },
+    {
+      "text": "大丈夫なんですけど、つまり日本ではです",
+      "start_seconds": 671.56,
+      "end_seconds": 676.959
+    },
+    {
+      "text": "ね、もうきるべき大災害に向けてやばい",
+      "start_seconds": 674.56,
+      "end_seconds": 679.3599999999999
+    },
+    {
+      "text": "やばいやばいと言いながら何もしてないっ",
+      "start_seconds": 676.959,
+      "end_seconds": 682.3199999999999
+    },
+    {
+      "text": "ていうのが現実なんですよ。じゃあ関係",
+      "start_seconds": 679.36,
+      "end_seconds": 684.24
+    },
+    {
+      "text": "ない人はもういないわけです。災害です",
+      "start_seconds": 682.32,
+      "end_seconds": 687.44
+    },
+    {
+      "text": "から。じゃあですね、普段の皆さんがやっ",
+      "start_seconds": 684.24,
+      "end_seconds": 690.04
+    },
+    {
+      "text": "ている元々夢中になってることに被せ",
+      "start_seconds": 687.44,
+      "end_seconds": 692.24
+    },
+    {
+      "text": "ちゃえばいいんじゃないの。例えば高校",
+      "start_seconds": 690.04,
+      "end_seconds": 695.5999999999999
+    },
+    {
+      "text": "野球、高校野球不思議です。僕自身も野球",
+      "start_seconds": 692.24,
+      "end_seconds": 698.6
+    },
+    {
+      "text": "やんないですけど、自分の地元の高校が",
+      "start_seconds": 695.6,
+      "end_seconds": 701.32
+    },
+    {
+      "text": "勝ちんでるとですね、なんかめちゃくちゃ",
+      "start_seconds": 698.6,
+      "end_seconds": 704.48
+    },
+    {
+      "text": "応援しちゃうみたいな老女ですよね。関係",
+      "start_seconds": 701.32,
+      "end_seconds": 707.519
+    },
+    {
+      "text": "ない人がなんかこう向きになって応援する",
+      "start_seconds": 704.48,
+      "end_seconds": 711.12
+    },
+    {
+      "text": "みたいなことが毎年起きてます。ここを",
+      "start_seconds": 707.519,
+      "end_seconds": 715.12
+    },
+    {
+      "text": "防災の、え、住民のポイントで競い合う",
+      "start_seconds": 711.12,
+      "end_seconds": 717.079
+    },
+    {
+      "text": "全国防災チャンピオンシップっていうのを",
+      "start_seconds": 715.12,
+      "end_seconds": 720.92
+    },
+    {
+      "text": "作ったらどうなるか今年動きます。ゲーム",
+      "start_seconds": 717.079,
+      "end_seconds": 724.6389999999999
+    },
+    {
+      "text": "振りたこ色々とお話をしてきましたが、皆",
+      "start_seconds": 720.92,
+      "end_seconds": 727.56
+    },
+    {
+      "text": "さんですね、課題を解決する、え、その時",
+      "start_seconds": 724.639,
+      "end_seconds": 731.24
+    },
+    {
+      "text": "には必ず関係者が集まってそれぞれの知見",
+      "start_seconds": 727.56,
+      "end_seconds": 735.4399999999999
+    },
+    {
+      "text": "で頭を悩ます。これが普通の課題解決の",
+      "start_seconds": 731.24,
+      "end_seconds": 738.6
+    },
+    {
+      "text": "やり方です。今日皆さんに是非あの覚えて",
+      "start_seconds": 735.44,
+      "end_seconds": 740.24
+    },
+    {
+      "text": "帰っていただきたいゲーミーフルター思考",
+      "start_seconds": 738.6,
+      "end_seconds": 743.32
+    },
+    {
+      "text": "はそうではない。この世の中にはですね、",
+      "start_seconds": 740.24,
+      "end_seconds": 747.24
+    },
+    {
+      "text": "視界を広げればエネルギーや興味や活力や",
+      "start_seconds": 743.32,
+      "end_seconds": 749.639
+    },
+    {
+      "text": "知識をいっぱい持ってるいろんな人たちが",
+      "start_seconds": 747.24,
+      "end_seconds": 752.76
+    },
+    {
+      "text": "いるんですね。その人たちは皆さんは関係",
+      "start_seconds": 749.639,
+      "end_seconds": 755.9590000000001
+    },
+    {
+      "text": "ないと思ってる。でも関係あるようにして",
+      "start_seconds": 752.76,
+      "end_seconds": 757.76
+    },
+    {
+      "text": "あげればいいっていうわけですね。",
+      "start_seconds": 755.959,
+      "end_seconds": 759.5189999999999
+    },
+    {
+      "text": "いろんな人たちの力を借りる。これが",
+      "start_seconds": 757.76,
+      "end_seconds": 762.04
+    },
+    {
+      "text": "ゲームフィルター思考ですけれども、",
+      "start_seconds": 759.519,
+      "end_seconds": 766.079
+    },
+    {
+      "text": "例えば600万人、この数字は、え、日本",
+      "start_seconds": 762.04,
+      "end_seconds": 769.399
+    },
+    {
+      "text": "における精神障害をお持ちの方々の人数",
+      "start_seconds": 766.079,
+      "end_seconds": 771.76
+    },
+    {
+      "text": "です。どんどん増えている。いわゆる家",
+      "start_seconds": 769.399,
+      "end_seconds": 774.24
+    },
+    {
+      "text": "から出られない引きこもりみたいな方々も",
+      "start_seconds": 771.76,
+      "end_seconds": 778.0
+    },
+    {
+      "text": "この数字に含まれます。そういった方々が",
+      "start_seconds": 774.24,
+      "end_seconds": 780.5600000000001
+    },
+    {
+      "text": "何をしてるかというと、実質であるいは",
+      "start_seconds": 778.0,
+      "end_seconds": 783.68
+    },
+    {
+      "text": "施設で、え、テレビモニターや、え、",
+      "start_seconds": 780.56,
+      "end_seconds": 786.279
+    },
+    {
+      "text": "パソコンやゲーム機の前で座ってるそう",
+      "start_seconds": 783.68,
+      "end_seconds": 789.68
+    },
+    {
+      "text": "いった活力ですね。え、エネルギー、え、",
+      "start_seconds": 786.279,
+      "end_seconds": 792.8389999999999
+    },
+    {
+      "text": "そういったものをちゃんと社会に誰かが",
+      "start_seconds": 789.68,
+      "end_seconds": 794.7199999999999
+    },
+    {
+      "text": "必要としてるところにつぎ込むことが",
+      "start_seconds": 792.839,
+      "end_seconds": 797.36
+    },
+    {
+      "text": "できるんじゃないか。これが、え、ゲーム",
+      "start_seconds": 794.72,
+      "end_seconds": 801.12
+    },
+    {
+      "text": "フィルター思考ということになります。",
+      "start_seconds": 797.36,
+      "end_seconds": 804.88
+    },
+    {
+      "text": "是非ですね、あの、皆様最初に頭に浮かん",
+      "start_seconds": 801.12,
+      "end_seconds": 810.24
+    },
+    {
+      "text": "だご自身の課題、ここに全く関係ない人は",
+      "start_seconds": 804.88,
+      "end_seconds": 813.079
+    },
+    {
+      "text": "誰だろうって一度考えてみてください。皆",
+      "start_seconds": 810.24,
+      "end_seconds": 816.44
+    },
+    {
+      "text": "さんが忘れていますが、いつも地球の裏側",
+      "start_seconds": 813.079,
+      "end_seconds": 819.92
+    },
+    {
+      "text": "には2側の人がいるんですよね。2側の人",
+      "start_seconds": 816.44,
+      "end_seconds": 822.12
+    },
+    {
+      "text": "に手伝ってもらうわけにはいかないのか",
+      "start_seconds": 819.92,
+      "end_seconds": 825.24
+    },
+    {
+      "text": "なっていう考え方。今のテクノロジーを",
+      "start_seconds": 822.12,
+      "end_seconds": 827.9590000000001
+    },
+    {
+      "text": "うまく活用してそういう風な、え、",
+      "start_seconds": 825.24,
+      "end_seconds": 831.519
+    },
+    {
+      "text": "仕組みづりをする。それはできる話なん",
+      "start_seconds": 827.959,
+      "end_seconds": 835.3599999999999
+    },
+    {
+      "text": "ですよね。もし残り時間があれば僕は",
+      "start_seconds": 831.519,
+      "end_seconds": 840.12
+    },
+    {
+      "text": "300個の課題を全部あのゲームで解決",
+      "start_seconds": 835.36,
+      "end_seconds": 842.399
+    },
+    {
+      "text": "するアイデアを1個1個お渡しできる。",
+      "start_seconds": 840.12,
+      "end_seconds": 843.88
+    },
+    {
+      "text": "そういう自信が[笑い][息をのむ音]",
+      "start_seconds": 842.399,
+      "end_seconds": 846.88
+    },
+    {
+      "text": "あります。是非ですね、今日あのこの考え",
+      "start_seconds": 843.88,
+      "end_seconds": 850.36
+    },
+    {
+      "text": "方を覚えて帰っていただいて、え、まず皆",
+      "start_seconds": 846.88,
+      "end_seconds": 852.759
+    },
+    {
+      "text": "さんが抱えて本当に困っている課題に対し",
+      "start_seconds": 850.36,
+      "end_seconds": 856.88
+    },
+    {
+      "text": "て関係ない人っていうのを、え、想定して",
+      "start_seconds": 852.759,
+      "end_seconds": 860.399
+    },
+    {
+      "text": "みてください。そしてその人に嫌な作業を",
+      "start_seconds": 856.88,
+      "end_seconds": 863.36
+    },
+    {
+      "text": "押し付けるんじゃなくて、その人が今何し",
+      "start_seconds": 860.399,
+      "end_seconds": 865.68
+    },
+    {
+      "text": "てるんだろう?その人が普段してることっ",
+      "start_seconds": 863.36,
+      "end_seconds": 869.88
+    },
+    {
+      "text": "て何だろう?その延長線上で力をちょっと",
+      "start_seconds": 865.68,
+      "end_seconds": 872.0
+    },
+    {
+      "text": "貸していただくわけにはいかないか。こう",
+      "start_seconds": 869.88,
+      "end_seconds": 874.279
+    },
+    {
+      "text": "いうような考え方。これがゲーム",
+      "start_seconds": 872.0,
+      "end_seconds": 876.959
+    },
+    {
+      "text": "フィルター思考でございます。ということ",
+      "start_seconds": 874.279,
+      "end_seconds": 881.16
+    },
+    {
+      "text": "で、え、散歩良し、誰かに、え、負担を",
+      "start_seconds": 876.959,
+      "end_seconds": 884.56
+    },
+    {
+      "text": "押し付けるのではなくて、え、繋がりを",
+      "start_seconds": 881.16,
+      "end_seconds": 888.0
+    },
+    {
+      "text": "世界に感じながら関係ないと思い込んでい",
+      "start_seconds": 884.56,
+      "end_seconds": 891.279
+    },
+    {
+      "text": "た人達っていうのを関係者にして、その皆",
+      "start_seconds": 888.0,
+      "end_seconds": 894.56
+    },
+    {
+      "text": "さん全体で散歩良しになる仕組みというの",
+      "start_seconds": 891.279,
+      "end_seconds": 898.12
+    },
+    {
+      "text": "を、え、作っていければと思っております",
+      "start_seconds": 894.56,
+      "end_seconds": 901.3199999999999
+    },
+    {
+      "text": "。ということで、え、今日は山田から皆様",
+      "start_seconds": 898.12,
+      "end_seconds": 903.68
+    },
+    {
+      "text": "に、え、ゲームフィルター思考について、",
+      "start_seconds": 901.32,
+      "end_seconds": 906.399
+    },
+    {
+      "text": "え、お話をさせていただきました。はい、",
+      "start_seconds": 903.68,
+      "end_seconds": 910.515
+    },
+    {
+      "text": "ご成聴ありがとうございました。[拍手]",
+      "start_seconds": 906.399,
+      "end_seconds": 910.515
+    }
+  ],
+  "display_captions": [
+    {
+      "text": "[拍手]",
+      "start_seconds": 14.41,
+      "end_seconds": 16.43,
+      "id": "i6sbI_P-uLg-display-0001",
+      "segment_id": "i6sbI_P-uLg-ja-0001"
+    },
+    {
+      "text": "はい[拍手]。え、株なご紹介いただき",
+      "start_seconds": 18.84,
+      "end_seconds": 21.56,
+      "id": "i6sbI_P-uLg-display-0002",
+      "segment_id": "i6sbI_P-uLg-ja-0002"
+    },
+    {
+      "text": "ました山田高でございます。今日は、あの",
+      "start_seconds": 21.56,
+      "end_seconds": 23.72,
+      "id": "i6sbI_P-uLg-display-0003",
+      "segment_id": "i6sbI_P-uLg-ja-0002"
+    },
+    {
+      "text": "、皆さんの課題解決に役立つ、え、ゲーム",
+      "start_seconds": 23.72,
+      "end_seconds": 26.92,
+      "id": "i6sbI_P-uLg-display-0004",
+      "segment_id": "i6sbI_P-uLg-ja-0002"
+    },
+    {
+      "text": "フィルター思考というものを、え、ご紹介",
+      "start_seconds": 26.92,
+      "end_seconds": 29.279,
+      "id": "i6sbI_P-uLg-display-0005",
+      "segment_id": "i6sbI_P-uLg-ja-0002"
+    },
+    {
+      "text": "させていただきたいと思います。はい。え",
+      "start_seconds": 29.279,
+      "end_seconds": 32.92,
+      "id": "i6sbI_P-uLg-display-0006",
+      "segment_id": "i6sbI_P-uLg-ja-0003"
+    },
+    {
+      "text": "、早速ですけれども、皆さんそれぞれ解決",
+      "start_seconds": 32.92,
+      "end_seconds": 36.12,
+      "id": "i6sbI_P-uLg-display-0007",
+      "segment_id": "i6sbI_P-uLg-ja-0003"
+    },
+    {
+      "text": "したいなと思ってらっしゃる課題ござい",
+      "start_seconds": 36.12,
+      "end_seconds": 38.64,
+      "id": "i6sbI_P-uLg-display-0008",
+      "segment_id": "i6sbI_P-uLg-ja-0003"
+    },
+    {
+      "text": "ますか?いろんなものあると思います。",
+      "start_seconds": 38.64,
+      "end_seconds": 41.2,
+      "id": "i6sbI_P-uLg-display-0009",
+      "segment_id": "i6sbI_P-uLg-ja-0003"
+    },
+    {
+      "text": "個人的なものから、あの、社会的なもの、",
+      "start_seconds": 41.2,
+      "end_seconds": 43.879,
+      "id": "i6sbI_P-uLg-display-0010",
+      "segment_id": "i6sbI_P-uLg-ja-0004"
+    },
+    {
+      "text": "世界的なものあると思いますけれども、あ",
+      "start_seconds": 43.879,
+      "end_seconds": 46.68,
+      "id": "i6sbI_P-uLg-display-0011",
+      "segment_id": "i6sbI_P-uLg-ja-0004"
+    },
+    {
+      "text": "、意外と今日は手を上げられない方々が",
+      "start_seconds": 46.68,
+      "end_seconds": 49.879,
+      "id": "i6sbI_P-uLg-display-0012",
+      "segment_id": "i6sbI_P-uLg-ja-0004"
+    },
+    {
+      "text": "多い。はい。はい。おそらくですね、",
+      "start_seconds": 49.879,
+      "end_seconds": 52.559,
+      "id": "i6sbI_P-uLg-display-0013",
+      "segment_id": "i6sbI_P-uLg-ja-0004"
+    },
+    {
+      "text": "300の課題がここには存在してると思い",
+      "start_seconds": 52.559,
+      "end_seconds": 55.48,
+      "id": "i6sbI_P-uLg-display-0014",
+      "segment_id": "i6sbI_P-uLg-ja-0005"
+    },
+    {
+      "text": "ます。そしてもう1つ、皆さん普段ゲーム",
+      "start_seconds": 55.48,
+      "end_seconds": 59.519,
+      "id": "i6sbI_P-uLg-display-0015",
+      "segment_id": "i6sbI_P-uLg-ja-0005"
+    },
+    {
+      "text": "やられますか?あ、まさか。え、ゼロに",
+      "start_seconds": 59.519,
+      "end_seconds": 64.92,
+      "id": "i6sbI_P-uLg-display-0016",
+      "segment_id": "i6sbI_P-uLg-ja-0006"
+    },
+    {
+      "text": "近い。はい。これ非常に重要なマフりで",
+      "start_seconds": 64.92,
+      "end_seconds": 68.24,
+      "id": "i6sbI_P-uLg-display-0017",
+      "segment_id": "i6sbI_P-uLg-ja-0006"
+    },
+    {
+      "text": "ございます。つまり皆さんにとってゲーム",
+      "start_seconds": 68.24,
+      "end_seconds": 70.64,
+      "id": "i6sbI_P-uLg-display-0018",
+      "segment_id": "i6sbI_P-uLg-ja-0006"
+    },
+    {
+      "text": "をやってる世界っていうのはほぼ関係がな",
+      "start_seconds": 70.64,
+      "end_seconds": 73.159,
+      "id": "i6sbI_P-uLg-display-0019",
+      "segment_id": "i6sbI_P-uLg-ja-0007"
+    },
+    {
+      "text": "いってことです。この数字全人類82億人",
+      "start_seconds": 73.159,
+      "end_seconds": 78.439,
+      "id": "i6sbI_P-uLg-display-0020",
+      "segment_id": "i6sbI_P-uLg-ja-0007"
+    },
+    {
+      "text": "の中で35億人がゲームをやってます。皆",
+      "start_seconds": 78.439,
+      "end_seconds": 82.28,
+      "id": "i6sbI_P-uLg-display-0021",
+      "segment_id": "i6sbI_P-uLg-ja-0007"
+    },
+    {
+      "text": "さんはやられてませんが驚くべき数字で",
+      "start_seconds": 82.28,
+      "end_seconds": 85.84,
+      "id": "i6sbI_P-uLg-display-0022",
+      "segment_id": "i6sbI_P-uLg-ja-0008"
+    },
+    {
+      "text": "そして驚くべきエネルギーお金え動いて",
+      "start_seconds": 85.84,
+      "end_seconds": 89.32,
+      "id": "i6sbI_P-uLg-display-0023",
+      "segment_id": "i6sbI_P-uLg-ja-0008"
+    },
+    {
+      "text": "ます。ゲームの世界。このエネルギーを皆",
+      "start_seconds": 89.32,
+      "end_seconds": 92.479,
+      "id": "i6sbI_P-uLg-display-0024",
+      "segment_id": "i6sbI_P-uLg-ja-0008"
+    },
+    {
+      "text": "さんの300個の課題の解決にこう",
+      "start_seconds": 92.479,
+      "end_seconds": 95.04,
+      "id": "i6sbI_P-uLg-display-0025",
+      "segment_id": "i6sbI_P-uLg-ja-0009"
+    },
+    {
+      "text": "流し込んでみようというのがゲーム",
+      "start_seconds": 95.04,
+      "end_seconds": 96.52,
+      "id": "i6sbI_P-uLg-display-0026",
+      "segment_id": "i6sbI_P-uLg-ja-0009"
+    },
+    {
+      "text": "フィルター思考でございます。ゲーム",
+      "start_seconds": 96.52,
+      "end_seconds": 99.88,
+      "id": "i6sbI_P-uLg-display-0027",
+      "segment_id": "i6sbI_P-uLg-ja-0009"
+    },
+    {
+      "text": "フィルター思考でですね、1番大事なのは",
+      "start_seconds": 99.88,
+      "end_seconds": 102.399,
+      "id": "i6sbI_P-uLg-display-0028",
+      "segment_id": "i6sbI_P-uLg-ja-0009"
+    },
+    {
+      "text": "これから何回も言いますけども、その皆",
+      "start_seconds": 102.399,
+      "end_seconds": 105.399,
+      "id": "i6sbI_P-uLg-display-0029",
+      "segment_id": "i6sbI_P-uLg-ja-0010"
+    },
+    {
+      "text": "さんの課題に関係ない人を見つけて",
+      "start_seconds": 105.399,
+      "end_seconds": 108.759,
+      "id": "i6sbI_P-uLg-display-0030",
+      "segment_id": "i6sbI_P-uLg-ja-0010"
+    },
+    {
+      "text": "ください。関係ない人。ここが",
+      "start_seconds": 108.759,
+      "end_seconds": 111.28,
+      "id": "i6sbI_P-uLg-display-0031",
+      "segment_id": "i6sbI_P-uLg-ja-0010"
+    },
+    {
+      "text": "めちゃくちゃポイントでございます。はい",
+      "start_seconds": 111.28,
+      "end_seconds": 113.32,
+      "id": "i6sbI_P-uLg-display-0032",
+      "segment_id": "i6sbI_P-uLg-ja-0010"
+    },
+    {
+      "text": "。",
+      "start_seconds": 113.32,
+      "end_seconds": 115.079,
+      "id": "i6sbI_P-uLg-display-0033",
+      "segment_id": "i6sbI_P-uLg-ja-0011"
+    },
+    {
+      "text": "私ですね、元々、え、民法テレビ局で、え",
+      "start_seconds": 115.079,
+      "end_seconds": 118.799,
+      "id": "i6sbI_P-uLg-display-0034",
+      "segment_id": "i6sbI_P-uLg-ja-0012"
+    },
+    {
+      "text": "、番組企画、ま、バラエティ番組とか、え",
+      "start_seconds": 118.799,
+      "end_seconds": 121.52,
+      "id": "i6sbI_P-uLg-display-0035",
+      "segment_id": "i6sbI_P-uLg-ja-0012"
+    },
+    {
+      "text": "、作っていた人間でございます。え、",
+      "start_seconds": 121.52,
+      "end_seconds": 124.92,
+      "id": "i6sbI_P-uLg-display-0036",
+      "segment_id": "i6sbI_P-uLg-ja-0012"
+    },
+    {
+      "text": "テレビ局の商売っていうのは結構変わった",
+      "start_seconds": 124.92,
+      "end_seconds": 126.6,
+      "id": "i6sbI_P-uLg-display-0037",
+      "segment_id": "i6sbI_P-uLg-ja-0012"
+    },
+    {
+      "text": "商売で、こちらは普通の商売ですね。",
+      "start_seconds": 126.6,
+      "end_seconds": 128.64,
+      "id": "i6sbI_P-uLg-display-0038",
+      "segment_id": "i6sbI_P-uLg-ja-0013"
+    },
+    {
+      "text": "ほとんどの商売これかなと。え、りんご",
+      "start_seconds": 128.64,
+      "end_seconds": 132.04,
+      "id": "i6sbI_P-uLg-display-0039",
+      "segment_id": "i6sbI_P-uLg-ja-0014"
+    },
+    {
+      "text": "売ってる方りんごを渡してそのお客さん",
+      "start_seconds": 132.04,
+      "end_seconds": 134.959,
+      "id": "i6sbI_P-uLg-display-0040",
+      "segment_id": "i6sbI_P-uLg-ja-0014"
+    },
+    {
+      "text": "からお金いただく。これが普通の商売です",
+      "start_seconds": 134.959,
+      "end_seconds": 137.0,
+      "id": "i6sbI_P-uLg-display-0041",
+      "segment_id": "i6sbI_P-uLg-ja-0014"
+    },
+    {
+      "text": "けども民法テレビ局は私ですね、徹夜で",
+      "start_seconds": 137.0,
+      "end_seconds": 141.04,
+      "id": "i6sbI_P-uLg-display-0042",
+      "segment_id": "i6sbI_P-uLg-ja-0015"
+    },
+    {
+      "text": "あの地道を履きながら番組作ってですね、",
+      "start_seconds": 141.04,
+      "end_seconds": 144.28,
+      "id": "i6sbI_P-uLg-display-0043",
+      "segment_id": "i6sbI_P-uLg-ja-0015"
+    },
+    {
+      "text": "皆さんに見てもらっても一応1円もお題",
+      "start_seconds": 144.28,
+      "end_seconds": 147.239,
+      "id": "i6sbI_P-uLg-display-0044",
+      "segment_id": "i6sbI_P-uLg-ja-0015"
+    },
+    {
+      "text": "いただかない。これがテレビ局の仕事で",
+      "start_seconds": 147.239,
+      "end_seconds": 149.44,
+      "id": "i6sbI_P-uLg-display-0045",
+      "segment_id": "i6sbI_P-uLg-ja-0016"
+    },
+    {
+      "text": "ございます。で、違うところから",
+      "start_seconds": 149.44,
+      "end_seconds": 151.519,
+      "id": "i6sbI_P-uLg-display-0046",
+      "segment_id": "i6sbI_P-uLg-ja-0016"
+    },
+    {
+      "text": "スポンサー企業様のお金が動いて巨大な",
+      "start_seconds": 151.519,
+      "end_seconds": 154.239,
+      "id": "i6sbI_P-uLg-display-0047",
+      "segment_id": "i6sbI_P-uLg-ja-0016"
+    },
+    {
+      "text": "経済権、巨大な影響力もすっかりあの言い",
+      "start_seconds": 154.239,
+      "end_seconds": 157.44,
+      "id": "i6sbI_P-uLg-display-0048",
+      "segment_id": "i6sbI_P-uLg-ja-0016"
+    },
+    {
+      "text": "方下がりになってしまいましたが、あの",
+      "start_seconds": 157.44,
+      "end_seconds": 159.72,
+      "id": "i6sbI_P-uLg-display-0049",
+      "segment_id": "i6sbI_P-uLg-ja-0017"
+    },
+    {
+      "text": "そういうものを作ってきたというような",
+      "start_seconds": 159.72,
+      "end_seconds": 161.159,
+      "id": "i6sbI_P-uLg-display-0050",
+      "segment_id": "i6sbI_P-uLg-ja-0017"
+    },
+    {
+      "text": "業界で、え、ずっと15年やってまいり",
+      "start_seconds": 161.159,
+      "end_seconds": 163.8,
+      "id": "i6sbI_P-uLg-display-0051",
+      "segment_id": "i6sbI_P-uLg-ja-0017"
+    },
+    {
+      "text": "ました。で、あのテレビを卒業してですね",
+      "start_seconds": 163.8,
+      "end_seconds": 167.08,
+      "id": "i6sbI_P-uLg-display-0052",
+      "segment_id": "i6sbI_P-uLg-ja-0017"
+    },
+    {
+      "text": "、え、課題解決ゲームっていう事業に進ん",
+      "start_seconds": 167.08,
+      "end_seconds": 170.239,
+      "id": "i6sbI_P-uLg-display-0053",
+      "segment_id": "i6sbI_P-uLg-ja-0018"
+    },
+    {
+      "text": "だ今、え、テレビ素晴らしい影響力持ちえ",
+      "start_seconds": 170.239,
+      "end_seconds": 173.28,
+      "id": "i6sbI_P-uLg-display-0054",
+      "segment_id": "i6sbI_P-uLg-ja-0018"
+    },
+    {
+      "text": "ますけれどもゲームすごいんですよ。見",
+      "start_seconds": 173.28,
+      "end_seconds": 175.48,
+      "id": "i6sbI_P-uLg-display-0055",
+      "segment_id": "i6sbI_P-uLg-ja-0018"
+    },
+    {
+      "text": "てるだけだとゲームできないんで",
+      "start_seconds": 175.48,
+      "end_seconds": 177.56,
+      "id": "i6sbI_P-uLg-display-0056",
+      "segment_id": "i6sbI_P-uLg-ja-0018"
+    },
+    {
+      "text": "アクション取らないといけない。これと",
+      "start_seconds": 177.56,
+      "end_seconds": 179.64,
+      "id": "i6sbI_P-uLg-display-0057",
+      "segment_id": "i6sbI_P-uLg-ja-0019"
+    },
+    {
+      "text": "課題を解決することの相性がめちゃくちゃ",
+      "start_seconds": 179.64,
+      "end_seconds": 181.84,
+      "id": "i6sbI_P-uLg-display-0058",
+      "segment_id": "i6sbI_P-uLg-ja-0019"
+    },
+    {
+      "text": "いいっていうわけですね。この数字何か",
+      "start_seconds": 181.84,
+      "end_seconds": 185.519,
+      "id": "i6sbI_P-uLg-display-0059",
+      "segment_id": "i6sbI_P-uLg-ja-0019"
+    },
+    {
+      "text": "分かる方がいたらすごいんですけど、これ",
+      "start_seconds": 185.519,
+      "end_seconds": 188.36,
+      "id": "i6sbI_P-uLg-display-0060",
+      "segment_id": "i6sbI_P-uLg-ja-0019"
+    },
+    {
+      "text": "は日本中に、え、設置されている電柱電身",
+      "start_seconds": 188.36,
+      "end_seconds": 192.84,
+      "id": "i6sbI_P-uLg-display-0061",
+      "segment_id": "i6sbI_P-uLg-ja-0020"
+    },
+    {
+      "text": "柱の総数です。え、日本のあのあらゆる",
+      "start_seconds": 192.84,
+      "end_seconds": 196.239,
+      "id": "i6sbI_P-uLg-display-0062",
+      "segment_id": "i6sbI_P-uLg-ja-0020"
+    },
+    {
+      "text": "インフラがですね、え、今老朽化、え、",
+      "start_seconds": 196.239,
+      "end_seconds": 198.959,
+      "id": "i6sbI_P-uLg-display-0063",
+      "segment_id": "i6sbI_P-uLg-ja-0020"
+    },
+    {
+      "text": "機器を迎えています。道路に穴が開い",
+      "start_seconds": 198.959,
+      "end_seconds": 200.799,
+      "id": "i6sbI_P-uLg-display-0064",
+      "segment_id": "i6sbI_P-uLg-ja-0021"
+    },
+    {
+      "text": "ちゃったみたいなのもありますけれども、",
+      "start_seconds": 200.799,
+      "end_seconds": 202.799,
+      "id": "i6sbI_P-uLg-display-0065",
+      "segment_id": "i6sbI_P-uLg-ja-0021"
+    },
+    {
+      "text": "電柱、え、電身柱も非常に重要なインフラ",
+      "start_seconds": 202.799,
+      "end_seconds": 205.76,
+      "id": "i6sbI_P-uLg-display-0066",
+      "segment_id": "i6sbI_P-uLg-ja-0021"
+    },
+    {
+      "text": "です。元気がちゃんと皆さんの手元に届く",
+      "start_seconds": 205.76,
+      "end_seconds": 208.64,
+      "id": "i6sbI_P-uLg-display-0067",
+      "segment_id": "i6sbI_P-uLg-ja-0021"
+    },
+    {
+      "text": "ためにはこの電柱がしっかり機能してない",
+      "start_seconds": 208.64,
+      "end_seconds": 211.12,
+      "id": "i6sbI_P-uLg-display-0068",
+      "segment_id": "i6sbI_P-uLg-ja-0022"
+    },
+    {
+      "text": "といけない。これをですね、点検するの",
+      "start_seconds": 211.12,
+      "end_seconds": 213.64,
+      "id": "i6sbI_P-uLg-display-0069",
+      "segment_id": "i6sbI_P-uLg-ja-0022"
+    },
+    {
+      "text": "めちゃくちゃ大変なんですね。全部調べる",
+      "start_seconds": 213.64,
+      "end_seconds": 216.04,
+      "id": "i6sbI_P-uLg-display-0070",
+      "segment_id": "i6sbI_P-uLg-ja-0022"
+    },
+    {
+      "text": "のに年間で100億円ぐらいかかって",
+      "start_seconds": 216.04,
+      "end_seconds": 217.64,
+      "id": "i6sbI_P-uLg-display-0071",
+      "segment_id": "i6sbI_P-uLg-ja-0022"
+    },
+    {
+      "text": "るっていうようなお話があります。さあ、",
+      "start_seconds": 217.64,
+      "end_seconds": 220.959,
+      "id": "i6sbI_P-uLg-display-0072",
+      "segment_id": "i6sbI_P-uLg-ja-0023"
+    },
+    {
+      "text": "この点検関係ない人見つけてきてですね、",
+      "start_seconds": 220.959,
+      "end_seconds": 225.159,
+      "id": "i6sbI_P-uLg-display-0073",
+      "segment_id": "i6sbI_P-uLg-ja-0023"
+    },
+    {
+      "text": "散歩余しにできないか。これがゲーム",
+      "start_seconds": 225.159,
+      "end_seconds": 226.799,
+      "id": "i6sbI_P-uLg-display-0074",
+      "segment_id": "i6sbI_P-uLg-ja-0023"
+    },
+    {
+      "text": "フィルター思考です。",
+      "start_seconds": 226.799,
+      "end_seconds": 229.4,
+      "id": "i6sbI_P-uLg-display-0075",
+      "segment_id": "i6sbI_P-uLg-ja-0023"
+    },
+    {
+      "text": "電柱に関係ない人誰だろうっていう風に",
+      "start_seconds": 229.4,
+      "end_seconds": 232.519,
+      "id": "i6sbI_P-uLg-display-0076",
+      "segment_id": "i6sbI_P-uLg-ja-0024"
+    },
+    {
+      "text": "考えてみてください。これはもうすごく",
+      "start_seconds": 232.519,
+      "end_seconds": 235.159,
+      "id": "i6sbI_P-uLg-display-0077",
+      "segment_id": "i6sbI_P-uLg-ja-0024"
+    },
+    {
+      "text": "シンプルででして、電柱あることには、ま",
+      "start_seconds": 235.159,
+      "end_seconds": 237.92,
+      "id": "i6sbI_P-uLg-display-0078",
+      "segment_id": "i6sbI_P-uLg-ja-0024"
+    },
+    {
+      "text": "、気づいてるというか、え、その前は毎日",
+      "start_seconds": 237.92,
+      "end_seconds": 240.76,
+      "id": "i6sbI_P-uLg-display-0079",
+      "segment_id": "i6sbI_P-uLg-ja-0024"
+    },
+    {
+      "text": "歩いてる、つまり皆さんですね、大体電柱",
+      "start_seconds": 240.76,
+      "end_seconds": 243.68,
+      "id": "i6sbI_P-uLg-display-0080",
+      "segment_id": "i6sbI_P-uLg-ja-0025"
+    },
+    {
+      "text": "を避けて歩くのほぼ日本では不可能なので",
+      "start_seconds": 243.68,
+      "end_seconds": 245.959,
+      "id": "i6sbI_P-uLg-display-0081",
+      "segment_id": "i6sbI_P-uLg-ja-0025"
+    },
+    {
+      "text": "、あの、皆さんが元々電柱に関係ない人",
+      "start_seconds": 245.959,
+      "end_seconds": 249.879,
+      "id": "i6sbI_P-uLg-display-0082",
+      "segment_id": "i6sbI_P-uLg-ja-0025"
+    },
+    {
+      "text": "たちですと。で、ゲームフィルター思考で",
+      "start_seconds": 249.879,
+      "end_seconds": 252.84,
+      "id": "i6sbI_P-uLg-display-0083",
+      "segment_id": "i6sbI_P-uLg-ja-0026"
+    },
+    {
+      "text": "ですね、え、これを、え、ジト合戦ゲーム",
+      "start_seconds": 252.84,
+      "end_seconds": 256.479,
+      "id": "i6sbI_P-uLg-display-0084",
+      "segment_id": "i6sbI_P-uLg-ja-0026"
+    },
+    {
+      "text": "みたいな形でチームに分れてどんどん取っ",
+      "start_seconds": 256.479,
+      "end_seconds": 259.199,
+      "id": "i6sbI_P-uLg-display-0085",
+      "segment_id": "i6sbI_P-uLg-ja-0026"
+    },
+    {
+      "text": "てくぞと、領土を拡大してくぞっていう",
+      "start_seconds": 259.199,
+      "end_seconds": 261.639,
+      "id": "i6sbI_P-uLg-display-0086",
+      "segment_id": "i6sbI_P-uLg-ja-0026"
+    },
+    {
+      "text": "ゲームを、え、作ってみました。",
+      "start_seconds": 261.639,
+      "end_seconds": 263.96,
+      "id": "i6sbI_P-uLg-display-0087",
+      "segment_id": "i6sbI_P-uLg-ja-0027"
+    },
+    {
+      "text": "そこで撮影された、え、写真がそのインフラの責任入体に届くという形です。",
+      "start_seconds": 263.96,
+      "end_seconds": 266.96,
+      "id": "i6sbI_P-uLg-display-0088",
+      "segment_id": "i6sbI_P-uLg-ja-0028"
+    },
+    {
+      "text": "写真で撮られたカラスが、え、現地にもあることができました。",
+      "start_seconds": 271.039,
+      "end_seconds": 274.039,
+      "id": "i6sbI_P-uLg-display-0089",
+      "segment_id": "i6sbI_P-uLg-ja-0029"
+    },
+    {
+      "text": "カラスの巣があるとね、停電の危機があるんですね。",
+      "start_seconds": 277.0,
+      "end_seconds": 280.0,
+      "id": "i6sbI_P-uLg-display-0090",
+      "segment_id": "i6sbI_P-uLg-ja-0030"
+    },
+    {
+      "text": "ながら、ま、我々のあの仕事につがる、え、非常に有効な写真を送っていただける。",
+      "start_seconds": 280.0,
+      "end_seconds": 283.0,
+      "id": "i6sbI_P-uLg-display-0091",
+      "segment_id": "i6sbI_P-uLg-ja-0031"
+    },
+    {
+      "text": "このチームと競むのがすごい楽しかったです。",
+      "start_seconds": 286.88,
+      "end_seconds": 289.88,
+      "id": "i6sbI_P-uLg-display-0092",
+      "segment_id": "i6sbI_P-uLg-ja-0032"
+    },
+    {
+      "text": "街をもう1",
+      "start_seconds": 290.72,
+      "end_seconds": 291.56,
+      "id": "i6sbI_P-uLg-display-0093",
+      "segment_id": "i6sbI_P-uLg-ja-0033"
+    },
+    {
+      "text": "度改めて回って知らない地面を見れたり",
+      "start_seconds": 291.56,
+      "end_seconds": 294.56,
+      "id": "i6sbI_P-uLg-display-0094",
+      "segment_id": "i6sbI_P-uLg-ja-0033"
+    },
+    {
+      "text": "というような形でゲームにしちゃうと大変だった電柱点検作業っていうのが関係なかった人の力を借りて一気に効率化できる。それってゲームミフケーションじゃないのっていう風に思われた方いらっしゃいます。ま、その通りです。",
+      "start_seconds": 295.28,
+      "end_seconds": 298.28,
+      "id": "i6sbI_P-uLg-display-0095",
+      "segment_id": "i6sbI_P-uLg-ja-0034"
+    },
+    {
+      "text": "ゲーミフィケーションていう言葉の定義、",
+      "start_seconds": 309.36,
+      "end_seconds": 310.72,
+      "id": "i6sbI_P-uLg-display-0096",
+      "segment_id": "i6sbI_P-uLg-ja-0035"
+    },
+    {
+      "text": "ま、色々ありますけれども、世間一般の",
+      "start_seconds": 310.72,
+      "end_seconds": 313.24,
+      "id": "i6sbI_P-uLg-display-0097",
+      "segment_id": "i6sbI_P-uLg-ja-0035"
+    },
+    {
+      "text": "ゲーミフィケーションはですね、あの、",
+      "start_seconds": 313.24,
+      "end_seconds": 315.4,
+      "id": "i6sbI_P-uLg-display-0098",
+      "segment_id": "i6sbI_P-uLg-ja-0035"
+    },
+    {
+      "text": "内部の人たちにポイントつけたり、え、",
+      "start_seconds": 315.4,
+      "end_seconds": 318.479,
+      "id": "i6sbI_P-uLg-display-0099",
+      "segment_id": "i6sbI_P-uLg-ja-0035"
+    },
+    {
+      "text": "色々報酬つけたりして頑張ってもらうん",
+      "start_seconds": 318.479,
+      "end_seconds": 320.319,
+      "id": "i6sbI_P-uLg-display-0100",
+      "segment_id": "i6sbI_P-uLg-ja-0035"
+    },
+    {
+      "text": "ですね。でも今日皆さんにお話してる",
+      "start_seconds": 320.319,
+      "end_seconds": 322.68,
+      "id": "i6sbI_P-uLg-display-0101",
+      "segment_id": "i6sbI_P-uLg-ja-0036"
+    },
+    {
+      "text": "ゲームフィルター思考は無関係だった人を",
+      "start_seconds": 322.68,
+      "end_seconds": 325.759,
+      "id": "i6sbI_P-uLg-display-0102",
+      "segment_id": "i6sbI_P-uLg-ja-0036"
+    },
+    {
+      "text": "新しい関係者にする。だからゼロサムから",
+      "start_seconds": 325.759,
+      "end_seconds": 329.199,
+      "id": "i6sbI_P-uLg-display-0103",
+      "segment_id": "i6sbI_P-uLg-ja-0036"
+    },
+    {
+      "text": "離脱できるっていうわけですね。ここが",
+      "start_seconds": 329.199,
+      "end_seconds": 330.8,
+      "id": "i6sbI_P-uLg-display-0104",
+      "segment_id": "i6sbI_P-uLg-ja-0036"
+    },
+    {
+      "text": "めちゃくちゃ重要なところです。3.6倍",
+      "start_seconds": 330.8,
+      "end_seconds": 333.88,
+      "id": "i6sbI_P-uLg-display-0105",
+      "segment_id": "i6sbI_P-uLg-ja-0037"
+    },
+    {
+      "text": "。こちらはですね、ゴミの、え、廃棄物の",
+      "start_seconds": 333.88,
+      "end_seconds": 338.479,
+      "id": "i6sbI_P-uLg-display-0106",
+      "segment_id": "i6sbI_P-uLg-ja-0037"
+    },
+    {
+      "text": "処理の、え、事業領域におけるが発生する",
+      "start_seconds": 338.479,
+      "end_seconds": 343.16,
+      "id": "i6sbI_P-uLg-display-0107",
+      "segment_id": "i6sbI_P-uLg-ja-0038"
+    },
+    {
+      "text": "確率が全事業平均の3.6倍高いってわけ",
+      "start_seconds": 343.16,
+      "end_seconds": 347.16,
+      "id": "i6sbI_P-uLg-display-0108",
+      "segment_id": "i6sbI_P-uLg-ja-0038"
+    },
+    {
+      "text": "です。ゴミの分別ってやりたい職業かって",
+      "start_seconds": 347.16,
+      "end_seconds": 350.479,
+      "id": "i6sbI_P-uLg-display-0109",
+      "segment_id": "i6sbI_P-uLg-ja-0038"
+    },
+    {
+      "text": "言うととてもそうではない。おそらく、ま",
+      "start_seconds": 350.479,
+      "end_seconds": 352.8,
+      "id": "i6sbI_P-uLg-display-0110",
+      "segment_id": "i6sbI_P-uLg-ja-0039"
+    },
+    {
+      "text": "、汚い臭いっていうのもありますけれども",
+      "start_seconds": 352.8,
+      "end_seconds": 354.759,
+      "id": "i6sbI_P-uLg-display-0111",
+      "segment_id": "i6sbI_P-uLg-ja-0039"
+    },
+    {
+      "text": "、危ないんですよね。こういったところも",
+      "start_seconds": 354.759,
+      "end_seconds": 357.68,
+      "id": "i6sbI_P-uLg-display-0112",
+      "segment_id": "i6sbI_P-uLg-ja-0039"
+    },
+    {
+      "text": "あって、誰かがやんないといけない仕事",
+      "start_seconds": 357.68,
+      "end_seconds": 359.96,
+      "id": "i6sbI_P-uLg-display-0113",
+      "segment_id": "i6sbI_P-uLg-ja-0039"
+    },
+    {
+      "text": "ですが、やはり成りも少なく、え、大変な",
+      "start_seconds": 359.96,
+      "end_seconds": 363.039,
+      "id": "i6sbI_P-uLg-display-0114",
+      "segment_id": "i6sbI_P-uLg-ja-0040"
+    },
+    {
+      "text": "業界です。ここに無関係な人を連れてき",
+      "start_seconds": 363.039,
+      "end_seconds": 366.199,
+      "id": "i6sbI_P-uLg-display-0115",
+      "segment_id": "i6sbI_P-uLg-ja-0040"
+    },
+    {
+      "text": "ましょう。ま、大体、あの、この場で無",
+      "start_seconds": 366.199,
+      "end_seconds": 368.759,
+      "id": "i6sbI_P-uLg-display-0116",
+      "segment_id": "i6sbI_P-uLg-ja-0040"
+    },
+    {
+      "text": "関係な話は大体ゲーム業界に引き取って",
+      "start_seconds": 368.759,
+      "end_seconds": 371.0,
+      "id": "i6sbI_P-uLg-display-0117",
+      "segment_id": "i6sbI_P-uLg-ja-0040"
+    },
+    {
+      "text": "もらえば関係なかったはずの人なので、",
+      "start_seconds": 371.0,
+      "end_seconds": 373.52,
+      "id": "i6sbI_P-uLg-display-0118",
+      "segment_id": "i6sbI_P-uLg-ja-0041"
+    },
+    {
+      "text": "ゲーム業界連れてきましょう。eスポーツ",
+      "start_seconds": 373.52,
+      "end_seconds": 376.08,
+      "id": "i6sbI_P-uLg-display-0119",
+      "segment_id": "i6sbI_P-uLg-ja-0041"
+    },
+    {
+      "text": "業界。私民法テレビ局でやってた時も、",
+      "start_seconds": 376.08,
+      "end_seconds": 379.36,
+      "id": "i6sbI_P-uLg-display-0120",
+      "segment_id": "i6sbI_P-uLg-ja-0041"
+    },
+    {
+      "text": "あの、高校生がですね、部活でeスポーツ",
+      "start_seconds": 379.36,
+      "end_seconds": 381.72,
+      "id": "i6sbI_P-uLg-display-0121",
+      "segment_id": "i6sbI_P-uLg-ja-0041"
+    },
+    {
+      "text": "で青春を燃やしてる様子を取材したことが",
+      "start_seconds": 381.72,
+      "end_seconds": 383.88,
+      "id": "i6sbI_P-uLg-display-0122",
+      "segment_id": "i6sbI_P-uLg-ja-0042"
+    },
+    {
+      "text": "あります。え、敵をですね、こう戦争",
+      "start_seconds": 383.88,
+      "end_seconds": 386.599,
+      "id": "i6sbI_P-uLg-display-0123",
+      "segment_id": "i6sbI_P-uLg-ja-0042"
+    },
+    {
+      "text": "ゲームでやっつけるために、え、",
+      "start_seconds": 386.599,
+      "end_seconds": 388.199,
+      "id": "i6sbI_P-uLg-display-0124",
+      "segment_id": "i6sbI_P-uLg-ja-0042"
+    },
+    {
+      "text": "めちゃくちゃ練習して大会の時に、え、",
+      "start_seconds": 388.199,
+      "end_seconds": 390.8,
+      "id": "i6sbI_P-uLg-display-0125",
+      "segment_id": "i6sbI_P-uLg-ja-0042"
+    },
+    {
+      "text": "勝ったらですね、もうハイタッチで泣いて",
+      "start_seconds": 390.8,
+      "end_seconds": 392.599,
+      "id": "i6sbI_P-uLg-display-0126",
+      "segment_id": "i6sbI_P-uLg-ja-0042"
+    },
+    {
+      "text": "喜ぶ。これがeスポーツの世界ずっと日本",
+      "start_seconds": 392.599,
+      "end_seconds": 394.919,
+      "id": "i6sbI_P-uLg-display-0127",
+      "segment_id": "i6sbI_P-uLg-ja-0043"
+    },
+    {
+      "text": "世界で起きています。こういった話をです",
+      "start_seconds": 394.919,
+      "end_seconds": 397.84,
+      "id": "i6sbI_P-uLg-display-0128",
+      "segment_id": "i6sbI_P-uLg-ja-0043"
+    },
+    {
+      "text": "ね、今最先端のテクノロジー遠隔ですね。",
+      "start_seconds": 397.84,
+      "end_seconds": 401.44,
+      "id": "i6sbI_P-uLg-display-0129",
+      "segment_id": "i6sbI_P-uLg-ja-0043"
+    },
+    {
+      "text": "ま、ネットワークその他いろんな",
+      "start_seconds": 401.44,
+      "end_seconds": 403.16,
+      "id": "i6sbI_P-uLg-display-0130",
+      "segment_id": "i6sbI_P-uLg-ja-0044"
+    },
+    {
+      "text": "ロボティクスが進化していますので、え、",
+      "start_seconds": 403.16,
+      "end_seconds": 405.759,
+      "id": "i6sbI_P-uLg-display-0131",
+      "segment_id": "i6sbI_P-uLg-ja-0044"
+    },
+    {
+      "text": "遠くの力を、え、正確にどこかに伝え",
+      "start_seconds": 405.759,
+      "end_seconds": 409.16,
+      "id": "i6sbI_P-uLg-display-0132",
+      "segment_id": "i6sbI_P-uLg-ja-0044"
+    },
+    {
+      "text": "るってことができる。これを組み合わせれ",
+      "start_seconds": 409.16,
+      "end_seconds": 411.759,
+      "id": "i6sbI_P-uLg-display-0133",
+      "segment_id": "i6sbI_P-uLg-ja-0044"
+    },
+    {
+      "text": "ばこういうことができる。ゲームで分別し",
+      "start_seconds": 411.759,
+      "end_seconds": 415.84,
+      "id": "i6sbI_P-uLg-display-0134",
+      "segment_id": "i6sbI_P-uLg-ja-0045"
+    },
+    {
+      "text": "ていったその、え、指示をどこか遠隔に",
+      "start_seconds": 415.84,
+      "end_seconds": 419.639,
+      "id": "i6sbI_P-uLg-display-0135",
+      "segment_id": "i6sbI_P-uLg-ja-0045"
+    },
+    {
+      "text": "ある、え、工場のロボットに連携させて",
+      "start_seconds": 419.639,
+      "end_seconds": 423.96,
+      "id": "i6sbI_P-uLg-display-0136",
+      "segment_id": "i6sbI_P-uLg-ja-0046"
+    },
+    {
+      "text": "ゲームを遊んでる気分の人の作業が実際の",
+      "start_seconds": 423.96,
+      "end_seconds": 428.479,
+      "id": "i6sbI_P-uLg-display-0137",
+      "segment_id": "i6sbI_P-uLg-ja-0046"
+    },
+    {
+      "text": "向場に、え、伝わるようにする。これが",
+      "start_seconds": 428.479,
+      "end_seconds": 432.319,
+      "id": "i6sbI_P-uLg-display-0138",
+      "segment_id": "i6sbI_P-uLg-ja-0047"
+    },
+    {
+      "text": "ゲームフルター。それとどうなるか。",
+      "start_seconds": 432.319,
+      "end_seconds": 436.24,
+      "id": "i6sbI_P-uLg-display-0139",
+      "segment_id": "i6sbI_P-uLg-ja-0047"
+    },
+    {
+      "text": "すげえ。なんかすげえ。",
+      "start_seconds": 436.24,
+      "end_seconds": 438.8,
+      "id": "i6sbI_P-uLg-display-0140",
+      "segment_id": "i6sbI_P-uLg-ja-0048"
+    },
+    {
+      "text": "この人たちフィリピンから新潟動かしてます。",
+      "start_seconds": 438.8,
+      "end_seconds": 441.8,
+      "id": "i6sbI_P-uLg-display-0141",
+      "segment_id": "i6sbI_P-uLg-ja-0049"
+    },
+    {
+      "text": "世界中にはですね、35",
+      "start_seconds": 444.759,
+      "end_seconds": 446.759,
+      "id": "i6sbI_P-uLg-display-0142",
+      "segment_id": "i6sbI_P-uLg-ja-0050"
+    },
+    {
+      "text": "億人のゲームやりたい人たちがいるんですよ。そのエネルギーを使うと、見てください。これやりたかったやつ。ゴミの分別してよっしゃって喜んでるんですよね。これができる。",
+      "start_seconds": 446.759,
+      "end_seconds": 449.759,
+      "id": "i6sbI_P-uLg-display-0143",
+      "segment_id": "i6sbI_P-uLg-ja-0050"
+    },
+    {
+      "text": "だから危なくて誰もやりたくない仕事でも",
+      "start_seconds": 458.879,
+      "end_seconds": 461.84,
+      "id": "i6sbI_P-uLg-display-0144",
+      "segment_id": "i6sbI_P-uLg-ja-0051"
+    },
+    {
+      "text": "ゲームフィルター思考を使っば関係ない人",
+      "start_seconds": 461.84,
+      "end_seconds": 464.24,
+      "id": "i6sbI_P-uLg-display-0145",
+      "segment_id": "i6sbI_P-uLg-ja-0051"
+    },
+    {
+      "text": "の力を、え、持ってきてこれだけ",
+      "start_seconds": 464.24,
+      "end_seconds": 466.72,
+      "id": "i6sbI_P-uLg-display-0146",
+      "segment_id": "i6sbI_P-uLg-ja-0051"
+    },
+    {
+      "text": "盛り上がることができる。これがゲーム",
+      "start_seconds": 466.72,
+      "end_seconds": 469.159,
+      "id": "i6sbI_P-uLg-display-0147",
+      "segment_id": "i6sbI_P-uLg-ja-0051"
+    },
+    {
+      "text": "フィルター思考です。896。これは衝撃",
+      "start_seconds": 469.159,
+      "end_seconds": 472.28,
+      "id": "i6sbI_P-uLg-display-0148",
+      "segment_id": "i6sbI_P-uLg-ja-0052"
+    },
+    {
+      "text": "的な数字です。日本には1719の、え、",
+      "start_seconds": 472.28,
+      "end_seconds": 477.319,
+      "id": "i6sbI_P-uLg-display-0149",
+      "segment_id": "i6sbI_P-uLg-ja-0052"
+    },
+    {
+      "text": "自治体があります。そのうち896が",
+      "start_seconds": 477.319,
+      "end_seconds": 481.879,
+      "id": "i6sbI_P-uLg-display-0150",
+      "segment_id": "i6sbI_P-uLg-ja-0053"
+    },
+    {
+      "text": "2040年までに消滅する可能性があると",
+      "start_seconds": 481.879,
+      "end_seconds": 485.28,
+      "id": "i6sbI_P-uLg-display-0151",
+      "segment_id": "i6sbI_P-uLg-ja-0053"
+    },
+    {
+      "text": "言われている数字です。もう1つ39%は",
+      "start_seconds": 485.28,
+      "end_seconds": 489.639,
+      "id": "i6sbI_P-uLg-display-0152",
+      "segment_id": "i6sbI_P-uLg-ja-0054"
+    },
+    {
+      "text": "2050年までに人口が半分になって",
+      "start_seconds": 489.639,
+      "end_seconds": 492.84,
+      "id": "i6sbI_P-uLg-display-0153",
+      "segment_id": "i6sbI_P-uLg-ja-0054"
+    },
+    {
+      "text": "しまう自治体の数です。つまり日本はです",
+      "start_seconds": 492.84,
+      "end_seconds": 496.12,
+      "id": "i6sbI_P-uLg-display-0154",
+      "segment_id": "i6sbI_P-uLg-ja-0054"
+    },
+    {
+      "text": "ね、もう消えていこうとしている地方",
+      "start_seconds": 496.12,
+      "end_seconds": 498.919,
+      "id": "i6sbI_P-uLg-display-0155",
+      "segment_id": "i6sbI_P-uLg-ja-0055"
+    },
+    {
+      "text": "からっていう状態ですね。例えばそん中で",
+      "start_seconds": 498.919,
+      "end_seconds": 501.44,
+      "id": "i6sbI_P-uLg-display-0156",
+      "segment_id": "i6sbI_P-uLg-ja-0055"
+    },
+    {
+      "text": "も先進と言われている北海道黄色いところ",
+      "start_seconds": 501.44,
+      "end_seconds": 504.44,
+      "id": "i6sbI_P-uLg-display-0157",
+      "segment_id": "i6sbI_P-uLg-ja-0055"
+    },
+    {
+      "text": "が消滅可能性のあるところです。",
+      "start_seconds": 504.44,
+      "end_seconds": 508.199,
+      "id": "i6sbI_P-uLg-display-0158",
+      "segment_id": "i6sbI_P-uLg-ja-0056"
+    },
+    {
+      "text": "函館市例えばその函館市すら消滅可能性の",
+      "start_seconds": 508.199,
+      "end_seconds": 512.12,
+      "id": "i6sbI_P-uLg-display-0159",
+      "segment_id": "i6sbI_P-uLg-ja-0057"
+    },
+    {
+      "text": "、え、黄色に、え、なってしまっています",
+      "start_seconds": 512.12,
+      "end_seconds": 514.839,
+      "id": "i6sbI_P-uLg-display-0160",
+      "segment_id": "i6sbI_P-uLg-ja-0057"
+    },
+    {
+      "text": "。では函館市に関係ない人、目一杯関係",
+      "start_seconds": 514.839,
+      "end_seconds": 519.12,
+      "id": "i6sbI_P-uLg-display-0161",
+      "segment_id": "i6sbI_P-uLg-ja-0057"
+    },
+    {
+      "text": "ない人連れてきこようじゃないかっていう",
+      "start_seconds": 519.12,
+      "end_seconds": 520.719,
+      "id": "i6sbI_P-uLg-display-0162",
+      "segment_id": "i6sbI_P-uLg-ja-0058"
+    },
+    {
+      "text": "わけですね。ゲームの世界ではですね、え",
+      "start_seconds": 520.719,
+      "end_seconds": 524.2,
+      "id": "i6sbI_P-uLg-display-0163",
+      "segment_id": "i6sbI_P-uLg-ja-0058"
+    },
+    {
+      "text": "、ポイカっていうのがちょっとあります。",
+      "start_seconds": 524.2,
+      "end_seconds": 526.32,
+      "id": "i6sbI_P-uLg-display-0164",
+      "segment_id": "i6sbI_P-uLg-ja-0058"
+    },
+    {
+      "text": "え、ポイント活動っていうのをやって",
+      "start_seconds": 526.32,
+      "end_seconds": 528.32,
+      "id": "i6sbI_P-uLg-display-0165",
+      "segment_id": "i6sbI_P-uLg-ja-0059"
+    },
+    {
+      "text": "ほんのちょっとお金を稼ぐってのが日本中",
+      "start_seconds": 528.32,
+      "end_seconds": 530.32,
+      "id": "i6sbI_P-uLg-display-0166",
+      "segment_id": "i6sbI_P-uLg-ja-0059"
+    },
+    {
+      "text": "世界中で存在している。",
+      "start_seconds": 530.32,
+      "end_seconds": 532.48,
+      "id": "i6sbI_P-uLg-display-0167",
+      "segment_id": "i6sbI_P-uLg-ja-0059"
+    },
+    {
+      "text": "どこかでそれをやってる人を連れてきてみたらどうだ?中米",
+      "start_seconds": 532.48,
+      "end_seconds": 535.48,
+      "id": "i6sbI_P-uLg-display-0168",
+      "segment_id": "i6sbI_P-uLg-ja-0060"
+    },
+    {
+      "text": "2",
+      "start_seconds": 535.56,
+      "end_seconds": 535.72,
+      "id": "i6sbI_P-uLg-display-0169",
+      "segment_id": "i6sbI_P-uLg-ja-0060"
+    },
+    {
+      "text": "から具の人を連れてきてみようっていう形でやってみたらですね。",
+      "start_seconds": 535.72,
+      "end_seconds": 538.72,
+      "id": "i6sbI_P-uLg-display-0170",
+      "segment_id": "i6sbI_P-uLg-ja-0060"
+    },
+    {
+      "text": "1日1個だけあの2分で拡散できる情報を",
+      "start_seconds": 560.04,
+      "end_seconds": 563.64,
+      "id": "i6sbI_P-uLg-display-0171",
+      "segment_id": "i6sbI_P-uLg-ja-0061"
+    },
+    {
+      "text": "毎日60個彼女は、え、拡散し続けました",
+      "start_seconds": 563.64,
+      "end_seconds": 566.68,
+      "id": "i6sbI_P-uLg-display-0172",
+      "segment_id": "i6sbI_P-uLg-ja-0061"
+    },
+    {
+      "text": "。そうするとおそらくここにいる皆さん",
+      "start_seconds": 566.68,
+      "end_seconds": 568.959,
+      "id": "i6sbI_P-uLg-display-0173",
+      "segment_id": "i6sbI_P-uLg-ja-0061"
+    },
+    {
+      "text": "よりずっと函館に詳しくなったんですよね",
+      "start_seconds": 568.959,
+      "end_seconds": 570.88,
+      "id": "i6sbI_P-uLg-display-0174",
+      "segment_id": "i6sbI_P-uLg-ja-0061"
+    },
+    {
+      "text": "。だから言ったこともない、聞いたことも",
+      "start_seconds": 570.88,
+      "end_seconds": 573.6,
+      "id": "i6sbI_P-uLg-display-0175",
+      "segment_id": "i6sbI_P-uLg-ja-0062"
+    },
+    {
+      "text": "なかったけど、もうすっかりデジタルの",
+      "start_seconds": 573.6,
+      "end_seconds": 576.12,
+      "id": "i6sbI_P-uLg-display-0176",
+      "segment_id": "i6sbI_P-uLg-ja-0062"
+    },
+    {
+      "text": "関係人口がこうやって生まれたっていう",
+      "start_seconds": 576.12,
+      "end_seconds": 578.0,
+      "id": "i6sbI_P-uLg-display-0177",
+      "segment_id": "i6sbI_P-uLg-ja-0062"
+    },
+    {
+      "text": "わけです。これをうまく自治体と連携させ",
+      "start_seconds": 578.0,
+      "end_seconds": 580.68,
+      "id": "i6sbI_P-uLg-display-0178",
+      "segment_id": "i6sbI_P-uLg-ja-0062"
+    },
+    {
+      "text": "て使っていこうというのがゲムフルター",
+      "start_seconds": 580.68,
+      "end_seconds": 582.519,
+      "id": "i6sbI_P-uLg-display-0179",
+      "segment_id": "i6sbI_P-uLg-ja-0062"
+    },
+    {
+      "text": "思考です。4割。え、これはですね、川の",
+      "start_seconds": 582.519,
+      "end_seconds": 585.88,
+      "id": "i6sbI_P-uLg-display-0180",
+      "segment_id": "i6sbI_P-uLg-ja-0063"
+    },
+    {
+      "text": "、え、魚の炭水魚の絶滅器具の割合、もう",
+      "start_seconds": 585.88,
+      "end_seconds": 591.0,
+      "id": "i6sbI_P-uLg-display-0181",
+      "segment_id": "i6sbI_P-uLg-ja-0063"
+    },
+    {
+      "text": "環境の破壊みたいな話は、ま、川ではなく",
+      "start_seconds": 591.0,
+      "end_seconds": 594.8,
+      "id": "i6sbI_P-uLg-display-0182",
+      "segment_id": "i6sbI_P-uLg-ja-0064"
+    },
+    {
+      "text": "海や山やいろんなところで起きていますが",
+      "start_seconds": 594.8,
+      "end_seconds": 597.36,
+      "id": "i6sbI_P-uLg-display-0183",
+      "segment_id": "i6sbI_P-uLg-ja-0064"
+    },
+    {
+      "text": "、え、川、え、川のお魚、え、その環境を",
+      "start_seconds": 597.36,
+      "end_seconds": 601.44,
+      "id": "i6sbI_P-uLg-display-0184",
+      "segment_id": "i6sbI_P-uLg-ja-0064"
+    },
+    {
+      "text": "守るにはどうしたら関係ない人、ま、得意",
+      "start_seconds": 601.44,
+      "end_seconds": 604.04,
+      "id": "i6sbI_P-uLg-display-0185",
+      "segment_id": "i6sbI_P-uLg-ja-0065"
+    },
+    {
+      "text": "のゲームユーザー連れてきましょうという",
+      "start_seconds": 604.04,
+      "end_seconds": 605.64,
+      "id": "i6sbI_P-uLg-display-0186",
+      "segment_id": "i6sbI_P-uLg-ja-0065"
+    },
+    {
+      "text": "わけですね。リビングからスマホで実際に",
+      "start_seconds": 605.64,
+      "end_seconds": 610.8,
+      "id": "i6sbI_P-uLg-display-0187",
+      "segment_id": "i6sbI_P-uLg-ja-0065"
+    },
+    {
+      "text": "釣りができる仕組みがあって1回、ま、",
+      "start_seconds": 610.8,
+      "end_seconds": 614.92,
+      "id": "i6sbI_P-uLg-display-0188",
+      "segment_id": "i6sbI_P-uLg-ja-0066"
+    },
+    {
+      "text": "海外の人ね、お金いっぱい持ってますから",
+      "start_seconds": 614.92,
+      "end_seconds": 616.959,
+      "id": "i6sbI_P-uLg-display-0189",
+      "segment_id": "i6sbI_P-uLg-ja-0066"
+    },
+    {
+      "text": "1回3000円、5000円、30ドル",
+      "start_seconds": 616.959,
+      "end_seconds": 619.72,
+      "id": "i6sbI_P-uLg-display-0190",
+      "segment_id": "i6sbI_P-uLg-ja-0066"
+    },
+    {
+      "text": "多分いける。で、そういう人たちのお金が",
+      "start_seconds": 619.72,
+      "end_seconds": 623.24,
+      "id": "i6sbI_P-uLg-display-0191",
+      "segment_id": "i6sbI_P-uLg-ja-0067"
+    },
+    {
+      "text": "どこか地域の、え、置かれているロボット",
+      "start_seconds": 623.24,
+      "end_seconds": 625.959,
+      "id": "i6sbI_P-uLg-display-0192",
+      "segment_id": "i6sbI_P-uLg-ja-0067"
+    },
+    {
+      "text": "の世話をしている人たちの、え、雇用に",
+      "start_seconds": 625.959,
+      "end_seconds": 629.079,
+      "id": "i6sbI_P-uLg-display-0193",
+      "segment_id": "i6sbI_P-uLg-ja-0067"
+    },
+    {
+      "text": "当てられたり、行くばっかのお金が川を",
+      "start_seconds": 629.079,
+      "end_seconds": 631.76,
+      "id": "i6sbI_P-uLg-display-0194",
+      "segment_id": "i6sbI_P-uLg-ja-0068"
+    },
+    {
+      "text": "守る、え、お金に使われる。こういった",
+      "start_seconds": 631.76,
+      "end_seconds": 634.2,
+      "id": "i6sbI_P-uLg-display-0195",
+      "segment_id": "i6sbI_P-uLg-ja-0068"
+    },
+    {
+      "text": "仕組みを世界を、え、舞台に作っていこう",
+      "start_seconds": 634.2,
+      "end_seconds": 637.04,
+      "id": "i6sbI_P-uLg-display-0196",
+      "segment_id": "i6sbI_P-uLg-ja-0068"
+    },
+    {
+      "text": "。ゲームフィルター思考です。4.4%。",
+      "start_seconds": 637.04,
+      "end_seconds": 640.48,
+      "id": "i6sbI_P-uLg-display-0197",
+      "segment_id": "i6sbI_P-uLg-ja-0068"
+    },
+    {
+      "text": "これはですね、関係ない人がいないはずの",
+      "start_seconds": 640.48,
+      "end_seconds": 644.04,
+      "id": "i6sbI_P-uLg-display-0198",
+      "segment_id": "i6sbI_P-uLg-ja-0069"
+    },
+    {
+      "text": "、え、防災に関する話です。普段避難訓練",
+      "start_seconds": 644.04,
+      "end_seconds": 648.32,
+      "id": "i6sbI_P-uLg-display-0199",
+      "segment_id": "i6sbI_P-uLg-ja-0069"
+    },
+    {
+      "text": "があった時にいっつもちゃんと参加してる",
+      "start_seconds": 648.32,
+      "end_seconds": 650.8,
+      "id": "i6sbI_P-uLg-display-0200",
+      "segment_id": "i6sbI_P-uLg-ja-0069"
+    },
+    {
+      "text": "よって人は4.4%。これちょっとまた手",
+      "start_seconds": 650.8,
+      "end_seconds": 653.72,
+      "id": "i6sbI_P-uLg-display-0201",
+      "segment_id": "i6sbI_P-uLg-ja-0070"
+    },
+    {
+      "text": "を上げて聞いてみたいんですけど、えっと",
+      "start_seconds": 653.72,
+      "end_seconds": 655.36,
+      "id": "i6sbI_P-uLg-display-0202",
+      "segment_id": "i6sbI_P-uLg-ja-0070"
+    },
+    {
+      "text": "私調べてはですね、避難訓練に1回も参加",
+      "start_seconds": 655.36,
+      "end_seconds": 658.6,
+      "id": "i6sbI_P-uLg-display-0203",
+      "segment_id": "i6sbI_P-uLg-ja-0070"
+    },
+    {
+      "text": "したことない人は64.5%",
+      "start_seconds": 658.6,
+      "end_seconds": 662.44,
+      "id": "i6sbI_P-uLg-display-0204",
+      "segment_id": "i6sbI_P-uLg-ja-0070"
+    },
+    {
+      "text": "参加したことあるよっていう人、あ、",
+      "start_seconds": 662.44,
+      "end_seconds": 666.48,
+      "id": "i6sbI_P-uLg-display-0205",
+      "segment_id": "i6sbI_P-uLg-ja-0071"
+    },
+    {
+      "text": "やはりですね、皆さんここにいらっしゃる",
+      "start_seconds": 666.48,
+      "end_seconds": 668.44,
+      "id": "i6sbI_P-uLg-display-0206",
+      "segment_id": "i6sbI_P-uLg-ja-0071"
+    },
+    {
+      "text": "方意識がちゃんと高いんで[笑い]、あの",
+      "start_seconds": 668.44,
+      "end_seconds": 671.56,
+      "id": "i6sbI_P-uLg-display-0207",
+      "segment_id": "i6sbI_P-uLg-ja-0071"
+    },
+    {
+      "text": "大丈夫なんですけど、つまり日本ではです",
+      "start_seconds": 671.56,
+      "end_seconds": 674.56,
+      "id": "i6sbI_P-uLg-display-0208",
+      "segment_id": "i6sbI_P-uLg-ja-0072"
+    },
+    {
+      "text": "ね、もうきるべき大災害に向けてやばい",
+      "start_seconds": 674.56,
+      "end_seconds": 676.959,
+      "id": "i6sbI_P-uLg-display-0209",
+      "segment_id": "i6sbI_P-uLg-ja-0072"
+    },
+    {
+      "text": "やばいやばいと言いながら何もしてないっ",
+      "start_seconds": 676.959,
+      "end_seconds": 679.36,
+      "id": "i6sbI_P-uLg-display-0210",
+      "segment_id": "i6sbI_P-uLg-ja-0072"
+    },
+    {
+      "text": "ていうのが現実なんですよ。じゃあ関係",
+      "start_seconds": 679.36,
+      "end_seconds": 682.32,
+      "id": "i6sbI_P-uLg-display-0211",
+      "segment_id": "i6sbI_P-uLg-ja-0072"
+    },
+    {
+      "text": "ない人はもういないわけです。災害です",
+      "start_seconds": 682.32,
+      "end_seconds": 684.24,
+      "id": "i6sbI_P-uLg-display-0212",
+      "segment_id": "i6sbI_P-uLg-ja-0073"
+    },
+    {
+      "text": "から。じゃあですね、普段の皆さんがやっ",
+      "start_seconds": 684.24,
+      "end_seconds": 687.44,
+      "id": "i6sbI_P-uLg-display-0213",
+      "segment_id": "i6sbI_P-uLg-ja-0073"
+    },
+    {
+      "text": "ている元々夢中になってることに被せ",
+      "start_seconds": 687.44,
+      "end_seconds": 690.04,
+      "id": "i6sbI_P-uLg-display-0214",
+      "segment_id": "i6sbI_P-uLg-ja-0073"
+    },
+    {
+      "text": "ちゃえばいいんじゃないの。例えば高校",
+      "start_seconds": 690.04,
+      "end_seconds": 692.24,
+      "id": "i6sbI_P-uLg-display-0215",
+      "segment_id": "i6sbI_P-uLg-ja-0073"
+    },
+    {
+      "text": "野球、高校野球不思議です。僕自身も野球",
+      "start_seconds": 692.24,
+      "end_seconds": 695.6,
+      "id": "i6sbI_P-uLg-display-0216",
+      "segment_id": "i6sbI_P-uLg-ja-0074"
+    },
+    {
+      "text": "やんないですけど、自分の地元の高校が",
+      "start_seconds": 695.6,
+      "end_seconds": 698.6,
+      "id": "i6sbI_P-uLg-display-0217",
+      "segment_id": "i6sbI_P-uLg-ja-0074"
+    },
+    {
+      "text": "勝ちんでるとですね、なんかめちゃくちゃ",
+      "start_seconds": 698.6,
+      "end_seconds": 701.32,
+      "id": "i6sbI_P-uLg-display-0218",
+      "segment_id": "i6sbI_P-uLg-ja-0074"
+    },
+    {
+      "text": "応援しちゃうみたいな老女ですよね。関係",
+      "start_seconds": 701.32,
+      "end_seconds": 704.48,
+      "id": "i6sbI_P-uLg-display-0219",
+      "segment_id": "i6sbI_P-uLg-ja-0075"
+    },
+    {
+      "text": "ない人がなんかこう向きになって応援する",
+      "start_seconds": 704.48,
+      "end_seconds": 707.519,
+      "id": "i6sbI_P-uLg-display-0220",
+      "segment_id": "i6sbI_P-uLg-ja-0075"
+    },
+    {
+      "text": "みたいなことが毎年起きてます。ここを",
+      "start_seconds": 707.519,
+      "end_seconds": 711.12,
+      "id": "i6sbI_P-uLg-display-0221",
+      "segment_id": "i6sbI_P-uLg-ja-0075"
+    },
+    {
+      "text": "防災の、え、住民のポイントで競い合う",
+      "start_seconds": 711.12,
+      "end_seconds": 715.12,
+      "id": "i6sbI_P-uLg-display-0222",
+      "segment_id": "i6sbI_P-uLg-ja-0076"
+    },
+    {
+      "text": "全国防災チャンピオンシップっていうのを",
+      "start_seconds": 715.12,
+      "end_seconds": 717.079,
+      "id": "i6sbI_P-uLg-display-0223",
+      "segment_id": "i6sbI_P-uLg-ja-0076"
+    },
+    {
+      "text": "作ったらどうなるか今年動きます。ゲーム",
+      "start_seconds": 717.079,
+      "end_seconds": 720.92,
+      "id": "i6sbI_P-uLg-display-0224",
+      "segment_id": "i6sbI_P-uLg-ja-0076"
+    },
+    {
+      "text": "振りたこ色々とお話をしてきましたが、皆",
+      "start_seconds": 720.92,
+      "end_seconds": 724.639,
+      "id": "i6sbI_P-uLg-display-0225",
+      "segment_id": "i6sbI_P-uLg-ja-0077"
+    },
+    {
+      "text": "さんですね、課題を解決する、え、その時",
+      "start_seconds": 724.639,
+      "end_seconds": 727.56,
+      "id": "i6sbI_P-uLg-display-0226",
+      "segment_id": "i6sbI_P-uLg-ja-0077"
+    },
+    {
+      "text": "には必ず関係者が集まってそれぞれの知見",
+      "start_seconds": 727.56,
+      "end_seconds": 731.24,
+      "id": "i6sbI_P-uLg-display-0227",
+      "segment_id": "i6sbI_P-uLg-ja-0077"
+    },
+    {
+      "text": "で頭を悩ます。これが普通の課題解決の",
+      "start_seconds": 731.24,
+      "end_seconds": 735.44,
+      "id": "i6sbI_P-uLg-display-0228",
+      "segment_id": "i6sbI_P-uLg-ja-0078"
+    },
+    {
+      "text": "やり方です。今日皆さんに是非あの覚えて",
+      "start_seconds": 735.44,
+      "end_seconds": 738.6,
+      "id": "i6sbI_P-uLg-display-0229",
+      "segment_id": "i6sbI_P-uLg-ja-0078"
+    },
+    {
+      "text": "帰っていただきたいゲーミーフルター思考",
+      "start_seconds": 738.6,
+      "end_seconds": 740.24,
+      "id": "i6sbI_P-uLg-display-0230",
+      "segment_id": "i6sbI_P-uLg-ja-0078"
+    },
+    {
+      "text": "はそうではない。この世の中にはですね、",
+      "start_seconds": 740.24,
+      "end_seconds": 743.32,
+      "id": "i6sbI_P-uLg-display-0231",
+      "segment_id": "i6sbI_P-uLg-ja-0079"
+    },
+    {
+      "text": "視界を広げればエネルギーや興味や活力や",
+      "start_seconds": 743.32,
+      "end_seconds": 747.24,
+      "id": "i6sbI_P-uLg-display-0232",
+      "segment_id": "i6sbI_P-uLg-ja-0079"
+    },
+    {
+      "text": "知識をいっぱい持ってるいろんな人たちが",
+      "start_seconds": 747.24,
+      "end_seconds": 749.639,
+      "id": "i6sbI_P-uLg-display-0233",
+      "segment_id": "i6sbI_P-uLg-ja-0079"
+    },
+    {
+      "text": "いるんですね。その人たちは皆さんは関係",
+      "start_seconds": 749.639,
+      "end_seconds": 752.76,
+      "id": "i6sbI_P-uLg-display-0234",
+      "segment_id": "i6sbI_P-uLg-ja-0080"
+    },
+    {
+      "text": "ないと思ってる。でも関係あるようにして",
+      "start_seconds": 752.76,
+      "end_seconds": 755.959,
+      "id": "i6sbI_P-uLg-display-0235",
+      "segment_id": "i6sbI_P-uLg-ja-0080"
+    },
+    {
+      "text": "あげればいいっていうわけですね。",
+      "start_seconds": 755.959,
+      "end_seconds": 757.76,
+      "id": "i6sbI_P-uLg-display-0236",
+      "segment_id": "i6sbI_P-uLg-ja-0080"
+    },
+    {
+      "text": "いろんな人たちの力を借りる。これが",
+      "start_seconds": 757.76,
+      "end_seconds": 759.519,
+      "id": "i6sbI_P-uLg-display-0237",
+      "segment_id": "i6sbI_P-uLg-ja-0081"
+    },
+    {
+      "text": "ゲームフィルター思考ですけれども、",
+      "start_seconds": 759.519,
+      "end_seconds": 762.04,
+      "id": "i6sbI_P-uLg-display-0238",
+      "segment_id": "i6sbI_P-uLg-ja-0081"
+    },
+    {
+      "text": "例えば600万人、この数字は、え、日本",
+      "start_seconds": 762.04,
+      "end_seconds": 766.079,
+      "id": "i6sbI_P-uLg-display-0239",
+      "segment_id": "i6sbI_P-uLg-ja-0081"
+    },
+    {
+      "text": "における精神障害をお持ちの方々の人数",
+      "start_seconds": 766.079,
+      "end_seconds": 769.399,
+      "id": "i6sbI_P-uLg-display-0240",
+      "segment_id": "i6sbI_P-uLg-ja-0081"
+    },
+    {
+      "text": "です。どんどん増えている。いわゆる家",
+      "start_seconds": 769.399,
+      "end_seconds": 771.76,
+      "id": "i6sbI_P-uLg-display-0241",
+      "segment_id": "i6sbI_P-uLg-ja-0082"
+    },
+    {
+      "text": "から出られない引きこもりみたいな方々も",
+      "start_seconds": 771.76,
+      "end_seconds": 774.24,
+      "id": "i6sbI_P-uLg-display-0242",
+      "segment_id": "i6sbI_P-uLg-ja-0082"
+    },
+    {
+      "text": "この数字に含まれます。そういった方々が",
+      "start_seconds": 774.24,
+      "end_seconds": 778.0,
+      "id": "i6sbI_P-uLg-display-0243",
+      "segment_id": "i6sbI_P-uLg-ja-0082"
+    },
+    {
+      "text": "何をしてるかというと、実質であるいは",
+      "start_seconds": 778.0,
+      "end_seconds": 780.56,
+      "id": "i6sbI_P-uLg-display-0244",
+      "segment_id": "i6sbI_P-uLg-ja-0082"
+    },
+    {
+      "text": "施設で、え、テレビモニターや、え、",
+      "start_seconds": 780.56,
+      "end_seconds": 783.68,
+      "id": "i6sbI_P-uLg-display-0245",
+      "segment_id": "i6sbI_P-uLg-ja-0083"
+    },
+    {
+      "text": "パソコンやゲーム機の前で座ってるそう",
+      "start_seconds": 783.68,
+      "end_seconds": 786.279,
+      "id": "i6sbI_P-uLg-display-0246",
+      "segment_id": "i6sbI_P-uLg-ja-0083"
+    },
+    {
+      "text": "いった活力ですね。え、エネルギー、え、",
+      "start_seconds": 786.279,
+      "end_seconds": 789.68,
+      "id": "i6sbI_P-uLg-display-0247",
+      "segment_id": "i6sbI_P-uLg-ja-0083"
+    },
+    {
+      "text": "そういったものをちゃんと社会に誰かが",
+      "start_seconds": 789.68,
+      "end_seconds": 792.839,
+      "id": "i6sbI_P-uLg-display-0248",
+      "segment_id": "i6sbI_P-uLg-ja-0084"
+    },
+    {
+      "text": "必要としてるところにつぎ込むことが",
+      "start_seconds": 792.839,
+      "end_seconds": 794.72,
+      "id": "i6sbI_P-uLg-display-0249",
+      "segment_id": "i6sbI_P-uLg-ja-0084"
+    },
+    {
+      "text": "できるんじゃないか。これが、え、ゲーム",
+      "start_seconds": 794.72,
+      "end_seconds": 797.36,
+      "id": "i6sbI_P-uLg-display-0250",
+      "segment_id": "i6sbI_P-uLg-ja-0084"
+    },
+    {
+      "text": "フィルター思考ということになります。",
+      "start_seconds": 797.36,
+      "end_seconds": 801.12,
+      "id": "i6sbI_P-uLg-display-0251",
+      "segment_id": "i6sbI_P-uLg-ja-0084"
+    },
+    {
+      "text": "是非ですね、あの、皆様最初に頭に浮かん",
+      "start_seconds": 801.12,
+      "end_seconds": 804.88,
+      "id": "i6sbI_P-uLg-display-0252",
+      "segment_id": "i6sbI_P-uLg-ja-0085"
+    },
+    {
+      "text": "だご自身の課題、ここに全く関係ない人は",
+      "start_seconds": 804.88,
+      "end_seconds": 810.24,
+      "id": "i6sbI_P-uLg-display-0253",
+      "segment_id": "i6sbI_P-uLg-ja-0085"
+    },
+    {
+      "text": "誰だろうって一度考えてみてください。皆",
+      "start_seconds": 810.24,
+      "end_seconds": 813.079,
+      "id": "i6sbI_P-uLg-display-0254",
+      "segment_id": "i6sbI_P-uLg-ja-0085"
+    },
+    {
+      "text": "さんが忘れていますが、いつも地球の裏側",
+      "start_seconds": 813.079,
+      "end_seconds": 816.44,
+      "id": "i6sbI_P-uLg-display-0255",
+      "segment_id": "i6sbI_P-uLg-ja-0086"
+    },
+    {
+      "text": "には2側の人がいるんですよね。2側の人",
+      "start_seconds": 816.44,
+      "end_seconds": 819.92,
+      "id": "i6sbI_P-uLg-display-0256",
+      "segment_id": "i6sbI_P-uLg-ja-0086"
+    },
+    {
+      "text": "に手伝ってもらうわけにはいかないのか",
+      "start_seconds": 819.92,
+      "end_seconds": 822.12,
+      "id": "i6sbI_P-uLg-display-0257",
+      "segment_id": "i6sbI_P-uLg-ja-0086"
+    },
+    {
+      "text": "なっていう考え方。今のテクノロジーを",
+      "start_seconds": 822.12,
+      "end_seconds": 825.24,
+      "id": "i6sbI_P-uLg-display-0258",
+      "segment_id": "i6sbI_P-uLg-ja-0087"
+    },
+    {
+      "text": "うまく活用してそういう風な、え、",
+      "start_seconds": 825.24,
+      "end_seconds": 827.959,
+      "id": "i6sbI_P-uLg-display-0259",
+      "segment_id": "i6sbI_P-uLg-ja-0087"
+    },
+    {
+      "text": "仕組みづりをする。それはできる話なん",
+      "start_seconds": 827.959,
+      "end_seconds": 831.519,
+      "id": "i6sbI_P-uLg-display-0260",
+      "segment_id": "i6sbI_P-uLg-ja-0087"
+    },
+    {
+      "text": "ですよね。もし残り時間があれば僕は",
+      "start_seconds": 831.519,
+      "end_seconds": 835.36,
+      "id": "i6sbI_P-uLg-display-0261",
+      "segment_id": "i6sbI_P-uLg-ja-0088"
+    },
+    {
+      "text": "300個の課題を全部あのゲームで解決",
+      "start_seconds": 835.36,
+      "end_seconds": 840.12,
+      "id": "i6sbI_P-uLg-display-0262",
+      "segment_id": "i6sbI_P-uLg-ja-0088"
+    },
+    {
+      "text": "するアイデアを1個1個お渡しできる。",
+      "start_seconds": 840.12,
+      "end_seconds": 842.399,
+      "id": "i6sbI_P-uLg-display-0263",
+      "segment_id": "i6sbI_P-uLg-ja-0088"
+    },
+    {
+      "text": "そういう自信が[笑い][息をのむ音]",
+      "start_seconds": 842.399,
+      "end_seconds": 843.88,
+      "id": "i6sbI_P-uLg-display-0264",
+      "segment_id": "i6sbI_P-uLg-ja-0089"
+    },
+    {
+      "text": "あります。是非ですね、今日あのこの考え",
+      "start_seconds": 843.88,
+      "end_seconds": 846.88,
+      "id": "i6sbI_P-uLg-display-0265",
+      "segment_id": "i6sbI_P-uLg-ja-0089"
+    },
+    {
+      "text": "方を覚えて帰っていただいて、え、まず皆",
+      "start_seconds": 846.88,
+      "end_seconds": 850.36,
+      "id": "i6sbI_P-uLg-display-0266",
+      "segment_id": "i6sbI_P-uLg-ja-0089"
+    },
+    {
+      "text": "さんが抱えて本当に困っている課題に対し",
+      "start_seconds": 850.36,
+      "end_seconds": 852.759,
+      "id": "i6sbI_P-uLg-display-0267",
+      "segment_id": "i6sbI_P-uLg-ja-0089"
+    },
+    {
+      "text": "て関係ない人っていうのを、え、想定して",
+      "start_seconds": 852.759,
+      "end_seconds": 856.88,
+      "id": "i6sbI_P-uLg-display-0268",
+      "segment_id": "i6sbI_P-uLg-ja-0090"
+    },
+    {
+      "text": "みてください。そしてその人に嫌な作業を",
+      "start_seconds": 856.88,
+      "end_seconds": 860.399,
+      "id": "i6sbI_P-uLg-display-0269",
+      "segment_id": "i6sbI_P-uLg-ja-0090"
+    },
+    {
+      "text": "押し付けるんじゃなくて、その人が今何し",
+      "start_seconds": 860.399,
+      "end_seconds": 863.36,
+      "id": "i6sbI_P-uLg-display-0270",
+      "segment_id": "i6sbI_P-uLg-ja-0090"
+    },
+    {
+      "text": "てるんだろう?その人が普段してることっ",
+      "start_seconds": 863.36,
+      "end_seconds": 865.68,
+      "id": "i6sbI_P-uLg-display-0271",
+      "segment_id": "i6sbI_P-uLg-ja-0091"
+    },
+    {
+      "text": "て何だろう?その延長線上で力をちょっと",
+      "start_seconds": 865.68,
+      "end_seconds": 869.88,
+      "id": "i6sbI_P-uLg-display-0272",
+      "segment_id": "i6sbI_P-uLg-ja-0091"
+    },
+    {
+      "text": "貸していただくわけにはいかないか。こう",
+      "start_seconds": 869.88,
+      "end_seconds": 872.0,
+      "id": "i6sbI_P-uLg-display-0273",
+      "segment_id": "i6sbI_P-uLg-ja-0091"
+    },
+    {
+      "text": "いうような考え方。これがゲーム",
+      "start_seconds": 872.0,
+      "end_seconds": 874.279,
+      "id": "i6sbI_P-uLg-display-0274",
+      "segment_id": "i6sbI_P-uLg-ja-0091"
+    },
+    {
+      "text": "フィルター思考でございます。ということ",
+      "start_seconds": 874.279,
+      "end_seconds": 876.959,
+      "id": "i6sbI_P-uLg-display-0275",
+      "segment_id": "i6sbI_P-uLg-ja-0092"
+    },
+    {
+      "text": "で、え、散歩良し、誰かに、え、負担を",
+      "start_seconds": 876.959,
+      "end_seconds": 881.16,
+      "id": "i6sbI_P-uLg-display-0276",
+      "segment_id": "i6sbI_P-uLg-ja-0092"
+    },
+    {
+      "text": "押し付けるのではなくて、え、繋がりを",
+      "start_seconds": 881.16,
+      "end_seconds": 884.56,
+      "id": "i6sbI_P-uLg-display-0277",
+      "segment_id": "i6sbI_P-uLg-ja-0092"
+    },
+    {
+      "text": "世界に感じながら関係ないと思い込んでい",
+      "start_seconds": 884.56,
+      "end_seconds": 888.0,
+      "id": "i6sbI_P-uLg-display-0278",
+      "segment_id": "i6sbI_P-uLg-ja-0093"
+    },
+    {
+      "text": "た人達っていうのを関係者にして、その皆",
+      "start_seconds": 888.0,
+      "end_seconds": 891.279,
+      "id": "i6sbI_P-uLg-display-0279",
+      "segment_id": "i6sbI_P-uLg-ja-0093"
+    },
+    {
+      "text": "さん全体で散歩良しになる仕組みというの",
+      "start_seconds": 891.279,
+      "end_seconds": 894.56,
+      "id": "i6sbI_P-uLg-display-0280",
+      "segment_id": "i6sbI_P-uLg-ja-0093"
+    },
+    {
+      "text": "を、え、作っていければと思っております",
+      "start_seconds": 894.56,
+      "end_seconds": 898.12,
+      "id": "i6sbI_P-uLg-display-0281",
+      "segment_id": "i6sbI_P-uLg-ja-0094"
+    },
+    {
+      "text": "。ということで、え、今日は山田から皆様",
+      "start_seconds": 898.12,
+      "end_seconds": 901.32,
+      "id": "i6sbI_P-uLg-display-0282",
+      "segment_id": "i6sbI_P-uLg-ja-0094"
+    },
+    {
+      "text": "に、え、ゲームフィルター思考について、",
+      "start_seconds": 901.32,
+      "end_seconds": 903.68,
+      "id": "i6sbI_P-uLg-display-0283",
+      "segment_id": "i6sbI_P-uLg-ja-0094"
+    },
+    {
+      "text": "え、お話をさせていただきました。はい、",
+      "start_seconds": 903.68,
+      "end_seconds": 906.399,
+      "id": "i6sbI_P-uLg-display-0284",
+      "segment_id": "i6sbI_P-uLg-ja-0094"
+    },
+    {
+      "text": "ご成聴ありがとうございました。[拍手]",
+      "start_seconds": 906.399,
+      "end_seconds": 910.515,
+      "id": "i6sbI_P-uLg-display-0285",
+      "segment_id": "i6sbI_P-uLg-ja-0095"
+    }
+  ]
+}

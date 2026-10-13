@@ -1,0 +1,3712 @@
+{
+  "schema_version": 1,
+  "video": {
+    "youtube_id": "qZMB9MJU3oM",
+    "title": "Discovery of Being | Yogetsu Akasaka, Keigo Tanaka & Dragon Sound | TEDxMarunouchi",
+    "channel": "TEDx Talks",
+    "duration_seconds": 1199
+  },
+  "caption_track": {
+    "language": "ja",
+    "kind": "asr",
+    "source": "youtube_automatic"
+  },
+  "source_playlist": "https://www.youtube.com/playlist?list=PLsRNoUx8w3rOHjXIU5EE4KOiIagv9yQaG",
+  "fetched_at": "2026-10-13T13:23:26.058969+00:00",
+  "segment_count": 143,
+  "segments": [
+    {
+      "text": "[音楽]",
+      "start_seconds": 9.825,
+      "end_seconds": 11.844999999999999,
+      "id": "qZMB9MJU3oM-ja-0001",
+      "sequence": 1
+    },
+    {
+      "text": "皆さん、こんにちは。",
+      "start_seconds": 13.36,
+      "end_seconds": 14.799,
+      "id": "qZMB9MJU3oM-ja-0002",
+      "sequence": 2
+    },
+    {
+      "text": "Discoveryofbeing存在の再発見。",
+      "start_seconds": 19.52,
+      "end_seconds": 24.599,
+      "id": "qZMB9MJU3oM-ja-0003",
+      "sequence": 3
+    },
+    {
+      "text": "え、こういったタイトルで、え、私たち3人はテレクス丸のうちのオープニングを務めさせていただきます。",
+      "start_seconds": 24.599,
+      "end_seconds": 33.679,
+      "id": "qZMB9MJU3oM-ja-0004",
+      "sequence": 4
+    },
+    {
+      "text": "生きるって素晴らしい、美しい。",
+      "start_seconds": 33.8,
+      "end_seconds": 39.84,
+      "id": "qZMB9MJU3oM-ja-0005",
+      "sequence": 5
+    },
+    {
+      "text": "生きる。",
+      "start_seconds": 39.84,
+      "end_seconds": 42.76,
+      "id": "qZMB9MJU3oM-ja-0006",
+      "sequence": 6
+    },
+    {
+      "text": "これはどういうことでしょうか?",
+      "start_seconds": 42.76,
+      "end_seconds": 47.0,
+      "id": "qZMB9MJU3oM-ja-0007",
+      "sequence": 7
+    },
+    {
+      "text": "私たちはこの生きる、これについて体験を通して最低する。こういった試みをしています。",
+      "start_seconds": 47.0,
+      "end_seconds": 57.68,
+      "id": "qZMB9MJU3oM-ja-0008",
+      "sequence": 8
+    },
+    {
+      "text": "私たちが生まれてから死ぬまで休むことなく続ける呼吸。",
+      "start_seconds": 57.68,
+      "end_seconds": 65.119,
+      "id": "qZMB9MJU3oM-ja-0009",
+      "sequence": 9
+    },
+    {
+      "text": "毎春毎たちは無意識に呼吸を続けています。",
+      "start_seconds": 65.119,
+      "end_seconds": 70.119,
+      "id": "qZMB9MJU3oM-ja-0010",
+      "sequence": 10
+    },
+    {
+      "text": "しかし今日はこの呼吸を意識上に登らせて意識的に呼吸をします。呼吸に意識を向け",
+      "start_seconds": 70.119,
+      "end_seconds": 79.64,
+      "id": "qZMB9MJU3oM-ja-0011",
+      "sequence": 11
+    },
+    {
+      "text": "てみます。演奏の最中に私が吸って吐いてとガイドを入れます。",
+      "start_seconds": 79.64,
+      "end_seconds": 89.4,
+      "id": "qZMB9MJU3oM-ja-0012",
+      "sequence": 12
+    },
+    {
+      "text": "それに合わせて皆さんも是非呼吸を吸って吐いて意識して音に合わせて繰り返してみてください。",
+      "start_seconds": 89.4,
+      "end_seconds": 100.399,
+      "id": "qZMB9MJU3oM-ja-0013",
+      "sequence": 13
+    },
+    {
+      "text": "そして資格互間を通した現実認識の70%を担うと言われている私たちの資格。",
+      "start_seconds": 100.399,
+      "end_seconds": 111.439,
+      "id": "qZMB9MJU3oM-ja-0014",
+      "sequence": 14
+    },
+    {
+      "text": "スクリーンに移る水のマンダ植物の信号を拾って音に変換してそして",
+      "start_seconds": 111.439,
+      "end_seconds": 120.719,
+      "id": "qZMB9MJU3oM-ja-0015",
+      "sequence": 15
+    },
+    {
+      "text": "サイマティクスと呼ばれる現象これによって水の気科学模様がスクリーンに移出されます。",
+      "start_seconds": 120.719,
+      "end_seconds": 131.399,
+      "id": "qZMB9MJU3oM-ja-0016",
+      "sequence": 16
+    },
+    {
+      "text": "151へ2度とあ、え、2度と現れないこの1度切りの巡り合わせ。え、これが水",
+      "start_seconds": 132.04,
+      "end_seconds": 140.72,
+      "id": "qZMB9MJU3oM-ja-0017",
+      "sequence": 17
+    },
+    {
+      "text": "の決晶、水のマンダに現れます。呼吸をしながらその水のマンダを見続けます。",
+      "start_seconds": 140.72,
+      "end_seconds": 150.72,
+      "id": "qZMB9MJU3oM-ja-0018",
+      "sequence": 18
+    },
+    {
+      "text": "そして共鳴。これは目に見えないこの世界です。目に見えるものを通して目",
+      "start_seconds": 150.72,
+      "end_seconds": 159.84,
+      "id": "qZMB9MJU3oM-ja-0019",
+      "sequence": 19
+    },
+    {
+      "text": "に見えないものを感じる。私たちの命る本質。",
+      "start_seconds": 159.84,
+      "end_seconds": 167.48,
+      "id": "qZMB9MJU3oM-ja-0020",
+      "sequence": 20
+    },
+    {
+      "text": "それは私たちの存在感。自分で自分を認識するこの存在感そのものです。",
+      "start_seconds": 167.48,
+      "end_seconds": 175.12,
+      "id": "qZMB9MJU3oM-ja-0021",
+      "sequence": 21
+    },
+    {
+      "text": "呼吸そして資格を通して共鳴。",
+      "start_seconds": 175.12,
+      "end_seconds": 179.519,
+      "id": "qZMB9MJU3oM-ja-0022",
+      "sequence": 22
+    },
+    {
+      "text": "これを皆さんに体験していただきたいと思っています。",
+      "start_seconds": 179.519,
+      "end_seconds": 185.11999999999998,
+      "id": "qZMB9MJU3oM-ja-0023",
+      "sequence": 23
+    },
+    {
+      "text": "瞑想的な体験。これを呼吸と資格、ここに没頭することで私たちの思考、頭の考え",
+      "start_seconds": 185.36,
+      "end_seconds": 194.799,
+      "id": "qZMB9MJU3oM-ja-0024",
+      "sequence": 24
+    },
+    {
+      "text": "から離れる。こういった時間を少し体験していただきたいです。古代のエジとそして現代のテクノロジー、サイマティックスと呼ばれる現象を現在のテクノロジーを通し",
+      "start_seconds": 194.799,
+      "end_seconds": 206.76,
+      "id": "qZMB9MJU3oM-ja-0025",
+      "sequence": 25
+    },
+    {
+      "text": "てそして電気に有気的な変化を加える新次元のアート体験。これを皆様に今日は味わって",
+      "start_seconds": 206.76,
+      "end_seconds": 217.2,
+      "id": "qZMB9MJU3oM-ja-0026",
+      "sequence": 26
+    },
+    {
+      "text": "いただきたいと思います。改めまして瞑想音楽家で、え、全の赤坂洋月と申します。",
+      "start_seconds": 217.2,
+      "end_seconds": 227.159,
+      "id": "qZMB9MJU3oM-ja-0027",
+      "sequence": 27
+    },
+    {
+      "text": "ヒューマンビートボックスと、え、半若信、え、この組み合わせで、え、YouTubeで世界中の方々に私の動画を見ていただきました。自分の声だけで",
+      "start_seconds": 227.159,
+      "end_seconds": 237.799,
+      "id": "qZMB9MJU3oM-ja-0028",
+      "sequence": 28
+    },
+    {
+      "text": "音楽を即興的に作り出す。そして皆様を瞑想的な体験にいう。これを世界中60年以上で今まで、え、この活動を続けてきて",
+      "start_seconds": 237.799,
+      "end_seconds": 249.079,
+      "id": "qZMB9MJU3oM-ja-0029",
+      "sequence": 29
+    },
+    {
+      "text": "おります。",
+      "start_seconds": 249.079,
+      "end_seconds": 251.0,
+      "id": "qZMB9MJU3oM-ja-0030",
+      "sequence": 30
+    },
+    {
+      "text": "え、田中敬語電子音楽家で、え、サイマティクスアーティスト植物から発せられる信号を音楽に変換して",
+      "start_seconds": 251.0,
+      "end_seconds": 259.88,
+      "id": "qZMB9MJU3oM-ja-0031",
+      "sequence": 31
+    },
+    {
+      "text": "、そしてその音を水に当てて水の決晶を移し出します。",
+      "start_seconds": 259.88,
+      "end_seconds": 267.44,
+      "id": "qZMB9MJU3oM-ja-0032",
+      "sequence": 32
+    },
+    {
+      "text": "ドラゴンサウンド電気に有気的な変化を加えることで新次元のアート体験を皆様に今日は感じて",
+      "start_seconds": 267.44,
+      "end_seconds": 278.24,
+      "id": "qZMB9MJU3oM-ja-0033",
+      "sequence": 33
+    },
+    {
+      "text": "いただきます。",
+      "start_seconds": 278.24,
+      "end_seconds": 281.4,
+      "id": "qZMB9MJU3oM-ja-0034",
+      "sequence": 34
+    },
+    {
+      "text": "照明やスピーカーから出てくる音。この現在は電気です。この電気に特殊な変化を与えることで皆様の目に見えない感じる",
+      "start_seconds": 281.4,
+      "end_seconds": 292.479,
+      "id": "qZMB9MJU3oM-ja-0035",
+      "sequence": 35
+    },
+    {
+      "text": "世界を作り出します。",
+      "start_seconds": 292.479,
+      "end_seconds": 297.039,
+      "id": "qZMB9MJU3oM-ja-0036",
+      "sequence": 36
+    },
+    {
+      "text": "それでは皆様是非お試しお楽しみいただけたらと思います。",
+      "start_seconds": 297.24,
+      "end_seconds": 303.923,
+      "id": "qZMB9MJU3oM-ja-0037",
+      "sequence": 37
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 303.923,
+      "end_seconds": 305.943,
+      "id": "qZMB9MJU3oM-ja-0038",
+      "sequence": 38
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 319.643,
+      "end_seconds": 321.66299999999995,
+      "id": "qZMB9MJU3oM-ja-0039",
+      "sequence": 39
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 324.883,
+      "end_seconds": 326.90299999999996,
+      "id": "qZMB9MJU3oM-ja-0040",
+      "sequence": 40
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 337.983,
+      "end_seconds": 340.003,
+      "id": "qZMB9MJU3oM-ja-0041",
+      "sequence": 41
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 387.764,
+      "end_seconds": 389.784,
+      "id": "qZMB9MJU3oM-ja-0042",
+      "sequence": 42
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 396.934,
+      "end_seconds": 398.954,
+      "id": "qZMB9MJU3oM-ja-0043",
+      "sequence": 43
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 409.379,
+      "end_seconds": 411.399,
+      "id": "qZMB9MJU3oM-ja-0044",
+      "sequence": 44
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 432.304,
+      "end_seconds": 434.32399999999996,
+      "id": "qZMB9MJU3oM-ja-0045",
+      "sequence": 45
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 444.095,
+      "end_seconds": 446.115,
+      "id": "qZMB9MJU3oM-ja-0046",
+      "sequence": 46
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 452.61,
+      "end_seconds": 454.63,
+      "id": "qZMB9MJU3oM-ja-0047",
+      "sequence": 47
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 463.745,
+      "end_seconds": 465.765,
+      "id": "qZMB9MJU3oM-ja-0048",
+      "sequence": 48
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 472.26,
+      "end_seconds": 474.28,
+      "id": "qZMB9MJU3oM-ja-0049",
+      "sequence": 49
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 482.74,
+      "end_seconds": 484.76,
+      "id": "qZMB9MJU3oM-ja-0050",
+      "sequence": 50
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 494.53,
+      "end_seconds": 496.54999999999995,
+      "id": "qZMB9MJU3oM-ja-0051",
+      "sequence": 51
+    },
+    {
+      "text": "[音楽]た。",
+      "start_seconds": 501.08,
+      "end_seconds": 506.975,
+      "id": "qZMB9MJU3oM-ja-0052",
+      "sequence": 52
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 506.975,
+      "end_seconds": 508.995,
+      "id": "qZMB9MJU3oM-ja-0053",
+      "sequence": 53
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 514.835,
+      "end_seconds": 516.855,
+      "id": "qZMB9MJU3oM-ja-0054",
+      "sequence": 54
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 521.385,
+      "end_seconds": 523.405,
+      "id": "qZMB9MJU3oM-ja-0055",
+      "sequence": 55
+    },
+    {
+      "text": "お[歌声]",
+      "start_seconds": 523.959,
+      "end_seconds": 527.991,
+      "id": "qZMB9MJU3oM-ja-0056",
+      "sequence": 56
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 529.246,
+      "end_seconds": 531.266,
+      "id": "qZMB9MJU3oM-ja-0057",
+      "sequence": 57
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 534.486,
+      "end_seconds": 536.506,
+      "id": "qZMB9MJU3oM-ja-0058",
+      "sequence": 58
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 539.726,
+      "end_seconds": 541.746,
+      "id": "qZMB9MJU3oM-ja-0059",
+      "sequence": 59
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 548.896,
+      "end_seconds": 550.9159999999999,
+      "id": "qZMB9MJU3oM-ja-0060",
+      "sequence": 60
+    },
+    {
+      "text": "[音楽]ど",
+      "start_seconds": 553.481,
+      "end_seconds": 557.48,
+      "id": "qZMB9MJU3oM-ja-0061",
+      "sequence": 61
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 563.306,
+      "end_seconds": 565.326,
+      "id": "qZMB9MJU3oM-ja-0062",
+      "sequence": 62
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 570.511,
+      "end_seconds": 572.531,
+      "id": "qZMB9MJU3oM-ja-0063",
+      "sequence": 63
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 575.096,
+      "end_seconds": 577.116,
+      "id": "qZMB9MJU3oM-ja-0064",
+      "sequence": 64
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 582.956,
+      "end_seconds": 584.976,
+      "id": "qZMB9MJU3oM-ja-0065",
+      "sequence": 65
+    },
+    {
+      "text": "[音楽][歌声]",
+      "start_seconds": 588.851,
+      "end_seconds": 591.526,
+      "id": "qZMB9MJU3oM-ja-0066",
+      "sequence": 66
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 595.401,
+      "end_seconds": 597.4209999999999,
+      "id": "qZMB9MJU3oM-ja-0067",
+      "sequence": 67
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 603.261,
+      "end_seconds": 605.281,
+      "id": "qZMB9MJU3oM-ja-0068",
+      "sequence": 68
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 613.087,
+      "end_seconds": 615.107,
+      "id": "qZMB9MJU3oM-ja-0069",
+      "sequence": 69
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 619.637,
+      "end_seconds": 621.6569999999999,
+      "id": "qZMB9MJU3oM-ja-0070",
+      "sequence": 70
+    },
+    {
+      "text": "[音楽]ます。",
+      "start_seconds": 624.222,
+      "end_seconds": 626.9200000000001,
+      "id": "qZMB9MJU3oM-ja-0071",
+      "sequence": 71
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 630.772,
+      "end_seconds": 632.792,
+      "id": "qZMB9MJU3oM-ja-0072",
+      "sequence": 72
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 638.632,
+      "end_seconds": 640.6519999999999,
+      "id": "qZMB9MJU3oM-ja-0073",
+      "sequence": 73
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 651.077,
+      "end_seconds": 653.097,
+      "id": "qZMB9MJU3oM-ja-0074",
+      "sequence": 74
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 658.937,
+      "end_seconds": 660.957,
+      "id": "qZMB9MJU3oM-ja-0075",
+      "sequence": 75
+    },
+    {
+      "text": "それで[音楽]は皆様是非一緒に呼吸をしてみましょう。",
+      "start_seconds": 676.399,
+      "end_seconds": 681.92,
+      "id": "qZMB9MJU3oM-ja-0076",
+      "sequence": 76
+    },
+    {
+      "text": "吸って[音楽]吐いて。",
+      "start_seconds": 681.92,
+      "end_seconds": 685.88,
+      "id": "qZMB9MJU3oM-ja-0077",
+      "sequence": 77
+    },
+    {
+      "text": "吸って吐いて。[音楽]吸って吐いて吸って吐いて",
+      "start_seconds": 685.88,
+      "end_seconds": 697.582,
+      "id": "qZMB9MJU3oM-ja-0078",
+      "sequence": 78
+    },
+    {
+      "text": "[音楽]吸って吐いて吸って[音楽]吐いて吸って[音楽]",
+      "start_seconds": 697.582,
+      "end_seconds": 707.68,
+      "id": "qZMB9MJU3oM-ja-0079",
+      "sequence": 79
+    },
+    {
+      "text": "吐いて吸って吐いて吸って[音楽]吐いて吸っ",
+      "start_seconds": 707.68,
+      "end_seconds": 717.959,
+      "id": "qZMB9MJU3oM-ja-0080",
+      "sequence": 80
+    },
+    {
+      "text": "て是非皆様このまま続けてみてください。そしてスクリーンの椅子のマンダ郎を続けてみてください。はい。",
+      "start_seconds": 717.959,
+      "end_seconds": 720.959,
+      "id": "qZMB9MJU3oM-ja-0081",
+      "sequence": 81
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 722.473,
+      "end_seconds": 724.4929999999999,
+      "id": "qZMB9MJU3oM-ja-0082",
+      "sequence": 82
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 738.193,
+      "end_seconds": 740.213,
+      "id": "qZMB9MJU3oM-ja-0083",
+      "sequence": 83
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 746.053,
+      "end_seconds": 748.073,
+      "id": "qZMB9MJU3oM-ja-0084",
+      "sequence": 84
+    },
+    {
+      "text": "さよな。",
+      "start_seconds": 749.519,
+      "end_seconds": 752.519,
+      "id": "qZMB9MJU3oM-ja-0085",
+      "sequence": 85
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 754.568,
+      "end_seconds": 756.588,
+      "id": "qZMB9MJU3oM-ja-0086",
+      "sequence": 86
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 761.118,
+      "end_seconds": 763.138,
+      "id": "qZMB9MJU3oM-ja-0087",
+      "sequence": 87
+    },
+    {
+      "text": "最",
+      "start_seconds": 765.36,
+      "end_seconds": 768.36,
+      "id": "qZMB9MJU3oM-ja-0088",
+      "sequence": 88
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 770.943,
+      "end_seconds": 772.963,
+      "id": "qZMB9MJU3oM-ja-0089",
+      "sequence": 89
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 778.803,
+      "end_seconds": 780.823,
+      "id": "qZMB9MJU3oM-ja-0090",
+      "sequence": 90
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 788.629,
+      "end_seconds": 790.649,
+      "id": "qZMB9MJU3oM-ja-0091",
+      "sequence": 91
+    },
+    {
+      "text": "やらみたし卒[歌声]",
+      "start_seconds": 794.56,
+      "end_seconds": 797.199,
+      "id": "qZMB9MJU3oM-ja-0092",
+      "sequence": 92
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 799.109,
+      "end_seconds": 801.129,
+      "id": "qZMB9MJU3oM-ja-0093",
+      "sequence": 93
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 810.244,
+      "end_seconds": 812.264,
+      "id": "qZMB9MJU3oM-ja-0094",
+      "sequence": 94
+    },
+    {
+      "text": "原か",
+      "start_seconds": 813.32,
+      "end_seconds": 816.32,
+      "id": "qZMB9MJU3oM-ja-0095",
+      "sequence": 95
+    },
+    {
+      "text": "[音楽]最後",
+      "start_seconds": 818.759,
+      "end_seconds": 822.839,
+      "id": "qZMB9MJU3oM-ja-0096",
+      "sequence": 96
+    },
+    {
+      "text": "[音楽][歌声]",
+      "start_seconds": 823.999,
+      "end_seconds": 826.019,
+      "id": "qZMB9MJU3oM-ja-0097",
+      "sequence": 97
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 829.894,
+      "end_seconds": 831.914,
+      "id": "qZMB9MJU3oM-ja-0098",
+      "sequence": 98
+    },
+    {
+      "text": "に[音楽][歌声]",
+      "start_seconds": 833.56,
+      "end_seconds": 839.774,
+      "id": "qZMB9MJU3oM-ja-0099",
+      "sequence": 99
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 844.304,
+      "end_seconds": 846.324,
+      "id": "qZMB9MJU3oM-ja-0100",
+      "sequence": 100
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 852.164,
+      "end_seconds": 854.184,
+      "id": "qZMB9MJU3oM-ja-0101",
+      "sequence": 101
+    },
+    {
+      "text": "族を[音楽]",
+      "start_seconds": 856.0,
+      "end_seconds": 858.769,
+      "id": "qZMB9MJU3oM-ja-0102",
+      "sequence": 102
+    },
+    {
+      "text": "や人しむしむたみ[音楽]",
+      "start_seconds": 862.88,
+      "end_seconds": 865.319,
+      "id": "qZMB9MJU3oM-ja-0103",
+      "sequence": 103
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 869.849,
+      "end_seconds": 871.869,
+      "id": "qZMB9MJU3oM-ja-0104",
+      "sequence": 104
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 879.02,
+      "end_seconds": 881.04,
+      "id": "qZMB9MJU3oM-ja-0105",
+      "sequence": 105
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 885.57,
+      "end_seconds": 887.59,
+      "id": "qZMB9MJU3oM-ja-0106",
+      "sequence": 106
+    },
+    {
+      "text": "最無業物脈内原みた大",
+      "start_seconds": 891.24,
+      "end_seconds": 894.24,
+      "id": "qZMB9MJU3oM-ja-0107",
+      "sequence": 107
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 895.395,
+      "end_seconds": 897.415,
+      "id": "qZMB9MJU3oM-ja-0108",
+      "sequence": 108
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 900.635,
+      "end_seconds": 902.655,
+      "id": "qZMB9MJU3oM-ja-0109",
+      "sequence": 109
+    },
+    {
+      "text": "[歌声][音楽]",
+      "start_seconds": 903.255,
+      "end_seconds": 907.24,
+      "id": "qZMB9MJU3oM-ja-0110",
+      "sequence": 110
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 911.115,
+      "end_seconds": 913.135,
+      "id": "qZMB9MJU3oM-ja-0111",
+      "sequence": 111
+    },
+    {
+      "text": "主部長の主半や原たにゃにゃで原にゃ原そにゃそ半にや[音楽][歌声]",
+      "start_seconds": 914.0,
+      "end_seconds": 919.685,
+      "id": "qZMB9MJU3oM-ja-0112",
+      "sequence": 112
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 921.595,
+      "end_seconds": 923.615,
+      "id": "qZMB9MJU3oM-ja-0113",
+      "sequence": 113
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 928.145,
+      "end_seconds": 930.165,
+      "id": "qZMB9MJU3oM-ja-0114",
+      "sequence": 114
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 936.66,
+      "end_seconds": 938.68,
+      "id": "qZMB9MJU3oM-ja-0115",
+      "sequence": 115
+    },
+    {
+      "text": "て[音楽]あにそわ[歌声]",
+      "start_seconds": 944.16,
+      "end_seconds": 947.85,
+      "id": "qZMB9MJU3oM-ja-0116",
+      "sequence": 116
+    },
+    {
+      "text": "[音楽][歌声]",
+      "start_seconds": 953.035,
+      "end_seconds": 955.055,
+      "id": "qZMB9MJU3oM-ja-0117",
+      "sequence": 117
+    },
+    {
+      "text": "そてそ[音楽]",
+      "start_seconds": 958.68,
+      "end_seconds": 962.9159999999999,
+      "id": "qZMB9MJU3oM-ja-0118",
+      "sequence": 118
+    },
+    {
+      "text": "[音楽][歌声]ヤてそにてそ",
+      "start_seconds": 968.756,
+      "end_seconds": 975.959,
+      "id": "qZMB9MJU3oM-ja-0119",
+      "sequence": 119
+    },
+    {
+      "text": "[歌声][音楽]",
+      "start_seconds": 976.616,
+      "end_seconds": 979.2909999999999,
+      "id": "qZMB9MJU3oM-ja-0120",
+      "sequence": 120
+    },
+    {
+      "text": "[音楽][歌声]",
+      "start_seconds": 985.131,
+      "end_seconds": 987.151,
+      "id": "qZMB9MJU3oM-ja-0121",
+      "sequence": 121
+    },
+    {
+      "text": "[歌声]",
+      "start_seconds": 993.646,
+      "end_seconds": 995.6659999999999,
+      "id": "qZMB9MJU3oM-ja-0122",
+      "sequence": 122
+    },
+    {
+      "text": "[音楽][歌声]",
+      "start_seconds": 1000.196,
+      "end_seconds": 1002.216,
+      "id": "qZMB9MJU3oM-ja-0123",
+      "sequence": 123
+    },
+    {
+      "text": "[音楽]ち",
+      "start_seconds": 1004.781,
+      "end_seconds": 1008.639,
+      "id": "qZMB9MJU3oM-ja-0124",
+      "sequence": 124
+    },
+    {
+      "text": "[歌声]",
+      "start_seconds": 1017.881,
+      "end_seconds": 1019.901,
+      "id": "qZMB9MJU3oM-ja-0125",
+      "sequence": 125
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 1020.501,
+      "end_seconds": 1022.521,
+      "id": "qZMB9MJU3oM-ja-0126",
+      "sequence": 126
+    },
+    {
+      "text": "[音楽][歌声]",
+      "start_seconds": 1025.741,
+      "end_seconds": 1027.761,
+      "id": "qZMB9MJU3oM-ja-0127",
+      "sequence": 127
+    },
+    {
+      "text": "[歌声][音楽]",
+      "start_seconds": 1032.291,
+      "end_seconds": 1034.966,
+      "id": "qZMB9MJU3oM-ja-0128",
+      "sequence": 128
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 1040.151,
+      "end_seconds": 1042.171,
+      "id": "qZMB9MJU3oM-ja-0129",
+      "sequence": 129
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 1048.011,
+      "end_seconds": 1050.032,
+      "id": "qZMB9MJU3oM-ja-0130",
+      "sequence": 130
+    },
+    {
+      "text": "[歌声]全て[音楽]",
+      "start_seconds": 1056.527,
+      "end_seconds": 1061.1670000000001,
+      "id": "qZMB9MJU3oM-ja-0131",
+      "sequence": 131
+    },
+    {
+      "text": "生きしるもが幸せ[音楽][歌声]",
+      "start_seconds": 1062.88,
+      "end_seconds": 1066.407,
+      "id": "qZMB9MJU3oM-ja-0132",
+      "sequence": 132
+    },
+    {
+      "text": "[歌声]",
+      "start_seconds": 1072.247,
+      "end_seconds": 1074.267,
+      "id": "qZMB9MJU3oM-ja-0133",
+      "sequence": 133
+    },
+    {
+      "text": "ありますように[音楽]",
+      "start_seconds": 1077.76,
+      "end_seconds": 1082.127,
+      "id": "qZMB9MJU3oM-ja-0134",
+      "sequence": 134
+    },
+    {
+      "text": "し",
+      "start_seconds": 1086.88,
+      "end_seconds": 1089.88,
+      "id": "qZMB9MJU3oM-ja-0135",
+      "sequence": 135
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 1101.067,
+      "end_seconds": 1103.087,
+      "id": "qZMB9MJU3oM-ja-0136",
+      "sequence": 136
+    },
+    {
+      "text": "B",
+      "start_seconds": 1106.44,
+      "end_seconds": 1109.44,
+      "id": "qZMB9MJU3oM-ja-0137",
+      "sequence": 137
+    },
+    {
+      "text": "ピアピ",
+      "start_seconds": 1126.32,
+      "end_seconds": 1129.32,
+      "id": "qZMB9MJU3oM-ja-0138",
+      "sequence": 138
+    },
+    {
+      "text": "ての生きしき",
+      "start_seconds": 1138.84,
+      "end_seconds": 1145.2,
+      "id": "qZMB9MJU3oM-ja-0139",
+      "sequence": 139
+    },
+    {
+      "text": "ものが幸",
+      "start_seconds": 1147.64,
+      "end_seconds": 1153.0800000000002,
+      "id": "qZMB9MJU3oM-ja-0140",
+      "sequence": 140
+    },
+    {
+      "text": "ありますよ。",
+      "start_seconds": 1157.4,
+      "end_seconds": 1163.0,
+      "id": "qZMB9MJU3oM-ja-0141",
+      "sequence": 141
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 1185.563,
+      "end_seconds": 1187.583,
+      "id": "qZMB9MJU3oM-ja-0142",
+      "sequence": 142
+    },
+    {
+      "text": "ありがとうございました。",
+      "start_seconds": 1193.919,
+      "end_seconds": 1196.919,
+      "id": "qZMB9MJU3oM-ja-0143",
+      "sequence": 143
+    }
+  ],
+  "raw_captions": [
+    {
+      "text": "[音楽]",
+      "start_seconds": 9.825,
+      "end_seconds": 11.844999999999999
+    },
+    {
+      "text": "皆さん、こんにちは。",
+      "start_seconds": 13.36,
+      "end_seconds": 17.799
+    },
+    {
+      "text": "こんにちは。",
+      "start_seconds": 14.799,
+      "end_seconds": 17.799
+    },
+    {
+      "text": "Discoveryofbeing",
+      "start_seconds": 19.52,
+      "end_seconds": 24.599
+    },
+    {
+      "text": "存在の再発見。",
+      "start_seconds": 21.88,
+      "end_seconds": 26.759999999999998
+    },
+    {
+      "text": "え、こういったタイトルで、え、私たち3",
+      "start_seconds": 24.599,
+      "end_seconds": 29.679000000000002
+    },
+    {
+      "text": "人はテレクス丸のうちのオープニングを",
+      "start_seconds": 26.76,
+      "end_seconds": 33.679
+    },
+    {
+      "text": "務めさせていただきます。",
+      "start_seconds": 29.679,
+      "end_seconds": 33.679
+    },
+    {
+      "text": "生きるって素晴らしい、美しい。",
+      "start_seconds": 33.8,
+      "end_seconds": 42.76
+    },
+    {
+      "text": "生きる。",
+      "start_seconds": 39.84,
+      "end_seconds": 47.0
+    },
+    {
+      "text": "これはどういうことでしょうか?",
+      "start_seconds": 42.76,
+      "end_seconds": 52.28
+    },
+    {
+      "text": "私たちはこの生きる、これについて体験を",
+      "start_seconds": 47.0,
+      "end_seconds": 56.0
+    },
+    {
+      "text": "通して最低する。こういった試みをしてい",
+      "start_seconds": 52.28,
+      "end_seconds": 57.68
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 56.0,
+      "end_seconds": 60.76
+    },
+    {
+      "text": "私たちが生まれてから死ぬまで休むこと",
+      "start_seconds": 57.68,
+      "end_seconds": 65.119
+    },
+    {
+      "text": "なく続ける呼吸。",
+      "start_seconds": 60.76,
+      "end_seconds": 68.32
+    },
+    {
+      "text": "毎春毎たちは無意識に呼吸を続けています",
+      "start_seconds": 65.119,
+      "end_seconds": 70.119
+    },
+    {
+      "text": "。",
+      "start_seconds": 68.32,
+      "end_seconds": 74.55999999999999
+    },
+    {
+      "text": "しかし今日はこの呼吸を意識上に登らせて",
+      "start_seconds": 70.119,
+      "end_seconds": 79.64
+    },
+    {
+      "text": "意識的に呼吸をします。呼吸に意識を向け",
+      "start_seconds": 74.56,
+      "end_seconds": 84.92
+    },
+    {
+      "text": "てみます。演奏の最中に私が吸って吐いて",
+      "start_seconds": 79.64,
+      "end_seconds": 89.4
+    },
+    {
+      "text": "とガイドを入れます。",
+      "start_seconds": 84.92,
+      "end_seconds": 93.43900000000001
+    },
+    {
+      "text": "それに合わせて皆さんも是非呼吸を吸って",
+      "start_seconds": 89.4,
+      "end_seconds": 98.04
+    },
+    {
+      "text": "吐いて意識して音に合わせて繰り返してみ",
+      "start_seconds": 93.439,
+      "end_seconds": 100.39899999999999
+    },
+    {
+      "text": "てください。",
+      "start_seconds": 98.04,
+      "end_seconds": 102.759
+    },
+    {
+      "text": "そして資格",
+      "start_seconds": 100.399,
+      "end_seconds": 106.64
+    },
+    {
+      "text": "互間を通した現実認識の70%を担うと",
+      "start_seconds": 102.759,
+      "end_seconds": 111.439
+    },
+    {
+      "text": "言われている私たちの資格。",
+      "start_seconds": 106.64,
+      "end_seconds": 115.96000000000001
+    },
+    {
+      "text": "スクリーンに移る水のマンダ",
+      "start_seconds": 111.439,
+      "end_seconds": 120.719
+    },
+    {
+      "text": "植物の信号を拾って音に変換してそして",
+      "start_seconds": 115.96,
+      "end_seconds": 124.399
+    },
+    {
+      "text": "サイマティクスと呼ばれる現象",
+      "start_seconds": 120.719,
+      "end_seconds": 127.32
+    },
+    {
+      "text": "これによって水の気科学模様がスクリーン",
+      "start_seconds": 124.399,
+      "end_seconds": 131.399
+    },
+    {
+      "text": "に移出されます。",
+      "start_seconds": 127.32,
+      "end_seconds": 131.399
+    },
+    {
+      "text": "151へ2度とあ、え、2度と現れない",
+      "start_seconds": 132.04,
+      "end_seconds": 140.72
+    },
+    {
+      "text": "この1度切りの巡り合わせ。え、これが水",
+      "start_seconds": 136.0,
+      "end_seconds": 145.879
+    },
+    {
+      "text": "の決晶、水のマンダに現れます。呼吸をし",
+      "start_seconds": 140.72,
+      "end_seconds": 150.72
+    },
+    {
+      "text": "ながらその水のマンダを見続けます。",
+      "start_seconds": 145.879,
+      "end_seconds": 155.92
+    },
+    {
+      "text": "そして共鳴。これは目に見えない",
+      "start_seconds": 150.72,
+      "end_seconds": 159.84
+    },
+    {
+      "text": "この世界です。目に見えるものを通して目",
+      "start_seconds": 155.92,
+      "end_seconds": 165.319
+    },
+    {
+      "text": "に見えないものを感じる。私たちの命る",
+      "start_seconds": 159.84,
+      "end_seconds": 167.48
+    },
+    {
+      "text": "本質。",
+      "start_seconds": 165.319,
+      "end_seconds": 171.11999999999998
+    },
+    {
+      "text": "それは私たちの存在感。自分で自分を認識",
+      "start_seconds": 167.48,
+      "end_seconds": 175.11999999999998
+    },
+    {
+      "text": "するこの存在感そのものです。",
+      "start_seconds": 171.12,
+      "end_seconds": 179.519
+    },
+    {
+      "text": "呼吸そして資格を通して共鳴。",
+      "start_seconds": 175.12,
+      "end_seconds": 181.59900000000002
+    },
+    {
+      "text": "これを皆さんに体験していただきたいと",
+      "start_seconds": 179.519,
+      "end_seconds": 185.12
+    },
+    {
+      "text": "思っています。",
+      "start_seconds": 181.599,
+      "end_seconds": 185.11999999999998
+    },
+    {
+      "text": "瞑想的な体験。これを呼吸と資格、ここに",
+      "start_seconds": 185.36,
+      "end_seconds": 194.799
+    },
+    {
+      "text": "没頭することで私たちの思考、頭の考え",
+      "start_seconds": 190.319,
+      "end_seconds": 197.95899999999997
+    },
+    {
+      "text": "から離れる。こういった時間を少し体験し",
+      "start_seconds": 194.799,
+      "end_seconds": 201.28
+    },
+    {
+      "text": "ていただきたいです。古代のエジとそして",
+      "start_seconds": 197.959,
+      "end_seconds": 203.799
+    },
+    {
+      "text": "現代のテクノロジー、サイマティックスと",
+      "start_seconds": 201.28,
+      "end_seconds": 206.76
+    },
+    {
+      "text": "呼ばれる現象を現在のテクノロジーを通し",
+      "start_seconds": 203.799,
+      "end_seconds": 209.28
+    },
+    {
+      "text": "てそして",
+      "start_seconds": 206.76,
+      "end_seconds": 212.79899999999998
+    },
+    {
+      "text": "電気に有気的な変化を加える新次元の",
+      "start_seconds": 209.28,
+      "end_seconds": 217.2
+    },
+    {
+      "text": "アート体験。これを皆様に今日は味わって",
+      "start_seconds": 212.799,
+      "end_seconds": 221.28
+    },
+    {
+      "text": "いただきたいと思います。改めまして瞑想",
+      "start_seconds": 217.2,
+      "end_seconds": 227.159
+    },
+    {
+      "text": "音楽家で、え、全の赤坂洋月と申します。",
+      "start_seconds": 221.28,
+      "end_seconds": 229.879
+    },
+    {
+      "text": "ヒューマンビートボックスと、え、半若信",
+      "start_seconds": 227.159,
+      "end_seconds": 232.0
+    },
+    {
+      "text": "、え、この組み合わせで、え、",
+      "start_seconds": 229.879,
+      "end_seconds": 234.319
+    },
+    {
+      "text": "YouTubeで世界中の方々に私の動画",
+      "start_seconds": 232.0,
+      "end_seconds": 237.799
+    },
+    {
+      "text": "を見ていただきました。自分の声だけで",
+      "start_seconds": 234.319,
+      "end_seconds": 242.159
+    },
+    {
+      "text": "音楽を即興的に作り出す。そして皆様を",
+      "start_seconds": 237.799,
+      "end_seconds": 246.12
+    },
+    {
+      "text": "瞑想的な体験にいう。これを世界中60年",
+      "start_seconds": 242.159,
+      "end_seconds": 249.07899999999998
+    },
+    {
+      "text": "以上で今まで、え、この活動を続けてきて",
+      "start_seconds": 246.12,
+      "end_seconds": 251.0
+    },
+    {
+      "text": "おります。",
+      "start_seconds": 249.079,
+      "end_seconds": 253.84
+    },
+    {
+      "text": "え、田中敬語電子音楽家で、え、",
+      "start_seconds": 251.0,
+      "end_seconds": 256.359
+    },
+    {
+      "text": "サイマティクスアーティスト",
+      "start_seconds": 253.84,
+      "end_seconds": 259.88
+    },
+    {
+      "text": "植物から発せられる信号を音楽に変換して",
+      "start_seconds": 256.359,
+      "end_seconds": 264.28
+    },
+    {
+      "text": "、そしてその音を水に当てて水の決晶を",
+      "start_seconds": 259.88,
+      "end_seconds": 267.44
+    },
+    {
+      "text": "移し出します。",
+      "start_seconds": 264.28,
+      "end_seconds": 269.67999999999995
+    },
+    {
+      "text": "ドラゴンサウンド",
+      "start_seconds": 267.44,
+      "end_seconds": 274.44
+    },
+    {
+      "text": "電気に有気的な変化を加えることで",
+      "start_seconds": 269.68,
+      "end_seconds": 278.24
+    },
+    {
+      "text": "新次元のアート体験を皆様に今日は感じて",
+      "start_seconds": 274.44,
+      "end_seconds": 281.4
+    },
+    {
+      "text": "いただきます。",
+      "start_seconds": 278.24,
+      "end_seconds": 284.639
+    },
+    {
+      "text": "照明やスピーカーから出てくる音。この",
+      "start_seconds": 281.4,
+      "end_seconds": 289.56
+    },
+    {
+      "text": "現在は電気です。この電気に特殊な変化を",
+      "start_seconds": 284.639,
+      "end_seconds": 292.479
+    },
+    {
+      "text": "与えることで皆様の目に見えない感じる",
+      "start_seconds": 289.56,
+      "end_seconds": 297.039
+    },
+    {
+      "text": "世界を作り出します。",
+      "start_seconds": 292.479,
+      "end_seconds": 297.039
+    },
+    {
+      "text": "それでは皆様是非お試しお楽しみいただけ",
+      "start_seconds": 297.24,
+      "end_seconds": 303.923
+    },
+    {
+      "text": "たらと思います。",
+      "start_seconds": 300.479,
+      "end_seconds": 305.943
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 303.923,
+      "end_seconds": 305.943
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 319.643,
+      "end_seconds": 321.66299999999995
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 324.883,
+      "end_seconds": 326.90299999999996
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 337.983,
+      "end_seconds": 340.003
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 387.764,
+      "end_seconds": 389.784
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 396.934,
+      "end_seconds": 398.954
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 409.379,
+      "end_seconds": 411.399
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 432.304,
+      "end_seconds": 434.32399999999996
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 444.095,
+      "end_seconds": 446.115
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 452.61,
+      "end_seconds": 454.63
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 463.745,
+      "end_seconds": 465.765
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 472.26,
+      "end_seconds": 474.28
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 482.74,
+      "end_seconds": 484.76
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 494.53,
+      "end_seconds": 496.54999999999995
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 501.08,
+      "end_seconds": 505.68
+    },
+    {
+      "text": "た",
+      "start_seconds": 502.879,
+      "end_seconds": 506.975
+    },
+    {
+      "text": "。",
+      "start_seconds": 505.68,
+      "end_seconds": 508.995
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 506.975,
+      "end_seconds": 508.995
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 514.835,
+      "end_seconds": 516.855
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 521.385,
+      "end_seconds": 523.405
+    },
+    {
+      "text": "お",
+      "start_seconds": 523.959,
+      "end_seconds": 527.991
+    },
+    {
+      "text": "[歌声]",
+      "start_seconds": 525.971,
+      "end_seconds": 527.991
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 529.246,
+      "end_seconds": 531.266
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 534.486,
+      "end_seconds": 536.506
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 539.726,
+      "end_seconds": 541.746
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 548.896,
+      "end_seconds": 550.9159999999999
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 553.481,
+      "end_seconds": 557.48
+    },
+    {
+      "text": "ど",
+      "start_seconds": 554.48,
+      "end_seconds": 557.48
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 563.306,
+      "end_seconds": 565.326
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 570.511,
+      "end_seconds": 572.531
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 575.096,
+      "end_seconds": 577.116
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 582.956,
+      "end_seconds": 584.976
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 588.851,
+      "end_seconds": 591.526
+    },
+    {
+      "text": "[歌声]",
+      "start_seconds": 589.506,
+      "end_seconds": 591.526
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 595.401,
+      "end_seconds": 597.4209999999999
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 603.261,
+      "end_seconds": 605.281
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 613.087,
+      "end_seconds": 615.107
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 619.637,
+      "end_seconds": 621.6569999999999
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 624.222,
+      "end_seconds": 626.92
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 624.6,
+      "end_seconds": 626.9200000000001
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 630.772,
+      "end_seconds": 632.792
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 638.632,
+      "end_seconds": 640.6519999999999
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 651.077,
+      "end_seconds": 653.097
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 658.937,
+      "end_seconds": 660.957
+    },
+    {
+      "text": "それで[音楽]は皆様是非一緒に呼吸をし",
+      "start_seconds": 676.399,
+      "end_seconds": 681.92
+    },
+    {
+      "text": "てみましょう。",
+      "start_seconds": 678.839,
+      "end_seconds": 683.8800000000001
+    },
+    {
+      "text": "吸って[音楽]",
+      "start_seconds": 681.92,
+      "end_seconds": 685.88
+    },
+    {
+      "text": "吐いて。",
+      "start_seconds": 683.88,
+      "end_seconds": 687.88
+    },
+    {
+      "text": "吸って",
+      "start_seconds": 685.88,
+      "end_seconds": 689.92
+    },
+    {
+      "text": "吐いて。[音楽]",
+      "start_seconds": 687.88,
+      "end_seconds": 691.8389999999999
+    },
+    {
+      "text": "吸って",
+      "start_seconds": 689.92,
+      "end_seconds": 693.76
+    },
+    {
+      "text": "吐いて",
+      "start_seconds": 691.839,
+      "end_seconds": 695.8000000000001
+    },
+    {
+      "text": "吸って",
+      "start_seconds": 693.76,
+      "end_seconds": 697.582
+    },
+    {
+      "text": "吐いて",
+      "start_seconds": 695.8,
+      "end_seconds": 699.76
+    },
+    {
+      "text": "[音楽]吸って",
+      "start_seconds": 697.582,
+      "end_seconds": 701.68
+    },
+    {
+      "text": "吐いて",
+      "start_seconds": 699.76,
+      "end_seconds": 703.72
+    },
+    {
+      "text": "吸って[音楽]",
+      "start_seconds": 701.68,
+      "end_seconds": 705.7199999999999
+    },
+    {
+      "text": "吐いて",
+      "start_seconds": 703.72,
+      "end_seconds": 707.6800000000001
+    },
+    {
+      "text": "吸って[音楽]",
+      "start_seconds": 705.72,
+      "end_seconds": 709.639
+    },
+    {
+      "text": "吐いて",
+      "start_seconds": 707.68,
+      "end_seconds": 711.6389999999999
+    },
+    {
+      "text": "吸って",
+      "start_seconds": 709.639,
+      "end_seconds": 713.639
+    },
+    {
+      "text": "吐いて",
+      "start_seconds": 711.639,
+      "end_seconds": 715.6
+    },
+    {
+      "text": "吸って[音楽]",
+      "start_seconds": 713.639,
+      "end_seconds": 717.5600000000001
+    },
+    {
+      "text": "吐いて",
+      "start_seconds": 715.6,
+      "end_seconds": 717.9590000000001
+    },
+    {
+      "text": "吸っ",
+      "start_seconds": 717.56,
+      "end_seconds": 720.959
+    },
+    {
+      "text": "て是非皆様このまま続けてみてください。そしてスクリーンの椅子のマンダ郎を続けてみてください。はい。",
+      "start_seconds": 717.959,
+      "end_seconds": 720.959
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 722.473,
+      "end_seconds": 724.4929999999999
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 738.193,
+      "end_seconds": 740.213
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 746.053,
+      "end_seconds": 748.073
+    },
+    {
+      "text": "さよな。",
+      "start_seconds": 749.519,
+      "end_seconds": 752.519
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 754.568,
+      "end_seconds": 756.588
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 761.118,
+      "end_seconds": 763.138
+    },
+    {
+      "text": "最",
+      "start_seconds": 765.36,
+      "end_seconds": 768.36
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 770.943,
+      "end_seconds": 772.963
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 778.803,
+      "end_seconds": 780.823
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 788.629,
+      "end_seconds": 790.649
+    },
+    {
+      "text": "やらみたし卒[歌声]",
+      "start_seconds": 794.56,
+      "end_seconds": 797.199
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 799.109,
+      "end_seconds": 801.129
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 810.244,
+      "end_seconds": 812.264
+    },
+    {
+      "text": "原か",
+      "start_seconds": 813.32,
+      "end_seconds": 816.32
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 818.759,
+      "end_seconds": 822.839
+    },
+    {
+      "text": "最後",
+      "start_seconds": 819.839,
+      "end_seconds": 822.839
+    },
+    {
+      "text": "[音楽][歌声]",
+      "start_seconds": 823.999,
+      "end_seconds": 826.019
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 829.894,
+      "end_seconds": 831.914
+    },
+    {
+      "text": "に",
+      "start_seconds": 833.56,
+      "end_seconds": 837.7539999999999
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 835.789,
+      "end_seconds": 839.774
+    },
+    {
+      "text": "[歌声]",
+      "start_seconds": 837.754,
+      "end_seconds": 839.774
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 844.304,
+      "end_seconds": 846.324
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 852.164,
+      "end_seconds": 854.184
+    },
+    {
+      "text": "族を[音楽]",
+      "start_seconds": 856.0,
+      "end_seconds": 858.769
+    },
+    {
+      "text": "や人しむしむたみ[音楽]",
+      "start_seconds": 862.88,
+      "end_seconds": 865.319
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 869.849,
+      "end_seconds": 871.869
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 879.02,
+      "end_seconds": 881.04
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 885.57,
+      "end_seconds": 887.59
+    },
+    {
+      "text": "最無業物脈内原みた大",
+      "start_seconds": 891.24,
+      "end_seconds": 894.24
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 895.395,
+      "end_seconds": 897.415
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 900.635,
+      "end_seconds": 902.655
+    },
+    {
+      "text": "[歌声]",
+      "start_seconds": 903.255,
+      "end_seconds": 907.24
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 905.22,
+      "end_seconds": 907.24
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 911.115,
+      "end_seconds": 913.135
+    },
+    {
+      "text": "主部長の主半や原たにゃにゃで原にゃ原そにゃそ半にや",
+      "start_seconds": 914.0,
+      "end_seconds": 917.665
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 915.7,
+      "end_seconds": 919.6850000000001
+    },
+    {
+      "text": "[歌声]",
+      "start_seconds": 917.665,
+      "end_seconds": 919.685
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 921.595,
+      "end_seconds": 923.615
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 928.145,
+      "end_seconds": 930.165
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 936.66,
+      "end_seconds": 938.68
+    },
+    {
+      "text": "て[音楽]",
+      "start_seconds": 944.16,
+      "end_seconds": 947.85
+    },
+    {
+      "text": "あにそわ[歌声]",
+      "start_seconds": 945.759,
+      "end_seconds": 947.85
+    },
+    {
+      "text": "[音楽][歌声]",
+      "start_seconds": 953.035,
+      "end_seconds": 955.055
+    },
+    {
+      "text": "そてそ",
+      "start_seconds": 958.68,
+      "end_seconds": 962.9159999999999
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 960.896,
+      "end_seconds": 962.9159999999999
+    },
+    {
+      "text": "[音楽][歌声]",
+      "start_seconds": 968.756,
+      "end_seconds": 972.92
+    },
+    {
+      "text": "ヤ",
+      "start_seconds": 970.519,
+      "end_seconds": 972.92
+    },
+    {
+      "text": "てそにてそ",
+      "start_seconds": 972.959,
+      "end_seconds": 975.959
+    },
+    {
+      "text": "[歌声]",
+      "start_seconds": 976.616,
+      "end_seconds": 979.2909999999999
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 977.271,
+      "end_seconds": 979.2909999999999
+    },
+    {
+      "text": "[音楽][歌声]",
+      "start_seconds": 985.131,
+      "end_seconds": 987.151
+    },
+    {
+      "text": "[歌声]",
+      "start_seconds": 993.646,
+      "end_seconds": 995.6659999999999
+    },
+    {
+      "text": "[音楽][歌声]",
+      "start_seconds": 1000.196,
+      "end_seconds": 1002.216
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 1004.781,
+      "end_seconds": 1008.6389999999999
+    },
+    {
+      "text": "ち",
+      "start_seconds": 1005.639,
+      "end_seconds": 1008.639
+    },
+    {
+      "text": "[歌声]",
+      "start_seconds": 1017.881,
+      "end_seconds": 1019.901
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 1020.501,
+      "end_seconds": 1022.521
+    },
+    {
+      "text": "[音楽][歌声]",
+      "start_seconds": 1025.741,
+      "end_seconds": 1027.761
+    },
+    {
+      "text": "[歌声]",
+      "start_seconds": 1032.291,
+      "end_seconds": 1034.966
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 1032.946,
+      "end_seconds": 1034.966
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 1040.151,
+      "end_seconds": 1042.171
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 1048.011,
+      "end_seconds": 1050.032
+    },
+    {
+      "text": "[歌声]",
+      "start_seconds": 1056.527,
+      "end_seconds": 1058.547
+    },
+    {
+      "text": "全て[音楽]",
+      "start_seconds": 1058.88,
+      "end_seconds": 1061.1670000000001
+    },
+    {
+      "text": "生きしるもが幸せ[音楽]",
+      "start_seconds": 1062.88,
+      "end_seconds": 1066.4070000000002
+    },
+    {
+      "text": "[歌声]",
+      "start_seconds": 1064.387,
+      "end_seconds": 1066.407
+    },
+    {
+      "text": "[歌声]",
+      "start_seconds": 1072.247,
+      "end_seconds": 1074.267
+    },
+    {
+      "text": "ありますように[音楽]",
+      "start_seconds": 1077.76,
+      "end_seconds": 1082.127
+    },
+    {
+      "text": "し",
+      "start_seconds": 1086.88,
+      "end_seconds": 1089.88
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 1101.067,
+      "end_seconds": 1103.087
+    },
+    {
+      "text": "B",
+      "start_seconds": 1106.44,
+      "end_seconds": 1109.44
+    },
+    {
+      "text": "ピアピ",
+      "start_seconds": 1126.32,
+      "end_seconds": 1129.32
+    },
+    {
+      "text": "ての",
+      "start_seconds": 1138.84,
+      "end_seconds": 1145.1999999999998
+    },
+    {
+      "text": "生きしき",
+      "start_seconds": 1142.2,
+      "end_seconds": 1145.2
+    },
+    {
+      "text": "ものが幸",
+      "start_seconds": 1147.64,
+      "end_seconds": 1153.0800000000002
+    },
+    {
+      "text": "ありますよ。",
+      "start_seconds": 1157.4,
+      "end_seconds": 1163.0
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 1185.563,
+      "end_seconds": 1187.583
+    },
+    {
+      "text": "ありがとうございました。",
+      "start_seconds": 1193.919,
+      "end_seconds": 1196.919
+    }
+  ],
+  "display_captions": [
+    {
+      "text": "[音楽]",
+      "start_seconds": 9.825,
+      "end_seconds": 11.844999999999999,
+      "id": "qZMB9MJU3oM-display-0001",
+      "segment_id": "qZMB9MJU3oM-ja-0001"
+    },
+    {
+      "text": "皆さん、こんにちは。",
+      "start_seconds": 13.36,
+      "end_seconds": 14.799,
+      "id": "qZMB9MJU3oM-display-0002",
+      "segment_id": "qZMB9MJU3oM-ja-0002"
+    },
+    {
+      "text": "こんにちは。",
+      "start_seconds": 14.799,
+      "end_seconds": 17.799,
+      "id": "qZMB9MJU3oM-display-0003",
+      "segment_id": "qZMB9MJU3oM-ja-0003"
+    },
+    {
+      "text": "Discoveryofbeing",
+      "start_seconds": 19.52,
+      "end_seconds": 21.88,
+      "id": "qZMB9MJU3oM-display-0004",
+      "segment_id": "qZMB9MJU3oM-ja-0003"
+    },
+    {
+      "text": "存在の再発見。",
+      "start_seconds": 21.88,
+      "end_seconds": 24.599,
+      "id": "qZMB9MJU3oM-display-0005",
+      "segment_id": "qZMB9MJU3oM-ja-0003"
+    },
+    {
+      "text": "え、こういったタイトルで、え、私たち3",
+      "start_seconds": 24.599,
+      "end_seconds": 26.76,
+      "id": "qZMB9MJU3oM-display-0006",
+      "segment_id": "qZMB9MJU3oM-ja-0004"
+    },
+    {
+      "text": "人はテレクス丸のうちのオープニングを",
+      "start_seconds": 26.76,
+      "end_seconds": 29.679,
+      "id": "qZMB9MJU3oM-display-0007",
+      "segment_id": "qZMB9MJU3oM-ja-0004"
+    },
+    {
+      "text": "務めさせていただきます。",
+      "start_seconds": 29.679,
+      "end_seconds": 33.679,
+      "id": "qZMB9MJU3oM-display-0008",
+      "segment_id": "qZMB9MJU3oM-ja-0004"
+    },
+    {
+      "text": "生きるって素晴らしい、美しい。",
+      "start_seconds": 33.8,
+      "end_seconds": 39.84,
+      "id": "qZMB9MJU3oM-display-0009",
+      "segment_id": "qZMB9MJU3oM-ja-0005"
+    },
+    {
+      "text": "生きる。",
+      "start_seconds": 39.84,
+      "end_seconds": 42.76,
+      "id": "qZMB9MJU3oM-display-0010",
+      "segment_id": "qZMB9MJU3oM-ja-0006"
+    },
+    {
+      "text": "これはどういうことでしょうか?",
+      "start_seconds": 42.76,
+      "end_seconds": 47.0,
+      "id": "qZMB9MJU3oM-display-0011",
+      "segment_id": "qZMB9MJU3oM-ja-0007"
+    },
+    {
+      "text": "私たちはこの生きる、これについて体験を",
+      "start_seconds": 47.0,
+      "end_seconds": 52.28,
+      "id": "qZMB9MJU3oM-display-0012",
+      "segment_id": "qZMB9MJU3oM-ja-0008"
+    },
+    {
+      "text": "通して最低する。こういった試みをしてい",
+      "start_seconds": 52.28,
+      "end_seconds": 56.0,
+      "id": "qZMB9MJU3oM-display-0013",
+      "segment_id": "qZMB9MJU3oM-ja-0008"
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 56.0,
+      "end_seconds": 57.68,
+      "id": "qZMB9MJU3oM-display-0014",
+      "segment_id": "qZMB9MJU3oM-ja-0008"
+    },
+    {
+      "text": "私たちが生まれてから死ぬまで休むこと",
+      "start_seconds": 57.68,
+      "end_seconds": 60.76,
+      "id": "qZMB9MJU3oM-display-0015",
+      "segment_id": "qZMB9MJU3oM-ja-0009"
+    },
+    {
+      "text": "なく続ける呼吸。",
+      "start_seconds": 60.76,
+      "end_seconds": 65.119,
+      "id": "qZMB9MJU3oM-display-0016",
+      "segment_id": "qZMB9MJU3oM-ja-0009"
+    },
+    {
+      "text": "毎春毎たちは無意識に呼吸を続けています",
+      "start_seconds": 65.119,
+      "end_seconds": 68.32,
+      "id": "qZMB9MJU3oM-display-0017",
+      "segment_id": "qZMB9MJU3oM-ja-0010"
+    },
+    {
+      "text": "。",
+      "start_seconds": 68.32,
+      "end_seconds": 70.119,
+      "id": "qZMB9MJU3oM-display-0018",
+      "segment_id": "qZMB9MJU3oM-ja-0010"
+    },
+    {
+      "text": "しかし今日はこの呼吸を意識上に登らせて",
+      "start_seconds": 70.119,
+      "end_seconds": 74.56,
+      "id": "qZMB9MJU3oM-display-0019",
+      "segment_id": "qZMB9MJU3oM-ja-0011"
+    },
+    {
+      "text": "意識的に呼吸をします。呼吸に意識を向け",
+      "start_seconds": 74.56,
+      "end_seconds": 79.64,
+      "id": "qZMB9MJU3oM-display-0020",
+      "segment_id": "qZMB9MJU3oM-ja-0011"
+    },
+    {
+      "text": "てみます。演奏の最中に私が吸って吐いて",
+      "start_seconds": 79.64,
+      "end_seconds": 84.92,
+      "id": "qZMB9MJU3oM-display-0021",
+      "segment_id": "qZMB9MJU3oM-ja-0012"
+    },
+    {
+      "text": "とガイドを入れます。",
+      "start_seconds": 84.92,
+      "end_seconds": 89.4,
+      "id": "qZMB9MJU3oM-display-0022",
+      "segment_id": "qZMB9MJU3oM-ja-0012"
+    },
+    {
+      "text": "それに合わせて皆さんも是非呼吸を吸って",
+      "start_seconds": 89.4,
+      "end_seconds": 93.439,
+      "id": "qZMB9MJU3oM-display-0023",
+      "segment_id": "qZMB9MJU3oM-ja-0013"
+    },
+    {
+      "text": "吐いて意識して音に合わせて繰り返してみ",
+      "start_seconds": 93.439,
+      "end_seconds": 98.04,
+      "id": "qZMB9MJU3oM-display-0024",
+      "segment_id": "qZMB9MJU3oM-ja-0013"
+    },
+    {
+      "text": "てください。",
+      "start_seconds": 98.04,
+      "end_seconds": 100.399,
+      "id": "qZMB9MJU3oM-display-0025",
+      "segment_id": "qZMB9MJU3oM-ja-0013"
+    },
+    {
+      "text": "そして資格",
+      "start_seconds": 100.399,
+      "end_seconds": 102.759,
+      "id": "qZMB9MJU3oM-display-0026",
+      "segment_id": "qZMB9MJU3oM-ja-0014"
+    },
+    {
+      "text": "互間を通した現実認識の70%を担うと",
+      "start_seconds": 102.759,
+      "end_seconds": 106.64,
+      "id": "qZMB9MJU3oM-display-0027",
+      "segment_id": "qZMB9MJU3oM-ja-0014"
+    },
+    {
+      "text": "言われている私たちの資格。",
+      "start_seconds": 106.64,
+      "end_seconds": 111.439,
+      "id": "qZMB9MJU3oM-display-0028",
+      "segment_id": "qZMB9MJU3oM-ja-0014"
+    },
+    {
+      "text": "スクリーンに移る水のマンダ",
+      "start_seconds": 111.439,
+      "end_seconds": 115.96,
+      "id": "qZMB9MJU3oM-display-0029",
+      "segment_id": "qZMB9MJU3oM-ja-0015"
+    },
+    {
+      "text": "植物の信号を拾って音に変換してそして",
+      "start_seconds": 115.96,
+      "end_seconds": 120.719,
+      "id": "qZMB9MJU3oM-display-0030",
+      "segment_id": "qZMB9MJU3oM-ja-0015"
+    },
+    {
+      "text": "サイマティクスと呼ばれる現象",
+      "start_seconds": 120.719,
+      "end_seconds": 124.399,
+      "id": "qZMB9MJU3oM-display-0031",
+      "segment_id": "qZMB9MJU3oM-ja-0016"
+    },
+    {
+      "text": "これによって水の気科学模様がスクリーン",
+      "start_seconds": 124.399,
+      "end_seconds": 127.32,
+      "id": "qZMB9MJU3oM-display-0032",
+      "segment_id": "qZMB9MJU3oM-ja-0016"
+    },
+    {
+      "text": "に移出されます。",
+      "start_seconds": 127.32,
+      "end_seconds": 131.399,
+      "id": "qZMB9MJU3oM-display-0033",
+      "segment_id": "qZMB9MJU3oM-ja-0016"
+    },
+    {
+      "text": "151へ2度とあ、え、2度と現れない",
+      "start_seconds": 132.04,
+      "end_seconds": 136.0,
+      "id": "qZMB9MJU3oM-display-0034",
+      "segment_id": "qZMB9MJU3oM-ja-0017"
+    },
+    {
+      "text": "この1度切りの巡り合わせ。え、これが水",
+      "start_seconds": 136.0,
+      "end_seconds": 140.72,
+      "id": "qZMB9MJU3oM-display-0035",
+      "segment_id": "qZMB9MJU3oM-ja-0017"
+    },
+    {
+      "text": "の決晶、水のマンダに現れます。呼吸をし",
+      "start_seconds": 140.72,
+      "end_seconds": 145.879,
+      "id": "qZMB9MJU3oM-display-0036",
+      "segment_id": "qZMB9MJU3oM-ja-0018"
+    },
+    {
+      "text": "ながらその水のマンダを見続けます。",
+      "start_seconds": 145.879,
+      "end_seconds": 150.72,
+      "id": "qZMB9MJU3oM-display-0037",
+      "segment_id": "qZMB9MJU3oM-ja-0018"
+    },
+    {
+      "text": "そして共鳴。これは目に見えない",
+      "start_seconds": 150.72,
+      "end_seconds": 155.92,
+      "id": "qZMB9MJU3oM-display-0038",
+      "segment_id": "qZMB9MJU3oM-ja-0019"
+    },
+    {
+      "text": "この世界です。目に見えるものを通して目",
+      "start_seconds": 155.92,
+      "end_seconds": 159.84,
+      "id": "qZMB9MJU3oM-display-0039",
+      "segment_id": "qZMB9MJU3oM-ja-0019"
+    },
+    {
+      "text": "に見えないものを感じる。私たちの命る",
+      "start_seconds": 159.84,
+      "end_seconds": 165.319,
+      "id": "qZMB9MJU3oM-display-0040",
+      "segment_id": "qZMB9MJU3oM-ja-0020"
+    },
+    {
+      "text": "本質。",
+      "start_seconds": 165.319,
+      "end_seconds": 167.48,
+      "id": "qZMB9MJU3oM-display-0041",
+      "segment_id": "qZMB9MJU3oM-ja-0020"
+    },
+    {
+      "text": "それは私たちの存在感。自分で自分を認識",
+      "start_seconds": 167.48,
+      "end_seconds": 171.12,
+      "id": "qZMB9MJU3oM-display-0042",
+      "segment_id": "qZMB9MJU3oM-ja-0021"
+    },
+    {
+      "text": "するこの存在感そのものです。",
+      "start_seconds": 171.12,
+      "end_seconds": 175.12,
+      "id": "qZMB9MJU3oM-display-0043",
+      "segment_id": "qZMB9MJU3oM-ja-0021"
+    },
+    {
+      "text": "呼吸そして資格を通して共鳴。",
+      "start_seconds": 175.12,
+      "end_seconds": 179.519,
+      "id": "qZMB9MJU3oM-display-0044",
+      "segment_id": "qZMB9MJU3oM-ja-0022"
+    },
+    {
+      "text": "これを皆さんに体験していただきたいと",
+      "start_seconds": 179.519,
+      "end_seconds": 181.599,
+      "id": "qZMB9MJU3oM-display-0045",
+      "segment_id": "qZMB9MJU3oM-ja-0023"
+    },
+    {
+      "text": "思っています。",
+      "start_seconds": 181.599,
+      "end_seconds": 185.11999999999998,
+      "id": "qZMB9MJU3oM-display-0046",
+      "segment_id": "qZMB9MJU3oM-ja-0023"
+    },
+    {
+      "text": "瞑想的な体験。これを呼吸と資格、ここに",
+      "start_seconds": 185.36,
+      "end_seconds": 190.319,
+      "id": "qZMB9MJU3oM-display-0047",
+      "segment_id": "qZMB9MJU3oM-ja-0024"
+    },
+    {
+      "text": "没頭することで私たちの思考、頭の考え",
+      "start_seconds": 190.319,
+      "end_seconds": 194.799,
+      "id": "qZMB9MJU3oM-display-0048",
+      "segment_id": "qZMB9MJU3oM-ja-0024"
+    },
+    {
+      "text": "から離れる。こういった時間を少し体験し",
+      "start_seconds": 194.799,
+      "end_seconds": 197.959,
+      "id": "qZMB9MJU3oM-display-0049",
+      "segment_id": "qZMB9MJU3oM-ja-0025"
+    },
+    {
+      "text": "ていただきたいです。古代のエジとそして",
+      "start_seconds": 197.959,
+      "end_seconds": 201.28,
+      "id": "qZMB9MJU3oM-display-0050",
+      "segment_id": "qZMB9MJU3oM-ja-0025"
+    },
+    {
+      "text": "現代のテクノロジー、サイマティックスと",
+      "start_seconds": 201.28,
+      "end_seconds": 203.799,
+      "id": "qZMB9MJU3oM-display-0051",
+      "segment_id": "qZMB9MJU3oM-ja-0025"
+    },
+    {
+      "text": "呼ばれる現象を現在のテクノロジーを通し",
+      "start_seconds": 203.799,
+      "end_seconds": 206.76,
+      "id": "qZMB9MJU3oM-display-0052",
+      "segment_id": "qZMB9MJU3oM-ja-0025"
+    },
+    {
+      "text": "てそして",
+      "start_seconds": 206.76,
+      "end_seconds": 209.28,
+      "id": "qZMB9MJU3oM-display-0053",
+      "segment_id": "qZMB9MJU3oM-ja-0026"
+    },
+    {
+      "text": "電気に有気的な変化を加える新次元の",
+      "start_seconds": 209.28,
+      "end_seconds": 212.799,
+      "id": "qZMB9MJU3oM-display-0054",
+      "segment_id": "qZMB9MJU3oM-ja-0026"
+    },
+    {
+      "text": "アート体験。これを皆様に今日は味わって",
+      "start_seconds": 212.799,
+      "end_seconds": 217.2,
+      "id": "qZMB9MJU3oM-display-0055",
+      "segment_id": "qZMB9MJU3oM-ja-0026"
+    },
+    {
+      "text": "いただきたいと思います。改めまして瞑想",
+      "start_seconds": 217.2,
+      "end_seconds": 221.28,
+      "id": "qZMB9MJU3oM-display-0056",
+      "segment_id": "qZMB9MJU3oM-ja-0027"
+    },
+    {
+      "text": "音楽家で、え、全の赤坂洋月と申します。",
+      "start_seconds": 221.28,
+      "end_seconds": 227.159,
+      "id": "qZMB9MJU3oM-display-0057",
+      "segment_id": "qZMB9MJU3oM-ja-0027"
+    },
+    {
+      "text": "ヒューマンビートボックスと、え、半若信",
+      "start_seconds": 227.159,
+      "end_seconds": 229.879,
+      "id": "qZMB9MJU3oM-display-0058",
+      "segment_id": "qZMB9MJU3oM-ja-0028"
+    },
+    {
+      "text": "、え、この組み合わせで、え、",
+      "start_seconds": 229.879,
+      "end_seconds": 232.0,
+      "id": "qZMB9MJU3oM-display-0059",
+      "segment_id": "qZMB9MJU3oM-ja-0028"
+    },
+    {
+      "text": "YouTubeで世界中の方々に私の動画",
+      "start_seconds": 232.0,
+      "end_seconds": 234.319,
+      "id": "qZMB9MJU3oM-display-0060",
+      "segment_id": "qZMB9MJU3oM-ja-0028"
+    },
+    {
+      "text": "を見ていただきました。自分の声だけで",
+      "start_seconds": 234.319,
+      "end_seconds": 237.799,
+      "id": "qZMB9MJU3oM-display-0061",
+      "segment_id": "qZMB9MJU3oM-ja-0028"
+    },
+    {
+      "text": "音楽を即興的に作り出す。そして皆様を",
+      "start_seconds": 237.799,
+      "end_seconds": 242.159,
+      "id": "qZMB9MJU3oM-display-0062",
+      "segment_id": "qZMB9MJU3oM-ja-0029"
+    },
+    {
+      "text": "瞑想的な体験にいう。これを世界中60年",
+      "start_seconds": 242.159,
+      "end_seconds": 246.12,
+      "id": "qZMB9MJU3oM-display-0063",
+      "segment_id": "qZMB9MJU3oM-ja-0029"
+    },
+    {
+      "text": "以上で今まで、え、この活動を続けてきて",
+      "start_seconds": 246.12,
+      "end_seconds": 249.079,
+      "id": "qZMB9MJU3oM-display-0064",
+      "segment_id": "qZMB9MJU3oM-ja-0029"
+    },
+    {
+      "text": "おります。",
+      "start_seconds": 249.079,
+      "end_seconds": 251.0,
+      "id": "qZMB9MJU3oM-display-0065",
+      "segment_id": "qZMB9MJU3oM-ja-0030"
+    },
+    {
+      "text": "え、田中敬語電子音楽家で、え、",
+      "start_seconds": 251.0,
+      "end_seconds": 253.84,
+      "id": "qZMB9MJU3oM-display-0066",
+      "segment_id": "qZMB9MJU3oM-ja-0031"
+    },
+    {
+      "text": "サイマティクスアーティスト",
+      "start_seconds": 253.84,
+      "end_seconds": 256.359,
+      "id": "qZMB9MJU3oM-display-0067",
+      "segment_id": "qZMB9MJU3oM-ja-0031"
+    },
+    {
+      "text": "植物から発せられる信号を音楽に変換して",
+      "start_seconds": 256.359,
+      "end_seconds": 259.88,
+      "id": "qZMB9MJU3oM-display-0068",
+      "segment_id": "qZMB9MJU3oM-ja-0031"
+    },
+    {
+      "text": "、そしてその音を水に当てて水の決晶を",
+      "start_seconds": 259.88,
+      "end_seconds": 264.28,
+      "id": "qZMB9MJU3oM-display-0069",
+      "segment_id": "qZMB9MJU3oM-ja-0032"
+    },
+    {
+      "text": "移し出します。",
+      "start_seconds": 264.28,
+      "end_seconds": 267.44,
+      "id": "qZMB9MJU3oM-display-0070",
+      "segment_id": "qZMB9MJU3oM-ja-0032"
+    },
+    {
+      "text": "ドラゴンサウンド",
+      "start_seconds": 267.44,
+      "end_seconds": 269.68,
+      "id": "qZMB9MJU3oM-display-0071",
+      "segment_id": "qZMB9MJU3oM-ja-0033"
+    },
+    {
+      "text": "電気に有気的な変化を加えることで",
+      "start_seconds": 269.68,
+      "end_seconds": 274.44,
+      "id": "qZMB9MJU3oM-display-0072",
+      "segment_id": "qZMB9MJU3oM-ja-0033"
+    },
+    {
+      "text": "新次元のアート体験を皆様に今日は感じて",
+      "start_seconds": 274.44,
+      "end_seconds": 278.24,
+      "id": "qZMB9MJU3oM-display-0073",
+      "segment_id": "qZMB9MJU3oM-ja-0033"
+    },
+    {
+      "text": "いただきます。",
+      "start_seconds": 278.24,
+      "end_seconds": 281.4,
+      "id": "qZMB9MJU3oM-display-0074",
+      "segment_id": "qZMB9MJU3oM-ja-0034"
+    },
+    {
+      "text": "照明やスピーカーから出てくる音。この",
+      "start_seconds": 281.4,
+      "end_seconds": 284.639,
+      "id": "qZMB9MJU3oM-display-0075",
+      "segment_id": "qZMB9MJU3oM-ja-0035"
+    },
+    {
+      "text": "現在は電気です。この電気に特殊な変化を",
+      "start_seconds": 284.639,
+      "end_seconds": 289.56,
+      "id": "qZMB9MJU3oM-display-0076",
+      "segment_id": "qZMB9MJU3oM-ja-0035"
+    },
+    {
+      "text": "与えることで皆様の目に見えない感じる",
+      "start_seconds": 289.56,
+      "end_seconds": 292.479,
+      "id": "qZMB9MJU3oM-display-0077",
+      "segment_id": "qZMB9MJU3oM-ja-0035"
+    },
+    {
+      "text": "世界を作り出します。",
+      "start_seconds": 292.479,
+      "end_seconds": 297.039,
+      "id": "qZMB9MJU3oM-display-0078",
+      "segment_id": "qZMB9MJU3oM-ja-0036"
+    },
+    {
+      "text": "それでは皆様是非お試しお楽しみいただけ",
+      "start_seconds": 297.24,
+      "end_seconds": 300.479,
+      "id": "qZMB9MJU3oM-display-0079",
+      "segment_id": "qZMB9MJU3oM-ja-0037"
+    },
+    {
+      "text": "たらと思います。",
+      "start_seconds": 300.479,
+      "end_seconds": 303.923,
+      "id": "qZMB9MJU3oM-display-0080",
+      "segment_id": "qZMB9MJU3oM-ja-0037"
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 303.923,
+      "end_seconds": 305.943,
+      "id": "qZMB9MJU3oM-display-0081",
+      "segment_id": "qZMB9MJU3oM-ja-0038"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 319.643,
+      "end_seconds": 321.66299999999995,
+      "id": "qZMB9MJU3oM-display-0082",
+      "segment_id": "qZMB9MJU3oM-ja-0039"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 324.883,
+      "end_seconds": 326.90299999999996,
+      "id": "qZMB9MJU3oM-display-0083",
+      "segment_id": "qZMB9MJU3oM-ja-0040"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 337.983,
+      "end_seconds": 340.003,
+      "id": "qZMB9MJU3oM-display-0084",
+      "segment_id": "qZMB9MJU3oM-ja-0041"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 387.764,
+      "end_seconds": 389.784,
+      "id": "qZMB9MJU3oM-display-0085",
+      "segment_id": "qZMB9MJU3oM-ja-0042"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 396.934,
+      "end_seconds": 398.954,
+      "id": "qZMB9MJU3oM-display-0086",
+      "segment_id": "qZMB9MJU3oM-ja-0043"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 409.379,
+      "end_seconds": 411.399,
+      "id": "qZMB9MJU3oM-display-0087",
+      "segment_id": "qZMB9MJU3oM-ja-0044"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 432.304,
+      "end_seconds": 434.32399999999996,
+      "id": "qZMB9MJU3oM-display-0088",
+      "segment_id": "qZMB9MJU3oM-ja-0045"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 444.095,
+      "end_seconds": 446.115,
+      "id": "qZMB9MJU3oM-display-0089",
+      "segment_id": "qZMB9MJU3oM-ja-0046"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 452.61,
+      "end_seconds": 454.63,
+      "id": "qZMB9MJU3oM-display-0090",
+      "segment_id": "qZMB9MJU3oM-ja-0047"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 463.745,
+      "end_seconds": 465.765,
+      "id": "qZMB9MJU3oM-display-0091",
+      "segment_id": "qZMB9MJU3oM-ja-0048"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 472.26,
+      "end_seconds": 474.28,
+      "id": "qZMB9MJU3oM-display-0092",
+      "segment_id": "qZMB9MJU3oM-ja-0049"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 482.74,
+      "end_seconds": 484.76,
+      "id": "qZMB9MJU3oM-display-0093",
+      "segment_id": "qZMB9MJU3oM-ja-0050"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 494.53,
+      "end_seconds": 496.54999999999995,
+      "id": "qZMB9MJU3oM-display-0094",
+      "segment_id": "qZMB9MJU3oM-ja-0051"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 501.08,
+      "end_seconds": 502.879,
+      "id": "qZMB9MJU3oM-display-0095",
+      "segment_id": "qZMB9MJU3oM-ja-0052"
+    },
+    {
+      "text": "た",
+      "start_seconds": 502.879,
+      "end_seconds": 505.68,
+      "id": "qZMB9MJU3oM-display-0096",
+      "segment_id": "qZMB9MJU3oM-ja-0052"
+    },
+    {
+      "text": "。",
+      "start_seconds": 505.68,
+      "end_seconds": 506.975,
+      "id": "qZMB9MJU3oM-display-0097",
+      "segment_id": "qZMB9MJU3oM-ja-0052"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 506.975,
+      "end_seconds": 508.995,
+      "id": "qZMB9MJU3oM-display-0098",
+      "segment_id": "qZMB9MJU3oM-ja-0053"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 514.835,
+      "end_seconds": 516.855,
+      "id": "qZMB9MJU3oM-display-0099",
+      "segment_id": "qZMB9MJU3oM-ja-0054"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 521.385,
+      "end_seconds": 523.405,
+      "id": "qZMB9MJU3oM-display-0100",
+      "segment_id": "qZMB9MJU3oM-ja-0055"
+    },
+    {
+      "text": "お",
+      "start_seconds": 523.959,
+      "end_seconds": 525.971,
+      "id": "qZMB9MJU3oM-display-0101",
+      "segment_id": "qZMB9MJU3oM-ja-0056"
+    },
+    {
+      "text": "[歌声]",
+      "start_seconds": 525.971,
+      "end_seconds": 527.991,
+      "id": "qZMB9MJU3oM-display-0102",
+      "segment_id": "qZMB9MJU3oM-ja-0056"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 529.246,
+      "end_seconds": 531.266,
+      "id": "qZMB9MJU3oM-display-0103",
+      "segment_id": "qZMB9MJU3oM-ja-0057"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 534.486,
+      "end_seconds": 536.506,
+      "id": "qZMB9MJU3oM-display-0104",
+      "segment_id": "qZMB9MJU3oM-ja-0058"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 539.726,
+      "end_seconds": 541.746,
+      "id": "qZMB9MJU3oM-display-0105",
+      "segment_id": "qZMB9MJU3oM-ja-0059"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 548.896,
+      "end_seconds": 550.9159999999999,
+      "id": "qZMB9MJU3oM-display-0106",
+      "segment_id": "qZMB9MJU3oM-ja-0060"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 553.481,
+      "end_seconds": 554.48,
+      "id": "qZMB9MJU3oM-display-0107",
+      "segment_id": "qZMB9MJU3oM-ja-0061"
+    },
+    {
+      "text": "ど",
+      "start_seconds": 554.48,
+      "end_seconds": 557.48,
+      "id": "qZMB9MJU3oM-display-0108",
+      "segment_id": "qZMB9MJU3oM-ja-0061"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 563.306,
+      "end_seconds": 565.326,
+      "id": "qZMB9MJU3oM-display-0109",
+      "segment_id": "qZMB9MJU3oM-ja-0062"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 570.511,
+      "end_seconds": 572.531,
+      "id": "qZMB9MJU3oM-display-0110",
+      "segment_id": "qZMB9MJU3oM-ja-0063"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 575.096,
+      "end_seconds": 577.116,
+      "id": "qZMB9MJU3oM-display-0111",
+      "segment_id": "qZMB9MJU3oM-ja-0064"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 582.956,
+      "end_seconds": 584.976,
+      "id": "qZMB9MJU3oM-display-0112",
+      "segment_id": "qZMB9MJU3oM-ja-0065"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 588.851,
+      "end_seconds": 589.506,
+      "id": "qZMB9MJU3oM-display-0113",
+      "segment_id": "qZMB9MJU3oM-ja-0066"
+    },
+    {
+      "text": "[歌声]",
+      "start_seconds": 589.506,
+      "end_seconds": 591.526,
+      "id": "qZMB9MJU3oM-display-0114",
+      "segment_id": "qZMB9MJU3oM-ja-0066"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 595.401,
+      "end_seconds": 597.4209999999999,
+      "id": "qZMB9MJU3oM-display-0115",
+      "segment_id": "qZMB9MJU3oM-ja-0067"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 603.261,
+      "end_seconds": 605.281,
+      "id": "qZMB9MJU3oM-display-0116",
+      "segment_id": "qZMB9MJU3oM-ja-0068"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 613.087,
+      "end_seconds": 615.107,
+      "id": "qZMB9MJU3oM-display-0117",
+      "segment_id": "qZMB9MJU3oM-ja-0069"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 619.637,
+      "end_seconds": 621.6569999999999,
+      "id": "qZMB9MJU3oM-display-0118",
+      "segment_id": "qZMB9MJU3oM-ja-0070"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 624.222,
+      "end_seconds": 624.6,
+      "id": "qZMB9MJU3oM-display-0119",
+      "segment_id": "qZMB9MJU3oM-ja-0071"
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 624.6,
+      "end_seconds": 626.9200000000001,
+      "id": "qZMB9MJU3oM-display-0120",
+      "segment_id": "qZMB9MJU3oM-ja-0071"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 630.772,
+      "end_seconds": 632.792,
+      "id": "qZMB9MJU3oM-display-0121",
+      "segment_id": "qZMB9MJU3oM-ja-0072"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 638.632,
+      "end_seconds": 640.6519999999999,
+      "id": "qZMB9MJU3oM-display-0122",
+      "segment_id": "qZMB9MJU3oM-ja-0073"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 651.077,
+      "end_seconds": 653.097,
+      "id": "qZMB9MJU3oM-display-0123",
+      "segment_id": "qZMB9MJU3oM-ja-0074"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 658.937,
+      "end_seconds": 660.957,
+      "id": "qZMB9MJU3oM-display-0124",
+      "segment_id": "qZMB9MJU3oM-ja-0075"
+    },
+    {
+      "text": "それで[音楽]は皆様是非一緒に呼吸をし",
+      "start_seconds": 676.399,
+      "end_seconds": 678.839,
+      "id": "qZMB9MJU3oM-display-0125",
+      "segment_id": "qZMB9MJU3oM-ja-0076"
+    },
+    {
+      "text": "てみましょう。",
+      "start_seconds": 678.839,
+      "end_seconds": 681.92,
+      "id": "qZMB9MJU3oM-display-0126",
+      "segment_id": "qZMB9MJU3oM-ja-0076"
+    },
+    {
+      "text": "吸って[音楽]",
+      "start_seconds": 681.92,
+      "end_seconds": 683.88,
+      "id": "qZMB9MJU3oM-display-0127",
+      "segment_id": "qZMB9MJU3oM-ja-0077"
+    },
+    {
+      "text": "吐いて。",
+      "start_seconds": 683.88,
+      "end_seconds": 685.88,
+      "id": "qZMB9MJU3oM-display-0128",
+      "segment_id": "qZMB9MJU3oM-ja-0077"
+    },
+    {
+      "text": "吸って",
+      "start_seconds": 685.88,
+      "end_seconds": 687.88,
+      "id": "qZMB9MJU3oM-display-0129",
+      "segment_id": "qZMB9MJU3oM-ja-0078"
+    },
+    {
+      "text": "吐いて。[音楽]",
+      "start_seconds": 687.88,
+      "end_seconds": 689.92,
+      "id": "qZMB9MJU3oM-display-0130",
+      "segment_id": "qZMB9MJU3oM-ja-0078"
+    },
+    {
+      "text": "吸って",
+      "start_seconds": 689.92,
+      "end_seconds": 691.839,
+      "id": "qZMB9MJU3oM-display-0131",
+      "segment_id": "qZMB9MJU3oM-ja-0078"
+    },
+    {
+      "text": "吐いて",
+      "start_seconds": 691.839,
+      "end_seconds": 693.76,
+      "id": "qZMB9MJU3oM-display-0132",
+      "segment_id": "qZMB9MJU3oM-ja-0078"
+    },
+    {
+      "text": "吸って",
+      "start_seconds": 693.76,
+      "end_seconds": 695.8,
+      "id": "qZMB9MJU3oM-display-0133",
+      "segment_id": "qZMB9MJU3oM-ja-0078"
+    },
+    {
+      "text": "吐いて",
+      "start_seconds": 695.8,
+      "end_seconds": 697.582,
+      "id": "qZMB9MJU3oM-display-0134",
+      "segment_id": "qZMB9MJU3oM-ja-0078"
+    },
+    {
+      "text": "[音楽]吸って",
+      "start_seconds": 697.582,
+      "end_seconds": 699.76,
+      "id": "qZMB9MJU3oM-display-0135",
+      "segment_id": "qZMB9MJU3oM-ja-0079"
+    },
+    {
+      "text": "吐いて",
+      "start_seconds": 699.76,
+      "end_seconds": 701.68,
+      "id": "qZMB9MJU3oM-display-0136",
+      "segment_id": "qZMB9MJU3oM-ja-0079"
+    },
+    {
+      "text": "吸って[音楽]",
+      "start_seconds": 701.68,
+      "end_seconds": 703.72,
+      "id": "qZMB9MJU3oM-display-0137",
+      "segment_id": "qZMB9MJU3oM-ja-0079"
+    },
+    {
+      "text": "吐いて",
+      "start_seconds": 703.72,
+      "end_seconds": 705.72,
+      "id": "qZMB9MJU3oM-display-0138",
+      "segment_id": "qZMB9MJU3oM-ja-0079"
+    },
+    {
+      "text": "吸って[音楽]",
+      "start_seconds": 705.72,
+      "end_seconds": 707.68,
+      "id": "qZMB9MJU3oM-display-0139",
+      "segment_id": "qZMB9MJU3oM-ja-0079"
+    },
+    {
+      "text": "吐いて",
+      "start_seconds": 707.68,
+      "end_seconds": 709.639,
+      "id": "qZMB9MJU3oM-display-0140",
+      "segment_id": "qZMB9MJU3oM-ja-0080"
+    },
+    {
+      "text": "吸って",
+      "start_seconds": 709.639,
+      "end_seconds": 711.639,
+      "id": "qZMB9MJU3oM-display-0141",
+      "segment_id": "qZMB9MJU3oM-ja-0080"
+    },
+    {
+      "text": "吐いて",
+      "start_seconds": 711.639,
+      "end_seconds": 713.639,
+      "id": "qZMB9MJU3oM-display-0142",
+      "segment_id": "qZMB9MJU3oM-ja-0080"
+    },
+    {
+      "text": "吸って[音楽]",
+      "start_seconds": 713.639,
+      "end_seconds": 715.6,
+      "id": "qZMB9MJU3oM-display-0143",
+      "segment_id": "qZMB9MJU3oM-ja-0080"
+    },
+    {
+      "text": "吐いて",
+      "start_seconds": 715.6,
+      "end_seconds": 717.56,
+      "id": "qZMB9MJU3oM-display-0144",
+      "segment_id": "qZMB9MJU3oM-ja-0080"
+    },
+    {
+      "text": "吸っ",
+      "start_seconds": 717.56,
+      "end_seconds": 717.959,
+      "id": "qZMB9MJU3oM-display-0145",
+      "segment_id": "qZMB9MJU3oM-ja-0080"
+    },
+    {
+      "text": "て是非皆様このまま続けてみてください。そしてスクリーンの椅子のマンダ郎を続けてみてください。はい。",
+      "start_seconds": 717.959,
+      "end_seconds": 720.959,
+      "id": "qZMB9MJU3oM-display-0146",
+      "segment_id": "qZMB9MJU3oM-ja-0081"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 722.473,
+      "end_seconds": 724.4929999999999,
+      "id": "qZMB9MJU3oM-display-0147",
+      "segment_id": "qZMB9MJU3oM-ja-0082"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 738.193,
+      "end_seconds": 740.213,
+      "id": "qZMB9MJU3oM-display-0148",
+      "segment_id": "qZMB9MJU3oM-ja-0083"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 746.053,
+      "end_seconds": 748.073,
+      "id": "qZMB9MJU3oM-display-0149",
+      "segment_id": "qZMB9MJU3oM-ja-0084"
+    },
+    {
+      "text": "さよな。",
+      "start_seconds": 749.519,
+      "end_seconds": 752.519,
+      "id": "qZMB9MJU3oM-display-0150",
+      "segment_id": "qZMB9MJU3oM-ja-0085"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 754.568,
+      "end_seconds": 756.588,
+      "id": "qZMB9MJU3oM-display-0151",
+      "segment_id": "qZMB9MJU3oM-ja-0086"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 761.118,
+      "end_seconds": 763.138,
+      "id": "qZMB9MJU3oM-display-0152",
+      "segment_id": "qZMB9MJU3oM-ja-0087"
+    },
+    {
+      "text": "最",
+      "start_seconds": 765.36,
+      "end_seconds": 768.36,
+      "id": "qZMB9MJU3oM-display-0153",
+      "segment_id": "qZMB9MJU3oM-ja-0088"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 770.943,
+      "end_seconds": 772.963,
+      "id": "qZMB9MJU3oM-display-0154",
+      "segment_id": "qZMB9MJU3oM-ja-0089"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 778.803,
+      "end_seconds": 780.823,
+      "id": "qZMB9MJU3oM-display-0155",
+      "segment_id": "qZMB9MJU3oM-ja-0090"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 788.629,
+      "end_seconds": 790.649,
+      "id": "qZMB9MJU3oM-display-0156",
+      "segment_id": "qZMB9MJU3oM-ja-0091"
+    },
+    {
+      "text": "やらみたし卒[歌声]",
+      "start_seconds": 794.56,
+      "end_seconds": 797.199,
+      "id": "qZMB9MJU3oM-display-0157",
+      "segment_id": "qZMB9MJU3oM-ja-0092"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 799.109,
+      "end_seconds": 801.129,
+      "id": "qZMB9MJU3oM-display-0158",
+      "segment_id": "qZMB9MJU3oM-ja-0093"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 810.244,
+      "end_seconds": 812.264,
+      "id": "qZMB9MJU3oM-display-0159",
+      "segment_id": "qZMB9MJU3oM-ja-0094"
+    },
+    {
+      "text": "原か",
+      "start_seconds": 813.32,
+      "end_seconds": 816.32,
+      "id": "qZMB9MJU3oM-display-0160",
+      "segment_id": "qZMB9MJU3oM-ja-0095"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 818.759,
+      "end_seconds": 819.839,
+      "id": "qZMB9MJU3oM-display-0161",
+      "segment_id": "qZMB9MJU3oM-ja-0096"
+    },
+    {
+      "text": "最後",
+      "start_seconds": 819.839,
+      "end_seconds": 822.839,
+      "id": "qZMB9MJU3oM-display-0162",
+      "segment_id": "qZMB9MJU3oM-ja-0096"
+    },
+    {
+      "text": "[音楽][歌声]",
+      "start_seconds": 823.999,
+      "end_seconds": 826.019,
+      "id": "qZMB9MJU3oM-display-0163",
+      "segment_id": "qZMB9MJU3oM-ja-0097"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 829.894,
+      "end_seconds": 831.914,
+      "id": "qZMB9MJU3oM-display-0164",
+      "segment_id": "qZMB9MJU3oM-ja-0098"
+    },
+    {
+      "text": "に",
+      "start_seconds": 833.56,
+      "end_seconds": 835.789,
+      "id": "qZMB9MJU3oM-display-0165",
+      "segment_id": "qZMB9MJU3oM-ja-0099"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 835.789,
+      "end_seconds": 837.754,
+      "id": "qZMB9MJU3oM-display-0166",
+      "segment_id": "qZMB9MJU3oM-ja-0099"
+    },
+    {
+      "text": "[歌声]",
+      "start_seconds": 837.754,
+      "end_seconds": 839.774,
+      "id": "qZMB9MJU3oM-display-0167",
+      "segment_id": "qZMB9MJU3oM-ja-0099"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 844.304,
+      "end_seconds": 846.324,
+      "id": "qZMB9MJU3oM-display-0168",
+      "segment_id": "qZMB9MJU3oM-ja-0100"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 852.164,
+      "end_seconds": 854.184,
+      "id": "qZMB9MJU3oM-display-0169",
+      "segment_id": "qZMB9MJU3oM-ja-0101"
+    },
+    {
+      "text": "族を[音楽]",
+      "start_seconds": 856.0,
+      "end_seconds": 858.769,
+      "id": "qZMB9MJU3oM-display-0170",
+      "segment_id": "qZMB9MJU3oM-ja-0102"
+    },
+    {
+      "text": "や人しむしむたみ[音楽]",
+      "start_seconds": 862.88,
+      "end_seconds": 865.319,
+      "id": "qZMB9MJU3oM-display-0171",
+      "segment_id": "qZMB9MJU3oM-ja-0103"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 869.849,
+      "end_seconds": 871.869,
+      "id": "qZMB9MJU3oM-display-0172",
+      "segment_id": "qZMB9MJU3oM-ja-0104"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 879.02,
+      "end_seconds": 881.04,
+      "id": "qZMB9MJU3oM-display-0173",
+      "segment_id": "qZMB9MJU3oM-ja-0105"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 885.57,
+      "end_seconds": 887.59,
+      "id": "qZMB9MJU3oM-display-0174",
+      "segment_id": "qZMB9MJU3oM-ja-0106"
+    },
+    {
+      "text": "最無業物脈内原みた大",
+      "start_seconds": 891.24,
+      "end_seconds": 894.24,
+      "id": "qZMB9MJU3oM-display-0175",
+      "segment_id": "qZMB9MJU3oM-ja-0107"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 895.395,
+      "end_seconds": 897.415,
+      "id": "qZMB9MJU3oM-display-0176",
+      "segment_id": "qZMB9MJU3oM-ja-0108"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 900.635,
+      "end_seconds": 902.655,
+      "id": "qZMB9MJU3oM-display-0177",
+      "segment_id": "qZMB9MJU3oM-ja-0109"
+    },
+    {
+      "text": "[歌声]",
+      "start_seconds": 903.255,
+      "end_seconds": 905.22,
+      "id": "qZMB9MJU3oM-display-0178",
+      "segment_id": "qZMB9MJU3oM-ja-0110"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 905.22,
+      "end_seconds": 907.24,
+      "id": "qZMB9MJU3oM-display-0179",
+      "segment_id": "qZMB9MJU3oM-ja-0110"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 911.115,
+      "end_seconds": 913.135,
+      "id": "qZMB9MJU3oM-display-0180",
+      "segment_id": "qZMB9MJU3oM-ja-0111"
+    },
+    {
+      "text": "主部長の主半や原たにゃにゃで原にゃ原そにゃそ半にや",
+      "start_seconds": 914.0,
+      "end_seconds": 915.7,
+      "id": "qZMB9MJU3oM-display-0181",
+      "segment_id": "qZMB9MJU3oM-ja-0112"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 915.7,
+      "end_seconds": 917.665,
+      "id": "qZMB9MJU3oM-display-0182",
+      "segment_id": "qZMB9MJU3oM-ja-0112"
+    },
+    {
+      "text": "[歌声]",
+      "start_seconds": 917.665,
+      "end_seconds": 919.685,
+      "id": "qZMB9MJU3oM-display-0183",
+      "segment_id": "qZMB9MJU3oM-ja-0112"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 921.595,
+      "end_seconds": 923.615,
+      "id": "qZMB9MJU3oM-display-0184",
+      "segment_id": "qZMB9MJU3oM-ja-0113"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 928.145,
+      "end_seconds": 930.165,
+      "id": "qZMB9MJU3oM-display-0185",
+      "segment_id": "qZMB9MJU3oM-ja-0114"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 936.66,
+      "end_seconds": 938.68,
+      "id": "qZMB9MJU3oM-display-0186",
+      "segment_id": "qZMB9MJU3oM-ja-0115"
+    },
+    {
+      "text": "て[音楽]",
+      "start_seconds": 944.16,
+      "end_seconds": 945.759,
+      "id": "qZMB9MJU3oM-display-0187",
+      "segment_id": "qZMB9MJU3oM-ja-0116"
+    },
+    {
+      "text": "あにそわ[歌声]",
+      "start_seconds": 945.759,
+      "end_seconds": 947.85,
+      "id": "qZMB9MJU3oM-display-0188",
+      "segment_id": "qZMB9MJU3oM-ja-0116"
+    },
+    {
+      "text": "[音楽][歌声]",
+      "start_seconds": 953.035,
+      "end_seconds": 955.055,
+      "id": "qZMB9MJU3oM-display-0189",
+      "segment_id": "qZMB9MJU3oM-ja-0117"
+    },
+    {
+      "text": "そてそ",
+      "start_seconds": 958.68,
+      "end_seconds": 960.896,
+      "id": "qZMB9MJU3oM-display-0190",
+      "segment_id": "qZMB9MJU3oM-ja-0118"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 960.896,
+      "end_seconds": 962.9159999999999,
+      "id": "qZMB9MJU3oM-display-0191",
+      "segment_id": "qZMB9MJU3oM-ja-0118"
+    },
+    {
+      "text": "[音楽][歌声]",
+      "start_seconds": 968.756,
+      "end_seconds": 970.519,
+      "id": "qZMB9MJU3oM-display-0192",
+      "segment_id": "qZMB9MJU3oM-ja-0119"
+    },
+    {
+      "text": "ヤ",
+      "start_seconds": 970.519,
+      "end_seconds": 972.92,
+      "id": "qZMB9MJU3oM-display-0193",
+      "segment_id": "qZMB9MJU3oM-ja-0119"
+    },
+    {
+      "text": "てそにてそ",
+      "start_seconds": 972.959,
+      "end_seconds": 975.959,
+      "id": "qZMB9MJU3oM-display-0194",
+      "segment_id": "qZMB9MJU3oM-ja-0119"
+    },
+    {
+      "text": "[歌声]",
+      "start_seconds": 976.616,
+      "end_seconds": 977.271,
+      "id": "qZMB9MJU3oM-display-0195",
+      "segment_id": "qZMB9MJU3oM-ja-0120"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 977.271,
+      "end_seconds": 979.2909999999999,
+      "id": "qZMB9MJU3oM-display-0196",
+      "segment_id": "qZMB9MJU3oM-ja-0120"
+    },
+    {
+      "text": "[音楽][歌声]",
+      "start_seconds": 985.131,
+      "end_seconds": 987.151,
+      "id": "qZMB9MJU3oM-display-0197",
+      "segment_id": "qZMB9MJU3oM-ja-0121"
+    },
+    {
+      "text": "[歌声]",
+      "start_seconds": 993.646,
+      "end_seconds": 995.6659999999999,
+      "id": "qZMB9MJU3oM-display-0198",
+      "segment_id": "qZMB9MJU3oM-ja-0122"
+    },
+    {
+      "text": "[音楽][歌声]",
+      "start_seconds": 1000.196,
+      "end_seconds": 1002.216,
+      "id": "qZMB9MJU3oM-display-0199",
+      "segment_id": "qZMB9MJU3oM-ja-0123"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 1004.781,
+      "end_seconds": 1005.639,
+      "id": "qZMB9MJU3oM-display-0200",
+      "segment_id": "qZMB9MJU3oM-ja-0124"
+    },
+    {
+      "text": "ち",
+      "start_seconds": 1005.639,
+      "end_seconds": 1008.639,
+      "id": "qZMB9MJU3oM-display-0201",
+      "segment_id": "qZMB9MJU3oM-ja-0124"
+    },
+    {
+      "text": "[歌声]",
+      "start_seconds": 1017.881,
+      "end_seconds": 1019.901,
+      "id": "qZMB9MJU3oM-display-0202",
+      "segment_id": "qZMB9MJU3oM-ja-0125"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 1020.501,
+      "end_seconds": 1022.521,
+      "id": "qZMB9MJU3oM-display-0203",
+      "segment_id": "qZMB9MJU3oM-ja-0126"
+    },
+    {
+      "text": "[音楽][歌声]",
+      "start_seconds": 1025.741,
+      "end_seconds": 1027.761,
+      "id": "qZMB9MJU3oM-display-0204",
+      "segment_id": "qZMB9MJU3oM-ja-0127"
+    },
+    {
+      "text": "[歌声]",
+      "start_seconds": 1032.291,
+      "end_seconds": 1032.946,
+      "id": "qZMB9MJU3oM-display-0205",
+      "segment_id": "qZMB9MJU3oM-ja-0128"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 1032.946,
+      "end_seconds": 1034.966,
+      "id": "qZMB9MJU3oM-display-0206",
+      "segment_id": "qZMB9MJU3oM-ja-0128"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 1040.151,
+      "end_seconds": 1042.171,
+      "id": "qZMB9MJU3oM-display-0207",
+      "segment_id": "qZMB9MJU3oM-ja-0129"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 1048.011,
+      "end_seconds": 1050.032,
+      "id": "qZMB9MJU3oM-display-0208",
+      "segment_id": "qZMB9MJU3oM-ja-0130"
+    },
+    {
+      "text": "[歌声]",
+      "start_seconds": 1056.527,
+      "end_seconds": 1058.547,
+      "id": "qZMB9MJU3oM-display-0209",
+      "segment_id": "qZMB9MJU3oM-ja-0131"
+    },
+    {
+      "text": "全て[音楽]",
+      "start_seconds": 1058.88,
+      "end_seconds": 1061.1670000000001,
+      "id": "qZMB9MJU3oM-display-0210",
+      "segment_id": "qZMB9MJU3oM-ja-0131"
+    },
+    {
+      "text": "生きしるもが幸せ[音楽]",
+      "start_seconds": 1062.88,
+      "end_seconds": 1064.387,
+      "id": "qZMB9MJU3oM-display-0211",
+      "segment_id": "qZMB9MJU3oM-ja-0132"
+    },
+    {
+      "text": "[歌声]",
+      "start_seconds": 1064.387,
+      "end_seconds": 1066.407,
+      "id": "qZMB9MJU3oM-display-0212",
+      "segment_id": "qZMB9MJU3oM-ja-0132"
+    },
+    {
+      "text": "[歌声]",
+      "start_seconds": 1072.247,
+      "end_seconds": 1074.267,
+      "id": "qZMB9MJU3oM-display-0213",
+      "segment_id": "qZMB9MJU3oM-ja-0133"
+    },
+    {
+      "text": "ありますように[音楽]",
+      "start_seconds": 1077.76,
+      "end_seconds": 1082.127,
+      "id": "qZMB9MJU3oM-display-0214",
+      "segment_id": "qZMB9MJU3oM-ja-0134"
+    },
+    {
+      "text": "し",
+      "start_seconds": 1086.88,
+      "end_seconds": 1089.88,
+      "id": "qZMB9MJU3oM-display-0215",
+      "segment_id": "qZMB9MJU3oM-ja-0135"
+    },
+    {
+      "text": "[音楽]",
+      "start_seconds": 1101.067,
+      "end_seconds": 1103.087,
+      "id": "qZMB9MJU3oM-display-0216",
+      "segment_id": "qZMB9MJU3oM-ja-0136"
+    },
+    {
+      "text": "B",
+      "start_seconds": 1106.44,
+      "end_seconds": 1109.44,
+      "id": "qZMB9MJU3oM-display-0217",
+      "segment_id": "qZMB9MJU3oM-ja-0137"
+    },
+    {
+      "text": "ピアピ",
+      "start_seconds": 1126.32,
+      "end_seconds": 1129.32,
+      "id": "qZMB9MJU3oM-display-0218",
+      "segment_id": "qZMB9MJU3oM-ja-0138"
+    },
+    {
+      "text": "ての",
+      "start_seconds": 1138.84,
+      "end_seconds": 1142.2,
+      "id": "qZMB9MJU3oM-display-0219",
+      "segment_id": "qZMB9MJU3oM-ja-0139"
+    },
+    {
+      "text": "生きしき",
+      "start_seconds": 1142.2,
+      "end_seconds": 1145.2,
+      "id": "qZMB9MJU3oM-display-0220",
+      "segment_id": "qZMB9MJU3oM-ja-0139"
+    },
+    {
+      "text": "ものが幸",
+      "start_seconds": 1147.64,
+      "end_seconds": 1153.0800000000002,
+      "id": "qZMB9MJU3oM-display-0221",
+      "segment_id": "qZMB9MJU3oM-ja-0140"
+    },
+    {
+      "text": "ありますよ。",
+      "start_seconds": 1157.4,
+      "end_seconds": 1163.0,
+      "id": "qZMB9MJU3oM-display-0222",
+      "segment_id": "qZMB9MJU3oM-ja-0141"
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 1185.563,
+      "end_seconds": 1187.583,
+      "id": "qZMB9MJU3oM-display-0223",
+      "segment_id": "qZMB9MJU3oM-ja-0142"
+    },
+    {
+      "text": "ありがとうございました。",
+      "start_seconds": 1193.919,
+      "end_seconds": 1196.919,
+      "id": "qZMB9MJU3oM-display-0224",
+      "segment_id": "qZMB9MJU3oM-ja-0143"
+    }
+  ]
+}

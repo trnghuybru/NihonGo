@@ -81,10 +81,10 @@ Dán kết quả vào `AUTH_SECRET_KEY` trong `.env`. Khóa cần ít nhất 32 
 | `PORT` | `5001` |
 | `SMTP_HOST`, `SMTP_PORT` | `localhost`, `1025` để gửi mã xác thực vào Mailpit |
 | `SMTP_SSL`, `SMTP_STARTTLS` | `false` khi dùng Mailpit local |
-| `GEMINI_API_KEY` | API key phía backend để dùng hội thoại Aoi qua Gemini Live |
+| `GEMINI_API_KEY` | API key phía backend cho hội thoại, Gemini Live, chấm điểm/nhận xét và AI Shadowing |
+| `SPEAKING_EVALUATION_MODEL` | Model Gemini nhận xét/chấm điểm; mặc định `gemini-3.1-flash-lite` |
 | `GEMINI_LIVE_MODEL`, `GEMINI_LIVE_VOICE` | Giá trị mẫu trong `.env.example`; đổi model nếu tài khoản dùng model Live khác |
-| `OPENROUTER_API_KEY` | Cần khi dùng hội thoại văn bản qua OpenRouter hoặc endpoint demo `/api/chat/voice-stream` |
-| `OPENROUTER_MODEL` | Model OpenRouter, có giá trị mẫu trong `.env.example` |
+| `GEMINI_CHAT_MODEL` | Model hội thoại văn bản, mặc định `gemini-3.1-flash-lite` |
 
 Các biến Twilio và OAuth Google/Facebook/Apple chỉ cần khi sử dụng nhà cung cấp tương ứng. Giữ API key trong backend; không đưa vào frontend hoặc commit file `.env`.
 
@@ -142,7 +142,7 @@ curl http://localhost:5001/
 curl http://localhost:5001/api/auth/config
 ```
 
-Endpoint `/` trả JSON với `status: "ok"`. Trường `openrouter_configured` chỉ phản ánh có cấu hình khóa OpenRouter; không kiểm tra Gemini hay kết nối database. Endpoint `/api/auth/config` kiểm tra thêm dịch vụ tài khoản.
+Endpoint `/` trả JSON với `status: "ok"`. Trường `gemini_configured` chỉ phản ánh có cấu hình khóa Gemini; không kiểm tra kết nối provider hay database. Endpoint `/api/auth/config` kiểm tra thêm dịch vụ tài khoản.
 
 ## 3. Cài đặt và chạy ứng dụng di động
 
@@ -163,9 +163,9 @@ API chính được cấu hình trong [`frontend/src/config/api.ts`](frontend/sr
 | iOS Simulator | `http://localhost:5001` (mặc định) |
 | Điện thoại thật | `http://<IP-LAN-của-máy-chạy-backend>:5001` |
 
-Khi dùng điện thoại thật, sửa `DEVELOPMENT_API_URL` thành địa chỉ LAN của máy tính, ví dụ `http://192.168.1.10:5001`. Máy tính và điện thoại phải cùng mạng Wi-Fi, backend đang chạy và firewall cho phép kết nối cổng 5001.
+Trong `frontend/src/config/api.ts`, mặc định `USE_PHYSICAL_DEVICE=false`: iOS Simulator dùng localhost, Android Emulator dùng 10.0.2.2. Khi dùng điện thoại thật, đặt `USE_PHYSICAL_DEVICE=true` và cập nhật `COMPUTER_LAN_IP` theo IP Wi-Fi của máy tính. Máy tính và điện thoại phải cùng mạng Wi-Fi, backend đang chạy và firewall cho phép kết nối cổng 5001.
 
-Nếu dùng dịch vụ chat streaming cũ, sửa thêm `DEFAULT_HOST_IP` trong [`frontend/src/services/chatStreamService.ts`](frontend/src/services/chatStreamService.ts), hiện đang cố định là `192.168.1.31`. Nếu đổi cổng backend, cập nhật cả cổng trong địa chỉ frontend. Khi tạo bản release, cấu hình `PRODUCTION_API_URL` bằng địa chỉ HTTPS của backend.
+Nếu đổi cổng backend, cập nhật cả cổng trong địa chỉ frontend. Khi tạo bản release, cấu hình `PRODUCTION_API_URL` bằng địa chỉ HTTPS của backend.
 
 ### Khởi động Metro
 
@@ -275,7 +275,11 @@ Từ lịch sử, mở phiên đã kết thúc và chọn **Xem điểm & nhận
 
 Màn hình tổng kết hiển thị điểm tổng quan ở đầu, hội thoại ở giữa và tối đa ba gợi ý luyện tập ở cuối. Nhận xét gắn ngay dưới đúng tin nhắn người dùng, mặc định thu gọn; mở một câu sẽ đóng nhận xét câu trước. Mỗi góp ý chia thành chỗ cần sửa/cách nói hiện tại, lý do và câu gợi ý. Lỗi và cách diễn đạt thay thế có nhãn riêng; câu chưa có góp ý không được đánh dấu là đúng. Icon loa vẫn nghe lại bản thu gốc. Nút **Xem câu liên quan** cuộn về và mở nhận xét đúng câu, không tự cuộn xuống cuối khi mở góp ý. Không tạo audio mới cho câu sửa.
 
-Backend dùng OpenRouter với `OPENROUTER_API_KEY`. Cấu hình mẫu dùng `SPEAKING_EVALUATION_MODEL=nvidia/nemotron-3-super-120b-a12b:free` và `SPEAKING_EVALUATION_FORMAT=json_schema` cho phần nhận xét. Để trống model sẽ dùng `OPENROUTER_MODEL`; không đặt format sẽ dùng `text`. Backend luôn kiểm tra JSON và trích dẫn, kể cả khi đã bật [structured outputs của OpenRouter](https://openrouter.ai/docs/guides/features/structured-outputs). Khi đổi model, cần kiểm tra hỗ trợ `json_schema`; với model không hỗ trợ, dùng `text`.
+Backend nhận xét/chấm điểm bằng Gemini với `GEMINI_API_KEY` hiện có. Model riêng
+`SPEAKING_EVALUATION_MODEL` mặc định `gemini-3.1-flash-lite`. Cả tổng kết toàn buổi
+và nhận xét từng câu dùng Gemini `generateContent` với JSON Schema. Backend vẫn
+kiểm tra khoảng điểm và trích dẫn, không gửi audio hoặc private role instructions.
+Khởi động lại backend sau khi thay cấu hình model trong `.env`.
 
 Nếu model trả lỗi bên trong HTTP 200, backend báo dịch vụ model gián đoạn thay vì báo nhận xét sai định dạng. Mỗi lần phân tích thử lại tự động tối đa một lần khi provider gián đoạn hoặc output không hợp lệ. Góp ý lặp cùng câu gốc và câu sửa được gộp; trích dẫn không có trong transcript vẫn bị từ chối. Model miễn phí vẫn có thể giới hạn lượt gọi, khi đó cần thử lại sau.
 
@@ -325,7 +329,7 @@ npm test -- --runInBand --watchman=false
 - **Dịch vụ tài khoản chưa được cấu hình:** kiểm tra `DATABASE_URL`, `AUTH_SECRET_KEY` đủ 32 ký tự, PostgreSQL đang chạy và đã thực hiện `db upgrade`.
 - **Danh sách tình huống trống:** chạy `flask --app app speaking-seed` trong môi trường backend.
 - **Không nhận được mã xác thực:** kiểm tra Mailpit đang chạy, cấu hình SMTP theo `.env.example` và hộp thư tại cổng 8025.
-- **Gemini Live hoặc OpenRouter báo lỗi:** kiểm tra API key, model, quyền sử dụng và kết nối Internet; khởi động lại backend sau khi sửa `.env`.
+- **Gemini báo lỗi:** kiểm tra API key, model, quyền sử dụng và kết nối Internet; khởi động lại backend sau khi sửa `.env`.
 - **iOS thiếu module native:** chạy lại `bundle exec pod install` trong `frontend/ios`, rồi build lại ứng dụng.
 
 Để dừng PostgreSQL và Mailpit, chạy `docker compose down` tại thư mục gốc. Dữ liệu PostgreSQL vẫn được giữ trong volume `postgres_data`. Dừng backend và Metro bằng `Ctrl+C` trong từng terminal.
@@ -339,3 +343,15 @@ npm test -- --runInBand --watchman=false
 - [API và luồng hội thoại](backend/SPEAKING.md)
 - [Cơ sở dữ liệu và migration hội thoại](backend/SPEAKING_DATABASE.md)
 - [Thiết kế ứng dụng](design.md)
+
+### Bản dịch tiếng Việt trong Shadowing
+
+Trong bài shadowing, bật **Bản dịch** để xem tiếng Việt dưới câu luyện và dưới phụ đề
+lớn. Nếu chưa có bản dịch, app tạo job nền; video tiếp tục phát, các câu dịch xong xuất
+hiện dần. Kết quả lưu PostgreSQL dùng chung theo video, không gọi Gemini mỗi lần xem.
+
+Dùng `GEMINI_API_KEY` trong `backend/.env`; model mặc định
+`SHADOWING_TRANSLATION_MODEL=gemini-3.1-flash-lite`. Chạy migration và build lại
+`shadowing-worker` theo [hướng dẫn Shadowing](backend/SHADOWING.md#dịch-phụ-đề-tiếng-việt).
+System prompt nguyên văn ở [translation.py](backend/shadowing/translation.py).
+Chỉ gửi văn bản phụ đề và ngữ cảnh, không gửi audio hoặc dữ liệu tài khoản.

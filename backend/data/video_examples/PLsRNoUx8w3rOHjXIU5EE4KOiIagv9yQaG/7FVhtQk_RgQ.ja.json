@@ -1,0 +1,2840 @@
+{
+  "schema_version": 1,
+  "video": {
+    "youtube_id": "7FVhtQk_RgQ",
+    "title": "Transforming Scars into One-of-a-Kind \"Scenery\" / When Scars Make Our Story | Kyoko Owaki | TEDxK...",
+    "channel": "TEDx Talks",
+    "duration_seconds": 735
+  },
+  "caption_track": {
+    "language": "ja",
+    "kind": "asr",
+    "source": "youtube_automatic"
+  },
+  "source_playlist": "https://www.youtube.com/playlist?list=PLsRNoUx8w3rOHjXIU5EE4KOiIagv9yQaG",
+  "fetched_at": "2026-10-13T13:23:06.273968+00:00",
+  "segment_count": 87,
+  "segments": [
+    {
+      "text": "[拍手]",
+      "start_seconds": 5.894,
+      "end_seconds": 7.914,
+      "id": "7FVhtQk_RgQ-ja-0001",
+      "sequence": 1
+    },
+    {
+      "text": "皆さんは大切にした器を思いがけず壊してしまった経験はありませんか?",
+      "start_seconds": 10.759,
+      "end_seconds": 19.56,
+      "id": "7FVhtQk_RgQ-ja-0002",
+      "sequence": 2
+    },
+    {
+      "text": "誰にでもあると思います。",
+      "start_seconds": 19.56,
+      "end_seconds": 23.16,
+      "id": "7FVhtQk_RgQ-ja-0003",
+      "sequence": 3
+    },
+    {
+      "text": "胸がぎゅっとするような気持ちになりますよね。",
+      "start_seconds": 23.16,
+      "end_seconds": 28.519,
+      "id": "7FVhtQk_RgQ-ja-0004",
+      "sequence": 4
+    },
+    {
+      "text": "そんなバラバラになった器が元の形に戻り美しく仕上がるととても嬉しいと思います。",
+      "start_seconds": 28.519,
+      "end_seconds": 37.84,
+      "id": "7FVhtQk_RgQ-ja-0005",
+      "sequence": 5
+    },
+    {
+      "text": "壊れた器が再び息を吹き返す。それを可能にするのが金次です。",
+      "start_seconds": 37.84,
+      "end_seconds": 47.480000000000004,
+      "id": "7FVhtQk_RgQ-ja-0006",
+      "sequence": 6
+    },
+    {
+      "text": "金次とは割れたり壊れたりしてしまった器を売るを使って修復し最後に金で仕上げる日本に",
+      "start_seconds": 48.64,
+      "end_seconds": 60.64,
+      "id": "7FVhtQk_RgQ-ja-0007",
+      "sequence": 7
+    },
+    {
+      "text": "伝わる伝統的な修復技法です。",
+      "start_seconds": 60.64,
+      "end_seconds": 65.8,
+      "id": "7FVhtQk_RgQ-ja-0008",
+      "sequence": 8
+    },
+    {
+      "text": "完全に元通りに戻すのではなく、あえて傷跡を目立たせることで修復跡を見せ、新たな作品として受け入れるところに特徴",
+      "start_seconds": 66.0,
+      "end_seconds": 77.479,
+      "id": "7FVhtQk_RgQ-ja-0009",
+      "sequence": 9
+    },
+    {
+      "text": "があります。",
+      "start_seconds": 77.479,
+      "end_seconds": 80.32,
+      "id": "7FVhtQk_RgQ-ja-0010",
+      "sequence": 10
+    },
+    {
+      "text": "金次はうを使って修復していきます。",
+      "start_seconds": 80.799,
+      "end_seconds": 86.52,
+      "id": "7FVhtQk_RgQ-ja-0011",
+      "sequence": 11
+    },
+    {
+      "text": "うしとは天然の樹液であるうしの木の樹液になります。",
+      "start_seconds": 86.52,
+      "end_seconds": 95.04,
+      "id": "7FVhtQk_RgQ-ja-0012",
+      "sequence": 12
+    },
+    {
+      "text": "うしは降化するまでに日数を必要とし、修復にはとても時間のかかる作業となります。",
+      "start_seconds": 95.04,
+      "end_seconds": 105.67999999999999,
+      "id": "7FVhtQk_RgQ-ja-0013",
+      "sequence": 13
+    },
+    {
+      "text": "金次の工程はこの塗る、待つ、整える。",
+      "start_seconds": 108.719,
+      "end_seconds": 114.479,
+      "id": "7FVhtQk_RgQ-ja-0014",
+      "sequence": 14
+    },
+    {
+      "text": "これを何度も繰り返します。",
+      "start_seconds": 114.479,
+      "end_seconds": 118.28,
+      "id": "7FVhtQk_RgQ-ja-0015",
+      "sequence": 15
+    },
+    {
+      "text": "そして1つの器を完成させるのに大体2週間から3週間時には数ヶ月かかるものも",
+      "start_seconds": 118.28,
+      "end_seconds": 127.2,
+      "id": "7FVhtQk_RgQ-ja-0016",
+      "sequence": 16
+    },
+    {
+      "text": "あります。",
+      "start_seconds": 127.2,
+      "end_seconds": 130.6,
+      "id": "7FVhtQk_RgQ-ja-0017",
+      "sequence": 17
+    },
+    {
+      "text": "タパや効率が重視される今の世の中においてはとても遠回りな時間に感じるかもしれません。",
+      "start_seconds": 132.36,
+      "end_seconds": 143.56,
+      "id": "7FVhtQk_RgQ-ja-0018",
+      "sequence": 18
+    },
+    {
+      "text": "しかしこの待つ時間が今最も必要な時間なのではないかと私は思います。",
+      "start_seconds": 144.599,
+      "end_seconds": 154.48,
+      "id": "7FVhtQk_RgQ-ja-0019",
+      "sequence": 19
+    },
+    {
+      "text": "器と向き合っている時間は自分自身にも向き合う時間にもなっています。",
+      "start_seconds": 155.2,
+      "end_seconds": 163.2,
+      "id": "7FVhtQk_RgQ-ja-0020",
+      "sequence": 20
+    },
+    {
+      "text": "修復した傷の傷跡は欠点ではなくその器だけの魅力になっていくのです。",
+      "start_seconds": 163.2,
+      "end_seconds": 173.879,
+      "id": "7FVhtQk_RgQ-ja-0021",
+      "sequence": 21
+    },
+    {
+      "text": "この部分においては私たちの生き方とも共通する部分があるのではないのでしょうか。",
+      "start_seconds": 173.879,
+      "end_seconds": 183.8,
+      "id": "7FVhtQk_RgQ-ja-0022",
+      "sequence": 22
+    },
+    {
+      "text": "ここに真っ白な器があります。例えば生まれたばかりの赤ちゃんを例にすると生まれたばかりの赤ちゃんはとっても純粋",
+      "start_seconds": 185.48,
+      "end_seconds": 196.56,
+      "id": "7FVhtQk_RgQ-ja-0023",
+      "sequence": 23
+    },
+    {
+      "text": "で何色にも染まってなくってピュアな存在だと思います。",
+      "start_seconds": 196.56,
+      "end_seconds": 203.28,
+      "id": "7FVhtQk_RgQ-ja-0024",
+      "sequence": 24
+    },
+    {
+      "text": "そこからいろんな経験をし学んでいろんな人と出会うことでそれぞれ個性が生まれてき",
+      "start_seconds": 203.28,
+      "end_seconds": 213.799,
+      "id": "7FVhtQk_RgQ-ja-0025",
+      "sequence": 25
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 213.799,
+      "end_seconds": 217.04000000000002,
+      "id": "7FVhtQk_RgQ-ja-0026",
+      "sequence": 26
+    },
+    {
+      "text": "修復をしているとその部分は人生にもとても共通する部分があるなと感じることがあります。",
+      "start_seconds": 218.84,
+      "end_seconds": 228.2,
+      "id": "7FVhtQk_RgQ-ja-0027",
+      "sequence": 27
+    },
+    {
+      "text": "新品の器でも日々の暮らしの中で使うことで細かな傷がついていったり人にたくさん",
+      "start_seconds": 228.2,
+      "end_seconds": 237.28,
+      "id": "7FVhtQk_RgQ-ja-0028",
+      "sequence": 28
+    },
+    {
+      "text": "触れられることでその器には艶が出て表情が出てきます。",
+      "start_seconds": 237.28,
+      "end_seconds": 245.84,
+      "id": "7FVhtQk_RgQ-ja-0029",
+      "sequence": 29
+    },
+    {
+      "text": "そして使っているうちにもし壊れたり割れたりしてしまっても直して使うこともできます。",
+      "start_seconds": 245.84,
+      "end_seconds": 255.319,
+      "id": "7FVhtQk_RgQ-ja-0030",
+      "sequence": 30
+    },
+    {
+      "text": "割れてしまったものも直して使うことでとても愛着を持ってさらに",
+      "start_seconds": 255.319,
+      "end_seconds": 262.88,
+      "id": "7FVhtQk_RgQ-ja-0031",
+      "sequence": 31
+    },
+    {
+      "text": "使い続けることができます。",
+      "start_seconds": 262.88,
+      "end_seconds": 267.56,
+      "id": "7FVhtQk_RgQ-ja-0032",
+      "sequence": 32
+    },
+    {
+      "text": "私たちも例えば思いがけずトラブルに見舞れたり、困難なことがあったり時には傷ついてしまうこともあるかもしれ",
+      "start_seconds": 267.84,
+      "end_seconds": 279.32,
+      "id": "7FVhtQk_RgQ-ja-0033",
+      "sequence": 33
+    },
+    {
+      "text": "ません。それを乗り越えてその経験こそが人それぞれの魅力となり個性につがるもの",
+      "start_seconds": 279.32,
+      "end_seconds": 289.44,
+      "id": "7FVhtQk_RgQ-ja-0034",
+      "sequence": 34
+    },
+    {
+      "text": "だと感じます。",
+      "start_seconds": 289.44,
+      "end_seconds": 293.88,
+      "id": "7FVhtQk_RgQ-ja-0035",
+      "sequence": 35
+    },
+    {
+      "text": "そもそも次なんですけれども、元々はあ山時代や室町時代に茶の湯の発展と共に",
+      "start_seconds": 297.24,
+      "end_seconds": 308.479,
+      "id": "7FVhtQk_RgQ-ja-0036",
+      "sequence": 36
+    },
+    {
+      "text": "広まりました。",
+      "start_seconds": 308.479,
+      "end_seconds": 311.96,
+      "id": "7FVhtQk_RgQ-ja-0037",
+      "sequence": 37
+    },
+    {
+      "text": "ですので本来茶道具骨董品など価値の高いものに施されたものが多く資金の高い",
+      "start_seconds": 311.96,
+      "end_seconds": 321.919,
+      "id": "7FVhtQk_RgQ-ja-0038",
+      "sequence": 38
+    },
+    {
+      "text": "イメージです。",
+      "start_seconds": 321.919,
+      "end_seconds": 324.4,
+      "id": "7FVhtQk_RgQ-ja-0039",
+      "sequence": 39
+    },
+    {
+      "text": "私自身も近次を始めるまではどこか美術館などで飾られてるものを干渉するだけの少し",
+      "start_seconds": 324.4,
+      "end_seconds": 334.36,
+      "id": "7FVhtQk_RgQ-ja-0040",
+      "sequence": 40
+    },
+    {
+      "text": "世界の違うところにあるものだと思っていました。",
+      "start_seconds": 334.36,
+      "end_seconds": 341.16,
+      "id": "7FVhtQk_RgQ-ja-0041",
+      "sequence": 41
+    },
+    {
+      "text": "ただ自分が大切にしていたマグカップを終わってしまってそのショックをどうにかしたいと思い",
+      "start_seconds": 341.16,
+      "end_seconds": 351.0,
+      "id": "7FVhtQk_RgQ-ja-0042",
+      "sequence": 42
+    },
+    {
+      "text": "以前より興味のあった金次を始めました。",
+      "start_seconds": 351.0,
+      "end_seconds": 356.44,
+      "id": "7FVhtQk_RgQ-ja-0043",
+      "sequence": 43
+    },
+    {
+      "text": "そして自分で直したそのマグカップを使い、暮らしの中で使っていくうちに",
+      "start_seconds": 356.44,
+      "end_seconds": 366.88,
+      "id": "7FVhtQk_RgQ-ja-0044",
+      "sequence": 44
+    },
+    {
+      "text": "骨董品や価値の高いものだけではなく、身近にあるものにこそ金継ぎをして日々の暮らしの中で使うことの大切さ、豊かさに",
+      "start_seconds": 366.88,
+      "end_seconds": 378.319,
+      "id": "7FVhtQk_RgQ-ja-0045",
+      "sequence": 45
+    },
+    {
+      "text": "気がつくことができました。",
+      "start_seconds": 378.319,
+      "end_seconds": 382.56,
+      "id": "7FVhtQk_RgQ-ja-0046",
+      "sequence": 46
+    },
+    {
+      "text": "また海外でデモンストレーションとワークショップをした時にその伝統を超え",
+      "start_seconds": 382.56,
+      "end_seconds": 389.8,
+      "id": "7FVhtQk_RgQ-ja-0047",
+      "sequence": 47
+    },
+    {
+      "text": "た気づきも得ることができました。",
+      "start_seconds": 389.8,
+      "end_seconds": 394.88,
+      "id": "7FVhtQk_RgQ-ja-0048",
+      "sequence": 48
+    },
+    {
+      "text": "海外で参加した方が持ってかれたのはいわゆる価値の高いものではなくその本人にとって大切なものというものが主でした",
+      "start_seconds": 394.919,
+      "end_seconds": 406.08,
+      "id": "7FVhtQk_RgQ-ja-0049",
+      "sequence": 49
+    },
+    {
+      "text": "。",
+      "start_seconds": 406.08,
+      "end_seconds": 408.88,
+      "id": "7FVhtQk_RgQ-ja-0050",
+      "sequence": 50
+    },
+    {
+      "text": "例えば日常を使っているマグカップだったり、キャラクターデザインのお皿、その他自分",
+      "start_seconds": 408.88,
+      "end_seconds": 419.12,
+      "id": "7FVhtQk_RgQ-ja-0051",
+      "sequence": 51
+    },
+    {
+      "text": "のお子さんが作ったオブジェだったりするものも多かったです。",
+      "start_seconds": 419.12,
+      "end_seconds": 426.12,
+      "id": "7FVhtQk_RgQ-ja-0052",
+      "sequence": 52
+    },
+    {
+      "text": "他人から見ると何の価値もないようなものにも本人にとってはとても掛け替えのない大切",
+      "start_seconds": 426.12,
+      "end_seconds": 435.72,
+      "id": "7FVhtQk_RgQ-ja-0053",
+      "sequence": 53
+    },
+    {
+      "text": "なものだったんですね。",
+      "start_seconds": 435.72,
+      "end_seconds": 438.879,
+      "id": "7FVhtQk_RgQ-ja-0054",
+      "sequence": 54
+    },
+    {
+      "text": "そこで大切なものというのは外側から与えられる価値ではなく自分の内側にある価値",
+      "start_seconds": 438.879,
+      "end_seconds": 448.12,
+      "id": "7FVhtQk_RgQ-ja-0055",
+      "sequence": 55
+    },
+    {
+      "text": "なんだと思いました。",
+      "start_seconds": 448.12,
+      "end_seconds": 452.36,
+      "id": "7FVhtQk_RgQ-ja-0056",
+      "sequence": 56
+    },
+    {
+      "text": "そこでそこにあった思いは高価なものだから直すという考えではなく",
+      "start_seconds": 453.4,
+      "end_seconds": 464.919,
+      "id": "7FVhtQk_RgQ-ja-0057",
+      "sequence": 57
+    },
+    {
+      "text": "自分の大切なものだから直して使い続けるという考えでした。",
+      "start_seconds": 464.919,
+      "end_seconds": 475.8,
+      "id": "7FVhtQk_RgQ-ja-0058",
+      "sequence": 58
+    },
+    {
+      "text": "自分の大事なものを日々使っていくうちに自分の好きなものに気づくきっかけにもなると思います。",
+      "start_seconds": 476.4,
+      "end_seconds": 487.479,
+      "id": "7FVhtQk_RgQ-ja-0059",
+      "sequence": 59
+    },
+    {
+      "text": "私が近次を活動通して伝えたいのはそういうことなんだっていう風に気づくこともできました。",
+      "start_seconds": 487.479,
+      "end_seconds": 497.479,
+      "id": "7FVhtQk_RgQ-ja-0060",
+      "sequence": 60
+    },
+    {
+      "text": "自分にとって大切なものを大切にするというとてもシンプルなことですが、金次する活動において疑法だけでなく伝え",
+      "start_seconds": 499.08,
+      "end_seconds": 510.44,
+      "id": "7FVhtQk_RgQ-ja-0061",
+      "sequence": 61
+    },
+    {
+      "text": "続けていきたいことでございます。",
+      "start_seconds": 510.44,
+      "end_seconds": 515.44,
+      "id": "7FVhtQk_RgQ-ja-0062",
+      "sequence": 62
+    },
+    {
+      "text": "近次は現代社会への小さな問いかけでもあります。",
+      "start_seconds": 517.12,
+      "end_seconds": 523.599,
+      "id": "7FVhtQk_RgQ-ja-0063",
+      "sequence": 63
+    },
+    {
+      "text": "壊れたら捨てる、古くなったら買い換えるという考え方を直して使い続けるという選択を与えてくれ",
+      "start_seconds": 524.279,
+      "end_seconds": 534.76,
+      "id": "7FVhtQk_RgQ-ja-0064",
+      "sequence": 64
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 534.76,
+      "end_seconds": 537.959,
+      "id": "7FVhtQk_RgQ-ja-0065",
+      "sequence": 65
+    },
+    {
+      "text": "私が主催している近次教室には60代から80代の日本の高度成長期を支えてきてくれた生徒さんも多く来て",
+      "start_seconds": 538.64,
+      "end_seconds": 549.76,
+      "id": "7FVhtQk_RgQ-ja-0066",
+      "sequence": 66
+    },
+    {
+      "text": "いらっしゃいます。",
+      "start_seconds": 549.76,
+      "end_seconds": 552.04,
+      "id": "7FVhtQk_RgQ-ja-0067",
+      "sequence": 67
+    },
+    {
+      "text": "その生徒さんからお聞きするのは物を多く生産し消費することが成長だと",
+      "start_seconds": 552.04,
+      "end_seconds": 562.24,
+      "id": "7FVhtQk_RgQ-ja-0068",
+      "sequence": 68
+    },
+    {
+      "text": "教えられてきたけれどもこれからはこれ以上物を増やしたくない今あるものを直して使い続けたいとおっしゃっていたことが印象に残ってい",
+      "start_seconds": 562.24,
+      "end_seconds": 573.64,
+      "id": "7FVhtQk_RgQ-ja-0069",
+      "sequence": 69
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 573.64,
+      "end_seconds": 576.36,
+      "id": "7FVhtQk_RgQ-ja-0070",
+      "sequence": 70
+    },
+    {
+      "text": "またある子育て世代の参加者の方は大切に扱わないと物は壊れるんだという",
+      "start_seconds": 576.36,
+      "end_seconds": 586.72,
+      "id": "7FVhtQk_RgQ-ja-0071",
+      "sequence": 71
+    },
+    {
+      "text": "ことを伝えたいためにプラスチックではなくちゃんと割れる当時期のお茶碗を使わせて",
+      "start_seconds": 586.72,
+      "end_seconds": 594.36,
+      "id": "7FVhtQk_RgQ-ja-0072",
+      "sequence": 72
+    },
+    {
+      "text": "いる。そしてもし割れてしまっても直して使い続けることができるということ",
+      "start_seconds": 594.36,
+      "end_seconds": 602.12,
+      "id": "7FVhtQk_RgQ-ja-0073",
+      "sequence": 73
+    },
+    {
+      "text": "を教えたいとおっしゃっていました。",
+      "start_seconds": 602.12,
+      "end_seconds": 607.32,
+      "id": "7FVhtQk_RgQ-ja-0074",
+      "sequence": 74
+    },
+    {
+      "text": "大量生産、大量消費が当たり前の世の中において金次は",
+      "start_seconds": 607.6,
+      "end_seconds": 615.72,
+      "id": "7FVhtQk_RgQ-ja-0075",
+      "sequence": 75
+    },
+    {
+      "text": "壊れたり割れたりしても直して使い続けることができるという新たな価値観を教えてくれます。",
+      "start_seconds": 615.72,
+      "end_seconds": 626.8800000000001,
+      "id": "7FVhtQk_RgQ-ja-0076",
+      "sequence": 76
+    },
+    {
+      "text": "近で修復された傷跡のことを景色と呼びます。",
+      "start_seconds": 629.519,
+      "end_seconds": 636.16,
+      "id": "7FVhtQk_RgQ-ja-0077",
+      "sequence": 77
+    },
+    {
+      "text": "金継ぎする前の景色とは全くまた違ったものになってしまいますが、それは新たな",
+      "start_seconds": 636.16,
+      "end_seconds": 643.839,
+      "id": "7FVhtQk_RgQ-ja-0078",
+      "sequence": 78
+    },
+    {
+      "text": "命を吹き返したようにその器だけの唯一無の輝きを増します。",
+      "start_seconds": 643.839,
+      "end_seconds": 654.04,
+      "id": "7FVhtQk_RgQ-ja-0079",
+      "sequence": 79
+    },
+    {
+      "text": "私たちも何かを乗り越えた時に現れる自分だけの景色を見ることができるはずです。",
+      "start_seconds": 654.04,
+      "end_seconds": 663.92,
+      "id": "7FVhtQk_RgQ-ja-0080",
+      "sequence": 80
+    },
+    {
+      "text": "壊れたら終わりではなく、壊れてもまた続いていく。そのようなメッセージを静かに伝えてくれます。",
+      "start_seconds": 667.6,
+      "end_seconds": 679.04,
+      "id": "7FVhtQk_RgQ-ja-0081",
+      "sequence": 81
+    },
+    {
+      "text": "例えば",
+      "start_seconds": 679.04,
+      "end_seconds": 682.04,
+      "id": "7FVhtQk_RgQ-ja-0082",
+      "sequence": 82
+    },
+    {
+      "text": "思い通りに行かないことがあったとしても、それはあなただけの魅力になると思います。",
+      "start_seconds": 682.639,
+      "end_seconds": 694.32,
+      "id": "7FVhtQk_RgQ-ja-0083",
+      "sequence": 83
+    },
+    {
+      "text": "向き合っている問題は1つではないかもしれません。ただいつしかこの乗り越えた",
+      "start_seconds": 694.88,
+      "end_seconds": 704.839,
+      "id": "7FVhtQk_RgQ-ja-0084",
+      "sequence": 84
+    },
+    {
+      "text": "経験こそがあなただけの景色になることを願っています。[鼻息]",
+      "start_seconds": 704.839,
+      "end_seconds": 712.959,
+      "id": "7FVhtQk_RgQ-ja-0085",
+      "sequence": 85
+    },
+    {
+      "text": "金次という技術をきっかけに自分だけの景色を愛せる人が増えると嬉しいなと思っています。",
+      "start_seconds": 712.959,
+      "end_seconds": 724.72,
+      "id": "7FVhtQk_RgQ-ja-0086",
+      "sequence": 86
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 727.058,
+      "end_seconds": 729.078,
+      "id": "7FVhtQk_RgQ-ja-0087",
+      "sequence": 87
+    }
+  ],
+  "raw_captions": [
+    {
+      "text": "[拍手]",
+      "start_seconds": 5.894,
+      "end_seconds": 7.914
+    },
+    {
+      "text": "皆さんは大切にした器を思いがけず壊して",
+      "start_seconds": 10.759,
+      "end_seconds": 19.560000000000002
+    },
+    {
+      "text": "しまった経験はありませんか?",
+      "start_seconds": 15.679,
+      "end_seconds": 23.16
+    },
+    {
+      "text": "誰にでもあると思います。",
+      "start_seconds": 19.56,
+      "end_seconds": 25.56
+    },
+    {
+      "text": "胸がぎゅっとするような気持ちになります",
+      "start_seconds": 23.16,
+      "end_seconds": 28.519
+    },
+    {
+      "text": "よね。",
+      "start_seconds": 25.56,
+      "end_seconds": 33.0
+    },
+    {
+      "text": "そんなバラバラになった器が元の形に戻り",
+      "start_seconds": 28.519,
+      "end_seconds": 35.879
+    },
+    {
+      "text": "美しく仕上がるととても嬉しいと思います",
+      "start_seconds": 33.0,
+      "end_seconds": 37.84
+    },
+    {
+      "text": "。",
+      "start_seconds": 35.879,
+      "end_seconds": 42.839999999999996
+    },
+    {
+      "text": "壊れた器が再び息を吹き返す。それを可能",
+      "start_seconds": 37.84,
+      "end_seconds": 47.480000000000004
+    },
+    {
+      "text": "にするのが金次です。",
+      "start_seconds": 42.84,
+      "end_seconds": 47.480000000000004
+    },
+    {
+      "text": "金次とは",
+      "start_seconds": 48.64,
+      "end_seconds": 55.64
+    },
+    {
+      "text": "割れたり壊れたりしてしまった器を売るを",
+      "start_seconds": 51.239,
+      "end_seconds": 60.64
+    },
+    {
+      "text": "使って修復し最後に金で仕上げる日本に",
+      "start_seconds": 55.64,
+      "end_seconds": 65.8
+    },
+    {
+      "text": "伝わる伝統的な修復技法です。",
+      "start_seconds": 60.64,
+      "end_seconds": 65.8
+    },
+    {
+      "text": "完全に元通りに戻すのではなく、あえて",
+      "start_seconds": 66.0,
+      "end_seconds": 74.28
+    },
+    {
+      "text": "傷跡を目立たせることで修復跡を見せ、",
+      "start_seconds": 70.0,
+      "end_seconds": 77.479
+    },
+    {
+      "text": "新たな作品として受け入れるところに特徴",
+      "start_seconds": 74.28,
+      "end_seconds": 80.32000000000001
+    },
+    {
+      "text": "があります。",
+      "start_seconds": 77.479,
+      "end_seconds": 80.32
+    },
+    {
+      "text": "金次はうを使って修復していきます。",
+      "start_seconds": 80.799,
+      "end_seconds": 92.399
+    },
+    {
+      "text": "うしとは天然の樹液であるうしの木の樹液",
+      "start_seconds": 86.52,
+      "end_seconds": 95.03999999999999
+    },
+    {
+      "text": "になります。",
+      "start_seconds": 92.399,
+      "end_seconds": 99.84
+    },
+    {
+      "text": "うしは降化するまでに日数を必要とし、",
+      "start_seconds": 95.04,
+      "end_seconds": 102.47900000000001
+    },
+    {
+      "text": "修復にはとても時間のかかる作業となり",
+      "start_seconds": 99.84,
+      "end_seconds": 105.68
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 102.479,
+      "end_seconds": 105.67999999999999
+    },
+    {
+      "text": "金次の工程はこの塗る、待つ、整える。",
+      "start_seconds": 108.719,
+      "end_seconds": 118.28
+    },
+    {
+      "text": "これを何度も繰り返します。",
+      "start_seconds": 114.479,
+      "end_seconds": 122.399
+    },
+    {
+      "text": "そして1つの器を完成させるのに大体2",
+      "start_seconds": 118.28,
+      "end_seconds": 127.2
+    },
+    {
+      "text": "週間から3週間時には数ヶ月かかるものも",
+      "start_seconds": 122.399,
+      "end_seconds": 130.6
+    },
+    {
+      "text": "あります。",
+      "start_seconds": 127.2,
+      "end_seconds": 130.6
+    },
+    {
+      "text": "タパや効率が重視される今の世の中におい",
+      "start_seconds": 132.36,
+      "end_seconds": 140.239
+    },
+    {
+      "text": "てはとても遠回りな時間に感じるかもしれ",
+      "start_seconds": 136.44,
+      "end_seconds": 143.56
+    },
+    {
+      "text": "ません。",
+      "start_seconds": 140.239,
+      "end_seconds": 143.56
+    },
+    {
+      "text": "しかしこの待つ時間が今最も必要な時間な",
+      "start_seconds": 144.599,
+      "end_seconds": 154.48
+    },
+    {
+      "text": "のではないかと私は思います。",
+      "start_seconds": 149.72,
+      "end_seconds": 154.48
+    },
+    {
+      "text": "器と向き合っている時間は自分自身にも",
+      "start_seconds": 155.2,
+      "end_seconds": 163.2
+    },
+    {
+      "text": "向き合う時間にもなっています。",
+      "start_seconds": 158.879,
+      "end_seconds": 169.64
+    },
+    {
+      "text": "修復した傷の傷跡は欠点ではなくその器",
+      "start_seconds": 163.2,
+      "end_seconds": 173.879
+    },
+    {
+      "text": "だけの魅力になっていくのです。",
+      "start_seconds": 169.64,
+      "end_seconds": 176.79999999999998
+    },
+    {
+      "text": "この部分においては",
+      "start_seconds": 173.879,
+      "end_seconds": 179.79999999999998
+    },
+    {
+      "text": "私たちの生き方とも共通する部分があるの",
+      "start_seconds": 176.8,
+      "end_seconds": 183.8
+    },
+    {
+      "text": "ではないのでしょうか。",
+      "start_seconds": 179.8,
+      "end_seconds": 183.8
+    },
+    {
+      "text": "ここに真っ白な器があります。例えば",
+      "start_seconds": 185.48,
+      "end_seconds": 193.35999999999999
+    },
+    {
+      "text": "生まれたばかりの赤ちゃんを例にすると",
+      "start_seconds": 189.959,
+      "end_seconds": 196.56
+    },
+    {
+      "text": "生まれたばかりの赤ちゃんはとっても純粋",
+      "start_seconds": 193.36,
+      "end_seconds": 200.76000000000002
+    },
+    {
+      "text": "で何色にも染まってなくってピュアな存在",
+      "start_seconds": 196.56,
+      "end_seconds": 203.28
+    },
+    {
+      "text": "だと思います。",
+      "start_seconds": 200.76,
+      "end_seconds": 205.879
+    },
+    {
+      "text": "そこから",
+      "start_seconds": 203.28,
+      "end_seconds": 210.2
+    },
+    {
+      "text": "いろんな経験をし学んでいろんな人と",
+      "start_seconds": 205.879,
+      "end_seconds": 213.79899999999998
+    },
+    {
+      "text": "出会うことでそれぞれ個性が生まれてき",
+      "start_seconds": 210.2,
+      "end_seconds": 217.04
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 213.799,
+      "end_seconds": 217.04000000000002
+    },
+    {
+      "text": "修復をしているとその部分は人生にも",
+      "start_seconds": 218.84,
+      "end_seconds": 225.0
+    },
+    {
+      "text": "とても共通する部分があるなと感じること",
+      "start_seconds": 222.28,
+      "end_seconds": 228.2
+    },
+    {
+      "text": "があります。",
+      "start_seconds": 225.0,
+      "end_seconds": 231.959
+    },
+    {
+      "text": "新品の器でも日々の暮らしの中で使うこと",
+      "start_seconds": 228.2,
+      "end_seconds": 233.599
+    },
+    {
+      "text": "で",
+      "start_seconds": 231.959,
+      "end_seconds": 237.28
+    },
+    {
+      "text": "細かな傷がついていったり人にたくさん",
+      "start_seconds": 233.599,
+      "end_seconds": 242.67999999999998
+    },
+    {
+      "text": "触れられることでその器には艶が出て表情",
+      "start_seconds": 237.28,
+      "end_seconds": 245.84
+    },
+    {
+      "text": "が出てきます。",
+      "start_seconds": 242.68,
+      "end_seconds": 248.959
+    },
+    {
+      "text": "そして使っているうちにもし壊れたり割れ",
+      "start_seconds": 245.84,
+      "end_seconds": 252.4
+    },
+    {
+      "text": "たりしてしまっても直して使うこともでき",
+      "start_seconds": 248.959,
+      "end_seconds": 255.31900000000002
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 252.4,
+      "end_seconds": 259.199
+    },
+    {
+      "text": "割れてしまったものも直して使うことで",
+      "start_seconds": 255.319,
+      "end_seconds": 262.88
+    },
+    {
+      "text": "とても愛着を持ってさらに",
+      "start_seconds": 259.199,
+      "end_seconds": 267.56
+    },
+    {
+      "text": "使い続けることができます。",
+      "start_seconds": 262.88,
+      "end_seconds": 267.56
+    },
+    {
+      "text": "私たちも例えば思いがけずトラブルに見舞",
+      "start_seconds": 267.84,
+      "end_seconds": 276.52
+    },
+    {
+      "text": "れたり、困難なことがあったり",
+      "start_seconds": 271.6,
+      "end_seconds": 276.52000000000004
+    },
+    {
+      "text": "時には傷ついてしまうこともあるかもしれ",
+      "start_seconds": 276.919,
+      "end_seconds": 286.15999999999997
+    },
+    {
+      "text": "ません。それを乗り越えてその経験こそが",
+      "start_seconds": 279.32,
+      "end_seconds": 289.44
+    },
+    {
+      "text": "人それぞれの魅力となり個性につがるもの",
+      "start_seconds": 286.16,
+      "end_seconds": 293.88000000000005
+    },
+    {
+      "text": "だと感じます。",
+      "start_seconds": 289.44,
+      "end_seconds": 293.88
+    },
+    {
+      "text": "そもそも次なんですけれども、元々は",
+      "start_seconds": 297.24,
+      "end_seconds": 308.479
+    },
+    {
+      "text": "あ山時代や室町時代に茶の湯の発展と共に",
+      "start_seconds": 302.36,
+      "end_seconds": 311.96000000000004
+    },
+    {
+      "text": "広まりました。",
+      "start_seconds": 308.479,
+      "end_seconds": 318.28
+    },
+    {
+      "text": "ですので本来茶道具骨董品など価値の高い",
+      "start_seconds": 311.96,
+      "end_seconds": 321.919
+    },
+    {
+      "text": "ものに施されたものが多く資金の高い",
+      "start_seconds": 318.28,
+      "end_seconds": 324.4
+    },
+    {
+      "text": "イメージです。",
+      "start_seconds": 321.919,
+      "end_seconds": 328.31899999999996
+    },
+    {
+      "text": "私自身も近次を始めるまでは",
+      "start_seconds": 324.4,
+      "end_seconds": 331.479
+    },
+    {
+      "text": "どこか美術館などで飾られてるものを干渉",
+      "start_seconds": 328.319,
+      "end_seconds": 334.36
+    },
+    {
+      "text": "するだけの少し",
+      "start_seconds": 331.479,
+      "end_seconds": 337.919
+    },
+    {
+      "text": "世界の違うところにあるものだと思ってい",
+      "start_seconds": 334.36,
+      "end_seconds": 341.16
+    },
+    {
+      "text": "ました。",
+      "start_seconds": 337.919,
+      "end_seconds": 342.88
+    },
+    {
+      "text": "ただ",
+      "start_seconds": 341.16,
+      "end_seconds": 346.12
+    },
+    {
+      "text": "自分が大切にしていたマグカップを終わっ",
+      "start_seconds": 342.88,
+      "end_seconds": 348.919
+    },
+    {
+      "text": "てしまってそのショックをどうにかしたい",
+      "start_seconds": 346.12,
+      "end_seconds": 351.0
+    },
+    {
+      "text": "と思い",
+      "start_seconds": 348.919,
+      "end_seconds": 356.44
+    },
+    {
+      "text": "以前より興味のあった金次を始めました。",
+      "start_seconds": 351.0,
+      "end_seconds": 360.28
+    },
+    {
+      "text": "そして自分で直したそのマグカップを使い",
+      "start_seconds": 356.44,
+      "end_seconds": 362.319
+    },
+    {
+      "text": "、",
+      "start_seconds": 360.28,
+      "end_seconds": 366.88
+    },
+    {
+      "text": "暮らしの中で使っていくうちに",
+      "start_seconds": 362.319,
+      "end_seconds": 370.88
+    },
+    {
+      "text": "骨董品や価値の高いものだけではなく、",
+      "start_seconds": 366.88,
+      "end_seconds": 374.599
+    },
+    {
+      "text": "身近にあるものにこそ金継ぎをして日々の",
+      "start_seconds": 370.88,
+      "end_seconds": 378.319
+    },
+    {
+      "text": "暮らしの中で使うことの大切さ、豊かさに",
+      "start_seconds": 374.599,
+      "end_seconds": 382.56
+    },
+    {
+      "text": "気がつくことができました。",
+      "start_seconds": 378.319,
+      "end_seconds": 386.12
+    },
+    {
+      "text": "また海外でデモンストレーションと",
+      "start_seconds": 382.56,
+      "end_seconds": 389.8
+    },
+    {
+      "text": "ワークショップをした時にその伝統を超え",
+      "start_seconds": 386.12,
+      "end_seconds": 394.88
+    },
+    {
+      "text": "た気づきも得ることができました。",
+      "start_seconds": 389.8,
+      "end_seconds": 394.88
+    },
+    {
+      "text": "海外で参加した方が持ってかれたのは",
+      "start_seconds": 394.919,
+      "end_seconds": 402.84
+    },
+    {
+      "text": "いわゆる価値の高いものではなくその本人",
+      "start_seconds": 398.28,
+      "end_seconds": 406.08
+    },
+    {
+      "text": "にとって大切なものというものが主でした",
+      "start_seconds": 402.84,
+      "end_seconds": 408.88
+    },
+    {
+      "text": "。",
+      "start_seconds": 406.08,
+      "end_seconds": 410.52
+    },
+    {
+      "text": "例えば",
+      "start_seconds": 408.88,
+      "end_seconds": 413.88
+    },
+    {
+      "text": "日常を使っているマグカップだったり、",
+      "start_seconds": 410.52,
+      "end_seconds": 419.12
+    },
+    {
+      "text": "キャラクターデザインのお皿、その他自分",
+      "start_seconds": 413.88,
+      "end_seconds": 423.12
+    },
+    {
+      "text": "のお子さんが作ったオブジェだったりする",
+      "start_seconds": 419.12,
+      "end_seconds": 426.12
+    },
+    {
+      "text": "ものも多かったです。",
+      "start_seconds": 423.12,
+      "end_seconds": 429.72
+    },
+    {
+      "text": "他人から見ると何の価値もないようなもの",
+      "start_seconds": 426.12,
+      "end_seconds": 431.479
+    },
+    {
+      "text": "にも",
+      "start_seconds": 429.72,
+      "end_seconds": 435.72
+    },
+    {
+      "text": "本人にとってはとても掛け替えのない大切",
+      "start_seconds": 431.479,
+      "end_seconds": 438.87899999999996
+    },
+    {
+      "text": "なものだったんですね。",
+      "start_seconds": 435.72,
+      "end_seconds": 444.03900000000004
+    },
+    {
+      "text": "そこで大切なものというのは外側から与え",
+      "start_seconds": 438.879,
+      "end_seconds": 448.12
+    },
+    {
+      "text": "られる価値ではなく自分の内側にある価値",
+      "start_seconds": 444.039,
+      "end_seconds": 452.36
+    },
+    {
+      "text": "なんだと思いました。",
+      "start_seconds": 448.12,
+      "end_seconds": 452.36
+    },
+    {
+      "text": "そこで",
+      "start_seconds": 453.4,
+      "end_seconds": 456.599
+    },
+    {
+      "text": "そこにあった思いは",
+      "start_seconds": 456.8,
+      "end_seconds": 464.919
+    },
+    {
+      "text": "高価なものだから直すという考えではなく",
+      "start_seconds": 459.96,
+      "end_seconds": 470.12
+    },
+    {
+      "text": "自分の大切なものだから直して使い続ける",
+      "start_seconds": 464.919,
+      "end_seconds": 472.08
+    },
+    {
+      "text": "という",
+      "start_seconds": 470.12,
+      "end_seconds": 475.8
+    },
+    {
+      "text": "考えでした。",
+      "start_seconds": 472.08,
+      "end_seconds": 475.8
+    },
+    {
+      "text": "自分の大事なものを日々使っていくうちに",
+      "start_seconds": 476.4,
+      "end_seconds": 484.71999999999997
+    },
+    {
+      "text": "自分の好きなものに気づくきっかけにも",
+      "start_seconds": 481.4,
+      "end_seconds": 487.479
+    },
+    {
+      "text": "なると思います。",
+      "start_seconds": 484.72,
+      "end_seconds": 491.56
+    },
+    {
+      "text": "私が近次を活動通して伝えたいのはそう",
+      "start_seconds": 487.479,
+      "end_seconds": 493.919
+    },
+    {
+      "text": "いうことなんだっていう風に気づくことも",
+      "start_seconds": 491.56,
+      "end_seconds": 497.479
+    },
+    {
+      "text": "できました。",
+      "start_seconds": 493.919,
+      "end_seconds": 497.479
+    },
+    {
+      "text": "自分にとって大切なものを大切にすると",
+      "start_seconds": 499.08,
+      "end_seconds": 506.19899999999996
+    },
+    {
+      "text": "いうとてもシンプルなことですが、",
+      "start_seconds": 502.479,
+      "end_seconds": 510.44
+    },
+    {
+      "text": "金次する活動において疑法だけでなく伝え",
+      "start_seconds": 506.199,
+      "end_seconds": 515.44
+    },
+    {
+      "text": "続けていきたいことでございます。",
+      "start_seconds": 510.44,
+      "end_seconds": 515.44
+    },
+    {
+      "text": "近次は現代社会への小さな問いかけでも",
+      "start_seconds": 517.12,
+      "end_seconds": 523.599
+    },
+    {
+      "text": "あります。",
+      "start_seconds": 520.24,
+      "end_seconds": 523.599
+    },
+    {
+      "text": "壊れたら捨てる、古くなったら買い換える",
+      "start_seconds": 524.279,
+      "end_seconds": 531.4399999999999
+    },
+    {
+      "text": "という考え方を",
+      "start_seconds": 528.68,
+      "end_seconds": 534.76
+    },
+    {
+      "text": "直して使い続けるという選択を与えてくれ",
+      "start_seconds": 531.44,
+      "end_seconds": 537.9590000000001
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 534.76,
+      "end_seconds": 537.959
+    },
+    {
+      "text": "私が主催している近次教室には",
+      "start_seconds": 538.64,
+      "end_seconds": 546.8
+    },
+    {
+      "text": "60代から80代の日本の高度成長期を",
+      "start_seconds": 542.839,
+      "end_seconds": 549.7600000000001
+    },
+    {
+      "text": "支えてきてくれた生徒さんも多く来て",
+      "start_seconds": 546.8,
+      "end_seconds": 552.04
+    },
+    {
+      "text": "いらっしゃいます。",
+      "start_seconds": 549.76,
+      "end_seconds": 556.68
+    },
+    {
+      "text": "その生徒さんからお聞きするのは",
+      "start_seconds": 552.04,
+      "end_seconds": 556.68
+    },
+    {
+      "text": "物を多く生産し消費することが成長だと",
+      "start_seconds": 556.76,
+      "end_seconds": 565.36
+    },
+    {
+      "text": "教えられてきたけれどもこれからはこれ",
+      "start_seconds": 562.24,
+      "end_seconds": 568.64
+    },
+    {
+      "text": "以上物を増やしたくない",
+      "start_seconds": 565.36,
+      "end_seconds": 571.32
+    },
+    {
+      "text": "今あるものを直して使い続けたいと",
+      "start_seconds": 568.64,
+      "end_seconds": 573.64
+    },
+    {
+      "text": "おっしゃっていたことが印象に残ってい",
+      "start_seconds": 571.32,
+      "end_seconds": 576.36
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 573.64,
+      "end_seconds": 583.36
+    },
+    {
+      "text": "またある子育て世代の参加者の方は",
+      "start_seconds": 576.36,
+      "end_seconds": 586.72
+    },
+    {
+      "text": "大切に扱わないと物は壊れるんだという",
+      "start_seconds": 583.36,
+      "end_seconds": 589.6800000000001
+    },
+    {
+      "text": "ことを伝えたいためにプラスチックでは",
+      "start_seconds": 586.72,
+      "end_seconds": 591.2
+    },
+    {
+      "text": "なく",
+      "start_seconds": 589.68,
+      "end_seconds": 594.3599999999999
+    },
+    {
+      "text": "ちゃんと割れる当時期のお茶碗を使わせて",
+      "start_seconds": 591.2,
+      "end_seconds": 599.519
+    },
+    {
+      "text": "いる。そしてもし割れてしまっても",
+      "start_seconds": 594.36,
+      "end_seconds": 602.12
+    },
+    {
+      "text": "直して使い続けることができるということ",
+      "start_seconds": 599.519,
+      "end_seconds": 607.32
+    },
+    {
+      "text": "を教えたいとおっしゃっていました。",
+      "start_seconds": 602.12,
+      "end_seconds": 607.32
+    },
+    {
+      "text": "大量生産、大量消費が当たり前の世の中に",
+      "start_seconds": 607.6,
+      "end_seconds": 613.48
+    },
+    {
+      "text": "おいて",
+      "start_seconds": 611.48,
+      "end_seconds": 615.72
+    },
+    {
+      "text": "金次は",
+      "start_seconds": 613.48,
+      "end_seconds": 619.9200000000001
+    },
+    {
+      "text": "壊れたり割れたりしても直して使い続ける",
+      "start_seconds": 615.72,
+      "end_seconds": 623.44
+    },
+    {
+      "text": "ことができるという新たな価値観を教えて",
+      "start_seconds": 619.92,
+      "end_seconds": 626.88
+    },
+    {
+      "text": "くれます。",
+      "start_seconds": 623.44,
+      "end_seconds": 626.8800000000001
+    },
+    {
+      "text": "近で修復された傷跡のことを景色と呼び",
+      "start_seconds": 629.519,
+      "end_seconds": 636.16
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 633.959,
+      "end_seconds": 640.0
+    },
+    {
+      "text": "金継ぎする前の景色とは全くまた違った",
+      "start_seconds": 636.16,
+      "end_seconds": 643.8389999999999
+    },
+    {
+      "text": "ものになってしまいますが、それは新たな",
+      "start_seconds": 640.0,
+      "end_seconds": 649.639
+    },
+    {
+      "text": "命を吹き返したようにその器だけの唯一無",
+      "start_seconds": 643.839,
+      "end_seconds": 654.0400000000001
+    },
+    {
+      "text": "の輝きを増します。",
+      "start_seconds": 649.639,
+      "end_seconds": 658.36
+    },
+    {
+      "text": "私たちも何かを乗り越えた時に現れる自分",
+      "start_seconds": 654.04,
+      "end_seconds": 663.92
+    },
+    {
+      "text": "だけの景色を見ることができるはずです。",
+      "start_seconds": 658.36,
+      "end_seconds": 663.92
+    },
+    {
+      "text": "壊れたら終わりではなく、壊れてもまた",
+      "start_seconds": 667.6,
+      "end_seconds": 676.0
+    },
+    {
+      "text": "続いていく。そのようなメッセージを静か",
+      "start_seconds": 672.519,
+      "end_seconds": 679.04
+    },
+    {
+      "text": "に伝えてくれます。",
+      "start_seconds": 676.0,
+      "end_seconds": 682.04
+    },
+    {
+      "text": "例えば",
+      "start_seconds": 679.04,
+      "end_seconds": 682.04
+    },
+    {
+      "text": "思い通りに行かないことがあったとしても",
+      "start_seconds": 682.639,
+      "end_seconds": 688.0
+    },
+    {
+      "text": "、",
+      "start_seconds": 685.0,
+      "end_seconds": 688.0
+    },
+    {
+      "text": "それはあなただけの魅力になると思います",
+      "start_seconds": 688.16,
+      "end_seconds": 694.3199999999999
+    },
+    {
+      "text": "。",
+      "start_seconds": 691.32,
+      "end_seconds": 694.32
+    },
+    {
+      "text": "向き合っている問題は1つではないかも",
+      "start_seconds": 694.88,
+      "end_seconds": 704.8389999999999
+    },
+    {
+      "text": "しれません。ただいつしかこの乗り越えた",
+      "start_seconds": 698.44,
+      "end_seconds": 709.2790000000001
+    },
+    {
+      "text": "経験こそがあなただけの景色になることを",
+      "start_seconds": 704.839,
+      "end_seconds": 712.9590000000001
+    },
+    {
+      "text": "願っています。[鼻息]",
+      "start_seconds": 709.279,
+      "end_seconds": 717.279
+    },
+    {
+      "text": "金次という技術をきっかけに自分だけの",
+      "start_seconds": 712.959,
+      "end_seconds": 721.3199999999999
+    },
+    {
+      "text": "景色を愛せる人が増えると嬉しいなと思っ",
+      "start_seconds": 717.279,
+      "end_seconds": 724.72
+    },
+    {
+      "text": "ています。",
+      "start_seconds": 721.32,
+      "end_seconds": 724.72
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 727.058,
+      "end_seconds": 729.078
+    }
+  ],
+  "display_captions": [
+    {
+      "text": "[拍手]",
+      "start_seconds": 5.894,
+      "end_seconds": 7.914,
+      "id": "7FVhtQk_RgQ-display-0001",
+      "segment_id": "7FVhtQk_RgQ-ja-0001"
+    },
+    {
+      "text": "皆さんは大切にした器を思いがけず壊して",
+      "start_seconds": 10.759,
+      "end_seconds": 15.679,
+      "id": "7FVhtQk_RgQ-display-0002",
+      "segment_id": "7FVhtQk_RgQ-ja-0002"
+    },
+    {
+      "text": "しまった経験はありませんか?",
+      "start_seconds": 15.679,
+      "end_seconds": 19.56,
+      "id": "7FVhtQk_RgQ-display-0003",
+      "segment_id": "7FVhtQk_RgQ-ja-0002"
+    },
+    {
+      "text": "誰にでもあると思います。",
+      "start_seconds": 19.56,
+      "end_seconds": 23.16,
+      "id": "7FVhtQk_RgQ-display-0004",
+      "segment_id": "7FVhtQk_RgQ-ja-0003"
+    },
+    {
+      "text": "胸がぎゅっとするような気持ちになります",
+      "start_seconds": 23.16,
+      "end_seconds": 25.56,
+      "id": "7FVhtQk_RgQ-display-0005",
+      "segment_id": "7FVhtQk_RgQ-ja-0004"
+    },
+    {
+      "text": "よね。",
+      "start_seconds": 25.56,
+      "end_seconds": 28.519,
+      "id": "7FVhtQk_RgQ-display-0006",
+      "segment_id": "7FVhtQk_RgQ-ja-0004"
+    },
+    {
+      "text": "そんなバラバラになった器が元の形に戻り",
+      "start_seconds": 28.519,
+      "end_seconds": 33.0,
+      "id": "7FVhtQk_RgQ-display-0007",
+      "segment_id": "7FVhtQk_RgQ-ja-0005"
+    },
+    {
+      "text": "美しく仕上がるととても嬉しいと思います",
+      "start_seconds": 33.0,
+      "end_seconds": 35.879,
+      "id": "7FVhtQk_RgQ-display-0008",
+      "segment_id": "7FVhtQk_RgQ-ja-0005"
+    },
+    {
+      "text": "。",
+      "start_seconds": 35.879,
+      "end_seconds": 37.84,
+      "id": "7FVhtQk_RgQ-display-0009",
+      "segment_id": "7FVhtQk_RgQ-ja-0005"
+    },
+    {
+      "text": "壊れた器が再び息を吹き返す。それを可能",
+      "start_seconds": 37.84,
+      "end_seconds": 42.84,
+      "id": "7FVhtQk_RgQ-display-0010",
+      "segment_id": "7FVhtQk_RgQ-ja-0006"
+    },
+    {
+      "text": "にするのが金次です。",
+      "start_seconds": 42.84,
+      "end_seconds": 47.480000000000004,
+      "id": "7FVhtQk_RgQ-display-0011",
+      "segment_id": "7FVhtQk_RgQ-ja-0006"
+    },
+    {
+      "text": "金次とは",
+      "start_seconds": 48.64,
+      "end_seconds": 51.239,
+      "id": "7FVhtQk_RgQ-display-0012",
+      "segment_id": "7FVhtQk_RgQ-ja-0007"
+    },
+    {
+      "text": "割れたり壊れたりしてしまった器を売るを",
+      "start_seconds": 51.239,
+      "end_seconds": 55.64,
+      "id": "7FVhtQk_RgQ-display-0013",
+      "segment_id": "7FVhtQk_RgQ-ja-0007"
+    },
+    {
+      "text": "使って修復し最後に金で仕上げる日本に",
+      "start_seconds": 55.64,
+      "end_seconds": 60.64,
+      "id": "7FVhtQk_RgQ-display-0014",
+      "segment_id": "7FVhtQk_RgQ-ja-0007"
+    },
+    {
+      "text": "伝わる伝統的な修復技法です。",
+      "start_seconds": 60.64,
+      "end_seconds": 65.8,
+      "id": "7FVhtQk_RgQ-display-0015",
+      "segment_id": "7FVhtQk_RgQ-ja-0008"
+    },
+    {
+      "text": "完全に元通りに戻すのではなく、あえて",
+      "start_seconds": 66.0,
+      "end_seconds": 70.0,
+      "id": "7FVhtQk_RgQ-display-0016",
+      "segment_id": "7FVhtQk_RgQ-ja-0009"
+    },
+    {
+      "text": "傷跡を目立たせることで修復跡を見せ、",
+      "start_seconds": 70.0,
+      "end_seconds": 74.28,
+      "id": "7FVhtQk_RgQ-display-0017",
+      "segment_id": "7FVhtQk_RgQ-ja-0009"
+    },
+    {
+      "text": "新たな作品として受け入れるところに特徴",
+      "start_seconds": 74.28,
+      "end_seconds": 77.479,
+      "id": "7FVhtQk_RgQ-display-0018",
+      "segment_id": "7FVhtQk_RgQ-ja-0009"
+    },
+    {
+      "text": "があります。",
+      "start_seconds": 77.479,
+      "end_seconds": 80.32,
+      "id": "7FVhtQk_RgQ-display-0019",
+      "segment_id": "7FVhtQk_RgQ-ja-0010"
+    },
+    {
+      "text": "金次はうを使って修復していきます。",
+      "start_seconds": 80.799,
+      "end_seconds": 86.52,
+      "id": "7FVhtQk_RgQ-display-0020",
+      "segment_id": "7FVhtQk_RgQ-ja-0011"
+    },
+    {
+      "text": "うしとは天然の樹液であるうしの木の樹液",
+      "start_seconds": 86.52,
+      "end_seconds": 92.399,
+      "id": "7FVhtQk_RgQ-display-0021",
+      "segment_id": "7FVhtQk_RgQ-ja-0012"
+    },
+    {
+      "text": "になります。",
+      "start_seconds": 92.399,
+      "end_seconds": 95.04,
+      "id": "7FVhtQk_RgQ-display-0022",
+      "segment_id": "7FVhtQk_RgQ-ja-0012"
+    },
+    {
+      "text": "うしは降化するまでに日数を必要とし、",
+      "start_seconds": 95.04,
+      "end_seconds": 99.84,
+      "id": "7FVhtQk_RgQ-display-0023",
+      "segment_id": "7FVhtQk_RgQ-ja-0013"
+    },
+    {
+      "text": "修復にはとても時間のかかる作業となり",
+      "start_seconds": 99.84,
+      "end_seconds": 102.479,
+      "id": "7FVhtQk_RgQ-display-0024",
+      "segment_id": "7FVhtQk_RgQ-ja-0013"
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 102.479,
+      "end_seconds": 105.67999999999999,
+      "id": "7FVhtQk_RgQ-display-0025",
+      "segment_id": "7FVhtQk_RgQ-ja-0013"
+    },
+    {
+      "text": "金次の工程はこの塗る、待つ、整える。",
+      "start_seconds": 108.719,
+      "end_seconds": 114.479,
+      "id": "7FVhtQk_RgQ-display-0026",
+      "segment_id": "7FVhtQk_RgQ-ja-0014"
+    },
+    {
+      "text": "これを何度も繰り返します。",
+      "start_seconds": 114.479,
+      "end_seconds": 118.28,
+      "id": "7FVhtQk_RgQ-display-0027",
+      "segment_id": "7FVhtQk_RgQ-ja-0015"
+    },
+    {
+      "text": "そして1つの器を完成させるのに大体2",
+      "start_seconds": 118.28,
+      "end_seconds": 122.399,
+      "id": "7FVhtQk_RgQ-display-0028",
+      "segment_id": "7FVhtQk_RgQ-ja-0016"
+    },
+    {
+      "text": "週間から3週間時には数ヶ月かかるものも",
+      "start_seconds": 122.399,
+      "end_seconds": 127.2,
+      "id": "7FVhtQk_RgQ-display-0029",
+      "segment_id": "7FVhtQk_RgQ-ja-0016"
+    },
+    {
+      "text": "あります。",
+      "start_seconds": 127.2,
+      "end_seconds": 130.6,
+      "id": "7FVhtQk_RgQ-display-0030",
+      "segment_id": "7FVhtQk_RgQ-ja-0017"
+    },
+    {
+      "text": "タパや効率が重視される今の世の中におい",
+      "start_seconds": 132.36,
+      "end_seconds": 136.44,
+      "id": "7FVhtQk_RgQ-display-0031",
+      "segment_id": "7FVhtQk_RgQ-ja-0018"
+    },
+    {
+      "text": "てはとても遠回りな時間に感じるかもしれ",
+      "start_seconds": 136.44,
+      "end_seconds": 140.239,
+      "id": "7FVhtQk_RgQ-display-0032",
+      "segment_id": "7FVhtQk_RgQ-ja-0018"
+    },
+    {
+      "text": "ません。",
+      "start_seconds": 140.239,
+      "end_seconds": 143.56,
+      "id": "7FVhtQk_RgQ-display-0033",
+      "segment_id": "7FVhtQk_RgQ-ja-0018"
+    },
+    {
+      "text": "しかしこの待つ時間が今最も必要な時間な",
+      "start_seconds": 144.599,
+      "end_seconds": 149.72,
+      "id": "7FVhtQk_RgQ-display-0034",
+      "segment_id": "7FVhtQk_RgQ-ja-0019"
+    },
+    {
+      "text": "のではないかと私は思います。",
+      "start_seconds": 149.72,
+      "end_seconds": 154.48,
+      "id": "7FVhtQk_RgQ-display-0035",
+      "segment_id": "7FVhtQk_RgQ-ja-0019"
+    },
+    {
+      "text": "器と向き合っている時間は自分自身にも",
+      "start_seconds": 155.2,
+      "end_seconds": 158.879,
+      "id": "7FVhtQk_RgQ-display-0036",
+      "segment_id": "7FVhtQk_RgQ-ja-0020"
+    },
+    {
+      "text": "向き合う時間にもなっています。",
+      "start_seconds": 158.879,
+      "end_seconds": 163.2,
+      "id": "7FVhtQk_RgQ-display-0037",
+      "segment_id": "7FVhtQk_RgQ-ja-0020"
+    },
+    {
+      "text": "修復した傷の傷跡は欠点ではなくその器",
+      "start_seconds": 163.2,
+      "end_seconds": 169.64,
+      "id": "7FVhtQk_RgQ-display-0038",
+      "segment_id": "7FVhtQk_RgQ-ja-0021"
+    },
+    {
+      "text": "だけの魅力になっていくのです。",
+      "start_seconds": 169.64,
+      "end_seconds": 173.879,
+      "id": "7FVhtQk_RgQ-display-0039",
+      "segment_id": "7FVhtQk_RgQ-ja-0021"
+    },
+    {
+      "text": "この部分においては",
+      "start_seconds": 173.879,
+      "end_seconds": 176.8,
+      "id": "7FVhtQk_RgQ-display-0040",
+      "segment_id": "7FVhtQk_RgQ-ja-0022"
+    },
+    {
+      "text": "私たちの生き方とも共通する部分があるの",
+      "start_seconds": 176.8,
+      "end_seconds": 179.8,
+      "id": "7FVhtQk_RgQ-display-0041",
+      "segment_id": "7FVhtQk_RgQ-ja-0022"
+    },
+    {
+      "text": "ではないのでしょうか。",
+      "start_seconds": 179.8,
+      "end_seconds": 183.8,
+      "id": "7FVhtQk_RgQ-display-0042",
+      "segment_id": "7FVhtQk_RgQ-ja-0022"
+    },
+    {
+      "text": "ここに真っ白な器があります。例えば",
+      "start_seconds": 185.48,
+      "end_seconds": 189.959,
+      "id": "7FVhtQk_RgQ-display-0043",
+      "segment_id": "7FVhtQk_RgQ-ja-0023"
+    },
+    {
+      "text": "生まれたばかりの赤ちゃんを例にすると",
+      "start_seconds": 189.959,
+      "end_seconds": 193.36,
+      "id": "7FVhtQk_RgQ-display-0044",
+      "segment_id": "7FVhtQk_RgQ-ja-0023"
+    },
+    {
+      "text": "生まれたばかりの赤ちゃんはとっても純粋",
+      "start_seconds": 193.36,
+      "end_seconds": 196.56,
+      "id": "7FVhtQk_RgQ-display-0045",
+      "segment_id": "7FVhtQk_RgQ-ja-0023"
+    },
+    {
+      "text": "で何色にも染まってなくってピュアな存在",
+      "start_seconds": 196.56,
+      "end_seconds": 200.76,
+      "id": "7FVhtQk_RgQ-display-0046",
+      "segment_id": "7FVhtQk_RgQ-ja-0024"
+    },
+    {
+      "text": "だと思います。",
+      "start_seconds": 200.76,
+      "end_seconds": 203.28,
+      "id": "7FVhtQk_RgQ-display-0047",
+      "segment_id": "7FVhtQk_RgQ-ja-0024"
+    },
+    {
+      "text": "そこから",
+      "start_seconds": 203.28,
+      "end_seconds": 205.879,
+      "id": "7FVhtQk_RgQ-display-0048",
+      "segment_id": "7FVhtQk_RgQ-ja-0025"
+    },
+    {
+      "text": "いろんな経験をし学んでいろんな人と",
+      "start_seconds": 205.879,
+      "end_seconds": 210.2,
+      "id": "7FVhtQk_RgQ-display-0049",
+      "segment_id": "7FVhtQk_RgQ-ja-0025"
+    },
+    {
+      "text": "出会うことでそれぞれ個性が生まれてき",
+      "start_seconds": 210.2,
+      "end_seconds": 213.799,
+      "id": "7FVhtQk_RgQ-display-0050",
+      "segment_id": "7FVhtQk_RgQ-ja-0025"
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 213.799,
+      "end_seconds": 217.04000000000002,
+      "id": "7FVhtQk_RgQ-display-0051",
+      "segment_id": "7FVhtQk_RgQ-ja-0026"
+    },
+    {
+      "text": "修復をしているとその部分は人生にも",
+      "start_seconds": 218.84,
+      "end_seconds": 222.28,
+      "id": "7FVhtQk_RgQ-display-0052",
+      "segment_id": "7FVhtQk_RgQ-ja-0027"
+    },
+    {
+      "text": "とても共通する部分があるなと感じること",
+      "start_seconds": 222.28,
+      "end_seconds": 225.0,
+      "id": "7FVhtQk_RgQ-display-0053",
+      "segment_id": "7FVhtQk_RgQ-ja-0027"
+    },
+    {
+      "text": "があります。",
+      "start_seconds": 225.0,
+      "end_seconds": 228.2,
+      "id": "7FVhtQk_RgQ-display-0054",
+      "segment_id": "7FVhtQk_RgQ-ja-0027"
+    },
+    {
+      "text": "新品の器でも日々の暮らしの中で使うこと",
+      "start_seconds": 228.2,
+      "end_seconds": 231.959,
+      "id": "7FVhtQk_RgQ-display-0055",
+      "segment_id": "7FVhtQk_RgQ-ja-0028"
+    },
+    {
+      "text": "で",
+      "start_seconds": 231.959,
+      "end_seconds": 233.599,
+      "id": "7FVhtQk_RgQ-display-0056",
+      "segment_id": "7FVhtQk_RgQ-ja-0028"
+    },
+    {
+      "text": "細かな傷がついていったり人にたくさん",
+      "start_seconds": 233.599,
+      "end_seconds": 237.28,
+      "id": "7FVhtQk_RgQ-display-0057",
+      "segment_id": "7FVhtQk_RgQ-ja-0028"
+    },
+    {
+      "text": "触れられることでその器には艶が出て表情",
+      "start_seconds": 237.28,
+      "end_seconds": 242.68,
+      "id": "7FVhtQk_RgQ-display-0058",
+      "segment_id": "7FVhtQk_RgQ-ja-0029"
+    },
+    {
+      "text": "が出てきます。",
+      "start_seconds": 242.68,
+      "end_seconds": 245.84,
+      "id": "7FVhtQk_RgQ-display-0059",
+      "segment_id": "7FVhtQk_RgQ-ja-0029"
+    },
+    {
+      "text": "そして使っているうちにもし壊れたり割れ",
+      "start_seconds": 245.84,
+      "end_seconds": 248.959,
+      "id": "7FVhtQk_RgQ-display-0060",
+      "segment_id": "7FVhtQk_RgQ-ja-0030"
+    },
+    {
+      "text": "たりしてしまっても直して使うこともでき",
+      "start_seconds": 248.959,
+      "end_seconds": 252.4,
+      "id": "7FVhtQk_RgQ-display-0061",
+      "segment_id": "7FVhtQk_RgQ-ja-0030"
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 252.4,
+      "end_seconds": 255.319,
+      "id": "7FVhtQk_RgQ-display-0062",
+      "segment_id": "7FVhtQk_RgQ-ja-0030"
+    },
+    {
+      "text": "割れてしまったものも直して使うことで",
+      "start_seconds": 255.319,
+      "end_seconds": 259.199,
+      "id": "7FVhtQk_RgQ-display-0063",
+      "segment_id": "7FVhtQk_RgQ-ja-0031"
+    },
+    {
+      "text": "とても愛着を持ってさらに",
+      "start_seconds": 259.199,
+      "end_seconds": 262.88,
+      "id": "7FVhtQk_RgQ-display-0064",
+      "segment_id": "7FVhtQk_RgQ-ja-0031"
+    },
+    {
+      "text": "使い続けることができます。",
+      "start_seconds": 262.88,
+      "end_seconds": 267.56,
+      "id": "7FVhtQk_RgQ-display-0065",
+      "segment_id": "7FVhtQk_RgQ-ja-0032"
+    },
+    {
+      "text": "私たちも例えば思いがけずトラブルに見舞",
+      "start_seconds": 267.84,
+      "end_seconds": 271.6,
+      "id": "7FVhtQk_RgQ-display-0066",
+      "segment_id": "7FVhtQk_RgQ-ja-0033"
+    },
+    {
+      "text": "れたり、困難なことがあったり",
+      "start_seconds": 271.6,
+      "end_seconds": 276.52000000000004,
+      "id": "7FVhtQk_RgQ-display-0067",
+      "segment_id": "7FVhtQk_RgQ-ja-0033"
+    },
+    {
+      "text": "時には傷ついてしまうこともあるかもしれ",
+      "start_seconds": 276.919,
+      "end_seconds": 279.32,
+      "id": "7FVhtQk_RgQ-display-0068",
+      "segment_id": "7FVhtQk_RgQ-ja-0033"
+    },
+    {
+      "text": "ません。それを乗り越えてその経験こそが",
+      "start_seconds": 279.32,
+      "end_seconds": 286.16,
+      "id": "7FVhtQk_RgQ-display-0069",
+      "segment_id": "7FVhtQk_RgQ-ja-0034"
+    },
+    {
+      "text": "人それぞれの魅力となり個性につがるもの",
+      "start_seconds": 286.16,
+      "end_seconds": 289.44,
+      "id": "7FVhtQk_RgQ-display-0070",
+      "segment_id": "7FVhtQk_RgQ-ja-0034"
+    },
+    {
+      "text": "だと感じます。",
+      "start_seconds": 289.44,
+      "end_seconds": 293.88,
+      "id": "7FVhtQk_RgQ-display-0071",
+      "segment_id": "7FVhtQk_RgQ-ja-0035"
+    },
+    {
+      "text": "そもそも次なんですけれども、元々は",
+      "start_seconds": 297.24,
+      "end_seconds": 302.36,
+      "id": "7FVhtQk_RgQ-display-0072",
+      "segment_id": "7FVhtQk_RgQ-ja-0036"
+    },
+    {
+      "text": "あ山時代や室町時代に茶の湯の発展と共に",
+      "start_seconds": 302.36,
+      "end_seconds": 308.479,
+      "id": "7FVhtQk_RgQ-display-0073",
+      "segment_id": "7FVhtQk_RgQ-ja-0036"
+    },
+    {
+      "text": "広まりました。",
+      "start_seconds": 308.479,
+      "end_seconds": 311.96,
+      "id": "7FVhtQk_RgQ-display-0074",
+      "segment_id": "7FVhtQk_RgQ-ja-0037"
+    },
+    {
+      "text": "ですので本来茶道具骨董品など価値の高い",
+      "start_seconds": 311.96,
+      "end_seconds": 318.28,
+      "id": "7FVhtQk_RgQ-display-0075",
+      "segment_id": "7FVhtQk_RgQ-ja-0038"
+    },
+    {
+      "text": "ものに施されたものが多く資金の高い",
+      "start_seconds": 318.28,
+      "end_seconds": 321.919,
+      "id": "7FVhtQk_RgQ-display-0076",
+      "segment_id": "7FVhtQk_RgQ-ja-0038"
+    },
+    {
+      "text": "イメージです。",
+      "start_seconds": 321.919,
+      "end_seconds": 324.4,
+      "id": "7FVhtQk_RgQ-display-0077",
+      "segment_id": "7FVhtQk_RgQ-ja-0039"
+    },
+    {
+      "text": "私自身も近次を始めるまでは",
+      "start_seconds": 324.4,
+      "end_seconds": 328.319,
+      "id": "7FVhtQk_RgQ-display-0078",
+      "segment_id": "7FVhtQk_RgQ-ja-0040"
+    },
+    {
+      "text": "どこか美術館などで飾られてるものを干渉",
+      "start_seconds": 328.319,
+      "end_seconds": 331.479,
+      "id": "7FVhtQk_RgQ-display-0079",
+      "segment_id": "7FVhtQk_RgQ-ja-0040"
+    },
+    {
+      "text": "するだけの少し",
+      "start_seconds": 331.479,
+      "end_seconds": 334.36,
+      "id": "7FVhtQk_RgQ-display-0080",
+      "segment_id": "7FVhtQk_RgQ-ja-0040"
+    },
+    {
+      "text": "世界の違うところにあるものだと思ってい",
+      "start_seconds": 334.36,
+      "end_seconds": 337.919,
+      "id": "7FVhtQk_RgQ-display-0081",
+      "segment_id": "7FVhtQk_RgQ-ja-0041"
+    },
+    {
+      "text": "ました。",
+      "start_seconds": 337.919,
+      "end_seconds": 341.16,
+      "id": "7FVhtQk_RgQ-display-0082",
+      "segment_id": "7FVhtQk_RgQ-ja-0041"
+    },
+    {
+      "text": "ただ",
+      "start_seconds": 341.16,
+      "end_seconds": 342.88,
+      "id": "7FVhtQk_RgQ-display-0083",
+      "segment_id": "7FVhtQk_RgQ-ja-0042"
+    },
+    {
+      "text": "自分が大切にしていたマグカップを終わっ",
+      "start_seconds": 342.88,
+      "end_seconds": 346.12,
+      "id": "7FVhtQk_RgQ-display-0084",
+      "segment_id": "7FVhtQk_RgQ-ja-0042"
+    },
+    {
+      "text": "てしまってそのショックをどうにかしたい",
+      "start_seconds": 346.12,
+      "end_seconds": 348.919,
+      "id": "7FVhtQk_RgQ-display-0085",
+      "segment_id": "7FVhtQk_RgQ-ja-0042"
+    },
+    {
+      "text": "と思い",
+      "start_seconds": 348.919,
+      "end_seconds": 351.0,
+      "id": "7FVhtQk_RgQ-display-0086",
+      "segment_id": "7FVhtQk_RgQ-ja-0042"
+    },
+    {
+      "text": "以前より興味のあった金次を始めました。",
+      "start_seconds": 351.0,
+      "end_seconds": 356.44,
+      "id": "7FVhtQk_RgQ-display-0087",
+      "segment_id": "7FVhtQk_RgQ-ja-0043"
+    },
+    {
+      "text": "そして自分で直したそのマグカップを使い",
+      "start_seconds": 356.44,
+      "end_seconds": 360.28,
+      "id": "7FVhtQk_RgQ-display-0088",
+      "segment_id": "7FVhtQk_RgQ-ja-0044"
+    },
+    {
+      "text": "、",
+      "start_seconds": 360.28,
+      "end_seconds": 362.319,
+      "id": "7FVhtQk_RgQ-display-0089",
+      "segment_id": "7FVhtQk_RgQ-ja-0044"
+    },
+    {
+      "text": "暮らしの中で使っていくうちに",
+      "start_seconds": 362.319,
+      "end_seconds": 366.88,
+      "id": "7FVhtQk_RgQ-display-0090",
+      "segment_id": "7FVhtQk_RgQ-ja-0044"
+    },
+    {
+      "text": "骨董品や価値の高いものだけではなく、",
+      "start_seconds": 366.88,
+      "end_seconds": 370.88,
+      "id": "7FVhtQk_RgQ-display-0091",
+      "segment_id": "7FVhtQk_RgQ-ja-0045"
+    },
+    {
+      "text": "身近にあるものにこそ金継ぎをして日々の",
+      "start_seconds": 370.88,
+      "end_seconds": 374.599,
+      "id": "7FVhtQk_RgQ-display-0092",
+      "segment_id": "7FVhtQk_RgQ-ja-0045"
+    },
+    {
+      "text": "暮らしの中で使うことの大切さ、豊かさに",
+      "start_seconds": 374.599,
+      "end_seconds": 378.319,
+      "id": "7FVhtQk_RgQ-display-0093",
+      "segment_id": "7FVhtQk_RgQ-ja-0045"
+    },
+    {
+      "text": "気がつくことができました。",
+      "start_seconds": 378.319,
+      "end_seconds": 382.56,
+      "id": "7FVhtQk_RgQ-display-0094",
+      "segment_id": "7FVhtQk_RgQ-ja-0046"
+    },
+    {
+      "text": "また海外でデモンストレーションと",
+      "start_seconds": 382.56,
+      "end_seconds": 386.12,
+      "id": "7FVhtQk_RgQ-display-0095",
+      "segment_id": "7FVhtQk_RgQ-ja-0047"
+    },
+    {
+      "text": "ワークショップをした時にその伝統を超え",
+      "start_seconds": 386.12,
+      "end_seconds": 389.8,
+      "id": "7FVhtQk_RgQ-display-0096",
+      "segment_id": "7FVhtQk_RgQ-ja-0047"
+    },
+    {
+      "text": "た気づきも得ることができました。",
+      "start_seconds": 389.8,
+      "end_seconds": 394.88,
+      "id": "7FVhtQk_RgQ-display-0097",
+      "segment_id": "7FVhtQk_RgQ-ja-0048"
+    },
+    {
+      "text": "海外で参加した方が持ってかれたのは",
+      "start_seconds": 394.919,
+      "end_seconds": 398.28,
+      "id": "7FVhtQk_RgQ-display-0098",
+      "segment_id": "7FVhtQk_RgQ-ja-0049"
+    },
+    {
+      "text": "いわゆる価値の高いものではなくその本人",
+      "start_seconds": 398.28,
+      "end_seconds": 402.84,
+      "id": "7FVhtQk_RgQ-display-0099",
+      "segment_id": "7FVhtQk_RgQ-ja-0049"
+    },
+    {
+      "text": "にとって大切なものというものが主でした",
+      "start_seconds": 402.84,
+      "end_seconds": 406.08,
+      "id": "7FVhtQk_RgQ-display-0100",
+      "segment_id": "7FVhtQk_RgQ-ja-0049"
+    },
+    {
+      "text": "。",
+      "start_seconds": 406.08,
+      "end_seconds": 408.88,
+      "id": "7FVhtQk_RgQ-display-0101",
+      "segment_id": "7FVhtQk_RgQ-ja-0050"
+    },
+    {
+      "text": "例えば",
+      "start_seconds": 408.88,
+      "end_seconds": 410.52,
+      "id": "7FVhtQk_RgQ-display-0102",
+      "segment_id": "7FVhtQk_RgQ-ja-0051"
+    },
+    {
+      "text": "日常を使っているマグカップだったり、",
+      "start_seconds": 410.52,
+      "end_seconds": 413.88,
+      "id": "7FVhtQk_RgQ-display-0103",
+      "segment_id": "7FVhtQk_RgQ-ja-0051"
+    },
+    {
+      "text": "キャラクターデザインのお皿、その他自分",
+      "start_seconds": 413.88,
+      "end_seconds": 419.12,
+      "id": "7FVhtQk_RgQ-display-0104",
+      "segment_id": "7FVhtQk_RgQ-ja-0051"
+    },
+    {
+      "text": "のお子さんが作ったオブジェだったりする",
+      "start_seconds": 419.12,
+      "end_seconds": 423.12,
+      "id": "7FVhtQk_RgQ-display-0105",
+      "segment_id": "7FVhtQk_RgQ-ja-0052"
+    },
+    {
+      "text": "ものも多かったです。",
+      "start_seconds": 423.12,
+      "end_seconds": 426.12,
+      "id": "7FVhtQk_RgQ-display-0106",
+      "segment_id": "7FVhtQk_RgQ-ja-0052"
+    },
+    {
+      "text": "他人から見ると何の価値もないようなもの",
+      "start_seconds": 426.12,
+      "end_seconds": 429.72,
+      "id": "7FVhtQk_RgQ-display-0107",
+      "segment_id": "7FVhtQk_RgQ-ja-0053"
+    },
+    {
+      "text": "にも",
+      "start_seconds": 429.72,
+      "end_seconds": 431.479,
+      "id": "7FVhtQk_RgQ-display-0108",
+      "segment_id": "7FVhtQk_RgQ-ja-0053"
+    },
+    {
+      "text": "本人にとってはとても掛け替えのない大切",
+      "start_seconds": 431.479,
+      "end_seconds": 435.72,
+      "id": "7FVhtQk_RgQ-display-0109",
+      "segment_id": "7FVhtQk_RgQ-ja-0053"
+    },
+    {
+      "text": "なものだったんですね。",
+      "start_seconds": 435.72,
+      "end_seconds": 438.879,
+      "id": "7FVhtQk_RgQ-display-0110",
+      "segment_id": "7FVhtQk_RgQ-ja-0054"
+    },
+    {
+      "text": "そこで大切なものというのは外側から与え",
+      "start_seconds": 438.879,
+      "end_seconds": 444.039,
+      "id": "7FVhtQk_RgQ-display-0111",
+      "segment_id": "7FVhtQk_RgQ-ja-0055"
+    },
+    {
+      "text": "られる価値ではなく自分の内側にある価値",
+      "start_seconds": 444.039,
+      "end_seconds": 448.12,
+      "id": "7FVhtQk_RgQ-display-0112",
+      "segment_id": "7FVhtQk_RgQ-ja-0055"
+    },
+    {
+      "text": "なんだと思いました。",
+      "start_seconds": 448.12,
+      "end_seconds": 452.36,
+      "id": "7FVhtQk_RgQ-display-0113",
+      "segment_id": "7FVhtQk_RgQ-ja-0056"
+    },
+    {
+      "text": "そこで",
+      "start_seconds": 453.4,
+      "end_seconds": 456.599,
+      "id": "7FVhtQk_RgQ-display-0114",
+      "segment_id": "7FVhtQk_RgQ-ja-0057"
+    },
+    {
+      "text": "そこにあった思いは",
+      "start_seconds": 456.8,
+      "end_seconds": 459.96,
+      "id": "7FVhtQk_RgQ-display-0115",
+      "segment_id": "7FVhtQk_RgQ-ja-0057"
+    },
+    {
+      "text": "高価なものだから直すという考えではなく",
+      "start_seconds": 459.96,
+      "end_seconds": 464.919,
+      "id": "7FVhtQk_RgQ-display-0116",
+      "segment_id": "7FVhtQk_RgQ-ja-0057"
+    },
+    {
+      "text": "自分の大切なものだから直して使い続ける",
+      "start_seconds": 464.919,
+      "end_seconds": 470.12,
+      "id": "7FVhtQk_RgQ-display-0117",
+      "segment_id": "7FVhtQk_RgQ-ja-0058"
+    },
+    {
+      "text": "という",
+      "start_seconds": 470.12,
+      "end_seconds": 472.08,
+      "id": "7FVhtQk_RgQ-display-0118",
+      "segment_id": "7FVhtQk_RgQ-ja-0058"
+    },
+    {
+      "text": "考えでした。",
+      "start_seconds": 472.08,
+      "end_seconds": 475.8,
+      "id": "7FVhtQk_RgQ-display-0119",
+      "segment_id": "7FVhtQk_RgQ-ja-0058"
+    },
+    {
+      "text": "自分の大事なものを日々使っていくうちに",
+      "start_seconds": 476.4,
+      "end_seconds": 481.4,
+      "id": "7FVhtQk_RgQ-display-0120",
+      "segment_id": "7FVhtQk_RgQ-ja-0059"
+    },
+    {
+      "text": "自分の好きなものに気づくきっかけにも",
+      "start_seconds": 481.4,
+      "end_seconds": 484.72,
+      "id": "7FVhtQk_RgQ-display-0121",
+      "segment_id": "7FVhtQk_RgQ-ja-0059"
+    },
+    {
+      "text": "なると思います。",
+      "start_seconds": 484.72,
+      "end_seconds": 487.479,
+      "id": "7FVhtQk_RgQ-display-0122",
+      "segment_id": "7FVhtQk_RgQ-ja-0059"
+    },
+    {
+      "text": "私が近次を活動通して伝えたいのはそう",
+      "start_seconds": 487.479,
+      "end_seconds": 491.56,
+      "id": "7FVhtQk_RgQ-display-0123",
+      "segment_id": "7FVhtQk_RgQ-ja-0060"
+    },
+    {
+      "text": "いうことなんだっていう風に気づくことも",
+      "start_seconds": 491.56,
+      "end_seconds": 493.919,
+      "id": "7FVhtQk_RgQ-display-0124",
+      "segment_id": "7FVhtQk_RgQ-ja-0060"
+    },
+    {
+      "text": "できました。",
+      "start_seconds": 493.919,
+      "end_seconds": 497.479,
+      "id": "7FVhtQk_RgQ-display-0125",
+      "segment_id": "7FVhtQk_RgQ-ja-0060"
+    },
+    {
+      "text": "自分にとって大切なものを大切にすると",
+      "start_seconds": 499.08,
+      "end_seconds": 502.479,
+      "id": "7FVhtQk_RgQ-display-0126",
+      "segment_id": "7FVhtQk_RgQ-ja-0061"
+    },
+    {
+      "text": "いうとてもシンプルなことですが、",
+      "start_seconds": 502.479,
+      "end_seconds": 506.199,
+      "id": "7FVhtQk_RgQ-display-0127",
+      "segment_id": "7FVhtQk_RgQ-ja-0061"
+    },
+    {
+      "text": "金次する活動において疑法だけでなく伝え",
+      "start_seconds": 506.199,
+      "end_seconds": 510.44,
+      "id": "7FVhtQk_RgQ-display-0128",
+      "segment_id": "7FVhtQk_RgQ-ja-0061"
+    },
+    {
+      "text": "続けていきたいことでございます。",
+      "start_seconds": 510.44,
+      "end_seconds": 515.44,
+      "id": "7FVhtQk_RgQ-display-0129",
+      "segment_id": "7FVhtQk_RgQ-ja-0062"
+    },
+    {
+      "text": "近次は現代社会への小さな問いかけでも",
+      "start_seconds": 517.12,
+      "end_seconds": 520.24,
+      "id": "7FVhtQk_RgQ-display-0130",
+      "segment_id": "7FVhtQk_RgQ-ja-0063"
+    },
+    {
+      "text": "あります。",
+      "start_seconds": 520.24,
+      "end_seconds": 523.599,
+      "id": "7FVhtQk_RgQ-display-0131",
+      "segment_id": "7FVhtQk_RgQ-ja-0063"
+    },
+    {
+      "text": "壊れたら捨てる、古くなったら買い換える",
+      "start_seconds": 524.279,
+      "end_seconds": 528.68,
+      "id": "7FVhtQk_RgQ-display-0132",
+      "segment_id": "7FVhtQk_RgQ-ja-0064"
+    },
+    {
+      "text": "という考え方を",
+      "start_seconds": 528.68,
+      "end_seconds": 531.44,
+      "id": "7FVhtQk_RgQ-display-0133",
+      "segment_id": "7FVhtQk_RgQ-ja-0064"
+    },
+    {
+      "text": "直して使い続けるという選択を与えてくれ",
+      "start_seconds": 531.44,
+      "end_seconds": 534.76,
+      "id": "7FVhtQk_RgQ-display-0134",
+      "segment_id": "7FVhtQk_RgQ-ja-0064"
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 534.76,
+      "end_seconds": 537.959,
+      "id": "7FVhtQk_RgQ-display-0135",
+      "segment_id": "7FVhtQk_RgQ-ja-0065"
+    },
+    {
+      "text": "私が主催している近次教室には",
+      "start_seconds": 538.64,
+      "end_seconds": 542.839,
+      "id": "7FVhtQk_RgQ-display-0136",
+      "segment_id": "7FVhtQk_RgQ-ja-0066"
+    },
+    {
+      "text": "60代から80代の日本の高度成長期を",
+      "start_seconds": 542.839,
+      "end_seconds": 546.8,
+      "id": "7FVhtQk_RgQ-display-0137",
+      "segment_id": "7FVhtQk_RgQ-ja-0066"
+    },
+    {
+      "text": "支えてきてくれた生徒さんも多く来て",
+      "start_seconds": 546.8,
+      "end_seconds": 549.76,
+      "id": "7FVhtQk_RgQ-display-0138",
+      "segment_id": "7FVhtQk_RgQ-ja-0066"
+    },
+    {
+      "text": "いらっしゃいます。",
+      "start_seconds": 549.76,
+      "end_seconds": 552.04,
+      "id": "7FVhtQk_RgQ-display-0139",
+      "segment_id": "7FVhtQk_RgQ-ja-0067"
+    },
+    {
+      "text": "その生徒さんからお聞きするのは",
+      "start_seconds": 552.04,
+      "end_seconds": 556.68,
+      "id": "7FVhtQk_RgQ-display-0140",
+      "segment_id": "7FVhtQk_RgQ-ja-0068"
+    },
+    {
+      "text": "物を多く生産し消費することが成長だと",
+      "start_seconds": 556.76,
+      "end_seconds": 562.24,
+      "id": "7FVhtQk_RgQ-display-0141",
+      "segment_id": "7FVhtQk_RgQ-ja-0068"
+    },
+    {
+      "text": "教えられてきたけれどもこれからはこれ",
+      "start_seconds": 562.24,
+      "end_seconds": 565.36,
+      "id": "7FVhtQk_RgQ-display-0142",
+      "segment_id": "7FVhtQk_RgQ-ja-0069"
+    },
+    {
+      "text": "以上物を増やしたくない",
+      "start_seconds": 565.36,
+      "end_seconds": 568.64,
+      "id": "7FVhtQk_RgQ-display-0143",
+      "segment_id": "7FVhtQk_RgQ-ja-0069"
+    },
+    {
+      "text": "今あるものを直して使い続けたいと",
+      "start_seconds": 568.64,
+      "end_seconds": 571.32,
+      "id": "7FVhtQk_RgQ-display-0144",
+      "segment_id": "7FVhtQk_RgQ-ja-0069"
+    },
+    {
+      "text": "おっしゃっていたことが印象に残ってい",
+      "start_seconds": 571.32,
+      "end_seconds": 573.64,
+      "id": "7FVhtQk_RgQ-display-0145",
+      "segment_id": "7FVhtQk_RgQ-ja-0069"
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 573.64,
+      "end_seconds": 576.36,
+      "id": "7FVhtQk_RgQ-display-0146",
+      "segment_id": "7FVhtQk_RgQ-ja-0070"
+    },
+    {
+      "text": "またある子育て世代の参加者の方は",
+      "start_seconds": 576.36,
+      "end_seconds": 583.36,
+      "id": "7FVhtQk_RgQ-display-0147",
+      "segment_id": "7FVhtQk_RgQ-ja-0071"
+    },
+    {
+      "text": "大切に扱わないと物は壊れるんだという",
+      "start_seconds": 583.36,
+      "end_seconds": 586.72,
+      "id": "7FVhtQk_RgQ-display-0148",
+      "segment_id": "7FVhtQk_RgQ-ja-0071"
+    },
+    {
+      "text": "ことを伝えたいためにプラスチックでは",
+      "start_seconds": 586.72,
+      "end_seconds": 589.68,
+      "id": "7FVhtQk_RgQ-display-0149",
+      "segment_id": "7FVhtQk_RgQ-ja-0072"
+    },
+    {
+      "text": "なく",
+      "start_seconds": 589.68,
+      "end_seconds": 591.2,
+      "id": "7FVhtQk_RgQ-display-0150",
+      "segment_id": "7FVhtQk_RgQ-ja-0072"
+    },
+    {
+      "text": "ちゃんと割れる当時期のお茶碗を使わせて",
+      "start_seconds": 591.2,
+      "end_seconds": 594.36,
+      "id": "7FVhtQk_RgQ-display-0151",
+      "segment_id": "7FVhtQk_RgQ-ja-0072"
+    },
+    {
+      "text": "いる。そしてもし割れてしまっても",
+      "start_seconds": 594.36,
+      "end_seconds": 599.519,
+      "id": "7FVhtQk_RgQ-display-0152",
+      "segment_id": "7FVhtQk_RgQ-ja-0073"
+    },
+    {
+      "text": "直して使い続けることができるということ",
+      "start_seconds": 599.519,
+      "end_seconds": 602.12,
+      "id": "7FVhtQk_RgQ-display-0153",
+      "segment_id": "7FVhtQk_RgQ-ja-0073"
+    },
+    {
+      "text": "を教えたいとおっしゃっていました。",
+      "start_seconds": 602.12,
+      "end_seconds": 607.32,
+      "id": "7FVhtQk_RgQ-display-0154",
+      "segment_id": "7FVhtQk_RgQ-ja-0074"
+    },
+    {
+      "text": "大量生産、大量消費が当たり前の世の中に",
+      "start_seconds": 607.6,
+      "end_seconds": 611.48,
+      "id": "7FVhtQk_RgQ-display-0155",
+      "segment_id": "7FVhtQk_RgQ-ja-0075"
+    },
+    {
+      "text": "おいて",
+      "start_seconds": 611.48,
+      "end_seconds": 613.48,
+      "id": "7FVhtQk_RgQ-display-0156",
+      "segment_id": "7FVhtQk_RgQ-ja-0075"
+    },
+    {
+      "text": "金次は",
+      "start_seconds": 613.48,
+      "end_seconds": 615.72,
+      "id": "7FVhtQk_RgQ-display-0157",
+      "segment_id": "7FVhtQk_RgQ-ja-0075"
+    },
+    {
+      "text": "壊れたり割れたりしても直して使い続ける",
+      "start_seconds": 615.72,
+      "end_seconds": 619.92,
+      "id": "7FVhtQk_RgQ-display-0158",
+      "segment_id": "7FVhtQk_RgQ-ja-0076"
+    },
+    {
+      "text": "ことができるという新たな価値観を教えて",
+      "start_seconds": 619.92,
+      "end_seconds": 623.44,
+      "id": "7FVhtQk_RgQ-display-0159",
+      "segment_id": "7FVhtQk_RgQ-ja-0076"
+    },
+    {
+      "text": "くれます。",
+      "start_seconds": 623.44,
+      "end_seconds": 626.8800000000001,
+      "id": "7FVhtQk_RgQ-display-0160",
+      "segment_id": "7FVhtQk_RgQ-ja-0076"
+    },
+    {
+      "text": "近で修復された傷跡のことを景色と呼び",
+      "start_seconds": 629.519,
+      "end_seconds": 633.959,
+      "id": "7FVhtQk_RgQ-display-0161",
+      "segment_id": "7FVhtQk_RgQ-ja-0077"
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 633.959,
+      "end_seconds": 636.16,
+      "id": "7FVhtQk_RgQ-display-0162",
+      "segment_id": "7FVhtQk_RgQ-ja-0077"
+    },
+    {
+      "text": "金継ぎする前の景色とは全くまた違った",
+      "start_seconds": 636.16,
+      "end_seconds": 640.0,
+      "id": "7FVhtQk_RgQ-display-0163",
+      "segment_id": "7FVhtQk_RgQ-ja-0078"
+    },
+    {
+      "text": "ものになってしまいますが、それは新たな",
+      "start_seconds": 640.0,
+      "end_seconds": 643.839,
+      "id": "7FVhtQk_RgQ-display-0164",
+      "segment_id": "7FVhtQk_RgQ-ja-0078"
+    },
+    {
+      "text": "命を吹き返したようにその器だけの唯一無",
+      "start_seconds": 643.839,
+      "end_seconds": 649.639,
+      "id": "7FVhtQk_RgQ-display-0165",
+      "segment_id": "7FVhtQk_RgQ-ja-0079"
+    },
+    {
+      "text": "の輝きを増します。",
+      "start_seconds": 649.639,
+      "end_seconds": 654.04,
+      "id": "7FVhtQk_RgQ-display-0166",
+      "segment_id": "7FVhtQk_RgQ-ja-0079"
+    },
+    {
+      "text": "私たちも何かを乗り越えた時に現れる自分",
+      "start_seconds": 654.04,
+      "end_seconds": 658.36,
+      "id": "7FVhtQk_RgQ-display-0167",
+      "segment_id": "7FVhtQk_RgQ-ja-0080"
+    },
+    {
+      "text": "だけの景色を見ることができるはずです。",
+      "start_seconds": 658.36,
+      "end_seconds": 663.92,
+      "id": "7FVhtQk_RgQ-display-0168",
+      "segment_id": "7FVhtQk_RgQ-ja-0080"
+    },
+    {
+      "text": "壊れたら終わりではなく、壊れてもまた",
+      "start_seconds": 667.6,
+      "end_seconds": 672.519,
+      "id": "7FVhtQk_RgQ-display-0169",
+      "segment_id": "7FVhtQk_RgQ-ja-0081"
+    },
+    {
+      "text": "続いていく。そのようなメッセージを静か",
+      "start_seconds": 672.519,
+      "end_seconds": 676.0,
+      "id": "7FVhtQk_RgQ-display-0170",
+      "segment_id": "7FVhtQk_RgQ-ja-0081"
+    },
+    {
+      "text": "に伝えてくれます。",
+      "start_seconds": 676.0,
+      "end_seconds": 679.04,
+      "id": "7FVhtQk_RgQ-display-0171",
+      "segment_id": "7FVhtQk_RgQ-ja-0081"
+    },
+    {
+      "text": "例えば",
+      "start_seconds": 679.04,
+      "end_seconds": 682.04,
+      "id": "7FVhtQk_RgQ-display-0172",
+      "segment_id": "7FVhtQk_RgQ-ja-0082"
+    },
+    {
+      "text": "思い通りに行かないことがあったとしても",
+      "start_seconds": 682.639,
+      "end_seconds": 685.0,
+      "id": "7FVhtQk_RgQ-display-0173",
+      "segment_id": "7FVhtQk_RgQ-ja-0083"
+    },
+    {
+      "text": "、",
+      "start_seconds": 685.0,
+      "end_seconds": 688.0,
+      "id": "7FVhtQk_RgQ-display-0174",
+      "segment_id": "7FVhtQk_RgQ-ja-0083"
+    },
+    {
+      "text": "それはあなただけの魅力になると思います",
+      "start_seconds": 688.16,
+      "end_seconds": 691.32,
+      "id": "7FVhtQk_RgQ-display-0175",
+      "segment_id": "7FVhtQk_RgQ-ja-0083"
+    },
+    {
+      "text": "。",
+      "start_seconds": 691.32,
+      "end_seconds": 694.32,
+      "id": "7FVhtQk_RgQ-display-0176",
+      "segment_id": "7FVhtQk_RgQ-ja-0083"
+    },
+    {
+      "text": "向き合っている問題は1つではないかも",
+      "start_seconds": 694.88,
+      "end_seconds": 698.44,
+      "id": "7FVhtQk_RgQ-display-0177",
+      "segment_id": "7FVhtQk_RgQ-ja-0084"
+    },
+    {
+      "text": "しれません。ただいつしかこの乗り越えた",
+      "start_seconds": 698.44,
+      "end_seconds": 704.839,
+      "id": "7FVhtQk_RgQ-display-0178",
+      "segment_id": "7FVhtQk_RgQ-ja-0084"
+    },
+    {
+      "text": "経験こそがあなただけの景色になることを",
+      "start_seconds": 704.839,
+      "end_seconds": 709.279,
+      "id": "7FVhtQk_RgQ-display-0179",
+      "segment_id": "7FVhtQk_RgQ-ja-0085"
+    },
+    {
+      "text": "願っています。[鼻息]",
+      "start_seconds": 709.279,
+      "end_seconds": 712.959,
+      "id": "7FVhtQk_RgQ-display-0180",
+      "segment_id": "7FVhtQk_RgQ-ja-0085"
+    },
+    {
+      "text": "金次という技術をきっかけに自分だけの",
+      "start_seconds": 712.959,
+      "end_seconds": 717.279,
+      "id": "7FVhtQk_RgQ-display-0181",
+      "segment_id": "7FVhtQk_RgQ-ja-0086"
+    },
+    {
+      "text": "景色を愛せる人が増えると嬉しいなと思っ",
+      "start_seconds": 717.279,
+      "end_seconds": 721.32,
+      "id": "7FVhtQk_RgQ-display-0182",
+      "segment_id": "7FVhtQk_RgQ-ja-0086"
+    },
+    {
+      "text": "ています。",
+      "start_seconds": 721.32,
+      "end_seconds": 724.72,
+      "id": "7FVhtQk_RgQ-display-0183",
+      "segment_id": "7FVhtQk_RgQ-ja-0086"
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 727.058,
+      "end_seconds": 729.078,
+      "id": "7FVhtQk_RgQ-display-0184",
+      "segment_id": "7FVhtQk_RgQ-ja-0087"
+    }
+  ]
+}

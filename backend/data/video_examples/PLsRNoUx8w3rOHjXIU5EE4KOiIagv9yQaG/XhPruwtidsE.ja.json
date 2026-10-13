@@ -1,0 +1,5634 @@
+{
+  "schema_version": 1,
+  "video": {
+    "youtube_id": "XhPruwtidsE",
+    "title": "あなたの居場所は、誰が作る？/Who Creates Your Place to Belong? | Hiroto Kobayashi | TEDxKeioU",
+    "channel": "TEDx Talks",
+    "duration_seconds": 1098
+  },
+  "caption_track": {
+    "language": "ja",
+    "kind": "asr",
+    "source": "youtube_automatic"
+  },
+  "source_playlist": "https://www.youtube.com/playlist?list=PLsRNoUx8w3rOHjXIU5EE4KOiIagv9yQaG",
+  "fetched_at": "2026-10-13T13:23:24.622096+00:00",
+  "segment_count": 109,
+  "segments": [
+    {
+      "text": "[拍手]",
+      "start_seconds": 5.239,
+      "end_seconds": 7.259,
+      "id": "XhPruwtidsE-ja-0001",
+      "sequence": 1
+    },
+    {
+      "text": "こんにちは。小林ひです。今日はですね、あの自分の居場所とはということで、え、",
+      "start_seconds": 8.96,
+      "end_seconds": 18.4,
+      "id": "XhPruwtidsE-ja-0002",
+      "sequence": 2
+    },
+    {
+      "text": "自分がここにいていいんだ。あ、ここは自分の場所だって思えるってどういうことか。なんかそんなお話ができればなという風に思います。で、私",
+      "start_seconds": 18.4,
+      "end_seconds": 28.519,
+      "id": "XhPruwtidsE-ja-0003",
+      "sequence": 3
+    },
+    {
+      "text": "はあの、今ご紹介あったように慶王大学の、え、湘南藤沢キャンパスSFCっていうとこにいるんですけれども、[咳払い]SFCってちょっと遠いんですよね、都会",
+      "start_seconds": 28.519,
+      "end_seconds": 38.04,
+      "id": "XhPruwtidsE-ja-0004",
+      "sequence": 4
+    },
+    {
+      "text": "から。なんであの、結構泊まりがけで行く学生が結構います。で、ある朝、ちょっと今日は朝からやろうぜと思って研究室、",
+      "start_seconds": 38.04,
+      "end_seconds": 46.559,
+      "id": "XhPruwtidsE-ja-0005",
+      "sequence": 5
+    },
+    {
+      "text": "これ僕の研究室なんですが、行ってみると誰か寝てたと。で、これうちの学生なんですけど、なんか自分の場所が取られた",
+      "start_seconds": 46.559,
+      "end_seconds": 57.399,
+      "id": "XhPruwtidsE-ja-0006",
+      "sequence": 6
+    },
+    {
+      "text": "なっ[笑い]ていう感じがして、ちょっと寂しかった。で、あ、なんかやっぱり自分も一応学校にこの場所僕の場所なんだって思う場所持ってんだなってことに気づかさ",
+      "start_seconds": 57.399,
+      "end_seconds": 66.76,
+      "id": "XhPruwtidsE-ja-0007",
+      "sequence": 7
+    },
+    {
+      "text": "れたんですけど、でも僕よりも彼らの方が長くいるんですよね、学校に。だから彼らの方がもっと僕よりもこの場所を自分の場所だと思ってんのかもしれないという風",
+      "start_seconds": 66.76,
+      "end_seconds": 77.52,
+      "id": "XhPruwtidsE-ja-0008",
+      "sequence": 8
+    },
+    {
+      "text": "に思います。なので、そのどういう風な状況だとこう自分の場所だ、自分1人でもいていい場所だっていう風に思えるか、なんかそんなことをちょっと考えてみたい",
+      "start_seconds": 77.52,
+      "end_seconds": 89.119,
+      "id": "XhPruwtidsE-ja-0009",
+      "sequence": 9
+    },
+    {
+      "text": "なと思います。",
+      "start_seconds": 89.119,
+      "end_seconds": 91.439,
+      "id": "XhPruwtidsE-ja-0010",
+      "sequence": 10
+    },
+    {
+      "text": "え、もう5年前になりますけれども、コロナの時期にあの家にたくさんダンボールがあったじゃないですか。で、そしたらばうちで飼ってる猫がですね、",
+      "start_seconds": 91.439,
+      "end_seconds": 101.119,
+      "id": "XhPruwtidsE-ja-0011",
+      "sequence": 11
+    },
+    {
+      "text": "ちょっとずつこう近寄っててですね、ガサガサ入ってで、なんかね、落ち着いちゃったんですよね。で、これ、あの、この子はとってもこういう場所を見つける",
+      "start_seconds": 101.119,
+      "end_seconds": 112.079,
+      "id": "XhPruwtidsE-ja-0012",
+      "sequence": 12
+    },
+    {
+      "text": "のが得意で、それで家の中色々探って、それですごく気持ちのいい場所にこうそこに収まるみたいなので、え、僕も結構この子に教えられてるみたいなところがあって",
+      "start_seconds": 112.079,
+      "end_seconds": 123.92,
+      "id": "XhPruwtidsE-ja-0013",
+      "sequence": 13
+    },
+    {
+      "text": "、どんな場所がやっぱ気持ちいいのかなっていうことを考えさせられました。",
+      "start_seconds": 123.92,
+      "end_seconds": 129.036,
+      "id": "XhPruwtidsE-ja-0014",
+      "sequence": 14
+    },
+    {
+      "text": "[咳払い]そんなんで私もちょっとやってみましたみたいな。で、これダンボール使ってで、なんかやっぱりコロナの時期ってなかなかこう家族と一緒にいるんだけど1人になれないな。家の中に1人に",
+      "start_seconds": 129.036,
+      "end_seconds": 140.599,
+      "id": "XhPruwtidsE-ja-0015",
+      "sequence": 15
+    },
+    {
+      "text": "なれる場所なかなかないから。で、こうやって見るとあ、結構いいじゃんと思ったし、こうやって見るとなお良かったりするわけなんですよね。なんだけど、一応僕も建築やってるんで、もうちょっとちゃんと",
+      "start_seconds": 140.599,
+      "end_seconds": 151.16,
+      "id": "XhPruwtidsE-ja-0016",
+      "sequence": 16
+    },
+    {
+      "text": "作ってみようってことで、これあのプラダンって言うんですけど、プラスチックダンボールで畳[咳払い]1畳分、これを、ま、3枚に切ってで、切り込み入れて組み立てるみたいな。で、そうすると、ま",
+      "start_seconds": 151.16,
+      "end_seconds": 162.64,
+      "id": "XhPruwtidsE-ja-0017",
+      "sequence": 17
+    },
+    {
+      "text": "、こういうものができるわけなんです。",
+      "start_seconds": 162.64,
+      "end_seconds": 164.319,
+      "id": "XhPruwtidsE-ja-0018",
+      "sequence": 18
+    },
+    {
+      "text": "これで、お、ちょっとなんか新しくなってきたなと思って、で、これ使ってみようっつって使っていたんですけど、もう1匹の猫がやってきて、で、こんな風にあの探っ",
+      "start_seconds": 164.319,
+      "end_seconds": 175.2,
+      "id": "XhPruwtidsE-ja-0019",
+      "sequence": 19
+    },
+    {
+      "text": "てで、彼女ちょっと大きい猫なんですけど、あの、狭いとこじゃなくて広いとこでゴロとするのが好きなんで、[笑い]あの、こんな風にゴロとしてます。で、この猫",
+      "start_seconds": 175.2,
+      "end_seconds": 185.12,
+      "id": "XhPruwtidsE-ja-0020",
+      "sequence": 20
+    },
+    {
+      "text": "にも興味持ってもらったし、あの、うちの娘もこれ使ったりしてんですけど、でもやっぱりこれはちょっと自分の場所にはならなかった。それで、ま、どういうこと",
+      "start_seconds": 185.12,
+      "end_seconds": 195.92,
+      "id": "XhPruwtidsE-ja-0021",
+      "sequence": 21
+    },
+    {
+      "text": "かなと思って、よし、じゃ、もうちょっと頑張ってみようっつって、今度はあの、合飯を使って、これ3枚ぐらい使ってですね、で、今度は機械も使って綺麗に切って、で、組み立ててブースを作ってみました",
+      "start_seconds": 195.92,
+      "end_seconds": 207.08,
+      "id": "XhPruwtidsE-ja-0022",
+      "sequence": 22
+    },
+    {
+      "text": "。で、これが右側のがそうなんですけども、これは結構良かった。それで、あ、なるほど。僕はこういう場所が欲しいんだってことはなんとなく分かったんです",
+      "start_seconds": 207.08,
+      "end_seconds": 217.56,
+      "id": "XhPruwtidsE-ja-0023",
+      "sequence": 23
+    },
+    {
+      "text": "けど、でも普通みんなこんなもん普通作れるわけないじゃないですか。家の中で。なので、一体どういう状況だと別にここ",
+      "start_seconds": 217.56,
+      "end_seconds": 227.599,
+      "id": "XhPruwtidsE-ja-0024",
+      "sequence": 24
+    },
+    {
+      "text": "までしなくたってこう自分の場所、自分で1人でいられる場所みたいなのができるのかなっていうのをやっぱり、ま、考えさせられたんですね。で、色々考えてみると",
+      "start_seconds": 227.599,
+      "end_seconds": 239.319,
+      "id": "XhPruwtidsE-ja-0025",
+      "sequence": 25
+    },
+    {
+      "text": "今日のテーマであるその真っていうのが結構大切であるということがよくわかりました。で、1つは、ま、人間と書いて人感。これ明治の時代は人感と呼ばれてることがすごく多かったようなんですけれど",
+      "start_seconds": 239.319,
+      "end_seconds": 251.079,
+      "id": "XhPruwtidsE-ja-0026",
+      "sequence": 26
+    },
+    {
+      "text": "も、これって人間の関係のこと言っていて、ま、付き合いとかなので、その人と人との距離感みたいなのがとても大切。近すぎ",
+      "start_seconds": 251.079,
+      "end_seconds": 262.0,
+      "id": "XhPruwtidsE-ja-0027",
+      "sequence": 27
+    },
+    {
+      "text": "てもちょっと生き苦しいし、遠すぎても寂しいしみたいな。なので、その人と人との関係、これが1つか、もう1つは時間で",
+      "start_seconds": 262.0,
+      "end_seconds": 271.84,
+      "id": "XhPruwtidsE-ja-0028",
+      "sequence": 28
+    },
+    {
+      "text": "、この時間も時の流れっていうのを早く感じたり、ゆっくり感じたりするんですけれど、やっぱりその中のこう余裕みたいなのがあるとか、隙間時間みたいなのが",
+      "start_seconds": 271.84,
+      "end_seconds": 281.919,
+      "id": "XhPruwtidsE-ja-0029",
+      "sequence": 29
+    },
+    {
+      "text": "あるとか、なんかそういうこうスローな時間みたいなのも大切だよねとか、最後は空間。この3つ目の間なんですけれども、これは特に僕には関係ある、え、ことなん",
+      "start_seconds": 281.919,
+      "end_seconds": 293.919,
+      "id": "XhPruwtidsE-ja-0030",
+      "sequence": 30
+    },
+    {
+      "text": "だけれども、その余白みたいなもの、そのものと、諸との間の広がりみたいななんかそういうものが大切で、この3つの間",
+      "start_seconds": 293.919,
+      "end_seconds": 303.039,
+      "id": "XhPruwtidsE-ja-0031",
+      "sequence": 31
+    },
+    {
+      "text": "みたいなのがうまく揃うとすごく居心地のいい場所ができるんではないか。なんかそういう距離感とか余裕とか余白、ま、こういったものが大切なんじゃないかと",
+      "start_seconds": 303.039,
+      "end_seconds": 314.8,
+      "id": "XhPruwtidsE-ja-0032",
+      "sequence": 32
+    },
+    {
+      "text": "いう風に思い始めました。[咳払い]で、これ銀座なんですが、歩射天国で、みんな歩いてるところでみんなあの友達だったり家族だったり、それ保店なんでたくさん",
+      "start_seconds": 314.8,
+      "end_seconds": 325.88,
+      "id": "XhPruwtidsE-ja-0033",
+      "sequence": 33
+    },
+    {
+      "text": "いるんですけれども、この男性がま、1人で歩いてたんですよね。それであ、なんか都ってやっぱりみんなが集まってきてたくさんいるしで、その人間関係っていう",
+      "start_seconds": 325.88,
+      "end_seconds": 336.52,
+      "id": "XhPruwtidsE-ja-0034",
+      "sequence": 34
+    },
+    {
+      "text": "のがあっての年なんだけど、でもやっぱり僕たちはちょっとあまりにも人が多すぎたり、それから人間関係すぎたりすると疲れるじゃないですか。これでなんとなく",
+      "start_seconds": 336.52,
+      "end_seconds": 346.6,
+      "id": "XhPruwtidsE-ja-0035",
+      "sequence": 35
+    },
+    {
+      "text": "ここってなんか自分の居場所はどこなんだろうっていう風に思うこと結構あると思うんですね。なのでやっぱり都市でもこういう風にこう自由な時間に自分でこう",
+      "start_seconds": 346.6,
+      "end_seconds": 358.52,
+      "id": "XhPruwtidsE-ja-0036",
+      "sequence": 36
+    },
+    {
+      "text": "楽しむっていうことができるなんかこんなようなことがあるといいなという風にこのシーンを見てま思ったんですね。で一方で都市のもう1つのシーンっていうのはこう",
+      "start_seconds": 358.52,
+      "end_seconds": 368.4,
+      "id": "XhPruwtidsE-ja-0037",
+      "sequence": 37
+    },
+    {
+      "text": "いうのがあると。で、これは非常に疲れますよね。で、1つはその人と人との距離感ゼロ。もうぎゅパンパンパツパツ。それ",
+      "start_seconds": 368.4,
+      "end_seconds": 379.24,
+      "id": "XhPruwtidsE-ja-0038",
+      "sequence": 38
+    },
+    {
+      "text": "から時間も急いでるもんだからこういう状況になってるんで、もうどうしても時間にも余裕がない。それから距離感も全くゼロですからこういうのってやっぱり",
+      "start_seconds": 379.24,
+      "end_seconds": 389.16,
+      "id": "XhPruwtidsE-ja-0039",
+      "sequence": 39
+    },
+    {
+      "text": "ちょっと辛いし、ま、間がなさすぎるんだと思うんですよね。な[鼻息]のでやっぱり間っていうのは大切だよなという風に思って場所をしています。[咳払い]",
+      "start_seconds": 389.16,
+      "end_seconds": 399.599,
+      "id": "XhPruwtidsE-ja-0040",
+      "sequence": 40
+    },
+    {
+      "text": "で、実は1ヶ月ほど前にですね、イタリアに行くチャンスがあって、で、本当はミラノでワークショップをやるっていうので、その[咳払い]日ミラノに飛んで行って、それでみんなで",
+      "start_seconds": 399.599,
+      "end_seconds": 410.12,
+      "id": "XhPruwtidsE-ja-0041",
+      "sequence": 41
+    },
+    {
+      "text": "ワークショップをやるつもりだったんですけど、飛行機が遅れで着いて電車に乗ったら電車を間違えで、着いたらボロニアだったんですね。ほれでえと思ってで、",
+      "start_seconds": 410.12,
+      "end_seconds": 421.199,
+      "id": "XhPruwtidsE-ja-0042",
+      "sequence": 42
+    },
+    {
+      "text": "ボロニア次のミラのはって言ったらもう半日先なんですよね。ほいで、あ、もうどうしようもねえなと、こんな間違っ[鼻息]ててしょうがないなと思って、あ、もう無駄にしたこの時間っていう風に",
+      "start_seconds": 421.199,
+      "end_seconds": 431.68,
+      "id": "XhPruwtidsE-ja-0043",
+      "sequence": 43
+    },
+    {
+      "text": "思ったんですけど、そういえばボロニャいつか来たなと思って、その去年の9月に1回ボロニャにたまたま20分ぐらい電車が止まったんで、ま、ホームで待つのも",
+      "start_seconds": 431.68,
+      "end_seconds": 442.599,
+      "id": "XhPruwtidsE-ja-0044",
+      "sequence": 44
+    },
+    {
+      "text": "もったいないと思って1回外に出て、そしたらちょっとなんか面白そうなパスタ売ってるお店があったんですよね。で、そこに入ってってちょっと美味しいパスタを買っ",
+      "start_seconds": 442.599,
+      "end_seconds": 452.039,
+      "id": "XhPruwtidsE-ja-0045",
+      "sequence": 45
+    },
+    {
+      "text": "て帰った。で、それ美味しかった。で、それを思い出したんで、で、もう1回ですね、このボローニャに着いて半日あるから行ってみました。そしたら同じお店があっ",
+      "start_seconds": 452.039,
+      "end_seconds": 463.0,
+      "id": "XhPruwtidsE-ja-0046",
+      "sequence": 46
+    },
+    {
+      "text": "て、同じパスタを同じ棚で売ってたんね。",
+      "start_seconds": 463.0,
+      "end_seconds": 465.919,
+      "id": "XhPruwtidsE-ja-0047",
+      "sequence": 47
+    },
+    {
+      "text": "で、またそれを買い、また持って買いた。",
+      "start_seconds": 465.919,
+      "end_seconds": 468.44,
+      "id": "XhPruwtidsE-ja-0048",
+      "sequence": 48
+    },
+    {
+      "text": "で、そん時になんか僕は、あ、なんかこの店僕の店じゃんっていう風に思った。",
+      "start_seconds": 468.44,
+      "end_seconds": 474.84,
+      "id": "XhPruwtidsE-ja-0049",
+      "sequence": 49
+    },
+    {
+      "text": "たった2回しか行ってないのに。で、なんかそれってあのお店の人がちょっと迎えてくれた優しいみたいなのもあるんだけど、自分でなんとなく運、足を運んで2回目に",
+      "start_seconds": 474.84,
+      "end_seconds": 486.599,
+      "id": "XhPruwtidsE-ja-0050",
+      "sequence": 50
+    },
+    {
+      "text": "行った時にもうすでにそう感じたのはやっぱり自分でこう足を運んでいってそれで自分の場所をこうなんとなく作ったからではないか。で、今度行ったら絶対また",
+      "start_seconds": 486.599,
+      "end_seconds": 497.56,
+      "id": "XhPruwtidsE-ja-0051",
+      "sequence": 51
+    },
+    {
+      "text": "行きます。3回目でそうするとこれ僕の店だからぐらいな感じになるんじゃないかな。で、あの、これポーティコって言うんですけども、こういうアーチのこう回廊みたいなの。これがあのボロニアとても",
+      "start_seconds": 497.56,
+      "end_seconds": 508.199,
+      "id": "XhPruwtidsE-ja-0052",
+      "sequence": 52
+    },
+    {
+      "text": "有名で、で、この後ですね、ずっとボロニナの町をずっと歩いた。で、なんとなくこれボロニア僕の街だぜっていう感じがすごくするようにこうなったんですね。",
+      "start_seconds": 508.199,
+      "end_seconds": 519.08,
+      "id": "XhPruwtidsE-ja-0053",
+      "sequence": 53
+    },
+    {
+      "text": "なんで本当にこう、あの、ポコっとできた時間なんだけど、ま、ちょっと考え方を変えてで、自分からこの町に、ま、コミットしていくっていうことをすると、",
+      "start_seconds": 519.08,
+      "end_seconds": 530.04,
+      "id": "XhPruwtidsE-ja-0054",
+      "sequence": 54
+    },
+    {
+      "text": "あ、これ、こんな知らないイタリアの町も自分の町に近づくんじゃないかなというような体験をしました。で、今日1つあのプロジェクトをご紹介したいんですけれど",
+      "start_seconds": 530.04,
+      "end_seconds": 541.0,
+      "id": "XhPruwtidsE-ja-0055",
+      "sequence": 55
+    },
+    {
+      "text": "、え、ベニアハウスプロジェクトというのをやっています。で、これはあの東北の震災15年前にありました。で、この東北",
+      "start_seconds": 541.0,
+      "end_seconds": 550.12,
+      "id": "XhPruwtidsE-ja-0056",
+      "sequence": 56
+    },
+    {
+      "text": "の震災の時にみんなあの家が流されたり壊されたりしてしまいました。で、その時に、ま、建築家として一体何ができるかということを、ま、考えさせられたわけです",
+      "start_seconds": 550.12,
+      "end_seconds": 560.839,
+      "id": "XhPruwtidsE-ja-0057",
+      "sequence": 57
+    },
+    {
+      "text": "けれども、[鼻息]あの、その当時もう日本からそれだけじゃなくて世界からこう、あの、大学さんが集まってみんな復興すごく手伝ってたんですけど、それでも",
+      "start_seconds": 560.839,
+      "end_seconds": 571.36,
+      "id": "XhPruwtidsE-ja-0058",
+      "sequence": 58
+    },
+    {
+      "text": "なかなかあの、手が回らずなかなか大工さん来てくれないっていう状況があったんですね。で、それなのでだったらば自分で作れる家の仕組みを作ればみんな待ってる",
+      "start_seconds": 571.36,
+      "end_seconds": 582.76,
+      "id": "XhPruwtidsE-ja-0059",
+      "sequence": 59
+    },
+    {
+      "text": "間に自分たちで家ができるんじゃないかということで建築って複雑にやっぱり思われるし、ま、事実複雑なところすごく多いんだけどそれをなんとかこう簡単に仕組み",
+      "start_seconds": 582.76,
+      "end_seconds": 593.2,
+      "id": "XhPruwtidsE-ja-0060",
+      "sequence": 60
+    },
+    {
+      "text": "をしてってあげると実は素人でも作れんじゃないかなということで、そういうことを始めました。これがあのベニアハウスなんですけども、ま、自然素材を使って合板",
+      "start_seconds": 593.2,
+      "end_seconds": 603.279,
+      "id": "XhPruwtidsE-ja-0061",
+      "sequence": 61
+    },
+    {
+      "text": "って作られてるんですね。山の看伐剤を使って作ります。で、それから、え、セルフビルドで作るっていうこと、今言ったようにみんなに作ってもらいたいので、",
+      "start_seconds": 603.279,
+      "end_seconds": 613.76,
+      "id": "XhPruwtidsE-ja-0062",
+      "sequence": 62
+    },
+    {
+      "text": "このセルフビルドをなんとかしようと。で、やってみたら分かったことはですね、面白いことに自分で作るとその家に愛着を感じるのでとっても大切にするんですよね",
+      "start_seconds": 613.76,
+      "end_seconds": 625.24,
+      "id": "XhPruwtidsE-ja-0063",
+      "sequence": 63
+    },
+    {
+      "text": "。で、実はこの写真は、えっと、ある漁師さんたちなんですけれども、その漁師の町の80%の絵が流されちゃった。で、そこにじゃあ漁師の人たちが集まる場所を作ろ",
+      "start_seconds": 625.24,
+      "end_seconds": 636.24,
+      "id": "XhPruwtidsE-ja-0064",
+      "sequence": 64
+    },
+    {
+      "text": "うって言うんで、漁師の皆さんに作ってもらったんですね。そしたらば本当にみんなとっても愛してくれちゃって、それで行く度にですね、あの、ちょっとずつ棚",
+      "start_seconds": 636.24,
+      "end_seconds": 646.76,
+      "id": "XhPruwtidsE-ja-0065",
+      "sequence": 65
+    },
+    {
+      "text": "が増えたり、机が増えたりしてるんですよね。で、それ彼ら作り方知ってるからどんどん増えてく。それから、あの、具合が悪い時は大概はですね、電話かかってき",
+      "start_seconds": 646.76,
+      "end_seconds": 657.32,
+      "id": "XhPruwtidsE-ja-0066",
+      "sequence": 66
+    },
+    {
+      "text": "て、ちょっと小林先生、あの、ちょいんですけどって言って、こうクレームの電話かかってくること結構建築ってあるんですけど、1回もかかってこなくて、で、行ってみると逆にこれね、ちょっと俺がやっ",
+      "start_seconds": 657.32,
+      "end_seconds": 668.48,
+      "id": "XhPruwtidsE-ja-0067",
+      "sequence": 67
+    },
+    {
+      "text": "ちゃったんだよねみたいに反省してるわけで、全く態度が違うんですよね。なのでやっぱり自分で作る、自分でコミットするってことはとても大事だということをこのプロジェクトなんかで教えられました",
+      "start_seconds": 668.48,
+      "end_seconds": 680.36,
+      "id": "XhPruwtidsE-ja-0068",
+      "sequence": 68
+    },
+    {
+      "text": "。で、みんなで作るとなおそれに加えてコミュニティの意識ってのができる。で、特にその震災の後って本当にコミュニティバラバラになっちゃうので、そういう人",
+      "start_seconds": 680.36,
+      "end_seconds": 690.639,
+      "id": "XhPruwtidsE-ja-0069",
+      "sequence": 69
+    },
+    {
+      "text": "たちが新しく集まってコミュニティを作る、そういうことができるということも分かりました。ま、こういうことをやって、あの、いくつか今までやってきて、大体256のフェニアハウスってのを作ってき",
+      "start_seconds": 690.639,
+      "end_seconds": 702.399,
+      "id": "XhPruwtidsE-ja-0070",
+      "sequence": 70
+    },
+    {
+      "text": "たんですけれども、やっぱり今、あの、その15年前の自然災害である津波とか地震とかっていうこと以外にも水害もすごく多いですし、それからやっぱ戦争が",
+      "start_seconds": 702.399,
+      "end_seconds": 714.0,
+      "id": "XhPruwtidsE-ja-0071",
+      "sequence": 71
+    },
+    {
+      "text": "あるので、世界中で家を壊されてしまったから町を追われてしまった、国を追われてしまったっていう人が、ま、何百万人といるわけなんですよね。なんかそういう",
+      "start_seconds": 714.0,
+      "end_seconds": 724.6,
+      "id": "XhPruwtidsE-ja-0072",
+      "sequence": 72
+    },
+    {
+      "text": "状況の中でどういう風にその人たちにあここにいていいんだと、ここは自分のいる場所なんだって思ってもらえるか、なんかそういうことをあの追求してきた。ま、",
+      "start_seconds": 724.6,
+      "end_seconds": 735.519,
+      "id": "XhPruwtidsE-ja-0073",
+      "sequence": 73
+    },
+    {
+      "text": "これがあのベニアハウスです。で、1つだけ今日はあの事例としてあのお見せしようと思うんですけれど、これあのミヤンマーなんですけれどもミヤンマーは",
+      "start_seconds": 735.519,
+      "end_seconds": 746.04,
+      "id": "XhPruwtidsE-ja-0074",
+      "sequence": 74
+    },
+    {
+      "text": "あのクデタがあって以降なかなか政治的に不安定だったりしますがこの時はですねぐらい前ででもあのやっぱりこのあの村は",
+      "start_seconds": 746.04,
+      "end_seconds": 755.639,
+      "id": "XhPruwtidsE-ja-0075",
+      "sequence": 75
+    },
+    {
+      "text": "ですね1年目が台風で2年目が完伐でで結局農業全然できなくなってしょうがなくてここに移り住んできた人たちで非常にま",
+      "start_seconds": 755.639,
+      "end_seconds": 767.199,
+      "id": "XhPruwtidsE-ja-0076",
+      "sequence": 76
+    },
+    {
+      "text": "ないので本当本当に火材だけ持ってきて、それで自分たちで小屋を立ててっていうのをこんな感じで暮らしてたんですね。で、あの見たら分かるようにちょっと床がこう",
+      "start_seconds": 767.199,
+      "end_seconds": 776.68,
+      "id": "XhPruwtidsE-ja-0077",
+      "sequence": 77
+    },
+    {
+      "text": "上がっているのは年のうち3ヶ月ぐらいがあの浮で雨なんですね。だから水がだっ上がってきちゃうんですね。でそうするとどうなるかって言うと結局農業ができない",
+      "start_seconds": 776.68,
+      "end_seconds": 787.68,
+      "id": "XhPruwtidsE-ja-0078",
+      "sequence": 78
+    },
+    {
+      "text": "からみんな家族のお父さんお兄ちゃんたちもみんな家にいる。それで子供たちも遊びに行けないから結局家ん中に結局牛々な状態で3ヶ月過ごさないといけない。で、",
+      "start_seconds": 787.68,
+      "end_seconds": 798.519,
+      "id": "XhPruwtidsE-ja-0079",
+      "sequence": 79
+    },
+    {
+      "text": "そうすると非常に悪いことにその1番下の子がいじめられるってことが起きてで家庭内暴力っていうのがま、起きてるという事実が分かりました。その非常に悪い時は",
+      "start_seconds": 798.519,
+      "end_seconds": 810.0,
+      "id": "XhPruwtidsE-ja-0080",
+      "sequence": 80
+    },
+    {
+      "text": "命を落とすみたいなこともあったんですね。で、これな何とかならないかっていうことで話し合った結果だったらいつでも子供が来れる子供の家を作ろうということ",
+      "start_seconds": 810.0,
+      "end_seconds": 821.0,
+      "id": "XhPruwtidsE-ja-0081",
+      "sequence": 81
+    },
+    {
+      "text": "で、そこには24時間365日でも来ていいよという、そういう場所を作ろうということを決めました。で、まずあの僕",
+      "start_seconds": 821.0,
+      "end_seconds": 829.12,
+      "id": "XhPruwtidsE-ja-0082",
+      "sequence": 82
+    },
+    {
+      "text": "たちが自分で設計したものを模型を作ってで、現地に持っていって、で、その模型をこうちょっとバラバラ渡してで、まずワークショップやろうということで、それ",
+      "start_seconds": 829.12,
+      "end_seconds": 840.48,
+      "id": "XhPruwtidsE-ja-0083",
+      "sequence": 83
+    },
+    {
+      "text": "でみんなでグループになって、で、ちょっと切り込みを入れてるので、そこやって入れてくと少し立体になるんですよね。で、そうやってこう触ってもらってものを作る楽しさみたいなの味わってもらおうと。で、みんなやってた。この子",
+      "start_seconds": 840.48,
+      "end_seconds": 852.199,
+      "id": "XhPruwtidsE-ja-0084",
+      "sequence": 84
+    },
+    {
+      "text": "だけはやらなかったんですけど、この子は僕だけを見てて、で、非常に興味も、ま、カメラに興味があったのかもしれない。ま、こういうアイデンティはとても大切にしてあげたい。それはそれで良しとします。",
+      "start_seconds": 852.199,
+      "end_seconds": 863.6,
+      "id": "XhPruwtidsE-ja-0085",
+      "sequence": 85
+    },
+    {
+      "text": "で、実際に作っていくとこういう家を作ったり、それからこの子なんか本当に立体的に飛行機を作ったりですね。で、こういう別にあの飛行機作るための部品じゃないん",
+      "start_seconds": 863.6,
+      "end_seconds": 874.16,
+      "id": "XhPruwtidsE-ja-0086",
+      "sequence": 86
+    },
+    {
+      "text": "だけど、それでも作りたいものは作れる。",
+      "start_seconds": 874.16,
+      "end_seconds": 876.68,
+      "id": "XhPruwtidsE-ja-0087",
+      "sequence": 87
+    },
+    {
+      "text": "で、ちょっとこう手についたところで、今度はみんなで集まって、それで1件の家を作ろうということで、それで、え、こういうものを作ります。これが1/1の模型",
+      "start_seconds": 876.68,
+      "end_seconds": 888.519,
+      "id": "XhPruwtidsE-ja-0088",
+      "sequence": 88
+    },
+    {
+      "text": "なんですが、本当に実物もこれを組み立てるのと同じ方法で組み立つので、なので本当にここで子供たちは嫌がどう",
+      "start_seconds": 888.519,
+      "end_seconds": 897.92,
+      "id": "XhPruwtidsE-ja-0089",
+      "sequence": 89
+    },
+    {
+      "text": "やって立つかが分かる。で、いよいよ次の日から本当に1/1を作るということをやります。これ10歳のこと、11歳のことをみんな一緒にやるわけなんですけど",
+      "start_seconds": 897.92,
+      "end_seconds": 908.88,
+      "id": "XhPruwtidsE-ja-0090",
+      "sequence": 90
+    },
+    {
+      "text": "、もちろんあの大人も入ってやりますけれども。で、3週、2週間後、えっと、こうやってうちの学生と子供たちはもう家族のように本当に仲良くなって、それ",
+      "start_seconds": 908.88,
+      "end_seconds": 919.959,
+      "id": "XhPruwtidsE-ja-0091",
+      "sequence": 91
+    },
+    {
+      "text": "こそみんなで物を作るとこういうようなコミュニティがこうできるんですよね。で、3週間後に、えっと、こういうものができました。で、えっと、ここであの子供",
+      "start_seconds": 919.959,
+      "end_seconds": 930.88,
+      "id": "XhPruwtidsE-ja-0092",
+      "sequence": 92
+    },
+    {
+      "text": "たちはいつでも来ていいよ。で、ここが2m上がってるので、え、村で1番高い場所であるということで、どんな交水でも絶対安全っていうような場所を作りました",
+      "start_seconds": 930.88,
+      "end_seconds": 940.36,
+      "id": "XhPruwtidsE-ja-0093",
+      "sequence": 93
+    },
+    {
+      "text": "。で、えっと、最終日にみんなで掃除をしました。で、掃除をしているとふっとこう窓を見上げるとこれ1人の少年なんです",
+      "start_seconds": 940.36,
+      "end_seconds": 950.0,
+      "id": "XhPruwtidsE-ja-0094",
+      "sequence": 94
+    },
+    {
+      "text": "けども、全然掃除してないね。で、この子はこの窓で、えっと、1人で怖え。でもちょっと満足な顔してる感じがしたんです",
+      "start_seconds": 950.0,
+      "end_seconds": 959.48,
+      "id": "XhPruwtidsE-ja-0095",
+      "sequence": 95
+    },
+    {
+      "text": "よね。それで、あ、この子はきっと家でも居場所がないんじゃないかなという風に、あの、思いました。実はこの子はあの、",
+      "start_seconds": 959.48,
+      "end_seconds": 969.759,
+      "id": "XhPruwtidsE-ja-0096",
+      "sequence": 96
+    },
+    {
+      "text": "現場には毎日来てたんですよね。で、毎日来てたんだけど全然手伝わない。ただちょろちょろ遊んでるだけなのだけど必ず毎日来てたんですよね。それでなんかこの",
+      "start_seconds": 969.759,
+      "end_seconds": 979.8,
+      "id": "XhPruwtidsE-ja-0097",
+      "sequence": 97
+    },
+    {
+      "text": "隣にこの場所にこうミットしてなんとなくこう自分の居場所みたいなのを探してたのかなっていう風に今思うとちょっと考えそういう風にま、考えられるかなと思い",
+      "start_seconds": 979.8,
+      "end_seconds": 991.279,
+      "id": "XhPruwtidsE-ja-0098",
+      "sequence": 98
+    },
+    {
+      "text": "ます。で、やっぱりあのこの子みたいに多分その普通に自分の家の中でこう自分らしくいられるみたいな場所ってやっぱ",
+      "start_seconds": 991.279,
+      "end_seconds": 1002.639,
+      "id": "XhPruwtidsE-ja-0099",
+      "sequence": 99
+    },
+    {
+      "text": "ああいう家の中には多分ないんじゃないかな。で、そういった時に僕たちがあのこういう場所を提供できたのはすごく良かったなという風に思って、そういう活動続け",
+      "start_seconds": 1002.639,
+      "end_seconds": 1011.839,
+      "id": "XhPruwtidsE-ja-0100",
+      "sequence": 100
+    },
+    {
+      "text": "たいんだけれども、ただ家がないと本当にこういう気持ちにならないかというと、僕はそうでもないという風に思っていて、大切なことってこの子のようにやっぱり",
+      "start_seconds": 1011.839,
+      "end_seconds": 1023.72,
+      "id": "XhPruwtidsE-ja-0101",
+      "sequence": 101
+    },
+    {
+      "text": "えっと自分の時間を見つけてそれであ、ここじゃないかっていう場所に自分からコミットすることが大切だっていうことだ",
+      "start_seconds": 1023.72,
+      "end_seconds": 1033.199,
+      "id": "XhPruwtidsE-ja-0102",
+      "sequence": 102
+    },
+    {
+      "text": "と思うんですね。で、そのコミットするっていうのがちょっとハードルが高い、式が高い場合もあると思うんですけど、でもそれをちょっと勇気を出して超えてみると",
+      "start_seconds": 1033.199,
+      "end_seconds": 1044.52,
+      "id": "XhPruwtidsE-ja-0103",
+      "sequence": 103
+    },
+    {
+      "text": "、そうするとあ、2回目はもうちょっと楽に行けるようになるし、3回目はもっと楽に行けるようになるし、で、こうやって何回も行ってるうちにその場所が自分のもの",
+      "start_seconds": 1044.52,
+      "end_seconds": 1054.4,
+      "id": "XhPruwtidsE-ja-0104",
+      "sequence": 104
+    },
+    {
+      "text": "になっていくということがあるのではないかと思います。で、特にその都市生活をしてるとぎ救急パツパツみたいなことが",
+      "start_seconds": 1054.4,
+      "end_seconds": 1064.64,
+      "id": "XhPruwtidsE-ja-0105",
+      "sequence": 105
+    },
+    {
+      "text": "すごく多くって僕たちはやっぱり疲れたりするじゃないですか。で、そういった時に自分の居場所みたいなのをどうやったら見つけられるか、これはとても大事なこと",
+      "start_seconds": 1064.64,
+      "end_seconds": 1074.919,
+      "id": "XhPruwtidsE-ja-0106",
+      "sequence": 106
+    },
+    {
+      "text": "だと思ってて、ま、それを皆さんも是非試していただきたいし、絶対にできることだと思うんですね。で、そのためにちょっと勇気を持ってコミットしてみると",
+      "start_seconds": 1074.919,
+      "end_seconds": 1085.76,
+      "id": "XhPruwtidsE-ja-0107",
+      "sequence": 107
+    },
+    {
+      "text": "なんかそういったことをあの試していっていただければいいなと思っています。以上です。ありがとうございました。",
+      "start_seconds": 1085.76,
+      "end_seconds": 1092.552,
+      "id": "XhPruwtidsE-ja-0108",
+      "sequence": 108
+    },
+    {
+      "text": "[咳払い]",
+      "start_seconds": 1092.552,
+      "end_seconds": 1094.572,
+      "id": "XhPruwtidsE-ja-0109",
+      "sequence": 109
+    }
+  ],
+  "raw_captions": [
+    {
+      "text": "[拍手]",
+      "start_seconds": 5.239,
+      "end_seconds": 7.259
+    },
+    {
+      "text": "こんにちは。小林ひです。今日はですね、",
+      "start_seconds": 8.96,
+      "end_seconds": 18.4
+    },
+    {
+      "text": "あの自分の居場所とはということで、え、",
+      "start_seconds": 13.28,
+      "end_seconds": 21.519
+    },
+    {
+      "text": "自分がここにいていいんだ。あ、ここは",
+      "start_seconds": 18.4,
+      "end_seconds": 23.198999999999998
+    },
+    {
+      "text": "自分の場所だって思え",
+      "start_seconds": 21.519,
+      "end_seconds": 25.358999999999998
+    },
+    {
+      "text": "るってどういうことか。なんかそんなお話",
+      "start_seconds": 23.199,
+      "end_seconds": 28.519000000000002
+    },
+    {
+      "text": "ができればなという風に思います。で、私",
+      "start_seconds": 25.359,
+      "end_seconds": 31.8
+    },
+    {
+      "text": "はあの、今ご紹介あったように慶王大学の",
+      "start_seconds": 28.519,
+      "end_seconds": 34.16
+    },
+    {
+      "text": "、え、湘南藤沢キャンパスSFCっていう",
+      "start_seconds": 31.8,
+      "end_seconds": 36.160000000000004
+    },
+    {
+      "text": "とこにいるんですけれども、[咳払い]",
+      "start_seconds": 34.16,
+      "end_seconds": 38.04
+    },
+    {
+      "text": "SFCってちょっと遠いんですよね、都会",
+      "start_seconds": 36.16,
+      "end_seconds": 41.48
+    },
+    {
+      "text": "から。なんであの、結構泊まりがけで行く",
+      "start_seconds": 38.04,
+      "end_seconds": 43.92
+    },
+    {
+      "text": "学生が結構います。で、ある朝、ちょっと",
+      "start_seconds": 41.48,
+      "end_seconds": 46.559
+    },
+    {
+      "text": "今日は朝からやろうぜと思って研究室、",
+      "start_seconds": 43.92,
+      "end_seconds": 50.64
+    },
+    {
+      "text": "これ僕の研究室なんですが、行ってみると",
+      "start_seconds": 46.559,
+      "end_seconds": 53.48
+    },
+    {
+      "text": "誰か寝てたと。で、これうちの学生なん",
+      "start_seconds": 50.64,
+      "end_seconds": 57.399
+    },
+    {
+      "text": "ですけど、なんか自分の場所が取られた",
+      "start_seconds": 53.48,
+      "end_seconds": 59.44
+    },
+    {
+      "text": "なっ[笑い]ていう感じがして、ちょっと",
+      "start_seconds": 57.399,
+      "end_seconds": 62.359
+    },
+    {
+      "text": "寂しかった。で、あ、なんかやっぱり自分",
+      "start_seconds": 59.44,
+      "end_seconds": 64.75999999999999
+    },
+    {
+      "text": "も一応学校にこの場所僕の場所なんだって",
+      "start_seconds": 62.359,
+      "end_seconds": 66.76
+    },
+    {
+      "text": "思う場所持ってんだなってことに気づかさ",
+      "start_seconds": 64.76,
+      "end_seconds": 70.08000000000001
+    },
+    {
+      "text": "れたんですけど、でも僕よりも彼らの方が",
+      "start_seconds": 66.76,
+      "end_seconds": 72.52000000000001
+    },
+    {
+      "text": "長くいるんですよね、学校に。だから彼ら",
+      "start_seconds": 70.08,
+      "end_seconds": 75.119
+    },
+    {
+      "text": "の方がもっと僕よりもこの場所を自分の",
+      "start_seconds": 72.52,
+      "end_seconds": 77.52
+    },
+    {
+      "text": "場所だと思ってんのかもしれないという風",
+      "start_seconds": 75.119,
+      "end_seconds": 80.479
+    },
+    {
+      "text": "に思います。なので、そのどういう風な",
+      "start_seconds": 77.52,
+      "end_seconds": 84.079
+    },
+    {
+      "text": "状況だとこう自分の場所だ、自分1人でも",
+      "start_seconds": 80.479,
+      "end_seconds": 86.67999999999999
+    },
+    {
+      "text": "いていい場所だっていう風に思えるか、",
+      "start_seconds": 84.079,
+      "end_seconds": 89.119
+    },
+    {
+      "text": "なんかそんなことをちょっと考えてみたい",
+      "start_seconds": 86.68,
+      "end_seconds": 91.43900000000001
+    },
+    {
+      "text": "なと思います。",
+      "start_seconds": 89.119,
+      "end_seconds": 93.2
+    },
+    {
+      "text": "え、もう5年前になりますけれども、",
+      "start_seconds": 91.439,
+      "end_seconds": 96.27999999999999
+    },
+    {
+      "text": "コロナの時期にあの家にたくさんダン",
+      "start_seconds": 93.2,
+      "end_seconds": 98.43900000000001
+    },
+    {
+      "text": "ボールがあったじゃないですか。で、そし",
+      "start_seconds": 96.28,
+      "end_seconds": 101.119
+    },
+    {
+      "text": "たらばうちで飼ってる猫がですね、",
+      "start_seconds": 98.439,
+      "end_seconds": 104.15899999999999
+    },
+    {
+      "text": "ちょっとずつこう近寄っててですね、",
+      "start_seconds": 101.119,
+      "end_seconds": 107.24
+    },
+    {
+      "text": "ガサガサ入ってで、なんかね、落ち着い",
+      "start_seconds": 104.159,
+      "end_seconds": 110.24000000000001
+    },
+    {
+      "text": "ちゃったんですよね。で、これ、あの、",
+      "start_seconds": 107.24,
+      "end_seconds": 112.079
+    },
+    {
+      "text": "この子はとってもこういう場所を見つける",
+      "start_seconds": 110.24,
+      "end_seconds": 115.15899999999999
+    },
+    {
+      "text": "のが得意で、それで家の中色々探って、",
+      "start_seconds": 112.079,
+      "end_seconds": 117.83999999999999
+    },
+    {
+      "text": "それですごく気持ちのいい場所にこうそこ",
+      "start_seconds": 115.159,
+      "end_seconds": 122.0
+    },
+    {
+      "text": "に収まるみたいなので、え、僕も結構この",
+      "start_seconds": 117.84,
+      "end_seconds": 123.92
+    },
+    {
+      "text": "子に教えられてるみたいなところがあって",
+      "start_seconds": 122.0,
+      "end_seconds": 126.84
+    },
+    {
+      "text": "、どんな場所がやっぱ気持ちいいのかなっ",
+      "start_seconds": 123.92,
+      "end_seconds": 129.036
+    },
+    {
+      "text": "ていうことを考えさせられました。",
+      "start_seconds": 126.84,
+      "end_seconds": 130.44
+    },
+    {
+      "text": "[咳払い]そんなんで私もちょっとやって",
+      "start_seconds": 129.036,
+      "end_seconds": 132.56
+    },
+    {
+      "text": "みましたみたいな。で、これダンボール",
+      "start_seconds": 130.44,
+      "end_seconds": 134.959
+    },
+    {
+      "text": "使ってで、なんかやっぱりコロナの時期",
+      "start_seconds": 132.56,
+      "end_seconds": 138.2
+    },
+    {
+      "text": "ってなかなかこう家族と一緒にいるんだ",
+      "start_seconds": 134.959,
+      "end_seconds": 140.599
+    },
+    {
+      "text": "けど1人になれないな。家の中に1人に",
+      "start_seconds": 138.2,
+      "end_seconds": 142.35999999999999
+    },
+    {
+      "text": "なれる場所なかなかないから。で、こう",
+      "start_seconds": 140.599,
+      "end_seconds": 144.51899999999998
+    },
+    {
+      "text": "やって見るとあ、結構いいじゃんと思った",
+      "start_seconds": 142.36,
+      "end_seconds": 146.959
+    },
+    {
+      "text": "し、こうやって見るとなお良かったりする",
+      "start_seconds": 144.519,
+      "end_seconds": 149.239
+    },
+    {
+      "text": "わけなんですよね。なんだけど、一応僕も",
+      "start_seconds": 146.959,
+      "end_seconds": 151.16
+    },
+    {
+      "text": "建築やってるんで、もうちょっとちゃんと",
+      "start_seconds": 149.239,
+      "end_seconds": 153.56
+    },
+    {
+      "text": "作ってみようってことで、これあのプラダ",
+      "start_seconds": 151.16,
+      "end_seconds": 155.319
+    },
+    {
+      "text": "ンって言うんですけど、プラスチックダン",
+      "start_seconds": 153.56,
+      "end_seconds": 158.0
+    },
+    {
+      "text": "ボールで畳[咳払い]1畳分、これを、ま",
+      "start_seconds": 155.319,
+      "end_seconds": 160.39999999999998
+    },
+    {
+      "text": "、3枚に切ってで、切り込み入れて",
+      "start_seconds": 158.0,
+      "end_seconds": 162.64
+    },
+    {
+      "text": "組み立てるみたいな。で、そうすると、ま",
+      "start_seconds": 160.4,
+      "end_seconds": 164.31900000000002
+    },
+    {
+      "text": "、こういうものができるわけなんです。",
+      "start_seconds": 162.64,
+      "end_seconds": 166.23899999999998
+    },
+    {
+      "text": "これで、お、ちょっとなんか新しくなって",
+      "start_seconds": 164.319,
+      "end_seconds": 168.64
+    },
+    {
+      "text": "きたなと思って、で、これ使ってみようっ",
+      "start_seconds": 166.239,
+      "end_seconds": 171.8
+    },
+    {
+      "text": "つって使っていたんですけど、もう1匹の",
+      "start_seconds": 168.64,
+      "end_seconds": 175.2
+    },
+    {
+      "text": "猫がやってきて、で、こんな風にあの探っ",
+      "start_seconds": 171.8,
+      "end_seconds": 177.68
+    },
+    {
+      "text": "てで、彼女ちょっと大きい猫なんですけど",
+      "start_seconds": 175.2,
+      "end_seconds": 179.51899999999998
+    },
+    {
+      "text": "、あの、狭いとこじゃなくて広いとこで",
+      "start_seconds": 177.68,
+      "end_seconds": 181.87900000000002
+    },
+    {
+      "text": "ゴロとするのが好きなんで、[笑い]あの",
+      "start_seconds": 179.519,
+      "end_seconds": 185.12
+    },
+    {
+      "text": "、こんな風にゴロとしてます。で、この猫",
+      "start_seconds": 181.879,
+      "end_seconds": 187.35999999999999
+    },
+    {
+      "text": "にも興味持ってもらったし、あの、うちの",
+      "start_seconds": 185.12,
+      "end_seconds": 190.20000000000002
+    },
+    {
+      "text": "娘もこれ使ったりしてんですけど、でも",
+      "start_seconds": 187.36,
+      "end_seconds": 193.0
+    },
+    {
+      "text": "やっぱりこれはちょっと自分の場所には",
+      "start_seconds": 190.2,
+      "end_seconds": 195.92
+    },
+    {
+      "text": "ならなかった。それで、ま、どういうこと",
+      "start_seconds": 193.0,
+      "end_seconds": 197.319
+    },
+    {
+      "text": "かなと思って、よし、じゃ、もうちょっと",
+      "start_seconds": 195.92,
+      "end_seconds": 199.23899999999998
+    },
+    {
+      "text": "頑張ってみようっつって、今度はあの、",
+      "start_seconds": 197.319,
+      "end_seconds": 202.159
+    },
+    {
+      "text": "合飯を使って、これ3枚ぐらい使ってです",
+      "start_seconds": 199.239,
+      "end_seconds": 204.72
+    },
+    {
+      "text": "ね、で、今度は機械も使って綺麗に切って",
+      "start_seconds": 202.159,
+      "end_seconds": 207.07999999999998
+    },
+    {
+      "text": "、で、組み立ててブースを作ってみました",
+      "start_seconds": 204.72,
+      "end_seconds": 209.35999999999999
+    },
+    {
+      "text": "。で、これが右側のがそうなんですけども",
+      "start_seconds": 207.08,
+      "end_seconds": 213.56
+    },
+    {
+      "text": "、これは結構良かった。それで、あ、",
+      "start_seconds": 209.36,
+      "end_seconds": 215.76000000000002
+    },
+    {
+      "text": "なるほど。僕はこういう場所が欲しいん",
+      "start_seconds": 213.56,
+      "end_seconds": 217.56
+    },
+    {
+      "text": "だってことはなんとなく分かったんです",
+      "start_seconds": 215.76,
+      "end_seconds": 220.599
+    },
+    {
+      "text": "けど、でも普通みんなこんなもん普通",
+      "start_seconds": 217.56,
+      "end_seconds": 223.56
+    },
+    {
+      "text": "作れるわけないじゃないですか。家の中で",
+      "start_seconds": 220.599,
+      "end_seconds": 227.599
+    },
+    {
+      "text": "。なので、一体どういう状況だと別にここ",
+      "start_seconds": 223.56,
+      "end_seconds": 230.84
+    },
+    {
+      "text": "までしなくたってこう自分の場所、自分で",
+      "start_seconds": 227.599,
+      "end_seconds": 233.159
+    },
+    {
+      "text": "1人でいられる場所みたいなのができるの",
+      "start_seconds": 230.84,
+      "end_seconds": 235.84
+    },
+    {
+      "text": "かなっていうのをやっぱり、ま、考えさせ",
+      "start_seconds": 233.159,
+      "end_seconds": 239.319
+    },
+    {
+      "text": "られたんですね。で、色々考えてみると",
+      "start_seconds": 235.84,
+      "end_seconds": 241.4
+    },
+    {
+      "text": "今日のテーマであるその真っていうのが",
+      "start_seconds": 239.319,
+      "end_seconds": 244.04
+    },
+    {
+      "text": "結構大切であるということがよくわかり",
+      "start_seconds": 241.4,
+      "end_seconds": 246.68
+    },
+    {
+      "text": "ました。で、1つは、ま、人間と書いて",
+      "start_seconds": 244.04,
+      "end_seconds": 249.48
+    },
+    {
+      "text": "人感。これ明治の時代は人感と呼ばれてる",
+      "start_seconds": 246.68,
+      "end_seconds": 251.079
+    },
+    {
+      "text": "ことがすごく多かったようなんですけれど",
+      "start_seconds": 249.48,
+      "end_seconds": 255.23899999999998
+    },
+    {
+      "text": "も、これって人間の関係のこと言っていて",
+      "start_seconds": 251.079,
+      "end_seconds": 258.56
+    },
+    {
+      "text": "、ま、付き合いとかなので、その人と人と",
+      "start_seconds": 255.239,
+      "end_seconds": 262.0
+    },
+    {
+      "text": "の距離感みたいなのがとても大切。近すぎ",
+      "start_seconds": 258.56,
+      "end_seconds": 264.88
+    },
+    {
+      "text": "てもちょっと生き苦しいし、遠すぎても",
+      "start_seconds": 262.0,
+      "end_seconds": 268.28
+    },
+    {
+      "text": "寂しいしみたいな。なので、その人と人と",
+      "start_seconds": 264.88,
+      "end_seconds": 271.84
+    },
+    {
+      "text": "の関係、これが1つか、もう1つは時間で",
+      "start_seconds": 268.28,
+      "end_seconds": 274.35999999999996
+    },
+    {
+      "text": "、この時間も時の流れっていうのを早く",
+      "start_seconds": 271.84,
+      "end_seconds": 276.15999999999997
+    },
+    {
+      "text": "感じたり、ゆっくり感じたりするんです",
+      "start_seconds": 274.36,
+      "end_seconds": 279.32
+    },
+    {
+      "text": "けれど、やっぱりその中のこう余裕みたい",
+      "start_seconds": 276.16,
+      "end_seconds": 281.91900000000004
+    },
+    {
+      "text": "なのがあるとか、隙間時間みたいなのが",
+      "start_seconds": 279.32,
+      "end_seconds": 284.24
+    },
+    {
+      "text": "あるとか、なんかそういうこうスローな",
+      "start_seconds": 281.919,
+      "end_seconds": 287.68
+    },
+    {
+      "text": "時間みたいなのも大切だよねとか、最後は",
+      "start_seconds": 284.24,
+      "end_seconds": 290.72
+    },
+    {
+      "text": "空間。この3つ目の間なんですけれども、",
+      "start_seconds": 287.68,
+      "end_seconds": 293.919
+    },
+    {
+      "text": "これは特に僕には関係ある、え、ことなん",
+      "start_seconds": 290.72,
+      "end_seconds": 296.88000000000005
+    },
+    {
+      "text": "だけれども、その余白みたいなもの、その",
+      "start_seconds": 293.919,
+      "end_seconds": 300.0
+    },
+    {
+      "text": "ものと、諸との間の広がりみたいななんか",
+      "start_seconds": 296.88,
+      "end_seconds": 303.039
+    },
+    {
+      "text": "そういうものが大切で、この3つの間",
+      "start_seconds": 300.0,
+      "end_seconds": 306.88
+    },
+    {
+      "text": "みたいなのがうまく揃うとすごく居心地の",
+      "start_seconds": 303.039,
+      "end_seconds": 309.44
+    },
+    {
+      "text": "いい場所ができるんではないか。なんか",
+      "start_seconds": 306.88,
+      "end_seconds": 312.52
+    },
+    {
+      "text": "そういう距離感とか余裕とか余白、ま、",
+      "start_seconds": 309.44,
+      "end_seconds": 314.8
+    },
+    {
+      "text": "こういったものが大切なんじゃないかと",
+      "start_seconds": 312.52,
+      "end_seconds": 317.639
+    },
+    {
+      "text": "いう風に思い始めました。[咳払い]で、",
+      "start_seconds": 314.8,
+      "end_seconds": 321.199
+    },
+    {
+      "text": "これ銀座なんですが、歩射天国で、みんな",
+      "start_seconds": 317.639,
+      "end_seconds": 323.479
+    },
+    {
+      "text": "歩いてるところでみんなあの友達だったり",
+      "start_seconds": 321.199,
+      "end_seconds": 325.88
+    },
+    {
+      "text": "家族だったり、それ保店なんでたくさん",
+      "start_seconds": 323.479,
+      "end_seconds": 328.0
+    },
+    {
+      "text": "いるんですけれども、この男性がま、1人",
+      "start_seconds": 325.88,
+      "end_seconds": 330.84
+    },
+    {
+      "text": "で歩いてたんですよね。それであ、なんか",
+      "start_seconds": 328.0,
+      "end_seconds": 333.72
+    },
+    {
+      "text": "都ってやっぱりみんなが集まってきて",
+      "start_seconds": 330.84,
+      "end_seconds": 336.52
+    },
+    {
+      "text": "たくさんいるしで、その人間関係っていう",
+      "start_seconds": 333.72,
+      "end_seconds": 339.24
+    },
+    {
+      "text": "のがあっての年なんだけど、でもやっぱり",
+      "start_seconds": 336.52,
+      "end_seconds": 341.44
+    },
+    {
+      "text": "僕たちはちょっとあまりにも人が多すぎ",
+      "start_seconds": 339.24,
+      "end_seconds": 343.919
+    },
+    {
+      "text": "たり、それから人間関係すぎたりすると",
+      "start_seconds": 341.44,
+      "end_seconds": 346.6
+    },
+    {
+      "text": "疲れるじゃないですか。これでなんとなく",
+      "start_seconds": 343.919,
+      "end_seconds": 349.639
+    },
+    {
+      "text": "ここってなんか自分の居場所はどこなん",
+      "start_seconds": 346.6,
+      "end_seconds": 351.47900000000004
+    },
+    {
+      "text": "だろうっていう風に思うこと結構あると",
+      "start_seconds": 349.639,
+      "end_seconds": 354.28000000000003
+    },
+    {
+      "text": "思うんですね。なのでやっぱり都市でも",
+      "start_seconds": 351.479,
+      "end_seconds": 358.52
+    },
+    {
+      "text": "こういう風にこう自由な時間に自分でこう",
+      "start_seconds": 354.28,
+      "end_seconds": 360.84
+    },
+    {
+      "text": "楽しむっていうことができるなんかこんな",
+      "start_seconds": 358.52,
+      "end_seconds": 363.56
+    },
+    {
+      "text": "ようなことがあるといいなという風にこの",
+      "start_seconds": 360.84,
+      "end_seconds": 366.71999999999997
+    },
+    {
+      "text": "シーンを見てま思ったんですね。で一方で",
+      "start_seconds": 363.56,
+      "end_seconds": 368.4
+    },
+    {
+      "text": "都市のもう1つのシーンっていうのはこう",
+      "start_seconds": 366.72,
+      "end_seconds": 372.24
+    },
+    {
+      "text": "いうのがあると。で、これは非常に疲れ",
+      "start_seconds": 368.4,
+      "end_seconds": 375.52
+    },
+    {
+      "text": "ますよね。で、1つはその人と人との距離",
+      "start_seconds": 372.24,
+      "end_seconds": 379.24
+    },
+    {
+      "text": "感ゼロ。もうぎゅパンパンパツパツ。それ",
+      "start_seconds": 375.52,
+      "end_seconds": 381.68
+    },
+    {
+      "text": "から時間も急いでるもんだからこういう",
+      "start_seconds": 379.24,
+      "end_seconds": 383.72
+    },
+    {
+      "text": "状況になってるんで、もうどうしても時間",
+      "start_seconds": 381.68,
+      "end_seconds": 386.8
+    },
+    {
+      "text": "にも余裕がない。それから距離感も全く",
+      "start_seconds": 383.72,
+      "end_seconds": 389.16
+    },
+    {
+      "text": "ゼロですからこういうのってやっぱり",
+      "start_seconds": 386.8,
+      "end_seconds": 392.16
+    },
+    {
+      "text": "ちょっと辛いし、ま、間がなさすぎるんだ",
+      "start_seconds": 389.16,
+      "end_seconds": 394.24
+    },
+    {
+      "text": "と思うんですよね。な[鼻息]ので",
+      "start_seconds": 392.16,
+      "end_seconds": 396.639
+    },
+    {
+      "text": "やっぱり間っていうのは大切だよなという",
+      "start_seconds": 394.24,
+      "end_seconds": 399.599
+    },
+    {
+      "text": "風に思って場所をしています。[咳払い]",
+      "start_seconds": 396.639,
+      "end_seconds": 402.0
+    },
+    {
+      "text": "で、実は1ヶ月ほど前にですね、イタリア",
+      "start_seconds": 399.599,
+      "end_seconds": 404.8
+    },
+    {
+      "text": "に行くチャンスがあって、で、本当は",
+      "start_seconds": 402.0,
+      "end_seconds": 406.0
+    },
+    {
+      "text": "ミラノでワークショップをや",
+      "start_seconds": 404.8,
+      "end_seconds": 408.28000000000003
+    },
+    {
+      "text": "るっていうので、その[咳払い]日ミラノ",
+      "start_seconds": 406.0,
+      "end_seconds": 410.12
+    },
+    {
+      "text": "に飛んで行って、それでみんなで",
+      "start_seconds": 408.28,
+      "end_seconds": 411.75899999999996
+    },
+    {
+      "text": "ワークショップをやるつもりだったんです",
+      "start_seconds": 410.12,
+      "end_seconds": 415.36
+    },
+    {
+      "text": "けど、飛行機が遅れで着いて電車に乗っ",
+      "start_seconds": 411.759,
+      "end_seconds": 418.47900000000004
+    },
+    {
+      "text": "たら電車を間違えで、着いたらボロニア",
+      "start_seconds": 415.36,
+      "end_seconds": 421.199
+    },
+    {
+      "text": "だったんですね。ほれでえと思ってで、",
+      "start_seconds": 418.479,
+      "end_seconds": 423.15999999999997
+    },
+    {
+      "text": "ボロニア次のミラのはって言ったらもう",
+      "start_seconds": 421.199,
+      "end_seconds": 426.199
+    },
+    {
+      "text": "半日先なんですよね。ほいで、あ、もう",
+      "start_seconds": 423.16,
+      "end_seconds": 427.71900000000005
+    },
+    {
+      "text": "どうしようもねえなと、こんな間違っ",
+      "start_seconds": 426.199,
+      "end_seconds": 429.759
+    },
+    {
+      "text": "[鼻息]ててしょうがないなと思って、あ",
+      "start_seconds": 427.719,
+      "end_seconds": 431.68
+    },
+    {
+      "text": "、もう無駄にしたこの時間っていう風に",
+      "start_seconds": 429.759,
+      "end_seconds": 434.759
+    },
+    {
+      "text": "思ったんですけど、そういえばボロニャ",
+      "start_seconds": 431.68,
+      "end_seconds": 437.16
+    },
+    {
+      "text": "いつか来たなと思って、その去年の9月に",
+      "start_seconds": 434.759,
+      "end_seconds": 440.44
+    },
+    {
+      "text": "1回ボロニャにたまたま20分ぐらい電車",
+      "start_seconds": 437.16,
+      "end_seconds": 442.59900000000005
+    },
+    {
+      "text": "が止まったんで、ま、ホームで待つのも",
+      "start_seconds": 440.44,
+      "end_seconds": 444.879
+    },
+    {
+      "text": "もったいないと思って1回外に出て、そし",
+      "start_seconds": 442.599,
+      "end_seconds": 447.319
+    },
+    {
+      "text": "たらちょっとなんか面白そうなパスタ売っ",
+      "start_seconds": 444.879,
+      "end_seconds": 449.639
+    },
+    {
+      "text": "てるお店があったんですよね。で、そこに",
+      "start_seconds": 447.319,
+      "end_seconds": 452.03900000000004
+    },
+    {
+      "text": "入ってってちょっと美味しいパスタを買っ",
+      "start_seconds": 449.639,
+      "end_seconds": 454.879
+    },
+    {
+      "text": "て帰った。で、それ美味しかった。で、",
+      "start_seconds": 452.039,
+      "end_seconds": 457.12
+    },
+    {
+      "text": "それを思い出したんで、で、もう1回です",
+      "start_seconds": 454.879,
+      "end_seconds": 459.72
+    },
+    {
+      "text": "ね、このボローニャに着いて半日あるから",
+      "start_seconds": 457.12,
+      "end_seconds": 463.0
+    },
+    {
+      "text": "行ってみました。そしたら同じお店があっ",
+      "start_seconds": 459.72,
+      "end_seconds": 465.91900000000004
+    },
+    {
+      "text": "て、同じパスタを同じ棚で売ってたんね。",
+      "start_seconds": 463.0,
+      "end_seconds": 468.44
+    },
+    {
+      "text": "で、またそれを買い、また持って買いた。",
+      "start_seconds": 465.919,
+      "end_seconds": 472.08
+    },
+    {
+      "text": "で、そん時になんか僕は、あ、なんかこの",
+      "start_seconds": 468.44,
+      "end_seconds": 474.84
+    },
+    {
+      "text": "店僕の店じゃんっていう風に思った。",
+      "start_seconds": 472.08,
+      "end_seconds": 477.639
+    },
+    {
+      "text": "たった2回しか行ってないのに。で、なん",
+      "start_seconds": 474.84,
+      "end_seconds": 480.63899999999995
+    },
+    {
+      "text": "かそれってあのお店の人がちょっと迎えて",
+      "start_seconds": 477.639,
+      "end_seconds": 483.12
+    },
+    {
+      "text": "くれた優しいみたいなのもあるんだけど、",
+      "start_seconds": 480.639,
+      "end_seconds": 486.599
+    },
+    {
+      "text": "自分でなんとなく運、足を運んで2回目に",
+      "start_seconds": 483.12,
+      "end_seconds": 489.4
+    },
+    {
+      "text": "行った時にもうすでにそう感じたのは",
+      "start_seconds": 486.599,
+      "end_seconds": 492.71999999999997
+    },
+    {
+      "text": "やっぱり自分でこう足を運んでいってそれ",
+      "start_seconds": 489.4,
+      "end_seconds": 495.28
+    },
+    {
+      "text": "で自分の場所をこうなんとなく作ったから",
+      "start_seconds": 492.72,
+      "end_seconds": 497.56
+    },
+    {
+      "text": "ではないか。で、今度行ったら絶対また",
+      "start_seconds": 495.28,
+      "end_seconds": 500.11999999999995
+    },
+    {
+      "text": "行きます。3回目でそうするとこれ僕の店",
+      "start_seconds": 497.56,
+      "end_seconds": 501.96
+    },
+    {
+      "text": "だからぐらいな感じになるんじゃないかな",
+      "start_seconds": 500.12,
+      "end_seconds": 504.12
+    },
+    {
+      "text": "。で、あの、これポーティコって言うん",
+      "start_seconds": 501.96,
+      "end_seconds": 506.44
+    },
+    {
+      "text": "ですけども、こういうアーチのこう回廊",
+      "start_seconds": 504.12,
+      "end_seconds": 508.199
+    },
+    {
+      "text": "みたいなの。これがあのボロニアとても",
+      "start_seconds": 506.44,
+      "end_seconds": 510.919
+    },
+    {
+      "text": "有名で、で、この後ですね、ずっと",
+      "start_seconds": 508.199,
+      "end_seconds": 514.08
+    },
+    {
+      "text": "ボロニナの町をずっと歩いた。で、なんと",
+      "start_seconds": 510.919,
+      "end_seconds": 516.5989999999999
+    },
+    {
+      "text": "なくこれボロニア僕の街だぜっていう感じ",
+      "start_seconds": 514.08,
+      "end_seconds": 519.08
+    },
+    {
+      "text": "がすごくするようにこうなったんですね。",
+      "start_seconds": 516.599,
+      "end_seconds": 521.719
+    },
+    {
+      "text": "なんで本当にこう、あの、ポコっとできた",
+      "start_seconds": 519.08,
+      "end_seconds": 524.6800000000001
+    },
+    {
+      "text": "時間なんだけど、ま、ちょっと考え方を",
+      "start_seconds": 521.719,
+      "end_seconds": 527.48
+    },
+    {
+      "text": "変えてで、自分からこの町に、ま、",
+      "start_seconds": 524.68,
+      "end_seconds": 530.04
+    },
+    {
+      "text": "コミットしていくっていうことをすると、",
+      "start_seconds": 527.48,
+      "end_seconds": 532.5600000000001
+    },
+    {
+      "text": "あ、これ、こんな知らないイタリアの町も",
+      "start_seconds": 530.04,
+      "end_seconds": 534.88
+    },
+    {
+      "text": "自分の町に近づくんじゃないかなという",
+      "start_seconds": 532.56,
+      "end_seconds": 538.88
+    },
+    {
+      "text": "ような体験をしました。で、今日1つあの",
+      "start_seconds": 534.88,
+      "end_seconds": 541.0
+    },
+    {
+      "text": "プロジェクトをご紹介したいんですけれど",
+      "start_seconds": 538.88,
+      "end_seconds": 543.76
+    },
+    {
+      "text": "、え、ベニアハウスプロジェクトというの",
+      "start_seconds": 541.0,
+      "end_seconds": 546.839
+    },
+    {
+      "text": "をやっています。で、これはあの東北の",
+      "start_seconds": 543.76,
+      "end_seconds": 550.12
+    },
+    {
+      "text": "震災15年前にありました。で、この東北",
+      "start_seconds": 546.839,
+      "end_seconds": 553.9200000000001
+    },
+    {
+      "text": "の震災の時にみんなあの家が流されたり",
+      "start_seconds": 550.12,
+      "end_seconds": 556.2
+    },
+    {
+      "text": "壊されたりしてしまいました。で、その時",
+      "start_seconds": 553.92,
+      "end_seconds": 558.8389999999999
+    },
+    {
+      "text": "に、ま、建築家として一体何ができるかと",
+      "start_seconds": 556.2,
+      "end_seconds": 560.839
+    },
+    {
+      "text": "いうことを、ま、考えさせられたわけです",
+      "start_seconds": 558.839,
+      "end_seconds": 564.2790000000001
+    },
+    {
+      "text": "けれども、[鼻息]あの、その当時もう",
+      "start_seconds": 560.839,
+      "end_seconds": 566.6400000000001
+    },
+    {
+      "text": "日本からそれだけじゃなくて世界からこう",
+      "start_seconds": 564.279,
+      "end_seconds": 569.12
+    },
+    {
+      "text": "、あの、大学さんが集まってみんな復興",
+      "start_seconds": 566.64,
+      "end_seconds": 571.36
+    },
+    {
+      "text": "すごく手伝ってたんですけど、それでも",
+      "start_seconds": 569.12,
+      "end_seconds": 574.72
+    },
+    {
+      "text": "なかなかあの、手が回らずなかなか大工",
+      "start_seconds": 571.36,
+      "end_seconds": 576.399
+    },
+    {
+      "text": "さん来てくれないっていう状況があったん",
+      "start_seconds": 574.72,
+      "end_seconds": 579.48
+    },
+    {
+      "text": "ですね。で、それなのでだったらば自分で",
+      "start_seconds": 576.399,
+      "end_seconds": 582.76
+    },
+    {
+      "text": "作れる家の仕組みを作ればみんな待ってる",
+      "start_seconds": 579.48,
+      "end_seconds": 585.0
+    },
+    {
+      "text": "間に自分たちで家ができるんじゃないかと",
+      "start_seconds": 582.76,
+      "end_seconds": 588.399
+    },
+    {
+      "text": "いうことで建築って複雑にやっぱり思わ",
+      "start_seconds": 585.0,
+      "end_seconds": 590.399
+    },
+    {
+      "text": "れるし、ま、事実複雑なところすごく多い",
+      "start_seconds": 588.399,
+      "end_seconds": 593.2
+    },
+    {
+      "text": "んだけどそれをなんとかこう簡単に仕組み",
+      "start_seconds": 590.399,
+      "end_seconds": 595.839
+    },
+    {
+      "text": "をしてってあげると実は素人でも作れん",
+      "start_seconds": 593.2,
+      "end_seconds": 597.9200000000001
+    },
+    {
+      "text": "じゃないかなということで、そういうこと",
+      "start_seconds": 595.839,
+      "end_seconds": 600.12
+    },
+    {
+      "text": "を始めました。これがあのベニアハウスな",
+      "start_seconds": 597.92,
+      "end_seconds": 603.279
+    },
+    {
+      "text": "んですけども、ま、自然素材を使って合板",
+      "start_seconds": 600.12,
+      "end_seconds": 605.9590000000001
+    },
+    {
+      "text": "って作られてるんですね。山の看伐剤を",
+      "start_seconds": 603.279,
+      "end_seconds": 609.2
+    },
+    {
+      "text": "使って作ります。で、それから、え、",
+      "start_seconds": 605.959,
+      "end_seconds": 611.3199999999999
+    },
+    {
+      "text": "セルフビルドで作るっていうこと、今言っ",
+      "start_seconds": 609.2,
+      "end_seconds": 613.76
+    },
+    {
+      "text": "たようにみんなに作ってもらいたいので、",
+      "start_seconds": 611.32,
+      "end_seconds": 616.6800000000001
+    },
+    {
+      "text": "このセルフビルドをなんとかしようと。で",
+      "start_seconds": 613.76,
+      "end_seconds": 618.64
+    },
+    {
+      "text": "、やってみたら分かったことはですね、",
+      "start_seconds": 616.68,
+      "end_seconds": 622.8389999999999
+    },
+    {
+      "text": "面白いことに自分で作るとその家に愛着を",
+      "start_seconds": 618.64,
+      "end_seconds": 625.24
+    },
+    {
+      "text": "感じるのでとっても大切にするんですよね",
+      "start_seconds": 622.839,
+      "end_seconds": 628.12
+    },
+    {
+      "text": "。で、実はこの写真は、えっと、ある漁師",
+      "start_seconds": 625.24,
+      "end_seconds": 630.44
+    },
+    {
+      "text": "さんたちなんですけれども、その漁師の町",
+      "start_seconds": 628.12,
+      "end_seconds": 633.88
+    },
+    {
+      "text": "の80%の絵が流されちゃった。で、そこ",
+      "start_seconds": 630.44,
+      "end_seconds": 636.24
+    },
+    {
+      "text": "にじゃあ漁師の人たちが集まる場所を作ろ",
+      "start_seconds": 633.88,
+      "end_seconds": 638.56
+    },
+    {
+      "text": "うって言うんで、漁師の皆さんに作って",
+      "start_seconds": 636.24,
+      "end_seconds": 641.44
+    },
+    {
+      "text": "もらったんですね。そしたらば本当に",
+      "start_seconds": 638.56,
+      "end_seconds": 643.8
+    },
+    {
+      "text": "みんなとっても愛してくれちゃって、それ",
+      "start_seconds": 641.44,
+      "end_seconds": 646.7600000000001
+    },
+    {
+      "text": "で行く度にですね、あの、ちょっとずつ棚",
+      "start_seconds": 643.8,
+      "end_seconds": 648.959
+    },
+    {
+      "text": "が増えたり、机が増えたりしてるんですよ",
+      "start_seconds": 646.76,
+      "end_seconds": 651.12
+    },
+    {
+      "text": "ね。で、それ彼ら作り方知ってるから",
+      "start_seconds": 648.959,
+      "end_seconds": 653.56
+    },
+    {
+      "text": "どんどん増えてく。それから、あの、具合",
+      "start_seconds": 651.12,
+      "end_seconds": 657.32
+    },
+    {
+      "text": "が悪い時は大概はですね、電話かかってき",
+      "start_seconds": 653.56,
+      "end_seconds": 659.8
+    },
+    {
+      "text": "て、ちょっと小林先生、あの、ちょいん",
+      "start_seconds": 657.32,
+      "end_seconds": 661.48
+    },
+    {
+      "text": "ですけどって言って、こうクレームの電話",
+      "start_seconds": 659.8,
+      "end_seconds": 663.519
+    },
+    {
+      "text": "かかってくること結構建築ってあるんです",
+      "start_seconds": 661.48,
+      "end_seconds": 666.12
+    },
+    {
+      "text": "けど、1回もかかってこなくて、で、行っ",
+      "start_seconds": 663.519,
+      "end_seconds": 668.48
+    },
+    {
+      "text": "てみると逆にこれね、ちょっと俺がやっ",
+      "start_seconds": 666.12,
+      "end_seconds": 670.68
+    },
+    {
+      "text": "ちゃったんだよねみたいに反省してるわけ",
+      "start_seconds": 668.48,
+      "end_seconds": 673.6
+    },
+    {
+      "text": "で、全く態度が違うんですよね。なので",
+      "start_seconds": 670.68,
+      "end_seconds": 675.959
+    },
+    {
+      "text": "やっぱり自分で作る、自分でコミット",
+      "start_seconds": 673.6,
+      "end_seconds": 678.0400000000001
+    },
+    {
+      "text": "するってことはとても大事だということを",
+      "start_seconds": 675.959,
+      "end_seconds": 680.3599999999999
+    },
+    {
+      "text": "このプロジェクトなんかで教えられました",
+      "start_seconds": 678.04,
+      "end_seconds": 683.7199999999999
+    },
+    {
+      "text": "。で、みんなで作るとなおそれに加えて",
+      "start_seconds": 680.36,
+      "end_seconds": 686.279
+    },
+    {
+      "text": "コミュニティの意識ってのができる。で、",
+      "start_seconds": 683.72,
+      "end_seconds": 688.76
+    },
+    {
+      "text": "特にその震災の後って本当にコミュニティ",
+      "start_seconds": 686.279,
+      "end_seconds": 690.639
+    },
+    {
+      "text": "バラバラになっちゃうので、そういう人",
+      "start_seconds": 688.76,
+      "end_seconds": 693.2
+    },
+    {
+      "text": "たちが新しく集まってコミュニティを作る",
+      "start_seconds": 690.639,
+      "end_seconds": 694.839
+    },
+    {
+      "text": "、そういうことができるということも",
+      "start_seconds": 693.2,
+      "end_seconds": 696.6
+    },
+    {
+      "text": "分かりました。ま、こういうことをやって",
+      "start_seconds": 694.839,
+      "end_seconds": 699.5600000000001
+    },
+    {
+      "text": "、あの、いくつか今までやってきて、大体",
+      "start_seconds": 696.6,
+      "end_seconds": 702.399
+    },
+    {
+      "text": "256のフェニアハウスってのを作ってき",
+      "start_seconds": 699.56,
+      "end_seconds": 706.04
+    },
+    {
+      "text": "たんですけれども、やっぱり今、あの、",
+      "start_seconds": 702.399,
+      "end_seconds": 709.32
+    },
+    {
+      "text": "その15年前の自然災害である津波とか",
+      "start_seconds": 706.04,
+      "end_seconds": 711.519
+    },
+    {
+      "text": "地震とかっていうこと以外にも水害も",
+      "start_seconds": 709.32,
+      "end_seconds": 714.0
+    },
+    {
+      "text": "すごく多いですし、それからやっぱ戦争が",
+      "start_seconds": 711.519,
+      "end_seconds": 717.92
+    },
+    {
+      "text": "あるので、世界中で家を壊されてしまった",
+      "start_seconds": 714.0,
+      "end_seconds": 720.0
+    },
+    {
+      "text": "から町を追われてしまった、国を追われて",
+      "start_seconds": 717.92,
+      "end_seconds": 722.399
+    },
+    {
+      "text": "しまったっていう人が、ま、何百万人と",
+      "start_seconds": 720.0,
+      "end_seconds": 724.6
+    },
+    {
+      "text": "いるわけなんですよね。なんかそういう",
+      "start_seconds": 722.399,
+      "end_seconds": 728.399
+    },
+    {
+      "text": "状況の中でどういう風にその人たちにあ",
+      "start_seconds": 724.6,
+      "end_seconds": 730.72
+    },
+    {
+      "text": "ここにいていいんだと、ここは自分のいる",
+      "start_seconds": 728.399,
+      "end_seconds": 733.04
+    },
+    {
+      "text": "場所なんだって思ってもらえるか、なんか",
+      "start_seconds": 730.72,
+      "end_seconds": 735.519
+    },
+    {
+      "text": "そういうことをあの追求してきた。ま、",
+      "start_seconds": 733.04,
+      "end_seconds": 739.0
+    },
+    {
+      "text": "これがあのベニアハウスです。で、1つ",
+      "start_seconds": 735.519,
+      "end_seconds": 741.5600000000001
+    },
+    {
+      "text": "だけ今日はあの事例としてあのお見せ",
+      "start_seconds": 739.0,
+      "end_seconds": 743.56
+    },
+    {
+      "text": "しようと思うんですけれど、これあの",
+      "start_seconds": 741.56,
+      "end_seconds": 746.04
+    },
+    {
+      "text": "ミヤンマーなんですけれどもミヤンマーは",
+      "start_seconds": 743.56,
+      "end_seconds": 748.3599999999999
+    },
+    {
+      "text": "あのクデタがあって以降なかなか政治的に",
+      "start_seconds": 746.04,
+      "end_seconds": 751.36
+    },
+    {
+      "text": "不安定だったりしますがこの時はですね",
+      "start_seconds": 748.36,
+      "end_seconds": 755.639
+    },
+    {
+      "text": "ぐらい前ででもあのやっぱりこのあの村は",
+      "start_seconds": 751.36,
+      "end_seconds": 760.36
+    },
+    {
+      "text": "ですね1年目が台風で2年目が完伐でで",
+      "start_seconds": 755.639,
+      "end_seconds": 762.9590000000001
+    },
+    {
+      "text": "結局農業全然できなくなってしょうがなく",
+      "start_seconds": 760.36,
+      "end_seconds": 767.1990000000001
+    },
+    {
+      "text": "てここに移り住んできた人たちで非常にま",
+      "start_seconds": 762.959,
+      "end_seconds": 769.5189999999999
+    },
+    {
+      "text": "ないので本当本当に火材だけ持ってきて、",
+      "start_seconds": 767.199,
+      "end_seconds": 771.56
+    },
+    {
+      "text": "それで自分たちで小屋を立ててっていうの",
+      "start_seconds": 769.519,
+      "end_seconds": 774.5600000000001
+    },
+    {
+      "text": "をこんな感じで暮らしてたんですね。で、",
+      "start_seconds": 771.56,
+      "end_seconds": 776.68
+    },
+    {
+      "text": "あの見たら分かるようにちょっと床がこう",
+      "start_seconds": 774.56,
+      "end_seconds": 780.279
+    },
+    {
+      "text": "上がっているのは年のうち3ヶ月ぐらいが",
+      "start_seconds": 776.68,
+      "end_seconds": 783.399
+    },
+    {
+      "text": "あの浮で雨なんですね。だから水がだっ",
+      "start_seconds": 780.279,
+      "end_seconds": 785.24
+    },
+    {
+      "text": "上がってきちゃうんですね。でそうすると",
+      "start_seconds": 783.399,
+      "end_seconds": 787.68
+    },
+    {
+      "text": "どうなるかって言うと結局農業ができない",
+      "start_seconds": 785.24,
+      "end_seconds": 790.24
+    },
+    {
+      "text": "からみんな家族のお父さんお兄ちゃんたち",
+      "start_seconds": 787.68,
+      "end_seconds": 792.959
+    },
+    {
+      "text": "もみんな家にいる。それで子供たちも遊び",
+      "start_seconds": 790.24,
+      "end_seconds": 795.9590000000001
+    },
+    {
+      "text": "に行けないから結局家ん中に結局牛々な",
+      "start_seconds": 792.959,
+      "end_seconds": 798.5189999999999
+    },
+    {
+      "text": "状態で3ヶ月過ごさないといけない。で、",
+      "start_seconds": 795.959,
+      "end_seconds": 802.079
+    },
+    {
+      "text": "そうすると非常に悪いことにその1番下の",
+      "start_seconds": 798.519,
+      "end_seconds": 804.639
+    },
+    {
+      "text": "子がいじめられるってことが起きてで家庭",
+      "start_seconds": 802.079,
+      "end_seconds": 806.88
+    },
+    {
+      "text": "内暴力っていうのがま、起きてるという",
+      "start_seconds": 804.639,
+      "end_seconds": 810.0
+    },
+    {
+      "text": "事実が分かりました。その非常に悪い時は",
+      "start_seconds": 806.88,
+      "end_seconds": 811.88
+    },
+    {
+      "text": "命を落とすみたいなこともあったんですね",
+      "start_seconds": 810.0,
+      "end_seconds": 814.12
+    },
+    {
+      "text": "。で、これな何とかならないかっていう",
+      "start_seconds": 811.88,
+      "end_seconds": 817.4399999999999
+    },
+    {
+      "text": "ことで話し合った結果だったらいつでも",
+      "start_seconds": 814.12,
+      "end_seconds": 821.0
+    },
+    {
+      "text": "子供が来れる子供の家を作ろうということ",
+      "start_seconds": 817.44,
+      "end_seconds": 824.0790000000001
+    },
+    {
+      "text": "で、そこには24時間365日でも来て",
+      "start_seconds": 821.0,
+      "end_seconds": 826.32
+    },
+    {
+      "text": "いいよという、そういう場所を作ろうと",
+      "start_seconds": 824.079,
+      "end_seconds": 829.12
+    },
+    {
+      "text": "いうことを決めました。で、まずあの僕",
+      "start_seconds": 826.32,
+      "end_seconds": 833.1990000000001
+    },
+    {
+      "text": "たちが自分で設計したものを模型を作って",
+      "start_seconds": 829.12,
+      "end_seconds": 835.88
+    },
+    {
+      "text": "で、現地に持っていって、で、その模型を",
+      "start_seconds": 833.199,
+      "end_seconds": 838.16
+    },
+    {
+      "text": "こうちょっとバラバラ渡してで、まず",
+      "start_seconds": 835.88,
+      "end_seconds": 840.48
+    },
+    {
+      "text": "ワークショップやろうということで、それ",
+      "start_seconds": 838.16,
+      "end_seconds": 842.48
+    },
+    {
+      "text": "でみんなでグループになって、で、",
+      "start_seconds": 840.48,
+      "end_seconds": 844.04
+    },
+    {
+      "text": "ちょっと切り込みを入れてるので、そこ",
+      "start_seconds": 842.48,
+      "end_seconds": 846.04
+    },
+    {
+      "text": "やって入れてくと少し立体になるんですよ",
+      "start_seconds": 844.04,
+      "end_seconds": 848.4399999999999
+    },
+    {
+      "text": "ね。で、そうやってこう触ってもらって",
+      "start_seconds": 846.04,
+      "end_seconds": 850.12
+    },
+    {
+      "text": "ものを作る楽しさみたいなの味わって",
+      "start_seconds": 848.44,
+      "end_seconds": 852.1990000000001
+    },
+    {
+      "text": "もらおうと。で、みんなやってた。この子",
+      "start_seconds": 850.12,
+      "end_seconds": 854.199
+    },
+    {
+      "text": "だけはやらなかったんですけど、この子は",
+      "start_seconds": 852.199,
+      "end_seconds": 856.959
+    },
+    {
+      "text": "僕だけを見てて、で、非常に興味も、ま、",
+      "start_seconds": 854.199,
+      "end_seconds": 858.7199999999999
+    },
+    {
+      "text": "カメラに興味があったのかもしれない。ま",
+      "start_seconds": 856.959,
+      "end_seconds": 860.88
+    },
+    {
+      "text": "、こういうアイデンティはとても大切にし",
+      "start_seconds": 858.72,
+      "end_seconds": 863.6
+    },
+    {
+      "text": "てあげたい。それはそれで良しとします。",
+      "start_seconds": 860.88,
+      "end_seconds": 867.279
+    },
+    {
+      "text": "で、実際に作っていくとこういう家を作っ",
+      "start_seconds": 863.6,
+      "end_seconds": 869.519
+    },
+    {
+      "text": "たり、それからこの子なんか本当に立体的",
+      "start_seconds": 867.279,
+      "end_seconds": 872.16
+    },
+    {
+      "text": "に飛行機を作ったりですね。で、こういう",
+      "start_seconds": 869.519,
+      "end_seconds": 874.16
+    },
+    {
+      "text": "別にあの飛行機作るための部品じゃないん",
+      "start_seconds": 872.16,
+      "end_seconds": 876.68
+    },
+    {
+      "text": "だけど、それでも作りたいものは作れる。",
+      "start_seconds": 874.16,
+      "end_seconds": 879.36
+    },
+    {
+      "text": "で、ちょっとこう手についたところで、",
+      "start_seconds": 876.68,
+      "end_seconds": 882.8389999999999
+    },
+    {
+      "text": "今度はみんなで集まって、それで1件の家",
+      "start_seconds": 879.36,
+      "end_seconds": 885.9590000000001
+    },
+    {
+      "text": "を作ろうということで、それで、え、こう",
+      "start_seconds": 882.839,
+      "end_seconds": 888.519
+    },
+    {
+      "text": "いうものを作ります。これが1/1の模型",
+      "start_seconds": 885.959,
+      "end_seconds": 891.92
+    },
+    {
+      "text": "なんですが、本当に実物もこれを",
+      "start_seconds": 888.519,
+      "end_seconds": 895.04
+    },
+    {
+      "text": "組み立てるのと同じ方法で組み立つので、",
+      "start_seconds": 891.92,
+      "end_seconds": 897.92
+    },
+    {
+      "text": "なので本当にここで子供たちは嫌がどう",
+      "start_seconds": 895.04,
+      "end_seconds": 900.959
+    },
+    {
+      "text": "やって立つかが分かる。で、いよいよ次の",
+      "start_seconds": 897.92,
+      "end_seconds": 903.7199999999999
+    },
+    {
+      "text": "日から本当に1/1を作るということを",
+      "start_seconds": 900.959,
+      "end_seconds": 906.5189999999999
+    },
+    {
+      "text": "やります。これ10歳のこと、11歳の",
+      "start_seconds": 903.72,
+      "end_seconds": 908.88
+    },
+    {
+      "text": "ことをみんな一緒にやるわけなんですけど",
+      "start_seconds": 906.519,
+      "end_seconds": 911.32
+    },
+    {
+      "text": "、もちろんあの大人も入ってやります",
+      "start_seconds": 908.88,
+      "end_seconds": 914.519
+    },
+    {
+      "text": "けれども。で、3週、2週間後、えっと、",
+      "start_seconds": 911.32,
+      "end_seconds": 917.32
+    },
+    {
+      "text": "こうやってうちの学生と子供たちはもう",
+      "start_seconds": 914.519,
+      "end_seconds": 919.9590000000001
+    },
+    {
+      "text": "家族のように本当に仲良くなって、それ",
+      "start_seconds": 917.32,
+      "end_seconds": 922.839
+    },
+    {
+      "text": "こそみんなで物を作るとこういうような",
+      "start_seconds": 919.959,
+      "end_seconds": 924.92
+    },
+    {
+      "text": "コミュニティがこうできるんですよね。で",
+      "start_seconds": 922.839,
+      "end_seconds": 927.759
+    },
+    {
+      "text": "、3週間後に、えっと、こういうものが",
+      "start_seconds": 924.92,
+      "end_seconds": 930.88
+    },
+    {
+      "text": "できました。で、えっと、ここであの子供",
+      "start_seconds": 927.759,
+      "end_seconds": 932.519
+    },
+    {
+      "text": "たちはいつでも来ていいよ。で、ここが",
+      "start_seconds": 930.88,
+      "end_seconds": 935.24
+    },
+    {
+      "text": "2m上がってるので、え、村で1番高い",
+      "start_seconds": 932.519,
+      "end_seconds": 938.12
+    },
+    {
+      "text": "場所であるということで、どんな交水でも",
+      "start_seconds": 935.24,
+      "end_seconds": 940.36
+    },
+    {
+      "text": "絶対安全っていうような場所を作りました",
+      "start_seconds": 938.12,
+      "end_seconds": 944.279
+    },
+    {
+      "text": "。で、えっと、最終日にみんなで掃除をし",
+      "start_seconds": 940.36,
+      "end_seconds": 947.12
+    },
+    {
+      "text": "ました。で、掃除をしているとふっとこう",
+      "start_seconds": 944.279,
+      "end_seconds": 950.0
+    },
+    {
+      "text": "窓を見上げるとこれ1人の少年なんです",
+      "start_seconds": 947.12,
+      "end_seconds": 953.88
+    },
+    {
+      "text": "けども、全然掃除してないね。で、この子",
+      "start_seconds": 950.0,
+      "end_seconds": 956.88
+    },
+    {
+      "text": "はこの窓で、えっと、1人で怖え。でも",
+      "start_seconds": 953.88,
+      "end_seconds": 959.48
+    },
+    {
+      "text": "ちょっと満足な顔してる感じがしたんです",
+      "start_seconds": 956.88,
+      "end_seconds": 963.959
+    },
+    {
+      "text": "よね。それで、あ、この子はきっと家でも",
+      "start_seconds": 959.48,
+      "end_seconds": 966.48
+    },
+    {
+      "text": "居場所がないんじゃないかなという風に、",
+      "start_seconds": 963.959,
+      "end_seconds": 969.7589999999999
+    },
+    {
+      "text": "あの、思いました。実はこの子はあの、",
+      "start_seconds": 966.48,
+      "end_seconds": 972.36
+    },
+    {
+      "text": "現場には毎日来てたんですよね。で、毎日",
+      "start_seconds": 969.759,
+      "end_seconds": 974.519
+    },
+    {
+      "text": "来てたんだけど全然手伝わない。ただ",
+      "start_seconds": 972.36,
+      "end_seconds": 976.92
+    },
+    {
+      "text": "ちょろちょろ遊んでるだけなのだけど必ず",
+      "start_seconds": 974.519,
+      "end_seconds": 979.8
+    },
+    {
+      "text": "毎日来てたんですよね。それでなんかこの",
+      "start_seconds": 976.92,
+      "end_seconds": 983.519
+    },
+    {
+      "text": "隣にこの場所にこうミットしてなんとなく",
+      "start_seconds": 979.8,
+      "end_seconds": 986.199
+    },
+    {
+      "text": "こう自分の居場所みたいなのを探してたの",
+      "start_seconds": 983.519,
+      "end_seconds": 989.44
+    },
+    {
+      "text": "かなっていう風に今思うとちょっと考え",
+      "start_seconds": 986.199,
+      "end_seconds": 991.279
+    },
+    {
+      "text": "そういう風にま、考えられるかなと思い",
+      "start_seconds": 989.44,
+      "end_seconds": 995.24
+    },
+    {
+      "text": "ます。で、やっぱりあのこの子みたいに",
+      "start_seconds": 991.279,
+      "end_seconds": 1000.079
+    },
+    {
+      "text": "多分その普通に自分の家の中でこう自分",
+      "start_seconds": 995.24,
+      "end_seconds": 1002.639
+    },
+    {
+      "text": "らしくいられるみたいな場所ってやっぱ",
+      "start_seconds": 1000.079,
+      "end_seconds": 1004.319
+    },
+    {
+      "text": "ああいう家の中には多分ないんじゃないか",
+      "start_seconds": 1002.639,
+      "end_seconds": 1007.319
+    },
+    {
+      "text": "な。で、そういった時に僕たちがあのこう",
+      "start_seconds": 1004.319,
+      "end_seconds": 1009.56
+    },
+    {
+      "text": "いう場所を提供できたのはすごく良かった",
+      "start_seconds": 1007.319,
+      "end_seconds": 1011.8389999999999
+    },
+    {
+      "text": "なという風に思って、そういう活動続け",
+      "start_seconds": 1009.56,
+      "end_seconds": 1015.0
+    },
+    {
+      "text": "たいんだけれども、ただ家がないと本当に",
+      "start_seconds": 1011.839,
+      "end_seconds": 1017.2790000000001
+    },
+    {
+      "text": "こういう気持ちにならないかというと、僕",
+      "start_seconds": 1015.0,
+      "end_seconds": 1019.72
+    },
+    {
+      "text": "はそうでもないという風に思っていて、",
+      "start_seconds": 1017.279,
+      "end_seconds": 1023.72
+    },
+    {
+      "text": "大切なことってこの子のようにやっぱり",
+      "start_seconds": 1019.72,
+      "end_seconds": 1027.799
+    },
+    {
+      "text": "えっと自分の時間を見つけてそれであ、",
+      "start_seconds": 1023.72,
+      "end_seconds": 1030.24
+    },
+    {
+      "text": "ここじゃないかっていう場所に自分から",
+      "start_seconds": 1027.799,
+      "end_seconds": 1033.199
+    },
+    {
+      "text": "コミットすることが大切だっていうことだ",
+      "start_seconds": 1030.24,
+      "end_seconds": 1035.799
+    },
+    {
+      "text": "と思うんですね。で、そのコミットするっ",
+      "start_seconds": 1033.199,
+      "end_seconds": 1039.199
+    },
+    {
+      "text": "ていうのがちょっとハードルが高い、式が",
+      "start_seconds": 1035.799,
+      "end_seconds": 1041.9189999999999
+    },
+    {
+      "text": "高い場合もあると思うんですけど、でも",
+      "start_seconds": 1039.199,
+      "end_seconds": 1044.52
+    },
+    {
+      "text": "それをちょっと勇気を出して超えてみると",
+      "start_seconds": 1041.919,
+      "end_seconds": 1048.0790000000002
+    },
+    {
+      "text": "、そうするとあ、2回目はもうちょっと楽",
+      "start_seconds": 1044.52,
+      "end_seconds": 1049.84
+    },
+    {
+      "text": "に行けるようになるし、3回目はもっと楽",
+      "start_seconds": 1048.079,
+      "end_seconds": 1051.84
+    },
+    {
+      "text": "に行けるようになるし、で、こうやって何",
+      "start_seconds": 1049.84,
+      "end_seconds": 1054.3999999999999
+    },
+    {
+      "text": "回も行ってるうちにその場所が自分のもの",
+      "start_seconds": 1051.84,
+      "end_seconds": 1057.32
+    },
+    {
+      "text": "になっていくということがあるのではない",
+      "start_seconds": 1054.4,
+      "end_seconds": 1060.5590000000002
+    },
+    {
+      "text": "かと思います。で、特にその都市生活をし",
+      "start_seconds": 1057.32,
+      "end_seconds": 1064.6399999999999
+    },
+    {
+      "text": "てるとぎ救急パツパツみたいなことが",
+      "start_seconds": 1060.559,
+      "end_seconds": 1067.0
+    },
+    {
+      "text": "すごく多くって僕たちはやっぱり疲れたり",
+      "start_seconds": 1064.64,
+      "end_seconds": 1069.679
+    },
+    {
+      "text": "するじゃないですか。で、そういった時に",
+      "start_seconds": 1067.0,
+      "end_seconds": 1072.799
+    },
+    {
+      "text": "自分の居場所みたいなのをどうやったら",
+      "start_seconds": 1069.679,
+      "end_seconds": 1074.919
+    },
+    {
+      "text": "見つけられるか、これはとても大事なこと",
+      "start_seconds": 1072.799,
+      "end_seconds": 1078.4
+    },
+    {
+      "text": "だと思ってて、ま、それを皆さんも是非",
+      "start_seconds": 1074.919,
+      "end_seconds": 1080.76
+    },
+    {
+      "text": "試していただきたいし、絶対にできること",
+      "start_seconds": 1078.4,
+      "end_seconds": 1082.919
+    },
+    {
+      "text": "だと思うんですね。で、そのために",
+      "start_seconds": 1080.76,
+      "end_seconds": 1085.76
+    },
+    {
+      "text": "ちょっと勇気を持ってコミットしてみると",
+      "start_seconds": 1082.919,
+      "end_seconds": 1088.2800000000002
+    },
+    {
+      "text": "なんかそういったことをあの試していって",
+      "start_seconds": 1085.76,
+      "end_seconds": 1090.919
+    },
+    {
+      "text": "いただければいいなと思っています。以上",
+      "start_seconds": 1088.28,
+      "end_seconds": 1092.552
+    },
+    {
+      "text": "です。ありがとうございました。",
+      "start_seconds": 1090.919,
+      "end_seconds": 1094.5720000000001
+    },
+    {
+      "text": "[咳払い]",
+      "start_seconds": 1092.552,
+      "end_seconds": 1094.572
+    }
+  ],
+  "display_captions": [
+    {
+      "text": "[拍手]",
+      "start_seconds": 5.239,
+      "end_seconds": 7.259,
+      "id": "XhPruwtidsE-display-0001",
+      "segment_id": "XhPruwtidsE-ja-0001"
+    },
+    {
+      "text": "こんにちは。小林ひです。今日はですね、",
+      "start_seconds": 8.96,
+      "end_seconds": 13.28,
+      "id": "XhPruwtidsE-display-0002",
+      "segment_id": "XhPruwtidsE-ja-0002"
+    },
+    {
+      "text": "あの自分の居場所とはということで、え、",
+      "start_seconds": 13.28,
+      "end_seconds": 18.4,
+      "id": "XhPruwtidsE-display-0003",
+      "segment_id": "XhPruwtidsE-ja-0002"
+    },
+    {
+      "text": "自分がここにいていいんだ。あ、ここは",
+      "start_seconds": 18.4,
+      "end_seconds": 21.519,
+      "id": "XhPruwtidsE-display-0004",
+      "segment_id": "XhPruwtidsE-ja-0003"
+    },
+    {
+      "text": "自分の場所だって思え",
+      "start_seconds": 21.519,
+      "end_seconds": 23.199,
+      "id": "XhPruwtidsE-display-0005",
+      "segment_id": "XhPruwtidsE-ja-0003"
+    },
+    {
+      "text": "るってどういうことか。なんかそんなお話",
+      "start_seconds": 23.199,
+      "end_seconds": 25.359,
+      "id": "XhPruwtidsE-display-0006",
+      "segment_id": "XhPruwtidsE-ja-0003"
+    },
+    {
+      "text": "ができればなという風に思います。で、私",
+      "start_seconds": 25.359,
+      "end_seconds": 28.519,
+      "id": "XhPruwtidsE-display-0007",
+      "segment_id": "XhPruwtidsE-ja-0003"
+    },
+    {
+      "text": "はあの、今ご紹介あったように慶王大学の",
+      "start_seconds": 28.519,
+      "end_seconds": 31.8,
+      "id": "XhPruwtidsE-display-0008",
+      "segment_id": "XhPruwtidsE-ja-0004"
+    },
+    {
+      "text": "、え、湘南藤沢キャンパスSFCっていう",
+      "start_seconds": 31.8,
+      "end_seconds": 34.16,
+      "id": "XhPruwtidsE-display-0009",
+      "segment_id": "XhPruwtidsE-ja-0004"
+    },
+    {
+      "text": "とこにいるんですけれども、[咳払い]",
+      "start_seconds": 34.16,
+      "end_seconds": 36.16,
+      "id": "XhPruwtidsE-display-0010",
+      "segment_id": "XhPruwtidsE-ja-0004"
+    },
+    {
+      "text": "SFCってちょっと遠いんですよね、都会",
+      "start_seconds": 36.16,
+      "end_seconds": 38.04,
+      "id": "XhPruwtidsE-display-0011",
+      "segment_id": "XhPruwtidsE-ja-0004"
+    },
+    {
+      "text": "から。なんであの、結構泊まりがけで行く",
+      "start_seconds": 38.04,
+      "end_seconds": 41.48,
+      "id": "XhPruwtidsE-display-0012",
+      "segment_id": "XhPruwtidsE-ja-0005"
+    },
+    {
+      "text": "学生が結構います。で、ある朝、ちょっと",
+      "start_seconds": 41.48,
+      "end_seconds": 43.92,
+      "id": "XhPruwtidsE-display-0013",
+      "segment_id": "XhPruwtidsE-ja-0005"
+    },
+    {
+      "text": "今日は朝からやろうぜと思って研究室、",
+      "start_seconds": 43.92,
+      "end_seconds": 46.559,
+      "id": "XhPruwtidsE-display-0014",
+      "segment_id": "XhPruwtidsE-ja-0005"
+    },
+    {
+      "text": "これ僕の研究室なんですが、行ってみると",
+      "start_seconds": 46.559,
+      "end_seconds": 50.64,
+      "id": "XhPruwtidsE-display-0015",
+      "segment_id": "XhPruwtidsE-ja-0006"
+    },
+    {
+      "text": "誰か寝てたと。で、これうちの学生なん",
+      "start_seconds": 50.64,
+      "end_seconds": 53.48,
+      "id": "XhPruwtidsE-display-0016",
+      "segment_id": "XhPruwtidsE-ja-0006"
+    },
+    {
+      "text": "ですけど、なんか自分の場所が取られた",
+      "start_seconds": 53.48,
+      "end_seconds": 57.399,
+      "id": "XhPruwtidsE-display-0017",
+      "segment_id": "XhPruwtidsE-ja-0006"
+    },
+    {
+      "text": "なっ[笑い]ていう感じがして、ちょっと",
+      "start_seconds": 57.399,
+      "end_seconds": 59.44,
+      "id": "XhPruwtidsE-display-0018",
+      "segment_id": "XhPruwtidsE-ja-0007"
+    },
+    {
+      "text": "寂しかった。で、あ、なんかやっぱり自分",
+      "start_seconds": 59.44,
+      "end_seconds": 62.359,
+      "id": "XhPruwtidsE-display-0019",
+      "segment_id": "XhPruwtidsE-ja-0007"
+    },
+    {
+      "text": "も一応学校にこの場所僕の場所なんだって",
+      "start_seconds": 62.359,
+      "end_seconds": 64.76,
+      "id": "XhPruwtidsE-display-0020",
+      "segment_id": "XhPruwtidsE-ja-0007"
+    },
+    {
+      "text": "思う場所持ってんだなってことに気づかさ",
+      "start_seconds": 64.76,
+      "end_seconds": 66.76,
+      "id": "XhPruwtidsE-display-0021",
+      "segment_id": "XhPruwtidsE-ja-0007"
+    },
+    {
+      "text": "れたんですけど、でも僕よりも彼らの方が",
+      "start_seconds": 66.76,
+      "end_seconds": 70.08,
+      "id": "XhPruwtidsE-display-0022",
+      "segment_id": "XhPruwtidsE-ja-0008"
+    },
+    {
+      "text": "長くいるんですよね、学校に。だから彼ら",
+      "start_seconds": 70.08,
+      "end_seconds": 72.52,
+      "id": "XhPruwtidsE-display-0023",
+      "segment_id": "XhPruwtidsE-ja-0008"
+    },
+    {
+      "text": "の方がもっと僕よりもこの場所を自分の",
+      "start_seconds": 72.52,
+      "end_seconds": 75.119,
+      "id": "XhPruwtidsE-display-0024",
+      "segment_id": "XhPruwtidsE-ja-0008"
+    },
+    {
+      "text": "場所だと思ってんのかもしれないという風",
+      "start_seconds": 75.119,
+      "end_seconds": 77.52,
+      "id": "XhPruwtidsE-display-0025",
+      "segment_id": "XhPruwtidsE-ja-0008"
+    },
+    {
+      "text": "に思います。なので、そのどういう風な",
+      "start_seconds": 77.52,
+      "end_seconds": 80.479,
+      "id": "XhPruwtidsE-display-0026",
+      "segment_id": "XhPruwtidsE-ja-0009"
+    },
+    {
+      "text": "状況だとこう自分の場所だ、自分1人でも",
+      "start_seconds": 80.479,
+      "end_seconds": 84.079,
+      "id": "XhPruwtidsE-display-0027",
+      "segment_id": "XhPruwtidsE-ja-0009"
+    },
+    {
+      "text": "いていい場所だっていう風に思えるか、",
+      "start_seconds": 84.079,
+      "end_seconds": 86.68,
+      "id": "XhPruwtidsE-display-0028",
+      "segment_id": "XhPruwtidsE-ja-0009"
+    },
+    {
+      "text": "なんかそんなことをちょっと考えてみたい",
+      "start_seconds": 86.68,
+      "end_seconds": 89.119,
+      "id": "XhPruwtidsE-display-0029",
+      "segment_id": "XhPruwtidsE-ja-0009"
+    },
+    {
+      "text": "なと思います。",
+      "start_seconds": 89.119,
+      "end_seconds": 91.439,
+      "id": "XhPruwtidsE-display-0030",
+      "segment_id": "XhPruwtidsE-ja-0010"
+    },
+    {
+      "text": "え、もう5年前になりますけれども、",
+      "start_seconds": 91.439,
+      "end_seconds": 93.2,
+      "id": "XhPruwtidsE-display-0031",
+      "segment_id": "XhPruwtidsE-ja-0011"
+    },
+    {
+      "text": "コロナの時期にあの家にたくさんダン",
+      "start_seconds": 93.2,
+      "end_seconds": 96.28,
+      "id": "XhPruwtidsE-display-0032",
+      "segment_id": "XhPruwtidsE-ja-0011"
+    },
+    {
+      "text": "ボールがあったじゃないですか。で、そし",
+      "start_seconds": 96.28,
+      "end_seconds": 98.439,
+      "id": "XhPruwtidsE-display-0033",
+      "segment_id": "XhPruwtidsE-ja-0011"
+    },
+    {
+      "text": "たらばうちで飼ってる猫がですね、",
+      "start_seconds": 98.439,
+      "end_seconds": 101.119,
+      "id": "XhPruwtidsE-display-0034",
+      "segment_id": "XhPruwtidsE-ja-0011"
+    },
+    {
+      "text": "ちょっとずつこう近寄っててですね、",
+      "start_seconds": 101.119,
+      "end_seconds": 104.159,
+      "id": "XhPruwtidsE-display-0035",
+      "segment_id": "XhPruwtidsE-ja-0012"
+    },
+    {
+      "text": "ガサガサ入ってで、なんかね、落ち着い",
+      "start_seconds": 104.159,
+      "end_seconds": 107.24,
+      "id": "XhPruwtidsE-display-0036",
+      "segment_id": "XhPruwtidsE-ja-0012"
+    },
+    {
+      "text": "ちゃったんですよね。で、これ、あの、",
+      "start_seconds": 107.24,
+      "end_seconds": 110.24,
+      "id": "XhPruwtidsE-display-0037",
+      "segment_id": "XhPruwtidsE-ja-0012"
+    },
+    {
+      "text": "この子はとってもこういう場所を見つける",
+      "start_seconds": 110.24,
+      "end_seconds": 112.079,
+      "id": "XhPruwtidsE-display-0038",
+      "segment_id": "XhPruwtidsE-ja-0012"
+    },
+    {
+      "text": "のが得意で、それで家の中色々探って、",
+      "start_seconds": 112.079,
+      "end_seconds": 115.159,
+      "id": "XhPruwtidsE-display-0039",
+      "segment_id": "XhPruwtidsE-ja-0013"
+    },
+    {
+      "text": "それですごく気持ちのいい場所にこうそこ",
+      "start_seconds": 115.159,
+      "end_seconds": 117.84,
+      "id": "XhPruwtidsE-display-0040",
+      "segment_id": "XhPruwtidsE-ja-0013"
+    },
+    {
+      "text": "に収まるみたいなので、え、僕も結構この",
+      "start_seconds": 117.84,
+      "end_seconds": 122.0,
+      "id": "XhPruwtidsE-display-0041",
+      "segment_id": "XhPruwtidsE-ja-0013"
+    },
+    {
+      "text": "子に教えられてるみたいなところがあって",
+      "start_seconds": 122.0,
+      "end_seconds": 123.92,
+      "id": "XhPruwtidsE-display-0042",
+      "segment_id": "XhPruwtidsE-ja-0013"
+    },
+    {
+      "text": "、どんな場所がやっぱ気持ちいいのかなっ",
+      "start_seconds": 123.92,
+      "end_seconds": 126.84,
+      "id": "XhPruwtidsE-display-0043",
+      "segment_id": "XhPruwtidsE-ja-0014"
+    },
+    {
+      "text": "ていうことを考えさせられました。",
+      "start_seconds": 126.84,
+      "end_seconds": 129.036,
+      "id": "XhPruwtidsE-display-0044",
+      "segment_id": "XhPruwtidsE-ja-0014"
+    },
+    {
+      "text": "[咳払い]そんなんで私もちょっとやって",
+      "start_seconds": 129.036,
+      "end_seconds": 130.44,
+      "id": "XhPruwtidsE-display-0045",
+      "segment_id": "XhPruwtidsE-ja-0015"
+    },
+    {
+      "text": "みましたみたいな。で、これダンボール",
+      "start_seconds": 130.44,
+      "end_seconds": 132.56,
+      "id": "XhPruwtidsE-display-0046",
+      "segment_id": "XhPruwtidsE-ja-0015"
+    },
+    {
+      "text": "使ってで、なんかやっぱりコロナの時期",
+      "start_seconds": 132.56,
+      "end_seconds": 134.959,
+      "id": "XhPruwtidsE-display-0047",
+      "segment_id": "XhPruwtidsE-ja-0015"
+    },
+    {
+      "text": "ってなかなかこう家族と一緒にいるんだ",
+      "start_seconds": 134.959,
+      "end_seconds": 138.2,
+      "id": "XhPruwtidsE-display-0048",
+      "segment_id": "XhPruwtidsE-ja-0015"
+    },
+    {
+      "text": "けど1人になれないな。家の中に1人に",
+      "start_seconds": 138.2,
+      "end_seconds": 140.599,
+      "id": "XhPruwtidsE-display-0049",
+      "segment_id": "XhPruwtidsE-ja-0015"
+    },
+    {
+      "text": "なれる場所なかなかないから。で、こう",
+      "start_seconds": 140.599,
+      "end_seconds": 142.36,
+      "id": "XhPruwtidsE-display-0050",
+      "segment_id": "XhPruwtidsE-ja-0016"
+    },
+    {
+      "text": "やって見るとあ、結構いいじゃんと思った",
+      "start_seconds": 142.36,
+      "end_seconds": 144.519,
+      "id": "XhPruwtidsE-display-0051",
+      "segment_id": "XhPruwtidsE-ja-0016"
+    },
+    {
+      "text": "し、こうやって見るとなお良かったりする",
+      "start_seconds": 144.519,
+      "end_seconds": 146.959,
+      "id": "XhPruwtidsE-display-0052",
+      "segment_id": "XhPruwtidsE-ja-0016"
+    },
+    {
+      "text": "わけなんですよね。なんだけど、一応僕も",
+      "start_seconds": 146.959,
+      "end_seconds": 149.239,
+      "id": "XhPruwtidsE-display-0053",
+      "segment_id": "XhPruwtidsE-ja-0016"
+    },
+    {
+      "text": "建築やってるんで、もうちょっとちゃんと",
+      "start_seconds": 149.239,
+      "end_seconds": 151.16,
+      "id": "XhPruwtidsE-display-0054",
+      "segment_id": "XhPruwtidsE-ja-0016"
+    },
+    {
+      "text": "作ってみようってことで、これあのプラダ",
+      "start_seconds": 151.16,
+      "end_seconds": 153.56,
+      "id": "XhPruwtidsE-display-0055",
+      "segment_id": "XhPruwtidsE-ja-0017"
+    },
+    {
+      "text": "ンって言うんですけど、プラスチックダン",
+      "start_seconds": 153.56,
+      "end_seconds": 155.319,
+      "id": "XhPruwtidsE-display-0056",
+      "segment_id": "XhPruwtidsE-ja-0017"
+    },
+    {
+      "text": "ボールで畳[咳払い]1畳分、これを、ま",
+      "start_seconds": 155.319,
+      "end_seconds": 158.0,
+      "id": "XhPruwtidsE-display-0057",
+      "segment_id": "XhPruwtidsE-ja-0017"
+    },
+    {
+      "text": "、3枚に切ってで、切り込み入れて",
+      "start_seconds": 158.0,
+      "end_seconds": 160.4,
+      "id": "XhPruwtidsE-display-0058",
+      "segment_id": "XhPruwtidsE-ja-0017"
+    },
+    {
+      "text": "組み立てるみたいな。で、そうすると、ま",
+      "start_seconds": 160.4,
+      "end_seconds": 162.64,
+      "id": "XhPruwtidsE-display-0059",
+      "segment_id": "XhPruwtidsE-ja-0017"
+    },
+    {
+      "text": "、こういうものができるわけなんです。",
+      "start_seconds": 162.64,
+      "end_seconds": 164.319,
+      "id": "XhPruwtidsE-display-0060",
+      "segment_id": "XhPruwtidsE-ja-0018"
+    },
+    {
+      "text": "これで、お、ちょっとなんか新しくなって",
+      "start_seconds": 164.319,
+      "end_seconds": 166.239,
+      "id": "XhPruwtidsE-display-0061",
+      "segment_id": "XhPruwtidsE-ja-0019"
+    },
+    {
+      "text": "きたなと思って、で、これ使ってみようっ",
+      "start_seconds": 166.239,
+      "end_seconds": 168.64,
+      "id": "XhPruwtidsE-display-0062",
+      "segment_id": "XhPruwtidsE-ja-0019"
+    },
+    {
+      "text": "つって使っていたんですけど、もう1匹の",
+      "start_seconds": 168.64,
+      "end_seconds": 171.8,
+      "id": "XhPruwtidsE-display-0063",
+      "segment_id": "XhPruwtidsE-ja-0019"
+    },
+    {
+      "text": "猫がやってきて、で、こんな風にあの探っ",
+      "start_seconds": 171.8,
+      "end_seconds": 175.2,
+      "id": "XhPruwtidsE-display-0064",
+      "segment_id": "XhPruwtidsE-ja-0019"
+    },
+    {
+      "text": "てで、彼女ちょっと大きい猫なんですけど",
+      "start_seconds": 175.2,
+      "end_seconds": 177.68,
+      "id": "XhPruwtidsE-display-0065",
+      "segment_id": "XhPruwtidsE-ja-0020"
+    },
+    {
+      "text": "、あの、狭いとこじゃなくて広いとこで",
+      "start_seconds": 177.68,
+      "end_seconds": 179.519,
+      "id": "XhPruwtidsE-display-0066",
+      "segment_id": "XhPruwtidsE-ja-0020"
+    },
+    {
+      "text": "ゴロとするのが好きなんで、[笑い]あの",
+      "start_seconds": 179.519,
+      "end_seconds": 181.879,
+      "id": "XhPruwtidsE-display-0067",
+      "segment_id": "XhPruwtidsE-ja-0020"
+    },
+    {
+      "text": "、こんな風にゴロとしてます。で、この猫",
+      "start_seconds": 181.879,
+      "end_seconds": 185.12,
+      "id": "XhPruwtidsE-display-0068",
+      "segment_id": "XhPruwtidsE-ja-0020"
+    },
+    {
+      "text": "にも興味持ってもらったし、あの、うちの",
+      "start_seconds": 185.12,
+      "end_seconds": 187.36,
+      "id": "XhPruwtidsE-display-0069",
+      "segment_id": "XhPruwtidsE-ja-0021"
+    },
+    {
+      "text": "娘もこれ使ったりしてんですけど、でも",
+      "start_seconds": 187.36,
+      "end_seconds": 190.2,
+      "id": "XhPruwtidsE-display-0070",
+      "segment_id": "XhPruwtidsE-ja-0021"
+    },
+    {
+      "text": "やっぱりこれはちょっと自分の場所には",
+      "start_seconds": 190.2,
+      "end_seconds": 193.0,
+      "id": "XhPruwtidsE-display-0071",
+      "segment_id": "XhPruwtidsE-ja-0021"
+    },
+    {
+      "text": "ならなかった。それで、ま、どういうこと",
+      "start_seconds": 193.0,
+      "end_seconds": 195.92,
+      "id": "XhPruwtidsE-display-0072",
+      "segment_id": "XhPruwtidsE-ja-0021"
+    },
+    {
+      "text": "かなと思って、よし、じゃ、もうちょっと",
+      "start_seconds": 195.92,
+      "end_seconds": 197.319,
+      "id": "XhPruwtidsE-display-0073",
+      "segment_id": "XhPruwtidsE-ja-0022"
+    },
+    {
+      "text": "頑張ってみようっつって、今度はあの、",
+      "start_seconds": 197.319,
+      "end_seconds": 199.239,
+      "id": "XhPruwtidsE-display-0074",
+      "segment_id": "XhPruwtidsE-ja-0022"
+    },
+    {
+      "text": "合飯を使って、これ3枚ぐらい使ってです",
+      "start_seconds": 199.239,
+      "end_seconds": 202.159,
+      "id": "XhPruwtidsE-display-0075",
+      "segment_id": "XhPruwtidsE-ja-0022"
+    },
+    {
+      "text": "ね、で、今度は機械も使って綺麗に切って",
+      "start_seconds": 202.159,
+      "end_seconds": 204.72,
+      "id": "XhPruwtidsE-display-0076",
+      "segment_id": "XhPruwtidsE-ja-0022"
+    },
+    {
+      "text": "、で、組み立ててブースを作ってみました",
+      "start_seconds": 204.72,
+      "end_seconds": 207.08,
+      "id": "XhPruwtidsE-display-0077",
+      "segment_id": "XhPruwtidsE-ja-0022"
+    },
+    {
+      "text": "。で、これが右側のがそうなんですけども",
+      "start_seconds": 207.08,
+      "end_seconds": 209.36,
+      "id": "XhPruwtidsE-display-0078",
+      "segment_id": "XhPruwtidsE-ja-0023"
+    },
+    {
+      "text": "、これは結構良かった。それで、あ、",
+      "start_seconds": 209.36,
+      "end_seconds": 213.56,
+      "id": "XhPruwtidsE-display-0079",
+      "segment_id": "XhPruwtidsE-ja-0023"
+    },
+    {
+      "text": "なるほど。僕はこういう場所が欲しいん",
+      "start_seconds": 213.56,
+      "end_seconds": 215.76,
+      "id": "XhPruwtidsE-display-0080",
+      "segment_id": "XhPruwtidsE-ja-0023"
+    },
+    {
+      "text": "だってことはなんとなく分かったんです",
+      "start_seconds": 215.76,
+      "end_seconds": 217.56,
+      "id": "XhPruwtidsE-display-0081",
+      "segment_id": "XhPruwtidsE-ja-0023"
+    },
+    {
+      "text": "けど、でも普通みんなこんなもん普通",
+      "start_seconds": 217.56,
+      "end_seconds": 220.599,
+      "id": "XhPruwtidsE-display-0082",
+      "segment_id": "XhPruwtidsE-ja-0024"
+    },
+    {
+      "text": "作れるわけないじゃないですか。家の中で",
+      "start_seconds": 220.599,
+      "end_seconds": 223.56,
+      "id": "XhPruwtidsE-display-0083",
+      "segment_id": "XhPruwtidsE-ja-0024"
+    },
+    {
+      "text": "。なので、一体どういう状況だと別にここ",
+      "start_seconds": 223.56,
+      "end_seconds": 227.599,
+      "id": "XhPruwtidsE-display-0084",
+      "segment_id": "XhPruwtidsE-ja-0024"
+    },
+    {
+      "text": "までしなくたってこう自分の場所、自分で",
+      "start_seconds": 227.599,
+      "end_seconds": 230.84,
+      "id": "XhPruwtidsE-display-0085",
+      "segment_id": "XhPruwtidsE-ja-0025"
+    },
+    {
+      "text": "1人でいられる場所みたいなのができるの",
+      "start_seconds": 230.84,
+      "end_seconds": 233.159,
+      "id": "XhPruwtidsE-display-0086",
+      "segment_id": "XhPruwtidsE-ja-0025"
+    },
+    {
+      "text": "かなっていうのをやっぱり、ま、考えさせ",
+      "start_seconds": 233.159,
+      "end_seconds": 235.84,
+      "id": "XhPruwtidsE-display-0087",
+      "segment_id": "XhPruwtidsE-ja-0025"
+    },
+    {
+      "text": "られたんですね。で、色々考えてみると",
+      "start_seconds": 235.84,
+      "end_seconds": 239.319,
+      "id": "XhPruwtidsE-display-0088",
+      "segment_id": "XhPruwtidsE-ja-0025"
+    },
+    {
+      "text": "今日のテーマであるその真っていうのが",
+      "start_seconds": 239.319,
+      "end_seconds": 241.4,
+      "id": "XhPruwtidsE-display-0089",
+      "segment_id": "XhPruwtidsE-ja-0026"
+    },
+    {
+      "text": "結構大切であるということがよくわかり",
+      "start_seconds": 241.4,
+      "end_seconds": 244.04,
+      "id": "XhPruwtidsE-display-0090",
+      "segment_id": "XhPruwtidsE-ja-0026"
+    },
+    {
+      "text": "ました。で、1つは、ま、人間と書いて",
+      "start_seconds": 244.04,
+      "end_seconds": 246.68,
+      "id": "XhPruwtidsE-display-0091",
+      "segment_id": "XhPruwtidsE-ja-0026"
+    },
+    {
+      "text": "人感。これ明治の時代は人感と呼ばれてる",
+      "start_seconds": 246.68,
+      "end_seconds": 249.48,
+      "id": "XhPruwtidsE-display-0092",
+      "segment_id": "XhPruwtidsE-ja-0026"
+    },
+    {
+      "text": "ことがすごく多かったようなんですけれど",
+      "start_seconds": 249.48,
+      "end_seconds": 251.079,
+      "id": "XhPruwtidsE-display-0093",
+      "segment_id": "XhPruwtidsE-ja-0026"
+    },
+    {
+      "text": "も、これって人間の関係のこと言っていて",
+      "start_seconds": 251.079,
+      "end_seconds": 255.239,
+      "id": "XhPruwtidsE-display-0094",
+      "segment_id": "XhPruwtidsE-ja-0027"
+    },
+    {
+      "text": "、ま、付き合いとかなので、その人と人と",
+      "start_seconds": 255.239,
+      "end_seconds": 258.56,
+      "id": "XhPruwtidsE-display-0095",
+      "segment_id": "XhPruwtidsE-ja-0027"
+    },
+    {
+      "text": "の距離感みたいなのがとても大切。近すぎ",
+      "start_seconds": 258.56,
+      "end_seconds": 262.0,
+      "id": "XhPruwtidsE-display-0096",
+      "segment_id": "XhPruwtidsE-ja-0027"
+    },
+    {
+      "text": "てもちょっと生き苦しいし、遠すぎても",
+      "start_seconds": 262.0,
+      "end_seconds": 264.88,
+      "id": "XhPruwtidsE-display-0097",
+      "segment_id": "XhPruwtidsE-ja-0028"
+    },
+    {
+      "text": "寂しいしみたいな。なので、その人と人と",
+      "start_seconds": 264.88,
+      "end_seconds": 268.28,
+      "id": "XhPruwtidsE-display-0098",
+      "segment_id": "XhPruwtidsE-ja-0028"
+    },
+    {
+      "text": "の関係、これが1つか、もう1つは時間で",
+      "start_seconds": 268.28,
+      "end_seconds": 271.84,
+      "id": "XhPruwtidsE-display-0099",
+      "segment_id": "XhPruwtidsE-ja-0028"
+    },
+    {
+      "text": "、この時間も時の流れっていうのを早く",
+      "start_seconds": 271.84,
+      "end_seconds": 274.36,
+      "id": "XhPruwtidsE-display-0100",
+      "segment_id": "XhPruwtidsE-ja-0029"
+    },
+    {
+      "text": "感じたり、ゆっくり感じたりするんです",
+      "start_seconds": 274.36,
+      "end_seconds": 276.16,
+      "id": "XhPruwtidsE-display-0101",
+      "segment_id": "XhPruwtidsE-ja-0029"
+    },
+    {
+      "text": "けれど、やっぱりその中のこう余裕みたい",
+      "start_seconds": 276.16,
+      "end_seconds": 279.32,
+      "id": "XhPruwtidsE-display-0102",
+      "segment_id": "XhPruwtidsE-ja-0029"
+    },
+    {
+      "text": "なのがあるとか、隙間時間みたいなのが",
+      "start_seconds": 279.32,
+      "end_seconds": 281.919,
+      "id": "XhPruwtidsE-display-0103",
+      "segment_id": "XhPruwtidsE-ja-0029"
+    },
+    {
+      "text": "あるとか、なんかそういうこうスローな",
+      "start_seconds": 281.919,
+      "end_seconds": 284.24,
+      "id": "XhPruwtidsE-display-0104",
+      "segment_id": "XhPruwtidsE-ja-0030"
+    },
+    {
+      "text": "時間みたいなのも大切だよねとか、最後は",
+      "start_seconds": 284.24,
+      "end_seconds": 287.68,
+      "id": "XhPruwtidsE-display-0105",
+      "segment_id": "XhPruwtidsE-ja-0030"
+    },
+    {
+      "text": "空間。この3つ目の間なんですけれども、",
+      "start_seconds": 287.68,
+      "end_seconds": 290.72,
+      "id": "XhPruwtidsE-display-0106",
+      "segment_id": "XhPruwtidsE-ja-0030"
+    },
+    {
+      "text": "これは特に僕には関係ある、え、ことなん",
+      "start_seconds": 290.72,
+      "end_seconds": 293.919,
+      "id": "XhPruwtidsE-display-0107",
+      "segment_id": "XhPruwtidsE-ja-0030"
+    },
+    {
+      "text": "だけれども、その余白みたいなもの、その",
+      "start_seconds": 293.919,
+      "end_seconds": 296.88,
+      "id": "XhPruwtidsE-display-0108",
+      "segment_id": "XhPruwtidsE-ja-0031"
+    },
+    {
+      "text": "ものと、諸との間の広がりみたいななんか",
+      "start_seconds": 296.88,
+      "end_seconds": 300.0,
+      "id": "XhPruwtidsE-display-0109",
+      "segment_id": "XhPruwtidsE-ja-0031"
+    },
+    {
+      "text": "そういうものが大切で、この3つの間",
+      "start_seconds": 300.0,
+      "end_seconds": 303.039,
+      "id": "XhPruwtidsE-display-0110",
+      "segment_id": "XhPruwtidsE-ja-0031"
+    },
+    {
+      "text": "みたいなのがうまく揃うとすごく居心地の",
+      "start_seconds": 303.039,
+      "end_seconds": 306.88,
+      "id": "XhPruwtidsE-display-0111",
+      "segment_id": "XhPruwtidsE-ja-0032"
+    },
+    {
+      "text": "いい場所ができるんではないか。なんか",
+      "start_seconds": 306.88,
+      "end_seconds": 309.44,
+      "id": "XhPruwtidsE-display-0112",
+      "segment_id": "XhPruwtidsE-ja-0032"
+    },
+    {
+      "text": "そういう距離感とか余裕とか余白、ま、",
+      "start_seconds": 309.44,
+      "end_seconds": 312.52,
+      "id": "XhPruwtidsE-display-0113",
+      "segment_id": "XhPruwtidsE-ja-0032"
+    },
+    {
+      "text": "こういったものが大切なんじゃないかと",
+      "start_seconds": 312.52,
+      "end_seconds": 314.8,
+      "id": "XhPruwtidsE-display-0114",
+      "segment_id": "XhPruwtidsE-ja-0032"
+    },
+    {
+      "text": "いう風に思い始めました。[咳払い]で、",
+      "start_seconds": 314.8,
+      "end_seconds": 317.639,
+      "id": "XhPruwtidsE-display-0115",
+      "segment_id": "XhPruwtidsE-ja-0033"
+    },
+    {
+      "text": "これ銀座なんですが、歩射天国で、みんな",
+      "start_seconds": 317.639,
+      "end_seconds": 321.199,
+      "id": "XhPruwtidsE-display-0116",
+      "segment_id": "XhPruwtidsE-ja-0033"
+    },
+    {
+      "text": "歩いてるところでみんなあの友達だったり",
+      "start_seconds": 321.199,
+      "end_seconds": 323.479,
+      "id": "XhPruwtidsE-display-0117",
+      "segment_id": "XhPruwtidsE-ja-0033"
+    },
+    {
+      "text": "家族だったり、それ保店なんでたくさん",
+      "start_seconds": 323.479,
+      "end_seconds": 325.88,
+      "id": "XhPruwtidsE-display-0118",
+      "segment_id": "XhPruwtidsE-ja-0033"
+    },
+    {
+      "text": "いるんですけれども、この男性がま、1人",
+      "start_seconds": 325.88,
+      "end_seconds": 328.0,
+      "id": "XhPruwtidsE-display-0119",
+      "segment_id": "XhPruwtidsE-ja-0034"
+    },
+    {
+      "text": "で歩いてたんですよね。それであ、なんか",
+      "start_seconds": 328.0,
+      "end_seconds": 330.84,
+      "id": "XhPruwtidsE-display-0120",
+      "segment_id": "XhPruwtidsE-ja-0034"
+    },
+    {
+      "text": "都ってやっぱりみんなが集まってきて",
+      "start_seconds": 330.84,
+      "end_seconds": 333.72,
+      "id": "XhPruwtidsE-display-0121",
+      "segment_id": "XhPruwtidsE-ja-0034"
+    },
+    {
+      "text": "たくさんいるしで、その人間関係っていう",
+      "start_seconds": 333.72,
+      "end_seconds": 336.52,
+      "id": "XhPruwtidsE-display-0122",
+      "segment_id": "XhPruwtidsE-ja-0034"
+    },
+    {
+      "text": "のがあっての年なんだけど、でもやっぱり",
+      "start_seconds": 336.52,
+      "end_seconds": 339.24,
+      "id": "XhPruwtidsE-display-0123",
+      "segment_id": "XhPruwtidsE-ja-0035"
+    },
+    {
+      "text": "僕たちはちょっとあまりにも人が多すぎ",
+      "start_seconds": 339.24,
+      "end_seconds": 341.44,
+      "id": "XhPruwtidsE-display-0124",
+      "segment_id": "XhPruwtidsE-ja-0035"
+    },
+    {
+      "text": "たり、それから人間関係すぎたりすると",
+      "start_seconds": 341.44,
+      "end_seconds": 343.919,
+      "id": "XhPruwtidsE-display-0125",
+      "segment_id": "XhPruwtidsE-ja-0035"
+    },
+    {
+      "text": "疲れるじゃないですか。これでなんとなく",
+      "start_seconds": 343.919,
+      "end_seconds": 346.6,
+      "id": "XhPruwtidsE-display-0126",
+      "segment_id": "XhPruwtidsE-ja-0035"
+    },
+    {
+      "text": "ここってなんか自分の居場所はどこなん",
+      "start_seconds": 346.6,
+      "end_seconds": 349.639,
+      "id": "XhPruwtidsE-display-0127",
+      "segment_id": "XhPruwtidsE-ja-0036"
+    },
+    {
+      "text": "だろうっていう風に思うこと結構あると",
+      "start_seconds": 349.639,
+      "end_seconds": 351.479,
+      "id": "XhPruwtidsE-display-0128",
+      "segment_id": "XhPruwtidsE-ja-0036"
+    },
+    {
+      "text": "思うんですね。なのでやっぱり都市でも",
+      "start_seconds": 351.479,
+      "end_seconds": 354.28,
+      "id": "XhPruwtidsE-display-0129",
+      "segment_id": "XhPruwtidsE-ja-0036"
+    },
+    {
+      "text": "こういう風にこう自由な時間に自分でこう",
+      "start_seconds": 354.28,
+      "end_seconds": 358.52,
+      "id": "XhPruwtidsE-display-0130",
+      "segment_id": "XhPruwtidsE-ja-0036"
+    },
+    {
+      "text": "楽しむっていうことができるなんかこんな",
+      "start_seconds": 358.52,
+      "end_seconds": 360.84,
+      "id": "XhPruwtidsE-display-0131",
+      "segment_id": "XhPruwtidsE-ja-0037"
+    },
+    {
+      "text": "ようなことがあるといいなという風にこの",
+      "start_seconds": 360.84,
+      "end_seconds": 363.56,
+      "id": "XhPruwtidsE-display-0132",
+      "segment_id": "XhPruwtidsE-ja-0037"
+    },
+    {
+      "text": "シーンを見てま思ったんですね。で一方で",
+      "start_seconds": 363.56,
+      "end_seconds": 366.72,
+      "id": "XhPruwtidsE-display-0133",
+      "segment_id": "XhPruwtidsE-ja-0037"
+    },
+    {
+      "text": "都市のもう1つのシーンっていうのはこう",
+      "start_seconds": 366.72,
+      "end_seconds": 368.4,
+      "id": "XhPruwtidsE-display-0134",
+      "segment_id": "XhPruwtidsE-ja-0037"
+    },
+    {
+      "text": "いうのがあると。で、これは非常に疲れ",
+      "start_seconds": 368.4,
+      "end_seconds": 372.24,
+      "id": "XhPruwtidsE-display-0135",
+      "segment_id": "XhPruwtidsE-ja-0038"
+    },
+    {
+      "text": "ますよね。で、1つはその人と人との距離",
+      "start_seconds": 372.24,
+      "end_seconds": 375.52,
+      "id": "XhPruwtidsE-display-0136",
+      "segment_id": "XhPruwtidsE-ja-0038"
+    },
+    {
+      "text": "感ゼロ。もうぎゅパンパンパツパツ。それ",
+      "start_seconds": 375.52,
+      "end_seconds": 379.24,
+      "id": "XhPruwtidsE-display-0137",
+      "segment_id": "XhPruwtidsE-ja-0038"
+    },
+    {
+      "text": "から時間も急いでるもんだからこういう",
+      "start_seconds": 379.24,
+      "end_seconds": 381.68,
+      "id": "XhPruwtidsE-display-0138",
+      "segment_id": "XhPruwtidsE-ja-0039"
+    },
+    {
+      "text": "状況になってるんで、もうどうしても時間",
+      "start_seconds": 381.68,
+      "end_seconds": 383.72,
+      "id": "XhPruwtidsE-display-0139",
+      "segment_id": "XhPruwtidsE-ja-0039"
+    },
+    {
+      "text": "にも余裕がない。それから距離感も全く",
+      "start_seconds": 383.72,
+      "end_seconds": 386.8,
+      "id": "XhPruwtidsE-display-0140",
+      "segment_id": "XhPruwtidsE-ja-0039"
+    },
+    {
+      "text": "ゼロですからこういうのってやっぱり",
+      "start_seconds": 386.8,
+      "end_seconds": 389.16,
+      "id": "XhPruwtidsE-display-0141",
+      "segment_id": "XhPruwtidsE-ja-0039"
+    },
+    {
+      "text": "ちょっと辛いし、ま、間がなさすぎるんだ",
+      "start_seconds": 389.16,
+      "end_seconds": 392.16,
+      "id": "XhPruwtidsE-display-0142",
+      "segment_id": "XhPruwtidsE-ja-0040"
+    },
+    {
+      "text": "と思うんですよね。な[鼻息]ので",
+      "start_seconds": 392.16,
+      "end_seconds": 394.24,
+      "id": "XhPruwtidsE-display-0143",
+      "segment_id": "XhPruwtidsE-ja-0040"
+    },
+    {
+      "text": "やっぱり間っていうのは大切だよなという",
+      "start_seconds": 394.24,
+      "end_seconds": 396.639,
+      "id": "XhPruwtidsE-display-0144",
+      "segment_id": "XhPruwtidsE-ja-0040"
+    },
+    {
+      "text": "風に思って場所をしています。[咳払い]",
+      "start_seconds": 396.639,
+      "end_seconds": 399.599,
+      "id": "XhPruwtidsE-display-0145",
+      "segment_id": "XhPruwtidsE-ja-0040"
+    },
+    {
+      "text": "で、実は1ヶ月ほど前にですね、イタリア",
+      "start_seconds": 399.599,
+      "end_seconds": 402.0,
+      "id": "XhPruwtidsE-display-0146",
+      "segment_id": "XhPruwtidsE-ja-0041"
+    },
+    {
+      "text": "に行くチャンスがあって、で、本当は",
+      "start_seconds": 402.0,
+      "end_seconds": 404.8,
+      "id": "XhPruwtidsE-display-0147",
+      "segment_id": "XhPruwtidsE-ja-0041"
+    },
+    {
+      "text": "ミラノでワークショップをや",
+      "start_seconds": 404.8,
+      "end_seconds": 406.0,
+      "id": "XhPruwtidsE-display-0148",
+      "segment_id": "XhPruwtidsE-ja-0041"
+    },
+    {
+      "text": "るっていうので、その[咳払い]日ミラノ",
+      "start_seconds": 406.0,
+      "end_seconds": 408.28,
+      "id": "XhPruwtidsE-display-0149",
+      "segment_id": "XhPruwtidsE-ja-0041"
+    },
+    {
+      "text": "に飛んで行って、それでみんなで",
+      "start_seconds": 408.28,
+      "end_seconds": 410.12,
+      "id": "XhPruwtidsE-display-0150",
+      "segment_id": "XhPruwtidsE-ja-0041"
+    },
+    {
+      "text": "ワークショップをやるつもりだったんです",
+      "start_seconds": 410.12,
+      "end_seconds": 411.759,
+      "id": "XhPruwtidsE-display-0151",
+      "segment_id": "XhPruwtidsE-ja-0042"
+    },
+    {
+      "text": "けど、飛行機が遅れで着いて電車に乗っ",
+      "start_seconds": 411.759,
+      "end_seconds": 415.36,
+      "id": "XhPruwtidsE-display-0152",
+      "segment_id": "XhPruwtidsE-ja-0042"
+    },
+    {
+      "text": "たら電車を間違えで、着いたらボロニア",
+      "start_seconds": 415.36,
+      "end_seconds": 418.479,
+      "id": "XhPruwtidsE-display-0153",
+      "segment_id": "XhPruwtidsE-ja-0042"
+    },
+    {
+      "text": "だったんですね。ほれでえと思ってで、",
+      "start_seconds": 418.479,
+      "end_seconds": 421.199,
+      "id": "XhPruwtidsE-display-0154",
+      "segment_id": "XhPruwtidsE-ja-0042"
+    },
+    {
+      "text": "ボロニア次のミラのはって言ったらもう",
+      "start_seconds": 421.199,
+      "end_seconds": 423.16,
+      "id": "XhPruwtidsE-display-0155",
+      "segment_id": "XhPruwtidsE-ja-0043"
+    },
+    {
+      "text": "半日先なんですよね。ほいで、あ、もう",
+      "start_seconds": 423.16,
+      "end_seconds": 426.199,
+      "id": "XhPruwtidsE-display-0156",
+      "segment_id": "XhPruwtidsE-ja-0043"
+    },
+    {
+      "text": "どうしようもねえなと、こんな間違っ",
+      "start_seconds": 426.199,
+      "end_seconds": 427.719,
+      "id": "XhPruwtidsE-display-0157",
+      "segment_id": "XhPruwtidsE-ja-0043"
+    },
+    {
+      "text": "[鼻息]ててしょうがないなと思って、あ",
+      "start_seconds": 427.719,
+      "end_seconds": 429.759,
+      "id": "XhPruwtidsE-display-0158",
+      "segment_id": "XhPruwtidsE-ja-0043"
+    },
+    {
+      "text": "、もう無駄にしたこの時間っていう風に",
+      "start_seconds": 429.759,
+      "end_seconds": 431.68,
+      "id": "XhPruwtidsE-display-0159",
+      "segment_id": "XhPruwtidsE-ja-0043"
+    },
+    {
+      "text": "思ったんですけど、そういえばボロニャ",
+      "start_seconds": 431.68,
+      "end_seconds": 434.759,
+      "id": "XhPruwtidsE-display-0160",
+      "segment_id": "XhPruwtidsE-ja-0044"
+    },
+    {
+      "text": "いつか来たなと思って、その去年の9月に",
+      "start_seconds": 434.759,
+      "end_seconds": 437.16,
+      "id": "XhPruwtidsE-display-0161",
+      "segment_id": "XhPruwtidsE-ja-0044"
+    },
+    {
+      "text": "1回ボロニャにたまたま20分ぐらい電車",
+      "start_seconds": 437.16,
+      "end_seconds": 440.44,
+      "id": "XhPruwtidsE-display-0162",
+      "segment_id": "XhPruwtidsE-ja-0044"
+    },
+    {
+      "text": "が止まったんで、ま、ホームで待つのも",
+      "start_seconds": 440.44,
+      "end_seconds": 442.599,
+      "id": "XhPruwtidsE-display-0163",
+      "segment_id": "XhPruwtidsE-ja-0044"
+    },
+    {
+      "text": "もったいないと思って1回外に出て、そし",
+      "start_seconds": 442.599,
+      "end_seconds": 444.879,
+      "id": "XhPruwtidsE-display-0164",
+      "segment_id": "XhPruwtidsE-ja-0045"
+    },
+    {
+      "text": "たらちょっとなんか面白そうなパスタ売っ",
+      "start_seconds": 444.879,
+      "end_seconds": 447.319,
+      "id": "XhPruwtidsE-display-0165",
+      "segment_id": "XhPruwtidsE-ja-0045"
+    },
+    {
+      "text": "てるお店があったんですよね。で、そこに",
+      "start_seconds": 447.319,
+      "end_seconds": 449.639,
+      "id": "XhPruwtidsE-display-0166",
+      "segment_id": "XhPruwtidsE-ja-0045"
+    },
+    {
+      "text": "入ってってちょっと美味しいパスタを買っ",
+      "start_seconds": 449.639,
+      "end_seconds": 452.039,
+      "id": "XhPruwtidsE-display-0167",
+      "segment_id": "XhPruwtidsE-ja-0045"
+    },
+    {
+      "text": "て帰った。で、それ美味しかった。で、",
+      "start_seconds": 452.039,
+      "end_seconds": 454.879,
+      "id": "XhPruwtidsE-display-0168",
+      "segment_id": "XhPruwtidsE-ja-0046"
+    },
+    {
+      "text": "それを思い出したんで、で、もう1回です",
+      "start_seconds": 454.879,
+      "end_seconds": 457.12,
+      "id": "XhPruwtidsE-display-0169",
+      "segment_id": "XhPruwtidsE-ja-0046"
+    },
+    {
+      "text": "ね、このボローニャに着いて半日あるから",
+      "start_seconds": 457.12,
+      "end_seconds": 459.72,
+      "id": "XhPruwtidsE-display-0170",
+      "segment_id": "XhPruwtidsE-ja-0046"
+    },
+    {
+      "text": "行ってみました。そしたら同じお店があっ",
+      "start_seconds": 459.72,
+      "end_seconds": 463.0,
+      "id": "XhPruwtidsE-display-0171",
+      "segment_id": "XhPruwtidsE-ja-0046"
+    },
+    {
+      "text": "て、同じパスタを同じ棚で売ってたんね。",
+      "start_seconds": 463.0,
+      "end_seconds": 465.919,
+      "id": "XhPruwtidsE-display-0172",
+      "segment_id": "XhPruwtidsE-ja-0047"
+    },
+    {
+      "text": "で、またそれを買い、また持って買いた。",
+      "start_seconds": 465.919,
+      "end_seconds": 468.44,
+      "id": "XhPruwtidsE-display-0173",
+      "segment_id": "XhPruwtidsE-ja-0048"
+    },
+    {
+      "text": "で、そん時になんか僕は、あ、なんかこの",
+      "start_seconds": 468.44,
+      "end_seconds": 472.08,
+      "id": "XhPruwtidsE-display-0174",
+      "segment_id": "XhPruwtidsE-ja-0049"
+    },
+    {
+      "text": "店僕の店じゃんっていう風に思った。",
+      "start_seconds": 472.08,
+      "end_seconds": 474.84,
+      "id": "XhPruwtidsE-display-0175",
+      "segment_id": "XhPruwtidsE-ja-0049"
+    },
+    {
+      "text": "たった2回しか行ってないのに。で、なん",
+      "start_seconds": 474.84,
+      "end_seconds": 477.639,
+      "id": "XhPruwtidsE-display-0176",
+      "segment_id": "XhPruwtidsE-ja-0050"
+    },
+    {
+      "text": "かそれってあのお店の人がちょっと迎えて",
+      "start_seconds": 477.639,
+      "end_seconds": 480.639,
+      "id": "XhPruwtidsE-display-0177",
+      "segment_id": "XhPruwtidsE-ja-0050"
+    },
+    {
+      "text": "くれた優しいみたいなのもあるんだけど、",
+      "start_seconds": 480.639,
+      "end_seconds": 483.12,
+      "id": "XhPruwtidsE-display-0178",
+      "segment_id": "XhPruwtidsE-ja-0050"
+    },
+    {
+      "text": "自分でなんとなく運、足を運んで2回目に",
+      "start_seconds": 483.12,
+      "end_seconds": 486.599,
+      "id": "XhPruwtidsE-display-0179",
+      "segment_id": "XhPruwtidsE-ja-0050"
+    },
+    {
+      "text": "行った時にもうすでにそう感じたのは",
+      "start_seconds": 486.599,
+      "end_seconds": 489.4,
+      "id": "XhPruwtidsE-display-0180",
+      "segment_id": "XhPruwtidsE-ja-0051"
+    },
+    {
+      "text": "やっぱり自分でこう足を運んでいってそれ",
+      "start_seconds": 489.4,
+      "end_seconds": 492.72,
+      "id": "XhPruwtidsE-display-0181",
+      "segment_id": "XhPruwtidsE-ja-0051"
+    },
+    {
+      "text": "で自分の場所をこうなんとなく作ったから",
+      "start_seconds": 492.72,
+      "end_seconds": 495.28,
+      "id": "XhPruwtidsE-display-0182",
+      "segment_id": "XhPruwtidsE-ja-0051"
+    },
+    {
+      "text": "ではないか。で、今度行ったら絶対また",
+      "start_seconds": 495.28,
+      "end_seconds": 497.56,
+      "id": "XhPruwtidsE-display-0183",
+      "segment_id": "XhPruwtidsE-ja-0051"
+    },
+    {
+      "text": "行きます。3回目でそうするとこれ僕の店",
+      "start_seconds": 497.56,
+      "end_seconds": 500.12,
+      "id": "XhPruwtidsE-display-0184",
+      "segment_id": "XhPruwtidsE-ja-0052"
+    },
+    {
+      "text": "だからぐらいな感じになるんじゃないかな",
+      "start_seconds": 500.12,
+      "end_seconds": 501.96,
+      "id": "XhPruwtidsE-display-0185",
+      "segment_id": "XhPruwtidsE-ja-0052"
+    },
+    {
+      "text": "。で、あの、これポーティコって言うん",
+      "start_seconds": 501.96,
+      "end_seconds": 504.12,
+      "id": "XhPruwtidsE-display-0186",
+      "segment_id": "XhPruwtidsE-ja-0052"
+    },
+    {
+      "text": "ですけども、こういうアーチのこう回廊",
+      "start_seconds": 504.12,
+      "end_seconds": 506.44,
+      "id": "XhPruwtidsE-display-0187",
+      "segment_id": "XhPruwtidsE-ja-0052"
+    },
+    {
+      "text": "みたいなの。これがあのボロニアとても",
+      "start_seconds": 506.44,
+      "end_seconds": 508.199,
+      "id": "XhPruwtidsE-display-0188",
+      "segment_id": "XhPruwtidsE-ja-0052"
+    },
+    {
+      "text": "有名で、で、この後ですね、ずっと",
+      "start_seconds": 508.199,
+      "end_seconds": 510.919,
+      "id": "XhPruwtidsE-display-0189",
+      "segment_id": "XhPruwtidsE-ja-0053"
+    },
+    {
+      "text": "ボロニナの町をずっと歩いた。で、なんと",
+      "start_seconds": 510.919,
+      "end_seconds": 514.08,
+      "id": "XhPruwtidsE-display-0190",
+      "segment_id": "XhPruwtidsE-ja-0053"
+    },
+    {
+      "text": "なくこれボロニア僕の街だぜっていう感じ",
+      "start_seconds": 514.08,
+      "end_seconds": 516.599,
+      "id": "XhPruwtidsE-display-0191",
+      "segment_id": "XhPruwtidsE-ja-0053"
+    },
+    {
+      "text": "がすごくするようにこうなったんですね。",
+      "start_seconds": 516.599,
+      "end_seconds": 519.08,
+      "id": "XhPruwtidsE-display-0192",
+      "segment_id": "XhPruwtidsE-ja-0053"
+    },
+    {
+      "text": "なんで本当にこう、あの、ポコっとできた",
+      "start_seconds": 519.08,
+      "end_seconds": 521.719,
+      "id": "XhPruwtidsE-display-0193",
+      "segment_id": "XhPruwtidsE-ja-0054"
+    },
+    {
+      "text": "時間なんだけど、ま、ちょっと考え方を",
+      "start_seconds": 521.719,
+      "end_seconds": 524.68,
+      "id": "XhPruwtidsE-display-0194",
+      "segment_id": "XhPruwtidsE-ja-0054"
+    },
+    {
+      "text": "変えてで、自分からこの町に、ま、",
+      "start_seconds": 524.68,
+      "end_seconds": 527.48,
+      "id": "XhPruwtidsE-display-0195",
+      "segment_id": "XhPruwtidsE-ja-0054"
+    },
+    {
+      "text": "コミットしていくっていうことをすると、",
+      "start_seconds": 527.48,
+      "end_seconds": 530.04,
+      "id": "XhPruwtidsE-display-0196",
+      "segment_id": "XhPruwtidsE-ja-0054"
+    },
+    {
+      "text": "あ、これ、こんな知らないイタリアの町も",
+      "start_seconds": 530.04,
+      "end_seconds": 532.56,
+      "id": "XhPruwtidsE-display-0197",
+      "segment_id": "XhPruwtidsE-ja-0055"
+    },
+    {
+      "text": "自分の町に近づくんじゃないかなという",
+      "start_seconds": 532.56,
+      "end_seconds": 534.88,
+      "id": "XhPruwtidsE-display-0198",
+      "segment_id": "XhPruwtidsE-ja-0055"
+    },
+    {
+      "text": "ような体験をしました。で、今日1つあの",
+      "start_seconds": 534.88,
+      "end_seconds": 538.88,
+      "id": "XhPruwtidsE-display-0199",
+      "segment_id": "XhPruwtidsE-ja-0055"
+    },
+    {
+      "text": "プロジェクトをご紹介したいんですけれど",
+      "start_seconds": 538.88,
+      "end_seconds": 541.0,
+      "id": "XhPruwtidsE-display-0200",
+      "segment_id": "XhPruwtidsE-ja-0055"
+    },
+    {
+      "text": "、え、ベニアハウスプロジェクトというの",
+      "start_seconds": 541.0,
+      "end_seconds": 543.76,
+      "id": "XhPruwtidsE-display-0201",
+      "segment_id": "XhPruwtidsE-ja-0056"
+    },
+    {
+      "text": "をやっています。で、これはあの東北の",
+      "start_seconds": 543.76,
+      "end_seconds": 546.839,
+      "id": "XhPruwtidsE-display-0202",
+      "segment_id": "XhPruwtidsE-ja-0056"
+    },
+    {
+      "text": "震災15年前にありました。で、この東北",
+      "start_seconds": 546.839,
+      "end_seconds": 550.12,
+      "id": "XhPruwtidsE-display-0203",
+      "segment_id": "XhPruwtidsE-ja-0056"
+    },
+    {
+      "text": "の震災の時にみんなあの家が流されたり",
+      "start_seconds": 550.12,
+      "end_seconds": 553.92,
+      "id": "XhPruwtidsE-display-0204",
+      "segment_id": "XhPruwtidsE-ja-0057"
+    },
+    {
+      "text": "壊されたりしてしまいました。で、その時",
+      "start_seconds": 553.92,
+      "end_seconds": 556.2,
+      "id": "XhPruwtidsE-display-0205",
+      "segment_id": "XhPruwtidsE-ja-0057"
+    },
+    {
+      "text": "に、ま、建築家として一体何ができるかと",
+      "start_seconds": 556.2,
+      "end_seconds": 558.839,
+      "id": "XhPruwtidsE-display-0206",
+      "segment_id": "XhPruwtidsE-ja-0057"
+    },
+    {
+      "text": "いうことを、ま、考えさせられたわけです",
+      "start_seconds": 558.839,
+      "end_seconds": 560.839,
+      "id": "XhPruwtidsE-display-0207",
+      "segment_id": "XhPruwtidsE-ja-0057"
+    },
+    {
+      "text": "けれども、[鼻息]あの、その当時もう",
+      "start_seconds": 560.839,
+      "end_seconds": 564.279,
+      "id": "XhPruwtidsE-display-0208",
+      "segment_id": "XhPruwtidsE-ja-0058"
+    },
+    {
+      "text": "日本からそれだけじゃなくて世界からこう",
+      "start_seconds": 564.279,
+      "end_seconds": 566.64,
+      "id": "XhPruwtidsE-display-0209",
+      "segment_id": "XhPruwtidsE-ja-0058"
+    },
+    {
+      "text": "、あの、大学さんが集まってみんな復興",
+      "start_seconds": 566.64,
+      "end_seconds": 569.12,
+      "id": "XhPruwtidsE-display-0210",
+      "segment_id": "XhPruwtidsE-ja-0058"
+    },
+    {
+      "text": "すごく手伝ってたんですけど、それでも",
+      "start_seconds": 569.12,
+      "end_seconds": 571.36,
+      "id": "XhPruwtidsE-display-0211",
+      "segment_id": "XhPruwtidsE-ja-0058"
+    },
+    {
+      "text": "なかなかあの、手が回らずなかなか大工",
+      "start_seconds": 571.36,
+      "end_seconds": 574.72,
+      "id": "XhPruwtidsE-display-0212",
+      "segment_id": "XhPruwtidsE-ja-0059"
+    },
+    {
+      "text": "さん来てくれないっていう状況があったん",
+      "start_seconds": 574.72,
+      "end_seconds": 576.399,
+      "id": "XhPruwtidsE-display-0213",
+      "segment_id": "XhPruwtidsE-ja-0059"
+    },
+    {
+      "text": "ですね。で、それなのでだったらば自分で",
+      "start_seconds": 576.399,
+      "end_seconds": 579.48,
+      "id": "XhPruwtidsE-display-0214",
+      "segment_id": "XhPruwtidsE-ja-0059"
+    },
+    {
+      "text": "作れる家の仕組みを作ればみんな待ってる",
+      "start_seconds": 579.48,
+      "end_seconds": 582.76,
+      "id": "XhPruwtidsE-display-0215",
+      "segment_id": "XhPruwtidsE-ja-0059"
+    },
+    {
+      "text": "間に自分たちで家ができるんじゃないかと",
+      "start_seconds": 582.76,
+      "end_seconds": 585.0,
+      "id": "XhPruwtidsE-display-0216",
+      "segment_id": "XhPruwtidsE-ja-0060"
+    },
+    {
+      "text": "いうことで建築って複雑にやっぱり思わ",
+      "start_seconds": 585.0,
+      "end_seconds": 588.399,
+      "id": "XhPruwtidsE-display-0217",
+      "segment_id": "XhPruwtidsE-ja-0060"
+    },
+    {
+      "text": "れるし、ま、事実複雑なところすごく多い",
+      "start_seconds": 588.399,
+      "end_seconds": 590.399,
+      "id": "XhPruwtidsE-display-0218",
+      "segment_id": "XhPruwtidsE-ja-0060"
+    },
+    {
+      "text": "んだけどそれをなんとかこう簡単に仕組み",
+      "start_seconds": 590.399,
+      "end_seconds": 593.2,
+      "id": "XhPruwtidsE-display-0219",
+      "segment_id": "XhPruwtidsE-ja-0060"
+    },
+    {
+      "text": "をしてってあげると実は素人でも作れん",
+      "start_seconds": 593.2,
+      "end_seconds": 595.839,
+      "id": "XhPruwtidsE-display-0220",
+      "segment_id": "XhPruwtidsE-ja-0061"
+    },
+    {
+      "text": "じゃないかなということで、そういうこと",
+      "start_seconds": 595.839,
+      "end_seconds": 597.92,
+      "id": "XhPruwtidsE-display-0221",
+      "segment_id": "XhPruwtidsE-ja-0061"
+    },
+    {
+      "text": "を始めました。これがあのベニアハウスな",
+      "start_seconds": 597.92,
+      "end_seconds": 600.12,
+      "id": "XhPruwtidsE-display-0222",
+      "segment_id": "XhPruwtidsE-ja-0061"
+    },
+    {
+      "text": "んですけども、ま、自然素材を使って合板",
+      "start_seconds": 600.12,
+      "end_seconds": 603.279,
+      "id": "XhPruwtidsE-display-0223",
+      "segment_id": "XhPruwtidsE-ja-0061"
+    },
+    {
+      "text": "って作られてるんですね。山の看伐剤を",
+      "start_seconds": 603.279,
+      "end_seconds": 605.959,
+      "id": "XhPruwtidsE-display-0224",
+      "segment_id": "XhPruwtidsE-ja-0062"
+    },
+    {
+      "text": "使って作ります。で、それから、え、",
+      "start_seconds": 605.959,
+      "end_seconds": 609.2,
+      "id": "XhPruwtidsE-display-0225",
+      "segment_id": "XhPruwtidsE-ja-0062"
+    },
+    {
+      "text": "セルフビルドで作るっていうこと、今言っ",
+      "start_seconds": 609.2,
+      "end_seconds": 611.32,
+      "id": "XhPruwtidsE-display-0226",
+      "segment_id": "XhPruwtidsE-ja-0062"
+    },
+    {
+      "text": "たようにみんなに作ってもらいたいので、",
+      "start_seconds": 611.32,
+      "end_seconds": 613.76,
+      "id": "XhPruwtidsE-display-0227",
+      "segment_id": "XhPruwtidsE-ja-0062"
+    },
+    {
+      "text": "このセルフビルドをなんとかしようと。で",
+      "start_seconds": 613.76,
+      "end_seconds": 616.68,
+      "id": "XhPruwtidsE-display-0228",
+      "segment_id": "XhPruwtidsE-ja-0063"
+    },
+    {
+      "text": "、やってみたら分かったことはですね、",
+      "start_seconds": 616.68,
+      "end_seconds": 618.64,
+      "id": "XhPruwtidsE-display-0229",
+      "segment_id": "XhPruwtidsE-ja-0063"
+    },
+    {
+      "text": "面白いことに自分で作るとその家に愛着を",
+      "start_seconds": 618.64,
+      "end_seconds": 622.839,
+      "id": "XhPruwtidsE-display-0230",
+      "segment_id": "XhPruwtidsE-ja-0063"
+    },
+    {
+      "text": "感じるのでとっても大切にするんですよね",
+      "start_seconds": 622.839,
+      "end_seconds": 625.24,
+      "id": "XhPruwtidsE-display-0231",
+      "segment_id": "XhPruwtidsE-ja-0063"
+    },
+    {
+      "text": "。で、実はこの写真は、えっと、ある漁師",
+      "start_seconds": 625.24,
+      "end_seconds": 628.12,
+      "id": "XhPruwtidsE-display-0232",
+      "segment_id": "XhPruwtidsE-ja-0064"
+    },
+    {
+      "text": "さんたちなんですけれども、その漁師の町",
+      "start_seconds": 628.12,
+      "end_seconds": 630.44,
+      "id": "XhPruwtidsE-display-0233",
+      "segment_id": "XhPruwtidsE-ja-0064"
+    },
+    {
+      "text": "の80%の絵が流されちゃった。で、そこ",
+      "start_seconds": 630.44,
+      "end_seconds": 633.88,
+      "id": "XhPruwtidsE-display-0234",
+      "segment_id": "XhPruwtidsE-ja-0064"
+    },
+    {
+      "text": "にじゃあ漁師の人たちが集まる場所を作ろ",
+      "start_seconds": 633.88,
+      "end_seconds": 636.24,
+      "id": "XhPruwtidsE-display-0235",
+      "segment_id": "XhPruwtidsE-ja-0064"
+    },
+    {
+      "text": "うって言うんで、漁師の皆さんに作って",
+      "start_seconds": 636.24,
+      "end_seconds": 638.56,
+      "id": "XhPruwtidsE-display-0236",
+      "segment_id": "XhPruwtidsE-ja-0065"
+    },
+    {
+      "text": "もらったんですね。そしたらば本当に",
+      "start_seconds": 638.56,
+      "end_seconds": 641.44,
+      "id": "XhPruwtidsE-display-0237",
+      "segment_id": "XhPruwtidsE-ja-0065"
+    },
+    {
+      "text": "みんなとっても愛してくれちゃって、それ",
+      "start_seconds": 641.44,
+      "end_seconds": 643.8,
+      "id": "XhPruwtidsE-display-0238",
+      "segment_id": "XhPruwtidsE-ja-0065"
+    },
+    {
+      "text": "で行く度にですね、あの、ちょっとずつ棚",
+      "start_seconds": 643.8,
+      "end_seconds": 646.76,
+      "id": "XhPruwtidsE-display-0239",
+      "segment_id": "XhPruwtidsE-ja-0065"
+    },
+    {
+      "text": "が増えたり、机が増えたりしてるんですよ",
+      "start_seconds": 646.76,
+      "end_seconds": 648.959,
+      "id": "XhPruwtidsE-display-0240",
+      "segment_id": "XhPruwtidsE-ja-0066"
+    },
+    {
+      "text": "ね。で、それ彼ら作り方知ってるから",
+      "start_seconds": 648.959,
+      "end_seconds": 651.12,
+      "id": "XhPruwtidsE-display-0241",
+      "segment_id": "XhPruwtidsE-ja-0066"
+    },
+    {
+      "text": "どんどん増えてく。それから、あの、具合",
+      "start_seconds": 651.12,
+      "end_seconds": 653.56,
+      "id": "XhPruwtidsE-display-0242",
+      "segment_id": "XhPruwtidsE-ja-0066"
+    },
+    {
+      "text": "が悪い時は大概はですね、電話かかってき",
+      "start_seconds": 653.56,
+      "end_seconds": 657.32,
+      "id": "XhPruwtidsE-display-0243",
+      "segment_id": "XhPruwtidsE-ja-0066"
+    },
+    {
+      "text": "て、ちょっと小林先生、あの、ちょいん",
+      "start_seconds": 657.32,
+      "end_seconds": 659.8,
+      "id": "XhPruwtidsE-display-0244",
+      "segment_id": "XhPruwtidsE-ja-0067"
+    },
+    {
+      "text": "ですけどって言って、こうクレームの電話",
+      "start_seconds": 659.8,
+      "end_seconds": 661.48,
+      "id": "XhPruwtidsE-display-0245",
+      "segment_id": "XhPruwtidsE-ja-0067"
+    },
+    {
+      "text": "かかってくること結構建築ってあるんです",
+      "start_seconds": 661.48,
+      "end_seconds": 663.519,
+      "id": "XhPruwtidsE-display-0246",
+      "segment_id": "XhPruwtidsE-ja-0067"
+    },
+    {
+      "text": "けど、1回もかかってこなくて、で、行っ",
+      "start_seconds": 663.519,
+      "end_seconds": 666.12,
+      "id": "XhPruwtidsE-display-0247",
+      "segment_id": "XhPruwtidsE-ja-0067"
+    },
+    {
+      "text": "てみると逆にこれね、ちょっと俺がやっ",
+      "start_seconds": 666.12,
+      "end_seconds": 668.48,
+      "id": "XhPruwtidsE-display-0248",
+      "segment_id": "XhPruwtidsE-ja-0067"
+    },
+    {
+      "text": "ちゃったんだよねみたいに反省してるわけ",
+      "start_seconds": 668.48,
+      "end_seconds": 670.68,
+      "id": "XhPruwtidsE-display-0249",
+      "segment_id": "XhPruwtidsE-ja-0068"
+    },
+    {
+      "text": "で、全く態度が違うんですよね。なので",
+      "start_seconds": 670.68,
+      "end_seconds": 673.6,
+      "id": "XhPruwtidsE-display-0250",
+      "segment_id": "XhPruwtidsE-ja-0068"
+    },
+    {
+      "text": "やっぱり自分で作る、自分でコミット",
+      "start_seconds": 673.6,
+      "end_seconds": 675.959,
+      "id": "XhPruwtidsE-display-0251",
+      "segment_id": "XhPruwtidsE-ja-0068"
+    },
+    {
+      "text": "するってことはとても大事だということを",
+      "start_seconds": 675.959,
+      "end_seconds": 678.04,
+      "id": "XhPruwtidsE-display-0252",
+      "segment_id": "XhPruwtidsE-ja-0068"
+    },
+    {
+      "text": "このプロジェクトなんかで教えられました",
+      "start_seconds": 678.04,
+      "end_seconds": 680.36,
+      "id": "XhPruwtidsE-display-0253",
+      "segment_id": "XhPruwtidsE-ja-0068"
+    },
+    {
+      "text": "。で、みんなで作るとなおそれに加えて",
+      "start_seconds": 680.36,
+      "end_seconds": 683.72,
+      "id": "XhPruwtidsE-display-0254",
+      "segment_id": "XhPruwtidsE-ja-0069"
+    },
+    {
+      "text": "コミュニティの意識ってのができる。で、",
+      "start_seconds": 683.72,
+      "end_seconds": 686.279,
+      "id": "XhPruwtidsE-display-0255",
+      "segment_id": "XhPruwtidsE-ja-0069"
+    },
+    {
+      "text": "特にその震災の後って本当にコミュニティ",
+      "start_seconds": 686.279,
+      "end_seconds": 688.76,
+      "id": "XhPruwtidsE-display-0256",
+      "segment_id": "XhPruwtidsE-ja-0069"
+    },
+    {
+      "text": "バラバラになっちゃうので、そういう人",
+      "start_seconds": 688.76,
+      "end_seconds": 690.639,
+      "id": "XhPruwtidsE-display-0257",
+      "segment_id": "XhPruwtidsE-ja-0069"
+    },
+    {
+      "text": "たちが新しく集まってコミュニティを作る",
+      "start_seconds": 690.639,
+      "end_seconds": 693.2,
+      "id": "XhPruwtidsE-display-0258",
+      "segment_id": "XhPruwtidsE-ja-0070"
+    },
+    {
+      "text": "、そういうことができるということも",
+      "start_seconds": 693.2,
+      "end_seconds": 694.839,
+      "id": "XhPruwtidsE-display-0259",
+      "segment_id": "XhPruwtidsE-ja-0070"
+    },
+    {
+      "text": "分かりました。ま、こういうことをやって",
+      "start_seconds": 694.839,
+      "end_seconds": 696.6,
+      "id": "XhPruwtidsE-display-0260",
+      "segment_id": "XhPruwtidsE-ja-0070"
+    },
+    {
+      "text": "、あの、いくつか今までやってきて、大体",
+      "start_seconds": 696.6,
+      "end_seconds": 699.56,
+      "id": "XhPruwtidsE-display-0261",
+      "segment_id": "XhPruwtidsE-ja-0070"
+    },
+    {
+      "text": "256のフェニアハウスってのを作ってき",
+      "start_seconds": 699.56,
+      "end_seconds": 702.399,
+      "id": "XhPruwtidsE-display-0262",
+      "segment_id": "XhPruwtidsE-ja-0070"
+    },
+    {
+      "text": "たんですけれども、やっぱり今、あの、",
+      "start_seconds": 702.399,
+      "end_seconds": 706.04,
+      "id": "XhPruwtidsE-display-0263",
+      "segment_id": "XhPruwtidsE-ja-0071"
+    },
+    {
+      "text": "その15年前の自然災害である津波とか",
+      "start_seconds": 706.04,
+      "end_seconds": 709.32,
+      "id": "XhPruwtidsE-display-0264",
+      "segment_id": "XhPruwtidsE-ja-0071"
+    },
+    {
+      "text": "地震とかっていうこと以外にも水害も",
+      "start_seconds": 709.32,
+      "end_seconds": 711.519,
+      "id": "XhPruwtidsE-display-0265",
+      "segment_id": "XhPruwtidsE-ja-0071"
+    },
+    {
+      "text": "すごく多いですし、それからやっぱ戦争が",
+      "start_seconds": 711.519,
+      "end_seconds": 714.0,
+      "id": "XhPruwtidsE-display-0266",
+      "segment_id": "XhPruwtidsE-ja-0071"
+    },
+    {
+      "text": "あるので、世界中で家を壊されてしまった",
+      "start_seconds": 714.0,
+      "end_seconds": 717.92,
+      "id": "XhPruwtidsE-display-0267",
+      "segment_id": "XhPruwtidsE-ja-0072"
+    },
+    {
+      "text": "から町を追われてしまった、国を追われて",
+      "start_seconds": 717.92,
+      "end_seconds": 720.0,
+      "id": "XhPruwtidsE-display-0268",
+      "segment_id": "XhPruwtidsE-ja-0072"
+    },
+    {
+      "text": "しまったっていう人が、ま、何百万人と",
+      "start_seconds": 720.0,
+      "end_seconds": 722.399,
+      "id": "XhPruwtidsE-display-0269",
+      "segment_id": "XhPruwtidsE-ja-0072"
+    },
+    {
+      "text": "いるわけなんですよね。なんかそういう",
+      "start_seconds": 722.399,
+      "end_seconds": 724.6,
+      "id": "XhPruwtidsE-display-0270",
+      "segment_id": "XhPruwtidsE-ja-0072"
+    },
+    {
+      "text": "状況の中でどういう風にその人たちにあ",
+      "start_seconds": 724.6,
+      "end_seconds": 728.399,
+      "id": "XhPruwtidsE-display-0271",
+      "segment_id": "XhPruwtidsE-ja-0073"
+    },
+    {
+      "text": "ここにいていいんだと、ここは自分のいる",
+      "start_seconds": 728.399,
+      "end_seconds": 730.72,
+      "id": "XhPruwtidsE-display-0272",
+      "segment_id": "XhPruwtidsE-ja-0073"
+    },
+    {
+      "text": "場所なんだって思ってもらえるか、なんか",
+      "start_seconds": 730.72,
+      "end_seconds": 733.04,
+      "id": "XhPruwtidsE-display-0273",
+      "segment_id": "XhPruwtidsE-ja-0073"
+    },
+    {
+      "text": "そういうことをあの追求してきた。ま、",
+      "start_seconds": 733.04,
+      "end_seconds": 735.519,
+      "id": "XhPruwtidsE-display-0274",
+      "segment_id": "XhPruwtidsE-ja-0073"
+    },
+    {
+      "text": "これがあのベニアハウスです。で、1つ",
+      "start_seconds": 735.519,
+      "end_seconds": 739.0,
+      "id": "XhPruwtidsE-display-0275",
+      "segment_id": "XhPruwtidsE-ja-0074"
+    },
+    {
+      "text": "だけ今日はあの事例としてあのお見せ",
+      "start_seconds": 739.0,
+      "end_seconds": 741.56,
+      "id": "XhPruwtidsE-display-0276",
+      "segment_id": "XhPruwtidsE-ja-0074"
+    },
+    {
+      "text": "しようと思うんですけれど、これあの",
+      "start_seconds": 741.56,
+      "end_seconds": 743.56,
+      "id": "XhPruwtidsE-display-0277",
+      "segment_id": "XhPruwtidsE-ja-0074"
+    },
+    {
+      "text": "ミヤンマーなんですけれどもミヤンマーは",
+      "start_seconds": 743.56,
+      "end_seconds": 746.04,
+      "id": "XhPruwtidsE-display-0278",
+      "segment_id": "XhPruwtidsE-ja-0074"
+    },
+    {
+      "text": "あのクデタがあって以降なかなか政治的に",
+      "start_seconds": 746.04,
+      "end_seconds": 748.36,
+      "id": "XhPruwtidsE-display-0279",
+      "segment_id": "XhPruwtidsE-ja-0075"
+    },
+    {
+      "text": "不安定だったりしますがこの時はですね",
+      "start_seconds": 748.36,
+      "end_seconds": 751.36,
+      "id": "XhPruwtidsE-display-0280",
+      "segment_id": "XhPruwtidsE-ja-0075"
+    },
+    {
+      "text": "ぐらい前ででもあのやっぱりこのあの村は",
+      "start_seconds": 751.36,
+      "end_seconds": 755.639,
+      "id": "XhPruwtidsE-display-0281",
+      "segment_id": "XhPruwtidsE-ja-0075"
+    },
+    {
+      "text": "ですね1年目が台風で2年目が完伐でで",
+      "start_seconds": 755.639,
+      "end_seconds": 760.36,
+      "id": "XhPruwtidsE-display-0282",
+      "segment_id": "XhPruwtidsE-ja-0076"
+    },
+    {
+      "text": "結局農業全然できなくなってしょうがなく",
+      "start_seconds": 760.36,
+      "end_seconds": 762.959,
+      "id": "XhPruwtidsE-display-0283",
+      "segment_id": "XhPruwtidsE-ja-0076"
+    },
+    {
+      "text": "てここに移り住んできた人たちで非常にま",
+      "start_seconds": 762.959,
+      "end_seconds": 767.199,
+      "id": "XhPruwtidsE-display-0284",
+      "segment_id": "XhPruwtidsE-ja-0076"
+    },
+    {
+      "text": "ないので本当本当に火材だけ持ってきて、",
+      "start_seconds": 767.199,
+      "end_seconds": 769.519,
+      "id": "XhPruwtidsE-display-0285",
+      "segment_id": "XhPruwtidsE-ja-0077"
+    },
+    {
+      "text": "それで自分たちで小屋を立ててっていうの",
+      "start_seconds": 769.519,
+      "end_seconds": 771.56,
+      "id": "XhPruwtidsE-display-0286",
+      "segment_id": "XhPruwtidsE-ja-0077"
+    },
+    {
+      "text": "をこんな感じで暮らしてたんですね。で、",
+      "start_seconds": 771.56,
+      "end_seconds": 774.56,
+      "id": "XhPruwtidsE-display-0287",
+      "segment_id": "XhPruwtidsE-ja-0077"
+    },
+    {
+      "text": "あの見たら分かるようにちょっと床がこう",
+      "start_seconds": 774.56,
+      "end_seconds": 776.68,
+      "id": "XhPruwtidsE-display-0288",
+      "segment_id": "XhPruwtidsE-ja-0077"
+    },
+    {
+      "text": "上がっているのは年のうち3ヶ月ぐらいが",
+      "start_seconds": 776.68,
+      "end_seconds": 780.279,
+      "id": "XhPruwtidsE-display-0289",
+      "segment_id": "XhPruwtidsE-ja-0078"
+    },
+    {
+      "text": "あの浮で雨なんですね。だから水がだっ",
+      "start_seconds": 780.279,
+      "end_seconds": 783.399,
+      "id": "XhPruwtidsE-display-0290",
+      "segment_id": "XhPruwtidsE-ja-0078"
+    },
+    {
+      "text": "上がってきちゃうんですね。でそうすると",
+      "start_seconds": 783.399,
+      "end_seconds": 785.24,
+      "id": "XhPruwtidsE-display-0291",
+      "segment_id": "XhPruwtidsE-ja-0078"
+    },
+    {
+      "text": "どうなるかって言うと結局農業ができない",
+      "start_seconds": 785.24,
+      "end_seconds": 787.68,
+      "id": "XhPruwtidsE-display-0292",
+      "segment_id": "XhPruwtidsE-ja-0078"
+    },
+    {
+      "text": "からみんな家族のお父さんお兄ちゃんたち",
+      "start_seconds": 787.68,
+      "end_seconds": 790.24,
+      "id": "XhPruwtidsE-display-0293",
+      "segment_id": "XhPruwtidsE-ja-0079"
+    },
+    {
+      "text": "もみんな家にいる。それで子供たちも遊び",
+      "start_seconds": 790.24,
+      "end_seconds": 792.959,
+      "id": "XhPruwtidsE-display-0294",
+      "segment_id": "XhPruwtidsE-ja-0079"
+    },
+    {
+      "text": "に行けないから結局家ん中に結局牛々な",
+      "start_seconds": 792.959,
+      "end_seconds": 795.959,
+      "id": "XhPruwtidsE-display-0295",
+      "segment_id": "XhPruwtidsE-ja-0079"
+    },
+    {
+      "text": "状態で3ヶ月過ごさないといけない。で、",
+      "start_seconds": 795.959,
+      "end_seconds": 798.519,
+      "id": "XhPruwtidsE-display-0296",
+      "segment_id": "XhPruwtidsE-ja-0079"
+    },
+    {
+      "text": "そうすると非常に悪いことにその1番下の",
+      "start_seconds": 798.519,
+      "end_seconds": 802.079,
+      "id": "XhPruwtidsE-display-0297",
+      "segment_id": "XhPruwtidsE-ja-0080"
+    },
+    {
+      "text": "子がいじめられるってことが起きてで家庭",
+      "start_seconds": 802.079,
+      "end_seconds": 804.639,
+      "id": "XhPruwtidsE-display-0298",
+      "segment_id": "XhPruwtidsE-ja-0080"
+    },
+    {
+      "text": "内暴力っていうのがま、起きてるという",
+      "start_seconds": 804.639,
+      "end_seconds": 806.88,
+      "id": "XhPruwtidsE-display-0299",
+      "segment_id": "XhPruwtidsE-ja-0080"
+    },
+    {
+      "text": "事実が分かりました。その非常に悪い時は",
+      "start_seconds": 806.88,
+      "end_seconds": 810.0,
+      "id": "XhPruwtidsE-display-0300",
+      "segment_id": "XhPruwtidsE-ja-0080"
+    },
+    {
+      "text": "命を落とすみたいなこともあったんですね",
+      "start_seconds": 810.0,
+      "end_seconds": 811.88,
+      "id": "XhPruwtidsE-display-0301",
+      "segment_id": "XhPruwtidsE-ja-0081"
+    },
+    {
+      "text": "。で、これな何とかならないかっていう",
+      "start_seconds": 811.88,
+      "end_seconds": 814.12,
+      "id": "XhPruwtidsE-display-0302",
+      "segment_id": "XhPruwtidsE-ja-0081"
+    },
+    {
+      "text": "ことで話し合った結果だったらいつでも",
+      "start_seconds": 814.12,
+      "end_seconds": 817.44,
+      "id": "XhPruwtidsE-display-0303",
+      "segment_id": "XhPruwtidsE-ja-0081"
+    },
+    {
+      "text": "子供が来れる子供の家を作ろうということ",
+      "start_seconds": 817.44,
+      "end_seconds": 821.0,
+      "id": "XhPruwtidsE-display-0304",
+      "segment_id": "XhPruwtidsE-ja-0081"
+    },
+    {
+      "text": "で、そこには24時間365日でも来て",
+      "start_seconds": 821.0,
+      "end_seconds": 824.079,
+      "id": "XhPruwtidsE-display-0305",
+      "segment_id": "XhPruwtidsE-ja-0082"
+    },
+    {
+      "text": "いいよという、そういう場所を作ろうと",
+      "start_seconds": 824.079,
+      "end_seconds": 826.32,
+      "id": "XhPruwtidsE-display-0306",
+      "segment_id": "XhPruwtidsE-ja-0082"
+    },
+    {
+      "text": "いうことを決めました。で、まずあの僕",
+      "start_seconds": 826.32,
+      "end_seconds": 829.12,
+      "id": "XhPruwtidsE-display-0307",
+      "segment_id": "XhPruwtidsE-ja-0082"
+    },
+    {
+      "text": "たちが自分で設計したものを模型を作って",
+      "start_seconds": 829.12,
+      "end_seconds": 833.199,
+      "id": "XhPruwtidsE-display-0308",
+      "segment_id": "XhPruwtidsE-ja-0083"
+    },
+    {
+      "text": "で、現地に持っていって、で、その模型を",
+      "start_seconds": 833.199,
+      "end_seconds": 835.88,
+      "id": "XhPruwtidsE-display-0309",
+      "segment_id": "XhPruwtidsE-ja-0083"
+    },
+    {
+      "text": "こうちょっとバラバラ渡してで、まず",
+      "start_seconds": 835.88,
+      "end_seconds": 838.16,
+      "id": "XhPruwtidsE-display-0310",
+      "segment_id": "XhPruwtidsE-ja-0083"
+    },
+    {
+      "text": "ワークショップやろうということで、それ",
+      "start_seconds": 838.16,
+      "end_seconds": 840.48,
+      "id": "XhPruwtidsE-display-0311",
+      "segment_id": "XhPruwtidsE-ja-0083"
+    },
+    {
+      "text": "でみんなでグループになって、で、",
+      "start_seconds": 840.48,
+      "end_seconds": 842.48,
+      "id": "XhPruwtidsE-display-0312",
+      "segment_id": "XhPruwtidsE-ja-0084"
+    },
+    {
+      "text": "ちょっと切り込みを入れてるので、そこ",
+      "start_seconds": 842.48,
+      "end_seconds": 844.04,
+      "id": "XhPruwtidsE-display-0313",
+      "segment_id": "XhPruwtidsE-ja-0084"
+    },
+    {
+      "text": "やって入れてくと少し立体になるんですよ",
+      "start_seconds": 844.04,
+      "end_seconds": 846.04,
+      "id": "XhPruwtidsE-display-0314",
+      "segment_id": "XhPruwtidsE-ja-0084"
+    },
+    {
+      "text": "ね。で、そうやってこう触ってもらって",
+      "start_seconds": 846.04,
+      "end_seconds": 848.44,
+      "id": "XhPruwtidsE-display-0315",
+      "segment_id": "XhPruwtidsE-ja-0084"
+    },
+    {
+      "text": "ものを作る楽しさみたいなの味わって",
+      "start_seconds": 848.44,
+      "end_seconds": 850.12,
+      "id": "XhPruwtidsE-display-0316",
+      "segment_id": "XhPruwtidsE-ja-0084"
+    },
+    {
+      "text": "もらおうと。で、みんなやってた。この子",
+      "start_seconds": 850.12,
+      "end_seconds": 852.199,
+      "id": "XhPruwtidsE-display-0317",
+      "segment_id": "XhPruwtidsE-ja-0084"
+    },
+    {
+      "text": "だけはやらなかったんですけど、この子は",
+      "start_seconds": 852.199,
+      "end_seconds": 854.199,
+      "id": "XhPruwtidsE-display-0318",
+      "segment_id": "XhPruwtidsE-ja-0085"
+    },
+    {
+      "text": "僕だけを見てて、で、非常に興味も、ま、",
+      "start_seconds": 854.199,
+      "end_seconds": 856.959,
+      "id": "XhPruwtidsE-display-0319",
+      "segment_id": "XhPruwtidsE-ja-0085"
+    },
+    {
+      "text": "カメラに興味があったのかもしれない。ま",
+      "start_seconds": 856.959,
+      "end_seconds": 858.72,
+      "id": "XhPruwtidsE-display-0320",
+      "segment_id": "XhPruwtidsE-ja-0085"
+    },
+    {
+      "text": "、こういうアイデンティはとても大切にし",
+      "start_seconds": 858.72,
+      "end_seconds": 860.88,
+      "id": "XhPruwtidsE-display-0321",
+      "segment_id": "XhPruwtidsE-ja-0085"
+    },
+    {
+      "text": "てあげたい。それはそれで良しとします。",
+      "start_seconds": 860.88,
+      "end_seconds": 863.6,
+      "id": "XhPruwtidsE-display-0322",
+      "segment_id": "XhPruwtidsE-ja-0085"
+    },
+    {
+      "text": "で、実際に作っていくとこういう家を作っ",
+      "start_seconds": 863.6,
+      "end_seconds": 867.279,
+      "id": "XhPruwtidsE-display-0323",
+      "segment_id": "XhPruwtidsE-ja-0086"
+    },
+    {
+      "text": "たり、それからこの子なんか本当に立体的",
+      "start_seconds": 867.279,
+      "end_seconds": 869.519,
+      "id": "XhPruwtidsE-display-0324",
+      "segment_id": "XhPruwtidsE-ja-0086"
+    },
+    {
+      "text": "に飛行機を作ったりですね。で、こういう",
+      "start_seconds": 869.519,
+      "end_seconds": 872.16,
+      "id": "XhPruwtidsE-display-0325",
+      "segment_id": "XhPruwtidsE-ja-0086"
+    },
+    {
+      "text": "別にあの飛行機作るための部品じゃないん",
+      "start_seconds": 872.16,
+      "end_seconds": 874.16,
+      "id": "XhPruwtidsE-display-0326",
+      "segment_id": "XhPruwtidsE-ja-0086"
+    },
+    {
+      "text": "だけど、それでも作りたいものは作れる。",
+      "start_seconds": 874.16,
+      "end_seconds": 876.68,
+      "id": "XhPruwtidsE-display-0327",
+      "segment_id": "XhPruwtidsE-ja-0087"
+    },
+    {
+      "text": "で、ちょっとこう手についたところで、",
+      "start_seconds": 876.68,
+      "end_seconds": 879.36,
+      "id": "XhPruwtidsE-display-0328",
+      "segment_id": "XhPruwtidsE-ja-0088"
+    },
+    {
+      "text": "今度はみんなで集まって、それで1件の家",
+      "start_seconds": 879.36,
+      "end_seconds": 882.839,
+      "id": "XhPruwtidsE-display-0329",
+      "segment_id": "XhPruwtidsE-ja-0088"
+    },
+    {
+      "text": "を作ろうということで、それで、え、こう",
+      "start_seconds": 882.839,
+      "end_seconds": 885.959,
+      "id": "XhPruwtidsE-display-0330",
+      "segment_id": "XhPruwtidsE-ja-0088"
+    },
+    {
+      "text": "いうものを作ります。これが1/1の模型",
+      "start_seconds": 885.959,
+      "end_seconds": 888.519,
+      "id": "XhPruwtidsE-display-0331",
+      "segment_id": "XhPruwtidsE-ja-0088"
+    },
+    {
+      "text": "なんですが、本当に実物もこれを",
+      "start_seconds": 888.519,
+      "end_seconds": 891.92,
+      "id": "XhPruwtidsE-display-0332",
+      "segment_id": "XhPruwtidsE-ja-0089"
+    },
+    {
+      "text": "組み立てるのと同じ方法で組み立つので、",
+      "start_seconds": 891.92,
+      "end_seconds": 895.04,
+      "id": "XhPruwtidsE-display-0333",
+      "segment_id": "XhPruwtidsE-ja-0089"
+    },
+    {
+      "text": "なので本当にここで子供たちは嫌がどう",
+      "start_seconds": 895.04,
+      "end_seconds": 897.92,
+      "id": "XhPruwtidsE-display-0334",
+      "segment_id": "XhPruwtidsE-ja-0089"
+    },
+    {
+      "text": "やって立つかが分かる。で、いよいよ次の",
+      "start_seconds": 897.92,
+      "end_seconds": 900.959,
+      "id": "XhPruwtidsE-display-0335",
+      "segment_id": "XhPruwtidsE-ja-0090"
+    },
+    {
+      "text": "日から本当に1/1を作るということを",
+      "start_seconds": 900.959,
+      "end_seconds": 903.72,
+      "id": "XhPruwtidsE-display-0336",
+      "segment_id": "XhPruwtidsE-ja-0090"
+    },
+    {
+      "text": "やります。これ10歳のこと、11歳の",
+      "start_seconds": 903.72,
+      "end_seconds": 906.519,
+      "id": "XhPruwtidsE-display-0337",
+      "segment_id": "XhPruwtidsE-ja-0090"
+    },
+    {
+      "text": "ことをみんな一緒にやるわけなんですけど",
+      "start_seconds": 906.519,
+      "end_seconds": 908.88,
+      "id": "XhPruwtidsE-display-0338",
+      "segment_id": "XhPruwtidsE-ja-0090"
+    },
+    {
+      "text": "、もちろんあの大人も入ってやります",
+      "start_seconds": 908.88,
+      "end_seconds": 911.32,
+      "id": "XhPruwtidsE-display-0339",
+      "segment_id": "XhPruwtidsE-ja-0091"
+    },
+    {
+      "text": "けれども。で、3週、2週間後、えっと、",
+      "start_seconds": 911.32,
+      "end_seconds": 914.519,
+      "id": "XhPruwtidsE-display-0340",
+      "segment_id": "XhPruwtidsE-ja-0091"
+    },
+    {
+      "text": "こうやってうちの学生と子供たちはもう",
+      "start_seconds": 914.519,
+      "end_seconds": 917.32,
+      "id": "XhPruwtidsE-display-0341",
+      "segment_id": "XhPruwtidsE-ja-0091"
+    },
+    {
+      "text": "家族のように本当に仲良くなって、それ",
+      "start_seconds": 917.32,
+      "end_seconds": 919.959,
+      "id": "XhPruwtidsE-display-0342",
+      "segment_id": "XhPruwtidsE-ja-0091"
+    },
+    {
+      "text": "こそみんなで物を作るとこういうような",
+      "start_seconds": 919.959,
+      "end_seconds": 922.839,
+      "id": "XhPruwtidsE-display-0343",
+      "segment_id": "XhPruwtidsE-ja-0092"
+    },
+    {
+      "text": "コミュニティがこうできるんですよね。で",
+      "start_seconds": 922.839,
+      "end_seconds": 924.92,
+      "id": "XhPruwtidsE-display-0344",
+      "segment_id": "XhPruwtidsE-ja-0092"
+    },
+    {
+      "text": "、3週間後に、えっと、こういうものが",
+      "start_seconds": 924.92,
+      "end_seconds": 927.759,
+      "id": "XhPruwtidsE-display-0345",
+      "segment_id": "XhPruwtidsE-ja-0092"
+    },
+    {
+      "text": "できました。で、えっと、ここであの子供",
+      "start_seconds": 927.759,
+      "end_seconds": 930.88,
+      "id": "XhPruwtidsE-display-0346",
+      "segment_id": "XhPruwtidsE-ja-0092"
+    },
+    {
+      "text": "たちはいつでも来ていいよ。で、ここが",
+      "start_seconds": 930.88,
+      "end_seconds": 932.519,
+      "id": "XhPruwtidsE-display-0347",
+      "segment_id": "XhPruwtidsE-ja-0093"
+    },
+    {
+      "text": "2m上がってるので、え、村で1番高い",
+      "start_seconds": 932.519,
+      "end_seconds": 935.24,
+      "id": "XhPruwtidsE-display-0348",
+      "segment_id": "XhPruwtidsE-ja-0093"
+    },
+    {
+      "text": "場所であるということで、どんな交水でも",
+      "start_seconds": 935.24,
+      "end_seconds": 938.12,
+      "id": "XhPruwtidsE-display-0349",
+      "segment_id": "XhPruwtidsE-ja-0093"
+    },
+    {
+      "text": "絶対安全っていうような場所を作りました",
+      "start_seconds": 938.12,
+      "end_seconds": 940.36,
+      "id": "XhPruwtidsE-display-0350",
+      "segment_id": "XhPruwtidsE-ja-0093"
+    },
+    {
+      "text": "。で、えっと、最終日にみんなで掃除をし",
+      "start_seconds": 940.36,
+      "end_seconds": 944.279,
+      "id": "XhPruwtidsE-display-0351",
+      "segment_id": "XhPruwtidsE-ja-0094"
+    },
+    {
+      "text": "ました。で、掃除をしているとふっとこう",
+      "start_seconds": 944.279,
+      "end_seconds": 947.12,
+      "id": "XhPruwtidsE-display-0352",
+      "segment_id": "XhPruwtidsE-ja-0094"
+    },
+    {
+      "text": "窓を見上げるとこれ1人の少年なんです",
+      "start_seconds": 947.12,
+      "end_seconds": 950.0,
+      "id": "XhPruwtidsE-display-0353",
+      "segment_id": "XhPruwtidsE-ja-0094"
+    },
+    {
+      "text": "けども、全然掃除してないね。で、この子",
+      "start_seconds": 950.0,
+      "end_seconds": 953.88,
+      "id": "XhPruwtidsE-display-0354",
+      "segment_id": "XhPruwtidsE-ja-0095"
+    },
+    {
+      "text": "はこの窓で、えっと、1人で怖え。でも",
+      "start_seconds": 953.88,
+      "end_seconds": 956.88,
+      "id": "XhPruwtidsE-display-0355",
+      "segment_id": "XhPruwtidsE-ja-0095"
+    },
+    {
+      "text": "ちょっと満足な顔してる感じがしたんです",
+      "start_seconds": 956.88,
+      "end_seconds": 959.48,
+      "id": "XhPruwtidsE-display-0356",
+      "segment_id": "XhPruwtidsE-ja-0095"
+    },
+    {
+      "text": "よね。それで、あ、この子はきっと家でも",
+      "start_seconds": 959.48,
+      "end_seconds": 963.959,
+      "id": "XhPruwtidsE-display-0357",
+      "segment_id": "XhPruwtidsE-ja-0096"
+    },
+    {
+      "text": "居場所がないんじゃないかなという風に、",
+      "start_seconds": 963.959,
+      "end_seconds": 966.48,
+      "id": "XhPruwtidsE-display-0358",
+      "segment_id": "XhPruwtidsE-ja-0096"
+    },
+    {
+      "text": "あの、思いました。実はこの子はあの、",
+      "start_seconds": 966.48,
+      "end_seconds": 969.759,
+      "id": "XhPruwtidsE-display-0359",
+      "segment_id": "XhPruwtidsE-ja-0096"
+    },
+    {
+      "text": "現場には毎日来てたんですよね。で、毎日",
+      "start_seconds": 969.759,
+      "end_seconds": 972.36,
+      "id": "XhPruwtidsE-display-0360",
+      "segment_id": "XhPruwtidsE-ja-0097"
+    },
+    {
+      "text": "来てたんだけど全然手伝わない。ただ",
+      "start_seconds": 972.36,
+      "end_seconds": 974.519,
+      "id": "XhPruwtidsE-display-0361",
+      "segment_id": "XhPruwtidsE-ja-0097"
+    },
+    {
+      "text": "ちょろちょろ遊んでるだけなのだけど必ず",
+      "start_seconds": 974.519,
+      "end_seconds": 976.92,
+      "id": "XhPruwtidsE-display-0362",
+      "segment_id": "XhPruwtidsE-ja-0097"
+    },
+    {
+      "text": "毎日来てたんですよね。それでなんかこの",
+      "start_seconds": 976.92,
+      "end_seconds": 979.8,
+      "id": "XhPruwtidsE-display-0363",
+      "segment_id": "XhPruwtidsE-ja-0097"
+    },
+    {
+      "text": "隣にこの場所にこうミットしてなんとなく",
+      "start_seconds": 979.8,
+      "end_seconds": 983.519,
+      "id": "XhPruwtidsE-display-0364",
+      "segment_id": "XhPruwtidsE-ja-0098"
+    },
+    {
+      "text": "こう自分の居場所みたいなのを探してたの",
+      "start_seconds": 983.519,
+      "end_seconds": 986.199,
+      "id": "XhPruwtidsE-display-0365",
+      "segment_id": "XhPruwtidsE-ja-0098"
+    },
+    {
+      "text": "かなっていう風に今思うとちょっと考え",
+      "start_seconds": 986.199,
+      "end_seconds": 989.44,
+      "id": "XhPruwtidsE-display-0366",
+      "segment_id": "XhPruwtidsE-ja-0098"
+    },
+    {
+      "text": "そういう風にま、考えられるかなと思い",
+      "start_seconds": 989.44,
+      "end_seconds": 991.279,
+      "id": "XhPruwtidsE-display-0367",
+      "segment_id": "XhPruwtidsE-ja-0098"
+    },
+    {
+      "text": "ます。で、やっぱりあのこの子みたいに",
+      "start_seconds": 991.279,
+      "end_seconds": 995.24,
+      "id": "XhPruwtidsE-display-0368",
+      "segment_id": "XhPruwtidsE-ja-0099"
+    },
+    {
+      "text": "多分その普通に自分の家の中でこう自分",
+      "start_seconds": 995.24,
+      "end_seconds": 1000.079,
+      "id": "XhPruwtidsE-display-0369",
+      "segment_id": "XhPruwtidsE-ja-0099"
+    },
+    {
+      "text": "らしくいられるみたいな場所ってやっぱ",
+      "start_seconds": 1000.079,
+      "end_seconds": 1002.639,
+      "id": "XhPruwtidsE-display-0370",
+      "segment_id": "XhPruwtidsE-ja-0099"
+    },
+    {
+      "text": "ああいう家の中には多分ないんじゃないか",
+      "start_seconds": 1002.639,
+      "end_seconds": 1004.319,
+      "id": "XhPruwtidsE-display-0371",
+      "segment_id": "XhPruwtidsE-ja-0100"
+    },
+    {
+      "text": "な。で、そういった時に僕たちがあのこう",
+      "start_seconds": 1004.319,
+      "end_seconds": 1007.319,
+      "id": "XhPruwtidsE-display-0372",
+      "segment_id": "XhPruwtidsE-ja-0100"
+    },
+    {
+      "text": "いう場所を提供できたのはすごく良かった",
+      "start_seconds": 1007.319,
+      "end_seconds": 1009.56,
+      "id": "XhPruwtidsE-display-0373",
+      "segment_id": "XhPruwtidsE-ja-0100"
+    },
+    {
+      "text": "なという風に思って、そういう活動続け",
+      "start_seconds": 1009.56,
+      "end_seconds": 1011.839,
+      "id": "XhPruwtidsE-display-0374",
+      "segment_id": "XhPruwtidsE-ja-0100"
+    },
+    {
+      "text": "たいんだけれども、ただ家がないと本当に",
+      "start_seconds": 1011.839,
+      "end_seconds": 1015.0,
+      "id": "XhPruwtidsE-display-0375",
+      "segment_id": "XhPruwtidsE-ja-0101"
+    },
+    {
+      "text": "こういう気持ちにならないかというと、僕",
+      "start_seconds": 1015.0,
+      "end_seconds": 1017.279,
+      "id": "XhPruwtidsE-display-0376",
+      "segment_id": "XhPruwtidsE-ja-0101"
+    },
+    {
+      "text": "はそうでもないという風に思っていて、",
+      "start_seconds": 1017.279,
+      "end_seconds": 1019.72,
+      "id": "XhPruwtidsE-display-0377",
+      "segment_id": "XhPruwtidsE-ja-0101"
+    },
+    {
+      "text": "大切なことってこの子のようにやっぱり",
+      "start_seconds": 1019.72,
+      "end_seconds": 1023.72,
+      "id": "XhPruwtidsE-display-0378",
+      "segment_id": "XhPruwtidsE-ja-0101"
+    },
+    {
+      "text": "えっと自分の時間を見つけてそれであ、",
+      "start_seconds": 1023.72,
+      "end_seconds": 1027.799,
+      "id": "XhPruwtidsE-display-0379",
+      "segment_id": "XhPruwtidsE-ja-0102"
+    },
+    {
+      "text": "ここじゃないかっていう場所に自分から",
+      "start_seconds": 1027.799,
+      "end_seconds": 1030.24,
+      "id": "XhPruwtidsE-display-0380",
+      "segment_id": "XhPruwtidsE-ja-0102"
+    },
+    {
+      "text": "コミットすることが大切だっていうことだ",
+      "start_seconds": 1030.24,
+      "end_seconds": 1033.199,
+      "id": "XhPruwtidsE-display-0381",
+      "segment_id": "XhPruwtidsE-ja-0102"
+    },
+    {
+      "text": "と思うんですね。で、そのコミットするっ",
+      "start_seconds": 1033.199,
+      "end_seconds": 1035.799,
+      "id": "XhPruwtidsE-display-0382",
+      "segment_id": "XhPruwtidsE-ja-0103"
+    },
+    {
+      "text": "ていうのがちょっとハードルが高い、式が",
+      "start_seconds": 1035.799,
+      "end_seconds": 1039.199,
+      "id": "XhPruwtidsE-display-0383",
+      "segment_id": "XhPruwtidsE-ja-0103"
+    },
+    {
+      "text": "高い場合もあると思うんですけど、でも",
+      "start_seconds": 1039.199,
+      "end_seconds": 1041.919,
+      "id": "XhPruwtidsE-display-0384",
+      "segment_id": "XhPruwtidsE-ja-0103"
+    },
+    {
+      "text": "それをちょっと勇気を出して超えてみると",
+      "start_seconds": 1041.919,
+      "end_seconds": 1044.52,
+      "id": "XhPruwtidsE-display-0385",
+      "segment_id": "XhPruwtidsE-ja-0103"
+    },
+    {
+      "text": "、そうするとあ、2回目はもうちょっと楽",
+      "start_seconds": 1044.52,
+      "end_seconds": 1048.079,
+      "id": "XhPruwtidsE-display-0386",
+      "segment_id": "XhPruwtidsE-ja-0104"
+    },
+    {
+      "text": "に行けるようになるし、3回目はもっと楽",
+      "start_seconds": 1048.079,
+      "end_seconds": 1049.84,
+      "id": "XhPruwtidsE-display-0387",
+      "segment_id": "XhPruwtidsE-ja-0104"
+    },
+    {
+      "text": "に行けるようになるし、で、こうやって何",
+      "start_seconds": 1049.84,
+      "end_seconds": 1051.84,
+      "id": "XhPruwtidsE-display-0388",
+      "segment_id": "XhPruwtidsE-ja-0104"
+    },
+    {
+      "text": "回も行ってるうちにその場所が自分のもの",
+      "start_seconds": 1051.84,
+      "end_seconds": 1054.4,
+      "id": "XhPruwtidsE-display-0389",
+      "segment_id": "XhPruwtidsE-ja-0104"
+    },
+    {
+      "text": "になっていくということがあるのではない",
+      "start_seconds": 1054.4,
+      "end_seconds": 1057.32,
+      "id": "XhPruwtidsE-display-0390",
+      "segment_id": "XhPruwtidsE-ja-0105"
+    },
+    {
+      "text": "かと思います。で、特にその都市生活をし",
+      "start_seconds": 1057.32,
+      "end_seconds": 1060.559,
+      "id": "XhPruwtidsE-display-0391",
+      "segment_id": "XhPruwtidsE-ja-0105"
+    },
+    {
+      "text": "てるとぎ救急パツパツみたいなことが",
+      "start_seconds": 1060.559,
+      "end_seconds": 1064.64,
+      "id": "XhPruwtidsE-display-0392",
+      "segment_id": "XhPruwtidsE-ja-0105"
+    },
+    {
+      "text": "すごく多くって僕たちはやっぱり疲れたり",
+      "start_seconds": 1064.64,
+      "end_seconds": 1067.0,
+      "id": "XhPruwtidsE-display-0393",
+      "segment_id": "XhPruwtidsE-ja-0106"
+    },
+    {
+      "text": "するじゃないですか。で、そういった時に",
+      "start_seconds": 1067.0,
+      "end_seconds": 1069.679,
+      "id": "XhPruwtidsE-display-0394",
+      "segment_id": "XhPruwtidsE-ja-0106"
+    },
+    {
+      "text": "自分の居場所みたいなのをどうやったら",
+      "start_seconds": 1069.679,
+      "end_seconds": 1072.799,
+      "id": "XhPruwtidsE-display-0395",
+      "segment_id": "XhPruwtidsE-ja-0106"
+    },
+    {
+      "text": "見つけられるか、これはとても大事なこと",
+      "start_seconds": 1072.799,
+      "end_seconds": 1074.919,
+      "id": "XhPruwtidsE-display-0396",
+      "segment_id": "XhPruwtidsE-ja-0106"
+    },
+    {
+      "text": "だと思ってて、ま、それを皆さんも是非",
+      "start_seconds": 1074.919,
+      "end_seconds": 1078.4,
+      "id": "XhPruwtidsE-display-0397",
+      "segment_id": "XhPruwtidsE-ja-0107"
+    },
+    {
+      "text": "試していただきたいし、絶対にできること",
+      "start_seconds": 1078.4,
+      "end_seconds": 1080.76,
+      "id": "XhPruwtidsE-display-0398",
+      "segment_id": "XhPruwtidsE-ja-0107"
+    },
+    {
+      "text": "だと思うんですね。で、そのために",
+      "start_seconds": 1080.76,
+      "end_seconds": 1082.919,
+      "id": "XhPruwtidsE-display-0399",
+      "segment_id": "XhPruwtidsE-ja-0107"
+    },
+    {
+      "text": "ちょっと勇気を持ってコミットしてみると",
+      "start_seconds": 1082.919,
+      "end_seconds": 1085.76,
+      "id": "XhPruwtidsE-display-0400",
+      "segment_id": "XhPruwtidsE-ja-0107"
+    },
+    {
+      "text": "なんかそういったことをあの試していって",
+      "start_seconds": 1085.76,
+      "end_seconds": 1088.28,
+      "id": "XhPruwtidsE-display-0401",
+      "segment_id": "XhPruwtidsE-ja-0108"
+    },
+    {
+      "text": "いただければいいなと思っています。以上",
+      "start_seconds": 1088.28,
+      "end_seconds": 1090.919,
+      "id": "XhPruwtidsE-display-0402",
+      "segment_id": "XhPruwtidsE-ja-0108"
+    },
+    {
+      "text": "です。ありがとうございました。",
+      "start_seconds": 1090.919,
+      "end_seconds": 1092.552,
+      "id": "XhPruwtidsE-display-0403",
+      "segment_id": "XhPruwtidsE-ja-0108"
+    },
+    {
+      "text": "[咳払い]",
+      "start_seconds": 1092.552,
+      "end_seconds": 1094.572,
+      "id": "XhPruwtidsE-display-0404",
+      "segment_id": "XhPruwtidsE-ja-0109"
+    }
+  ]
+}

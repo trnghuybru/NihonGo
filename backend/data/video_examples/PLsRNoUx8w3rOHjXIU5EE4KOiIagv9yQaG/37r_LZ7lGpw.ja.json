@@ -1,0 +1,4806 @@
+{
+  "schema_version": 1,
+  "video": {
+    "youtube_id": "37r_LZ7lGpw",
+    "title": "\"できそうなことから考える。をやめる。 -SEKAI HOTELが切り拓く新たな地方創生一 Don't Begin with “Feasible”\" | Koichi Yano | TEDxKeioU",
+    "channel": "TEDx Talks",
+    "duration_seconds": 1090
+  },
+  "caption_track": {
+    "language": "ja",
+    "kind": "asr",
+    "source": "youtube_automatic"
+  },
+  "source_playlist": "https://www.youtube.com/playlist?list=PLsRNoUx8w3rOHjXIU5EE4KOiIagv9yQaG",
+  "fetched_at": "2026-10-13T13:23:22.932161+00:00",
+  "segment_count": 121,
+  "segments": [
+    {
+      "text": "かっこいい大人、憧れる大人と聞いて是非ちょっと思い浮かべていただきたいんですけど、何人ぐらい思い浮かびますか?",
+      "start_seconds": 11.0,
+      "end_seconds": 21.84,
+      "id": "37r_LZ7lGpw-ja-0001",
+      "sequence": 1
+    },
+    {
+      "text": "こんな人になりたいなでもいいですし、え、ま、ついつい思い浮かべてしまうというような方でもいいので、ま、とにかく強烈",
+      "start_seconds": 21.84,
+      "end_seconds": 31.56,
+      "id": "37r_LZ7lGpw-ja-0002",
+      "sequence": 2
+    },
+    {
+      "text": "なインパクトを持って思い浮かぶ方っていうのを是非ちょっと数えてみてください。",
+      "start_seconds": 31.56,
+      "end_seconds": 38.84,
+      "id": "37r_LZ7lGpw-ja-0003",
+      "sequence": 3
+    },
+    {
+      "text": "はい。では次にですね、こう知っている大人。これは何人ぐらいいらっしゃいます",
+      "start_seconds": 38.84,
+      "end_seconds": 48.36,
+      "id": "37r_LZ7lGpw-ja-0004",
+      "sequence": 4
+    },
+    {
+      "text": "かね?ま、ちょっと数える大変ですよね[咳払い]。ま、ほとんどの方が成人されてるかと思いますので、ま、小学校、中学校、ま、高校ぐらいまでこう卒業",
+      "start_seconds": 48.36,
+      "end_seconds": 59.879,
+      "id": "37r_LZ7lGpw-ja-0005",
+      "sequence": 5
+    },
+    {
+      "text": "アルバムをひっくり返していただいて、ま、数えるだけでも、ま、数百はいるんじゃないかなと思います。",
+      "start_seconds": 59.879,
+      "end_seconds": 68.479,
+      "id": "37r_LZ7lGpw-ja-0006",
+      "sequence": 6
+    },
+    {
+      "text": "ま、僕自身ですね、この質問を、ま、10年以上ですかね、え、若い世代、特に学生に向けてこう投げかけ続けてきたんです",
+      "start_seconds": 68.479,
+      "end_seconds": 78.6,
+      "id": "37r_LZ7lGpw-ja-0007",
+      "sequence": 7
+    },
+    {
+      "text": "けども、ま、その中で、ま、常に思うのはこうかっこいいと思われてる大人めちゃめちゃ少ないなっていうことをいつ",
+      "start_seconds": 78.6,
+      "end_seconds": 87.64,
+      "id": "37r_LZ7lGpw-ja-0008",
+      "sequence": 8
+    },
+    {
+      "text": "も強く思います。ま、例えばこう300人知っていて3人かっこいい大人がいるってことは、ま",
+      "start_seconds": 87.64,
+      "end_seconds": 97.32,
+      "id": "37r_LZ7lGpw-ja-0009",
+      "sequence": 9
+    },
+    {
+      "text": "、1%になりますので、ま、例えば学生がですね、まだ社会に出たくないなとか、こう学生やっときたいなということを、ま",
+      "start_seconds": 97.32,
+      "end_seconds": 107.88,
+      "id": "37r_LZ7lGpw-ja-0010",
+      "sequence": 10
+    },
+    {
+      "text": "、こぼしていたとしても、ま、仕方ないのかなと思ってしまいます。",
+      "start_seconds": 107.88,
+      "end_seconds": 113.84,
+      "id": "37r_LZ7lGpw-ja-0011",
+      "sequence": 11
+    },
+    {
+      "text": "で、一方でですね、え、ま、そうした多くの大人たち、ま、僕もそうなんですけど、ま、自分たちが、20十歳ぐらいの頃に、",
+      "start_seconds": 113.84,
+      "end_seconds": 123.141,
+      "id": "37r_LZ7lGpw-ja-0012",
+      "sequence": 12
+    },
+    {
+      "text": "[鼻息]ま、同じようにこう大人を見て、ま、同じようにこう自分はかっこいい大人になりたいなと、ま、思っていたはずなん",
+      "start_seconds": 123.141,
+      "end_seconds": 132.959,
+      "id": "37r_LZ7lGpw-ja-0013",
+      "sequence": 13
+    },
+    {
+      "text": "ですね。ま、いつの時代もこう若い世代っていうのはこのかっこいい大人っていうものに、ま、強くこう興味を示し、こう",
+      "start_seconds": 132.959,
+      "end_seconds": 142.599,
+      "id": "37r_LZ7lGpw-ja-0014",
+      "sequence": 14
+    },
+    {
+      "text": "自分自身の将来にもこうかっこいい自分っていうのを夢見てるのじゃないかなと思います。",
+      "start_seconds": 142.599,
+      "end_seconds": 151.44,
+      "id": "37r_LZ7lGpw-ja-0015",
+      "sequence": 15
+    },
+    {
+      "text": "で、僕自身ですね、え、ま、社長という立場で今仕事をさせていただいてます。",
+      "start_seconds": 151.44,
+      "end_seconds": 158.511,
+      "id": "37r_LZ7lGpw-ja-0016",
+      "sequence": 16
+    },
+    {
+      "text": "[鼻息]こう皆さんこう社長という立場を思い浮かべるとこう何でもできる人というかこうたくさんのことを知ってる人だったりこうなんでしょう知り合いがいっぱい",
+      "start_seconds": 158.511,
+      "end_seconds": 170.159,
+      "id": "37r_LZ7lGpw-ja-0017",
+      "sequence": 17
+    },
+    {
+      "text": "いるとかまそういういわゆるこう手札をたくさん持ってるような人を思い浮かべるんじゃないかなと思うんですが、ま、僕",
+      "start_seconds": 170.159,
+      "end_seconds": 179.44,
+      "id": "37r_LZ7lGpw-ja-0018",
+      "sequence": 18
+    },
+    {
+      "text": "自身20十歳ぐらいの頃ですね、もう自分も社長なるんだと思っていたので、ま、いろんな経営者に会いに行ってですね、こう常に、あ、この人本当何でも知ってる",
+      "start_seconds": 179.44,
+      "end_seconds": 191.08,
+      "id": "37r_LZ7lGpw-ja-0019",
+      "sequence": 19
+    },
+    {
+      "text": "なとかいろんな人脈持ってらっしゃるなと、ま、そういう風に思ったのを今でも覚えております。",
+      "start_seconds": 191.08,
+      "end_seconds": 201.64,
+      "id": "37r_LZ7lGpw-ja-0020",
+      "sequence": 20
+    },
+    {
+      "text": "ま、いざ24歳でですね、え、今のクジ株式会社というものを、ま、設立することになったんですけども、ま、自分が社長",
+      "start_seconds": 201.64,
+      "end_seconds": 212.519,
+      "id": "37r_LZ7lGpw-ja-0021",
+      "sequence": 21
+    },
+    {
+      "text": "なってみるとですね、もう全然思ってたのとは違いまして、こう自分ができること、そしてこうやれること、ま、いわゆる手札",
+      "start_seconds": 212.519,
+      "end_seconds": 224.439,
+      "id": "37r_LZ7lGpw-ja-0022",
+      "sequence": 22
+    },
+    {
+      "text": "の中からこう順番よく選んでいっているはずなのに、こうなかな会社がこううまく",
+      "start_seconds": 224.439,
+      "end_seconds": 232.879,
+      "id": "37r_LZ7lGpw-ja-0023",
+      "sequence": 23
+    },
+    {
+      "text": "成長しないというか、こう業績は横ばですし、こう従業員に至ってはこう育てては",
+      "start_seconds": 232.879,
+      "end_seconds": 241.68,
+      "id": "37r_LZ7lGpw-ja-0024",
+      "sequence": 24
+    },
+    {
+      "text": "やめちゃう。ま、また育ててはやめてしまうの繰り返しを、ま、ずっとしてまして、もう30歳ぐらいになる頃にはですね",
+      "start_seconds": 241.68,
+      "end_seconds": 250.4,
+      "id": "37r_LZ7lGpw-ja-0025",
+      "sequence": 25
+    },
+    {
+      "text": "、こやっぱ向いてないなと。これ全部経営者向いてないからもう畳んでもう1回サラリマしようかなと、ま、思うことも",
+      "start_seconds": 250.4,
+      "end_seconds": 261.079,
+      "id": "37r_LZ7lGpw-ja-0026",
+      "sequence": 26
+    },
+    {
+      "text": "多々ありました。もう仕事を終えて車運転して家へ帰るんですけど、こう帰ってる、運転してる記憶がないみたいな日も、ま、",
+      "start_seconds": 261.079,
+      "end_seconds": 272.44,
+      "id": "37r_LZ7lGpw-ja-0027",
+      "sequence": 27
+    },
+    {
+      "text": "たくさんありまして、ま、本当に悩んだ頃でした。ま、そして今日ですね、僕43歳",
+      "start_seconds": 272.44,
+      "end_seconds": 282.08,
+      "id": "37r_LZ7lGpw-ja-0028",
+      "sequence": 28
+    },
+    {
+      "text": "で会社は19年目。になるんですが、え、従業員で言うと社員アルバイト含め70名",
+      "start_seconds": 282.08,
+      "end_seconds": 290.44,
+      "id": "37r_LZ7lGpw-ja-0029",
+      "sequence": 29
+    },
+    {
+      "text": "ぐらいでして、え、3年以内にやめる子もほとんどいない定着率の高いあの会社になったと思います。え、世界ホテルという",
+      "start_seconds": 290.44,
+      "end_seconds": 302.039,
+      "id": "37r_LZ7lGpw-ja-0030",
+      "sequence": 30
+    },
+    {
+      "text": "2017年に始めたこのビジネスモデルはですね、え、商店街をこうリノベーションしてホテル化していくというものなんですけども、[鼻息]こういろんな国から",
+      "start_seconds": 302.039,
+      "end_seconds": 313.44,
+      "id": "37r_LZ7lGpw-ja-0031",
+      "sequence": 31
+    },
+    {
+      "text": "もちろん国内からも宿泊に訪れていただくようなホテルになりましたし、従業員も長く働いてくれるような、ま、ホテル会社",
+      "start_seconds": 313.44,
+      "end_seconds": 323.52,
+      "id": "37r_LZ7lGpw-ja-0032",
+      "sequence": 32
+    },
+    {
+      "text": "になったと思います。",
+      "start_seconds": 323.52,
+      "end_seconds": 327.24,
+      "id": "37r_LZ7lGpw-ja-0033",
+      "sequence": 33
+    },
+    {
+      "text": "ま、どのように考えてこう至ったかと言いますと、もう自分自身ですね、[鼻息]できること、できそうなことから考える、やるっていうのを、ま、やめてみるという",
+      "start_seconds": 327.24,
+      "end_seconds": 338.68,
+      "id": "37r_LZ7lGpw-ja-0034",
+      "sequence": 34
+    },
+    {
+      "text": "ところから始まりました。これがきっと大きな転換点だったと思います。",
+      "start_seconds": 338.68,
+      "end_seconds": 346.479,
+      "id": "37r_LZ7lGpw-ja-0035",
+      "sequence": 35
+    },
+    {
+      "text": "では自分が並べてるこう手札からこう選ぶのをやめる、できそうなことから考えるのをやめるというのであれば、ま、何を基準",
+      "start_seconds": 346.479,
+      "end_seconds": 357.08,
+      "id": "37r_LZ7lGpw-ja-0036",
+      "sequence": 36
+    },
+    {
+      "text": "にこう自分は決めていくのだろう、動いていくのだろうという話になるんですが、ま、僕自身こう不動産屋としてずっと働いて",
+      "start_seconds": 357.08,
+      "end_seconds": 368.039,
+      "id": "37r_LZ7lGpw-ja-0037",
+      "sequence": 37
+    },
+    {
+      "text": "きた中で、ま、強く抱いた疑問、これが僕の出発点だったように思います。",
+      "start_seconds": 368.039,
+      "end_seconds": 376.199,
+      "id": "37r_LZ7lGpw-ja-0038",
+      "sequence": 38
+    },
+    {
+      "text": "ま、商店街にですね、古い建物、いわゆるこうシャッターが閉まっちゃってる建物、ま、どんどん増えていくっていうのを、ま、仕事としても見ていたんですけども、",
+      "start_seconds": 376.199,
+      "end_seconds": 387.109,
+      "id": "37r_LZ7lGpw-ja-0039",
+      "sequence": 39
+    },
+    {
+      "text": "[鼻息]こう寂しいなと思うこともあれば、こう自分の地元とこう重ね合わせて、",
+      "start_seconds": 387.109,
+      "end_seconds": 396.12,
+      "id": "37r_LZ7lGpw-ja-0040",
+      "sequence": 40
+    },
+    {
+      "text": "もかしいというか、こうモヤモヤするっていうこともあったんですけども、ま、1番強く思ったのはなんでこんなことになるん",
+      "start_seconds": 396.12,
+      "end_seconds": 405.56,
+      "id": "37r_LZ7lGpw-ja-0041",
+      "sequence": 41
+    },
+    {
+      "text": "やろうとこう疑問が1番強かったですね。",
+      "start_seconds": 405.56,
+      "end_seconds": 411.039,
+      "id": "37r_LZ7lGpw-ja-0042",
+      "sequence": 42
+    },
+    {
+      "text": "ま、確かに不動産として見ても商店街沿いの古い建物ってこうめちゃくちゃ触りづらいんですよ。こう仕事になりづらいと",
+      "start_seconds": 411.039,
+      "end_seconds": 420.8,
+      "id": "37r_LZ7lGpw-ja-0043",
+      "sequence": 43
+    },
+    {
+      "text": "いうか[鼻息]でまししてはこう近隣に大型の商業施設できたりとかでですね、こう人流が変わったりとかいろんな理由で",
+      "start_seconds": 420.8,
+      "end_seconds": 431.599,
+      "id": "37r_LZ7lGpw-ja-0044",
+      "sequence": 44
+    },
+    {
+      "text": "こう商店街がだんだん元気がなくなっていく。ま、これは理解できるんですけども、ま、僕自身色々とこう調べたり勉強した",
+      "start_seconds": 431.599,
+      "end_seconds": 441.16,
+      "id": "37r_LZ7lGpw-ja-0045",
+      "sequence": 45
+    },
+    {
+      "text": "結果、あ、これはみんなにとってめちゃめちゃめんどくさいことなんだなっ",
+      "start_seconds": 441.16,
+      "end_seconds": 448.599,
+      "id": "37r_LZ7lGpw-ja-0046",
+      "sequence": 46
+    },
+    {
+      "text": "ていう結論に行きつきました。",
+      "start_seconds": 448.599,
+      "end_seconds": 453.319,
+      "id": "37r_LZ7lGpw-ja-0047",
+      "sequence": 47
+    },
+    {
+      "text": "めんどくさいことの大半って本当はやらなきゃいけないって分かってることだったりするんですよね。",
+      "start_seconds": 453.56,
+      "end_seconds": 461.879,
+      "id": "37r_LZ7lGpw-ja-0048",
+      "sequence": 48
+    },
+    {
+      "text": "ま、商店街もだんだん元気なくなっていって、若い子も減ってこうなんとかしなきゃいけないと思っていた大人の方は多いと思うんですが、ま、なかなか大変そうと",
+      "start_seconds": 461.879,
+      "end_seconds": 473.36,
+      "id": "37r_LZ7lGpw-ja-0049",
+      "sequence": 49
+    },
+    {
+      "text": "こう一歩踏み出せない。ま、これが、ま、みんなにとってめんどくさいことなんですが、ま、この時僕ピンときまして、このめんどくさいことをこうやってやり",
+      "start_seconds": 473.36,
+      "end_seconds": 484.72,
+      "id": "37r_LZ7lGpw-ja-0050",
+      "sequence": 50
+    },
+    {
+      "text": "切って結果を出したら[鼻息]もしかしたらすごくこう喜ばれるんじゃないかと。",
+      "start_seconds": 484.72,
+      "end_seconds": 491.4,
+      "id": "37r_LZ7lGpw-ja-0051",
+      "sequence": 51
+    },
+    {
+      "text": "え、そしてそれはこういろんな人に応援される、愛されるものになるんじゃないかと、ま、そういう風に、ま、考えまして、ま",
+      "start_seconds": 491.4,
+      "end_seconds": 501.52,
+      "id": "37r_LZ7lGpw-ja-0052",
+      "sequence": 52
+    },
+    {
+      "text": "、やってみようかなと思いました。",
+      "start_seconds": 501.52,
+      "end_seconds": 505.759,
+      "id": "37r_LZ7lGpw-ja-0053",
+      "sequence": 53
+    },
+    {
+      "text": "で、ビジネスとしては競合が少ないという話になりますんで、ま、必然的にオンリーワンを目指すことになります。",
+      "start_seconds": 505.759,
+      "end_seconds": 514.479,
+      "id": "37r_LZ7lGpw-ja-0054",
+      "sequence": 54
+    },
+    {
+      "text": "ま、何よりですね、ま、経営者トップとして僕が売上よというよりもこの商店街めちゃくちゃ元気に",
+      "start_seconds": 514.479,
+      "end_seconds": 524.12,
+      "id": "37r_LZ7lGpw-ja-0055",
+      "sequence": 55
+    },
+    {
+      "text": "しようよっていう方がなんか普通に共感できそうだなっていう、ま、そういう風に考えてやることを決めました。",
+      "start_seconds": 524.12,
+      "end_seconds": 535.24,
+      "id": "37r_LZ7lGpw-ja-0056",
+      "sequence": 56
+    },
+    {
+      "text": "そうして生まれたのがですね、ま、世界ホテルという商店街をホテル化していくビジネスです。[鼻息]",
+      "start_seconds": 535.24,
+      "end_seconds": 543.64,
+      "id": "37r_LZ7lGpw-ja-0057",
+      "sequence": 57
+    },
+    {
+      "text": "え、大阪の東大阪市という町の伏という駅周辺の商店街をですね、え、空いてるとか",
+      "start_seconds": 543.64,
+      "end_seconds": 552.8,
+      "id": "37r_LZ7lGpw-ja-0058",
+      "sequence": 58
+    },
+    {
+      "text": "秋屋をリノベーションして止まれるようにしまして、ま、近隣の飲食店、え、とかと",
+      "start_seconds": 552.8,
+      "end_seconds": 561.12,
+      "id": "37r_LZ7lGpw-ja-0059",
+      "sequence": 59
+    },
+    {
+      "text": "こう定携して夕食会場、朝食会場として、ま、ホテルのサービスを提供すると。",
+      "start_seconds": 561.12,
+      "end_seconds": 569.2,
+      "id": "37r_LZ7lGpw-ja-0060",
+      "sequence": 60
+    },
+    {
+      "text": "で、え、近くに昔ながらの戦闘があるんですけども、ま、そちらをこう大浴上として使ってもらうので、うちのお客さんが",
+      "start_seconds": 569.2,
+      "end_seconds": 580.24,
+      "id": "37r_LZ7lGpw-ja-0061",
+      "sequence": 61
+    },
+    {
+      "text": "こう不労家持って商店が歩いていくっていうのがもう今では、ま、日常的に見られるような、ま、そんなホテルです。",
+      "start_seconds": 580.24,
+      "end_seconds": 589.32,
+      "id": "37r_LZ7lGpw-ja-0062",
+      "sequence": 62
+    },
+    {
+      "text": "ま、元々町にあった機能をですね、僕らが再編集する形で町全体をホテル化する街",
+      "start_seconds": 589.32,
+      "end_seconds": 598.16,
+      "id": "37r_LZ7lGpw-ja-0063",
+      "sequence": 63
+    },
+    {
+      "text": "ホテル、ま、商店街丸ごとホテル。これが世界ホテルというものです。",
+      "start_seconds": 598.16,
+      "end_seconds": 605.881,
+      "id": "37r_LZ7lGpw-ja-0064",
+      "sequence": 64
+    },
+    {
+      "text": "[鼻息]ま、旅先の日常に飛び込もうというキャッチコピーを掲げてまして、ま、観光客からすれば初めて訪れる知らない土地な",
+      "start_seconds": 605.881,
+      "end_seconds": 616.079,
+      "id": "37r_LZ7lGpw-ja-0065",
+      "sequence": 65
+    },
+    {
+      "text": "んですよね。ま、そこの、ま、住民が普段こう営んでる日常体験っていうのを、ま、アクティビティとして体験いただけるのが",
+      "start_seconds": 616.079,
+      "end_seconds": 625.44,
+      "id": "37r_LZ7lGpw-ja-0066",
+      "sequence": 66
+    },
+    {
+      "text": "うちの世界ホテルになります。[鼻息]ま、実際ですね、えっと、アンケートってあるじゃないですか、ホテルの。ま、",
+      "start_seconds": 625.44,
+      "end_seconds": 634.519,
+      "id": "37r_LZ7lGpw-ja-0067",
+      "sequence": 67
+    },
+    {
+      "text": "あそこにも、ま、客室が綺麗だったとか、ま、スタッフさんが良かったっていうのもあるんですけども、ま、ここに加えてです",
+      "start_seconds": 634.519,
+      "end_seconds": 642.48,
+      "id": "37r_LZ7lGpw-ja-0068",
+      "sequence": 68
+    },
+    {
+      "text": "ね、こう自分の地元にも商店街があって、ワクワクしたと、是非うちの地元でも世界ホテルやってほしいというような、こう",
+      "start_seconds": 642.48,
+      "end_seconds": 652.32,
+      "id": "37r_LZ7lGpw-ja-0069",
+      "sequence": 69
+    },
+    {
+      "text": "激例のメッセージだったり、え、どこどこのお店のおばあちゃんが、ま、いろんなお話もしてくれたし、ま、おまけもくれたと",
+      "start_seconds": 652.32,
+      "end_seconds": 660.12,
+      "id": "37r_LZ7lGpw-ja-0070",
+      "sequence": 70
+    },
+    {
+      "text": "、もう非常にこう興奮したというような感謝のメッセージをいいたりですね、ま、しっかりとこう旅先の日常に飛び込むって",
+      "start_seconds": 660.12,
+      "end_seconds": 671.079,
+      "id": "37r_LZ7lGpw-ja-0071",
+      "sequence": 71
+    },
+    {
+      "text": "いう体験が、ま、喜ばれている様子があの伺える内容となっております。[鼻息]",
+      "start_seconds": 671.079,
+      "end_seconds": 680.56,
+      "id": "37r_LZ7lGpw-ja-0072",
+      "sequence": 72
+    },
+    {
+      "text": "ま、こう、わざわざ商店街をですね、こうリノベーションしていって、しかも地域と",
+      "start_seconds": 680.56,
+      "end_seconds": 687.839,
+      "id": "37r_LZ7lGpw-ja-0073",
+      "sequence": 73
+    },
+    {
+      "text": "連携してホテルをやるだなんて、ま、合理的ではないですよね。えー、僕も散々先輩",
+      "start_seconds": 687.839,
+      "end_seconds": 698.44,
+      "id": "37r_LZ7lGpw-ja-0074",
+      "sequence": 74
+    },
+    {
+      "text": "にですね、なんでそんなめんどくさいことやってんのと、今、今でも言われます。",
+      "start_seconds": 698.44,
+      "end_seconds": 704.16,
+      "id": "37r_LZ7lGpw-ja-0075",
+      "sequence": 75
+    },
+    {
+      "text": "はい。[鼻息]ま、ビジネス的にはもしかしたら合理性にかけることなのかもしれないです。",
+      "start_seconds": 704.16,
+      "end_seconds": 711.44,
+      "id": "37r_LZ7lGpw-ja-0076",
+      "sequence": 76
+    },
+    {
+      "text": "ま、ホテル普通で言えば顧客と従業員のことを考えるだけで十分なんですが、我々は地域の方とどう連携するか、そしてこの",
+      "start_seconds": 711.44,
+      "end_seconds": 722.04,
+      "id": "37r_LZ7lGpw-ja-0077",
+      "sequence": 77
+    },
+    {
+      "text": "地域を一緒にどう盛り上げていくかということまで考えます。[鼻息]ま、街中に",
+      "start_seconds": 722.04,
+      "end_seconds": 730.56,
+      "id": "37r_LZ7lGpw-ja-0078",
+      "sequence": 78
+    },
+    {
+      "text": "こう施設が点在しているので従業員がこう仕事中に商店街歩いて、ま、いろんな方と",
+      "start_seconds": 730.56,
+      "end_seconds": 739.16,
+      "id": "37r_LZ7lGpw-ja-0079",
+      "sequence": 79
+    },
+    {
+      "text": "こう立ち話になったり挨拶したりするんですよね。ま、その時には、ま、是非仕事を止めて、足止めて、[鼻息]ま、",
+      "start_seconds": 739.16,
+      "end_seconds": 749.6,
+      "id": "37r_LZ7lGpw-ja-0080",
+      "sequence": 80
+    },
+    {
+      "text": "ちょっと立ち回ししておいでと、ま、いう風にうちのスタッフには、ま、教えるようにしています。ま、時給月給が発生して",
+      "start_seconds": 749.6,
+      "end_seconds": 759.76,
+      "id": "37r_LZ7lGpw-ja-0081",
+      "sequence": 81
+    },
+    {
+      "text": "いる時間帯にですね、仕事止めて雑談しといでてもなかなか変わったホテルかなと思うんですが、ま、それぐらいこう地域といかにこう向き合うかとか、ま、仲良く",
+      "start_seconds": 759.76,
+      "end_seconds": 771.56,
+      "id": "37r_LZ7lGpw-ja-0082",
+      "sequence": 82
+    },
+    {
+      "text": "なるかっていうところに、ま、重きを置いております。",
+      "start_seconds": 771.56,
+      "end_seconds": 776.839,
+      "id": "37r_LZ7lGpw-ja-0083",
+      "sequence": 83
+    },
+    {
+      "text": "ま、おかげでですね、ま、何でしょう。",
+      "start_seconds": 776.839,
+      "end_seconds": 779.279,
+      "id": "37r_LZ7lGpw-ja-0084",
+      "sequence": 84
+    },
+    {
+      "text": "地域と一体になってきた感情もものすごくありまして、ま、こういった写真に映ってるようなコミュニケーションのシーン",
+      "start_seconds": 779.279,
+      "end_seconds": 786.32,
+      "id": "37r_LZ7lGpw-ja-0085",
+      "sequence": 85
+    },
+    {
+      "text": "もう毎日ありますし、ま、例えばこうホテルに行く道が分からないうちのお客さんをですね、世界ホテル探してんねやろ",
+      "start_seconds": 786.32,
+      "end_seconds": 797.72,
+      "id": "37r_LZ7lGpw-ja-0086",
+      "sequence": 86
+    },
+    {
+      "text": "とこう連れてきてくれる方もいらっしゃいますし、例えばお寿司屋さんのカウンター席で隣同士になった、ま、うちのお客さん",
+      "start_seconds": 797.72,
+      "end_seconds": 807.92,
+      "id": "37r_LZ7lGpw-ja-0087",
+      "sequence": 87
+    },
+    {
+      "text": "と隣同士になった方がいっぱい奢るのがちょっとした趣味になってきた寿司屋さんの常連客の方もいらっしゃいますし、ま、",
+      "start_seconds": 807.92,
+      "end_seconds": 817.76,
+      "id": "37r_LZ7lGpw-ja-0088",
+      "sequence": 88
+    },
+    {
+      "text": "いろんな場面でですね、[鼻息]ま、世界ホテルと地域が一体となって観光客をお迎えしている、ま、こんな場面も",
+      "start_seconds": 817.76,
+      "end_seconds": 827.16,
+      "id": "37r_LZ7lGpw-ja-0089",
+      "sequence": 89
+    },
+    {
+      "text": "多々見られます。",
+      "start_seconds": 827.16,
+      "end_seconds": 830.56,
+      "id": "37r_LZ7lGpw-ja-0090",
+      "sequence": 90
+    },
+    {
+      "text": "で、僕自身世界ホテル始める時に観光客と地域の人が、ま、そんな風に接点持ってくれたらすごく素敵だなと思って",
+      "start_seconds": 830.56,
+      "end_seconds": 842.44,
+      "id": "37r_LZ7lGpw-ja-0091",
+      "sequence": 91
+    },
+    {
+      "text": "始めたんですけども、ま、今では僕自身も知らない、顔も名前も知らない方々がですね、そういう風に街で観光客と接している",
+      "start_seconds": 842.44,
+      "end_seconds": 851.759,
+      "id": "37r_LZ7lGpw-ja-0092",
+      "sequence": 92
+    },
+    {
+      "text": "と聞いて、ま、たまらなく嬉しい。ま、そう毎日思っております。",
+      "start_seconds": 851.759,
+      "end_seconds": 858.714,
+      "id": "37r_LZ7lGpw-ja-0093",
+      "sequence": 93
+    },
+    {
+      "text": "[鼻息]で、今映しているこの絵なんですけど、こう世界ホテル始めるって決めた時にこう事業計画書より先に友人に書いて",
+      "start_seconds": 858.714,
+      "end_seconds": 867.56,
+      "id": "37r_LZ7lGpw-ja-0094",
+      "sequence": 94
+    },
+    {
+      "text": "いただいた1つの絵なんですが、ここにはお祭りの夜が書いてありまして、ここに出てくる人ってこう国籍も年齢も関係なく",
+      "start_seconds": 867.56,
+      "end_seconds": 878.24,
+      "id": "37r_LZ7lGpw-ja-0095",
+      "sequence": 95
+    },
+    {
+      "text": "みんなお祭りの夜でワクワクしていて、みんな他人に優しくしているという、ま、そんなシーンが書いてあって、ま、ここから世界ホテル始まったんですけども今で",
+      "start_seconds": 878.24,
+      "end_seconds": 890.0,
+      "id": "37r_LZ7lGpw-ja-0096",
+      "sequence": 96
+    },
+    {
+      "text": "は街中にこんなシーンが広がっていると、もう本当に分け隔立てない幸せが広がっている。ま、そんなホテルになってきました",
+      "start_seconds": 890.0,
+      "end_seconds": 900.48,
+      "id": "37r_LZ7lGpw-ja-0097",
+      "sequence": 97
+    },
+    {
+      "text": "。",
+      "start_seconds": 900.48,
+      "end_seconds": 902.199,
+      "id": "37r_LZ7lGpw-ja-0098",
+      "sequence": 98
+    },
+    {
+      "text": "で、コロナとか色々あったんですけども、ま、去年いよいよ1年間で1万人まして、[鼻息]",
+      "start_seconds": 902.199,
+      "end_seconds": 911.199,
+      "id": "37r_LZ7lGpw-ja-0099",
+      "sequence": 99
+    },
+    {
+      "text": "有名観光地じゃなかった、ただの商店街に1万人という、こう異業を成し遂けてですね、こうますます盛り上がりを見せてきて",
+      "start_seconds": 911.199,
+      "end_seconds": 920.6,
+      "id": "37r_LZ7lGpw-ja-0100",
+      "sequence": 100
+    },
+    {
+      "text": "いる、ま、そんなタイミングです。",
+      "start_seconds": 920.6,
+      "end_seconds": 924.399,
+      "id": "37r_LZ7lGpw-ja-0101",
+      "sequence": 101
+    },
+    {
+      "text": "では、ま、僕自身どんな価値観を大事にしているかというのがですね、ま、かっこいいかどうかです。しかもこれ、あの格好",
+      "start_seconds": 924.399,
+      "end_seconds": 934.44,
+      "id": "37r_LZ7lGpw-ja-0102",
+      "sequence": 102
+    },
+    {
+      "text": "って漢字で書くと変で書くんですけど、ま、うちの会社、うちのチームではこの立弁で書くあかよしというのをみんなの共通",
+      "start_seconds": 934.44,
+      "end_seconds": 943.16,
+      "id": "37r_LZ7lGpw-ja-0103",
+      "sequence": 103
+    },
+    {
+      "text": "言語としております。ま、ちょうどいい様、誠に具合がいい様子という意味なので、こうより派手にしようとか、より大きく",
+      "start_seconds": 943.16,
+      "end_seconds": 953.959,
+      "id": "37r_LZ7lGpw-ja-0104",
+      "sequence": 104
+    },
+    {
+      "text": "しようというような発想ではなく、ここがちょうどいい、ここがちょうどいい具合なんだっていうのを考え続ける、ま、そんなプロフェッショナルチームを目指しての",
+      "start_seconds": 953.959,
+      "end_seconds": 964.56,
+      "id": "37r_LZ7lGpw-ja-0105",
+      "sequence": 105
+    },
+    {
+      "text": "このよしでもあります。",
+      "start_seconds": 964.56,
+      "end_seconds": 968.519,
+      "id": "37r_LZ7lGpw-ja-0106",
+      "sequence": 106
+    },
+    {
+      "text": "こう2次的な効果もありまして、疑うようにもなってくるんですね。",
+      "start_seconds": 968.519,
+      "end_seconds": 975.16,
+      "id": "37r_LZ7lGpw-ja-0107",
+      "sequence": 107
+    },
+    {
+      "text": "世間一般的にはこれが良しとされている。",
+      "start_seconds": 975.16,
+      "end_seconds": 978.36,
+      "id": "37r_LZ7lGpw-ja-0108",
+      "sequence": 108
+    },
+    {
+      "text": "今これが流行りだとかいうことに関しても本当にそれでいいのかというような疑うというか考え直す感性も育ててくれています",
+      "start_seconds": 978.36,
+      "end_seconds": 989.519,
+      "id": "37r_LZ7lGpw-ja-0109",
+      "sequence": 109
+    },
+    {
+      "text": "。",
+      "start_seconds": 989.519,
+      "end_seconds": 991.56,
+      "id": "37r_LZ7lGpw-ja-0110",
+      "sequence": 110
+    },
+    {
+      "text": "ま、世界ホテルいろんなとこで取り上げられていますが、今珍しくて取り上げられるんじゃなくって、100年後も続くようなこう本当にかっこいいって何だろ",
+      "start_seconds": 991.56,
+      "end_seconds": 1002.079,
+      "id": "37r_LZ7lGpw-ja-0111",
+      "sequence": 111
+    },
+    {
+      "text": "うってことをスタッフも考えてくれてます。ま、長持ちするかっこいい高しというのは、ま、実はめんどくさい作業の連続なんじゃないかな",
+      "start_seconds": 1002.079,
+      "end_seconds": 1013.319,
+      "id": "37r_LZ7lGpw-ja-0112",
+      "sequence": 112
+    },
+    {
+      "text": "という風に考えています。",
+      "start_seconds": 1013.319,
+      "end_seconds": 1017.839,
+      "id": "37r_LZ7lGpw-ja-0113",
+      "sequence": 113
+    },
+    {
+      "text": "もしですね、人生で迷ったら損か得か正しいか正しくないかではなく、こうかっこいいかっこよくないかで選んで",
+      "start_seconds": 1017.839,
+      "end_seconds": 1029.839,
+      "id": "37r_LZ7lGpw-ja-0114",
+      "sequence": 114
+    },
+    {
+      "text": "くださいと。ま、よく若い世代とか卒業していく人に僕あのメッセージを送るんですけども、大体かっこいい方ってめちゃくちゃめんど",
+      "start_seconds": 1029.839,
+      "end_seconds": 1039.679,
+      "id": "37r_LZ7lGpw-ja-0115",
+      "sequence": 115
+    },
+    {
+      "text": "くさいんですよね。",
+      "start_seconds": 1039.679,
+      "end_seconds": 1042.16,
+      "id": "37r_LZ7lGpw-ja-0116",
+      "sequence": 116
+    },
+    {
+      "text": "ま、僕自身も経営者として手札が全然足らないなと痛感することが多いんですが、ま、一方で誰よりもめんどくさいことをやり切って",
+      "start_seconds": 1042.16,
+      "end_seconds": 1053.6,
+      "id": "37r_LZ7lGpw-ja-0117",
+      "sequence": 117
+    },
+    {
+      "text": "いるという自付もあります。ま、是非皆さんも、ま、過去振り返ってちょっと面倒だなと思って諦めたことがあれば、ま、一度考え直していただきたいですし、ま、",
+      "start_seconds": 1053.6,
+      "end_seconds": 1065.44,
+      "id": "37r_LZ7lGpw-ja-0118",
+      "sequence": 118
+    },
+    {
+      "text": "そういった1人1人がこう何かをやりきる姿を持って、え、若い世代からかっこいいなと思われる大人が1人でも増えていく。",
+      "start_seconds": 1065.44,
+      "end_seconds": 1075.96,
+      "id": "37r_LZ7lGpw-ja-0119",
+      "sequence": 119
+    },
+    {
+      "text": "ま、そんな世界を僕自身は切に願っております。以上です。ありがとうございます。",
+      "start_seconds": 1075.96,
+      "end_seconds": 1084.037,
+      "id": "37r_LZ7lGpw-ja-0120",
+      "sequence": 120
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 1084.037,
+      "end_seconds": 1086.057,
+      "id": "37r_LZ7lGpw-ja-0121",
+      "sequence": 121
+    }
+  ],
+  "raw_captions": [
+    {
+      "text": "かっこいい大人、憧れる大人と聞いて是非",
+      "start_seconds": 11.0,
+      "end_seconds": 17.439
+    },
+    {
+      "text": "ちょっと思い浮かべていただきたいんです",
+      "start_seconds": 15.879,
+      "end_seconds": 21.84
+    },
+    {
+      "text": "けど、何人ぐらい思い浮かびますか?",
+      "start_seconds": 17.439,
+      "end_seconds": 25.08
+    },
+    {
+      "text": "こんな人になりたいなでもいいですし、え",
+      "start_seconds": 21.84,
+      "end_seconds": 27.96
+    },
+    {
+      "text": "、ま、ついつい思い浮かべてしまうという",
+      "start_seconds": 25.08,
+      "end_seconds": 31.56
+    },
+    {
+      "text": "ような方でもいいので、ま、とにかく強烈",
+      "start_seconds": 27.96,
+      "end_seconds": 34.76
+    },
+    {
+      "text": "なインパクトを持って思い浮かぶ方って",
+      "start_seconds": 31.56,
+      "end_seconds": 37.12
+    },
+    {
+      "text": "いうのを是非ちょっと数えてみてください",
+      "start_seconds": 34.76,
+      "end_seconds": 38.839999999999996
+    },
+    {
+      "text": "。",
+      "start_seconds": 37.12,
+      "end_seconds": 44.0
+    },
+    {
+      "text": "はい。では次にですね、こう知っている",
+      "start_seconds": 38.84,
+      "end_seconds": 48.36
+    },
+    {
+      "text": "大人。これは何人ぐらいいらっしゃいます",
+      "start_seconds": 44.0,
+      "end_seconds": 51.09
+    },
+    {
+      "text": "かね?ま、ちょっと数える大変ですよね",
+      "start_seconds": 48.36,
+      "end_seconds": 53.199
+    },
+    {
+      "text": "[咳払い]。ま、ほとんどの方が成人され",
+      "start_seconds": 51.09,
+      "end_seconds": 56.92
+    },
+    {
+      "text": "てるかと思いますので、ま、小学校、中",
+      "start_seconds": 53.199,
+      "end_seconds": 59.879
+    },
+    {
+      "text": "学校、ま、高校ぐらいまでこう卒業",
+      "start_seconds": 56.92,
+      "end_seconds": 62.480000000000004
+    },
+    {
+      "text": "アルバムをひっくり返していただいて、ま",
+      "start_seconds": 59.879,
+      "end_seconds": 65.08
+    },
+    {
+      "text": "、数えるだけでも、ま、数百はいるんじゃ",
+      "start_seconds": 62.48,
+      "end_seconds": 68.479
+    },
+    {
+      "text": "ないかなと思います。",
+      "start_seconds": 65.08,
+      "end_seconds": 71.52
+    },
+    {
+      "text": "ま、僕自身ですね、この質問を、ま、10",
+      "start_seconds": 68.479,
+      "end_seconds": 75.2
+    },
+    {
+      "text": "年以上ですかね、え、若い世代、特に学生",
+      "start_seconds": 71.52,
+      "end_seconds": 78.6
+    },
+    {
+      "text": "に向けてこう投げかけ続けてきたんです",
+      "start_seconds": 75.2,
+      "end_seconds": 83.28
+    },
+    {
+      "text": "けども、ま、その中で、ま、常に思うのは",
+      "start_seconds": 78.6,
+      "end_seconds": 85.79899999999999
+    },
+    {
+      "text": "こうかっこいいと思われてる大人",
+      "start_seconds": 83.28,
+      "end_seconds": 87.64
+    },
+    {
+      "text": "めちゃめちゃ少ないなっていうことをいつ",
+      "start_seconds": 85.799,
+      "end_seconds": 92.60000000000001
+    },
+    {
+      "text": "も強く思います。ま、例えばこう300人",
+      "start_seconds": 87.64,
+      "end_seconds": 94.6
+    },
+    {
+      "text": "知っていて",
+      "start_seconds": 92.6,
+      "end_seconds": 97.32
+    },
+    {
+      "text": "3人かっこいい大人がいるってことは、ま",
+      "start_seconds": 94.6,
+      "end_seconds": 101.96
+    },
+    {
+      "text": "、1%になりますので、ま、例えば学生が",
+      "start_seconds": 97.32,
+      "end_seconds": 105.15899999999999
+    },
+    {
+      "text": "ですね、まだ社会に出たくないなとか、",
+      "start_seconds": 101.96,
+      "end_seconds": 107.88
+    },
+    {
+      "text": "こう学生やっときたいなということを、ま",
+      "start_seconds": 105.159,
+      "end_seconds": 110.43900000000001
+    },
+    {
+      "text": "、こぼしていたとしても、ま、仕方ないの",
+      "start_seconds": 107.88,
+      "end_seconds": 113.83999999999999
+    },
+    {
+      "text": "かなと思ってしまいます。",
+      "start_seconds": 110.439,
+      "end_seconds": 117.439
+    },
+    {
+      "text": "で、一方でですね、え、ま、そうした多く",
+      "start_seconds": 113.84,
+      "end_seconds": 120.399
+    },
+    {
+      "text": "の大人たち、ま、僕もそうなんですけど、",
+      "start_seconds": 117.439,
+      "end_seconds": 123.14099999999999
+    },
+    {
+      "text": "ま、自分たちが、20十歳ぐらいの頃に、",
+      "start_seconds": 120.399,
+      "end_seconds": 126.52
+    },
+    {
+      "text": "[鼻息]ま、同じようにこう大人を見て、",
+      "start_seconds": 123.141,
+      "end_seconds": 129.239
+    },
+    {
+      "text": "ま、同じようにこう自分はかっこいい大人",
+      "start_seconds": 126.52,
+      "end_seconds": 132.959
+    },
+    {
+      "text": "になりたいなと、ま、思っていたはずなん",
+      "start_seconds": 129.239,
+      "end_seconds": 136.879
+    },
+    {
+      "text": "ですね。ま、いつの時代もこう若い世代",
+      "start_seconds": 132.959,
+      "end_seconds": 139.04
+    },
+    {
+      "text": "っていうのはこのかっこいい大人っていう",
+      "start_seconds": 136.879,
+      "end_seconds": 142.599
+    },
+    {
+      "text": "ものに、ま、強くこう興味を示し、こう",
+      "start_seconds": 139.04,
+      "end_seconds": 146.0
+    },
+    {
+      "text": "自分自身の将来にもこうかっこいい自分",
+      "start_seconds": 142.599,
+      "end_seconds": 148.92
+    },
+    {
+      "text": "っていうのを夢見てるのじゃないかなと",
+      "start_seconds": 146.0,
+      "end_seconds": 151.44
+    },
+    {
+      "text": "思います。",
+      "start_seconds": 148.92,
+      "end_seconds": 154.79999999999998
+    },
+    {
+      "text": "で、僕自身ですね、え、ま、社長という",
+      "start_seconds": 151.44,
+      "end_seconds": 158.511
+    },
+    {
+      "text": "立場で今仕事をさせていただいてます。",
+      "start_seconds": 154.8,
+      "end_seconds": 159.20000000000002
+    },
+    {
+      "text": "[鼻息]",
+      "start_seconds": 158.511,
+      "end_seconds": 161.0
+    },
+    {
+      "text": "こう皆さんこう社長という立場を",
+      "start_seconds": 159.2,
+      "end_seconds": 164.04
+    },
+    {
+      "text": "思い浮かべるとこう何でもできる人という",
+      "start_seconds": 161.0,
+      "end_seconds": 166.68
+    },
+    {
+      "text": "かこうたくさんのことを知ってる人だっ",
+      "start_seconds": 164.04,
+      "end_seconds": 170.159
+    },
+    {
+      "text": "たりこうなんでしょう知り合いがいっぱい",
+      "start_seconds": 166.68,
+      "end_seconds": 173.64000000000001
+    },
+    {
+      "text": "いるとかまそういういわゆるこう手札を",
+      "start_seconds": 170.159,
+      "end_seconds": 176.76
+    },
+    {
+      "text": "たくさん持ってるような人を思い浮かべる",
+      "start_seconds": 173.64,
+      "end_seconds": 179.44
+    },
+    {
+      "text": "んじゃないかなと思うんですが、ま、僕",
+      "start_seconds": 176.76,
+      "end_seconds": 182.72
+    },
+    {
+      "text": "自身20十歳ぐらいの頃ですね、もう自分",
+      "start_seconds": 179.44,
+      "end_seconds": 185.239
+    },
+    {
+      "text": "も社長なるんだと思っていたので、ま、",
+      "start_seconds": 182.72,
+      "end_seconds": 188.159
+    },
+    {
+      "text": "いろんな経営者に会いに行ってですね、",
+      "start_seconds": 185.239,
+      "end_seconds": 191.08
+    },
+    {
+      "text": "こう常に、あ、この人本当何でも知ってる",
+      "start_seconds": 188.159,
+      "end_seconds": 192.959
+    },
+    {
+      "text": "なとか",
+      "start_seconds": 191.08,
+      "end_seconds": 196.15900000000002
+    },
+    {
+      "text": "いろんな人脈持ってらっしゃるなと、ま、",
+      "start_seconds": 192.959,
+      "end_seconds": 199.28
+    },
+    {
+      "text": "そういう風に思ったのを今でも覚えており",
+      "start_seconds": 196.159,
+      "end_seconds": 201.64
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 199.28,
+      "end_seconds": 206.08
+    },
+    {
+      "text": "ま、いざ24歳でですね、え、今のクジ",
+      "start_seconds": 201.64,
+      "end_seconds": 209.11999999999998
+    },
+    {
+      "text": "株式会社というものを、ま、設立すること",
+      "start_seconds": 206.08,
+      "end_seconds": 212.519
+    },
+    {
+      "text": "になったんですけども、ま、自分が社長",
+      "start_seconds": 209.12,
+      "end_seconds": 215.76
+    },
+    {
+      "text": "なってみるとですね、もう全然思ってたの",
+      "start_seconds": 212.519,
+      "end_seconds": 221.92000000000002
+    },
+    {
+      "text": "とは違いまして、こう自分ができること、",
+      "start_seconds": 215.76,
+      "end_seconds": 224.439
+    },
+    {
+      "text": "そしてこうやれること、ま、いわゆる手札",
+      "start_seconds": 221.92,
+      "end_seconds": 228.55999999999997
+    },
+    {
+      "text": "の中からこう順番よく選んでいっている",
+      "start_seconds": 224.439,
+      "end_seconds": 232.879
+    },
+    {
+      "text": "はずなのに、こうなかな会社がこううまく",
+      "start_seconds": 228.56,
+      "end_seconds": 236.48
+    },
+    {
+      "text": "成長しないというか、こう業績は横ばです",
+      "start_seconds": 232.879,
+      "end_seconds": 241.67999999999998
+    },
+    {
+      "text": "し、こう従業員に至ってはこう育てては",
+      "start_seconds": 236.48,
+      "end_seconds": 245.0
+    },
+    {
+      "text": "やめちゃう。ま、また育ててはやめて",
+      "start_seconds": 241.68,
+      "end_seconds": 247.4
+    },
+    {
+      "text": "しまうの繰り返しを、ま、ずっとしてまし",
+      "start_seconds": 245.0,
+      "end_seconds": 250.4
+    },
+    {
+      "text": "て、もう30歳ぐらいになる頃にはですね",
+      "start_seconds": 247.4,
+      "end_seconds": 255.519
+    },
+    {
+      "text": "、こやっぱ向いてないなと。これ全部経営",
+      "start_seconds": 250.4,
+      "end_seconds": 258.199
+    },
+    {
+      "text": "者向いてないからもう畳んでもう1回",
+      "start_seconds": 255.519,
+      "end_seconds": 261.079
+    },
+    {
+      "text": "サラリマしようかなと、ま、思うことも",
+      "start_seconds": 258.199,
+      "end_seconds": 266.28000000000003
+    },
+    {
+      "text": "多々ありました。もう仕事を終えて車運転",
+      "start_seconds": 261.079,
+      "end_seconds": 269.88
+    },
+    {
+      "text": "して家へ帰るんですけど、こう帰ってる、",
+      "start_seconds": 266.28,
+      "end_seconds": 272.44
+    },
+    {
+      "text": "運転してる記憶がないみたいな日も、ま、",
+      "start_seconds": 269.88,
+      "end_seconds": 277.199
+    },
+    {
+      "text": "たくさんありまして、ま、本当に悩んだ頃",
+      "start_seconds": 272.44,
+      "end_seconds": 282.08
+    },
+    {
+      "text": "でした。ま、そして今日ですね、僕43歳",
+      "start_seconds": 277.199,
+      "end_seconds": 286.52000000000004
+    },
+    {
+      "text": "で会社は19年目。になるんですが、え、",
+      "start_seconds": 282.08,
+      "end_seconds": 290.44
+    },
+    {
+      "text": "従業員で言うと社員アルバイト含め70名",
+      "start_seconds": 286.52,
+      "end_seconds": 294.56
+    },
+    {
+      "text": "ぐらいでして、え、3年以内にやめる子も",
+      "start_seconds": 290.44,
+      "end_seconds": 297.919
+    },
+    {
+      "text": "ほとんどいない定着率の高いあの会社に",
+      "start_seconds": 294.56,
+      "end_seconds": 302.039
+    },
+    {
+      "text": "なったと思います。え、世界ホテルという",
+      "start_seconds": 297.919,
+      "end_seconds": 304.96
+    },
+    {
+      "text": "2017年に始めたこのビジネスモデルは",
+      "start_seconds": 302.039,
+      "end_seconds": 307.44
+    },
+    {
+      "text": "ですね、え、商店街をこうリノベーション",
+      "start_seconds": 304.96,
+      "end_seconds": 310.28
+    },
+    {
+      "text": "してホテル化していくというものなんです",
+      "start_seconds": 307.44,
+      "end_seconds": 313.44
+    },
+    {
+      "text": "けども、[鼻息]こういろんな国から",
+      "start_seconds": 310.28,
+      "end_seconds": 317.23999999999995
+    },
+    {
+      "text": "もちろん国内からも宿泊に訪れていただく",
+      "start_seconds": 313.44,
+      "end_seconds": 320.479
+    },
+    {
+      "text": "ようなホテルになりましたし、従業員も",
+      "start_seconds": 317.24,
+      "end_seconds": 323.52
+    },
+    {
+      "text": "長く働いてくれるような、ま、ホテル会社",
+      "start_seconds": 320.479,
+      "end_seconds": 327.24
+    },
+    {
+      "text": "になったと思います。",
+      "start_seconds": 323.52,
+      "end_seconds": 329.35999999999996
+    },
+    {
+      "text": "ま、どのように考えてこう至ったかと言い",
+      "start_seconds": 327.24,
+      "end_seconds": 332.199
+    },
+    {
+      "text": "ますと、もう自分自身ですね、[鼻息]",
+      "start_seconds": 329.36,
+      "end_seconds": 335.6
+    },
+    {
+      "text": "できること、できそうなことから考える、",
+      "start_seconds": 332.199,
+      "end_seconds": 338.68
+    },
+    {
+      "text": "やるっていうのを、ま、やめてみるという",
+      "start_seconds": 335.6,
+      "end_seconds": 341.08000000000004
+    },
+    {
+      "text": "ところから始まりました。これがきっと",
+      "start_seconds": 338.68,
+      "end_seconds": 346.479
+    },
+    {
+      "text": "大きな転換点だったと思います。",
+      "start_seconds": 341.08,
+      "end_seconds": 350.24
+    },
+    {
+      "text": "では自分が並べてるこう手札からこう選ぶ",
+      "start_seconds": 346.479,
+      "end_seconds": 353.84
+    },
+    {
+      "text": "のをやめる、できそうなことから考えるの",
+      "start_seconds": 350.24,
+      "end_seconds": 357.08
+    },
+    {
+      "text": "をやめるというのであれば、ま、何を基準",
+      "start_seconds": 353.84,
+      "end_seconds": 360.11999999999995
+    },
+    {
+      "text": "にこう自分は決めていくのだろう、動いて",
+      "start_seconds": 357.08,
+      "end_seconds": 363.4
+    },
+    {
+      "text": "いくのだろうという話になるんですが、ま",
+      "start_seconds": 360.12,
+      "end_seconds": 368.039
+    },
+    {
+      "text": "、僕自身こう不動産屋としてずっと働いて",
+      "start_seconds": 363.4,
+      "end_seconds": 371.31899999999996
+    },
+    {
+      "text": "きた中で、ま、強く抱いた疑問、これが僕",
+      "start_seconds": 368.039,
+      "end_seconds": 376.199
+    },
+    {
+      "text": "の出発点だったように思います。",
+      "start_seconds": 371.319,
+      "end_seconds": 379.08000000000004
+    },
+    {
+      "text": "ま、商店街にですね、古い建物、いわゆる",
+      "start_seconds": 376.199,
+      "end_seconds": 381.319
+    },
+    {
+      "text": "こうシャッターが閉まっちゃってる建物、",
+      "start_seconds": 379.08,
+      "end_seconds": 383.28
+    },
+    {
+      "text": "ま、どんどん増えていくっていうのを、ま",
+      "start_seconds": 381.319,
+      "end_seconds": 387.10900000000004
+    },
+    {
+      "text": "、仕事としても見ていたんですけども、",
+      "start_seconds": 383.28,
+      "end_seconds": 390.67999999999995
+    },
+    {
+      "text": "[鼻息]こう寂しいなと思うこともあれば",
+      "start_seconds": 387.109,
+      "end_seconds": 396.12
+    },
+    {
+      "text": "、こう自分の地元とこう重ね合わせて、",
+      "start_seconds": 390.68,
+      "end_seconds": 399.72
+    },
+    {
+      "text": "もかしいというか、こうモヤモヤするって",
+      "start_seconds": 396.12,
+      "end_seconds": 402.16
+    },
+    {
+      "text": "いうこともあったんですけども、ま、1番",
+      "start_seconds": 399.72,
+      "end_seconds": 405.56
+    },
+    {
+      "text": "強く思ったのはなんでこんなことになるん",
+      "start_seconds": 402.16,
+      "end_seconds": 411.03900000000004
+    },
+    {
+      "text": "やろうとこう疑問が1番強かったですね。",
+      "start_seconds": 405.56,
+      "end_seconds": 415.639
+    },
+    {
+      "text": "ま、確かに不動産として見ても商店街沿い",
+      "start_seconds": 411.039,
+      "end_seconds": 417.759
+    },
+    {
+      "text": "の古い建物ってこうめちゃくちゃ触り",
+      "start_seconds": 415.639,
+      "end_seconds": 420.8
+    },
+    {
+      "text": "づらいんですよ。こう仕事になりづらいと",
+      "start_seconds": 417.759,
+      "end_seconds": 424.759
+    },
+    {
+      "text": "いうか[鼻息]でまししてはこう近隣に",
+      "start_seconds": 420.8,
+      "end_seconds": 427.759
+    },
+    {
+      "text": "大型の商業施設できたりとかでですね、",
+      "start_seconds": 424.759,
+      "end_seconds": 431.599
+    },
+    {
+      "text": "こう人流が変わったりとかいろんな理由で",
+      "start_seconds": 427.759,
+      "end_seconds": 434.56
+    },
+    {
+      "text": "こう商店街がだんだん元気がなくなって",
+      "start_seconds": 431.599,
+      "end_seconds": 436.8
+    },
+    {
+      "text": "いく。ま、これは理解できるんですけども",
+      "start_seconds": 434.56,
+      "end_seconds": 441.16
+    },
+    {
+      "text": "、ま、僕自身色々とこう調べたり勉強した",
+      "start_seconds": 436.8,
+      "end_seconds": 446.12
+    },
+    {
+      "text": "結果、あ、これはみんなにとって",
+      "start_seconds": 441.16,
+      "end_seconds": 448.59900000000005
+    },
+    {
+      "text": "めちゃめちゃめんどくさいことなんだなっ",
+      "start_seconds": 446.12,
+      "end_seconds": 453.319
+    },
+    {
+      "text": "ていう結論に行きつきました。",
+      "start_seconds": 448.599,
+      "end_seconds": 453.319
+    },
+    {
+      "text": "めんどくさいことの大半って本当はやら",
+      "start_seconds": 453.56,
+      "end_seconds": 458.96
+    },
+    {
+      "text": "なきゃいけないって分かってることだっ",
+      "start_seconds": 457.12,
+      "end_seconds": 461.879
+    },
+    {
+      "text": "たりするんですよね。",
+      "start_seconds": 458.96,
+      "end_seconds": 465.0
+    },
+    {
+      "text": "ま、商店街もだんだん元気なくなっていっ",
+      "start_seconds": 461.879,
+      "end_seconds": 467.84000000000003
+    },
+    {
+      "text": "て、若い子も減ってこうなんとかしなきゃ",
+      "start_seconds": 465.0,
+      "end_seconds": 470.319
+    },
+    {
+      "text": "いけないと思っていた大人の方は多いと",
+      "start_seconds": 467.84,
+      "end_seconds": 473.35999999999996
+    },
+    {
+      "text": "思うんですが、ま、なかなか大変そうと",
+      "start_seconds": 470.319,
+      "end_seconds": 475.639
+    },
+    {
+      "text": "こう一歩踏み出せない。ま、これが、ま、",
+      "start_seconds": 473.36,
+      "end_seconds": 477.68
+    },
+    {
+      "text": "みんなにとってめんどくさいことなんです",
+      "start_seconds": 475.639,
+      "end_seconds": 481.44
+    },
+    {
+      "text": "が、ま、この時僕ピンときまして、",
+      "start_seconds": 477.68,
+      "end_seconds": 484.72
+    },
+    {
+      "text": "このめんどくさいことをこうやってやり",
+      "start_seconds": 481.44,
+      "end_seconds": 487.879
+    },
+    {
+      "text": "切って結果を出したら[鼻息]もしかし",
+      "start_seconds": 484.72,
+      "end_seconds": 491.40000000000003
+    },
+    {
+      "text": "たらすごくこう喜ばれるんじゃないかと。",
+      "start_seconds": 487.879,
+      "end_seconds": 494.52000000000004
+    },
+    {
+      "text": "え、そしてそれはこういろんな人に応援さ",
+      "start_seconds": 491.4,
+      "end_seconds": 497.35999999999996
+    },
+    {
+      "text": "れる、愛されるものになるんじゃないかと",
+      "start_seconds": 494.52,
+      "end_seconds": 501.52
+    },
+    {
+      "text": "、ま、そういう風に、ま、考えまして、ま",
+      "start_seconds": 497.36,
+      "end_seconds": 505.759
+    },
+    {
+      "text": "、やってみようかなと思いました。",
+      "start_seconds": 501.52,
+      "end_seconds": 508.71999999999997
+    },
+    {
+      "text": "で、ビジネスとしては競合が少ないという",
+      "start_seconds": 505.759,
+      "end_seconds": 510.759
+    },
+    {
+      "text": "話になりますんで、ま、必然的に",
+      "start_seconds": 508.72,
+      "end_seconds": 514.479
+    },
+    {
+      "text": "オンリーワンを目指すことになります。",
+      "start_seconds": 510.759,
+      "end_seconds": 516.76
+    },
+    {
+      "text": "ま、何よりですね、ま、経営者トップとし",
+      "start_seconds": 514.479,
+      "end_seconds": 520.5600000000001
+    },
+    {
+      "text": "て僕が売上よと",
+      "start_seconds": 516.76,
+      "end_seconds": 524.12
+    },
+    {
+      "text": "いうよりもこの商店街めちゃくちゃ元気に",
+      "start_seconds": 520.56,
+      "end_seconds": 527.5999999999999
+    },
+    {
+      "text": "しようよっていう方がなんか普通に共感",
+      "start_seconds": 524.12,
+      "end_seconds": 529.9590000000001
+    },
+    {
+      "text": "できそうだなっていう、ま、そういう風に",
+      "start_seconds": 527.6,
+      "end_seconds": 531.88
+    },
+    {
+      "text": "考えて",
+      "start_seconds": 529.959,
+      "end_seconds": 535.2399999999999
+    },
+    {
+      "text": "やることを決めました。",
+      "start_seconds": 531.88,
+      "end_seconds": 537.6
+    },
+    {
+      "text": "そうして生まれたのがですね、ま、世界",
+      "start_seconds": 535.24,
+      "end_seconds": 541.519
+    },
+    {
+      "text": "ホテルという商店街をホテル化していく",
+      "start_seconds": 537.6,
+      "end_seconds": 543.64
+    },
+    {
+      "text": "ビジネスです。[鼻息]",
+      "start_seconds": 541.519,
+      "end_seconds": 548.2
+    },
+    {
+      "text": "え、大阪の東大阪市という町の伏という駅",
+      "start_seconds": 543.64,
+      "end_seconds": 552.8
+    },
+    {
+      "text": "周辺の商店街をですね、え、空いてるとか",
+      "start_seconds": 548.2,
+      "end_seconds": 556.399
+    },
+    {
+      "text": "秋屋をリノベーションして止まれるように",
+      "start_seconds": 552.8,
+      "end_seconds": 561.12
+    },
+    {
+      "text": "しまして、ま、近隣の飲食店、え、とかと",
+      "start_seconds": 556.399,
+      "end_seconds": 565.079
+    },
+    {
+      "text": "こう定携して夕食会場、朝食会場として、",
+      "start_seconds": 561.12,
+      "end_seconds": 569.2
+    },
+    {
+      "text": "ま、ホテルのサービスを提供すると。",
+      "start_seconds": 565.079,
+      "end_seconds": 573.88
+    },
+    {
+      "text": "で、え、近くに昔ながらの戦闘があるん",
+      "start_seconds": 569.2,
+      "end_seconds": 577.32
+    },
+    {
+      "text": "ですけども、ま、そちらをこう大浴上とし",
+      "start_seconds": 573.88,
+      "end_seconds": 580.24
+    },
+    {
+      "text": "て使ってもらうので、うちのお客さんが",
+      "start_seconds": 577.32,
+      "end_seconds": 582.6
+    },
+    {
+      "text": "こう不労家持って商店が歩いていくって",
+      "start_seconds": 580.24,
+      "end_seconds": 585.0790000000001
+    },
+    {
+      "text": "いうのがもう今では、ま、日常的に見",
+      "start_seconds": 582.6,
+      "end_seconds": 589.32
+    },
+    {
+      "text": "られるような、ま、そんなホテルです。",
+      "start_seconds": 585.079,
+      "end_seconds": 593.3199999999999
+    },
+    {
+      "text": "ま、元々町にあった機能をですね、僕らが",
+      "start_seconds": 589.32,
+      "end_seconds": 598.1600000000001
+    },
+    {
+      "text": "再編集する形で町全体をホテル化する街",
+      "start_seconds": 593.32,
+      "end_seconds": 602.0400000000001
+    },
+    {
+      "text": "ホテル、ま、商店街丸ごとホテル。これが",
+      "start_seconds": 598.16,
+      "end_seconds": 605.881
+    },
+    {
+      "text": "世界ホテルというものです。",
+      "start_seconds": 602.04,
+      "end_seconds": 606.4399999999999
+    },
+    {
+      "text": "[鼻息]",
+      "start_seconds": 605.881,
+      "end_seconds": 608.64
+    },
+    {
+      "text": "ま、旅先の日常に飛び込もうという",
+      "start_seconds": 606.44,
+      "end_seconds": 613.1600000000001
+    },
+    {
+      "text": "キャッチコピーを掲げてまして、ま、観光",
+      "start_seconds": 608.64,
+      "end_seconds": 616.079
+    },
+    {
+      "text": "客からすれば初めて訪れる知らない土地な",
+      "start_seconds": 613.16,
+      "end_seconds": 619.4399999999999
+    },
+    {
+      "text": "んですよね。ま、そこの、ま、住民が普段",
+      "start_seconds": 616.079,
+      "end_seconds": 622.2399999999999
+    },
+    {
+      "text": "こう営んでる日常体験っていうのを、ま、",
+      "start_seconds": 619.44,
+      "end_seconds": 625.44
+    },
+    {
+      "text": "アクティビティとして体験いただけるのが",
+      "start_seconds": 622.24,
+      "end_seconds": 629.36
+    },
+    {
+      "text": "うちの世界ホテルになります。[鼻息]",
+      "start_seconds": 625.44,
+      "end_seconds": 632.5600000000001
+    },
+    {
+      "text": "ま、実際ですね、えっと、アンケートって",
+      "start_seconds": 629.36,
+      "end_seconds": 634.519
+    },
+    {
+      "text": "あるじゃないですか、ホテルの。ま、",
+      "start_seconds": 632.56,
+      "end_seconds": 637.5999999999999
+    },
+    {
+      "text": "あそこにも、ま、客室が綺麗だったとか、",
+      "start_seconds": 634.519,
+      "end_seconds": 640.16
+    },
+    {
+      "text": "ま、スタッフさんが良かったっていうのも",
+      "start_seconds": 637.6,
+      "end_seconds": 642.48
+    },
+    {
+      "text": "あるんですけども、ま、ここに加えてです",
+      "start_seconds": 640.16,
+      "end_seconds": 647.6
+    },
+    {
+      "text": "ね、こう自分の地元にも商店街があって、",
+      "start_seconds": 642.48,
+      "end_seconds": 650.24
+    },
+    {
+      "text": "ワクワクしたと、是非うちの地元でも世界",
+      "start_seconds": 647.6,
+      "end_seconds": 652.32
+    },
+    {
+      "text": "ホテルやってほしいというような、こう",
+      "start_seconds": 650.24,
+      "end_seconds": 655.24
+    },
+    {
+      "text": "激例のメッセージだったり、え、どこどこ",
+      "start_seconds": 652.32,
+      "end_seconds": 657.72
+    },
+    {
+      "text": "のお店のおばあちゃんが、ま、いろんなお",
+      "start_seconds": 655.24,
+      "end_seconds": 660.12
+    },
+    {
+      "text": "話もしてくれたし、ま、おまけもくれたと",
+      "start_seconds": 657.72,
+      "end_seconds": 664.72
+    },
+    {
+      "text": "、もう非常にこう興奮したというような",
+      "start_seconds": 660.12,
+      "end_seconds": 667.839
+    },
+    {
+      "text": "感謝のメッセージをいいたりですね、ま、",
+      "start_seconds": 664.72,
+      "end_seconds": 671.0790000000001
+    },
+    {
+      "text": "しっかりとこう旅先の日常に飛び込むって",
+      "start_seconds": 667.839,
+      "end_seconds": 675.0400000000001
+    },
+    {
+      "text": "いう体験が、ま、喜ばれている様子があの",
+      "start_seconds": 671.079,
+      "end_seconds": 680.56
+    },
+    {
+      "text": "伺える内容となっております。[鼻息]",
+      "start_seconds": 675.04,
+      "end_seconds": 685.639
+    },
+    {
+      "text": "ま、こう、わざわざ商店街をですね、こう",
+      "start_seconds": 680.56,
+      "end_seconds": 687.8389999999999
+    },
+    {
+      "text": "リノベーションしていって、しかも地域と",
+      "start_seconds": 685.639,
+      "end_seconds": 692.92
+    },
+    {
+      "text": "連携してホテルをやるだなんて、ま、合理",
+      "start_seconds": 687.839,
+      "end_seconds": 698.44
+    },
+    {
+      "text": "的ではないですよね。えー、僕も散々先輩",
+      "start_seconds": 692.92,
+      "end_seconds": 701.24
+    },
+    {
+      "text": "にですね、なんでそんなめんどくさいこと",
+      "start_seconds": 698.44,
+      "end_seconds": 704.1600000000001
+    },
+    {
+      "text": "やってんのと、今、今でも言われます。",
+      "start_seconds": 701.24,
+      "end_seconds": 705.88
+    },
+    {
+      "text": "はい。[鼻息]",
+      "start_seconds": 704.16,
+      "end_seconds": 708.12
+    },
+    {
+      "text": "ま、ビジネス的にはもしかしたら合理性に",
+      "start_seconds": 705.88,
+      "end_seconds": 711.4399999999999
+    },
+    {
+      "text": "かけることなのかもしれないです。",
+      "start_seconds": 708.12,
+      "end_seconds": 715.16
+    },
+    {
+      "text": "ま、ホテル普通で言えば顧客と従業員の",
+      "start_seconds": 711.44,
+      "end_seconds": 718.1600000000001
+    },
+    {
+      "text": "ことを考えるだけで十分なんですが、我々",
+      "start_seconds": 715.16,
+      "end_seconds": 722.04
+    },
+    {
+      "text": "は地域の方とどう連携するか、そしてこの",
+      "start_seconds": 718.16,
+      "end_seconds": 724.639
+    },
+    {
+      "text": "地域を一緒にどう盛り上げていくかという",
+      "start_seconds": 722.04,
+      "end_seconds": 730.56
+    },
+    {
+      "text": "ことまで考えます。[鼻息]ま、街中に",
+      "start_seconds": 724.639,
+      "end_seconds": 734.9590000000001
+    },
+    {
+      "text": "こう施設が点在しているので従業員がこう",
+      "start_seconds": 730.56,
+      "end_seconds": 739.16
+    },
+    {
+      "text": "仕事中に商店街歩いて、ま、いろんな方と",
+      "start_seconds": 734.959,
+      "end_seconds": 743.04
+    },
+    {
+      "text": "こう立ち話になったり挨拶したりするん",
+      "start_seconds": 739.16,
+      "end_seconds": 746.959
+    },
+    {
+      "text": "ですよね。ま、その時には、ま、是非仕事",
+      "start_seconds": 743.04,
+      "end_seconds": 749.5999999999999
+    },
+    {
+      "text": "を止めて、足止めて、[鼻息]ま、",
+      "start_seconds": 746.959,
+      "end_seconds": 751.88
+    },
+    {
+      "text": "ちょっと立ち回ししておいでと、ま、いう",
+      "start_seconds": 749.6,
+      "end_seconds": 755.0400000000001
+    },
+    {
+      "text": "風にうちのスタッフには、ま、教えるよう",
+      "start_seconds": 751.88,
+      "end_seconds": 759.76
+    },
+    {
+      "text": "にしています。ま、時給月給が発生して",
+      "start_seconds": 755.04,
+      "end_seconds": 762.8
+    },
+    {
+      "text": "いる時間帯にですね、仕事止めて雑談し",
+      "start_seconds": 759.76,
+      "end_seconds": 765.6
+    },
+    {
+      "text": "といでてもなかなか変わったホテルかなと",
+      "start_seconds": 762.8,
+      "end_seconds": 768.5999999999999
+    },
+    {
+      "text": "思うんですが、ま、それぐらいこう地域と",
+      "start_seconds": 765.6,
+      "end_seconds": 771.5600000000001
+    },
+    {
+      "text": "いかにこう向き合うかとか、ま、仲良く",
+      "start_seconds": 768.6,
+      "end_seconds": 773.88
+    },
+    {
+      "text": "なるかっていうところに、ま、重きを置い",
+      "start_seconds": 771.56,
+      "end_seconds": 776.8389999999999
+    },
+    {
+      "text": "ております。",
+      "start_seconds": 773.88,
+      "end_seconds": 779.279
+    },
+    {
+      "text": "ま、おかげでですね、ま、何でしょう。",
+      "start_seconds": 776.839,
+      "end_seconds": 781.8000000000001
+    },
+    {
+      "text": "地域と一体になってきた感情もものすごく",
+      "start_seconds": 779.279,
+      "end_seconds": 784.4399999999999
+    },
+    {
+      "text": "ありまして、ま、こういった写真に映っ",
+      "start_seconds": 781.8,
+      "end_seconds": 786.3199999999999
+    },
+    {
+      "text": "てるようなコミュニケーションのシーン",
+      "start_seconds": 784.44,
+      "end_seconds": 791.6800000000001
+    },
+    {
+      "text": "もう毎日ありますし、ま、例えばこう",
+      "start_seconds": 786.32,
+      "end_seconds": 794.7600000000001
+    },
+    {
+      "text": "ホテルに行く道が分からないうちのお客",
+      "start_seconds": 791.68,
+      "end_seconds": 797.7199999999999
+    },
+    {
+      "text": "さんをですね、世界ホテル探してんねやろ",
+      "start_seconds": 794.76,
+      "end_seconds": 800.6
+    },
+    {
+      "text": "とこう連れてきてくれる方もいらっしゃい",
+      "start_seconds": 797.72,
+      "end_seconds": 804.36
+    },
+    {
+      "text": "ますし、例えばお寿司屋さんのカウンター",
+      "start_seconds": 800.6,
+      "end_seconds": 807.9200000000001
+    },
+    {
+      "text": "席で隣同士になった、ま、うちのお客さん",
+      "start_seconds": 804.36,
+      "end_seconds": 811.279
+    },
+    {
+      "text": "と隣同士になった方がいっぱい奢るのが",
+      "start_seconds": 807.92,
+      "end_seconds": 813.7199999999999
+    },
+    {
+      "text": "ちょっとした趣味になってきた寿司屋さん",
+      "start_seconds": 811.279,
+      "end_seconds": 817.76
+    },
+    {
+      "text": "の常連客の方もいらっしゃいますし、ま、",
+      "start_seconds": 813.72,
+      "end_seconds": 820.8000000000001
+    },
+    {
+      "text": "いろんな場面でですね、[鼻息]",
+      "start_seconds": 817.76,
+      "end_seconds": 823.72
+    },
+    {
+      "text": "ま、世界ホテルと地域が一体となって観光",
+      "start_seconds": 820.8,
+      "end_seconds": 827.16
+    },
+    {
+      "text": "客をお迎えしている、ま、こんな場面も",
+      "start_seconds": 823.72,
+      "end_seconds": 830.5600000000001
+    },
+    {
+      "text": "多々見られます。",
+      "start_seconds": 827.16,
+      "end_seconds": 834.759
+    },
+    {
+      "text": "で、僕自身世界ホテル始める時に",
+      "start_seconds": 830.56,
+      "end_seconds": 838.079
+    },
+    {
+      "text": "観光客と地域の人が、ま、そんな風に接点",
+      "start_seconds": 834.759,
+      "end_seconds": 842.44
+    },
+    {
+      "text": "持ってくれたらすごく素敵だなと思って",
+      "start_seconds": 838.079,
+      "end_seconds": 846.12
+    },
+    {
+      "text": "始めたんですけども、ま、今では僕自身も",
+      "start_seconds": 842.44,
+      "end_seconds": 848.44
+    },
+    {
+      "text": "知らない、顔も名前も知らない方々がです",
+      "start_seconds": 846.12,
+      "end_seconds": 851.759
+    },
+    {
+      "text": "ね、そういう風に街で観光客と接している",
+      "start_seconds": 848.44,
+      "end_seconds": 855.0400000000001
+    },
+    {
+      "text": "と聞いて、ま、たまらなく嬉しい。ま、",
+      "start_seconds": 851.759,
+      "end_seconds": 858.714
+    },
+    {
+      "text": "そう毎日思っております。",
+      "start_seconds": 855.04,
+      "end_seconds": 861.36
+    },
+    {
+      "text": "[鼻息]で、今映しているこの絵なんです",
+      "start_seconds": 858.714,
+      "end_seconds": 863.6800000000001
+    },
+    {
+      "text": "けど、こう世界ホテル始めるって決めた時",
+      "start_seconds": 861.36,
+      "end_seconds": 867.5600000000001
+    },
+    {
+      "text": "にこう事業計画書より先に友人に書いて",
+      "start_seconds": 863.68,
+      "end_seconds": 870.7199999999999
+    },
+    {
+      "text": "いただいた1つの絵なんですが、ここには",
+      "start_seconds": 867.56,
+      "end_seconds": 874.2399999999999
+    },
+    {
+      "text": "お祭りの夜が書いてありまして、ここに出",
+      "start_seconds": 870.72,
+      "end_seconds": 878.24
+    },
+    {
+      "text": "てくる人ってこう国籍も年齢も関係なく",
+      "start_seconds": 874.24,
+      "end_seconds": 881.0
+    },
+    {
+      "text": "みんなお祭りの夜でワクワクしていて、",
+      "start_seconds": 878.24,
+      "end_seconds": 883.6800000000001
+    },
+    {
+      "text": "みんな他人に優しくしているという、ま、",
+      "start_seconds": 881.0,
+      "end_seconds": 886.88
+    },
+    {
+      "text": "そんなシーンが書いてあって、ま、ここ",
+      "start_seconds": 883.68,
+      "end_seconds": 890.0
+    },
+    {
+      "text": "から世界ホテル始まったんですけども今で",
+      "start_seconds": 886.88,
+      "end_seconds": 894.36
+    },
+    {
+      "text": "は街中にこんなシーンが広がっていると、",
+      "start_seconds": 890.0,
+      "end_seconds": 897.68
+    },
+    {
+      "text": "もう本当に分け隔立てない幸せが広がって",
+      "start_seconds": 894.36,
+      "end_seconds": 900.48
+    },
+    {
+      "text": "いる。ま、そんなホテルになってきました",
+      "start_seconds": 897.68,
+      "end_seconds": 902.199
+    },
+    {
+      "text": "。",
+      "start_seconds": 900.48,
+      "end_seconds": 904.8000000000001
+    },
+    {
+      "text": "で、コロナとか色々あったんですけども、",
+      "start_seconds": 902.199,
+      "end_seconds": 910.4599999999999
+    },
+    {
+      "text": "ま、去年いよいよ1年間で1万人まして、",
+      "start_seconds": 904.8,
+      "end_seconds": 911.199
+    },
+    {
+      "text": "[鼻息]",
+      "start_seconds": 910.46,
+      "end_seconds": 915.0790000000001
+    },
+    {
+      "text": "有名観光地じゃなかった、ただの商店街に",
+      "start_seconds": 911.199,
+      "end_seconds": 918.16
+    },
+    {
+      "text": "1万人という、こう異業を成し遂けてです",
+      "start_seconds": 915.079,
+      "end_seconds": 920.5999999999999
+    },
+    {
+      "text": "ね、こうますます盛り上がりを見せてきて",
+      "start_seconds": 918.16,
+      "end_seconds": 924.399
+    },
+    {
+      "text": "いる、ま、そんなタイミングです。",
+      "start_seconds": 920.6,
+      "end_seconds": 928.24
+    },
+    {
+      "text": "では、ま、僕自身どんな価値観を大事にし",
+      "start_seconds": 924.399,
+      "end_seconds": 930.6
+    },
+    {
+      "text": "ているかというのがですね、ま、かっこ",
+      "start_seconds": 928.24,
+      "end_seconds": 934.44
+    },
+    {
+      "text": "いいかどうかです。しかもこれ、あの格好",
+      "start_seconds": 930.6,
+      "end_seconds": 937.3190000000001
+    },
+    {
+      "text": "って漢字で書くと変で書くんですけど、ま",
+      "start_seconds": 934.44,
+      "end_seconds": 940.0790000000001
+    },
+    {
+      "text": "、うちの会社、うちのチームではこの立弁",
+      "start_seconds": 937.319,
+      "end_seconds": 943.16
+    },
+    {
+      "text": "で書くあかよしというのをみんなの共通",
+      "start_seconds": 940.079,
+      "end_seconds": 947.2399999999999
+    },
+    {
+      "text": "言語としております。ま、ちょうどいい様",
+      "start_seconds": 943.16,
+      "end_seconds": 951.04
+    },
+    {
+      "text": "、誠に具合がいい様子という意味なので、",
+      "start_seconds": 947.24,
+      "end_seconds": 953.9590000000001
+    },
+    {
+      "text": "こうより派手にしようとか、より大きく",
+      "start_seconds": 951.04,
+      "end_seconds": 957.04
+    },
+    {
+      "text": "しようというような発想ではなく、ここが",
+      "start_seconds": 953.959,
+      "end_seconds": 959.16
+    },
+    {
+      "text": "ちょうどいい、ここがちょうどいい具合な",
+      "start_seconds": 957.04,
+      "end_seconds": 962.399
+    },
+    {
+      "text": "んだっていうのを考え続ける、ま、そんな",
+      "start_seconds": 959.16,
+      "end_seconds": 964.56
+    },
+    {
+      "text": "プロフェッショナルチームを目指しての",
+      "start_seconds": 962.399,
+      "end_seconds": 968.519
+    },
+    {
+      "text": "このよしでもあります。",
+      "start_seconds": 964.56,
+      "end_seconds": 972.399
+    },
+    {
+      "text": "こう2次的な効果もありまして、疑うよう",
+      "start_seconds": 968.519,
+      "end_seconds": 975.16
+    },
+    {
+      "text": "にもなってくるんですね。",
+      "start_seconds": 972.399,
+      "end_seconds": 978.36
+    },
+    {
+      "text": "世間一般的にはこれが良しとされている。",
+      "start_seconds": 975.16,
+      "end_seconds": 982.279
+    },
+    {
+      "text": "今これが流行りだとかいうことに関しても",
+      "start_seconds": 978.36,
+      "end_seconds": 986.16
+    },
+    {
+      "text": "本当にそれでいいのかというような疑うと",
+      "start_seconds": 982.279,
+      "end_seconds": 989.519
+    },
+    {
+      "text": "いうか考え直す感性も育ててくれています",
+      "start_seconds": 986.16,
+      "end_seconds": 991.56
+    },
+    {
+      "text": "。",
+      "start_seconds": 989.519,
+      "end_seconds": 993.36
+    },
+    {
+      "text": "ま、世界ホテルいろんなとこで取り上げ",
+      "start_seconds": 991.56,
+      "end_seconds": 996.68
+    },
+    {
+      "text": "られていますが、今珍しくて取り上げ",
+      "start_seconds": 993.36,
+      "end_seconds": 999.44
+    },
+    {
+      "text": "られるんじゃなくって、100年後も続く",
+      "start_seconds": 996.68,
+      "end_seconds": 1002.079
+    },
+    {
+      "text": "ようなこう本当にかっこいいって何だろ",
+      "start_seconds": 999.44,
+      "end_seconds": 1005.0
+    },
+    {
+      "text": "うってことをスタッフも考えてくれてます",
+      "start_seconds": 1002.079,
+      "end_seconds": 1008.199
+    },
+    {
+      "text": "。ま、長持ちする",
+      "start_seconds": 1005.0,
+      "end_seconds": 1011.24
+    },
+    {
+      "text": "かっこいい高しというのは、ま、実は",
+      "start_seconds": 1008.199,
+      "end_seconds": 1013.319
+    },
+    {
+      "text": "めんどくさい作業の連続なんじゃないかな",
+      "start_seconds": 1011.24,
+      "end_seconds": 1017.839
+    },
+    {
+      "text": "という風に考えています。",
+      "start_seconds": 1013.319,
+      "end_seconds": 1023.319
+    },
+    {
+      "text": "もしですね、人生で迷ったら損か得か",
+      "start_seconds": 1017.839,
+      "end_seconds": 1027.72
+    },
+    {
+      "text": "正しいか正しくないかではなく、こう",
+      "start_seconds": 1023.319,
+      "end_seconds": 1029.839
+    },
+    {
+      "text": "かっこいいかっこよくないかで選んで",
+      "start_seconds": 1027.72,
+      "end_seconds": 1034.079
+    },
+    {
+      "text": "くださいと。ま、よく若い世代とか卒業し",
+      "start_seconds": 1029.839,
+      "end_seconds": 1035.9189999999999
+    },
+    {
+      "text": "ていく人に僕あのメッセージを送るんです",
+      "start_seconds": 1034.079,
+      "end_seconds": 1037.9189999999999
+    },
+    {
+      "text": "けども、",
+      "start_seconds": 1035.919,
+      "end_seconds": 1039.679
+    },
+    {
+      "text": "大体かっこいい方ってめちゃくちゃめんど",
+      "start_seconds": 1037.919,
+      "end_seconds": 1042.16
+    },
+    {
+      "text": "くさいんですよね。",
+      "start_seconds": 1039.679,
+      "end_seconds": 1045.6000000000001
+    },
+    {
+      "text": "ま、僕自身も経営者として手札が全然足ら",
+      "start_seconds": 1042.16,
+      "end_seconds": 1047.72
+    },
+    {
+      "text": "ないなと",
+      "start_seconds": 1045.6,
+      "end_seconds": 1050.84
+    },
+    {
+      "text": "痛感することが多いんですが、ま、一方で",
+      "start_seconds": 1047.72,
+      "end_seconds": 1053.6000000000001
+    },
+    {
+      "text": "誰よりもめんどくさいことをやり切って",
+      "start_seconds": 1050.84,
+      "end_seconds": 1057.36
+    },
+    {
+      "text": "いるという自付もあります。ま、是非皆",
+      "start_seconds": 1053.6,
+      "end_seconds": 1060.4399999999998
+    },
+    {
+      "text": "さんも、ま、過去振り返ってちょっと面倒",
+      "start_seconds": 1057.36,
+      "end_seconds": 1062.28
+    },
+    {
+      "text": "だなと思って諦めたことがあれば、ま、",
+      "start_seconds": 1060.44,
+      "end_seconds": 1065.44
+    },
+    {
+      "text": "一度考え直していただきたいですし、ま、",
+      "start_seconds": 1062.28,
+      "end_seconds": 1069.48
+    },
+    {
+      "text": "そういった1人1人がこう何かをやりきる",
+      "start_seconds": 1065.44,
+      "end_seconds": 1073.0800000000002
+    },
+    {
+      "text": "姿を持って、え、若い世代からかっこいい",
+      "start_seconds": 1069.48,
+      "end_seconds": 1075.96
+    },
+    {
+      "text": "なと思われる大人が1人でも増えていく。",
+      "start_seconds": 1073.08,
+      "end_seconds": 1079.9189999999999
+    },
+    {
+      "text": "ま、そんな世界を僕自身は切に願っており",
+      "start_seconds": 1075.96,
+      "end_seconds": 1084.037
+    },
+    {
+      "text": "ます。以上です。ありがとうございます。",
+      "start_seconds": 1079.919,
+      "end_seconds": 1086.057
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 1084.037,
+      "end_seconds": 1086.057
+    }
+  ],
+  "display_captions": [
+    {
+      "text": "かっこいい大人、憧れる大人と聞いて是非",
+      "start_seconds": 11.0,
+      "end_seconds": 15.879,
+      "id": "37r_LZ7lGpw-display-0001",
+      "segment_id": "37r_LZ7lGpw-ja-0001"
+    },
+    {
+      "text": "ちょっと思い浮かべていただきたいんです",
+      "start_seconds": 15.879,
+      "end_seconds": 17.439,
+      "id": "37r_LZ7lGpw-display-0002",
+      "segment_id": "37r_LZ7lGpw-ja-0001"
+    },
+    {
+      "text": "けど、何人ぐらい思い浮かびますか?",
+      "start_seconds": 17.439,
+      "end_seconds": 21.84,
+      "id": "37r_LZ7lGpw-display-0003",
+      "segment_id": "37r_LZ7lGpw-ja-0001"
+    },
+    {
+      "text": "こんな人になりたいなでもいいですし、え",
+      "start_seconds": 21.84,
+      "end_seconds": 25.08,
+      "id": "37r_LZ7lGpw-display-0004",
+      "segment_id": "37r_LZ7lGpw-ja-0002"
+    },
+    {
+      "text": "、ま、ついつい思い浮かべてしまうという",
+      "start_seconds": 25.08,
+      "end_seconds": 27.96,
+      "id": "37r_LZ7lGpw-display-0005",
+      "segment_id": "37r_LZ7lGpw-ja-0002"
+    },
+    {
+      "text": "ような方でもいいので、ま、とにかく強烈",
+      "start_seconds": 27.96,
+      "end_seconds": 31.56,
+      "id": "37r_LZ7lGpw-display-0006",
+      "segment_id": "37r_LZ7lGpw-ja-0002"
+    },
+    {
+      "text": "なインパクトを持って思い浮かぶ方って",
+      "start_seconds": 31.56,
+      "end_seconds": 34.76,
+      "id": "37r_LZ7lGpw-display-0007",
+      "segment_id": "37r_LZ7lGpw-ja-0003"
+    },
+    {
+      "text": "いうのを是非ちょっと数えてみてください",
+      "start_seconds": 34.76,
+      "end_seconds": 37.12,
+      "id": "37r_LZ7lGpw-display-0008",
+      "segment_id": "37r_LZ7lGpw-ja-0003"
+    },
+    {
+      "text": "。",
+      "start_seconds": 37.12,
+      "end_seconds": 38.84,
+      "id": "37r_LZ7lGpw-display-0009",
+      "segment_id": "37r_LZ7lGpw-ja-0003"
+    },
+    {
+      "text": "はい。では次にですね、こう知っている",
+      "start_seconds": 38.84,
+      "end_seconds": 44.0,
+      "id": "37r_LZ7lGpw-display-0010",
+      "segment_id": "37r_LZ7lGpw-ja-0004"
+    },
+    {
+      "text": "大人。これは何人ぐらいいらっしゃいます",
+      "start_seconds": 44.0,
+      "end_seconds": 48.36,
+      "id": "37r_LZ7lGpw-display-0011",
+      "segment_id": "37r_LZ7lGpw-ja-0004"
+    },
+    {
+      "text": "かね?ま、ちょっと数える大変ですよね",
+      "start_seconds": 48.36,
+      "end_seconds": 51.09,
+      "id": "37r_LZ7lGpw-display-0012",
+      "segment_id": "37r_LZ7lGpw-ja-0005"
+    },
+    {
+      "text": "[咳払い]。ま、ほとんどの方が成人され",
+      "start_seconds": 51.09,
+      "end_seconds": 53.199,
+      "id": "37r_LZ7lGpw-display-0013",
+      "segment_id": "37r_LZ7lGpw-ja-0005"
+    },
+    {
+      "text": "てるかと思いますので、ま、小学校、中",
+      "start_seconds": 53.199,
+      "end_seconds": 56.92,
+      "id": "37r_LZ7lGpw-display-0014",
+      "segment_id": "37r_LZ7lGpw-ja-0005"
+    },
+    {
+      "text": "学校、ま、高校ぐらいまでこう卒業",
+      "start_seconds": 56.92,
+      "end_seconds": 59.879,
+      "id": "37r_LZ7lGpw-display-0015",
+      "segment_id": "37r_LZ7lGpw-ja-0005"
+    },
+    {
+      "text": "アルバムをひっくり返していただいて、ま",
+      "start_seconds": 59.879,
+      "end_seconds": 62.48,
+      "id": "37r_LZ7lGpw-display-0016",
+      "segment_id": "37r_LZ7lGpw-ja-0006"
+    },
+    {
+      "text": "、数えるだけでも、ま、数百はいるんじゃ",
+      "start_seconds": 62.48,
+      "end_seconds": 65.08,
+      "id": "37r_LZ7lGpw-display-0017",
+      "segment_id": "37r_LZ7lGpw-ja-0006"
+    },
+    {
+      "text": "ないかなと思います。",
+      "start_seconds": 65.08,
+      "end_seconds": 68.479,
+      "id": "37r_LZ7lGpw-display-0018",
+      "segment_id": "37r_LZ7lGpw-ja-0006"
+    },
+    {
+      "text": "ま、僕自身ですね、この質問を、ま、10",
+      "start_seconds": 68.479,
+      "end_seconds": 71.52,
+      "id": "37r_LZ7lGpw-display-0019",
+      "segment_id": "37r_LZ7lGpw-ja-0007"
+    },
+    {
+      "text": "年以上ですかね、え、若い世代、特に学生",
+      "start_seconds": 71.52,
+      "end_seconds": 75.2,
+      "id": "37r_LZ7lGpw-display-0020",
+      "segment_id": "37r_LZ7lGpw-ja-0007"
+    },
+    {
+      "text": "に向けてこう投げかけ続けてきたんです",
+      "start_seconds": 75.2,
+      "end_seconds": 78.6,
+      "id": "37r_LZ7lGpw-display-0021",
+      "segment_id": "37r_LZ7lGpw-ja-0007"
+    },
+    {
+      "text": "けども、ま、その中で、ま、常に思うのは",
+      "start_seconds": 78.6,
+      "end_seconds": 83.28,
+      "id": "37r_LZ7lGpw-display-0022",
+      "segment_id": "37r_LZ7lGpw-ja-0008"
+    },
+    {
+      "text": "こうかっこいいと思われてる大人",
+      "start_seconds": 83.28,
+      "end_seconds": 85.799,
+      "id": "37r_LZ7lGpw-display-0023",
+      "segment_id": "37r_LZ7lGpw-ja-0008"
+    },
+    {
+      "text": "めちゃめちゃ少ないなっていうことをいつ",
+      "start_seconds": 85.799,
+      "end_seconds": 87.64,
+      "id": "37r_LZ7lGpw-display-0024",
+      "segment_id": "37r_LZ7lGpw-ja-0008"
+    },
+    {
+      "text": "も強く思います。ま、例えばこう300人",
+      "start_seconds": 87.64,
+      "end_seconds": 92.6,
+      "id": "37r_LZ7lGpw-display-0025",
+      "segment_id": "37r_LZ7lGpw-ja-0009"
+    },
+    {
+      "text": "知っていて",
+      "start_seconds": 92.6,
+      "end_seconds": 94.6,
+      "id": "37r_LZ7lGpw-display-0026",
+      "segment_id": "37r_LZ7lGpw-ja-0009"
+    },
+    {
+      "text": "3人かっこいい大人がいるってことは、ま",
+      "start_seconds": 94.6,
+      "end_seconds": 97.32,
+      "id": "37r_LZ7lGpw-display-0027",
+      "segment_id": "37r_LZ7lGpw-ja-0009"
+    },
+    {
+      "text": "、1%になりますので、ま、例えば学生が",
+      "start_seconds": 97.32,
+      "end_seconds": 101.96,
+      "id": "37r_LZ7lGpw-display-0028",
+      "segment_id": "37r_LZ7lGpw-ja-0010"
+    },
+    {
+      "text": "ですね、まだ社会に出たくないなとか、",
+      "start_seconds": 101.96,
+      "end_seconds": 105.159,
+      "id": "37r_LZ7lGpw-display-0029",
+      "segment_id": "37r_LZ7lGpw-ja-0010"
+    },
+    {
+      "text": "こう学生やっときたいなということを、ま",
+      "start_seconds": 105.159,
+      "end_seconds": 107.88,
+      "id": "37r_LZ7lGpw-display-0030",
+      "segment_id": "37r_LZ7lGpw-ja-0010"
+    },
+    {
+      "text": "、こぼしていたとしても、ま、仕方ないの",
+      "start_seconds": 107.88,
+      "end_seconds": 110.439,
+      "id": "37r_LZ7lGpw-display-0031",
+      "segment_id": "37r_LZ7lGpw-ja-0011"
+    },
+    {
+      "text": "かなと思ってしまいます。",
+      "start_seconds": 110.439,
+      "end_seconds": 113.84,
+      "id": "37r_LZ7lGpw-display-0032",
+      "segment_id": "37r_LZ7lGpw-ja-0011"
+    },
+    {
+      "text": "で、一方でですね、え、ま、そうした多く",
+      "start_seconds": 113.84,
+      "end_seconds": 117.439,
+      "id": "37r_LZ7lGpw-display-0033",
+      "segment_id": "37r_LZ7lGpw-ja-0012"
+    },
+    {
+      "text": "の大人たち、ま、僕もそうなんですけど、",
+      "start_seconds": 117.439,
+      "end_seconds": 120.399,
+      "id": "37r_LZ7lGpw-display-0034",
+      "segment_id": "37r_LZ7lGpw-ja-0012"
+    },
+    {
+      "text": "ま、自分たちが、20十歳ぐらいの頃に、",
+      "start_seconds": 120.399,
+      "end_seconds": 123.141,
+      "id": "37r_LZ7lGpw-display-0035",
+      "segment_id": "37r_LZ7lGpw-ja-0012"
+    },
+    {
+      "text": "[鼻息]ま、同じようにこう大人を見て、",
+      "start_seconds": 123.141,
+      "end_seconds": 126.52,
+      "id": "37r_LZ7lGpw-display-0036",
+      "segment_id": "37r_LZ7lGpw-ja-0013"
+    },
+    {
+      "text": "ま、同じようにこう自分はかっこいい大人",
+      "start_seconds": 126.52,
+      "end_seconds": 129.239,
+      "id": "37r_LZ7lGpw-display-0037",
+      "segment_id": "37r_LZ7lGpw-ja-0013"
+    },
+    {
+      "text": "になりたいなと、ま、思っていたはずなん",
+      "start_seconds": 129.239,
+      "end_seconds": 132.959,
+      "id": "37r_LZ7lGpw-display-0038",
+      "segment_id": "37r_LZ7lGpw-ja-0013"
+    },
+    {
+      "text": "ですね。ま、いつの時代もこう若い世代",
+      "start_seconds": 132.959,
+      "end_seconds": 136.879,
+      "id": "37r_LZ7lGpw-display-0039",
+      "segment_id": "37r_LZ7lGpw-ja-0014"
+    },
+    {
+      "text": "っていうのはこのかっこいい大人っていう",
+      "start_seconds": 136.879,
+      "end_seconds": 139.04,
+      "id": "37r_LZ7lGpw-display-0040",
+      "segment_id": "37r_LZ7lGpw-ja-0014"
+    },
+    {
+      "text": "ものに、ま、強くこう興味を示し、こう",
+      "start_seconds": 139.04,
+      "end_seconds": 142.599,
+      "id": "37r_LZ7lGpw-display-0041",
+      "segment_id": "37r_LZ7lGpw-ja-0014"
+    },
+    {
+      "text": "自分自身の将来にもこうかっこいい自分",
+      "start_seconds": 142.599,
+      "end_seconds": 146.0,
+      "id": "37r_LZ7lGpw-display-0042",
+      "segment_id": "37r_LZ7lGpw-ja-0015"
+    },
+    {
+      "text": "っていうのを夢見てるのじゃないかなと",
+      "start_seconds": 146.0,
+      "end_seconds": 148.92,
+      "id": "37r_LZ7lGpw-display-0043",
+      "segment_id": "37r_LZ7lGpw-ja-0015"
+    },
+    {
+      "text": "思います。",
+      "start_seconds": 148.92,
+      "end_seconds": 151.44,
+      "id": "37r_LZ7lGpw-display-0044",
+      "segment_id": "37r_LZ7lGpw-ja-0015"
+    },
+    {
+      "text": "で、僕自身ですね、え、ま、社長という",
+      "start_seconds": 151.44,
+      "end_seconds": 154.8,
+      "id": "37r_LZ7lGpw-display-0045",
+      "segment_id": "37r_LZ7lGpw-ja-0016"
+    },
+    {
+      "text": "立場で今仕事をさせていただいてます。",
+      "start_seconds": 154.8,
+      "end_seconds": 158.511,
+      "id": "37r_LZ7lGpw-display-0046",
+      "segment_id": "37r_LZ7lGpw-ja-0016"
+    },
+    {
+      "text": "[鼻息]",
+      "start_seconds": 158.511,
+      "end_seconds": 159.2,
+      "id": "37r_LZ7lGpw-display-0047",
+      "segment_id": "37r_LZ7lGpw-ja-0017"
+    },
+    {
+      "text": "こう皆さんこう社長という立場を",
+      "start_seconds": 159.2,
+      "end_seconds": 161.0,
+      "id": "37r_LZ7lGpw-display-0048",
+      "segment_id": "37r_LZ7lGpw-ja-0017"
+    },
+    {
+      "text": "思い浮かべるとこう何でもできる人という",
+      "start_seconds": 161.0,
+      "end_seconds": 164.04,
+      "id": "37r_LZ7lGpw-display-0049",
+      "segment_id": "37r_LZ7lGpw-ja-0017"
+    },
+    {
+      "text": "かこうたくさんのことを知ってる人だっ",
+      "start_seconds": 164.04,
+      "end_seconds": 166.68,
+      "id": "37r_LZ7lGpw-display-0050",
+      "segment_id": "37r_LZ7lGpw-ja-0017"
+    },
+    {
+      "text": "たりこうなんでしょう知り合いがいっぱい",
+      "start_seconds": 166.68,
+      "end_seconds": 170.159,
+      "id": "37r_LZ7lGpw-display-0051",
+      "segment_id": "37r_LZ7lGpw-ja-0017"
+    },
+    {
+      "text": "いるとかまそういういわゆるこう手札を",
+      "start_seconds": 170.159,
+      "end_seconds": 173.64,
+      "id": "37r_LZ7lGpw-display-0052",
+      "segment_id": "37r_LZ7lGpw-ja-0018"
+    },
+    {
+      "text": "たくさん持ってるような人を思い浮かべる",
+      "start_seconds": 173.64,
+      "end_seconds": 176.76,
+      "id": "37r_LZ7lGpw-display-0053",
+      "segment_id": "37r_LZ7lGpw-ja-0018"
+    },
+    {
+      "text": "んじゃないかなと思うんですが、ま、僕",
+      "start_seconds": 176.76,
+      "end_seconds": 179.44,
+      "id": "37r_LZ7lGpw-display-0054",
+      "segment_id": "37r_LZ7lGpw-ja-0018"
+    },
+    {
+      "text": "自身20十歳ぐらいの頃ですね、もう自分",
+      "start_seconds": 179.44,
+      "end_seconds": 182.72,
+      "id": "37r_LZ7lGpw-display-0055",
+      "segment_id": "37r_LZ7lGpw-ja-0019"
+    },
+    {
+      "text": "も社長なるんだと思っていたので、ま、",
+      "start_seconds": 182.72,
+      "end_seconds": 185.239,
+      "id": "37r_LZ7lGpw-display-0056",
+      "segment_id": "37r_LZ7lGpw-ja-0019"
+    },
+    {
+      "text": "いろんな経営者に会いに行ってですね、",
+      "start_seconds": 185.239,
+      "end_seconds": 188.159,
+      "id": "37r_LZ7lGpw-display-0057",
+      "segment_id": "37r_LZ7lGpw-ja-0019"
+    },
+    {
+      "text": "こう常に、あ、この人本当何でも知ってる",
+      "start_seconds": 188.159,
+      "end_seconds": 191.08,
+      "id": "37r_LZ7lGpw-display-0058",
+      "segment_id": "37r_LZ7lGpw-ja-0019"
+    },
+    {
+      "text": "なとか",
+      "start_seconds": 191.08,
+      "end_seconds": 192.959,
+      "id": "37r_LZ7lGpw-display-0059",
+      "segment_id": "37r_LZ7lGpw-ja-0020"
+    },
+    {
+      "text": "いろんな人脈持ってらっしゃるなと、ま、",
+      "start_seconds": 192.959,
+      "end_seconds": 196.159,
+      "id": "37r_LZ7lGpw-display-0060",
+      "segment_id": "37r_LZ7lGpw-ja-0020"
+    },
+    {
+      "text": "そういう風に思ったのを今でも覚えており",
+      "start_seconds": 196.159,
+      "end_seconds": 199.28,
+      "id": "37r_LZ7lGpw-display-0061",
+      "segment_id": "37r_LZ7lGpw-ja-0020"
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 199.28,
+      "end_seconds": 201.64,
+      "id": "37r_LZ7lGpw-display-0062",
+      "segment_id": "37r_LZ7lGpw-ja-0020"
+    },
+    {
+      "text": "ま、いざ24歳でですね、え、今のクジ",
+      "start_seconds": 201.64,
+      "end_seconds": 206.08,
+      "id": "37r_LZ7lGpw-display-0063",
+      "segment_id": "37r_LZ7lGpw-ja-0021"
+    },
+    {
+      "text": "株式会社というものを、ま、設立すること",
+      "start_seconds": 206.08,
+      "end_seconds": 209.12,
+      "id": "37r_LZ7lGpw-display-0064",
+      "segment_id": "37r_LZ7lGpw-ja-0021"
+    },
+    {
+      "text": "になったんですけども、ま、自分が社長",
+      "start_seconds": 209.12,
+      "end_seconds": 212.519,
+      "id": "37r_LZ7lGpw-display-0065",
+      "segment_id": "37r_LZ7lGpw-ja-0021"
+    },
+    {
+      "text": "なってみるとですね、もう全然思ってたの",
+      "start_seconds": 212.519,
+      "end_seconds": 215.76,
+      "id": "37r_LZ7lGpw-display-0066",
+      "segment_id": "37r_LZ7lGpw-ja-0022"
+    },
+    {
+      "text": "とは違いまして、こう自分ができること、",
+      "start_seconds": 215.76,
+      "end_seconds": 221.92,
+      "id": "37r_LZ7lGpw-display-0067",
+      "segment_id": "37r_LZ7lGpw-ja-0022"
+    },
+    {
+      "text": "そしてこうやれること、ま、いわゆる手札",
+      "start_seconds": 221.92,
+      "end_seconds": 224.439,
+      "id": "37r_LZ7lGpw-display-0068",
+      "segment_id": "37r_LZ7lGpw-ja-0022"
+    },
+    {
+      "text": "の中からこう順番よく選んでいっている",
+      "start_seconds": 224.439,
+      "end_seconds": 228.56,
+      "id": "37r_LZ7lGpw-display-0069",
+      "segment_id": "37r_LZ7lGpw-ja-0023"
+    },
+    {
+      "text": "はずなのに、こうなかな会社がこううまく",
+      "start_seconds": 228.56,
+      "end_seconds": 232.879,
+      "id": "37r_LZ7lGpw-display-0070",
+      "segment_id": "37r_LZ7lGpw-ja-0023"
+    },
+    {
+      "text": "成長しないというか、こう業績は横ばです",
+      "start_seconds": 232.879,
+      "end_seconds": 236.48,
+      "id": "37r_LZ7lGpw-display-0071",
+      "segment_id": "37r_LZ7lGpw-ja-0024"
+    },
+    {
+      "text": "し、こう従業員に至ってはこう育てては",
+      "start_seconds": 236.48,
+      "end_seconds": 241.68,
+      "id": "37r_LZ7lGpw-display-0072",
+      "segment_id": "37r_LZ7lGpw-ja-0024"
+    },
+    {
+      "text": "やめちゃう。ま、また育ててはやめて",
+      "start_seconds": 241.68,
+      "end_seconds": 245.0,
+      "id": "37r_LZ7lGpw-display-0073",
+      "segment_id": "37r_LZ7lGpw-ja-0025"
+    },
+    {
+      "text": "しまうの繰り返しを、ま、ずっとしてまし",
+      "start_seconds": 245.0,
+      "end_seconds": 247.4,
+      "id": "37r_LZ7lGpw-display-0074",
+      "segment_id": "37r_LZ7lGpw-ja-0025"
+    },
+    {
+      "text": "て、もう30歳ぐらいになる頃にはですね",
+      "start_seconds": 247.4,
+      "end_seconds": 250.4,
+      "id": "37r_LZ7lGpw-display-0075",
+      "segment_id": "37r_LZ7lGpw-ja-0025"
+    },
+    {
+      "text": "、こやっぱ向いてないなと。これ全部経営",
+      "start_seconds": 250.4,
+      "end_seconds": 255.519,
+      "id": "37r_LZ7lGpw-display-0076",
+      "segment_id": "37r_LZ7lGpw-ja-0026"
+    },
+    {
+      "text": "者向いてないからもう畳んでもう1回",
+      "start_seconds": 255.519,
+      "end_seconds": 258.199,
+      "id": "37r_LZ7lGpw-display-0077",
+      "segment_id": "37r_LZ7lGpw-ja-0026"
+    },
+    {
+      "text": "サラリマしようかなと、ま、思うことも",
+      "start_seconds": 258.199,
+      "end_seconds": 261.079,
+      "id": "37r_LZ7lGpw-display-0078",
+      "segment_id": "37r_LZ7lGpw-ja-0026"
+    },
+    {
+      "text": "多々ありました。もう仕事を終えて車運転",
+      "start_seconds": 261.079,
+      "end_seconds": 266.28,
+      "id": "37r_LZ7lGpw-display-0079",
+      "segment_id": "37r_LZ7lGpw-ja-0027"
+    },
+    {
+      "text": "して家へ帰るんですけど、こう帰ってる、",
+      "start_seconds": 266.28,
+      "end_seconds": 269.88,
+      "id": "37r_LZ7lGpw-display-0080",
+      "segment_id": "37r_LZ7lGpw-ja-0027"
+    },
+    {
+      "text": "運転してる記憶がないみたいな日も、ま、",
+      "start_seconds": 269.88,
+      "end_seconds": 272.44,
+      "id": "37r_LZ7lGpw-display-0081",
+      "segment_id": "37r_LZ7lGpw-ja-0027"
+    },
+    {
+      "text": "たくさんありまして、ま、本当に悩んだ頃",
+      "start_seconds": 272.44,
+      "end_seconds": 277.199,
+      "id": "37r_LZ7lGpw-display-0082",
+      "segment_id": "37r_LZ7lGpw-ja-0028"
+    },
+    {
+      "text": "でした。ま、そして今日ですね、僕43歳",
+      "start_seconds": 277.199,
+      "end_seconds": 282.08,
+      "id": "37r_LZ7lGpw-display-0083",
+      "segment_id": "37r_LZ7lGpw-ja-0028"
+    },
+    {
+      "text": "で会社は19年目。になるんですが、え、",
+      "start_seconds": 282.08,
+      "end_seconds": 286.52,
+      "id": "37r_LZ7lGpw-display-0084",
+      "segment_id": "37r_LZ7lGpw-ja-0029"
+    },
+    {
+      "text": "従業員で言うと社員アルバイト含め70名",
+      "start_seconds": 286.52,
+      "end_seconds": 290.44,
+      "id": "37r_LZ7lGpw-display-0085",
+      "segment_id": "37r_LZ7lGpw-ja-0029"
+    },
+    {
+      "text": "ぐらいでして、え、3年以内にやめる子も",
+      "start_seconds": 290.44,
+      "end_seconds": 294.56,
+      "id": "37r_LZ7lGpw-display-0086",
+      "segment_id": "37r_LZ7lGpw-ja-0030"
+    },
+    {
+      "text": "ほとんどいない定着率の高いあの会社に",
+      "start_seconds": 294.56,
+      "end_seconds": 297.919,
+      "id": "37r_LZ7lGpw-display-0087",
+      "segment_id": "37r_LZ7lGpw-ja-0030"
+    },
+    {
+      "text": "なったと思います。え、世界ホテルという",
+      "start_seconds": 297.919,
+      "end_seconds": 302.039,
+      "id": "37r_LZ7lGpw-display-0088",
+      "segment_id": "37r_LZ7lGpw-ja-0030"
+    },
+    {
+      "text": "2017年に始めたこのビジネスモデルは",
+      "start_seconds": 302.039,
+      "end_seconds": 304.96,
+      "id": "37r_LZ7lGpw-display-0089",
+      "segment_id": "37r_LZ7lGpw-ja-0031"
+    },
+    {
+      "text": "ですね、え、商店街をこうリノベーション",
+      "start_seconds": 304.96,
+      "end_seconds": 307.44,
+      "id": "37r_LZ7lGpw-display-0090",
+      "segment_id": "37r_LZ7lGpw-ja-0031"
+    },
+    {
+      "text": "してホテル化していくというものなんです",
+      "start_seconds": 307.44,
+      "end_seconds": 310.28,
+      "id": "37r_LZ7lGpw-display-0091",
+      "segment_id": "37r_LZ7lGpw-ja-0031"
+    },
+    {
+      "text": "けども、[鼻息]こういろんな国から",
+      "start_seconds": 310.28,
+      "end_seconds": 313.44,
+      "id": "37r_LZ7lGpw-display-0092",
+      "segment_id": "37r_LZ7lGpw-ja-0031"
+    },
+    {
+      "text": "もちろん国内からも宿泊に訪れていただく",
+      "start_seconds": 313.44,
+      "end_seconds": 317.24,
+      "id": "37r_LZ7lGpw-display-0093",
+      "segment_id": "37r_LZ7lGpw-ja-0032"
+    },
+    {
+      "text": "ようなホテルになりましたし、従業員も",
+      "start_seconds": 317.24,
+      "end_seconds": 320.479,
+      "id": "37r_LZ7lGpw-display-0094",
+      "segment_id": "37r_LZ7lGpw-ja-0032"
+    },
+    {
+      "text": "長く働いてくれるような、ま、ホテル会社",
+      "start_seconds": 320.479,
+      "end_seconds": 323.52,
+      "id": "37r_LZ7lGpw-display-0095",
+      "segment_id": "37r_LZ7lGpw-ja-0032"
+    },
+    {
+      "text": "になったと思います。",
+      "start_seconds": 323.52,
+      "end_seconds": 327.24,
+      "id": "37r_LZ7lGpw-display-0096",
+      "segment_id": "37r_LZ7lGpw-ja-0033"
+    },
+    {
+      "text": "ま、どのように考えてこう至ったかと言い",
+      "start_seconds": 327.24,
+      "end_seconds": 329.36,
+      "id": "37r_LZ7lGpw-display-0097",
+      "segment_id": "37r_LZ7lGpw-ja-0034"
+    },
+    {
+      "text": "ますと、もう自分自身ですね、[鼻息]",
+      "start_seconds": 329.36,
+      "end_seconds": 332.199,
+      "id": "37r_LZ7lGpw-display-0098",
+      "segment_id": "37r_LZ7lGpw-ja-0034"
+    },
+    {
+      "text": "できること、できそうなことから考える、",
+      "start_seconds": 332.199,
+      "end_seconds": 335.6,
+      "id": "37r_LZ7lGpw-display-0099",
+      "segment_id": "37r_LZ7lGpw-ja-0034"
+    },
+    {
+      "text": "やるっていうのを、ま、やめてみるという",
+      "start_seconds": 335.6,
+      "end_seconds": 338.68,
+      "id": "37r_LZ7lGpw-display-0100",
+      "segment_id": "37r_LZ7lGpw-ja-0034"
+    },
+    {
+      "text": "ところから始まりました。これがきっと",
+      "start_seconds": 338.68,
+      "end_seconds": 341.08,
+      "id": "37r_LZ7lGpw-display-0101",
+      "segment_id": "37r_LZ7lGpw-ja-0035"
+    },
+    {
+      "text": "大きな転換点だったと思います。",
+      "start_seconds": 341.08,
+      "end_seconds": 346.479,
+      "id": "37r_LZ7lGpw-display-0102",
+      "segment_id": "37r_LZ7lGpw-ja-0035"
+    },
+    {
+      "text": "では自分が並べてるこう手札からこう選ぶ",
+      "start_seconds": 346.479,
+      "end_seconds": 350.24,
+      "id": "37r_LZ7lGpw-display-0103",
+      "segment_id": "37r_LZ7lGpw-ja-0036"
+    },
+    {
+      "text": "のをやめる、できそうなことから考えるの",
+      "start_seconds": 350.24,
+      "end_seconds": 353.84,
+      "id": "37r_LZ7lGpw-display-0104",
+      "segment_id": "37r_LZ7lGpw-ja-0036"
+    },
+    {
+      "text": "をやめるというのであれば、ま、何を基準",
+      "start_seconds": 353.84,
+      "end_seconds": 357.08,
+      "id": "37r_LZ7lGpw-display-0105",
+      "segment_id": "37r_LZ7lGpw-ja-0036"
+    },
+    {
+      "text": "にこう自分は決めていくのだろう、動いて",
+      "start_seconds": 357.08,
+      "end_seconds": 360.12,
+      "id": "37r_LZ7lGpw-display-0106",
+      "segment_id": "37r_LZ7lGpw-ja-0037"
+    },
+    {
+      "text": "いくのだろうという話になるんですが、ま",
+      "start_seconds": 360.12,
+      "end_seconds": 363.4,
+      "id": "37r_LZ7lGpw-display-0107",
+      "segment_id": "37r_LZ7lGpw-ja-0037"
+    },
+    {
+      "text": "、僕自身こう不動産屋としてずっと働いて",
+      "start_seconds": 363.4,
+      "end_seconds": 368.039,
+      "id": "37r_LZ7lGpw-display-0108",
+      "segment_id": "37r_LZ7lGpw-ja-0037"
+    },
+    {
+      "text": "きた中で、ま、強く抱いた疑問、これが僕",
+      "start_seconds": 368.039,
+      "end_seconds": 371.319,
+      "id": "37r_LZ7lGpw-display-0109",
+      "segment_id": "37r_LZ7lGpw-ja-0038"
+    },
+    {
+      "text": "の出発点だったように思います。",
+      "start_seconds": 371.319,
+      "end_seconds": 376.199,
+      "id": "37r_LZ7lGpw-display-0110",
+      "segment_id": "37r_LZ7lGpw-ja-0038"
+    },
+    {
+      "text": "ま、商店街にですね、古い建物、いわゆる",
+      "start_seconds": 376.199,
+      "end_seconds": 379.08,
+      "id": "37r_LZ7lGpw-display-0111",
+      "segment_id": "37r_LZ7lGpw-ja-0039"
+    },
+    {
+      "text": "こうシャッターが閉まっちゃってる建物、",
+      "start_seconds": 379.08,
+      "end_seconds": 381.319,
+      "id": "37r_LZ7lGpw-display-0112",
+      "segment_id": "37r_LZ7lGpw-ja-0039"
+    },
+    {
+      "text": "ま、どんどん増えていくっていうのを、ま",
+      "start_seconds": 381.319,
+      "end_seconds": 383.28,
+      "id": "37r_LZ7lGpw-display-0113",
+      "segment_id": "37r_LZ7lGpw-ja-0039"
+    },
+    {
+      "text": "、仕事としても見ていたんですけども、",
+      "start_seconds": 383.28,
+      "end_seconds": 387.109,
+      "id": "37r_LZ7lGpw-display-0114",
+      "segment_id": "37r_LZ7lGpw-ja-0039"
+    },
+    {
+      "text": "[鼻息]こう寂しいなと思うこともあれば",
+      "start_seconds": 387.109,
+      "end_seconds": 390.68,
+      "id": "37r_LZ7lGpw-display-0115",
+      "segment_id": "37r_LZ7lGpw-ja-0040"
+    },
+    {
+      "text": "、こう自分の地元とこう重ね合わせて、",
+      "start_seconds": 390.68,
+      "end_seconds": 396.12,
+      "id": "37r_LZ7lGpw-display-0116",
+      "segment_id": "37r_LZ7lGpw-ja-0040"
+    },
+    {
+      "text": "もかしいというか、こうモヤモヤするって",
+      "start_seconds": 396.12,
+      "end_seconds": 399.72,
+      "id": "37r_LZ7lGpw-display-0117",
+      "segment_id": "37r_LZ7lGpw-ja-0041"
+    },
+    {
+      "text": "いうこともあったんですけども、ま、1番",
+      "start_seconds": 399.72,
+      "end_seconds": 402.16,
+      "id": "37r_LZ7lGpw-display-0118",
+      "segment_id": "37r_LZ7lGpw-ja-0041"
+    },
+    {
+      "text": "強く思ったのはなんでこんなことになるん",
+      "start_seconds": 402.16,
+      "end_seconds": 405.56,
+      "id": "37r_LZ7lGpw-display-0119",
+      "segment_id": "37r_LZ7lGpw-ja-0041"
+    },
+    {
+      "text": "やろうとこう疑問が1番強かったですね。",
+      "start_seconds": 405.56,
+      "end_seconds": 411.039,
+      "id": "37r_LZ7lGpw-display-0120",
+      "segment_id": "37r_LZ7lGpw-ja-0042"
+    },
+    {
+      "text": "ま、確かに不動産として見ても商店街沿い",
+      "start_seconds": 411.039,
+      "end_seconds": 415.639,
+      "id": "37r_LZ7lGpw-display-0121",
+      "segment_id": "37r_LZ7lGpw-ja-0043"
+    },
+    {
+      "text": "の古い建物ってこうめちゃくちゃ触り",
+      "start_seconds": 415.639,
+      "end_seconds": 417.759,
+      "id": "37r_LZ7lGpw-display-0122",
+      "segment_id": "37r_LZ7lGpw-ja-0043"
+    },
+    {
+      "text": "づらいんですよ。こう仕事になりづらいと",
+      "start_seconds": 417.759,
+      "end_seconds": 420.8,
+      "id": "37r_LZ7lGpw-display-0123",
+      "segment_id": "37r_LZ7lGpw-ja-0043"
+    },
+    {
+      "text": "いうか[鼻息]でまししてはこう近隣に",
+      "start_seconds": 420.8,
+      "end_seconds": 424.759,
+      "id": "37r_LZ7lGpw-display-0124",
+      "segment_id": "37r_LZ7lGpw-ja-0044"
+    },
+    {
+      "text": "大型の商業施設できたりとかでですね、",
+      "start_seconds": 424.759,
+      "end_seconds": 427.759,
+      "id": "37r_LZ7lGpw-display-0125",
+      "segment_id": "37r_LZ7lGpw-ja-0044"
+    },
+    {
+      "text": "こう人流が変わったりとかいろんな理由で",
+      "start_seconds": 427.759,
+      "end_seconds": 431.599,
+      "id": "37r_LZ7lGpw-display-0126",
+      "segment_id": "37r_LZ7lGpw-ja-0044"
+    },
+    {
+      "text": "こう商店街がだんだん元気がなくなって",
+      "start_seconds": 431.599,
+      "end_seconds": 434.56,
+      "id": "37r_LZ7lGpw-display-0127",
+      "segment_id": "37r_LZ7lGpw-ja-0045"
+    },
+    {
+      "text": "いく。ま、これは理解できるんですけども",
+      "start_seconds": 434.56,
+      "end_seconds": 436.8,
+      "id": "37r_LZ7lGpw-display-0128",
+      "segment_id": "37r_LZ7lGpw-ja-0045"
+    },
+    {
+      "text": "、ま、僕自身色々とこう調べたり勉強した",
+      "start_seconds": 436.8,
+      "end_seconds": 441.16,
+      "id": "37r_LZ7lGpw-display-0129",
+      "segment_id": "37r_LZ7lGpw-ja-0045"
+    },
+    {
+      "text": "結果、あ、これはみんなにとって",
+      "start_seconds": 441.16,
+      "end_seconds": 446.12,
+      "id": "37r_LZ7lGpw-display-0130",
+      "segment_id": "37r_LZ7lGpw-ja-0046"
+    },
+    {
+      "text": "めちゃめちゃめんどくさいことなんだなっ",
+      "start_seconds": 446.12,
+      "end_seconds": 448.599,
+      "id": "37r_LZ7lGpw-display-0131",
+      "segment_id": "37r_LZ7lGpw-ja-0046"
+    },
+    {
+      "text": "ていう結論に行きつきました。",
+      "start_seconds": 448.599,
+      "end_seconds": 453.319,
+      "id": "37r_LZ7lGpw-display-0132",
+      "segment_id": "37r_LZ7lGpw-ja-0047"
+    },
+    {
+      "text": "めんどくさいことの大半って本当はやら",
+      "start_seconds": 453.56,
+      "end_seconds": 457.12,
+      "id": "37r_LZ7lGpw-display-0133",
+      "segment_id": "37r_LZ7lGpw-ja-0048"
+    },
+    {
+      "text": "なきゃいけないって分かってることだっ",
+      "start_seconds": 457.12,
+      "end_seconds": 458.96,
+      "id": "37r_LZ7lGpw-display-0134",
+      "segment_id": "37r_LZ7lGpw-ja-0048"
+    },
+    {
+      "text": "たりするんですよね。",
+      "start_seconds": 458.96,
+      "end_seconds": 461.879,
+      "id": "37r_LZ7lGpw-display-0135",
+      "segment_id": "37r_LZ7lGpw-ja-0048"
+    },
+    {
+      "text": "ま、商店街もだんだん元気なくなっていっ",
+      "start_seconds": 461.879,
+      "end_seconds": 465.0,
+      "id": "37r_LZ7lGpw-display-0136",
+      "segment_id": "37r_LZ7lGpw-ja-0049"
+    },
+    {
+      "text": "て、若い子も減ってこうなんとかしなきゃ",
+      "start_seconds": 465.0,
+      "end_seconds": 467.84,
+      "id": "37r_LZ7lGpw-display-0137",
+      "segment_id": "37r_LZ7lGpw-ja-0049"
+    },
+    {
+      "text": "いけないと思っていた大人の方は多いと",
+      "start_seconds": 467.84,
+      "end_seconds": 470.319,
+      "id": "37r_LZ7lGpw-display-0138",
+      "segment_id": "37r_LZ7lGpw-ja-0049"
+    },
+    {
+      "text": "思うんですが、ま、なかなか大変そうと",
+      "start_seconds": 470.319,
+      "end_seconds": 473.36,
+      "id": "37r_LZ7lGpw-display-0139",
+      "segment_id": "37r_LZ7lGpw-ja-0049"
+    },
+    {
+      "text": "こう一歩踏み出せない。ま、これが、ま、",
+      "start_seconds": 473.36,
+      "end_seconds": 475.639,
+      "id": "37r_LZ7lGpw-display-0140",
+      "segment_id": "37r_LZ7lGpw-ja-0050"
+    },
+    {
+      "text": "みんなにとってめんどくさいことなんです",
+      "start_seconds": 475.639,
+      "end_seconds": 477.68,
+      "id": "37r_LZ7lGpw-display-0141",
+      "segment_id": "37r_LZ7lGpw-ja-0050"
+    },
+    {
+      "text": "が、ま、この時僕ピンときまして、",
+      "start_seconds": 477.68,
+      "end_seconds": 481.44,
+      "id": "37r_LZ7lGpw-display-0142",
+      "segment_id": "37r_LZ7lGpw-ja-0050"
+    },
+    {
+      "text": "このめんどくさいことをこうやってやり",
+      "start_seconds": 481.44,
+      "end_seconds": 484.72,
+      "id": "37r_LZ7lGpw-display-0143",
+      "segment_id": "37r_LZ7lGpw-ja-0050"
+    },
+    {
+      "text": "切って結果を出したら[鼻息]もしかし",
+      "start_seconds": 484.72,
+      "end_seconds": 487.879,
+      "id": "37r_LZ7lGpw-display-0144",
+      "segment_id": "37r_LZ7lGpw-ja-0051"
+    },
+    {
+      "text": "たらすごくこう喜ばれるんじゃないかと。",
+      "start_seconds": 487.879,
+      "end_seconds": 491.4,
+      "id": "37r_LZ7lGpw-display-0145",
+      "segment_id": "37r_LZ7lGpw-ja-0051"
+    },
+    {
+      "text": "え、そしてそれはこういろんな人に応援さ",
+      "start_seconds": 491.4,
+      "end_seconds": 494.52,
+      "id": "37r_LZ7lGpw-display-0146",
+      "segment_id": "37r_LZ7lGpw-ja-0052"
+    },
+    {
+      "text": "れる、愛されるものになるんじゃないかと",
+      "start_seconds": 494.52,
+      "end_seconds": 497.36,
+      "id": "37r_LZ7lGpw-display-0147",
+      "segment_id": "37r_LZ7lGpw-ja-0052"
+    },
+    {
+      "text": "、ま、そういう風に、ま、考えまして、ま",
+      "start_seconds": 497.36,
+      "end_seconds": 501.52,
+      "id": "37r_LZ7lGpw-display-0148",
+      "segment_id": "37r_LZ7lGpw-ja-0052"
+    },
+    {
+      "text": "、やってみようかなと思いました。",
+      "start_seconds": 501.52,
+      "end_seconds": 505.759,
+      "id": "37r_LZ7lGpw-display-0149",
+      "segment_id": "37r_LZ7lGpw-ja-0053"
+    },
+    {
+      "text": "で、ビジネスとしては競合が少ないという",
+      "start_seconds": 505.759,
+      "end_seconds": 508.72,
+      "id": "37r_LZ7lGpw-display-0150",
+      "segment_id": "37r_LZ7lGpw-ja-0054"
+    },
+    {
+      "text": "話になりますんで、ま、必然的に",
+      "start_seconds": 508.72,
+      "end_seconds": 510.759,
+      "id": "37r_LZ7lGpw-display-0151",
+      "segment_id": "37r_LZ7lGpw-ja-0054"
+    },
+    {
+      "text": "オンリーワンを目指すことになります。",
+      "start_seconds": 510.759,
+      "end_seconds": 514.479,
+      "id": "37r_LZ7lGpw-display-0152",
+      "segment_id": "37r_LZ7lGpw-ja-0054"
+    },
+    {
+      "text": "ま、何よりですね、ま、経営者トップとし",
+      "start_seconds": 514.479,
+      "end_seconds": 516.76,
+      "id": "37r_LZ7lGpw-display-0153",
+      "segment_id": "37r_LZ7lGpw-ja-0055"
+    },
+    {
+      "text": "て僕が売上よと",
+      "start_seconds": 516.76,
+      "end_seconds": 520.56,
+      "id": "37r_LZ7lGpw-display-0154",
+      "segment_id": "37r_LZ7lGpw-ja-0055"
+    },
+    {
+      "text": "いうよりもこの商店街めちゃくちゃ元気に",
+      "start_seconds": 520.56,
+      "end_seconds": 524.12,
+      "id": "37r_LZ7lGpw-display-0155",
+      "segment_id": "37r_LZ7lGpw-ja-0055"
+    },
+    {
+      "text": "しようよっていう方がなんか普通に共感",
+      "start_seconds": 524.12,
+      "end_seconds": 527.6,
+      "id": "37r_LZ7lGpw-display-0156",
+      "segment_id": "37r_LZ7lGpw-ja-0056"
+    },
+    {
+      "text": "できそうだなっていう、ま、そういう風に",
+      "start_seconds": 527.6,
+      "end_seconds": 529.959,
+      "id": "37r_LZ7lGpw-display-0157",
+      "segment_id": "37r_LZ7lGpw-ja-0056"
+    },
+    {
+      "text": "考えて",
+      "start_seconds": 529.959,
+      "end_seconds": 531.88,
+      "id": "37r_LZ7lGpw-display-0158",
+      "segment_id": "37r_LZ7lGpw-ja-0056"
+    },
+    {
+      "text": "やることを決めました。",
+      "start_seconds": 531.88,
+      "end_seconds": 535.24,
+      "id": "37r_LZ7lGpw-display-0159",
+      "segment_id": "37r_LZ7lGpw-ja-0056"
+    },
+    {
+      "text": "そうして生まれたのがですね、ま、世界",
+      "start_seconds": 535.24,
+      "end_seconds": 537.6,
+      "id": "37r_LZ7lGpw-display-0160",
+      "segment_id": "37r_LZ7lGpw-ja-0057"
+    },
+    {
+      "text": "ホテルという商店街をホテル化していく",
+      "start_seconds": 537.6,
+      "end_seconds": 541.519,
+      "id": "37r_LZ7lGpw-display-0161",
+      "segment_id": "37r_LZ7lGpw-ja-0057"
+    },
+    {
+      "text": "ビジネスです。[鼻息]",
+      "start_seconds": 541.519,
+      "end_seconds": 543.64,
+      "id": "37r_LZ7lGpw-display-0162",
+      "segment_id": "37r_LZ7lGpw-ja-0057"
+    },
+    {
+      "text": "え、大阪の東大阪市という町の伏という駅",
+      "start_seconds": 543.64,
+      "end_seconds": 548.2,
+      "id": "37r_LZ7lGpw-display-0163",
+      "segment_id": "37r_LZ7lGpw-ja-0058"
+    },
+    {
+      "text": "周辺の商店街をですね、え、空いてるとか",
+      "start_seconds": 548.2,
+      "end_seconds": 552.8,
+      "id": "37r_LZ7lGpw-display-0164",
+      "segment_id": "37r_LZ7lGpw-ja-0058"
+    },
+    {
+      "text": "秋屋をリノベーションして止まれるように",
+      "start_seconds": 552.8,
+      "end_seconds": 556.399,
+      "id": "37r_LZ7lGpw-display-0165",
+      "segment_id": "37r_LZ7lGpw-ja-0059"
+    },
+    {
+      "text": "しまして、ま、近隣の飲食店、え、とかと",
+      "start_seconds": 556.399,
+      "end_seconds": 561.12,
+      "id": "37r_LZ7lGpw-display-0166",
+      "segment_id": "37r_LZ7lGpw-ja-0059"
+    },
+    {
+      "text": "こう定携して夕食会場、朝食会場として、",
+      "start_seconds": 561.12,
+      "end_seconds": 565.079,
+      "id": "37r_LZ7lGpw-display-0167",
+      "segment_id": "37r_LZ7lGpw-ja-0060"
+    },
+    {
+      "text": "ま、ホテルのサービスを提供すると。",
+      "start_seconds": 565.079,
+      "end_seconds": 569.2,
+      "id": "37r_LZ7lGpw-display-0168",
+      "segment_id": "37r_LZ7lGpw-ja-0060"
+    },
+    {
+      "text": "で、え、近くに昔ながらの戦闘があるん",
+      "start_seconds": 569.2,
+      "end_seconds": 573.88,
+      "id": "37r_LZ7lGpw-display-0169",
+      "segment_id": "37r_LZ7lGpw-ja-0061"
+    },
+    {
+      "text": "ですけども、ま、そちらをこう大浴上とし",
+      "start_seconds": 573.88,
+      "end_seconds": 577.32,
+      "id": "37r_LZ7lGpw-display-0170",
+      "segment_id": "37r_LZ7lGpw-ja-0061"
+    },
+    {
+      "text": "て使ってもらうので、うちのお客さんが",
+      "start_seconds": 577.32,
+      "end_seconds": 580.24,
+      "id": "37r_LZ7lGpw-display-0171",
+      "segment_id": "37r_LZ7lGpw-ja-0061"
+    },
+    {
+      "text": "こう不労家持って商店が歩いていくって",
+      "start_seconds": 580.24,
+      "end_seconds": 582.6,
+      "id": "37r_LZ7lGpw-display-0172",
+      "segment_id": "37r_LZ7lGpw-ja-0062"
+    },
+    {
+      "text": "いうのがもう今では、ま、日常的に見",
+      "start_seconds": 582.6,
+      "end_seconds": 585.079,
+      "id": "37r_LZ7lGpw-display-0173",
+      "segment_id": "37r_LZ7lGpw-ja-0062"
+    },
+    {
+      "text": "られるような、ま、そんなホテルです。",
+      "start_seconds": 585.079,
+      "end_seconds": 589.32,
+      "id": "37r_LZ7lGpw-display-0174",
+      "segment_id": "37r_LZ7lGpw-ja-0062"
+    },
+    {
+      "text": "ま、元々町にあった機能をですね、僕らが",
+      "start_seconds": 589.32,
+      "end_seconds": 593.32,
+      "id": "37r_LZ7lGpw-display-0175",
+      "segment_id": "37r_LZ7lGpw-ja-0063"
+    },
+    {
+      "text": "再編集する形で町全体をホテル化する街",
+      "start_seconds": 593.32,
+      "end_seconds": 598.16,
+      "id": "37r_LZ7lGpw-display-0176",
+      "segment_id": "37r_LZ7lGpw-ja-0063"
+    },
+    {
+      "text": "ホテル、ま、商店街丸ごとホテル。これが",
+      "start_seconds": 598.16,
+      "end_seconds": 602.04,
+      "id": "37r_LZ7lGpw-display-0177",
+      "segment_id": "37r_LZ7lGpw-ja-0064"
+    },
+    {
+      "text": "世界ホテルというものです。",
+      "start_seconds": 602.04,
+      "end_seconds": 605.881,
+      "id": "37r_LZ7lGpw-display-0178",
+      "segment_id": "37r_LZ7lGpw-ja-0064"
+    },
+    {
+      "text": "[鼻息]",
+      "start_seconds": 605.881,
+      "end_seconds": 606.44,
+      "id": "37r_LZ7lGpw-display-0179",
+      "segment_id": "37r_LZ7lGpw-ja-0065"
+    },
+    {
+      "text": "ま、旅先の日常に飛び込もうという",
+      "start_seconds": 606.44,
+      "end_seconds": 608.64,
+      "id": "37r_LZ7lGpw-display-0180",
+      "segment_id": "37r_LZ7lGpw-ja-0065"
+    },
+    {
+      "text": "キャッチコピーを掲げてまして、ま、観光",
+      "start_seconds": 608.64,
+      "end_seconds": 613.16,
+      "id": "37r_LZ7lGpw-display-0181",
+      "segment_id": "37r_LZ7lGpw-ja-0065"
+    },
+    {
+      "text": "客からすれば初めて訪れる知らない土地な",
+      "start_seconds": 613.16,
+      "end_seconds": 616.079,
+      "id": "37r_LZ7lGpw-display-0182",
+      "segment_id": "37r_LZ7lGpw-ja-0065"
+    },
+    {
+      "text": "んですよね。ま、そこの、ま、住民が普段",
+      "start_seconds": 616.079,
+      "end_seconds": 619.44,
+      "id": "37r_LZ7lGpw-display-0183",
+      "segment_id": "37r_LZ7lGpw-ja-0066"
+    },
+    {
+      "text": "こう営んでる日常体験っていうのを、ま、",
+      "start_seconds": 619.44,
+      "end_seconds": 622.24,
+      "id": "37r_LZ7lGpw-display-0184",
+      "segment_id": "37r_LZ7lGpw-ja-0066"
+    },
+    {
+      "text": "アクティビティとして体験いただけるのが",
+      "start_seconds": 622.24,
+      "end_seconds": 625.44,
+      "id": "37r_LZ7lGpw-display-0185",
+      "segment_id": "37r_LZ7lGpw-ja-0066"
+    },
+    {
+      "text": "うちの世界ホテルになります。[鼻息]",
+      "start_seconds": 625.44,
+      "end_seconds": 629.36,
+      "id": "37r_LZ7lGpw-display-0186",
+      "segment_id": "37r_LZ7lGpw-ja-0067"
+    },
+    {
+      "text": "ま、実際ですね、えっと、アンケートって",
+      "start_seconds": 629.36,
+      "end_seconds": 632.56,
+      "id": "37r_LZ7lGpw-display-0187",
+      "segment_id": "37r_LZ7lGpw-ja-0067"
+    },
+    {
+      "text": "あるじゃないですか、ホテルの。ま、",
+      "start_seconds": 632.56,
+      "end_seconds": 634.519,
+      "id": "37r_LZ7lGpw-display-0188",
+      "segment_id": "37r_LZ7lGpw-ja-0067"
+    },
+    {
+      "text": "あそこにも、ま、客室が綺麗だったとか、",
+      "start_seconds": 634.519,
+      "end_seconds": 637.6,
+      "id": "37r_LZ7lGpw-display-0189",
+      "segment_id": "37r_LZ7lGpw-ja-0068"
+    },
+    {
+      "text": "ま、スタッフさんが良かったっていうのも",
+      "start_seconds": 637.6,
+      "end_seconds": 640.16,
+      "id": "37r_LZ7lGpw-display-0190",
+      "segment_id": "37r_LZ7lGpw-ja-0068"
+    },
+    {
+      "text": "あるんですけども、ま、ここに加えてです",
+      "start_seconds": 640.16,
+      "end_seconds": 642.48,
+      "id": "37r_LZ7lGpw-display-0191",
+      "segment_id": "37r_LZ7lGpw-ja-0068"
+    },
+    {
+      "text": "ね、こう自分の地元にも商店街があって、",
+      "start_seconds": 642.48,
+      "end_seconds": 647.6,
+      "id": "37r_LZ7lGpw-display-0192",
+      "segment_id": "37r_LZ7lGpw-ja-0069"
+    },
+    {
+      "text": "ワクワクしたと、是非うちの地元でも世界",
+      "start_seconds": 647.6,
+      "end_seconds": 650.24,
+      "id": "37r_LZ7lGpw-display-0193",
+      "segment_id": "37r_LZ7lGpw-ja-0069"
+    },
+    {
+      "text": "ホテルやってほしいというような、こう",
+      "start_seconds": 650.24,
+      "end_seconds": 652.32,
+      "id": "37r_LZ7lGpw-display-0194",
+      "segment_id": "37r_LZ7lGpw-ja-0069"
+    },
+    {
+      "text": "激例のメッセージだったり、え、どこどこ",
+      "start_seconds": 652.32,
+      "end_seconds": 655.24,
+      "id": "37r_LZ7lGpw-display-0195",
+      "segment_id": "37r_LZ7lGpw-ja-0070"
+    },
+    {
+      "text": "のお店のおばあちゃんが、ま、いろんなお",
+      "start_seconds": 655.24,
+      "end_seconds": 657.72,
+      "id": "37r_LZ7lGpw-display-0196",
+      "segment_id": "37r_LZ7lGpw-ja-0070"
+    },
+    {
+      "text": "話もしてくれたし、ま、おまけもくれたと",
+      "start_seconds": 657.72,
+      "end_seconds": 660.12,
+      "id": "37r_LZ7lGpw-display-0197",
+      "segment_id": "37r_LZ7lGpw-ja-0070"
+    },
+    {
+      "text": "、もう非常にこう興奮したというような",
+      "start_seconds": 660.12,
+      "end_seconds": 664.72,
+      "id": "37r_LZ7lGpw-display-0198",
+      "segment_id": "37r_LZ7lGpw-ja-0071"
+    },
+    {
+      "text": "感謝のメッセージをいいたりですね、ま、",
+      "start_seconds": 664.72,
+      "end_seconds": 667.839,
+      "id": "37r_LZ7lGpw-display-0199",
+      "segment_id": "37r_LZ7lGpw-ja-0071"
+    },
+    {
+      "text": "しっかりとこう旅先の日常に飛び込むって",
+      "start_seconds": 667.839,
+      "end_seconds": 671.079,
+      "id": "37r_LZ7lGpw-display-0200",
+      "segment_id": "37r_LZ7lGpw-ja-0071"
+    },
+    {
+      "text": "いう体験が、ま、喜ばれている様子があの",
+      "start_seconds": 671.079,
+      "end_seconds": 675.04,
+      "id": "37r_LZ7lGpw-display-0201",
+      "segment_id": "37r_LZ7lGpw-ja-0072"
+    },
+    {
+      "text": "伺える内容となっております。[鼻息]",
+      "start_seconds": 675.04,
+      "end_seconds": 680.56,
+      "id": "37r_LZ7lGpw-display-0202",
+      "segment_id": "37r_LZ7lGpw-ja-0072"
+    },
+    {
+      "text": "ま、こう、わざわざ商店街をですね、こう",
+      "start_seconds": 680.56,
+      "end_seconds": 685.639,
+      "id": "37r_LZ7lGpw-display-0203",
+      "segment_id": "37r_LZ7lGpw-ja-0073"
+    },
+    {
+      "text": "リノベーションしていって、しかも地域と",
+      "start_seconds": 685.639,
+      "end_seconds": 687.839,
+      "id": "37r_LZ7lGpw-display-0204",
+      "segment_id": "37r_LZ7lGpw-ja-0073"
+    },
+    {
+      "text": "連携してホテルをやるだなんて、ま、合理",
+      "start_seconds": 687.839,
+      "end_seconds": 692.92,
+      "id": "37r_LZ7lGpw-display-0205",
+      "segment_id": "37r_LZ7lGpw-ja-0074"
+    },
+    {
+      "text": "的ではないですよね。えー、僕も散々先輩",
+      "start_seconds": 692.92,
+      "end_seconds": 698.44,
+      "id": "37r_LZ7lGpw-display-0206",
+      "segment_id": "37r_LZ7lGpw-ja-0074"
+    },
+    {
+      "text": "にですね、なんでそんなめんどくさいこと",
+      "start_seconds": 698.44,
+      "end_seconds": 701.24,
+      "id": "37r_LZ7lGpw-display-0207",
+      "segment_id": "37r_LZ7lGpw-ja-0075"
+    },
+    {
+      "text": "やってんのと、今、今でも言われます。",
+      "start_seconds": 701.24,
+      "end_seconds": 704.16,
+      "id": "37r_LZ7lGpw-display-0208",
+      "segment_id": "37r_LZ7lGpw-ja-0075"
+    },
+    {
+      "text": "はい。[鼻息]",
+      "start_seconds": 704.16,
+      "end_seconds": 705.88,
+      "id": "37r_LZ7lGpw-display-0209",
+      "segment_id": "37r_LZ7lGpw-ja-0076"
+    },
+    {
+      "text": "ま、ビジネス的にはもしかしたら合理性に",
+      "start_seconds": 705.88,
+      "end_seconds": 708.12,
+      "id": "37r_LZ7lGpw-display-0210",
+      "segment_id": "37r_LZ7lGpw-ja-0076"
+    },
+    {
+      "text": "かけることなのかもしれないです。",
+      "start_seconds": 708.12,
+      "end_seconds": 711.44,
+      "id": "37r_LZ7lGpw-display-0211",
+      "segment_id": "37r_LZ7lGpw-ja-0076"
+    },
+    {
+      "text": "ま、ホテル普通で言えば顧客と従業員の",
+      "start_seconds": 711.44,
+      "end_seconds": 715.16,
+      "id": "37r_LZ7lGpw-display-0212",
+      "segment_id": "37r_LZ7lGpw-ja-0077"
+    },
+    {
+      "text": "ことを考えるだけで十分なんですが、我々",
+      "start_seconds": 715.16,
+      "end_seconds": 718.16,
+      "id": "37r_LZ7lGpw-display-0213",
+      "segment_id": "37r_LZ7lGpw-ja-0077"
+    },
+    {
+      "text": "は地域の方とどう連携するか、そしてこの",
+      "start_seconds": 718.16,
+      "end_seconds": 722.04,
+      "id": "37r_LZ7lGpw-display-0214",
+      "segment_id": "37r_LZ7lGpw-ja-0077"
+    },
+    {
+      "text": "地域を一緒にどう盛り上げていくかという",
+      "start_seconds": 722.04,
+      "end_seconds": 724.639,
+      "id": "37r_LZ7lGpw-display-0215",
+      "segment_id": "37r_LZ7lGpw-ja-0078"
+    },
+    {
+      "text": "ことまで考えます。[鼻息]ま、街中に",
+      "start_seconds": 724.639,
+      "end_seconds": 730.56,
+      "id": "37r_LZ7lGpw-display-0216",
+      "segment_id": "37r_LZ7lGpw-ja-0078"
+    },
+    {
+      "text": "こう施設が点在しているので従業員がこう",
+      "start_seconds": 730.56,
+      "end_seconds": 734.959,
+      "id": "37r_LZ7lGpw-display-0217",
+      "segment_id": "37r_LZ7lGpw-ja-0079"
+    },
+    {
+      "text": "仕事中に商店街歩いて、ま、いろんな方と",
+      "start_seconds": 734.959,
+      "end_seconds": 739.16,
+      "id": "37r_LZ7lGpw-display-0218",
+      "segment_id": "37r_LZ7lGpw-ja-0079"
+    },
+    {
+      "text": "こう立ち話になったり挨拶したりするん",
+      "start_seconds": 739.16,
+      "end_seconds": 743.04,
+      "id": "37r_LZ7lGpw-display-0219",
+      "segment_id": "37r_LZ7lGpw-ja-0080"
+    },
+    {
+      "text": "ですよね。ま、その時には、ま、是非仕事",
+      "start_seconds": 743.04,
+      "end_seconds": 746.959,
+      "id": "37r_LZ7lGpw-display-0220",
+      "segment_id": "37r_LZ7lGpw-ja-0080"
+    },
+    {
+      "text": "を止めて、足止めて、[鼻息]ま、",
+      "start_seconds": 746.959,
+      "end_seconds": 749.6,
+      "id": "37r_LZ7lGpw-display-0221",
+      "segment_id": "37r_LZ7lGpw-ja-0080"
+    },
+    {
+      "text": "ちょっと立ち回ししておいでと、ま、いう",
+      "start_seconds": 749.6,
+      "end_seconds": 751.88,
+      "id": "37r_LZ7lGpw-display-0222",
+      "segment_id": "37r_LZ7lGpw-ja-0081"
+    },
+    {
+      "text": "風にうちのスタッフには、ま、教えるよう",
+      "start_seconds": 751.88,
+      "end_seconds": 755.04,
+      "id": "37r_LZ7lGpw-display-0223",
+      "segment_id": "37r_LZ7lGpw-ja-0081"
+    },
+    {
+      "text": "にしています。ま、時給月給が発生して",
+      "start_seconds": 755.04,
+      "end_seconds": 759.76,
+      "id": "37r_LZ7lGpw-display-0224",
+      "segment_id": "37r_LZ7lGpw-ja-0081"
+    },
+    {
+      "text": "いる時間帯にですね、仕事止めて雑談し",
+      "start_seconds": 759.76,
+      "end_seconds": 762.8,
+      "id": "37r_LZ7lGpw-display-0225",
+      "segment_id": "37r_LZ7lGpw-ja-0082"
+    },
+    {
+      "text": "といでてもなかなか変わったホテルかなと",
+      "start_seconds": 762.8,
+      "end_seconds": 765.6,
+      "id": "37r_LZ7lGpw-display-0226",
+      "segment_id": "37r_LZ7lGpw-ja-0082"
+    },
+    {
+      "text": "思うんですが、ま、それぐらいこう地域と",
+      "start_seconds": 765.6,
+      "end_seconds": 768.6,
+      "id": "37r_LZ7lGpw-display-0227",
+      "segment_id": "37r_LZ7lGpw-ja-0082"
+    },
+    {
+      "text": "いかにこう向き合うかとか、ま、仲良く",
+      "start_seconds": 768.6,
+      "end_seconds": 771.56,
+      "id": "37r_LZ7lGpw-display-0228",
+      "segment_id": "37r_LZ7lGpw-ja-0082"
+    },
+    {
+      "text": "なるかっていうところに、ま、重きを置い",
+      "start_seconds": 771.56,
+      "end_seconds": 773.88,
+      "id": "37r_LZ7lGpw-display-0229",
+      "segment_id": "37r_LZ7lGpw-ja-0083"
+    },
+    {
+      "text": "ております。",
+      "start_seconds": 773.88,
+      "end_seconds": 776.839,
+      "id": "37r_LZ7lGpw-display-0230",
+      "segment_id": "37r_LZ7lGpw-ja-0083"
+    },
+    {
+      "text": "ま、おかげでですね、ま、何でしょう。",
+      "start_seconds": 776.839,
+      "end_seconds": 779.279,
+      "id": "37r_LZ7lGpw-display-0231",
+      "segment_id": "37r_LZ7lGpw-ja-0084"
+    },
+    {
+      "text": "地域と一体になってきた感情もものすごく",
+      "start_seconds": 779.279,
+      "end_seconds": 781.8,
+      "id": "37r_LZ7lGpw-display-0232",
+      "segment_id": "37r_LZ7lGpw-ja-0085"
+    },
+    {
+      "text": "ありまして、ま、こういった写真に映っ",
+      "start_seconds": 781.8,
+      "end_seconds": 784.44,
+      "id": "37r_LZ7lGpw-display-0233",
+      "segment_id": "37r_LZ7lGpw-ja-0085"
+    },
+    {
+      "text": "てるようなコミュニケーションのシーン",
+      "start_seconds": 784.44,
+      "end_seconds": 786.32,
+      "id": "37r_LZ7lGpw-display-0234",
+      "segment_id": "37r_LZ7lGpw-ja-0085"
+    },
+    {
+      "text": "もう毎日ありますし、ま、例えばこう",
+      "start_seconds": 786.32,
+      "end_seconds": 791.68,
+      "id": "37r_LZ7lGpw-display-0235",
+      "segment_id": "37r_LZ7lGpw-ja-0086"
+    },
+    {
+      "text": "ホテルに行く道が分からないうちのお客",
+      "start_seconds": 791.68,
+      "end_seconds": 794.76,
+      "id": "37r_LZ7lGpw-display-0236",
+      "segment_id": "37r_LZ7lGpw-ja-0086"
+    },
+    {
+      "text": "さんをですね、世界ホテル探してんねやろ",
+      "start_seconds": 794.76,
+      "end_seconds": 797.72,
+      "id": "37r_LZ7lGpw-display-0237",
+      "segment_id": "37r_LZ7lGpw-ja-0086"
+    },
+    {
+      "text": "とこう連れてきてくれる方もいらっしゃい",
+      "start_seconds": 797.72,
+      "end_seconds": 800.6,
+      "id": "37r_LZ7lGpw-display-0238",
+      "segment_id": "37r_LZ7lGpw-ja-0087"
+    },
+    {
+      "text": "ますし、例えばお寿司屋さんのカウンター",
+      "start_seconds": 800.6,
+      "end_seconds": 804.36,
+      "id": "37r_LZ7lGpw-display-0239",
+      "segment_id": "37r_LZ7lGpw-ja-0087"
+    },
+    {
+      "text": "席で隣同士になった、ま、うちのお客さん",
+      "start_seconds": 804.36,
+      "end_seconds": 807.92,
+      "id": "37r_LZ7lGpw-display-0240",
+      "segment_id": "37r_LZ7lGpw-ja-0087"
+    },
+    {
+      "text": "と隣同士になった方がいっぱい奢るのが",
+      "start_seconds": 807.92,
+      "end_seconds": 811.279,
+      "id": "37r_LZ7lGpw-display-0241",
+      "segment_id": "37r_LZ7lGpw-ja-0088"
+    },
+    {
+      "text": "ちょっとした趣味になってきた寿司屋さん",
+      "start_seconds": 811.279,
+      "end_seconds": 813.72,
+      "id": "37r_LZ7lGpw-display-0242",
+      "segment_id": "37r_LZ7lGpw-ja-0088"
+    },
+    {
+      "text": "の常連客の方もいらっしゃいますし、ま、",
+      "start_seconds": 813.72,
+      "end_seconds": 817.76,
+      "id": "37r_LZ7lGpw-display-0243",
+      "segment_id": "37r_LZ7lGpw-ja-0088"
+    },
+    {
+      "text": "いろんな場面でですね、[鼻息]",
+      "start_seconds": 817.76,
+      "end_seconds": 820.8,
+      "id": "37r_LZ7lGpw-display-0244",
+      "segment_id": "37r_LZ7lGpw-ja-0089"
+    },
+    {
+      "text": "ま、世界ホテルと地域が一体となって観光",
+      "start_seconds": 820.8,
+      "end_seconds": 823.72,
+      "id": "37r_LZ7lGpw-display-0245",
+      "segment_id": "37r_LZ7lGpw-ja-0089"
+    },
+    {
+      "text": "客をお迎えしている、ま、こんな場面も",
+      "start_seconds": 823.72,
+      "end_seconds": 827.16,
+      "id": "37r_LZ7lGpw-display-0246",
+      "segment_id": "37r_LZ7lGpw-ja-0089"
+    },
+    {
+      "text": "多々見られます。",
+      "start_seconds": 827.16,
+      "end_seconds": 830.56,
+      "id": "37r_LZ7lGpw-display-0247",
+      "segment_id": "37r_LZ7lGpw-ja-0090"
+    },
+    {
+      "text": "で、僕自身世界ホテル始める時に",
+      "start_seconds": 830.56,
+      "end_seconds": 834.759,
+      "id": "37r_LZ7lGpw-display-0248",
+      "segment_id": "37r_LZ7lGpw-ja-0091"
+    },
+    {
+      "text": "観光客と地域の人が、ま、そんな風に接点",
+      "start_seconds": 834.759,
+      "end_seconds": 838.079,
+      "id": "37r_LZ7lGpw-display-0249",
+      "segment_id": "37r_LZ7lGpw-ja-0091"
+    },
+    {
+      "text": "持ってくれたらすごく素敵だなと思って",
+      "start_seconds": 838.079,
+      "end_seconds": 842.44,
+      "id": "37r_LZ7lGpw-display-0250",
+      "segment_id": "37r_LZ7lGpw-ja-0091"
+    },
+    {
+      "text": "始めたんですけども、ま、今では僕自身も",
+      "start_seconds": 842.44,
+      "end_seconds": 846.12,
+      "id": "37r_LZ7lGpw-display-0251",
+      "segment_id": "37r_LZ7lGpw-ja-0092"
+    },
+    {
+      "text": "知らない、顔も名前も知らない方々がです",
+      "start_seconds": 846.12,
+      "end_seconds": 848.44,
+      "id": "37r_LZ7lGpw-display-0252",
+      "segment_id": "37r_LZ7lGpw-ja-0092"
+    },
+    {
+      "text": "ね、そういう風に街で観光客と接している",
+      "start_seconds": 848.44,
+      "end_seconds": 851.759,
+      "id": "37r_LZ7lGpw-display-0253",
+      "segment_id": "37r_LZ7lGpw-ja-0092"
+    },
+    {
+      "text": "と聞いて、ま、たまらなく嬉しい。ま、",
+      "start_seconds": 851.759,
+      "end_seconds": 855.04,
+      "id": "37r_LZ7lGpw-display-0254",
+      "segment_id": "37r_LZ7lGpw-ja-0093"
+    },
+    {
+      "text": "そう毎日思っております。",
+      "start_seconds": 855.04,
+      "end_seconds": 858.714,
+      "id": "37r_LZ7lGpw-display-0255",
+      "segment_id": "37r_LZ7lGpw-ja-0093"
+    },
+    {
+      "text": "[鼻息]で、今映しているこの絵なんです",
+      "start_seconds": 858.714,
+      "end_seconds": 861.36,
+      "id": "37r_LZ7lGpw-display-0256",
+      "segment_id": "37r_LZ7lGpw-ja-0094"
+    },
+    {
+      "text": "けど、こう世界ホテル始めるって決めた時",
+      "start_seconds": 861.36,
+      "end_seconds": 863.68,
+      "id": "37r_LZ7lGpw-display-0257",
+      "segment_id": "37r_LZ7lGpw-ja-0094"
+    },
+    {
+      "text": "にこう事業計画書より先に友人に書いて",
+      "start_seconds": 863.68,
+      "end_seconds": 867.56,
+      "id": "37r_LZ7lGpw-display-0258",
+      "segment_id": "37r_LZ7lGpw-ja-0094"
+    },
+    {
+      "text": "いただいた1つの絵なんですが、ここには",
+      "start_seconds": 867.56,
+      "end_seconds": 870.72,
+      "id": "37r_LZ7lGpw-display-0259",
+      "segment_id": "37r_LZ7lGpw-ja-0095"
+    },
+    {
+      "text": "お祭りの夜が書いてありまして、ここに出",
+      "start_seconds": 870.72,
+      "end_seconds": 874.24,
+      "id": "37r_LZ7lGpw-display-0260",
+      "segment_id": "37r_LZ7lGpw-ja-0095"
+    },
+    {
+      "text": "てくる人ってこう国籍も年齢も関係なく",
+      "start_seconds": 874.24,
+      "end_seconds": 878.24,
+      "id": "37r_LZ7lGpw-display-0261",
+      "segment_id": "37r_LZ7lGpw-ja-0095"
+    },
+    {
+      "text": "みんなお祭りの夜でワクワクしていて、",
+      "start_seconds": 878.24,
+      "end_seconds": 881.0,
+      "id": "37r_LZ7lGpw-display-0262",
+      "segment_id": "37r_LZ7lGpw-ja-0096"
+    },
+    {
+      "text": "みんな他人に優しくしているという、ま、",
+      "start_seconds": 881.0,
+      "end_seconds": 883.68,
+      "id": "37r_LZ7lGpw-display-0263",
+      "segment_id": "37r_LZ7lGpw-ja-0096"
+    },
+    {
+      "text": "そんなシーンが書いてあって、ま、ここ",
+      "start_seconds": 883.68,
+      "end_seconds": 886.88,
+      "id": "37r_LZ7lGpw-display-0264",
+      "segment_id": "37r_LZ7lGpw-ja-0096"
+    },
+    {
+      "text": "から世界ホテル始まったんですけども今で",
+      "start_seconds": 886.88,
+      "end_seconds": 890.0,
+      "id": "37r_LZ7lGpw-display-0265",
+      "segment_id": "37r_LZ7lGpw-ja-0096"
+    },
+    {
+      "text": "は街中にこんなシーンが広がっていると、",
+      "start_seconds": 890.0,
+      "end_seconds": 894.36,
+      "id": "37r_LZ7lGpw-display-0266",
+      "segment_id": "37r_LZ7lGpw-ja-0097"
+    },
+    {
+      "text": "もう本当に分け隔立てない幸せが広がって",
+      "start_seconds": 894.36,
+      "end_seconds": 897.68,
+      "id": "37r_LZ7lGpw-display-0267",
+      "segment_id": "37r_LZ7lGpw-ja-0097"
+    },
+    {
+      "text": "いる。ま、そんなホテルになってきました",
+      "start_seconds": 897.68,
+      "end_seconds": 900.48,
+      "id": "37r_LZ7lGpw-display-0268",
+      "segment_id": "37r_LZ7lGpw-ja-0097"
+    },
+    {
+      "text": "。",
+      "start_seconds": 900.48,
+      "end_seconds": 902.199,
+      "id": "37r_LZ7lGpw-display-0269",
+      "segment_id": "37r_LZ7lGpw-ja-0098"
+    },
+    {
+      "text": "で、コロナとか色々あったんですけども、",
+      "start_seconds": 902.199,
+      "end_seconds": 904.8,
+      "id": "37r_LZ7lGpw-display-0270",
+      "segment_id": "37r_LZ7lGpw-ja-0099"
+    },
+    {
+      "text": "ま、去年いよいよ1年間で1万人まして、",
+      "start_seconds": 904.8,
+      "end_seconds": 910.46,
+      "id": "37r_LZ7lGpw-display-0271",
+      "segment_id": "37r_LZ7lGpw-ja-0099"
+    },
+    {
+      "text": "[鼻息]",
+      "start_seconds": 910.46,
+      "end_seconds": 911.199,
+      "id": "37r_LZ7lGpw-display-0272",
+      "segment_id": "37r_LZ7lGpw-ja-0099"
+    },
+    {
+      "text": "有名観光地じゃなかった、ただの商店街に",
+      "start_seconds": 911.199,
+      "end_seconds": 915.079,
+      "id": "37r_LZ7lGpw-display-0273",
+      "segment_id": "37r_LZ7lGpw-ja-0100"
+    },
+    {
+      "text": "1万人という、こう異業を成し遂けてです",
+      "start_seconds": 915.079,
+      "end_seconds": 918.16,
+      "id": "37r_LZ7lGpw-display-0274",
+      "segment_id": "37r_LZ7lGpw-ja-0100"
+    },
+    {
+      "text": "ね、こうますます盛り上がりを見せてきて",
+      "start_seconds": 918.16,
+      "end_seconds": 920.6,
+      "id": "37r_LZ7lGpw-display-0275",
+      "segment_id": "37r_LZ7lGpw-ja-0100"
+    },
+    {
+      "text": "いる、ま、そんなタイミングです。",
+      "start_seconds": 920.6,
+      "end_seconds": 924.399,
+      "id": "37r_LZ7lGpw-display-0276",
+      "segment_id": "37r_LZ7lGpw-ja-0101"
+    },
+    {
+      "text": "では、ま、僕自身どんな価値観を大事にし",
+      "start_seconds": 924.399,
+      "end_seconds": 928.24,
+      "id": "37r_LZ7lGpw-display-0277",
+      "segment_id": "37r_LZ7lGpw-ja-0102"
+    },
+    {
+      "text": "ているかというのがですね、ま、かっこ",
+      "start_seconds": 928.24,
+      "end_seconds": 930.6,
+      "id": "37r_LZ7lGpw-display-0278",
+      "segment_id": "37r_LZ7lGpw-ja-0102"
+    },
+    {
+      "text": "いいかどうかです。しかもこれ、あの格好",
+      "start_seconds": 930.6,
+      "end_seconds": 934.44,
+      "id": "37r_LZ7lGpw-display-0279",
+      "segment_id": "37r_LZ7lGpw-ja-0102"
+    },
+    {
+      "text": "って漢字で書くと変で書くんですけど、ま",
+      "start_seconds": 934.44,
+      "end_seconds": 937.319,
+      "id": "37r_LZ7lGpw-display-0280",
+      "segment_id": "37r_LZ7lGpw-ja-0103"
+    },
+    {
+      "text": "、うちの会社、うちのチームではこの立弁",
+      "start_seconds": 937.319,
+      "end_seconds": 940.079,
+      "id": "37r_LZ7lGpw-display-0281",
+      "segment_id": "37r_LZ7lGpw-ja-0103"
+    },
+    {
+      "text": "で書くあかよしというのをみんなの共通",
+      "start_seconds": 940.079,
+      "end_seconds": 943.16,
+      "id": "37r_LZ7lGpw-display-0282",
+      "segment_id": "37r_LZ7lGpw-ja-0103"
+    },
+    {
+      "text": "言語としております。ま、ちょうどいい様",
+      "start_seconds": 943.16,
+      "end_seconds": 947.24,
+      "id": "37r_LZ7lGpw-display-0283",
+      "segment_id": "37r_LZ7lGpw-ja-0104"
+    },
+    {
+      "text": "、誠に具合がいい様子という意味なので、",
+      "start_seconds": 947.24,
+      "end_seconds": 951.04,
+      "id": "37r_LZ7lGpw-display-0284",
+      "segment_id": "37r_LZ7lGpw-ja-0104"
+    },
+    {
+      "text": "こうより派手にしようとか、より大きく",
+      "start_seconds": 951.04,
+      "end_seconds": 953.959,
+      "id": "37r_LZ7lGpw-display-0285",
+      "segment_id": "37r_LZ7lGpw-ja-0104"
+    },
+    {
+      "text": "しようというような発想ではなく、ここが",
+      "start_seconds": 953.959,
+      "end_seconds": 957.04,
+      "id": "37r_LZ7lGpw-display-0286",
+      "segment_id": "37r_LZ7lGpw-ja-0105"
+    },
+    {
+      "text": "ちょうどいい、ここがちょうどいい具合な",
+      "start_seconds": 957.04,
+      "end_seconds": 959.16,
+      "id": "37r_LZ7lGpw-display-0287",
+      "segment_id": "37r_LZ7lGpw-ja-0105"
+    },
+    {
+      "text": "んだっていうのを考え続ける、ま、そんな",
+      "start_seconds": 959.16,
+      "end_seconds": 962.399,
+      "id": "37r_LZ7lGpw-display-0288",
+      "segment_id": "37r_LZ7lGpw-ja-0105"
+    },
+    {
+      "text": "プロフェッショナルチームを目指しての",
+      "start_seconds": 962.399,
+      "end_seconds": 964.56,
+      "id": "37r_LZ7lGpw-display-0289",
+      "segment_id": "37r_LZ7lGpw-ja-0105"
+    },
+    {
+      "text": "このよしでもあります。",
+      "start_seconds": 964.56,
+      "end_seconds": 968.519,
+      "id": "37r_LZ7lGpw-display-0290",
+      "segment_id": "37r_LZ7lGpw-ja-0106"
+    },
+    {
+      "text": "こう2次的な効果もありまして、疑うよう",
+      "start_seconds": 968.519,
+      "end_seconds": 972.399,
+      "id": "37r_LZ7lGpw-display-0291",
+      "segment_id": "37r_LZ7lGpw-ja-0107"
+    },
+    {
+      "text": "にもなってくるんですね。",
+      "start_seconds": 972.399,
+      "end_seconds": 975.16,
+      "id": "37r_LZ7lGpw-display-0292",
+      "segment_id": "37r_LZ7lGpw-ja-0107"
+    },
+    {
+      "text": "世間一般的にはこれが良しとされている。",
+      "start_seconds": 975.16,
+      "end_seconds": 978.36,
+      "id": "37r_LZ7lGpw-display-0293",
+      "segment_id": "37r_LZ7lGpw-ja-0108"
+    },
+    {
+      "text": "今これが流行りだとかいうことに関しても",
+      "start_seconds": 978.36,
+      "end_seconds": 982.279,
+      "id": "37r_LZ7lGpw-display-0294",
+      "segment_id": "37r_LZ7lGpw-ja-0109"
+    },
+    {
+      "text": "本当にそれでいいのかというような疑うと",
+      "start_seconds": 982.279,
+      "end_seconds": 986.16,
+      "id": "37r_LZ7lGpw-display-0295",
+      "segment_id": "37r_LZ7lGpw-ja-0109"
+    },
+    {
+      "text": "いうか考え直す感性も育ててくれています",
+      "start_seconds": 986.16,
+      "end_seconds": 989.519,
+      "id": "37r_LZ7lGpw-display-0296",
+      "segment_id": "37r_LZ7lGpw-ja-0109"
+    },
+    {
+      "text": "。",
+      "start_seconds": 989.519,
+      "end_seconds": 991.56,
+      "id": "37r_LZ7lGpw-display-0297",
+      "segment_id": "37r_LZ7lGpw-ja-0110"
+    },
+    {
+      "text": "ま、世界ホテルいろんなとこで取り上げ",
+      "start_seconds": 991.56,
+      "end_seconds": 993.36,
+      "id": "37r_LZ7lGpw-display-0298",
+      "segment_id": "37r_LZ7lGpw-ja-0111"
+    },
+    {
+      "text": "られていますが、今珍しくて取り上げ",
+      "start_seconds": 993.36,
+      "end_seconds": 996.68,
+      "id": "37r_LZ7lGpw-display-0299",
+      "segment_id": "37r_LZ7lGpw-ja-0111"
+    },
+    {
+      "text": "られるんじゃなくって、100年後も続く",
+      "start_seconds": 996.68,
+      "end_seconds": 999.44,
+      "id": "37r_LZ7lGpw-display-0300",
+      "segment_id": "37r_LZ7lGpw-ja-0111"
+    },
+    {
+      "text": "ようなこう本当にかっこいいって何だろ",
+      "start_seconds": 999.44,
+      "end_seconds": 1002.079,
+      "id": "37r_LZ7lGpw-display-0301",
+      "segment_id": "37r_LZ7lGpw-ja-0111"
+    },
+    {
+      "text": "うってことをスタッフも考えてくれてます",
+      "start_seconds": 1002.079,
+      "end_seconds": 1005.0,
+      "id": "37r_LZ7lGpw-display-0302",
+      "segment_id": "37r_LZ7lGpw-ja-0112"
+    },
+    {
+      "text": "。ま、長持ちする",
+      "start_seconds": 1005.0,
+      "end_seconds": 1008.199,
+      "id": "37r_LZ7lGpw-display-0303",
+      "segment_id": "37r_LZ7lGpw-ja-0112"
+    },
+    {
+      "text": "かっこいい高しというのは、ま、実は",
+      "start_seconds": 1008.199,
+      "end_seconds": 1011.24,
+      "id": "37r_LZ7lGpw-display-0304",
+      "segment_id": "37r_LZ7lGpw-ja-0112"
+    },
+    {
+      "text": "めんどくさい作業の連続なんじゃないかな",
+      "start_seconds": 1011.24,
+      "end_seconds": 1013.319,
+      "id": "37r_LZ7lGpw-display-0305",
+      "segment_id": "37r_LZ7lGpw-ja-0112"
+    },
+    {
+      "text": "という風に考えています。",
+      "start_seconds": 1013.319,
+      "end_seconds": 1017.839,
+      "id": "37r_LZ7lGpw-display-0306",
+      "segment_id": "37r_LZ7lGpw-ja-0113"
+    },
+    {
+      "text": "もしですね、人生で迷ったら損か得か",
+      "start_seconds": 1017.839,
+      "end_seconds": 1023.319,
+      "id": "37r_LZ7lGpw-display-0307",
+      "segment_id": "37r_LZ7lGpw-ja-0114"
+    },
+    {
+      "text": "正しいか正しくないかではなく、こう",
+      "start_seconds": 1023.319,
+      "end_seconds": 1027.72,
+      "id": "37r_LZ7lGpw-display-0308",
+      "segment_id": "37r_LZ7lGpw-ja-0114"
+    },
+    {
+      "text": "かっこいいかっこよくないかで選んで",
+      "start_seconds": 1027.72,
+      "end_seconds": 1029.839,
+      "id": "37r_LZ7lGpw-display-0309",
+      "segment_id": "37r_LZ7lGpw-ja-0114"
+    },
+    {
+      "text": "くださいと。ま、よく若い世代とか卒業し",
+      "start_seconds": 1029.839,
+      "end_seconds": 1034.079,
+      "id": "37r_LZ7lGpw-display-0310",
+      "segment_id": "37r_LZ7lGpw-ja-0115"
+    },
+    {
+      "text": "ていく人に僕あのメッセージを送るんです",
+      "start_seconds": 1034.079,
+      "end_seconds": 1035.919,
+      "id": "37r_LZ7lGpw-display-0311",
+      "segment_id": "37r_LZ7lGpw-ja-0115"
+    },
+    {
+      "text": "けども、",
+      "start_seconds": 1035.919,
+      "end_seconds": 1037.919,
+      "id": "37r_LZ7lGpw-display-0312",
+      "segment_id": "37r_LZ7lGpw-ja-0115"
+    },
+    {
+      "text": "大体かっこいい方ってめちゃくちゃめんど",
+      "start_seconds": 1037.919,
+      "end_seconds": 1039.679,
+      "id": "37r_LZ7lGpw-display-0313",
+      "segment_id": "37r_LZ7lGpw-ja-0115"
+    },
+    {
+      "text": "くさいんですよね。",
+      "start_seconds": 1039.679,
+      "end_seconds": 1042.16,
+      "id": "37r_LZ7lGpw-display-0314",
+      "segment_id": "37r_LZ7lGpw-ja-0116"
+    },
+    {
+      "text": "ま、僕自身も経営者として手札が全然足ら",
+      "start_seconds": 1042.16,
+      "end_seconds": 1045.6,
+      "id": "37r_LZ7lGpw-display-0315",
+      "segment_id": "37r_LZ7lGpw-ja-0117"
+    },
+    {
+      "text": "ないなと",
+      "start_seconds": 1045.6,
+      "end_seconds": 1047.72,
+      "id": "37r_LZ7lGpw-display-0316",
+      "segment_id": "37r_LZ7lGpw-ja-0117"
+    },
+    {
+      "text": "痛感することが多いんですが、ま、一方で",
+      "start_seconds": 1047.72,
+      "end_seconds": 1050.84,
+      "id": "37r_LZ7lGpw-display-0317",
+      "segment_id": "37r_LZ7lGpw-ja-0117"
+    },
+    {
+      "text": "誰よりもめんどくさいことをやり切って",
+      "start_seconds": 1050.84,
+      "end_seconds": 1053.6,
+      "id": "37r_LZ7lGpw-display-0318",
+      "segment_id": "37r_LZ7lGpw-ja-0117"
+    },
+    {
+      "text": "いるという自付もあります。ま、是非皆",
+      "start_seconds": 1053.6,
+      "end_seconds": 1057.36,
+      "id": "37r_LZ7lGpw-display-0319",
+      "segment_id": "37r_LZ7lGpw-ja-0118"
+    },
+    {
+      "text": "さんも、ま、過去振り返ってちょっと面倒",
+      "start_seconds": 1057.36,
+      "end_seconds": 1060.44,
+      "id": "37r_LZ7lGpw-display-0320",
+      "segment_id": "37r_LZ7lGpw-ja-0118"
+    },
+    {
+      "text": "だなと思って諦めたことがあれば、ま、",
+      "start_seconds": 1060.44,
+      "end_seconds": 1062.28,
+      "id": "37r_LZ7lGpw-display-0321",
+      "segment_id": "37r_LZ7lGpw-ja-0118"
+    },
+    {
+      "text": "一度考え直していただきたいですし、ま、",
+      "start_seconds": 1062.28,
+      "end_seconds": 1065.44,
+      "id": "37r_LZ7lGpw-display-0322",
+      "segment_id": "37r_LZ7lGpw-ja-0118"
+    },
+    {
+      "text": "そういった1人1人がこう何かをやりきる",
+      "start_seconds": 1065.44,
+      "end_seconds": 1069.48,
+      "id": "37r_LZ7lGpw-display-0323",
+      "segment_id": "37r_LZ7lGpw-ja-0119"
+    },
+    {
+      "text": "姿を持って、え、若い世代からかっこいい",
+      "start_seconds": 1069.48,
+      "end_seconds": 1073.08,
+      "id": "37r_LZ7lGpw-display-0324",
+      "segment_id": "37r_LZ7lGpw-ja-0119"
+    },
+    {
+      "text": "なと思われる大人が1人でも増えていく。",
+      "start_seconds": 1073.08,
+      "end_seconds": 1075.96,
+      "id": "37r_LZ7lGpw-display-0325",
+      "segment_id": "37r_LZ7lGpw-ja-0119"
+    },
+    {
+      "text": "ま、そんな世界を僕自身は切に願っており",
+      "start_seconds": 1075.96,
+      "end_seconds": 1079.919,
+      "id": "37r_LZ7lGpw-display-0326",
+      "segment_id": "37r_LZ7lGpw-ja-0120"
+    },
+    {
+      "text": "ます。以上です。ありがとうございます。",
+      "start_seconds": 1079.919,
+      "end_seconds": 1084.037,
+      "id": "37r_LZ7lGpw-display-0327",
+      "segment_id": "37r_LZ7lGpw-ja-0120"
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 1084.037,
+      "end_seconds": 1086.057,
+      "id": "37r_LZ7lGpw-display-0328",
+      "segment_id": "37r_LZ7lGpw-ja-0121"
+    }
+  ]
+}

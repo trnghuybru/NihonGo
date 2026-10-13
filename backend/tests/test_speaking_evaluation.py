@@ -229,28 +229,57 @@ class EvaluationTests(unittest.TestCase):
     def test_provider_payload_excludes_private_context_and_audio(self):
         _, messages = self.conversation()
         transcript = [{"message_id": item.id, "speaker": "user", "input_mode": "voice", "content": item.content} for item in messages]
-        with patch.dict(os.environ, {"OPENROUTER_API_KEY": "test-secret", "SPEAKING_EVALUATION_FORMAT": "text"}), patch("speaking.evaluation_ai.requests.post") as provider:
+        with patch.dict(os.environ, {"GEMINI_API_KEY": "test-secret"}), patch("speaking.evaluation_ai.requests.post") as provider:
             response = provider.return_value.__enter__.return_value
             response.status_code = 200
-            response.json.return_value = {"choices": [{"message": {"content": json.dumps(self.result(messages))}}]}
+            response.json.return_value = {"candidates": [{"finishReason": "STOP", "content": {"parts": [{"text": json.dumps(self.result(messages))}]}}]}
             generate_evaluation({"title": "Test", "role": {"name": "Aoi", "ai_instructions": "PRIVATE ROLE"}, "audio": "PRIVATE AUDIO"}, transcript)
             body = provider.call_args.kwargs["json"]
             self.assertNotIn("PRIVATE", json.dumps(body))
             self.assertNotIn("test-secret", json.dumps(body))
-            self.assertIn("Never assess or infer pronunciation", body["messages"][0]["content"])
-            self.assertEqual(json.loads(body["messages"][1]["content"])["transcript"], transcript)
+            self.assertIn("Never assess or infer pronunciation", body["systemInstruction"]["parts"][0]["text"])
+            self.assertEqual(json.loads(body["contents"][0]["parts"][0]["text"])["transcript"], transcript)
+            self.assertTrue(provider.call_args.args[0].startswith('https://generativelanguage.googleapis.com/'))
+            self.assertEqual(provider.call_args.kwargs['headers']['x-goog-api-key'], 'test-secret')
+            self.assertNotIn('Authorization', provider.call_args.kwargs['headers'])
+            self.assertEqual(body['generationConfig']['responseMimeType'], 'application/json')
+
+    def test_gemini_key_and_model_configuration(self):
+        from speaking.evaluation_ai import evaluation_model
+        with patch.dict(os.environ, {'GEMINI_API_KEY': '', 'SPEAKING_EVALUATION_MODEL': ''}):
+            self.assertEqual(evaluation_model(), 'gemini-3.1-flash-lite')
+            with patch('speaking.evaluation_ai.requests.post') as provider, self.assertRaises(ApiError) as failure:
+                generate_evaluation({}, [])
+            self.assertEqual(failure.exception.code, 'evaluation_unavailable')
+            provider.assert_not_called()
+        with patch.dict(os.environ, {'GEMINI_API_KEY': 'test-key', 'SPEAKING_EVALUATION_MODEL': 'invalid/model'}):
+            with patch('speaking.evaluation_ai.requests.post') as provider, self.assertRaises(ApiError):
+                generate_evaluation({}, [])
+            provider.assert_not_called()
+
+    def test_gemini_safety_block_is_not_retried_and_thought_parts_are_ignored(self):
+        from speaking.evaluation_ai import provider_content
+        self.assertEqual(provider_content({'candidates': [{'finishReason': 'STOP', 'content': {'parts': [
+            {'thought': True, 'text': 'Private reasoning'}, {'text': '{"result":true}'}]}}]}), '{"result":true}')
+        with patch.dict(os.environ, {'GEMINI_API_KEY': 'test-key', 'SPEAKING_EVALUATION_MODEL': ''}), \
+                patch('speaking.evaluation_ai.requests.post', return_value=self.provider_response(
+                    {'promptFeedback': {'blockReason': 'SAFETY'}})) as provider:
+            with self.assertRaises(ApiError) as failure:
+                generate_evaluation({}, [])
+            self.assertEqual(failure.exception.code, 'evaluation_failed')
+            self.assertEqual(provider.call_count, 1)
 
     def test_provider_timeout_and_malformed_json_are_safe_errors(self):
         _, messages = self.conversation()
         transcript = [{"message_id": item.id, "speaker": "user", "content": item.content} for item in messages]
-        with patch.dict(os.environ, {"OPENROUTER_API_KEY": "test-secret"}), patch("speaking.evaluation_ai.requests.post", side_effect=requests.Timeout):
+        with patch.dict(os.environ, {"GEMINI_API_KEY": "test-secret"}), patch("speaking.evaluation_ai.requests.post", side_effect=requests.Timeout):
             with self.assertRaises(ApiError) as failure:
                 generate_evaluation({}, transcript)
             self.assertEqual(failure.exception.status, 504)
-        with patch.dict(os.environ, {"OPENROUTER_API_KEY": "test-secret"}), patch("speaking.evaluation_ai.requests.post") as provider:
+        with patch.dict(os.environ, {"GEMINI_API_KEY": "test-secret"}), patch("speaking.evaluation_ai.requests.post") as provider:
             response = provider.return_value.__enter__.return_value
             response.status_code = 200
-            response.json.return_value = {"choices": [{"message": {"content": "not json"}}]}
+            response.json.return_value = {"candidates": [{"finishReason": "STOP", "content": {"parts": [{"text": "not json"}]}}]}
             with self.assertRaises(ApiError) as failure:
                 generate_evaluation({}, transcript)
             self.assertEqual(failure.exception.status, 502)
@@ -263,7 +292,7 @@ class EvaluationTests(unittest.TestCase):
         return response
 
     def test_http_200_error_envelope_retries_once_then_returns_provider_error(self):
-        with patch.dict(os.environ, {"OPENROUTER_API_KEY": "test-secret"}), patch("speaking.evaluation_ai.requests.post") as provider:
+        with patch.dict(os.environ, {"GEMINI_API_KEY": "test-secret"}), patch("speaking.evaluation_ai.requests.post") as provider:
             provider.return_value = self.provider_response({"error": {"code": 502, "message": "PRIVATE PROVIDER DETAIL"}})
             with self.assertLogs("speaking.evaluation_ai", level="WARNING") as logs:
                 with self.assertRaises(ApiError) as failure:
@@ -278,9 +307,9 @@ class EvaluationTests(unittest.TestCase):
         _, messages = self.conversation()
         transcript = [{"message_id": item.id, "speaker": "user", "content": item.content} for item in messages]
         expected = self.result(messages)
-        with patch.dict(os.environ, {"OPENROUTER_API_KEY": "test-secret"}), patch("speaking.evaluation_ai.requests.post") as provider:
+        with patch.dict(os.environ, {"GEMINI_API_KEY": "test-secret"}), patch("speaking.evaluation_ai.requests.post") as provider:
             provider.side_effect = [self.provider_response({"error": {"code": 502}}),
-                self.provider_response({"choices": [{"message": {"content": json.dumps(expected)}}]})]
+                self.provider_response({"candidates": [{"finishReason": "STOP", "content": {"parts": [{"text": json.dumps(expected)}]}}]})]
             self.assertEqual(generate_evaluation({}, transcript), expected)
             self.assertEqual(provider.call_count, 2)
 
@@ -301,15 +330,15 @@ class EvaluationTests(unittest.TestCase):
         expected = self.result(messages)
         invalid = copy.deepcopy(expected)
         invalid["items"][0]["original"] = "架空の文"
-        with patch.dict(os.environ, {"OPENROUTER_API_KEY": "test-secret"}), patch("speaking.evaluation_ai.requests.post") as provider:
-            provider.side_effect = [self.provider_response({"choices": [{"message": {"content": json.dumps(value)}}]})
+        with patch.dict(os.environ, {"GEMINI_API_KEY": "test-secret"}), patch("speaking.evaluation_ai.requests.post") as provider:
+            provider.side_effect = [self.provider_response({"candidates": [{"finishReason": "STOP", "content": {"parts": [{"text": json.dumps(value)}]}}]})
                                    for value in (invalid, expected)]
             self.assertEqual(generate_evaluation({}, transcript), expected)
             self.assertEqual(provider.call_count, 2)
-            self.assertIn("Copy message_id", provider.call_args.kwargs["json"]["messages"][-1]["content"])
+            self.assertIn("Copy message_id", provider.call_args.kwargs["json"]["contents"][-1]["parts"][0]["text"])
 
     def test_rate_limit_error_in_http_200_is_not_automatically_retried(self):
-        with patch.dict(os.environ, {"OPENROUTER_API_KEY": "test-secret"}), patch("speaking.evaluation_ai.requests.post") as provider:
+        with patch.dict(os.environ, {"GEMINI_API_KEY": "test-secret"}), patch("speaking.evaluation_ai.requests.post") as provider:
             provider.return_value = self.provider_response({"error": {"code": 429}})
             with self.assertRaises(ApiError) as failure:
                 generate_evaluation({}, [])

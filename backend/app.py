@@ -1,9 +1,8 @@
 import os
-from flask import Flask, jsonify, request, Response, stream_with_context, send_file
+from flask import Flask, jsonify, Response, send_file
 from flask_cors import CORS
 from dotenv import load_dotenv
 
-from services.llm_service import DEFAULT_MODEL, stream_voice_chat, trim_and_manage_context
 from auth import init_auth
 from learning import init_learning
 from speaking import init_speaking
@@ -27,7 +26,7 @@ def index():
     return jsonify({
         "status": "ok",
         "service": "Voice AI Backend",
-        "openrouter_configured": bool(os.getenv("OPENROUTER_API_KEY")),
+        "gemini_configured": bool(os.getenv("GEMINI_API_KEY")),
     })
 
 
@@ -519,56 +518,6 @@ def api_character_view_embedded():
     response.headers["Access-Control-Allow-Origin"] = "*"
     response.headers["Cache-Control"] = "no-store, no-cache, must-revalidate, max-age=0"
     response.headers["Pragma"] = "no-cache"
-    return response
-
-
-@app.post("/api/chat/voice-stream")
-def chat_voice_stream():
-    """
-    Endpoint SSE (Server-Sent Events) dành cho trò chuyện giọng nói.
-    Payload JSON nhận vào:
-      - messages: List[{role: "user" | "assistant", content: string}]
-        HOẶC:
-      - message: string (tin nhắn mới của user)
-      - history: List[...] (lịch sử trò chuyện cũ)
-      - summary: string (tùy chọn - bối cảnh nén từ các lượt đàm thoại trước)
-      - model: string (tùy chọn - mặc định là OPENROUTER_MODEL hoặc DEFAULT_MODEL)
-    """
-    data = request.get_json(silent=True) or {}
-    
-    messages = data.get("messages", [])
-    if not messages:
-        # Hỗ trợ format đơn giản { message: "...", history: [...] }
-        user_message = data.get("message")
-        history = data.get("history", [])
-        if user_message:
-            messages = list(history) + [{"role": "user", "content": user_message}]
-            
-    if not messages:
-        return jsonify({"error": "No messages provided"}), 400
-
-    summary = data.get("summary")
-    model = data.get("model") or os.getenv("OPENROUTER_MODEL") or DEFAULT_MODEL
-    api_key = data.get("api_key")  # Cho phép truyền key từ client nếu cần test
-    level = data.get("level", "N4")
-    topic = data.get("topic", "free_talk")
-    language = data.get("language", "ja-JP")
-
-    generator = stream_voice_chat(
-        messages=messages,
-        summary=summary,
-        api_key=api_key,
-        model=model,
-        level=level,
-        topic=topic,
-        language=language
-    )
-
-    response = Response(stream_with_context(generator), mimetype="text/event-stream")
-    # Headers cần thiết cho SSE và tránh proxy buffer dữ liệu
-    response.headers["Cache-Control"] = "no-cache, no-transform"
-    response.headers["X-Accel-Buffering"] = "no"
-    response.headers["Connection"] = "keep-alive"
     return response
 
 

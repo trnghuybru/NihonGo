@@ -544,23 +544,22 @@ class SpeakingTests(unittest.TestCase):
         db.session.commit()
         response = MagicMock()
         response.__enter__.return_value = response
-        response.json.return_value = {"choices": [{"message": {"content": "はい、どうぞ。"}}]}
-        with patch.dict(os.environ, {"OPENROUTER_API_KEY": "server-key", "OPENROUTER_MODEL": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free"}), \
+        response.json.return_value = {"candidates": [{"finishReason": "STOP", "content": {"parts": [{"text": "はい、どうぞ。"}]}}]}
+        with patch.dict(os.environ, {"GEMINI_API_KEY": "server-key", "GEMINI_CHAT_MODEL": "gemini-3.1-flash-lite"}), \
                 patch("speaking.ai.requests.post", return_value=response) as post:
             for index in range(4):
                 reply = self.turn(session_id, {"request_id": str(uuid.uuid4()),
                                  "content": f"質問{index}", "input_mode": "text"})
                 self.assertEqual(reply.status_code, 200, reply.json)
         payload = post.call_args.kwargs["json"]
-        prompt = payload["messages"][0]
-        self.assertEqual(prompt["role"], "system")
+        prompt = payload["systemInstruction"]["parts"][0]
         for value in ("Làm quen", "Bối cảnh", "Mục tiêu", "Bạn cùng lớp", "PRIVATE PROMPT", "N5", "ja-JP"):
-            self.assertIn(value, prompt["content"])
-        self.assertNotIn("CHANGED CONTEXT", prompt["content"])
-        self.assertNotIn("CHANGED ROLE", prompt["content"])
-        self.assertEqual(payload["reasoning"]["enabled"], False)
-        self.assertEqual(len(payload["messages"]), 7)  # System + six recent messages.
-        self.assertEqual(payload["messages"][-1], {"role": "user", "content": "質問3"})
+            self.assertIn(value, prompt["text"])
+        self.assertNotIn("CHANGED CONTEXT", prompt["text"])
+        self.assertNotIn("CHANGED ROLE", prompt["text"])
+        self.assertEqual(payload["generationConfig"]["thinkingConfig"], {"thinkingLevel": "minimal"})
+        self.assertEqual(len(payload["contents"]), 6)  # Six recent messages.
+        self.assertEqual(payload["contents"][-1], {"role": "user", "parts": [{"text": "質問3"}]})
         # The context bound must not truncate the persisted transcript.
         self.assertEqual(len(self.get(f"/api/speaking/sessions/{session_id}/messages").json["items"]), 9)
 
@@ -598,7 +597,7 @@ class SpeakingTests(unittest.TestCase):
         data = {"request_id": str(uuid.uuid4()), "content": "こんにちは", "input_mode": "text"}
         response = MagicMock(status_code=429, headers={"Retry-After": "18"})
         response.__enter__.return_value = response
-        with patch.dict(os.environ, {"OPENROUTER_API_KEY": "server-key"}), \
+        with patch.dict(os.environ, {"GEMINI_API_KEY": "server-key"}), \
                 patch("speaking.ai.requests.post", return_value=response):
             failure = self.turn(session_id, data)
         self.assertEqual(failure.status_code, 429)

@@ -1,0 +1,3129 @@
+{
+  "schema_version": 1,
+  "video": {
+    "youtube_id": "ZYzg1Es67QY",
+    "title": "Overcoming Life's \"Static Friction\" | Move Toward What Excites You | AKIHIRO MATSUZAKI | TEDxNagoyaU",
+    "channel": "TEDx Talks",
+    "duration_seconds": 762
+  },
+  "caption_track": {
+    "language": "ja",
+    "kind": "asr",
+    "source": "youtube_automatic"
+  },
+  "source_playlist": "https://www.youtube.com/playlist?list=PLsRNoUx8w3rOHjXIU5EE4KOiIagv9yQaG",
+  "fetched_at": "2026-10-13T13:24:27.766635+00:00",
+  "segment_count": 94,
+  "segments": [
+    {
+      "text": "物理教師がなぜビールを作っているのか。",
+      "start_seconds": 11.0,
+      "end_seconds": 16.76,
+      "id": "ZYzg1Es67QY-ja-0001",
+      "sequence": 1
+    },
+    {
+      "text": "皆さんは私が教室で授業してる姿と上造所で瓶にラベルを貼ってる姿、どちらが本当",
+      "start_seconds": 16.76,
+      "end_seconds": 26.56,
+      "id": "ZYzg1Es67QY-ja-0002",
+      "sequence": 2
+    },
+    {
+      "text": "の私だと思いますか?",
+      "start_seconds": 26.56,
+      "end_seconds": 29.84,
+      "id": "ZYzg1Es67QY-ja-0003",
+      "sequence": 3
+    },
+    {
+      "text": "最近我々の活動をメディアに取り上げていただく機会が増えました。そこでは我々の活動が熱意ある教員による教育会の枠を",
+      "start_seconds": 29.84,
+      "end_seconds": 41.48,
+      "id": "ZYzg1Es67QY-ja-0004",
+      "sequence": 4
+    },
+    {
+      "text": "超えた片破りな挑戦という文脈で紹介されます。",
+      "start_seconds": 41.48,
+      "end_seconds": 47.719,
+      "id": "ZYzg1Es67QY-ja-0005",
+      "sequence": 5
+    },
+    {
+      "text": "きっかけは3年前。",
+      "start_seconds": 47.719,
+      "end_seconds": 51.16,
+      "id": "ZYzg1Es67QY-ja-0006",
+      "sequence": 6
+    },
+    {
+      "text": "それまで教員がほとんど行くことがなかった学校OBの講演会に",
+      "start_seconds": 51.16,
+      "end_seconds": 58.879,
+      "id": "ZYzg1Es67QY-ja-0007",
+      "sequence": 7
+    },
+    {
+      "text": "私1人で参加したことです。",
+      "start_seconds": 58.879,
+      "end_seconds": 63.28,
+      "id": "ZYzg1Es67QY-ja-0008",
+      "sequence": 8
+    },
+    {
+      "text": "これから新規企業が重要になってくるという話だったんですが、そこで私は手を上げて質問しました。",
+      "start_seconds": 63.28,
+      "end_seconds": 73.479,
+      "id": "ZYzg1Es67QY-ja-0009",
+      "sequence": 9
+    },
+    {
+      "text": "大学発電はよく聞きますが、中学生や高校生が何かできることはありませんか?",
+      "start_seconds": 73.479,
+      "end_seconds": 81.52,
+      "id": "ZYzg1Es67QY-ja-0010",
+      "sequence": 10
+    },
+    {
+      "text": "その質問きっかけに学校でも講演をしていただくことになり、学内に有資団体を立ち上げ、その活動の中",
+      "start_seconds": 81.52,
+      "end_seconds": 91.759,
+      "id": "ZYzg1Es67QY-ja-0011",
+      "sequence": 11
+    },
+    {
+      "text": "でドラゴンゲートというビジネスコンテストに参加しました。そしてなんと我々教員チームが優勝し金",
+      "start_seconds": 91.759,
+      "end_seconds": 103.28,
+      "id": "ZYzg1Es67QY-ja-0012",
+      "sequence": 12
+    },
+    {
+      "text": "100万円をいただくことができたんです。優勝できて良かったね。",
+      "start_seconds": 103.28,
+      "end_seconds": 109.88,
+      "id": "ZYzg1Es67QY-ja-0013",
+      "sequence": 13
+    },
+    {
+      "text": "なんて言いながらそこでこの話をおしまいにすることもできたんですが、我々はその後もビジネスプランを磨きつつ書類を整え",
+      "start_seconds": 109.88,
+      "end_seconds": 120.759,
+      "id": "ZYzg1Es67QY-ja-0014",
+      "sequence": 14
+    },
+    {
+      "text": "株式会社を登記し、クラウドファンディングで550万円を集め、放課",
+      "start_seconds": 120.759,
+      "end_seconds": 128.28,
+      "id": "ZYzg1Es67QY-ja-0015",
+      "sequence": 15
+    },
+    {
+      "text": "後に仲間と分担して修行先や売り先を探し、平造書の壁を自分たちで塗",
+      "start_seconds": 128.28,
+      "end_seconds": 140.08,
+      "id": "ZYzg1Es67QY-ja-0016",
+      "sequence": 16
+    },
+    {
+      "text": "そして実際にビールを作り始めました。",
+      "start_seconds": 140.08,
+      "end_seconds": 146.0,
+      "id": "ZYzg1Es67QY-ja-0017",
+      "sequence": 17
+    },
+    {
+      "text": "それだけ聞くと皆さんはなんてバイタリティだ。そんな山登りのような努力は自分には到底できないと思うかも",
+      "start_seconds": 146.0,
+      "end_seconds": 156.84,
+      "id": "ZYzg1Es67QY-ja-0018",
+      "sequence": 18
+    },
+    {
+      "text": "しれません。でも私は今日ここに自分の努力を自慢しに来たんではないんです。",
+      "start_seconds": 156.84,
+      "end_seconds": 166.319,
+      "id": "ZYzg1Es67QY-ja-0019",
+      "sequence": 19
+    },
+    {
+      "text": "実は私も一歩も登ってなんていないという事実をお伝えするためなんです。",
+      "start_seconds": 166.319,
+      "end_seconds": 173.92,
+      "id": "ZYzg1Es67QY-ja-0020",
+      "sequence": 20
+    },
+    {
+      "text": "私は教員として日々生徒たちを見てみます。彼らの多くは家、学校、塾という狭い",
+      "start_seconds": 173.92,
+      "end_seconds": 184.2,
+      "id": "ZYzg1Es67QY-ja-0021",
+      "sequence": 21
+    },
+    {
+      "text": "三角形の中で生きています。でもそれは我々教員も同じなんです。",
+      "start_seconds": 184.2,
+      "end_seconds": 191.799,
+      "id": "ZYzg1Es67QY-ja-0022",
+      "sequence": 22
+    },
+    {
+      "text": "家と職員室と教室を生きする毎日完璧に安定した場所に続けることは新しい刺激を遠ざけてしまうことでもあるんです",
+      "start_seconds": 191.799,
+      "end_seconds": 202.959,
+      "id": "ZYzg1Es67QY-ja-0023",
+      "sequence": 23
+    },
+    {
+      "text": "。",
+      "start_seconds": 202.959,
+      "end_seconds": 204.48,
+      "id": "ZYzg1Es67QY-ja-0024",
+      "sequence": 24
+    },
+    {
+      "text": "多くの人は朝鮮を坂を登ることに例えます。とすると日常を過ごしている状態はこの坂の途中に止まっている状態と捉えること",
+      "start_seconds": 204.48,
+      "end_seconds": 216.36,
+      "id": "ZYzg1Es67QY-ja-0025",
+      "sequence": 25
+    },
+    {
+      "text": "ができます。でも本当にそうなんでしょうか?",
+      "start_seconds": 216.36,
+      "end_seconds": 221.879,
+      "id": "ZYzg1Es67QY-ja-0026",
+      "sequence": 26
+    },
+    {
+      "text": "この動かない状態を物理学的に分析してみましょう。この状態は一見安定して止まってるように見えます。でもそこにはここに",
+      "start_seconds": 221.879,
+      "end_seconds": 233.12,
+      "id": "ZYzg1Es67QY-ja-0027",
+      "sequence": 27
+    },
+    {
+      "text": "とまらなければならないというとても強い精島殺力が働いています。",
+      "start_seconds": 233.12,
+      "end_seconds": 240.4,
+      "id": "ZYzg1Es67QY-ja-0028",
+      "sequence": 28
+    },
+    {
+      "text": "つまり皆さんは今の場所にとまり続けるためだけに毎日ものすごく努力をして踏ん張ってるんです。",
+      "start_seconds": 240.4,
+      "end_seconds": 249.92,
+      "id": "ZYzg1Es67QY-ja-0029",
+      "sequence": 29
+    },
+    {
+      "text": "今日このテデックス名古屋Uの会場に来ていい話を聞いたな。明日からなんか始めてみようと共感しても",
+      "start_seconds": 249.92,
+      "end_seconds": 260.84,
+      "id": "ZYzg1Es67QY-ja-0030",
+      "sequence": 30
+    },
+    {
+      "text": "実際明日になればまた日常の業務の中に戻っていってしまいます。",
+      "start_seconds": 260.84,
+      "end_seconds": 268.96,
+      "id": "ZYzg1Es67QY-ja-0031",
+      "sequence": 31
+    },
+    {
+      "text": "なぜ我々はこれほどまでに動けないんでしょうか?",
+      "start_seconds": 268.96,
+      "end_seconds": 274.32,
+      "id": "ZYzg1Es67QY-ja-0032",
+      "sequence": 32
+    },
+    {
+      "text": "今の場所にとまるのも大変なのに、そこから高を登り続けていくというのはもっと大変で、結局多くの人は実際に行動に移す",
+      "start_seconds": 274.32,
+      "end_seconds": 286.08,
+      "id": "ZYzg1Es67QY-ja-0033",
+      "sequence": 33
+    },
+    {
+      "text": "ことはありません。",
+      "start_seconds": 286.08,
+      "end_seconds": 288.6,
+      "id": "ZYzg1Es67QY-ja-0034",
+      "sequence": 34
+    },
+    {
+      "text": "1週間後、2週間後の自分の姿をリアルに想像してみてください。何か新しいことを",
+      "start_seconds": 288.6,
+      "end_seconds": 296.96,
+      "id": "ZYzg1Es67QY-ja-0035",
+      "sequence": 35
+    },
+    {
+      "text": "始めているでしょうか?",
+      "start_seconds": 296.96,
+      "end_seconds": 300.919,
+      "id": "ZYzg1Es67QY-ja-0036",
+      "sequence": 36
+    },
+    {
+      "text": "ここで1つ私の好きな実験を見せしましょう。ここに坂道がありますよね。",
+      "start_seconds": 302.479,
+      "end_seconds": 311.36,
+      "id": "ZYzg1Es67QY-ja-0037",
+      "sequence": 37
+    },
+    {
+      "text": "そしてここに物体があります。これをここに申せます。",
+      "start_seconds": 311.36,
+      "end_seconds": 318.96,
+      "id": "ZYzg1Es67QY-ja-0038",
+      "sequence": 38
+    },
+    {
+      "text": "見てください。",
+      "start_seconds": 318.96,
+      "end_seconds": 321.72,
+      "id": "ZYzg1Es67QY-ja-0039",
+      "sequence": 39
+    },
+    {
+      "text": "今にも滑り出しそうな急な斜面の上にこのぶッたが必死に耐えて止まっている。これが今の皆さんの姿です。自分に合わない",
+      "start_seconds": 321.72,
+      "end_seconds": 333.56,
+      "id": "ZYzg1Es67QY-ja-0040",
+      "sequence": 40
+    },
+    {
+      "text": "環境、退屈な日常、そこから抜け出したい重力がかかってるのに現状維持という精島殺力が",
+      "start_seconds": 333.56,
+      "end_seconds": 344.4,
+      "id": "ZYzg1Es67QY-ja-0041",
+      "sequence": 41
+    },
+    {
+      "text": "これを阻る。でもここで私がほんの少しだけ刺激を加えてみます。",
+      "start_seconds": 344.4,
+      "end_seconds": 352.4,
+      "id": "ZYzg1Es67QY-ja-0042",
+      "sequence": 42
+    },
+    {
+      "text": "一体何が起こるでしょうか?行きますよ。",
+      "start_seconds": 352.4,
+      "end_seconds": 356.6,
+      "id": "ZYzg1Es67QY-ja-0043",
+      "sequence": 43
+    },
+    {
+      "text": "321",
+      "start_seconds": 356.6,
+      "end_seconds": 359.6,
+      "id": "ZYzg1Es67QY-ja-0044",
+      "sequence": 44
+    },
+    {
+      "text": "追いことが起こるもんですよね。",
+      "start_seconds": 366.08,
+      "end_seconds": 369.16,
+      "id": "ZYzg1Es67QY-ja-0045",
+      "sequence": 45
+    },
+    {
+      "text": "条件を変えてみますね。",
+      "start_seconds": 369.16,
+      "end_seconds": 372.84,
+      "id": "ZYzg1Es67QY-ja-0046",
+      "sequence": 46
+    },
+    {
+      "text": "じゃあ行きますよ。",
+      "start_seconds": 372.84,
+      "end_seconds": 376.28,
+      "id": "ZYzg1Es67QY-ja-0047",
+      "sequence": 47
+    },
+    {
+      "text": "えい。あ、すごいですね。なんかこんなになったことはないんですけど。行きます。",
+      "start_seconds": 376.28,
+      "end_seconds": 384.199,
+      "id": "ZYzg1Es67QY-ja-0048",
+      "sequence": 48
+    },
+    {
+      "text": "え、行きますよ。",
+      "start_seconds": 384.199,
+      "end_seconds": 390.24,
+      "id": "ZYzg1Es67QY-ja-0049",
+      "sequence": 49
+    },
+    {
+      "text": "精子摩擦力は同摩擦に切り替わり、劇的に小さくなって滑っていきます。きましたね。はい。",
+      "start_seconds": 393.28,
+      "end_seconds": 402.639,
+      "id": "ZYzg1Es67QY-ja-0050",
+      "sequence": 50
+    },
+    {
+      "text": "で、こう見て分かっていただけたかなと思うんですが、実は我々のビール授業もこれと同じだったんです。",
+      "start_seconds": 402.639,
+      "end_seconds": 412.16,
+      "id": "ZYzg1Es67QY-ja-0051",
+      "sequence": 51
+    },
+    {
+      "text": "それは青を食い縛って登る山登りではなくて踏ん張るのをやめて心を踊る方へ滑って",
+      "start_seconds": 412.16,
+      "end_seconds": 420.199,
+      "id": "ZYzg1Es67QY-ja-0052",
+      "sequence": 52
+    },
+    {
+      "text": "いく。滑り台のような経験だった。",
+      "start_seconds": 420.199,
+      "end_seconds": 424.479,
+      "id": "ZYzg1Es67QY-ja-0053",
+      "sequence": 53
+    },
+    {
+      "text": "私がOBの講演会で1人で参加したのも一歩踏み出す勇気があったからではありません。そうではなくて",
+      "start_seconds": 424.479,
+      "end_seconds": 434.879,
+      "id": "ZYzg1Es67QY-ja-0054",
+      "sequence": 54
+    },
+    {
+      "text": "ここに行けば絶対に面白い人に出会えるだろうと思ったからです。ビジネスコンテストに参加したのも観客席から見て",
+      "start_seconds": 434.879,
+      "end_seconds": 444.96,
+      "id": "ZYzg1Es67QY-ja-0055",
+      "sequence": 55
+    },
+    {
+      "text": "いるより参加した方が楽しいだろうなと思ったからです。",
+      "start_seconds": 444.96,
+      "end_seconds": 451.0,
+      "id": "ZYzg1Es67QY-ja-0056",
+      "sequence": 56
+    },
+    {
+      "text": "今日のこのテデックス名古屋Uもそうです。",
+      "start_seconds": 451.0,
+      "end_seconds": 454.639,
+      "id": "ZYzg1Es67QY-ja-0057",
+      "sequence": 57
+    },
+    {
+      "text": "そして例え婚で優勝したとしてもこの経験が苦しいものであったら実際の企業は決してしていなかったと思います。",
+      "start_seconds": 454.639,
+      "end_seconds": 466.12,
+      "id": "ZYzg1Es67QY-ja-0058",
+      "sequence": 58
+    },
+    {
+      "text": "面白いことが起こりそうな予感しかしなかったから教員をやっているにも関わらず",
+      "start_seconds": 466.12,
+      "end_seconds": 474.639,
+      "id": "ZYzg1Es67QY-ja-0059",
+      "sequence": 59
+    },
+    {
+      "text": "株式会社を登記して実際に行動しちゃったんです。",
+      "start_seconds": 474.639,
+      "end_seconds": 480.72,
+      "id": "ZYzg1Es67QY-ja-0060",
+      "sequence": 60
+    },
+    {
+      "text": "滑り出した先で私の世界の見方は劇的に変わりました。",
+      "start_seconds": 480.72,
+      "end_seconds": 488.159,
+      "id": "ZYzg1Es67QY-ja-0061",
+      "sequence": 61
+    },
+    {
+      "text": "したことで自分の視点が変わり改造度が上がったんです。",
+      "start_seconds": 488.159,
+      "end_seconds": 494.639,
+      "id": "ZYzg1Es67QY-ja-0062",
+      "sequence": 62
+    },
+    {
+      "text": "例えば最近やけに面白い人が増えたなと思っていたんですがそうではありません。",
+      "start_seconds": 494.639,
+      "end_seconds": 503.319,
+      "id": "ZYzg1Es67QY-ja-0063",
+      "sequence": 63
+    },
+    {
+      "text": "面白い人は最初からそこにいたんです。",
+      "start_seconds": 503.319,
+      "end_seconds": 507.759,
+      "id": "ZYzg1Es67QY-ja-0064",
+      "sequence": 64
+    },
+    {
+      "text": "私がビールの文脈で学校の外に行き、外を見るようになったことで元からそこにいた面白い人に気がつけるようになった。",
+      "start_seconds": 507.759,
+      "end_seconds": 519.0,
+      "id": "ZYzg1Es67QY-ja-0065",
+      "sequence": 65
+    },
+    {
+      "text": "そしてまたリールという製品の面白さにも気づきました。ビールは教室では決して味合うことができない繋がりを作ります。",
+      "start_seconds": 519.0,
+      "end_seconds": 529.839,
+      "id": "ZYzg1Es67QY-ja-0066",
+      "sequence": 66
+    },
+    {
+      "text": "地元の脳物を不限量に入れれば農業関係の方とつがり、上造書の壁を自分たちで直せば職人の方と",
+      "start_seconds": 529.839,
+      "end_seconds": 541.079,
+      "id": "ZYzg1Es67QY-ja-0067",
+      "sequence": 67
+    },
+    {
+      "text": "つがる。私はこの繋がりのもすたちは何者にも買えがいと考えてみます。1人で孤独に生きる人より仲間と笑いながら飲んでる",
+      "start_seconds": 541.079,
+      "end_seconds": 552.36,
+      "id": "ZYzg1Es67QY-ja-0068",
+      "sequence": 68
+    },
+    {
+      "text": "人の方が人生は豊かだと思いませんか?今の私はビールに放課後や休日を使いせと",
+      "start_seconds": 552.36,
+      "end_seconds": 562.32,
+      "id": "ZYzg1Es67QY-ja-0069",
+      "sequence": 69
+    },
+    {
+      "text": "努力作業しています。その様子を見た人は大変そうだなと思うかもしれません。",
+      "start_seconds": 562.32,
+      "end_seconds": 571.04,
+      "id": "ZYzg1Es67QY-ja-0070",
+      "sequence": 70
+    },
+    {
+      "text": "でも始める前より今の方が苦しかったら私はもうとっくにやめています。",
+      "start_seconds": 571.04,
+      "end_seconds": 578.44,
+      "id": "ZYzg1Es67QY-ja-0071",
+      "sequence": 71
+    },
+    {
+      "text": "今の私は無理に1箇所に踏みとまるのはやめ。自分が1番居心地がいいと感じる谷底へ向かって重力を楽しみながら滑り",
+      "start_seconds": 578.44,
+      "end_seconds": 589.88,
+      "id": "ZYzg1Es67QY-ja-0072",
+      "sequence": 72
+    },
+    {
+      "text": "続けてるだけなんです。",
+      "start_seconds": 589.88,
+      "end_seconds": 592.839,
+      "id": "ZYzg1Es67QY-ja-0073",
+      "sequence": 73
+    },
+    {
+      "text": "これは実は宿題と遊びの関係に似ています。宿題のように誰かにやりなさいと言われ",
+      "start_seconds": 592.839,
+      "end_seconds": 601.76,
+      "id": "ZYzg1Es67QY-ja-0074",
+      "sequence": 74
+    },
+    {
+      "text": "たらその瞬間にマイナスからのスタートになる。完璧にこなして当たり前。やらなかったら叱られる。俺が楽しいはずあり",
+      "start_seconds": 601.76,
+      "end_seconds": 613.44,
+      "id": "ZYzg1Es67QY-ja-0075",
+      "sequence": 75
+    },
+    {
+      "text": "ませんよね。一方で遊びやビール事業は誰かにやれと言われたわけでも締め切りがあったわけでもありません。だからこそ",
+      "start_seconds": 613.44,
+      "end_seconds": 623.8,
+      "id": "ZYzg1Es67QY-ja-0076",
+      "sequence": 76
+    },
+    {
+      "text": "真剣にでも生きと活動ができるんだと思います。",
+      "start_seconds": 623.8,
+      "end_seconds": 630.6,
+      "id": "ZYzg1Es67QY-ja-0077",
+      "sequence": 77
+    },
+    {
+      "text": "皆さんもう頑張って現状に踏みとまるのをやめてみてはどうですか?いい話を聞いた",
+      "start_seconds": 630.6,
+      "end_seconds": 638.76,
+      "id": "ZYzg1Es67QY-ja-0078",
+      "sequence": 78
+    },
+    {
+      "text": "な。で、終わらせないでください。それは先ほどの坂の途中でやっぱり止まってよう",
+      "start_seconds": 638.76,
+      "end_seconds": 649.92,
+      "id": "ZYzg1Es67QY-ja-0079",
+      "sequence": 79
+    },
+    {
+      "text": "かけ直すことと同じです。",
+      "start_seconds": 649.92,
+      "end_seconds": 653.2,
+      "id": "ZYzg1Es67QY-ja-0080",
+      "sequence": 80
+    },
+    {
+      "text": "一歩踏み出すのに体操な努力は必要ありません。ただ自分という観測装置のスイッチを入れ直し",
+      "start_seconds": 653.2,
+      "end_seconds": 664.0,
+      "id": "ZYzg1Es67QY-ja-0081",
+      "sequence": 81
+    },
+    {
+      "text": "目の前の景色を解像度高く捉え直せばいいんです。例えば",
+      "start_seconds": 664.0,
+      "end_seconds": 671.0,
+      "id": "ZYzg1Es67QY-ja-0082",
+      "sequence": 82
+    },
+    {
+      "text": "駅までの数学路や近路そこにはいくつかの石コが落ちていたと思います。今その詳細",
+      "start_seconds": 671.0,
+      "end_seconds": 680.76,
+      "id": "ZYzg1Es67QY-ja-0083",
+      "sequence": 83
+    },
+    {
+      "text": "を思い出せますか?",
+      "start_seconds": 680.76,
+      "end_seconds": 685.24,
+      "id": "ZYzg1Es67QY-ja-0084",
+      "sequence": 84
+    },
+    {
+      "text": "難しいですよね。でも今日はそのうちの1つを拾ってじっくり観察してみてください",
+      "start_seconds": 685.92,
+      "end_seconds": 692.92,
+      "id": "ZYzg1Es67QY-ja-0085",
+      "sequence": 85
+    },
+    {
+      "text": "。例えば色、形、そして",
+      "start_seconds": 692.92,
+      "end_seconds": 703.279,
+      "id": "ZYzg1Es67QY-ja-0086",
+      "sequence": 86
+    },
+    {
+      "text": "模様。",
+      "start_seconds": 703.279,
+      "end_seconds": 706.279,
+      "id": "ZYzg1Es67QY-ja-0087",
+      "sequence": 87
+    },
+    {
+      "text": "視点を持ってみたらいろんなことに気がつけましたよね。",
+      "start_seconds": 706.279,
+      "end_seconds": 712.88,
+      "id": "ZYzg1Es67QY-ja-0088",
+      "sequence": 88
+    },
+    {
+      "text": "実際に観察したらおめでとうございます。滑り出しちゃいましたよね。",
+      "start_seconds": 712.88,
+      "end_seconds": 721.6,
+      "id": "ZYzg1Es67QY-ja-0089",
+      "sequence": 89
+    },
+    {
+      "text": "石コでさえこのつもりで見たら新しい発見があるということに気がついてしまった皆さんはもう止まれないはずです。一歩",
+      "start_seconds": 721.6,
+      "end_seconds": 732.48,
+      "id": "ZYzg1Es67QY-ja-0090",
+      "sequence": 90
+    },
+    {
+      "text": "踏み出すことは特別な才能ではありません。ただ好奇心という重力に身を任せる素直さです。大丈夫。",
+      "start_seconds": 732.48,
+      "end_seconds": 743.32,
+      "id": "ZYzg1Es67QY-ja-0091",
+      "sequence": 91
+    },
+    {
+      "text": "1度動き出したあなたを物理法則は決して裏切りません。",
+      "start_seconds": 743.32,
+      "end_seconds": 749.92,
+      "id": "ZYzg1Es67QY-ja-0092",
+      "sequence": 92
+    },
+    {
+      "text": "一緒に心踊る方へ流されましょう。",
+      "start_seconds": 749.92,
+      "end_seconds": 756.44,
+      "id": "ZYzg1Es67QY-ja-0093",
+      "sequence": 93
+    },
+    {
+      "text": "ありがとうございました。[拍手]",
+      "start_seconds": 756.44,
+      "end_seconds": 760.518,
+      "id": "ZYzg1Es67QY-ja-0094",
+      "sequence": 94
+    }
+  ],
+  "raw_captions": [
+    {
+      "text": "物理教師がなぜ",
+      "start_seconds": 11.0,
+      "end_seconds": 16.759999999999998
+    },
+    {
+      "text": "ビールを作っているのか。",
+      "start_seconds": 13.839,
+      "end_seconds": 22.48
+    },
+    {
+      "text": "皆さんは私が教室で授業してる姿と上造所",
+      "start_seconds": 16.76,
+      "end_seconds": 26.560000000000002
+    },
+    {
+      "text": "で瓶にラベルを貼ってる姿、どちらが本当",
+      "start_seconds": 22.48,
+      "end_seconds": 29.84
+    },
+    {
+      "text": "の私だと思いますか?",
+      "start_seconds": 26.56,
+      "end_seconds": 33.48
+    },
+    {
+      "text": "最近我々の活動をメディアに取り上げて",
+      "start_seconds": 29.84,
+      "end_seconds": 36.879
+    },
+    {
+      "text": "いただく機会が増えました。そこでは我々",
+      "start_seconds": 33.48,
+      "end_seconds": 41.48
+    },
+    {
+      "text": "の活動が熱意ある教員による教育会の枠を",
+      "start_seconds": 36.879,
+      "end_seconds": 45.559
+    },
+    {
+      "text": "超えた片破りな挑戦という文脈で紹介され",
+      "start_seconds": 41.48,
+      "end_seconds": 47.718999999999994
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 45.559,
+      "end_seconds": 51.16
+    },
+    {
+      "text": "きっかけは3年前。",
+      "start_seconds": 47.719,
+      "end_seconds": 54.28
+    },
+    {
+      "text": "それまで教員がほとんど行くことがなかっ",
+      "start_seconds": 51.16,
+      "end_seconds": 58.879
+    },
+    {
+      "text": "た学校OBの講演会に",
+      "start_seconds": 54.28,
+      "end_seconds": 63.28
+    },
+    {
+      "text": "私1人で参加したことです。",
+      "start_seconds": 58.879,
+      "end_seconds": 66.119
+    },
+    {
+      "text": "これから新規企業が重要になってくると",
+      "start_seconds": 63.28,
+      "end_seconds": 70.6
+    },
+    {
+      "text": "いう話だったんですが、そこで私は手",
+      "start_seconds": 66.119,
+      "end_seconds": 73.479
+    },
+    {
+      "text": "を上げて質問しました。",
+      "start_seconds": 70.6,
+      "end_seconds": 77.79899999999999
+    },
+    {
+      "text": "大学発電はよく聞きますが、中学生や高校",
+      "start_seconds": 73.479,
+      "end_seconds": 81.52
+    },
+    {
+      "text": "生が何かできることはありませんか?",
+      "start_seconds": 77.799,
+      "end_seconds": 85.32000000000001
+    },
+    {
+      "text": "その質問きっかけに学校でも講演をして",
+      "start_seconds": 81.52,
+      "end_seconds": 87.64
+    },
+    {
+      "text": "いただくことになり、",
+      "start_seconds": 85.32,
+      "end_seconds": 91.75899999999999
+    },
+    {
+      "text": "学内に有資団体を立ち上げ、その活動の中",
+      "start_seconds": 87.64,
+      "end_seconds": 94.759
+    },
+    {
+      "text": "でドラゴンゲートというビジネス",
+      "start_seconds": 91.759,
+      "end_seconds": 99.32
+    },
+    {
+      "text": "コンテストに参加しました。そしてなんと",
+      "start_seconds": 94.759,
+      "end_seconds": 103.28
+    },
+    {
+      "text": "我々教員チームが優勝し金",
+      "start_seconds": 99.32,
+      "end_seconds": 105.52
+    },
+    {
+      "text": "100万円をいただくことができたんです",
+      "start_seconds": 103.28,
+      "end_seconds": 109.88
+    },
+    {
+      "text": "。優勝できて良かったね。",
+      "start_seconds": 105.52,
+      "end_seconds": 113.0
+    },
+    {
+      "text": "なんて言いながらそこでこの話をおしまい",
+      "start_seconds": 109.88,
+      "end_seconds": 115.56
+    },
+    {
+      "text": "にすることもできたんですが、我々はその",
+      "start_seconds": 113.0,
+      "end_seconds": 120.759
+    },
+    {
+      "text": "後もビジネスプランを磨きつつ書類を整え",
+      "start_seconds": 115.56,
+      "end_seconds": 123.759
+    },
+    {
+      "text": "株式会社を登記し、クラウド",
+      "start_seconds": 120.759,
+      "end_seconds": 128.28
+    },
+    {
+      "text": "ファンディングで550万円を集め、放課",
+      "start_seconds": 123.759,
+      "end_seconds": 133.64
+    },
+    {
+      "text": "後に仲間と分担して修行先や",
+      "start_seconds": 128.28,
+      "end_seconds": 136.44
+    },
+    {
+      "text": "売り先を探し、",
+      "start_seconds": 133.64,
+      "end_seconds": 140.07999999999998
+    },
+    {
+      "text": "平造書の壁を自分たちで塗",
+      "start_seconds": 136.44,
+      "end_seconds": 142.44
+    },
+    {
+      "text": "そして実際に",
+      "start_seconds": 140.08,
+      "end_seconds": 146.0
+    },
+    {
+      "text": "ビールを作り始めました。",
+      "start_seconds": 142.44,
+      "end_seconds": 149.68
+    },
+    {
+      "text": "それだけ聞くと皆さんはなんて",
+      "start_seconds": 146.0,
+      "end_seconds": 152.2
+    },
+    {
+      "text": "バイタリティだ。そんな山登りのような",
+      "start_seconds": 149.68,
+      "end_seconds": 156.84
+    },
+    {
+      "text": "努力は自分には到底できないと思うかも",
+      "start_seconds": 152.2,
+      "end_seconds": 161.07999999999998
+    },
+    {
+      "text": "しれません。でも私は今日ここに自分の",
+      "start_seconds": 156.84,
+      "end_seconds": 166.31900000000002
+    },
+    {
+      "text": "努力を自慢しに来たんではないんです。",
+      "start_seconds": 161.08,
+      "end_seconds": 170.28
+    },
+    {
+      "text": "実は私も一歩も登ってなんていないという",
+      "start_seconds": 166.319,
+      "end_seconds": 173.92
+    },
+    {
+      "text": "事実をお伝えするためなんです。",
+      "start_seconds": 170.28,
+      "end_seconds": 176.84
+    },
+    {
+      "text": "私は教員として日々生徒たちを見てみます",
+      "start_seconds": 173.92,
+      "end_seconds": 184.2
+    },
+    {
+      "text": "。彼らの多くは家、学校、塾という狭い",
+      "start_seconds": 176.84,
+      "end_seconds": 188.48000000000002
+    },
+    {
+      "text": "三角形の中で生きています。でもそれは",
+      "start_seconds": 184.2,
+      "end_seconds": 191.79899999999998
+    },
+    {
+      "text": "我々教員も同じなんです。",
+      "start_seconds": 188.48,
+      "end_seconds": 196.959
+    },
+    {
+      "text": "家と職員室と教室を生きする毎日",
+      "start_seconds": 191.799,
+      "end_seconds": 200.48000000000002
+    },
+    {
+      "text": "完璧に安定した場所に続けることは新しい",
+      "start_seconds": 196.959,
+      "end_seconds": 202.959
+    },
+    {
+      "text": "刺激を遠ざけてしまうことでもあるんです",
+      "start_seconds": 200.48,
+      "end_seconds": 204.48
+    },
+    {
+      "text": "。",
+      "start_seconds": 202.959,
+      "end_seconds": 208.64000000000001
+    },
+    {
+      "text": "多くの人は朝鮮を坂を登ることに例えます",
+      "start_seconds": 204.48,
+      "end_seconds": 212.92
+    },
+    {
+      "text": "。とすると日常を過ごしている状態はこの",
+      "start_seconds": 208.64,
+      "end_seconds": 216.35999999999999
+    },
+    {
+      "text": "坂の途中に止まっている状態と捉えること",
+      "start_seconds": 212.92,
+      "end_seconds": 220.2
+    },
+    {
+      "text": "ができます。でも本当にそうなんでしょう",
+      "start_seconds": 216.36,
+      "end_seconds": 221.87900000000002
+    },
+    {
+      "text": "か?",
+      "start_seconds": 220.2,
+      "end_seconds": 225.76
+    },
+    {
+      "text": "この動かない状態を物理学的に分析してみ",
+      "start_seconds": 221.879,
+      "end_seconds": 228.84
+    },
+    {
+      "text": "ましょう。この状態は一見安定して止まっ",
+      "start_seconds": 225.76,
+      "end_seconds": 233.12
+    },
+    {
+      "text": "てるように見えます。でもそこにはここに",
+      "start_seconds": 228.84,
+      "end_seconds": 236.36
+    },
+    {
+      "text": "とまらなければならないというとても強い",
+      "start_seconds": 233.12,
+      "end_seconds": 240.4
+    },
+    {
+      "text": "精島殺力が働いています。",
+      "start_seconds": 236.36,
+      "end_seconds": 243.64000000000001
+    },
+    {
+      "text": "つまり皆さんは今の場所にとまり続ける",
+      "start_seconds": 240.4,
+      "end_seconds": 247.519
+    },
+    {
+      "text": "ためだけに毎日ものすごく努力をして",
+      "start_seconds": 243.64,
+      "end_seconds": 249.92
+    },
+    {
+      "text": "踏ん張ってるんです。",
+      "start_seconds": 247.519,
+      "end_seconds": 252.76
+    },
+    {
+      "text": "今日このテデックス名古屋Uの会場に来て",
+      "start_seconds": 249.92,
+      "end_seconds": 256.32
+    },
+    {
+      "text": "いい話を聞いたな。明日からなんか始めて",
+      "start_seconds": 252.76,
+      "end_seconds": 258.03999999999996
+    },
+    {
+      "text": "みよう",
+      "start_seconds": 256.32,
+      "end_seconds": 260.84
+    },
+    {
+      "text": "と共感しても",
+      "start_seconds": 258.04,
+      "end_seconds": 265.16
+    },
+    {
+      "text": "実際明日になればまた日常の業務の中に",
+      "start_seconds": 260.84,
+      "end_seconds": 268.96
+    },
+    {
+      "text": "戻っていってしまいます。",
+      "start_seconds": 265.16,
+      "end_seconds": 272.199
+    },
+    {
+      "text": "なぜ我々はこれほどまでに動けないん",
+      "start_seconds": 268.96,
+      "end_seconds": 274.32
+    },
+    {
+      "text": "でしょうか?",
+      "start_seconds": 272.199,
+      "end_seconds": 277.12
+    },
+    {
+      "text": "今の場所にとまるのも大変なのに、そこ",
+      "start_seconds": 274.32,
+      "end_seconds": 280.84
+    },
+    {
+      "text": "から高を登り続けていくというのはもっと",
+      "start_seconds": 277.12,
+      "end_seconds": 286.08
+    },
+    {
+      "text": "大変で、結局多くの人は実際に行動に移す",
+      "start_seconds": 280.84,
+      "end_seconds": 288.59999999999997
+    },
+    {
+      "text": "ことはありません。",
+      "start_seconds": 286.08,
+      "end_seconds": 293.4
+    },
+    {
+      "text": "1週間後、2週間後の自分の姿をリアルに",
+      "start_seconds": 288.6,
+      "end_seconds": 296.96000000000004
+    },
+    {
+      "text": "想像してみてください。何か新しいことを",
+      "start_seconds": 293.4,
+      "end_seconds": 300.919
+    },
+    {
+      "text": "始めているでしょうか?",
+      "start_seconds": 296.96,
+      "end_seconds": 300.919
+    },
+    {
+      "text": "ここで1つ",
+      "start_seconds": 302.479,
+      "end_seconds": 308.75899999999996
+    },
+    {
+      "text": "私の好きな実験を見せしましょう。ここに",
+      "start_seconds": 305.52,
+      "end_seconds": 311.35999999999996
+    },
+    {
+      "text": "坂道がありますよね。",
+      "start_seconds": 308.759,
+      "end_seconds": 315.56
+    },
+    {
+      "text": "そしてここに物体があります。これをここ",
+      "start_seconds": 311.36,
+      "end_seconds": 318.96000000000004
+    },
+    {
+      "text": "に申せます。",
+      "start_seconds": 315.56,
+      "end_seconds": 321.72
+    },
+    {
+      "text": "見てください。",
+      "start_seconds": 318.96,
+      "end_seconds": 325.88
+    },
+    {
+      "text": "今にも滑り出しそうな急な斜面の上にこの",
+      "start_seconds": 321.72,
+      "end_seconds": 329.6
+    },
+    {
+      "text": "ぶッたが必死に耐えて止まっている。これ",
+      "start_seconds": 325.88,
+      "end_seconds": 333.56
+    },
+    {
+      "text": "が今の皆さんの姿です。自分に合わない",
+      "start_seconds": 329.6,
+      "end_seconds": 335.52000000000004
+    },
+    {
+      "text": "環境、",
+      "start_seconds": 333.56,
+      "end_seconds": 339.36
+    },
+    {
+      "text": "退屈な日常、そこから抜け出したい重力が",
+      "start_seconds": 335.52,
+      "end_seconds": 344.4
+    },
+    {
+      "text": "かかってるのに現状維持という精島殺力が",
+      "start_seconds": 339.36,
+      "end_seconds": 349.16
+    },
+    {
+      "text": "これを阻る。でもここで私がほんの少し",
+      "start_seconds": 344.4,
+      "end_seconds": 352.4
+    },
+    {
+      "text": "だけ刺激を加えてみます。",
+      "start_seconds": 349.16,
+      "end_seconds": 356.6
+    },
+    {
+      "text": "一体何が起こるでしょうか?行きますよ。",
+      "start_seconds": 352.4,
+      "end_seconds": 359.59999999999997
+    },
+    {
+      "text": "321",
+      "start_seconds": 356.6,
+      "end_seconds": 359.6
+    },
+    {
+      "text": "追いことが起こるもんですよね。",
+      "start_seconds": 366.08,
+      "end_seconds": 372.84
+    },
+    {
+      "text": "条件を変えてみますね。",
+      "start_seconds": 369.16,
+      "end_seconds": 376.28000000000003
+    },
+    {
+      "text": "じゃあ行きますよ。",
+      "start_seconds": 372.84,
+      "end_seconds": 380.23999999999995
+    },
+    {
+      "text": "えい。あ、すごいですね。なんかこんなに",
+      "start_seconds": 376.28,
+      "end_seconds": 384.19899999999996
+    },
+    {
+      "text": "なったことはないんですけど。行きます。",
+      "start_seconds": 380.24,
+      "end_seconds": 386.68
+    },
+    {
+      "text": "え、",
+      "start_seconds": 384.199,
+      "end_seconds": 390.24
+    },
+    {
+      "text": "行きますよ。",
+      "start_seconds": 386.68,
+      "end_seconds": 390.24
+    },
+    {
+      "text": "精子摩擦力は同摩擦に切り替わり、劇的に",
+      "start_seconds": 393.28,
+      "end_seconds": 400.44
+    },
+    {
+      "text": "小さくなって滑っていきます。きましたね",
+      "start_seconds": 397.84,
+      "end_seconds": 402.63899999999995
+    },
+    {
+      "text": "。はい。",
+      "start_seconds": 400.44,
+      "end_seconds": 405.68
+    },
+    {
+      "text": "で、こう見て分かっていただけたかなと",
+      "start_seconds": 402.639,
+      "end_seconds": 409.039
+    },
+    {
+      "text": "思うんですが、実は我々のビール授業も",
+      "start_seconds": 405.68,
+      "end_seconds": 412.16
+    },
+    {
+      "text": "これと同じだったんです。",
+      "start_seconds": 409.039,
+      "end_seconds": 415.599
+    },
+    {
+      "text": "それは青を食い縛って登る山登りではなく",
+      "start_seconds": 412.16,
+      "end_seconds": 420.199
+    },
+    {
+      "text": "て踏ん張るのをやめて心を踊る方へ滑って",
+      "start_seconds": 415.599,
+      "end_seconds": 424.479
+    },
+    {
+      "text": "いく。滑り台のような経験だった。",
+      "start_seconds": 420.199,
+      "end_seconds": 428.56
+    },
+    {
+      "text": "私がOBの講演会で1人で参加したのも",
+      "start_seconds": 424.479,
+      "end_seconds": 430.96
+    },
+    {
+      "text": "一歩踏み出す勇気があったからではあり",
+      "start_seconds": 428.56,
+      "end_seconds": 434.879
+    },
+    {
+      "text": "ません。そうではなくて",
+      "start_seconds": 430.96,
+      "end_seconds": 438.12
+    },
+    {
+      "text": "ここに行けば絶対に面白い人に出会える",
+      "start_seconds": 434.879,
+      "end_seconds": 441.91900000000004
+    },
+    {
+      "text": "だろうと思ったからです。ビジネス",
+      "start_seconds": 438.12,
+      "end_seconds": 444.96
+    },
+    {
+      "text": "コンテストに参加したのも観客席から見て",
+      "start_seconds": 441.919,
+      "end_seconds": 448.44
+    },
+    {
+      "text": "いるより参加した方が楽しいだろうなと",
+      "start_seconds": 444.96,
+      "end_seconds": 451.0
+    },
+    {
+      "text": "思ったからです。",
+      "start_seconds": 448.44,
+      "end_seconds": 453.08
+    },
+    {
+      "text": "今日のこのテデックス名古屋Uもそうです",
+      "start_seconds": 451.0,
+      "end_seconds": 454.639
+    },
+    {
+      "text": "。",
+      "start_seconds": 453.08,
+      "end_seconds": 458.56
+    },
+    {
+      "text": "そして例え婚で優勝したとしても",
+      "start_seconds": 454.639,
+      "end_seconds": 461.68
+    },
+    {
+      "text": "この経験が苦しいものであったら実際の",
+      "start_seconds": 458.56,
+      "end_seconds": 466.12
+    },
+    {
+      "text": "企業は決してしていなかったと思います。",
+      "start_seconds": 461.68,
+      "end_seconds": 468.52
+    },
+    {
+      "text": "面白いことが起こりそうな予感しかし",
+      "start_seconds": 466.12,
+      "end_seconds": 470.56
+    },
+    {
+      "text": "なかったから",
+      "start_seconds": 468.52,
+      "end_seconds": 474.639
+    },
+    {
+      "text": "教員をやっているにも関わらず",
+      "start_seconds": 470.56,
+      "end_seconds": 478.879
+    },
+    {
+      "text": "株式会社を登記して実際に行動しちゃった",
+      "start_seconds": 474.639,
+      "end_seconds": 480.72
+    },
+    {
+      "text": "んです。",
+      "start_seconds": 478.879,
+      "end_seconds": 483.199
+    },
+    {
+      "text": "滑り出した先で",
+      "start_seconds": 480.72,
+      "end_seconds": 488.15900000000005
+    },
+    {
+      "text": "私の世界の見方は劇的に変わりました。",
+      "start_seconds": 483.199,
+      "end_seconds": 492.319
+    },
+    {
+      "text": "したことで自分の視点が変わり改造度が",
+      "start_seconds": 488.159,
+      "end_seconds": 494.639
+    },
+    {
+      "text": "上がったんです。",
+      "start_seconds": 492.319,
+      "end_seconds": 499.44
+    },
+    {
+      "text": "例えば最近やけに面白い人が増えたなと",
+      "start_seconds": 494.639,
+      "end_seconds": 503.319
+    },
+    {
+      "text": "思っていたんですがそうではありません。",
+      "start_seconds": 499.44,
+      "end_seconds": 507.759
+    },
+    {
+      "text": "面白い人は最初からそこにいたんです。",
+      "start_seconds": 503.319,
+      "end_seconds": 512.08
+    },
+    {
+      "text": "私がビールの文脈で学校の外に行き、外を",
+      "start_seconds": 507.759,
+      "end_seconds": 515.0
+    },
+    {
+      "text": "見るようになったことで元からそこにいた",
+      "start_seconds": 512.08,
+      "end_seconds": 519.0
+    },
+    {
+      "text": "面白い人に気がつけるようになった。",
+      "start_seconds": 515.0,
+      "end_seconds": 522.039
+    },
+    {
+      "text": "そしてまたリールという製品の面白さにも",
+      "start_seconds": 519.0,
+      "end_seconds": 525.6
+    },
+    {
+      "text": "気づきました。ビールは教室では決して",
+      "start_seconds": 522.039,
+      "end_seconds": 529.8389999999999
+    },
+    {
+      "text": "味合うことができない繋がりを作ります。",
+      "start_seconds": 525.6,
+      "end_seconds": 534.5600000000001
+    },
+    {
+      "text": "地元の脳物を不限量に入れれば農業関係の",
+      "start_seconds": 529.839,
+      "end_seconds": 537.1600000000001
+    },
+    {
+      "text": "方とつがり、",
+      "start_seconds": 534.56,
+      "end_seconds": 541.079
+    },
+    {
+      "text": "上造書の壁を自分たちで直せば職人の方と",
+      "start_seconds": 537.16,
+      "end_seconds": 545.8
+    },
+    {
+      "text": "つがる。私はこの繋がりのもすたちは何者",
+      "start_seconds": 541.079,
+      "end_seconds": 549.399
+    },
+    {
+      "text": "にも買えがいと考えてみます。1人で孤独",
+      "start_seconds": 545.8,
+      "end_seconds": 552.3599999999999
+    },
+    {
+      "text": "に生きる人より仲間と笑いながら飲んでる",
+      "start_seconds": 549.399,
+      "end_seconds": 556.56
+    },
+    {
+      "text": "人の方が人生は豊かだと思いませんか?今",
+      "start_seconds": 552.36,
+      "end_seconds": 562.32
+    },
+    {
+      "text": "の私はビールに放課後や休日を使いせと",
+      "start_seconds": 556.56,
+      "end_seconds": 566.8389999999999
+    },
+    {
+      "text": "努力作業しています。その様子を見た人は",
+      "start_seconds": 562.32,
+      "end_seconds": 571.0400000000001
+    },
+    {
+      "text": "大変そうだなと思うかもしれません。",
+      "start_seconds": 566.839,
+      "end_seconds": 575.0790000000001
+    },
+    {
+      "text": "でも始める前より今の方が苦しかったら私",
+      "start_seconds": 571.04,
+      "end_seconds": 578.4399999999999
+    },
+    {
+      "text": "はもうとっくにやめています。",
+      "start_seconds": 575.079,
+      "end_seconds": 582.04
+    },
+    {
+      "text": "今の私は無理に1箇所に踏みとまるのは",
+      "start_seconds": 578.44,
+      "end_seconds": 585.9590000000001
+    },
+    {
+      "text": "やめ。自分が1番居心地がいいと感じる",
+      "start_seconds": 582.04,
+      "end_seconds": 589.88
+    },
+    {
+      "text": "谷底へ向かって重力を楽しみながら滑り",
+      "start_seconds": 585.959,
+      "end_seconds": 592.8389999999999
+    },
+    {
+      "text": "続けてるだけなんです。",
+      "start_seconds": 589.88,
+      "end_seconds": 597.04
+    },
+    {
+      "text": "これは実は宿題と遊びの関係に似ています",
+      "start_seconds": 592.839,
+      "end_seconds": 601.7600000000001
+    },
+    {
+      "text": "。宿題のように誰かにやりなさいと言われ",
+      "start_seconds": 597.04,
+      "end_seconds": 604.88
+    },
+    {
+      "text": "たらその瞬間にマイナスからのスタートに",
+      "start_seconds": 601.76,
+      "end_seconds": 609.6
+    },
+    {
+      "text": "なる。完璧にこなして当たり前。やら",
+      "start_seconds": 604.88,
+      "end_seconds": 613.4399999999999
+    },
+    {
+      "text": "なかったら叱られる。俺が楽しいはずあり",
+      "start_seconds": 609.6,
+      "end_seconds": 617.44
+    },
+    {
+      "text": "ませんよね。一方で遊びやビール事業は誰",
+      "start_seconds": 613.44,
+      "end_seconds": 620.24
+    },
+    {
+      "text": "かにやれと言われたわけでも締め切りが",
+      "start_seconds": 617.44,
+      "end_seconds": 623.8000000000001
+    },
+    {
+      "text": "あったわけでもありません。だからこそ",
+      "start_seconds": 620.24,
+      "end_seconds": 628.36
+    },
+    {
+      "text": "真剣にでも生きと活動ができるんだと思い",
+      "start_seconds": 623.8,
+      "end_seconds": 630.5999999999999
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 628.36,
+      "end_seconds": 635.519
+    },
+    {
+      "text": "皆さんもう頑張って現状に踏みとまるのを",
+      "start_seconds": 630.6,
+      "end_seconds": 638.76
+    },
+    {
+      "text": "やめてみてはどうですか?いい話を聞いた",
+      "start_seconds": 635.519,
+      "end_seconds": 643.48
+    },
+    {
+      "text": "な。で、終わらせないでください。それは",
+      "start_seconds": 638.76,
+      "end_seconds": 646.3199999999999
+    },
+    {
+      "text": "先ほどの坂の途中で",
+      "start_seconds": 643.48,
+      "end_seconds": 649.9200000000001
+    },
+    {
+      "text": "やっぱり止まってよう",
+      "start_seconds": 646.32,
+      "end_seconds": 653.2
+    },
+    {
+      "text": "かけ直すことと同じです。",
+      "start_seconds": 649.92,
+      "end_seconds": 657.079
+    },
+    {
+      "text": "一歩踏み出すのに体操な努力は必要あり",
+      "start_seconds": 653.2,
+      "end_seconds": 661.519
+    },
+    {
+      "text": "ません。ただ自分という観測装置の",
+      "start_seconds": 657.079,
+      "end_seconds": 664.0
+    },
+    {
+      "text": "スイッチを入れ直し",
+      "start_seconds": 661.519,
+      "end_seconds": 667.639
+    },
+    {
+      "text": "目の前の景色を解像度高く捉え直せばいい",
+      "start_seconds": 664.0,
+      "end_seconds": 671.0
+    },
+    {
+      "text": "んです。例えば",
+      "start_seconds": 667.639,
+      "end_seconds": 676.24
+    },
+    {
+      "text": "駅までの数学路や近路そこにはいくつかの",
+      "start_seconds": 671.0,
+      "end_seconds": 680.76
+    },
+    {
+      "text": "石コが落ちていたと思います。今その詳細",
+      "start_seconds": 676.24,
+      "end_seconds": 685.24
+    },
+    {
+      "text": "を思い出せますか?",
+      "start_seconds": 680.76,
+      "end_seconds": 685.24
+    },
+    {
+      "text": "難しいですよね。でも今日はそのうちの1",
+      "start_seconds": 685.92,
+      "end_seconds": 692.92
+    },
+    {
+      "text": "つを拾ってじっくり観察してみてください",
+      "start_seconds": 689.079,
+      "end_seconds": 698.399
+    },
+    {
+      "text": "。例えば色、",
+      "start_seconds": 692.92,
+      "end_seconds": 698.399
+    },
+    {
+      "text": "形、",
+      "start_seconds": 698.519,
+      "end_seconds": 703.279
+    },
+    {
+      "text": "そして",
+      "start_seconds": 701.72,
+      "end_seconds": 706.279
+    },
+    {
+      "text": "模様。",
+      "start_seconds": 703.279,
+      "end_seconds": 709.68
+    },
+    {
+      "text": "視点を持ってみたらいろんなことに気が",
+      "start_seconds": 706.279,
+      "end_seconds": 712.88
+    },
+    {
+      "text": "つけましたよね。",
+      "start_seconds": 709.68,
+      "end_seconds": 715.4799999999999
+    },
+    {
+      "text": "実際に観察したら",
+      "start_seconds": 712.88,
+      "end_seconds": 718.76
+    },
+    {
+      "text": "おめでとうございます。滑り出しちゃい",
+      "start_seconds": 715.48,
+      "end_seconds": 721.6
+    },
+    {
+      "text": "ましたよね。",
+      "start_seconds": 718.76,
+      "end_seconds": 726.04
+    },
+    {
+      "text": "石コでさえこのつもりで見たら新しい発見",
+      "start_seconds": 721.6,
+      "end_seconds": 728.76
+    },
+    {
+      "text": "があるということに気がついてしまった皆",
+      "start_seconds": 726.04,
+      "end_seconds": 732.48
+    },
+    {
+      "text": "さんはもう止まれないはずです。一歩",
+      "start_seconds": 728.76,
+      "end_seconds": 734.68
+    },
+    {
+      "text": "踏み出すことは特別な才能ではありません",
+      "start_seconds": 732.48,
+      "end_seconds": 739.44
+    },
+    {
+      "text": "。ただ好奇心という重力に身を任せる素直",
+      "start_seconds": 734.68,
+      "end_seconds": 743.3199999999999
+    },
+    {
+      "text": "さです。大丈夫。",
+      "start_seconds": 739.44,
+      "end_seconds": 747.12
+    },
+    {
+      "text": "1度動き出したあなたを物理法則は決して",
+      "start_seconds": 743.32,
+      "end_seconds": 749.9200000000001
+    },
+    {
+      "text": "裏切りません。",
+      "start_seconds": 747.12,
+      "end_seconds": 756.44
+    },
+    {
+      "text": "一緒に心踊る方へ流されましょう。",
+      "start_seconds": 749.92,
+      "end_seconds": 760.5179999999999
+    },
+    {
+      "text": "ありがとうございました。[拍手]",
+      "start_seconds": 756.44,
+      "end_seconds": 760.518
+    }
+  ],
+  "display_captions": [
+    {
+      "text": "物理教師がなぜ",
+      "start_seconds": 11.0,
+      "end_seconds": 13.839,
+      "id": "ZYzg1Es67QY-display-0001",
+      "segment_id": "ZYzg1Es67QY-ja-0001"
+    },
+    {
+      "text": "ビールを作っているのか。",
+      "start_seconds": 13.839,
+      "end_seconds": 16.76,
+      "id": "ZYzg1Es67QY-display-0002",
+      "segment_id": "ZYzg1Es67QY-ja-0001"
+    },
+    {
+      "text": "皆さんは私が教室で授業してる姿と上造所",
+      "start_seconds": 16.76,
+      "end_seconds": 22.48,
+      "id": "ZYzg1Es67QY-display-0003",
+      "segment_id": "ZYzg1Es67QY-ja-0002"
+    },
+    {
+      "text": "で瓶にラベルを貼ってる姿、どちらが本当",
+      "start_seconds": 22.48,
+      "end_seconds": 26.56,
+      "id": "ZYzg1Es67QY-display-0004",
+      "segment_id": "ZYzg1Es67QY-ja-0002"
+    },
+    {
+      "text": "の私だと思いますか?",
+      "start_seconds": 26.56,
+      "end_seconds": 29.84,
+      "id": "ZYzg1Es67QY-display-0005",
+      "segment_id": "ZYzg1Es67QY-ja-0003"
+    },
+    {
+      "text": "最近我々の活動をメディアに取り上げて",
+      "start_seconds": 29.84,
+      "end_seconds": 33.48,
+      "id": "ZYzg1Es67QY-display-0006",
+      "segment_id": "ZYzg1Es67QY-ja-0004"
+    },
+    {
+      "text": "いただく機会が増えました。そこでは我々",
+      "start_seconds": 33.48,
+      "end_seconds": 36.879,
+      "id": "ZYzg1Es67QY-display-0007",
+      "segment_id": "ZYzg1Es67QY-ja-0004"
+    },
+    {
+      "text": "の活動が熱意ある教員による教育会の枠を",
+      "start_seconds": 36.879,
+      "end_seconds": 41.48,
+      "id": "ZYzg1Es67QY-display-0008",
+      "segment_id": "ZYzg1Es67QY-ja-0004"
+    },
+    {
+      "text": "超えた片破りな挑戦という文脈で紹介され",
+      "start_seconds": 41.48,
+      "end_seconds": 45.559,
+      "id": "ZYzg1Es67QY-display-0009",
+      "segment_id": "ZYzg1Es67QY-ja-0005"
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 45.559,
+      "end_seconds": 47.719,
+      "id": "ZYzg1Es67QY-display-0010",
+      "segment_id": "ZYzg1Es67QY-ja-0005"
+    },
+    {
+      "text": "きっかけは3年前。",
+      "start_seconds": 47.719,
+      "end_seconds": 51.16,
+      "id": "ZYzg1Es67QY-display-0011",
+      "segment_id": "ZYzg1Es67QY-ja-0006"
+    },
+    {
+      "text": "それまで教員がほとんど行くことがなかっ",
+      "start_seconds": 51.16,
+      "end_seconds": 54.28,
+      "id": "ZYzg1Es67QY-display-0012",
+      "segment_id": "ZYzg1Es67QY-ja-0007"
+    },
+    {
+      "text": "た学校OBの講演会に",
+      "start_seconds": 54.28,
+      "end_seconds": 58.879,
+      "id": "ZYzg1Es67QY-display-0013",
+      "segment_id": "ZYzg1Es67QY-ja-0007"
+    },
+    {
+      "text": "私1人で参加したことです。",
+      "start_seconds": 58.879,
+      "end_seconds": 63.28,
+      "id": "ZYzg1Es67QY-display-0014",
+      "segment_id": "ZYzg1Es67QY-ja-0008"
+    },
+    {
+      "text": "これから新規企業が重要になってくると",
+      "start_seconds": 63.28,
+      "end_seconds": 66.119,
+      "id": "ZYzg1Es67QY-display-0015",
+      "segment_id": "ZYzg1Es67QY-ja-0009"
+    },
+    {
+      "text": "いう話だったんですが、そこで私は手",
+      "start_seconds": 66.119,
+      "end_seconds": 70.6,
+      "id": "ZYzg1Es67QY-display-0016",
+      "segment_id": "ZYzg1Es67QY-ja-0009"
+    },
+    {
+      "text": "を上げて質問しました。",
+      "start_seconds": 70.6,
+      "end_seconds": 73.479,
+      "id": "ZYzg1Es67QY-display-0017",
+      "segment_id": "ZYzg1Es67QY-ja-0009"
+    },
+    {
+      "text": "大学発電はよく聞きますが、中学生や高校",
+      "start_seconds": 73.479,
+      "end_seconds": 77.799,
+      "id": "ZYzg1Es67QY-display-0018",
+      "segment_id": "ZYzg1Es67QY-ja-0010"
+    },
+    {
+      "text": "生が何かできることはありませんか?",
+      "start_seconds": 77.799,
+      "end_seconds": 81.52,
+      "id": "ZYzg1Es67QY-display-0019",
+      "segment_id": "ZYzg1Es67QY-ja-0010"
+    },
+    {
+      "text": "その質問きっかけに学校でも講演をして",
+      "start_seconds": 81.52,
+      "end_seconds": 85.32,
+      "id": "ZYzg1Es67QY-display-0020",
+      "segment_id": "ZYzg1Es67QY-ja-0011"
+    },
+    {
+      "text": "いただくことになり、",
+      "start_seconds": 85.32,
+      "end_seconds": 87.64,
+      "id": "ZYzg1Es67QY-display-0021",
+      "segment_id": "ZYzg1Es67QY-ja-0011"
+    },
+    {
+      "text": "学内に有資団体を立ち上げ、その活動の中",
+      "start_seconds": 87.64,
+      "end_seconds": 91.759,
+      "id": "ZYzg1Es67QY-display-0022",
+      "segment_id": "ZYzg1Es67QY-ja-0011"
+    },
+    {
+      "text": "でドラゴンゲートというビジネス",
+      "start_seconds": 91.759,
+      "end_seconds": 94.759,
+      "id": "ZYzg1Es67QY-display-0023",
+      "segment_id": "ZYzg1Es67QY-ja-0012"
+    },
+    {
+      "text": "コンテストに参加しました。そしてなんと",
+      "start_seconds": 94.759,
+      "end_seconds": 99.32,
+      "id": "ZYzg1Es67QY-display-0024",
+      "segment_id": "ZYzg1Es67QY-ja-0012"
+    },
+    {
+      "text": "我々教員チームが優勝し金",
+      "start_seconds": 99.32,
+      "end_seconds": 103.28,
+      "id": "ZYzg1Es67QY-display-0025",
+      "segment_id": "ZYzg1Es67QY-ja-0012"
+    },
+    {
+      "text": "100万円をいただくことができたんです",
+      "start_seconds": 103.28,
+      "end_seconds": 105.52,
+      "id": "ZYzg1Es67QY-display-0026",
+      "segment_id": "ZYzg1Es67QY-ja-0013"
+    },
+    {
+      "text": "。優勝できて良かったね。",
+      "start_seconds": 105.52,
+      "end_seconds": 109.88,
+      "id": "ZYzg1Es67QY-display-0027",
+      "segment_id": "ZYzg1Es67QY-ja-0013"
+    },
+    {
+      "text": "なんて言いながらそこでこの話をおしまい",
+      "start_seconds": 109.88,
+      "end_seconds": 113.0,
+      "id": "ZYzg1Es67QY-display-0028",
+      "segment_id": "ZYzg1Es67QY-ja-0014"
+    },
+    {
+      "text": "にすることもできたんですが、我々はその",
+      "start_seconds": 113.0,
+      "end_seconds": 115.56,
+      "id": "ZYzg1Es67QY-display-0029",
+      "segment_id": "ZYzg1Es67QY-ja-0014"
+    },
+    {
+      "text": "後もビジネスプランを磨きつつ書類を整え",
+      "start_seconds": 115.56,
+      "end_seconds": 120.759,
+      "id": "ZYzg1Es67QY-display-0030",
+      "segment_id": "ZYzg1Es67QY-ja-0014"
+    },
+    {
+      "text": "株式会社を登記し、クラウド",
+      "start_seconds": 120.759,
+      "end_seconds": 123.759,
+      "id": "ZYzg1Es67QY-display-0031",
+      "segment_id": "ZYzg1Es67QY-ja-0015"
+    },
+    {
+      "text": "ファンディングで550万円を集め、放課",
+      "start_seconds": 123.759,
+      "end_seconds": 128.28,
+      "id": "ZYzg1Es67QY-display-0032",
+      "segment_id": "ZYzg1Es67QY-ja-0015"
+    },
+    {
+      "text": "後に仲間と分担して修行先や",
+      "start_seconds": 128.28,
+      "end_seconds": 133.64,
+      "id": "ZYzg1Es67QY-display-0033",
+      "segment_id": "ZYzg1Es67QY-ja-0016"
+    },
+    {
+      "text": "売り先を探し、",
+      "start_seconds": 133.64,
+      "end_seconds": 136.44,
+      "id": "ZYzg1Es67QY-display-0034",
+      "segment_id": "ZYzg1Es67QY-ja-0016"
+    },
+    {
+      "text": "平造書の壁を自分たちで塗",
+      "start_seconds": 136.44,
+      "end_seconds": 140.08,
+      "id": "ZYzg1Es67QY-display-0035",
+      "segment_id": "ZYzg1Es67QY-ja-0016"
+    },
+    {
+      "text": "そして実際に",
+      "start_seconds": 140.08,
+      "end_seconds": 142.44,
+      "id": "ZYzg1Es67QY-display-0036",
+      "segment_id": "ZYzg1Es67QY-ja-0017"
+    },
+    {
+      "text": "ビールを作り始めました。",
+      "start_seconds": 142.44,
+      "end_seconds": 146.0,
+      "id": "ZYzg1Es67QY-display-0037",
+      "segment_id": "ZYzg1Es67QY-ja-0017"
+    },
+    {
+      "text": "それだけ聞くと皆さんはなんて",
+      "start_seconds": 146.0,
+      "end_seconds": 149.68,
+      "id": "ZYzg1Es67QY-display-0038",
+      "segment_id": "ZYzg1Es67QY-ja-0018"
+    },
+    {
+      "text": "バイタリティだ。そんな山登りのような",
+      "start_seconds": 149.68,
+      "end_seconds": 152.2,
+      "id": "ZYzg1Es67QY-display-0039",
+      "segment_id": "ZYzg1Es67QY-ja-0018"
+    },
+    {
+      "text": "努力は自分には到底できないと思うかも",
+      "start_seconds": 152.2,
+      "end_seconds": 156.84,
+      "id": "ZYzg1Es67QY-display-0040",
+      "segment_id": "ZYzg1Es67QY-ja-0018"
+    },
+    {
+      "text": "しれません。でも私は今日ここに自分の",
+      "start_seconds": 156.84,
+      "end_seconds": 161.08,
+      "id": "ZYzg1Es67QY-display-0041",
+      "segment_id": "ZYzg1Es67QY-ja-0019"
+    },
+    {
+      "text": "努力を自慢しに来たんではないんです。",
+      "start_seconds": 161.08,
+      "end_seconds": 166.319,
+      "id": "ZYzg1Es67QY-display-0042",
+      "segment_id": "ZYzg1Es67QY-ja-0019"
+    },
+    {
+      "text": "実は私も一歩も登ってなんていないという",
+      "start_seconds": 166.319,
+      "end_seconds": 170.28,
+      "id": "ZYzg1Es67QY-display-0043",
+      "segment_id": "ZYzg1Es67QY-ja-0020"
+    },
+    {
+      "text": "事実をお伝えするためなんです。",
+      "start_seconds": 170.28,
+      "end_seconds": 173.92,
+      "id": "ZYzg1Es67QY-display-0044",
+      "segment_id": "ZYzg1Es67QY-ja-0020"
+    },
+    {
+      "text": "私は教員として日々生徒たちを見てみます",
+      "start_seconds": 173.92,
+      "end_seconds": 176.84,
+      "id": "ZYzg1Es67QY-display-0045",
+      "segment_id": "ZYzg1Es67QY-ja-0021"
+    },
+    {
+      "text": "。彼らの多くは家、学校、塾という狭い",
+      "start_seconds": 176.84,
+      "end_seconds": 184.2,
+      "id": "ZYzg1Es67QY-display-0046",
+      "segment_id": "ZYzg1Es67QY-ja-0021"
+    },
+    {
+      "text": "三角形の中で生きています。でもそれは",
+      "start_seconds": 184.2,
+      "end_seconds": 188.48,
+      "id": "ZYzg1Es67QY-display-0047",
+      "segment_id": "ZYzg1Es67QY-ja-0022"
+    },
+    {
+      "text": "我々教員も同じなんです。",
+      "start_seconds": 188.48,
+      "end_seconds": 191.799,
+      "id": "ZYzg1Es67QY-display-0048",
+      "segment_id": "ZYzg1Es67QY-ja-0022"
+    },
+    {
+      "text": "家と職員室と教室を生きする毎日",
+      "start_seconds": 191.799,
+      "end_seconds": 196.959,
+      "id": "ZYzg1Es67QY-display-0049",
+      "segment_id": "ZYzg1Es67QY-ja-0023"
+    },
+    {
+      "text": "完璧に安定した場所に続けることは新しい",
+      "start_seconds": 196.959,
+      "end_seconds": 200.48,
+      "id": "ZYzg1Es67QY-display-0050",
+      "segment_id": "ZYzg1Es67QY-ja-0023"
+    },
+    {
+      "text": "刺激を遠ざけてしまうことでもあるんです",
+      "start_seconds": 200.48,
+      "end_seconds": 202.959,
+      "id": "ZYzg1Es67QY-display-0051",
+      "segment_id": "ZYzg1Es67QY-ja-0023"
+    },
+    {
+      "text": "。",
+      "start_seconds": 202.959,
+      "end_seconds": 204.48,
+      "id": "ZYzg1Es67QY-display-0052",
+      "segment_id": "ZYzg1Es67QY-ja-0024"
+    },
+    {
+      "text": "多くの人は朝鮮を坂を登ることに例えます",
+      "start_seconds": 204.48,
+      "end_seconds": 208.64,
+      "id": "ZYzg1Es67QY-display-0053",
+      "segment_id": "ZYzg1Es67QY-ja-0025"
+    },
+    {
+      "text": "。とすると日常を過ごしている状態はこの",
+      "start_seconds": 208.64,
+      "end_seconds": 212.92,
+      "id": "ZYzg1Es67QY-display-0054",
+      "segment_id": "ZYzg1Es67QY-ja-0025"
+    },
+    {
+      "text": "坂の途中に止まっている状態と捉えること",
+      "start_seconds": 212.92,
+      "end_seconds": 216.36,
+      "id": "ZYzg1Es67QY-display-0055",
+      "segment_id": "ZYzg1Es67QY-ja-0025"
+    },
+    {
+      "text": "ができます。でも本当にそうなんでしょう",
+      "start_seconds": 216.36,
+      "end_seconds": 220.2,
+      "id": "ZYzg1Es67QY-display-0056",
+      "segment_id": "ZYzg1Es67QY-ja-0026"
+    },
+    {
+      "text": "か?",
+      "start_seconds": 220.2,
+      "end_seconds": 221.879,
+      "id": "ZYzg1Es67QY-display-0057",
+      "segment_id": "ZYzg1Es67QY-ja-0026"
+    },
+    {
+      "text": "この動かない状態を物理学的に分析してみ",
+      "start_seconds": 221.879,
+      "end_seconds": 225.76,
+      "id": "ZYzg1Es67QY-display-0058",
+      "segment_id": "ZYzg1Es67QY-ja-0027"
+    },
+    {
+      "text": "ましょう。この状態は一見安定して止まっ",
+      "start_seconds": 225.76,
+      "end_seconds": 228.84,
+      "id": "ZYzg1Es67QY-display-0059",
+      "segment_id": "ZYzg1Es67QY-ja-0027"
+    },
+    {
+      "text": "てるように見えます。でもそこにはここに",
+      "start_seconds": 228.84,
+      "end_seconds": 233.12,
+      "id": "ZYzg1Es67QY-display-0060",
+      "segment_id": "ZYzg1Es67QY-ja-0027"
+    },
+    {
+      "text": "とまらなければならないというとても強い",
+      "start_seconds": 233.12,
+      "end_seconds": 236.36,
+      "id": "ZYzg1Es67QY-display-0061",
+      "segment_id": "ZYzg1Es67QY-ja-0028"
+    },
+    {
+      "text": "精島殺力が働いています。",
+      "start_seconds": 236.36,
+      "end_seconds": 240.4,
+      "id": "ZYzg1Es67QY-display-0062",
+      "segment_id": "ZYzg1Es67QY-ja-0028"
+    },
+    {
+      "text": "つまり皆さんは今の場所にとまり続ける",
+      "start_seconds": 240.4,
+      "end_seconds": 243.64,
+      "id": "ZYzg1Es67QY-display-0063",
+      "segment_id": "ZYzg1Es67QY-ja-0029"
+    },
+    {
+      "text": "ためだけに毎日ものすごく努力をして",
+      "start_seconds": 243.64,
+      "end_seconds": 247.519,
+      "id": "ZYzg1Es67QY-display-0064",
+      "segment_id": "ZYzg1Es67QY-ja-0029"
+    },
+    {
+      "text": "踏ん張ってるんです。",
+      "start_seconds": 247.519,
+      "end_seconds": 249.92,
+      "id": "ZYzg1Es67QY-display-0065",
+      "segment_id": "ZYzg1Es67QY-ja-0029"
+    },
+    {
+      "text": "今日このテデックス名古屋Uの会場に来て",
+      "start_seconds": 249.92,
+      "end_seconds": 252.76,
+      "id": "ZYzg1Es67QY-display-0066",
+      "segment_id": "ZYzg1Es67QY-ja-0030"
+    },
+    {
+      "text": "いい話を聞いたな。明日からなんか始めて",
+      "start_seconds": 252.76,
+      "end_seconds": 256.32,
+      "id": "ZYzg1Es67QY-display-0067",
+      "segment_id": "ZYzg1Es67QY-ja-0030"
+    },
+    {
+      "text": "みよう",
+      "start_seconds": 256.32,
+      "end_seconds": 258.04,
+      "id": "ZYzg1Es67QY-display-0068",
+      "segment_id": "ZYzg1Es67QY-ja-0030"
+    },
+    {
+      "text": "と共感しても",
+      "start_seconds": 258.04,
+      "end_seconds": 260.84,
+      "id": "ZYzg1Es67QY-display-0069",
+      "segment_id": "ZYzg1Es67QY-ja-0030"
+    },
+    {
+      "text": "実際明日になればまた日常の業務の中に",
+      "start_seconds": 260.84,
+      "end_seconds": 265.16,
+      "id": "ZYzg1Es67QY-display-0070",
+      "segment_id": "ZYzg1Es67QY-ja-0031"
+    },
+    {
+      "text": "戻っていってしまいます。",
+      "start_seconds": 265.16,
+      "end_seconds": 268.96,
+      "id": "ZYzg1Es67QY-display-0071",
+      "segment_id": "ZYzg1Es67QY-ja-0031"
+    },
+    {
+      "text": "なぜ我々はこれほどまでに動けないん",
+      "start_seconds": 268.96,
+      "end_seconds": 272.199,
+      "id": "ZYzg1Es67QY-display-0072",
+      "segment_id": "ZYzg1Es67QY-ja-0032"
+    },
+    {
+      "text": "でしょうか?",
+      "start_seconds": 272.199,
+      "end_seconds": 274.32,
+      "id": "ZYzg1Es67QY-display-0073",
+      "segment_id": "ZYzg1Es67QY-ja-0032"
+    },
+    {
+      "text": "今の場所にとまるのも大変なのに、そこ",
+      "start_seconds": 274.32,
+      "end_seconds": 277.12,
+      "id": "ZYzg1Es67QY-display-0074",
+      "segment_id": "ZYzg1Es67QY-ja-0033"
+    },
+    {
+      "text": "から高を登り続けていくというのはもっと",
+      "start_seconds": 277.12,
+      "end_seconds": 280.84,
+      "id": "ZYzg1Es67QY-display-0075",
+      "segment_id": "ZYzg1Es67QY-ja-0033"
+    },
+    {
+      "text": "大変で、結局多くの人は実際に行動に移す",
+      "start_seconds": 280.84,
+      "end_seconds": 286.08,
+      "id": "ZYzg1Es67QY-display-0076",
+      "segment_id": "ZYzg1Es67QY-ja-0033"
+    },
+    {
+      "text": "ことはありません。",
+      "start_seconds": 286.08,
+      "end_seconds": 288.6,
+      "id": "ZYzg1Es67QY-display-0077",
+      "segment_id": "ZYzg1Es67QY-ja-0034"
+    },
+    {
+      "text": "1週間後、2週間後の自分の姿をリアルに",
+      "start_seconds": 288.6,
+      "end_seconds": 293.4,
+      "id": "ZYzg1Es67QY-display-0078",
+      "segment_id": "ZYzg1Es67QY-ja-0035"
+    },
+    {
+      "text": "想像してみてください。何か新しいことを",
+      "start_seconds": 293.4,
+      "end_seconds": 296.96,
+      "id": "ZYzg1Es67QY-display-0079",
+      "segment_id": "ZYzg1Es67QY-ja-0035"
+    },
+    {
+      "text": "始めているでしょうか?",
+      "start_seconds": 296.96,
+      "end_seconds": 300.919,
+      "id": "ZYzg1Es67QY-display-0080",
+      "segment_id": "ZYzg1Es67QY-ja-0036"
+    },
+    {
+      "text": "ここで1つ",
+      "start_seconds": 302.479,
+      "end_seconds": 305.52,
+      "id": "ZYzg1Es67QY-display-0081",
+      "segment_id": "ZYzg1Es67QY-ja-0037"
+    },
+    {
+      "text": "私の好きな実験を見せしましょう。ここに",
+      "start_seconds": 305.52,
+      "end_seconds": 308.759,
+      "id": "ZYzg1Es67QY-display-0082",
+      "segment_id": "ZYzg1Es67QY-ja-0037"
+    },
+    {
+      "text": "坂道がありますよね。",
+      "start_seconds": 308.759,
+      "end_seconds": 311.36,
+      "id": "ZYzg1Es67QY-display-0083",
+      "segment_id": "ZYzg1Es67QY-ja-0037"
+    },
+    {
+      "text": "そしてここに物体があります。これをここ",
+      "start_seconds": 311.36,
+      "end_seconds": 315.56,
+      "id": "ZYzg1Es67QY-display-0084",
+      "segment_id": "ZYzg1Es67QY-ja-0038"
+    },
+    {
+      "text": "に申せます。",
+      "start_seconds": 315.56,
+      "end_seconds": 318.96,
+      "id": "ZYzg1Es67QY-display-0085",
+      "segment_id": "ZYzg1Es67QY-ja-0038"
+    },
+    {
+      "text": "見てください。",
+      "start_seconds": 318.96,
+      "end_seconds": 321.72,
+      "id": "ZYzg1Es67QY-display-0086",
+      "segment_id": "ZYzg1Es67QY-ja-0039"
+    },
+    {
+      "text": "今にも滑り出しそうな急な斜面の上にこの",
+      "start_seconds": 321.72,
+      "end_seconds": 325.88,
+      "id": "ZYzg1Es67QY-display-0087",
+      "segment_id": "ZYzg1Es67QY-ja-0040"
+    },
+    {
+      "text": "ぶッたが必死に耐えて止まっている。これ",
+      "start_seconds": 325.88,
+      "end_seconds": 329.6,
+      "id": "ZYzg1Es67QY-display-0088",
+      "segment_id": "ZYzg1Es67QY-ja-0040"
+    },
+    {
+      "text": "が今の皆さんの姿です。自分に合わない",
+      "start_seconds": 329.6,
+      "end_seconds": 333.56,
+      "id": "ZYzg1Es67QY-display-0089",
+      "segment_id": "ZYzg1Es67QY-ja-0040"
+    },
+    {
+      "text": "環境、",
+      "start_seconds": 333.56,
+      "end_seconds": 335.52,
+      "id": "ZYzg1Es67QY-display-0090",
+      "segment_id": "ZYzg1Es67QY-ja-0041"
+    },
+    {
+      "text": "退屈な日常、そこから抜け出したい重力が",
+      "start_seconds": 335.52,
+      "end_seconds": 339.36,
+      "id": "ZYzg1Es67QY-display-0091",
+      "segment_id": "ZYzg1Es67QY-ja-0041"
+    },
+    {
+      "text": "かかってるのに現状維持という精島殺力が",
+      "start_seconds": 339.36,
+      "end_seconds": 344.4,
+      "id": "ZYzg1Es67QY-display-0092",
+      "segment_id": "ZYzg1Es67QY-ja-0041"
+    },
+    {
+      "text": "これを阻る。でもここで私がほんの少し",
+      "start_seconds": 344.4,
+      "end_seconds": 349.16,
+      "id": "ZYzg1Es67QY-display-0093",
+      "segment_id": "ZYzg1Es67QY-ja-0042"
+    },
+    {
+      "text": "だけ刺激を加えてみます。",
+      "start_seconds": 349.16,
+      "end_seconds": 352.4,
+      "id": "ZYzg1Es67QY-display-0094",
+      "segment_id": "ZYzg1Es67QY-ja-0042"
+    },
+    {
+      "text": "一体何が起こるでしょうか?行きますよ。",
+      "start_seconds": 352.4,
+      "end_seconds": 356.6,
+      "id": "ZYzg1Es67QY-display-0095",
+      "segment_id": "ZYzg1Es67QY-ja-0043"
+    },
+    {
+      "text": "321",
+      "start_seconds": 356.6,
+      "end_seconds": 359.6,
+      "id": "ZYzg1Es67QY-display-0096",
+      "segment_id": "ZYzg1Es67QY-ja-0044"
+    },
+    {
+      "text": "追いことが起こるもんですよね。",
+      "start_seconds": 366.08,
+      "end_seconds": 369.16,
+      "id": "ZYzg1Es67QY-display-0097",
+      "segment_id": "ZYzg1Es67QY-ja-0045"
+    },
+    {
+      "text": "条件を変えてみますね。",
+      "start_seconds": 369.16,
+      "end_seconds": 372.84,
+      "id": "ZYzg1Es67QY-display-0098",
+      "segment_id": "ZYzg1Es67QY-ja-0046"
+    },
+    {
+      "text": "じゃあ行きますよ。",
+      "start_seconds": 372.84,
+      "end_seconds": 376.28,
+      "id": "ZYzg1Es67QY-display-0099",
+      "segment_id": "ZYzg1Es67QY-ja-0047"
+    },
+    {
+      "text": "えい。あ、すごいですね。なんかこんなに",
+      "start_seconds": 376.28,
+      "end_seconds": 380.24,
+      "id": "ZYzg1Es67QY-display-0100",
+      "segment_id": "ZYzg1Es67QY-ja-0048"
+    },
+    {
+      "text": "なったことはないんですけど。行きます。",
+      "start_seconds": 380.24,
+      "end_seconds": 384.199,
+      "id": "ZYzg1Es67QY-display-0101",
+      "segment_id": "ZYzg1Es67QY-ja-0048"
+    },
+    {
+      "text": "え、",
+      "start_seconds": 384.199,
+      "end_seconds": 386.68,
+      "id": "ZYzg1Es67QY-display-0102",
+      "segment_id": "ZYzg1Es67QY-ja-0049"
+    },
+    {
+      "text": "行きますよ。",
+      "start_seconds": 386.68,
+      "end_seconds": 390.24,
+      "id": "ZYzg1Es67QY-display-0103",
+      "segment_id": "ZYzg1Es67QY-ja-0049"
+    },
+    {
+      "text": "精子摩擦力は同摩擦に切り替わり、劇的に",
+      "start_seconds": 393.28,
+      "end_seconds": 397.84,
+      "id": "ZYzg1Es67QY-display-0104",
+      "segment_id": "ZYzg1Es67QY-ja-0050"
+    },
+    {
+      "text": "小さくなって滑っていきます。きましたね",
+      "start_seconds": 397.84,
+      "end_seconds": 400.44,
+      "id": "ZYzg1Es67QY-display-0105",
+      "segment_id": "ZYzg1Es67QY-ja-0050"
+    },
+    {
+      "text": "。はい。",
+      "start_seconds": 400.44,
+      "end_seconds": 402.639,
+      "id": "ZYzg1Es67QY-display-0106",
+      "segment_id": "ZYzg1Es67QY-ja-0050"
+    },
+    {
+      "text": "で、こう見て分かっていただけたかなと",
+      "start_seconds": 402.639,
+      "end_seconds": 405.68,
+      "id": "ZYzg1Es67QY-display-0107",
+      "segment_id": "ZYzg1Es67QY-ja-0051"
+    },
+    {
+      "text": "思うんですが、実は我々のビール授業も",
+      "start_seconds": 405.68,
+      "end_seconds": 409.039,
+      "id": "ZYzg1Es67QY-display-0108",
+      "segment_id": "ZYzg1Es67QY-ja-0051"
+    },
+    {
+      "text": "これと同じだったんです。",
+      "start_seconds": 409.039,
+      "end_seconds": 412.16,
+      "id": "ZYzg1Es67QY-display-0109",
+      "segment_id": "ZYzg1Es67QY-ja-0051"
+    },
+    {
+      "text": "それは青を食い縛って登る山登りではなく",
+      "start_seconds": 412.16,
+      "end_seconds": 415.599,
+      "id": "ZYzg1Es67QY-display-0110",
+      "segment_id": "ZYzg1Es67QY-ja-0052"
+    },
+    {
+      "text": "て踏ん張るのをやめて心を踊る方へ滑って",
+      "start_seconds": 415.599,
+      "end_seconds": 420.199,
+      "id": "ZYzg1Es67QY-display-0111",
+      "segment_id": "ZYzg1Es67QY-ja-0052"
+    },
+    {
+      "text": "いく。滑り台のような経験だった。",
+      "start_seconds": 420.199,
+      "end_seconds": 424.479,
+      "id": "ZYzg1Es67QY-display-0112",
+      "segment_id": "ZYzg1Es67QY-ja-0053"
+    },
+    {
+      "text": "私がOBの講演会で1人で参加したのも",
+      "start_seconds": 424.479,
+      "end_seconds": 428.56,
+      "id": "ZYzg1Es67QY-display-0113",
+      "segment_id": "ZYzg1Es67QY-ja-0054"
+    },
+    {
+      "text": "一歩踏み出す勇気があったからではあり",
+      "start_seconds": 428.56,
+      "end_seconds": 430.96,
+      "id": "ZYzg1Es67QY-display-0114",
+      "segment_id": "ZYzg1Es67QY-ja-0054"
+    },
+    {
+      "text": "ません。そうではなくて",
+      "start_seconds": 430.96,
+      "end_seconds": 434.879,
+      "id": "ZYzg1Es67QY-display-0115",
+      "segment_id": "ZYzg1Es67QY-ja-0054"
+    },
+    {
+      "text": "ここに行けば絶対に面白い人に出会える",
+      "start_seconds": 434.879,
+      "end_seconds": 438.12,
+      "id": "ZYzg1Es67QY-display-0116",
+      "segment_id": "ZYzg1Es67QY-ja-0055"
+    },
+    {
+      "text": "だろうと思ったからです。ビジネス",
+      "start_seconds": 438.12,
+      "end_seconds": 441.919,
+      "id": "ZYzg1Es67QY-display-0117",
+      "segment_id": "ZYzg1Es67QY-ja-0055"
+    },
+    {
+      "text": "コンテストに参加したのも観客席から見て",
+      "start_seconds": 441.919,
+      "end_seconds": 444.96,
+      "id": "ZYzg1Es67QY-display-0118",
+      "segment_id": "ZYzg1Es67QY-ja-0055"
+    },
+    {
+      "text": "いるより参加した方が楽しいだろうなと",
+      "start_seconds": 444.96,
+      "end_seconds": 448.44,
+      "id": "ZYzg1Es67QY-display-0119",
+      "segment_id": "ZYzg1Es67QY-ja-0056"
+    },
+    {
+      "text": "思ったからです。",
+      "start_seconds": 448.44,
+      "end_seconds": 451.0,
+      "id": "ZYzg1Es67QY-display-0120",
+      "segment_id": "ZYzg1Es67QY-ja-0056"
+    },
+    {
+      "text": "今日のこのテデックス名古屋Uもそうです",
+      "start_seconds": 451.0,
+      "end_seconds": 453.08,
+      "id": "ZYzg1Es67QY-display-0121",
+      "segment_id": "ZYzg1Es67QY-ja-0057"
+    },
+    {
+      "text": "。",
+      "start_seconds": 453.08,
+      "end_seconds": 454.639,
+      "id": "ZYzg1Es67QY-display-0122",
+      "segment_id": "ZYzg1Es67QY-ja-0057"
+    },
+    {
+      "text": "そして例え婚で優勝したとしても",
+      "start_seconds": 454.639,
+      "end_seconds": 458.56,
+      "id": "ZYzg1Es67QY-display-0123",
+      "segment_id": "ZYzg1Es67QY-ja-0058"
+    },
+    {
+      "text": "この経験が苦しいものであったら実際の",
+      "start_seconds": 458.56,
+      "end_seconds": 461.68,
+      "id": "ZYzg1Es67QY-display-0124",
+      "segment_id": "ZYzg1Es67QY-ja-0058"
+    },
+    {
+      "text": "企業は決してしていなかったと思います。",
+      "start_seconds": 461.68,
+      "end_seconds": 466.12,
+      "id": "ZYzg1Es67QY-display-0125",
+      "segment_id": "ZYzg1Es67QY-ja-0058"
+    },
+    {
+      "text": "面白いことが起こりそうな予感しかし",
+      "start_seconds": 466.12,
+      "end_seconds": 468.52,
+      "id": "ZYzg1Es67QY-display-0126",
+      "segment_id": "ZYzg1Es67QY-ja-0059"
+    },
+    {
+      "text": "なかったから",
+      "start_seconds": 468.52,
+      "end_seconds": 470.56,
+      "id": "ZYzg1Es67QY-display-0127",
+      "segment_id": "ZYzg1Es67QY-ja-0059"
+    },
+    {
+      "text": "教員をやっているにも関わらず",
+      "start_seconds": 470.56,
+      "end_seconds": 474.639,
+      "id": "ZYzg1Es67QY-display-0128",
+      "segment_id": "ZYzg1Es67QY-ja-0059"
+    },
+    {
+      "text": "株式会社を登記して実際に行動しちゃった",
+      "start_seconds": 474.639,
+      "end_seconds": 478.879,
+      "id": "ZYzg1Es67QY-display-0129",
+      "segment_id": "ZYzg1Es67QY-ja-0060"
+    },
+    {
+      "text": "んです。",
+      "start_seconds": 478.879,
+      "end_seconds": 480.72,
+      "id": "ZYzg1Es67QY-display-0130",
+      "segment_id": "ZYzg1Es67QY-ja-0060"
+    },
+    {
+      "text": "滑り出した先で",
+      "start_seconds": 480.72,
+      "end_seconds": 483.199,
+      "id": "ZYzg1Es67QY-display-0131",
+      "segment_id": "ZYzg1Es67QY-ja-0061"
+    },
+    {
+      "text": "私の世界の見方は劇的に変わりました。",
+      "start_seconds": 483.199,
+      "end_seconds": 488.159,
+      "id": "ZYzg1Es67QY-display-0132",
+      "segment_id": "ZYzg1Es67QY-ja-0061"
+    },
+    {
+      "text": "したことで自分の視点が変わり改造度が",
+      "start_seconds": 488.159,
+      "end_seconds": 492.319,
+      "id": "ZYzg1Es67QY-display-0133",
+      "segment_id": "ZYzg1Es67QY-ja-0062"
+    },
+    {
+      "text": "上がったんです。",
+      "start_seconds": 492.319,
+      "end_seconds": 494.639,
+      "id": "ZYzg1Es67QY-display-0134",
+      "segment_id": "ZYzg1Es67QY-ja-0062"
+    },
+    {
+      "text": "例えば最近やけに面白い人が増えたなと",
+      "start_seconds": 494.639,
+      "end_seconds": 499.44,
+      "id": "ZYzg1Es67QY-display-0135",
+      "segment_id": "ZYzg1Es67QY-ja-0063"
+    },
+    {
+      "text": "思っていたんですがそうではありません。",
+      "start_seconds": 499.44,
+      "end_seconds": 503.319,
+      "id": "ZYzg1Es67QY-display-0136",
+      "segment_id": "ZYzg1Es67QY-ja-0063"
+    },
+    {
+      "text": "面白い人は最初からそこにいたんです。",
+      "start_seconds": 503.319,
+      "end_seconds": 507.759,
+      "id": "ZYzg1Es67QY-display-0137",
+      "segment_id": "ZYzg1Es67QY-ja-0064"
+    },
+    {
+      "text": "私がビールの文脈で学校の外に行き、外を",
+      "start_seconds": 507.759,
+      "end_seconds": 512.08,
+      "id": "ZYzg1Es67QY-display-0138",
+      "segment_id": "ZYzg1Es67QY-ja-0065"
+    },
+    {
+      "text": "見るようになったことで元からそこにいた",
+      "start_seconds": 512.08,
+      "end_seconds": 515.0,
+      "id": "ZYzg1Es67QY-display-0139",
+      "segment_id": "ZYzg1Es67QY-ja-0065"
+    },
+    {
+      "text": "面白い人に気がつけるようになった。",
+      "start_seconds": 515.0,
+      "end_seconds": 519.0,
+      "id": "ZYzg1Es67QY-display-0140",
+      "segment_id": "ZYzg1Es67QY-ja-0065"
+    },
+    {
+      "text": "そしてまたリールという製品の面白さにも",
+      "start_seconds": 519.0,
+      "end_seconds": 522.039,
+      "id": "ZYzg1Es67QY-display-0141",
+      "segment_id": "ZYzg1Es67QY-ja-0066"
+    },
+    {
+      "text": "気づきました。ビールは教室では決して",
+      "start_seconds": 522.039,
+      "end_seconds": 525.6,
+      "id": "ZYzg1Es67QY-display-0142",
+      "segment_id": "ZYzg1Es67QY-ja-0066"
+    },
+    {
+      "text": "味合うことができない繋がりを作ります。",
+      "start_seconds": 525.6,
+      "end_seconds": 529.839,
+      "id": "ZYzg1Es67QY-display-0143",
+      "segment_id": "ZYzg1Es67QY-ja-0066"
+    },
+    {
+      "text": "地元の脳物を不限量に入れれば農業関係の",
+      "start_seconds": 529.839,
+      "end_seconds": 534.56,
+      "id": "ZYzg1Es67QY-display-0144",
+      "segment_id": "ZYzg1Es67QY-ja-0067"
+    },
+    {
+      "text": "方とつがり、",
+      "start_seconds": 534.56,
+      "end_seconds": 537.16,
+      "id": "ZYzg1Es67QY-display-0145",
+      "segment_id": "ZYzg1Es67QY-ja-0067"
+    },
+    {
+      "text": "上造書の壁を自分たちで直せば職人の方と",
+      "start_seconds": 537.16,
+      "end_seconds": 541.079,
+      "id": "ZYzg1Es67QY-display-0146",
+      "segment_id": "ZYzg1Es67QY-ja-0067"
+    },
+    {
+      "text": "つがる。私はこの繋がりのもすたちは何者",
+      "start_seconds": 541.079,
+      "end_seconds": 545.8,
+      "id": "ZYzg1Es67QY-display-0147",
+      "segment_id": "ZYzg1Es67QY-ja-0068"
+    },
+    {
+      "text": "にも買えがいと考えてみます。1人で孤独",
+      "start_seconds": 545.8,
+      "end_seconds": 549.399,
+      "id": "ZYzg1Es67QY-display-0148",
+      "segment_id": "ZYzg1Es67QY-ja-0068"
+    },
+    {
+      "text": "に生きる人より仲間と笑いながら飲んでる",
+      "start_seconds": 549.399,
+      "end_seconds": 552.36,
+      "id": "ZYzg1Es67QY-display-0149",
+      "segment_id": "ZYzg1Es67QY-ja-0068"
+    },
+    {
+      "text": "人の方が人生は豊かだと思いませんか?今",
+      "start_seconds": 552.36,
+      "end_seconds": 556.56,
+      "id": "ZYzg1Es67QY-display-0150",
+      "segment_id": "ZYzg1Es67QY-ja-0069"
+    },
+    {
+      "text": "の私はビールに放課後や休日を使いせと",
+      "start_seconds": 556.56,
+      "end_seconds": 562.32,
+      "id": "ZYzg1Es67QY-display-0151",
+      "segment_id": "ZYzg1Es67QY-ja-0069"
+    },
+    {
+      "text": "努力作業しています。その様子を見た人は",
+      "start_seconds": 562.32,
+      "end_seconds": 566.839,
+      "id": "ZYzg1Es67QY-display-0152",
+      "segment_id": "ZYzg1Es67QY-ja-0070"
+    },
+    {
+      "text": "大変そうだなと思うかもしれません。",
+      "start_seconds": 566.839,
+      "end_seconds": 571.04,
+      "id": "ZYzg1Es67QY-display-0153",
+      "segment_id": "ZYzg1Es67QY-ja-0070"
+    },
+    {
+      "text": "でも始める前より今の方が苦しかったら私",
+      "start_seconds": 571.04,
+      "end_seconds": 575.079,
+      "id": "ZYzg1Es67QY-display-0154",
+      "segment_id": "ZYzg1Es67QY-ja-0071"
+    },
+    {
+      "text": "はもうとっくにやめています。",
+      "start_seconds": 575.079,
+      "end_seconds": 578.44,
+      "id": "ZYzg1Es67QY-display-0155",
+      "segment_id": "ZYzg1Es67QY-ja-0071"
+    },
+    {
+      "text": "今の私は無理に1箇所に踏みとまるのは",
+      "start_seconds": 578.44,
+      "end_seconds": 582.04,
+      "id": "ZYzg1Es67QY-display-0156",
+      "segment_id": "ZYzg1Es67QY-ja-0072"
+    },
+    {
+      "text": "やめ。自分が1番居心地がいいと感じる",
+      "start_seconds": 582.04,
+      "end_seconds": 585.959,
+      "id": "ZYzg1Es67QY-display-0157",
+      "segment_id": "ZYzg1Es67QY-ja-0072"
+    },
+    {
+      "text": "谷底へ向かって重力を楽しみながら滑り",
+      "start_seconds": 585.959,
+      "end_seconds": 589.88,
+      "id": "ZYzg1Es67QY-display-0158",
+      "segment_id": "ZYzg1Es67QY-ja-0072"
+    },
+    {
+      "text": "続けてるだけなんです。",
+      "start_seconds": 589.88,
+      "end_seconds": 592.839,
+      "id": "ZYzg1Es67QY-display-0159",
+      "segment_id": "ZYzg1Es67QY-ja-0073"
+    },
+    {
+      "text": "これは実は宿題と遊びの関係に似ています",
+      "start_seconds": 592.839,
+      "end_seconds": 597.04,
+      "id": "ZYzg1Es67QY-display-0160",
+      "segment_id": "ZYzg1Es67QY-ja-0074"
+    },
+    {
+      "text": "。宿題のように誰かにやりなさいと言われ",
+      "start_seconds": 597.04,
+      "end_seconds": 601.76,
+      "id": "ZYzg1Es67QY-display-0161",
+      "segment_id": "ZYzg1Es67QY-ja-0074"
+    },
+    {
+      "text": "たらその瞬間にマイナスからのスタートに",
+      "start_seconds": 601.76,
+      "end_seconds": 604.88,
+      "id": "ZYzg1Es67QY-display-0162",
+      "segment_id": "ZYzg1Es67QY-ja-0075"
+    },
+    {
+      "text": "なる。完璧にこなして当たり前。やら",
+      "start_seconds": 604.88,
+      "end_seconds": 609.6,
+      "id": "ZYzg1Es67QY-display-0163",
+      "segment_id": "ZYzg1Es67QY-ja-0075"
+    },
+    {
+      "text": "なかったら叱られる。俺が楽しいはずあり",
+      "start_seconds": 609.6,
+      "end_seconds": 613.44,
+      "id": "ZYzg1Es67QY-display-0164",
+      "segment_id": "ZYzg1Es67QY-ja-0075"
+    },
+    {
+      "text": "ませんよね。一方で遊びやビール事業は誰",
+      "start_seconds": 613.44,
+      "end_seconds": 617.44,
+      "id": "ZYzg1Es67QY-display-0165",
+      "segment_id": "ZYzg1Es67QY-ja-0076"
+    },
+    {
+      "text": "かにやれと言われたわけでも締め切りが",
+      "start_seconds": 617.44,
+      "end_seconds": 620.24,
+      "id": "ZYzg1Es67QY-display-0166",
+      "segment_id": "ZYzg1Es67QY-ja-0076"
+    },
+    {
+      "text": "あったわけでもありません。だからこそ",
+      "start_seconds": 620.24,
+      "end_seconds": 623.8,
+      "id": "ZYzg1Es67QY-display-0167",
+      "segment_id": "ZYzg1Es67QY-ja-0076"
+    },
+    {
+      "text": "真剣にでも生きと活動ができるんだと思い",
+      "start_seconds": 623.8,
+      "end_seconds": 628.36,
+      "id": "ZYzg1Es67QY-display-0168",
+      "segment_id": "ZYzg1Es67QY-ja-0077"
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 628.36,
+      "end_seconds": 630.6,
+      "id": "ZYzg1Es67QY-display-0169",
+      "segment_id": "ZYzg1Es67QY-ja-0077"
+    },
+    {
+      "text": "皆さんもう頑張って現状に踏みとまるのを",
+      "start_seconds": 630.6,
+      "end_seconds": 635.519,
+      "id": "ZYzg1Es67QY-display-0170",
+      "segment_id": "ZYzg1Es67QY-ja-0078"
+    },
+    {
+      "text": "やめてみてはどうですか?いい話を聞いた",
+      "start_seconds": 635.519,
+      "end_seconds": 638.76,
+      "id": "ZYzg1Es67QY-display-0171",
+      "segment_id": "ZYzg1Es67QY-ja-0078"
+    },
+    {
+      "text": "な。で、終わらせないでください。それは",
+      "start_seconds": 638.76,
+      "end_seconds": 643.48,
+      "id": "ZYzg1Es67QY-display-0172",
+      "segment_id": "ZYzg1Es67QY-ja-0079"
+    },
+    {
+      "text": "先ほどの坂の途中で",
+      "start_seconds": 643.48,
+      "end_seconds": 646.32,
+      "id": "ZYzg1Es67QY-display-0173",
+      "segment_id": "ZYzg1Es67QY-ja-0079"
+    },
+    {
+      "text": "やっぱり止まってよう",
+      "start_seconds": 646.32,
+      "end_seconds": 649.92,
+      "id": "ZYzg1Es67QY-display-0174",
+      "segment_id": "ZYzg1Es67QY-ja-0079"
+    },
+    {
+      "text": "かけ直すことと同じです。",
+      "start_seconds": 649.92,
+      "end_seconds": 653.2,
+      "id": "ZYzg1Es67QY-display-0175",
+      "segment_id": "ZYzg1Es67QY-ja-0080"
+    },
+    {
+      "text": "一歩踏み出すのに体操な努力は必要あり",
+      "start_seconds": 653.2,
+      "end_seconds": 657.079,
+      "id": "ZYzg1Es67QY-display-0176",
+      "segment_id": "ZYzg1Es67QY-ja-0081"
+    },
+    {
+      "text": "ません。ただ自分という観測装置の",
+      "start_seconds": 657.079,
+      "end_seconds": 661.519,
+      "id": "ZYzg1Es67QY-display-0177",
+      "segment_id": "ZYzg1Es67QY-ja-0081"
+    },
+    {
+      "text": "スイッチを入れ直し",
+      "start_seconds": 661.519,
+      "end_seconds": 664.0,
+      "id": "ZYzg1Es67QY-display-0178",
+      "segment_id": "ZYzg1Es67QY-ja-0081"
+    },
+    {
+      "text": "目の前の景色を解像度高く捉え直せばいい",
+      "start_seconds": 664.0,
+      "end_seconds": 667.639,
+      "id": "ZYzg1Es67QY-display-0179",
+      "segment_id": "ZYzg1Es67QY-ja-0082"
+    },
+    {
+      "text": "んです。例えば",
+      "start_seconds": 667.639,
+      "end_seconds": 671.0,
+      "id": "ZYzg1Es67QY-display-0180",
+      "segment_id": "ZYzg1Es67QY-ja-0082"
+    },
+    {
+      "text": "駅までの数学路や近路そこにはいくつかの",
+      "start_seconds": 671.0,
+      "end_seconds": 676.24,
+      "id": "ZYzg1Es67QY-display-0181",
+      "segment_id": "ZYzg1Es67QY-ja-0083"
+    },
+    {
+      "text": "石コが落ちていたと思います。今その詳細",
+      "start_seconds": 676.24,
+      "end_seconds": 680.76,
+      "id": "ZYzg1Es67QY-display-0182",
+      "segment_id": "ZYzg1Es67QY-ja-0083"
+    },
+    {
+      "text": "を思い出せますか?",
+      "start_seconds": 680.76,
+      "end_seconds": 685.24,
+      "id": "ZYzg1Es67QY-display-0183",
+      "segment_id": "ZYzg1Es67QY-ja-0084"
+    },
+    {
+      "text": "難しいですよね。でも今日はそのうちの1",
+      "start_seconds": 685.92,
+      "end_seconds": 689.079,
+      "id": "ZYzg1Es67QY-display-0184",
+      "segment_id": "ZYzg1Es67QY-ja-0085"
+    },
+    {
+      "text": "つを拾ってじっくり観察してみてください",
+      "start_seconds": 689.079,
+      "end_seconds": 692.92,
+      "id": "ZYzg1Es67QY-display-0185",
+      "segment_id": "ZYzg1Es67QY-ja-0085"
+    },
+    {
+      "text": "。例えば色、",
+      "start_seconds": 692.92,
+      "end_seconds": 698.399,
+      "id": "ZYzg1Es67QY-display-0186",
+      "segment_id": "ZYzg1Es67QY-ja-0086"
+    },
+    {
+      "text": "形、",
+      "start_seconds": 698.519,
+      "end_seconds": 701.72,
+      "id": "ZYzg1Es67QY-display-0187",
+      "segment_id": "ZYzg1Es67QY-ja-0086"
+    },
+    {
+      "text": "そして",
+      "start_seconds": 701.72,
+      "end_seconds": 703.279,
+      "id": "ZYzg1Es67QY-display-0188",
+      "segment_id": "ZYzg1Es67QY-ja-0086"
+    },
+    {
+      "text": "模様。",
+      "start_seconds": 703.279,
+      "end_seconds": 706.279,
+      "id": "ZYzg1Es67QY-display-0189",
+      "segment_id": "ZYzg1Es67QY-ja-0087"
+    },
+    {
+      "text": "視点を持ってみたらいろんなことに気が",
+      "start_seconds": 706.279,
+      "end_seconds": 709.68,
+      "id": "ZYzg1Es67QY-display-0190",
+      "segment_id": "ZYzg1Es67QY-ja-0088"
+    },
+    {
+      "text": "つけましたよね。",
+      "start_seconds": 709.68,
+      "end_seconds": 712.88,
+      "id": "ZYzg1Es67QY-display-0191",
+      "segment_id": "ZYzg1Es67QY-ja-0088"
+    },
+    {
+      "text": "実際に観察したら",
+      "start_seconds": 712.88,
+      "end_seconds": 715.48,
+      "id": "ZYzg1Es67QY-display-0192",
+      "segment_id": "ZYzg1Es67QY-ja-0089"
+    },
+    {
+      "text": "おめでとうございます。滑り出しちゃい",
+      "start_seconds": 715.48,
+      "end_seconds": 718.76,
+      "id": "ZYzg1Es67QY-display-0193",
+      "segment_id": "ZYzg1Es67QY-ja-0089"
+    },
+    {
+      "text": "ましたよね。",
+      "start_seconds": 718.76,
+      "end_seconds": 721.6,
+      "id": "ZYzg1Es67QY-display-0194",
+      "segment_id": "ZYzg1Es67QY-ja-0089"
+    },
+    {
+      "text": "石コでさえこのつもりで見たら新しい発見",
+      "start_seconds": 721.6,
+      "end_seconds": 726.04,
+      "id": "ZYzg1Es67QY-display-0195",
+      "segment_id": "ZYzg1Es67QY-ja-0090"
+    },
+    {
+      "text": "があるということに気がついてしまった皆",
+      "start_seconds": 726.04,
+      "end_seconds": 728.76,
+      "id": "ZYzg1Es67QY-display-0196",
+      "segment_id": "ZYzg1Es67QY-ja-0090"
+    },
+    {
+      "text": "さんはもう止まれないはずです。一歩",
+      "start_seconds": 728.76,
+      "end_seconds": 732.48,
+      "id": "ZYzg1Es67QY-display-0197",
+      "segment_id": "ZYzg1Es67QY-ja-0090"
+    },
+    {
+      "text": "踏み出すことは特別な才能ではありません",
+      "start_seconds": 732.48,
+      "end_seconds": 734.68,
+      "id": "ZYzg1Es67QY-display-0198",
+      "segment_id": "ZYzg1Es67QY-ja-0091"
+    },
+    {
+      "text": "。ただ好奇心という重力に身を任せる素直",
+      "start_seconds": 734.68,
+      "end_seconds": 739.44,
+      "id": "ZYzg1Es67QY-display-0199",
+      "segment_id": "ZYzg1Es67QY-ja-0091"
+    },
+    {
+      "text": "さです。大丈夫。",
+      "start_seconds": 739.44,
+      "end_seconds": 743.32,
+      "id": "ZYzg1Es67QY-display-0200",
+      "segment_id": "ZYzg1Es67QY-ja-0091"
+    },
+    {
+      "text": "1度動き出したあなたを物理法則は決して",
+      "start_seconds": 743.32,
+      "end_seconds": 747.12,
+      "id": "ZYzg1Es67QY-display-0201",
+      "segment_id": "ZYzg1Es67QY-ja-0092"
+    },
+    {
+      "text": "裏切りません。",
+      "start_seconds": 747.12,
+      "end_seconds": 749.92,
+      "id": "ZYzg1Es67QY-display-0202",
+      "segment_id": "ZYzg1Es67QY-ja-0092"
+    },
+    {
+      "text": "一緒に心踊る方へ流されましょう。",
+      "start_seconds": 749.92,
+      "end_seconds": 756.44,
+      "id": "ZYzg1Es67QY-display-0203",
+      "segment_id": "ZYzg1Es67QY-ja-0093"
+    },
+    {
+      "text": "ありがとうございました。[拍手]",
+      "start_seconds": 756.44,
+      "end_seconds": 760.518,
+      "id": "ZYzg1Es67QY-display-0204",
+      "segment_id": "ZYzg1Es67QY-ja-0094"
+    }
+  ]
+}

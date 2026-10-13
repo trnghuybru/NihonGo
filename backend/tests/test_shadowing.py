@@ -2,7 +2,7 @@ import json
 import time
 import unittest
 from concurrent.futures import ThreadPoolExecutor
-from unittest.mock import patch
+from unittest.mock import patch, MagicMock
 
 from sqlalchemy import func, select
 import test_speaking as fixtures
@@ -39,6 +39,260 @@ class ShadowingTests(unittest.TestCase):
         with patch('shadowing.queue.enqueue', return_value=False):
             return self.client.post(PATH, json={'url': f'https://youtu.be/{identifier}'},
                 headers={'Authorization': f'Bearer {user}'})
+
+    def translation_video(self, count=2):
+        video_id = 'translate01'
+        db.session.add(ExampleVideo(id=video_id, title='Video test', channel='Test', duration_seconds=count * 2,
+            language='ja', caption_kind='manual'))
+        db.session.add(ShadowingJob(id='translation-job', video_id=video_id, status='ready', title='Test',
+            created_at=100, updated_at=100))
+        db.session.flush()
+        for number in range(count):
+            db.session.add(CaptionSegment(id=f'sentence-{number}', video_id=video_id, sequence=number + 1,
+                text='こんにちは。', search_text='こんにちは。', start_seconds=number * 2, end_seconds=number * 2 + 1))
+        db.session.commit()
+        return f'{PATH}/translation-job/translation'
+
+    def test_quiz_is_on_demand_returns_exact_count_and_does_not_persist(self):
+        from shadowing.quiz import quiz_source
+        self.translation_video(6)
+        url = f'{PATH}/translation-job/questions'
+        self.assertEqual(self.client.post(url, json={'count': 2}).status_code, 401)
+        self.assertEqual(self.get(url).status_code, 405)
+        source = quiz_source('translation-job', 2)
+        items = [{'window_index': i, 'question': f'第{i + 1}部分の内容は何ですか。',
+                  'choices': ['日本語', '英語', 'フランス語', '中国語'], 'correct_index': i,
+                  'explanation': 'Giải thích dựa trên phụ đề.',
+                  'evidence_segment_ids': [window['segments'][-1]['segment_id']]}
+                 for i, window in enumerate(source['windows'])]
+        response_data = {'candidates': [{'finishReason': 'STOP', 'content': {'parts': [
+            {'text': json.dumps({'questions': items})}]}}]}
+        before = {table.name: db.session.scalar(select(func.count()).select_from(table))
+                  for table in db.metadata.sorted_tables if table.name.startswith('shadowing')}
+        with patch.dict('os.environ', {'GEMINI_API_KEY': 'test'}), patch('shadowing.quiz.requests.post') as provider:
+            def respond(*args, **kwargs):
+                prompt = json.loads(kwargs['json']['contents'][0]['parts'][0]['text'])
+                index = prompt['requested_window_index']
+                item = {**items[index], 'evidence_segment_ids': [prompt['windows'][0]['segments'][-1]['segment_id']]}
+                response = MagicMock(status_code=200)
+                response.json.return_value = {'candidates': [{'finishReason': 'STOP', 'content': {'parts': [
+                    {'text': json.dumps({'questions': [item]})}]}}]}
+                return response
+            provider.side_effect = respond
+            first = self.client.post(url, json={'count': 2}, headers={'Authorization': 'Bearer alice'})
+            second = self.client.post(url, json={'count': 2}, headers={'Authorization': 'Bearer alice'})
+            self.assertEqual(provider.call_count, 4)  # Two on-demand questions per request; no cache.
+            self.assertEqual(first.status_code, 200)
+            self.assertEqual(first.headers['Cache-Control'], 'no-store')
+            questions = first.json['questions']
+            self.assertEqual(len(questions), 2)
+            self.assertEqual([q['trigger_seconds'] for q in questions], [5, 11])
+            self.assertEqual(questions[0]['correct_index'], 0)
+            self.assertNotEqual(questions[0]['id'], second.json['questions'][0]['id'])
+        after = {table.name: db.session.scalar(select(func.count()).select_from(table))
+                 for table in db.metadata.sorted_tables if table.name.startswith('shadowing')}
+        self.assertEqual(before, after)
+
+    def test_quiz_rejects_bad_counts_and_unready_source_before_calling_ai(self):
+        self.translation_video()
+        url = f'{PATH}/translation-job/questions'
+        with patch('shadowing.quiz.requests.post') as provider:
+            for data in ({}, {'count': True}, {'count': 0}, {'count': 11}, {'count': '2'},
+                         {'count': 1.5}, {'count': 3}, []):
+                self.assertEqual(self.client.post(url, json=data,
+                    headers={'Authorization': 'Bearer alice'}).status_code, 400)
+            db.session.get(ShadowingJob, 'translation-job').status = 'queued'
+            db.session.commit()
+            self.assertEqual(self.client.post(url, json={'count': 1},
+                headers={'Authorization': 'Bearer alice'}).status_code, 404)
+            provider.assert_not_called()
+
+    def test_quiz_passes_requested_jlpt_level_and_requires_japanese_questions(self):
+        from shadowing.quiz import quiz_source, validate_questions, SYSTEM_PROMPT
+        self.translation_video()
+        url = f'{PATH}/translation-job/questions'
+        with patch('shadowing.quiz.generate_questions', return_value={'questions': []}) as provider:
+            for level in ('N5', 'N4', 'N3', 'N2', 'N1'):
+                response = self.client.post(url, json={'count': 1, 'level': level},
+                    headers={'Authorization': 'Bearer alice'})
+                self.assertEqual(response.status_code, 200)
+                self.assertEqual(provider.call_args.args[0]['jlpt_level'], level)
+            provider.reset_mock()
+            for level in ('N6', 'n3', None, 3, ['N3']):
+                self.assertEqual(self.client.post(url, json={'count': 1, 'level': level},
+                    headers={'Authorization': 'Bearer alice'}).status_code, 400)
+            provider.assert_not_called()
+        source = quiz_source('translation-job', 1, 'N5')
+        item = {'window_index': 0, 'question': 'これは何語ですか。',
+                'choices': ['日本語', '英語', 'フランス語', '中国語'],
+                'correct_index': 0, 'explanation': 'Người nói dùng tiếng Nhật.',
+                'evidence_segment_ids': ['sentence-1']}
+        self.assertEqual(len(validate_questions({'questions': [item]}, source)), 1)
+        item['question'] = 'Người nói dùng ngôn ngữ nào?'
+        with self.assertRaises(ApiError):
+            validate_questions({'questions': [item]}, source)
+        self.assertIn('all four choices in Japanese', SYSTEM_PROMPT)
+
+    def test_quiz_windows_follow_elapsed_time_and_never_accept_future_evidence(self):
+        from shadowing.quiz import quiz_source, validate_questions
+        self.translation_video(6)
+        for i, start in enumerate([0, 1, 2, 50, 90, 100]):
+            segment = db.session.get(CaptionSegment, f'sentence-{i}')
+            segment.start_seconds, segment.end_seconds = start, start + 1
+        db.session.commit()
+        source = quiz_source('translation-job', 2)
+        self.assertEqual([s['segment_id'] for s in source['windows'][0]['segments']],
+                         ['sentence-0', 'sentence-1', 'sentence-2'])
+        items = [{'window_index': i, 'question': f'第{i + 1}の内容は何ですか。', 'choices': ['A', 'B', 'C', 'D'],
+                  'correct_index': 0, 'explanation': 'Giải thích.',
+                  'evidence_segment_ids': [w['segments'][-1]['segment_id']]}
+                 for i, w in enumerate(source['windows'])]
+        valid = validate_questions({'questions': items}, source)
+        self.assertEqual([q['trigger_seconds'] for q in valid], [3, 101])
+        items[0]['evidence_segment_ids'] = ['sentence-5']
+        with self.assertRaises(ApiError):
+            validate_questions({'questions': items}, source)
+
+    def test_quiz_rejects_incomplete_ambiguous_or_invalid_ai_output(self):
+        from copy import deepcopy
+        from shadowing.quiz import quiz_source, validate_questions
+        self.translation_video(2)
+        source = quiz_source('translation-job', 1)
+        base = {'window_index': 0, 'question': '内容は何ですか。', 'choices': ['A', 'B', 'C', 'D'],
+                'correct_index': 1, 'explanation': 'Giải thích.', 'evidence_segment_ids': ['sentence-1']}
+        for changes in ({'choices': ['A', 'A', 'C', 'D']}, {'correct_index': True},
+                        {'correct_index': 4}, {'question': ''}, {'explanation': ''},
+                        {'evidence_segment_ids': []}, {'evidence_segment_ids': ['unknown']},
+                        {'window_index': 1}, {'choices': ['A', 'B']}):
+            item = deepcopy(base)
+            item.update(changes)
+            with self.subTest(changes=changes), self.assertRaises(ApiError):
+                validate_questions({'questions': [item]}, source)
+        with self.assertRaises(ApiError):
+            validate_questions({'questions': []}, source)
+
+    def test_quiz_handles_missing_key_provider_errors_and_truncated_json(self):
+        import requests
+        from shadowing.quiz import quiz_source, generate_questions
+        self.translation_video()
+        source = quiz_source('translation-job', 1)
+        with patch.dict('os.environ', {'GEMINI_API_KEY': ''}), self.assertRaises(ApiError) as failure:
+            generate_questions(source)
+        self.assertEqual(failure.exception.status, 503)
+        with patch.dict('os.environ', {'GEMINI_API_KEY': 'test'}), patch('shadowing.quiz.requests.post') as provider:
+            for code in (429, 500, 403):
+                provider.return_value.status_code = code
+                with self.assertRaises(ApiError):
+                    generate_questions(source)
+            provider.return_value.status_code = 200
+            provider.return_value.json.return_value = {'candidates': [{'finishReason': 'MAX_TOKENS'}]}
+            with self.assertRaises(ApiError) as failure:
+                generate_questions(source)
+            self.assertEqual(failure.exception.status, 502)
+            provider.side_effect = requests.Timeout()
+            with self.assertRaises(ApiError):
+                generate_questions(source)
+
+    def test_three_quiz_questions_use_constrained_ids_and_retry_only_invalid_window(self):
+        from collections import Counter
+        from shadowing.quiz import quiz_source, generate_questions
+        from threading import Lock
+        self.translation_video(9)
+        source = quiz_source('translation-job', 3, 'N4')
+        calls, lock = Counter(), Lock()
+        def provider(*args, **kwargs):
+            prompt = json.loads(kwargs['json']['contents'][0]['parts'][0]['text'])
+            index = prompt['requested_window_index']
+            with lock:
+                calls[index] += 1
+                attempt = calls[index]
+            schema = kwargs['json']['generationConfig']['responseJsonSchema']['properties']['questions']
+            self.assertEqual(schema['minItems'], 1)
+            self.assertEqual(schema['items']['properties']['window_index']['enum'], [index])
+            allowed = schema['items']['properties']['evidence_segment_ids']['items']['enum']
+            self.assertEqual(prompt['jlpt_level'], 'N4')
+            item = {'window_index': index, 'question': f'第{index + 1}部分の内容は何ですか。',
+                    'choices': ['日本語', '英語', 'フランス語', '中国語'], 'correct_index': 0,
+                    'explanation': 'Giải thích.',
+                    'evidence_segment_ids': ['wrong-id' if index == 1 and attempt == 1 else allowed[-1]]}
+            response = MagicMock(status_code=200)
+            response.json.return_value = {'candidates': [{'finishReason': 'STOP', 'content': {'parts': [
+                {'text': json.dumps({'questions': [item]})}]}}]}
+            return response
+        with patch.dict('os.environ', {'GEMINI_API_KEY': 'test'}), patch('shadowing.quiz.requests.post', side_effect=provider):
+            result = generate_questions(source)
+        self.assertEqual(len(result['questions']), 3)
+        self.assertEqual([q['trigger_seconds'] for q in result['questions']], [5, 11, 17])
+        self.assertEqual(calls, {0: 1, 1: 2, 2: 1})
+        self.assertEqual(result['questions'][1]['evidence_segment_ids'], ['sentence-5'])
+
+    def test_translation_is_shared_durable_and_does_not_call_provider_in_http_request(self):
+        from shadowing.models import ShadowingTranslation
+        from shadowing.translation import process_translation
+        url = self.translation_video()
+        self.assertEqual(self.client.get(url).status_code, 401)
+        self.assertEqual(self.get(url).json['status'], 'not_requested')
+        with patch.dict('os.environ', {'GEMINI_API_KEY': 'test'}), patch('shadowing.translation.enqueue', return_value=False) as enqueue, patch('shadowing.translation.translate_batch') as provider:
+            first = self.client.post(url, json={}, headers={'Authorization': 'Bearer alice'})
+            second = self.client.post(url, json={}, headers={'Authorization': 'Bearer bob'})
+            self.assertEqual(first.status_code, 202)
+            self.assertEqual(second.json['status'], 'queued')
+            self.assertEqual(db.session.scalar(select(func.count()).select_from(ShadowingTranslation)), 1)
+            enqueue.assert_called_once()
+            provider.assert_not_called()
+        row = db.session.scalar(select(ShadowingTranslation))
+        with patch('shadowing.translation.translate_batch', return_value={'sentence-0': 'Xin chào.', 'sentence-1': 'Chào bạn.'}) as provider:
+            process_translation(row.id)
+            process_translation(row.id)  # Duplicate SQS delivery does not call Gemini again.
+            provider.assert_called_once()
+        shared = self.get(url, token='bob').json
+        self.assertEqual(shared['status'], 'ready')
+        self.assertEqual(shared['items']['sentence-0'], 'Xin chào.')
+        with patch('shadowing.translation.enqueue') as enqueue:
+            self.assertEqual(self.client.post(url, json={}, headers={'Authorization': 'Bearer alice'}).status_code, 200)
+            enqueue.assert_not_called()
+
+    def test_translation_preserves_completed_batches_and_invalidates_changed_source(self):
+        from shadowing.models import ShadowingTranslation
+        from shadowing.translation import process_translation, TranslationError
+        url = self.translation_video(21)
+        with patch.dict('os.environ', {'GEMINI_API_KEY': 'test'}), patch('shadowing.translation.enqueue', return_value=False):
+            self.client.post(url, json={}, headers={'Authorization': 'Bearer alice'})
+        row = db.session.scalar(select(ShadowingTranslation))
+        batches = []
+        def provider(model, title, segments, before, after):
+            batches.append(segments)
+            if len(batches) == 2:
+                raise TranslationError('Rate limit')
+            return {item['segment_id']: 'Xin chào.' for item in segments}
+        with patch('shadowing.translation.translate_batch', side_effect=provider):
+            process_translation(row.id)
+        db.session.expire_all()
+        row = db.session.get(ShadowingTranslation, row.id)
+        self.assertEqual(len(row.translations), 20)
+        self.assertEqual(row.status, 'queued')
+        row.lease_expires_at = 0
+        db.session.commit()
+        with patch('shadowing.translation.translate_batch', return_value={'sentence-20': 'Xin chào.'}) as provider:
+            process_translation(row.id)
+            self.assertEqual([item['segment_id'] for item in provider.call_args.args[2]], ['sentence-20'])
+        self.assertEqual(self.get(url).json['status'], 'ready')
+        db.session.get(CaptionSegment, 'sentence-0').text = 'こんばんは。'
+        db.session.commit()
+        self.assertEqual(self.get(url).json['items'], {})
+        with patch.dict('os.environ', {'GEMINI_API_KEY': 'test'}), patch('shadowing.translation.enqueue', return_value=False):
+            changed = self.client.post(url, json={}, headers={'Authorization': 'Bearer alice'})
+        self.assertEqual(changed.json['status'], 'queued')
+        self.assertEqual(changed.json['completed'], 0)
+
+    def test_translation_needs_key_and_rejects_unready_or_missing_video(self):
+        url = self.translation_video()
+        with patch.dict('os.environ', {'GEMINI_API_KEY': ''}):
+            self.assertEqual(self.client.post(url, json={}, headers={'Authorization': 'Bearer alice'}).status_code, 503)
+        self.assertEqual(self.get(f'{PATH}/missing/translation').status_code, 404)
+        db.session.get(ShadowingJob, 'translation-job').status = 'failed'
+        db.session.commit()
+        self.assertEqual(self.get(url).status_code, 404)
 
     def test_word_popup_uses_all_levels_exact_reading_and_cached_morphology(self):
         from vocabulary.models import VocabularyTextbook, VocabularyLesson, VocabularyWord
@@ -312,3 +566,32 @@ class MorphologyTests(unittest.TestCase):
         token = analyzed['captions']['c'][0]
         self.assertEqual(token['text'], '語')
         self.assertEqual(analyzed['words'][token['key']]['surface'], '日本語')
+
+
+class TranslationProviderTests(unittest.TestCase):
+    def test_provider_checks_finish_reason_and_exact_segment_ids(self):
+        from unittest.mock import MagicMock
+        from shadowing.translation import translate_batch, TranslationError, DEFAULT_MODEL, SYSTEM_PROMPT
+        segments = [{'segment_id': 'one', 'text': 'こんにちは。'}]
+        response = MagicMock(status_code=200)
+        def output(items, reason='STOP'):
+            response.json.return_value = {'candidates': [{'finishReason': reason, 'content': {'parts': [
+                {'text': json.dumps({'items': items})}]}}]}
+        with patch.dict('os.environ', {'GEMINI_API_KEY': 'test'}), patch('shadowing.translation.requests.post', return_value=response) as post:
+            output([{'segment_id': 'one', 'translation': 'Xin chào.'}])
+            self.assertEqual(translate_batch(DEFAULT_MODEL, '', segments), {'one': 'Xin chào.'})
+            self.assertEqual(post.call_args.kwargs['json']['systemInstruction']['parts'][0]['text'], SYSTEM_PROMPT)
+            for items, reason in [([], 'STOP'), ([{'segment_id': 'other', 'translation': 'Xin chào.'}], 'STOP'),
+                                  ([{'segment_id': 'one', 'translation': ''}], 'STOP'),
+                                  ([{'segment_id': 'one', 'translation': 'Xin chào.'}], 'MAX_TOKENS')]:
+                output(items, reason)
+                with self.assertRaises(TranslationError):
+                    translate_batch(DEFAULT_MODEL, '', segments)
+            response.status_code = 429
+            with self.assertRaises(TranslationError) as error:
+                translate_batch(DEFAULT_MODEL, '', segments)
+            self.assertTrue(error.exception.retryable)
+            response.status_code = 403
+            with self.assertRaises(TranslationError) as error:
+                translate_batch(DEFAULT_MODEL, '', segments)
+            self.assertFalse(error.exception.retryable)

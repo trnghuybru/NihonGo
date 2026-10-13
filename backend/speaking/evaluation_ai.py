@@ -10,15 +10,16 @@ from pathlib import Path
 import requests
 
 from api_errors import ApiError
-from services.llm_service import DEFAULT_MODEL, OPENROUTER_API_URL
 from .ai import provider_retry_after
+
+DEFAULT_MODEL = 'gemini-3.1-flash-lite'
+GEMINI_API_ROOT = 'https://generativelanguage.googleapis.com/v1beta/models'
 
 RUBRIC_VERSION = "text-v1"
 CRITERIA = {"grammar": ("Ngữ pháp", 0.4), "vocabulary": ("Từ vựng", 0.3),
             "naturalness": ("Độ tự nhiên", 0.3)}
 SYSTEM_PROMPT = Path(__file__).with_name("evaluation_prompt.txt").read_text(encoding="utf-8")
 logger = logging.getLogger(__name__)
-TRANSIENT_PROVIDER_CODES = {408, 500, 502, 503, 504}
 
 
 def object_schema(properties):
@@ -117,7 +118,7 @@ def parse_result(content, messages):
 
 
 def provider_failure(code):
-    if code in {401, 402, 403, 404}:
+    if code in {400, 401, 402, 403, 404}:
         return ApiError("Model nhận xét chưa truy cập được. Kiểm tra API key, hạn mức và model trên máy chủ.",
                         503, "evaluation_unavailable")
     return ApiError("Dịch vụ model nhận xét đang gián đoạn. Hội thoại đã được lưu; vui lòng thử lại sau.",
@@ -125,8 +126,7 @@ def provider_failure(code):
 
 
 def provider_content(data):
-    # OpenRouter can send an error envelope after HTTP response headers were
-    # already sent with status 200. HTTP status alone is not proof of success.
+    # Validate the provider envelope even when HTTP reports success.
     if not isinstance(data, dict):
         raise ValueError("Invalid provider envelope")
     error = data.get("error")
@@ -140,21 +140,41 @@ def provider_content(data):
             raise ApiError("AI đang giới hạn lượt phân tích. Vui lòng thử lại sau.",
                            429, "evaluation_rate_limited", retry_after=30)
         raise provider_failure(code)
-    choice = data["choices"][0]
-    if choice.get("finish_reason") in {"length", "content_filter", "error"}:
+    feedback = data.get('promptFeedback') or {}
+    if not isinstance(feedback, dict):
+        raise ValueError('Invalid prompt feedback')
+    if feedback.get('blockReason'):
+        raise ApiError('Gemini không thể phân tích nội dung này. Hội thoại vẫn được lưu.',
+                       502, 'evaluation_failed')
+    candidate = data['candidates'][0]
+    if not isinstance(candidate, dict):
+        raise ValueError('Invalid candidate')
+    if candidate.get('finishReason') in {'SAFETY', 'BLOCKLIST', 'PROHIBITED_CONTENT', 'RECITATION'}:
+        raise ApiError('Gemini không thể phân tích nội dung này. Hội thoại vẫn được lưu.',
+                       502, 'evaluation_failed')
+    if candidate.get('finishReason') != 'STOP':
         raise ValueError("Incomplete provider output")
-    return choice["message"]["content"]
+    parts = candidate['content']['parts']
+    if not isinstance(parts, list) or any(not isinstance(part, dict) for part in parts):
+        raise ValueError('Invalid content parts')
+    content = ''.join(part.get('text', '') for part in parts if not part.get('thought'))
+    if not content.strip():
+        raise ValueError('Empty provider output')
+    return content
 
 
 def evaluation_model():
-    return os.getenv("SPEAKING_EVALUATION_MODEL") or os.getenv("OPENROUTER_MODEL") or DEFAULT_MODEL
+    return os.getenv('SPEAKING_EVALUATION_MODEL', '').strip() or DEFAULT_MODEL
 
 
 def generate_evaluation(snapshot, messages, *, prompt=SYSTEM_PROMPT, schema=OUTPUT_SCHEMA,
                         parser=parse_result, target_message_id=None):
-    key = os.getenv("OPENROUTER_API_KEY", "").strip().strip('"').strip("'")
+    key = os.getenv("GEMINI_API_KEY", "").strip().strip('"').strip("'")
     if not key:
-        raise ApiError("Chưa cấu hình dịch vụ nhận xét AI.", 503, "evaluation_unavailable")
+        raise ApiError("Chưa cấu hình GEMINI_API_KEY để nhận xét hội thoại.", 503, "evaluation_unavailable")
+    model = evaluation_model()
+    if not re.fullmatch(r'[a-zA-Z0-9._-]+', model):
+        raise ApiError('SPEAKING_EVALUATION_MODEL cần là tên model Gemini hợp lệ.', 503, 'evaluation_unavailable')
     # Never pass the private role instructions, account details or audio objects.
     context = {field: snapshot.get(field) for field in (
         "title", "context", "learning_objectives", "difficulty_level", "language_code")}
@@ -165,30 +185,25 @@ def generate_evaluation(snapshot, messages, *, prompt=SYSTEM_PROMPT, schema=OUTP
     if len(json.dumps(payload, ensure_ascii=False)) > 120000:
         raise ApiError("Hội thoại quá dài để phân tích trong một lần.", 422, "evaluation_too_long")
     request_body = {
-        "model": evaluation_model(), "stream": False, "max_tokens": 6000, "temperature": 0.2,
-        "reasoning": {"enabled": False, "exclude": True},
-        "messages": [
-            {"role": "system", "content": prompt + "\nOutput schema:\n" + json.dumps(schema)},
-            {"role": "user", "content": json.dumps(payload, ensure_ascii=False)}]}
-    # Optional strict mode for models verified to support structured outputs.
-    # Text mode remains usable with the project's existing conversation model.
-    if os.getenv("SPEAKING_EVALUATION_FORMAT", "text") == "json_schema":
-        request_body["response_format"] = {"type": "json_schema", "json_schema": {
-            "name": "message_feedback" if target_message_id else "conversation_evaluation", "strict": True, "schema": schema}}
-        request_body["provider"] = {"require_parameters": True}
+        'systemInstruction': {'parts': [{'text': prompt}]},
+        'contents': [{'role': 'user', 'parts': [{'text': json.dumps(payload, ensure_ascii=False)}]}],
+        'generationConfig': {'temperature': 0.2, 'maxOutputTokens': 8192,
+            'responseMimeType': 'application/json', 'responseJsonSchema': schema}}
+    if model.startswith('gemini-3'):
+        request_body['generationConfig']['thinkingConfig'] = {'thinkingLevel': 'minimal'}
     deadline = time.monotonic() + 80
     for attempt in range(2):
         remaining = deadline - time.monotonic() - 5
         if remaining < 1:
             raise ApiError("Phân tích quá lâu. Bạn có thể thử lại, hội thoại đã được giữ.", 504, "evaluation_timeout")
         try:
-            with requests.post(OPENROUTER_API_URL,
-                headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
+            with requests.post(f'{GEMINI_API_ROOT}/{model}:generateContent',
+                headers={"x-goog-api-key": key, "Content-Type": "application/json"},
                 json=request_body, timeout=(5, min(60 if attempt == 0 else 30, remaining))) as response:
                 if response.status_code == 429:
                     raise ApiError("AI đang giới hạn lượt phân tích. Vui lòng thử lại sau.",
                                    429, "evaluation_rate_limited", retry_after=provider_retry_after(response))
-                if response.status_code in TRANSIENT_PROVIDER_CODES:
+                if response.status_code != 200:
                     raise provider_failure(response.status_code)
                 response.raise_for_status()
                 data = response.json()
@@ -223,7 +238,8 @@ def generate_evaluation(snapshot, messages, *, prompt=SYSTEM_PROMPT, schema=OUTP
                               "Only cite target_message_id and exact substrings of that learner message. "
                               "Do not score, assess pronunciation, invent errors or repeat corrections. "
                               "Use items=[] if no useful correction is supported. Return JSON without markdown.")
-                request_body = {**request_body, "messages": [*request_body["messages"], {"role": "user", "content": repair}]}
+                request_body = {**request_body, 'contents': [*request_body['contents'],
+                    {'role': 'user', 'parts': [{'text': repair}]}]}
                 continue
             raise ApiError("Chưa nhận được nhận xét hợp lệ từ AI. Vui lòng thử phân tích lại.",
                            502, "evaluation_failed") from None

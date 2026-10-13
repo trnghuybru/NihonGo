@@ -1,0 +1,4096 @@
+{
+  "schema_version": 1,
+  "video": {
+    "youtube_id": "5t0wDGJtOrU",
+    "title": "In an After-Internet Society, the Democratization of Entrepreneurship is a GAME CHANGER | Osamu Y...",
+    "channel": "TEDx Talks",
+    "duration_seconds": 908
+  },
+  "caption_track": {
+    "language": "ja",
+    "kind": "asr",
+    "source": "youtube_automatic"
+  },
+  "source_playlist": "https://www.youtube.com/playlist?list=PLsRNoUx8w3rOHjXIU5EE4KOiIagv9yQaG",
+  "fetched_at": "2026-10-13T13:21:51.293657+00:00",
+  "segment_count": 95,
+  "segments": [
+    {
+      "text": "[音楽]",
+      "start_seconds": 1.964,
+      "end_seconds": 3.984,
+      "id": "5t0wDGJtOrU-ja-0001",
+      "sequence": 1
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 9.17,
+      "end_seconds": 11.19,
+      "id": "5t0wDGJtOrU-ja-0002",
+      "sequence": 2
+    },
+    {
+      "text": "今日は10代から30代若い人に幸せになってもらう方法についてお話ししようと思います。内容は2匹のモンスターを倒し",
+      "start_seconds": 13.799,
+      "end_seconds": 24.279,
+      "id": "5t0wDGJtOrU-ja-0003",
+      "sequence": 3
+    },
+    {
+      "text": "てで企業にチャレンジしようとそういう話です。最初に、ま、それを話すきっかけとなった僕の2つのエピソードちょっとお",
+      "start_seconds": 24.279,
+      "end_seconds": 35.04,
+      "id": "5t0wDGJtOrU-ja-0004",
+      "sequence": 4
+    },
+    {
+      "text": "話しさせていただきたいと思います。1つ目は砂漠の中の幸せ。これ35年前僕は学生時代にシルクロードをずっと旅してたんですよね。で、シルクロードの砂漠の",
+      "start_seconds": 35.04,
+      "end_seconds": 47.039,
+      "id": "5t0wDGJtOrU-ja-0005",
+      "sequence": 5
+    },
+    {
+      "text": "真ん中にい、このオアシスの町があって、で、そのオアシスの町に行ったら土の壁で",
+      "start_seconds": 47.039,
+      "end_seconds": 56.0,
+      "id": "5t0wDGJtOrU-ja-0006",
+      "sequence": 6
+    },
+    {
+      "text": "舗装もされてなくって、え、道には車じゃなくって牛や馬が歩いてると臭い。え、そういう町だったんです。で、そこにね、",
+      "start_seconds": 56.0,
+      "end_seconds": 67.799,
+      "id": "5t0wDGJtOrU-ja-0007",
+      "sequence": 7
+    },
+    {
+      "text": "は、働いてる、そこで生活してる人たちがめっちゃ幸せそうだったんですよ。で、僕",
+      "start_seconds": 67.799,
+      "end_seconds": 75.479,
+      "id": "5t0wDGJtOrU-ja-0008",
+      "sequence": 8
+    },
+    {
+      "text": "衝撃を受けて、で、そこにはお金とかブランド品とかいい車とか家ないんですよ",
+      "start_seconds": 75.479,
+      "end_seconds": 84.159,
+      "id": "5t0wDGJtOrU-ja-0009",
+      "sequence": 9
+    },
+    {
+      "text": "。僕がを幸せにしてくれると思ってた幸せのアイテム一切ないのに幸せあるんですよ。で、それでなんかふと、あ、幸せって",
+      "start_seconds": 84.159,
+      "end_seconds": 95.72,
+      "id": "5t0wDGJtOrU-ja-0010",
+      "sequence": 10
+    },
+    {
+      "text": "万人に与えられた権利なんかなって。誰でも自分が幸せやなって思ったら幸せになれんのかな。なんか吹っ切れた感じがし",
+      "start_seconds": 95.72,
+      "end_seconds": 103.92,
+      "id": "5t0wDGJtOrU-ja-0011",
+      "sequence": 11
+    },
+    {
+      "text": "て、で、そこから卒業して、え、就職するんですけれども、こう当時、え、世界で自価総額1番になった日本の銀行に入った",
+      "start_seconds": 103.92,
+      "end_seconds": 115.32,
+      "id": "5t0wDGJtOrU-ja-0012",
+      "sequence": 12
+    },
+    {
+      "text": "んです。で、そこから、あ、ま、その中で働いて、で、もうみんなすごいなっていい会社に入ったねって言われたんですけど、",
+      "start_seconds": 115.32,
+      "end_seconds": 124.479,
+      "id": "5t0wDGJtOrU-ja-0013",
+      "sequence": 13
+    },
+    {
+      "text": "全然幸せじゃなくって、全然役に立ててる感じがしなくって、やりがいもなかった。",
+      "start_seconds": 124.479,
+      "end_seconds": 130.2,
+      "id": "5t0wDGJtOrU-ja-0014",
+      "sequence": 14
+    },
+    {
+      "text": "で、すぐにやめたんです。で、やめて創業間もないベンチャー企業に入ったんです。",
+      "start_seconds": 130.2,
+      "end_seconds": 136.72,
+      "id": "5t0wDGJtOrU-ja-0015",
+      "sequence": 15
+    },
+    {
+      "text": "で、2つ目のエピソードっていうのはその時の話なんですけど、社員の市、え、僕は、ま、世のため、人のため、社会のためで",
+      "start_seconds": 136.72,
+      "end_seconds": 146.44,
+      "id": "5t0wDGJtOrU-ja-0016",
+      "sequence": 16
+    },
+    {
+      "text": "、そのために会社大きくしていきたいなって。で、会社大きくして業績良くしていったら社員も幸せになるんちゃうかなと思っ",
+      "start_seconds": 146.44,
+      "end_seconds": 154.879,
+      "id": "5t0wDGJtOrU-ja-0017",
+      "sequence": 17
+    },
+    {
+      "text": "て一生懸命会社のため頑張ってった。で、そういう中で、え、企業を、ま、買収するっていう機会があって、会社を勝った",
+      "start_seconds": 154.879,
+      "end_seconds": 164.64,
+      "id": "5t0wDGJtOrU-ja-0018",
+      "sequence": 18
+    },
+    {
+      "text": "んですね。で、その会社の社長に僕なったんです。で、その時に、ま、心を病んでて会社に来れてなかった社員がいたんです。",
+      "start_seconds": 164.64,
+      "end_seconds": 175.519,
+      "id": "5t0wDGJtOrU-ja-0019",
+      "sequence": 19
+    },
+    {
+      "text": "で、僕が社長になってきっと僕になんか期待してくれたんだと思うんですけど、なんか変わんのかなと思って会社に聞出したんです。でも僕はその社員のことよりも",
+      "start_seconds": 175.519,
+      "end_seconds": 186.48,
+      "id": "5t0wDGJtOrU-ja-0020",
+      "sequence": 20
+    },
+    {
+      "text": "業績のことの方が大事だったんです。業績を上げていく方が社会のため、会社のためであり、社員のためやと思ってて、で、またその人っていうのは期待を",
+      "start_seconds": 186.48,
+      "end_seconds": 198.319,
+      "id": "5t0wDGJtOrU-ja-0021",
+      "sequence": 21
+    },
+    {
+      "text": "裏切られたと思って会社来れなくなったんです。会社来れなくなったと同時にインターネットでその期待が結局恨みに",
+      "start_seconds": 198.319,
+      "end_seconds": 207.04,
+      "id": "5t0wDGJtOrU-ja-0022",
+      "sequence": 22
+    },
+    {
+      "text": "変わってお前らの家族痛い目に合わしてやるっていう風に書き込み出したんです。",
+      "start_seconds": 207.04,
+      "end_seconds": 213.879,
+      "id": "5t0wDGJtOrU-ja-0023",
+      "sequence": 23
+    },
+    {
+      "text": "そこから僕は家族含めて毎日ビクビク怯えながら生活し出すんです。1年後連絡が",
+      "start_seconds": 213.879,
+      "end_seconds": 224.799,
+      "id": "5t0wDGJtOrU-ja-0024",
+      "sequence": 24
+    },
+    {
+      "text": "あってその社員が家で亡くなってたって聞いたんです。その時にね、良かったって",
+      "start_seconds": 224.799,
+      "end_seconds": 232.84,
+      "id": "5t0wDGJtOrU-ja-0025",
+      "sequence": 25
+    },
+    {
+      "text": "思ったんです。ほっとしたんです。僕それがまた自分ですごいショックで人のためやと思って、社員のためやと思って一生懸命",
+      "start_seconds": 232.84,
+      "end_seconds": 243.959,
+      "id": "5t0wDGJtOrU-ja-0026",
+      "sequence": 26
+    },
+    {
+      "text": "頑張ってたのに社員がなくなってほっとしてる自分がいるんですよ。なんなんやろ会社ってそういう風に思った出来事でした",
+      "start_seconds": 243.959,
+      "end_seconds": 254.04,
+      "id": "5t0wDGJtOrU-ja-0027",
+      "sequence": 27
+    },
+    {
+      "text": "。え、ちょっと話変わるんですけれども、この数字って何かって言うと、世界幸福度ランキングっていうのがあって、55位",
+      "start_seconds": 254.04,
+      "end_seconds": 264.72,
+      "id": "5t0wDGJtOrU-ja-0028",
+      "sequence": 28
+    },
+    {
+      "text": "日本、147つの国の中で145位槍りガイドランキング再下",
+      "start_seconds": 264.72,
+      "end_seconds": 273.12,
+      "id": "5t0wDGJtOrU-ja-0029",
+      "sequence": 29
+    },
+    {
+      "text": "経済的に潤ってる日本が幸せでもあんまりなかったらやりがいもないっていう風に思ってるんですよね。え、幸福ランキング",
+      "start_seconds": 273.12,
+      "end_seconds": 283.6,
+      "id": "5t0wDGJtOrU-ja-0030",
+      "sequence": 30
+    },
+    {
+      "text": "1位のフィンランド行って色々話聞いたり、え、槍りガイドランキング1位のアメリカ僕も10年ぐらい住んでいろんな人と働いたりしてて、え、感じたり、ま、",
+      "start_seconds": 283.6,
+      "end_seconds": 295.12,
+      "id": "5t0wDGJtOrU-ja-0031",
+      "sequence": 31
+    },
+    {
+      "text": "聞いたりして思うんですけど、別に日本にもあるやん。日本人でもできるやん。",
+      "start_seconds": 295.12,
+      "end_seconds": 302.28,
+      "id": "5t0wDGJtOrU-ja-0032",
+      "sequence": 32
+    },
+    {
+      "text": "すごい特別なことが北にあったり、アメリカにあったりするわけじゃないんですよね。じゃあなんで日本ってそれでけへんの?て発見したんです。モンスターが",
+      "start_seconds": 302.28,
+      "end_seconds": 313.08,
+      "id": "5t0wDGJtOrU-ja-0033",
+      "sequence": 33
+    },
+    {
+      "text": "いるんちゃうかって。日本にはきっとこのモンスターが潜んでて、そのモンスターが悪さして洗脳してるんちゃうか発見したん",
+      "start_seconds": 313.08,
+      "end_seconds": 323.759,
+      "id": "5t0wDGJtOrU-ja-0034",
+      "sequence": 34
+    },
+    {
+      "text": "です。みんなやばい話したなって思ってんでしょ?みんなここで大丈夫ですよ。続けますよ。で、1つ目のモンスター常識っていうモンスター。この常識っていうモンス",
+      "start_seconds": 323.759,
+      "end_seconds": 335.6,
+      "id": "5t0wDGJtOrU-ja-0035",
+      "sequence": 35
+    },
+    {
+      "text": "ターっていうのを紹介するのにマズロの5段階欲求っていうのを使ってご説明します。これは1段階目っていうのは行きたい",
+      "start_seconds": 335.6,
+      "end_seconds": 345.0,
+      "id": "5t0wDGJtOrU-ja-0036",
+      "sequence": 36
+    },
+    {
+      "text": "なって思う欲求で人っていうのはその行きたいなって思う欲求がクリアされたら安心安全になりたいなっていう欲求があってそれががクリアされるとどっか居場所が",
+      "start_seconds": 345.0,
+      "end_seconds": 355.88,
+      "id": "5t0wDGJtOrU-ja-0037",
+      "sequence": 37
+    },
+    {
+      "text": "欲しいなっていう欲求があってでそこから今度は承認されたいっていう欲求になってで自己実現これやりたいんやっていうものができていくでこういう風に段階踏んで",
+      "start_seconds": 355.88,
+      "end_seconds": 367.28,
+      "id": "5t0wDGJtOrU-ja-0038",
+      "sequence": 38
+    },
+    {
+      "text": "いくとこれって結構もう高度成長期の日本に結構当てはまるなって思って僕の父とか",
+      "start_seconds": 367.28,
+      "end_seconds": 377.759,
+      "id": "5t0wDGJtOrU-ja-0039",
+      "sequence": 39
+    },
+    {
+      "text": "母戦後ずっと一生懸命働いていって頑張って高度成長期を支えてきたんだと思うんですよね。あれが欲しいとかって言い",
+      "start_seconds": 377.759,
+      "end_seconds": 387.039,
+      "id": "5t0wDGJtOrU-ja-0040",
+      "sequence": 40
+    },
+    {
+      "text": "ながらでこうを会社に入って一生懸命頑張ってで小心消求して行ってマイカーマイホームムって夢が叶うこれを対現した",
+      "start_seconds": 387.039,
+      "end_seconds": 398.24,
+      "id": "5t0wDGJtOrU-ja-0041",
+      "sequence": 41
+    },
+    {
+      "text": "んですよね。で、きっとその時の成功体験っていうのは頑張って勉強していい会社に入って上司の言うことを聞いていい社員に",
+      "start_seconds": 398.24,
+      "end_seconds": 407.52,
+      "id": "5t0wDGJtOrU-ja-0042",
+      "sequence": 42
+    },
+    {
+      "text": "なってやっていったら夢は叶うって幸せになれるってそういう法則なんだと思うんです。でそれを僕はずっと教育されてき",
+      "start_seconds": 407.52,
+      "end_seconds": 418.0,
+      "id": "5t0wDGJtOrU-ja-0043",
+      "sequence": 43
+    },
+    {
+      "text": "ながらまやってきたんですよね。頑張って勉強しっておむ君みたいなね。え、サラリーマン妖精ブスみたいなはめられながらこう塾に通いながらね、一生懸命",
+      "start_seconds": 418.0,
+      "end_seconds": 428.639,
+      "id": "5t0wDGJtOrU-ja-0044",
+      "sequence": 44
+    },
+    {
+      "text": "やってきたわけです。で、ま、そこから僕は、ま、社会人になってからですけれども、え、失われた30年っていうのが始まる",
+      "start_seconds": 428.639,
+      "end_seconds": 438.319,
+      "id": "5t0wDGJtOrU-ja-0045",
+      "sequence": 45
+    },
+    {
+      "text": "わけです。92年から一生懸命頑張っても業績上がんない。一生懸命頑張っても評価されない。なんなら給料下がっていく。でもどんどんどんどんもっともっともっとっ",
+      "start_seconds": 438.319,
+      "end_seconds": 448.36,
+      "id": "5t0wDGJtOrU-ja-0046",
+      "sequence": 46
+    },
+    {
+      "text": "て競争させられていって承認されるどころか居場所さえなくなって心の安全さえ、え、満たされないような状態になっていって",
+      "start_seconds": 448.36,
+      "end_seconds": 457.319,
+      "id": "5t0wDGJtOrU-ja-0047",
+      "sequence": 47
+    },
+    {
+      "text": "。でもまだこれを経験しても頑張って勉強して頑張っていい会社に入った方が幸せになれるんちゃうかっていうのって残ってる",
+      "start_seconds": 457.319,
+      "end_seconds": 467.84,
+      "id": "5t0wDGJtOrU-ja-0048",
+      "sequence": 48
+    },
+    {
+      "text": "気がするんですよね。これ1つ目のモンスターの話で2つ目のモンスター会社。この会社っていうのは会社に入ったら人",
+      "start_seconds": 467.84,
+      "end_seconds": 478.56,
+      "id": "5t0wDGJtOrU-ja-0049",
+      "sequence": 49
+    },
+    {
+      "text": "っていうのは幸せにしてもらえる安心安全っていうのもこう満たされるそう思って会社に入ると思うんですけどハッピーセットっていうのがあってでこれはまストって",
+      "start_seconds": 478.56,
+      "end_seconds": 490.4,
+      "id": "5t0wDGJtOrU-ja-0050",
+      "sequence": 50
+    },
+    {
+      "text": "言われるんですけどもやりたいことできることやるべきことこの3つの縁を重ね合わせていくと会社の中で幸せにやりがいを持って働けると3つ重ねましょ",
+      "start_seconds": 490.4,
+      "end_seconds": 501.759,
+      "id": "5t0wDGJtOrU-ja-0051",
+      "sequence": 51
+    },
+    {
+      "text": "うってでも実は会社っていうのはこのビジネスセットっていうので成り立っててできることとやるべきことっていうのが重なるとお金になるんですよ。例えば",
+      "start_seconds": 501.759,
+      "end_seconds": 512.44,
+      "id": "5t0wDGJtOrU-ja-0052",
+      "sequence": 52
+    },
+    {
+      "text": "ラーメン屋さんが美味しいラーメン作るじゃないですか。で、美味しいなって言ってそのラーメン食べるじゃないですか。お金払う。これでビジネス成立なんですよ。",
+      "start_seconds": 512.44,
+      "end_seconds": 520.399,
+      "id": "5t0wDGJtOrU-ja-0053",
+      "sequence": 53
+    },
+    {
+      "text": "ラーメン屋さんがどんだけラーメン嫌いでも関係ないですよ。だから会社っていうのは別にやりたいことなんてどうでもいいんですよ。本人のできることとやるべきこと",
+      "start_seconds": 520.399,
+      "end_seconds": 530.48,
+      "id": "5t0wDGJtOrU-ja-0054",
+      "sequence": 54
+    },
+    {
+      "text": "をいかに合わしていくかっていうのを一生懸命考える仕組みになってるんです。会社っていうのは。で、もう1つ成長っていう言葉よく聞きますよね。成長って言われ",
+      "start_seconds": 530.48,
+      "end_seconds": 542.12,
+      "id": "5t0wDGJtOrU-ja-0055",
+      "sequence": 55
+    },
+    {
+      "text": "たらなんかワクワクすんな。幸せになりそうやな。やりたいなって若い人なんか特にそう思うと思うんです。会社に入っても成長したい。会社も成長させてあげるよって言うと。で、幸せな成長っていうの",
+      "start_seconds": 542.12,
+      "end_seconds": 552.48,
+      "id": "5t0wDGJtOrU-ja-0056",
+      "sequence": 56
+    },
+    {
+      "text": "は自分がやりたいなって思うことに対して変化していく。できることが増えていくっていうのが幸せな成長です。会社っていうのはそうじゃなくてやって欲しいこと、",
+      "start_seconds": 552.48,
+      "end_seconds": 562.2,
+      "id": "5t0wDGJtOrU-ja-0057",
+      "sequence": 57
+    },
+    {
+      "text": "会社がやって欲しいことに対して社員ができるようになってことが増えていくってのは成長。それが会社の成長につがるからこっち側の成長っていうんですね。ここに",
+      "start_seconds": 562.2,
+      "end_seconds": 571.64,
+      "id": "5t0wDGJtOrU-ja-0058",
+      "sequence": 58
+    },
+    {
+      "text": "本人の幸せな成長と会社が望む成長のギャップがあるんですよ。ここが会社っていうモンスターの特徴であります。これ",
+      "start_seconds": 571.64,
+      "end_seconds": 583.04,
+      "id": "5t0wDGJtOrU-ja-0059",
+      "sequence": 59
+    },
+    {
+      "text": "問題だと思いません。この2つ2匹のモンスター倒したいと思いません。で、僕らは、え、皆さんは何ができるか?実は",
+      "start_seconds": 583.04,
+      "end_seconds": 593.36,
+      "id": "5t0wDGJtOrU-ja-0060",
+      "sequence": 60
+    },
+    {
+      "text": "もうすでにみんな武器を持ってるんですよ。エクスカリバーを。どんな向きかって言うと、インターネットやAIやそういう",
+      "start_seconds": 593.36,
+      "end_seconds": 603.56,
+      "id": "5t0wDGJtOrU-ja-0061",
+      "sequence": 61
+    },
+    {
+      "text": "武器です。で、BIからAIへ。これはビフォーインターネットとアフターインターネットっていう意味なんですけど、今まで僕が話したモンスターの話って",
+      "start_seconds": 603.56,
+      "end_seconds": 613.48,
+      "id": "5t0wDGJtOrU-ja-0062",
+      "sequence": 62
+    },
+    {
+      "text": "いうのは基本的にはインターネット前の世界で作られた常識であって会社であるわけです。で、これからアフターインターネットの世界で皆さんが作り出す",
+      "start_seconds": 613.48,
+      "end_seconds": 624.519,
+      "id": "5t0wDGJtOrU-ja-0063",
+      "sequence": 63
+    },
+    {
+      "text": "常識があるんですよ。で、皆さんが作り出す新しい会社の形があるはずなんですよ。で、その自分たちの幸せのために",
+      "start_seconds": 624.519,
+      "end_seconds": 633.44,
+      "id": "5t0wDGJtOrU-ja-0064",
+      "sequence": 64
+    },
+    {
+      "text": "そういう会社ってね、そういう常識って作ってみればいいんじゃないかな、作れるんじゃないかなって思うんです。この数字",
+      "start_seconds": 633.44,
+      "end_seconds": 641.399,
+      "id": "5t0wDGJtOrU-ja-0065",
+      "sequence": 65
+    },
+    {
+      "text": "何かって言うと、日本の企業数360万社あるんです。で、そのうち1000人以上",
+      "start_seconds": 641.399,
+      "end_seconds": 650.04,
+      "id": "5t0wDGJtOrU-ja-0066",
+      "sequence": 66
+    },
+    {
+      "text": "の会社って0.13%しかないんですよ。",
+      "start_seconds": 650.04,
+      "end_seconds": 654.04,
+      "id": "5t0wDGJtOrU-ja-0067",
+      "sequence": 67
+    },
+    {
+      "text": "で、170万社っていうのは個人事業主って言われて、1人でやってる会社47%あるんです。でもこの1000人以上の",
+      "start_seconds": 654.04,
+      "end_seconds": 665.399,
+      "id": "5t0wDGJtOrU-ja-0068",
+      "sequence": 68
+    },
+    {
+      "text": "0.13%の会社にみんな一生懸命入ろうとしてません。で、その会社に入ったらおめでとうって言われて、その会社に入らへんかったら",
+      "start_seconds": 665.399,
+      "end_seconds": 676.12,
+      "id": "5t0wDGJtOrU-ja-0069",
+      "sequence": 69
+    },
+    {
+      "text": "負け組って言われてるような感じしません。でも170万人、170万社の人達って",
+      "start_seconds": 676.12,
+      "end_seconds": 684.56,
+      "id": "5t0wDGJtOrU-ja-0070",
+      "sequence": 70
+    },
+    {
+      "text": "いうのが今のこう世界の経済立国の日本を支えてたりするわけですよ。ここでみんなが不幸になってるわけじゃ決してないわけ",
+      "start_seconds": 684.56,
+      "end_seconds": 694.6,
+      "id": "5t0wDGJtOrU-ja-0071",
+      "sequence": 71
+    },
+    {
+      "text": "です。逆に言うと1000人以上の会社で勝ち組って言われてる人がさっき言ったみたいに幸せ感じてなかったりやりがい感じてなかったりするっていうのが今の",
+      "start_seconds": 694.6,
+      "end_seconds": 705.2,
+      "id": "5t0wDGJtOrU-ja-0072",
+      "sequence": 72
+    },
+    {
+      "text": "日本なんですよ。で、ここでもう企業って言ったら大衆化されてるわけです。会社って実は大衆化されてて、さっき言っ",
+      "start_seconds": 705.2,
+      "end_seconds": 715.12,
+      "id": "5t0wDGJtOrU-ja-0073",
+      "sequence": 73
+    },
+    {
+      "text": "たくさんの会社、個人事業者はたくさんいてもうすでに経済回ってるわけなんですよね。だそこで一緒に起業してみませんかってできんじゃないですかって思うわけ",
+      "start_seconds": 715.12,
+      "end_seconds": 726.12,
+      "id": "5t0wDGJtOrU-ja-0074",
+      "sequence": 74
+    },
+    {
+      "text": "です。別に学生しながら起業できるわけですよ。どっかの会社に入りながら副業で企業ってできるわけですよ。そんな大したリスクいらないじゃないですか。え、で、",
+      "start_seconds": 726.12,
+      "end_seconds": 736.32,
+      "id": "5t0wDGJtOrU-ja-0075",
+      "sequence": 75
+    },
+    {
+      "text": "その時に何やりたいか分からへん。",
+      "start_seconds": 736.32,
+      "end_seconds": 738.44,
+      "id": "5t0wDGJtOrU-ja-0076",
+      "sequence": 76
+    },
+    {
+      "text": "ビジネスなんかやったことないからって思うと思うんですね。大事なことはありがとうっていう言葉。このキーワード。へえ。なぜかって言うとこの会社をやる",
+      "start_seconds": 738.44,
+      "end_seconds": 748.48,
+      "id": "5t0wDGJtOrU-ja-0077",
+      "sequence": 77
+    },
+    {
+      "text": "時に全身前例をかけて覚悟を決めてね。で、世界一になるんだ。上場するんだ。",
+      "start_seconds": 748.48,
+      "end_seconds": 754.92,
+      "id": "5t0wDGJtOrU-ja-0078",
+      "sequence": 78
+    },
+    {
+      "text": "そんな会社を作るんだって言わないと会社できないんじゃないかって思ってないですか。いや、そうじゃなくって、まずはありがとうって自己実現の欲求の前に証人",
+      "start_seconds": 754.92,
+      "end_seconds": 766.04,
+      "id": "5t0wDGJtOrU-ja-0079",
+      "sequence": 79
+    },
+    {
+      "text": "とか居場所がある。自分ができることで人にありがとうって言ってもらう。まさにそれってビジネスの原点なわけですよ。え、そこをいきなり100万人じゃなくって",
+      "start_seconds": 766.04,
+      "end_seconds": 777.04,
+      "id": "5t0wDGJtOrU-ja-0080",
+      "sequence": 80
+    },
+    {
+      "text": "1人2人3人でもいいんです。その人に自分ができることで、自分の好きなことでありがとうって言ってもらえることから始めていく。それをどういう風にビジネスにしていくかっていうのはいろんな人に",
+      "start_seconds": 777.04,
+      "end_seconds": 788.72,
+      "id": "5t0wDGJtOrU-ja-0081",
+      "sequence": 81
+    },
+    {
+      "text": "手伝ってもらう。なんならAIに一緒に考えてもらったらいいわけです。それができるんですよ。ですか?ゲームチェンジャーズ。あ、こう皆さんはなんか",
+      "start_seconds": 788.72,
+      "end_seconds": 800.399,
+      "id": "5t0wDGJtOrU-ja-0082",
+      "sequence": 82
+    },
+    {
+      "text": "皆さんを幸せにしてくれるんじゃないかって思う常識とか会社に依存しちゃってんじゃないかなって。支配されてんじゃ",
+      "start_seconds": 800.399,
+      "end_seconds": 810.92,
+      "id": "5t0wDGJtOrU-ja-0083",
+      "sequence": 83
+    },
+    {
+      "text": "ないかなって思うんです。なんでか自分から始まってないんですよ。自分が発するものとか自分が幸せになりたいやりたい",
+      "start_seconds": 810.92,
+      "end_seconds": 820.639,
+      "id": "5t0wDGJtOrU-ja-0084",
+      "sequence": 84
+    },
+    {
+      "text": "ことから始まってないんですよ。そうじゃなくって、まずは自分の心に素直手を当てて素直に何を干してるのか、何をやりたい",
+      "start_seconds": 820.639,
+      "end_seconds": 831.639,
+      "id": "5t0wDGJtOrU-ja-0085",
+      "sequence": 85
+    },
+    {
+      "text": "のかそのためのアイテムとして常識で会社でITとかを使ってそれを実現していくっ",
+      "start_seconds": 831.639,
+      "end_seconds": 842.279,
+      "id": "5t0wDGJtOrU-ja-0086",
+      "sequence": 86
+    },
+    {
+      "text": "て100に100通りの個性があって、100通りの生き方があって、100通り",
+      "start_seconds": 842.279,
+      "end_seconds": 851.079,
+      "id": "5t0wDGJtOrU-ja-0087",
+      "sequence": 87
+    },
+    {
+      "text": "の幸せの形があると思うんです。で、その幸せの形があるにも関わらず何かに囚われ",
+      "start_seconds": 851.079,
+      "end_seconds": 858.24,
+      "id": "5t0wDGJtOrU-ja-0088",
+      "sequence": 88
+    },
+    {
+      "text": "てる。で、それそこからこの常識とかがその会社っていうモンスター倒して、え、",
+      "start_seconds": 858.24,
+      "end_seconds": 867.12,
+      "id": "5t0wDGJtOrU-ja-0089",
+      "sequence": 89
+    },
+    {
+      "text": "自分自身の幸せっていうのを作ってみませんかと。こう権限とか権力お金で支配さ",
+      "start_seconds": 867.12,
+      "end_seconds": 875.56,
+      "id": "5t0wDGJtOrU-ja-0090",
+      "sequence": 90
+    },
+    {
+      "text": "れる社会から自分がこうやりたいなを実現したいなっていうもう理想をとしてそれを人に伝えて協力してもらって一緒に生き",
+      "start_seconds": 875.56,
+      "end_seconds": 887.12,
+      "id": "5t0wDGJtOrU-ja-0091",
+      "sequence": 91
+    },
+    {
+      "text": "ワクワクするような社会にゲームチェンジ一緒にしましょうよ。",
+      "start_seconds": 887.12,
+      "end_seconds": 894.72,
+      "id": "5t0wDGJtOrU-ja-0092",
+      "sequence": 92
+    },
+    {
+      "text": "皆さん幸せですか?",
+      "start_seconds": 894.72,
+      "end_seconds": 898.36,
+      "id": "5t0wDGJtOrU-ja-0093",
+      "sequence": 93
+    },
+    {
+      "text": "ありがとうございます。[拍手]",
+      "start_seconds": 898.36,
+      "end_seconds": 902.0,
+      "id": "5t0wDGJtOrU-ja-0094",
+      "sequence": 94
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 904.565,
+      "end_seconds": 906.585,
+      "id": "5t0wDGJtOrU-ja-0095",
+      "sequence": 95
+    }
+  ],
+  "raw_captions": [
+    {
+      "text": "[音楽]",
+      "start_seconds": 1.964,
+      "end_seconds": 3.984
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 9.17,
+      "end_seconds": 11.19
+    },
+    {
+      "text": "今日は10代から30代若い人に幸せに",
+      "start_seconds": 13.799,
+      "end_seconds": 20.68
+    },
+    {
+      "text": "なってもらう方法についてお話ししようと",
+      "start_seconds": 18.199,
+      "end_seconds": 24.279000000000003
+    },
+    {
+      "text": "思います。内容は2匹のモンスターを倒し",
+      "start_seconds": 20.68,
+      "end_seconds": 28.0
+    },
+    {
+      "text": "てで企業にチャレンジしようとそういう話",
+      "start_seconds": 24.279,
+      "end_seconds": 32.519999999999996
+    },
+    {
+      "text": "です。最初に、ま、それを話すきっかけと",
+      "start_seconds": 28.0,
+      "end_seconds": 35.04
+    },
+    {
+      "text": "なった僕の2つのエピソードちょっとお",
+      "start_seconds": 32.52,
+      "end_seconds": 37.36
+    },
+    {
+      "text": "話しさせていただきたいと思います。1つ",
+      "start_seconds": 35.04,
+      "end_seconds": 41.559
+    },
+    {
+      "text": "目は砂漠の中の幸せ。これ35年前僕は",
+      "start_seconds": 37.36,
+      "end_seconds": 44.719
+    },
+    {
+      "text": "学生時代にシルクロードをずっと旅してた",
+      "start_seconds": 41.559,
+      "end_seconds": 47.039
+    },
+    {
+      "text": "んですよね。で、シルクロードの砂漠の",
+      "start_seconds": 44.719,
+      "end_seconds": 51.44
+    },
+    {
+      "text": "真ん中にい、このオアシスの町があって、",
+      "start_seconds": 47.039,
+      "end_seconds": 56.0
+    },
+    {
+      "text": "で、そのオアシスの町に行ったら土の壁で",
+      "start_seconds": 51.44,
+      "end_seconds": 59.959999999999994
+    },
+    {
+      "text": "舗装もされてなくって、え、道には車じゃ",
+      "start_seconds": 56.0,
+      "end_seconds": 64.159
+    },
+    {
+      "text": "なくって牛や馬が歩いてると臭い。え、",
+      "start_seconds": 59.96,
+      "end_seconds": 67.799
+    },
+    {
+      "text": "そういう町だったんです。で、そこにね、",
+      "start_seconds": 64.159,
+      "end_seconds": 72.28
+    },
+    {
+      "text": "は、働いてる、そこで生活してる人たちが",
+      "start_seconds": 67.799,
+      "end_seconds": 75.47900000000001
+    },
+    {
+      "text": "めっちゃ幸せそうだったんですよ。で、僕",
+      "start_seconds": 72.28,
+      "end_seconds": 80.2
+    },
+    {
+      "text": "衝撃を受けて、で、そこにはお金とか",
+      "start_seconds": 75.479,
+      "end_seconds": 84.15899999999999
+    },
+    {
+      "text": "ブランド品とかいい車とか家ないんですよ",
+      "start_seconds": 80.2,
+      "end_seconds": 87.68
+    },
+    {
+      "text": "。僕がを幸せにしてくれると思ってた幸せ",
+      "start_seconds": 84.159,
+      "end_seconds": 90.84
+    },
+    {
+      "text": "のアイテム一切ないのに幸せあるんですよ",
+      "start_seconds": 87.68,
+      "end_seconds": 95.72
+    },
+    {
+      "text": "。で、それでなんかふと、あ、幸せって",
+      "start_seconds": 90.84,
+      "end_seconds": 98.88
+    },
+    {
+      "text": "万人に与えられた権利なんかなって。誰で",
+      "start_seconds": 95.72,
+      "end_seconds": 101.079
+    },
+    {
+      "text": "も自分が幸せやなって思ったら幸せに",
+      "start_seconds": 98.88,
+      "end_seconds": 103.92
+    },
+    {
+      "text": "なれんのかな。なんか吹っ切れた感じがし",
+      "start_seconds": 101.079,
+      "end_seconds": 108.479
+    },
+    {
+      "text": "て、で、そこから卒業して、え、就職する",
+      "start_seconds": 103.92,
+      "end_seconds": 111.96000000000001
+    },
+    {
+      "text": "んですけれども、こう当時、え、世界で",
+      "start_seconds": 108.479,
+      "end_seconds": 115.32
+    },
+    {
+      "text": "自価総額1番になった日本の銀行に入った",
+      "start_seconds": 111.96,
+      "end_seconds": 119.759
+    },
+    {
+      "text": "んです。で、そこから、あ、ま、その中で",
+      "start_seconds": 115.32,
+      "end_seconds": 122.19999999999999
+    },
+    {
+      "text": "働いて、で、もうみんなすごいなっていい",
+      "start_seconds": 119.759,
+      "end_seconds": 124.479
+    },
+    {
+      "text": "会社に入ったねって言われたんですけど、",
+      "start_seconds": 122.2,
+      "end_seconds": 127.399
+    },
+    {
+      "text": "全然幸せじゃなくって、全然役に立ててる",
+      "start_seconds": 124.479,
+      "end_seconds": 130.2
+    },
+    {
+      "text": "感じがしなくって、やりがいもなかった。",
+      "start_seconds": 127.399,
+      "end_seconds": 133.92
+    },
+    {
+      "text": "で、すぐにやめたんです。で、やめて創業",
+      "start_seconds": 130.2,
+      "end_seconds": 136.72
+    },
+    {
+      "text": "間もないベンチャー企業に入ったんです。",
+      "start_seconds": 133.92,
+      "end_seconds": 138.76
+    },
+    {
+      "text": "で、2つ目のエピソードっていうのはその",
+      "start_seconds": 136.72,
+      "end_seconds": 143.44
+    },
+    {
+      "text": "時の話なんですけど、社員の市、え、僕は",
+      "start_seconds": 138.76,
+      "end_seconds": 146.44
+    },
+    {
+      "text": "、ま、世のため、人のため、社会のためで",
+      "start_seconds": 143.44,
+      "end_seconds": 149.519
+    },
+    {
+      "text": "、そのために会社大きくしていきたいなっ",
+      "start_seconds": 146.44,
+      "end_seconds": 152.68
+    },
+    {
+      "text": "て。で、会社大きくして業績良くしていっ",
+      "start_seconds": 149.519,
+      "end_seconds": 154.87900000000002
+    },
+    {
+      "text": "たら社員も幸せになるんちゃうかなと思っ",
+      "start_seconds": 152.68,
+      "end_seconds": 158.64000000000001
+    },
+    {
+      "text": "て一生懸命会社のため頑張ってった。で、",
+      "start_seconds": 154.879,
+      "end_seconds": 162.2
+    },
+    {
+      "text": "そういう中で、え、企業を、ま、買収",
+      "start_seconds": 158.64,
+      "end_seconds": 164.64
+    },
+    {
+      "text": "するっていう機会があって、会社を勝った",
+      "start_seconds": 162.2,
+      "end_seconds": 168.11999999999998
+    },
+    {
+      "text": "んですね。で、その会社の社長に僕なった",
+      "start_seconds": 164.64,
+      "end_seconds": 172.64
+    },
+    {
+      "text": "んです。で、その時に、ま、心を病んでて",
+      "start_seconds": 168.12,
+      "end_seconds": 175.519
+    },
+    {
+      "text": "会社に来れてなかった社員がいたんです。",
+      "start_seconds": 172.64,
+      "end_seconds": 178.44
+    },
+    {
+      "text": "で、僕が社長になってきっと僕になんか",
+      "start_seconds": 175.519,
+      "end_seconds": 180.159
+    },
+    {
+      "text": "期待してくれたんだと思うんですけど、",
+      "start_seconds": 178.44,
+      "end_seconds": 182.84
+    },
+    {
+      "text": "なんか変わんのかなと思って会社に聞出し",
+      "start_seconds": 180.159,
+      "end_seconds": 186.48
+    },
+    {
+      "text": "たんです。でも僕はその社員のことよりも",
+      "start_seconds": 182.84,
+      "end_seconds": 188.959
+    },
+    {
+      "text": "業績のことの方が大事だったんです。業績",
+      "start_seconds": 186.48,
+      "end_seconds": 191.599
+    },
+    {
+      "text": "を上げていく方が社会のため、会社のため",
+      "start_seconds": 188.959,
+      "end_seconds": 194.159
+    },
+    {
+      "text": "、会社のためであり、社員のためやと思っ",
+      "start_seconds": 191.599,
+      "end_seconds": 198.319
+    },
+    {
+      "text": "てて、で、またその人っていうのは期待を",
+      "start_seconds": 194.159,
+      "end_seconds": 200.44
+    },
+    {
+      "text": "裏切られたと思って会社来れなくなったん",
+      "start_seconds": 198.319,
+      "end_seconds": 203.56
+    },
+    {
+      "text": "です。会社来れなくなったと同時に",
+      "start_seconds": 200.44,
+      "end_seconds": 207.04
+    },
+    {
+      "text": "インターネットでその期待が結局恨みに",
+      "start_seconds": 203.56,
+      "end_seconds": 210.64000000000001
+    },
+    {
+      "text": "変わってお前らの家族痛い目に合わしてや",
+      "start_seconds": 207.04,
+      "end_seconds": 213.879
+    },
+    {
+      "text": "るっていう風に書き込み出したんです。",
+      "start_seconds": 210.64,
+      "end_seconds": 220.0
+    },
+    {
+      "text": "そこから僕は家族含めて毎日ビクビク怯え",
+      "start_seconds": 213.879,
+      "end_seconds": 224.79899999999998
+    },
+    {
+      "text": "ながら生活し出すんです。1年後連絡が",
+      "start_seconds": 220.0,
+      "end_seconds": 229.319
+    },
+    {
+      "text": "あってその社員が家で亡くなってたって",
+      "start_seconds": 224.799,
+      "end_seconds": 232.84
+    },
+    {
+      "text": "聞いたんです。その時にね、良かったって",
+      "start_seconds": 229.319,
+      "end_seconds": 237.35999999999999
+    },
+    {
+      "text": "思ったんです。ほっとしたんです。僕それ",
+      "start_seconds": 232.84,
+      "end_seconds": 241.079
+    },
+    {
+      "text": "がまた自分ですごいショックで人のためや",
+      "start_seconds": 237.36,
+      "end_seconds": 243.959
+    },
+    {
+      "text": "と思って、社員のためやと思って一生懸命",
+      "start_seconds": 241.079,
+      "end_seconds": 247.4
+    },
+    {
+      "text": "頑張ってたのに社員がなくなってほっとし",
+      "start_seconds": 243.959,
+      "end_seconds": 250.159
+    },
+    {
+      "text": "てる自分がいるんですよ。なんなんやろ",
+      "start_seconds": 247.4,
+      "end_seconds": 254.04
+    },
+    {
+      "text": "会社ってそういう風に思った出来事でした",
+      "start_seconds": 250.159,
+      "end_seconds": 256.959
+    },
+    {
+      "text": "。え、ちょっと話変わるんですけれども、",
+      "start_seconds": 254.04,
+      "end_seconds": 261.519
+    },
+    {
+      "text": "この数字って何かって言うと、世界幸福度",
+      "start_seconds": 256.959,
+      "end_seconds": 264.72
+    },
+    {
+      "text": "ランキングっていうのがあって、55位",
+      "start_seconds": 261.519,
+      "end_seconds": 269.759
+    },
+    {
+      "text": "日本、147つの国の中で145位槍り",
+      "start_seconds": 264.72,
+      "end_seconds": 273.12
+    },
+    {
+      "text": "ガイドランキング再下",
+      "start_seconds": 269.759,
+      "end_seconds": 277.639
+    },
+    {
+      "text": "経済的に潤ってる日本が幸せでもあんまり",
+      "start_seconds": 273.12,
+      "end_seconds": 280.36
+    },
+    {
+      "text": "なかったらやりがいもないっていう風に",
+      "start_seconds": 277.639,
+      "end_seconds": 283.6
+    },
+    {
+      "text": "思ってるんですよね。え、幸福ランキング",
+      "start_seconds": 280.36,
+      "end_seconds": 286.56
+    },
+    {
+      "text": "1位のフィンランド行って色々話聞いたり",
+      "start_seconds": 283.6,
+      "end_seconds": 288.759
+    },
+    {
+      "text": "、え、槍りガイドランキング1位の",
+      "start_seconds": 286.56,
+      "end_seconds": 291.16
+    },
+    {
+      "text": "アメリカ僕も10年ぐらい住んでいろんな",
+      "start_seconds": 288.759,
+      "end_seconds": 295.12
+    },
+    {
+      "text": "人と働いたりしてて、え、感じたり、ま、",
+      "start_seconds": 291.16,
+      "end_seconds": 298.639
+    },
+    {
+      "text": "聞いたりして思うんですけど、別に日本に",
+      "start_seconds": 295.12,
+      "end_seconds": 302.28000000000003
+    },
+    {
+      "text": "もあるやん。日本人でもできるやん。",
+      "start_seconds": 298.639,
+      "end_seconds": 304.8
+    },
+    {
+      "text": "すごい特別なことが北にあったり、",
+      "start_seconds": 302.28,
+      "end_seconds": 306.479
+    },
+    {
+      "text": "アメリカにあったりするわけじゃないん",
+      "start_seconds": 304.8,
+      "end_seconds": 309.56
+    },
+    {
+      "text": "ですよね。じゃあなんで日本ってそれでけ",
+      "start_seconds": 306.479,
+      "end_seconds": 313.08
+    },
+    {
+      "text": "へんの?て発見したんです。モンスターが",
+      "start_seconds": 309.56,
+      "end_seconds": 317.199
+    },
+    {
+      "text": "いるんちゃうかって。日本にはきっとこの",
+      "start_seconds": 313.08,
+      "end_seconds": 320.15999999999997
+    },
+    {
+      "text": "モンスターが潜んでて、そのモンスターが",
+      "start_seconds": 317.199,
+      "end_seconds": 323.759
+    },
+    {
+      "text": "悪さして洗脳してるんちゃうか発見したん",
+      "start_seconds": 320.16,
+      "end_seconds": 327.03900000000004
+    },
+    {
+      "text": "です。みんなやばい話したなって思ってん",
+      "start_seconds": 323.759,
+      "end_seconds": 329.639
+    },
+    {
+      "text": "でしょ?みんなここで大丈夫ですよ。続け",
+      "start_seconds": 327.039,
+      "end_seconds": 333.68
+    },
+    {
+      "text": "ますよ。で、1つ目のモンスター常識って",
+      "start_seconds": 329.639,
+      "end_seconds": 335.6
+    },
+    {
+      "text": "いうモンスター。この常識っていうモンス",
+      "start_seconds": 333.68,
+      "end_seconds": 338.319
+    },
+    {
+      "text": "ターっていうのを紹介するのにマズロの5",
+      "start_seconds": 335.6,
+      "end_seconds": 341.52000000000004
+    },
+    {
+      "text": "段階欲求っていうのを使ってご説明します",
+      "start_seconds": 338.319,
+      "end_seconds": 345.0
+    },
+    {
+      "text": "。これは1段階目っていうのは行きたい",
+      "start_seconds": 341.52,
+      "end_seconds": 347.919
+    },
+    {
+      "text": "なって思う欲求で人っていうのはその行き",
+      "start_seconds": 345.0,
+      "end_seconds": 350.6
+    },
+    {
+      "text": "たいなって思う欲求がクリアされたら安心",
+      "start_seconds": 347.919,
+      "end_seconds": 352.919
+    },
+    {
+      "text": "安全になりたいなっていう欲求があって",
+      "start_seconds": 350.6,
+      "end_seconds": 355.88
+    },
+    {
+      "text": "それががクリアされるとどっか居場所が",
+      "start_seconds": 352.919,
+      "end_seconds": 358.4
+    },
+    {
+      "text": "欲しいなっていう欲求があってでそこから",
+      "start_seconds": 355.88,
+      "end_seconds": 361.36
+    },
+    {
+      "text": "今度は承認されたいっていう欲求になって",
+      "start_seconds": 358.4,
+      "end_seconds": 364.0
+    },
+    {
+      "text": "で自己実現これやりたいんやっていうもの",
+      "start_seconds": 361.36,
+      "end_seconds": 367.28000000000003
+    },
+    {
+      "text": "ができていくでこういう風に段階踏んで",
+      "start_seconds": 364.0,
+      "end_seconds": 372.56
+    },
+    {
+      "text": "いくとこれって結構もう高度成長期の日本",
+      "start_seconds": 367.28,
+      "end_seconds": 377.75899999999996
+    },
+    {
+      "text": "に結構当てはまるなって思って僕の父とか",
+      "start_seconds": 372.56,
+      "end_seconds": 382.88
+    },
+    {
+      "text": "母戦後ずっと一生懸命働いていって頑張っ",
+      "start_seconds": 377.759,
+      "end_seconds": 385.039
+    },
+    {
+      "text": "て高度成長期を支えてきたんだと思うん",
+      "start_seconds": 382.88,
+      "end_seconds": 387.039
+    },
+    {
+      "text": "ですよね。あれが欲しいとかって言い",
+      "start_seconds": 385.039,
+      "end_seconds": 391.0
+    },
+    {
+      "text": "ながらでこうを会社に入って一生懸命",
+      "start_seconds": 387.039,
+      "end_seconds": 395.31899999999996
+    },
+    {
+      "text": "頑張ってで小心消求して行ってマイカー",
+      "start_seconds": 391.0,
+      "end_seconds": 398.24
+    },
+    {
+      "text": "マイホームムって夢が叶うこれを対現した",
+      "start_seconds": 395.319,
+      "end_seconds": 401.28000000000003
+    },
+    {
+      "text": "んですよね。で、きっとその時の成功体験",
+      "start_seconds": 398.24,
+      "end_seconds": 404.56
+    },
+    {
+      "text": "っていうのは頑張って勉強していい会社に",
+      "start_seconds": 401.28,
+      "end_seconds": 407.52
+    },
+    {
+      "text": "入って上司の言うことを聞いていい社員に",
+      "start_seconds": 404.56,
+      "end_seconds": 411.08
+    },
+    {
+      "text": "なってやっていったら夢は叶うって幸せに",
+      "start_seconds": 407.52,
+      "end_seconds": 414.08
+    },
+    {
+      "text": "なれるってそういう法則なんだと思うん",
+      "start_seconds": 411.08,
+      "end_seconds": 418.0
+    },
+    {
+      "text": "です。でそれを僕はずっと教育されてき",
+      "start_seconds": 414.08,
+      "end_seconds": 421.12
+    },
+    {
+      "text": "ながらまやってきたんですよね。頑張って",
+      "start_seconds": 418.0,
+      "end_seconds": 423.599
+    },
+    {
+      "text": "勉強しっておむ君みたいなね。え、",
+      "start_seconds": 421.12,
+      "end_seconds": 426.4
+    },
+    {
+      "text": "サラリーマン妖精ブスみたいなはめられ",
+      "start_seconds": 423.599,
+      "end_seconds": 428.639
+    },
+    {
+      "text": "ながらこう塾に通いながらね、一生懸命",
+      "start_seconds": 426.4,
+      "end_seconds": 431.919
+    },
+    {
+      "text": "やってきたわけです。で、ま、そこから僕",
+      "start_seconds": 428.639,
+      "end_seconds": 434.599
+    },
+    {
+      "text": "は、ま、社会人になってからですけれども",
+      "start_seconds": 431.919,
+      "end_seconds": 438.31899999999996
+    },
+    {
+      "text": "、え、失われた30年っていうのが始まる",
+      "start_seconds": 434.599,
+      "end_seconds": 441.759
+    },
+    {
+      "text": "わけです。92年から一生懸命頑張っても",
+      "start_seconds": 438.319,
+      "end_seconds": 444.36
+    },
+    {
+      "text": "業績上がんない。一生懸命頑張っても評価",
+      "start_seconds": 441.759,
+      "end_seconds": 446.52000000000004
+    },
+    {
+      "text": "されない。なんなら給料下がっていく。で",
+      "start_seconds": 444.36,
+      "end_seconds": 448.36
+    },
+    {
+      "text": "もどんどんどんどんもっともっともっとっ",
+      "start_seconds": 446.52,
+      "end_seconds": 451.599
+    },
+    {
+      "text": "て競争させられていって承認されるどころ",
+      "start_seconds": 448.36,
+      "end_seconds": 454.28000000000003
+    },
+    {
+      "text": "か居場所さえなくなって心の安全さえ、え",
+      "start_seconds": 451.599,
+      "end_seconds": 457.319
+    },
+    {
+      "text": "、満たされないような状態になっていって",
+      "start_seconds": 454.28,
+      "end_seconds": 462.08
+    },
+    {
+      "text": "。でもまだこれを経験しても頑張って勉強",
+      "start_seconds": 457.319,
+      "end_seconds": 464.68
+    },
+    {
+      "text": "して頑張っていい会社に入った方が幸せに",
+      "start_seconds": 462.08,
+      "end_seconds": 467.84
+    },
+    {
+      "text": "なれるんちゃうかっていうのって残ってる",
+      "start_seconds": 464.68,
+      "end_seconds": 470.24
+    },
+    {
+      "text": "気がするんですよね。これ1つ目の",
+      "start_seconds": 467.84,
+      "end_seconds": 475.19899999999996
+    },
+    {
+      "text": "モンスターの話で2つ目のモンスター会社",
+      "start_seconds": 470.24,
+      "end_seconds": 478.56
+    },
+    {
+      "text": "。この会社っていうのは会社に入ったら人",
+      "start_seconds": 475.199,
+      "end_seconds": 480.759
+    },
+    {
+      "text": "っていうのは幸せにしてもらえる安心安全",
+      "start_seconds": 478.56,
+      "end_seconds": 484.159
+    },
+    {
+      "text": "っていうのもこう満たされるそう思って",
+      "start_seconds": 480.759,
+      "end_seconds": 486.599
+    },
+    {
+      "text": "会社に入ると思うんですけどハッピーセッ",
+      "start_seconds": 484.159,
+      "end_seconds": 490.4
+    },
+    {
+      "text": "トっていうのがあってでこれはまストって",
+      "start_seconds": 486.599,
+      "end_seconds": 492.479
+    },
+    {
+      "text": "言われるんですけどもやりたいことできる",
+      "start_seconds": 490.4,
+      "end_seconds": 495.28
+    },
+    {
+      "text": "ことやるべきことこの3つの縁を",
+      "start_seconds": 492.479,
+      "end_seconds": 499.039
+    },
+    {
+      "text": "重ね合わせていくと会社の中で幸せに",
+      "start_seconds": 495.28,
+      "end_seconds": 501.75899999999996
+    },
+    {
+      "text": "やりがいを持って働けると3つ重ねましょ",
+      "start_seconds": 499.039,
+      "end_seconds": 504.8
+    },
+    {
+      "text": "うってでも実は会社っていうのはこの",
+      "start_seconds": 501.759,
+      "end_seconds": 507.36
+    },
+    {
+      "text": "ビジネスセットっていうので成り立ってて",
+      "start_seconds": 504.8,
+      "end_seconds": 509.72
+    },
+    {
+      "text": "できることとやるべきことっていうのが",
+      "start_seconds": 507.36,
+      "end_seconds": 512.44
+    },
+    {
+      "text": "重なるとお金になるんですよ。例えば",
+      "start_seconds": 509.72,
+      "end_seconds": 514.5600000000001
+    },
+    {
+      "text": "ラーメン屋さんが美味しいラーメン作る",
+      "start_seconds": 512.44,
+      "end_seconds": 516.24
+    },
+    {
+      "text": "じゃないですか。で、美味しいなって言っ",
+      "start_seconds": 514.56,
+      "end_seconds": 517.959
+    },
+    {
+      "text": "てそのラーメン食べるじゃないですか。お",
+      "start_seconds": 516.24,
+      "end_seconds": 520.399
+    },
+    {
+      "text": "金払う。これでビジネス成立なんですよ。",
+      "start_seconds": 517.959,
+      "end_seconds": 522.3199999999999
+    },
+    {
+      "text": "ラーメン屋さんがどんだけラーメン嫌いで",
+      "start_seconds": 520.399,
+      "end_seconds": 525.519
+    },
+    {
+      "text": "も関係ないですよ。だから会社っていうの",
+      "start_seconds": 522.32,
+      "end_seconds": 527.44
+    },
+    {
+      "text": "は別にやりたいことなんてどうでもいいん",
+      "start_seconds": 525.519,
+      "end_seconds": 530.48
+    },
+    {
+      "text": "ですよ。本人のできることとやるべきこと",
+      "start_seconds": 527.44,
+      "end_seconds": 533.48
+    },
+    {
+      "text": "をいかに合わしていくかっていうのを一生",
+      "start_seconds": 530.48,
+      "end_seconds": 536.48
+    },
+    {
+      "text": "懸命考える仕組みになってるんです。会社",
+      "start_seconds": 533.48,
+      "end_seconds": 539.36
+    },
+    {
+      "text": "っていうのは。で、もう1つ成長っていう",
+      "start_seconds": 536.48,
+      "end_seconds": 542.12
+    },
+    {
+      "text": "言葉よく聞きますよね。成長って言われ",
+      "start_seconds": 539.36,
+      "end_seconds": 543.839
+    },
+    {
+      "text": "たらなんかワクワクすんな。幸せになり",
+      "start_seconds": 542.12,
+      "end_seconds": 545.839
+    },
+    {
+      "text": "そうやな。やりたいなって若い人なんか",
+      "start_seconds": 543.839,
+      "end_seconds": 547.48
+    },
+    {
+      "text": "特にそう思うと思うんです。会社に入って",
+      "start_seconds": 545.839,
+      "end_seconds": 550.0
+    },
+    {
+      "text": "も成長したい。会社も成長させてあげる",
+      "start_seconds": 547.48,
+      "end_seconds": 552.48
+    },
+    {
+      "text": "よって言うと。で、幸せな成長っていうの",
+      "start_seconds": 550.0,
+      "end_seconds": 555.0
+    },
+    {
+      "text": "は自分がやりたいなって思うことに対して",
+      "start_seconds": 552.48,
+      "end_seconds": 556.9200000000001
+    },
+    {
+      "text": "変化していく。できることが増えていくっ",
+      "start_seconds": 555.0,
+      "end_seconds": 559.36
+    },
+    {
+      "text": "ていうのが幸せな成長です。会社っていう",
+      "start_seconds": 556.92,
+      "end_seconds": 562.1999999999999
+    },
+    {
+      "text": "のはそうじゃなくてやって欲しいこと、",
+      "start_seconds": 559.36,
+      "end_seconds": 565.0
+    },
+    {
+      "text": "会社がやって欲しいことに対して社員が",
+      "start_seconds": 562.2,
+      "end_seconds": 566.48
+    },
+    {
+      "text": "できるようになってことが増えていくって",
+      "start_seconds": 565.0,
+      "end_seconds": 569.64
+    },
+    {
+      "text": "のは成長。それが会社の成長につがるから",
+      "start_seconds": 566.48,
+      "end_seconds": 571.64
+    },
+    {
+      "text": "こっち側の成長っていうんですね。ここに",
+      "start_seconds": 569.64,
+      "end_seconds": 574.72
+    },
+    {
+      "text": "本人の幸せな成長と会社が望む成長の",
+      "start_seconds": 571.64,
+      "end_seconds": 578.24
+    },
+    {
+      "text": "ギャップがあるんですよ。ここが会社って",
+      "start_seconds": 574.72,
+      "end_seconds": 583.0400000000001
+    },
+    {
+      "text": "いうモンスターの特徴であります。これ",
+      "start_seconds": 578.24,
+      "end_seconds": 586.2
+    },
+    {
+      "text": "問題だと思いません。この2つ2匹の",
+      "start_seconds": 583.04,
+      "end_seconds": 589.48
+    },
+    {
+      "text": "モンスター倒したいと思いません。で、僕",
+      "start_seconds": 586.2,
+      "end_seconds": 593.36
+    },
+    {
+      "text": "らは、え、皆さんは何ができるか?実は",
+      "start_seconds": 589.48,
+      "end_seconds": 596.16
+    },
+    {
+      "text": "もうすでにみんな武器を持ってるんですよ",
+      "start_seconds": 593.36,
+      "end_seconds": 599.12
+    },
+    {
+      "text": "。エクスカリバーを。どんな向きかって",
+      "start_seconds": 596.16,
+      "end_seconds": 603.56
+    },
+    {
+      "text": "言うと、インターネットやAIやそういう",
+      "start_seconds": 599.12,
+      "end_seconds": 607.04
+    },
+    {
+      "text": "武器です。で、BIからAIへ。これは",
+      "start_seconds": 603.56,
+      "end_seconds": 608.8389999999999
+    },
+    {
+      "text": "ビフォーインターネットとアフター",
+      "start_seconds": 607.04,
+      "end_seconds": 610.519
+    },
+    {
+      "text": "インターネットっていう意味なんですけど",
+      "start_seconds": 608.839,
+      "end_seconds": 613.48
+    },
+    {
+      "text": "、今まで僕が話したモンスターの話って",
+      "start_seconds": 610.519,
+      "end_seconds": 615.72
+    },
+    {
+      "text": "いうのは基本的にはインターネット前の",
+      "start_seconds": 613.48,
+      "end_seconds": 618.6800000000001
+    },
+    {
+      "text": "世界で作られた常識であって会社である",
+      "start_seconds": 615.72,
+      "end_seconds": 620.9200000000001
+    },
+    {
+      "text": "わけです。で、これからアフター",
+      "start_seconds": 618.68,
+      "end_seconds": 624.519
+    },
+    {
+      "text": "インターネットの世界で皆さんが作り出す",
+      "start_seconds": 620.92,
+      "end_seconds": 626.76
+    },
+    {
+      "text": "常識があるんですよ。で、皆さんが",
+      "start_seconds": 624.519,
+      "end_seconds": 629.48
+    },
+    {
+      "text": "作り出す新しい会社の形があるはずなん",
+      "start_seconds": 626.76,
+      "end_seconds": 633.4399999999999
+    },
+    {
+      "text": "ですよ。で、その自分たちの幸せのために",
+      "start_seconds": 629.48,
+      "end_seconds": 636.72
+    },
+    {
+      "text": "そういう会社ってね、そういう常識って",
+      "start_seconds": 633.44,
+      "end_seconds": 639.0790000000001
+    },
+    {
+      "text": "作ってみればいいんじゃないかな、作れる",
+      "start_seconds": 636.72,
+      "end_seconds": 641.399
+    },
+    {
+      "text": "んじゃないかなって思うんです。この数字",
+      "start_seconds": 639.079,
+      "end_seconds": 646.68
+    },
+    {
+      "text": "何かって言うと、日本の企業数360万社",
+      "start_seconds": 641.399,
+      "end_seconds": 650.04
+    },
+    {
+      "text": "あるんです。で、そのうち1000人以上",
+      "start_seconds": 646.68,
+      "end_seconds": 654.04
+    },
+    {
+      "text": "の会社って0.13%しかないんですよ。",
+      "start_seconds": 650.04,
+      "end_seconds": 657.68
+    },
+    {
+      "text": "で、170万社っていうのは個人事業主",
+      "start_seconds": 654.04,
+      "end_seconds": 661.36
+    },
+    {
+      "text": "って言われて、1人でやってる会社47%",
+      "start_seconds": 657.68,
+      "end_seconds": 665.399
+    },
+    {
+      "text": "あるんです。でもこの1000人以上の",
+      "start_seconds": 661.36,
+      "end_seconds": 667.0790000000001
+    },
+    {
+      "text": "0.13%",
+      "start_seconds": 665.399,
+      "end_seconds": 670.0
+    },
+    {
+      "text": "の会社にみんな一生懸命入ろうとしてませ",
+      "start_seconds": 667.079,
+      "end_seconds": 673.279
+    },
+    {
+      "text": "ん。で、その会社に入ったらおめでとうっ",
+      "start_seconds": 670.0,
+      "end_seconds": 676.12
+    },
+    {
+      "text": "て言われて、その会社に入らへんかったら",
+      "start_seconds": 673.279,
+      "end_seconds": 678.8389999999999
+    },
+    {
+      "text": "負け組って言われてるような感じしません",
+      "start_seconds": 676.12,
+      "end_seconds": 684.5600000000001
+    },
+    {
+      "text": "。でも170万人、170万社の人達って",
+      "start_seconds": 678.839,
+      "end_seconds": 688.8000000000001
+    },
+    {
+      "text": "いうのが今のこう世界の経済立国の日本を",
+      "start_seconds": 684.56,
+      "end_seconds": 691.959
+    },
+    {
+      "text": "支えてたりするわけですよ。ここでみんな",
+      "start_seconds": 688.8,
+      "end_seconds": 694.5999999999999
+    },
+    {
+      "text": "が不幸になってるわけじゃ決してないわけ",
+      "start_seconds": 691.959,
+      "end_seconds": 698.079
+    },
+    {
+      "text": "です。逆に言うと1000人以上の会社で",
+      "start_seconds": 694.6,
+      "end_seconds": 700.6
+    },
+    {
+      "text": "勝ち組って言われてる人がさっき言った",
+      "start_seconds": 698.079,
+      "end_seconds": 703.399
+    },
+    {
+      "text": "みたいに幸せ感じてなかったりやりがい",
+      "start_seconds": 700.6,
+      "end_seconds": 705.2
+    },
+    {
+      "text": "感じてなかったりするっていうのが今の",
+      "start_seconds": 703.399,
+      "end_seconds": 710.399
+    },
+    {
+      "text": "日本なんですよ。で、ここでもう企業って",
+      "start_seconds": 705.2,
+      "end_seconds": 712.9590000000001
+    },
+    {
+      "text": "言ったら大衆化されてるわけです。会社",
+      "start_seconds": 710.399,
+      "end_seconds": 715.12
+    },
+    {
+      "text": "って実は大衆化されてて、さっき言っ",
+      "start_seconds": 712.959,
+      "end_seconds": 717.88
+    },
+    {
+      "text": "たくさんの会社、個人事業者はたくさんい",
+      "start_seconds": 715.12,
+      "end_seconds": 720.36
+    },
+    {
+      "text": "てもうすでに経済回ってるわけなんですよ",
+      "start_seconds": 717.88,
+      "end_seconds": 723.76
+    },
+    {
+      "text": "ね。だそこで一緒に起業してみません",
+      "start_seconds": 720.36,
+      "end_seconds": 726.12
+    },
+    {
+      "text": "かってできんじゃないですかって思うわけ",
+      "start_seconds": 723.76,
+      "end_seconds": 728.8389999999999
+    },
+    {
+      "text": "です。別に学生しながら起業できるわけ",
+      "start_seconds": 726.12,
+      "end_seconds": 731.48
+    },
+    {
+      "text": "ですよ。どっかの会社に入りながら副業で",
+      "start_seconds": 728.839,
+      "end_seconds": 733.399
+    },
+    {
+      "text": "企業ってできるわけですよ。そんな大した",
+      "start_seconds": 731.48,
+      "end_seconds": 736.32
+    },
+    {
+      "text": "リスクいらないじゃないですか。え、で、",
+      "start_seconds": 733.399,
+      "end_seconds": 738.44
+    },
+    {
+      "text": "その時に何やりたいか分からへん。",
+      "start_seconds": 736.32,
+      "end_seconds": 740.44
+    },
+    {
+      "text": "ビジネスなんかやったことないからって",
+      "start_seconds": 738.44,
+      "end_seconds": 742.8000000000001
+    },
+    {
+      "text": "思うと思うんですね。大事なことは",
+      "start_seconds": 740.44,
+      "end_seconds": 745.12
+    },
+    {
+      "text": "ありがとうっていう言葉。このキーワード",
+      "start_seconds": 742.8,
+      "end_seconds": 748.4799999999999
+    },
+    {
+      "text": "。へえ。なぜかって言うとこの会社をやる",
+      "start_seconds": 745.12,
+      "end_seconds": 752.44
+    },
+    {
+      "text": "時に全身前例をかけて覚悟を決めてね。で",
+      "start_seconds": 748.48,
+      "end_seconds": 754.9200000000001
+    },
+    {
+      "text": "、世界一になるんだ。上場するんだ。",
+      "start_seconds": 752.44,
+      "end_seconds": 757.1990000000001
+    },
+    {
+      "text": "そんな会社を作るんだって言わないと会社",
+      "start_seconds": 754.92,
+      "end_seconds": 759.04
+    },
+    {
+      "text": "できないんじゃないかって思ってないです",
+      "start_seconds": 757.199,
+      "end_seconds": 761.8
+    },
+    {
+      "text": "か。いや、そうじゃなくって、まずは",
+      "start_seconds": 759.04,
+      "end_seconds": 766.04
+    },
+    {
+      "text": "ありがとうって自己実現の欲求の前に証人",
+      "start_seconds": 761.8,
+      "end_seconds": 768.68
+    },
+    {
+      "text": "とか居場所がある。自分ができることで人",
+      "start_seconds": 766.04,
+      "end_seconds": 771.16
+    },
+    {
+      "text": "にありがとうって言ってもらう。まさに",
+      "start_seconds": 768.68,
+      "end_seconds": 774.279
+    },
+    {
+      "text": "それってビジネスの原点なわけですよ。え",
+      "start_seconds": 771.16,
+      "end_seconds": 777.04
+    },
+    {
+      "text": "、そこをいきなり100万人じゃなくって",
+      "start_seconds": 774.279,
+      "end_seconds": 779.4399999999999
+    },
+    {
+      "text": "1人2人3人でもいいんです。その人に",
+      "start_seconds": 777.04,
+      "end_seconds": 781.56
+    },
+    {
+      "text": "自分ができることで、自分の好きなことで",
+      "start_seconds": 779.44,
+      "end_seconds": 783.72
+    },
+    {
+      "text": "ありがとうって言ってもらえることから",
+      "start_seconds": 781.56,
+      "end_seconds": 786.2399999999999
+    },
+    {
+      "text": "始めていく。それをどういう風にビジネス",
+      "start_seconds": 783.72,
+      "end_seconds": 788.72
+    },
+    {
+      "text": "にしていくかっていうのはいろんな人に",
+      "start_seconds": 786.24,
+      "end_seconds": 790.72
+    },
+    {
+      "text": "手伝ってもらう。なんならAIに一緒に",
+      "start_seconds": 788.72,
+      "end_seconds": 792.279
+    },
+    {
+      "text": "考えてもらったらいいわけです。それが",
+      "start_seconds": 790.72,
+      "end_seconds": 795.24
+    },
+    {
+      "text": "できるんですよ。ですか?ゲーム",
+      "start_seconds": 792.279,
+      "end_seconds": 800.399
+    },
+    {
+      "text": "チェンジャーズ。あ、こう皆さんはなんか",
+      "start_seconds": 795.24,
+      "end_seconds": 803.199
+    },
+    {
+      "text": "皆さんを幸せにしてくれるんじゃない",
+      "start_seconds": 800.399,
+      "end_seconds": 809.0
+    },
+    {
+      "text": "かって思う常識とか会社に依存しちゃって",
+      "start_seconds": 803.199,
+      "end_seconds": 810.92
+    },
+    {
+      "text": "んじゃないかなって。支配されてんじゃ",
+      "start_seconds": 809.0,
+      "end_seconds": 814.76
+    },
+    {
+      "text": "ないかなって思うんです。なんでか自分",
+      "start_seconds": 810.92,
+      "end_seconds": 817.92
+    },
+    {
+      "text": "から始まってないんですよ。自分が発する",
+      "start_seconds": 814.76,
+      "end_seconds": 820.639
+    },
+    {
+      "text": "ものとか自分が幸せになりたいやりたい",
+      "start_seconds": 817.92,
+      "end_seconds": 823.519
+    },
+    {
+      "text": "ことから始まってないんですよ。そうじゃ",
+      "start_seconds": 820.639,
+      "end_seconds": 827.48
+    },
+    {
+      "text": "なくって、まずは自分の心に素直手を当て",
+      "start_seconds": 823.519,
+      "end_seconds": 831.639
+    },
+    {
+      "text": "て素直に何を干してるのか、何をやりたい",
+      "start_seconds": 827.48,
+      "end_seconds": 838.0
+    },
+    {
+      "text": "のかそのためのアイテムとして常識で会社",
+      "start_seconds": 831.639,
+      "end_seconds": 842.279
+    },
+    {
+      "text": "でITとかを使ってそれを実現していくっ",
+      "start_seconds": 838.0,
+      "end_seconds": 843.88
+    },
+    {
+      "text": "て",
+      "start_seconds": 842.279,
+      "end_seconds": 847.4399999999999
+    },
+    {
+      "text": "100に100通りの個性があって、",
+      "start_seconds": 843.88,
+      "end_seconds": 851.079
+    },
+    {
+      "text": "100通りの生き方があって、100通り",
+      "start_seconds": 847.44,
+      "end_seconds": 854.8800000000001
+    },
+    {
+      "text": "の幸せの形があると思うんです。で、その",
+      "start_seconds": 851.079,
+      "end_seconds": 858.2399999999999
+    },
+    {
+      "text": "幸せの形があるにも関わらず何かに囚われ",
+      "start_seconds": 854.88,
+      "end_seconds": 863.88
+    },
+    {
+      "text": "てる。で、それそこからこの常識とかが",
+      "start_seconds": 858.24,
+      "end_seconds": 867.12
+    },
+    {
+      "text": "その会社っていうモンスター倒して、え、",
+      "start_seconds": 863.88,
+      "end_seconds": 871.56
+    },
+    {
+      "text": "自分自身の幸せっていうのを作ってみませ",
+      "start_seconds": 867.12,
+      "end_seconds": 875.5600000000001
+    },
+    {
+      "text": "んかと。こう権限とか権力お金で支配さ",
+      "start_seconds": 871.56,
+      "end_seconds": 879.959
+    },
+    {
+      "text": "れる社会から自分がこうやりたいなを実現",
+      "start_seconds": 875.56,
+      "end_seconds": 882.7589999999999
+    },
+    {
+      "text": "したいなっていうもう理想をとしてそれを",
+      "start_seconds": 879.959,
+      "end_seconds": 887.1199999999999
+    },
+    {
+      "text": "人に伝えて協力してもらって一緒に生き",
+      "start_seconds": 882.759,
+      "end_seconds": 891.12
+    },
+    {
+      "text": "ワクワクするような社会にゲームチェンジ",
+      "start_seconds": 887.12,
+      "end_seconds": 894.72
+    },
+    {
+      "text": "一緒にしましょうよ。",
+      "start_seconds": 891.12,
+      "end_seconds": 898.36
+    },
+    {
+      "text": "皆さん幸せですか?",
+      "start_seconds": 894.72,
+      "end_seconds": 902.0
+    },
+    {
+      "text": "ありがとうございます。[拍手]",
+      "start_seconds": 898.36,
+      "end_seconds": 902.0
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 904.565,
+      "end_seconds": 906.585
+    }
+  ],
+  "display_captions": [
+    {
+      "text": "[音楽]",
+      "start_seconds": 1.964,
+      "end_seconds": 3.984,
+      "id": "5t0wDGJtOrU-display-0001",
+      "segment_id": "5t0wDGJtOrU-ja-0001"
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 9.17,
+      "end_seconds": 11.19,
+      "id": "5t0wDGJtOrU-display-0002",
+      "segment_id": "5t0wDGJtOrU-ja-0002"
+    },
+    {
+      "text": "今日は10代から30代若い人に幸せに",
+      "start_seconds": 13.799,
+      "end_seconds": 18.199,
+      "id": "5t0wDGJtOrU-display-0003",
+      "segment_id": "5t0wDGJtOrU-ja-0003"
+    },
+    {
+      "text": "なってもらう方法についてお話ししようと",
+      "start_seconds": 18.199,
+      "end_seconds": 20.68,
+      "id": "5t0wDGJtOrU-display-0004",
+      "segment_id": "5t0wDGJtOrU-ja-0003"
+    },
+    {
+      "text": "思います。内容は2匹のモンスターを倒し",
+      "start_seconds": 20.68,
+      "end_seconds": 24.279,
+      "id": "5t0wDGJtOrU-display-0005",
+      "segment_id": "5t0wDGJtOrU-ja-0003"
+    },
+    {
+      "text": "てで企業にチャレンジしようとそういう話",
+      "start_seconds": 24.279,
+      "end_seconds": 28.0,
+      "id": "5t0wDGJtOrU-display-0006",
+      "segment_id": "5t0wDGJtOrU-ja-0004"
+    },
+    {
+      "text": "です。最初に、ま、それを話すきっかけと",
+      "start_seconds": 28.0,
+      "end_seconds": 32.52,
+      "id": "5t0wDGJtOrU-display-0007",
+      "segment_id": "5t0wDGJtOrU-ja-0004"
+    },
+    {
+      "text": "なった僕の2つのエピソードちょっとお",
+      "start_seconds": 32.52,
+      "end_seconds": 35.04,
+      "id": "5t0wDGJtOrU-display-0008",
+      "segment_id": "5t0wDGJtOrU-ja-0004"
+    },
+    {
+      "text": "話しさせていただきたいと思います。1つ",
+      "start_seconds": 35.04,
+      "end_seconds": 37.36,
+      "id": "5t0wDGJtOrU-display-0009",
+      "segment_id": "5t0wDGJtOrU-ja-0005"
+    },
+    {
+      "text": "目は砂漠の中の幸せ。これ35年前僕は",
+      "start_seconds": 37.36,
+      "end_seconds": 41.559,
+      "id": "5t0wDGJtOrU-display-0010",
+      "segment_id": "5t0wDGJtOrU-ja-0005"
+    },
+    {
+      "text": "学生時代にシルクロードをずっと旅してた",
+      "start_seconds": 41.559,
+      "end_seconds": 44.719,
+      "id": "5t0wDGJtOrU-display-0011",
+      "segment_id": "5t0wDGJtOrU-ja-0005"
+    },
+    {
+      "text": "んですよね。で、シルクロードの砂漠の",
+      "start_seconds": 44.719,
+      "end_seconds": 47.039,
+      "id": "5t0wDGJtOrU-display-0012",
+      "segment_id": "5t0wDGJtOrU-ja-0005"
+    },
+    {
+      "text": "真ん中にい、このオアシスの町があって、",
+      "start_seconds": 47.039,
+      "end_seconds": 51.44,
+      "id": "5t0wDGJtOrU-display-0013",
+      "segment_id": "5t0wDGJtOrU-ja-0006"
+    },
+    {
+      "text": "で、そのオアシスの町に行ったら土の壁で",
+      "start_seconds": 51.44,
+      "end_seconds": 56.0,
+      "id": "5t0wDGJtOrU-display-0014",
+      "segment_id": "5t0wDGJtOrU-ja-0006"
+    },
+    {
+      "text": "舗装もされてなくって、え、道には車じゃ",
+      "start_seconds": 56.0,
+      "end_seconds": 59.96,
+      "id": "5t0wDGJtOrU-display-0015",
+      "segment_id": "5t0wDGJtOrU-ja-0007"
+    },
+    {
+      "text": "なくって牛や馬が歩いてると臭い。え、",
+      "start_seconds": 59.96,
+      "end_seconds": 64.159,
+      "id": "5t0wDGJtOrU-display-0016",
+      "segment_id": "5t0wDGJtOrU-ja-0007"
+    },
+    {
+      "text": "そういう町だったんです。で、そこにね、",
+      "start_seconds": 64.159,
+      "end_seconds": 67.799,
+      "id": "5t0wDGJtOrU-display-0017",
+      "segment_id": "5t0wDGJtOrU-ja-0007"
+    },
+    {
+      "text": "は、働いてる、そこで生活してる人たちが",
+      "start_seconds": 67.799,
+      "end_seconds": 72.28,
+      "id": "5t0wDGJtOrU-display-0018",
+      "segment_id": "5t0wDGJtOrU-ja-0008"
+    },
+    {
+      "text": "めっちゃ幸せそうだったんですよ。で、僕",
+      "start_seconds": 72.28,
+      "end_seconds": 75.479,
+      "id": "5t0wDGJtOrU-display-0019",
+      "segment_id": "5t0wDGJtOrU-ja-0008"
+    },
+    {
+      "text": "衝撃を受けて、で、そこにはお金とか",
+      "start_seconds": 75.479,
+      "end_seconds": 80.2,
+      "id": "5t0wDGJtOrU-display-0020",
+      "segment_id": "5t0wDGJtOrU-ja-0009"
+    },
+    {
+      "text": "ブランド品とかいい車とか家ないんですよ",
+      "start_seconds": 80.2,
+      "end_seconds": 84.159,
+      "id": "5t0wDGJtOrU-display-0021",
+      "segment_id": "5t0wDGJtOrU-ja-0009"
+    },
+    {
+      "text": "。僕がを幸せにしてくれると思ってた幸せ",
+      "start_seconds": 84.159,
+      "end_seconds": 87.68,
+      "id": "5t0wDGJtOrU-display-0022",
+      "segment_id": "5t0wDGJtOrU-ja-0010"
+    },
+    {
+      "text": "のアイテム一切ないのに幸せあるんですよ",
+      "start_seconds": 87.68,
+      "end_seconds": 90.84,
+      "id": "5t0wDGJtOrU-display-0023",
+      "segment_id": "5t0wDGJtOrU-ja-0010"
+    },
+    {
+      "text": "。で、それでなんかふと、あ、幸せって",
+      "start_seconds": 90.84,
+      "end_seconds": 95.72,
+      "id": "5t0wDGJtOrU-display-0024",
+      "segment_id": "5t0wDGJtOrU-ja-0010"
+    },
+    {
+      "text": "万人に与えられた権利なんかなって。誰で",
+      "start_seconds": 95.72,
+      "end_seconds": 98.88,
+      "id": "5t0wDGJtOrU-display-0025",
+      "segment_id": "5t0wDGJtOrU-ja-0011"
+    },
+    {
+      "text": "も自分が幸せやなって思ったら幸せに",
+      "start_seconds": 98.88,
+      "end_seconds": 101.079,
+      "id": "5t0wDGJtOrU-display-0026",
+      "segment_id": "5t0wDGJtOrU-ja-0011"
+    },
+    {
+      "text": "なれんのかな。なんか吹っ切れた感じがし",
+      "start_seconds": 101.079,
+      "end_seconds": 103.92,
+      "id": "5t0wDGJtOrU-display-0027",
+      "segment_id": "5t0wDGJtOrU-ja-0011"
+    },
+    {
+      "text": "て、で、そこから卒業して、え、就職する",
+      "start_seconds": 103.92,
+      "end_seconds": 108.479,
+      "id": "5t0wDGJtOrU-display-0028",
+      "segment_id": "5t0wDGJtOrU-ja-0012"
+    },
+    {
+      "text": "んですけれども、こう当時、え、世界で",
+      "start_seconds": 108.479,
+      "end_seconds": 111.96,
+      "id": "5t0wDGJtOrU-display-0029",
+      "segment_id": "5t0wDGJtOrU-ja-0012"
+    },
+    {
+      "text": "自価総額1番になった日本の銀行に入った",
+      "start_seconds": 111.96,
+      "end_seconds": 115.32,
+      "id": "5t0wDGJtOrU-display-0030",
+      "segment_id": "5t0wDGJtOrU-ja-0012"
+    },
+    {
+      "text": "んです。で、そこから、あ、ま、その中で",
+      "start_seconds": 115.32,
+      "end_seconds": 119.759,
+      "id": "5t0wDGJtOrU-display-0031",
+      "segment_id": "5t0wDGJtOrU-ja-0013"
+    },
+    {
+      "text": "働いて、で、もうみんなすごいなっていい",
+      "start_seconds": 119.759,
+      "end_seconds": 122.2,
+      "id": "5t0wDGJtOrU-display-0032",
+      "segment_id": "5t0wDGJtOrU-ja-0013"
+    },
+    {
+      "text": "会社に入ったねって言われたんですけど、",
+      "start_seconds": 122.2,
+      "end_seconds": 124.479,
+      "id": "5t0wDGJtOrU-display-0033",
+      "segment_id": "5t0wDGJtOrU-ja-0013"
+    },
+    {
+      "text": "全然幸せじゃなくって、全然役に立ててる",
+      "start_seconds": 124.479,
+      "end_seconds": 127.399,
+      "id": "5t0wDGJtOrU-display-0034",
+      "segment_id": "5t0wDGJtOrU-ja-0014"
+    },
+    {
+      "text": "感じがしなくって、やりがいもなかった。",
+      "start_seconds": 127.399,
+      "end_seconds": 130.2,
+      "id": "5t0wDGJtOrU-display-0035",
+      "segment_id": "5t0wDGJtOrU-ja-0014"
+    },
+    {
+      "text": "で、すぐにやめたんです。で、やめて創業",
+      "start_seconds": 130.2,
+      "end_seconds": 133.92,
+      "id": "5t0wDGJtOrU-display-0036",
+      "segment_id": "5t0wDGJtOrU-ja-0015"
+    },
+    {
+      "text": "間もないベンチャー企業に入ったんです。",
+      "start_seconds": 133.92,
+      "end_seconds": 136.72,
+      "id": "5t0wDGJtOrU-display-0037",
+      "segment_id": "5t0wDGJtOrU-ja-0015"
+    },
+    {
+      "text": "で、2つ目のエピソードっていうのはその",
+      "start_seconds": 136.72,
+      "end_seconds": 138.76,
+      "id": "5t0wDGJtOrU-display-0038",
+      "segment_id": "5t0wDGJtOrU-ja-0016"
+    },
+    {
+      "text": "時の話なんですけど、社員の市、え、僕は",
+      "start_seconds": 138.76,
+      "end_seconds": 143.44,
+      "id": "5t0wDGJtOrU-display-0039",
+      "segment_id": "5t0wDGJtOrU-ja-0016"
+    },
+    {
+      "text": "、ま、世のため、人のため、社会のためで",
+      "start_seconds": 143.44,
+      "end_seconds": 146.44,
+      "id": "5t0wDGJtOrU-display-0040",
+      "segment_id": "5t0wDGJtOrU-ja-0016"
+    },
+    {
+      "text": "、そのために会社大きくしていきたいなっ",
+      "start_seconds": 146.44,
+      "end_seconds": 149.519,
+      "id": "5t0wDGJtOrU-display-0041",
+      "segment_id": "5t0wDGJtOrU-ja-0017"
+    },
+    {
+      "text": "て。で、会社大きくして業績良くしていっ",
+      "start_seconds": 149.519,
+      "end_seconds": 152.68,
+      "id": "5t0wDGJtOrU-display-0042",
+      "segment_id": "5t0wDGJtOrU-ja-0017"
+    },
+    {
+      "text": "たら社員も幸せになるんちゃうかなと思っ",
+      "start_seconds": 152.68,
+      "end_seconds": 154.879,
+      "id": "5t0wDGJtOrU-display-0043",
+      "segment_id": "5t0wDGJtOrU-ja-0017"
+    },
+    {
+      "text": "て一生懸命会社のため頑張ってった。で、",
+      "start_seconds": 154.879,
+      "end_seconds": 158.64,
+      "id": "5t0wDGJtOrU-display-0044",
+      "segment_id": "5t0wDGJtOrU-ja-0018"
+    },
+    {
+      "text": "そういう中で、え、企業を、ま、買収",
+      "start_seconds": 158.64,
+      "end_seconds": 162.2,
+      "id": "5t0wDGJtOrU-display-0045",
+      "segment_id": "5t0wDGJtOrU-ja-0018"
+    },
+    {
+      "text": "するっていう機会があって、会社を勝った",
+      "start_seconds": 162.2,
+      "end_seconds": 164.64,
+      "id": "5t0wDGJtOrU-display-0046",
+      "segment_id": "5t0wDGJtOrU-ja-0018"
+    },
+    {
+      "text": "んですね。で、その会社の社長に僕なった",
+      "start_seconds": 164.64,
+      "end_seconds": 168.12,
+      "id": "5t0wDGJtOrU-display-0047",
+      "segment_id": "5t0wDGJtOrU-ja-0019"
+    },
+    {
+      "text": "んです。で、その時に、ま、心を病んでて",
+      "start_seconds": 168.12,
+      "end_seconds": 172.64,
+      "id": "5t0wDGJtOrU-display-0048",
+      "segment_id": "5t0wDGJtOrU-ja-0019"
+    },
+    {
+      "text": "会社に来れてなかった社員がいたんです。",
+      "start_seconds": 172.64,
+      "end_seconds": 175.519,
+      "id": "5t0wDGJtOrU-display-0049",
+      "segment_id": "5t0wDGJtOrU-ja-0019"
+    },
+    {
+      "text": "で、僕が社長になってきっと僕になんか",
+      "start_seconds": 175.519,
+      "end_seconds": 178.44,
+      "id": "5t0wDGJtOrU-display-0050",
+      "segment_id": "5t0wDGJtOrU-ja-0020"
+    },
+    {
+      "text": "期待してくれたんだと思うんですけど、",
+      "start_seconds": 178.44,
+      "end_seconds": 180.159,
+      "id": "5t0wDGJtOrU-display-0051",
+      "segment_id": "5t0wDGJtOrU-ja-0020"
+    },
+    {
+      "text": "なんか変わんのかなと思って会社に聞出し",
+      "start_seconds": 180.159,
+      "end_seconds": 182.84,
+      "id": "5t0wDGJtOrU-display-0052",
+      "segment_id": "5t0wDGJtOrU-ja-0020"
+    },
+    {
+      "text": "たんです。でも僕はその社員のことよりも",
+      "start_seconds": 182.84,
+      "end_seconds": 186.48,
+      "id": "5t0wDGJtOrU-display-0053",
+      "segment_id": "5t0wDGJtOrU-ja-0020"
+    },
+    {
+      "text": "業績のことの方が大事だったんです。業績",
+      "start_seconds": 186.48,
+      "end_seconds": 188.959,
+      "id": "5t0wDGJtOrU-display-0054",
+      "segment_id": "5t0wDGJtOrU-ja-0021"
+    },
+    {
+      "text": "を上げていく方が社会のため、会社のため",
+      "start_seconds": 188.959,
+      "end_seconds": 191.599,
+      "id": "5t0wDGJtOrU-display-0055",
+      "segment_id": "5t0wDGJtOrU-ja-0021"
+    },
+    {
+      "text": "、会社のためであり、社員のためやと思っ",
+      "start_seconds": 191.599,
+      "end_seconds": 194.159,
+      "id": "5t0wDGJtOrU-display-0056",
+      "segment_id": "5t0wDGJtOrU-ja-0021"
+    },
+    {
+      "text": "てて、で、またその人っていうのは期待を",
+      "start_seconds": 194.159,
+      "end_seconds": 198.319,
+      "id": "5t0wDGJtOrU-display-0057",
+      "segment_id": "5t0wDGJtOrU-ja-0021"
+    },
+    {
+      "text": "裏切られたと思って会社来れなくなったん",
+      "start_seconds": 198.319,
+      "end_seconds": 200.44,
+      "id": "5t0wDGJtOrU-display-0058",
+      "segment_id": "5t0wDGJtOrU-ja-0022"
+    },
+    {
+      "text": "です。会社来れなくなったと同時に",
+      "start_seconds": 200.44,
+      "end_seconds": 203.56,
+      "id": "5t0wDGJtOrU-display-0059",
+      "segment_id": "5t0wDGJtOrU-ja-0022"
+    },
+    {
+      "text": "インターネットでその期待が結局恨みに",
+      "start_seconds": 203.56,
+      "end_seconds": 207.04,
+      "id": "5t0wDGJtOrU-display-0060",
+      "segment_id": "5t0wDGJtOrU-ja-0022"
+    },
+    {
+      "text": "変わってお前らの家族痛い目に合わしてや",
+      "start_seconds": 207.04,
+      "end_seconds": 210.64,
+      "id": "5t0wDGJtOrU-display-0061",
+      "segment_id": "5t0wDGJtOrU-ja-0023"
+    },
+    {
+      "text": "るっていう風に書き込み出したんです。",
+      "start_seconds": 210.64,
+      "end_seconds": 213.879,
+      "id": "5t0wDGJtOrU-display-0062",
+      "segment_id": "5t0wDGJtOrU-ja-0023"
+    },
+    {
+      "text": "そこから僕は家族含めて毎日ビクビク怯え",
+      "start_seconds": 213.879,
+      "end_seconds": 220.0,
+      "id": "5t0wDGJtOrU-display-0063",
+      "segment_id": "5t0wDGJtOrU-ja-0024"
+    },
+    {
+      "text": "ながら生活し出すんです。1年後連絡が",
+      "start_seconds": 220.0,
+      "end_seconds": 224.799,
+      "id": "5t0wDGJtOrU-display-0064",
+      "segment_id": "5t0wDGJtOrU-ja-0024"
+    },
+    {
+      "text": "あってその社員が家で亡くなってたって",
+      "start_seconds": 224.799,
+      "end_seconds": 229.319,
+      "id": "5t0wDGJtOrU-display-0065",
+      "segment_id": "5t0wDGJtOrU-ja-0025"
+    },
+    {
+      "text": "聞いたんです。その時にね、良かったって",
+      "start_seconds": 229.319,
+      "end_seconds": 232.84,
+      "id": "5t0wDGJtOrU-display-0066",
+      "segment_id": "5t0wDGJtOrU-ja-0025"
+    },
+    {
+      "text": "思ったんです。ほっとしたんです。僕それ",
+      "start_seconds": 232.84,
+      "end_seconds": 237.36,
+      "id": "5t0wDGJtOrU-display-0067",
+      "segment_id": "5t0wDGJtOrU-ja-0026"
+    },
+    {
+      "text": "がまた自分ですごいショックで人のためや",
+      "start_seconds": 237.36,
+      "end_seconds": 241.079,
+      "id": "5t0wDGJtOrU-display-0068",
+      "segment_id": "5t0wDGJtOrU-ja-0026"
+    },
+    {
+      "text": "と思って、社員のためやと思って一生懸命",
+      "start_seconds": 241.079,
+      "end_seconds": 243.959,
+      "id": "5t0wDGJtOrU-display-0069",
+      "segment_id": "5t0wDGJtOrU-ja-0026"
+    },
+    {
+      "text": "頑張ってたのに社員がなくなってほっとし",
+      "start_seconds": 243.959,
+      "end_seconds": 247.4,
+      "id": "5t0wDGJtOrU-display-0070",
+      "segment_id": "5t0wDGJtOrU-ja-0027"
+    },
+    {
+      "text": "てる自分がいるんですよ。なんなんやろ",
+      "start_seconds": 247.4,
+      "end_seconds": 250.159,
+      "id": "5t0wDGJtOrU-display-0071",
+      "segment_id": "5t0wDGJtOrU-ja-0027"
+    },
+    {
+      "text": "会社ってそういう風に思った出来事でした",
+      "start_seconds": 250.159,
+      "end_seconds": 254.04,
+      "id": "5t0wDGJtOrU-display-0072",
+      "segment_id": "5t0wDGJtOrU-ja-0027"
+    },
+    {
+      "text": "。え、ちょっと話変わるんですけれども、",
+      "start_seconds": 254.04,
+      "end_seconds": 256.959,
+      "id": "5t0wDGJtOrU-display-0073",
+      "segment_id": "5t0wDGJtOrU-ja-0028"
+    },
+    {
+      "text": "この数字って何かって言うと、世界幸福度",
+      "start_seconds": 256.959,
+      "end_seconds": 261.519,
+      "id": "5t0wDGJtOrU-display-0074",
+      "segment_id": "5t0wDGJtOrU-ja-0028"
+    },
+    {
+      "text": "ランキングっていうのがあって、55位",
+      "start_seconds": 261.519,
+      "end_seconds": 264.72,
+      "id": "5t0wDGJtOrU-display-0075",
+      "segment_id": "5t0wDGJtOrU-ja-0028"
+    },
+    {
+      "text": "日本、147つの国の中で145位槍り",
+      "start_seconds": 264.72,
+      "end_seconds": 269.759,
+      "id": "5t0wDGJtOrU-display-0076",
+      "segment_id": "5t0wDGJtOrU-ja-0029"
+    },
+    {
+      "text": "ガイドランキング再下",
+      "start_seconds": 269.759,
+      "end_seconds": 273.12,
+      "id": "5t0wDGJtOrU-display-0077",
+      "segment_id": "5t0wDGJtOrU-ja-0029"
+    },
+    {
+      "text": "経済的に潤ってる日本が幸せでもあんまり",
+      "start_seconds": 273.12,
+      "end_seconds": 277.639,
+      "id": "5t0wDGJtOrU-display-0078",
+      "segment_id": "5t0wDGJtOrU-ja-0030"
+    },
+    {
+      "text": "なかったらやりがいもないっていう風に",
+      "start_seconds": 277.639,
+      "end_seconds": 280.36,
+      "id": "5t0wDGJtOrU-display-0079",
+      "segment_id": "5t0wDGJtOrU-ja-0030"
+    },
+    {
+      "text": "思ってるんですよね。え、幸福ランキング",
+      "start_seconds": 280.36,
+      "end_seconds": 283.6,
+      "id": "5t0wDGJtOrU-display-0080",
+      "segment_id": "5t0wDGJtOrU-ja-0030"
+    },
+    {
+      "text": "1位のフィンランド行って色々話聞いたり",
+      "start_seconds": 283.6,
+      "end_seconds": 286.56,
+      "id": "5t0wDGJtOrU-display-0081",
+      "segment_id": "5t0wDGJtOrU-ja-0031"
+    },
+    {
+      "text": "、え、槍りガイドランキング1位の",
+      "start_seconds": 286.56,
+      "end_seconds": 288.759,
+      "id": "5t0wDGJtOrU-display-0082",
+      "segment_id": "5t0wDGJtOrU-ja-0031"
+    },
+    {
+      "text": "アメリカ僕も10年ぐらい住んでいろんな",
+      "start_seconds": 288.759,
+      "end_seconds": 291.16,
+      "id": "5t0wDGJtOrU-display-0083",
+      "segment_id": "5t0wDGJtOrU-ja-0031"
+    },
+    {
+      "text": "人と働いたりしてて、え、感じたり、ま、",
+      "start_seconds": 291.16,
+      "end_seconds": 295.12,
+      "id": "5t0wDGJtOrU-display-0084",
+      "segment_id": "5t0wDGJtOrU-ja-0031"
+    },
+    {
+      "text": "聞いたりして思うんですけど、別に日本に",
+      "start_seconds": 295.12,
+      "end_seconds": 298.639,
+      "id": "5t0wDGJtOrU-display-0085",
+      "segment_id": "5t0wDGJtOrU-ja-0032"
+    },
+    {
+      "text": "もあるやん。日本人でもできるやん。",
+      "start_seconds": 298.639,
+      "end_seconds": 302.28,
+      "id": "5t0wDGJtOrU-display-0086",
+      "segment_id": "5t0wDGJtOrU-ja-0032"
+    },
+    {
+      "text": "すごい特別なことが北にあったり、",
+      "start_seconds": 302.28,
+      "end_seconds": 304.8,
+      "id": "5t0wDGJtOrU-display-0087",
+      "segment_id": "5t0wDGJtOrU-ja-0033"
+    },
+    {
+      "text": "アメリカにあったりするわけじゃないん",
+      "start_seconds": 304.8,
+      "end_seconds": 306.479,
+      "id": "5t0wDGJtOrU-display-0088",
+      "segment_id": "5t0wDGJtOrU-ja-0033"
+    },
+    {
+      "text": "ですよね。じゃあなんで日本ってそれでけ",
+      "start_seconds": 306.479,
+      "end_seconds": 309.56,
+      "id": "5t0wDGJtOrU-display-0089",
+      "segment_id": "5t0wDGJtOrU-ja-0033"
+    },
+    {
+      "text": "へんの?て発見したんです。モンスターが",
+      "start_seconds": 309.56,
+      "end_seconds": 313.08,
+      "id": "5t0wDGJtOrU-display-0090",
+      "segment_id": "5t0wDGJtOrU-ja-0033"
+    },
+    {
+      "text": "いるんちゃうかって。日本にはきっとこの",
+      "start_seconds": 313.08,
+      "end_seconds": 317.199,
+      "id": "5t0wDGJtOrU-display-0091",
+      "segment_id": "5t0wDGJtOrU-ja-0034"
+    },
+    {
+      "text": "モンスターが潜んでて、そのモンスターが",
+      "start_seconds": 317.199,
+      "end_seconds": 320.16,
+      "id": "5t0wDGJtOrU-display-0092",
+      "segment_id": "5t0wDGJtOrU-ja-0034"
+    },
+    {
+      "text": "悪さして洗脳してるんちゃうか発見したん",
+      "start_seconds": 320.16,
+      "end_seconds": 323.759,
+      "id": "5t0wDGJtOrU-display-0093",
+      "segment_id": "5t0wDGJtOrU-ja-0034"
+    },
+    {
+      "text": "です。みんなやばい話したなって思ってん",
+      "start_seconds": 323.759,
+      "end_seconds": 327.039,
+      "id": "5t0wDGJtOrU-display-0094",
+      "segment_id": "5t0wDGJtOrU-ja-0035"
+    },
+    {
+      "text": "でしょ?みんなここで大丈夫ですよ。続け",
+      "start_seconds": 327.039,
+      "end_seconds": 329.639,
+      "id": "5t0wDGJtOrU-display-0095",
+      "segment_id": "5t0wDGJtOrU-ja-0035"
+    },
+    {
+      "text": "ますよ。で、1つ目のモンスター常識って",
+      "start_seconds": 329.639,
+      "end_seconds": 333.68,
+      "id": "5t0wDGJtOrU-display-0096",
+      "segment_id": "5t0wDGJtOrU-ja-0035"
+    },
+    {
+      "text": "いうモンスター。この常識っていうモンス",
+      "start_seconds": 333.68,
+      "end_seconds": 335.6,
+      "id": "5t0wDGJtOrU-display-0097",
+      "segment_id": "5t0wDGJtOrU-ja-0035"
+    },
+    {
+      "text": "ターっていうのを紹介するのにマズロの5",
+      "start_seconds": 335.6,
+      "end_seconds": 338.319,
+      "id": "5t0wDGJtOrU-display-0098",
+      "segment_id": "5t0wDGJtOrU-ja-0036"
+    },
+    {
+      "text": "段階欲求っていうのを使ってご説明します",
+      "start_seconds": 338.319,
+      "end_seconds": 341.52,
+      "id": "5t0wDGJtOrU-display-0099",
+      "segment_id": "5t0wDGJtOrU-ja-0036"
+    },
+    {
+      "text": "。これは1段階目っていうのは行きたい",
+      "start_seconds": 341.52,
+      "end_seconds": 345.0,
+      "id": "5t0wDGJtOrU-display-0100",
+      "segment_id": "5t0wDGJtOrU-ja-0036"
+    },
+    {
+      "text": "なって思う欲求で人っていうのはその行き",
+      "start_seconds": 345.0,
+      "end_seconds": 347.919,
+      "id": "5t0wDGJtOrU-display-0101",
+      "segment_id": "5t0wDGJtOrU-ja-0037"
+    },
+    {
+      "text": "たいなって思う欲求がクリアされたら安心",
+      "start_seconds": 347.919,
+      "end_seconds": 350.6,
+      "id": "5t0wDGJtOrU-display-0102",
+      "segment_id": "5t0wDGJtOrU-ja-0037"
+    },
+    {
+      "text": "安全になりたいなっていう欲求があって",
+      "start_seconds": 350.6,
+      "end_seconds": 352.919,
+      "id": "5t0wDGJtOrU-display-0103",
+      "segment_id": "5t0wDGJtOrU-ja-0037"
+    },
+    {
+      "text": "それががクリアされるとどっか居場所が",
+      "start_seconds": 352.919,
+      "end_seconds": 355.88,
+      "id": "5t0wDGJtOrU-display-0104",
+      "segment_id": "5t0wDGJtOrU-ja-0037"
+    },
+    {
+      "text": "欲しいなっていう欲求があってでそこから",
+      "start_seconds": 355.88,
+      "end_seconds": 358.4,
+      "id": "5t0wDGJtOrU-display-0105",
+      "segment_id": "5t0wDGJtOrU-ja-0038"
+    },
+    {
+      "text": "今度は承認されたいっていう欲求になって",
+      "start_seconds": 358.4,
+      "end_seconds": 361.36,
+      "id": "5t0wDGJtOrU-display-0106",
+      "segment_id": "5t0wDGJtOrU-ja-0038"
+    },
+    {
+      "text": "で自己実現これやりたいんやっていうもの",
+      "start_seconds": 361.36,
+      "end_seconds": 364.0,
+      "id": "5t0wDGJtOrU-display-0107",
+      "segment_id": "5t0wDGJtOrU-ja-0038"
+    },
+    {
+      "text": "ができていくでこういう風に段階踏んで",
+      "start_seconds": 364.0,
+      "end_seconds": 367.28,
+      "id": "5t0wDGJtOrU-display-0108",
+      "segment_id": "5t0wDGJtOrU-ja-0038"
+    },
+    {
+      "text": "いくとこれって結構もう高度成長期の日本",
+      "start_seconds": 367.28,
+      "end_seconds": 372.56,
+      "id": "5t0wDGJtOrU-display-0109",
+      "segment_id": "5t0wDGJtOrU-ja-0039"
+    },
+    {
+      "text": "に結構当てはまるなって思って僕の父とか",
+      "start_seconds": 372.56,
+      "end_seconds": 377.759,
+      "id": "5t0wDGJtOrU-display-0110",
+      "segment_id": "5t0wDGJtOrU-ja-0039"
+    },
+    {
+      "text": "母戦後ずっと一生懸命働いていって頑張っ",
+      "start_seconds": 377.759,
+      "end_seconds": 382.88,
+      "id": "5t0wDGJtOrU-display-0111",
+      "segment_id": "5t0wDGJtOrU-ja-0040"
+    },
+    {
+      "text": "て高度成長期を支えてきたんだと思うん",
+      "start_seconds": 382.88,
+      "end_seconds": 385.039,
+      "id": "5t0wDGJtOrU-display-0112",
+      "segment_id": "5t0wDGJtOrU-ja-0040"
+    },
+    {
+      "text": "ですよね。あれが欲しいとかって言い",
+      "start_seconds": 385.039,
+      "end_seconds": 387.039,
+      "id": "5t0wDGJtOrU-display-0113",
+      "segment_id": "5t0wDGJtOrU-ja-0040"
+    },
+    {
+      "text": "ながらでこうを会社に入って一生懸命",
+      "start_seconds": 387.039,
+      "end_seconds": 391.0,
+      "id": "5t0wDGJtOrU-display-0114",
+      "segment_id": "5t0wDGJtOrU-ja-0041"
+    },
+    {
+      "text": "頑張ってで小心消求して行ってマイカー",
+      "start_seconds": 391.0,
+      "end_seconds": 395.319,
+      "id": "5t0wDGJtOrU-display-0115",
+      "segment_id": "5t0wDGJtOrU-ja-0041"
+    },
+    {
+      "text": "マイホームムって夢が叶うこれを対現した",
+      "start_seconds": 395.319,
+      "end_seconds": 398.24,
+      "id": "5t0wDGJtOrU-display-0116",
+      "segment_id": "5t0wDGJtOrU-ja-0041"
+    },
+    {
+      "text": "んですよね。で、きっとその時の成功体験",
+      "start_seconds": 398.24,
+      "end_seconds": 401.28,
+      "id": "5t0wDGJtOrU-display-0117",
+      "segment_id": "5t0wDGJtOrU-ja-0042"
+    },
+    {
+      "text": "っていうのは頑張って勉強していい会社に",
+      "start_seconds": 401.28,
+      "end_seconds": 404.56,
+      "id": "5t0wDGJtOrU-display-0118",
+      "segment_id": "5t0wDGJtOrU-ja-0042"
+    },
+    {
+      "text": "入って上司の言うことを聞いていい社員に",
+      "start_seconds": 404.56,
+      "end_seconds": 407.52,
+      "id": "5t0wDGJtOrU-display-0119",
+      "segment_id": "5t0wDGJtOrU-ja-0042"
+    },
+    {
+      "text": "なってやっていったら夢は叶うって幸せに",
+      "start_seconds": 407.52,
+      "end_seconds": 411.08,
+      "id": "5t0wDGJtOrU-display-0120",
+      "segment_id": "5t0wDGJtOrU-ja-0043"
+    },
+    {
+      "text": "なれるってそういう法則なんだと思うん",
+      "start_seconds": 411.08,
+      "end_seconds": 414.08,
+      "id": "5t0wDGJtOrU-display-0121",
+      "segment_id": "5t0wDGJtOrU-ja-0043"
+    },
+    {
+      "text": "です。でそれを僕はずっと教育されてき",
+      "start_seconds": 414.08,
+      "end_seconds": 418.0,
+      "id": "5t0wDGJtOrU-display-0122",
+      "segment_id": "5t0wDGJtOrU-ja-0043"
+    },
+    {
+      "text": "ながらまやってきたんですよね。頑張って",
+      "start_seconds": 418.0,
+      "end_seconds": 421.12,
+      "id": "5t0wDGJtOrU-display-0123",
+      "segment_id": "5t0wDGJtOrU-ja-0044"
+    },
+    {
+      "text": "勉強しっておむ君みたいなね。え、",
+      "start_seconds": 421.12,
+      "end_seconds": 423.599,
+      "id": "5t0wDGJtOrU-display-0124",
+      "segment_id": "5t0wDGJtOrU-ja-0044"
+    },
+    {
+      "text": "サラリーマン妖精ブスみたいなはめられ",
+      "start_seconds": 423.599,
+      "end_seconds": 426.4,
+      "id": "5t0wDGJtOrU-display-0125",
+      "segment_id": "5t0wDGJtOrU-ja-0044"
+    },
+    {
+      "text": "ながらこう塾に通いながらね、一生懸命",
+      "start_seconds": 426.4,
+      "end_seconds": 428.639,
+      "id": "5t0wDGJtOrU-display-0126",
+      "segment_id": "5t0wDGJtOrU-ja-0044"
+    },
+    {
+      "text": "やってきたわけです。で、ま、そこから僕",
+      "start_seconds": 428.639,
+      "end_seconds": 431.919,
+      "id": "5t0wDGJtOrU-display-0127",
+      "segment_id": "5t0wDGJtOrU-ja-0045"
+    },
+    {
+      "text": "は、ま、社会人になってからですけれども",
+      "start_seconds": 431.919,
+      "end_seconds": 434.599,
+      "id": "5t0wDGJtOrU-display-0128",
+      "segment_id": "5t0wDGJtOrU-ja-0045"
+    },
+    {
+      "text": "、え、失われた30年っていうのが始まる",
+      "start_seconds": 434.599,
+      "end_seconds": 438.319,
+      "id": "5t0wDGJtOrU-display-0129",
+      "segment_id": "5t0wDGJtOrU-ja-0045"
+    },
+    {
+      "text": "わけです。92年から一生懸命頑張っても",
+      "start_seconds": 438.319,
+      "end_seconds": 441.759,
+      "id": "5t0wDGJtOrU-display-0130",
+      "segment_id": "5t0wDGJtOrU-ja-0046"
+    },
+    {
+      "text": "業績上がんない。一生懸命頑張っても評価",
+      "start_seconds": 441.759,
+      "end_seconds": 444.36,
+      "id": "5t0wDGJtOrU-display-0131",
+      "segment_id": "5t0wDGJtOrU-ja-0046"
+    },
+    {
+      "text": "されない。なんなら給料下がっていく。で",
+      "start_seconds": 444.36,
+      "end_seconds": 446.52,
+      "id": "5t0wDGJtOrU-display-0132",
+      "segment_id": "5t0wDGJtOrU-ja-0046"
+    },
+    {
+      "text": "もどんどんどんどんもっともっともっとっ",
+      "start_seconds": 446.52,
+      "end_seconds": 448.36,
+      "id": "5t0wDGJtOrU-display-0133",
+      "segment_id": "5t0wDGJtOrU-ja-0046"
+    },
+    {
+      "text": "て競争させられていって承認されるどころ",
+      "start_seconds": 448.36,
+      "end_seconds": 451.599,
+      "id": "5t0wDGJtOrU-display-0134",
+      "segment_id": "5t0wDGJtOrU-ja-0047"
+    },
+    {
+      "text": "か居場所さえなくなって心の安全さえ、え",
+      "start_seconds": 451.599,
+      "end_seconds": 454.28,
+      "id": "5t0wDGJtOrU-display-0135",
+      "segment_id": "5t0wDGJtOrU-ja-0047"
+    },
+    {
+      "text": "、満たされないような状態になっていって",
+      "start_seconds": 454.28,
+      "end_seconds": 457.319,
+      "id": "5t0wDGJtOrU-display-0136",
+      "segment_id": "5t0wDGJtOrU-ja-0047"
+    },
+    {
+      "text": "。でもまだこれを経験しても頑張って勉強",
+      "start_seconds": 457.319,
+      "end_seconds": 462.08,
+      "id": "5t0wDGJtOrU-display-0137",
+      "segment_id": "5t0wDGJtOrU-ja-0048"
+    },
+    {
+      "text": "して頑張っていい会社に入った方が幸せに",
+      "start_seconds": 462.08,
+      "end_seconds": 464.68,
+      "id": "5t0wDGJtOrU-display-0138",
+      "segment_id": "5t0wDGJtOrU-ja-0048"
+    },
+    {
+      "text": "なれるんちゃうかっていうのって残ってる",
+      "start_seconds": 464.68,
+      "end_seconds": 467.84,
+      "id": "5t0wDGJtOrU-display-0139",
+      "segment_id": "5t0wDGJtOrU-ja-0048"
+    },
+    {
+      "text": "気がするんですよね。これ1つ目の",
+      "start_seconds": 467.84,
+      "end_seconds": 470.24,
+      "id": "5t0wDGJtOrU-display-0140",
+      "segment_id": "5t0wDGJtOrU-ja-0049"
+    },
+    {
+      "text": "モンスターの話で2つ目のモンスター会社",
+      "start_seconds": 470.24,
+      "end_seconds": 475.199,
+      "id": "5t0wDGJtOrU-display-0141",
+      "segment_id": "5t0wDGJtOrU-ja-0049"
+    },
+    {
+      "text": "。この会社っていうのは会社に入ったら人",
+      "start_seconds": 475.199,
+      "end_seconds": 478.56,
+      "id": "5t0wDGJtOrU-display-0142",
+      "segment_id": "5t0wDGJtOrU-ja-0049"
+    },
+    {
+      "text": "っていうのは幸せにしてもらえる安心安全",
+      "start_seconds": 478.56,
+      "end_seconds": 480.759,
+      "id": "5t0wDGJtOrU-display-0143",
+      "segment_id": "5t0wDGJtOrU-ja-0050"
+    },
+    {
+      "text": "っていうのもこう満たされるそう思って",
+      "start_seconds": 480.759,
+      "end_seconds": 484.159,
+      "id": "5t0wDGJtOrU-display-0144",
+      "segment_id": "5t0wDGJtOrU-ja-0050"
+    },
+    {
+      "text": "会社に入ると思うんですけどハッピーセッ",
+      "start_seconds": 484.159,
+      "end_seconds": 486.599,
+      "id": "5t0wDGJtOrU-display-0145",
+      "segment_id": "5t0wDGJtOrU-ja-0050"
+    },
+    {
+      "text": "トっていうのがあってでこれはまストって",
+      "start_seconds": 486.599,
+      "end_seconds": 490.4,
+      "id": "5t0wDGJtOrU-display-0146",
+      "segment_id": "5t0wDGJtOrU-ja-0050"
+    },
+    {
+      "text": "言われるんですけどもやりたいことできる",
+      "start_seconds": 490.4,
+      "end_seconds": 492.479,
+      "id": "5t0wDGJtOrU-display-0147",
+      "segment_id": "5t0wDGJtOrU-ja-0051"
+    },
+    {
+      "text": "ことやるべきことこの3つの縁を",
+      "start_seconds": 492.479,
+      "end_seconds": 495.28,
+      "id": "5t0wDGJtOrU-display-0148",
+      "segment_id": "5t0wDGJtOrU-ja-0051"
+    },
+    {
+      "text": "重ね合わせていくと会社の中で幸せに",
+      "start_seconds": 495.28,
+      "end_seconds": 499.039,
+      "id": "5t0wDGJtOrU-display-0149",
+      "segment_id": "5t0wDGJtOrU-ja-0051"
+    },
+    {
+      "text": "やりがいを持って働けると3つ重ねましょ",
+      "start_seconds": 499.039,
+      "end_seconds": 501.759,
+      "id": "5t0wDGJtOrU-display-0150",
+      "segment_id": "5t0wDGJtOrU-ja-0051"
+    },
+    {
+      "text": "うってでも実は会社っていうのはこの",
+      "start_seconds": 501.759,
+      "end_seconds": 504.8,
+      "id": "5t0wDGJtOrU-display-0151",
+      "segment_id": "5t0wDGJtOrU-ja-0052"
+    },
+    {
+      "text": "ビジネスセットっていうので成り立ってて",
+      "start_seconds": 504.8,
+      "end_seconds": 507.36,
+      "id": "5t0wDGJtOrU-display-0152",
+      "segment_id": "5t0wDGJtOrU-ja-0052"
+    },
+    {
+      "text": "できることとやるべきことっていうのが",
+      "start_seconds": 507.36,
+      "end_seconds": 509.72,
+      "id": "5t0wDGJtOrU-display-0153",
+      "segment_id": "5t0wDGJtOrU-ja-0052"
+    },
+    {
+      "text": "重なるとお金になるんですよ。例えば",
+      "start_seconds": 509.72,
+      "end_seconds": 512.44,
+      "id": "5t0wDGJtOrU-display-0154",
+      "segment_id": "5t0wDGJtOrU-ja-0052"
+    },
+    {
+      "text": "ラーメン屋さんが美味しいラーメン作る",
+      "start_seconds": 512.44,
+      "end_seconds": 514.56,
+      "id": "5t0wDGJtOrU-display-0155",
+      "segment_id": "5t0wDGJtOrU-ja-0053"
+    },
+    {
+      "text": "じゃないですか。で、美味しいなって言っ",
+      "start_seconds": 514.56,
+      "end_seconds": 516.24,
+      "id": "5t0wDGJtOrU-display-0156",
+      "segment_id": "5t0wDGJtOrU-ja-0053"
+    },
+    {
+      "text": "てそのラーメン食べるじゃないですか。お",
+      "start_seconds": 516.24,
+      "end_seconds": 517.959,
+      "id": "5t0wDGJtOrU-display-0157",
+      "segment_id": "5t0wDGJtOrU-ja-0053"
+    },
+    {
+      "text": "金払う。これでビジネス成立なんですよ。",
+      "start_seconds": 517.959,
+      "end_seconds": 520.399,
+      "id": "5t0wDGJtOrU-display-0158",
+      "segment_id": "5t0wDGJtOrU-ja-0053"
+    },
+    {
+      "text": "ラーメン屋さんがどんだけラーメン嫌いで",
+      "start_seconds": 520.399,
+      "end_seconds": 522.32,
+      "id": "5t0wDGJtOrU-display-0159",
+      "segment_id": "5t0wDGJtOrU-ja-0054"
+    },
+    {
+      "text": "も関係ないですよ。だから会社っていうの",
+      "start_seconds": 522.32,
+      "end_seconds": 525.519,
+      "id": "5t0wDGJtOrU-display-0160",
+      "segment_id": "5t0wDGJtOrU-ja-0054"
+    },
+    {
+      "text": "は別にやりたいことなんてどうでもいいん",
+      "start_seconds": 525.519,
+      "end_seconds": 527.44,
+      "id": "5t0wDGJtOrU-display-0161",
+      "segment_id": "5t0wDGJtOrU-ja-0054"
+    },
+    {
+      "text": "ですよ。本人のできることとやるべきこと",
+      "start_seconds": 527.44,
+      "end_seconds": 530.48,
+      "id": "5t0wDGJtOrU-display-0162",
+      "segment_id": "5t0wDGJtOrU-ja-0054"
+    },
+    {
+      "text": "をいかに合わしていくかっていうのを一生",
+      "start_seconds": 530.48,
+      "end_seconds": 533.48,
+      "id": "5t0wDGJtOrU-display-0163",
+      "segment_id": "5t0wDGJtOrU-ja-0055"
+    },
+    {
+      "text": "懸命考える仕組みになってるんです。会社",
+      "start_seconds": 533.48,
+      "end_seconds": 536.48,
+      "id": "5t0wDGJtOrU-display-0164",
+      "segment_id": "5t0wDGJtOrU-ja-0055"
+    },
+    {
+      "text": "っていうのは。で、もう1つ成長っていう",
+      "start_seconds": 536.48,
+      "end_seconds": 539.36,
+      "id": "5t0wDGJtOrU-display-0165",
+      "segment_id": "5t0wDGJtOrU-ja-0055"
+    },
+    {
+      "text": "言葉よく聞きますよね。成長って言われ",
+      "start_seconds": 539.36,
+      "end_seconds": 542.12,
+      "id": "5t0wDGJtOrU-display-0166",
+      "segment_id": "5t0wDGJtOrU-ja-0055"
+    },
+    {
+      "text": "たらなんかワクワクすんな。幸せになり",
+      "start_seconds": 542.12,
+      "end_seconds": 543.839,
+      "id": "5t0wDGJtOrU-display-0167",
+      "segment_id": "5t0wDGJtOrU-ja-0056"
+    },
+    {
+      "text": "そうやな。やりたいなって若い人なんか",
+      "start_seconds": 543.839,
+      "end_seconds": 545.839,
+      "id": "5t0wDGJtOrU-display-0168",
+      "segment_id": "5t0wDGJtOrU-ja-0056"
+    },
+    {
+      "text": "特にそう思うと思うんです。会社に入って",
+      "start_seconds": 545.839,
+      "end_seconds": 547.48,
+      "id": "5t0wDGJtOrU-display-0169",
+      "segment_id": "5t0wDGJtOrU-ja-0056"
+    },
+    {
+      "text": "も成長したい。会社も成長させてあげる",
+      "start_seconds": 547.48,
+      "end_seconds": 550.0,
+      "id": "5t0wDGJtOrU-display-0170",
+      "segment_id": "5t0wDGJtOrU-ja-0056"
+    },
+    {
+      "text": "よって言うと。で、幸せな成長っていうの",
+      "start_seconds": 550.0,
+      "end_seconds": 552.48,
+      "id": "5t0wDGJtOrU-display-0171",
+      "segment_id": "5t0wDGJtOrU-ja-0056"
+    },
+    {
+      "text": "は自分がやりたいなって思うことに対して",
+      "start_seconds": 552.48,
+      "end_seconds": 555.0,
+      "id": "5t0wDGJtOrU-display-0172",
+      "segment_id": "5t0wDGJtOrU-ja-0057"
+    },
+    {
+      "text": "変化していく。できることが増えていくっ",
+      "start_seconds": 555.0,
+      "end_seconds": 556.92,
+      "id": "5t0wDGJtOrU-display-0173",
+      "segment_id": "5t0wDGJtOrU-ja-0057"
+    },
+    {
+      "text": "ていうのが幸せな成長です。会社っていう",
+      "start_seconds": 556.92,
+      "end_seconds": 559.36,
+      "id": "5t0wDGJtOrU-display-0174",
+      "segment_id": "5t0wDGJtOrU-ja-0057"
+    },
+    {
+      "text": "のはそうじゃなくてやって欲しいこと、",
+      "start_seconds": 559.36,
+      "end_seconds": 562.2,
+      "id": "5t0wDGJtOrU-display-0175",
+      "segment_id": "5t0wDGJtOrU-ja-0057"
+    },
+    {
+      "text": "会社がやって欲しいことに対して社員が",
+      "start_seconds": 562.2,
+      "end_seconds": 565.0,
+      "id": "5t0wDGJtOrU-display-0176",
+      "segment_id": "5t0wDGJtOrU-ja-0058"
+    },
+    {
+      "text": "できるようになってことが増えていくって",
+      "start_seconds": 565.0,
+      "end_seconds": 566.48,
+      "id": "5t0wDGJtOrU-display-0177",
+      "segment_id": "5t0wDGJtOrU-ja-0058"
+    },
+    {
+      "text": "のは成長。それが会社の成長につがるから",
+      "start_seconds": 566.48,
+      "end_seconds": 569.64,
+      "id": "5t0wDGJtOrU-display-0178",
+      "segment_id": "5t0wDGJtOrU-ja-0058"
+    },
+    {
+      "text": "こっち側の成長っていうんですね。ここに",
+      "start_seconds": 569.64,
+      "end_seconds": 571.64,
+      "id": "5t0wDGJtOrU-display-0179",
+      "segment_id": "5t0wDGJtOrU-ja-0058"
+    },
+    {
+      "text": "本人の幸せな成長と会社が望む成長の",
+      "start_seconds": 571.64,
+      "end_seconds": 574.72,
+      "id": "5t0wDGJtOrU-display-0180",
+      "segment_id": "5t0wDGJtOrU-ja-0059"
+    },
+    {
+      "text": "ギャップがあるんですよ。ここが会社って",
+      "start_seconds": 574.72,
+      "end_seconds": 578.24,
+      "id": "5t0wDGJtOrU-display-0181",
+      "segment_id": "5t0wDGJtOrU-ja-0059"
+    },
+    {
+      "text": "いうモンスターの特徴であります。これ",
+      "start_seconds": 578.24,
+      "end_seconds": 583.04,
+      "id": "5t0wDGJtOrU-display-0182",
+      "segment_id": "5t0wDGJtOrU-ja-0059"
+    },
+    {
+      "text": "問題だと思いません。この2つ2匹の",
+      "start_seconds": 583.04,
+      "end_seconds": 586.2,
+      "id": "5t0wDGJtOrU-display-0183",
+      "segment_id": "5t0wDGJtOrU-ja-0060"
+    },
+    {
+      "text": "モンスター倒したいと思いません。で、僕",
+      "start_seconds": 586.2,
+      "end_seconds": 589.48,
+      "id": "5t0wDGJtOrU-display-0184",
+      "segment_id": "5t0wDGJtOrU-ja-0060"
+    },
+    {
+      "text": "らは、え、皆さんは何ができるか?実は",
+      "start_seconds": 589.48,
+      "end_seconds": 593.36,
+      "id": "5t0wDGJtOrU-display-0185",
+      "segment_id": "5t0wDGJtOrU-ja-0060"
+    },
+    {
+      "text": "もうすでにみんな武器を持ってるんですよ",
+      "start_seconds": 593.36,
+      "end_seconds": 596.16,
+      "id": "5t0wDGJtOrU-display-0186",
+      "segment_id": "5t0wDGJtOrU-ja-0061"
+    },
+    {
+      "text": "。エクスカリバーを。どんな向きかって",
+      "start_seconds": 596.16,
+      "end_seconds": 599.12,
+      "id": "5t0wDGJtOrU-display-0187",
+      "segment_id": "5t0wDGJtOrU-ja-0061"
+    },
+    {
+      "text": "言うと、インターネットやAIやそういう",
+      "start_seconds": 599.12,
+      "end_seconds": 603.56,
+      "id": "5t0wDGJtOrU-display-0188",
+      "segment_id": "5t0wDGJtOrU-ja-0061"
+    },
+    {
+      "text": "武器です。で、BIからAIへ。これは",
+      "start_seconds": 603.56,
+      "end_seconds": 607.04,
+      "id": "5t0wDGJtOrU-display-0189",
+      "segment_id": "5t0wDGJtOrU-ja-0062"
+    },
+    {
+      "text": "ビフォーインターネットとアフター",
+      "start_seconds": 607.04,
+      "end_seconds": 608.839,
+      "id": "5t0wDGJtOrU-display-0190",
+      "segment_id": "5t0wDGJtOrU-ja-0062"
+    },
+    {
+      "text": "インターネットっていう意味なんですけど",
+      "start_seconds": 608.839,
+      "end_seconds": 610.519,
+      "id": "5t0wDGJtOrU-display-0191",
+      "segment_id": "5t0wDGJtOrU-ja-0062"
+    },
+    {
+      "text": "、今まで僕が話したモンスターの話って",
+      "start_seconds": 610.519,
+      "end_seconds": 613.48,
+      "id": "5t0wDGJtOrU-display-0192",
+      "segment_id": "5t0wDGJtOrU-ja-0062"
+    },
+    {
+      "text": "いうのは基本的にはインターネット前の",
+      "start_seconds": 613.48,
+      "end_seconds": 615.72,
+      "id": "5t0wDGJtOrU-display-0193",
+      "segment_id": "5t0wDGJtOrU-ja-0063"
+    },
+    {
+      "text": "世界で作られた常識であって会社である",
+      "start_seconds": 615.72,
+      "end_seconds": 618.68,
+      "id": "5t0wDGJtOrU-display-0194",
+      "segment_id": "5t0wDGJtOrU-ja-0063"
+    },
+    {
+      "text": "わけです。で、これからアフター",
+      "start_seconds": 618.68,
+      "end_seconds": 620.92,
+      "id": "5t0wDGJtOrU-display-0195",
+      "segment_id": "5t0wDGJtOrU-ja-0063"
+    },
+    {
+      "text": "インターネットの世界で皆さんが作り出す",
+      "start_seconds": 620.92,
+      "end_seconds": 624.519,
+      "id": "5t0wDGJtOrU-display-0196",
+      "segment_id": "5t0wDGJtOrU-ja-0063"
+    },
+    {
+      "text": "常識があるんですよ。で、皆さんが",
+      "start_seconds": 624.519,
+      "end_seconds": 626.76,
+      "id": "5t0wDGJtOrU-display-0197",
+      "segment_id": "5t0wDGJtOrU-ja-0064"
+    },
+    {
+      "text": "作り出す新しい会社の形があるはずなん",
+      "start_seconds": 626.76,
+      "end_seconds": 629.48,
+      "id": "5t0wDGJtOrU-display-0198",
+      "segment_id": "5t0wDGJtOrU-ja-0064"
+    },
+    {
+      "text": "ですよ。で、その自分たちの幸せのために",
+      "start_seconds": 629.48,
+      "end_seconds": 633.44,
+      "id": "5t0wDGJtOrU-display-0199",
+      "segment_id": "5t0wDGJtOrU-ja-0064"
+    },
+    {
+      "text": "そういう会社ってね、そういう常識って",
+      "start_seconds": 633.44,
+      "end_seconds": 636.72,
+      "id": "5t0wDGJtOrU-display-0200",
+      "segment_id": "5t0wDGJtOrU-ja-0065"
+    },
+    {
+      "text": "作ってみればいいんじゃないかな、作れる",
+      "start_seconds": 636.72,
+      "end_seconds": 639.079,
+      "id": "5t0wDGJtOrU-display-0201",
+      "segment_id": "5t0wDGJtOrU-ja-0065"
+    },
+    {
+      "text": "んじゃないかなって思うんです。この数字",
+      "start_seconds": 639.079,
+      "end_seconds": 641.399,
+      "id": "5t0wDGJtOrU-display-0202",
+      "segment_id": "5t0wDGJtOrU-ja-0065"
+    },
+    {
+      "text": "何かって言うと、日本の企業数360万社",
+      "start_seconds": 641.399,
+      "end_seconds": 646.68,
+      "id": "5t0wDGJtOrU-display-0203",
+      "segment_id": "5t0wDGJtOrU-ja-0066"
+    },
+    {
+      "text": "あるんです。で、そのうち1000人以上",
+      "start_seconds": 646.68,
+      "end_seconds": 650.04,
+      "id": "5t0wDGJtOrU-display-0204",
+      "segment_id": "5t0wDGJtOrU-ja-0066"
+    },
+    {
+      "text": "の会社って0.13%しかないんですよ。",
+      "start_seconds": 650.04,
+      "end_seconds": 654.04,
+      "id": "5t0wDGJtOrU-display-0205",
+      "segment_id": "5t0wDGJtOrU-ja-0067"
+    },
+    {
+      "text": "で、170万社っていうのは個人事業主",
+      "start_seconds": 654.04,
+      "end_seconds": 657.68,
+      "id": "5t0wDGJtOrU-display-0206",
+      "segment_id": "5t0wDGJtOrU-ja-0068"
+    },
+    {
+      "text": "って言われて、1人でやってる会社47%",
+      "start_seconds": 657.68,
+      "end_seconds": 661.36,
+      "id": "5t0wDGJtOrU-display-0207",
+      "segment_id": "5t0wDGJtOrU-ja-0068"
+    },
+    {
+      "text": "あるんです。でもこの1000人以上の",
+      "start_seconds": 661.36,
+      "end_seconds": 665.399,
+      "id": "5t0wDGJtOrU-display-0208",
+      "segment_id": "5t0wDGJtOrU-ja-0068"
+    },
+    {
+      "text": "0.13%",
+      "start_seconds": 665.399,
+      "end_seconds": 667.079,
+      "id": "5t0wDGJtOrU-display-0209",
+      "segment_id": "5t0wDGJtOrU-ja-0069"
+    },
+    {
+      "text": "の会社にみんな一生懸命入ろうとしてませ",
+      "start_seconds": 667.079,
+      "end_seconds": 670.0,
+      "id": "5t0wDGJtOrU-display-0210",
+      "segment_id": "5t0wDGJtOrU-ja-0069"
+    },
+    {
+      "text": "ん。で、その会社に入ったらおめでとうっ",
+      "start_seconds": 670.0,
+      "end_seconds": 673.279,
+      "id": "5t0wDGJtOrU-display-0211",
+      "segment_id": "5t0wDGJtOrU-ja-0069"
+    },
+    {
+      "text": "て言われて、その会社に入らへんかったら",
+      "start_seconds": 673.279,
+      "end_seconds": 676.12,
+      "id": "5t0wDGJtOrU-display-0212",
+      "segment_id": "5t0wDGJtOrU-ja-0069"
+    },
+    {
+      "text": "負け組って言われてるような感じしません",
+      "start_seconds": 676.12,
+      "end_seconds": 678.839,
+      "id": "5t0wDGJtOrU-display-0213",
+      "segment_id": "5t0wDGJtOrU-ja-0070"
+    },
+    {
+      "text": "。でも170万人、170万社の人達って",
+      "start_seconds": 678.839,
+      "end_seconds": 684.56,
+      "id": "5t0wDGJtOrU-display-0214",
+      "segment_id": "5t0wDGJtOrU-ja-0070"
+    },
+    {
+      "text": "いうのが今のこう世界の経済立国の日本を",
+      "start_seconds": 684.56,
+      "end_seconds": 688.8,
+      "id": "5t0wDGJtOrU-display-0215",
+      "segment_id": "5t0wDGJtOrU-ja-0071"
+    },
+    {
+      "text": "支えてたりするわけですよ。ここでみんな",
+      "start_seconds": 688.8,
+      "end_seconds": 691.959,
+      "id": "5t0wDGJtOrU-display-0216",
+      "segment_id": "5t0wDGJtOrU-ja-0071"
+    },
+    {
+      "text": "が不幸になってるわけじゃ決してないわけ",
+      "start_seconds": 691.959,
+      "end_seconds": 694.6,
+      "id": "5t0wDGJtOrU-display-0217",
+      "segment_id": "5t0wDGJtOrU-ja-0071"
+    },
+    {
+      "text": "です。逆に言うと1000人以上の会社で",
+      "start_seconds": 694.6,
+      "end_seconds": 698.079,
+      "id": "5t0wDGJtOrU-display-0218",
+      "segment_id": "5t0wDGJtOrU-ja-0072"
+    },
+    {
+      "text": "勝ち組って言われてる人がさっき言った",
+      "start_seconds": 698.079,
+      "end_seconds": 700.6,
+      "id": "5t0wDGJtOrU-display-0219",
+      "segment_id": "5t0wDGJtOrU-ja-0072"
+    },
+    {
+      "text": "みたいに幸せ感じてなかったりやりがい",
+      "start_seconds": 700.6,
+      "end_seconds": 703.399,
+      "id": "5t0wDGJtOrU-display-0220",
+      "segment_id": "5t0wDGJtOrU-ja-0072"
+    },
+    {
+      "text": "感じてなかったりするっていうのが今の",
+      "start_seconds": 703.399,
+      "end_seconds": 705.2,
+      "id": "5t0wDGJtOrU-display-0221",
+      "segment_id": "5t0wDGJtOrU-ja-0072"
+    },
+    {
+      "text": "日本なんですよ。で、ここでもう企業って",
+      "start_seconds": 705.2,
+      "end_seconds": 710.399,
+      "id": "5t0wDGJtOrU-display-0222",
+      "segment_id": "5t0wDGJtOrU-ja-0073"
+    },
+    {
+      "text": "言ったら大衆化されてるわけです。会社",
+      "start_seconds": 710.399,
+      "end_seconds": 712.959,
+      "id": "5t0wDGJtOrU-display-0223",
+      "segment_id": "5t0wDGJtOrU-ja-0073"
+    },
+    {
+      "text": "って実は大衆化されてて、さっき言っ",
+      "start_seconds": 712.959,
+      "end_seconds": 715.12,
+      "id": "5t0wDGJtOrU-display-0224",
+      "segment_id": "5t0wDGJtOrU-ja-0073"
+    },
+    {
+      "text": "たくさんの会社、個人事業者はたくさんい",
+      "start_seconds": 715.12,
+      "end_seconds": 717.88,
+      "id": "5t0wDGJtOrU-display-0225",
+      "segment_id": "5t0wDGJtOrU-ja-0074"
+    },
+    {
+      "text": "てもうすでに経済回ってるわけなんですよ",
+      "start_seconds": 717.88,
+      "end_seconds": 720.36,
+      "id": "5t0wDGJtOrU-display-0226",
+      "segment_id": "5t0wDGJtOrU-ja-0074"
+    },
+    {
+      "text": "ね。だそこで一緒に起業してみません",
+      "start_seconds": 720.36,
+      "end_seconds": 723.76,
+      "id": "5t0wDGJtOrU-display-0227",
+      "segment_id": "5t0wDGJtOrU-ja-0074"
+    },
+    {
+      "text": "かってできんじゃないですかって思うわけ",
+      "start_seconds": 723.76,
+      "end_seconds": 726.12,
+      "id": "5t0wDGJtOrU-display-0228",
+      "segment_id": "5t0wDGJtOrU-ja-0074"
+    },
+    {
+      "text": "です。別に学生しながら起業できるわけ",
+      "start_seconds": 726.12,
+      "end_seconds": 728.839,
+      "id": "5t0wDGJtOrU-display-0229",
+      "segment_id": "5t0wDGJtOrU-ja-0075"
+    },
+    {
+      "text": "ですよ。どっかの会社に入りながら副業で",
+      "start_seconds": 728.839,
+      "end_seconds": 731.48,
+      "id": "5t0wDGJtOrU-display-0230",
+      "segment_id": "5t0wDGJtOrU-ja-0075"
+    },
+    {
+      "text": "企業ってできるわけですよ。そんな大した",
+      "start_seconds": 731.48,
+      "end_seconds": 733.399,
+      "id": "5t0wDGJtOrU-display-0231",
+      "segment_id": "5t0wDGJtOrU-ja-0075"
+    },
+    {
+      "text": "リスクいらないじゃないですか。え、で、",
+      "start_seconds": 733.399,
+      "end_seconds": 736.32,
+      "id": "5t0wDGJtOrU-display-0232",
+      "segment_id": "5t0wDGJtOrU-ja-0075"
+    },
+    {
+      "text": "その時に何やりたいか分からへん。",
+      "start_seconds": 736.32,
+      "end_seconds": 738.44,
+      "id": "5t0wDGJtOrU-display-0233",
+      "segment_id": "5t0wDGJtOrU-ja-0076"
+    },
+    {
+      "text": "ビジネスなんかやったことないからって",
+      "start_seconds": 738.44,
+      "end_seconds": 740.44,
+      "id": "5t0wDGJtOrU-display-0234",
+      "segment_id": "5t0wDGJtOrU-ja-0077"
+    },
+    {
+      "text": "思うと思うんですね。大事なことは",
+      "start_seconds": 740.44,
+      "end_seconds": 742.8,
+      "id": "5t0wDGJtOrU-display-0235",
+      "segment_id": "5t0wDGJtOrU-ja-0077"
+    },
+    {
+      "text": "ありがとうっていう言葉。このキーワード",
+      "start_seconds": 742.8,
+      "end_seconds": 745.12,
+      "id": "5t0wDGJtOrU-display-0236",
+      "segment_id": "5t0wDGJtOrU-ja-0077"
+    },
+    {
+      "text": "。へえ。なぜかって言うとこの会社をやる",
+      "start_seconds": 745.12,
+      "end_seconds": 748.48,
+      "id": "5t0wDGJtOrU-display-0237",
+      "segment_id": "5t0wDGJtOrU-ja-0077"
+    },
+    {
+      "text": "時に全身前例をかけて覚悟を決めてね。で",
+      "start_seconds": 748.48,
+      "end_seconds": 752.44,
+      "id": "5t0wDGJtOrU-display-0238",
+      "segment_id": "5t0wDGJtOrU-ja-0078"
+    },
+    {
+      "text": "、世界一になるんだ。上場するんだ。",
+      "start_seconds": 752.44,
+      "end_seconds": 754.92,
+      "id": "5t0wDGJtOrU-display-0239",
+      "segment_id": "5t0wDGJtOrU-ja-0078"
+    },
+    {
+      "text": "そんな会社を作るんだって言わないと会社",
+      "start_seconds": 754.92,
+      "end_seconds": 757.199,
+      "id": "5t0wDGJtOrU-display-0240",
+      "segment_id": "5t0wDGJtOrU-ja-0079"
+    },
+    {
+      "text": "できないんじゃないかって思ってないです",
+      "start_seconds": 757.199,
+      "end_seconds": 759.04,
+      "id": "5t0wDGJtOrU-display-0241",
+      "segment_id": "5t0wDGJtOrU-ja-0079"
+    },
+    {
+      "text": "か。いや、そうじゃなくって、まずは",
+      "start_seconds": 759.04,
+      "end_seconds": 761.8,
+      "id": "5t0wDGJtOrU-display-0242",
+      "segment_id": "5t0wDGJtOrU-ja-0079"
+    },
+    {
+      "text": "ありがとうって自己実現の欲求の前に証人",
+      "start_seconds": 761.8,
+      "end_seconds": 766.04,
+      "id": "5t0wDGJtOrU-display-0243",
+      "segment_id": "5t0wDGJtOrU-ja-0079"
+    },
+    {
+      "text": "とか居場所がある。自分ができることで人",
+      "start_seconds": 766.04,
+      "end_seconds": 768.68,
+      "id": "5t0wDGJtOrU-display-0244",
+      "segment_id": "5t0wDGJtOrU-ja-0080"
+    },
+    {
+      "text": "にありがとうって言ってもらう。まさに",
+      "start_seconds": 768.68,
+      "end_seconds": 771.16,
+      "id": "5t0wDGJtOrU-display-0245",
+      "segment_id": "5t0wDGJtOrU-ja-0080"
+    },
+    {
+      "text": "それってビジネスの原点なわけですよ。え",
+      "start_seconds": 771.16,
+      "end_seconds": 774.279,
+      "id": "5t0wDGJtOrU-display-0246",
+      "segment_id": "5t0wDGJtOrU-ja-0080"
+    },
+    {
+      "text": "、そこをいきなり100万人じゃなくって",
+      "start_seconds": 774.279,
+      "end_seconds": 777.04,
+      "id": "5t0wDGJtOrU-display-0247",
+      "segment_id": "5t0wDGJtOrU-ja-0080"
+    },
+    {
+      "text": "1人2人3人でもいいんです。その人に",
+      "start_seconds": 777.04,
+      "end_seconds": 779.44,
+      "id": "5t0wDGJtOrU-display-0248",
+      "segment_id": "5t0wDGJtOrU-ja-0081"
+    },
+    {
+      "text": "自分ができることで、自分の好きなことで",
+      "start_seconds": 779.44,
+      "end_seconds": 781.56,
+      "id": "5t0wDGJtOrU-display-0249",
+      "segment_id": "5t0wDGJtOrU-ja-0081"
+    },
+    {
+      "text": "ありがとうって言ってもらえることから",
+      "start_seconds": 781.56,
+      "end_seconds": 783.72,
+      "id": "5t0wDGJtOrU-display-0250",
+      "segment_id": "5t0wDGJtOrU-ja-0081"
+    },
+    {
+      "text": "始めていく。それをどういう風にビジネス",
+      "start_seconds": 783.72,
+      "end_seconds": 786.24,
+      "id": "5t0wDGJtOrU-display-0251",
+      "segment_id": "5t0wDGJtOrU-ja-0081"
+    },
+    {
+      "text": "にしていくかっていうのはいろんな人に",
+      "start_seconds": 786.24,
+      "end_seconds": 788.72,
+      "id": "5t0wDGJtOrU-display-0252",
+      "segment_id": "5t0wDGJtOrU-ja-0081"
+    },
+    {
+      "text": "手伝ってもらう。なんならAIに一緒に",
+      "start_seconds": 788.72,
+      "end_seconds": 790.72,
+      "id": "5t0wDGJtOrU-display-0253",
+      "segment_id": "5t0wDGJtOrU-ja-0082"
+    },
+    {
+      "text": "考えてもらったらいいわけです。それが",
+      "start_seconds": 790.72,
+      "end_seconds": 792.279,
+      "id": "5t0wDGJtOrU-display-0254",
+      "segment_id": "5t0wDGJtOrU-ja-0082"
+    },
+    {
+      "text": "できるんですよ。ですか?ゲーム",
+      "start_seconds": 792.279,
+      "end_seconds": 795.24,
+      "id": "5t0wDGJtOrU-display-0255",
+      "segment_id": "5t0wDGJtOrU-ja-0082"
+    },
+    {
+      "text": "チェンジャーズ。あ、こう皆さんはなんか",
+      "start_seconds": 795.24,
+      "end_seconds": 800.399,
+      "id": "5t0wDGJtOrU-display-0256",
+      "segment_id": "5t0wDGJtOrU-ja-0082"
+    },
+    {
+      "text": "皆さんを幸せにしてくれるんじゃない",
+      "start_seconds": 800.399,
+      "end_seconds": 803.199,
+      "id": "5t0wDGJtOrU-display-0257",
+      "segment_id": "5t0wDGJtOrU-ja-0083"
+    },
+    {
+      "text": "かって思う常識とか会社に依存しちゃって",
+      "start_seconds": 803.199,
+      "end_seconds": 809.0,
+      "id": "5t0wDGJtOrU-display-0258",
+      "segment_id": "5t0wDGJtOrU-ja-0083"
+    },
+    {
+      "text": "んじゃないかなって。支配されてんじゃ",
+      "start_seconds": 809.0,
+      "end_seconds": 810.92,
+      "id": "5t0wDGJtOrU-display-0259",
+      "segment_id": "5t0wDGJtOrU-ja-0083"
+    },
+    {
+      "text": "ないかなって思うんです。なんでか自分",
+      "start_seconds": 810.92,
+      "end_seconds": 814.76,
+      "id": "5t0wDGJtOrU-display-0260",
+      "segment_id": "5t0wDGJtOrU-ja-0084"
+    },
+    {
+      "text": "から始まってないんですよ。自分が発する",
+      "start_seconds": 814.76,
+      "end_seconds": 817.92,
+      "id": "5t0wDGJtOrU-display-0261",
+      "segment_id": "5t0wDGJtOrU-ja-0084"
+    },
+    {
+      "text": "ものとか自分が幸せになりたいやりたい",
+      "start_seconds": 817.92,
+      "end_seconds": 820.639,
+      "id": "5t0wDGJtOrU-display-0262",
+      "segment_id": "5t0wDGJtOrU-ja-0084"
+    },
+    {
+      "text": "ことから始まってないんですよ。そうじゃ",
+      "start_seconds": 820.639,
+      "end_seconds": 823.519,
+      "id": "5t0wDGJtOrU-display-0263",
+      "segment_id": "5t0wDGJtOrU-ja-0085"
+    },
+    {
+      "text": "なくって、まずは自分の心に素直手を当て",
+      "start_seconds": 823.519,
+      "end_seconds": 827.48,
+      "id": "5t0wDGJtOrU-display-0264",
+      "segment_id": "5t0wDGJtOrU-ja-0085"
+    },
+    {
+      "text": "て素直に何を干してるのか、何をやりたい",
+      "start_seconds": 827.48,
+      "end_seconds": 831.639,
+      "id": "5t0wDGJtOrU-display-0265",
+      "segment_id": "5t0wDGJtOrU-ja-0085"
+    },
+    {
+      "text": "のかそのためのアイテムとして常識で会社",
+      "start_seconds": 831.639,
+      "end_seconds": 838.0,
+      "id": "5t0wDGJtOrU-display-0266",
+      "segment_id": "5t0wDGJtOrU-ja-0086"
+    },
+    {
+      "text": "でITとかを使ってそれを実現していくっ",
+      "start_seconds": 838.0,
+      "end_seconds": 842.279,
+      "id": "5t0wDGJtOrU-display-0267",
+      "segment_id": "5t0wDGJtOrU-ja-0086"
+    },
+    {
+      "text": "て",
+      "start_seconds": 842.279,
+      "end_seconds": 843.88,
+      "id": "5t0wDGJtOrU-display-0268",
+      "segment_id": "5t0wDGJtOrU-ja-0087"
+    },
+    {
+      "text": "100に100通りの個性があって、",
+      "start_seconds": 843.88,
+      "end_seconds": 847.44,
+      "id": "5t0wDGJtOrU-display-0269",
+      "segment_id": "5t0wDGJtOrU-ja-0087"
+    },
+    {
+      "text": "100通りの生き方があって、100通り",
+      "start_seconds": 847.44,
+      "end_seconds": 851.079,
+      "id": "5t0wDGJtOrU-display-0270",
+      "segment_id": "5t0wDGJtOrU-ja-0087"
+    },
+    {
+      "text": "の幸せの形があると思うんです。で、その",
+      "start_seconds": 851.079,
+      "end_seconds": 854.88,
+      "id": "5t0wDGJtOrU-display-0271",
+      "segment_id": "5t0wDGJtOrU-ja-0088"
+    },
+    {
+      "text": "幸せの形があるにも関わらず何かに囚われ",
+      "start_seconds": 854.88,
+      "end_seconds": 858.24,
+      "id": "5t0wDGJtOrU-display-0272",
+      "segment_id": "5t0wDGJtOrU-ja-0088"
+    },
+    {
+      "text": "てる。で、それそこからこの常識とかが",
+      "start_seconds": 858.24,
+      "end_seconds": 863.88,
+      "id": "5t0wDGJtOrU-display-0273",
+      "segment_id": "5t0wDGJtOrU-ja-0089"
+    },
+    {
+      "text": "その会社っていうモンスター倒して、え、",
+      "start_seconds": 863.88,
+      "end_seconds": 867.12,
+      "id": "5t0wDGJtOrU-display-0274",
+      "segment_id": "5t0wDGJtOrU-ja-0089"
+    },
+    {
+      "text": "自分自身の幸せっていうのを作ってみませ",
+      "start_seconds": 867.12,
+      "end_seconds": 871.56,
+      "id": "5t0wDGJtOrU-display-0275",
+      "segment_id": "5t0wDGJtOrU-ja-0090"
+    },
+    {
+      "text": "んかと。こう権限とか権力お金で支配さ",
+      "start_seconds": 871.56,
+      "end_seconds": 875.56,
+      "id": "5t0wDGJtOrU-display-0276",
+      "segment_id": "5t0wDGJtOrU-ja-0090"
+    },
+    {
+      "text": "れる社会から自分がこうやりたいなを実現",
+      "start_seconds": 875.56,
+      "end_seconds": 879.959,
+      "id": "5t0wDGJtOrU-display-0277",
+      "segment_id": "5t0wDGJtOrU-ja-0091"
+    },
+    {
+      "text": "したいなっていうもう理想をとしてそれを",
+      "start_seconds": 879.959,
+      "end_seconds": 882.759,
+      "id": "5t0wDGJtOrU-display-0278",
+      "segment_id": "5t0wDGJtOrU-ja-0091"
+    },
+    {
+      "text": "人に伝えて協力してもらって一緒に生き",
+      "start_seconds": 882.759,
+      "end_seconds": 887.12,
+      "id": "5t0wDGJtOrU-display-0279",
+      "segment_id": "5t0wDGJtOrU-ja-0091"
+    },
+    {
+      "text": "ワクワクするような社会にゲームチェンジ",
+      "start_seconds": 887.12,
+      "end_seconds": 891.12,
+      "id": "5t0wDGJtOrU-display-0280",
+      "segment_id": "5t0wDGJtOrU-ja-0092"
+    },
+    {
+      "text": "一緒にしましょうよ。",
+      "start_seconds": 891.12,
+      "end_seconds": 894.72,
+      "id": "5t0wDGJtOrU-display-0281",
+      "segment_id": "5t0wDGJtOrU-ja-0092"
+    },
+    {
+      "text": "皆さん幸せですか?",
+      "start_seconds": 894.72,
+      "end_seconds": 898.36,
+      "id": "5t0wDGJtOrU-display-0282",
+      "segment_id": "5t0wDGJtOrU-ja-0093"
+    },
+    {
+      "text": "ありがとうございます。[拍手]",
+      "start_seconds": 898.36,
+      "end_seconds": 902.0,
+      "id": "5t0wDGJtOrU-display-0283",
+      "segment_id": "5t0wDGJtOrU-ja-0094"
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 904.565,
+      "end_seconds": 906.585,
+      "id": "5t0wDGJtOrU-display-0284",
+      "segment_id": "5t0wDGJtOrU-ja-0095"
+    }
+  ]
+}

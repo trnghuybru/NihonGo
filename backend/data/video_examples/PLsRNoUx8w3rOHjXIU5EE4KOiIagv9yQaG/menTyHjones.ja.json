@@ -1,0 +1,3668 @@
+{
+  "schema_version": 1,
+  "video": {
+    "youtube_id": "menTyHjones",
+    "title": "Is Nature Ours to Protect? | Doriota Takido | TEDxMarunouchi",
+    "channel": "TEDx Talks",
+    "duration_seconds": 955
+  },
+  "caption_track": {
+    "language": "ja",
+    "kind": "asr",
+    "source": "youtube_automatic"
+  },
+  "source_playlist": "https://www.youtube.com/playlist?list=PLsRNoUx8w3rOHjXIU5EE4KOiIagv9yQaG",
+  "fetched_at": "2026-10-13T13:23:27.548106+00:00",
+  "segment_count": 111,
+  "segments": [
+    {
+      "text": "[音楽]",
+      "start_seconds": 9.825,
+      "end_seconds": 11.844999999999999,
+      "id": "menTyHjones-ja-0001",
+      "sequence": 1
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 13.1,
+      "end_seconds": 15.12,
+      "id": "menTyHjones-ja-0002",
+      "sequence": 2
+    },
+    {
+      "text": "こんにちは。今日もあのこんにちは。",
+      "start_seconds": 25.8,
+      "end_seconds": 29.475,
+      "id": "menTyHjones-ja-0003",
+      "sequence": 3
+    },
+    {
+      "text": "[笑い]自然との関わりの話たくさんありますね。",
+      "start_seconds": 29.475,
+      "end_seconds": 34.48,
+      "id": "menTyHjones-ja-0004",
+      "sequence": 4
+    },
+    {
+      "text": "あの、皆さんは今自然を回復するとか生態系をこう多様性をなど話を様々なところで",
+      "start_seconds": 34.48,
+      "end_seconds": 45.52,
+      "id": "menTyHjones-ja-0005",
+      "sequence": 5
+    },
+    {
+      "text": "聞くと思います。あれ、今日ちょっとお説教みたいな話かなとちょっと意見苦しく感じる方もいるかもしれません。",
+      "start_seconds": 45.52,
+      "end_seconds": 57.28,
+      "id": "menTyHjones-ja-0006",
+      "sequence": 6
+    },
+    {
+      "text": "そういった自然を守るとか生体系の話をする時皆さんどんな景色を思い浮かべるでしょうか?",
+      "start_seconds": 57.28,
+      "end_seconds": 67.24,
+      "id": "menTyHjones-ja-0007",
+      "sequence": 7
+    },
+    {
+      "text": "森でしょうか?海でしょうか?それとも絶妙そうな生き物の数でしょうか?",
+      "start_seconds": 67.24,
+      "end_seconds": 77.28,
+      "id": "menTyHjones-ja-0008",
+      "sequence": 8
+    },
+    {
+      "text": "そしてきっと次には自然を守らなければならない。そう思うのではないでしょうか。でも毎日の忙しさから",
+      "start_seconds": 77.28,
+      "end_seconds": 87.32,
+      "id": "menTyHjones-ja-0009",
+      "sequence": 9
+    },
+    {
+      "text": "私たちの優先順位からそれはこぼれてしまう。それも1つの本音かと思います。",
+      "start_seconds": 87.32,
+      "end_seconds": 97.119,
+      "id": "menTyHjones-ja-0010",
+      "sequence": 10
+    },
+    {
+      "text": "自然を守る。",
+      "start_seconds": 97.159,
+      "end_seconds": 99.72,
+      "id": "menTyHjones-ja-0011",
+      "sequence": 11
+    },
+    {
+      "text": "私はこの言葉に少し立ち止まってしまいます。なぜなら守るという言葉には守る側",
+      "start_seconds": 99.72,
+      "end_seconds": 107.799,
+      "id": "menTyHjones-ja-0012",
+      "sequence": 12
+    },
+    {
+      "text": "と守られる側がいます。つまり私たち人間はこちら側で自然はあちら側。果たして",
+      "start_seconds": 107.799,
+      "end_seconds": 116.799,
+      "id": "menTyHjones-ja-0013",
+      "sequence": 13
+    },
+    {
+      "text": "本当にそうでしょうか?私たちは自然を守る側でしょうか?もっと根本的に考えたらもしかしたら自然に守られているので",
+      "start_seconds": 116.799,
+      "end_seconds": 128.679,
+      "id": "menTyHjones-ja-0014",
+      "sequence": 14
+    },
+    {
+      "text": "はないでしょうか?",
+      "start_seconds": 128.679,
+      "end_seconds": 132.0,
+      "id": "menTyHjones-ja-0015",
+      "sequence": 15
+    },
+    {
+      "text": "ちょっと考えてみてください。例えば植物が酸素を出さなくなったら、虫が花粉を運ばなくなったら、微生物が分解をしなく",
+      "start_seconds": 132.0,
+      "end_seconds": 142.76,
+      "id": "menTyHjones-ja-0016",
+      "sequence": 16
+    },
+    {
+      "text": "なったら、私たちは1日足りとも同じ生活ができません。あれ当たり前のこと言ってるんじゃないか。そんなこと思う方もいるかと思います。",
+      "start_seconds": 142.76,
+      "end_seconds": 154.12,
+      "id": "menTyHjones-ja-0017",
+      "sequence": 17
+    },
+    {
+      "text": "でも、あの、私たちはもうとても大きな数えきれないほどの生き物が関わる循環の",
+      "start_seconds": 154.12,
+      "end_seconds": 162.68,
+      "id": "menTyHjones-ja-0018",
+      "sequence": 18
+    },
+    {
+      "text": "中にすでに立っています。",
+      "start_seconds": 162.68,
+      "end_seconds": 167.20000000000002,
+      "id": "menTyHjones-ja-0019",
+      "sequence": 19
+    },
+    {
+      "text": "遠くで起こったことが巡り巡って私たちの命を支えていること、",
+      "start_seconds": 168.84,
+      "end_seconds": 176.48,
+      "id": "menTyHjones-ja-0020",
+      "sequence": 20
+    },
+    {
+      "text": "またそれが自分に帰ってきていくこと。",
+      "start_seconds": 176.48,
+      "end_seconds": 181.239,
+      "id": "menTyHjones-ja-0021",
+      "sequence": 21
+    },
+    {
+      "text": "そういった関係は見えにくいです。",
+      "start_seconds": 181.239,
+      "end_seconds": 185.48,
+      "id": "menTyHjones-ja-0022",
+      "sequence": 22
+    },
+    {
+      "text": "自然が私たちを守ってくれること、支えられてること、私たちの命に帰ってきてること。これらは暮らしの中でほとんど実感",
+      "start_seconds": 185.48,
+      "end_seconds": 194.04,
+      "id": "menTyHjones-ja-0023",
+      "sequence": 23
+    },
+    {
+      "text": "できません。なので私は1つの問を立てました。",
+      "start_seconds": 194.04,
+      "end_seconds": 200.36,
+      "id": "menTyHjones-ja-0024",
+      "sequence": 24
+    },
+    {
+      "text": "はい。",
+      "start_seconds": 200.36,
+      "end_seconds": 203.59900000000002,
+      "id": "menTyHjones-ja-0025",
+      "sequence": 25
+    },
+    {
+      "text": "人は直接的な利益がなくても自然と深く関われるのか。",
+      "start_seconds": 203.68,
+      "end_seconds": 211.72,
+      "id": "menTyHjones-ja-0026",
+      "sequence": 26
+    },
+    {
+      "text": "もし自然が役に立つという、役に立つから守るという関係だけではない、何か関わりが作れるのであれば私たちは自然との関わりが少し違うことはできるんじゃない",
+      "start_seconds": 211.72,
+      "end_seconds": 223.72,
+      "id": "menTyHjones-ja-0027",
+      "sequence": 27
+    },
+    {
+      "text": "か。",
+      "start_seconds": 223.72,
+      "end_seconds": 225.48,
+      "id": "menTyHjones-ja-0028",
+      "sequence": 28
+    },
+    {
+      "text": "そんな問いから、え、私の研究の中で人と自然がふっと変わった瞬間について今日お話ししたいと思います。",
+      "start_seconds": 225.48,
+      "end_seconds": 234.879,
+      "id": "menTyHjones-ja-0029",
+      "sequence": 29
+    },
+    {
+      "text": "初めにちょっとだけ私自身の話をさせてください。私は美術大学美を卒業した後、アーティストとして活動してきました。え",
+      "start_seconds": 234.879,
+      "end_seconds": 245.36,
+      "id": "menTyHjones-ja-0030",
+      "sequence": 30
+    },
+    {
+      "text": "、社会人として東京大学の、え、収支家庭をこの3月に終えて、また同じ東京大学の",
+      "start_seconds": 245.36,
+      "end_seconds": 253.48,
+      "id": "menTyHjones-ja-0031",
+      "sequence": 31
+    },
+    {
+      "text": "白家庭に進んでいます。え、東大に入る前にちょっと違う作品を作りました。",
+      "start_seconds": 253.48,
+      "end_seconds": 262.56,
+      "id": "menTyHjones-ja-0032",
+      "sequence": 32
+    },
+    {
+      "text": "植物にロボティクスの技術である人工筋肉をつけて動かす作品です。[鼻息]",
+      "start_seconds": 262.56,
+      "end_seconds": 271.759,
+      "id": "menTyHjones-ja-0033",
+      "sequence": 33
+    },
+    {
+      "text": "植物っていうのは動物と違って足を使って移動はしません。でも、え、種を風に乗せ",
+      "start_seconds": 271.759,
+      "end_seconds": 279.88,
+      "id": "menTyHjones-ja-0034",
+      "sequence": 34
+    },
+    {
+      "text": "て鳥に食べてもらい、川に流れて彼らは世界に広がっていきます。私はこれを植物",
+      "start_seconds": 279.88,
+      "end_seconds": 288.12,
+      "id": "menTyHjones-ja-0035",
+      "sequence": 35
+    },
+    {
+      "text": "の弱さではなく強さだと感じました。これをなんか別の形で表現できないかそう思っ",
+      "start_seconds": 288.12,
+      "end_seconds": 296.639,
+      "id": "menTyHjones-ja-0036",
+      "sequence": 36
+    },
+    {
+      "text": "て、え、人工筋肉を植物につけて動かしたんです。人工筋肉っていうのは、え、モーターと違って、ま、筋肉って名前が",
+      "start_seconds": 296.639,
+      "end_seconds": 307.32,
+      "id": "menTyHjones-ja-0037",
+      "sequence": 37
+    },
+    {
+      "text": "ついてるだけって滑らかに動きます。",
+      "start_seconds": 307.32,
+      "end_seconds": 310.28,
+      "id": "menTyHjones-ja-0038",
+      "sequence": 38
+    },
+    {
+      "text": "こんな感じです。",
+      "start_seconds": 310.28,
+      "end_seconds": 314.19899999999996,
+      "id": "menTyHjones-ja-0039",
+      "sequence": 39
+    },
+    {
+      "text": "面白いワクワクする。そういった感想と一方で怖い、気持ち悪い様々な感情をこの作品は",
+      "start_seconds": 326.479,
+      "end_seconds": 337.759,
+      "id": "menTyHjones-ja-0040",
+      "sequence": 40
+    },
+    {
+      "text": "引き起こしました。でも不思議なことにこの作品を圧倒的な恋を持って、え、見てくれたのは植物が大好きな人たちでした。",
+      "start_seconds": 337.759,
+      "end_seconds": 349.16,
+      "id": "menTyHjones-ja-0041",
+      "sequence": 41
+    },
+    {
+      "text": "その方々は植物の強さに共感するようにこの作品に対してすごくあの行為を示してくれました。",
+      "start_seconds": 349.16,
+      "end_seconds": 358.919,
+      "id": "menTyHjones-ja-0042",
+      "sequence": 42
+    },
+    {
+      "text": "でもこれって変化って呼べるのか、それとも植物動か",
+      "start_seconds": 358.919,
+      "end_seconds": 368.16,
+      "id": "menTyHjones-ja-0043",
+      "sequence": 43
+    },
+    {
+      "text": "ないので動くから面白い。そう思えているのか、植物の関わりまで変えられているのか、これは、え、再現可能なのか、それと",
+      "start_seconds": 368.16,
+      "end_seconds": 379.68,
+      "id": "menTyHjones-ja-0044",
+      "sequence": 44
+    },
+    {
+      "text": "も測れるのか。こういった問を確かめたくて東大の研究に入りました。",
+      "start_seconds": 379.68,
+      "end_seconds": 387.96,
+      "id": "menTyHjones-ja-0045",
+      "sequence": 45
+    },
+    {
+      "text": "そこで少し違った壁にぶつかりました。",
+      "start_seconds": 387.96,
+      "end_seconds": 392.56,
+      "id": "menTyHjones-ja-0046",
+      "sequence": 46
+    },
+    {
+      "text": "研究っていうのは人と何かの関わりを、え、研究する際には1対1のあの関係を切り出して研究することが多いです。でも",
+      "start_seconds": 392.56,
+      "end_seconds": 403.16,
+      "id": "menTyHjones-ja-0047",
+      "sequence": 47
+    },
+    {
+      "text": "私美の卒業っていうこともあって、あのいつもこう植物に向き合ってるわけじゃないじゃないですか。私たちの暮らスって",
+      "start_seconds": 403.16,
+      "end_seconds": 412.8,
+      "id": "menTyHjones-ja-0048",
+      "sequence": 48
+    },
+    {
+      "text": "。それに待機、水、土、いろんなものが関わって、えっと、この世界は成り立って",
+      "start_seconds": 412.8,
+      "end_seconds": 420.72,
+      "id": "menTyHjones-ja-0049",
+      "sequence": 49
+    },
+    {
+      "text": "います。なので私は、えー、土の中の美生物と植物と人こういった関わりの中で",
+      "start_seconds": 420.72,
+      "end_seconds": 431.919,
+      "id": "menTyHjones-ja-0050",
+      "sequence": 50
+    },
+    {
+      "text": "、え、研究ができないか、それに挑戦することにしました。そこで、え、注目したのが小さなエネルギー、微生物燃料電池です。",
+      "start_seconds": 431.919,
+      "end_seconds": 443.52,
+      "id": "menTyHjones-ja-0051",
+      "sequence": 51
+    },
+    {
+      "text": "ま、美発電とも呼ばれます。これは植物が出す栄養素または、えっと、生物の死骸",
+      "start_seconds": 443.52,
+      "end_seconds": 452.0,
+      "id": "menTyHjones-ja-0052",
+      "sequence": 52
+    },
+    {
+      "text": "などを微生物が分解する際に発電します。",
+      "start_seconds": 452.0,
+      "end_seconds": 456.319,
+      "id": "menTyHjones-ja-0053",
+      "sequence": 53
+    },
+    {
+      "text": "なので分解という循環の一部で発電するんです。",
+      "start_seconds": 456.319,
+      "end_seconds": 463.15999999999997,
+      "id": "menTyHjones-ja-0054",
+      "sequence": 54
+    },
+    {
+      "text": "この微生物燃料電池の発電は0.8V。",
+      "start_seconds": 463.4,
+      "end_seconds": 469.56,
+      "id": "menTyHjones-ja-0055",
+      "sequence": 55
+    },
+    {
+      "text": "炭酸電池が1.5Vなんで、それよりもさらにちっちゃいです。なので高額の世界、ま、実際使うとしたら小さすぎるし遅",
+      "start_seconds": 469.56,
+      "end_seconds": 480.08,
+      "id": "menTyHjones-ja-0056",
+      "sequence": 56
+    },
+    {
+      "text": "すぎるし非だと思われるかもしれません。",
+      "start_seconds": 480.08,
+      "end_seconds": 484.199,
+      "id": "menTyHjones-ja-0057",
+      "sequence": 57
+    },
+    {
+      "text": "でも私はそれ誰にとっての話なのかなと思いました。人にとって役に立つ。総電力",
+      "start_seconds": 484.199,
+      "end_seconds": 493.08,
+      "id": "menTyHjones-ja-0058",
+      "sequence": 58
+    },
+    {
+      "text": "と見たらすごく小さいけど生き物たちの関わりとしてその手がかりとして見たら全く違って見えました。",
+      "start_seconds": 493.08,
+      "end_seconds": 504.039,
+      "id": "menTyHjones-ja-0059",
+      "sequence": 59
+    },
+    {
+      "text": "実は別の研究で小さな電気を植物に流すと植物の成長が少し影響が起きるという論文",
+      "start_seconds": 504.039,
+      "end_seconds": 514.279,
+      "id": "menTyHjones-ja-0060",
+      "sequence": 60
+    },
+    {
+      "text": "がありました。なので私はその微生物燃料電気の小さな電気を植物に通してみることにしました。ここでは買われ大根です。",
+      "start_seconds": 514.279,
+      "end_seconds": 525.279,
+      "id": "menTyHjones-ja-0061",
+      "sequence": 61
+    },
+    {
+      "text": "ちょっと見てみましょう。",
+      "start_seconds": 525.279,
+      "end_seconds": 529.24,
+      "id": "menTyHjones-ja-0062",
+      "sequence": 62
+    },
+    {
+      "text": "電気を通している方が少しだけ伸びてますよね。",
+      "start_seconds": 539.04,
+      "end_seconds": 546.839,
+      "id": "menTyHjones-ja-0063",
+      "sequence": 63
+    },
+    {
+      "text": "植物が出す栄養素を微生物が電してその分解した時に発電する電気を植物に返す。",
+      "start_seconds": 547.2,
+      "end_seconds": 558.399,
+      "id": "menTyHjones-ja-0064",
+      "sequence": 64
+    },
+    {
+      "text": "こうしたこう小さなエネルギーを返して緩やかな循環のシステムを作りました。",
+      "start_seconds": 558.399,
+      "end_seconds": 565.079,
+      "id": "menTyHjones-ja-0065",
+      "sequence": 65
+    },
+    {
+      "text": "それを1つの場で体験できるようにして、え、海外これはオーストリアのアルセレクトロニカの展示です。また東京、え、トーカスというギャラリーだったり",
+      "start_seconds": 565.079,
+      "end_seconds": 576.76,
+      "id": "menTyHjones-ja-0066",
+      "sequence": 66
+    },
+    {
+      "text": "、え、ト田ビルディングでも検行ました。",
+      "start_seconds": 576.76,
+      "end_seconds": 580.76,
+      "id": "menTyHjones-ja-0067",
+      "sequence": 67
+    },
+    {
+      "text": "また参加者の方がこの小さな装置を持ち帰って植物と微生物のケアをする体験を作りました。",
+      "start_seconds": 580.76,
+      "end_seconds": 590.279,
+      "id": "menTyHjones-ja-0068",
+      "sequence": 68
+    },
+    {
+      "text": "そしたらちょっと面白いことが起こったんです。最初参加者の方は植物だけを見てました。でもだんだんと植物だけを見なく",
+      "start_seconds": 590.279,
+      "end_seconds": 600.16,
+      "id": "menTyHjones-ja-0069",
+      "sequence": 69
+    },
+    {
+      "text": "なっていったんです。",
+      "start_seconds": 600.16,
+      "end_seconds": 602.72,
+      "id": "menTyHjones-ja-0070",
+      "sequence": 70
+    },
+    {
+      "text": "水の濁り、表面の膜、匂い、またチーン物、小さな生き物の気配、",
+      "start_seconds": 602.72,
+      "end_seconds": 614.0,
+      "id": "menTyHjones-ja-0071",
+      "sequence": 71
+    },
+    {
+      "text": "こうして変わっていきました。また毎日発電の量が見ることできるんですけれども、それによって美生物の活動、",
+      "start_seconds": 614.0,
+      "end_seconds": 625.399,
+      "id": "menTyHjones-ja-0072",
+      "sequence": 72
+    },
+    {
+      "text": "美生物元気かな、元気じゃないかな、そんなことも気にかけるようになってきました。またこの植物の上に植物ライトがあるんですけれども、あの参加者の人は",
+      "start_seconds": 625.399,
+      "end_seconds": 636.04,
+      "id": "menTyHjones-ja-0073",
+      "sequence": 73
+    },
+    {
+      "text": "その植物のライトをこう移動しながら植物に当たるかなとか色々自分で応答しながらケアを進めていきました。",
+      "start_seconds": 636.04,
+      "end_seconds": 647.36,
+      "id": "menTyHjones-ja-0074",
+      "sequence": 74
+    },
+    {
+      "text": "だんだんと自分が気にかけないとっていう愛着や責任感が続いていきました。少し",
+      "start_seconds": 647.36,
+      "end_seconds": 654.72,
+      "id": "menTyHjones-ja-0075",
+      "sequence": 75
+    },
+    {
+      "text": "ずつ参加者の志しが広がっていきました。",
+      "start_seconds": 654.72,
+      "end_seconds": 660.839,
+      "id": "menTyHjones-ja-0076",
+      "sequence": 76
+    },
+    {
+      "text": "もう1つ変わったことは関係の変化です。",
+      "start_seconds": 660.839,
+      "end_seconds": 665.16,
+      "id": "menTyHjones-ja-0077",
+      "sequence": 77
+    },
+    {
+      "text": "でも関係の変化ってどうやって測るんでしょうか?",
+      "start_seconds": 665.16,
+      "end_seconds": 669.32,
+      "id": "menTyHjones-ja-0078",
+      "sequence": 78
+    },
+    {
+      "text": "気にかけている、心配している。それってどうやって測ることができるのか。",
+      "start_seconds": 669.32,
+      "end_seconds": 676.279,
+      "id": "menTyHjones-ja-0079",
+      "sequence": 79
+    },
+    {
+      "text": "今回私はそこで自然との繋がりの尺度、心理尺度を使いました。これはえっと自分",
+      "start_seconds": 676.279,
+      "end_seconds": 685.079,
+      "id": "menTyHjones-ja-0080",
+      "sequence": 80
+    },
+    {
+      "text": "と自然が切り離されたものではなくて繋がっているもの。そんなことを測れる尺度です。",
+      "start_seconds": 685.079,
+      "end_seconds": 693.6,
+      "id": "menTyHjones-ja-0081",
+      "sequence": 81
+    },
+    {
+      "text": "例えばこんな項目があります。自分は自然界の一部だと感じる。これを体験の前と",
+      "start_seconds": 693.6,
+      "end_seconds": 701.839,
+      "id": "menTyHjones-ja-0082",
+      "sequence": 82
+    },
+    {
+      "text": "体験の後で答えてもらって、それでその数値の変化を見ました。",
+      "start_seconds": 701.839,
+      "end_seconds": 709.32,
+      "id": "menTyHjones-ja-0083",
+      "sequence": 83
+    },
+    {
+      "text": "6人の平均点はどうでしょうか?",
+      "start_seconds": 709.32,
+      "end_seconds": 716.36,
+      "id": "menTyHjones-ja-0084",
+      "sequence": 84
+    },
+    {
+      "text": "71.1から79.6まで上がりました。",
+      "start_seconds": 716.68,
+      "end_seconds": 721.6,
+      "id": "menTyHjones-ja-0085",
+      "sequence": 85
+    },
+    {
+      "text": "これは大きな数値ではありません。でもここで大事なのは統計の派手さではなくて直接的な利益がなくても関わりが深まっ",
+      "start_seconds": 721.6,
+      "end_seconds": 732.399,
+      "id": "menTyHjones-ja-0086",
+      "sequence": 86
+    },
+    {
+      "text": "たっていうことなんです。",
+      "start_seconds": 732.399,
+      "end_seconds": 735.519,
+      "id": "menTyHjones-ja-0087",
+      "sequence": 87
+    },
+    {
+      "text": "確かに6人の平均点は上がりました。",
+      "start_seconds": 735.519,
+      "end_seconds": 740.44,
+      "id": "menTyHjones-ja-0088",
+      "sequence": 88
+    },
+    {
+      "text": "でも1人だけ点数が下がった方がいました。",
+      "start_seconds": 740.44,
+      "end_seconds": 746.32,
+      "id": "menTyHjones-ja-0089",
+      "sequence": 89
+    },
+    {
+      "text": "その方は元々自然との関わり、ま、共感とかがすごく高い人で体験1番のあの高得典",
+      "start_seconds": 746.32,
+      "end_seconds": 755.519,
+      "id": "menTyHjones-ja-0090",
+      "sequence": 90
+    },
+    {
+      "text": "であの終わった人でした。その方が体験後のインタビューで答えてくれました。私は自然を知っていたと思ったけど知らなかっ",
+      "start_seconds": 755.519,
+      "end_seconds": 766.8,
+      "id": "menTyHjones-ja-0091",
+      "sequence": 91
+    },
+    {
+      "text": "た。そしてこう続けました。",
+      "start_seconds": 766.8,
+      "end_seconds": 771.279,
+      "id": "menTyHjones-ja-0092",
+      "sequence": 92
+    },
+    {
+      "text": "例えばパン、あの体験はパンジーを買ったとしたらパンジーを自分の絵に持ち帰ってきた。パンチと自分っていう風に思ってい",
+      "start_seconds": 771.279,
+      "end_seconds": 782.32,
+      "id": "menTyHjones-ja-0093",
+      "sequence": 93
+    },
+    {
+      "text": "たけれど、この体験の後はパンジーと一緒に土微生物その土上環境それらも自分の絵に招きれて",
+      "start_seconds": 782.32,
+      "end_seconds": 793.959,
+      "id": "menTyHjones-ja-0094",
+      "sequence": 94
+    },
+    {
+      "text": "いるっていう風に感じるようになりましたって言ってくれました。",
+      "start_seconds": 793.959,
+      "end_seconds": 799.959,
+      "id": "menTyHjones-ja-0095",
+      "sequence": 95
+    },
+    {
+      "text": "それは植物を1つのものとして見るのではなく、1つの環境、小さな系として見られるようになったっていうことだと思い",
+      "start_seconds": 799.959,
+      "end_seconds": 810.16,
+      "id": "menTyHjones-ja-0096",
+      "sequence": 96
+    },
+    {
+      "text": "ます。確かに彼女の、え、尺度の点数は下がりました。でも彼女にとって自然が遠くなったのではなくて、逆に自然の改造",
+      "start_seconds": 810.16,
+      "end_seconds": 822.04,
+      "id": "menTyHjones-ja-0097",
+      "sequence": 97
+    },
+    {
+      "text": "度が上がったと言われます。",
+      "start_seconds": 822.04,
+      "end_seconds": 826.36,
+      "id": "menTyHjones-ja-0098",
+      "sequence": 98
+    },
+    {
+      "text": "人は知識を理解してもなかなか変わることはできません。でも気にかける対象が増えた時",
+      "start_seconds": 829.76,
+      "end_seconds": 839.279,
+      "id": "menTyHjones-ja-0099",
+      "sequence": 99
+    },
+    {
+      "text": "人の世界の見方少しだけ変わります。私は私が作りたいのはこうした気づかない環境関係に気づいて感じられるようにできる場",
+      "start_seconds": 839.279,
+      "end_seconds": 850.12,
+      "id": "menTyHjones-ja-0100",
+      "sequence": 100
+    },
+    {
+      "text": "です。",
+      "start_seconds": 850.12,
+      "end_seconds": 852.88,
+      "id": "menTyHjones-ja-0101",
+      "sequence": 101
+    },
+    {
+      "text": "後ではそれを感じられるような形にして研究でそれは何なのか確かめ言葉にすることです。",
+      "start_seconds": 852.88,
+      "end_seconds": 863.839,
+      "id": "menTyHjones-ja-0102",
+      "sequence": 102
+    },
+    {
+      "text": "テクノロジーを使って遠くあると思ったものを近くに気づけるようにする。",
+      "start_seconds": 865.16,
+      "end_seconds": 872.6,
+      "id": "menTyHjones-ja-0103",
+      "sequence": 103
+    },
+    {
+      "text": "また役に立つだけでは測れない関係の中に愛着や責任感が持てるようなそんな関係が作られたらなと思ってます。",
+      "start_seconds": 872.6,
+      "end_seconds": 884.519,
+      "id": "menTyHjones-ja-0104",
+      "sequence": 104
+    },
+    {
+      "text": "最後に最初の問に答え戻りたいと思います。私たちは自然を守る側でしょうか?",
+      "start_seconds": 884.839,
+      "end_seconds": 894.8,
+      "id": "menTyHjones-ja-0105",
+      "sequence": 105
+    },
+    {
+      "text": "ここで1人の科学者の言葉をご紹介したいと思います。雪は天から送られた手紙で",
+      "start_seconds": 894.8,
+      "end_seconds": 904.48,
+      "id": "menTyHjones-ja-0106",
+      "sequence": 106
+    },
+    {
+      "text": "ある中郎雪の決勝を、え、研究した物理学者です。",
+      "start_seconds": 904.48,
+      "end_seconds": 912.04,
+      "id": "menTyHjones-ja-0107",
+      "sequence": 107
+    },
+    {
+      "text": "でも私はこうも思うんです。その手紙はもしかしたら天からだけ届くのではないかもしれない。天、つまり空や待機から土へ",
+      "start_seconds": 912.04,
+      "end_seconds": 924.04,
+      "id": "menTyHjones-ja-0108",
+      "sequence": 108
+    },
+    {
+      "text": "、土から美生物へ、美生物から植物へ、植物から私たちへ。",
+      "start_seconds": 924.04,
+      "end_seconds": 932.639,
+      "id": "menTyHjones-ja-0109",
+      "sequence": 109
+    },
+    {
+      "text": "その手紙の受け取り方を知った時、自然は守る相手ではなく、共に生きる相手として立ち上がってくるのだと思います。",
+      "start_seconds": 932.639,
+      "end_seconds": 944.319,
+      "id": "menTyHjones-ja-0110",
+      "sequence": 110
+    },
+    {
+      "text": "ありがとうございました。[拍手]",
+      "start_seconds": 944.319,
+      "end_seconds": 948.505,
+      "id": "menTyHjones-ja-0111",
+      "sequence": 111
+    }
+  ],
+  "raw_captions": [
+    {
+      "text": "[音楽]",
+      "start_seconds": 9.825,
+      "end_seconds": 11.844999999999999
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 13.1,
+      "end_seconds": 15.12
+    },
+    {
+      "text": "こんにちは。今日もあのこんにちは。",
+      "start_seconds": 25.8,
+      "end_seconds": 30.039
+    },
+    {
+      "text": "[笑い]",
+      "start_seconds": 29.475,
+      "end_seconds": 34.480000000000004
+    },
+    {
+      "text": "自然との関わりの話たくさんありますね。",
+      "start_seconds": 30.039,
+      "end_seconds": 40.2
+    },
+    {
+      "text": "あの、皆さんは今自然を回復するとか生態",
+      "start_seconds": 34.48,
+      "end_seconds": 45.519999999999996
+    },
+    {
+      "text": "系をこう多様性をなど話を様々なところで",
+      "start_seconds": 40.2,
+      "end_seconds": 50.28
+    },
+    {
+      "text": "聞くと思います。あれ、今日ちょっとお",
+      "start_seconds": 45.52,
+      "end_seconds": 53.719
+    },
+    {
+      "text": "説教みたいな話かなとちょっと意見苦しく",
+      "start_seconds": 50.28,
+      "end_seconds": 57.28
+    },
+    {
+      "text": "感じる方もいるかもしれません。",
+      "start_seconds": 53.719,
+      "end_seconds": 62.079
+    },
+    {
+      "text": "そういった自然を守るとか生体系の話を",
+      "start_seconds": 57.28,
+      "end_seconds": 65.119
+    },
+    {
+      "text": "する時皆さんどんな景色を思い浮かべる",
+      "start_seconds": 62.079,
+      "end_seconds": 67.24
+    },
+    {
+      "text": "でしょうか?",
+      "start_seconds": 65.119,
+      "end_seconds": 72.24
+    },
+    {
+      "text": "森でしょうか?海でしょうか?それとも",
+      "start_seconds": 67.24,
+      "end_seconds": 77.28
+    },
+    {
+      "text": "絶妙そうな生き物の数でしょうか?",
+      "start_seconds": 72.24,
+      "end_seconds": 80.39999999999999
+    },
+    {
+      "text": "そしてきっと次には自然を守らなければ",
+      "start_seconds": 77.28,
+      "end_seconds": 83.07900000000001
+    },
+    {
+      "text": "ならない。そう思うのではないでしょうか",
+      "start_seconds": 80.4,
+      "end_seconds": 87.32000000000001
+    },
+    {
+      "text": "。でも毎日の忙しさから",
+      "start_seconds": 83.079,
+      "end_seconds": 90.27999999999999
+    },
+    {
+      "text": "私たちの優先順位からそれはこぼれて",
+      "start_seconds": 87.32,
+      "end_seconds": 97.119
+    },
+    {
+      "text": "しまう。それも1つの本音かと思います。",
+      "start_seconds": 90.28,
+      "end_seconds": 97.119
+    },
+    {
+      "text": "自然を守る。",
+      "start_seconds": 97.159,
+      "end_seconds": 102.799
+    },
+    {
+      "text": "私はこの言葉に少し立ち止まってしまい",
+      "start_seconds": 99.72,
+      "end_seconds": 107.799
+    },
+    {
+      "text": "ます。なぜなら守るという言葉には守る側",
+      "start_seconds": 102.799,
+      "end_seconds": 112.92
+    },
+    {
+      "text": "と守られる側がいます。つまり私たち人間",
+      "start_seconds": 107.799,
+      "end_seconds": 116.799
+    },
+    {
+      "text": "はこちら側で自然はあちら側。果たして",
+      "start_seconds": 112.92,
+      "end_seconds": 120.36
+    },
+    {
+      "text": "本当にそうでしょうか?私たちは自然を",
+      "start_seconds": 116.799,
+      "end_seconds": 124.52000000000001
+    },
+    {
+      "text": "守る側でしょうか?もっと根本的に考え",
+      "start_seconds": 120.36,
+      "end_seconds": 128.679
+    },
+    {
+      "text": "たらもしかしたら自然に守られているので",
+      "start_seconds": 124.52,
+      "end_seconds": 132.0
+    },
+    {
+      "text": "はないでしょうか?",
+      "start_seconds": 128.679,
+      "end_seconds": 135.2
+    },
+    {
+      "text": "ちょっと考えてみてください。例えば植物",
+      "start_seconds": 132.0,
+      "end_seconds": 139.239
+    },
+    {
+      "text": "が酸素を出さなくなったら、虫が花粉を",
+      "start_seconds": 135.2,
+      "end_seconds": 142.76
+    },
+    {
+      "text": "運ばなくなったら、微生物が分解をしなく",
+      "start_seconds": 139.239,
+      "end_seconds": 145.959
+    },
+    {
+      "text": "なったら、私たちは1日足りとも同じ生活",
+      "start_seconds": 142.76,
+      "end_seconds": 148.84
+    },
+    {
+      "text": "ができません。あれ当たり前のこと言っ",
+      "start_seconds": 145.959,
+      "end_seconds": 151.2
+    },
+    {
+      "text": "てるんじゃないか。そんなこと思う方も",
+      "start_seconds": 148.84,
+      "end_seconds": 154.12
+    },
+    {
+      "text": "いるかと思います。",
+      "start_seconds": 151.2,
+      "end_seconds": 159.319
+    },
+    {
+      "text": "でも、あの、私たちはもうとても大きな",
+      "start_seconds": 154.12,
+      "end_seconds": 162.68
+    },
+    {
+      "text": "数えきれないほどの生き物が関わる循環の",
+      "start_seconds": 159.319,
+      "end_seconds": 167.2
+    },
+    {
+      "text": "中にすでに立っています。",
+      "start_seconds": 162.68,
+      "end_seconds": 167.20000000000002
+    },
+    {
+      "text": "遠くで起こったことが巡り巡って私たちの",
+      "start_seconds": 168.84,
+      "end_seconds": 176.48
+    },
+    {
+      "text": "命を支えていること、",
+      "start_seconds": 173.08,
+      "end_seconds": 181.239
+    },
+    {
+      "text": "またそれが自分に帰ってきていくこと。",
+      "start_seconds": 176.48,
+      "end_seconds": 185.48
+    },
+    {
+      "text": "そういった関係は見えにくいです。",
+      "start_seconds": 181.239,
+      "end_seconds": 188.31900000000002
+    },
+    {
+      "text": "自然が私たちを守ってくれること、支え",
+      "start_seconds": 185.48,
+      "end_seconds": 190.959
+    },
+    {
+      "text": "られてること、私たちの命に帰ってきてる",
+      "start_seconds": 188.319,
+      "end_seconds": 194.04
+    },
+    {
+      "text": "こと。これらは暮らしの中でほとんど実感",
+      "start_seconds": 190.959,
+      "end_seconds": 197.959
+    },
+    {
+      "text": "できません。なので私は1つの問を立て",
+      "start_seconds": 194.04,
+      "end_seconds": 200.35999999999999
+    },
+    {
+      "text": "ました。",
+      "start_seconds": 197.959,
+      "end_seconds": 203.599
+    },
+    {
+      "text": "はい。",
+      "start_seconds": 200.36,
+      "end_seconds": 203.59900000000002
+    },
+    {
+      "text": "人は直接的な利益がなくても自然と深く",
+      "start_seconds": 203.68,
+      "end_seconds": 211.72
+    },
+    {
+      "text": "関われるのか。",
+      "start_seconds": 208.439,
+      "end_seconds": 215.07999999999998
+    },
+    {
+      "text": "もし自然が役に立つという、役に立つから",
+      "start_seconds": 211.72,
+      "end_seconds": 218.56
+    },
+    {
+      "text": "守るという関係だけではない、何か関わり",
+      "start_seconds": 215.08,
+      "end_seconds": 221.239
+    },
+    {
+      "text": "が作れるのであれば私たちは自然との",
+      "start_seconds": 218.56,
+      "end_seconds": 223.72
+    },
+    {
+      "text": "関わりが少し違うことはできるんじゃない",
+      "start_seconds": 221.239,
+      "end_seconds": 225.48000000000002
+    },
+    {
+      "text": "か。",
+      "start_seconds": 223.72,
+      "end_seconds": 229.439
+    },
+    {
+      "text": "そんな問いから、え、私の研究の中で人と",
+      "start_seconds": 225.48,
+      "end_seconds": 231.879
+    },
+    {
+      "text": "自然がふっと変わった瞬間について今日お",
+      "start_seconds": 229.439,
+      "end_seconds": 234.879
+    },
+    {
+      "text": "話ししたいと思います。",
+      "start_seconds": 231.879,
+      "end_seconds": 237.879
+    },
+    {
+      "text": "初めにちょっとだけ私自身の話をさせて",
+      "start_seconds": 234.879,
+      "end_seconds": 242.0
+    },
+    {
+      "text": "ください。私は美術大学美を卒業した後、",
+      "start_seconds": 237.879,
+      "end_seconds": 245.35999999999999
+    },
+    {
+      "text": "アーティストとして活動してきました。え",
+      "start_seconds": 242.0,
+      "end_seconds": 249.319
+    },
+    {
+      "text": "、社会人として東京大学の、え、収支家庭",
+      "start_seconds": 245.36,
+      "end_seconds": 253.48000000000002
+    },
+    {
+      "text": "をこの3月に終えて、また同じ東京大学の",
+      "start_seconds": 249.319,
+      "end_seconds": 257.639
+    },
+    {
+      "text": "白家庭に進んでいます。え、東大に入る前",
+      "start_seconds": 253.48,
+      "end_seconds": 262.56
+    },
+    {
+      "text": "にちょっと違う作品を作りました。",
+      "start_seconds": 257.639,
+      "end_seconds": 267.0
+    },
+    {
+      "text": "植物にロボティクスの技術である人工筋肉",
+      "start_seconds": 262.56,
+      "end_seconds": 271.759
+    },
+    {
+      "text": "をつけて動かす作品です。[鼻息]",
+      "start_seconds": 267.0,
+      "end_seconds": 275.32
+    },
+    {
+      "text": "植物っていうのは動物と違って足を使って",
+      "start_seconds": 271.759,
+      "end_seconds": 279.88
+    },
+    {
+      "text": "移動はしません。でも、え、種を風に乗せ",
+      "start_seconds": 275.32,
+      "end_seconds": 284.36
+    },
+    {
+      "text": "て鳥に食べてもらい、川に流れて彼らは",
+      "start_seconds": 279.88,
+      "end_seconds": 288.12
+    },
+    {
+      "text": "世界に広がっていきます。私はこれを植物",
+      "start_seconds": 284.36,
+      "end_seconds": 292.40000000000003
+    },
+    {
+      "text": "の弱さではなく強さだと感じました。これ",
+      "start_seconds": 288.12,
+      "end_seconds": 296.639
+    },
+    {
+      "text": "をなんか別の形で表現できないかそう思っ",
+      "start_seconds": 292.4,
+      "end_seconds": 300.479
+    },
+    {
+      "text": "て、え、人工筋肉を植物につけて動かした",
+      "start_seconds": 296.639,
+      "end_seconds": 304.36
+    },
+    {
+      "text": "んです。人工筋肉っていうのは、え、",
+      "start_seconds": 300.479,
+      "end_seconds": 307.32
+    },
+    {
+      "text": "モーターと違って、ま、筋肉って名前が",
+      "start_seconds": 304.36,
+      "end_seconds": 310.28000000000003
+    },
+    {
+      "text": "ついてるだけって滑らかに動きます。",
+      "start_seconds": 307.32,
+      "end_seconds": 314.199
+    },
+    {
+      "text": "こんな感じです。",
+      "start_seconds": 310.28,
+      "end_seconds": 314.19899999999996
+    },
+    {
+      "text": "面白い",
+      "start_seconds": 326.479,
+      "end_seconds": 331.84
+    },
+    {
+      "text": "ワクワクする。そういった感想と一方で",
+      "start_seconds": 328.16,
+      "end_seconds": 337.759
+    },
+    {
+      "text": "怖い、気持ち悪い様々な感情をこの作品は",
+      "start_seconds": 331.84,
+      "end_seconds": 341.23999999999995
+    },
+    {
+      "text": "引き起こしました。でも不思議なことに",
+      "start_seconds": 337.759,
+      "end_seconds": 345.6
+    },
+    {
+      "text": "この作品を圧倒的な恋を持って、え、見て",
+      "start_seconds": 341.24,
+      "end_seconds": 349.16
+    },
+    {
+      "text": "くれたのは植物が大好きな人たちでした。",
+      "start_seconds": 345.6,
+      "end_seconds": 353.52000000000004
+    },
+    {
+      "text": "その方々は植物の強さに共感するように",
+      "start_seconds": 349.16,
+      "end_seconds": 356.47900000000004
+    },
+    {
+      "text": "この作品に対してすごくあの行為を示して",
+      "start_seconds": 353.52,
+      "end_seconds": 358.919
+    },
+    {
+      "text": "くれました。",
+      "start_seconds": 356.479,
+      "end_seconds": 362.52
+    },
+    {
+      "text": "でもこれって",
+      "start_seconds": 358.919,
+      "end_seconds": 368.15999999999997
+    },
+    {
+      "text": "変化って呼べるのか、それとも植物動か",
+      "start_seconds": 362.52,
+      "end_seconds": 371.35999999999996
+    },
+    {
+      "text": "ないので動くから面白い。そう思えている",
+      "start_seconds": 368.16,
+      "end_seconds": 375.319
+    },
+    {
+      "text": "のか、植物の関わりまで変えられているの",
+      "start_seconds": 371.36,
+      "end_seconds": 379.68
+    },
+    {
+      "text": "か、これは、え、再現可能なのか、それと",
+      "start_seconds": 375.319,
+      "end_seconds": 383.44
+    },
+    {
+      "text": "も測れるのか。こういった問を確かめたく",
+      "start_seconds": 379.68,
+      "end_seconds": 387.96
+    },
+    {
+      "text": "て東大の研究に入りました。",
+      "start_seconds": 383.44,
+      "end_seconds": 392.56
+    },
+    {
+      "text": "そこで少し違った壁にぶつかりました。",
+      "start_seconds": 387.96,
+      "end_seconds": 396.0
+    },
+    {
+      "text": "研究っていうのは人と何かの関わりを、え",
+      "start_seconds": 392.56,
+      "end_seconds": 399.44
+    },
+    {
+      "text": "、研究する際には1対1のあの関係を",
+      "start_seconds": 396.0,
+      "end_seconds": 403.16
+    },
+    {
+      "text": "切り出して研究することが多いです。でも",
+      "start_seconds": 399.44,
+      "end_seconds": 407.84
+    },
+    {
+      "text": "私美の卒業っていうこともあって、あの",
+      "start_seconds": 403.16,
+      "end_seconds": 410.36
+    },
+    {
+      "text": "いつもこう植物に向き合ってるわけじゃ",
+      "start_seconds": 407.84,
+      "end_seconds": 412.79999999999995
+    },
+    {
+      "text": "ないじゃないですか。私たちの暮らスって",
+      "start_seconds": 410.36,
+      "end_seconds": 417.36
+    },
+    {
+      "text": "。それに待機、水、土、いろんなものが",
+      "start_seconds": 412.8,
+      "end_seconds": 420.72
+    },
+    {
+      "text": "関わって、えっと、この世界は成り立って",
+      "start_seconds": 417.36,
+      "end_seconds": 426.039
+    },
+    {
+      "text": "います。なので私は、えー、土の中の",
+      "start_seconds": 420.72,
+      "end_seconds": 431.91900000000004
+    },
+    {
+      "text": "美生物と植物と人こういった関わりの中で",
+      "start_seconds": 426.039,
+      "end_seconds": 435.199
+    },
+    {
+      "text": "、え、研究ができないか、それに挑戦する",
+      "start_seconds": 431.919,
+      "end_seconds": 439.24
+    },
+    {
+      "text": "ことにしました。そこで、え、注目したの",
+      "start_seconds": 435.199,
+      "end_seconds": 442.52000000000004
+    },
+    {
+      "text": "が小さなエネルギー、微生物燃料電池です",
+      "start_seconds": 439.24,
+      "end_seconds": 443.52
+    },
+    {
+      "text": "。",
+      "start_seconds": 442.52,
+      "end_seconds": 447.84
+    },
+    {
+      "text": "ま、美発電とも呼ばれます。これは植物が",
+      "start_seconds": 443.52,
+      "end_seconds": 452.0
+    },
+    {
+      "text": "出す栄養素または、えっと、生物の死骸",
+      "start_seconds": 447.84,
+      "end_seconds": 456.31899999999996
+    },
+    {
+      "text": "などを微生物が分解する際に発電します。",
+      "start_seconds": 452.0,
+      "end_seconds": 460.039
+    },
+    {
+      "text": "なので分解という循環の一部で発電するん",
+      "start_seconds": 456.319,
+      "end_seconds": 463.16
+    },
+    {
+      "text": "です。",
+      "start_seconds": 460.039,
+      "end_seconds": 463.15999999999997
+    },
+    {
+      "text": "この微生物燃料電池の発電は0.8V。",
+      "start_seconds": 463.4,
+      "end_seconds": 472.52
+    },
+    {
+      "text": "炭酸電池が1.5Vなんで、それよりも",
+      "start_seconds": 469.56,
+      "end_seconds": 476.28000000000003
+    },
+    {
+      "text": "さらにちっちゃいです。なので高額の世界",
+      "start_seconds": 472.52,
+      "end_seconds": 480.08
+    },
+    {
+      "text": "、ま、実際使うとしたら小さすぎるし遅",
+      "start_seconds": 476.28,
+      "end_seconds": 484.19899999999996
+    },
+    {
+      "text": "すぎるし非だと思われるかもしれません。",
+      "start_seconds": 480.08,
+      "end_seconds": 487.71999999999997
+    },
+    {
+      "text": "でも私はそれ誰にとっての話なのかなと",
+      "start_seconds": 484.199,
+      "end_seconds": 493.08000000000004
+    },
+    {
+      "text": "思いました。人にとって役に立つ。総電力",
+      "start_seconds": 487.72,
+      "end_seconds": 497.28000000000003
+    },
+    {
+      "text": "と見たらすごく小さいけど生き物たちの",
+      "start_seconds": 493.08,
+      "end_seconds": 501.039
+    },
+    {
+      "text": "関わりとしてその手がかりとして見たら",
+      "start_seconds": 497.28,
+      "end_seconds": 504.039
+    },
+    {
+      "text": "全く違って見えました。",
+      "start_seconds": 501.039,
+      "end_seconds": 509.84
+    },
+    {
+      "text": "実は別の研究で小さな電気を植物に流すと",
+      "start_seconds": 504.039,
+      "end_seconds": 514.279
+    },
+    {
+      "text": "植物の成長が少し影響が起きるという論文",
+      "start_seconds": 509.84,
+      "end_seconds": 518.039
+    },
+    {
+      "text": "がありました。なので私はその微生物燃料",
+      "start_seconds": 514.279,
+      "end_seconds": 522.2
+    },
+    {
+      "text": "電気の小さな電気を植物に通してみること",
+      "start_seconds": 518.039,
+      "end_seconds": 525.279
+    },
+    {
+      "text": "にしました。ここでは買われ大根です。",
+      "start_seconds": 522.2,
+      "end_seconds": 529.24
+    },
+    {
+      "text": "ちょっと見てみましょう。",
+      "start_seconds": 525.279,
+      "end_seconds": 529.24
+    },
+    {
+      "text": "電気を通している方が少しだけ伸びてます",
+      "start_seconds": 539.04,
+      "end_seconds": 546.8389999999999
+    },
+    {
+      "text": "よね。",
+      "start_seconds": 543.519,
+      "end_seconds": 546.839
+    },
+    {
+      "text": "植物が出す栄養素を微生物が電してその",
+      "start_seconds": 547.2,
+      "end_seconds": 558.399
+    },
+    {
+      "text": "分解した時に発電する電気を植物に返す。",
+      "start_seconds": 553.44,
+      "end_seconds": 561.6800000000001
+    },
+    {
+      "text": "こうしたこう小さなエネルギーを返して",
+      "start_seconds": 558.399,
+      "end_seconds": 565.079
+    },
+    {
+      "text": "緩やかな循環のシステムを作りました。",
+      "start_seconds": 561.68,
+      "end_seconds": 569.0
+    },
+    {
+      "text": "それを1つの場で体験できるようにして、",
+      "start_seconds": 565.079,
+      "end_seconds": 571.2399999999999
+    },
+    {
+      "text": "え、海外これはオーストリアの",
+      "start_seconds": 569.0,
+      "end_seconds": 574.6
+    },
+    {
+      "text": "アルセレクトロニカの展示です。また東京",
+      "start_seconds": 571.24,
+      "end_seconds": 576.76
+    },
+    {
+      "text": "、え、トーカスというギャラリーだったり",
+      "start_seconds": 574.6,
+      "end_seconds": 580.76
+    },
+    {
+      "text": "、え、ト田ビルディングでも検行ました。",
+      "start_seconds": 576.76,
+      "end_seconds": 583.8
+    },
+    {
+      "text": "また参加者の方がこの小さな装置を",
+      "start_seconds": 580.76,
+      "end_seconds": 587.8389999999999
+    },
+    {
+      "text": "持ち帰って植物と微生物のケアをする体験",
+      "start_seconds": 583.8,
+      "end_seconds": 590.279
+    },
+    {
+      "text": "を作りました。",
+      "start_seconds": 587.839,
+      "end_seconds": 592.399
+    },
+    {
+      "text": "そしたらちょっと面白いことが起こったん",
+      "start_seconds": 590.279,
+      "end_seconds": 596.959
+    },
+    {
+      "text": "です。最初参加者の方は植物だけを見て",
+      "start_seconds": 592.399,
+      "end_seconds": 600.16
+    },
+    {
+      "text": "ました。でもだんだんと植物だけを見なく",
+      "start_seconds": 596.959,
+      "end_seconds": 602.7199999999999
+    },
+    {
+      "text": "なっていったんです。",
+      "start_seconds": 600.16,
+      "end_seconds": 607.8389999999999
+    },
+    {
+      "text": "水の濁り、表面の膜、匂い、",
+      "start_seconds": 602.72,
+      "end_seconds": 610.8000000000001
+    },
+    {
+      "text": "またチーン物、",
+      "start_seconds": 607.839,
+      "end_seconds": 614.0
+    },
+    {
+      "text": "小さな生き物の気配、",
+      "start_seconds": 610.8,
+      "end_seconds": 617.92
+    },
+    {
+      "text": "こうして変わっていきました。また",
+      "start_seconds": 614.0,
+      "end_seconds": 621.839
+    },
+    {
+      "text": "毎日発電の量が見ることできるんです",
+      "start_seconds": 617.92,
+      "end_seconds": 625.399
+    },
+    {
+      "text": "けれども、それによって美生物の活動、",
+      "start_seconds": 621.839,
+      "end_seconds": 628.36
+    },
+    {
+      "text": "美生物元気かな、元気じゃないかな、",
+      "start_seconds": 625.399,
+      "end_seconds": 630.519
+    },
+    {
+      "text": "そんなことも気にかけるようになってき",
+      "start_seconds": 628.36,
+      "end_seconds": 633.399
+    },
+    {
+      "text": "ました。またこの植物の上に植物ライトが",
+      "start_seconds": 630.519,
+      "end_seconds": 636.04
+    },
+    {
+      "text": "あるんですけれども、あの参加者の人は",
+      "start_seconds": 633.399,
+      "end_seconds": 639.72
+    },
+    {
+      "text": "その植物のライトをこう移動しながら",
+      "start_seconds": 636.04,
+      "end_seconds": 643.04
+    },
+    {
+      "text": "植物に当たるかなとか色々自分で応答し",
+      "start_seconds": 639.72,
+      "end_seconds": 647.36
+    },
+    {
+      "text": "ながらケアを進めていきました。",
+      "start_seconds": 643.04,
+      "end_seconds": 650.48
+    },
+    {
+      "text": "だんだんと自分が気にかけないとっていう",
+      "start_seconds": 647.36,
+      "end_seconds": 654.72
+    },
+    {
+      "text": "愛着や責任感が続いていきました。少し",
+      "start_seconds": 650.48,
+      "end_seconds": 660.839
+    },
+    {
+      "text": "ずつ参加者の志しが広がっていきました。",
+      "start_seconds": 654.72,
+      "end_seconds": 665.1600000000001
+    },
+    {
+      "text": "もう1つ変わったことは関係の変化です。",
+      "start_seconds": 660.839,
+      "end_seconds": 667.2790000000001
+    },
+    {
+      "text": "でも関係の変化ってどうやって測るん",
+      "start_seconds": 665.16,
+      "end_seconds": 669.3199999999999
+    },
+    {
+      "text": "でしょうか?",
+      "start_seconds": 667.279,
+      "end_seconds": 672.8
+    },
+    {
+      "text": "気にかけている、心配している。それっ",
+      "start_seconds": 669.32,
+      "end_seconds": 676.279
+    },
+    {
+      "text": "てどうやって測ることができるのか。",
+      "start_seconds": 672.8,
+      "end_seconds": 680.56
+    },
+    {
+      "text": "今回私はそこで自然との繋がりの尺度、",
+      "start_seconds": 676.279,
+      "end_seconds": 685.079
+    },
+    {
+      "text": "心理尺度を使いました。これはえっと自分",
+      "start_seconds": 680.56,
+      "end_seconds": 688.8
+    },
+    {
+      "text": "と自然が切り離されたものではなくて",
+      "start_seconds": 685.079,
+      "end_seconds": 691.1999999999999
+    },
+    {
+      "text": "繋がっているもの。そんなことを測れる",
+      "start_seconds": 688.8,
+      "end_seconds": 693.5999999999999
+    },
+    {
+      "text": "尺度です。",
+      "start_seconds": 691.2,
+      "end_seconds": 697.519
+    },
+    {
+      "text": "例えばこんな項目があります。自分は自然",
+      "start_seconds": 693.6,
+      "end_seconds": 701.839
+    },
+    {
+      "text": "界の一部だと感じる。これを体験の前と",
+      "start_seconds": 697.519,
+      "end_seconds": 705.8
+    },
+    {
+      "text": "体験の後で答えてもらって、それでその",
+      "start_seconds": 701.839,
+      "end_seconds": 709.32
+    },
+    {
+      "text": "数値の変化を見ました。",
+      "start_seconds": 705.8,
+      "end_seconds": 716.3599999999999
+    },
+    {
+      "text": "6人の平均点はどうでしょうか?",
+      "start_seconds": 709.32,
+      "end_seconds": 716.36
+    },
+    {
+      "text": "71.1から79.6まで上がりました。",
+      "start_seconds": 716.68,
+      "end_seconds": 724.76
+    },
+    {
+      "text": "これは大きな数値ではありません。でも",
+      "start_seconds": 721.6,
+      "end_seconds": 728.399
+    },
+    {
+      "text": "ここで大事なのは統計の派手さではなくて",
+      "start_seconds": 724.76,
+      "end_seconds": 732.399
+    },
+    {
+      "text": "直接的な利益がなくても関わりが深まっ",
+      "start_seconds": 728.399,
+      "end_seconds": 735.519
+    },
+    {
+      "text": "たっていうことなんです。",
+      "start_seconds": 732.399,
+      "end_seconds": 740.44
+    },
+    {
+      "text": "確かに6人の平均点は上がりました。",
+      "start_seconds": 735.519,
+      "end_seconds": 744.68
+    },
+    {
+      "text": "でも1人だけ点数が下がった方がいました",
+      "start_seconds": 740.44,
+      "end_seconds": 746.32
+    },
+    {
+      "text": "。",
+      "start_seconds": 744.68,
+      "end_seconds": 751.279
+    },
+    {
+      "text": "その方は元々自然との関わり、ま、共感と",
+      "start_seconds": 746.32,
+      "end_seconds": 755.519
+    },
+    {
+      "text": "かがすごく高い人で体験1番のあの高得典",
+      "start_seconds": 751.279,
+      "end_seconds": 760.199
+    },
+    {
+      "text": "であの終わった人でした。その方が体験後",
+      "start_seconds": 755.519,
+      "end_seconds": 763.639
+    },
+    {
+      "text": "のインタビューで答えてくれました。私は",
+      "start_seconds": 760.199,
+      "end_seconds": 766.8
+    },
+    {
+      "text": "自然を知っていたと思ったけど知らなかっ",
+      "start_seconds": 763.639,
+      "end_seconds": 771.279
+    },
+    {
+      "text": "た。そしてこう続けました。",
+      "start_seconds": 766.8,
+      "end_seconds": 776.12
+    },
+    {
+      "text": "例えばパン、あの体験はパンジーを買った",
+      "start_seconds": 771.279,
+      "end_seconds": 779.36
+    },
+    {
+      "text": "としたらパンジーを自分の絵に持ち帰って",
+      "start_seconds": 776.12,
+      "end_seconds": 782.32
+    },
+    {
+      "text": "きた。パンチと自分っていう風に思ってい",
+      "start_seconds": 779.36,
+      "end_seconds": 786.5600000000001
+    },
+    {
+      "text": "たけれど、この体験の後は",
+      "start_seconds": 782.32,
+      "end_seconds": 790.6800000000001
+    },
+    {
+      "text": "パンジーと一緒に土微生物",
+      "start_seconds": 786.56,
+      "end_seconds": 793.959
+    },
+    {
+      "text": "その土上環境それらも自分の絵に招きれて",
+      "start_seconds": 790.68,
+      "end_seconds": 796.3599999999999
+    },
+    {
+      "text": "いるっていう風に感じるようになりまし",
+      "start_seconds": 793.959,
+      "end_seconds": 799.959
+    },
+    {
+      "text": "たって言ってくれました。",
+      "start_seconds": 796.36,
+      "end_seconds": 803.1990000000001
+    },
+    {
+      "text": "それは植物を1つのものとして見るのでは",
+      "start_seconds": 799.959,
+      "end_seconds": 808.3599999999999
+    },
+    {
+      "text": "なく、1つの環境、小さな系として見",
+      "start_seconds": 803.199,
+      "end_seconds": 810.16
+    },
+    {
+      "text": "られるようになったっていうことだと思い",
+      "start_seconds": 808.36,
+      "end_seconds": 814.48
+    },
+    {
+      "text": "ます。確かに彼女の、え、尺度の点数は",
+      "start_seconds": 810.16,
+      "end_seconds": 818.399
+    },
+    {
+      "text": "下がりました。でも彼女にとって自然が",
+      "start_seconds": 814.48,
+      "end_seconds": 822.04
+    },
+    {
+      "text": "遠くなったのではなくて、逆に自然の改造",
+      "start_seconds": 818.399,
+      "end_seconds": 826.36
+    },
+    {
+      "text": "度が上がったと言われます。",
+      "start_seconds": 822.04,
+      "end_seconds": 826.36
+    },
+    {
+      "text": "人は知識を理解してもなかなか変わること",
+      "start_seconds": 829.76,
+      "end_seconds": 836.8389999999999
+    },
+    {
+      "text": "はできません。でも気にかける対象が増え",
+      "start_seconds": 833.0,
+      "end_seconds": 839.279
+    },
+    {
+      "text": "た時",
+      "start_seconds": 836.839,
+      "end_seconds": 844.32
+    },
+    {
+      "text": "人の世界の見方少しだけ変わります。私は",
+      "start_seconds": 839.279,
+      "end_seconds": 847.639
+    },
+    {
+      "text": "私が作りたいのはこうした気づかない環境",
+      "start_seconds": 844.32,
+      "end_seconds": 850.12
+    },
+    {
+      "text": "関係に気づいて感じられるようにできる場",
+      "start_seconds": 847.639,
+      "end_seconds": 852.88
+    },
+    {
+      "text": "です。",
+      "start_seconds": 850.12,
+      "end_seconds": 856.92
+    },
+    {
+      "text": "後ではそれを感じられるような形にして",
+      "start_seconds": 852.88,
+      "end_seconds": 860.399
+    },
+    {
+      "text": "研究でそれは何なのか確かめ言葉にする",
+      "start_seconds": 856.92,
+      "end_seconds": 863.8389999999999
+    },
+    {
+      "text": "ことです。",
+      "start_seconds": 860.399,
+      "end_seconds": 863.839
+    },
+    {
+      "text": "テクノロジーを使って遠くあると思った",
+      "start_seconds": 865.16,
+      "end_seconds": 872.6
+    },
+    {
+      "text": "ものを近くに気づけるようにする。",
+      "start_seconds": 868.44,
+      "end_seconds": 876.72
+    },
+    {
+      "text": "また役に立つだけでは測れない関係の中に",
+      "start_seconds": 872.6,
+      "end_seconds": 880.36
+    },
+    {
+      "text": "愛着や責任感が持てるようなそんな関係が",
+      "start_seconds": 876.72,
+      "end_seconds": 884.519
+    },
+    {
+      "text": "作られたらなと思ってます。",
+      "start_seconds": 880.36,
+      "end_seconds": 884.519
+    },
+    {
+      "text": "最後に最初の問に答え戻りたいと思います",
+      "start_seconds": 884.839,
+      "end_seconds": 894.8000000000001
+    },
+    {
+      "text": "。私たちは自然を守る側でしょうか?",
+      "start_seconds": 888.44,
+      "end_seconds": 899.32
+    },
+    {
+      "text": "ここで1人の科学者の言葉をご紹介したい",
+      "start_seconds": 894.8,
+      "end_seconds": 904.4799999999999
+    },
+    {
+      "text": "と思います。雪は天から送られた手紙で",
+      "start_seconds": 899.32,
+      "end_seconds": 907.639
+    },
+    {
+      "text": "ある中郎",
+      "start_seconds": 904.48,
+      "end_seconds": 912.04
+    },
+    {
+      "text": "雪の決勝を、え、研究した物理学者です。",
+      "start_seconds": 907.639,
+      "end_seconds": 916.16
+    },
+    {
+      "text": "でも私はこうも思うんです。その手紙は",
+      "start_seconds": 912.04,
+      "end_seconds": 918.759
+    },
+    {
+      "text": "もしかしたら天からだけ届くのではないか",
+      "start_seconds": 916.16,
+      "end_seconds": 924.04
+    },
+    {
+      "text": "もしれない。天、つまり空や待機から土へ",
+      "start_seconds": 918.759,
+      "end_seconds": 929.12
+    },
+    {
+      "text": "、土から美生物へ、美生物から植物へ、",
+      "start_seconds": 924.04,
+      "end_seconds": 932.639
+    },
+    {
+      "text": "植物から私たちへ。",
+      "start_seconds": 929.12,
+      "end_seconds": 936.88
+    },
+    {
+      "text": "その手紙の受け取り方を知った時、自然は",
+      "start_seconds": 932.639,
+      "end_seconds": 940.639
+    },
+    {
+      "text": "守る相手ではなく、共に生きる相手として",
+      "start_seconds": 936.88,
+      "end_seconds": 944.319
+    },
+    {
+      "text": "立ち上がってくるのだと思います。",
+      "start_seconds": 940.639,
+      "end_seconds": 948.505
+    },
+    {
+      "text": "ありがとうございました。[拍手]",
+      "start_seconds": 944.319,
+      "end_seconds": 948.505
+    }
+  ],
+  "display_captions": [
+    {
+      "text": "[音楽]",
+      "start_seconds": 9.825,
+      "end_seconds": 11.844999999999999,
+      "id": "menTyHjones-display-0001",
+      "segment_id": "menTyHjones-ja-0001"
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 13.1,
+      "end_seconds": 15.12,
+      "id": "menTyHjones-display-0002",
+      "segment_id": "menTyHjones-ja-0002"
+    },
+    {
+      "text": "こんにちは。今日もあのこんにちは。",
+      "start_seconds": 25.8,
+      "end_seconds": 29.475,
+      "id": "menTyHjones-display-0003",
+      "segment_id": "menTyHjones-ja-0003"
+    },
+    {
+      "text": "[笑い]",
+      "start_seconds": 29.475,
+      "end_seconds": 30.039,
+      "id": "menTyHjones-display-0004",
+      "segment_id": "menTyHjones-ja-0004"
+    },
+    {
+      "text": "自然との関わりの話たくさんありますね。",
+      "start_seconds": 30.039,
+      "end_seconds": 34.48,
+      "id": "menTyHjones-display-0005",
+      "segment_id": "menTyHjones-ja-0004"
+    },
+    {
+      "text": "あの、皆さんは今自然を回復するとか生態",
+      "start_seconds": 34.48,
+      "end_seconds": 40.2,
+      "id": "menTyHjones-display-0006",
+      "segment_id": "menTyHjones-ja-0005"
+    },
+    {
+      "text": "系をこう多様性をなど話を様々なところで",
+      "start_seconds": 40.2,
+      "end_seconds": 45.52,
+      "id": "menTyHjones-display-0007",
+      "segment_id": "menTyHjones-ja-0005"
+    },
+    {
+      "text": "聞くと思います。あれ、今日ちょっとお",
+      "start_seconds": 45.52,
+      "end_seconds": 50.28,
+      "id": "menTyHjones-display-0008",
+      "segment_id": "menTyHjones-ja-0006"
+    },
+    {
+      "text": "説教みたいな話かなとちょっと意見苦しく",
+      "start_seconds": 50.28,
+      "end_seconds": 53.719,
+      "id": "menTyHjones-display-0009",
+      "segment_id": "menTyHjones-ja-0006"
+    },
+    {
+      "text": "感じる方もいるかもしれません。",
+      "start_seconds": 53.719,
+      "end_seconds": 57.28,
+      "id": "menTyHjones-display-0010",
+      "segment_id": "menTyHjones-ja-0006"
+    },
+    {
+      "text": "そういった自然を守るとか生体系の話を",
+      "start_seconds": 57.28,
+      "end_seconds": 62.079,
+      "id": "menTyHjones-display-0011",
+      "segment_id": "menTyHjones-ja-0007"
+    },
+    {
+      "text": "する時皆さんどんな景色を思い浮かべる",
+      "start_seconds": 62.079,
+      "end_seconds": 65.119,
+      "id": "menTyHjones-display-0012",
+      "segment_id": "menTyHjones-ja-0007"
+    },
+    {
+      "text": "でしょうか?",
+      "start_seconds": 65.119,
+      "end_seconds": 67.24,
+      "id": "menTyHjones-display-0013",
+      "segment_id": "menTyHjones-ja-0007"
+    },
+    {
+      "text": "森でしょうか?海でしょうか?それとも",
+      "start_seconds": 67.24,
+      "end_seconds": 72.24,
+      "id": "menTyHjones-display-0014",
+      "segment_id": "menTyHjones-ja-0008"
+    },
+    {
+      "text": "絶妙そうな生き物の数でしょうか?",
+      "start_seconds": 72.24,
+      "end_seconds": 77.28,
+      "id": "menTyHjones-display-0015",
+      "segment_id": "menTyHjones-ja-0008"
+    },
+    {
+      "text": "そしてきっと次には自然を守らなければ",
+      "start_seconds": 77.28,
+      "end_seconds": 80.4,
+      "id": "menTyHjones-display-0016",
+      "segment_id": "menTyHjones-ja-0009"
+    },
+    {
+      "text": "ならない。そう思うのではないでしょうか",
+      "start_seconds": 80.4,
+      "end_seconds": 83.079,
+      "id": "menTyHjones-display-0017",
+      "segment_id": "menTyHjones-ja-0009"
+    },
+    {
+      "text": "。でも毎日の忙しさから",
+      "start_seconds": 83.079,
+      "end_seconds": 87.32,
+      "id": "menTyHjones-display-0018",
+      "segment_id": "menTyHjones-ja-0009"
+    },
+    {
+      "text": "私たちの優先順位からそれはこぼれて",
+      "start_seconds": 87.32,
+      "end_seconds": 90.28,
+      "id": "menTyHjones-display-0019",
+      "segment_id": "menTyHjones-ja-0010"
+    },
+    {
+      "text": "しまう。それも1つの本音かと思います。",
+      "start_seconds": 90.28,
+      "end_seconds": 97.119,
+      "id": "menTyHjones-display-0020",
+      "segment_id": "menTyHjones-ja-0010"
+    },
+    {
+      "text": "自然を守る。",
+      "start_seconds": 97.159,
+      "end_seconds": 99.72,
+      "id": "menTyHjones-display-0021",
+      "segment_id": "menTyHjones-ja-0011"
+    },
+    {
+      "text": "私はこの言葉に少し立ち止まってしまい",
+      "start_seconds": 99.72,
+      "end_seconds": 102.799,
+      "id": "menTyHjones-display-0022",
+      "segment_id": "menTyHjones-ja-0012"
+    },
+    {
+      "text": "ます。なぜなら守るという言葉には守る側",
+      "start_seconds": 102.799,
+      "end_seconds": 107.799,
+      "id": "menTyHjones-display-0023",
+      "segment_id": "menTyHjones-ja-0012"
+    },
+    {
+      "text": "と守られる側がいます。つまり私たち人間",
+      "start_seconds": 107.799,
+      "end_seconds": 112.92,
+      "id": "menTyHjones-display-0024",
+      "segment_id": "menTyHjones-ja-0013"
+    },
+    {
+      "text": "はこちら側で自然はあちら側。果たして",
+      "start_seconds": 112.92,
+      "end_seconds": 116.799,
+      "id": "menTyHjones-display-0025",
+      "segment_id": "menTyHjones-ja-0013"
+    },
+    {
+      "text": "本当にそうでしょうか?私たちは自然を",
+      "start_seconds": 116.799,
+      "end_seconds": 120.36,
+      "id": "menTyHjones-display-0026",
+      "segment_id": "menTyHjones-ja-0014"
+    },
+    {
+      "text": "守る側でしょうか?もっと根本的に考え",
+      "start_seconds": 120.36,
+      "end_seconds": 124.52,
+      "id": "menTyHjones-display-0027",
+      "segment_id": "menTyHjones-ja-0014"
+    },
+    {
+      "text": "たらもしかしたら自然に守られているので",
+      "start_seconds": 124.52,
+      "end_seconds": 128.679,
+      "id": "menTyHjones-display-0028",
+      "segment_id": "menTyHjones-ja-0014"
+    },
+    {
+      "text": "はないでしょうか?",
+      "start_seconds": 128.679,
+      "end_seconds": 132.0,
+      "id": "menTyHjones-display-0029",
+      "segment_id": "menTyHjones-ja-0015"
+    },
+    {
+      "text": "ちょっと考えてみてください。例えば植物",
+      "start_seconds": 132.0,
+      "end_seconds": 135.2,
+      "id": "menTyHjones-display-0030",
+      "segment_id": "menTyHjones-ja-0016"
+    },
+    {
+      "text": "が酸素を出さなくなったら、虫が花粉を",
+      "start_seconds": 135.2,
+      "end_seconds": 139.239,
+      "id": "menTyHjones-display-0031",
+      "segment_id": "menTyHjones-ja-0016"
+    },
+    {
+      "text": "運ばなくなったら、微生物が分解をしなく",
+      "start_seconds": 139.239,
+      "end_seconds": 142.76,
+      "id": "menTyHjones-display-0032",
+      "segment_id": "menTyHjones-ja-0016"
+    },
+    {
+      "text": "なったら、私たちは1日足りとも同じ生活",
+      "start_seconds": 142.76,
+      "end_seconds": 145.959,
+      "id": "menTyHjones-display-0033",
+      "segment_id": "menTyHjones-ja-0017"
+    },
+    {
+      "text": "ができません。あれ当たり前のこと言っ",
+      "start_seconds": 145.959,
+      "end_seconds": 148.84,
+      "id": "menTyHjones-display-0034",
+      "segment_id": "menTyHjones-ja-0017"
+    },
+    {
+      "text": "てるんじゃないか。そんなこと思う方も",
+      "start_seconds": 148.84,
+      "end_seconds": 151.2,
+      "id": "menTyHjones-display-0035",
+      "segment_id": "menTyHjones-ja-0017"
+    },
+    {
+      "text": "いるかと思います。",
+      "start_seconds": 151.2,
+      "end_seconds": 154.12,
+      "id": "menTyHjones-display-0036",
+      "segment_id": "menTyHjones-ja-0017"
+    },
+    {
+      "text": "でも、あの、私たちはもうとても大きな",
+      "start_seconds": 154.12,
+      "end_seconds": 159.319,
+      "id": "menTyHjones-display-0037",
+      "segment_id": "menTyHjones-ja-0018"
+    },
+    {
+      "text": "数えきれないほどの生き物が関わる循環の",
+      "start_seconds": 159.319,
+      "end_seconds": 162.68,
+      "id": "menTyHjones-display-0038",
+      "segment_id": "menTyHjones-ja-0018"
+    },
+    {
+      "text": "中にすでに立っています。",
+      "start_seconds": 162.68,
+      "end_seconds": 167.20000000000002,
+      "id": "menTyHjones-display-0039",
+      "segment_id": "menTyHjones-ja-0019"
+    },
+    {
+      "text": "遠くで起こったことが巡り巡って私たちの",
+      "start_seconds": 168.84,
+      "end_seconds": 173.08,
+      "id": "menTyHjones-display-0040",
+      "segment_id": "menTyHjones-ja-0020"
+    },
+    {
+      "text": "命を支えていること、",
+      "start_seconds": 173.08,
+      "end_seconds": 176.48,
+      "id": "menTyHjones-display-0041",
+      "segment_id": "menTyHjones-ja-0020"
+    },
+    {
+      "text": "またそれが自分に帰ってきていくこと。",
+      "start_seconds": 176.48,
+      "end_seconds": 181.239,
+      "id": "menTyHjones-display-0042",
+      "segment_id": "menTyHjones-ja-0021"
+    },
+    {
+      "text": "そういった関係は見えにくいです。",
+      "start_seconds": 181.239,
+      "end_seconds": 185.48,
+      "id": "menTyHjones-display-0043",
+      "segment_id": "menTyHjones-ja-0022"
+    },
+    {
+      "text": "自然が私たちを守ってくれること、支え",
+      "start_seconds": 185.48,
+      "end_seconds": 188.319,
+      "id": "menTyHjones-display-0044",
+      "segment_id": "menTyHjones-ja-0023"
+    },
+    {
+      "text": "られてること、私たちの命に帰ってきてる",
+      "start_seconds": 188.319,
+      "end_seconds": 190.959,
+      "id": "menTyHjones-display-0045",
+      "segment_id": "menTyHjones-ja-0023"
+    },
+    {
+      "text": "こと。これらは暮らしの中でほとんど実感",
+      "start_seconds": 190.959,
+      "end_seconds": 194.04,
+      "id": "menTyHjones-display-0046",
+      "segment_id": "menTyHjones-ja-0023"
+    },
+    {
+      "text": "できません。なので私は1つの問を立て",
+      "start_seconds": 194.04,
+      "end_seconds": 197.959,
+      "id": "menTyHjones-display-0047",
+      "segment_id": "menTyHjones-ja-0024"
+    },
+    {
+      "text": "ました。",
+      "start_seconds": 197.959,
+      "end_seconds": 200.36,
+      "id": "menTyHjones-display-0048",
+      "segment_id": "menTyHjones-ja-0024"
+    },
+    {
+      "text": "はい。",
+      "start_seconds": 200.36,
+      "end_seconds": 203.59900000000002,
+      "id": "menTyHjones-display-0049",
+      "segment_id": "menTyHjones-ja-0025"
+    },
+    {
+      "text": "人は直接的な利益がなくても自然と深く",
+      "start_seconds": 203.68,
+      "end_seconds": 208.439,
+      "id": "menTyHjones-display-0050",
+      "segment_id": "menTyHjones-ja-0026"
+    },
+    {
+      "text": "関われるのか。",
+      "start_seconds": 208.439,
+      "end_seconds": 211.72,
+      "id": "menTyHjones-display-0051",
+      "segment_id": "menTyHjones-ja-0026"
+    },
+    {
+      "text": "もし自然が役に立つという、役に立つから",
+      "start_seconds": 211.72,
+      "end_seconds": 215.08,
+      "id": "menTyHjones-display-0052",
+      "segment_id": "menTyHjones-ja-0027"
+    },
+    {
+      "text": "守るという関係だけではない、何か関わり",
+      "start_seconds": 215.08,
+      "end_seconds": 218.56,
+      "id": "menTyHjones-display-0053",
+      "segment_id": "menTyHjones-ja-0027"
+    },
+    {
+      "text": "が作れるのであれば私たちは自然との",
+      "start_seconds": 218.56,
+      "end_seconds": 221.239,
+      "id": "menTyHjones-display-0054",
+      "segment_id": "menTyHjones-ja-0027"
+    },
+    {
+      "text": "関わりが少し違うことはできるんじゃない",
+      "start_seconds": 221.239,
+      "end_seconds": 223.72,
+      "id": "menTyHjones-display-0055",
+      "segment_id": "menTyHjones-ja-0027"
+    },
+    {
+      "text": "か。",
+      "start_seconds": 223.72,
+      "end_seconds": 225.48,
+      "id": "menTyHjones-display-0056",
+      "segment_id": "menTyHjones-ja-0028"
+    },
+    {
+      "text": "そんな問いから、え、私の研究の中で人と",
+      "start_seconds": 225.48,
+      "end_seconds": 229.439,
+      "id": "menTyHjones-display-0057",
+      "segment_id": "menTyHjones-ja-0029"
+    },
+    {
+      "text": "自然がふっと変わった瞬間について今日お",
+      "start_seconds": 229.439,
+      "end_seconds": 231.879,
+      "id": "menTyHjones-display-0058",
+      "segment_id": "menTyHjones-ja-0029"
+    },
+    {
+      "text": "話ししたいと思います。",
+      "start_seconds": 231.879,
+      "end_seconds": 234.879,
+      "id": "menTyHjones-display-0059",
+      "segment_id": "menTyHjones-ja-0029"
+    },
+    {
+      "text": "初めにちょっとだけ私自身の話をさせて",
+      "start_seconds": 234.879,
+      "end_seconds": 237.879,
+      "id": "menTyHjones-display-0060",
+      "segment_id": "menTyHjones-ja-0030"
+    },
+    {
+      "text": "ください。私は美術大学美を卒業した後、",
+      "start_seconds": 237.879,
+      "end_seconds": 242.0,
+      "id": "menTyHjones-display-0061",
+      "segment_id": "menTyHjones-ja-0030"
+    },
+    {
+      "text": "アーティストとして活動してきました。え",
+      "start_seconds": 242.0,
+      "end_seconds": 245.36,
+      "id": "menTyHjones-display-0062",
+      "segment_id": "menTyHjones-ja-0030"
+    },
+    {
+      "text": "、社会人として東京大学の、え、収支家庭",
+      "start_seconds": 245.36,
+      "end_seconds": 249.319,
+      "id": "menTyHjones-display-0063",
+      "segment_id": "menTyHjones-ja-0031"
+    },
+    {
+      "text": "をこの3月に終えて、また同じ東京大学の",
+      "start_seconds": 249.319,
+      "end_seconds": 253.48,
+      "id": "menTyHjones-display-0064",
+      "segment_id": "menTyHjones-ja-0031"
+    },
+    {
+      "text": "白家庭に進んでいます。え、東大に入る前",
+      "start_seconds": 253.48,
+      "end_seconds": 257.639,
+      "id": "menTyHjones-display-0065",
+      "segment_id": "menTyHjones-ja-0032"
+    },
+    {
+      "text": "にちょっと違う作品を作りました。",
+      "start_seconds": 257.639,
+      "end_seconds": 262.56,
+      "id": "menTyHjones-display-0066",
+      "segment_id": "menTyHjones-ja-0032"
+    },
+    {
+      "text": "植物にロボティクスの技術である人工筋肉",
+      "start_seconds": 262.56,
+      "end_seconds": 267.0,
+      "id": "menTyHjones-display-0067",
+      "segment_id": "menTyHjones-ja-0033"
+    },
+    {
+      "text": "をつけて動かす作品です。[鼻息]",
+      "start_seconds": 267.0,
+      "end_seconds": 271.759,
+      "id": "menTyHjones-display-0068",
+      "segment_id": "menTyHjones-ja-0033"
+    },
+    {
+      "text": "植物っていうのは動物と違って足を使って",
+      "start_seconds": 271.759,
+      "end_seconds": 275.32,
+      "id": "menTyHjones-display-0069",
+      "segment_id": "menTyHjones-ja-0034"
+    },
+    {
+      "text": "移動はしません。でも、え、種を風に乗せ",
+      "start_seconds": 275.32,
+      "end_seconds": 279.88,
+      "id": "menTyHjones-display-0070",
+      "segment_id": "menTyHjones-ja-0034"
+    },
+    {
+      "text": "て鳥に食べてもらい、川に流れて彼らは",
+      "start_seconds": 279.88,
+      "end_seconds": 284.36,
+      "id": "menTyHjones-display-0071",
+      "segment_id": "menTyHjones-ja-0035"
+    },
+    {
+      "text": "世界に広がっていきます。私はこれを植物",
+      "start_seconds": 284.36,
+      "end_seconds": 288.12,
+      "id": "menTyHjones-display-0072",
+      "segment_id": "menTyHjones-ja-0035"
+    },
+    {
+      "text": "の弱さではなく強さだと感じました。これ",
+      "start_seconds": 288.12,
+      "end_seconds": 292.4,
+      "id": "menTyHjones-display-0073",
+      "segment_id": "menTyHjones-ja-0036"
+    },
+    {
+      "text": "をなんか別の形で表現できないかそう思っ",
+      "start_seconds": 292.4,
+      "end_seconds": 296.639,
+      "id": "menTyHjones-display-0074",
+      "segment_id": "menTyHjones-ja-0036"
+    },
+    {
+      "text": "て、え、人工筋肉を植物につけて動かした",
+      "start_seconds": 296.639,
+      "end_seconds": 300.479,
+      "id": "menTyHjones-display-0075",
+      "segment_id": "menTyHjones-ja-0037"
+    },
+    {
+      "text": "んです。人工筋肉っていうのは、え、",
+      "start_seconds": 300.479,
+      "end_seconds": 304.36,
+      "id": "menTyHjones-display-0076",
+      "segment_id": "menTyHjones-ja-0037"
+    },
+    {
+      "text": "モーターと違って、ま、筋肉って名前が",
+      "start_seconds": 304.36,
+      "end_seconds": 307.32,
+      "id": "menTyHjones-display-0077",
+      "segment_id": "menTyHjones-ja-0037"
+    },
+    {
+      "text": "ついてるだけって滑らかに動きます。",
+      "start_seconds": 307.32,
+      "end_seconds": 310.28,
+      "id": "menTyHjones-display-0078",
+      "segment_id": "menTyHjones-ja-0038"
+    },
+    {
+      "text": "こんな感じです。",
+      "start_seconds": 310.28,
+      "end_seconds": 314.19899999999996,
+      "id": "menTyHjones-display-0079",
+      "segment_id": "menTyHjones-ja-0039"
+    },
+    {
+      "text": "面白い",
+      "start_seconds": 326.479,
+      "end_seconds": 328.16,
+      "id": "menTyHjones-display-0080",
+      "segment_id": "menTyHjones-ja-0040"
+    },
+    {
+      "text": "ワクワクする。そういった感想と一方で",
+      "start_seconds": 328.16,
+      "end_seconds": 331.84,
+      "id": "menTyHjones-display-0081",
+      "segment_id": "menTyHjones-ja-0040"
+    },
+    {
+      "text": "怖い、気持ち悪い様々な感情をこの作品は",
+      "start_seconds": 331.84,
+      "end_seconds": 337.759,
+      "id": "menTyHjones-display-0082",
+      "segment_id": "menTyHjones-ja-0040"
+    },
+    {
+      "text": "引き起こしました。でも不思議なことに",
+      "start_seconds": 337.759,
+      "end_seconds": 341.24,
+      "id": "menTyHjones-display-0083",
+      "segment_id": "menTyHjones-ja-0041"
+    },
+    {
+      "text": "この作品を圧倒的な恋を持って、え、見て",
+      "start_seconds": 341.24,
+      "end_seconds": 345.6,
+      "id": "menTyHjones-display-0084",
+      "segment_id": "menTyHjones-ja-0041"
+    },
+    {
+      "text": "くれたのは植物が大好きな人たちでした。",
+      "start_seconds": 345.6,
+      "end_seconds": 349.16,
+      "id": "menTyHjones-display-0085",
+      "segment_id": "menTyHjones-ja-0041"
+    },
+    {
+      "text": "その方々は植物の強さに共感するように",
+      "start_seconds": 349.16,
+      "end_seconds": 353.52,
+      "id": "menTyHjones-display-0086",
+      "segment_id": "menTyHjones-ja-0042"
+    },
+    {
+      "text": "この作品に対してすごくあの行為を示して",
+      "start_seconds": 353.52,
+      "end_seconds": 356.479,
+      "id": "menTyHjones-display-0087",
+      "segment_id": "menTyHjones-ja-0042"
+    },
+    {
+      "text": "くれました。",
+      "start_seconds": 356.479,
+      "end_seconds": 358.919,
+      "id": "menTyHjones-display-0088",
+      "segment_id": "menTyHjones-ja-0042"
+    },
+    {
+      "text": "でもこれって",
+      "start_seconds": 358.919,
+      "end_seconds": 362.52,
+      "id": "menTyHjones-display-0089",
+      "segment_id": "menTyHjones-ja-0043"
+    },
+    {
+      "text": "変化って呼べるのか、それとも植物動か",
+      "start_seconds": 362.52,
+      "end_seconds": 368.16,
+      "id": "menTyHjones-display-0090",
+      "segment_id": "menTyHjones-ja-0043"
+    },
+    {
+      "text": "ないので動くから面白い。そう思えている",
+      "start_seconds": 368.16,
+      "end_seconds": 371.36,
+      "id": "menTyHjones-display-0091",
+      "segment_id": "menTyHjones-ja-0044"
+    },
+    {
+      "text": "のか、植物の関わりまで変えられているの",
+      "start_seconds": 371.36,
+      "end_seconds": 375.319,
+      "id": "menTyHjones-display-0092",
+      "segment_id": "menTyHjones-ja-0044"
+    },
+    {
+      "text": "か、これは、え、再現可能なのか、それと",
+      "start_seconds": 375.319,
+      "end_seconds": 379.68,
+      "id": "menTyHjones-display-0093",
+      "segment_id": "menTyHjones-ja-0044"
+    },
+    {
+      "text": "も測れるのか。こういった問を確かめたく",
+      "start_seconds": 379.68,
+      "end_seconds": 383.44,
+      "id": "menTyHjones-display-0094",
+      "segment_id": "menTyHjones-ja-0045"
+    },
+    {
+      "text": "て東大の研究に入りました。",
+      "start_seconds": 383.44,
+      "end_seconds": 387.96,
+      "id": "menTyHjones-display-0095",
+      "segment_id": "menTyHjones-ja-0045"
+    },
+    {
+      "text": "そこで少し違った壁にぶつかりました。",
+      "start_seconds": 387.96,
+      "end_seconds": 392.56,
+      "id": "menTyHjones-display-0096",
+      "segment_id": "menTyHjones-ja-0046"
+    },
+    {
+      "text": "研究っていうのは人と何かの関わりを、え",
+      "start_seconds": 392.56,
+      "end_seconds": 396.0,
+      "id": "menTyHjones-display-0097",
+      "segment_id": "menTyHjones-ja-0047"
+    },
+    {
+      "text": "、研究する際には1対1のあの関係を",
+      "start_seconds": 396.0,
+      "end_seconds": 399.44,
+      "id": "menTyHjones-display-0098",
+      "segment_id": "menTyHjones-ja-0047"
+    },
+    {
+      "text": "切り出して研究することが多いです。でも",
+      "start_seconds": 399.44,
+      "end_seconds": 403.16,
+      "id": "menTyHjones-display-0099",
+      "segment_id": "menTyHjones-ja-0047"
+    },
+    {
+      "text": "私美の卒業っていうこともあって、あの",
+      "start_seconds": 403.16,
+      "end_seconds": 407.84,
+      "id": "menTyHjones-display-0100",
+      "segment_id": "menTyHjones-ja-0048"
+    },
+    {
+      "text": "いつもこう植物に向き合ってるわけじゃ",
+      "start_seconds": 407.84,
+      "end_seconds": 410.36,
+      "id": "menTyHjones-display-0101",
+      "segment_id": "menTyHjones-ja-0048"
+    },
+    {
+      "text": "ないじゃないですか。私たちの暮らスって",
+      "start_seconds": 410.36,
+      "end_seconds": 412.8,
+      "id": "menTyHjones-display-0102",
+      "segment_id": "menTyHjones-ja-0048"
+    },
+    {
+      "text": "。それに待機、水、土、いろんなものが",
+      "start_seconds": 412.8,
+      "end_seconds": 417.36,
+      "id": "menTyHjones-display-0103",
+      "segment_id": "menTyHjones-ja-0049"
+    },
+    {
+      "text": "関わって、えっと、この世界は成り立って",
+      "start_seconds": 417.36,
+      "end_seconds": 420.72,
+      "id": "menTyHjones-display-0104",
+      "segment_id": "menTyHjones-ja-0049"
+    },
+    {
+      "text": "います。なので私は、えー、土の中の",
+      "start_seconds": 420.72,
+      "end_seconds": 426.039,
+      "id": "menTyHjones-display-0105",
+      "segment_id": "menTyHjones-ja-0050"
+    },
+    {
+      "text": "美生物と植物と人こういった関わりの中で",
+      "start_seconds": 426.039,
+      "end_seconds": 431.919,
+      "id": "menTyHjones-display-0106",
+      "segment_id": "menTyHjones-ja-0050"
+    },
+    {
+      "text": "、え、研究ができないか、それに挑戦する",
+      "start_seconds": 431.919,
+      "end_seconds": 435.199,
+      "id": "menTyHjones-display-0107",
+      "segment_id": "menTyHjones-ja-0051"
+    },
+    {
+      "text": "ことにしました。そこで、え、注目したの",
+      "start_seconds": 435.199,
+      "end_seconds": 439.24,
+      "id": "menTyHjones-display-0108",
+      "segment_id": "menTyHjones-ja-0051"
+    },
+    {
+      "text": "が小さなエネルギー、微生物燃料電池です",
+      "start_seconds": 439.24,
+      "end_seconds": 442.52,
+      "id": "menTyHjones-display-0109",
+      "segment_id": "menTyHjones-ja-0051"
+    },
+    {
+      "text": "。",
+      "start_seconds": 442.52,
+      "end_seconds": 443.52,
+      "id": "menTyHjones-display-0110",
+      "segment_id": "menTyHjones-ja-0051"
+    },
+    {
+      "text": "ま、美発電とも呼ばれます。これは植物が",
+      "start_seconds": 443.52,
+      "end_seconds": 447.84,
+      "id": "menTyHjones-display-0111",
+      "segment_id": "menTyHjones-ja-0052"
+    },
+    {
+      "text": "出す栄養素または、えっと、生物の死骸",
+      "start_seconds": 447.84,
+      "end_seconds": 452.0,
+      "id": "menTyHjones-display-0112",
+      "segment_id": "menTyHjones-ja-0052"
+    },
+    {
+      "text": "などを微生物が分解する際に発電します。",
+      "start_seconds": 452.0,
+      "end_seconds": 456.319,
+      "id": "menTyHjones-display-0113",
+      "segment_id": "menTyHjones-ja-0053"
+    },
+    {
+      "text": "なので分解という循環の一部で発電するん",
+      "start_seconds": 456.319,
+      "end_seconds": 460.039,
+      "id": "menTyHjones-display-0114",
+      "segment_id": "menTyHjones-ja-0054"
+    },
+    {
+      "text": "です。",
+      "start_seconds": 460.039,
+      "end_seconds": 463.15999999999997,
+      "id": "menTyHjones-display-0115",
+      "segment_id": "menTyHjones-ja-0054"
+    },
+    {
+      "text": "この微生物燃料電池の発電は0.8V。",
+      "start_seconds": 463.4,
+      "end_seconds": 469.56,
+      "id": "menTyHjones-display-0116",
+      "segment_id": "menTyHjones-ja-0055"
+    },
+    {
+      "text": "炭酸電池が1.5Vなんで、それよりも",
+      "start_seconds": 469.56,
+      "end_seconds": 472.52,
+      "id": "menTyHjones-display-0117",
+      "segment_id": "menTyHjones-ja-0056"
+    },
+    {
+      "text": "さらにちっちゃいです。なので高額の世界",
+      "start_seconds": 472.52,
+      "end_seconds": 476.28,
+      "id": "menTyHjones-display-0118",
+      "segment_id": "menTyHjones-ja-0056"
+    },
+    {
+      "text": "、ま、実際使うとしたら小さすぎるし遅",
+      "start_seconds": 476.28,
+      "end_seconds": 480.08,
+      "id": "menTyHjones-display-0119",
+      "segment_id": "menTyHjones-ja-0056"
+    },
+    {
+      "text": "すぎるし非だと思われるかもしれません。",
+      "start_seconds": 480.08,
+      "end_seconds": 484.199,
+      "id": "menTyHjones-display-0120",
+      "segment_id": "menTyHjones-ja-0057"
+    },
+    {
+      "text": "でも私はそれ誰にとっての話なのかなと",
+      "start_seconds": 484.199,
+      "end_seconds": 487.72,
+      "id": "menTyHjones-display-0121",
+      "segment_id": "menTyHjones-ja-0058"
+    },
+    {
+      "text": "思いました。人にとって役に立つ。総電力",
+      "start_seconds": 487.72,
+      "end_seconds": 493.08,
+      "id": "menTyHjones-display-0122",
+      "segment_id": "menTyHjones-ja-0058"
+    },
+    {
+      "text": "と見たらすごく小さいけど生き物たちの",
+      "start_seconds": 493.08,
+      "end_seconds": 497.28,
+      "id": "menTyHjones-display-0123",
+      "segment_id": "menTyHjones-ja-0059"
+    },
+    {
+      "text": "関わりとしてその手がかりとして見たら",
+      "start_seconds": 497.28,
+      "end_seconds": 501.039,
+      "id": "menTyHjones-display-0124",
+      "segment_id": "menTyHjones-ja-0059"
+    },
+    {
+      "text": "全く違って見えました。",
+      "start_seconds": 501.039,
+      "end_seconds": 504.039,
+      "id": "menTyHjones-display-0125",
+      "segment_id": "menTyHjones-ja-0059"
+    },
+    {
+      "text": "実は別の研究で小さな電気を植物に流すと",
+      "start_seconds": 504.039,
+      "end_seconds": 509.84,
+      "id": "menTyHjones-display-0126",
+      "segment_id": "menTyHjones-ja-0060"
+    },
+    {
+      "text": "植物の成長が少し影響が起きるという論文",
+      "start_seconds": 509.84,
+      "end_seconds": 514.279,
+      "id": "menTyHjones-display-0127",
+      "segment_id": "menTyHjones-ja-0060"
+    },
+    {
+      "text": "がありました。なので私はその微生物燃料",
+      "start_seconds": 514.279,
+      "end_seconds": 518.039,
+      "id": "menTyHjones-display-0128",
+      "segment_id": "menTyHjones-ja-0061"
+    },
+    {
+      "text": "電気の小さな電気を植物に通してみること",
+      "start_seconds": 518.039,
+      "end_seconds": 522.2,
+      "id": "menTyHjones-display-0129",
+      "segment_id": "menTyHjones-ja-0061"
+    },
+    {
+      "text": "にしました。ここでは買われ大根です。",
+      "start_seconds": 522.2,
+      "end_seconds": 525.279,
+      "id": "menTyHjones-display-0130",
+      "segment_id": "menTyHjones-ja-0061"
+    },
+    {
+      "text": "ちょっと見てみましょう。",
+      "start_seconds": 525.279,
+      "end_seconds": 529.24,
+      "id": "menTyHjones-display-0131",
+      "segment_id": "menTyHjones-ja-0062"
+    },
+    {
+      "text": "電気を通している方が少しだけ伸びてます",
+      "start_seconds": 539.04,
+      "end_seconds": 543.519,
+      "id": "menTyHjones-display-0132",
+      "segment_id": "menTyHjones-ja-0063"
+    },
+    {
+      "text": "よね。",
+      "start_seconds": 543.519,
+      "end_seconds": 546.839,
+      "id": "menTyHjones-display-0133",
+      "segment_id": "menTyHjones-ja-0063"
+    },
+    {
+      "text": "植物が出す栄養素を微生物が電してその",
+      "start_seconds": 547.2,
+      "end_seconds": 553.44,
+      "id": "menTyHjones-display-0134",
+      "segment_id": "menTyHjones-ja-0064"
+    },
+    {
+      "text": "分解した時に発電する電気を植物に返す。",
+      "start_seconds": 553.44,
+      "end_seconds": 558.399,
+      "id": "menTyHjones-display-0135",
+      "segment_id": "menTyHjones-ja-0064"
+    },
+    {
+      "text": "こうしたこう小さなエネルギーを返して",
+      "start_seconds": 558.399,
+      "end_seconds": 561.68,
+      "id": "menTyHjones-display-0136",
+      "segment_id": "menTyHjones-ja-0065"
+    },
+    {
+      "text": "緩やかな循環のシステムを作りました。",
+      "start_seconds": 561.68,
+      "end_seconds": 565.079,
+      "id": "menTyHjones-display-0137",
+      "segment_id": "menTyHjones-ja-0065"
+    },
+    {
+      "text": "それを1つの場で体験できるようにして、",
+      "start_seconds": 565.079,
+      "end_seconds": 569.0,
+      "id": "menTyHjones-display-0138",
+      "segment_id": "menTyHjones-ja-0066"
+    },
+    {
+      "text": "え、海外これはオーストリアの",
+      "start_seconds": 569.0,
+      "end_seconds": 571.24,
+      "id": "menTyHjones-display-0139",
+      "segment_id": "menTyHjones-ja-0066"
+    },
+    {
+      "text": "アルセレクトロニカの展示です。また東京",
+      "start_seconds": 571.24,
+      "end_seconds": 574.6,
+      "id": "menTyHjones-display-0140",
+      "segment_id": "menTyHjones-ja-0066"
+    },
+    {
+      "text": "、え、トーカスというギャラリーだったり",
+      "start_seconds": 574.6,
+      "end_seconds": 576.76,
+      "id": "menTyHjones-display-0141",
+      "segment_id": "menTyHjones-ja-0066"
+    },
+    {
+      "text": "、え、ト田ビルディングでも検行ました。",
+      "start_seconds": 576.76,
+      "end_seconds": 580.76,
+      "id": "menTyHjones-display-0142",
+      "segment_id": "menTyHjones-ja-0067"
+    },
+    {
+      "text": "また参加者の方がこの小さな装置を",
+      "start_seconds": 580.76,
+      "end_seconds": 583.8,
+      "id": "menTyHjones-display-0143",
+      "segment_id": "menTyHjones-ja-0068"
+    },
+    {
+      "text": "持ち帰って植物と微生物のケアをする体験",
+      "start_seconds": 583.8,
+      "end_seconds": 587.839,
+      "id": "menTyHjones-display-0144",
+      "segment_id": "menTyHjones-ja-0068"
+    },
+    {
+      "text": "を作りました。",
+      "start_seconds": 587.839,
+      "end_seconds": 590.279,
+      "id": "menTyHjones-display-0145",
+      "segment_id": "menTyHjones-ja-0068"
+    },
+    {
+      "text": "そしたらちょっと面白いことが起こったん",
+      "start_seconds": 590.279,
+      "end_seconds": 592.399,
+      "id": "menTyHjones-display-0146",
+      "segment_id": "menTyHjones-ja-0069"
+    },
+    {
+      "text": "です。最初参加者の方は植物だけを見て",
+      "start_seconds": 592.399,
+      "end_seconds": 596.959,
+      "id": "menTyHjones-display-0147",
+      "segment_id": "menTyHjones-ja-0069"
+    },
+    {
+      "text": "ました。でもだんだんと植物だけを見なく",
+      "start_seconds": 596.959,
+      "end_seconds": 600.16,
+      "id": "menTyHjones-display-0148",
+      "segment_id": "menTyHjones-ja-0069"
+    },
+    {
+      "text": "なっていったんです。",
+      "start_seconds": 600.16,
+      "end_seconds": 602.72,
+      "id": "menTyHjones-display-0149",
+      "segment_id": "menTyHjones-ja-0070"
+    },
+    {
+      "text": "水の濁り、表面の膜、匂い、",
+      "start_seconds": 602.72,
+      "end_seconds": 607.839,
+      "id": "menTyHjones-display-0150",
+      "segment_id": "menTyHjones-ja-0071"
+    },
+    {
+      "text": "またチーン物、",
+      "start_seconds": 607.839,
+      "end_seconds": 610.8,
+      "id": "menTyHjones-display-0151",
+      "segment_id": "menTyHjones-ja-0071"
+    },
+    {
+      "text": "小さな生き物の気配、",
+      "start_seconds": 610.8,
+      "end_seconds": 614.0,
+      "id": "menTyHjones-display-0152",
+      "segment_id": "menTyHjones-ja-0071"
+    },
+    {
+      "text": "こうして変わっていきました。また",
+      "start_seconds": 614.0,
+      "end_seconds": 617.92,
+      "id": "menTyHjones-display-0153",
+      "segment_id": "menTyHjones-ja-0072"
+    },
+    {
+      "text": "毎日発電の量が見ることできるんです",
+      "start_seconds": 617.92,
+      "end_seconds": 621.839,
+      "id": "menTyHjones-display-0154",
+      "segment_id": "menTyHjones-ja-0072"
+    },
+    {
+      "text": "けれども、それによって美生物の活動、",
+      "start_seconds": 621.839,
+      "end_seconds": 625.399,
+      "id": "menTyHjones-display-0155",
+      "segment_id": "menTyHjones-ja-0072"
+    },
+    {
+      "text": "美生物元気かな、元気じゃないかな、",
+      "start_seconds": 625.399,
+      "end_seconds": 628.36,
+      "id": "menTyHjones-display-0156",
+      "segment_id": "menTyHjones-ja-0073"
+    },
+    {
+      "text": "そんなことも気にかけるようになってき",
+      "start_seconds": 628.36,
+      "end_seconds": 630.519,
+      "id": "menTyHjones-display-0157",
+      "segment_id": "menTyHjones-ja-0073"
+    },
+    {
+      "text": "ました。またこの植物の上に植物ライトが",
+      "start_seconds": 630.519,
+      "end_seconds": 633.399,
+      "id": "menTyHjones-display-0158",
+      "segment_id": "menTyHjones-ja-0073"
+    },
+    {
+      "text": "あるんですけれども、あの参加者の人は",
+      "start_seconds": 633.399,
+      "end_seconds": 636.04,
+      "id": "menTyHjones-display-0159",
+      "segment_id": "menTyHjones-ja-0073"
+    },
+    {
+      "text": "その植物のライトをこう移動しながら",
+      "start_seconds": 636.04,
+      "end_seconds": 639.72,
+      "id": "menTyHjones-display-0160",
+      "segment_id": "menTyHjones-ja-0074"
+    },
+    {
+      "text": "植物に当たるかなとか色々自分で応答し",
+      "start_seconds": 639.72,
+      "end_seconds": 643.04,
+      "id": "menTyHjones-display-0161",
+      "segment_id": "menTyHjones-ja-0074"
+    },
+    {
+      "text": "ながらケアを進めていきました。",
+      "start_seconds": 643.04,
+      "end_seconds": 647.36,
+      "id": "menTyHjones-display-0162",
+      "segment_id": "menTyHjones-ja-0074"
+    },
+    {
+      "text": "だんだんと自分が気にかけないとっていう",
+      "start_seconds": 647.36,
+      "end_seconds": 650.48,
+      "id": "menTyHjones-display-0163",
+      "segment_id": "menTyHjones-ja-0075"
+    },
+    {
+      "text": "愛着や責任感が続いていきました。少し",
+      "start_seconds": 650.48,
+      "end_seconds": 654.72,
+      "id": "menTyHjones-display-0164",
+      "segment_id": "menTyHjones-ja-0075"
+    },
+    {
+      "text": "ずつ参加者の志しが広がっていきました。",
+      "start_seconds": 654.72,
+      "end_seconds": 660.839,
+      "id": "menTyHjones-display-0165",
+      "segment_id": "menTyHjones-ja-0076"
+    },
+    {
+      "text": "もう1つ変わったことは関係の変化です。",
+      "start_seconds": 660.839,
+      "end_seconds": 665.16,
+      "id": "menTyHjones-display-0166",
+      "segment_id": "menTyHjones-ja-0077"
+    },
+    {
+      "text": "でも関係の変化ってどうやって測るん",
+      "start_seconds": 665.16,
+      "end_seconds": 667.279,
+      "id": "menTyHjones-display-0167",
+      "segment_id": "menTyHjones-ja-0078"
+    },
+    {
+      "text": "でしょうか?",
+      "start_seconds": 667.279,
+      "end_seconds": 669.32,
+      "id": "menTyHjones-display-0168",
+      "segment_id": "menTyHjones-ja-0078"
+    },
+    {
+      "text": "気にかけている、心配している。それっ",
+      "start_seconds": 669.32,
+      "end_seconds": 672.8,
+      "id": "menTyHjones-display-0169",
+      "segment_id": "menTyHjones-ja-0079"
+    },
+    {
+      "text": "てどうやって測ることができるのか。",
+      "start_seconds": 672.8,
+      "end_seconds": 676.279,
+      "id": "menTyHjones-display-0170",
+      "segment_id": "menTyHjones-ja-0079"
+    },
+    {
+      "text": "今回私はそこで自然との繋がりの尺度、",
+      "start_seconds": 676.279,
+      "end_seconds": 680.56,
+      "id": "menTyHjones-display-0171",
+      "segment_id": "menTyHjones-ja-0080"
+    },
+    {
+      "text": "心理尺度を使いました。これはえっと自分",
+      "start_seconds": 680.56,
+      "end_seconds": 685.079,
+      "id": "menTyHjones-display-0172",
+      "segment_id": "menTyHjones-ja-0080"
+    },
+    {
+      "text": "と自然が切り離されたものではなくて",
+      "start_seconds": 685.079,
+      "end_seconds": 688.8,
+      "id": "menTyHjones-display-0173",
+      "segment_id": "menTyHjones-ja-0081"
+    },
+    {
+      "text": "繋がっているもの。そんなことを測れる",
+      "start_seconds": 688.8,
+      "end_seconds": 691.2,
+      "id": "menTyHjones-display-0174",
+      "segment_id": "menTyHjones-ja-0081"
+    },
+    {
+      "text": "尺度です。",
+      "start_seconds": 691.2,
+      "end_seconds": 693.6,
+      "id": "menTyHjones-display-0175",
+      "segment_id": "menTyHjones-ja-0081"
+    },
+    {
+      "text": "例えばこんな項目があります。自分は自然",
+      "start_seconds": 693.6,
+      "end_seconds": 697.519,
+      "id": "menTyHjones-display-0176",
+      "segment_id": "menTyHjones-ja-0082"
+    },
+    {
+      "text": "界の一部だと感じる。これを体験の前と",
+      "start_seconds": 697.519,
+      "end_seconds": 701.839,
+      "id": "menTyHjones-display-0177",
+      "segment_id": "menTyHjones-ja-0082"
+    },
+    {
+      "text": "体験の後で答えてもらって、それでその",
+      "start_seconds": 701.839,
+      "end_seconds": 705.8,
+      "id": "menTyHjones-display-0178",
+      "segment_id": "menTyHjones-ja-0083"
+    },
+    {
+      "text": "数値の変化を見ました。",
+      "start_seconds": 705.8,
+      "end_seconds": 709.32,
+      "id": "menTyHjones-display-0179",
+      "segment_id": "menTyHjones-ja-0083"
+    },
+    {
+      "text": "6人の平均点はどうでしょうか?",
+      "start_seconds": 709.32,
+      "end_seconds": 716.36,
+      "id": "menTyHjones-display-0180",
+      "segment_id": "menTyHjones-ja-0084"
+    },
+    {
+      "text": "71.1から79.6まで上がりました。",
+      "start_seconds": 716.68,
+      "end_seconds": 721.6,
+      "id": "menTyHjones-display-0181",
+      "segment_id": "menTyHjones-ja-0085"
+    },
+    {
+      "text": "これは大きな数値ではありません。でも",
+      "start_seconds": 721.6,
+      "end_seconds": 724.76,
+      "id": "menTyHjones-display-0182",
+      "segment_id": "menTyHjones-ja-0086"
+    },
+    {
+      "text": "ここで大事なのは統計の派手さではなくて",
+      "start_seconds": 724.76,
+      "end_seconds": 728.399,
+      "id": "menTyHjones-display-0183",
+      "segment_id": "menTyHjones-ja-0086"
+    },
+    {
+      "text": "直接的な利益がなくても関わりが深まっ",
+      "start_seconds": 728.399,
+      "end_seconds": 732.399,
+      "id": "menTyHjones-display-0184",
+      "segment_id": "menTyHjones-ja-0086"
+    },
+    {
+      "text": "たっていうことなんです。",
+      "start_seconds": 732.399,
+      "end_seconds": 735.519,
+      "id": "menTyHjones-display-0185",
+      "segment_id": "menTyHjones-ja-0087"
+    },
+    {
+      "text": "確かに6人の平均点は上がりました。",
+      "start_seconds": 735.519,
+      "end_seconds": 740.44,
+      "id": "menTyHjones-display-0186",
+      "segment_id": "menTyHjones-ja-0088"
+    },
+    {
+      "text": "でも1人だけ点数が下がった方がいました",
+      "start_seconds": 740.44,
+      "end_seconds": 744.68,
+      "id": "menTyHjones-display-0187",
+      "segment_id": "menTyHjones-ja-0089"
+    },
+    {
+      "text": "。",
+      "start_seconds": 744.68,
+      "end_seconds": 746.32,
+      "id": "menTyHjones-display-0188",
+      "segment_id": "menTyHjones-ja-0089"
+    },
+    {
+      "text": "その方は元々自然との関わり、ま、共感と",
+      "start_seconds": 746.32,
+      "end_seconds": 751.279,
+      "id": "menTyHjones-display-0189",
+      "segment_id": "menTyHjones-ja-0090"
+    },
+    {
+      "text": "かがすごく高い人で体験1番のあの高得典",
+      "start_seconds": 751.279,
+      "end_seconds": 755.519,
+      "id": "menTyHjones-display-0190",
+      "segment_id": "menTyHjones-ja-0090"
+    },
+    {
+      "text": "であの終わった人でした。その方が体験後",
+      "start_seconds": 755.519,
+      "end_seconds": 760.199,
+      "id": "menTyHjones-display-0191",
+      "segment_id": "menTyHjones-ja-0091"
+    },
+    {
+      "text": "のインタビューで答えてくれました。私は",
+      "start_seconds": 760.199,
+      "end_seconds": 763.639,
+      "id": "menTyHjones-display-0192",
+      "segment_id": "menTyHjones-ja-0091"
+    },
+    {
+      "text": "自然を知っていたと思ったけど知らなかっ",
+      "start_seconds": 763.639,
+      "end_seconds": 766.8,
+      "id": "menTyHjones-display-0193",
+      "segment_id": "menTyHjones-ja-0091"
+    },
+    {
+      "text": "た。そしてこう続けました。",
+      "start_seconds": 766.8,
+      "end_seconds": 771.279,
+      "id": "menTyHjones-display-0194",
+      "segment_id": "menTyHjones-ja-0092"
+    },
+    {
+      "text": "例えばパン、あの体験はパンジーを買った",
+      "start_seconds": 771.279,
+      "end_seconds": 776.12,
+      "id": "menTyHjones-display-0195",
+      "segment_id": "menTyHjones-ja-0093"
+    },
+    {
+      "text": "としたらパンジーを自分の絵に持ち帰って",
+      "start_seconds": 776.12,
+      "end_seconds": 779.36,
+      "id": "menTyHjones-display-0196",
+      "segment_id": "menTyHjones-ja-0093"
+    },
+    {
+      "text": "きた。パンチと自分っていう風に思ってい",
+      "start_seconds": 779.36,
+      "end_seconds": 782.32,
+      "id": "menTyHjones-display-0197",
+      "segment_id": "menTyHjones-ja-0093"
+    },
+    {
+      "text": "たけれど、この体験の後は",
+      "start_seconds": 782.32,
+      "end_seconds": 786.56,
+      "id": "menTyHjones-display-0198",
+      "segment_id": "menTyHjones-ja-0094"
+    },
+    {
+      "text": "パンジーと一緒に土微生物",
+      "start_seconds": 786.56,
+      "end_seconds": 790.68,
+      "id": "menTyHjones-display-0199",
+      "segment_id": "menTyHjones-ja-0094"
+    },
+    {
+      "text": "その土上環境それらも自分の絵に招きれて",
+      "start_seconds": 790.68,
+      "end_seconds": 793.959,
+      "id": "menTyHjones-display-0200",
+      "segment_id": "menTyHjones-ja-0094"
+    },
+    {
+      "text": "いるっていう風に感じるようになりまし",
+      "start_seconds": 793.959,
+      "end_seconds": 796.36,
+      "id": "menTyHjones-display-0201",
+      "segment_id": "menTyHjones-ja-0095"
+    },
+    {
+      "text": "たって言ってくれました。",
+      "start_seconds": 796.36,
+      "end_seconds": 799.959,
+      "id": "menTyHjones-display-0202",
+      "segment_id": "menTyHjones-ja-0095"
+    },
+    {
+      "text": "それは植物を1つのものとして見るのでは",
+      "start_seconds": 799.959,
+      "end_seconds": 803.199,
+      "id": "menTyHjones-display-0203",
+      "segment_id": "menTyHjones-ja-0096"
+    },
+    {
+      "text": "なく、1つの環境、小さな系として見",
+      "start_seconds": 803.199,
+      "end_seconds": 808.36,
+      "id": "menTyHjones-display-0204",
+      "segment_id": "menTyHjones-ja-0096"
+    },
+    {
+      "text": "られるようになったっていうことだと思い",
+      "start_seconds": 808.36,
+      "end_seconds": 810.16,
+      "id": "menTyHjones-display-0205",
+      "segment_id": "menTyHjones-ja-0096"
+    },
+    {
+      "text": "ます。確かに彼女の、え、尺度の点数は",
+      "start_seconds": 810.16,
+      "end_seconds": 814.48,
+      "id": "menTyHjones-display-0206",
+      "segment_id": "menTyHjones-ja-0097"
+    },
+    {
+      "text": "下がりました。でも彼女にとって自然が",
+      "start_seconds": 814.48,
+      "end_seconds": 818.399,
+      "id": "menTyHjones-display-0207",
+      "segment_id": "menTyHjones-ja-0097"
+    },
+    {
+      "text": "遠くなったのではなくて、逆に自然の改造",
+      "start_seconds": 818.399,
+      "end_seconds": 822.04,
+      "id": "menTyHjones-display-0208",
+      "segment_id": "menTyHjones-ja-0097"
+    },
+    {
+      "text": "度が上がったと言われます。",
+      "start_seconds": 822.04,
+      "end_seconds": 826.36,
+      "id": "menTyHjones-display-0209",
+      "segment_id": "menTyHjones-ja-0098"
+    },
+    {
+      "text": "人は知識を理解してもなかなか変わること",
+      "start_seconds": 829.76,
+      "end_seconds": 833.0,
+      "id": "menTyHjones-display-0210",
+      "segment_id": "menTyHjones-ja-0099"
+    },
+    {
+      "text": "はできません。でも気にかける対象が増え",
+      "start_seconds": 833.0,
+      "end_seconds": 836.839,
+      "id": "menTyHjones-display-0211",
+      "segment_id": "menTyHjones-ja-0099"
+    },
+    {
+      "text": "た時",
+      "start_seconds": 836.839,
+      "end_seconds": 839.279,
+      "id": "menTyHjones-display-0212",
+      "segment_id": "menTyHjones-ja-0099"
+    },
+    {
+      "text": "人の世界の見方少しだけ変わります。私は",
+      "start_seconds": 839.279,
+      "end_seconds": 844.32,
+      "id": "menTyHjones-display-0213",
+      "segment_id": "menTyHjones-ja-0100"
+    },
+    {
+      "text": "私が作りたいのはこうした気づかない環境",
+      "start_seconds": 844.32,
+      "end_seconds": 847.639,
+      "id": "menTyHjones-display-0214",
+      "segment_id": "menTyHjones-ja-0100"
+    },
+    {
+      "text": "関係に気づいて感じられるようにできる場",
+      "start_seconds": 847.639,
+      "end_seconds": 850.12,
+      "id": "menTyHjones-display-0215",
+      "segment_id": "menTyHjones-ja-0100"
+    },
+    {
+      "text": "です。",
+      "start_seconds": 850.12,
+      "end_seconds": 852.88,
+      "id": "menTyHjones-display-0216",
+      "segment_id": "menTyHjones-ja-0101"
+    },
+    {
+      "text": "後ではそれを感じられるような形にして",
+      "start_seconds": 852.88,
+      "end_seconds": 856.92,
+      "id": "menTyHjones-display-0217",
+      "segment_id": "menTyHjones-ja-0102"
+    },
+    {
+      "text": "研究でそれは何なのか確かめ言葉にする",
+      "start_seconds": 856.92,
+      "end_seconds": 860.399,
+      "id": "menTyHjones-display-0218",
+      "segment_id": "menTyHjones-ja-0102"
+    },
+    {
+      "text": "ことです。",
+      "start_seconds": 860.399,
+      "end_seconds": 863.839,
+      "id": "menTyHjones-display-0219",
+      "segment_id": "menTyHjones-ja-0102"
+    },
+    {
+      "text": "テクノロジーを使って遠くあると思った",
+      "start_seconds": 865.16,
+      "end_seconds": 868.44,
+      "id": "menTyHjones-display-0220",
+      "segment_id": "menTyHjones-ja-0103"
+    },
+    {
+      "text": "ものを近くに気づけるようにする。",
+      "start_seconds": 868.44,
+      "end_seconds": 872.6,
+      "id": "menTyHjones-display-0221",
+      "segment_id": "menTyHjones-ja-0103"
+    },
+    {
+      "text": "また役に立つだけでは測れない関係の中に",
+      "start_seconds": 872.6,
+      "end_seconds": 876.72,
+      "id": "menTyHjones-display-0222",
+      "segment_id": "menTyHjones-ja-0104"
+    },
+    {
+      "text": "愛着や責任感が持てるようなそんな関係が",
+      "start_seconds": 876.72,
+      "end_seconds": 880.36,
+      "id": "menTyHjones-display-0223",
+      "segment_id": "menTyHjones-ja-0104"
+    },
+    {
+      "text": "作られたらなと思ってます。",
+      "start_seconds": 880.36,
+      "end_seconds": 884.519,
+      "id": "menTyHjones-display-0224",
+      "segment_id": "menTyHjones-ja-0104"
+    },
+    {
+      "text": "最後に最初の問に答え戻りたいと思います",
+      "start_seconds": 884.839,
+      "end_seconds": 888.44,
+      "id": "menTyHjones-display-0225",
+      "segment_id": "menTyHjones-ja-0105"
+    },
+    {
+      "text": "。私たちは自然を守る側でしょうか?",
+      "start_seconds": 888.44,
+      "end_seconds": 894.8,
+      "id": "menTyHjones-display-0226",
+      "segment_id": "menTyHjones-ja-0105"
+    },
+    {
+      "text": "ここで1人の科学者の言葉をご紹介したい",
+      "start_seconds": 894.8,
+      "end_seconds": 899.32,
+      "id": "menTyHjones-display-0227",
+      "segment_id": "menTyHjones-ja-0106"
+    },
+    {
+      "text": "と思います。雪は天から送られた手紙で",
+      "start_seconds": 899.32,
+      "end_seconds": 904.48,
+      "id": "menTyHjones-display-0228",
+      "segment_id": "menTyHjones-ja-0106"
+    },
+    {
+      "text": "ある中郎",
+      "start_seconds": 904.48,
+      "end_seconds": 907.639,
+      "id": "menTyHjones-display-0229",
+      "segment_id": "menTyHjones-ja-0107"
+    },
+    {
+      "text": "雪の決勝を、え、研究した物理学者です。",
+      "start_seconds": 907.639,
+      "end_seconds": 912.04,
+      "id": "menTyHjones-display-0230",
+      "segment_id": "menTyHjones-ja-0107"
+    },
+    {
+      "text": "でも私はこうも思うんです。その手紙は",
+      "start_seconds": 912.04,
+      "end_seconds": 916.16,
+      "id": "menTyHjones-display-0231",
+      "segment_id": "menTyHjones-ja-0108"
+    },
+    {
+      "text": "もしかしたら天からだけ届くのではないか",
+      "start_seconds": 916.16,
+      "end_seconds": 918.759,
+      "id": "menTyHjones-display-0232",
+      "segment_id": "menTyHjones-ja-0108"
+    },
+    {
+      "text": "もしれない。天、つまり空や待機から土へ",
+      "start_seconds": 918.759,
+      "end_seconds": 924.04,
+      "id": "menTyHjones-display-0233",
+      "segment_id": "menTyHjones-ja-0108"
+    },
+    {
+      "text": "、土から美生物へ、美生物から植物へ、",
+      "start_seconds": 924.04,
+      "end_seconds": 929.12,
+      "id": "menTyHjones-display-0234",
+      "segment_id": "menTyHjones-ja-0109"
+    },
+    {
+      "text": "植物から私たちへ。",
+      "start_seconds": 929.12,
+      "end_seconds": 932.639,
+      "id": "menTyHjones-display-0235",
+      "segment_id": "menTyHjones-ja-0109"
+    },
+    {
+      "text": "その手紙の受け取り方を知った時、自然は",
+      "start_seconds": 932.639,
+      "end_seconds": 936.88,
+      "id": "menTyHjones-display-0236",
+      "segment_id": "menTyHjones-ja-0110"
+    },
+    {
+      "text": "守る相手ではなく、共に生きる相手として",
+      "start_seconds": 936.88,
+      "end_seconds": 940.639,
+      "id": "menTyHjones-display-0237",
+      "segment_id": "menTyHjones-ja-0110"
+    },
+    {
+      "text": "立ち上がってくるのだと思います。",
+      "start_seconds": 940.639,
+      "end_seconds": 944.319,
+      "id": "menTyHjones-display-0238",
+      "segment_id": "menTyHjones-ja-0110"
+    },
+    {
+      "text": "ありがとうございました。[拍手]",
+      "start_seconds": 944.319,
+      "end_seconds": 948.505,
+      "id": "menTyHjones-display-0239",
+      "segment_id": "menTyHjones-ja-0111"
+    }
+  ]
+}

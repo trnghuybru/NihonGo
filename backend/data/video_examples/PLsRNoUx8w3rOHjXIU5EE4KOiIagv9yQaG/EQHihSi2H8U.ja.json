@@ -1,0 +1,4242 @@
+{
+  "schema_version": 1,
+  "video": {
+    "youtube_id": "EQHihSi2H8U",
+    "title": "The Story of How \"Things of Value\" Become \"Things That Are Valued\" | Keiko KUNIOKA | TEDxKumamoto",
+    "channel": "TEDx Talks",
+    "duration_seconds": 902
+  },
+  "caption_track": {
+    "language": "ja",
+    "kind": "asr",
+    "source": "youtube_automatic"
+  },
+  "source_playlist": "https://www.youtube.com/playlist?list=PLsRNoUx8w3rOHjXIU5EE4KOiIagv9yQaG",
+  "fetched_at": "2026-10-13T13:21:53.487060+00:00",
+  "segment_count": 97,
+  "segments": [
+    {
+      "text": "[音楽]",
+      "start_seconds": 1.964,
+      "end_seconds": 3.984,
+      "id": "EQHihSi2H8U-ja-0001",
+      "sequence": 1
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 9.17,
+      "end_seconds": 11.19,
+      "id": "EQHihSi2H8U-ja-0002",
+      "sequence": 2
+    },
+    {
+      "text": "私の専門は明治時代です。伊藤博文とか大久保俊道とかそんな明治時代のせあ有名人って江戸時代のお様とかあ来の方と",
+      "start_seconds": 12.759,
+      "end_seconds": 23.8,
+      "id": "EQHihSi2H8U-ja-0003",
+      "sequence": 3
+    },
+    {
+      "text": "かそんな方々よりももっともずっと詳しくその人生とか経歴とかそれからま人柄なんかも分かったりして面白いなという風に思うんです。でもそんな風に経歴がよく",
+      "start_seconds": 23.8,
+      "end_seconds": 35.559,
+      "id": "EQHihSi2H8U-ja-0004",
+      "sequence": 4
+    },
+    {
+      "text": "分かる人ってほんの数百人ま多く行っても1000人ぐらいじゃないんでしょうか。",
+      "start_seconds": 35.559,
+      "end_seconds": 40.84,
+      "id": "EQHihSi2H8U-ja-0005",
+      "sequence": 5
+    },
+    {
+      "text": "また殺あごめんなさい。明治政府に[咳払い]殺長土4の出身者が多かったっていうのは学校の事業でもやると思うんですけれども、じゃあその",
+      "start_seconds": 40.84,
+      "end_seconds": 51.559,
+      "id": "EQHihSi2H8U-ja-0006",
+      "sequence": 6
+    },
+    {
+      "text": "パーセンテージは数値はって言ったらそんなものなかなか見たことある人いないと思うんです。これはですね、明治政府にどれだけの人がいてその中に一体どういう人たちがいたのかそういうことがね、",
+      "start_seconds": 51.559,
+      "end_seconds": 63.239,
+      "id": "EQHihSi2H8U-ja-0007",
+      "sequence": 7
+    },
+    {
+      "text": "あんまりよくわからないんです。だから数値に簡単に数値にすることはできたい。",
+      "start_seconds": 63.239,
+      "end_seconds": 68.2,
+      "id": "EQHihSi2H8U-ja-0008",
+      "sequence": 8
+    },
+    {
+      "text": "で、私はこの明治政府っていうのの全体像をそれを把握したいと思って、職員学この本を明治44年間分データベデータベース",
+      "start_seconds": 68.2,
+      "end_seconds": 79.0,
+      "id": "EQHihSi2H8U-ja-0009",
+      "sequence": 9
+    },
+    {
+      "text": "化してました。そのデータを使って作ったのがこの検索サイトで今これをで糸ひ踏で検索してみましょう",
+      "start_seconds": 79.0,
+      "end_seconds": 90.28,
+      "id": "EQHihSi2H8U-ja-0010",
+      "sequence": 10
+    },
+    {
+      "text": "。",
+      "start_seconds": 90.28,
+      "end_seconds": 92.04,
+      "id": "EQHihSi2H8U-ja-0011",
+      "sequence": 11
+    },
+    {
+      "text": "そうすると彼の経歴が出てきます。で、ここにずっとこう役職が付いてて、これもっとずっと下の方にもあるんですけれども、この役職のどれか1つ、今ここの1番下のところをクリックしてみましょう。",
+      "start_seconds": 92.04,
+      "end_seconds": 103.52,
+      "id": "EQHihSi2H8U-ja-0012",
+      "sequence": 12
+    },
+    {
+      "text": "そうするとこの役職についた経験者っていうのも全部一覧で出てくるんですね。他にですね、この原作サイト出身地とか学歴",
+      "start_seconds": 103.52,
+      "end_seconds": 114.64,
+      "id": "EQHihSi2H8U-ja-0013",
+      "sequence": 13
+    },
+    {
+      "text": "とかでも調べることができるんです。今これは熊本出身で東京帝国大学法学士を取得して、え、官僚になった人って出して",
+      "start_seconds": 114.64,
+      "end_seconds": 124.399,
+      "id": "EQHihSi2H8U-ja-0014",
+      "sequence": 14
+    },
+    {
+      "text": "います。こんな風に学歴とか出身地っていうのを、あ、検索サイトに載せるっていうのは結構大変なことなんです。",
+      "start_seconds": 124.399,
+      "end_seconds": 132.52,
+      "id": "EQHihSi2H8U-ja-0015",
+      "sequence": 15
+    },
+    {
+      "text": "あ、先ほどの職員録にですね、学歴というものが載っていません。なので、え、卒業者名簿というような資料を使って1万6000人分のデータベースを別に",
+      "start_seconds": 132.52,
+      "end_seconds": 143.92,
+      "id": "EQHihSi2H8U-ja-0016",
+      "sequence": 16
+    },
+    {
+      "text": "作りました。で、こっちの職員録で役人のデータベースを作る。双方を付け合わせて1人1人同じ人かどうかっていうのを調べ",
+      "start_seconds": 143.92,
+      "end_seconds": 153.56,
+      "id": "EQHihSi2H8U-ja-0017",
+      "sequence": 17
+    },
+    {
+      "text": "てこの結果を出しているんです。で、この結果をね、じゃあ本、元々の資料で本の状態で調べ出そうと思うと大変なことに",
+      "start_seconds": 153.56,
+      "end_seconds": 163.319,
+      "id": "EQHihSi2H8U-ja-0018",
+      "sequence": 18
+    },
+    {
+      "text": "なります。職員録にも卒業者名簿にも人命作品っていうのはないんです。なので、最初から最後までひっくり返してやるって言っても、ま、現実的にはちょっと無理な",
+      "start_seconds": 163.319,
+      "end_seconds": 174.8,
+      "id": "EQHihSi2H8U-ja-0019",
+      "sequence": 19
+    },
+    {
+      "text": "んじゃないでしょうか。私のデータベースには入っている役職は24万件以上、載ってる掲載人物が2万9000人以上、現在",
+      "start_seconds": 174.8,
+      "end_seconds": 185.319,
+      "id": "EQHihSi2H8U-ja-0020",
+      "sequence": 20
+    },
+    {
+      "text": "ではデータベース最大で、ま、さっきみたいに悪歴なんかも調べられる。まあ、なかなかあのいい資料なんじゃないですかという風に言われてるんですけれども、私",
+      "start_seconds": 185.319,
+      "end_seconds": 196.319,
+      "id": "EQHihSi2H8U-ja-0021",
+      "sequence": 21
+    },
+    {
+      "text": "これを作っている最中っていうのは完全な専業主婦でで子育ての最中にやってまし[咳払い]た。で、そんな私がどうやってこんな価値のあるものを作って世に出す",
+      "start_seconds": 196.319,
+      "end_seconds": 206.68,
+      "id": "EQHihSi2H8U-ja-0022",
+      "sequence": 22
+    },
+    {
+      "text": "ことができたのか、そんなお話です。",
+      "start_seconds": 206.68,
+      "end_seconds": 210.319,
+      "id": "EQHihSi2H8U-ja-0023",
+      "sequence": 23
+    },
+    {
+      "text": "先ほどの職員力中身はですね、こんな風に部署ごとの名簿になってるんですね。で、それっていうのはある調べる日付にその",
+      "start_seconds": 210.319,
+      "end_seconds": 220.92,
+      "id": "EQHihSi2H8U-ja-0024",
+      "sequence": 24
+    },
+    {
+      "text": "部署にどういう人たちがいるのかっていうことを調べてこうやって載せている。",
+      "start_seconds": 220.92,
+      "end_seconds": 225.56,
+      "id": "EQHihSi2H8U-ja-0025",
+      "sequence": 25
+    },
+    {
+      "text": "つまりですね、名簿っていうのはある日付で明治政府の断面を切り取ったってそういう風にも言えるわけです。これを44",
+      "start_seconds": 225.56,
+      "end_seconds": 234.64,
+      "id": "EQHihSi2H8U-ja-0026",
+      "sequence": 26
+    },
+    {
+      "text": "年間分全部集めてみたら個人の経歴っていうのも出てきた。そんな風に思ってください。で、その44年間分って大体",
+      "start_seconds": 234.64,
+      "end_seconds": 244.0,
+      "id": "EQHihSi2H8U-ja-0027",
+      "sequence": 27
+    },
+    {
+      "text": "こんな感じで、これをですね、私はですね、あの、手作業で[笑い]、え、キーボード叩いてexel入力しました。",
+      "start_seconds": 244.0,
+      "end_seconds": 253.28,
+      "id": "EQHihSi2H8U-ja-0028",
+      "sequence": 28
+    },
+    {
+      "text": "今ね、そんなことしなくったって、AIで読んでデータビュー入力したら十分同じもんできるんじゃないんですかって言われがちなんですけれども、そう簡単にはいか",
+      "start_seconds": 253.28,
+      "end_seconds": 262.16,
+      "id": "EQHihSi2H8U-ja-0029",
+      "sequence": 29
+    },
+    {
+      "text": "ないんです。同じ名前の人が全員同じ人じゃないじゃないですか。だから職員録を見て、あ、この役職とこの役職で、あ、",
+      "start_seconds": 262.16,
+      "end_seconds": 271.56,
+      "id": "EQHihSi2H8U-ja-0030",
+      "sequence": 30
+    },
+    {
+      "text": "この時に在職してたってことはこの人とこの人って別人だなっていうのって人間でないとうまく判断できないところも多くって、それで、え、AIで作っても同じもの",
+      "start_seconds": 271.56,
+      "end_seconds": 281.919,
+      "id": "EQHihSi2H8U-ja-0031",
+      "sequence": 31
+    },
+    {
+      "text": "にはなりません。",
+      "start_seconds": 281.919,
+      "end_seconds": 283.84,
+      "id": "EQHihSi2H8U-ja-0032",
+      "sequence": 32
+    },
+    {
+      "text": "また皆さんに使っていただけるっていうのは先ほどの検索サイトだけではありません。その裏で働いているマザーデータベースExcel版というのも",
+      "start_seconds": 283.84,
+      "end_seconds": 293.72,
+      "id": "EQHihSi2H8U-ja-0033",
+      "sequence": 33
+    },
+    {
+      "text": "オープンデータソースとして配信しております。",
+      "start_seconds": 293.72,
+      "end_seconds": 297.919,
+      "id": "EQHihSi2H8U-ja-0034",
+      "sequence": 34
+    },
+    {
+      "text": "え、オープンデータソースとして配信しておりまして、え、自由に誰でもあの無料で手に入れられて、そして、え、自分のその",
+      "start_seconds": 297.919,
+      "end_seconds": 307.919,
+      "id": "EQHihSi2H8U-ja-0035",
+      "sequence": 35
+    },
+    {
+      "text": "データも入れて自由に加工して自分のオリジナルにしてそして、あ、論文に使うこともできる。それで今までもね、研究者っていうのはそのデーベースっていうのを",
+      "start_seconds": 307.919,
+      "end_seconds": 318.72,
+      "id": "EQHihSi2H8U-ja-0036",
+      "sequence": 36
+    },
+    {
+      "text": "作ってたんですよ。で、作ってるんだけれども公開することはなかった。みんなそのあの公開してねお互い作ったらその方が便利じゃないかっていう風に言ってたん",
+      "start_seconds": 318.72,
+      "end_seconds": 329.919,
+      "id": "EQHihSi2H8U-ja-0037",
+      "sequence": 37
+    },
+    {
+      "text": "ですけれども実際にオープンデータソースして出したのは私が初めてのようです。で、そんな風な感じであの最近はその利用者",
+      "start_seconds": 329.919,
+      "end_seconds": 339.919,
+      "id": "EQHihSi2H8U-ja-0038",
+      "sequence": 38
+    },
+    {
+      "text": "の人もね、あ、便利じゃない。え、これは価値があるんじゃないという風に言ってくれるようなものになったんですけれども、皆さんがあるデータベースを作ればね、",
+      "start_seconds": 339.919,
+      "end_seconds": 349.88,
+      "id": "EQHihSi2H8U-ja-0039",
+      "sequence": 39
+    },
+    {
+      "text": "それは自動的に評価されるんじゃないんですかって。そう思いません?私はですね、このデータベース作ってみて価値があるっていうことと評価され",
+      "start_seconds": 349.88,
+      "end_seconds": 359.84,
+      "id": "EQHihSi2H8U-ja-0040",
+      "sequence": 40
+    },
+    {
+      "text": "るっていうことはイコールじゃないんだなっていうことを思い知りました。",
+      "start_seconds": 359.84,
+      "end_seconds": 364.8,
+      "id": "EQHihSi2H8U-ja-0041",
+      "sequence": 41
+    },
+    {
+      "text": "思い知った上でこのデータベースを作り切るってどんな感じであったか。え、1番最初、今から25年ぐらい前、私がこれからデータベース作りたいです。えっと、",
+      "start_seconds": 364.8,
+      "end_seconds": 376.44,
+      "id": "EQHihSi2H8U-ja-0042",
+      "sequence": 42
+    },
+    {
+      "text": "公開とか配信とか考えてますとかっていう風に言ってもですよ。え、オープンデータソースなんてものをなければ公開配信なんてものを見たことがない。もう周りの",
+      "start_seconds": 376.44,
+      "end_seconds": 386.56,
+      "id": "EQHihSi2H8U-ja-0043",
+      "sequence": 43
+    },
+    {
+      "text": "人間はね、何ですかそれはとそんなもの出されちゃたまんないなっていう感じでかなりあの煙たがられました。で、私作業してる間は、あ、専業主婦で、ま、子供も",
+      "start_seconds": 386.56,
+      "end_seconds": 398.039,
+      "id": "EQHihSi2H8U-ja-0044",
+      "sequence": 44
+    },
+    {
+      "text": "いる。どんな感じかって言うとですね、これ、あの、自分の机もなくってですね、あの、食卓なんですよ。で、食卓に資料パーっと並べてほんで、あ、ご飯だって",
+      "start_seconds": 398.039,
+      "end_seconds": 408.759,
+      "id": "EQHihSi2H8U-ja-0045",
+      "sequence": 45
+    },
+    {
+      "text": "言ってパーっとこう元にあの、しまってで、また元に戻してとかそんなような形のことをやってたんですね。で、ま、子供もいますから、夏休みももちろん冬休みも",
+      "start_seconds": 408.759,
+      "end_seconds": 420.4,
+      "id": "EQHihSi2H8U-ja-0046",
+      "sequence": 46
+    },
+    {
+      "text": "春休みも土日も作業時間でろっていうような、あ、年好きを何年も送っていました。",
+      "start_seconds": 420.4,
+      "end_seconds": 427.639,
+      "id": "EQHihSi2H8U-ja-0047",
+      "sequence": 47
+    },
+    {
+      "text": "で、え、あの、でもね、データベースっていうのは、ま、ちょっとずつでももうみ上がってくから別にいいんですよ。",
+      "start_seconds": 427.639,
+      "end_seconds": 435.879,
+      "id": "EQHihSi2H8U-ja-0048",
+      "sequence": 48
+    },
+    {
+      "text": "問題なのはこう公開とか配信、今の鹿児島大学みたいにうちで公開できますよっていうようなところが最後まで出てこなかったんです。あ、じゃあワンドライブとかに",
+      "start_seconds": 435.879,
+      "end_seconds": 447.759,
+      "id": "EQHihSi2H8U-ja-0049",
+      "sequence": 49
+    },
+    {
+      "text": "自分であげてね、じゃああの知り合いに撮ってみてくださいていう風に頼むんです。ですけれども、そう、その人たちが、え、だってあんたのファイルウイルスあるか",
+      "start_seconds": 447.759,
+      "end_seconds": 458.24,
+      "id": "EQHihSi2H8U-ja-0050",
+      "sequence": 50
+    },
+    {
+      "text": "もしれないでしょ。そんなの怖いからやだって言ってダウンロードしてもらえませんでした。だ結局のところ大学みたいにあの信頼される配信もないと利用もされ",
+      "start_seconds": 458.24,
+      "end_seconds": 469.96,
+      "id": "EQHihSi2H8U-ja-0051",
+      "sequence": 51
+    },
+    {
+      "text": "ないと。で、じゃあ大学の知り合いのところに行って相談に行きました。これもね、うまくいかないんです。うまくいかないどころか私は偉いひどい目に会いまし",
+      "start_seconds": 469.96,
+      "end_seconds": 481.319,
+      "id": "EQHihSi2H8U-ja-0052",
+      "sequence": 52
+    },
+    {
+      "text": "て精神的にも偉いやられちゃったんですよ。で、そこで思いました。ああ、もうこれダめだと。もう自分のデータベースは世に",
+      "start_seconds": 481.319,
+      "end_seconds": 490.84,
+      "id": "EQHihSi2H8U-ja-0053",
+      "sequence": 53
+    },
+    {
+      "text": "出ないわと。もう自分のパソコンの中のゴミにしかならないんだよと思いました。",
+      "start_seconds": 490.84,
+      "end_seconds": 496.479,
+      "id": "EQHihSi2H8U-ja-0054",
+      "sequence": 54
+    },
+    {
+      "text": "諦めました。作り始めて大体10年ぐらいでした。ああ、もうじゃゴミになるんだったらデータ入力なんかしたって無駄じゃんと思って、[咳払い]あ、やめたつって",
+      "start_seconds": 496.479,
+      "end_seconds": 505.36,
+      "id": "EQHihSi2H8U-ja-0055",
+      "sequence": 55
+    },
+    {
+      "text": "やめました。本当に5年間ぐらいずっとあのノタッチでした。でですね、そういう時に出てくるのがもう1人の自分ってやつ",
+      "start_seconds": 505.36,
+      "end_seconds": 516.36,
+      "id": "EQHihSi2H8U-ja-0056",
+      "sequence": 56
+    },
+    {
+      "text": "ですよ。そいつが言うんですよ。ああ、あなたはやめちゃうんですか?ああ、だけど最後まで作りきるっていうだけだっ",
+      "start_seconds": 516.36,
+      "end_seconds": 525.08,
+      "id": "EQHihSi2H8U-ja-0057",
+      "sequence": 57
+    },
+    {
+      "text": "たらできるんですよね。え、やらないんですか?ああ、世間が認めてくれない。",
+      "start_seconds": 525.08,
+      "end_seconds": 533.04,
+      "id": "EQHihSi2H8U-ja-0058",
+      "sequence": 58
+    },
+    {
+      "text": "ああ、世の中に出ない。へえ。それって拗ねてるんですよね。て、そう言うんですよ。",
+      "start_seconds": 533.04,
+      "end_seconds": 542.64,
+      "id": "EQHihSi2H8U-ja-0059",
+      "sequence": 59
+    },
+    {
+      "text": "で、もうすっごい嫌なこと言うやつだったんですけど、ちょっとややこしいですからね。あいつのことけいちゃんちゃんってあだ名つけましょう。で、対抗してるのは私ですよ。私だってね、負けちゃいません",
+      "start_seconds": 542.64,
+      "end_seconds": 554.2,
+      "id": "EQHihSi2H8U-ja-0060",
+      "sequence": 60
+    },
+    {
+      "text": "よ。え、だってゴミになるんですよ。ゴミになるようなもん何年かけて作ったって胸じゃないですかて言ってやりました。",
+      "start_seconds": 554.2,
+      "end_seconds": 563.68,
+      "id": "EQHihSi2H8U-ja-0061",
+      "sequence": 61
+    },
+    {
+      "text": "こんなでもくらないねんですけれども女くだらない事件言語をねさすがに私も5年もやってられませんでま大体ね最初の",
+      "start_seconds": 563.68,
+      "end_seconds": 573.399,
+      "id": "EQHihSi2H8U-ja-0062",
+      "sequence": 62
+    },
+    {
+      "text": "23年でけいちゃん勝ちました。私負けました。で負けて言いました。あの[咳払い]じゃあ分かりました。死ぬまでには作りますよ。死ぬまでには作るけど、今",
+      "start_seconds": 573.399,
+      "end_seconds": 584.959,
+      "id": "EQHihSi2H8U-ja-0063",
+      "sequence": 63
+    },
+    {
+      "text": "しばらくお休みするんですて言っ[笑い]てしばらく休んでおりました。で、結局、ま、やめちゃってから5年ぐらい経った頃にあのちょうどね、これは再開するのには",
+      "start_seconds": 584.959,
+      "end_seconds": 596.2,
+      "id": "EQHihSi2H8U-ja-0064",
+      "sequence": 64
+    },
+    {
+      "text": "ちょうどいいきっかけだなっていう、そういう出来事があったんです。で、その時に私は思いました。もうさっさと蹴りつけて",
+      "start_seconds": 596.2,
+      "end_seconds": 604.279,
+      "id": "EQHihSi2H8U-ja-0065",
+      "sequence": 65
+    },
+    {
+      "text": "楽になりたいやと。で、あの、再開しました。でも再開してから出来上がるまで約10年ぐらいかかりました。で、その10",
+      "start_seconds": 604.279,
+      "end_seconds": 615.0,
+      "id": "EQHihSi2H8U-ja-0066",
+      "sequence": 66
+    },
+    {
+      "text": "年間私はですね、ああ、もう出来上がったら出来上がったらこれはああ、残念でした。おしまいでしたね。ペって捨てようとそういう風に思ってたんですよ。で、だんだんに作り上がってきて、だんだん",
+      "start_seconds": 615.0,
+      "end_seconds": 626.76,
+      "id": "EQHihSi2H8U-ja-0067",
+      "sequence": 67
+    },
+    {
+      "text": "そろそろ視界が終わりが近くに行ってきたなと思ったらまたけいちゃんが出てきて言うんですよ。あ、[ため息]そろそろ出来上がりましたね。もうそろそろこんな",
+      "start_seconds": 626.76,
+      "end_seconds": 638.399,
+      "id": "EQHihSi2H8U-ja-0068",
+      "sequence": 68
+    },
+    {
+      "text": "になったら公開したいだろう。配信したいだの。相談に行けるところがそんなが他にもあなたありますよね。行かないんですか",
+      "start_seconds": 638.399,
+      "end_seconds": 648.36,
+      "id": "EQHihSi2H8U-ja-0069",
+      "sequence": 69
+    },
+    {
+      "text": "?いいのかな?後でぐジぐじ後悔するんじゃないのかなって。そういうんですね。",
+      "start_seconds": 648.36,
+      "end_seconds": 656.72,
+      "id": "EQHihSi2H8U-ja-0070",
+      "sequence": 70
+    },
+    {
+      "text": "もうそこでですね、私はですね、あのそん時にはもう争いませんでした。ああ、作用でございますよねって。そういう風に言って、あの、自分のところにいろんなあの",
+      "start_seconds": 656.72,
+      "end_seconds": 668.04,
+      "id": "EQHihSi2H8U-ja-0071",
+      "sequence": 71
+    },
+    {
+      "text": "集まりとかお誘いとかそういうような着てた案内にどんどん自分で出てってですね。",
+      "start_seconds": 668.04,
+      "end_seconds": 673.88,
+      "id": "EQHihSi2H8U-ja-0072",
+      "sequence": 72
+    },
+    {
+      "text": "で、ま、さっきのあのデータベースの資料を作ってこんなの作ってんです。配信したいんですっていう風に広めて回りました。そしたら今の鹿児島大学の先生にお会い",
+      "start_seconds": 673.88,
+      "end_seconds": 684.88,
+      "id": "EQHihSi2H8U-ja-0073",
+      "sequence": 73
+    },
+    {
+      "text": "していやうち出せますよっていうことであんと話が進んでま現在に至るですけど今私は思うんですよ。じゃあ私あの放棄",
+      "start_seconds": 684.88,
+      "end_seconds": 696.8,
+      "id": "EQHihSi2H8U-ja-0074",
+      "sequence": 74
+    },
+    {
+      "text": "しようとしてた5年間って何だったの?",
+      "start_seconds": 696.8,
+      "end_seconds": 701.12,
+      "id": "EQHihSi2H8U-ja-0075",
+      "sequence": 75
+    },
+    {
+      "text": "私はねあやめるやめるとか言っときながらものすごく未練たらだったんだなあと思う。そのデータベースというのが利用者に",
+      "start_seconds": 701.12,
+      "end_seconds": 712.24,
+      "id": "EQHihSi2H8U-ja-0076",
+      "sequence": 76
+    },
+    {
+      "text": "とって価値があるんだってことは分かってた。だけどそこは自分を騙して自分の目先の尊徳だけ考えてやめたろってしたんだと",
+      "start_seconds": 712.24,
+      "end_seconds": 723.68,
+      "id": "EQHihSi2H8U-ja-0077",
+      "sequence": 77
+    },
+    {
+      "text": "思うんです。だけど自分のことを騙しきれなかったんだ。",
+      "start_seconds": 723.68,
+      "end_seconds": 730.04,
+      "id": "EQHihSi2H8U-ja-0078",
+      "sequence": 78
+    },
+    {
+      "text": "でもさあ、皆さん本当に最後まで完全に騙しきろうと思ったら1番騙しきれない",
+      "start_seconds": 730.04,
+      "end_seconds": 738.519,
+      "id": "EQHihSi2H8U-ja-0079",
+      "sequence": 79
+    },
+    {
+      "text": "のって自分自身じゃないですか?そこはみんな同じじゃないんですか?",
+      "start_seconds": 738.519,
+      "end_seconds": 747.0,
+      "id": "EQHihSi2H8U-ja-0080",
+      "sequence": 80
+    },
+    {
+      "text": "ま、私は騙しきれなかった。だけどそれって別の言い方をしたらね、私は自分のデータベースの価値を最後まで信じきった",
+      "start_seconds": 747.0,
+      "end_seconds": 757.76,
+      "id": "EQHihSi2H8U-ja-0081",
+      "sequence": 81
+    },
+    {
+      "text": "んだ。そうと思う。だから未練たらなったんだと。他の誰もね、あ、公開配信するほどの価値があるとは思わなかった",
+      "start_seconds": 757.76,
+      "end_seconds": 769.639,
+      "id": "EQHihSi2H8U-ja-0082",
+      "sequence": 82
+    },
+    {
+      "text": "データベースでも自分だけはま、その価値を一応信じて最後まで作り切った。で、私はもしこの",
+      "start_seconds": 769.639,
+      "end_seconds": 779.72,
+      "id": "EQHihSi2H8U-ja-0083",
+      "sequence": 83
+    },
+    {
+      "text": "データベースがね、本当に世に出なくって、そしてあ、おしまいになってしまっても最後まで作り切った時点でああ、もうこれ",
+      "start_seconds": 779.72,
+      "end_seconds": 789.959,
+      "id": "EQHihSi2H8U-ja-0084",
+      "sequence": 84
+    },
+    {
+      "text": "はこれでいいやと諦められたと思うんです。もうその時にはけいちゃん出てこなかったと思います。",
+      "start_seconds": 789.959,
+      "end_seconds": 798.399,
+      "id": "EQHihSi2H8U-ja-0085",
+      "sequence": 85
+    },
+    {
+      "text": "価値あるものを作ったからと言ってそれが必ず評価されるとは限らないじゃないですか。だってどんなにいい製品作ったって",
+      "start_seconds": 798.399,
+      "end_seconds": 807.72,
+      "id": "EQHihSi2H8U-ja-0086",
+      "sequence": 86
+    },
+    {
+      "text": "売れない時は売れないじゃないですか。だから価値のあるものの中でいくつかはたまたま評価される場合もある。こんな",
+      "start_seconds": 807.72,
+      "end_seconds": 818.16,
+      "id": "EQHihSi2H8U-ja-0087",
+      "sequence": 87
+    },
+    {
+      "text": "感じじゃないんですか?私がもし評価されるものを最初から狙っていたらあのデータベースは絶対に再完成しませんでし",
+      "start_seconds": 818.16,
+      "end_seconds": 828.76,
+      "id": "EQHihSi2H8U-ja-0088",
+      "sequence": 88
+    },
+    {
+      "text": "た。",
+      "start_seconds": 828.76,
+      "end_seconds": 831.0,
+      "id": "EQHihSi2H8U-ja-0089",
+      "sequence": 89
+    },
+    {
+      "text": "周りは評価しなくとも、ま、自分がし判断した判断は信じて、ま、できるところまでは全部やってみる。今ようやく私はですね",
+      "start_seconds": 831.0,
+      "end_seconds": 841.8,
+      "id": "EQHihSi2H8U-ja-0090",
+      "sequence": 90
+    },
+    {
+      "text": "、そこにね、たどり着いたんだろうなっていう風に思うんです。でも皆さん皆さんに",
+      "start_seconds": 841.8,
+      "end_seconds": 850.079,
+      "id": "EQHihSi2H8U-ja-0091",
+      "sequence": 91
+    },
+    {
+      "text": "だって周りは評価しないけど違うって言うけれど自分にはこう思えるこう価値がある",
+      "start_seconds": 850.079,
+      "end_seconds": 859.279,
+      "id": "EQHihSi2H8U-ja-0092",
+      "sequence": 92
+    },
+    {
+      "text": "と思えるっていうものが皆さんの中にもあるんじゃないんですか?",
+      "start_seconds": 859.279,
+      "end_seconds": 865.56,
+      "id": "EQHihSi2H8U-ja-0093",
+      "sequence": 93
+    },
+    {
+      "text": "それどうしますか?",
+      "start_seconds": 865.56,
+      "end_seconds": 869.48,
+      "id": "EQHihSi2H8U-ja-0094",
+      "sequence": 94
+    },
+    {
+      "text": "私ね、あの今もデータ入力を続けてるんです。これは全く別のデータベースで、あのこれもあったら利用者の人便利かなって思うようなそんなデータなんですけど、",
+      "start_seconds": 869.48,
+      "end_seconds": 881.0,
+      "id": "EQHihSi2H8U-ja-0095",
+      "sequence": 95
+    },
+    {
+      "text": "言ってまたね、どうせね、最後まで作るんだろうなってそんな風に思いながら、あ、ちまちまと作業をやっております。",
+      "start_seconds": 881.0,
+      "end_seconds": 891.68,
+      "id": "EQHihSi2H8U-ja-0096",
+      "sequence": 96
+    },
+    {
+      "text": "ありがとうございました。[拍手]",
+      "start_seconds": 891.68,
+      "end_seconds": 895.4499999999999,
+      "id": "EQHihSi2H8U-ja-0097",
+      "sequence": 97
+    }
+  ],
+  "raw_captions": [
+    {
+      "text": "[音楽]",
+      "start_seconds": 1.964,
+      "end_seconds": 3.984
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 9.17,
+      "end_seconds": 11.19
+    },
+    {
+      "text": "私の専門は明治時代です。伊藤博文とか",
+      "start_seconds": 12.759,
+      "end_seconds": 19.52
+    },
+    {
+      "text": "大久保俊道とかそんな明治時代のせあ",
+      "start_seconds": 16.359,
+      "end_seconds": 23.8
+    },
+    {
+      "text": "有名人って江戸時代のお様とかあ来の方と",
+      "start_seconds": 19.52,
+      "end_seconds": 27.24
+    },
+    {
+      "text": "かそんな方々よりももっともずっと詳しく",
+      "start_seconds": 23.8,
+      "end_seconds": 30.359
+    },
+    {
+      "text": "その人生とか経歴とかそれからま人柄",
+      "start_seconds": 27.24,
+      "end_seconds": 32.64
+    },
+    {
+      "text": "なんかも分かったりして面白いなという風",
+      "start_seconds": 30.359,
+      "end_seconds": 35.559000000000005
+    },
+    {
+      "text": "に思うんです。でもそんな風に経歴がよく",
+      "start_seconds": 32.64,
+      "end_seconds": 38.84
+    },
+    {
+      "text": "分かる人ってほんの数百人ま多く行っても",
+      "start_seconds": 35.559,
+      "end_seconds": 40.839999999999996
+    },
+    {
+      "text": "1000人ぐらいじゃないんでしょうか。",
+      "start_seconds": 38.84,
+      "end_seconds": 44.540000000000006
+    },
+    {
+      "text": "また殺あごめんなさい。明治政府に",
+      "start_seconds": 40.84,
+      "end_seconds": 47.440000000000005
+    },
+    {
+      "text": "[咳払い]殺長土4の出身者が多かっ",
+      "start_seconds": 44.54,
+      "end_seconds": 49.76
+    },
+    {
+      "text": "たっていうのは学校の事業でもやると思う",
+      "start_seconds": 47.44,
+      "end_seconds": 51.559
+    },
+    {
+      "text": "んですけれども、じゃあその",
+      "start_seconds": 49.76,
+      "end_seconds": 54.12
+    },
+    {
+      "text": "パーセンテージは数値はって言ったら",
+      "start_seconds": 51.559,
+      "end_seconds": 55.919999999999995
+    },
+    {
+      "text": "そんなものなかなか見たことある人いない",
+      "start_seconds": 54.12,
+      "end_seconds": 58.68
+    },
+    {
+      "text": "と思うんです。これはですね、明治政府に",
+      "start_seconds": 55.92,
+      "end_seconds": 61.239000000000004
+    },
+    {
+      "text": "どれだけの人がいてその中に一体どういう",
+      "start_seconds": 58.68,
+      "end_seconds": 63.239
+    },
+    {
+      "text": "人たちがいたのかそういうことがね、",
+      "start_seconds": 61.239,
+      "end_seconds": 65.479
+    },
+    {
+      "text": "あんまりよくわからないんです。だから",
+      "start_seconds": 63.239,
+      "end_seconds": 68.2
+    },
+    {
+      "text": "数値に簡単に数値にすることはできたい。",
+      "start_seconds": 65.479,
+      "end_seconds": 71.24
+    },
+    {
+      "text": "で、私はこの明治政府っていうのの全体像",
+      "start_seconds": 68.2,
+      "end_seconds": 75.36
+    },
+    {
+      "text": "をそれを把握したいと思って、職員学この",
+      "start_seconds": 71.24,
+      "end_seconds": 79.0
+    },
+    {
+      "text": "本を明治44年間分データベデータベース",
+      "start_seconds": 75.36,
+      "end_seconds": 82.159
+    },
+    {
+      "text": "化してました。そのデータを使って作った",
+      "start_seconds": 79.0,
+      "end_seconds": 86.52
+    },
+    {
+      "text": "のがこの検索サイト",
+      "start_seconds": 82.159,
+      "end_seconds": 90.28
+    },
+    {
+      "text": "で今これをで糸ひ踏で検索してみましょう",
+      "start_seconds": 86.52,
+      "end_seconds": 92.03999999999999
+    },
+    {
+      "text": "。",
+      "start_seconds": 90.28,
+      "end_seconds": 94.43900000000001
+    },
+    {
+      "text": "そうすると彼の経歴が出てきます。で、",
+      "start_seconds": 92.04,
+      "end_seconds": 96.52000000000001
+    },
+    {
+      "text": "ここにずっとこう役職が付いてて、これ",
+      "start_seconds": 94.439,
+      "end_seconds": 98.24
+    },
+    {
+      "text": "もっとずっと下の方にもあるんですけれど",
+      "start_seconds": 96.52,
+      "end_seconds": 101.24
+    },
+    {
+      "text": "も、この役職のどれか1つ、今ここの1番",
+      "start_seconds": 98.24,
+      "end_seconds": 103.52
+    },
+    {
+      "text": "下のところをクリックしてみましょう。",
+      "start_seconds": 101.24,
+      "end_seconds": 106.88
+    },
+    {
+      "text": "そうするとこの役職についた経験者って",
+      "start_seconds": 103.52,
+      "end_seconds": 110.03999999999999
+    },
+    {
+      "text": "いうのも全部一覧で出てくるんですね。他",
+      "start_seconds": 106.88,
+      "end_seconds": 114.64
+    },
+    {
+      "text": "にですね、この原作サイト出身地とか学歴",
+      "start_seconds": 110.04,
+      "end_seconds": 117.119
+    },
+    {
+      "text": "とかでも調べることができるんです。今",
+      "start_seconds": 114.64,
+      "end_seconds": 121.28
+    },
+    {
+      "text": "これは熊本出身で東京帝国大学法学士を",
+      "start_seconds": 117.119,
+      "end_seconds": 124.399
+    },
+    {
+      "text": "取得して、え、官僚になった人って出して",
+      "start_seconds": 121.28,
+      "end_seconds": 128.0
+    },
+    {
+      "text": "います。こんな風に学歴とか出身地って",
+      "start_seconds": 124.399,
+      "end_seconds": 130.08
+    },
+    {
+      "text": "いうのを、あ、検索サイトに載せ",
+      "start_seconds": 128.0,
+      "end_seconds": 132.52
+    },
+    {
+      "text": "るっていうのは結構大変なことなんです。",
+      "start_seconds": 130.08,
+      "end_seconds": 135.16000000000003
+    },
+    {
+      "text": "あ、先ほどの職員録にですね、学歴という",
+      "start_seconds": 132.52,
+      "end_seconds": 138.48000000000002
+    },
+    {
+      "text": "ものが載っていません。なので、え、卒業",
+      "start_seconds": 135.16,
+      "end_seconds": 141.44
+    },
+    {
+      "text": "者名簿というような資料を使って",
+      "start_seconds": 138.48,
+      "end_seconds": 143.92
+    },
+    {
+      "text": "1万6000人分のデータベースを別に",
+      "start_seconds": 141.44,
+      "end_seconds": 147.48
+    },
+    {
+      "text": "作りました。で、こっちの職員録で役人の",
+      "start_seconds": 143.92,
+      "end_seconds": 150.55999999999997
+    },
+    {
+      "text": "データベースを作る。双方を付け合わせて",
+      "start_seconds": 147.48,
+      "end_seconds": 153.56
+    },
+    {
+      "text": "1人1人同じ人かどうかっていうのを調べ",
+      "start_seconds": 150.56,
+      "end_seconds": 156.12
+    },
+    {
+      "text": "てこの結果を出しているんです。で、この",
+      "start_seconds": 153.56,
+      "end_seconds": 160.68
+    },
+    {
+      "text": "結果をね、じゃあ本、元々の資料で本の",
+      "start_seconds": 156.12,
+      "end_seconds": 163.31900000000002
+    },
+    {
+      "text": "状態で調べ出そうと思うと大変なことに",
+      "start_seconds": 160.68,
+      "end_seconds": 167.8
+    },
+    {
+      "text": "なります。職員録にも卒業者名簿にも人命",
+      "start_seconds": 163.319,
+      "end_seconds": 170.2
+    },
+    {
+      "text": "作品っていうのはないんです。なので、",
+      "start_seconds": 167.8,
+      "end_seconds": 172.68
+    },
+    {
+      "text": "最初から最後までひっくり返してやるって",
+      "start_seconds": 170.2,
+      "end_seconds": 174.79999999999998
+    },
+    {
+      "text": "言っても、ま、現実的にはちょっと無理な",
+      "start_seconds": 172.68,
+      "end_seconds": 177.8
+    },
+    {
+      "text": "んじゃないでしょうか。私のデータベース",
+      "start_seconds": 174.8,
+      "end_seconds": 181.519
+    },
+    {
+      "text": "には入っている役職は24万件以上、載っ",
+      "start_seconds": 177.8,
+      "end_seconds": 185.31900000000002
+    },
+    {
+      "text": "てる掲載人物が2万9000人以上、現在",
+      "start_seconds": 181.519,
+      "end_seconds": 187.76
+    },
+    {
+      "text": "ではデータベース最大で、ま、さっき",
+      "start_seconds": 185.319,
+      "end_seconds": 190.44
+    },
+    {
+      "text": "みたいに悪歴なんかも調べられる。まあ、",
+      "start_seconds": 187.76,
+      "end_seconds": 193.56
+    },
+    {
+      "text": "なかなかあのいい資料なんじゃないですか",
+      "start_seconds": 190.44,
+      "end_seconds": 196.319
+    },
+    {
+      "text": "という風に言われてるんですけれども、私",
+      "start_seconds": 193.56,
+      "end_seconds": 198.799
+    },
+    {
+      "text": "これを作っている最中っていうのは完全な",
+      "start_seconds": 196.319,
+      "end_seconds": 201.742
+    },
+    {
+      "text": "専業主婦でで子育ての最中にやってまし",
+      "start_seconds": 198.799,
+      "end_seconds": 204.64000000000001
+    },
+    {
+      "text": "[咳払い]た。で、そんな私がどうやって",
+      "start_seconds": 201.742,
+      "end_seconds": 206.67999999999998
+    },
+    {
+      "text": "こんな価値のあるものを作って世に出す",
+      "start_seconds": 204.64,
+      "end_seconds": 210.319
+    },
+    {
+      "text": "ことができたのか、そんなお話です。",
+      "start_seconds": 206.68,
+      "end_seconds": 214.08
+    },
+    {
+      "text": "先ほどの職員力中身はですね、こんな風に",
+      "start_seconds": 210.319,
+      "end_seconds": 217.07999999999998
+    },
+    {
+      "text": "部署ごとの名簿になってるんですね。で、",
+      "start_seconds": 214.08,
+      "end_seconds": 220.92000000000002
+    },
+    {
+      "text": "それっていうのはある調べる日付にその",
+      "start_seconds": 217.08,
+      "end_seconds": 223.20000000000002
+    },
+    {
+      "text": "部署にどういう人たちがいるのかっていう",
+      "start_seconds": 220.92,
+      "end_seconds": 225.55999999999997
+    },
+    {
+      "text": "ことを調べてこうやって載せている。",
+      "start_seconds": 223.2,
+      "end_seconds": 228.319
+    },
+    {
+      "text": "つまりですね、名簿っていうのはある日付",
+      "start_seconds": 225.56,
+      "end_seconds": 232.04
+    },
+    {
+      "text": "で明治政府の断面を切り取ったってそう",
+      "start_seconds": 228.319,
+      "end_seconds": 234.64
+    },
+    {
+      "text": "いう風にも言えるわけです。これを44",
+      "start_seconds": 232.04,
+      "end_seconds": 238.76
+    },
+    {
+      "text": "年間分全部集めてみたら個人の経歴って",
+      "start_seconds": 234.64,
+      "end_seconds": 240.92
+    },
+    {
+      "text": "いうのも出てきた。そんな風に思って",
+      "start_seconds": 238.76,
+      "end_seconds": 244.0
+    },
+    {
+      "text": "ください。で、その44年間分って大体",
+      "start_seconds": 240.92,
+      "end_seconds": 246.76
+    },
+    {
+      "text": "こんな感じで、これをですね、私はですね",
+      "start_seconds": 244.0,
+      "end_seconds": 250.319
+    },
+    {
+      "text": "、あの、手作業で[笑い]、え、",
+      "start_seconds": 246.76,
+      "end_seconds": 253.28
+    },
+    {
+      "text": "キーボード叩いてexel入力しました。",
+      "start_seconds": 250.319,
+      "end_seconds": 255.76
+    },
+    {
+      "text": "今ね、そんなことしなくったって、AIで",
+      "start_seconds": 253.28,
+      "end_seconds": 258.079
+    },
+    {
+      "text": "読んでデータビュー入力したら十分同じ",
+      "start_seconds": 255.76,
+      "end_seconds": 259.919
+    },
+    {
+      "text": "もんできるんじゃないんですかって言われ",
+      "start_seconds": 258.079,
+      "end_seconds": 262.16
+    },
+    {
+      "text": "がちなんですけれども、そう簡単にはいか",
+      "start_seconds": 259.919,
+      "end_seconds": 266.0
+    },
+    {
+      "text": "ないんです。同じ名前の人が全員同じ人",
+      "start_seconds": 262.16,
+      "end_seconds": 268.72
+    },
+    {
+      "text": "じゃないじゃないですか。だから職員録を",
+      "start_seconds": 266.0,
+      "end_seconds": 271.56
+    },
+    {
+      "text": "見て、あ、この役職とこの役職で、あ、",
+      "start_seconds": 268.72,
+      "end_seconds": 274.28000000000003
+    },
+    {
+      "text": "この時に在職してたってことはこの人と",
+      "start_seconds": 271.56,
+      "end_seconds": 277.039
+    },
+    {
+      "text": "この人って別人だなっていうのって人間で",
+      "start_seconds": 274.28,
+      "end_seconds": 279.11999999999995
+    },
+    {
+      "text": "ないとうまく判断できないところも多くっ",
+      "start_seconds": 277.039,
+      "end_seconds": 281.919
+    },
+    {
+      "text": "て、それで、え、AIで作っても同じもの",
+      "start_seconds": 279.12,
+      "end_seconds": 283.84000000000003
+    },
+    {
+      "text": "にはなりません。",
+      "start_seconds": 281.919,
+      "end_seconds": 285.44
+    },
+    {
+      "text": "また皆さんに使っていただけ",
+      "start_seconds": 283.84,
+      "end_seconds": 287.71999999999997
+    },
+    {
+      "text": "るっていうのは先ほどの検索サイトだけで",
+      "start_seconds": 285.44,
+      "end_seconds": 290.919
+    },
+    {
+      "text": "はありません。その裏で働いているマザー",
+      "start_seconds": 287.72,
+      "end_seconds": 293.72
+    },
+    {
+      "text": "データベースExcel版というのも",
+      "start_seconds": 290.919,
+      "end_seconds": 296.19899999999996
+    },
+    {
+      "text": "オープンデータソースとして配信しており",
+      "start_seconds": 293.72,
+      "end_seconds": 297.91900000000004
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 296.199,
+      "end_seconds": 300.28000000000003
+    },
+    {
+      "text": "え、オープンデータソースとして配信して",
+      "start_seconds": 297.919,
+      "end_seconds": 304.68
+    },
+    {
+      "text": "おりまして、え、自由に誰でもあの無料で",
+      "start_seconds": 300.28,
+      "end_seconds": 307.919
+    },
+    {
+      "text": "手に入れられて、そして、え、自分のその",
+      "start_seconds": 304.68,
+      "end_seconds": 311.039
+    },
+    {
+      "text": "データも入れて自由に加工して自分の",
+      "start_seconds": 307.919,
+      "end_seconds": 313.79999999999995
+    },
+    {
+      "text": "オリジナルにしてそして、あ、論文に使う",
+      "start_seconds": 311.039,
+      "end_seconds": 316.84
+    },
+    {
+      "text": "こともできる。それで今までもね、研究者",
+      "start_seconds": 313.8,
+      "end_seconds": 318.72
+    },
+    {
+      "text": "っていうのはそのデーベースっていうのを",
+      "start_seconds": 316.84,
+      "end_seconds": 320.75899999999996
+    },
+    {
+      "text": "作ってたんですよ。で、作ってるんだ",
+      "start_seconds": 318.72,
+      "end_seconds": 323.639
+    },
+    {
+      "text": "けれども公開することはなかった。みんな",
+      "start_seconds": 320.759,
+      "end_seconds": 327.6
+    },
+    {
+      "text": "そのあの公開してねお互い作ったらその方",
+      "start_seconds": 323.639,
+      "end_seconds": 329.919
+    },
+    {
+      "text": "が便利じゃないかっていう風に言ってたん",
+      "start_seconds": 327.6,
+      "end_seconds": 333.08000000000004
+    },
+    {
+      "text": "ですけれども実際にオープンデータソース",
+      "start_seconds": 329.919,
+      "end_seconds": 336.96
+    },
+    {
+      "text": "して出したのは私が初めてのようです。で",
+      "start_seconds": 333.08,
+      "end_seconds": 339.919
+    },
+    {
+      "text": "、そんな風な感じであの最近はその利用者",
+      "start_seconds": 336.96,
+      "end_seconds": 342.28
+    },
+    {
+      "text": "の人もね、あ、便利じゃない。え、これは",
+      "start_seconds": 339.919,
+      "end_seconds": 343.84
+    },
+    {
+      "text": "価値があるんじゃないという風に言って",
+      "start_seconds": 342.28,
+      "end_seconds": 345.75899999999996
+    },
+    {
+      "text": "くれるようなものになったんですけれども",
+      "start_seconds": 343.84,
+      "end_seconds": 349.88
+    },
+    {
+      "text": "、皆さんがあるデータベースを作ればね、",
+      "start_seconds": 345.759,
+      "end_seconds": 351.96000000000004
+    },
+    {
+      "text": "それは自動的に評価されるんじゃないん",
+      "start_seconds": 349.88,
+      "end_seconds": 355.199
+    },
+    {
+      "text": "ですかって。そう思いません?私はですね",
+      "start_seconds": 351.96,
+      "end_seconds": 357.84
+    },
+    {
+      "text": "、このデータベース作ってみて価値があ",
+      "start_seconds": 355.199,
+      "end_seconds": 359.84000000000003
+    },
+    {
+      "text": "るっていうことと評価され",
+      "start_seconds": 357.84,
+      "end_seconds": 362.08
+    },
+    {
+      "text": "るっていうことはイコールじゃないんだ",
+      "start_seconds": 359.84,
+      "end_seconds": 364.79999999999995
+    },
+    {
+      "text": "なっていうことを思い知りました。",
+      "start_seconds": 362.08,
+      "end_seconds": 367.35999999999996
+    },
+    {
+      "text": "思い知った上でこのデータベースを作り切",
+      "start_seconds": 364.8,
+      "end_seconds": 371.0
+    },
+    {
+      "text": "るってどんな感じであったか。え、1番",
+      "start_seconds": 367.36,
+      "end_seconds": 373.759
+    },
+    {
+      "text": "最初、今から25年ぐらい前、私がこれ",
+      "start_seconds": 371.0,
+      "end_seconds": 376.44
+    },
+    {
+      "text": "からデータベース作りたいです。えっと、",
+      "start_seconds": 373.759,
+      "end_seconds": 379.44
+    },
+    {
+      "text": "公開とか配信とか考えてますとかっていう",
+      "start_seconds": 376.44,
+      "end_seconds": 381.88
+    },
+    {
+      "text": "風に言ってもですよ。え、オープンデータ",
+      "start_seconds": 379.44,
+      "end_seconds": 384.199
+    },
+    {
+      "text": "ソースなんてものをなければ公開配信",
+      "start_seconds": 381.88,
+      "end_seconds": 386.56
+    },
+    {
+      "text": "なんてものを見たことがない。もう周りの",
+      "start_seconds": 384.199,
+      "end_seconds": 388.96000000000004
+    },
+    {
+      "text": "人間はね、何ですかそれはとそんなもの",
+      "start_seconds": 386.56,
+      "end_seconds": 391.36
+    },
+    {
+      "text": "出されちゃたまんないなっていう感じで",
+      "start_seconds": 388.96,
+      "end_seconds": 395.19899999999996
+    },
+    {
+      "text": "かなりあの煙たがられました。で、私作業",
+      "start_seconds": 391.36,
+      "end_seconds": 398.039
+    },
+    {
+      "text": "してる間は、あ、専業主婦で、ま、子供も",
+      "start_seconds": 395.199,
+      "end_seconds": 400.08000000000004
+    },
+    {
+      "text": "いる。どんな感じかって言うとですね、",
+      "start_seconds": 398.039,
+      "end_seconds": 403.0
+    },
+    {
+      "text": "これ、あの、自分の机もなくってですね、",
+      "start_seconds": 400.08,
+      "end_seconds": 405.919
+    },
+    {
+      "text": "あの、食卓なんですよ。で、食卓に資料",
+      "start_seconds": 403.0,
+      "end_seconds": 408.759
+    },
+    {
+      "text": "パーっと並べてほんで、あ、ご飯だって",
+      "start_seconds": 405.919,
+      "end_seconds": 411.639
+    },
+    {
+      "text": "言ってパーっとこう元にあの、しまってで",
+      "start_seconds": 408.759,
+      "end_seconds": 414.0
+    },
+    {
+      "text": "、また元に戻してとかそんなような形の",
+      "start_seconds": 411.639,
+      "end_seconds": 416.759
+    },
+    {
+      "text": "ことをやってたんですね。で、ま、子供も",
+      "start_seconds": 414.0,
+      "end_seconds": 420.4
+    },
+    {
+      "text": "いますから、夏休みももちろん冬休みも",
+      "start_seconds": 416.759,
+      "end_seconds": 424.08000000000004
+    },
+    {
+      "text": "春休みも土日も作業時間でろっていうよう",
+      "start_seconds": 420.4,
+      "end_seconds": 427.63899999999995
+    },
+    {
+      "text": "な、あ、年好きを何年も送っていました。",
+      "start_seconds": 424.08,
+      "end_seconds": 431.479
+    },
+    {
+      "text": "で、え、あの、でもね、データベースって",
+      "start_seconds": 427.639,
+      "end_seconds": 432.759
+    },
+    {
+      "text": "いうのは、ま、ちょっとずつでも",
+      "start_seconds": 431.479,
+      "end_seconds": 435.87899999999996
+    },
+    {
+      "text": "もうみ上がってくから別にいいんですよ。",
+      "start_seconds": 432.759,
+      "end_seconds": 439.56
+    },
+    {
+      "text": "問題なのはこう公開とか配信、今の鹿児島",
+      "start_seconds": 435.879,
+      "end_seconds": 442.59900000000005
+    },
+    {
+      "text": "大学みたいにうちで公開できますよって",
+      "start_seconds": 439.56,
+      "end_seconds": 444.919
+    },
+    {
+      "text": "いうようなところが最後まで出てこなかっ",
+      "start_seconds": 442.599,
+      "end_seconds": 447.759
+    },
+    {
+      "text": "たんです。あ、じゃあワンドライブとかに",
+      "start_seconds": 444.919,
+      "end_seconds": 450.71999999999997
+    },
+    {
+      "text": "自分であげてね、じゃああの知り合いに",
+      "start_seconds": 447.759,
+      "end_seconds": 452.599
+    },
+    {
+      "text": "撮ってみてくださいていう風に頼むんです",
+      "start_seconds": 450.72,
+      "end_seconds": 455.879
+    },
+    {
+      "text": "。ですけれども、そう、その人たちが、え",
+      "start_seconds": 452.599,
+      "end_seconds": 458.24
+    },
+    {
+      "text": "、だってあんたのファイルウイルスあるか",
+      "start_seconds": 455.879,
+      "end_seconds": 460.72
+    },
+    {
+      "text": "もしれないでしょ。そんなの怖いからや",
+      "start_seconds": 458.24,
+      "end_seconds": 462.879
+    },
+    {
+      "text": "だって言ってダウンロードしてもらえませ",
+      "start_seconds": 460.72,
+      "end_seconds": 466.36
+    },
+    {
+      "text": "んでした。だ結局のところ大学みたいに",
+      "start_seconds": 462.879,
+      "end_seconds": 469.96000000000004
+    },
+    {
+      "text": "あの信頼される配信もないと利用もされ",
+      "start_seconds": 466.36,
+      "end_seconds": 473.159
+    },
+    {
+      "text": "ないと。で、じゃあ大学の知り合いの",
+      "start_seconds": 469.96,
+      "end_seconds": 475.79999999999995
+    },
+    {
+      "text": "ところに行って相談に行きました。これも",
+      "start_seconds": 473.159,
+      "end_seconds": 478.0
+    },
+    {
+      "text": "ね、うまくいかないんです。うまくいか",
+      "start_seconds": 475.8,
+      "end_seconds": 481.319
+    },
+    {
+      "text": "ないどころか私は偉いひどい目に会いまし",
+      "start_seconds": 478.0,
+      "end_seconds": 484.28
+    },
+    {
+      "text": "て精神的にも偉いやられちゃったんですよ",
+      "start_seconds": 481.319,
+      "end_seconds": 487.91900000000004
+    },
+    {
+      "text": "。で、そこで思いました。ああ、もうこれ",
+      "start_seconds": 484.28,
+      "end_seconds": 490.84
+    },
+    {
+      "text": "ダめだと。もう自分のデータベースは世に",
+      "start_seconds": 487.919,
+      "end_seconds": 494.08
+    },
+    {
+      "text": "出ないわと。もう自分のパソコンの中の",
+      "start_seconds": 490.84,
+      "end_seconds": 496.479
+    },
+    {
+      "text": "ゴミにしかならないんだよと思いました。",
+      "start_seconds": 494.08,
+      "end_seconds": 499.52
+    },
+    {
+      "text": "諦めました。作り始めて大体10年ぐらい",
+      "start_seconds": 496.479,
+      "end_seconds": 501.75899999999996
+    },
+    {
+      "text": "でした。ああ、もうじゃゴミになるんだっ",
+      "start_seconds": 499.52,
+      "end_seconds": 503.79999999999995
+    },
+    {
+      "text": "たらデータ入力なんかしたって無駄じゃん",
+      "start_seconds": 501.759,
+      "end_seconds": 505.36
+    },
+    {
+      "text": "と思って、[咳払い]あ、やめたつって",
+      "start_seconds": 503.8,
+      "end_seconds": 509.24
+    },
+    {
+      "text": "やめました。本当に5年間ぐらいずっと",
+      "start_seconds": 505.36,
+      "end_seconds": 513.039
+    },
+    {
+      "text": "あのノタッチでした。でですね、そういう",
+      "start_seconds": 509.24,
+      "end_seconds": 516.36
+    },
+    {
+      "text": "時に出てくるのがもう1人の自分ってやつ",
+      "start_seconds": 513.039,
+      "end_seconds": 519.399
+    },
+    {
+      "text": "ですよ。そいつが言うんですよ。ああ、",
+      "start_seconds": 516.36,
+      "end_seconds": 522.44
+    },
+    {
+      "text": "あなたはやめちゃうんですか?ああ、だ",
+      "start_seconds": 519.399,
+      "end_seconds": 525.08
+    },
+    {
+      "text": "けど最後まで作りきるっていうだけだっ",
+      "start_seconds": 522.44,
+      "end_seconds": 528.6800000000001
+    },
+    {
+      "text": "たらできるんですよね。え、やらないん",
+      "start_seconds": 525.08,
+      "end_seconds": 533.0400000000001
+    },
+    {
+      "text": "ですか?ああ、世間が認めてくれない。",
+      "start_seconds": 528.68,
+      "end_seconds": 537.3199999999999
+    },
+    {
+      "text": "ああ、世の中に出ない。へえ。それって",
+      "start_seconds": 533.04,
+      "end_seconds": 540.8
+    },
+    {
+      "text": "拗ねてるんですよね。て、そう言うんです",
+      "start_seconds": 537.32,
+      "end_seconds": 542.6400000000001
+    },
+    {
+      "text": "よ。",
+      "start_seconds": 540.8,
+      "end_seconds": 545.1999999999999
+    },
+    {
+      "text": "で、もうすっごい嫌なこと言うやつだった",
+      "start_seconds": 542.64,
+      "end_seconds": 547.04
+    },
+    {
+      "text": "んですけど、ちょっとややこしいですから",
+      "start_seconds": 545.2,
+      "end_seconds": 548.88
+    },
+    {
+      "text": "ね。あいつのことけいちゃんちゃんって",
+      "start_seconds": 547.04,
+      "end_seconds": 551.48
+    },
+    {
+      "text": "あだ名つけましょう。で、対抗してるのは",
+      "start_seconds": 548.88,
+      "end_seconds": 554.2
+    },
+    {
+      "text": "私ですよ。私だってね、負けちゃいません",
+      "start_seconds": 551.48,
+      "end_seconds": 557.9200000000001
+    },
+    {
+      "text": "よ。え、だってゴミになるんですよ。ゴミ",
+      "start_seconds": 554.2,
+      "end_seconds": 560.24
+    },
+    {
+      "text": "になるようなもん何年かけて作ったって胸",
+      "start_seconds": 557.92,
+      "end_seconds": 563.68
+    },
+    {
+      "text": "じゃないですかて言ってやりました。",
+      "start_seconds": 560.24,
+      "end_seconds": 567.2
+    },
+    {
+      "text": "こんなでもくらないねんですけれども",
+      "start_seconds": 563.68,
+      "end_seconds": 570.04
+    },
+    {
+      "text": "女くだらない事件言語をねさすがに私も5",
+      "start_seconds": 567.2,
+      "end_seconds": 573.399
+    },
+    {
+      "text": "年もやってられませんでま大体ね最初の",
+      "start_seconds": 570.04,
+      "end_seconds": 577.24
+    },
+    {
+      "text": "23年でけいちゃん勝ちました。私負け",
+      "start_seconds": 573.399,
+      "end_seconds": 579.681
+    },
+    {
+      "text": "ました。で負けて言いました。あの",
+      "start_seconds": 577.24,
+      "end_seconds": 580.399
+    },
+    {
+      "text": "[咳払い]",
+      "start_seconds": 579.681,
+      "end_seconds": 582.44
+    },
+    {
+      "text": "じゃあ分かりました。死ぬまでには作り",
+      "start_seconds": 580.399,
+      "end_seconds": 584.959
+    },
+    {
+      "text": "ますよ。死ぬまでには作るけど、今",
+      "start_seconds": 582.44,
+      "end_seconds": 586.9200000000001
+    },
+    {
+      "text": "しばらくお休みするんですて言っ[笑い]",
+      "start_seconds": 584.959,
+      "end_seconds": 590.56
+    },
+    {
+      "text": "てしばらく休んでおりました。で、結局、",
+      "start_seconds": 586.92,
+      "end_seconds": 592.68
+    },
+    {
+      "text": "ま、やめちゃってから5年ぐらい経った頃",
+      "start_seconds": 590.56,
+      "end_seconds": 596.1999999999999
+    },
+    {
+      "text": "にあのちょうどね、これは再開するのには",
+      "start_seconds": 592.68,
+      "end_seconds": 598.16
+    },
+    {
+      "text": "ちょうどいいきっかけだなっていう、そう",
+      "start_seconds": 596.2,
+      "end_seconds": 600.6400000000001
+    },
+    {
+      "text": "いう出来事があったんです。で、その時に",
+      "start_seconds": 598.16,
+      "end_seconds": 604.279
+    },
+    {
+      "text": "私は思いました。もうさっさと蹴りつけて",
+      "start_seconds": 600.64,
+      "end_seconds": 608.399
+    },
+    {
+      "text": "楽になりたいやと。で、あの、再開しまし",
+      "start_seconds": 604.279,
+      "end_seconds": 612.56
+    },
+    {
+      "text": "た。でも再開してから出来上がるまで約",
+      "start_seconds": 608.399,
+      "end_seconds": 615.0
+    },
+    {
+      "text": "10年ぐらいかかりました。で、その10",
+      "start_seconds": 612.56,
+      "end_seconds": 617.3599999999999
+    },
+    {
+      "text": "年間私はですね、ああ、もう出来上がっ",
+      "start_seconds": 615.0,
+      "end_seconds": 620.12
+    },
+    {
+      "text": "たら出来上がったらこれはああ、残念でし",
+      "start_seconds": 617.36,
+      "end_seconds": 622.16
+    },
+    {
+      "text": "た。おしまいでしたね。ペって捨てようと",
+      "start_seconds": 620.12,
+      "end_seconds": 624.079
+    },
+    {
+      "text": "そういう風に思ってたんですよ。で、",
+      "start_seconds": 622.16,
+      "end_seconds": 626.76
+    },
+    {
+      "text": "だんだんに作り上がってきて、だんだん",
+      "start_seconds": 624.079,
+      "end_seconds": 629.3199999999999
+    },
+    {
+      "text": "そろそろ視界が終わりが近くに行ってきた",
+      "start_seconds": 626.76,
+      "end_seconds": 633.2
+    },
+    {
+      "text": "なと思ったらまたけいちゃんが出てきて",
+      "start_seconds": 629.32,
+      "end_seconds": 635.519
+    },
+    {
+      "text": "言うんですよ。あ、[ため息]そろそろ",
+      "start_seconds": 633.2,
+      "end_seconds": 638.399
+    },
+    {
+      "text": "出来上がりましたね。もうそろそろこんな",
+      "start_seconds": 635.519,
+      "end_seconds": 641.24
+    },
+    {
+      "text": "になったら公開したいだろう。配信したい",
+      "start_seconds": 638.399,
+      "end_seconds": 645.16
+    },
+    {
+      "text": "だの。相談に行けるところがそんなが他に",
+      "start_seconds": 641.24,
+      "end_seconds": 648.36
+    },
+    {
+      "text": "もあなたありますよね。行かないんですか",
+      "start_seconds": 645.16,
+      "end_seconds": 652.8
+    },
+    {
+      "text": "?いいのかな?後でぐジぐじ後悔するん",
+      "start_seconds": 648.36,
+      "end_seconds": 656.72
+    },
+    {
+      "text": "じゃないのかなって。そういうんですね。",
+      "start_seconds": 652.8,
+      "end_seconds": 659.88
+    },
+    {
+      "text": "もうそこでですね、私はですね、あのそん",
+      "start_seconds": 656.72,
+      "end_seconds": 663.0
+    },
+    {
+      "text": "時にはもう争いませんでした。ああ、作用",
+      "start_seconds": 659.88,
+      "end_seconds": 665.16
+    },
+    {
+      "text": "でございますよねって。そういう風に言っ",
+      "start_seconds": 663.0,
+      "end_seconds": 668.04
+    },
+    {
+      "text": "て、あの、自分のところにいろんなあの",
+      "start_seconds": 665.16,
+      "end_seconds": 671.079
+    },
+    {
+      "text": "集まりとかお誘いとかそういうような着て",
+      "start_seconds": 668.04,
+      "end_seconds": 673.88
+    },
+    {
+      "text": "た案内にどんどん自分で出てってですね。",
+      "start_seconds": 671.079,
+      "end_seconds": 676.279
+    },
+    {
+      "text": "で、ま、さっきのあのデータベースの資料",
+      "start_seconds": 673.88,
+      "end_seconds": 678.959
+    },
+    {
+      "text": "を作ってこんなの作ってんです。配信し",
+      "start_seconds": 676.279,
+      "end_seconds": 680.8
+    },
+    {
+      "text": "たいんですっていう風に広めて回りました",
+      "start_seconds": 678.959,
+      "end_seconds": 684.88
+    },
+    {
+      "text": "。そしたら今の鹿児島大学の先生にお会い",
+      "start_seconds": 680.8,
+      "end_seconds": 687.959
+    },
+    {
+      "text": "していやうち出せますよっていうことで",
+      "start_seconds": 684.88,
+      "end_seconds": 693.92
+    },
+    {
+      "text": "あんと話が進んでま現在に至るですけど今",
+      "start_seconds": 687.959,
+      "end_seconds": 696.8
+    },
+    {
+      "text": "私は思うんですよ。じゃあ私あの放棄",
+      "start_seconds": 693.92,
+      "end_seconds": 701.12
+    },
+    {
+      "text": "しようとしてた5年間って何だったの?",
+      "start_seconds": 696.8,
+      "end_seconds": 705.399
+    },
+    {
+      "text": "私はねあやめるやめるとか言っときながら",
+      "start_seconds": 701.12,
+      "end_seconds": 708.68
+    },
+    {
+      "text": "ものすごく未練たらだったんだなあと思う",
+      "start_seconds": 705.399,
+      "end_seconds": 712.24
+    },
+    {
+      "text": "。そのデータベースというのが利用者に",
+      "start_seconds": 708.68,
+      "end_seconds": 715.2399999999999
+    },
+    {
+      "text": "とって価値があるんだってことは分かって",
+      "start_seconds": 712.24,
+      "end_seconds": 720.32
+    },
+    {
+      "text": "た。だけどそこは自分を騙して自分の目先",
+      "start_seconds": 715.24,
+      "end_seconds": 723.6800000000001
+    },
+    {
+      "text": "の尊徳だけ考えてやめたろってしたんだと",
+      "start_seconds": 720.32,
+      "end_seconds": 727.8000000000001
+    },
+    {
+      "text": "思うんです。だけど自分のことを騙しきれ",
+      "start_seconds": 723.68,
+      "end_seconds": 730.04
+    },
+    {
+      "text": "なかったんだ。",
+      "start_seconds": 727.8,
+      "end_seconds": 735.079
+    },
+    {
+      "text": "でもさあ、皆さん本当に最後まで完全に",
+      "start_seconds": 730.04,
+      "end_seconds": 738.519
+    },
+    {
+      "text": "騙しきろうと思ったら1番騙しきれない",
+      "start_seconds": 735.079,
+      "end_seconds": 742.6389999999999
+    },
+    {
+      "text": "のって自分自身じゃないですか?そこは",
+      "start_seconds": 738.519,
+      "end_seconds": 747.0
+    },
+    {
+      "text": "みんな同じじゃないんですか?",
+      "start_seconds": 742.639,
+      "end_seconds": 751.12
+    },
+    {
+      "text": "ま、私は騙しきれなかった。だけどそれっ",
+      "start_seconds": 747.0,
+      "end_seconds": 754.72
+    },
+    {
+      "text": "て別の言い方をしたらね、私は自分の",
+      "start_seconds": 751.12,
+      "end_seconds": 757.76
+    },
+    {
+      "text": "データベースの価値を最後まで信じきった",
+      "start_seconds": 754.72,
+      "end_seconds": 762.6
+    },
+    {
+      "text": "んだ。そうと思う。だから未練たらなった",
+      "start_seconds": 757.76,
+      "end_seconds": 767.519
+    },
+    {
+      "text": "んだと。他の誰もね、あ、公開配信する",
+      "start_seconds": 762.6,
+      "end_seconds": 769.639
+    },
+    {
+      "text": "ほどの価値があるとは思わなかった",
+      "start_seconds": 767.519,
+      "end_seconds": 771.16
+    },
+    {
+      "text": "データベース",
+      "start_seconds": 769.639,
+      "end_seconds": 774.839
+    },
+    {
+      "text": "でも自分だけはま、その価値を一応信じて",
+      "start_seconds": 771.16,
+      "end_seconds": 779.7199999999999
+    },
+    {
+      "text": "最後まで作り切った。で、私はもしこの",
+      "start_seconds": 774.839,
+      "end_seconds": 782.399
+    },
+    {
+      "text": "データベースがね、本当に世に出なくって",
+      "start_seconds": 779.72,
+      "end_seconds": 785.9590000000001
+    },
+    {
+      "text": "、そしてあ、おしまいになってしまっても",
+      "start_seconds": 782.399,
+      "end_seconds": 789.959
+    },
+    {
+      "text": "最後まで作り切った時点でああ、もうこれ",
+      "start_seconds": 785.959,
+      "end_seconds": 792.8389999999999
+    },
+    {
+      "text": "はこれでいいやと諦められたと思うんです",
+      "start_seconds": 789.959,
+      "end_seconds": 795.92
+    },
+    {
+      "text": "。もうその時にはけいちゃん出てこなかっ",
+      "start_seconds": 792.839,
+      "end_seconds": 798.399
+    },
+    {
+      "text": "たと思います。",
+      "start_seconds": 795.92,
+      "end_seconds": 801.7199999999999
+    },
+    {
+      "text": "価値あるものを作ったからと言ってそれが",
+      "start_seconds": 798.399,
+      "end_seconds": 804.32
+    },
+    {
+      "text": "必ず評価されるとは限らないじゃないです",
+      "start_seconds": 801.72,
+      "end_seconds": 807.72
+    },
+    {
+      "text": "か。だってどんなにいい製品作ったって",
+      "start_seconds": 804.32,
+      "end_seconds": 810.839
+    },
+    {
+      "text": "売れない時は売れないじゃないですか。だ",
+      "start_seconds": 807.72,
+      "end_seconds": 814.399
+    },
+    {
+      "text": "から価値のあるものの中でいくつかは",
+      "start_seconds": 810.839,
+      "end_seconds": 818.1600000000001
+    },
+    {
+      "text": "たまたま評価される場合もある。こんな",
+      "start_seconds": 814.399,
+      "end_seconds": 822.04
+    },
+    {
+      "text": "感じじゃないんですか?私がもし評価さ",
+      "start_seconds": 818.16,
+      "end_seconds": 825.24
+    },
+    {
+      "text": "れるものを最初から狙っていたらあの",
+      "start_seconds": 822.04,
+      "end_seconds": 828.76
+    },
+    {
+      "text": "データベースは絶対に再完成しませんでし",
+      "start_seconds": 825.24,
+      "end_seconds": 831.0
+    },
+    {
+      "text": "た。",
+      "start_seconds": 828.76,
+      "end_seconds": 835.04
+    },
+    {
+      "text": "周りは評価しなくとも、ま、自分がし判断",
+      "start_seconds": 831.0,
+      "end_seconds": 838.04
+    },
+    {
+      "text": "した判断は信じて、ま、できるところまで",
+      "start_seconds": 835.04,
+      "end_seconds": 841.8
+    },
+    {
+      "text": "は全部やってみる。今ようやく私はですね",
+      "start_seconds": 838.04,
+      "end_seconds": 844.639
+    },
+    {
+      "text": "、そこにね、たどり着いたんだろうなって",
+      "start_seconds": 841.8,
+      "end_seconds": 850.079
+    },
+    {
+      "text": "いう風に思うんです。でも皆さん皆さんに",
+      "start_seconds": 844.639,
+      "end_seconds": 854.92
+    },
+    {
+      "text": "だって周りは評価しないけど違うって言う",
+      "start_seconds": 850.079,
+      "end_seconds": 859.279
+    },
+    {
+      "text": "けれど自分にはこう思えるこう価値がある",
+      "start_seconds": 854.92,
+      "end_seconds": 862.8389999999999
+    },
+    {
+      "text": "と思えるっていうものが皆さんの中にも",
+      "start_seconds": 859.279,
+      "end_seconds": 865.56
+    },
+    {
+      "text": "あるんじゃないんですか?",
+      "start_seconds": 862.839,
+      "end_seconds": 869.48
+    },
+    {
+      "text": "それどうしますか?",
+      "start_seconds": 865.56,
+      "end_seconds": 872.8389999999999
+    },
+    {
+      "text": "私ね、あの今もデータ入力を続けてるん",
+      "start_seconds": 869.48,
+      "end_seconds": 875.88
+    },
+    {
+      "text": "です。これは全く別のデータベースで、",
+      "start_seconds": 872.839,
+      "end_seconds": 878.5600000000001
+    },
+    {
+      "text": "あのこれもあったら利用者の人便利かなっ",
+      "start_seconds": 875.88,
+      "end_seconds": 881.0
+    },
+    {
+      "text": "て思うようなそんなデータなんですけど、",
+      "start_seconds": 878.56,
+      "end_seconds": 883.88
+    },
+    {
+      "text": "言ってまたね、どうせね、最後まで作るん",
+      "start_seconds": 881.0,
+      "end_seconds": 887.759
+    },
+    {
+      "text": "だろうなってそんな風に思いながら、あ、",
+      "start_seconds": 883.88,
+      "end_seconds": 891.68
+    },
+    {
+      "text": "ちまちまと作業をやっております。",
+      "start_seconds": 887.759,
+      "end_seconds": 895.45
+    },
+    {
+      "text": "ありがとうございました。[拍手]",
+      "start_seconds": 891.68,
+      "end_seconds": 895.4499999999999
+    }
+  ],
+  "display_captions": [
+    {
+      "text": "[音楽]",
+      "start_seconds": 1.964,
+      "end_seconds": 3.984,
+      "id": "EQHihSi2H8U-display-0001",
+      "segment_id": "EQHihSi2H8U-ja-0001"
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 9.17,
+      "end_seconds": 11.19,
+      "id": "EQHihSi2H8U-display-0002",
+      "segment_id": "EQHihSi2H8U-ja-0002"
+    },
+    {
+      "text": "私の専門は明治時代です。伊藤博文とか",
+      "start_seconds": 12.759,
+      "end_seconds": 16.359,
+      "id": "EQHihSi2H8U-display-0003",
+      "segment_id": "EQHihSi2H8U-ja-0003"
+    },
+    {
+      "text": "大久保俊道とかそんな明治時代のせあ",
+      "start_seconds": 16.359,
+      "end_seconds": 19.52,
+      "id": "EQHihSi2H8U-display-0004",
+      "segment_id": "EQHihSi2H8U-ja-0003"
+    },
+    {
+      "text": "有名人って江戸時代のお様とかあ来の方と",
+      "start_seconds": 19.52,
+      "end_seconds": 23.8,
+      "id": "EQHihSi2H8U-display-0005",
+      "segment_id": "EQHihSi2H8U-ja-0003"
+    },
+    {
+      "text": "かそんな方々よりももっともずっと詳しく",
+      "start_seconds": 23.8,
+      "end_seconds": 27.24,
+      "id": "EQHihSi2H8U-display-0006",
+      "segment_id": "EQHihSi2H8U-ja-0004"
+    },
+    {
+      "text": "その人生とか経歴とかそれからま人柄",
+      "start_seconds": 27.24,
+      "end_seconds": 30.359,
+      "id": "EQHihSi2H8U-display-0007",
+      "segment_id": "EQHihSi2H8U-ja-0004"
+    },
+    {
+      "text": "なんかも分かったりして面白いなという風",
+      "start_seconds": 30.359,
+      "end_seconds": 32.64,
+      "id": "EQHihSi2H8U-display-0008",
+      "segment_id": "EQHihSi2H8U-ja-0004"
+    },
+    {
+      "text": "に思うんです。でもそんな風に経歴がよく",
+      "start_seconds": 32.64,
+      "end_seconds": 35.559,
+      "id": "EQHihSi2H8U-display-0009",
+      "segment_id": "EQHihSi2H8U-ja-0004"
+    },
+    {
+      "text": "分かる人ってほんの数百人ま多く行っても",
+      "start_seconds": 35.559,
+      "end_seconds": 38.84,
+      "id": "EQHihSi2H8U-display-0010",
+      "segment_id": "EQHihSi2H8U-ja-0005"
+    },
+    {
+      "text": "1000人ぐらいじゃないんでしょうか。",
+      "start_seconds": 38.84,
+      "end_seconds": 40.84,
+      "id": "EQHihSi2H8U-display-0011",
+      "segment_id": "EQHihSi2H8U-ja-0005"
+    },
+    {
+      "text": "また殺あごめんなさい。明治政府に",
+      "start_seconds": 40.84,
+      "end_seconds": 44.54,
+      "id": "EQHihSi2H8U-display-0012",
+      "segment_id": "EQHihSi2H8U-ja-0006"
+    },
+    {
+      "text": "[咳払い]殺長土4の出身者が多かっ",
+      "start_seconds": 44.54,
+      "end_seconds": 47.44,
+      "id": "EQHihSi2H8U-display-0013",
+      "segment_id": "EQHihSi2H8U-ja-0006"
+    },
+    {
+      "text": "たっていうのは学校の事業でもやると思う",
+      "start_seconds": 47.44,
+      "end_seconds": 49.76,
+      "id": "EQHihSi2H8U-display-0014",
+      "segment_id": "EQHihSi2H8U-ja-0006"
+    },
+    {
+      "text": "んですけれども、じゃあその",
+      "start_seconds": 49.76,
+      "end_seconds": 51.559,
+      "id": "EQHihSi2H8U-display-0015",
+      "segment_id": "EQHihSi2H8U-ja-0006"
+    },
+    {
+      "text": "パーセンテージは数値はって言ったら",
+      "start_seconds": 51.559,
+      "end_seconds": 54.12,
+      "id": "EQHihSi2H8U-display-0016",
+      "segment_id": "EQHihSi2H8U-ja-0007"
+    },
+    {
+      "text": "そんなものなかなか見たことある人いない",
+      "start_seconds": 54.12,
+      "end_seconds": 55.92,
+      "id": "EQHihSi2H8U-display-0017",
+      "segment_id": "EQHihSi2H8U-ja-0007"
+    },
+    {
+      "text": "と思うんです。これはですね、明治政府に",
+      "start_seconds": 55.92,
+      "end_seconds": 58.68,
+      "id": "EQHihSi2H8U-display-0018",
+      "segment_id": "EQHihSi2H8U-ja-0007"
+    },
+    {
+      "text": "どれだけの人がいてその中に一体どういう",
+      "start_seconds": 58.68,
+      "end_seconds": 61.239,
+      "id": "EQHihSi2H8U-display-0019",
+      "segment_id": "EQHihSi2H8U-ja-0007"
+    },
+    {
+      "text": "人たちがいたのかそういうことがね、",
+      "start_seconds": 61.239,
+      "end_seconds": 63.239,
+      "id": "EQHihSi2H8U-display-0020",
+      "segment_id": "EQHihSi2H8U-ja-0007"
+    },
+    {
+      "text": "あんまりよくわからないんです。だから",
+      "start_seconds": 63.239,
+      "end_seconds": 65.479,
+      "id": "EQHihSi2H8U-display-0021",
+      "segment_id": "EQHihSi2H8U-ja-0008"
+    },
+    {
+      "text": "数値に簡単に数値にすることはできたい。",
+      "start_seconds": 65.479,
+      "end_seconds": 68.2,
+      "id": "EQHihSi2H8U-display-0022",
+      "segment_id": "EQHihSi2H8U-ja-0008"
+    },
+    {
+      "text": "で、私はこの明治政府っていうのの全体像",
+      "start_seconds": 68.2,
+      "end_seconds": 71.24,
+      "id": "EQHihSi2H8U-display-0023",
+      "segment_id": "EQHihSi2H8U-ja-0009"
+    },
+    {
+      "text": "をそれを把握したいと思って、職員学この",
+      "start_seconds": 71.24,
+      "end_seconds": 75.36,
+      "id": "EQHihSi2H8U-display-0024",
+      "segment_id": "EQHihSi2H8U-ja-0009"
+    },
+    {
+      "text": "本を明治44年間分データベデータベース",
+      "start_seconds": 75.36,
+      "end_seconds": 79.0,
+      "id": "EQHihSi2H8U-display-0025",
+      "segment_id": "EQHihSi2H8U-ja-0009"
+    },
+    {
+      "text": "化してました。そのデータを使って作った",
+      "start_seconds": 79.0,
+      "end_seconds": 82.159,
+      "id": "EQHihSi2H8U-display-0026",
+      "segment_id": "EQHihSi2H8U-ja-0010"
+    },
+    {
+      "text": "のがこの検索サイト",
+      "start_seconds": 82.159,
+      "end_seconds": 86.52,
+      "id": "EQHihSi2H8U-display-0027",
+      "segment_id": "EQHihSi2H8U-ja-0010"
+    },
+    {
+      "text": "で今これをで糸ひ踏で検索してみましょう",
+      "start_seconds": 86.52,
+      "end_seconds": 90.28,
+      "id": "EQHihSi2H8U-display-0028",
+      "segment_id": "EQHihSi2H8U-ja-0010"
+    },
+    {
+      "text": "。",
+      "start_seconds": 90.28,
+      "end_seconds": 92.04,
+      "id": "EQHihSi2H8U-display-0029",
+      "segment_id": "EQHihSi2H8U-ja-0011"
+    },
+    {
+      "text": "そうすると彼の経歴が出てきます。で、",
+      "start_seconds": 92.04,
+      "end_seconds": 94.439,
+      "id": "EQHihSi2H8U-display-0030",
+      "segment_id": "EQHihSi2H8U-ja-0012"
+    },
+    {
+      "text": "ここにずっとこう役職が付いてて、これ",
+      "start_seconds": 94.439,
+      "end_seconds": 96.52,
+      "id": "EQHihSi2H8U-display-0031",
+      "segment_id": "EQHihSi2H8U-ja-0012"
+    },
+    {
+      "text": "もっとずっと下の方にもあるんですけれど",
+      "start_seconds": 96.52,
+      "end_seconds": 98.24,
+      "id": "EQHihSi2H8U-display-0032",
+      "segment_id": "EQHihSi2H8U-ja-0012"
+    },
+    {
+      "text": "も、この役職のどれか1つ、今ここの1番",
+      "start_seconds": 98.24,
+      "end_seconds": 101.24,
+      "id": "EQHihSi2H8U-display-0033",
+      "segment_id": "EQHihSi2H8U-ja-0012"
+    },
+    {
+      "text": "下のところをクリックしてみましょう。",
+      "start_seconds": 101.24,
+      "end_seconds": 103.52,
+      "id": "EQHihSi2H8U-display-0034",
+      "segment_id": "EQHihSi2H8U-ja-0012"
+    },
+    {
+      "text": "そうするとこの役職についた経験者って",
+      "start_seconds": 103.52,
+      "end_seconds": 106.88,
+      "id": "EQHihSi2H8U-display-0035",
+      "segment_id": "EQHihSi2H8U-ja-0013"
+    },
+    {
+      "text": "いうのも全部一覧で出てくるんですね。他",
+      "start_seconds": 106.88,
+      "end_seconds": 110.04,
+      "id": "EQHihSi2H8U-display-0036",
+      "segment_id": "EQHihSi2H8U-ja-0013"
+    },
+    {
+      "text": "にですね、この原作サイト出身地とか学歴",
+      "start_seconds": 110.04,
+      "end_seconds": 114.64,
+      "id": "EQHihSi2H8U-display-0037",
+      "segment_id": "EQHihSi2H8U-ja-0013"
+    },
+    {
+      "text": "とかでも調べることができるんです。今",
+      "start_seconds": 114.64,
+      "end_seconds": 117.119,
+      "id": "EQHihSi2H8U-display-0038",
+      "segment_id": "EQHihSi2H8U-ja-0014"
+    },
+    {
+      "text": "これは熊本出身で東京帝国大学法学士を",
+      "start_seconds": 117.119,
+      "end_seconds": 121.28,
+      "id": "EQHihSi2H8U-display-0039",
+      "segment_id": "EQHihSi2H8U-ja-0014"
+    },
+    {
+      "text": "取得して、え、官僚になった人って出して",
+      "start_seconds": 121.28,
+      "end_seconds": 124.399,
+      "id": "EQHihSi2H8U-display-0040",
+      "segment_id": "EQHihSi2H8U-ja-0014"
+    },
+    {
+      "text": "います。こんな風に学歴とか出身地って",
+      "start_seconds": 124.399,
+      "end_seconds": 128.0,
+      "id": "EQHihSi2H8U-display-0041",
+      "segment_id": "EQHihSi2H8U-ja-0015"
+    },
+    {
+      "text": "いうのを、あ、検索サイトに載せ",
+      "start_seconds": 128.0,
+      "end_seconds": 130.08,
+      "id": "EQHihSi2H8U-display-0042",
+      "segment_id": "EQHihSi2H8U-ja-0015"
+    },
+    {
+      "text": "るっていうのは結構大変なことなんです。",
+      "start_seconds": 130.08,
+      "end_seconds": 132.52,
+      "id": "EQHihSi2H8U-display-0043",
+      "segment_id": "EQHihSi2H8U-ja-0015"
+    },
+    {
+      "text": "あ、先ほどの職員録にですね、学歴という",
+      "start_seconds": 132.52,
+      "end_seconds": 135.16,
+      "id": "EQHihSi2H8U-display-0044",
+      "segment_id": "EQHihSi2H8U-ja-0016"
+    },
+    {
+      "text": "ものが載っていません。なので、え、卒業",
+      "start_seconds": 135.16,
+      "end_seconds": 138.48,
+      "id": "EQHihSi2H8U-display-0045",
+      "segment_id": "EQHihSi2H8U-ja-0016"
+    },
+    {
+      "text": "者名簿というような資料を使って",
+      "start_seconds": 138.48,
+      "end_seconds": 141.44,
+      "id": "EQHihSi2H8U-display-0046",
+      "segment_id": "EQHihSi2H8U-ja-0016"
+    },
+    {
+      "text": "1万6000人分のデータベースを別に",
+      "start_seconds": 141.44,
+      "end_seconds": 143.92,
+      "id": "EQHihSi2H8U-display-0047",
+      "segment_id": "EQHihSi2H8U-ja-0016"
+    },
+    {
+      "text": "作りました。で、こっちの職員録で役人の",
+      "start_seconds": 143.92,
+      "end_seconds": 147.48,
+      "id": "EQHihSi2H8U-display-0048",
+      "segment_id": "EQHihSi2H8U-ja-0017"
+    },
+    {
+      "text": "データベースを作る。双方を付け合わせて",
+      "start_seconds": 147.48,
+      "end_seconds": 150.56,
+      "id": "EQHihSi2H8U-display-0049",
+      "segment_id": "EQHihSi2H8U-ja-0017"
+    },
+    {
+      "text": "1人1人同じ人かどうかっていうのを調べ",
+      "start_seconds": 150.56,
+      "end_seconds": 153.56,
+      "id": "EQHihSi2H8U-display-0050",
+      "segment_id": "EQHihSi2H8U-ja-0017"
+    },
+    {
+      "text": "てこの結果を出しているんです。で、この",
+      "start_seconds": 153.56,
+      "end_seconds": 156.12,
+      "id": "EQHihSi2H8U-display-0051",
+      "segment_id": "EQHihSi2H8U-ja-0018"
+    },
+    {
+      "text": "結果をね、じゃあ本、元々の資料で本の",
+      "start_seconds": 156.12,
+      "end_seconds": 160.68,
+      "id": "EQHihSi2H8U-display-0052",
+      "segment_id": "EQHihSi2H8U-ja-0018"
+    },
+    {
+      "text": "状態で調べ出そうと思うと大変なことに",
+      "start_seconds": 160.68,
+      "end_seconds": 163.319,
+      "id": "EQHihSi2H8U-display-0053",
+      "segment_id": "EQHihSi2H8U-ja-0018"
+    },
+    {
+      "text": "なります。職員録にも卒業者名簿にも人命",
+      "start_seconds": 163.319,
+      "end_seconds": 167.8,
+      "id": "EQHihSi2H8U-display-0054",
+      "segment_id": "EQHihSi2H8U-ja-0019"
+    },
+    {
+      "text": "作品っていうのはないんです。なので、",
+      "start_seconds": 167.8,
+      "end_seconds": 170.2,
+      "id": "EQHihSi2H8U-display-0055",
+      "segment_id": "EQHihSi2H8U-ja-0019"
+    },
+    {
+      "text": "最初から最後までひっくり返してやるって",
+      "start_seconds": 170.2,
+      "end_seconds": 172.68,
+      "id": "EQHihSi2H8U-display-0056",
+      "segment_id": "EQHihSi2H8U-ja-0019"
+    },
+    {
+      "text": "言っても、ま、現実的にはちょっと無理な",
+      "start_seconds": 172.68,
+      "end_seconds": 174.8,
+      "id": "EQHihSi2H8U-display-0057",
+      "segment_id": "EQHihSi2H8U-ja-0019"
+    },
+    {
+      "text": "んじゃないでしょうか。私のデータベース",
+      "start_seconds": 174.8,
+      "end_seconds": 177.8,
+      "id": "EQHihSi2H8U-display-0058",
+      "segment_id": "EQHihSi2H8U-ja-0020"
+    },
+    {
+      "text": "には入っている役職は24万件以上、載っ",
+      "start_seconds": 177.8,
+      "end_seconds": 181.519,
+      "id": "EQHihSi2H8U-display-0059",
+      "segment_id": "EQHihSi2H8U-ja-0020"
+    },
+    {
+      "text": "てる掲載人物が2万9000人以上、現在",
+      "start_seconds": 181.519,
+      "end_seconds": 185.319,
+      "id": "EQHihSi2H8U-display-0060",
+      "segment_id": "EQHihSi2H8U-ja-0020"
+    },
+    {
+      "text": "ではデータベース最大で、ま、さっき",
+      "start_seconds": 185.319,
+      "end_seconds": 187.76,
+      "id": "EQHihSi2H8U-display-0061",
+      "segment_id": "EQHihSi2H8U-ja-0021"
+    },
+    {
+      "text": "みたいに悪歴なんかも調べられる。まあ、",
+      "start_seconds": 187.76,
+      "end_seconds": 190.44,
+      "id": "EQHihSi2H8U-display-0062",
+      "segment_id": "EQHihSi2H8U-ja-0021"
+    },
+    {
+      "text": "なかなかあのいい資料なんじゃないですか",
+      "start_seconds": 190.44,
+      "end_seconds": 193.56,
+      "id": "EQHihSi2H8U-display-0063",
+      "segment_id": "EQHihSi2H8U-ja-0021"
+    },
+    {
+      "text": "という風に言われてるんですけれども、私",
+      "start_seconds": 193.56,
+      "end_seconds": 196.319,
+      "id": "EQHihSi2H8U-display-0064",
+      "segment_id": "EQHihSi2H8U-ja-0021"
+    },
+    {
+      "text": "これを作っている最中っていうのは完全な",
+      "start_seconds": 196.319,
+      "end_seconds": 198.799,
+      "id": "EQHihSi2H8U-display-0065",
+      "segment_id": "EQHihSi2H8U-ja-0022"
+    },
+    {
+      "text": "専業主婦でで子育ての最中にやってまし",
+      "start_seconds": 198.799,
+      "end_seconds": 201.742,
+      "id": "EQHihSi2H8U-display-0066",
+      "segment_id": "EQHihSi2H8U-ja-0022"
+    },
+    {
+      "text": "[咳払い]た。で、そんな私がどうやって",
+      "start_seconds": 201.742,
+      "end_seconds": 204.64,
+      "id": "EQHihSi2H8U-display-0067",
+      "segment_id": "EQHihSi2H8U-ja-0022"
+    },
+    {
+      "text": "こんな価値のあるものを作って世に出す",
+      "start_seconds": 204.64,
+      "end_seconds": 206.68,
+      "id": "EQHihSi2H8U-display-0068",
+      "segment_id": "EQHihSi2H8U-ja-0022"
+    },
+    {
+      "text": "ことができたのか、そんなお話です。",
+      "start_seconds": 206.68,
+      "end_seconds": 210.319,
+      "id": "EQHihSi2H8U-display-0069",
+      "segment_id": "EQHihSi2H8U-ja-0023"
+    },
+    {
+      "text": "先ほどの職員力中身はですね、こんな風に",
+      "start_seconds": 210.319,
+      "end_seconds": 214.08,
+      "id": "EQHihSi2H8U-display-0070",
+      "segment_id": "EQHihSi2H8U-ja-0024"
+    },
+    {
+      "text": "部署ごとの名簿になってるんですね。で、",
+      "start_seconds": 214.08,
+      "end_seconds": 217.08,
+      "id": "EQHihSi2H8U-display-0071",
+      "segment_id": "EQHihSi2H8U-ja-0024"
+    },
+    {
+      "text": "それっていうのはある調べる日付にその",
+      "start_seconds": 217.08,
+      "end_seconds": 220.92,
+      "id": "EQHihSi2H8U-display-0072",
+      "segment_id": "EQHihSi2H8U-ja-0024"
+    },
+    {
+      "text": "部署にどういう人たちがいるのかっていう",
+      "start_seconds": 220.92,
+      "end_seconds": 223.2,
+      "id": "EQHihSi2H8U-display-0073",
+      "segment_id": "EQHihSi2H8U-ja-0025"
+    },
+    {
+      "text": "ことを調べてこうやって載せている。",
+      "start_seconds": 223.2,
+      "end_seconds": 225.56,
+      "id": "EQHihSi2H8U-display-0074",
+      "segment_id": "EQHihSi2H8U-ja-0025"
+    },
+    {
+      "text": "つまりですね、名簿っていうのはある日付",
+      "start_seconds": 225.56,
+      "end_seconds": 228.319,
+      "id": "EQHihSi2H8U-display-0075",
+      "segment_id": "EQHihSi2H8U-ja-0026"
+    },
+    {
+      "text": "で明治政府の断面を切り取ったってそう",
+      "start_seconds": 228.319,
+      "end_seconds": 232.04,
+      "id": "EQHihSi2H8U-display-0076",
+      "segment_id": "EQHihSi2H8U-ja-0026"
+    },
+    {
+      "text": "いう風にも言えるわけです。これを44",
+      "start_seconds": 232.04,
+      "end_seconds": 234.64,
+      "id": "EQHihSi2H8U-display-0077",
+      "segment_id": "EQHihSi2H8U-ja-0026"
+    },
+    {
+      "text": "年間分全部集めてみたら個人の経歴って",
+      "start_seconds": 234.64,
+      "end_seconds": 238.76,
+      "id": "EQHihSi2H8U-display-0078",
+      "segment_id": "EQHihSi2H8U-ja-0027"
+    },
+    {
+      "text": "いうのも出てきた。そんな風に思って",
+      "start_seconds": 238.76,
+      "end_seconds": 240.92,
+      "id": "EQHihSi2H8U-display-0079",
+      "segment_id": "EQHihSi2H8U-ja-0027"
+    },
+    {
+      "text": "ください。で、その44年間分って大体",
+      "start_seconds": 240.92,
+      "end_seconds": 244.0,
+      "id": "EQHihSi2H8U-display-0080",
+      "segment_id": "EQHihSi2H8U-ja-0027"
+    },
+    {
+      "text": "こんな感じで、これをですね、私はですね",
+      "start_seconds": 244.0,
+      "end_seconds": 246.76,
+      "id": "EQHihSi2H8U-display-0081",
+      "segment_id": "EQHihSi2H8U-ja-0028"
+    },
+    {
+      "text": "、あの、手作業で[笑い]、え、",
+      "start_seconds": 246.76,
+      "end_seconds": 250.319,
+      "id": "EQHihSi2H8U-display-0082",
+      "segment_id": "EQHihSi2H8U-ja-0028"
+    },
+    {
+      "text": "キーボード叩いてexel入力しました。",
+      "start_seconds": 250.319,
+      "end_seconds": 253.28,
+      "id": "EQHihSi2H8U-display-0083",
+      "segment_id": "EQHihSi2H8U-ja-0028"
+    },
+    {
+      "text": "今ね、そんなことしなくったって、AIで",
+      "start_seconds": 253.28,
+      "end_seconds": 255.76,
+      "id": "EQHihSi2H8U-display-0084",
+      "segment_id": "EQHihSi2H8U-ja-0029"
+    },
+    {
+      "text": "読んでデータビュー入力したら十分同じ",
+      "start_seconds": 255.76,
+      "end_seconds": 258.079,
+      "id": "EQHihSi2H8U-display-0085",
+      "segment_id": "EQHihSi2H8U-ja-0029"
+    },
+    {
+      "text": "もんできるんじゃないんですかって言われ",
+      "start_seconds": 258.079,
+      "end_seconds": 259.919,
+      "id": "EQHihSi2H8U-display-0086",
+      "segment_id": "EQHihSi2H8U-ja-0029"
+    },
+    {
+      "text": "がちなんですけれども、そう簡単にはいか",
+      "start_seconds": 259.919,
+      "end_seconds": 262.16,
+      "id": "EQHihSi2H8U-display-0087",
+      "segment_id": "EQHihSi2H8U-ja-0029"
+    },
+    {
+      "text": "ないんです。同じ名前の人が全員同じ人",
+      "start_seconds": 262.16,
+      "end_seconds": 266.0,
+      "id": "EQHihSi2H8U-display-0088",
+      "segment_id": "EQHihSi2H8U-ja-0030"
+    },
+    {
+      "text": "じゃないじゃないですか。だから職員録を",
+      "start_seconds": 266.0,
+      "end_seconds": 268.72,
+      "id": "EQHihSi2H8U-display-0089",
+      "segment_id": "EQHihSi2H8U-ja-0030"
+    },
+    {
+      "text": "見て、あ、この役職とこの役職で、あ、",
+      "start_seconds": 268.72,
+      "end_seconds": 271.56,
+      "id": "EQHihSi2H8U-display-0090",
+      "segment_id": "EQHihSi2H8U-ja-0030"
+    },
+    {
+      "text": "この時に在職してたってことはこの人と",
+      "start_seconds": 271.56,
+      "end_seconds": 274.28,
+      "id": "EQHihSi2H8U-display-0091",
+      "segment_id": "EQHihSi2H8U-ja-0031"
+    },
+    {
+      "text": "この人って別人だなっていうのって人間で",
+      "start_seconds": 274.28,
+      "end_seconds": 277.039,
+      "id": "EQHihSi2H8U-display-0092",
+      "segment_id": "EQHihSi2H8U-ja-0031"
+    },
+    {
+      "text": "ないとうまく判断できないところも多くっ",
+      "start_seconds": 277.039,
+      "end_seconds": 279.12,
+      "id": "EQHihSi2H8U-display-0093",
+      "segment_id": "EQHihSi2H8U-ja-0031"
+    },
+    {
+      "text": "て、それで、え、AIで作っても同じもの",
+      "start_seconds": 279.12,
+      "end_seconds": 281.919,
+      "id": "EQHihSi2H8U-display-0094",
+      "segment_id": "EQHihSi2H8U-ja-0031"
+    },
+    {
+      "text": "にはなりません。",
+      "start_seconds": 281.919,
+      "end_seconds": 283.84,
+      "id": "EQHihSi2H8U-display-0095",
+      "segment_id": "EQHihSi2H8U-ja-0032"
+    },
+    {
+      "text": "また皆さんに使っていただけ",
+      "start_seconds": 283.84,
+      "end_seconds": 285.44,
+      "id": "EQHihSi2H8U-display-0096",
+      "segment_id": "EQHihSi2H8U-ja-0033"
+    },
+    {
+      "text": "るっていうのは先ほどの検索サイトだけで",
+      "start_seconds": 285.44,
+      "end_seconds": 287.72,
+      "id": "EQHihSi2H8U-display-0097",
+      "segment_id": "EQHihSi2H8U-ja-0033"
+    },
+    {
+      "text": "はありません。その裏で働いているマザー",
+      "start_seconds": 287.72,
+      "end_seconds": 290.919,
+      "id": "EQHihSi2H8U-display-0098",
+      "segment_id": "EQHihSi2H8U-ja-0033"
+    },
+    {
+      "text": "データベースExcel版というのも",
+      "start_seconds": 290.919,
+      "end_seconds": 293.72,
+      "id": "EQHihSi2H8U-display-0099",
+      "segment_id": "EQHihSi2H8U-ja-0033"
+    },
+    {
+      "text": "オープンデータソースとして配信しており",
+      "start_seconds": 293.72,
+      "end_seconds": 296.199,
+      "id": "EQHihSi2H8U-display-0100",
+      "segment_id": "EQHihSi2H8U-ja-0034"
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 296.199,
+      "end_seconds": 297.919,
+      "id": "EQHihSi2H8U-display-0101",
+      "segment_id": "EQHihSi2H8U-ja-0034"
+    },
+    {
+      "text": "え、オープンデータソースとして配信して",
+      "start_seconds": 297.919,
+      "end_seconds": 300.28,
+      "id": "EQHihSi2H8U-display-0102",
+      "segment_id": "EQHihSi2H8U-ja-0035"
+    },
+    {
+      "text": "おりまして、え、自由に誰でもあの無料で",
+      "start_seconds": 300.28,
+      "end_seconds": 304.68,
+      "id": "EQHihSi2H8U-display-0103",
+      "segment_id": "EQHihSi2H8U-ja-0035"
+    },
+    {
+      "text": "手に入れられて、そして、え、自分のその",
+      "start_seconds": 304.68,
+      "end_seconds": 307.919,
+      "id": "EQHihSi2H8U-display-0104",
+      "segment_id": "EQHihSi2H8U-ja-0035"
+    },
+    {
+      "text": "データも入れて自由に加工して自分の",
+      "start_seconds": 307.919,
+      "end_seconds": 311.039,
+      "id": "EQHihSi2H8U-display-0105",
+      "segment_id": "EQHihSi2H8U-ja-0036"
+    },
+    {
+      "text": "オリジナルにしてそして、あ、論文に使う",
+      "start_seconds": 311.039,
+      "end_seconds": 313.8,
+      "id": "EQHihSi2H8U-display-0106",
+      "segment_id": "EQHihSi2H8U-ja-0036"
+    },
+    {
+      "text": "こともできる。それで今までもね、研究者",
+      "start_seconds": 313.8,
+      "end_seconds": 316.84,
+      "id": "EQHihSi2H8U-display-0107",
+      "segment_id": "EQHihSi2H8U-ja-0036"
+    },
+    {
+      "text": "っていうのはそのデーベースっていうのを",
+      "start_seconds": 316.84,
+      "end_seconds": 318.72,
+      "id": "EQHihSi2H8U-display-0108",
+      "segment_id": "EQHihSi2H8U-ja-0036"
+    },
+    {
+      "text": "作ってたんですよ。で、作ってるんだ",
+      "start_seconds": 318.72,
+      "end_seconds": 320.759,
+      "id": "EQHihSi2H8U-display-0109",
+      "segment_id": "EQHihSi2H8U-ja-0037"
+    },
+    {
+      "text": "けれども公開することはなかった。みんな",
+      "start_seconds": 320.759,
+      "end_seconds": 323.639,
+      "id": "EQHihSi2H8U-display-0110",
+      "segment_id": "EQHihSi2H8U-ja-0037"
+    },
+    {
+      "text": "そのあの公開してねお互い作ったらその方",
+      "start_seconds": 323.639,
+      "end_seconds": 327.6,
+      "id": "EQHihSi2H8U-display-0111",
+      "segment_id": "EQHihSi2H8U-ja-0037"
+    },
+    {
+      "text": "が便利じゃないかっていう風に言ってたん",
+      "start_seconds": 327.6,
+      "end_seconds": 329.919,
+      "id": "EQHihSi2H8U-display-0112",
+      "segment_id": "EQHihSi2H8U-ja-0037"
+    },
+    {
+      "text": "ですけれども実際にオープンデータソース",
+      "start_seconds": 329.919,
+      "end_seconds": 333.08,
+      "id": "EQHihSi2H8U-display-0113",
+      "segment_id": "EQHihSi2H8U-ja-0038"
+    },
+    {
+      "text": "して出したのは私が初めてのようです。で",
+      "start_seconds": 333.08,
+      "end_seconds": 336.96,
+      "id": "EQHihSi2H8U-display-0114",
+      "segment_id": "EQHihSi2H8U-ja-0038"
+    },
+    {
+      "text": "、そんな風な感じであの最近はその利用者",
+      "start_seconds": 336.96,
+      "end_seconds": 339.919,
+      "id": "EQHihSi2H8U-display-0115",
+      "segment_id": "EQHihSi2H8U-ja-0038"
+    },
+    {
+      "text": "の人もね、あ、便利じゃない。え、これは",
+      "start_seconds": 339.919,
+      "end_seconds": 342.28,
+      "id": "EQHihSi2H8U-display-0116",
+      "segment_id": "EQHihSi2H8U-ja-0039"
+    },
+    {
+      "text": "価値があるんじゃないという風に言って",
+      "start_seconds": 342.28,
+      "end_seconds": 343.84,
+      "id": "EQHihSi2H8U-display-0117",
+      "segment_id": "EQHihSi2H8U-ja-0039"
+    },
+    {
+      "text": "くれるようなものになったんですけれども",
+      "start_seconds": 343.84,
+      "end_seconds": 345.759,
+      "id": "EQHihSi2H8U-display-0118",
+      "segment_id": "EQHihSi2H8U-ja-0039"
+    },
+    {
+      "text": "、皆さんがあるデータベースを作ればね、",
+      "start_seconds": 345.759,
+      "end_seconds": 349.88,
+      "id": "EQHihSi2H8U-display-0119",
+      "segment_id": "EQHihSi2H8U-ja-0039"
+    },
+    {
+      "text": "それは自動的に評価されるんじゃないん",
+      "start_seconds": 349.88,
+      "end_seconds": 351.96,
+      "id": "EQHihSi2H8U-display-0120",
+      "segment_id": "EQHihSi2H8U-ja-0040"
+    },
+    {
+      "text": "ですかって。そう思いません?私はですね",
+      "start_seconds": 351.96,
+      "end_seconds": 355.199,
+      "id": "EQHihSi2H8U-display-0121",
+      "segment_id": "EQHihSi2H8U-ja-0040"
+    },
+    {
+      "text": "、このデータベース作ってみて価値があ",
+      "start_seconds": 355.199,
+      "end_seconds": 357.84,
+      "id": "EQHihSi2H8U-display-0122",
+      "segment_id": "EQHihSi2H8U-ja-0040"
+    },
+    {
+      "text": "るっていうことと評価され",
+      "start_seconds": 357.84,
+      "end_seconds": 359.84,
+      "id": "EQHihSi2H8U-display-0123",
+      "segment_id": "EQHihSi2H8U-ja-0040"
+    },
+    {
+      "text": "るっていうことはイコールじゃないんだ",
+      "start_seconds": 359.84,
+      "end_seconds": 362.08,
+      "id": "EQHihSi2H8U-display-0124",
+      "segment_id": "EQHihSi2H8U-ja-0041"
+    },
+    {
+      "text": "なっていうことを思い知りました。",
+      "start_seconds": 362.08,
+      "end_seconds": 364.8,
+      "id": "EQHihSi2H8U-display-0125",
+      "segment_id": "EQHihSi2H8U-ja-0041"
+    },
+    {
+      "text": "思い知った上でこのデータベースを作り切",
+      "start_seconds": 364.8,
+      "end_seconds": 367.36,
+      "id": "EQHihSi2H8U-display-0126",
+      "segment_id": "EQHihSi2H8U-ja-0042"
+    },
+    {
+      "text": "るってどんな感じであったか。え、1番",
+      "start_seconds": 367.36,
+      "end_seconds": 371.0,
+      "id": "EQHihSi2H8U-display-0127",
+      "segment_id": "EQHihSi2H8U-ja-0042"
+    },
+    {
+      "text": "最初、今から25年ぐらい前、私がこれ",
+      "start_seconds": 371.0,
+      "end_seconds": 373.759,
+      "id": "EQHihSi2H8U-display-0128",
+      "segment_id": "EQHihSi2H8U-ja-0042"
+    },
+    {
+      "text": "からデータベース作りたいです。えっと、",
+      "start_seconds": 373.759,
+      "end_seconds": 376.44,
+      "id": "EQHihSi2H8U-display-0129",
+      "segment_id": "EQHihSi2H8U-ja-0042"
+    },
+    {
+      "text": "公開とか配信とか考えてますとかっていう",
+      "start_seconds": 376.44,
+      "end_seconds": 379.44,
+      "id": "EQHihSi2H8U-display-0130",
+      "segment_id": "EQHihSi2H8U-ja-0043"
+    },
+    {
+      "text": "風に言ってもですよ。え、オープンデータ",
+      "start_seconds": 379.44,
+      "end_seconds": 381.88,
+      "id": "EQHihSi2H8U-display-0131",
+      "segment_id": "EQHihSi2H8U-ja-0043"
+    },
+    {
+      "text": "ソースなんてものをなければ公開配信",
+      "start_seconds": 381.88,
+      "end_seconds": 384.199,
+      "id": "EQHihSi2H8U-display-0132",
+      "segment_id": "EQHihSi2H8U-ja-0043"
+    },
+    {
+      "text": "なんてものを見たことがない。もう周りの",
+      "start_seconds": 384.199,
+      "end_seconds": 386.56,
+      "id": "EQHihSi2H8U-display-0133",
+      "segment_id": "EQHihSi2H8U-ja-0043"
+    },
+    {
+      "text": "人間はね、何ですかそれはとそんなもの",
+      "start_seconds": 386.56,
+      "end_seconds": 388.96,
+      "id": "EQHihSi2H8U-display-0134",
+      "segment_id": "EQHihSi2H8U-ja-0044"
+    },
+    {
+      "text": "出されちゃたまんないなっていう感じで",
+      "start_seconds": 388.96,
+      "end_seconds": 391.36,
+      "id": "EQHihSi2H8U-display-0135",
+      "segment_id": "EQHihSi2H8U-ja-0044"
+    },
+    {
+      "text": "かなりあの煙たがられました。で、私作業",
+      "start_seconds": 391.36,
+      "end_seconds": 395.199,
+      "id": "EQHihSi2H8U-display-0136",
+      "segment_id": "EQHihSi2H8U-ja-0044"
+    },
+    {
+      "text": "してる間は、あ、専業主婦で、ま、子供も",
+      "start_seconds": 395.199,
+      "end_seconds": 398.039,
+      "id": "EQHihSi2H8U-display-0137",
+      "segment_id": "EQHihSi2H8U-ja-0044"
+    },
+    {
+      "text": "いる。どんな感じかって言うとですね、",
+      "start_seconds": 398.039,
+      "end_seconds": 400.08,
+      "id": "EQHihSi2H8U-display-0138",
+      "segment_id": "EQHihSi2H8U-ja-0045"
+    },
+    {
+      "text": "これ、あの、自分の机もなくってですね、",
+      "start_seconds": 400.08,
+      "end_seconds": 403.0,
+      "id": "EQHihSi2H8U-display-0139",
+      "segment_id": "EQHihSi2H8U-ja-0045"
+    },
+    {
+      "text": "あの、食卓なんですよ。で、食卓に資料",
+      "start_seconds": 403.0,
+      "end_seconds": 405.919,
+      "id": "EQHihSi2H8U-display-0140",
+      "segment_id": "EQHihSi2H8U-ja-0045"
+    },
+    {
+      "text": "パーっと並べてほんで、あ、ご飯だって",
+      "start_seconds": 405.919,
+      "end_seconds": 408.759,
+      "id": "EQHihSi2H8U-display-0141",
+      "segment_id": "EQHihSi2H8U-ja-0045"
+    },
+    {
+      "text": "言ってパーっとこう元にあの、しまってで",
+      "start_seconds": 408.759,
+      "end_seconds": 411.639,
+      "id": "EQHihSi2H8U-display-0142",
+      "segment_id": "EQHihSi2H8U-ja-0046"
+    },
+    {
+      "text": "、また元に戻してとかそんなような形の",
+      "start_seconds": 411.639,
+      "end_seconds": 414.0,
+      "id": "EQHihSi2H8U-display-0143",
+      "segment_id": "EQHihSi2H8U-ja-0046"
+    },
+    {
+      "text": "ことをやってたんですね。で、ま、子供も",
+      "start_seconds": 414.0,
+      "end_seconds": 416.759,
+      "id": "EQHihSi2H8U-display-0144",
+      "segment_id": "EQHihSi2H8U-ja-0046"
+    },
+    {
+      "text": "いますから、夏休みももちろん冬休みも",
+      "start_seconds": 416.759,
+      "end_seconds": 420.4,
+      "id": "EQHihSi2H8U-display-0145",
+      "segment_id": "EQHihSi2H8U-ja-0046"
+    },
+    {
+      "text": "春休みも土日も作業時間でろっていうよう",
+      "start_seconds": 420.4,
+      "end_seconds": 424.08,
+      "id": "EQHihSi2H8U-display-0146",
+      "segment_id": "EQHihSi2H8U-ja-0047"
+    },
+    {
+      "text": "な、あ、年好きを何年も送っていました。",
+      "start_seconds": 424.08,
+      "end_seconds": 427.639,
+      "id": "EQHihSi2H8U-display-0147",
+      "segment_id": "EQHihSi2H8U-ja-0047"
+    },
+    {
+      "text": "で、え、あの、でもね、データベースって",
+      "start_seconds": 427.639,
+      "end_seconds": 431.479,
+      "id": "EQHihSi2H8U-display-0148",
+      "segment_id": "EQHihSi2H8U-ja-0048"
+    },
+    {
+      "text": "いうのは、ま、ちょっとずつでも",
+      "start_seconds": 431.479,
+      "end_seconds": 432.759,
+      "id": "EQHihSi2H8U-display-0149",
+      "segment_id": "EQHihSi2H8U-ja-0048"
+    },
+    {
+      "text": "もうみ上がってくから別にいいんですよ。",
+      "start_seconds": 432.759,
+      "end_seconds": 435.879,
+      "id": "EQHihSi2H8U-display-0150",
+      "segment_id": "EQHihSi2H8U-ja-0048"
+    },
+    {
+      "text": "問題なのはこう公開とか配信、今の鹿児島",
+      "start_seconds": 435.879,
+      "end_seconds": 439.56,
+      "id": "EQHihSi2H8U-display-0151",
+      "segment_id": "EQHihSi2H8U-ja-0049"
+    },
+    {
+      "text": "大学みたいにうちで公開できますよって",
+      "start_seconds": 439.56,
+      "end_seconds": 442.599,
+      "id": "EQHihSi2H8U-display-0152",
+      "segment_id": "EQHihSi2H8U-ja-0049"
+    },
+    {
+      "text": "いうようなところが最後まで出てこなかっ",
+      "start_seconds": 442.599,
+      "end_seconds": 444.919,
+      "id": "EQHihSi2H8U-display-0153",
+      "segment_id": "EQHihSi2H8U-ja-0049"
+    },
+    {
+      "text": "たんです。あ、じゃあワンドライブとかに",
+      "start_seconds": 444.919,
+      "end_seconds": 447.759,
+      "id": "EQHihSi2H8U-display-0154",
+      "segment_id": "EQHihSi2H8U-ja-0049"
+    },
+    {
+      "text": "自分であげてね、じゃああの知り合いに",
+      "start_seconds": 447.759,
+      "end_seconds": 450.72,
+      "id": "EQHihSi2H8U-display-0155",
+      "segment_id": "EQHihSi2H8U-ja-0050"
+    },
+    {
+      "text": "撮ってみてくださいていう風に頼むんです",
+      "start_seconds": 450.72,
+      "end_seconds": 452.599,
+      "id": "EQHihSi2H8U-display-0156",
+      "segment_id": "EQHihSi2H8U-ja-0050"
+    },
+    {
+      "text": "。ですけれども、そう、その人たちが、え",
+      "start_seconds": 452.599,
+      "end_seconds": 455.879,
+      "id": "EQHihSi2H8U-display-0157",
+      "segment_id": "EQHihSi2H8U-ja-0050"
+    },
+    {
+      "text": "、だってあんたのファイルウイルスあるか",
+      "start_seconds": 455.879,
+      "end_seconds": 458.24,
+      "id": "EQHihSi2H8U-display-0158",
+      "segment_id": "EQHihSi2H8U-ja-0050"
+    },
+    {
+      "text": "もしれないでしょ。そんなの怖いからや",
+      "start_seconds": 458.24,
+      "end_seconds": 460.72,
+      "id": "EQHihSi2H8U-display-0159",
+      "segment_id": "EQHihSi2H8U-ja-0051"
+    },
+    {
+      "text": "だって言ってダウンロードしてもらえませ",
+      "start_seconds": 460.72,
+      "end_seconds": 462.879,
+      "id": "EQHihSi2H8U-display-0160",
+      "segment_id": "EQHihSi2H8U-ja-0051"
+    },
+    {
+      "text": "んでした。だ結局のところ大学みたいに",
+      "start_seconds": 462.879,
+      "end_seconds": 466.36,
+      "id": "EQHihSi2H8U-display-0161",
+      "segment_id": "EQHihSi2H8U-ja-0051"
+    },
+    {
+      "text": "あの信頼される配信もないと利用もされ",
+      "start_seconds": 466.36,
+      "end_seconds": 469.96,
+      "id": "EQHihSi2H8U-display-0162",
+      "segment_id": "EQHihSi2H8U-ja-0051"
+    },
+    {
+      "text": "ないと。で、じゃあ大学の知り合いの",
+      "start_seconds": 469.96,
+      "end_seconds": 473.159,
+      "id": "EQHihSi2H8U-display-0163",
+      "segment_id": "EQHihSi2H8U-ja-0052"
+    },
+    {
+      "text": "ところに行って相談に行きました。これも",
+      "start_seconds": 473.159,
+      "end_seconds": 475.8,
+      "id": "EQHihSi2H8U-display-0164",
+      "segment_id": "EQHihSi2H8U-ja-0052"
+    },
+    {
+      "text": "ね、うまくいかないんです。うまくいか",
+      "start_seconds": 475.8,
+      "end_seconds": 478.0,
+      "id": "EQHihSi2H8U-display-0165",
+      "segment_id": "EQHihSi2H8U-ja-0052"
+    },
+    {
+      "text": "ないどころか私は偉いひどい目に会いまし",
+      "start_seconds": 478.0,
+      "end_seconds": 481.319,
+      "id": "EQHihSi2H8U-display-0166",
+      "segment_id": "EQHihSi2H8U-ja-0052"
+    },
+    {
+      "text": "て精神的にも偉いやられちゃったんですよ",
+      "start_seconds": 481.319,
+      "end_seconds": 484.28,
+      "id": "EQHihSi2H8U-display-0167",
+      "segment_id": "EQHihSi2H8U-ja-0053"
+    },
+    {
+      "text": "。で、そこで思いました。ああ、もうこれ",
+      "start_seconds": 484.28,
+      "end_seconds": 487.919,
+      "id": "EQHihSi2H8U-display-0168",
+      "segment_id": "EQHihSi2H8U-ja-0053"
+    },
+    {
+      "text": "ダめだと。もう自分のデータベースは世に",
+      "start_seconds": 487.919,
+      "end_seconds": 490.84,
+      "id": "EQHihSi2H8U-display-0169",
+      "segment_id": "EQHihSi2H8U-ja-0053"
+    },
+    {
+      "text": "出ないわと。もう自分のパソコンの中の",
+      "start_seconds": 490.84,
+      "end_seconds": 494.08,
+      "id": "EQHihSi2H8U-display-0170",
+      "segment_id": "EQHihSi2H8U-ja-0054"
+    },
+    {
+      "text": "ゴミにしかならないんだよと思いました。",
+      "start_seconds": 494.08,
+      "end_seconds": 496.479,
+      "id": "EQHihSi2H8U-display-0171",
+      "segment_id": "EQHihSi2H8U-ja-0054"
+    },
+    {
+      "text": "諦めました。作り始めて大体10年ぐらい",
+      "start_seconds": 496.479,
+      "end_seconds": 499.52,
+      "id": "EQHihSi2H8U-display-0172",
+      "segment_id": "EQHihSi2H8U-ja-0055"
+    },
+    {
+      "text": "でした。ああ、もうじゃゴミになるんだっ",
+      "start_seconds": 499.52,
+      "end_seconds": 501.759,
+      "id": "EQHihSi2H8U-display-0173",
+      "segment_id": "EQHihSi2H8U-ja-0055"
+    },
+    {
+      "text": "たらデータ入力なんかしたって無駄じゃん",
+      "start_seconds": 501.759,
+      "end_seconds": 503.8,
+      "id": "EQHihSi2H8U-display-0174",
+      "segment_id": "EQHihSi2H8U-ja-0055"
+    },
+    {
+      "text": "と思って、[咳払い]あ、やめたつって",
+      "start_seconds": 503.8,
+      "end_seconds": 505.36,
+      "id": "EQHihSi2H8U-display-0175",
+      "segment_id": "EQHihSi2H8U-ja-0055"
+    },
+    {
+      "text": "やめました。本当に5年間ぐらいずっと",
+      "start_seconds": 505.36,
+      "end_seconds": 509.24,
+      "id": "EQHihSi2H8U-display-0176",
+      "segment_id": "EQHihSi2H8U-ja-0056"
+    },
+    {
+      "text": "あのノタッチでした。でですね、そういう",
+      "start_seconds": 509.24,
+      "end_seconds": 513.039,
+      "id": "EQHihSi2H8U-display-0177",
+      "segment_id": "EQHihSi2H8U-ja-0056"
+    },
+    {
+      "text": "時に出てくるのがもう1人の自分ってやつ",
+      "start_seconds": 513.039,
+      "end_seconds": 516.36,
+      "id": "EQHihSi2H8U-display-0178",
+      "segment_id": "EQHihSi2H8U-ja-0056"
+    },
+    {
+      "text": "ですよ。そいつが言うんですよ。ああ、",
+      "start_seconds": 516.36,
+      "end_seconds": 519.399,
+      "id": "EQHihSi2H8U-display-0179",
+      "segment_id": "EQHihSi2H8U-ja-0057"
+    },
+    {
+      "text": "あなたはやめちゃうんですか?ああ、だ",
+      "start_seconds": 519.399,
+      "end_seconds": 522.44,
+      "id": "EQHihSi2H8U-display-0180",
+      "segment_id": "EQHihSi2H8U-ja-0057"
+    },
+    {
+      "text": "けど最後まで作りきるっていうだけだっ",
+      "start_seconds": 522.44,
+      "end_seconds": 525.08,
+      "id": "EQHihSi2H8U-display-0181",
+      "segment_id": "EQHihSi2H8U-ja-0057"
+    },
+    {
+      "text": "たらできるんですよね。え、やらないん",
+      "start_seconds": 525.08,
+      "end_seconds": 528.68,
+      "id": "EQHihSi2H8U-display-0182",
+      "segment_id": "EQHihSi2H8U-ja-0058"
+    },
+    {
+      "text": "ですか?ああ、世間が認めてくれない。",
+      "start_seconds": 528.68,
+      "end_seconds": 533.04,
+      "id": "EQHihSi2H8U-display-0183",
+      "segment_id": "EQHihSi2H8U-ja-0058"
+    },
+    {
+      "text": "ああ、世の中に出ない。へえ。それって",
+      "start_seconds": 533.04,
+      "end_seconds": 537.32,
+      "id": "EQHihSi2H8U-display-0184",
+      "segment_id": "EQHihSi2H8U-ja-0059"
+    },
+    {
+      "text": "拗ねてるんですよね。て、そう言うんです",
+      "start_seconds": 537.32,
+      "end_seconds": 540.8,
+      "id": "EQHihSi2H8U-display-0185",
+      "segment_id": "EQHihSi2H8U-ja-0059"
+    },
+    {
+      "text": "よ。",
+      "start_seconds": 540.8,
+      "end_seconds": 542.64,
+      "id": "EQHihSi2H8U-display-0186",
+      "segment_id": "EQHihSi2H8U-ja-0059"
+    },
+    {
+      "text": "で、もうすっごい嫌なこと言うやつだった",
+      "start_seconds": 542.64,
+      "end_seconds": 545.2,
+      "id": "EQHihSi2H8U-display-0187",
+      "segment_id": "EQHihSi2H8U-ja-0060"
+    },
+    {
+      "text": "んですけど、ちょっとややこしいですから",
+      "start_seconds": 545.2,
+      "end_seconds": 547.04,
+      "id": "EQHihSi2H8U-display-0188",
+      "segment_id": "EQHihSi2H8U-ja-0060"
+    },
+    {
+      "text": "ね。あいつのことけいちゃんちゃんって",
+      "start_seconds": 547.04,
+      "end_seconds": 548.88,
+      "id": "EQHihSi2H8U-display-0189",
+      "segment_id": "EQHihSi2H8U-ja-0060"
+    },
+    {
+      "text": "あだ名つけましょう。で、対抗してるのは",
+      "start_seconds": 548.88,
+      "end_seconds": 551.48,
+      "id": "EQHihSi2H8U-display-0190",
+      "segment_id": "EQHihSi2H8U-ja-0060"
+    },
+    {
+      "text": "私ですよ。私だってね、負けちゃいません",
+      "start_seconds": 551.48,
+      "end_seconds": 554.2,
+      "id": "EQHihSi2H8U-display-0191",
+      "segment_id": "EQHihSi2H8U-ja-0060"
+    },
+    {
+      "text": "よ。え、だってゴミになるんですよ。ゴミ",
+      "start_seconds": 554.2,
+      "end_seconds": 557.92,
+      "id": "EQHihSi2H8U-display-0192",
+      "segment_id": "EQHihSi2H8U-ja-0061"
+    },
+    {
+      "text": "になるようなもん何年かけて作ったって胸",
+      "start_seconds": 557.92,
+      "end_seconds": 560.24,
+      "id": "EQHihSi2H8U-display-0193",
+      "segment_id": "EQHihSi2H8U-ja-0061"
+    },
+    {
+      "text": "じゃないですかて言ってやりました。",
+      "start_seconds": 560.24,
+      "end_seconds": 563.68,
+      "id": "EQHihSi2H8U-display-0194",
+      "segment_id": "EQHihSi2H8U-ja-0061"
+    },
+    {
+      "text": "こんなでもくらないねんですけれども",
+      "start_seconds": 563.68,
+      "end_seconds": 567.2,
+      "id": "EQHihSi2H8U-display-0195",
+      "segment_id": "EQHihSi2H8U-ja-0062"
+    },
+    {
+      "text": "女くだらない事件言語をねさすがに私も5",
+      "start_seconds": 567.2,
+      "end_seconds": 570.04,
+      "id": "EQHihSi2H8U-display-0196",
+      "segment_id": "EQHihSi2H8U-ja-0062"
+    },
+    {
+      "text": "年もやってられませんでま大体ね最初の",
+      "start_seconds": 570.04,
+      "end_seconds": 573.399,
+      "id": "EQHihSi2H8U-display-0197",
+      "segment_id": "EQHihSi2H8U-ja-0062"
+    },
+    {
+      "text": "23年でけいちゃん勝ちました。私負け",
+      "start_seconds": 573.399,
+      "end_seconds": 577.24,
+      "id": "EQHihSi2H8U-display-0198",
+      "segment_id": "EQHihSi2H8U-ja-0063"
+    },
+    {
+      "text": "ました。で負けて言いました。あの",
+      "start_seconds": 577.24,
+      "end_seconds": 579.681,
+      "id": "EQHihSi2H8U-display-0199",
+      "segment_id": "EQHihSi2H8U-ja-0063"
+    },
+    {
+      "text": "[咳払い]",
+      "start_seconds": 579.681,
+      "end_seconds": 580.399,
+      "id": "EQHihSi2H8U-display-0200",
+      "segment_id": "EQHihSi2H8U-ja-0063"
+    },
+    {
+      "text": "じゃあ分かりました。死ぬまでには作り",
+      "start_seconds": 580.399,
+      "end_seconds": 582.44,
+      "id": "EQHihSi2H8U-display-0201",
+      "segment_id": "EQHihSi2H8U-ja-0063"
+    },
+    {
+      "text": "ますよ。死ぬまでには作るけど、今",
+      "start_seconds": 582.44,
+      "end_seconds": 584.959,
+      "id": "EQHihSi2H8U-display-0202",
+      "segment_id": "EQHihSi2H8U-ja-0063"
+    },
+    {
+      "text": "しばらくお休みするんですて言っ[笑い]",
+      "start_seconds": 584.959,
+      "end_seconds": 586.92,
+      "id": "EQHihSi2H8U-display-0203",
+      "segment_id": "EQHihSi2H8U-ja-0064"
+    },
+    {
+      "text": "てしばらく休んでおりました。で、結局、",
+      "start_seconds": 586.92,
+      "end_seconds": 590.56,
+      "id": "EQHihSi2H8U-display-0204",
+      "segment_id": "EQHihSi2H8U-ja-0064"
+    },
+    {
+      "text": "ま、やめちゃってから5年ぐらい経った頃",
+      "start_seconds": 590.56,
+      "end_seconds": 592.68,
+      "id": "EQHihSi2H8U-display-0205",
+      "segment_id": "EQHihSi2H8U-ja-0064"
+    },
+    {
+      "text": "にあのちょうどね、これは再開するのには",
+      "start_seconds": 592.68,
+      "end_seconds": 596.2,
+      "id": "EQHihSi2H8U-display-0206",
+      "segment_id": "EQHihSi2H8U-ja-0064"
+    },
+    {
+      "text": "ちょうどいいきっかけだなっていう、そう",
+      "start_seconds": 596.2,
+      "end_seconds": 598.16,
+      "id": "EQHihSi2H8U-display-0207",
+      "segment_id": "EQHihSi2H8U-ja-0065"
+    },
+    {
+      "text": "いう出来事があったんです。で、その時に",
+      "start_seconds": 598.16,
+      "end_seconds": 600.64,
+      "id": "EQHihSi2H8U-display-0208",
+      "segment_id": "EQHihSi2H8U-ja-0065"
+    },
+    {
+      "text": "私は思いました。もうさっさと蹴りつけて",
+      "start_seconds": 600.64,
+      "end_seconds": 604.279,
+      "id": "EQHihSi2H8U-display-0209",
+      "segment_id": "EQHihSi2H8U-ja-0065"
+    },
+    {
+      "text": "楽になりたいやと。で、あの、再開しまし",
+      "start_seconds": 604.279,
+      "end_seconds": 608.399,
+      "id": "EQHihSi2H8U-display-0210",
+      "segment_id": "EQHihSi2H8U-ja-0066"
+    },
+    {
+      "text": "た。でも再開してから出来上がるまで約",
+      "start_seconds": 608.399,
+      "end_seconds": 612.56,
+      "id": "EQHihSi2H8U-display-0211",
+      "segment_id": "EQHihSi2H8U-ja-0066"
+    },
+    {
+      "text": "10年ぐらいかかりました。で、その10",
+      "start_seconds": 612.56,
+      "end_seconds": 615.0,
+      "id": "EQHihSi2H8U-display-0212",
+      "segment_id": "EQHihSi2H8U-ja-0066"
+    },
+    {
+      "text": "年間私はですね、ああ、もう出来上がっ",
+      "start_seconds": 615.0,
+      "end_seconds": 617.36,
+      "id": "EQHihSi2H8U-display-0213",
+      "segment_id": "EQHihSi2H8U-ja-0067"
+    },
+    {
+      "text": "たら出来上がったらこれはああ、残念でし",
+      "start_seconds": 617.36,
+      "end_seconds": 620.12,
+      "id": "EQHihSi2H8U-display-0214",
+      "segment_id": "EQHihSi2H8U-ja-0067"
+    },
+    {
+      "text": "た。おしまいでしたね。ペって捨てようと",
+      "start_seconds": 620.12,
+      "end_seconds": 622.16,
+      "id": "EQHihSi2H8U-display-0215",
+      "segment_id": "EQHihSi2H8U-ja-0067"
+    },
+    {
+      "text": "そういう風に思ってたんですよ。で、",
+      "start_seconds": 622.16,
+      "end_seconds": 624.079,
+      "id": "EQHihSi2H8U-display-0216",
+      "segment_id": "EQHihSi2H8U-ja-0067"
+    },
+    {
+      "text": "だんだんに作り上がってきて、だんだん",
+      "start_seconds": 624.079,
+      "end_seconds": 626.76,
+      "id": "EQHihSi2H8U-display-0217",
+      "segment_id": "EQHihSi2H8U-ja-0067"
+    },
+    {
+      "text": "そろそろ視界が終わりが近くに行ってきた",
+      "start_seconds": 626.76,
+      "end_seconds": 629.32,
+      "id": "EQHihSi2H8U-display-0218",
+      "segment_id": "EQHihSi2H8U-ja-0068"
+    },
+    {
+      "text": "なと思ったらまたけいちゃんが出てきて",
+      "start_seconds": 629.32,
+      "end_seconds": 633.2,
+      "id": "EQHihSi2H8U-display-0219",
+      "segment_id": "EQHihSi2H8U-ja-0068"
+    },
+    {
+      "text": "言うんですよ。あ、[ため息]そろそろ",
+      "start_seconds": 633.2,
+      "end_seconds": 635.519,
+      "id": "EQHihSi2H8U-display-0220",
+      "segment_id": "EQHihSi2H8U-ja-0068"
+    },
+    {
+      "text": "出来上がりましたね。もうそろそろこんな",
+      "start_seconds": 635.519,
+      "end_seconds": 638.399,
+      "id": "EQHihSi2H8U-display-0221",
+      "segment_id": "EQHihSi2H8U-ja-0068"
+    },
+    {
+      "text": "になったら公開したいだろう。配信したい",
+      "start_seconds": 638.399,
+      "end_seconds": 641.24,
+      "id": "EQHihSi2H8U-display-0222",
+      "segment_id": "EQHihSi2H8U-ja-0069"
+    },
+    {
+      "text": "だの。相談に行けるところがそんなが他に",
+      "start_seconds": 641.24,
+      "end_seconds": 645.16,
+      "id": "EQHihSi2H8U-display-0223",
+      "segment_id": "EQHihSi2H8U-ja-0069"
+    },
+    {
+      "text": "もあなたありますよね。行かないんですか",
+      "start_seconds": 645.16,
+      "end_seconds": 648.36,
+      "id": "EQHihSi2H8U-display-0224",
+      "segment_id": "EQHihSi2H8U-ja-0069"
+    },
+    {
+      "text": "?いいのかな?後でぐジぐじ後悔するん",
+      "start_seconds": 648.36,
+      "end_seconds": 652.8,
+      "id": "EQHihSi2H8U-display-0225",
+      "segment_id": "EQHihSi2H8U-ja-0070"
+    },
+    {
+      "text": "じゃないのかなって。そういうんですね。",
+      "start_seconds": 652.8,
+      "end_seconds": 656.72,
+      "id": "EQHihSi2H8U-display-0226",
+      "segment_id": "EQHihSi2H8U-ja-0070"
+    },
+    {
+      "text": "もうそこでですね、私はですね、あのそん",
+      "start_seconds": 656.72,
+      "end_seconds": 659.88,
+      "id": "EQHihSi2H8U-display-0227",
+      "segment_id": "EQHihSi2H8U-ja-0071"
+    },
+    {
+      "text": "時にはもう争いませんでした。ああ、作用",
+      "start_seconds": 659.88,
+      "end_seconds": 663.0,
+      "id": "EQHihSi2H8U-display-0228",
+      "segment_id": "EQHihSi2H8U-ja-0071"
+    },
+    {
+      "text": "でございますよねって。そういう風に言っ",
+      "start_seconds": 663.0,
+      "end_seconds": 665.16,
+      "id": "EQHihSi2H8U-display-0229",
+      "segment_id": "EQHihSi2H8U-ja-0071"
+    },
+    {
+      "text": "て、あの、自分のところにいろんなあの",
+      "start_seconds": 665.16,
+      "end_seconds": 668.04,
+      "id": "EQHihSi2H8U-display-0230",
+      "segment_id": "EQHihSi2H8U-ja-0071"
+    },
+    {
+      "text": "集まりとかお誘いとかそういうような着て",
+      "start_seconds": 668.04,
+      "end_seconds": 671.079,
+      "id": "EQHihSi2H8U-display-0231",
+      "segment_id": "EQHihSi2H8U-ja-0072"
+    },
+    {
+      "text": "た案内にどんどん自分で出てってですね。",
+      "start_seconds": 671.079,
+      "end_seconds": 673.88,
+      "id": "EQHihSi2H8U-display-0232",
+      "segment_id": "EQHihSi2H8U-ja-0072"
+    },
+    {
+      "text": "で、ま、さっきのあのデータベースの資料",
+      "start_seconds": 673.88,
+      "end_seconds": 676.279,
+      "id": "EQHihSi2H8U-display-0233",
+      "segment_id": "EQHihSi2H8U-ja-0073"
+    },
+    {
+      "text": "を作ってこんなの作ってんです。配信し",
+      "start_seconds": 676.279,
+      "end_seconds": 678.959,
+      "id": "EQHihSi2H8U-display-0234",
+      "segment_id": "EQHihSi2H8U-ja-0073"
+    },
+    {
+      "text": "たいんですっていう風に広めて回りました",
+      "start_seconds": 678.959,
+      "end_seconds": 680.8,
+      "id": "EQHihSi2H8U-display-0235",
+      "segment_id": "EQHihSi2H8U-ja-0073"
+    },
+    {
+      "text": "。そしたら今の鹿児島大学の先生にお会い",
+      "start_seconds": 680.8,
+      "end_seconds": 684.88,
+      "id": "EQHihSi2H8U-display-0236",
+      "segment_id": "EQHihSi2H8U-ja-0073"
+    },
+    {
+      "text": "していやうち出せますよっていうことで",
+      "start_seconds": 684.88,
+      "end_seconds": 687.959,
+      "id": "EQHihSi2H8U-display-0237",
+      "segment_id": "EQHihSi2H8U-ja-0074"
+    },
+    {
+      "text": "あんと話が進んでま現在に至るですけど今",
+      "start_seconds": 687.959,
+      "end_seconds": 693.92,
+      "id": "EQHihSi2H8U-display-0238",
+      "segment_id": "EQHihSi2H8U-ja-0074"
+    },
+    {
+      "text": "私は思うんですよ。じゃあ私あの放棄",
+      "start_seconds": 693.92,
+      "end_seconds": 696.8,
+      "id": "EQHihSi2H8U-display-0239",
+      "segment_id": "EQHihSi2H8U-ja-0074"
+    },
+    {
+      "text": "しようとしてた5年間って何だったの?",
+      "start_seconds": 696.8,
+      "end_seconds": 701.12,
+      "id": "EQHihSi2H8U-display-0240",
+      "segment_id": "EQHihSi2H8U-ja-0075"
+    },
+    {
+      "text": "私はねあやめるやめるとか言っときながら",
+      "start_seconds": 701.12,
+      "end_seconds": 705.399,
+      "id": "EQHihSi2H8U-display-0241",
+      "segment_id": "EQHihSi2H8U-ja-0076"
+    },
+    {
+      "text": "ものすごく未練たらだったんだなあと思う",
+      "start_seconds": 705.399,
+      "end_seconds": 708.68,
+      "id": "EQHihSi2H8U-display-0242",
+      "segment_id": "EQHihSi2H8U-ja-0076"
+    },
+    {
+      "text": "。そのデータベースというのが利用者に",
+      "start_seconds": 708.68,
+      "end_seconds": 712.24,
+      "id": "EQHihSi2H8U-display-0243",
+      "segment_id": "EQHihSi2H8U-ja-0076"
+    },
+    {
+      "text": "とって価値があるんだってことは分かって",
+      "start_seconds": 712.24,
+      "end_seconds": 715.24,
+      "id": "EQHihSi2H8U-display-0244",
+      "segment_id": "EQHihSi2H8U-ja-0077"
+    },
+    {
+      "text": "た。だけどそこは自分を騙して自分の目先",
+      "start_seconds": 715.24,
+      "end_seconds": 720.32,
+      "id": "EQHihSi2H8U-display-0245",
+      "segment_id": "EQHihSi2H8U-ja-0077"
+    },
+    {
+      "text": "の尊徳だけ考えてやめたろってしたんだと",
+      "start_seconds": 720.32,
+      "end_seconds": 723.68,
+      "id": "EQHihSi2H8U-display-0246",
+      "segment_id": "EQHihSi2H8U-ja-0077"
+    },
+    {
+      "text": "思うんです。だけど自分のことを騙しきれ",
+      "start_seconds": 723.68,
+      "end_seconds": 727.8,
+      "id": "EQHihSi2H8U-display-0247",
+      "segment_id": "EQHihSi2H8U-ja-0078"
+    },
+    {
+      "text": "なかったんだ。",
+      "start_seconds": 727.8,
+      "end_seconds": 730.04,
+      "id": "EQHihSi2H8U-display-0248",
+      "segment_id": "EQHihSi2H8U-ja-0078"
+    },
+    {
+      "text": "でもさあ、皆さん本当に最後まで完全に",
+      "start_seconds": 730.04,
+      "end_seconds": 735.079,
+      "id": "EQHihSi2H8U-display-0249",
+      "segment_id": "EQHihSi2H8U-ja-0079"
+    },
+    {
+      "text": "騙しきろうと思ったら1番騙しきれない",
+      "start_seconds": 735.079,
+      "end_seconds": 738.519,
+      "id": "EQHihSi2H8U-display-0250",
+      "segment_id": "EQHihSi2H8U-ja-0079"
+    },
+    {
+      "text": "のって自分自身じゃないですか?そこは",
+      "start_seconds": 738.519,
+      "end_seconds": 742.639,
+      "id": "EQHihSi2H8U-display-0251",
+      "segment_id": "EQHihSi2H8U-ja-0080"
+    },
+    {
+      "text": "みんな同じじゃないんですか?",
+      "start_seconds": 742.639,
+      "end_seconds": 747.0,
+      "id": "EQHihSi2H8U-display-0252",
+      "segment_id": "EQHihSi2H8U-ja-0080"
+    },
+    {
+      "text": "ま、私は騙しきれなかった。だけどそれっ",
+      "start_seconds": 747.0,
+      "end_seconds": 751.12,
+      "id": "EQHihSi2H8U-display-0253",
+      "segment_id": "EQHihSi2H8U-ja-0081"
+    },
+    {
+      "text": "て別の言い方をしたらね、私は自分の",
+      "start_seconds": 751.12,
+      "end_seconds": 754.72,
+      "id": "EQHihSi2H8U-display-0254",
+      "segment_id": "EQHihSi2H8U-ja-0081"
+    },
+    {
+      "text": "データベースの価値を最後まで信じきった",
+      "start_seconds": 754.72,
+      "end_seconds": 757.76,
+      "id": "EQHihSi2H8U-display-0255",
+      "segment_id": "EQHihSi2H8U-ja-0081"
+    },
+    {
+      "text": "んだ。そうと思う。だから未練たらなった",
+      "start_seconds": 757.76,
+      "end_seconds": 762.6,
+      "id": "EQHihSi2H8U-display-0256",
+      "segment_id": "EQHihSi2H8U-ja-0082"
+    },
+    {
+      "text": "んだと。他の誰もね、あ、公開配信する",
+      "start_seconds": 762.6,
+      "end_seconds": 767.519,
+      "id": "EQHihSi2H8U-display-0257",
+      "segment_id": "EQHihSi2H8U-ja-0082"
+    },
+    {
+      "text": "ほどの価値があるとは思わなかった",
+      "start_seconds": 767.519,
+      "end_seconds": 769.639,
+      "id": "EQHihSi2H8U-display-0258",
+      "segment_id": "EQHihSi2H8U-ja-0082"
+    },
+    {
+      "text": "データベース",
+      "start_seconds": 769.639,
+      "end_seconds": 771.16,
+      "id": "EQHihSi2H8U-display-0259",
+      "segment_id": "EQHihSi2H8U-ja-0083"
+    },
+    {
+      "text": "でも自分だけはま、その価値を一応信じて",
+      "start_seconds": 771.16,
+      "end_seconds": 774.839,
+      "id": "EQHihSi2H8U-display-0260",
+      "segment_id": "EQHihSi2H8U-ja-0083"
+    },
+    {
+      "text": "最後まで作り切った。で、私はもしこの",
+      "start_seconds": 774.839,
+      "end_seconds": 779.72,
+      "id": "EQHihSi2H8U-display-0261",
+      "segment_id": "EQHihSi2H8U-ja-0083"
+    },
+    {
+      "text": "データベースがね、本当に世に出なくって",
+      "start_seconds": 779.72,
+      "end_seconds": 782.399,
+      "id": "EQHihSi2H8U-display-0262",
+      "segment_id": "EQHihSi2H8U-ja-0084"
+    },
+    {
+      "text": "、そしてあ、おしまいになってしまっても",
+      "start_seconds": 782.399,
+      "end_seconds": 785.959,
+      "id": "EQHihSi2H8U-display-0263",
+      "segment_id": "EQHihSi2H8U-ja-0084"
+    },
+    {
+      "text": "最後まで作り切った時点でああ、もうこれ",
+      "start_seconds": 785.959,
+      "end_seconds": 789.959,
+      "id": "EQHihSi2H8U-display-0264",
+      "segment_id": "EQHihSi2H8U-ja-0084"
+    },
+    {
+      "text": "はこれでいいやと諦められたと思うんです",
+      "start_seconds": 789.959,
+      "end_seconds": 792.839,
+      "id": "EQHihSi2H8U-display-0265",
+      "segment_id": "EQHihSi2H8U-ja-0085"
+    },
+    {
+      "text": "。もうその時にはけいちゃん出てこなかっ",
+      "start_seconds": 792.839,
+      "end_seconds": 795.92,
+      "id": "EQHihSi2H8U-display-0266",
+      "segment_id": "EQHihSi2H8U-ja-0085"
+    },
+    {
+      "text": "たと思います。",
+      "start_seconds": 795.92,
+      "end_seconds": 798.399,
+      "id": "EQHihSi2H8U-display-0267",
+      "segment_id": "EQHihSi2H8U-ja-0085"
+    },
+    {
+      "text": "価値あるものを作ったからと言ってそれが",
+      "start_seconds": 798.399,
+      "end_seconds": 801.72,
+      "id": "EQHihSi2H8U-display-0268",
+      "segment_id": "EQHihSi2H8U-ja-0086"
+    },
+    {
+      "text": "必ず評価されるとは限らないじゃないです",
+      "start_seconds": 801.72,
+      "end_seconds": 804.32,
+      "id": "EQHihSi2H8U-display-0269",
+      "segment_id": "EQHihSi2H8U-ja-0086"
+    },
+    {
+      "text": "か。だってどんなにいい製品作ったって",
+      "start_seconds": 804.32,
+      "end_seconds": 807.72,
+      "id": "EQHihSi2H8U-display-0270",
+      "segment_id": "EQHihSi2H8U-ja-0086"
+    },
+    {
+      "text": "売れない時は売れないじゃないですか。だ",
+      "start_seconds": 807.72,
+      "end_seconds": 810.839,
+      "id": "EQHihSi2H8U-display-0271",
+      "segment_id": "EQHihSi2H8U-ja-0087"
+    },
+    {
+      "text": "から価値のあるものの中でいくつかは",
+      "start_seconds": 810.839,
+      "end_seconds": 814.399,
+      "id": "EQHihSi2H8U-display-0272",
+      "segment_id": "EQHihSi2H8U-ja-0087"
+    },
+    {
+      "text": "たまたま評価される場合もある。こんな",
+      "start_seconds": 814.399,
+      "end_seconds": 818.16,
+      "id": "EQHihSi2H8U-display-0273",
+      "segment_id": "EQHihSi2H8U-ja-0087"
+    },
+    {
+      "text": "感じじゃないんですか?私がもし評価さ",
+      "start_seconds": 818.16,
+      "end_seconds": 822.04,
+      "id": "EQHihSi2H8U-display-0274",
+      "segment_id": "EQHihSi2H8U-ja-0088"
+    },
+    {
+      "text": "れるものを最初から狙っていたらあの",
+      "start_seconds": 822.04,
+      "end_seconds": 825.24,
+      "id": "EQHihSi2H8U-display-0275",
+      "segment_id": "EQHihSi2H8U-ja-0088"
+    },
+    {
+      "text": "データベースは絶対に再完成しませんでし",
+      "start_seconds": 825.24,
+      "end_seconds": 828.76,
+      "id": "EQHihSi2H8U-display-0276",
+      "segment_id": "EQHihSi2H8U-ja-0088"
+    },
+    {
+      "text": "た。",
+      "start_seconds": 828.76,
+      "end_seconds": 831.0,
+      "id": "EQHihSi2H8U-display-0277",
+      "segment_id": "EQHihSi2H8U-ja-0089"
+    },
+    {
+      "text": "周りは評価しなくとも、ま、自分がし判断",
+      "start_seconds": 831.0,
+      "end_seconds": 835.04,
+      "id": "EQHihSi2H8U-display-0278",
+      "segment_id": "EQHihSi2H8U-ja-0090"
+    },
+    {
+      "text": "した判断は信じて、ま、できるところまで",
+      "start_seconds": 835.04,
+      "end_seconds": 838.04,
+      "id": "EQHihSi2H8U-display-0279",
+      "segment_id": "EQHihSi2H8U-ja-0090"
+    },
+    {
+      "text": "は全部やってみる。今ようやく私はですね",
+      "start_seconds": 838.04,
+      "end_seconds": 841.8,
+      "id": "EQHihSi2H8U-display-0280",
+      "segment_id": "EQHihSi2H8U-ja-0090"
+    },
+    {
+      "text": "、そこにね、たどり着いたんだろうなって",
+      "start_seconds": 841.8,
+      "end_seconds": 844.639,
+      "id": "EQHihSi2H8U-display-0281",
+      "segment_id": "EQHihSi2H8U-ja-0091"
+    },
+    {
+      "text": "いう風に思うんです。でも皆さん皆さんに",
+      "start_seconds": 844.639,
+      "end_seconds": 850.079,
+      "id": "EQHihSi2H8U-display-0282",
+      "segment_id": "EQHihSi2H8U-ja-0091"
+    },
+    {
+      "text": "だって周りは評価しないけど違うって言う",
+      "start_seconds": 850.079,
+      "end_seconds": 854.92,
+      "id": "EQHihSi2H8U-display-0283",
+      "segment_id": "EQHihSi2H8U-ja-0092"
+    },
+    {
+      "text": "けれど自分にはこう思えるこう価値がある",
+      "start_seconds": 854.92,
+      "end_seconds": 859.279,
+      "id": "EQHihSi2H8U-display-0284",
+      "segment_id": "EQHihSi2H8U-ja-0092"
+    },
+    {
+      "text": "と思えるっていうものが皆さんの中にも",
+      "start_seconds": 859.279,
+      "end_seconds": 862.839,
+      "id": "EQHihSi2H8U-display-0285",
+      "segment_id": "EQHihSi2H8U-ja-0093"
+    },
+    {
+      "text": "あるんじゃないんですか?",
+      "start_seconds": 862.839,
+      "end_seconds": 865.56,
+      "id": "EQHihSi2H8U-display-0286",
+      "segment_id": "EQHihSi2H8U-ja-0093"
+    },
+    {
+      "text": "それどうしますか?",
+      "start_seconds": 865.56,
+      "end_seconds": 869.48,
+      "id": "EQHihSi2H8U-display-0287",
+      "segment_id": "EQHihSi2H8U-ja-0094"
+    },
+    {
+      "text": "私ね、あの今もデータ入力を続けてるん",
+      "start_seconds": 869.48,
+      "end_seconds": 872.839,
+      "id": "EQHihSi2H8U-display-0288",
+      "segment_id": "EQHihSi2H8U-ja-0095"
+    },
+    {
+      "text": "です。これは全く別のデータベースで、",
+      "start_seconds": 872.839,
+      "end_seconds": 875.88,
+      "id": "EQHihSi2H8U-display-0289",
+      "segment_id": "EQHihSi2H8U-ja-0095"
+    },
+    {
+      "text": "あのこれもあったら利用者の人便利かなっ",
+      "start_seconds": 875.88,
+      "end_seconds": 878.56,
+      "id": "EQHihSi2H8U-display-0290",
+      "segment_id": "EQHihSi2H8U-ja-0095"
+    },
+    {
+      "text": "て思うようなそんなデータなんですけど、",
+      "start_seconds": 878.56,
+      "end_seconds": 881.0,
+      "id": "EQHihSi2H8U-display-0291",
+      "segment_id": "EQHihSi2H8U-ja-0095"
+    },
+    {
+      "text": "言ってまたね、どうせね、最後まで作るん",
+      "start_seconds": 881.0,
+      "end_seconds": 883.88,
+      "id": "EQHihSi2H8U-display-0292",
+      "segment_id": "EQHihSi2H8U-ja-0096"
+    },
+    {
+      "text": "だろうなってそんな風に思いながら、あ、",
+      "start_seconds": 883.88,
+      "end_seconds": 887.759,
+      "id": "EQHihSi2H8U-display-0293",
+      "segment_id": "EQHihSi2H8U-ja-0096"
+    },
+    {
+      "text": "ちまちまと作業をやっております。",
+      "start_seconds": 887.759,
+      "end_seconds": 891.68,
+      "id": "EQHihSi2H8U-display-0294",
+      "segment_id": "EQHihSi2H8U-ja-0096"
+    },
+    {
+      "text": "ありがとうございました。[拍手]",
+      "start_seconds": 891.68,
+      "end_seconds": 895.4499999999999,
+      "id": "EQHihSi2H8U-display-0295",
+      "segment_id": "EQHihSi2H8U-ja-0097"
+    }
+  ]
+}

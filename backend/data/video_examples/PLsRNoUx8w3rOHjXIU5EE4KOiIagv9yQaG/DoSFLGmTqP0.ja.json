@@ -1,0 +1,4932 @@
+{
+  "schema_version": 1,
+  "video": {
+    "youtube_id": "DoSFLGmTqP0",
+    "title": "Artificial Intelligence and Ikigai: The joy of being human in the era of AI | Ken Mogi | TEDxMaru...",
+    "channel": "TEDx Talks",
+    "duration_seconds": 1092
+  },
+  "caption_track": {
+    "language": "ja",
+    "kind": "asr",
+    "source": "youtube_automatic"
+  },
+  "source_playlist": "https://www.youtube.com/playlist?list=PLsRNoUx8w3rOHjXIU5EE4KOiIagv9yQaG",
+  "fetched_at": "2026-10-13T13:24:10.235206+00:00",
+  "segment_count": 115,
+  "segments": [
+    {
+      "text": "[音楽]",
+      "start_seconds": 9.825,
+      "end_seconds": 11.844999999999999,
+      "id": "DoSFLGmTqP0-ja-0001",
+      "sequence": 1
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 13.1,
+      "end_seconds": 15.12,
+      "id": "DoSFLGmTqP0-ja-0002",
+      "sequence": 2
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 17.685,
+      "end_seconds": 19.705,
+      "id": "DoSFLGmTqP0-ja-0003",
+      "sequence": 3
+    },
+    {
+      "text": "人類は今あの歴史の別れ道に来ていると思うんですね。",
+      "start_seconds": 24.76,
+      "end_seconds": 30.439,
+      "id": "DoSFLGmTqP0-ja-0004",
+      "sequence": 4
+    },
+    {
+      "text": "人口知能が本当に我々の手に負えないぐらい急速に発展しています。人工知能",
+      "start_seconds": 30.439,
+      "end_seconds": 38.96,
+      "id": "DoSFLGmTqP0-ja-0005",
+      "sequence": 5
+    },
+    {
+      "text": "って実は一定期間ごとに2倍ずつ賢くなるような成長してるんですけど皆さんの周りに会うたびに2倍賢くなってる人ってい",
+      "start_seconds": 38.96,
+      "end_seconds": 49.8,
+      "id": "DoSFLGmTqP0-ja-0006",
+      "sequence": 6
+    },
+    {
+      "text": "ます?いや、あいつね、この前2カ国語喋ってたんだけど、1ヶ月後81630128っていう人はいないですよね。",
+      "start_seconds": 49.8,
+      "end_seconds": 60.64,
+      "id": "DoSFLGmTqP0-ja-0007",
+      "sequence": 7
+    },
+    {
+      "text": "そういう人工知能の成長の仕方を指数関数的と言うんですけれども、このような成長",
+      "start_seconds": 60.64,
+      "end_seconds": 69.52,
+      "id": "DoSFLGmTqP0-ja-0008",
+      "sequence": 8
+    },
+    {
+      "text": "の元に何があるのかというのは実は分かっていないんです。信頼ティって言葉聞いたことあると思うんですよね。人工知能が",
+      "start_seconds": 69.52,
+      "end_seconds": 79.24,
+      "id": "DoSFLGmTqP0-ja-0009",
+      "sequence": 9
+    },
+    {
+      "text": "人間の知性を追い越してさらにすごいところに行ってしまう。じゃあその先には何があるのか。世の中には今楽観論と悲観",
+      "start_seconds": 79.24,
+      "end_seconds": 90.72,
+      "id": "DoSFLGmTqP0-ja-0010",
+      "sequence": 10
+    },
+    {
+      "text": "論両方あるんですね。楽観論のブーマーという方々はもう我々はもうかつてないような反栄を手にするんだと。誰でもどこでも",
+      "start_seconds": 90.72,
+      "end_seconds": 100.88,
+      "id": "DoSFLGmTqP0-ja-0011",
+      "sequence": 11
+    },
+    {
+      "text": "行けるし何でも手に入る。そういう素晴らしい世界が来るんだと考えています。一方ドゥーマーの方々はもう人類の破滅",
+      "start_seconds": 100.88,
+      "end_seconds": 110.079,
+      "id": "DoSFLGmTqP0-ja-0012",
+      "sequence": 12
+    },
+    {
+      "text": "が近い。人類は滅亡するんだというようなことを言う方もいらっしゃるんですね。",
+      "start_seconds": 110.079,
+      "end_seconds": 115.88,
+      "id": "DoSFLGmTqP0-ja-0013",
+      "sequence": 13
+    },
+    {
+      "text": "技術的なプロメテウス主義という方々がいらっしゃって、ま、プロメテウスというのは神話の存在で人類に火をもたらした人",
+      "start_seconds": 115.88,
+      "end_seconds": 125.64,
+      "id": "DoSFLGmTqP0-ja-0014",
+      "sequence": 14
+    },
+    {
+      "text": "なんですけども、新しいプロメテウスが誕生しようとしてるんだっていう方々もいます。人工知能っていうのは新しい日なんだと。この日を使って我々は何でもできる",
+      "start_seconds": 125.64,
+      "end_seconds": 137.36,
+      "id": "DoSFLGmTqP0-ja-0015",
+      "sequence": 15
+    },
+    {
+      "text": "んだという方々もいらっしゃるんです。",
+      "start_seconds": 137.36,
+      "end_seconds": 139.959,
+      "id": "DoSFLGmTqP0-ja-0016",
+      "sequence": 16
+    },
+    {
+      "text": "確かに火を使って我々料理をしたり、それから蒸気でものすごく早く動いたりとか、ロケットで月さらには火星まで行こうとし",
+      "start_seconds": 139.959,
+      "end_seconds": 150.319,
+      "id": "DoSFLGmTqP0-ja-0017",
+      "sequence": 17
+    },
+    {
+      "text": "てますよね。でも日って同時に怖いものですよね。火傷することもあるし火事になることもある。我々はこの人工知能と",
+      "start_seconds": 150.319,
+      "end_seconds": 160.84,
+      "id": "DoSFLGmTqP0-ja-0018",
+      "sequence": 18
+    },
+    {
+      "text": "いう新しい費を果たしてうまく使いこなせるのかどうか。これを研究する分野をAIアラインメントと言うんですね。",
+      "start_seconds": 160.84,
+      "end_seconds": 172.08,
+      "id": "DoSFLGmTqP0-ja-0019",
+      "sequence": 19
+    },
+    {
+      "text": "アラインメントというのは何かと何かを、ま、並べる、うまく方向を合わせる、調和させるという考え方なんですけども、",
+      "start_seconds": 172.08,
+      "end_seconds": 180.44,
+      "id": "DoSFLGmTqP0-ja-0020",
+      "sequence": 20
+    },
+    {
+      "text": "果たしてこのAIと人間がアラインメントできるかどうか、これがまさに今我々の",
+      "start_seconds": 180.44,
+      "end_seconds": 188.68,
+      "id": "DoSFLGmTqP0-ja-0021",
+      "sequence": 21
+    },
+    {
+      "text": "歴史の分岐点でどうなるのかなと考えてるところなんです。",
+      "start_seconds": 188.68,
+      "end_seconds": 196.599,
+      "id": "DoSFLGmTqP0-ja-0022",
+      "sequence": 22
+    },
+    {
+      "text": "ところで、あの、皆さんはどういう時に幸せを感じますか?人工知能がね、どんなに発展しても我々人間のウェルビーングが",
+      "start_seconds": 196.599,
+      "end_seconds": 208.12,
+      "id": "DoSFLGmTqP0-ja-0023",
+      "sequence": 23
+    },
+    {
+      "text": "脅やかされたら意味がないと思いませんか?この点についてですね、え、レクスフィーマンというMITの僕は本当に尊敬するAIの研究者がいらっしゃるん",
+      "start_seconds": 208.12,
+      "end_seconds": 220.12,
+      "id": "DoSFLGmTqP0-ja-0024",
+      "sequence": 24
+    },
+    {
+      "text": "ですけど、そのレフィーマンさんがやってらっしゃるポッドキャストがありまして、毎回ゲストが来て2、3時間、え、お話するんですけども、え、ヤンポルスキーさんっていう方がいらした時ににポルスキー",
+      "start_seconds": 220.12,
+      "end_seconds": 231.64,
+      "id": "DoSFLGmTqP0-ja-0025",
+      "sequence": 25
+    },
+    {
+      "text": "さんがこのまさにAIと人間の幸せウェルビングの関係を考える上で生きリスクというのがあるという話をしたん",
+      "start_seconds": 231.64,
+      "end_seconds": 242.76,
+      "id": "DoSFLGmTqP0-ja-0026",
+      "sequence": 26
+    },
+    {
+      "text": "ですね。生き、これ日本語の言葉です。",
+      "start_seconds": 242.76,
+      "end_seconds": 246.76,
+      "id": "DoSFLGmTqP0-ja-0027",
+      "sequence": 27
+    },
+    {
+      "text": "生きのリスクがある。これどういうことでしょうか?人工知能が我々の生活にもたらす変化として我々の仕事がなくなっちゃうんじゃないかってこと言う人います",
+      "start_seconds": 246.76,
+      "end_seconds": 256.4,
+      "id": "DoSFLGmTqP0-ja-0028",
+      "sequence": 28
+    },
+    {
+      "text": "よね。今でなんか例えば絵を書いてた人の代わり人口が絵を書く。今まで例えば通訳とか翻訳をやってた人の代わりにそういう",
+      "start_seconds": 256.4,
+      "end_seconds": 267.16,
+      "id": "DoSFLGmTqP0-ja-0029",
+      "sequence": 29
+    },
+    {
+      "text": "こと人工知能がやってしまう。もう人間いらなくなるんじゃないか。人工知能が全部やってしまうんじゃないかっていうことを考える人たちがいます。で、これは",
+      "start_seconds": 267.16,
+      "end_seconds": 277.52,
+      "id": "DoSFLGmTqP0-ja-0030",
+      "sequence": 30
+    },
+    {
+      "text": "これで大変なことなんですけども、ヤンポルスキーさんがそのレクスウィードマンさんのポッドキャストで議論した生がいリスクというのは我々のこの",
+      "start_seconds": 277.52,
+      "end_seconds": 289.199,
+      "id": "DoSFLGmTqP0-ja-0031",
+      "sequence": 31
+    },
+    {
+      "text": "生きがい、生きる実感これま、日本語なんですよね。この日本語が生きがいという形で今世界中に注目されてるんですけども、この生がいが失われてしまうんじゃないか",
+      "start_seconds": 289.199,
+      "end_seconds": 299.28,
+      "id": "DoSFLGmTqP0-ja-0032",
+      "sequence": 32
+    },
+    {
+      "text": "と、そういうことを、ま、議論したわけです。で、この実は生がいということを考えると人工知能と人間がどこが違うのか",
+      "start_seconds": 299.28,
+      "end_seconds": 309.08,
+      "id": "DoSFLGmTqP0-ja-0033",
+      "sequence": 33
+    },
+    {
+      "text": "、そしてどうやったらそれをアラインメントできるのかということが見えてくるんです。皆さん人工知能本当にすごいですよね。今ね、彼らがどうやって",
+      "start_seconds": 309.08,
+      "end_seconds": 319.759,
+      "id": "DoSFLGmTqP0-ja-0034",
+      "sequence": 34
+    },
+    {
+      "text": "学習してるかご存知ですか?人工知能は外から点数をつけられないと学習ができないんです。これ、あの、専門的には評価関数",
+      "start_seconds": 319.759,
+      "end_seconds": 330.6,
+      "id": "DoSFLGmTqP0-ja-0035",
+      "sequence": 35
+    },
+    {
+      "text": "とか言うんですけども、今の奇妙このアウトプットは30点だよとか、今度45点になったよって、70点、80点を",
+      "start_seconds": 330.6,
+      "end_seconds": 339.88,
+      "id": "DoSFLGmTqP0-ja-0036",
+      "sequence": 36
+    },
+    {
+      "text": "目指そうねと、このような外からのフィードバックがあって、じゃあAIはもうじゃ、一生懸命100点を目指して学習していくと、このような形で今の人口",
+      "start_seconds": 339.88,
+      "end_seconds": 349.4,
+      "id": "DoSFLGmTqP0-ja-0037",
+      "sequence": 37
+    },
+    {
+      "text": "知能というのは学習してるんですね。人間もそういうとこありますよね。子供時代なんか学校の成績学校だとかあと大人に",
+      "start_seconds": 349.4,
+      "end_seconds": 358.72,
+      "id": "DoSFLGmTqP0-ja-0038",
+      "sequence": 38
+    },
+    {
+      "text": "なったらね君はいくら稼いでるんだとかね給料いくらなんだとかあるいは今ソーシャルメディア前盛の時代ですから君のインスタのフォロワーはどれぐらいいる",
+      "start_seconds": 358.72,
+      "end_seconds": 369.68,
+      "id": "DoSFLGmTqP0-ja-0039",
+      "sequence": 39
+    },
+    {
+      "text": "んですかとかねYouTubeの動画はどれぐらい見られてるんですかというこういう外からの指標で我々まされるところが",
+      "start_seconds": 369.68,
+      "end_seconds": 378.56,
+      "id": "DoSFLGmTqP0-ja-0040",
+      "sequence": 40
+    },
+    {
+      "text": "あるわけなんですけど人口知能はまさにそういう外部評価によっって学習してるんですね。でも人間は実はそれだけじゃない",
+      "start_seconds": 378.56,
+      "end_seconds": 388.039,
+      "id": "DoSFLGmTqP0-ja-0041",
+      "sequence": 41
+    },
+    {
+      "text": "んです。我々の生きる実感ウェルビング。",
+      "start_seconds": 388.039,
+      "end_seconds": 392.24,
+      "id": "DoSFLGmTqP0-ja-0042",
+      "sequence": 42
+    },
+    {
+      "text": "この真ん中にあるこの生がいというのは外からの評価とは関係のない小さな喜びのことを指すんですよ。これが我々の人間で",
+      "start_seconds": 392.24,
+      "end_seconds": 403.12,
+      "id": "DoSFLGmTqP0-ja-0043",
+      "sequence": 43
+    },
+    {
+      "text": "ある証なんですね。例えば皆さん犬をね散歩に連れていくのが生きがいだとするじゃないですか。あら、奥さん、あなたの",
+      "start_seconds": 403.12,
+      "end_seconds": 412.96,
+      "id": "DoSFLGmTqP0-ja-0044",
+      "sequence": 44
+    },
+    {
+      "text": "今日の犬の散歩の仕方いいわね。昨日は60点だけど、今日は78点あげるわみたいなことは言われないですよね。あら",
+      "start_seconds": 412.96,
+      "end_seconds": 423.039,
+      "id": "DoSFLGmTqP0-ja-0045",
+      "sequence": 45
+    },
+    {
+      "text": "、コーヒーの飲み方いいね。今日はね。",
+      "start_seconds": 423.039,
+      "end_seconds": 426.479,
+      "id": "DoSFLGmTqP0-ja-0046",
+      "sequence": 46
+    },
+    {
+      "text": "昨日よりもなんかいいコーヒーの飲み方してるから君ちょっと評価関数上がったよっていうことはないでしょ。僕の生きがいは何を隠そう?子供の頃町長の行動の研究を",
+      "start_seconds": 426.479,
+      "end_seconds": 436.639,
+      "id": "DoSFLGmTqP0-ja-0047",
+      "sequence": 47
+    },
+    {
+      "text": "してたんで蝶が飛んでるのを見ると今でも本当に生がいを感じるんです。僕はあのランナーで東京を走っていると蝶が飛んでますよね",
+      "start_seconds": 436.639,
+      "end_seconds": 447.56,
+      "id": "DoSFLGmTqP0-ja-0048",
+      "sequence": 48
+    },
+    {
+      "text": "。そうすると日本にいる腸は大体見分がつくんです。これ生きがいなんですけど残念なことに今まで蝶ちが見分けられるということで褒められ",
+      "start_seconds": 447.56,
+      "end_seconds": 457.68,
+      "id": "DoSFLGmTqP0-ja-0049",
+      "sequence": 49
+    },
+    {
+      "text": "たことはほとんどない。ま、変わり物だなとか、あ、そういうのが好きなんですねって言って、ちょっと後は距離を置かれる",
+      "start_seconds": 457.68,
+      "end_seconds": 466.84,
+      "id": "DoSFLGmTqP0-ja-0050",
+      "sequence": 50
+    },
+    {
+      "text": "ことが多いんですけども、ただ生きがいというのはこのように他人から評価されたり、あるいは給料が",
+      "start_seconds": 466.84,
+      "end_seconds": 476.4,
+      "id": "DoSFLGmTqP0-ja-0051",
+      "sequence": 51
+    },
+    {
+      "text": "上がったり、社会的な地位が、ま、それによって確立するというようなこととは関係のない自分だけの小さな喜び、これが",
+      "start_seconds": 476.4,
+      "end_seconds": 486.84,
+      "id": "DoSFLGmTqP0-ja-0052",
+      "sequence": 52
+    },
+    {
+      "text": "生きがいなんですね。そういう意味においては人口知能とは全く違うんです。いや、将来は人工知能にも生きがいが持たされるような日が来るかもしれませんが、人工",
+      "start_seconds": 486.84,
+      "end_seconds": 497.8,
+      "id": "DoSFLGmTqP0-ja-0053",
+      "sequence": 53
+    },
+    {
+      "text": "知能はやっぱり外側の評価がないと何もできないんですね。我々は外側の評価がなくても小さな喜びを持つことができる。",
+      "start_seconds": 497.8,
+      "end_seconds": 506.96,
+      "id": "DoSFLGmTqP0-ja-0054",
+      "sequence": 54
+    },
+    {
+      "text": "日本は大国です。あ時、あの、ドイツのジャーナリストが私を訪ねてきまして、ちょうど春だったんですけど、僕に真顔で",
+      "start_seconds": 506.96,
+      "end_seconds": 517.64,
+      "id": "DoSFLGmTqP0-ja-0055",
+      "sequence": 55
+    },
+    {
+      "text": "質問するんですね。件1つ質問したいことがあるんだけど、なぜ日本人は桜が咲いたぐらいであんなに喜んでるんだって言うんですよ。ちょうどお花見の季節でね、",
+      "start_seconds": 517.64,
+      "end_seconds": 529.44,
+      "id": "DoSFLGmTqP0-ja-0056",
+      "sequence": 56
+    },
+    {
+      "text": "みんなお花見してたんですけど。で、僕は、え、ドイツでは花が咲いても喜ばないのって聞いたんですよ。そしたら",
+      "start_seconds": 529.44,
+      "end_seconds": 537.76,
+      "id": "DoSFLGmTqP0-ja-0057",
+      "sequence": 57
+    },
+    {
+      "text": "彼のすごく真面目な人で我々ドイツ人はそんなに簡単には喜ばない。我々が喜ぶのはクリスマスの時ぐらいだっておっしゃっ",
+      "start_seconds": 537.76,
+      "end_seconds": 549.0,
+      "id": "DoSFLGmTqP0-ja-0058",
+      "sequence": 58
+    },
+    {
+      "text": "て大変だなと思ったんですけど実は日本は小さな喜びに満ちた国なんですね。",
+      "start_seconds": 549.0,
+      "end_seconds": 557.0,
+      "id": "DoSFLGmTqP0-ja-0059",
+      "sequence": 59
+    },
+    {
+      "text": "2025年の春に大リーグの開幕戦が日本でありました。で、その時にアメリカから記者がいらして、日本のコンビニンス",
+      "start_seconds": 557.0,
+      "end_seconds": 565.16,
+      "id": "DoSFLGmTqP0-ja-0060",
+      "sequence": 60
+    },
+    {
+      "text": "ストアで卵サ道を買って、あまりの美味しさにも本当に嬉し、もう本当に喜んじゃったわけですよ。こんなのアメリカにないっ",
+      "start_seconds": 565.16,
+      "end_seconds": 575.16,
+      "id": "DoSFLGmTqP0-ja-0061",
+      "sequence": 61
+    },
+    {
+      "text": "て。で、我々にとってはそれは、ま、小さな喜びでそれを一生懸命作ってらっしゃる方がいらっしゃるんですけども、この生がいというのは考えてみますと",
+      "start_seconds": 575.16,
+      "end_seconds": 585.0,
+      "id": "DoSFLGmTqP0-ja-0062",
+      "sequence": 62
+    },
+    {
+      "text": "、元々はね、我々が子供の頃から持っている生きる実感とか喜びなんですけど、それが回り回って、ま、経済を回したり",
+      "start_seconds": 585.0,
+      "end_seconds": 595.36,
+      "id": "DoSFLGmTqP0-ja-0063",
+      "sequence": 63
+    },
+    {
+      "text": "文化を作ったりするんですよね。僕は、あの、かつて日本の公共放送で番組のキャスターをしてたことがありました。で",
+      "start_seconds": 595.36,
+      "end_seconds": 604.519,
+      "id": "DoSFLGmTqP0-ja-0064",
+      "sequence": 64
+    },
+    {
+      "text": "、その時にスタジオジブの宮崎はさんをインタビューしたんですね。宮崎さんその頃崖の上のポニョのエコテを書いてました。で、我々が行った時にもエコテを書き",
+      "start_seconds": 604.519,
+      "end_seconds": 616.04,
+      "id": "DoSFLGmTqP0-ja-0065",
+      "sequence": 65
+    },
+    {
+      "text": "ながら本当に楽しそうにされてたんですけど、宮崎はさんにとっては得点を書くことが生きがいなんです。生きがいというのは小さな喜びですから、それによって",
+      "start_seconds": 616.04,
+      "end_seconds": 626.279,
+      "id": "DoSFLGmTqP0-ja-0066",
+      "sequence": 66
+    },
+    {
+      "text": "世間にどう評価されるかってことは関係ないんですよね。ですから宮崎さんはエコテを書きながらこれでボックスオフィスの収入がこれぐらいになるとかアカデミーシをもらえるとかそういうこと",
+      "start_seconds": 626.279,
+      "end_seconds": 637.92,
+      "id": "DoSFLGmTqP0-ja-0067",
+      "sequence": 67
+    },
+    {
+      "text": "は考えてないんです。そういうことを考えてるのは隣に立っている鈴木俊男さんというプロデューサーの方なんですね。ま、これはプロデューサーのお仕事ですから。",
+      "start_seconds": 637.92,
+      "end_seconds": 647.519,
+      "id": "DoSFLGmTqP0-ja-0068",
+      "sequence": 68
+    },
+    {
+      "text": "でも皆さん考えてください。なぜ宮崎はさんのアニメーションはこれほど世界中の人を感動させるのでしょうか?ま、僕も",
+      "start_seconds": 647.519,
+      "end_seconds": 659.48,
+      "id": "DoSFLGmTqP0-ja-0069",
+      "sequence": 69
+    },
+    {
+      "text": "大好きなんですけど、隣のトロという宮崎さんの代表作があります。これはあのさと名というね、小さな女の子が、ま、お母さんが病院に入院されてまして",
+      "start_seconds": 659.48,
+      "end_seconds": 670.36,
+      "id": "DoSFLGmTqP0-ja-0070",
+      "sequence": 70
+    },
+    {
+      "text": "ちょっと不安なんですけどお父さんと一緒に田舎の一見屋に行って明るいところから暗いとこに急に行ったら真っ黒黒助がい",
+      "start_seconds": 670.36,
+      "end_seconds": 678.6,
+      "id": "DoSFLGmTqP0-ja-0071",
+      "sequence": 71
+    },
+    {
+      "text": "たりとかしの中に入っていたらトトロが寝ていたりとかそれから猫バスに出会ったりとかそういう不思議な経験を描いてるん",
+      "start_seconds": 678.6,
+      "end_seconds": 688.519,
+      "id": "DoSFLGmTqP0-ja-0072",
+      "sequence": 72
+    },
+    {
+      "text": "ですけどこれぞまさに子供時代の生が小さな喜びの表現なんですよね。僕は宮崎さんをスタジオでインタビューした時に",
+      "start_seconds": 688.519,
+      "end_seconds": 700.44,
+      "id": "DoSFLGmTqP0-ja-0073",
+      "sequence": 73
+    },
+    {
+      "text": "忘れられないことがあります。宮崎さんあの時5歳の男の子がジブリにいらしたんだそうですね。で、帰りはこの子を駅まで",
+      "start_seconds": 700.44,
+      "end_seconds": 709.839,
+      "id": "DoSFLGmTqP0-ja-0074",
+      "sequence": 74
+    },
+    {
+      "text": "送ってあげようと。その頃宮崎さんが運転していた車はフォローを外すとオープンカーになったんだそうです。この5歳の子",
+      "start_seconds": 709.839,
+      "end_seconds": 718.56,
+      "id": "DoSFLGmTqP0-ja-0075",
+      "sequence": 75
+    },
+    {
+      "text": "をオープンカーで駅まで送っていったらこの子は本当に喜ぶだろうなと思ってところが帰る時になったら小雨メが降って",
+      "start_seconds": 718.56,
+      "end_seconds": 728.519,
+      "id": "DoSFLGmTqP0-ja-0076",
+      "sequence": 76
+    },
+    {
+      "text": "きたんだそうです。",
+      "start_seconds": 728.519,
+      "end_seconds": 730.839,
+      "id": "DoSFLGmTqP0-ja-0077",
+      "sequence": 77
+    },
+    {
+      "text": "残念だけど、また次来た時にこの子じゃあお、オープンカーで送ってあげようと。",
+      "start_seconds": 730.839,
+      "end_seconds": 737.6,
+      "id": "DoSFLGmTqP0-ja-0078",
+      "sequence": 78
+    },
+    {
+      "text": "今日は雨が降ってるからフォローをつけようと思ってそのまま駅まで行って改札でさよならって言って見送ってジブリまで帰る時に今まで経験したことがない",
+      "start_seconds": 737.6,
+      "end_seconds": 749.0,
+      "id": "DoSFLGmTqP0-ja-0079",
+      "sequence": 79
+    },
+    {
+      "text": "ような後悔を感じたと宮崎さんおっしゃってました。まったとあの子にとって今日と",
+      "start_seconds": 749.0,
+      "end_seconds": 757.639,
+      "id": "DoSFLGmTqP0-ja-0080",
+      "sequence": 80
+    },
+    {
+      "text": "いう日はもうこの時しかなかったんだと。",
+      "start_seconds": 757.639,
+      "end_seconds": 761.04,
+      "id": "DoSFLGmTqP0-ja-0081",
+      "sequence": 81
+    },
+    {
+      "text": "次に来た時はあの子は全く違う人になってしまっている。子供にとっては今ここが全てなんだ。少しぐらい雨が降ってる",
+      "start_seconds": 761.04,
+      "end_seconds": 770.279,
+      "id": "DoSFLGmTqP0-ja-0082",
+      "sequence": 82
+    },
+    {
+      "text": "ぐらいだったらオープンカーにして駅まで送っていってあげればよかったなって僕はその話を聞いて非常に感動しましてあ、",
+      "start_seconds": 770.279,
+      "end_seconds": 780.519,
+      "id": "DoSFLGmTqP0-ja-0083",
+      "sequence": 83
+    },
+    {
+      "text": "こういう人だから今ここの喜びを描く生きがいに満ちた映画が作れるんだなと思ったんですね。",
+      "start_seconds": 780.519,
+      "end_seconds": 791.8,
+      "id": "DoSFLGmTqP0-ja-0084",
+      "sequence": 84
+    },
+    {
+      "text": "皆さん、あの、日本というのは生きがい、小さな喜びに満ちた国だと思うんです。",
+      "start_seconds": 791.8,
+      "end_seconds": 798.839,
+      "id": "DoSFLGmTqP0-ja-0085",
+      "sequence": 85
+    },
+    {
+      "text": "日本から世界に出ていって人気を集めてるものというのはみんな子供の時の小さな喜びに関係してるんですね。例えば",
+      "start_seconds": 798.839,
+      "end_seconds": 808.839,
+      "id": "DoSFLGmTqP0-ja-0086",
+      "sequence": 86
+    },
+    {
+      "text": "ポケモン。ポケモンってね、野外で色々な生き物とたれるその生きがいを表現してる",
+      "start_seconds": 808.839,
+      "end_seconds": 817.92,
+      "id": "DoSFLGmTqP0-ja-0087",
+      "sequence": 87
+    },
+    {
+      "text": "わけじゃないですか。あるいはスーパーマリオのゲームですね。このスーパーマリオブラザーズの、え、1の1の面の",
+      "start_seconds": 817.92,
+      "end_seconds": 828.079,
+      "id": "DoSFLGmTqP0-ja-0088",
+      "sequence": 88
+    },
+    {
+      "text": "地上の音楽と呼ばれてるものがあるんですけど、これはなんとですね、ビデオゲームの音楽としては史場初めてアメリカの国会",
+      "start_seconds": 828.079,
+      "end_seconds": 838.759,
+      "id": "DoSFLGmTqP0-ja-0089",
+      "sequence": 89
+    },
+    {
+      "text": "図書館のナショナルアーカイブに収納されてる。このナショナルアーカイブというのはあのキングボクシの有名なアイハブDreamムamのああいう演説なんかも収納されてるアーカイブなんですけども、",
+      "start_seconds": 838.759,
+      "end_seconds": 850.56,
+      "id": "DoSFLGmTqP0-ja-0090",
+      "sequence": 90
+    },
+    {
+      "text": "そこにスーパーマリオのあの音楽が収納されてるんですね。で、あの音楽って何を表してるんでしょうかね?マリオが飛びれながら土管に入っていったりとか、キノコ",
+      "start_seconds": 850.56,
+      "end_seconds": 862.36,
+      "id": "DoSFLGmTqP0-ja-0091",
+      "sequence": 91
+    },
+    {
+      "text": "を食べて大きくなったりとか、あの亀みたいなのが来てね、やられちゃったりあれって子供の時に時間を忘れて楽しんだ",
+      "start_seconds": 862.36,
+      "end_seconds": 873.0,
+      "id": "DoSFLGmTqP0-ja-0092",
+      "sequence": 92
+    },
+    {
+      "text": "あの喜びを表現しているわけじゃないですか。つまりですね、元々生きがいというのはプライベートなもので、その元では平等",
+      "start_seconds": 873.0,
+      "end_seconds": 884.199,
+      "id": "DoSFLGmTqP0-ja-0093",
+      "sequence": 93
+    },
+    {
+      "text": "なんです。例えばスタジオ渋で、え、根コテを書いてる宮崎はさんもどっか世界の片隅で自分の好きな絵を書いている小学",
+      "start_seconds": 884.199,
+      "end_seconds": 893.199,
+      "id": "DoSFLGmTqP0-ja-0094",
+      "sequence": 94
+    },
+    {
+      "text": "生、中学生、高校生、あるいは大人も生がいという点においては同じです。全く平等です。たまたま宮崎さんの場合には",
+      "start_seconds": 893.199,
+      "end_seconds": 902.759,
+      "id": "DoSFLGmTqP0-ja-0095",
+      "sequence": 95
+    },
+    {
+      "text": "世界的なアニメ作家になってる。でもその宮崎さんにとって大事なのは世界的なアニメ作家になってるということではなく",
+      "start_seconds": 902.759,
+      "end_seconds": 910.16,
+      "id": "DoSFLGmTqP0-ja-0096",
+      "sequence": 96
+    },
+    {
+      "text": "て得を書く喜びなんですね。僕はここにこれからの時代に人工知能と人間の関係を",
+      "start_seconds": 910.16,
+      "end_seconds": 920.079,
+      "id": "DoSFLGmTqP0-ja-0097",
+      "sequence": 97
+    },
+    {
+      "text": "考える上でのとてもとても大切な原理が潜んでいると思っています。僕はまさにこの生がいという、ま、日本初の、ま、",
+      "start_seconds": 920.079,
+      "end_seconds": 930.639,
+      "id": "DoSFLGmTqP0-ja-0098",
+      "sequence": 98
+    },
+    {
+      "text": "考え方をもにどうやったらね、AIと人間が調和してで、人間のウェルビング幸せを増やせるようなそういう未来が作れるのか",
+      "start_seconds": 930.639,
+      "end_seconds": 940.48,
+      "id": "DoSFLGmTqP0-ja-0099",
+      "sequence": 99
+    },
+    {
+      "text": "なってことを一生懸命考えています。",
+      "start_seconds": 940.48,
+      "end_seconds": 943.92,
+      "id": "DoSFLGmTqP0-ja-0100",
+      "sequence": 100
+    },
+    {
+      "text": "そして生がいというのは我々の学びと深く関係してるんですね。どうですか皆さん?",
+      "start_seconds": 943.92,
+      "end_seconds": 949.839,
+      "id": "DoSFLGmTqP0-ja-0101",
+      "sequence": 101
+    },
+    {
+      "text": "子供の時に色々楽しく学んでる時って生きがいを感じてませんでしたか?そこに余計なテストの点数とかね、成績とか入っ",
+      "start_seconds": 949.839,
+      "end_seconds": 960.44,
+      "id": "DoSFLGmTqP0-ja-0102",
+      "sequence": 102
+    },
+    {
+      "text": "てくるとちょっと嫌な気がしちゃう。ま、それある程度必要なものなんですけども、本来学びというのは我々が生きがいを感じて何かに向き合ってる時に私たちの中に",
+      "start_seconds": 960.44,
+      "end_seconds": 972.0,
+      "id": "DoSFLGmTqP0-ja-0103",
+      "sequence": 103
+    },
+    {
+      "text": "生まれるものである。そのことを忘れない限りこれからま、時代をどんどん変わっていきます。先ほど冒頭にも申し上げました。AIによって未来の未来が明るく開ける",
+      "start_seconds": 972.0,
+      "end_seconds": 983.519,
+      "id": "DoSFLGmTqP0-ja-0104",
+      "sequence": 104
+    },
+    {
+      "text": "というブーマーの方もいらっしゃるし、役割でも人類は滅亡に行くんだっていうドーマーの方もいらっしゃいます。このブーマーとドーマーの別れ道の我々は",
+      "start_seconds": 983.519,
+      "end_seconds": 994.48,
+      "id": "DoSFLGmTqP0-ja-0105",
+      "sequence": 105
+    },
+    {
+      "text": "どっちに行くかということは我々がまさにこれから一生懸命みんなで力を学んで新しい時代に適用していくことで道が",
+      "start_seconds": 994.48,
+      "end_seconds": 1002.88,
+      "id": "DoSFLGmTqP0-ja-0106",
+      "sequence": 106
+    },
+    {
+      "text": "開けると思うんですけどもその学びを支えてくれるのは実は生きがいなんだと私たちは今どうしても外部からの評価が気になっ",
+      "start_seconds": 1002.88,
+      "end_seconds": 1014.759,
+      "id": "DoSFLGmTqP0-ja-0107",
+      "sequence": 107
+    },
+    {
+      "text": "てしまいます。どれぐらい自分のポストが見られてるのかとか、どれぐらいフォロワーがいるのかとか、そういうことばっかり気にして、それでバランスを崩し",
+      "start_seconds": 1014.759,
+      "end_seconds": 1025.72,
+      "id": "DoSFLGmTqP0-ja-0108",
+      "sequence": 108
+    },
+    {
+      "text": "てしまう人もいるわけですよね。でもそうではなくて生がではみんなが平等で宮崎はさんも片隅",
+      "start_seconds": 1025.72,
+      "end_seconds": 1035.439,
+      "id": "DoSFLGmTqP0-ja-0109",
+      "sequence": 109
+    },
+    {
+      "text": "で絵を書いてる人も生がいということにおいては平等ででもたまたまもしかしたらいろんな時代の状況とか運が良かったら自分の書いてる絵もいつかは宮崎さんの",
+      "start_seconds": 1035.439,
+      "end_seconds": 1047.16,
+      "id": "DoSFLGmTqP0-ja-0110",
+      "sequence": 110
+    },
+    {
+      "text": "素晴らしい作品のように、え、世界中の人に伝わって大きな感動をもたらす可能性もあると。そして実はAIがそういう個人の",
+      "start_seconds": 1047.16,
+      "end_seconds": 1056.679,
+      "id": "DoSFLGmTqP0-ja-0111",
+      "sequence": 111
+    },
+    {
+      "text": "クリエイティビティ、想像性を支えるツールにもなってくれると。このように見ることで僕は未来を、え、非常に楽観的",
+      "start_seconds": 1056.679,
+      "end_seconds": 1066.0,
+      "id": "DoSFLGmTqP0-ja-0112",
+      "sequence": 112
+    },
+    {
+      "text": "にそして生きいに支えられた学びを通して、え、前に進めるようなそういう視野が得られるのではないかと思います。そのこと",
+      "start_seconds": 1066.0,
+      "end_seconds": 1074.799,
+      "id": "DoSFLGmTqP0-ja-0113",
+      "sequence": 113
+    },
+    {
+      "text": "を今日皆さんにお伝えすることが私にとっての今日1番の生きいとなりました。",
+      "start_seconds": 1074.799,
+      "end_seconds": 1080.679,
+      "id": "DoSFLGmTqP0-ja-0114",
+      "sequence": 114
+    },
+    {
+      "text": "ありがとうございました。[拍手]",
+      "start_seconds": 1080.679,
+      "end_seconds": 1084.092,
+      "id": "DoSFLGmTqP0-ja-0115",
+      "sequence": 115
+    }
+  ],
+  "raw_captions": [
+    {
+      "text": "[音楽]",
+      "start_seconds": 9.825,
+      "end_seconds": 11.844999999999999
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 13.1,
+      "end_seconds": 15.12
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 17.685,
+      "end_seconds": 19.705
+    },
+    {
+      "text": "人類は今あの歴史の別れ道に来ていると",
+      "start_seconds": 24.76,
+      "end_seconds": 30.439
+    },
+    {
+      "text": "思うんですね。",
+      "start_seconds": 28.679,
+      "end_seconds": 34.519999999999996
+    },
+    {
+      "text": "人口知能が本当に我々の手に負えない",
+      "start_seconds": 30.439,
+      "end_seconds": 38.96
+    },
+    {
+      "text": "ぐらい急速に発展しています。人工知能",
+      "start_seconds": 34.52,
+      "end_seconds": 44.480000000000004
+    },
+    {
+      "text": "って実は一定期間ごとに2倍ずつ賢くなる",
+      "start_seconds": 38.96,
+      "end_seconds": 47.480000000000004
+    },
+    {
+      "text": "ような成長してるんですけど皆さんの周り",
+      "start_seconds": 44.48,
+      "end_seconds": 49.8
+    },
+    {
+      "text": "に会うたびに2倍賢くなってる人ってい",
+      "start_seconds": 47.48,
+      "end_seconds": 53.038999999999994
+    },
+    {
+      "text": "ます?いや、あいつね、この前2カ国語",
+      "start_seconds": 49.8,
+      "end_seconds": 55.28
+    },
+    {
+      "text": "喋ってたんだけど、1ヶ月後",
+      "start_seconds": 53.039,
+      "end_seconds": 57.92
+    },
+    {
+      "text": "81630128",
+      "start_seconds": 55.28,
+      "end_seconds": 60.64
+    },
+    {
+      "text": "っていう人はいないですよね。",
+      "start_seconds": 57.92,
+      "end_seconds": 65.239
+    },
+    {
+      "text": "そういう人工知能の成長の仕方を指数関数",
+      "start_seconds": 60.64,
+      "end_seconds": 69.52
+    },
+    {
+      "text": "的と言うんですけれども、このような成長",
+      "start_seconds": 65.239,
+      "end_seconds": 73.04
+    },
+    {
+      "text": "の元に何があるのかというのは実は分かっ",
+      "start_seconds": 69.52,
+      "end_seconds": 76.52
+    },
+    {
+      "text": "ていないんです。信頼ティって言葉聞いた",
+      "start_seconds": 73.04,
+      "end_seconds": 79.24000000000001
+    },
+    {
+      "text": "ことあると思うんですよね。人工知能が",
+      "start_seconds": 76.52,
+      "end_seconds": 82.439
+    },
+    {
+      "text": "人間の知性を追い越してさらにすごい",
+      "start_seconds": 79.24,
+      "end_seconds": 85.83999999999999
+    },
+    {
+      "text": "ところに行ってしまう。じゃあその先には",
+      "start_seconds": 82.439,
+      "end_seconds": 90.72
+    },
+    {
+      "text": "何があるのか。世の中には今楽観論と悲観",
+      "start_seconds": 85.84,
+      "end_seconds": 94.04
+    },
+    {
+      "text": "論両方あるんですね。楽観論のブーマーと",
+      "start_seconds": 90.72,
+      "end_seconds": 97.479
+    },
+    {
+      "text": "いう方々はもう我々はもうかつてないよう",
+      "start_seconds": 94.04,
+      "end_seconds": 100.88000000000001
+    },
+    {
+      "text": "な反栄を手にするんだと。誰でもどこでも",
+      "start_seconds": 97.479,
+      "end_seconds": 103.079
+    },
+    {
+      "text": "行けるし何でも手に入る。そういう",
+      "start_seconds": 100.88,
+      "end_seconds": 105.15899999999999
+    },
+    {
+      "text": "素晴らしい世界が来るんだと考えています",
+      "start_seconds": 103.079,
+      "end_seconds": 110.079
+    },
+    {
+      "text": "。一方ドゥーマーの方々はもう人類の破滅",
+      "start_seconds": 105.159,
+      "end_seconds": 113.47900000000001
+    },
+    {
+      "text": "が近い。人類は滅亡するんだというような",
+      "start_seconds": 110.079,
+      "end_seconds": 115.88
+    },
+    {
+      "text": "ことを言う方もいらっしゃるんですね。",
+      "start_seconds": 113.479,
+      "end_seconds": 119.0
+    },
+    {
+      "text": "技術的なプロメテウス主義という方々が",
+      "start_seconds": 115.88,
+      "end_seconds": 120.83999999999999
+    },
+    {
+      "text": "いらっしゃって、ま、プロメテウスという",
+      "start_seconds": 119.0,
+      "end_seconds": 125.64
+    },
+    {
+      "text": "のは神話の存在で人類に火をもたらした人",
+      "start_seconds": 120.84,
+      "end_seconds": 129.239
+    },
+    {
+      "text": "なんですけども、新しいプロメテウスが",
+      "start_seconds": 125.64,
+      "end_seconds": 131.28
+    },
+    {
+      "text": "誕生しようとしてるんだっていう方々もい",
+      "start_seconds": 129.239,
+      "end_seconds": 133.92000000000002
+    },
+    {
+      "text": "ます。人工知能っていうのは新しい日なん",
+      "start_seconds": 131.28,
+      "end_seconds": 137.36
+    },
+    {
+      "text": "だと。この日を使って我々は何でもできる",
+      "start_seconds": 133.92,
+      "end_seconds": 139.95899999999997
+    },
+    {
+      "text": "んだという方々もいらっしゃるんです。",
+      "start_seconds": 137.36,
+      "end_seconds": 143.64000000000001
+    },
+    {
+      "text": "確かに火を使って我々料理をしたり、それ",
+      "start_seconds": 139.959,
+      "end_seconds": 146.959
+    },
+    {
+      "text": "から蒸気でものすごく早く動いたりとか、",
+      "start_seconds": 143.64,
+      "end_seconds": 150.319
+    },
+    {
+      "text": "ロケットで月さらには火星まで行こうとし",
+      "start_seconds": 146.959,
+      "end_seconds": 154.16
+    },
+    {
+      "text": "てますよね。でも日って同時に怖いもの",
+      "start_seconds": 150.319,
+      "end_seconds": 157.48
+    },
+    {
+      "text": "ですよね。火傷することもあるし火事に",
+      "start_seconds": 154.16,
+      "end_seconds": 160.84
+    },
+    {
+      "text": "なることもある。我々はこの人工知能と",
+      "start_seconds": 157.48,
+      "end_seconds": 164.56
+    },
+    {
+      "text": "いう新しい費を果たしてうまく使い",
+      "start_seconds": 160.84,
+      "end_seconds": 168.20000000000002
+    },
+    {
+      "text": "こなせるのかどうか。これを研究する分野",
+      "start_seconds": 164.56,
+      "end_seconds": 172.08
+    },
+    {
+      "text": "をAIアラインメントと言うんですね。",
+      "start_seconds": 168.2,
+      "end_seconds": 174.56
+    },
+    {
+      "text": "アラインメントというのは何かと何かを、",
+      "start_seconds": 172.08,
+      "end_seconds": 178.31900000000002
+    },
+    {
+      "text": "ま、並べる、うまく方向を合わせる、調和",
+      "start_seconds": 174.56,
+      "end_seconds": 180.44
+    },
+    {
+      "text": "させるという考え方なんですけども、",
+      "start_seconds": 178.319,
+      "end_seconds": 185.48
+    },
+    {
+      "text": "果たしてこのAIと人間がアラインメント",
+      "start_seconds": 180.44,
+      "end_seconds": 188.68
+    },
+    {
+      "text": "できるかどうか、これがまさに今我々の",
+      "start_seconds": 185.48,
+      "end_seconds": 193.92
+    },
+    {
+      "text": "歴史の分岐点でどうなるのかなと考えてる",
+      "start_seconds": 188.68,
+      "end_seconds": 196.59900000000002
+    },
+    {
+      "text": "ところなんです。",
+      "start_seconds": 193.92,
+      "end_seconds": 200.2
+    },
+    {
+      "text": "ところで、あの、皆さんはどういう時に",
+      "start_seconds": 196.599,
+      "end_seconds": 203.72
+    },
+    {
+      "text": "幸せを感じますか?人工知能がね、どんな",
+      "start_seconds": 200.2,
+      "end_seconds": 208.11999999999998
+    },
+    {
+      "text": "に発展しても我々人間のウェルビーングが",
+      "start_seconds": 203.72,
+      "end_seconds": 211.28
+    },
+    {
+      "text": "脅やかされたら意味がないと思いませんか",
+      "start_seconds": 208.12,
+      "end_seconds": 215.0
+    },
+    {
+      "text": "?この点についてですね、え、",
+      "start_seconds": 211.28,
+      "end_seconds": 217.599
+    },
+    {
+      "text": "レクスフィーマンというMITの僕は本当",
+      "start_seconds": 215.0,
+      "end_seconds": 220.12
+    },
+    {
+      "text": "に尊敬するAIの研究者がいらっしゃるん",
+      "start_seconds": 217.599,
+      "end_seconds": 222.07999999999998
+    },
+    {
+      "text": "ですけど、そのレフィーマンさんがやっ",
+      "start_seconds": 220.12,
+      "end_seconds": 223.68
+    },
+    {
+      "text": "てらっしゃるポッドキャストがありまして",
+      "start_seconds": 222.08,
+      "end_seconds": 227.04000000000002
+    },
+    {
+      "text": "、毎回ゲストが来て2、3時間、え、お話",
+      "start_seconds": 223.68,
+      "end_seconds": 229.4
+    },
+    {
+      "text": "するんですけども、え、ヤンポルスキーさ",
+      "start_seconds": 227.04,
+      "end_seconds": 231.64
+    },
+    {
+      "text": "んっていう方がいらした時ににポルスキー",
+      "start_seconds": 229.4,
+      "end_seconds": 233.72
+    },
+    {
+      "text": "さんがこのまさにAIと人間の",
+      "start_seconds": 231.64,
+      "end_seconds": 239.67999999999998
+    },
+    {
+      "text": "幸せウェルビングの関係を考える上で生き",
+      "start_seconds": 233.72,
+      "end_seconds": 242.76
+    },
+    {
+      "text": "リスクというのがあるという話をしたん",
+      "start_seconds": 239.68,
+      "end_seconds": 246.76000000000002
+    },
+    {
+      "text": "ですね。生き、これ日本語の言葉です。",
+      "start_seconds": 242.76,
+      "end_seconds": 248.76
+    },
+    {
+      "text": "生きのリスクがある。これどういうこと",
+      "start_seconds": 246.76,
+      "end_seconds": 252.0
+    },
+    {
+      "text": "でしょうか?人工知能が我々の生活に",
+      "start_seconds": 248.76,
+      "end_seconds": 254.92
+    },
+    {
+      "text": "もたらす変化として我々の仕事がなくなっ",
+      "start_seconds": 252.0,
+      "end_seconds": 256.4
+    },
+    {
+      "text": "ちゃうんじゃないかってこと言う人います",
+      "start_seconds": 254.92,
+      "end_seconds": 260.15999999999997
+    },
+    {
+      "text": "よね。今でなんか例えば絵を書いてた人の",
+      "start_seconds": 256.4,
+      "end_seconds": 264.15999999999997
+    },
+    {
+      "text": "代わり人口が絵を書く。今まで例えば通訳",
+      "start_seconds": 260.16,
+      "end_seconds": 267.16
+    },
+    {
+      "text": "とか翻訳をやってた人の代わりにそういう",
+      "start_seconds": 264.16,
+      "end_seconds": 270.36
+    },
+    {
+      "text": "こと人工知能がやってしまう。もう人間",
+      "start_seconds": 267.16,
+      "end_seconds": 272.88000000000005
+    },
+    {
+      "text": "いらなくなるんじゃないか。人工知能が",
+      "start_seconds": 270.36,
+      "end_seconds": 274.44
+    },
+    {
+      "text": "全部やってしまうんじゃないかっていう",
+      "start_seconds": 272.88,
+      "end_seconds": 277.52
+    },
+    {
+      "text": "ことを考える人たちがいます。で、これは",
+      "start_seconds": 274.44,
+      "end_seconds": 280.96
+    },
+    {
+      "text": "これで大変なことなんですけども、",
+      "start_seconds": 277.52,
+      "end_seconds": 282.56
+    },
+    {
+      "text": "ヤンポルスキーさんがそのレクス",
+      "start_seconds": 280.96,
+      "end_seconds": 284.919
+    },
+    {
+      "text": "ウィードマンさんのポッドキャストで議論",
+      "start_seconds": 282.56,
+      "end_seconds": 289.199
+    },
+    {
+      "text": "した生がいリスクというのは我々のこの",
+      "start_seconds": 284.919,
+      "end_seconds": 292.35999999999996
+    },
+    {
+      "text": "生きがい、生きる実感これま、日本語なん",
+      "start_seconds": 289.199,
+      "end_seconds": 294.639
+    },
+    {
+      "text": "ですよね。この日本語が生きがいという形",
+      "start_seconds": 292.36,
+      "end_seconds": 297.36
+    },
+    {
+      "text": "で今世界中に注目されてるんですけども、",
+      "start_seconds": 294.639,
+      "end_seconds": 299.28000000000003
+    },
+    {
+      "text": "この生がいが失われてしまうんじゃないか",
+      "start_seconds": 297.36,
+      "end_seconds": 302.759
+    },
+    {
+      "text": "と、そういうことを、ま、議論したわけ",
+      "start_seconds": 299.28,
+      "end_seconds": 305.55999999999995
+    },
+    {
+      "text": "です。で、この実は生がいということを",
+      "start_seconds": 302.759,
+      "end_seconds": 309.08000000000004
+    },
+    {
+      "text": "考えると人工知能と人間がどこが違うのか",
+      "start_seconds": 305.56,
+      "end_seconds": 311.919
+    },
+    {
+      "text": "、そしてどうやったらそれを",
+      "start_seconds": 309.08,
+      "end_seconds": 314.0
+    },
+    {
+      "text": "アラインメントできるのかということが",
+      "start_seconds": 311.919,
+      "end_seconds": 317.08
+    },
+    {
+      "text": "見えてくるんです。皆さん人工知能本当に",
+      "start_seconds": 314.0,
+      "end_seconds": 319.759
+    },
+    {
+      "text": "すごいですよね。今ね、彼らがどうやって",
+      "start_seconds": 317.08,
+      "end_seconds": 324.15999999999997
+    },
+    {
+      "text": "学習してるかご存知ですか?人工知能は外",
+      "start_seconds": 319.759,
+      "end_seconds": 327.84000000000003
+    },
+    {
+      "text": "から点数をつけられないと学習ができない",
+      "start_seconds": 324.16,
+      "end_seconds": 330.6
+    },
+    {
+      "text": "んです。これ、あの、専門的には評価関数",
+      "start_seconds": 327.84,
+      "end_seconds": 332.67999999999995
+    },
+    {
+      "text": "とか言うんですけども、今の奇妙この",
+      "start_seconds": 330.6,
+      "end_seconds": 336.91900000000004
+    },
+    {
+      "text": "アウトプットは30点だよとか、今度45",
+      "start_seconds": 332.68,
+      "end_seconds": 339.88
+    },
+    {
+      "text": "点になったよって、70点、80点を",
+      "start_seconds": 336.919,
+      "end_seconds": 342.68
+    },
+    {
+      "text": "目指そうねと、このような外からの",
+      "start_seconds": 339.88,
+      "end_seconds": 344.639
+    },
+    {
+      "text": "フィードバックがあって、じゃあAIは",
+      "start_seconds": 342.68,
+      "end_seconds": 346.72
+    },
+    {
+      "text": "もうじゃ、一生懸命100点を目指して",
+      "start_seconds": 344.639,
+      "end_seconds": 349.40000000000003
+    },
+    {
+      "text": "学習していくと、このような形で今の人口",
+      "start_seconds": 346.72,
+      "end_seconds": 352.759
+    },
+    {
+      "text": "知能というのは学習してるんですね。人間",
+      "start_seconds": 349.4,
+      "end_seconds": 355.56
+    },
+    {
+      "text": "もそういうとこありますよね。子供時代",
+      "start_seconds": 352.759,
+      "end_seconds": 358.72
+    },
+    {
+      "text": "なんか学校の成績学校だとかあと大人に",
+      "start_seconds": 355.56,
+      "end_seconds": 362.319
+    },
+    {
+      "text": "なったらね君はいくら稼いでるんだとかね",
+      "start_seconds": 358.72,
+      "end_seconds": 365.0
+    },
+    {
+      "text": "給料いくらなんだとかあるいは今",
+      "start_seconds": 362.319,
+      "end_seconds": 368.08000000000004
+    },
+    {
+      "text": "ソーシャルメディア前盛の時代ですから君",
+      "start_seconds": 365.0,
+      "end_seconds": 369.68
+    },
+    {
+      "text": "のインスタのフォロワーはどれぐらいいる",
+      "start_seconds": 368.08,
+      "end_seconds": 371.919
+    },
+    {
+      "text": "んですかとかねYouTubeの動画は",
+      "start_seconds": 369.68,
+      "end_seconds": 373.68
+    },
+    {
+      "text": "どれぐらい見られてるんですかというこう",
+      "start_seconds": 371.919,
+      "end_seconds": 378.56
+    },
+    {
+      "text": "いう外からの指標で我々まされるところが",
+      "start_seconds": 373.68,
+      "end_seconds": 381.84000000000003
+    },
+    {
+      "text": "あるわけなんですけど人口知能はまさに",
+      "start_seconds": 378.56,
+      "end_seconds": 385.12
+    },
+    {
+      "text": "そういう外部評価によっって学習してるん",
+      "start_seconds": 381.84,
+      "end_seconds": 388.039
+    },
+    {
+      "text": "ですね。でも人間は実はそれだけじゃない",
+      "start_seconds": 385.12,
+      "end_seconds": 392.24
+    },
+    {
+      "text": "んです。我々の生きる実感ウェルビング。",
+      "start_seconds": 388.039,
+      "end_seconds": 395.8
+    },
+    {
+      "text": "この真ん中にあるこの生がいというのは外",
+      "start_seconds": 392.24,
+      "end_seconds": 399.96000000000004
+    },
+    {
+      "text": "からの評価とは関係のない小さな喜びの",
+      "start_seconds": 395.8,
+      "end_seconds": 403.12
+    },
+    {
+      "text": "ことを指すんですよ。これが我々の人間で",
+      "start_seconds": 399.96,
+      "end_seconds": 407.12
+    },
+    {
+      "text": "ある証なんですね。例えば皆さん犬をね",
+      "start_seconds": 403.12,
+      "end_seconds": 409.639
+    },
+    {
+      "text": "散歩に連れていくのが生きがいだとする",
+      "start_seconds": 407.12,
+      "end_seconds": 412.96
+    },
+    {
+      "text": "じゃないですか。あら、奥さん、あなたの",
+      "start_seconds": 409.639,
+      "end_seconds": 415.96000000000004
+    },
+    {
+      "text": "今日の犬の散歩の仕方いいわね。昨日は",
+      "start_seconds": 412.96,
+      "end_seconds": 419.87899999999996
+    },
+    {
+      "text": "60点だけど、今日は78点あげるわ",
+      "start_seconds": 415.96,
+      "end_seconds": 423.039
+    },
+    {
+      "text": "みたいなことは言われないですよね。あら",
+      "start_seconds": 419.879,
+      "end_seconds": 426.47900000000004
+    },
+    {
+      "text": "、コーヒーの飲み方いいね。今日はね。",
+      "start_seconds": 423.039,
+      "end_seconds": 428.31899999999996
+    },
+    {
+      "text": "昨日よりもなんかいいコーヒーの飲み方し",
+      "start_seconds": 426.479,
+      "end_seconds": 430.56
+    },
+    {
+      "text": "てるから君ちょっと評価関数上がったよっ",
+      "start_seconds": 428.319,
+      "end_seconds": 433.52000000000004
+    },
+    {
+      "text": "ていうことはないでしょ。僕の生きがいは",
+      "start_seconds": 430.56,
+      "end_seconds": 436.639
+    },
+    {
+      "text": "何を隠そう?子供の頃町長の行動の研究を",
+      "start_seconds": 433.52,
+      "end_seconds": 438.87899999999996
+    },
+    {
+      "text": "してたんで",
+      "start_seconds": 436.639,
+      "end_seconds": 442.12
+    },
+    {
+      "text": "蝶が飛んでるのを見ると今でも本当に",
+      "start_seconds": 438.879,
+      "end_seconds": 444.96000000000004
+    },
+    {
+      "text": "生がいを感じるんです。僕はあのランナー",
+      "start_seconds": 442.12,
+      "end_seconds": 447.56
+    },
+    {
+      "text": "で東京を走っていると蝶が飛んでますよね",
+      "start_seconds": 444.96,
+      "end_seconds": 450.4
+    },
+    {
+      "text": "。そうすると日本にいる腸は大体見分が",
+      "start_seconds": 447.56,
+      "end_seconds": 453.039
+    },
+    {
+      "text": "つくんです。これ生きがいなんですけど",
+      "start_seconds": 450.4,
+      "end_seconds": 455.479
+    },
+    {
+      "text": "残念なことに今まで",
+      "start_seconds": 453.039,
+      "end_seconds": 457.68
+    },
+    {
+      "text": "蝶ちが見分けられるということで褒められ",
+      "start_seconds": 455.479,
+      "end_seconds": 461.12
+    },
+    {
+      "text": "たことはほとんどない。ま、変わり物だな",
+      "start_seconds": 457.68,
+      "end_seconds": 463.12
+    },
+    {
+      "text": "とか、あ、そういうのが好きなんですねっ",
+      "start_seconds": 461.12,
+      "end_seconds": 466.84000000000003
+    },
+    {
+      "text": "て言って、ちょっと後は距離を置かれる",
+      "start_seconds": 463.12,
+      "end_seconds": 469.84000000000003
+    },
+    {
+      "text": "ことが多いんですけども、ただ生きがいと",
+      "start_seconds": 466.84,
+      "end_seconds": 472.84
+    },
+    {
+      "text": "いうのはこのように",
+      "start_seconds": 469.84,
+      "end_seconds": 476.4
+    },
+    {
+      "text": "他人から評価されたり、あるいは給料が",
+      "start_seconds": 472.84,
+      "end_seconds": 480.31899999999996
+    },
+    {
+      "text": "上がったり、社会的な地位が、ま、それに",
+      "start_seconds": 476.4,
+      "end_seconds": 483.4
+    },
+    {
+      "text": "よって確立するというようなこととは関係",
+      "start_seconds": 480.319,
+      "end_seconds": 486.84000000000003
+    },
+    {
+      "text": "のない自分だけの小さな喜び、これが",
+      "start_seconds": 483.4,
+      "end_seconds": 489.159
+    },
+    {
+      "text": "生きがいなんですね。そういう意味におい",
+      "start_seconds": 486.84,
+      "end_seconds": 492.56
+    },
+    {
+      "text": "ては人口知能とは全く違うんです。いや、",
+      "start_seconds": 489.159,
+      "end_seconds": 495.159
+    },
+    {
+      "text": "将来は人工知能にも生きがいが持たされる",
+      "start_seconds": 492.56,
+      "end_seconds": 497.8
+    },
+    {
+      "text": "ような日が来るかもしれませんが、人工",
+      "start_seconds": 495.159,
+      "end_seconds": 500.71999999999997
+    },
+    {
+      "text": "知能はやっぱり外側の評価がないと何も",
+      "start_seconds": 497.8,
+      "end_seconds": 503.96000000000004
+    },
+    {
+      "text": "できないんですね。我々は外側の評価が",
+      "start_seconds": 500.72,
+      "end_seconds": 506.96000000000004
+    },
+    {
+      "text": "なくても小さな喜びを持つことができる。",
+      "start_seconds": 503.96,
+      "end_seconds": 510.919
+    },
+    {
+      "text": "日本は大国です。あ時、あの、ドイツ",
+      "start_seconds": 506.96,
+      "end_seconds": 515.4789999999999
+    },
+    {
+      "text": "のジャーナリストが私を訪ねてきまして、",
+      "start_seconds": 510.919,
+      "end_seconds": 517.64
+    },
+    {
+      "text": "ちょうど春だったんですけど、僕に真顔で",
+      "start_seconds": 515.479,
+      "end_seconds": 520.32
+    },
+    {
+      "text": "質問するんですね。件1つ質問したいこと",
+      "start_seconds": 517.64,
+      "end_seconds": 524.48
+    },
+    {
+      "text": "があるんだけど、なぜ日本人は桜が咲いた",
+      "start_seconds": 520.32,
+      "end_seconds": 526.88
+    },
+    {
+      "text": "ぐらいであんなに喜んでるんだって言うん",
+      "start_seconds": 524.48,
+      "end_seconds": 529.44
+    },
+    {
+      "text": "ですよ。ちょうどお花見の季節でね、",
+      "start_seconds": 526.88,
+      "end_seconds": 531.8
+    },
+    {
+      "text": "みんなお花見してたんですけど。で、僕は",
+      "start_seconds": 529.44,
+      "end_seconds": 535.6800000000001
+    },
+    {
+      "text": "、え、ドイツでは花が咲いても喜ばない",
+      "start_seconds": 531.8,
+      "end_seconds": 537.76
+    },
+    {
+      "text": "のって聞いたんですよ。そしたら",
+      "start_seconds": 535.68,
+      "end_seconds": 541.7199999999999
+    },
+    {
+      "text": "彼のすごく真面目な人で我々ドイツ人は",
+      "start_seconds": 537.76,
+      "end_seconds": 545.92
+    },
+    {
+      "text": "そんなに簡単には喜ばない。我々が喜ぶの",
+      "start_seconds": 541.72,
+      "end_seconds": 549.0
+    },
+    {
+      "text": "はクリスマスの時ぐらいだっておっしゃっ",
+      "start_seconds": 545.92,
+      "end_seconds": 552.7199999999999
+    },
+    {
+      "text": "て大変だなと思ったんですけど実は日本は",
+      "start_seconds": 549.0,
+      "end_seconds": 557.0
+    },
+    {
+      "text": "小さな喜びに満ちた国なんですね。",
+      "start_seconds": 552.72,
+      "end_seconds": 560.12
+    },
+    {
+      "text": "2025年の春に大リーグの開幕戦が日本",
+      "start_seconds": 557.0,
+      "end_seconds": 562.2
+    },
+    {
+      "text": "でありました。で、その時にアメリカから",
+      "start_seconds": 560.12,
+      "end_seconds": 565.16
+    },
+    {
+      "text": "記者がいらして、日本のコンビニンス",
+      "start_seconds": 562.2,
+      "end_seconds": 569.88
+    },
+    {
+      "text": "ストアで卵サ道を買って、あまりの美味し",
+      "start_seconds": 565.16,
+      "end_seconds": 573.8389999999999
+    },
+    {
+      "text": "さにも本当に嬉し、もう本当に喜んじゃっ",
+      "start_seconds": 569.88,
+      "end_seconds": 575.16
+    },
+    {
+      "text": "たわけですよ。こんなのアメリカにないっ",
+      "start_seconds": 573.839,
+      "end_seconds": 578.44
+    },
+    {
+      "text": "て。で、我々にとってはそれは、ま、",
+      "start_seconds": 575.16,
+      "end_seconds": 580.519
+    },
+    {
+      "text": "小さな喜びでそれを一生懸命作っ",
+      "start_seconds": 578.44,
+      "end_seconds": 581.8000000000001
+    },
+    {
+      "text": "てらっしゃる方がいらっしゃるんですけど",
+      "start_seconds": 580.519,
+      "end_seconds": 585.0
+    },
+    {
+      "text": "も、この生がいというのは考えてみますと",
+      "start_seconds": 581.8,
+      "end_seconds": 588.24
+    },
+    {
+      "text": "、元々はね、我々が子供の頃から持って",
+      "start_seconds": 585.0,
+      "end_seconds": 591.2
+    },
+    {
+      "text": "いる生きる実感とか喜びなんですけど、",
+      "start_seconds": 588.24,
+      "end_seconds": 595.36
+    },
+    {
+      "text": "それが回り回って、ま、経済を回したり",
+      "start_seconds": 591.2,
+      "end_seconds": 598.48
+    },
+    {
+      "text": "文化を作ったりするんですよね。僕は、",
+      "start_seconds": 595.36,
+      "end_seconds": 602.399
+    },
+    {
+      "text": "あの、かつて日本の公共放送で番組の",
+      "start_seconds": 598.48,
+      "end_seconds": 604.519
+    },
+    {
+      "text": "キャスターをしてたことがありました。で",
+      "start_seconds": 602.399,
+      "end_seconds": 607.76
+    },
+    {
+      "text": "、その時にスタジオジブの宮崎はさんを",
+      "start_seconds": 604.519,
+      "end_seconds": 609.92
+    },
+    {
+      "text": "インタビューしたんですね。宮崎さんその",
+      "start_seconds": 607.76,
+      "end_seconds": 613.4399999999999
+    },
+    {
+      "text": "頃崖の上のポニョのエコテを書いてました",
+      "start_seconds": 609.92,
+      "end_seconds": 616.04
+    },
+    {
+      "text": "。で、我々が行った時にもエコテを書き",
+      "start_seconds": 613.44,
+      "end_seconds": 618.1600000000001
+    },
+    {
+      "text": "ながら本当に楽しそうにされてたんです",
+      "start_seconds": 616.04,
+      "end_seconds": 620.88
+    },
+    {
+      "text": "けど、宮崎はさんにとっては得点を書く",
+      "start_seconds": 618.16,
+      "end_seconds": 623.88
+    },
+    {
+      "text": "ことが生きがいなんです。生きがいという",
+      "start_seconds": 620.88,
+      "end_seconds": 626.279
+    },
+    {
+      "text": "のは小さな喜びですから、それによって",
+      "start_seconds": 623.88,
+      "end_seconds": 628.16
+    },
+    {
+      "text": "世間にどう評価されるかってことは関係",
+      "start_seconds": 626.279,
+      "end_seconds": 630.519
+    },
+    {
+      "text": "ないんですよね。ですから宮崎さんは",
+      "start_seconds": 628.16,
+      "end_seconds": 632.76
+    },
+    {
+      "text": "エコテを書きながらこれでボックス",
+      "start_seconds": 630.519,
+      "end_seconds": 635.519
+    },
+    {
+      "text": "オフィスの収入がこれぐらいになるとか",
+      "start_seconds": 632.76,
+      "end_seconds": 637.92
+    },
+    {
+      "text": "アカデミーシをもらえるとかそういうこと",
+      "start_seconds": 635.519,
+      "end_seconds": 639.839
+    },
+    {
+      "text": "は考えてないんです。そういうことを考え",
+      "start_seconds": 637.92,
+      "end_seconds": 642.36
+    },
+    {
+      "text": "てるのは隣に立っている鈴木俊男さんと",
+      "start_seconds": 639.839,
+      "end_seconds": 645.0
+    },
+    {
+      "text": "いうプロデューサーの方なんですね。ま、",
+      "start_seconds": 642.36,
+      "end_seconds": 647.519
+    },
+    {
+      "text": "これはプロデューサーのお仕事ですから。",
+      "start_seconds": 645.0,
+      "end_seconds": 651.399
+    },
+    {
+      "text": "でも皆さん考えてください。なぜ宮崎は",
+      "start_seconds": 647.519,
+      "end_seconds": 655.72
+    },
+    {
+      "text": "さんのアニメーションはこれほど世界中の",
+      "start_seconds": 651.399,
+      "end_seconds": 659.48
+    },
+    {
+      "text": "人を感動させるのでしょうか?ま、僕も",
+      "start_seconds": 655.72,
+      "end_seconds": 662.24
+    },
+    {
+      "text": "大好きなんですけど、隣のトロという宮崎",
+      "start_seconds": 659.48,
+      "end_seconds": 665.5600000000001
+    },
+    {
+      "text": "さんの代表作があります。これはあのさと",
+      "start_seconds": 662.24,
+      "end_seconds": 668.279
+    },
+    {
+      "text": "名というね、小さな女の子が、ま、",
+      "start_seconds": 665.56,
+      "end_seconds": 670.3599999999999
+    },
+    {
+      "text": "お母さんが病院に入院されてまして",
+      "start_seconds": 668.279,
+      "end_seconds": 672.56
+    },
+    {
+      "text": "ちょっと不安なんですけどお父さんと一緒",
+      "start_seconds": 670.36,
+      "end_seconds": 675.839
+    },
+    {
+      "text": "に田舎の一見屋に行って明るいところから",
+      "start_seconds": 672.56,
+      "end_seconds": 678.5999999999999
+    },
+    {
+      "text": "暗いとこに急に行ったら真っ黒黒助がい",
+      "start_seconds": 675.839,
+      "end_seconds": 682.399
+    },
+    {
+      "text": "たりとかしの中に入っていたらトトロが寝",
+      "start_seconds": 678.6,
+      "end_seconds": 685.5600000000001
+    },
+    {
+      "text": "ていたりとかそれから猫バスに出会ったり",
+      "start_seconds": 682.399,
+      "end_seconds": 688.519
+    },
+    {
+      "text": "とかそういう不思議な経験を描いてるん",
+      "start_seconds": 685.56,
+      "end_seconds": 694.16
+    },
+    {
+      "text": "ですけどこれぞまさに子供時代の生が",
+      "start_seconds": 688.519,
+      "end_seconds": 698.12
+    },
+    {
+      "text": "小さな喜びの表現なんですよね。僕は宮崎",
+      "start_seconds": 694.16,
+      "end_seconds": 700.4399999999999
+    },
+    {
+      "text": "さんをスタジオでインタビューした時に",
+      "start_seconds": 698.12,
+      "end_seconds": 702.839
+    },
+    {
+      "text": "忘れられないことがあります。宮崎さん",
+      "start_seconds": 700.44,
+      "end_seconds": 705.5600000000001
+    },
+    {
+      "text": "あの時5歳の男の子がジブリにいらしたん",
+      "start_seconds": 702.839,
+      "end_seconds": 709.839
+    },
+    {
+      "text": "だそうですね。で、帰りはこの子を駅まで",
+      "start_seconds": 705.56,
+      "end_seconds": 713.1199999999999
+    },
+    {
+      "text": "送ってあげようと。その頃宮崎さんが運転",
+      "start_seconds": 709.839,
+      "end_seconds": 715.839
+    },
+    {
+      "text": "していた車はフォローを外すとオープン",
+      "start_seconds": 713.12,
+      "end_seconds": 718.5600000000001
+    },
+    {
+      "text": "カーになったんだそうです。この5歳の子",
+      "start_seconds": 715.839,
+      "end_seconds": 722.0400000000001
+    },
+    {
+      "text": "をオープンカーで駅まで送っていったら",
+      "start_seconds": 718.56,
+      "end_seconds": 725.4799999999999
+    },
+    {
+      "text": "この子は本当に喜ぶだろうなと思って",
+      "start_seconds": 722.04,
+      "end_seconds": 728.519
+    },
+    {
+      "text": "ところが帰る時になったら小雨メが降って",
+      "start_seconds": 725.48,
+      "end_seconds": 730.839
+    },
+    {
+      "text": "きたんだそうです。",
+      "start_seconds": 728.519,
+      "end_seconds": 735.88
+    },
+    {
+      "text": "残念だけど、また次来た時にこの子じゃあ",
+      "start_seconds": 730.839,
+      "end_seconds": 737.6
+    },
+    {
+      "text": "お、オープンカーで送ってあげようと。",
+      "start_seconds": 735.88,
+      "end_seconds": 739.76
+    },
+    {
+      "text": "今日は雨が降ってるからフォローを",
+      "start_seconds": 737.6,
+      "end_seconds": 741.88
+    },
+    {
+      "text": "つけようと思ってそのまま駅まで行って",
+      "start_seconds": 739.76,
+      "end_seconds": 745.399
+    },
+    {
+      "text": "改札でさよならって言って見送ってジブリ",
+      "start_seconds": 741.88,
+      "end_seconds": 749.0
+    },
+    {
+      "text": "まで帰る時に今まで経験したことがない",
+      "start_seconds": 745.399,
+      "end_seconds": 753.24
+    },
+    {
+      "text": "ような後悔を感じたと宮崎さんおっしゃっ",
+      "start_seconds": 749.0,
+      "end_seconds": 757.639
+    },
+    {
+      "text": "てました。まったとあの子にとって今日と",
+      "start_seconds": 753.24,
+      "end_seconds": 761.04
+    },
+    {
+      "text": "いう日はもうこの時しかなかったんだと。",
+      "start_seconds": 757.639,
+      "end_seconds": 764.24
+    },
+    {
+      "text": "次に来た時はあの子は全く違う人になって",
+      "start_seconds": 761.04,
+      "end_seconds": 767.24
+    },
+    {
+      "text": "しまっている。子供にとっては今ここが",
+      "start_seconds": 764.24,
+      "end_seconds": 770.279
+    },
+    {
+      "text": "全てなんだ。少しぐらい雨が降ってる",
+      "start_seconds": 767.24,
+      "end_seconds": 774.48
+    },
+    {
+      "text": "ぐらいだったらオープンカーにして駅まで",
+      "start_seconds": 770.279,
+      "end_seconds": 776.92
+    },
+    {
+      "text": "送っていってあげればよかったなって僕は",
+      "start_seconds": 774.48,
+      "end_seconds": 780.519
+    },
+    {
+      "text": "その話を聞いて非常に感動しましてあ、",
+      "start_seconds": 776.92,
+      "end_seconds": 783.0
+    },
+    {
+      "text": "こういう人だから",
+      "start_seconds": 780.519,
+      "end_seconds": 787.279
+    },
+    {
+      "text": "今ここの喜びを描く生きがいに満ちた映画",
+      "start_seconds": 783.0,
+      "end_seconds": 791.8
+    },
+    {
+      "text": "が作れるんだなと思ったんですね。",
+      "start_seconds": 787.279,
+      "end_seconds": 795.68
+    },
+    {
+      "text": "皆さん、あの、日本というのは生きがい、",
+      "start_seconds": 791.8,
+      "end_seconds": 798.8389999999999
+    },
+    {
+      "text": "小さな喜びに満ちた国だと思うんです。",
+      "start_seconds": 795.68,
+      "end_seconds": 803.279
+    },
+    {
+      "text": "日本から世界に出ていって人気を集めてる",
+      "start_seconds": 798.839,
+      "end_seconds": 805.44
+    },
+    {
+      "text": "ものというのはみんな子供の時の小さな",
+      "start_seconds": 803.279,
+      "end_seconds": 808.8389999999999
+    },
+    {
+      "text": "喜びに関係してるんですね。例えば",
+      "start_seconds": 805.44,
+      "end_seconds": 813.6800000000001
+    },
+    {
+      "text": "ポケモン。ポケモンってね、野外で色々な",
+      "start_seconds": 808.839,
+      "end_seconds": 817.9200000000001
+    },
+    {
+      "text": "生き物とたれるその生きがいを表現してる",
+      "start_seconds": 813.68,
+      "end_seconds": 821.16
+    },
+    {
+      "text": "わけじゃないですか。あるいはスーパー",
+      "start_seconds": 817.92,
+      "end_seconds": 823.68
+    },
+    {
+      "text": "マリオのゲームですね。このスーパー",
+      "start_seconds": 821.16,
+      "end_seconds": 828.079
+    },
+    {
+      "text": "マリオブラザーズの、え、1の1の面の",
+      "start_seconds": 823.68,
+      "end_seconds": 830.68
+    },
+    {
+      "text": "地上の音楽と呼ばれてるものがあるんです",
+      "start_seconds": 828.079,
+      "end_seconds": 834.16
+    },
+    {
+      "text": "けど、これはなんとですね、ビデオゲーム",
+      "start_seconds": 830.68,
+      "end_seconds": 838.7589999999999
+    },
+    {
+      "text": "の音楽としては史場初めてアメリカの国会",
+      "start_seconds": 834.16,
+      "end_seconds": 841.7199999999999
+    },
+    {
+      "text": "図書館のナショナルアーカイブに収納され",
+      "start_seconds": 838.759,
+      "end_seconds": 843.399
+    },
+    {
+      "text": "てる。このナショナルアーカイブというの",
+      "start_seconds": 841.72,
+      "end_seconds": 846.5600000000001
+    },
+    {
+      "text": "はあのキングボクシの有名なアイハブ",
+      "start_seconds": 843.399,
+      "end_seconds": 848.639
+    },
+    {
+      "text": "Dreamムamのああいう演説なんかも",
+      "start_seconds": 846.56,
+      "end_seconds": 850.56
+    },
+    {
+      "text": "収納されてるアーカイブなんですけども、",
+      "start_seconds": 848.639,
+      "end_seconds": 853.759
+    },
+    {
+      "text": "そこにスーパーマリオのあの音楽が収納さ",
+      "start_seconds": 850.56,
+      "end_seconds": 855.8
+    },
+    {
+      "text": "れてるんですね。で、あの音楽って何を",
+      "start_seconds": 853.759,
+      "end_seconds": 859.0
+    },
+    {
+      "text": "表してるんでしょうかね?マリオが飛びれ",
+      "start_seconds": 855.8,
+      "end_seconds": 862.3599999999999
+    },
+    {
+      "text": "ながら土管に入っていったりとか、キノコ",
+      "start_seconds": 859.0,
+      "end_seconds": 864.6
+    },
+    {
+      "text": "を食べて大きくなったりとか、あの亀",
+      "start_seconds": 862.36,
+      "end_seconds": 867.16
+    },
+    {
+      "text": "みたいなのが来てね、やられちゃったり",
+      "start_seconds": 864.6,
+      "end_seconds": 873.0
+    },
+    {
+      "text": "あれって子供の時に時間を忘れて楽しんだ",
+      "start_seconds": 867.16,
+      "end_seconds": 877.639
+    },
+    {
+      "text": "あの喜びを表現しているわけじゃないです",
+      "start_seconds": 873.0,
+      "end_seconds": 881.12
+    },
+    {
+      "text": "か。つまりですね、元々生きがいというの",
+      "start_seconds": 877.639,
+      "end_seconds": 884.199
+    },
+    {
+      "text": "はプライベートなもので、その元では平等",
+      "start_seconds": 881.12,
+      "end_seconds": 886.68
+    },
+    {
+      "text": "なんです。例えばスタジオ渋で、え、",
+      "start_seconds": 884.199,
+      "end_seconds": 889.8
+    },
+    {
+      "text": "根コテを書いてる宮崎はさんもどっか世界",
+      "start_seconds": 886.68,
+      "end_seconds": 893.199
+    },
+    {
+      "text": "の片隅で自分の好きな絵を書いている小学",
+      "start_seconds": 889.8,
+      "end_seconds": 896.279
+    },
+    {
+      "text": "生、中学生、高校生、あるいは大人も",
+      "start_seconds": 893.199,
+      "end_seconds": 899.4399999999999
+    },
+    {
+      "text": "生がいという点においては同じです。全く",
+      "start_seconds": 896.279,
+      "end_seconds": 902.759
+    },
+    {
+      "text": "平等です。たまたま宮崎さんの場合には",
+      "start_seconds": 899.44,
+      "end_seconds": 905.8800000000001
+    },
+    {
+      "text": "世界的なアニメ作家になってる。でもその",
+      "start_seconds": 902.759,
+      "end_seconds": 908.36
+    },
+    {
+      "text": "宮崎さんにとって大事なのは世界的な",
+      "start_seconds": 905.88,
+      "end_seconds": 910.16
+    },
+    {
+      "text": "アニメ作家になってるということではなく",
+      "start_seconds": 908.36,
+      "end_seconds": 916.92
+    },
+    {
+      "text": "て得を書く喜びなんですね。僕はここに",
+      "start_seconds": 910.16,
+      "end_seconds": 920.079
+    },
+    {
+      "text": "これからの時代に人工知能と人間の関係を",
+      "start_seconds": 916.92,
+      "end_seconds": 924.3199999999999
+    },
+    {
+      "text": "考える上でのとてもとても大切な原理が",
+      "start_seconds": 920.079,
+      "end_seconds": 926.959
+    },
+    {
+      "text": "潜んでいると思っています。僕はまさに",
+      "start_seconds": 924.32,
+      "end_seconds": 930.639
+    },
+    {
+      "text": "この生がいという、ま、日本初の、ま、",
+      "start_seconds": 926.959,
+      "end_seconds": 934.5999999999999
+    },
+    {
+      "text": "考え方をもにどうやったらね、AIと人間",
+      "start_seconds": 930.639,
+      "end_seconds": 937.839
+    },
+    {
+      "text": "が調和してで、人間のウェルビング幸せを",
+      "start_seconds": 934.6,
+      "end_seconds": 940.48
+    },
+    {
+      "text": "増やせるようなそういう未来が作れるのか",
+      "start_seconds": 937.839,
+      "end_seconds": 943.9200000000001
+    },
+    {
+      "text": "なってことを一生懸命考えています。",
+      "start_seconds": 940.48,
+      "end_seconds": 947.48
+    },
+    {
+      "text": "そして生がいというのは我々の学びと深く",
+      "start_seconds": 943.92,
+      "end_seconds": 949.8389999999999
+    },
+    {
+      "text": "関係してるんですね。どうですか皆さん?",
+      "start_seconds": 947.48,
+      "end_seconds": 953.5600000000001
+    },
+    {
+      "text": "子供の時に色々楽しく学んでる時って",
+      "start_seconds": 949.839,
+      "end_seconds": 956.12
+    },
+    {
+      "text": "生きがいを感じてませんでしたか?そこに",
+      "start_seconds": 953.56,
+      "end_seconds": 960.4399999999999
+    },
+    {
+      "text": "余計なテストの点数とかね、成績とか入っ",
+      "start_seconds": 956.12,
+      "end_seconds": 962.199
+    },
+    {
+      "text": "てくるとちょっと嫌な気がしちゃう。ま、",
+      "start_seconds": 960.44,
+      "end_seconds": 964.36
+    },
+    {
+      "text": "それある程度必要なものなんですけども、",
+      "start_seconds": 962.199,
+      "end_seconds": 968.3599999999999
+    },
+    {
+      "text": "本来学びというのは我々が生きがいを感じ",
+      "start_seconds": 964.36,
+      "end_seconds": 972.0
+    },
+    {
+      "text": "て何かに向き合ってる時に私たちの中に",
+      "start_seconds": 968.36,
+      "end_seconds": 974.519
+    },
+    {
+      "text": "生まれるものである。そのことを忘れない",
+      "start_seconds": 972.0,
+      "end_seconds": 976.759
+    },
+    {
+      "text": "限りこれからま、時代をどんどん変わって",
+      "start_seconds": 974.519,
+      "end_seconds": 978.759
+    },
+    {
+      "text": "いきます。先ほど冒頭にも申し上げました",
+      "start_seconds": 976.759,
+      "end_seconds": 983.519
+    },
+    {
+      "text": "。AIによって未来の未来が明るく開ける",
+      "start_seconds": 978.759,
+      "end_seconds": 986.0790000000001
+    },
+    {
+      "text": "というブーマーの方もいらっしゃるし、",
+      "start_seconds": 983.519,
+      "end_seconds": 988.319
+    },
+    {
+      "text": "役割でも人類は滅亡に行くんだっていう",
+      "start_seconds": 986.079,
+      "end_seconds": 990.6389999999999
+    },
+    {
+      "text": "ドーマーの方もいらっしゃいます。この",
+      "start_seconds": 988.319,
+      "end_seconds": 994.4799999999999
+    },
+    {
+      "text": "ブーマーとドーマーの別れ道の我々は",
+      "start_seconds": 990.639,
+      "end_seconds": 997.16
+    },
+    {
+      "text": "どっちに行くかということは我々がまさに",
+      "start_seconds": 994.48,
+      "end_seconds": 1000.399
+    },
+    {
+      "text": "これから一生懸命みんなで力を学んで",
+      "start_seconds": 997.16,
+      "end_seconds": 1002.88
+    },
+    {
+      "text": "新しい時代に適用していくことで道が",
+      "start_seconds": 1000.399,
+      "end_seconds": 1007.759
+    },
+    {
+      "text": "開けると思うんですけどもその学びを支え",
+      "start_seconds": 1002.88,
+      "end_seconds": 1012.279
+    },
+    {
+      "text": "てくれるのは実は生きがいなんだと私たち",
+      "start_seconds": 1007.759,
+      "end_seconds": 1014.759
+    },
+    {
+      "text": "は今どうしても外部からの評価が気になっ",
+      "start_seconds": 1012.279,
+      "end_seconds": 1019.12
+    },
+    {
+      "text": "てしまいます。どれぐらい自分のポストが",
+      "start_seconds": 1014.759,
+      "end_seconds": 1021.48
+    },
+    {
+      "text": "見られてるのかとか、どれぐらい",
+      "start_seconds": 1019.12,
+      "end_seconds": 1023.279
+    },
+    {
+      "text": "フォロワーがいるのかとか、そういうこと",
+      "start_seconds": 1021.48,
+      "end_seconds": 1025.72
+    },
+    {
+      "text": "ばっかり気にして、それでバランスを崩し",
+      "start_seconds": 1023.279,
+      "end_seconds": 1027.88
+    },
+    {
+      "text": "てしまう人もいるわけですよね。でもそう",
+      "start_seconds": 1025.72,
+      "end_seconds": 1029.799
+    },
+    {
+      "text": "ではなくて",
+      "start_seconds": 1027.88,
+      "end_seconds": 1035.439
+    },
+    {
+      "text": "生がではみんなが平等で宮崎はさんも片隅",
+      "start_seconds": 1029.799,
+      "end_seconds": 1038.16
+    },
+    {
+      "text": "で絵を書いてる人も生がいということに",
+      "start_seconds": 1035.439,
+      "end_seconds": 1041.439
+    },
+    {
+      "text": "おいては平等ででもたまたまもしかしたら",
+      "start_seconds": 1038.16,
+      "end_seconds": 1044.16
+    },
+    {
+      "text": "いろんな時代の状況とか運が良かったら",
+      "start_seconds": 1041.439,
+      "end_seconds": 1047.16
+    },
+    {
+      "text": "自分の書いてる絵もいつかは宮崎さんの",
+      "start_seconds": 1044.16,
+      "end_seconds": 1050.0
+    },
+    {
+      "text": "素晴らしい作品のように、え、世界中の人",
+      "start_seconds": 1047.16,
+      "end_seconds": 1052.8400000000001
+    },
+    {
+      "text": "に伝わって大きな感動をもたらす可能性も",
+      "start_seconds": 1050.0,
+      "end_seconds": 1056.679
+    },
+    {
+      "text": "あると。そして実はAIがそういう個人の",
+      "start_seconds": 1052.84,
+      "end_seconds": 1059.28
+    },
+    {
+      "text": "クリエイティビティ、想像性を支える",
+      "start_seconds": 1056.679,
+      "end_seconds": 1061.919
+    },
+    {
+      "text": "ツールにもなってくれると。このように",
+      "start_seconds": 1059.28,
+      "end_seconds": 1066.0
+    },
+    {
+      "text": "見ることで僕は未来を、え、非常に楽観的",
+      "start_seconds": 1061.919,
+      "end_seconds": 1069.5590000000002
+    },
+    {
+      "text": "にそして生きいに支えられた学びを通して",
+      "start_seconds": 1066.0,
+      "end_seconds": 1072.679
+    },
+    {
+      "text": "、え、前に進めるようなそういう視野が得",
+      "start_seconds": 1069.559,
+      "end_seconds": 1074.799
+    },
+    {
+      "text": "られるのではないかと思います。そのこと",
+      "start_seconds": 1072.679,
+      "end_seconds": 1078.1200000000001
+    },
+    {
+      "text": "を今日皆さんにお伝えすることが私にとっ",
+      "start_seconds": 1074.799,
+      "end_seconds": 1080.679
+    },
+    {
+      "text": "ての今日1番の生きいとなりました。",
+      "start_seconds": 1078.12,
+      "end_seconds": 1084.0919999999999
+    },
+    {
+      "text": "ありがとうございました。[拍手]",
+      "start_seconds": 1080.679,
+      "end_seconds": 1084.092
+    }
+  ],
+  "display_captions": [
+    {
+      "text": "[音楽]",
+      "start_seconds": 9.825,
+      "end_seconds": 11.844999999999999,
+      "id": "DoSFLGmTqP0-display-0001",
+      "segment_id": "DoSFLGmTqP0-ja-0001"
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 13.1,
+      "end_seconds": 15.12,
+      "id": "DoSFLGmTqP0-display-0002",
+      "segment_id": "DoSFLGmTqP0-ja-0002"
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 17.685,
+      "end_seconds": 19.705,
+      "id": "DoSFLGmTqP0-display-0003",
+      "segment_id": "DoSFLGmTqP0-ja-0003"
+    },
+    {
+      "text": "人類は今あの歴史の別れ道に来ていると",
+      "start_seconds": 24.76,
+      "end_seconds": 28.679,
+      "id": "DoSFLGmTqP0-display-0004",
+      "segment_id": "DoSFLGmTqP0-ja-0004"
+    },
+    {
+      "text": "思うんですね。",
+      "start_seconds": 28.679,
+      "end_seconds": 30.439,
+      "id": "DoSFLGmTqP0-display-0005",
+      "segment_id": "DoSFLGmTqP0-ja-0004"
+    },
+    {
+      "text": "人口知能が本当に我々の手に負えない",
+      "start_seconds": 30.439,
+      "end_seconds": 34.52,
+      "id": "DoSFLGmTqP0-display-0006",
+      "segment_id": "DoSFLGmTqP0-ja-0005"
+    },
+    {
+      "text": "ぐらい急速に発展しています。人工知能",
+      "start_seconds": 34.52,
+      "end_seconds": 38.96,
+      "id": "DoSFLGmTqP0-display-0007",
+      "segment_id": "DoSFLGmTqP0-ja-0005"
+    },
+    {
+      "text": "って実は一定期間ごとに2倍ずつ賢くなる",
+      "start_seconds": 38.96,
+      "end_seconds": 44.48,
+      "id": "DoSFLGmTqP0-display-0008",
+      "segment_id": "DoSFLGmTqP0-ja-0006"
+    },
+    {
+      "text": "ような成長してるんですけど皆さんの周り",
+      "start_seconds": 44.48,
+      "end_seconds": 47.48,
+      "id": "DoSFLGmTqP0-display-0009",
+      "segment_id": "DoSFLGmTqP0-ja-0006"
+    },
+    {
+      "text": "に会うたびに2倍賢くなってる人ってい",
+      "start_seconds": 47.48,
+      "end_seconds": 49.8,
+      "id": "DoSFLGmTqP0-display-0010",
+      "segment_id": "DoSFLGmTqP0-ja-0006"
+    },
+    {
+      "text": "ます?いや、あいつね、この前2カ国語",
+      "start_seconds": 49.8,
+      "end_seconds": 53.039,
+      "id": "DoSFLGmTqP0-display-0011",
+      "segment_id": "DoSFLGmTqP0-ja-0007"
+    },
+    {
+      "text": "喋ってたんだけど、1ヶ月後",
+      "start_seconds": 53.039,
+      "end_seconds": 55.28,
+      "id": "DoSFLGmTqP0-display-0012",
+      "segment_id": "DoSFLGmTqP0-ja-0007"
+    },
+    {
+      "text": "81630128",
+      "start_seconds": 55.28,
+      "end_seconds": 57.92,
+      "id": "DoSFLGmTqP0-display-0013",
+      "segment_id": "DoSFLGmTqP0-ja-0007"
+    },
+    {
+      "text": "っていう人はいないですよね。",
+      "start_seconds": 57.92,
+      "end_seconds": 60.64,
+      "id": "DoSFLGmTqP0-display-0014",
+      "segment_id": "DoSFLGmTqP0-ja-0007"
+    },
+    {
+      "text": "そういう人工知能の成長の仕方を指数関数",
+      "start_seconds": 60.64,
+      "end_seconds": 65.239,
+      "id": "DoSFLGmTqP0-display-0015",
+      "segment_id": "DoSFLGmTqP0-ja-0008"
+    },
+    {
+      "text": "的と言うんですけれども、このような成長",
+      "start_seconds": 65.239,
+      "end_seconds": 69.52,
+      "id": "DoSFLGmTqP0-display-0016",
+      "segment_id": "DoSFLGmTqP0-ja-0008"
+    },
+    {
+      "text": "の元に何があるのかというのは実は分かっ",
+      "start_seconds": 69.52,
+      "end_seconds": 73.04,
+      "id": "DoSFLGmTqP0-display-0017",
+      "segment_id": "DoSFLGmTqP0-ja-0009"
+    },
+    {
+      "text": "ていないんです。信頼ティって言葉聞いた",
+      "start_seconds": 73.04,
+      "end_seconds": 76.52,
+      "id": "DoSFLGmTqP0-display-0018",
+      "segment_id": "DoSFLGmTqP0-ja-0009"
+    },
+    {
+      "text": "ことあると思うんですよね。人工知能が",
+      "start_seconds": 76.52,
+      "end_seconds": 79.24,
+      "id": "DoSFLGmTqP0-display-0019",
+      "segment_id": "DoSFLGmTqP0-ja-0009"
+    },
+    {
+      "text": "人間の知性を追い越してさらにすごい",
+      "start_seconds": 79.24,
+      "end_seconds": 82.439,
+      "id": "DoSFLGmTqP0-display-0020",
+      "segment_id": "DoSFLGmTqP0-ja-0010"
+    },
+    {
+      "text": "ところに行ってしまう。じゃあその先には",
+      "start_seconds": 82.439,
+      "end_seconds": 85.84,
+      "id": "DoSFLGmTqP0-display-0021",
+      "segment_id": "DoSFLGmTqP0-ja-0010"
+    },
+    {
+      "text": "何があるのか。世の中には今楽観論と悲観",
+      "start_seconds": 85.84,
+      "end_seconds": 90.72,
+      "id": "DoSFLGmTqP0-display-0022",
+      "segment_id": "DoSFLGmTqP0-ja-0010"
+    },
+    {
+      "text": "論両方あるんですね。楽観論のブーマーと",
+      "start_seconds": 90.72,
+      "end_seconds": 94.04,
+      "id": "DoSFLGmTqP0-display-0023",
+      "segment_id": "DoSFLGmTqP0-ja-0011"
+    },
+    {
+      "text": "いう方々はもう我々はもうかつてないよう",
+      "start_seconds": 94.04,
+      "end_seconds": 97.479,
+      "id": "DoSFLGmTqP0-display-0024",
+      "segment_id": "DoSFLGmTqP0-ja-0011"
+    },
+    {
+      "text": "な反栄を手にするんだと。誰でもどこでも",
+      "start_seconds": 97.479,
+      "end_seconds": 100.88,
+      "id": "DoSFLGmTqP0-display-0025",
+      "segment_id": "DoSFLGmTqP0-ja-0011"
+    },
+    {
+      "text": "行けるし何でも手に入る。そういう",
+      "start_seconds": 100.88,
+      "end_seconds": 103.079,
+      "id": "DoSFLGmTqP0-display-0026",
+      "segment_id": "DoSFLGmTqP0-ja-0012"
+    },
+    {
+      "text": "素晴らしい世界が来るんだと考えています",
+      "start_seconds": 103.079,
+      "end_seconds": 105.159,
+      "id": "DoSFLGmTqP0-display-0027",
+      "segment_id": "DoSFLGmTqP0-ja-0012"
+    },
+    {
+      "text": "。一方ドゥーマーの方々はもう人類の破滅",
+      "start_seconds": 105.159,
+      "end_seconds": 110.079,
+      "id": "DoSFLGmTqP0-display-0028",
+      "segment_id": "DoSFLGmTqP0-ja-0012"
+    },
+    {
+      "text": "が近い。人類は滅亡するんだというような",
+      "start_seconds": 110.079,
+      "end_seconds": 113.479,
+      "id": "DoSFLGmTqP0-display-0029",
+      "segment_id": "DoSFLGmTqP0-ja-0013"
+    },
+    {
+      "text": "ことを言う方もいらっしゃるんですね。",
+      "start_seconds": 113.479,
+      "end_seconds": 115.88,
+      "id": "DoSFLGmTqP0-display-0030",
+      "segment_id": "DoSFLGmTqP0-ja-0013"
+    },
+    {
+      "text": "技術的なプロメテウス主義という方々が",
+      "start_seconds": 115.88,
+      "end_seconds": 119.0,
+      "id": "DoSFLGmTqP0-display-0031",
+      "segment_id": "DoSFLGmTqP0-ja-0014"
+    },
+    {
+      "text": "いらっしゃって、ま、プロメテウスという",
+      "start_seconds": 119.0,
+      "end_seconds": 120.84,
+      "id": "DoSFLGmTqP0-display-0032",
+      "segment_id": "DoSFLGmTqP0-ja-0014"
+    },
+    {
+      "text": "のは神話の存在で人類に火をもたらした人",
+      "start_seconds": 120.84,
+      "end_seconds": 125.64,
+      "id": "DoSFLGmTqP0-display-0033",
+      "segment_id": "DoSFLGmTqP0-ja-0014"
+    },
+    {
+      "text": "なんですけども、新しいプロメテウスが",
+      "start_seconds": 125.64,
+      "end_seconds": 129.239,
+      "id": "DoSFLGmTqP0-display-0034",
+      "segment_id": "DoSFLGmTqP0-ja-0015"
+    },
+    {
+      "text": "誕生しようとしてるんだっていう方々もい",
+      "start_seconds": 129.239,
+      "end_seconds": 131.28,
+      "id": "DoSFLGmTqP0-display-0035",
+      "segment_id": "DoSFLGmTqP0-ja-0015"
+    },
+    {
+      "text": "ます。人工知能っていうのは新しい日なん",
+      "start_seconds": 131.28,
+      "end_seconds": 133.92,
+      "id": "DoSFLGmTqP0-display-0036",
+      "segment_id": "DoSFLGmTqP0-ja-0015"
+    },
+    {
+      "text": "だと。この日を使って我々は何でもできる",
+      "start_seconds": 133.92,
+      "end_seconds": 137.36,
+      "id": "DoSFLGmTqP0-display-0037",
+      "segment_id": "DoSFLGmTqP0-ja-0015"
+    },
+    {
+      "text": "んだという方々もいらっしゃるんです。",
+      "start_seconds": 137.36,
+      "end_seconds": 139.959,
+      "id": "DoSFLGmTqP0-display-0038",
+      "segment_id": "DoSFLGmTqP0-ja-0016"
+    },
+    {
+      "text": "確かに火を使って我々料理をしたり、それ",
+      "start_seconds": 139.959,
+      "end_seconds": 143.64,
+      "id": "DoSFLGmTqP0-display-0039",
+      "segment_id": "DoSFLGmTqP0-ja-0017"
+    },
+    {
+      "text": "から蒸気でものすごく早く動いたりとか、",
+      "start_seconds": 143.64,
+      "end_seconds": 146.959,
+      "id": "DoSFLGmTqP0-display-0040",
+      "segment_id": "DoSFLGmTqP0-ja-0017"
+    },
+    {
+      "text": "ロケットで月さらには火星まで行こうとし",
+      "start_seconds": 146.959,
+      "end_seconds": 150.319,
+      "id": "DoSFLGmTqP0-display-0041",
+      "segment_id": "DoSFLGmTqP0-ja-0017"
+    },
+    {
+      "text": "てますよね。でも日って同時に怖いもの",
+      "start_seconds": 150.319,
+      "end_seconds": 154.16,
+      "id": "DoSFLGmTqP0-display-0042",
+      "segment_id": "DoSFLGmTqP0-ja-0018"
+    },
+    {
+      "text": "ですよね。火傷することもあるし火事に",
+      "start_seconds": 154.16,
+      "end_seconds": 157.48,
+      "id": "DoSFLGmTqP0-display-0043",
+      "segment_id": "DoSFLGmTqP0-ja-0018"
+    },
+    {
+      "text": "なることもある。我々はこの人工知能と",
+      "start_seconds": 157.48,
+      "end_seconds": 160.84,
+      "id": "DoSFLGmTqP0-display-0044",
+      "segment_id": "DoSFLGmTqP0-ja-0018"
+    },
+    {
+      "text": "いう新しい費を果たしてうまく使い",
+      "start_seconds": 160.84,
+      "end_seconds": 164.56,
+      "id": "DoSFLGmTqP0-display-0045",
+      "segment_id": "DoSFLGmTqP0-ja-0019"
+    },
+    {
+      "text": "こなせるのかどうか。これを研究する分野",
+      "start_seconds": 164.56,
+      "end_seconds": 168.2,
+      "id": "DoSFLGmTqP0-display-0046",
+      "segment_id": "DoSFLGmTqP0-ja-0019"
+    },
+    {
+      "text": "をAIアラインメントと言うんですね。",
+      "start_seconds": 168.2,
+      "end_seconds": 172.08,
+      "id": "DoSFLGmTqP0-display-0047",
+      "segment_id": "DoSFLGmTqP0-ja-0019"
+    },
+    {
+      "text": "アラインメントというのは何かと何かを、",
+      "start_seconds": 172.08,
+      "end_seconds": 174.56,
+      "id": "DoSFLGmTqP0-display-0048",
+      "segment_id": "DoSFLGmTqP0-ja-0020"
+    },
+    {
+      "text": "ま、並べる、うまく方向を合わせる、調和",
+      "start_seconds": 174.56,
+      "end_seconds": 178.319,
+      "id": "DoSFLGmTqP0-display-0049",
+      "segment_id": "DoSFLGmTqP0-ja-0020"
+    },
+    {
+      "text": "させるという考え方なんですけども、",
+      "start_seconds": 178.319,
+      "end_seconds": 180.44,
+      "id": "DoSFLGmTqP0-display-0050",
+      "segment_id": "DoSFLGmTqP0-ja-0020"
+    },
+    {
+      "text": "果たしてこのAIと人間がアラインメント",
+      "start_seconds": 180.44,
+      "end_seconds": 185.48,
+      "id": "DoSFLGmTqP0-display-0051",
+      "segment_id": "DoSFLGmTqP0-ja-0021"
+    },
+    {
+      "text": "できるかどうか、これがまさに今我々の",
+      "start_seconds": 185.48,
+      "end_seconds": 188.68,
+      "id": "DoSFLGmTqP0-display-0052",
+      "segment_id": "DoSFLGmTqP0-ja-0021"
+    },
+    {
+      "text": "歴史の分岐点でどうなるのかなと考えてる",
+      "start_seconds": 188.68,
+      "end_seconds": 193.92,
+      "id": "DoSFLGmTqP0-display-0053",
+      "segment_id": "DoSFLGmTqP0-ja-0022"
+    },
+    {
+      "text": "ところなんです。",
+      "start_seconds": 193.92,
+      "end_seconds": 196.599,
+      "id": "DoSFLGmTqP0-display-0054",
+      "segment_id": "DoSFLGmTqP0-ja-0022"
+    },
+    {
+      "text": "ところで、あの、皆さんはどういう時に",
+      "start_seconds": 196.599,
+      "end_seconds": 200.2,
+      "id": "DoSFLGmTqP0-display-0055",
+      "segment_id": "DoSFLGmTqP0-ja-0023"
+    },
+    {
+      "text": "幸せを感じますか?人工知能がね、どんな",
+      "start_seconds": 200.2,
+      "end_seconds": 203.72,
+      "id": "DoSFLGmTqP0-display-0056",
+      "segment_id": "DoSFLGmTqP0-ja-0023"
+    },
+    {
+      "text": "に発展しても我々人間のウェルビーングが",
+      "start_seconds": 203.72,
+      "end_seconds": 208.12,
+      "id": "DoSFLGmTqP0-display-0057",
+      "segment_id": "DoSFLGmTqP0-ja-0023"
+    },
+    {
+      "text": "脅やかされたら意味がないと思いませんか",
+      "start_seconds": 208.12,
+      "end_seconds": 211.28,
+      "id": "DoSFLGmTqP0-display-0058",
+      "segment_id": "DoSFLGmTqP0-ja-0024"
+    },
+    {
+      "text": "?この点についてですね、え、",
+      "start_seconds": 211.28,
+      "end_seconds": 215.0,
+      "id": "DoSFLGmTqP0-display-0059",
+      "segment_id": "DoSFLGmTqP0-ja-0024"
+    },
+    {
+      "text": "レクスフィーマンというMITの僕は本当",
+      "start_seconds": 215.0,
+      "end_seconds": 217.599,
+      "id": "DoSFLGmTqP0-display-0060",
+      "segment_id": "DoSFLGmTqP0-ja-0024"
+    },
+    {
+      "text": "に尊敬するAIの研究者がいらっしゃるん",
+      "start_seconds": 217.599,
+      "end_seconds": 220.12,
+      "id": "DoSFLGmTqP0-display-0061",
+      "segment_id": "DoSFLGmTqP0-ja-0024"
+    },
+    {
+      "text": "ですけど、そのレフィーマンさんがやっ",
+      "start_seconds": 220.12,
+      "end_seconds": 222.08,
+      "id": "DoSFLGmTqP0-display-0062",
+      "segment_id": "DoSFLGmTqP0-ja-0025"
+    },
+    {
+      "text": "てらっしゃるポッドキャストがありまして",
+      "start_seconds": 222.08,
+      "end_seconds": 223.68,
+      "id": "DoSFLGmTqP0-display-0063",
+      "segment_id": "DoSFLGmTqP0-ja-0025"
+    },
+    {
+      "text": "、毎回ゲストが来て2、3時間、え、お話",
+      "start_seconds": 223.68,
+      "end_seconds": 227.04,
+      "id": "DoSFLGmTqP0-display-0064",
+      "segment_id": "DoSFLGmTqP0-ja-0025"
+    },
+    {
+      "text": "するんですけども、え、ヤンポルスキーさ",
+      "start_seconds": 227.04,
+      "end_seconds": 229.4,
+      "id": "DoSFLGmTqP0-display-0065",
+      "segment_id": "DoSFLGmTqP0-ja-0025"
+    },
+    {
+      "text": "んっていう方がいらした時ににポルスキー",
+      "start_seconds": 229.4,
+      "end_seconds": 231.64,
+      "id": "DoSFLGmTqP0-display-0066",
+      "segment_id": "DoSFLGmTqP0-ja-0025"
+    },
+    {
+      "text": "さんがこのまさにAIと人間の",
+      "start_seconds": 231.64,
+      "end_seconds": 233.72,
+      "id": "DoSFLGmTqP0-display-0067",
+      "segment_id": "DoSFLGmTqP0-ja-0026"
+    },
+    {
+      "text": "幸せウェルビングの関係を考える上で生き",
+      "start_seconds": 233.72,
+      "end_seconds": 239.68,
+      "id": "DoSFLGmTqP0-display-0068",
+      "segment_id": "DoSFLGmTqP0-ja-0026"
+    },
+    {
+      "text": "リスクというのがあるという話をしたん",
+      "start_seconds": 239.68,
+      "end_seconds": 242.76,
+      "id": "DoSFLGmTqP0-display-0069",
+      "segment_id": "DoSFLGmTqP0-ja-0026"
+    },
+    {
+      "text": "ですね。生き、これ日本語の言葉です。",
+      "start_seconds": 242.76,
+      "end_seconds": 246.76,
+      "id": "DoSFLGmTqP0-display-0070",
+      "segment_id": "DoSFLGmTqP0-ja-0027"
+    },
+    {
+      "text": "生きのリスクがある。これどういうこと",
+      "start_seconds": 246.76,
+      "end_seconds": 248.76,
+      "id": "DoSFLGmTqP0-display-0071",
+      "segment_id": "DoSFLGmTqP0-ja-0028"
+    },
+    {
+      "text": "でしょうか?人工知能が我々の生活に",
+      "start_seconds": 248.76,
+      "end_seconds": 252.0,
+      "id": "DoSFLGmTqP0-display-0072",
+      "segment_id": "DoSFLGmTqP0-ja-0028"
+    },
+    {
+      "text": "もたらす変化として我々の仕事がなくなっ",
+      "start_seconds": 252.0,
+      "end_seconds": 254.92,
+      "id": "DoSFLGmTqP0-display-0073",
+      "segment_id": "DoSFLGmTqP0-ja-0028"
+    },
+    {
+      "text": "ちゃうんじゃないかってこと言う人います",
+      "start_seconds": 254.92,
+      "end_seconds": 256.4,
+      "id": "DoSFLGmTqP0-display-0074",
+      "segment_id": "DoSFLGmTqP0-ja-0028"
+    },
+    {
+      "text": "よね。今でなんか例えば絵を書いてた人の",
+      "start_seconds": 256.4,
+      "end_seconds": 260.16,
+      "id": "DoSFLGmTqP0-display-0075",
+      "segment_id": "DoSFLGmTqP0-ja-0029"
+    },
+    {
+      "text": "代わり人口が絵を書く。今まで例えば通訳",
+      "start_seconds": 260.16,
+      "end_seconds": 264.16,
+      "id": "DoSFLGmTqP0-display-0076",
+      "segment_id": "DoSFLGmTqP0-ja-0029"
+    },
+    {
+      "text": "とか翻訳をやってた人の代わりにそういう",
+      "start_seconds": 264.16,
+      "end_seconds": 267.16,
+      "id": "DoSFLGmTqP0-display-0077",
+      "segment_id": "DoSFLGmTqP0-ja-0029"
+    },
+    {
+      "text": "こと人工知能がやってしまう。もう人間",
+      "start_seconds": 267.16,
+      "end_seconds": 270.36,
+      "id": "DoSFLGmTqP0-display-0078",
+      "segment_id": "DoSFLGmTqP0-ja-0030"
+    },
+    {
+      "text": "いらなくなるんじゃないか。人工知能が",
+      "start_seconds": 270.36,
+      "end_seconds": 272.88,
+      "id": "DoSFLGmTqP0-display-0079",
+      "segment_id": "DoSFLGmTqP0-ja-0030"
+    },
+    {
+      "text": "全部やってしまうんじゃないかっていう",
+      "start_seconds": 272.88,
+      "end_seconds": 274.44,
+      "id": "DoSFLGmTqP0-display-0080",
+      "segment_id": "DoSFLGmTqP0-ja-0030"
+    },
+    {
+      "text": "ことを考える人たちがいます。で、これは",
+      "start_seconds": 274.44,
+      "end_seconds": 277.52,
+      "id": "DoSFLGmTqP0-display-0081",
+      "segment_id": "DoSFLGmTqP0-ja-0030"
+    },
+    {
+      "text": "これで大変なことなんですけども、",
+      "start_seconds": 277.52,
+      "end_seconds": 280.96,
+      "id": "DoSFLGmTqP0-display-0082",
+      "segment_id": "DoSFLGmTqP0-ja-0031"
+    },
+    {
+      "text": "ヤンポルスキーさんがそのレクス",
+      "start_seconds": 280.96,
+      "end_seconds": 282.56,
+      "id": "DoSFLGmTqP0-display-0083",
+      "segment_id": "DoSFLGmTqP0-ja-0031"
+    },
+    {
+      "text": "ウィードマンさんのポッドキャストで議論",
+      "start_seconds": 282.56,
+      "end_seconds": 284.919,
+      "id": "DoSFLGmTqP0-display-0084",
+      "segment_id": "DoSFLGmTqP0-ja-0031"
+    },
+    {
+      "text": "した生がいリスクというのは我々のこの",
+      "start_seconds": 284.919,
+      "end_seconds": 289.199,
+      "id": "DoSFLGmTqP0-display-0085",
+      "segment_id": "DoSFLGmTqP0-ja-0031"
+    },
+    {
+      "text": "生きがい、生きる実感これま、日本語なん",
+      "start_seconds": 289.199,
+      "end_seconds": 292.36,
+      "id": "DoSFLGmTqP0-display-0086",
+      "segment_id": "DoSFLGmTqP0-ja-0032"
+    },
+    {
+      "text": "ですよね。この日本語が生きがいという形",
+      "start_seconds": 292.36,
+      "end_seconds": 294.639,
+      "id": "DoSFLGmTqP0-display-0087",
+      "segment_id": "DoSFLGmTqP0-ja-0032"
+    },
+    {
+      "text": "で今世界中に注目されてるんですけども、",
+      "start_seconds": 294.639,
+      "end_seconds": 297.36,
+      "id": "DoSFLGmTqP0-display-0088",
+      "segment_id": "DoSFLGmTqP0-ja-0032"
+    },
+    {
+      "text": "この生がいが失われてしまうんじゃないか",
+      "start_seconds": 297.36,
+      "end_seconds": 299.28,
+      "id": "DoSFLGmTqP0-display-0089",
+      "segment_id": "DoSFLGmTqP0-ja-0032"
+    },
+    {
+      "text": "と、そういうことを、ま、議論したわけ",
+      "start_seconds": 299.28,
+      "end_seconds": 302.759,
+      "id": "DoSFLGmTqP0-display-0090",
+      "segment_id": "DoSFLGmTqP0-ja-0033"
+    },
+    {
+      "text": "です。で、この実は生がいということを",
+      "start_seconds": 302.759,
+      "end_seconds": 305.56,
+      "id": "DoSFLGmTqP0-display-0091",
+      "segment_id": "DoSFLGmTqP0-ja-0033"
+    },
+    {
+      "text": "考えると人工知能と人間がどこが違うのか",
+      "start_seconds": 305.56,
+      "end_seconds": 309.08,
+      "id": "DoSFLGmTqP0-display-0092",
+      "segment_id": "DoSFLGmTqP0-ja-0033"
+    },
+    {
+      "text": "、そしてどうやったらそれを",
+      "start_seconds": 309.08,
+      "end_seconds": 311.919,
+      "id": "DoSFLGmTqP0-display-0093",
+      "segment_id": "DoSFLGmTqP0-ja-0034"
+    },
+    {
+      "text": "アラインメントできるのかということが",
+      "start_seconds": 311.919,
+      "end_seconds": 314.0,
+      "id": "DoSFLGmTqP0-display-0094",
+      "segment_id": "DoSFLGmTqP0-ja-0034"
+    },
+    {
+      "text": "見えてくるんです。皆さん人工知能本当に",
+      "start_seconds": 314.0,
+      "end_seconds": 317.08,
+      "id": "DoSFLGmTqP0-display-0095",
+      "segment_id": "DoSFLGmTqP0-ja-0034"
+    },
+    {
+      "text": "すごいですよね。今ね、彼らがどうやって",
+      "start_seconds": 317.08,
+      "end_seconds": 319.759,
+      "id": "DoSFLGmTqP0-display-0096",
+      "segment_id": "DoSFLGmTqP0-ja-0034"
+    },
+    {
+      "text": "学習してるかご存知ですか?人工知能は外",
+      "start_seconds": 319.759,
+      "end_seconds": 324.16,
+      "id": "DoSFLGmTqP0-display-0097",
+      "segment_id": "DoSFLGmTqP0-ja-0035"
+    },
+    {
+      "text": "から点数をつけられないと学習ができない",
+      "start_seconds": 324.16,
+      "end_seconds": 327.84,
+      "id": "DoSFLGmTqP0-display-0098",
+      "segment_id": "DoSFLGmTqP0-ja-0035"
+    },
+    {
+      "text": "んです。これ、あの、専門的には評価関数",
+      "start_seconds": 327.84,
+      "end_seconds": 330.6,
+      "id": "DoSFLGmTqP0-display-0099",
+      "segment_id": "DoSFLGmTqP0-ja-0035"
+    },
+    {
+      "text": "とか言うんですけども、今の奇妙この",
+      "start_seconds": 330.6,
+      "end_seconds": 332.68,
+      "id": "DoSFLGmTqP0-display-0100",
+      "segment_id": "DoSFLGmTqP0-ja-0036"
+    },
+    {
+      "text": "アウトプットは30点だよとか、今度45",
+      "start_seconds": 332.68,
+      "end_seconds": 336.919,
+      "id": "DoSFLGmTqP0-display-0101",
+      "segment_id": "DoSFLGmTqP0-ja-0036"
+    },
+    {
+      "text": "点になったよって、70点、80点を",
+      "start_seconds": 336.919,
+      "end_seconds": 339.88,
+      "id": "DoSFLGmTqP0-display-0102",
+      "segment_id": "DoSFLGmTqP0-ja-0036"
+    },
+    {
+      "text": "目指そうねと、このような外からの",
+      "start_seconds": 339.88,
+      "end_seconds": 342.68,
+      "id": "DoSFLGmTqP0-display-0103",
+      "segment_id": "DoSFLGmTqP0-ja-0037"
+    },
+    {
+      "text": "フィードバックがあって、じゃあAIは",
+      "start_seconds": 342.68,
+      "end_seconds": 344.639,
+      "id": "DoSFLGmTqP0-display-0104",
+      "segment_id": "DoSFLGmTqP0-ja-0037"
+    },
+    {
+      "text": "もうじゃ、一生懸命100点を目指して",
+      "start_seconds": 344.639,
+      "end_seconds": 346.72,
+      "id": "DoSFLGmTqP0-display-0105",
+      "segment_id": "DoSFLGmTqP0-ja-0037"
+    },
+    {
+      "text": "学習していくと、このような形で今の人口",
+      "start_seconds": 346.72,
+      "end_seconds": 349.4,
+      "id": "DoSFLGmTqP0-display-0106",
+      "segment_id": "DoSFLGmTqP0-ja-0037"
+    },
+    {
+      "text": "知能というのは学習してるんですね。人間",
+      "start_seconds": 349.4,
+      "end_seconds": 352.759,
+      "id": "DoSFLGmTqP0-display-0107",
+      "segment_id": "DoSFLGmTqP0-ja-0038"
+    },
+    {
+      "text": "もそういうとこありますよね。子供時代",
+      "start_seconds": 352.759,
+      "end_seconds": 355.56,
+      "id": "DoSFLGmTqP0-display-0108",
+      "segment_id": "DoSFLGmTqP0-ja-0038"
+    },
+    {
+      "text": "なんか学校の成績学校だとかあと大人に",
+      "start_seconds": 355.56,
+      "end_seconds": 358.72,
+      "id": "DoSFLGmTqP0-display-0109",
+      "segment_id": "DoSFLGmTqP0-ja-0038"
+    },
+    {
+      "text": "なったらね君はいくら稼いでるんだとかね",
+      "start_seconds": 358.72,
+      "end_seconds": 362.319,
+      "id": "DoSFLGmTqP0-display-0110",
+      "segment_id": "DoSFLGmTqP0-ja-0039"
+    },
+    {
+      "text": "給料いくらなんだとかあるいは今",
+      "start_seconds": 362.319,
+      "end_seconds": 365.0,
+      "id": "DoSFLGmTqP0-display-0111",
+      "segment_id": "DoSFLGmTqP0-ja-0039"
+    },
+    {
+      "text": "ソーシャルメディア前盛の時代ですから君",
+      "start_seconds": 365.0,
+      "end_seconds": 368.08,
+      "id": "DoSFLGmTqP0-display-0112",
+      "segment_id": "DoSFLGmTqP0-ja-0039"
+    },
+    {
+      "text": "のインスタのフォロワーはどれぐらいいる",
+      "start_seconds": 368.08,
+      "end_seconds": 369.68,
+      "id": "DoSFLGmTqP0-display-0113",
+      "segment_id": "DoSFLGmTqP0-ja-0039"
+    },
+    {
+      "text": "んですかとかねYouTubeの動画は",
+      "start_seconds": 369.68,
+      "end_seconds": 371.919,
+      "id": "DoSFLGmTqP0-display-0114",
+      "segment_id": "DoSFLGmTqP0-ja-0040"
+    },
+    {
+      "text": "どれぐらい見られてるんですかというこう",
+      "start_seconds": 371.919,
+      "end_seconds": 373.68,
+      "id": "DoSFLGmTqP0-display-0115",
+      "segment_id": "DoSFLGmTqP0-ja-0040"
+    },
+    {
+      "text": "いう外からの指標で我々まされるところが",
+      "start_seconds": 373.68,
+      "end_seconds": 378.56,
+      "id": "DoSFLGmTqP0-display-0116",
+      "segment_id": "DoSFLGmTqP0-ja-0040"
+    },
+    {
+      "text": "あるわけなんですけど人口知能はまさに",
+      "start_seconds": 378.56,
+      "end_seconds": 381.84,
+      "id": "DoSFLGmTqP0-display-0117",
+      "segment_id": "DoSFLGmTqP0-ja-0041"
+    },
+    {
+      "text": "そういう外部評価によっって学習してるん",
+      "start_seconds": 381.84,
+      "end_seconds": 385.12,
+      "id": "DoSFLGmTqP0-display-0118",
+      "segment_id": "DoSFLGmTqP0-ja-0041"
+    },
+    {
+      "text": "ですね。でも人間は実はそれだけじゃない",
+      "start_seconds": 385.12,
+      "end_seconds": 388.039,
+      "id": "DoSFLGmTqP0-display-0119",
+      "segment_id": "DoSFLGmTqP0-ja-0041"
+    },
+    {
+      "text": "んです。我々の生きる実感ウェルビング。",
+      "start_seconds": 388.039,
+      "end_seconds": 392.24,
+      "id": "DoSFLGmTqP0-display-0120",
+      "segment_id": "DoSFLGmTqP0-ja-0042"
+    },
+    {
+      "text": "この真ん中にあるこの生がいというのは外",
+      "start_seconds": 392.24,
+      "end_seconds": 395.8,
+      "id": "DoSFLGmTqP0-display-0121",
+      "segment_id": "DoSFLGmTqP0-ja-0043"
+    },
+    {
+      "text": "からの評価とは関係のない小さな喜びの",
+      "start_seconds": 395.8,
+      "end_seconds": 399.96,
+      "id": "DoSFLGmTqP0-display-0122",
+      "segment_id": "DoSFLGmTqP0-ja-0043"
+    },
+    {
+      "text": "ことを指すんですよ。これが我々の人間で",
+      "start_seconds": 399.96,
+      "end_seconds": 403.12,
+      "id": "DoSFLGmTqP0-display-0123",
+      "segment_id": "DoSFLGmTqP0-ja-0043"
+    },
+    {
+      "text": "ある証なんですね。例えば皆さん犬をね",
+      "start_seconds": 403.12,
+      "end_seconds": 407.12,
+      "id": "DoSFLGmTqP0-display-0124",
+      "segment_id": "DoSFLGmTqP0-ja-0044"
+    },
+    {
+      "text": "散歩に連れていくのが生きがいだとする",
+      "start_seconds": 407.12,
+      "end_seconds": 409.639,
+      "id": "DoSFLGmTqP0-display-0125",
+      "segment_id": "DoSFLGmTqP0-ja-0044"
+    },
+    {
+      "text": "じゃないですか。あら、奥さん、あなたの",
+      "start_seconds": 409.639,
+      "end_seconds": 412.96,
+      "id": "DoSFLGmTqP0-display-0126",
+      "segment_id": "DoSFLGmTqP0-ja-0044"
+    },
+    {
+      "text": "今日の犬の散歩の仕方いいわね。昨日は",
+      "start_seconds": 412.96,
+      "end_seconds": 415.96,
+      "id": "DoSFLGmTqP0-display-0127",
+      "segment_id": "DoSFLGmTqP0-ja-0045"
+    },
+    {
+      "text": "60点だけど、今日は78点あげるわ",
+      "start_seconds": 415.96,
+      "end_seconds": 419.879,
+      "id": "DoSFLGmTqP0-display-0128",
+      "segment_id": "DoSFLGmTqP0-ja-0045"
+    },
+    {
+      "text": "みたいなことは言われないですよね。あら",
+      "start_seconds": 419.879,
+      "end_seconds": 423.039,
+      "id": "DoSFLGmTqP0-display-0129",
+      "segment_id": "DoSFLGmTqP0-ja-0045"
+    },
+    {
+      "text": "、コーヒーの飲み方いいね。今日はね。",
+      "start_seconds": 423.039,
+      "end_seconds": 426.479,
+      "id": "DoSFLGmTqP0-display-0130",
+      "segment_id": "DoSFLGmTqP0-ja-0046"
+    },
+    {
+      "text": "昨日よりもなんかいいコーヒーの飲み方し",
+      "start_seconds": 426.479,
+      "end_seconds": 428.319,
+      "id": "DoSFLGmTqP0-display-0131",
+      "segment_id": "DoSFLGmTqP0-ja-0047"
+    },
+    {
+      "text": "てるから君ちょっと評価関数上がったよっ",
+      "start_seconds": 428.319,
+      "end_seconds": 430.56,
+      "id": "DoSFLGmTqP0-display-0132",
+      "segment_id": "DoSFLGmTqP0-ja-0047"
+    },
+    {
+      "text": "ていうことはないでしょ。僕の生きがいは",
+      "start_seconds": 430.56,
+      "end_seconds": 433.52,
+      "id": "DoSFLGmTqP0-display-0133",
+      "segment_id": "DoSFLGmTqP0-ja-0047"
+    },
+    {
+      "text": "何を隠そう?子供の頃町長の行動の研究を",
+      "start_seconds": 433.52,
+      "end_seconds": 436.639,
+      "id": "DoSFLGmTqP0-display-0134",
+      "segment_id": "DoSFLGmTqP0-ja-0047"
+    },
+    {
+      "text": "してたんで",
+      "start_seconds": 436.639,
+      "end_seconds": 438.879,
+      "id": "DoSFLGmTqP0-display-0135",
+      "segment_id": "DoSFLGmTqP0-ja-0048"
+    },
+    {
+      "text": "蝶が飛んでるのを見ると今でも本当に",
+      "start_seconds": 438.879,
+      "end_seconds": 442.12,
+      "id": "DoSFLGmTqP0-display-0136",
+      "segment_id": "DoSFLGmTqP0-ja-0048"
+    },
+    {
+      "text": "生がいを感じるんです。僕はあのランナー",
+      "start_seconds": 442.12,
+      "end_seconds": 444.96,
+      "id": "DoSFLGmTqP0-display-0137",
+      "segment_id": "DoSFLGmTqP0-ja-0048"
+    },
+    {
+      "text": "で東京を走っていると蝶が飛んでますよね",
+      "start_seconds": 444.96,
+      "end_seconds": 447.56,
+      "id": "DoSFLGmTqP0-display-0138",
+      "segment_id": "DoSFLGmTqP0-ja-0048"
+    },
+    {
+      "text": "。そうすると日本にいる腸は大体見分が",
+      "start_seconds": 447.56,
+      "end_seconds": 450.4,
+      "id": "DoSFLGmTqP0-display-0139",
+      "segment_id": "DoSFLGmTqP0-ja-0049"
+    },
+    {
+      "text": "つくんです。これ生きがいなんですけど",
+      "start_seconds": 450.4,
+      "end_seconds": 453.039,
+      "id": "DoSFLGmTqP0-display-0140",
+      "segment_id": "DoSFLGmTqP0-ja-0049"
+    },
+    {
+      "text": "残念なことに今まで",
+      "start_seconds": 453.039,
+      "end_seconds": 455.479,
+      "id": "DoSFLGmTqP0-display-0141",
+      "segment_id": "DoSFLGmTqP0-ja-0049"
+    },
+    {
+      "text": "蝶ちが見分けられるということで褒められ",
+      "start_seconds": 455.479,
+      "end_seconds": 457.68,
+      "id": "DoSFLGmTqP0-display-0142",
+      "segment_id": "DoSFLGmTqP0-ja-0049"
+    },
+    {
+      "text": "たことはほとんどない。ま、変わり物だな",
+      "start_seconds": 457.68,
+      "end_seconds": 461.12,
+      "id": "DoSFLGmTqP0-display-0143",
+      "segment_id": "DoSFLGmTqP0-ja-0050"
+    },
+    {
+      "text": "とか、あ、そういうのが好きなんですねっ",
+      "start_seconds": 461.12,
+      "end_seconds": 463.12,
+      "id": "DoSFLGmTqP0-display-0144",
+      "segment_id": "DoSFLGmTqP0-ja-0050"
+    },
+    {
+      "text": "て言って、ちょっと後は距離を置かれる",
+      "start_seconds": 463.12,
+      "end_seconds": 466.84,
+      "id": "DoSFLGmTqP0-display-0145",
+      "segment_id": "DoSFLGmTqP0-ja-0050"
+    },
+    {
+      "text": "ことが多いんですけども、ただ生きがいと",
+      "start_seconds": 466.84,
+      "end_seconds": 469.84,
+      "id": "DoSFLGmTqP0-display-0146",
+      "segment_id": "DoSFLGmTqP0-ja-0051"
+    },
+    {
+      "text": "いうのはこのように",
+      "start_seconds": 469.84,
+      "end_seconds": 472.84,
+      "id": "DoSFLGmTqP0-display-0147",
+      "segment_id": "DoSFLGmTqP0-ja-0051"
+    },
+    {
+      "text": "他人から評価されたり、あるいは給料が",
+      "start_seconds": 472.84,
+      "end_seconds": 476.4,
+      "id": "DoSFLGmTqP0-display-0148",
+      "segment_id": "DoSFLGmTqP0-ja-0051"
+    },
+    {
+      "text": "上がったり、社会的な地位が、ま、それに",
+      "start_seconds": 476.4,
+      "end_seconds": 480.319,
+      "id": "DoSFLGmTqP0-display-0149",
+      "segment_id": "DoSFLGmTqP0-ja-0052"
+    },
+    {
+      "text": "よって確立するというようなこととは関係",
+      "start_seconds": 480.319,
+      "end_seconds": 483.4,
+      "id": "DoSFLGmTqP0-display-0150",
+      "segment_id": "DoSFLGmTqP0-ja-0052"
+    },
+    {
+      "text": "のない自分だけの小さな喜び、これが",
+      "start_seconds": 483.4,
+      "end_seconds": 486.84,
+      "id": "DoSFLGmTqP0-display-0151",
+      "segment_id": "DoSFLGmTqP0-ja-0052"
+    },
+    {
+      "text": "生きがいなんですね。そういう意味におい",
+      "start_seconds": 486.84,
+      "end_seconds": 489.159,
+      "id": "DoSFLGmTqP0-display-0152",
+      "segment_id": "DoSFLGmTqP0-ja-0053"
+    },
+    {
+      "text": "ては人口知能とは全く違うんです。いや、",
+      "start_seconds": 489.159,
+      "end_seconds": 492.56,
+      "id": "DoSFLGmTqP0-display-0153",
+      "segment_id": "DoSFLGmTqP0-ja-0053"
+    },
+    {
+      "text": "将来は人工知能にも生きがいが持たされる",
+      "start_seconds": 492.56,
+      "end_seconds": 495.159,
+      "id": "DoSFLGmTqP0-display-0154",
+      "segment_id": "DoSFLGmTqP0-ja-0053"
+    },
+    {
+      "text": "ような日が来るかもしれませんが、人工",
+      "start_seconds": 495.159,
+      "end_seconds": 497.8,
+      "id": "DoSFLGmTqP0-display-0155",
+      "segment_id": "DoSFLGmTqP0-ja-0053"
+    },
+    {
+      "text": "知能はやっぱり外側の評価がないと何も",
+      "start_seconds": 497.8,
+      "end_seconds": 500.72,
+      "id": "DoSFLGmTqP0-display-0156",
+      "segment_id": "DoSFLGmTqP0-ja-0054"
+    },
+    {
+      "text": "できないんですね。我々は外側の評価が",
+      "start_seconds": 500.72,
+      "end_seconds": 503.96,
+      "id": "DoSFLGmTqP0-display-0157",
+      "segment_id": "DoSFLGmTqP0-ja-0054"
+    },
+    {
+      "text": "なくても小さな喜びを持つことができる。",
+      "start_seconds": 503.96,
+      "end_seconds": 506.96,
+      "id": "DoSFLGmTqP0-display-0158",
+      "segment_id": "DoSFLGmTqP0-ja-0054"
+    },
+    {
+      "text": "日本は大国です。あ時、あの、ドイツ",
+      "start_seconds": 506.96,
+      "end_seconds": 510.919,
+      "id": "DoSFLGmTqP0-display-0159",
+      "segment_id": "DoSFLGmTqP0-ja-0055"
+    },
+    {
+      "text": "のジャーナリストが私を訪ねてきまして、",
+      "start_seconds": 510.919,
+      "end_seconds": 515.479,
+      "id": "DoSFLGmTqP0-display-0160",
+      "segment_id": "DoSFLGmTqP0-ja-0055"
+    },
+    {
+      "text": "ちょうど春だったんですけど、僕に真顔で",
+      "start_seconds": 515.479,
+      "end_seconds": 517.64,
+      "id": "DoSFLGmTqP0-display-0161",
+      "segment_id": "DoSFLGmTqP0-ja-0055"
+    },
+    {
+      "text": "質問するんですね。件1つ質問したいこと",
+      "start_seconds": 517.64,
+      "end_seconds": 520.32,
+      "id": "DoSFLGmTqP0-display-0162",
+      "segment_id": "DoSFLGmTqP0-ja-0056"
+    },
+    {
+      "text": "があるんだけど、なぜ日本人は桜が咲いた",
+      "start_seconds": 520.32,
+      "end_seconds": 524.48,
+      "id": "DoSFLGmTqP0-display-0163",
+      "segment_id": "DoSFLGmTqP0-ja-0056"
+    },
+    {
+      "text": "ぐらいであんなに喜んでるんだって言うん",
+      "start_seconds": 524.48,
+      "end_seconds": 526.88,
+      "id": "DoSFLGmTqP0-display-0164",
+      "segment_id": "DoSFLGmTqP0-ja-0056"
+    },
+    {
+      "text": "ですよ。ちょうどお花見の季節でね、",
+      "start_seconds": 526.88,
+      "end_seconds": 529.44,
+      "id": "DoSFLGmTqP0-display-0165",
+      "segment_id": "DoSFLGmTqP0-ja-0056"
+    },
+    {
+      "text": "みんなお花見してたんですけど。で、僕は",
+      "start_seconds": 529.44,
+      "end_seconds": 531.8,
+      "id": "DoSFLGmTqP0-display-0166",
+      "segment_id": "DoSFLGmTqP0-ja-0057"
+    },
+    {
+      "text": "、え、ドイツでは花が咲いても喜ばない",
+      "start_seconds": 531.8,
+      "end_seconds": 535.68,
+      "id": "DoSFLGmTqP0-display-0167",
+      "segment_id": "DoSFLGmTqP0-ja-0057"
+    },
+    {
+      "text": "のって聞いたんですよ。そしたら",
+      "start_seconds": 535.68,
+      "end_seconds": 537.76,
+      "id": "DoSFLGmTqP0-display-0168",
+      "segment_id": "DoSFLGmTqP0-ja-0057"
+    },
+    {
+      "text": "彼のすごく真面目な人で我々ドイツ人は",
+      "start_seconds": 537.76,
+      "end_seconds": 541.72,
+      "id": "DoSFLGmTqP0-display-0169",
+      "segment_id": "DoSFLGmTqP0-ja-0058"
+    },
+    {
+      "text": "そんなに簡単には喜ばない。我々が喜ぶの",
+      "start_seconds": 541.72,
+      "end_seconds": 545.92,
+      "id": "DoSFLGmTqP0-display-0170",
+      "segment_id": "DoSFLGmTqP0-ja-0058"
+    },
+    {
+      "text": "はクリスマスの時ぐらいだっておっしゃっ",
+      "start_seconds": 545.92,
+      "end_seconds": 549.0,
+      "id": "DoSFLGmTqP0-display-0171",
+      "segment_id": "DoSFLGmTqP0-ja-0058"
+    },
+    {
+      "text": "て大変だなと思ったんですけど実は日本は",
+      "start_seconds": 549.0,
+      "end_seconds": 552.72,
+      "id": "DoSFLGmTqP0-display-0172",
+      "segment_id": "DoSFLGmTqP0-ja-0059"
+    },
+    {
+      "text": "小さな喜びに満ちた国なんですね。",
+      "start_seconds": 552.72,
+      "end_seconds": 557.0,
+      "id": "DoSFLGmTqP0-display-0173",
+      "segment_id": "DoSFLGmTqP0-ja-0059"
+    },
+    {
+      "text": "2025年の春に大リーグの開幕戦が日本",
+      "start_seconds": 557.0,
+      "end_seconds": 560.12,
+      "id": "DoSFLGmTqP0-display-0174",
+      "segment_id": "DoSFLGmTqP0-ja-0060"
+    },
+    {
+      "text": "でありました。で、その時にアメリカから",
+      "start_seconds": 560.12,
+      "end_seconds": 562.2,
+      "id": "DoSFLGmTqP0-display-0175",
+      "segment_id": "DoSFLGmTqP0-ja-0060"
+    },
+    {
+      "text": "記者がいらして、日本のコンビニンス",
+      "start_seconds": 562.2,
+      "end_seconds": 565.16,
+      "id": "DoSFLGmTqP0-display-0176",
+      "segment_id": "DoSFLGmTqP0-ja-0060"
+    },
+    {
+      "text": "ストアで卵サ道を買って、あまりの美味し",
+      "start_seconds": 565.16,
+      "end_seconds": 569.88,
+      "id": "DoSFLGmTqP0-display-0177",
+      "segment_id": "DoSFLGmTqP0-ja-0061"
+    },
+    {
+      "text": "さにも本当に嬉し、もう本当に喜んじゃっ",
+      "start_seconds": 569.88,
+      "end_seconds": 573.839,
+      "id": "DoSFLGmTqP0-display-0178",
+      "segment_id": "DoSFLGmTqP0-ja-0061"
+    },
+    {
+      "text": "たわけですよ。こんなのアメリカにないっ",
+      "start_seconds": 573.839,
+      "end_seconds": 575.16,
+      "id": "DoSFLGmTqP0-display-0179",
+      "segment_id": "DoSFLGmTqP0-ja-0061"
+    },
+    {
+      "text": "て。で、我々にとってはそれは、ま、",
+      "start_seconds": 575.16,
+      "end_seconds": 578.44,
+      "id": "DoSFLGmTqP0-display-0180",
+      "segment_id": "DoSFLGmTqP0-ja-0062"
+    },
+    {
+      "text": "小さな喜びでそれを一生懸命作っ",
+      "start_seconds": 578.44,
+      "end_seconds": 580.519,
+      "id": "DoSFLGmTqP0-display-0181",
+      "segment_id": "DoSFLGmTqP0-ja-0062"
+    },
+    {
+      "text": "てらっしゃる方がいらっしゃるんですけど",
+      "start_seconds": 580.519,
+      "end_seconds": 581.8,
+      "id": "DoSFLGmTqP0-display-0182",
+      "segment_id": "DoSFLGmTqP0-ja-0062"
+    },
+    {
+      "text": "も、この生がいというのは考えてみますと",
+      "start_seconds": 581.8,
+      "end_seconds": 585.0,
+      "id": "DoSFLGmTqP0-display-0183",
+      "segment_id": "DoSFLGmTqP0-ja-0062"
+    },
+    {
+      "text": "、元々はね、我々が子供の頃から持って",
+      "start_seconds": 585.0,
+      "end_seconds": 588.24,
+      "id": "DoSFLGmTqP0-display-0184",
+      "segment_id": "DoSFLGmTqP0-ja-0063"
+    },
+    {
+      "text": "いる生きる実感とか喜びなんですけど、",
+      "start_seconds": 588.24,
+      "end_seconds": 591.2,
+      "id": "DoSFLGmTqP0-display-0185",
+      "segment_id": "DoSFLGmTqP0-ja-0063"
+    },
+    {
+      "text": "それが回り回って、ま、経済を回したり",
+      "start_seconds": 591.2,
+      "end_seconds": 595.36,
+      "id": "DoSFLGmTqP0-display-0186",
+      "segment_id": "DoSFLGmTqP0-ja-0063"
+    },
+    {
+      "text": "文化を作ったりするんですよね。僕は、",
+      "start_seconds": 595.36,
+      "end_seconds": 598.48,
+      "id": "DoSFLGmTqP0-display-0187",
+      "segment_id": "DoSFLGmTqP0-ja-0064"
+    },
+    {
+      "text": "あの、かつて日本の公共放送で番組の",
+      "start_seconds": 598.48,
+      "end_seconds": 602.399,
+      "id": "DoSFLGmTqP0-display-0188",
+      "segment_id": "DoSFLGmTqP0-ja-0064"
+    },
+    {
+      "text": "キャスターをしてたことがありました。で",
+      "start_seconds": 602.399,
+      "end_seconds": 604.519,
+      "id": "DoSFLGmTqP0-display-0189",
+      "segment_id": "DoSFLGmTqP0-ja-0064"
+    },
+    {
+      "text": "、その時にスタジオジブの宮崎はさんを",
+      "start_seconds": 604.519,
+      "end_seconds": 607.76,
+      "id": "DoSFLGmTqP0-display-0190",
+      "segment_id": "DoSFLGmTqP0-ja-0065"
+    },
+    {
+      "text": "インタビューしたんですね。宮崎さんその",
+      "start_seconds": 607.76,
+      "end_seconds": 609.92,
+      "id": "DoSFLGmTqP0-display-0191",
+      "segment_id": "DoSFLGmTqP0-ja-0065"
+    },
+    {
+      "text": "頃崖の上のポニョのエコテを書いてました",
+      "start_seconds": 609.92,
+      "end_seconds": 613.44,
+      "id": "DoSFLGmTqP0-display-0192",
+      "segment_id": "DoSFLGmTqP0-ja-0065"
+    },
+    {
+      "text": "。で、我々が行った時にもエコテを書き",
+      "start_seconds": 613.44,
+      "end_seconds": 616.04,
+      "id": "DoSFLGmTqP0-display-0193",
+      "segment_id": "DoSFLGmTqP0-ja-0065"
+    },
+    {
+      "text": "ながら本当に楽しそうにされてたんです",
+      "start_seconds": 616.04,
+      "end_seconds": 618.16,
+      "id": "DoSFLGmTqP0-display-0194",
+      "segment_id": "DoSFLGmTqP0-ja-0066"
+    },
+    {
+      "text": "けど、宮崎はさんにとっては得点を書く",
+      "start_seconds": 618.16,
+      "end_seconds": 620.88,
+      "id": "DoSFLGmTqP0-display-0195",
+      "segment_id": "DoSFLGmTqP0-ja-0066"
+    },
+    {
+      "text": "ことが生きがいなんです。生きがいという",
+      "start_seconds": 620.88,
+      "end_seconds": 623.88,
+      "id": "DoSFLGmTqP0-display-0196",
+      "segment_id": "DoSFLGmTqP0-ja-0066"
+    },
+    {
+      "text": "のは小さな喜びですから、それによって",
+      "start_seconds": 623.88,
+      "end_seconds": 626.279,
+      "id": "DoSFLGmTqP0-display-0197",
+      "segment_id": "DoSFLGmTqP0-ja-0066"
+    },
+    {
+      "text": "世間にどう評価されるかってことは関係",
+      "start_seconds": 626.279,
+      "end_seconds": 628.16,
+      "id": "DoSFLGmTqP0-display-0198",
+      "segment_id": "DoSFLGmTqP0-ja-0067"
+    },
+    {
+      "text": "ないんですよね。ですから宮崎さんは",
+      "start_seconds": 628.16,
+      "end_seconds": 630.519,
+      "id": "DoSFLGmTqP0-display-0199",
+      "segment_id": "DoSFLGmTqP0-ja-0067"
+    },
+    {
+      "text": "エコテを書きながらこれでボックス",
+      "start_seconds": 630.519,
+      "end_seconds": 632.76,
+      "id": "DoSFLGmTqP0-display-0200",
+      "segment_id": "DoSFLGmTqP0-ja-0067"
+    },
+    {
+      "text": "オフィスの収入がこれぐらいになるとか",
+      "start_seconds": 632.76,
+      "end_seconds": 635.519,
+      "id": "DoSFLGmTqP0-display-0201",
+      "segment_id": "DoSFLGmTqP0-ja-0067"
+    },
+    {
+      "text": "アカデミーシをもらえるとかそういうこと",
+      "start_seconds": 635.519,
+      "end_seconds": 637.92,
+      "id": "DoSFLGmTqP0-display-0202",
+      "segment_id": "DoSFLGmTqP0-ja-0067"
+    },
+    {
+      "text": "は考えてないんです。そういうことを考え",
+      "start_seconds": 637.92,
+      "end_seconds": 639.839,
+      "id": "DoSFLGmTqP0-display-0203",
+      "segment_id": "DoSFLGmTqP0-ja-0068"
+    },
+    {
+      "text": "てるのは隣に立っている鈴木俊男さんと",
+      "start_seconds": 639.839,
+      "end_seconds": 642.36,
+      "id": "DoSFLGmTqP0-display-0204",
+      "segment_id": "DoSFLGmTqP0-ja-0068"
+    },
+    {
+      "text": "いうプロデューサーの方なんですね。ま、",
+      "start_seconds": 642.36,
+      "end_seconds": 645.0,
+      "id": "DoSFLGmTqP0-display-0205",
+      "segment_id": "DoSFLGmTqP0-ja-0068"
+    },
+    {
+      "text": "これはプロデューサーのお仕事ですから。",
+      "start_seconds": 645.0,
+      "end_seconds": 647.519,
+      "id": "DoSFLGmTqP0-display-0206",
+      "segment_id": "DoSFLGmTqP0-ja-0068"
+    },
+    {
+      "text": "でも皆さん考えてください。なぜ宮崎は",
+      "start_seconds": 647.519,
+      "end_seconds": 651.399,
+      "id": "DoSFLGmTqP0-display-0207",
+      "segment_id": "DoSFLGmTqP0-ja-0069"
+    },
+    {
+      "text": "さんのアニメーションはこれほど世界中の",
+      "start_seconds": 651.399,
+      "end_seconds": 655.72,
+      "id": "DoSFLGmTqP0-display-0208",
+      "segment_id": "DoSFLGmTqP0-ja-0069"
+    },
+    {
+      "text": "人を感動させるのでしょうか?ま、僕も",
+      "start_seconds": 655.72,
+      "end_seconds": 659.48,
+      "id": "DoSFLGmTqP0-display-0209",
+      "segment_id": "DoSFLGmTqP0-ja-0069"
+    },
+    {
+      "text": "大好きなんですけど、隣のトロという宮崎",
+      "start_seconds": 659.48,
+      "end_seconds": 662.24,
+      "id": "DoSFLGmTqP0-display-0210",
+      "segment_id": "DoSFLGmTqP0-ja-0070"
+    },
+    {
+      "text": "さんの代表作があります。これはあのさと",
+      "start_seconds": 662.24,
+      "end_seconds": 665.56,
+      "id": "DoSFLGmTqP0-display-0211",
+      "segment_id": "DoSFLGmTqP0-ja-0070"
+    },
+    {
+      "text": "名というね、小さな女の子が、ま、",
+      "start_seconds": 665.56,
+      "end_seconds": 668.279,
+      "id": "DoSFLGmTqP0-display-0212",
+      "segment_id": "DoSFLGmTqP0-ja-0070"
+    },
+    {
+      "text": "お母さんが病院に入院されてまして",
+      "start_seconds": 668.279,
+      "end_seconds": 670.36,
+      "id": "DoSFLGmTqP0-display-0213",
+      "segment_id": "DoSFLGmTqP0-ja-0070"
+    },
+    {
+      "text": "ちょっと不安なんですけどお父さんと一緒",
+      "start_seconds": 670.36,
+      "end_seconds": 672.56,
+      "id": "DoSFLGmTqP0-display-0214",
+      "segment_id": "DoSFLGmTqP0-ja-0071"
+    },
+    {
+      "text": "に田舎の一見屋に行って明るいところから",
+      "start_seconds": 672.56,
+      "end_seconds": 675.839,
+      "id": "DoSFLGmTqP0-display-0215",
+      "segment_id": "DoSFLGmTqP0-ja-0071"
+    },
+    {
+      "text": "暗いとこに急に行ったら真っ黒黒助がい",
+      "start_seconds": 675.839,
+      "end_seconds": 678.6,
+      "id": "DoSFLGmTqP0-display-0216",
+      "segment_id": "DoSFLGmTqP0-ja-0071"
+    },
+    {
+      "text": "たりとかしの中に入っていたらトトロが寝",
+      "start_seconds": 678.6,
+      "end_seconds": 682.399,
+      "id": "DoSFLGmTqP0-display-0217",
+      "segment_id": "DoSFLGmTqP0-ja-0072"
+    },
+    {
+      "text": "ていたりとかそれから猫バスに出会ったり",
+      "start_seconds": 682.399,
+      "end_seconds": 685.56,
+      "id": "DoSFLGmTqP0-display-0218",
+      "segment_id": "DoSFLGmTqP0-ja-0072"
+    },
+    {
+      "text": "とかそういう不思議な経験を描いてるん",
+      "start_seconds": 685.56,
+      "end_seconds": 688.519,
+      "id": "DoSFLGmTqP0-display-0219",
+      "segment_id": "DoSFLGmTqP0-ja-0072"
+    },
+    {
+      "text": "ですけどこれぞまさに子供時代の生が",
+      "start_seconds": 688.519,
+      "end_seconds": 694.16,
+      "id": "DoSFLGmTqP0-display-0220",
+      "segment_id": "DoSFLGmTqP0-ja-0073"
+    },
+    {
+      "text": "小さな喜びの表現なんですよね。僕は宮崎",
+      "start_seconds": 694.16,
+      "end_seconds": 698.12,
+      "id": "DoSFLGmTqP0-display-0221",
+      "segment_id": "DoSFLGmTqP0-ja-0073"
+    },
+    {
+      "text": "さんをスタジオでインタビューした時に",
+      "start_seconds": 698.12,
+      "end_seconds": 700.44,
+      "id": "DoSFLGmTqP0-display-0222",
+      "segment_id": "DoSFLGmTqP0-ja-0073"
+    },
+    {
+      "text": "忘れられないことがあります。宮崎さん",
+      "start_seconds": 700.44,
+      "end_seconds": 702.839,
+      "id": "DoSFLGmTqP0-display-0223",
+      "segment_id": "DoSFLGmTqP0-ja-0074"
+    },
+    {
+      "text": "あの時5歳の男の子がジブリにいらしたん",
+      "start_seconds": 702.839,
+      "end_seconds": 705.56,
+      "id": "DoSFLGmTqP0-display-0224",
+      "segment_id": "DoSFLGmTqP0-ja-0074"
+    },
+    {
+      "text": "だそうですね。で、帰りはこの子を駅まで",
+      "start_seconds": 705.56,
+      "end_seconds": 709.839,
+      "id": "DoSFLGmTqP0-display-0225",
+      "segment_id": "DoSFLGmTqP0-ja-0074"
+    },
+    {
+      "text": "送ってあげようと。その頃宮崎さんが運転",
+      "start_seconds": 709.839,
+      "end_seconds": 713.12,
+      "id": "DoSFLGmTqP0-display-0226",
+      "segment_id": "DoSFLGmTqP0-ja-0075"
+    },
+    {
+      "text": "していた車はフォローを外すとオープン",
+      "start_seconds": 713.12,
+      "end_seconds": 715.839,
+      "id": "DoSFLGmTqP0-display-0227",
+      "segment_id": "DoSFLGmTqP0-ja-0075"
+    },
+    {
+      "text": "カーになったんだそうです。この5歳の子",
+      "start_seconds": 715.839,
+      "end_seconds": 718.56,
+      "id": "DoSFLGmTqP0-display-0228",
+      "segment_id": "DoSFLGmTqP0-ja-0075"
+    },
+    {
+      "text": "をオープンカーで駅まで送っていったら",
+      "start_seconds": 718.56,
+      "end_seconds": 722.04,
+      "id": "DoSFLGmTqP0-display-0229",
+      "segment_id": "DoSFLGmTqP0-ja-0076"
+    },
+    {
+      "text": "この子は本当に喜ぶだろうなと思って",
+      "start_seconds": 722.04,
+      "end_seconds": 725.48,
+      "id": "DoSFLGmTqP0-display-0230",
+      "segment_id": "DoSFLGmTqP0-ja-0076"
+    },
+    {
+      "text": "ところが帰る時になったら小雨メが降って",
+      "start_seconds": 725.48,
+      "end_seconds": 728.519,
+      "id": "DoSFLGmTqP0-display-0231",
+      "segment_id": "DoSFLGmTqP0-ja-0076"
+    },
+    {
+      "text": "きたんだそうです。",
+      "start_seconds": 728.519,
+      "end_seconds": 730.839,
+      "id": "DoSFLGmTqP0-display-0232",
+      "segment_id": "DoSFLGmTqP0-ja-0077"
+    },
+    {
+      "text": "残念だけど、また次来た時にこの子じゃあ",
+      "start_seconds": 730.839,
+      "end_seconds": 735.88,
+      "id": "DoSFLGmTqP0-display-0233",
+      "segment_id": "DoSFLGmTqP0-ja-0078"
+    },
+    {
+      "text": "お、オープンカーで送ってあげようと。",
+      "start_seconds": 735.88,
+      "end_seconds": 737.6,
+      "id": "DoSFLGmTqP0-display-0234",
+      "segment_id": "DoSFLGmTqP0-ja-0078"
+    },
+    {
+      "text": "今日は雨が降ってるからフォローを",
+      "start_seconds": 737.6,
+      "end_seconds": 739.76,
+      "id": "DoSFLGmTqP0-display-0235",
+      "segment_id": "DoSFLGmTqP0-ja-0079"
+    },
+    {
+      "text": "つけようと思ってそのまま駅まで行って",
+      "start_seconds": 739.76,
+      "end_seconds": 741.88,
+      "id": "DoSFLGmTqP0-display-0236",
+      "segment_id": "DoSFLGmTqP0-ja-0079"
+    },
+    {
+      "text": "改札でさよならって言って見送ってジブリ",
+      "start_seconds": 741.88,
+      "end_seconds": 745.399,
+      "id": "DoSFLGmTqP0-display-0237",
+      "segment_id": "DoSFLGmTqP0-ja-0079"
+    },
+    {
+      "text": "まで帰る時に今まで経験したことがない",
+      "start_seconds": 745.399,
+      "end_seconds": 749.0,
+      "id": "DoSFLGmTqP0-display-0238",
+      "segment_id": "DoSFLGmTqP0-ja-0079"
+    },
+    {
+      "text": "ような後悔を感じたと宮崎さんおっしゃっ",
+      "start_seconds": 749.0,
+      "end_seconds": 753.24,
+      "id": "DoSFLGmTqP0-display-0239",
+      "segment_id": "DoSFLGmTqP0-ja-0080"
+    },
+    {
+      "text": "てました。まったとあの子にとって今日と",
+      "start_seconds": 753.24,
+      "end_seconds": 757.639,
+      "id": "DoSFLGmTqP0-display-0240",
+      "segment_id": "DoSFLGmTqP0-ja-0080"
+    },
+    {
+      "text": "いう日はもうこの時しかなかったんだと。",
+      "start_seconds": 757.639,
+      "end_seconds": 761.04,
+      "id": "DoSFLGmTqP0-display-0241",
+      "segment_id": "DoSFLGmTqP0-ja-0081"
+    },
+    {
+      "text": "次に来た時はあの子は全く違う人になって",
+      "start_seconds": 761.04,
+      "end_seconds": 764.24,
+      "id": "DoSFLGmTqP0-display-0242",
+      "segment_id": "DoSFLGmTqP0-ja-0082"
+    },
+    {
+      "text": "しまっている。子供にとっては今ここが",
+      "start_seconds": 764.24,
+      "end_seconds": 767.24,
+      "id": "DoSFLGmTqP0-display-0243",
+      "segment_id": "DoSFLGmTqP0-ja-0082"
+    },
+    {
+      "text": "全てなんだ。少しぐらい雨が降ってる",
+      "start_seconds": 767.24,
+      "end_seconds": 770.279,
+      "id": "DoSFLGmTqP0-display-0244",
+      "segment_id": "DoSFLGmTqP0-ja-0082"
+    },
+    {
+      "text": "ぐらいだったらオープンカーにして駅まで",
+      "start_seconds": 770.279,
+      "end_seconds": 774.48,
+      "id": "DoSFLGmTqP0-display-0245",
+      "segment_id": "DoSFLGmTqP0-ja-0083"
+    },
+    {
+      "text": "送っていってあげればよかったなって僕は",
+      "start_seconds": 774.48,
+      "end_seconds": 776.92,
+      "id": "DoSFLGmTqP0-display-0246",
+      "segment_id": "DoSFLGmTqP0-ja-0083"
+    },
+    {
+      "text": "その話を聞いて非常に感動しましてあ、",
+      "start_seconds": 776.92,
+      "end_seconds": 780.519,
+      "id": "DoSFLGmTqP0-display-0247",
+      "segment_id": "DoSFLGmTqP0-ja-0083"
+    },
+    {
+      "text": "こういう人だから",
+      "start_seconds": 780.519,
+      "end_seconds": 783.0,
+      "id": "DoSFLGmTqP0-display-0248",
+      "segment_id": "DoSFLGmTqP0-ja-0084"
+    },
+    {
+      "text": "今ここの喜びを描く生きがいに満ちた映画",
+      "start_seconds": 783.0,
+      "end_seconds": 787.279,
+      "id": "DoSFLGmTqP0-display-0249",
+      "segment_id": "DoSFLGmTqP0-ja-0084"
+    },
+    {
+      "text": "が作れるんだなと思ったんですね。",
+      "start_seconds": 787.279,
+      "end_seconds": 791.8,
+      "id": "DoSFLGmTqP0-display-0250",
+      "segment_id": "DoSFLGmTqP0-ja-0084"
+    },
+    {
+      "text": "皆さん、あの、日本というのは生きがい、",
+      "start_seconds": 791.8,
+      "end_seconds": 795.68,
+      "id": "DoSFLGmTqP0-display-0251",
+      "segment_id": "DoSFLGmTqP0-ja-0085"
+    },
+    {
+      "text": "小さな喜びに満ちた国だと思うんです。",
+      "start_seconds": 795.68,
+      "end_seconds": 798.839,
+      "id": "DoSFLGmTqP0-display-0252",
+      "segment_id": "DoSFLGmTqP0-ja-0085"
+    },
+    {
+      "text": "日本から世界に出ていって人気を集めてる",
+      "start_seconds": 798.839,
+      "end_seconds": 803.279,
+      "id": "DoSFLGmTqP0-display-0253",
+      "segment_id": "DoSFLGmTqP0-ja-0086"
+    },
+    {
+      "text": "ものというのはみんな子供の時の小さな",
+      "start_seconds": 803.279,
+      "end_seconds": 805.44,
+      "id": "DoSFLGmTqP0-display-0254",
+      "segment_id": "DoSFLGmTqP0-ja-0086"
+    },
+    {
+      "text": "喜びに関係してるんですね。例えば",
+      "start_seconds": 805.44,
+      "end_seconds": 808.839,
+      "id": "DoSFLGmTqP0-display-0255",
+      "segment_id": "DoSFLGmTqP0-ja-0086"
+    },
+    {
+      "text": "ポケモン。ポケモンってね、野外で色々な",
+      "start_seconds": 808.839,
+      "end_seconds": 813.68,
+      "id": "DoSFLGmTqP0-display-0256",
+      "segment_id": "DoSFLGmTqP0-ja-0087"
+    },
+    {
+      "text": "生き物とたれるその生きがいを表現してる",
+      "start_seconds": 813.68,
+      "end_seconds": 817.92,
+      "id": "DoSFLGmTqP0-display-0257",
+      "segment_id": "DoSFLGmTqP0-ja-0087"
+    },
+    {
+      "text": "わけじゃないですか。あるいはスーパー",
+      "start_seconds": 817.92,
+      "end_seconds": 821.16,
+      "id": "DoSFLGmTqP0-display-0258",
+      "segment_id": "DoSFLGmTqP0-ja-0088"
+    },
+    {
+      "text": "マリオのゲームですね。このスーパー",
+      "start_seconds": 821.16,
+      "end_seconds": 823.68,
+      "id": "DoSFLGmTqP0-display-0259",
+      "segment_id": "DoSFLGmTqP0-ja-0088"
+    },
+    {
+      "text": "マリオブラザーズの、え、1の1の面の",
+      "start_seconds": 823.68,
+      "end_seconds": 828.079,
+      "id": "DoSFLGmTqP0-display-0260",
+      "segment_id": "DoSFLGmTqP0-ja-0088"
+    },
+    {
+      "text": "地上の音楽と呼ばれてるものがあるんです",
+      "start_seconds": 828.079,
+      "end_seconds": 830.68,
+      "id": "DoSFLGmTqP0-display-0261",
+      "segment_id": "DoSFLGmTqP0-ja-0089"
+    },
+    {
+      "text": "けど、これはなんとですね、ビデオゲーム",
+      "start_seconds": 830.68,
+      "end_seconds": 834.16,
+      "id": "DoSFLGmTqP0-display-0262",
+      "segment_id": "DoSFLGmTqP0-ja-0089"
+    },
+    {
+      "text": "の音楽としては史場初めてアメリカの国会",
+      "start_seconds": 834.16,
+      "end_seconds": 838.759,
+      "id": "DoSFLGmTqP0-display-0263",
+      "segment_id": "DoSFLGmTqP0-ja-0089"
+    },
+    {
+      "text": "図書館のナショナルアーカイブに収納され",
+      "start_seconds": 838.759,
+      "end_seconds": 841.72,
+      "id": "DoSFLGmTqP0-display-0264",
+      "segment_id": "DoSFLGmTqP0-ja-0090"
+    },
+    {
+      "text": "てる。このナショナルアーカイブというの",
+      "start_seconds": 841.72,
+      "end_seconds": 843.399,
+      "id": "DoSFLGmTqP0-display-0265",
+      "segment_id": "DoSFLGmTqP0-ja-0090"
+    },
+    {
+      "text": "はあのキングボクシの有名なアイハブ",
+      "start_seconds": 843.399,
+      "end_seconds": 846.56,
+      "id": "DoSFLGmTqP0-display-0266",
+      "segment_id": "DoSFLGmTqP0-ja-0090"
+    },
+    {
+      "text": "Dreamムamのああいう演説なんかも",
+      "start_seconds": 846.56,
+      "end_seconds": 848.639,
+      "id": "DoSFLGmTqP0-display-0267",
+      "segment_id": "DoSFLGmTqP0-ja-0090"
+    },
+    {
+      "text": "収納されてるアーカイブなんですけども、",
+      "start_seconds": 848.639,
+      "end_seconds": 850.56,
+      "id": "DoSFLGmTqP0-display-0268",
+      "segment_id": "DoSFLGmTqP0-ja-0090"
+    },
+    {
+      "text": "そこにスーパーマリオのあの音楽が収納さ",
+      "start_seconds": 850.56,
+      "end_seconds": 853.759,
+      "id": "DoSFLGmTqP0-display-0269",
+      "segment_id": "DoSFLGmTqP0-ja-0091"
+    },
+    {
+      "text": "れてるんですね。で、あの音楽って何を",
+      "start_seconds": 853.759,
+      "end_seconds": 855.8,
+      "id": "DoSFLGmTqP0-display-0270",
+      "segment_id": "DoSFLGmTqP0-ja-0091"
+    },
+    {
+      "text": "表してるんでしょうかね?マリオが飛びれ",
+      "start_seconds": 855.8,
+      "end_seconds": 859.0,
+      "id": "DoSFLGmTqP0-display-0271",
+      "segment_id": "DoSFLGmTqP0-ja-0091"
+    },
+    {
+      "text": "ながら土管に入っていったりとか、キノコ",
+      "start_seconds": 859.0,
+      "end_seconds": 862.36,
+      "id": "DoSFLGmTqP0-display-0272",
+      "segment_id": "DoSFLGmTqP0-ja-0091"
+    },
+    {
+      "text": "を食べて大きくなったりとか、あの亀",
+      "start_seconds": 862.36,
+      "end_seconds": 864.6,
+      "id": "DoSFLGmTqP0-display-0273",
+      "segment_id": "DoSFLGmTqP0-ja-0092"
+    },
+    {
+      "text": "みたいなのが来てね、やられちゃったり",
+      "start_seconds": 864.6,
+      "end_seconds": 867.16,
+      "id": "DoSFLGmTqP0-display-0274",
+      "segment_id": "DoSFLGmTqP0-ja-0092"
+    },
+    {
+      "text": "あれって子供の時に時間を忘れて楽しんだ",
+      "start_seconds": 867.16,
+      "end_seconds": 873.0,
+      "id": "DoSFLGmTqP0-display-0275",
+      "segment_id": "DoSFLGmTqP0-ja-0092"
+    },
+    {
+      "text": "あの喜びを表現しているわけじゃないです",
+      "start_seconds": 873.0,
+      "end_seconds": 877.639,
+      "id": "DoSFLGmTqP0-display-0276",
+      "segment_id": "DoSFLGmTqP0-ja-0093"
+    },
+    {
+      "text": "か。つまりですね、元々生きがいというの",
+      "start_seconds": 877.639,
+      "end_seconds": 881.12,
+      "id": "DoSFLGmTqP0-display-0277",
+      "segment_id": "DoSFLGmTqP0-ja-0093"
+    },
+    {
+      "text": "はプライベートなもので、その元では平等",
+      "start_seconds": 881.12,
+      "end_seconds": 884.199,
+      "id": "DoSFLGmTqP0-display-0278",
+      "segment_id": "DoSFLGmTqP0-ja-0093"
+    },
+    {
+      "text": "なんです。例えばスタジオ渋で、え、",
+      "start_seconds": 884.199,
+      "end_seconds": 886.68,
+      "id": "DoSFLGmTqP0-display-0279",
+      "segment_id": "DoSFLGmTqP0-ja-0094"
+    },
+    {
+      "text": "根コテを書いてる宮崎はさんもどっか世界",
+      "start_seconds": 886.68,
+      "end_seconds": 889.8,
+      "id": "DoSFLGmTqP0-display-0280",
+      "segment_id": "DoSFLGmTqP0-ja-0094"
+    },
+    {
+      "text": "の片隅で自分の好きな絵を書いている小学",
+      "start_seconds": 889.8,
+      "end_seconds": 893.199,
+      "id": "DoSFLGmTqP0-display-0281",
+      "segment_id": "DoSFLGmTqP0-ja-0094"
+    },
+    {
+      "text": "生、中学生、高校生、あるいは大人も",
+      "start_seconds": 893.199,
+      "end_seconds": 896.279,
+      "id": "DoSFLGmTqP0-display-0282",
+      "segment_id": "DoSFLGmTqP0-ja-0095"
+    },
+    {
+      "text": "生がいという点においては同じです。全く",
+      "start_seconds": 896.279,
+      "end_seconds": 899.44,
+      "id": "DoSFLGmTqP0-display-0283",
+      "segment_id": "DoSFLGmTqP0-ja-0095"
+    },
+    {
+      "text": "平等です。たまたま宮崎さんの場合には",
+      "start_seconds": 899.44,
+      "end_seconds": 902.759,
+      "id": "DoSFLGmTqP0-display-0284",
+      "segment_id": "DoSFLGmTqP0-ja-0095"
+    },
+    {
+      "text": "世界的なアニメ作家になってる。でもその",
+      "start_seconds": 902.759,
+      "end_seconds": 905.88,
+      "id": "DoSFLGmTqP0-display-0285",
+      "segment_id": "DoSFLGmTqP0-ja-0096"
+    },
+    {
+      "text": "宮崎さんにとって大事なのは世界的な",
+      "start_seconds": 905.88,
+      "end_seconds": 908.36,
+      "id": "DoSFLGmTqP0-display-0286",
+      "segment_id": "DoSFLGmTqP0-ja-0096"
+    },
+    {
+      "text": "アニメ作家になってるということではなく",
+      "start_seconds": 908.36,
+      "end_seconds": 910.16,
+      "id": "DoSFLGmTqP0-display-0287",
+      "segment_id": "DoSFLGmTqP0-ja-0096"
+    },
+    {
+      "text": "て得を書く喜びなんですね。僕はここに",
+      "start_seconds": 910.16,
+      "end_seconds": 916.92,
+      "id": "DoSFLGmTqP0-display-0288",
+      "segment_id": "DoSFLGmTqP0-ja-0097"
+    },
+    {
+      "text": "これからの時代に人工知能と人間の関係を",
+      "start_seconds": 916.92,
+      "end_seconds": 920.079,
+      "id": "DoSFLGmTqP0-display-0289",
+      "segment_id": "DoSFLGmTqP0-ja-0097"
+    },
+    {
+      "text": "考える上でのとてもとても大切な原理が",
+      "start_seconds": 920.079,
+      "end_seconds": 924.32,
+      "id": "DoSFLGmTqP0-display-0290",
+      "segment_id": "DoSFLGmTqP0-ja-0098"
+    },
+    {
+      "text": "潜んでいると思っています。僕はまさに",
+      "start_seconds": 924.32,
+      "end_seconds": 926.959,
+      "id": "DoSFLGmTqP0-display-0291",
+      "segment_id": "DoSFLGmTqP0-ja-0098"
+    },
+    {
+      "text": "この生がいという、ま、日本初の、ま、",
+      "start_seconds": 926.959,
+      "end_seconds": 930.639,
+      "id": "DoSFLGmTqP0-display-0292",
+      "segment_id": "DoSFLGmTqP0-ja-0098"
+    },
+    {
+      "text": "考え方をもにどうやったらね、AIと人間",
+      "start_seconds": 930.639,
+      "end_seconds": 934.6,
+      "id": "DoSFLGmTqP0-display-0293",
+      "segment_id": "DoSFLGmTqP0-ja-0099"
+    },
+    {
+      "text": "が調和してで、人間のウェルビング幸せを",
+      "start_seconds": 934.6,
+      "end_seconds": 937.839,
+      "id": "DoSFLGmTqP0-display-0294",
+      "segment_id": "DoSFLGmTqP0-ja-0099"
+    },
+    {
+      "text": "増やせるようなそういう未来が作れるのか",
+      "start_seconds": 937.839,
+      "end_seconds": 940.48,
+      "id": "DoSFLGmTqP0-display-0295",
+      "segment_id": "DoSFLGmTqP0-ja-0099"
+    },
+    {
+      "text": "なってことを一生懸命考えています。",
+      "start_seconds": 940.48,
+      "end_seconds": 943.92,
+      "id": "DoSFLGmTqP0-display-0296",
+      "segment_id": "DoSFLGmTqP0-ja-0100"
+    },
+    {
+      "text": "そして生がいというのは我々の学びと深く",
+      "start_seconds": 943.92,
+      "end_seconds": 947.48,
+      "id": "DoSFLGmTqP0-display-0297",
+      "segment_id": "DoSFLGmTqP0-ja-0101"
+    },
+    {
+      "text": "関係してるんですね。どうですか皆さん?",
+      "start_seconds": 947.48,
+      "end_seconds": 949.839,
+      "id": "DoSFLGmTqP0-display-0298",
+      "segment_id": "DoSFLGmTqP0-ja-0101"
+    },
+    {
+      "text": "子供の時に色々楽しく学んでる時って",
+      "start_seconds": 949.839,
+      "end_seconds": 953.56,
+      "id": "DoSFLGmTqP0-display-0299",
+      "segment_id": "DoSFLGmTqP0-ja-0102"
+    },
+    {
+      "text": "生きがいを感じてませんでしたか?そこに",
+      "start_seconds": 953.56,
+      "end_seconds": 956.12,
+      "id": "DoSFLGmTqP0-display-0300",
+      "segment_id": "DoSFLGmTqP0-ja-0102"
+    },
+    {
+      "text": "余計なテストの点数とかね、成績とか入っ",
+      "start_seconds": 956.12,
+      "end_seconds": 960.44,
+      "id": "DoSFLGmTqP0-display-0301",
+      "segment_id": "DoSFLGmTqP0-ja-0102"
+    },
+    {
+      "text": "てくるとちょっと嫌な気がしちゃう。ま、",
+      "start_seconds": 960.44,
+      "end_seconds": 962.199,
+      "id": "DoSFLGmTqP0-display-0302",
+      "segment_id": "DoSFLGmTqP0-ja-0103"
+    },
+    {
+      "text": "それある程度必要なものなんですけども、",
+      "start_seconds": 962.199,
+      "end_seconds": 964.36,
+      "id": "DoSFLGmTqP0-display-0303",
+      "segment_id": "DoSFLGmTqP0-ja-0103"
+    },
+    {
+      "text": "本来学びというのは我々が生きがいを感じ",
+      "start_seconds": 964.36,
+      "end_seconds": 968.36,
+      "id": "DoSFLGmTqP0-display-0304",
+      "segment_id": "DoSFLGmTqP0-ja-0103"
+    },
+    {
+      "text": "て何かに向き合ってる時に私たちの中に",
+      "start_seconds": 968.36,
+      "end_seconds": 972.0,
+      "id": "DoSFLGmTqP0-display-0305",
+      "segment_id": "DoSFLGmTqP0-ja-0103"
+    },
+    {
+      "text": "生まれるものである。そのことを忘れない",
+      "start_seconds": 972.0,
+      "end_seconds": 974.519,
+      "id": "DoSFLGmTqP0-display-0306",
+      "segment_id": "DoSFLGmTqP0-ja-0104"
+    },
+    {
+      "text": "限りこれからま、時代をどんどん変わって",
+      "start_seconds": 974.519,
+      "end_seconds": 976.759,
+      "id": "DoSFLGmTqP0-display-0307",
+      "segment_id": "DoSFLGmTqP0-ja-0104"
+    },
+    {
+      "text": "いきます。先ほど冒頭にも申し上げました",
+      "start_seconds": 976.759,
+      "end_seconds": 978.759,
+      "id": "DoSFLGmTqP0-display-0308",
+      "segment_id": "DoSFLGmTqP0-ja-0104"
+    },
+    {
+      "text": "。AIによって未来の未来が明るく開ける",
+      "start_seconds": 978.759,
+      "end_seconds": 983.519,
+      "id": "DoSFLGmTqP0-display-0309",
+      "segment_id": "DoSFLGmTqP0-ja-0104"
+    },
+    {
+      "text": "というブーマーの方もいらっしゃるし、",
+      "start_seconds": 983.519,
+      "end_seconds": 986.079,
+      "id": "DoSFLGmTqP0-display-0310",
+      "segment_id": "DoSFLGmTqP0-ja-0105"
+    },
+    {
+      "text": "役割でも人類は滅亡に行くんだっていう",
+      "start_seconds": 986.079,
+      "end_seconds": 988.319,
+      "id": "DoSFLGmTqP0-display-0311",
+      "segment_id": "DoSFLGmTqP0-ja-0105"
+    },
+    {
+      "text": "ドーマーの方もいらっしゃいます。この",
+      "start_seconds": 988.319,
+      "end_seconds": 990.639,
+      "id": "DoSFLGmTqP0-display-0312",
+      "segment_id": "DoSFLGmTqP0-ja-0105"
+    },
+    {
+      "text": "ブーマーとドーマーの別れ道の我々は",
+      "start_seconds": 990.639,
+      "end_seconds": 994.48,
+      "id": "DoSFLGmTqP0-display-0313",
+      "segment_id": "DoSFLGmTqP0-ja-0105"
+    },
+    {
+      "text": "どっちに行くかということは我々がまさに",
+      "start_seconds": 994.48,
+      "end_seconds": 997.16,
+      "id": "DoSFLGmTqP0-display-0314",
+      "segment_id": "DoSFLGmTqP0-ja-0106"
+    },
+    {
+      "text": "これから一生懸命みんなで力を学んで",
+      "start_seconds": 997.16,
+      "end_seconds": 1000.399,
+      "id": "DoSFLGmTqP0-display-0315",
+      "segment_id": "DoSFLGmTqP0-ja-0106"
+    },
+    {
+      "text": "新しい時代に適用していくことで道が",
+      "start_seconds": 1000.399,
+      "end_seconds": 1002.88,
+      "id": "DoSFLGmTqP0-display-0316",
+      "segment_id": "DoSFLGmTqP0-ja-0106"
+    },
+    {
+      "text": "開けると思うんですけどもその学びを支え",
+      "start_seconds": 1002.88,
+      "end_seconds": 1007.759,
+      "id": "DoSFLGmTqP0-display-0317",
+      "segment_id": "DoSFLGmTqP0-ja-0107"
+    },
+    {
+      "text": "てくれるのは実は生きがいなんだと私たち",
+      "start_seconds": 1007.759,
+      "end_seconds": 1012.279,
+      "id": "DoSFLGmTqP0-display-0318",
+      "segment_id": "DoSFLGmTqP0-ja-0107"
+    },
+    {
+      "text": "は今どうしても外部からの評価が気になっ",
+      "start_seconds": 1012.279,
+      "end_seconds": 1014.759,
+      "id": "DoSFLGmTqP0-display-0319",
+      "segment_id": "DoSFLGmTqP0-ja-0107"
+    },
+    {
+      "text": "てしまいます。どれぐらい自分のポストが",
+      "start_seconds": 1014.759,
+      "end_seconds": 1019.12,
+      "id": "DoSFLGmTqP0-display-0320",
+      "segment_id": "DoSFLGmTqP0-ja-0108"
+    },
+    {
+      "text": "見られてるのかとか、どれぐらい",
+      "start_seconds": 1019.12,
+      "end_seconds": 1021.48,
+      "id": "DoSFLGmTqP0-display-0321",
+      "segment_id": "DoSFLGmTqP0-ja-0108"
+    },
+    {
+      "text": "フォロワーがいるのかとか、そういうこと",
+      "start_seconds": 1021.48,
+      "end_seconds": 1023.279,
+      "id": "DoSFLGmTqP0-display-0322",
+      "segment_id": "DoSFLGmTqP0-ja-0108"
+    },
+    {
+      "text": "ばっかり気にして、それでバランスを崩し",
+      "start_seconds": 1023.279,
+      "end_seconds": 1025.72,
+      "id": "DoSFLGmTqP0-display-0323",
+      "segment_id": "DoSFLGmTqP0-ja-0108"
+    },
+    {
+      "text": "てしまう人もいるわけですよね。でもそう",
+      "start_seconds": 1025.72,
+      "end_seconds": 1027.88,
+      "id": "DoSFLGmTqP0-display-0324",
+      "segment_id": "DoSFLGmTqP0-ja-0109"
+    },
+    {
+      "text": "ではなくて",
+      "start_seconds": 1027.88,
+      "end_seconds": 1029.799,
+      "id": "DoSFLGmTqP0-display-0325",
+      "segment_id": "DoSFLGmTqP0-ja-0109"
+    },
+    {
+      "text": "生がではみんなが平等で宮崎はさんも片隅",
+      "start_seconds": 1029.799,
+      "end_seconds": 1035.439,
+      "id": "DoSFLGmTqP0-display-0326",
+      "segment_id": "DoSFLGmTqP0-ja-0109"
+    },
+    {
+      "text": "で絵を書いてる人も生がいということに",
+      "start_seconds": 1035.439,
+      "end_seconds": 1038.16,
+      "id": "DoSFLGmTqP0-display-0327",
+      "segment_id": "DoSFLGmTqP0-ja-0110"
+    },
+    {
+      "text": "おいては平等ででもたまたまもしかしたら",
+      "start_seconds": 1038.16,
+      "end_seconds": 1041.439,
+      "id": "DoSFLGmTqP0-display-0328",
+      "segment_id": "DoSFLGmTqP0-ja-0110"
+    },
+    {
+      "text": "いろんな時代の状況とか運が良かったら",
+      "start_seconds": 1041.439,
+      "end_seconds": 1044.16,
+      "id": "DoSFLGmTqP0-display-0329",
+      "segment_id": "DoSFLGmTqP0-ja-0110"
+    },
+    {
+      "text": "自分の書いてる絵もいつかは宮崎さんの",
+      "start_seconds": 1044.16,
+      "end_seconds": 1047.16,
+      "id": "DoSFLGmTqP0-display-0330",
+      "segment_id": "DoSFLGmTqP0-ja-0110"
+    },
+    {
+      "text": "素晴らしい作品のように、え、世界中の人",
+      "start_seconds": 1047.16,
+      "end_seconds": 1050.0,
+      "id": "DoSFLGmTqP0-display-0331",
+      "segment_id": "DoSFLGmTqP0-ja-0111"
+    },
+    {
+      "text": "に伝わって大きな感動をもたらす可能性も",
+      "start_seconds": 1050.0,
+      "end_seconds": 1052.84,
+      "id": "DoSFLGmTqP0-display-0332",
+      "segment_id": "DoSFLGmTqP0-ja-0111"
+    },
+    {
+      "text": "あると。そして実はAIがそういう個人の",
+      "start_seconds": 1052.84,
+      "end_seconds": 1056.679,
+      "id": "DoSFLGmTqP0-display-0333",
+      "segment_id": "DoSFLGmTqP0-ja-0111"
+    },
+    {
+      "text": "クリエイティビティ、想像性を支える",
+      "start_seconds": 1056.679,
+      "end_seconds": 1059.28,
+      "id": "DoSFLGmTqP0-display-0334",
+      "segment_id": "DoSFLGmTqP0-ja-0112"
+    },
+    {
+      "text": "ツールにもなってくれると。このように",
+      "start_seconds": 1059.28,
+      "end_seconds": 1061.919,
+      "id": "DoSFLGmTqP0-display-0335",
+      "segment_id": "DoSFLGmTqP0-ja-0112"
+    },
+    {
+      "text": "見ることで僕は未来を、え、非常に楽観的",
+      "start_seconds": 1061.919,
+      "end_seconds": 1066.0,
+      "id": "DoSFLGmTqP0-display-0336",
+      "segment_id": "DoSFLGmTqP0-ja-0112"
+    },
+    {
+      "text": "にそして生きいに支えられた学びを通して",
+      "start_seconds": 1066.0,
+      "end_seconds": 1069.559,
+      "id": "DoSFLGmTqP0-display-0337",
+      "segment_id": "DoSFLGmTqP0-ja-0113"
+    },
+    {
+      "text": "、え、前に進めるようなそういう視野が得",
+      "start_seconds": 1069.559,
+      "end_seconds": 1072.679,
+      "id": "DoSFLGmTqP0-display-0338",
+      "segment_id": "DoSFLGmTqP0-ja-0113"
+    },
+    {
+      "text": "られるのではないかと思います。そのこと",
+      "start_seconds": 1072.679,
+      "end_seconds": 1074.799,
+      "id": "DoSFLGmTqP0-display-0339",
+      "segment_id": "DoSFLGmTqP0-ja-0113"
+    },
+    {
+      "text": "を今日皆さんにお伝えすることが私にとっ",
+      "start_seconds": 1074.799,
+      "end_seconds": 1078.12,
+      "id": "DoSFLGmTqP0-display-0340",
+      "segment_id": "DoSFLGmTqP0-ja-0114"
+    },
+    {
+      "text": "ての今日1番の生きいとなりました。",
+      "start_seconds": 1078.12,
+      "end_seconds": 1080.679,
+      "id": "DoSFLGmTqP0-display-0341",
+      "segment_id": "DoSFLGmTqP0-ja-0114"
+    },
+    {
+      "text": "ありがとうございました。[拍手]",
+      "start_seconds": 1080.679,
+      "end_seconds": 1084.092,
+      "id": "DoSFLGmTqP0-display-0342",
+      "segment_id": "DoSFLGmTqP0-ja-0115"
+    }
+  ]
+}

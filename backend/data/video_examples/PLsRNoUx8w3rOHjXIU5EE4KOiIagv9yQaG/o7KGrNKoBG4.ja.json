@@ -1,0 +1,3514 @@
+{
+  "schema_version": 1,
+  "video": {
+    "youtube_id": "o7KGrNKoBG4",
+    "title": "Are you being yourself? | Maiko Nagao | TEDxSaikai",
+    "channel": "TEDx Talks",
+    "duration_seconds": 817
+  },
+  "caption_track": {
+    "language": "ja",
+    "kind": "asr",
+    "source": "youtube_automatic"
+  },
+  "source_playlist": "https://www.youtube.com/playlist?list=PLsRNoUx8w3rOHjXIU5EE4KOiIagv9yQaG",
+  "fetched_at": "2026-10-13T13:24:43.924340+00:00",
+  "segment_count": 101,
+  "segments": [
+    {
+      "text": "いきなりですが、皆さん自分らしく生きていますか?",
+      "start_seconds": 6.04,
+      "end_seconds": 11.519,
+      "id": "o7KGrNKoBG4-ja-0001",
+      "sequence": 1
+    },
+    {
+      "text": "今からお話するのは私の自分らしさに向き合ってきた話です。",
+      "start_seconds": 11.519,
+      "end_seconds": 19.119,
+      "id": "o7KGrNKoBG4-ja-0002",
+      "sequence": 2
+    },
+    {
+      "text": "子供の頃の私は元気で明るいムードメーカーみたいな感じでした。",
+      "start_seconds": 20.08,
+      "end_seconds": 26.72,
+      "id": "o7KGrNKoBG4-ja-0003",
+      "sequence": 3
+    },
+    {
+      "text": "3姉妹の長女として両親祖父母と大家族の中で幼少期を過ごしました。家庭でも学校",
+      "start_seconds": 26.72,
+      "end_seconds": 34.44,
+      "id": "o7KGrNKoBG4-ja-0004",
+      "sequence": 4
+    },
+    {
+      "text": "でも誰かと一緒周りに合わせる。みんな仲良く長女だからしっかりするみたいなことは",
+      "start_seconds": 34.44,
+      "end_seconds": 43.84,
+      "id": "o7KGrNKoBG4-ja-0005",
+      "sequence": 5
+    },
+    {
+      "text": "当たり前にやらなくてはいけないと思っていました。",
+      "start_seconds": 43.84,
+      "end_seconds": 48.64,
+      "id": "o7KGrNKoBG4-ja-0006",
+      "sequence": 6
+    },
+    {
+      "text": "大人が言っていることは全部正解なんだとも思っていました。でも本当の私は人見知りでマイペースなんです。なので",
+      "start_seconds": 48.64,
+      "end_seconds": 59.48,
+      "id": "o7KGrNKoBG4-ja-0007",
+      "sequence": 7
+    },
+    {
+      "text": "人間関係でもモヤモヤすることが多くありました。",
+      "start_seconds": 59.48,
+      "end_seconds": 65.08,
+      "id": "o7KGrNKoBG4-ja-0008",
+      "sequence": 8
+    },
+    {
+      "text": "頑張れと無責任に言われることが苦手だったし、期待されることも苦手。それを親に",
+      "start_seconds": 65.08,
+      "end_seconds": 72.479,
+      "id": "o7KGrNKoBG4-ja-0009",
+      "sequence": 9
+    },
+    {
+      "text": "も友達にも先生にも言えなかったんです。",
+      "start_seconds": 72.479,
+      "end_seconds": 77.119,
+      "id": "o7KGrNKoBG4-ja-0010",
+      "sequence": 10
+    },
+    {
+      "text": "もうモヤモヤモヤモヤモヤモヤモヤモヤしてました。",
+      "start_seconds": 77.119,
+      "end_seconds": 82.2,
+      "id": "o7KGrNKoBG4-ja-0011",
+      "sequence": 11
+    },
+    {
+      "text": "全部嘘っていうわけではなかったんですけど、少し我慢するみたいな。誰にでも合わせる、演じることで自分を守ってい",
+      "start_seconds": 82.2,
+      "end_seconds": 92.119,
+      "id": "o7KGrNKoBG4-ja-0012",
+      "sequence": 12
+    },
+    {
+      "text": "ました。",
+      "start_seconds": 92.119,
+      "end_seconds": 94.56,
+      "id": "o7KGrNKoBG4-ja-0013",
+      "sequence": 13
+    },
+    {
+      "text": "自分でもどうしていいか分かりませんでした。",
+      "start_seconds": 94.56,
+      "end_seconds": 99.439,
+      "id": "o7KGrNKoBG4-ja-0014",
+      "sequence": 14
+    },
+    {
+      "text": "味方が欲しいとか信頼し合える関係性の人が欲しいと思っていました。",
+      "start_seconds": 99.439,
+      "end_seconds": 106.439,
+      "id": "o7KGrNKoBG4-ja-0015",
+      "sequence": 15
+    },
+    {
+      "text": "環境を変えたくて外へ外へと気持ちが向いていきましたが、何事もうまくいかず妥協してばかり。",
+      "start_seconds": 106.439,
+      "end_seconds": 115.32,
+      "id": "o7KGrNKoBG4-ja-0016",
+      "sequence": 16
+    },
+    {
+      "text": "高校卒業後、妥協をしながら就職を決めました。その時に唯一残った夢はお母さんになることでし",
+      "start_seconds": 115.32,
+      "end_seconds": 126.039,
+      "id": "o7KGrNKoBG4-ja-0017",
+      "sequence": 17
+    },
+    {
+      "text": "た。",
+      "start_seconds": 126.039,
+      "end_seconds": 129.119,
+      "id": "o7KGrNKoBG4-ja-0018",
+      "sequence": 18
+    },
+    {
+      "text": "そんな私に数年後奇跡が起きました。たちで結婚して長男が生まれ夢が叶いました。",
+      "start_seconds": 129.16,
+      "end_seconds": 138.68,
+      "id": "o7KGrNKoBG4-ja-0019",
+      "sequence": 19
+    },
+    {
+      "text": "自分のことより優先したい私の生がい。",
+      "start_seconds": 138.68,
+      "end_seconds": 143.12,
+      "id": "o7KGrNKoBG4-ja-0020",
+      "sequence": 20
+    },
+    {
+      "text": "さらに3年後次男も生まれ愛しい存在が2人になりました。",
+      "start_seconds": 143.12,
+      "end_seconds": 149.599,
+      "id": "o7KGrNKoBG4-ja-0021",
+      "sequence": 21
+    },
+    {
+      "text": "しかし数年後26歳の時に離婚先の人生に絶望し泣いていた私に当時年長さんだった",
+      "start_seconds": 149.599,
+      "end_seconds": 158.56,
+      "id": "o7KGrNKoBG4-ja-0022",
+      "sequence": 22
+    },
+    {
+      "text": "息子が俺たちがおるやんと声をかけかけてくれてはっとしました。",
+      "start_seconds": 158.56,
+      "end_seconds": 167.0,
+      "id": "o7KGrNKoBG4-ja-0023",
+      "sequence": 23
+    },
+    {
+      "text": "そうだ。私1人で頑張ろうとしなくても子供たちがいてくれるんだ。",
+      "start_seconds": 167.08,
+      "end_seconds": 173.08,
+      "id": "o7KGrNKoBG4-ja-0024",
+      "sequence": 24
+    },
+    {
+      "text": "そこから仕事もダブルワークで始め。",
+      "start_seconds": 173.08,
+      "end_seconds": 177.12,
+      "id": "o7KGrNKoBG4-ja-0025",
+      "sequence": 25
+    },
+    {
+      "text": "でも逆に子供との時間が減り、自分も子供も犠牲になってしまいました。",
+      "start_seconds": 177.12,
+      "end_seconds": 184.959,
+      "id": "o7KGrNKoBG4-ja-0026",
+      "sequence": 26
+    },
+    {
+      "text": "3人での生活にも限界を感じ、長男が小学2年生になりなるタイミングで私の地元である再開始に戻りました。",
+      "start_seconds": 184.959,
+      "end_seconds": 195.36,
+      "id": "o7KGrNKoBG4-ja-0027",
+      "sequence": 27
+    },
+    {
+      "text": "ま、そんなある日、小学校の保護者向けの講演会があり、そこで講師である臨床心理士の先生が子供を褒めることで子供も自分",
+      "start_seconds": 195.36,
+      "end_seconds": 206.84,
+      "id": "o7KGrNKoBG4-ja-0028",
+      "sequence": 28
+    },
+    {
+      "text": "もハッピーになるというお話をされ、ドキッとしました。",
+      "start_seconds": 206.84,
+      "end_seconds": 212.439,
+      "id": "o7KGrNKoBG4-ja-0029",
+      "sequence": 29
+    },
+    {
+      "text": "子供たちが困らないように幸せで会って欲しいと思うがゆえに怒っている、怒ってばかりいることに気づきました。そして私",
+      "start_seconds": 212.439,
+      "end_seconds": 222.879,
+      "id": "o7KGrNKoBG4-ja-0030",
+      "sequence": 30
+    },
+    {
+      "text": "が怒るから子供たちは怒られないようにと気にしてばかり。その繰り返しいつの間にか自分の所有物のように子供",
+      "start_seconds": 222.879,
+      "end_seconds": 233.56,
+      "id": "o7KGrNKoBG4-ja-0031",
+      "sequence": 31
+    },
+    {
+      "text": "たちを支配しようとしてしまっていました。",
+      "start_seconds": 233.56,
+      "end_seconds": 238.48,
+      "id": "o7KGrNKoBG4-ja-0032",
+      "sequence": 32
+    },
+    {
+      "text": "自分の人生の主役は自分、自分の子供であっても他人の人生なのにと反省。ここからは私も自分のやりたいことや夢を",
+      "start_seconds": 238.48,
+      "end_seconds": 250.239,
+      "id": "o7KGrNKoBG4-ja-0033",
+      "sequence": 33
+    },
+    {
+      "text": "追いかけようと思いました。",
+      "start_seconds": 250.239,
+      "end_seconds": 253.68,
+      "id": "o7KGrNKoBG4-ja-0034",
+      "sequence": 34
+    },
+    {
+      "text": "その時の講師の先生のように人の心を軽くするきっかけの人に私もなりたい。そう",
+      "start_seconds": 253.68,
+      "end_seconds": 262.16,
+      "id": "o7KGrNKoBG4-ja-0035",
+      "sequence": 35
+    },
+    {
+      "text": "思いましたが、その時から臨床心理士を目指すには時間もお金もかかる。そんな時に知ったのがセラピストという職業でした",
+      "start_seconds": 262.16,
+      "end_seconds": 272.72,
+      "id": "o7KGrNKoBG4-ja-0036",
+      "sequence": 36
+    },
+    {
+      "text": "。",
+      "start_seconds": 272.72,
+      "end_seconds": 274.759,
+      "id": "o7KGrNKoBG4-ja-0037",
+      "sequence": 37
+    },
+    {
+      "text": "セラピストになる夢と生活するためのライスワーク。",
+      "start_seconds": 274.759,
+      "end_seconds": 279.68,
+      "id": "o7KGrNKoBG4-ja-0038",
+      "sequence": 38
+    },
+    {
+      "text": "やりたいことと自分の役割。",
+      "start_seconds": 279.68,
+      "end_seconds": 283.44,
+      "id": "o7KGrNKoBG4-ja-0039",
+      "sequence": 39
+    },
+    {
+      "text": "これまで他人軸だった私が自分軸を意識した大きなきっかけだったと思います。",
+      "start_seconds": 283.44,
+      "end_seconds": 291.28,
+      "id": "o7KGrNKoBG4-ja-0040",
+      "sequence": 40
+    },
+    {
+      "text": "そこから数年後、とある方から長尾さんにやって欲しいことがあると言われ出会ったのが長崎県キャリアコーディネーターという仕事でした。",
+      "start_seconds": 291.28,
+      "end_seconds": 303.16,
+      "id": "o7KGrNKoBG4-ja-0041",
+      "sequence": 41
+    },
+    {
+      "text": "キャリア支援の経験はなくゼロからのスタートでしたが、あなたにやって欲しいという言葉だけでたまたま出会った仕事で",
+      "start_seconds": 303.16,
+      "end_seconds": 314.08,
+      "id": "o7KGrNKoBG4-ja-0042",
+      "sequence": 42
+    },
+    {
+      "text": "ライスワークとして掴んだつもりでした。",
+      "start_seconds": 314.08,
+      "end_seconds": 317.72,
+      "id": "o7KGrNKoBG4-ja-0043",
+      "sequence": 43
+    },
+    {
+      "text": "初めは戸惑いや苦労することもたくさんありましたが、やっていくうちになんだかどこかで感じたことのあるようなやりがい",
+      "start_seconds": 317.72,
+      "end_seconds": 326.96,
+      "id": "o7KGrNKoBG4-ja-0044",
+      "sequence": 44
+    },
+    {
+      "text": "を感じるようになりました。",
+      "start_seconds": 326.96,
+      "end_seconds": 330.639,
+      "id": "o7KGrNKoBG4-ja-0045",
+      "sequence": 45
+    },
+    {
+      "text": "その中で1番印象に残ってるのは、当時の学生さんから手紙をもらったことです。",
+      "start_seconds": 330.639,
+      "end_seconds": 337.52,
+      "id": "o7KGrNKoBG4-ja-0046",
+      "sequence": 46
+    },
+    {
+      "text": "現在その学生さんは社会人3年目になって今でも定期的に連絡を取り合っているので本人に許可をいただきましたのでその時の",
+      "start_seconds": 337.52,
+      "end_seconds": 347.039,
+      "id": "o7KGrNKoBG4-ja-0047",
+      "sequence": 47
+    },
+    {
+      "text": "手紙を紹介したいと思います。",
+      "start_seconds": 347.039,
+      "end_seconds": 351.919,
+      "id": "o7KGrNKoBG4-ja-0048",
+      "sequence": 48
+    },
+    {
+      "text": "今日がお会いできる最後の日なので感謝の気持ちを伝えたくて手紙を書きました。",
+      "start_seconds": 356.36,
+      "end_seconds": 362.919,
+      "id": "o7KGrNKoBG4-ja-0049",
+      "sequence": 49
+    },
+    {
+      "text": "去年のちょうど今頃第一死亡に落ち徒歩にくれていた私にポジティブな言葉をくださり本当に救われました。",
+      "start_seconds": 362.919,
+      "end_seconds": 372.8,
+      "id": "o7KGrNKoBG4-ja-0050",
+      "sequence": 50
+    },
+    {
+      "text": "自分には波外れた才能がないため、とりあえず根性と笑顔でやり過ごそうという就活を甘く見ていた私に、はるかちゃんはありのままでいいんだよと優しく",
+      "start_seconds": 372.8,
+      "end_seconds": 384.28,
+      "id": "o7KGrNKoBG4-ja-0051",
+      "sequence": 51
+    },
+    {
+      "text": "接してくださり、少し泣きそうになったのを覚えています。",
+      "start_seconds": 384.28,
+      "end_seconds": 389.479,
+      "id": "o7KGrNKoBG4-ja-0052",
+      "sequence": 52
+    },
+    {
+      "text": "就活生にとってあの言葉は魔法の言葉だと思っています。私も長尾さんのように人を肯定する優しい言葉をかける大人になり",
+      "start_seconds": 389.479,
+      "end_seconds": 400.0,
+      "id": "o7KGrNKoBG4-ja-0053",
+      "sequence": 53
+    },
+    {
+      "text": "たいです。",
+      "start_seconds": 400.0,
+      "end_seconds": 402.08,
+      "id": "o7KGrNKoBG4-ja-0054",
+      "sequence": 54
+    },
+    {
+      "text": "普段は自信があるように振る舞っている私ですが、長尾さんの前だと本当に不安に思っていることを打ち明けることができました。",
+      "start_seconds": 402.08,
+      "end_seconds": 411.44,
+      "id": "o7KGrNKoBG4-ja-0055",
+      "sequence": 55
+    },
+    {
+      "text": "それは長尾さんが自分の味方でいてくれるという母のような安心感とどんな時も笑顔でまっすぐ目を見て話を聞いてくださる姿",
+      "start_seconds": 411.44,
+      "end_seconds": 421.319,
+      "id": "o7KGrNKoBG4-ja-0056",
+      "sequence": 56
+    },
+    {
+      "text": "のおかげだと思います。人生で困ったら長尾さんとお話ししなと世界中の人に言いふらしたいくらい長尾さんが好きです",
+      "start_seconds": 421.319,
+      "end_seconds": 430.199,
+      "id": "o7KGrNKoBG4-ja-0057",
+      "sequence": 57
+    },
+    {
+      "text": "。とにかく長尾さんと出会えて本当に良かったです。",
+      "start_seconds": 430.199,
+      "end_seconds": 437.36,
+      "id": "o7KGrNKoBG4-ja-0058",
+      "sequence": 58
+    },
+    {
+      "text": "この手紙をもらってまた1つ夢であったお母さんになることが実感できた瞬間でした。そして過去の私のように他人軸で生き",
+      "start_seconds": 439.4,
+      "end_seconds": 451.039,
+      "id": "o7KGrNKoBG4-ja-0059",
+      "sequence": 59
+    },
+    {
+      "text": "ている人が多いと感じていた私にとって何かを教えてあげる、やってあげるではなく少しのヒントを与えて信じて見守る",
+      "start_seconds": 451.039,
+      "end_seconds": 461.319,
+      "id": "o7KGrNKoBG4-ja-0060",
+      "sequence": 60
+    },
+    {
+      "text": "だけで自分で解決していき、自分なりの答えを探していくことができるんだという発見にもなりました。",
+      "start_seconds": 461.319,
+      "end_seconds": 469.56,
+      "id": "o7KGrNKoBG4-ja-0061",
+      "sequence": 61
+    },
+    {
+      "text": "その頃高校生だった長男は自分の行きたい大学についてプレゼンしてきました。",
+      "start_seconds": 469.56,
+      "end_seconds": 475.879,
+      "id": "o7KGrNKoBG4-ja-0062",
+      "sequence": 62
+    },
+    {
+      "text": "もちろん手助けなしでいきなりプレゼンしてきたわけではありません。私があなたはなんでそう思うのと問い続けるため、",
+      "start_seconds": 475.879,
+      "end_seconds": 485.319,
+      "id": "o7KGrNKoBG4-ja-0063",
+      "sequence": 63
+    },
+    {
+      "text": "そんな母を納得させるための手段のようなものでした。しかしおかげで本番の面接でも緊張することなく自分を伝えることが",
+      "start_seconds": 485.319,
+      "end_seconds": 495.84,
+      "id": "o7KGrNKoBG4-ja-0064",
+      "sequence": 64
+    },
+    {
+      "text": "できたと満足して帰ってきたのを覚えています。",
+      "start_seconds": 495.84,
+      "end_seconds": 500.68,
+      "id": "o7KGrNKoBG4-ja-0065",
+      "sequence": 65
+    },
+    {
+      "text": "第一死亡だった大学に合格、夢だった海外留学も実現し、今も自分らしく大学生活を送っています。",
+      "start_seconds": 500.68,
+      "end_seconds": 510.72,
+      "id": "o7KGrNKoBG4-ja-0066",
+      "sequence": 66
+    },
+    {
+      "text": "そして次男も同じように私にプレゼンし挑んだのですが、第1死亡の大学には不合格。しかしそこから再度自分と",
+      "start_seconds": 510.72,
+      "end_seconds": 520.399,
+      "id": "o7KGrNKoBG4-ja-0067",
+      "sequence": 67
+    },
+    {
+      "text": "向き合い第2死亡の大学に無事合格。",
+      "start_seconds": 520.399,
+      "end_seconds": 525.64,
+      "id": "o7KGrNKoBG4-ja-0068",
+      "sequence": 68
+    },
+    {
+      "text": "金額後リアルなITを学びたいと考える自分には今の大学が合っていると話してくれました。",
+      "start_seconds": 525.64,
+      "end_seconds": 534.399,
+      "id": "o7KGrNKoBG4-ja-0069",
+      "sequence": 69
+    },
+    {
+      "text": "息子たちも含めもっと多くの学生が自分らしくキャリア選択し、自分らしい生き方ができないかと考えていた時に企業や個人",
+      "start_seconds": 534.399,
+      "end_seconds": 545.04,
+      "id": "o7KGrNKoBG4-ja-0070",
+      "sequence": 70
+    },
+    {
+      "text": "の心志しブランディングをしている企業と出会い、その中でキャリアコーチとして活動を始めました。",
+      "start_seconds": 545.04,
+      "end_seconds": 553.64,
+      "id": "o7KGrNKoBG4-ja-0071",
+      "sequence": 71
+    },
+    {
+      "text": "そこには私が願っている姿の学生がたくさんいることを知り、この活動を私の地元である長崎で実現できないかと考える",
+      "start_seconds": 553.64,
+      "end_seconds": 564.399,
+      "id": "o7KGrNKoBG4-ja-0072",
+      "sequence": 72
+    },
+    {
+      "text": "ようになりました。",
+      "start_seconds": 564.399,
+      "end_seconds": 566.8,
+      "id": "o7KGrNKoBG4-ja-0073",
+      "sequence": 73
+    },
+    {
+      "text": "当時私は40歳個を大事にするお母さんという意味でまさに実家のような自分のタイミングでいつでも帰れる場所を",
+      "start_seconds": 566.8,
+      "end_seconds": 577.16,
+      "id": "o7KGrNKoBG4-ja-0074",
+      "sequence": 74
+    },
+    {
+      "text": "イメージして長男の20十歳の誕生日に起業。",
+      "start_seconds": 577.16,
+      "end_seconds": 582.8,
+      "id": "o7KGrNKoBG4-ja-0075",
+      "sequence": 75
+    },
+    {
+      "text": "そんな私が1人1人にあったキャリアデザインを一緒に絆創する活動。それがキャリアデザインコラボです。",
+      "start_seconds": 582.8,
+      "end_seconds": 592.6,
+      "id": "o7KGrNKoBG4-ja-0076",
+      "sequence": 76
+    },
+    {
+      "text": "大学生の就活支援が私のスタートでしたが、他人塾で生きている人が多いのに就活でいきなり自分らしさに問われるから迷子に",
+      "start_seconds": 592.6,
+      "end_seconds": 602.56,
+      "id": "o7KGrNKoBG4-ja-0077",
+      "sequence": 77
+    },
+    {
+      "text": "なる。だからこそもっと早い段階で自分らしさに気づいて欲しい。そう思うようになり、中高生のキャリア教育にも携わる",
+      "start_seconds": 602.56,
+      "end_seconds": 613.72,
+      "id": "o7KGrNKoBG4-ja-0078",
+      "sequence": 78
+    },
+    {
+      "text": "ようになりました。",
+      "start_seconds": 613.72,
+      "end_seconds": 616.8,
+      "id": "o7KGrNKoBG4-ja-0079",
+      "sequence": 79
+    },
+    {
+      "text": "そして学生たちが社会に出た時、その先がまた自分らしさを受け入られない場所であれば意味がないと感じるようになった",
+      "start_seconds": 616.8,
+      "end_seconds": 626.279,
+      "id": "o7KGrNKoBG4-ja-0080",
+      "sequence": 80
+    },
+    {
+      "text": "ため、現在は企業向けの採用支援、社員向け研修など活動を広げています。",
+      "start_seconds": 626.279,
+      "end_seconds": 637.0400000000001,
+      "id": "o7KGrNKoBG4-ja-0081",
+      "sequence": 81
+    },
+    {
+      "text": "今思えばなぜ私はセラピストになりたかったのか。人に寄り添い自己実現のための",
+      "start_seconds": 638.56,
+      "end_seconds": 645.839,
+      "id": "o7KGrNKoBG4-ja-0082",
+      "sequence": 82
+    },
+    {
+      "text": "成長を応援できないかと考えたから。ん、今それ叶えられてないということで私は",
+      "start_seconds": 645.839,
+      "end_seconds": 655.12,
+      "id": "o7KGrNKoBG4-ja-0083",
+      "sequence": 83
+    },
+    {
+      "text": "40代になり自分のやりたいと役割が一致し、転職に出会ったんだと気づきました。",
+      "start_seconds": 655.12,
+      "end_seconds": 663.72,
+      "id": "o7KGrNKoBG4-ja-0084",
+      "sequence": 84
+    },
+    {
+      "text": "そんな私が大切にしていることはワクワクを妥協しないこと。まずは私がワクワクしていることが大事。ワクワクするのならば",
+      "start_seconds": 663.72,
+      "end_seconds": 673.839,
+      "id": "o7KGrNKoBG4-ja-0085",
+      "sequence": 85
+    },
+    {
+      "text": "とことん追求する。私の強みである空気を読む人間観察人たらし心に寄り添うを生かして1人でも多くの人",
+      "start_seconds": 673.839,
+      "end_seconds": 685.8,
+      "id": "o7KGrNKoBG4-ja-0086",
+      "sequence": 86
+    },
+    {
+      "text": "の自分らしさを見つけるきっかけの人になりたいと考えています。",
+      "start_seconds": 685.8,
+      "end_seconds": 691.6,
+      "id": "o7KGrNKoBG4-ja-0087",
+      "sequence": 87
+    },
+    {
+      "text": "私の家族の形は3人の点が集まる集合隊。",
+      "start_seconds": 691.6,
+      "end_seconds": 696.079,
+      "id": "o7KGrNKoBG4-ja-0088",
+      "sequence": 88
+    },
+    {
+      "text": "お互い監視するでも自分の意見を押し付けるでもなく尊重し合える関係性",
+      "start_seconds": 696.079,
+      "end_seconds": 702.839,
+      "id": "o7KGrNKoBG4-ja-0089",
+      "sequence": 89
+    },
+    {
+      "text": "いつでも味方子育てイコール私の成長。",
+      "start_seconds": 702.839,
+      "end_seconds": 708.44,
+      "id": "o7KGrNKoBG4-ja-0090",
+      "sequence": 90
+    },
+    {
+      "text": "子供がいたおかげでいろんな人に出会い今があります。今までの経験を通してそう思えるようになりました。これからも信頼し合えるチームとしてお互い助け合える",
+      "start_seconds": 708.44,
+      "end_seconds": 720.32,
+      "id": "o7KGrNKoBG4-ja-0091",
+      "sequence": 91
+    },
+    {
+      "text": "関係性を続けていこうと思います。",
+      "start_seconds": 720.32,
+      "end_seconds": 724.8,
+      "id": "o7KGrNKoBG4-ja-0092",
+      "sequence": 92
+    },
+    {
+      "text": "私が子供の頃からモヤモヤしていたのは自分らしさを私が生かしきれていなかったから今は自分らしさを知った上でいろんな人と",
+      "start_seconds": 724.8,
+      "end_seconds": 735.88,
+      "id": "o7KGrNKoBG4-ja-0093",
+      "sequence": 93
+    },
+    {
+      "text": "チームと関わることで得意なことは全力で苦手なことは得意な人に任せる私らしく生きています。",
+      "start_seconds": 735.88,
+      "end_seconds": 747.88,
+      "id": "o7KGrNKoBG4-ja-0094",
+      "sequence": 94
+    },
+    {
+      "text": "仕事の面でも独立して最初は不安でしたが夢語を続け自分の思いを惜しみなく伝える。それがきっかけで人から人、人から組織",
+      "start_seconds": 747.88,
+      "end_seconds": 758.8,
+      "id": "o7KGrNKoBG4-ja-0095",
+      "sequence": 95
+    },
+    {
+      "text": "、組織から人というようにいろんな方面から紹介で今の仕事が繋がっています。",
+      "start_seconds": 758.8,
+      "end_seconds": 767.519,
+      "id": "o7KGrNKoBG4-ja-0096",
+      "sequence": 96
+    },
+    {
+      "text": "最後に私の願いはありのままの自分らしさを尊重し合える世界。そして",
+      "start_seconds": 768.199,
+      "end_seconds": 778.519,
+      "id": "o7KGrNKoBG4-ja-0097",
+      "sequence": 97
+    },
+    {
+      "text": "私の役割は人の強みを引き出し人と人をつぐ地元に還元。",
+      "start_seconds": 778.519,
+      "end_seconds": 787.399,
+      "id": "o7KGrNKoBG4-ja-0098",
+      "sequence": 98
+    },
+    {
+      "text": "これからもっともっといろんな点とつなぎ点をつなぎ地元である再会市長崎県に還元し、1人1人が自分らしい幸せに気づける",
+      "start_seconds": 787.8,
+      "end_seconds": 798.079,
+      "id": "o7KGrNKoBG4-ja-0099",
+      "sequence": 99
+    },
+    {
+      "text": "ようコーディネートしたいと思います。",
+      "start_seconds": 798.079,
+      "end_seconds": 803.04,
+      "id": "o7KGrNKoBG4-ja-0100",
+      "sequence": 100
+    },
+    {
+      "text": "あなたは自分らしく生きていますかあ",
+      "start_seconds": 803.24,
+      "end_seconds": 808.399,
+      "id": "o7KGrNKoBG4-ja-0101",
+      "sequence": 101
+    }
+  ],
+  "raw_captions": [
+    {
+      "text": "いきなりですが、皆さん自分らしく生きて",
+      "start_seconds": 6.04,
+      "end_seconds": 11.519
+    },
+    {
+      "text": "いますか?",
+      "start_seconds": 9.44,
+      "end_seconds": 14.759
+    },
+    {
+      "text": "今からお話するのは私の自分らしさに",
+      "start_seconds": 11.519,
+      "end_seconds": 19.119
+    },
+    {
+      "text": "向き合ってきた話です。",
+      "start_seconds": 14.759,
+      "end_seconds": 19.119
+    },
+    {
+      "text": "子供の頃の私は元気で明るいムード",
+      "start_seconds": 20.08,
+      "end_seconds": 26.72
+    },
+    {
+      "text": "メーカーみたいな感じでした。",
+      "start_seconds": 23.72,
+      "end_seconds": 30.24
+    },
+    {
+      "text": "3姉妹の長女として両親祖父母と大家族の",
+      "start_seconds": 26.72,
+      "end_seconds": 34.44
+    },
+    {
+      "text": "中で幼少期を過ごしました。家庭でも学校",
+      "start_seconds": 30.24,
+      "end_seconds": 38.8
+    },
+    {
+      "text": "でも誰かと一緒周りに合わせる。みんな",
+      "start_seconds": 34.44,
+      "end_seconds": 41.039
+    },
+    {
+      "text": "仲良く",
+      "start_seconds": 38.8,
+      "end_seconds": 43.839999999999996
+    },
+    {
+      "text": "長女だからしっかりするみたいなことは",
+      "start_seconds": 41.039,
+      "end_seconds": 46.64
+    },
+    {
+      "text": "当たり前にやらなくてはいけないと思って",
+      "start_seconds": 43.84,
+      "end_seconds": 48.64
+    },
+    {
+      "text": "いました。",
+      "start_seconds": 46.64,
+      "end_seconds": 51.84
+    },
+    {
+      "text": "大人が言っていることは全部正解なんだと",
+      "start_seconds": 48.64,
+      "end_seconds": 56.079
+    },
+    {
+      "text": "も思っていました。でも本当の私は",
+      "start_seconds": 51.84,
+      "end_seconds": 59.480000000000004
+    },
+    {
+      "text": "人見知りでマイペースなんです。なので",
+      "start_seconds": 56.079,
+      "end_seconds": 63.039
+    },
+    {
+      "text": "人間関係でもモヤモヤすることが多くあり",
+      "start_seconds": 59.48,
+      "end_seconds": 65.08
+    },
+    {
+      "text": "ました。",
+      "start_seconds": 63.039,
+      "end_seconds": 68.04
+    },
+    {
+      "text": "頑張れと無責任に言われることが苦手だっ",
+      "start_seconds": 65.08,
+      "end_seconds": 72.479
+    },
+    {
+      "text": "たし、期待されることも苦手。それを親に",
+      "start_seconds": 68.04,
+      "end_seconds": 77.119
+    },
+    {
+      "text": "も友達にも先生にも言えなかったんです。",
+      "start_seconds": 72.479,
+      "end_seconds": 80.0
+    },
+    {
+      "text": "もうモヤモヤモヤモヤモヤモヤモヤモヤし",
+      "start_seconds": 77.119,
+      "end_seconds": 82.2
+    },
+    {
+      "text": "てました。",
+      "start_seconds": 80.0,
+      "end_seconds": 84.119
+    },
+    {
+      "text": "全部嘘っていうわけではなかったんです",
+      "start_seconds": 82.2,
+      "end_seconds": 88.72
+    },
+    {
+      "text": "けど、少し我慢するみたいな。誰にでも",
+      "start_seconds": 84.119,
+      "end_seconds": 92.119
+    },
+    {
+      "text": "合わせる、演じることで自分を守ってい",
+      "start_seconds": 88.72,
+      "end_seconds": 94.56
+    },
+    {
+      "text": "ました。",
+      "start_seconds": 92.119,
+      "end_seconds": 97.2
+    },
+    {
+      "text": "自分でもどうしていいか分かりませんでし",
+      "start_seconds": 94.56,
+      "end_seconds": 99.43900000000001
+    },
+    {
+      "text": "た。",
+      "start_seconds": 97.2,
+      "end_seconds": 103.07900000000001
+    },
+    {
+      "text": "味方が欲しいとか信頼し合える関係性の人",
+      "start_seconds": 99.439,
+      "end_seconds": 106.439
+    },
+    {
+      "text": "が欲しいと思っていました。",
+      "start_seconds": 103.079,
+      "end_seconds": 109.55999999999999
+    },
+    {
+      "text": "環境を変えたくて外へ外へと気持ちが向い",
+      "start_seconds": 106.439,
+      "end_seconds": 113.119
+    },
+    {
+      "text": "ていきましたが、何事もうまくいかず妥協",
+      "start_seconds": 109.56,
+      "end_seconds": 115.32000000000001
+    },
+    {
+      "text": "してばかり。",
+      "start_seconds": 113.119,
+      "end_seconds": 118.159
+    },
+    {
+      "text": "高校卒業後、",
+      "start_seconds": 115.32,
+      "end_seconds": 122.32
+    },
+    {
+      "text": "妥協をしながら就職を決めました。その時",
+      "start_seconds": 118.159,
+      "end_seconds": 126.039
+    },
+    {
+      "text": "に唯一残った夢はお母さんになることでし",
+      "start_seconds": 122.32,
+      "end_seconds": 129.119
+    },
+    {
+      "text": "た。",
+      "start_seconds": 126.039,
+      "end_seconds": 129.119
+    },
+    {
+      "text": "そんな私に数年後奇跡が起きました。たち",
+      "start_seconds": 129.16,
+      "end_seconds": 138.68
+    },
+    {
+      "text": "で結婚して長男が生まれ夢が叶いました。",
+      "start_seconds": 133.04,
+      "end_seconds": 143.12
+    },
+    {
+      "text": "自分のことより優先したい私の生がい。",
+      "start_seconds": 138.68,
+      "end_seconds": 146.959
+    },
+    {
+      "text": "さらに3年後次男も生まれ愛しい存在が",
+      "start_seconds": 143.12,
+      "end_seconds": 149.59900000000002
+    },
+    {
+      "text": "2人になりました。",
+      "start_seconds": 146.959,
+      "end_seconds": 154.879
+    },
+    {
+      "text": "しかし数年後26歳の時に離婚先の人生に",
+      "start_seconds": 149.599,
+      "end_seconds": 158.56
+    },
+    {
+      "text": "絶望し泣いていた私に当時年長さんだった",
+      "start_seconds": 154.879,
+      "end_seconds": 162.39999999999998
+    },
+    {
+      "text": "息子が俺たちがおるやんと声をかけかけて",
+      "start_seconds": 158.56,
+      "end_seconds": 167.0
+    },
+    {
+      "text": "くれてはっとしました。",
+      "start_seconds": 162.4,
+      "end_seconds": 167.0
+    },
+    {
+      "text": "そうだ。私1人で頑張ろうとしなくても",
+      "start_seconds": 167.08,
+      "end_seconds": 173.08
+    },
+    {
+      "text": "子供たちがいてくれるんだ。",
+      "start_seconds": 170.04,
+      "end_seconds": 177.12
+    },
+    {
+      "text": "そこから仕事もダブルワークで始め。",
+      "start_seconds": 173.08,
+      "end_seconds": 180.8
+    },
+    {
+      "text": "でも逆に子供との時間が減り、自分も子供",
+      "start_seconds": 177.12,
+      "end_seconds": 184.959
+    },
+    {
+      "text": "も犠牲になってしまいました。",
+      "start_seconds": 180.8,
+      "end_seconds": 188.68
+    },
+    {
+      "text": "3人での生活にも限界を感じ、長男が小学",
+      "start_seconds": 184.959,
+      "end_seconds": 192.0
+    },
+    {
+      "text": "2年生になりなるタイミングで私の地元で",
+      "start_seconds": 188.68,
+      "end_seconds": 195.36
+    },
+    {
+      "text": "ある再開始に戻りました。",
+      "start_seconds": 192.0,
+      "end_seconds": 197.959
+    },
+    {
+      "text": "ま、そんなある日、小学校の保護者向けの",
+      "start_seconds": 195.36,
+      "end_seconds": 201.959
+    },
+    {
+      "text": "講演会があり、そこで講師である臨床心理",
+      "start_seconds": 197.959,
+      "end_seconds": 206.84
+    },
+    {
+      "text": "士の先生が子供を褒めることで子供も自分",
+      "start_seconds": 201.959,
+      "end_seconds": 209.68
+    },
+    {
+      "text": "もハッピーになるというお話をされ、",
+      "start_seconds": 206.84,
+      "end_seconds": 212.439
+    },
+    {
+      "text": "ドキッとしました。",
+      "start_seconds": 209.68,
+      "end_seconds": 215.959
+    },
+    {
+      "text": "子供たちが困らないように幸せで会って",
+      "start_seconds": 212.439,
+      "end_seconds": 219.239
+    },
+    {
+      "text": "欲しいと思うがゆえに怒っている、怒って",
+      "start_seconds": 215.959,
+      "end_seconds": 222.879
+    },
+    {
+      "text": "ばかりいることに気づきました。そして私",
+      "start_seconds": 219.239,
+      "end_seconds": 226.08
+    },
+    {
+      "text": "が怒るから子供たちは怒られないようにと",
+      "start_seconds": 222.879,
+      "end_seconds": 230.239
+    },
+    {
+      "text": "気にしてばかり。その繰り返し",
+      "start_seconds": 226.08,
+      "end_seconds": 233.56
+    },
+    {
+      "text": "いつの間にか自分の所有物のように子供",
+      "start_seconds": 230.239,
+      "end_seconds": 236.12
+    },
+    {
+      "text": "たちを支配しようとしてしまっていました",
+      "start_seconds": 233.56,
+      "end_seconds": 238.48
+    },
+    {
+      "text": "。",
+      "start_seconds": 236.12,
+      "end_seconds": 242.239
+    },
+    {
+      "text": "自分の人生の主役は自分、自分の子供で",
+      "start_seconds": 238.48,
+      "end_seconds": 247.2
+    },
+    {
+      "text": "あっても他人の人生なのにと反省。ここ",
+      "start_seconds": 242.239,
+      "end_seconds": 250.239
+    },
+    {
+      "text": "からは私も自分のやりたいことや夢を",
+      "start_seconds": 247.2,
+      "end_seconds": 253.67999999999998
+    },
+    {
+      "text": "追いかけようと思いました。",
+      "start_seconds": 250.239,
+      "end_seconds": 258.6
+    },
+    {
+      "text": "その時の講師の先生のように人の心を軽く",
+      "start_seconds": 253.68,
+      "end_seconds": 262.16
+    },
+    {
+      "text": "するきっかけの人に私もなりたい。そう",
+      "start_seconds": 258.6,
+      "end_seconds": 266.199
+    },
+    {
+      "text": "思いましたが、その時から臨床心理士を",
+      "start_seconds": 262.16,
+      "end_seconds": 269.91900000000004
+    },
+    {
+      "text": "目指すには時間もお金もかかる。そんな時",
+      "start_seconds": 266.199,
+      "end_seconds": 272.72
+    },
+    {
+      "text": "に知ったのがセラピストという職業でした",
+      "start_seconds": 269.919,
+      "end_seconds": 274.75899999999996
+    },
+    {
+      "text": "。",
+      "start_seconds": 272.72,
+      "end_seconds": 277.52000000000004
+    },
+    {
+      "text": "セラピストになる夢と生活するための",
+      "start_seconds": 274.759,
+      "end_seconds": 279.68
+    },
+    {
+      "text": "ライスワーク。",
+      "start_seconds": 277.52,
+      "end_seconds": 283.44
+    },
+    {
+      "text": "やりたいことと自分の役割。",
+      "start_seconds": 279.68,
+      "end_seconds": 286.96
+    },
+    {
+      "text": "これまで他人軸だった私が自分軸を意識し",
+      "start_seconds": 283.44,
+      "end_seconds": 291.28
+    },
+    {
+      "text": "た大きなきっかけだったと思います。",
+      "start_seconds": 286.96,
+      "end_seconds": 294.68
+    },
+    {
+      "text": "そこから数年後、とある方から長尾さんに",
+      "start_seconds": 291.28,
+      "end_seconds": 297.19899999999996
+    },
+    {
+      "text": "やって欲しいことがあると言われ出会った",
+      "start_seconds": 294.68,
+      "end_seconds": 300.28000000000003
+    },
+    {
+      "text": "のが長崎県キャリアコーディネーターと",
+      "start_seconds": 297.199,
+      "end_seconds": 303.16
+    },
+    {
+      "text": "いう仕事でした。",
+      "start_seconds": 300.28,
+      "end_seconds": 306.039
+    },
+    {
+      "text": "キャリア支援の経験はなくゼロからの",
+      "start_seconds": 303.16,
+      "end_seconds": 308.88000000000005
+    },
+    {
+      "text": "スタートでしたが、あなたにやって欲しい",
+      "start_seconds": 306.039,
+      "end_seconds": 314.08
+    },
+    {
+      "text": "という言葉だけでたまたま出会った仕事で",
+      "start_seconds": 308.88,
+      "end_seconds": 317.71999999999997
+    },
+    {
+      "text": "ライスワークとして掴んだつもりでした。",
+      "start_seconds": 314.08,
+      "end_seconds": 320.31899999999996
+    },
+    {
+      "text": "初めは戸惑いや苦労することもたくさん",
+      "start_seconds": 317.72,
+      "end_seconds": 324.319
+    },
+    {
+      "text": "ありましたが、やっていくうちになんだか",
+      "start_seconds": 320.319,
+      "end_seconds": 326.96000000000004
+    },
+    {
+      "text": "どこかで感じたことのあるようなやりがい",
+      "start_seconds": 324.319,
+      "end_seconds": 330.639
+    },
+    {
+      "text": "を感じるようになりました。",
+      "start_seconds": 326.96,
+      "end_seconds": 333.88
+    },
+    {
+      "text": "その中で1番印象に残ってるのは、当時の",
+      "start_seconds": 330.639,
+      "end_seconds": 337.52
+    },
+    {
+      "text": "学生さんから手紙をもらったことです。",
+      "start_seconds": 333.88,
+      "end_seconds": 341.44
+    },
+    {
+      "text": "現在その学生さんは社会人3年目になって",
+      "start_seconds": 337.52,
+      "end_seconds": 344.56
+    },
+    {
+      "text": "今でも定期的に連絡を取り合っているので",
+      "start_seconds": 341.44,
+      "end_seconds": 347.039
+    },
+    {
+      "text": "本人に許可をいただきましたのでその時の",
+      "start_seconds": 344.56,
+      "end_seconds": 351.919
+    },
+    {
+      "text": "手紙を紹介したいと思います。",
+      "start_seconds": 347.039,
+      "end_seconds": 351.919
+    },
+    {
+      "text": "今日がお会いできる最後の日なので感謝の",
+      "start_seconds": 356.36,
+      "end_seconds": 362.91900000000004
+    },
+    {
+      "text": "気持ちを伝えたくて手紙を書きました。",
+      "start_seconds": 359.28,
+      "end_seconds": 366.19899999999996
+    },
+    {
+      "text": "去年のちょうど今頃第一死亡に落ち徒歩に",
+      "start_seconds": 362.919,
+      "end_seconds": 369.4
+    },
+    {
+      "text": "くれていた私にポジティブな言葉を",
+      "start_seconds": 366.199,
+      "end_seconds": 372.8
+    },
+    {
+      "text": "くださり本当に救われました。",
+      "start_seconds": 369.4,
+      "end_seconds": 375.35999999999996
+    },
+    {
+      "text": "自分には波外れた才能がないため、",
+      "start_seconds": 372.8,
+      "end_seconds": 377.919
+    },
+    {
+      "text": "とりあえず根性と笑顔でやり過ごそうと",
+      "start_seconds": 375.36,
+      "end_seconds": 381.72
+    },
+    {
+      "text": "いう就活を甘く見ていた私に、はるか",
+      "start_seconds": 377.919,
+      "end_seconds": 384.28
+    },
+    {
+      "text": "ちゃんはありのままでいいんだよと優しく",
+      "start_seconds": 381.72,
+      "end_seconds": 387.08000000000004
+    },
+    {
+      "text": "接してくださり、少し泣きそうになったの",
+      "start_seconds": 384.28,
+      "end_seconds": 389.479
+    },
+    {
+      "text": "を覚えています。",
+      "start_seconds": 387.08,
+      "end_seconds": 392.68
+    },
+    {
+      "text": "就活生にとってあの言葉は魔法の言葉だと",
+      "start_seconds": 389.479,
+      "end_seconds": 397.08
+    },
+    {
+      "text": "思っています。私も長尾さんのように人を",
+      "start_seconds": 392.68,
+      "end_seconds": 400.0
+    },
+    {
+      "text": "肯定する優しい言葉をかける大人になり",
+      "start_seconds": 397.08,
+      "end_seconds": 402.08
+    },
+    {
+      "text": "たいです。",
+      "start_seconds": 400.0,
+      "end_seconds": 404.44
+    },
+    {
+      "text": "普段は自信があるように振る舞っている私",
+      "start_seconds": 402.08,
+      "end_seconds": 407.8
+    },
+    {
+      "text": "ですが、長尾さんの前だと本当に不安に",
+      "start_seconds": 404.44,
+      "end_seconds": 409.56
+    },
+    {
+      "text": "思っていることを打ち明けることができ",
+      "start_seconds": 407.8,
+      "end_seconds": 411.44
+    },
+    {
+      "text": "ました。",
+      "start_seconds": 409.56,
+      "end_seconds": 414.639
+    },
+    {
+      "text": "それは長尾さんが自分の味方でいてくれる",
+      "start_seconds": 411.44,
+      "end_seconds": 418.56
+    },
+    {
+      "text": "という母のような安心感とどんな時も笑顔",
+      "start_seconds": 414.639,
+      "end_seconds": 421.319
+    },
+    {
+      "text": "でまっすぐ目を見て話を聞いてくださる姿",
+      "start_seconds": 418.56,
+      "end_seconds": 425.24
+    },
+    {
+      "text": "のおかげだと思います。人生で困ったら",
+      "start_seconds": 421.319,
+      "end_seconds": 428.199
+    },
+    {
+      "text": "長尾さんとお話ししなと世界中の人に",
+      "start_seconds": 425.24,
+      "end_seconds": 430.199
+    },
+    {
+      "text": "言いふらしたいくらい長尾さんが好きです",
+      "start_seconds": 428.199,
+      "end_seconds": 433.759
+    },
+    {
+      "text": "。とにかく長尾さんと出会えて本当に",
+      "start_seconds": 430.199,
+      "end_seconds": 437.36
+    },
+    {
+      "text": "良かったです。",
+      "start_seconds": 433.759,
+      "end_seconds": 437.36
+    },
+    {
+      "text": "この手紙をもらってまた1つ夢であった",
+      "start_seconds": 439.4,
+      "end_seconds": 446.75899999999996
+    },
+    {
+      "text": "お母さんになることが実感できた瞬間でし",
+      "start_seconds": 443.319,
+      "end_seconds": 451.03900000000004
+    },
+    {
+      "text": "た。そして過去の私のように他人軸で生き",
+      "start_seconds": 446.759,
+      "end_seconds": 454.639
+    },
+    {
+      "text": "ている人が多いと感じていた私にとって",
+      "start_seconds": 451.039,
+      "end_seconds": 457.36
+    },
+    {
+      "text": "何かを教えてあげる、やってあげるでは",
+      "start_seconds": 454.639,
+      "end_seconds": 461.319
+    },
+    {
+      "text": "なく少しのヒントを与えて信じて見守る",
+      "start_seconds": 457.36,
+      "end_seconds": 464.40000000000003
+    },
+    {
+      "text": "だけで自分で解決していき、自分なりの",
+      "start_seconds": 461.319,
+      "end_seconds": 466.8
+    },
+    {
+      "text": "答えを探していくことができるんだという",
+      "start_seconds": 464.4,
+      "end_seconds": 469.56
+    },
+    {
+      "text": "発見にもなりました。",
+      "start_seconds": 466.8,
+      "end_seconds": 472.8
+    },
+    {
+      "text": "その頃高校生だった長男は自分の行きたい",
+      "start_seconds": 469.56,
+      "end_seconds": 475.879
+    },
+    {
+      "text": "大学についてプレゼンしてきました。",
+      "start_seconds": 472.8,
+      "end_seconds": 478.319
+    },
+    {
+      "text": "もちろん手助けなしでいきなりプレゼンし",
+      "start_seconds": 475.879,
+      "end_seconds": 482.159
+    },
+    {
+      "text": "てきたわけではありません。私があなたは",
+      "start_seconds": 478.319,
+      "end_seconds": 485.319
+    },
+    {
+      "text": "なんでそう思うのと問い続けるため、",
+      "start_seconds": 482.159,
+      "end_seconds": 488.84
+    },
+    {
+      "text": "そんな母を納得させるための手段のような",
+      "start_seconds": 485.319,
+      "end_seconds": 493.08000000000004
+    },
+    {
+      "text": "ものでした。しかしおかげで本番の面接で",
+      "start_seconds": 488.84,
+      "end_seconds": 495.84
+    },
+    {
+      "text": "も緊張することなく自分を伝えることが",
+      "start_seconds": 493.08,
+      "end_seconds": 498.919
+    },
+    {
+      "text": "できたと満足して帰ってきたのを覚えてい",
+      "start_seconds": 495.84,
+      "end_seconds": 500.67999999999995
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 498.919,
+      "end_seconds": 504.19899999999996
+    },
+    {
+      "text": "第一死亡だった大学に合格、夢だった海外",
+      "start_seconds": 500.68,
+      "end_seconds": 508.24
+    },
+    {
+      "text": "留学も実現し、今も自分らしく大学生活を",
+      "start_seconds": 504.199,
+      "end_seconds": 510.72
+    },
+    {
+      "text": "送っています。",
+      "start_seconds": 508.24,
+      "end_seconds": 513.5600000000001
+    },
+    {
+      "text": "そして次男も同じように私にプレゼンし",
+      "start_seconds": 510.72,
+      "end_seconds": 516.919
+    },
+    {
+      "text": "挑んだのですが、第1死亡の大学には",
+      "start_seconds": 513.56,
+      "end_seconds": 520.399
+    },
+    {
+      "text": "不合格。しかしそこから再度自分と",
+      "start_seconds": 516.919,
+      "end_seconds": 525.64
+    },
+    {
+      "text": "向き合い第2死亡の大学に無事合格。",
+      "start_seconds": 520.399,
+      "end_seconds": 528.519
+    },
+    {
+      "text": "金額後リアルなITを学びたいと考える",
+      "start_seconds": 525.64,
+      "end_seconds": 531.6
+    },
+    {
+      "text": "自分には今の大学が合っていると話して",
+      "start_seconds": 528.519,
+      "end_seconds": 534.399
+    },
+    {
+      "text": "くれました。",
+      "start_seconds": 531.6,
+      "end_seconds": 537.72
+    },
+    {
+      "text": "息子たちも含めもっと多くの学生が自分",
+      "start_seconds": 534.399,
+      "end_seconds": 540.76
+    },
+    {
+      "text": "らしくキャリア選択し、自分らしい生き方",
+      "start_seconds": 537.72,
+      "end_seconds": 545.0400000000001
+    },
+    {
+      "text": "ができないかと考えていた時に企業や個人",
+      "start_seconds": 540.76,
+      "end_seconds": 547.76
+    },
+    {
+      "text": "の心志しブランディングをしている企業と",
+      "start_seconds": 545.04,
+      "end_seconds": 550.64
+    },
+    {
+      "text": "出会い、その中でキャリアコーチとして",
+      "start_seconds": 547.76,
+      "end_seconds": 553.64
+    },
+    {
+      "text": "活動を始めました。",
+      "start_seconds": 550.64,
+      "end_seconds": 557.399
+    },
+    {
+      "text": "そこには私が願っている姿の学生が",
+      "start_seconds": 553.64,
+      "end_seconds": 561.1999999999999
+    },
+    {
+      "text": "たくさんいることを知り、この活動を私の",
+      "start_seconds": 557.399,
+      "end_seconds": 564.399
+    },
+    {
+      "text": "地元である長崎で実現できないかと考える",
+      "start_seconds": 561.2,
+      "end_seconds": 566.8000000000001
+    },
+    {
+      "text": "ようになりました。",
+      "start_seconds": 564.399,
+      "end_seconds": 571.6
+    },
+    {
+      "text": "当時私は40歳個を大事にするお母さんと",
+      "start_seconds": 566.8,
+      "end_seconds": 574.7199999999999
+    },
+    {
+      "text": "いう意味でまさに実家のような自分の",
+      "start_seconds": 571.6,
+      "end_seconds": 577.16
+    },
+    {
+      "text": "タイミングでいつでも帰れる場所を",
+      "start_seconds": 574.72,
+      "end_seconds": 580.519
+    },
+    {
+      "text": "イメージして長男の20十歳の誕生日に",
+      "start_seconds": 577.16,
+      "end_seconds": 582.8
+    },
+    {
+      "text": "起業。",
+      "start_seconds": 580.519,
+      "end_seconds": 585.04
+    },
+    {
+      "text": "そんな私が1人1人にあったキャリア",
+      "start_seconds": 582.8,
+      "end_seconds": 589.3199999999999
+    },
+    {
+      "text": "デザインを一緒に絆創する活動。それが",
+      "start_seconds": 585.04,
+      "end_seconds": 592.5999999999999
+    },
+    {
+      "text": "キャリアデザインコラボです。",
+      "start_seconds": 589.32,
+      "end_seconds": 596.0400000000001
+    },
+    {
+      "text": "大学生の就活支援が私のスタートでしたが",
+      "start_seconds": 592.6,
+      "end_seconds": 600.32
+    },
+    {
+      "text": "、他人塾で生きている人が多いのに就活で",
+      "start_seconds": 596.04,
+      "end_seconds": 602.56
+    },
+    {
+      "text": "いきなり自分らしさに問われるから迷子に",
+      "start_seconds": 600.32,
+      "end_seconds": 606.9590000000001
+    },
+    {
+      "text": "なる。だからこそもっと早い段階で自分",
+      "start_seconds": 602.56,
+      "end_seconds": 610.2399999999999
+    },
+    {
+      "text": "らしさに気づいて欲しい。そう思うように",
+      "start_seconds": 606.959,
+      "end_seconds": 613.7199999999999
+    },
+    {
+      "text": "なり、中高生のキャリア教育にも携わる",
+      "start_seconds": 610.24,
+      "end_seconds": 616.8
+    },
+    {
+      "text": "ようになりました。",
+      "start_seconds": 613.72,
+      "end_seconds": 621.32
+    },
+    {
+      "text": "そして学生たちが社会に出た時、その先が",
+      "start_seconds": 616.8,
+      "end_seconds": 623.5999999999999
+    },
+    {
+      "text": "また自分らしさを受け入られない場所で",
+      "start_seconds": 621.32,
+      "end_seconds": 626.279
+    },
+    {
+      "text": "あれば意味がないと感じるようになった",
+      "start_seconds": 623.6,
+      "end_seconds": 630.839
+    },
+    {
+      "text": "ため、現在は企業向けの採用支援、社員",
+      "start_seconds": 626.279,
+      "end_seconds": 637.04
+    },
+    {
+      "text": "向け研修など活動を広げています。",
+      "start_seconds": 630.839,
+      "end_seconds": 637.0400000000001
+    },
+    {
+      "text": "今思えばなぜ私はセラピストになりたかっ",
+      "start_seconds": 638.56,
+      "end_seconds": 645.8389999999999
+    },
+    {
+      "text": "たのか。人に寄り添い自己実現のための",
+      "start_seconds": 641.92,
+      "end_seconds": 651.16
+    },
+    {
+      "text": "成長を応援できないかと考えたから。ん、",
+      "start_seconds": 645.839,
+      "end_seconds": 655.12
+    },
+    {
+      "text": "今それ叶えられてないということで私は",
+      "start_seconds": 651.16,
+      "end_seconds": 659.7199999999999
+    },
+    {
+      "text": "40代になり自分のやりたいと役割が一致",
+      "start_seconds": 655.12,
+      "end_seconds": 663.72
+    },
+    {
+      "text": "し、転職に出会ったんだと気づきました。",
+      "start_seconds": 659.72,
+      "end_seconds": 666.8000000000001
+    },
+    {
+      "text": "そんな私が大切にしていることはワクワク",
+      "start_seconds": 663.72,
+      "end_seconds": 670.639
+    },
+    {
+      "text": "を妥協しないこと。まずは私がワクワクし",
+      "start_seconds": 666.8,
+      "end_seconds": 673.8389999999999
+    },
+    {
+      "text": "ていることが大事。ワクワクするのならば",
+      "start_seconds": 670.639,
+      "end_seconds": 678.639
+    },
+    {
+      "text": "とことん追求する。私の強みである空気を",
+      "start_seconds": 673.839,
+      "end_seconds": 682.399
+    },
+    {
+      "text": "読む人間観察人たらし",
+      "start_seconds": 678.639,
+      "end_seconds": 685.8
+    },
+    {
+      "text": "心に寄り添うを生かして1人でも多くの人",
+      "start_seconds": 682.399,
+      "end_seconds": 688.44
+    },
+    {
+      "text": "の自分らしさを見つけるきっかけの人に",
+      "start_seconds": 685.8,
+      "end_seconds": 691.5999999999999
+    },
+    {
+      "text": "なりたいと考えています。",
+      "start_seconds": 688.44,
+      "end_seconds": 696.0790000000001
+    },
+    {
+      "text": "私の家族の形は3人の点が集まる集合隊。",
+      "start_seconds": 691.6,
+      "end_seconds": 698.839
+    },
+    {
+      "text": "お互い監視するでも自分の意見を",
+      "start_seconds": 696.079,
+      "end_seconds": 702.8389999999999
+    },
+    {
+      "text": "押し付けるでもなく尊重し合える関係性",
+      "start_seconds": 698.839,
+      "end_seconds": 708.44
+    },
+    {
+      "text": "いつでも味方子育てイコール私の成長。",
+      "start_seconds": 702.839,
+      "end_seconds": 710.839
+    },
+    {
+      "text": "子供がいたおかげでいろんな人に出会い今",
+      "start_seconds": 708.44,
+      "end_seconds": 714.0790000000001
+    },
+    {
+      "text": "があります。今までの経験を通してそう",
+      "start_seconds": 710.839,
+      "end_seconds": 717.7600000000001
+    },
+    {
+      "text": "思えるようになりました。これからも信頼",
+      "start_seconds": 714.079,
+      "end_seconds": 720.3199999999999
+    },
+    {
+      "text": "し合えるチームとしてお互い助け合える",
+      "start_seconds": 717.76,
+      "end_seconds": 724.8
+    },
+    {
+      "text": "関係性を続けていこうと思います。",
+      "start_seconds": 720.32,
+      "end_seconds": 727.88
+    },
+    {
+      "text": "私が子供の頃からモヤモヤしていたのは",
+      "start_seconds": 724.8,
+      "end_seconds": 730.56
+    },
+    {
+      "text": "自分らしさを私が生かしきれていなかった",
+      "start_seconds": 727.88,
+      "end_seconds": 732.12
+    },
+    {
+      "text": "から",
+      "start_seconds": 730.56,
+      "end_seconds": 735.88
+    },
+    {
+      "text": "今は自分らしさを知った上でいろんな人と",
+      "start_seconds": 732.12,
+      "end_seconds": 740.6
+    },
+    {
+      "text": "チームと関わることで得意なことは全力で",
+      "start_seconds": 735.88,
+      "end_seconds": 744.639
+    },
+    {
+      "text": "苦手なことは得意な人に任せる",
+      "start_seconds": 740.6,
+      "end_seconds": 747.88
+    },
+    {
+      "text": "私らしく生きています。",
+      "start_seconds": 744.639,
+      "end_seconds": 751.24
+    },
+    {
+      "text": "仕事の面でも独立して最初は不安でしたが",
+      "start_seconds": 747.88,
+      "end_seconds": 754.639
+    },
+    {
+      "text": "夢語を続け自分の思いを惜しみなく伝える",
+      "start_seconds": 751.24,
+      "end_seconds": 758.8
+    },
+    {
+      "text": "。それがきっかけで人から人、人から組織",
+      "start_seconds": 754.639,
+      "end_seconds": 761.88
+    },
+    {
+      "text": "、組織から人というようにいろんな方面",
+      "start_seconds": 758.8,
+      "end_seconds": 767.519
+    },
+    {
+      "text": "から紹介で今の仕事が繋がっています。",
+      "start_seconds": 761.88,
+      "end_seconds": 767.519
+    },
+    {
+      "text": "最後に私の",
+      "start_seconds": 768.199,
+      "end_seconds": 774.04
+    },
+    {
+      "text": "願いはありのままの自分らしさを尊重し",
+      "start_seconds": 771.04,
+      "end_seconds": 778.519
+    },
+    {
+      "text": "合える世界。そして",
+      "start_seconds": 774.04,
+      "end_seconds": 782.4399999999999
+    },
+    {
+      "text": "私の役割は人の強みを引き出し人と人を",
+      "start_seconds": 778.519,
+      "end_seconds": 787.399
+    },
+    {
+      "text": "つぐ地元に還元。",
+      "start_seconds": 782.44,
+      "end_seconds": 787.399
+    },
+    {
+      "text": "これからもっともっといろんな点とつなぎ",
+      "start_seconds": 787.8,
+      "end_seconds": 794.56
+    },
+    {
+      "text": "点をつなぎ地元である再会市長崎県に還元",
+      "start_seconds": 790.519,
+      "end_seconds": 798.079
+    },
+    {
+      "text": "し、1人1人が自分らしい幸せに気づける",
+      "start_seconds": 794.56,
+      "end_seconds": 803.04
+    },
+    {
+      "text": "ようコーディネートしたいと思います。",
+      "start_seconds": 798.079,
+      "end_seconds": 803.04
+    },
+    {
+      "text": "あなたは自分らしく生きていますかあ",
+      "start_seconds": 803.24,
+      "end_seconds": 808.399
+    }
+  ],
+  "display_captions": [
+    {
+      "text": "いきなりですが、皆さん自分らしく生きて",
+      "start_seconds": 6.04,
+      "end_seconds": 9.44,
+      "id": "o7KGrNKoBG4-display-0001",
+      "segment_id": "o7KGrNKoBG4-ja-0001"
+    },
+    {
+      "text": "いますか?",
+      "start_seconds": 9.44,
+      "end_seconds": 11.519,
+      "id": "o7KGrNKoBG4-display-0002",
+      "segment_id": "o7KGrNKoBG4-ja-0001"
+    },
+    {
+      "text": "今からお話するのは私の自分らしさに",
+      "start_seconds": 11.519,
+      "end_seconds": 14.759,
+      "id": "o7KGrNKoBG4-display-0003",
+      "segment_id": "o7KGrNKoBG4-ja-0002"
+    },
+    {
+      "text": "向き合ってきた話です。",
+      "start_seconds": 14.759,
+      "end_seconds": 19.119,
+      "id": "o7KGrNKoBG4-display-0004",
+      "segment_id": "o7KGrNKoBG4-ja-0002"
+    },
+    {
+      "text": "子供の頃の私は元気で明るいムード",
+      "start_seconds": 20.08,
+      "end_seconds": 23.72,
+      "id": "o7KGrNKoBG4-display-0005",
+      "segment_id": "o7KGrNKoBG4-ja-0003"
+    },
+    {
+      "text": "メーカーみたいな感じでした。",
+      "start_seconds": 23.72,
+      "end_seconds": 26.72,
+      "id": "o7KGrNKoBG4-display-0006",
+      "segment_id": "o7KGrNKoBG4-ja-0003"
+    },
+    {
+      "text": "3姉妹の長女として両親祖父母と大家族の",
+      "start_seconds": 26.72,
+      "end_seconds": 30.24,
+      "id": "o7KGrNKoBG4-display-0007",
+      "segment_id": "o7KGrNKoBG4-ja-0004"
+    },
+    {
+      "text": "中で幼少期を過ごしました。家庭でも学校",
+      "start_seconds": 30.24,
+      "end_seconds": 34.44,
+      "id": "o7KGrNKoBG4-display-0008",
+      "segment_id": "o7KGrNKoBG4-ja-0004"
+    },
+    {
+      "text": "でも誰かと一緒周りに合わせる。みんな",
+      "start_seconds": 34.44,
+      "end_seconds": 38.8,
+      "id": "o7KGrNKoBG4-display-0009",
+      "segment_id": "o7KGrNKoBG4-ja-0005"
+    },
+    {
+      "text": "仲良く",
+      "start_seconds": 38.8,
+      "end_seconds": 41.039,
+      "id": "o7KGrNKoBG4-display-0010",
+      "segment_id": "o7KGrNKoBG4-ja-0005"
+    },
+    {
+      "text": "長女だからしっかりするみたいなことは",
+      "start_seconds": 41.039,
+      "end_seconds": 43.84,
+      "id": "o7KGrNKoBG4-display-0011",
+      "segment_id": "o7KGrNKoBG4-ja-0005"
+    },
+    {
+      "text": "当たり前にやらなくてはいけないと思って",
+      "start_seconds": 43.84,
+      "end_seconds": 46.64,
+      "id": "o7KGrNKoBG4-display-0012",
+      "segment_id": "o7KGrNKoBG4-ja-0006"
+    },
+    {
+      "text": "いました。",
+      "start_seconds": 46.64,
+      "end_seconds": 48.64,
+      "id": "o7KGrNKoBG4-display-0013",
+      "segment_id": "o7KGrNKoBG4-ja-0006"
+    },
+    {
+      "text": "大人が言っていることは全部正解なんだと",
+      "start_seconds": 48.64,
+      "end_seconds": 51.84,
+      "id": "o7KGrNKoBG4-display-0014",
+      "segment_id": "o7KGrNKoBG4-ja-0007"
+    },
+    {
+      "text": "も思っていました。でも本当の私は",
+      "start_seconds": 51.84,
+      "end_seconds": 56.079,
+      "id": "o7KGrNKoBG4-display-0015",
+      "segment_id": "o7KGrNKoBG4-ja-0007"
+    },
+    {
+      "text": "人見知りでマイペースなんです。なので",
+      "start_seconds": 56.079,
+      "end_seconds": 59.48,
+      "id": "o7KGrNKoBG4-display-0016",
+      "segment_id": "o7KGrNKoBG4-ja-0007"
+    },
+    {
+      "text": "人間関係でもモヤモヤすることが多くあり",
+      "start_seconds": 59.48,
+      "end_seconds": 63.039,
+      "id": "o7KGrNKoBG4-display-0017",
+      "segment_id": "o7KGrNKoBG4-ja-0008"
+    },
+    {
+      "text": "ました。",
+      "start_seconds": 63.039,
+      "end_seconds": 65.08,
+      "id": "o7KGrNKoBG4-display-0018",
+      "segment_id": "o7KGrNKoBG4-ja-0008"
+    },
+    {
+      "text": "頑張れと無責任に言われることが苦手だっ",
+      "start_seconds": 65.08,
+      "end_seconds": 68.04,
+      "id": "o7KGrNKoBG4-display-0019",
+      "segment_id": "o7KGrNKoBG4-ja-0009"
+    },
+    {
+      "text": "たし、期待されることも苦手。それを親に",
+      "start_seconds": 68.04,
+      "end_seconds": 72.479,
+      "id": "o7KGrNKoBG4-display-0020",
+      "segment_id": "o7KGrNKoBG4-ja-0009"
+    },
+    {
+      "text": "も友達にも先生にも言えなかったんです。",
+      "start_seconds": 72.479,
+      "end_seconds": 77.119,
+      "id": "o7KGrNKoBG4-display-0021",
+      "segment_id": "o7KGrNKoBG4-ja-0010"
+    },
+    {
+      "text": "もうモヤモヤモヤモヤモヤモヤモヤモヤし",
+      "start_seconds": 77.119,
+      "end_seconds": 80.0,
+      "id": "o7KGrNKoBG4-display-0022",
+      "segment_id": "o7KGrNKoBG4-ja-0011"
+    },
+    {
+      "text": "てました。",
+      "start_seconds": 80.0,
+      "end_seconds": 82.2,
+      "id": "o7KGrNKoBG4-display-0023",
+      "segment_id": "o7KGrNKoBG4-ja-0011"
+    },
+    {
+      "text": "全部嘘っていうわけではなかったんです",
+      "start_seconds": 82.2,
+      "end_seconds": 84.119,
+      "id": "o7KGrNKoBG4-display-0024",
+      "segment_id": "o7KGrNKoBG4-ja-0012"
+    },
+    {
+      "text": "けど、少し我慢するみたいな。誰にでも",
+      "start_seconds": 84.119,
+      "end_seconds": 88.72,
+      "id": "o7KGrNKoBG4-display-0025",
+      "segment_id": "o7KGrNKoBG4-ja-0012"
+    },
+    {
+      "text": "合わせる、演じることで自分を守ってい",
+      "start_seconds": 88.72,
+      "end_seconds": 92.119,
+      "id": "o7KGrNKoBG4-display-0026",
+      "segment_id": "o7KGrNKoBG4-ja-0012"
+    },
+    {
+      "text": "ました。",
+      "start_seconds": 92.119,
+      "end_seconds": 94.56,
+      "id": "o7KGrNKoBG4-display-0027",
+      "segment_id": "o7KGrNKoBG4-ja-0013"
+    },
+    {
+      "text": "自分でもどうしていいか分かりませんでし",
+      "start_seconds": 94.56,
+      "end_seconds": 97.2,
+      "id": "o7KGrNKoBG4-display-0028",
+      "segment_id": "o7KGrNKoBG4-ja-0014"
+    },
+    {
+      "text": "た。",
+      "start_seconds": 97.2,
+      "end_seconds": 99.439,
+      "id": "o7KGrNKoBG4-display-0029",
+      "segment_id": "o7KGrNKoBG4-ja-0014"
+    },
+    {
+      "text": "味方が欲しいとか信頼し合える関係性の人",
+      "start_seconds": 99.439,
+      "end_seconds": 103.079,
+      "id": "o7KGrNKoBG4-display-0030",
+      "segment_id": "o7KGrNKoBG4-ja-0015"
+    },
+    {
+      "text": "が欲しいと思っていました。",
+      "start_seconds": 103.079,
+      "end_seconds": 106.439,
+      "id": "o7KGrNKoBG4-display-0031",
+      "segment_id": "o7KGrNKoBG4-ja-0015"
+    },
+    {
+      "text": "環境を変えたくて外へ外へと気持ちが向い",
+      "start_seconds": 106.439,
+      "end_seconds": 109.56,
+      "id": "o7KGrNKoBG4-display-0032",
+      "segment_id": "o7KGrNKoBG4-ja-0016"
+    },
+    {
+      "text": "ていきましたが、何事もうまくいかず妥協",
+      "start_seconds": 109.56,
+      "end_seconds": 113.119,
+      "id": "o7KGrNKoBG4-display-0033",
+      "segment_id": "o7KGrNKoBG4-ja-0016"
+    },
+    {
+      "text": "してばかり。",
+      "start_seconds": 113.119,
+      "end_seconds": 115.32,
+      "id": "o7KGrNKoBG4-display-0034",
+      "segment_id": "o7KGrNKoBG4-ja-0016"
+    },
+    {
+      "text": "高校卒業後、",
+      "start_seconds": 115.32,
+      "end_seconds": 118.159,
+      "id": "o7KGrNKoBG4-display-0035",
+      "segment_id": "o7KGrNKoBG4-ja-0017"
+    },
+    {
+      "text": "妥協をしながら就職を決めました。その時",
+      "start_seconds": 118.159,
+      "end_seconds": 122.32,
+      "id": "o7KGrNKoBG4-display-0036",
+      "segment_id": "o7KGrNKoBG4-ja-0017"
+    },
+    {
+      "text": "に唯一残った夢はお母さんになることでし",
+      "start_seconds": 122.32,
+      "end_seconds": 126.039,
+      "id": "o7KGrNKoBG4-display-0037",
+      "segment_id": "o7KGrNKoBG4-ja-0017"
+    },
+    {
+      "text": "た。",
+      "start_seconds": 126.039,
+      "end_seconds": 129.119,
+      "id": "o7KGrNKoBG4-display-0038",
+      "segment_id": "o7KGrNKoBG4-ja-0018"
+    },
+    {
+      "text": "そんな私に数年後奇跡が起きました。たち",
+      "start_seconds": 129.16,
+      "end_seconds": 133.04,
+      "id": "o7KGrNKoBG4-display-0039",
+      "segment_id": "o7KGrNKoBG4-ja-0019"
+    },
+    {
+      "text": "で結婚して長男が生まれ夢が叶いました。",
+      "start_seconds": 133.04,
+      "end_seconds": 138.68,
+      "id": "o7KGrNKoBG4-display-0040",
+      "segment_id": "o7KGrNKoBG4-ja-0019"
+    },
+    {
+      "text": "自分のことより優先したい私の生がい。",
+      "start_seconds": 138.68,
+      "end_seconds": 143.12,
+      "id": "o7KGrNKoBG4-display-0041",
+      "segment_id": "o7KGrNKoBG4-ja-0020"
+    },
+    {
+      "text": "さらに3年後次男も生まれ愛しい存在が",
+      "start_seconds": 143.12,
+      "end_seconds": 146.959,
+      "id": "o7KGrNKoBG4-display-0042",
+      "segment_id": "o7KGrNKoBG4-ja-0021"
+    },
+    {
+      "text": "2人になりました。",
+      "start_seconds": 146.959,
+      "end_seconds": 149.599,
+      "id": "o7KGrNKoBG4-display-0043",
+      "segment_id": "o7KGrNKoBG4-ja-0021"
+    },
+    {
+      "text": "しかし数年後26歳の時に離婚先の人生に",
+      "start_seconds": 149.599,
+      "end_seconds": 154.879,
+      "id": "o7KGrNKoBG4-display-0044",
+      "segment_id": "o7KGrNKoBG4-ja-0022"
+    },
+    {
+      "text": "絶望し泣いていた私に当時年長さんだった",
+      "start_seconds": 154.879,
+      "end_seconds": 158.56,
+      "id": "o7KGrNKoBG4-display-0045",
+      "segment_id": "o7KGrNKoBG4-ja-0022"
+    },
+    {
+      "text": "息子が俺たちがおるやんと声をかけかけて",
+      "start_seconds": 158.56,
+      "end_seconds": 162.4,
+      "id": "o7KGrNKoBG4-display-0046",
+      "segment_id": "o7KGrNKoBG4-ja-0023"
+    },
+    {
+      "text": "くれてはっとしました。",
+      "start_seconds": 162.4,
+      "end_seconds": 167.0,
+      "id": "o7KGrNKoBG4-display-0047",
+      "segment_id": "o7KGrNKoBG4-ja-0023"
+    },
+    {
+      "text": "そうだ。私1人で頑張ろうとしなくても",
+      "start_seconds": 167.08,
+      "end_seconds": 170.04,
+      "id": "o7KGrNKoBG4-display-0048",
+      "segment_id": "o7KGrNKoBG4-ja-0024"
+    },
+    {
+      "text": "子供たちがいてくれるんだ。",
+      "start_seconds": 170.04,
+      "end_seconds": 173.08,
+      "id": "o7KGrNKoBG4-display-0049",
+      "segment_id": "o7KGrNKoBG4-ja-0024"
+    },
+    {
+      "text": "そこから仕事もダブルワークで始め。",
+      "start_seconds": 173.08,
+      "end_seconds": 177.12,
+      "id": "o7KGrNKoBG4-display-0050",
+      "segment_id": "o7KGrNKoBG4-ja-0025"
+    },
+    {
+      "text": "でも逆に子供との時間が減り、自分も子供",
+      "start_seconds": 177.12,
+      "end_seconds": 180.8,
+      "id": "o7KGrNKoBG4-display-0051",
+      "segment_id": "o7KGrNKoBG4-ja-0026"
+    },
+    {
+      "text": "も犠牲になってしまいました。",
+      "start_seconds": 180.8,
+      "end_seconds": 184.959,
+      "id": "o7KGrNKoBG4-display-0052",
+      "segment_id": "o7KGrNKoBG4-ja-0026"
+    },
+    {
+      "text": "3人での生活にも限界を感じ、長男が小学",
+      "start_seconds": 184.959,
+      "end_seconds": 188.68,
+      "id": "o7KGrNKoBG4-display-0053",
+      "segment_id": "o7KGrNKoBG4-ja-0027"
+    },
+    {
+      "text": "2年生になりなるタイミングで私の地元で",
+      "start_seconds": 188.68,
+      "end_seconds": 192.0,
+      "id": "o7KGrNKoBG4-display-0054",
+      "segment_id": "o7KGrNKoBG4-ja-0027"
+    },
+    {
+      "text": "ある再開始に戻りました。",
+      "start_seconds": 192.0,
+      "end_seconds": 195.36,
+      "id": "o7KGrNKoBG4-display-0055",
+      "segment_id": "o7KGrNKoBG4-ja-0027"
+    },
+    {
+      "text": "ま、そんなある日、小学校の保護者向けの",
+      "start_seconds": 195.36,
+      "end_seconds": 197.959,
+      "id": "o7KGrNKoBG4-display-0056",
+      "segment_id": "o7KGrNKoBG4-ja-0028"
+    },
+    {
+      "text": "講演会があり、そこで講師である臨床心理",
+      "start_seconds": 197.959,
+      "end_seconds": 201.959,
+      "id": "o7KGrNKoBG4-display-0057",
+      "segment_id": "o7KGrNKoBG4-ja-0028"
+    },
+    {
+      "text": "士の先生が子供を褒めることで子供も自分",
+      "start_seconds": 201.959,
+      "end_seconds": 206.84,
+      "id": "o7KGrNKoBG4-display-0058",
+      "segment_id": "o7KGrNKoBG4-ja-0028"
+    },
+    {
+      "text": "もハッピーになるというお話をされ、",
+      "start_seconds": 206.84,
+      "end_seconds": 209.68,
+      "id": "o7KGrNKoBG4-display-0059",
+      "segment_id": "o7KGrNKoBG4-ja-0029"
+    },
+    {
+      "text": "ドキッとしました。",
+      "start_seconds": 209.68,
+      "end_seconds": 212.439,
+      "id": "o7KGrNKoBG4-display-0060",
+      "segment_id": "o7KGrNKoBG4-ja-0029"
+    },
+    {
+      "text": "子供たちが困らないように幸せで会って",
+      "start_seconds": 212.439,
+      "end_seconds": 215.959,
+      "id": "o7KGrNKoBG4-display-0061",
+      "segment_id": "o7KGrNKoBG4-ja-0030"
+    },
+    {
+      "text": "欲しいと思うがゆえに怒っている、怒って",
+      "start_seconds": 215.959,
+      "end_seconds": 219.239,
+      "id": "o7KGrNKoBG4-display-0062",
+      "segment_id": "o7KGrNKoBG4-ja-0030"
+    },
+    {
+      "text": "ばかりいることに気づきました。そして私",
+      "start_seconds": 219.239,
+      "end_seconds": 222.879,
+      "id": "o7KGrNKoBG4-display-0063",
+      "segment_id": "o7KGrNKoBG4-ja-0030"
+    },
+    {
+      "text": "が怒るから子供たちは怒られないようにと",
+      "start_seconds": 222.879,
+      "end_seconds": 226.08,
+      "id": "o7KGrNKoBG4-display-0064",
+      "segment_id": "o7KGrNKoBG4-ja-0031"
+    },
+    {
+      "text": "気にしてばかり。その繰り返し",
+      "start_seconds": 226.08,
+      "end_seconds": 230.239,
+      "id": "o7KGrNKoBG4-display-0065",
+      "segment_id": "o7KGrNKoBG4-ja-0031"
+    },
+    {
+      "text": "いつの間にか自分の所有物のように子供",
+      "start_seconds": 230.239,
+      "end_seconds": 233.56,
+      "id": "o7KGrNKoBG4-display-0066",
+      "segment_id": "o7KGrNKoBG4-ja-0031"
+    },
+    {
+      "text": "たちを支配しようとしてしまっていました",
+      "start_seconds": 233.56,
+      "end_seconds": 236.12,
+      "id": "o7KGrNKoBG4-display-0067",
+      "segment_id": "o7KGrNKoBG4-ja-0032"
+    },
+    {
+      "text": "。",
+      "start_seconds": 236.12,
+      "end_seconds": 238.48,
+      "id": "o7KGrNKoBG4-display-0068",
+      "segment_id": "o7KGrNKoBG4-ja-0032"
+    },
+    {
+      "text": "自分の人生の主役は自分、自分の子供で",
+      "start_seconds": 238.48,
+      "end_seconds": 242.239,
+      "id": "o7KGrNKoBG4-display-0069",
+      "segment_id": "o7KGrNKoBG4-ja-0033"
+    },
+    {
+      "text": "あっても他人の人生なのにと反省。ここ",
+      "start_seconds": 242.239,
+      "end_seconds": 247.2,
+      "id": "o7KGrNKoBG4-display-0070",
+      "segment_id": "o7KGrNKoBG4-ja-0033"
+    },
+    {
+      "text": "からは私も自分のやりたいことや夢を",
+      "start_seconds": 247.2,
+      "end_seconds": 250.239,
+      "id": "o7KGrNKoBG4-display-0071",
+      "segment_id": "o7KGrNKoBG4-ja-0033"
+    },
+    {
+      "text": "追いかけようと思いました。",
+      "start_seconds": 250.239,
+      "end_seconds": 253.68,
+      "id": "o7KGrNKoBG4-display-0072",
+      "segment_id": "o7KGrNKoBG4-ja-0034"
+    },
+    {
+      "text": "その時の講師の先生のように人の心を軽く",
+      "start_seconds": 253.68,
+      "end_seconds": 258.6,
+      "id": "o7KGrNKoBG4-display-0073",
+      "segment_id": "o7KGrNKoBG4-ja-0035"
+    },
+    {
+      "text": "するきっかけの人に私もなりたい。そう",
+      "start_seconds": 258.6,
+      "end_seconds": 262.16,
+      "id": "o7KGrNKoBG4-display-0074",
+      "segment_id": "o7KGrNKoBG4-ja-0035"
+    },
+    {
+      "text": "思いましたが、その時から臨床心理士を",
+      "start_seconds": 262.16,
+      "end_seconds": 266.199,
+      "id": "o7KGrNKoBG4-display-0075",
+      "segment_id": "o7KGrNKoBG4-ja-0036"
+    },
+    {
+      "text": "目指すには時間もお金もかかる。そんな時",
+      "start_seconds": 266.199,
+      "end_seconds": 269.919,
+      "id": "o7KGrNKoBG4-display-0076",
+      "segment_id": "o7KGrNKoBG4-ja-0036"
+    },
+    {
+      "text": "に知ったのがセラピストという職業でした",
+      "start_seconds": 269.919,
+      "end_seconds": 272.72,
+      "id": "o7KGrNKoBG4-display-0077",
+      "segment_id": "o7KGrNKoBG4-ja-0036"
+    },
+    {
+      "text": "。",
+      "start_seconds": 272.72,
+      "end_seconds": 274.759,
+      "id": "o7KGrNKoBG4-display-0078",
+      "segment_id": "o7KGrNKoBG4-ja-0037"
+    },
+    {
+      "text": "セラピストになる夢と生活するための",
+      "start_seconds": 274.759,
+      "end_seconds": 277.52,
+      "id": "o7KGrNKoBG4-display-0079",
+      "segment_id": "o7KGrNKoBG4-ja-0038"
+    },
+    {
+      "text": "ライスワーク。",
+      "start_seconds": 277.52,
+      "end_seconds": 279.68,
+      "id": "o7KGrNKoBG4-display-0080",
+      "segment_id": "o7KGrNKoBG4-ja-0038"
+    },
+    {
+      "text": "やりたいことと自分の役割。",
+      "start_seconds": 279.68,
+      "end_seconds": 283.44,
+      "id": "o7KGrNKoBG4-display-0081",
+      "segment_id": "o7KGrNKoBG4-ja-0039"
+    },
+    {
+      "text": "これまで他人軸だった私が自分軸を意識し",
+      "start_seconds": 283.44,
+      "end_seconds": 286.96,
+      "id": "o7KGrNKoBG4-display-0082",
+      "segment_id": "o7KGrNKoBG4-ja-0040"
+    },
+    {
+      "text": "た大きなきっかけだったと思います。",
+      "start_seconds": 286.96,
+      "end_seconds": 291.28,
+      "id": "o7KGrNKoBG4-display-0083",
+      "segment_id": "o7KGrNKoBG4-ja-0040"
+    },
+    {
+      "text": "そこから数年後、とある方から長尾さんに",
+      "start_seconds": 291.28,
+      "end_seconds": 294.68,
+      "id": "o7KGrNKoBG4-display-0084",
+      "segment_id": "o7KGrNKoBG4-ja-0041"
+    },
+    {
+      "text": "やって欲しいことがあると言われ出会った",
+      "start_seconds": 294.68,
+      "end_seconds": 297.199,
+      "id": "o7KGrNKoBG4-display-0085",
+      "segment_id": "o7KGrNKoBG4-ja-0041"
+    },
+    {
+      "text": "のが長崎県キャリアコーディネーターと",
+      "start_seconds": 297.199,
+      "end_seconds": 300.28,
+      "id": "o7KGrNKoBG4-display-0086",
+      "segment_id": "o7KGrNKoBG4-ja-0041"
+    },
+    {
+      "text": "いう仕事でした。",
+      "start_seconds": 300.28,
+      "end_seconds": 303.16,
+      "id": "o7KGrNKoBG4-display-0087",
+      "segment_id": "o7KGrNKoBG4-ja-0041"
+    },
+    {
+      "text": "キャリア支援の経験はなくゼロからの",
+      "start_seconds": 303.16,
+      "end_seconds": 306.039,
+      "id": "o7KGrNKoBG4-display-0088",
+      "segment_id": "o7KGrNKoBG4-ja-0042"
+    },
+    {
+      "text": "スタートでしたが、あなたにやって欲しい",
+      "start_seconds": 306.039,
+      "end_seconds": 308.88,
+      "id": "o7KGrNKoBG4-display-0089",
+      "segment_id": "o7KGrNKoBG4-ja-0042"
+    },
+    {
+      "text": "という言葉だけでたまたま出会った仕事で",
+      "start_seconds": 308.88,
+      "end_seconds": 314.08,
+      "id": "o7KGrNKoBG4-display-0090",
+      "segment_id": "o7KGrNKoBG4-ja-0042"
+    },
+    {
+      "text": "ライスワークとして掴んだつもりでした。",
+      "start_seconds": 314.08,
+      "end_seconds": 317.72,
+      "id": "o7KGrNKoBG4-display-0091",
+      "segment_id": "o7KGrNKoBG4-ja-0043"
+    },
+    {
+      "text": "初めは戸惑いや苦労することもたくさん",
+      "start_seconds": 317.72,
+      "end_seconds": 320.319,
+      "id": "o7KGrNKoBG4-display-0092",
+      "segment_id": "o7KGrNKoBG4-ja-0044"
+    },
+    {
+      "text": "ありましたが、やっていくうちになんだか",
+      "start_seconds": 320.319,
+      "end_seconds": 324.319,
+      "id": "o7KGrNKoBG4-display-0093",
+      "segment_id": "o7KGrNKoBG4-ja-0044"
+    },
+    {
+      "text": "どこかで感じたことのあるようなやりがい",
+      "start_seconds": 324.319,
+      "end_seconds": 326.96,
+      "id": "o7KGrNKoBG4-display-0094",
+      "segment_id": "o7KGrNKoBG4-ja-0044"
+    },
+    {
+      "text": "を感じるようになりました。",
+      "start_seconds": 326.96,
+      "end_seconds": 330.639,
+      "id": "o7KGrNKoBG4-display-0095",
+      "segment_id": "o7KGrNKoBG4-ja-0045"
+    },
+    {
+      "text": "その中で1番印象に残ってるのは、当時の",
+      "start_seconds": 330.639,
+      "end_seconds": 333.88,
+      "id": "o7KGrNKoBG4-display-0096",
+      "segment_id": "o7KGrNKoBG4-ja-0046"
+    },
+    {
+      "text": "学生さんから手紙をもらったことです。",
+      "start_seconds": 333.88,
+      "end_seconds": 337.52,
+      "id": "o7KGrNKoBG4-display-0097",
+      "segment_id": "o7KGrNKoBG4-ja-0046"
+    },
+    {
+      "text": "現在その学生さんは社会人3年目になって",
+      "start_seconds": 337.52,
+      "end_seconds": 341.44,
+      "id": "o7KGrNKoBG4-display-0098",
+      "segment_id": "o7KGrNKoBG4-ja-0047"
+    },
+    {
+      "text": "今でも定期的に連絡を取り合っているので",
+      "start_seconds": 341.44,
+      "end_seconds": 344.56,
+      "id": "o7KGrNKoBG4-display-0099",
+      "segment_id": "o7KGrNKoBG4-ja-0047"
+    },
+    {
+      "text": "本人に許可をいただきましたのでその時の",
+      "start_seconds": 344.56,
+      "end_seconds": 347.039,
+      "id": "o7KGrNKoBG4-display-0100",
+      "segment_id": "o7KGrNKoBG4-ja-0047"
+    },
+    {
+      "text": "手紙を紹介したいと思います。",
+      "start_seconds": 347.039,
+      "end_seconds": 351.919,
+      "id": "o7KGrNKoBG4-display-0101",
+      "segment_id": "o7KGrNKoBG4-ja-0048"
+    },
+    {
+      "text": "今日がお会いできる最後の日なので感謝の",
+      "start_seconds": 356.36,
+      "end_seconds": 359.28,
+      "id": "o7KGrNKoBG4-display-0102",
+      "segment_id": "o7KGrNKoBG4-ja-0049"
+    },
+    {
+      "text": "気持ちを伝えたくて手紙を書きました。",
+      "start_seconds": 359.28,
+      "end_seconds": 362.919,
+      "id": "o7KGrNKoBG4-display-0103",
+      "segment_id": "o7KGrNKoBG4-ja-0049"
+    },
+    {
+      "text": "去年のちょうど今頃第一死亡に落ち徒歩に",
+      "start_seconds": 362.919,
+      "end_seconds": 366.199,
+      "id": "o7KGrNKoBG4-display-0104",
+      "segment_id": "o7KGrNKoBG4-ja-0050"
+    },
+    {
+      "text": "くれていた私にポジティブな言葉を",
+      "start_seconds": 366.199,
+      "end_seconds": 369.4,
+      "id": "o7KGrNKoBG4-display-0105",
+      "segment_id": "o7KGrNKoBG4-ja-0050"
+    },
+    {
+      "text": "くださり本当に救われました。",
+      "start_seconds": 369.4,
+      "end_seconds": 372.8,
+      "id": "o7KGrNKoBG4-display-0106",
+      "segment_id": "o7KGrNKoBG4-ja-0050"
+    },
+    {
+      "text": "自分には波外れた才能がないため、",
+      "start_seconds": 372.8,
+      "end_seconds": 375.36,
+      "id": "o7KGrNKoBG4-display-0107",
+      "segment_id": "o7KGrNKoBG4-ja-0051"
+    },
+    {
+      "text": "とりあえず根性と笑顔でやり過ごそうと",
+      "start_seconds": 375.36,
+      "end_seconds": 377.919,
+      "id": "o7KGrNKoBG4-display-0108",
+      "segment_id": "o7KGrNKoBG4-ja-0051"
+    },
+    {
+      "text": "いう就活を甘く見ていた私に、はるか",
+      "start_seconds": 377.919,
+      "end_seconds": 381.72,
+      "id": "o7KGrNKoBG4-display-0109",
+      "segment_id": "o7KGrNKoBG4-ja-0051"
+    },
+    {
+      "text": "ちゃんはありのままでいいんだよと優しく",
+      "start_seconds": 381.72,
+      "end_seconds": 384.28,
+      "id": "o7KGrNKoBG4-display-0110",
+      "segment_id": "o7KGrNKoBG4-ja-0051"
+    },
+    {
+      "text": "接してくださり、少し泣きそうになったの",
+      "start_seconds": 384.28,
+      "end_seconds": 387.08,
+      "id": "o7KGrNKoBG4-display-0111",
+      "segment_id": "o7KGrNKoBG4-ja-0052"
+    },
+    {
+      "text": "を覚えています。",
+      "start_seconds": 387.08,
+      "end_seconds": 389.479,
+      "id": "o7KGrNKoBG4-display-0112",
+      "segment_id": "o7KGrNKoBG4-ja-0052"
+    },
+    {
+      "text": "就活生にとってあの言葉は魔法の言葉だと",
+      "start_seconds": 389.479,
+      "end_seconds": 392.68,
+      "id": "o7KGrNKoBG4-display-0113",
+      "segment_id": "o7KGrNKoBG4-ja-0053"
+    },
+    {
+      "text": "思っています。私も長尾さんのように人を",
+      "start_seconds": 392.68,
+      "end_seconds": 397.08,
+      "id": "o7KGrNKoBG4-display-0114",
+      "segment_id": "o7KGrNKoBG4-ja-0053"
+    },
+    {
+      "text": "肯定する優しい言葉をかける大人になり",
+      "start_seconds": 397.08,
+      "end_seconds": 400.0,
+      "id": "o7KGrNKoBG4-display-0115",
+      "segment_id": "o7KGrNKoBG4-ja-0053"
+    },
+    {
+      "text": "たいです。",
+      "start_seconds": 400.0,
+      "end_seconds": 402.08,
+      "id": "o7KGrNKoBG4-display-0116",
+      "segment_id": "o7KGrNKoBG4-ja-0054"
+    },
+    {
+      "text": "普段は自信があるように振る舞っている私",
+      "start_seconds": 402.08,
+      "end_seconds": 404.44,
+      "id": "o7KGrNKoBG4-display-0117",
+      "segment_id": "o7KGrNKoBG4-ja-0055"
+    },
+    {
+      "text": "ですが、長尾さんの前だと本当に不安に",
+      "start_seconds": 404.44,
+      "end_seconds": 407.8,
+      "id": "o7KGrNKoBG4-display-0118",
+      "segment_id": "o7KGrNKoBG4-ja-0055"
+    },
+    {
+      "text": "思っていることを打ち明けることができ",
+      "start_seconds": 407.8,
+      "end_seconds": 409.56,
+      "id": "o7KGrNKoBG4-display-0119",
+      "segment_id": "o7KGrNKoBG4-ja-0055"
+    },
+    {
+      "text": "ました。",
+      "start_seconds": 409.56,
+      "end_seconds": 411.44,
+      "id": "o7KGrNKoBG4-display-0120",
+      "segment_id": "o7KGrNKoBG4-ja-0055"
+    },
+    {
+      "text": "それは長尾さんが自分の味方でいてくれる",
+      "start_seconds": 411.44,
+      "end_seconds": 414.639,
+      "id": "o7KGrNKoBG4-display-0121",
+      "segment_id": "o7KGrNKoBG4-ja-0056"
+    },
+    {
+      "text": "という母のような安心感とどんな時も笑顔",
+      "start_seconds": 414.639,
+      "end_seconds": 418.56,
+      "id": "o7KGrNKoBG4-display-0122",
+      "segment_id": "o7KGrNKoBG4-ja-0056"
+    },
+    {
+      "text": "でまっすぐ目を見て話を聞いてくださる姿",
+      "start_seconds": 418.56,
+      "end_seconds": 421.319,
+      "id": "o7KGrNKoBG4-display-0123",
+      "segment_id": "o7KGrNKoBG4-ja-0056"
+    },
+    {
+      "text": "のおかげだと思います。人生で困ったら",
+      "start_seconds": 421.319,
+      "end_seconds": 425.24,
+      "id": "o7KGrNKoBG4-display-0124",
+      "segment_id": "o7KGrNKoBG4-ja-0057"
+    },
+    {
+      "text": "長尾さんとお話ししなと世界中の人に",
+      "start_seconds": 425.24,
+      "end_seconds": 428.199,
+      "id": "o7KGrNKoBG4-display-0125",
+      "segment_id": "o7KGrNKoBG4-ja-0057"
+    },
+    {
+      "text": "言いふらしたいくらい長尾さんが好きです",
+      "start_seconds": 428.199,
+      "end_seconds": 430.199,
+      "id": "o7KGrNKoBG4-display-0126",
+      "segment_id": "o7KGrNKoBG4-ja-0057"
+    },
+    {
+      "text": "。とにかく長尾さんと出会えて本当に",
+      "start_seconds": 430.199,
+      "end_seconds": 433.759,
+      "id": "o7KGrNKoBG4-display-0127",
+      "segment_id": "o7KGrNKoBG4-ja-0058"
+    },
+    {
+      "text": "良かったです。",
+      "start_seconds": 433.759,
+      "end_seconds": 437.36,
+      "id": "o7KGrNKoBG4-display-0128",
+      "segment_id": "o7KGrNKoBG4-ja-0058"
+    },
+    {
+      "text": "この手紙をもらってまた1つ夢であった",
+      "start_seconds": 439.4,
+      "end_seconds": 443.319,
+      "id": "o7KGrNKoBG4-display-0129",
+      "segment_id": "o7KGrNKoBG4-ja-0059"
+    },
+    {
+      "text": "お母さんになることが実感できた瞬間でし",
+      "start_seconds": 443.319,
+      "end_seconds": 446.759,
+      "id": "o7KGrNKoBG4-display-0130",
+      "segment_id": "o7KGrNKoBG4-ja-0059"
+    },
+    {
+      "text": "た。そして過去の私のように他人軸で生き",
+      "start_seconds": 446.759,
+      "end_seconds": 451.039,
+      "id": "o7KGrNKoBG4-display-0131",
+      "segment_id": "o7KGrNKoBG4-ja-0059"
+    },
+    {
+      "text": "ている人が多いと感じていた私にとって",
+      "start_seconds": 451.039,
+      "end_seconds": 454.639,
+      "id": "o7KGrNKoBG4-display-0132",
+      "segment_id": "o7KGrNKoBG4-ja-0060"
+    },
+    {
+      "text": "何かを教えてあげる、やってあげるでは",
+      "start_seconds": 454.639,
+      "end_seconds": 457.36,
+      "id": "o7KGrNKoBG4-display-0133",
+      "segment_id": "o7KGrNKoBG4-ja-0060"
+    },
+    {
+      "text": "なく少しのヒントを与えて信じて見守る",
+      "start_seconds": 457.36,
+      "end_seconds": 461.319,
+      "id": "o7KGrNKoBG4-display-0134",
+      "segment_id": "o7KGrNKoBG4-ja-0060"
+    },
+    {
+      "text": "だけで自分で解決していき、自分なりの",
+      "start_seconds": 461.319,
+      "end_seconds": 464.4,
+      "id": "o7KGrNKoBG4-display-0135",
+      "segment_id": "o7KGrNKoBG4-ja-0061"
+    },
+    {
+      "text": "答えを探していくことができるんだという",
+      "start_seconds": 464.4,
+      "end_seconds": 466.8,
+      "id": "o7KGrNKoBG4-display-0136",
+      "segment_id": "o7KGrNKoBG4-ja-0061"
+    },
+    {
+      "text": "発見にもなりました。",
+      "start_seconds": 466.8,
+      "end_seconds": 469.56,
+      "id": "o7KGrNKoBG4-display-0137",
+      "segment_id": "o7KGrNKoBG4-ja-0061"
+    },
+    {
+      "text": "その頃高校生だった長男は自分の行きたい",
+      "start_seconds": 469.56,
+      "end_seconds": 472.8,
+      "id": "o7KGrNKoBG4-display-0138",
+      "segment_id": "o7KGrNKoBG4-ja-0062"
+    },
+    {
+      "text": "大学についてプレゼンしてきました。",
+      "start_seconds": 472.8,
+      "end_seconds": 475.879,
+      "id": "o7KGrNKoBG4-display-0139",
+      "segment_id": "o7KGrNKoBG4-ja-0062"
+    },
+    {
+      "text": "もちろん手助けなしでいきなりプレゼンし",
+      "start_seconds": 475.879,
+      "end_seconds": 478.319,
+      "id": "o7KGrNKoBG4-display-0140",
+      "segment_id": "o7KGrNKoBG4-ja-0063"
+    },
+    {
+      "text": "てきたわけではありません。私があなたは",
+      "start_seconds": 478.319,
+      "end_seconds": 482.159,
+      "id": "o7KGrNKoBG4-display-0141",
+      "segment_id": "o7KGrNKoBG4-ja-0063"
+    },
+    {
+      "text": "なんでそう思うのと問い続けるため、",
+      "start_seconds": 482.159,
+      "end_seconds": 485.319,
+      "id": "o7KGrNKoBG4-display-0142",
+      "segment_id": "o7KGrNKoBG4-ja-0063"
+    },
+    {
+      "text": "そんな母を納得させるための手段のような",
+      "start_seconds": 485.319,
+      "end_seconds": 488.84,
+      "id": "o7KGrNKoBG4-display-0143",
+      "segment_id": "o7KGrNKoBG4-ja-0064"
+    },
+    {
+      "text": "ものでした。しかしおかげで本番の面接で",
+      "start_seconds": 488.84,
+      "end_seconds": 493.08,
+      "id": "o7KGrNKoBG4-display-0144",
+      "segment_id": "o7KGrNKoBG4-ja-0064"
+    },
+    {
+      "text": "も緊張することなく自分を伝えることが",
+      "start_seconds": 493.08,
+      "end_seconds": 495.84,
+      "id": "o7KGrNKoBG4-display-0145",
+      "segment_id": "o7KGrNKoBG4-ja-0064"
+    },
+    {
+      "text": "できたと満足して帰ってきたのを覚えてい",
+      "start_seconds": 495.84,
+      "end_seconds": 498.919,
+      "id": "o7KGrNKoBG4-display-0146",
+      "segment_id": "o7KGrNKoBG4-ja-0065"
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 498.919,
+      "end_seconds": 500.68,
+      "id": "o7KGrNKoBG4-display-0147",
+      "segment_id": "o7KGrNKoBG4-ja-0065"
+    },
+    {
+      "text": "第一死亡だった大学に合格、夢だった海外",
+      "start_seconds": 500.68,
+      "end_seconds": 504.199,
+      "id": "o7KGrNKoBG4-display-0148",
+      "segment_id": "o7KGrNKoBG4-ja-0066"
+    },
+    {
+      "text": "留学も実現し、今も自分らしく大学生活を",
+      "start_seconds": 504.199,
+      "end_seconds": 508.24,
+      "id": "o7KGrNKoBG4-display-0149",
+      "segment_id": "o7KGrNKoBG4-ja-0066"
+    },
+    {
+      "text": "送っています。",
+      "start_seconds": 508.24,
+      "end_seconds": 510.72,
+      "id": "o7KGrNKoBG4-display-0150",
+      "segment_id": "o7KGrNKoBG4-ja-0066"
+    },
+    {
+      "text": "そして次男も同じように私にプレゼンし",
+      "start_seconds": 510.72,
+      "end_seconds": 513.56,
+      "id": "o7KGrNKoBG4-display-0151",
+      "segment_id": "o7KGrNKoBG4-ja-0067"
+    },
+    {
+      "text": "挑んだのですが、第1死亡の大学には",
+      "start_seconds": 513.56,
+      "end_seconds": 516.919,
+      "id": "o7KGrNKoBG4-display-0152",
+      "segment_id": "o7KGrNKoBG4-ja-0067"
+    },
+    {
+      "text": "不合格。しかしそこから再度自分と",
+      "start_seconds": 516.919,
+      "end_seconds": 520.399,
+      "id": "o7KGrNKoBG4-display-0153",
+      "segment_id": "o7KGrNKoBG4-ja-0067"
+    },
+    {
+      "text": "向き合い第2死亡の大学に無事合格。",
+      "start_seconds": 520.399,
+      "end_seconds": 525.64,
+      "id": "o7KGrNKoBG4-display-0154",
+      "segment_id": "o7KGrNKoBG4-ja-0068"
+    },
+    {
+      "text": "金額後リアルなITを学びたいと考える",
+      "start_seconds": 525.64,
+      "end_seconds": 528.519,
+      "id": "o7KGrNKoBG4-display-0155",
+      "segment_id": "o7KGrNKoBG4-ja-0069"
+    },
+    {
+      "text": "自分には今の大学が合っていると話して",
+      "start_seconds": 528.519,
+      "end_seconds": 531.6,
+      "id": "o7KGrNKoBG4-display-0156",
+      "segment_id": "o7KGrNKoBG4-ja-0069"
+    },
+    {
+      "text": "くれました。",
+      "start_seconds": 531.6,
+      "end_seconds": 534.399,
+      "id": "o7KGrNKoBG4-display-0157",
+      "segment_id": "o7KGrNKoBG4-ja-0069"
+    },
+    {
+      "text": "息子たちも含めもっと多くの学生が自分",
+      "start_seconds": 534.399,
+      "end_seconds": 537.72,
+      "id": "o7KGrNKoBG4-display-0158",
+      "segment_id": "o7KGrNKoBG4-ja-0070"
+    },
+    {
+      "text": "らしくキャリア選択し、自分らしい生き方",
+      "start_seconds": 537.72,
+      "end_seconds": 540.76,
+      "id": "o7KGrNKoBG4-display-0159",
+      "segment_id": "o7KGrNKoBG4-ja-0070"
+    },
+    {
+      "text": "ができないかと考えていた時に企業や個人",
+      "start_seconds": 540.76,
+      "end_seconds": 545.04,
+      "id": "o7KGrNKoBG4-display-0160",
+      "segment_id": "o7KGrNKoBG4-ja-0070"
+    },
+    {
+      "text": "の心志しブランディングをしている企業と",
+      "start_seconds": 545.04,
+      "end_seconds": 547.76,
+      "id": "o7KGrNKoBG4-display-0161",
+      "segment_id": "o7KGrNKoBG4-ja-0071"
+    },
+    {
+      "text": "出会い、その中でキャリアコーチとして",
+      "start_seconds": 547.76,
+      "end_seconds": 550.64,
+      "id": "o7KGrNKoBG4-display-0162",
+      "segment_id": "o7KGrNKoBG4-ja-0071"
+    },
+    {
+      "text": "活動を始めました。",
+      "start_seconds": 550.64,
+      "end_seconds": 553.64,
+      "id": "o7KGrNKoBG4-display-0163",
+      "segment_id": "o7KGrNKoBG4-ja-0071"
+    },
+    {
+      "text": "そこには私が願っている姿の学生が",
+      "start_seconds": 553.64,
+      "end_seconds": 557.399,
+      "id": "o7KGrNKoBG4-display-0164",
+      "segment_id": "o7KGrNKoBG4-ja-0072"
+    },
+    {
+      "text": "たくさんいることを知り、この活動を私の",
+      "start_seconds": 557.399,
+      "end_seconds": 561.2,
+      "id": "o7KGrNKoBG4-display-0165",
+      "segment_id": "o7KGrNKoBG4-ja-0072"
+    },
+    {
+      "text": "地元である長崎で実現できないかと考える",
+      "start_seconds": 561.2,
+      "end_seconds": 564.399,
+      "id": "o7KGrNKoBG4-display-0166",
+      "segment_id": "o7KGrNKoBG4-ja-0072"
+    },
+    {
+      "text": "ようになりました。",
+      "start_seconds": 564.399,
+      "end_seconds": 566.8,
+      "id": "o7KGrNKoBG4-display-0167",
+      "segment_id": "o7KGrNKoBG4-ja-0073"
+    },
+    {
+      "text": "当時私は40歳個を大事にするお母さんと",
+      "start_seconds": 566.8,
+      "end_seconds": 571.6,
+      "id": "o7KGrNKoBG4-display-0168",
+      "segment_id": "o7KGrNKoBG4-ja-0074"
+    },
+    {
+      "text": "いう意味でまさに実家のような自分の",
+      "start_seconds": 571.6,
+      "end_seconds": 574.72,
+      "id": "o7KGrNKoBG4-display-0169",
+      "segment_id": "o7KGrNKoBG4-ja-0074"
+    },
+    {
+      "text": "タイミングでいつでも帰れる場所を",
+      "start_seconds": 574.72,
+      "end_seconds": 577.16,
+      "id": "o7KGrNKoBG4-display-0170",
+      "segment_id": "o7KGrNKoBG4-ja-0074"
+    },
+    {
+      "text": "イメージして長男の20十歳の誕生日に",
+      "start_seconds": 577.16,
+      "end_seconds": 580.519,
+      "id": "o7KGrNKoBG4-display-0171",
+      "segment_id": "o7KGrNKoBG4-ja-0075"
+    },
+    {
+      "text": "起業。",
+      "start_seconds": 580.519,
+      "end_seconds": 582.8,
+      "id": "o7KGrNKoBG4-display-0172",
+      "segment_id": "o7KGrNKoBG4-ja-0075"
+    },
+    {
+      "text": "そんな私が1人1人にあったキャリア",
+      "start_seconds": 582.8,
+      "end_seconds": 585.04,
+      "id": "o7KGrNKoBG4-display-0173",
+      "segment_id": "o7KGrNKoBG4-ja-0076"
+    },
+    {
+      "text": "デザインを一緒に絆創する活動。それが",
+      "start_seconds": 585.04,
+      "end_seconds": 589.32,
+      "id": "o7KGrNKoBG4-display-0174",
+      "segment_id": "o7KGrNKoBG4-ja-0076"
+    },
+    {
+      "text": "キャリアデザインコラボです。",
+      "start_seconds": 589.32,
+      "end_seconds": 592.6,
+      "id": "o7KGrNKoBG4-display-0175",
+      "segment_id": "o7KGrNKoBG4-ja-0076"
+    },
+    {
+      "text": "大学生の就活支援が私のスタートでしたが",
+      "start_seconds": 592.6,
+      "end_seconds": 596.04,
+      "id": "o7KGrNKoBG4-display-0176",
+      "segment_id": "o7KGrNKoBG4-ja-0077"
+    },
+    {
+      "text": "、他人塾で生きている人が多いのに就活で",
+      "start_seconds": 596.04,
+      "end_seconds": 600.32,
+      "id": "o7KGrNKoBG4-display-0177",
+      "segment_id": "o7KGrNKoBG4-ja-0077"
+    },
+    {
+      "text": "いきなり自分らしさに問われるから迷子に",
+      "start_seconds": 600.32,
+      "end_seconds": 602.56,
+      "id": "o7KGrNKoBG4-display-0178",
+      "segment_id": "o7KGrNKoBG4-ja-0077"
+    },
+    {
+      "text": "なる。だからこそもっと早い段階で自分",
+      "start_seconds": 602.56,
+      "end_seconds": 606.959,
+      "id": "o7KGrNKoBG4-display-0179",
+      "segment_id": "o7KGrNKoBG4-ja-0078"
+    },
+    {
+      "text": "らしさに気づいて欲しい。そう思うように",
+      "start_seconds": 606.959,
+      "end_seconds": 610.24,
+      "id": "o7KGrNKoBG4-display-0180",
+      "segment_id": "o7KGrNKoBG4-ja-0078"
+    },
+    {
+      "text": "なり、中高生のキャリア教育にも携わる",
+      "start_seconds": 610.24,
+      "end_seconds": 613.72,
+      "id": "o7KGrNKoBG4-display-0181",
+      "segment_id": "o7KGrNKoBG4-ja-0078"
+    },
+    {
+      "text": "ようになりました。",
+      "start_seconds": 613.72,
+      "end_seconds": 616.8,
+      "id": "o7KGrNKoBG4-display-0182",
+      "segment_id": "o7KGrNKoBG4-ja-0079"
+    },
+    {
+      "text": "そして学生たちが社会に出た時、その先が",
+      "start_seconds": 616.8,
+      "end_seconds": 621.32,
+      "id": "o7KGrNKoBG4-display-0183",
+      "segment_id": "o7KGrNKoBG4-ja-0080"
+    },
+    {
+      "text": "また自分らしさを受け入られない場所で",
+      "start_seconds": 621.32,
+      "end_seconds": 623.6,
+      "id": "o7KGrNKoBG4-display-0184",
+      "segment_id": "o7KGrNKoBG4-ja-0080"
+    },
+    {
+      "text": "あれば意味がないと感じるようになった",
+      "start_seconds": 623.6,
+      "end_seconds": 626.279,
+      "id": "o7KGrNKoBG4-display-0185",
+      "segment_id": "o7KGrNKoBG4-ja-0080"
+    },
+    {
+      "text": "ため、現在は企業向けの採用支援、社員",
+      "start_seconds": 626.279,
+      "end_seconds": 630.839,
+      "id": "o7KGrNKoBG4-display-0186",
+      "segment_id": "o7KGrNKoBG4-ja-0081"
+    },
+    {
+      "text": "向け研修など活動を広げています。",
+      "start_seconds": 630.839,
+      "end_seconds": 637.0400000000001,
+      "id": "o7KGrNKoBG4-display-0187",
+      "segment_id": "o7KGrNKoBG4-ja-0081"
+    },
+    {
+      "text": "今思えばなぜ私はセラピストになりたかっ",
+      "start_seconds": 638.56,
+      "end_seconds": 641.92,
+      "id": "o7KGrNKoBG4-display-0188",
+      "segment_id": "o7KGrNKoBG4-ja-0082"
+    },
+    {
+      "text": "たのか。人に寄り添い自己実現のための",
+      "start_seconds": 641.92,
+      "end_seconds": 645.839,
+      "id": "o7KGrNKoBG4-display-0189",
+      "segment_id": "o7KGrNKoBG4-ja-0082"
+    },
+    {
+      "text": "成長を応援できないかと考えたから。ん、",
+      "start_seconds": 645.839,
+      "end_seconds": 651.16,
+      "id": "o7KGrNKoBG4-display-0190",
+      "segment_id": "o7KGrNKoBG4-ja-0083"
+    },
+    {
+      "text": "今それ叶えられてないということで私は",
+      "start_seconds": 651.16,
+      "end_seconds": 655.12,
+      "id": "o7KGrNKoBG4-display-0191",
+      "segment_id": "o7KGrNKoBG4-ja-0083"
+    },
+    {
+      "text": "40代になり自分のやりたいと役割が一致",
+      "start_seconds": 655.12,
+      "end_seconds": 659.72,
+      "id": "o7KGrNKoBG4-display-0192",
+      "segment_id": "o7KGrNKoBG4-ja-0084"
+    },
+    {
+      "text": "し、転職に出会ったんだと気づきました。",
+      "start_seconds": 659.72,
+      "end_seconds": 663.72,
+      "id": "o7KGrNKoBG4-display-0193",
+      "segment_id": "o7KGrNKoBG4-ja-0084"
+    },
+    {
+      "text": "そんな私が大切にしていることはワクワク",
+      "start_seconds": 663.72,
+      "end_seconds": 666.8,
+      "id": "o7KGrNKoBG4-display-0194",
+      "segment_id": "o7KGrNKoBG4-ja-0085"
+    },
+    {
+      "text": "を妥協しないこと。まずは私がワクワクし",
+      "start_seconds": 666.8,
+      "end_seconds": 670.639,
+      "id": "o7KGrNKoBG4-display-0195",
+      "segment_id": "o7KGrNKoBG4-ja-0085"
+    },
+    {
+      "text": "ていることが大事。ワクワクするのならば",
+      "start_seconds": 670.639,
+      "end_seconds": 673.839,
+      "id": "o7KGrNKoBG4-display-0196",
+      "segment_id": "o7KGrNKoBG4-ja-0085"
+    },
+    {
+      "text": "とことん追求する。私の強みである空気を",
+      "start_seconds": 673.839,
+      "end_seconds": 678.639,
+      "id": "o7KGrNKoBG4-display-0197",
+      "segment_id": "o7KGrNKoBG4-ja-0086"
+    },
+    {
+      "text": "読む人間観察人たらし",
+      "start_seconds": 678.639,
+      "end_seconds": 682.399,
+      "id": "o7KGrNKoBG4-display-0198",
+      "segment_id": "o7KGrNKoBG4-ja-0086"
+    },
+    {
+      "text": "心に寄り添うを生かして1人でも多くの人",
+      "start_seconds": 682.399,
+      "end_seconds": 685.8,
+      "id": "o7KGrNKoBG4-display-0199",
+      "segment_id": "o7KGrNKoBG4-ja-0086"
+    },
+    {
+      "text": "の自分らしさを見つけるきっかけの人に",
+      "start_seconds": 685.8,
+      "end_seconds": 688.44,
+      "id": "o7KGrNKoBG4-display-0200",
+      "segment_id": "o7KGrNKoBG4-ja-0087"
+    },
+    {
+      "text": "なりたいと考えています。",
+      "start_seconds": 688.44,
+      "end_seconds": 691.6,
+      "id": "o7KGrNKoBG4-display-0201",
+      "segment_id": "o7KGrNKoBG4-ja-0087"
+    },
+    {
+      "text": "私の家族の形は3人の点が集まる集合隊。",
+      "start_seconds": 691.6,
+      "end_seconds": 696.079,
+      "id": "o7KGrNKoBG4-display-0202",
+      "segment_id": "o7KGrNKoBG4-ja-0088"
+    },
+    {
+      "text": "お互い監視するでも自分の意見を",
+      "start_seconds": 696.079,
+      "end_seconds": 698.839,
+      "id": "o7KGrNKoBG4-display-0203",
+      "segment_id": "o7KGrNKoBG4-ja-0089"
+    },
+    {
+      "text": "押し付けるでもなく尊重し合える関係性",
+      "start_seconds": 698.839,
+      "end_seconds": 702.839,
+      "id": "o7KGrNKoBG4-display-0204",
+      "segment_id": "o7KGrNKoBG4-ja-0089"
+    },
+    {
+      "text": "いつでも味方子育てイコール私の成長。",
+      "start_seconds": 702.839,
+      "end_seconds": 708.44,
+      "id": "o7KGrNKoBG4-display-0205",
+      "segment_id": "o7KGrNKoBG4-ja-0090"
+    },
+    {
+      "text": "子供がいたおかげでいろんな人に出会い今",
+      "start_seconds": 708.44,
+      "end_seconds": 710.839,
+      "id": "o7KGrNKoBG4-display-0206",
+      "segment_id": "o7KGrNKoBG4-ja-0091"
+    },
+    {
+      "text": "があります。今までの経験を通してそう",
+      "start_seconds": 710.839,
+      "end_seconds": 714.079,
+      "id": "o7KGrNKoBG4-display-0207",
+      "segment_id": "o7KGrNKoBG4-ja-0091"
+    },
+    {
+      "text": "思えるようになりました。これからも信頼",
+      "start_seconds": 714.079,
+      "end_seconds": 717.76,
+      "id": "o7KGrNKoBG4-display-0208",
+      "segment_id": "o7KGrNKoBG4-ja-0091"
+    },
+    {
+      "text": "し合えるチームとしてお互い助け合える",
+      "start_seconds": 717.76,
+      "end_seconds": 720.32,
+      "id": "o7KGrNKoBG4-display-0209",
+      "segment_id": "o7KGrNKoBG4-ja-0091"
+    },
+    {
+      "text": "関係性を続けていこうと思います。",
+      "start_seconds": 720.32,
+      "end_seconds": 724.8,
+      "id": "o7KGrNKoBG4-display-0210",
+      "segment_id": "o7KGrNKoBG4-ja-0092"
+    },
+    {
+      "text": "私が子供の頃からモヤモヤしていたのは",
+      "start_seconds": 724.8,
+      "end_seconds": 727.88,
+      "id": "o7KGrNKoBG4-display-0211",
+      "segment_id": "o7KGrNKoBG4-ja-0093"
+    },
+    {
+      "text": "自分らしさを私が生かしきれていなかった",
+      "start_seconds": 727.88,
+      "end_seconds": 730.56,
+      "id": "o7KGrNKoBG4-display-0212",
+      "segment_id": "o7KGrNKoBG4-ja-0093"
+    },
+    {
+      "text": "から",
+      "start_seconds": 730.56,
+      "end_seconds": 732.12,
+      "id": "o7KGrNKoBG4-display-0213",
+      "segment_id": "o7KGrNKoBG4-ja-0093"
+    },
+    {
+      "text": "今は自分らしさを知った上でいろんな人と",
+      "start_seconds": 732.12,
+      "end_seconds": 735.88,
+      "id": "o7KGrNKoBG4-display-0214",
+      "segment_id": "o7KGrNKoBG4-ja-0093"
+    },
+    {
+      "text": "チームと関わることで得意なことは全力で",
+      "start_seconds": 735.88,
+      "end_seconds": 740.6,
+      "id": "o7KGrNKoBG4-display-0215",
+      "segment_id": "o7KGrNKoBG4-ja-0094"
+    },
+    {
+      "text": "苦手なことは得意な人に任せる",
+      "start_seconds": 740.6,
+      "end_seconds": 744.639,
+      "id": "o7KGrNKoBG4-display-0216",
+      "segment_id": "o7KGrNKoBG4-ja-0094"
+    },
+    {
+      "text": "私らしく生きています。",
+      "start_seconds": 744.639,
+      "end_seconds": 747.88,
+      "id": "o7KGrNKoBG4-display-0217",
+      "segment_id": "o7KGrNKoBG4-ja-0094"
+    },
+    {
+      "text": "仕事の面でも独立して最初は不安でしたが",
+      "start_seconds": 747.88,
+      "end_seconds": 751.24,
+      "id": "o7KGrNKoBG4-display-0218",
+      "segment_id": "o7KGrNKoBG4-ja-0095"
+    },
+    {
+      "text": "夢語を続け自分の思いを惜しみなく伝える",
+      "start_seconds": 751.24,
+      "end_seconds": 754.639,
+      "id": "o7KGrNKoBG4-display-0219",
+      "segment_id": "o7KGrNKoBG4-ja-0095"
+    },
+    {
+      "text": "。それがきっかけで人から人、人から組織",
+      "start_seconds": 754.639,
+      "end_seconds": 758.8,
+      "id": "o7KGrNKoBG4-display-0220",
+      "segment_id": "o7KGrNKoBG4-ja-0095"
+    },
+    {
+      "text": "、組織から人というようにいろんな方面",
+      "start_seconds": 758.8,
+      "end_seconds": 761.88,
+      "id": "o7KGrNKoBG4-display-0221",
+      "segment_id": "o7KGrNKoBG4-ja-0096"
+    },
+    {
+      "text": "から紹介で今の仕事が繋がっています。",
+      "start_seconds": 761.88,
+      "end_seconds": 767.519,
+      "id": "o7KGrNKoBG4-display-0222",
+      "segment_id": "o7KGrNKoBG4-ja-0096"
+    },
+    {
+      "text": "最後に私の",
+      "start_seconds": 768.199,
+      "end_seconds": 771.04,
+      "id": "o7KGrNKoBG4-display-0223",
+      "segment_id": "o7KGrNKoBG4-ja-0097"
+    },
+    {
+      "text": "願いはありのままの自分らしさを尊重し",
+      "start_seconds": 771.04,
+      "end_seconds": 774.04,
+      "id": "o7KGrNKoBG4-display-0224",
+      "segment_id": "o7KGrNKoBG4-ja-0097"
+    },
+    {
+      "text": "合える世界。そして",
+      "start_seconds": 774.04,
+      "end_seconds": 778.519,
+      "id": "o7KGrNKoBG4-display-0225",
+      "segment_id": "o7KGrNKoBG4-ja-0097"
+    },
+    {
+      "text": "私の役割は人の強みを引き出し人と人を",
+      "start_seconds": 778.519,
+      "end_seconds": 782.44,
+      "id": "o7KGrNKoBG4-display-0226",
+      "segment_id": "o7KGrNKoBG4-ja-0098"
+    },
+    {
+      "text": "つぐ地元に還元。",
+      "start_seconds": 782.44,
+      "end_seconds": 787.399,
+      "id": "o7KGrNKoBG4-display-0227",
+      "segment_id": "o7KGrNKoBG4-ja-0098"
+    },
+    {
+      "text": "これからもっともっといろんな点とつなぎ",
+      "start_seconds": 787.8,
+      "end_seconds": 790.519,
+      "id": "o7KGrNKoBG4-display-0228",
+      "segment_id": "o7KGrNKoBG4-ja-0099"
+    },
+    {
+      "text": "点をつなぎ地元である再会市長崎県に還元",
+      "start_seconds": 790.519,
+      "end_seconds": 794.56,
+      "id": "o7KGrNKoBG4-display-0229",
+      "segment_id": "o7KGrNKoBG4-ja-0099"
+    },
+    {
+      "text": "し、1人1人が自分らしい幸せに気づける",
+      "start_seconds": 794.56,
+      "end_seconds": 798.079,
+      "id": "o7KGrNKoBG4-display-0230",
+      "segment_id": "o7KGrNKoBG4-ja-0099"
+    },
+    {
+      "text": "ようコーディネートしたいと思います。",
+      "start_seconds": 798.079,
+      "end_seconds": 803.04,
+      "id": "o7KGrNKoBG4-display-0231",
+      "segment_id": "o7KGrNKoBG4-ja-0100"
+    },
+    {
+      "text": "あなたは自分らしく生きていますかあ",
+      "start_seconds": 803.24,
+      "end_seconds": 808.399,
+      "id": "o7KGrNKoBG4-display-0232",
+      "segment_id": "o7KGrNKoBG4-ja-0101"
+    }
+  ]
+}

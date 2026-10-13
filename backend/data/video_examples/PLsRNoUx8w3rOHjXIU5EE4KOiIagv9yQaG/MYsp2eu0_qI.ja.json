@@ -1,0 +1,4105 @@
+{
+  "schema_version": 1,
+  "video": {
+    "youtube_id": "MYsp2eu0_qI",
+    "title": "In the \"In-Between\" Time: Neither an Adult nor a Child | Yuki Matsumura | TEDxAwaji",
+    "channel": "TEDx Talks",
+    "duration_seconds": 934
+  },
+  "caption_track": {
+    "language": "ja",
+    "kind": "asr",
+    "source": "youtube_automatic"
+  },
+  "source_playlist": "https://www.youtube.com/playlist?list=PLsRNoUx8w3rOHjXIU5EE4KOiIagv9yQaG",
+  "fetched_at": "2026-10-13T13:23:35.428256+00:00",
+  "segment_count": 122,
+  "segments": [
+    {
+      "text": "皆さん、こんにちは。",
+      "start_seconds": 4.68,
+      "end_seconds": 7.279,
+      "id": "MYsp2eu0_qI-ja-0001",
+      "sequence": 1
+    },
+    {
+      "text": "京都立北高等学校3年の松村ゆきです。好きな食べ物は辛いラーメン。特技は",
+      "start_seconds": 8.519,
+      "end_seconds": 13.84,
+      "id": "MYsp2eu0_qI-ja-0002",
+      "sequence": 2
+    },
+    {
+      "text": "10年以上続けているピアノ。趣味は言語を学ぶことで、今は日本語、英語、ドイツ語、ハンガリーを話すことができます。",
+      "start_seconds": 17.64,
+      "end_seconds": 20.8,
+      "id": "MYsp2eu0_qI-ja-0003",
+      "sequence": 3
+    },
+    {
+      "text": "学校での得意科目はもちろん英語で、英語を使って仕事をするのが夢です。",
+      "start_seconds": 29.16,
+      "end_seconds": 37.44,
+      "id": "MYsp2eu0_qI-ja-0004",
+      "sequence": 4
+    },
+    {
+      "text": "夢といえば皆さんには夢はありますか?",
+      "start_seconds": 37.44,
+      "end_seconds": 43.399,
+      "id": "MYsp2eu0_qI-ja-0005",
+      "sequence": 5
+    },
+    {
+      "text": "もし今ここであなたの夢は何ですか?と尋ねられたらすぐに答えることができるでしょうか?",
+      "start_seconds": 43.399,
+      "end_seconds": 53.839999999999996,
+      "id": "MYsp2eu0_qI-ja-0006",
+      "sequence": 6
+    },
+    {
+      "text": "この質問を日本の高校生にすると、多くの人が少し困った顔をするかもしれません。",
+      "start_seconds": 54.16,
+      "end_seconds": 61.879,
+      "id": "MYsp2eu0_qI-ja-0007",
+      "sequence": 7
+    },
+    {
+      "text": "なぜでしょうか?",
+      "start_seconds": 61.879,
+      "end_seconds": 65.0,
+      "id": "MYsp2eu0_qI-ja-0008",
+      "sequence": 8
+    },
+    {
+      "text": "僕たちはよく夢を持ちなさいと言われることはあっても、どのようにして夢を見つけるかは考えたこともないからです。",
+      "start_seconds": 65.0,
+      "end_seconds": 75.84,
+      "id": "MYsp2eu0_qI-ja-0009",
+      "sequence": 9
+    },
+    {
+      "text": "実際僕の多くの友達も高校に入学してから初めて現実的なキャリアというものを意識し始めたようです。",
+      "start_seconds": 75.84,
+      "end_seconds": 85.799,
+      "id": "MYsp2eu0_qI-ja-0010",
+      "sequence": 10
+    },
+    {
+      "text": "すぐに夢を見つけられる高校生はそう多くはないでしょう。",
+      "start_seconds": 85.799,
+      "end_seconds": 91.4,
+      "id": "MYsp2eu0_qI-ja-0011",
+      "sequence": 11
+    },
+    {
+      "text": "そこで今日は高校生という大人と子供の間にいる人間として夢はどのようにして形成されるのかについて僕なりに考えている",
+      "start_seconds": 91.4,
+      "end_seconds": 102.479,
+      "id": "MYsp2eu0_qI-ja-0012",
+      "sequence": 12
+    },
+    {
+      "text": "ことをお話ししようと思います。",
+      "start_seconds": 102.479,
+      "end_seconds": 106.92,
+      "id": "MYsp2eu0_qI-ja-0013",
+      "sequence": 13
+    },
+    {
+      "text": "僕は人生は思っているよりも短いのではないかと考えています。",
+      "start_seconds": 107.04,
+      "end_seconds": 114.439,
+      "id": "MYsp2eu0_qI-ja-0014",
+      "sequence": 14
+    },
+    {
+      "text": "例えば1年という時間の長さを考えてみてください。",
+      "start_seconds": 114.439,
+      "end_seconds": 120.039,
+      "id": "MYsp2eu0_qI-ja-0015",
+      "sequence": 15
+    },
+    {
+      "text": "5歳の子供にとっての1年はそれまでの人生のうちの1/5年にしか過ぎません。",
+      "start_seconds": 120.039,
+      "end_seconds": 127.039,
+      "id": "MYsp2eu0_qI-ja-0016",
+      "sequence": 16
+    },
+    {
+      "text": "18歳である僕にとっての1年は1/1年。そして30歳の大人にとっての1年はそれまでの人生の1/年。",
+      "start_seconds": 127.039,
+      "end_seconds": 138.48,
+      "id": "MYsp2eu0_qI-ja-0017",
+      "sequence": 17
+    },
+    {
+      "text": "つまり押さない時に感じる時間の長さは大人が体感する時間の長さの何十倍にもなるため、それだけ刺激的で毎日が驚きと発見で",
+      "start_seconds": 138.48,
+      "end_seconds": 150.16,
+      "id": "MYsp2eu0_qI-ja-0018",
+      "sequence": 18
+    },
+    {
+      "text": "満ち溢れています。",
+      "start_seconds": 150.16,
+      "end_seconds": 153.2,
+      "id": "MYsp2eu0_qI-ja-0019",
+      "sequence": 19
+    },
+    {
+      "text": "一方で30歳の大人が過ごす年の中では日々はルーティーンとなりあっという間に過ぎ去ってしまいがちです。",
+      "start_seconds": 153.2,
+      "end_seconds": 164.76,
+      "id": "MYsp2eu0_qI-ja-0020",
+      "sequence": 20
+    },
+    {
+      "text": "だから人は年を重ねるほど時間が早くすぎると感じるようになるのではないでしょうか。",
+      "start_seconds": 164.76,
+      "end_seconds": 173.4,
+      "id": "MYsp2eu0_qI-ja-0021",
+      "sequence": 21
+    },
+    {
+      "text": "あっという間に過ぎ去っていく時間の中で大人と子供の間にいる今は僕にとって将来の夢の原点に出会うためのとても貴重な",
+      "start_seconds": 173.4,
+      "end_seconds": 182.56,
+      "id": "MYsp2eu0_qI-ja-0022",
+      "sequence": 22
+    },
+    {
+      "text": "時間だと言えるでしょう。",
+      "start_seconds": 182.56,
+      "end_seconds": 187.08,
+      "id": "MYsp2eu0_qI-ja-0023",
+      "sequence": 23
+    },
+    {
+      "text": "しかし現実の世界ではその間の時間こそが気づかないうちに失われています。",
+      "start_seconds": 187.319,
+      "end_seconds": 196.48,
+      "id": "MYsp2eu0_qI-ja-0024",
+      "sequence": 24
+    },
+    {
+      "text": "僕たち学生は成績や進路、周囲との比較や競争、学業での評価を優先する社会の中で",
+      "start_seconds": 196.48,
+      "end_seconds": 205.48,
+      "id": "MYsp2eu0_qI-ja-0025",
+      "sequence": 25
+    },
+    {
+      "text": "自分は何に心が惹かれるのかに向き合う時間を持たないまま成長していきます。",
+      "start_seconds": 205.48,
+      "end_seconds": 212.72,
+      "id": "MYsp2eu0_qI-ja-0026",
+      "sequence": 26
+    },
+    {
+      "text": "このままでは夢の原点に出会うことがますます難しくなっていくかもしれません。",
+      "start_seconds": 212.72,
+      "end_seconds": 221.319,
+      "id": "MYsp2eu0_qI-ja-0027",
+      "sequence": 27
+    },
+    {
+      "text": "さて、僕は京都教育大学付属京都小中学校で英語を教えてらっしゃる、今達也先生との出会いによって英語に強く関心を抱くよう",
+      "start_seconds": 221.319,
+      "end_seconds": 232.319,
+      "id": "MYsp2eu0_qI-ja-0028",
+      "sequence": 28
+    },
+    {
+      "text": "になりました。",
+      "start_seconds": 232.319,
+      "end_seconds": 234.599,
+      "id": "MYsp2eu0_qI-ja-0029",
+      "sequence": 29
+    },
+    {
+      "text": "先生の授業はとてもユニークでうん、リーディングの問題や英文法だけではなく、先生のギターに合わせて洋楽を歌ったり",
+      "start_seconds": 234.599,
+      "end_seconds": 242.84,
+      "id": "MYsp2eu0_qI-ja-0030",
+      "sequence": 30
+    },
+    {
+      "text": "、ヨーガを見たり、あるいはBBCやCNNなどの海外のニュースを見たりすることもありました。",
+      "start_seconds": 242.84,
+      "end_seconds": 253.079,
+      "id": "MYsp2eu0_qI-ja-0031",
+      "sequence": 31
+    },
+    {
+      "text": "先生の授業を通して英語は世界とつがるためのとても大切な手段だと感じるようになりました。",
+      "start_seconds": 253.879,
+      "end_seconds": 262.96,
+      "id": "MYsp2eu0_qI-ja-0032",
+      "sequence": 32
+    },
+    {
+      "text": "今日先生の影響もあって、高校2年生の時には10ヶ月間のヨーロッパ留学を決意しました。",
+      "start_seconds": 262.96,
+      "end_seconds": 271.919,
+      "id": "MYsp2eu0_qI-ja-0033",
+      "sequence": 33
+    },
+    {
+      "text": "僕が留学することになったのはハンガリーという東の国のとある高校でした。",
+      "start_seconds": 271.919,
+      "end_seconds": 280.72,
+      "id": "MYsp2eu0_qI-ja-0034",
+      "sequence": 34
+    },
+    {
+      "text": "ハンガリーはルービックキューブの発症の地であり、またヨーロッパ随の温泉大国であるなどとても魅力に満ち溢れた国です。",
+      "start_seconds": 280.919,
+      "end_seconds": 292.88,
+      "id": "MYsp2eu0_qI-ja-0035",
+      "sequence": 35
+    },
+    {
+      "text": "え、",
+      "start_seconds": 296.08,
+      "end_seconds": 299.24,
+      "id": "MYsp2eu0_qI-ja-0036",
+      "sequence": 36
+    },
+    {
+      "text": "先行の結果として留学の許可をいただけたのはこの国で、これも何かの縁と思い、僕はこの国での実月間を精一杯全力で楽しもうと決意し",
+      "start_seconds": 300.479,
+      "end_seconds": 311.919,
+      "id": "MYsp2eu0_qI-ja-0037",
+      "sequence": 37
+    },
+    {
+      "text": "ました。",
+      "start_seconds": 311.919,
+      "end_seconds": 314.52,
+      "id": "MYsp2eu0_qI-ja-0038",
+      "sequence": 38
+    },
+    {
+      "text": "こうして何気なく始まったハンガリー留学ですが、この留学が僕にとって非常に大きな意味を持つことになるとは当時は",
+      "start_seconds": 314.52,
+      "end_seconds": 322.96,
+      "id": "MYsp2eu0_qI-ja-0039",
+      "sequence": 39
+    },
+    {
+      "text": "想像もしていませんでした。",
+      "start_seconds": 322.96,
+      "end_seconds": 327.16,
+      "id": "MYsp2eu0_qI-ja-0040",
+      "sequence": 40
+    },
+    {
+      "text": "さて、留学中に気づいたことがありました。",
+      "start_seconds": 327.16,
+      "end_seconds": 332.44,
+      "id": "MYsp2eu0_qI-ja-0041",
+      "sequence": 41
+    },
+    {
+      "text": "それはこの国では勉強だけに全ての時間を使うというよりはスポーツや趣味、習い事",
+      "start_seconds": 332.44,
+      "end_seconds": 340.84,
+      "id": "MYsp2eu0_qI-ja-0042",
+      "sequence": 42
+    },
+    {
+      "text": "など様々な活動に時間を使うことも共に大切にされているということです。",
+      "start_seconds": 340.84,
+      "end_seconds": 348.68,
+      "id": "MYsp2eu0_qI-ja-0043",
+      "sequence": 43
+    },
+    {
+      "text": "僕のある友人は放課後になると必ず学校の体育館に行ってバレーボールの練習をしていました。",
+      "start_seconds": 348.68,
+      "end_seconds": 356.84,
+      "id": "MYsp2eu0_qI-ja-0044",
+      "sequence": 44
+    },
+    {
+      "text": "彼はテスト期間でもその練習をやめませんでした。",
+      "start_seconds": 356.84,
+      "end_seconds": 361.24,
+      "id": "MYsp2eu0_qI-ja-0045",
+      "sequence": 45
+    },
+    {
+      "text": "彼はただ勉強も大切だけどこれは僕の好きなことだからと笑っていました。",
+      "start_seconds": 361.24,
+      "end_seconds": 369.96,
+      "id": "MYsp2eu0_qI-ja-0046",
+      "sequence": 46
+    },
+    {
+      "text": "また僕のホストブラザーは地域の劇団に所属していて役者として活動していました。彼は本当に歌が上手でした。",
+      "start_seconds": 369.96,
+      "end_seconds": 381.4,
+      "id": "MYsp2eu0_qI-ja-0047",
+      "sequence": 47
+    },
+    {
+      "text": "彼も演劇と弁学との両立を通して夢を追いかけているように感じられました。",
+      "start_seconds": 381.4,
+      "end_seconds": 389.319,
+      "id": "MYsp2eu0_qI-ja-0048",
+      "sequence": 48
+    },
+    {
+      "text": "そんな彼らは勉強だけが全て勉強だけが人生ではないということを自然に理解しているように見えました。",
+      "start_seconds": 389.319,
+      "end_seconds": 398.8,
+      "id": "MYsp2eu0_qI-ja-0049",
+      "sequence": 49
+    },
+    {
+      "text": "多くの友人が自分はこれが好き。これはあまり好きじゃない。これは得意だけどこれは苦手ということを驚くほどはっきり",
+      "start_seconds": 398.8,
+      "end_seconds": 408.919,
+      "id": "MYsp2eu0_qI-ja-0050",
+      "sequence": 50
+    },
+    {
+      "text": "と自覚していました。",
+      "start_seconds": 408.919,
+      "end_seconds": 411.919,
+      "id": "MYsp2eu0_qI-ja-0051",
+      "sequence": 51
+    },
+    {
+      "text": "それは1人1人が自分らしい人生を歩めるようし、自己理解を何よりも重視する社会システムがあるからこそ成り立っているの",
+      "start_seconds": 411.919,
+      "end_seconds": 421.4,
+      "id": "MYsp2eu0_qI-ja-0052",
+      "sequence": 52
+    },
+    {
+      "text": "だと感じています。",
+      "start_seconds": 421.4,
+      "end_seconds": 425.28,
+      "id": "MYsp2eu0_qI-ja-0053",
+      "sequence": 53
+    },
+    {
+      "text": "欧米では幼い頃からあなたは何になりたいのかと問われ続けることが多い一方、日本",
+      "start_seconds": 425.319,
+      "end_seconds": 433.72,
+      "id": "MYsp2eu0_qI-ja-0054",
+      "sequence": 54
+    },
+    {
+      "text": "では集団への適用や学業を重視する傾向が強いと言われています。",
+      "start_seconds": 433.72,
+      "end_seconds": 441.08,
+      "id": "MYsp2eu0_qI-ja-0055",
+      "sequence": 55
+    },
+    {
+      "text": "少なくとも日本には自分の興味や関心について考える機会は決して多くはないと",
+      "start_seconds": 441.08,
+      "end_seconds": 449.12,
+      "id": "MYsp2eu0_qI-ja-0056",
+      "sequence": 56
+    },
+    {
+      "text": "言えるのではないでしょうか。",
+      "start_seconds": 449.12,
+      "end_seconds": 453.16,
+      "id": "MYsp2eu0_qI-ja-0057",
+      "sequence": 57
+    },
+    {
+      "text": "さて、留学後に気づいたことがありました。",
+      "start_seconds": 453.319,
+      "end_seconds": 459.039,
+      "id": "MYsp2eu0_qI-ja-0058",
+      "sequence": 58
+    },
+    {
+      "text": "それは夢は探して見つけらすものではなく、大人と子供の間の時間における様々な出会いの",
+      "start_seconds": 459.039,
+      "end_seconds": 467.759,
+      "id": "MYsp2eu0_qI-ja-0059",
+      "sequence": 59
+    },
+    {
+      "text": "中から形成されるということです。",
+      "start_seconds": 467.759,
+      "end_seconds": 472.52,
+      "id": "MYsp2eu0_qI-ja-0060",
+      "sequence": 60
+    },
+    {
+      "text": "僕は初めから英語を好きになろうと思っていたわけでもではありません。ただ1人の教師との出会いがありました。",
+      "start_seconds": 472.52,
+      "end_seconds": 483.36,
+      "id": "MYsp2eu0_qI-ja-0061",
+      "sequence": 61
+    },
+    {
+      "text": "僕は人生を変えようと思って留学をしたわけでもありません。",
+      "start_seconds": 483.36,
+      "end_seconds": 489.84,
+      "id": "MYsp2eu0_qI-ja-0062",
+      "sequence": 62
+    },
+    {
+      "text": "ただ新しい経験の中から様々な出会いと学びがありました。",
+      "start_seconds": 489.84,
+      "end_seconds": 497.639,
+      "id": "MYsp2eu0_qI-ja-0063",
+      "sequence": 63
+    },
+    {
+      "text": "こうして振り返ってみるとその1つ1つが大きな軸となって今の僕の将来の夢につがっているのです。",
+      "start_seconds": 497.639,
+      "end_seconds": 507.56,
+      "id": "MYsp2eu0_qI-ja-0064",
+      "sequence": 64
+    },
+    {
+      "text": "僕は今国際公務員という道を目指しています。",
+      "start_seconds": 507.96,
+      "end_seconds": 513.08,
+      "id": "MYsp2eu0_qI-ja-0065",
+      "sequence": 65
+    },
+    {
+      "text": "英語という言語を通して人と人、国と国を結びつける仕事をしたいと思っています。",
+      "start_seconds": 513.08,
+      "end_seconds": 521.479,
+      "id": "MYsp2eu0_qI-ja-0066",
+      "sequence": 66
+    },
+    {
+      "text": "この夢の実現に向けて今はこのXへの登壇を始め、様々な加害活動に取り組み、世界で活躍するための力を着実に磨いています",
+      "start_seconds": 521.479,
+      "end_seconds": 532.08,
+      "id": "MYsp2eu0_qI-ja-0067",
+      "sequence": 67
+    },
+    {
+      "text": "。",
+      "start_seconds": 532.08,
+      "end_seconds": 534.32,
+      "id": "MYsp2eu0_qI-ja-0068",
+      "sequence": 68
+    },
+    {
+      "text": "しかしこの夢は決して探して見つけた夢ではありません。出会いの中から少しずつ見えてきた夢です。",
+      "start_seconds": 534.32,
+      "end_seconds": 545.64,
+      "id": "MYsp2eu0_qI-ja-0069",
+      "sequence": 69
+    },
+    {
+      "text": "僕が尊敬するYouTuberの英語のあさんは次のようにおっしゃっています。",
+      "start_seconds": 547.04,
+      "end_seconds": 553.92,
+      "id": "MYsp2eu0_qI-ja-0070",
+      "sequence": 70
+    },
+    {
+      "text": "人生は有限時間の最適配分だ。",
+      "start_seconds": 553.92,
+      "end_seconds": 559.079,
+      "id": "MYsp2eu0_qI-ja-0071",
+      "sequence": 71
+    },
+    {
+      "text": "僕たちはどこでどんな時間を使うかによりどんな出会いがあるのか、どんな経験をするのか、そしてどんな夢が形成されるの",
+      "start_seconds": 559.079,
+      "end_seconds": 569.079,
+      "id": "MYsp2eu0_qI-ja-0072",
+      "sequence": 72
+    },
+    {
+      "text": "かが様々に変わります。",
+      "start_seconds": 569.079,
+      "end_seconds": 573.48,
+      "id": "MYsp2eu0_qI-ja-0073",
+      "sequence": 73
+    },
+    {
+      "text": "僕が今日ここで皆さんと共有したいのは単に夢を持とうというメッセージではありません。",
+      "start_seconds": 573.48,
+      "end_seconds": 582.0,
+      "id": "MYsp2eu0_qI-ja-0074",
+      "sequence": 74
+    },
+    {
+      "text": "夢の原点に出会うための時間を僕たちは本当にモてているのかという問いです。",
+      "start_seconds": 582.0,
+      "end_seconds": 589.88,
+      "id": "MYsp2eu0_qI-ja-0075",
+      "sequence": 75
+    },
+    {
+      "text": "冒頭にもお話ししたように時間は有限かつ早く過ぎ去ります。",
+      "start_seconds": 589.88,
+      "end_seconds": 596.48,
+      "id": "MYsp2eu0_qI-ja-0076",
+      "sequence": 76
+    },
+    {
+      "text": "人生をより充実したものに、より豊かなものにするためには限られた時間の中で自分は何に、自分は何に心が引かれるのか",
+      "start_seconds": 596.48,
+      "end_seconds": 606.0,
+      "id": "MYsp2eu0_qI-ja-0077",
+      "sequence": 77
+    },
+    {
+      "text": "を早いうちに理解することが極めて重要だと考えます。",
+      "start_seconds": 606.0,
+      "end_seconds": 611.44,
+      "id": "MYsp2eu0_qI-ja-0078",
+      "sequence": 78
+    },
+    {
+      "text": "なぜなら自分の好きを早く知ることはそれだけ長く自分らしい景色を楽しめることに",
+      "start_seconds": 611.44,
+      "end_seconds": 619.76,
+      "id": "MYsp2eu0_qI-ja-0079",
+      "sequence": 79
+    },
+    {
+      "text": "つがるからです。",
+      "start_seconds": 619.76,
+      "end_seconds": 623.519,
+      "id": "MYsp2eu0_qI-ja-0080",
+      "sequence": 80
+    },
+    {
+      "text": "だから間を生きる僕たち若者は日々の学校生活やうん、自分の興味のあること、挑戦",
+      "start_seconds": 624.839,
+      "end_seconds": 634.48,
+      "id": "MYsp2eu0_qI-ja-0081",
+      "sequence": 81
+    },
+    {
+      "text": "したいこと、あるいは家族との交流や日々出会う人との時間や思い出、経験をもっと",
+      "start_seconds": 634.48,
+      "end_seconds": 643.2,
+      "id": "MYsp2eu0_qI-ja-0082",
+      "sequence": 82
+    },
+    {
+      "text": "大切にするべきなのではないでしょうか。",
+      "start_seconds": 643.2,
+      "end_seconds": 648.1600000000001,
+      "id": "MYsp2eu0_qI-ja-0083",
+      "sequence": 83
+    },
+    {
+      "text": "僕はいちご一という言葉がとても好きです。",
+      "start_seconds": 648.92,
+      "end_seconds": 654.24,
+      "id": "MYsp2eu0_qI-ja-0084",
+      "sequence": 84
+    },
+    {
+      "text": "僕は今までたくさんの素晴らしい人々に出会ってきました。",
+      "start_seconds": 654.24,
+      "end_seconds": 659.6,
+      "id": "MYsp2eu0_qI-ja-0085",
+      "sequence": 85
+    },
+    {
+      "text": "一生1度きりの出会い。その一瞬一瞬を全力で大切にすること。",
+      "start_seconds": 659.6,
+      "end_seconds": 666.8,
+      "id": "MYsp2eu0_qI-ja-0086",
+      "sequence": 86
+    },
+    {
+      "text": "別れがあるから出会いがあり、人との関わりを通してお互いの人生に一期一する。それこそが自分らしい人生につがって",
+      "start_seconds": 666.8,
+      "end_seconds": 677.24,
+      "id": "MYsp2eu0_qI-ja-0087",
+      "sequence": 87
+    },
+    {
+      "text": "いくのだと留学を通して気づかされました。",
+      "start_seconds": 677.24,
+      "end_seconds": 682.44,
+      "id": "MYsp2eu0_qI-ja-0088",
+      "sequence": 88
+    },
+    {
+      "text": "この気づきがあったからこそ僕は今日最後にここにいる大人の皆さんへ、そして未来を生きる子供たちにどうしても共有したい",
+      "start_seconds": 682.44,
+      "end_seconds": 693.519,
+      "id": "MYsp2eu0_qI-ja-0089",
+      "sequence": 89
+    },
+    {
+      "text": "アイデアがあります。",
+      "start_seconds": 693.519,
+      "end_seconds": 696.88,
+      "id": "MYsp2eu0_qI-ja-0090",
+      "sequence": 90
+    },
+    {
+      "text": "子供たちを伝える大人の皆さんへ。",
+      "start_seconds": 696.88,
+      "end_seconds": 700.72,
+      "id": "MYsp2eu0_qI-ja-0091",
+      "sequence": 91
+    },
+    {
+      "text": "子供たちが様々な出会いの中から自分を知るという経験を持つ早いうちから持つことはとても大切なのではないかと思います。",
+      "start_seconds": 700.72,
+      "end_seconds": 712.36,
+      "id": "MYsp2eu0_qI-ja-0092",
+      "sequence": 92
+    },
+    {
+      "text": "や習い事に参加することはそういった出会いのきっかけ作りとして十分に意義があるのだと思います。",
+      "start_seconds": 712.36,
+      "end_seconds": 721.76,
+      "id": "MYsp2eu0_qI-ja-0093",
+      "sequence": 93
+    },
+    {
+      "text": "またこの出会い作りは決してこう持つ親だけに責任があるものでもありません。",
+      "start_seconds": 721.76,
+      "end_seconds": 728.959,
+      "id": "MYsp2eu0_qI-ja-0094",
+      "sequence": 94
+    },
+    {
+      "text": "教育として子供たちがどんな人になりたいのか、あるいはどんな人でありたいのかを考えさせることも学習の1つとして",
+      "start_seconds": 728.959,
+      "end_seconds": 738.72,
+      "id": "MYsp2eu0_qI-ja-0095",
+      "sequence": 95
+    },
+    {
+      "text": "位置づけるべきなのではないでしょうか。",
+      "start_seconds": 738.72,
+      "end_seconds": 742.56,
+      "id": "MYsp2eu0_qI-ja-0096",
+      "sequence": 96
+    },
+    {
+      "text": "例えば多くの小中学生が1度は経験するであろう職業体験。僕はこの機会をもっと増やす",
+      "start_seconds": 742.56,
+      "end_seconds": 751.92,
+      "id": "MYsp2eu0_qI-ja-0097",
+      "sequence": 97
+    },
+    {
+      "text": "べきだと考えています。",
+      "start_seconds": 751.92,
+      "end_seconds": 754.959,
+      "id": "MYsp2eu0_qI-ja-0098",
+      "sequence": 98
+    },
+    {
+      "text": "特にAIによる仕事の消失が懸念される時代だからこそまずは既存の仕事に仕事を理解しその上でこれまでいなかったような",
+      "start_seconds": 754.959,
+      "end_seconds": 766.32,
+      "id": "MYsp2eu0_qI-ja-0099",
+      "sequence": 99
+    },
+    {
+      "text": "既存の仕事に囚われない働き方を見出す必要があるのです。",
+      "start_seconds": 766.32,
+      "end_seconds": 772.76,
+      "id": "MYsp2eu0_qI-ja-0100",
+      "sequence": 100
+    },
+    {
+      "text": "あるいは子供たち自らがテーマを設定し探求を行う総合的な探求の時間。",
+      "start_seconds": 772.76,
+      "end_seconds": 780.8,
+      "id": "MYsp2eu0_qI-ja-0101",
+      "sequence": 101
+    },
+    {
+      "text": "僕はこの時間を使って単に社会課題解決に向けた調べ学習をするのではなく、自分が",
+      "start_seconds": 780.8,
+      "end_seconds": 788.48,
+      "id": "MYsp2eu0_qI-ja-0102",
+      "sequence": 102
+    },
+    {
+      "text": "何に好奇心を注られるのかを認識でき、え、それぞれの分野で自分らしい探求ができるようなカリキュラムと指導にする",
+      "start_seconds": 788.48,
+      "end_seconds": 799.279,
+      "id": "MYsp2eu0_qI-ja-0103",
+      "sequence": 103
+    },
+    {
+      "text": "べきだと思います。",
+      "start_seconds": 799.279,
+      "end_seconds": 803.04,
+      "id": "MYsp2eu0_qI-ja-0104",
+      "sequence": 104
+    },
+    {
+      "text": "こうした多様な経験を通して子供たち自らが自分の好きなことや得意なことを見つけるまで待ってあげる。",
+      "start_seconds": 803.04,
+      "end_seconds": 811.72,
+      "id": "MYsp2eu0_qI-ja-0105",
+      "sequence": 105
+    },
+    {
+      "text": "そうした意識を持つこと、そうした意識を大人が持つことで子供たちは様々な生き方を学び、ありたい姿を見つけ出すことができると僕は信じています。",
+      "start_seconds": 811.72,
+      "end_seconds": 823.48,
+      "id": "MYsp2eu0_qI-ja-0106",
+      "sequence": 106
+    },
+    {
+      "text": "子供の頃の多様な経験はその人らしさを形づく大切な要素になると感じています。",
+      "start_seconds": 823.48,
+      "end_seconds": 831.44,
+      "id": "MYsp2eu0_qI-ja-0107",
+      "sequence": 107
+    },
+    {
+      "text": "だから社会として子供たちが勉強だけに囚われることなく、自分の好きなことにも全力で挑戦し、豊かな将来設計ができる",
+      "start_seconds": 831.44,
+      "end_seconds": 842.639,
+      "id": "MYsp2eu0_qI-ja-0108",
+      "sequence": 108
+    },
+    {
+      "text": "雰囲気を作ることが非常に重要だと思います。",
+      "start_seconds": 842.639,
+      "end_seconds": 848.48,
+      "id": "MYsp2eu0_qI-ja-0109",
+      "sequence": 109
+    },
+    {
+      "text": "そして今まさに間の時間を生きている皆さんへ。",
+      "start_seconds": 848.639,
+      "end_seconds": 855.24,
+      "id": "MYsp2eu0_qI-ja-0110",
+      "sequence": 110
+    },
+    {
+      "text": "今何に興味があるか分からないという人は決して少なくはありません。",
+      "start_seconds": 855.24,
+      "end_seconds": 862.6,
+      "id": "MYsp2eu0_qI-ja-0111",
+      "sequence": 111
+    },
+    {
+      "text": "限られた時間の中でどのように生きることが自分にとって豊かな人生につがるのかすぐに答えが見つかる問いではありません",
+      "start_seconds": 862.6,
+      "end_seconds": 872.92,
+      "id": "MYsp2eu0_qI-ja-0112",
+      "sequence": 112
+    },
+    {
+      "text": "。",
+      "start_seconds": 872.92,
+      "end_seconds": 875.079,
+      "id": "MYsp2eu0_qI-ja-0113",
+      "sequence": 113
+    },
+    {
+      "text": "何かにガムシラに取り組んだり新しいことに全力で挑戦することはその答えのその答えを見つけるための1つの鍵になり得る",
+      "start_seconds": 875.079,
+      "end_seconds": 884.12,
+      "id": "MYsp2eu0_qI-ja-0114",
+      "sequence": 114
+    },
+    {
+      "text": "と考えます。",
+      "start_seconds": 884.12,
+      "end_seconds": 887.8,
+      "id": "MYsp2eu0_qI-ja-0115",
+      "sequence": 115
+    },
+    {
+      "text": "そうして大人と子供の間の時間に出会った人やものがより豊かな将来設計や進路選択に、洗路選択に導く家になると僕は信じて",
+      "start_seconds": 888.199,
+      "end_seconds": 899.48,
+      "id": "MYsp2eu0_qI-ja-0116",
+      "sequence": 116
+    },
+    {
+      "text": "います。",
+      "start_seconds": 899.48,
+      "end_seconds": 901.639,
+      "id": "MYsp2eu0_qI-ja-0117",
+      "sequence": 117
+    },
+    {
+      "text": "この間の時間を持てているのか、一度自分自身に問いかけてみてください。",
+      "start_seconds": 901.639,
+      "end_seconds": 909.279,
+      "id": "MYsp2eu0_qI-ja-0118",
+      "sequence": 118
+    },
+    {
+      "text": "僕たちはそれぞれ終点のある電車に乗っています。",
+      "start_seconds": 909.519,
+      "end_seconds": 914.48,
+      "id": "MYsp2eu0_qI-ja-0119",
+      "sequence": 119
+    },
+    {
+      "text": "人生は思っているよりも短い。だからこの時間を何に使うのか。",
+      "start_seconds": 914.48,
+      "end_seconds": 921.399,
+      "id": "MYsp2eu0_qI-ja-0120",
+      "sequence": 120
+    },
+    {
+      "text": "その選択こそが窓から見える景色をり、僕たちの人生を立ちづくっていくことになると思います。ご成聴ありがとうございまし",
+      "start_seconds": 921.399,
+      "end_seconds": 930.8,
+      "id": "MYsp2eu0_qI-ja-0121",
+      "sequence": 121
+    },
+    {
+      "text": "た。",
+      "start_seconds": 930.8,
+      "end_seconds": 933.92,
+      "id": "MYsp2eu0_qI-ja-0122",
+      "sequence": 122
+    }
+  ],
+  "raw_captions": [
+    {
+      "text": "皆さん、こんにちは。",
+      "start_seconds": 4.68,
+      "end_seconds": 8.519
+    },
+    {
+      "text": "こんにちは。",
+      "start_seconds": 7.279,
+      "end_seconds": 10.639
+    },
+    {
+      "text": "京都立北高等学校",
+      "start_seconds": 8.519,
+      "end_seconds": 10.84
+    },
+    {
+      "text": "3",
+      "start_seconds": 10.639,
+      "end_seconds": 13.84
+    },
+    {
+      "text": "年の松村ゆきです。好きな食べ物は辛いラーメン。特技は",
+      "start_seconds": 10.84,
+      "end_seconds": 13.84
+    },
+    {
+      "text": "10",
+      "start_seconds": 17.64,
+      "end_seconds": 20.8
+    },
+    {
+      "text": "年以上続けているピアノ。趣味は言語を学ぶことで、今は日本語、英語、ドイツ語、ハンガリーを話すことができます。",
+      "start_seconds": 17.8,
+      "end_seconds": 20.8
+    },
+    {
+      "text": "学校での得意科目はもちろん英語で、英語",
+      "start_seconds": 29.16,
+      "end_seconds": 37.44
+    },
+    {
+      "text": "を使って仕事をするのが夢です。",
+      "start_seconds": 32.68,
+      "end_seconds": 43.399
+    },
+    {
+      "text": "夢といえば皆さんには夢はありますか?",
+      "start_seconds": 37.44,
+      "end_seconds": 47.32
+    },
+    {
+      "text": "もし今ここであなたの夢は何ですか?と",
+      "start_seconds": 43.399,
+      "end_seconds": 50.44
+    },
+    {
+      "text": "尋ねられたらすぐに答えることができる",
+      "start_seconds": 47.32,
+      "end_seconds": 53.84
+    },
+    {
+      "text": "でしょうか?",
+      "start_seconds": 50.44,
+      "end_seconds": 53.839999999999996
+    },
+    {
+      "text": "この質問を日本の高校生にすると、多くの",
+      "start_seconds": 54.16,
+      "end_seconds": 61.879
+    },
+    {
+      "text": "人が少し困った顔をするかもしれません。",
+      "start_seconds": 57.64,
+      "end_seconds": 65.0
+    },
+    {
+      "text": "なぜでしょうか?",
+      "start_seconds": 61.879,
+      "end_seconds": 68.39999999999999
+    },
+    {
+      "text": "僕たちはよく夢を持ちなさいと言われる",
+      "start_seconds": 65.0,
+      "end_seconds": 71.08
+    },
+    {
+      "text": "ことはあっても、どのようにして夢を",
+      "start_seconds": 68.4,
+      "end_seconds": 75.84
+    },
+    {
+      "text": "見つけるかは考えたこともないからです。",
+      "start_seconds": 71.08,
+      "end_seconds": 79.64
+    },
+    {
+      "text": "実際僕の多くの友達も高校に入学してから",
+      "start_seconds": 75.84,
+      "end_seconds": 82.96000000000001
+    },
+    {
+      "text": "初めて現実的なキャリアというものを意識",
+      "start_seconds": 79.64,
+      "end_seconds": 85.799
+    },
+    {
+      "text": "し始めたようです。",
+      "start_seconds": 82.96,
+      "end_seconds": 88.67999999999999
+    },
+    {
+      "text": "すぐに夢を見つけられる高校生はそう多く",
+      "start_seconds": 85.799,
+      "end_seconds": 91.4
+    },
+    {
+      "text": "はないでしょう。",
+      "start_seconds": 88.68,
+      "end_seconds": 96.0
+    },
+    {
+      "text": "そこで今日は高校生という大人と子供の間",
+      "start_seconds": 91.4,
+      "end_seconds": 99.32000000000001
+    },
+    {
+      "text": "にいる人間として夢はどのようにして形成",
+      "start_seconds": 96.0,
+      "end_seconds": 102.479
+    },
+    {
+      "text": "されるのかについて僕なりに考えている",
+      "start_seconds": 99.32,
+      "end_seconds": 106.91999999999999
+    },
+    {
+      "text": "ことをお話ししようと思います。",
+      "start_seconds": 102.479,
+      "end_seconds": 106.92
+    },
+    {
+      "text": "僕は人生は思っているよりも短いのでは",
+      "start_seconds": 107.04,
+      "end_seconds": 114.43900000000001
+    },
+    {
+      "text": "ないかと考えています。",
+      "start_seconds": 111.04,
+      "end_seconds": 118.0
+    },
+    {
+      "text": "例えば1年という時間の長さを考えてみて",
+      "start_seconds": 114.439,
+      "end_seconds": 120.03899999999999
+    },
+    {
+      "text": "ください。",
+      "start_seconds": 118.0,
+      "end_seconds": 122.92
+    },
+    {
+      "text": "5歳の子供にとっての1年はそれまでの",
+      "start_seconds": 120.039,
+      "end_seconds": 127.039
+    },
+    {
+      "text": "人生のうちの1/5年にしか過ぎません。",
+      "start_seconds": 122.92,
+      "end_seconds": 130.44
+    },
+    {
+      "text": "18歳である僕にとっての1年は1/1年",
+      "start_seconds": 127.039,
+      "end_seconds": 134.16
+    },
+    {
+      "text": "。そして30歳の大人にとっての1年は",
+      "start_seconds": 130.44,
+      "end_seconds": 138.48
+    },
+    {
+      "text": "それまでの人生の1/年。",
+      "start_seconds": 134.16,
+      "end_seconds": 140.04
+    },
+    {
+      "text": "つまり",
+      "start_seconds": 138.48,
+      "end_seconds": 143.0
+    },
+    {
+      "text": "押さない時に感じる時間の長さは大人が",
+      "start_seconds": 140.04,
+      "end_seconds": 145.72
+    },
+    {
+      "text": "体感する時間の長さの何十倍にもなるため",
+      "start_seconds": 143.0,
+      "end_seconds": 150.16
+    },
+    {
+      "text": "、それだけ刺激的で毎日が驚きと発見で",
+      "start_seconds": 145.72,
+      "end_seconds": 153.2
+    },
+    {
+      "text": "満ち溢れています。",
+      "start_seconds": 150.16,
+      "end_seconds": 157.07999999999998
+    },
+    {
+      "text": "一方で30歳の大人が過ごす",
+      "start_seconds": 153.2,
+      "end_seconds": 160.959
+    },
+    {
+      "text": "年の中では日々はルーティーンとなりあっ",
+      "start_seconds": 157.08,
+      "end_seconds": 164.76000000000002
+    },
+    {
+      "text": "という間に過ぎ去ってしまいがちです。",
+      "start_seconds": 160.959,
+      "end_seconds": 168.08
+    },
+    {
+      "text": "だから人は年を重ねるほど時間が早く",
+      "start_seconds": 164.76,
+      "end_seconds": 170.48
+    },
+    {
+      "text": "すぎると感じるようになるのではない",
+      "start_seconds": 168.08,
+      "end_seconds": 173.4
+    },
+    {
+      "text": "でしょうか。",
+      "start_seconds": 170.48,
+      "end_seconds": 175.92
+    },
+    {
+      "text": "あっという間に過ぎ去っていく時間の中で",
+      "start_seconds": 173.4,
+      "end_seconds": 179.84
+    },
+    {
+      "text": "大人と子供の間にいる今は僕にとって将来",
+      "start_seconds": 175.92,
+      "end_seconds": 182.55999999999997
+    },
+    {
+      "text": "の夢の原点に出会うためのとても貴重な",
+      "start_seconds": 179.84,
+      "end_seconds": 187.08
+    },
+    {
+      "text": "時間だと言えるでしょう。",
+      "start_seconds": 182.56,
+      "end_seconds": 187.08
+    },
+    {
+      "text": "しかし現実の世界ではその間の時間こそが",
+      "start_seconds": 187.319,
+      "end_seconds": 196.48
+    },
+    {
+      "text": "気づかないうちに失われています。",
+      "start_seconds": 192.04,
+      "end_seconds": 201.12
+    },
+    {
+      "text": "僕たち学生は成績や進路、周囲との比較や",
+      "start_seconds": 196.48,
+      "end_seconds": 205.48
+    },
+    {
+      "text": "競争、学業での評価を優先する社会の中で",
+      "start_seconds": 201.12,
+      "end_seconds": 208.76
+    },
+    {
+      "text": "自分は何に心が惹かれるのかに向き合う",
+      "start_seconds": 205.48,
+      "end_seconds": 212.72
+    },
+    {
+      "text": "時間を持たないまま成長していきます。",
+      "start_seconds": 208.76,
+      "end_seconds": 216.319
+    },
+    {
+      "text": "このままでは夢の原点に出会うことが",
+      "start_seconds": 212.72,
+      "end_seconds": 218.68
+    },
+    {
+      "text": "ますます難しくなっていくかもしれません",
+      "start_seconds": 216.319,
+      "end_seconds": 221.319
+    },
+    {
+      "text": "。",
+      "start_seconds": 218.68,
+      "end_seconds": 223.31900000000002
+    },
+    {
+      "text": "さて、",
+      "start_seconds": 221.319,
+      "end_seconds": 227.11999999999998
+    },
+    {
+      "text": "僕は京都教育大学付属京都小中学校で英語",
+      "start_seconds": 223.319,
+      "end_seconds": 229.56
+    },
+    {
+      "text": "を教えてらっしゃる、今達也先生との",
+      "start_seconds": 227.12,
+      "end_seconds": 232.31900000000002
+    },
+    {
+      "text": "出会いによって英語に強く関心を抱くよう",
+      "start_seconds": 229.56,
+      "end_seconds": 234.599
+    },
+    {
+      "text": "になりました。",
+      "start_seconds": 232.319,
+      "end_seconds": 237.599
+    },
+    {
+      "text": "先生の授業はとてもユニークでうん、",
+      "start_seconds": 234.599,
+      "end_seconds": 239.92
+    },
+    {
+      "text": "リーディングの問題や英文法だけではなく",
+      "start_seconds": 237.599,
+      "end_seconds": 242.83999999999997
+    },
+    {
+      "text": "、先生のギターに合わせて洋楽を歌ったり",
+      "start_seconds": 239.92,
+      "end_seconds": 247.35999999999999
+    },
+    {
+      "text": "、ヨーガを見たり、あるいはBBCや",
+      "start_seconds": 242.84,
+      "end_seconds": 250.0
+    },
+    {
+      "text": "CNNなどの海外のニュースを見たりする",
+      "start_seconds": 247.36,
+      "end_seconds": 253.079
+    },
+    {
+      "text": "こともありました。",
+      "start_seconds": 250.0,
+      "end_seconds": 253.079
+    },
+    {
+      "text": "先生の授業を通して英語は世界とつがる",
+      "start_seconds": 253.879,
+      "end_seconds": 259.919
+    },
+    {
+      "text": "ためのとても大切な手段だと感じるように",
+      "start_seconds": 256.84,
+      "end_seconds": 262.96
+    },
+    {
+      "text": "なりました。",
+      "start_seconds": 259.919,
+      "end_seconds": 266.08
+    },
+    {
+      "text": "今日先生の影響もあって、高校2年生の時",
+      "start_seconds": 262.96,
+      "end_seconds": 269.19899999999996
+    },
+    {
+      "text": "には10ヶ月間のヨーロッパ留学を決意し",
+      "start_seconds": 266.08,
+      "end_seconds": 271.919
+    },
+    {
+      "text": "ました。",
+      "start_seconds": 269.199,
+      "end_seconds": 274.8
+    },
+    {
+      "text": "僕が留学することになったのはハンガリー",
+      "start_seconds": 271.919,
+      "end_seconds": 280.71999999999997
+    },
+    {
+      "text": "という東の国のとある高校でした。",
+      "start_seconds": 274.8,
+      "end_seconds": 280.72
+    },
+    {
+      "text": "ハンガリーはルービックキューブの発症の",
+      "start_seconds": 280.919,
+      "end_seconds": 286.84
+    },
+    {
+      "text": "地であり、またヨーロッパ随の温泉大国で",
+      "start_seconds": 283.199,
+      "end_seconds": 292.88
+    },
+    {
+      "text": "あるなどとても魅力に満ち溢れた国です。",
+      "start_seconds": 286.84,
+      "end_seconds": 292.88
+    },
+    {
+      "text": "え、",
+      "start_seconds": 296.08,
+      "end_seconds": 299.24
+    },
+    {
+      "text": "先行の結果として留学の許可をいただけた",
+      "start_seconds": 300.479,
+      "end_seconds": 305.75899999999996
+    },
+    {
+      "text": "のはこの国で、",
+      "start_seconds": 303.039,
+      "end_seconds": 308.56
+    },
+    {
+      "text": "これも何かの縁と思い、僕はこの国での",
+      "start_seconds": 305.759,
+      "end_seconds": 311.91900000000004
+    },
+    {
+      "text": "実月間を精一杯全力で楽しもうと決意し",
+      "start_seconds": 308.56,
+      "end_seconds": 314.52
+    },
+    {
+      "text": "ました。",
+      "start_seconds": 311.919,
+      "end_seconds": 316.52
+    },
+    {
+      "text": "こうして何気なく始まったハンガリー留学",
+      "start_seconds": 314.52,
+      "end_seconds": 320.28
+    },
+    {
+      "text": "ですが、この留学が僕にとって非常に",
+      "start_seconds": 316.52,
+      "end_seconds": 322.96
+    },
+    {
+      "text": "大きな意味を持つことになるとは当時は",
+      "start_seconds": 320.28,
+      "end_seconds": 327.15999999999997
+    },
+    {
+      "text": "想像もしていませんでした。",
+      "start_seconds": 322.96,
+      "end_seconds": 330.71999999999997
+    },
+    {
+      "text": "さて、留学中に気づいたことがありました",
+      "start_seconds": 327.16,
+      "end_seconds": 332.44
+    },
+    {
+      "text": "。",
+      "start_seconds": 330.72,
+      "end_seconds": 336.88000000000005
+    },
+    {
+      "text": "それはこの国では勉強だけに全ての時間を",
+      "start_seconds": 332.44,
+      "end_seconds": 340.84
+    },
+    {
+      "text": "使うというよりはスポーツや趣味、習い事",
+      "start_seconds": 336.88,
+      "end_seconds": 344.56
+    },
+    {
+      "text": "など様々な活動に時間を使うことも共に",
+      "start_seconds": 340.84,
+      "end_seconds": 348.67999999999995
+    },
+    {
+      "text": "大切にされているということです。",
+      "start_seconds": 344.56,
+      "end_seconds": 352.28000000000003
+    },
+    {
+      "text": "僕のある友人は放課後になると必ず学校の",
+      "start_seconds": 348.68,
+      "end_seconds": 354.639
+    },
+    {
+      "text": "体育館に行ってバレーボールの練習をして",
+      "start_seconds": 352.28,
+      "end_seconds": 356.84
+    },
+    {
+      "text": "いました。",
+      "start_seconds": 354.639,
+      "end_seconds": 359.24
+    },
+    {
+      "text": "彼はテスト期間でもその練習をやめません",
+      "start_seconds": 356.84,
+      "end_seconds": 361.23999999999995
+    },
+    {
+      "text": "でした。",
+      "start_seconds": 359.24,
+      "end_seconds": 365.44
+    },
+    {
+      "text": "彼はただ勉強も大切だけどこれは僕の好き",
+      "start_seconds": 361.24,
+      "end_seconds": 369.96000000000004
+    },
+    {
+      "text": "なことだからと笑っていました。",
+      "start_seconds": 365.44,
+      "end_seconds": 373.24
+    },
+    {
+      "text": "また僕のホストブラザーは地域の劇団に",
+      "start_seconds": 369.96,
+      "end_seconds": 375.79999999999995
+    },
+    {
+      "text": "所属していて役者として活動していました",
+      "start_seconds": 373.24,
+      "end_seconds": 381.40000000000003
+    },
+    {
+      "text": "。彼は本当に歌が上手でした。",
+      "start_seconds": 375.8,
+      "end_seconds": 385.16
+    },
+    {
+      "text": "彼も演劇と弁学との両立を通して夢を",
+      "start_seconds": 381.4,
+      "end_seconds": 389.31899999999996
+    },
+    {
+      "text": "追いかけているように感じられました。",
+      "start_seconds": 385.16,
+      "end_seconds": 392.96000000000004
+    },
+    {
+      "text": "そんな彼らは勉強だけが全て勉強だけが",
+      "start_seconds": 389.319,
+      "end_seconds": 395.72
+    },
+    {
+      "text": "人生ではないということを自然に理解して",
+      "start_seconds": 392.96,
+      "end_seconds": 398.79999999999995
+    },
+    {
+      "text": "いるように見えました。",
+      "start_seconds": 395.72,
+      "end_seconds": 402.8
+    },
+    {
+      "text": "多くの友人が自分はこれが好き。これは",
+      "start_seconds": 398.8,
+      "end_seconds": 405.639
+    },
+    {
+      "text": "あまり好きじゃない。これは得意だけど",
+      "start_seconds": 402.8,
+      "end_seconds": 408.919
+    },
+    {
+      "text": "これは苦手ということを驚くほどはっきり",
+      "start_seconds": 405.639,
+      "end_seconds": 411.919
+    },
+    {
+      "text": "と自覚していました。",
+      "start_seconds": 408.919,
+      "end_seconds": 415.599
+    },
+    {
+      "text": "それは1人1人が自分らしい人生を歩める",
+      "start_seconds": 411.919,
+      "end_seconds": 419.4
+    },
+    {
+      "text": "ようし、自己理解を何よりも重視する社会",
+      "start_seconds": 415.599,
+      "end_seconds": 421.4
+    },
+    {
+      "text": "システムがあるからこそ成り立っているの",
+      "start_seconds": 419.4,
+      "end_seconds": 425.28
+    },
+    {
+      "text": "だと感じています。",
+      "start_seconds": 421.4,
+      "end_seconds": 425.28
+    },
+    {
+      "text": "欧米では幼い頃からあなたは何になりたい",
+      "start_seconds": 425.319,
+      "end_seconds": 433.72
+    },
+    {
+      "text": "のかと問われ続けることが多い一方、日本",
+      "start_seconds": 429.4,
+      "end_seconds": 437.79999999999995
+    },
+    {
+      "text": "では集団への適用や学業を重視する傾向が",
+      "start_seconds": 433.72,
+      "end_seconds": 441.08000000000004
+    },
+    {
+      "text": "強いと言われています。",
+      "start_seconds": 437.8,
+      "end_seconds": 445.52000000000004
+    },
+    {
+      "text": "少なくとも日本には自分の興味や関心に",
+      "start_seconds": 441.08,
+      "end_seconds": 449.12
+    },
+    {
+      "text": "ついて考える機会は決して多くはないと",
+      "start_seconds": 445.52,
+      "end_seconds": 453.15999999999997
+    },
+    {
+      "text": "言えるのではないでしょうか。",
+      "start_seconds": 449.12,
+      "end_seconds": 453.16
+    },
+    {
+      "text": "さて、留学後に気づいたことがありました",
+      "start_seconds": 453.319,
+      "end_seconds": 459.03900000000004
+    },
+    {
+      "text": "。",
+      "start_seconds": 457.039,
+      "end_seconds": 460.71999999999997
+    },
+    {
+      "text": "それは",
+      "start_seconds": 459.039,
+      "end_seconds": 464.4
+    },
+    {
+      "text": "夢は探して見つけらすものではなく、大人",
+      "start_seconds": 460.72,
+      "end_seconds": 467.759
+    },
+    {
+      "text": "と子供の間の時間における様々な出会いの",
+      "start_seconds": 464.4,
+      "end_seconds": 472.52
+    },
+    {
+      "text": "中から形成されるということです。",
+      "start_seconds": 467.759,
+      "end_seconds": 475.72
+    },
+    {
+      "text": "僕は初めから英語を好きになろうと思って",
+      "start_seconds": 472.52,
+      "end_seconds": 479.35999999999996
+    },
+    {
+      "text": "いたわけでもではありません。ただ1人の",
+      "start_seconds": 475.72,
+      "end_seconds": 483.36
+    },
+    {
+      "text": "教師との出会いがありました。",
+      "start_seconds": 479.36,
+      "end_seconds": 487.08000000000004
+    },
+    {
+      "text": "僕は人生を変えようと思って留学をした",
+      "start_seconds": 483.36,
+      "end_seconds": 489.84000000000003
+    },
+    {
+      "text": "わけでもありません。",
+      "start_seconds": 487.08,
+      "end_seconds": 494.52
+    },
+    {
+      "text": "ただ新しい経験の中から様々な出会いと",
+      "start_seconds": 489.84,
+      "end_seconds": 497.63899999999995
+    },
+    {
+      "text": "学びがありました。",
+      "start_seconds": 494.52,
+      "end_seconds": 500.35999999999996
+    },
+    {
+      "text": "こうして振り返ってみるとその1つ1つが",
+      "start_seconds": 497.639,
+      "end_seconds": 503.68
+    },
+    {
+      "text": "大きな軸となって今の僕の将来の夢に",
+      "start_seconds": 500.36,
+      "end_seconds": 507.56
+    },
+    {
+      "text": "つがっているのです。",
+      "start_seconds": 503.68,
+      "end_seconds": 507.56
+    },
+    {
+      "text": "僕は今国際公務員という道を目指してい",
+      "start_seconds": 507.96,
+      "end_seconds": 513.0799999999999
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 511.0,
+      "end_seconds": 516.919
+    },
+    {
+      "text": "英語という言語を通して人と人、国と国を",
+      "start_seconds": 513.08,
+      "end_seconds": 521.479
+    },
+    {
+      "text": "結びつける仕事をしたいと思っています。",
+      "start_seconds": 516.919,
+      "end_seconds": 525.6
+    },
+    {
+      "text": "この夢の実現に向けて今はこのXへの登壇",
+      "start_seconds": 521.479,
+      "end_seconds": 529.1600000000001
+    },
+    {
+      "text": "を始め、様々な加害活動に取り組み、世界",
+      "start_seconds": 525.6,
+      "end_seconds": 532.08
+    },
+    {
+      "text": "で活躍するための力を着実に磨いています",
+      "start_seconds": 529.16,
+      "end_seconds": 534.3199999999999
+    },
+    {
+      "text": "。",
+      "start_seconds": 532.08,
+      "end_seconds": 537.6800000000001
+    },
+    {
+      "text": "しかしこの夢は決して探して見つけた夢で",
+      "start_seconds": 534.32,
+      "end_seconds": 541.6800000000001
+    },
+    {
+      "text": "はありません。出会いの中から少しずつ",
+      "start_seconds": 537.68,
+      "end_seconds": 545.64
+    },
+    {
+      "text": "見えてきた夢です。",
+      "start_seconds": 541.68,
+      "end_seconds": 545.64
+    },
+    {
+      "text": "僕が尊敬するYouTuberの英語のあ",
+      "start_seconds": 547.04,
+      "end_seconds": 553.92
+    },
+    {
+      "text": "さんは次のようにおっしゃっています。",
+      "start_seconds": 550.079,
+      "end_seconds": 559.079
+    },
+    {
+      "text": "人生は有限時間の最適配分だ。",
+      "start_seconds": 553.92,
+      "end_seconds": 562.5999999999999
+    },
+    {
+      "text": "僕たちはどこでどんな時間を使うかにより",
+      "start_seconds": 559.079,
+      "end_seconds": 565.519
+    },
+    {
+      "text": "どんな出会いがあるのか、どんな経験を",
+      "start_seconds": 562.6,
+      "end_seconds": 569.0790000000001
+    },
+    {
+      "text": "するのか、そしてどんな夢が形成されるの",
+      "start_seconds": 565.519,
+      "end_seconds": 573.48
+    },
+    {
+      "text": "かが様々に変わります。",
+      "start_seconds": 569.079,
+      "end_seconds": 576.56
+    },
+    {
+      "text": "僕が今日ここで皆さんと共有したいのは",
+      "start_seconds": 573.48,
+      "end_seconds": 579.8000000000001
+    },
+    {
+      "text": "単に夢を持とうというメッセージではあり",
+      "start_seconds": 576.56,
+      "end_seconds": 582.0
+    },
+    {
+      "text": "ません。",
+      "start_seconds": 579.8,
+      "end_seconds": 584.959
+    },
+    {
+      "text": "夢の原点に出会うための時間を僕たちは",
+      "start_seconds": 582.0,
+      "end_seconds": 589.88
+    },
+    {
+      "text": "本当にモてているのかという問いです。",
+      "start_seconds": 584.959,
+      "end_seconds": 593.1999999999999
+    },
+    {
+      "text": "冒頭にもお話ししたように時間は有限かつ",
+      "start_seconds": 589.88,
+      "end_seconds": 596.48
+    },
+    {
+      "text": "早く過ぎ去ります。",
+      "start_seconds": 593.2,
+      "end_seconds": 599.279
+    },
+    {
+      "text": "人生をより充実したものに、より豊かな",
+      "start_seconds": 596.48,
+      "end_seconds": 602.6
+    },
+    {
+      "text": "ものにするためには限られた時間の中で",
+      "start_seconds": 599.279,
+      "end_seconds": 606.0
+    },
+    {
+      "text": "自分は何に、自分は何に心が引かれるのか",
+      "start_seconds": 602.6,
+      "end_seconds": 608.88
+    },
+    {
+      "text": "を早いうちに理解することが極めて重要だ",
+      "start_seconds": 606.0,
+      "end_seconds": 611.44
+    },
+    {
+      "text": "と考えます。",
+      "start_seconds": 608.88,
+      "end_seconds": 616.079
+    },
+    {
+      "text": "なぜなら自分の好きを早く知ることはそれ",
+      "start_seconds": 611.44,
+      "end_seconds": 619.7600000000001
+    },
+    {
+      "text": "だけ長く自分らしい景色を楽しめることに",
+      "start_seconds": 616.079,
+      "end_seconds": 623.519
+    },
+    {
+      "text": "つがるからです。",
+      "start_seconds": 619.76,
+      "end_seconds": 623.519
+    },
+    {
+      "text": "だから間を生きる僕たち若者は日々の学校",
+      "start_seconds": 624.839,
+      "end_seconds": 634.48
+    },
+    {
+      "text": "生活やうん、自分の興味のあること、挑戦",
+      "start_seconds": 629.88,
+      "end_seconds": 639.079
+    },
+    {
+      "text": "したいこと、あるいは家族との交流や日々",
+      "start_seconds": 634.48,
+      "end_seconds": 643.2
+    },
+    {
+      "text": "出会う人との時間や思い出、経験をもっと",
+      "start_seconds": 639.079,
+      "end_seconds": 648.16
+    },
+    {
+      "text": "大切にするべきなのではないでしょうか。",
+      "start_seconds": 643.2,
+      "end_seconds": 648.1600000000001
+    },
+    {
+      "text": "僕はいちご一という言葉がとても好きです",
+      "start_seconds": 648.92,
+      "end_seconds": 654.24
+    },
+    {
+      "text": "。",
+      "start_seconds": 652.36,
+      "end_seconds": 656.839
+    },
+    {
+      "text": "僕は今までたくさんの素晴らしい人々に",
+      "start_seconds": 654.24,
+      "end_seconds": 659.6
+    },
+    {
+      "text": "出会ってきました。",
+      "start_seconds": 656.839,
+      "end_seconds": 663.36
+    },
+    {
+      "text": "一生1度きりの出会い。その一瞬一瞬を",
+      "start_seconds": 659.6,
+      "end_seconds": 666.8000000000001
+    },
+    {
+      "text": "全力で大切にすること。",
+      "start_seconds": 663.36,
+      "end_seconds": 670.0
+    },
+    {
+      "text": "別れがあるから出会いがあり、人との",
+      "start_seconds": 666.8,
+      "end_seconds": 673.3199999999999
+    },
+    {
+      "text": "関わりを通してお互いの人生に一期一する",
+      "start_seconds": 670.0,
+      "end_seconds": 677.24
+    },
+    {
+      "text": "。それこそが自分らしい人生につがって",
+      "start_seconds": 673.32,
+      "end_seconds": 679.9590000000001
+    },
+    {
+      "text": "いくのだと留学を通して気づかされました",
+      "start_seconds": 677.24,
+      "end_seconds": 682.44
+    },
+    {
+      "text": "。",
+      "start_seconds": 679.959,
+      "end_seconds": 686.399
+    },
+    {
+      "text": "この気づきがあったからこそ僕は今日最後",
+      "start_seconds": 682.44,
+      "end_seconds": 690.5600000000001
+    },
+    {
+      "text": "にここにいる大人の皆さんへ、そして未来",
+      "start_seconds": 686.399,
+      "end_seconds": 693.519
+    },
+    {
+      "text": "を生きる子供たちにどうしても共有したい",
+      "start_seconds": 690.56,
+      "end_seconds": 696.88
+    },
+    {
+      "text": "アイデアがあります。",
+      "start_seconds": 693.519,
+      "end_seconds": 700.72
+    },
+    {
+      "text": "子供たちを伝える大人の皆さんへ。",
+      "start_seconds": 696.88,
+      "end_seconds": 705.16
+    },
+    {
+      "text": "子供たちが様々な出会いの中から自分を",
+      "start_seconds": 700.72,
+      "end_seconds": 707.519
+    },
+    {
+      "text": "知るという経験を持つ早いうちから持つ",
+      "start_seconds": 705.16,
+      "end_seconds": 710.04
+    },
+    {
+      "text": "ことはとても大切なのではないかと思い",
+      "start_seconds": 707.519,
+      "end_seconds": 712.36
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 710.04,
+      "end_seconds": 715.079
+    },
+    {
+      "text": "や習い事に参加することはそういった",
+      "start_seconds": 712.36,
+      "end_seconds": 718.519
+    },
+    {
+      "text": "出会いのきっかけ作りとして十分に意義が",
+      "start_seconds": 715.079,
+      "end_seconds": 721.76
+    },
+    {
+      "text": "あるのだと思います。",
+      "start_seconds": 718.519,
+      "end_seconds": 725.44
+    },
+    {
+      "text": "またこの出会い作りは決してこう持つ親",
+      "start_seconds": 721.76,
+      "end_seconds": 728.959
+    },
+    {
+      "text": "だけに責任があるものでもありません。",
+      "start_seconds": 725.44,
+      "end_seconds": 732.7600000000001
+    },
+    {
+      "text": "教育として子供たちがどんな人になりたい",
+      "start_seconds": 728.959,
+      "end_seconds": 736.2399999999999
+    },
+    {
+      "text": "のか、あるいはどんな人でありたいのかを",
+      "start_seconds": 732.76,
+      "end_seconds": 738.72
+    },
+    {
+      "text": "考えさせることも学習の1つとして",
+      "start_seconds": 736.24,
+      "end_seconds": 742.5600000000001
+    },
+    {
+      "text": "位置づけるべきなのではないでしょうか。",
+      "start_seconds": 738.72,
+      "end_seconds": 744.36
+    },
+    {
+      "text": "例えば",
+      "start_seconds": 742.56,
+      "end_seconds": 747.399
+    },
+    {
+      "text": "多くの小中学生が1度は経験するであろう",
+      "start_seconds": 744.36,
+      "end_seconds": 751.92
+    },
+    {
+      "text": "職業体験。僕はこの機会をもっと増やす",
+      "start_seconds": 747.399,
+      "end_seconds": 754.959
+    },
+    {
+      "text": "べきだと考えています。",
+      "start_seconds": 751.92,
+      "end_seconds": 758.079
+    },
+    {
+      "text": "特にAIによる仕事の消失が懸念される",
+      "start_seconds": 754.959,
+      "end_seconds": 762.4799999999999
+    },
+    {
+      "text": "時代だからこそまずは既存の仕事に仕事を",
+      "start_seconds": 758.079,
+      "end_seconds": 766.3199999999999
+    },
+    {
+      "text": "理解しその上でこれまでいなかったような",
+      "start_seconds": 762.48,
+      "end_seconds": 769.32
+    },
+    {
+      "text": "既存の仕事に囚われない働き方を見出す",
+      "start_seconds": 766.32,
+      "end_seconds": 772.7600000000001
+    },
+    {
+      "text": "必要があるのです。",
+      "start_seconds": 769.32,
+      "end_seconds": 776.32
+    },
+    {
+      "text": "あるいは子供たち自らがテーマを設定し",
+      "start_seconds": 772.76,
+      "end_seconds": 780.8
+    },
+    {
+      "text": "探求を行う総合的な探求の時間。",
+      "start_seconds": 776.32,
+      "end_seconds": 784.6
+    },
+    {
+      "text": "僕はこの時間を使って単に社会課題解決に",
+      "start_seconds": 780.8,
+      "end_seconds": 788.4799999999999
+    },
+    {
+      "text": "向けた調べ学習をするのではなく、自分が",
+      "start_seconds": 784.6,
+      "end_seconds": 794.0
+    },
+    {
+      "text": "何に好奇心を注られるのかを認識でき、",
+      "start_seconds": 788.48,
+      "end_seconds": 796.72
+    },
+    {
+      "text": "え、それぞれの分野で自分らしい探求が",
+      "start_seconds": 794.0,
+      "end_seconds": 799.279
+    },
+    {
+      "text": "できるようなカリキュラムと指導にする",
+      "start_seconds": 796.72,
+      "end_seconds": 803.0400000000001
+    },
+    {
+      "text": "べきだと思います。",
+      "start_seconds": 799.279,
+      "end_seconds": 806.24
+    },
+    {
+      "text": "こうした多様な経験を通して子供たち自ら",
+      "start_seconds": 803.04,
+      "end_seconds": 808.92
+    },
+    {
+      "text": "が自分の好きなことや得意なことを",
+      "start_seconds": 806.24,
+      "end_seconds": 811.72
+    },
+    {
+      "text": "見つけるまで待ってあげる。",
+      "start_seconds": 808.92,
+      "end_seconds": 813.76
+    },
+    {
+      "text": "そうした意識を持つこと、そうした意識を",
+      "start_seconds": 811.72,
+      "end_seconds": 816.9200000000001
+    },
+    {
+      "text": "大人が持つことで子供たちは様々な生き方",
+      "start_seconds": 813.76,
+      "end_seconds": 819.56
+    },
+    {
+      "text": "を学び、ありたい姿を見つけ出すことが",
+      "start_seconds": 816.92,
+      "end_seconds": 823.4799999999999
+    },
+    {
+      "text": "できると僕は信じています。",
+      "start_seconds": 819.56,
+      "end_seconds": 826.4399999999999
+    },
+    {
+      "text": "子供の頃の多様な経験はその人らしさを",
+      "start_seconds": 823.48,
+      "end_seconds": 831.44
+    },
+    {
+      "text": "形づく大切な要素になると感じています。",
+      "start_seconds": 826.44,
+      "end_seconds": 835.5600000000001
+    },
+    {
+      "text": "だから社会として子供たちが勉強だけ",
+      "start_seconds": 831.44,
+      "end_seconds": 839.0
+    },
+    {
+      "text": "に囚われることなく、自分の好きなことに",
+      "start_seconds": 835.56,
+      "end_seconds": 842.6389999999999
+    },
+    {
+      "text": "も全力で挑戦し、豊かな将来設計ができる",
+      "start_seconds": 839.0,
+      "end_seconds": 845.32
+    },
+    {
+      "text": "雰囲気を作ることが非常に重要だと思い",
+      "start_seconds": 842.639,
+      "end_seconds": 848.48
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 845.32,
+      "end_seconds": 848.48
+    },
+    {
+      "text": "そして今まさに間の時間を生きている皆",
+      "start_seconds": 848.639,
+      "end_seconds": 855.24
+    },
+    {
+      "text": "さんへ。",
+      "start_seconds": 852.6,
+      "end_seconds": 858.6800000000001
+    },
+    {
+      "text": "今何に興味があるか分からないという人は",
+      "start_seconds": 855.24,
+      "end_seconds": 862.6
+    },
+    {
+      "text": "決して少なくはありません。",
+      "start_seconds": 858.68,
+      "end_seconds": 865.959
+    },
+    {
+      "text": "限られた時間の中でどのように生きること",
+      "start_seconds": 862.6,
+      "end_seconds": 870.759
+    },
+    {
+      "text": "が自分にとって豊かな人生につがるのか",
+      "start_seconds": 865.959,
+      "end_seconds": 872.92
+    },
+    {
+      "text": "すぐに答えが見つかる問いではありません",
+      "start_seconds": 870.759,
+      "end_seconds": 875.0790000000001
+    },
+    {
+      "text": "。",
+      "start_seconds": 872.92,
+      "end_seconds": 877.92
+    },
+    {
+      "text": "何かにガムシラに取り組んだり新しいこと",
+      "start_seconds": 875.079,
+      "end_seconds": 881.519
+    },
+    {
+      "text": "に全力で挑戦することはその答えのその",
+      "start_seconds": 877.92,
+      "end_seconds": 884.12
+    },
+    {
+      "text": "答えを見つけるための1つの鍵になり得る",
+      "start_seconds": 881.519,
+      "end_seconds": 887.8
+    },
+    {
+      "text": "と考えます。",
+      "start_seconds": 884.12,
+      "end_seconds": 887.8
+    },
+    {
+      "text": "そうして大人と子供の間の時間に出会った",
+      "start_seconds": 888.199,
+      "end_seconds": 896.12
+    },
+    {
+      "text": "人やものがより豊かな将来設計や進路選択",
+      "start_seconds": 891.759,
+      "end_seconds": 899.48
+    },
+    {
+      "text": "に、洗路選択に導く家になると僕は信じて",
+      "start_seconds": 896.12,
+      "end_seconds": 901.639
+    },
+    {
+      "text": "います。",
+      "start_seconds": 899.48,
+      "end_seconds": 904.8000000000001
+    },
+    {
+      "text": "この間の時間を持てているのか、一度自分",
+      "start_seconds": 901.639,
+      "end_seconds": 909.279
+    },
+    {
+      "text": "自身に問いかけてみてください。",
+      "start_seconds": 904.8,
+      "end_seconds": 909.279
+    },
+    {
+      "text": "僕たちはそれぞれ終点のある電車に乗って",
+      "start_seconds": 909.519,
+      "end_seconds": 914.48
+    },
+    {
+      "text": "います。",
+      "start_seconds": 912.16,
+      "end_seconds": 918.399
+    },
+    {
+      "text": "人生は思っているよりも短い。だからこの",
+      "start_seconds": 914.48,
+      "end_seconds": 921.399
+    },
+    {
+      "text": "時間を何に使うのか。",
+      "start_seconds": 918.399,
+      "end_seconds": 925.399
+    },
+    {
+      "text": "その選択こそが窓から見える景色をり、僕",
+      "start_seconds": 921.399,
+      "end_seconds": 927.68
+    },
+    {
+      "text": "たちの人生を立ちづくっていくことになる",
+      "start_seconds": 925.399,
+      "end_seconds": 930.8
+    },
+    {
+      "text": "と思います。ご成聴ありがとうございまし",
+      "start_seconds": 927.68,
+      "end_seconds": 933.92
+    },
+    {
+      "text": "た。",
+      "start_seconds": 930.8,
+      "end_seconds": 933.92
+    }
+  ],
+  "display_captions": [
+    {
+      "text": "皆さん、こんにちは。",
+      "start_seconds": 4.68,
+      "end_seconds": 7.279,
+      "id": "MYsp2eu0_qI-display-0001",
+      "segment_id": "MYsp2eu0_qI-ja-0001"
+    },
+    {
+      "text": "こんにちは。",
+      "start_seconds": 7.279,
+      "end_seconds": 8.519,
+      "id": "MYsp2eu0_qI-display-0002",
+      "segment_id": "MYsp2eu0_qI-ja-0002"
+    },
+    {
+      "text": "京都立北高等学校",
+      "start_seconds": 8.519,
+      "end_seconds": 10.639,
+      "id": "MYsp2eu0_qI-display-0003",
+      "segment_id": "MYsp2eu0_qI-ja-0002"
+    },
+    {
+      "text": "3",
+      "start_seconds": 10.639,
+      "end_seconds": 10.84,
+      "id": "MYsp2eu0_qI-display-0004",
+      "segment_id": "MYsp2eu0_qI-ja-0002"
+    },
+    {
+      "text": "年の松村ゆきです。好きな食べ物は辛いラーメン。特技は",
+      "start_seconds": 10.84,
+      "end_seconds": 13.84,
+      "id": "MYsp2eu0_qI-display-0005",
+      "segment_id": "MYsp2eu0_qI-ja-0002"
+    },
+    {
+      "text": "10",
+      "start_seconds": 17.64,
+      "end_seconds": 17.8,
+      "id": "MYsp2eu0_qI-display-0006",
+      "segment_id": "MYsp2eu0_qI-ja-0003"
+    },
+    {
+      "text": "年以上続けているピアノ。趣味は言語を学ぶことで、今は日本語、英語、ドイツ語、ハンガリーを話すことができます。",
+      "start_seconds": 17.8,
+      "end_seconds": 20.8,
+      "id": "MYsp2eu0_qI-display-0007",
+      "segment_id": "MYsp2eu0_qI-ja-0003"
+    },
+    {
+      "text": "学校での得意科目はもちろん英語で、英語",
+      "start_seconds": 29.16,
+      "end_seconds": 32.68,
+      "id": "MYsp2eu0_qI-display-0008",
+      "segment_id": "MYsp2eu0_qI-ja-0004"
+    },
+    {
+      "text": "を使って仕事をするのが夢です。",
+      "start_seconds": 32.68,
+      "end_seconds": 37.44,
+      "id": "MYsp2eu0_qI-display-0009",
+      "segment_id": "MYsp2eu0_qI-ja-0004"
+    },
+    {
+      "text": "夢といえば皆さんには夢はありますか?",
+      "start_seconds": 37.44,
+      "end_seconds": 43.399,
+      "id": "MYsp2eu0_qI-display-0010",
+      "segment_id": "MYsp2eu0_qI-ja-0005"
+    },
+    {
+      "text": "もし今ここであなたの夢は何ですか?と",
+      "start_seconds": 43.399,
+      "end_seconds": 47.32,
+      "id": "MYsp2eu0_qI-display-0011",
+      "segment_id": "MYsp2eu0_qI-ja-0006"
+    },
+    {
+      "text": "尋ねられたらすぐに答えることができる",
+      "start_seconds": 47.32,
+      "end_seconds": 50.44,
+      "id": "MYsp2eu0_qI-display-0012",
+      "segment_id": "MYsp2eu0_qI-ja-0006"
+    },
+    {
+      "text": "でしょうか?",
+      "start_seconds": 50.44,
+      "end_seconds": 53.839999999999996,
+      "id": "MYsp2eu0_qI-display-0013",
+      "segment_id": "MYsp2eu0_qI-ja-0006"
+    },
+    {
+      "text": "この質問を日本の高校生にすると、多くの",
+      "start_seconds": 54.16,
+      "end_seconds": 57.64,
+      "id": "MYsp2eu0_qI-display-0014",
+      "segment_id": "MYsp2eu0_qI-ja-0007"
+    },
+    {
+      "text": "人が少し困った顔をするかもしれません。",
+      "start_seconds": 57.64,
+      "end_seconds": 61.879,
+      "id": "MYsp2eu0_qI-display-0015",
+      "segment_id": "MYsp2eu0_qI-ja-0007"
+    },
+    {
+      "text": "なぜでしょうか?",
+      "start_seconds": 61.879,
+      "end_seconds": 65.0,
+      "id": "MYsp2eu0_qI-display-0016",
+      "segment_id": "MYsp2eu0_qI-ja-0008"
+    },
+    {
+      "text": "僕たちはよく夢を持ちなさいと言われる",
+      "start_seconds": 65.0,
+      "end_seconds": 68.4,
+      "id": "MYsp2eu0_qI-display-0017",
+      "segment_id": "MYsp2eu0_qI-ja-0009"
+    },
+    {
+      "text": "ことはあっても、どのようにして夢を",
+      "start_seconds": 68.4,
+      "end_seconds": 71.08,
+      "id": "MYsp2eu0_qI-display-0018",
+      "segment_id": "MYsp2eu0_qI-ja-0009"
+    },
+    {
+      "text": "見つけるかは考えたこともないからです。",
+      "start_seconds": 71.08,
+      "end_seconds": 75.84,
+      "id": "MYsp2eu0_qI-display-0019",
+      "segment_id": "MYsp2eu0_qI-ja-0009"
+    },
+    {
+      "text": "実際僕の多くの友達も高校に入学してから",
+      "start_seconds": 75.84,
+      "end_seconds": 79.64,
+      "id": "MYsp2eu0_qI-display-0020",
+      "segment_id": "MYsp2eu0_qI-ja-0010"
+    },
+    {
+      "text": "初めて現実的なキャリアというものを意識",
+      "start_seconds": 79.64,
+      "end_seconds": 82.96,
+      "id": "MYsp2eu0_qI-display-0021",
+      "segment_id": "MYsp2eu0_qI-ja-0010"
+    },
+    {
+      "text": "し始めたようです。",
+      "start_seconds": 82.96,
+      "end_seconds": 85.799,
+      "id": "MYsp2eu0_qI-display-0022",
+      "segment_id": "MYsp2eu0_qI-ja-0010"
+    },
+    {
+      "text": "すぐに夢を見つけられる高校生はそう多く",
+      "start_seconds": 85.799,
+      "end_seconds": 88.68,
+      "id": "MYsp2eu0_qI-display-0023",
+      "segment_id": "MYsp2eu0_qI-ja-0011"
+    },
+    {
+      "text": "はないでしょう。",
+      "start_seconds": 88.68,
+      "end_seconds": 91.4,
+      "id": "MYsp2eu0_qI-display-0024",
+      "segment_id": "MYsp2eu0_qI-ja-0011"
+    },
+    {
+      "text": "そこで今日は高校生という大人と子供の間",
+      "start_seconds": 91.4,
+      "end_seconds": 96.0,
+      "id": "MYsp2eu0_qI-display-0025",
+      "segment_id": "MYsp2eu0_qI-ja-0012"
+    },
+    {
+      "text": "にいる人間として夢はどのようにして形成",
+      "start_seconds": 96.0,
+      "end_seconds": 99.32,
+      "id": "MYsp2eu0_qI-display-0026",
+      "segment_id": "MYsp2eu0_qI-ja-0012"
+    },
+    {
+      "text": "されるのかについて僕なりに考えている",
+      "start_seconds": 99.32,
+      "end_seconds": 102.479,
+      "id": "MYsp2eu0_qI-display-0027",
+      "segment_id": "MYsp2eu0_qI-ja-0012"
+    },
+    {
+      "text": "ことをお話ししようと思います。",
+      "start_seconds": 102.479,
+      "end_seconds": 106.92,
+      "id": "MYsp2eu0_qI-display-0028",
+      "segment_id": "MYsp2eu0_qI-ja-0013"
+    },
+    {
+      "text": "僕は人生は思っているよりも短いのでは",
+      "start_seconds": 107.04,
+      "end_seconds": 111.04,
+      "id": "MYsp2eu0_qI-display-0029",
+      "segment_id": "MYsp2eu0_qI-ja-0014"
+    },
+    {
+      "text": "ないかと考えています。",
+      "start_seconds": 111.04,
+      "end_seconds": 114.439,
+      "id": "MYsp2eu0_qI-display-0030",
+      "segment_id": "MYsp2eu0_qI-ja-0014"
+    },
+    {
+      "text": "例えば1年という時間の長さを考えてみて",
+      "start_seconds": 114.439,
+      "end_seconds": 118.0,
+      "id": "MYsp2eu0_qI-display-0031",
+      "segment_id": "MYsp2eu0_qI-ja-0015"
+    },
+    {
+      "text": "ください。",
+      "start_seconds": 118.0,
+      "end_seconds": 120.039,
+      "id": "MYsp2eu0_qI-display-0032",
+      "segment_id": "MYsp2eu0_qI-ja-0015"
+    },
+    {
+      "text": "5歳の子供にとっての1年はそれまでの",
+      "start_seconds": 120.039,
+      "end_seconds": 122.92,
+      "id": "MYsp2eu0_qI-display-0033",
+      "segment_id": "MYsp2eu0_qI-ja-0016"
+    },
+    {
+      "text": "人生のうちの1/5年にしか過ぎません。",
+      "start_seconds": 122.92,
+      "end_seconds": 127.039,
+      "id": "MYsp2eu0_qI-display-0034",
+      "segment_id": "MYsp2eu0_qI-ja-0016"
+    },
+    {
+      "text": "18歳である僕にとっての1年は1/1年",
+      "start_seconds": 127.039,
+      "end_seconds": 130.44,
+      "id": "MYsp2eu0_qI-display-0035",
+      "segment_id": "MYsp2eu0_qI-ja-0017"
+    },
+    {
+      "text": "。そして30歳の大人にとっての1年は",
+      "start_seconds": 130.44,
+      "end_seconds": 134.16,
+      "id": "MYsp2eu0_qI-display-0036",
+      "segment_id": "MYsp2eu0_qI-ja-0017"
+    },
+    {
+      "text": "それまでの人生の1/年。",
+      "start_seconds": 134.16,
+      "end_seconds": 138.48,
+      "id": "MYsp2eu0_qI-display-0037",
+      "segment_id": "MYsp2eu0_qI-ja-0017"
+    },
+    {
+      "text": "つまり",
+      "start_seconds": 138.48,
+      "end_seconds": 140.04,
+      "id": "MYsp2eu0_qI-display-0038",
+      "segment_id": "MYsp2eu0_qI-ja-0018"
+    },
+    {
+      "text": "押さない時に感じる時間の長さは大人が",
+      "start_seconds": 140.04,
+      "end_seconds": 143.0,
+      "id": "MYsp2eu0_qI-display-0039",
+      "segment_id": "MYsp2eu0_qI-ja-0018"
+    },
+    {
+      "text": "体感する時間の長さの何十倍にもなるため",
+      "start_seconds": 143.0,
+      "end_seconds": 145.72,
+      "id": "MYsp2eu0_qI-display-0040",
+      "segment_id": "MYsp2eu0_qI-ja-0018"
+    },
+    {
+      "text": "、それだけ刺激的で毎日が驚きと発見で",
+      "start_seconds": 145.72,
+      "end_seconds": 150.16,
+      "id": "MYsp2eu0_qI-display-0041",
+      "segment_id": "MYsp2eu0_qI-ja-0018"
+    },
+    {
+      "text": "満ち溢れています。",
+      "start_seconds": 150.16,
+      "end_seconds": 153.2,
+      "id": "MYsp2eu0_qI-display-0042",
+      "segment_id": "MYsp2eu0_qI-ja-0019"
+    },
+    {
+      "text": "一方で30歳の大人が過ごす",
+      "start_seconds": 153.2,
+      "end_seconds": 157.08,
+      "id": "MYsp2eu0_qI-display-0043",
+      "segment_id": "MYsp2eu0_qI-ja-0020"
+    },
+    {
+      "text": "年の中では日々はルーティーンとなりあっ",
+      "start_seconds": 157.08,
+      "end_seconds": 160.959,
+      "id": "MYsp2eu0_qI-display-0044",
+      "segment_id": "MYsp2eu0_qI-ja-0020"
+    },
+    {
+      "text": "という間に過ぎ去ってしまいがちです。",
+      "start_seconds": 160.959,
+      "end_seconds": 164.76,
+      "id": "MYsp2eu0_qI-display-0045",
+      "segment_id": "MYsp2eu0_qI-ja-0020"
+    },
+    {
+      "text": "だから人は年を重ねるほど時間が早く",
+      "start_seconds": 164.76,
+      "end_seconds": 168.08,
+      "id": "MYsp2eu0_qI-display-0046",
+      "segment_id": "MYsp2eu0_qI-ja-0021"
+    },
+    {
+      "text": "すぎると感じるようになるのではない",
+      "start_seconds": 168.08,
+      "end_seconds": 170.48,
+      "id": "MYsp2eu0_qI-display-0047",
+      "segment_id": "MYsp2eu0_qI-ja-0021"
+    },
+    {
+      "text": "でしょうか。",
+      "start_seconds": 170.48,
+      "end_seconds": 173.4,
+      "id": "MYsp2eu0_qI-display-0048",
+      "segment_id": "MYsp2eu0_qI-ja-0021"
+    },
+    {
+      "text": "あっという間に過ぎ去っていく時間の中で",
+      "start_seconds": 173.4,
+      "end_seconds": 175.92,
+      "id": "MYsp2eu0_qI-display-0049",
+      "segment_id": "MYsp2eu0_qI-ja-0022"
+    },
+    {
+      "text": "大人と子供の間にいる今は僕にとって将来",
+      "start_seconds": 175.92,
+      "end_seconds": 179.84,
+      "id": "MYsp2eu0_qI-display-0050",
+      "segment_id": "MYsp2eu0_qI-ja-0022"
+    },
+    {
+      "text": "の夢の原点に出会うためのとても貴重な",
+      "start_seconds": 179.84,
+      "end_seconds": 182.56,
+      "id": "MYsp2eu0_qI-display-0051",
+      "segment_id": "MYsp2eu0_qI-ja-0022"
+    },
+    {
+      "text": "時間だと言えるでしょう。",
+      "start_seconds": 182.56,
+      "end_seconds": 187.08,
+      "id": "MYsp2eu0_qI-display-0052",
+      "segment_id": "MYsp2eu0_qI-ja-0023"
+    },
+    {
+      "text": "しかし現実の世界ではその間の時間こそが",
+      "start_seconds": 187.319,
+      "end_seconds": 192.04,
+      "id": "MYsp2eu0_qI-display-0053",
+      "segment_id": "MYsp2eu0_qI-ja-0024"
+    },
+    {
+      "text": "気づかないうちに失われています。",
+      "start_seconds": 192.04,
+      "end_seconds": 196.48,
+      "id": "MYsp2eu0_qI-display-0054",
+      "segment_id": "MYsp2eu0_qI-ja-0024"
+    },
+    {
+      "text": "僕たち学生は成績や進路、周囲との比較や",
+      "start_seconds": 196.48,
+      "end_seconds": 201.12,
+      "id": "MYsp2eu0_qI-display-0055",
+      "segment_id": "MYsp2eu0_qI-ja-0025"
+    },
+    {
+      "text": "競争、学業での評価を優先する社会の中で",
+      "start_seconds": 201.12,
+      "end_seconds": 205.48,
+      "id": "MYsp2eu0_qI-display-0056",
+      "segment_id": "MYsp2eu0_qI-ja-0025"
+    },
+    {
+      "text": "自分は何に心が惹かれるのかに向き合う",
+      "start_seconds": 205.48,
+      "end_seconds": 208.76,
+      "id": "MYsp2eu0_qI-display-0057",
+      "segment_id": "MYsp2eu0_qI-ja-0026"
+    },
+    {
+      "text": "時間を持たないまま成長していきます。",
+      "start_seconds": 208.76,
+      "end_seconds": 212.72,
+      "id": "MYsp2eu0_qI-display-0058",
+      "segment_id": "MYsp2eu0_qI-ja-0026"
+    },
+    {
+      "text": "このままでは夢の原点に出会うことが",
+      "start_seconds": 212.72,
+      "end_seconds": 216.319,
+      "id": "MYsp2eu0_qI-display-0059",
+      "segment_id": "MYsp2eu0_qI-ja-0027"
+    },
+    {
+      "text": "ますます難しくなっていくかもしれません",
+      "start_seconds": 216.319,
+      "end_seconds": 218.68,
+      "id": "MYsp2eu0_qI-display-0060",
+      "segment_id": "MYsp2eu0_qI-ja-0027"
+    },
+    {
+      "text": "。",
+      "start_seconds": 218.68,
+      "end_seconds": 221.319,
+      "id": "MYsp2eu0_qI-display-0061",
+      "segment_id": "MYsp2eu0_qI-ja-0027"
+    },
+    {
+      "text": "さて、",
+      "start_seconds": 221.319,
+      "end_seconds": 223.319,
+      "id": "MYsp2eu0_qI-display-0062",
+      "segment_id": "MYsp2eu0_qI-ja-0028"
+    },
+    {
+      "text": "僕は京都教育大学付属京都小中学校で英語",
+      "start_seconds": 223.319,
+      "end_seconds": 227.12,
+      "id": "MYsp2eu0_qI-display-0063",
+      "segment_id": "MYsp2eu0_qI-ja-0028"
+    },
+    {
+      "text": "を教えてらっしゃる、今達也先生との",
+      "start_seconds": 227.12,
+      "end_seconds": 229.56,
+      "id": "MYsp2eu0_qI-display-0064",
+      "segment_id": "MYsp2eu0_qI-ja-0028"
+    },
+    {
+      "text": "出会いによって英語に強く関心を抱くよう",
+      "start_seconds": 229.56,
+      "end_seconds": 232.319,
+      "id": "MYsp2eu0_qI-display-0065",
+      "segment_id": "MYsp2eu0_qI-ja-0028"
+    },
+    {
+      "text": "になりました。",
+      "start_seconds": 232.319,
+      "end_seconds": 234.599,
+      "id": "MYsp2eu0_qI-display-0066",
+      "segment_id": "MYsp2eu0_qI-ja-0029"
+    },
+    {
+      "text": "先生の授業はとてもユニークでうん、",
+      "start_seconds": 234.599,
+      "end_seconds": 237.599,
+      "id": "MYsp2eu0_qI-display-0067",
+      "segment_id": "MYsp2eu0_qI-ja-0030"
+    },
+    {
+      "text": "リーディングの問題や英文法だけではなく",
+      "start_seconds": 237.599,
+      "end_seconds": 239.92,
+      "id": "MYsp2eu0_qI-display-0068",
+      "segment_id": "MYsp2eu0_qI-ja-0030"
+    },
+    {
+      "text": "、先生のギターに合わせて洋楽を歌ったり",
+      "start_seconds": 239.92,
+      "end_seconds": 242.84,
+      "id": "MYsp2eu0_qI-display-0069",
+      "segment_id": "MYsp2eu0_qI-ja-0030"
+    },
+    {
+      "text": "、ヨーガを見たり、あるいはBBCや",
+      "start_seconds": 242.84,
+      "end_seconds": 247.36,
+      "id": "MYsp2eu0_qI-display-0070",
+      "segment_id": "MYsp2eu0_qI-ja-0031"
+    },
+    {
+      "text": "CNNなどの海外のニュースを見たりする",
+      "start_seconds": 247.36,
+      "end_seconds": 250.0,
+      "id": "MYsp2eu0_qI-display-0071",
+      "segment_id": "MYsp2eu0_qI-ja-0031"
+    },
+    {
+      "text": "こともありました。",
+      "start_seconds": 250.0,
+      "end_seconds": 253.079,
+      "id": "MYsp2eu0_qI-display-0072",
+      "segment_id": "MYsp2eu0_qI-ja-0031"
+    },
+    {
+      "text": "先生の授業を通して英語は世界とつがる",
+      "start_seconds": 253.879,
+      "end_seconds": 256.84,
+      "id": "MYsp2eu0_qI-display-0073",
+      "segment_id": "MYsp2eu0_qI-ja-0032"
+    },
+    {
+      "text": "ためのとても大切な手段だと感じるように",
+      "start_seconds": 256.84,
+      "end_seconds": 259.919,
+      "id": "MYsp2eu0_qI-display-0074",
+      "segment_id": "MYsp2eu0_qI-ja-0032"
+    },
+    {
+      "text": "なりました。",
+      "start_seconds": 259.919,
+      "end_seconds": 262.96,
+      "id": "MYsp2eu0_qI-display-0075",
+      "segment_id": "MYsp2eu0_qI-ja-0032"
+    },
+    {
+      "text": "今日先生の影響もあって、高校2年生の時",
+      "start_seconds": 262.96,
+      "end_seconds": 266.08,
+      "id": "MYsp2eu0_qI-display-0076",
+      "segment_id": "MYsp2eu0_qI-ja-0033"
+    },
+    {
+      "text": "には10ヶ月間のヨーロッパ留学を決意し",
+      "start_seconds": 266.08,
+      "end_seconds": 269.199,
+      "id": "MYsp2eu0_qI-display-0077",
+      "segment_id": "MYsp2eu0_qI-ja-0033"
+    },
+    {
+      "text": "ました。",
+      "start_seconds": 269.199,
+      "end_seconds": 271.919,
+      "id": "MYsp2eu0_qI-display-0078",
+      "segment_id": "MYsp2eu0_qI-ja-0033"
+    },
+    {
+      "text": "僕が留学することになったのはハンガリー",
+      "start_seconds": 271.919,
+      "end_seconds": 274.8,
+      "id": "MYsp2eu0_qI-display-0079",
+      "segment_id": "MYsp2eu0_qI-ja-0034"
+    },
+    {
+      "text": "という東の国のとある高校でした。",
+      "start_seconds": 274.8,
+      "end_seconds": 280.72,
+      "id": "MYsp2eu0_qI-display-0080",
+      "segment_id": "MYsp2eu0_qI-ja-0034"
+    },
+    {
+      "text": "ハンガリーはルービックキューブの発症の",
+      "start_seconds": 280.919,
+      "end_seconds": 283.199,
+      "id": "MYsp2eu0_qI-display-0081",
+      "segment_id": "MYsp2eu0_qI-ja-0035"
+    },
+    {
+      "text": "地であり、またヨーロッパ随の温泉大国で",
+      "start_seconds": 283.199,
+      "end_seconds": 286.84,
+      "id": "MYsp2eu0_qI-display-0082",
+      "segment_id": "MYsp2eu0_qI-ja-0035"
+    },
+    {
+      "text": "あるなどとても魅力に満ち溢れた国です。",
+      "start_seconds": 286.84,
+      "end_seconds": 292.88,
+      "id": "MYsp2eu0_qI-display-0083",
+      "segment_id": "MYsp2eu0_qI-ja-0035"
+    },
+    {
+      "text": "え、",
+      "start_seconds": 296.08,
+      "end_seconds": 299.24,
+      "id": "MYsp2eu0_qI-display-0084",
+      "segment_id": "MYsp2eu0_qI-ja-0036"
+    },
+    {
+      "text": "先行の結果として留学の許可をいただけた",
+      "start_seconds": 300.479,
+      "end_seconds": 303.039,
+      "id": "MYsp2eu0_qI-display-0085",
+      "segment_id": "MYsp2eu0_qI-ja-0037"
+    },
+    {
+      "text": "のはこの国で、",
+      "start_seconds": 303.039,
+      "end_seconds": 305.759,
+      "id": "MYsp2eu0_qI-display-0086",
+      "segment_id": "MYsp2eu0_qI-ja-0037"
+    },
+    {
+      "text": "これも何かの縁と思い、僕はこの国での",
+      "start_seconds": 305.759,
+      "end_seconds": 308.56,
+      "id": "MYsp2eu0_qI-display-0087",
+      "segment_id": "MYsp2eu0_qI-ja-0037"
+    },
+    {
+      "text": "実月間を精一杯全力で楽しもうと決意し",
+      "start_seconds": 308.56,
+      "end_seconds": 311.919,
+      "id": "MYsp2eu0_qI-display-0088",
+      "segment_id": "MYsp2eu0_qI-ja-0037"
+    },
+    {
+      "text": "ました。",
+      "start_seconds": 311.919,
+      "end_seconds": 314.52,
+      "id": "MYsp2eu0_qI-display-0089",
+      "segment_id": "MYsp2eu0_qI-ja-0038"
+    },
+    {
+      "text": "こうして何気なく始まったハンガリー留学",
+      "start_seconds": 314.52,
+      "end_seconds": 316.52,
+      "id": "MYsp2eu0_qI-display-0090",
+      "segment_id": "MYsp2eu0_qI-ja-0039"
+    },
+    {
+      "text": "ですが、この留学が僕にとって非常に",
+      "start_seconds": 316.52,
+      "end_seconds": 320.28,
+      "id": "MYsp2eu0_qI-display-0091",
+      "segment_id": "MYsp2eu0_qI-ja-0039"
+    },
+    {
+      "text": "大きな意味を持つことになるとは当時は",
+      "start_seconds": 320.28,
+      "end_seconds": 322.96,
+      "id": "MYsp2eu0_qI-display-0092",
+      "segment_id": "MYsp2eu0_qI-ja-0039"
+    },
+    {
+      "text": "想像もしていませんでした。",
+      "start_seconds": 322.96,
+      "end_seconds": 327.16,
+      "id": "MYsp2eu0_qI-display-0093",
+      "segment_id": "MYsp2eu0_qI-ja-0040"
+    },
+    {
+      "text": "さて、留学中に気づいたことがありました",
+      "start_seconds": 327.16,
+      "end_seconds": 330.72,
+      "id": "MYsp2eu0_qI-display-0094",
+      "segment_id": "MYsp2eu0_qI-ja-0041"
+    },
+    {
+      "text": "。",
+      "start_seconds": 330.72,
+      "end_seconds": 332.44,
+      "id": "MYsp2eu0_qI-display-0095",
+      "segment_id": "MYsp2eu0_qI-ja-0041"
+    },
+    {
+      "text": "それはこの国では勉強だけに全ての時間を",
+      "start_seconds": 332.44,
+      "end_seconds": 336.88,
+      "id": "MYsp2eu0_qI-display-0096",
+      "segment_id": "MYsp2eu0_qI-ja-0042"
+    },
+    {
+      "text": "使うというよりはスポーツや趣味、習い事",
+      "start_seconds": 336.88,
+      "end_seconds": 340.84,
+      "id": "MYsp2eu0_qI-display-0097",
+      "segment_id": "MYsp2eu0_qI-ja-0042"
+    },
+    {
+      "text": "など様々な活動に時間を使うことも共に",
+      "start_seconds": 340.84,
+      "end_seconds": 344.56,
+      "id": "MYsp2eu0_qI-display-0098",
+      "segment_id": "MYsp2eu0_qI-ja-0043"
+    },
+    {
+      "text": "大切にされているということです。",
+      "start_seconds": 344.56,
+      "end_seconds": 348.68,
+      "id": "MYsp2eu0_qI-display-0099",
+      "segment_id": "MYsp2eu0_qI-ja-0043"
+    },
+    {
+      "text": "僕のある友人は放課後になると必ず学校の",
+      "start_seconds": 348.68,
+      "end_seconds": 352.28,
+      "id": "MYsp2eu0_qI-display-0100",
+      "segment_id": "MYsp2eu0_qI-ja-0044"
+    },
+    {
+      "text": "体育館に行ってバレーボールの練習をして",
+      "start_seconds": 352.28,
+      "end_seconds": 354.639,
+      "id": "MYsp2eu0_qI-display-0101",
+      "segment_id": "MYsp2eu0_qI-ja-0044"
+    },
+    {
+      "text": "いました。",
+      "start_seconds": 354.639,
+      "end_seconds": 356.84,
+      "id": "MYsp2eu0_qI-display-0102",
+      "segment_id": "MYsp2eu0_qI-ja-0044"
+    },
+    {
+      "text": "彼はテスト期間でもその練習をやめません",
+      "start_seconds": 356.84,
+      "end_seconds": 359.24,
+      "id": "MYsp2eu0_qI-display-0103",
+      "segment_id": "MYsp2eu0_qI-ja-0045"
+    },
+    {
+      "text": "でした。",
+      "start_seconds": 359.24,
+      "end_seconds": 361.24,
+      "id": "MYsp2eu0_qI-display-0104",
+      "segment_id": "MYsp2eu0_qI-ja-0045"
+    },
+    {
+      "text": "彼はただ勉強も大切だけどこれは僕の好き",
+      "start_seconds": 361.24,
+      "end_seconds": 365.44,
+      "id": "MYsp2eu0_qI-display-0105",
+      "segment_id": "MYsp2eu0_qI-ja-0046"
+    },
+    {
+      "text": "なことだからと笑っていました。",
+      "start_seconds": 365.44,
+      "end_seconds": 369.96,
+      "id": "MYsp2eu0_qI-display-0106",
+      "segment_id": "MYsp2eu0_qI-ja-0046"
+    },
+    {
+      "text": "また僕のホストブラザーは地域の劇団に",
+      "start_seconds": 369.96,
+      "end_seconds": 373.24,
+      "id": "MYsp2eu0_qI-display-0107",
+      "segment_id": "MYsp2eu0_qI-ja-0047"
+    },
+    {
+      "text": "所属していて役者として活動していました",
+      "start_seconds": 373.24,
+      "end_seconds": 375.8,
+      "id": "MYsp2eu0_qI-display-0108",
+      "segment_id": "MYsp2eu0_qI-ja-0047"
+    },
+    {
+      "text": "。彼は本当に歌が上手でした。",
+      "start_seconds": 375.8,
+      "end_seconds": 381.4,
+      "id": "MYsp2eu0_qI-display-0109",
+      "segment_id": "MYsp2eu0_qI-ja-0047"
+    },
+    {
+      "text": "彼も演劇と弁学との両立を通して夢を",
+      "start_seconds": 381.4,
+      "end_seconds": 385.16,
+      "id": "MYsp2eu0_qI-display-0110",
+      "segment_id": "MYsp2eu0_qI-ja-0048"
+    },
+    {
+      "text": "追いかけているように感じられました。",
+      "start_seconds": 385.16,
+      "end_seconds": 389.319,
+      "id": "MYsp2eu0_qI-display-0111",
+      "segment_id": "MYsp2eu0_qI-ja-0048"
+    },
+    {
+      "text": "そんな彼らは勉強だけが全て勉強だけが",
+      "start_seconds": 389.319,
+      "end_seconds": 392.96,
+      "id": "MYsp2eu0_qI-display-0112",
+      "segment_id": "MYsp2eu0_qI-ja-0049"
+    },
+    {
+      "text": "人生ではないということを自然に理解して",
+      "start_seconds": 392.96,
+      "end_seconds": 395.72,
+      "id": "MYsp2eu0_qI-display-0113",
+      "segment_id": "MYsp2eu0_qI-ja-0049"
+    },
+    {
+      "text": "いるように見えました。",
+      "start_seconds": 395.72,
+      "end_seconds": 398.8,
+      "id": "MYsp2eu0_qI-display-0114",
+      "segment_id": "MYsp2eu0_qI-ja-0049"
+    },
+    {
+      "text": "多くの友人が自分はこれが好き。これは",
+      "start_seconds": 398.8,
+      "end_seconds": 402.8,
+      "id": "MYsp2eu0_qI-display-0115",
+      "segment_id": "MYsp2eu0_qI-ja-0050"
+    },
+    {
+      "text": "あまり好きじゃない。これは得意だけど",
+      "start_seconds": 402.8,
+      "end_seconds": 405.639,
+      "id": "MYsp2eu0_qI-display-0116",
+      "segment_id": "MYsp2eu0_qI-ja-0050"
+    },
+    {
+      "text": "これは苦手ということを驚くほどはっきり",
+      "start_seconds": 405.639,
+      "end_seconds": 408.919,
+      "id": "MYsp2eu0_qI-display-0117",
+      "segment_id": "MYsp2eu0_qI-ja-0050"
+    },
+    {
+      "text": "と自覚していました。",
+      "start_seconds": 408.919,
+      "end_seconds": 411.919,
+      "id": "MYsp2eu0_qI-display-0118",
+      "segment_id": "MYsp2eu0_qI-ja-0051"
+    },
+    {
+      "text": "それは1人1人が自分らしい人生を歩める",
+      "start_seconds": 411.919,
+      "end_seconds": 415.599,
+      "id": "MYsp2eu0_qI-display-0119",
+      "segment_id": "MYsp2eu0_qI-ja-0052"
+    },
+    {
+      "text": "ようし、自己理解を何よりも重視する社会",
+      "start_seconds": 415.599,
+      "end_seconds": 419.4,
+      "id": "MYsp2eu0_qI-display-0120",
+      "segment_id": "MYsp2eu0_qI-ja-0052"
+    },
+    {
+      "text": "システムがあるからこそ成り立っているの",
+      "start_seconds": 419.4,
+      "end_seconds": 421.4,
+      "id": "MYsp2eu0_qI-display-0121",
+      "segment_id": "MYsp2eu0_qI-ja-0052"
+    },
+    {
+      "text": "だと感じています。",
+      "start_seconds": 421.4,
+      "end_seconds": 425.28,
+      "id": "MYsp2eu0_qI-display-0122",
+      "segment_id": "MYsp2eu0_qI-ja-0053"
+    },
+    {
+      "text": "欧米では幼い頃からあなたは何になりたい",
+      "start_seconds": 425.319,
+      "end_seconds": 429.4,
+      "id": "MYsp2eu0_qI-display-0123",
+      "segment_id": "MYsp2eu0_qI-ja-0054"
+    },
+    {
+      "text": "のかと問われ続けることが多い一方、日本",
+      "start_seconds": 429.4,
+      "end_seconds": 433.72,
+      "id": "MYsp2eu0_qI-display-0124",
+      "segment_id": "MYsp2eu0_qI-ja-0054"
+    },
+    {
+      "text": "では集団への適用や学業を重視する傾向が",
+      "start_seconds": 433.72,
+      "end_seconds": 437.8,
+      "id": "MYsp2eu0_qI-display-0125",
+      "segment_id": "MYsp2eu0_qI-ja-0055"
+    },
+    {
+      "text": "強いと言われています。",
+      "start_seconds": 437.8,
+      "end_seconds": 441.08,
+      "id": "MYsp2eu0_qI-display-0126",
+      "segment_id": "MYsp2eu0_qI-ja-0055"
+    },
+    {
+      "text": "少なくとも日本には自分の興味や関心に",
+      "start_seconds": 441.08,
+      "end_seconds": 445.52,
+      "id": "MYsp2eu0_qI-display-0127",
+      "segment_id": "MYsp2eu0_qI-ja-0056"
+    },
+    {
+      "text": "ついて考える機会は決して多くはないと",
+      "start_seconds": 445.52,
+      "end_seconds": 449.12,
+      "id": "MYsp2eu0_qI-display-0128",
+      "segment_id": "MYsp2eu0_qI-ja-0056"
+    },
+    {
+      "text": "言えるのではないでしょうか。",
+      "start_seconds": 449.12,
+      "end_seconds": 453.16,
+      "id": "MYsp2eu0_qI-display-0129",
+      "segment_id": "MYsp2eu0_qI-ja-0057"
+    },
+    {
+      "text": "さて、留学後に気づいたことがありました",
+      "start_seconds": 453.319,
+      "end_seconds": 457.039,
+      "id": "MYsp2eu0_qI-display-0130",
+      "segment_id": "MYsp2eu0_qI-ja-0058"
+    },
+    {
+      "text": "。",
+      "start_seconds": 457.039,
+      "end_seconds": 459.039,
+      "id": "MYsp2eu0_qI-display-0131",
+      "segment_id": "MYsp2eu0_qI-ja-0058"
+    },
+    {
+      "text": "それは",
+      "start_seconds": 459.039,
+      "end_seconds": 460.72,
+      "id": "MYsp2eu0_qI-display-0132",
+      "segment_id": "MYsp2eu0_qI-ja-0059"
+    },
+    {
+      "text": "夢は探して見つけらすものではなく、大人",
+      "start_seconds": 460.72,
+      "end_seconds": 464.4,
+      "id": "MYsp2eu0_qI-display-0133",
+      "segment_id": "MYsp2eu0_qI-ja-0059"
+    },
+    {
+      "text": "と子供の間の時間における様々な出会いの",
+      "start_seconds": 464.4,
+      "end_seconds": 467.759,
+      "id": "MYsp2eu0_qI-display-0134",
+      "segment_id": "MYsp2eu0_qI-ja-0059"
+    },
+    {
+      "text": "中から形成されるということです。",
+      "start_seconds": 467.759,
+      "end_seconds": 472.52,
+      "id": "MYsp2eu0_qI-display-0135",
+      "segment_id": "MYsp2eu0_qI-ja-0060"
+    },
+    {
+      "text": "僕は初めから英語を好きになろうと思って",
+      "start_seconds": 472.52,
+      "end_seconds": 475.72,
+      "id": "MYsp2eu0_qI-display-0136",
+      "segment_id": "MYsp2eu0_qI-ja-0061"
+    },
+    {
+      "text": "いたわけでもではありません。ただ1人の",
+      "start_seconds": 475.72,
+      "end_seconds": 479.36,
+      "id": "MYsp2eu0_qI-display-0137",
+      "segment_id": "MYsp2eu0_qI-ja-0061"
+    },
+    {
+      "text": "教師との出会いがありました。",
+      "start_seconds": 479.36,
+      "end_seconds": 483.36,
+      "id": "MYsp2eu0_qI-display-0138",
+      "segment_id": "MYsp2eu0_qI-ja-0061"
+    },
+    {
+      "text": "僕は人生を変えようと思って留学をした",
+      "start_seconds": 483.36,
+      "end_seconds": 487.08,
+      "id": "MYsp2eu0_qI-display-0139",
+      "segment_id": "MYsp2eu0_qI-ja-0062"
+    },
+    {
+      "text": "わけでもありません。",
+      "start_seconds": 487.08,
+      "end_seconds": 489.84,
+      "id": "MYsp2eu0_qI-display-0140",
+      "segment_id": "MYsp2eu0_qI-ja-0062"
+    },
+    {
+      "text": "ただ新しい経験の中から様々な出会いと",
+      "start_seconds": 489.84,
+      "end_seconds": 494.52,
+      "id": "MYsp2eu0_qI-display-0141",
+      "segment_id": "MYsp2eu0_qI-ja-0063"
+    },
+    {
+      "text": "学びがありました。",
+      "start_seconds": 494.52,
+      "end_seconds": 497.639,
+      "id": "MYsp2eu0_qI-display-0142",
+      "segment_id": "MYsp2eu0_qI-ja-0063"
+    },
+    {
+      "text": "こうして振り返ってみるとその1つ1つが",
+      "start_seconds": 497.639,
+      "end_seconds": 500.36,
+      "id": "MYsp2eu0_qI-display-0143",
+      "segment_id": "MYsp2eu0_qI-ja-0064"
+    },
+    {
+      "text": "大きな軸となって今の僕の将来の夢に",
+      "start_seconds": 500.36,
+      "end_seconds": 503.68,
+      "id": "MYsp2eu0_qI-display-0144",
+      "segment_id": "MYsp2eu0_qI-ja-0064"
+    },
+    {
+      "text": "つがっているのです。",
+      "start_seconds": 503.68,
+      "end_seconds": 507.56,
+      "id": "MYsp2eu0_qI-display-0145",
+      "segment_id": "MYsp2eu0_qI-ja-0064"
+    },
+    {
+      "text": "僕は今国際公務員という道を目指してい",
+      "start_seconds": 507.96,
+      "end_seconds": 511.0,
+      "id": "MYsp2eu0_qI-display-0146",
+      "segment_id": "MYsp2eu0_qI-ja-0065"
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 511.0,
+      "end_seconds": 513.08,
+      "id": "MYsp2eu0_qI-display-0147",
+      "segment_id": "MYsp2eu0_qI-ja-0065"
+    },
+    {
+      "text": "英語という言語を通して人と人、国と国を",
+      "start_seconds": 513.08,
+      "end_seconds": 516.919,
+      "id": "MYsp2eu0_qI-display-0148",
+      "segment_id": "MYsp2eu0_qI-ja-0066"
+    },
+    {
+      "text": "結びつける仕事をしたいと思っています。",
+      "start_seconds": 516.919,
+      "end_seconds": 521.479,
+      "id": "MYsp2eu0_qI-display-0149",
+      "segment_id": "MYsp2eu0_qI-ja-0066"
+    },
+    {
+      "text": "この夢の実現に向けて今はこのXへの登壇",
+      "start_seconds": 521.479,
+      "end_seconds": 525.6,
+      "id": "MYsp2eu0_qI-display-0150",
+      "segment_id": "MYsp2eu0_qI-ja-0067"
+    },
+    {
+      "text": "を始め、様々な加害活動に取り組み、世界",
+      "start_seconds": 525.6,
+      "end_seconds": 529.16,
+      "id": "MYsp2eu0_qI-display-0151",
+      "segment_id": "MYsp2eu0_qI-ja-0067"
+    },
+    {
+      "text": "で活躍するための力を着実に磨いています",
+      "start_seconds": 529.16,
+      "end_seconds": 532.08,
+      "id": "MYsp2eu0_qI-display-0152",
+      "segment_id": "MYsp2eu0_qI-ja-0067"
+    },
+    {
+      "text": "。",
+      "start_seconds": 532.08,
+      "end_seconds": 534.32,
+      "id": "MYsp2eu0_qI-display-0153",
+      "segment_id": "MYsp2eu0_qI-ja-0068"
+    },
+    {
+      "text": "しかしこの夢は決して探して見つけた夢で",
+      "start_seconds": 534.32,
+      "end_seconds": 537.68,
+      "id": "MYsp2eu0_qI-display-0154",
+      "segment_id": "MYsp2eu0_qI-ja-0069"
+    },
+    {
+      "text": "はありません。出会いの中から少しずつ",
+      "start_seconds": 537.68,
+      "end_seconds": 541.68,
+      "id": "MYsp2eu0_qI-display-0155",
+      "segment_id": "MYsp2eu0_qI-ja-0069"
+    },
+    {
+      "text": "見えてきた夢です。",
+      "start_seconds": 541.68,
+      "end_seconds": 545.64,
+      "id": "MYsp2eu0_qI-display-0156",
+      "segment_id": "MYsp2eu0_qI-ja-0069"
+    },
+    {
+      "text": "僕が尊敬するYouTuberの英語のあ",
+      "start_seconds": 547.04,
+      "end_seconds": 550.079,
+      "id": "MYsp2eu0_qI-display-0157",
+      "segment_id": "MYsp2eu0_qI-ja-0070"
+    },
+    {
+      "text": "さんは次のようにおっしゃっています。",
+      "start_seconds": 550.079,
+      "end_seconds": 553.92,
+      "id": "MYsp2eu0_qI-display-0158",
+      "segment_id": "MYsp2eu0_qI-ja-0070"
+    },
+    {
+      "text": "人生は有限時間の最適配分だ。",
+      "start_seconds": 553.92,
+      "end_seconds": 559.079,
+      "id": "MYsp2eu0_qI-display-0159",
+      "segment_id": "MYsp2eu0_qI-ja-0071"
+    },
+    {
+      "text": "僕たちはどこでどんな時間を使うかにより",
+      "start_seconds": 559.079,
+      "end_seconds": 562.6,
+      "id": "MYsp2eu0_qI-display-0160",
+      "segment_id": "MYsp2eu0_qI-ja-0072"
+    },
+    {
+      "text": "どんな出会いがあるのか、どんな経験を",
+      "start_seconds": 562.6,
+      "end_seconds": 565.519,
+      "id": "MYsp2eu0_qI-display-0161",
+      "segment_id": "MYsp2eu0_qI-ja-0072"
+    },
+    {
+      "text": "するのか、そしてどんな夢が形成されるの",
+      "start_seconds": 565.519,
+      "end_seconds": 569.079,
+      "id": "MYsp2eu0_qI-display-0162",
+      "segment_id": "MYsp2eu0_qI-ja-0072"
+    },
+    {
+      "text": "かが様々に変わります。",
+      "start_seconds": 569.079,
+      "end_seconds": 573.48,
+      "id": "MYsp2eu0_qI-display-0163",
+      "segment_id": "MYsp2eu0_qI-ja-0073"
+    },
+    {
+      "text": "僕が今日ここで皆さんと共有したいのは",
+      "start_seconds": 573.48,
+      "end_seconds": 576.56,
+      "id": "MYsp2eu0_qI-display-0164",
+      "segment_id": "MYsp2eu0_qI-ja-0074"
+    },
+    {
+      "text": "単に夢を持とうというメッセージではあり",
+      "start_seconds": 576.56,
+      "end_seconds": 579.8,
+      "id": "MYsp2eu0_qI-display-0165",
+      "segment_id": "MYsp2eu0_qI-ja-0074"
+    },
+    {
+      "text": "ません。",
+      "start_seconds": 579.8,
+      "end_seconds": 582.0,
+      "id": "MYsp2eu0_qI-display-0166",
+      "segment_id": "MYsp2eu0_qI-ja-0074"
+    },
+    {
+      "text": "夢の原点に出会うための時間を僕たちは",
+      "start_seconds": 582.0,
+      "end_seconds": 584.959,
+      "id": "MYsp2eu0_qI-display-0167",
+      "segment_id": "MYsp2eu0_qI-ja-0075"
+    },
+    {
+      "text": "本当にモてているのかという問いです。",
+      "start_seconds": 584.959,
+      "end_seconds": 589.88,
+      "id": "MYsp2eu0_qI-display-0168",
+      "segment_id": "MYsp2eu0_qI-ja-0075"
+    },
+    {
+      "text": "冒頭にもお話ししたように時間は有限かつ",
+      "start_seconds": 589.88,
+      "end_seconds": 593.2,
+      "id": "MYsp2eu0_qI-display-0169",
+      "segment_id": "MYsp2eu0_qI-ja-0076"
+    },
+    {
+      "text": "早く過ぎ去ります。",
+      "start_seconds": 593.2,
+      "end_seconds": 596.48,
+      "id": "MYsp2eu0_qI-display-0170",
+      "segment_id": "MYsp2eu0_qI-ja-0076"
+    },
+    {
+      "text": "人生をより充実したものに、より豊かな",
+      "start_seconds": 596.48,
+      "end_seconds": 599.279,
+      "id": "MYsp2eu0_qI-display-0171",
+      "segment_id": "MYsp2eu0_qI-ja-0077"
+    },
+    {
+      "text": "ものにするためには限られた時間の中で",
+      "start_seconds": 599.279,
+      "end_seconds": 602.6,
+      "id": "MYsp2eu0_qI-display-0172",
+      "segment_id": "MYsp2eu0_qI-ja-0077"
+    },
+    {
+      "text": "自分は何に、自分は何に心が引かれるのか",
+      "start_seconds": 602.6,
+      "end_seconds": 606.0,
+      "id": "MYsp2eu0_qI-display-0173",
+      "segment_id": "MYsp2eu0_qI-ja-0077"
+    },
+    {
+      "text": "を早いうちに理解することが極めて重要だ",
+      "start_seconds": 606.0,
+      "end_seconds": 608.88,
+      "id": "MYsp2eu0_qI-display-0174",
+      "segment_id": "MYsp2eu0_qI-ja-0078"
+    },
+    {
+      "text": "と考えます。",
+      "start_seconds": 608.88,
+      "end_seconds": 611.44,
+      "id": "MYsp2eu0_qI-display-0175",
+      "segment_id": "MYsp2eu0_qI-ja-0078"
+    },
+    {
+      "text": "なぜなら自分の好きを早く知ることはそれ",
+      "start_seconds": 611.44,
+      "end_seconds": 616.079,
+      "id": "MYsp2eu0_qI-display-0176",
+      "segment_id": "MYsp2eu0_qI-ja-0079"
+    },
+    {
+      "text": "だけ長く自分らしい景色を楽しめることに",
+      "start_seconds": 616.079,
+      "end_seconds": 619.76,
+      "id": "MYsp2eu0_qI-display-0177",
+      "segment_id": "MYsp2eu0_qI-ja-0079"
+    },
+    {
+      "text": "つがるからです。",
+      "start_seconds": 619.76,
+      "end_seconds": 623.519,
+      "id": "MYsp2eu0_qI-display-0178",
+      "segment_id": "MYsp2eu0_qI-ja-0080"
+    },
+    {
+      "text": "だから間を生きる僕たち若者は日々の学校",
+      "start_seconds": 624.839,
+      "end_seconds": 629.88,
+      "id": "MYsp2eu0_qI-display-0179",
+      "segment_id": "MYsp2eu0_qI-ja-0081"
+    },
+    {
+      "text": "生活やうん、自分の興味のあること、挑戦",
+      "start_seconds": 629.88,
+      "end_seconds": 634.48,
+      "id": "MYsp2eu0_qI-display-0180",
+      "segment_id": "MYsp2eu0_qI-ja-0081"
+    },
+    {
+      "text": "したいこと、あるいは家族との交流や日々",
+      "start_seconds": 634.48,
+      "end_seconds": 639.079,
+      "id": "MYsp2eu0_qI-display-0181",
+      "segment_id": "MYsp2eu0_qI-ja-0082"
+    },
+    {
+      "text": "出会う人との時間や思い出、経験をもっと",
+      "start_seconds": 639.079,
+      "end_seconds": 643.2,
+      "id": "MYsp2eu0_qI-display-0182",
+      "segment_id": "MYsp2eu0_qI-ja-0082"
+    },
+    {
+      "text": "大切にするべきなのではないでしょうか。",
+      "start_seconds": 643.2,
+      "end_seconds": 648.1600000000001,
+      "id": "MYsp2eu0_qI-display-0183",
+      "segment_id": "MYsp2eu0_qI-ja-0083"
+    },
+    {
+      "text": "僕はいちご一という言葉がとても好きです",
+      "start_seconds": 648.92,
+      "end_seconds": 652.36,
+      "id": "MYsp2eu0_qI-display-0184",
+      "segment_id": "MYsp2eu0_qI-ja-0084"
+    },
+    {
+      "text": "。",
+      "start_seconds": 652.36,
+      "end_seconds": 654.24,
+      "id": "MYsp2eu0_qI-display-0185",
+      "segment_id": "MYsp2eu0_qI-ja-0084"
+    },
+    {
+      "text": "僕は今までたくさんの素晴らしい人々に",
+      "start_seconds": 654.24,
+      "end_seconds": 656.839,
+      "id": "MYsp2eu0_qI-display-0186",
+      "segment_id": "MYsp2eu0_qI-ja-0085"
+    },
+    {
+      "text": "出会ってきました。",
+      "start_seconds": 656.839,
+      "end_seconds": 659.6,
+      "id": "MYsp2eu0_qI-display-0187",
+      "segment_id": "MYsp2eu0_qI-ja-0085"
+    },
+    {
+      "text": "一生1度きりの出会い。その一瞬一瞬を",
+      "start_seconds": 659.6,
+      "end_seconds": 663.36,
+      "id": "MYsp2eu0_qI-display-0188",
+      "segment_id": "MYsp2eu0_qI-ja-0086"
+    },
+    {
+      "text": "全力で大切にすること。",
+      "start_seconds": 663.36,
+      "end_seconds": 666.8,
+      "id": "MYsp2eu0_qI-display-0189",
+      "segment_id": "MYsp2eu0_qI-ja-0086"
+    },
+    {
+      "text": "別れがあるから出会いがあり、人との",
+      "start_seconds": 666.8,
+      "end_seconds": 670.0,
+      "id": "MYsp2eu0_qI-display-0190",
+      "segment_id": "MYsp2eu0_qI-ja-0087"
+    },
+    {
+      "text": "関わりを通してお互いの人生に一期一する",
+      "start_seconds": 670.0,
+      "end_seconds": 673.32,
+      "id": "MYsp2eu0_qI-display-0191",
+      "segment_id": "MYsp2eu0_qI-ja-0087"
+    },
+    {
+      "text": "。それこそが自分らしい人生につがって",
+      "start_seconds": 673.32,
+      "end_seconds": 677.24,
+      "id": "MYsp2eu0_qI-display-0192",
+      "segment_id": "MYsp2eu0_qI-ja-0087"
+    },
+    {
+      "text": "いくのだと留学を通して気づかされました",
+      "start_seconds": 677.24,
+      "end_seconds": 679.959,
+      "id": "MYsp2eu0_qI-display-0193",
+      "segment_id": "MYsp2eu0_qI-ja-0088"
+    },
+    {
+      "text": "。",
+      "start_seconds": 679.959,
+      "end_seconds": 682.44,
+      "id": "MYsp2eu0_qI-display-0194",
+      "segment_id": "MYsp2eu0_qI-ja-0088"
+    },
+    {
+      "text": "この気づきがあったからこそ僕は今日最後",
+      "start_seconds": 682.44,
+      "end_seconds": 686.399,
+      "id": "MYsp2eu0_qI-display-0195",
+      "segment_id": "MYsp2eu0_qI-ja-0089"
+    },
+    {
+      "text": "にここにいる大人の皆さんへ、そして未来",
+      "start_seconds": 686.399,
+      "end_seconds": 690.56,
+      "id": "MYsp2eu0_qI-display-0196",
+      "segment_id": "MYsp2eu0_qI-ja-0089"
+    },
+    {
+      "text": "を生きる子供たちにどうしても共有したい",
+      "start_seconds": 690.56,
+      "end_seconds": 693.519,
+      "id": "MYsp2eu0_qI-display-0197",
+      "segment_id": "MYsp2eu0_qI-ja-0089"
+    },
+    {
+      "text": "アイデアがあります。",
+      "start_seconds": 693.519,
+      "end_seconds": 696.88,
+      "id": "MYsp2eu0_qI-display-0198",
+      "segment_id": "MYsp2eu0_qI-ja-0090"
+    },
+    {
+      "text": "子供たちを伝える大人の皆さんへ。",
+      "start_seconds": 696.88,
+      "end_seconds": 700.72,
+      "id": "MYsp2eu0_qI-display-0199",
+      "segment_id": "MYsp2eu0_qI-ja-0091"
+    },
+    {
+      "text": "子供たちが様々な出会いの中から自分を",
+      "start_seconds": 700.72,
+      "end_seconds": 705.16,
+      "id": "MYsp2eu0_qI-display-0200",
+      "segment_id": "MYsp2eu0_qI-ja-0092"
+    },
+    {
+      "text": "知るという経験を持つ早いうちから持つ",
+      "start_seconds": 705.16,
+      "end_seconds": 707.519,
+      "id": "MYsp2eu0_qI-display-0201",
+      "segment_id": "MYsp2eu0_qI-ja-0092"
+    },
+    {
+      "text": "ことはとても大切なのではないかと思い",
+      "start_seconds": 707.519,
+      "end_seconds": 710.04,
+      "id": "MYsp2eu0_qI-display-0202",
+      "segment_id": "MYsp2eu0_qI-ja-0092"
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 710.04,
+      "end_seconds": 712.36,
+      "id": "MYsp2eu0_qI-display-0203",
+      "segment_id": "MYsp2eu0_qI-ja-0092"
+    },
+    {
+      "text": "や習い事に参加することはそういった",
+      "start_seconds": 712.36,
+      "end_seconds": 715.079,
+      "id": "MYsp2eu0_qI-display-0204",
+      "segment_id": "MYsp2eu0_qI-ja-0093"
+    },
+    {
+      "text": "出会いのきっかけ作りとして十分に意義が",
+      "start_seconds": 715.079,
+      "end_seconds": 718.519,
+      "id": "MYsp2eu0_qI-display-0205",
+      "segment_id": "MYsp2eu0_qI-ja-0093"
+    },
+    {
+      "text": "あるのだと思います。",
+      "start_seconds": 718.519,
+      "end_seconds": 721.76,
+      "id": "MYsp2eu0_qI-display-0206",
+      "segment_id": "MYsp2eu0_qI-ja-0093"
+    },
+    {
+      "text": "またこの出会い作りは決してこう持つ親",
+      "start_seconds": 721.76,
+      "end_seconds": 725.44,
+      "id": "MYsp2eu0_qI-display-0207",
+      "segment_id": "MYsp2eu0_qI-ja-0094"
+    },
+    {
+      "text": "だけに責任があるものでもありません。",
+      "start_seconds": 725.44,
+      "end_seconds": 728.959,
+      "id": "MYsp2eu0_qI-display-0208",
+      "segment_id": "MYsp2eu0_qI-ja-0094"
+    },
+    {
+      "text": "教育として子供たちがどんな人になりたい",
+      "start_seconds": 728.959,
+      "end_seconds": 732.76,
+      "id": "MYsp2eu0_qI-display-0209",
+      "segment_id": "MYsp2eu0_qI-ja-0095"
+    },
+    {
+      "text": "のか、あるいはどんな人でありたいのかを",
+      "start_seconds": 732.76,
+      "end_seconds": 736.24,
+      "id": "MYsp2eu0_qI-display-0210",
+      "segment_id": "MYsp2eu0_qI-ja-0095"
+    },
+    {
+      "text": "考えさせることも学習の1つとして",
+      "start_seconds": 736.24,
+      "end_seconds": 738.72,
+      "id": "MYsp2eu0_qI-display-0211",
+      "segment_id": "MYsp2eu0_qI-ja-0095"
+    },
+    {
+      "text": "位置づけるべきなのではないでしょうか。",
+      "start_seconds": 738.72,
+      "end_seconds": 742.56,
+      "id": "MYsp2eu0_qI-display-0212",
+      "segment_id": "MYsp2eu0_qI-ja-0096"
+    },
+    {
+      "text": "例えば",
+      "start_seconds": 742.56,
+      "end_seconds": 744.36,
+      "id": "MYsp2eu0_qI-display-0213",
+      "segment_id": "MYsp2eu0_qI-ja-0097"
+    },
+    {
+      "text": "多くの小中学生が1度は経験するであろう",
+      "start_seconds": 744.36,
+      "end_seconds": 747.399,
+      "id": "MYsp2eu0_qI-display-0214",
+      "segment_id": "MYsp2eu0_qI-ja-0097"
+    },
+    {
+      "text": "職業体験。僕はこの機会をもっと増やす",
+      "start_seconds": 747.399,
+      "end_seconds": 751.92,
+      "id": "MYsp2eu0_qI-display-0215",
+      "segment_id": "MYsp2eu0_qI-ja-0097"
+    },
+    {
+      "text": "べきだと考えています。",
+      "start_seconds": 751.92,
+      "end_seconds": 754.959,
+      "id": "MYsp2eu0_qI-display-0216",
+      "segment_id": "MYsp2eu0_qI-ja-0098"
+    },
+    {
+      "text": "特にAIによる仕事の消失が懸念される",
+      "start_seconds": 754.959,
+      "end_seconds": 758.079,
+      "id": "MYsp2eu0_qI-display-0217",
+      "segment_id": "MYsp2eu0_qI-ja-0099"
+    },
+    {
+      "text": "時代だからこそまずは既存の仕事に仕事を",
+      "start_seconds": 758.079,
+      "end_seconds": 762.48,
+      "id": "MYsp2eu0_qI-display-0218",
+      "segment_id": "MYsp2eu0_qI-ja-0099"
+    },
+    {
+      "text": "理解しその上でこれまでいなかったような",
+      "start_seconds": 762.48,
+      "end_seconds": 766.32,
+      "id": "MYsp2eu0_qI-display-0219",
+      "segment_id": "MYsp2eu0_qI-ja-0099"
+    },
+    {
+      "text": "既存の仕事に囚われない働き方を見出す",
+      "start_seconds": 766.32,
+      "end_seconds": 769.32,
+      "id": "MYsp2eu0_qI-display-0220",
+      "segment_id": "MYsp2eu0_qI-ja-0100"
+    },
+    {
+      "text": "必要があるのです。",
+      "start_seconds": 769.32,
+      "end_seconds": 772.76,
+      "id": "MYsp2eu0_qI-display-0221",
+      "segment_id": "MYsp2eu0_qI-ja-0100"
+    },
+    {
+      "text": "あるいは子供たち自らがテーマを設定し",
+      "start_seconds": 772.76,
+      "end_seconds": 776.32,
+      "id": "MYsp2eu0_qI-display-0222",
+      "segment_id": "MYsp2eu0_qI-ja-0101"
+    },
+    {
+      "text": "探求を行う総合的な探求の時間。",
+      "start_seconds": 776.32,
+      "end_seconds": 780.8,
+      "id": "MYsp2eu0_qI-display-0223",
+      "segment_id": "MYsp2eu0_qI-ja-0101"
+    },
+    {
+      "text": "僕はこの時間を使って単に社会課題解決に",
+      "start_seconds": 780.8,
+      "end_seconds": 784.6,
+      "id": "MYsp2eu0_qI-display-0224",
+      "segment_id": "MYsp2eu0_qI-ja-0102"
+    },
+    {
+      "text": "向けた調べ学習をするのではなく、自分が",
+      "start_seconds": 784.6,
+      "end_seconds": 788.48,
+      "id": "MYsp2eu0_qI-display-0225",
+      "segment_id": "MYsp2eu0_qI-ja-0102"
+    },
+    {
+      "text": "何に好奇心を注られるのかを認識でき、",
+      "start_seconds": 788.48,
+      "end_seconds": 794.0,
+      "id": "MYsp2eu0_qI-display-0226",
+      "segment_id": "MYsp2eu0_qI-ja-0103"
+    },
+    {
+      "text": "え、それぞれの分野で自分らしい探求が",
+      "start_seconds": 794.0,
+      "end_seconds": 796.72,
+      "id": "MYsp2eu0_qI-display-0227",
+      "segment_id": "MYsp2eu0_qI-ja-0103"
+    },
+    {
+      "text": "できるようなカリキュラムと指導にする",
+      "start_seconds": 796.72,
+      "end_seconds": 799.279,
+      "id": "MYsp2eu0_qI-display-0228",
+      "segment_id": "MYsp2eu0_qI-ja-0103"
+    },
+    {
+      "text": "べきだと思います。",
+      "start_seconds": 799.279,
+      "end_seconds": 803.04,
+      "id": "MYsp2eu0_qI-display-0229",
+      "segment_id": "MYsp2eu0_qI-ja-0104"
+    },
+    {
+      "text": "こうした多様な経験を通して子供たち自ら",
+      "start_seconds": 803.04,
+      "end_seconds": 806.24,
+      "id": "MYsp2eu0_qI-display-0230",
+      "segment_id": "MYsp2eu0_qI-ja-0105"
+    },
+    {
+      "text": "が自分の好きなことや得意なことを",
+      "start_seconds": 806.24,
+      "end_seconds": 808.92,
+      "id": "MYsp2eu0_qI-display-0231",
+      "segment_id": "MYsp2eu0_qI-ja-0105"
+    },
+    {
+      "text": "見つけるまで待ってあげる。",
+      "start_seconds": 808.92,
+      "end_seconds": 811.72,
+      "id": "MYsp2eu0_qI-display-0232",
+      "segment_id": "MYsp2eu0_qI-ja-0105"
+    },
+    {
+      "text": "そうした意識を持つこと、そうした意識を",
+      "start_seconds": 811.72,
+      "end_seconds": 813.76,
+      "id": "MYsp2eu0_qI-display-0233",
+      "segment_id": "MYsp2eu0_qI-ja-0106"
+    },
+    {
+      "text": "大人が持つことで子供たちは様々な生き方",
+      "start_seconds": 813.76,
+      "end_seconds": 816.92,
+      "id": "MYsp2eu0_qI-display-0234",
+      "segment_id": "MYsp2eu0_qI-ja-0106"
+    },
+    {
+      "text": "を学び、ありたい姿を見つけ出すことが",
+      "start_seconds": 816.92,
+      "end_seconds": 819.56,
+      "id": "MYsp2eu0_qI-display-0235",
+      "segment_id": "MYsp2eu0_qI-ja-0106"
+    },
+    {
+      "text": "できると僕は信じています。",
+      "start_seconds": 819.56,
+      "end_seconds": 823.48,
+      "id": "MYsp2eu0_qI-display-0236",
+      "segment_id": "MYsp2eu0_qI-ja-0106"
+    },
+    {
+      "text": "子供の頃の多様な経験はその人らしさを",
+      "start_seconds": 823.48,
+      "end_seconds": 826.44,
+      "id": "MYsp2eu0_qI-display-0237",
+      "segment_id": "MYsp2eu0_qI-ja-0107"
+    },
+    {
+      "text": "形づく大切な要素になると感じています。",
+      "start_seconds": 826.44,
+      "end_seconds": 831.44,
+      "id": "MYsp2eu0_qI-display-0238",
+      "segment_id": "MYsp2eu0_qI-ja-0107"
+    },
+    {
+      "text": "だから社会として子供たちが勉強だけ",
+      "start_seconds": 831.44,
+      "end_seconds": 835.56,
+      "id": "MYsp2eu0_qI-display-0239",
+      "segment_id": "MYsp2eu0_qI-ja-0108"
+    },
+    {
+      "text": "に囚われることなく、自分の好きなことに",
+      "start_seconds": 835.56,
+      "end_seconds": 839.0,
+      "id": "MYsp2eu0_qI-display-0240",
+      "segment_id": "MYsp2eu0_qI-ja-0108"
+    },
+    {
+      "text": "も全力で挑戦し、豊かな将来設計ができる",
+      "start_seconds": 839.0,
+      "end_seconds": 842.639,
+      "id": "MYsp2eu0_qI-display-0241",
+      "segment_id": "MYsp2eu0_qI-ja-0108"
+    },
+    {
+      "text": "雰囲気を作ることが非常に重要だと思い",
+      "start_seconds": 842.639,
+      "end_seconds": 845.32,
+      "id": "MYsp2eu0_qI-display-0242",
+      "segment_id": "MYsp2eu0_qI-ja-0109"
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 845.32,
+      "end_seconds": 848.48,
+      "id": "MYsp2eu0_qI-display-0243",
+      "segment_id": "MYsp2eu0_qI-ja-0109"
+    },
+    {
+      "text": "そして今まさに間の時間を生きている皆",
+      "start_seconds": 848.639,
+      "end_seconds": 852.6,
+      "id": "MYsp2eu0_qI-display-0244",
+      "segment_id": "MYsp2eu0_qI-ja-0110"
+    },
+    {
+      "text": "さんへ。",
+      "start_seconds": 852.6,
+      "end_seconds": 855.24,
+      "id": "MYsp2eu0_qI-display-0245",
+      "segment_id": "MYsp2eu0_qI-ja-0110"
+    },
+    {
+      "text": "今何に興味があるか分からないという人は",
+      "start_seconds": 855.24,
+      "end_seconds": 858.68,
+      "id": "MYsp2eu0_qI-display-0246",
+      "segment_id": "MYsp2eu0_qI-ja-0111"
+    },
+    {
+      "text": "決して少なくはありません。",
+      "start_seconds": 858.68,
+      "end_seconds": 862.6,
+      "id": "MYsp2eu0_qI-display-0247",
+      "segment_id": "MYsp2eu0_qI-ja-0111"
+    },
+    {
+      "text": "限られた時間の中でどのように生きること",
+      "start_seconds": 862.6,
+      "end_seconds": 865.959,
+      "id": "MYsp2eu0_qI-display-0248",
+      "segment_id": "MYsp2eu0_qI-ja-0112"
+    },
+    {
+      "text": "が自分にとって豊かな人生につがるのか",
+      "start_seconds": 865.959,
+      "end_seconds": 870.759,
+      "id": "MYsp2eu0_qI-display-0249",
+      "segment_id": "MYsp2eu0_qI-ja-0112"
+    },
+    {
+      "text": "すぐに答えが見つかる問いではありません",
+      "start_seconds": 870.759,
+      "end_seconds": 872.92,
+      "id": "MYsp2eu0_qI-display-0250",
+      "segment_id": "MYsp2eu0_qI-ja-0112"
+    },
+    {
+      "text": "。",
+      "start_seconds": 872.92,
+      "end_seconds": 875.079,
+      "id": "MYsp2eu0_qI-display-0251",
+      "segment_id": "MYsp2eu0_qI-ja-0113"
+    },
+    {
+      "text": "何かにガムシラに取り組んだり新しいこと",
+      "start_seconds": 875.079,
+      "end_seconds": 877.92,
+      "id": "MYsp2eu0_qI-display-0252",
+      "segment_id": "MYsp2eu0_qI-ja-0114"
+    },
+    {
+      "text": "に全力で挑戦することはその答えのその",
+      "start_seconds": 877.92,
+      "end_seconds": 881.519,
+      "id": "MYsp2eu0_qI-display-0253",
+      "segment_id": "MYsp2eu0_qI-ja-0114"
+    },
+    {
+      "text": "答えを見つけるための1つの鍵になり得る",
+      "start_seconds": 881.519,
+      "end_seconds": 884.12,
+      "id": "MYsp2eu0_qI-display-0254",
+      "segment_id": "MYsp2eu0_qI-ja-0114"
+    },
+    {
+      "text": "と考えます。",
+      "start_seconds": 884.12,
+      "end_seconds": 887.8,
+      "id": "MYsp2eu0_qI-display-0255",
+      "segment_id": "MYsp2eu0_qI-ja-0115"
+    },
+    {
+      "text": "そうして大人と子供の間の時間に出会った",
+      "start_seconds": 888.199,
+      "end_seconds": 891.759,
+      "id": "MYsp2eu0_qI-display-0256",
+      "segment_id": "MYsp2eu0_qI-ja-0116"
+    },
+    {
+      "text": "人やものがより豊かな将来設計や進路選択",
+      "start_seconds": 891.759,
+      "end_seconds": 896.12,
+      "id": "MYsp2eu0_qI-display-0257",
+      "segment_id": "MYsp2eu0_qI-ja-0116"
+    },
+    {
+      "text": "に、洗路選択に導く家になると僕は信じて",
+      "start_seconds": 896.12,
+      "end_seconds": 899.48,
+      "id": "MYsp2eu0_qI-display-0258",
+      "segment_id": "MYsp2eu0_qI-ja-0116"
+    },
+    {
+      "text": "います。",
+      "start_seconds": 899.48,
+      "end_seconds": 901.639,
+      "id": "MYsp2eu0_qI-display-0259",
+      "segment_id": "MYsp2eu0_qI-ja-0117"
+    },
+    {
+      "text": "この間の時間を持てているのか、一度自分",
+      "start_seconds": 901.639,
+      "end_seconds": 904.8,
+      "id": "MYsp2eu0_qI-display-0260",
+      "segment_id": "MYsp2eu0_qI-ja-0118"
+    },
+    {
+      "text": "自身に問いかけてみてください。",
+      "start_seconds": 904.8,
+      "end_seconds": 909.279,
+      "id": "MYsp2eu0_qI-display-0261",
+      "segment_id": "MYsp2eu0_qI-ja-0118"
+    },
+    {
+      "text": "僕たちはそれぞれ終点のある電車に乗って",
+      "start_seconds": 909.519,
+      "end_seconds": 912.16,
+      "id": "MYsp2eu0_qI-display-0262",
+      "segment_id": "MYsp2eu0_qI-ja-0119"
+    },
+    {
+      "text": "います。",
+      "start_seconds": 912.16,
+      "end_seconds": 914.48,
+      "id": "MYsp2eu0_qI-display-0263",
+      "segment_id": "MYsp2eu0_qI-ja-0119"
+    },
+    {
+      "text": "人生は思っているよりも短い。だからこの",
+      "start_seconds": 914.48,
+      "end_seconds": 918.399,
+      "id": "MYsp2eu0_qI-display-0264",
+      "segment_id": "MYsp2eu0_qI-ja-0120"
+    },
+    {
+      "text": "時間を何に使うのか。",
+      "start_seconds": 918.399,
+      "end_seconds": 921.399,
+      "id": "MYsp2eu0_qI-display-0265",
+      "segment_id": "MYsp2eu0_qI-ja-0120"
+    },
+    {
+      "text": "その選択こそが窓から見える景色をり、僕",
+      "start_seconds": 921.399,
+      "end_seconds": 925.399,
+      "id": "MYsp2eu0_qI-display-0266",
+      "segment_id": "MYsp2eu0_qI-ja-0121"
+    },
+    {
+      "text": "たちの人生を立ちづくっていくことになる",
+      "start_seconds": 925.399,
+      "end_seconds": 927.68,
+      "id": "MYsp2eu0_qI-display-0267",
+      "segment_id": "MYsp2eu0_qI-ja-0121"
+    },
+    {
+      "text": "と思います。ご成聴ありがとうございまし",
+      "start_seconds": 927.68,
+      "end_seconds": 930.8,
+      "id": "MYsp2eu0_qI-display-0268",
+      "segment_id": "MYsp2eu0_qI-ja-0121"
+    },
+    {
+      "text": "た。",
+      "start_seconds": 930.8,
+      "end_seconds": 933.92,
+      "id": "MYsp2eu0_qI-display-0269",
+      "segment_id": "MYsp2eu0_qI-ja-0122"
+    }
+  ]
+}

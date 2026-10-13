@@ -49,6 +49,8 @@ function createPlayer(
     Date,
     window: {
       updateShadowing: (_next: object) => undefined,
+      configureQuiz: (_questions: object[], _hold: boolean) => undefined,
+      jumpToQuiz: (_id: string) => undefined,
       ReactNativeWebView: { postMessage },
       addEventListener: (name: string, callback: () => void) => {
         pageEvents[name] = callback;
@@ -82,6 +84,9 @@ function createPlayer(
       currentTime = seconds;
     },
     update: (next: object) => sandbox.window.updateShadowing(next),
+    quiz: (questions: { id: string; seconds: number }[], hold = false) =>
+      sandbox.window.configureQuiz(questions, hold),
+    jumpToQuiz: (id: string) => sandbox.window.jumpToQuiz(id),
     state: (data: number) => {
       currentState = data;
       events.onStateChange({ target: player, data });
@@ -93,6 +98,119 @@ beforeEach(() => jest.useFakeTimers());
 afterEach(() => {
   jest.clearAllTimers();
   jest.useRealTimers();
+});
+
+test('jumping targets the chosen question after seeking finishes, without asking earlier questions first', () => {
+  const clip = createPlayer(1, false, [example], true);
+  clip.quiz([
+    { id: 'q1', seconds: 46.2 },
+    { id: 'q2', seconds: 60 },
+  ]);
+  clip.player.seekTo.mockImplementationOnce(() => {}); // The real iframe seeks asynchronously.
+  clip.jumpToQuiz('q2');
+  expect(clip.player.seekTo).toHaveBeenCalledWith(60, true);
+  clip.state(2);
+  jest.advanceTimersByTime(100);
+  expect(
+    clip.postMessage.mock.calls.filter(
+      ([message]) => JSON.parse(message).type === 'quiz-question',
+    ),
+  ).toHaveLength(0);
+  clip.setTime(60);
+  jest.advanceTimersByTime(100);
+  expect(clip.postMessage).toHaveBeenLastCalledWith(
+    '{"type":"quiz-question","code":{"id":"q2"}}',
+  );
+  clip.quiz([{ id: 'q1', seconds: 46.2 }]);
+  clip.state(1);
+  jest.advanceTimersByTime(100);
+  expect(
+    clip.postMessage.mock.calls.filter(
+      ([message]) => JSON.parse(message).type === 'quiz-question',
+    ),
+  ).toHaveLength(1);
+  clip.jumpToQuiz('q1');
+  clip.state(2);
+  jest.advanceTimersByTime(100);
+  expect(clip.postMessage).toHaveBeenLastCalledWith(
+    '{"type":"quiz-question","code":{"id":"q1"}}',
+  );
+});
+
+test('quiz pauses after evidence ends and cannot resume until the question is acknowledged', () => {
+  const clip = createPlayer(1, false, [example], true);
+  const checkpoints = [
+    { id: 'q1', seconds: 46.2 },
+    { id: 'q2', seconds: 60 },
+  ];
+  clip.quiz(checkpoints);
+  clip.setTime(46.19);
+  jest.advanceTimersByTime(100);
+  expect(clip.player.pauseVideo).not.toHaveBeenCalled();
+  clip.setTime(46.2);
+  jest.advanceTimersByTime(100);
+  expect(clip.player.pauseVideo).toHaveBeenCalled();
+  expect(clip.postMessage).toHaveBeenCalledWith(
+    '{"type":"quiz-question","code":{"id":"q1"}}',
+  );
+  clip.state(2);
+  clip.state(1); // Attempting Play cannot dismiss an unanswered question.
+  expect(
+    clip.postMessage.mock.calls.filter(
+      ([message]) => JSON.parse(message).type === 'quiz-question',
+    ),
+  ).toHaveLength(1);
+  clip.quiz([checkpoints[1]]);
+  clip.state(1);
+  clip.setTime(60);
+  jest.advanceTimersByTime(100);
+  expect(clip.postMessage).toHaveBeenCalledWith(
+    '{"type":"quiz-question","code":{"id":"q2"}}',
+  );
+  clip.quiz([]);
+  clip.player.pauseVideo.mockClear();
+  clip.state(1);
+  clip.setTime(80);
+  jest.advanceTimersByTime(100);
+  expect(clip.player.pauseVideo).not.toHaveBeenCalled();
+});
+
+test('seeking forward offers overdue questions in order and rewinding does not repeat answered ones', () => {
+  const clip = createPlayer(1, false, [example], true);
+  clip.quiz([
+    { id: 'q1', seconds: 46.2 },
+    { id: 'q2', seconds: 60 },
+  ]);
+  clip.setTime(70);
+  jest.advanceTimersByTime(100);
+  expect(clip.postMessage).toHaveBeenLastCalledWith(
+    '{"type":"quiz-question","code":{"id":"q1"}}',
+  );
+  clip.quiz([{ id: 'q2', seconds: 60 }]);
+  clip.state(1);
+  expect(clip.postMessage).toHaveBeenLastCalledWith(
+    '{"type":"quiz-question","code":{"id":"q2"}}',
+  );
+  clip.quiz([]);
+  clip.setTime(42.5);
+  clip.state(1);
+  clip.setTime(70);
+  jest.advanceTimersByTime(100);
+  expect(
+    clip.postMessage.mock.calls.filter(
+      ([message]) => JSON.parse(message).type === 'quiz-question',
+    ),
+  ).toHaveLength(2);
+});
+
+test('quiz also asks the last question when playback ends at its evidence boundary', () => {
+  const clip = createPlayer(1, false, [example], true);
+  clip.quiz([{ id: 'last', seconds: 46.2 }]);
+  clip.setTime(46.2);
+  clip.state(0);
+  expect(clip.postMessage).toHaveBeenCalledWith(
+    '{"type":"quiz-question","code":{"id":"last"}}',
+  );
 });
 
 test('pauses once at the caption end and lets the user resume the rest of the video', () => {

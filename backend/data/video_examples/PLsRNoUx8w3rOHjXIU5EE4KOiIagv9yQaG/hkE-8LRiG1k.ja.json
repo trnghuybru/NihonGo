@@ -1,0 +1,5101 @@
+{
+  "schema_version": 1,
+  "video": {
+    "youtube_id": "hkE-8LRiG1k",
+    "title": "Redrawing the Boundaries of the Self Through Robots | Yuko Giga | TEDxICU",
+    "channel": "TEDx Talks",
+    "duration_seconds": 1078
+  },
+  "caption_track": {
+    "language": "ja",
+    "kind": "asr",
+    "source": "youtube_automatic"
+  },
+  "source_playlist": "https://www.youtube.com/playlist?list=PLsRNoUx8w3rOHjXIU5EE4KOiIagv9yQaG",
+  "fetched_at": "2026-10-13T13:24:35.968178+00:00",
+  "segment_count": 122,
+  "segments": [
+    {
+      "text": "[音楽]",
+      "start_seconds": 4.584,
+      "end_seconds": 6.603999999999999,
+      "id": "hkE-8LRiG1k-ja-0001",
+      "sequence": 1
+    },
+    {
+      "text": "Orbit[拍手]",
+      "start_seconds": 7.919,
+      "end_seconds": 12.5,
+      "id": "hkE-8LRiG1k-ja-0002",
+      "sequence": 2
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 15.065,
+      "end_seconds": 17.085,
+      "id": "hkE-8LRiG1k-ja-0003",
+      "sequence": 3
+    },
+    {
+      "text": "なんですが",
+      "start_seconds": 28.599,
+      "end_seconds": 32.08,
+      "id": "hkE-8LRiG1k-ja-0004",
+      "sequence": 4
+    },
+    {
+      "text": "あなたの体に長く残ってる傷ってありますか?",
+      "start_seconds": 35.76,
+      "end_seconds": 42.2,
+      "id": "hkE-8LRiG1k-ja-0005",
+      "sequence": 5
+    },
+    {
+      "text": "もしかしたら大きな手術を経験した方や事故にあったなんて方もいらっしゃるかもしれません。",
+      "start_seconds": 42.2,
+      "end_seconds": 50.719,
+      "id": "hkE-8LRiG1k-ja-0006",
+      "sequence": 6
+    },
+    {
+      "text": "でもそんな経験したことないよっていう方でも子供の時にぶつけたり転んだりしてできたようなちょっとした怪我のような",
+      "start_seconds": 50.719,
+      "end_seconds": 61.039,
+      "id": "hkE-8LRiG1k-ja-0007",
+      "sequence": 7
+    },
+    {
+      "text": "もってあるんじゃないでしょうか。",
+      "start_seconds": 61.039,
+      "end_seconds": 66.12,
+      "id": "hkE-8LRiG1k-ja-0008",
+      "sequence": 8
+    },
+    {
+      "text": "もしあるよっていう方はその傷ができた時のことを少し思い出してみて欲しくて、その時何歳だったのかなとか、",
+      "start_seconds": 66.159,
+      "end_seconds": 77.28,
+      "id": "hkE-8LRiG1k-ja-0009",
+      "sequence": 9
+    },
+    {
+      "text": "どこでだったかなとか、誰と一緒にいたのかなってことをちょっと思い出してみて欲しいんですね。",
+      "start_seconds": 77.28,
+      "end_seconds": 85.28,
+      "id": "hkE-8LRiG1k-ja-0010",
+      "sequence": 10
+    },
+    {
+      "text": "今私がお聞きしたいのはあなたにあるその傷、消せるとしたら消したいですかっていうことなんです。",
+      "start_seconds": 86.2,
+      "end_seconds": 96.24,
+      "id": "hkE-8LRiG1k-ja-0011",
+      "sequence": 11
+    },
+    {
+      "text": "人によっては当たり前じゃん。それは消したいよって思う人もいると思いますし、いや、この傷見るとあの時の状況を思い出して懐かしいから消さなくてもいい",
+      "start_seconds": 96.24,
+      "end_seconds": 107.719,
+      "id": "hkE-8LRiG1k-ja-0012",
+      "sequence": 12
+    },
+    {
+      "text": "かなっていう人もいるかと思います。",
+      "start_seconds": 107.719,
+      "end_seconds": 112.28,
+      "id": "hkE-8LRiG1k-ja-0013",
+      "sequence": 13
+    },
+    {
+      "text": "で、私の足首にも見えるようにちょっとしてきたんですけど、傷が残っていて、ま、11歳の時に学校の皇帝で転んだんです",
+      "start_seconds": 112.28,
+      "end_seconds": 121.88,
+      "id": "hkE-8LRiG1k-ja-0014",
+      "sequence": 14
+    },
+    {
+      "text": "ね。で、その時はあんまり言いたくなかったんですけど、せっかく遊んでるのに、あ、保険室行くのやだなって思ったこととか、あと保険室に行った後の、あの、なんて",
+      "start_seconds": 121.88,
+      "end_seconds": 132.52,
+      "id": "hkE-8LRiG1k-ja-0015",
+      "sequence": 15
+    },
+    {
+      "text": "言うんですか、独特の匂いみたいなあのとかも結構思い起こされてくるので、まあ、消さなくてもいいかなって思ったりしています。",
+      "start_seconds": 132.52,
+      "end_seconds": 143.4,
+      "id": "hkE-8LRiG1k-ja-0016",
+      "sequence": 16
+    },
+    {
+      "text": "その辺のこういう傷を消したいか消したくないかの感覚って全然人によって違うんだよって話を今日はしたいと思います。",
+      "start_seconds": 143.4,
+      "end_seconds": 154.519,
+      "id": "hkE-8LRiG1k-ja-0017",
+      "sequence": 17
+    },
+    {
+      "text": "申し遅れました。私義裕子と申しまして、ソニーという会社でロボットを作っています。",
+      "start_seconds": 154.519,
+      "end_seconds": 162.56,
+      "id": "hkE-8LRiG1k-ja-0018",
+      "sequence": 18
+    },
+    {
+      "text": "いろんなロボットを作ってきてるんですけど、ま、1番世の中に出回ってるのは",
+      "start_seconds": 162.56,
+      "end_seconds": 170.44,
+      "id": "hkE-8LRiG1k-ja-0019",
+      "sequence": 19
+    },
+    {
+      "text": "スライドが動かないけど、次に、あ、お願いします。はい。この犬の形をしたものかなって思います。で、これ一般の方々向けに向けて作ってるものなので、ま、",
+      "start_seconds": 171.36,
+      "end_seconds": 181.84,
+      "id": "hkE-8LRiG1k-ja-0020",
+      "sequence": 20
+    },
+    {
+      "text": "もしかしたら目にしたことがある方もいらっしゃるかなって思います。で、これ犬の形してるので作ってる時って、ま、疑似生物を作ってるようなもんなんですよ",
+      "start_seconds": 181.84,
+      "end_seconds": 191.239,
+      "id": "hkE-8LRiG1k-ja-0021",
+      "sequence": 21
+    },
+    {
+      "text": "ね。なので、ま、例えばこう性別があって、オとかメスとかいた方が面白いのかなって思ったりとか、性格どうしようとかって思ったりするんですけど、ま、私が1番",
+      "start_seconds": 191.239,
+      "end_seconds": 202.239,
+      "id": "hkE-8LRiG1k-ja-0022",
+      "sequence": 22
+    },
+    {
+      "text": "こだわったのはもうとにかく命令に従わないっていうことだったんです。",
+      "start_seconds": 202.239,
+      "end_seconds": 209.0,
+      "id": "hkE-8LRiG1k-ja-0023",
+      "sequence": 23
+    },
+    {
+      "text": "え、ロボットを作る時って、まあ大体人って命令に従わせよう、従わせようって思うものなんですね。でも私はこの製品の性格を考えて逆にもう全然言うこと聞か",
+      "start_seconds": 209.0,
+      "end_seconds": 220.48,
+      "id": "hkE-8LRiG1k-ja-0024",
+      "sequence": 24
+    },
+    {
+      "text": "ない方がいいって思いました。で、それなんでかって言うと、自分が子育てをしてて思うんですけど結局人ってもう自分の",
+      "start_seconds": 220.48,
+      "end_seconds": 229.519,
+      "id": "hkE-8LRiG1k-ja-0025",
+      "sequence": 25
+    },
+    {
+      "text": "言うことを全く聞かない。あの、自分とは全く別の個体であるっていうところに対してこの無限の愛情を感じるのであって、全部命令を聞いたり、言うことを聞いたり",
+      "start_seconds": 229.519,
+      "end_seconds": 239.76,
+      "id": "hkE-8LRiG1k-ja-0026",
+      "sequence": 26
+    },
+    {
+      "text": "してしまうともう関係がこう対じゃなくなってしまう。で、じゃなくなっちゃうともう興味がなくなっちゃうんですよね。なので、こういう長く一緒に過ごす",
+      "start_seconds": 239.76,
+      "end_seconds": 249.439,
+      "id": "hkE-8LRiG1k-ja-0027",
+      "sequence": 27
+    },
+    {
+      "text": "ようなロボットを作るからにはもう言うこと聞かない方がいいと思いました。",
+      "start_seconds": 249.439,
+      "end_seconds": 255.319,
+      "id": "hkE-8LRiG1k-ja-0028",
+      "sequence": 28
+    },
+    {
+      "text": "で、もちろん反対する人もたくさんいて、そんなんわけないだろうとかすごい言われたんですけど、ま、1人ずつせて説得していって、最終的には全く言うことを聞か",
+      "start_seconds": 255.319,
+      "end_seconds": 265.36,
+      "id": "hkE-8LRiG1k-ja-0029",
+      "sequence": 29
+    },
+    {
+      "text": "ないロボットにしました。",
+      "start_seconds": 265.36,
+      "end_seconds": 268.479,
+      "id": "hkE-8LRiG1k-ja-0030",
+      "sequence": 30
+    },
+    {
+      "text": "で、ま、ロボットっていわゆるこう、ま、家電製品なんですよね。で、冷蔵庫とか洗濯機と変わらないわけです。でもこういう生き物の形をしてると",
+      "start_seconds": 268.479,
+      "end_seconds": 278.88,
+      "id": "hkE-8LRiG1k-ja-0031",
+      "sequence": 31
+    },
+    {
+      "text": "、ま、すごく深い愛情を注いでくれる方が非常に多くて、え、お客様からの要望ももう全然他の家電製品と違うんですね。え、例えば、ま、修理に出さなきゃいけない",
+      "start_seconds": 278.88,
+      "end_seconds": 290.68,
+      "id": "hkE-8LRiG1k-ja-0032",
+      "sequence": 32
+    },
+    {
+      "text": "時とかってあるんですけど、で、その修理を出す時とかに電話かってくるわけですよ。あの、寂しくてしょうがないんですって。",
+      "start_seconds": 290.68,
+      "end_seconds": 299.56,
+      "id": "hkE-8LRiG1k-ja-0033",
+      "sequence": 33
+    },
+    {
+      "text": "はあ、そう[鼻息]ですか。え、寂しくてしょうがないんで、今そちらでうちの子がどう過ごしてるかちょっと教えてくれませんかって言われたことがあります。",
+      "start_seconds": 299.56,
+      "end_seconds": 309.96,
+      "id": "hkE-8LRiG1k-ja-0034",
+      "sequence": 34
+    },
+    {
+      "text": "もちろん本当のことなんて言えません。あ、オタクの子今文化されてバラバラですなんて言えないわけなんですよ。生き物と",
+      "start_seconds": 309.96,
+      "end_seconds": 319.4,
+      "id": "hkE-8LRiG1k-ja-0035",
+      "sequence": 35
+    },
+    {
+      "text": "いう点なので。なので、あ、大丈夫ですよ。オタクのなんとかちゃん、今すごく元気にしています。ご心配なさらないで",
+      "start_seconds": 319.4,
+      "end_seconds": 327.479,
+      "id": "hkE-8LRiG1k-ja-0036",
+      "sequence": 36
+    },
+    {
+      "text": "くださいと言って電話を切りました。",
+      "start_seconds": 327.479,
+      "end_seconds": 331.6,
+      "id": "hkE-8LRiG1k-ja-0037",
+      "sequence": 37
+    },
+    {
+      "text": "数時間でももうそれを送り返すのが遅れを思うならちょっとうちの子今どこにいるんですかとか言って遅れ怒られたりしたこともあります。え、そういうのって他の家電製品だと言われないのですごい面白いなっ",
+      "start_seconds": 331.6,
+      "end_seconds": 341.84,
+      "id": "hkE-8LRiG1k-ja-0038",
+      "sequence": 38
+    },
+    {
+      "text": "て思ったりします。他にも修理工場にもうこんな長い巻き物みたいな縦書きのお礼嬢が来たりとかあとはなんかおせお手正の",
+      "start_seconds": 341.84,
+      "end_seconds": 352.479,
+      "id": "hkE-8LRiG1k-ja-0039",
+      "sequence": 39
+    },
+    {
+      "text": "お母が毎回毎年相続とかもう本当に10位さんみたいな扱いなんですよね。で、そういう10位さんたちがいる中でもさらにこう信頼をえてる名物委員長みたいな人が",
+      "start_seconds": 352.479,
+      "end_seconds": 363.639,
+      "id": "hkE-8LRiG1k-ja-0040",
+      "sequence": 40
+    },
+    {
+      "text": "いたりして、ま、そういうのもすごく面白いなって思ったりします。え、これがもしロボットじゃなくて電子レンジで修理",
+      "start_seconds": 363.639,
+      "end_seconds": 371.56,
+      "id": "hkE-8LRiG1k-ja-0041",
+      "sequence": 41
+    },
+    {
+      "text": "の人が大丈夫ですか?って言ってたり脇を撫でてよしよしよしよしなんて言ってたら",
+      "start_seconds": 371.56,
+      "end_seconds": 382.319,
+      "id": "hkE-8LRiG1k-ja-0042",
+      "sequence": 42
+    },
+    {
+      "text": "あの人ちょっとおかしいんじゃないって思うと思うんですよ。",
+      "start_seconds": 382.319,
+      "end_seconds": 386.68,
+      "id": "hkE-8LRiG1k-ja-0043",
+      "sequence": 43
+    },
+    {
+      "text": "で、さっきから修理とかって話もしてるんですけど、修理って言っても怒られます。",
+      "start_seconds": 386.68,
+      "end_seconds": 392.28,
+      "id": "hkE-8LRiG1k-ja-0044",
+      "sequence": 44
+    },
+    {
+      "text": "あの、まるで機械みたいなんで、やめてください。それじゃあまるでうちの子ロボットみたいじゃないですかって本当に言われた",
+      "start_seconds": 392.28,
+      "end_seconds": 401.08,
+      "id": "hkE-8LRiG1k-ja-0045",
+      "sequence": 45
+    },
+    {
+      "text": "ことがあるんです。思いますよ。オタクのお子さんロボットですよって思ってます。",
+      "start_seconds": 401.08,
+      "end_seconds": 407.44,
+      "id": "hkE-8LRiG1k-ja-0046",
+      "sequence": 46
+    },
+    {
+      "text": "でもそんなことは言いません。なので便宜的に修理ではなくて治療って呼んでます。",
+      "start_seconds": 407.44,
+      "end_seconds": 415.759,
+      "id": "hkE-8LRiG1k-ja-0047",
+      "sequence": 47
+    },
+    {
+      "text": "ロボットの健康診断をする人間毒ならぬドックドックサービスっていうのも作りました。で、修理って修理修理って言って",
+      "start_seconds": 415.759,
+      "end_seconds": 426.199,
+      "id": "hkE-8LRiG1k-ja-0048",
+      "sequence": 48
+    },
+    {
+      "text": "ない治療ですね。治療って言ってもこの治療もかなりこうお客様によってもう求めるところが全然違うんですよ。で、もう買った時みたいに綺麗に直してくださ",
+      "start_seconds": 426.199,
+      "end_seconds": 436.879,
+      "id": "hkE-8LRiG1k-ja-0049",
+      "sequence": 49
+    },
+    {
+      "text": "いっていうお客さんもいます。もちろん。",
+      "start_seconds": 436.879,
+      "end_seconds": 439.68,
+      "id": "hkE-8LRiG1k-ja-0050",
+      "sequence": 50
+    },
+    {
+      "text": "でも実はそういう方ってすごい少数で、あ、この傷がなくなっちゃうとうちの子じゃなくなっちゃうんで、この傷は残し",
+      "start_seconds": 439.68,
+      "end_seconds": 449.68,
+      "id": "hkE-8LRiG1k-ja-0051",
+      "sequence": 51
+    },
+    {
+      "text": "といてください。っていう方の方が多いんですよ。意外ですかね。で、最初それ聞いた時にはっとして、あ、この人にとって傷",
+      "start_seconds": 449.68,
+      "end_seconds": 461.16,
+      "id": "hkE-8LRiG1k-ja-0052",
+      "sequence": 52
+    },
+    {
+      "text": "って不具合じゃないんだ。あ、一緒に過ごした歴史の証なんだなっていう風に思いました。",
+      "start_seconds": 461.16,
+      "end_seconds": 468.4,
+      "id": "hkE-8LRiG1k-ja-0053",
+      "sequence": 53
+    },
+    {
+      "text": "で、小学校の時に使ったランドセルを残すために小さくして残しとくみたいなサービスがあるんですけど、そういうサービスをする時もわざと絆のある部分の",
+      "start_seconds": 468.4,
+      "end_seconds": 478.24,
+      "id": "hkE-8LRiG1k-ja-0054",
+      "sequence": 54
+    },
+    {
+      "text": "川を選んで作ったりするそうなんですよ。",
+      "start_seconds": 478.24,
+      "end_seconds": 481.199,
+      "id": "hkE-8LRiG1k-ja-0055",
+      "sequence": 55
+    },
+    {
+      "text": "だからそういう思い出ってそういう細部に宿るものなんだなっていう風に思っています。",
+      "start_seconds": 481.199,
+      "end_seconds": 489.68,
+      "id": "hkE-8LRiG1k-ja-0056",
+      "sequence": 56
+    },
+    {
+      "text": "で、傷もつきすぎるともうこれ以上は直せないっていう段階まで進んでいきます。",
+      "start_seconds": 489.759,
+      "end_seconds": 498.159,
+      "id": "hkE-8LRiG1k-ja-0057",
+      "sequence": 57
+    },
+    {
+      "text": "ロボットだとなんか永遠に行きなそうじゃないですか。でも必ずしもそうでもなくてああもうここでおしまいっていうところをま、長くロボットを作ってると目にする",
+      "start_seconds": 498.159,
+      "end_seconds": 508.96,
+      "id": "hkE-8LRiG1k-ja-0058",
+      "sequence": 58
+    },
+    {
+      "text": "ことになります。",
+      "start_seconds": 508.96,
+      "end_seconds": 512.84,
+      "id": "hkE-8LRiG1k-ja-0059",
+      "sequence": 59
+    },
+    {
+      "text": "これは何だと思いますか?",
+      "start_seconds": 513.44,
+      "end_seconds": 517.9190000000001,
+      "id": "hkE-8LRiG1k-ja-0060",
+      "sequence": 60
+    },
+    {
+      "text": "これね、ロボットのお葬式なんですよ。お坊さんがいて最団にもう動かなくなったロボットがもうずらって並んでるわけです。",
+      "start_seconds": 518.039,
+      "end_seconds": 527.48,
+      "id": "hkE-8LRiG1k-ja-0061",
+      "sequence": 61
+    },
+    {
+      "text": "これ見て、ま、ちょっと奇妙だなって思う人もいるかもしれません。",
+      "start_seconds": 527.48,
+      "end_seconds": 534.92,
+      "id": "hkE-8LRiG1k-ja-0062",
+      "sequence": 62
+    },
+    {
+      "text": "でも万物に魂が宿るとか神がいるって思ってる人が多い日本においてはこういう光景も見ることができます。",
+      "start_seconds": 534.92,
+      "end_seconds": 546.72,
+      "id": "hkE-8LRiG1k-ja-0063",
+      "sequence": 63
+    },
+    {
+      "text": "で、私最初これ見た時になんでこんなことするんだろうってすごく思ったんですけどうん。ま、よくよく話してみると、そう",
+      "start_seconds": 546.72,
+      "end_seconds": 555.92,
+      "id": "hkE-8LRiG1k-ja-0064",
+      "sequence": 64
+    },
+    {
+      "text": "いう今まで一緒に暮らした時間に、ま、感謝をして一区切りつけてこれからのロボットのいない生活を始めるそのためのセレモニーなんだなっていう風に思いに",
+      "start_seconds": 555.92,
+      "end_seconds": 566.399,
+      "id": "hkE-8LRiG1k-ja-0065",
+      "sequence": 65
+    },
+    {
+      "text": "至りました。",
+      "start_seconds": 566.399,
+      "end_seconds": 569.839,
+      "id": "hkE-8LRiG1k-ja-0066",
+      "sequence": 66
+    },
+    {
+      "text": "でも日本ってよくよく考えてみると人形苦養とか張り苦用とかってしたりしますよね。それとま、同じようなことなのかなっ",
+      "start_seconds": 569.839,
+      "end_seconds": 578.2,
+      "id": "hkE-8LRiG1k-ja-0067",
+      "sequence": 67
+    },
+    {
+      "text": "ていう風に思っています。",
+      "start_seconds": 578.2,
+      "end_seconds": 582.32,
+      "id": "hkE-8LRiG1k-ja-0068",
+      "sequence": 68
+    },
+    {
+      "text": "ちなみにロボットを買ってくださってるオーナー様がご恒例になられたりとか生活が変わったりして、ま、ちょっとロボットと一緒に暮らせなくなったっていう場合が",
+      "start_seconds": 583.279,
+      "end_seconds": 594.12,
+      "id": "hkE-8LRiG1k-ja-0069",
+      "sequence": 69
+    },
+    {
+      "text": "あったりします。あとはもう壊れて動かないっていう人たちもいます。で、そういう人たちのロボットを集めてその中から、まだ使えるぞっていうパーツをこう",
+      "start_seconds": 594.12,
+      "end_seconds": 604.68,
+      "id": "hkE-8LRiG1k-ja-0070",
+      "sequence": 70
+    },
+    {
+      "text": "抜き出してですね、再構築して新しいロボットを作って、その新しくロボットを必要としてくれるところ、例えば病院とか",
+      "start_seconds": 604.68,
+      "end_seconds": 613.68,
+      "id": "hkE-8LRiG1k-ja-0071",
+      "sequence": 71
+    },
+    {
+      "text": "高齢者施設とか幼稚園とかに起造するっていうプログラムをやっています。それを里親プログラムって呼んでるんですね。",
+      "start_seconds": 613.68,
+      "end_seconds": 624.959,
+      "id": "hkE-8LRiG1k-ja-0072",
+      "sequence": 72
+    },
+    {
+      "text": "で、里親って言ってるんですけど、これ冷蔵庫とか電子レンジだったらしないじゃないですか。洗濯機の里親とかってならないですよね。で、これなぜかって言うと",
+      "start_seconds": 624.959,
+      "end_seconds": 635.24,
+      "id": "hkE-8LRiG1k-ja-0073",
+      "sequence": 73
+    },
+    {
+      "text": "、やっぱりロボットって我々は、ま、所有物ではなくて関係性を構築するものとして世に送り出したからなんですね。",
+      "start_seconds": 635.24,
+      "end_seconds": 645.839,
+      "id": "hkE-8LRiG1k-ja-0074",
+      "sequence": 74
+    },
+    {
+      "text": "で、こういう愛着を生まれる、愛着が生まれるように設計した以上、その終わり方まで我々作り手が責任を持たなきゃいけないんじゃないかなっていう気持ちで、こういう里親プログラムをやっています。",
+      "start_seconds": 645.839,
+      "end_seconds": 657.68,
+      "id": "hkE-8LRiG1k-ja-0075",
+      "sequence": 75
+    },
+    {
+      "text": "で、里親プログラムっていうのはうん、もう技術のサポートでもないし、マーケティングでもないし、マシティや儲けでも何でもないんです。もう儲けの",
+      "start_seconds": 657.68,
+      "end_seconds": 668.56,
+      "id": "hkE-8LRiG1k-ja-0076",
+      "sequence": 76
+    },
+    {
+      "text": "ためどころがもうお金は出ていく一方なんですけど、でもあえてそういうことをしてるんですね。でもそれっていうのは我々が生み出した感情への責任感からなんです。",
+      "start_seconds": 668.56,
+      "end_seconds": 680.56,
+      "id": "hkE-8LRiG1k-ja-0077",
+      "sequence": 77
+    },
+    {
+      "text": "今日はオービットが奇跡だって、あ、奇跡がテーマだっていうことなので、そのロボットの奇跡の話をしたいなと思います。で、今日2つ大きく分けて持ってきたん",
+      "start_seconds": 681.16,
+      "end_seconds": 692.32,
+      "id": "hkE-8LRiG1k-ja-0078",
+      "sequence": 78
+    },
+    {
+      "text": "ですけど、ロボットが人間のようになる話と人間がロボットのようになる話ですね。",
+      "start_seconds": 692.32,
+      "end_seconds": 698.48,
+      "id": "hkE-8LRiG1k-ja-0079",
+      "sequence": 79
+    },
+    {
+      "text": "で、今ロボットが人間のようになる話はもうものすごい勢いで開発が進んでいて、もう実際にノルウェイのワンネステクノジズっていう会社からは、えと、",
+      "start_seconds": 698.48,
+      "end_seconds": 709.639,
+      "id": "hkE-8LRiG1k-ja-0080",
+      "sequence": 80
+    },
+    {
+      "text": "家庭用のお手伝いロボットが発売されました。もう夢みたいですよね。で、これも他にもいろんな大きな会社がどんどんこう参入する予定なので、ま、",
+      "start_seconds": 709.639,
+      "end_seconds": 720.959,
+      "id": "hkE-8LRiG1k-ja-0081",
+      "sequence": 81
+    },
+    {
+      "text": "もう開発のスピードも技術の進歩のスピードも拡大に早くなっていくことが想定されています。",
+      "start_seconds": 720.959,
+      "end_seconds": 729.36,
+      "id": "hkE-8LRiG1k-ja-0082",
+      "sequence": 82
+    },
+    {
+      "text": "で、ま、これフィジカルAIっていうあの技術の分野があって、そこが進んでるからそこが発展してるんですけど、その、ま、そうですね、日本にいるとあんまりこうピンとこないかもしれないんですけど、",
+      "start_seconds": 729.36,
+      "end_seconds": 740.56,
+      "id": "hkE-8LRiG1k-ja-0083",
+      "sequence": 83
+    },
+    {
+      "text": "多分数年後にはその辺で見ることになるかなという風に思っています。",
+      "start_seconds": 740.56,
+      "end_seconds": 745.44,
+      "id": "hkE-8LRiG1k-ja-0084",
+      "sequence": 84
+    },
+    {
+      "text": "そしてもう1人間がのロボット家ですね。",
+      "start_seconds": 745.44,
+      "end_seconds": 750.48,
+      "id": "hkE-8LRiG1k-ja-0085",
+      "sequence": 85
+    },
+    {
+      "text": "で、例えば昔からこう心臓ペースメーカーに変える人っているじゃないですか。うちの祖母とかもそうだったんですけどで、そういう",
+      "start_seconds": 750.48,
+      "end_seconds": 761.92,
+      "id": "hkE-8LRiG1k-ja-0086",
+      "sequence": 86
+    },
+    {
+      "text": "、ま、心臓だけじゃなくて、ま、内臓とか義種とか則とかがどんどん、ま、交換可能なシステムにどんどんなっていくと思われるんですけど、さらにこう脳の処理を補助するようなものっていうのも出てくる",
+      "start_seconds": 761.92,
+      "end_seconds": 773.199,
+      "id": "hkE-8LRiG1k-ja-0087",
+      "sequence": 87
+    },
+    {
+      "text": "と思っていて、で、実際に今もう手とか使わなくても考えるだけでもうカーソルを動かすみたいな技術の研究がもうかなり盛",
+      "start_seconds": 773.199,
+      "end_seconds": 781.399,
+      "id": "hkE-8LRiG1k-ja-0088",
+      "sequence": 88
+    },
+    {
+      "text": "にされていたりします。",
+      "start_seconds": 781.399,
+      "end_seconds": 785.72,
+      "id": "hkE-8LRiG1k-ja-0089",
+      "sequence": 89
+    },
+    {
+      "text": "あ、で、今までは、えっと、人間に足りないものを補うっていう発想だったと思うんですよね。でもこれからはもうどんどん人間というものを拡張していくっ",
+      "start_seconds": 789.72,
+      "end_seconds": 800.8,
+      "id": "hkE-8LRiG1k-ja-0090",
+      "sequence": 90
+    },
+    {
+      "text": "てことも可能かなと思っていて、今3本目、4本目の手とかの開発をしてる人もいるし、人間のオリンピック記録を",
+      "start_seconds": 800.8,
+      "end_seconds": 812.519,
+      "id": "hkE-8LRiG1k-ja-0091",
+      "sequence": 91
+    },
+    {
+      "text": "塗りるような偽則っていうのを開発してる人もいるし、あとは頭の後ろに目をつけようなんてことを考えてる方々もいらっしゃいます。",
+      "start_seconds": 812.519,
+      "end_seconds": 822.6,
+      "id": "hkE-8LRiG1k-ja-0092",
+      "sequence": 92
+    },
+    {
+      "text": "便利じゃないですか?馬カ山で後ろからこうフリスビーとか飛んできてもシパッとか言って取れたりするわけですよ。便利そうですよね。で、そういう今まで人間",
+      "start_seconds": 822.6,
+      "end_seconds": 834.0,
+      "id": "hkE-8LRiG1k-ja-0093",
+      "sequence": 93
+    },
+    {
+      "text": "じゃなかったにその人間を超えるような存在、超人間とかスーパーヒューマンっていうような道のりを人間は歩んでいく一歩",
+      "start_seconds": 834.0,
+      "end_seconds": 842.92,
+      "id": "hkE-8LRiG1k-ja-0094",
+      "sequence": 94
+    },
+    {
+      "text": "手前なのかもしれません。",
+      "start_seconds": 842.92,
+      "end_seconds": 847.36,
+      "id": "hkE-8LRiG1k-ja-0095",
+      "sequence": 95
+    },
+    {
+      "text": "え、ま、もしあなたが手術をして心臓がペースメカになってもあなたはあなたのままだと思うんです。なんか誰か他の人になっちゃったなっていう感覚はしないです",
+      "start_seconds": 847.48,
+      "end_seconds": 857.639,
+      "id": "hkE-8LRiG1k-ja-0096",
+      "sequence": 96
+    },
+    {
+      "text": "よね。でもこれが足だったら顔だったらとか脳だったらって考えてくともうどこまでが自分でどこまでが自分じゃないのかって",
+      "start_seconds": 857.639,
+      "end_seconds": 867.24,
+      "id": "hkE-8LRiG1k-ja-0097",
+      "sequence": 97
+    },
+    {
+      "text": "いう問題にぶち当たります。",
+      "start_seconds": 867.24,
+      "end_seconds": 871.0,
+      "id": "hkE-8LRiG1k-ja-0098",
+      "sequence": 98
+    },
+    {
+      "text": "これテセフスの船って言ったりするんですけど、どこまでが自分かって皆さん選引できますか?",
+      "start_seconds": 871.0,
+      "end_seconds": 879.6,
+      "id": "hkE-8LRiG1k-ja-0099",
+      "sequence": 99
+    },
+    {
+      "text": "もう実は私たちはもうこの問いの入り口のところにもう立っている状態だと私は思っています。",
+      "start_seconds": 879.6,
+      "end_seconds": 887.32,
+      "id": "hkE-8LRiG1k-ja-0100",
+      "sequence": 100
+    },
+    {
+      "text": "想像してみてください。明日の朝起きたら体がロボットになってる。もうカフカの変身みたいですよね。で、これまだ",
+      "start_seconds": 887.32,
+      "end_seconds": 897.88,
+      "id": "hkE-8LRiG1k-ja-0101",
+      "sequence": 101
+    },
+    {
+      "text": "Androidで人間型だったらいいですよ。あら、手が真っ白ペッパー君みたいな感じだったらまだいいじゃないですか。でも[笑い]あら、私6本あるわとかなんならもう手も足もなくてまんまる",
+      "start_seconds": 897.88,
+      "end_seconds": 908.12,
+      "id": "hkE-8LRiG1k-ja-0102",
+      "sequence": 102
+    },
+    {
+      "text": "でどっか行くのにも転がっていかなきゃいけないとかそんな状態にしてもなったとしてもあなたはあなたなんでしょうか?",
+      "start_seconds": 908.12,
+      "end_seconds": 918.8389999999999,
+      "id": "hkE-8LRiG1k-ja-0103",
+      "sequence": 103
+    },
+    {
+      "text": "自分のアイデンティティは記憶だっていう人もいるでしょう。魂だっていう人もいるかもしれません。でもやっぱり体がない",
+      "start_seconds": 921.56,
+      "end_seconds": 931.56,
+      "id": "hkE-8LRiG1k-ja-0104",
+      "sequence": 104
+    },
+    {
+      "text": "とっていう人もいるんじゃないでしょうか。だってそれもロボットじゃないって。",
+      "start_seconds": 931.56,
+      "end_seconds": 938.399,
+      "id": "hkE-8LRiG1k-ja-0105",
+      "sequence": 105
+    },
+    {
+      "text": "で、私はま、うん、意識とかなのかなって思ってたりもするんですけど、でもそもそも意識って寝てる時には途切れてるし、もうこういうことを日々考えてる私で",
+      "start_seconds": 938.399,
+      "end_seconds": 950.16,
+      "id": "hkE-8LRiG1k-ja-0106",
+      "sequence": 106
+    },
+    {
+      "text": "ももう毎日のようにその教会が由来いでいくんですね。",
+      "start_seconds": 950.16,
+      "end_seconds": 956.36,
+      "id": "hkE-8LRiG1k-ja-0107",
+      "sequence": 107
+    },
+    {
+      "text": "それぐらい難しい問題です。で、でも将来的には皆さん自分がどう生きるかってのを選べるようになると思っています。",
+      "start_seconds": 956.36,
+      "end_seconds": 967.24,
+      "id": "hkE-8LRiG1k-ja-0108",
+      "sequence": 108
+    },
+    {
+      "text": "自分の体のパーツが入れ替わって例えばもう記憶だけとかになったりとかして、それが自分なのかとか、それをいつまで残しておきたいのかとか、もうここで",
+      "start_seconds": 967.24,
+      "end_seconds": 979.12,
+      "id": "hkE-8LRiG1k-ja-0109",
+      "sequence": 109
+    },
+    {
+      "text": "終わりにしようとかそういう選択をすることになるかもしれないんです。",
+      "start_seconds": 979.12,
+      "end_seconds": 985.04,
+      "id": "hkE-8LRiG1k-ja-0110",
+      "sequence": 110
+    },
+    {
+      "text": "実際にこういう話を結構相談を今でもよく受けたりとかもしています。",
+      "start_seconds": 985.04,
+      "end_seconds": 992.839,
+      "id": "hkE-8LRiG1k-ja-0111",
+      "sequence": 111
+    },
+    {
+      "text": "もしあなただったらどこまで治療しますか?",
+      "start_seconds": 992.88,
+      "end_seconds": 999.16,
+      "id": "hkE-8LRiG1k-ja-0112",
+      "sequence": 112
+    },
+    {
+      "text": "どこでもストップしよう。ここで闇にしようって思いますか?",
+      "start_seconds": 999.16,
+      "end_seconds": 1004.639,
+      "id": "hkE-8LRiG1k-ja-0113",
+      "sequence": 113
+    },
+    {
+      "text": "そしてあなたがやいなくなった後その後に何か残したいものはありますか?",
+      "start_seconds": 1004.639,
+      "end_seconds": 1014.519,
+      "id": "hkE-8LRiG1k-ja-0114",
+      "sequence": 114
+    },
+    {
+      "text": "今私が話してるようなことってちょっと突っぴに聞こえるのかもしれません。",
+      "start_seconds": 1018.16,
+      "end_seconds": 1026.439,
+      "id": "hkE-8LRiG1k-ja-0115",
+      "sequence": 115
+    },
+    {
+      "text": "SFじゃないんだからって。でも皆さんが思ってるよりももう少し早くそういう世界",
+      "start_seconds": 1026.439,
+      "end_seconds": 1033.12,
+      "id": "hkE-8LRiG1k-ja-0116",
+      "sequence": 116
+    },
+    {
+      "text": "が現実にを帯びてくると思っています。",
+      "start_seconds": 1033.12,
+      "end_seconds": 1038.6789999999999,
+      "id": "hkE-8LRiG1k-ja-0117",
+      "sequence": 117
+    },
+    {
+      "text": "自分とは何なのかということを今考え始めてもいいのかもしれません。",
+      "start_seconds": 1039.4,
+      "end_seconds": 1047.48,
+      "id": "hkE-8LRiG1k-ja-0118",
+      "sequence": 118
+    },
+    {
+      "text": "ひょっとしたらそのすみりの傷こそがあなたなのかもしれません。",
+      "start_seconds": 1047.48,
+      "end_seconds": 1054.76,
+      "id": "hkE-8LRiG1k-ja-0119",
+      "sequence": 119
+    },
+    {
+      "text": "未来のあなたがその傷を機械の体に移植したいって思う日が来るかもしれないからです。",
+      "start_seconds": 1054.76,
+      "end_seconds": 1066.52,
+      "id": "hkE-8LRiG1k-ja-0120",
+      "sequence": 120
+    },
+    {
+      "text": "ご成聴ありがとうございました。",
+      "start_seconds": 1068.16,
+      "end_seconds": 1072.799,
+      "id": "hkE-8LRiG1k-ja-0121",
+      "sequence": 121
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 1074.212,
+      "end_seconds": 1076.232,
+      "id": "hkE-8LRiG1k-ja-0122",
+      "sequence": 122
+    }
+  ],
+  "raw_captions": [
+    {
+      "text": "[音楽]",
+      "start_seconds": 4.584,
+      "end_seconds": 6.603999999999999
+    },
+    {
+      "text": "Orbit",
+      "start_seconds": 7.919,
+      "end_seconds": 12.5
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 10.48,
+      "end_seconds": 12.5
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 15.065,
+      "end_seconds": 17.085
+    },
+    {
+      "text": "なんですが",
+      "start_seconds": 28.599,
+      "end_seconds": 32.08
+    },
+    {
+      "text": "あなたの体に長く残ってる傷ってあります",
+      "start_seconds": 35.76,
+      "end_seconds": 42.199999999999996
+    },
+    {
+      "text": "か?",
+      "start_seconds": 39.64,
+      "end_seconds": 46.36
+    },
+    {
+      "text": "もしかしたら大きな手術を経験した方や",
+      "start_seconds": 42.2,
+      "end_seconds": 48.480000000000004
+    },
+    {
+      "text": "事故にあったなんて方もいらっしゃるかも",
+      "start_seconds": 46.36,
+      "end_seconds": 50.719
+    },
+    {
+      "text": "しれません。",
+      "start_seconds": 48.48,
+      "end_seconds": 53.8
+    },
+    {
+      "text": "でもそんな経験したことないよっていう方",
+      "start_seconds": 50.719,
+      "end_seconds": 58.84
+    },
+    {
+      "text": "でも子供の時にぶつけたり転んだりして",
+      "start_seconds": 53.8,
+      "end_seconds": 61.038999999999994
+    },
+    {
+      "text": "できたようなちょっとした怪我のような",
+      "start_seconds": 58.84,
+      "end_seconds": 66.12
+    },
+    {
+      "text": "もってあるんじゃないでしょうか。",
+      "start_seconds": 61.039,
+      "end_seconds": 66.12
+    },
+    {
+      "text": "もしあるよっていう方はその傷ができた時",
+      "start_seconds": 66.159,
+      "end_seconds": 73.64
+    },
+    {
+      "text": "のことを少し思い出してみて欲しくて、",
+      "start_seconds": 69.52,
+      "end_seconds": 77.28
+    },
+    {
+      "text": "その時何歳だったのかなとか、",
+      "start_seconds": 73.64,
+      "end_seconds": 80.159
+    },
+    {
+      "text": "どこでだったかなとか、誰と一緒にいたの",
+      "start_seconds": 77.28,
+      "end_seconds": 81.799
+    },
+    {
+      "text": "かなってことをちょっと思い出してみて",
+      "start_seconds": 80.159,
+      "end_seconds": 85.28
+    },
+    {
+      "text": "欲しいんですね。",
+      "start_seconds": 81.799,
+      "end_seconds": 85.28
+    },
+    {
+      "text": "今私がお聞きしたいのはあなたにあるその",
+      "start_seconds": 86.2,
+      "end_seconds": 92.60000000000001
+    },
+    {
+      "text": "傷、消せるとしたら消したいですかって",
+      "start_seconds": 89.68,
+      "end_seconds": 96.24000000000001
+    },
+    {
+      "text": "いうことなんです。",
+      "start_seconds": 92.6,
+      "end_seconds": 99.32
+    },
+    {
+      "text": "人によっては当たり前じゃん。それは消し",
+      "start_seconds": 96.24,
+      "end_seconds": 102.91999999999999
+    },
+    {
+      "text": "たいよって思う人もいると思いますし、",
+      "start_seconds": 99.32,
+      "end_seconds": 105.079
+    },
+    {
+      "text": "いや、この傷見るとあの時の状況を",
+      "start_seconds": 102.92,
+      "end_seconds": 107.71900000000001
+    },
+    {
+      "text": "思い出して懐かしいから消さなくてもいい",
+      "start_seconds": 105.079,
+      "end_seconds": 112.27999999999999
+    },
+    {
+      "text": "かなっていう人もいるかと思います。",
+      "start_seconds": 107.719,
+      "end_seconds": 116.55999999999999
+    },
+    {
+      "text": "で、私の足首にも見えるようにちょっと",
+      "start_seconds": 112.28,
+      "end_seconds": 119.399
+    },
+    {
+      "text": "してきたんですけど、傷が残っていて、ま",
+      "start_seconds": 116.56,
+      "end_seconds": 121.88
+    },
+    {
+      "text": "、11歳の時に学校の皇帝で転んだんです",
+      "start_seconds": 119.399,
+      "end_seconds": 125.32000000000001
+    },
+    {
+      "text": "ね。で、その時はあんまり言いたくなかっ",
+      "start_seconds": 121.88,
+      "end_seconds": 127.56
+    },
+    {
+      "text": "たんですけど、せっかく遊んでるのに、あ",
+      "start_seconds": 125.32,
+      "end_seconds": 129.759
+    },
+    {
+      "text": "、保険室行くのやだなって思ったこととか",
+      "start_seconds": 127.56,
+      "end_seconds": 132.52
+    },
+    {
+      "text": "、あと保険室に行った後の、あの、なんて",
+      "start_seconds": 129.759,
+      "end_seconds": 135.51899999999998
+    },
+    {
+      "text": "言うんですか、独特の匂いみたいなあのと",
+      "start_seconds": 132.52,
+      "end_seconds": 138.4
+    },
+    {
+      "text": "かも結構思い起こされてくるので、まあ、",
+      "start_seconds": 135.519,
+      "end_seconds": 141.20000000000002
+    },
+    {
+      "text": "消さなくてもいいかなって思ったりしてい",
+      "start_seconds": 138.4,
+      "end_seconds": 143.4
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 141.2,
+      "end_seconds": 146.959
+    },
+    {
+      "text": "その辺のこういう傷を消したいか消したく",
+      "start_seconds": 143.4,
+      "end_seconds": 150.12
+    },
+    {
+      "text": "ないかの感覚って全然人によって違うんだ",
+      "start_seconds": 146.959,
+      "end_seconds": 154.519
+    },
+    {
+      "text": "よって話を今日はしたいと思います。",
+      "start_seconds": 150.12,
+      "end_seconds": 158.48000000000002
+    },
+    {
+      "text": "申し遅れました。私義裕子と申しまして、",
+      "start_seconds": 154.519,
+      "end_seconds": 160.44
+    },
+    {
+      "text": "ソニーという会社でロボットを作ってい",
+      "start_seconds": 158.48,
+      "end_seconds": 162.56
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 160.44,
+      "end_seconds": 164.76
+    },
+    {
+      "text": "いろんなロボットを作ってきてるんです",
+      "start_seconds": 162.56,
+      "end_seconds": 170.44
+    },
+    {
+      "text": "けど、ま、1番世の中に出回ってるのは",
+      "start_seconds": 164.76,
+      "end_seconds": 170.44
+    },
+    {
+      "text": "スライドが動かないけど、次に、あ、お",
+      "start_seconds": 171.36,
+      "end_seconds": 176.4
+    },
+    {
+      "text": "願いします。はい。この犬の形をしたもの",
+      "start_seconds": 173.68,
+      "end_seconds": 179.31900000000002
+    },
+    {
+      "text": "かなって思います。で、これ一般の方々",
+      "start_seconds": 176.4,
+      "end_seconds": 181.84
+    },
+    {
+      "text": "向けに向けて作ってるものなので、ま、",
+      "start_seconds": 179.319,
+      "end_seconds": 183.51899999999998
+    },
+    {
+      "text": "もしかしたら目にしたことがある方も",
+      "start_seconds": 181.84,
+      "end_seconds": 186.72
+    },
+    {
+      "text": "いらっしゃるかなって思います。で、これ",
+      "start_seconds": 183.519,
+      "end_seconds": 189.519
+    },
+    {
+      "text": "犬の形してるので作ってる時って、ま、",
+      "start_seconds": 186.72,
+      "end_seconds": 191.239
+    },
+    {
+      "text": "疑似生物を作ってるようなもんなんですよ",
+      "start_seconds": 189.519,
+      "end_seconds": 195.56
+    },
+    {
+      "text": "ね。なので、ま、例えばこう性別があって",
+      "start_seconds": 191.239,
+      "end_seconds": 197.28
+    },
+    {
+      "text": "、オとかメスとかいた方が面白いのかなっ",
+      "start_seconds": 195.56,
+      "end_seconds": 199.64000000000001
+    },
+    {
+      "text": "て思ったりとか、性格どうしようとかって",
+      "start_seconds": 197.28,
+      "end_seconds": 202.239
+    },
+    {
+      "text": "思ったりするんですけど、ま、私が1番",
+      "start_seconds": 199.64,
+      "end_seconds": 205.23899999999998
+    },
+    {
+      "text": "こだわったのはもうとにかく命令に従わな",
+      "start_seconds": 202.239,
+      "end_seconds": 209.0
+    },
+    {
+      "text": "いっていうことだったんです。",
+      "start_seconds": 205.239,
+      "end_seconds": 211.879
+    },
+    {
+      "text": "え、ロボットを作る時って、まあ大体人",
+      "start_seconds": 209.0,
+      "end_seconds": 214.4
+    },
+    {
+      "text": "って命令に従わせよう、従わせようって",
+      "start_seconds": 211.879,
+      "end_seconds": 217.599
+    },
+    {
+      "text": "思うものなんですね。でも私はこの製品の",
+      "start_seconds": 214.4,
+      "end_seconds": 220.48000000000002
+    },
+    {
+      "text": "性格を考えて逆にもう全然言うこと聞か",
+      "start_seconds": 217.599,
+      "end_seconds": 223.56
+    },
+    {
+      "text": "ない方がいいって思いました。で、それ",
+      "start_seconds": 220.48,
+      "end_seconds": 226.2
+    },
+    {
+      "text": "なんでかって言うと、自分が子育てをして",
+      "start_seconds": 223.56,
+      "end_seconds": 229.519
+    },
+    {
+      "text": "て思うんですけど結局人ってもう自分の",
+      "start_seconds": 226.2,
+      "end_seconds": 232.51899999999998
+    },
+    {
+      "text": "言うことを全く聞かない。あの、自分とは",
+      "start_seconds": 229.519,
+      "end_seconds": 234.48000000000002
+    },
+    {
+      "text": "全く別の個体であるっていうところに対し",
+      "start_seconds": 232.519,
+      "end_seconds": 237.87900000000002
+    },
+    {
+      "text": "てこの無限の愛情を感じるのであって、",
+      "start_seconds": 234.48,
+      "end_seconds": 239.76
+    },
+    {
+      "text": "全部命令を聞いたり、言うことを聞いたり",
+      "start_seconds": 237.879,
+      "end_seconds": 243.879
+    },
+    {
+      "text": "してしまうともう関係がこう対じゃ",
+      "start_seconds": 239.76,
+      "end_seconds": 245.72
+    },
+    {
+      "text": "なくなってしまう。で、じゃなくなっ",
+      "start_seconds": 243.879,
+      "end_seconds": 247.159
+    },
+    {
+      "text": "ちゃうともう興味がなくなっちゃうんです",
+      "start_seconds": 245.72,
+      "end_seconds": 249.439
+    },
+    {
+      "text": "よね。なので、こういう長く一緒に過ごす",
+      "start_seconds": 247.159,
+      "end_seconds": 252.28
+    },
+    {
+      "text": "ようなロボットを作るからにはもう言う",
+      "start_seconds": 249.439,
+      "end_seconds": 255.319
+    },
+    {
+      "text": "こと聞かない方がいいと思いました。",
+      "start_seconds": 252.28,
+      "end_seconds": 259.32
+    },
+    {
+      "text": "で、もちろん反対する人もたくさんいて、",
+      "start_seconds": 255.319,
+      "end_seconds": 260.88
+    },
+    {
+      "text": "そんなんわけないだろうとかすごい言われ",
+      "start_seconds": 259.32,
+      "end_seconds": 263.15999999999997
+    },
+    {
+      "text": "たんですけど、ま、1人ずつせて説得して",
+      "start_seconds": 260.88,
+      "end_seconds": 265.36
+    },
+    {
+      "text": "いって、最終的には全く言うことを聞か",
+      "start_seconds": 263.16,
+      "end_seconds": 268.47900000000004
+    },
+    {
+      "text": "ないロボットにしました。",
+      "start_seconds": 265.36,
+      "end_seconds": 271.44
+    },
+    {
+      "text": "で、ま、ロボットって",
+      "start_seconds": 268.479,
+      "end_seconds": 273.36
+    },
+    {
+      "text": "いわゆるこう、ま、家電製品なんですよね",
+      "start_seconds": 271.44,
+      "end_seconds": 275.919
+    },
+    {
+      "text": "。で、冷蔵庫とか洗濯機と変わらないわけ",
+      "start_seconds": 273.36,
+      "end_seconds": 278.88
+    },
+    {
+      "text": "です。でもこういう生き物の形をしてると",
+      "start_seconds": 275.919,
+      "end_seconds": 282.35999999999996
+    },
+    {
+      "text": "、ま、すごく深い愛情を注いでくれる方が",
+      "start_seconds": 278.88,
+      "end_seconds": 285.32
+    },
+    {
+      "text": "非常に多くて、え、お客様からの要望も",
+      "start_seconds": 282.36,
+      "end_seconds": 288.6
+    },
+    {
+      "text": "もう全然他の家電製品と違うんですね。え",
+      "start_seconds": 285.32,
+      "end_seconds": 290.68
+    },
+    {
+      "text": "、例えば、ま、修理に出さなきゃいけない",
+      "start_seconds": 288.6,
+      "end_seconds": 292.52000000000004
+    },
+    {
+      "text": "時とかってあるんですけど、で、その修理",
+      "start_seconds": 290.68,
+      "end_seconds": 294.8
+    },
+    {
+      "text": "を出す時とかに電話かってくるわけですよ",
+      "start_seconds": 292.52,
+      "end_seconds": 297.479
+    },
+    {
+      "text": "。あの、寂しくてしょうがないんですって",
+      "start_seconds": 294.8,
+      "end_seconds": 299.56
+    },
+    {
+      "text": "。",
+      "start_seconds": 297.479,
+      "end_seconds": 302.36
+    },
+    {
+      "text": "はあ、そう[鼻息]ですか。え、寂しくて",
+      "start_seconds": 299.56,
+      "end_seconds": 304.759
+    },
+    {
+      "text": "しょうがないんで、今そちらでうちの子が",
+      "start_seconds": 302.36,
+      "end_seconds": 306.639
+    },
+    {
+      "text": "どう過ごしてるかちょっと教えてくれませ",
+      "start_seconds": 304.759,
+      "end_seconds": 309.96000000000004
+    },
+    {
+      "text": "んかって言われたことがあります。",
+      "start_seconds": 306.639,
+      "end_seconds": 313.40000000000003
+    },
+    {
+      "text": "もちろん本当のことなんて言えません。あ",
+      "start_seconds": 309.96,
+      "end_seconds": 316.479
+    },
+    {
+      "text": "、オタクの子今文化されてバラバラです",
+      "start_seconds": 313.4,
+      "end_seconds": 319.4
+    },
+    {
+      "text": "なんて言えないわけなんですよ。生き物と",
+      "start_seconds": 316.479,
+      "end_seconds": 323.0
+    },
+    {
+      "text": "いう点なので。なので、あ、大丈夫ですよ",
+      "start_seconds": 319.4,
+      "end_seconds": 325.28
+    },
+    {
+      "text": "。オタクのなんとかちゃん、今すごく元気",
+      "start_seconds": 323.0,
+      "end_seconds": 327.479
+    },
+    {
+      "text": "にしています。ご心配なさらないで",
+      "start_seconds": 325.28,
+      "end_seconds": 331.59999999999997
+    },
+    {
+      "text": "くださいと言って電話を切りました。",
+      "start_seconds": 327.479,
+      "end_seconds": 333.8
+    },
+    {
+      "text": "数時間でももうそれを送り返すのが遅れを",
+      "start_seconds": 331.6,
+      "end_seconds": 335.91900000000004
+    },
+    {
+      "text": "思うならちょっとうちの子今どこにいるん",
+      "start_seconds": 333.8,
+      "end_seconds": 337.639
+    },
+    {
+      "text": "ですかとか言って遅れ怒られたりしたこと",
+      "start_seconds": 335.919,
+      "end_seconds": 340.15999999999997
+    },
+    {
+      "text": "もあります。え、そういうのって他の家電",
+      "start_seconds": 337.639,
+      "end_seconds": 341.84000000000003
+    },
+    {
+      "text": "製品だと言われないのですごい面白いなっ",
+      "start_seconds": 340.16,
+      "end_seconds": 345.40000000000003
+    },
+    {
+      "text": "て思ったりします。他にも修理工場にもう",
+      "start_seconds": 341.84,
+      "end_seconds": 349.15999999999997
+    },
+    {
+      "text": "こんな長い巻き物みたいな縦書きのお礼嬢",
+      "start_seconds": 345.4,
+      "end_seconds": 352.479
+    },
+    {
+      "text": "が来たりとかあとはなんかおせお手正の",
+      "start_seconds": 349.16,
+      "end_seconds": 355.44
+    },
+    {
+      "text": "お母が毎回毎年相続とかもう本当に10位",
+      "start_seconds": 352.479,
+      "end_seconds": 358.919
+    },
+    {
+      "text": "さんみたいな扱いなんですよね。で、そう",
+      "start_seconds": 355.44,
+      "end_seconds": 361.24
+    },
+    {
+      "text": "いう10位さんたちがいる中でもさらに",
+      "start_seconds": 358.919,
+      "end_seconds": 363.639
+    },
+    {
+      "text": "こう信頼をえてる名物委員長みたいな人が",
+      "start_seconds": 361.24,
+      "end_seconds": 365.6
+    },
+    {
+      "text": "いたりして、ま、そういうのもすごく",
+      "start_seconds": 363.639,
+      "end_seconds": 368.68
+    },
+    {
+      "text": "面白いなって思ったりします。え、これが",
+      "start_seconds": 365.6,
+      "end_seconds": 371.56
+    },
+    {
+      "text": "もしロボットじゃなくて電子レンジで修理",
+      "start_seconds": 368.68,
+      "end_seconds": 376.28000000000003
+    },
+    {
+      "text": "の人が大丈夫ですか?って言ってたり脇を",
+      "start_seconds": 371.56,
+      "end_seconds": 382.319
+    },
+    {
+      "text": "撫でてよしよしよしよしなんて言ってたら",
+      "start_seconds": 376.28,
+      "end_seconds": 384.19899999999996
+    },
+    {
+      "text": "あの人ちょっとおかしいんじゃないって",
+      "start_seconds": 382.319,
+      "end_seconds": 386.68
+    },
+    {
+      "text": "思うと思うんですよ。",
+      "start_seconds": 384.199,
+      "end_seconds": 388.599
+    },
+    {
+      "text": "で、さっきから修理とかって話もしてるん",
+      "start_seconds": 386.68,
+      "end_seconds": 392.28000000000003
+    },
+    {
+      "text": "ですけど、修理って言っても怒られます。",
+      "start_seconds": 388.599,
+      "end_seconds": 393.96
+    },
+    {
+      "text": "あの、まるで機械みたいなんで、やめて",
+      "start_seconds": 392.28,
+      "end_seconds": 396.039
+    },
+    {
+      "text": "ください",
+      "start_seconds": 393.96,
+      "end_seconds": 398.44
+    },
+    {
+      "text": "。それじゃあまるでうちの子ロボット",
+      "start_seconds": 396.039,
+      "end_seconds": 401.08
+    },
+    {
+      "text": "みたいじゃないですかって本当に言われた",
+      "start_seconds": 398.44,
+      "end_seconds": 404.759
+    },
+    {
+      "text": "ことがあるんです。思いますよ。オタクの",
+      "start_seconds": 401.08,
+      "end_seconds": 407.44
+    },
+    {
+      "text": "お子さんロボットですよって思ってます。",
+      "start_seconds": 404.759,
+      "end_seconds": 409.36
+    },
+    {
+      "text": "でもそんなことは言いません。なので便宜",
+      "start_seconds": 407.44,
+      "end_seconds": 415.759
+    },
+    {
+      "text": "的に修理ではなくて治療って呼んでます。",
+      "start_seconds": 409.36,
+      "end_seconds": 419.96000000000004
+    },
+    {
+      "text": "ロボットの健康診断をする人間毒ならぬ",
+      "start_seconds": 415.759,
+      "end_seconds": 421.47900000000004
+    },
+    {
+      "text": "ドックドックサービスっていうのも作り",
+      "start_seconds": 419.96,
+      "end_seconds": 426.19899999999996
+    },
+    {
+      "text": "ました。で、修理って修理修理って言って",
+      "start_seconds": 421.479,
+      "end_seconds": 428.68
+    },
+    {
+      "text": "ない治療ですね。治療って言ってもこの",
+      "start_seconds": 426.199,
+      "end_seconds": 431.52000000000004
+    },
+    {
+      "text": "治療もかなりこうお客様によってもう",
+      "start_seconds": 428.68,
+      "end_seconds": 434.96
+    },
+    {
+      "text": "求めるところが全然違うんですよ。で、",
+      "start_seconds": 431.52,
+      "end_seconds": 436.87899999999996
+    },
+    {
+      "text": "もう買った時みたいに綺麗に直してくださ",
+      "start_seconds": 434.96,
+      "end_seconds": 439.68
+    },
+    {
+      "text": "いっていうお客さんもいます。もちろん。",
+      "start_seconds": 436.879,
+      "end_seconds": 441.47900000000004
+    },
+    {
+      "text": "でも",
+      "start_seconds": 439.68,
+      "end_seconds": 445.16
+    },
+    {
+      "text": "実はそういう方ってすごい少数で、",
+      "start_seconds": 441.479,
+      "end_seconds": 447.479
+    },
+    {
+      "text": "あ、この傷がなくなっちゃうとうちの子",
+      "start_seconds": 445.16,
+      "end_seconds": 449.68
+    },
+    {
+      "text": "じゃなくなっちゃうんで、この傷は残し",
+      "start_seconds": 447.479,
+      "end_seconds": 453.08
+    },
+    {
+      "text": "といてください。っていう方の方が多いん",
+      "start_seconds": 449.68,
+      "end_seconds": 456.96
+    },
+    {
+      "text": "ですよ。意外ですかね。で、最初それ聞い",
+      "start_seconds": 453.08,
+      "end_seconds": 461.15999999999997
+    },
+    {
+      "text": "た時にはっとして、あ、この人にとって傷",
+      "start_seconds": 456.96,
+      "end_seconds": 463.599
+    },
+    {
+      "text": "って不具合じゃないんだ。あ、一緒に",
+      "start_seconds": 461.16,
+      "end_seconds": 466.36
+    },
+    {
+      "text": "過ごした歴史の証なんだなっていう風に",
+      "start_seconds": 463.599,
+      "end_seconds": 468.4
+    },
+    {
+      "text": "思いました。",
+      "start_seconds": 466.36,
+      "end_seconds": 470.72
+    },
+    {
+      "text": "で、小学校の時に使ったランドセルを残す",
+      "start_seconds": 468.4,
+      "end_seconds": 473.23999999999995
+    },
+    {
+      "text": "ために小さくして残しとくみたいな",
+      "start_seconds": 470.72,
+      "end_seconds": 475.15900000000005
+    },
+    {
+      "text": "サービスがあるんですけど、そういう",
+      "start_seconds": 473.24,
+      "end_seconds": 478.24
+    },
+    {
+      "text": "サービスをする時もわざと絆のある部分の",
+      "start_seconds": 475.159,
+      "end_seconds": 481.199
+    },
+    {
+      "text": "川を選んで作ったりするそうなんですよ。",
+      "start_seconds": 478.24,
+      "end_seconds": 484.199
+    },
+    {
+      "text": "だからそういう思い出ってそういう細部に",
+      "start_seconds": 481.199,
+      "end_seconds": 486.52000000000004
+    },
+    {
+      "text": "宿るものなんだなっていう風に思ってい",
+      "start_seconds": 484.199,
+      "end_seconds": 489.68
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 486.52,
+      "end_seconds": 489.68
+    },
+    {
+      "text": "で、傷もつきすぎるともうこれ以上は直せ",
+      "start_seconds": 489.759,
+      "end_seconds": 498.159
+    },
+    {
+      "text": "ないっていう段階まで進んでいきます。",
+      "start_seconds": 494.12,
+      "end_seconds": 501.159
+    },
+    {
+      "text": "ロボットだとなんか永遠に行きなそうじゃ",
+      "start_seconds": 498.159,
+      "end_seconds": 504.479
+    },
+    {
+      "text": "ないですか。でも必ずしもそうでもなくて",
+      "start_seconds": 501.159,
+      "end_seconds": 506.56
+    },
+    {
+      "text": "ああもうここでおしまいっていうところを",
+      "start_seconds": 504.479,
+      "end_seconds": 508.96
+    },
+    {
+      "text": "ま、長くロボットを作ってると目にする",
+      "start_seconds": 506.56,
+      "end_seconds": 512.84
+    },
+    {
+      "text": "ことになります。",
+      "start_seconds": 508.96,
+      "end_seconds": 512.84
+    },
+    {
+      "text": "これは何だと思いますか?",
+      "start_seconds": 513.44,
+      "end_seconds": 517.9190000000001
+    },
+    {
+      "text": "これね、ロボットのお葬式なんですよ。お",
+      "start_seconds": 518.039,
+      "end_seconds": 523.76
+    },
+    {
+      "text": "坊さんがいて最団にもう動かなくなった",
+      "start_seconds": 521.159,
+      "end_seconds": 525.56
+    },
+    {
+      "text": "ロボットがもうずらって並んでるわけです",
+      "start_seconds": 523.76,
+      "end_seconds": 527.48
+    },
+    {
+      "text": "。",
+      "start_seconds": 525.56,
+      "end_seconds": 530.4799999999999
+    },
+    {
+      "text": "これ見て、ま、ちょっと奇妙だなって思う",
+      "start_seconds": 527.48,
+      "end_seconds": 534.9200000000001
+    },
+    {
+      "text": "人もいるかもしれません。",
+      "start_seconds": 530.48,
+      "end_seconds": 537.44
+    },
+    {
+      "text": "でも",
+      "start_seconds": 534.92,
+      "end_seconds": 540.959
+    },
+    {
+      "text": "万物に魂が宿るとか神がいるって思ってる",
+      "start_seconds": 537.44,
+      "end_seconds": 543.8800000000001
+    },
+    {
+      "text": "人が多い日本においてはこういう光景も",
+      "start_seconds": 540.959,
+      "end_seconds": 546.7199999999999
+    },
+    {
+      "text": "見ることができます。",
+      "start_seconds": 543.88,
+      "end_seconds": 549.399
+    },
+    {
+      "text": "で、私最初これ見た時になんでこんなこと",
+      "start_seconds": 546.72,
+      "end_seconds": 553.44
+    },
+    {
+      "text": "するんだろうってすごく思ったんですけど",
+      "start_seconds": 549.399,
+      "end_seconds": 555.92
+    },
+    {
+      "text": "うん。ま、よくよく話してみると、そう",
+      "start_seconds": 553.44,
+      "end_seconds": 558.9200000000001
+    },
+    {
+      "text": "いう今まで一緒に暮らした時間に、ま、",
+      "start_seconds": 555.92,
+      "end_seconds": 561.8
+    },
+    {
+      "text": "感謝をして一区切りつけてこれからの",
+      "start_seconds": 558.92,
+      "end_seconds": 564.5999999999999
+    },
+    {
+      "text": "ロボットのいない生活を始めるそのための",
+      "start_seconds": 561.8,
+      "end_seconds": 566.399
+    },
+    {
+      "text": "セレモニーなんだなっていう風に思いに",
+      "start_seconds": 564.6,
+      "end_seconds": 569.839
+    },
+    {
+      "text": "至りました。",
+      "start_seconds": 566.399,
+      "end_seconds": 573.279
+    },
+    {
+      "text": "でも日本ってよくよく考えてみると人形",
+      "start_seconds": 569.839,
+      "end_seconds": 575.6800000000001
+    },
+    {
+      "text": "苦養とか張り苦用とかってしたりしますよ",
+      "start_seconds": 573.279,
+      "end_seconds": 578.2
+    },
+    {
+      "text": "ね。それとま、同じようなことなのかなっ",
+      "start_seconds": 575.68,
+      "end_seconds": 582.3199999999999
+    },
+    {
+      "text": "ていう風に思っています。",
+      "start_seconds": 578.2,
+      "end_seconds": 582.32
+    },
+    {
+      "text": "ちなみにロボットを買ってくださってる",
+      "start_seconds": 583.279,
+      "end_seconds": 589.88
+    },
+    {
+      "text": "オーナー様がご恒例になられたりとか生活",
+      "start_seconds": 586.16,
+      "end_seconds": 592.0
+    },
+    {
+      "text": "が変わったりして、ま、ちょっとロボット",
+      "start_seconds": 589.88,
+      "end_seconds": 594.12
+    },
+    {
+      "text": "と一緒に暮らせなくなったっていう場合が",
+      "start_seconds": 592.0,
+      "end_seconds": 596.04
+    },
+    {
+      "text": "あったりします。あとはもう壊れて動かな",
+      "start_seconds": 594.12,
+      "end_seconds": 598.399
+    },
+    {
+      "text": "いっていう人たちもいます。で、そういう",
+      "start_seconds": 596.04,
+      "end_seconds": 602.64
+    },
+    {
+      "text": "人たちのロボットを集めてその中から、ま",
+      "start_seconds": 598.399,
+      "end_seconds": 604.68
+    },
+    {
+      "text": "、まだ使えるぞっていうパーツをこう",
+      "start_seconds": 602.64,
+      "end_seconds": 606.72
+    },
+    {
+      "text": "抜き出してですね、再構築して新しい",
+      "start_seconds": 604.68,
+      "end_seconds": 610.12
+    },
+    {
+      "text": "ロボットを作って、その新しくロボットを",
+      "start_seconds": 606.72,
+      "end_seconds": 613.6800000000001
+    },
+    {
+      "text": "必要としてくれるところ、例えば病院とか",
+      "start_seconds": 610.12,
+      "end_seconds": 617.079
+    },
+    {
+      "text": "高齢者施設とか幼稚園とかに起造するって",
+      "start_seconds": 613.68,
+      "end_seconds": 618.5999999999999
+    },
+    {
+      "text": "いう",
+      "start_seconds": 617.079,
+      "end_seconds": 621.5999999999999
+    },
+    {
+      "text": "プログラムをやっています。それを里親",
+      "start_seconds": 618.6,
+      "end_seconds": 624.9590000000001
+    },
+    {
+      "text": "プログラムって呼んでるんですね。",
+      "start_seconds": 621.6,
+      "end_seconds": 628.0
+    },
+    {
+      "text": "で、里親って言ってるんですけど、これ",
+      "start_seconds": 624.959,
+      "end_seconds": 629.8
+    },
+    {
+      "text": "冷蔵庫とか電子レンジだったらしないじゃ",
+      "start_seconds": 628.0,
+      "end_seconds": 632.12
+    },
+    {
+      "text": "ないですか。洗濯機の里親とかってなら",
+      "start_seconds": 629.8,
+      "end_seconds": 635.24
+    },
+    {
+      "text": "ないですよね。で、これなぜかって言うと",
+      "start_seconds": 632.12,
+      "end_seconds": 638.519
+    },
+    {
+      "text": "、やっぱりロボットって我々は、ま、所有",
+      "start_seconds": 635.24,
+      "end_seconds": 642.8
+    },
+    {
+      "text": "物ではなくて関係性を構築するものとして",
+      "start_seconds": 638.519,
+      "end_seconds": 645.839
+    },
+    {
+      "text": "世に送り出したからなんですね。",
+      "start_seconds": 642.8,
+      "end_seconds": 648.5999999999999
+    },
+    {
+      "text": "で、こういう愛着を生まれる、愛着が",
+      "start_seconds": 645.839,
+      "end_seconds": 650.7600000000001
+    },
+    {
+      "text": "生まれるように設計した以上、その終わり",
+      "start_seconds": 648.6,
+      "end_seconds": 653.519
+    },
+    {
+      "text": "方まで我々作り手が責任を持たなきゃいけ",
+      "start_seconds": 650.76,
+      "end_seconds": 655.24
+    },
+    {
+      "text": "ないんじゃないかなっていう気持ちで、",
+      "start_seconds": 653.519,
+      "end_seconds": 657.68
+    },
+    {
+      "text": "こういう里親プログラムをやっています。",
+      "start_seconds": 655.24,
+      "end_seconds": 661.12
+    },
+    {
+      "text": "で、里親プログラムっていうのはうん、",
+      "start_seconds": 657.68,
+      "end_seconds": 664.519
+    },
+    {
+      "text": "もう技術のサポートでもないし、",
+      "start_seconds": 661.12,
+      "end_seconds": 666.72
+    },
+    {
+      "text": "マーケティングでもないし、マシティや",
+      "start_seconds": 664.519,
+      "end_seconds": 668.5600000000001
+    },
+    {
+      "text": "儲けでも何でもないんです。もう儲けの",
+      "start_seconds": 666.72,
+      "end_seconds": 670.6800000000001
+    },
+    {
+      "text": "ためどころがもうお金は出ていく一方なん",
+      "start_seconds": 668.56,
+      "end_seconds": 672.079
+    },
+    {
+      "text": "ですけど、でもあえてそういうことをし",
+      "start_seconds": 670.68,
+      "end_seconds": 674.4399999999999
+    },
+    {
+      "text": "てるんですね。でもそれっていうのは我々",
+      "start_seconds": 672.079,
+      "end_seconds": 677.56
+    },
+    {
+      "text": "が生み出した感情への責任感からなんです",
+      "start_seconds": 674.44,
+      "end_seconds": 680.5600000000001
+    },
+    {
+      "text": "。",
+      "start_seconds": 677.56,
+      "end_seconds": 680.56
+    },
+    {
+      "text": "今日は",
+      "start_seconds": 681.16,
+      "end_seconds": 685.1999999999999
+    },
+    {
+      "text": "オービットが奇跡だって、あ、奇跡が",
+      "start_seconds": 683.12,
+      "end_seconds": 687.279
+    },
+    {
+      "text": "テーマだっていうことなので、その",
+      "start_seconds": 685.2,
+      "end_seconds": 689.639
+    },
+    {
+      "text": "ロボットの奇跡の話をしたいなと思います",
+      "start_seconds": 687.279,
+      "end_seconds": 692.32
+    },
+    {
+      "text": "。で、今日2つ大きく分けて持ってきたん",
+      "start_seconds": 689.639,
+      "end_seconds": 694.8
+    },
+    {
+      "text": "ですけど、ロボットが人間のようになる話",
+      "start_seconds": 692.32,
+      "end_seconds": 698.48
+    },
+    {
+      "text": "と人間がロボットのようになる話ですね。",
+      "start_seconds": 694.8,
+      "end_seconds": 701.8389999999999
+    },
+    {
+      "text": "で、今ロボットが人間のようになる話は",
+      "start_seconds": 698.48,
+      "end_seconds": 705.6
+    },
+    {
+      "text": "もうものすごい勢いで開発が進んでいて、",
+      "start_seconds": 701.839,
+      "end_seconds": 707.36
+    },
+    {
+      "text": "もう実際にノルウェイのワンネス",
+      "start_seconds": 705.6,
+      "end_seconds": 709.639
+    },
+    {
+      "text": "テクノジズっていう会社からは、えと、",
+      "start_seconds": 707.36,
+      "end_seconds": 712.04
+    },
+    {
+      "text": "家庭用のお手伝いロボットが発売されまし",
+      "start_seconds": 709.639,
+      "end_seconds": 716.0790000000001
+    },
+    {
+      "text": "た。もう夢みたいですよね。で、これも他",
+      "start_seconds": 712.04,
+      "end_seconds": 718.279
+    },
+    {
+      "text": "にもいろんな大きな会社がどんどん",
+      "start_seconds": 716.079,
+      "end_seconds": 720.959
+    },
+    {
+      "text": "どんどんこう参入する予定なので、ま、",
+      "start_seconds": 718.279,
+      "end_seconds": 723.639
+    },
+    {
+      "text": "もう開発のスピードも技術の進歩の",
+      "start_seconds": 720.959,
+      "end_seconds": 726.04
+    },
+    {
+      "text": "スピードも拡大に早くなっていくことが",
+      "start_seconds": 723.639,
+      "end_seconds": 729.36
+    },
+    {
+      "text": "想定されています。",
+      "start_seconds": 726.04,
+      "end_seconds": 732.4399999999999
+    },
+    {
+      "text": "で、ま、これフィジカルAIっていうあの",
+      "start_seconds": 729.36,
+      "end_seconds": 734.24
+    },
+    {
+      "text": "技術の分野があって、そこが進んでるから",
+      "start_seconds": 732.44,
+      "end_seconds": 737.6
+    },
+    {
+      "text": "そこが発展してるんですけど、その、ま、",
+      "start_seconds": 734.24,
+      "end_seconds": 739.32
+    },
+    {
+      "text": "そうですね、日本にいるとあんまりこう",
+      "start_seconds": 737.6,
+      "end_seconds": 740.5600000000001
+    },
+    {
+      "text": "ピンとこないかもしれないんですけど、",
+      "start_seconds": 739.32,
+      "end_seconds": 742.7600000000001
+    },
+    {
+      "text": "多分数年後にはその辺で見ることになるか",
+      "start_seconds": 740.56,
+      "end_seconds": 745.4399999999999
+    },
+    {
+      "text": "なという風に思っています。",
+      "start_seconds": 742.76,
+      "end_seconds": 750.48
+    },
+    {
+      "text": "そしてもう1人間がのロボット家ですね。",
+      "start_seconds": 745.44,
+      "end_seconds": 753.72
+    },
+    {
+      "text": "で、例えば昔からこう心臓ペースメーカー",
+      "start_seconds": 750.48,
+      "end_seconds": 755.88
+    },
+    {
+      "text": "に変える人っているじゃないですか。うち",
+      "start_seconds": 753.72,
+      "end_seconds": 760.0
+    },
+    {
+      "text": "の祖母とかもそうだったんですけどで、",
+      "start_seconds": 755.88,
+      "end_seconds": 761.92
+    },
+    {
+      "text": "そういう",
+      "start_seconds": 760.0,
+      "end_seconds": 764.519
+    },
+    {
+      "text": "、ま、心臓だけじゃなくて、ま、内臓とか",
+      "start_seconds": 761.92,
+      "end_seconds": 766.88
+    },
+    {
+      "text": "義種とか則とかがどんどん、ま、交換可能",
+      "start_seconds": 764.519,
+      "end_seconds": 768.36
+    },
+    {
+      "text": "なシステムにどんどんなっていくと思わ",
+      "start_seconds": 766.88,
+      "end_seconds": 771.72
+    },
+    {
+      "text": "れるんですけど、さらにこう脳の処理を",
+      "start_seconds": 768.36,
+      "end_seconds": 773.1990000000001
+    },
+    {
+      "text": "補助するようなものっていうのも出てくる",
+      "start_seconds": 771.72,
+      "end_seconds": 776.399
+    },
+    {
+      "text": "と思っていて、で、実際に今もう手とか",
+      "start_seconds": 773.199,
+      "end_seconds": 778.5999999999999
+    },
+    {
+      "text": "使わなくても考えるだけでもうカーソルを",
+      "start_seconds": 776.399,
+      "end_seconds": 781.399
+    },
+    {
+      "text": "動かすみたいな技術の研究がもうかなり盛",
+      "start_seconds": 778.6,
+      "end_seconds": 785.72
+    },
+    {
+      "text": "にされていたりします。",
+      "start_seconds": 781.399,
+      "end_seconds": 785.72
+    },
+    {
+      "text": "あ、で、今までは、えっと、人間に足り",
+      "start_seconds": 789.72,
+      "end_seconds": 796.12
+    },
+    {
+      "text": "ないものを補うっていう発想だったと思う",
+      "start_seconds": 794.24,
+      "end_seconds": 798.6
+    },
+    {
+      "text": "んですよね。でもこれからはもうどんどん",
+      "start_seconds": 796.12,
+      "end_seconds": 800.8
+    },
+    {
+      "text": "どんどん人間というものを拡張していくっ",
+      "start_seconds": 798.6,
+      "end_seconds": 806.16
+    },
+    {
+      "text": "てことも可能かなと思っていて、今",
+      "start_seconds": 800.8,
+      "end_seconds": 808.639
+    },
+    {
+      "text": "3本目、4本目の手とかの開発をしてる人",
+      "start_seconds": 806.16,
+      "end_seconds": 812.519
+    },
+    {
+      "text": "もいるし、人間のオリンピック記録を",
+      "start_seconds": 808.639,
+      "end_seconds": 815.0790000000001
+    },
+    {
+      "text": "塗りるような偽則っていうのを開発してる",
+      "start_seconds": 812.519,
+      "end_seconds": 818.6
+    },
+    {
+      "text": "人もいるし、あとは頭の後ろに目を",
+      "start_seconds": 815.079,
+      "end_seconds": 820.4399999999999
+    },
+    {
+      "text": "つけようなんてことを考えてる方々も",
+      "start_seconds": 818.6,
+      "end_seconds": 822.6
+    },
+    {
+      "text": "いらっしゃいます。",
+      "start_seconds": 820.44,
+      "end_seconds": 826.5600000000001
+    },
+    {
+      "text": "便利じゃないですか?馬カ山で後ろから",
+      "start_seconds": 822.6,
+      "end_seconds": 828.8000000000001
+    },
+    {
+      "text": "こうフリスビーとか飛んできてもシパッと",
+      "start_seconds": 826.56,
+      "end_seconds": 831.0
+    },
+    {
+      "text": "か言って取れたりするわけですよ。便利",
+      "start_seconds": 828.8,
+      "end_seconds": 834.0
+    },
+    {
+      "text": "そうですよね。で、そういう今まで人間",
+      "start_seconds": 831.0,
+      "end_seconds": 836.68
+    },
+    {
+      "text": "じゃなかったにその人間を超えるような",
+      "start_seconds": 834.0,
+      "end_seconds": 839.12
+    },
+    {
+      "text": "存在、超人間とかスーパーヒューマンって",
+      "start_seconds": 836.68,
+      "end_seconds": 842.92
+    },
+    {
+      "text": "いうような道のりを人間は歩んでいく一歩",
+      "start_seconds": 839.12,
+      "end_seconds": 847.36
+    },
+    {
+      "text": "手前なのかもしれません。",
+      "start_seconds": 842.92,
+      "end_seconds": 847.36
+    },
+    {
+      "text": "え、ま、もしあなたが手術をして心臓が",
+      "start_seconds": 847.48,
+      "end_seconds": 853.839
+    },
+    {
+      "text": "ペースメカになってもあなたはあなたの",
+      "start_seconds": 851.56,
+      "end_seconds": 856.2399999999999
+    },
+    {
+      "text": "ままだと思うんです。なんか誰か他の人に",
+      "start_seconds": 853.839,
+      "end_seconds": 857.639
+    },
+    {
+      "text": "なっちゃったなっていう感覚はしないです",
+      "start_seconds": 856.24,
+      "end_seconds": 862.0790000000001
+    },
+    {
+      "text": "よね。でもこれが足だったら顔だったらと",
+      "start_seconds": 857.639,
+      "end_seconds": 865.36
+    },
+    {
+      "text": "か脳だったらって考えてくともうどこまで",
+      "start_seconds": 862.079,
+      "end_seconds": 867.2399999999999
+    },
+    {
+      "text": "が自分でどこまでが自分じゃないのかって",
+      "start_seconds": 865.36,
+      "end_seconds": 871.0
+    },
+    {
+      "text": "いう問題にぶち当たります。",
+      "start_seconds": 867.24,
+      "end_seconds": 873.36
+    },
+    {
+      "text": "これテセフスの船って言ったりするんです",
+      "start_seconds": 871.0,
+      "end_seconds": 877.12
+    },
+    {
+      "text": "けど、どこまでが自分かって皆さん選引",
+      "start_seconds": 873.36,
+      "end_seconds": 879.6
+    },
+    {
+      "text": "できますか?",
+      "start_seconds": 877.12,
+      "end_seconds": 882.68
+    },
+    {
+      "text": "もう実は私たちはもうこの問いの入り口の",
+      "start_seconds": 879.6,
+      "end_seconds": 884.6
+    },
+    {
+      "text": "ところにもう立っている状態だと私は思っ",
+      "start_seconds": 882.68,
+      "end_seconds": 887.3199999999999
+    },
+    {
+      "text": "ています。",
+      "start_seconds": 884.6,
+      "end_seconds": 891.0
+    },
+    {
+      "text": "想像してみてください。明日の朝起きたら",
+      "start_seconds": 887.32,
+      "end_seconds": 894.72
+    },
+    {
+      "text": "体がロボットになってる。もうカフカの",
+      "start_seconds": 891.0,
+      "end_seconds": 897.88
+    },
+    {
+      "text": "変身みたいですよね。で、これまだ",
+      "start_seconds": 894.72,
+      "end_seconds": 899.519
+    },
+    {
+      "text": "Androidで人間型だったらいいです",
+      "start_seconds": 897.88,
+      "end_seconds": 901.759
+    },
+    {
+      "text": "よ。あら、手が真っ白ペッパー君みたい",
+      "start_seconds": 899.519,
+      "end_seconds": 902.92
+    },
+    {
+      "text": "みたいな感じだったらまだいいじゃない",
+      "start_seconds": 901.759,
+      "end_seconds": 905.519
+    },
+    {
+      "text": "ですか。でも[笑い]あら、私6本あるわ",
+      "start_seconds": 902.92,
+      "end_seconds": 908.12
+    },
+    {
+      "text": "とかなんならもう手も足もなくてまんまる",
+      "start_seconds": 905.519,
+      "end_seconds": 910.5600000000001
+    },
+    {
+      "text": "でどっか行くのにも転がっていかなきゃ",
+      "start_seconds": 908.12,
+      "end_seconds": 913.199
+    },
+    {
+      "text": "いけないとかそんな状態にしてもなったと",
+      "start_seconds": 910.56,
+      "end_seconds": 918.8389999999999
+    },
+    {
+      "text": "してもあなたはあなたなんでしょうか?",
+      "start_seconds": 913.199,
+      "end_seconds": 918.8389999999999
+    },
+    {
+      "text": "自分のアイデンティティは記憶だっていう",
+      "start_seconds": 921.56,
+      "end_seconds": 928.3599999999999
+    },
+    {
+      "text": "人もいるでしょう。魂だっていう人もいる",
+      "start_seconds": 924.8,
+      "end_seconds": 931.56
+    },
+    {
+      "text": "かもしれません。でもやっぱり体がない",
+      "start_seconds": 928.36,
+      "end_seconds": 934.1990000000001
+    },
+    {
+      "text": "とっていう人もいるんじゃないでしょうか",
+      "start_seconds": 931.56,
+      "end_seconds": 938.399
+    },
+    {
+      "text": "。だってそれもロボットじゃないって。",
+      "start_seconds": 934.199,
+      "end_seconds": 941.8389999999999
+    },
+    {
+      "text": "で、私はま、うん、意識とかなのかなって",
+      "start_seconds": 938.399,
+      "end_seconds": 944.12
+    },
+    {
+      "text": "思ってたりもするんですけど、でも",
+      "start_seconds": 941.839,
+      "end_seconds": 946.5600000000001
+    },
+    {
+      "text": "そもそも意識って寝てる時には途切れてる",
+      "start_seconds": 944.12,
+      "end_seconds": 950.16
+    },
+    {
+      "text": "し、もうこういうことを日々考えてる私で",
+      "start_seconds": 946.56,
+      "end_seconds": 953.3599999999999
+    },
+    {
+      "text": "ももう毎日のようにその教会が由来いで",
+      "start_seconds": 950.16,
+      "end_seconds": 956.36
+    },
+    {
+      "text": "いくんですね。",
+      "start_seconds": 953.36,
+      "end_seconds": 960.12
+    },
+    {
+      "text": "それぐらい難しい問題です。で、でも将来",
+      "start_seconds": 956.36,
+      "end_seconds": 963.12
+    },
+    {
+      "text": "的には皆さん自分がどう生きるかってのを",
+      "start_seconds": 960.12,
+      "end_seconds": 967.24
+    },
+    {
+      "text": "選べるようになると思っています。",
+      "start_seconds": 963.12,
+      "end_seconds": 970.079
+    },
+    {
+      "text": "自分の体のパーツが入れ替わって例えば",
+      "start_seconds": 967.24,
+      "end_seconds": 972.8
+    },
+    {
+      "text": "もう記憶だけとかになったりとかして、",
+      "start_seconds": 970.079,
+      "end_seconds": 976.4799999999999
+    },
+    {
+      "text": "それが自分なのかとか、それをいつまで",
+      "start_seconds": 972.8,
+      "end_seconds": 979.12
+    },
+    {
+      "text": "残しておきたいのかとか、もうここで",
+      "start_seconds": 976.48,
+      "end_seconds": 981.839
+    },
+    {
+      "text": "終わりにしようとかそういう選択をする",
+      "start_seconds": 979.12,
+      "end_seconds": 985.04
+    },
+    {
+      "text": "ことになるかもしれないんです。",
+      "start_seconds": 981.839,
+      "end_seconds": 988.72
+    },
+    {
+      "text": "実際にこういう話を結構相談を今でもよく",
+      "start_seconds": 985.04,
+      "end_seconds": 992.8389999999999
+    },
+    {
+      "text": "受けたりとかもしています。",
+      "start_seconds": 988.72,
+      "end_seconds": 992.839
+    },
+    {
+      "text": "もしあなただったら",
+      "start_seconds": 992.88,
+      "end_seconds": 999.16
+    },
+    {
+      "text": "どこまで治療しますか?",
+      "start_seconds": 995.72,
+      "end_seconds": 1002.0790000000001
+    },
+    {
+      "text": "どこでもストップしよう。ここで闇にし",
+      "start_seconds": 999.16,
+      "end_seconds": 1004.639
+    },
+    {
+      "text": "ようって思いますか?",
+      "start_seconds": 1002.079,
+      "end_seconds": 1009.399
+    },
+    {
+      "text": "そしてあなたがやいなくなった後その後に",
+      "start_seconds": 1004.639,
+      "end_seconds": 1014.519
+    },
+    {
+      "text": "何か残したいものはありますか?",
+      "start_seconds": 1009.399,
+      "end_seconds": 1014.519
+    },
+    {
+      "text": "今私が話してるようなことってちょっと",
+      "start_seconds": 1018.16,
+      "end_seconds": 1026.439
+    },
+    {
+      "text": "突っぴに聞こえるのかもしれません。",
+      "start_seconds": 1022.16,
+      "end_seconds": 1030.0
+    },
+    {
+      "text": "SFじゃないんだからって。でも皆さんが",
+      "start_seconds": 1026.439,
+      "end_seconds": 1033.1200000000001
+    },
+    {
+      "text": "思ってるよりももう少し早くそういう世界",
+      "start_seconds": 1030.0,
+      "end_seconds": 1038.679
+    },
+    {
+      "text": "が現実にを帯びてくると思っています。",
+      "start_seconds": 1033.12,
+      "end_seconds": 1038.6789999999999
+    },
+    {
+      "text": "自分とは何なのかということを今考え始め",
+      "start_seconds": 1039.4,
+      "end_seconds": 1047.48
+    },
+    {
+      "text": "てもいいのかもしれません。",
+      "start_seconds": 1043.319,
+      "end_seconds": 1051.0
+    },
+    {
+      "text": "ひょっとしたらそのすみりの傷こそが",
+      "start_seconds": 1047.48,
+      "end_seconds": 1054.76
+    },
+    {
+      "text": "あなたなのかもしれません。",
+      "start_seconds": 1051.0,
+      "end_seconds": 1057.24
+    },
+    {
+      "text": "未来のあなたが",
+      "start_seconds": 1054.76,
+      "end_seconds": 1061.28
+    },
+    {
+      "text": "その傷を機械の体に移植したいって思う日",
+      "start_seconds": 1057.24,
+      "end_seconds": 1066.52
+    },
+    {
+      "text": "が来るかもしれないからです。",
+      "start_seconds": 1061.28,
+      "end_seconds": 1066.52
+    },
+    {
+      "text": "ご成聴ありがとうございました。",
+      "start_seconds": 1068.16,
+      "end_seconds": 1072.799
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 1074.212,
+      "end_seconds": 1076.232
+    }
+  ],
+  "display_captions": [
+    {
+      "text": "[音楽]",
+      "start_seconds": 4.584,
+      "end_seconds": 6.603999999999999,
+      "id": "hkE-8LRiG1k-display-0001",
+      "segment_id": "hkE-8LRiG1k-ja-0001"
+    },
+    {
+      "text": "Orbit",
+      "start_seconds": 7.919,
+      "end_seconds": 10.48,
+      "id": "hkE-8LRiG1k-display-0002",
+      "segment_id": "hkE-8LRiG1k-ja-0002"
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 10.48,
+      "end_seconds": 12.5,
+      "id": "hkE-8LRiG1k-display-0003",
+      "segment_id": "hkE-8LRiG1k-ja-0002"
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 15.065,
+      "end_seconds": 17.085,
+      "id": "hkE-8LRiG1k-display-0004",
+      "segment_id": "hkE-8LRiG1k-ja-0003"
+    },
+    {
+      "text": "なんですが",
+      "start_seconds": 28.599,
+      "end_seconds": 32.08,
+      "id": "hkE-8LRiG1k-display-0005",
+      "segment_id": "hkE-8LRiG1k-ja-0004"
+    },
+    {
+      "text": "あなたの体に長く残ってる傷ってあります",
+      "start_seconds": 35.76,
+      "end_seconds": 39.64,
+      "id": "hkE-8LRiG1k-display-0006",
+      "segment_id": "hkE-8LRiG1k-ja-0005"
+    },
+    {
+      "text": "か?",
+      "start_seconds": 39.64,
+      "end_seconds": 42.2,
+      "id": "hkE-8LRiG1k-display-0007",
+      "segment_id": "hkE-8LRiG1k-ja-0005"
+    },
+    {
+      "text": "もしかしたら大きな手術を経験した方や",
+      "start_seconds": 42.2,
+      "end_seconds": 46.36,
+      "id": "hkE-8LRiG1k-display-0008",
+      "segment_id": "hkE-8LRiG1k-ja-0006"
+    },
+    {
+      "text": "事故にあったなんて方もいらっしゃるかも",
+      "start_seconds": 46.36,
+      "end_seconds": 48.48,
+      "id": "hkE-8LRiG1k-display-0009",
+      "segment_id": "hkE-8LRiG1k-ja-0006"
+    },
+    {
+      "text": "しれません。",
+      "start_seconds": 48.48,
+      "end_seconds": 50.719,
+      "id": "hkE-8LRiG1k-display-0010",
+      "segment_id": "hkE-8LRiG1k-ja-0006"
+    },
+    {
+      "text": "でもそんな経験したことないよっていう方",
+      "start_seconds": 50.719,
+      "end_seconds": 53.8,
+      "id": "hkE-8LRiG1k-display-0011",
+      "segment_id": "hkE-8LRiG1k-ja-0007"
+    },
+    {
+      "text": "でも子供の時にぶつけたり転んだりして",
+      "start_seconds": 53.8,
+      "end_seconds": 58.84,
+      "id": "hkE-8LRiG1k-display-0012",
+      "segment_id": "hkE-8LRiG1k-ja-0007"
+    },
+    {
+      "text": "できたようなちょっとした怪我のような",
+      "start_seconds": 58.84,
+      "end_seconds": 61.039,
+      "id": "hkE-8LRiG1k-display-0013",
+      "segment_id": "hkE-8LRiG1k-ja-0007"
+    },
+    {
+      "text": "もってあるんじゃないでしょうか。",
+      "start_seconds": 61.039,
+      "end_seconds": 66.12,
+      "id": "hkE-8LRiG1k-display-0014",
+      "segment_id": "hkE-8LRiG1k-ja-0008"
+    },
+    {
+      "text": "もしあるよっていう方はその傷ができた時",
+      "start_seconds": 66.159,
+      "end_seconds": 69.52,
+      "id": "hkE-8LRiG1k-display-0015",
+      "segment_id": "hkE-8LRiG1k-ja-0009"
+    },
+    {
+      "text": "のことを少し思い出してみて欲しくて、",
+      "start_seconds": 69.52,
+      "end_seconds": 73.64,
+      "id": "hkE-8LRiG1k-display-0016",
+      "segment_id": "hkE-8LRiG1k-ja-0009"
+    },
+    {
+      "text": "その時何歳だったのかなとか、",
+      "start_seconds": 73.64,
+      "end_seconds": 77.28,
+      "id": "hkE-8LRiG1k-display-0017",
+      "segment_id": "hkE-8LRiG1k-ja-0009"
+    },
+    {
+      "text": "どこでだったかなとか、誰と一緒にいたの",
+      "start_seconds": 77.28,
+      "end_seconds": 80.159,
+      "id": "hkE-8LRiG1k-display-0018",
+      "segment_id": "hkE-8LRiG1k-ja-0010"
+    },
+    {
+      "text": "かなってことをちょっと思い出してみて",
+      "start_seconds": 80.159,
+      "end_seconds": 81.799,
+      "id": "hkE-8LRiG1k-display-0019",
+      "segment_id": "hkE-8LRiG1k-ja-0010"
+    },
+    {
+      "text": "欲しいんですね。",
+      "start_seconds": 81.799,
+      "end_seconds": 85.28,
+      "id": "hkE-8LRiG1k-display-0020",
+      "segment_id": "hkE-8LRiG1k-ja-0010"
+    },
+    {
+      "text": "今私がお聞きしたいのはあなたにあるその",
+      "start_seconds": 86.2,
+      "end_seconds": 89.68,
+      "id": "hkE-8LRiG1k-display-0021",
+      "segment_id": "hkE-8LRiG1k-ja-0011"
+    },
+    {
+      "text": "傷、消せるとしたら消したいですかって",
+      "start_seconds": 89.68,
+      "end_seconds": 92.6,
+      "id": "hkE-8LRiG1k-display-0022",
+      "segment_id": "hkE-8LRiG1k-ja-0011"
+    },
+    {
+      "text": "いうことなんです。",
+      "start_seconds": 92.6,
+      "end_seconds": 96.24,
+      "id": "hkE-8LRiG1k-display-0023",
+      "segment_id": "hkE-8LRiG1k-ja-0011"
+    },
+    {
+      "text": "人によっては当たり前じゃん。それは消し",
+      "start_seconds": 96.24,
+      "end_seconds": 99.32,
+      "id": "hkE-8LRiG1k-display-0024",
+      "segment_id": "hkE-8LRiG1k-ja-0012"
+    },
+    {
+      "text": "たいよって思う人もいると思いますし、",
+      "start_seconds": 99.32,
+      "end_seconds": 102.92,
+      "id": "hkE-8LRiG1k-display-0025",
+      "segment_id": "hkE-8LRiG1k-ja-0012"
+    },
+    {
+      "text": "いや、この傷見るとあの時の状況を",
+      "start_seconds": 102.92,
+      "end_seconds": 105.079,
+      "id": "hkE-8LRiG1k-display-0026",
+      "segment_id": "hkE-8LRiG1k-ja-0012"
+    },
+    {
+      "text": "思い出して懐かしいから消さなくてもいい",
+      "start_seconds": 105.079,
+      "end_seconds": 107.719,
+      "id": "hkE-8LRiG1k-display-0027",
+      "segment_id": "hkE-8LRiG1k-ja-0012"
+    },
+    {
+      "text": "かなっていう人もいるかと思います。",
+      "start_seconds": 107.719,
+      "end_seconds": 112.28,
+      "id": "hkE-8LRiG1k-display-0028",
+      "segment_id": "hkE-8LRiG1k-ja-0013"
+    },
+    {
+      "text": "で、私の足首にも見えるようにちょっと",
+      "start_seconds": 112.28,
+      "end_seconds": 116.56,
+      "id": "hkE-8LRiG1k-display-0029",
+      "segment_id": "hkE-8LRiG1k-ja-0014"
+    },
+    {
+      "text": "してきたんですけど、傷が残っていて、ま",
+      "start_seconds": 116.56,
+      "end_seconds": 119.399,
+      "id": "hkE-8LRiG1k-display-0030",
+      "segment_id": "hkE-8LRiG1k-ja-0014"
+    },
+    {
+      "text": "、11歳の時に学校の皇帝で転んだんです",
+      "start_seconds": 119.399,
+      "end_seconds": 121.88,
+      "id": "hkE-8LRiG1k-display-0031",
+      "segment_id": "hkE-8LRiG1k-ja-0014"
+    },
+    {
+      "text": "ね。で、その時はあんまり言いたくなかっ",
+      "start_seconds": 121.88,
+      "end_seconds": 125.32,
+      "id": "hkE-8LRiG1k-display-0032",
+      "segment_id": "hkE-8LRiG1k-ja-0015"
+    },
+    {
+      "text": "たんですけど、せっかく遊んでるのに、あ",
+      "start_seconds": 125.32,
+      "end_seconds": 127.56,
+      "id": "hkE-8LRiG1k-display-0033",
+      "segment_id": "hkE-8LRiG1k-ja-0015"
+    },
+    {
+      "text": "、保険室行くのやだなって思ったこととか",
+      "start_seconds": 127.56,
+      "end_seconds": 129.759,
+      "id": "hkE-8LRiG1k-display-0034",
+      "segment_id": "hkE-8LRiG1k-ja-0015"
+    },
+    {
+      "text": "、あと保険室に行った後の、あの、なんて",
+      "start_seconds": 129.759,
+      "end_seconds": 132.52,
+      "id": "hkE-8LRiG1k-display-0035",
+      "segment_id": "hkE-8LRiG1k-ja-0015"
+    },
+    {
+      "text": "言うんですか、独特の匂いみたいなあのと",
+      "start_seconds": 132.52,
+      "end_seconds": 135.519,
+      "id": "hkE-8LRiG1k-display-0036",
+      "segment_id": "hkE-8LRiG1k-ja-0016"
+    },
+    {
+      "text": "かも結構思い起こされてくるので、まあ、",
+      "start_seconds": 135.519,
+      "end_seconds": 138.4,
+      "id": "hkE-8LRiG1k-display-0037",
+      "segment_id": "hkE-8LRiG1k-ja-0016"
+    },
+    {
+      "text": "消さなくてもいいかなって思ったりしてい",
+      "start_seconds": 138.4,
+      "end_seconds": 141.2,
+      "id": "hkE-8LRiG1k-display-0038",
+      "segment_id": "hkE-8LRiG1k-ja-0016"
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 141.2,
+      "end_seconds": 143.4,
+      "id": "hkE-8LRiG1k-display-0039",
+      "segment_id": "hkE-8LRiG1k-ja-0016"
+    },
+    {
+      "text": "その辺のこういう傷を消したいか消したく",
+      "start_seconds": 143.4,
+      "end_seconds": 146.959,
+      "id": "hkE-8LRiG1k-display-0040",
+      "segment_id": "hkE-8LRiG1k-ja-0017"
+    },
+    {
+      "text": "ないかの感覚って全然人によって違うんだ",
+      "start_seconds": 146.959,
+      "end_seconds": 150.12,
+      "id": "hkE-8LRiG1k-display-0041",
+      "segment_id": "hkE-8LRiG1k-ja-0017"
+    },
+    {
+      "text": "よって話を今日はしたいと思います。",
+      "start_seconds": 150.12,
+      "end_seconds": 154.519,
+      "id": "hkE-8LRiG1k-display-0042",
+      "segment_id": "hkE-8LRiG1k-ja-0017"
+    },
+    {
+      "text": "申し遅れました。私義裕子と申しまして、",
+      "start_seconds": 154.519,
+      "end_seconds": 158.48,
+      "id": "hkE-8LRiG1k-display-0043",
+      "segment_id": "hkE-8LRiG1k-ja-0018"
+    },
+    {
+      "text": "ソニーという会社でロボットを作ってい",
+      "start_seconds": 158.48,
+      "end_seconds": 160.44,
+      "id": "hkE-8LRiG1k-display-0044",
+      "segment_id": "hkE-8LRiG1k-ja-0018"
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 160.44,
+      "end_seconds": 162.56,
+      "id": "hkE-8LRiG1k-display-0045",
+      "segment_id": "hkE-8LRiG1k-ja-0018"
+    },
+    {
+      "text": "いろんなロボットを作ってきてるんです",
+      "start_seconds": 162.56,
+      "end_seconds": 164.76,
+      "id": "hkE-8LRiG1k-display-0046",
+      "segment_id": "hkE-8LRiG1k-ja-0019"
+    },
+    {
+      "text": "けど、ま、1番世の中に出回ってるのは",
+      "start_seconds": 164.76,
+      "end_seconds": 170.44,
+      "id": "hkE-8LRiG1k-display-0047",
+      "segment_id": "hkE-8LRiG1k-ja-0019"
+    },
+    {
+      "text": "スライドが動かないけど、次に、あ、お",
+      "start_seconds": 171.36,
+      "end_seconds": 173.68,
+      "id": "hkE-8LRiG1k-display-0048",
+      "segment_id": "hkE-8LRiG1k-ja-0020"
+    },
+    {
+      "text": "願いします。はい。この犬の形をしたもの",
+      "start_seconds": 173.68,
+      "end_seconds": 176.4,
+      "id": "hkE-8LRiG1k-display-0049",
+      "segment_id": "hkE-8LRiG1k-ja-0020"
+    },
+    {
+      "text": "かなって思います。で、これ一般の方々",
+      "start_seconds": 176.4,
+      "end_seconds": 179.319,
+      "id": "hkE-8LRiG1k-display-0050",
+      "segment_id": "hkE-8LRiG1k-ja-0020"
+    },
+    {
+      "text": "向けに向けて作ってるものなので、ま、",
+      "start_seconds": 179.319,
+      "end_seconds": 181.84,
+      "id": "hkE-8LRiG1k-display-0051",
+      "segment_id": "hkE-8LRiG1k-ja-0020"
+    },
+    {
+      "text": "もしかしたら目にしたことがある方も",
+      "start_seconds": 181.84,
+      "end_seconds": 183.519,
+      "id": "hkE-8LRiG1k-display-0052",
+      "segment_id": "hkE-8LRiG1k-ja-0021"
+    },
+    {
+      "text": "いらっしゃるかなって思います。で、これ",
+      "start_seconds": 183.519,
+      "end_seconds": 186.72,
+      "id": "hkE-8LRiG1k-display-0053",
+      "segment_id": "hkE-8LRiG1k-ja-0021"
+    },
+    {
+      "text": "犬の形してるので作ってる時って、ま、",
+      "start_seconds": 186.72,
+      "end_seconds": 189.519,
+      "id": "hkE-8LRiG1k-display-0054",
+      "segment_id": "hkE-8LRiG1k-ja-0021"
+    },
+    {
+      "text": "疑似生物を作ってるようなもんなんですよ",
+      "start_seconds": 189.519,
+      "end_seconds": 191.239,
+      "id": "hkE-8LRiG1k-display-0055",
+      "segment_id": "hkE-8LRiG1k-ja-0021"
+    },
+    {
+      "text": "ね。なので、ま、例えばこう性別があって",
+      "start_seconds": 191.239,
+      "end_seconds": 195.56,
+      "id": "hkE-8LRiG1k-display-0056",
+      "segment_id": "hkE-8LRiG1k-ja-0022"
+    },
+    {
+      "text": "、オとかメスとかいた方が面白いのかなっ",
+      "start_seconds": 195.56,
+      "end_seconds": 197.28,
+      "id": "hkE-8LRiG1k-display-0057",
+      "segment_id": "hkE-8LRiG1k-ja-0022"
+    },
+    {
+      "text": "て思ったりとか、性格どうしようとかって",
+      "start_seconds": 197.28,
+      "end_seconds": 199.64,
+      "id": "hkE-8LRiG1k-display-0058",
+      "segment_id": "hkE-8LRiG1k-ja-0022"
+    },
+    {
+      "text": "思ったりするんですけど、ま、私が1番",
+      "start_seconds": 199.64,
+      "end_seconds": 202.239,
+      "id": "hkE-8LRiG1k-display-0059",
+      "segment_id": "hkE-8LRiG1k-ja-0022"
+    },
+    {
+      "text": "こだわったのはもうとにかく命令に従わな",
+      "start_seconds": 202.239,
+      "end_seconds": 205.239,
+      "id": "hkE-8LRiG1k-display-0060",
+      "segment_id": "hkE-8LRiG1k-ja-0023"
+    },
+    {
+      "text": "いっていうことだったんです。",
+      "start_seconds": 205.239,
+      "end_seconds": 209.0,
+      "id": "hkE-8LRiG1k-display-0061",
+      "segment_id": "hkE-8LRiG1k-ja-0023"
+    },
+    {
+      "text": "え、ロボットを作る時って、まあ大体人",
+      "start_seconds": 209.0,
+      "end_seconds": 211.879,
+      "id": "hkE-8LRiG1k-display-0062",
+      "segment_id": "hkE-8LRiG1k-ja-0024"
+    },
+    {
+      "text": "って命令に従わせよう、従わせようって",
+      "start_seconds": 211.879,
+      "end_seconds": 214.4,
+      "id": "hkE-8LRiG1k-display-0063",
+      "segment_id": "hkE-8LRiG1k-ja-0024"
+    },
+    {
+      "text": "思うものなんですね。でも私はこの製品の",
+      "start_seconds": 214.4,
+      "end_seconds": 217.599,
+      "id": "hkE-8LRiG1k-display-0064",
+      "segment_id": "hkE-8LRiG1k-ja-0024"
+    },
+    {
+      "text": "性格を考えて逆にもう全然言うこと聞か",
+      "start_seconds": 217.599,
+      "end_seconds": 220.48,
+      "id": "hkE-8LRiG1k-display-0065",
+      "segment_id": "hkE-8LRiG1k-ja-0024"
+    },
+    {
+      "text": "ない方がいいって思いました。で、それ",
+      "start_seconds": 220.48,
+      "end_seconds": 223.56,
+      "id": "hkE-8LRiG1k-display-0066",
+      "segment_id": "hkE-8LRiG1k-ja-0025"
+    },
+    {
+      "text": "なんでかって言うと、自分が子育てをして",
+      "start_seconds": 223.56,
+      "end_seconds": 226.2,
+      "id": "hkE-8LRiG1k-display-0067",
+      "segment_id": "hkE-8LRiG1k-ja-0025"
+    },
+    {
+      "text": "て思うんですけど結局人ってもう自分の",
+      "start_seconds": 226.2,
+      "end_seconds": 229.519,
+      "id": "hkE-8LRiG1k-display-0068",
+      "segment_id": "hkE-8LRiG1k-ja-0025"
+    },
+    {
+      "text": "言うことを全く聞かない。あの、自分とは",
+      "start_seconds": 229.519,
+      "end_seconds": 232.519,
+      "id": "hkE-8LRiG1k-display-0069",
+      "segment_id": "hkE-8LRiG1k-ja-0026"
+    },
+    {
+      "text": "全く別の個体であるっていうところに対し",
+      "start_seconds": 232.519,
+      "end_seconds": 234.48,
+      "id": "hkE-8LRiG1k-display-0070",
+      "segment_id": "hkE-8LRiG1k-ja-0026"
+    },
+    {
+      "text": "てこの無限の愛情を感じるのであって、",
+      "start_seconds": 234.48,
+      "end_seconds": 237.879,
+      "id": "hkE-8LRiG1k-display-0071",
+      "segment_id": "hkE-8LRiG1k-ja-0026"
+    },
+    {
+      "text": "全部命令を聞いたり、言うことを聞いたり",
+      "start_seconds": 237.879,
+      "end_seconds": 239.76,
+      "id": "hkE-8LRiG1k-display-0072",
+      "segment_id": "hkE-8LRiG1k-ja-0026"
+    },
+    {
+      "text": "してしまうともう関係がこう対じゃ",
+      "start_seconds": 239.76,
+      "end_seconds": 243.879,
+      "id": "hkE-8LRiG1k-display-0073",
+      "segment_id": "hkE-8LRiG1k-ja-0027"
+    },
+    {
+      "text": "なくなってしまう。で、じゃなくなっ",
+      "start_seconds": 243.879,
+      "end_seconds": 245.72,
+      "id": "hkE-8LRiG1k-display-0074",
+      "segment_id": "hkE-8LRiG1k-ja-0027"
+    },
+    {
+      "text": "ちゃうともう興味がなくなっちゃうんです",
+      "start_seconds": 245.72,
+      "end_seconds": 247.159,
+      "id": "hkE-8LRiG1k-display-0075",
+      "segment_id": "hkE-8LRiG1k-ja-0027"
+    },
+    {
+      "text": "よね。なので、こういう長く一緒に過ごす",
+      "start_seconds": 247.159,
+      "end_seconds": 249.439,
+      "id": "hkE-8LRiG1k-display-0076",
+      "segment_id": "hkE-8LRiG1k-ja-0027"
+    },
+    {
+      "text": "ようなロボットを作るからにはもう言う",
+      "start_seconds": 249.439,
+      "end_seconds": 252.28,
+      "id": "hkE-8LRiG1k-display-0077",
+      "segment_id": "hkE-8LRiG1k-ja-0028"
+    },
+    {
+      "text": "こと聞かない方がいいと思いました。",
+      "start_seconds": 252.28,
+      "end_seconds": 255.319,
+      "id": "hkE-8LRiG1k-display-0078",
+      "segment_id": "hkE-8LRiG1k-ja-0028"
+    },
+    {
+      "text": "で、もちろん反対する人もたくさんいて、",
+      "start_seconds": 255.319,
+      "end_seconds": 259.32,
+      "id": "hkE-8LRiG1k-display-0079",
+      "segment_id": "hkE-8LRiG1k-ja-0029"
+    },
+    {
+      "text": "そんなんわけないだろうとかすごい言われ",
+      "start_seconds": 259.32,
+      "end_seconds": 260.88,
+      "id": "hkE-8LRiG1k-display-0080",
+      "segment_id": "hkE-8LRiG1k-ja-0029"
+    },
+    {
+      "text": "たんですけど、ま、1人ずつせて説得して",
+      "start_seconds": 260.88,
+      "end_seconds": 263.16,
+      "id": "hkE-8LRiG1k-display-0081",
+      "segment_id": "hkE-8LRiG1k-ja-0029"
+    },
+    {
+      "text": "いって、最終的には全く言うことを聞か",
+      "start_seconds": 263.16,
+      "end_seconds": 265.36,
+      "id": "hkE-8LRiG1k-display-0082",
+      "segment_id": "hkE-8LRiG1k-ja-0029"
+    },
+    {
+      "text": "ないロボットにしました。",
+      "start_seconds": 265.36,
+      "end_seconds": 268.479,
+      "id": "hkE-8LRiG1k-display-0083",
+      "segment_id": "hkE-8LRiG1k-ja-0030"
+    },
+    {
+      "text": "で、ま、ロボットって",
+      "start_seconds": 268.479,
+      "end_seconds": 271.44,
+      "id": "hkE-8LRiG1k-display-0084",
+      "segment_id": "hkE-8LRiG1k-ja-0031"
+    },
+    {
+      "text": "いわゆるこう、ま、家電製品なんですよね",
+      "start_seconds": 271.44,
+      "end_seconds": 273.36,
+      "id": "hkE-8LRiG1k-display-0085",
+      "segment_id": "hkE-8LRiG1k-ja-0031"
+    },
+    {
+      "text": "。で、冷蔵庫とか洗濯機と変わらないわけ",
+      "start_seconds": 273.36,
+      "end_seconds": 275.919,
+      "id": "hkE-8LRiG1k-display-0086",
+      "segment_id": "hkE-8LRiG1k-ja-0031"
+    },
+    {
+      "text": "です。でもこういう生き物の形をしてると",
+      "start_seconds": 275.919,
+      "end_seconds": 278.88,
+      "id": "hkE-8LRiG1k-display-0087",
+      "segment_id": "hkE-8LRiG1k-ja-0031"
+    },
+    {
+      "text": "、ま、すごく深い愛情を注いでくれる方が",
+      "start_seconds": 278.88,
+      "end_seconds": 282.36,
+      "id": "hkE-8LRiG1k-display-0088",
+      "segment_id": "hkE-8LRiG1k-ja-0032"
+    },
+    {
+      "text": "非常に多くて、え、お客様からの要望も",
+      "start_seconds": 282.36,
+      "end_seconds": 285.32,
+      "id": "hkE-8LRiG1k-display-0089",
+      "segment_id": "hkE-8LRiG1k-ja-0032"
+    },
+    {
+      "text": "もう全然他の家電製品と違うんですね。え",
+      "start_seconds": 285.32,
+      "end_seconds": 288.6,
+      "id": "hkE-8LRiG1k-display-0090",
+      "segment_id": "hkE-8LRiG1k-ja-0032"
+    },
+    {
+      "text": "、例えば、ま、修理に出さなきゃいけない",
+      "start_seconds": 288.6,
+      "end_seconds": 290.68,
+      "id": "hkE-8LRiG1k-display-0091",
+      "segment_id": "hkE-8LRiG1k-ja-0032"
+    },
+    {
+      "text": "時とかってあるんですけど、で、その修理",
+      "start_seconds": 290.68,
+      "end_seconds": 292.52,
+      "id": "hkE-8LRiG1k-display-0092",
+      "segment_id": "hkE-8LRiG1k-ja-0033"
+    },
+    {
+      "text": "を出す時とかに電話かってくるわけですよ",
+      "start_seconds": 292.52,
+      "end_seconds": 294.8,
+      "id": "hkE-8LRiG1k-display-0093",
+      "segment_id": "hkE-8LRiG1k-ja-0033"
+    },
+    {
+      "text": "。あの、寂しくてしょうがないんですって",
+      "start_seconds": 294.8,
+      "end_seconds": 297.479,
+      "id": "hkE-8LRiG1k-display-0094",
+      "segment_id": "hkE-8LRiG1k-ja-0033"
+    },
+    {
+      "text": "。",
+      "start_seconds": 297.479,
+      "end_seconds": 299.56,
+      "id": "hkE-8LRiG1k-display-0095",
+      "segment_id": "hkE-8LRiG1k-ja-0033"
+    },
+    {
+      "text": "はあ、そう[鼻息]ですか。え、寂しくて",
+      "start_seconds": 299.56,
+      "end_seconds": 302.36,
+      "id": "hkE-8LRiG1k-display-0096",
+      "segment_id": "hkE-8LRiG1k-ja-0034"
+    },
+    {
+      "text": "しょうがないんで、今そちらでうちの子が",
+      "start_seconds": 302.36,
+      "end_seconds": 304.759,
+      "id": "hkE-8LRiG1k-display-0097",
+      "segment_id": "hkE-8LRiG1k-ja-0034"
+    },
+    {
+      "text": "どう過ごしてるかちょっと教えてくれませ",
+      "start_seconds": 304.759,
+      "end_seconds": 306.639,
+      "id": "hkE-8LRiG1k-display-0098",
+      "segment_id": "hkE-8LRiG1k-ja-0034"
+    },
+    {
+      "text": "んかって言われたことがあります。",
+      "start_seconds": 306.639,
+      "end_seconds": 309.96,
+      "id": "hkE-8LRiG1k-display-0099",
+      "segment_id": "hkE-8LRiG1k-ja-0034"
+    },
+    {
+      "text": "もちろん本当のことなんて言えません。あ",
+      "start_seconds": 309.96,
+      "end_seconds": 313.4,
+      "id": "hkE-8LRiG1k-display-0100",
+      "segment_id": "hkE-8LRiG1k-ja-0035"
+    },
+    {
+      "text": "、オタクの子今文化されてバラバラです",
+      "start_seconds": 313.4,
+      "end_seconds": 316.479,
+      "id": "hkE-8LRiG1k-display-0101",
+      "segment_id": "hkE-8LRiG1k-ja-0035"
+    },
+    {
+      "text": "なんて言えないわけなんですよ。生き物と",
+      "start_seconds": 316.479,
+      "end_seconds": 319.4,
+      "id": "hkE-8LRiG1k-display-0102",
+      "segment_id": "hkE-8LRiG1k-ja-0035"
+    },
+    {
+      "text": "いう点なので。なので、あ、大丈夫ですよ",
+      "start_seconds": 319.4,
+      "end_seconds": 323.0,
+      "id": "hkE-8LRiG1k-display-0103",
+      "segment_id": "hkE-8LRiG1k-ja-0036"
+    },
+    {
+      "text": "。オタクのなんとかちゃん、今すごく元気",
+      "start_seconds": 323.0,
+      "end_seconds": 325.28,
+      "id": "hkE-8LRiG1k-display-0104",
+      "segment_id": "hkE-8LRiG1k-ja-0036"
+    },
+    {
+      "text": "にしています。ご心配なさらないで",
+      "start_seconds": 325.28,
+      "end_seconds": 327.479,
+      "id": "hkE-8LRiG1k-display-0105",
+      "segment_id": "hkE-8LRiG1k-ja-0036"
+    },
+    {
+      "text": "くださいと言って電話を切りました。",
+      "start_seconds": 327.479,
+      "end_seconds": 331.6,
+      "id": "hkE-8LRiG1k-display-0106",
+      "segment_id": "hkE-8LRiG1k-ja-0037"
+    },
+    {
+      "text": "数時間でももうそれを送り返すのが遅れを",
+      "start_seconds": 331.6,
+      "end_seconds": 333.8,
+      "id": "hkE-8LRiG1k-display-0107",
+      "segment_id": "hkE-8LRiG1k-ja-0038"
+    },
+    {
+      "text": "思うならちょっとうちの子今どこにいるん",
+      "start_seconds": 333.8,
+      "end_seconds": 335.919,
+      "id": "hkE-8LRiG1k-display-0108",
+      "segment_id": "hkE-8LRiG1k-ja-0038"
+    },
+    {
+      "text": "ですかとか言って遅れ怒られたりしたこと",
+      "start_seconds": 335.919,
+      "end_seconds": 337.639,
+      "id": "hkE-8LRiG1k-display-0109",
+      "segment_id": "hkE-8LRiG1k-ja-0038"
+    },
+    {
+      "text": "もあります。え、そういうのって他の家電",
+      "start_seconds": 337.639,
+      "end_seconds": 340.16,
+      "id": "hkE-8LRiG1k-display-0110",
+      "segment_id": "hkE-8LRiG1k-ja-0038"
+    },
+    {
+      "text": "製品だと言われないのですごい面白いなっ",
+      "start_seconds": 340.16,
+      "end_seconds": 341.84,
+      "id": "hkE-8LRiG1k-display-0111",
+      "segment_id": "hkE-8LRiG1k-ja-0038"
+    },
+    {
+      "text": "て思ったりします。他にも修理工場にもう",
+      "start_seconds": 341.84,
+      "end_seconds": 345.4,
+      "id": "hkE-8LRiG1k-display-0112",
+      "segment_id": "hkE-8LRiG1k-ja-0039"
+    },
+    {
+      "text": "こんな長い巻き物みたいな縦書きのお礼嬢",
+      "start_seconds": 345.4,
+      "end_seconds": 349.16,
+      "id": "hkE-8LRiG1k-display-0113",
+      "segment_id": "hkE-8LRiG1k-ja-0039"
+    },
+    {
+      "text": "が来たりとかあとはなんかおせお手正の",
+      "start_seconds": 349.16,
+      "end_seconds": 352.479,
+      "id": "hkE-8LRiG1k-display-0114",
+      "segment_id": "hkE-8LRiG1k-ja-0039"
+    },
+    {
+      "text": "お母が毎回毎年相続とかもう本当に10位",
+      "start_seconds": 352.479,
+      "end_seconds": 355.44,
+      "id": "hkE-8LRiG1k-display-0115",
+      "segment_id": "hkE-8LRiG1k-ja-0040"
+    },
+    {
+      "text": "さんみたいな扱いなんですよね。で、そう",
+      "start_seconds": 355.44,
+      "end_seconds": 358.919,
+      "id": "hkE-8LRiG1k-display-0116",
+      "segment_id": "hkE-8LRiG1k-ja-0040"
+    },
+    {
+      "text": "いう10位さんたちがいる中でもさらに",
+      "start_seconds": 358.919,
+      "end_seconds": 361.24,
+      "id": "hkE-8LRiG1k-display-0117",
+      "segment_id": "hkE-8LRiG1k-ja-0040"
+    },
+    {
+      "text": "こう信頼をえてる名物委員長みたいな人が",
+      "start_seconds": 361.24,
+      "end_seconds": 363.639,
+      "id": "hkE-8LRiG1k-display-0118",
+      "segment_id": "hkE-8LRiG1k-ja-0040"
+    },
+    {
+      "text": "いたりして、ま、そういうのもすごく",
+      "start_seconds": 363.639,
+      "end_seconds": 365.6,
+      "id": "hkE-8LRiG1k-display-0119",
+      "segment_id": "hkE-8LRiG1k-ja-0041"
+    },
+    {
+      "text": "面白いなって思ったりします。え、これが",
+      "start_seconds": 365.6,
+      "end_seconds": 368.68,
+      "id": "hkE-8LRiG1k-display-0120",
+      "segment_id": "hkE-8LRiG1k-ja-0041"
+    },
+    {
+      "text": "もしロボットじゃなくて電子レンジで修理",
+      "start_seconds": 368.68,
+      "end_seconds": 371.56,
+      "id": "hkE-8LRiG1k-display-0121",
+      "segment_id": "hkE-8LRiG1k-ja-0041"
+    },
+    {
+      "text": "の人が大丈夫ですか?って言ってたり脇を",
+      "start_seconds": 371.56,
+      "end_seconds": 376.28,
+      "id": "hkE-8LRiG1k-display-0122",
+      "segment_id": "hkE-8LRiG1k-ja-0042"
+    },
+    {
+      "text": "撫でてよしよしよしよしなんて言ってたら",
+      "start_seconds": 376.28,
+      "end_seconds": 382.319,
+      "id": "hkE-8LRiG1k-display-0123",
+      "segment_id": "hkE-8LRiG1k-ja-0042"
+    },
+    {
+      "text": "あの人ちょっとおかしいんじゃないって",
+      "start_seconds": 382.319,
+      "end_seconds": 384.199,
+      "id": "hkE-8LRiG1k-display-0124",
+      "segment_id": "hkE-8LRiG1k-ja-0043"
+    },
+    {
+      "text": "思うと思うんですよ。",
+      "start_seconds": 384.199,
+      "end_seconds": 386.68,
+      "id": "hkE-8LRiG1k-display-0125",
+      "segment_id": "hkE-8LRiG1k-ja-0043"
+    },
+    {
+      "text": "で、さっきから修理とかって話もしてるん",
+      "start_seconds": 386.68,
+      "end_seconds": 388.599,
+      "id": "hkE-8LRiG1k-display-0126",
+      "segment_id": "hkE-8LRiG1k-ja-0044"
+    },
+    {
+      "text": "ですけど、修理って言っても怒られます。",
+      "start_seconds": 388.599,
+      "end_seconds": 392.28,
+      "id": "hkE-8LRiG1k-display-0127",
+      "segment_id": "hkE-8LRiG1k-ja-0044"
+    },
+    {
+      "text": "あの、まるで機械みたいなんで、やめて",
+      "start_seconds": 392.28,
+      "end_seconds": 393.96,
+      "id": "hkE-8LRiG1k-display-0128",
+      "segment_id": "hkE-8LRiG1k-ja-0045"
+    },
+    {
+      "text": "ください",
+      "start_seconds": 393.96,
+      "end_seconds": 396.039,
+      "id": "hkE-8LRiG1k-display-0129",
+      "segment_id": "hkE-8LRiG1k-ja-0045"
+    },
+    {
+      "text": "。それじゃあまるでうちの子ロボット",
+      "start_seconds": 396.039,
+      "end_seconds": 398.44,
+      "id": "hkE-8LRiG1k-display-0130",
+      "segment_id": "hkE-8LRiG1k-ja-0045"
+    },
+    {
+      "text": "みたいじゃないですかって本当に言われた",
+      "start_seconds": 398.44,
+      "end_seconds": 401.08,
+      "id": "hkE-8LRiG1k-display-0131",
+      "segment_id": "hkE-8LRiG1k-ja-0045"
+    },
+    {
+      "text": "ことがあるんです。思いますよ。オタクの",
+      "start_seconds": 401.08,
+      "end_seconds": 404.759,
+      "id": "hkE-8LRiG1k-display-0132",
+      "segment_id": "hkE-8LRiG1k-ja-0046"
+    },
+    {
+      "text": "お子さんロボットですよって思ってます。",
+      "start_seconds": 404.759,
+      "end_seconds": 407.44,
+      "id": "hkE-8LRiG1k-display-0133",
+      "segment_id": "hkE-8LRiG1k-ja-0046"
+    },
+    {
+      "text": "でもそんなことは言いません。なので便宜",
+      "start_seconds": 407.44,
+      "end_seconds": 409.36,
+      "id": "hkE-8LRiG1k-display-0134",
+      "segment_id": "hkE-8LRiG1k-ja-0047"
+    },
+    {
+      "text": "的に修理ではなくて治療って呼んでます。",
+      "start_seconds": 409.36,
+      "end_seconds": 415.759,
+      "id": "hkE-8LRiG1k-display-0135",
+      "segment_id": "hkE-8LRiG1k-ja-0047"
+    },
+    {
+      "text": "ロボットの健康診断をする人間毒ならぬ",
+      "start_seconds": 415.759,
+      "end_seconds": 419.96,
+      "id": "hkE-8LRiG1k-display-0136",
+      "segment_id": "hkE-8LRiG1k-ja-0048"
+    },
+    {
+      "text": "ドックドックサービスっていうのも作り",
+      "start_seconds": 419.96,
+      "end_seconds": 421.479,
+      "id": "hkE-8LRiG1k-display-0137",
+      "segment_id": "hkE-8LRiG1k-ja-0048"
+    },
+    {
+      "text": "ました。で、修理って修理修理って言って",
+      "start_seconds": 421.479,
+      "end_seconds": 426.199,
+      "id": "hkE-8LRiG1k-display-0138",
+      "segment_id": "hkE-8LRiG1k-ja-0048"
+    },
+    {
+      "text": "ない治療ですね。治療って言ってもこの",
+      "start_seconds": 426.199,
+      "end_seconds": 428.68,
+      "id": "hkE-8LRiG1k-display-0139",
+      "segment_id": "hkE-8LRiG1k-ja-0049"
+    },
+    {
+      "text": "治療もかなりこうお客様によってもう",
+      "start_seconds": 428.68,
+      "end_seconds": 431.52,
+      "id": "hkE-8LRiG1k-display-0140",
+      "segment_id": "hkE-8LRiG1k-ja-0049"
+    },
+    {
+      "text": "求めるところが全然違うんですよ。で、",
+      "start_seconds": 431.52,
+      "end_seconds": 434.96,
+      "id": "hkE-8LRiG1k-display-0141",
+      "segment_id": "hkE-8LRiG1k-ja-0049"
+    },
+    {
+      "text": "もう買った時みたいに綺麗に直してくださ",
+      "start_seconds": 434.96,
+      "end_seconds": 436.879,
+      "id": "hkE-8LRiG1k-display-0142",
+      "segment_id": "hkE-8LRiG1k-ja-0049"
+    },
+    {
+      "text": "いっていうお客さんもいます。もちろん。",
+      "start_seconds": 436.879,
+      "end_seconds": 439.68,
+      "id": "hkE-8LRiG1k-display-0143",
+      "segment_id": "hkE-8LRiG1k-ja-0050"
+    },
+    {
+      "text": "でも",
+      "start_seconds": 439.68,
+      "end_seconds": 441.479,
+      "id": "hkE-8LRiG1k-display-0144",
+      "segment_id": "hkE-8LRiG1k-ja-0051"
+    },
+    {
+      "text": "実はそういう方ってすごい少数で、",
+      "start_seconds": 441.479,
+      "end_seconds": 445.16,
+      "id": "hkE-8LRiG1k-display-0145",
+      "segment_id": "hkE-8LRiG1k-ja-0051"
+    },
+    {
+      "text": "あ、この傷がなくなっちゃうとうちの子",
+      "start_seconds": 445.16,
+      "end_seconds": 447.479,
+      "id": "hkE-8LRiG1k-display-0146",
+      "segment_id": "hkE-8LRiG1k-ja-0051"
+    },
+    {
+      "text": "じゃなくなっちゃうんで、この傷は残し",
+      "start_seconds": 447.479,
+      "end_seconds": 449.68,
+      "id": "hkE-8LRiG1k-display-0147",
+      "segment_id": "hkE-8LRiG1k-ja-0051"
+    },
+    {
+      "text": "といてください。っていう方の方が多いん",
+      "start_seconds": 449.68,
+      "end_seconds": 453.08,
+      "id": "hkE-8LRiG1k-display-0148",
+      "segment_id": "hkE-8LRiG1k-ja-0052"
+    },
+    {
+      "text": "ですよ。意外ですかね。で、最初それ聞い",
+      "start_seconds": 453.08,
+      "end_seconds": 456.96,
+      "id": "hkE-8LRiG1k-display-0149",
+      "segment_id": "hkE-8LRiG1k-ja-0052"
+    },
+    {
+      "text": "た時にはっとして、あ、この人にとって傷",
+      "start_seconds": 456.96,
+      "end_seconds": 461.16,
+      "id": "hkE-8LRiG1k-display-0150",
+      "segment_id": "hkE-8LRiG1k-ja-0052"
+    },
+    {
+      "text": "って不具合じゃないんだ。あ、一緒に",
+      "start_seconds": 461.16,
+      "end_seconds": 463.599,
+      "id": "hkE-8LRiG1k-display-0151",
+      "segment_id": "hkE-8LRiG1k-ja-0053"
+    },
+    {
+      "text": "過ごした歴史の証なんだなっていう風に",
+      "start_seconds": 463.599,
+      "end_seconds": 466.36,
+      "id": "hkE-8LRiG1k-display-0152",
+      "segment_id": "hkE-8LRiG1k-ja-0053"
+    },
+    {
+      "text": "思いました。",
+      "start_seconds": 466.36,
+      "end_seconds": 468.4,
+      "id": "hkE-8LRiG1k-display-0153",
+      "segment_id": "hkE-8LRiG1k-ja-0053"
+    },
+    {
+      "text": "で、小学校の時に使ったランドセルを残す",
+      "start_seconds": 468.4,
+      "end_seconds": 470.72,
+      "id": "hkE-8LRiG1k-display-0154",
+      "segment_id": "hkE-8LRiG1k-ja-0054"
+    },
+    {
+      "text": "ために小さくして残しとくみたいな",
+      "start_seconds": 470.72,
+      "end_seconds": 473.24,
+      "id": "hkE-8LRiG1k-display-0155",
+      "segment_id": "hkE-8LRiG1k-ja-0054"
+    },
+    {
+      "text": "サービスがあるんですけど、そういう",
+      "start_seconds": 473.24,
+      "end_seconds": 475.159,
+      "id": "hkE-8LRiG1k-display-0156",
+      "segment_id": "hkE-8LRiG1k-ja-0054"
+    },
+    {
+      "text": "サービスをする時もわざと絆のある部分の",
+      "start_seconds": 475.159,
+      "end_seconds": 478.24,
+      "id": "hkE-8LRiG1k-display-0157",
+      "segment_id": "hkE-8LRiG1k-ja-0054"
+    },
+    {
+      "text": "川を選んで作ったりするそうなんですよ。",
+      "start_seconds": 478.24,
+      "end_seconds": 481.199,
+      "id": "hkE-8LRiG1k-display-0158",
+      "segment_id": "hkE-8LRiG1k-ja-0055"
+    },
+    {
+      "text": "だからそういう思い出ってそういう細部に",
+      "start_seconds": 481.199,
+      "end_seconds": 484.199,
+      "id": "hkE-8LRiG1k-display-0159",
+      "segment_id": "hkE-8LRiG1k-ja-0056"
+    },
+    {
+      "text": "宿るものなんだなっていう風に思ってい",
+      "start_seconds": 484.199,
+      "end_seconds": 486.52,
+      "id": "hkE-8LRiG1k-display-0160",
+      "segment_id": "hkE-8LRiG1k-ja-0056"
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 486.52,
+      "end_seconds": 489.68,
+      "id": "hkE-8LRiG1k-display-0161",
+      "segment_id": "hkE-8LRiG1k-ja-0056"
+    },
+    {
+      "text": "で、傷もつきすぎるともうこれ以上は直せ",
+      "start_seconds": 489.759,
+      "end_seconds": 494.12,
+      "id": "hkE-8LRiG1k-display-0162",
+      "segment_id": "hkE-8LRiG1k-ja-0057"
+    },
+    {
+      "text": "ないっていう段階まで進んでいきます。",
+      "start_seconds": 494.12,
+      "end_seconds": 498.159,
+      "id": "hkE-8LRiG1k-display-0163",
+      "segment_id": "hkE-8LRiG1k-ja-0057"
+    },
+    {
+      "text": "ロボットだとなんか永遠に行きなそうじゃ",
+      "start_seconds": 498.159,
+      "end_seconds": 501.159,
+      "id": "hkE-8LRiG1k-display-0164",
+      "segment_id": "hkE-8LRiG1k-ja-0058"
+    },
+    {
+      "text": "ないですか。でも必ずしもそうでもなくて",
+      "start_seconds": 501.159,
+      "end_seconds": 504.479,
+      "id": "hkE-8LRiG1k-display-0165",
+      "segment_id": "hkE-8LRiG1k-ja-0058"
+    },
+    {
+      "text": "ああもうここでおしまいっていうところを",
+      "start_seconds": 504.479,
+      "end_seconds": 506.56,
+      "id": "hkE-8LRiG1k-display-0166",
+      "segment_id": "hkE-8LRiG1k-ja-0058"
+    },
+    {
+      "text": "ま、長くロボットを作ってると目にする",
+      "start_seconds": 506.56,
+      "end_seconds": 508.96,
+      "id": "hkE-8LRiG1k-display-0167",
+      "segment_id": "hkE-8LRiG1k-ja-0058"
+    },
+    {
+      "text": "ことになります。",
+      "start_seconds": 508.96,
+      "end_seconds": 512.84,
+      "id": "hkE-8LRiG1k-display-0168",
+      "segment_id": "hkE-8LRiG1k-ja-0059"
+    },
+    {
+      "text": "これは何だと思いますか?",
+      "start_seconds": 513.44,
+      "end_seconds": 517.9190000000001,
+      "id": "hkE-8LRiG1k-display-0169",
+      "segment_id": "hkE-8LRiG1k-ja-0060"
+    },
+    {
+      "text": "これね、ロボットのお葬式なんですよ。お",
+      "start_seconds": 518.039,
+      "end_seconds": 521.159,
+      "id": "hkE-8LRiG1k-display-0170",
+      "segment_id": "hkE-8LRiG1k-ja-0061"
+    },
+    {
+      "text": "坊さんがいて最団にもう動かなくなった",
+      "start_seconds": 521.159,
+      "end_seconds": 523.76,
+      "id": "hkE-8LRiG1k-display-0171",
+      "segment_id": "hkE-8LRiG1k-ja-0061"
+    },
+    {
+      "text": "ロボットがもうずらって並んでるわけです",
+      "start_seconds": 523.76,
+      "end_seconds": 525.56,
+      "id": "hkE-8LRiG1k-display-0172",
+      "segment_id": "hkE-8LRiG1k-ja-0061"
+    },
+    {
+      "text": "。",
+      "start_seconds": 525.56,
+      "end_seconds": 527.48,
+      "id": "hkE-8LRiG1k-display-0173",
+      "segment_id": "hkE-8LRiG1k-ja-0061"
+    },
+    {
+      "text": "これ見て、ま、ちょっと奇妙だなって思う",
+      "start_seconds": 527.48,
+      "end_seconds": 530.48,
+      "id": "hkE-8LRiG1k-display-0174",
+      "segment_id": "hkE-8LRiG1k-ja-0062"
+    },
+    {
+      "text": "人もいるかもしれません。",
+      "start_seconds": 530.48,
+      "end_seconds": 534.92,
+      "id": "hkE-8LRiG1k-display-0175",
+      "segment_id": "hkE-8LRiG1k-ja-0062"
+    },
+    {
+      "text": "でも",
+      "start_seconds": 534.92,
+      "end_seconds": 537.44,
+      "id": "hkE-8LRiG1k-display-0176",
+      "segment_id": "hkE-8LRiG1k-ja-0063"
+    },
+    {
+      "text": "万物に魂が宿るとか神がいるって思ってる",
+      "start_seconds": 537.44,
+      "end_seconds": 540.959,
+      "id": "hkE-8LRiG1k-display-0177",
+      "segment_id": "hkE-8LRiG1k-ja-0063"
+    },
+    {
+      "text": "人が多い日本においてはこういう光景も",
+      "start_seconds": 540.959,
+      "end_seconds": 543.88,
+      "id": "hkE-8LRiG1k-display-0178",
+      "segment_id": "hkE-8LRiG1k-ja-0063"
+    },
+    {
+      "text": "見ることができます。",
+      "start_seconds": 543.88,
+      "end_seconds": 546.72,
+      "id": "hkE-8LRiG1k-display-0179",
+      "segment_id": "hkE-8LRiG1k-ja-0063"
+    },
+    {
+      "text": "で、私最初これ見た時になんでこんなこと",
+      "start_seconds": 546.72,
+      "end_seconds": 549.399,
+      "id": "hkE-8LRiG1k-display-0180",
+      "segment_id": "hkE-8LRiG1k-ja-0064"
+    },
+    {
+      "text": "するんだろうってすごく思ったんですけど",
+      "start_seconds": 549.399,
+      "end_seconds": 553.44,
+      "id": "hkE-8LRiG1k-display-0181",
+      "segment_id": "hkE-8LRiG1k-ja-0064"
+    },
+    {
+      "text": "うん。ま、よくよく話してみると、そう",
+      "start_seconds": 553.44,
+      "end_seconds": 555.92,
+      "id": "hkE-8LRiG1k-display-0182",
+      "segment_id": "hkE-8LRiG1k-ja-0064"
+    },
+    {
+      "text": "いう今まで一緒に暮らした時間に、ま、",
+      "start_seconds": 555.92,
+      "end_seconds": 558.92,
+      "id": "hkE-8LRiG1k-display-0183",
+      "segment_id": "hkE-8LRiG1k-ja-0065"
+    },
+    {
+      "text": "感謝をして一区切りつけてこれからの",
+      "start_seconds": 558.92,
+      "end_seconds": 561.8,
+      "id": "hkE-8LRiG1k-display-0184",
+      "segment_id": "hkE-8LRiG1k-ja-0065"
+    },
+    {
+      "text": "ロボットのいない生活を始めるそのための",
+      "start_seconds": 561.8,
+      "end_seconds": 564.6,
+      "id": "hkE-8LRiG1k-display-0185",
+      "segment_id": "hkE-8LRiG1k-ja-0065"
+    },
+    {
+      "text": "セレモニーなんだなっていう風に思いに",
+      "start_seconds": 564.6,
+      "end_seconds": 566.399,
+      "id": "hkE-8LRiG1k-display-0186",
+      "segment_id": "hkE-8LRiG1k-ja-0065"
+    },
+    {
+      "text": "至りました。",
+      "start_seconds": 566.399,
+      "end_seconds": 569.839,
+      "id": "hkE-8LRiG1k-display-0187",
+      "segment_id": "hkE-8LRiG1k-ja-0066"
+    },
+    {
+      "text": "でも日本ってよくよく考えてみると人形",
+      "start_seconds": 569.839,
+      "end_seconds": 573.279,
+      "id": "hkE-8LRiG1k-display-0188",
+      "segment_id": "hkE-8LRiG1k-ja-0067"
+    },
+    {
+      "text": "苦養とか張り苦用とかってしたりしますよ",
+      "start_seconds": 573.279,
+      "end_seconds": 575.68,
+      "id": "hkE-8LRiG1k-display-0189",
+      "segment_id": "hkE-8LRiG1k-ja-0067"
+    },
+    {
+      "text": "ね。それとま、同じようなことなのかなっ",
+      "start_seconds": 575.68,
+      "end_seconds": 578.2,
+      "id": "hkE-8LRiG1k-display-0190",
+      "segment_id": "hkE-8LRiG1k-ja-0067"
+    },
+    {
+      "text": "ていう風に思っています。",
+      "start_seconds": 578.2,
+      "end_seconds": 582.32,
+      "id": "hkE-8LRiG1k-display-0191",
+      "segment_id": "hkE-8LRiG1k-ja-0068"
+    },
+    {
+      "text": "ちなみにロボットを買ってくださってる",
+      "start_seconds": 583.279,
+      "end_seconds": 586.16,
+      "id": "hkE-8LRiG1k-display-0192",
+      "segment_id": "hkE-8LRiG1k-ja-0069"
+    },
+    {
+      "text": "オーナー様がご恒例になられたりとか生活",
+      "start_seconds": 586.16,
+      "end_seconds": 589.88,
+      "id": "hkE-8LRiG1k-display-0193",
+      "segment_id": "hkE-8LRiG1k-ja-0069"
+    },
+    {
+      "text": "が変わったりして、ま、ちょっとロボット",
+      "start_seconds": 589.88,
+      "end_seconds": 592.0,
+      "id": "hkE-8LRiG1k-display-0194",
+      "segment_id": "hkE-8LRiG1k-ja-0069"
+    },
+    {
+      "text": "と一緒に暮らせなくなったっていう場合が",
+      "start_seconds": 592.0,
+      "end_seconds": 594.12,
+      "id": "hkE-8LRiG1k-display-0195",
+      "segment_id": "hkE-8LRiG1k-ja-0069"
+    },
+    {
+      "text": "あったりします。あとはもう壊れて動かな",
+      "start_seconds": 594.12,
+      "end_seconds": 596.04,
+      "id": "hkE-8LRiG1k-display-0196",
+      "segment_id": "hkE-8LRiG1k-ja-0070"
+    },
+    {
+      "text": "いっていう人たちもいます。で、そういう",
+      "start_seconds": 596.04,
+      "end_seconds": 598.399,
+      "id": "hkE-8LRiG1k-display-0197",
+      "segment_id": "hkE-8LRiG1k-ja-0070"
+    },
+    {
+      "text": "人たちのロボットを集めてその中から、ま",
+      "start_seconds": 598.399,
+      "end_seconds": 602.64,
+      "id": "hkE-8LRiG1k-display-0198",
+      "segment_id": "hkE-8LRiG1k-ja-0070"
+    },
+    {
+      "text": "、まだ使えるぞっていうパーツをこう",
+      "start_seconds": 602.64,
+      "end_seconds": 604.68,
+      "id": "hkE-8LRiG1k-display-0199",
+      "segment_id": "hkE-8LRiG1k-ja-0070"
+    },
+    {
+      "text": "抜き出してですね、再構築して新しい",
+      "start_seconds": 604.68,
+      "end_seconds": 606.72,
+      "id": "hkE-8LRiG1k-display-0200",
+      "segment_id": "hkE-8LRiG1k-ja-0071"
+    },
+    {
+      "text": "ロボットを作って、その新しくロボットを",
+      "start_seconds": 606.72,
+      "end_seconds": 610.12,
+      "id": "hkE-8LRiG1k-display-0201",
+      "segment_id": "hkE-8LRiG1k-ja-0071"
+    },
+    {
+      "text": "必要としてくれるところ、例えば病院とか",
+      "start_seconds": 610.12,
+      "end_seconds": 613.68,
+      "id": "hkE-8LRiG1k-display-0202",
+      "segment_id": "hkE-8LRiG1k-ja-0071"
+    },
+    {
+      "text": "高齢者施設とか幼稚園とかに起造するって",
+      "start_seconds": 613.68,
+      "end_seconds": 617.079,
+      "id": "hkE-8LRiG1k-display-0203",
+      "segment_id": "hkE-8LRiG1k-ja-0072"
+    },
+    {
+      "text": "いう",
+      "start_seconds": 617.079,
+      "end_seconds": 618.6,
+      "id": "hkE-8LRiG1k-display-0204",
+      "segment_id": "hkE-8LRiG1k-ja-0072"
+    },
+    {
+      "text": "プログラムをやっています。それを里親",
+      "start_seconds": 618.6,
+      "end_seconds": 621.6,
+      "id": "hkE-8LRiG1k-display-0205",
+      "segment_id": "hkE-8LRiG1k-ja-0072"
+    },
+    {
+      "text": "プログラムって呼んでるんですね。",
+      "start_seconds": 621.6,
+      "end_seconds": 624.959,
+      "id": "hkE-8LRiG1k-display-0206",
+      "segment_id": "hkE-8LRiG1k-ja-0072"
+    },
+    {
+      "text": "で、里親って言ってるんですけど、これ",
+      "start_seconds": 624.959,
+      "end_seconds": 628.0,
+      "id": "hkE-8LRiG1k-display-0207",
+      "segment_id": "hkE-8LRiG1k-ja-0073"
+    },
+    {
+      "text": "冷蔵庫とか電子レンジだったらしないじゃ",
+      "start_seconds": 628.0,
+      "end_seconds": 629.8,
+      "id": "hkE-8LRiG1k-display-0208",
+      "segment_id": "hkE-8LRiG1k-ja-0073"
+    },
+    {
+      "text": "ないですか。洗濯機の里親とかってなら",
+      "start_seconds": 629.8,
+      "end_seconds": 632.12,
+      "id": "hkE-8LRiG1k-display-0209",
+      "segment_id": "hkE-8LRiG1k-ja-0073"
+    },
+    {
+      "text": "ないですよね。で、これなぜかって言うと",
+      "start_seconds": 632.12,
+      "end_seconds": 635.24,
+      "id": "hkE-8LRiG1k-display-0210",
+      "segment_id": "hkE-8LRiG1k-ja-0073"
+    },
+    {
+      "text": "、やっぱりロボットって我々は、ま、所有",
+      "start_seconds": 635.24,
+      "end_seconds": 638.519,
+      "id": "hkE-8LRiG1k-display-0211",
+      "segment_id": "hkE-8LRiG1k-ja-0074"
+    },
+    {
+      "text": "物ではなくて関係性を構築するものとして",
+      "start_seconds": 638.519,
+      "end_seconds": 642.8,
+      "id": "hkE-8LRiG1k-display-0212",
+      "segment_id": "hkE-8LRiG1k-ja-0074"
+    },
+    {
+      "text": "世に送り出したからなんですね。",
+      "start_seconds": 642.8,
+      "end_seconds": 645.839,
+      "id": "hkE-8LRiG1k-display-0213",
+      "segment_id": "hkE-8LRiG1k-ja-0074"
+    },
+    {
+      "text": "で、こういう愛着を生まれる、愛着が",
+      "start_seconds": 645.839,
+      "end_seconds": 648.6,
+      "id": "hkE-8LRiG1k-display-0214",
+      "segment_id": "hkE-8LRiG1k-ja-0075"
+    },
+    {
+      "text": "生まれるように設計した以上、その終わり",
+      "start_seconds": 648.6,
+      "end_seconds": 650.76,
+      "id": "hkE-8LRiG1k-display-0215",
+      "segment_id": "hkE-8LRiG1k-ja-0075"
+    },
+    {
+      "text": "方まで我々作り手が責任を持たなきゃいけ",
+      "start_seconds": 650.76,
+      "end_seconds": 653.519,
+      "id": "hkE-8LRiG1k-display-0216",
+      "segment_id": "hkE-8LRiG1k-ja-0075"
+    },
+    {
+      "text": "ないんじゃないかなっていう気持ちで、",
+      "start_seconds": 653.519,
+      "end_seconds": 655.24,
+      "id": "hkE-8LRiG1k-display-0217",
+      "segment_id": "hkE-8LRiG1k-ja-0075"
+    },
+    {
+      "text": "こういう里親プログラムをやっています。",
+      "start_seconds": 655.24,
+      "end_seconds": 657.68,
+      "id": "hkE-8LRiG1k-display-0218",
+      "segment_id": "hkE-8LRiG1k-ja-0075"
+    },
+    {
+      "text": "で、里親プログラムっていうのはうん、",
+      "start_seconds": 657.68,
+      "end_seconds": 661.12,
+      "id": "hkE-8LRiG1k-display-0219",
+      "segment_id": "hkE-8LRiG1k-ja-0076"
+    },
+    {
+      "text": "もう技術のサポートでもないし、",
+      "start_seconds": 661.12,
+      "end_seconds": 664.519,
+      "id": "hkE-8LRiG1k-display-0220",
+      "segment_id": "hkE-8LRiG1k-ja-0076"
+    },
+    {
+      "text": "マーケティングでもないし、マシティや",
+      "start_seconds": 664.519,
+      "end_seconds": 666.72,
+      "id": "hkE-8LRiG1k-display-0221",
+      "segment_id": "hkE-8LRiG1k-ja-0076"
+    },
+    {
+      "text": "儲けでも何でもないんです。もう儲けの",
+      "start_seconds": 666.72,
+      "end_seconds": 668.56,
+      "id": "hkE-8LRiG1k-display-0222",
+      "segment_id": "hkE-8LRiG1k-ja-0076"
+    },
+    {
+      "text": "ためどころがもうお金は出ていく一方なん",
+      "start_seconds": 668.56,
+      "end_seconds": 670.68,
+      "id": "hkE-8LRiG1k-display-0223",
+      "segment_id": "hkE-8LRiG1k-ja-0077"
+    },
+    {
+      "text": "ですけど、でもあえてそういうことをし",
+      "start_seconds": 670.68,
+      "end_seconds": 672.079,
+      "id": "hkE-8LRiG1k-display-0224",
+      "segment_id": "hkE-8LRiG1k-ja-0077"
+    },
+    {
+      "text": "てるんですね。でもそれっていうのは我々",
+      "start_seconds": 672.079,
+      "end_seconds": 674.44,
+      "id": "hkE-8LRiG1k-display-0225",
+      "segment_id": "hkE-8LRiG1k-ja-0077"
+    },
+    {
+      "text": "が生み出した感情への責任感からなんです",
+      "start_seconds": 674.44,
+      "end_seconds": 677.56,
+      "id": "hkE-8LRiG1k-display-0226",
+      "segment_id": "hkE-8LRiG1k-ja-0077"
+    },
+    {
+      "text": "。",
+      "start_seconds": 677.56,
+      "end_seconds": 680.56,
+      "id": "hkE-8LRiG1k-display-0227",
+      "segment_id": "hkE-8LRiG1k-ja-0077"
+    },
+    {
+      "text": "今日は",
+      "start_seconds": 681.16,
+      "end_seconds": 683.12,
+      "id": "hkE-8LRiG1k-display-0228",
+      "segment_id": "hkE-8LRiG1k-ja-0078"
+    },
+    {
+      "text": "オービットが奇跡だって、あ、奇跡が",
+      "start_seconds": 683.12,
+      "end_seconds": 685.2,
+      "id": "hkE-8LRiG1k-display-0229",
+      "segment_id": "hkE-8LRiG1k-ja-0078"
+    },
+    {
+      "text": "テーマだっていうことなので、その",
+      "start_seconds": 685.2,
+      "end_seconds": 687.279,
+      "id": "hkE-8LRiG1k-display-0230",
+      "segment_id": "hkE-8LRiG1k-ja-0078"
+    },
+    {
+      "text": "ロボットの奇跡の話をしたいなと思います",
+      "start_seconds": 687.279,
+      "end_seconds": 689.639,
+      "id": "hkE-8LRiG1k-display-0231",
+      "segment_id": "hkE-8LRiG1k-ja-0078"
+    },
+    {
+      "text": "。で、今日2つ大きく分けて持ってきたん",
+      "start_seconds": 689.639,
+      "end_seconds": 692.32,
+      "id": "hkE-8LRiG1k-display-0232",
+      "segment_id": "hkE-8LRiG1k-ja-0078"
+    },
+    {
+      "text": "ですけど、ロボットが人間のようになる話",
+      "start_seconds": 692.32,
+      "end_seconds": 694.8,
+      "id": "hkE-8LRiG1k-display-0233",
+      "segment_id": "hkE-8LRiG1k-ja-0079"
+    },
+    {
+      "text": "と人間がロボットのようになる話ですね。",
+      "start_seconds": 694.8,
+      "end_seconds": 698.48,
+      "id": "hkE-8LRiG1k-display-0234",
+      "segment_id": "hkE-8LRiG1k-ja-0079"
+    },
+    {
+      "text": "で、今ロボットが人間のようになる話は",
+      "start_seconds": 698.48,
+      "end_seconds": 701.839,
+      "id": "hkE-8LRiG1k-display-0235",
+      "segment_id": "hkE-8LRiG1k-ja-0080"
+    },
+    {
+      "text": "もうものすごい勢いで開発が進んでいて、",
+      "start_seconds": 701.839,
+      "end_seconds": 705.6,
+      "id": "hkE-8LRiG1k-display-0236",
+      "segment_id": "hkE-8LRiG1k-ja-0080"
+    },
+    {
+      "text": "もう実際にノルウェイのワンネス",
+      "start_seconds": 705.6,
+      "end_seconds": 707.36,
+      "id": "hkE-8LRiG1k-display-0237",
+      "segment_id": "hkE-8LRiG1k-ja-0080"
+    },
+    {
+      "text": "テクノジズっていう会社からは、えと、",
+      "start_seconds": 707.36,
+      "end_seconds": 709.639,
+      "id": "hkE-8LRiG1k-display-0238",
+      "segment_id": "hkE-8LRiG1k-ja-0080"
+    },
+    {
+      "text": "家庭用のお手伝いロボットが発売されまし",
+      "start_seconds": 709.639,
+      "end_seconds": 712.04,
+      "id": "hkE-8LRiG1k-display-0239",
+      "segment_id": "hkE-8LRiG1k-ja-0081"
+    },
+    {
+      "text": "た。もう夢みたいですよね。で、これも他",
+      "start_seconds": 712.04,
+      "end_seconds": 716.079,
+      "id": "hkE-8LRiG1k-display-0240",
+      "segment_id": "hkE-8LRiG1k-ja-0081"
+    },
+    {
+      "text": "にもいろんな大きな会社がどんどん",
+      "start_seconds": 716.079,
+      "end_seconds": 718.279,
+      "id": "hkE-8LRiG1k-display-0241",
+      "segment_id": "hkE-8LRiG1k-ja-0081"
+    },
+    {
+      "text": "どんどんこう参入する予定なので、ま、",
+      "start_seconds": 718.279,
+      "end_seconds": 720.959,
+      "id": "hkE-8LRiG1k-display-0242",
+      "segment_id": "hkE-8LRiG1k-ja-0081"
+    },
+    {
+      "text": "もう開発のスピードも技術の進歩の",
+      "start_seconds": 720.959,
+      "end_seconds": 723.639,
+      "id": "hkE-8LRiG1k-display-0243",
+      "segment_id": "hkE-8LRiG1k-ja-0082"
+    },
+    {
+      "text": "スピードも拡大に早くなっていくことが",
+      "start_seconds": 723.639,
+      "end_seconds": 726.04,
+      "id": "hkE-8LRiG1k-display-0244",
+      "segment_id": "hkE-8LRiG1k-ja-0082"
+    },
+    {
+      "text": "想定されています。",
+      "start_seconds": 726.04,
+      "end_seconds": 729.36,
+      "id": "hkE-8LRiG1k-display-0245",
+      "segment_id": "hkE-8LRiG1k-ja-0082"
+    },
+    {
+      "text": "で、ま、これフィジカルAIっていうあの",
+      "start_seconds": 729.36,
+      "end_seconds": 732.44,
+      "id": "hkE-8LRiG1k-display-0246",
+      "segment_id": "hkE-8LRiG1k-ja-0083"
+    },
+    {
+      "text": "技術の分野があって、そこが進んでるから",
+      "start_seconds": 732.44,
+      "end_seconds": 734.24,
+      "id": "hkE-8LRiG1k-display-0247",
+      "segment_id": "hkE-8LRiG1k-ja-0083"
+    },
+    {
+      "text": "そこが発展してるんですけど、その、ま、",
+      "start_seconds": 734.24,
+      "end_seconds": 737.6,
+      "id": "hkE-8LRiG1k-display-0248",
+      "segment_id": "hkE-8LRiG1k-ja-0083"
+    },
+    {
+      "text": "そうですね、日本にいるとあんまりこう",
+      "start_seconds": 737.6,
+      "end_seconds": 739.32,
+      "id": "hkE-8LRiG1k-display-0249",
+      "segment_id": "hkE-8LRiG1k-ja-0083"
+    },
+    {
+      "text": "ピンとこないかもしれないんですけど、",
+      "start_seconds": 739.32,
+      "end_seconds": 740.56,
+      "id": "hkE-8LRiG1k-display-0250",
+      "segment_id": "hkE-8LRiG1k-ja-0083"
+    },
+    {
+      "text": "多分数年後にはその辺で見ることになるか",
+      "start_seconds": 740.56,
+      "end_seconds": 742.76,
+      "id": "hkE-8LRiG1k-display-0251",
+      "segment_id": "hkE-8LRiG1k-ja-0084"
+    },
+    {
+      "text": "なという風に思っています。",
+      "start_seconds": 742.76,
+      "end_seconds": 745.44,
+      "id": "hkE-8LRiG1k-display-0252",
+      "segment_id": "hkE-8LRiG1k-ja-0084"
+    },
+    {
+      "text": "そしてもう1人間がのロボット家ですね。",
+      "start_seconds": 745.44,
+      "end_seconds": 750.48,
+      "id": "hkE-8LRiG1k-display-0253",
+      "segment_id": "hkE-8LRiG1k-ja-0085"
+    },
+    {
+      "text": "で、例えば昔からこう心臓ペースメーカー",
+      "start_seconds": 750.48,
+      "end_seconds": 753.72,
+      "id": "hkE-8LRiG1k-display-0254",
+      "segment_id": "hkE-8LRiG1k-ja-0086"
+    },
+    {
+      "text": "に変える人っているじゃないですか。うち",
+      "start_seconds": 753.72,
+      "end_seconds": 755.88,
+      "id": "hkE-8LRiG1k-display-0255",
+      "segment_id": "hkE-8LRiG1k-ja-0086"
+    },
+    {
+      "text": "の祖母とかもそうだったんですけどで、",
+      "start_seconds": 755.88,
+      "end_seconds": 760.0,
+      "id": "hkE-8LRiG1k-display-0256",
+      "segment_id": "hkE-8LRiG1k-ja-0086"
+    },
+    {
+      "text": "そういう",
+      "start_seconds": 760.0,
+      "end_seconds": 761.92,
+      "id": "hkE-8LRiG1k-display-0257",
+      "segment_id": "hkE-8LRiG1k-ja-0086"
+    },
+    {
+      "text": "、ま、心臓だけじゃなくて、ま、内臓とか",
+      "start_seconds": 761.92,
+      "end_seconds": 764.519,
+      "id": "hkE-8LRiG1k-display-0258",
+      "segment_id": "hkE-8LRiG1k-ja-0087"
+    },
+    {
+      "text": "義種とか則とかがどんどん、ま、交換可能",
+      "start_seconds": 764.519,
+      "end_seconds": 766.88,
+      "id": "hkE-8LRiG1k-display-0259",
+      "segment_id": "hkE-8LRiG1k-ja-0087"
+    },
+    {
+      "text": "なシステムにどんどんなっていくと思わ",
+      "start_seconds": 766.88,
+      "end_seconds": 768.36,
+      "id": "hkE-8LRiG1k-display-0260",
+      "segment_id": "hkE-8LRiG1k-ja-0087"
+    },
+    {
+      "text": "れるんですけど、さらにこう脳の処理を",
+      "start_seconds": 768.36,
+      "end_seconds": 771.72,
+      "id": "hkE-8LRiG1k-display-0261",
+      "segment_id": "hkE-8LRiG1k-ja-0087"
+    },
+    {
+      "text": "補助するようなものっていうのも出てくる",
+      "start_seconds": 771.72,
+      "end_seconds": 773.199,
+      "id": "hkE-8LRiG1k-display-0262",
+      "segment_id": "hkE-8LRiG1k-ja-0087"
+    },
+    {
+      "text": "と思っていて、で、実際に今もう手とか",
+      "start_seconds": 773.199,
+      "end_seconds": 776.399,
+      "id": "hkE-8LRiG1k-display-0263",
+      "segment_id": "hkE-8LRiG1k-ja-0088"
+    },
+    {
+      "text": "使わなくても考えるだけでもうカーソルを",
+      "start_seconds": 776.399,
+      "end_seconds": 778.6,
+      "id": "hkE-8LRiG1k-display-0264",
+      "segment_id": "hkE-8LRiG1k-ja-0088"
+    },
+    {
+      "text": "動かすみたいな技術の研究がもうかなり盛",
+      "start_seconds": 778.6,
+      "end_seconds": 781.399,
+      "id": "hkE-8LRiG1k-display-0265",
+      "segment_id": "hkE-8LRiG1k-ja-0088"
+    },
+    {
+      "text": "にされていたりします。",
+      "start_seconds": 781.399,
+      "end_seconds": 785.72,
+      "id": "hkE-8LRiG1k-display-0266",
+      "segment_id": "hkE-8LRiG1k-ja-0089"
+    },
+    {
+      "text": "あ、で、今までは、えっと、人間に足り",
+      "start_seconds": 789.72,
+      "end_seconds": 794.24,
+      "id": "hkE-8LRiG1k-display-0267",
+      "segment_id": "hkE-8LRiG1k-ja-0090"
+    },
+    {
+      "text": "ないものを補うっていう発想だったと思う",
+      "start_seconds": 794.24,
+      "end_seconds": 796.12,
+      "id": "hkE-8LRiG1k-display-0268",
+      "segment_id": "hkE-8LRiG1k-ja-0090"
+    },
+    {
+      "text": "んですよね。でもこれからはもうどんどん",
+      "start_seconds": 796.12,
+      "end_seconds": 798.6,
+      "id": "hkE-8LRiG1k-display-0269",
+      "segment_id": "hkE-8LRiG1k-ja-0090"
+    },
+    {
+      "text": "どんどん人間というものを拡張していくっ",
+      "start_seconds": 798.6,
+      "end_seconds": 800.8,
+      "id": "hkE-8LRiG1k-display-0270",
+      "segment_id": "hkE-8LRiG1k-ja-0090"
+    },
+    {
+      "text": "てことも可能かなと思っていて、今",
+      "start_seconds": 800.8,
+      "end_seconds": 806.16,
+      "id": "hkE-8LRiG1k-display-0271",
+      "segment_id": "hkE-8LRiG1k-ja-0091"
+    },
+    {
+      "text": "3本目、4本目の手とかの開発をしてる人",
+      "start_seconds": 806.16,
+      "end_seconds": 808.639,
+      "id": "hkE-8LRiG1k-display-0272",
+      "segment_id": "hkE-8LRiG1k-ja-0091"
+    },
+    {
+      "text": "もいるし、人間のオリンピック記録を",
+      "start_seconds": 808.639,
+      "end_seconds": 812.519,
+      "id": "hkE-8LRiG1k-display-0273",
+      "segment_id": "hkE-8LRiG1k-ja-0091"
+    },
+    {
+      "text": "塗りるような偽則っていうのを開発してる",
+      "start_seconds": 812.519,
+      "end_seconds": 815.079,
+      "id": "hkE-8LRiG1k-display-0274",
+      "segment_id": "hkE-8LRiG1k-ja-0092"
+    },
+    {
+      "text": "人もいるし、あとは頭の後ろに目を",
+      "start_seconds": 815.079,
+      "end_seconds": 818.6,
+      "id": "hkE-8LRiG1k-display-0275",
+      "segment_id": "hkE-8LRiG1k-ja-0092"
+    },
+    {
+      "text": "つけようなんてことを考えてる方々も",
+      "start_seconds": 818.6,
+      "end_seconds": 820.44,
+      "id": "hkE-8LRiG1k-display-0276",
+      "segment_id": "hkE-8LRiG1k-ja-0092"
+    },
+    {
+      "text": "いらっしゃいます。",
+      "start_seconds": 820.44,
+      "end_seconds": 822.6,
+      "id": "hkE-8LRiG1k-display-0277",
+      "segment_id": "hkE-8LRiG1k-ja-0092"
+    },
+    {
+      "text": "便利じゃないですか?馬カ山で後ろから",
+      "start_seconds": 822.6,
+      "end_seconds": 826.56,
+      "id": "hkE-8LRiG1k-display-0278",
+      "segment_id": "hkE-8LRiG1k-ja-0093"
+    },
+    {
+      "text": "こうフリスビーとか飛んできてもシパッと",
+      "start_seconds": 826.56,
+      "end_seconds": 828.8,
+      "id": "hkE-8LRiG1k-display-0279",
+      "segment_id": "hkE-8LRiG1k-ja-0093"
+    },
+    {
+      "text": "か言って取れたりするわけですよ。便利",
+      "start_seconds": 828.8,
+      "end_seconds": 831.0,
+      "id": "hkE-8LRiG1k-display-0280",
+      "segment_id": "hkE-8LRiG1k-ja-0093"
+    },
+    {
+      "text": "そうですよね。で、そういう今まで人間",
+      "start_seconds": 831.0,
+      "end_seconds": 834.0,
+      "id": "hkE-8LRiG1k-display-0281",
+      "segment_id": "hkE-8LRiG1k-ja-0093"
+    },
+    {
+      "text": "じゃなかったにその人間を超えるような",
+      "start_seconds": 834.0,
+      "end_seconds": 836.68,
+      "id": "hkE-8LRiG1k-display-0282",
+      "segment_id": "hkE-8LRiG1k-ja-0094"
+    },
+    {
+      "text": "存在、超人間とかスーパーヒューマンって",
+      "start_seconds": 836.68,
+      "end_seconds": 839.12,
+      "id": "hkE-8LRiG1k-display-0283",
+      "segment_id": "hkE-8LRiG1k-ja-0094"
+    },
+    {
+      "text": "いうような道のりを人間は歩んでいく一歩",
+      "start_seconds": 839.12,
+      "end_seconds": 842.92,
+      "id": "hkE-8LRiG1k-display-0284",
+      "segment_id": "hkE-8LRiG1k-ja-0094"
+    },
+    {
+      "text": "手前なのかもしれません。",
+      "start_seconds": 842.92,
+      "end_seconds": 847.36,
+      "id": "hkE-8LRiG1k-display-0285",
+      "segment_id": "hkE-8LRiG1k-ja-0095"
+    },
+    {
+      "text": "え、ま、もしあなたが手術をして心臓が",
+      "start_seconds": 847.48,
+      "end_seconds": 851.56,
+      "id": "hkE-8LRiG1k-display-0286",
+      "segment_id": "hkE-8LRiG1k-ja-0096"
+    },
+    {
+      "text": "ペースメカになってもあなたはあなたの",
+      "start_seconds": 851.56,
+      "end_seconds": 853.839,
+      "id": "hkE-8LRiG1k-display-0287",
+      "segment_id": "hkE-8LRiG1k-ja-0096"
+    },
+    {
+      "text": "ままだと思うんです。なんか誰か他の人に",
+      "start_seconds": 853.839,
+      "end_seconds": 856.24,
+      "id": "hkE-8LRiG1k-display-0288",
+      "segment_id": "hkE-8LRiG1k-ja-0096"
+    },
+    {
+      "text": "なっちゃったなっていう感覚はしないです",
+      "start_seconds": 856.24,
+      "end_seconds": 857.639,
+      "id": "hkE-8LRiG1k-display-0289",
+      "segment_id": "hkE-8LRiG1k-ja-0096"
+    },
+    {
+      "text": "よね。でもこれが足だったら顔だったらと",
+      "start_seconds": 857.639,
+      "end_seconds": 862.079,
+      "id": "hkE-8LRiG1k-display-0290",
+      "segment_id": "hkE-8LRiG1k-ja-0097"
+    },
+    {
+      "text": "か脳だったらって考えてくともうどこまで",
+      "start_seconds": 862.079,
+      "end_seconds": 865.36,
+      "id": "hkE-8LRiG1k-display-0291",
+      "segment_id": "hkE-8LRiG1k-ja-0097"
+    },
+    {
+      "text": "が自分でどこまでが自分じゃないのかって",
+      "start_seconds": 865.36,
+      "end_seconds": 867.24,
+      "id": "hkE-8LRiG1k-display-0292",
+      "segment_id": "hkE-8LRiG1k-ja-0097"
+    },
+    {
+      "text": "いう問題にぶち当たります。",
+      "start_seconds": 867.24,
+      "end_seconds": 871.0,
+      "id": "hkE-8LRiG1k-display-0293",
+      "segment_id": "hkE-8LRiG1k-ja-0098"
+    },
+    {
+      "text": "これテセフスの船って言ったりするんです",
+      "start_seconds": 871.0,
+      "end_seconds": 873.36,
+      "id": "hkE-8LRiG1k-display-0294",
+      "segment_id": "hkE-8LRiG1k-ja-0099"
+    },
+    {
+      "text": "けど、どこまでが自分かって皆さん選引",
+      "start_seconds": 873.36,
+      "end_seconds": 877.12,
+      "id": "hkE-8LRiG1k-display-0295",
+      "segment_id": "hkE-8LRiG1k-ja-0099"
+    },
+    {
+      "text": "できますか?",
+      "start_seconds": 877.12,
+      "end_seconds": 879.6,
+      "id": "hkE-8LRiG1k-display-0296",
+      "segment_id": "hkE-8LRiG1k-ja-0099"
+    },
+    {
+      "text": "もう実は私たちはもうこの問いの入り口の",
+      "start_seconds": 879.6,
+      "end_seconds": 882.68,
+      "id": "hkE-8LRiG1k-display-0297",
+      "segment_id": "hkE-8LRiG1k-ja-0100"
+    },
+    {
+      "text": "ところにもう立っている状態だと私は思っ",
+      "start_seconds": 882.68,
+      "end_seconds": 884.6,
+      "id": "hkE-8LRiG1k-display-0298",
+      "segment_id": "hkE-8LRiG1k-ja-0100"
+    },
+    {
+      "text": "ています。",
+      "start_seconds": 884.6,
+      "end_seconds": 887.32,
+      "id": "hkE-8LRiG1k-display-0299",
+      "segment_id": "hkE-8LRiG1k-ja-0100"
+    },
+    {
+      "text": "想像してみてください。明日の朝起きたら",
+      "start_seconds": 887.32,
+      "end_seconds": 891.0,
+      "id": "hkE-8LRiG1k-display-0300",
+      "segment_id": "hkE-8LRiG1k-ja-0101"
+    },
+    {
+      "text": "体がロボットになってる。もうカフカの",
+      "start_seconds": 891.0,
+      "end_seconds": 894.72,
+      "id": "hkE-8LRiG1k-display-0301",
+      "segment_id": "hkE-8LRiG1k-ja-0101"
+    },
+    {
+      "text": "変身みたいですよね。で、これまだ",
+      "start_seconds": 894.72,
+      "end_seconds": 897.88,
+      "id": "hkE-8LRiG1k-display-0302",
+      "segment_id": "hkE-8LRiG1k-ja-0101"
+    },
+    {
+      "text": "Androidで人間型だったらいいです",
+      "start_seconds": 897.88,
+      "end_seconds": 899.519,
+      "id": "hkE-8LRiG1k-display-0303",
+      "segment_id": "hkE-8LRiG1k-ja-0102"
+    },
+    {
+      "text": "よ。あら、手が真っ白ペッパー君みたい",
+      "start_seconds": 899.519,
+      "end_seconds": 901.759,
+      "id": "hkE-8LRiG1k-display-0304",
+      "segment_id": "hkE-8LRiG1k-ja-0102"
+    },
+    {
+      "text": "みたいな感じだったらまだいいじゃない",
+      "start_seconds": 901.759,
+      "end_seconds": 902.92,
+      "id": "hkE-8LRiG1k-display-0305",
+      "segment_id": "hkE-8LRiG1k-ja-0102"
+    },
+    {
+      "text": "ですか。でも[笑い]あら、私6本あるわ",
+      "start_seconds": 902.92,
+      "end_seconds": 905.519,
+      "id": "hkE-8LRiG1k-display-0306",
+      "segment_id": "hkE-8LRiG1k-ja-0102"
+    },
+    {
+      "text": "とかなんならもう手も足もなくてまんまる",
+      "start_seconds": 905.519,
+      "end_seconds": 908.12,
+      "id": "hkE-8LRiG1k-display-0307",
+      "segment_id": "hkE-8LRiG1k-ja-0102"
+    },
+    {
+      "text": "でどっか行くのにも転がっていかなきゃ",
+      "start_seconds": 908.12,
+      "end_seconds": 910.56,
+      "id": "hkE-8LRiG1k-display-0308",
+      "segment_id": "hkE-8LRiG1k-ja-0103"
+    },
+    {
+      "text": "いけないとかそんな状態にしてもなったと",
+      "start_seconds": 910.56,
+      "end_seconds": 913.199,
+      "id": "hkE-8LRiG1k-display-0309",
+      "segment_id": "hkE-8LRiG1k-ja-0103"
+    },
+    {
+      "text": "してもあなたはあなたなんでしょうか?",
+      "start_seconds": 913.199,
+      "end_seconds": 918.8389999999999,
+      "id": "hkE-8LRiG1k-display-0310",
+      "segment_id": "hkE-8LRiG1k-ja-0103"
+    },
+    {
+      "text": "自分のアイデンティティは記憶だっていう",
+      "start_seconds": 921.56,
+      "end_seconds": 924.8,
+      "id": "hkE-8LRiG1k-display-0311",
+      "segment_id": "hkE-8LRiG1k-ja-0104"
+    },
+    {
+      "text": "人もいるでしょう。魂だっていう人もいる",
+      "start_seconds": 924.8,
+      "end_seconds": 928.36,
+      "id": "hkE-8LRiG1k-display-0312",
+      "segment_id": "hkE-8LRiG1k-ja-0104"
+    },
+    {
+      "text": "かもしれません。でもやっぱり体がない",
+      "start_seconds": 928.36,
+      "end_seconds": 931.56,
+      "id": "hkE-8LRiG1k-display-0313",
+      "segment_id": "hkE-8LRiG1k-ja-0104"
+    },
+    {
+      "text": "とっていう人もいるんじゃないでしょうか",
+      "start_seconds": 931.56,
+      "end_seconds": 934.199,
+      "id": "hkE-8LRiG1k-display-0314",
+      "segment_id": "hkE-8LRiG1k-ja-0105"
+    },
+    {
+      "text": "。だってそれもロボットじゃないって。",
+      "start_seconds": 934.199,
+      "end_seconds": 938.399,
+      "id": "hkE-8LRiG1k-display-0315",
+      "segment_id": "hkE-8LRiG1k-ja-0105"
+    },
+    {
+      "text": "で、私はま、うん、意識とかなのかなって",
+      "start_seconds": 938.399,
+      "end_seconds": 941.839,
+      "id": "hkE-8LRiG1k-display-0316",
+      "segment_id": "hkE-8LRiG1k-ja-0106"
+    },
+    {
+      "text": "思ってたりもするんですけど、でも",
+      "start_seconds": 941.839,
+      "end_seconds": 944.12,
+      "id": "hkE-8LRiG1k-display-0317",
+      "segment_id": "hkE-8LRiG1k-ja-0106"
+    },
+    {
+      "text": "そもそも意識って寝てる時には途切れてる",
+      "start_seconds": 944.12,
+      "end_seconds": 946.56,
+      "id": "hkE-8LRiG1k-display-0318",
+      "segment_id": "hkE-8LRiG1k-ja-0106"
+    },
+    {
+      "text": "し、もうこういうことを日々考えてる私で",
+      "start_seconds": 946.56,
+      "end_seconds": 950.16,
+      "id": "hkE-8LRiG1k-display-0319",
+      "segment_id": "hkE-8LRiG1k-ja-0106"
+    },
+    {
+      "text": "ももう毎日のようにその教会が由来いで",
+      "start_seconds": 950.16,
+      "end_seconds": 953.36,
+      "id": "hkE-8LRiG1k-display-0320",
+      "segment_id": "hkE-8LRiG1k-ja-0107"
+    },
+    {
+      "text": "いくんですね。",
+      "start_seconds": 953.36,
+      "end_seconds": 956.36,
+      "id": "hkE-8LRiG1k-display-0321",
+      "segment_id": "hkE-8LRiG1k-ja-0107"
+    },
+    {
+      "text": "それぐらい難しい問題です。で、でも将来",
+      "start_seconds": 956.36,
+      "end_seconds": 960.12,
+      "id": "hkE-8LRiG1k-display-0322",
+      "segment_id": "hkE-8LRiG1k-ja-0108"
+    },
+    {
+      "text": "的には皆さん自分がどう生きるかってのを",
+      "start_seconds": 960.12,
+      "end_seconds": 963.12,
+      "id": "hkE-8LRiG1k-display-0323",
+      "segment_id": "hkE-8LRiG1k-ja-0108"
+    },
+    {
+      "text": "選べるようになると思っています。",
+      "start_seconds": 963.12,
+      "end_seconds": 967.24,
+      "id": "hkE-8LRiG1k-display-0324",
+      "segment_id": "hkE-8LRiG1k-ja-0108"
+    },
+    {
+      "text": "自分の体のパーツが入れ替わって例えば",
+      "start_seconds": 967.24,
+      "end_seconds": 970.079,
+      "id": "hkE-8LRiG1k-display-0325",
+      "segment_id": "hkE-8LRiG1k-ja-0109"
+    },
+    {
+      "text": "もう記憶だけとかになったりとかして、",
+      "start_seconds": 970.079,
+      "end_seconds": 972.8,
+      "id": "hkE-8LRiG1k-display-0326",
+      "segment_id": "hkE-8LRiG1k-ja-0109"
+    },
+    {
+      "text": "それが自分なのかとか、それをいつまで",
+      "start_seconds": 972.8,
+      "end_seconds": 976.48,
+      "id": "hkE-8LRiG1k-display-0327",
+      "segment_id": "hkE-8LRiG1k-ja-0109"
+    },
+    {
+      "text": "残しておきたいのかとか、もうここで",
+      "start_seconds": 976.48,
+      "end_seconds": 979.12,
+      "id": "hkE-8LRiG1k-display-0328",
+      "segment_id": "hkE-8LRiG1k-ja-0109"
+    },
+    {
+      "text": "終わりにしようとかそういう選択をする",
+      "start_seconds": 979.12,
+      "end_seconds": 981.839,
+      "id": "hkE-8LRiG1k-display-0329",
+      "segment_id": "hkE-8LRiG1k-ja-0110"
+    },
+    {
+      "text": "ことになるかもしれないんです。",
+      "start_seconds": 981.839,
+      "end_seconds": 985.04,
+      "id": "hkE-8LRiG1k-display-0330",
+      "segment_id": "hkE-8LRiG1k-ja-0110"
+    },
+    {
+      "text": "実際にこういう話を結構相談を今でもよく",
+      "start_seconds": 985.04,
+      "end_seconds": 988.72,
+      "id": "hkE-8LRiG1k-display-0331",
+      "segment_id": "hkE-8LRiG1k-ja-0111"
+    },
+    {
+      "text": "受けたりとかもしています。",
+      "start_seconds": 988.72,
+      "end_seconds": 992.839,
+      "id": "hkE-8LRiG1k-display-0332",
+      "segment_id": "hkE-8LRiG1k-ja-0111"
+    },
+    {
+      "text": "もしあなただったら",
+      "start_seconds": 992.88,
+      "end_seconds": 995.72,
+      "id": "hkE-8LRiG1k-display-0333",
+      "segment_id": "hkE-8LRiG1k-ja-0112"
+    },
+    {
+      "text": "どこまで治療しますか?",
+      "start_seconds": 995.72,
+      "end_seconds": 999.16,
+      "id": "hkE-8LRiG1k-display-0334",
+      "segment_id": "hkE-8LRiG1k-ja-0112"
+    },
+    {
+      "text": "どこでもストップしよう。ここで闇にし",
+      "start_seconds": 999.16,
+      "end_seconds": 1002.079,
+      "id": "hkE-8LRiG1k-display-0335",
+      "segment_id": "hkE-8LRiG1k-ja-0113"
+    },
+    {
+      "text": "ようって思いますか?",
+      "start_seconds": 1002.079,
+      "end_seconds": 1004.639,
+      "id": "hkE-8LRiG1k-display-0336",
+      "segment_id": "hkE-8LRiG1k-ja-0113"
+    },
+    {
+      "text": "そしてあなたがやいなくなった後その後に",
+      "start_seconds": 1004.639,
+      "end_seconds": 1009.399,
+      "id": "hkE-8LRiG1k-display-0337",
+      "segment_id": "hkE-8LRiG1k-ja-0114"
+    },
+    {
+      "text": "何か残したいものはありますか?",
+      "start_seconds": 1009.399,
+      "end_seconds": 1014.519,
+      "id": "hkE-8LRiG1k-display-0338",
+      "segment_id": "hkE-8LRiG1k-ja-0114"
+    },
+    {
+      "text": "今私が話してるようなことってちょっと",
+      "start_seconds": 1018.16,
+      "end_seconds": 1022.16,
+      "id": "hkE-8LRiG1k-display-0339",
+      "segment_id": "hkE-8LRiG1k-ja-0115"
+    },
+    {
+      "text": "突っぴに聞こえるのかもしれません。",
+      "start_seconds": 1022.16,
+      "end_seconds": 1026.439,
+      "id": "hkE-8LRiG1k-display-0340",
+      "segment_id": "hkE-8LRiG1k-ja-0115"
+    },
+    {
+      "text": "SFじゃないんだからって。でも皆さんが",
+      "start_seconds": 1026.439,
+      "end_seconds": 1030.0,
+      "id": "hkE-8LRiG1k-display-0341",
+      "segment_id": "hkE-8LRiG1k-ja-0116"
+    },
+    {
+      "text": "思ってるよりももう少し早くそういう世界",
+      "start_seconds": 1030.0,
+      "end_seconds": 1033.12,
+      "id": "hkE-8LRiG1k-display-0342",
+      "segment_id": "hkE-8LRiG1k-ja-0116"
+    },
+    {
+      "text": "が現実にを帯びてくると思っています。",
+      "start_seconds": 1033.12,
+      "end_seconds": 1038.6789999999999,
+      "id": "hkE-8LRiG1k-display-0343",
+      "segment_id": "hkE-8LRiG1k-ja-0117"
+    },
+    {
+      "text": "自分とは何なのかということを今考え始め",
+      "start_seconds": 1039.4,
+      "end_seconds": 1043.319,
+      "id": "hkE-8LRiG1k-display-0344",
+      "segment_id": "hkE-8LRiG1k-ja-0118"
+    },
+    {
+      "text": "てもいいのかもしれません。",
+      "start_seconds": 1043.319,
+      "end_seconds": 1047.48,
+      "id": "hkE-8LRiG1k-display-0345",
+      "segment_id": "hkE-8LRiG1k-ja-0118"
+    },
+    {
+      "text": "ひょっとしたらそのすみりの傷こそが",
+      "start_seconds": 1047.48,
+      "end_seconds": 1051.0,
+      "id": "hkE-8LRiG1k-display-0346",
+      "segment_id": "hkE-8LRiG1k-ja-0119"
+    },
+    {
+      "text": "あなたなのかもしれません。",
+      "start_seconds": 1051.0,
+      "end_seconds": 1054.76,
+      "id": "hkE-8LRiG1k-display-0347",
+      "segment_id": "hkE-8LRiG1k-ja-0119"
+    },
+    {
+      "text": "未来のあなたが",
+      "start_seconds": 1054.76,
+      "end_seconds": 1057.24,
+      "id": "hkE-8LRiG1k-display-0348",
+      "segment_id": "hkE-8LRiG1k-ja-0120"
+    },
+    {
+      "text": "その傷を機械の体に移植したいって思う日",
+      "start_seconds": 1057.24,
+      "end_seconds": 1061.28,
+      "id": "hkE-8LRiG1k-display-0349",
+      "segment_id": "hkE-8LRiG1k-ja-0120"
+    },
+    {
+      "text": "が来るかもしれないからです。",
+      "start_seconds": 1061.28,
+      "end_seconds": 1066.52,
+      "id": "hkE-8LRiG1k-display-0350",
+      "segment_id": "hkE-8LRiG1k-ja-0120"
+    },
+    {
+      "text": "ご成聴ありがとうございました。",
+      "start_seconds": 1068.16,
+      "end_seconds": 1072.799,
+      "id": "hkE-8LRiG1k-display-0351",
+      "segment_id": "hkE-8LRiG1k-ja-0121"
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 1074.212,
+      "end_seconds": 1076.232,
+      "id": "hkE-8LRiG1k-display-0352",
+      "segment_id": "hkE-8LRiG1k-ja-0122"
+    }
+  ]
+}

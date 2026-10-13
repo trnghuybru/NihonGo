@@ -7,7 +7,7 @@ from email.utils import parsedate_to_datetime
 import requests
 
 from api_errors import ApiError
-from services.llm_service import DEFAULT_MODEL, LEVEL_GUIDELINES, OPENROUTER_API_URL
+from services.llm_service import DEFAULT_MODEL, LEVEL_GUIDELINES, gemini_url, gemini_payload, gemini_text
 
 logger = logging.getLogger(__name__)
 
@@ -54,18 +54,16 @@ def build_scenario_system_prompt(snapshot):
 
 
 def generate_reply(snapshot, history):
-    key = os.getenv("OPENROUTER_API_KEY", "").strip().strip('"').strip("'")
+    key = os.getenv("GEMINI_API_KEY", "").strip().strip('"').strip("'")
     if not key:
         raise ApiError("Dịch vụ AI chưa được cấu hình.", 503, "ai_unavailable")
     prompt = build_scenario_system_prompt(snapshot)
+    model = os.getenv("GEMINI_CHAT_MODEL") or DEFAULT_MODEL
     try:
         with requests.post(
-            OPENROUTER_API_URL,
-            headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
-            json={"model": os.getenv("OPENROUTER_MODEL") or DEFAULT_MODEL,
-                  "messages": [{"role": "system", "content": prompt}, *history],
-                  "stream": False, "max_tokens": 256, "temperature": 0.4,
-                  "reasoning": {"enabled": False, "exclude": True}},
+            gemini_url(model),
+            headers={"x-goog-api-key": key, "Content-Type": "application/json"},
+            json=gemini_payload(prompt, history, model),
             timeout=(5, 25),
         ) as response:
             if response.status_code == 429:
@@ -77,7 +75,7 @@ def generate_reply(snapshot, history):
                 )
             response.raise_for_status()
             data = response.json()
-        content = data["choices"][0]["message"]["content"]
+        content = gemini_text(data)
         if not isinstance(content, str) or not content.strip() or len(content) > 12000:
             raise ValueError("Invalid provider reply")
         return content.strip()

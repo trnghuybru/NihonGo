@@ -25,6 +25,7 @@ import {
 import { EyeIcon, EyeOffIcon } from './icons';
 import { AuthIcon, AuthIconName } from './AuthIcon';
 import { BrandLogo } from './BrandLogo';
+import { useBottomNavigationInset } from '../hooks/useBottomNavigationInset';
 
 export function AuthCard({ children }: { children: React.ReactNode }) {
   return <View style={styles.card}>{children}</View>;
@@ -50,6 +51,7 @@ export function AuthShell({
   headerAccessory?: React.ReactNode;
 }) {
   const insets = useSafeAreaInsets();
+  const navigationInset = useBottomNavigationInset();
   return (
     <KeyboardAvoidingView
       style={styles.fill}
@@ -87,6 +89,7 @@ export function AuthShell({
         keyboardDismissMode="on-drag"
         contentInsetAdjustmentBehavior="automatic"
         showsVerticalScrollIndicator={false}
+        scrollIndicatorInsets={{ bottom: navigationInset }}
         contentContainerStyle={[
           styles.content,
           Platform.OS === 'android'
@@ -95,6 +98,9 @@ export function AuthShell({
                 paddingBottom: insets.bottom + spacing.xxl,
               }
             : null,
+          navigationInset > 0 && {
+            paddingBottom: navigationInset + spacing.xxl,
+          },
         ]}
       >
         <View style={styles.topBar}>

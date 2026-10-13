@@ -1,0 +1,3121 @@
+{
+  "schema_version": 1,
+  "video": {
+    "youtube_id": "PTEUKAz1NKk",
+    "title": "What is the right answer for you? Question What We Take for Granted | MARINA AZUCHI | TEDxNagoyaU",
+    "channel": "TEDx Talks",
+    "duration_seconds": 736
+  },
+  "caption_track": {
+    "language": "ja",
+    "kind": "asr",
+    "source": "youtube_automatic"
+  },
+  "source_playlist": "https://www.youtube.com/playlist?list=PLsRNoUx8w3rOHjXIU5EE4KOiIagv9yQaG",
+  "fetched_at": "2026-10-13T13:24:23.008328+00:00",
+  "segment_count": 86,
+  "segments": [
+    {
+      "text": "[音楽]",
+      "start_seconds": 3.274,
+      "end_seconds": 5.2940000000000005,
+      "id": "PTEUKAz1NKk-ja-0001",
+      "sequence": 1
+    },
+    {
+      "text": "皆さん、こんにちは。突然ですが、右手をグーにして私が下ろしてくださいというまで高く上げ続けていただけますか?さあ、あげてくださいね。はい。しっかりあげ",
+      "start_seconds": 10.2,
+      "end_seconds": 21.439,
+      "id": "PTEUKAz1NKk-ja-0002",
+      "sequence": 2
+    },
+    {
+      "text": "てくださいね。改めまして、あ、マリナです。私は一般的に不登校や発達障害と言われる子供たちに必要なのは支援の場",
+      "start_seconds": 21.439,
+      "end_seconds": 33.239,
+      "id": "PTEUKAz1NKk-ja-0003",
+      "sequence": 3
+    },
+    {
+      "text": "だけではなく共に上き共に育つそんな場が必要だと感じ特定比り活動法人奇妙生ぬを",
+      "start_seconds": 33.239,
+      "end_seconds": 41.559,
+      "id": "PTEUKAz1NKk-ja-0004",
+      "sequence": 4
+    },
+    {
+      "text": "発揮しました。皆さんは不登校とか発達障害にどんなイメージを持っていますか?",
+      "start_seconds": 41.559,
+      "end_seconds": 49.079,
+      "id": "PTEUKAz1NKk-ja-0005",
+      "sequence": 5
+    },
+    {
+      "text": "助けてあげなきゃいけない弱い人でしょうか?多くの人が弱いものを助け救おうとし",
+      "start_seconds": 49.079,
+      "end_seconds": 57.039,
+      "id": "PTEUKAz1NKk-ja-0006",
+      "sequence": 6
+    },
+    {
+      "text": "ています。ただ私からすると全ての人がそもそも自分らしく生きる力を持っている。ありのまま生きる力を持っていると考え",
+      "start_seconds": 57.039,
+      "end_seconds": 67.56,
+      "id": "PTEUKAz1NKk-ja-0007",
+      "sequence": 7
+    },
+    {
+      "text": "、自ら伸びく環境として地半島地域バノルスコレを発揮し運営しています。皆",
+      "start_seconds": 67.56,
+      "end_seconds": 75.96,
+      "id": "PTEUKAz1NKk-ja-0008",
+      "sequence": 8
+    },
+    {
+      "text": "さんそろそろ手が疲れてきませんか?私は手が疲れてきました。手を下ろしてください。",
+      "start_seconds": 75.96,
+      "end_seconds": 84.6,
+      "id": "PTEUKAz1NKk-ja-0009",
+      "sequence": 9
+    },
+    {
+      "text": "では私たちはどうして理由もなく全く知らない前に立っている人の指示に従ってしまうのでしょうか?",
+      "start_seconds": 84.6,
+      "end_seconds": 94.68,
+      "id": "PTEUKAz1NKk-ja-0010",
+      "sequence": 10
+    },
+    {
+      "text": "これ。あ、そうです。すいません。あげさせといてすみ[笑い]ません。これすごくないですか?何がすごいかって言うと、忍耐強さや強調性っていう素晴らしい",
+      "start_seconds": 94.68,
+      "end_seconds": 105.52,
+      "id": "PTEUKAz1NKk-ja-0011",
+      "sequence": 11
+    },
+    {
+      "text": "力を皆さん養ってこられたんです。でももし今のこの指示が間違っていたら自分には合わないものだったとしたらどう",
+      "start_seconds": 105.52,
+      "end_seconds": 116.399,
+      "id": "PTEUKAz1NKk-ja-0012",
+      "sequence": 12
+    },
+    {
+      "text": "でしょう?",
+      "start_seconds": 116.399,
+      "end_seconds": 118.439,
+      "id": "PTEUKAz1NKk-ja-0013",
+      "sequence": 13
+    },
+    {
+      "text": "今の時代知識に関しては分からないことがあればAIに聞けば何でも答えてくれます。でもちょっと婚活をしてるんですけど",
+      "start_seconds": 118.439,
+      "end_seconds": 127.28,
+      "id": "PTEUKAz1NKk-ja-0014",
+      "sequence": 14
+    },
+    {
+      "text": "婚活をしている私の結婚相手太郎君と次郎君どっちがいいっていう問いにAIは答えてくれません。仮に答えれたとしても、",
+      "start_seconds": 127.28,
+      "end_seconds": 137.959,
+      "id": "PTEUKAz1NKk-ja-0015",
+      "sequence": 15
+    },
+    {
+      "text": "そのAIの出した答え通りに生きる気は妄当ありません。きっと私は自己決定した結果でこそ納得のいく人生だと考えてい",
+      "start_seconds": 137.959,
+      "end_seconds": 149.0,
+      "id": "PTEUKAz1NKk-ja-0016",
+      "sequence": 16
+    },
+    {
+      "text": "ます。これから必要なのはたくさんの知識を覚えることだけでもなく誰かの指示通り",
+      "start_seconds": 149.0,
+      "end_seconds": 157.48,
+      "id": "PTEUKAz1NKk-ja-0017",
+      "sequence": 17
+    },
+    {
+      "text": "に生きることだけでもありません。自分にとっての正解を自分で考えて自分の意思で決定していく個性を大切にしながら",
+      "start_seconds": 157.48,
+      "end_seconds": 169.159,
+      "id": "PTEUKAz1NKk-ja-0018",
+      "sequence": 18
+    },
+    {
+      "text": "生き抜く力です。それはつまり当たり前を問い直すことだと私は考えています。これって本当にこれでいいんだっけ",
+      "start_seconds": 169.159,
+      "end_seconds": 178.68,
+      "id": "PTEUKAz1NKk-ja-0019",
+      "sequence": 19
+    },
+    {
+      "text": "?と立ち止まって自分の頭で考えること。",
+      "start_seconds": 178.68,
+      "end_seconds": 182.879,
+      "id": "PTEUKAz1NKk-ja-0020",
+      "sequence": 20
+    },
+    {
+      "text": "私たちは道端に落ちてるドーナツをいきなりパクって食べないですよね。食べないですよね。",
+      "start_seconds": 182.879,
+      "end_seconds": 190.68,
+      "id": "PTEUKAz1NKk-ja-0021",
+      "sequence": 21
+    },
+    {
+      "text": "と今日は初めてあった知らない人をいきなり信じますか?信じないですよね。",
+      "start_seconds": 190.68,
+      "end_seconds": 196.64,
+      "id": "PTEUKAz1NKk-ja-0022",
+      "sequence": 22
+    },
+    {
+      "text": "でも教育を受ける立場ってなった瞬間鵜呑みにするこう傾向がありませんか?",
+      "start_seconds": 196.64,
+      "end_seconds": 204.44,
+      "id": "PTEUKAz1NKk-ja-0023",
+      "sequence": 23
+    },
+    {
+      "text": "こう正解を出さなきゃとかちゃんと全部覚えなきゃっていう気持ちになりませんか?",
+      "start_seconds": 204.44,
+      "end_seconds": 211.48,
+      "id": "PTEUKAz1NKk-ja-0024",
+      "sequence": 24
+    },
+    {
+      "text": "因数分解と枕の送、これらは皆さんが中学生になると必ず覚えることの一部です。で",
+      "start_seconds": 211.48,
+      "end_seconds": 219.879,
+      "id": "PTEUKAz1NKk-ja-0025",
+      "sequence": 25
+    },
+    {
+      "text": "は、因数分解最近しましたか?",
+      "start_seconds": 219.879,
+      "end_seconds": 224.92,
+      "id": "PTEUKAz1NKk-ja-0026",
+      "sequence": 26
+    },
+    {
+      "text": "全ての人に必要だと思いますか?ま、中には必要な職業もあると思います。では、枕の春は明けぼから冬は勤めてまで完璧に",
+      "start_seconds": 224.92,
+      "end_seconds": 234.68,
+      "id": "PTEUKAz1NKk-ja-0027",
+      "sequence": 27
+    },
+    {
+      "text": "暗証できないと生きるのに困るって人どれぐらいいますか?さらに因数分解と枕の両方とも幸せに生きるのに絶対必要だって",
+      "start_seconds": 234.68,
+      "end_seconds": 245.68,
+      "id": "PTEUKAz1NKk-ja-0028",
+      "sequence": 28
+    },
+    {
+      "text": "いう人はどれぐらいいますか?",
+      "start_seconds": 245.68,
+      "end_seconds": 250.519,
+      "id": "PTEUKAz1NKk-ja-0029",
+      "sequence": 29
+    },
+    {
+      "text": "全員が同じでなくてもいい。全く同じように、全く同じ内容を全く同じようにできる必要はないというのが私の考えです。",
+      "start_seconds": 250.76,
+      "end_seconds": 260.519,
+      "id": "PTEUKAz1NKk-ja-0030",
+      "sequence": 30
+    },
+    {
+      "text": "なぜ私たちはこんなに正解や同じというものを求めてしまうのでしょうか?一言で言うとこれが1番安心なんです。就職活動",
+      "start_seconds": 260.519,
+      "end_seconds": 271.36,
+      "id": "PTEUKAz1NKk-ja-0031",
+      "sequence": 31
+    },
+    {
+      "text": "。みんなと同じ黒い紙、みんなと同じ黒いスーツ。これが1番安心ですよね。",
+      "start_seconds": 271.36,
+      "end_seconds": 277.68,
+      "id": "PTEUKAz1NKk-ja-0032",
+      "sequence": 32
+    },
+    {
+      "text": "わざわざ奇末な格好で挑むなんて危険な掛けじゃないですか?だから当たり前のレールに乗ってさえいれば安心できるんです。みんなが目指してる有名な大学、",
+      "start_seconds": 277.68,
+      "end_seconds": 289.0,
+      "id": "PTEUKAz1NKk-ja-0033",
+      "sequence": 33
+    },
+    {
+      "text": "大きな会社、たくさんのお金がある。これはこれで素晴らしいです。でも自分の個性を押し殺して当たり前の安心だけを望んだ",
+      "start_seconds": 289.0,
+      "end_seconds": 298.6,
+      "id": "PTEUKAz1NKk-ja-0034",
+      "sequence": 34
+    },
+    {
+      "text": "先には何が待っているのでしょうか?",
+      "start_seconds": 298.6,
+      "end_seconds": 302.919,
+      "id": "PTEUKAz1NKk-ja-0035",
+      "sequence": 35
+    },
+    {
+      "text": "これは日本を含めた4カ国の高校生を対象に行った調査です。この調査結果では日本の高校生の78%が将来に不安を感じて",
+      "start_seconds": 302.919,
+      "end_seconds": 314.24,
+      "id": "PTEUKAz1NKk-ja-0036",
+      "sequence": 36
+    },
+    {
+      "text": "いるということが明らかになっています。",
+      "start_seconds": 314.24,
+      "end_seconds": 316.96,
+      "id": "PTEUKAz1NKk-ja-0037",
+      "sequence": 37
+    },
+    {
+      "text": "また他の国と比べても日本高いですよね。",
+      "start_seconds": 316.96,
+      "end_seconds": 320.84,
+      "id": "PTEUKAz1NKk-ja-0038",
+      "sequence": 38
+    },
+    {
+      "text": "つまり日本の若者は他国と比べても将来に不安感を強く抱いているということが明らかになっています。みと同じような",
+      "start_seconds": 320.84,
+      "end_seconds": 332.08,
+      "id": "PTEUKAz1NKk-ja-0039",
+      "sequence": 39
+    },
+    {
+      "text": "安心感を得るために頑張って毎日学校に行って頑張って勉強をして安心したくてやっているのに不安感は消えなくてもがい",
+      "start_seconds": 332.08,
+      "end_seconds": 340.16,
+      "id": "PTEUKAz1NKk-ja-0040",
+      "sequence": 40
+    },
+    {
+      "text": "てる。では当たり前の枠に入ろうとすればするほどみんなと違う部分を自分の中に見つけてどんどんどんどんその不安は消え",
+      "start_seconds": 340.16,
+      "end_seconds": 350.8,
+      "id": "PTEUKAz1NKk-ja-0041",
+      "sequence": 41
+    },
+    {
+      "text": "ない。じゃどうしたらこの不安感は消えるのでしょうか?自分のありなままの個性をまず認めること。枠や同じの窮屈さを",
+      "start_seconds": 350.8,
+      "end_seconds": 360.639,
+      "id": "PTEUKAz1NKk-ja-0042",
+      "sequence": 42
+    },
+    {
+      "text": "手放して自分自身を信じた先に私たちは不安から解放され幸せになれると考えています。",
+      "start_seconds": 360.639,
+      "end_seconds": 370.479,
+      "id": "PTEUKAz1NKk-ja-0043",
+      "sequence": 43
+    },
+    {
+      "text": "私は女性で日本人で若者で姫を生というところに所属していて慶王技塾大学の通信",
+      "start_seconds": 370.479,
+      "end_seconds": 378.479,
+      "id": "PTEUKAz1NKk-ja-0044",
+      "sequence": 44
+    },
+    {
+      "text": "家庭に在していてラオスの像っていうたくさんのカテゴリーに所属しているどんな枠にも入らないただのあちマリナ",
+      "start_seconds": 378.479,
+      "end_seconds": 388.599,
+      "id": "PTEUKAz1NKk-ja-0045",
+      "sequence": 45
+    },
+    {
+      "text": "です。私は私です。",
+      "start_seconds": 388.599,
+      "end_seconds": 392.919,
+      "id": "PTEUKAz1NKk-ja-0046",
+      "sequence": 46
+    },
+    {
+      "text": "今教育の当たり前を問い直す時が来ています。今がその時なのだと子供たちが教えてくれています。少子家で子供の数は減っ",
+      "start_seconds": 392.919,
+      "end_seconds": 402.12,
+      "id": "PTEUKAz1NKk-ja-0047",
+      "sequence": 47
+    },
+    {
+      "text": "ているのに不登校の子供の数は割合は増えている。不登校の増加っていうこの問題は教育現場だけの問題ではなく社会全体が",
+      "start_seconds": 402.12,
+      "end_seconds": 412.84,
+      "id": "PTEUKAz1NKk-ja-0048",
+      "sequence": 48
+    },
+    {
+      "text": "立ち止まって考えなく考え直さなくてはいけません。新しい当たり前が求められています。だから私は知半島地域率",
+      "start_seconds": 412.84,
+      "end_seconds": 424.12,
+      "id": "PTEUKAz1NKk-ja-0049",
+      "sequence": 49
+    },
+    {
+      "text": "マヌスコレを始めました。これは不登校支援ではありません。障害者の居場所でもありません。",
+      "start_seconds": 424.12,
+      "end_seconds": 433.72,
+      "id": "PTEUKAz1NKk-ja-0050",
+      "sequence": 50
+    },
+    {
+      "text": "新しいもう1つの教育です。専門的に言うと市民率というオルタナティブ教育です。",
+      "start_seconds": 433.72,
+      "end_seconds": 441.639,
+      "id": "PTEUKAz1NKk-ja-0051",
+      "sequence": 51
+    },
+    {
+      "text": "私自身中学生時代不登校でした。高校卒業後進学した専門学校は3ヶ月で辞め1年間ほど引きこもりました。どうも社会不適号",
+      "start_seconds": 441.639,
+      "end_seconds": 452.28,
+      "id": "PTEUKAz1NKk-ja-0052",
+      "sequence": 52
+    },
+    {
+      "text": "です。ここ笑うところですよ。",
+      "start_seconds": 452.28,
+      "end_seconds": 457.28,
+      "id": "PTEUKAz1NKk-ja-0053",
+      "sequence": 53
+    },
+    {
+      "text": "優しい言葉にたくさんの支援に救われた1人です。だからこそ今に使われている学校に行かなくてもいいよっていう言葉に",
+      "start_seconds": 457.28,
+      "end_seconds": 467.4,
+      "id": "PTEUKAz1NKk-ja-0054",
+      "sequence": 54
+    },
+    {
+      "text": "少しだけモヤモヤします。優しい言葉なんですがどこかその場所に聞こえてしまう。",
+      "start_seconds": 467.4,
+      "end_seconds": 474.479,
+      "id": "PTEUKAz1NKk-ja-0055",
+      "sequence": 55
+    },
+    {
+      "text": "だっていつかは社会に出て1人で生きていかなきゃいけないから。だから一時的に逃げる場所、子供だからと言って甘やかしてくれる場所を作りたいわけではありませ",
+      "start_seconds": 474.479,
+      "end_seconds": 486.199,
+      "id": "PTEUKAz1NKk-ja-0056",
+      "sequence": 56
+    },
+    {
+      "text": "ん。ありのままの自分を愛する力を育む教育の場を作りたい。社会で生きるのでは",
+      "start_seconds": 486.199,
+      "end_seconds": 494.56,
+      "id": "PTEUKAz1NKk-ja-0057",
+      "sequence": 57
+    },
+    {
+      "text": "なく社会と生きていきたい。マヌスコレのスコレという言葉は人生において最高に幸福な時間、知的な休み時間という意味の",
+      "start_seconds": 494.56,
+      "end_seconds": 505.44,
+      "id": "PTEUKAz1NKk-ja-0058",
+      "sequence": 58
+    },
+    {
+      "text": "ギリシャ語です。なのですごい分かりやすく学校を作ってますって言うんですが実は先生もいないし宿題も授業もありませ",
+      "start_seconds": 505.44,
+      "end_seconds": 515.719,
+      "id": "PTEUKAz1NKk-ja-0059",
+      "sequence": 59
+    },
+    {
+      "text": "ん。あるのは自由だけ。自由というのはただ遊び放けることではありません。自由というのは実は責任を追うことなんです。",
+      "start_seconds": 515.719,
+      "end_seconds": 527.2,
+      "id": "PTEUKAz1NKk-ja-0060",
+      "sequence": 60
+    },
+    {
+      "text": "こんな言葉があります。責任を負う自由を与えると人はうちに秘めたる能力を発揮する。責任を追う自由を与えると人はうち",
+      "start_seconds": 527.2,
+      "end_seconds": 537.56,
+      "id": "PTEUKAz1NKk-ja-0061",
+      "sequence": 61
+    },
+    {
+      "text": "に秘めたる能力を発揮する。マノルスコレが定義する自由はこれです。誰かの評価も期待しない。当たり前の枠も気にしない。",
+      "start_seconds": 537.56,
+      "end_seconds": 548.04,
+      "id": "PTEUKAz1NKk-ja-0062",
+      "sequence": 62
+    },
+    {
+      "text": "自己決定の機会が、ま、これです。実は幸福感と自己決定日本における実証研究というものによって学歴よりも所得よりも",
+      "start_seconds": 548.04,
+      "end_seconds": 558.839,
+      "id": "PTEUKAz1NKk-ja-0063",
+      "sequence": 63
+    },
+    {
+      "text": "自己決定が幸福に影響を与えているということがそんな研究結果が出ています。",
+      "start_seconds": 558.839,
+      "end_seconds": 566.92,
+      "id": "PTEUKAz1NKk-ja-0064",
+      "sequence": 64
+    },
+    {
+      "text": "自分で自分の人生の満足度に点数をつけたもの。これを主観的幸福度と言います。",
+      "start_seconds": 566.92,
+      "end_seconds": 574.24,
+      "id": "PTEUKAz1NKk-ja-0065",
+      "sequence": 65
+    },
+    {
+      "text": "世界幸福度ランキング9年連続1位の最も幸福な国、皆さんご存知ですか?",
+      "start_seconds": 574.24,
+      "end_seconds": 579.72,
+      "id": "PTEUKAz1NKk-ja-0066",
+      "sequence": 66
+    },
+    {
+      "text": "フィンランドです。フィンランドの平均回答点数は7.7点、日本の平均は6.2点。マヌスコレと全く同じカリキュラムの",
+      "start_seconds": 579.72,
+      "end_seconds": 590.68,
+      "id": "PTEUKAz1NKk-ja-0067",
+      "sequence": 67
+    },
+    {
+      "text": "セ戸市民率、セ戸作るスクールでは私が昨年1年間調査研究を行ったところ、テト作るスクールに通う子供たちの平均幸福度",
+      "start_seconds": 590.68,
+      "end_seconds": 601.72,
+      "id": "PTEUKAz1NKk-ja-0068",
+      "sequence": 68
+    },
+    {
+      "text": "の回答は8.09点でした。つまり世界一服な国、フィンランドの人たちよりも幸福に生きていました。ということは、",
+      "start_seconds": 601.72,
+      "end_seconds": 612.519,
+      "id": "PTEUKAz1NKk-ja-0069",
+      "sequence": 69
+    },
+    {
+      "text": "自己決定が当たり前の子供たちは因数分解も枕の総師もやったことがないけれど幸せだということが明らかになっています。",
+      "start_seconds": 612.519,
+      "end_seconds": 624.04,
+      "id": "PTEUKAz1NKk-ja-0070",
+      "sequence": 70
+    },
+    {
+      "text": "一等将遇、万と彫刻。これは私の好きな最長の言葉です。1つの明りは一宮しか照らすことができない。でも満の明りと",
+      "start_seconds": 624.04,
+      "end_seconds": 634.76,
+      "id": "PTEUKAz1NKk-ja-0071",
+      "sequence": 71
+    },
+    {
+      "text": "なれば国をも照らすという意味です。",
+      "start_seconds": 634.76,
+      "end_seconds": 638.279,
+      "id": "PTEUKAz1NKk-ja-0072",
+      "sequence": 72
+    },
+    {
+      "text": "私たち市民率はよし、世界を大きく変えるぞとか日本の教育変えるぞということを目指してはいません。1人1人が自分の",
+      "start_seconds": 638.279,
+      "end_seconds": 647.88,
+      "id": "PTEUKAz1NKk-ja-0073",
+      "sequence": 73
+    },
+    {
+      "text": "人生どう行きたいと問い直して動き出し、その波紋が少しずつ広がっていく。そうすると結果として社会は変わらざるを得",
+      "start_seconds": 647.88,
+      "end_seconds": 658.44,
+      "id": "PTEUKAz1NKk-ja-0074",
+      "sequence": 74
+    },
+    {
+      "text": "ないと考えています。",
+      "start_seconds": 658.44,
+      "end_seconds": 661.36,
+      "id": "PTEUKAz1NKk-ja-0075",
+      "sequence": 75
+    },
+    {
+      "text": "マノルスコレの子供たちが私がめちゃくちゃ楽しくむちゃくちゃ幸福に生きていたら何かしら社会に影響を与えられるんじゃない。そんな小さな積み重ね",
+      "start_seconds": 661.36,
+      "end_seconds": 672.399,
+      "id": "PTEUKAz1NKk-ja-0076",
+      "sequence": 76
+    },
+    {
+      "text": "の先に気づけば世界が面白くなっている。",
+      "start_seconds": 672.399,
+      "end_seconds": 676.88,
+      "id": "PTEUKAz1NKk-ja-0077",
+      "sequence": 77
+    },
+    {
+      "text": "そんな未来を描いています。",
+      "start_seconds": 676.88,
+      "end_seconds": 680.399,
+      "id": "PTEUKAz1NKk-ja-0078",
+      "sequence": 78
+    },
+    {
+      "text": "私は教育の当たり前を問い直したい。私が照らす一宮はここです。では皆さんは何を",
+      "start_seconds": 680.399,
+      "end_seconds": 689.16,
+      "id": "PTEUKAz1NKk-ja-0079",
+      "sequence": 79
+    },
+    {
+      "text": "問い直しますか?",
+      "start_seconds": 689.16,
+      "end_seconds": 692.6,
+      "id": "PTEUKAz1NKk-ja-0080",
+      "sequence": 80
+    },
+    {
+      "text": "誰を?どこを照らしますか?",
+      "start_seconds": 692.6,
+      "end_seconds": 696.6,
+      "id": "PTEUKAz1NKk-ja-0081",
+      "sequence": 81
+    },
+    {
+      "text": "私が個々ができることは限られています。",
+      "start_seconds": 696.6,
+      "end_seconds": 699.959,
+      "id": "PTEUKAz1NKk-ja-0082",
+      "sequence": 82
+    },
+    {
+      "text": "ですが、私、この場にいる皆さん、1人1人ができることを行動していけば国をも照らす。私はそう信じています。さ、",
+      "start_seconds": 699.959,
+      "end_seconds": 711.0,
+      "id": "PTEUKAz1NKk-ja-0083",
+      "sequence": 83
+    },
+    {
+      "text": "皆さんちゃんと行動に移してくださいね。",
+      "start_seconds": 711.0,
+      "end_seconds": 713.72,
+      "id": "PTEUKAz1NKk-ja-0084",
+      "sequence": 84
+    },
+    {
+      "text": "私の話を聞いて終わりにはして欲しくありません。是非一緒に素晴らしい未来を作りましょう。ありがとうございました。",
+      "start_seconds": 713.72,
+      "end_seconds": 723.783,
+      "id": "PTEUKAz1NKk-ja-0085",
+      "sequence": 85
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 723.783,
+      "end_seconds": 725.803,
+      "id": "PTEUKAz1NKk-ja-0086",
+      "sequence": 86
+    }
+  ],
+  "raw_captions": [
+    {
+      "text": "[音楽]",
+      "start_seconds": 3.274,
+      "end_seconds": 5.2940000000000005
+    },
+    {
+      "text": "皆さん、こんにちは。突然ですが、右手を",
+      "start_seconds": 10.2,
+      "end_seconds": 16.4
+    },
+    {
+      "text": "グーにして私が下ろしてくださいという",
+      "start_seconds": 13.639,
+      "end_seconds": 19.08
+    },
+    {
+      "text": "まで高く上げ続けていただけますか?さあ",
+      "start_seconds": 16.4,
+      "end_seconds": 21.439
+    },
+    {
+      "text": "、あげてくださいね。はい。しっかりあげ",
+      "start_seconds": 19.08,
+      "end_seconds": 25.32
+    },
+    {
+      "text": "てくださいね。改めまして、あ、マリナ",
+      "start_seconds": 21.439,
+      "end_seconds": 29.599
+    },
+    {
+      "text": "です。私は一般的に不登校や発達障害と",
+      "start_seconds": 25.32,
+      "end_seconds": 33.239
+    },
+    {
+      "text": "言われる子供たちに必要なのは支援の場",
+      "start_seconds": 29.599,
+      "end_seconds": 37.36
+    },
+    {
+      "text": "だけではなく共に上き共に育つそんな場が",
+      "start_seconds": 33.239,
+      "end_seconds": 41.559
+    },
+    {
+      "text": "必要だと感じ特定比り活動法人奇妙生ぬを",
+      "start_seconds": 37.36,
+      "end_seconds": 45.32
+    },
+    {
+      "text": "発揮しました。皆さんは不登校とか発達",
+      "start_seconds": 41.559,
+      "end_seconds": 49.07899999999999
+    },
+    {
+      "text": "障害にどんなイメージを持っていますか?",
+      "start_seconds": 45.32,
+      "end_seconds": 52.52
+    },
+    {
+      "text": "助けてあげなきゃいけない弱い人でしょう",
+      "start_seconds": 49.079,
+      "end_seconds": 57.039
+    },
+    {
+      "text": "か?多くの人が弱いものを助け救おうとし",
+      "start_seconds": 52.52,
+      "end_seconds": 61.64
+    },
+    {
+      "text": "ています。ただ私からすると全ての人が",
+      "start_seconds": 57.039,
+      "end_seconds": 64.159
+    },
+    {
+      "text": "そもそも自分らしく生きる力を持っている",
+      "start_seconds": 61.64,
+      "end_seconds": 67.56
+    },
+    {
+      "text": "。ありのまま生きる力を持っていると考え",
+      "start_seconds": 64.159,
+      "end_seconds": 72.43900000000001
+    },
+    {
+      "text": "、自ら伸びく環境として地半島地域",
+      "start_seconds": 67.56,
+      "end_seconds": 75.96000000000001
+    },
+    {
+      "text": "バノルスコレを発揮し運営しています。皆",
+      "start_seconds": 72.439,
+      "end_seconds": 79.83999999999999
+    },
+    {
+      "text": "さんそろそろ手が疲れてきませんか?私は",
+      "start_seconds": 75.96,
+      "end_seconds": 82.24
+    },
+    {
+      "text": "手が疲れてきました。手を下ろして",
+      "start_seconds": 79.84,
+      "end_seconds": 84.60000000000001
+    },
+    {
+      "text": "ください。",
+      "start_seconds": 82.24,
+      "end_seconds": 89.6
+    },
+    {
+      "text": "では私たちはどうして理由もなく全く知ら",
+      "start_seconds": 84.6,
+      "end_seconds": 92.399
+    },
+    {
+      "text": "ない前に立っている人の指示に従って",
+      "start_seconds": 89.6,
+      "end_seconds": 94.67999999999999
+    },
+    {
+      "text": "しまうのでしょうか?",
+      "start_seconds": 92.399,
+      "end_seconds": 96.32000000000001
+    },
+    {
+      "text": "これ。あ、そうです。すいません。あげ",
+      "start_seconds": 94.68,
+      "end_seconds": 98.36000000000001
+    },
+    {
+      "text": "させといてすみ[笑い]ません。これ",
+      "start_seconds": 96.32,
+      "end_seconds": 101.119
+    },
+    {
+      "text": "すごくないですか?何がすごいかって言う",
+      "start_seconds": 98.36,
+      "end_seconds": 105.52
+    },
+    {
+      "text": "と、忍耐強さや強調性っていう素晴らしい",
+      "start_seconds": 101.119,
+      "end_seconds": 109.28
+    },
+    {
+      "text": "力を皆さん養ってこられたんです。でも",
+      "start_seconds": 105.52,
+      "end_seconds": 114.079
+    },
+    {
+      "text": "もし今のこの指示が間違っていたら自分に",
+      "start_seconds": 109.28,
+      "end_seconds": 116.399
+    },
+    {
+      "text": "は合わないものだったとしたらどう",
+      "start_seconds": 114.079,
+      "end_seconds": 118.439
+    },
+    {
+      "text": "でしょう?",
+      "start_seconds": 116.399,
+      "end_seconds": 121.84
+    },
+    {
+      "text": "今の時代知識に関しては分からないことが",
+      "start_seconds": 118.439,
+      "end_seconds": 124.479
+    },
+    {
+      "text": "あればAIに聞けば何でも答えてくれます",
+      "start_seconds": 121.84,
+      "end_seconds": 127.28
+    },
+    {
+      "text": "。でもちょっと婚活をしてるんですけど",
+      "start_seconds": 124.479,
+      "end_seconds": 131.039
+    },
+    {
+      "text": "婚活をしている私の結婚相手太郎君と次郎",
+      "start_seconds": 127.28,
+      "end_seconds": 134.239
+    },
+    {
+      "text": "君どっちがいいっていう問いにAIは答え",
+      "start_seconds": 131.039,
+      "end_seconds": 137.95899999999997
+    },
+    {
+      "text": "てくれません。仮に答えれたとしても、",
+      "start_seconds": 134.239,
+      "end_seconds": 140.8
+    },
+    {
+      "text": "そのAIの出した答え通りに生きる気は",
+      "start_seconds": 137.959,
+      "end_seconds": 145.599
+    },
+    {
+      "text": "妄当ありません。きっと私は自己決定した",
+      "start_seconds": 140.8,
+      "end_seconds": 149.0
+    },
+    {
+      "text": "結果でこそ納得のいく人生だと考えてい",
+      "start_seconds": 145.599,
+      "end_seconds": 152.72
+    },
+    {
+      "text": "ます。これから必要なのはたくさんの知識",
+      "start_seconds": 149.0,
+      "end_seconds": 157.48
+    },
+    {
+      "text": "を覚えることだけでもなく誰かの指示通り",
+      "start_seconds": 152.72,
+      "end_seconds": 161.28
+    },
+    {
+      "text": "に生きることだけでもありません。自分に",
+      "start_seconds": 157.48,
+      "end_seconds": 165.72
+    },
+    {
+      "text": "とっての正解を自分で考えて自分の意思で",
+      "start_seconds": 161.28,
+      "end_seconds": 169.159
+    },
+    {
+      "text": "決定していく個性を大切にしながら",
+      "start_seconds": 165.72,
+      "end_seconds": 172.879
+    },
+    {
+      "text": "生き抜く力です。それはつまり",
+      "start_seconds": 169.159,
+      "end_seconds": 175.72
+    },
+    {
+      "text": "当たり前を問い直すことだと私は考えてい",
+      "start_seconds": 172.879,
+      "end_seconds": 178.67999999999998
+    },
+    {
+      "text": "ます。これって本当にこれでいいんだっけ",
+      "start_seconds": 175.72,
+      "end_seconds": 182.879
+    },
+    {
+      "text": "?と立ち止まって自分の頭で考えること。",
+      "start_seconds": 178.68,
+      "end_seconds": 185.31900000000002
+    },
+    {
+      "text": "私たちは道端に落ちてるドーナツを",
+      "start_seconds": 182.879,
+      "end_seconds": 188.04
+    },
+    {
+      "text": "いきなりパクって食べないですよね。食べ",
+      "start_seconds": 185.319,
+      "end_seconds": 190.67999999999998
+    },
+    {
+      "text": "ないですよね。",
+      "start_seconds": 188.04,
+      "end_seconds": 193.0
+    },
+    {
+      "text": "と今日は初めてあった知らない人を",
+      "start_seconds": 190.68,
+      "end_seconds": 196.64000000000001
+    },
+    {
+      "text": "いきなり信じますか?信じないですよね。",
+      "start_seconds": 193.0,
+      "end_seconds": 201.12
+    },
+    {
+      "text": "でも教育を受ける立場ってなった瞬間",
+      "start_seconds": 196.64,
+      "end_seconds": 204.44
+    },
+    {
+      "text": "鵜呑みにするこう傾向がありませんか?",
+      "start_seconds": 201.12,
+      "end_seconds": 207.4
+    },
+    {
+      "text": "こう正解を出さなきゃとかちゃんと全部",
+      "start_seconds": 204.44,
+      "end_seconds": 209.319
+    },
+    {
+      "text": "覚えなきゃっていう気持ちになりませんか",
+      "start_seconds": 207.4,
+      "end_seconds": 211.48000000000002
+    },
+    {
+      "text": "?",
+      "start_seconds": 209.319,
+      "end_seconds": 216.04
+    },
+    {
+      "text": "因数分解と枕の送、これらは皆さんが中学",
+      "start_seconds": 211.48,
+      "end_seconds": 219.879
+    },
+    {
+      "text": "生になると必ず覚えることの一部です。で",
+      "start_seconds": 216.04,
+      "end_seconds": 224.92
+    },
+    {
+      "text": "は、因数分解最近しましたか?",
+      "start_seconds": 219.879,
+      "end_seconds": 228.159
+    },
+    {
+      "text": "全ての人に必要だと思いますか?ま、中に",
+      "start_seconds": 224.92,
+      "end_seconds": 230.83999999999997
+    },
+    {
+      "text": "は必要な職業もあると思います。では、枕",
+      "start_seconds": 228.159,
+      "end_seconds": 234.67999999999998
+    },
+    {
+      "text": "の春は明けぼから冬は勤めてまで完璧に",
+      "start_seconds": 230.84,
+      "end_seconds": 238.04
+    },
+    {
+      "text": "暗証できないと生きるのに困るって人どれ",
+      "start_seconds": 234.68,
+      "end_seconds": 242.20000000000002
+    },
+    {
+      "text": "ぐらいいますか?さらに因数分解と枕の",
+      "start_seconds": 238.04,
+      "end_seconds": 245.67999999999998
+    },
+    {
+      "text": "両方とも幸せに生きるのに絶対必要だって",
+      "start_seconds": 242.2,
+      "end_seconds": 250.51899999999998
+    },
+    {
+      "text": "いう人はどれぐらいいますか?",
+      "start_seconds": 245.68,
+      "end_seconds": 250.519
+    },
+    {
+      "text": "全員が同じでなくてもいい。全く同じよう",
+      "start_seconds": 250.76,
+      "end_seconds": 256.919
+    },
+    {
+      "text": "に、全く同じ内容を全く同じようにできる",
+      "start_seconds": 254.0,
+      "end_seconds": 260.519
+    },
+    {
+      "text": "必要はないというのが私の考えです。",
+      "start_seconds": 256.919,
+      "end_seconds": 264.15999999999997
+    },
+    {
+      "text": "なぜ私たちはこんなに正解や同じという",
+      "start_seconds": 260.519,
+      "end_seconds": 267.4
+    },
+    {
+      "text": "ものを求めてしまうのでしょうか?一言で",
+      "start_seconds": 264.16,
+      "end_seconds": 271.36
+    },
+    {
+      "text": "言うとこれが1番安心なんです。就職活動",
+      "start_seconds": 267.4,
+      "end_seconds": 274.79999999999995
+    },
+    {
+      "text": "。みんなと同じ黒い紙、みんなと同じ黒い",
+      "start_seconds": 271.36,
+      "end_seconds": 277.68
+    },
+    {
+      "text": "スーツ。これが1番安心ですよね。",
+      "start_seconds": 274.8,
+      "end_seconds": 280.479
+    },
+    {
+      "text": "わざわざ奇末な格好で挑むなんて危険な",
+      "start_seconds": 277.68,
+      "end_seconds": 283.72
+    },
+    {
+      "text": "掛けじゃないですか?だから当たり前の",
+      "start_seconds": 280.479,
+      "end_seconds": 286.12
+    },
+    {
+      "text": "レールに乗ってさえいれば安心できるん",
+      "start_seconds": 283.72,
+      "end_seconds": 289.0
+    },
+    {
+      "text": "です。みんなが目指してる有名な大学、",
+      "start_seconds": 286.12,
+      "end_seconds": 291.52
+    },
+    {
+      "text": "大きな会社、たくさんのお金がある。これ",
+      "start_seconds": 289.0,
+      "end_seconds": 295.28
+    },
+    {
+      "text": "はこれで素晴らしいです。でも自分の個性",
+      "start_seconds": 291.52,
+      "end_seconds": 298.59999999999997
+    },
+    {
+      "text": "を押し殺して当たり前の安心だけを望んだ",
+      "start_seconds": 295.28,
+      "end_seconds": 302.919
+    },
+    {
+      "text": "先には何が待っているのでしょうか?",
+      "start_seconds": 298.6,
+      "end_seconds": 306.32000000000005
+    },
+    {
+      "text": "これは日本を含めた4カ国の高校生を対象",
+      "start_seconds": 302.919,
+      "end_seconds": 309.919
+    },
+    {
+      "text": "に行った調査です。この調査結果では日本",
+      "start_seconds": 306.32,
+      "end_seconds": 314.24
+    },
+    {
+      "text": "の高校生の78%が将来に不安を感じて",
+      "start_seconds": 309.919,
+      "end_seconds": 316.96
+    },
+    {
+      "text": "いるということが明らかになっています。",
+      "start_seconds": 314.24,
+      "end_seconds": 320.84000000000003
+    },
+    {
+      "text": "また他の国と比べても日本高いですよね。",
+      "start_seconds": 316.96,
+      "end_seconds": 325.039
+    },
+    {
+      "text": "つまり日本の若者は他国と比べても将来に",
+      "start_seconds": 320.84,
+      "end_seconds": 327.28
+    },
+    {
+      "text": "不安感を強く抱いているということが",
+      "start_seconds": 325.039,
+      "end_seconds": 332.08
+    },
+    {
+      "text": "明らかになっています。みと同じような",
+      "start_seconds": 327.28,
+      "end_seconds": 335.11999999999995
+    },
+    {
+      "text": "安心感を得るために頑張って毎日学校に",
+      "start_seconds": 332.08,
+      "end_seconds": 337.71999999999997
+    },
+    {
+      "text": "行って頑張って勉強をして安心したくて",
+      "start_seconds": 335.12,
+      "end_seconds": 340.16
+    },
+    {
+      "text": "やっているのに不安感は消えなくてもがい",
+      "start_seconds": 337.72,
+      "end_seconds": 345.24
+    },
+    {
+      "text": "てる。では当たり前の枠に入ろうとすれば",
+      "start_seconds": 340.16,
+      "end_seconds": 347.91900000000004
+    },
+    {
+      "text": "するほどみんなと違う部分を自分の中に",
+      "start_seconds": 345.24,
+      "end_seconds": 350.8
+    },
+    {
+      "text": "見つけてどんどんどんどんその不安は消え",
+      "start_seconds": 347.919,
+      "end_seconds": 353.79999999999995
+    },
+    {
+      "text": "ない。じゃどうしたらこの不安感は消える",
+      "start_seconds": 350.8,
+      "end_seconds": 357.039
+    },
+    {
+      "text": "のでしょうか?自分のありなままの個性を",
+      "start_seconds": 353.8,
+      "end_seconds": 360.639
+    },
+    {
+      "text": "まず認めること。枠や同じの窮屈さを",
+      "start_seconds": 357.039,
+      "end_seconds": 364.8
+    },
+    {
+      "text": "手放して自分自身を信じた先に私たちは",
+      "start_seconds": 360.639,
+      "end_seconds": 368.24
+    },
+    {
+      "text": "不安から解放され幸せになれると考えてい",
+      "start_seconds": 364.8,
+      "end_seconds": 370.479
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 368.24,
+      "end_seconds": 375.68
+    },
+    {
+      "text": "私は女性で日本人で若者で姫を生という",
+      "start_seconds": 370.479,
+      "end_seconds": 378.479
+    },
+    {
+      "text": "ところに所属していて慶王技塾大学の通信",
+      "start_seconds": 375.68,
+      "end_seconds": 382.72
+    },
+    {
+      "text": "家庭に在していてラオスの像っていう",
+      "start_seconds": 378.479,
+      "end_seconds": 386.08
+    },
+    {
+      "text": "たくさんのカテゴリーに所属している",
+      "start_seconds": 382.72,
+      "end_seconds": 388.59900000000005
+    },
+    {
+      "text": "どんな枠にも入らないただのあちマリナ",
+      "start_seconds": 386.08,
+      "end_seconds": 392.919
+    },
+    {
+      "text": "です。私は私です。",
+      "start_seconds": 388.599,
+      "end_seconds": 396.039
+    },
+    {
+      "text": "今教育の当たり前を問い直す時が来てい",
+      "start_seconds": 392.919,
+      "end_seconds": 399.039
+    },
+    {
+      "text": "ます。今がその時なのだと子供たちが教え",
+      "start_seconds": 396.039,
+      "end_seconds": 402.12
+    },
+    {
+      "text": "てくれています。少子家で子供の数は減っ",
+      "start_seconds": 399.039,
+      "end_seconds": 405.199
+    },
+    {
+      "text": "ているのに不登校の子供の数は割合は増え",
+      "start_seconds": 402.12,
+      "end_seconds": 409.24
+    },
+    {
+      "text": "ている。不登校の増加っていうこの問題は",
+      "start_seconds": 405.199,
+      "end_seconds": 412.84000000000003
+    },
+    {
+      "text": "教育現場だけの問題ではなく社会全体が",
+      "start_seconds": 409.24,
+      "end_seconds": 416.039
+    },
+    {
+      "text": "立ち止まって考えなく考え直さなくては",
+      "start_seconds": 412.84,
+      "end_seconds": 419.96
+    },
+    {
+      "text": "いけません。新しい当たり前が求められて",
+      "start_seconds": 416.039,
+      "end_seconds": 424.12
+    },
+    {
+      "text": "います。だから私は知半島地域率",
+      "start_seconds": 419.96,
+      "end_seconds": 427.52
+    },
+    {
+      "text": "マヌスコレを始めました。これは不登校",
+      "start_seconds": 424.12,
+      "end_seconds": 431.599
+    },
+    {
+      "text": "支援ではありません。障害者の居場所でも",
+      "start_seconds": 427.52,
+      "end_seconds": 433.71999999999997
+    },
+    {
+      "text": "ありません。",
+      "start_seconds": 431.599,
+      "end_seconds": 437.639
+    },
+    {
+      "text": "新しいもう1つの教育です。専門的に言う",
+      "start_seconds": 433.72,
+      "end_seconds": 441.639
+    },
+    {
+      "text": "と市民率というオルタナティブ教育です。",
+      "start_seconds": 437.639,
+      "end_seconds": 446.039
+    },
+    {
+      "text": "私自身中学生時代不登校でした。高校卒業",
+      "start_seconds": 441.639,
+      "end_seconds": 449.52
+    },
+    {
+      "text": "後進学した専門学校は3ヶ月で辞め1年間",
+      "start_seconds": 446.039,
+      "end_seconds": 452.28
+    },
+    {
+      "text": "ほど引きこもりました。どうも社会不適号",
+      "start_seconds": 449.52,
+      "end_seconds": 457.28
+    },
+    {
+      "text": "です。ここ笑うところですよ。",
+      "start_seconds": 452.28,
+      "end_seconds": 460.67999999999995
+    },
+    {
+      "text": "優しい言葉にたくさんの支援に救われた",
+      "start_seconds": 457.28,
+      "end_seconds": 465.11999999999995
+    },
+    {
+      "text": "1人です。だからこそ今に使われている",
+      "start_seconds": 460.68,
+      "end_seconds": 467.40000000000003
+    },
+    {
+      "text": "学校に行かなくてもいいよっていう言葉に",
+      "start_seconds": 465.12,
+      "end_seconds": 471.12
+    },
+    {
+      "text": "少しだけモヤモヤします。優しい言葉なん",
+      "start_seconds": 467.4,
+      "end_seconds": 474.479
+    },
+    {
+      "text": "ですがどこかその場所に聞こえてしまう。",
+      "start_seconds": 471.12,
+      "end_seconds": 477.4
+    },
+    {
+      "text": "だっていつかは社会に出て1人で生きて",
+      "start_seconds": 474.479,
+      "end_seconds": 481.08
+    },
+    {
+      "text": "いかなきゃいけないから。だから一時的に",
+      "start_seconds": 477.4,
+      "end_seconds": 484.08
+    },
+    {
+      "text": "逃げる場所、子供だからと言って甘やかし",
+      "start_seconds": 481.08,
+      "end_seconds": 486.19899999999996
+    },
+    {
+      "text": "てくれる場所を作りたいわけではありませ",
+      "start_seconds": 484.08,
+      "end_seconds": 490.52
+    },
+    {
+      "text": "ん。ありのままの自分を愛する力を育む",
+      "start_seconds": 486.199,
+      "end_seconds": 494.56
+    },
+    {
+      "text": "教育の場を作りたい。社会で生きるのでは",
+      "start_seconds": 490.52,
+      "end_seconds": 498.79999999999995
+    },
+    {
+      "text": "なく社会と生きていきたい。マヌスコレの",
+      "start_seconds": 494.56,
+      "end_seconds": 502.199
+    },
+    {
+      "text": "スコレという言葉は人生において最高に",
+      "start_seconds": 498.8,
+      "end_seconds": 505.44
+    },
+    {
+      "text": "幸福な時間、知的な休み時間という意味の",
+      "start_seconds": 502.199,
+      "end_seconds": 508.199
+    },
+    {
+      "text": "ギリシャ語です。なのですごい分かり",
+      "start_seconds": 505.44,
+      "end_seconds": 510.759
+    },
+    {
+      "text": "やすく学校を作ってますって言うんですが",
+      "start_seconds": 508.199,
+      "end_seconds": 515.719
+    },
+    {
+      "text": "実は先生もいないし宿題も授業もありませ",
+      "start_seconds": 510.759,
+      "end_seconds": 520.839
+    },
+    {
+      "text": "ん。あるのは自由だけ。自由というのは",
+      "start_seconds": 515.719,
+      "end_seconds": 523.6800000000001
+    },
+    {
+      "text": "ただ遊び放けることではありません。自由",
+      "start_seconds": 520.839,
+      "end_seconds": 527.2
+    },
+    {
+      "text": "というのは実は責任を追うことなんです。",
+      "start_seconds": 523.68,
+      "end_seconds": 531.0799999999999
+    },
+    {
+      "text": "こんな言葉があります。責任を負う自由を",
+      "start_seconds": 527.2,
+      "end_seconds": 533.88
+    },
+    {
+      "text": "与えると人はうちに秘めたる能力を発揮",
+      "start_seconds": 531.08,
+      "end_seconds": 537.5600000000001
+    },
+    {
+      "text": "する。責任を追う自由を与えると人はうち",
+      "start_seconds": 533.88,
+      "end_seconds": 540.64
+    },
+    {
+      "text": "に秘めたる能力を発揮する。マノルスコレ",
+      "start_seconds": 537.56,
+      "end_seconds": 544.5189999999999
+    },
+    {
+      "text": "が定義する自由はこれです。誰かの評価も",
+      "start_seconds": 540.64,
+      "end_seconds": 548.04
+    },
+    {
+      "text": "期待しない。当たり前の枠も気にしない。",
+      "start_seconds": 544.519,
+      "end_seconds": 551.279
+    },
+    {
+      "text": "自己決定の機会が、ま、これです。実は",
+      "start_seconds": 548.04,
+      "end_seconds": 555.12
+    },
+    {
+      "text": "幸福感と自己決定日本における実証研究と",
+      "start_seconds": 551.279,
+      "end_seconds": 558.8389999999999
+    },
+    {
+      "text": "いうものによって学歴よりも所得よりも",
+      "start_seconds": 555.12,
+      "end_seconds": 562.16
+    },
+    {
+      "text": "自己決定が幸福に影響を与えているという",
+      "start_seconds": 558.839,
+      "end_seconds": 566.9200000000001
+    },
+    {
+      "text": "ことがそんな研究結果が出ています。",
+      "start_seconds": 562.16,
+      "end_seconds": 570.1999999999999
+    },
+    {
+      "text": "自分で自分の人生の満足度に点数をつけた",
+      "start_seconds": 566.92,
+      "end_seconds": 574.24
+    },
+    {
+      "text": "もの。これを主観的幸福度と言います。",
+      "start_seconds": 570.2,
+      "end_seconds": 577.76
+    },
+    {
+      "text": "世界幸福度ランキング9年連続1位の最も",
+      "start_seconds": 574.24,
+      "end_seconds": 579.72
+    },
+    {
+      "text": "幸福な国、皆さんご存知ですか?",
+      "start_seconds": 577.76,
+      "end_seconds": 582.399
+    },
+    {
+      "text": "フィンランドです。フィンランドの平均",
+      "start_seconds": 579.72,
+      "end_seconds": 587.0400000000001
+    },
+    {
+      "text": "回答点数は7.7点、日本の平均は6.2",
+      "start_seconds": 582.399,
+      "end_seconds": 590.68
+    },
+    {
+      "text": "点。マヌスコレと全く同じカリキュラムの",
+      "start_seconds": 587.04,
+      "end_seconds": 595.04
+    },
+    {
+      "text": "セ戸市民率、セ戸作るスクールでは私が",
+      "start_seconds": 590.68,
+      "end_seconds": 598.279
+    },
+    {
+      "text": "昨年1年間調査研究を行ったところ、テト",
+      "start_seconds": 595.04,
+      "end_seconds": 601.7199999999999
+    },
+    {
+      "text": "作るスクールに通う子供たちの平均幸福度",
+      "start_seconds": 598.279,
+      "end_seconds": 606.24
+    },
+    {
+      "text": "の回答は8.09点でした。つまり世界",
+      "start_seconds": 601.72,
+      "end_seconds": 609.12
+    },
+    {
+      "text": "一服な国、フィンランドの人たちよりも",
+      "start_seconds": 606.24,
+      "end_seconds": 612.519
+    },
+    {
+      "text": "幸福に生きていました。ということは、",
+      "start_seconds": 609.12,
+      "end_seconds": 615.92
+    },
+    {
+      "text": "自己決定が当たり前の子供たちは因数分解",
+      "start_seconds": 612.519,
+      "end_seconds": 619.8
+    },
+    {
+      "text": "も枕の総師もやったことがないけれど幸せ",
+      "start_seconds": 615.92,
+      "end_seconds": 624.04
+    },
+    {
+      "text": "だということが明らかになっています。",
+      "start_seconds": 619.8,
+      "end_seconds": 627.92
+    },
+    {
+      "text": "一等将遇、万と彫刻。これは私の好きな",
+      "start_seconds": 624.04,
+      "end_seconds": 631.3199999999999
+    },
+    {
+      "text": "最長の言葉です。1つの明りは一宮しか",
+      "start_seconds": 627.92,
+      "end_seconds": 634.76
+    },
+    {
+      "text": "照らすことができない。でも満の明りと",
+      "start_seconds": 631.32,
+      "end_seconds": 638.279
+    },
+    {
+      "text": "なれば国をも照らすという意味です。",
+      "start_seconds": 634.76,
+      "end_seconds": 641.48
+    },
+    {
+      "text": "私たち市民率はよし、世界を大きく変える",
+      "start_seconds": 638.279,
+      "end_seconds": 644.4399999999999
+    },
+    {
+      "text": "ぞとか日本の教育変えるぞということを",
+      "start_seconds": 641.48,
+      "end_seconds": 647.88
+    },
+    {
+      "text": "目指してはいません。1人1人が自分の",
+      "start_seconds": 644.44,
+      "end_seconds": 651.6800000000001
+    },
+    {
+      "text": "人生どう行きたいと問い直して動き出し、",
+      "start_seconds": 647.88,
+      "end_seconds": 655.2
+    },
+    {
+      "text": "その波紋が少しずつ広がっていく。そう",
+      "start_seconds": 651.68,
+      "end_seconds": 658.4399999999999
+    },
+    {
+      "text": "すると結果として社会は変わらざるを得",
+      "start_seconds": 655.2,
+      "end_seconds": 661.36
+    },
+    {
+      "text": "ないと考えています。",
+      "start_seconds": 658.44,
+      "end_seconds": 663.7600000000001
+    },
+    {
+      "text": "マノルスコレの子供たちが私が",
+      "start_seconds": 661.36,
+      "end_seconds": 665.8000000000001
+    },
+    {
+      "text": "めちゃくちゃ楽しくむちゃくちゃ幸福に",
+      "start_seconds": 663.76,
+      "end_seconds": 668.8
+    },
+    {
+      "text": "生きていたら何かしら社会に影響を与え",
+      "start_seconds": 665.8,
+      "end_seconds": 672.399
+    },
+    {
+      "text": "られるんじゃない。そんな小さな積み重ね",
+      "start_seconds": 668.8,
+      "end_seconds": 676.88
+    },
+    {
+      "text": "の先に気づけば世界が面白くなっている。",
+      "start_seconds": 672.399,
+      "end_seconds": 680.399
+    },
+    {
+      "text": "そんな未来を描いています。",
+      "start_seconds": 676.88,
+      "end_seconds": 683.519
+    },
+    {
+      "text": "私は教育の当たり前を問い直したい。私が",
+      "start_seconds": 680.399,
+      "end_seconds": 689.16
+    },
+    {
+      "text": "照らす一宮はここです。では皆さんは何を",
+      "start_seconds": 683.519,
+      "end_seconds": 692.6
+    },
+    {
+      "text": "問い直しますか?",
+      "start_seconds": 689.16,
+      "end_seconds": 696.6
+    },
+    {
+      "text": "誰を?どこを照らしますか?",
+      "start_seconds": 692.6,
+      "end_seconds": 699.9590000000001
+    },
+    {
+      "text": "私が個々ができることは限られています。",
+      "start_seconds": 696.6,
+      "end_seconds": 702.639
+    },
+    {
+      "text": "ですが、私、この場にいる皆さん、",
+      "start_seconds": 699.959,
+      "end_seconds": 706.76
+    },
+    {
+      "text": "1人1人ができることを行動していけば国",
+      "start_seconds": 702.639,
+      "end_seconds": 711.0
+    },
+    {
+      "text": "をも照らす。私はそう信じています。さ、",
+      "start_seconds": 706.76,
+      "end_seconds": 713.72
+    },
+    {
+      "text": "皆さんちゃんと行動に移してくださいね。",
+      "start_seconds": 711.0,
+      "end_seconds": 716.56
+    },
+    {
+      "text": "私の話を聞いて終わりにはして欲しくあり",
+      "start_seconds": 713.72,
+      "end_seconds": 720.279
+    },
+    {
+      "text": "ません。是非一緒に素晴らしい未来を作り",
+      "start_seconds": 716.56,
+      "end_seconds": 723.7829999999999
+    },
+    {
+      "text": "ましょう。ありがとうございました。",
+      "start_seconds": 720.279,
+      "end_seconds": 725.803
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 723.783,
+      "end_seconds": 725.803
+    }
+  ],
+  "display_captions": [
+    {
+      "text": "[音楽]",
+      "start_seconds": 3.274,
+      "end_seconds": 5.2940000000000005,
+      "id": "PTEUKAz1NKk-display-0001",
+      "segment_id": "PTEUKAz1NKk-ja-0001"
+    },
+    {
+      "text": "皆さん、こんにちは。突然ですが、右手を",
+      "start_seconds": 10.2,
+      "end_seconds": 13.639,
+      "id": "PTEUKAz1NKk-display-0002",
+      "segment_id": "PTEUKAz1NKk-ja-0002"
+    },
+    {
+      "text": "グーにして私が下ろしてくださいという",
+      "start_seconds": 13.639,
+      "end_seconds": 16.4,
+      "id": "PTEUKAz1NKk-display-0003",
+      "segment_id": "PTEUKAz1NKk-ja-0002"
+    },
+    {
+      "text": "まで高く上げ続けていただけますか?さあ",
+      "start_seconds": 16.4,
+      "end_seconds": 19.08,
+      "id": "PTEUKAz1NKk-display-0004",
+      "segment_id": "PTEUKAz1NKk-ja-0002"
+    },
+    {
+      "text": "、あげてくださいね。はい。しっかりあげ",
+      "start_seconds": 19.08,
+      "end_seconds": 21.439,
+      "id": "PTEUKAz1NKk-display-0005",
+      "segment_id": "PTEUKAz1NKk-ja-0002"
+    },
+    {
+      "text": "てくださいね。改めまして、あ、マリナ",
+      "start_seconds": 21.439,
+      "end_seconds": 25.32,
+      "id": "PTEUKAz1NKk-display-0006",
+      "segment_id": "PTEUKAz1NKk-ja-0003"
+    },
+    {
+      "text": "です。私は一般的に不登校や発達障害と",
+      "start_seconds": 25.32,
+      "end_seconds": 29.599,
+      "id": "PTEUKAz1NKk-display-0007",
+      "segment_id": "PTEUKAz1NKk-ja-0003"
+    },
+    {
+      "text": "言われる子供たちに必要なのは支援の場",
+      "start_seconds": 29.599,
+      "end_seconds": 33.239,
+      "id": "PTEUKAz1NKk-display-0008",
+      "segment_id": "PTEUKAz1NKk-ja-0003"
+    },
+    {
+      "text": "だけではなく共に上き共に育つそんな場が",
+      "start_seconds": 33.239,
+      "end_seconds": 37.36,
+      "id": "PTEUKAz1NKk-display-0009",
+      "segment_id": "PTEUKAz1NKk-ja-0004"
+    },
+    {
+      "text": "必要だと感じ特定比り活動法人奇妙生ぬを",
+      "start_seconds": 37.36,
+      "end_seconds": 41.559,
+      "id": "PTEUKAz1NKk-display-0010",
+      "segment_id": "PTEUKAz1NKk-ja-0004"
+    },
+    {
+      "text": "発揮しました。皆さんは不登校とか発達",
+      "start_seconds": 41.559,
+      "end_seconds": 45.32,
+      "id": "PTEUKAz1NKk-display-0011",
+      "segment_id": "PTEUKAz1NKk-ja-0005"
+    },
+    {
+      "text": "障害にどんなイメージを持っていますか?",
+      "start_seconds": 45.32,
+      "end_seconds": 49.079,
+      "id": "PTEUKAz1NKk-display-0012",
+      "segment_id": "PTEUKAz1NKk-ja-0005"
+    },
+    {
+      "text": "助けてあげなきゃいけない弱い人でしょう",
+      "start_seconds": 49.079,
+      "end_seconds": 52.52,
+      "id": "PTEUKAz1NKk-display-0013",
+      "segment_id": "PTEUKAz1NKk-ja-0006"
+    },
+    {
+      "text": "か?多くの人が弱いものを助け救おうとし",
+      "start_seconds": 52.52,
+      "end_seconds": 57.039,
+      "id": "PTEUKAz1NKk-display-0014",
+      "segment_id": "PTEUKAz1NKk-ja-0006"
+    },
+    {
+      "text": "ています。ただ私からすると全ての人が",
+      "start_seconds": 57.039,
+      "end_seconds": 61.64,
+      "id": "PTEUKAz1NKk-display-0015",
+      "segment_id": "PTEUKAz1NKk-ja-0007"
+    },
+    {
+      "text": "そもそも自分らしく生きる力を持っている",
+      "start_seconds": 61.64,
+      "end_seconds": 64.159,
+      "id": "PTEUKAz1NKk-display-0016",
+      "segment_id": "PTEUKAz1NKk-ja-0007"
+    },
+    {
+      "text": "。ありのまま生きる力を持っていると考え",
+      "start_seconds": 64.159,
+      "end_seconds": 67.56,
+      "id": "PTEUKAz1NKk-display-0017",
+      "segment_id": "PTEUKAz1NKk-ja-0007"
+    },
+    {
+      "text": "、自ら伸びく環境として地半島地域",
+      "start_seconds": 67.56,
+      "end_seconds": 72.439,
+      "id": "PTEUKAz1NKk-display-0018",
+      "segment_id": "PTEUKAz1NKk-ja-0008"
+    },
+    {
+      "text": "バノルスコレを発揮し運営しています。皆",
+      "start_seconds": 72.439,
+      "end_seconds": 75.96,
+      "id": "PTEUKAz1NKk-display-0019",
+      "segment_id": "PTEUKAz1NKk-ja-0008"
+    },
+    {
+      "text": "さんそろそろ手が疲れてきませんか?私は",
+      "start_seconds": 75.96,
+      "end_seconds": 79.84,
+      "id": "PTEUKAz1NKk-display-0020",
+      "segment_id": "PTEUKAz1NKk-ja-0009"
+    },
+    {
+      "text": "手が疲れてきました。手を下ろして",
+      "start_seconds": 79.84,
+      "end_seconds": 82.24,
+      "id": "PTEUKAz1NKk-display-0021",
+      "segment_id": "PTEUKAz1NKk-ja-0009"
+    },
+    {
+      "text": "ください。",
+      "start_seconds": 82.24,
+      "end_seconds": 84.6,
+      "id": "PTEUKAz1NKk-display-0022",
+      "segment_id": "PTEUKAz1NKk-ja-0009"
+    },
+    {
+      "text": "では私たちはどうして理由もなく全く知ら",
+      "start_seconds": 84.6,
+      "end_seconds": 89.6,
+      "id": "PTEUKAz1NKk-display-0023",
+      "segment_id": "PTEUKAz1NKk-ja-0010"
+    },
+    {
+      "text": "ない前に立っている人の指示に従って",
+      "start_seconds": 89.6,
+      "end_seconds": 92.399,
+      "id": "PTEUKAz1NKk-display-0024",
+      "segment_id": "PTEUKAz1NKk-ja-0010"
+    },
+    {
+      "text": "しまうのでしょうか?",
+      "start_seconds": 92.399,
+      "end_seconds": 94.68,
+      "id": "PTEUKAz1NKk-display-0025",
+      "segment_id": "PTEUKAz1NKk-ja-0010"
+    },
+    {
+      "text": "これ。あ、そうです。すいません。あげ",
+      "start_seconds": 94.68,
+      "end_seconds": 96.32,
+      "id": "PTEUKAz1NKk-display-0026",
+      "segment_id": "PTEUKAz1NKk-ja-0011"
+    },
+    {
+      "text": "させといてすみ[笑い]ません。これ",
+      "start_seconds": 96.32,
+      "end_seconds": 98.36,
+      "id": "PTEUKAz1NKk-display-0027",
+      "segment_id": "PTEUKAz1NKk-ja-0011"
+    },
+    {
+      "text": "すごくないですか?何がすごいかって言う",
+      "start_seconds": 98.36,
+      "end_seconds": 101.119,
+      "id": "PTEUKAz1NKk-display-0028",
+      "segment_id": "PTEUKAz1NKk-ja-0011"
+    },
+    {
+      "text": "と、忍耐強さや強調性っていう素晴らしい",
+      "start_seconds": 101.119,
+      "end_seconds": 105.52,
+      "id": "PTEUKAz1NKk-display-0029",
+      "segment_id": "PTEUKAz1NKk-ja-0011"
+    },
+    {
+      "text": "力を皆さん養ってこられたんです。でも",
+      "start_seconds": 105.52,
+      "end_seconds": 109.28,
+      "id": "PTEUKAz1NKk-display-0030",
+      "segment_id": "PTEUKAz1NKk-ja-0012"
+    },
+    {
+      "text": "もし今のこの指示が間違っていたら自分に",
+      "start_seconds": 109.28,
+      "end_seconds": 114.079,
+      "id": "PTEUKAz1NKk-display-0031",
+      "segment_id": "PTEUKAz1NKk-ja-0012"
+    },
+    {
+      "text": "は合わないものだったとしたらどう",
+      "start_seconds": 114.079,
+      "end_seconds": 116.399,
+      "id": "PTEUKAz1NKk-display-0032",
+      "segment_id": "PTEUKAz1NKk-ja-0012"
+    },
+    {
+      "text": "でしょう?",
+      "start_seconds": 116.399,
+      "end_seconds": 118.439,
+      "id": "PTEUKAz1NKk-display-0033",
+      "segment_id": "PTEUKAz1NKk-ja-0013"
+    },
+    {
+      "text": "今の時代知識に関しては分からないことが",
+      "start_seconds": 118.439,
+      "end_seconds": 121.84,
+      "id": "PTEUKAz1NKk-display-0034",
+      "segment_id": "PTEUKAz1NKk-ja-0014"
+    },
+    {
+      "text": "あればAIに聞けば何でも答えてくれます",
+      "start_seconds": 121.84,
+      "end_seconds": 124.479,
+      "id": "PTEUKAz1NKk-display-0035",
+      "segment_id": "PTEUKAz1NKk-ja-0014"
+    },
+    {
+      "text": "。でもちょっと婚活をしてるんですけど",
+      "start_seconds": 124.479,
+      "end_seconds": 127.28,
+      "id": "PTEUKAz1NKk-display-0036",
+      "segment_id": "PTEUKAz1NKk-ja-0014"
+    },
+    {
+      "text": "婚活をしている私の結婚相手太郎君と次郎",
+      "start_seconds": 127.28,
+      "end_seconds": 131.039,
+      "id": "PTEUKAz1NKk-display-0037",
+      "segment_id": "PTEUKAz1NKk-ja-0015"
+    },
+    {
+      "text": "君どっちがいいっていう問いにAIは答え",
+      "start_seconds": 131.039,
+      "end_seconds": 134.239,
+      "id": "PTEUKAz1NKk-display-0038",
+      "segment_id": "PTEUKAz1NKk-ja-0015"
+    },
+    {
+      "text": "てくれません。仮に答えれたとしても、",
+      "start_seconds": 134.239,
+      "end_seconds": 137.959,
+      "id": "PTEUKAz1NKk-display-0039",
+      "segment_id": "PTEUKAz1NKk-ja-0015"
+    },
+    {
+      "text": "そのAIの出した答え通りに生きる気は",
+      "start_seconds": 137.959,
+      "end_seconds": 140.8,
+      "id": "PTEUKAz1NKk-display-0040",
+      "segment_id": "PTEUKAz1NKk-ja-0016"
+    },
+    {
+      "text": "妄当ありません。きっと私は自己決定した",
+      "start_seconds": 140.8,
+      "end_seconds": 145.599,
+      "id": "PTEUKAz1NKk-display-0041",
+      "segment_id": "PTEUKAz1NKk-ja-0016"
+    },
+    {
+      "text": "結果でこそ納得のいく人生だと考えてい",
+      "start_seconds": 145.599,
+      "end_seconds": 149.0,
+      "id": "PTEUKAz1NKk-display-0042",
+      "segment_id": "PTEUKAz1NKk-ja-0016"
+    },
+    {
+      "text": "ます。これから必要なのはたくさんの知識",
+      "start_seconds": 149.0,
+      "end_seconds": 152.72,
+      "id": "PTEUKAz1NKk-display-0043",
+      "segment_id": "PTEUKAz1NKk-ja-0017"
+    },
+    {
+      "text": "を覚えることだけでもなく誰かの指示通り",
+      "start_seconds": 152.72,
+      "end_seconds": 157.48,
+      "id": "PTEUKAz1NKk-display-0044",
+      "segment_id": "PTEUKAz1NKk-ja-0017"
+    },
+    {
+      "text": "に生きることだけでもありません。自分に",
+      "start_seconds": 157.48,
+      "end_seconds": 161.28,
+      "id": "PTEUKAz1NKk-display-0045",
+      "segment_id": "PTEUKAz1NKk-ja-0018"
+    },
+    {
+      "text": "とっての正解を自分で考えて自分の意思で",
+      "start_seconds": 161.28,
+      "end_seconds": 165.72,
+      "id": "PTEUKAz1NKk-display-0046",
+      "segment_id": "PTEUKAz1NKk-ja-0018"
+    },
+    {
+      "text": "決定していく個性を大切にしながら",
+      "start_seconds": 165.72,
+      "end_seconds": 169.159,
+      "id": "PTEUKAz1NKk-display-0047",
+      "segment_id": "PTEUKAz1NKk-ja-0018"
+    },
+    {
+      "text": "生き抜く力です。それはつまり",
+      "start_seconds": 169.159,
+      "end_seconds": 172.879,
+      "id": "PTEUKAz1NKk-display-0048",
+      "segment_id": "PTEUKAz1NKk-ja-0019"
+    },
+    {
+      "text": "当たり前を問い直すことだと私は考えてい",
+      "start_seconds": 172.879,
+      "end_seconds": 175.72,
+      "id": "PTEUKAz1NKk-display-0049",
+      "segment_id": "PTEUKAz1NKk-ja-0019"
+    },
+    {
+      "text": "ます。これって本当にこれでいいんだっけ",
+      "start_seconds": 175.72,
+      "end_seconds": 178.68,
+      "id": "PTEUKAz1NKk-display-0050",
+      "segment_id": "PTEUKAz1NKk-ja-0019"
+    },
+    {
+      "text": "?と立ち止まって自分の頭で考えること。",
+      "start_seconds": 178.68,
+      "end_seconds": 182.879,
+      "id": "PTEUKAz1NKk-display-0051",
+      "segment_id": "PTEUKAz1NKk-ja-0020"
+    },
+    {
+      "text": "私たちは道端に落ちてるドーナツを",
+      "start_seconds": 182.879,
+      "end_seconds": 185.319,
+      "id": "PTEUKAz1NKk-display-0052",
+      "segment_id": "PTEUKAz1NKk-ja-0021"
+    },
+    {
+      "text": "いきなりパクって食べないですよね。食べ",
+      "start_seconds": 185.319,
+      "end_seconds": 188.04,
+      "id": "PTEUKAz1NKk-display-0053",
+      "segment_id": "PTEUKAz1NKk-ja-0021"
+    },
+    {
+      "text": "ないですよね。",
+      "start_seconds": 188.04,
+      "end_seconds": 190.68,
+      "id": "PTEUKAz1NKk-display-0054",
+      "segment_id": "PTEUKAz1NKk-ja-0021"
+    },
+    {
+      "text": "と今日は初めてあった知らない人を",
+      "start_seconds": 190.68,
+      "end_seconds": 193.0,
+      "id": "PTEUKAz1NKk-display-0055",
+      "segment_id": "PTEUKAz1NKk-ja-0022"
+    },
+    {
+      "text": "いきなり信じますか?信じないですよね。",
+      "start_seconds": 193.0,
+      "end_seconds": 196.64,
+      "id": "PTEUKAz1NKk-display-0056",
+      "segment_id": "PTEUKAz1NKk-ja-0022"
+    },
+    {
+      "text": "でも教育を受ける立場ってなった瞬間",
+      "start_seconds": 196.64,
+      "end_seconds": 201.12,
+      "id": "PTEUKAz1NKk-display-0057",
+      "segment_id": "PTEUKAz1NKk-ja-0023"
+    },
+    {
+      "text": "鵜呑みにするこう傾向がありませんか?",
+      "start_seconds": 201.12,
+      "end_seconds": 204.44,
+      "id": "PTEUKAz1NKk-display-0058",
+      "segment_id": "PTEUKAz1NKk-ja-0023"
+    },
+    {
+      "text": "こう正解を出さなきゃとかちゃんと全部",
+      "start_seconds": 204.44,
+      "end_seconds": 207.4,
+      "id": "PTEUKAz1NKk-display-0059",
+      "segment_id": "PTEUKAz1NKk-ja-0024"
+    },
+    {
+      "text": "覚えなきゃっていう気持ちになりませんか",
+      "start_seconds": 207.4,
+      "end_seconds": 209.319,
+      "id": "PTEUKAz1NKk-display-0060",
+      "segment_id": "PTEUKAz1NKk-ja-0024"
+    },
+    {
+      "text": "?",
+      "start_seconds": 209.319,
+      "end_seconds": 211.48,
+      "id": "PTEUKAz1NKk-display-0061",
+      "segment_id": "PTEUKAz1NKk-ja-0024"
+    },
+    {
+      "text": "因数分解と枕の送、これらは皆さんが中学",
+      "start_seconds": 211.48,
+      "end_seconds": 216.04,
+      "id": "PTEUKAz1NKk-display-0062",
+      "segment_id": "PTEUKAz1NKk-ja-0025"
+    },
+    {
+      "text": "生になると必ず覚えることの一部です。で",
+      "start_seconds": 216.04,
+      "end_seconds": 219.879,
+      "id": "PTEUKAz1NKk-display-0063",
+      "segment_id": "PTEUKAz1NKk-ja-0025"
+    },
+    {
+      "text": "は、因数分解最近しましたか?",
+      "start_seconds": 219.879,
+      "end_seconds": 224.92,
+      "id": "PTEUKAz1NKk-display-0064",
+      "segment_id": "PTEUKAz1NKk-ja-0026"
+    },
+    {
+      "text": "全ての人に必要だと思いますか?ま、中に",
+      "start_seconds": 224.92,
+      "end_seconds": 228.159,
+      "id": "PTEUKAz1NKk-display-0065",
+      "segment_id": "PTEUKAz1NKk-ja-0027"
+    },
+    {
+      "text": "は必要な職業もあると思います。では、枕",
+      "start_seconds": 228.159,
+      "end_seconds": 230.84,
+      "id": "PTEUKAz1NKk-display-0066",
+      "segment_id": "PTEUKAz1NKk-ja-0027"
+    },
+    {
+      "text": "の春は明けぼから冬は勤めてまで完璧に",
+      "start_seconds": 230.84,
+      "end_seconds": 234.68,
+      "id": "PTEUKAz1NKk-display-0067",
+      "segment_id": "PTEUKAz1NKk-ja-0027"
+    },
+    {
+      "text": "暗証できないと生きるのに困るって人どれ",
+      "start_seconds": 234.68,
+      "end_seconds": 238.04,
+      "id": "PTEUKAz1NKk-display-0068",
+      "segment_id": "PTEUKAz1NKk-ja-0028"
+    },
+    {
+      "text": "ぐらいいますか?さらに因数分解と枕の",
+      "start_seconds": 238.04,
+      "end_seconds": 242.2,
+      "id": "PTEUKAz1NKk-display-0069",
+      "segment_id": "PTEUKAz1NKk-ja-0028"
+    },
+    {
+      "text": "両方とも幸せに生きるのに絶対必要だって",
+      "start_seconds": 242.2,
+      "end_seconds": 245.68,
+      "id": "PTEUKAz1NKk-display-0070",
+      "segment_id": "PTEUKAz1NKk-ja-0028"
+    },
+    {
+      "text": "いう人はどれぐらいいますか?",
+      "start_seconds": 245.68,
+      "end_seconds": 250.519,
+      "id": "PTEUKAz1NKk-display-0071",
+      "segment_id": "PTEUKAz1NKk-ja-0029"
+    },
+    {
+      "text": "全員が同じでなくてもいい。全く同じよう",
+      "start_seconds": 250.76,
+      "end_seconds": 254.0,
+      "id": "PTEUKAz1NKk-display-0072",
+      "segment_id": "PTEUKAz1NKk-ja-0030"
+    },
+    {
+      "text": "に、全く同じ内容を全く同じようにできる",
+      "start_seconds": 254.0,
+      "end_seconds": 256.919,
+      "id": "PTEUKAz1NKk-display-0073",
+      "segment_id": "PTEUKAz1NKk-ja-0030"
+    },
+    {
+      "text": "必要はないというのが私の考えです。",
+      "start_seconds": 256.919,
+      "end_seconds": 260.519,
+      "id": "PTEUKAz1NKk-display-0074",
+      "segment_id": "PTEUKAz1NKk-ja-0030"
+    },
+    {
+      "text": "なぜ私たちはこんなに正解や同じという",
+      "start_seconds": 260.519,
+      "end_seconds": 264.16,
+      "id": "PTEUKAz1NKk-display-0075",
+      "segment_id": "PTEUKAz1NKk-ja-0031"
+    },
+    {
+      "text": "ものを求めてしまうのでしょうか?一言で",
+      "start_seconds": 264.16,
+      "end_seconds": 267.4,
+      "id": "PTEUKAz1NKk-display-0076",
+      "segment_id": "PTEUKAz1NKk-ja-0031"
+    },
+    {
+      "text": "言うとこれが1番安心なんです。就職活動",
+      "start_seconds": 267.4,
+      "end_seconds": 271.36,
+      "id": "PTEUKAz1NKk-display-0077",
+      "segment_id": "PTEUKAz1NKk-ja-0031"
+    },
+    {
+      "text": "。みんなと同じ黒い紙、みんなと同じ黒い",
+      "start_seconds": 271.36,
+      "end_seconds": 274.8,
+      "id": "PTEUKAz1NKk-display-0078",
+      "segment_id": "PTEUKAz1NKk-ja-0032"
+    },
+    {
+      "text": "スーツ。これが1番安心ですよね。",
+      "start_seconds": 274.8,
+      "end_seconds": 277.68,
+      "id": "PTEUKAz1NKk-display-0079",
+      "segment_id": "PTEUKAz1NKk-ja-0032"
+    },
+    {
+      "text": "わざわざ奇末な格好で挑むなんて危険な",
+      "start_seconds": 277.68,
+      "end_seconds": 280.479,
+      "id": "PTEUKAz1NKk-display-0080",
+      "segment_id": "PTEUKAz1NKk-ja-0033"
+    },
+    {
+      "text": "掛けじゃないですか?だから当たり前の",
+      "start_seconds": 280.479,
+      "end_seconds": 283.72,
+      "id": "PTEUKAz1NKk-display-0081",
+      "segment_id": "PTEUKAz1NKk-ja-0033"
+    },
+    {
+      "text": "レールに乗ってさえいれば安心できるん",
+      "start_seconds": 283.72,
+      "end_seconds": 286.12,
+      "id": "PTEUKAz1NKk-display-0082",
+      "segment_id": "PTEUKAz1NKk-ja-0033"
+    },
+    {
+      "text": "です。みんなが目指してる有名な大学、",
+      "start_seconds": 286.12,
+      "end_seconds": 289.0,
+      "id": "PTEUKAz1NKk-display-0083",
+      "segment_id": "PTEUKAz1NKk-ja-0033"
+    },
+    {
+      "text": "大きな会社、たくさんのお金がある。これ",
+      "start_seconds": 289.0,
+      "end_seconds": 291.52,
+      "id": "PTEUKAz1NKk-display-0084",
+      "segment_id": "PTEUKAz1NKk-ja-0034"
+    },
+    {
+      "text": "はこれで素晴らしいです。でも自分の個性",
+      "start_seconds": 291.52,
+      "end_seconds": 295.28,
+      "id": "PTEUKAz1NKk-display-0085",
+      "segment_id": "PTEUKAz1NKk-ja-0034"
+    },
+    {
+      "text": "を押し殺して当たり前の安心だけを望んだ",
+      "start_seconds": 295.28,
+      "end_seconds": 298.6,
+      "id": "PTEUKAz1NKk-display-0086",
+      "segment_id": "PTEUKAz1NKk-ja-0034"
+    },
+    {
+      "text": "先には何が待っているのでしょうか?",
+      "start_seconds": 298.6,
+      "end_seconds": 302.919,
+      "id": "PTEUKAz1NKk-display-0087",
+      "segment_id": "PTEUKAz1NKk-ja-0035"
+    },
+    {
+      "text": "これは日本を含めた4カ国の高校生を対象",
+      "start_seconds": 302.919,
+      "end_seconds": 306.32,
+      "id": "PTEUKAz1NKk-display-0088",
+      "segment_id": "PTEUKAz1NKk-ja-0036"
+    },
+    {
+      "text": "に行った調査です。この調査結果では日本",
+      "start_seconds": 306.32,
+      "end_seconds": 309.919,
+      "id": "PTEUKAz1NKk-display-0089",
+      "segment_id": "PTEUKAz1NKk-ja-0036"
+    },
+    {
+      "text": "の高校生の78%が将来に不安を感じて",
+      "start_seconds": 309.919,
+      "end_seconds": 314.24,
+      "id": "PTEUKAz1NKk-display-0090",
+      "segment_id": "PTEUKAz1NKk-ja-0036"
+    },
+    {
+      "text": "いるということが明らかになっています。",
+      "start_seconds": 314.24,
+      "end_seconds": 316.96,
+      "id": "PTEUKAz1NKk-display-0091",
+      "segment_id": "PTEUKAz1NKk-ja-0037"
+    },
+    {
+      "text": "また他の国と比べても日本高いですよね。",
+      "start_seconds": 316.96,
+      "end_seconds": 320.84,
+      "id": "PTEUKAz1NKk-display-0092",
+      "segment_id": "PTEUKAz1NKk-ja-0038"
+    },
+    {
+      "text": "つまり日本の若者は他国と比べても将来に",
+      "start_seconds": 320.84,
+      "end_seconds": 325.039,
+      "id": "PTEUKAz1NKk-display-0093",
+      "segment_id": "PTEUKAz1NKk-ja-0039"
+    },
+    {
+      "text": "不安感を強く抱いているということが",
+      "start_seconds": 325.039,
+      "end_seconds": 327.28,
+      "id": "PTEUKAz1NKk-display-0094",
+      "segment_id": "PTEUKAz1NKk-ja-0039"
+    },
+    {
+      "text": "明らかになっています。みと同じような",
+      "start_seconds": 327.28,
+      "end_seconds": 332.08,
+      "id": "PTEUKAz1NKk-display-0095",
+      "segment_id": "PTEUKAz1NKk-ja-0039"
+    },
+    {
+      "text": "安心感を得るために頑張って毎日学校に",
+      "start_seconds": 332.08,
+      "end_seconds": 335.12,
+      "id": "PTEUKAz1NKk-display-0096",
+      "segment_id": "PTEUKAz1NKk-ja-0040"
+    },
+    {
+      "text": "行って頑張って勉強をして安心したくて",
+      "start_seconds": 335.12,
+      "end_seconds": 337.72,
+      "id": "PTEUKAz1NKk-display-0097",
+      "segment_id": "PTEUKAz1NKk-ja-0040"
+    },
+    {
+      "text": "やっているのに不安感は消えなくてもがい",
+      "start_seconds": 337.72,
+      "end_seconds": 340.16,
+      "id": "PTEUKAz1NKk-display-0098",
+      "segment_id": "PTEUKAz1NKk-ja-0040"
+    },
+    {
+      "text": "てる。では当たり前の枠に入ろうとすれば",
+      "start_seconds": 340.16,
+      "end_seconds": 345.24,
+      "id": "PTEUKAz1NKk-display-0099",
+      "segment_id": "PTEUKAz1NKk-ja-0041"
+    },
+    {
+      "text": "するほどみんなと違う部分を自分の中に",
+      "start_seconds": 345.24,
+      "end_seconds": 347.919,
+      "id": "PTEUKAz1NKk-display-0100",
+      "segment_id": "PTEUKAz1NKk-ja-0041"
+    },
+    {
+      "text": "見つけてどんどんどんどんその不安は消え",
+      "start_seconds": 347.919,
+      "end_seconds": 350.8,
+      "id": "PTEUKAz1NKk-display-0101",
+      "segment_id": "PTEUKAz1NKk-ja-0041"
+    },
+    {
+      "text": "ない。じゃどうしたらこの不安感は消える",
+      "start_seconds": 350.8,
+      "end_seconds": 353.8,
+      "id": "PTEUKAz1NKk-display-0102",
+      "segment_id": "PTEUKAz1NKk-ja-0042"
+    },
+    {
+      "text": "のでしょうか?自分のありなままの個性を",
+      "start_seconds": 353.8,
+      "end_seconds": 357.039,
+      "id": "PTEUKAz1NKk-display-0103",
+      "segment_id": "PTEUKAz1NKk-ja-0042"
+    },
+    {
+      "text": "まず認めること。枠や同じの窮屈さを",
+      "start_seconds": 357.039,
+      "end_seconds": 360.639,
+      "id": "PTEUKAz1NKk-display-0104",
+      "segment_id": "PTEUKAz1NKk-ja-0042"
+    },
+    {
+      "text": "手放して自分自身を信じた先に私たちは",
+      "start_seconds": 360.639,
+      "end_seconds": 364.8,
+      "id": "PTEUKAz1NKk-display-0105",
+      "segment_id": "PTEUKAz1NKk-ja-0043"
+    },
+    {
+      "text": "不安から解放され幸せになれると考えてい",
+      "start_seconds": 364.8,
+      "end_seconds": 368.24,
+      "id": "PTEUKAz1NKk-display-0106",
+      "segment_id": "PTEUKAz1NKk-ja-0043"
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 368.24,
+      "end_seconds": 370.479,
+      "id": "PTEUKAz1NKk-display-0107",
+      "segment_id": "PTEUKAz1NKk-ja-0043"
+    },
+    {
+      "text": "私は女性で日本人で若者で姫を生という",
+      "start_seconds": 370.479,
+      "end_seconds": 375.68,
+      "id": "PTEUKAz1NKk-display-0108",
+      "segment_id": "PTEUKAz1NKk-ja-0044"
+    },
+    {
+      "text": "ところに所属していて慶王技塾大学の通信",
+      "start_seconds": 375.68,
+      "end_seconds": 378.479,
+      "id": "PTEUKAz1NKk-display-0109",
+      "segment_id": "PTEUKAz1NKk-ja-0044"
+    },
+    {
+      "text": "家庭に在していてラオスの像っていう",
+      "start_seconds": 378.479,
+      "end_seconds": 382.72,
+      "id": "PTEUKAz1NKk-display-0110",
+      "segment_id": "PTEUKAz1NKk-ja-0045"
+    },
+    {
+      "text": "たくさんのカテゴリーに所属している",
+      "start_seconds": 382.72,
+      "end_seconds": 386.08,
+      "id": "PTEUKAz1NKk-display-0111",
+      "segment_id": "PTEUKAz1NKk-ja-0045"
+    },
+    {
+      "text": "どんな枠にも入らないただのあちマリナ",
+      "start_seconds": 386.08,
+      "end_seconds": 388.599,
+      "id": "PTEUKAz1NKk-display-0112",
+      "segment_id": "PTEUKAz1NKk-ja-0045"
+    },
+    {
+      "text": "です。私は私です。",
+      "start_seconds": 388.599,
+      "end_seconds": 392.919,
+      "id": "PTEUKAz1NKk-display-0113",
+      "segment_id": "PTEUKAz1NKk-ja-0046"
+    },
+    {
+      "text": "今教育の当たり前を問い直す時が来てい",
+      "start_seconds": 392.919,
+      "end_seconds": 396.039,
+      "id": "PTEUKAz1NKk-display-0114",
+      "segment_id": "PTEUKAz1NKk-ja-0047"
+    },
+    {
+      "text": "ます。今がその時なのだと子供たちが教え",
+      "start_seconds": 396.039,
+      "end_seconds": 399.039,
+      "id": "PTEUKAz1NKk-display-0115",
+      "segment_id": "PTEUKAz1NKk-ja-0047"
+    },
+    {
+      "text": "てくれています。少子家で子供の数は減っ",
+      "start_seconds": 399.039,
+      "end_seconds": 402.12,
+      "id": "PTEUKAz1NKk-display-0116",
+      "segment_id": "PTEUKAz1NKk-ja-0047"
+    },
+    {
+      "text": "ているのに不登校の子供の数は割合は増え",
+      "start_seconds": 402.12,
+      "end_seconds": 405.199,
+      "id": "PTEUKAz1NKk-display-0117",
+      "segment_id": "PTEUKAz1NKk-ja-0048"
+    },
+    {
+      "text": "ている。不登校の増加っていうこの問題は",
+      "start_seconds": 405.199,
+      "end_seconds": 409.24,
+      "id": "PTEUKAz1NKk-display-0118",
+      "segment_id": "PTEUKAz1NKk-ja-0048"
+    },
+    {
+      "text": "教育現場だけの問題ではなく社会全体が",
+      "start_seconds": 409.24,
+      "end_seconds": 412.84,
+      "id": "PTEUKAz1NKk-display-0119",
+      "segment_id": "PTEUKAz1NKk-ja-0048"
+    },
+    {
+      "text": "立ち止まって考えなく考え直さなくては",
+      "start_seconds": 412.84,
+      "end_seconds": 416.039,
+      "id": "PTEUKAz1NKk-display-0120",
+      "segment_id": "PTEUKAz1NKk-ja-0049"
+    },
+    {
+      "text": "いけません。新しい当たり前が求められて",
+      "start_seconds": 416.039,
+      "end_seconds": 419.96,
+      "id": "PTEUKAz1NKk-display-0121",
+      "segment_id": "PTEUKAz1NKk-ja-0049"
+    },
+    {
+      "text": "います。だから私は知半島地域率",
+      "start_seconds": 419.96,
+      "end_seconds": 424.12,
+      "id": "PTEUKAz1NKk-display-0122",
+      "segment_id": "PTEUKAz1NKk-ja-0049"
+    },
+    {
+      "text": "マヌスコレを始めました。これは不登校",
+      "start_seconds": 424.12,
+      "end_seconds": 427.52,
+      "id": "PTEUKAz1NKk-display-0123",
+      "segment_id": "PTEUKAz1NKk-ja-0050"
+    },
+    {
+      "text": "支援ではありません。障害者の居場所でも",
+      "start_seconds": 427.52,
+      "end_seconds": 431.599,
+      "id": "PTEUKAz1NKk-display-0124",
+      "segment_id": "PTEUKAz1NKk-ja-0050"
+    },
+    {
+      "text": "ありません。",
+      "start_seconds": 431.599,
+      "end_seconds": 433.72,
+      "id": "PTEUKAz1NKk-display-0125",
+      "segment_id": "PTEUKAz1NKk-ja-0050"
+    },
+    {
+      "text": "新しいもう1つの教育です。専門的に言う",
+      "start_seconds": 433.72,
+      "end_seconds": 437.639,
+      "id": "PTEUKAz1NKk-display-0126",
+      "segment_id": "PTEUKAz1NKk-ja-0051"
+    },
+    {
+      "text": "と市民率というオルタナティブ教育です。",
+      "start_seconds": 437.639,
+      "end_seconds": 441.639,
+      "id": "PTEUKAz1NKk-display-0127",
+      "segment_id": "PTEUKAz1NKk-ja-0051"
+    },
+    {
+      "text": "私自身中学生時代不登校でした。高校卒業",
+      "start_seconds": 441.639,
+      "end_seconds": 446.039,
+      "id": "PTEUKAz1NKk-display-0128",
+      "segment_id": "PTEUKAz1NKk-ja-0052"
+    },
+    {
+      "text": "後進学した専門学校は3ヶ月で辞め1年間",
+      "start_seconds": 446.039,
+      "end_seconds": 449.52,
+      "id": "PTEUKAz1NKk-display-0129",
+      "segment_id": "PTEUKAz1NKk-ja-0052"
+    },
+    {
+      "text": "ほど引きこもりました。どうも社会不適号",
+      "start_seconds": 449.52,
+      "end_seconds": 452.28,
+      "id": "PTEUKAz1NKk-display-0130",
+      "segment_id": "PTEUKAz1NKk-ja-0052"
+    },
+    {
+      "text": "です。ここ笑うところですよ。",
+      "start_seconds": 452.28,
+      "end_seconds": 457.28,
+      "id": "PTEUKAz1NKk-display-0131",
+      "segment_id": "PTEUKAz1NKk-ja-0053"
+    },
+    {
+      "text": "優しい言葉にたくさんの支援に救われた",
+      "start_seconds": 457.28,
+      "end_seconds": 460.68,
+      "id": "PTEUKAz1NKk-display-0132",
+      "segment_id": "PTEUKAz1NKk-ja-0054"
+    },
+    {
+      "text": "1人です。だからこそ今に使われている",
+      "start_seconds": 460.68,
+      "end_seconds": 465.12,
+      "id": "PTEUKAz1NKk-display-0133",
+      "segment_id": "PTEUKAz1NKk-ja-0054"
+    },
+    {
+      "text": "学校に行かなくてもいいよっていう言葉に",
+      "start_seconds": 465.12,
+      "end_seconds": 467.4,
+      "id": "PTEUKAz1NKk-display-0134",
+      "segment_id": "PTEUKAz1NKk-ja-0054"
+    },
+    {
+      "text": "少しだけモヤモヤします。優しい言葉なん",
+      "start_seconds": 467.4,
+      "end_seconds": 471.12,
+      "id": "PTEUKAz1NKk-display-0135",
+      "segment_id": "PTEUKAz1NKk-ja-0055"
+    },
+    {
+      "text": "ですがどこかその場所に聞こえてしまう。",
+      "start_seconds": 471.12,
+      "end_seconds": 474.479,
+      "id": "PTEUKAz1NKk-display-0136",
+      "segment_id": "PTEUKAz1NKk-ja-0055"
+    },
+    {
+      "text": "だっていつかは社会に出て1人で生きて",
+      "start_seconds": 474.479,
+      "end_seconds": 477.4,
+      "id": "PTEUKAz1NKk-display-0137",
+      "segment_id": "PTEUKAz1NKk-ja-0056"
+    },
+    {
+      "text": "いかなきゃいけないから。だから一時的に",
+      "start_seconds": 477.4,
+      "end_seconds": 481.08,
+      "id": "PTEUKAz1NKk-display-0138",
+      "segment_id": "PTEUKAz1NKk-ja-0056"
+    },
+    {
+      "text": "逃げる場所、子供だからと言って甘やかし",
+      "start_seconds": 481.08,
+      "end_seconds": 484.08,
+      "id": "PTEUKAz1NKk-display-0139",
+      "segment_id": "PTEUKAz1NKk-ja-0056"
+    },
+    {
+      "text": "てくれる場所を作りたいわけではありませ",
+      "start_seconds": 484.08,
+      "end_seconds": 486.199,
+      "id": "PTEUKAz1NKk-display-0140",
+      "segment_id": "PTEUKAz1NKk-ja-0056"
+    },
+    {
+      "text": "ん。ありのままの自分を愛する力を育む",
+      "start_seconds": 486.199,
+      "end_seconds": 490.52,
+      "id": "PTEUKAz1NKk-display-0141",
+      "segment_id": "PTEUKAz1NKk-ja-0057"
+    },
+    {
+      "text": "教育の場を作りたい。社会で生きるのでは",
+      "start_seconds": 490.52,
+      "end_seconds": 494.56,
+      "id": "PTEUKAz1NKk-display-0142",
+      "segment_id": "PTEUKAz1NKk-ja-0057"
+    },
+    {
+      "text": "なく社会と生きていきたい。マヌスコレの",
+      "start_seconds": 494.56,
+      "end_seconds": 498.8,
+      "id": "PTEUKAz1NKk-display-0143",
+      "segment_id": "PTEUKAz1NKk-ja-0058"
+    },
+    {
+      "text": "スコレという言葉は人生において最高に",
+      "start_seconds": 498.8,
+      "end_seconds": 502.199,
+      "id": "PTEUKAz1NKk-display-0144",
+      "segment_id": "PTEUKAz1NKk-ja-0058"
+    },
+    {
+      "text": "幸福な時間、知的な休み時間という意味の",
+      "start_seconds": 502.199,
+      "end_seconds": 505.44,
+      "id": "PTEUKAz1NKk-display-0145",
+      "segment_id": "PTEUKAz1NKk-ja-0058"
+    },
+    {
+      "text": "ギリシャ語です。なのですごい分かり",
+      "start_seconds": 505.44,
+      "end_seconds": 508.199,
+      "id": "PTEUKAz1NKk-display-0146",
+      "segment_id": "PTEUKAz1NKk-ja-0059"
+    },
+    {
+      "text": "やすく学校を作ってますって言うんですが",
+      "start_seconds": 508.199,
+      "end_seconds": 510.759,
+      "id": "PTEUKAz1NKk-display-0147",
+      "segment_id": "PTEUKAz1NKk-ja-0059"
+    },
+    {
+      "text": "実は先生もいないし宿題も授業もありませ",
+      "start_seconds": 510.759,
+      "end_seconds": 515.719,
+      "id": "PTEUKAz1NKk-display-0148",
+      "segment_id": "PTEUKAz1NKk-ja-0059"
+    },
+    {
+      "text": "ん。あるのは自由だけ。自由というのは",
+      "start_seconds": 515.719,
+      "end_seconds": 520.839,
+      "id": "PTEUKAz1NKk-display-0149",
+      "segment_id": "PTEUKAz1NKk-ja-0060"
+    },
+    {
+      "text": "ただ遊び放けることではありません。自由",
+      "start_seconds": 520.839,
+      "end_seconds": 523.68,
+      "id": "PTEUKAz1NKk-display-0150",
+      "segment_id": "PTEUKAz1NKk-ja-0060"
+    },
+    {
+      "text": "というのは実は責任を追うことなんです。",
+      "start_seconds": 523.68,
+      "end_seconds": 527.2,
+      "id": "PTEUKAz1NKk-display-0151",
+      "segment_id": "PTEUKAz1NKk-ja-0060"
+    },
+    {
+      "text": "こんな言葉があります。責任を負う自由を",
+      "start_seconds": 527.2,
+      "end_seconds": 531.08,
+      "id": "PTEUKAz1NKk-display-0152",
+      "segment_id": "PTEUKAz1NKk-ja-0061"
+    },
+    {
+      "text": "与えると人はうちに秘めたる能力を発揮",
+      "start_seconds": 531.08,
+      "end_seconds": 533.88,
+      "id": "PTEUKAz1NKk-display-0153",
+      "segment_id": "PTEUKAz1NKk-ja-0061"
+    },
+    {
+      "text": "する。責任を追う自由を与えると人はうち",
+      "start_seconds": 533.88,
+      "end_seconds": 537.56,
+      "id": "PTEUKAz1NKk-display-0154",
+      "segment_id": "PTEUKAz1NKk-ja-0061"
+    },
+    {
+      "text": "に秘めたる能力を発揮する。マノルスコレ",
+      "start_seconds": 537.56,
+      "end_seconds": 540.64,
+      "id": "PTEUKAz1NKk-display-0155",
+      "segment_id": "PTEUKAz1NKk-ja-0062"
+    },
+    {
+      "text": "が定義する自由はこれです。誰かの評価も",
+      "start_seconds": 540.64,
+      "end_seconds": 544.519,
+      "id": "PTEUKAz1NKk-display-0156",
+      "segment_id": "PTEUKAz1NKk-ja-0062"
+    },
+    {
+      "text": "期待しない。当たり前の枠も気にしない。",
+      "start_seconds": 544.519,
+      "end_seconds": 548.04,
+      "id": "PTEUKAz1NKk-display-0157",
+      "segment_id": "PTEUKAz1NKk-ja-0062"
+    },
+    {
+      "text": "自己決定の機会が、ま、これです。実は",
+      "start_seconds": 548.04,
+      "end_seconds": 551.279,
+      "id": "PTEUKAz1NKk-display-0158",
+      "segment_id": "PTEUKAz1NKk-ja-0063"
+    },
+    {
+      "text": "幸福感と自己決定日本における実証研究と",
+      "start_seconds": 551.279,
+      "end_seconds": 555.12,
+      "id": "PTEUKAz1NKk-display-0159",
+      "segment_id": "PTEUKAz1NKk-ja-0063"
+    },
+    {
+      "text": "いうものによって学歴よりも所得よりも",
+      "start_seconds": 555.12,
+      "end_seconds": 558.839,
+      "id": "PTEUKAz1NKk-display-0160",
+      "segment_id": "PTEUKAz1NKk-ja-0063"
+    },
+    {
+      "text": "自己決定が幸福に影響を与えているという",
+      "start_seconds": 558.839,
+      "end_seconds": 562.16,
+      "id": "PTEUKAz1NKk-display-0161",
+      "segment_id": "PTEUKAz1NKk-ja-0064"
+    },
+    {
+      "text": "ことがそんな研究結果が出ています。",
+      "start_seconds": 562.16,
+      "end_seconds": 566.92,
+      "id": "PTEUKAz1NKk-display-0162",
+      "segment_id": "PTEUKAz1NKk-ja-0064"
+    },
+    {
+      "text": "自分で自分の人生の満足度に点数をつけた",
+      "start_seconds": 566.92,
+      "end_seconds": 570.2,
+      "id": "PTEUKAz1NKk-display-0163",
+      "segment_id": "PTEUKAz1NKk-ja-0065"
+    },
+    {
+      "text": "もの。これを主観的幸福度と言います。",
+      "start_seconds": 570.2,
+      "end_seconds": 574.24,
+      "id": "PTEUKAz1NKk-display-0164",
+      "segment_id": "PTEUKAz1NKk-ja-0065"
+    },
+    {
+      "text": "世界幸福度ランキング9年連続1位の最も",
+      "start_seconds": 574.24,
+      "end_seconds": 577.76,
+      "id": "PTEUKAz1NKk-display-0165",
+      "segment_id": "PTEUKAz1NKk-ja-0066"
+    },
+    {
+      "text": "幸福な国、皆さんご存知ですか?",
+      "start_seconds": 577.76,
+      "end_seconds": 579.72,
+      "id": "PTEUKAz1NKk-display-0166",
+      "segment_id": "PTEUKAz1NKk-ja-0066"
+    },
+    {
+      "text": "フィンランドです。フィンランドの平均",
+      "start_seconds": 579.72,
+      "end_seconds": 582.399,
+      "id": "PTEUKAz1NKk-display-0167",
+      "segment_id": "PTEUKAz1NKk-ja-0067"
+    },
+    {
+      "text": "回答点数は7.7点、日本の平均は6.2",
+      "start_seconds": 582.399,
+      "end_seconds": 587.04,
+      "id": "PTEUKAz1NKk-display-0168",
+      "segment_id": "PTEUKAz1NKk-ja-0067"
+    },
+    {
+      "text": "点。マヌスコレと全く同じカリキュラムの",
+      "start_seconds": 587.04,
+      "end_seconds": 590.68,
+      "id": "PTEUKAz1NKk-display-0169",
+      "segment_id": "PTEUKAz1NKk-ja-0067"
+    },
+    {
+      "text": "セ戸市民率、セ戸作るスクールでは私が",
+      "start_seconds": 590.68,
+      "end_seconds": 595.04,
+      "id": "PTEUKAz1NKk-display-0170",
+      "segment_id": "PTEUKAz1NKk-ja-0068"
+    },
+    {
+      "text": "昨年1年間調査研究を行ったところ、テト",
+      "start_seconds": 595.04,
+      "end_seconds": 598.279,
+      "id": "PTEUKAz1NKk-display-0171",
+      "segment_id": "PTEUKAz1NKk-ja-0068"
+    },
+    {
+      "text": "作るスクールに通う子供たちの平均幸福度",
+      "start_seconds": 598.279,
+      "end_seconds": 601.72,
+      "id": "PTEUKAz1NKk-display-0172",
+      "segment_id": "PTEUKAz1NKk-ja-0068"
+    },
+    {
+      "text": "の回答は8.09点でした。つまり世界",
+      "start_seconds": 601.72,
+      "end_seconds": 606.24,
+      "id": "PTEUKAz1NKk-display-0173",
+      "segment_id": "PTEUKAz1NKk-ja-0069"
+    },
+    {
+      "text": "一服な国、フィンランドの人たちよりも",
+      "start_seconds": 606.24,
+      "end_seconds": 609.12,
+      "id": "PTEUKAz1NKk-display-0174",
+      "segment_id": "PTEUKAz1NKk-ja-0069"
+    },
+    {
+      "text": "幸福に生きていました。ということは、",
+      "start_seconds": 609.12,
+      "end_seconds": 612.519,
+      "id": "PTEUKAz1NKk-display-0175",
+      "segment_id": "PTEUKAz1NKk-ja-0069"
+    },
+    {
+      "text": "自己決定が当たり前の子供たちは因数分解",
+      "start_seconds": 612.519,
+      "end_seconds": 615.92,
+      "id": "PTEUKAz1NKk-display-0176",
+      "segment_id": "PTEUKAz1NKk-ja-0070"
+    },
+    {
+      "text": "も枕の総師もやったことがないけれど幸せ",
+      "start_seconds": 615.92,
+      "end_seconds": 619.8,
+      "id": "PTEUKAz1NKk-display-0177",
+      "segment_id": "PTEUKAz1NKk-ja-0070"
+    },
+    {
+      "text": "だということが明らかになっています。",
+      "start_seconds": 619.8,
+      "end_seconds": 624.04,
+      "id": "PTEUKAz1NKk-display-0178",
+      "segment_id": "PTEUKAz1NKk-ja-0070"
+    },
+    {
+      "text": "一等将遇、万と彫刻。これは私の好きな",
+      "start_seconds": 624.04,
+      "end_seconds": 627.92,
+      "id": "PTEUKAz1NKk-display-0179",
+      "segment_id": "PTEUKAz1NKk-ja-0071"
+    },
+    {
+      "text": "最長の言葉です。1つの明りは一宮しか",
+      "start_seconds": 627.92,
+      "end_seconds": 631.32,
+      "id": "PTEUKAz1NKk-display-0180",
+      "segment_id": "PTEUKAz1NKk-ja-0071"
+    },
+    {
+      "text": "照らすことができない。でも満の明りと",
+      "start_seconds": 631.32,
+      "end_seconds": 634.76,
+      "id": "PTEUKAz1NKk-display-0181",
+      "segment_id": "PTEUKAz1NKk-ja-0071"
+    },
+    {
+      "text": "なれば国をも照らすという意味です。",
+      "start_seconds": 634.76,
+      "end_seconds": 638.279,
+      "id": "PTEUKAz1NKk-display-0182",
+      "segment_id": "PTEUKAz1NKk-ja-0072"
+    },
+    {
+      "text": "私たち市民率はよし、世界を大きく変える",
+      "start_seconds": 638.279,
+      "end_seconds": 641.48,
+      "id": "PTEUKAz1NKk-display-0183",
+      "segment_id": "PTEUKAz1NKk-ja-0073"
+    },
+    {
+      "text": "ぞとか日本の教育変えるぞということを",
+      "start_seconds": 641.48,
+      "end_seconds": 644.44,
+      "id": "PTEUKAz1NKk-display-0184",
+      "segment_id": "PTEUKAz1NKk-ja-0073"
+    },
+    {
+      "text": "目指してはいません。1人1人が自分の",
+      "start_seconds": 644.44,
+      "end_seconds": 647.88,
+      "id": "PTEUKAz1NKk-display-0185",
+      "segment_id": "PTEUKAz1NKk-ja-0073"
+    },
+    {
+      "text": "人生どう行きたいと問い直して動き出し、",
+      "start_seconds": 647.88,
+      "end_seconds": 651.68,
+      "id": "PTEUKAz1NKk-display-0186",
+      "segment_id": "PTEUKAz1NKk-ja-0074"
+    },
+    {
+      "text": "その波紋が少しずつ広がっていく。そう",
+      "start_seconds": 651.68,
+      "end_seconds": 655.2,
+      "id": "PTEUKAz1NKk-display-0187",
+      "segment_id": "PTEUKAz1NKk-ja-0074"
+    },
+    {
+      "text": "すると結果として社会は変わらざるを得",
+      "start_seconds": 655.2,
+      "end_seconds": 658.44,
+      "id": "PTEUKAz1NKk-display-0188",
+      "segment_id": "PTEUKAz1NKk-ja-0074"
+    },
+    {
+      "text": "ないと考えています。",
+      "start_seconds": 658.44,
+      "end_seconds": 661.36,
+      "id": "PTEUKAz1NKk-display-0189",
+      "segment_id": "PTEUKAz1NKk-ja-0075"
+    },
+    {
+      "text": "マノルスコレの子供たちが私が",
+      "start_seconds": 661.36,
+      "end_seconds": 663.76,
+      "id": "PTEUKAz1NKk-display-0190",
+      "segment_id": "PTEUKAz1NKk-ja-0076"
+    },
+    {
+      "text": "めちゃくちゃ楽しくむちゃくちゃ幸福に",
+      "start_seconds": 663.76,
+      "end_seconds": 665.8,
+      "id": "PTEUKAz1NKk-display-0191",
+      "segment_id": "PTEUKAz1NKk-ja-0076"
+    },
+    {
+      "text": "生きていたら何かしら社会に影響を与え",
+      "start_seconds": 665.8,
+      "end_seconds": 668.8,
+      "id": "PTEUKAz1NKk-display-0192",
+      "segment_id": "PTEUKAz1NKk-ja-0076"
+    },
+    {
+      "text": "られるんじゃない。そんな小さな積み重ね",
+      "start_seconds": 668.8,
+      "end_seconds": 672.399,
+      "id": "PTEUKAz1NKk-display-0193",
+      "segment_id": "PTEUKAz1NKk-ja-0076"
+    },
+    {
+      "text": "の先に気づけば世界が面白くなっている。",
+      "start_seconds": 672.399,
+      "end_seconds": 676.88,
+      "id": "PTEUKAz1NKk-display-0194",
+      "segment_id": "PTEUKAz1NKk-ja-0077"
+    },
+    {
+      "text": "そんな未来を描いています。",
+      "start_seconds": 676.88,
+      "end_seconds": 680.399,
+      "id": "PTEUKAz1NKk-display-0195",
+      "segment_id": "PTEUKAz1NKk-ja-0078"
+    },
+    {
+      "text": "私は教育の当たり前を問い直したい。私が",
+      "start_seconds": 680.399,
+      "end_seconds": 683.519,
+      "id": "PTEUKAz1NKk-display-0196",
+      "segment_id": "PTEUKAz1NKk-ja-0079"
+    },
+    {
+      "text": "照らす一宮はここです。では皆さんは何を",
+      "start_seconds": 683.519,
+      "end_seconds": 689.16,
+      "id": "PTEUKAz1NKk-display-0197",
+      "segment_id": "PTEUKAz1NKk-ja-0079"
+    },
+    {
+      "text": "問い直しますか?",
+      "start_seconds": 689.16,
+      "end_seconds": 692.6,
+      "id": "PTEUKAz1NKk-display-0198",
+      "segment_id": "PTEUKAz1NKk-ja-0080"
+    },
+    {
+      "text": "誰を?どこを照らしますか?",
+      "start_seconds": 692.6,
+      "end_seconds": 696.6,
+      "id": "PTEUKAz1NKk-display-0199",
+      "segment_id": "PTEUKAz1NKk-ja-0081"
+    },
+    {
+      "text": "私が個々ができることは限られています。",
+      "start_seconds": 696.6,
+      "end_seconds": 699.959,
+      "id": "PTEUKAz1NKk-display-0200",
+      "segment_id": "PTEUKAz1NKk-ja-0082"
+    },
+    {
+      "text": "ですが、私、この場にいる皆さん、",
+      "start_seconds": 699.959,
+      "end_seconds": 702.639,
+      "id": "PTEUKAz1NKk-display-0201",
+      "segment_id": "PTEUKAz1NKk-ja-0083"
+    },
+    {
+      "text": "1人1人ができることを行動していけば国",
+      "start_seconds": 702.639,
+      "end_seconds": 706.76,
+      "id": "PTEUKAz1NKk-display-0202",
+      "segment_id": "PTEUKAz1NKk-ja-0083"
+    },
+    {
+      "text": "をも照らす。私はそう信じています。さ、",
+      "start_seconds": 706.76,
+      "end_seconds": 711.0,
+      "id": "PTEUKAz1NKk-display-0203",
+      "segment_id": "PTEUKAz1NKk-ja-0083"
+    },
+    {
+      "text": "皆さんちゃんと行動に移してくださいね。",
+      "start_seconds": 711.0,
+      "end_seconds": 713.72,
+      "id": "PTEUKAz1NKk-display-0204",
+      "segment_id": "PTEUKAz1NKk-ja-0084"
+    },
+    {
+      "text": "私の話を聞いて終わりにはして欲しくあり",
+      "start_seconds": 713.72,
+      "end_seconds": 716.56,
+      "id": "PTEUKAz1NKk-display-0205",
+      "segment_id": "PTEUKAz1NKk-ja-0085"
+    },
+    {
+      "text": "ません。是非一緒に素晴らしい未来を作り",
+      "start_seconds": 716.56,
+      "end_seconds": 720.279,
+      "id": "PTEUKAz1NKk-display-0206",
+      "segment_id": "PTEUKAz1NKk-ja-0085"
+    },
+    {
+      "text": "ましょう。ありがとうございました。",
+      "start_seconds": 720.279,
+      "end_seconds": 723.783,
+      "id": "PTEUKAz1NKk-display-0207",
+      "segment_id": "PTEUKAz1NKk-ja-0085"
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 723.783,
+      "end_seconds": 725.803,
+      "id": "PTEUKAz1NKk-display-0208",
+      "segment_id": "PTEUKAz1NKk-ja-0086"
+    }
+  ]
+}

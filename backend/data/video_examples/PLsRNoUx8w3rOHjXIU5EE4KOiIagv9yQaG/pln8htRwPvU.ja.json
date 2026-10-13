@@ -1,0 +1,4245 @@
+{
+  "schema_version": 1,
+  "video": {
+    "youtube_id": "pln8htRwPvU",
+    "title": "The Pursuit of True Freedom: Exploring Cognitive Flexibility  | Koki Hayashida | TEDxICU",
+    "channel": "TEDx Talks",
+    "duration_seconds": 903
+  },
+  "caption_track": {
+    "language": "ja",
+    "kind": "asr",
+    "source": "youtube_automatic"
+  },
+  "source_playlist": "https://www.youtube.com/playlist?list=PLsRNoUx8w3rOHjXIU5EE4KOiIagv9yQaG",
+  "fetched_at": "2026-10-13T13:24:40.698697+00:00",
+  "segment_count": 94,
+  "segments": [
+    {
+      "text": "[音楽]",
+      "start_seconds": 4.584,
+      "end_seconds": 6.603999999999999,
+      "id": "pln8htRwPvU-ja-0001",
+      "sequence": 1
+    },
+    {
+      "text": "え、皆さんこんにちは。国際リスト共大学共用学2年の申します。",
+      "start_seconds": 18.0,
+      "end_seconds": 23.8,
+      "id": "pln8htRwPvU-ja-0002",
+      "sequence": 2
+    },
+    {
+      "text": "ま、まず最初にですね、皆さんにお伝えしておきたいんですけども、え、僕は従来のポットスピーカーのような輝やかしい経歴はチャンスと、え、しかしですね、今回は",
+      "start_seconds": 23.8,
+      "end_seconds": 35.2,
+      "id": "pln8htRwPvU-ja-0003",
+      "sequence": 3
+    },
+    {
+      "text": "、え、学生としての強みを生かして、え、皆さんとより近い目線に立ち、え、より汎用性のあるアイデアを共有できることを考えています。ま、とはいえですね、ま、",
+      "start_seconds": 35.2,
+      "end_seconds": 46.36,
+      "id": "pln8htRwPvU-ja-0004",
+      "sequence": 4
+    },
+    {
+      "text": "皆さんは、あ、これから、え、よくス情の知れない僕のお話を聞いてくださるわけですので、ま、僕をいかに慶用できるかと考えたところですね、え、ガチ優勢が",
+      "start_seconds": 46.36,
+      "end_seconds": 57.8,
+      "id": "pln8htRwPvU-ja-0005",
+      "sequence": 5
+    },
+    {
+      "text": "ふさしいのではないかと思いました。ま、別にふざけてるわけではないので、ま、是非ね、がっかりして帰らないでいただきたいんですけども、僕は、え、神奈川県の",
+      "start_seconds": 57.8,
+      "end_seconds": 67.08,
+      "id": "pln8htRwPvU-ja-0006",
+      "sequence": 6
+    },
+    {
+      "text": "厚木市というところから、え、電車で2時間ほどかけて、え、通学をしていますので、あの、授業の、あ、すいません。電車の遅延などで授業に遅刻することがない",
+      "start_seconds": 67.08,
+      "end_seconds": 77.2,
+      "id": "pln8htRwPvU-ja-0007",
+      "sequence": 7
+    },
+    {
+      "text": "ように、え、授業開始の1時間前には大学について図書館で勉強するようにしています。で、一方、え、帰りはあの夕方になると、え、北クラッシュの満員電車の",
+      "start_seconds": 77.2,
+      "end_seconds": 88.72,
+      "id": "pln8htRwPvU-ja-0008",
+      "sequence": 8
+    },
+    {
+      "text": "着き込まれてしまいますので、え、事後が夕方まである際は夜の7時ぐらいまで大学にいるようにしています。ま、そんな僕を",
+      "start_seconds": 88.72,
+      "end_seconds": 98.2,
+      "id": "pln8htRwPvU-ja-0009",
+      "sequence": 9
+    },
+    {
+      "text": "見かけてですね、あの、よくでは図書館の住人、え、社畜あるいは学地などと噂されてるそうですが、ま、これは僕の壮絶な",
+      "start_seconds": 98.2,
+      "end_seconds": 108.36,
+      "id": "pln8htRwPvU-ja-0010",
+      "sequence": 10
+    },
+    {
+      "text": "生活の一幕だったんですね。ま、とはいえ、え、これまで2年間このような生活をして来れたのも、ま、1に僕が大学での学び",
+      "start_seconds": 108.36,
+      "end_seconds": 117.52,
+      "id": "pln8htRwPvU-ja-0011",
+      "sequence": 11
+    },
+    {
+      "text": "に価値を見出すことができたからでした。",
+      "start_seconds": 117.52,
+      "end_seconds": 121.28,
+      "id": "pln8htRwPvU-ja-0012",
+      "sequence": 12
+    },
+    {
+      "text": "え、しかし、え、これまでもこのように、え、大学で、え、すいません。に、え、価値を見出す優等生だったかと言われると、ま、実はそんなことはなくてですね、え",
+      "start_seconds": 121.28,
+      "end_seconds": 131.28,
+      "id": "pln8htRwPvU-ja-0013",
+      "sequence": 13
+    },
+    {
+      "text": "、高校時代には、え、いわゆる不登校の状態に陥っていました。え、当時の様子を少し、え、お話しすると、え、家に誰もい",
+      "start_seconds": 131.28,
+      "end_seconds": 140.48,
+      "id": "pln8htRwPvU-ja-0014",
+      "sequence": 14
+    },
+    {
+      "text": "なくなった昼過ぎに目を覚すと、え、そのまま、え、スマホでYouTubeや映画なんかを見たり、え、そしてたまに、え、本読んだりして、え、過ごし、え、そして",
+      "start_seconds": 140.48,
+      "end_seconds": 151.4,
+      "id": "pln8htRwPvU-ja-0015",
+      "sequence": 15
+    },
+    {
+      "text": "家族みんながね、静まった深夜に僕も眠くなって眠るという、え、そんな生活を送っていました。え、このように聞く人が聞けば、あの、失席が飛んできそうな生活を",
+      "start_seconds": 151.4,
+      "end_seconds": 162.28,
+      "id": "pln8htRwPvU-ja-0016",
+      "sequence": 16
+    },
+    {
+      "text": "送っていたわけなんですが、ま、これには、え、そうせざる得ない日常があったと言っても良いかと思います。え、僕がなぜ不登校だったのか、え、要因をいくつか",
+      "start_seconds": 162.28,
+      "end_seconds": 172.68,
+      "id": "pln8htRwPvU-ja-0017",
+      "sequence": 17
+    },
+    {
+      "text": "考えてみると、え、まず1つ目には、え、僕自身の繊細な性格による、え、心理的な不安定さ、え、そしてそれによる人間関係",
+      "start_seconds": 172.68,
+      "end_seconds": 182.68,
+      "id": "pln8htRwPvU-ja-0018",
+      "sequence": 18
+    },
+    {
+      "text": "構築への不安と恐怖、え、あるいは、え、従来の日本教育への会議、ま、他にもですね、え、様々な要因が積み重なって自分の",
+      "start_seconds": 182.68,
+      "end_seconds": 193.04,
+      "id": "pln8htRwPvU-ja-0019",
+      "sequence": 19
+    },
+    {
+      "text": "人生に対して、え、失望していたことが挙げられるかと思います。え、しかしその後周囲のもあり、1年間のギャップイヤを経てIQへ入学することができまし",
+      "start_seconds": 193.04,
+      "end_seconds": 204.4,
+      "id": "pln8htRwPvU-ja-0020",
+      "sequence": 20
+    },
+    {
+      "text": "た。",
+      "start_seconds": 204.4,
+      "end_seconds": 206.159,
+      "id": "pln8htRwPvU-ja-0021",
+      "sequence": 21
+    },
+    {
+      "text": "え、入学した僕は、え、自分自身の不登校経験に関して客観的に捉え、え、そしてその現象を教育学的な文脈で、え、学び",
+      "start_seconds": 206.159,
+      "end_seconds": 215.4,
+      "id": "pln8htRwPvU-ja-0022",
+      "sequence": 22
+    },
+    {
+      "text": "たいと考えていましたので、え、学校心理学の授業を理習しました。え、その授業を一緒に理習していた友人とは授業後も、え",
+      "start_seconds": 215.4,
+      "end_seconds": 225.599,
+      "id": "pln8htRwPvU-ja-0023",
+      "sequence": 23
+    },
+    {
+      "text": "、日本教育に関して、え、議論をしていたんですが、え、そんな僕らを見た、え、担当教員の先生はある日、え、もしよかったら一緒に研究してみないかと、え、誘っ",
+      "start_seconds": 225.599,
+      "end_seconds": 236.4,
+      "id": "pln8htRwPvU-ja-0024",
+      "sequence": 24
+    },
+    {
+      "text": "てくださいました。え、僕は高校時代、え、不登校に陥っていたわけですが、え、大学でも、え、同様に、ええ、留年や大学",
+      "start_seconds": 236.4,
+      "end_seconds": 246.76,
+      "id": "pln8htRwPvU-ja-0025",
+      "sequence": 25
+    },
+    {
+      "text": "などといった不適用行動が社会的な問題となっていることを知り、え、僕は大学的に関する、え、研究を行いました。",
+      "start_seconds": 246.76,
+      "end_seconds": 257.239,
+      "id": "pln8htRwPvU-ja-0026",
+      "sequence": 26
+    },
+    {
+      "text": "え、そしてその後もありがたいことに、え、様々な機会に恵まれ、え、今年の8月には、え、ヨーロッパ健康心理学会で、え、",
+      "start_seconds": 257.239,
+      "end_seconds": 266.28,
+      "id": "pln8htRwPvU-ja-0027",
+      "sequence": 27
+    },
+    {
+      "text": "研究するに至りました。",
+      "start_seconds": 266.28,
+      "end_seconds": 269.32,
+      "id": "pln8htRwPvU-ja-0028",
+      "sequence": 28
+    },
+    {
+      "text": "え、おそらくですね、え、これらの一連の経験は今後研究者としての道歩上めで、え、確かなアドバンテージになると思いますし、え、そしてこの一連の経験は過去の",
+      "start_seconds": 269.32,
+      "end_seconds": 280.639,
+      "id": "pln8htRwPvU-ja-0029",
+      "sequence": 29
+    },
+    {
+      "text": "苦境を、え、自らの使命へと消化させた、え、一例として見ることができるかもしれません。",
+      "start_seconds": 280.639,
+      "end_seconds": 288.96,
+      "id": "pln8htRwPvU-ja-0030",
+      "sequence": 30
+    },
+    {
+      "text": "え、確かにこういった話は、え、聞いていて明解で興味をそるかもしれません。え、しかしこのような話で終わらせてしまっては仮に今苦しむことがあっても後にその",
+      "start_seconds": 288.96,
+      "end_seconds": 300.52,
+      "id": "pln8htRwPvU-ja-0031",
+      "sequence": 31
+    },
+    {
+      "text": "経験は報われるのだという、え、確かに楽観的であるものの、え、少し目責任なメッセージを残して終わることになってしまうかと思います。え、ですので、え、",
+      "start_seconds": 300.52,
+      "end_seconds": 310.88,
+      "id": "pln8htRwPvU-ja-0032",
+      "sequence": 32
+    },
+    {
+      "text": "これからは、え、この話を少し押しべて、え、より普遍的なメッセージを共有することに時間を使いたいと思います。え、実",
+      "start_seconds": 310.88,
+      "end_seconds": 320.12,
+      "id": "pln8htRwPvU-ja-0033",
+      "sequence": 33
+    },
+    {
+      "text": "はこの話には続きがあります。",
+      "start_seconds": 320.12,
+      "end_seconds": 324.36,
+      "id": "pln8htRwPvU-ja-0034",
+      "sequence": 34
+    },
+    {
+      "text": "え、様々なクランを経て夢のICに入学することができた僕は胸を高ならせていました。一般的に大学生活というと、ま、",
+      "start_seconds": 324.36,
+      "end_seconds": 333.68,
+      "id": "pln8htRwPvU-ja-0035",
+      "sequence": 35
+    },
+    {
+      "text": "人生の夏休みなどと言われることもあり、え、学業はそっちの気で恋愛や飲み会えに生きがいを見い出す、え、そんな話をよく",
+      "start_seconds": 333.68,
+      "end_seconds": 341.68,
+      "id": "pln8htRwPvU-ja-0036",
+      "sequence": 36
+    },
+    {
+      "text": "聞きます。え、しかし、え、僕は学問的な好奇心に突きかされ、ま、そして過去の経験もありましたので、え、大学で豊かな",
+      "start_seconds": 341.68,
+      "end_seconds": 351.639,
+      "id": "pln8htRwPvU-ja-0037",
+      "sequence": 37
+    },
+    {
+      "text": "人間関係を築づくことができるのか不安だったので、僕は入学時の決意として、え、僕は学問と結婚するのだっていうちょっと1本間違えたらやばい人のような",
+      "start_seconds": 351.639,
+      "end_seconds": 362.72,
+      "id": "pln8htRwPvU-ja-0038",
+      "sequence": 38
+    },
+    {
+      "text": "考えを持っていました。え、ま、しかしIQに入学して、ま、ここにいる素敵な皆さんの人間的な温かみに癒された僕は",
+      "start_seconds": 362.72,
+      "end_seconds": 371.68,
+      "id": "pln8htRwPvU-ja-0039",
+      "sequence": 39
+    },
+    {
+      "text": "やがてやっぱり人間と結婚したいと考えるようになりました。ま、ちなみにですね、これは周一なレトリックになってまして、この学問との結婚っていうのは学問への",
+      "start_seconds": 371.68,
+      "end_seconds": 383.0,
+      "id": "pln8htRwPvU-ja-0040",
+      "sequence": 40
+    },
+    {
+      "text": "コミットメント、先進を意味してるんですけど、ま、よくね、研究者とかを見てればお分かりかと思うんですが、学問へコミットするあまり、こう生活を犠牲にせ",
+      "start_seconds": 383.0,
+      "end_seconds": 393.12,
+      "id": "pln8htRwPvU-ja-0041",
+      "sequence": 41
+    },
+    {
+      "text": "ざるを得ない、ま、状況もあるということで、この学問との結婚は人間との結婚と退避関係あるわけですね。ま、間違っても誤解しないでいただきたいのは別にIQU",
+      "start_seconds": 393.12,
+      "end_seconds": 403.759,
+      "id": "pln8htRwPvU-ja-0042",
+      "sequence": 42
+    },
+    {
+      "text": "の先生方がろな結婚生活を遅れていないとかそういうこと言いたいわけではないんですけど、ま、要するにですね、え、IQに入学して、ま、予想以上に人間社会に",
+      "start_seconds": 403.759,
+      "end_seconds": 414.08,
+      "id": "pln8htRwPvU-ja-0043",
+      "sequence": 43
+    },
+    {
+      "text": "溶け込めてしまった僕はやがて、え、将来の道筋として、え、研究者、研究者としてのキャリアと豊かな生活との間の葛藤に",
+      "start_seconds": 414.08,
+      "end_seconds": 424.0,
+      "id": "pln8htRwPvU-ja-0044",
+      "sequence": 44
+    },
+    {
+      "text": "悩ませることになりました。ま、皆さんもですね、もしかしたら、え、これまでの人生において自分自身の強固のアイデンティティだと信じていたものが",
+      "start_seconds": 424.0,
+      "end_seconds": 434.68,
+      "id": "pln8htRwPvU-ja-0045",
+      "sequence": 45
+    },
+    {
+      "text": "何かをきっかけに揺らぐ、え、そんな経験をされたことがあるのではないかと思います。え、よくですね、人生において一貫性のある軸を持つことが重要だと語られる",
+      "start_seconds": 434.68,
+      "end_seconds": 446.44,
+      "id": "pln8htRwPvU-ja-0046",
+      "sequence": 46
+    },
+    {
+      "text": "ことがありますが、え、ま、確かにそれはそうなんですが、それと同時に時には軌動から逸脱する柔軟性にも価値を見え出すべきではないかと考えています。",
+      "start_seconds": 446.44,
+      "end_seconds": 457.4,
+      "id": "pln8htRwPvU-ja-0047",
+      "sequence": 47
+    },
+    {
+      "text": "え、そう考える理由としては第1に、え、私たちの認知は天気のように変わりうるものだからというものがあります。",
+      "start_seconds": 457.4,
+      "end_seconds": 465.919,
+      "id": "pln8htRwPvU-ja-0048",
+      "sequence": 48
+    },
+    {
+      "text": "え、僕は入学に際して、え、学問と結婚すべきだという認知をしていたわけですが、え、それには、え、僕は、え、こういう関係に乏しいという当時の、え、環境や",
+      "start_seconds": 465.919,
+      "end_seconds": 477.639,
+      "id": "pln8htRwPvU-ja-0049",
+      "sequence": 49
+    },
+    {
+      "text": "あるいは僕は論理的思考に優れているという能力、え、他にもですね、様々な要因が、え、この認知に影響を与えていました。",
+      "start_seconds": 477.639,
+      "end_seconds": 487.12,
+      "id": "pln8htRwPvU-ja-0050",
+      "sequence": 50
+    },
+    {
+      "text": "え、しかしここに示されたいずれの要因も下変つまり時間を経て形を変えるものですのでそれらの変化に応じて私たちの認知が形を変えてもなんら不思議ではありません",
+      "start_seconds": 487.12,
+      "end_seconds": 498.879,
+      "id": "pln8htRwPvU-ja-0051",
+      "sequence": 51
+    },
+    {
+      "text": "。え、そして私たちの認知は時を経て形を変えるのみならず常に不完全でもあります。",
+      "start_seconds": 498.879,
+      "end_seconds": 508.039,
+      "id": "pln8htRwPvU-ja-0052",
+      "sequence": 52
+    },
+    {
+      "text": "え、よくですね、え、私たちは物事の信憑性を評価する際にそれが事実か否かで判断する傾向にありますが、仮にそれが事実で",
+      "start_seconds": 508.039,
+      "end_seconds": 517.479,
+      "id": "pln8htRwPvU-ja-0053",
+      "sequence": 53
+    },
+    {
+      "text": "あるからと言って、それが現実の全てを正確に反映しているとは限りません。え、例えば、え、僕はICの2年生である。え",
+      "start_seconds": 517.479,
+      "end_seconds": 528.279,
+      "id": "pln8htRwPvU-ja-0054",
+      "sequence": 54
+    },
+    {
+      "text": "、この事実は、あ、これはこの明題は紛れもなく事実ですが、え、この文章だけでは僕はIUに2時間をかけて通学しているや",
+      "start_seconds": 528.279,
+      "end_seconds": 537.64,
+      "id": "pln8htRwPvU-ja-0055",
+      "sequence": 55
+    },
+    {
+      "text": "僕はガチ性であるのだといった、ま、他の事実を取りぼしていて、え、この文章だけでは現実をある偏った側面で眺めている",
+      "start_seconds": 537.64,
+      "end_seconds": 546.88,
+      "id": "pln8htRwPvU-ja-0056",
+      "sequence": 56
+    },
+    {
+      "text": "ことになります。え、図形を用いて考えてみましょう。え、仮に同一の物体を同様の性確性で眺めていたとしても、え、それを",
+      "start_seconds": 546.88,
+      "end_seconds": 557.16,
+      "id": "pln8htRwPvU-ja-0057",
+      "sequence": 57
+    },
+    {
+      "text": "見る角度が異なるだけで、え、その物体に対する認識は、え、全く異なるものになってしまいます。え、つまり私たちは物事",
+      "start_seconds": 557.16,
+      "end_seconds": 566.64,
+      "id": "pln8htRwPvU-ja-0058",
+      "sequence": 58
+    },
+    {
+      "text": "ある特定の側面から眺めていてはその全体像を正確に把握することはできません。え、このようにですね、私たちの認知はこれ",
+      "start_seconds": 566.64,
+      "end_seconds": 575.68,
+      "id": "pln8htRwPvU-ja-0059",
+      "sequence": 59
+    },
+    {
+      "text": "ほどまでに不完全であるからこそ私たちは日々生活をする上で認知的柔軟性を手にする必要があると考えています。え、うつ",
+      "start_seconds": 575.68,
+      "end_seconds": 586.079,
+      "id": "pln8htRwPvU-ja-0060",
+      "sequence": 60
+    },
+    {
+      "text": "とした感情で日々生活をしていた高校事態の僕はこり固まった思考で現状を眺め、え、そんな日々がずっと続くのだと考えてい",
+      "start_seconds": 586.079,
+      "end_seconds": 594.92,
+      "id": "pln8htRwPvU-ja-0061",
+      "sequence": 61
+    },
+    {
+      "text": "ました。え、まさか数年後にはその経験を糧てに、え、研究活動に従事し、え、そしてその一連の経緯をこのように皆さんの前でお話をする日が来るとは考えてもい",
+      "start_seconds": 594.92,
+      "end_seconds": 606.48,
+      "id": "pln8htRwPvU-ja-0062",
+      "sequence": 62
+    },
+    {
+      "text": "ませんでした。え、ま、しかしとはいえですね、やはり人生に苦難はつき物で皆さんそれぞれがお持ちの悩みや苦しみを、え、過小評価する気は一切ありません。え",
+      "start_seconds": 606.48,
+      "end_seconds": 618.24,
+      "id": "pln8htRwPvU-ja-0063",
+      "sequence": 63
+    },
+    {
+      "text": "、しかし私たちの認は大抵不完全で、え、そして大抵の場合多くの側面を見落としていることに気がつけば、え、彼に苦しみの",
+      "start_seconds": 618.24,
+      "end_seconds": 627.279,
+      "id": "pln8htRwPvU-ja-0064",
+      "sequence": 64
+    },
+    {
+      "text": "境地に陥っている際も、え、苦しみ続ける必要はないかもしれません。え、よく街中を歩いているとこのような赤と白のポール",
+      "start_seconds": 627.279,
+      "end_seconds": 636.639,
+      "id": "pln8htRwPvU-ja-0065",
+      "sequence": 65
+    },
+    {
+      "text": "を見ることがあるかと思います。え、一般的な金属性のものであれば、一車の衝突を受ければ傷つき、え、それが折れてしまえ",
+      "start_seconds": 636.639,
+      "end_seconds": 645.88,
+      "id": "pln8htRwPvU-ja-0066",
+      "sequence": 66
+    },
+    {
+      "text": "ば元に戻ることはありません。え、しかしこの柔軟性のあるポールであれば衝撃を事在に受け流して過角なダメージを受けることはないかもしれませんね。え、私たち",
+      "start_seconds": 645.88,
+      "end_seconds": 657.24,
+      "id": "pln8htRwPvU-ja-0067",
+      "sequence": 67
+    },
+    {
+      "text": "は認知もどう認知も同様にこれ固まった思考をしていれば、え、日々の生活で思いがけない出来事に直面した際に、え、過な心理的負担を受けることがあるかも",
+      "start_seconds": 657.24,
+      "end_seconds": 668.2,
+      "id": "pln8htRwPvU-ja-0068",
+      "sequence": 68
+    },
+    {
+      "text": "しれません。",
+      "start_seconds": 668.2,
+      "end_seconds": 669.6,
+      "id": "pln8htRwPvU-ja-0069",
+      "sequence": 69
+    },
+    {
+      "text": "え、しかし認知的柔軟性を持ってその現状に対して多格的な思考で持って対処すれば、え、そこに頭を悩ませ続ける必要はない",
+      "start_seconds": 669.6,
+      "end_seconds": 679.56,
+      "id": "pln8htRwPvU-ja-0070",
+      "sequence": 70
+    },
+    {
+      "text": "かもしれません。",
+      "start_seconds": 679.56,
+      "end_seconds": 682.079,
+      "id": "pln8htRwPvU-ja-0071",
+      "sequence": 71
+    },
+    {
+      "text": "え、そしてこの認知的柔軟性は私たち個人の助けになるのにならず、え、この世の中をより正確に把握し、え、そしてより法設",
+      "start_seconds": 682.079,
+      "end_seconds": 691.68,
+      "id": "pln8htRwPvU-ja-0072",
+      "sequence": 72
+    },
+    {
+      "text": "的な社会を構築する上で必要な鍵になると考えています。え、高校時代の同級生は、え、僕を見てですね、え、学校をサボって",
+      "start_seconds": 691.68,
+      "end_seconds": 701.88,
+      "id": "pln8htRwPvU-ja-0073",
+      "sequence": 73
+    },
+    {
+      "text": "いるどうしようもないやと批判的に捉えていたかもしれません。え、しかし現状をよく理解していた母親やカウンセラーの方はその問題を俯瞰的な思考で持って、え、",
+      "start_seconds": 701.88,
+      "end_seconds": 713.0,
+      "id": "pln8htRwPvU-ja-0074",
+      "sequence": 74
+    },
+    {
+      "text": "見てくれており、え、そんな理解者こそ苦しむ僕の大きな精神的支えになっていました。え、昨今のデジタル化合理化の",
+      "start_seconds": 713.0,
+      "end_seconds": 722.0,
+      "id": "pln8htRwPvU-ja-0075",
+      "sequence": 75
+    },
+    {
+      "text": "流れを受けて、え、物事を即かつ感情的に眺める傾向が加速しているような印象を受けます。え、しかし物事の表層に現れて",
+      "start_seconds": 722.0,
+      "end_seconds": 732.399,
+      "id": "pln8htRwPvU-ja-0076",
+      "sequence": 76
+    },
+    {
+      "text": "いるアクセスしやすい事実が、え、現実を正確に反映したものだとは限りません。え、私たち大学生は日々の学びを通じてこの",
+      "start_seconds": 732.399,
+      "end_seconds": 742.72,
+      "id": "pln8htRwPvU-ja-0077",
+      "sequence": 77
+    },
+    {
+      "text": "認知的柔軟性を手にする必要があるのではないかと考えています。え、よく大学で生活をしていると、え、大学での学びが",
+      "start_seconds": 742.72,
+      "end_seconds": 752.44,
+      "id": "pln8htRwPvU-ja-0078",
+      "sequence": 78
+    },
+    {
+      "text": "どのように役立つのか分からない。え、そんな声をよく耳にします。",
+      "start_seconds": 752.44,
+      "end_seconds": 758.56,
+      "id": "pln8htRwPvU-ja-0079",
+      "sequence": 79
+    },
+    {
+      "text": "え、しかしですね、私は大学で学ぶ内容と同等々内者それ以上に学ぶ過程が重要なのではないかと考えています。え、私たちは",
+      "start_seconds": 758.56,
+      "end_seconds": 768.519,
+      "id": "pln8htRwPvU-ja-0080",
+      "sequence": 80
+    },
+    {
+      "text": "日々学問を通じて新たな事実に触れるたびに私たちの地兵線は広がり、え、私たちの認知は柔軟性を帯びます。",
+      "start_seconds": 768.519,
+      "end_seconds": 778.32,
+      "id": "pln8htRwPvU-ja-0081",
+      "sequence": 81
+    },
+    {
+      "text": "え、おそらく大学は多くの人にとって社会に出て生活をする前の最後の教育機会だと思いますが、え、そこでは、え、この変化",
+      "start_seconds": 778.32,
+      "end_seconds": 788.16,
+      "id": "pln8htRwPvU-ja-0082",
+      "sequence": 82
+    },
+    {
+      "text": "の激しい世の中で自らを守り、え、そして今面を極める現代社会をより正確に理解する上で欠かせない認知的柔軟性を手にする場として機能しているのではない",
+      "start_seconds": 788.16,
+      "end_seconds": 800.16,
+      "id": "pln8htRwPvU-ja-0083",
+      "sequence": 83
+    },
+    {
+      "text": "でしょうか。",
+      "start_seconds": 800.16,
+      "end_seconds": 802.56,
+      "id": "pln8htRwPvU-ja-0084",
+      "sequence": 84
+    },
+    {
+      "text": "え、おそらく僕を含めてですね、ここにいる多くの若者は輝かしい経験などを持ち合わせてはいないかもしれません。え、しかし的柔軟性は学ぶ姿勢を絶さず未知",
+      "start_seconds": 802.56,
+      "end_seconds": 814.0,
+      "id": "pln8htRwPvU-ja-0085",
+      "sequence": 85
+    },
+    {
+      "text": "や完全と立ち向かう私たち学習者の特権であり、え、そのような能力こそ、え、未だ光の当たらない社会の暗闇みにおいて、え、希望とできる上で必要とされているので",
+      "start_seconds": 814.0,
+      "end_seconds": 825.519,
+      "id": "pln8htRwPvU-ja-0086",
+      "sequence": 86
+    },
+    {
+      "text": "はないでしょうか。え、この不理な世の中には改善の余地が多分にあり、え、問題を根本的に解決しようとするならば、表層的",
+      "start_seconds": 825.519,
+      "end_seconds": 835.279,
+      "id": "pln8htRwPvU-ja-0087",
+      "sequence": 87
+    },
+    {
+      "text": "な事実に惑わされず、え、現実の本質を見抜く柔軟な思考が欠かせません。え、大学電話の学びはいかにして社会に還元さ",
+      "start_seconds": 835.279,
+      "end_seconds": 846.48,
+      "id": "pln8htRwPvU-ja-0088",
+      "sequence": 88
+    },
+    {
+      "text": "れるのでしょうか?え、一度不登校という社会の暗闇みを経験し、今や大学教育の恩恵に、え、預かれている1人の人間とし",
+      "start_seconds": 846.48,
+      "end_seconds": 856.24,
+      "id": "pln8htRwPvU-ja-0089",
+      "sequence": 89
+    },
+    {
+      "text": "て僕はそんなことを念頭にこれまで学びに派遣できました。ま、とはいえですね、え、大学で学び意義は人それぞれだと思いますし、いかなるものであれ、同等に評価",
+      "start_seconds": 856.24,
+      "end_seconds": 867.32,
+      "id": "pln8htRwPvU-ja-0090",
+      "sequence": 90
+    },
+    {
+      "text": "されるべきだと考えています。え、しかし同時に私たち1人1人が大学での学びを通じて年知的柔軟性を手にし、え、それを",
+      "start_seconds": 867.32,
+      "end_seconds": 876.8,
+      "id": "pln8htRwPvU-ja-0091",
+      "sequence": 91
+    },
+    {
+      "text": "糧てに社会と関わり合うことでこの世の中は育爆か良い方向へ向かうのではないかと考えています。え、可能性に満ち溢れた皆さんとこれからのより良い社会を作ること",
+      "start_seconds": 876.8,
+      "end_seconds": 888.079,
+      "id": "pln8htRwPvU-ja-0092",
+      "sequence": 92
+    },
+    {
+      "text": "を心より楽しみにしています。え、本日はご成聴ありがとうございました。[拍手]",
+      "start_seconds": 888.079,
+      "end_seconds": 895.4499999999999,
+      "id": "pln8htRwPvU-ja-0093",
+      "sequence": 93
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 898.015,
+      "end_seconds": 900.035,
+      "id": "pln8htRwPvU-ja-0094",
+      "sequence": 94
+    }
+  ],
+  "raw_captions": [
+    {
+      "text": "[音楽]",
+      "start_seconds": 4.584,
+      "end_seconds": 6.603999999999999
+    },
+    {
+      "text": "え、皆さんこんにちは。国際リスト共大学共用学",
+      "start_seconds": 18.0,
+      "end_seconds": 21.0
+    },
+    {
+      "text": "2年の申します。",
+      "start_seconds": 21.48,
+      "end_seconds": 26.08
+    },
+    {
+      "text": "ま、まず最初にですね、皆さんにお伝えし",
+      "start_seconds": 23.8,
+      "end_seconds": 28.84
+    },
+    {
+      "text": "ておきたいんですけども、え、僕は従来の",
+      "start_seconds": 26.08,
+      "end_seconds": 31.159999999999997
+    },
+    {
+      "text": "ポットスピーカーのような輝やかしい経歴",
+      "start_seconds": 28.84,
+      "end_seconds": 35.2
+    },
+    {
+      "text": "はチャンスと、え、しかしですね、今回は",
+      "start_seconds": 31.16,
+      "end_seconds": 38.079
+    },
+    {
+      "text": "、え、学生としての強みを生かして、え、",
+      "start_seconds": 35.2,
+      "end_seconds": 41.0
+    },
+    {
+      "text": "皆さんとより近い目線に立ち、え、より",
+      "start_seconds": 38.079,
+      "end_seconds": 43.480000000000004
+    },
+    {
+      "text": "汎用性のあるアイデアを共有できることを",
+      "start_seconds": 41.0,
+      "end_seconds": 46.36
+    },
+    {
+      "text": "考えています。ま、とはいえですね、ま、",
+      "start_seconds": 43.48,
+      "end_seconds": 49.239
+    },
+    {
+      "text": "皆さんは、あ、これから、え、よくス情の",
+      "start_seconds": 46.36,
+      "end_seconds": 51.519999999999996
+    },
+    {
+      "text": "知れない僕のお話を聞いてくださるわけ",
+      "start_seconds": 49.239,
+      "end_seconds": 54.919999999999995
+    },
+    {
+      "text": "ですので、ま、僕をいかに慶用できるかと",
+      "start_seconds": 51.52,
+      "end_seconds": 57.800000000000004
+    },
+    {
+      "text": "考えたところですね、え、ガチ優勢が",
+      "start_seconds": 54.92,
+      "end_seconds": 60.120000000000005
+    },
+    {
+      "text": "ふさしいのではないかと思いました。ま、",
+      "start_seconds": 57.8,
+      "end_seconds": 62.12
+    },
+    {
+      "text": "別にふざけてるわけではないので、ま、",
+      "start_seconds": 60.12,
+      "end_seconds": 64.08
+    },
+    {
+      "text": "是非ね、がっかりして帰らないでいただき",
+      "start_seconds": 62.12,
+      "end_seconds": 67.08
+    },
+    {
+      "text": "たいんですけども、僕は、え、神奈川県の",
+      "start_seconds": 64.08,
+      "end_seconds": 69.84
+    },
+    {
+      "text": "厚木市というところから、え、電車で2",
+      "start_seconds": 67.08,
+      "end_seconds": 72.32
+    },
+    {
+      "text": "時間ほどかけて、え、通学をしていますの",
+      "start_seconds": 69.84,
+      "end_seconds": 74.759
+    },
+    {
+      "text": "で、あの、授業の、あ、すいません。電車",
+      "start_seconds": 72.32,
+      "end_seconds": 77.19999999999999
+    },
+    {
+      "text": "の遅延などで授業に遅刻することがない",
+      "start_seconds": 74.759,
+      "end_seconds": 80.28
+    },
+    {
+      "text": "ように、え、授業開始の1時間前には大学",
+      "start_seconds": 77.2,
+      "end_seconds": 82.88
+    },
+    {
+      "text": "について図書館で勉強するようにしてい",
+      "start_seconds": 80.28,
+      "end_seconds": 86.119
+    },
+    {
+      "text": "ます。で、一方、え、帰りはあの夕方に",
+      "start_seconds": 82.88,
+      "end_seconds": 88.72
+    },
+    {
+      "text": "なると、え、北クラッシュの満員電車の",
+      "start_seconds": 86.119,
+      "end_seconds": 92.04
+    },
+    {
+      "text": "着き込まれてしまいますので、え、事後が",
+      "start_seconds": 88.72,
+      "end_seconds": 95.0
+    },
+    {
+      "text": "夕方まである際は夜の7時ぐらいまで大学",
+      "start_seconds": 92.04,
+      "end_seconds": 98.2
+    },
+    {
+      "text": "にいるようにしています。ま、そんな僕を",
+      "start_seconds": 95.0,
+      "end_seconds": 101.6
+    },
+    {
+      "text": "見かけてですね、あの、よくでは図書館の",
+      "start_seconds": 98.2,
+      "end_seconds": 105.52000000000001
+    },
+    {
+      "text": "住人、え、社畜あるいは学地などと噂され",
+      "start_seconds": 101.6,
+      "end_seconds": 108.36
+    },
+    {
+      "text": "てるそうですが、ま、これは僕の壮絶な",
+      "start_seconds": 105.52,
+      "end_seconds": 111.67999999999999
+    },
+    {
+      "text": "生活の一幕だったんですね。ま、とはいえ",
+      "start_seconds": 108.36,
+      "end_seconds": 114.24
+    },
+    {
+      "text": "、え、これまで2年間このような生活をし",
+      "start_seconds": 111.68,
+      "end_seconds": 117.52000000000001
+    },
+    {
+      "text": "て来れたのも、ま、1に僕が大学での学び",
+      "start_seconds": 114.24,
+      "end_seconds": 121.28
+    },
+    {
+      "text": "に価値を見出すことができたからでした。",
+      "start_seconds": 117.52,
+      "end_seconds": 123.64
+    },
+    {
+      "text": "え、しかし、え、これまでもこのように、",
+      "start_seconds": 121.28,
+      "end_seconds": 126.56
+    },
+    {
+      "text": "え、大学で、え、すいません。に、え、",
+      "start_seconds": 123.64,
+      "end_seconds": 128.75900000000001
+    },
+    {
+      "text": "価値を見出す優等生だったかと言われると",
+      "start_seconds": 126.56,
+      "end_seconds": 131.28
+    },
+    {
+      "text": "、ま、実はそんなことはなくてですね、え",
+      "start_seconds": 128.759,
+      "end_seconds": 133.67999999999998
+    },
+    {
+      "text": "、高校時代には、え、いわゆる不登校の",
+      "start_seconds": 131.28,
+      "end_seconds": 137.36
+    },
+    {
+      "text": "状態に陥っていました。え、当時の様子を",
+      "start_seconds": 133.68,
+      "end_seconds": 140.48000000000002
+    },
+    {
+      "text": "少し、え、お話しすると、え、家に誰もい",
+      "start_seconds": 137.36,
+      "end_seconds": 144.31900000000002
+    },
+    {
+      "text": "なくなった昼過ぎに目を覚すと、え、その",
+      "start_seconds": 140.48,
+      "end_seconds": 146.44
+    },
+    {
+      "text": "まま、え、スマホでYouTubeや映画",
+      "start_seconds": 144.319,
+      "end_seconds": 148.35999999999999
+    },
+    {
+      "text": "なんかを見たり、え、そしてたまに、え、",
+      "start_seconds": 146.44,
+      "end_seconds": 151.4
+    },
+    {
+      "text": "本読んだりして、え、過ごし、え、そして",
+      "start_seconds": 148.36,
+      "end_seconds": 154.12
+    },
+    {
+      "text": "家族みんながね、静まった深夜に僕も眠く",
+      "start_seconds": 151.4,
+      "end_seconds": 156.59900000000002
+    },
+    {
+      "text": "なって眠るという、え、そんな生活を送っ",
+      "start_seconds": 154.12,
+      "end_seconds": 159.64000000000001
+    },
+    {
+      "text": "ていました。え、このように聞く人が聞け",
+      "start_seconds": 156.599,
+      "end_seconds": 162.28
+    },
+    {
+      "text": "ば、あの、失席が飛んできそうな生活を",
+      "start_seconds": 159.64,
+      "end_seconds": 164.39999999999998
+    },
+    {
+      "text": "送っていたわけなんですが、ま、これには",
+      "start_seconds": 162.28,
+      "end_seconds": 166.64000000000001
+    },
+    {
+      "text": "、え、そうせざる得ない日常があったと",
+      "start_seconds": 164.4,
+      "end_seconds": 170.20000000000002
+    },
+    {
+      "text": "言っても良いかと思います。え、僕がなぜ",
+      "start_seconds": 166.64,
+      "end_seconds": 172.67999999999998
+    },
+    {
+      "text": "不登校だったのか、え、要因をいくつか",
+      "start_seconds": 170.2,
+      "end_seconds": 175.56
+    },
+    {
+      "text": "考えてみると、え、まず1つ目には、え、",
+      "start_seconds": 172.68,
+      "end_seconds": 178.8
+    },
+    {
+      "text": "僕自身の繊細な性格による、え、心理的な",
+      "start_seconds": 175.56,
+      "end_seconds": 182.68
+    },
+    {
+      "text": "不安定さ、え、そしてそれによる人間関係",
+      "start_seconds": 178.8,
+      "end_seconds": 186.15900000000002
+    },
+    {
+      "text": "構築への不安と恐怖、え、あるいは、え、",
+      "start_seconds": 182.68,
+      "end_seconds": 189.76000000000002
+    },
+    {
+      "text": "従来の日本教育への会議、ま、他にもです",
+      "start_seconds": 186.159,
+      "end_seconds": 193.04
+    },
+    {
+      "text": "ね、え、様々な要因が積み重なって自分の",
+      "start_seconds": 189.76,
+      "end_seconds": 195.239
+    },
+    {
+      "text": "人生に対して、え、失望していたこと",
+      "start_seconds": 193.04,
+      "end_seconds": 198.79899999999998
+    },
+    {
+      "text": "が挙げられるかと思います。え、しかし",
+      "start_seconds": 195.239,
+      "end_seconds": 201.48000000000002
+    },
+    {
+      "text": "その後周囲のもあり、1年間のギャップ",
+      "start_seconds": 198.799,
+      "end_seconds": 204.4
+    },
+    {
+      "text": "イヤを経てIQへ入学することができまし",
+      "start_seconds": 201.48,
+      "end_seconds": 206.159
+    },
+    {
+      "text": "た。",
+      "start_seconds": 204.4,
+      "end_seconds": 208.959
+    },
+    {
+      "text": "え、入学した僕は、え、自分自身の不登校",
+      "start_seconds": 206.159,
+      "end_seconds": 212.0
+    },
+    {
+      "text": "経験に関して客観的に捉え、え、そして",
+      "start_seconds": 208.959,
+      "end_seconds": 215.4
+    },
+    {
+      "text": "その現象を教育学的な文脈で、え、学び",
+      "start_seconds": 212.0,
+      "end_seconds": 218.76
+    },
+    {
+      "text": "たいと考えていましたので、え、学校心理",
+      "start_seconds": 215.4,
+      "end_seconds": 222.84
+    },
+    {
+      "text": "学の授業を理習しました。え、その授業を",
+      "start_seconds": 218.76,
+      "end_seconds": 225.599
+    },
+    {
+      "text": "一緒に理習していた友人とは授業後も、え",
+      "start_seconds": 222.84,
+      "end_seconds": 228.159
+    },
+    {
+      "text": "、日本教育に関して、え、議論をしていた",
+      "start_seconds": 225.599,
+      "end_seconds": 230.79899999999998
+    },
+    {
+      "text": "んですが、え、そんな僕らを見た、え、",
+      "start_seconds": 228.159,
+      "end_seconds": 233.76
+    },
+    {
+      "text": "担当教員の先生はある日、え、もしよかっ",
+      "start_seconds": 230.799,
+      "end_seconds": 236.4
+    },
+    {
+      "text": "たら一緒に研究してみないかと、え、誘っ",
+      "start_seconds": 233.76,
+      "end_seconds": 240.07899999999998
+    },
+    {
+      "text": "てくださいました。え、僕は高校時代、え",
+      "start_seconds": 236.4,
+      "end_seconds": 242.72
+    },
+    {
+      "text": "、不登校に陥っていたわけですが、え、",
+      "start_seconds": 240.079,
+      "end_seconds": 246.76000000000002
+    },
+    {
+      "text": "大学でも、え、同様に、ええ、留年や大学",
+      "start_seconds": 242.72,
+      "end_seconds": 250.0
+    },
+    {
+      "text": "などといった不適用行動が社会的な問題と",
+      "start_seconds": 246.76,
+      "end_seconds": 253.319
+    },
+    {
+      "text": "なっていることを知り、え、僕は大学的に",
+      "start_seconds": 250.0,
+      "end_seconds": 257.239
+    },
+    {
+      "text": "関する、え、研究を行いました。",
+      "start_seconds": 253.319,
+      "end_seconds": 259.44
+    },
+    {
+      "text": "え、そしてその後もありがたいことに、え",
+      "start_seconds": 257.239,
+      "end_seconds": 263.19899999999996
+    },
+    {
+      "text": "、様々な機会に恵まれ、え、今年の8月に",
+      "start_seconds": 259.44,
+      "end_seconds": 266.28
+    },
+    {
+      "text": "は、え、ヨーロッパ健康心理学会で、え、",
+      "start_seconds": 263.199,
+      "end_seconds": 269.32
+    },
+    {
+      "text": "研究するに至りました。",
+      "start_seconds": 266.28,
+      "end_seconds": 271.63899999999995
+    },
+    {
+      "text": "え、おそらくですね、え、これらの一連の",
+      "start_seconds": 269.32,
+      "end_seconds": 275.15999999999997
+    },
+    {
+      "text": "経験は今後研究者としての道歩上めで、え",
+      "start_seconds": 271.639,
+      "end_seconds": 277.52
+    },
+    {
+      "text": "、確かなアドバンテージになると思います",
+      "start_seconds": 275.16,
+      "end_seconds": 280.639
+    },
+    {
+      "text": "し、え、そしてこの一連の経験は過去の",
+      "start_seconds": 277.52,
+      "end_seconds": 284.19899999999996
+    },
+    {
+      "text": "苦境を、え、自らの使命へと消化させた、",
+      "start_seconds": 280.639,
+      "end_seconds": 287.0
+    },
+    {
+      "text": "え、一例として見ることができるかもしれ",
+      "start_seconds": 284.199,
+      "end_seconds": 288.96000000000004
+    },
+    {
+      "text": "ません。",
+      "start_seconds": 287.0,
+      "end_seconds": 291.44
+    },
+    {
+      "text": "え、確かにこういった話は、え、聞いてい",
+      "start_seconds": 288.96,
+      "end_seconds": 294.75899999999996
+    },
+    {
+      "text": "て明解で興味をそるかもしれません。え、",
+      "start_seconds": 291.44,
+      "end_seconds": 297.0
+    },
+    {
+      "text": "しかしこのような話で終わらせてしまって",
+      "start_seconds": 294.759,
+      "end_seconds": 300.52000000000004
+    },
+    {
+      "text": "は仮に今苦しむことがあっても後にその",
+      "start_seconds": 297.0,
+      "end_seconds": 303.16
+    },
+    {
+      "text": "経験は報われるのだという、え、確かに",
+      "start_seconds": 300.52,
+      "end_seconds": 306.28
+    },
+    {
+      "text": "楽観的であるものの、え、少し目責任な",
+      "start_seconds": 303.16,
+      "end_seconds": 308.44
+    },
+    {
+      "text": "メッセージを残して終わることになって",
+      "start_seconds": 306.28,
+      "end_seconds": 310.88
+    },
+    {
+      "text": "しまうかと思います。え、ですので、え、",
+      "start_seconds": 308.44,
+      "end_seconds": 314.479
+    },
+    {
+      "text": "これからは、え、この話を少し押しべて、",
+      "start_seconds": 310.88,
+      "end_seconds": 316.68
+    },
+    {
+      "text": "え、より普遍的なメッセージを共有する",
+      "start_seconds": 314.479,
+      "end_seconds": 320.12
+    },
+    {
+      "text": "ことに時間を使いたいと思います。え、実",
+      "start_seconds": 316.68,
+      "end_seconds": 324.36
+    },
+    {
+      "text": "はこの話には続きがあります。",
+      "start_seconds": 320.12,
+      "end_seconds": 327.24
+    },
+    {
+      "text": "え、様々なクランを経て夢のICに入学",
+      "start_seconds": 324.36,
+      "end_seconds": 329.8
+    },
+    {
+      "text": "することができた僕は胸を高ならせてい",
+      "start_seconds": 327.24,
+      "end_seconds": 333.68
+    },
+    {
+      "text": "ました。一般的に大学生活というと、ま、",
+      "start_seconds": 329.8,
+      "end_seconds": 336.6
+    },
+    {
+      "text": "人生の夏休みなどと言われることもあり、",
+      "start_seconds": 333.68,
+      "end_seconds": 339.479
+    },
+    {
+      "text": "え、学業はそっちの気で恋愛や飲み会えに",
+      "start_seconds": 336.6,
+      "end_seconds": 341.68
+    },
+    {
+      "text": "生きがいを見い出す、え、そんな話をよく",
+      "start_seconds": 339.479,
+      "end_seconds": 346.0
+    },
+    {
+      "text": "聞きます。え、しかし、え、僕は学問的な",
+      "start_seconds": 341.68,
+      "end_seconds": 348.88
+    },
+    {
+      "text": "好奇心に突きかされ、ま、そして過去の",
+      "start_seconds": 346.0,
+      "end_seconds": 351.639
+    },
+    {
+      "text": "経験もありましたので、え、大学で豊かな",
+      "start_seconds": 348.88,
+      "end_seconds": 354.28
+    },
+    {
+      "text": "人間関係を築づくことができるのか不安",
+      "start_seconds": 351.639,
+      "end_seconds": 358.039
+    },
+    {
+      "text": "だったので、僕は入学時の決意として、え",
+      "start_seconds": 354.28,
+      "end_seconds": 360.44
+    },
+    {
+      "text": "、僕は学問と結婚するのだっていう",
+      "start_seconds": 358.039,
+      "end_seconds": 362.71999999999997
+    },
+    {
+      "text": "ちょっと1本間違えたらやばい人のような",
+      "start_seconds": 360.44,
+      "end_seconds": 365.71999999999997
+    },
+    {
+      "text": "考えを持っていました。え、ま、しかし",
+      "start_seconds": 362.72,
+      "end_seconds": 368.47900000000004
+    },
+    {
+      "text": "IQに入学して、ま、ここにいる素敵な皆",
+      "start_seconds": 365.72,
+      "end_seconds": 371.68
+    },
+    {
+      "text": "さんの人間的な温かみに癒された僕は",
+      "start_seconds": 368.479,
+      "end_seconds": 374.8
+    },
+    {
+      "text": "やがてやっぱり人間と結婚したいと考える",
+      "start_seconds": 371.68,
+      "end_seconds": 377.24
+    },
+    {
+      "text": "ようになりました。ま、ちなみにですね、",
+      "start_seconds": 374.8,
+      "end_seconds": 379.919
+    },
+    {
+      "text": "これは周一なレトリックになってまして、",
+      "start_seconds": 377.24,
+      "end_seconds": 383.0
+    },
+    {
+      "text": "この学問との結婚っていうのは学問への",
+      "start_seconds": 379.919,
+      "end_seconds": 385.15999999999997
+    },
+    {
+      "text": "コミットメント、先進を意味してるんです",
+      "start_seconds": 383.0,
+      "end_seconds": 388.08
+    },
+    {
+      "text": "けど、ま、よくね、研究者とかを見てれば",
+      "start_seconds": 385.16,
+      "end_seconds": 390.12
+    },
+    {
+      "text": "お分かりかと思うんですが、学問へ",
+      "start_seconds": 388.08,
+      "end_seconds": 393.12
+    },
+    {
+      "text": "コミットするあまり、こう生活を犠牲にせ",
+      "start_seconds": 390.12,
+      "end_seconds": 395.28000000000003
+    },
+    {
+      "text": "ざるを得ない、ま、状況もあるということ",
+      "start_seconds": 393.12,
+      "end_seconds": 398.759
+    },
+    {
+      "text": "で、この学問との結婚は人間との結婚と",
+      "start_seconds": 395.28,
+      "end_seconds": 401.55999999999995
+    },
+    {
+      "text": "退避関係あるわけですね。ま、間違っても",
+      "start_seconds": 398.759,
+      "end_seconds": 403.759
+    },
+    {
+      "text": "誤解しないでいただきたいのは別にIQU",
+      "start_seconds": 401.56,
+      "end_seconds": 406.639
+    },
+    {
+      "text": "の先生方がろな結婚生活を遅れていないと",
+      "start_seconds": 403.759,
+      "end_seconds": 408.08000000000004
+    },
+    {
+      "text": "かそういうこと言いたいわけではないん",
+      "start_seconds": 406.639,
+      "end_seconds": 411.0
+    },
+    {
+      "text": "ですけど、ま、要するにですね、え、IQ",
+      "start_seconds": 408.08,
+      "end_seconds": 414.08
+    },
+    {
+      "text": "に入学して、ま、予想以上に人間社会に",
+      "start_seconds": 411.0,
+      "end_seconds": 417.479
+    },
+    {
+      "text": "溶け込めてしまった僕はやがて、え、将来",
+      "start_seconds": 414.08,
+      "end_seconds": 420.8
+    },
+    {
+      "text": "の道筋として、え、研究者、研究者として",
+      "start_seconds": 417.479,
+      "end_seconds": 424.0
+    },
+    {
+      "text": "のキャリアと豊かな生活との間の葛藤に",
+      "start_seconds": 420.8,
+      "end_seconds": 427.68
+    },
+    {
+      "text": "悩ませることになりました。ま、皆さんも",
+      "start_seconds": 424.0,
+      "end_seconds": 429.759
+    },
+    {
+      "text": "ですね、もしかしたら、え、これまでの",
+      "start_seconds": 427.68,
+      "end_seconds": 432.24
+    },
+    {
+      "text": "人生において自分自身の強固の",
+      "start_seconds": 429.759,
+      "end_seconds": 434.68
+    },
+    {
+      "text": "アイデンティティだと信じていたものが",
+      "start_seconds": 432.24,
+      "end_seconds": 437.52
+    },
+    {
+      "text": "何かをきっかけに揺らぐ、え、そんな経験",
+      "start_seconds": 434.68,
+      "end_seconds": 439.8
+    },
+    {
+      "text": "をされたことがあるのではないかと思い",
+      "start_seconds": 437.52,
+      "end_seconds": 443.56
+    },
+    {
+      "text": "ます。え、よくですね、人生において一貫",
+      "start_seconds": 439.8,
+      "end_seconds": 446.44
+    },
+    {
+      "text": "性のある軸を持つことが重要だと語られる",
+      "start_seconds": 443.56,
+      "end_seconds": 448.879
+    },
+    {
+      "text": "ことがありますが、え、ま、確かにそれは",
+      "start_seconds": 446.44,
+      "end_seconds": 451.8
+    },
+    {
+      "text": "そうなんですが、それと同時に時には軌動",
+      "start_seconds": 448.879,
+      "end_seconds": 454.56
+    },
+    {
+      "text": "から逸脱する柔軟性にも価値を見え出す",
+      "start_seconds": 451.8,
+      "end_seconds": 457.40000000000003
+    },
+    {
+      "text": "べきではないかと考えています。",
+      "start_seconds": 454.56,
+      "end_seconds": 459.759
+    },
+    {
+      "text": "え、そう考える理由としては第1に、え、",
+      "start_seconds": 457.4,
+      "end_seconds": 462.599
+    },
+    {
+      "text": "私たちの認知は天気のように変わりうる",
+      "start_seconds": 459.759,
+      "end_seconds": 465.91900000000004
+    },
+    {
+      "text": "ものだからというものがあります。",
+      "start_seconds": 462.599,
+      "end_seconds": 469.199
+    },
+    {
+      "text": "え、僕は入学に際して、え、学問と結婚す",
+      "start_seconds": 465.919,
+      "end_seconds": 471.87899999999996
+    },
+    {
+      "text": "べきだという認知をしていたわけですが、",
+      "start_seconds": 469.199,
+      "end_seconds": 474.639
+    },
+    {
+      "text": "え、それには、え、僕は、え、こういう",
+      "start_seconds": 471.879,
+      "end_seconds": 477.639
+    },
+    {
+      "text": "関係に乏しいという当時の、え、環境や",
+      "start_seconds": 474.639,
+      "end_seconds": 480.28000000000003
+    },
+    {
+      "text": "あるいは僕は論理的思考に優れていると",
+      "start_seconds": 477.639,
+      "end_seconds": 483.319
+    },
+    {
+      "text": "いう能力、え、他にもですね、様々な要因",
+      "start_seconds": 480.28,
+      "end_seconds": 486.159
+    },
+    {
+      "text": "が、え、この認知に影響を与えていました",
+      "start_seconds": 483.319,
+      "end_seconds": 487.12
+    },
+    {
+      "text": "。",
+      "start_seconds": 486.159,
+      "end_seconds": 490.24
+    },
+    {
+      "text": "え、しかしここに示されたいずれの要因も",
+      "start_seconds": 487.12,
+      "end_seconds": 493.319
+    },
+    {
+      "text": "下変つまり時間を経て形を変えるものです",
+      "start_seconds": 490.24,
+      "end_seconds": 496.599
+    },
+    {
+      "text": "のでそれらの変化に応じて私たちの認知が",
+      "start_seconds": 493.319,
+      "end_seconds": 498.879
+    },
+    {
+      "text": "形を変えてもなんら不思議ではありません",
+      "start_seconds": 496.599,
+      "end_seconds": 503.28
+    },
+    {
+      "text": "。え、そして私たちの認知は時を経て形を",
+      "start_seconds": 498.879,
+      "end_seconds": 506.24
+    },
+    {
+      "text": "変えるのみならず常に不完全でもあります",
+      "start_seconds": 503.28,
+      "end_seconds": 508.039
+    },
+    {
+      "text": "。",
+      "start_seconds": 506.24,
+      "end_seconds": 511.159
+    },
+    {
+      "text": "え、よくですね、え、私たちは物事の信憑",
+      "start_seconds": 508.039,
+      "end_seconds": 514.519
+    },
+    {
+      "text": "性を評価する際にそれが事実か否かで判断",
+      "start_seconds": 511.159,
+      "end_seconds": 517.479
+    },
+    {
+      "text": "する傾向にありますが、仮にそれが事実で",
+      "start_seconds": 514.519,
+      "end_seconds": 520.279
+    },
+    {
+      "text": "あるからと言って、それが現実の全てを",
+      "start_seconds": 517.479,
+      "end_seconds": 523.44
+    },
+    {
+      "text": "正確に反映しているとは限りません。え、",
+      "start_seconds": 520.279,
+      "end_seconds": 528.279
+    },
+    {
+      "text": "例えば、え、僕はICの2年生である。え",
+      "start_seconds": 523.44,
+      "end_seconds": 530.9590000000001
+    },
+    {
+      "text": "、この事実は、あ、これはこの明題は紛れ",
+      "start_seconds": 528.279,
+      "end_seconds": 534.32
+    },
+    {
+      "text": "もなく事実ですが、え、この文章だけでは",
+      "start_seconds": 530.959,
+      "end_seconds": 537.64
+    },
+    {
+      "text": "僕はIUに2時間をかけて通学しているや",
+      "start_seconds": 534.32,
+      "end_seconds": 540.519
+    },
+    {
+      "text": "僕はガチ性であるのだといった、ま、他の",
+      "start_seconds": 537.64,
+      "end_seconds": 543.76
+    },
+    {
+      "text": "事実を取りぼしていて、え、この文章だけ",
+      "start_seconds": 540.519,
+      "end_seconds": 546.88
+    },
+    {
+      "text": "では現実をある偏った側面で眺めている",
+      "start_seconds": 543.76,
+      "end_seconds": 550.04
+    },
+    {
+      "text": "ことになります。え、図形を用いて考えて",
+      "start_seconds": 546.88,
+      "end_seconds": 554.36
+    },
+    {
+      "text": "みましょう。え、仮に同一の物体を同様の",
+      "start_seconds": 550.04,
+      "end_seconds": 557.16
+    },
+    {
+      "text": "性確性で眺めていたとしても、え、それを",
+      "start_seconds": 554.36,
+      "end_seconds": 560.16
+    },
+    {
+      "text": "見る角度が異なるだけで、え、その物体に",
+      "start_seconds": 557.16,
+      "end_seconds": 563.24
+    },
+    {
+      "text": "対する認識は、え、全く異なるものになっ",
+      "start_seconds": 560.16,
+      "end_seconds": 566.64
+    },
+    {
+      "text": "てしまいます。え、つまり私たちは物事",
+      "start_seconds": 563.24,
+      "end_seconds": 569.64
+    },
+    {
+      "text": "ある特定の側面から眺めていてはその全体",
+      "start_seconds": 566.64,
+      "end_seconds": 573.24
+    },
+    {
+      "text": "像を正確に把握することはできません。え",
+      "start_seconds": 569.64,
+      "end_seconds": 575.68
+    },
+    {
+      "text": "、このようにですね、私たちの認知はこれ",
+      "start_seconds": 573.24,
+      "end_seconds": 579.0
+    },
+    {
+      "text": "ほどまでに不完全であるからこそ私たちは",
+      "start_seconds": 575.68,
+      "end_seconds": 582.279
+    },
+    {
+      "text": "日々生活をする上で認知的柔軟性を手に",
+      "start_seconds": 579.0,
+      "end_seconds": 586.079
+    },
+    {
+      "text": "する必要があると考えています。え、うつ",
+      "start_seconds": 582.279,
+      "end_seconds": 589.079
+    },
+    {
+      "text": "とした感情で日々生活をしていた高校事態",
+      "start_seconds": 586.079,
+      "end_seconds": 592.3599999999999
+    },
+    {
+      "text": "の僕はこり固まった思考で現状を眺め、え",
+      "start_seconds": 589.079,
+      "end_seconds": 594.92
+    },
+    {
+      "text": "、そんな日々がずっと続くのだと考えてい",
+      "start_seconds": 592.36,
+      "end_seconds": 598.48
+    },
+    {
+      "text": "ました。え、まさか数年後にはその経験を",
+      "start_seconds": 594.92,
+      "end_seconds": 601.3199999999999
+    },
+    {
+      "text": "糧てに、え、研究活動に従事し、え、",
+      "start_seconds": 598.48,
+      "end_seconds": 603.5600000000001
+    },
+    {
+      "text": "そしてその一連の経緯をこのように皆さん",
+      "start_seconds": 601.32,
+      "end_seconds": 606.48
+    },
+    {
+      "text": "の前でお話をする日が来るとは考えてもい",
+      "start_seconds": 603.56,
+      "end_seconds": 609.4799999999999
+    },
+    {
+      "text": "ませんでした。え、ま、しかしとはいえ",
+      "start_seconds": 606.48,
+      "end_seconds": 612.36
+    },
+    {
+      "text": "ですね、やはり人生に苦難はつき物で皆",
+      "start_seconds": 609.48,
+      "end_seconds": 615.16
+    },
+    {
+      "text": "さんそれぞれがお持ちの悩みや苦しみを、",
+      "start_seconds": 612.36,
+      "end_seconds": 618.24
+    },
+    {
+      "text": "え、過小評価する気は一切ありません。え",
+      "start_seconds": 615.16,
+      "end_seconds": 621.64
+    },
+    {
+      "text": "、しかし私たちの認は大抵不完全で、え、",
+      "start_seconds": 618.24,
+      "end_seconds": 624.519
+    },
+    {
+      "text": "そして大抵の場合多くの側面を見落として",
+      "start_seconds": 621.64,
+      "end_seconds": 627.279
+    },
+    {
+      "text": "いることに気がつけば、え、彼に苦しみの",
+      "start_seconds": 624.519,
+      "end_seconds": 630.279
+    },
+    {
+      "text": "境地に陥っている際も、え、苦しみ続ける",
+      "start_seconds": 627.279,
+      "end_seconds": 634.12
+    },
+    {
+      "text": "必要はないかもしれません。え、よく街中",
+      "start_seconds": 630.279,
+      "end_seconds": 636.639
+    },
+    {
+      "text": "を歩いているとこのような赤と白のポール",
+      "start_seconds": 634.12,
+      "end_seconds": 639.8
+    },
+    {
+      "text": "を見ることがあるかと思います。え、一般",
+      "start_seconds": 636.639,
+      "end_seconds": 643.399
+    },
+    {
+      "text": "的な金属性のものであれば、一車の衝突を",
+      "start_seconds": 639.8,
+      "end_seconds": 645.88
+    },
+    {
+      "text": "受ければ傷つき、え、それが折れてしまえ",
+      "start_seconds": 643.399,
+      "end_seconds": 649.12
+    },
+    {
+      "text": "ば元に戻ることはありません。え、しかし",
+      "start_seconds": 645.88,
+      "end_seconds": 651.72
+    },
+    {
+      "text": "この柔軟性のあるポールであれば衝撃を",
+      "start_seconds": 649.12,
+      "end_seconds": 654.16
+    },
+    {
+      "text": "事在に受け流して過角なダメージを受ける",
+      "start_seconds": 651.72,
+      "end_seconds": 657.24
+    },
+    {
+      "text": "ことはないかもしれませんね。え、私たち",
+      "start_seconds": 654.16,
+      "end_seconds": 660.12
+    },
+    {
+      "text": "は認知もどう認知も同様にこれ固まった",
+      "start_seconds": 657.24,
+      "end_seconds": 662.6
+    },
+    {
+      "text": "思考をしていれば、え、日々の生活で",
+      "start_seconds": 660.12,
+      "end_seconds": 665.68
+    },
+    {
+      "text": "思いがけない出来事に直面した際に、え、",
+      "start_seconds": 662.6,
+      "end_seconds": 668.2
+    },
+    {
+      "text": "過な心理的負担を受けることがあるかも",
+      "start_seconds": 665.68,
+      "end_seconds": 669.5999999999999
+    },
+    {
+      "text": "しれません。",
+      "start_seconds": 668.2,
+      "end_seconds": 673.0790000000001
+    },
+    {
+      "text": "え、しかし認知的柔軟性を持ってその現状",
+      "start_seconds": 669.6,
+      "end_seconds": 676.2
+    },
+    {
+      "text": "に対して多格的な思考で持って対処すれば",
+      "start_seconds": 673.079,
+      "end_seconds": 679.56
+    },
+    {
+      "text": "、え、そこに頭を悩ませ続ける必要はない",
+      "start_seconds": 676.2,
+      "end_seconds": 682.0790000000001
+    },
+    {
+      "text": "かもしれません。",
+      "start_seconds": 679.56,
+      "end_seconds": 685.1999999999999
+    },
+    {
+      "text": "え、そしてこの認知的柔軟性は私たち個人",
+      "start_seconds": 682.079,
+      "end_seconds": 688.3199999999999
+    },
+    {
+      "text": "の助けになるのにならず、え、この世の中",
+      "start_seconds": 685.2,
+      "end_seconds": 691.6800000000001
+    },
+    {
+      "text": "をより正確に把握し、え、そしてより法設",
+      "start_seconds": 688.32,
+      "end_seconds": 695.24
+    },
+    {
+      "text": "的な社会を構築する上で必要な鍵になると",
+      "start_seconds": 691.68,
+      "end_seconds": 699.3599999999999
+    },
+    {
+      "text": "考えています。え、高校時代の同級生は、",
+      "start_seconds": 695.24,
+      "end_seconds": 701.88
+    },
+    {
+      "text": "え、僕を見てですね、え、学校をサボって",
+      "start_seconds": 699.36,
+      "end_seconds": 704.32
+    },
+    {
+      "text": "いるどうしようもないやと批判的に捉えて",
+      "start_seconds": 701.88,
+      "end_seconds": 707.48
+    },
+    {
+      "text": "いたかもしれません。え、しかし現状を",
+      "start_seconds": 704.32,
+      "end_seconds": 710.0
+    },
+    {
+      "text": "よく理解していた母親やカウンセラーの方",
+      "start_seconds": 707.48,
+      "end_seconds": 713.0
+    },
+    {
+      "text": "はその問題を俯瞰的な思考で持って、え、",
+      "start_seconds": 710.0,
+      "end_seconds": 715.44
+    },
+    {
+      "text": "見てくれており、え、そんな理解者こそ",
+      "start_seconds": 713.0,
+      "end_seconds": 718.24
+    },
+    {
+      "text": "苦しむ僕の大きな精神的支えになってい",
+      "start_seconds": 715.44,
+      "end_seconds": 722.0
+    },
+    {
+      "text": "ました。え、昨今のデジタル化合理化の",
+      "start_seconds": 718.24,
+      "end_seconds": 726.24
+    },
+    {
+      "text": "流れを受けて、え、物事を即かつ感情的に",
+      "start_seconds": 722.0,
+      "end_seconds": 728.8
+    },
+    {
+      "text": "眺める傾向が加速しているような印象を",
+      "start_seconds": 726.24,
+      "end_seconds": 732.399
+    },
+    {
+      "text": "受けます。え、しかし物事の表層に現れて",
+      "start_seconds": 728.8,
+      "end_seconds": 735.76
+    },
+    {
+      "text": "いるアクセスしやすい事実が、え、現実を",
+      "start_seconds": 732.399,
+      "end_seconds": 739.6
+    },
+    {
+      "text": "正確に反映したものだとは限りません。え",
+      "start_seconds": 735.76,
+      "end_seconds": 742.72
+    },
+    {
+      "text": "、私たち大学生は日々の学びを通じてこの",
+      "start_seconds": 739.6,
+      "end_seconds": 745.519
+    },
+    {
+      "text": "認知的柔軟性を手にする必要があるのでは",
+      "start_seconds": 742.72,
+      "end_seconds": 749.0790000000001
+    },
+    {
+      "text": "ないかと考えています。え、よく大学で",
+      "start_seconds": 745.519,
+      "end_seconds": 752.44
+    },
+    {
+      "text": "生活をしていると、え、大学での学びが",
+      "start_seconds": 749.079,
+      "end_seconds": 754.92
+    },
+    {
+      "text": "どのように役立つのか分からない。え、",
+      "start_seconds": 752.44,
+      "end_seconds": 758.5600000000001
+    },
+    {
+      "text": "そんな声をよく耳にします。",
+      "start_seconds": 754.92,
+      "end_seconds": 762.079
+    },
+    {
+      "text": "え、しかしですね、私は大学で学ぶ内容と",
+      "start_seconds": 758.56,
+      "end_seconds": 765.2399999999999
+    },
+    {
+      "text": "同等々内者それ以上に学ぶ過程が重要なの",
+      "start_seconds": 762.079,
+      "end_seconds": 768.519
+    },
+    {
+      "text": "ではないかと考えています。え、私たちは",
+      "start_seconds": 765.24,
+      "end_seconds": 771.5600000000001
+    },
+    {
+      "text": "日々学問を通じて新たな事実に触れるたび",
+      "start_seconds": 768.519,
+      "end_seconds": 775.0
+    },
+    {
+      "text": "に私たちの地兵線は広がり、え、私たちの",
+      "start_seconds": 771.56,
+      "end_seconds": 778.3199999999999
+    },
+    {
+      "text": "認知は柔軟性を帯びます。",
+      "start_seconds": 775.0,
+      "end_seconds": 781.16
+    },
+    {
+      "text": "え、おそらく大学は多くの人にとって社会",
+      "start_seconds": 778.32,
+      "end_seconds": 784.1990000000001
+    },
+    {
+      "text": "に出て生活をする前の最後の教育機会だと",
+      "start_seconds": 781.16,
+      "end_seconds": 788.16
+    },
+    {
+      "text": "思いますが、え、そこでは、え、この変化",
+      "start_seconds": 784.199,
+      "end_seconds": 791.8
+    },
+    {
+      "text": "の激しい世の中で自らを守り、え、そして",
+      "start_seconds": 788.16,
+      "end_seconds": 794.8389999999999
+    },
+    {
+      "text": "今面を極める現代社会をより正確に理解",
+      "start_seconds": 791.8,
+      "end_seconds": 797.959
+    },
+    {
+      "text": "する上で欠かせない認知的柔軟性を手に",
+      "start_seconds": 794.839,
+      "end_seconds": 800.1600000000001
+    },
+    {
+      "text": "する場として機能しているのではない",
+      "start_seconds": 797.959,
+      "end_seconds": 802.56
+    },
+    {
+      "text": "でしょうか。",
+      "start_seconds": 800.16,
+      "end_seconds": 804.959
+    },
+    {
+      "text": "え、おそらく僕を含めてですね、ここに",
+      "start_seconds": 802.56,
+      "end_seconds": 807.6389999999999
+    },
+    {
+      "text": "いる多くの若者は輝かしい経験などを",
+      "start_seconds": 804.959,
+      "end_seconds": 810.1199999999999
+    },
+    {
+      "text": "持ち合わせてはいないかもしれません。え",
+      "start_seconds": 807.639,
+      "end_seconds": 814.0
+    },
+    {
+      "text": "、しかし的柔軟性は学ぶ姿勢を絶さず未知",
+      "start_seconds": 810.12,
+      "end_seconds": 817.12
+    },
+    {
+      "text": "や完全と立ち向かう私たち学習者の特権で",
+      "start_seconds": 814.0,
+      "end_seconds": 820.12
+    },
+    {
+      "text": "あり、え、そのような能力こそ、え、未だ",
+      "start_seconds": 817.12,
+      "end_seconds": 823.0
+    },
+    {
+      "text": "光の当たらない社会の暗闇みにおいて、え",
+      "start_seconds": 820.12,
+      "end_seconds": 825.519
+    },
+    {
+      "text": "、希望とできる上で必要とされているので",
+      "start_seconds": 823.0,
+      "end_seconds": 829.0
+    },
+    {
+      "text": "はないでしょうか。え、この不理な世の中",
+      "start_seconds": 825.519,
+      "end_seconds": 832.12
+    },
+    {
+      "text": "には改善の余地が多分にあり、え、問題を",
+      "start_seconds": 829.0,
+      "end_seconds": 835.279
+    },
+    {
+      "text": "根本的に解決しようとするならば、表層的",
+      "start_seconds": 832.12,
+      "end_seconds": 839.399
+    },
+    {
+      "text": "な事実に惑わされず、え、現実の本質を",
+      "start_seconds": 835.279,
+      "end_seconds": 843.32
+    },
+    {
+      "text": "見抜く柔軟な思考が欠かせません。え、",
+      "start_seconds": 839.399,
+      "end_seconds": 846.48
+    },
+    {
+      "text": "大学電話の学びはいかにして社会に還元さ",
+      "start_seconds": 843.32,
+      "end_seconds": 850.1600000000001
+    },
+    {
+      "text": "れるのでしょうか?え、一度不登校という",
+      "start_seconds": 846.48,
+      "end_seconds": 853.5600000000001
+    },
+    {
+      "text": "社会の暗闇みを経験し、今や大学教育の",
+      "start_seconds": 850.16,
+      "end_seconds": 856.24
+    },
+    {
+      "text": "恩恵に、え、預かれている1人の人間とし",
+      "start_seconds": 853.56,
+      "end_seconds": 859.3199999999999
+    },
+    {
+      "text": "て僕はそんなことを念頭にこれまで学びに",
+      "start_seconds": 856.24,
+      "end_seconds": 862.44
+    },
+    {
+      "text": "派遣できました。ま、とはいえですね、え",
+      "start_seconds": 859.32,
+      "end_seconds": 864.88
+    },
+    {
+      "text": "、大学で学び意義は人それぞれだと思い",
+      "start_seconds": 862.44,
+      "end_seconds": 867.32
+    },
+    {
+      "text": "ますし、いかなるものであれ、同等に評価",
+      "start_seconds": 864.88,
+      "end_seconds": 870.36
+    },
+    {
+      "text": "されるべきだと考えています。え、しかし",
+      "start_seconds": 867.32,
+      "end_seconds": 873.519
+    },
+    {
+      "text": "同時に私たち1人1人が大学での学びを",
+      "start_seconds": 870.36,
+      "end_seconds": 876.8000000000001
+    },
+    {
+      "text": "通じて年知的柔軟性を手にし、え、それを",
+      "start_seconds": 873.519,
+      "end_seconds": 879.8
+    },
+    {
+      "text": "糧てに社会と関わり合うことでこの世の中",
+      "start_seconds": 876.8,
+      "end_seconds": 882.519
+    },
+    {
+      "text": "は育爆か良い方向へ向かうのではないかと",
+      "start_seconds": 879.8,
+      "end_seconds": 885.7199999999999
+    },
+    {
+      "text": "考えています。え、可能性に満ち溢れた皆",
+      "start_seconds": 882.519,
+      "end_seconds": 888.079
+    },
+    {
+      "text": "さんとこれからのより良い社会を作ること",
+      "start_seconds": 885.72,
+      "end_seconds": 890.9590000000001
+    },
+    {
+      "text": "を心より楽しみにしています。え、本日は",
+      "start_seconds": 888.079,
+      "end_seconds": 895.4499999999999
+    },
+    {
+      "text": "ご成聴ありがとうございました。[拍手]",
+      "start_seconds": 890.959,
+      "end_seconds": 895.4499999999999
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 898.015,
+      "end_seconds": 900.035
+    }
+  ],
+  "display_captions": [
+    {
+      "text": "[音楽]",
+      "start_seconds": 4.584,
+      "end_seconds": 6.603999999999999,
+      "id": "pln8htRwPvU-display-0001",
+      "segment_id": "pln8htRwPvU-ja-0001"
+    },
+    {
+      "text": "え、皆さんこんにちは。国際リスト共大学共用学",
+      "start_seconds": 18.0,
+      "end_seconds": 21.0,
+      "id": "pln8htRwPvU-display-0002",
+      "segment_id": "pln8htRwPvU-ja-0002"
+    },
+    {
+      "text": "2年の申します。",
+      "start_seconds": 21.48,
+      "end_seconds": 23.8,
+      "id": "pln8htRwPvU-display-0003",
+      "segment_id": "pln8htRwPvU-ja-0002"
+    },
+    {
+      "text": "ま、まず最初にですね、皆さんにお伝えし",
+      "start_seconds": 23.8,
+      "end_seconds": 26.08,
+      "id": "pln8htRwPvU-display-0004",
+      "segment_id": "pln8htRwPvU-ja-0003"
+    },
+    {
+      "text": "ておきたいんですけども、え、僕は従来の",
+      "start_seconds": 26.08,
+      "end_seconds": 28.84,
+      "id": "pln8htRwPvU-display-0005",
+      "segment_id": "pln8htRwPvU-ja-0003"
+    },
+    {
+      "text": "ポットスピーカーのような輝やかしい経歴",
+      "start_seconds": 28.84,
+      "end_seconds": 31.16,
+      "id": "pln8htRwPvU-display-0006",
+      "segment_id": "pln8htRwPvU-ja-0003"
+    },
+    {
+      "text": "はチャンスと、え、しかしですね、今回は",
+      "start_seconds": 31.16,
+      "end_seconds": 35.2,
+      "id": "pln8htRwPvU-display-0007",
+      "segment_id": "pln8htRwPvU-ja-0003"
+    },
+    {
+      "text": "、え、学生としての強みを生かして、え、",
+      "start_seconds": 35.2,
+      "end_seconds": 38.079,
+      "id": "pln8htRwPvU-display-0008",
+      "segment_id": "pln8htRwPvU-ja-0004"
+    },
+    {
+      "text": "皆さんとより近い目線に立ち、え、より",
+      "start_seconds": 38.079,
+      "end_seconds": 41.0,
+      "id": "pln8htRwPvU-display-0009",
+      "segment_id": "pln8htRwPvU-ja-0004"
+    },
+    {
+      "text": "汎用性のあるアイデアを共有できることを",
+      "start_seconds": 41.0,
+      "end_seconds": 43.48,
+      "id": "pln8htRwPvU-display-0010",
+      "segment_id": "pln8htRwPvU-ja-0004"
+    },
+    {
+      "text": "考えています。ま、とはいえですね、ま、",
+      "start_seconds": 43.48,
+      "end_seconds": 46.36,
+      "id": "pln8htRwPvU-display-0011",
+      "segment_id": "pln8htRwPvU-ja-0004"
+    },
+    {
+      "text": "皆さんは、あ、これから、え、よくス情の",
+      "start_seconds": 46.36,
+      "end_seconds": 49.239,
+      "id": "pln8htRwPvU-display-0012",
+      "segment_id": "pln8htRwPvU-ja-0005"
+    },
+    {
+      "text": "知れない僕のお話を聞いてくださるわけ",
+      "start_seconds": 49.239,
+      "end_seconds": 51.52,
+      "id": "pln8htRwPvU-display-0013",
+      "segment_id": "pln8htRwPvU-ja-0005"
+    },
+    {
+      "text": "ですので、ま、僕をいかに慶用できるかと",
+      "start_seconds": 51.52,
+      "end_seconds": 54.92,
+      "id": "pln8htRwPvU-display-0014",
+      "segment_id": "pln8htRwPvU-ja-0005"
+    },
+    {
+      "text": "考えたところですね、え、ガチ優勢が",
+      "start_seconds": 54.92,
+      "end_seconds": 57.8,
+      "id": "pln8htRwPvU-display-0015",
+      "segment_id": "pln8htRwPvU-ja-0005"
+    },
+    {
+      "text": "ふさしいのではないかと思いました。ま、",
+      "start_seconds": 57.8,
+      "end_seconds": 60.12,
+      "id": "pln8htRwPvU-display-0016",
+      "segment_id": "pln8htRwPvU-ja-0006"
+    },
+    {
+      "text": "別にふざけてるわけではないので、ま、",
+      "start_seconds": 60.12,
+      "end_seconds": 62.12,
+      "id": "pln8htRwPvU-display-0017",
+      "segment_id": "pln8htRwPvU-ja-0006"
+    },
+    {
+      "text": "是非ね、がっかりして帰らないでいただき",
+      "start_seconds": 62.12,
+      "end_seconds": 64.08,
+      "id": "pln8htRwPvU-display-0018",
+      "segment_id": "pln8htRwPvU-ja-0006"
+    },
+    {
+      "text": "たいんですけども、僕は、え、神奈川県の",
+      "start_seconds": 64.08,
+      "end_seconds": 67.08,
+      "id": "pln8htRwPvU-display-0019",
+      "segment_id": "pln8htRwPvU-ja-0006"
+    },
+    {
+      "text": "厚木市というところから、え、電車で2",
+      "start_seconds": 67.08,
+      "end_seconds": 69.84,
+      "id": "pln8htRwPvU-display-0020",
+      "segment_id": "pln8htRwPvU-ja-0007"
+    },
+    {
+      "text": "時間ほどかけて、え、通学をしていますの",
+      "start_seconds": 69.84,
+      "end_seconds": 72.32,
+      "id": "pln8htRwPvU-display-0021",
+      "segment_id": "pln8htRwPvU-ja-0007"
+    },
+    {
+      "text": "で、あの、授業の、あ、すいません。電車",
+      "start_seconds": 72.32,
+      "end_seconds": 74.759,
+      "id": "pln8htRwPvU-display-0022",
+      "segment_id": "pln8htRwPvU-ja-0007"
+    },
+    {
+      "text": "の遅延などで授業に遅刻することがない",
+      "start_seconds": 74.759,
+      "end_seconds": 77.2,
+      "id": "pln8htRwPvU-display-0023",
+      "segment_id": "pln8htRwPvU-ja-0007"
+    },
+    {
+      "text": "ように、え、授業開始の1時間前には大学",
+      "start_seconds": 77.2,
+      "end_seconds": 80.28,
+      "id": "pln8htRwPvU-display-0024",
+      "segment_id": "pln8htRwPvU-ja-0008"
+    },
+    {
+      "text": "について図書館で勉強するようにしてい",
+      "start_seconds": 80.28,
+      "end_seconds": 82.88,
+      "id": "pln8htRwPvU-display-0025",
+      "segment_id": "pln8htRwPvU-ja-0008"
+    },
+    {
+      "text": "ます。で、一方、え、帰りはあの夕方に",
+      "start_seconds": 82.88,
+      "end_seconds": 86.119,
+      "id": "pln8htRwPvU-display-0026",
+      "segment_id": "pln8htRwPvU-ja-0008"
+    },
+    {
+      "text": "なると、え、北クラッシュの満員電車の",
+      "start_seconds": 86.119,
+      "end_seconds": 88.72,
+      "id": "pln8htRwPvU-display-0027",
+      "segment_id": "pln8htRwPvU-ja-0008"
+    },
+    {
+      "text": "着き込まれてしまいますので、え、事後が",
+      "start_seconds": 88.72,
+      "end_seconds": 92.04,
+      "id": "pln8htRwPvU-display-0028",
+      "segment_id": "pln8htRwPvU-ja-0009"
+    },
+    {
+      "text": "夕方まである際は夜の7時ぐらいまで大学",
+      "start_seconds": 92.04,
+      "end_seconds": 95.0,
+      "id": "pln8htRwPvU-display-0029",
+      "segment_id": "pln8htRwPvU-ja-0009"
+    },
+    {
+      "text": "にいるようにしています。ま、そんな僕を",
+      "start_seconds": 95.0,
+      "end_seconds": 98.2,
+      "id": "pln8htRwPvU-display-0030",
+      "segment_id": "pln8htRwPvU-ja-0009"
+    },
+    {
+      "text": "見かけてですね、あの、よくでは図書館の",
+      "start_seconds": 98.2,
+      "end_seconds": 101.6,
+      "id": "pln8htRwPvU-display-0031",
+      "segment_id": "pln8htRwPvU-ja-0010"
+    },
+    {
+      "text": "住人、え、社畜あるいは学地などと噂され",
+      "start_seconds": 101.6,
+      "end_seconds": 105.52,
+      "id": "pln8htRwPvU-display-0032",
+      "segment_id": "pln8htRwPvU-ja-0010"
+    },
+    {
+      "text": "てるそうですが、ま、これは僕の壮絶な",
+      "start_seconds": 105.52,
+      "end_seconds": 108.36,
+      "id": "pln8htRwPvU-display-0033",
+      "segment_id": "pln8htRwPvU-ja-0010"
+    },
+    {
+      "text": "生活の一幕だったんですね。ま、とはいえ",
+      "start_seconds": 108.36,
+      "end_seconds": 111.68,
+      "id": "pln8htRwPvU-display-0034",
+      "segment_id": "pln8htRwPvU-ja-0011"
+    },
+    {
+      "text": "、え、これまで2年間このような生活をし",
+      "start_seconds": 111.68,
+      "end_seconds": 114.24,
+      "id": "pln8htRwPvU-display-0035",
+      "segment_id": "pln8htRwPvU-ja-0011"
+    },
+    {
+      "text": "て来れたのも、ま、1に僕が大学での学び",
+      "start_seconds": 114.24,
+      "end_seconds": 117.52,
+      "id": "pln8htRwPvU-display-0036",
+      "segment_id": "pln8htRwPvU-ja-0011"
+    },
+    {
+      "text": "に価値を見出すことができたからでした。",
+      "start_seconds": 117.52,
+      "end_seconds": 121.28,
+      "id": "pln8htRwPvU-display-0037",
+      "segment_id": "pln8htRwPvU-ja-0012"
+    },
+    {
+      "text": "え、しかし、え、これまでもこのように、",
+      "start_seconds": 121.28,
+      "end_seconds": 123.64,
+      "id": "pln8htRwPvU-display-0038",
+      "segment_id": "pln8htRwPvU-ja-0013"
+    },
+    {
+      "text": "え、大学で、え、すいません。に、え、",
+      "start_seconds": 123.64,
+      "end_seconds": 126.56,
+      "id": "pln8htRwPvU-display-0039",
+      "segment_id": "pln8htRwPvU-ja-0013"
+    },
+    {
+      "text": "価値を見出す優等生だったかと言われると",
+      "start_seconds": 126.56,
+      "end_seconds": 128.759,
+      "id": "pln8htRwPvU-display-0040",
+      "segment_id": "pln8htRwPvU-ja-0013"
+    },
+    {
+      "text": "、ま、実はそんなことはなくてですね、え",
+      "start_seconds": 128.759,
+      "end_seconds": 131.28,
+      "id": "pln8htRwPvU-display-0041",
+      "segment_id": "pln8htRwPvU-ja-0013"
+    },
+    {
+      "text": "、高校時代には、え、いわゆる不登校の",
+      "start_seconds": 131.28,
+      "end_seconds": 133.68,
+      "id": "pln8htRwPvU-display-0042",
+      "segment_id": "pln8htRwPvU-ja-0014"
+    },
+    {
+      "text": "状態に陥っていました。え、当時の様子を",
+      "start_seconds": 133.68,
+      "end_seconds": 137.36,
+      "id": "pln8htRwPvU-display-0043",
+      "segment_id": "pln8htRwPvU-ja-0014"
+    },
+    {
+      "text": "少し、え、お話しすると、え、家に誰もい",
+      "start_seconds": 137.36,
+      "end_seconds": 140.48,
+      "id": "pln8htRwPvU-display-0044",
+      "segment_id": "pln8htRwPvU-ja-0014"
+    },
+    {
+      "text": "なくなった昼過ぎに目を覚すと、え、その",
+      "start_seconds": 140.48,
+      "end_seconds": 144.319,
+      "id": "pln8htRwPvU-display-0045",
+      "segment_id": "pln8htRwPvU-ja-0015"
+    },
+    {
+      "text": "まま、え、スマホでYouTubeや映画",
+      "start_seconds": 144.319,
+      "end_seconds": 146.44,
+      "id": "pln8htRwPvU-display-0046",
+      "segment_id": "pln8htRwPvU-ja-0015"
+    },
+    {
+      "text": "なんかを見たり、え、そしてたまに、え、",
+      "start_seconds": 146.44,
+      "end_seconds": 148.36,
+      "id": "pln8htRwPvU-display-0047",
+      "segment_id": "pln8htRwPvU-ja-0015"
+    },
+    {
+      "text": "本読んだりして、え、過ごし、え、そして",
+      "start_seconds": 148.36,
+      "end_seconds": 151.4,
+      "id": "pln8htRwPvU-display-0048",
+      "segment_id": "pln8htRwPvU-ja-0015"
+    },
+    {
+      "text": "家族みんながね、静まった深夜に僕も眠く",
+      "start_seconds": 151.4,
+      "end_seconds": 154.12,
+      "id": "pln8htRwPvU-display-0049",
+      "segment_id": "pln8htRwPvU-ja-0016"
+    },
+    {
+      "text": "なって眠るという、え、そんな生活を送っ",
+      "start_seconds": 154.12,
+      "end_seconds": 156.599,
+      "id": "pln8htRwPvU-display-0050",
+      "segment_id": "pln8htRwPvU-ja-0016"
+    },
+    {
+      "text": "ていました。え、このように聞く人が聞け",
+      "start_seconds": 156.599,
+      "end_seconds": 159.64,
+      "id": "pln8htRwPvU-display-0051",
+      "segment_id": "pln8htRwPvU-ja-0016"
+    },
+    {
+      "text": "ば、あの、失席が飛んできそうな生活を",
+      "start_seconds": 159.64,
+      "end_seconds": 162.28,
+      "id": "pln8htRwPvU-display-0052",
+      "segment_id": "pln8htRwPvU-ja-0016"
+    },
+    {
+      "text": "送っていたわけなんですが、ま、これには",
+      "start_seconds": 162.28,
+      "end_seconds": 164.4,
+      "id": "pln8htRwPvU-display-0053",
+      "segment_id": "pln8htRwPvU-ja-0017"
+    },
+    {
+      "text": "、え、そうせざる得ない日常があったと",
+      "start_seconds": 164.4,
+      "end_seconds": 166.64,
+      "id": "pln8htRwPvU-display-0054",
+      "segment_id": "pln8htRwPvU-ja-0017"
+    },
+    {
+      "text": "言っても良いかと思います。え、僕がなぜ",
+      "start_seconds": 166.64,
+      "end_seconds": 170.2,
+      "id": "pln8htRwPvU-display-0055",
+      "segment_id": "pln8htRwPvU-ja-0017"
+    },
+    {
+      "text": "不登校だったのか、え、要因をいくつか",
+      "start_seconds": 170.2,
+      "end_seconds": 172.68,
+      "id": "pln8htRwPvU-display-0056",
+      "segment_id": "pln8htRwPvU-ja-0017"
+    },
+    {
+      "text": "考えてみると、え、まず1つ目には、え、",
+      "start_seconds": 172.68,
+      "end_seconds": 175.56,
+      "id": "pln8htRwPvU-display-0057",
+      "segment_id": "pln8htRwPvU-ja-0018"
+    },
+    {
+      "text": "僕自身の繊細な性格による、え、心理的な",
+      "start_seconds": 175.56,
+      "end_seconds": 178.8,
+      "id": "pln8htRwPvU-display-0058",
+      "segment_id": "pln8htRwPvU-ja-0018"
+    },
+    {
+      "text": "不安定さ、え、そしてそれによる人間関係",
+      "start_seconds": 178.8,
+      "end_seconds": 182.68,
+      "id": "pln8htRwPvU-display-0059",
+      "segment_id": "pln8htRwPvU-ja-0018"
+    },
+    {
+      "text": "構築への不安と恐怖、え、あるいは、え、",
+      "start_seconds": 182.68,
+      "end_seconds": 186.159,
+      "id": "pln8htRwPvU-display-0060",
+      "segment_id": "pln8htRwPvU-ja-0019"
+    },
+    {
+      "text": "従来の日本教育への会議、ま、他にもです",
+      "start_seconds": 186.159,
+      "end_seconds": 189.76,
+      "id": "pln8htRwPvU-display-0061",
+      "segment_id": "pln8htRwPvU-ja-0019"
+    },
+    {
+      "text": "ね、え、様々な要因が積み重なって自分の",
+      "start_seconds": 189.76,
+      "end_seconds": 193.04,
+      "id": "pln8htRwPvU-display-0062",
+      "segment_id": "pln8htRwPvU-ja-0019"
+    },
+    {
+      "text": "人生に対して、え、失望していたこと",
+      "start_seconds": 193.04,
+      "end_seconds": 195.239,
+      "id": "pln8htRwPvU-display-0063",
+      "segment_id": "pln8htRwPvU-ja-0020"
+    },
+    {
+      "text": "が挙げられるかと思います。え、しかし",
+      "start_seconds": 195.239,
+      "end_seconds": 198.799,
+      "id": "pln8htRwPvU-display-0064",
+      "segment_id": "pln8htRwPvU-ja-0020"
+    },
+    {
+      "text": "その後周囲のもあり、1年間のギャップ",
+      "start_seconds": 198.799,
+      "end_seconds": 201.48,
+      "id": "pln8htRwPvU-display-0065",
+      "segment_id": "pln8htRwPvU-ja-0020"
+    },
+    {
+      "text": "イヤを経てIQへ入学することができまし",
+      "start_seconds": 201.48,
+      "end_seconds": 204.4,
+      "id": "pln8htRwPvU-display-0066",
+      "segment_id": "pln8htRwPvU-ja-0020"
+    },
+    {
+      "text": "た。",
+      "start_seconds": 204.4,
+      "end_seconds": 206.159,
+      "id": "pln8htRwPvU-display-0067",
+      "segment_id": "pln8htRwPvU-ja-0021"
+    },
+    {
+      "text": "え、入学した僕は、え、自分自身の不登校",
+      "start_seconds": 206.159,
+      "end_seconds": 208.959,
+      "id": "pln8htRwPvU-display-0068",
+      "segment_id": "pln8htRwPvU-ja-0022"
+    },
+    {
+      "text": "経験に関して客観的に捉え、え、そして",
+      "start_seconds": 208.959,
+      "end_seconds": 212.0,
+      "id": "pln8htRwPvU-display-0069",
+      "segment_id": "pln8htRwPvU-ja-0022"
+    },
+    {
+      "text": "その現象を教育学的な文脈で、え、学び",
+      "start_seconds": 212.0,
+      "end_seconds": 215.4,
+      "id": "pln8htRwPvU-display-0070",
+      "segment_id": "pln8htRwPvU-ja-0022"
+    },
+    {
+      "text": "たいと考えていましたので、え、学校心理",
+      "start_seconds": 215.4,
+      "end_seconds": 218.76,
+      "id": "pln8htRwPvU-display-0071",
+      "segment_id": "pln8htRwPvU-ja-0023"
+    },
+    {
+      "text": "学の授業を理習しました。え、その授業を",
+      "start_seconds": 218.76,
+      "end_seconds": 222.84,
+      "id": "pln8htRwPvU-display-0072",
+      "segment_id": "pln8htRwPvU-ja-0023"
+    },
+    {
+      "text": "一緒に理習していた友人とは授業後も、え",
+      "start_seconds": 222.84,
+      "end_seconds": 225.599,
+      "id": "pln8htRwPvU-display-0073",
+      "segment_id": "pln8htRwPvU-ja-0023"
+    },
+    {
+      "text": "、日本教育に関して、え、議論をしていた",
+      "start_seconds": 225.599,
+      "end_seconds": 228.159,
+      "id": "pln8htRwPvU-display-0074",
+      "segment_id": "pln8htRwPvU-ja-0024"
+    },
+    {
+      "text": "んですが、え、そんな僕らを見た、え、",
+      "start_seconds": 228.159,
+      "end_seconds": 230.799,
+      "id": "pln8htRwPvU-display-0075",
+      "segment_id": "pln8htRwPvU-ja-0024"
+    },
+    {
+      "text": "担当教員の先生はある日、え、もしよかっ",
+      "start_seconds": 230.799,
+      "end_seconds": 233.76,
+      "id": "pln8htRwPvU-display-0076",
+      "segment_id": "pln8htRwPvU-ja-0024"
+    },
+    {
+      "text": "たら一緒に研究してみないかと、え、誘っ",
+      "start_seconds": 233.76,
+      "end_seconds": 236.4,
+      "id": "pln8htRwPvU-display-0077",
+      "segment_id": "pln8htRwPvU-ja-0024"
+    },
+    {
+      "text": "てくださいました。え、僕は高校時代、え",
+      "start_seconds": 236.4,
+      "end_seconds": 240.079,
+      "id": "pln8htRwPvU-display-0078",
+      "segment_id": "pln8htRwPvU-ja-0025"
+    },
+    {
+      "text": "、不登校に陥っていたわけですが、え、",
+      "start_seconds": 240.079,
+      "end_seconds": 242.72,
+      "id": "pln8htRwPvU-display-0079",
+      "segment_id": "pln8htRwPvU-ja-0025"
+    },
+    {
+      "text": "大学でも、え、同様に、ええ、留年や大学",
+      "start_seconds": 242.72,
+      "end_seconds": 246.76,
+      "id": "pln8htRwPvU-display-0080",
+      "segment_id": "pln8htRwPvU-ja-0025"
+    },
+    {
+      "text": "などといった不適用行動が社会的な問題と",
+      "start_seconds": 246.76,
+      "end_seconds": 250.0,
+      "id": "pln8htRwPvU-display-0081",
+      "segment_id": "pln8htRwPvU-ja-0026"
+    },
+    {
+      "text": "なっていることを知り、え、僕は大学的に",
+      "start_seconds": 250.0,
+      "end_seconds": 253.319,
+      "id": "pln8htRwPvU-display-0082",
+      "segment_id": "pln8htRwPvU-ja-0026"
+    },
+    {
+      "text": "関する、え、研究を行いました。",
+      "start_seconds": 253.319,
+      "end_seconds": 257.239,
+      "id": "pln8htRwPvU-display-0083",
+      "segment_id": "pln8htRwPvU-ja-0026"
+    },
+    {
+      "text": "え、そしてその後もありがたいことに、え",
+      "start_seconds": 257.239,
+      "end_seconds": 259.44,
+      "id": "pln8htRwPvU-display-0084",
+      "segment_id": "pln8htRwPvU-ja-0027"
+    },
+    {
+      "text": "、様々な機会に恵まれ、え、今年の8月に",
+      "start_seconds": 259.44,
+      "end_seconds": 263.199,
+      "id": "pln8htRwPvU-display-0085",
+      "segment_id": "pln8htRwPvU-ja-0027"
+    },
+    {
+      "text": "は、え、ヨーロッパ健康心理学会で、え、",
+      "start_seconds": 263.199,
+      "end_seconds": 266.28,
+      "id": "pln8htRwPvU-display-0086",
+      "segment_id": "pln8htRwPvU-ja-0027"
+    },
+    {
+      "text": "研究するに至りました。",
+      "start_seconds": 266.28,
+      "end_seconds": 269.32,
+      "id": "pln8htRwPvU-display-0087",
+      "segment_id": "pln8htRwPvU-ja-0028"
+    },
+    {
+      "text": "え、おそらくですね、え、これらの一連の",
+      "start_seconds": 269.32,
+      "end_seconds": 271.639,
+      "id": "pln8htRwPvU-display-0088",
+      "segment_id": "pln8htRwPvU-ja-0029"
+    },
+    {
+      "text": "経験は今後研究者としての道歩上めで、え",
+      "start_seconds": 271.639,
+      "end_seconds": 275.16,
+      "id": "pln8htRwPvU-display-0089",
+      "segment_id": "pln8htRwPvU-ja-0029"
+    },
+    {
+      "text": "、確かなアドバンテージになると思います",
+      "start_seconds": 275.16,
+      "end_seconds": 277.52,
+      "id": "pln8htRwPvU-display-0090",
+      "segment_id": "pln8htRwPvU-ja-0029"
+    },
+    {
+      "text": "し、え、そしてこの一連の経験は過去の",
+      "start_seconds": 277.52,
+      "end_seconds": 280.639,
+      "id": "pln8htRwPvU-display-0091",
+      "segment_id": "pln8htRwPvU-ja-0029"
+    },
+    {
+      "text": "苦境を、え、自らの使命へと消化させた、",
+      "start_seconds": 280.639,
+      "end_seconds": 284.199,
+      "id": "pln8htRwPvU-display-0092",
+      "segment_id": "pln8htRwPvU-ja-0030"
+    },
+    {
+      "text": "え、一例として見ることができるかもしれ",
+      "start_seconds": 284.199,
+      "end_seconds": 287.0,
+      "id": "pln8htRwPvU-display-0093",
+      "segment_id": "pln8htRwPvU-ja-0030"
+    },
+    {
+      "text": "ません。",
+      "start_seconds": 287.0,
+      "end_seconds": 288.96,
+      "id": "pln8htRwPvU-display-0094",
+      "segment_id": "pln8htRwPvU-ja-0030"
+    },
+    {
+      "text": "え、確かにこういった話は、え、聞いてい",
+      "start_seconds": 288.96,
+      "end_seconds": 291.44,
+      "id": "pln8htRwPvU-display-0095",
+      "segment_id": "pln8htRwPvU-ja-0031"
+    },
+    {
+      "text": "て明解で興味をそるかもしれません。え、",
+      "start_seconds": 291.44,
+      "end_seconds": 294.759,
+      "id": "pln8htRwPvU-display-0096",
+      "segment_id": "pln8htRwPvU-ja-0031"
+    },
+    {
+      "text": "しかしこのような話で終わらせてしまって",
+      "start_seconds": 294.759,
+      "end_seconds": 297.0,
+      "id": "pln8htRwPvU-display-0097",
+      "segment_id": "pln8htRwPvU-ja-0031"
+    },
+    {
+      "text": "は仮に今苦しむことがあっても後にその",
+      "start_seconds": 297.0,
+      "end_seconds": 300.52,
+      "id": "pln8htRwPvU-display-0098",
+      "segment_id": "pln8htRwPvU-ja-0031"
+    },
+    {
+      "text": "経験は報われるのだという、え、確かに",
+      "start_seconds": 300.52,
+      "end_seconds": 303.16,
+      "id": "pln8htRwPvU-display-0099",
+      "segment_id": "pln8htRwPvU-ja-0032"
+    },
+    {
+      "text": "楽観的であるものの、え、少し目責任な",
+      "start_seconds": 303.16,
+      "end_seconds": 306.28,
+      "id": "pln8htRwPvU-display-0100",
+      "segment_id": "pln8htRwPvU-ja-0032"
+    },
+    {
+      "text": "メッセージを残して終わることになって",
+      "start_seconds": 306.28,
+      "end_seconds": 308.44,
+      "id": "pln8htRwPvU-display-0101",
+      "segment_id": "pln8htRwPvU-ja-0032"
+    },
+    {
+      "text": "しまうかと思います。え、ですので、え、",
+      "start_seconds": 308.44,
+      "end_seconds": 310.88,
+      "id": "pln8htRwPvU-display-0102",
+      "segment_id": "pln8htRwPvU-ja-0032"
+    },
+    {
+      "text": "これからは、え、この話を少し押しべて、",
+      "start_seconds": 310.88,
+      "end_seconds": 314.479,
+      "id": "pln8htRwPvU-display-0103",
+      "segment_id": "pln8htRwPvU-ja-0033"
+    },
+    {
+      "text": "え、より普遍的なメッセージを共有する",
+      "start_seconds": 314.479,
+      "end_seconds": 316.68,
+      "id": "pln8htRwPvU-display-0104",
+      "segment_id": "pln8htRwPvU-ja-0033"
+    },
+    {
+      "text": "ことに時間を使いたいと思います。え、実",
+      "start_seconds": 316.68,
+      "end_seconds": 320.12,
+      "id": "pln8htRwPvU-display-0105",
+      "segment_id": "pln8htRwPvU-ja-0033"
+    },
+    {
+      "text": "はこの話には続きがあります。",
+      "start_seconds": 320.12,
+      "end_seconds": 324.36,
+      "id": "pln8htRwPvU-display-0106",
+      "segment_id": "pln8htRwPvU-ja-0034"
+    },
+    {
+      "text": "え、様々なクランを経て夢のICに入学",
+      "start_seconds": 324.36,
+      "end_seconds": 327.24,
+      "id": "pln8htRwPvU-display-0107",
+      "segment_id": "pln8htRwPvU-ja-0035"
+    },
+    {
+      "text": "することができた僕は胸を高ならせてい",
+      "start_seconds": 327.24,
+      "end_seconds": 329.8,
+      "id": "pln8htRwPvU-display-0108",
+      "segment_id": "pln8htRwPvU-ja-0035"
+    },
+    {
+      "text": "ました。一般的に大学生活というと、ま、",
+      "start_seconds": 329.8,
+      "end_seconds": 333.68,
+      "id": "pln8htRwPvU-display-0109",
+      "segment_id": "pln8htRwPvU-ja-0035"
+    },
+    {
+      "text": "人生の夏休みなどと言われることもあり、",
+      "start_seconds": 333.68,
+      "end_seconds": 336.6,
+      "id": "pln8htRwPvU-display-0110",
+      "segment_id": "pln8htRwPvU-ja-0036"
+    },
+    {
+      "text": "え、学業はそっちの気で恋愛や飲み会えに",
+      "start_seconds": 336.6,
+      "end_seconds": 339.479,
+      "id": "pln8htRwPvU-display-0111",
+      "segment_id": "pln8htRwPvU-ja-0036"
+    },
+    {
+      "text": "生きがいを見い出す、え、そんな話をよく",
+      "start_seconds": 339.479,
+      "end_seconds": 341.68,
+      "id": "pln8htRwPvU-display-0112",
+      "segment_id": "pln8htRwPvU-ja-0036"
+    },
+    {
+      "text": "聞きます。え、しかし、え、僕は学問的な",
+      "start_seconds": 341.68,
+      "end_seconds": 346.0,
+      "id": "pln8htRwPvU-display-0113",
+      "segment_id": "pln8htRwPvU-ja-0037"
+    },
+    {
+      "text": "好奇心に突きかされ、ま、そして過去の",
+      "start_seconds": 346.0,
+      "end_seconds": 348.88,
+      "id": "pln8htRwPvU-display-0114",
+      "segment_id": "pln8htRwPvU-ja-0037"
+    },
+    {
+      "text": "経験もありましたので、え、大学で豊かな",
+      "start_seconds": 348.88,
+      "end_seconds": 351.639,
+      "id": "pln8htRwPvU-display-0115",
+      "segment_id": "pln8htRwPvU-ja-0037"
+    },
+    {
+      "text": "人間関係を築づくことができるのか不安",
+      "start_seconds": 351.639,
+      "end_seconds": 354.28,
+      "id": "pln8htRwPvU-display-0116",
+      "segment_id": "pln8htRwPvU-ja-0038"
+    },
+    {
+      "text": "だったので、僕は入学時の決意として、え",
+      "start_seconds": 354.28,
+      "end_seconds": 358.039,
+      "id": "pln8htRwPvU-display-0117",
+      "segment_id": "pln8htRwPvU-ja-0038"
+    },
+    {
+      "text": "、僕は学問と結婚するのだっていう",
+      "start_seconds": 358.039,
+      "end_seconds": 360.44,
+      "id": "pln8htRwPvU-display-0118",
+      "segment_id": "pln8htRwPvU-ja-0038"
+    },
+    {
+      "text": "ちょっと1本間違えたらやばい人のような",
+      "start_seconds": 360.44,
+      "end_seconds": 362.72,
+      "id": "pln8htRwPvU-display-0119",
+      "segment_id": "pln8htRwPvU-ja-0038"
+    },
+    {
+      "text": "考えを持っていました。え、ま、しかし",
+      "start_seconds": 362.72,
+      "end_seconds": 365.72,
+      "id": "pln8htRwPvU-display-0120",
+      "segment_id": "pln8htRwPvU-ja-0039"
+    },
+    {
+      "text": "IQに入学して、ま、ここにいる素敵な皆",
+      "start_seconds": 365.72,
+      "end_seconds": 368.479,
+      "id": "pln8htRwPvU-display-0121",
+      "segment_id": "pln8htRwPvU-ja-0039"
+    },
+    {
+      "text": "さんの人間的な温かみに癒された僕は",
+      "start_seconds": 368.479,
+      "end_seconds": 371.68,
+      "id": "pln8htRwPvU-display-0122",
+      "segment_id": "pln8htRwPvU-ja-0039"
+    },
+    {
+      "text": "やがてやっぱり人間と結婚したいと考える",
+      "start_seconds": 371.68,
+      "end_seconds": 374.8,
+      "id": "pln8htRwPvU-display-0123",
+      "segment_id": "pln8htRwPvU-ja-0040"
+    },
+    {
+      "text": "ようになりました。ま、ちなみにですね、",
+      "start_seconds": 374.8,
+      "end_seconds": 377.24,
+      "id": "pln8htRwPvU-display-0124",
+      "segment_id": "pln8htRwPvU-ja-0040"
+    },
+    {
+      "text": "これは周一なレトリックになってまして、",
+      "start_seconds": 377.24,
+      "end_seconds": 379.919,
+      "id": "pln8htRwPvU-display-0125",
+      "segment_id": "pln8htRwPvU-ja-0040"
+    },
+    {
+      "text": "この学問との結婚っていうのは学問への",
+      "start_seconds": 379.919,
+      "end_seconds": 383.0,
+      "id": "pln8htRwPvU-display-0126",
+      "segment_id": "pln8htRwPvU-ja-0040"
+    },
+    {
+      "text": "コミットメント、先進を意味してるんです",
+      "start_seconds": 383.0,
+      "end_seconds": 385.16,
+      "id": "pln8htRwPvU-display-0127",
+      "segment_id": "pln8htRwPvU-ja-0041"
+    },
+    {
+      "text": "けど、ま、よくね、研究者とかを見てれば",
+      "start_seconds": 385.16,
+      "end_seconds": 388.08,
+      "id": "pln8htRwPvU-display-0128",
+      "segment_id": "pln8htRwPvU-ja-0041"
+    },
+    {
+      "text": "お分かりかと思うんですが、学問へ",
+      "start_seconds": 388.08,
+      "end_seconds": 390.12,
+      "id": "pln8htRwPvU-display-0129",
+      "segment_id": "pln8htRwPvU-ja-0041"
+    },
+    {
+      "text": "コミットするあまり、こう生活を犠牲にせ",
+      "start_seconds": 390.12,
+      "end_seconds": 393.12,
+      "id": "pln8htRwPvU-display-0130",
+      "segment_id": "pln8htRwPvU-ja-0041"
+    },
+    {
+      "text": "ざるを得ない、ま、状況もあるということ",
+      "start_seconds": 393.12,
+      "end_seconds": 395.28,
+      "id": "pln8htRwPvU-display-0131",
+      "segment_id": "pln8htRwPvU-ja-0042"
+    },
+    {
+      "text": "で、この学問との結婚は人間との結婚と",
+      "start_seconds": 395.28,
+      "end_seconds": 398.759,
+      "id": "pln8htRwPvU-display-0132",
+      "segment_id": "pln8htRwPvU-ja-0042"
+    },
+    {
+      "text": "退避関係あるわけですね。ま、間違っても",
+      "start_seconds": 398.759,
+      "end_seconds": 401.56,
+      "id": "pln8htRwPvU-display-0133",
+      "segment_id": "pln8htRwPvU-ja-0042"
+    },
+    {
+      "text": "誤解しないでいただきたいのは別にIQU",
+      "start_seconds": 401.56,
+      "end_seconds": 403.759,
+      "id": "pln8htRwPvU-display-0134",
+      "segment_id": "pln8htRwPvU-ja-0042"
+    },
+    {
+      "text": "の先生方がろな結婚生活を遅れていないと",
+      "start_seconds": 403.759,
+      "end_seconds": 406.639,
+      "id": "pln8htRwPvU-display-0135",
+      "segment_id": "pln8htRwPvU-ja-0043"
+    },
+    {
+      "text": "かそういうこと言いたいわけではないん",
+      "start_seconds": 406.639,
+      "end_seconds": 408.08,
+      "id": "pln8htRwPvU-display-0136",
+      "segment_id": "pln8htRwPvU-ja-0043"
+    },
+    {
+      "text": "ですけど、ま、要するにですね、え、IQ",
+      "start_seconds": 408.08,
+      "end_seconds": 411.0,
+      "id": "pln8htRwPvU-display-0137",
+      "segment_id": "pln8htRwPvU-ja-0043"
+    },
+    {
+      "text": "に入学して、ま、予想以上に人間社会に",
+      "start_seconds": 411.0,
+      "end_seconds": 414.08,
+      "id": "pln8htRwPvU-display-0138",
+      "segment_id": "pln8htRwPvU-ja-0043"
+    },
+    {
+      "text": "溶け込めてしまった僕はやがて、え、将来",
+      "start_seconds": 414.08,
+      "end_seconds": 417.479,
+      "id": "pln8htRwPvU-display-0139",
+      "segment_id": "pln8htRwPvU-ja-0044"
+    },
+    {
+      "text": "の道筋として、え、研究者、研究者として",
+      "start_seconds": 417.479,
+      "end_seconds": 420.8,
+      "id": "pln8htRwPvU-display-0140",
+      "segment_id": "pln8htRwPvU-ja-0044"
+    },
+    {
+      "text": "のキャリアと豊かな生活との間の葛藤に",
+      "start_seconds": 420.8,
+      "end_seconds": 424.0,
+      "id": "pln8htRwPvU-display-0141",
+      "segment_id": "pln8htRwPvU-ja-0044"
+    },
+    {
+      "text": "悩ませることになりました。ま、皆さんも",
+      "start_seconds": 424.0,
+      "end_seconds": 427.68,
+      "id": "pln8htRwPvU-display-0142",
+      "segment_id": "pln8htRwPvU-ja-0045"
+    },
+    {
+      "text": "ですね、もしかしたら、え、これまでの",
+      "start_seconds": 427.68,
+      "end_seconds": 429.759,
+      "id": "pln8htRwPvU-display-0143",
+      "segment_id": "pln8htRwPvU-ja-0045"
+    },
+    {
+      "text": "人生において自分自身の強固の",
+      "start_seconds": 429.759,
+      "end_seconds": 432.24,
+      "id": "pln8htRwPvU-display-0144",
+      "segment_id": "pln8htRwPvU-ja-0045"
+    },
+    {
+      "text": "アイデンティティだと信じていたものが",
+      "start_seconds": 432.24,
+      "end_seconds": 434.68,
+      "id": "pln8htRwPvU-display-0145",
+      "segment_id": "pln8htRwPvU-ja-0045"
+    },
+    {
+      "text": "何かをきっかけに揺らぐ、え、そんな経験",
+      "start_seconds": 434.68,
+      "end_seconds": 437.52,
+      "id": "pln8htRwPvU-display-0146",
+      "segment_id": "pln8htRwPvU-ja-0046"
+    },
+    {
+      "text": "をされたことがあるのではないかと思い",
+      "start_seconds": 437.52,
+      "end_seconds": 439.8,
+      "id": "pln8htRwPvU-display-0147",
+      "segment_id": "pln8htRwPvU-ja-0046"
+    },
+    {
+      "text": "ます。え、よくですね、人生において一貫",
+      "start_seconds": 439.8,
+      "end_seconds": 443.56,
+      "id": "pln8htRwPvU-display-0148",
+      "segment_id": "pln8htRwPvU-ja-0046"
+    },
+    {
+      "text": "性のある軸を持つことが重要だと語られる",
+      "start_seconds": 443.56,
+      "end_seconds": 446.44,
+      "id": "pln8htRwPvU-display-0149",
+      "segment_id": "pln8htRwPvU-ja-0046"
+    },
+    {
+      "text": "ことがありますが、え、ま、確かにそれは",
+      "start_seconds": 446.44,
+      "end_seconds": 448.879,
+      "id": "pln8htRwPvU-display-0150",
+      "segment_id": "pln8htRwPvU-ja-0047"
+    },
+    {
+      "text": "そうなんですが、それと同時に時には軌動",
+      "start_seconds": 448.879,
+      "end_seconds": 451.8,
+      "id": "pln8htRwPvU-display-0151",
+      "segment_id": "pln8htRwPvU-ja-0047"
+    },
+    {
+      "text": "から逸脱する柔軟性にも価値を見え出す",
+      "start_seconds": 451.8,
+      "end_seconds": 454.56,
+      "id": "pln8htRwPvU-display-0152",
+      "segment_id": "pln8htRwPvU-ja-0047"
+    },
+    {
+      "text": "べきではないかと考えています。",
+      "start_seconds": 454.56,
+      "end_seconds": 457.4,
+      "id": "pln8htRwPvU-display-0153",
+      "segment_id": "pln8htRwPvU-ja-0047"
+    },
+    {
+      "text": "え、そう考える理由としては第1に、え、",
+      "start_seconds": 457.4,
+      "end_seconds": 459.759,
+      "id": "pln8htRwPvU-display-0154",
+      "segment_id": "pln8htRwPvU-ja-0048"
+    },
+    {
+      "text": "私たちの認知は天気のように変わりうる",
+      "start_seconds": 459.759,
+      "end_seconds": 462.599,
+      "id": "pln8htRwPvU-display-0155",
+      "segment_id": "pln8htRwPvU-ja-0048"
+    },
+    {
+      "text": "ものだからというものがあります。",
+      "start_seconds": 462.599,
+      "end_seconds": 465.919,
+      "id": "pln8htRwPvU-display-0156",
+      "segment_id": "pln8htRwPvU-ja-0048"
+    },
+    {
+      "text": "え、僕は入学に際して、え、学問と結婚す",
+      "start_seconds": 465.919,
+      "end_seconds": 469.199,
+      "id": "pln8htRwPvU-display-0157",
+      "segment_id": "pln8htRwPvU-ja-0049"
+    },
+    {
+      "text": "べきだという認知をしていたわけですが、",
+      "start_seconds": 469.199,
+      "end_seconds": 471.879,
+      "id": "pln8htRwPvU-display-0158",
+      "segment_id": "pln8htRwPvU-ja-0049"
+    },
+    {
+      "text": "え、それには、え、僕は、え、こういう",
+      "start_seconds": 471.879,
+      "end_seconds": 474.639,
+      "id": "pln8htRwPvU-display-0159",
+      "segment_id": "pln8htRwPvU-ja-0049"
+    },
+    {
+      "text": "関係に乏しいという当時の、え、環境や",
+      "start_seconds": 474.639,
+      "end_seconds": 477.639,
+      "id": "pln8htRwPvU-display-0160",
+      "segment_id": "pln8htRwPvU-ja-0049"
+    },
+    {
+      "text": "あるいは僕は論理的思考に優れていると",
+      "start_seconds": 477.639,
+      "end_seconds": 480.28,
+      "id": "pln8htRwPvU-display-0161",
+      "segment_id": "pln8htRwPvU-ja-0050"
+    },
+    {
+      "text": "いう能力、え、他にもですね、様々な要因",
+      "start_seconds": 480.28,
+      "end_seconds": 483.319,
+      "id": "pln8htRwPvU-display-0162",
+      "segment_id": "pln8htRwPvU-ja-0050"
+    },
+    {
+      "text": "が、え、この認知に影響を与えていました",
+      "start_seconds": 483.319,
+      "end_seconds": 486.159,
+      "id": "pln8htRwPvU-display-0163",
+      "segment_id": "pln8htRwPvU-ja-0050"
+    },
+    {
+      "text": "。",
+      "start_seconds": 486.159,
+      "end_seconds": 487.12,
+      "id": "pln8htRwPvU-display-0164",
+      "segment_id": "pln8htRwPvU-ja-0050"
+    },
+    {
+      "text": "え、しかしここに示されたいずれの要因も",
+      "start_seconds": 487.12,
+      "end_seconds": 490.24,
+      "id": "pln8htRwPvU-display-0165",
+      "segment_id": "pln8htRwPvU-ja-0051"
+    },
+    {
+      "text": "下変つまり時間を経て形を変えるものです",
+      "start_seconds": 490.24,
+      "end_seconds": 493.319,
+      "id": "pln8htRwPvU-display-0166",
+      "segment_id": "pln8htRwPvU-ja-0051"
+    },
+    {
+      "text": "のでそれらの変化に応じて私たちの認知が",
+      "start_seconds": 493.319,
+      "end_seconds": 496.599,
+      "id": "pln8htRwPvU-display-0167",
+      "segment_id": "pln8htRwPvU-ja-0051"
+    },
+    {
+      "text": "形を変えてもなんら不思議ではありません",
+      "start_seconds": 496.599,
+      "end_seconds": 498.879,
+      "id": "pln8htRwPvU-display-0168",
+      "segment_id": "pln8htRwPvU-ja-0051"
+    },
+    {
+      "text": "。え、そして私たちの認知は時を経て形を",
+      "start_seconds": 498.879,
+      "end_seconds": 503.28,
+      "id": "pln8htRwPvU-display-0169",
+      "segment_id": "pln8htRwPvU-ja-0052"
+    },
+    {
+      "text": "変えるのみならず常に不完全でもあります",
+      "start_seconds": 503.28,
+      "end_seconds": 506.24,
+      "id": "pln8htRwPvU-display-0170",
+      "segment_id": "pln8htRwPvU-ja-0052"
+    },
+    {
+      "text": "。",
+      "start_seconds": 506.24,
+      "end_seconds": 508.039,
+      "id": "pln8htRwPvU-display-0171",
+      "segment_id": "pln8htRwPvU-ja-0052"
+    },
+    {
+      "text": "え、よくですね、え、私たちは物事の信憑",
+      "start_seconds": 508.039,
+      "end_seconds": 511.159,
+      "id": "pln8htRwPvU-display-0172",
+      "segment_id": "pln8htRwPvU-ja-0053"
+    },
+    {
+      "text": "性を評価する際にそれが事実か否かで判断",
+      "start_seconds": 511.159,
+      "end_seconds": 514.519,
+      "id": "pln8htRwPvU-display-0173",
+      "segment_id": "pln8htRwPvU-ja-0053"
+    },
+    {
+      "text": "する傾向にありますが、仮にそれが事実で",
+      "start_seconds": 514.519,
+      "end_seconds": 517.479,
+      "id": "pln8htRwPvU-display-0174",
+      "segment_id": "pln8htRwPvU-ja-0053"
+    },
+    {
+      "text": "あるからと言って、それが現実の全てを",
+      "start_seconds": 517.479,
+      "end_seconds": 520.279,
+      "id": "pln8htRwPvU-display-0175",
+      "segment_id": "pln8htRwPvU-ja-0054"
+    },
+    {
+      "text": "正確に反映しているとは限りません。え、",
+      "start_seconds": 520.279,
+      "end_seconds": 523.44,
+      "id": "pln8htRwPvU-display-0176",
+      "segment_id": "pln8htRwPvU-ja-0054"
+    },
+    {
+      "text": "例えば、え、僕はICの2年生である。え",
+      "start_seconds": 523.44,
+      "end_seconds": 528.279,
+      "id": "pln8htRwPvU-display-0177",
+      "segment_id": "pln8htRwPvU-ja-0054"
+    },
+    {
+      "text": "、この事実は、あ、これはこの明題は紛れ",
+      "start_seconds": 528.279,
+      "end_seconds": 530.959,
+      "id": "pln8htRwPvU-display-0178",
+      "segment_id": "pln8htRwPvU-ja-0055"
+    },
+    {
+      "text": "もなく事実ですが、え、この文章だけでは",
+      "start_seconds": 530.959,
+      "end_seconds": 534.32,
+      "id": "pln8htRwPvU-display-0179",
+      "segment_id": "pln8htRwPvU-ja-0055"
+    },
+    {
+      "text": "僕はIUに2時間をかけて通学しているや",
+      "start_seconds": 534.32,
+      "end_seconds": 537.64,
+      "id": "pln8htRwPvU-display-0180",
+      "segment_id": "pln8htRwPvU-ja-0055"
+    },
+    {
+      "text": "僕はガチ性であるのだといった、ま、他の",
+      "start_seconds": 537.64,
+      "end_seconds": 540.519,
+      "id": "pln8htRwPvU-display-0181",
+      "segment_id": "pln8htRwPvU-ja-0056"
+    },
+    {
+      "text": "事実を取りぼしていて、え、この文章だけ",
+      "start_seconds": 540.519,
+      "end_seconds": 543.76,
+      "id": "pln8htRwPvU-display-0182",
+      "segment_id": "pln8htRwPvU-ja-0056"
+    },
+    {
+      "text": "では現実をある偏った側面で眺めている",
+      "start_seconds": 543.76,
+      "end_seconds": 546.88,
+      "id": "pln8htRwPvU-display-0183",
+      "segment_id": "pln8htRwPvU-ja-0056"
+    },
+    {
+      "text": "ことになります。え、図形を用いて考えて",
+      "start_seconds": 546.88,
+      "end_seconds": 550.04,
+      "id": "pln8htRwPvU-display-0184",
+      "segment_id": "pln8htRwPvU-ja-0057"
+    },
+    {
+      "text": "みましょう。え、仮に同一の物体を同様の",
+      "start_seconds": 550.04,
+      "end_seconds": 554.36,
+      "id": "pln8htRwPvU-display-0185",
+      "segment_id": "pln8htRwPvU-ja-0057"
+    },
+    {
+      "text": "性確性で眺めていたとしても、え、それを",
+      "start_seconds": 554.36,
+      "end_seconds": 557.16,
+      "id": "pln8htRwPvU-display-0186",
+      "segment_id": "pln8htRwPvU-ja-0057"
+    },
+    {
+      "text": "見る角度が異なるだけで、え、その物体に",
+      "start_seconds": 557.16,
+      "end_seconds": 560.16,
+      "id": "pln8htRwPvU-display-0187",
+      "segment_id": "pln8htRwPvU-ja-0058"
+    },
+    {
+      "text": "対する認識は、え、全く異なるものになっ",
+      "start_seconds": 560.16,
+      "end_seconds": 563.24,
+      "id": "pln8htRwPvU-display-0188",
+      "segment_id": "pln8htRwPvU-ja-0058"
+    },
+    {
+      "text": "てしまいます。え、つまり私たちは物事",
+      "start_seconds": 563.24,
+      "end_seconds": 566.64,
+      "id": "pln8htRwPvU-display-0189",
+      "segment_id": "pln8htRwPvU-ja-0058"
+    },
+    {
+      "text": "ある特定の側面から眺めていてはその全体",
+      "start_seconds": 566.64,
+      "end_seconds": 569.64,
+      "id": "pln8htRwPvU-display-0190",
+      "segment_id": "pln8htRwPvU-ja-0059"
+    },
+    {
+      "text": "像を正確に把握することはできません。え",
+      "start_seconds": 569.64,
+      "end_seconds": 573.24,
+      "id": "pln8htRwPvU-display-0191",
+      "segment_id": "pln8htRwPvU-ja-0059"
+    },
+    {
+      "text": "、このようにですね、私たちの認知はこれ",
+      "start_seconds": 573.24,
+      "end_seconds": 575.68,
+      "id": "pln8htRwPvU-display-0192",
+      "segment_id": "pln8htRwPvU-ja-0059"
+    },
+    {
+      "text": "ほどまでに不完全であるからこそ私たちは",
+      "start_seconds": 575.68,
+      "end_seconds": 579.0,
+      "id": "pln8htRwPvU-display-0193",
+      "segment_id": "pln8htRwPvU-ja-0060"
+    },
+    {
+      "text": "日々生活をする上で認知的柔軟性を手に",
+      "start_seconds": 579.0,
+      "end_seconds": 582.279,
+      "id": "pln8htRwPvU-display-0194",
+      "segment_id": "pln8htRwPvU-ja-0060"
+    },
+    {
+      "text": "する必要があると考えています。え、うつ",
+      "start_seconds": 582.279,
+      "end_seconds": 586.079,
+      "id": "pln8htRwPvU-display-0195",
+      "segment_id": "pln8htRwPvU-ja-0060"
+    },
+    {
+      "text": "とした感情で日々生活をしていた高校事態",
+      "start_seconds": 586.079,
+      "end_seconds": 589.079,
+      "id": "pln8htRwPvU-display-0196",
+      "segment_id": "pln8htRwPvU-ja-0061"
+    },
+    {
+      "text": "の僕はこり固まった思考で現状を眺め、え",
+      "start_seconds": 589.079,
+      "end_seconds": 592.36,
+      "id": "pln8htRwPvU-display-0197",
+      "segment_id": "pln8htRwPvU-ja-0061"
+    },
+    {
+      "text": "、そんな日々がずっと続くのだと考えてい",
+      "start_seconds": 592.36,
+      "end_seconds": 594.92,
+      "id": "pln8htRwPvU-display-0198",
+      "segment_id": "pln8htRwPvU-ja-0061"
+    },
+    {
+      "text": "ました。え、まさか数年後にはその経験を",
+      "start_seconds": 594.92,
+      "end_seconds": 598.48,
+      "id": "pln8htRwPvU-display-0199",
+      "segment_id": "pln8htRwPvU-ja-0062"
+    },
+    {
+      "text": "糧てに、え、研究活動に従事し、え、",
+      "start_seconds": 598.48,
+      "end_seconds": 601.32,
+      "id": "pln8htRwPvU-display-0200",
+      "segment_id": "pln8htRwPvU-ja-0062"
+    },
+    {
+      "text": "そしてその一連の経緯をこのように皆さん",
+      "start_seconds": 601.32,
+      "end_seconds": 603.56,
+      "id": "pln8htRwPvU-display-0201",
+      "segment_id": "pln8htRwPvU-ja-0062"
+    },
+    {
+      "text": "の前でお話をする日が来るとは考えてもい",
+      "start_seconds": 603.56,
+      "end_seconds": 606.48,
+      "id": "pln8htRwPvU-display-0202",
+      "segment_id": "pln8htRwPvU-ja-0062"
+    },
+    {
+      "text": "ませんでした。え、ま、しかしとはいえ",
+      "start_seconds": 606.48,
+      "end_seconds": 609.48,
+      "id": "pln8htRwPvU-display-0203",
+      "segment_id": "pln8htRwPvU-ja-0063"
+    },
+    {
+      "text": "ですね、やはり人生に苦難はつき物で皆",
+      "start_seconds": 609.48,
+      "end_seconds": 612.36,
+      "id": "pln8htRwPvU-display-0204",
+      "segment_id": "pln8htRwPvU-ja-0063"
+    },
+    {
+      "text": "さんそれぞれがお持ちの悩みや苦しみを、",
+      "start_seconds": 612.36,
+      "end_seconds": 615.16,
+      "id": "pln8htRwPvU-display-0205",
+      "segment_id": "pln8htRwPvU-ja-0063"
+    },
+    {
+      "text": "え、過小評価する気は一切ありません。え",
+      "start_seconds": 615.16,
+      "end_seconds": 618.24,
+      "id": "pln8htRwPvU-display-0206",
+      "segment_id": "pln8htRwPvU-ja-0063"
+    },
+    {
+      "text": "、しかし私たちの認は大抵不完全で、え、",
+      "start_seconds": 618.24,
+      "end_seconds": 621.64,
+      "id": "pln8htRwPvU-display-0207",
+      "segment_id": "pln8htRwPvU-ja-0064"
+    },
+    {
+      "text": "そして大抵の場合多くの側面を見落として",
+      "start_seconds": 621.64,
+      "end_seconds": 624.519,
+      "id": "pln8htRwPvU-display-0208",
+      "segment_id": "pln8htRwPvU-ja-0064"
+    },
+    {
+      "text": "いることに気がつけば、え、彼に苦しみの",
+      "start_seconds": 624.519,
+      "end_seconds": 627.279,
+      "id": "pln8htRwPvU-display-0209",
+      "segment_id": "pln8htRwPvU-ja-0064"
+    },
+    {
+      "text": "境地に陥っている際も、え、苦しみ続ける",
+      "start_seconds": 627.279,
+      "end_seconds": 630.279,
+      "id": "pln8htRwPvU-display-0210",
+      "segment_id": "pln8htRwPvU-ja-0065"
+    },
+    {
+      "text": "必要はないかもしれません。え、よく街中",
+      "start_seconds": 630.279,
+      "end_seconds": 634.12,
+      "id": "pln8htRwPvU-display-0211",
+      "segment_id": "pln8htRwPvU-ja-0065"
+    },
+    {
+      "text": "を歩いているとこのような赤と白のポール",
+      "start_seconds": 634.12,
+      "end_seconds": 636.639,
+      "id": "pln8htRwPvU-display-0212",
+      "segment_id": "pln8htRwPvU-ja-0065"
+    },
+    {
+      "text": "を見ることがあるかと思います。え、一般",
+      "start_seconds": 636.639,
+      "end_seconds": 639.8,
+      "id": "pln8htRwPvU-display-0213",
+      "segment_id": "pln8htRwPvU-ja-0066"
+    },
+    {
+      "text": "的な金属性のものであれば、一車の衝突を",
+      "start_seconds": 639.8,
+      "end_seconds": 643.399,
+      "id": "pln8htRwPvU-display-0214",
+      "segment_id": "pln8htRwPvU-ja-0066"
+    },
+    {
+      "text": "受ければ傷つき、え、それが折れてしまえ",
+      "start_seconds": 643.399,
+      "end_seconds": 645.88,
+      "id": "pln8htRwPvU-display-0215",
+      "segment_id": "pln8htRwPvU-ja-0066"
+    },
+    {
+      "text": "ば元に戻ることはありません。え、しかし",
+      "start_seconds": 645.88,
+      "end_seconds": 649.12,
+      "id": "pln8htRwPvU-display-0216",
+      "segment_id": "pln8htRwPvU-ja-0067"
+    },
+    {
+      "text": "この柔軟性のあるポールであれば衝撃を",
+      "start_seconds": 649.12,
+      "end_seconds": 651.72,
+      "id": "pln8htRwPvU-display-0217",
+      "segment_id": "pln8htRwPvU-ja-0067"
+    },
+    {
+      "text": "事在に受け流して過角なダメージを受ける",
+      "start_seconds": 651.72,
+      "end_seconds": 654.16,
+      "id": "pln8htRwPvU-display-0218",
+      "segment_id": "pln8htRwPvU-ja-0067"
+    },
+    {
+      "text": "ことはないかもしれませんね。え、私たち",
+      "start_seconds": 654.16,
+      "end_seconds": 657.24,
+      "id": "pln8htRwPvU-display-0219",
+      "segment_id": "pln8htRwPvU-ja-0067"
+    },
+    {
+      "text": "は認知もどう認知も同様にこれ固まった",
+      "start_seconds": 657.24,
+      "end_seconds": 660.12,
+      "id": "pln8htRwPvU-display-0220",
+      "segment_id": "pln8htRwPvU-ja-0068"
+    },
+    {
+      "text": "思考をしていれば、え、日々の生活で",
+      "start_seconds": 660.12,
+      "end_seconds": 662.6,
+      "id": "pln8htRwPvU-display-0221",
+      "segment_id": "pln8htRwPvU-ja-0068"
+    },
+    {
+      "text": "思いがけない出来事に直面した際に、え、",
+      "start_seconds": 662.6,
+      "end_seconds": 665.68,
+      "id": "pln8htRwPvU-display-0222",
+      "segment_id": "pln8htRwPvU-ja-0068"
+    },
+    {
+      "text": "過な心理的負担を受けることがあるかも",
+      "start_seconds": 665.68,
+      "end_seconds": 668.2,
+      "id": "pln8htRwPvU-display-0223",
+      "segment_id": "pln8htRwPvU-ja-0068"
+    },
+    {
+      "text": "しれません。",
+      "start_seconds": 668.2,
+      "end_seconds": 669.6,
+      "id": "pln8htRwPvU-display-0224",
+      "segment_id": "pln8htRwPvU-ja-0069"
+    },
+    {
+      "text": "え、しかし認知的柔軟性を持ってその現状",
+      "start_seconds": 669.6,
+      "end_seconds": 673.079,
+      "id": "pln8htRwPvU-display-0225",
+      "segment_id": "pln8htRwPvU-ja-0070"
+    },
+    {
+      "text": "に対して多格的な思考で持って対処すれば",
+      "start_seconds": 673.079,
+      "end_seconds": 676.2,
+      "id": "pln8htRwPvU-display-0226",
+      "segment_id": "pln8htRwPvU-ja-0070"
+    },
+    {
+      "text": "、え、そこに頭を悩ませ続ける必要はない",
+      "start_seconds": 676.2,
+      "end_seconds": 679.56,
+      "id": "pln8htRwPvU-display-0227",
+      "segment_id": "pln8htRwPvU-ja-0070"
+    },
+    {
+      "text": "かもしれません。",
+      "start_seconds": 679.56,
+      "end_seconds": 682.079,
+      "id": "pln8htRwPvU-display-0228",
+      "segment_id": "pln8htRwPvU-ja-0071"
+    },
+    {
+      "text": "え、そしてこの認知的柔軟性は私たち個人",
+      "start_seconds": 682.079,
+      "end_seconds": 685.2,
+      "id": "pln8htRwPvU-display-0229",
+      "segment_id": "pln8htRwPvU-ja-0072"
+    },
+    {
+      "text": "の助けになるのにならず、え、この世の中",
+      "start_seconds": 685.2,
+      "end_seconds": 688.32,
+      "id": "pln8htRwPvU-display-0230",
+      "segment_id": "pln8htRwPvU-ja-0072"
+    },
+    {
+      "text": "をより正確に把握し、え、そしてより法設",
+      "start_seconds": 688.32,
+      "end_seconds": 691.68,
+      "id": "pln8htRwPvU-display-0231",
+      "segment_id": "pln8htRwPvU-ja-0072"
+    },
+    {
+      "text": "的な社会を構築する上で必要な鍵になると",
+      "start_seconds": 691.68,
+      "end_seconds": 695.24,
+      "id": "pln8htRwPvU-display-0232",
+      "segment_id": "pln8htRwPvU-ja-0073"
+    },
+    {
+      "text": "考えています。え、高校時代の同級生は、",
+      "start_seconds": 695.24,
+      "end_seconds": 699.36,
+      "id": "pln8htRwPvU-display-0233",
+      "segment_id": "pln8htRwPvU-ja-0073"
+    },
+    {
+      "text": "え、僕を見てですね、え、学校をサボって",
+      "start_seconds": 699.36,
+      "end_seconds": 701.88,
+      "id": "pln8htRwPvU-display-0234",
+      "segment_id": "pln8htRwPvU-ja-0073"
+    },
+    {
+      "text": "いるどうしようもないやと批判的に捉えて",
+      "start_seconds": 701.88,
+      "end_seconds": 704.32,
+      "id": "pln8htRwPvU-display-0235",
+      "segment_id": "pln8htRwPvU-ja-0074"
+    },
+    {
+      "text": "いたかもしれません。え、しかし現状を",
+      "start_seconds": 704.32,
+      "end_seconds": 707.48,
+      "id": "pln8htRwPvU-display-0236",
+      "segment_id": "pln8htRwPvU-ja-0074"
+    },
+    {
+      "text": "よく理解していた母親やカウンセラーの方",
+      "start_seconds": 707.48,
+      "end_seconds": 710.0,
+      "id": "pln8htRwPvU-display-0237",
+      "segment_id": "pln8htRwPvU-ja-0074"
+    },
+    {
+      "text": "はその問題を俯瞰的な思考で持って、え、",
+      "start_seconds": 710.0,
+      "end_seconds": 713.0,
+      "id": "pln8htRwPvU-display-0238",
+      "segment_id": "pln8htRwPvU-ja-0074"
+    },
+    {
+      "text": "見てくれており、え、そんな理解者こそ",
+      "start_seconds": 713.0,
+      "end_seconds": 715.44,
+      "id": "pln8htRwPvU-display-0239",
+      "segment_id": "pln8htRwPvU-ja-0075"
+    },
+    {
+      "text": "苦しむ僕の大きな精神的支えになってい",
+      "start_seconds": 715.44,
+      "end_seconds": 718.24,
+      "id": "pln8htRwPvU-display-0240",
+      "segment_id": "pln8htRwPvU-ja-0075"
+    },
+    {
+      "text": "ました。え、昨今のデジタル化合理化の",
+      "start_seconds": 718.24,
+      "end_seconds": 722.0,
+      "id": "pln8htRwPvU-display-0241",
+      "segment_id": "pln8htRwPvU-ja-0075"
+    },
+    {
+      "text": "流れを受けて、え、物事を即かつ感情的に",
+      "start_seconds": 722.0,
+      "end_seconds": 726.24,
+      "id": "pln8htRwPvU-display-0242",
+      "segment_id": "pln8htRwPvU-ja-0076"
+    },
+    {
+      "text": "眺める傾向が加速しているような印象を",
+      "start_seconds": 726.24,
+      "end_seconds": 728.8,
+      "id": "pln8htRwPvU-display-0243",
+      "segment_id": "pln8htRwPvU-ja-0076"
+    },
+    {
+      "text": "受けます。え、しかし物事の表層に現れて",
+      "start_seconds": 728.8,
+      "end_seconds": 732.399,
+      "id": "pln8htRwPvU-display-0244",
+      "segment_id": "pln8htRwPvU-ja-0076"
+    },
+    {
+      "text": "いるアクセスしやすい事実が、え、現実を",
+      "start_seconds": 732.399,
+      "end_seconds": 735.76,
+      "id": "pln8htRwPvU-display-0245",
+      "segment_id": "pln8htRwPvU-ja-0077"
+    },
+    {
+      "text": "正確に反映したものだとは限りません。え",
+      "start_seconds": 735.76,
+      "end_seconds": 739.6,
+      "id": "pln8htRwPvU-display-0246",
+      "segment_id": "pln8htRwPvU-ja-0077"
+    },
+    {
+      "text": "、私たち大学生は日々の学びを通じてこの",
+      "start_seconds": 739.6,
+      "end_seconds": 742.72,
+      "id": "pln8htRwPvU-display-0247",
+      "segment_id": "pln8htRwPvU-ja-0077"
+    },
+    {
+      "text": "認知的柔軟性を手にする必要があるのでは",
+      "start_seconds": 742.72,
+      "end_seconds": 745.519,
+      "id": "pln8htRwPvU-display-0248",
+      "segment_id": "pln8htRwPvU-ja-0078"
+    },
+    {
+      "text": "ないかと考えています。え、よく大学で",
+      "start_seconds": 745.519,
+      "end_seconds": 749.079,
+      "id": "pln8htRwPvU-display-0249",
+      "segment_id": "pln8htRwPvU-ja-0078"
+    },
+    {
+      "text": "生活をしていると、え、大学での学びが",
+      "start_seconds": 749.079,
+      "end_seconds": 752.44,
+      "id": "pln8htRwPvU-display-0250",
+      "segment_id": "pln8htRwPvU-ja-0078"
+    },
+    {
+      "text": "どのように役立つのか分からない。え、",
+      "start_seconds": 752.44,
+      "end_seconds": 754.92,
+      "id": "pln8htRwPvU-display-0251",
+      "segment_id": "pln8htRwPvU-ja-0079"
+    },
+    {
+      "text": "そんな声をよく耳にします。",
+      "start_seconds": 754.92,
+      "end_seconds": 758.56,
+      "id": "pln8htRwPvU-display-0252",
+      "segment_id": "pln8htRwPvU-ja-0079"
+    },
+    {
+      "text": "え、しかしですね、私は大学で学ぶ内容と",
+      "start_seconds": 758.56,
+      "end_seconds": 762.079,
+      "id": "pln8htRwPvU-display-0253",
+      "segment_id": "pln8htRwPvU-ja-0080"
+    },
+    {
+      "text": "同等々内者それ以上に学ぶ過程が重要なの",
+      "start_seconds": 762.079,
+      "end_seconds": 765.24,
+      "id": "pln8htRwPvU-display-0254",
+      "segment_id": "pln8htRwPvU-ja-0080"
+    },
+    {
+      "text": "ではないかと考えています。え、私たちは",
+      "start_seconds": 765.24,
+      "end_seconds": 768.519,
+      "id": "pln8htRwPvU-display-0255",
+      "segment_id": "pln8htRwPvU-ja-0080"
+    },
+    {
+      "text": "日々学問を通じて新たな事実に触れるたび",
+      "start_seconds": 768.519,
+      "end_seconds": 771.56,
+      "id": "pln8htRwPvU-display-0256",
+      "segment_id": "pln8htRwPvU-ja-0081"
+    },
+    {
+      "text": "に私たちの地兵線は広がり、え、私たちの",
+      "start_seconds": 771.56,
+      "end_seconds": 775.0,
+      "id": "pln8htRwPvU-display-0257",
+      "segment_id": "pln8htRwPvU-ja-0081"
+    },
+    {
+      "text": "認知は柔軟性を帯びます。",
+      "start_seconds": 775.0,
+      "end_seconds": 778.32,
+      "id": "pln8htRwPvU-display-0258",
+      "segment_id": "pln8htRwPvU-ja-0081"
+    },
+    {
+      "text": "え、おそらく大学は多くの人にとって社会",
+      "start_seconds": 778.32,
+      "end_seconds": 781.16,
+      "id": "pln8htRwPvU-display-0259",
+      "segment_id": "pln8htRwPvU-ja-0082"
+    },
+    {
+      "text": "に出て生活をする前の最後の教育機会だと",
+      "start_seconds": 781.16,
+      "end_seconds": 784.199,
+      "id": "pln8htRwPvU-display-0260",
+      "segment_id": "pln8htRwPvU-ja-0082"
+    },
+    {
+      "text": "思いますが、え、そこでは、え、この変化",
+      "start_seconds": 784.199,
+      "end_seconds": 788.16,
+      "id": "pln8htRwPvU-display-0261",
+      "segment_id": "pln8htRwPvU-ja-0082"
+    },
+    {
+      "text": "の激しい世の中で自らを守り、え、そして",
+      "start_seconds": 788.16,
+      "end_seconds": 791.8,
+      "id": "pln8htRwPvU-display-0262",
+      "segment_id": "pln8htRwPvU-ja-0083"
+    },
+    {
+      "text": "今面を極める現代社会をより正確に理解",
+      "start_seconds": 791.8,
+      "end_seconds": 794.839,
+      "id": "pln8htRwPvU-display-0263",
+      "segment_id": "pln8htRwPvU-ja-0083"
+    },
+    {
+      "text": "する上で欠かせない認知的柔軟性を手に",
+      "start_seconds": 794.839,
+      "end_seconds": 797.959,
+      "id": "pln8htRwPvU-display-0264",
+      "segment_id": "pln8htRwPvU-ja-0083"
+    },
+    {
+      "text": "する場として機能しているのではない",
+      "start_seconds": 797.959,
+      "end_seconds": 800.16,
+      "id": "pln8htRwPvU-display-0265",
+      "segment_id": "pln8htRwPvU-ja-0083"
+    },
+    {
+      "text": "でしょうか。",
+      "start_seconds": 800.16,
+      "end_seconds": 802.56,
+      "id": "pln8htRwPvU-display-0266",
+      "segment_id": "pln8htRwPvU-ja-0084"
+    },
+    {
+      "text": "え、おそらく僕を含めてですね、ここに",
+      "start_seconds": 802.56,
+      "end_seconds": 804.959,
+      "id": "pln8htRwPvU-display-0267",
+      "segment_id": "pln8htRwPvU-ja-0085"
+    },
+    {
+      "text": "いる多くの若者は輝かしい経験などを",
+      "start_seconds": 804.959,
+      "end_seconds": 807.639,
+      "id": "pln8htRwPvU-display-0268",
+      "segment_id": "pln8htRwPvU-ja-0085"
+    },
+    {
+      "text": "持ち合わせてはいないかもしれません。え",
+      "start_seconds": 807.639,
+      "end_seconds": 810.12,
+      "id": "pln8htRwPvU-display-0269",
+      "segment_id": "pln8htRwPvU-ja-0085"
+    },
+    {
+      "text": "、しかし的柔軟性は学ぶ姿勢を絶さず未知",
+      "start_seconds": 810.12,
+      "end_seconds": 814.0,
+      "id": "pln8htRwPvU-display-0270",
+      "segment_id": "pln8htRwPvU-ja-0085"
+    },
+    {
+      "text": "や完全と立ち向かう私たち学習者の特権で",
+      "start_seconds": 814.0,
+      "end_seconds": 817.12,
+      "id": "pln8htRwPvU-display-0271",
+      "segment_id": "pln8htRwPvU-ja-0086"
+    },
+    {
+      "text": "あり、え、そのような能力こそ、え、未だ",
+      "start_seconds": 817.12,
+      "end_seconds": 820.12,
+      "id": "pln8htRwPvU-display-0272",
+      "segment_id": "pln8htRwPvU-ja-0086"
+    },
+    {
+      "text": "光の当たらない社会の暗闇みにおいて、え",
+      "start_seconds": 820.12,
+      "end_seconds": 823.0,
+      "id": "pln8htRwPvU-display-0273",
+      "segment_id": "pln8htRwPvU-ja-0086"
+    },
+    {
+      "text": "、希望とできる上で必要とされているので",
+      "start_seconds": 823.0,
+      "end_seconds": 825.519,
+      "id": "pln8htRwPvU-display-0274",
+      "segment_id": "pln8htRwPvU-ja-0086"
+    },
+    {
+      "text": "はないでしょうか。え、この不理な世の中",
+      "start_seconds": 825.519,
+      "end_seconds": 829.0,
+      "id": "pln8htRwPvU-display-0275",
+      "segment_id": "pln8htRwPvU-ja-0087"
+    },
+    {
+      "text": "には改善の余地が多分にあり、え、問題を",
+      "start_seconds": 829.0,
+      "end_seconds": 832.12,
+      "id": "pln8htRwPvU-display-0276",
+      "segment_id": "pln8htRwPvU-ja-0087"
+    },
+    {
+      "text": "根本的に解決しようとするならば、表層的",
+      "start_seconds": 832.12,
+      "end_seconds": 835.279,
+      "id": "pln8htRwPvU-display-0277",
+      "segment_id": "pln8htRwPvU-ja-0087"
+    },
+    {
+      "text": "な事実に惑わされず、え、現実の本質を",
+      "start_seconds": 835.279,
+      "end_seconds": 839.399,
+      "id": "pln8htRwPvU-display-0278",
+      "segment_id": "pln8htRwPvU-ja-0088"
+    },
+    {
+      "text": "見抜く柔軟な思考が欠かせません。え、",
+      "start_seconds": 839.399,
+      "end_seconds": 843.32,
+      "id": "pln8htRwPvU-display-0279",
+      "segment_id": "pln8htRwPvU-ja-0088"
+    },
+    {
+      "text": "大学電話の学びはいかにして社会に還元さ",
+      "start_seconds": 843.32,
+      "end_seconds": 846.48,
+      "id": "pln8htRwPvU-display-0280",
+      "segment_id": "pln8htRwPvU-ja-0088"
+    },
+    {
+      "text": "れるのでしょうか?え、一度不登校という",
+      "start_seconds": 846.48,
+      "end_seconds": 850.16,
+      "id": "pln8htRwPvU-display-0281",
+      "segment_id": "pln8htRwPvU-ja-0089"
+    },
+    {
+      "text": "社会の暗闇みを経験し、今や大学教育の",
+      "start_seconds": 850.16,
+      "end_seconds": 853.56,
+      "id": "pln8htRwPvU-display-0282",
+      "segment_id": "pln8htRwPvU-ja-0089"
+    },
+    {
+      "text": "恩恵に、え、預かれている1人の人間とし",
+      "start_seconds": 853.56,
+      "end_seconds": 856.24,
+      "id": "pln8htRwPvU-display-0283",
+      "segment_id": "pln8htRwPvU-ja-0089"
+    },
+    {
+      "text": "て僕はそんなことを念頭にこれまで学びに",
+      "start_seconds": 856.24,
+      "end_seconds": 859.32,
+      "id": "pln8htRwPvU-display-0284",
+      "segment_id": "pln8htRwPvU-ja-0090"
+    },
+    {
+      "text": "派遣できました。ま、とはいえですね、え",
+      "start_seconds": 859.32,
+      "end_seconds": 862.44,
+      "id": "pln8htRwPvU-display-0285",
+      "segment_id": "pln8htRwPvU-ja-0090"
+    },
+    {
+      "text": "、大学で学び意義は人それぞれだと思い",
+      "start_seconds": 862.44,
+      "end_seconds": 864.88,
+      "id": "pln8htRwPvU-display-0286",
+      "segment_id": "pln8htRwPvU-ja-0090"
+    },
+    {
+      "text": "ますし、いかなるものであれ、同等に評価",
+      "start_seconds": 864.88,
+      "end_seconds": 867.32,
+      "id": "pln8htRwPvU-display-0287",
+      "segment_id": "pln8htRwPvU-ja-0090"
+    },
+    {
+      "text": "されるべきだと考えています。え、しかし",
+      "start_seconds": 867.32,
+      "end_seconds": 870.36,
+      "id": "pln8htRwPvU-display-0288",
+      "segment_id": "pln8htRwPvU-ja-0091"
+    },
+    {
+      "text": "同時に私たち1人1人が大学での学びを",
+      "start_seconds": 870.36,
+      "end_seconds": 873.519,
+      "id": "pln8htRwPvU-display-0289",
+      "segment_id": "pln8htRwPvU-ja-0091"
+    },
+    {
+      "text": "通じて年知的柔軟性を手にし、え、それを",
+      "start_seconds": 873.519,
+      "end_seconds": 876.8,
+      "id": "pln8htRwPvU-display-0290",
+      "segment_id": "pln8htRwPvU-ja-0091"
+    },
+    {
+      "text": "糧てに社会と関わり合うことでこの世の中",
+      "start_seconds": 876.8,
+      "end_seconds": 879.8,
+      "id": "pln8htRwPvU-display-0291",
+      "segment_id": "pln8htRwPvU-ja-0092"
+    },
+    {
+      "text": "は育爆か良い方向へ向かうのではないかと",
+      "start_seconds": 879.8,
+      "end_seconds": 882.519,
+      "id": "pln8htRwPvU-display-0292",
+      "segment_id": "pln8htRwPvU-ja-0092"
+    },
+    {
+      "text": "考えています。え、可能性に満ち溢れた皆",
+      "start_seconds": 882.519,
+      "end_seconds": 885.72,
+      "id": "pln8htRwPvU-display-0293",
+      "segment_id": "pln8htRwPvU-ja-0092"
+    },
+    {
+      "text": "さんとこれからのより良い社会を作ること",
+      "start_seconds": 885.72,
+      "end_seconds": 888.079,
+      "id": "pln8htRwPvU-display-0294",
+      "segment_id": "pln8htRwPvU-ja-0092"
+    },
+    {
+      "text": "を心より楽しみにしています。え、本日は",
+      "start_seconds": 888.079,
+      "end_seconds": 890.959,
+      "id": "pln8htRwPvU-display-0295",
+      "segment_id": "pln8htRwPvU-ja-0093"
+    },
+    {
+      "text": "ご成聴ありがとうございました。[拍手]",
+      "start_seconds": 890.959,
+      "end_seconds": 895.4499999999999,
+      "id": "pln8htRwPvU-display-0296",
+      "segment_id": "pln8htRwPvU-ja-0093"
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 898.015,
+      "end_seconds": 900.035,
+      "id": "pln8htRwPvU-display-0297",
+      "segment_id": "pln8htRwPvU-ja-0094"
+    }
+  ]
+}

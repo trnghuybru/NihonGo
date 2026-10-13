@@ -1,0 +1,3380 @@
+{
+  "schema_version": 1,
+  "video": {
+    "youtube_id": "rGyWuoEAFaM",
+    "title": "Human Centered Cybersecurity | SACHIKO HASUMI | TEDxNagoyaU",
+    "channel": "TEDx Talks",
+    "duration_seconds": 881
+  },
+  "caption_track": {
+    "language": "ja",
+    "kind": "asr",
+    "source": "youtube_automatic"
+  },
+  "source_playlist": "https://www.youtube.com/playlist?list=PLsRNoUx8w3rOHjXIU5EE4KOiIagv9yQaG",
+  "fetched_at": "2026-10-13T13:24:29.660383+00:00",
+  "segment_count": 99,
+  "segments": [
+    {
+      "text": "[音楽]",
+      "start_seconds": 1.309,
+      "end_seconds": 3.3289999999999997,
+      "id": "rGyWuoEAFaM-ja-0001",
+      "sequence": 1
+    },
+    {
+      "text": "タイバー言葉を聞いた時、皆さんは何を思い浮かべますか?",
+      "start_seconds": 11.04,
+      "end_seconds": 20.4,
+      "id": "rGyWuoEAFaM-ja-0002",
+      "sequence": 2
+    },
+    {
+      "text": "ここには何があるのでしょうか?",
+      "start_seconds": 20.4,
+      "end_seconds": 24.32,
+      "id": "rGyWuoEAFaM-ja-0003",
+      "sequence": 3
+    },
+    {
+      "text": "データでしょうか?",
+      "start_seconds": 24.32,
+      "end_seconds": 27.76,
+      "id": "rGyWuoEAFaM-ja-0004",
+      "sequence": 4
+    },
+    {
+      "text": "コンピューター、Aスマホなどのテクノロジーでしょうか?",
+      "start_seconds": 27.76,
+      "end_seconds": 34.8,
+      "id": "rGyWuoEAFaM-ja-0005",
+      "sequence": 5
+    },
+    {
+      "text": "これまで長い間世界各地でサイバーセキュリティの現場に立ってきました。",
+      "start_seconds": 34.8,
+      "end_seconds": 41.68,
+      "id": "rGyWuoEAFaM-ja-0006",
+      "sequence": 6
+    },
+    {
+      "text": "維持活動フィールドオフィス、ニューヨーク本部グローバルな金融機関",
+      "start_seconds": 41.68,
+      "end_seconds": 48.96,
+      "id": "rGyWuoEAFaM-ja-0007",
+      "sequence": 7
+    },
+    {
+      "text": "コーヒー屋さん本当に様々な場所でも同じサイバーの世界で働いてきました。",
+      "start_seconds": 48.96,
+      "end_seconds": 59.28,
+      "id": "rGyWuoEAFaM-ja-0008",
+      "sequence": 8
+    },
+    {
+      "text": "ライバーの世界には本当にたくさんのものがあります。あらゆるものが繋がっています。メール、動画、スマホ上げていけば",
+      "start_seconds": 59.28,
+      "end_seconds": 70.52,
+      "id": "rGyWuoEAFaM-ja-0009",
+      "sequence": 9
+    },
+    {
+      "text": "霧りがないです。",
+      "start_seconds": 70.52,
+      "end_seconds": 72.92,
+      "id": "rGyWuoEAFaM-ja-0010",
+      "sequence": 10
+    },
+    {
+      "text": "そんなサイバーの世界で私たちは何をしているのでしょうか?",
+      "start_seconds": 72.92,
+      "end_seconds": 79.759,
+      "id": "rGyWuoEAFaM-ja-0011",
+      "sequence": 11
+    },
+    {
+      "text": "友達にメッセージを送る人がメッセージというデータをメールというテクノロジーを",
+      "start_seconds": 80.04,
+      "end_seconds": 88.439,
+      "id": "rGyWuoEAFaM-ja-0012",
+      "sequence": 12
+    },
+    {
+      "text": "使って別の人に送る。マップで場所を探す人が場所というデータをマップアプリと",
+      "start_seconds": 88.439,
+      "end_seconds": 97.479,
+      "id": "rGyWuoEAFaM-ja-0013",
+      "sequence": 13
+    },
+    {
+      "text": "いうテクノロジーを使って受け取る。",
+      "start_seconds": 97.479,
+      "end_seconds": 101.0,
+      "id": "rGyWuoEAFaM-ja-0014",
+      "sequence": 14
+    },
+    {
+      "text": "リモートワークをする。人が仕事というデータを様々なテクノロジーを使って処理",
+      "start_seconds": 101.0,
+      "end_seconds": 108.719,
+      "id": "rGyWuoEAFaM-ja-0015",
+      "sequence": 15
+    },
+    {
+      "text": "していた。どれを見ても同じ構造です。",
+      "start_seconds": 108.719,
+      "end_seconds": 114.32,
+      "id": "rGyWuoEAFaM-ja-0016",
+      "sequence": 16
+    },
+    {
+      "text": "つまり人がデータをテクノロジーで処理している。",
+      "start_seconds": 114.32,
+      "end_seconds": 121.24,
+      "id": "rGyWuoEAFaM-ja-0017",
+      "sequence": 17
+    },
+    {
+      "text": "テクノロジーは常にサイバーの世界の主役です。スポットライトを浴びどんどん進化していきます。例えばAI注目され、投資",
+      "start_seconds": 121.24,
+      "end_seconds": 131.319,
+      "id": "rGyWuoEAFaM-ja-0018",
+      "sequence": 18
+    },
+    {
+      "text": "され、急席に発展していきます。そしてデータもまた増え続けています。毎日膨大なデータが生まれ、人々はそれをよりよく",
+      "start_seconds": 131.319,
+      "end_seconds": 141.879,
+      "id": "rGyWuoEAFaM-ja-0019",
+      "sequence": 19
+    },
+    {
+      "text": "使おうと必死になっています。これら2つを守るためにサイバーセキュリティは技術を進化させ、そしてプロセスを整えてき",
+      "start_seconds": 141.879,
+      "end_seconds": 153.4,
+      "id": "rGyWuoEAFaM-ja-0020",
+      "sequence": 20
+    },
+    {
+      "text": "ました。",
+      "start_seconds": 153.4,
+      "end_seconds": 156.72,
+      "id": "rGyWuoEAFaM-ja-0021",
+      "sequence": 21
+    },
+    {
+      "text": "でもは振り返ってみるとデータとテクノロジーと一緒に静かにでも確かにそこには人間がい",
+      "start_seconds": 157.8,
+      "end_seconds": 168.76,
+      "id": "rGyWuoEAFaM-ja-0022",
+      "sequence": 22
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 168.76,
+      "end_seconds": 170.48,
+      "id": "rGyWuoEAFaM-ja-0023",
+      "sequence": 23
+    },
+    {
+      "text": "人間が作り、人間が生き、人間が生活している世界なのに、それなのにサイバーの世界というと語られるのはデータとテクノロジーばかりです。人間は",
+      "start_seconds": 170.48,
+      "end_seconds": 182.319,
+      "id": "rGyWuoEAFaM-ja-0024",
+      "sequence": 24
+    },
+    {
+      "text": "追い滴き彫りにされている。こんなサイバーを守るはずのサイバーセキュリティでさえデータとテクノロジーを守るために技術とプロセスをより良くし",
+      "start_seconds": 182.319,
+      "end_seconds": 193.319,
+      "id": "rGyWuoEAFaM-ja-0025",
+      "sequence": 25
+    },
+    {
+      "text": "てきました。実際に多くの人がサイバーセキュリティと聞いて思い浮かべるのは2",
+      "start_seconds": 193.319,
+      "end_seconds": 200.28,
+      "id": "rGyWuoEAFaM-ja-0026",
+      "sequence": 26
+    },
+    {
+      "text": "段階認証暗号AIルール規則法律規制人今日はどこに行ってしまったのでしょう",
+      "start_seconds": 200.28,
+      "end_seconds": 209.72,
+      "id": "rGyWuoEAFaM-ja-0027",
+      "sequence": 27
+    },
+    {
+      "text": "か?サイバーの世界にはデータとテクノロジーと人間がいます。私たちが本当に守ろうとしているのはデータと",
+      "start_seconds": 209.72,
+      "end_seconds": 219.04,
+      "id": "rGyWuoEAFaM-ja-0028",
+      "sequence": 28
+    },
+    {
+      "text": "テクノロジーだけではありません。しかしサイバーセキュリティが進化させてきたのはデータとテクノロジーを守る技術と制度",
+      "start_seconds": 219.04,
+      "end_seconds": 229.28,
+      "id": "rGyWuoEAFaM-ja-0029",
+      "sequence": 29
+    },
+    {
+      "text": "。1番守られるべきなのは人間です。なのに1番守られていないのも人間です。",
+      "start_seconds": 229.28,
+      "end_seconds": 239.879,
+      "id": "rGyWuoEAFaM-ja-0030",
+      "sequence": 30
+    },
+    {
+      "text": "それを強く感じたのは私が国連で働いていた時でした。国連は少し特殊な場所です。",
+      "start_seconds": 239.879,
+      "end_seconds": 249.0,
+      "id": "rGyWuoEAFaM-ja-0031",
+      "sequence": 31
+    },
+    {
+      "text": "平和を目指す組織ですが、その仕事は紛争の中で行われています。そしてそれはサイバーの世界でも同じです。若手の時",
+      "start_seconds": 249.0,
+      "end_seconds": 260.32,
+      "id": "rGyWuoEAFaM-ja-0032",
+      "sequence": 32
+    },
+    {
+      "text": "初めて大きなサイバーインシデントを任されることになりました。国家レベルでの攻撃でした。その瞬間私は思いました。",
+      "start_seconds": 260.32,
+      "end_seconds": 270.919,
+      "id": "rGyWuoEAFaM-ja-0033",
+      "sequence": 33
+    },
+    {
+      "text": "これは戦場だ。セキュリティチームはたったに私はまだ成り立てのマネージャー",
+      "start_seconds": 270.919,
+      "end_seconds": 279.199,
+      "id": "rGyWuoEAFaM-ja-0034",
+      "sequence": 34
+    },
+    {
+      "text": "でも相手は何万、何十万という攻撃者24時間体制でありとあらゆるところから攻めてくる。どれだけ対応しても終わりが見え",
+      "start_seconds": 279.199,
+      "end_seconds": 290.52,
+      "id": "rGyWuoEAFaM-ja-0035",
+      "sequence": 35
+    },
+    {
+      "text": "ませんでした。",
+      "start_seconds": 290.52,
+      "end_seconds": 294.08,
+      "id": "rGyWuoEAFaM-ja-0036",
+      "sequence": 36
+    },
+    {
+      "text": "家にはほとんど帰れず、まるで素で目の前に広がる見えない戦車や戦闘機の前に体を張って立たされているような感覚でした。",
+      "start_seconds": 294.08,
+      "end_seconds": 305.199,
+      "id": "rGyWuoEAFaM-ja-0037",
+      "sequence": 37
+    },
+    {
+      "text": "体力も心も少しずつ削られ、そしてボロボロになっていきました。その上同僚",
+      "start_seconds": 305.199,
+      "end_seconds": 312.479,
+      "id": "rGyWuoEAFaM-ja-0038",
+      "sequence": 38
+    },
+    {
+      "text": "や上司や関係者からは白い目で見られ無言の圧力をかけられる。まさに孤立無縁状態",
+      "start_seconds": 312.479,
+      "end_seconds": 322.56,
+      "id": "rGyWuoEAFaM-ja-0039",
+      "sequence": 39
+    },
+    {
+      "text": "で戦い続けていました。",
+      "start_seconds": 322.56,
+      "end_seconds": 326.16,
+      "id": "rGyWuoEAFaM-ja-0040",
+      "sequence": 40
+    },
+    {
+      "text": "娘の誕生日も祝うことができず、アル晩午前2時頃、私は同僚と一緒にインシデント対応をしていました。",
+      "start_seconds": 326.16,
+      "end_seconds": 337.0,
+      "id": "rGyWuoEAFaM-ja-0041",
+      "sequence": 41
+    },
+    {
+      "text": "その時です。突然コンピューターが異国の文字に変わっていった。一瞬で画面が分からない文字に変わっていく。怖かった",
+      "start_seconds": 337.0,
+      "end_seconds": 348.479,
+      "id": "rGyWuoEAFaM-ja-0042",
+      "sequence": 42
+    },
+    {
+      "text": "。本当に怖かった。もうダめだ。そう思いました。コンピューターの前で方にくれて",
+      "start_seconds": 348.479,
+      "end_seconds": 357.4,
+      "id": "rGyWuoEAFaM-ja-0043",
+      "sequence": 43
+    },
+    {
+      "text": "いました。白ハをあげたいでもあげられない。薄ぐらい真夜中のオフィスでただただ流れていく冷たいデータを眺めて",
+      "start_seconds": 357.4,
+      "end_seconds": 368.72,
+      "id": "rGyWuoEAFaM-ja-0044",
+      "sequence": 44
+    },
+    {
+      "text": "いました。その時です。鼻から何か温かいものが流れていくのを感じました。広げた",
+      "start_seconds": 368.72,
+      "end_seconds": 377.88,
+      "id": "rGyWuoEAFaM-ja-0045",
+      "sequence": 45
+    },
+    {
+      "text": "ノートの真っ白なページに真っ赤な地が静かに落ちていき、まるで真世の中に温かい地が広がっていくようでした",
+      "start_seconds": 377.88,
+      "end_seconds": 389.52,
+      "id": "rGyWuoEAFaM-ja-0046",
+      "sequence": 46
+    },
+    {
+      "text": "。",
+      "start_seconds": 389.52,
+      "end_seconds": 392.039,
+      "id": "rGyWuoEAFaM-ja-0047",
+      "sequence": 47
+    },
+    {
+      "text": "駅も味方も私を無奇質な裁判の一部品としか見ていないけれどここに私という生き",
+      "start_seconds": 392.039,
+      "end_seconds": 400.44,
+      "id": "rGyWuoEAFaM-ja-0048",
+      "sequence": 48
+    },
+    {
+      "text": "ている人間がいる。それに気づいた瞬間、私の価値観は根底から変わりました。",
+      "start_seconds": 400.44,
+      "end_seconds": 409.08,
+      "id": "rGyWuoEAFaM-ja-0049",
+      "sequence": 49
+    },
+    {
+      "text": "サイバーの世界で本当に大切なのは人間の温かさだということ。それまでの私は技術が全てだと思っていました。そして正直に",
+      "start_seconds": 409.08,
+      "end_seconds": 421.08,
+      "id": "rGyWuoEAFaM-ja-0050",
+      "sequence": 50
+    },
+    {
+      "text": "言うと患らわしい人間という要素がない技術は楽な世界でした。サイバーの世界は人から見れば無質なデータと技術の世界に",
+      "start_seconds": 421.08,
+      "end_seconds": 431.639,
+      "id": "rGyWuoEAFaM-ja-0051",
+      "sequence": 51
+    },
+    {
+      "text": "見えるかもしれません。でも無奇質なサイバーの中には人間がいます。傷つく人、プレッシャーを感じる人、迷い揺れる人",
+      "start_seconds": 431.639,
+      "end_seconds": 442.759,
+      "id": "rGyWuoEAFaM-ja-0052",
+      "sequence": 52
+    },
+    {
+      "text": "がそしてそれを攻撃する人がいます。1番守られるべきなのは人間だと気づいたん",
+      "start_seconds": 442.759,
+      "end_seconds": 450.8,
+      "id": "rGyWuoEAFaM-ja-0053",
+      "sequence": 53
+    },
+    {
+      "text": "です。時に苦しみ、迷い、揺れる、そして",
+      "start_seconds": 450.8,
+      "end_seconds": 457.52,
+      "id": "rGyWuoEAFaM-ja-0054",
+      "sequence": 54
+    },
+    {
+      "text": "間違える。それが人間でも裁判の世界ではそれが許されない。ゲームなら何度でもやり直せます。でもサイバーの世界では",
+      "start_seconds": 457.52,
+      "end_seconds": 469.52,
+      "id": "rGyWuoEAFaM-ja-0055",
+      "sequence": 55
+    },
+    {
+      "text": "失敗や間違いが時には永遠に残る。失敗が大きな結果を生むこともある。でも間違い",
+      "start_seconds": 469.52,
+      "end_seconds": 478.36,
+      "id": "rGyWuoEAFaM-ja-0056",
+      "sequence": 56
+    },
+    {
+      "text": "を経験してこそ人は成熟できる。",
+      "start_seconds": 478.36,
+      "end_seconds": 482.72,
+      "id": "rGyWuoEAFaM-ja-0057",
+      "sequence": 57
+    },
+    {
+      "text": "それなのに私たちはその世界の生き方を教わっていない。十分な経験も練習の機会も与えられないままサイバーの世界に",
+      "start_seconds": 482.72,
+      "end_seconds": 493.44,
+      "id": "rGyWuoEAFaM-ja-0058",
+      "sequence": 58
+    },
+    {
+      "text": "放り込まれている。これが最大の矛盾です。人間は試して失敗してまた立ち上がる。",
+      "start_seconds": 493.44,
+      "end_seconds": 504.879,
+      "id": "rGyWuoEAFaM-ja-0059",
+      "sequence": 59
+    },
+    {
+      "text": "抵抗と失敗を繰り返しながら経験を積みその中で生きる知恵を身につけていく。でもサイバーの世界では失敗の代償が大き",
+      "start_seconds": 504.879,
+      "end_seconds": 516.76,
+      "id": "rGyWuoEAFaM-ja-0060",
+      "sequence": 60
+    },
+    {
+      "text": "すぎる。そしてどう判断するかも学迷いと向き合うのか、どう間違いから立ちるのかも教わらない。",
+      "start_seconds": 516.76,
+      "end_seconds": 527.959,
+      "id": "rGyWuoEAFaM-ja-0061",
+      "sequence": 61
+    },
+    {
+      "text": "だから私はこう考えています。必要なのは強さではありません。",
+      "start_seconds": 527.959,
+      "end_seconds": 535.839,
+      "id": "rGyWuoEAFaM-ja-0062",
+      "sequence": 62
+    },
+    {
+      "text": "サイバーレジリアンス。それはしなやかな判断力とそして回復する力。タイバーの",
+      "start_seconds": 535.839,
+      "end_seconds": 545.279,
+      "id": "rGyWuoEAFaM-ja-0063",
+      "sequence": 63
+    },
+    {
+      "text": "世界ではプレッシャーや強い感情欲望によって人の判断は簡単に歪みます。焦り、",
+      "start_seconds": 545.279,
+      "end_seconds": 553.8,
+      "id": "rGyWuoEAFaM-ja-0064",
+      "sequence": 64
+    },
+    {
+      "text": "恐れ、責任、時間の圧力。そうした瞬間に人は本来守るべき判断の順番を失って",
+      "start_seconds": 553.8,
+      "end_seconds": 562.92,
+      "id": "rGyWuoEAFaM-ja-0065",
+      "sequence": 65
+    },
+    {
+      "text": "しまう。例えばどうしても欲しいものをオンラインで見つけた時、本来なら確認する、買う、送金する。この順番のはず",
+      "start_seconds": 562.92,
+      "end_seconds": 574.0,
+      "id": "rGyWuoEAFaM-ja-0066",
+      "sequence": 66
+    },
+    {
+      "text": "です。でも実際には買う、送金する、確認すると順番が逆転してしまう。そして時に",
+      "start_seconds": 574.0,
+      "end_seconds": 583.36,
+      "id": "rGyWuoEAFaM-ja-0067",
+      "sequence": 67
+    },
+    {
+      "text": "は確認という判断そのものが問わされてしまう。それは弱いからではありません。",
+      "start_seconds": 583.36,
+      "end_seconds": 591.76,
+      "id": "rGyWuoEAFaM-ja-0068",
+      "sequence": 68
+    },
+    {
+      "text": "しなやか判断力を身につける機会がなかったからです。だから必要なのはしなやかな判断力、歪んだ判断に気づき、見失った",
+      "start_seconds": 591.76,
+      "end_seconds": 602.8,
+      "id": "rGyWuoEAFaM-ja-0069",
+      "sequence": 69
+    },
+    {
+      "text": "順番を取り戻す力。そしてもう1つ、何かが起きた時に折れてしまわない回復力、",
+      "start_seconds": 602.8,
+      "end_seconds": 612.2,
+      "id": "rGyWuoEAFaM-ja-0070",
+      "sequence": 70
+    },
+    {
+      "text": "戻って来るしなやかさ。でもこの力は1度で身につくものではありません。本を読ん",
+      "start_seconds": 612.2,
+      "end_seconds": 620.64,
+      "id": "rGyWuoEAFaM-ja-0071",
+      "sequence": 71
+    },
+    {
+      "text": "だだけでも知識があるだけでも足りない。",
+      "start_seconds": 620.64,
+      "end_seconds": 625.2,
+      "id": "rGyWuoEAFaM-ja-0072",
+      "sequence": 72
+    },
+    {
+      "text": "いざという瞬間にその知識を使えるようになっていなければならない。それはまるでスポーツや音楽のようなものです。理論を",
+      "start_seconds": 625.2,
+      "end_seconds": 636.44,
+      "id": "rGyWuoEAFaM-ja-0073",
+      "sequence": 73
+    },
+    {
+      "text": "理解し、何度も練習し、少しずつ方を身につけ、サイバーの世界でも同じです。判断",
+      "start_seconds": 636.44,
+      "end_seconds": 645.079,
+      "id": "rGyWuoEAFaM-ja-0074",
+      "sequence": 74
+    },
+    {
+      "text": "の方、回復の方、行動の方、それを練習によって身につけていく。そしたらいざという時に身についた方が自立的に引き出さ",
+      "start_seconds": 645.079,
+      "end_seconds": 656.399,
+      "id": "rGyWuoEAFaM-ja-0075",
+      "sequence": 75
+    },
+    {
+      "text": "れる。",
+      "start_seconds": 656.399,
+      "end_seconds": 658.16,
+      "id": "rGyWuoEAFaM-ja-0076",
+      "sequence": 76
+    },
+    {
+      "text": "でもそこに矛盾があります。サイバーの世界では1度の失敗が大きな結果を生む。",
+      "start_seconds": 658.16,
+      "end_seconds": 668.0,
+      "id": "rGyWuoEAFaM-ja-0077",
+      "sequence": 77
+    },
+    {
+      "text": "でも人は失敗しながらではないと学べない。だからこそ必要なのは安全に学び、安全",
+      "start_seconds": 668.0,
+      "end_seconds": 676.92,
+      "id": "rGyWuoEAFaM-ja-0078",
+      "sequence": 78
+    },
+    {
+      "text": "に練習できる場所です。例えばさ、ある日突然メッセージが届きます。今すぐ対応してください。あなたのアカウントが停止さ",
+      "start_seconds": 676.92,
+      "end_seconds": 688.32,
+      "id": "rGyWuoEAFaM-ja-0079",
+      "sequence": 79
+    },
+    {
+      "text": "れます。今だけの特別な投資です。その時人は焦り恐れ期待の中ですぐに行動して",
+      "start_seconds": 688.32,
+      "end_seconds": 697.079,
+      "id": "rGyWuoEAFaM-ja-0080",
+      "sequence": 80
+    },
+    {
+      "text": "しまう。本来なら確認する、相談する、少し時間を置く。そういう判断の方が必要",
+      "start_seconds": 697.079,
+      "end_seconds": 706.76,
+      "id": "rGyWuoEAFaM-ja-0081",
+      "sequence": 81
+    },
+    {
+      "text": "です。でも多くの人はその方の練習をしていません。だから引っかかる。それは弱い",
+      "start_seconds": 706.76,
+      "end_seconds": 716.68,
+      "id": "rGyWuoEAFaM-ja-0082",
+      "sequence": 82
+    },
+    {
+      "text": "からではありません。方を知らない上に安全な場所で練習していないからです。",
+      "start_seconds": 716.68,
+      "end_seconds": 726.079,
+      "id": "rGyWuoEAFaM-ja-0083",
+      "sequence": 83
+    },
+    {
+      "text": "サイバーセキュリティとはしなやかな判断力と回復力を養い矛盾だらけのサイバーの世界を人が自分の",
+      "start_seconds": 726.079,
+      "end_seconds": 737.48,
+      "id": "rGyWuoEAFaM-ja-0084",
+      "sequence": 84
+    },
+    {
+      "text": "足で歩いていく力を身につけていくこと個人で組織でそして社会で誤解して欲しくないのは技術やプロセスが不要だと言っ",
+      "start_seconds": 737.48,
+      "end_seconds": 749.44,
+      "id": "rGyWuoEAFaM-ja-0085",
+      "sequence": 85
+    },
+    {
+      "text": "てるのではありません。むしろそれらは不可欠です。でもどれほど高度な技術や正",
+      "start_seconds": 749.44,
+      "end_seconds": 758.6,
+      "id": "rGyWuoEAFaM-ja-0086",
+      "sequence": 86
+    },
+    {
+      "text": "があってもそこには常に人間がいなければならない。それが私の一貫した信念です。",
+      "start_seconds": 758.6,
+      "end_seconds": 768.44,
+      "id": "rGyWuoEAFaM-ja-0087",
+      "sequence": 87
+    },
+    {
+      "text": "私はこれまで何万人もの人に出会い、100以上の違う文化の人々と働き、アジア、ヨーロッパ、北米、オセアニア、",
+      "start_seconds": 768.44,
+      "end_seconds": 779.639,
+      "id": "rGyWuoEAFaM-ja-0088",
+      "sequence": 88
+    },
+    {
+      "text": "アフリカ、日本、世界の様々な場所で生きてきました。そして確信したことがあります。",
+      "start_seconds": 779.639,
+      "end_seconds": 789.839,
+      "id": "rGyWuoEAFaM-ja-0089",
+      "sequence": 89
+    },
+    {
+      "text": "人間は1人として同じ人はいない。そして人が1人1人違うように",
+      "start_seconds": 789.839,
+      "end_seconds": 798.76,
+      "id": "rGyWuoEAFaM-ja-0090",
+      "sequence": 90
+    },
+    {
+      "text": "サイバーのしなやかさも1人1人違う。確かに方はあります。でもそれをどう自分の技にするのか、どう裁判の世界",
+      "start_seconds": 798.76,
+      "end_seconds": 810.0,
+      "id": "rGyWuoEAFaM-ja-0091",
+      "sequence": 91
+    },
+    {
+      "text": "を生き抜く力にするのか、それは1人1人違う。サイバーセキュリティとは技術だけ",
+      "start_seconds": 810.0,
+      "end_seconds": 819.0,
+      "id": "rGyWuoEAFaM-ja-0092",
+      "sequence": 92
+    },
+    {
+      "text": "の話ではありません。これは人がサイバーの世界で生きていく力を育てることだから私は信じています。",
+      "start_seconds": 819.0,
+      "end_seconds": 830.759,
+      "id": "rGyWuoEAFaM-ja-0093",
+      "sequence": 93
+    },
+    {
+      "text": "サイバーの未来を守るのは2段階認証でもAIでもありません。",
+      "start_seconds": 830.759,
+      "end_seconds": 838.72,
+      "id": "rGyWuoEAFaM-ja-0094",
+      "sequence": 94
+    },
+    {
+      "text": "人間です。そしてその人間が迷い揺れ間違えてもしなやかな判断をしてまた",
+      "start_seconds": 838.92,
+      "end_seconds": 848.399,
+      "id": "rGyWuoEAFaM-ja-0095",
+      "sequence": 95
+    },
+    {
+      "text": "立ち上がれるサイバーの世界を作っていくこと。それが人間を中心にしたサイバーセキュリティです。だから最後に皆様にお",
+      "start_seconds": 848.399,
+      "end_seconds": 858.88,
+      "id": "rGyWuoEAFaM-ja-0096",
+      "sequence": 96
+    },
+    {
+      "text": "聞きしたいのです。この矛盾だらけのサイバーの世界であなたはどんなしやかさを身につけていきますか?",
+      "start_seconds": 858.88,
+      "end_seconds": 869.759,
+      "id": "rGyWuoEAFaM-ja-0097",
+      "sequence": 97
+    },
+    {
+      "text": "ありがとうございました。",
+      "start_seconds": 869.759,
+      "end_seconds": 872.47,
+      "id": "rGyWuoEAFaM-ja-0098",
+      "sequence": 98
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 872.47,
+      "end_seconds": 874.49,
+      "id": "rGyWuoEAFaM-ja-0099",
+      "sequence": 99
+    }
+  ],
+  "raw_captions": [
+    {
+      "text": "[音楽]",
+      "start_seconds": 1.309,
+      "end_seconds": 3.3289999999999997
+    },
+    {
+      "text": "タイバー",
+      "start_seconds": 11.04,
+      "end_seconds": 14.04
+    },
+    {
+      "text": "言葉を聞いた時、皆さんは何を思い浮かべ",
+      "start_seconds": 14.24,
+      "end_seconds": 20.4
+    },
+    {
+      "text": "ますか?",
+      "start_seconds": 17.96,
+      "end_seconds": 24.32
+    },
+    {
+      "text": "ここには何があるのでしょうか?",
+      "start_seconds": 20.4,
+      "end_seconds": 27.759999999999998
+    },
+    {
+      "text": "データでしょうか?",
+      "start_seconds": 24.32,
+      "end_seconds": 29.92
+    },
+    {
+      "text": "コンピューター、A",
+      "start_seconds": 27.76,
+      "end_seconds": 34.800000000000004
+    },
+    {
+      "text": "スマホなどのテクノロジーでしょうか?",
+      "start_seconds": 29.92,
+      "end_seconds": 37.84
+    },
+    {
+      "text": "これまで長い間世界各地でサイバー",
+      "start_seconds": 34.8,
+      "end_seconds": 41.68
+    },
+    {
+      "text": "セキュリティの現場に立ってきました。",
+      "start_seconds": 37.84,
+      "end_seconds": 44.52
+    },
+    {
+      "text": "維持活動フィールドオフィス、",
+      "start_seconds": 41.68,
+      "end_seconds": 48.96
+    },
+    {
+      "text": "ニューヨーク本部グローバルな金融機関",
+      "start_seconds": 44.52,
+      "end_seconds": 54.800000000000004
+    },
+    {
+      "text": "コーヒー屋さん本当に様々な場所でも同じ",
+      "start_seconds": 48.96,
+      "end_seconds": 59.28
+    },
+    {
+      "text": "サイバーの世界で働いてきました。",
+      "start_seconds": 54.8,
+      "end_seconds": 62.07899999999999
+    },
+    {
+      "text": "ライバーの世界には本当にたくさんのもの",
+      "start_seconds": 59.28,
+      "end_seconds": 65.4
+    },
+    {
+      "text": "があります。あらゆるものが繋がってい",
+      "start_seconds": 62.079,
+      "end_seconds": 70.52
+    },
+    {
+      "text": "ます。メール、動画、スマホ上げていけば",
+      "start_seconds": 65.4,
+      "end_seconds": 72.92
+    },
+    {
+      "text": "霧りがないです。",
+      "start_seconds": 70.52,
+      "end_seconds": 76.03999999999999
+    },
+    {
+      "text": "そんなサイバーの世界で私たちは何をして",
+      "start_seconds": 72.92,
+      "end_seconds": 79.759
+    },
+    {
+      "text": "いるのでしょうか?",
+      "start_seconds": 76.04,
+      "end_seconds": 79.759
+    },
+    {
+      "text": "友達にメッセージを送る人がメッセージと",
+      "start_seconds": 80.04,
+      "end_seconds": 88.43900000000001
+    },
+    {
+      "text": "いうデータをメールというテクノロジーを",
+      "start_seconds": 84.92,
+      "end_seconds": 94.07900000000001
+    },
+    {
+      "text": "使って別の人に送る。マップで場所を探す",
+      "start_seconds": 88.439,
+      "end_seconds": 97.47899999999998
+    },
+    {
+      "text": "人が場所というデータをマップアプリと",
+      "start_seconds": 94.079,
+      "end_seconds": 101.0
+    },
+    {
+      "text": "いうテクノロジーを使って受け取る。",
+      "start_seconds": 97.479,
+      "end_seconds": 104.799
+    },
+    {
+      "text": "リモートワークをする。人が仕事という",
+      "start_seconds": 101.0,
+      "end_seconds": 108.719
+    },
+    {
+      "text": "データを様々なテクノロジーを使って処理",
+      "start_seconds": 104.799,
+      "end_seconds": 114.32000000000001
+    },
+    {
+      "text": "していた。どれを見ても同じ構造です。",
+      "start_seconds": 108.719,
+      "end_seconds": 119.399
+    },
+    {
+      "text": "つまり人がデータをテクノロジーで処理し",
+      "start_seconds": 114.32,
+      "end_seconds": 121.24
+    },
+    {
+      "text": "ている。",
+      "start_seconds": 119.399,
+      "end_seconds": 124.2
+    },
+    {
+      "text": "テクノロジーは常にサイバーの世界の主役",
+      "start_seconds": 121.24,
+      "end_seconds": 127.399
+    },
+    {
+      "text": "です。スポットライトを浴びどんどん進化",
+      "start_seconds": 124.2,
+      "end_seconds": 131.31900000000002
+    },
+    {
+      "text": "していきます。例えばAI注目され、投資",
+      "start_seconds": 127.399,
+      "end_seconds": 134.519
+    },
+    {
+      "text": "され、急席に発展していきます。そして",
+      "start_seconds": 131.319,
+      "end_seconds": 138.16
+    },
+    {
+      "text": "データもまた増え続けています。毎日膨大",
+      "start_seconds": 134.519,
+      "end_seconds": 141.87900000000002
+    },
+    {
+      "text": "なデータが生まれ、人々はそれをよりよく",
+      "start_seconds": 138.16,
+      "end_seconds": 145.76
+    },
+    {
+      "text": "使おうと必死になっています。これら2つ",
+      "start_seconds": 141.879,
+      "end_seconds": 149.51899999999998
+    },
+    {
+      "text": "を守るためにサイバーセキュリティは技術",
+      "start_seconds": 145.76,
+      "end_seconds": 153.39999999999998
+    },
+    {
+      "text": "を進化させ、そしてプロセスを整えてき",
+      "start_seconds": 149.519,
+      "end_seconds": 156.72
+    },
+    {
+      "text": "ました。",
+      "start_seconds": 153.4,
+      "end_seconds": 156.72
+    },
+    {
+      "text": "でもは",
+      "start_seconds": 157.8,
+      "end_seconds": 164.28
+    },
+    {
+      "text": "振り返ってみるとデータとテクノロジーと",
+      "start_seconds": 160.92,
+      "end_seconds": 168.76
+    },
+    {
+      "text": "一緒に静かにでも確かにそこには人間がい",
+      "start_seconds": 164.28,
+      "end_seconds": 170.48
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 168.76,
+      "end_seconds": 173.84
+    },
+    {
+      "text": "人間が作り、人間が生き、人間が生活して",
+      "start_seconds": 170.48,
+      "end_seconds": 177.23899999999998
+    },
+    {
+      "text": "いる世界なのに、それなのにサイバーの",
+      "start_seconds": 173.84,
+      "end_seconds": 179.72
+    },
+    {
+      "text": "世界というと語られるのはデータと",
+      "start_seconds": 177.239,
+      "end_seconds": 182.31900000000002
+    },
+    {
+      "text": "テクノロジーばかりです。人間は",
+      "start_seconds": 179.72,
+      "end_seconds": 185.0
+    },
+    {
+      "text": "追い滴き彫りにされている。こんな",
+      "start_seconds": 182.319,
+      "end_seconds": 187.2
+    },
+    {
+      "text": "サイバーを守るはずのサイバー",
+      "start_seconds": 185.0,
+      "end_seconds": 190.28
+    },
+    {
+      "text": "セキュリティでさえデータとテクノロジー",
+      "start_seconds": 187.2,
+      "end_seconds": 193.319
+    },
+    {
+      "text": "を守るために技術とプロセスをより良くし",
+      "start_seconds": 190.28,
+      "end_seconds": 197.2
+    },
+    {
+      "text": "てきました。実際に多くの人がサイバー",
+      "start_seconds": 193.319,
+      "end_seconds": 200.28
+    },
+    {
+      "text": "セキュリティと聞いて思い浮かべるのは2",
+      "start_seconds": 197.2,
+      "end_seconds": 207.92
+    },
+    {
+      "text": "段階認証暗号AIルール規則法律規制",
+      "start_seconds": 200.28,
+      "end_seconds": 209.72
+    },
+    {
+      "text": "人今日はどこに行ってしまったのでしょう",
+      "start_seconds": 207.92,
+      "end_seconds": 212.92
+    },
+    {
+      "text": "か?サイバーの世界にはデータと",
+      "start_seconds": 209.72,
+      "end_seconds": 216.4
+    },
+    {
+      "text": "テクノロジーと人間がいます。私たちが",
+      "start_seconds": 212.92,
+      "end_seconds": 219.04
+    },
+    {
+      "text": "本当に守ろうとしているのはデータと",
+      "start_seconds": 216.4,
+      "end_seconds": 222.92000000000002
+    },
+    {
+      "text": "テクノロジーだけではありません。しかし",
+      "start_seconds": 219.04,
+      "end_seconds": 225.239
+    },
+    {
+      "text": "サイバーセキュリティが進化させてきたの",
+      "start_seconds": 222.92,
+      "end_seconds": 229.28
+    },
+    {
+      "text": "はデータとテクノロジーを守る技術と制度",
+      "start_seconds": 225.239,
+      "end_seconds": 234.159
+    },
+    {
+      "text": "。1番守られるべきなのは人間です。なの",
+      "start_seconds": 229.28,
+      "end_seconds": 239.879
+    },
+    {
+      "text": "に1番守られていないのも人間です。",
+      "start_seconds": 234.159,
+      "end_seconds": 243.959
+    },
+    {
+      "text": "それを強く感じたのは私が国連で働いてい",
+      "start_seconds": 239.879,
+      "end_seconds": 249.0
+    },
+    {
+      "text": "た時でした。国連は少し特殊な場所です。",
+      "start_seconds": 243.959,
+      "end_seconds": 252.48000000000002
+    },
+    {
+      "text": "平和を目指す組織ですが、その仕事は紛争",
+      "start_seconds": 249.0,
+      "end_seconds": 256.199
+    },
+    {
+      "text": "の中で行われています。そしてそれは",
+      "start_seconds": 252.48,
+      "end_seconds": 260.32
+    },
+    {
+      "text": "サイバーの世界でも同じです。若手の時",
+      "start_seconds": 256.199,
+      "end_seconds": 263.28000000000003
+    },
+    {
+      "text": "初めて大きなサイバーインシデントを任さ",
+      "start_seconds": 260.32,
+      "end_seconds": 266.36
+    },
+    {
+      "text": "れることになりました。国家レベルでの",
+      "start_seconds": 263.28,
+      "end_seconds": 270.919
+    },
+    {
+      "text": "攻撃でした。その瞬間私は思いました。",
+      "start_seconds": 266.36,
+      "end_seconds": 274.91900000000004
+    },
+    {
+      "text": "これは戦場だ。セキュリティチームは",
+      "start_seconds": 270.919,
+      "end_seconds": 279.19899999999996
+    },
+    {
+      "text": "たったに私はまだ成り立てのマネージャー",
+      "start_seconds": 274.919,
+      "end_seconds": 284.12
+    },
+    {
+      "text": "でも相手は何万、何十万という攻撃者24",
+      "start_seconds": 279.199,
+      "end_seconds": 287.28000000000003
+    },
+    {
+      "text": "時間体制でありとあらゆるところから攻め",
+      "start_seconds": 284.12,
+      "end_seconds": 290.52
+    },
+    {
+      "text": "てくる。どれだけ対応しても終わりが見え",
+      "start_seconds": 287.28,
+      "end_seconds": 294.08
+    },
+    {
+      "text": "ませんでした。",
+      "start_seconds": 290.52,
+      "end_seconds": 297.68
+    },
+    {
+      "text": "家にはほとんど帰れず、まるで素で目の前",
+      "start_seconds": 294.08,
+      "end_seconds": 301.56
+    },
+    {
+      "text": "に広がる見えない戦車や戦闘機の前に体を",
+      "start_seconds": 297.68,
+      "end_seconds": 305.199
+    },
+    {
+      "text": "張って立たされているような感覚でした。",
+      "start_seconds": 301.56,
+      "end_seconds": 308.44
+    },
+    {
+      "text": "体力も心も少しずつ削られ、そして",
+      "start_seconds": 305.199,
+      "end_seconds": 312.479
+    },
+    {
+      "text": "ボロボロになっていきました。その上同僚",
+      "start_seconds": 308.44,
+      "end_seconds": 317.759
+    },
+    {
+      "text": "や上司や関係者からは白い目で見られ無言",
+      "start_seconds": 312.479,
+      "end_seconds": 322.56
+    },
+    {
+      "text": "の圧力をかけられる。まさに孤立無縁状態",
+      "start_seconds": 317.759,
+      "end_seconds": 326.16
+    },
+    {
+      "text": "で戦い続けていました。",
+      "start_seconds": 322.56,
+      "end_seconds": 330.12
+    },
+    {
+      "text": "娘の誕生日も祝うことができず、アル晩",
+      "start_seconds": 326.16,
+      "end_seconds": 333.36
+    },
+    {
+      "text": "午前2時頃、私は同僚と一緒に",
+      "start_seconds": 330.12,
+      "end_seconds": 337.0
+    },
+    {
+      "text": "インシデント対応をしていました。",
+      "start_seconds": 333.36,
+      "end_seconds": 341.039
+    },
+    {
+      "text": "その時です。突然コンピューターが異国の",
+      "start_seconds": 337.0,
+      "end_seconds": 345.199
+    },
+    {
+      "text": "文字に変わっていった。一瞬で画面が",
+      "start_seconds": 341.039,
+      "end_seconds": 348.479
+    },
+    {
+      "text": "分からない文字に変わっていく。怖かった",
+      "start_seconds": 345.199,
+      "end_seconds": 353.759
+    },
+    {
+      "text": "。本当に怖かった。もうダめだ。そう思い",
+      "start_seconds": 348.479,
+      "end_seconds": 357.4
+    },
+    {
+      "text": "ました。コンピューターの前で方にくれて",
+      "start_seconds": 353.759,
+      "end_seconds": 361.72
+    },
+    {
+      "text": "いました。白ハをあげたいでもあげられ",
+      "start_seconds": 357.4,
+      "end_seconds": 365.4
+    },
+    {
+      "text": "ない。薄ぐらい真夜中のオフィスで",
+      "start_seconds": 361.72,
+      "end_seconds": 368.72
+    },
+    {
+      "text": "ただただ流れていく冷たいデータを眺めて",
+      "start_seconds": 365.4,
+      "end_seconds": 373.84
+    },
+    {
+      "text": "いました。その時です。鼻から何か温かい",
+      "start_seconds": 368.72,
+      "end_seconds": 377.88000000000005
+    },
+    {
+      "text": "ものが流れていくのを感じました。広げた",
+      "start_seconds": 373.84,
+      "end_seconds": 381.75899999999996
+    },
+    {
+      "text": "ノートの真っ白なページに真っ赤な地が",
+      "start_seconds": 377.88,
+      "end_seconds": 386.24
+    },
+    {
+      "text": "静かに落ちていき、まるで真世",
+      "start_seconds": 381.759,
+      "end_seconds": 389.52000000000004
+    },
+    {
+      "text": "の中に温かい地が広がっていくようでした",
+      "start_seconds": 386.24,
+      "end_seconds": 392.039
+    },
+    {
+      "text": "。",
+      "start_seconds": 389.52,
+      "end_seconds": 396.79999999999995
+    },
+    {
+      "text": "駅も味方も私を無奇質な裁判の一部品と",
+      "start_seconds": 392.039,
+      "end_seconds": 400.44
+    },
+    {
+      "text": "しか見ていないけれどここに私という生き",
+      "start_seconds": 396.8,
+      "end_seconds": 405.0
+    },
+    {
+      "text": "ている人間がいる。それに気づいた瞬間、",
+      "start_seconds": 400.44,
+      "end_seconds": 409.08
+    },
+    {
+      "text": "私の価値観は根底から変わりました。",
+      "start_seconds": 405.0,
+      "end_seconds": 412.759
+    },
+    {
+      "text": "サイバーの世界で本当に大切なのは人間の",
+      "start_seconds": 409.08,
+      "end_seconds": 417.24
+    },
+    {
+      "text": "温かさだということ。それまでの私は技術",
+      "start_seconds": 412.759,
+      "end_seconds": 421.08000000000004
+    },
+    {
+      "text": "が全てだと思っていました。そして正直に",
+      "start_seconds": 417.24,
+      "end_seconds": 424.40000000000003
+    },
+    {
+      "text": "言うと患らわしい人間という要素がない",
+      "start_seconds": 421.08,
+      "end_seconds": 428.12
+    },
+    {
+      "text": "技術は楽な世界でした。サイバーの世界は",
+      "start_seconds": 424.4,
+      "end_seconds": 431.63899999999995
+    },
+    {
+      "text": "人から見れば無質なデータと技術の世界に",
+      "start_seconds": 428.12,
+      "end_seconds": 435.599
+    },
+    {
+      "text": "見えるかもしれません。でも無奇質な",
+      "start_seconds": 431.639,
+      "end_seconds": 439.36
+    },
+    {
+      "text": "サイバーの中には人間がいます。傷つく人",
+      "start_seconds": 435.599,
+      "end_seconds": 442.759
+    },
+    {
+      "text": "、プレッシャーを感じる人、迷い揺れる人",
+      "start_seconds": 439.36,
+      "end_seconds": 447.47900000000004
+    },
+    {
+      "text": "がそしてそれを攻撃する人がいます。1番",
+      "start_seconds": 442.759,
+      "end_seconds": 450.8
+    },
+    {
+      "text": "守られるべきなのは人間だと気づいたん",
+      "start_seconds": 447.479,
+      "end_seconds": 457.52
+    },
+    {
+      "text": "です。時に苦しみ、迷い、揺れる、そして",
+      "start_seconds": 450.8,
+      "end_seconds": 462.879
+    },
+    {
+      "text": "間違える。それが人間でも裁判の世界では",
+      "start_seconds": 457.52,
+      "end_seconds": 466.4
+    },
+    {
+      "text": "それが許されない。ゲームなら何度でも",
+      "start_seconds": 462.879,
+      "end_seconds": 469.52000000000004
+    },
+    {
+      "text": "やり直せます。でもサイバーの世界では",
+      "start_seconds": 466.4,
+      "end_seconds": 474.039
+    },
+    {
+      "text": "失敗や間違いが時には永遠に残る。失敗が",
+      "start_seconds": 469.52,
+      "end_seconds": 478.35999999999996
+    },
+    {
+      "text": "大きな結果を生むこともある。でも間違い",
+      "start_seconds": 474.039,
+      "end_seconds": 482.71999999999997
+    },
+    {
+      "text": "を経験してこそ人は成熟できる。",
+      "start_seconds": 478.36,
+      "end_seconds": 486.12
+    },
+    {
+      "text": "それなのに私たちはその世界の生き方を",
+      "start_seconds": 482.72,
+      "end_seconds": 490.15900000000005
+    },
+    {
+      "text": "教わっていない。十分な経験も練習の機会",
+      "start_seconds": 486.12,
+      "end_seconds": 493.44
+    },
+    {
+      "text": "も与えられないままサイバーの世界に",
+      "start_seconds": 490.159,
+      "end_seconds": 497.879
+    },
+    {
+      "text": "放り込まれている。これが最大の矛盾です",
+      "start_seconds": 493.44,
+      "end_seconds": 504.879
+    },
+    {
+      "text": "。人間は試して失敗してまた立ち上がる。",
+      "start_seconds": 497.879,
+      "end_seconds": 508.639
+    },
+    {
+      "text": "抵抗と失敗を繰り返しながら経験を積み",
+      "start_seconds": 504.879,
+      "end_seconds": 513.12
+    },
+    {
+      "text": "その中で生きる知恵を身につけていく。で",
+      "start_seconds": 508.639,
+      "end_seconds": 516.76
+    },
+    {
+      "text": "もサイバーの世界では失敗の代償が大き",
+      "start_seconds": 513.12,
+      "end_seconds": 521.9590000000001
+    },
+    {
+      "text": "すぎる。そしてどう判断するかも学迷いと",
+      "start_seconds": 516.76,
+      "end_seconds": 525.16
+    },
+    {
+      "text": "向き合うのか、どう間違いから立ちるのか",
+      "start_seconds": 521.959,
+      "end_seconds": 527.959
+    },
+    {
+      "text": "も教わらない。",
+      "start_seconds": 525.16,
+      "end_seconds": 532.76
+    },
+    {
+      "text": "だから私はこう考えています。必要なのは",
+      "start_seconds": 527.959,
+      "end_seconds": 535.8389999999999
+    },
+    {
+      "text": "強さではありません。",
+      "start_seconds": 532.76,
+      "end_seconds": 540.6
+    },
+    {
+      "text": "サイバーレジリアンス。それはしなやかな",
+      "start_seconds": 535.839,
+      "end_seconds": 545.2790000000001
+    },
+    {
+      "text": "判断力とそして回復する力。タイバーの",
+      "start_seconds": 540.6,
+      "end_seconds": 548.72
+    },
+    {
+      "text": "世界ではプレッシャーや強い感情欲望に",
+      "start_seconds": 545.279,
+      "end_seconds": 553.8
+    },
+    {
+      "text": "よって人の判断は簡単に歪みます。焦り、",
+      "start_seconds": 548.72,
+      "end_seconds": 558.839
+    },
+    {
+      "text": "恐れ、責任、時間の圧力。そうした瞬間に",
+      "start_seconds": 553.8,
+      "end_seconds": 562.92
+    },
+    {
+      "text": "人は本来守るべき判断の順番を失って",
+      "start_seconds": 558.839,
+      "end_seconds": 566.44
+    },
+    {
+      "text": "しまう。例えばどうしても欲しいものを",
+      "start_seconds": 562.92,
+      "end_seconds": 570.04
+    },
+    {
+      "text": "オンラインで見つけた時、本来なら確認",
+      "start_seconds": 566.44,
+      "end_seconds": 574.0
+    },
+    {
+      "text": "する、買う、送金する。この順番のはず",
+      "start_seconds": 570.04,
+      "end_seconds": 579.3199999999999
+    },
+    {
+      "text": "です。でも実際には買う、送金する、確認",
+      "start_seconds": 574.0,
+      "end_seconds": 583.36
+    },
+    {
+      "text": "すると順番が逆転してしまう。そして時に",
+      "start_seconds": 579.32,
+      "end_seconds": 586.6
+    },
+    {
+      "text": "は確認という判断そのものが問わされて",
+      "start_seconds": 583.36,
+      "end_seconds": 591.76
+    },
+    {
+      "text": "しまう。それは弱いからではありません。",
+      "start_seconds": 586.6,
+      "end_seconds": 594.9200000000001
+    },
+    {
+      "text": "しなやか判断力を身につける機会がなかっ",
+      "start_seconds": 591.76,
+      "end_seconds": 598.8389999999999
+    },
+    {
+      "text": "たからです。だから必要なのはしなやかな",
+      "start_seconds": 594.92,
+      "end_seconds": 602.8
+    },
+    {
+      "text": "判断力、歪んだ判断に気づき、見失った",
+      "start_seconds": 598.839,
+      "end_seconds": 608.399
+    },
+    {
+      "text": "順番を取り戻す力。そしてもう1つ、何か",
+      "start_seconds": 602.8,
+      "end_seconds": 612.1999999999999
+    },
+    {
+      "text": "が起きた時に折れてしまわない回復力、",
+      "start_seconds": 608.399,
+      "end_seconds": 617.36
+    },
+    {
+      "text": "戻って来るしなやかさ。でもこの力は1度",
+      "start_seconds": 612.2,
+      "end_seconds": 620.6400000000001
+    },
+    {
+      "text": "で身につくものではありません。本を読ん",
+      "start_seconds": 617.36,
+      "end_seconds": 625.2
+    },
+    {
+      "text": "だだけでも知識があるだけでも足りない。",
+      "start_seconds": 620.64,
+      "end_seconds": 628.48
+    },
+    {
+      "text": "いざという瞬間にその知識を使えるように",
+      "start_seconds": 625.2,
+      "end_seconds": 632.8000000000001
+    },
+    {
+      "text": "なっていなければならない。それはまるで",
+      "start_seconds": 628.48,
+      "end_seconds": 636.44
+    },
+    {
+      "text": "スポーツや音楽のようなものです。理論を",
+      "start_seconds": 632.8,
+      "end_seconds": 640.7199999999999
+    },
+    {
+      "text": "理解し、何度も練習し、少しずつ方を身に",
+      "start_seconds": 636.44,
+      "end_seconds": 645.0790000000001
+    },
+    {
+      "text": "つけ、サイバーの世界でも同じです。判断",
+      "start_seconds": 640.72,
+      "end_seconds": 650.279
+    },
+    {
+      "text": "の方、回復の方、行動の方、それを練習に",
+      "start_seconds": 645.079,
+      "end_seconds": 653.079
+    },
+    {
+      "text": "よって身につけていく。そしたらいざと",
+      "start_seconds": 650.279,
+      "end_seconds": 656.399
+    },
+    {
+      "text": "いう時に身についた方が自立的に引き出さ",
+      "start_seconds": 653.079,
+      "end_seconds": 658.16
+    },
+    {
+      "text": "れる。",
+      "start_seconds": 656.399,
+      "end_seconds": 663.399
+    },
+    {
+      "text": "でもそこに矛盾があります。サイバーの",
+      "start_seconds": 658.16,
+      "end_seconds": 668.0
+    },
+    {
+      "text": "世界では1度の失敗が大きな結果を生む。",
+      "start_seconds": 663.399,
+      "end_seconds": 672.04
+    },
+    {
+      "text": "でも人は失敗しながらではないと学べない",
+      "start_seconds": 668.0,
+      "end_seconds": 676.92
+    },
+    {
+      "text": "。だからこそ必要なのは安全に学び、安全",
+      "start_seconds": 672.04,
+      "end_seconds": 681.7199999999999
+    },
+    {
+      "text": "に練習できる場所です。例えばさ、ある日",
+      "start_seconds": 676.92,
+      "end_seconds": 685.36
+    },
+    {
+      "text": "突然メッセージが届きます。今すぐ対応し",
+      "start_seconds": 681.72,
+      "end_seconds": 688.32
+    },
+    {
+      "text": "てください。あなたのアカウントが停止さ",
+      "start_seconds": 685.36,
+      "end_seconds": 692.399
+    },
+    {
+      "text": "れます。今だけの特別な投資です。その時",
+      "start_seconds": 688.32,
+      "end_seconds": 697.0790000000001
+    },
+    {
+      "text": "人は焦り恐れ期待の中ですぐに行動して",
+      "start_seconds": 692.399,
+      "end_seconds": 701.959
+    },
+    {
+      "text": "しまう。本来なら確認する、相談する、",
+      "start_seconds": 697.079,
+      "end_seconds": 706.76
+    },
+    {
+      "text": "少し時間を置く。そういう判断の方が必要",
+      "start_seconds": 701.959,
+      "end_seconds": 711.079
+    },
+    {
+      "text": "です。でも多くの人はその方の練習をして",
+      "start_seconds": 706.76,
+      "end_seconds": 716.68
+    },
+    {
+      "text": "いません。だから引っかかる。それは弱い",
+      "start_seconds": 711.079,
+      "end_seconds": 720.3199999999999
+    },
+    {
+      "text": "からではありません。方を知らない上に",
+      "start_seconds": 716.68,
+      "end_seconds": 726.079
+    },
+    {
+      "text": "安全な場所で練習していないからです。",
+      "start_seconds": 720.32,
+      "end_seconds": 729.0
+    },
+    {
+      "text": "サイバーセキュリティとは",
+      "start_seconds": 726.079,
+      "end_seconds": 733.3199999999999
+    },
+    {
+      "text": "しなやかな判断力と回復力を養い",
+      "start_seconds": 729.0,
+      "end_seconds": 737.48
+    },
+    {
+      "text": "矛盾だらけのサイバーの世界を人が自分の",
+      "start_seconds": 733.32,
+      "end_seconds": 741.36
+    },
+    {
+      "text": "足で歩いていく力を身につけていくこと",
+      "start_seconds": 737.48,
+      "end_seconds": 746.24
+    },
+    {
+      "text": "個人で組織でそして社会で誤解して欲しく",
+      "start_seconds": 741.36,
+      "end_seconds": 749.44
+    },
+    {
+      "text": "ないのは技術やプロセスが不要だと言っ",
+      "start_seconds": 746.24,
+      "end_seconds": 752.399
+    },
+    {
+      "text": "てるのではありません。むしろそれらは",
+      "start_seconds": 749.44,
+      "end_seconds": 758.6
+    },
+    {
+      "text": "不可欠です。でもどれほど高度な技術や正",
+      "start_seconds": 752.399,
+      "end_seconds": 763.0
+    },
+    {
+      "text": "があってもそこには常に人間がいなければ",
+      "start_seconds": 758.6,
+      "end_seconds": 768.44
+    },
+    {
+      "text": "ならない。それが私の一貫した信念です。",
+      "start_seconds": 763.0,
+      "end_seconds": 773.04
+    },
+    {
+      "text": "私はこれまで何万人もの人に出会い、",
+      "start_seconds": 768.44,
+      "end_seconds": 776.2790000000001
+    },
+    {
+      "text": "100以上の違う文化の人々と働き、",
+      "start_seconds": 773.04,
+      "end_seconds": 779.639
+    },
+    {
+      "text": "アジア、ヨーロッパ、北米、オセアニア、",
+      "start_seconds": 776.279,
+      "end_seconds": 784.199
+    },
+    {
+      "text": "アフリカ、日本、世界の様々な場所で生き",
+      "start_seconds": 779.639,
+      "end_seconds": 788.0
+    },
+    {
+      "text": "てきました。そして確信したことがあり",
+      "start_seconds": 784.199,
+      "end_seconds": 789.8389999999999
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 788.0,
+      "end_seconds": 794.56
+    },
+    {
+      "text": "人間は1人として同じ人はいない。そして",
+      "start_seconds": 789.839,
+      "end_seconds": 798.7600000000001
+    },
+    {
+      "text": "人が1人1人違うように",
+      "start_seconds": 794.56,
+      "end_seconds": 801.959
+    },
+    {
+      "text": "サイバーのしなやかさも1人1人",
+      "start_seconds": 798.76,
+      "end_seconds": 806.56
+    },
+    {
+      "text": "違う。確かに方はあります。でもそれを",
+      "start_seconds": 801.959,
+      "end_seconds": 810.0
+    },
+    {
+      "text": "どう自分の技にするのか、どう裁判の世界",
+      "start_seconds": 806.56,
+      "end_seconds": 814.76
+    },
+    {
+      "text": "を生き抜く力にするのか、それは1人1人",
+      "start_seconds": 810.0,
+      "end_seconds": 819.0
+    },
+    {
+      "text": "違う。サイバーセキュリティとは技術だけ",
+      "start_seconds": 814.76,
+      "end_seconds": 823.36
+    },
+    {
+      "text": "の話ではありません。これは人がサイバー",
+      "start_seconds": 819.0,
+      "end_seconds": 827.44
+    },
+    {
+      "text": "の世界で生きていく力を育てることだから",
+      "start_seconds": 823.36,
+      "end_seconds": 830.759
+    },
+    {
+      "text": "私は信じています。",
+      "start_seconds": 827.44,
+      "end_seconds": 834.639
+    },
+    {
+      "text": "サイバーの未来を守るのは2段階認証でも",
+      "start_seconds": 830.759,
+      "end_seconds": 838.72
+    },
+    {
+      "text": "AIでもありません。",
+      "start_seconds": 834.639,
+      "end_seconds": 838.72
+    },
+    {
+      "text": "人間です。そしてその人間が迷い揺れ",
+      "start_seconds": 838.92,
+      "end_seconds": 848.399
+    },
+    {
+      "text": "間違えてもしなやかな判断をしてまた",
+      "start_seconds": 844.32,
+      "end_seconds": 851.0
+    },
+    {
+      "text": "立ち上がれるサイバーの世界を作っていく",
+      "start_seconds": 848.399,
+      "end_seconds": 854.68
+    },
+    {
+      "text": "こと。それが人間を中心にしたサイバー",
+      "start_seconds": 851.0,
+      "end_seconds": 858.88
+    },
+    {
+      "text": "セキュリティです。だから最後に皆様にお",
+      "start_seconds": 854.68,
+      "end_seconds": 862.4799999999999
+    },
+    {
+      "text": "聞きしたいのです。この矛盾だらけの",
+      "start_seconds": 858.88,
+      "end_seconds": 865.24
+    },
+    {
+      "text": "サイバーの世界で",
+      "start_seconds": 862.48,
+      "end_seconds": 867.639
+    },
+    {
+      "text": "あなたはどんなしやかさを身につけていき",
+      "start_seconds": 865.24,
+      "end_seconds": 869.759
+    },
+    {
+      "text": "ますか?",
+      "start_seconds": 867.639,
+      "end_seconds": 872.47
+    },
+    {
+      "text": "ありがとうございました。",
+      "start_seconds": 869.759,
+      "end_seconds": 874.49
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 872.47,
+      "end_seconds": 874.49
+    }
+  ],
+  "display_captions": [
+    {
+      "text": "[音楽]",
+      "start_seconds": 1.309,
+      "end_seconds": 3.3289999999999997,
+      "id": "rGyWuoEAFaM-display-0001",
+      "segment_id": "rGyWuoEAFaM-ja-0001"
+    },
+    {
+      "text": "タイバー",
+      "start_seconds": 11.04,
+      "end_seconds": 14.04,
+      "id": "rGyWuoEAFaM-display-0002",
+      "segment_id": "rGyWuoEAFaM-ja-0002"
+    },
+    {
+      "text": "言葉を聞いた時、皆さんは何を思い浮かべ",
+      "start_seconds": 14.24,
+      "end_seconds": 17.96,
+      "id": "rGyWuoEAFaM-display-0003",
+      "segment_id": "rGyWuoEAFaM-ja-0002"
+    },
+    {
+      "text": "ますか?",
+      "start_seconds": 17.96,
+      "end_seconds": 20.4,
+      "id": "rGyWuoEAFaM-display-0004",
+      "segment_id": "rGyWuoEAFaM-ja-0002"
+    },
+    {
+      "text": "ここには何があるのでしょうか?",
+      "start_seconds": 20.4,
+      "end_seconds": 24.32,
+      "id": "rGyWuoEAFaM-display-0005",
+      "segment_id": "rGyWuoEAFaM-ja-0003"
+    },
+    {
+      "text": "データでしょうか?",
+      "start_seconds": 24.32,
+      "end_seconds": 27.76,
+      "id": "rGyWuoEAFaM-display-0006",
+      "segment_id": "rGyWuoEAFaM-ja-0004"
+    },
+    {
+      "text": "コンピューター、A",
+      "start_seconds": 27.76,
+      "end_seconds": 29.92,
+      "id": "rGyWuoEAFaM-display-0007",
+      "segment_id": "rGyWuoEAFaM-ja-0005"
+    },
+    {
+      "text": "スマホなどのテクノロジーでしょうか?",
+      "start_seconds": 29.92,
+      "end_seconds": 34.8,
+      "id": "rGyWuoEAFaM-display-0008",
+      "segment_id": "rGyWuoEAFaM-ja-0005"
+    },
+    {
+      "text": "これまで長い間世界各地でサイバー",
+      "start_seconds": 34.8,
+      "end_seconds": 37.84,
+      "id": "rGyWuoEAFaM-display-0009",
+      "segment_id": "rGyWuoEAFaM-ja-0006"
+    },
+    {
+      "text": "セキュリティの現場に立ってきました。",
+      "start_seconds": 37.84,
+      "end_seconds": 41.68,
+      "id": "rGyWuoEAFaM-display-0010",
+      "segment_id": "rGyWuoEAFaM-ja-0006"
+    },
+    {
+      "text": "維持活動フィールドオフィス、",
+      "start_seconds": 41.68,
+      "end_seconds": 44.52,
+      "id": "rGyWuoEAFaM-display-0011",
+      "segment_id": "rGyWuoEAFaM-ja-0007"
+    },
+    {
+      "text": "ニューヨーク本部グローバルな金融機関",
+      "start_seconds": 44.52,
+      "end_seconds": 48.96,
+      "id": "rGyWuoEAFaM-display-0012",
+      "segment_id": "rGyWuoEAFaM-ja-0007"
+    },
+    {
+      "text": "コーヒー屋さん本当に様々な場所でも同じ",
+      "start_seconds": 48.96,
+      "end_seconds": 54.8,
+      "id": "rGyWuoEAFaM-display-0013",
+      "segment_id": "rGyWuoEAFaM-ja-0008"
+    },
+    {
+      "text": "サイバーの世界で働いてきました。",
+      "start_seconds": 54.8,
+      "end_seconds": 59.28,
+      "id": "rGyWuoEAFaM-display-0014",
+      "segment_id": "rGyWuoEAFaM-ja-0008"
+    },
+    {
+      "text": "ライバーの世界には本当にたくさんのもの",
+      "start_seconds": 59.28,
+      "end_seconds": 62.079,
+      "id": "rGyWuoEAFaM-display-0015",
+      "segment_id": "rGyWuoEAFaM-ja-0009"
+    },
+    {
+      "text": "があります。あらゆるものが繋がってい",
+      "start_seconds": 62.079,
+      "end_seconds": 65.4,
+      "id": "rGyWuoEAFaM-display-0016",
+      "segment_id": "rGyWuoEAFaM-ja-0009"
+    },
+    {
+      "text": "ます。メール、動画、スマホ上げていけば",
+      "start_seconds": 65.4,
+      "end_seconds": 70.52,
+      "id": "rGyWuoEAFaM-display-0017",
+      "segment_id": "rGyWuoEAFaM-ja-0009"
+    },
+    {
+      "text": "霧りがないです。",
+      "start_seconds": 70.52,
+      "end_seconds": 72.92,
+      "id": "rGyWuoEAFaM-display-0018",
+      "segment_id": "rGyWuoEAFaM-ja-0010"
+    },
+    {
+      "text": "そんなサイバーの世界で私たちは何をして",
+      "start_seconds": 72.92,
+      "end_seconds": 76.04,
+      "id": "rGyWuoEAFaM-display-0019",
+      "segment_id": "rGyWuoEAFaM-ja-0011"
+    },
+    {
+      "text": "いるのでしょうか?",
+      "start_seconds": 76.04,
+      "end_seconds": 79.759,
+      "id": "rGyWuoEAFaM-display-0020",
+      "segment_id": "rGyWuoEAFaM-ja-0011"
+    },
+    {
+      "text": "友達にメッセージを送る人がメッセージと",
+      "start_seconds": 80.04,
+      "end_seconds": 84.92,
+      "id": "rGyWuoEAFaM-display-0021",
+      "segment_id": "rGyWuoEAFaM-ja-0012"
+    },
+    {
+      "text": "いうデータをメールというテクノロジーを",
+      "start_seconds": 84.92,
+      "end_seconds": 88.439,
+      "id": "rGyWuoEAFaM-display-0022",
+      "segment_id": "rGyWuoEAFaM-ja-0012"
+    },
+    {
+      "text": "使って別の人に送る。マップで場所を探す",
+      "start_seconds": 88.439,
+      "end_seconds": 94.079,
+      "id": "rGyWuoEAFaM-display-0023",
+      "segment_id": "rGyWuoEAFaM-ja-0013"
+    },
+    {
+      "text": "人が場所というデータをマップアプリと",
+      "start_seconds": 94.079,
+      "end_seconds": 97.479,
+      "id": "rGyWuoEAFaM-display-0024",
+      "segment_id": "rGyWuoEAFaM-ja-0013"
+    },
+    {
+      "text": "いうテクノロジーを使って受け取る。",
+      "start_seconds": 97.479,
+      "end_seconds": 101.0,
+      "id": "rGyWuoEAFaM-display-0025",
+      "segment_id": "rGyWuoEAFaM-ja-0014"
+    },
+    {
+      "text": "リモートワークをする。人が仕事という",
+      "start_seconds": 101.0,
+      "end_seconds": 104.799,
+      "id": "rGyWuoEAFaM-display-0026",
+      "segment_id": "rGyWuoEAFaM-ja-0015"
+    },
+    {
+      "text": "データを様々なテクノロジーを使って処理",
+      "start_seconds": 104.799,
+      "end_seconds": 108.719,
+      "id": "rGyWuoEAFaM-display-0027",
+      "segment_id": "rGyWuoEAFaM-ja-0015"
+    },
+    {
+      "text": "していた。どれを見ても同じ構造です。",
+      "start_seconds": 108.719,
+      "end_seconds": 114.32,
+      "id": "rGyWuoEAFaM-display-0028",
+      "segment_id": "rGyWuoEAFaM-ja-0016"
+    },
+    {
+      "text": "つまり人がデータをテクノロジーで処理し",
+      "start_seconds": 114.32,
+      "end_seconds": 119.399,
+      "id": "rGyWuoEAFaM-display-0029",
+      "segment_id": "rGyWuoEAFaM-ja-0017"
+    },
+    {
+      "text": "ている。",
+      "start_seconds": 119.399,
+      "end_seconds": 121.24,
+      "id": "rGyWuoEAFaM-display-0030",
+      "segment_id": "rGyWuoEAFaM-ja-0017"
+    },
+    {
+      "text": "テクノロジーは常にサイバーの世界の主役",
+      "start_seconds": 121.24,
+      "end_seconds": 124.2,
+      "id": "rGyWuoEAFaM-display-0031",
+      "segment_id": "rGyWuoEAFaM-ja-0018"
+    },
+    {
+      "text": "です。スポットライトを浴びどんどん進化",
+      "start_seconds": 124.2,
+      "end_seconds": 127.399,
+      "id": "rGyWuoEAFaM-display-0032",
+      "segment_id": "rGyWuoEAFaM-ja-0018"
+    },
+    {
+      "text": "していきます。例えばAI注目され、投資",
+      "start_seconds": 127.399,
+      "end_seconds": 131.319,
+      "id": "rGyWuoEAFaM-display-0033",
+      "segment_id": "rGyWuoEAFaM-ja-0018"
+    },
+    {
+      "text": "され、急席に発展していきます。そして",
+      "start_seconds": 131.319,
+      "end_seconds": 134.519,
+      "id": "rGyWuoEAFaM-display-0034",
+      "segment_id": "rGyWuoEAFaM-ja-0019"
+    },
+    {
+      "text": "データもまた増え続けています。毎日膨大",
+      "start_seconds": 134.519,
+      "end_seconds": 138.16,
+      "id": "rGyWuoEAFaM-display-0035",
+      "segment_id": "rGyWuoEAFaM-ja-0019"
+    },
+    {
+      "text": "なデータが生まれ、人々はそれをよりよく",
+      "start_seconds": 138.16,
+      "end_seconds": 141.879,
+      "id": "rGyWuoEAFaM-display-0036",
+      "segment_id": "rGyWuoEAFaM-ja-0019"
+    },
+    {
+      "text": "使おうと必死になっています。これら2つ",
+      "start_seconds": 141.879,
+      "end_seconds": 145.76,
+      "id": "rGyWuoEAFaM-display-0037",
+      "segment_id": "rGyWuoEAFaM-ja-0020"
+    },
+    {
+      "text": "を守るためにサイバーセキュリティは技術",
+      "start_seconds": 145.76,
+      "end_seconds": 149.519,
+      "id": "rGyWuoEAFaM-display-0038",
+      "segment_id": "rGyWuoEAFaM-ja-0020"
+    },
+    {
+      "text": "を進化させ、そしてプロセスを整えてき",
+      "start_seconds": 149.519,
+      "end_seconds": 153.4,
+      "id": "rGyWuoEAFaM-display-0039",
+      "segment_id": "rGyWuoEAFaM-ja-0020"
+    },
+    {
+      "text": "ました。",
+      "start_seconds": 153.4,
+      "end_seconds": 156.72,
+      "id": "rGyWuoEAFaM-display-0040",
+      "segment_id": "rGyWuoEAFaM-ja-0021"
+    },
+    {
+      "text": "でもは",
+      "start_seconds": 157.8,
+      "end_seconds": 160.92,
+      "id": "rGyWuoEAFaM-display-0041",
+      "segment_id": "rGyWuoEAFaM-ja-0022"
+    },
+    {
+      "text": "振り返ってみるとデータとテクノロジーと",
+      "start_seconds": 160.92,
+      "end_seconds": 164.28,
+      "id": "rGyWuoEAFaM-display-0042",
+      "segment_id": "rGyWuoEAFaM-ja-0022"
+    },
+    {
+      "text": "一緒に静かにでも確かにそこには人間がい",
+      "start_seconds": 164.28,
+      "end_seconds": 168.76,
+      "id": "rGyWuoEAFaM-display-0043",
+      "segment_id": "rGyWuoEAFaM-ja-0022"
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 168.76,
+      "end_seconds": 170.48,
+      "id": "rGyWuoEAFaM-display-0044",
+      "segment_id": "rGyWuoEAFaM-ja-0023"
+    },
+    {
+      "text": "人間が作り、人間が生き、人間が生活して",
+      "start_seconds": 170.48,
+      "end_seconds": 173.84,
+      "id": "rGyWuoEAFaM-display-0045",
+      "segment_id": "rGyWuoEAFaM-ja-0024"
+    },
+    {
+      "text": "いる世界なのに、それなのにサイバーの",
+      "start_seconds": 173.84,
+      "end_seconds": 177.239,
+      "id": "rGyWuoEAFaM-display-0046",
+      "segment_id": "rGyWuoEAFaM-ja-0024"
+    },
+    {
+      "text": "世界というと語られるのはデータと",
+      "start_seconds": 177.239,
+      "end_seconds": 179.72,
+      "id": "rGyWuoEAFaM-display-0047",
+      "segment_id": "rGyWuoEAFaM-ja-0024"
+    },
+    {
+      "text": "テクノロジーばかりです。人間は",
+      "start_seconds": 179.72,
+      "end_seconds": 182.319,
+      "id": "rGyWuoEAFaM-display-0048",
+      "segment_id": "rGyWuoEAFaM-ja-0024"
+    },
+    {
+      "text": "追い滴き彫りにされている。こんな",
+      "start_seconds": 182.319,
+      "end_seconds": 185.0,
+      "id": "rGyWuoEAFaM-display-0049",
+      "segment_id": "rGyWuoEAFaM-ja-0025"
+    },
+    {
+      "text": "サイバーを守るはずのサイバー",
+      "start_seconds": 185.0,
+      "end_seconds": 187.2,
+      "id": "rGyWuoEAFaM-display-0050",
+      "segment_id": "rGyWuoEAFaM-ja-0025"
+    },
+    {
+      "text": "セキュリティでさえデータとテクノロジー",
+      "start_seconds": 187.2,
+      "end_seconds": 190.28,
+      "id": "rGyWuoEAFaM-display-0051",
+      "segment_id": "rGyWuoEAFaM-ja-0025"
+    },
+    {
+      "text": "を守るために技術とプロセスをより良くし",
+      "start_seconds": 190.28,
+      "end_seconds": 193.319,
+      "id": "rGyWuoEAFaM-display-0052",
+      "segment_id": "rGyWuoEAFaM-ja-0025"
+    },
+    {
+      "text": "てきました。実際に多くの人がサイバー",
+      "start_seconds": 193.319,
+      "end_seconds": 197.2,
+      "id": "rGyWuoEAFaM-display-0053",
+      "segment_id": "rGyWuoEAFaM-ja-0026"
+    },
+    {
+      "text": "セキュリティと聞いて思い浮かべるのは2",
+      "start_seconds": 197.2,
+      "end_seconds": 200.28,
+      "id": "rGyWuoEAFaM-display-0054",
+      "segment_id": "rGyWuoEAFaM-ja-0026"
+    },
+    {
+      "text": "段階認証暗号AIルール規則法律規制",
+      "start_seconds": 200.28,
+      "end_seconds": 207.92,
+      "id": "rGyWuoEAFaM-display-0055",
+      "segment_id": "rGyWuoEAFaM-ja-0027"
+    },
+    {
+      "text": "人今日はどこに行ってしまったのでしょう",
+      "start_seconds": 207.92,
+      "end_seconds": 209.72,
+      "id": "rGyWuoEAFaM-display-0056",
+      "segment_id": "rGyWuoEAFaM-ja-0027"
+    },
+    {
+      "text": "か?サイバーの世界にはデータと",
+      "start_seconds": 209.72,
+      "end_seconds": 212.92,
+      "id": "rGyWuoEAFaM-display-0057",
+      "segment_id": "rGyWuoEAFaM-ja-0028"
+    },
+    {
+      "text": "テクノロジーと人間がいます。私たちが",
+      "start_seconds": 212.92,
+      "end_seconds": 216.4,
+      "id": "rGyWuoEAFaM-display-0058",
+      "segment_id": "rGyWuoEAFaM-ja-0028"
+    },
+    {
+      "text": "本当に守ろうとしているのはデータと",
+      "start_seconds": 216.4,
+      "end_seconds": 219.04,
+      "id": "rGyWuoEAFaM-display-0059",
+      "segment_id": "rGyWuoEAFaM-ja-0028"
+    },
+    {
+      "text": "テクノロジーだけではありません。しかし",
+      "start_seconds": 219.04,
+      "end_seconds": 222.92,
+      "id": "rGyWuoEAFaM-display-0060",
+      "segment_id": "rGyWuoEAFaM-ja-0029"
+    },
+    {
+      "text": "サイバーセキュリティが進化させてきたの",
+      "start_seconds": 222.92,
+      "end_seconds": 225.239,
+      "id": "rGyWuoEAFaM-display-0061",
+      "segment_id": "rGyWuoEAFaM-ja-0029"
+    },
+    {
+      "text": "はデータとテクノロジーを守る技術と制度",
+      "start_seconds": 225.239,
+      "end_seconds": 229.28,
+      "id": "rGyWuoEAFaM-display-0062",
+      "segment_id": "rGyWuoEAFaM-ja-0029"
+    },
+    {
+      "text": "。1番守られるべきなのは人間です。なの",
+      "start_seconds": 229.28,
+      "end_seconds": 234.159,
+      "id": "rGyWuoEAFaM-display-0063",
+      "segment_id": "rGyWuoEAFaM-ja-0030"
+    },
+    {
+      "text": "に1番守られていないのも人間です。",
+      "start_seconds": 234.159,
+      "end_seconds": 239.879,
+      "id": "rGyWuoEAFaM-display-0064",
+      "segment_id": "rGyWuoEAFaM-ja-0030"
+    },
+    {
+      "text": "それを強く感じたのは私が国連で働いてい",
+      "start_seconds": 239.879,
+      "end_seconds": 243.959,
+      "id": "rGyWuoEAFaM-display-0065",
+      "segment_id": "rGyWuoEAFaM-ja-0031"
+    },
+    {
+      "text": "た時でした。国連は少し特殊な場所です。",
+      "start_seconds": 243.959,
+      "end_seconds": 249.0,
+      "id": "rGyWuoEAFaM-display-0066",
+      "segment_id": "rGyWuoEAFaM-ja-0031"
+    },
+    {
+      "text": "平和を目指す組織ですが、その仕事は紛争",
+      "start_seconds": 249.0,
+      "end_seconds": 252.48,
+      "id": "rGyWuoEAFaM-display-0067",
+      "segment_id": "rGyWuoEAFaM-ja-0032"
+    },
+    {
+      "text": "の中で行われています。そしてそれは",
+      "start_seconds": 252.48,
+      "end_seconds": 256.199,
+      "id": "rGyWuoEAFaM-display-0068",
+      "segment_id": "rGyWuoEAFaM-ja-0032"
+    },
+    {
+      "text": "サイバーの世界でも同じです。若手の時",
+      "start_seconds": 256.199,
+      "end_seconds": 260.32,
+      "id": "rGyWuoEAFaM-display-0069",
+      "segment_id": "rGyWuoEAFaM-ja-0032"
+    },
+    {
+      "text": "初めて大きなサイバーインシデントを任さ",
+      "start_seconds": 260.32,
+      "end_seconds": 263.28,
+      "id": "rGyWuoEAFaM-display-0070",
+      "segment_id": "rGyWuoEAFaM-ja-0033"
+    },
+    {
+      "text": "れることになりました。国家レベルでの",
+      "start_seconds": 263.28,
+      "end_seconds": 266.36,
+      "id": "rGyWuoEAFaM-display-0071",
+      "segment_id": "rGyWuoEAFaM-ja-0033"
+    },
+    {
+      "text": "攻撃でした。その瞬間私は思いました。",
+      "start_seconds": 266.36,
+      "end_seconds": 270.919,
+      "id": "rGyWuoEAFaM-display-0072",
+      "segment_id": "rGyWuoEAFaM-ja-0033"
+    },
+    {
+      "text": "これは戦場だ。セキュリティチームは",
+      "start_seconds": 270.919,
+      "end_seconds": 274.919,
+      "id": "rGyWuoEAFaM-display-0073",
+      "segment_id": "rGyWuoEAFaM-ja-0034"
+    },
+    {
+      "text": "たったに私はまだ成り立てのマネージャー",
+      "start_seconds": 274.919,
+      "end_seconds": 279.199,
+      "id": "rGyWuoEAFaM-display-0074",
+      "segment_id": "rGyWuoEAFaM-ja-0034"
+    },
+    {
+      "text": "でも相手は何万、何十万という攻撃者24",
+      "start_seconds": 279.199,
+      "end_seconds": 284.12,
+      "id": "rGyWuoEAFaM-display-0075",
+      "segment_id": "rGyWuoEAFaM-ja-0035"
+    },
+    {
+      "text": "時間体制でありとあらゆるところから攻め",
+      "start_seconds": 284.12,
+      "end_seconds": 287.28,
+      "id": "rGyWuoEAFaM-display-0076",
+      "segment_id": "rGyWuoEAFaM-ja-0035"
+    },
+    {
+      "text": "てくる。どれだけ対応しても終わりが見え",
+      "start_seconds": 287.28,
+      "end_seconds": 290.52,
+      "id": "rGyWuoEAFaM-display-0077",
+      "segment_id": "rGyWuoEAFaM-ja-0035"
+    },
+    {
+      "text": "ませんでした。",
+      "start_seconds": 290.52,
+      "end_seconds": 294.08,
+      "id": "rGyWuoEAFaM-display-0078",
+      "segment_id": "rGyWuoEAFaM-ja-0036"
+    },
+    {
+      "text": "家にはほとんど帰れず、まるで素で目の前",
+      "start_seconds": 294.08,
+      "end_seconds": 297.68,
+      "id": "rGyWuoEAFaM-display-0079",
+      "segment_id": "rGyWuoEAFaM-ja-0037"
+    },
+    {
+      "text": "に広がる見えない戦車や戦闘機の前に体を",
+      "start_seconds": 297.68,
+      "end_seconds": 301.56,
+      "id": "rGyWuoEAFaM-display-0080",
+      "segment_id": "rGyWuoEAFaM-ja-0037"
+    },
+    {
+      "text": "張って立たされているような感覚でした。",
+      "start_seconds": 301.56,
+      "end_seconds": 305.199,
+      "id": "rGyWuoEAFaM-display-0081",
+      "segment_id": "rGyWuoEAFaM-ja-0037"
+    },
+    {
+      "text": "体力も心も少しずつ削られ、そして",
+      "start_seconds": 305.199,
+      "end_seconds": 308.44,
+      "id": "rGyWuoEAFaM-display-0082",
+      "segment_id": "rGyWuoEAFaM-ja-0038"
+    },
+    {
+      "text": "ボロボロになっていきました。その上同僚",
+      "start_seconds": 308.44,
+      "end_seconds": 312.479,
+      "id": "rGyWuoEAFaM-display-0083",
+      "segment_id": "rGyWuoEAFaM-ja-0038"
+    },
+    {
+      "text": "や上司や関係者からは白い目で見られ無言",
+      "start_seconds": 312.479,
+      "end_seconds": 317.759,
+      "id": "rGyWuoEAFaM-display-0084",
+      "segment_id": "rGyWuoEAFaM-ja-0039"
+    },
+    {
+      "text": "の圧力をかけられる。まさに孤立無縁状態",
+      "start_seconds": 317.759,
+      "end_seconds": 322.56,
+      "id": "rGyWuoEAFaM-display-0085",
+      "segment_id": "rGyWuoEAFaM-ja-0039"
+    },
+    {
+      "text": "で戦い続けていました。",
+      "start_seconds": 322.56,
+      "end_seconds": 326.16,
+      "id": "rGyWuoEAFaM-display-0086",
+      "segment_id": "rGyWuoEAFaM-ja-0040"
+    },
+    {
+      "text": "娘の誕生日も祝うことができず、アル晩",
+      "start_seconds": 326.16,
+      "end_seconds": 330.12,
+      "id": "rGyWuoEAFaM-display-0087",
+      "segment_id": "rGyWuoEAFaM-ja-0041"
+    },
+    {
+      "text": "午前2時頃、私は同僚と一緒に",
+      "start_seconds": 330.12,
+      "end_seconds": 333.36,
+      "id": "rGyWuoEAFaM-display-0088",
+      "segment_id": "rGyWuoEAFaM-ja-0041"
+    },
+    {
+      "text": "インシデント対応をしていました。",
+      "start_seconds": 333.36,
+      "end_seconds": 337.0,
+      "id": "rGyWuoEAFaM-display-0089",
+      "segment_id": "rGyWuoEAFaM-ja-0041"
+    },
+    {
+      "text": "その時です。突然コンピューターが異国の",
+      "start_seconds": 337.0,
+      "end_seconds": 341.039,
+      "id": "rGyWuoEAFaM-display-0090",
+      "segment_id": "rGyWuoEAFaM-ja-0042"
+    },
+    {
+      "text": "文字に変わっていった。一瞬で画面が",
+      "start_seconds": 341.039,
+      "end_seconds": 345.199,
+      "id": "rGyWuoEAFaM-display-0091",
+      "segment_id": "rGyWuoEAFaM-ja-0042"
+    },
+    {
+      "text": "分からない文字に変わっていく。怖かった",
+      "start_seconds": 345.199,
+      "end_seconds": 348.479,
+      "id": "rGyWuoEAFaM-display-0092",
+      "segment_id": "rGyWuoEAFaM-ja-0042"
+    },
+    {
+      "text": "。本当に怖かった。もうダめだ。そう思い",
+      "start_seconds": 348.479,
+      "end_seconds": 353.759,
+      "id": "rGyWuoEAFaM-display-0093",
+      "segment_id": "rGyWuoEAFaM-ja-0043"
+    },
+    {
+      "text": "ました。コンピューターの前で方にくれて",
+      "start_seconds": 353.759,
+      "end_seconds": 357.4,
+      "id": "rGyWuoEAFaM-display-0094",
+      "segment_id": "rGyWuoEAFaM-ja-0043"
+    },
+    {
+      "text": "いました。白ハをあげたいでもあげられ",
+      "start_seconds": 357.4,
+      "end_seconds": 361.72,
+      "id": "rGyWuoEAFaM-display-0095",
+      "segment_id": "rGyWuoEAFaM-ja-0044"
+    },
+    {
+      "text": "ない。薄ぐらい真夜中のオフィスで",
+      "start_seconds": 361.72,
+      "end_seconds": 365.4,
+      "id": "rGyWuoEAFaM-display-0096",
+      "segment_id": "rGyWuoEAFaM-ja-0044"
+    },
+    {
+      "text": "ただただ流れていく冷たいデータを眺めて",
+      "start_seconds": 365.4,
+      "end_seconds": 368.72,
+      "id": "rGyWuoEAFaM-display-0097",
+      "segment_id": "rGyWuoEAFaM-ja-0044"
+    },
+    {
+      "text": "いました。その時です。鼻から何か温かい",
+      "start_seconds": 368.72,
+      "end_seconds": 373.84,
+      "id": "rGyWuoEAFaM-display-0098",
+      "segment_id": "rGyWuoEAFaM-ja-0045"
+    },
+    {
+      "text": "ものが流れていくのを感じました。広げた",
+      "start_seconds": 373.84,
+      "end_seconds": 377.88,
+      "id": "rGyWuoEAFaM-display-0099",
+      "segment_id": "rGyWuoEAFaM-ja-0045"
+    },
+    {
+      "text": "ノートの真っ白なページに真っ赤な地が",
+      "start_seconds": 377.88,
+      "end_seconds": 381.759,
+      "id": "rGyWuoEAFaM-display-0100",
+      "segment_id": "rGyWuoEAFaM-ja-0046"
+    },
+    {
+      "text": "静かに落ちていき、まるで真世",
+      "start_seconds": 381.759,
+      "end_seconds": 386.24,
+      "id": "rGyWuoEAFaM-display-0101",
+      "segment_id": "rGyWuoEAFaM-ja-0046"
+    },
+    {
+      "text": "の中に温かい地が広がっていくようでした",
+      "start_seconds": 386.24,
+      "end_seconds": 389.52,
+      "id": "rGyWuoEAFaM-display-0102",
+      "segment_id": "rGyWuoEAFaM-ja-0046"
+    },
+    {
+      "text": "。",
+      "start_seconds": 389.52,
+      "end_seconds": 392.039,
+      "id": "rGyWuoEAFaM-display-0103",
+      "segment_id": "rGyWuoEAFaM-ja-0047"
+    },
+    {
+      "text": "駅も味方も私を無奇質な裁判の一部品と",
+      "start_seconds": 392.039,
+      "end_seconds": 396.8,
+      "id": "rGyWuoEAFaM-display-0104",
+      "segment_id": "rGyWuoEAFaM-ja-0048"
+    },
+    {
+      "text": "しか見ていないけれどここに私という生き",
+      "start_seconds": 396.8,
+      "end_seconds": 400.44,
+      "id": "rGyWuoEAFaM-display-0105",
+      "segment_id": "rGyWuoEAFaM-ja-0048"
+    },
+    {
+      "text": "ている人間がいる。それに気づいた瞬間、",
+      "start_seconds": 400.44,
+      "end_seconds": 405.0,
+      "id": "rGyWuoEAFaM-display-0106",
+      "segment_id": "rGyWuoEAFaM-ja-0049"
+    },
+    {
+      "text": "私の価値観は根底から変わりました。",
+      "start_seconds": 405.0,
+      "end_seconds": 409.08,
+      "id": "rGyWuoEAFaM-display-0107",
+      "segment_id": "rGyWuoEAFaM-ja-0049"
+    },
+    {
+      "text": "サイバーの世界で本当に大切なのは人間の",
+      "start_seconds": 409.08,
+      "end_seconds": 412.759,
+      "id": "rGyWuoEAFaM-display-0108",
+      "segment_id": "rGyWuoEAFaM-ja-0050"
+    },
+    {
+      "text": "温かさだということ。それまでの私は技術",
+      "start_seconds": 412.759,
+      "end_seconds": 417.24,
+      "id": "rGyWuoEAFaM-display-0109",
+      "segment_id": "rGyWuoEAFaM-ja-0050"
+    },
+    {
+      "text": "が全てだと思っていました。そして正直に",
+      "start_seconds": 417.24,
+      "end_seconds": 421.08,
+      "id": "rGyWuoEAFaM-display-0110",
+      "segment_id": "rGyWuoEAFaM-ja-0050"
+    },
+    {
+      "text": "言うと患らわしい人間という要素がない",
+      "start_seconds": 421.08,
+      "end_seconds": 424.4,
+      "id": "rGyWuoEAFaM-display-0111",
+      "segment_id": "rGyWuoEAFaM-ja-0051"
+    },
+    {
+      "text": "技術は楽な世界でした。サイバーの世界は",
+      "start_seconds": 424.4,
+      "end_seconds": 428.12,
+      "id": "rGyWuoEAFaM-display-0112",
+      "segment_id": "rGyWuoEAFaM-ja-0051"
+    },
+    {
+      "text": "人から見れば無質なデータと技術の世界に",
+      "start_seconds": 428.12,
+      "end_seconds": 431.639,
+      "id": "rGyWuoEAFaM-display-0113",
+      "segment_id": "rGyWuoEAFaM-ja-0051"
+    },
+    {
+      "text": "見えるかもしれません。でも無奇質な",
+      "start_seconds": 431.639,
+      "end_seconds": 435.599,
+      "id": "rGyWuoEAFaM-display-0114",
+      "segment_id": "rGyWuoEAFaM-ja-0052"
+    },
+    {
+      "text": "サイバーの中には人間がいます。傷つく人",
+      "start_seconds": 435.599,
+      "end_seconds": 439.36,
+      "id": "rGyWuoEAFaM-display-0115",
+      "segment_id": "rGyWuoEAFaM-ja-0052"
+    },
+    {
+      "text": "、プレッシャーを感じる人、迷い揺れる人",
+      "start_seconds": 439.36,
+      "end_seconds": 442.759,
+      "id": "rGyWuoEAFaM-display-0116",
+      "segment_id": "rGyWuoEAFaM-ja-0052"
+    },
+    {
+      "text": "がそしてそれを攻撃する人がいます。1番",
+      "start_seconds": 442.759,
+      "end_seconds": 447.479,
+      "id": "rGyWuoEAFaM-display-0117",
+      "segment_id": "rGyWuoEAFaM-ja-0053"
+    },
+    {
+      "text": "守られるべきなのは人間だと気づいたん",
+      "start_seconds": 447.479,
+      "end_seconds": 450.8,
+      "id": "rGyWuoEAFaM-display-0118",
+      "segment_id": "rGyWuoEAFaM-ja-0053"
+    },
+    {
+      "text": "です。時に苦しみ、迷い、揺れる、そして",
+      "start_seconds": 450.8,
+      "end_seconds": 457.52,
+      "id": "rGyWuoEAFaM-display-0119",
+      "segment_id": "rGyWuoEAFaM-ja-0054"
+    },
+    {
+      "text": "間違える。それが人間でも裁判の世界では",
+      "start_seconds": 457.52,
+      "end_seconds": 462.879,
+      "id": "rGyWuoEAFaM-display-0120",
+      "segment_id": "rGyWuoEAFaM-ja-0055"
+    },
+    {
+      "text": "それが許されない。ゲームなら何度でも",
+      "start_seconds": 462.879,
+      "end_seconds": 466.4,
+      "id": "rGyWuoEAFaM-display-0121",
+      "segment_id": "rGyWuoEAFaM-ja-0055"
+    },
+    {
+      "text": "やり直せます。でもサイバーの世界では",
+      "start_seconds": 466.4,
+      "end_seconds": 469.52,
+      "id": "rGyWuoEAFaM-display-0122",
+      "segment_id": "rGyWuoEAFaM-ja-0055"
+    },
+    {
+      "text": "失敗や間違いが時には永遠に残る。失敗が",
+      "start_seconds": 469.52,
+      "end_seconds": 474.039,
+      "id": "rGyWuoEAFaM-display-0123",
+      "segment_id": "rGyWuoEAFaM-ja-0056"
+    },
+    {
+      "text": "大きな結果を生むこともある。でも間違い",
+      "start_seconds": 474.039,
+      "end_seconds": 478.36,
+      "id": "rGyWuoEAFaM-display-0124",
+      "segment_id": "rGyWuoEAFaM-ja-0056"
+    },
+    {
+      "text": "を経験してこそ人は成熟できる。",
+      "start_seconds": 478.36,
+      "end_seconds": 482.72,
+      "id": "rGyWuoEAFaM-display-0125",
+      "segment_id": "rGyWuoEAFaM-ja-0057"
+    },
+    {
+      "text": "それなのに私たちはその世界の生き方を",
+      "start_seconds": 482.72,
+      "end_seconds": 486.12,
+      "id": "rGyWuoEAFaM-display-0126",
+      "segment_id": "rGyWuoEAFaM-ja-0058"
+    },
+    {
+      "text": "教わっていない。十分な経験も練習の機会",
+      "start_seconds": 486.12,
+      "end_seconds": 490.159,
+      "id": "rGyWuoEAFaM-display-0127",
+      "segment_id": "rGyWuoEAFaM-ja-0058"
+    },
+    {
+      "text": "も与えられないままサイバーの世界に",
+      "start_seconds": 490.159,
+      "end_seconds": 493.44,
+      "id": "rGyWuoEAFaM-display-0128",
+      "segment_id": "rGyWuoEAFaM-ja-0058"
+    },
+    {
+      "text": "放り込まれている。これが最大の矛盾です",
+      "start_seconds": 493.44,
+      "end_seconds": 497.879,
+      "id": "rGyWuoEAFaM-display-0129",
+      "segment_id": "rGyWuoEAFaM-ja-0059"
+    },
+    {
+      "text": "。人間は試して失敗してまた立ち上がる。",
+      "start_seconds": 497.879,
+      "end_seconds": 504.879,
+      "id": "rGyWuoEAFaM-display-0130",
+      "segment_id": "rGyWuoEAFaM-ja-0059"
+    },
+    {
+      "text": "抵抗と失敗を繰り返しながら経験を積み",
+      "start_seconds": 504.879,
+      "end_seconds": 508.639,
+      "id": "rGyWuoEAFaM-display-0131",
+      "segment_id": "rGyWuoEAFaM-ja-0060"
+    },
+    {
+      "text": "その中で生きる知恵を身につけていく。で",
+      "start_seconds": 508.639,
+      "end_seconds": 513.12,
+      "id": "rGyWuoEAFaM-display-0132",
+      "segment_id": "rGyWuoEAFaM-ja-0060"
+    },
+    {
+      "text": "もサイバーの世界では失敗の代償が大き",
+      "start_seconds": 513.12,
+      "end_seconds": 516.76,
+      "id": "rGyWuoEAFaM-display-0133",
+      "segment_id": "rGyWuoEAFaM-ja-0060"
+    },
+    {
+      "text": "すぎる。そしてどう判断するかも学迷いと",
+      "start_seconds": 516.76,
+      "end_seconds": 521.959,
+      "id": "rGyWuoEAFaM-display-0134",
+      "segment_id": "rGyWuoEAFaM-ja-0061"
+    },
+    {
+      "text": "向き合うのか、どう間違いから立ちるのか",
+      "start_seconds": 521.959,
+      "end_seconds": 525.16,
+      "id": "rGyWuoEAFaM-display-0135",
+      "segment_id": "rGyWuoEAFaM-ja-0061"
+    },
+    {
+      "text": "も教わらない。",
+      "start_seconds": 525.16,
+      "end_seconds": 527.959,
+      "id": "rGyWuoEAFaM-display-0136",
+      "segment_id": "rGyWuoEAFaM-ja-0061"
+    },
+    {
+      "text": "だから私はこう考えています。必要なのは",
+      "start_seconds": 527.959,
+      "end_seconds": 532.76,
+      "id": "rGyWuoEAFaM-display-0137",
+      "segment_id": "rGyWuoEAFaM-ja-0062"
+    },
+    {
+      "text": "強さではありません。",
+      "start_seconds": 532.76,
+      "end_seconds": 535.839,
+      "id": "rGyWuoEAFaM-display-0138",
+      "segment_id": "rGyWuoEAFaM-ja-0062"
+    },
+    {
+      "text": "サイバーレジリアンス。それはしなやかな",
+      "start_seconds": 535.839,
+      "end_seconds": 540.6,
+      "id": "rGyWuoEAFaM-display-0139",
+      "segment_id": "rGyWuoEAFaM-ja-0063"
+    },
+    {
+      "text": "判断力とそして回復する力。タイバーの",
+      "start_seconds": 540.6,
+      "end_seconds": 545.279,
+      "id": "rGyWuoEAFaM-display-0140",
+      "segment_id": "rGyWuoEAFaM-ja-0063"
+    },
+    {
+      "text": "世界ではプレッシャーや強い感情欲望に",
+      "start_seconds": 545.279,
+      "end_seconds": 548.72,
+      "id": "rGyWuoEAFaM-display-0141",
+      "segment_id": "rGyWuoEAFaM-ja-0064"
+    },
+    {
+      "text": "よって人の判断は簡単に歪みます。焦り、",
+      "start_seconds": 548.72,
+      "end_seconds": 553.8,
+      "id": "rGyWuoEAFaM-display-0142",
+      "segment_id": "rGyWuoEAFaM-ja-0064"
+    },
+    {
+      "text": "恐れ、責任、時間の圧力。そうした瞬間に",
+      "start_seconds": 553.8,
+      "end_seconds": 558.839,
+      "id": "rGyWuoEAFaM-display-0143",
+      "segment_id": "rGyWuoEAFaM-ja-0065"
+    },
+    {
+      "text": "人は本来守るべき判断の順番を失って",
+      "start_seconds": 558.839,
+      "end_seconds": 562.92,
+      "id": "rGyWuoEAFaM-display-0144",
+      "segment_id": "rGyWuoEAFaM-ja-0065"
+    },
+    {
+      "text": "しまう。例えばどうしても欲しいものを",
+      "start_seconds": 562.92,
+      "end_seconds": 566.44,
+      "id": "rGyWuoEAFaM-display-0145",
+      "segment_id": "rGyWuoEAFaM-ja-0066"
+    },
+    {
+      "text": "オンラインで見つけた時、本来なら確認",
+      "start_seconds": 566.44,
+      "end_seconds": 570.04,
+      "id": "rGyWuoEAFaM-display-0146",
+      "segment_id": "rGyWuoEAFaM-ja-0066"
+    },
+    {
+      "text": "する、買う、送金する。この順番のはず",
+      "start_seconds": 570.04,
+      "end_seconds": 574.0,
+      "id": "rGyWuoEAFaM-display-0147",
+      "segment_id": "rGyWuoEAFaM-ja-0066"
+    },
+    {
+      "text": "です。でも実際には買う、送金する、確認",
+      "start_seconds": 574.0,
+      "end_seconds": 579.32,
+      "id": "rGyWuoEAFaM-display-0148",
+      "segment_id": "rGyWuoEAFaM-ja-0067"
+    },
+    {
+      "text": "すると順番が逆転してしまう。そして時に",
+      "start_seconds": 579.32,
+      "end_seconds": 583.36,
+      "id": "rGyWuoEAFaM-display-0149",
+      "segment_id": "rGyWuoEAFaM-ja-0067"
+    },
+    {
+      "text": "は確認という判断そのものが問わされて",
+      "start_seconds": 583.36,
+      "end_seconds": 586.6,
+      "id": "rGyWuoEAFaM-display-0150",
+      "segment_id": "rGyWuoEAFaM-ja-0068"
+    },
+    {
+      "text": "しまう。それは弱いからではありません。",
+      "start_seconds": 586.6,
+      "end_seconds": 591.76,
+      "id": "rGyWuoEAFaM-display-0151",
+      "segment_id": "rGyWuoEAFaM-ja-0068"
+    },
+    {
+      "text": "しなやか判断力を身につける機会がなかっ",
+      "start_seconds": 591.76,
+      "end_seconds": 594.92,
+      "id": "rGyWuoEAFaM-display-0152",
+      "segment_id": "rGyWuoEAFaM-ja-0069"
+    },
+    {
+      "text": "たからです。だから必要なのはしなやかな",
+      "start_seconds": 594.92,
+      "end_seconds": 598.839,
+      "id": "rGyWuoEAFaM-display-0153",
+      "segment_id": "rGyWuoEAFaM-ja-0069"
+    },
+    {
+      "text": "判断力、歪んだ判断に気づき、見失った",
+      "start_seconds": 598.839,
+      "end_seconds": 602.8,
+      "id": "rGyWuoEAFaM-display-0154",
+      "segment_id": "rGyWuoEAFaM-ja-0069"
+    },
+    {
+      "text": "順番を取り戻す力。そしてもう1つ、何か",
+      "start_seconds": 602.8,
+      "end_seconds": 608.399,
+      "id": "rGyWuoEAFaM-display-0155",
+      "segment_id": "rGyWuoEAFaM-ja-0070"
+    },
+    {
+      "text": "が起きた時に折れてしまわない回復力、",
+      "start_seconds": 608.399,
+      "end_seconds": 612.2,
+      "id": "rGyWuoEAFaM-display-0156",
+      "segment_id": "rGyWuoEAFaM-ja-0070"
+    },
+    {
+      "text": "戻って来るしなやかさ。でもこの力は1度",
+      "start_seconds": 612.2,
+      "end_seconds": 617.36,
+      "id": "rGyWuoEAFaM-display-0157",
+      "segment_id": "rGyWuoEAFaM-ja-0071"
+    },
+    {
+      "text": "で身につくものではありません。本を読ん",
+      "start_seconds": 617.36,
+      "end_seconds": 620.64,
+      "id": "rGyWuoEAFaM-display-0158",
+      "segment_id": "rGyWuoEAFaM-ja-0071"
+    },
+    {
+      "text": "だだけでも知識があるだけでも足りない。",
+      "start_seconds": 620.64,
+      "end_seconds": 625.2,
+      "id": "rGyWuoEAFaM-display-0159",
+      "segment_id": "rGyWuoEAFaM-ja-0072"
+    },
+    {
+      "text": "いざという瞬間にその知識を使えるように",
+      "start_seconds": 625.2,
+      "end_seconds": 628.48,
+      "id": "rGyWuoEAFaM-display-0160",
+      "segment_id": "rGyWuoEAFaM-ja-0073"
+    },
+    {
+      "text": "なっていなければならない。それはまるで",
+      "start_seconds": 628.48,
+      "end_seconds": 632.8,
+      "id": "rGyWuoEAFaM-display-0161",
+      "segment_id": "rGyWuoEAFaM-ja-0073"
+    },
+    {
+      "text": "スポーツや音楽のようなものです。理論を",
+      "start_seconds": 632.8,
+      "end_seconds": 636.44,
+      "id": "rGyWuoEAFaM-display-0162",
+      "segment_id": "rGyWuoEAFaM-ja-0073"
+    },
+    {
+      "text": "理解し、何度も練習し、少しずつ方を身に",
+      "start_seconds": 636.44,
+      "end_seconds": 640.72,
+      "id": "rGyWuoEAFaM-display-0163",
+      "segment_id": "rGyWuoEAFaM-ja-0074"
+    },
+    {
+      "text": "つけ、サイバーの世界でも同じです。判断",
+      "start_seconds": 640.72,
+      "end_seconds": 645.079,
+      "id": "rGyWuoEAFaM-display-0164",
+      "segment_id": "rGyWuoEAFaM-ja-0074"
+    },
+    {
+      "text": "の方、回復の方、行動の方、それを練習に",
+      "start_seconds": 645.079,
+      "end_seconds": 650.279,
+      "id": "rGyWuoEAFaM-display-0165",
+      "segment_id": "rGyWuoEAFaM-ja-0075"
+    },
+    {
+      "text": "よって身につけていく。そしたらいざと",
+      "start_seconds": 650.279,
+      "end_seconds": 653.079,
+      "id": "rGyWuoEAFaM-display-0166",
+      "segment_id": "rGyWuoEAFaM-ja-0075"
+    },
+    {
+      "text": "いう時に身についた方が自立的に引き出さ",
+      "start_seconds": 653.079,
+      "end_seconds": 656.399,
+      "id": "rGyWuoEAFaM-display-0167",
+      "segment_id": "rGyWuoEAFaM-ja-0075"
+    },
+    {
+      "text": "れる。",
+      "start_seconds": 656.399,
+      "end_seconds": 658.16,
+      "id": "rGyWuoEAFaM-display-0168",
+      "segment_id": "rGyWuoEAFaM-ja-0076"
+    },
+    {
+      "text": "でもそこに矛盾があります。サイバーの",
+      "start_seconds": 658.16,
+      "end_seconds": 663.399,
+      "id": "rGyWuoEAFaM-display-0169",
+      "segment_id": "rGyWuoEAFaM-ja-0077"
+    },
+    {
+      "text": "世界では1度の失敗が大きな結果を生む。",
+      "start_seconds": 663.399,
+      "end_seconds": 668.0,
+      "id": "rGyWuoEAFaM-display-0170",
+      "segment_id": "rGyWuoEAFaM-ja-0077"
+    },
+    {
+      "text": "でも人は失敗しながらではないと学べない",
+      "start_seconds": 668.0,
+      "end_seconds": 672.04,
+      "id": "rGyWuoEAFaM-display-0171",
+      "segment_id": "rGyWuoEAFaM-ja-0078"
+    },
+    {
+      "text": "。だからこそ必要なのは安全に学び、安全",
+      "start_seconds": 672.04,
+      "end_seconds": 676.92,
+      "id": "rGyWuoEAFaM-display-0172",
+      "segment_id": "rGyWuoEAFaM-ja-0078"
+    },
+    {
+      "text": "に練習できる場所です。例えばさ、ある日",
+      "start_seconds": 676.92,
+      "end_seconds": 681.72,
+      "id": "rGyWuoEAFaM-display-0173",
+      "segment_id": "rGyWuoEAFaM-ja-0079"
+    },
+    {
+      "text": "突然メッセージが届きます。今すぐ対応し",
+      "start_seconds": 681.72,
+      "end_seconds": 685.36,
+      "id": "rGyWuoEAFaM-display-0174",
+      "segment_id": "rGyWuoEAFaM-ja-0079"
+    },
+    {
+      "text": "てください。あなたのアカウントが停止さ",
+      "start_seconds": 685.36,
+      "end_seconds": 688.32,
+      "id": "rGyWuoEAFaM-display-0175",
+      "segment_id": "rGyWuoEAFaM-ja-0079"
+    },
+    {
+      "text": "れます。今だけの特別な投資です。その時",
+      "start_seconds": 688.32,
+      "end_seconds": 692.399,
+      "id": "rGyWuoEAFaM-display-0176",
+      "segment_id": "rGyWuoEAFaM-ja-0080"
+    },
+    {
+      "text": "人は焦り恐れ期待の中ですぐに行動して",
+      "start_seconds": 692.399,
+      "end_seconds": 697.079,
+      "id": "rGyWuoEAFaM-display-0177",
+      "segment_id": "rGyWuoEAFaM-ja-0080"
+    },
+    {
+      "text": "しまう。本来なら確認する、相談する、",
+      "start_seconds": 697.079,
+      "end_seconds": 701.959,
+      "id": "rGyWuoEAFaM-display-0178",
+      "segment_id": "rGyWuoEAFaM-ja-0081"
+    },
+    {
+      "text": "少し時間を置く。そういう判断の方が必要",
+      "start_seconds": 701.959,
+      "end_seconds": 706.76,
+      "id": "rGyWuoEAFaM-display-0179",
+      "segment_id": "rGyWuoEAFaM-ja-0081"
+    },
+    {
+      "text": "です。でも多くの人はその方の練習をして",
+      "start_seconds": 706.76,
+      "end_seconds": 711.079,
+      "id": "rGyWuoEAFaM-display-0180",
+      "segment_id": "rGyWuoEAFaM-ja-0082"
+    },
+    {
+      "text": "いません。だから引っかかる。それは弱い",
+      "start_seconds": 711.079,
+      "end_seconds": 716.68,
+      "id": "rGyWuoEAFaM-display-0181",
+      "segment_id": "rGyWuoEAFaM-ja-0082"
+    },
+    {
+      "text": "からではありません。方を知らない上に",
+      "start_seconds": 716.68,
+      "end_seconds": 720.32,
+      "id": "rGyWuoEAFaM-display-0182",
+      "segment_id": "rGyWuoEAFaM-ja-0083"
+    },
+    {
+      "text": "安全な場所で練習していないからです。",
+      "start_seconds": 720.32,
+      "end_seconds": 726.079,
+      "id": "rGyWuoEAFaM-display-0183",
+      "segment_id": "rGyWuoEAFaM-ja-0083"
+    },
+    {
+      "text": "サイバーセキュリティとは",
+      "start_seconds": 726.079,
+      "end_seconds": 729.0,
+      "id": "rGyWuoEAFaM-display-0184",
+      "segment_id": "rGyWuoEAFaM-ja-0084"
+    },
+    {
+      "text": "しなやかな判断力と回復力を養い",
+      "start_seconds": 729.0,
+      "end_seconds": 733.32,
+      "id": "rGyWuoEAFaM-display-0185",
+      "segment_id": "rGyWuoEAFaM-ja-0084"
+    },
+    {
+      "text": "矛盾だらけのサイバーの世界を人が自分の",
+      "start_seconds": 733.32,
+      "end_seconds": 737.48,
+      "id": "rGyWuoEAFaM-display-0186",
+      "segment_id": "rGyWuoEAFaM-ja-0084"
+    },
+    {
+      "text": "足で歩いていく力を身につけていくこと",
+      "start_seconds": 737.48,
+      "end_seconds": 741.36,
+      "id": "rGyWuoEAFaM-display-0187",
+      "segment_id": "rGyWuoEAFaM-ja-0085"
+    },
+    {
+      "text": "個人で組織でそして社会で誤解して欲しく",
+      "start_seconds": 741.36,
+      "end_seconds": 746.24,
+      "id": "rGyWuoEAFaM-display-0188",
+      "segment_id": "rGyWuoEAFaM-ja-0085"
+    },
+    {
+      "text": "ないのは技術やプロセスが不要だと言っ",
+      "start_seconds": 746.24,
+      "end_seconds": 749.44,
+      "id": "rGyWuoEAFaM-display-0189",
+      "segment_id": "rGyWuoEAFaM-ja-0085"
+    },
+    {
+      "text": "てるのではありません。むしろそれらは",
+      "start_seconds": 749.44,
+      "end_seconds": 752.399,
+      "id": "rGyWuoEAFaM-display-0190",
+      "segment_id": "rGyWuoEAFaM-ja-0086"
+    },
+    {
+      "text": "不可欠です。でもどれほど高度な技術や正",
+      "start_seconds": 752.399,
+      "end_seconds": 758.6,
+      "id": "rGyWuoEAFaM-display-0191",
+      "segment_id": "rGyWuoEAFaM-ja-0086"
+    },
+    {
+      "text": "があってもそこには常に人間がいなければ",
+      "start_seconds": 758.6,
+      "end_seconds": 763.0,
+      "id": "rGyWuoEAFaM-display-0192",
+      "segment_id": "rGyWuoEAFaM-ja-0087"
+    },
+    {
+      "text": "ならない。それが私の一貫した信念です。",
+      "start_seconds": 763.0,
+      "end_seconds": 768.44,
+      "id": "rGyWuoEAFaM-display-0193",
+      "segment_id": "rGyWuoEAFaM-ja-0087"
+    },
+    {
+      "text": "私はこれまで何万人もの人に出会い、",
+      "start_seconds": 768.44,
+      "end_seconds": 773.04,
+      "id": "rGyWuoEAFaM-display-0194",
+      "segment_id": "rGyWuoEAFaM-ja-0088"
+    },
+    {
+      "text": "100以上の違う文化の人々と働き、",
+      "start_seconds": 773.04,
+      "end_seconds": 776.279,
+      "id": "rGyWuoEAFaM-display-0195",
+      "segment_id": "rGyWuoEAFaM-ja-0088"
+    },
+    {
+      "text": "アジア、ヨーロッパ、北米、オセアニア、",
+      "start_seconds": 776.279,
+      "end_seconds": 779.639,
+      "id": "rGyWuoEAFaM-display-0196",
+      "segment_id": "rGyWuoEAFaM-ja-0088"
+    },
+    {
+      "text": "アフリカ、日本、世界の様々な場所で生き",
+      "start_seconds": 779.639,
+      "end_seconds": 784.199,
+      "id": "rGyWuoEAFaM-display-0197",
+      "segment_id": "rGyWuoEAFaM-ja-0089"
+    },
+    {
+      "text": "てきました。そして確信したことがあり",
+      "start_seconds": 784.199,
+      "end_seconds": 788.0,
+      "id": "rGyWuoEAFaM-display-0198",
+      "segment_id": "rGyWuoEAFaM-ja-0089"
+    },
+    {
+      "text": "ます。",
+      "start_seconds": 788.0,
+      "end_seconds": 789.839,
+      "id": "rGyWuoEAFaM-display-0199",
+      "segment_id": "rGyWuoEAFaM-ja-0089"
+    },
+    {
+      "text": "人間は1人として同じ人はいない。そして",
+      "start_seconds": 789.839,
+      "end_seconds": 794.56,
+      "id": "rGyWuoEAFaM-display-0200",
+      "segment_id": "rGyWuoEAFaM-ja-0090"
+    },
+    {
+      "text": "人が1人1人違うように",
+      "start_seconds": 794.56,
+      "end_seconds": 798.76,
+      "id": "rGyWuoEAFaM-display-0201",
+      "segment_id": "rGyWuoEAFaM-ja-0090"
+    },
+    {
+      "text": "サイバーのしなやかさも1人1人",
+      "start_seconds": 798.76,
+      "end_seconds": 801.959,
+      "id": "rGyWuoEAFaM-display-0202",
+      "segment_id": "rGyWuoEAFaM-ja-0091"
+    },
+    {
+      "text": "違う。確かに方はあります。でもそれを",
+      "start_seconds": 801.959,
+      "end_seconds": 806.56,
+      "id": "rGyWuoEAFaM-display-0203",
+      "segment_id": "rGyWuoEAFaM-ja-0091"
+    },
+    {
+      "text": "どう自分の技にするのか、どう裁判の世界",
+      "start_seconds": 806.56,
+      "end_seconds": 810.0,
+      "id": "rGyWuoEAFaM-display-0204",
+      "segment_id": "rGyWuoEAFaM-ja-0091"
+    },
+    {
+      "text": "を生き抜く力にするのか、それは1人1人",
+      "start_seconds": 810.0,
+      "end_seconds": 814.76,
+      "id": "rGyWuoEAFaM-display-0205",
+      "segment_id": "rGyWuoEAFaM-ja-0092"
+    },
+    {
+      "text": "違う。サイバーセキュリティとは技術だけ",
+      "start_seconds": 814.76,
+      "end_seconds": 819.0,
+      "id": "rGyWuoEAFaM-display-0206",
+      "segment_id": "rGyWuoEAFaM-ja-0092"
+    },
+    {
+      "text": "の話ではありません。これは人がサイバー",
+      "start_seconds": 819.0,
+      "end_seconds": 823.36,
+      "id": "rGyWuoEAFaM-display-0207",
+      "segment_id": "rGyWuoEAFaM-ja-0093"
+    },
+    {
+      "text": "の世界で生きていく力を育てることだから",
+      "start_seconds": 823.36,
+      "end_seconds": 827.44,
+      "id": "rGyWuoEAFaM-display-0208",
+      "segment_id": "rGyWuoEAFaM-ja-0093"
+    },
+    {
+      "text": "私は信じています。",
+      "start_seconds": 827.44,
+      "end_seconds": 830.759,
+      "id": "rGyWuoEAFaM-display-0209",
+      "segment_id": "rGyWuoEAFaM-ja-0093"
+    },
+    {
+      "text": "サイバーの未来を守るのは2段階認証でも",
+      "start_seconds": 830.759,
+      "end_seconds": 834.639,
+      "id": "rGyWuoEAFaM-display-0210",
+      "segment_id": "rGyWuoEAFaM-ja-0094"
+    },
+    {
+      "text": "AIでもありません。",
+      "start_seconds": 834.639,
+      "end_seconds": 838.72,
+      "id": "rGyWuoEAFaM-display-0211",
+      "segment_id": "rGyWuoEAFaM-ja-0094"
+    },
+    {
+      "text": "人間です。そしてその人間が迷い揺れ",
+      "start_seconds": 838.92,
+      "end_seconds": 844.32,
+      "id": "rGyWuoEAFaM-display-0212",
+      "segment_id": "rGyWuoEAFaM-ja-0095"
+    },
+    {
+      "text": "間違えてもしなやかな判断をしてまた",
+      "start_seconds": 844.32,
+      "end_seconds": 848.399,
+      "id": "rGyWuoEAFaM-display-0213",
+      "segment_id": "rGyWuoEAFaM-ja-0095"
+    },
+    {
+      "text": "立ち上がれるサイバーの世界を作っていく",
+      "start_seconds": 848.399,
+      "end_seconds": 851.0,
+      "id": "rGyWuoEAFaM-display-0214",
+      "segment_id": "rGyWuoEAFaM-ja-0096"
+    },
+    {
+      "text": "こと。それが人間を中心にしたサイバー",
+      "start_seconds": 851.0,
+      "end_seconds": 854.68,
+      "id": "rGyWuoEAFaM-display-0215",
+      "segment_id": "rGyWuoEAFaM-ja-0096"
+    },
+    {
+      "text": "セキュリティです。だから最後に皆様にお",
+      "start_seconds": 854.68,
+      "end_seconds": 858.88,
+      "id": "rGyWuoEAFaM-display-0216",
+      "segment_id": "rGyWuoEAFaM-ja-0096"
+    },
+    {
+      "text": "聞きしたいのです。この矛盾だらけの",
+      "start_seconds": 858.88,
+      "end_seconds": 862.48,
+      "id": "rGyWuoEAFaM-display-0217",
+      "segment_id": "rGyWuoEAFaM-ja-0097"
+    },
+    {
+      "text": "サイバーの世界で",
+      "start_seconds": 862.48,
+      "end_seconds": 865.24,
+      "id": "rGyWuoEAFaM-display-0218",
+      "segment_id": "rGyWuoEAFaM-ja-0097"
+    },
+    {
+      "text": "あなたはどんなしやかさを身につけていき",
+      "start_seconds": 865.24,
+      "end_seconds": 867.639,
+      "id": "rGyWuoEAFaM-display-0219",
+      "segment_id": "rGyWuoEAFaM-ja-0097"
+    },
+    {
+      "text": "ますか?",
+      "start_seconds": 867.639,
+      "end_seconds": 869.759,
+      "id": "rGyWuoEAFaM-display-0220",
+      "segment_id": "rGyWuoEAFaM-ja-0097"
+    },
+    {
+      "text": "ありがとうございました。",
+      "start_seconds": 869.759,
+      "end_seconds": 872.47,
+      "id": "rGyWuoEAFaM-display-0221",
+      "segment_id": "rGyWuoEAFaM-ja-0098"
+    },
+    {
+      "text": "[拍手]",
+      "start_seconds": 872.47,
+      "end_seconds": 874.49,
+      "id": "rGyWuoEAFaM-display-0222",
+      "segment_id": "rGyWuoEAFaM-ja-0099"
+    }
+  ]
+}

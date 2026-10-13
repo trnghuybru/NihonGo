@@ -190,8 +190,9 @@ Thanh điều hướng xuất hiện sau khi người dùng đã hoàn tất thi
   Khung tối đa hai dòng có thể cuộn nếu nguồn thiếu mốc chia; không cắt bằng ellipsis.
   Các câu luyện đầy đủ trong bảng chữ 14/22, nét thường, icon phát 18 bên trái.
   Nút công cụ 32–36 px có hitSlop, nhãn 12 px; ẩn “Chọn kỹ năng khác” ở shadowing.
-  Thanh công cụ có Phụ đề, Bản dịch và nút `•••`; bảng có header, AB ẩn/hiện chữ,
-  nút theo dõi và nút đóng. Bản dịch chưa khả dụng khi video chưa có dữ liệu dịch.
+  Một thanh công cụ duy nhất có icon Phụ đề bật/tắt danh sách, Bản dịch, theo dõi,
+  trước/replay/tiếp và `•••`. Bỏ header Phụ đề và nút đóng lặp lại của bảng.
+  Ẩn/hiện chữ dùng icon mắt 18 px ở góc trên phải của khung phụ đề lớn, vùng 32 px + hitSlop; chừa khoảng bên phải để không che chữ. Bản dịch dùng icon Translate 18 px, không có nhãn chữ trên thanh; thanh cuộn ngang khi màn hình hẹp hoặc chữ lớn. Bản dịch tạo theo yêu cầu, hiển thị trạng thái xử lý và dùng lại dữ liệu đã lưu.
   Tốc độ/chế độ nghe/lặp câu nằm trong bảng tuỳ chọn mở bằng `•••`.
 - Bài luyện giữ player YouTube phía trên, danh sách phụ đề FlatList cuộn phía dưới.
   Mặc định nghe liên tục: phụ đề bám theo thời gian video, tô sáng câu hiện tại và
@@ -270,3 +271,12 @@ Logo và icon launcher dùng đầu Momo cùng chữ NihonGO đen–cam theo m�
   dạng gốc khi biến đổi, từ loại, nghĩa tiếng Việt và nút đóng 32 px + hitSlop.
   Nội dung dài có thể cuộn. Thiếu nghĩa là trạng thái thật, không hiển thị nút giả.
 - Không gọi AI/tra từ online khi bấm. Không thêm romaji, lưu từ hoặc audio trong bản thử.
+
+
+### Bản dịch phụ đề shadowing
+
+- Nút Bản dịch bật/tắt độc lập với panel Phụ đề, nhỏ và cùng kiểu chip đã có. Khi chưa có dữ liệu, tạo job backend và hiển thị tiến độ thật; có lỗi và Thử lại, video tiếp tục phát.
+- Bản Việt dưới câu Nhật trong danh sách dùng body 12/18 màu muted. Bản Việt dưới phụ đề lớn dùng label 14/20, căn giữa, cuộn tối đa 72 px. Bản Việt bám câu luyện, không cắt theo cue Nhật ngắn hoặc tự tạo timestamp.
+- Chỉ tải khi bật Bản dịch, dùng cache theo video cho mọi người; tắt ẩn bản Việt và dừng poll. Không remount player khi có bản dịch.
+
+- Nút mắt ẩn toàn bộ vùng phụ đề lớn và bản dịch bên dưới vùng này, không giữ khung hay dòng thông báo thay thế. Danh sách câu vẫn đọc được. Khi ẩn, icon mắt chuyển xuống thanh công cụ để mở lại; khi hiện, icon nằm góc trên phải của khung lớn.
