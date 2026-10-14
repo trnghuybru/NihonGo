@@ -3,6 +3,7 @@ import { AuthShell } from '../components/AuthForm';
 import { MascotPose, NihongoMascot } from '../components/NihongoMascot';
 import { colors, spacing, typography } from '../theme/theme';
 import { MISSING_DATA } from '../config/content';
+import { WritingScreen } from './WritingScreen';
 
 export type LearningArea = 'listening' | 'reading' | 'writing' | 'vocabulary';
 
@@ -39,6 +40,10 @@ export function LearningAreaScreen({
   area: LearningArea;
   query?: string;
 }) {
+  if (area === 'writing') {
+    return <WritingScreen />;
+  }
+
   const content = areas[area];
   return (
     <AuthShell title={content.title} subtitle={content.description}>
