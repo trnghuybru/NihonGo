@@ -9,7 +9,7 @@ from sqlalchemy.exc import SQLAlchemyError
 from .models import AuthSession, Challenge, OAuthFlow, RateLimit, db, now
 from .security import AuthError, limit
 
-ACCOUNT_API_PREFIXES = ("/api/auth/", "/api/learning/", "/api/speaking/", "/api/vocabulary/")
+ACCOUNT_API_PREFIXES = ("/api/auth/", "/api/learning/", "/api/speaking/", "/api/vocabulary/", "/api/writing/")
 
 
 def init_auth(app):
