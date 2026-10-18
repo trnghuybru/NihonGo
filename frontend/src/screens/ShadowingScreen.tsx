@@ -15,6 +15,7 @@ import {
   View,
   useWindowDimensions,
 } from 'react-native';
+import { useWebLayout } from '../hooks/useWebLayout';
 import { BrandLogo } from '../components/BrandLogo';
 import { useShadowingTranslation } from '../hooks/useShadowingTranslation';
 import { useShadowingQuiz } from '../hooks/useShadowingQuiz';
@@ -134,16 +135,18 @@ const ShadowingVideoCard = memo(function VideoCard({
   busy,
   onOpen,
   onRetry,
+  width,
 }: {
   job: ShadowingJob;
   busy: boolean;
   onOpen: (id: string) => Promise<void>;
   onRetry?: (job: ShadowingJob) => Promise<void>;
+  width?: number;
 }) {
   const ready = job.status === 'ready';
   const title = job.title || 'Video đang được chuẩn bị';
   return (
-    <View style={styles.videoCard}>
+    <View style={[styles.videoCard, width !== undefined && { width }]}>
       <Pressable
         accessibilityRole="button"
         accessibilityLabel={`Mở video ${title}`}
@@ -212,9 +215,26 @@ export function ShadowingScreen({
   onExit?: () => void;
   bottomOverlayHeight?: number;
 }) {
+  const { desktop, contentWidth } = useWebLayout();
+  const [importOpen, setImportOpen] = useState(false);
   const insets = useSafeAreaInsets();
   const bottomScreenInset = bottomOverlayHeight ? 0 : insets.bottom;
   const { width: windowWidth, fontScale } = useWindowDimensions();
+  const catalogWidth =
+    Math.min(contentWidth || windowWidth, layout.maxContentWidth) -
+    layout.screenGutter * 2;
+  const catalogColumns =
+    Platform.OS === 'web' && fontScale <= 1.3
+      ? catalogWidth >= 860
+        ? 3
+        : catalogWidth >= 560
+        ? 2
+        : 1
+      : 1;
+  const catalogCardWidth =
+    catalogColumns > 1
+      ? (catalogWidth - spacing.lg * (catalogColumns - 1)) / catalogColumns
+      : undefined;
   const [captionWidth, setCaptionWidth] = useState(0);
   const listRef = useRef<FlatList>(null);
   const [url, setUrl] = useState('');
@@ -459,7 +479,8 @@ export function ShadowingScreen({
       viewPosition: 0.25,
     });
   }, []);
-  const captions = lesson?.captions ?? lesson?.segments;
+  // Show the complete practice sentence throughout its timestamp range.
+  const captions = lesson?.segments;
   const practiceIndices = useMemo(
     () =>
       new Map(
@@ -550,9 +571,10 @@ export function ShadowingScreen({
         busy={busy}
         onOpen={open}
         onRetry={item.can_retry ? submit : undefined}
+        width={catalogCardWidth}
       />
     ),
-    [busy, open, submit],
+    [busy, open, submit, catalogCardWidth],
   );
   if (lesson) {
     const current = liveIndex >= 0 ? liveIndex : lastCaptionIndex.current;
@@ -562,8 +584,7 @@ export function ShadowingScreen({
         : '';
     const currentTokens =
       !hideCaption && captionIndex >= 0
-        ? lesson.tokens?.captions[captions?.[captionIndex]?.id ?? ''] ??
-          lesson.tokens?.segments[captions?.[captionIndex]?.id ?? '']
+        ? lesson.tokens?.segments[captions?.[captionIndex]?.id ?? '']
         : undefined;
     const tokenSpacing =
       Math.max(
@@ -607,9 +628,10 @@ export function ShadowingScreen({
             paddingBottom: bottomScreenInset,
             paddingHorizontal: spacing.sm,
           },
+          desktop && styles.desktopLesson,
         ]}
       >
-        <View style={styles.fixedHeader}>
+        <View style={[styles.fixedHeader, desktop && styles.desktopVideoPanel]}>
           <View style={styles.backRow}>
             <Pressable
               accessibilityRole="button"
@@ -886,7 +908,12 @@ export function ShadowingScreen({
           </ScrollView>
         </View>
         {panelOpen ? (
-          <View style={styles.subtitlePanel}>
+          <View
+            style={[
+              styles.subtitlePanel,
+              desktop && styles.desktopSubtitlePanel,
+            ]}
+          >
             <FlatList
               ref={listRef}
               style={styles.subtitleList}
@@ -1045,11 +1072,14 @@ export function ShadowingScreen({
       behavior={Platform.OS === 'ios' ? 'padding' : undefined}
     >
       <FlatList
+        key={`catalog-${catalogColumns}`}
         data={jobs}
+        numColumns={catalogColumns}
+        columnWrapperStyle={catalogColumns > 1 ? styles.catalogRow : undefined}
         renderItem={renderJob}
         keyExtractor={job => job.id}
         ItemSeparatorComponent={CatalogSeparator}
-        initialNumToRender={4}
+        initialNumToRender={catalogColumns > 1 ? catalogColumns * 3 : 4}
         onEndReached={loadMore}
         onEndReachedThreshold={0.4}
         keyboardShouldPersistTaps="handled"
@@ -1066,45 +1096,61 @@ export function ShadowingScreen({
         ]}
         ListHeaderComponent={
           <View style={styles.catalogHeader}>
-            <BrandLogo />
-            <View style={styles.catalogCopy}>
+            {!desktop && <BrandLogo />}
+            <View
+              style={[styles.catalogCopy, desktop && styles.desktopCatalogCopy]}
+            >
               <Text accessibilityRole="header" style={styles.catalogTitle}>
                 Nghe & shadowing
               </Text>
+              {desktop && (
+                <AuthButton
+                  label={importOpen ? 'Thu gọn' : '+ Thêm video YouTube'}
+                  variant="outline"
+                  onPress={() => setImportOpen(value => !value)}
+                />
+              )}
             </View>
+            {desktop && (
+              <Text style={styles.catalogSubtitle}>
+                Chọn video có phụ đề và luyện nghe theo từng đoạn.
+              </Text>
+            )}
             <AuthNotice error message={error} />
             <AuthNotice error message={listError} />
-            <View style={styles.importFrame}>
-              <View style={styles.sourceTab}>
-                <PlayCircleIcon size={20} color={colors.primaryText} />
-                <Text style={styles.sourceLabel}>YouTube</Text>
+            {(!desktop || importOpen) && (
+              <View style={styles.importFrame}>
+                <View style={styles.sourceTab}>
+                  <PlayCircleIcon size={20} color={colors.primaryText} />
+                  <Text style={styles.sourceLabel}>YouTube</Text>
+                </View>
+                <View style={styles.importCard}>
+                  <Text style={styles.heading}>Link YouTube</Text>
+                  <TextInput
+                    accessibilityLabel="Link YouTube"
+                    placeholder="Dán link video YouTube tiếng Nhật…"
+                    placeholderTextColor={colors.placeholder}
+                    value={url}
+                    onChangeText={setUrl}
+                    maxLength={2048}
+                    autoCapitalize="none"
+                    autoCorrect={false}
+                    keyboardType="url"
+                    style={styles.input}
+                  />
+                  <Text style={styles.body}>
+                    Video dài tối đa 20 phút. Bạn có thể tiếp tục dùng app trong
+                    lúc chuẩn bị.
+                  </Text>
+                  <AuthButton
+                    label="Chuẩn bị video"
+                    busy={busy}
+                    disabled={!url.trim()}
+                    onPress={() => submit()}
+                  />
+                </View>
               </View>
-              <View style={styles.importCard}>
-                <Text style={styles.heading}>Link YouTube</Text>
-                <TextInput
-                  accessibilityLabel="Link YouTube"
-                  placeholder="Dán link video YouTube tiếng Nhật…"
-                  placeholderTextColor={colors.placeholder}
-                  value={url}
-                  onChangeText={setUrl}
-                  maxLength={2048}
-                  autoCapitalize="none"
-                  autoCorrect={false}
-                  keyboardType="url"
-                  style={styles.input}
-                />
-                <Text style={styles.body}>
-                  Video dài tối đa 20 phút. Bạn có thể tiếp tục dùng app trong
-                  lúc chuẩn bị.
-                </Text>
-                <AuthButton
-                  label="Chuẩn bị video"
-                  busy={busy}
-                  disabled={!url.trim()}
-                  onPress={() => submit()}
-                />
-              </View>
-            </View>
+            )}
             <View style={styles.catalogScopes}>
               {(['all', 'mine'] as const).map(value => (
                 <Pressable
@@ -1168,6 +1214,25 @@ export function ShadowingScreen({
 }
 
 const styles = StyleSheet.create({
+  desktopLesson: {
+    flexDirection: 'row',
+    gap: spacing.xl,
+    paddingTop: spacing.xl,
+    paddingBottom: spacing.xl,
+    paddingHorizontal: layout.screenGutter,
+    minHeight: 0,
+  },
+  desktopVideoPanel: {
+    flex: 2,
+    width: 'auto',
+    alignSelf: 'flex-start',
+  },
+  desktopSubtitlePanel: {
+    flex: 1,
+    width: 'auto',
+    alignSelf: 'stretch',
+    minWidth: 0,
+  },
   translationText: {
     ...typography.body,
     color: colors.muted,
@@ -1199,6 +1264,11 @@ const styles = StyleSheet.create({
   },
   catalogHeader: { gap: spacing.lg, paddingBottom: spacing.lg },
   catalogCopy: { gap: spacing.sm },
+  desktopCatalogCopy: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
   catalogTitle: { ...typography.title, color: colors.dark },
   catalogSubtitle: { ...typography.input, color: colors.body },
   catalogScopes: { flexDirection: 'row', gap: spacing.sm },
@@ -1214,6 +1284,7 @@ const styles = StyleSheet.create({
   scopeLabel: { ...typography.caption, color: colors.muted },
   scopeActive: { color: colors.primaryText },
   catalogSeparator: { height: spacing.lg },
+  catalogRow: { gap: spacing.lg, alignItems: 'stretch' },
   importFrame: {
     padding: spacing.md,
     borderRadius: radius.card,

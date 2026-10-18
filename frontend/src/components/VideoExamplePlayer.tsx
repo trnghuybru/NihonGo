@@ -23,7 +23,9 @@ import { ChevronLeftIcon, ChevronRightIcon, ReplayIcon } from './icons';
 
 // Match the identifiers registered by the native projects. YouTube requires an app Referer.
 export const YOUTUBE_APP_ORIGIN =
-  Platform.OS === 'android'
+  Platform.OS === 'web'
+    ? window.location.origin
+    : Platform.OS === 'android'
     ? 'https://com.frontend'
     : 'https://com.trnghuybru.datnfrontend';
 
@@ -563,7 +565,8 @@ const styles = StyleSheet.create({
   },
   title: { ...typography.heading, color: colors.dark, flex: 1 },
   player: {
-    height: 230,
+    height: Platform.OS === 'web' ? undefined : 230,
+    aspectRatio: Platform.OS === 'web' ? 16 / 9 : undefined,
     minWidth: 200,
     borderRadius: radius.small,
     overflow: 'hidden',

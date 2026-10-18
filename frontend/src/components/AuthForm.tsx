@@ -25,6 +25,7 @@ import {
 import { EyeIcon, EyeOffIcon } from './icons';
 import { AuthIcon, AuthIconName } from './AuthIcon';
 import { BrandLogo } from './BrandLogo';
+import { useWebLayout } from '../hooks/useWebLayout';
 import { useBottomNavigationInset } from '../hooks/useBottomNavigationInset';
 
 export function AuthCard({ children }: { children: React.ReactNode }) {
@@ -39,6 +40,7 @@ export function AuthShell({
   icon = 'lock',
   eyebrow,
   card = true,
+  wide = false,
   headerAccessory,
 }: {
   title: string;
@@ -48,10 +50,12 @@ export function AuthShell({
   icon?: AuthIconName;
   eyebrow?: string;
   card?: boolean;
+  wide?: boolean;
   headerAccessory?: React.ReactNode;
 }) {
   const insets = useSafeAreaInsets();
   const navigationInset = useBottomNavigationInset();
+  const { desktop } = useWebLayout();
   return (
     <KeyboardAvoidingView
       style={styles.fill}
@@ -92,6 +96,8 @@ export function AuthShell({
         scrollIndicatorInsets={{ bottom: navigationInset }}
         contentContainerStyle={[
           styles.content,
+          Platform.OS === 'web' && !wide && styles.webFormContent,
+          desktop && styles.desktopContent,
           Platform.OS === 'android'
             ? {
                 paddingTop: insets.top + spacing.lg,
@@ -103,7 +109,7 @@ export function AuthShell({
           },
         ]}
       >
-        <View style={styles.topBar}>
+        <View style={[styles.topBar, desktop && styles.hidden]}>
           <BrandLogo />
           <View style={styles.languageBadge}>
             <Text style={styles.languageText}>日本語</Text>
@@ -384,6 +390,12 @@ export function AuthContact({
 }
 
 const styles = StyleSheet.create({
+  hidden: { display: 'none' },
+  webFormContent: { maxWidth: layout.maxFormWidth, paddingTop: spacing.section },
+  desktopContent: {
+    paddingTop: spacing.section,
+    paddingHorizontal: layout.screenGutter,
+  },
   fill: { flex: 1, backgroundColor: colors.background },
   content: {
     flexGrow: 1,

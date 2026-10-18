@@ -87,7 +87,7 @@ const styles = StyleSheet.create({
   },
   avatarStage: {
     width: '100%',
-    maxWidth: layout.maxContentWidth,
+    maxWidth: layout.maxFormWidth,
     borderRadius: radius.card,
     overflow: 'hidden',
     backgroundColor: colors.surface,
@@ -100,7 +100,7 @@ const styles = StyleSheet.create({
     flex: 1,
     minHeight: 0,
     width: '100%',
-    maxWidth: layout.maxContentWidth,
+    maxWidth: layout.maxFormWidth,
   },
   speakingGlow: {
     boxShadow: '0px 0px 28px rgba(252,160,75,0.25)',

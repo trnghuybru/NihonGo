@@ -1,6 +1,7 @@
 import { memo } from 'react';
 import {
   Modal,
+  Platform,
   Pressable,
   ScrollView,
   StyleSheet,
@@ -277,7 +278,7 @@ const styles = StyleSheet.create({
   },
   popup: {
     width: '100%',
-    maxWidth: layout.maxContentWidth,
+    maxWidth: Platform.OS === 'web' ? 480 : layout.maxContentWidth,
     alignSelf: 'center',
     backgroundColor: colors.surface,
     borderRadius: radius.small,

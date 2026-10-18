@@ -1,3 +1,4 @@
+import { getAudioRuntime } from './audioRuntime';
 import { fromByteArray, toByteArray } from 'base64-js';
 import { MicrophoneResampler } from './microphoneResampler';
 import type {
@@ -71,7 +72,7 @@ export class LiveAudio {
       AudioContext: Context,
       AudioRecorder: Recorder,
       AudioManager,
-    } = require('react-native-audio-api') as typeof import('react-native-audio-api');
+    } = getAudioRuntime();
     if (this.disposed) return;
     AudioManager.setAudioSessionOptions({
       iosCategory: 'playAndRecord',
@@ -92,8 +93,7 @@ export class LiveAudio {
   ) {
     const epoch = ++this.epoch;
     this.recordingStart = (async () => {
-      const { AudioManager } =
-        require('react-native-audio-api') as typeof import('react-native-audio-api');
+      const { AudioManager } = getAudioRuntime();
       if ((await AudioManager.requestRecordingPermissions()) !== 'Granted')
         throw new Error('Chưa được cấp quyền microphone.');
       if (this.disposed || epoch !== this.epoch) return;
@@ -166,8 +166,7 @@ export class LiveAudio {
         if (this.disposed || epoch !== this.playbackEpoch) return;
         if (this.playbackNeedsResume) {
           this.playbackNeedsResume = false;
-          const { AudioManager } =
-            require('react-native-audio-api') as typeof import('react-native-audio-api');
+          const { AudioManager } = getAudioRuntime();
           // The native engine can be rebuilt after recording or a route change
           // while the JS context still reports running. Restart its driver.
           await context.suspend();

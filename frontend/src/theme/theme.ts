@@ -42,7 +42,8 @@ export const spacing = {
 export const radius = { input: 18, small: 16, card: 32, pill: 999 } as const;
 export const layout = {
   screenGutter: 20,
-  maxContentWidth: 480,
+  maxContentWidth: Platform.OS === 'web' ? 1160 : 480,
+  maxFormWidth: 480,
   inputHeight: 56,
   buttonHeight: 52,
   touchTarget: 48,
@@ -61,9 +62,21 @@ export function readexFont(weight: keyof typeof fontFaces) {
   };
 }
 export const typography = {
-  title: { ...readexFont('600'), fontSize: 18, lineHeight: 24 },
-  heading: { ...readexFont('500'), fontSize: 16, lineHeight: 20 },
-  body: { ...readexFont('400'), fontSize: 12, lineHeight: 16 },
+  title: {
+    ...readexFont('600'),
+    fontSize: 18,
+    lineHeight: 24,
+  },
+  heading: {
+    ...readexFont('500'),
+    fontSize: 16,
+    lineHeight: 20,
+  },
+  body: {
+    ...readexFont('400'),
+    fontSize: 12,
+    lineHeight: 16,
+  },
   label: { ...readexFont('500'), fontSize: 14, lineHeight: 20 },
   caption: { ...readexFont('500'), fontSize: 12, lineHeight: 16 },
   button: { ...readexFont('600'), fontSize: 14, lineHeight: 20 },

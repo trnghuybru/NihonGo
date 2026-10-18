@@ -72,6 +72,14 @@ Các kiểu chữ nội dung dùng khoảng cách ký tự mặc định, không
 - Bo input **18**, khối chú thích **16**, nút và badge **999**. Dùng `borderCurve: continuous`.
 - Kích thước là logical point/dp của React Native; không sao chép tọa độ absolute từ bản export HTML.
 
+### Bố cục web theo yêu cầu cập nhật
+
+- Dùng cùng bảng màu, font Readex Pro, typography, radius và bóng đổ với điện thoại; không đổi token theo nền tảng.
+- Từ 1100 px, dùng sidebar 240 px thay thanh điều hướng đáy. Vùng dashboard/danh mục rộng tối đa 1160 px, vẫn giữ lề 20 px. Màn hình hẹp giữ navigation nổi rộng tối đa 480 px.
+- Trang chủ chia hai cột; danh mục shadowing dùng grid 1–3 cột theo chiều rộng thực tế. Bài shadowing đặt video và bảng phụ đề cạnh nhau trên desktop, không thêm card bao video.
+- Bỏ thanh tiêu đề ngang của web; giữ badge trình độ và mục tiêu phút/ngày lấy từ hồ sơ thật.
+- Form xác thực, tài khoản và thiết lập giữ khung tối đa 480 px. Hội thoại/nhận xét giữ chiều rộng đọc gọn; dialog câu hỏi AI trên web có thể rộng tối đa 720 px.
+
 ## Component và trạng thái
 
 ### AuthShell / AuthCard
@@ -185,7 +193,7 @@ Thanh điều hướng xuất hiện sau khi người dùng đã hoàn tất thi
   video. Không đặt nút replay nổi lên video.
   Cụm icon nhỏ trước/replay/tiếp nằm trên thanh công cụ, replay ở giữa; tuỳ chọn
   không lặp lại các nút này. Lỗi video vẫn có nút thử phát lại.
-  Câu hiện tại có gạch chân, dùng cue ngắn riêng với timestamp nguồn. Cỡ chữ tự
+  Câu hiện tại có gạch chân, hiển thị nguyên câu luyện với timestamp nguồn theo yêu cầu cập nhật; không chia thành các cue ngắn. Cỡ chữ tự
   điều chỉnh từ 22 xuống tối thiểu 16 theo độ dài/bề rộng, giữ font scale hệ thống.
   Khung tối đa hai dòng có thể cuộn nếu nguồn thiếu mốc chia; không cắt bằng ellipsis.
   Các câu luyện đầy đủ trong bảng chữ 14/22, nét thường, icon phát 18 bên trái.
@@ -276,7 +284,7 @@ Logo và icon launcher dùng đầu Momo cùng chữ NihonGO đen–cam theo m�
 ### Bản dịch phụ đề shadowing
 
 - Nút Bản dịch bật/tắt độc lập với panel Phụ đề, nhỏ và cùng kiểu chip đã có. Khi chưa có dữ liệu, tạo job backend và hiển thị tiến độ thật; có lỗi và Thử lại, video tiếp tục phát.
-- Bản Việt dưới câu Nhật trong danh sách dùng body 12/18 màu muted. Bản Việt dưới phụ đề lớn dùng label 14/20, căn giữa, cuộn tối đa 72 px. Bản Việt bám câu luyện, không cắt theo cue Nhật ngắn hoặc tự tạo timestamp.
+- Bản Việt dưới câu Nhật trong danh sách dùng body 12/18 màu muted. Bản Việt dưới phụ đề lớn dùng label 14/20, căn giữa, cuộn tối đa 72 px. Bản Việt bám câu luyện, bám nguyên câu Nhật và không tự tạo timestamp.
 - Chỉ tải khi bật Bản dịch, dùng cache theo video cho mọi người; tắt ẩn bản Việt và dừng poll. Không remount player khi có bản dịch.
 
 - Nút mắt ẩn toàn bộ vùng phụ đề lớn và bản dịch bên dưới vùng này, không giữ khung hay dòng thông báo thay thế. Danh sách câu vẫn đọc được. Khi ẩn, icon mắt chuyển xuống thanh công cụ để mở lại; khi hiện, icon nằm góc trên phải của khung lớn.

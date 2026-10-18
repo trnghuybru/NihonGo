@@ -1,10 +1,11 @@
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { Platform, Pressable, StyleSheet, Text, View } from 'react-native';
 import { AuthShell } from '../components/AuthForm';
 import { HomeFeatureIcon } from '../components/HomeFeatureIcon';
 import { LearningSkill, SkillPicker } from '../components/SkillPicker';
 import { PromotionPanel } from '../components/PromotionPanel';
 import { VocabularySearchBar } from '../components/VocabularySearchBar';
 import { NihongoMascot } from '../components/NihongoMascot';
+import { useWebLayout } from '../hooks/useWebLayout';
 import { MISSING_DATA } from '../config/content';
 import { User } from '../services/authService';
 import { LearningOptions, LearningProfile } from '../services/learningService';
@@ -40,6 +41,7 @@ export function HomeScreen({
   onOpenVocabulary,
   onOpenPromotion,
 }: Props) {
+  const { desktop } = useWebLayout();
   const level =
     options.levels.find(option => option.id === profile.level)?.label ??
     profile.level;
@@ -47,93 +49,15 @@ export function HomeScreen({
     options.goals.find(option => option.id === profile.goal)?.label ??
     profile.goal;
 
-  return (
-    <AuthShell
-      title={`Chào ${user.name}`}
-      subtitle="Một chút tiếng Nhật, mỗi ngày."
-      icon="user"
-      card={false}
-      headerAccessory={<NihongoMascot size={104} />}
-    >
-      <View style={styles.section}>
-        <View style={styles.sectionHeadingRow}>
-          <Text accessibilityRole="header" style={styles.sectionTitle}>
-            Tra cứu từ vựng
-          </Text>
-        </View>
-        <VocabularySearchBar onSearch={onSearchVocabulary} />
+  const vocabularyContent = (
+    <View style={styles.section}>
+      <View style={styles.sectionHeadingRow}>
+        <Text accessibilityRole="header" style={styles.sectionTitle}>
+          {Platform.OS === 'web' ? 'Khám phá từ vựng' : 'Góc từ vựng'}
+        </Text>
+        <View style={styles.headingRule} />
       </View>
-
-      <View style={styles.section}>
-        <View style={styles.sectionHeadingRow}>
-          <Text accessibilityRole="header" style={styles.sectionTitle}>
-            Tiếp tục học
-          </Text>
-          <View style={styles.headingRule} />
-        </View>
-        <Pressable
-          accessibilityRole="button"
-          accessibilityLabel={`Tiếp tục học. ${level}. ${goal}. ${profile.daily_minutes} phút mỗi ngày.`}
-          onPress={onContinueLearning}
-          style={({ pressed }) => [
-            styles.continueCard,
-            pressed ? styles.pressed : null,
-          ]}
-        >
-          {({ pressed }) => (
-            <View style={styles.continueBody}>
-              <View style={styles.chips}>
-                <View style={styles.levelChip}>
-                  <Text style={styles.levelChipText}>{level}</Text>
-                </View>
-                <Text style={styles.minutes}>
-                  {profile.daily_minutes} phút/ngày
-                </Text>
-              </View>
-              <View style={styles.continueScene}>
-                <View style={styles.continueCopy}>
-                  <Text style={styles.continueTitle}>{goal}</Text>
-                  <Text style={styles.continueDescription}>
-                    Mở sách cùng Momo nhé!
-                  </Text>
-                </View>
-                <NihongoMascot pose="reading" size={104} decorative />
-              </View>
-              <View
-                style={[
-                  styles.continueAction,
-                  pressed ? styles.continueActionPressed : null,
-                ]}
-              >
-                <Text style={styles.continueActionText}>Tiếp tục</Text>
-                <HomeFeatureIcon
-                  name="arrow"
-                  size={19}
-                  color={colors.onPrimary}
-                />
-              </View>
-            </View>
-          )}
-        </Pressable>
-      </View>
-
-      <View style={styles.section}>
-        <View style={styles.sectionHeadingRow}>
-          <Text accessibilityRole="header" style={styles.sectionTitle}>
-            Luyện kỹ năng
-          </Text>
-          <Text style={styles.sectionCaption}>Học cùng Momo</Text>
-        </View>
-        <SkillPicker onOpenSkill={onOpenSkill} />
-      </View>
-
-      <View style={styles.section}>
-        <View style={styles.sectionHeadingRow}>
-          <Text accessibilityRole="header" style={styles.sectionTitle}>
-            Góc từ vựng
-          </Text>
-          <View style={styles.headingRule} />
-        </View>
+      {Platform.OS !== 'web' && (
         <Pressable
           accessibilityRole="button"
           accessibilityLabel={`Từ vựng: ${MISSING_DATA}`}
@@ -154,25 +78,121 @@ export function HomeScreen({
             <Text style={styles.wordHint}>{MISSING_DATA}</Text>
           </View>
         </Pressable>
-        <Pressable
-          accessibilityRole="button"
-          accessibilityLabel="Mở khu vực học từ vựng"
-          onPress={onOpenVocabulary}
-          style={({ pressed }) => [
-            styles.vocabularyCard,
-            pressed ? styles.pressed : null,
-          ]}
-        >
-          <NihongoMascot pose="writing" size={72} decorative />
-          <View style={styles.vocabularyCopy}>
-            <Text style={styles.vocabularyTitle}>Từ vựng của bạn</Text>
-            <Text style={styles.vocabularyDescription}>
-              Tra cứu, lưu và ôn lại những từ quan trọng.
-            </Text>
-          </View>
-          <HomeFeatureIcon name="arrow" color={colors.primaryText} size={20} />
-        </Pressable>
+      )}
+      <Pressable
+        accessibilityRole="button"
+        accessibilityLabel="Mở khu vực học từ vựng"
+        onPress={onOpenVocabulary}
+        style={({ pressed }) => [
+          styles.vocabularyCard,
+          pressed ? styles.pressed : null,
+        ]}
+      >
+        <NihongoMascot pose="writing" size={72} decorative />
+        <View style={styles.vocabularyCopy}>
+          <Text style={styles.vocabularyTitle}>Từ vựng của bạn</Text>
+          <Text style={styles.vocabularyDescription}>
+            {Platform.OS === 'web'
+              ? 'Khám phá bài học và luyện từ vựng theo trình độ.'
+              : 'Tra cứu, lưu và ôn lại những từ quan trọng.'}
+          </Text>
+        </View>
+        <HomeFeatureIcon name="arrow" color={colors.primaryText} size={20} />
+      </Pressable>
+    </View>
+  );
+
+  return (
+    <AuthShell
+      title={`Chào ${user.name}`}
+      subtitle="Một chút tiếng Nhật, mỗi ngày."
+      icon="user"
+      card={false}
+      wide
+      headerAccessory={<NihongoMascot size={104} />}
+    >
+      <View style={styles.section}>
+        <View style={styles.sectionHeadingRow}>
+          <Text accessibilityRole="header" style={styles.sectionTitle}>
+            Tra cứu từ vựng
+          </Text>
+        </View>
+        <VocabularySearchBar onSearch={onSearchVocabulary} />
       </View>
+
+      <View style={[styles.dashboard, desktop && styles.desktopDashboard]}>
+        <View style={[styles.section, desktop && styles.dashboardPane]}>
+          <View style={styles.sectionHeadingRow}>
+            <Text accessibilityRole="header" style={styles.sectionTitle}>
+              Tiếp tục học
+            </Text>
+            <View style={styles.headingRule} />
+          </View>
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel={`Tiếp tục học. ${level}. ${goal}. ${profile.daily_minutes} phút mỗi ngày.`}
+            onPress={onContinueLearning}
+            style={({ pressed }) => [
+              styles.continueCard,
+              desktop && styles.desktopContinueCard,
+              pressed ? styles.pressed : null,
+            ]}
+          >
+            {({ pressed }) => (
+              <View
+                style={[
+                  styles.continueBody,
+                  desktop && styles.desktopContinueBody,
+                ]}
+              >
+                <View style={styles.chips}>
+                  <View style={styles.levelChip}>
+                    <Text style={styles.levelChipText}>{level}</Text>
+                  </View>
+                  <Text style={styles.minutes}>
+                    {profile.daily_minutes} phút/ngày
+                  </Text>
+                </View>
+                <View style={styles.continueScene}>
+                  <View style={styles.continueCopy}>
+                    <Text style={styles.continueTitle}>{goal}</Text>
+                    <Text style={styles.continueDescription}>
+                      Mở sách cùng Momo nhé!
+                    </Text>
+                  </View>
+                  <NihongoMascot pose="reading" size={104} decorative />
+                </View>
+                <View
+                  style={[
+                    styles.continueAction,
+                    pressed ? styles.continueActionPressed : null,
+                  ]}
+                >
+                  <Text style={styles.continueActionText}>Tiếp tục</Text>
+                  <HomeFeatureIcon
+                    name="arrow"
+                    size={19}
+                    color={colors.onPrimary}
+                  />
+                </View>
+              </View>
+            )}
+          </Pressable>
+          {desktop && vocabularyContent}
+        </View>
+
+        <View style={[styles.section, desktop && styles.dashboardPane]}>
+          <View style={styles.sectionHeadingRow}>
+            <Text accessibilityRole="header" style={styles.sectionTitle}>
+              Luyện kỹ năng
+            </Text>
+            <Text style={styles.sectionCaption}>Học cùng Momo</Text>
+          </View>
+          <SkillPicker onOpenSkill={onOpenSkill} />
+        </View>
+      </View>
+
+      {!desktop && vocabularyContent}
 
       <PromotionPanel onPress={onOpenPromotion} />
     </AuthShell>
@@ -180,6 +200,18 @@ export function HomeScreen({
 }
 
 const styles = StyleSheet.create({
+  dashboard: { gap: spacing.section },
+  desktopDashboard: {
+    flexDirection: 'row',
+    alignItems: 'stretch',
+    gap: spacing.xl,
+  },
+  dashboardPane: { flex: 1, minWidth: 0 },
+  desktopContinueCard: { borderWidth: 1, borderColor: colors.divider },
+  desktopContinueBody: {
+    gap: spacing.lg,
+    padding: spacing.xl,
+  },
   section: { gap: spacing.xl },
   sectionHeadingRow: {
     flexDirection: 'row',

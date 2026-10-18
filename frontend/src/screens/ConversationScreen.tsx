@@ -543,7 +543,7 @@ const styles = StyleSheet.create({
     flex: 1,
     minHeight: 0,
     width: '100%',
-    maxWidth: layout.maxContentWidth,
+    maxWidth: layout.maxFormWidth,
     alignSelf: 'center',
     paddingHorizontal: layout.screenGutter,
   },
@@ -556,7 +556,7 @@ const styles = StyleSheet.create({
   },
   taskToolbar: {
     width: '100%',
-    maxWidth: layout.maxContentWidth,
+    maxWidth: layout.maxFormWidth,
     alignSelf: 'center',
     flexDirection: 'row',
     alignItems: 'center',
@@ -587,7 +587,7 @@ const styles = StyleSheet.create({
   taskSheet: {
     maxHeight: '75%',
     width: '100%',
-    maxWidth: layout.maxContentWidth,
+    maxWidth: layout.maxFormWidth,
     alignSelf: 'center',
     backgroundColor: colors.surface,
     borderRadius: radius.card,
@@ -632,7 +632,7 @@ const styles = StyleSheet.create({
   },
   header: {
     width: '100%',
-    maxWidth: layout.maxContentWidth,
+    maxWidth: layout.maxFormWidth,
     alignSelf: 'center',
     flexDirection: 'row',
     alignItems: 'center',
@@ -654,7 +654,7 @@ const styles = StyleSheet.create({
   briefing: { padding: spacing.lg, gap: spacing.sm },
   composer: {
     width: '100%',
-    maxWidth: layout.maxContentWidth,
+    maxWidth: layout.maxFormWidth,
     alignSelf: 'center',
     paddingHorizontal: layout.screenGutter,
     paddingVertical: spacing.sm,
@@ -691,7 +691,7 @@ const styles = StyleSheet.create({
   },
   sheet: {
     height: '85%',
-    maxWidth: layout.maxContentWidth,
+    maxWidth: layout.maxFormWidth,
     width: '100%',
     alignSelf: 'center',
     borderRadius: radius.card,

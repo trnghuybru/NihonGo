@@ -11,6 +11,7 @@ export function PracticeScreen({
       title="Luyện tập"
       subtitle="Chọn kỹ năng bạn muốn luyện cùng Momo hôm nay."
       card={false}
+      wide
     >
       <SkillPicker onOpenSkill={onOpenSkill} />
     </AuthShell>

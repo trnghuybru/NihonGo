@@ -1,4 +1,5 @@
 import Svg, { Circle, Path, Rect, Text as SvgText } from 'react-native-svg';
+import { colors } from '../theme/theme';
 
 type IconProps = {
   size?: number;
@@ -8,7 +9,7 @@ type IconProps = {
 
 export function AIIcon({
   size = 20,
-  color = '#75777D',
+  color = colors.muted,
   strokeWidth = 1.7,
 }: IconProps) {
   return (
@@ -29,7 +30,7 @@ export function AIIcon({
 
 export function TranslateIcon({
   size = 20,
-  color = '#75777D',
+  color = colors.muted,
   strokeWidth = 1.7,
 }: IconProps) {
   return (
@@ -50,7 +51,7 @@ export function TranslateIcon({
 
 export function TrashIcon({
   size = 20,
-  color = '#75777D',
+  color = colors.muted,
   strokeWidth = 1.7,
 }: IconProps) {
   const s = stroke(color, strokeWidth);
@@ -76,7 +77,7 @@ function stroke(color: string, strokeWidth: number) {
 
 export function MailIcon({
   size = 20,
-  color = '#75777D',
+  color = colors.muted,
   strokeWidth = 1.7,
 }: IconProps) {
   const s = stroke(color, strokeWidth);
@@ -90,7 +91,7 @@ export function MailIcon({
 
 export function LockIcon({
   size = 20,
-  color = '#75777D',
+  color = colors.muted,
   strokeWidth = 1.7,
 }: IconProps) {
   const s = stroke(color, strokeWidth);
@@ -104,7 +105,7 @@ export function LockIcon({
 
 export function EyeIcon({
   size = 20,
-  color = '#75777D',
+  color = colors.muted,
   strokeWidth = 1.7,
 }: IconProps) {
   const s = stroke(color, strokeWidth);
@@ -121,7 +122,7 @@ export function EyeIcon({
 
 export function EyeOffIcon({
   size = 20,
-  color = '#75777D',
+  color = colors.muted,
   strokeWidth = 1.7,
 }: IconProps) {
   const s = stroke(color, strokeWidth);
@@ -143,7 +144,7 @@ export function EyeOffIcon({
 
 export function ArrowRightIcon({
   size = 20,
-  color = '#FFFFFF',
+  color = colors.onPrimary,
   strokeWidth = 2.2,
 }: IconProps) {
   const s = stroke(color, strokeWidth);
@@ -157,7 +158,7 @@ export function ArrowRightIcon({
 
 export function CheckIcon({
   size = 20,
-  color = '#FFFFFF',
+  color = colors.onPrimary,
   strokeWidth = 3,
 }: IconProps) {
   const s = stroke(color, strokeWidth);
@@ -170,7 +171,7 @@ export function CheckIcon({
 
 export function FingerprintIcon({
   size = 20,
-  color = '#091426',
+  color = colors.dark,
   strokeWidth = 1.6,
 }: IconProps) {
   const s = stroke(color, strokeWidth);
@@ -214,7 +215,7 @@ export function GoogleIcon({ size = 20 }: { size?: number }) {
 
 export function AppleIcon({
   size = 20,
-  color = '#091426',
+  color = colors.dark,
 }: {
   size?: number;
   color?: string;
@@ -252,7 +253,7 @@ export function LineIcon({ size = 20 }: { size?: number }) {
 
 export function MicIcon({
   size = 24,
-  color = '#FFFFFF',
+  color = colors.onPrimary,
   strokeWidth = 2,
 }: IconProps) {
   const s = stroke(color, strokeWidth);
@@ -268,7 +269,7 @@ export function MicIcon({
 
 export function MicOffIcon({
   size = 24,
-  color = '#FFFFFF',
+  color = colors.onPrimary,
   strokeWidth = 2,
 }: IconProps) {
   const s = stroke(color, strokeWidth);
@@ -287,7 +288,7 @@ export function MicOffIcon({
 
 export function VolumeIcon({
   size = 22,
-  color = '#BA0035',
+  color = colors.danger,
   strokeWidth = 2,
 }: IconProps) {
   const s = stroke(color, strokeWidth);
@@ -302,7 +303,7 @@ export function VolumeIcon({
 
 export function VolumeXIcon({
   size = 22,
-  color = '#75777D',
+  color = colors.muted,
   strokeWidth = 2,
 }: IconProps) {
   const s = stroke(color, strokeWidth);
@@ -317,7 +318,7 @@ export function VolumeXIcon({
 
 export function RefreshIcon({
   size = 20,
-  color = '#75777D',
+  color = colors.muted,
   strokeWidth = 2,
 }: IconProps) {
   const s = stroke(color, strokeWidth);
@@ -333,7 +334,7 @@ export function RefreshIcon({
 
 export function MessageSquareIcon({
   size = 20,
-  color = '#75777D',
+  color = colors.muted,
   strokeWidth = 2,
 }: IconProps) {
   const s = stroke(color, strokeWidth);
@@ -349,7 +350,7 @@ export function MessageSquareIcon({
 
 export function KeyboardIcon({
   size = 20,
-  color = '#75777D',
+  color = colors.muted,
   strokeWidth = 1.8,
 }: IconProps) {
   const s = stroke(color, strokeWidth);
@@ -366,7 +367,7 @@ export function KeyboardIcon({
 
 export function XIcon({
   size = 20,
-  color = '#75777D',
+  color = colors.muted,
   strokeWidth = 2,
 }: IconProps) {
   const s = stroke(color, strokeWidth);
@@ -379,7 +380,7 @@ export function XIcon({
 
 export function ChevronLeftIcon({
   size = 22,
-  color = '#75777D',
+  color = colors.muted,
   strokeWidth = 2,
 }: IconProps) {
   return (
@@ -391,7 +392,7 @@ export function ChevronLeftIcon({
 
 export function ChevronRightIcon({
   size = 22,
-  color = '#75777D',
+  color = colors.muted,
   strokeWidth = 2,
 }: IconProps) {
   return (
@@ -403,7 +404,7 @@ export function ChevronRightIcon({
 
 export function ReplayIcon({
   size = 22,
-  color = '#75777D',
+  color = colors.muted,
   strokeWidth = 2,
 }: IconProps) {
   return (
@@ -418,7 +419,7 @@ export function ReplayIcon({
 
 export function ChevronDownIcon({
   size = 20,
-  color = '#75777D',
+  color = colors.muted,
   strokeWidth = 2,
 }: IconProps) {
   const s = stroke(color, strokeWidth);
@@ -429,7 +430,7 @@ export function ChevronDownIcon({
   );
 }
 
-export function PlayCircleIcon({ size = 24, color = '#75777D' }: IconProps) {
+export function PlayCircleIcon({ size = 24, color = colors.muted }: IconProps) {
   return (
     <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
       <Circle cx="12" cy="12" r="11" fill={color} />

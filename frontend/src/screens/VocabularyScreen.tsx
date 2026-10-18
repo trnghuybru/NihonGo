@@ -1,3 +1,4 @@
+import { useWebLayout } from '../hooks/useWebLayout';
 import { useBottomNavigationInset } from '../hooks/useBottomNavigationInset';
 // @refresh reset
 // Remount during Fast Refresh when the screen's hook layout changes.
@@ -306,7 +307,9 @@ export function VocabularyScreen({
 }) {
   const insets = useSafeAreaInsets();
   const navigationInset = useBottomNavigationInset();
-  const { width: windowWidth, fontScale } = useWindowDimensions();
+  const { width: viewportWidth, fontScale } = useWindowDimensions();
+  const { contentWidth } = useWebLayout();
+  const windowWidth = contentWidth || viewportWidth;
   const lessonColumns =
     windowWidth >= 360 && fontScale <= 1.15
       ? 3

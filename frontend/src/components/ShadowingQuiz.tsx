@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import {
   Modal,
+  Platform,
   Pressable,
   ScrollView,
   StyleSheet,
@@ -335,10 +336,13 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     padding: spacing.md,
-    backgroundColor: 'rgba(0,0,0,0.5)',
+    backgroundColor: 'rgba(37,37,38,0.35)',
   },
   sheet: {
     flexGrow: 0,
+    ...(Platform.OS === 'web'
+      ? { width: '100%' as const, maxWidth: 720, alignSelf: 'center' as const }
+      : {}),
     maxHeight: '90%',
     backgroundColor: colors.surface,
     borderRadius: radius.card,

@@ -368,7 +368,7 @@ const styles = StyleSheet.create({
     flex: 1,
     minHeight: 0,
     width: '100%',
-    maxWidth: layout.maxContentWidth + layout.screenGutter * 2,
+    maxWidth: layout.maxFormWidth + layout.screenGutter * 2,
     paddingHorizontal: layout.screenGutter,
     alignSelf: 'center',
   },

@@ -18,7 +18,14 @@ import {
   ConversationHistory,
   speakingService,
 } from '../services/speakingService';
-import { colors, layout, spacing, typography } from '../theme/theme';
+import {
+  colors,
+  layout,
+  radius,
+  shadowMd,
+  spacing,
+  typography,
+} from '../theme/theme';
 
 const dateFormat = new Intl.DateTimeFormat('vi-VN', {
   day: '2-digit',
@@ -353,13 +360,13 @@ const styles = StyleSheet.create({
   row: {
     minHeight: layout.touchTarget,
     padding: spacing.xl,
-    gap: spacing.md,
+    gap: spacing.lg,
     backgroundColor: colors.surface,
-    borderRadius: 20,
+    borderRadius: radius.card,
     borderCurve: 'continuous',
     borderWidth: 1,
     borderColor: colors.divider,
-    boxShadow: '0px 3px 12px rgba(37, 37, 38, 0.06)',
+    boxShadow: shadowMd,
   },
   pressed: { backgroundColor: colors.surfaceTint },
   rowContent: { gap: spacing.md },
@@ -371,7 +378,7 @@ const styles = StyleSheet.create({
     minHeight: layout.touchTarget,
     alignItems: 'center',
     justifyContent: 'center',
-    borderRadius: 12,
+    borderRadius: radius.small,
   },
   rowHeading: {
     flexDirection: 'row',
@@ -404,10 +411,10 @@ const styles = StyleSheet.create({
     paddingTop: spacing.xs,
   },
   action: {
-    minHeight: 32,
+    minHeight: layout.touchTarget,
     paddingHorizontal: spacing.md,
     paddingVertical: spacing.xs,
-    borderRadius: 999,
+    borderRadius: radius.pill,
     borderCurve: 'continuous',
     backgroundColor: colors.surface,
     borderWidth: 1.5,
@@ -427,7 +434,7 @@ const styles = StyleSheet.create({
   empty: {
     padding: spacing.xl,
     marginTop: spacing.lg,
-    borderRadius: 20,
+    borderRadius: radius.small,
     backgroundColor: colors.surfaceTint,
     gap: spacing.md,
   },

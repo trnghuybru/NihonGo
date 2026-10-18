@@ -733,8 +733,8 @@ const styles = StyleSheet.create({
     backgroundColor: colors.background,
     backgroundImage: [
       `linear-gradient(to bottom, rgba(255, 251, 247, 0) 45%, ${colors.background} 100%)`,
-      'radial-gradient(ellipse at 82% 24%, rgba(248, 198, 181, 0.85) 0%, rgba(248, 198, 181, 0) 75%)',
-      `linear-gradient(150deg, #FBE0BF 0%, ${colors.background} 100%)`,
+      'radial-gradient(ellipse at 82% 24%, rgba(249, 204, 214, 0.5) 0%, rgba(249, 204, 214, 0) 75%)',
+      'radial-gradient(ellipse at 20% 0%, rgba(255, 221, 183, 0.5) 0%, rgba(255, 221, 183, 0) 75%)',
     ].join(', '),
   },
   speakingHeaderContent: {

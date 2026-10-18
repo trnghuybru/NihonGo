@@ -355,3 +355,10 @@ Dùng `GEMINI_API_KEY` trong `backend/.env`; model mặc định
 `shadowing-worker` theo [hướng dẫn Shadowing](backend/SHADOWING.md#dịch-phụ-đề-tiếng-việt).
 System prompt nguyên văn ở [translation.py](backend/shadowing/translation.py).
 Chỉ gửi văn bản phụ đề và ngữ cảnh, không gửi audio hoặc dữ liệu tài khoản.
+
+### Xem ứng dụng trên web
+
+Chạy backend ở cổng 5001, sau đó chạy `npm run web` trong `frontend` và mở
+http://localhost:5173. Bản web tái sử dụng các màn hình app, có bố cục rộng cho
+desktop và adapter trình duyệt cho iframe, đăng nhập và âm thanh. Chi tiết tại
+[frontend/WEB.md](frontend/WEB.md).

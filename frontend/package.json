@@ -7,17 +7,25 @@
     "ios": "react-native run-ios",
     "lint": "eslint .",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "web": "vite",
+    "web:build": "vite build",
+    "web:preview": "vite preview --host 0.0.0.0"
   },
   "dependencies": {
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^5.2.0",
     "base64-js": "^1.5.1",
     "react": "19.2.3",
+    "react-dom": "^19.2.3",
     "react-native": "0.87.1",
     "react-native-audio-api": "^0.13.6",
     "react-native-keychain": "^10.0.0",
     "react-native-safe-area-context": "^5.5.2",
     "react-native-svg": "^15.15.5",
-    "react-native-webview": "^14.0.1"
+    "react-native-web": "^0.21.4",
+    "react-native-webview": "^14.0.1",
+    "vite": "^7.3.7"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",

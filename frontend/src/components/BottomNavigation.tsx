@@ -100,7 +100,7 @@ const styles = StyleSheet.create({
     color: colors.body,
     textAlign: 'center',
   },
-  selectedLabel: { color: colors.focus },
+  selectedLabel: { color: colors.primaryText },
   safeArea: {
     paddingTop: 4,
     paddingHorizontal: spacing.lg,
@@ -110,7 +110,7 @@ const styles = StyleSheet.create({
   container: {
     minHeight: 72,
     width: '100%',
-    maxWidth: layout.maxContentWidth,
+    maxWidth: layout.maxFormWidth,
     alignSelf: 'center',
     backgroundColor: colors.surface,
     borderRadius: 44,

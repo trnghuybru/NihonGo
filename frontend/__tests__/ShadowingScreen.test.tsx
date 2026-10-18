@@ -392,7 +392,7 @@ test('reference layout shows a synced current sentence, collapses the subtitle p
   expect(shadowingService.translation).not.toHaveBeenCalled();
 });
 
-test('short display cues advance independently while replay keeps the full practice phrase', async () => {
+test('shows complete sentences instead of short display cues and replays their full timing', async () => {
   const original = await shadowingService.lesson('job-1');
   jest.mocked(shadowingService.lesson).mockResolvedValue({
     ...original,
@@ -428,7 +428,7 @@ test('short display cues advance independently while replay keeps the full pract
       nativeEvent: {
         data: JSON.stringify({
           type: 'caption',
-          code: { index: 1, clipId: 'one' },
+          code: { index: 0, clipId: 'one' },
         }),
       },
     }),
@@ -436,13 +436,32 @@ test('short display cues advance independently while replay keeps the full pract
   const currentCaption = tree.root
     .findByProps({ testID: 'shadowing-current-caption' })
     .findByType(Text);
-  expect(currentCaption.props.children).toBe('です。');
+  expect(currentCaption.props.children).toBe('日本語です。');
+  expect(tree.root.findByType(VideoExamplePlayer).props.timeline).toEqual(
+    original.segments,
+  );
   expect(currentCaption.props.numberOfLines).toBeUndefined();
   expect(tree.root.findByType(VideoExamplePlayer).props.position).toBe(1);
   await press('Nghe lại');
   expect(injectJavaScript.mock.calls.at(-1)?.[0]).toContain('"start":1');
   expect(injectJavaScript.mock.calls.at(-1)?.[0]).toContain('"end":3');
   expect(webview.props.source).toBe(source);
+  await act(async () =>
+    webview.props.onMessage({
+      nativeEvent: {
+        data: JSON.stringify({
+          type: 'caption',
+          code: { index: 1, clipId: 'one' },
+        }),
+      },
+    }),
+  );
+  expect(
+    tree.root
+      .findByProps({ testID: 'shadowing-current-caption' })
+      .findByType(Text).props.children,
+  ).toBe('次の文。');
+  expect(tree.root.findByType(VideoExamplePlayer).props.position).toBe(2);
 });
 
 test('switches between community and personal catalogs and opens a community lesson directly', async () => {

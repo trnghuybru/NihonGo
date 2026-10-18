@@ -1,3 +1,4 @@
+import { getAudioRuntime } from './audioRuntime';
 import type {
   AudioContext,
   AudioBufferSourceNode,
@@ -35,8 +36,7 @@ export class AudioReplay {
       const bytes = await response.arrayBuffer();
       if (current !== this.generation) return false;
       if (!this.context) {
-        const { AudioContext: Context, AudioManager } =
-          require('react-native-audio-api') as typeof import('react-native-audio-api');
+        const { AudioContext: Context, AudioManager } = getAudioRuntime();
         // Match Live's session so replay works on read-only history without disabling the next mic turn.
         AudioManager.setAudioSessionOptions({
           iosCategory: 'playAndRecord',

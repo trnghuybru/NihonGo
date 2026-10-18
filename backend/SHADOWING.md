@@ -226,8 +226,8 @@ hiển thị và lần yêu cầu tiếp theo tạo lại. Đổi model config c
 cache ready tiếp tục được dùng để tiết kiệm chi phí.
 
 Bản dịch hiển thị dưới từng câu luyện và dưới phụ đề lớn theo `segment_id` câu luyện;
-không chia bản dịch bằng số ký tự để khớp cue Nhật ngắn. Tiếng Nhật vẫn đồng bộ video;
-bản Việt có thể giữ nguyên qua nhiều cue của cùng câu luyện. Bản dịch dài ở khu vực
+Phụ đề Nhật lớn dùng nguyên câu luyện trong `segments`, không dùng các cue ngắn
+trong `captions`; tiếng Nhật và bản dịch đổi theo cùng câu khi video chuyển đoạn. Bản dịch dài ở khu vực
 phụ đề lớn có thể cuộn trong vùng tối đa 72 px để giữ diện tích danh sách.
 
 Áp dụng migration rồi build lại worker:
