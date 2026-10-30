@@ -157,23 +157,22 @@ database hoặc queue; adapter local nằm trong `shadowing/worker.py`. Việc c
 sang Lambda sau này cần handler, đóng gói runtime, quyền và kiểm thử AWS riêng.
 
 
-## Popup tra từ phụ đề
+## Tra từ phụ đề bằng từ điển
 
-Bấm từ có gạch chân ở phụ đề lớn của câu hiện tại để xem chữ, cách đọc,
-dạng gốc, từ loại và nghĩa tiếng Việt từ bộ từ vựng N5–N1. Bấm chữ tạm dừng video;
-đóng popup không tự phát tiếp. Nút play bên trái câu vẫn dùng để luyện câu.
-Không gọi AI hoặc API từ điển ngoài, không thêm các nút lưu từ/audio chưa có.
+Chỉ từ trong phụ đề lớn đang phát có thể nhấn. Bấm từ tạm dừng video, không tua,
+và mở popup tra nhanh nhỏ như cũ. Tra dạng gốc (lemma), thiếu thì tra surface;
+chỉ lấy mục khớp chính xác, không dùng kết quả gần giống. Đóng popup giữ nguyên
+câu/vị trí và không tự phát lại. Các nhóm nghĩa, cách đọc và âm Hán Việt dùng
+API `/api/dictionary`, không lấy nghĩa giáo trình. Không gọi AI/API ngoài.
 
 SudachiPy + sudachidict_core chạy ở backend/worker, không đóng gói từ điển vào app.
 Worker phân tích trước khi ready; cache `shadowing_jobs.word_analysis` chứa token
 và fingerprint phiên bản + nội dung. Cue cắt ngang một từ tham chiếu từ nguyên vẹn
 trong câu luyện khi vị trí duy nhất, giữ toàn bộ chữ và khoảng trắng.
 API lesson trả `tokens.segments`, `tokens.captions` và bảng `words` dùng chung;
-nghĩa lấy bằng truy vấn chính xác có index theo từ/cách đọc, gộp truy vấn và loại trùng.
-Dữ liệu nghĩa đọc lại khi mở bài để nhận cập nhật nhập từ vựng. Bấm từ chỉ mở popup
-local, không gửi request. Từ ngoài dữ liệu được hiển thị thiếu nghĩa, không đoán.
-Phụ đề lớn chia thành cụm từ có khoảng cách và furigana trên kanji; đuôi trợ động từ
-được ghép vào động từ. Bảng phụ đề bên dưới chỉ đọc, không mở popup.
+API bài shadowing chỉ xuất metadata surface/lemma/reading/pos, không query kho
+nghĩa giáo trình. Định nghĩa tải theo yêu cầu khi nhấn từ qua module từ điển.
+Bảng phụ đề bên dưới chỉ đọc, không mở tra cứu.
 Nghĩa là các mục từ điển, chưa tự chọn nghĩa theo ngữ cảnh; chưa có romaji.
 
 Sau khi cài lại requirements và migrate, chuẩn bị các video cũ:

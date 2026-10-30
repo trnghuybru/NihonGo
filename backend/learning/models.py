@@ -24,3 +24,16 @@ class LearningPreferences(db.Model):
         return {**{key: getattr(self, key) for key in (
             "level", "goal", "daily_minutes", "level_confirmed_at", "created_at", "updated_at", "version"
         )}, "level_source": "manual"}
+
+
+class LearningStudyDay(db.Model):
+    __tablename__ = 'learning_study_days'
+
+    user_id = db.Column(db.String(36), db.ForeignKey('users.id', ondelete='CASCADE'), primary_key=True)
+    day = db.Column(db.Date, primary_key=True)
+    seconds = db.Column(db.Integer, nullable=False, default=0)
+    intervals = db.Column(db.JSON, nullable=False, default=list)
+    updated_at = db.Column(db.BigInteger, nullable=False)
+    __table_args__ = (
+        db.CheckConstraint('seconds >= 0 AND seconds <= 86400', name='ck_study_day_seconds'),
+    )

@@ -15,6 +15,7 @@ import {
   useWindowDimensions,
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { AppBackground } from '../components/AppBackground';
 import { AuthButton, AuthNotice } from '../components/AuthForm';
 import { HomeFeatureIcon } from '../components/HomeFeatureIcon';
 import { AuthIcon } from '../components/AuthIcon';
@@ -487,12 +488,15 @@ export function ConversationScreen({
           presentationStyle="fullScreen"
           onRequestClose={() => setShowEvaluation(false)}
         >
-          <ConversationEvaluationScreen
-            sessionId={result.session.id}
-            title={result.scenario.title}
-            onTranscript={() => setShowEvaluation(false)}
-            onBack={onBack}
-          />
+          <View style={styles.screen}>
+            <AppBackground />
+            <ConversationEvaluationScreen
+              sessionId={result.session.id}
+              title={result.scenario.title}
+              onTranscript={() => setShowEvaluation(false)}
+              onBack={onBack}
+            />
+          </View>
         </Modal>
       ) : null}
       {showBriefing ? (
@@ -538,7 +542,7 @@ export function ConversationScreen({
   );
 }
 const styles = StyleSheet.create({
-  screen: { flex: 1, backgroundColor: colors.background },
+  screen: { flex: 1 },
   content: {
     flex: 1,
     minHeight: 0,

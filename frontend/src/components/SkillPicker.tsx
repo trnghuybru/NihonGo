@@ -14,7 +14,6 @@ export function SkillPicker({
       <View style={styles.skillRow}>
         <HomeSkillCard
           title="Nghe"
-          japaneseLabel="聞く"
           description="Hội thoại và phát âm"
           action="Luyện nghe"
           pose="listening"
@@ -22,7 +21,6 @@ export function SkillPicker({
         />
         <HomeSkillCard
           title="Nói"
-          japaneseLabel="話す"
           description="Luyện nói theo tình huống"
           action="Xem tình huống"
           pose="speaking"
@@ -32,7 +30,6 @@ export function SkillPicker({
       <View style={styles.skillRow}>
         <HomeSkillCard
           title="Đọc"
-          japaneseLabel="読む"
           description="Đoạn văn theo cấp độ"
           action="Luyện đọc"
           pose="reading"
@@ -40,7 +37,6 @@ export function SkillPicker({
         />
         <HomeSkillCard
           title="Viết"
-          japaneseLabel="書く"
           description="Kana, Kanji và viết câu"
           action="Luyện viết"
           pose="writing"

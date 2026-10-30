@@ -11,6 +11,7 @@ type Props = {
   source: { html?: string; uri?: string; baseUrl?: string };
   style?: unknown;
   testID?: string;
+  accessibilityLabel?: string;
   onMessage?: (event: { nativeEvent: { data: string } }) => void;
   onError?: () => void;
 };
@@ -21,7 +22,7 @@ const frameStyle = {
   border: 0,
 } as const;
 export const WebView = forwardRef(function BrowserWebView(
-  { source, style, testID, onMessage, onError }: Props,
+  { source, style, testID, accessibilityLabel, onMessage, onError }: Props,
   ref,
 ) {
   const frame = useRef<HTMLIFrameElement>(null);
@@ -107,7 +108,9 @@ export const WebView = forwardRef(function BrowserWebView(
   return (
     <iframe
       ref={frame}
-      title={source.uri ? 'Nhân vật Aoi' : 'Video luyện nghe'}
+      title={
+        accessibilityLabel || (source.uri ? 'Nhân vật Aoi' : 'Video luyện nghe')
+      }
       data-testid={testID}
       srcDoc={html}
       allow="autoplay; fullscreen"

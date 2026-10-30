@@ -1,3 +1,8 @@
+import {
+  navigationLink,
+  tabPaths,
+  useWebNavigation,
+} from '../navigation/webNavigation';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { APP_TABS, AppTab } from './BottomNavigation';
 import { BottomNavigationIcon } from './BottomNavigationIcon';
@@ -11,15 +16,22 @@ export function DesktopNavigation({
   selectedTab,
   onSelectTab,
   activeSkill,
+  activeActivity,
+  onOpenFlashcards,
+  onOpenGames,
   onOpenSkill,
   user,
 }: {
   selectedTab: AppTab;
   onSelectTab: (tab: AppTab) => void;
   activeSkill: LearningSkill | null;
+  activeActivity: 'flashcards' | 'games' | null;
+  onOpenFlashcards: () => void;
+  onOpenGames: () => void;
   onOpenSkill: (skill: LearningSkill) => void;
   user: User;
 }) {
+  const web = useWebNavigation();
   return (
     <View style={styles.sidebar} testID="desktop-navigation">
       <View style={styles.brand}>
@@ -39,7 +51,9 @@ export function DesktopNavigation({
               accessibilityRole="tab"
               accessibilityLabel={tab.label}
               accessibilityState={{ selected }}
-              onPress={() => onSelectTab(tab.id)}
+              {...navigationLink(web, tabPaths[tab.id], () =>
+                onSelectTab(tab.id),
+              )}
               style={({ pressed }) => [
                 styles.link,
                 selected && styles.selected,
@@ -61,6 +75,45 @@ export function DesktopNavigation({
           );
         })}
       </View>
+      <Text style={styles.sectionLabel}>TỪ VỰNG</Text>
+      {(
+        [
+          { id: 'flashcards', label: 'Flashcard', onPress: onOpenFlashcards },
+          { id: 'games', label: 'Game từ vựng', onPress: onOpenGames },
+        ] as const
+      ).map(item => (
+        <Pressable
+          key={item.id}
+          accessibilityRole="button"
+          accessibilityLabel={item.label}
+          accessibilityState={{
+            selected: selectedTab === 'practice' && activeActivity === item.id,
+          }}
+          {...navigationLink(
+            web,
+            item.id === 'flashcards' ? '/flashcards' : '/games',
+            item.onPress,
+          )}
+          style={({ pressed }) => [
+            styles.quickLink,
+            selectedTab === 'practice' &&
+              activeActivity === item.id &&
+              styles.selected,
+            pressed && styles.pressed,
+          ]}
+        >
+          <Text
+            style={[
+              styles.quickLabel,
+              selectedTab === 'practice' &&
+                activeActivity === item.id &&
+                styles.selectedLabel,
+            ]}
+          >
+            {item.label}
+          </Text>
+        </Pressable>
+      ))}
       <Text style={styles.sectionLabel}>LUYỆN NHANH</Text>
       {(
         [
@@ -72,7 +125,9 @@ export function DesktopNavigation({
           key={skill.id}
           accessibilityRole="button"
           accessibilityLabel={skill.label}
-          onPress={() => onOpenSkill(skill.id)}
+          {...navigationLink(web, '/practice/' + skill.id, () =>
+            onOpenSkill(skill.id),
+          )}
           style={({ pressed }) => [
             styles.quickLink,
             selectedTab === 'practice' &&
@@ -85,16 +140,10 @@ export function DesktopNavigation({
         </Pressable>
       ))}
       <View style={styles.spacer} />
-      <View style={styles.note}>
-        <Text style={styles.noteTitle}>Một chút mỗi ngày</Text>
-        <Text style={styles.noteText}>
-          Chọn một kỹ năng và bắt đầu buổi học của bạn.
-        </Text>
-      </View>
       <Pressable
         accessibilityRole="button"
         accessibilityLabel="Mở tài khoản của bạn"
-        onPress={() => onSelectTab('profile')}
+        {...navigationLink(web, '/profile', () => onSelectTab('profile'))}
         style={styles.account}
       >
         <View style={styles.avatar}>
@@ -156,15 +205,6 @@ const styles = StyleSheet.create({
   },
   quickLabel: { ...typography.body, color: colors.body },
   spacer: { flex: 1 },
-  note: {
-    padding: spacing.lg,
-    gap: spacing.sm,
-    backgroundColor: colors.surfaceTint,
-    borderRadius: radius.small,
-    borderCurve: 'continuous',
-  },
-  noteTitle: { ...typography.label, color: colors.primaryText },
-  noteText: { ...typography.body, color: colors.muted },
   account: {
     flexDirection: 'row',
     alignItems: 'center',

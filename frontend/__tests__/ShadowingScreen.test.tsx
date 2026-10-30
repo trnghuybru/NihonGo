@@ -9,6 +9,43 @@ import {
   ShadowingJob,
 } from '../src/services/shadowingService';
 
+import {
+  dictionaryService,
+  WordDetail,
+} from '../src/services/dictionaryService';
+jest.mock('../src/services/dictionaryService', () => ({
+  dictionaryService: {
+    history: jest.fn().mockResolvedValue({ items: [] }),
+    recordHistory: jest.fn().mockResolvedValue({ items: [] }),
+    clearHistory: jest.fn().mockResolvedValue({ items: [] }),
+    subscribeHistory: jest.fn(() => () => {}),
+    words: jest.fn(),
+    word: jest.fn(),
+  },
+}));
+const dictionaryWord: WordDetail = {
+  id: 'jmdict:japanese',
+  word: '日本語',
+  reading: 'にほんご',
+  common: true,
+  source_id: 'jmdict',
+  glosses: [{ language: 'vi', text: 'tiếng Nhật' }],
+  forms: [{ text: '日本語', info: [] }],
+  readings: [],
+  senses: [
+    {
+      parts_of_speech: ['noun (common) (futsuumeishi)'],
+      glosses: [{ language: 'vi', text: 'tiếng Nhật' }],
+      notes: [],
+      tags: [],
+    },
+  ],
+  examples: [],
+  kanji: [],
+  other_entries: [],
+  source: { id: 'jmdict', name: 'JMdict' },
+};
+
 jest.mock('../src/services/shadowingService', () => ({
   shadowingService: {
     list: jest.fn(),
@@ -42,6 +79,11 @@ let tree: Renderer.ReactTestRenderer;
 const injectJavaScript = jest.fn();
 beforeEach(() => {
   jest.clearAllMocks();
+  jest.mocked(dictionaryService.words).mockResolvedValue({
+    items: [dictionaryWord],
+    pagination: { page: 1, page_size: 20, total: 1, total_pages: 1 },
+  });
+  jest.mocked(dictionaryService.word).mockResolvedValue(dictionaryWord);
   jest.mocked(shadowingService.list).mockResolvedValue({ items: [job] });
   jest.mocked(shadowingService.lesson).mockResolvedValue({
     job,
@@ -559,7 +601,7 @@ test('foreground polling does not discard a pending next-page request', async ()
   expect(visibleText()).not.toContain('Đang tải thêm video…');
 });
 
-test('tapping a subtitle word opens local lookup, pauses without seeking, and closing leaves playback paused', async () => {
+test('tapping a subtitle word opens the shared dictionary, pauses without seeking, and closing leaves playback paused', async () => {
   const original = await shadowingService.lesson('job-1');
   jest.mocked(shadowingService.lesson).mockResolvedValue({
     ...original,
@@ -577,15 +619,6 @@ test('tapping a subtitle word opens local lookup, pauses without seeking, and cl
         lemma: '日本語',
         reading: 'にほんご',
         pos: '名詞',
-        entries: [
-          {
-            id: 'word-1',
-            word: '日本語',
-            reading: 'にほんご',
-            meaning_vi: 'tiếng Nhật',
-            level: 'N5',
-          },
-        ],
       },
     },
   });
@@ -623,7 +656,13 @@ test('tapping a subtitle word opens local lookup, pauses without seeking, and cl
       }),
   );
   expect(visibleText()).toContain('tiếng Nhật');
-  expect(visibleText()).toContain('【にほんご】');
+  expect(visibleText()).toContain('にほんご');
+  expect(dictionaryService.words).toHaveBeenCalledWith('日本語', 1);
+  expect(dictionaryService.word).toHaveBeenCalledWith(dictionaryWord.id);
+  expect(dictionaryService.recordHistory).toHaveBeenCalledWith(
+    'word',
+    dictionaryWord.id,
+  );
   expect(injectJavaScript).toHaveBeenCalledWith(
     'window.player && window.player.pauseVideo();true;',
   );
@@ -638,10 +677,14 @@ test('tapping a subtitle word opens local lookup, pauses without seeking, and cl
   );
   expect(injectJavaScript.mock.calls.length).toBe(calls);
   expect(visibleText()).not.toContain('tiếng Nhật');
-  expect(shadowingService.lesson).toHaveBeenCalledTimes(2); // fixture read + opening; no lookup request on tap.
+  expect(shadowingService.lesson).toHaveBeenCalledTimes(2); // Dictionary lookup does not reload the lesson.
 });
 
-test('unknown words show a clear missing-meaning state without replaying the sentence', async () => {
+test('unknown words show the dictionary empty state without replaying the sentence', async () => {
+  jest.mocked(dictionaryService.words).mockResolvedValue({
+    items: [],
+    pagination: { page: 1, page_size: 20, total: 0, total_pages: 0 },
+  });
   const original = await shadowingService.lesson('job-1');
   jest.mocked(shadowingService.lesson).mockResolvedValue({
     ...original,
@@ -657,7 +700,6 @@ test('unknown words show a clear missing-meaning state without replaying the sen
         lemma: '日本語',
         reading: 'にほんご',
         pos: '名詞',
-        entries: [],
       },
     },
   });
@@ -695,7 +737,7 @@ test('unknown words show a clear missing-meaning state without replaying the sen
         nativeEvent: { pageY: 300 },
       }),
   );
-  expect(visibleText()).toContain('Chưa có nghĩa tiếng Việt');
+  expect(visibleText()).toContain('Không tìm thấy kết quả');
   expect(tree.root.findByType(VideoExamplePlayer).props.seekRequest).toBe(
     request,
   );
@@ -1025,4 +1067,44 @@ test('uses the selected JLPT level and retains answers for review until leaving 
   expect(visibleText()).not.toContain('話している人は何語を使っていますか。');
   expect(visibleText()).not.toContain('Câu hỏi đã trả lời');
   expect(shadowingService.questions).toHaveBeenCalledTimes(1);
+});
+
+test('unanswered question opens at 5:00 after seeking to 4:58 using actual playback time', async () => {
+  const generated = await shadowingService.questions('job-1', 1, 'N3');
+  const question = { ...generated.questions[0], trigger_seconds: 300 };
+  jest
+    .mocked(shadowingService.questions)
+    .mockResolvedValue({ questions: [question] });
+  await render();
+  await press('Luyện shadowing');
+  await press('Câu hỏi AI');
+  await press('Tạo câu hỏi');
+  const reportTime = async (seconds: number) => {
+    await act(async () =>
+      tree.root
+        .findByProps({ testID: 'youtube-example-player' })
+        .props.onMessage({
+          nativeEvent: {
+            data: JSON.stringify({ type: 'playback-time', code: { seconds } }),
+          },
+        }),
+    );
+  };
+  await reportTime(298);
+  await reportTime(299.9);
+  expect(visibleText()).not.toContain(question.question);
+  // No quiz-question message is needed: the real playback clock also opens due questions.
+  await reportTime(300.1);
+  expect(visibleText()).toContain(question.question);
+  expect(tree.root.findByType(VideoExamplePlayer).props.pausedForQuiz).toBe(
+    true,
+  );
+  await press('Đáp án A: 日本語');
+  await press('Xem tiếp');
+  await reportTime(298);
+  await reportTime(300.1);
+  expect(visibleText()).not.toContain(question.question);
+  expect(tree.root.findByType(VideoExamplePlayer).props.pausedForQuiz).toBe(
+    false,
+  );
 });

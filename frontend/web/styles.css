@@ -35,10 +35,16 @@ input {
 iframe {
   border: 0;
 }
-/* Keep keyboard navigation visible across shared React Native controls. */
+/* Text fields show focus on their rounded container, as specified in design.md. */
+input:focus-visible,
+textarea:focus-visible {
+  outline: none;
+}
+/* Keep keyboard navigation visible on buttons and tabs. */
 [role='button']:focus-visible,
-[role='tab']:focus-visible,
-input:focus-visible {
+[role='radio']:focus-visible,
+[role='checkbox']:focus-visible,
+[role='tab']:focus-visible {
   outline: 2px solid #b65a13 !important;
   outline-offset: 3px;
 }
@@ -52,4 +58,13 @@ input:focus-visible {
   *::after {
     scroll-behavior: auto !important;
   }
+}
+/* Keep the study session and today's review together while browsing decks. */
+#flashcard-sticky-sidebar {
+  position: sticky;
+  top: 16px;
+  max-height: calc(100dvh - 112px);
+  overflow-y: auto;
+  scrollbar-width: thin;
+  padding: 2px;
 }

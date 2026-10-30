@@ -150,7 +150,7 @@ export function StartupSplash({ ready, onFinished }: Props) {
 }
 
 const styles = StyleSheet.create({
-  screen: { flex: 1, backgroundColor: colors.background },
+  screen: { flex: 1 },
   content: { flex: 1, padding: spacing.xxl },
   center: {
     flex: 1,

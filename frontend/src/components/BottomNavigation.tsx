@@ -1,3 +1,8 @@
+import {
+  navigationLink,
+  tabPaths,
+  useWebNavigation,
+} from '../navigation/webNavigation';
 import { memo } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -34,6 +39,7 @@ function BottomNavigationComponent({
   onSelectTab,
   floating = false,
 }: Props) {
+  const web = useWebNavigation();
   const insets = useSafeAreaInsets();
   return (
     <View
@@ -58,7 +64,9 @@ function BottomNavigationComponent({
                 accessibilityRole="tab"
                 accessibilityLabel={tab.label}
                 accessibilityState={{ selected }}
-                onPress={() => onSelectTab(tab.id)}
+                {...navigationLink(web, tabPaths[tab.id], () =>
+                  onSelectTab(tab.id),
+                )}
                 style={({ pressed }) => [
                   styles.tab,
                   pressed ? styles.tabPressed : null,
@@ -104,7 +112,7 @@ const styles = StyleSheet.create({
   safeArea: {
     paddingTop: 4,
     paddingHorizontal: spacing.lg,
-    backgroundColor: colors.background,
+    backgroundColor: 'transparent',
   },
   floating: { backgroundColor: 'transparent' },
   container: {

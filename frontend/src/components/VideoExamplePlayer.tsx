@@ -76,6 +76,7 @@ var quizPending=null;
 var quizHold=false;
 var quizTarget=null;
 var quizAutoFloor=-1;
+var lastPlaybackReport=-1;
 function send(type,code){if(window.ReactNativeWebView){window.ReactNativeWebView.postMessage(JSON.stringify({type:type,code:code}));}}
 window.configureQuiz=function(checkpoints,hold){
  if(!checkpoints.some(function(q){return quizCheckpoints.some(function(old){return old.id===q.id;});}))quizAutoFloor=-1;
@@ -95,7 +96,9 @@ function checkQuiz(target){
  var time=target.getCurrentTime();
  var due;
  if(quizTarget){
-  if(time<quizTarget.seconds)return true;
+  // YouTube can settle a fraction before the requested timestamp while paused.
+  // Wait until the seek actually reaches its destination, with a small tolerance.
+  if(Math.abs(time-quizTarget.seconds)>0.35)return true;
   due=quizTarget;quizTarget=null;
  }else{
   if(time<quizAutoFloor)quizAutoFloor=time;
@@ -106,8 +109,13 @@ function checkQuiz(target){
 }
 function clearEndTimer(){if(endTimer!==null){clearInterval(endTimer);endTimer=null;}}
 function updateCaption(target){
+ var time=target.getCurrentTime();
+ // Also synchronize the app clock after native YouTube seeks and buffering.
+ if(Number.isFinite(time) && (lastPlaybackReport<0 || Math.abs(time-lastPlaybackReport)>=0.2)){
+  lastPlaybackReport=time;send('playback-time',{seconds:time});
+ }
  if(!timeline)return;
- var time=target.getCurrentTime(), low=0, high=timeline.length-1, index=-1;
+ var low=0, high=timeline.length-1, index=-1;
  while(low<=high){var mid=Math.floor((low+high)/2);if(timeline[mid].start<=time){index=mid;low=mid+1;}else{high=mid-1;}}
  if(index>=0 && time>=timeline[index].end)index=-1;
  if(index!==lastCaption){lastCaption=index;send('caption',{index:index,clipId:clip.id});}
@@ -142,7 +150,7 @@ function onPlaybackState(e){
  updateCaption(e.target);
  if(e.data===0)checkQuiz(e.target);
  if(timeline || (sentencePausePending && e.data===YT.PlayerState.PLAYING)){
-  endTimer=setInterval(function(){if(quizTarget || !timeline || e.target.getPlayerState()===YT.PlayerState.PLAYING){checkSentenceEnd(e.target);}else{updateCaption(e.target);}},100);
+  endTimer=setInterval(function(){if(quizTarget || !timeline || e.target.getPlayerState()===YT.PlayerState.PLAYING){checkSentenceEnd(e.target);}else{updateCaption(e.target);checkQuiz(e.target);}},100);
   if(e.data===YT.PlayerState.PLAYING)checkSentenceEnd(e.target);
  }
 }
@@ -183,6 +191,7 @@ export function VideoExamplePlayer({
   pausedForQuiz = false,
   quizCheckpoints,
   onQuizQuestion,
+  onPlaybackTime,
   resumeRequest = 0,
   quizJumpRequest,
 }: {
@@ -205,6 +214,7 @@ export function VideoExamplePlayer({
   pausedForQuiz?: boolean;
   quizCheckpoints?: { id: string; seconds: number }[];
   onQuizQuestion?: (id: string) => void;
+  onPlaybackTime?: (seconds: number) => void;
   resumeRequest?: number;
   quizJumpRequest?: { id: string; request: number } | null;
 }) {
@@ -322,6 +332,13 @@ export function VideoExamplePlayer({
       if (message.type === 'ready') {
         setLoaded(true);
         setError('');
+      }
+      if (
+        message.type === 'playback-time' &&
+        Number.isFinite(message.code?.seconds) &&
+        message.code.seconds >= 0
+      ) {
+        onPlaybackTime?.(message.code.seconds);
       }
       if (
         message.type === 'caption' &&
@@ -542,7 +559,7 @@ const styles = StyleSheet.create({
     gap: 0,
     borderWidth: 0,
     boxShadow: 'none',
-    backgroundColor: colors.background,
+    backgroundColor: 'transparent',
   },
   retryLink: {
     minHeight: 36,

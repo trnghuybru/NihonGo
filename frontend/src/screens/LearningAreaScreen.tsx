@@ -4,6 +4,7 @@ import { MascotPose, NihongoMascot } from '../components/NihongoMascot';
 import { colors, spacing, typography } from '../theme/theme';
 import { MISSING_DATA } from '../config/content';
 import { WritingScreen } from './WritingScreen';
+import { ReadingScreen } from './ReadingScreen';
 
 export type LearningArea = 'listening' | 'reading' | 'writing' | 'vocabulary';
 
@@ -36,10 +37,24 @@ const areas: Record<
 export function LearningAreaScreen({
   area,
   query = '',
+  accountId,
+  initialLevel,
+  onExit,
 }: {
   area: LearningArea;
   query?: string;
+  accountId?: string;
+  initialLevel?: string;
+  onExit?: () => void;
 }) {
+  if (area === 'reading')
+    return (
+      <ReadingScreen
+        accountId={accountId}
+        initialLevel={initialLevel}
+        onExit={onExit}
+      />
+    );
   if (area === 'writing') {
     return <WritingScreen />;
   }

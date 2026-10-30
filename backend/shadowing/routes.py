@@ -11,7 +11,7 @@ from video_examples.models import CaptionSegment, ExampleVideo
 from .models import ShadowingJob, ShadowingRequest, ShadowingTranslation
 from .processor import display_captions, attach_practice_segments
 from .service import owned_job, public_job, submit
-from .words import cached_analysis, dictionary_entries
+from .words import cached_analysis, lookup_words
 from .translation import source_for, public_translation, request_translation
 
 bp = Blueprint('shadowing', __name__, url_prefix='/api/listening/shadowing')
@@ -143,7 +143,7 @@ def lesson(job_id):
     analysis = cached_analysis(job, practice, cues)
     return jsonify({'job': public_job(job), 'video': info, 'caption_kind': video.caption_kind,
         'tokens': {'segments': analysis['segments'], 'captions': analysis['captions']},
-        'words': dictionary_entries(analysis['words']),
+        'words': lookup_words(analysis['words']),
         'segments': practice, 'captions': [{**cue, 'search_text': cue['text'], 'video': info,
             'watch_url': f'https://www.youtube.com/watch?v={video.id}&t={math.floor(cue["start_seconds"])}s'}
             for cue in cues]})

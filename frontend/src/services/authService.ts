@@ -1,6 +1,7 @@
 import { Linking } from 'react-native';
 import * as Keychain from 'react-native-keychain';
 import { apiRequest, ApiError } from './apiClient';
+import { setReminderAccount } from './flashcardNotifications';
 export { ApiError } from './apiClient';
 
 export type Channel = 'email' | 'sms';
@@ -88,6 +89,7 @@ async function accept(tokens: Tokens): Promise<User> {
 }
 
 async function clearSession() {
+  await setReminderAccount(null).catch(() => undefined);
   await Keychain.resetGenericPassword({ service: SESSION_SERVICE });
   session = null;
   notify();

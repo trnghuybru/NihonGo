@@ -294,21 +294,9 @@ class ShadowingTests(unittest.TestCase):
         db.session.commit()
         self.assertEqual(self.get(url).status_code, 404)
 
-    def test_word_popup_uses_all_levels_exact_reading_and_cached_morphology(self):
-        from vocabulary.models import VocabularyTextbook, VocabularyLesson, VocabularyWord
+    def test_word_lookup_exports_cached_morphology_without_lesson_meanings(self):
         from shadowing.morphology import analyze
-        from shadowing.words import cached_analysis, dictionary_entries
-        for level, spelling, reading, meaning in [('N5', '住む', 'すむ', 'sống, cư trú'),
-                                                   ('N2', '最近', 'さいきん', 'gần đây'),
-                                                   ('N1', '街', 'がい', 'khác cách đọc')]:
-            db.session.add(VocabularyTextbook(id=level, title=level, level=level, source_url='local'))
-            db.session.flush()
-            db.session.add(VocabularyLesson(id=level, textbook_id=level, number=1, unit_number=1,
-                title='Lesson', unit_title='Unit', source_url='local', audio_urls=[]))
-            db.session.flush()
-            db.session.add(VocabularyWord(id=level, lesson_id=level, number=1, word=spelling,
-                reading=reading, meaning_vi=meaning, details={}))
-        db.session.commit()
+        from shadowing.words import cached_analysis, lookup_words
         text = '最近、街に住んでいる。'
         segments = [{'id': 's', 'text': text}]
         captions = [{'id': 'c', 'text': text, 'segment_id': 's'}]
@@ -319,14 +307,15 @@ class ShadowingTests(unittest.TestCase):
         db.session.commit()
         with patch('shadowing.words.analyze', side_effect=AssertionError('Retokenized cached video')):
             reused = cached_analysis(stored, segments, captions)
-        entries = dictionary_entries(reused['words'])
+        with patch('shadowing.words.db.session.execute', side_effect=AssertionError('Queried lesson word bank')):
+            entries = lookup_words(reused['words'])
         recent = next(word for word in entries.values() if word['surface'] == '最近')
         verb = next(word for word in entries.values() if word['surface'] == '住んでいる')
         street = next(word for word in entries.values() if word['surface'] == '街')
-        self.assertEqual(recent['entries'][0]['meaning_vi'], 'gần đây')
+        self.assertEqual(recent['reading'], 'さいきん')
         self.assertEqual(verb['lemma'], '住む')
-        self.assertEqual(verb['entries'][0]['level'], 'N5')
-        self.assertEqual(street['entries'], [])
+        self.assertEqual(street['reading'], 'まち')
+        self.assertTrue(all(set(word) == {'surface', 'lemma', 'reading', 'pos'} for word in entries.values()))
 
     def test_auth_url_validation_and_private_job_access(self):
         self.assertEqual(self.client.post(PATH, json={'url': 'https://youtu.be/abcdefghijk'}).status_code, 401)

@@ -1,22 +1,18 @@
-import { Platform, Pressable, StyleSheet, Text, View } from 'react-native';
+import { AuthButton } from '../components/AuthForm';
+import type { DictionaryHistoryItem } from '../services/dictionaryService';
+import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { HomeFlashcardHub } from '../components/HomeFlashcardHub';
+import type { FlashcardSession } from '../services/flashcardService';
+import { DailyGoalProgress } from '../components/StudyTime';
 import { AuthShell } from '../components/AuthForm';
 import { HomeFeatureIcon } from '../components/HomeFeatureIcon';
 import { LearningSkill, SkillPicker } from '../components/SkillPicker';
 import { PromotionPanel } from '../components/PromotionPanel';
 import { VocabularySearchBar } from '../components/VocabularySearchBar';
 import { NihongoMascot } from '../components/NihongoMascot';
-import { useWebLayout } from '../hooks/useWebLayout';
-import { MISSING_DATA } from '../config/content';
 import { User } from '../services/authService';
 import { LearningOptions, LearningProfile } from '../services/learningService';
-import {
-  colors,
-  layout,
-  radius,
-  shadowMd,
-  spacing,
-  typography,
-} from '../theme/theme';
+import { colors, radius, shadowMd, spacing, typography } from '../theme/theme';
 
 export type { LearningSkill } from '../components/SkillPicker';
 
@@ -26,82 +22,26 @@ interface Props {
   options: LearningOptions;
   onContinueLearning: () => void;
   onOpenSkill: (skill: LearningSkill) => void;
-  onSearchVocabulary: (query: string) => void;
+  onSearchVocabulary: (query: string, entry?: DictionaryHistoryItem) => void;
   onOpenVocabulary: () => void;
   onOpenPromotion: () => void;
+  onOpenFlashcards?: (session?: FlashcardSession) => void;
+  onOpenQuiz?: () => void;
+  onOpenGames?: () => void;
 }
 
 export function HomeScreen({
   user,
   profile,
-  options,
   onContinueLearning,
   onOpenSkill,
   onSearchVocabulary,
   onOpenVocabulary,
   onOpenPromotion,
+  onOpenFlashcards,
+  onOpenQuiz,
+  onOpenGames,
 }: Props) {
-  const { desktop } = useWebLayout();
-  const level =
-    options.levels.find(option => option.id === profile.level)?.label ??
-    profile.level;
-  const goal =
-    options.goals.find(option => option.id === profile.goal)?.label ??
-    profile.goal;
-
-  const vocabularyContent = (
-    <View style={styles.section}>
-      <View style={styles.sectionHeadingRow}>
-        <Text accessibilityRole="header" style={styles.sectionTitle}>
-          {Platform.OS === 'web' ? 'Khám phá từ vựng' : 'Góc từ vựng'}
-        </Text>
-        <View style={styles.headingRule} />
-      </View>
-      {Platform.OS !== 'web' && (
-        <Pressable
-          accessibilityRole="button"
-          accessibilityLabel={`Từ vựng: ${MISSING_DATA}`}
-          accessibilityState={{ disabled: true }}
-          disabled
-          style={({ pressed }) => [
-            styles.wordNote,
-            pressed ? styles.pressed : null,
-          ]}
-        >
-          <View style={styles.wordHeading}>
-            <Text style={styles.wordEyebrow}>Momo mách bạn</Text>
-            <Text style={styles.wordCategory}>{MISSING_DATA}</Text>
-          </View>
-          <Text style={styles.wordJapanese}>{MISSING_DATA}</Text>
-          <Text style={styles.wordReading}>{MISSING_DATA}</Text>
-          <View style={styles.wordFooter}>
-            <Text style={styles.wordHint}>{MISSING_DATA}</Text>
-          </View>
-        </Pressable>
-      )}
-      <Pressable
-        accessibilityRole="button"
-        accessibilityLabel="Mở khu vực học từ vựng"
-        onPress={onOpenVocabulary}
-        style={({ pressed }) => [
-          styles.vocabularyCard,
-          pressed ? styles.pressed : null,
-        ]}
-      >
-        <NihongoMascot pose="writing" size={72} decorative />
-        <View style={styles.vocabularyCopy}>
-          <Text style={styles.vocabularyTitle}>Từ vựng của bạn</Text>
-          <Text style={styles.vocabularyDescription}>
-            {Platform.OS === 'web'
-              ? 'Khám phá bài học và luyện từ vựng theo trình độ.'
-              : 'Tra cứu, lưu và ôn lại những từ quan trọng.'}
-          </Text>
-        </View>
-        <HomeFeatureIcon name="arrow" color={colors.primaryText} size={20} />
-      </Pressable>
-    </View>
-  );
-
   return (
     <AuthShell
       title={`Chào ${user.name}`}
@@ -109,110 +49,74 @@ export function HomeScreen({
       icon="user"
       card={false}
       wide
+      compactHeader
+      topBarAccessory={
+        <View style={styles.badges}>
+          <View style={styles.badge}>
+            <Text style={styles.badgeText}>
+              {profile.level === 'beginner' ? 'Mới bắt đầu' : profile.level}
+            </Text>
+          </View>
+          <View style={styles.badge}>
+            <Text style={styles.badgeText}>
+              {profile.daily_minutes} phút/ngày
+            </Text>
+          </View>
+        </View>
+      }
       headerAccessory={<NihongoMascot size={104} />}
     >
+      <View style={[styles.section, styles.searchSection]}>
+        <Text accessibilityRole="header" style={styles.sectionTitle}>
+          Tra cứu từ vựng
+        </Text>
+        <VocabularySearchBar onSearch={onSearchVocabulary} />
+      </View>
+      <DailyGoalProgress />
+      <HomeFlashcardHub
+        onOpenFlashcards={onOpenFlashcards ?? onOpenVocabulary}
+        onOpenQuiz={onOpenQuiz ?? onContinueLearning}
+      />
+      <Pressable
+        accessibilityRole="button"
+        accessibilityLabel="Mở bài học từ vựng"
+        onPress={onOpenVocabulary}
+        style={({ pressed }) => [
+          styles.vocabularyCard,
+          pressed && styles.pressed,
+        ]}
+      >
+        <NihongoMascot pose="writing" size={72} decorative />
+        <View style={styles.vocabularyCopy}>
+          <Text style={styles.vocabularyTitle}>Bài học từ vựng</Text>
+        </View>
+        <HomeFeatureIcon name="arrow" color={colors.primaryText} size={20} />
+      </Pressable>
       <View style={styles.section}>
         <View style={styles.sectionHeadingRow}>
           <Text accessibilityRole="header" style={styles.sectionTitle}>
-            Tra cứu từ vựng
+            Luyện kỹ năng
           </Text>
-        </View>
-        <VocabularySearchBar onSearch={onSearchVocabulary} />
-      </View>
-
-      <View style={[styles.dashboard, desktop && styles.desktopDashboard]}>
-        <View style={[styles.section, desktop && styles.dashboardPane]}>
-          <View style={styles.sectionHeadingRow}>
-            <Text accessibilityRole="header" style={styles.sectionTitle}>
-              Tiếp tục học
-            </Text>
-            <View style={styles.headingRule} />
-          </View>
-          <Pressable
-            accessibilityRole="button"
-            accessibilityLabel={`Tiếp tục học. ${level}. ${goal}. ${profile.daily_minutes} phút mỗi ngày.`}
-            onPress={onContinueLearning}
-            style={({ pressed }) => [
-              styles.continueCard,
-              desktop && styles.desktopContinueCard,
-              pressed ? styles.pressed : null,
-            ]}
-          >
-            {({ pressed }) => (
-              <View
-                style={[
-                  styles.continueBody,
-                  desktop && styles.desktopContinueBody,
-                ]}
-              >
-                <View style={styles.chips}>
-                  <View style={styles.levelChip}>
-                    <Text style={styles.levelChipText}>{level}</Text>
-                  </View>
-                  <Text style={styles.minutes}>
-                    {profile.daily_minutes} phút/ngày
-                  </Text>
-                </View>
-                <View style={styles.continueScene}>
-                  <View style={styles.continueCopy}>
-                    <Text style={styles.continueTitle}>{goal}</Text>
-                    <Text style={styles.continueDescription}>
-                      Mở sách cùng Momo nhé!
-                    </Text>
-                  </View>
-                  <NihongoMascot pose="reading" size={104} decorative />
-                </View>
-                <View
-                  style={[
-                    styles.continueAction,
-                    pressed ? styles.continueActionPressed : null,
-                  ]}
-                >
-                  <Text style={styles.continueActionText}>Tiếp tục</Text>
-                  <HomeFeatureIcon
-                    name="arrow"
-                    size={19}
-                    color={colors.onPrimary}
-                  />
-                </View>
-              </View>
-            )}
-          </Pressable>
-          {desktop && vocabularyContent}
-        </View>
-
-        <View style={[styles.section, desktop && styles.dashboardPane]}>
-          <View style={styles.sectionHeadingRow}>
-            <Text accessibilityRole="header" style={styles.sectionTitle}>
-              Luyện kỹ năng
-            </Text>
+          {onOpenGames ? (
+            <AuthButton
+              label="Game từ vựng"
+              variant="text"
+              onPress={onOpenGames}
+            />
+          ) : (
             <Text style={styles.sectionCaption}>Học cùng Momo</Text>
-          </View>
-          <SkillPicker onOpenSkill={onOpenSkill} />
+          )}
         </View>
+        <SkillPicker onOpenSkill={onOpenSkill} />
       </View>
-
-      {!desktop && vocabularyContent}
-
       <PromotionPanel onPress={onOpenPromotion} />
     </AuthShell>
   );
 }
 
 const styles = StyleSheet.create({
-  dashboard: { gap: spacing.section },
-  desktopDashboard: {
-    flexDirection: 'row',
-    alignItems: 'stretch',
-    gap: spacing.xl,
-  },
-  dashboardPane: { flex: 1, minWidth: 0 },
-  desktopContinueCard: { borderWidth: 1, borderColor: colors.divider },
-  desktopContinueBody: {
-    gap: spacing.lg,
-    padding: spacing.xl,
-  },
-  section: { gap: spacing.xl },
+  searchSection: { zIndex: 30 },
+  section: { gap: spacing.lg },
   sectionHeadingRow: {
     flexDirection: 'row',
     alignItems: 'baseline',
@@ -222,124 +126,33 @@ const styles = StyleSheet.create({
   },
   sectionTitle: { ...typography.heading, color: colors.dark },
   sectionCaption: { ...typography.caption, color: colors.muted },
-  headingRule: {
-    flex: 1,
-    minWidth: 24,
-    height: 1,
-    backgroundColor: colors.divider,
-    alignSelf: 'center',
-  },
-  continueCard: {
-    borderRadius: radius.card,
-    borderCurve: 'continuous',
-    backgroundColor: colors.surface,
-    boxShadow: shadowMd,
-  },
-  continueBody: { padding: spacing.xl, gap: spacing.lg },
-  pressed: { backgroundColor: colors.surfaceTint },
-  chips: {
+  badges: {
+    marginLeft: 'auto',
     flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    gap: spacing.md,
+    gap: spacing.sm,
     flexWrap: 'wrap',
-  },
-  levelChip: {
-    paddingHorizontal: spacing.md,
-    paddingVertical: spacing.xs,
-    borderRadius: radius.pill,
-    borderCurve: 'continuous',
-    backgroundColor: colors.badgeBg,
-  },
-  levelChipText: { ...typography.caption, color: colors.badgeText },
-  minutes: { ...typography.caption, color: colors.body },
-  continueScene: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: spacing.sm,
-  },
-  continueCopy: { flex: 1, minWidth: 0, gap: spacing.sm },
-  continueTitle: {
-    ...typography.title,
-    color: colors.dark,
-  },
-  continueDescription: { ...typography.body, color: colors.body },
-  continueAction: {
-    minHeight: layout.buttonHeight,
-    paddingHorizontal: spacing.xl,
-    paddingVertical: spacing.md,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-    gap: spacing.sm,
-    borderRadius: radius.pill,
-    borderCurve: 'continuous',
-    backgroundColor: colors.primary,
-  },
-  continueActionPressed: { backgroundColor: colors.primaryPressed },
-  continueActionText: {
-    ...typography.button,
-    color: colors.onPrimary,
+    justifyContent: 'flex-end',
     flexShrink: 1,
-    textAlign: 'center',
   },
+  badge: {
+    paddingHorizontal: spacing.sm,
+    paddingVertical: spacing.sm,
+    borderRadius: radius.pill,
+    backgroundColor: colors.surfaceTint,
+  },
+  badgeText: { ...typography.caption, color: colors.focus },
+  pressed: { backgroundColor: colors.surfaceTint },
   vocabularyCard: {
-    minHeight: 96,
+    minHeight: 112,
     padding: spacing.xl,
     flexDirection: 'row',
     alignItems: 'center',
-    gap: spacing.md,
+    gap: spacing.lg,
     borderRadius: radius.card,
     borderCurve: 'continuous',
     backgroundColor: colors.surface,
     boxShadow: shadowMd,
   },
   vocabularyCopy: { flex: 1, minWidth: 0, gap: spacing.xs },
-  vocabularyTitle: { ...typography.label, color: colors.dark },
-  vocabularyDescription: { ...typography.body, color: colors.body },
-  wordNote: {
-    padding: spacing.xl,
-    gap: spacing.lg,
-    backgroundColor: colors.surface,
-    borderRadius: radius.card,
-    borderCurve: 'continuous',
-    boxShadow: shadowMd,
-  },
-  wordHeading: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    flexWrap: 'wrap',
-    gap: spacing.sm,
-  },
-  wordEyebrow: {
-    ...typography.caption,
-    color: colors.badgeText,
-  },
-  wordCategory: {
-    ...typography.caption,
-    color: colors.badgeText,
-    borderWidth: 1,
-    borderColor: colors.border,
-    borderRadius: radius.pill,
-    borderCurve: 'continuous',
-    paddingHorizontal: spacing.sm,
-    paddingVertical: spacing.xs,
-  },
-  wordJapanese: {
-    ...typography.title,
-    color: colors.dark,
-    marginTop: spacing.xs,
-  },
-  wordReading: { ...typography.label, color: colors.body },
-  wordFooter: {
-    marginTop: spacing.sm,
-    paddingTop: spacing.md,
-    borderTopWidth: 1,
-    borderTopColor: colors.divider,
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: spacing.md,
-  },
-  wordHint: { ...typography.body, color: colors.body, flex: 1 },
+  vocabularyTitle: { ...typography.title, color: colors.dark },
 });

@@ -23,13 +23,6 @@ export type ShadowingLookupWord = {
   lemma: string;
   reading: string;
   pos: string;
-  entries: {
-    id: string;
-    word: string;
-    reading: string;
-    meaning_vi: string;
-    level: string;
-  }[];
 };
 export type ShadowingLesson = {
   job: ShadowingJob;

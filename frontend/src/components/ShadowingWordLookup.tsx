@@ -1,5 +1,7 @@
-import { memo } from 'react';
+import { useRecordDictionaryHistory } from '../hooks/useDictionaryHistory';
+import { memo, useCallback } from 'react';
 import {
+  ActivityIndicator,
   Modal,
   Platform,
   Pressable,
@@ -24,6 +26,10 @@ import {
   typography,
 } from '../theme/theme';
 import { XIcon } from './icons';
+import { dictionaryService } from '../services/dictionaryService';
+import { useRemoteResource } from '../hooks/useSpeakingScenarios';
+import { formatDictionaryPartsOfSpeech } from '../utils/dictionaryLabels';
+import { AuthButton } from './AuthForm';
 
 export const ShadowingTokenText = memo(function TokenText({
   text,
@@ -32,6 +38,14 @@ export const ShadowingTokenText = memo(function TokenText({
   selectedKey,
   onWordPress,
   style,
+  showFurigana = true,
+  preserveLayout = false,
+  linkWords = false,
+  highlightRanges = [],
+  interactiveRanges = [],
+  activeRangeId,
+  onRangeHover,
+  onRangeLayout,
 }: {
   text: string;
   tokens?: ShadowingToken[];
@@ -39,25 +53,69 @@ export const ShadowingTokenText = memo(function TokenText({
   selectedKey?: string | null;
   onWordPress: (key: string, pageY: number) => void;
   style?: StyleProp<TextStyle>;
+  showFurigana?: boolean;
+  preserveLayout?: boolean;
+  linkWords?: boolean;
+  highlightRanges?: { start: number; end: number }[];
+  interactiveRanges?: {
+    id: string;
+    start: number;
+    end: number;
+    label: string;
+    onPress: () => void;
+  }[];
+  activeRangeId?: string | null;
+  onRangeHover?: (id: string | null) => void;
+  onRangeLayout?: (id: string, y: number) => void;
 }) {
   const { fontScale } = useWindowDimensions();
   if (!tokens?.length) return <Text style={style}>{text}</Text>;
+  let offset = 0;
   return (
-    <View style={styles.wordFlow}>
+    <View style={[styles.wordFlow, preserveLayout && styles.readingFlow]}>
       {tokens.map((token, index) => {
-        if (!token.text.trim()) return null;
+        const start = offset;
+        offset += token.text.length;
+        const range = interactiveRanges.find(
+          item => item.start < offset && item.end > start,
+        );
+        const highlighted = highlightRanges.some(
+          highlight => highlight.start < offset && highlight.end > start,
+        );
+        if (!token.text.trim())
+          return preserveLayout ? (
+            <Text key={index} style={style}>
+              {token.text}
+            </Text>
+          ) : null;
         const word = token.key ? words?.[token.key] : undefined;
-        const selected = token.key === selectedKey;
+        const linked =
+          linkWords && word && /[\u3400-\u9fff々]/u.test(token.text);
+        const selected = Boolean(token.key && token.key === selectedKey);
         const parts = rubyParts(
           token.text,
-          word?.surface === token.text ? word.reading : '',
+          showFurigana && word?.surface === token.text ? word.reading : '',
         );
         const content = (
-          <View style={[styles.wordLine, selected && styles.selectedWordLine]}>
+          <View
+            style={[
+              styles.wordLine,
+              preserveLayout && styles.readingWordLine,
+              linked && styles.linkedWordLine,
+              range && activeRangeId === range.id && styles.hoveredWordLine,
+              (selected || highlighted) && styles.selectedWordLine,
+            ]}
+          >
             {parts.map((part, position) => (
               <View
                 key={position}
-                style={[styles.rubyPart, { paddingTop: 14 * fontScale }]}
+                style={[
+                  styles.rubyPart,
+                  { paddingTop: Number(showFurigana) * 14 * fontScale },
+                  linkWords && part.reading
+                    ? { minWidth: part.reading.length * 10 * fontScale }
+                    : null,
+                ]}
               >
                 {part.reading ? (
                   <Text
@@ -74,6 +132,8 @@ export const ShadowingTokenText = memo(function TokenText({
                   style={[
                     style,
                     styles.wordText,
+                    linkWords && styles.sentenceWordText,
+                    linked && styles.linkedWordText,
                     selected && styles.selectedWordText,
                   ]}
                 >
@@ -83,15 +143,30 @@ export const ShadowingTokenText = memo(function TokenText({
             ))}
           </View>
         );
-        return word ? (
+        const interaction = range
+          ? {
+              onHoverIn: () => onRangeHover?.(range.id),
+              onHoverOut: () => onRangeHover?.(null),
+              onFocus: () => onRangeHover?.(range.id),
+              onBlur: () => onRangeHover?.(null),
+              onLayout: (event: import('react-native').LayoutChangeEvent) => {
+                if (start <= range.start)
+                  onRangeLayout?.(range.id, event.nativeEvent.layout.y);
+              },
+              testID: `reading-sentence-${range.id}`,
+            }
+          : {};
+        return word || range ? (
           <Pressable
             key={index}
+            {...interaction}
             accessibilityRole="button"
-            accessibilityLabel={`Tra từ ${word.surface}`}
+            accessibilityLabel={word ? `Tra từ ${word.surface}` : range?.label}
             style={styles.wordCell}
             onPress={event => {
               event.stopPropagation();
-              onWordPress(token.key!, event.nativeEvent.pageY);
+              if (word) onWordPress(token.key!, event.nativeEvent.pageY);
+              else range?.onPress();
             }}
           >
             {content}
@@ -141,16 +216,80 @@ export function rubyParts(
   return cursor === reading.length ? result : [{ text, reading }];
 }
 
-const partsOfSpeech: Record<string, string> = {
-  名詞: 'Danh từ',
-  動詞: 'Động từ',
-  形容詞: 'Tính từ',
-  形状詞: 'Tính từ',
-  副詞: 'Trạng từ',
-  助詞: 'Trợ từ',
-  助動詞: 'Trợ động từ',
-  接続詞: 'Liên từ',
-};
+function DictionaryDefinition({ word }: { word: ShadowingLookupWord }) {
+  const query = word.lemma || word.surface;
+  const load = useCallback(async () => {
+    const matches = await dictionaryService.words(query, 1);
+    // Prefix matches alone can describe an unrelated word.
+    const exact = matches.items.filter(
+      item =>
+        item.match_type === 'exact' ||
+        item.word === query ||
+        item.reading === query,
+    );
+    const entry = exact.find(item => item.reading === word.reading) ?? exact[0];
+    return entry ? dictionaryService.word(entry.id) : null;
+  }, [query, word.reading]);
+  const { state, reload } = useRemoteResource(load);
+  useRecordDictionaryHistory(
+    'word',
+    state.status === 'ready' ? state.data?.id : undefined,
+  );
+  if (state.status === 'loading')
+    return (
+      <ActivityIndicator
+        accessibilityLabel="Đang tra từ"
+        color={colors.primary}
+      />
+    );
+  if (state.status === 'error')
+    return (
+      <View style={styles.definition}>
+        <Text style={styles.reading}>{state.message}</Text>
+        <AuthButton label="Thử lại" variant="text" onPress={reload} />
+      </View>
+    );
+  const entry = state.data;
+  if (!entry)
+    return (
+      <Text style={styles.reading}>Không tìm thấy kết quả trong từ điển.</Text>
+    );
+  return (
+    <View style={styles.popupContent}>
+      {entry.reading !== word.reading ? (
+        <Text style={styles.reading}>{entry.reading}</Text>
+      ) : null}
+      {entry.han_viet?.length ? (
+        <Text style={styles.pos}>
+          {entry.han_viet.join(' · ').toUpperCase()}
+        </Text>
+      ) : null}
+      {entry.senses.map((sense, index) => {
+        const vietnamese = sense.glosses.filter(
+          gloss => gloss.language === 'vi',
+        );
+        const glosses = vietnamese.length
+          ? vietnamese
+          : sense.glosses.filter(gloss =>
+              ['eng', 'en'].includes(gloss.language),
+            );
+        if (!glosses.length) return null;
+        return (
+          <View key={index} style={styles.definition}>
+            <Text style={styles.pos}>
+              {index + 1}.{' '}
+              {formatDictionaryPartsOfSpeech(sense.parts_of_speech)}
+            </Text>
+            <Text selectable style={styles.meaning}>
+              {glosses.map(gloss => gloss.text).join('; ')}
+              {vietnamese.length ? '' : ' · Anh'}
+            </Text>
+          </View>
+        );
+      })}
+    </View>
+  );
+}
 
 export function ShadowingWordPopup({
   word,
@@ -158,7 +297,7 @@ export function ShadowingWordPopup({
   onClose,
 }: {
   word: ShadowingLookupWord | null;
-  anchorY: number;
+  anchorY?: number;
   onClose: () => void;
 }) {
   const insets = useSafeAreaInsets();
@@ -189,9 +328,7 @@ export function ShadowingWordPopup({
           accessibilityViewIsModal
         >
           <View style={styles.popupHeader}>
-            <Text style={styles.pos}>
-              {partsOfSpeech[word.pos] || word.pos}
-            </Text>
+            <Text style={styles.pos}>Từ điển</Text>
             <Pressable
               accessibilityRole="button"
               accessibilityLabel="Đóng popup từ vựng"
@@ -210,27 +347,15 @@ export function ShadowingWordPopup({
             {word.reading ? (
               <Text style={styles.reading}>【{word.reading}】</Text>
             ) : null}
-            {word.lemma !== word.surface ? (
-              <Text style={styles.reading}>Dạng gốc: {word.lemma}</Text>
-            ) : null}
-            {word.entries.length ? (
-              word.entries.map(entry => (
-                <View key={entry.id} style={styles.definition}>
-                  <View style={styles.definitionHeading}>
-                    <Text style={styles.entryReading}>
-                      {entry.word} · {entry.reading}
-                    </Text>
-                    <Text style={styles.level}>{entry.level}</Text>
-                  </View>
-                  <Text style={styles.meaning}>{entry.meaning_vi}</Text>
-                </View>
-              ))
-            ) : (
+            {word.lemma && word.lemma !== word.surface ? (
               <Text style={styles.reading}>
-                Chưa có nghĩa tiếng Việt của từ này trong dữ liệu hiện tại.
+                {word.surface} → {word.lemma}
               </Text>
-            )}
-            <Text style={styles.hint}>Đóng và bấm phát để tiếp tục video.</Text>
+            ) : null}
+            <DictionaryDefinition
+              key={word.lemma || word.surface}
+              word={word}
+            />
           </ScrollView>
         </View>
       </View>
@@ -247,6 +372,8 @@ const styles = StyleSheet.create({
     columnGap: spacing.sm,
     rowGap: spacing.xs,
   },
+  readingFlow: { justifyContent: 'flex-start', columnGap: 0, rowGap: 2 },
+  readingWordLine: { borderBottomColor: 'transparent', borderBottomWidth: 1 },
   wordCell: { maxWidth: '100%' },
   wordLine: {
     flexDirection: 'row',
@@ -256,6 +383,9 @@ const styles = StyleSheet.create({
     borderBottomColor: colors.primary,
     paddingBottom: 2,
   },
+  linkedWordLine: { borderBottomColor: colors.primary },
+  linkedWordText: { color: colors.focus },
+  hoveredWordLine: { backgroundColor: colors.surfaceTint },
   selectedWordLine: { backgroundColor: colors.badgeBg },
   rubyPart: { paddingTop: 14, maxWidth: '100%', flexShrink: 1 },
   ruby: {
@@ -270,6 +400,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   wordText: { textDecorationLine: 'none' },
+  sentenceWordText: { textAlign: 'center' },
   selectedWordText: { color: colors.focus },
   overlay: {
     flex: 1,
@@ -295,29 +426,21 @@ const styles = StyleSheet.create({
   },
   popupContent: { gap: spacing.md, paddingBottom: spacing.sm },
   close: {
-    width: 32,
-    height: 32,
+    width: 40,
+    height: 40,
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: radius.small,
     backgroundColor: colors.surfaceTint,
   },
   pos: { ...typography.caption, color: colors.muted },
-  word: { ...typography.brand, color: colors.dark },
-  reading: { ...typography.input, color: colors.body },
+  word: { ...typography.title, color: colors.dark },
+  reading: { ...typography.body, color: colors.body },
   definition: {
     backgroundColor: colors.surfaceTint,
     padding: spacing.md,
     borderRadius: radius.small,
     gap: spacing.sm,
   },
-  definitionHeading: {
-    flexDirection: 'row',
-    gap: spacing.sm,
-    alignItems: 'center',
-  },
-  entryReading: { ...typography.caption, color: colors.muted, flex: 1 },
-  level: { ...typography.caption, color: colors.primaryText },
-  meaning: { ...typography.title, color: colors.dark },
-  hint: { ...typography.caption, color: colors.muted },
+  meaning: { ...typography.body, color: colors.body },
 });

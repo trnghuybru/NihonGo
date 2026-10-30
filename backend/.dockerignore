@@ -1,7 +1,11 @@
 .env
+.runtime
 venv
 __pycache__
 **/__pycache__
 static
 data
 tests
+
+# Translation checkpoint is provisioned separately; voice workers do not need it.
+models/translation

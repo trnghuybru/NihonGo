@@ -8,6 +8,11 @@ Giao diện ấm, nhẹ và thân thiện với ứng dụng học ngôn ngữ. 
 
 Nguồn cấu hình: `frontend/src/theme/theme.ts`. Các component dùng chung nằm tại `frontend/src/components/AuthForm.tsx` và `AuthIcon.tsx`.
 
+## Nội dung giao diện
+
+- Ưu tiên nhãn ngắn và trực tiếp. Không tự thêm slogan, lời dẫn, câu động viên hoặc mô tả phụ dưới nút/thẻ khi chức năng đã rõ.
+- Giữ dữ liệu, trạng thái và lỗi cần thiết cho thao tác. Không lặp lại nội dung nút bằng một câu giải thích bên dưới.
+
 ## Màu sắc
 
 | Token | Giá trị | Vai trò |
@@ -35,7 +40,11 @@ Nguồn cấu hình: `frontend/src/theme/theme.ts`. Các component dùng chung n
 
 Theo mẫu typography được người dùng chốt: nút chính dùng chữ trắng trên nền cam `#FCA04B`; liên kết và nút viền dùng chữ cam `#FCA04B`. Tiêu đề dùng `#252526`, mô tả dùng `#4D4D4F`. Lỗi vẫn dùng đỏ riêng và có thông báo bằng chữ.
 
-Nền `AuthShell` có hai vùng sáng SVG radial gradient: hồng `#F9CCD6` và đào `#FFDDB7`, opacity tối đa 0.5 rồi giảm về 0. Đây là lớp trang trí, không nhận thao tác và không được đọc bởi screen reader. Không dùng ảnh bitmap hoặc blur kích thước lớn.
+Toàn ứng dụng dùng lớp nền `AppBackground` chung ở gốc `App`, gồm nền kem
+`background` và hai vùng sáng SVG radial gradient: hồng `#F9CCD6` và đào `#FFDDB7`, opacity tối đa 0.5 rồi giảm về 0. Đây là lớp trang trí, không nhận thao tác và không được đọc bởi screen reader. Không dùng ảnh bitmap hoặc blur kích thước lớn. Màn hình, ScrollView và vùng
+bao nội dung để trong suốt, không đặt lại nền màu đặc hoặc vẽ gradient riêng.
+Modal/toàn màn hình và ngăn tra nhanh nằm ở lớp portal dùng cùng `AppBackground`.
+Thẻ, input, sidebar và thanh điều hướng giữ màu surface theo vai trò.
 
 ## Typography
 
@@ -77,14 +86,14 @@ Các kiểu chữ nội dung dùng khoảng cách ký tự mặc định, không
 - Dùng cùng bảng màu, font Readex Pro, typography, radius và bóng đổ với điện thoại; không đổi token theo nền tảng.
 - Từ 1100 px, dùng sidebar 240 px thay thanh điều hướng đáy. Vùng dashboard/danh mục rộng tối đa 1160 px, vẫn giữ lề 20 px. Màn hình hẹp giữ navigation nổi rộng tối đa 480 px.
 - Trang chủ chia hai cột; danh mục shadowing dùng grid 1–3 cột theo chiều rộng thực tế. Bài shadowing đặt video và bảng phụ đề cạnh nhau trên desktop, không thêm card bao video.
-- Bỏ thanh tiêu đề ngang của web; giữ badge trình độ và mục tiêu phút/ngày lấy từ hồ sơ thật.
-- Form xác thực, tài khoản và thiết lập giữ khung tối đa 480 px. Hội thoại/nhận xét giữ chiều rộng đọc gọn; dialog câu hỏi AI trên web có thể rộng tối đa 720 px.
+- Thanh trên cùng của web có nền trong suốt để lộ gradient chung; giữ badge trình độ và mục tiêu phút/ngày lấy từ hồ sơ thật bên phải. Trong bài shadowing, nút quay về và tiêu đề nằm bên trái trên cùng thanh này, dùng chung component và kiểu nút với app; không lặp lại trong cột video.
+- Form xác thực và thiết lập giữ khung tối đa 480 px. Trang Cá nhân trên desktop dùng khung tối đa 1160 px, hai cột cách 24 px; cột chính co giãn, cột thiết lập rộng 340 px. Trên màn hẹp giữ một cột tối đa 480 px. Hội thoại/nhận xét giữ chiều rộng đọc gọn; dialog câu hỏi AI trên web có thể rộng tối đa 720 px.
 
 ## Component và trạng thái
 
 ### AuthShell / AuthCard
 
-`AuthShell` chứa nền, safe area, thanh thương hiệu, tiêu đề, nội dung cuộn và footer. Mặc định bọc form trong một `AuthCard`; màn hình tài khoản dùng nhiều thẻ qua `card={false}`.
+`AuthShell` dùng nền chung của ứng dụng, xử lý safe area, thanh thương hiệu, tiêu đề, nội dung cuộn và footer. Mặc định bọc form trong một `AuthCard`; màn hình tài khoản dùng nhiều thẻ qua `card={false}`.
 
 iOS dùng `contentInsetAdjustmentBehavior="automatic"`; Android cộng safe area vào padding. Không cộng safe area hai lần trên iOS. Form cuộn được khi bàn phím hiện; `KeyboardAvoidingView` xử lý iOS. Các hành động nằm trong nội dung cuộn, không bị ghim lên bàn phím.
 
@@ -125,7 +134,7 @@ Footer đăng nhập là dòng chữ căn giữa: “Chưa có tài khoản?” 
 | Xác thực | Icon email → chỉ báo bước 2 → thông tin nơi nhận mã → input OTP → CTA xác thực → gửi lại có đếm ngược |
 | Quên/đặt lại mật khẩu | Icon email/khóa → thẻ form tương ứng → hướng dẫn và lỗi → CTA → quay lại |
 | Thiết lập học tập | Ba bước: chọn trình độ → mục tiêu và thời lượng → xem lại và xác nhận lưu |
-| Tài khoản | Lời chào → thẻ thiết lập học tập và chỉnh sửa → thẻ thông tin cá nhân và badge → thẻ bảo vệ tài khoản → đăng xuất ở footer |
+| Tài khoản | Tiêu đề Cá nhân và avatar chữ cái → thông tin cá nhân, xác thực liên hệ → thiết lập học tập → phiên đăng nhập với nút đăng xuất gọn |
 
 ## Điều hướng chính
 
@@ -145,11 +154,14 @@ Thanh điều hướng xuất hiện sau khi người dùng đã hoàn tất thi
 - Icon kính lúp 20 px trên tiêu đề Bài học mở **Tra cứu nhanh** dạng Modal trượt từ dưới, cao 85%, nền kem, góc trên bo 32, overlay nhẹ. Có nút đóng, hỗ trợ Back Android và tránh bàn phím/safe area. Cửa sổ dùng cùng tìm kiếm từ/video và phát âm đã có; đóng trả về nguyên trạng bài học, không tải lại bài. Không thêm tiến độ hoặc luyện tập giả.
 - Mục Bài học mặc định chọn N2, có N5–N1 và mở trực tiếp danh sách bài của trình độ đang chọn; không có ô tra cứu, bước chọn giáo trình/Unit hoặc tên giáo trình/nguồn trên giao diện. Hiện N2 có 89 bài thật; trình độ khác hiển thị trạng thái chưa có dữ liệu và nút khám phá N2.
 - Grid bài học dùng **3 cột** khi màn hình từ 360 px và font scale tối đa 1.15; màn hình 320–359 px hoặc chữ lớn hơn dùng 2 cột, dưới 320 px hoặc font scale trên 1.5 dùng 1 cột. Khoảng cách ngang/dọc 12 px. Thẻ gọn: padding 12, gap 8, bo `radius.small` 16, cao tối thiểu 104 và tự tăng khi chữ xuống dòng. Hàng đầu là **Bài 1** (`typography.button` 14/20, không lặp badge số bài) và mũi tên 14 px; nhóm từ dùng `caption`, cuối thẻ là badge đào ghi số từ thật. Nền trắng, bóng ấm theo token chung; toàn bộ thẻ có thể nhấn để học. Thẻ ở hàng cuối giữ cùng chiều rộng với các thẻ khác. Bài học đánh số liên tục trong từng trình độ, không lặp lại số theo Unit của dữ liệu nguồn.
-- Dùng nền kem với hai vùng SVG radial gradient hồng/đào như AuthShell, thanh BrandLogo, tiêu đề `title` 18/24, mô tả `body` 12/16. Nội dung rộng tối đa 480, lề 20. Thẻ từ và tra cứu trắng bo `radius.card` 32, padding 20, gap 16, khoảng cách thẻ 20 và bóng `shadowMd`; thẻ bài học dùng kích thước gọn riêng của grid ở trên.
+- Dùng nền AppBackground chung với hai vùng SVG radial gradient hồng/đào, thanh BrandLogo, tiêu đề `title` 18/24, mô tả `body` 12/16. Nội dung rộng tối đa 480, lề 20. Thẻ từ và tra cứu trắng bo `radius.card` 32, padding 20, gap 16, khoảng cách thẻ 20 và bóng `shadowMd`; thẻ bài học dùng kích thước gọn riêng của grid ở trên.
 - Bộ chọn trình độ chỉ xuất hiện trong danh sách bài, dùng nút viên thuốc, chọn dùng cam `primary` và chữ trắng, pressed `primaryPressed`, có nhãn và trạng thái radio. Link/nút text màu `primaryText`, `typography.link` 12/16, vùng chạm tối thiểu 48. Ô tìm kiếm ở mục Tra cứu bo 18, cao tối thiểu 56; focus dùng viền `focus`.
 - Bài mở danh sách từ với kana, nghĩa, Hán Việt và phần mở rộng ví dụ/từ liên quan. Có icon mắt ngang tiêu đề bài để ẩn nghĩa tự ôn và hiện nghĩa riêng từng từ. Chế độ ẩn nghĩa chỉ áp dụng cho bài học. Loading, lỗi và empty là trạng thái thật.
 - Danh sách bài và từ được virtualize, có safe area và xử lý bàn phím. Quay lại từ bài về danh sách bài; từ kết quả tra cứu về ô tra cứu, không chuyển sang bài học. Android Back tại gốc mỗi mục về Trang chủ. Không hiện tiến độ hoặc số từ đã thuộc khi chưa có dữ liệu.
-- Mục Tra cứu có ô nhập riêng và hai lựa chọn dạng viên thuốc **Video** và **Từ vựng**; mặc định Video khi tìm từ Trang chủ. Không hiện bài học, bộ chọn JLPT hoặc nút ẩn nghĩa. Khi chưa nhập truy vấn, hiện hướng dẫn và không gọi API tìm kiếm. Tra cứu thường hỗ trợ từ Nhật/kana/nghĩa tiếng Việt trên dữ liệu N2 hiện có, có chú thích phạm vi; trình độ đang chọn trong Bài học không lọc kết quả Tra cứu. Video tìm nguyên văn trong phụ đề. Kết quả dùng thẻ trắng theo token chung, câu có từ tìm được tô nền đào, tên video, kênh, mốc thời gian và hành động **Xem đoạn này**.
+- Mục Tra cứu dùng bố cục từ điển theo mục **Từ điển từ vựng và Hán tự** bên dưới,
+  mặc định Từ vựng khi tìm từ Trang chủ. Không hiện bài học, bộ chọn JLPT hoặc nút
+  ẩn nghĩa. Video tìm nguyên văn trong phụ đề, câu có từ tìm được tô nền đào, tên
+  video, kênh, mốc thời gian và hành động **Xem đoạn này**.
 - Tìm kiếm Video hiện ngay đoạn đầu tiên trong một player YouTube trên màn hình kết quả, phía dưới ô tìm kiếm. Rút gọn header kết quả để ưu tiên video; không mở modal. Card player trắng theo token chung có câu phụ đề, vị trí đoạn trên trang, nghe lại, ví dụ trước/tiếp và mở trên YouTube. Các kết quả nằm dưới player; thẻ đang chọn có nhãn **Đang chọn** và viền cam. Chọn thẻ đổi đoạn tại chỗ và cuộn về player; chỉ có một player hoạt động. Player có vùng hiển thị tối thiểu 200×200, giữ điều khiển YouTube; không đặt loading/error che player. Quay lại/chuyển tab/chuyển loại tìm kiếm hoặc gửi tìm kiếm mới giải phóng player. Lỗi mạng/video bị chặn nhúng có thông báo và cách thử lại; kết quả rỗng mô tả đúng giới hạn kho dữ liệu.
 
 ## Nói theo tình huống
@@ -212,14 +224,34 @@ Thanh điều hướng xuất hiện sau khi người dùng đã hoàn tất thi
   Không hiển thị nút mở ngoài YouTube.
 - Phụ đề tự động được ghi rõ; không có điểm phát âm hoặc tiến độ giả.
 
-Home ưu tiên thao tác theo thứ tự: tra từ → tiếp tục mục tiêu hiện tại → chọn kỹ năng → khu vực từ vựng → panel giới thiệu NihonGO. Không hiển thị tiến độ, chuỗi ngày hoặc số từ giả khi backend chưa cung cấp dữ liệu.
+Home ưu tiên thao tác theo thứ tự: tra từ → mục tiêu hôm nay → ôn tập hôm nay và thử thách → thẻ Từ vựng của bạn → lưới Luyện kỹ năng → panel giới thiệu NihonGO. Không hiển thị tiến độ, chuỗi ngày hoặc số từ giả khi backend chưa cung cấp dữ liệu.
 
-- Ô tra cứu đặt đầu nội dung, chấp nhận tiếng Nhật, romaji hoặc tiếng Việt. Cao 56 px, nền trắng, viền 1 px, bo 18 px; nút gửi tròn 48 px chỉ hoạt động khi nội dung sau khi trim không rỗng.
-- Thẻ **Tiếp tục học** lấy trình độ, mục tiêu và số phút/ngày từ `LearningProfile`. Không tự suy diễn phần trăm hoàn thành. CTA cam nằm trong thẻ và toàn bộ thẻ đều có thể nhấn.
+- Ô tra cứu đặt đầu nội dung, chấp nhận tiếng Nhật, kana, romaji hoặc nghĩa có
+  trong từ điển, gồm nghĩa Việt từ Wiktionary và nghĩa Anh dự phòng từ JMdict. Cao 56 px, nền trắng, viền 1 px,
+  bo 18 px; nút gửi tròn 48 px chỉ hoạt động khi nội dung sau khi trim không rỗng.
+- Thay thẻ **Tiếp tục học** bằng **Ôn tập hôm nay**: ưu tiên phiên flashcard đang dở (số thẻ còn lại và tên bộ), sau đó tối đa 50 từ ở mức Chưa nhớ/Mơ hồ, cuối cùng là Chọn bộ thẻ. CTA cam **Tiếp tục flashcard / Ôn ngay / Chọn bộ thẻ** mở đúng dữ liệu; Momo đọc sách 80 px là trang trí. Không dùng tỷ lệ tự suy diễn hay số thẻ giả.
+- **Thử thách hôm nay** đặt cạnh thẻ ôn tập trên desktop, dưới thẻ trên mobile. Thẻ trắng bo 32 continuous, padding 20, gap 16, `shadowMd`; tiêu đề nhóm `heading` 16/20, thông điệp `title` 18/24, nội dung `body` 12/16. Badge đào ghi số câu thật (tối đa 5); hoàn thành dùng `successBg`/`success`, ghi số câu đúng. Một CTA phụ outline **Bắt đầu / Tiếp tục / Xem kết quả thử thách**. Thiếu dữ liệu hướng dẫn học flashcard và khoá bắt đầu; lỗi có tải lại, không hiện số giả.
+- Thử thách dùng từ đã đánh giá trong các phiên gần đây, ưu tiên Chưa nhớ/Mơ hồ; mỗi câu có bốn nghĩa khác nhau, tránh đáp án trùng cụm nghĩa. Không tạo câu nếu thiếu đáp án phù hợp. Một lượt/ngày theo Asia/Ho_Chi_Minh, lưu/tiếp tục trên server; Home làm mới khi trở lại/foreground hoặc sang ngày mới.
+- Màn trắc nghiệm dùng gradient chung và `ScreenBackHeader` trong thanh trong suốt trên desktop. Nội dung tối đa 760, lề 20, thẻ trắng bo 32; từ `title` 18/24, câu trả lời `label` 14/20. Đáp án có A–D, bo 18, cao tối thiểu 52, viền 1 và focus bàn phím rõ. Sau khi server lưu mới hiện đúng/sai bằng cả màu lẫn chữ; cách đọc/nghĩa hiện dưới đáp án. Người dùng bấm **Câu tiếp theo**, không tự chuyển. Lỗi giữ câu và có tải lại. Tổng kết ghi số câu đúng và nút **Ôn câu sai bằng flashcard** nếu có. Điểm trắc nghiệm lưu riêng, không tự đổi mức nhớ đã chọn trong flashcard; chỉ thời gian ở màn luyện được tính vào mục tiêu hằng ngày.
 - Bốn kỹ năng xếp lưới 2×2: Nghe, Nói, Đọc, Viết. Mỗi thẻ dùng Momo tối đa 112 px, tự co theo chiều rộng nội dung trong hành động tương ứng (tai nghe, micro, đọc sách, tập viết), nền trắng `surface`, bo `radius.card` 32, padding 20, gap 16 và bóng `shadowMd`; tiêu đề 18/24, mô tả 12/16 và hành động 14/20. Hai thẻ trong hàng dùng `flex: 1`; bỏ các họa tiết SVG trừu tượng và nền nhiều màu.
 - Tư thế Momo hỗ trợ nhận diện kỹ năng; tên, mô tả và accessibility label luôn mang đủ ý nghĩa. Ảnh bên trong nút là trang trí, không đọc lặp lại.
-- Thẻ **Từ vựng của bạn** tách khỏi ô tra cứu: ô phía trên phục vụ tra nhanh, thẻ này điều hướng đến khu vực lưu và ôn từ.
-- Panel giới thiệu đặt cuối nội dung, sau khi người dùng đã thấy giá trị học tập. Panel dùng nền `surfaceTint`, viền đào và một CTA “Khám phá lộ trình”; không dùng popup khi mở Home.
+- Thẻ **Từ vựng của bạn** nằm ngang toàn chiều rộng ngay sau cụm ôn tập/thử thách,
+  tiếp theo là tiêu đề **Luyện kỹ năng** và lưới 2×2. Không chia hai section từ vựng/kỹ năng
+  thành cột lệch chiều cao; không có tiêu đề Khám phá từ vựng hoặc divider kéo dài.
+  Thẻ tách khỏi ô tra cứu: ô phía trên phục vụ tra nhanh, thẻ này mở khu vực bài học từ vựng.
+- Phần chào Home và Momo 104 px cùng hàng, cao tối thiểu 104 px, tự giãn khi tên dài
+  hoặc cỡ chữ lớn. Khoảng cách đến section tra từ 24 px; top bar gom trình độ và mục tiêu
+  phút/ngày bên phải. Desktop giữ sidebar 240 px từ 1100 px; nội dung và top bar
+  tối đa 1160 px, căn giữa với lề ít nhất 20 px.
+- Thẻ kỹ năng giữ tên Việt 18/24, mô tả 12/16, CTA 14/20 cam; bỏ nhãn Nhật 聞く / 話す / 読む / 書く trên thẻ kỹ năng.
+  Desktop bố trí Momo và chữ ngang trong từng thẻ, mobile dọc; hai thẻ trong hàng cao bằng nhau.
+- Badge thử thách đang làm hiện answered/total thật từ server (ví dụ 3/5 câu);
+  chưa bắt đầu hiện số câu khả dụng. Hoàn thành có tick xanh và **Đã hoàn thành**;
+  vẫn mở được kết quả khi bộ từ hiện tại không còn đủ để tạo câu mới.
+- Panel giới thiệu đặt cuối nội dung, sau khi người dùng đã thấy giá trị học tập. Panel dùng nền `surfaceTint`, viền đào, bóng ấm nhẹ `shadowSm`, Momo 76 px và một CTA
+  **Khám phá lộ trình** mở màn kế hoạch. Nhãn **HỌC CÙNG MOMO**, tiêu đề **Một lộ trình vừa sức
+  dành cho bạn**, mô tả **Khám phá kế hoạch học dựa trên trình độ, mục tiêu và thời gian mỗi ngày.**
+  Không hiện xxx, không ghi MOMO dưới ảnh và không dùng popup khi mở Home.
 - Các điểm điều hướng frontend dùng callback riêng (`onOpenSkill`, `onSearchVocabulary`, `onOpenVocabulary`...) để có thể nối màn hình hoặc API sau mà không sửa component trình bày.
 
 ### Mascot Momo
@@ -235,6 +267,30 @@ Momo là tanuki chibi nguyên bản của NihonGO, dùng cam đào, kem và nâu
 Đăng ký luôn gửi OTP qua email; không khôi phục bộ chọn email/SMS. Nhà cung cấp mạng xã hội chỉ xuất hiện khi backend đã cấu hình. Không thêm nút chức năng chưa tồn tại để lấp bố cục.
 
 ## Quy tắc mở rộng và kiểm tra
+
+### Theo dõi mục tiêu hằng ngày
+
+- Trang chủ có thẻ **Mục tiêu hôm nay**, hiển thị thời gian thật `07:32 / 15 phút`
+  và thanh tiến độ. Đủ mục tiêu chuyển sang xanh và nhãn **Đã hoàn thành**;
+  vẫn ghi nhận thời gian học tiếp theo, thanh giới hạn 100%.
+  Thẻ dùng nền `surface`, bo 32 continuous, padding 20, gap 16 và `shadowMd` như các thẻ Home.
+  Tiêu đề dùng `heading` 16/20, đồng hồ `title` 18/24 màu `dark`, mục tiêu `label` 14/20
+  màu `muted`; không đặt cỡ chữ riêng. Phần trăm nằm trong badge đào `badgeBg`/`badgeText`,
+  hoàn thành dùng `successBg`/`success` cùng dấu tick. Thanh tiến độ cao 6, nền `track`,
+  cam `primary` khi đang học và xanh khi đủ mục tiêu. Nút thử lại dùng `link`/`primaryText`,
+  vùng bấm tối thiểu 48; hàng thông tin được xuống dòng khi màn hẹp hoặc chữ lớn.
+- Đồng hồ tự chạy ở Bài học, Tra cứu và khu Nghe/Nói/Viết; không đếm Trang chủ,
+  Cá nhân, thiết lập, kế hoạch hoặc màn Đọc chưa có bài học. Điện thoại hiện
+  badge gọn phía trên navigation nổi khi học; desktop hiện ở vùng thông tin trên.
+- Chỉ đếm lúc ứng dụng đang foreground; web phải là tab/cửa sổ được tập trung.
+  Mở nền, mất focus, thiết bị ngủ hoặc timer bị trì hoãn không cộng thời gian đó.
+- Ngày học đổi lúc 00:00 **Asia/Ho_Chi_Minh**. Tiến độ lưu theo tài khoản qua API,
+  gộp các khoảng chồng nhau giữa tab/thiết bị, gửi lại không tính trùng. Đồng bộ
+  khoảng 15 giây/lần và khi rời khu học/chạy nền; giữ khoảng chờ trong bộ nhớ đệm
+  của tài khoản để thử lại sau mất mạng tạm thời (tối đa 24 giờ).
+- Chưa tải được dữ liệu thì hiện `--:--`, không giả số phút. Lỗi đồng bộ có
+  **Thử lại**; đổi mục tiêu không xóa thời gian đã học. Đây là thời gian ở khu học,
+  không suy diễn số từ đã thuộc hoặc chất lượng học.
 
 ### Thiết lập học tập
 
@@ -270,16 +326,93 @@ Logo và icon launcher dùng đầu Momo cùng chữ NihonGO đen–cam theo m�
 ### Tra từ trong phụ đề shadowing
 
 - Chỉ phụ đề lớn của câu hiện tại có thể nhấn để tra từ. Mỗi từ là một cụm riêng
-  có khoảng cách, gạch chân cam và furigana trên phần kanji; ghép đuôi biến đổi
-  thành từ hoàn chỉnh (ví dụ `立った`, `言って`). Từ được chọn nền cam nhạt.
-  Bảng phụ đề bên dưới chỉ hiển thị chữ, giữ nút play riêng của từng câu.
-- Bấm chữ tạm dừng video, không tua/replay. Nút play bên trái câu là thao tác luyện
-  riêng. Đóng popup giữ video dừng; người dùng chủ động bấm phát để tiếp tục.
-- Popup trắng bo 16 cạnh vị trí bấm, luôn nằm trong vùng an toàn; có chữ, cách đọc,
-  dạng gốc khi biến đổi, từ loại, nghĩa tiếng Việt và nút đóng 32 px + hitSlop.
-  Nội dung dài có thể cuộn. Thiếu nghĩa là trạng thái thật, không hiển thị nút giả.
-- Không gọi AI/tra từ online khi bấm. Không thêm romaji, lưu từ hoặc audio trong bản thử.
+  gồm chữ và furigana, có gạch chân nhẹ theo màu primary. Furigana căn theo cụm
+  kanji, không phủ lên phần kana; giữ nguyên chữ và khoảng trắng của phụ đề.
+- Bấm từ tạm dừng video, không tua hoặc tải lại player; mở popup nhỏ gần từ vừa bấm.
+  Hiện chữ, cách đọc, dạng gốc nếu khác, âm Hán Việt viết hoa và các nhóm nghĩa
+  từ từ điển chung. Ưu tiên nghĩa Việt; nghĩa Anh còn lại có nhãn. Từ loại dịch sang tiếng Việt.
+  Chữ từ dùng `title` 18/24; cách đọc, dạng gốc và nghĩa dùng `body` 12/16;
+  nhãn và từ loại dùng `caption` 12/16. Giữ font scale hệ thống và xuống dòng tự nhiên.
+- Tự tra dạng gốc (lemma), thiếu thì dùng chữ đã bấm. Chỉ nhận mục khớp chính xác,
+  không dùng kết quả gần giống thay cho từ không có. Có trạng thái tải, lỗi/thử lại và rỗng.
+  Chỉ gọi API từ điển nội bộ khi nhấn từ, không gọi AI/API ngoài.
+- Đóng bằng dấu X, bấm ngoài hoặc Back Android; video giữ nguyên vị trí và vẫn dừng,
+  người dùng chủ động bấm phát để tiếp tục. Bảng phụ đề bên dưới chỉ đọc.
+  Backend chỉ trả metadata token và cách đọc, không trộn nghĩa giáo trình vào payload.
+  Từ đã mở trong popup được ghi vào lịch sử tra cứu chung.
+  Không thêm romaji/lưu từ hay màn từ điển đầy đủ trong popup.
 
+### Từ điển từ vựng và Hán tự
+
+- Màn Tra cứu có ba tab **Từ vựng / Hán tự / Video**, mặc định Từ vựng; ô tra ở
+  Home mở tìm từ trong từ điển, không giới hạn trình độ giáo trình.
+- Ô tìm cao tối thiểu 56, nền trắng, bo 18, viền 1; focus đổi viền ngoài sang
+  `focus`, giữ độ dày, không có outline vuông bên trong input web. Nút gửi tròn 48,
+  chỉ hoạt động khi nội dung sau trim không rỗng. Nút/tab vẫn có focus bàn phím.
+- Sau khi tìm từ, tự mở chi tiết từ phù hợp nhất; ưu tiên khớp chính xác
+  theo thứ tự tìm kiếm của backend. Không trải các kết quả thành danh sách thẻ
+  từ lớn ở vùng chính. Nội dung chính là một thẻ trắng bo 32 chứa từ, cách đọc,
+  Hán Việt, các nghĩa và ví dụ có sẵn, phân chia bằng đường viền nhẹ.
+- Web đủ rộng chia hai cột: nội dung chính co giãn, cột phụ 300 px với các khối
+  **Kết quả tra cứu / Hán tự trong từ / Từ vựng liên quan**. Kết quả khớp gần và các
+  mục JMdict liên quan hiển thị dạng dòng gọn trong khối từ liên quan, ban đầu tối
+  đa 6 dòng và có Xem thêm. Nhấn dòng đổi từ chính, giữ ngữ cảnh truy vấn và có
+  Quay lại. Trên điện thoại/tra nhanh, các khối phụ xếp dưới chi tiết từ.
+- Card dùng padding 20, gap 12–16 và bóng ấm `shadowSm`; font, màu và lề theo token
+  chung. Có phân trang, loading, lỗi/thử lại và không có kết quả thật. Web tối đa
+  1160, mobile không tràn ngang.
+- Từ vựng hiển thị cách viết/đọc, từng nhóm nghĩa, từ loại và giới hạn áp dụng từ
+  nguồn. Ưu tiên định nghĩa Việt của Wiktionary khi có; mục chưa có nghĩa Việt dùng
+  bản dịch máy OPUS-MT đã lưu nếu có, sau đó JMdict nghĩa Anh có nhãn. Không có nút
+  xem nghĩa Anh gốc. Nhãn từ loại hiển thị bằng tiếng Việt, ví dụ **Danh từ ·
+  Động từ với する · Ngoại động từ**; nhóm động từ, tính từ và các ngoại lệ cũng
+  dùng thuật ngữ Việt, không hiện mô tả kỹ thuật tiếng Anh của JMdict.
+  Không lấy nghĩa/ví dụ giáo trình hoặc tự tạo ví dụ; không dịch lúc người dùng tra.
+- Loại tra cứu dùng thanh tab gọn theo độ dài nhãn, gạch chân màu focus cho
+  tab được chọn. Không kéo mỗi tab thành nút rộng bằng một phần màn hình.
+  Tra cứu luôn tự nhận diện Nhật/kana/romaji/Việt, nhận tiếng Việt có dấu hoặc
+  không dấu; không có bộ chọn ngôn ngữ trên giao diện.
+- Trong khối **Hán tự trong từ**, từng chữ mở rộng/thu gọn độc lập bằng nút có
+  mũi tên và trạng thái expanded. Mặc định thu gọn, hiện chữ, On và âm Hán Việt
+  in hoa. Khi mở hiện Kunyomi và sơ đồ thứ tự nét ngay trong thẻ; tải lần đầu khi mở,
+  giữ kết quả khi đóng/mở lại cùng mục từ. Có loading, thử lại khi lỗi và thông
+  báo thật nếu thiếu sơ đồ. Nút **Xem chi tiết Hán tự** mở trang đầy đủ.
+- Tab **Hán tự** tự mở chi tiết kết quả đầu tiên sau tìm kiếm. Khi tra một từ có
+  nhiều chữ Hán, ưu tiên các chữ theo thứ tự trong từ, không lặp chữ. Cột phụ
+  **Kết quả tra cứu kanji** dùng dòng gọn để chuyển chữ và phân trang; mobile
+  xếp cột này dưới chi tiết. Chọn chữ giữ ngữ cảnh để Quay lại.
+- Chi tiết chữ có chữ lớn và âm Hán Việt in hoa ở bên trái, phần **Phát âm**
+  gồm **Kunyomi / Onyomi** đặt ngang hàng bên cạnh. Sơ đồ nét viết nằm bên phải
+  và căn giữa theo chiều dọc của khối thông tin; màn hẹp đưa sơ đồ xuống dưới. Hiện số nét, bộ thủ
+  và tần suất nếu nguồn có. Không hiện nghĩa tiếng Anh, cách đọc theo tên hay
+  mô tả giải thích số thứ tự nét. Sơ đồ vẫn đánh số từng nét, tự viết một lần
+  khi mở chữ và chỉ có nút
+  **Phát lại** nhỏ ở góc sơ đồ; không có hàng điều khiển hoặc chọn tốc độ.
+  Thu gọn/đổi chữ/rời màn dừng animation; ứng dụng xuống nền thì dừng.
+  Chưa có sơ đồ thì thông báo thật. Nghĩa và từ ghép chỉ hiện phần nghĩa Việt có sẵn. Nhấn từ ghép mở
+  lại chi tiết từ; Quay lại khôi phục ngữ cảnh trước.
+- Từ điển dùng JMdict và Wiktionary tiếng Việt; dữ liệu giáo trình chỉ phục vụ Bài học, không trộn vào từ
+  chính, từ liên quan hoặc từ ghép Hán tự. Không hiện khối nguồn, tên giáo trình,
+  ghi chú hiệu đính hay giấy phép trong các thẻ tra cứu; bỏ mục **Nguồn dữ liệu** khỏi giao diện.
+  Metadata nguồn và giấy phép vẫn giữ trong DB và tài liệu dự án. Không dùng nhãn JLPT giáo trình để phân loại mục từ điển.
+- Tra nhanh trong bài học dùng cùng module; popup shadowing lấy nghĩa từ cùng API từ điển. Lưu từ yêu thích bằng ngôi sao ở chi tiết từ và thẻ từ trong bài học; hỗ trợ nhận dạng viết tay một ký tự qua nút **Viết tay** trong Tra cứu.
+
+
+- Sau khi gửi tìm kiếm luôn có nút **Quay lại**: trở về truy vấn trước và khôi phục chữ trong input; lần tìm đầu quay về ô trống. Áp dụng cả truy vấn mở từ Home và kết quả rỗng. Phân trang giữ đường quay lại; Back Android dùng cùng luồng.
+
+### Lịch sử tra cứu
+
+- Ô tìm kiếm Trang chủ và Tra cứu dùng chung lịch sử. Chọn từ/Hán tự từ Trang chủ mở đúng mục đã xem trong Tra cứu.
+- Lịch sử chỉ hiện khi nhấp/focus ô tìm kiếm, trong dropdown trắng ngay dưới input,
+  cùng chiều rộng, bo 18 và bóng ấm. Dropdown phủ lên nội dung, không đẩy bố cục.
+- Danh sách xếp dọc, mỗi dòng có biểu tượng lịch sử, từ và cách đọc/nhãn Hán tự.
+  Lọc theo chữ đang nhập (từ, cách đọc hoặc nghĩa); tối đa 30 mục, cuộn trong khung.
+- Chọn mục mở chi tiết và đóng dropdown. Gửi truy vấn, Escape, đổi loại tra cứu
+  hoặc bấm ra ngoài cũng đóng. Không còn khối Gần đây hay nút xem tất cả riêng.
+- Lưu riêng theo tài khoản trong PostgreSQL, dùng chung web/app và popup shadowing.
+  Chỉ ghi mục chi tiết đã tải thành công; không lưu từng ký tự, kết quả rỗng hay lỗi.
+  Tra lại đưa mục lên đầu, không nhân bản. Đọc dữ liệu từ điển bằng GET không ghi lịch sử.
+- **Xoá lịch sử** xoá của tài khoản hiện tại. Có trạng thái rỗng và tải lại khi lỗi.
 
 ### Bản dịch phụ đề shadowing
 
@@ -288,3 +421,164 @@ Logo và icon launcher dùng đầu Momo cùng chữ NihonGO đen–cam theo m�
 - Chỉ tải khi bật Bản dịch, dùng cache theo video cho mọi người; tắt ẩn bản Việt và dừng poll. Không remount player khi có bản dịch.
 
 - Nút mắt ẩn toàn bộ vùng phụ đề lớn và bản dịch bên dưới vùng này, không giữ khung hay dòng thông báo thay thế. Danh sách câu vẫn đọc được. Khi ẩn, icon mắt chuyển xuống thanh công cụ để mở lại; khi hiện, icon nằm góc trên phải của khung lớn.
+
+### Flashcard
+
+- Danh mục desktop dùng vùng rộng tối đa 1160 với hai cột: bộ thẻ ở bên trái,
+  thống kê và lịch ôn trong sidebar rộng 320 bên phải, khoảng cách 24. Danh sách bộ thẻ
+  là grid 2–3 cột theo chiều rộng thực tế, gap 16, thẻ hàng cuối giữ cùng chiều rộng.
+  Bộ chọn nguồn/trình độ và phân trang nằm trong cột bộ thẻ. Mobile giữ một cột.
+  Sidebar đặt **Đang học** trên **Hôm nay**, có tên bộ, số đã học/tổng, thanh tiến độ
+  và nút tiếp tục. Trên desktop, hai khối cùng giữ vị trí khi cuộn danh sách bộ thẻ;
+  màn thấp cho phép cuộn bên trong sidebar để vẫn truy cập đủ nội dung.
+  Phân trang dùng nút số, trang hiện tại nền cam và mũi tên trước/sau;
+  nhiều trang rút gọn bằng dấu ba chấm, mobile chỉ hiện nhóm ba trang lân cận.
+  Đổi trang trở về đầu danh sách, đổi nguồn/trình độ trở về trang 1.
+
+- Tổng quan hôm nay dùng thẻ trắng bo 32, padding 20, gap 16, `shadowMd`.
+  Hai ô ngang: **Đến hạn** nền kem/chữ focus và **Đã ôn hôm nay** nền successBg/chữ success;
+  số lớn Readex Pro SemiBold 32/40. Số đã ôn đếm thẻ duy nhất được tự đánh giá trong ngày Việt Nam,
+  không nhân đôi khi ôn cùng thẻ nhiều lần. Không dùng tỷ lệ hoàn thành suy diễn từ hai số này.
+  Ô cam ghi **Đến hạn hôm nay**, tính cả thẻ hẹn ôn tiếp vào giờ khác cùng ngày sau khi đã ôn.
+  Chỉ mở nút ôn khi đến đúng giờ FSRS; khi đang chờ hiện **Ôn tiếp lúc HH:mm**.
+  Tự làm mới khi đến hạn; chỉ loại khỏi số hôm nay khi hạn kế tiếp chuyển sang ngày khác.
+  Lịch mặc định chỉ hiện 3 ngày gần nhất, nút **30 ngày** mở toàn bộ lịch.
+  Hiện dạng danh sách hai cột **Ngày ôn / Số thẻ**:
+  thứ và ngày dd/MM bên trái, số kèm đơn vị “thẻ” bên phải. Mỗi dòng cao tối thiểu 48,
+  ngăn bằng divider; hôm nay nền kem/chữ focus, số thẻ đến hạn trong badge đào, số 0 dùng muted.
+  Bản 30 ngày cuộn trong khung cao tối đa 240. Bỏ ghi chú giải thích thuật toán,
+  thông tin đồng bộ kỹ thuật và khối nhắc điện thoại trên web. Cấu hình nhắc chỉ hiện ở app hỗ trợ.
+- Mỗi nút mức nhớ chỉ hiện khoảng cách ôn từ preview FSRS của thẻ hiện tại
+  (ví dụ **Chưa nhớ / 1 phút**, **Rất nhớ / 8 ngày**), không hiện ngày cụ thể.
+  Giữ bốn nút một hàng,
+  hỗ trợ xuống dòng khi chữ lớn và đủ chỗ cho nội dung; không dùng lịch cố định cho mọi thẻ.
+
+- Mở từ nút **Flashcard** trong Bài học, giữ nguyên trang bài học khi quay lại.
+  Header dùng `ScreenBackHeader`: ở app hiển thị trong màn, desktop nằm trên thanh trong suốt.
+  Chuyển tab ẩn header và không chặn Back của màn khác.
+- Chọn nguồn bằng tab gọn **Có sẵn / Tự tạo / Yêu thích**. Có sẵn có bộ chọn N5–N1,
+  danh sách phân trang, đếm thẻ thật. Bộ rỗng không bắt đầu được. Có **Tạo bộ thẻ** và sửa bộ tự tạo.
+- Tạo/sửa bộ có hai tab **Từng thẻ / Nhập hàng loạt**, giữ bản nháp khi đổi tab.
+  Nhập hàng loạt dùng ô dán cao tối thiểu 200, bo 18, font input, viền focus theo token;
+  hai cột radio **Giữa các cột** (Tab, dấu phẩy, ký tự riêng) và **Giữa các thẻ**
+  (xuống dòng, chấm phẩy, ký tự riêng). Màn rất hẹp/chữ lớn cho phép xuống hàng.
+  Hai trường là từ/nghĩa; ba trường là từ/cách đọc/nghĩa. Có tuỳ chọn bỏ dòng tiêu đề.
+  Xem trước đếm thẻ và hiện từ/nghĩa cạnh nhau trong vùng cuộn tối đa 240.
+  Chỉ nút **Thêm N thẻ vào bộ** đưa dữ liệu vào bản nháp; không tự lưu. Có lỗi ở bất kỳ dòng nào
+  hoặc vượt tổng 100 thẻ thì khoá thêm, không tự bỏ dòng lỗi. Lưu bộ nhắc nhập phần xem trước
+  còn chờ. Không có chức năng tải tệp CSV; dữ liệu dán được xử lý ngay trên thiết bị.
+- Ngôi sao 20 px, vùng chạm 48 px đặt cạnh từ trong Bài học/Từ điển; chọn dùng màu focus/badgeBg.
+  Khi học flashcard, ngôi sao nằm ở góc trên bên phải của thẻ, dùng được ở cả hai mặt.
+  Hỗ trợ bộ có sẵn, bộ tự tạo và các phiên ôn; bấm sao không lật thẻ hoặc tự đánh giá.
+  Từ đã lưu xuất hiện trong bộ **Yêu thích**, giữ cùng danh tính thẻ và lịch FSRS.
+  Không đưa bản giải thích kỹ thuật vào thẻ.
+- Vùng học rộng tối đa 760, lề 20, thẻ trắng bo 32 và bóng ấm; mặt trước hiện từ,
+  mặt sau hiện cách đọc/nghĩa. Số thẻ và thanh tiến độ lấy từ phiên đã lưu.
+- Dùng thư viện `react-native-flip-card` 3.5.7 để lật 3D dọc: `flipVertical`, trục X, perspective 1000, spring friction 8. Adapter chặn bấm lặp và đánh giá đến `onFlipEnd`; không tự dựng chuỗi animation. Khi hệ điều hành bật giảm chuyển động, đổi mặt ngay. Thẻ tiếp theo luôn bắt đầu ở mặt trước.
+- Luôn hiện 4 nút **Chưa nhớ / Mơ hồ / Nhớ / Rất nhớ** trên một hàng ở cả màn hẹp;
+  mỗi nút chia đều chiều rộng, cao tối thiểu 48, nhãn caption, bo `radius.pill`, nền trắng,
+  chữ/viền cam `primaryText`/`primary`; nhấn dùng `badgeBg`. Mặt trước, lúc đang lật và khi lưu
+  dùng nền/viền `disabled`, chữ `disabledText`, không chỉ giảm opacity. Chỉ mở nút khi mặt sau
+  lật xong; giữ nguyên vị trí hàng nút giữa hai mặt thẻ để bố cục không nhảy.
+  Web hiện số **1 / 2 / 3 / 4** dưới nhãn để gợi ý phím tắt; **Space** lật thẻ.
+  Phím tắt chỉ hoạt động trong phiên đang học, bỏ qua ô nhập liệu, phím bổ trợ và giữ phím;
+  chỉ đánh giá sau khi lật xong, chặn thao tác khi lưu và không cuộn trang khi nhấn Space.
+  Khoá thao tác khi lưu; lỗi giữ thẻ và có tải lại phiên. Không tự phát âm hoặc tự chuyển khi chưa chọn mức.
+- Tổng kết hiện số thẻ đã học/tổng, tỷ lệ nhớ và phân bố bốn mức; ghi rõ tỷ lệ dựa trên tự đánh giá.
+  Biểu đồ vòng tròn nhỏ 112 px hiển thị phân bố theo số thẻ đã đánh giá, giữa vòng là tỷ lệ nhớ;
+  chú giải bên cạnh có nhãn và số lượng: Chưa nhớ `danger`, Mơ hồ `primary`, Nhớ `focus`,
+  Rất nhớ `success`. Màn hẹp cho phép chú giải xuống dưới. Chưa đánh giá hiện vòng `track`
+  và thông báo rỗng, không vẽ tỷ lệ giả. Dùng SVG chung web/native, không thêm thư viện biểu đồ.
+  Có **Học lại bộ này / Chọn bộ khác**. Rời màn có thể tiếp tục phiên dang dở.
+
+### Nút phát âm từ vựng
+
+- Bài học, chi tiết từ điển và hai mặt flashcard có nút loa 48 px. Trên flashcard,
+  loa ở góc trái, ngôi sao ở góc phải; bấm loa không lật thẻ. Không tự phát âm.
+- Đang tải hiện spinner, đang đọc hiện biểu tượng dừng; bấm lại để dừng. Ưu tiên
+  audio có sẵn, chuyển sang giọng máy tiếng Nhật nếu thiếu/lỗi; đọc kana trước.
+- Chỉ một từ phát tại một thời điểm. Dừng khi đổi từ/thẻ, rời màn hoặc xuống nền.
+  Chỉ hiện thông báo khi phát lỗi hoặc thiếu giọng Nhật; không thêm ghi chú thường trực.
+
+### Nhận dạng viết tay trong Tra cứu
+
+- Nút **Viết tay** dưới ô tìm mở hộp thoại trắng bo 32, rộng tối đa 440, padding 20.
+  Khung vẽ vuông tối đa 320 px, nền trắng, nét đen, dùng chuột/bút/cảm ứng; thu theo màn hẹp.
+- **Xóa nét / Nhận dạng** trên cùng hàng, cao tối thiểu 48; chỉ cho nhận dạng khi có nét.
+  Khóa vẽ và thao tác gửi khi đang nhận dạng. Hiện lỗi thật và cho thử lại.
+- Năm gợi ý cùng hàng, chữ lớn kèm xác suất, gợi ý đầu nền kem/viền cam.
+  Chọn chữ Hán mở tìm Hán tự, kana mở tìm từ; đóng hộp thoại sau khi chọn.
+  Không tự chọn kết quả model, không hiển thị đường dẫn checkpoint hoặc chi tiết kỹ thuật.
+
+### Trang Cá nhân trên web
+
+- Dùng sidebar và top bar chung. Tiêu đề **Cá nhân**, avatar lấy chữ cái đầu tên;
+  không tạo ảnh đại diện hoặc thống kê giả. Desktop: thông tin cá nhân và xác thực
+  ở cột trái, thiết lập học tập và phiên đăng nhập ở cột phải. Mobile xếp một cột.
+- Thẻ trắng bo 32, padding 20, gap 16, bóng ấm theo token. Hiện họ tên, email,
+  số điện thoại và trạng thái xác thực thật; giữ luồng gửi/nhập/gửi lại/hủy mã.
+- **Đăng xuất** nằm trong thẻ **Phiên đăng nhập**, nút viền/chữ `danger`, cao tối thiểu
+  48, rộng theo nội dung, có icon. Không kéo thành nút toàn chiều rộng ở footer.
+  Chặn bấm lặp khi xử lý; spinner chỉ hiện khi đăng xuất, lỗi nằm ngay trong thẻ phiên
+  đăng nhập và có thể thử lại. Không đưa lỗi đăng xuất vào thẻ xác thực liên hệ.
+
+### Phòng chơi từ vựng
+
+- Trang tạo phòng dùng khung 1160 px: form chính bên trái, ô vào phòng rộng 300 px bên phải. Mobile đưa ô nhập mã lên trước form, nút vào phòng cùng hàng với input.
+- Hai mode là thẻ radio có icon, tên mode và dấu chọn; không thêm mô tả phụ. Cấu hình chia nhóm nguồn từ/JLPT và số câu/thời gian. Dùng token màu, bo góc, typography hiện có.
+- Mã phòng nổi bật, cho phép chọn để sao chép; trạng thái kết nối có cả chữ và dấu tròn. Phòng chờ hiển thị avatar chữ cái, vai trò, trạng thái sẵn sàng và số người đã sẵn sàng thật. Sidebar hiển thị cấu hình phòng, không thêm khối giải thích luật.
+- Trong trận, từ vựng nằm giữa vùng chơi, bảng điểm ở sidebar desktop và bên dưới trên mobile. Đồng hồ và thanh thời gian theo deadline server; chỉ cảnh báo đỏ trong 5 giây cuối lúc trả lời/đọc. Vào phòng hoặc sang câu mới cuộn về đầu vùng chơi.
+- Bảng điểm phân biệt người đang chơi, người đã gửi và người giữ mic; người cùng điểm cùng hạng. Tổng kết hiển thị điểm, hạng và số câu thực tế, kèm từ vựng trong trận. Không dùng sóng âm hay tiến độ nhận dạng giả.
+
+### Phân định chức năng từ vựng
+
+| Chức năng | Nội dung và thao tác | Kết quả |
+| --- | --- | --- |
+| Bài học từ vựng | Giáo trình → bài học → danh sách từ, nghĩa, cách đọc, âm thanh, lưu yêu thích | Học nội dung theo bài |
+| Flashcard | Bộ có sẵn/tự tạo/yêu thích; lật thẻ, tự đánh giá mức nhớ | Lịch ôn FSRS, thẻ đến hạn và số thẻ đã ôn |
+| Game từ vựng | Phòng nhiều người, mode viết hoặc giành mic; chọn JLPT hoặc bài học | Điểm và thứ hạng trong trận |
+
+- Bài học, Flashcard và Game là ba điểm vào riêng trong nhóm Từ vựng ở Luyện tập. Nhóm Kỹ năng giữ Nghe/Nói/Đọc/Viết.
+- Desktop có lối vào Flashcard và Game riêng trên sidebar, có trạng thái chọn tương ứng. Mobile giữ năm tab chính, truy cập hai chức năng này qua Luyện tập.
+- Trang chủ gọi đúng tên Bài học từ vựng và Game từ vựng. Không dùng nhãn chung khiến người dùng nhầm bài học với bộ thẻ.
+- Có thể dùng chung nguồn từ nhưng không nhập chung kết quả: điểm Game không thay thế mức nhớ hay tự cập nhật lịch FSRS. Lịch ôn thuộc Flashcard; không đưa lịch ôn vào phòng Game.
+- Nút Flashcard từ Bài học là lối tắt sang chức năng riêng; quay lại giữ bài học đang mở. Flashcard từ Luyện tập quay về Luyện tập.
+
+
+## Luyện đọc (UC-R1–UC-R5)
+
+- Mở từ kỹ năng Đọc trên Home/Luyện tập. Web dùng `/practice/reading` và `/practice/reading/:passageId`; bộ lọc level/type/q/page giữ trên URL, Back/Forward và F5 phục hồi đúng màn hình.
+- Danh sách tối đa 1160 px, desktop hai cột, màn hẹp một cột; thẻ trắng bo 32, padding 20, gap 20, bóng ấm. Trang danh sách là **Thư viện bài đọc**. Tìm kiếm tiêu đề/nội dung đặt đầu trang, mặc định tất cả trình độ. Bộ lọc chỉ hiện Tất cả và N5–N1, không gắn nhãn trình độ cá nhân. Trình độ JLPT và dạng bài nằm trong panel **Bộ lọc** có thể thu gọn; bộ lọc đang áp dụng vẫn hiện bên ngoài và có nút xóa. Thẻ ưu tiên tiêu đề, trích đoạn, số ký tự; JLPT là metadata phụ, chỉ hiện với trình độ N5–N1. Pagination theo số trang; đổi bộ lọc trở về trang 1. Chỉ hiển thị nhóm nội dung khi có dữ liệu thật, không thêm tab nguồn/chủ đề giả cho nội dung tương lai.
+- Nội dung đọc tối đa 800 px, chữ Nhật 20/34, xuống dòng theo nguồn. Công tắc Furigana nằm ngoài vùng cuộn, mặc định bật và lưu riêng theo tài khoản trên thiết bị. Khi tắt vẫn tra từ được.
+- Dùng chung bộ phân tích từ, furigana và popup từ điển với Shadowing. Bấm từ hiện nghĩa thật từ từ điển, không rời trang; đóng bằng nút ×, bấm ngoài hoặc Escape trên web. Giữ vị trí đọc. Không thêm mô tả hướng dẫn dưới các nút.
+- Dữ liệu nguồn CSV được nhập thành từng đoạn, nhiều câu hỏi chung một đoạn không tạo thêm bài đọc. Câu hỏi hợp lệ hiển thị trong phần Đọc hiểu; đáp án giữ ở backend đến khi nộp bài. Câu có dữ liệu đáp án không nhất quán không đưa vào bài tập. Chưa triển khai bản dịch, không có công tắc dịch hoặc gọi dịch vụ AI.
+
+
+## Dịch câu trong Tra cứu (bản thử)
+
+- Dịch nằm ngay trong tab Từ vựng, dùng chung ô tìm kiếm và URL `/lookup?q=...`; không có tab Dịch riêng. Chỉ xử lý khi gửi tìm kiếm, không gọi model khi đang gõ. Mục từ khớp chính xác vẫn hiển thị từ điển trước.
+- Thẻ Kết quả tra cứu: tiêu đề và divider nhẹ, câu Nhật phía trên với furigana, Kanji có màu focus/gạch dưới primary và bấm tra nhanh. Nút nghe nằm bên phải câu. Bản dịch tiếng Việt nằm dưới; nhãn Dịch tự động căn phải ở cuối. Giữ màu/chữ/bo góc/bóng chung; không thêm bộ chọn engine hoặc nút báo lỗi khi chưa có chức năng.
+- Từ không giống câu giữ luồng từ điển hiện tại. Truy vấn giống câu, không khớp mục từ sẽ dịch cục bộ; tối đa 500 ký tự. Câu Nhật→Việt; câu Việt→Nhật cũng hiển thị Nhật trên/Việt dưới. Lỗi có thử lại; câu có URL riêng qua query nên Back/F5 phục hồi kết quả theo API/cache.
+- URL `/lookup/translate` cũ chuyển về ô tra cứu chung. Không hiển thị tên model/chi tiết inference trong sản phẩm. Chức năng này không bật dịch trong bài đọc.
+
+## Đọc hiểu và chấm điểm (UC-R8–UC-R9)
+
+- Web desktop chia khung tối đa 1160 px thành hai cột cách 20 px: bài đọc bên trái, **Đọc hiểu** bên phải. Hai cột cuộn độc lập trong chiều cao còn lại, Furigana giữ ở thanh trên; nộp bài chỉ cuộn cột câu hỏi đến tổng điểm. Màn hẹp/native giữ bài đọc rồi câu hỏi trong cùng luồng cuộn, tối đa 800 px. Bài không có câu hỏi giữ khung đọc một cột. Dùng thẻ trắng bo 32, padding 20, khoảng cách 20; không thêm mô tả hướng dẫn dưới nút. Bài chưa có câu hỏi hợp lệ không hiển thị phần này.
+- Hiện số câu đã trả lời; mỗi câu có lựa chọn A–D (hoặc theo số lựa chọn nguồn), vùng nhấn tối thiểu 52 px, radio có checked/disabled state và focus bàn phím. Người học có thể đổi lựa chọn trước khi nộp, phải trả lời đủ mới bật **Nộp bài**. Trong lúc gửi khóa lựa chọn và nộp.
+- Chấm bằng backend từ đáp án nguồn. Sau khi lưu mới hiện **Điểm: …/100**, số câu đúng/tổng câu, trạng thái Đúng/Sai từng câu và đáp án đúng. Dùng cả chữ lẫn màu success/danger, phân biệt rõ lựa chọn của người học. Không tự tạo giải thích khi nguồn không có.
+- **Làm lại** bắt đầu lượt mới với lựa chọn trống. F5/mở lại phục hồi kết quả gần nhất của chính tài khoản nếu bài chưa đổi nội dung. Lỗi nộp giữ lựa chọn và có **Nộp lại bài**, không tạo bản ghi trùng khi thử lại cùng lượt. Furigana, tra nhanh và bản dịch chưa triển khai giữ phạm vi hiện có.
+
+## Tips và phân tích bài đọc (UC-R7, UC-R10–UC-R12)
+
+- Desktop giữ hai cột: bài bên trái; bên phải có **Tips đọc hiểu** thu gọn và tab **Câu hỏi / Phân tích**. Mobile xếp dọc. Bài chưa có câu hỏi vẫn có tips và phân tích. Tips tối đa 3 điểm cố định theo bộ skill đã cung cấp, không gọi AI.
+- Trong bài có nút **Nguyên bản / Phân tích**. Nguyên bản giữ văn bản, furigana và tra nhanh; Phân tích đánh số câu để tương tác. Bấm số hoặc câu mở phần lõi câu, chi tiết có thể thu gọn. Highlight dùng `badgeBg` và nền câu `surfaceTint`, không thêm màu riêng cho từng loại ngữ pháp.
+- **Phân tích bài đọc** gộp ý chính tiếng Việt, mạch bài, từ vựng quan trọng, ngữ pháp quan trọng và cấu trúc câu. Ý chính mở trước; từ vựng/ngữ pháp/các lớp rút gọn mở theo nhu cầu. Bấm mục từ, mẫu ngữ pháp hay trích dẫn sẽ đánh dấu và cuộn tới đúng vị trí ở bài đọc. Không thêm mô tả dưới nút.
+- Sau khi nộp bài, từng câu có **Giải thích đáp án**. Hiện vì sao đúng, bằng chứng nguyên văn có thể bấm; cảnh báo nếu đáp án nguồn có nghi vấn. Không đổi điểm bằng kết quả AI. Giải thích phải thuộc bài làm của chính người học và đúng phiên bản hiện tại.
+- Gemini chỉ gọi khi người học yêu cầu và chưa có kết quả hợp lệ đã lưu trong DB. Đổi tab, mở tips hoặc bật highlight không tự tạo phân tích. Trạng thái tải/lỗi có thể thử lại, giữ lựa chọn và điểm đã chấm. Không hiển thị tên model, JSON hoặc chi tiết suy luận nội bộ trong giao diện.
+
+## Cấu trúc câu: lõi trước, chi tiết sau
+
+- Trong panel câu đang chọn, không đặt toàn bộ câu dài lên trước lõi đã tải. Bỏ bộ ba tab; mặc định thu gọn, chỉ có nút **Đầy đủ câu / Thu gọn câu**. Giữ chủ thể và vị ngữ chính, bổ ngữ/tần suất cần thiết; các mệnh đề bổ nghĩa/phần phụ hiện chip thu gọn có thể bấm mở.
+- Bấm phần thu gọn mở nguyên văn Nhật và giải thích vai trò, đồng thời highlight đúng vị trí ở bài đọc. Bấm chủ thể/vị ngữ cũng xem được giải thích. Thu gọn lại đóng chi tiết của phần đó. Nguyên bản dùng đúng chuỗi nguồn và có thể chọn/copy, không ghép lại bằng nội dung AI.
+- Vai trò có nhãn chữ và màu semantic trong `sentenceRoles`: chủ thể xanh lam, vị ngữ xanh lá, bổ ngữ cam, bổ nghĩa tím, thành phần phụ vàng nhạt, phần khác muted. Có chú giải chữ; không chỉ dựa vào màu. Màu này chỉ dùng cho cấu trúc câu; vùng tra từ/bằng chứng dùng highlight chung.
+- Bản dịch mặc định là **Nghĩa lõi câu**. Bấm **Đầy đủ câu** hoặc mở hết các phần thu gọn tự chuyển sang **Nghĩa đầy đủ**; thu gọn lại thì trở về nghĩa lõi. Giữ ý phủ định, mức độ và tần suất quan trọng khi rút gọn. Mở/đóng chip hay đổi chế độ không gọi AI.

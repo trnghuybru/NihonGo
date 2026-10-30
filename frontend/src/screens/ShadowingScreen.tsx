@@ -1,3 +1,6 @@
+import { decodeRouteParam } from '../navigation/webNavigation';
+import { useWebNavigation } from '../navigation/webNavigation';
+import { ScreenBackHeader } from '../components/ScreenBackHeader';
 import { memo, useCallback, useMemo, useEffect, useRef, useState } from 'react';
 import {
   AppState,
@@ -215,6 +218,10 @@ export function ShadowingScreen({
   onExit?: () => void;
   bottomOverlayHeight?: number;
 }) {
+  const web = useWebNavigation();
+  const webPath = web?.pathname;
+  const webRef = useRef(web);
+  webRef.current = web;
   const { desktop, contentWidth } = useWebLayout();
   const [importOpen, setImportOpen] = useState(false);
   const insets = useSafeAreaInsets();
@@ -244,8 +251,8 @@ export function ShadowingScreen({
   const paginated = useRef(false);
   const catalogGeneration = useRef(0);
   const [jobs, setJobs] = useState<ShadowingJob[]>([]);
-  const [selectedWordKey, setSelectedWordKey] = useState<string | null>(null);
   const [lookupAnchor, setLookupAnchor] = useState(0);
+  const [selectedWordKey, setSelectedWordKey] = useState<string | null>(null);
   const [lesson, setLesson] = useState<ShadowingLesson | null>(null);
   const quiz = useShadowingQuiz(lesson?.job.id);
   const [showTranslation, setShowTranslation] = useState(false);
@@ -280,6 +287,7 @@ export function ShadowingScreen({
     setSettingsOpen(false);
     setSelectedWordKey(null);
     setLesson(null);
+    webRef.current?.navigate('/practice/listening');
     setShowTranslation(false);
     setBusy(false);
     setError('');
@@ -412,6 +420,9 @@ export function ShadowingScreen({
       if (mounted.current && current === generation.current) {
         setSelectedWordKey(null);
         setLesson(result);
+        const nav = webRef.current,
+          target = '/practice/listening/' + encodeURIComponent(id);
+        if (nav && nav.pathname !== target) nav.navigate(target);
         setShowTranslation(false);
         setIndex(0);
         setPanelOpen(true);
@@ -436,6 +447,15 @@ export function ShadowingScreen({
       if (mounted.current && current === generation.current) setBusy(false);
     }
   }, []);
+  useEffect(() => {
+    if (!webPath) return;
+    const id = /^\/practice\/listening\/([^/]+)$/.exec(webPath)?.[1];
+    if (id) open(decodeRouteParam(id));
+    else {
+      generation.current += 1;
+      setLesson(null);
+    }
+  }, [webPath, open]);
   const submit = useCallback(
     async (job?: ShadowingJob) => {
       if (busy) return;
@@ -632,18 +652,11 @@ export function ShadowingScreen({
         ]}
       >
         <View style={[styles.fixedHeader, desktop && styles.desktopVideoPanel]}>
-          <View style={styles.backRow}>
-            <Pressable
-              accessibilityRole="button"
-              accessibilityLabel="Danh sách video"
-              onPress={leaveLesson}
-              hitSlop={6}
-              style={styles.backButton}
-            >
-              <ChevronLeftIcon size={18} color={colors.dark} />
-            </Pressable>
-            <Text style={styles.heading}>Shadowing</Text>
-          </View>
+          <ScreenBackHeader
+            title="Shadowing"
+            backLabel="Danh sách video"
+            onBack={leaveLesson}
+          />
           <View style={styles.videoStage}>
             {lesson.segments[index] ? (
               <VideoExamplePlayer
@@ -651,6 +664,7 @@ export function ShadowingScreen({
                 pausedForQuiz={quiz.paused}
                 quizCheckpoints={quiz.checkpoints}
                 onQuizQuestion={quiz.showQuestion}
+                onPlaybackTime={quiz.onPlaybackTime}
                 resumeRequest={quiz.resumeRequest}
                 quizJumpRequest={quiz.jumpRequest}
                 videoOnly
@@ -944,7 +958,7 @@ export function ShadowingScreen({
               }}
               ListHeaderComponent={
                 lesson.caption_kind === 'asr' ? (
-                  <Text style={styles.caption}>
+                  <Text style={styles.captionNotice}>
                     Phụ đề tự động có thể có lỗi. Hãy đối chiếu với lời nói
                     trong video.
                   </Text>
@@ -1255,7 +1269,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: spacing.sm,
   },
-  screen: { flex: 1, backgroundColor: colors.background },
+  screen: { flex: 1 },
   catalogContent: {
     width: '100%',
     maxWidth: layout.maxContentWidth,
@@ -1377,15 +1391,6 @@ const styles = StyleSheet.create({
     gap: spacing.sm,
   },
   videoStage: { position: 'relative' },
-  backRow: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm },
-  backButton: {
-    width: 36,
-    height: 36,
-    borderRadius: radius.pill,
-    backgroundColor: colors.surface,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
   currentCaptionArea: {
     alignItems: 'center',
     justifyContent: 'center',
@@ -1525,6 +1530,16 @@ const styles = StyleSheet.create({
   heading: { ...typography.heading, color: colors.dark },
   body: { ...typography.body, color: colors.body },
   caption: { ...typography.caption, color: colors.muted },
+  captionNotice: {
+    ...typography.body,
+    fontSize: 11,
+    lineHeight: 16,
+    color: colors.muted,
+    opacity: 0.72,
+    marginHorizontal: spacing.md,
+    marginTop: spacing.sm,
+    marginBottom: spacing.md,
+  },
   label: { ...typography.caption, color: colors.primaryText },
   input: {
     ...typography.input,

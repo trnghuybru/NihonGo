@@ -5,12 +5,15 @@ import {
   FlatList,
   Keyboard,
   Modal,
+  Platform,
   Text,
   TextInput,
 } from 'react-native';
+import { WebLayoutContext } from '../src/hooks/useWebLayout';
 import { AuthButton } from '../src/components/AuthForm';
 import { VocabularyScreen } from '../src/screens/VocabularyScreen';
 import { vocabularyService } from '../src/services/vocabularyService';
+import { dictionaryService } from '../src/services/dictionaryService';
 import { videoExamplesService } from '../src/services/videoExamplesService';
 import { AudioReplay } from '../src/services/audioReplay';
 import {
@@ -20,6 +23,16 @@ import {
 
 jest.mock('react-native-webview', () => ({ WebView: 'WebView' }));
 jest.mock('../src/services/audioReplay');
+jest.mock('../src/services/dictionaryService', () => ({
+  dictionaryService: {
+    history: jest.fn().mockResolvedValue({ items: [] }),
+    recordHistory: jest.fn().mockResolvedValue({ items: [] }),
+    clearHistory: jest.fn().mockResolvedValue({ items: [] }),
+    subscribeHistory: jest.fn(() => () => {}),
+    words: jest.fn(),
+    word: jest.fn(),
+  },
+}));
 jest.mock('../src/services/videoExamplesService', () => ({
   videoExamplesService: { search: jest.fn() },
 }));
@@ -81,6 +94,41 @@ const videoExample = {
 };
 beforeEach(() => {
   jest.clearAllMocks();
+  jest.mocked(dictionaryService.word).mockResolvedValue({
+    id: 'local:test',
+    word: '人生',
+    reading: 'じんせい',
+    common: false,
+    source_id: 'local',
+    glosses: [{ language: 'vi', text: 'cuộc đời' }],
+    forms: [{ text: '人生', info: [] }],
+    readings: [{ text: 'じんせい', applies_to: [], no_kanji: false, info: [] }],
+    senses: [
+      {
+        parts_of_speech: [],
+        glosses: [{ language: 'vi', text: 'cuộc đời' }],
+        tags: [],
+        notes: [],
+      },
+    ],
+    examples: [],
+    kanji: [],
+    other_entries: [],
+    source: { id: 'local', name: 'NihonGO' },
+  });
+  jest.mocked(dictionaryService.words).mockResolvedValue({
+    items: [
+      {
+        id: 'local:test',
+        word: '人生',
+        reading: 'じんせい',
+        common: false,
+        glosses: [{ language: 'vi', text: 'cuộc đời' }],
+        source_id: 'local',
+      },
+    ],
+    pagination: { page: 1, page_size: 20, total: 1, total_pages: 1 },
+  });
   jest.mocked(AudioReplay.prototype.play).mockResolvedValue(true);
   jest.mocked(AudioReplay.prototype.close).mockResolvedValue(undefined);
   jest.mocked(vocabularyService.audioPlayback).mockResolvedValue({
@@ -159,13 +207,11 @@ test('quick lookup keeps the lesson mounted and preserves recall state when clos
   await press('Tra cứu nhanh');
   expect(tree.root.findAllByType(VocabularyScreen)).toHaveLength(2);
   expect(tree.root.findAllByType(FlatList)).toContain(lessonList);
-  expect(button('Tra cứu thông thường').props.accessibilityState.checked).toBe(
-    true,
-  );
+  expect(button('Từ vựng').props.accessibilityState.selected).toBe(true);
   const input = tree.root.findByType(TextInput);
   await act(async () => input.props.onChangeText('人生'));
-  await press('Tìm kiếm');
-  expect(vocabularyService.search).toHaveBeenCalledWith('N2', '人生', 1);
+  await press('Tìm kiếm từ điển');
+  expect(dictionaryService.words).toHaveBeenCalledWith('人生', 1);
   expect(contents()).toContain('cuộc đời');
   await press('Trở lại bài học');
   expect(tree.root.findAllByType(VocabularyScreen)).toHaveLength(1);
@@ -200,10 +246,14 @@ test('audio icon only appears for ready audio and stops on returning to lessons'
   ).toBeGreaterThan(closeCalls);
 });
 
-test('words without audio show no speaker and playback errors allow retry', async () => {
+test('words without audio use machine speech and recording errors fall back to it', async () => {
   await render();
   await openLesson();
-  expect(button('Nghe phát âm 人生')).toBeUndefined();
+  expect(button('Nghe phát âm 人生')).toBeDefined();
+  await press('Nghe phát âm 人生');
+  expect(require('react-native-tts').default.speak).toHaveBeenCalledWith(
+    'じんせい',
+  );
   await press('Quay lại');
   const detail = await vocabularyService.lesson('lesson-1');
   jest.mocked(vocabularyService.lesson).mockResolvedValue({
@@ -215,8 +265,7 @@ test('words without audio show no speaker and playback errors allow retry', asyn
     .mocked(vocabularyService.audioPlayback)
     .mockRejectedValueOnce(new Error('offline'));
   await press('Nghe phát âm 人生');
-  expect(contents()).toContain('Không phát được âm thanh');
-  await press('Nghe phát âm 人生');
+  expect(contents()).not.toContain('Không phát được âm thanh');
   expect(button('Dừng phát âm 人生')).toBeDefined();
 });
 
@@ -580,4 +629,38 @@ test('ignores a late N2 response after the learner switches level', async () => 
   await act(async () => resolve({ level: 'N2', items: [book] }));
   expect(contents()).toContain('N1 chưa có dữ liệu');
   expect(contents()).not.toContain('Mimi kara oboeru N2 Goi');
+});
+
+test('desktop video lookup separates player and results, and stacks again on narrow screens', async () => {
+  const platform = jest.replaceProperty(Platform, 'OS', 'web');
+  const screen = (contentWidth: number) => (
+    <WebLayoutContext.Provider
+      value={{ desktop: contentWidth >= 900, contentWidth }}
+    >
+      <VocabularyScreen query="人生" />
+    </WebLayoutContext.Provider>
+  );
+  try {
+    await act(async () => {
+      tree = Renderer.create(screen(1100));
+    });
+    const workspace = tree.root.findByProps({ testID: 'video-lookup-split' });
+    expect(workspace.findAllByType(VideoExamplePlayer)).toHaveLength(1);
+    const results = workspace.findByType(FlatList);
+    expect(results.props.data).toHaveLength(1);
+    // The player is outside the scrolling list, so browsing results cannot scroll it away.
+    expect(results.findAllByType(VideoExamplePlayer)).toHaveLength(0);
+    expect(button('Xem ví dụ tại 12:07')).toBeDefined();
+    await act(async () => {
+      tree.update(screen(600));
+    });
+    expect(
+      tree.root.findAllByProps({ testID: 'video-lookup-split' }),
+    ).toHaveLength(0);
+    expect(tree.root.findAllByType(VideoExamplePlayer)).toHaveLength(1);
+    expect(button('Xem ví dụ tại 12:07')).toBeDefined();
+  } finally {
+    await act(async () => tree.unmount());
+    platform.restore();
+  }
 });

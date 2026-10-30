@@ -9,7 +9,7 @@ from sqlalchemy.exc import SQLAlchemyError
 from .models import AuthSession, Challenge, OAuthFlow, RateLimit, db, now
 from .security import AuthError, limit
 
-ACCOUNT_API_PREFIXES = ("/api/auth/", "/api/learning/", "/api/speaking/", "/api/vocabulary/", "/api/writing/")
+ACCOUNT_API_PREFIXES = ("/api/auth/", "/api/learning/", "/api/speaking/", "/api/vocabulary/", "/api/writing/", "/api/dictionary/", "/api/flashcards/", "/api/kanji/", "/api/games/", "/api/reading/")
 
 
 def init_auth(app):
@@ -49,9 +49,24 @@ def init_auth(app):
     def auth_guard():
         if not request.path.startswith(ACCOUNT_API_PREFIXES):
             return
-        request.max_content_length = 16 * 1024
+        request.max_content_length = (1024 * 1024 if request.path == "/api/kanji/recognize" else
+                                      256 * 1024 if request.path.startswith("/api/flashcards/") else 16 * 1024)
         if not app.config["AUTH_CONFIGURED"]:
             raise AuthError("Dịch vụ tài khoản chưa được cấu hình.", 503, "auth_unavailable")
+        if request.path.startswith('/api/games/'):
+            limit('games-ip', request.remote_addr or 'unknown', 1200, 60)
+            return
+        if request.path == '/api/learning/progress':
+            # Periodic study heartbeats must not exhaust the login/write IP buckets.
+            limit('study-ip', request.remote_addr or 'unknown', 600, 60)
+            return
+        if request.path.startswith('/api/flashcards/'):
+            limit('flashcards-ip', request.remote_addr or 'unknown', 600, 60)
+            return
+        if request.path == '/api/dictionary/history':
+            # Recording viewed entries must not consume the login/write quota.
+            limit('dictionary-history-ip', request.remote_addr or 'unknown', 300, 60)
+            return
         # Never trust arbitrary X-Forwarded-For. Configure trusted proxy hops at deployment.
         limit("auth-ip", request.remote_addr or "unknown", 120, 60)
         if request.method in {"POST", "PUT"} and request.path not in {"/api/auth/refresh", "/api/auth/logout"}:
@@ -80,6 +95,9 @@ def init_auth(app):
         if not request.path.startswith(ACCOUNT_API_PREFIXES):
             raise error
         app.logger.error("Account database request failed (%s)", type(error).__name__)
+        if request.path.startswith("/api/dictionary/"):
+            return jsonify({"error": "Không tải được từ điển. Vui lòng thử lại sau.",
+                            "code": "dictionary_unavailable"}), 503
         if request.path.startswith("/api/vocabulary/"):
             return jsonify({"error": "Không tải được từ vựng. Vui lòng thử lại sau.",
                             "code": "vocabulary_unavailable"}), 503

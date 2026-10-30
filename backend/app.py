@@ -9,6 +9,12 @@ from speaking import init_speaking
 from vocabulary import init_vocabulary
 from shadowing import init_shadowing
 from writing import init_writing
+from dictionary import init_dictionary
+from flashcards import init_flashcards
+from handwriting import init_handwriting
+from reading import init_reading
+from translation import init_translation
+from games import init_games
 
 load_dotenv()
 
@@ -21,6 +27,12 @@ init_speaking(app)
 init_vocabulary(app)
 init_shadowing(app)
 init_writing(app)
+init_dictionary(app)
+init_flashcards(app)
+init_handwriting(app)
+init_reading(app)
+init_translation(app)
+socketio = init_games(app)
 
 
 @app.get("/")
@@ -525,4 +537,4 @@ def api_character_view_embedded():
 
 if __name__ == "__main__":
     port = int(os.getenv("PORT", 5001))
-    app.run(debug=os.getenv("FLASK_DEBUG") == "1", host="0.0.0.0", port=port)
+    socketio.run(app, debug=os.getenv("FLASK_DEBUG") == "1", host="0.0.0.0", port=port, allow_unsafe_werkzeug=True)

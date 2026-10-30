@@ -16,7 +16,43 @@ import { VocabularyScreen } from '../src/screens/VocabularyScreen';
 import { SpeakingScenariosScreen } from '../src/screens/SpeakingScenariosScreen';
 import { speakingService } from '../src/services/speakingService';
 import { videoExamplesService } from '../src/services/videoExamplesService';
+import { dictionaryService } from '../src/services/dictionaryService';
 import { ShadowingScreen } from '../src/screens/ShadowingScreen';
+import { FlashcardScreen } from '../src/screens/FlashcardScreen';
+import { DailyFlashcardQuizScreen } from '../src/screens/DailyFlashcardQuizScreen';
+jest.mock('../src/services/flashcardService', () => ({
+  flashcardService: {
+    decks: jest.fn().mockResolvedValue({
+      items: [],
+      active_session: null,
+      pagination: { page: 1, total_pages: 0 },
+    }),
+  },
+}));
+jest.mock('../src/services/dailyFlashcardService', () => ({
+  dailyFlashcardService: {
+    home: jest.fn().mockResolvedValue({
+      active_session: null,
+      weak_count: 0,
+      learned_count: 0,
+      quiz: null,
+      quiz_available: 0,
+    }),
+    quiz: jest.fn().mockRejectedValue(new Error('Thử lại')),
+  },
+}));
+jest.mock('../src/services/dictionaryService', () => ({
+  dictionaryService: {
+    history: jest.fn().mockResolvedValue({ items: [] }),
+    recordHistory: jest.fn().mockResolvedValue({ items: [] }),
+    clearHistory: jest.fn().mockResolvedValue({ items: [] }),
+    subscribeHistory: jest.fn(() => () => {}),
+    words: jest.fn().mockResolvedValue({
+      items: [],
+      pagination: { page: 1, page_size: 20, total: 0, total_pages: 0 },
+    }),
+  },
+}));
 jest.mock('../src/services/shadowingService', () => ({
   shadowingService: {
     list: jest.fn().mockResolvedValue({ items: [] }),
@@ -53,8 +89,36 @@ jest.mock('../src/services/speakingService', () => ({
   },
 }));
 
+jest.mock('../src/services/studyTimeService', () => ({
+  studyTimeService: {
+    load: jest.fn().mockImplementation(async () => ({
+      date: new Date(Date.now() + 7 * 3600000).toISOString().slice(0, 10),
+      timezone: 'Asia/Ho_Chi_Minh',
+      seconds: 0,
+      goal_seconds: 900,
+      completed: false,
+      server_time_ms: Date.now(),
+      intervals: [],
+    })),
+    record: jest.fn(),
+  },
+}));
 jest.mock('../src/services/learningService', () => ({
   learningService: { load: jest.fn(), save: jest.fn() },
+}));
+jest.mock('../src/services/gameService', () => ({
+  gameService: {
+    savedRoom: jest.fn().mockResolvedValue(null),
+    saveRoom: jest.fn().mockResolvedValue(undefined),
+    catalog: jest.fn().mockResolvedValue({
+      level: 'N5',
+      available_count: 10,
+      lessons: [],
+      page: 1,
+      total_pages: 1,
+      read_available: false,
+    }),
+  },
 }));
 jest.mock('../src/services/authService', () => ({
   authService: { logout: jest.fn() },
@@ -142,6 +206,23 @@ test('navigates between the four real destinations', async () => {
   expect(tree.root.findAllByType(HomeScreen)).toHaveLength(1);
 });
 
+test('home opens flashcards and daily quiz, with Back returning to refreshed Home', async () => {
+  jest.mocked(learningService.load).mockResolvedValue({ options, profile });
+  await render();
+  await act(async () =>
+    tree.root.findByType(HomeScreen).props.onOpenFlashcards(),
+  );
+  expect(tree.root.findAllByType(FlashcardScreen)).toHaveLength(1);
+  await act(async () => tree.root.findByType(FlashcardScreen).props.onExit());
+  expect(tree.root.findAllByType(HomeScreen)).toHaveLength(1);
+  await act(async () => tree.root.findByType(HomeScreen).props.onOpenQuiz());
+  expect(tree.root.findAllByType(DailyFlashcardQuizScreen)).toHaveLength(1);
+  await act(async () =>
+    tree.root.findByType(DailyFlashcardQuizScreen).props.onExit(),
+  );
+  expect(tree.root.findAllByType(HomeScreen)).toHaveLength(1);
+});
+
 test('opens the API-connected speaking screen from the home skill card', async () => {
   jest.mocked(learningService.load).mockResolvedValue({ options, profile });
   await render();
@@ -162,14 +243,15 @@ test('opens shadowing from the listening skill', async () => {
   expect(tree.root.findAllByType(ShadowingScreen)).toHaveLength(1);
 });
 
-test('home lookup passes the query to the video examples API', async () => {
+test('home lookup opens the dictionary first and keeps video search available', async () => {
   jest.mocked(learningService.load).mockResolvedValue({ options, profile });
   await render();
   await act(async () =>
     tree.root.findByType(HomeScreen).props.onSearchVocabulary('社会'),
   );
   expect(tree.root.findByType(VocabularyScreen).props.query).toBe('社会');
-  expect(videoExamplesService.search).toHaveBeenCalledWith('社会', undefined);
+  expect(dictionaryService.words).toHaveBeenCalledWith('社会', 1);
+  expect(videoExamplesService.search).not.toHaveBeenCalled();
   const section = (label: string) =>
     tree.root.findAll(
       node =>
@@ -178,6 +260,8 @@ test('home lookup passes the query to the video examples API', async () => {
         typeof node.props.onPress === 'function',
     )[0];
   expect(section('Tra cứu').props.accessibilityState.selected).toBe(true);
+  await act(async () => section('Video').props.onPress());
+  expect(videoExamplesService.search).toHaveBeenCalledWith('社会', undefined);
   await act(async () => tab('Trang chủ').props.onPress());
   await act(async () => tab('Bài học').props.onPress());
   expect(
@@ -210,4 +294,102 @@ test('network errors do not masquerade as missing settings; retries load the sav
       .props.onPress(),
   );
   expect(tree.root.findByType(HomeScreen).props.profile).toEqual(profile);
+});
+
+test('opens and exits the game from desktop without looping the app header', async () => {
+  const native = require('react-native');
+  const GameScreen =
+    require('../src/screens/VocabularyGameScreen').VocabularyGameScreen;
+  const previousOS = native.Platform.OS;
+  const previousWindow = Object.getOwnPropertyDescriptor(globalThis, 'window');
+  const previousDocument = Object.getOwnPropertyDescriptor(
+    globalThis,
+    'document',
+  );
+  Object.defineProperty(globalThis, 'window', {
+    configurable: true,
+    value: {
+      addEventListener: jest.fn(),
+      removeEventListener: jest.fn(),
+    },
+  });
+  Object.defineProperty(globalThis, 'document', {
+    configurable: true,
+    value: {
+      visibilityState: 'visible',
+      hasFocus: () => true,
+      addEventListener: jest.fn(),
+      removeEventListener: jest.fn(),
+    },
+  });
+  const dimensions = jest.spyOn(native, 'useWindowDimensions').mockReturnValue({
+    width: 1440,
+    height: 1000,
+    scale: 1,
+    fontScale: 1,
+  });
+  native.Platform.OS = 'web';
+  jest.mocked(learningService.load).mockResolvedValue({ options, profile });
+  try {
+    await render();
+    await act(async () => {
+      tree.root.findByType(HomeScreen).props.onOpenGames();
+    });
+    const exit = tree.root.findByType(GameScreen).props.onExit;
+    await act(async () => {
+      tree.update(<AuthenticatedScreen user={{ ...user }} />);
+    });
+    expect(tree.root.findByType(GameScreen).props.onExit).toBe(exit);
+    const header = tree.root.findAll(
+      node =>
+        node.props.accessibilityLabel === 'Quay lại luyện tập' &&
+        typeof node.props.onPress === 'function',
+    )[0];
+    expect(header).toBeDefined();
+    await act(async () => {
+      await header.props.onPress();
+    });
+    expect(tree.root.findAllByType(GameScreen)).toHaveLength(0);
+    expect(tree.root.findByType(PracticeScreen)).toBeDefined();
+  } finally {
+    await act(async () => tree?.unmount());
+    dimensions.mockRestore();
+    native.Platform.OS = previousOS;
+    if (previousWindow)
+      Object.defineProperty(globalThis, 'window', previousWindow);
+    else Reflect.deleteProperty(globalThis, 'window');
+    if (previousDocument)
+      Object.defineProperty(globalThis, 'document', previousDocument);
+    else Reflect.deleteProperty(globalThis, 'document');
+  }
+});
+
+test('keeps lesson, flashcard and game destinations separate in Practice', async () => {
+  const GameScreen =
+    require('../src/screens/VocabularyGameScreen').VocabularyGameScreen;
+  jest.mocked(learningService.load).mockResolvedValue({ options, profile });
+  await render();
+  await act(async () => tab('Luyện tập').props.onPress());
+  await act(async () =>
+    tree.root.findByType(PracticeScreen).props.onOpenFlashcards(),
+  );
+  expect(tree.root.findByType(FlashcardScreen).props.catalogBackLabel).toBe(
+    'Quay lại luyện tập',
+  );
+  expect(tree.root.findAllByType(GameScreen)).toHaveLength(0);
+  expect(tab('Luyện tập').props.accessibilityState.selected).toBe(true);
+  await act(async () => tree.root.findByType(FlashcardScreen).props.onExit());
+  await act(async () =>
+    tree.root.findByType(PracticeScreen).props.onOpenGames(),
+  );
+  expect(tree.root.findByType(GameScreen)).toBeDefined();
+  expect(tree.root.findAllByType(FlashcardScreen)).toHaveLength(0);
+  await act(async () => tree.root.findByType(GameScreen).props.onExit());
+  await act(async () =>
+    tree.root.findByType(PracticeScreen).props.onOpenLessons(),
+  );
+  expect(tab('Bài học').props.accessibilityState.selected).toBe(true);
+  expect(tree.root.findByType(VocabularyScreen).props.area).toBe('lessons');
+  expect(tree.root.findAllByType(GameScreen)).toHaveLength(0);
+  expect(tree.root.findAllByType(FlashcardScreen)).toHaveLength(0);
 });

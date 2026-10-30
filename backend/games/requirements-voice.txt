@@ -1,0 +1,4 @@
+# Install alongside backend requirements or reuse the Shadowing worker image.
+livekit>=1,<2
+faster-whisper>=1.2,<2
+av>=11,<17

@@ -30,6 +30,12 @@ export const colors = {
   disabledText: '#7C7065',
 } as const;
 
+export const backgroundGradient = {
+  rose: '#F9CCD6',
+  peach: '#FFDDB7',
+  opacity: 0.5,
+} as const;
+
 export const spacing = {
   xs: 4,
   sm: 8,
@@ -102,3 +108,21 @@ export const serifFont = Platform.select({
   android: 'serif',
   default: 'serif',
 });
+
+// Semantic colours for sentence structure, paired with visible role labels.
+export const sentenceRoles = {
+  subject: { label: 'Chủ thể', background: '#EDF4FF', text: '#315B91' },
+  predicate: {
+    label: 'Vị ngữ',
+    background: colors.successBg,
+    text: colors.success,
+  },
+  object: { label: 'Bổ ngữ', background: colors.badgeBg, text: colors.focus },
+  modifier: { label: 'Bổ nghĩa', background: '#F3EEFA', text: '#75518F' },
+  adjunct: { label: 'Thành phần phụ', background: '#FFF5DC', text: '#87631C' },
+  other: {
+    label: 'Thành phần khác',
+    background: colors.track,
+    text: colors.muted,
+  },
+} as const;

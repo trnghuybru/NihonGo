@@ -1,3 +1,8 @@
+import { decodeRouteParam } from '../navigation/webNavigation';
+import { useWebNavigation } from '../navigation/webNavigation';
+import { FlashcardScreen } from './FlashcardScreen';
+import { FavoriteWordButton } from '../components/FavoriteWordButton';
+import type { DictionaryHistoryItem } from '../services/dictionaryService';
 import { useWebLayout } from '../hooks/useWebLayout';
 import { useBottomNavigationInset } from '../hooks/useBottomNavigationInset';
 // @refresh reset
@@ -12,6 +17,7 @@ import {
   Modal,
   Platform,
   Pressable,
+  ScrollView,
   StyleSheet,
   Text,
   TextInput,
@@ -19,10 +25,9 @@ import {
   View,
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import Svg, { Defs, Ellipse, RadialGradient, Stop } from 'react-native-svg';
+import { AppBackground } from '../components/AppBackground';
 import { AuthButton, AuthNotice } from '../components/AuthForm';
 import { AuthIcon } from '../components/AuthIcon';
-import { BrandLogo } from '../components/BrandLogo';
 import { HomeFeatureIcon } from '../components/HomeFeatureIcon';
 import {
   ChevronLeftIcon,
@@ -34,6 +39,7 @@ import {
 } from '../components/icons';
 import { VideoExampleCard } from '../components/VideoExampleCard';
 import { VideoExamplePlayer } from '../components/VideoExamplePlayer';
+import { DictionaryScreen } from './DictionaryScreen';
 import { useRemoteResource } from '../hooks/useSpeakingScenarios';
 import { useVocabularyAudio } from '../hooks/useVocabularyAudio';
 import {
@@ -124,7 +130,12 @@ const WordCard = memo(function WordCardView({
   playing: boolean;
   audioLoading: boolean;
   audioError: string;
-  onAudio: (id: string) => Promise<void>;
+  onAudio: (
+    id: string,
+    word: string,
+    reading: string,
+    hasAudio: boolean,
+  ) => Promise<void>;
 }) {
   const [expanded, setExpanded] = useState(false);
   const [revealed, setRevealed] = useState(false);
@@ -142,15 +153,28 @@ const WordCard = memo(function WordCardView({
           </Text>
         </View>
         <View style={styles.wordActions}>
+          <FavoriteWordButton
+            key={word.id}
+            source="lesson"
+            id={word.id}
+            word={word.word}
+          />
           <Text style={styles.caption}>#{word.number}</Text>
-          {word.has_audio ? (
+          {
             <Pressable
               accessibilityRole="button"
               accessibilityLabel={`${playing ? 'Dừng' : 'Nghe'} phát âm ${
                 word.word
               }`}
               accessibilityState={{ busy: audioLoading, selected: playing }}
-              onPress={() => onAudio(word.id)}
+              onPress={() =>
+                onAudio(
+                  word.id,
+                  word.word,
+                  word.reading,
+                  Boolean(word.has_audio),
+                )
+              }
               hitSlop={6}
               style={({ pressed }) => [
                 styles.audioButton,
@@ -165,7 +189,7 @@ const WordCard = memo(function WordCardView({
                 <VolumeIcon size={18} color={colors.primaryText} />
               )}
             </Pressable>
-          ) : null}
+          }
         </View>
       </View>
       {audioError ? (
@@ -179,7 +203,9 @@ const WordCard = memo(function WordCardView({
             {word.meaning_vi}
           </Text>
           {word.han_viet ? (
-            <Text style={styles.caption}>Hán Việt: {word.han_viet}</Text>
+            <Text style={styles.caption}>
+              Hán Việt: {word.han_viet.toUpperCase()}
+            </Text>
           ) : null}
         </View>
       ) : (
@@ -292,19 +318,76 @@ const BrowseCard = memo(function BrowseCardView({
   );
 });
 
-export function VocabularyScreen({
-  query = '',
-  onExit,
-  area,
-  active = true,
-  compact = false,
-}: {
+type VocabularyScreenProps = {
+  onOpenFlashcards?: () => void;
+  initialEntry?: DictionaryHistoryItem;
   query?: string;
   onExit?: () => void;
   area?: 'lessons' | 'lookup';
   active?: boolean;
   compact?: boolean;
-}) {
+};
+
+export function VocabularyScreen(props: VocabularyScreenProps) {
+  const web = useWebNavigation();
+  const [flashcardsOpen, setFlashcardsOpen] = useState(false);
+  const closeFlashcards = useCallback(() => setFlashcardsOpen(false), []);
+  if (props.area === 'lookup' || props.compact) {
+    return (
+      <DictionaryScreen
+        query={props.query}
+        initialEntry={props.initialEntry}
+        compact={props.compact}
+        active={props.active}
+        onExit={props.onExit}
+        renderVideos={query => (
+          <VocabularyContent
+            key={query}
+            {...props}
+            query={query}
+            area="lookup"
+            compact
+            embeddedVideos
+          />
+        )}
+      />
+    );
+  }
+  return (
+    <View style={styles.moduleScreen}>
+      <View
+        style={[styles.moduleScreen, flashcardsOpen && styles.moduleHidden]}
+      >
+        <VocabularyContent
+          {...props}
+          active={(props.active ?? true) && !flashcardsOpen}
+          onOpenFlashcards={() =>
+            web
+              ? web.navigate('/flashcards', {
+                  state: { backTo: web.pathname + web.search },
+                })
+              : setFlashcardsOpen(true)
+          }
+        />
+      </View>
+      {flashcardsOpen ? (
+        <FlashcardScreen active={props.active} onExit={closeFlashcards} />
+      ) : null}
+    </View>
+  );
+}
+
+function VocabularyContent({
+  query = '',
+  onExit,
+  onOpenFlashcards,
+  area,
+  active = true,
+  compact = false,
+  embeddedVideos = false,
+}: VocabularyScreenProps & { embeddedVideos?: boolean }) {
+  const webContext = useWebNavigation();
+  const web = !compact && area === 'lessons' ? webContext : null;
   const insets = useSafeAreaInsets();
   const navigationInset = useBottomNavigationInset();
   const { width: viewportWidth, fontScale } = useWindowDimensions();
@@ -320,12 +403,32 @@ export function VocabularyScreen({
     (Math.min(windowWidth - layout.screenGutter * 2, layout.maxContentWidth) -
       spacing.md * (lessonColumns - 1)) /
     lessonColumns;
-  const [level, setLevel] = useState<JlptLevel>('N2');
+  const [level, setLevel] = useState<JlptLevel>(() => {
+    const value = web ? new URLSearchParams(web.search).get('level') : null;
+    return JLPT_LEVELS.includes(value as JlptLevel)
+      ? (value as JlptLevel)
+      : 'N2';
+  });
   const [section, setSection] = useState<'lessons' | 'lookup'>(
     area ?? (query.trim() ? 'lookup' : 'lessons'),
   );
-  const [lessonRoute, setLessonRoute] = useState<LessonRoute>({
-    kind: 'catalog',
+  const [lessonRoute, setLessonRoute] = useState<LessonRoute>(() => {
+    const id = web && /^\/lessons\/([^/]+)$/.exec(web.pathname)?.[1];
+    if (!id) return { kind: 'catalog' };
+    const saved = web.state?.lessonRoute as LessonRoute | undefined;
+    if (saved?.kind === 'words' && saved.lesson.id === decodeRouteParam(id))
+      return saved;
+    return {
+      kind: 'words',
+      lesson: {
+        id: decodeRouteParam(id),
+        number: 0,
+        title: '',
+        word_count: 0,
+      },
+      displayNumber: 0,
+      category: '',
+    };
   });
   const [lookupRoute, setLookupRoute] = useState<LookupRoute>(() =>
     query.trim()
@@ -336,15 +439,28 @@ export function VocabularyScreen({
   const audio = useVocabularyAudio(
     `${section}:${level}:${JSON.stringify(route)}`,
   );
-  const setRoute = useCallback((next: Route) => {
-    if (next.kind === 'catalog' || next.kind === 'words') setLessonRoute(next);
-    else setLookupRoute(next);
-  }, []);
+  const setRoute = useCallback(
+    (next: Route) => {
+      if (next.kind === 'catalog' || next.kind === 'words') {
+        setLessonRoute(next);
+        if (web)
+          web.navigate(
+            (next.kind === 'words'
+              ? '/lessons/' + encodeURIComponent(next.lesson.id)
+              : '/lessons') +
+              '?level=' +
+              level,
+            { state: { lessonRoute: next } },
+          );
+      } else setLookupRoute(next);
+    },
+    [web, level],
+  );
   const [searchText, setSearchText] = useState(query.slice(0, 100));
   const [hideMeaning, setHideMeaning] = useState(false);
   const [searchFocused, setSearchFocused] = useState(false);
   const [searchMode, setSearchMode] = useState<'words' | 'videos'>(
-    compact ? 'words' : 'videos',
+    embeddedVideos ? 'videos' : compact ? 'words' : 'videos',
   );
   const [quickLookupOpen, setQuickLookupOpen] = useState(false);
   const closeQuickLookup = useCallback(() => setQuickLookupOpen(false), []);
@@ -414,12 +530,17 @@ export function VocabularyScreen({
   const back = useCallback(() => {
     Keyboard.dismiss();
     setSelectedVideoId(null);
-    if (section === 'lessons') setLessonRoute({ kind: 'catalog' });
-    else {
+    if (section === 'lessons') {
+      if (web) {
+        web.back('/lessons?level=' + level);
+        return;
+      }
+      setLessonRoute({ kind: 'catalog' });
+    } else {
       setLookupRoute({ kind: 'lookup' });
       setSearchText('');
     }
-  }, [section]);
+  }, [section, web, level]);
   useEffect(() => {
     const listener = BackHandler.addEventListener('hardwareBackPress', () => {
       if (!active) return false;
@@ -521,7 +642,11 @@ export function VocabularyScreen({
   );
   const title =
     route.kind === 'words'
-      ? `Bài ${route.displayNumber}`
+      ? route.displayNumber
+        ? `Bài ${route.displayNumber}`
+        : state.status === 'ready' && state.data.lesson
+        ? state.data.lesson.lesson.title
+        : 'Bài học từ vựng'
       : route.kind === 'videos'
       ? 'Ví dụ trong video'
       : route.kind === 'search'
@@ -533,7 +658,11 @@ export function VocabularyScreen({
     route.kind === 'catalog'
       ? 'Chọn trình độ và bắt đầu học từng bài.'
       : route.kind === 'words'
-      ? `${level} · ${route.category} · ${route.lesson.word_count} từ vựng`
+      ? state.status === 'ready' && state.data.lesson
+        ? `${level} · ${
+            route.category || categoryLabel(state.data.lesson.lesson.unit_title)
+          } · ${state.data.lesson.words.length} từ vựng`
+        : ''
       : route.kind === 'videos'
       ? `Nghe cách dùng “${route.query}” trong câu thực tế.`
       : route.kind === 'search'
@@ -563,14 +692,35 @@ export function VocabularyScreen({
       <ChevronLeftIcon size={18} color={colors.dark} />
     </Pressable>
   );
+  const splitVideos =
+    Platform.OS === 'web' &&
+    windowWidth >= 900 &&
+    route.kind === 'videos' &&
+    Boolean(selectedVideo);
+  const videoPlayer =
+    active && selectedVideo && route.kind === 'videos' ? (
+      <View style={styles.lookupVideoPlayer}>
+        <VideoExamplePlayer
+          key={`${screenKey}-${selectedVideo.id}`}
+          example={selectedVideo}
+          query={state.status === 'ready' ? state.data.videos?.query || '' : ''}
+          position={selectedIndex + 1}
+          count={examples.length}
+          onPrevious={
+            selectedIndex > 0
+              ? () => setSelectedVideoId(examples[selectedIndex - 1].id)
+              : undefined
+          }
+          onNext={
+            selectedIndex < examples.length - 1
+              ? () => setSelectedVideoId(examples[selectedIndex + 1].id)
+              : undefined
+          }
+        />
+      </View>
+    ) : null;
   const header = (
     <View style={styles.header}>
-      {route.kind !== 'videos' && !compact ? (
-        <View style={styles.topBar}>
-          <BrandLogo />
-          <Text style={styles.language}>日本語</Text>
-        </View>
-      ) : null}
       {route.kind === 'videos' ? (
         <View style={styles.titleRow}>
           {backButton}
@@ -591,6 +741,13 @@ export function VocabularyScreen({
             >
               {title}
             </Text>
+            {section === 'lessons' && onOpenFlashcards ? (
+              <AuthButton
+                label="Flashcard"
+                variant="text"
+                onPress={onOpenFlashcards}
+              />
+            ) : null}
             {wordMode ? (
               <Pressable
                 accessibilityRole="button"
@@ -686,7 +843,8 @@ export function VocabularyScreen({
               accessibilityState={{ checked: option === level }}
               onPress={() => {
                 setLevel(option);
-                setRoute({ kind: 'catalog' });
+                if (web) web.navigate('/lessons?level=' + option);
+                else setRoute({ kind: 'catalog' });
                 setHideMeaning(false);
               }}
               style={({ pressed }) => [
@@ -711,54 +869,56 @@ export function VocabularyScreen({
           ))}
         </View>
       ) : null}
-      {section === 'lookup' ? (
+      {section === 'lookup' && !embeddedVideos ? (
         <View style={styles.header}>
-          <View
-            accessibilityRole="radiogroup"
-            accessibilityLabel="Loại tìm kiếm"
-            style={styles.levels}
-          >
-            {(['words', 'videos'] as const).map(mode => (
-              <Pressable
-                key={mode}
-                accessibilityRole="radio"
-                accessibilityLabel={
-                  mode === 'videos'
-                    ? 'Tìm ví dụ trong video'
-                    : 'Tra cứu thông thường'
-                }
-                accessibilityState={{ checked: searchMode === mode }}
-                style={({ pressed }) => [
-                  styles.level,
-                  searchMode === mode ? styles.selectedLevel : null,
-                  pressed
-                    ? searchMode === mode
-                      ? styles.selectedLevelPressed
-                      : styles.pressed
-                    : null,
-                ]}
-                onPress={() => {
-                  setSearchMode(mode);
-                  setSelectedVideoId(null);
-                  if (route.kind === 'search' || route.kind === 'videos')
-                    setRoute(
-                      mode === 'videos'
-                        ? { kind: 'videos', query: route.query }
-                        : { kind: 'search', query: route.query, page: 1 },
-                    );
-                }}
-              >
-                <Text
-                  style={[
-                    styles.levelText,
-                    searchMode === mode ? styles.selectedLevelText : null,
+          {!embeddedVideos ? (
+            <View
+              accessibilityRole="radiogroup"
+              accessibilityLabel="Loại tìm kiếm"
+              style={styles.levels}
+            >
+              {(['words', 'videos'] as const).map(mode => (
+                <Pressable
+                  key={mode}
+                  accessibilityRole="radio"
+                  accessibilityLabel={
+                    mode === 'videos'
+                      ? 'Tìm ví dụ trong video'
+                      : 'Tra cứu thông thường'
+                  }
+                  accessibilityState={{ checked: searchMode === mode }}
+                  style={({ pressed }) => [
+                    styles.level,
+                    searchMode === mode ? styles.selectedLevel : null,
+                    pressed
+                      ? searchMode === mode
+                        ? styles.selectedLevelPressed
+                        : styles.pressed
+                      : null,
                   ]}
+                  onPress={() => {
+                    setSearchMode(mode);
+                    setSelectedVideoId(null);
+                    if (route.kind === 'search' || route.kind === 'videos')
+                      setRoute(
+                        mode === 'videos'
+                          ? { kind: 'videos', query: route.query }
+                          : { kind: 'search', query: route.query, page: 1 },
+                      );
+                  }}
                 >
-                  {mode === 'videos' ? 'Video' : 'Từ vựng'}
-                </Text>
-              </Pressable>
-            ))}
-          </View>
+                  <Text
+                    style={[
+                      styles.levelText,
+                      searchMode === mode ? styles.selectedLevelText : null,
+                    ]}
+                  >
+                    {mode === 'videos' ? 'Video' : 'Từ vựng'}
+                  </Text>
+                </Pressable>
+              ))}
+            </View>
+          ) : null}
           <View
             style={[styles.search, searchFocused ? styles.searchFocused : null]}
           >
@@ -815,25 +975,7 @@ export function VocabularyScreen({
           ) : null}
         </View>
       ) : null}
-      {active && selectedVideo && route.kind === 'videos' ? (
-        <VideoExamplePlayer
-          key={`${screenKey}-${selectedVideo.id}`}
-          example={selectedVideo}
-          query={state.status === 'ready' ? state.data.videos?.query || '' : ''}
-          position={selectedIndex + 1}
-          count={examples.length}
-          onPrevious={
-            selectedIndex > 0
-              ? () => setSelectedVideoId(examples[selectedIndex - 1].id)
-              : undefined
-          }
-          onNext={
-            selectedIndex < examples.length - 1
-              ? () => setSelectedVideoId(examples[selectedIndex + 1].id)
-              : undefined
-          }
-        />
-      ) : null}
+      {!splitVideos ? videoPlayer : null}
       {state.status === 'ready' && state.data.videos ? (
         <Text style={styles.caption}>
           {state.data.videos.items.length} đoạn trên trang này
@@ -869,163 +1011,139 @@ export function VocabularyScreen({
       ) : null}
     </View>
   );
+  const resultsList = (
+    <FlatList
+      ref={listRef}
+      key={`${screenKey}-${route.kind === 'catalog' ? lessonColumns : 1}`}
+      numColumns={route.kind === 'catalog' ? lessonColumns : 1}
+      columnWrapperStyle={
+        route.kind === 'catalog' && lessonColumns > 1
+          ? styles.lessonGrid
+          : undefined
+      }
+      data={state.status === 'ready' ? state.data.items : []}
+      renderItem={renderItem}
+      keyExtractor={keyExtractor}
+      contentContainerStyle={[
+        contentStyle,
+        splitVideos && styles.videoResultsContent,
+        { paddingBottom: navigationInset + spacing.section },
+      ]}
+      scrollIndicatorInsets={{ bottom: navigationInset }}
+      ListHeaderComponent={header}
+      keyboardShouldPersistTaps="handled"
+      keyboardDismissMode="on-drag"
+      contentInsetAdjustmentBehavior="automatic"
+      showsVerticalScrollIndicator={false}
+      ListEmptyComponent={
+        state.status === 'ready' ? (
+          <View style={styles.empty}>
+            <HomeFeatureIcon
+              name={route.kind === 'lookup' ? 'search' : 'vocabulary'}
+              size={40}
+              color={colors.muted}
+            />
+            <Text style={styles.sectionTitle}>
+              {route.kind === 'videos'
+                ? 'Chưa tìm thấy ví dụ trong video'
+                : route.kind === 'lookup'
+                ? 'Nhập từ bạn muốn tra cứu'
+                : route.kind === 'search'
+                ? 'Không tìm thấy từ phù hợp'
+                : `${level} chưa có dữ liệu`}
+            </Text>
+            <Text style={styles.body}>
+              {route.kind === 'videos'
+                ? 'Thử từ hoặc cụm tiếng Nhật khác. Hiện kho video còn ít ví dụ.'
+                : route.kind === 'lookup'
+                ? 'Chọn Video để nghe cách dùng hoặc Từ vựng để xem nghĩa.'
+                : route.kind === 'search'
+                ? 'Thử từ khác bằng tiếng Nhật, kana hoặc tiếng Việt.'
+                : 'Các bài học đang được chuẩn bị. Bạn có thể chọn N2 để bắt đầu học.'}
+            </Text>
+            {route.kind === 'catalog' && level !== 'N2' ? (
+              <AuthButton
+                label="Khám phá N2"
+                variant="outline"
+                onPress={() => {
+                  setLevel('N2');
+                  setRoute({ kind: 'catalog' });
+                }}
+              />
+            ) : null}
+          </View>
+        ) : undefined
+      }
+      ListFooterComponent={
+        state.status === 'ready' &&
+        state.data.search &&
+        route.kind === 'search' ? (
+          <View style={styles.pagination}>
+            <AuthButton
+              label="Trang trước"
+              variant="text"
+              disabled={route.page <= 1}
+              onPress={() => setRoute({ ...route, page: route.page - 1 })}
+            />
+            <Text style={styles.caption}>
+              {route.page}/
+              {Math.max(1, state.data.search.pagination.total_pages)}
+            </Text>
+            <AuthButton
+              label="Trang sau"
+              variant="text"
+              disabled={route.page >= state.data.search.pagination.total_pages}
+              onPress={() => setRoute({ ...route, page: route.page + 1 })}
+            />
+          </View>
+        ) : state.status === 'ready' &&
+          state.data.videos &&
+          route.kind === 'videos' ? (
+          <View style={styles.pagination}>
+            <AuthButton
+              label="Về đầu kết quả"
+              variant="text"
+              disabled={!route.after}
+              onPress={() => {
+                setSelectedVideoId(null);
+                setRoute({ kind: 'videos', query: route.query });
+              }}
+            />
+            <AuthButton
+              label="Ví dụ khác"
+              variant="text"
+              disabled={!state.data.videos.has_more}
+              onPress={() => {
+                setSelectedVideoId(null);
+                setRoute({
+                  ...route,
+                  after: state.data.videos?.next_cursor || undefined,
+                });
+              }}
+            />
+          </View>
+        ) : undefined
+      }
+    />
+  );
   return (
     <KeyboardAvoidingView
       style={styles.screen}
       behavior={Platform.OS === 'ios' ? 'padding' : undefined}
     >
-      <View
-        pointerEvents="none"
-        accessible={false}
-        importantForAccessibility="no-hide-descendants"
-        style={StyleSheet.absoluteFill}
-      >
-        <Svg
-          width="100%"
-          height="100%"
-          preserveAspectRatio="none"
-          viewBox="0 0 400 900"
-        >
-          <Defs>
-            <RadialGradient id="vocabularyRose">
-              <Stop offset="0" stopColor="#F9CCD6" stopOpacity="0.5" />
-              <Stop offset="1" stopColor="#F9CCD6" stopOpacity="0" />
-            </RadialGradient>
-            <RadialGradient id="vocabularyPeach">
-              <Stop offset="0" stopColor="#FFDDB7" stopOpacity="0.5" />
-              <Stop offset="1" stopColor="#FFDDB7" stopOpacity="0" />
-            </RadialGradient>
-          </Defs>
-          <Ellipse
-            cx="30"
-            cy="410"
-            rx="300"
-            ry="460"
-            fill="url(#vocabularyRose)"
-          />
-          <Ellipse
-            cx="390"
-            cy="170"
-            rx="210"
-            ry="280"
-            fill="url(#vocabularyPeach)"
-          />
-        </Svg>
-      </View>
-      <FlatList
-        ref={listRef}
-        key={`${screenKey}-${route.kind === 'catalog' ? lessonColumns : 1}`}
-        numColumns={route.kind === 'catalog' ? lessonColumns : 1}
-        columnWrapperStyle={
-          route.kind === 'catalog' && lessonColumns > 1
-            ? styles.lessonGrid
-            : undefined
-        }
-        data={state.status === 'ready' ? state.data.items : []}
-        renderItem={renderItem}
-        keyExtractor={keyExtractor}
-        contentContainerStyle={[
-          contentStyle,
-          { paddingBottom: navigationInset + spacing.section },
-        ]}
-        scrollIndicatorInsets={{ bottom: navigationInset }}
-        ListHeaderComponent={header}
-        keyboardShouldPersistTaps="handled"
-        keyboardDismissMode="on-drag"
-        contentInsetAdjustmentBehavior="automatic"
-        showsVerticalScrollIndicator={false}
-        ListEmptyComponent={
-          state.status === 'ready' ? (
-            <View style={styles.empty}>
-              <HomeFeatureIcon
-                name={route.kind === 'lookup' ? 'search' : 'vocabulary'}
-                size={40}
-                color={colors.muted}
-              />
-              <Text style={styles.sectionTitle}>
-                {route.kind === 'videos'
-                  ? 'Chưa tìm thấy ví dụ trong video'
-                  : route.kind === 'lookup'
-                  ? 'Nhập từ bạn muốn tra cứu'
-                  : route.kind === 'search'
-                  ? 'Không tìm thấy từ phù hợp'
-                  : `${level} chưa có dữ liệu`}
-              </Text>
-              <Text style={styles.body}>
-                {route.kind === 'videos'
-                  ? 'Thử từ hoặc cụm tiếng Nhật khác. Hiện kho video còn ít ví dụ.'
-                  : route.kind === 'lookup'
-                  ? 'Chọn Video để nghe cách dùng hoặc Từ vựng để xem nghĩa.'
-                  : route.kind === 'search'
-                  ? 'Thử từ khác bằng tiếng Nhật, kana hoặc tiếng Việt.'
-                  : 'Các bài học đang được chuẩn bị. Bạn có thể chọn N2 để bắt đầu học.'}
-              </Text>
-              {route.kind === 'catalog' && level !== 'N2' ? (
-                <AuthButton
-                  label="Khám phá N2"
-                  variant="outline"
-                  onPress={() => {
-                    setLevel('N2');
-                    setRoute({ kind: 'catalog' });
-                  }}
-                />
-              ) : null}
-            </View>
-          ) : undefined
-        }
-        ListFooterComponent={
-          state.status === 'ready' &&
-          state.data.search &&
-          route.kind === 'search' ? (
-            <View style={styles.pagination}>
-              <AuthButton
-                label="Trang trước"
-                variant="text"
-                disabled={route.page <= 1}
-                onPress={() => setRoute({ ...route, page: route.page - 1 })}
-              />
-              <Text style={styles.caption}>
-                {route.page}/
-                {Math.max(1, state.data.search.pagination.total_pages)}
-              </Text>
-              <AuthButton
-                label="Trang sau"
-                variant="text"
-                disabled={
-                  route.page >= state.data.search.pagination.total_pages
-                }
-                onPress={() => setRoute({ ...route, page: route.page + 1 })}
-              />
-            </View>
-          ) : state.status === 'ready' &&
-            state.data.videos &&
-            route.kind === 'videos' ? (
-            <View style={styles.pagination}>
-              <AuthButton
-                label="Về đầu kết quả"
-                variant="text"
-                disabled={!route.after}
-                onPress={() => {
-                  setSelectedVideoId(null);
-                  setRoute({ kind: 'videos', query: route.query });
-                }}
-              />
-              <AuthButton
-                label="Ví dụ khác"
-                variant="text"
-                disabled={!state.data.videos.has_more}
-                onPress={() => {
-                  setSelectedVideoId(null);
-                  setRoute({
-                    ...route,
-                    after: state.data.videos?.next_cursor || undefined,
-                  });
-                }}
-              />
-            </View>
-          ) : undefined
-        }
-      />
+      {splitVideos ? (
+        <View style={styles.videoWorkspace} testID="video-lookup-split">
+          <ScrollView
+            style={styles.videoPane}
+            contentContainerStyle={styles.videoPaneContent}
+          >
+            {videoPlayer}
+          </ScrollView>
+          <View style={styles.videoResultsPane}>{resultsList}</View>
+        </View>
+      ) : (
+        resultsList
+      )}
       {quickLookupOpen ? (
         <Modal
           transparent
@@ -1045,6 +1163,7 @@ export function VocabularyScreen({
               accessibilityViewIsModal
               style={[styles.drawer, { paddingBottom: insets.bottom }]}
             >
+              <AppBackground />
               <View style={styles.drawerHeader}>
                 <Text accessibilityRole="header" style={styles.title}>
                   Tra cứu nhanh
@@ -1073,6 +1192,8 @@ export function VocabularyScreen({
 }
 
 const styles = StyleSheet.create({
+  moduleScreen: { flex: 1 },
+  moduleHidden: { display: 'none' },
   drawerOverlay: {
     flex: 1,
     justifyContent: 'flex-end',
@@ -1081,7 +1202,6 @@ const styles = StyleSheet.create({
   drawer: {
     height: '85%',
     maxHeight: '90%',
-    backgroundColor: colors.background,
     borderTopLeftRadius: radius.card,
     borderTopRightRadius: radius.card,
     overflow: 'hidden',
@@ -1096,7 +1216,7 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderBottomColor: colors.divider,
   },
-  screen: { flex: 1, backgroundColor: colors.background },
+  screen: { flex: 1 },
   content: {
     paddingHorizontal: layout.screenGutter,
     paddingBottom: spacing.section,
@@ -1107,15 +1227,25 @@ const styles = StyleSheet.create({
     flexGrow: 1,
   },
   header: { gap: spacing.lg, paddingBottom: spacing.xs },
-  gridContent: { gap: spacing.md },
-  topBar: {
+  lookupVideoPlayer: { width: '100%', maxWidth: 640, alignSelf: 'center' },
+  videoWorkspace: {
+    flex: 1,
+    minHeight: 0,
+    width: '100%',
+    maxWidth: 1160,
+    alignSelf: 'center',
     flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    gap: spacing.md,
-    marginBottom: spacing.lg,
+    gap: spacing.lg,
+    paddingHorizontal: layout.screenGutter,
   },
-  language: { ...typography.caption, color: colors.muted, flexShrink: 1 },
+  videoPane: { flex: 1.3, minWidth: 0, minHeight: 0 },
+  videoPaneContent: {
+    paddingVertical: spacing.md,
+    paddingBottom: spacing.section,
+  },
+  videoResultsPane: { flex: 1, minWidth: 0, minHeight: 0 },
+  videoResultsContent: { paddingHorizontal: 0, paddingTop: spacing.md },
+  gridContent: { gap: spacing.md },
   introduction: { gap: spacing.sm },
   titleRow: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm },
   titleCopy: { flex: 1 },

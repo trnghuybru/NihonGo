@@ -1,3 +1,8 @@
+import {
+  authPaths,
+  safeReturnTo,
+  useWebNavigation,
+} from '../navigation/webNavigation';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import {
   AppState,
@@ -31,8 +36,50 @@ const PROVIDER_NAMES: Record<Provider, string> = {
   apple: 'Apple',
 };
 
+const stagePaths: Record<Stage, string> = {
+  login: '/login',
+  register: '/register',
+  forgot: '/forgot-password',
+  verify: '/verify',
+  reset: '/reset-password',
+};
+
 export function LoginScreen() {
-  const [stage, setStage] = useState<Stage>('login');
+  const web = useWebNavigation();
+  const webRef = useRef(web);
+  webRef.current = web;
+  const [stageState, setStageState] = useState<Stage>('login');
+  const stage = web
+    ? (Object.keys(stagePaths).find(
+        key => stagePaths[key as Stage] === web.pathname,
+      ) as Stage | undefined) ?? stageState
+    : stageState;
+  const setStage = useCallback((next: Stage) => {
+    setStageState(next);
+    const nav = webRef.current;
+    if (nav) {
+      const target = safeReturnTo(
+        authPaths.has(nav.pathname)
+          ? new URLSearchParams(nav.search).get('returnTo')
+          : nav.pathname + nav.search,
+      );
+      nav.navigate(
+        stagePaths[next] +
+          (target === '/' ? '' : '?returnTo=' + encodeURIComponent(target)),
+      );
+    }
+  }, []);
+  useEffect(() => {
+    if (web && !authPaths.has(web.pathname))
+      web.navigate(
+        '/login' +
+          (web.pathname === '/'
+            ? ''
+            : '?returnTo=' +
+              encodeURIComponent(safeReturnTo(web.pathname + web.search))),
+        { replace: true },
+      );
+  }, [web]);
   const [config, setConfig] = useState<AuthConfig | null>(null);
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -43,6 +90,12 @@ export function LoginScreen() {
   const [code, setCode] = useState('');
   const [challenge, setChallenge] = useState<Challenge | null>(null);
   const [social, setSocial] = useState<SocialProfile | null>(null);
+  useEffect(() => {
+    if (web && !challenge && (stage === 'verify' || stage === 'reset')) {
+      const target = stage === 'verify' ? '/register' : '/forgot-password';
+      web.navigate(target + web.search, { replace: true });
+    }
+  }, [web, stage, challenge]);
   const [socialPending, setSocialPending] = useState(false);
   const [busy, setBusy] = useState(false);
   const busyRef = useRef(false);
@@ -96,7 +149,7 @@ export function LoginScreen() {
         setNotice('Bổ sung hồ sơ và xác thực email để hoàn tất đăng ký.');
       }
     }
-  }, []);
+  }, [setStage]);
 
   useEffect(() => {
     run(async () => {

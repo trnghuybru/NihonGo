@@ -3,6 +3,29 @@ import { TextInput } from 'react-native';
 import Renderer, { act } from 'react-test-renderer';
 import { HomeScreen } from '../src/screens/HomeScreen';
 import { options, profile } from '../test-support/learning';
+import {
+  dictionaryService,
+  DictionaryHistoryItem,
+} from '../src/services/dictionaryService';
+
+jest.mock('../src/services/dailyFlashcardService', () => ({
+  dailyFlashcardService: {
+    home: jest.fn().mockResolvedValue({
+      active_session: null,
+      weak_count: 0,
+      learned_count: 0,
+      quiz: null,
+      quiz_available: 0,
+    }),
+  },
+}));
+
+jest.mock('../src/services/dictionaryService', () => ({
+  dictionaryService: {
+    history: jest.fn().mockResolvedValue({ items: [] }),
+    subscribeHistory: jest.fn(() => () => {}),
+  },
+}));
 
 const user = {
   id: 'u1',
@@ -50,32 +73,46 @@ function button(label: string) {
   )[0];
 }
 
+test('home search shows shared recent history on focus and opens the selected exact entry', async () => {
+  const item: DictionaryHistoryItem = {
+    kind: 'kanji',
+    target: '学',
+    word: '学',
+    reading: 'HỌC',
+    glosses: [],
+    viewed_at: 1,
+  };
+  jest
+    .mocked(dictionaryService.history)
+    .mockResolvedValueOnce({ items: [item] });
+  await render();
+  expect(dictionaryService.history).not.toHaveBeenCalled();
+  expect(button('Tra lại 学')).toBeUndefined();
+  await act(async () => tree.root.findByType(TextInput).props.onFocus());
+  expect(dictionaryService.history).toHaveBeenCalledTimes(1);
+  await act(async () => button('Tra lại 学').props.onPress());
+  expect(onSearchVocabulary).toHaveBeenCalledWith('学', item);
+  expect(button('Tra lại 学')).toBeUndefined();
+});
+
 test('renders personalized learning data without invented progress', async () => {
   await render();
   const output = JSON.stringify(tree.toJSON());
-  expect(output).toContain('N5 · Sơ cấp');
-  expect(output).toContain('Giao tiếp hằng ngày');
+  expect(output).toContain('Chào Minh');
+  expect(output).toContain('Ôn tập hôm nay');
+  expect(output).toContain('Chọn bộ thẻ đầu tiên');
   expect(output).toContain('Momo, linh vật tanuki của NihonGO đang vẫy tay');
-  expect(
-    tree.root.findAll(node => {
-      const children = node.props.children;
-      return Array.isArray(children) && children.join('') === '15 phút/ngày';
-    }).length,
-  ).toBeGreaterThan(0);
   expect(output).not.toContain('72%');
   expect(output).not.toContain('ありがとう');
   expect(output).not.toContain('arigatou');
   expect(output).not.toContain('Một lộ trình dành riêng cho bạn');
-  expect(output).toContain('xxx');
-  for (const label of ['Từ vựng: xxx', 'Lộ trình học: xxx']) {
-    const placeholder = tree.root.findAll(
-      node => node.props.accessibilityLabel === label,
-    )[0];
-    expect(placeholder.props.accessibilityState.disabled).toBe(true);
-  }
-  expect(
-    button('Tiếp tục học. N5 · Sơ cấp. Giao tiếp hằng ngày. 15 phút mỗi ngày.'),
-  ).toBeTruthy();
+  expect(output).not.toContain('xxx');
+  expect(output).toContain('Một lộ trình vừa sức dành cho bạn');
+  await act(async () => button('Khám phá lộ trình').props.onPress());
+  expect(onOpenPromotion).toHaveBeenCalledTimes(1);
+  await act(async () => button('Chọn bộ thẻ').props.onPress());
+  expect(onOpenVocabulary).toHaveBeenCalledTimes(1);
+  expect(button('Bắt đầu thử thách').props.disabled).toBe(true);
 });
 
 test('routes all four skill cards through one typed callback', async () => {

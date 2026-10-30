@@ -112,9 +112,38 @@ export function useShadowingQuiz(jobId: string | undefined) {
     setResumeRequest(value => value + 1);
   };
   const showQuestion = (id: string) => {
-    if (activeId || completed.includes(id) || !questions.some(q => q.id === id))
+    if (
+      !enabled ||
+      setupOpen ||
+      loading ||
+      activeId ||
+      completed.includes(id) ||
+      !questions.some(q => q.id === id)
+    )
       return;
-    setActiveId(id);
+    setActiveId(current => current ?? id);
+  };
+  const onPlaybackTime = (seconds: number) => {
+    if (
+      !Number.isFinite(seconds) ||
+      seconds < 0 ||
+      !enabled ||
+      setupOpen ||
+      loading ||
+      activeId
+    )
+      return;
+    if (jumpRequest && !completed.includes(jumpRequest.id)) {
+      const target = questions.find(question => question.id === jumpRequest.id);
+      if (target && Math.abs(seconds - target.trigger_seconds) <= 0.35)
+        showQuestion(target.id);
+      return;
+    }
+    const due = questions.find(
+      question =>
+        !completed.includes(question.id) && seconds >= question.trigger_seconds,
+    );
+    if (due) showQuestion(due.id);
   };
   const jumpToQuestion = (id: string) => {
     if (loading || completed.includes(id) || !questions.some(q => q.id === id))
@@ -168,6 +197,7 @@ export function useShadowingQuiz(jobId: string | undefined) {
     generate,
     stop,
     showQuestion,
+    onPlaybackTime,
     answer,
     continueVideo,
     paused: setupOpen || loading || Boolean(activeQuestion),

@@ -109,6 +109,14 @@ flask --app app vocabulary-import --source data/vocabulary/jtest-n5.json
 flask --app app video-examples-import
 ```
 
+Để bật từ điển Từ vựng và Hán tự, xem [nhập dữ liệu từ điển](backend/DICTIONARY.md).
+Module dùng PostgreSQL với JMdict, Wiktionary tiếng Việt, KANJIDIC2 và KanjiVG; không cần API key.
+Tra Nhật/kana/romaji ưu tiên nghĩa Việt khi có; chế độ Việt → Nhật nhận cả từ không dấu.
+Nghĩa Việt bổ sung đã lưu trong DB, giữ nghĩa Anh gốc để đối chiếu;
+ứng dụng không cần model hay thư viện dịch khi chạy.
+Từ vựng giáo trình phục vụ Bài học, không dùng làm nguồn tra từ điển.
+Tra cứu mở từ điển trước, có tab Video riêng.
+
 N1 có audio riêng từng từ trong bộ Anki đã cung cấp. Sau khi RustFS chạy, nhập
 audio từ thư mục backend (chạy lại không tạo file trùng):
 
@@ -340,6 +348,8 @@ npm test -- --runInBand --watchman=false
 - [Dữ liệu từ vựng N1–N5 và cách nhập từ website/PDF/Anki](backend/data/vocabulary/README.md)
 - [Shadowing local: ElasticMQ, Faster-Whisper và cách chạy](backend/SHADOWING.md)
 - [Thiết lập học tập](backend/LEARNING.md)
+- [Theo dõi thời gian và mục tiêu mỗi ngày](backend/LEARNING_PROGRESS.md)
+- [Flashcard: bộ có sẵn, tự tạo, yêu thích và tổng kết phiên](backend/FLASHCARDS.md)
 - [API và luồng hội thoại](backend/SPEAKING.md)
 - [Cơ sở dữ liệu và migration hội thoại](backend/SPEAKING_DATABASE.md)
 - [Thiết kế ứng dụng](design.md)
@@ -362,3 +372,24 @@ Chạy backend ở cổng 5001, sau đó chạy `npm run web` trong `frontend` v
 http://localhost:5173. Bản web tái sử dụng các màn hình app, có bố cục rộng cho
 desktop và adapter trình duyệt cho iframe, đăng nhập và âm thanh. Chi tiết tại
 [frontend/WEB.md](frontend/WEB.md).
+
+### Phát âm từ vựng
+
+Nút loa trong bài học, chi tiết từ điển và flashcard đọc cách đọc kana (hoặc từ gốc
+nếu chưa có kana). Ưu tiên bản thu có sẵn; nếu không có hoặc phát lỗi, dùng giọng
+máy tiếng Nhật của thiết bị. Không cần API key hoặc dịch vụ TTS trên backend.
+Web dùng Web Speech API, iOS/Android dùng `react-native-tts`. Thiết bị cần có giọng
+Nhật đã cài; app báo hướng dẫn nếu thiếu. Giọng tải sẵn có thể đọc ngoại tuyến;
+khả năng ngoại tuyến phụ thuộc giọng/engine của thiết bị.
+
+Sau khi cập nhật dependency, chạy `pod install` trong `frontend/ios` và build lại
+ứng dụng native. Phát âm dừng khi đổi từ/thẻ, rời màn hình hoặc đưa app xuống nền.
+
+### Nhận dạng chữ viết tay
+
+Trong **Tra cứu → Viết tay**, vẽ một ký tự tiếng Nhật rồi chọn gợi ý để tra cứu.
+Nhận dạng chạy trên backend bằng checkpoint MobileNet V3 Small; file model đã được
+chuyển vào `backend/models/handwriting/best.pt`, không gửi về frontend.
+Xem [cấu hình, API và kiểm tra](backend/HANDWRITING.md).
+
+Phòng chơi từ vựng nhiều người (viết cách đọc / giành mic, Whisper trên server): xem [backend/GAMES.md](backend/GAMES.md).

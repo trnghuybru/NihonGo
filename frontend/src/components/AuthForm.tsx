@@ -13,7 +13,6 @@ import {
   View,
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import Svg, { Defs, Ellipse, RadialGradient, Stop } from 'react-native-svg';
 import {
   colors,
   layout,
@@ -42,6 +41,8 @@ export function AuthShell({
   card = true,
   wide = false,
   headerAccessory,
+  compactHeader = false,
+  topBarAccessory,
 }: {
   title: string;
   subtitle: string;
@@ -52,6 +53,8 @@ export function AuthShell({
   card?: boolean;
   wide?: boolean;
   headerAccessory?: React.ReactNode;
+  compactHeader?: boolean;
+  topBarAccessory?: React.ReactNode;
 }) {
   const insets = useSafeAreaInsets();
   const navigationInset = useBottomNavigationInset();
@@ -62,32 +65,6 @@ export function AuthShell({
       behavior={Platform.OS === 'ios' ? 'padding' : undefined}
     >
       <StatusBar barStyle="dark-content" />
-      <View
-        pointerEvents="none"
-        accessible={false}
-        importantForAccessibility="no-hide-descendants"
-        style={StyleSheet.absoluteFill}
-      >
-        <Svg
-          width="100%"
-          height="100%"
-          preserveAspectRatio="none"
-          viewBox="0 0 400 900"
-        >
-          <Defs>
-            <RadialGradient id="rose">
-              <Stop offset="0" stopColor="#F9CCD6" stopOpacity="0.5" />
-              <Stop offset="1" stopColor="#F9CCD6" stopOpacity="0" />
-            </RadialGradient>
-            <RadialGradient id="peach">
-              <Stop offset="0" stopColor="#FFDDB7" stopOpacity="0.5" />
-              <Stop offset="1" stopColor="#FFDDB7" stopOpacity="0" />
-            </RadialGradient>
-          </Defs>
-          <Ellipse cx="30" cy="410" rx="300" ry="460" fill="url(#rose)" />
-          <Ellipse cx="390" cy="170" rx="210" ry="280" fill="url(#peach)" />
-        </Svg>
-      </View>
       <ScrollView
         keyboardShouldPersistTaps="handled"
         keyboardDismissMode="on-drag"
@@ -98,6 +75,7 @@ export function AuthShell({
           styles.content,
           Platform.OS === 'web' && !wide && styles.webFormContent,
           desktop && styles.desktopContent,
+          desktop && compactHeader && styles.compactContent,
           Platform.OS === 'android'
             ? {
                 paddingTop: insets.top + spacing.lg,
@@ -109,13 +87,21 @@ export function AuthShell({
           },
         ]}
       >
-        <View style={[styles.topBar, desktop && styles.hidden]}>
+        <View
+          style={[
+            styles.topBar,
+            compactHeader && styles.compactTopBar,
+            desktop && styles.hidden,
+          ]}
+        >
           <BrandLogo />
-          <View style={styles.languageBadge}>
-            <Text style={styles.languageText}>日本語</Text>
-          </View>
+          {topBarAccessory ?? (
+            <View style={styles.languageBadge}>
+              <Text style={styles.languageText}>日本語</Text>
+            </View>
+          )}
         </View>
-        <View style={styles.header}>
+        <View style={[styles.header, compactHeader && styles.compactHeader]}>
           {eyebrow ? (
             <View style={styles.eyebrowRow}>
               <View style={styles.emblem}>
@@ -124,12 +110,19 @@ export function AuthShell({
               <Text style={styles.eyebrow}>{eyebrow}</Text>
             </View>
           ) : null}
-          <View style={styles.headerMain}>
+          <View
+            style={[
+              styles.headerMain,
+              compactHeader && styles.compactHeaderMain,
+            ]}
+          >
             <View style={styles.headerCopy}>
               <Text accessibilityRole="header" style={styles.title}>
                 {title}
               </Text>
-              <Text style={styles.subtitle}>{subtitle}</Text>
+              {subtitle ? (
+                <Text style={styles.subtitle}>{subtitle}</Text>
+              ) : null}
             </View>
             {headerAccessory ?? null}
           </View>
@@ -391,12 +384,19 @@ export function AuthContact({
 
 const styles = StyleSheet.create({
   hidden: { display: 'none' },
-  webFormContent: { maxWidth: layout.maxFormWidth, paddingTop: spacing.section },
+  compactContent: { paddingTop: spacing.lg },
+  compactTopBar: { marginBottom: spacing.lg },
+  compactHeader: { marginBottom: spacing.xxl },
+  compactHeaderMain: { minHeight: 104 },
+  webFormContent: {
+    maxWidth: layout.maxFormWidth,
+    paddingTop: spacing.section,
+  },
   desktopContent: {
     paddingTop: spacing.section,
     paddingHorizontal: layout.screenGutter,
   },
-  fill: { flex: 1, backgroundColor: colors.background },
+  fill: { flex: 1 },
   content: {
     flexGrow: 1,
     paddingHorizontal: layout.screenGutter,

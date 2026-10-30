@@ -16,6 +16,44 @@ services:
       interval: 5s
       timeout: 3s
       retries: 10
+  games-redis:
+    image: redis:7-alpine
+    profiles: [games]
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:6379:6379"
+  livekit:
+    image: livekit/livekit-server:v1.13.11
+    profiles: [games]
+    restart: unless-stopped
+    command: ["--config", "/etc/livekit.yaml"]
+    ports:
+      - "${LIVEKIT_BIND_ADDRESS:-127.0.0.1}:7880:7880"
+      - "7881:7881"
+      - "7882:7882/udp"
+    volumes:
+      - ./backend/.runtime/games/livekit.yaml:/etc/livekit.yaml:ro
+  games-voice-worker:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.games
+    profiles: [games]
+    restart: unless-stopped
+    env_file: ./backend/.env
+    environment:
+      DATABASE_URL: postgresql+psycopg://nihongo:nihongo_local@postgres:5432/nihongo
+      LIVEKIT_URL: ws://livekit:7880
+      SHADOWING_MODEL_DIR: /models/whisper
+      HF_HOME: /models/huggingface
+    cpus: 2
+    mem_limit: 3g
+    volumes:
+      - shadowing_models:/models
+    depends_on:
+      postgres:
+        condition: service_healthy
+      livekit:
+        condition: service_started
   mailpit:
     image: axllent/mailpit:v1.27
     ports:

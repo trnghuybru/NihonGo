@@ -154,3 +154,85 @@ class LearningTests(unittest.TestCase):
             self.assertEqual(statuses, [200, 409])
             db.session.expire_all()
             self.assertEqual(self.get().json["profile"]["version"], version + 1)
+
+
+    def progress(self, intervals=None, token="alice", account=None):
+        headers = {"Authorization": f"Bearer {token}"}
+        if intervals is None:
+            return self.client.get('/api/learning/progress', headers=headers)
+        return self.client.post('/api/learning/progress',
+            json={"account_id": account or token, "intervals": intervals}, headers=headers)
+
+    def test_study_progress_is_persistent_private_and_uses_current_goal(self):
+        self.put()
+        stamp = now() * 1000
+        with patch('learning.progress.timestamp_ms', return_value=stamp):
+            self.assertEqual(self.progress().json['seconds'], 0)
+            saved = self.progress([[stamp - 30_000, stamp]])
+            self.assertEqual(saved.status_code, 200, saved.json)
+            self.assertEqual(saved.json['seconds'], 30)
+            self.assertEqual(saved.json['goal_seconds'], 900)
+            self.assertFalse(saved.json['completed'])
+            db.session.expire_all()
+            self.assertEqual(self.progress().json['seconds'], 30)
+            self.assertEqual(self.progress(token='bob').json['seconds'], 0)
+            self.put({**VALID, 'version': 1, 'daily_minutes': 5})
+            self.assertEqual(self.progress().json['goal_seconds'], 300)
+            self.assertEqual(self.progress().json['seconds'], 30)
+
+    def test_retries_and_overlapping_devices_do_not_double_count(self):
+        self.put()
+        stamp = now() * 1000
+        with patch('learning.progress.timestamp_ms', return_value=stamp):
+            self.progress([[stamp - 60_000, stamp - 30_000]])
+            self.progress([[stamp - 60_000, stamp - 30_000]])
+            result = self.progress([[stamp - 45_000, stamp]]).json
+            self.assertEqual(result['seconds'], 60)
+            self.assertEqual(result['intervals'], [[stamp - 60_000, stamp]])
+
+    def test_study_splits_at_midnight_in_vietnam_and_reaches_goal(self):
+        from datetime import datetime, timezone
+        self.put({**VALID, 'daily_minutes': 5})
+        midnight = int(datetime(2026, 10, 18, 17, 0, tzinfo=timezone.utc).timestamp() * 1000)
+        with patch('learning.progress.timestamp_ms', return_value=midnight + 360_000):
+            self.progress([[midnight - 20_000, midnight + 20_000]])
+            result = self.progress([[midnight + offset, midnight + offset + 60_000]
+                                    for offset in range(0, 300_000, 60_000)]).json
+            self.assertEqual(result['date'], '2026-10-19')
+            self.assertEqual(result['seconds'], 300)
+            self.assertTrue(result['completed'])
+            with patch('learning.progress.timestamp_ms', return_value=midnight - 1):
+                previous = self.progress().json
+                self.assertEqual(previous['date'], '2026-10-18')
+                self.assertEqual(previous['seconds'], 20)
+
+    def test_study_rejects_wrong_accounts_forged_ranges_and_missing_setup(self):
+        stamp = now() * 1000
+        self.assertEqual(self.progress([[stamp - 1000, stamp]]).status_code, 409)
+        self.put()
+        with patch('learning.progress.timestamp_ms', return_value=stamp):
+            invalid = [[], [[stamp - 60_001, stamp]], [[stamp, stamp]],
+                       [[stamp, stamp + 6000]], [[stamp - 86400001, stamp - 86400000]],
+                       [[True, stamp]], [[stamp - 1000, 'bad']]]
+            for intervals in invalid:
+                self.assertEqual(self.progress(intervals).status_code, 400, intervals)
+            self.assertEqual(self.progress([[stamp - 1000, stamp]], account='bob').status_code, 403)
+            self.assertEqual(self.client.get('/api/learning/progress?account_id=bob',
+                headers={'Authorization': 'Bearer alice'}).status_code, 403)
+            self.assertEqual(self.progress(token='bad').status_code, 401)
+            self.assertEqual(self.progress().json['seconds'], 0)
+
+    def test_concurrent_study_overlap_is_counted_once(self):
+        if not self.url.startswith('postgresql'):
+            self.skipTest('PostgreSQL row-lock concurrency test')
+        self.put()
+        stamp = now() * 1000
+        def save(_):
+            with self.app.test_client() as client:
+                return client.post('/api/learning/progress',
+                    json={'account_id': 'alice', 'intervals': [[stamp - 30_000, stamp]]},
+                    headers={'Authorization': 'Bearer alice'}).status_code
+        with ThreadPoolExecutor(max_workers=2) as executor:
+            self.assertEqual(list(executor.map(save, range(2))), [200, 200])
+        db.session.expire_all()
+        self.assertEqual(self.progress().json['seconds'], 30)

@@ -1,4 +1,4 @@
-import { defineConfig, loadEnv } from 'vite';
+import { defineConfig, loadEnv, transformWithEsbuild } from 'vite';
 import react from '@vitejs/plugin-react';
 import { fileURLToPath } from 'node:url';
 const local = path => fileURLToPath(new URL(path, import.meta.url));
@@ -8,6 +8,18 @@ export default defineConfig(({ mode }) => {
   const backend = env.VITE_API_PROXY_TARGET || 'http://127.0.0.1:5001';
   return {
     plugins: [
+      {
+        name: 'flip-card-jsx',
+        enforce: 'pre',
+        transform(code, id) {
+          if (!id.includes('/react-native-flip-card/') || !id.endsWith('.js'))
+            return;
+          return transformWithEsbuild(code, id, {
+            loader: 'jsx',
+            jsx: 'automatic',
+          });
+        },
+      },
       {
         name: 'native-web-assets',
         enforce: 'pre',
@@ -55,6 +67,7 @@ export default defineConfig(({ mode }) => {
     },
     optimizeDeps: {
       esbuildOptions: {
+        loader: { '.js': 'jsx' },
         resolveExtensions: [
           '.web.tsx',
           '.web.ts',
@@ -69,6 +82,7 @@ export default defineConfig(({ mode }) => {
       },
     },
     define: {
+      global: 'globalThis',
       __DEV__: mode !== 'production',
       'process.env.NODE_ENV': JSON.stringify(mode),
     },
@@ -76,7 +90,11 @@ export default defineConfig(({ mode }) => {
       host: '0.0.0.0',
       port: 5173,
       strictPort: true,
-      proxy: { '/api': backend, '/static': backend },
+      proxy: {
+        '/api': backend,
+        '/static': backend,
+        '/socket.io': { target: backend, ws: true },
+      },
     },
     build: { outDir: 'dist-web' },
   };

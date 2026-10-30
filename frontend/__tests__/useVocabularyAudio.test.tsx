@@ -17,6 +17,9 @@ function Harness({ scope }: { scope: string }) {
 }
 beforeEach(async () => {
   jest.clearAllMocks();
+  jest
+    .spyOn(AppState, 'addEventListener')
+    .mockImplementation(() => ({ remove: jest.fn() }));
   jest.mocked(AudioReplay.prototype.play).mockResolvedValue(true);
   jest.mocked(AudioReplay.prototype.close).mockResolvedValue(undefined);
   jest
@@ -91,4 +94,82 @@ test('backgrounding cancels pending playback and unmount closes the player', asy
   });
   expect(AudioReplay.prototype.close).toHaveBeenCalled();
   listener.mockRestore();
+});
+
+test('reads kana with the device voice when the word has no recording', async () => {
+  const Tts = require('react-native-tts').default;
+  await act(async () => {
+    await audio.toggle('school', '学校', 'がっこう', false);
+  });
+  expect(vocabularyService.audioPlayback).not.toHaveBeenCalled();
+  expect(Tts.speak).toHaveBeenCalledWith('がっこう');
+  expect(audio.loading).toBe(false);
+  await act(async () => {
+    await audio.toggle('school', '学校', 'がっこう', false);
+  });
+  expect(Tts.stop).toHaveBeenCalled();
+  expect(audio.wordId).toBeNull();
+});
+
+test('falls back to machine speech if original recording fails', async () => {
+  const Tts = require('react-native-tts').default;
+  jest
+    .mocked(vocabularyService.audioPlayback)
+    .mockRejectedValueOnce(new Error('unavailable'));
+  await act(async () => {
+    await audio.toggle('school', '学校', 'がっこう', true);
+  });
+  expect(Tts.speak).toHaveBeenCalledWith('がっこう');
+  expect(audio.error).toBeNull();
+});
+
+test('reports a missing Japanese voice without speaking in another language', async () => {
+  const Tts = require('react-native-tts').default;
+  Tts.voices.mockResolvedValueOnce([{ id: 'en', language: 'en-US' }]);
+  await act(async () => {
+    await audio.toggle('school', '学校', 'がっこう', false);
+  });
+  expect(Tts.speak).not.toHaveBeenCalled();
+  expect(audio.error?.message).toContain('giọng tiếng Nhật');
+  expect(audio.wordId).toBeNull();
+});
+
+test('pending device initialization cannot speak after navigating away', async () => {
+  const Tts = require('react-native-tts').default;
+  let resolve!: (value: string) => void;
+  Tts.getInitStatus.mockReturnValueOnce(
+    new Promise(done => {
+      resolve = done;
+    }),
+  );
+  let pending!: Promise<void>;
+  await act(async () => {
+    pending = audio.toggle('school', '学校', 'がっこう', false);
+  });
+  await act(async () => {
+    tree.update(<Harness scope="elsewhere" />);
+  });
+  await act(async () => {
+    resolve('success');
+    await pending;
+  });
+  expect(Tts.speak).not.toHaveBeenCalled();
+});
+
+test('native completion only clears the matching utterance', async () => {
+  const Tts = require('react-native-tts').default;
+  await act(async () => {
+    await audio.toggle('school', '学校', 'がっこう', false);
+  });
+  const finish = Tts.addEventListener.mock.calls.find(
+    (call: unknown[]) => call[0] === 'tts-finish',
+  )[1];
+  await act(async () => {
+    finish({ utteranceId: 'older-utterance' });
+  });
+  expect(audio.wordId).toBe('school');
+  await act(async () => {
+    finish({ utteranceId: 'utterance' });
+  });
+  expect(audio.wordId).toBeNull();
 });

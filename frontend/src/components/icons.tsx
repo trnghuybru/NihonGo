@@ -7,6 +7,46 @@ type IconProps = {
   strokeWidth?: number;
 };
 
+export function LightbulbIcon({
+  size = 20,
+  color = colors.body,
+  strokeWidth = 1.7,
+}: IconProps) {
+  return (
+    <Svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      accessible={false}
+    >
+      <Path
+        d="M9 18h6M10 21h4M8.5 15.5a6 6 0 1 1 7 0c-.9.7-1.5 1.4-1.5 2.5h-4c0-1.1-.6-1.8-1.5-2.5Z"
+        {...stroke(color, strokeWidth)}
+      />
+    </Svg>
+  );
+}
+
+export function HandwritingIcon({ size = 24, color = colors.body }: IconProps) {
+  return (
+    <Svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      accessible={false}
+    >
+      <Path
+        d="m14.8 3.2 1.7-1.7a2.8 2.8 0 0 1 4 4l-1.7 1.7-4-4ZM13.4 4.6 5.8 12.2 4.5 17.5l5.3-1.3 7.6-7.6-4-4Z"
+        fill={color}
+        opacity={0.65}
+      />
+      <Path d="M5 19H3.5a1.5 1.5 0 0 0 0 3H12" {...stroke(color, 1.8)} />
+    </Svg>
+  );
+}
+
 export function AIIcon({
   size = 20,
   color = colors.muted,

@@ -9,7 +9,8 @@ export type AuthIconName =
   | 'shield'
   | 'arrow'
   | 'check'
-  | 'back';
+  | 'back'
+  | 'logout';
 
 export function AuthIcon({
   name,
@@ -61,6 +62,12 @@ export function AuthIcon({
       ) : null}
       {name === 'arrow' ? <Path d="M5 12h14m-6-6 6 6-6 6" {...stroke} /> : null}
       {name === 'back' ? <Path d="M19 12H5m6-6-6 6 6 6" {...stroke} /> : null}
+      {name === 'logout' ? (
+        <Path
+          d="M9 4H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h4M9 12h11m-4-4 4 4-4 4"
+          {...stroke}
+        />
+      ) : null}
       {name === 'check' ? <Path d="m5 12 4 4L19 6" {...stroke} /> : null}
     </Svg>
   );

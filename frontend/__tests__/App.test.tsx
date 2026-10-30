@@ -16,6 +16,22 @@ import { learningService } from '../src/services/learningService';
 import { options, profile } from '../test-support/learning';
 import { StartupSplash } from '../src/components/StartupSplash';
 
+jest.mock('../src/services/studyTimeService', () => ({
+  studyTimeService: {
+    load: jest
+      .fn()
+      .mockImplementation(async () => ({
+        date: new Date(Date.now() + 7 * 3600000).toISOString().slice(0, 10),
+        timezone: 'Asia/Ho_Chi_Minh',
+        seconds: 0,
+        goal_seconds: 900,
+        completed: false,
+        server_time_ms: Date.now(),
+        intervals: [],
+      })),
+    record: jest.fn(),
+  },
+}));
 jest.mock('../src/services/learningService', () => ({
   learningService: { load: jest.fn(), save: jest.fn() },
 }));

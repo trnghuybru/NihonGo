@@ -356,7 +356,7 @@ export function ConversationEvaluationScreen({
 }
 
 const styles = StyleSheet.create({
-  screen: { flex: 1, backgroundColor: colors.background },
+  screen: { flex: 1 },
   topbar: {
     padding: layout.screenGutter,
     flexDirection: 'row',

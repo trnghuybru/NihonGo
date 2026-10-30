@@ -3,3 +3,9 @@ __pycache__/
 *.pyc
 .env
 instance/
+
+# Server-side model weights are provisioned separately.
+models/handwriting/*.pt
+.runtime/
+
+models/translation/

@@ -1,3 +1,5 @@
+import { decodeRouteParam } from '../navigation/webNavigation';
+import { useWebNavigation } from '../navigation/webNavigation';
 import { memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
   ActivityIndicator,
@@ -15,6 +17,7 @@ import {
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { AuthIcon } from '../components/AuthIcon';
+import { AppBackground } from '../components/AppBackground';
 import { AuthButton, AuthNotice } from '../components/AuthForm';
 import { HomeFeatureIcon } from '../components/HomeFeatureIcon';
 import { ConversationScreen } from './ConversationScreen';
@@ -263,6 +266,10 @@ function ScenarioPreview({
   );
 }
 export function SpeakingScenariosScreen() {
+  const web = useWebNavigation();
+  const webPath = web?.pathname;
+  const webRef = useRef(web);
+  webRef.current = web;
   const insets = useSafeAreaInsets();
   const [choosing, setChoosing] = useState(false);
   const [selectedId, setSelectedId] = useState<string | null>(null);
@@ -338,12 +345,14 @@ export function SpeakingScenariosScreen() {
     setSelectedId(null);
     setStartError('');
     setChoosing(false);
+    webRef.current?.navigate('/practice/speaking');
   }, []);
   const goBack = useCallback(() => {
     if (startPending.current) return;
     if (selectedId) {
       setSelectedId(null);
       setStartError('');
+      webRef.current?.navigate('/practice/speaking/new');
     } else {
       closeChooser();
     }
@@ -352,9 +361,11 @@ export function SpeakingScenariosScreen() {
     setSelectedId(null);
     setStartError('');
     setChoosing(true);
+    webRef.current?.navigate('/practice/speaking/new');
   }, []);
   const returnToHistory = useCallback(() => {
     setStarted(null);
+    webRef.current?.navigate('/practice/speaking');
     setHistoryError('');
     setHistoryVersion(value => value + 1);
   }, []);
@@ -376,7 +387,12 @@ export function SpeakingScenariosScreen() {
     setHistoryError('');
     try {
       const result = await speakingService.session(id);
-      if (mounted.current) setStarted(result);
+      if (mounted.current) {
+        setStarted(result);
+        const nav = webRef.current,
+          target = '/practice/speaking/sessions/' + encodeURIComponent(id);
+        if (nav && nav.pathname !== target) nav.navigate(target);
+      }
     } catch (failure) {
       if (mounted.current) setHistoryError(errorMessage(failure));
     } finally {
@@ -384,9 +400,29 @@ export function SpeakingScenariosScreen() {
       if (mounted.current) setOpeningHistory(false);
     }
   }, []);
+  useEffect(() => {
+    if (!webPath) return;
+    const session = /^\/practice\/speaking\/sessions\/([^/]+)$/.exec(
+      webPath,
+    )?.[1];
+    const scenario = /^\/practice\/speaking\/scenarios\/([^/]+)$/.exec(
+      webPath,
+    )?.[1];
+    if (session) {
+      setChoosing(false);
+      openHistory(decodeRouteParam(session));
+    } else {
+      setStarted(null);
+      setSelectedId(scenario ? decodeRouteParam(scenario) : null);
+      setChoosing(Boolean(scenario || webPath === '/practice/speaking/new'));
+    }
+  }, [webPath, openHistory]);
   const openScenario = useCallback((item: SpeakingScenario) => {
     setSelectedId(item.id);
     setStartError('');
+    webRef.current?.navigate(
+      '/practice/speaking/scenarios/' + encodeURIComponent(item.id),
+    );
   }, []);
   const renderScenario = useCallback(
     ({ item }: { item: SpeakingScenario }) => (
@@ -409,6 +445,10 @@ export function SpeakingScenariosScreen() {
       const result = await speakingService.start(selectedId, values);
       if (mounted.current) {
         setStarted(result);
+        webRef.current?.navigate(
+          '/practice/speaking/sessions/' +
+            encodeURIComponent(result.session.id),
+        );
         setChoosing(false);
         setSelectedId(null);
       }
@@ -482,6 +522,7 @@ export function SpeakingScenariosScreen() {
             ]}
           >
             <View accessibilityViewIsModal style={styles.modalCard}>
+              <AppBackground />
               <View style={styles.modalHeading}>
                 <View style={styles.modalIcon}>
                   <HomeFeatureIcon
@@ -725,17 +766,10 @@ export function SpeakingScenariosScreen() {
 const styles = StyleSheet.create({
   chatShell: {
     flex: 1,
-    backgroundColor: colors.background,
   },
   speakingHeader: {
     paddingHorizontal: layout.screenGutter,
     paddingBottom: spacing.xxl,
-    backgroundColor: colors.background,
-    backgroundImage: [
-      `linear-gradient(to bottom, rgba(255, 251, 247, 0) 45%, ${colors.background} 100%)`,
-      'radial-gradient(ellipse at 82% 24%, rgba(249, 204, 214, 0.5) 0%, rgba(249, 204, 214, 0) 75%)',
-      'radial-gradient(ellipse at 20% 0%, rgba(255, 221, 183, 0.5) 0%, rgba(255, 221, 183, 0) 75%)',
-    ].join(', '),
   },
   speakingHeaderContent: {
     width: '100%',
@@ -816,7 +850,7 @@ const styles = StyleSheet.create({
     backgroundColor: colors.surface,
     borderColor: colors.focus,
   },
-  fill: { flex: 1, backgroundColor: colors.surface },
+  fill: { flex: 1 },
   listContent: {
     flexGrow: 1,
     gap: spacing.xl,
@@ -898,7 +932,6 @@ const styles = StyleSheet.create({
     height: '90%',
     maxHeight: '100%',
     alignSelf: 'center',
-    backgroundColor: colors.background,
     borderRadius: radius.card,
     borderCurve: 'continuous',
     boxShadow: shadowMd,
