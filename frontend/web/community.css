@@ -1,0 +1,512 @@
+.ng-community-dock,
+.ng-community-dialog {
+  --ng-ink: #33291f;
+  --ng-muted: #77685c;
+  --ng-accent: #9b4818;
+  --ng-border: #efdfcf;
+  font-family: ReadexPro-Regular, sans-serif;
+  color: var(--ng-ink);
+  font-size: 14px;
+  line-height: 1.65;
+}
+.ng-community-dialog * {
+  box-sizing: border-box;
+}
+.ng-community-dock {
+  position: fixed;
+  right: max(20px, env(safe-area-inset-right));
+  bottom: calc(
+    var(--ng-bottom-inset, 0px) + 20px + env(safe-area-inset-bottom)
+  );
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 25;
+}
+.ng-community-dock button {
+  border: 1px solid var(--ng-border);
+  box-shadow: 0 4px 20px #73451915;
+  cursor: pointer;
+  min-height: 44px;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+.ng-community-dock button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px #73451926;
+}
+.ng-help-trigger {
+  width: 44px;
+  border-radius: 50%;
+  background: #fffdf9;
+  color: var(--ng-accent);
+  font-family: ReadexPro-SemiBold, sans-serif;
+  font-size: 19px;
+}
+.ng-coffee-trigger {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 0 17px;
+  border-radius: 99px;
+  background: #fff0d9;
+  color: #783e13;
+  font-family: ReadexPro-Medium, sans-serif;
+  font-size: 12px;
+}
+.ng-community-dialog {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  height: 100dvh;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  overflow: hidden;
+}
+.ng-community-dialog::backdrop {
+  background: transparent;
+}
+.ng-dialog-shade {
+  position: absolute;
+  inset: 0;
+  background: #30251f85;
+  backdrop-filter: blur(4px);
+}
+.ng-spotlight {
+  position: fixed;
+  border: 2px solid #ffb56b;
+  border-radius: 15px;
+  box-shadow: 0 0 0 9999px #30251fb0;
+  pointer-events: none;
+}
+.ng-community-panel {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(560px, calc(100% - 32px));
+  max-height: calc(100% - 32px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  padding: 32px;
+  border: 1px solid #fff5e9;
+  border-radius: 28px;
+  background: #fffdf9;
+  box-shadow: 0 24px 90px #241a2533;
+  outline: none;
+  animation: ng-panel-in 180ms ease-out;
+}
+.ng-community-panel h2 {
+  overflow-wrap: anywhere;
+  font-family: ReadexPro-SemiBold, sans-serif;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 1.35;
+  letter-spacing: -0.6px;
+  margin: 5px 0 14px;
+  padding-right: 10px;
+}
+.ng-community-panel p {
+  margin: 0 0 16px;
+  color: #65564a;
+}
+.ng-community-panel strong {
+  font-family: ReadexPro-SemiBold, sans-serif;
+  font-weight: normal;
+  color: var(--ng-ink);
+}
+.ng-community-panel .ng-eyebrow {
+  color: var(--ng-accent);
+  font-family: ReadexPro-Medium, sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  margin: 8px 0;
+}
+.ng-dialog-close {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 50%;
+  background: #f7eee5;
+  font-size: 25px;
+  color: #836349;
+  cursor: pointer;
+  z-index: 1;
+  line-height: 1;
+}
+.ng-dialog-close:hover {
+  background: #f0dfcc;
+}
+.ng-welcome-art {
+  position: relative;
+  height: 168px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 19px;
+  margin: 7px 0 26px;
+  background: radial-gradient(ellipse at 60% 80%, #ffce9699, transparent 70%),
+    #fff1e4;
+  overflow: hidden;
+}
+.ng-welcome-art img {
+  position: relative;
+  object-fit: contain;
+  margin-top: 22px;
+}
+.ng-welcome-kana {
+  position: absolute;
+  top: 18px;
+  left: 17px;
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  color: #c5895e38;
+  writing-mode: vertical-rl;
+}
+.ng-pill {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  padding: 5px 9px;
+  background: #ffffffba;
+  border-radius: 99px;
+  font-size: 9px;
+  letter-spacing: 1px;
+  color: #8b542c;
+}
+.ng-note {
+  border-radius: 14px;
+  padding: 14px 16px;
+  border: 1px solid #f5e5d1;
+  background: #fff5e7;
+  color: #82542b;
+  font-size: 12px;
+}
+.ng-feature-preview {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 18px;
+}
+.ng-feature-preview > div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 6px;
+  border: 1px solid var(--ng-border);
+  border-radius: 16px;
+  padding: 12px 3px;
+  background: #fff8f1;
+}
+.ng-feature-preview span {
+  font-family: serif;
+  font-size: 23px;
+  color: #b97440;
+}
+.ng-feature-preview strong {
+  font-size: 10px;
+}
+.ng-rules {
+  padding-left: 20px;
+  margin: 0 0 15px;
+  color: #65564a;
+  font-size: 13px;
+}
+.ng-rules li {
+  margin-bottom: 7px;
+  padding-left: 2px;
+}
+.ng-community-panel .ng-fine-print {
+  font-size: 12px;
+  background: #f5f7ec;
+  border-radius: 13px;
+  padding: 12px 14px;
+  color: #5b644a;
+}
+.ng-tour-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 25px;
+}
+.ng-tour-actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.ng-primary {
+  border: 1px solid #f5a25a;
+  border-radius: 99px;
+  padding: 12px 18px;
+  min-height: 44px;
+  background: linear-gradient(120deg, #ffc082, #fca04b);
+  color: #48250b;
+  font-family: ReadexPro-SemiBold, sans-serif;
+  cursor: pointer;
+  font-size: 12px;
+}
+.ng-primary:hover {
+  background: #ffb266;
+}
+.ng-text-button {
+  border: 0;
+  background: transparent;
+  color: #826447;
+  font-size: 12px;
+  padding: 11px 4px;
+  min-height: 44px;
+  cursor: pointer;
+}
+.ng-text-button:hover {
+  color: #97460e;
+  text-decoration: underline;
+}
+.ng-dots {
+  display: flex;
+  gap: 5px;
+}
+.ng-dots span {
+  width: 6px;
+  height: 6px;
+  border-radius: 99px;
+  background: #ead9ca;
+}
+.ng-dots .is-active {
+  width: 19px;
+  background: #ee9d55;
+}
+.ng-community-panel.is-tour-panel {
+  width: min(400px, calc(100% - 32px));
+  padding: 28px 24px 18px;
+  max-height: calc(100% - 32px);
+}
+.is-tour-panel h2 {
+  font-size: 21px;
+  padding-right: 14px;
+}
+.is-tour-panel p {
+  font-size: 13px;
+}
+.ng-community-panel .ng-footer-hint {
+  font-size: 10px;
+  color: #8b7c6f;
+  margin: 12px 0 0;
+}
+.ng-help-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9px;
+}
+.ng-help-grid button {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  text-align: left;
+  border: 1px solid var(--ng-border);
+  border-radius: 15px;
+  padding: 12px;
+  background: #fffaf4;
+  color: #74583e;
+  cursor: pointer;
+}
+.ng-help-grid button:hover {
+  border-color: #e0ac76;
+  background: #fff1e2;
+}
+.ng-feature-symbol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: serif;
+  color: #ac6534;
+  background: #faebd8;
+  border-radius: 9px;
+  flex-shrink: 0;
+  width: 32px;
+  height: 37px;
+  font-size: 20px;
+}
+.ng-help-grid button > span:nth-child(2) {
+  flex: 1;
+}
+.ng-help-grid strong {
+  display: block;
+  font-size: 12px;
+}
+.ng-help-grid small {
+  display: block;
+  font-size: 10px;
+  line-height: 1.5;
+  margin-top: 3px;
+  color: #8b7765;
+}
+.ng-replay-welcome {
+  display: block;
+  margin: 16px auto 0;
+}
+.ng-current-lesson-guide {
+  margin-bottom: 16px;
+}
+.ng-community-panel.is-coffee {
+  width: min(390px, calc(100% - 32px));
+  text-align: center;
+  padding: 24px;
+}
+.is-coffee h2 {
+  font-size: 22px;
+}
+.is-coffee p {
+  font-size: 12px;
+}
+.ng-coffee-emblem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  margin: 0 auto 12px;
+  color: #8b4e21;
+  background: #ffedcf;
+  border-radius: 50%;
+}
+.ng-qr-frame {
+  max-width: 190px;
+  padding: 7px;
+  margin: 10px auto 15px;
+  border: 1px solid #ecdfd0;
+  background: white;
+  border-radius: 14px;
+}
+.ng-qr-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 7px;
+}
+.ng-bank-details {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: 10px;
+  color: #7c6957;
+}
+.ng-account-number {
+  border: 0;
+  background: transparent;
+  color: #59381d;
+  font-size: 20px;
+  font-family: ReadexPro-SemiBold, sans-serif;
+  cursor: pointer;
+  padding: 6px;
+  min-height: 44px;
+}
+.ng-account-number span {
+  font-size: 16px;
+  margin-left: 6px;
+  color: #a07c58;
+}
+.ng-qr-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 11px;
+}
+.ng-qr-actions a {
+  color: #9b4818;
+  text-underline-offset: 3px;
+  padding: 7px 0;
+}
+.ng-community-panel .ng-copy-status {
+  font-size: 10px;
+  color: #34704a;
+  margin: 0;
+}
+.ng-community-panel.is-coffee .ng-note {
+  margin-top: 14px;
+  font-size: 10px;
+}
+.ng-community-dock button:focus-visible,
+.ng-community-dialog button:focus-visible,
+.ng-community-dialog a:focus-visible {
+  outline: 2px solid #a35216;
+  outline-offset: 3px;
+}
+@keyframes ng-panel-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (max-width: 600px) {
+  .ng-welcome-kana {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+  .ng-community-dock {
+    right: 13px;
+    bottom: calc(
+      var(--ng-bottom-inset, 0px) + 12px + env(safe-area-inset-bottom)
+    );
+    gap: 7px;
+  }
+  .ng-coffee-trigger {
+    width: 44px;
+    padding: 0;
+    justify-content: center;
+  }
+  .ng-coffee-trigger > span {
+    display: none;
+  }
+  .ng-community-panel {
+    padding: 24px 21px;
+    border-radius: 23px;
+  }
+  .ng-community-panel h2 {
+    font-size: 23px;
+  }
+  .ng-welcome-art {
+    height: 135px;
+    margin: 12px 0 20px;
+  }
+  .ng-welcome-art img {
+    width: 125px;
+    height: 125px;
+  }
+  .ng-help-grid {
+    grid-template-columns: 1fr;
+  }
+  .ng-help-grid button {
+    padding: 9px 11px;
+  }
+  .ng-tour-footer {
+    gap: 7px;
+  }
+  .ng-primary {
+    padding: 11px 14px;
+  }
+  .ng-community-panel.is-tour-panel h2 {
+    font-size: 20px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ng-community-panel {
+    animation: none;
+  }
+  .ng-community-dock button {
+    transition: none;
+  }
+}

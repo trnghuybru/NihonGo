@@ -42,6 +42,7 @@ import {
 } from '../services/flashcardService';
 import { colors, layout, spacing, typography } from '../theme/theme';
 import { betaGamesWeb, betaWeb } from '../config/beta';
+import { CommunityExperience } from '../../web/CommunityExperience';
 import { AccountScreen } from './AccountScreen';
 import { DailyFlashcardQuizScreen } from './DailyFlashcardQuizScreen';
 const FlashcardScreen = lazy(async () => {
@@ -264,7 +265,7 @@ function WebWorkspace({
                     </View>
                   </View>
                 ) : null}
-                <View style={styles.screen}>
+                <View style={styles.screen} testID="tour-workspace">
                   <Suspense
                     fallback={
                       <View style={styles.routeLoading}>
@@ -497,6 +498,14 @@ function WebWorkspace({
                 />
               </View>
             ) : null}
+            <CommunityExperience
+              key={user.id}
+              accountId={user.id}
+              name={user.name}
+              pathname={nav.pathname}
+              navigate={navigate}
+              bottomInset={desktop ? 0 : navigationHeight}
+            />
           </View>
         </WebLayoutContext.Provider>
       </BottomNavigationInsetContext.Provider>

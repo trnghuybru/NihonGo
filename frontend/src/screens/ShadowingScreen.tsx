@@ -641,6 +641,7 @@ export function ShadowingScreen({
       units * fontSize * fontScale + tokenSpacing > availableWidth * 2;
     return (
       <View
+        testID="tour-listening-lesson"
         style={[
           styles.screen,
           {
@@ -657,7 +658,7 @@ export function ShadowingScreen({
             backLabel="Danh sách video"
             onBack={leaveLesson}
           />
-          <View style={styles.videoStage}>
+          <View style={styles.videoStage} testID="tour-listening-player">
             {lesson.segments[index] ? (
               <VideoExamplePlayer
                 pausedForLookup={Boolean(lookupWord)}
@@ -865,7 +866,7 @@ export function ShadowingScreen({
             >
               <Text style={styles.label}>↓</Text>
             </Pressable>
-            <View style={styles.playbackControls}>
+            <View style={styles.playbackControls} testID="tour-listening-playback">
               <Pressable
                 accessibilityRole="button"
                 accessibilityLabel="Ví dụ trước"
@@ -1109,7 +1110,7 @@ export function ShadowingScreen({
           },
         ]}
         ListHeaderComponent={
-          <View style={styles.catalogHeader}>
+          <View style={styles.catalogHeader} testID="tour-listening-library">
             {!desktop && <BrandLogo />}
             <View
               style={[styles.catalogCopy, desktop && styles.desktopCatalogCopy]}

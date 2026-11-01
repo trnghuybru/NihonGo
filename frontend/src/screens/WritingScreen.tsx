@@ -1061,6 +1061,7 @@ export function WritingScreen() {
         <View style={styles.section}>
           <Pressable
             accessibilityRole="button"
+            testID="tour-writing-start"
             onPress={() => setView('exercise')}
             style={({ pressed }) => [styles.heroCard, pressed && styles.promptCardPressed]}
           >
