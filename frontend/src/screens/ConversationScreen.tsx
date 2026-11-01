@@ -39,6 +39,8 @@ import { useSentenceFeedback } from '../hooks/useSentenceFeedback';
 import { GeminiLiveService } from '../services/geminiLiveService';
 import { StartedSession, speakingService } from '../services/speakingService';
 import { errorMessage } from '../hooks/useSpeakingScenarios';
+import { betaLiveWeb, betaWeb } from '../config/beta';
+import { BetaTextConversationScreen } from './BetaTextConversationScreen';
 import { ConversationEvaluationScreen } from './ConversationEvaluationScreen';
 import {
   colors,
@@ -50,6 +52,18 @@ import {
 } from '../theme/theme';
 
 export function ConversationScreen({
+  result,
+  onBack,
+}: {
+  result: StartedSession;
+  onBack: () => void;
+}) {
+  if (betaWeb && !betaLiveWeb)
+    return <BetaTextConversationScreen result={result} onBack={onBack} />;
+  return <LiveConversationScreen result={result} onBack={onBack} />;
+}
+
+function LiveConversationScreen({
   result,
   onBack,
 }: {
@@ -129,7 +143,7 @@ export function ConversationScreen({
   ]);
   useEffect(() => {
     if (!chat.ready || !active) return;
-    connect();
+    if (!betaWeb) connect();
     const subscription = AppState.addEventListener('change', next => {
       if (next === 'background') {
         client.current?.interrupt();
@@ -399,7 +413,7 @@ export function ConversationScreen({
             presentation.transport !== 'connecting' &&
             chat.ready)) ? (
           <AuthButton
-            label={unsaved ? 'Thử lưu lại' : 'Kết nối lại'}
+            label={unsaved ? 'Thử lưu lại' : betaWeb && phase === 'idle' ? 'Bắt đầu Live' : 'Kết nối lại'}
             variant="outline"
             onPress={() => {
               if (unsaved) client.current?.retrySave();

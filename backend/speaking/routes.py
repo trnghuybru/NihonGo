@@ -86,6 +86,12 @@ def provision_live(session_id):
     return jsonify(live_token(g.user.id, session_id))
 
 
+@bp.route("/sessions/<session_id>/live-stream", methods=["GET"], websocket=True)
+def gemini_live_stream(session_id):
+    from .gemini_live_gateway import serve_live_stream
+    return serve_live_stream(session_id)
+
+
 @bp.post("/sessions/<session_id>/live-turns")
 @require_auth
 def persist_live_turn(session_id):

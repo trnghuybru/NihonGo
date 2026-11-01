@@ -19,6 +19,7 @@ export function DesktopNavigation({
   activeActivity,
   onOpenFlashcards,
   onOpenGames,
+  showGames = true,
   onOpenSkill,
   user,
 }: {
@@ -28,6 +29,7 @@ export function DesktopNavigation({
   activeActivity: 'flashcards' | 'games' | null;
   onOpenFlashcards: () => void;
   onOpenGames: () => void;
+  showGames?: boolean;
   onOpenSkill: (skill: LearningSkill) => void;
   user: User;
 }) {
@@ -79,7 +81,15 @@ export function DesktopNavigation({
       {(
         [
           { id: 'flashcards', label: 'Flashcard', onPress: onOpenFlashcards },
-          { id: 'games', label: 'Game từ vựng', onPress: onOpenGames },
+          ...(showGames
+            ? [
+                {
+                  id: 'games' as const,
+                  label: 'Game từ vựng',
+                  onPress: onOpenGames,
+                },
+              ]
+            : []),
         ] as const
       ).map(item => (
         <Pressable

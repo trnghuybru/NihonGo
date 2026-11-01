@@ -12,6 +12,7 @@ import requests
 from sqlalchemy import select
 
 from api_errors import ApiError
+from services.gemini_provider import gemini_configured
 from extensions import db
 from video_examples.models import CaptionSegment, ExampleVideo
 from .models import ShadowingJob
@@ -172,7 +173,8 @@ def generate_window(source, window, key, model, deadline):
 
 def request_questions(key, model, payload, timeout):
     try:
-        response = requests.post(f'https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent',
+        from beta_ai.service import post as gemini_post
+        response = gemini_post(f'https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent',
             headers={'x-goog-api-key': key}, json=payload, timeout=(min(3, timeout / 4), timeout))
     except requests.RequestException:
         raise ApiError('Không kết nối được AI tạo câu hỏi. Vui lòng thử lại.', 503, 'quiz_unavailable') from None
@@ -196,12 +198,17 @@ def request_questions(key, model, payload, timeout):
 def generate_questions(source):
     key = os.getenv('GEMINI_API_KEY', '').strip()
     model = os.getenv('SHADOWING_QUIZ_MODEL', DEFAULT_MODEL).strip() or DEFAULT_MODEL
-    if not key:
+    if not gemini_configured():
         raise ApiError('Chưa cấu hình Gemini để tạo câu hỏi.', 503, 'quiz_unavailable')
     if not re.fullmatch(r'[a-zA-Z0-9._-]+', model):
         raise ApiError('Model tạo câu hỏi chưa hợp lệ.', 503, 'quiz_unavailable')
     deadline = time.monotonic() + 65
-    with ThreadPoolExecutor(max_workers=min(3, len(source['windows']))) as executor:
-        items = list(executor.map(lambda window: generate_window(source, window, key, model, deadline), source['windows']))
+    from auth.beta import enabled as beta_enabled
+    if beta_enabled():
+        # Keep Flask user context available to the budget ledger.
+        items = [generate_window(source, window, key, model, deadline) for window in source['windows']]
+    else:
+        with ThreadPoolExecutor(max_workers=min(3, len(source['windows']))) as executor:
+            items = list(executor.map(lambda window: generate_window(source, window, key, model, deadline), source['windows']))
     return {'questions': validate_questions({'questions': items}, source),
             'level': source['jlpt_level'], 'language': 'ja'}

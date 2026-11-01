@@ -15,12 +15,14 @@ from handwriting import init_handwriting
 from reading import init_reading
 from translation import init_translation
 from games import init_games
+from services.gemini_provider import gemini_configured
 
 load_dotenv()
 
 app = Flask(__name__, static_folder=os.path.abspath(os.path.join(os.path.dirname(__file__), "static")))
-# Cho phép CORS cho mọi nguồn trong môi trường dev / mobile
-CORS(app, resources={r"/*": {"origins": "*"}})
+# Browser origins are restricted in production; native clients are unaffected by CORS.
+cors_origins = [value.strip() for value in os.getenv("APP_CORS_ORIGINS", "").split(",") if value.strip()]
+CORS(app, resources={r"/*": {"origins": (cors_origins if os.getenv("APP_ENV") == "production" else "*")}})
 init_auth(app)
 init_learning(app)
 init_speaking(app)
@@ -40,7 +42,7 @@ def index():
     return jsonify({
         "status": "ok",
         "service": "Voice AI Backend",
-        "gemini_configured": bool(os.getenv("GEMINI_API_KEY")),
+        "gemini_configured": gemini_configured(),
     })
 
 

@@ -246,6 +246,29 @@ test('uses an ephemeral token and restores locked session history before enablin
   ]);
   expect(callbacks.onState).toHaveBeenLastCalledWith('ready');
 });
+test('connects through the beta gateway and accepts Vertex transcription events', async () => {
+  jest.mocked(speakingService.liveToken).mockResolvedValue({
+    token: 'signed-gateway',
+    model: 'projects/test/locations/us-central1/publishers/google/models/live',
+    gateway_url: '/api/speaking/sessions/session/live-stream',
+    lease: 'signed-transcript',
+    last_sequence: 1,
+    history: [],
+  });
+  await connect();
+  expect(Socket.instance.url).toBe(
+    'ws://localhost:5001/api/speaking/sessions/session/live-stream?access_token=signed-gateway',
+  );
+  await service.startSpeaking();
+  await service.stopSpeaking();
+  Socket.instance.receive({ inputTranscription: { text: 'こんにちは' } });
+  Socket.instance.receive({ outputTranscription: { text: 'こんにちは！' } });
+  Socket.instance.receive({ serverContent: { turnComplete: true } });
+  await flush();
+  expect(speakingService.saveLiveTurn).toHaveBeenCalledWith(
+    'session', expect.objectContaining({ user_text: 'こんにちは', assistant_text: 'こんにちは！' }),
+  );
+});
 test('streams PCM and activity boundaries, including release before microphone finishes opening', async () => {
   await connect();
   let ready!: () => void;

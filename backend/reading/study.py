@@ -10,6 +10,7 @@ import uuid
 from flask import g, current_app
 from sqlalchemy import select
 from api_errors import ApiError
+from services.gemini_provider import gemini_configured
 from extensions import db
 from shadowing.quiz import request_questions
 from .models import ReadingInsight, ReadingPassage
@@ -126,7 +127,7 @@ def normalize(data, source, kind):
 def generate(source, kind):
     key = os.getenv('GEMINI_API_KEY', '').strip()
     model = os.getenv('READING_AI_MODEL', DEFAULT_MODEL).strip() or DEFAULT_MODEL
-    if not key:
+    if not gemini_configured():
         raise ApiError('Chưa cấu hình Gemini cho phần đọc hiểu.', 503, 'reading_ai_unavailable')
     if not re.fullmatch(r'[a-zA-Z0-9._-]+', model):
         raise ApiError('Cấu hình model đọc hiểu chưa hợp lệ.', 503, 'reading_ai_unavailable')

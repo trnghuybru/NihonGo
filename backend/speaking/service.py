@@ -1,5 +1,6 @@
 """Scenario discovery and atomic creation of practice sessions."""
 from dataclasses import dataclass
+import os
 import uuid
 
 from sqlalchemy import exists, func, select
@@ -152,6 +153,9 @@ class StartSessionInput:
         recording = data.get("audio_storage_enabled", False)
         if type(recording) is not bool:
             raise ApiError("Tùy chọn lưu audio phải là boolean.")
+        from auth.beta import enabled as beta_enabled
+        if beta_enabled() and recording and os.getenv("BETA_AUDIO_STORAGE_ENABLED", "").lower() not in {"1", "true", "yes"}:
+            raise ApiError("Lưu âm thanh chưa mở trong bản beta.", 403, "beta_audio_disabled")
         role = parse_id(data["role_id"], "role_id") if "role_id" in data else None
         return cls(role, mode, recording)
 

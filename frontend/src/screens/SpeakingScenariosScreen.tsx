@@ -23,6 +23,7 @@ import { HomeFeatureIcon } from '../components/HomeFeatureIcon';
 import { ConversationScreen } from './ConversationScreen';
 import { SpeakingHistory } from './SpeakingHistory';
 import { MISSING_DATA } from '../config/content';
+import { betaLiveWeb, betaWeb, betaAudioWeb } from '../config/beta';
 import {
   errorMessage,
   useRemoteResource,
@@ -191,7 +192,7 @@ function ScenarioPreview({
   startError: string;
 }) {
   const [roleId, setRoleId] = useState(scenario.roles[0]?.id || '');
-  const [saveAudio, setSaveAudio] = useState(true);
+  const [saveAudio, setSaveAudio] = useState(false);
   const role = scenario.roles.find(item => item.id === roleId);
   return (
     <View style={styles.previewContent}>
@@ -234,7 +235,7 @@ function ScenarioPreview({
           ))}
         </View>
       ) : null}
-      <Pressable
+      {(!betaWeb || betaAudioWeb) ? <Pressable
         accessibilityRole="checkbox"
         accessibilityLabel="Lưu âm thanh để nghe lại"
         accessibilityState={{ checked: saveAudio, disabled: busy }}
@@ -248,7 +249,7 @@ function ScenarioPreview({
         <Text style={styles.resultCount}>
           Lưu giọng của bạn và Aoi trong lịch sử hội thoại.
         </Text>
-      </Pressable>
+      </Pressable> : null}
       <AuthNotice message={startError} error />
       <AuthButton
         label="Bắt đầu trò chuyện"
@@ -257,8 +258,8 @@ function ScenarioPreview({
         onPress={() =>
           onStart({
             role_id: roleId,
-            input_mode: 'voice',
-            audio_storage_enabled: saveAudio,
+            input_mode: betaWeb && !betaLiveWeb ? 'text' : 'voice',
+            audio_storage_enabled: (!betaWeb || betaAudioWeb) && saveAudio,
           })
         }
       />

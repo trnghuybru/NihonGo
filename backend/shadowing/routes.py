@@ -40,7 +40,7 @@ def translation(job_id):
     if request.method == 'POST':
         from auth.security import limit
         limit('shadowing-translation', g.user.id, 30, 3600)
-        row, source = request_translation(job_id)
+        row, source = request_translation(job_id, g.user.id)
     else:
         source = source_for(job_id)
         row = db.session.scalar(select(ShadowingTranslation).where(ShadowingTranslation.job_id == job_id))

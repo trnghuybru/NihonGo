@@ -1,0 +1,25 @@
+{$BETA_DOMAIN} {
+    encode zstd gzip
+
+    @backend path /api/* /static/* /socket.io/*
+    handle @backend {
+        reverse_proxy backend:5001
+    }
+
+    handle {
+        root * /srv
+        try_files {path} /index.html
+        file_server
+    }
+
+    header {
+        X-Content-Type-Options nosniff
+        Referrer-Policy strict-origin-when-cross-origin
+        X-Frame-Options DENY
+    }
+}
+
+voice.momonihongo.app {
+    reverse_proxy livekit:7880
+    header X-Content-Type-Options nosniff
+}

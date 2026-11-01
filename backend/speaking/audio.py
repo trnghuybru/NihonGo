@@ -11,7 +11,7 @@ from .conversation import owned_session
 from .models import ConversationAudioAsset, ConversationMessage
 from .service import parse_id
 
-MAX_DURATION_MS = 180_000
+MAX_DURATION_MS = 240_000
 MAX_SIZE_BYTES = 44 + 48000 * 2 * MAX_DURATION_MS // 1000
 
 
@@ -45,7 +45,7 @@ def prepare_upload(user_id, session_id, message_id, data):
             or type(rate) is not int or rate not in allowed_rates(message)
             or not 44 < size <= MAX_SIZE_BYTES or (size - 44) % 2
             or abs((size - 44) * 1000 / (rate * 2) - duration) > 1):
-        raise ApiError("Âm thanh phải là WAV PCM16 mono, tối đa 3 phút mỗi lượt.")
+        raise ApiError("Âm thanh phải là WAV PCM16 mono, tối đa 4 phút mỗi lượt.")
     identifier = str(uuid.uuid5(uuid.NAMESPACE_URL, f"nihongo-audio:{session.id}:{message.id}"))
     asset = db.session.get(ConversationAudioAsset, identifier)
     if asset:

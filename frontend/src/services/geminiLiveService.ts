@@ -1,4 +1,5 @@
 import { LiveAudio } from './liveAudio';
+import { apiBaseUrl } from '../config/api';
 import { PcmRecording, WavRecording } from './audioRecording';
 import {
   speakingService,
@@ -101,21 +102,22 @@ export class GeminiLiveService {
     this.openingMessageId = openingMessageId;
     this.setState('connecting');
     try {
-      this.credentials = await speakingService.liveToken(this.sessionId);
-      if (this.disposed) return;
       await this.audio.prepare();
+      if (this.disposed) return;
+      this.credentials = await speakingService.liveToken(this.sessionId);
       if (this.disposed) return;
       await new Promise<void>((resolve, reject) => {
         this.connectReject = reject;
         this.timeout = setTimeout(
           () => this.fail('Kết nối Gemini quá lâu. Hãy thử lại.'),
-          15000,
+          30000,
         );
-        const socket = new WebSocket(
-          `${endpoint}?access_token=${encodeURIComponent(
-            this.credentials!.token,
-          )}`,
-        );
+        const gateway = this.credentials!.gateway_url;
+        const origin = gateway ? apiBaseUrl() : '';
+        const target = gateway
+          ? `${origin.replace(/^http/, 'ws')}${gateway}`
+          : endpoint;
+        const socket = new WebSocket(`${target}?access_token=${encodeURIComponent(this.credentials!.token)}`);
         (socket as WebSocket & { binaryType: string }).binaryType =
           'arraybuffer';
         this.socket = socket;
@@ -190,6 +192,8 @@ export class GeminiLiveService {
             else if (message.goAway)
               this.fail('Phiên Live sắp hết hạn. Hãy kết nối lại để tiếp tục.');
             else if (message.serverContent) this.receive(message.serverContent);
+            else if (message.inputTranscription || message.outputTranscription)
+              this.receive(message);
           } catch {
             this.fail('Không xử lý được phản hồi Gemini. Hãy kết nối lại.');
           }

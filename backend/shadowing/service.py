@@ -66,6 +66,10 @@ def submit(user_id, url):
     job = db.session.scalar(select(ShadowingJob).where(ShadowingJob.video_id == identifier))
     subscribed = job and db.session.get(ShadowingRequest, (user_id, job.id))
     if not ready and not (subscribed and job.status in ACTIVE):
+        from auth.beta import enabled as beta_enabled
+        from beta_daily.service import daily_mode, reserve_video
+        if beta_enabled() and daily_mode():
+            reserve_video(user_id, identifier)
         busy = db.session.scalar(select(func.count()).select_from(ShadowingRequest).join(ShadowingJob)
             .where(ShadowingRequest.user_id == user_id, ShadowingJob.status.in_(ACTIVE)))
         if busy:

@@ -6,6 +6,8 @@ import re
 import requests
 
 from api_errors import ApiError
+from beta_ai.service import post as gemini_post
+from services.gemini_provider import gemini_configured
 from services.llm_service import DEFAULT_MODEL, gemini_text, gemini_url
 
 OUTPUT_SCHEMA = {
@@ -28,7 +30,7 @@ Return only a JSON object matching the supplied schema."""
 
 def evaluate_writing(text, prompt_title, level, instruction=""):
     key = os.getenv("GEMINI_API_KEY", "").strip().strip('"').strip("'")
-    if not key:
+    if not gemini_configured():
         raise ApiError("Chưa cấu hình GEMINI_API_KEY để nhận xét bài viết.", 503, "writing_ai_unavailable")
     if len(text) > 12000:
         raise ApiError("Bài viết quá dài để phân tích trong một lần.", 422, "writing_too_long")
@@ -57,7 +59,7 @@ def evaluate_writing(text, prompt_title, level, instruction=""):
         request_body["generationConfig"]["thinkingConfig"] = {"thinkingLevel": "minimal"}
 
     try:
-        response = requests.post(
+        response = gemini_post(
             gemini_url(model),
             headers={"x-goog-api-key": key, "Content-Type": "application/json"},
             json=request_body,

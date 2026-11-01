@@ -134,6 +134,7 @@ export interface ConversationHistory {
 export interface LiveCredentials {
   token: string;
   model: string;
+  gateway_url?: string;
   lease: string;
   last_sequence: number;
   history: { role: 'user' | 'model'; parts: { text: string }[] }[];

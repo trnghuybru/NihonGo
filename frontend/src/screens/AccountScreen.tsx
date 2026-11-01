@@ -14,7 +14,14 @@ import {
   AuthCard,
   AuthContact,
 } from '../components/AuthForm';
-import { authService, Challenge, User } from '../services/authService';
+import {
+  authService,
+  Challenge,
+  User,
+  type AiBudget,
+  type DailyQuota,
+} from '../services/authService';
+import { betaWeb } from '../config/beta';
 import { colors, radius, spacing, typography } from '../theme/theme';
 import { AuthIcon } from '../components/AuthIcon';
 import { useWebLayout } from '../hooks/useWebLayout';
@@ -47,6 +54,28 @@ export function AccountScreen({
   const [logoutError, setLogoutError] = useState('');
   const busyRef = useRef(false);
   const [error, setError] = useState('');
+  const [aiBudget, setAiBudget] = useState<AiBudget | null>(null);
+  const [dailyQuota, setDailyQuota] = useState<DailyQuota | null>(null);
+  const [budgetError, setBudgetError] = useState('');
+  async function reloadBudget() {
+    try {
+      if (betaWeb) setDailyQuota(await authService.dailyQuota());
+      else setAiBudget(await authService.aiBudget());
+      setBudgetError('');
+    } catch (failure) {
+      if (
+        failure &&
+        typeof failure === 'object' &&
+        'status' in failure &&
+        failure.status === 404
+      )
+        return;
+      setBudgetError(betaWeb ? 'Chưa tải được lượt dùng hôm nay. Vui lòng thử lại.' : 'Chưa tải được số dư AI. Vui lòng thử lại.');
+    }
+  }
+  useEffect(() => {
+    reloadBudget();
+  }, [user.id]);
   const [challenge, setChallenge] = useState<Challenge | null>(null);
   const [code, setCode] = useState('');
   const [resendAt, setResendAt] = useState(0);
@@ -253,6 +282,38 @@ export function AccountScreen({
           style={[styles.sideColumn, desktop && styles.desktopSideColumn]}
           testID="account-settings"
         >
+          {dailyQuota || aiBudget || budgetError ? (
+            <AuthCard>
+              <Text accessibilityRole="header" style={styles.sectionTitle}>
+                {dailyQuota ? 'Lượt dùng hôm nay' : 'Ví AI dùng thử'}
+              </Text>
+              {dailyQuota ? (
+                <Text style={styles.description}>
+                  Dịch video: còn {dailyQuota.video_remaining}/{dailyQuota.video_limit}.{' '}
+                  Nói Live: còn {dailyQuota.live_remaining}/{dailyQuota.live_limit} phiên,{' '}
+                  tối đa {dailyQuota.live_seconds_per_session / 60} phút/phiên.{' '}
+                  Làm mới lúc 00:00 giờ Việt Nam.
+                </Text>
+              ) : null}
+              {aiBudget ? (
+                <Text style={styles.description}>
+                  Còn {aiBudget.available_usd.toFixed(2)} USD /{' '}
+                  {aiBudget.budget_usd.toFixed(2)} USD.
+                  {aiBudget.expires_at
+                    ? ` Hết hạn ${new Date(
+                        aiBudget.expires_at * 1000,
+                      ).toLocaleDateString('vi-VN')}.`
+                    : ' Thời hạn 14 ngày bắt đầu từ lần dùng AI đầu tiên.'}
+                </Text>
+              ) : null}
+              <AuthNotice message={budgetError} error />
+              <AuthButton
+                label={dailyQuota ? 'Cập nhật lượt dùng' : 'Cập nhật số dư'}
+                variant="outline"
+                onPress={reloadBudget}
+              />
+            </AuthCard>
+          ) : null}
           <AuthCard>
             <Text accessibilityRole="header" style={styles.sectionTitle}>
               Thiết lập học tập

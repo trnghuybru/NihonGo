@@ -14,6 +14,17 @@ SNAPSHOT = {"title": "Interview", "context": "Office", "language_code": "ja-JP",
 
 
 class SpeakingAITests(unittest.TestCase):
+    def test_payment_required_has_actionable_safe_message(self):
+        response = MagicMock(status_code=402)
+        response.__enter__.return_value = response
+        with patch.dict(os.environ, {"GEMINI_API_KEY": "server-key"}), \
+                patch("speaking.ai.requests.post", return_value=response):
+            with self.assertRaises(ApiError) as error:
+                generate_reply(SNAPSHOT, [])
+        self.assertEqual(error.exception.code, "ai_payment_required")
+        self.assertIn("Gemini", error.exception.message)
+        response.json.assert_not_called()
+
     def test_provider_rate_limit_is_returned_with_a_safe_retry_delay(self):
         for header, expected in (("12", 12), ("", 30), ("invalid", 30), ("900", 300)):
             response = MagicMock(status_code=429, headers={"Retry-After": header})

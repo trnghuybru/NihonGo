@@ -25,6 +25,10 @@ def latest_message(session_id):
 
 
 def live_token(user_id, session_id):
+    from auth.beta import enabled as beta_enabled
+    if beta_enabled():
+        from .gemini_live_gateway import issue_gateway_token
+        return issue_gateway_token(user_id, session_id)
     session = owned_session(user_id, session_id)
     if session.status != "active":
         raise ApiError("Phiên này chỉ có thể xem lại.", 409, "session_inactive")
@@ -36,6 +40,9 @@ def live_token(user_id, session_id):
         raise ApiError("Chưa cấu hình GEMINI_API_KEY trên máy chủ.", 503, "live_unavailable")
     model = os.getenv("GEMINI_LIVE_MODEL", DEFAULT_LIVE_MODEL).removeprefix("models/")
     model = "models/" + model
+    from auth.beta import enabled as beta_enabled
+    from beta_ai.service import finish_live, hold_live
+    beta = beta_enabled()
     now = utc_now()
     setup = {
         "model": model,
@@ -48,9 +55,10 @@ def live_token(user_id, session_id):
         "contextWindowCompression": {"slidingWindow": {}},
         "historyConfig": {"initialHistoryInClientContent": True},
     }
+    attempt_id = hold_live(model.removeprefix("models/"))
     try:
         response = requests.post(TOKEN_URL, headers={"x-goog-api-key": key}, json={
-            "uses": 1, "expireTime": (now + timedelta(minutes=30)).isoformat(),
+            "uses": 1, "expireTime": (now + timedelta(minutes=3 if beta else 30)).isoformat(),
             "newSessionExpireTime": (now + timedelta(minutes=1)).isoformat(),
             # Lock the entire setup. Client only needs the model, never the private prompt.
             "bidiGenerateContentSetup": setup,
@@ -62,9 +70,15 @@ def live_token(user_id, session_id):
         token = response.json()["name"]
         if not isinstance(token, str) or not token:
             raise ValueError()
+        finish_live(attempt_id, success=True)
+    except ApiError:
+        finish_live(attempt_id, success=False)
+        raise
     except requests.Timeout:
+        finish_live(attempt_id, success=False)
         raise ApiError("Kết nối Gemini quá lâu. Vui lòng thử lại.", 504, "live_timeout") from None
     except (requests.RequestException, ValueError, KeyError, TypeError):
+        finish_live(attempt_id, success=False)
         raise ApiError("Không thể kết nối Gemini Live. Kiểm tra API key và model trên máy chủ.",
                        502, "live_failed") from None
     rows = db.session.scalars(select(ConversationMessage).where(

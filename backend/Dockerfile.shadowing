@@ -6,6 +6,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends libgomp1 ca-cer
 WORKDIR /app
 COPY requirements.txt /tmp/requirements.txt
 COPY shadowing/requirements.txt /tmp/shadowing-requirements.txt
+# This VPS has no GPU. Preinstall matching CPU wheels so the general
+# requirements cannot resolve multi-GB CUDA packages from PyPI.
+RUN --mount=type=cache,target=/root/.cache/pip \
+    pip install --timeout 60 torch==2.14.1 torchvision==0.29.1 \
+      --index-url https://download.pytorch.org/whl/cpu
 RUN --mount=type=cache,target=/root/.cache/pip \
     pip install --timeout 60 -r /tmp/requirements.txt -r /tmp/shadowing-requirements.txt
 COPY . /app

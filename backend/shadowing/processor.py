@@ -228,6 +228,8 @@ def process_video(video_id, directory):
                 if raw:
                     break
             if not raw:
+                if os.getenv('BETA_MODE', '').strip().lower() in {'1', 'true', 'yes'}:
+                    raise ProcessingError('captions_required', 'Bản beta chỉ hỗ trợ video có phụ đề tiếng Nhật.')
                 publish_phase(directory, 'extracting', title)
                 downloader.download([url])
                 audio = next((path for path in Path(directory).glob('audio.*')

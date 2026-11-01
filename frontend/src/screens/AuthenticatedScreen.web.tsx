@@ -41,6 +41,7 @@ import {
   CustomDeck,
 } from '../services/flashcardService';
 import { colors, layout, spacing, typography } from '../theme/theme';
+import { betaGamesWeb, betaWeb } from '../config/beta';
 import { AccountScreen } from './AccountScreen';
 import { DailyFlashcardQuizScreen } from './DailyFlashcardQuizScreen';
 const FlashcardScreen = lazy(async () => {
@@ -237,6 +238,7 @@ function WebWorkspace({
                   })
                 }
                 onOpenGames={openGames}
+                showGames={!betaWeb || betaGamesWeb}
               />
             ) : null}
             <ScreenBackHeaderContext.Provider
@@ -287,7 +289,7 @@ function WebWorkspace({
                             onOpenVocabulary={openLessons}
                             onOpenFlashcards={openFlashcards}
                             onOpenQuiz={openQuiz}
-                            onOpenGames={openGames}
+                            onOpenGames={betaWeb && !betaGamesWeb ? undefined : openGames}
                             onSearchVocabulary={(query, entry) =>
                               navigate(
                                 entry
@@ -309,7 +311,7 @@ function WebWorkspace({
                         element={
                           <PracticeScreen
                             onOpenSkill={openSkill}
-                            onOpenGames={openGames}
+                            onOpenGames={betaWeb && !betaGamesWeb ? undefined : openGames}
                             onOpenLessons={openLessons}
                             onOpenFlashcards={() =>
                               navigate('/flashcards', {
@@ -435,10 +437,14 @@ function WebWorkspace({
                           key={path}
                           path={path}
                           element={
-                            <VocabularyGameScreen
-                              userId={user.id}
-                              onExit={goPractice}
-                            />
+                            betaWeb && !betaGamesWeb ? (
+                              <Navigate replace to="/practice" />
+                            ) : (
+                              <VocabularyGameScreen
+                                userId={user.id}
+                                onExit={goPractice}
+                              />
+                            )
                           }
                         />
                       ))}

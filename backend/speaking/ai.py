@@ -8,6 +8,7 @@ import requests
 
 from api_errors import ApiError
 from services.llm_service import DEFAULT_MODEL, LEVEL_GUIDELINES, gemini_url, gemini_payload, gemini_text
+from services.gemini_provider import gemini_configured
 
 logger = logging.getLogger(__name__)
 
@@ -55,17 +56,24 @@ def build_scenario_system_prompt(snapshot):
 
 def generate_reply(snapshot, history):
     key = os.getenv("GEMINI_API_KEY", "").strip().strip('"').strip("'")
-    if not key:
+    if not gemini_configured():
         raise ApiError("Dịch vụ AI chưa được cấu hình.", 503, "ai_unavailable")
     prompt = build_scenario_system_prompt(snapshot)
     model = os.getenv("GEMINI_CHAT_MODEL") or DEFAULT_MODEL
     try:
-        with requests.post(
+        from beta_ai.service import post as gemini_post
+        with gemini_post(
             gemini_url(model),
             headers={"x-goog-api-key": key, "Content-Type": "application/json"},
             json=gemini_payload(prompt, history, model),
             timeout=(5, 25),
         ) as response:
+            if response.status_code == 402:
+                logger.warning("Conversation provider payment required")
+                raise ApiError(
+                    "Dịch vụ AI đang tạm ngừng do tài khoản Gemini chưa sẵn sàng thanh toán. Vui lòng báo quản trị viên.",
+                    503, "ai_payment_required",
+                )
             if response.status_code == 429:
                 retry_after = provider_retry_after(response)
                 logger.warning("Conversation provider rate limited; retry_after=%s", retry_after)

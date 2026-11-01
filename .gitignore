@@ -1,6 +1,9 @@
 # Environment variables and local secrets
 .env
 .env.*
+deploy/beta/secrets/*.json
+deploy/beta/secrets/*.yaml
+model-cache/
 !.env.example
 !.env.*.example
 

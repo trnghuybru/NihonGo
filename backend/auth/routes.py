@@ -20,6 +20,8 @@ def conflict():
 
 
 def issue_session(user):
+    from .beta import check_invite
+    check_invite(user.email)
     access, refresh = secrets.token_urlsafe(32), secrets.token_urlsafe(48)
     session = AuthSession(id=new_id(), user_id=user.id, access_hash=digest(access),
                           access_expires_at=now() + 900, expires_at=now() + 30 * 86400)
@@ -83,6 +85,27 @@ def configuration():
                     "password_min_length": 15})
 
 
+@bp.get("/ai-budget")
+@require_auth
+def ai_budget():
+    from .beta import enabled
+    from beta_daily.service import daily_mode
+    if not enabled() or daily_mode():
+        return jsonify({"error": "Ví AI beta chưa được bật.", "code": "beta_ai_disabled"}), 404
+    from beta_ai.service import balance
+    return jsonify(balance(g.user.id))
+
+
+@bp.get("/daily-quota")
+@require_auth
+def daily_quota():
+    from .beta import enabled
+    from beta_daily.service import daily_mode, status
+    if not enabled() or not daily_mode():
+        return jsonify({"error": "Quota theo ngày chưa được bật.", "code": "daily_quota_disabled"}), 404
+    return jsonify(status(g.user.id))
+
+
 @bp.post("/register")
 def register():
     data = body()
@@ -90,6 +113,8 @@ def register():
     if len(name) < 2 or any(ord(char) < 32 for char in name):
         raise AuthError("Tên cần từ 2 đến 100 ký tự.")
     normalized_email, normalized_phone = email(string(data, "email")), phone(string(data, "phone", 32))
+    from .beta import check_invite
+    check_invite(normalized_email)
     limit("register-email", normalized_email, 5, 3600)
     limit("register-phone", normalized_phone, 5, 3600)
     payload = {"name": name, "email": normalized_email, "phone": normalized_phone}
@@ -117,6 +142,8 @@ def verify():
     challenge = locked_challenge(data, "register")
     validate_code(challenge, data)
     payload = challenge.payload
+    from .beta import check_invite
+    check_invite(payload["email"], creating=True)
     if verified_user("email", payload["email"]) or verified_user("sms", payload["phone"]):
         conflict()
     user = User(id=new_id(), name=payload["name"], email=payload["email"], phone=payload["phone"],
@@ -188,6 +215,8 @@ def refresh():
     user = db.session.get(User, session.user_id)
     if session.revoked_at or session.expires_at <= now() or not user or not user.active:
         raise AuthError("Phiên đăng nhập đã hết hạn.", 401, "unauthorized")
+    from .beta import check_invite
+    check_invite(user.email)
     access, refresh_token = secrets.token_urlsafe(32), secrets.token_urlsafe(48)
     token.used_at = now()
     session.access_hash, session.access_expires_at = digest(access), min(now() + 900, session.expires_at)

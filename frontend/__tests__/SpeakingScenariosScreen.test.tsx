@@ -75,7 +75,7 @@ const started: StartedSession = {
     scenario_role_id: role.id,
     status: 'active',
     current_input_mode: 'voice',
-    audio_storage_enabled: true,
+    audio_storage_enabled: false,
     started_at: '2026-10-01T13:00:00Z',
     accumulated_active_ms: 0,
   },
@@ -234,7 +234,7 @@ test('opens context selection over chat and posts the briefing after starting', 
   expect(speakingService.start).toHaveBeenCalledWith(first.id, {
     role_id: role.id,
     input_mode: 'voice',
-    audio_storage_enabled: true,
+    audio_storage_enabled: false,
   });
   expect(tree.root.findAllByType(ConversationScreen)).toHaveLength(1);
   expect(screenText()).toContain('Lời mở đầu từ backend');
@@ -253,7 +253,7 @@ test('opens context selection over chat and posts the briefing after starting', 
   expect(speakingService.start).toHaveBeenCalledTimes(2);
 });
 
-test('allows disabling audio storage before creating a conversation', async () => {
+test('allows enabling audio storage when it is available', async () => {
   await render();
   await openFirst();
   const checkbox = tree.root.findAll(
@@ -261,12 +261,12 @@ test('allows disabling audio storage before creating a conversation', async () =
       node.props.accessibilityRole === 'checkbox' &&
       node.props.accessibilityLabel === 'Lưu âm thanh để nghe lại',
   )[0];
-  expect(checkbox.props.accessibilityState.checked).toBe(true);
+  expect(checkbox.props.accessibilityState.checked).toBe(false);
   await act(async () => checkbox.props.onPress());
   await press('Bắt đầu trò chuyện');
   expect(speakingService.start).toHaveBeenCalledWith(
     first.id,
-    expect.objectContaining({ audio_storage_enabled: false }),
+    expect.objectContaining({ audio_storage_enabled: true }),
   );
 });
 
@@ -422,7 +422,7 @@ test('loads API roles and sends the selected role instead of a hardcoded one', a
   expect(speakingService.start).toHaveBeenCalledWith(first.id, {
     role_id: another.id,
     input_mode: 'voice',
-    audio_storage_enabled: true,
+    audio_storage_enabled: false,
   });
   expect(screenText()).toContain('Bắt đầu trò chuyện cùng Aoi.');
 });

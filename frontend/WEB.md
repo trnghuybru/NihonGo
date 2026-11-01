@@ -24,6 +24,19 @@ Chỉ đặt địa chỉ backend vào biến này, không đặt GEMINI_API_KEY
 trong frontend. Các thao tác thực trên web dùng cùng database với app.
 Worker vẫn cần chạy cho các job dịch/nhập video nền.
 
+### Kiểm thử chế độ beta trên máy dev
+
+Source code beta nằm trong repository này; VPS nhận bản sao source và bản build web từ đây. `backend/.env` trên Mac và `backend/.env` trên VPS là **hai file cấu hình riêng**. Hiện file trên Mac chưa bật `BETA_MODE`, còn VPS dùng `BETA_MODE=true` và `BETA_QUOTA_MODE=daily`.
+
+Muốn thử giao diện beta ở local, chuẩn bị PostgreSQL, Redis, LiveKit và tài khoản thử **riêng trên máy dev**; đặt `BETA_MODE=true`, `BETA_QUOTA_MODE=daily`, `BETA_INVITE_EMAILS` và các khóa cần thiết trong `backend/.env` local. File [`.env.example`](../backend/.env.example) là mẫu tên biến; không sao chép `.env` production về máy dev. Sau khi chạy backend/worker local, khởi động web bằng:
+
+```sh
+cd frontend
+VITE_BETA_MODE=true VITE_BETA_LIVE_MODE=true VITE_BETA_AUDIO_STORAGE_MODE=true VITE_BETA_GAMES_MODE=true npm run web
+```
+
+Nếu chỉ làm giao diện hoặc chức năng thường, cứ dùng `npm run web` như trên; các cờ beta không cần bật. Những cờ `VITE_` được đóng vào bản web khi build, còn giới hạn lượt và quyền truy cập được backend kiểm tra khi chạy.
+
 ## Build
 
 ```sh

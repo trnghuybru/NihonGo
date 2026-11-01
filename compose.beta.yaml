@@ -1,0 +1,160 @@
+# Private web beta. Run with: docker compose --env-file backend/.env -f compose.beta.yaml up -d --build
+# Keep backend/.env out of Git; use URL-safe BETA_DB_PASSWORD.
+services:
+  postgres:
+    image: postgres:17-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: nihongo
+      POSTGRES_USER: nihongo
+      POSTGRES_PASSWORD: ${BETA_DB_PASSWORD:?Set BETA_DB_PASSWORD in backend/.env}
+    volumes:
+      - beta_postgres:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U nihongo -d nihongo"]
+      interval: 10s
+      timeout: 3s
+      retries: 10
+    networks: [private]
+
+  elasticmq:
+    image: softwaremill/elasticmq:1.7.1
+    restart: unless-stopped
+    user: "0:0"
+    volumes:
+      - ./backend/shadowing/elasticmq.conf:/opt/elasticmq.conf:ro
+      - beta_queue:/data
+    networks: [private]
+
+  redis:
+    image: redis:7.4-alpine
+    restart: unless-stopped
+    command: ["redis-server", "--save", "", "--appendonly", "no"]
+    networks: [private]
+
+  livekit:
+    image: livekit/livekit-server:v1.13.11
+    restart: unless-stopped
+    command: ["--config", "/etc/livekit.yaml"]
+    volumes:
+      - ./deploy/beta/secrets/livekit.yaml:/etc/livekit.yaml:ro
+    ports:
+      - "7881:7881/tcp"
+      - "7882:7882/udp"
+    depends_on:
+      redis:
+        condition: service_started
+    networks: [private]
+
+  migrate:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.shadowing
+    image: nihongo-beta-backend:local
+    env_file: ./backend/.env
+    environment: &backend_environment
+      APP_ENV: production
+      BETA_MODE: "true"
+      DATABASE_URL: postgresql+psycopg://nihongo:${BETA_DB_PASSWORD:?Set BETA_DB_PASSWORD in backend/.env}@postgres:5432/nihongo
+      SHADOWING_SQS_ENDPOINT: http://elasticmq:9324
+      SHADOWING_SQS_QUEUE_URL: ""
+      TRANSLATION_MODEL_PATH: /models/translation
+      S3_ENDPOINT_URL: ""
+      S3_PUBLIC_ENDPOINT_URL: ""
+      AUDIO_LOCAL_ROOT: /audio
+      GOOGLE_APPLICATION_CREDENTIALS: /run/vertex-secrets/vertex.json
+    volumes:
+      - ./backend/models/translation/m2m100_418M:/models/translation:ro
+    command: ["flask", "--app", "app", "db", "upgrade"]
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks: [private]
+    restart: "no"
+
+  backend:
+    image: nihongo-beta-backend:local
+    restart: unless-stopped
+    env_file: ./backend/.env
+    environment: *backend_environment
+    volumes:
+      - ./backend/models/translation/m2m100_418M:/models/translation:ro
+      - ./frontend/src/assets/characters:/frontend/src/assets/characters:ro
+      - ./backend/static:/app/static:ro
+      - ./deploy/beta/secrets:/run/vertex-secrets:ro
+      - beta_audio:/audio
+    command: ["gunicorn", "--bind", "0.0.0.0:5001", "--workers", "1", "--threads", "8", "--timeout", "330", "app:app"]
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+      elasticmq:
+        condition: service_started
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:5001/', timeout=3)"]
+      interval: 15s
+      timeout: 5s
+      retries: 8
+      start_period: 30s
+    networks: [private]
+
+  shadowing-worker:
+    image: nihongo-beta-backend:local
+    restart: unless-stopped
+    env_file: ./backend/.env
+    environment: *backend_environment
+    volumes:
+      - ./deploy/beta/secrets:/run/vertex-secrets:ro
+      - ./model-cache:/models/huggingface
+    command: ["python", "-m", "shadowing.worker"]
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+      elasticmq:
+        condition: service_started
+    networks: [private]
+
+  game-voice-worker:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.gamevoice
+    image: nihongo-beta-gamevoice:local
+    restart: unless-stopped
+    env_file: ./backend/.env
+    environment: *backend_environment
+    volumes:
+      - ./model-cache:/models/huggingface
+    command: ["python", "-m", "games.voice_worker"]
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+      livekit:
+        condition: service_started
+    networks: [private]
+
+  web:
+    image: caddy:2.8-alpine
+    restart: unless-stopped
+    environment:
+      BETA_DOMAIN: ${BETA_DOMAIN:?Set BETA_DOMAIN in backend/.env}
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./deploy/beta/Caddyfile:/etc/caddy/Caddyfile:ro
+      - ./frontend/dist-web:/srv:ro
+      - beta_caddy_data:/data
+      - beta_caddy_config:/config
+    depends_on:
+      backend:
+        condition: service_healthy
+    networks: [private]
+
+networks:
+  private:
+
+volumes:
+  beta_postgres:
+  beta_queue:
+  beta_caddy_data:
+  beta_caddy_config:
+  beta_audio:

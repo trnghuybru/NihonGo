@@ -10,6 +10,7 @@ from pathlib import Path
 import requests
 
 from api_errors import ApiError
+from services.gemini_provider import gemini_configured
 from .ai import provider_retry_after
 
 DEFAULT_MODEL = 'gemini-3.1-flash-lite'
@@ -170,7 +171,7 @@ def evaluation_model():
 def generate_evaluation(snapshot, messages, *, prompt=SYSTEM_PROMPT, schema=OUTPUT_SCHEMA,
                         parser=parse_result, target_message_id=None):
     key = os.getenv("GEMINI_API_KEY", "").strip().strip('"').strip("'")
-    if not key:
+    if not gemini_configured():
         raise ApiError("Chưa cấu hình GEMINI_API_KEY để nhận xét hội thoại.", 503, "evaluation_unavailable")
     model = evaluation_model()
     if not re.fullmatch(r'[a-zA-Z0-9._-]+', model):
@@ -197,7 +198,8 @@ def generate_evaluation(snapshot, messages, *, prompt=SYSTEM_PROMPT, schema=OUTP
         if remaining < 1:
             raise ApiError("Phân tích quá lâu. Bạn có thể thử lại, hội thoại đã được giữ.", 504, "evaluation_timeout")
         try:
-            with requests.post(f'{GEMINI_API_ROOT}/{model}:generateContent',
+            from beta_ai.service import post as gemini_post
+            with gemini_post(f'{GEMINI_API_ROOT}/{model}:generateContent',
                 headers={"x-goog-api-key": key, "Content-Type": "application/json"},
                 json=request_body, timeout=(5, min(60 if attempt == 0 else 30, remaining))) as response:
                 if response.status_code == 429:

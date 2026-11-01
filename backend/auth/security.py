@@ -109,6 +109,8 @@ def require_auth(function):
         user = db.session.get(User, session.user_id)
         if not user or not user.active:
             raise AuthError("Phiên đăng nhập không hợp lệ.", 401, "unauthorized")
+        from .beta import check_invite
+        check_invite(user.email)
         g.auth_session, g.user = session, user
         return function(*args, **kwargs)
     return wrapped

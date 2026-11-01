@@ -5,6 +5,7 @@ from flask import jsonify, request
 from flask_migrate import Migrate
 from sqlalchemy import delete
 from sqlalchemy.exc import SQLAlchemyError
+from api_errors import ApiError
 
 from .models import AuthSession, Challenge, OAuthFlow, RateLimit, db, now
 from .security import AuthError, limit
@@ -13,6 +14,8 @@ ACCOUNT_API_PREFIXES = ("/api/auth/", "/api/learning/", "/api/speaking/", "/api/
 
 
 def init_auth(app):
+    # Register quota tables before test databases call db.create_all().
+    from beta_daily import models as _daily_models  # noqa: F401
     url = app.config.get("SQLALCHEMY_DATABASE_URI") or os.getenv("DATABASE_URL", "")
     if url.startswith("postgres://"):
         url = "postgresql+psycopg://" + url[len("postgres://"):]
@@ -39,7 +42,17 @@ def init_auth(app):
             raise RuntimeError("Production SMTP requires TLS.")
         if not app.config["PUBLIC_BASE_URL"].startswith("https://"):
             raise RuntimeError("Production requires an HTTPS PUBLIC_BASE_URL.")
+        from .beta import enabled as beta_enabled
+        if not beta_enabled():
+            raise RuntimeError("Production beta requires BETA_MODE=true.")
+        invites = {item.strip().lower() for item in os.getenv("BETA_INVITE_EMAILS", "").split(",") if item.strip()}
+        if not 1 <= len(invites) <= 10:
+            raise RuntimeError("Production beta requires 1–10 invited emails.")
+        from beta_daily.service import daily_mode
+        if not daily_mode() and not os.getenv("BETA_GEMINI_PRICES_JSON", "").strip():
+            raise RuntimeError("Production beta requires BETA_GEMINI_PRICES_JSON.")
     db.init_app(app)
+    import beta_ai.models  # Register beta wallet tables with SQLAlchemy metadata.
     Migrate(app, db, directory=os.path.join(os.path.dirname(__file__), "../migrations"))
     from .routes import bp
     from . import oauth  # Registers provider routes on the same blueprint.
@@ -49,6 +62,10 @@ def init_auth(app):
     def auth_guard():
         if not request.path.startswith(ACCOUNT_API_PREFIXES):
             return
+        from .beta import enabled as beta_enabled
+        if (beta_enabled() and os.getenv("BETA_GAMES_ENABLED", "false").lower() != "true"
+                and request.path.startswith("/api/games/")):
+            raise AuthError("Trò chơi chưa mở trong đợt dùng thử này.", 503, "beta_games_disabled")
         request.max_content_length = (1024 * 1024 if request.path == "/api/kanji/recognize" else
                                       256 * 1024 if request.path.startswith("/api/flashcards/") else 16 * 1024)
         if not app.config["AUTH_CONFIGURED"]:
@@ -83,6 +100,14 @@ def init_auth(app):
 
     @app.errorhandler(AuthError)
     def auth_error(error):
+        db.session.rollback()
+        response = jsonify({"error": error.message, "code": error.code, **error.details})
+        if error.status == 429:
+            response.headers["Retry-After"] = str(error.details.get("retry_after", 60))
+        return response, error.status
+
+    @app.errorhandler(ApiError)
+    def api_error(error):
         db.session.rollback()
         response = jsonify({"error": error.message, "code": error.code, **error.details})
         if error.status == 429:

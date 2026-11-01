@@ -32,6 +32,9 @@ def unavailable():
 
 
 def upload_url(key, size):
+    if os.getenv("AUDIO_LOCAL_ROOT", "").strip():
+        from .local_storage import signed_url
+        return signed_url(key, "PUT", 900, size)
     try:
         return client(public=True).generate_presigned_url("put_object",
             Params={"Bucket": bucket(), "Key": key, "ContentType": "audio/wav",
@@ -41,6 +44,9 @@ def upload_url(key, size):
 
 
 def download_url(key):
+    if os.getenv("AUDIO_LOCAL_ROOT", "").strip():
+        from .local_storage import signed_url
+        return signed_url(key, "GET", 300)
     try:
         return client(public=True).generate_presigned_url("get_object",
             Params={"Bucket": bucket(), "Key": key}, ExpiresIn=300)
@@ -49,6 +55,9 @@ def download_url(key):
 
 
 def inspect_object(key):
+    if os.getenv("AUDIO_LOCAL_ROOT", "").strip():
+        from .local_storage import inspect_object as inspect_local
+        return inspect_local(key)
     try:
         connection = client()
         metadata = connection.head_object(Bucket=bucket(), Key=key)
@@ -65,6 +74,9 @@ def inspect_object(key):
 
 def delete_session_audio(session_id):
     """Remove only this session's objects, including unfinished uploads."""
+    if os.getenv("AUDIO_LOCAL_ROOT", "").strip():
+        from .local_storage import delete_session_audio as delete_local
+        return delete_local(session_id)
     prefix = f"sessions/{session_id}/"
     try:
         connection = client()

@@ -32,6 +32,23 @@ export interface AuthConfig {
   providers: Provider[];
   password_min_length: number;
 }
+export interface AiBudget {
+  budget_usd: number;
+  spent_usd: number;
+  held_usd: number;
+  available_usd: number;
+  expires_at: number | null;
+}
+export interface DailyQuota {
+  day: string;
+  timezone: 'Asia/Ho_Chi_Minh';
+  reset_at: number;
+  video_limit: number;
+  video_remaining: number;
+  live_limit: number;
+  live_remaining: number;
+  live_seconds_per_session: number;
+}
 export interface SocialProfile {
   status: 'profile_required';
   social_token: string;
@@ -201,6 +218,8 @@ export const authService = {
     }
   },
   config: () => request<AuthConfig>('/config'),
+  aiBudget: () => authorized<AiBudget>('/ai-budget'),
+  dailyQuota: () => authorized<DailyQuota>('/daily-quota'),
   register: (data: {
     name: string;
     email: string;

@@ -32,7 +32,15 @@ def init_games(app, start_timer=True):
         if not session or session.revoked_at or min(session.access_expires_at, session.expires_at) <= now():
             return None
         user = db.session.get(User, session.user_id)
-        return user.id if user and user.active else None
+        if not user or not user.active:
+            return None
+        from auth.beta import check_invite
+        from auth.security import AuthError
+        try:
+            check_invite(user.email)
+        except AuthError:
+            return None
+        return user.id
 
     @socketio.on('connect', namespace='/games')
     def connect(auth):
