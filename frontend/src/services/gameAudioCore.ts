@@ -42,6 +42,10 @@ export function audioClient(platform: {
   };
   return {
     async connect(url, token, onStatus, onPlaybackBlocked = () => {}) {
+      // A manual reconnect must produce a false → true transition so the UI
+      // republishes the microphone if this participant still owns the turn.
+      onStatus(false);
+      onPlaybackBlocked(false);
       const { Room, RoomEvent, Track, createLocalAudioTrack } = await import(
         'livekit-client'
       );
@@ -111,7 +115,7 @@ export function audioClient(platform: {
             blocked(true);
           }
         }
-        onStatus(true);
+        if (current === generation && next === room) onStatus(true);
       } catch (error) {
         if (current === generation) {
           onStatus(false);

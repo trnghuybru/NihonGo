@@ -292,6 +292,8 @@ export function VocabularyGameScreen({
   const connectAudio = () =>
     run(async () => {
       if (!room) return;
+      setAudioReady(false);
+      setPlaybackBlocked(false);
       const credentials = await gameService.audio(room.code);
       audio.current ??= createGameAudio();
       await audio.current.connect(

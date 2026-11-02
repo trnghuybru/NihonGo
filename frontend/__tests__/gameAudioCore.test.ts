@@ -127,6 +127,27 @@ test('waits for a permission update that arrives after the old one-second limit'
     jest.useRealTimers();
   }
 });
+
+test('manual reconnect resets readiness so an existing holder republishes the microphone', async () => {
+  const audio = audioClient({
+    start: jest.fn(),
+    stop: jest.fn(),
+    attach: jest.fn(),
+  });
+  const ready = jest.fn();
+  await audio.connect('ws://room', 'first-token', ready);
+  await audio.setSpeaking(true);
+  await audio.connect('ws://room', 'replacement-token', ready);
+  expect(ready.mock.calls.map(call => call[0])).toEqual([
+    false,
+    true,
+    false,
+    true,
+  ]);
+  await audio.setSpeaking(true);
+  expect(mockMic.mock.calls.filter(call => call[0] === true)).toHaveLength(2);
+  await audio.close();
+});
 test('checks microphone permission without publishing and only enables it for the granted turn', async () => {
   const platform = {
     start: jest.fn().mockResolvedValue(undefined),
