@@ -7,11 +7,19 @@ import {
 
 export function useShadowingQuiz(jobId: string | undefined) {
   const [setupOpen, setSetupOpen] = useState(false);
-  const [count, setCount] = useState(5);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [questions, setQuestions] = useState<ShadowingQuestion[]>([]);
-  const [level, setLevel] = useState<ShadowingQuizLevel>('N3');
+  const [level, setLevelState] = useState<ShadowingQuizLevel>('N3');
+  const [availableLevels, setAvailableLevels] = useState<ShadowingQuizLevel[]>(
+    [],
+  );
+  const savedSets = useRef<
+    Record<
+      string,
+      { questions: ShadowingQuestion[]; answers: Record<string, number> }
+    >
+  >({});
   const [generatedLevel, setGeneratedLevel] =
     useState<ShadowingQuizLevel>('N3');
   const [enabled, setEnabled] = useState(true);
@@ -28,22 +36,63 @@ export function useShadowingQuiz(jobId: string | undefined) {
   const generation = useRef(0);
   const requesting = useRef(false);
   useEffect(() => {
-    generation.current += 1;
-    requesting.current = false;
+    savedSets.current = {};
+    setAvailableLevels([]);
     setSetupOpen(false);
-    setLoading(false);
+    setResumeRequest(0);
+  }, [jobId]);
+  useEffect(() => {
+    const current = ++generation.current;
+    requesting.current = false;
     setError('');
     setQuestions([]);
     setAnswers({});
     setEnabled(true);
     setActiveId(null);
-    setResumeRequest(0);
     setJumpRequest(null);
+    setGeneratedLevel(level);
+    const saved = savedSets.current[level];
+    setLoading(Boolean(jobId && !saved));
+    if (saved) {
+      setQuestions(saved.questions);
+      setAnswers(saved.answers);
+    } else if (jobId) {
+      shadowingService
+        .savedQuestions(jobId, level)
+        .then(result => {
+          if (current !== generation.current) return;
+          if (Array.isArray(result?.available_levels))
+            setAvailableLevels(result.available_levels);
+          if (
+            !Array.isArray(result?.questions) ||
+            (result.level && result.level !== level)
+          )
+            return;
+          setQuestions(result.questions);
+          if (result.questions.length)
+            savedSets.current[level] = {
+              questions: result.questions,
+              answers: {},
+            };
+        })
+        .catch(() => {
+          // Cache lookup never automatically generates paid questions.
+        })
+        .finally(() => {
+          if (current === generation.current) setLoading(false);
+        });
+    }
     return () => {
       generation.current += 1;
       requesting.current = false;
     };
-  }, [jobId]);
+  }, [jobId, level]);
+  const setLevel = (next: ShadowingQuizLevel) => {
+    if (next === level) return;
+    if (questions.length) savedSets.current[level] = { questions, answers };
+    generation.current += 1;
+    setLevelState(next);
+  };
   const activeQuestion = questions.find(question => question.id === activeId);
   const checkpoints = useMemo(
     () =>
@@ -55,22 +104,28 @@ export function useShadowingQuiz(jobId: string | undefined) {
         })),
     [questions, completed, enabled],
   );
-  const generate = async (requestedCount: number, onStarted: () => void) => {
+  const generate = async (onStarted: () => void) => {
     if (!jobId || requesting.current) return;
     requesting.current = true;
     const current = ++generation.current;
     setLoading(true);
     setError('');
     try {
-      const result = await shadowingService.questions(
-        jobId,
-        requestedCount,
-        level,
-      );
+      const result = questions.length
+        ? { questions, level: generatedLevel }
+        : await shadowingService.questions(jobId, level);
       if (current !== generation.current) return;
+      if (
+        !Array.isArray(result?.questions) ||
+        (result.level && result.level !== level)
+      ) {
+        throw new Error('Dữ liệu câu hỏi chưa hợp lệ. Vui lòng thử lại.');
+      }
       setQuestions(result.questions);
       setAnswers({});
-      setGeneratedLevel(level);
+      savedSets.current[level] = { questions: result.questions, answers: {} };
+      setAvailableLevels(previous => [...new Set([...previous, level])]);
+      setGeneratedLevel(result.level ?? level);
       setEnabled(true);
       setActiveId(null);
       setJumpRequest(null);
@@ -174,11 +229,10 @@ export function useShadowingQuiz(jobId: string | undefined) {
     setupOpen,
     setSetupOpen,
     closeSetup,
-    count,
-    setCount,
     level,
     setLevel,
     generatedLevel,
+    availableLevels,
     enabled,
     setEnabled,
     answers,

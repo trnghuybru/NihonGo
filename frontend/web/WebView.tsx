@@ -1,5 +1,6 @@
 import React, {
   forwardRef,
+  useCallback,
   useEffect,
   useImperativeHandle,
   useMemo,
@@ -71,7 +72,7 @@ export const WebView = forwardRef(function BrowserWebView(
     loaded.current = false;
     pending.current = [];
   }, [html]);
-  const inject = (script: string) => {
+  const inject = useCallback((script: string) => {
     if (!loaded.current) {
       pending.current.push(script);
       return;
@@ -80,7 +81,11 @@ export const WebView = forwardRef(function BrowserWebView(
       | (Window & { eval: (script: string) => unknown })
       | null;
     target?.eval(script);
-  };
+  }, []);
+  const markReady = useCallback(() => {
+    loaded.current = true;
+    for (const script of pending.current.splice(0)) inject(script);
+  }, [inject]);
   useImperativeHandle(ref, () => ({
     injectJavaScript: inject,
     postMessage(data: string) {
@@ -100,11 +105,14 @@ export const WebView = forwardRef(function BrowserWebView(
         typeof event.data.data !== 'string'
       )
         return;
+      // YouTube may signal readiness while child resources still delay iframe
+      // load. Its authenticated bridge already proves scripts can execute.
+      markReady();
       callbacks.current.onMessage?.({ nativeEvent: { data: event.data.data } });
     };
     window.addEventListener('message', receive);
     return () => window.removeEventListener('message', receive);
-  }, [channel]);
+  }, [channel, markReady]);
   return (
     <iframe
       ref={frame}
@@ -120,10 +128,7 @@ export const WebView = forwardRef(function BrowserWebView(
         ...StyleSheet.flatten(style as never),
       }}
       onError={() => callbacks.current.onError?.()}
-      onLoad={() => {
-        loaded.current = true;
-        for (const script of pending.current.splice(0)) inject(script);
-      }}
+      onLoad={markReady}
     />
   );
 });

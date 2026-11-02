@@ -210,8 +210,9 @@
   background: #fff8f1;
 }
 .ng-feature-preview span {
-  font-family: serif;
-  font-size: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #b97440;
 }
 .ng-feature-preview strong {
@@ -329,7 +330,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: serif;
   color: #ac6534;
   background: #faebd8;
   border-radius: 9px;

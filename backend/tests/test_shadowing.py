@@ -53,85 +53,106 @@ class ShadowingTests(unittest.TestCase):
         db.session.commit()
         return f'{PATH}/translation-job/translation'
 
-    def test_quiz_is_on_demand_returns_exact_count_and_does_not_persist(self):
+    def test_quiz_saves_exactly_five_and_reuses_same_level_across_users(self):
         from shadowing.quiz import quiz_source
         self.translation_video(6)
         url = f'{PATH}/translation-job/questions'
-        self.assertEqual(self.client.post(url, json={'count': 2}).status_code, 401)
-        self.assertEqual(self.get(url).status_code, 405)
-        source = quiz_source('translation-job', 2)
-        items = [{'window_index': i, 'question': f'第{i + 1}部分の内容は何ですか。',
-                  'choices': ['日本語', '英語', 'フランス語', '中国語'], 'correct_index': i,
-                  'explanation': 'Giải thích dựa trên phụ đề.',
-                  'evidence_segment_ids': [window['segments'][-1]['segment_id']]}
-                 for i, window in enumerate(source['windows'])]
-        response_data = {'candidates': [{'finishReason': 'STOP', 'content': {'parts': [
-            {'text': json.dumps({'questions': items})}]}}]}
-        before = {table.name: db.session.scalar(select(func.count()).select_from(table))
-                  for table in db.metadata.sorted_tables if table.name.startswith('shadowing')}
+        self.assertEqual(self.client.get(url).status_code, 401)
+        self.assertEqual(self.get(url).json['questions'], [])
+        source = quiz_source('translation-job', 5)
         with patch.dict('os.environ', {'GEMINI_API_KEY': 'test'}), patch('shadowing.quiz.requests.post') as provider:
             def respond(*args, **kwargs):
                 prompt = json.loads(kwargs['json']['contents'][0]['parts'][0]['text'])
                 index = prompt['requested_window_index']
-                item = {**items[index], 'evidence_segment_ids': [prompt['windows'][0]['segments'][-1]['segment_id']]}
-                response = MagicMock(status_code=200)
-                response.json.return_value = {'candidates': [{'finishReason': 'STOP', 'content': {'parts': [
-                    {'text': json.dumps({'questions': [item]})}]}}]}
+                item = {'window_index':index,'question':f'第{index+1}部分の内容は何ですか。',
+                    'choices':['日本語','英語','フランス語','中国語'],'correct_index':index%4,
+                    'explanation':'Giải thích.','evidence_segment_ids':[prompt['windows'][0]['segments'][-1]['segment_id']]}
+                response=MagicMock(status_code=200)
+                response.json.return_value={'candidates':[{'finishReason':'STOP','content':{'parts':[{'text':json.dumps({'questions':[item]})}]}}]}
                 return response
-            provider.side_effect = respond
-            first = self.client.post(url, json={'count': 2}, headers={'Authorization': 'Bearer alice'})
-            second = self.client.post(url, json={'count': 2}, headers={'Authorization': 'Bearer alice'})
-            self.assertEqual(provider.call_count, 4)  # Two on-demand questions per request; no cache.
-            self.assertEqual(first.status_code, 200)
-            self.assertEqual(first.headers['Cache-Control'], 'no-store')
-            questions = first.json['questions']
-            self.assertEqual(len(questions), 2)
-            self.assertEqual([q['trigger_seconds'] for q in questions], [5, 11])
-            self.assertEqual(questions[0]['correct_index'], 0)
-            self.assertNotEqual(questions[0]['id'], second.json['questions'][0]['id'])
-        after = {table.name: db.session.scalar(select(func.count()).select_from(table))
-                 for table in db.metadata.sorted_tables if table.name.startswith('shadowing')}
-        self.assertEqual(before, after)
+            provider.side_effect=respond
+            first=self.client.post(url,json={'count':99},headers={'Authorization':'Bearer alice'})
+            self.assertEqual(first.status_code,200,first.json)
+            self.assertEqual(len(first.json['questions']),5)
+            second=self.client.post(url,json={'count':1,'level':'N3'},headers={'Authorization':'Bearer bob'})
+            self.assertEqual(second.status_code,200,second.json)
+            self.assertEqual(first.json,second.json)
+            self.assertEqual(self.get(url).json,first.json)
+            self.assertEqual(provider.call_count,5)  # One generation only, one window call per question.
+            self.assertEqual(len(db.session.get(ShadowingJob,'translation-job').quiz_data['sets']['N3']['questions']),5)
 
-    def test_quiz_rejects_bad_counts_and_unready_source_before_calling_ai(self):
-        self.translation_video()
-        url = f'{PATH}/translation-job/questions'
-        with patch('shadowing.quiz.requests.post') as provider:
-            for data in ({}, {'count': True}, {'count': 0}, {'count': 11}, {'count': '2'},
-                         {'count': 1.5}, {'count': 3}, []):
-                self.assertEqual(self.client.post(url, json=data,
-                    headers={'Authorization': 'Bearer alice'}).status_code, 400)
-            db.session.get(ShadowingJob, 'translation-job').status = 'queued'
-            db.session.commit()
-            self.assertEqual(self.client.post(url, json={'count': 1},
-                headers={'Authorization': 'Bearer alice'}).status_code, 404)
+    def test_quiz_caches_all_levels_independently_and_preserves_legacy_set(self):
+        from shadowing.quiz import LEVELS
+        self.translation_video(6)
+        url=f'{PATH}/translation-job/questions'
+        legacy={'questions':[{'id':f'old-{i}'} for i in range(5)],'level':'N4','language':'ja'}
+        row=db.session.get(ShadowingJob,'translation-job');row.quiz_data=legacy;db.session.commit()
+        with patch('shadowing.quiz.generate_questions') as provider:
+            def generate(source):
+                level=source['jlpt_level']
+                return {'questions':[{'id':f'{level}-{i}'} for i in range(5)],'level':level,'language':'ja'}
+            provider.side_effect=generate
+            for level in LEVELS:
+                missing=self.get(url+f'?level={level}').json
+                self.assertEqual(missing['level'],level)
+                self.assertEqual(len(missing['questions']),5 if level=='N4' else 0)
+                response=self.client.post(url,json={'level':level},headers={'Authorization':'Bearer alice'})
+                self.assertEqual(response.status_code,200,response.json)
+                self.assertEqual(response.json['level'],level)
+                repeated=self.client.post(url,json={'level':level},headers={'Authorization':'Bearer bob'})
+                self.assertEqual(response.json,repeated.json)
+            self.assertEqual(provider.call_count,4)
+            self.assertEqual(self.get(url+'?level=N4').json['questions'],legacy['questions'])
+            self.assertEqual(self.get(url).json['available_levels'],list(LEVELS))
+            for bad in ('N6',None,3):
+                self.assertEqual(self.client.post(url,json={'level':bad},headers={'Authorization':'Bearer alice'}).status_code,400)
+            self.assertEqual(provider.call_count,4)
+            self.assertEqual(len(db.session.get(ShadowingJob,'translation-job').quiz_data['sets']),5)
+
+    def test_quiz_short_unready_and_in_progress_do_not_call_ai(self):
+        self.translation_video(2)
+        url=f'{PATH}/translation-job/questions'
+        with patch('shadowing.quiz.generate_questions') as provider:
+            self.assertEqual(self.client.post(url,json={},headers={'Authorization':'Bearer alice'}).status_code,400)
+            row=db.session.get(ShadowingJob,'translation-job');row.status='queued';db.session.commit()
+            self.assertEqual(self.get(url).status_code,404)
             provider.assert_not_called()
+
+    def test_quiz_lease_and_failure_allow_safe_retry(self):
+        self.translation_video(6)
+        url=f'{PATH}/translation-job/questions'
+        row=db.session.get(ShadowingJob,'translation-job')
+        row.quiz_lease_token='other';row.quiz_lease_expires_at=int(time.time()*1000)+60000;db.session.commit()
+        with patch('shadowing.quiz.generate_questions') as provider:
+            self.assertEqual(self.client.post(url,json={},headers={'Authorization':'Bearer alice'}).status_code,409)
+            provider.assert_not_called()
+            row.quiz_lease_expires_at=0;db.session.commit()
+            provider.side_effect=ApiError('Temporary failure',503,'quiz_unavailable')
+            self.assertEqual(self.client.post(url,json={},headers={'Authorization':'Bearer alice'}).status_code,503)
+            db.session.expire_all()
+            row=db.session.get(ShadowingJob,'translation-job')
+            self.assertIsNone(row.quiz_data);self.assertIsNone(row.quiz_lease_token)
+            provider.side_effect=None
+            provider.return_value={'questions':[{'id':str(i)} for i in range(5)],'level':'N4','language':'ja'}
+            self.assertEqual(self.client.post(url,json={'level':'N4'},headers={'Authorization':'Bearer alice'}).status_code,200)
 
     def test_quiz_passes_requested_jlpt_level_and_requires_japanese_questions(self):
         from shadowing.quiz import quiz_source, validate_questions, SYSTEM_PROMPT
-        self.translation_video()
-        url = f'{PATH}/translation-job/questions'
-        with patch('shadowing.quiz.generate_questions', return_value={'questions': []}) as provider:
-            for level in ('N5', 'N4', 'N3', 'N2', 'N1'):
-                response = self.client.post(url, json={'count': 1, 'level': level},
-                    headers={'Authorization': 'Bearer alice'})
-                self.assertEqual(response.status_code, 200)
-                self.assertEqual(provider.call_args.args[0]['jlpt_level'], level)
-            provider.reset_mock()
-            for level in ('N6', 'n3', None, 3, ['N3']):
-                self.assertEqual(self.client.post(url, json={'count': 1, 'level': level},
-                    headers={'Authorization': 'Bearer alice'}).status_code, 400)
-            provider.assert_not_called()
-        source = quiz_source('translation-job', 1, 'N5')
-        item = {'window_index': 0, 'question': 'これは何語ですか。',
-                'choices': ['日本語', '英語', 'フランス語', '中国語'],
-                'correct_index': 0, 'explanation': 'Người nói dùng tiếng Nhật.',
-                'evidence_segment_ids': ['sentence-1']}
-        self.assertEqual(len(validate_questions({'questions': [item]}, source)), 1)
-        item['question'] = 'Người nói dùng ngôn ngữ nào?'
-        with self.assertRaises(ApiError):
-            validate_questions({'questions': [item]}, source)
-        self.assertIn('all four choices in Japanese', SYSTEM_PROMPT)
+        self.translation_video(6)
+        url=f'{PATH}/translation-job/questions'
+        with patch('shadowing.quiz.generate_questions',return_value={'questions':[{'id':str(i)} for i in range(5)],'level':'N5','language':'ja'}) as provider:
+            response=self.client.post(url,json={'level':'N5'},headers={'Authorization':'Bearer alice'})
+            self.assertEqual(response.status_code,200,response.json)
+            self.assertEqual(provider.call_args.args[0]['jlpt_level'],'N5')
+        for level in ('N6','n3',None,3,['N3']):
+            with self.assertRaises(ApiError):quiz_source('translation-job',5,level)
+        source=quiz_source('translation-job',1,'N5')
+        item={'window_index':0,'question':'これは何語ですか。','choices':['日本語','英語','フランス語','中国語'],
+              'correct_index':0,'explanation':'Người nói dùng tiếng Nhật.','evidence_segment_ids':['sentence-1']}
+        self.assertEqual(len(validate_questions({'questions':[item]},source)),1)
+        item['question']='Người nói dùng ngôn ngữ nào?'
+        with self.assertRaises(ApiError):validate_questions({'questions':[item]},source)
+        self.assertIn('all four choices in Japanese',SYSTEM_PROMPT)
 
     def test_quiz_windows_follow_elapsed_time_and_never_accept_future_evidence(self):
         from shadowing.quiz import quiz_source, validate_questions
@@ -416,6 +437,7 @@ class ShadowingTests(unittest.TestCase):
         save_result(job['id'], token, {'dataset': dataset, 'raw_captions': raw})
         rebuild_saved_captions()
         first = self.get(f"{PATH}/{job['id']}/lesson").json
+        self.assertEqual(first['video']['duration_seconds'], dataset['video']['duration_seconds'])
         self.assertEqual(len(first['segments']), 2)
         self.assertEqual(first['captions'][1]['start_seconds'], 2)
         self.assertEqual(first['captions'][1]['segment_id'], first['segments'][1]['id'])

@@ -78,6 +78,14 @@ var quizTarget=null;
 var quizAutoFloor=-1;
 var lastPlaybackReport=-1;
 function send(type,code){if(window.ReactNativeWebView){window.ReactNativeWebView.postMessage(JSON.stringify({type:type,code:code}));}}
+function applyPlaybackRate(target,rate){
+ var rates=typeof target.getAvailablePlaybackRates==='function' ? target.getAvailablePlaybackRates() : null;
+ // YouTube can return undefined or an empty list even after onReady.
+ // Continue playback and sentence timing; retry when its rate data arrives.
+ if(!Array.isArray(rates) || rates.length===0)return;
+ if(rates.indexOf(rate)<0){send('rate-unsupported');return;}
+ target.setPlaybackRate(rate);send('rate-supported');
+}
 window.configureQuiz=function(checkpoints,hold){
  if(!checkpoints.some(function(q){return quizCheckpoints.some(function(old){return old.id===q.id;});}))quizAutoFloor=-1;
  quizCheckpoints=checkpoints;quizHold=hold;
@@ -126,8 +134,9 @@ window.updateShadowing=function(next){
  var rearm=seek || clip.continuous!==next.continuous || clip.loop!==next.loop;
  clip.id=next.id;clip.startSeconds=next.start;clip.endSeconds=next.end;
  clip.continuous=next.continuous;clip.loop=next.loop;
+ clip.playbackRate=next.rate;
  if(rearm)sentencePausePending=true;
- if(window.player.getAvailablePlaybackRates().indexOf(next.rate)>=0){window.player.setPlaybackRate(next.rate);send('rate-supported');}else{send('rate-unsupported');}
+ applyPlaybackRate(window.player,next.rate);
  lastCaption=-2;
  if(seek){window.player.seekTo(next.start,true);window.player.playVideo();}
  updateCaption(window.player);
@@ -162,9 +171,10 @@ function onYouTubeIframeAPIReady(){
     YOUTUBE_APP_ORIGIN,
   )}},
   events:{onReady:function(e){send('ready');e.target.cueVideoById({videoId:clip.videoId,startSeconds:clip.startSeconds});
-    if(e.target.getAvailablePlaybackRates().indexOf(clip.playbackRate)>=0){e.target.setPlaybackRate(clip.playbackRate);}else{send('rate-unsupported');}
+    applyPlaybackRate(e.target,clip.playbackRate);
     e.target.playVideo();if(timeline){onPlaybackState({target:e.target,data:YT.PlayerState.PLAYING});}},
    onStateChange:onPlaybackState,
+   onAvailablePlaybackRatesChange:function(e){applyPlaybackRate(e.target,clip.playbackRate);},
    onError:function(e){clearEndTimer();send('error',e.data);},onAutoplayBlocked:function(){send('autoplay-blocked');}}
  });
 }

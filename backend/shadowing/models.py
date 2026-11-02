@@ -19,6 +19,9 @@ class ShadowingJob(db.Model):
     raw_captions = db.Column(db.JSON)
     display_captions = db.Column(db.JSON)
     word_analysis = db.Column(db.JSON)
+    quiz_data = db.Column(db.JSON(none_as_null=True))
+    quiz_lease_token = db.Column(db.String(36))
+    quiz_lease_expires_at = db.Column(db.BigInteger)
 
 
 class ShadowingRequest(db.Model):

@@ -7,6 +7,8 @@ export type HomeFeatureIconName =
   | 'reading'
   | 'writing'
   | 'vocabulary'
+  | 'flashcards'
+  | 'gamepad'
   | 'lightbulb'
   | 'sparkles'
   | 'arrow';
@@ -77,6 +79,27 @@ export function HomeFeatureIcon({ name, color, size = 24 }: Props) {
         <>
           <Rect x="3" y="4" width="18" height="16" rx="4" {...stroke} />
           <Path d="M7 9h4M7 13h6M16 9h1M16 13h1M7 17h10" {...stroke} />
+        </>
+      ) : null}
+      {name === 'flashcards' ? (
+        <>
+          <Path
+            d="M7 4V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1h-1"
+            {...stroke}
+          />
+          <Rect x="3" y="6" width="14" height="16" rx="2" {...stroke} />
+          <Path d="M7 12h6M7 16h4" {...stroke} />
+        </>
+      ) : null}
+      {name === 'gamepad' ? (
+        <>
+          <Path
+            d="M7 7h10a4 4 0 0 1 3.9 3.2l1.2 6a3 3 0 0 1-5 2.7L14.5 17h-5l-2.6 1.9a3 3 0 0 1-5-2.7l1.2-6A4 4 0 0 1 7 7Z"
+            {...stroke}
+          />
+          <Path d="M6 11v4M4 13h4" {...stroke} />
+          <Circle cx="16" cy="11" r="1" fill={color} />
+          <Circle cx="18" cy="14" r="1" fill={color} />
         </>
       ) : null}
       {name === 'lightbulb' ? (

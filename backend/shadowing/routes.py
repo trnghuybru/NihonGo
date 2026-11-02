@@ -17,19 +17,23 @@ from .translation import source_for, public_translation, request_translation
 bp = Blueprint('shadowing', __name__, url_prefix='/api/listening/shadowing')
 
 
-@bp.post('/jobs/<job_id>/questions')
+@bp.route('/jobs/<job_id>/questions', methods=['GET', 'POST'])
 @require_auth
 def questions(job_id):
     from auth.security import limit
-    from .quiz import quiz_source, generate_questions
-    data = request.get_json(silent=True)
+    from .quiz import saved_quiz, shared_quiz, available_quiz_levels
+    data = request.get_json(silent=True) if request.method == 'POST' else {}
     if not isinstance(data, dict):
-        raise ApiError('Cần chọn số câu hỏi.', 400, 'quiz_invalid_count')
-    source = quiz_source(job_id, data.get('count'), data.get('level', 'N3'))
-    limit('shadowing-quiz', g.user.id, 20, 3600)
-    # Release the read transaction while awaiting the provider; nothing is stored.
-    db.session.rollback()
-    response = jsonify(generate_questions(source))
+        raise ApiError('Yêu cầu chưa hợp lệ.', 400, 'quiz_invalid_count')
+    level = data.get('level', 'N3') if request.method == 'POST' else request.args.get('level', 'N3')
+    cached = saved_quiz(job_id, level)
+    if cached or request.method == 'GET':
+        result = cached or {'questions': [], 'level': level, 'status': 'missing'}
+    else:
+        limit('shadowing-quiz', g.user.id, 20, 3600)
+        result = shared_quiz(job_id, level)
+    result = {**result, 'level': level, 'available_levels': available_quiz_levels(job_id)}
+    response = jsonify(result)
     response.headers['Cache-Control'] = 'no-store'
     return response
 
@@ -133,7 +137,8 @@ def lesson(job_id):
                                   .order_by(CaptionSegment.sequence)).all()
     if not video or not segments:
         raise ApiError('Không còn dữ liệu phụ đề của video.', 404, 'shadowing_not_found')
-    info = {'youtube_id': video.id, 'title': video.title, 'channel': video.channel}
+    info = {'youtube_id': video.id, 'title': video.title, 'channel': video.channel,
+        'duration_seconds': video.duration_seconds}
     practice = [{'id': segment.id, 'text': segment.text, 'search_text': segment.search_text,
         'start_seconds': segment.start_seconds, 'end_seconds': segment.end_seconds,
         'video': info, 'watch_url': f'https://www.youtube.com/watch?v={video.id}&t={math.floor(segment.start_seconds)}s'}

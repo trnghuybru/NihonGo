@@ -21,6 +21,7 @@ function createPlayer(
   loop = false,
   timeline?: VideoExample[],
   continuous = false,
+  rates: number[] | undefined = [0.5, 0.75, 1, 1.25],
 ) {
   let currentTime = example.start_seconds;
   let currentState = 1;
@@ -30,7 +31,7 @@ function createPlayer(
     pauseVideo: jest.fn(),
     getPlayerState: jest.fn(() => currentState),
     getCurrentTime: jest.fn(() => currentTime),
-    getAvailablePlaybackRates: jest.fn(() => [0.5, 0.75, 1, 1.25]),
+    getAvailablePlaybackRates: jest.fn((): number[] | undefined => rates),
     setPlaybackRate: jest.fn(),
     seekTo: jest.fn((value: number) => {
       currentTime = value;
@@ -40,6 +41,7 @@ function createPlayer(
     onReady: (event: { target: typeof player }) => void;
     onStateChange: (event: { target: typeof player; data: number }) => void;
     onError: (event: { data: number }) => void;
+    onAvailablePlaybackRatesChange: (event: { target: typeof player }) => void;
   };
   const pageEvents: Record<string, () => void> = {};
   const postMessage = jest.fn();
@@ -384,3 +386,45 @@ test('looping a timeline phrase does not resume a manual pause', () => {
   clip.state(1);
   expect(clip.player.seekTo).toHaveBeenCalledWith(example.start_seconds, true);
 });
+
+test.each([undefined, []])(
+  'missing playback rates (%s) never block playback, sentence stops or next-phrase seeks',
+  rates => {
+    // Pass an empty array initially because JS default parameters replace undefined.
+    const clip = createPlayer(1, false, [example], false, []);
+    clip.player.getAvailablePlaybackRates.mockReturnValue(rates);
+    expect(() => clip.events.onReady({ target: clip.player })).not.toThrow();
+    expect(clip.player.playVideo).toHaveBeenCalled();
+    expect(() =>
+      clip.update({
+        id: example.id,
+        start: example.start_seconds,
+        end: example.end_seconds,
+        rate: 0.75,
+        continuous: false,
+        loop: false,
+        replay: true,
+      }),
+    ).not.toThrow();
+    clip.setTime(example.end_seconds);
+    jest.advanceTimersByTime(100);
+    expect(clip.player.pauseVideo).toHaveBeenCalled();
+    clip.update({
+      id: 'next',
+      start: 48,
+      end: 51,
+      rate: 0.75,
+      continuous: false,
+      loop: false,
+    });
+    expect(clip.player.seekTo).toHaveBeenLastCalledWith(48, true);
+    clip.player.getAvailablePlaybackRates.mockReturnValue([0.75, 1]);
+    clip.events.onAvailablePlaybackRatesChange({ target: clip.player });
+    expect(clip.player.setPlaybackRate).toHaveBeenLastCalledWith(0.75);
+    expect(
+      clip.postMessage.mock.calls.some(
+        ([message]) => JSON.parse(message).type === 'rate-unsupported',
+      ),
+    ).toBe(false);
+  },
+);

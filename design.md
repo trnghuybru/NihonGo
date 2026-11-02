@@ -223,6 +223,7 @@ Thanh điều hướng xuất hiện sau khi người dùng đã hoàn tất thi
   1× → 0.75× → 0.5×. Chế độ từng đoạn dừng cuối câu, “Lặp đoạn” lặp câu đã chọn.
   Không hiển thị nút mở ngoài YouTube.
 - Phụ đề tự động được ghi rõ; không có điểm phát âm hoặc tiến độ giả.
+- Câu hỏi nghe có dropdown N5–N1 nằm ngay trong header thẻ câu hỏi, nền surface, viền border, focus dùng focus, bo input 18 theo token; không có dấu tick hoặc phụ đề cho bộ chọn. Mỗi video lưu riêng 5 câu hỏi cho mỗi trình độ, dùng lại bộ đã có; chỉ tạo khi người học yêu cầu trình độ chưa có. Timeline nằm ngoài popup và chỉ hiển thị bộ đang chọn; đáp án trong lượt học giữ riêng từng trình độ.
 
 Home ưu tiên thao tác theo thứ tự: tra từ → mục tiêu hôm nay → ôn tập hôm nay và thử thách → thẻ Từ vựng của bạn → lưới Luyện kỹ năng → panel giới thiệu NihonGO. Không hiển thị tiến độ, chuỗi ngày hoặc số từ giả khi backend chưa cung cấp dữ liệu.
 

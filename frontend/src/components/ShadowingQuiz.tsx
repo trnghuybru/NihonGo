@@ -11,25 +11,20 @@ import {
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { AuthButton, AuthNotice } from './AuthForm';
 import { useShadowingQuiz } from '../hooks/useShadowingQuiz';
-import type {
-  ShadowingQuizLevel,
-  ShadowingQuestion,
-} from '../services/shadowingService';
+import type { ShadowingQuestion } from '../services/shadowingService';
 import { colors, radius, spacing, typography } from '../theme/theme';
 import { videoTimestamp } from './VideoExampleCard';
 import { XIcon, ChevronDownIcon } from './icons';
+import { ShadowingQuizLevelSelector } from './ShadowingQuizLevelSelector';
 
 export function ShadowingQuiz({
   quiz,
-  maxCount,
   onStarted,
 }: {
   quiz: ReturnType<typeof useShadowingQuiz>;
-  maxCount: number;
   onStarted: () => void;
 }) {
   const insets = useSafeAreaInsets();
-  const count = Math.min(quiz.count, maxCount);
   const question = quiz.activeQuestion;
   const answered = quiz.choice !== null;
   return (
@@ -51,6 +46,11 @@ export function ShadowingQuiz({
           >
             <View style={styles.header}>
               <Text style={styles.heading}>Câu hỏi AI</Text>
+              <ShadowingQuizLevelSelector
+                level={quiz.level}
+                loading={quiz.loading}
+                onChange={quiz.setLevel}
+              />
               <Pressable
                 accessibilityRole="button"
                 accessibilityLabel="Đóng câu hỏi AI"
@@ -62,12 +62,6 @@ export function ShadowingQuiz({
             </View>
             {quiz.questions.length ? (
               <View style={styles.feedback}>
-                <Text style={styles.label}>
-                  Các mốc câu hỏi · {quiz.generatedLevel}
-                </Text>
-                <Text style={styles.body}>
-                  Bấm để tua tới cuối đoạn nội dung liên quan và trả lời ngay.
-                </Text>
                 {quiz.questions.map((item, index) => {
                   const completed = quiz.completed.includes(item.id);
                   if (completed)
@@ -80,88 +74,28 @@ export function ShadowingQuiz({
                         onReview={() => quiz.reviewQuestion(item.id)}
                       />
                     );
-                  return (
-                    <Pressable
-                      key={item.id}
-                      accessibilityRole="button"
-                      accessibilityLabel={`Tới câu hỏi ${index + 1}`}
-                      accessibilityHint={`Tua tới ${videoTimestamp(
-                        item.trigger_seconds,
-                      )}`}
-                      accessibilityState={{ disabled: quiz.loading }}
-                      disabled={quiz.loading}
-                      onPress={() => quiz.jumpToQuestion(item.id)}
-                      style={styles.option}
-                    >
-                      <Text style={styles.label}>
-                        Câu {index + 1} · {videoTimestamp(item.trigger_seconds)}
-                      </Text>
-                      <Text style={styles.body}>Tới câu hỏi →</Text>
-                    </Pressable>
-                  );
+                  return null;
                 })}
               </View>
             ) : null}
             <Text style={styles.body}>
-              Chọn số câu trắc nghiệm về những ý chính. Video sẽ dừng sau phần
-              nội dung liên quan để bạn trả lời và xem giải thích.
+              1.{' '}
+              <Text style={styles.noteLead}>Mỗi trình độ gồm 5 câu hỏi:</Text>{' '}
+              Video sẽ tự động dừng tại các phân đoạn để bạn trả lời và xem giải
+              thích.
             </Text>
-            <Text style={styles.label}>Trình độ câu hỏi tiếng Nhật</Text>
-            <View style={styles.counts}>
-              {(['N5', 'N4', 'N3', 'N2', 'N1'] as ShadowingQuizLevel[]).map(
-                value => (
-                  <Pressable
-                    key={value}
-                    accessibilityRole="radio"
-                    accessibilityLabel={`Trình độ ${value}`}
-                    accessibilityState={{
-                      checked: quiz.level === value,
-                      disabled: quiz.loading,
-                    }}
-                    disabled={quiz.loading}
-                    onPress={() => quiz.setLevel(value)}
-                    style={[
-                      styles.count,
-                      quiz.level === value && styles.selected,
-                    ]}
-                  >
-                    <Text style={styles.label}>{value}</Text>
-                  </Pressable>
-                ),
-              )}
-            </View>
             <Text style={styles.body}>
-              Tạo xong sẽ xem lại từ đầu để gặp đủ câu hỏi. Câu hỏi chỉ dùng
-              trong lượt xem này. Câu đã trả lời được giữ để xem lại cho đến khi
-              rời bài.
+              2. <Text style={styles.noteLead}>Lưu ý:</Text> Đáp án chỉ lưu
+              trong lượt học hiện tại. Để gặp đủ 5 câu hỏi, hãy xem video từ
+              đầu.
             </Text>
-            <Text style={styles.label}>Số câu hỏi: {count}</Text>
-            <View style={styles.counts}>
-              {Array.from({ length: maxCount }, (_, index) => index + 1).map(
-                value => (
-                  <Pressable
-                    key={value}
-                    accessibilityRole="radio"
-                    accessibilityLabel={`${value} câu hỏi`}
-                    accessibilityState={{
-                      checked: count === value,
-                      disabled: quiz.loading,
-                    }}
-                    disabled={quiz.loading}
-                    onPress={() => quiz.setCount(value)}
-                    style={[styles.count, count === value && styles.selected]}
-                  >
-                    <Text style={styles.label}>{value}</Text>
-                  </Pressable>
-                ),
-              )}
-            </View>
             <AuthNotice error message={quiz.error} />
             <AuthButton
-              label="Tạo câu hỏi"
+              label={
+                quiz.questions.length ? 'Làm lại bộ câu hỏi' : 'Tạo câu hỏi'
+              }
               busy={quiz.loading}
-              disabled={maxCount === 0}
-              onPress={() => quiz.generate(count, onStarted)}
+              onPress={() => quiz.generate(onStarted)}
             />
           </ScrollView>
         </View>
@@ -319,6 +253,11 @@ function AnsweredQuestionCard({
 }
 
 const styles = StyleSheet.create({
+  noteLead: {
+    ...typography.button,
+    fontSize: typography.body.fontSize,
+    lineHeight: typography.body.lineHeight,
+  },
   result: { gap: spacing.sm, paddingTop: spacing.md },
   chevronExpanded: { transform: [{ rotate: '180deg' }] },
   header: {

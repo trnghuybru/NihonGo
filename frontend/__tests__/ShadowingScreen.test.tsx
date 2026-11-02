@@ -5,6 +5,10 @@ import { AuthButton } from '../src/components/AuthForm';
 import { ShadowingScreen } from '../src/screens/ShadowingScreen';
 import { VideoExamplePlayer } from '../src/components/VideoExamplePlayer';
 import {
+  normalizeDictation,
+  createDictationGap,
+} from '../src/components/ShadowingDictation';
+import {
   shadowingService,
   ShadowingJob,
 } from '../src/services/shadowingService';
@@ -55,6 +59,7 @@ jest.mock('../src/services/shadowingService', () => ({
     translation: jest.fn(),
     requestTranslation: jest.fn(),
     questions: jest.fn(),
+    savedQuestions: jest.fn(),
   },
 }));
 const job: ShadowingJob = {
@@ -102,6 +107,9 @@ beforeEach(() => {
     ],
   });
   jest.mocked(shadowingService.submit).mockResolvedValue({ job });
+  jest
+    .mocked(shadowingService.savedQuestions)
+    .mockResolvedValue({ questions: [] });
   jest.mocked(shadowingService.questions).mockResolvedValue({
     questions: [
       {
@@ -144,6 +152,19 @@ async function render() {
   });
 }
 async function press(label: string) {
+  if (/^Trình độ N[1-5]$/.test(label)) {
+    await act(async () => {
+      const selector = tree.root
+        .findAll(
+          node =>
+            typeof node.props.onPress === 'function' &&
+            typeof node.props.accessibilityLabel === 'string' &&
+            node.props.accessibilityLabel.startsWith('Trình độ câu hỏi:'),
+        )
+        .at(-1)!;
+      selector.props.onPress();
+    });
+  }
   await act(async () => {
     const button = tree.root.findAll(
       node =>
@@ -169,6 +190,127 @@ function visibleText() {
     )
     .join('\n');
 }
+
+test('a cache response without questions does not blank the listening lesson or generate AI calls', async () => {
+  jest
+    .mocked(shadowingService.savedQuestions)
+    .mockResolvedValue({ status: 'missing' } as never);
+  await render();
+  await press('Luyện shadowing');
+  expect(tree.root.findByType(VideoExamplePlayer).props.example.id).toBe('one');
+  await press('Nghe chép chính tả');
+  expect(
+    tree.root
+      .findAllByType(TextInput)
+      .some(
+        input =>
+          input.props.accessibilityLabel === 'Từ còn thiếu câu đang phát',
+      ),
+  ).toBe(true);
+  expect(shadowingService.questions).not.toHaveBeenCalled();
+});
+
+test('dictation fills random words inline in the transcript and retains answers across playback and mode changes', async () => {
+  const lesson = await shadowingService.lesson(job.id);
+  jest.mocked(shadowingService.lesson).mockResolvedValue({
+    ...lesson,
+    tokens: {
+      segments: {
+        one: [{ text: '日本語', key: 'japanese' }, { text: 'です。' }],
+        two: [{ text: '次', key: 'next' }, { text: 'の文。' }],
+      },
+      captions: {},
+    },
+  });
+  await render();
+  await press('Luyện shadowing');
+  await press('Nghe chép chính tả');
+  expect(
+    tree.root.findAllByProps({ testID: 'shadowing-current-caption' }).length,
+  ).toBeGreaterThan(0);
+  expect(visibleText()).not.toContain('日本語');
+  expect(visibleText()).toContain('です');
+  const input = (number = 1) =>
+    tree.root
+      .findAllByType(TextInput)
+      .find(
+        node => node.props.accessibilityLabel === `Từ còn thiếu câu ${number}`,
+      )!;
+  expect(input(2)).toBeDefined();
+  const player = () => tree.root.findByType(VideoExamplePlayer);
+  const currentInput = () =>
+    tree.root
+      .findAllByType(TextInput)
+      .find(
+        node => node.props.accessibilityLabel === 'Từ còn thiếu câu đang phát',
+      )!;
+  expect(player().props.continuous).toBe(false);
+  expect(player().props.loop).toBe(false);
+  expect(visibleText()).toContain('(Lưu ý nhập đúng dạng Kanji)');
+  await act(async () => currentInput().props.onFocus());
+  expect(player().props.pausedForLookup).toBe(false);
+  await act(async () => currentInput().props.onSubmitEditing());
+  expect(player().props.example.id).toBe('one');
+  await act(async () => currentInput().props.onChangeText('にほんご'));
+  expect(input().props.value).toBe('にほんご');
+  await act(async () => currentInput().props.onSubmitEditing());
+  expect(visibleText()).toContain('✗ Chưa đúng · Đáp án: 日本語');
+  expect(player().props.example.id).toBe('one');
+  await act(async () => currentInput().props.onChangeText(' 日本語 '));
+  expect(visibleText()).not.toContain('✗ Chưa đúng');
+  await act(async () => currentInput().props.onSubmitEditing());
+  expect(player().props.example.id).toBe('two');
+  expect(input().props.value).toBe(' 日本語 ');
+  expect(currentInput().props.value).toBe('');
+  expect(input(2).props.value).toBe('');
+  // The central sentence stays selected after its final playback timestamp.
+  await act(async () => player().props.onCaptionChange(-1));
+  expect(currentInput().props.value).toBe('');
+  await act(async () => currentInput().props.onChangeText('次'));
+  await act(async () => currentInput().props.onSubmitEditing());
+  expect(player().props.example.id).toBe('two');
+  expect(visibleText()).toContain('Đã hoàn thành câu cuối!');
+  await press('Shadowing');
+  expect(visibleText()).toContain(example.text);
+  await press('Nghe chép chính tả');
+  expect(input().props.value).toBe(' 日本語 ');
+  expect(visibleText()).toContain('✓ Đúng');
+  expect(shadowingService.questions).not.toHaveBeenCalled();
+  expect(shadowingService.requestTranslation).not.toHaveBeenCalled();
+});
+
+test('dictation gaps follow token offsets, stay nonempty and leave punctuation visible', () => {
+  expect(
+    createDictationGap(
+      '猫と猫。',
+      [
+        { text: '猫', key: 'cat' },
+        { text: 'と' },
+        { text: '猫', key: 'cat' },
+        { text: '。' },
+      ],
+      () => 0.99,
+    ),
+  ).toEqual({ before: '猫と', hidden: '猫', after: '。' });
+  expect(createDictationGap('日本語です。', undefined, () => 0)).toEqual({
+    before: '',
+    hidden: '日本語です',
+    after: '。',
+  });
+  expect(createDictationGap('…！？')).toBeNull();
+});
+
+test.each([
+  ['日本語 です。', '日本語です'],
+  ['ｶﾀｶﾅ！', 'カタカナ'],
+  ['スーパー', 'スーパー'],
+  ['ＡＢＣ１２３', 'abc123'],
+])(
+  'dictation normalizes formatting without dropping meaningful spelling: %s',
+  (input, expected) => {
+    expect(normalizeDictation(input)).toBe(expected);
+  },
+);
 
 test('opens a ready lesson, controls caption visibility speed and looping, and returns to list', async () => {
   await render();
@@ -862,9 +1004,8 @@ test('quiz is opt-in, hides future questions, grades once, and continues without
   expect(tree.root.findByType(VideoExamplePlayer).props.pausedForQuiz).toBe(
     true,
   );
-  await press('2 câu hỏi');
   await press('Tạo câu hỏi');
-  expect(shadowingService.questions).toHaveBeenCalledWith('job-1', 2, 'N3');
+  expect(shadowingService.questions).toHaveBeenCalledWith('job-1', 'N3');
   expect(visibleText()).not.toContain('話している人は何語を使っていますか。');
   expect(visibleText()).not.toContain('その後、話している人は何をしますか。');
   expect(tree.root.findByType(VideoExamplePlayer).props.continuous).toBe(true);
@@ -921,6 +1062,70 @@ test('quiz is opt-in, hides future questions, grades once, and continues without
   expect(shadowingService.questions).toHaveBeenCalledTimes(1);
 });
 
+test('quiz level selection loads saved sets, creates only missing levels and keeps answers separate', async () => {
+  const set = await shadowingService.questions('job-1');
+  jest.mocked(shadowingService.questions).mockClear();
+  jest
+    .mocked(shadowingService.savedQuestions)
+    .mockImplementation(async (_id, level) => ({
+      questions: level === 'N5' ? set.questions : [],
+      level,
+      available_levels: ['N5'],
+    }));
+  jest
+    .mocked(shadowingService.questions)
+    .mockResolvedValue({ ...set, level: 'N1' });
+  await render();
+  await press('Luyện shadowing');
+  await press('Trình độ N5');
+  expect(shadowingService.savedQuestions).toHaveBeenLastCalledWith(
+    'job-1',
+    'N5',
+  );
+  expect(shadowingService.questions).not.toHaveBeenCalled();
+  await act(async () =>
+    tree.root.findByType(VideoExamplePlayer).props.onQuizQuestion('q1'),
+  );
+  await press('Đáp án A: 日本語');
+  await press('Xem tiếp');
+  await press('Trình độ N1');
+  expect(
+    tree.root.findByType(VideoExamplePlayer).props.quizCheckpoints,
+  ).toEqual([]);
+  await press('Tạo câu hỏi');
+  expect(shadowingService.questions).toHaveBeenCalledTimes(1);
+  expect(shadowingService.questions).toHaveBeenLastCalledWith('job-1', 'N1');
+  expect(
+    tree.root.findByType(VideoExamplePlayer).props.quizCheckpoints,
+  ).toHaveLength(2);
+  await press('Trình độ N5');
+  expect(
+    tree.root.findByType(VideoExamplePlayer).props.quizCheckpoints,
+  ).toEqual([{ id: 'q2', seconds: 6 }]);
+  await press('Trình độ N1');
+  expect(
+    tree.root.findByType(VideoExamplePlayer).props.quizCheckpoints,
+  ).toHaveLength(2);
+  expect(shadowingService.questions).toHaveBeenCalledTimes(1);
+});
+
+test('saved video quiz loads automatically and replay never generates again', async () => {
+  const saved = await shadowingService.questions('job-1');
+  jest.mocked(shadowingService.questions).mockClear();
+  jest
+    .mocked(shadowingService.savedQuestions)
+    .mockResolvedValue({ ...saved, level: 'N3' });
+  await render();
+  await press('Luyện shadowing');
+  expect(shadowingService.savedQuestions).toHaveBeenCalledWith('job-1', 'N3');
+  await press('Câu hỏi AI');
+  await press('Làm lại bộ câu hỏi');
+  expect(shadowingService.questions).not.toHaveBeenCalled();
+  expect(
+    tree.root.findByType(VideoExamplePlayer).props.quizCheckpoints,
+  ).toHaveLength(saved.questions.length);
+});
+
 test('quiz generation can be retried after failure and turned off during a question', async () => {
   jest
     .mocked(shadowingService.questions)
@@ -949,7 +1154,7 @@ test.each(['cancel', 'leave'] as const)(
     let finish!: (
       value: Awaited<ReturnType<typeof shadowingService.questions>>,
     ) => void;
-    const result = await shadowingService.questions('job-1', 2);
+    const result = await shadowingService.questions('job-1');
     jest.mocked(shadowingService.questions).mockImplementation(
       () =>
         new Promise(resolve => {
@@ -984,16 +1189,14 @@ test('quiz lists stop times and jumps to the selected question without generatin
   await render();
   await press('Luyện shadowing');
   await press('Câu hỏi AI');
-  await press('2 câu hỏi');
   await press('Tạo câu hỏi');
   const webview = tree.root.findByProps({ testID: 'youtube-example-player' });
   const source = webview.props.source;
   await act(async () =>
     webview.props.onMessage({ nativeEvent: { data: '{"type":"ready"}' } }),
   );
-  await press('Câu hỏi AI');
-  expect(visibleText()).toContain('Câu 1 · 0:03');
-  expect(visibleText()).toContain('Câu 2 · 0:06');
+  expect(visibleText()).toContain('0:03');
+  expect(visibleText()).toContain('0:06');
   expect(visibleText()).not.toContain('その後、話している人は何をしますか。');
   await press('Tới câu hỏi 2');
   expect(
@@ -1024,6 +1227,7 @@ test('quiz lists stop times and jumps to the selected question without generatin
       typeof node.props.onPress === 'function',
   )[0];
   expect(completed.props.accessibilityState.disabled).toBe(false);
+  await press('Đóng câu hỏi AI');
   await press('Tới câu hỏi 1');
   expect(
     injectJavaScript.mock.calls.some(([script]) =>
@@ -1038,9 +1242,8 @@ test('uses the selected JLPT level and retains answers for review until leaving 
   await press('Luyện shadowing');
   await press('Câu hỏi AI');
   await press('Trình độ N5');
-  await press('1 câu hỏi');
   await press('Tạo câu hỏi');
-  expect(shadowingService.questions).toHaveBeenCalledWith('job-1', 1, 'N5');
+  expect(shadowingService.questions).toHaveBeenCalledWith('job-1', 'N5');
   await act(async () =>
     tree.root.findByType(VideoExamplePlayer).props.onQuizQuestion('q1'),
   );
@@ -1070,7 +1273,7 @@ test('uses the selected JLPT level and retains answers for review until leaving 
 });
 
 test('unanswered question opens at 5:00 after seeking to 4:58 using actual playback time', async () => {
-  const generated = await shadowingService.questions('job-1', 1, 'N3');
+  const generated = await shadowingService.questions('job-1', 'N3');
   const question = { ...generated.questions[0], trigger_seconds: 300 };
   jest
     .mocked(shadowingService.questions)

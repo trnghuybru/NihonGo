@@ -26,7 +26,7 @@ export type ShadowingLookupWord = {
 };
 export type ShadowingLesson = {
   job: ShadowingJob;
-  video: VideoExample['video'];
+  video: VideoExample['video'] & { duration_seconds?: number };
   caption_kind: 'manual' | 'asr';
   segments: VideoExample[];
   captions?: (VideoExample & { segment_id: string })[];
@@ -57,10 +57,20 @@ export type ShadowingTranslation = {
   model?: string;
 };
 export const shadowingService = {
-  questions: (id: string, count: number, level: ShadowingQuizLevel = 'N3') =>
-    authenticatedRequest<{ questions: ShadowingQuestion[] }>(
+  savedQuestions: (id: string, level: ShadowingQuizLevel = 'N3') =>
+    authenticatedRequest<{
+      questions: ShadowingQuestion[];
+      level?: ShadowingQuizLevel;
+      available_levels?: ShadowingQuizLevel[];
+    }>(`${root}/${encodeURIComponent(id)}/questions?level=${level}`),
+  questions: (id: string, level: ShadowingQuizLevel = 'N3') =>
+    authenticatedRequest<{
+      questions: ShadowingQuestion[];
+      level?: ShadowingQuizLevel;
+      available_levels?: ShadowingQuizLevel[];
+    }>(
       `${root}/${encodeURIComponent(id)}/questions`,
-      { count, level },
+      { count: 5, level },
       'POST',
       { timeoutMs: 75000 },
     ),

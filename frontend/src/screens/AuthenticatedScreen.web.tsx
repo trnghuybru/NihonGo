@@ -247,7 +247,13 @@ function WebWorkspace({
             >
               <View style={styles.screen}>
                 {desktop ? (
-                  <View style={styles.topBar}>
+                  <View
+                    style={[
+                      styles.topBar,
+                      /^\/practice\/listening\/[^/]+$/.test(nav.pathname) &&
+                        styles.listeningLessonTopBar,
+                    ]}
+                  >
                     <View style={styles.header}>{webHeader}</View>
                     <View style={styles.badges}>
                       <Text style={styles.badge}>
@@ -290,7 +296,9 @@ function WebWorkspace({
                             onOpenVocabulary={openLessons}
                             onOpenFlashcards={openFlashcards}
                             onOpenQuiz={openQuiz}
-                            onOpenGames={betaWeb && !betaGamesWeb ? undefined : openGames}
+                            onOpenGames={
+                              betaWeb && !betaGamesWeb ? undefined : openGames
+                            }
                             onSearchVocabulary={(query, entry) =>
                               navigate(
                                 entry
@@ -312,7 +320,9 @@ function WebWorkspace({
                         element={
                           <PracticeScreen
                             onOpenSkill={openSkill}
-                            onOpenGames={betaWeb && !betaGamesWeb ? undefined : openGames}
+                            onOpenGames={
+                              betaWeb && !betaGamesWeb ? undefined : openGames
+                            }
                             onOpenLessons={openLessons}
                             onOpenFlashcards={() =>
                               navigate('/flashcards', {
@@ -597,6 +607,7 @@ const styles = StyleSheet.create({
     gap: spacing.sm,
   },
   header: { flex: 1, minWidth: 0 },
+  listeningLessonTopBar: { maxWidth: '100%' },
   badges: { flexDirection: 'row', gap: spacing.sm, alignItems: 'center' },
   badge: {
     ...typography.caption,

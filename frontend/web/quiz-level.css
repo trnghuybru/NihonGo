@@ -1,0 +1,99 @@
+.ng-quiz-level {
+  display: inline-flex;
+  flex-shrink: 0;
+  font-family: var(--quiz-font);
+}
+.ng-quiz-level-trigger {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-width: 96px;
+  min-height: 40px;
+  padding: 8px 12px;
+  border: 1px solid var(--quiz-border);
+  border-radius: var(--quiz-radius);
+  background: var(--quiz-surface);
+  color: var(--quiz-text);
+  font: inherit;
+  font-size: 14px;
+  line-height: 20px;
+  cursor: pointer;
+}
+.ng-quiz-level-trigger svg {
+  color: var(--quiz-primary);
+  transition: transform 120ms ease;
+}
+.ng-quiz-level-trigger:hover,
+.ng-quiz-level-trigger[aria-expanded='true'] {
+  border-color: var(--quiz-primary);
+  background: var(--quiz-tint);
+}
+.ng-quiz-level-trigger[aria-expanded='true'] svg {
+  transform: rotate(180deg);
+}
+.ng-quiz-level-trigger:focus-visible {
+  outline: 2px solid var(--quiz-focus);
+  outline-offset: 2px;
+}
+.ng-quiz-level-trigger:disabled {
+  color: var(--quiz-disabled-text);
+  background: var(--quiz-disabled);
+  border-color: var(--quiz-border);
+  cursor: default;
+}
+.ng-quiz-level-trigger:disabled svg {
+  color: var(--quiz-disabled-text);
+}
+.ng-quiz-level-menu {
+  position: fixed;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 6px;
+  border: 1px solid var(--quiz-border);
+  border-radius: var(--quiz-radius);
+  background: var(--quiz-surface);
+  color: var(--quiz-text);
+  box-shadow: var(--quiz-shadow);
+  overflow-y: auto;
+  font-family: var(--quiz-font);
+}
+.ng-quiz-level-menu:popover-open {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.ng-quiz-level-option {
+  appearance: none;
+  flex-shrink: 0;
+  display: block;
+  width: 100%;
+  min-height: 40px;
+  padding: 8px 12px;
+  border: 0;
+  border-radius: 12px;
+  background: transparent;
+  color: var(--quiz-text);
+  text-align: left;
+  font: inherit;
+  font-size: 14px;
+  line-height: 20px;
+  cursor: pointer;
+}
+.ng-quiz-level-option:hover {
+  background: var(--quiz-tint);
+}
+.ng-quiz-level-option[aria-selected='true'] {
+  background: var(--quiz-primary);
+  color: var(--quiz-on-primary);
+}
+.ng-quiz-level-option:focus-visible {
+  outline: 2px solid var(--quiz-focus);
+  outline-offset: -2px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .ng-quiz-level-trigger svg {
+    transition: none;
+  }
+}

@@ -8,7 +8,7 @@ export const featureGuides = [
   {
     id: 'listening',
     label: 'Nghe',
-    symbol: '聴',
+    icon: 'headphones',
     path: '/practice/listening',
     summary: 'YouTube, phụ đề & shadowing',
     steps: [
@@ -37,7 +37,7 @@ export const featureGuides = [
   {
     id: 'speaking',
     label: 'Nói',
-    symbol: '話',
+    icon: 'microphone',
     path: '/practice/speaking',
     summary: 'Trò chuyện Live cùng Aoi 3D',
     steps: [
@@ -62,7 +62,7 @@ export const featureGuides = [
   {
     id: 'reading',
     label: 'Đọc',
-    symbol: '読',
+    icon: 'reading',
     path: '/practice/reading',
     summary: 'Bài đọc, furigana & tra từ',
     steps: [
@@ -85,7 +85,7 @@ export const featureGuides = [
   {
     id: 'writing',
     label: 'Viết',
-    symbol: '書',
+    icon: 'writing',
     path: '/practice/writing',
     summary: 'Viết bài & nhận góp ý AI',
     steps: [
@@ -106,7 +106,7 @@ export const featureGuides = [
   {
     id: 'lookup',
     label: 'Tra cứu',
-    symbol: '辞',
+    icon: 'search',
     path: '/lookup',
     summary: 'Từ vựng, Kanji & viết tay',
     steps: [
@@ -126,7 +126,7 @@ export const featureGuides = [
   {
     id: 'lessons',
     label: 'Bài học',
-    symbol: '学',
+    icon: 'lightbulb',
     path: '/lessons',
     summary: 'Từ vựng theo giáo trình',
     steps: [
@@ -146,7 +146,7 @@ export const featureGuides = [
   {
     id: 'flashcards',
     label: 'Flashcard',
-    symbol: '覚',
+    icon: 'flashcards',
     path: '/flashcards',
     summary: 'Ôn từ theo mức độ ghi nhớ',
     steps: [
@@ -169,7 +169,7 @@ export const featureGuides = [
   {
     id: 'games',
     label: 'Game từ vựng',
-    symbol: '遊',
+    icon: 'gamepad',
     path: '/games',
     summary: 'Cùng bạn bè học và thi đấu',
     steps: [
@@ -229,9 +229,15 @@ export const listeningLessonGuide = {
       selectors: ['[aria-label="Bản dịch"]'],
     },
     {
+      title: 'Nghe và chép chính tả',
+      description:
+        'Chọn Nghe chép chính tả để ẩn ngẫu nhiên một từ/cụm từ trong mỗi dòng transcript. Video dừng sau mỗi câu. Điền từ còn thiếu trong khung dưới video hoặc transcript rồi nhấn Enter: đúng sẽ tự phát câu tiếp, sai sẽ hiện đáp án. Viết đúng Kanji theo phụ đề (皆さん ◯ / みなさん ×). Bấm nút phát cạnh câu để nghe lại; chức năng này không dùng AI.',
+      selectors: ['[aria-label="Nghe chép chính tả"]'],
+    },
+    {
       title: 'Kiểm tra bằng câu hỏi AI',
       description:
-        'Bấm Câu hỏi AI để thiết lập bài kiểm tra. Khi luyện, câu hỏi có thể xuất hiện ở các mốc trong video; chọn đáp án rồi tiếp tục nghe. Bạn luôn có thể mở ? → Hướng dẫn bài nghe này để xem lại.',
+        'Chọn trình độ N5–N1 dưới video. Mỗi trình độ có bộ 5 câu hỏi riêng; bộ đã có sẽ được dùng lại, bộ chưa có cần bấm Tạo câu hỏi. Bấm mốc trên timeline để đến câu hỏi, trả lời rồi xem giải thích. Bạn luôn có thể mở ? → Hướng dẫn bài nghe này để xem lại.',
       selectors: ['[aria-label="Câu hỏi AI"]'],
     },
   ],

@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import type { CSSProperties, ReactNode } from 'react';
 import { createPortal } from 'react-dom';
+import { HomeFeatureIcon } from '../src/components/HomeFeatureIcon';
 import coffeeQr from '../src/assets/support/coffee-qr.png';
 import momoWave from '../src/assets/mascot/momo-wave.png';
 import {
@@ -87,18 +88,26 @@ export function CommunityExperience({
     overlay?.kind === 'tour' ? guide?.steps[overlay.step] : undefined;
   const opened = overlay !== null;
 
-  function markDone(id: GuideId) {
-    const next = { ...progress, [id]: true as const };
-    setProgress(next);
+  // Remember exposure, even when navigation, refresh or logout interrupts a tour.
+  // Explicit replay through Help remains available regardless of this flag.
+  const seenId: GuideId | undefined =
+    overlay?.kind === 'welcome'
+      ? 'welcome'
+      : overlay?.kind === 'tour'
+      ? overlay.id
+      : undefined;
+  useEffect(() => {
+    if (!seenId || progress[seenId]) return;
+    const next = { ...progress, [seenId]: true as const };
     try {
       saveGuideProgress(window.localStorage, accountId, next);
     } catch {
       /* Keep session state if storage is blocked. */
     }
-  }
+    setProgress(next);
+  }, [accountId, seenId, progress]);
+
   function close() {
-    if (overlay?.kind === 'welcome') markDone('welcome');
-    if (overlay?.kind === 'tour') markDone(overlay.id);
     setOverlay(null);
     setCopied('');
   }
@@ -291,7 +300,13 @@ export function CommunityExperience({
             <div className="ng-feature-preview">
               {featureGuides.map(item => (
                 <div key={item.id}>
-                  <span lang="ja">{item.symbol}</span>
+                  <span aria-hidden="true">
+                    <HomeFeatureIcon
+                      name={item.icon}
+                      size={24}
+                      color="currentColor"
+                    />
+                  </span>
                   <strong>{item.label}</strong>
                 </div>
               ))}
@@ -423,8 +438,12 @@ export function CommunityExperience({
         <div className="ng-help-grid">
           {featureGuides.map(item => (
             <button key={item.id} onClick={() => replay(item)}>
-              <span className="ng-feature-symbol" lang="ja">
-                {item.symbol}
+              <span className="ng-feature-symbol" aria-hidden="true">
+                <HomeFeatureIcon
+                  name={item.icon}
+                  size={22}
+                  color="currentColor"
+                />
               </span>
               <span>
                 <strong>{item.label}</strong>
