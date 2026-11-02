@@ -103,6 +103,8 @@ def join(code):
         raise ApiError('Mã phòng gồm 6 chữ hoặc số.')
     row, state = engine.locked(code)
     player = next((p for p in state['players'] if p['id'] == g.user.id), None)
+    if state['phase'] == 'finished' and player:
+        return publish(row)
     if state['phase'] in ('finished', 'closed'):
         raise ApiError('Phòng đã kết thúc.', 409)
     if player and not player['left']:
@@ -149,7 +151,7 @@ def start(code):
     if state['phase'] != 'waiting' or len(players) < 2 or not all(p['ready'] for p in players):
         raise ApiError('Cần ít nhất 2 người và tất cả đã sẵn sàng.', 409)
     if row.mode == 'read' and state.get('voice_ready_at', 0) < engine.millis()-10000:
-        raise ApiError('Bộ nhận dạng Whisper đang kết nối. Vui lòng thử lại sau.', 503, 'game_voice_unavailable')
+        raise ApiError('Bộ chấm giọng đang kết nối. Vui lòng thử lại sau.', 503, 'game_voice_unavailable')
     state.update(phase='countdown', deadline=engine.millis()+3000)
     return changed(row, state)
 
@@ -178,7 +180,8 @@ def buzz(code):
         raise ApiError('Bộ nhận dạng tạm mất kết nối.', 503, 'game_voice_unavailable')
     # The DB lock ensures two simultaneous buzzes cannot both grant publication.
     media.permission(row, g.user.id, True)
-    state.update(holder=g.user.id, phase='reading', deadline=engine.millis()+8000)
+    at = engine.millis()
+    state.update(holder=g.user.id, phase='reading', buzzed_at=at, deadline=at+8000)
     return changed(row, state)
 
 

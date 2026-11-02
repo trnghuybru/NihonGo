@@ -39,7 +39,7 @@ jobs:
       - name: Validate backend
         run: |
           python -m compileall -q backend
-          python -m unittest tests.test_beta_daily tests.test_beta_ai tests.test_gemini_live_gateway tests.test_local_audio_storage tests.test_games tests.test_shadowing tests.test_translation tests.test_speaking_ai -q
+          python -m unittest tests.test_beta_daily tests.test_beta_ai tests.test_gemini_live_gateway tests.test_local_audio_storage tests.test_games tests.test_game_speech tests.test_shadowing tests.test_translation tests.test_speaking_ai -q
 
   frontend:
     runs-on: ubuntu-24.04

@@ -61,7 +61,7 @@ def locked(code, user_id=None):
         raise ApiError('Không tìm thấy phòng chơi.', 404, 'room_not_found')
     if row.expires_at <= millis():
         raise ApiError('Phòng chơi đã hết hạn.', 410, 'room_expired')
-    if user_id is not None and not any(p['id'] == user_id and not p['left'] for p in row.state['players']):
+    if user_id is not None and not any(p['id'] == user_id and (not p['left'] or row.status == 'finished') for p in row.state['players']):
         raise ApiError('Bạn không ở trong phòng này.', 403, 'room_forbidden')
     return row, copy.deepcopy(row.state)
 
@@ -72,7 +72,8 @@ def new_question(state, at):
         state.update(phase='finished', deadline=None)
         return
     state.update(index=index, phase='question', round_id=str(uuid.uuid4()), holder=None,
-                 attempts=[], sequence=0, deadline=at + state['seconds'] * 1000, result=None)
+                 attempts=[], sequence=0, deadline=at + state['seconds'] * 1000, result=None,
+                 question_started_at=at, buzzed_at=None)
 
 
 def conclude(state, at, technical_error=None):
@@ -134,7 +135,7 @@ def create_room(user, data):
     return row
 
 
-def submit(state, user_id, answer, at, mode, technical_error=None):
+def submit(state, user_id, answer, at, mode, technical_error=None, timing=None):
     phase = 'judging' if mode == 'read' else 'question'
     if state['phase'] != phase:
         raise ApiError('Câu hỏi đã kết thúc hoặc chưa sẵn sàng.', 409, 'round_closed')
@@ -145,8 +146,13 @@ def submit(state, user_id, answer, at, mode, technical_error=None):
     state['sequence'] += 1
     rank = 1 + sum(a['correct'] for a in state['attempts']) if correct else None
     points = (10 if mode == 'read' else max(1, 12 - 2*rank)) if correct and not technical_error else 0
+    response_ms = None
+    if mode == 'read' and timing and timing.get('speech_ended_at') and state.get('question_started_at'):
+        # Measure the actual answer, never the STT request latency or client clock.
+        response_ms = max(0, timing['speech_ended_at'] - state['question_started_at'])
     state['attempts'].append({'user_id': user_id, 'answer': answer, 'correct': bool(correct and not technical_error),
-                              'rank': rank if not technical_error else None, 'points': points, 'sequence': state['sequence']})
+                              'rank': rank if not technical_error else None, 'points': points, 'sequence': state['sequence'],
+                              'response_ms': response_ms, 'spoken_ms': (timing or {}).get('spoken_ms')})
     next(p for p in state['players'] if p['id'] == user_id)['score'] += points
     active_ids = {p['id'] for p in state['players'] if not p['left']}
     if mode == 'read' or active_ids <= {a['user_id'] for a in state['attempts']}:

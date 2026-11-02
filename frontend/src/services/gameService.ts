@@ -18,6 +18,8 @@ export type GameAttempt = {
   rank: number | null;
   points: number;
   sequence: number;
+  response_ms?: number | null;
+  spoken_ms?: number | null;
 };
 export type GameResult = {
   word: string;

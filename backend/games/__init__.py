@@ -5,12 +5,43 @@ import time
 import jwt
 from flask import request
 from flask_socketio import SocketIO, disconnect, join_room
-from sqlalchemy import select
+from sqlalchemy import or_, select
 from api_errors import ApiError
 from auth.models import AuthSession, User, now
 from extensions import db
 from .models import GameRoom
 from . import engine, media
+
+
+def sync_rooms(socketio, versions):
+    """Advance and broadcast room versions, including terminal changes from workers."""
+    rows = list(db.session.scalars(select(GameRoom).where(or_(
+        GameRoom.status.notin_(('closed', 'finished')),
+        GameRoom.updated_at > engine.millis() - 120000)).limit(200)))
+    for item in rows:
+        row = db.session.scalar(select(GameRoom).where(GameRoom.id == item.id)
+            .with_for_update(skip_locked=True).execution_options(populate_existing=True))
+        if not row:
+            continue
+        state = copy.deepcopy(row.state)
+        before = state['phase']
+        at = engine.millis()
+        changed = engine.tick(state, row.mode, at)
+        if row.expires_at <= at and state['phase'] not in ('finished', 'closed'):
+            state.update(phase='closed', deadline=None)
+            changed = True
+        if row.mode == 'read' and state.get('holder') and before == 'reading' and state['phase'] != 'reading':
+            try:
+                media.permission(row, state['holder'], False)
+            except ApiError:
+                state.update(phase='closed', deadline=None, result={'technical_error': 'Mất kết nối âm thanh. Phòng đã dừng.'})
+        if changed:
+            engine.mutate(row, state)
+        db.session.commit()
+        # Also wakes clients when the voice worker has updated a room in another process.
+        if versions.get(row.id) != row.version:
+            versions[row.id] = row.version
+            socketio.emit('room_changed', {'code': row.code, 'version': row.version}, to=row.code, namespace='/games')
 
 
 def init_games(app, start_timer=True):
@@ -83,32 +114,7 @@ def init_games(app, start_timer=True):
                     for sid in list(connections):
                         if authenticated(sid) is None:
                             socketio.server.disconnect(sid, namespace='/games')
-                    rows = list(db.session.scalars(select(GameRoom).where(
-                        GameRoom.status.notin_(('closed', 'finished'))).limit(200)))
-                    for item in rows:
-                        row = db.session.scalar(select(GameRoom).where(GameRoom.id == item.id)
-                            .with_for_update(skip_locked=True).execution_options(populate_existing=True))
-                        if not row:
-                            continue
-                        state = copy.deepcopy(row.state)
-                        before = state['phase']
-                        at = engine.millis()
-                        changed = engine.tick(state, row.mode, at)
-                        if row.expires_at <= at:
-                            state.update(phase='closed', deadline=None)
-                            changed = True
-                        if row.mode == 'read' and state.get('holder') and before == 'reading' and state['phase'] != 'reading':
-                            try:
-                                media.permission(row, state['holder'], False)
-                            except ApiError:
-                                state.update(phase='closed', deadline=None, result={'technical_error': 'Mất kết nối âm thanh. Phòng đã dừng.'})
-                        if changed:
-                            engine.mutate(row, state)
-                        db.session.commit()
-                        # Also wakes clients when the voice worker has updated a room in another process.
-                        if versions.get(row.id) != row.version:
-                            versions[row.id] = row.version
-                            socketio.emit('room_changed', {'code': row.code, 'version': row.version}, to=row.code, namespace='/games')
+                    sync_rooms(socketio, versions)
                 except Exception as error:
                     db.session.rollback()
                     app.logger.warning('Game timer failed (%s)', type(error).__name__)

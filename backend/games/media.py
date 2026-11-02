@@ -18,7 +18,7 @@ def access_token(row, identity, name, worker=False):
     return (api.AccessToken(cfg['LIVEKIT_API_KEY'], cfg['LIVEKIT_API_SECRET'])
             .with_identity(identity).with_name(name).with_ttl(timedelta(hours=2))
             .with_grants(api.VideoGrants(room_join=True, room=room_name(row.id),
-                can_publish=False,
+                can_publish=bool(not worker and row.state.get('phase') == 'reading' and row.state.get('holder') == identity),
                 can_subscribe=True, can_publish_data=False, can_publish_sources=['microphone'], hidden=worker))
             .to_jwt())
 

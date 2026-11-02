@@ -1,4 +1,4 @@
 # Install alongside backend requirements or reuse the Shadowing worker image.
-livekit>=1,<2
-faster-whisper>=1.2,<2
-av>=11,<17
+livekit==1.2.0
+google-auth>=2,<3
+numpy>=1.26,<3

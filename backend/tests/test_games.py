@@ -6,7 +6,7 @@ from sqlalchemy import delete
 from auth import init_auth
 from auth.models import AuthSession, User, db, now
 from auth.security import digest
-from games import init_games, engine
+from games import init_games, engine, sync_rooms
 from games.models import GameRoom
 from vocabulary.models import VocabularyTextbook, VocabularyLesson, VocabularyWord
 
@@ -104,3 +104,89 @@ class GameTests(unittest.TestCase):
         state={'phase':'judging','holder':'u0','index':0,'round_id':'one','players':[{'id':'u0','score':0,'left':False}], 'questions':[{'word':'猫','reading':'ねこ','accepted':['ねこ'],'meaning':'mèo'}], 'attempts':[],'sequence':0,'history':[]}
         engine.submit(state,'u0','ねこ',engine.millis(),'read','Không nghe rõ')
         self.assertEqual(state['phase'],'results');self.assertEqual(state['players'][0]['score'],0)
+
+    def test_finished_worker_state_broadcasts_to_all_players_and_survives_host_leaving(self):
+        code = self.create(question_count=1)
+        state = self.start(code)
+        clients = []
+        for user in (0, 1):
+            ticket = self.post('/socket-ticket', user=user).json['ticket']
+            client = self.socket.test_client(self.app, namespace='/games', auth={'ticket': ticket})
+            self.assertEqual(client.emit('subscribe', {'code': code}, namespace='/games', callback=True), {'ok': True})
+            client.get_received('/games')
+            clients.append(client)
+        row = db.session.query(GameRoom).filter_by(code=code).one()
+        state = copy.deepcopy(row.state)
+        engine.conclude(state, engine.millis())
+        engine.new_question(state, engine.millis())
+        engine.mutate(row, state)
+        db.session.commit()  # Simulates another process updating the final state, without HTTP publish.
+        sync_rooms(self.socket, {})
+        for client in clients:
+            self.assertTrue(any(event['name'] == 'room_changed' for event in client.get_received('/games')))
+            client.disconnect(namespace='/games')
+        self.post(f'/rooms/{code}/leave')
+        for user in (0, 1):
+            result = self.get(f'/rooms/{code}', user).json
+            self.assertEqual(result['phase'], 'finished')
+            self.assertEqual(len(result['history']), 1)
+            self.assertEqual(len(result['players']), 2)
+            self.assertEqual(self.post(f'/rooms/{code}/join', user=user).status_code, 200)
+        self.assertNotEqual(self.get(f'/rooms/{code}', 2).status_code, 200)
+
+    def test_read_timing_excludes_provider_latency(self):
+        state = {'phase':'judging','holder':'u0','index':0,'round_id':'one',
+                 'question_started_at':1000, 'players':[{'id':'u0','score':0,'left':False}],
+                 'questions':[{'word':'猫','reading':'ねこ','accepted':['ねこ'],'meaning':'mèo'}],
+                 'attempts':[],'sequence':0,'history':[]}
+        engine.submit(state, 'u0', 'ねこ', 99999, 'read', timing={'speech_ended_at':2400, 'spoken_ms':350})
+        self.assertEqual(state['attempts'][0]['response_ms'], 1400)
+        self.assertEqual(state['attempts'][0]['spoken_ms'], 350)
+        self.assertEqual(state['players'][0]['score'], 10)
+
+    def test_silence_finishes_only_the_current_reading_turn(self):
+        import numpy as np
+        from games.voice_worker import VoiceRoom
+        from games.speech import TurnAudio
+        self.app.config.update(LIVEKIT_URL='ws://localhost:7880',LIVEKIT_API_KEY='key',LIVEKIT_API_SECRET='secret'*8)
+        code = self.create('read')
+        self.start(code)
+        row = db.session.query(GameRoom).filter_by(code=code).one()
+        state = copy.deepcopy(row.state)
+        state.update(phase='reading', holder='u0')
+        engine.mutate(row, state)
+        db.session.commit()
+        runner = VoiceRoom(self.app, row.id, 'worker', None, None)
+        runner.read()
+        captured = TurnAudio()
+        captured.append((np.ones(3200, dtype='<i2') * 2000).tobytes(), engine.millis()-900)
+        runner.buffers[state['round_id']] = captured
+        runner.end_on_silence(engine.millis())
+        db.session.expire_all()
+        self.assertEqual(db.session.get(GameRoom, row.id).status, 'judging')
+        # A delayed capture from an old round cannot end the next question.
+        current = db.session.get(GameRoom, row.id)
+        new_state = copy.deepcopy(current.state)
+        engine.new_question(new_state, engine.millis())
+        engine.mutate(current, new_state)
+        db.session.commit()
+        runner.state = state
+        runner.end_on_silence(engine.millis())
+        db.session.expire_all()
+        self.assertEqual(db.session.get(GameRoom, row.id).status, 'question')
+
+    def test_reconnecting_holder_gets_publish_permission_but_others_do_not(self):
+        from games import media
+        self.app.config.update(LIVEKIT_URL='ws://localhost:7880',LIVEKIT_API_KEY='key',LIVEKIT_API_SECRET='secret'*8)
+        code = self.create('read')
+        self.start(code)
+        row = db.session.query(GameRoom).filter_by(code=code).one()
+        state = copy.deepcopy(row.state)
+        state.update(phase='reading', holder='u1')
+        engine.mutate(row, state)
+        db.session.commit()
+        for identity, worker, expected in [('u1', False, True), ('u0', False, False), ('worker', True, False)]:
+            import jwt
+            token = media.access_token(row, identity, identity, worker=worker)
+            claims = jwt.decode(token, options={'verify_signature': False})
+            self.assertEqual(claims['video']['canPublish'], expected)

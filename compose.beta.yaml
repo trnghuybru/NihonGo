@@ -122,7 +122,7 @@ services:
     env_file: ./backend/.env
     environment: *backend_environment
     volumes:
-      - ./model-cache:/models/huggingface
+      - ./deploy/beta/secrets:/run/vertex-secrets:ro
     command: ["python", "-m", "games.voice_worker"]
     depends_on:
       migrate:

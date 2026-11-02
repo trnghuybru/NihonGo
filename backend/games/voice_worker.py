@@ -1,4 +1,4 @@
-"""Receives the actual winner's LiveKit track and judges it with the local Whisper model.
+"""Receives the winner's LiveKit track and judges it with Cloud Speech-to-Text.
 Run separately: python -m games.voice_worker. No client-provided transcript is trusted.
 """
 import asyncio
@@ -7,7 +7,6 @@ import logging
 import os
 from pathlib import Path
 import uuid
-import numpy as np
 from flask import Flask
 from dotenv import load_dotenv
 from sqlalchemy import select
@@ -15,6 +14,7 @@ from auth import init_auth
 from extensions import db
 from . import engine, media
 from .models import GameRoom
+from .speech import CloudSpeechRecognizer, TurnAudio
 
 log = logging.getLogger('games.voice')
 
@@ -27,6 +27,7 @@ class VoiceRoom:
         self.buffers = {}
         self.tasks = set()
         self.processing = set()
+        self.captured = set()
         self.room = None
         self.last_permission = None
         self.done = False
@@ -61,39 +62,49 @@ class VoiceRoom:
         try:
             async for event in stream:
                 state = self.state
-                if state.get('phase') == 'reading' and state.get('holder') == identity:
+                if state.get('phase') in ('reading', 'judging') and state.get('holder') == identity:
                     key = state['round_id']
-                    data = self.buffers.setdefault(key, bytearray())
-                    if len(data) < 32000*10:
-                        data.extend(bytes(event.frame.data))
+                    if key not in self.captured:
+                        self.buffers.setdefault(key, TurnAudio()).append(bytes(event.frame.data), engine.millis())
         except Exception:
             log.exception('Audio track interrupted')
         finally:
             await stream.aclose()
 
     def recognize(self, raw):
-        if len(raw) < 32000*.12:
-            return '', 'Không nhận được âm thanh. Câu này không tính điểm.'
-        samples = np.frombuffer(raw, dtype=np.int16).astype(np.float32)/32768.0
-        if float(np.sqrt(np.mean(samples*samples))) < .003:
-            return '', 'Âm thanh quá nhỏ. Câu này không tính điểm.'
-        segments, _ = self.model.transcribe(samples, language='ja', task='transcribe',
-            vad_filter=True, vad_parameters={'min_speech_duration_ms': 100, 'min_silence_duration_ms': 150},
-            condition_on_previous_text=False, beam_size=5, temperature=0, without_timestamps=True)
-        segments = list(segments)
-        text = ''.join(s.text.strip() for s in segments)
-        if not text or all(s.no_speech_prob > .6 or s.avg_logprob < -1.2 for s in segments):
-            return '', 'Whisper không nghe rõ câu trả lời. Câu này không tính điểm.'
-        return text[:200], None
+        return self.model.recognize(raw)
+
+    def end_on_silence(self, at):
+        """Commit the turn before revoking publication; only this round may end."""
+        state = self.state
+        captured = self.buffers.get(state.get('round_id'))
+        if state.get('phase') != 'reading' or not captured or not captured.ended(at):
+            return
+        with self.app.app_context():
+            row = db.session.scalar(select(GameRoom).where(GameRoom.id == self.identifier).with_for_update())
+            if not row:
+                return
+            latest = copy.deepcopy(row.state)
+            if latest.get('round_id') == state.get('round_id') and latest.get('phase') == 'reading':
+                latest.update(phase='judging', deadline=at + 15000)
+                engine.mutate(row, latest)
+                db.session.commit()
+                self.state = latest
 
     async def judge(self, round_id, holder):
         await asyncio.sleep(.15)  # Drain the last in-flight audio frames after publication is revoked.
-        raw = bytes(self.buffers.pop(round_id, bytearray()))
+        captured = self.buffers.pop(round_id, TurnAudio())
+        self.captured.add(round_id)
+        raw = bytes(captured.data)
         try:
             async with self.semaphore:
+                self.read()
+                if (self.done or self.state.get('round_id') != round_id or
+                        self.state.get('phase') != 'judging' or self.state.get('deadline', 0) <= engine.millis()):
+                    return
                 transcript, error = await asyncio.to_thread(self.recognize, raw)
         except Exception:
-            log.exception('Whisper failed')
+            log.exception('Speech recognition failed')
             transcript, error = '', 'Bộ nhận dạng tạm lỗi. Câu này không tính điểm.'
         with self.app.app_context():
             row = db.session.scalar(select(GameRoom).where(GameRoom.id == self.identifier).with_for_update())
@@ -102,7 +113,8 @@ class VoiceRoom:
             state = copy.deepcopy(row.state)
             if state.get('round_id') != round_id or state['phase'] != 'judging' or state.get('holder') != holder:
                 return
-            engine.submit(state, holder, transcript, engine.millis(), 'read', error)
+            timing = {'speech_ended_at': captured.last_voice_at, 'spoken_ms': round(captured.voiced_ms)}
+            engine.submit(state, holder, transcript, engine.millis(), 'read', error, timing=timing)
             engine.mutate(row, state)
             db.session.commit()
 
@@ -126,7 +138,7 @@ class VoiceRoom:
             if track.kind == rtc.TrackKind.KIND_AUDIO and publication.source == rtc.TrackSource.SOURCE_MICROPHONE:
                 self.task(self.capture(track, participant.identity))
         with self.app.app_context():
-            token = media.access_token(row, 'transcriber-'+self.owner, 'Whisper', worker=True)
+            token = media.access_token(row, 'transcriber-'+self.owner, 'Speech judge', worker=True)
         try:
             await self.room.connect(self.app.config['LIVEKIT_URL'], token)
             heartbeat_at = 0
@@ -138,6 +150,7 @@ class VoiceRoom:
                 if at - heartbeat_at > 1500:
                     self.heartbeat()
                     heartbeat_at = at
+                self.end_on_silence(at)
                 state = self.state
                 holder = state.get('holder')
                 if holder and state.get('phase') != 'reading' and self.last_permission != (holder, state.get('round_id')):
@@ -160,7 +173,7 @@ class VoiceRoom:
 
 async def serve(app, model):
     owner = str(uuid.uuid4())
-    semaphore = asyncio.Semaphore(1)
+    semaphore = asyncio.Semaphore(2)
     tasks = {}
     while True:
         with app.app_context():
@@ -199,8 +212,4 @@ if __name__ == '__main__':
         app.config[key] = os.getenv(key, '')
     if not all(app.config[k] for k in ('LIVEKIT_URL', 'LIVEKIT_API_KEY', 'LIVEKIT_API_SECRET')):
         raise RuntimeError('Configure LIVEKIT_URL, LIVEKIT_API_KEY and LIVEKIT_API_SECRET first')
-    from faster_whisper import WhisperModel
-    model = WhisperModel(os.getenv('GAME_WHISPER_MODEL') or os.getenv('SHADOWING_WHISPER_MODEL', 'small'),
-        device='cpu', compute_type='int8', cpu_threads=int(os.getenv('GAME_WHISPER_THREADS', '2')),
-        num_workers=1, download_root=os.getenv('SHADOWING_MODEL_DIR') or None)
-    asyncio.run(serve(app, model))
+    asyncio.run(serve(app, CloudSpeechRecognizer()))

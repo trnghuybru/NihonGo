@@ -1,6 +1,6 @@
 import React from 'react';
 import Renderer, { act } from 'react-test-renderer';
-import { TextInput } from 'react-native';
+import { TextInput, Text } from 'react-native';
 import { VocabularyGameScreen } from '../src/screens/VocabularyGameScreen';
 import { gameService, GameRoom } from '../src/services/gameService';
 jest.mock('../src/services/gameService', () => ({
@@ -73,18 +73,14 @@ async function type(label: string, value: string) {
 }
 beforeEach(async () => {
   jest.clearAllMocks();
-  jest
-    .mocked(gameService.catalog)
-    .mockImplementation(async level => ({
-      level,
-      available_count: 30,
-      lessons: [
-        { id: 'lesson', title: 'Bài 1', textbook: 'N4', word_count: 10 },
-      ],
-      page: 1,
-      total_pages: 1,
-      read_available: false,
-    }));
+  jest.mocked(gameService.catalog).mockImplementation(async level => ({
+    level,
+    available_count: 30,
+    lessons: [{ id: 'lesson', title: 'Bài 1', textbook: 'N4', word_count: 10 }],
+    page: 1,
+    total_pages: 1,
+    read_available: false,
+  }));
   jest.mocked(gameService.create).mockResolvedValue(room);
   await act(async () => {
     tree = Renderer.create(<VocabularyGameScreen userId="u" onExit={exit} />);
@@ -133,17 +129,45 @@ test('sends only one writing answer for the current round', async () => {
   await press('Vào phòng');
   expect(control('Gửi đáp án').props.disabled).toBe(true);
   await type('Cách đọc (kana)', 'がっこう');
-  jest
-    .mocked(gameService.action)
-    .mockResolvedValue({
-      ...current,
-      version: 2,
-      players: [{ ...room.players[0], submitted: true }],
-    });
+  jest.mocked(gameService.action).mockResolvedValue({
+    ...current,
+    version: 2,
+    players: [{ ...room.players[0], submitted: true }],
+  });
   await press('Gửi đáp án');
   expect(gameService.action).toHaveBeenCalledWith('ABC234', 'answer', {
     round_id: 'round',
     answer: 'がっこう',
   });
   expect(control('Đã gửi đáp án').props.disabled).toBe(true);
+});
+
+test('a non-host sees every player in the final standings', async () => {
+  const finished: GameRoom = {
+    ...room,
+    host_id: 'other',
+    phase: 'finished',
+    version: 4,
+    players: [
+      { ...room.players[0], score: 10 },
+      { ...room.players[0], id: 'other', name: 'Lan', score: 20 },
+    ],
+    history: [
+      { number: 1, word: '猫', reading: 'ねこ', meaning: 'mèo', attempts: [] },
+    ],
+  };
+  jest.mocked(gameService.join).mockResolvedValue(finished);
+  await type('Mã phòng', 'ABC234');
+  await press('Vào phòng');
+  const summary = tree.root.findByProps({ testID: 'game-final-standings' });
+  // Rendered text nodes, rather than host-only actions, define the visible summary.
+  const labels = summary
+    .findAllByType(Text)
+    .map(node => node.props.children)
+    .flat()
+    .join(' ');
+  expect(labels).toContain('Minh');
+  expect(labels).toContain('Lan');
+  expect(labels).toContain('20');
+  expect(control('Về khu chơi')).toBeDefined();
 });

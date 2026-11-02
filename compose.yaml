@@ -43,12 +43,11 @@ services:
     environment:
       DATABASE_URL: postgresql+psycopg://nihongo:nihongo_local@postgres:5432/nihongo
       LIVEKIT_URL: ws://livekit:7880
-      SHADOWING_MODEL_DIR: /models/whisper
-      HF_HOME: /models/huggingface
+      GOOGLE_APPLICATION_CREDENTIALS: /run/vertex-secrets/vertex.json
     cpus: 2
     mem_limit: 3g
     volumes:
-      - shadowing_models:/models
+      - ./deploy/beta/secrets:/run/vertex-secrets:ro
     depends_on:
       postgres:
         condition: service_healthy

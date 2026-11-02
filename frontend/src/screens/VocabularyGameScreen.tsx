@@ -66,6 +66,7 @@ export function VocabularyGameScreen({
     [error, setError] = useState(''),
     [connected, setConnected] = useState(false),
     [audioReady, setAudioReady] = useState(false);
+  const [playbackBlocked, setPlaybackBlocked] = useState(false);
   const [clock, setClock] = useState(Date.now());
   const alive = useRef(true),
     pending = useRef(false),
@@ -74,9 +75,10 @@ export function VocabularyGameScreen({
   const audio = useRef<GameAudio | null>(null);
   const currentRoom = useRef<GameRoom | null>(null);
   const scroll = useRef<ComponentRef<typeof ScrollView>>(null);
+  const finished = room?.phase === 'finished';
   useEffect(() => {
     scroll.current?.scrollTo({ y: 0, animated: false });
-  }, [room?.id, room?.round_id]);
+  }, [room?.id, room?.round_id, finished]);
   currentRoom.current = room;
   useEffect(() => {
     alive.current = true;
@@ -183,7 +185,8 @@ export function VocabularyGameScreen({
         setConnected(false);
         if (
           cause instanceof ApiError &&
-          [403, 404, 410].includes(cause.status)
+          [403, 404, 410].includes(cause.status) &&
+          currentRoom.current?.phase !== 'finished'
         ) {
           setRoom(null);
           audio.current?.close().catch(() => undefined);
@@ -291,9 +294,16 @@ export function VocabularyGameScreen({
       if (!room) return;
       const credentials = await gameService.audio(room.code);
       audio.current ??= createGameAudio();
-      await audio.current.connect(credentials.url, credentials.token, ready => {
-        if (alive.current) setAudioReady(ready);
-      });
+      await audio.current.connect(
+        credentials.url,
+        credentials.token,
+        ready => {
+          if (alive.current) setAudioReady(ready);
+        },
+        blocked => {
+          if (alive.current) setPlaybackBlocked(blocked);
+        },
+      );
     });
   const me = room?.players.find(player => player.id === userId),
     players = room?.players.filter(player => !player.left) || [];
@@ -703,6 +713,36 @@ export function VocabularyGameScreen({
                       Đang chuẩn bị âm thanh cho phòng…
                     </Text>
                   ) : null}
+                  {playbackBlocked ? (
+                    <>
+                      <Text style={styles.caption}>
+                        Trình duyệt đang chặn loa. Bấm bên dưới để nghe người
+                        chơi khác.
+                      </Text>
+                      <AuthButton
+                        label="Bật âm thanh người chơi"
+                        variant="outline"
+                        onPress={() => {
+                          // Keep this call in the user gesture; do not await an API first.
+                          audio.current
+                            ?.resumePlayback()
+                            .then(() => {
+                              if (alive.current) setPlaybackBlocked(false);
+                            })
+                            .catch(() => {
+                              if (alive.current)
+                                setError(
+                                  'Chưa phát được âm thanh. Hãy kiểm tra loa và thử bật lại.',
+                                );
+                            });
+                        }}
+                      />
+                    </>
+                  ) : null}
+                  <Text style={styles.caption}>
+                    Đọc đúng được 10 điểm. Hệ thống tự chốt khi bạn ngừng nói;
+                    bạn cũng có thể bấm Đọc xong.
+                  </Text>
                 </View>
               ) : null}
               {room.phase === 'waiting' ? (
@@ -808,6 +848,25 @@ export function VocabularyGameScreen({
                         <Text style={styles.caption}> câu</Text>
                       </Text>
                     </View>
+                  </View>
+                  <View testID="game-final-standings">
+                    <Text style={styles.label}>Kết quả tất cả người chơi</Text>
+                    {standings.map(player => (
+                      <View key={player.id} style={styles.playerRow}>
+                        <Text style={styles.rank}>
+                          {standings.findIndex(
+                            item => item.score === player.score,
+                          ) + 1}
+                        </Text>
+                        <View style={styles.copy}>
+                          <Text style={styles.label}>
+                            {player.name}
+                            {player.id === userId ? ' · Bạn' : ''}
+                          </Text>
+                        </View>
+                        <Text style={styles.score}>{player.score} điểm</Text>
+                      </View>
+                    ))}
                   </View>
                   <Text style={styles.label}>Từ vựng trong trận</Text>
                   {room.history.map(item => (
@@ -1009,6 +1068,12 @@ export function VocabularyGameScreen({
                                   {item.answer || 'Không có câu trả lời'} ·{' '}
                                   {item.correct ? 'Đúng' : 'Chưa đúng'}
                                 </Text>
+                                {item.response_ms != null ? (
+                                  <Text style={styles.caption}>
+                                    Trả lời sau{' '}
+                                    {(item.response_ms / 1000).toFixed(1)} giây
+                                  </Text>
+                                ) : null}
                               </View>
                               <Text
                                 style={[

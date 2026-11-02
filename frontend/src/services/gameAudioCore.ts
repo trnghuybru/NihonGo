@@ -4,25 +4,36 @@ export type GameAudio = {
     url: string,
     token: string,
     onStatus: (ready: boolean) => void,
+    onPlaybackBlocked?: (blocked: boolean) => void,
   ) => Promise<void>;
   setSpeaking: (enabled: boolean) => Promise<void>;
+  resumePlayback: () => Promise<void>;
   close: () => Promise<void>;
 };
 export function audioClient(platform: {
   autoplay?: boolean;
   start: () => Promise<void>;
   stop: () => Promise<void>;
-  attach: (track: RemoteTrack) => () => void;
+  attach: (
+    track: RemoteTrack,
+    onBlocked: (blocked: boolean) => void,
+  ) => () => void;
 }): GameAudio {
   let room: Room | null = null,
     generation = 0;
   let started = false;
-  const cleanups: (() => void)[] = [];
+  const cleanups = new Map<RemoteTrack, () => void>();
+  let microphoneQueue = Promise.resolve();
+  let desiredSpeaking = false;
+  let speakingRequest = 0;
   const close = async () => {
     generation++;
     const old = room;
     room = null;
-    cleanups.splice(0).forEach(cleanup => cleanup());
+    desiredSpeaking = false;
+    speakingRequest++;
+    cleanups.forEach(cleanup => cleanup());
+    cleanups.clear();
     if (old) await old.disconnect();
     if (started) {
       started = false;
@@ -30,7 +41,7 @@ export function audioClient(platform: {
     }
   };
   return {
-    async connect(url, token, onStatus) {
+    async connect(url, token, onStatus, onPlaybackBlocked = () => {}) {
       const { Room, RoomEvent, Track, createLocalAudioTrack } = await import(
         'livekit-client'
       );
@@ -46,45 +57,113 @@ export function audioClient(platform: {
         });
         test.stop();
         if (current !== generation) {
-          await close();
           return;
         }
         const next = new Room();
         room = next;
-        next.on(RoomEvent.Disconnected, () => onStatus(false));
-        next.on(RoomEvent.TrackSubscribed, track => {
-          if (track.kind === Track.Kind.Audio)
-            cleanups.push(platform.attach(track));
+        const blocked = (value: boolean) => {
+          if (current === generation && next === room) onPlaybackBlocked(value);
+        };
+        const attach = (track: RemoteTrack) => {
+          if (
+            current === generation &&
+            track.kind === Track.Kind.Audio &&
+            !cleanups.has(track)
+          )
+            cleanups.set(track, platform.attach(track, blocked));
+        };
+        const reconcile = () => {
+          for (const participant of next.remoteParticipants.values())
+            for (const publication of participant.audioTrackPublications.values())
+              if (publication.track) attach(publication.track);
+        };
+        next.on(RoomEvent.Disconnected, () => {
+          if (next === room) onStatus(false);
         });
-        await next.connect(url, token);
+        next.on(RoomEvent.Reconnecting, () => {
+          if (next === room) onStatus(false);
+        });
+        next.on(RoomEvent.Reconnected, () => {
+          if (next === room) {
+            reconcile();
+            onStatus(true);
+          }
+        });
+        next.on(RoomEvent.TrackSubscribed, attach);
+        next.on(RoomEvent.TrackUnsubscribed, track => {
+          cleanups.get(track)?.();
+          cleanups.delete(track);
+        });
+        next.on(RoomEvent.AudioPlaybackStatusChanged, () => {
+          blocked(!next.canPlaybackAudio);
+        });
+        await next.connect(url, token, { autoSubscribe: true });
         if (current !== generation) {
           await next.disconnect();
           return;
         }
-        if (platform.autoplay) await next.startAudio();
+        reconcile();
+        if (platform.autoplay) {
+          try {
+            await next.startAudio();
+            blocked(!next.canPlaybackAudio);
+          } catch {
+            blocked(true);
+          }
+        }
         onStatus(true);
       } catch (error) {
-        onStatus(false);
-        await close();
+        if (current === generation) {
+          onStatus(false);
+          await close();
+        }
         throw error;
       }
     },
-    async setSpeaking(enabled) {
+    setSpeaking(enabled) {
+      desiredSpeaking = enabled;
+      const request = ++speakingRequest;
       const current = room;
-      if (!current) return;
-      if (enabled) {
-        for (
-          let n = 0;
-          n < 10 && !current.localParticipant.permissions?.canPublish;
-          n++
-        )
-          await new Promise<void>(resolve => setTimeout(resolve, 100));
-      }
-      if (current === room)
-        await current.localParticipant.setMicrophoneEnabled(enabled, {
-          echoCancellation: true,
-          noiseSuppression: true,
+      // Permission updates and React effects can arrive in opposite orders.
+      // Serialize track operations and discard obsolete requests after every await.
+      const operation = microphoneQueue
+        .catch(() => {})
+        .then(async () => {
+          if (!current || current !== room || request !== speakingRequest)
+            return;
+          if (enabled) {
+            for (
+              let n = 0;
+              n < 40 && !current.localParticipant.permissions?.canPublish;
+              n++
+            ) {
+              if (
+                !desiredSpeaking ||
+                request !== speakingRequest ||
+                current !== room
+              )
+                return;
+              await new Promise<void>(resolve => setTimeout(resolve, 100));
+            }
+            if (!current.localParticipant.permissions?.canPublish)
+              throw new Error(
+                'Chưa nhận được quyền phát micro. Hãy kết nối lại âm thanh.',
+              );
+          }
+          if (current !== room || request !== speakingRequest) return;
+          await current.localParticipant.setMicrophoneEnabled(enabled, {
+            echoCancellation: true,
+            noiseSuppression: true,
+          });
+          if (enabled && (!desiredSpeaking || current !== room))
+            await current.localParticipant.setMicrophoneEnabled(false);
         });
+      microphoneQueue = operation.catch(() => {});
+      return operation;
+    },
+    async resumePlayback() {
+      // Called directly by a user gesture, before any network/permission await.
+      await room?.startAudio();
     },
     close,
   };
