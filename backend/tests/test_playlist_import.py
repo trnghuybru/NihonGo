@@ -111,3 +111,51 @@ class PlaylistImportTests(unittest.TestCase):
                                               .where(ExampleVideo.caption_kind == 'manual')), 2)
             self.assertEqual(db.session.scalar(select(func.count()).select_from(ExampleVideo)
                                               .where(ExampleVideo.caption_kind == 'asr')), 0)
+
+    def run_operator(self, folder, process, recheck=False):
+        import importlib.util
+        script = Path(__file__).resolve().parents[2] / 'deploy/beta/import_youtube_playlist.py'
+        spec = importlib.util.spec_from_file_location('operator_playlist', script)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        args = ['import_youtube_playlist.py', '--manifest', str(folder / 'playlist.json'),
+                '--output', str(folder), '--max-imports', '1', '--delay', '0']
+        if recheck:
+            args.append('--retry-skipped-captions')
+        with patch('sys.argv', args), patch.dict('sys.modules', {'app': SimpleNamespace(app=self.app)}), \
+                patch.dict('os.environ'), patch('shadowing.processor.process_video', process):
+            return module.main()
+
+    def test_operator_pauses_on_caption_rate_limit_without_marking_video_missing(self):
+        from shadowing.processor import ProcessingError
+        with TemporaryDirectory() as directory:
+            folder = Path(directory)
+            (folder / 'playlist.json').write_text(json.dumps({'id': 'PLabcdefghijk', 'entries': [
+                {'id': 'newvideo001', 'duration': 10}, {'id': 'newvideo002', 'duration': 10}]}))
+            process = MagicMock(side_effect=ProcessingError('source_rate_limited', 'Rate limit'))
+            self.assertEqual(self.run_operator(folder, process), 75)
+            report = json.loads((folder / 'report.json').read_text())
+            self.assertEqual(report['status'], 'paused')
+            self.assertEqual(report['stop_reason'], 'source_rate_limited')
+            self.assertNotIn('newvideo001', report['results'])
+            process.assert_called_once()
+
+    def test_operator_can_recheck_old_caption_skips_without_retrying_long_videos(self):
+        with TemporaryDirectory() as directory:
+            folder = Path(directory)
+            (folder / 'playlist.json').write_text(json.dumps({'id': 'PLabcdefghijk', 'entries': [
+                {'id': 'longvideo01', 'duration': 1800}, {'id': 'abcdefghijk', 'duration': 10}]}))
+            old = {'playlist_id': 'PLabcdefghijk', 'max_seconds_exclusive': 1800, 'results': {
+                'longvideo01': {'status': 'skipped', 'reason': 'duration_not_under_limit'},
+                'abcdefghijk': {'status': 'skipped', 'reason': 'captions_required'}}}
+            (folder / 'report.json').write_text(json.dumps(old))
+            data = self.dataset()
+            process = MagicMock(return_value={'dataset': data, 'raw_captions': data['raw_captions'],
+                'display_captions': data['display_captions']})
+            self.assertEqual(self.run_operator(folder, process, recheck=True), 0)
+            report = json.loads((folder / 'report.json').read_text())
+            self.assertEqual(report['counts'], {'skipped': 1, 'imported': 1})
+            self.assertEqual(report['status'], 'complete')
+            self.assertEqual(report['results']['longvideo01']['reason'], 'duration_not_under_limit')
+            self.assertTrue(list(folder.glob('report-before-recheck-*.json')))
+            process.assert_called_once()

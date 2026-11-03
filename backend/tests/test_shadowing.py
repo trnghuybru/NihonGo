@@ -721,3 +721,45 @@ class YouTubeSourceTests(unittest.TestCase):
             self.assertEqual(error.exception.code, 'source_configuration')
             self.assertNotIn('secret.txt', str(error.exception))
             downloader.assert_not_called()
+
+    def test_caption_fetch_failures_are_not_misclassified_as_missing_captions(self):
+        from tempfile import TemporaryDirectory
+        from shadowing.processor import process_video
+        import requests
+        for http_status, empty, code in ((429, False, 'source_rate_limited'),
+                                         (403, False, 'source_blocked'),
+                                         (500, False, 'captions_unavailable'),
+                                         (200, True, 'captions_unavailable')):
+            with self.subTest(http_status=http_status, empty=empty), TemporaryDirectory() as folder, \
+                    patch.dict('os.environ', {'BETA_MODE': 'true', 'SHADOWING_YOUTUBE_PROXY': '',
+                                             'SHADOWING_YOUTUBE_COOKIE_FILE': ''}), \
+                    patch('yt_dlp.YoutubeDL') as downloader, patch('requests.get') as get:
+                client = downloader.return_value.__enter__.return_value
+                client.extract_info.return_value = {'id': 'HV-MoRsBXDg', 'duration': 10,
+                    'subtitles': {'ja': [{'ext': 'json3', 'url': 'https://captions.test/?secret=hidden'}]}}
+                response = MagicMock(status_code=http_status)
+                if http_status >= 400:
+                    response.raise_for_status.side_effect = requests.HTTPError('signed-url-hidden')
+                response.json.return_value = {'events': []}
+                get.return_value = response
+                with self.assertRaises(ProcessingError) as error:
+                    process_video('HV-MoRsBXDg', folder)
+                self.assertEqual(error.exception.code, code)
+                self.assertNotIn('hidden', str(error.exception))
+                get.assert_called_once()
+                client.download.assert_not_called()
+
+    def test_truly_missing_japanese_track_keeps_captions_required(self):
+        from tempfile import TemporaryDirectory
+        from shadowing.processor import process_video
+        with TemporaryDirectory() as folder, \
+                patch.dict('os.environ', {'BETA_MODE': 'true', 'SHADOWING_YOUTUBE_PROXY': '',
+                                         'SHADOWING_YOUTUBE_COOKIE_FILE': ''}), \
+                patch('yt_dlp.YoutubeDL') as downloader, patch('requests.get') as get:
+            client = downloader.return_value.__enter__.return_value
+            client.extract_info.return_value = {'id': 'HV-MoRsBXDg', 'duration': 10, 'subtitles': {}}
+            with self.assertRaises(ProcessingError) as error:
+                process_video('HV-MoRsBXDg', folder)
+            self.assertEqual(error.exception.code, 'captions_required')
+            get.assert_not_called()
+            client.download.assert_not_called()

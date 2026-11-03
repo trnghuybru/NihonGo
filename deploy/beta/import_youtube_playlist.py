@@ -23,7 +23,9 @@ def main():
     parser.add_argument('--output', required=True, type=Path)
     parser.add_argument('--max-imports', type=int, default=100)
     parser.add_argument('--max-seconds', type=int, default=1800)
-    parser.add_argument('--delay', type=float, default=8)
+    parser.add_argument('--delay', type=float, default=60)
+    parser.add_argument('--retry-skipped-captions', action='store_true',
+        help='Recheck entries marked as missing captions by older processor versions.')
     args = parser.parse_args()
     if args.max_imports < 1 or args.max_seconds < 1 or args.delay < 0:
         parser.error('Invalid limits')
@@ -37,12 +39,19 @@ def main():
     }
     if report['playlist_id'] != listing['id'] or report['max_seconds_exclusive'] != args.max_seconds:
         raise SystemExit('Report does not match requested playlist/filter')
+    if args.retry_skipped_captions:
+        # Keep the original evidence before repairing the older misclassified results.
+        save(args.output / f'report-before-recheck-{time.time_ns()}.json', report)
+        report['results'] = {key: value for key, value in report['results'].items()
+                             if value.get('reason') != 'captions_required'}
     report['target_new_videos'] = args.max_imports
     report['status'] = 'running'
     report.pop('stop_reason', None)
 
     def checkpoint():
         report['counts'] = dict(Counter(row['status'] for row in report['results'].values()))
+        if 'pending_recheck_count' in report:
+            report['pending_recheck_count'] = len(listing['entries']) - len(report['results'])
         report['updated_at'] = datetime.now(timezone.utc).isoformat()
         save(report_file, report)
 
@@ -67,6 +76,7 @@ def main():
             video_id = entry['id']
             if video_id in report['results']:
                 continue
+            network_used = False
             duration = entry.get('duration')
             result = {'position': position, 'title': entry.get('title'), 'duration_seconds': duration}
             if isinstance(duration, (int, float)) and duration >= args.max_seconds:
@@ -86,6 +96,7 @@ def main():
                     else:
                         result.update(status='skipped', reason='duration_not_under_limit')
                 else:
+                    network_used = True
                     db.session.rollback()  # No database transaction during YouTube I/O.
                     report['current_video'] = video_id
                     checkpoint()
@@ -109,26 +120,28 @@ def main():
                                 segments=dataset['segment_count'], kind=dataset['caption_track']['kind'])
                     except ProcessingError as error:
                         db.session.rollback()
-                        if error.code in ('source_blocked', 'source_configuration'):
+                        if error.code in ('source_blocked', 'source_configuration', 'source_rate_limited', 'captions_unavailable'):
                             report.update(status='paused', stop_reason=error.code)
                             checkpoint()
                             print(json.dumps({'status': 'paused', 'reason': error.code, 'counts': report['counts']}), flush=True)
-                            return 2
+                            return 75 if error.code in ('source_rate_limited', 'captions_unavailable') else 2
                         result.update(status='skipped', reason=error.code)
                     except Exception as error:
                         db.session.rollback()
                         result.update(status='error', reason=type(error).__name__)
                     finally:
                         report.pop('current_video', None)
-                    if args.delay:
-                        time.sleep(args.delay)
             report['results'][video_id] = result
             checkpoint()
             print(json.dumps({'position': position, 'video_id': video_id,
                 'status': result['status'], 'reason': result.get('reason'),
                 'counts': report['counts']}, ensure_ascii=False), flush=True)
+            if network_used and args.delay and report['counts'].get('imported', 0) < args.max_imports:
+                time.sleep(args.delay)
         else:
-            report.update(status='complete', stop_reason='playlist_exhausted')
+            reached = sum(row['status'] == 'imported' for row in report['results'].values()) >= args.max_imports
+            report.update(status='complete' if reached else 'exhausted',
+                          stop_reason='target_reached' if reached else 'playlist_exhausted')
     checkpoint()
     print(json.dumps({'status': report['status'], 'counts': report['counts'],
                       'stop_reason': report.get('stop_reason')}, ensure_ascii=False), flush=True)

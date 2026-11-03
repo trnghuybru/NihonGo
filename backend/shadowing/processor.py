@@ -237,6 +237,7 @@ def process_video(video_id, directory):
             if metadata.get('playable_in_embed') is False:
                 raise ProcessingError('embed_disabled', 'Video này không cho phép phát trong ứng dụng.')
             raw, kind = [], 'manual'
+            caption_fetch_failed = False
             for tracks, track_kind in ((metadata.get('subtitles', {}), 'manual'),
                                        (metadata.get('automatic_captions', {}), 'asr')):
                 for language, formats in tracks.items():
@@ -250,16 +251,28 @@ def process_video(video_id, directory):
                             response = requests.get(track['url'], timeout=20,
                                 **({'proxies': {'http': proxy, 'https': proxy}} if proxy else {}),
                                 **({'cookies': downloader.cookiejar} if cookie_source else {}))
+                            if response.status_code == 429:
+                                raise ProcessingError('source_rate_limited',
+                                    'YouTube đang giới hạn lượt tải phụ đề từ máy chủ. Vui lòng thử lại sau.')
+                            if response.status_code in (401, 403):
+                                raise ProcessingError('source_blocked',
+                                    'YouTube đang chặn tải phụ đề từ máy chủ. Vui lòng thử lại sau.')
                             response.raise_for_status()
                             raw = json3_captions(response.json())
+                            if not raw:
+                                caption_fetch_failed = True
                             kind = track_kind
                         except (requests.RequestException, ValueError, TypeError):
+                            caption_fetch_failed = True
                             raw = []
                     if raw:
                         break
                 if raw:
                     break
             if not raw:
+                if caption_fetch_failed:
+                    raise ProcessingError('captions_unavailable',
+                        'Video có phụ đề tiếng Nhật nhưng chưa tải được dữ liệu. Vui lòng thử lại sau.')
                 if os.getenv('BETA_MODE', '').strip().lower() in {'1', 'true', 'yes'}:
                     raise ProcessingError('captions_required', 'Bản beta chỉ hỗ trợ video có phụ đề tiếng Nhật.')
                 publish_phase(directory, 'extracting', title)
@@ -285,7 +298,10 @@ def process_video(video_id, directory):
     except DownloadError as error:
         # Classify internally without retaining provider URLs, cookies or proxy secrets.
         message = str(error).lower()
-        if any(term in message for term in ("not a bot", 'confirm you’re not', "confirm you're not", 'too many requests', 'http error 429')):
+        if 'too many requests' in message or '429' in message:
+            raise ProcessingError('source_rate_limited',
+                'YouTube đang giới hạn kết nối từ máy chủ. Vui lòng thử lại sau.') from None
+        if any(term in message for term in ("not a bot", 'confirm you’re not', "confirm you're not")):
             logging.getLogger(__name__).warning('YouTube extraction failed: source_blocked')
             raise ProcessingError('source_blocked',
                 'YouTube đang chặn kết nối từ máy chủ. Vui lòng thử video đã có trong thư viện hoặc liên hệ quản trị viên.') from None
