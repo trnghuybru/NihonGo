@@ -585,3 +585,7 @@ Logo và icon launcher dùng đầu Momo cùng chữ NihonGO đen–cam theo m�
 - Bấm phần thu gọn mở nguyên văn Nhật và giải thích vai trò, đồng thời highlight đúng vị trí ở bài đọc. Bấm chủ thể/vị ngữ cũng xem được giải thích. Thu gọn lại đóng chi tiết của phần đó. Nguyên bản dùng đúng chuỗi nguồn và có thể chọn/copy, không ghép lại bằng nội dung AI.
 - Vai trò có nhãn chữ và màu semantic trong `sentenceRoles`: chủ thể xanh lam, vị ngữ xanh lá, bổ ngữ cam, bổ nghĩa tím, thành phần phụ vàng nhạt, phần khác muted. Có chú giải chữ; không chỉ dựa vào màu. Màu này chỉ dùng cho cấu trúc câu; vùng tra từ/bằng chứng dùng highlight chung.
 - Bản dịch mặc định là **Nghĩa lõi câu**. Bấm **Đầy đủ câu** hoặc mở hết các phần thu gọn tự chuyển sang **Nghĩa đầy đủ**; thu gọn lại thì trở về nghĩa lõi. Giữ ý phủ định, mức độ và tần suất quan trọng khi rút gọn. Mở/đóng chip hay đổi chế độ không gọi AI.
+
+- Nút **Thêm video YouTube** trong thư viện Nghe dùng cùng kiểu với nút chọn Shadowing/Nghe chép chính tả: pill cao tối thiểu 34 px, icon 15 px, chữ 11/16, viền cam/nền trắng; mở form chuyển nền cam, chữ/icon trắng và nhãn Thu gọn. Có hitSlop 7 px và trạng thái expanded.
+
+- Favicon trình duyệt dùng ảnh vuông `src/assets/mascot/nihongo-app-icon.png` (1024×1024), giữ nguyên hình Momo và chữ NihonGO; Vite xuất asset có hash để cập nhật cache khi thay ảnh.

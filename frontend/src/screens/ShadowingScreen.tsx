@@ -47,6 +47,7 @@ import {
   EyeOffIcon,
   TranslateIcon,
   AIIcon,
+  PlusIcon,
 } from '../components/icons';
 import {
   ShadowingTokenText,
@@ -1457,11 +1458,38 @@ export function ShadowingScreen({
                 Nghe & shadowing
               </Text>
               {desktop && (
-                <AuthButton
-                  label={importOpen ? 'Thu gọn' : '+ Thêm video YouTube'}
-                  variant="outline"
+                <Pressable
+                  accessibilityRole="button"
+                  accessibilityLabel={
+                    importOpen ? 'Thu gọn' : 'Thêm video YouTube'
+                  }
+                  accessibilityState={{ expanded: importOpen }}
+                  aria-expanded={importOpen}
+                  hitSlop={7}
+                  style={({ pressed }) => [
+                    styles.modeButton,
+                    importOpen && styles.modeTabSelected,
+                    pressed &&
+                      (importOpen
+                        ? styles.modeSelectedPressed
+                        : styles.modePressed),
+                  ]}
                   onPress={() => setImportOpen(value => !value)}
-                />
+                >
+                  {importOpen ? (
+                    <XIcon size={15} color={colors.onPrimary} />
+                  ) : (
+                    <PlusIcon size={15} color={colors.primaryText} />
+                  )}
+                  <Text
+                    style={[
+                      styles.modeTabLabel,
+                      importOpen && styles.modeTabLabelSelected,
+                    ]}
+                  >
+                    {importOpen ? 'Thu gọn' : 'Thêm video YouTube'}
+                  </Text>
+                </Pressable>
               )}
             </View>
             {desktop && (

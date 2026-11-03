@@ -27,3 +27,14 @@ Worker chỉ ghi mã lỗi, không ghi URL proxy/cookie hoặc đường dẫn p
 Các bài đã có phụ đề trong thư viện vẫn dùng được. Có thể chuẩn bị dữ liệu phụ đề trên máy quản trị rồi nhập lên VPS theo công cụ import hiện có; cách này không khôi phục thêm video tự động trên web.
 
 Tham khảo: https://github.com/yt-dlp/yt-dlp/wiki/Extractors
+
+## Đợt nhập The Bite Size Japanese Podcast
+
+- Playlist: `PLQcOOIxIw8dIZFPPnHzSBoCFXVPqBhYjP`.
+- Công cụ vận hành: `deploy/beta/import_youtube_playlist.py` (chạy trong image backend đã có cookie).
+- Giới hạn: 100 video **mới**, thời lượng thực tế **< 1800 giây**. Video đã có, đang xử lý hoặc không có phụ đề Nhật không tính vào 100 video mới.
+- Chỉ metadata/phụ đề Nhật gốc, ưu tiên manual; không tải audio, chạy ASR, dịch, tạo quiz hoặc trừ quota người dùng.
+- VPS lưu manifest, snapshot và report tại `/opt/momonihongo/imports/bitesize-under30/`; service `nihongo-import-bitesize.service` chạy tác vụ riêng.
+- Xem tiến độ: `sudo systemctl status nihongo-import-bitesize` hoặc đọc `report.json` trong thư mục trên. Nếu `status=paused`, xử lý `stop_reason` trước khi chạy tiếp; không tự lặp lại nguồn đang chặn.
+- Có thể chạy lại cùng manifest/output với `--max-imports 100 --max-seconds 1800 --delay 8`: công cụ giữ tiến độ và bỏ các mục đã xử lý.
+- Các file JSON là nội dung video công khai; cookie vẫn ở thư mục secrets riêng, không nằm trong báo cáo hoặc snapshot.

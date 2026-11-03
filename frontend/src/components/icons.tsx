@@ -479,6 +479,24 @@ export function PlayCircleIcon({ size = 24, color = colors.muted }: IconProps) {
   );
 }
 
+export function PlusIcon({
+  size = 20,
+  color = colors.primaryText,
+  strokeWidth = 1.7,
+}: IconProps) {
+  return (
+    <Svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      accessible={false}
+    >
+      <Path d="M12 5v14M5 12h14" {...stroke(color, strokeWidth)} />
+    </Svg>
+  );
+}
+
 export function PencilIcon({
   size = 20,
   color = colors.primaryText,
