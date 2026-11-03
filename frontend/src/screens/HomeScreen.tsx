@@ -1,3 +1,4 @@
+import { InstallAppHint } from '../components/InstallAppHint';
 import { AuthButton } from '../components/AuthForm';
 import type { DictionaryHistoryItem } from '../services/dictionaryService';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
@@ -66,6 +67,7 @@ export function HomeScreen({
       }
       headerAccessory={<NihongoMascot size={104} />}
     >
+      <InstallAppHint />
       <View style={[styles.section, styles.searchSection]}>
         <Text accessibilityRole="header" style={styles.sectionTitle}>
           Tra cứu từ vựng

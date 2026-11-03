@@ -22,6 +22,7 @@ body,
 }
 body {
   overflow: hidden;
+  height: 100dvh;
   background: #fffbf7;
 }
 #root {

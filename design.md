@@ -589,3 +589,10 @@ Logo và icon launcher dùng đầu Momo cùng chữ NihonGO đen–cam theo m�
 - Nút **Thêm video YouTube** trong thư viện Nghe dùng cùng kiểu với nút chọn Shadowing/Nghe chép chính tả: pill cao tối thiểu 34 px, icon 15 px, chữ 11/16, viền cam/nền trắng; mở form chuyển nền cam, chữ/icon trắng và nhãn Thu gọn. Có hitSlop 7 px và trạng thái expanded.
 
 - Favicon trình duyệt dùng ảnh vuông `src/assets/mascot/nihongo-app-icon.png` (1024×1024), giữ nguyên hình Momo và chữ NihonGO; Vite xuất asset có hash để cập nhật cache khi thay ảnh.
+
+### Cài lên màn hình chính (PWA)
+
+- Manifest nhận diện NihonGO, phạm vi và trang mở đầu `/`, chế độ `standalone`, nền/theme `background`. Icon dùng lại ảnh Momo NihonGO: 192/1024 px cho manifest và 180 px cho Apple Touch Icon; để hệ điều hành tự bo góc, không khai báo maskable cho ảnh có chữ sát cạnh.
+- Trang chủ trên iPhone/iPad có thẻ hướng dẫn nhỏ **NihonGO trên màn hình chính**, nền trắng/viền divider, padding 16, bo small, icon 40 px; chỉ dẫn Chia sẻ → Thêm vào màn hình chính → Thêm. Nút X vùng bấm 48 px và có nhãn trợ năng.
+- Thẻ chỉ hiện khi dùng trình duyệt iOS/iPadOS; ẩn khi chạy standalone hoặc đã đóng hướng dẫn trên thiết bị. Nhận diện iPad dùng chế độ desktop qua MacIntel + cảm ứng. Không mở popup hoặc yêu cầu cài đặt mỗi lần đăng nhập.
+- Giai đoạn này không đăng ký service worker, không thêm cache/offline hoặc push notification. Thay đổi bản web tiếp tục đi qua CI/CD hiện có.
