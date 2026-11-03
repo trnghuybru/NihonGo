@@ -101,6 +101,8 @@ def process_job(job_id):
                 if process.poll() is None:
                     os.killpg(process.pid, signal.SIGKILL)
                     process.wait()
+        if result.get('error_code'):
+            logger.warning('Shadowing job failed: %s', result['error_code'])
         save_result(job_id, token, result)
 
 

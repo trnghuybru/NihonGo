@@ -2,6 +2,7 @@
 import argparse
 import json
 import math
+import logging
 import os
 import re
 from pathlib import Path
@@ -190,7 +191,36 @@ def process_video(video_id, directory):
                'retries': 1, 'fragment_retries': 1, 'cachedir': False,
                'js_runtimes': {'node': {}}, 'format': 'bestaudio/best',
                'outtmpl': str(Path(directory) / 'audio.%(ext)s'),
-               'max_filesize': 100_000_000}
+               'max_filesize': 100_000_000, 'writeautomaticsub': True}
+    cookie_source = os.getenv('SHADOWING_YOUTUBE_COOKIE_FILE', '').strip()
+    if cookie_source:
+        # Mounted secrets stay read-only. yt-dlp updates its jar on close, so
+        # give each bounded job a private copy that its supervisor deletes.
+        import shutil
+        cookie_copy = Path(directory) / 'youtube-cookies.txt'
+        try:
+            shutil.copyfile(cookie_source, cookie_copy)
+            cookie_copy.chmod(0o600)
+        except OSError:
+            raise ProcessingError('source_configuration',
+                'Không đọc được cấu hình cookie YouTube. Vui lòng liên hệ quản trị viên.') from None
+        options['cookiefile'] = str(cookie_copy)
+    if os.getenv('BETA_MODE', '').strip().lower() in {'1', 'true', 'yes'}:
+        # The beta only consumes captions and does not need playable audio formats.
+        options.update(skip_download=True, ignore_no_formats_error=True)
+    # A dedicated outbound proxy can be supplied by the operator when the VPS
+    # address is challenged. Never expose its URL/credentials in logs or errors.
+    proxy = os.getenv('SHADOWING_YOUTUBE_PROXY', '').strip()
+    if proxy:
+        from urllib.parse import urlsplit
+        try:
+            parsed = urlsplit(proxy)
+            valid = parsed.scheme in ('http', 'https') and bool(parsed.hostname) and bool(parsed.port)
+        except ValueError:
+            valid = False
+        if not valid:
+            raise ProcessingError('source_configuration', 'Cấu hình kết nối YouTube chưa hợp lệ. Vui lòng liên hệ quản trị viên.')
+        options['proxy'] = proxy
     publish_phase(directory, 'extracting')
     try:
         with YoutubeDL(options) as downloader:
@@ -217,7 +247,9 @@ def process_video(video_id, directory):
                                   and 'tlang=' not in track.get('url', '')), None)
                     if track:
                         try:
-                            response = requests.get(track['url'], timeout=20)
+                            response = requests.get(track['url'], timeout=20,
+                                **({'proxies': {'http': proxy, 'https': proxy}} if proxy else {}),
+                                **({'cookies': downloader.cookiejar} if cookie_source else {}))
                             response.raise_for_status()
                             raw = json3_captions(response.json())
                             kind = track_kind
@@ -250,7 +282,14 @@ def process_video(video_id, directory):
             cues = attach_practice_segments(display_captions(raw, duration), dataset['segments'], video_id)
             return {'dataset': dataset, 'raw_captions': raw, 'display_captions': cues,
                     'word_analysis': analyze(dataset['segments'], cues)}
-    except DownloadError:
+    except DownloadError as error:
+        # Classify internally without retaining provider URLs, cookies or proxy secrets.
+        message = str(error).lower()
+        if any(term in message for term in ("not a bot", 'confirm you’re not', "confirm you're not", 'too many requests', 'http error 429')):
+            logging.getLogger(__name__).warning('YouTube extraction failed: source_blocked')
+            raise ProcessingError('source_blocked',
+                'YouTube đang chặn kết nối từ máy chủ. Vui lòng thử video đã có trong thư viện hoặc liên hệ quản trị viên.') from None
+        logging.getLogger(__name__).warning('YouTube extraction failed: source_unavailable')
         raise ProcessingError('source_unavailable', 'Không lấy được dữ liệu YouTube. Video có thể bị hạn chế hoặc nguồn đang chặn truy cập. Hãy thử lại sau.') from None
 
 

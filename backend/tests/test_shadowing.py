@@ -619,3 +619,105 @@ class TranslationProviderTests(unittest.TestCase):
             with self.assertRaises(TranslationError) as error:
                 translate_batch(DEFAULT_MODEL, '', segments)
             self.assertFalse(error.exception.retryable)
+
+
+class YouTubeSourceTests(unittest.TestCase):
+    def setUp(self):
+        # Exercise our processor contract without installing a downloader or
+        # making outbound requests in the unit-test environment.
+        from types import ModuleType
+        package = ModuleType('yt_dlp')
+        utilities = ModuleType('yt_dlp.utils')
+        utilities.DownloadError = type('DownloadError', (Exception,), {})
+        package.YoutubeDL = MagicMock()
+        package.utils = utilities
+        modules = patch.dict('sys.modules', {'yt_dlp': package, 'yt_dlp.utils': utilities})
+        modules.start()
+        self.addCleanup(modules.stop)
+
+    def test_bot_challenge_is_classified_without_leaking_provider_details(self):
+        from tempfile import TemporaryDirectory
+        from shadowing.processor import process_video
+        from yt_dlp.utils import DownloadError
+        with TemporaryDirectory() as directory, patch.dict('os.environ', {'SHADOWING_YOUTUBE_PROXY': ''}), \
+                patch('yt_dlp.YoutubeDL') as downloader:
+            downloader.return_value.__enter__.return_value.extract_info.side_effect = DownloadError(
+                'Sign in to confirm you’re not a bot https://provider.test/?secret=hidden')
+            with self.assertLogs('shadowing.processor', level='WARNING') as logs:
+                with self.assertRaises(ProcessingError) as error:
+                    process_video('HV-MoRsBXDg', directory)
+            self.assertEqual(error.exception.code, 'source_blocked')
+            self.assertNotIn('hidden', str(error.exception))
+            self.assertNotIn('hidden', str(logs.output))
+
+    def test_invalid_proxy_is_rejected_before_network_calls(self):
+        from shadowing.processor import process_video
+        with patch.dict('os.environ', {'SHADOWING_YOUTUBE_PROXY': 'http://user:secret@proxy.test:invalid'}), \
+                patch('yt_dlp.YoutubeDL') as downloader:
+            with self.assertRaises(ProcessingError) as error:
+                process_video('HV-MoRsBXDg', '/unused')
+            self.assertEqual(error.exception.code, 'source_configuration')
+            self.assertNotIn('secret', str(error.exception))
+            downloader.assert_not_called()
+
+    def test_metadata_and_captions_share_the_explicit_proxy(self):
+        from tempfile import TemporaryDirectory
+        from shadowing.processor import process_video
+        proxy = 'http://user:secret@proxy.test:8080'
+        metadata = {'id': 'HV-MoRsBXDg', 'title': 'Test', 'duration': 10,
+                    'subtitles': {'ja': [{'ext': 'json3', 'url': 'https://captions.test/ja'}]}}
+        response = MagicMock()
+        response.json.return_value = {'events': [{'tStartMs': 0, 'dDurationMs': 1000,
+                                                 'segs': [{'utf8': 'こんにちは。'}]}]}
+        with TemporaryDirectory() as directory, patch.dict('os.environ', {'SHADOWING_YOUTUBE_PROXY': proxy}), \
+                patch('yt_dlp.YoutubeDL') as downloader, patch('requests.get', return_value=response) as get, \
+                patch('shadowing.morphology.analyze', return_value={}):
+            downloader.return_value.__enter__.return_value.extract_info.return_value = metadata
+            result = process_video('HV-MoRsBXDg', directory)
+            self.assertEqual(downloader.call_args.args[0]['proxy'], proxy)
+            self.assertEqual(get.call_args.kwargs['proxies'], {'http': proxy, 'https': proxy})
+            self.assertEqual(result['dataset']['segment_count'], 1)
+            downloader.return_value.__enter__.return_value.download.assert_not_called()
+
+    def test_cookie_file_is_copied_and_shared_with_caption_request(self):
+        from pathlib import Path
+        from tempfile import TemporaryDirectory
+        from shadowing.processor import process_video
+        response = MagicMock()
+        response.json.return_value = {'events': [{'tStartMs': 0, 'dDurationMs': 1000,
+                                                 'segs': [{'utf8': 'こんにちは。'}]}]}
+        with TemporaryDirectory() as root:
+            source = Path(root) / 'secret.txt'
+            source.write_text('# Netscape HTTP Cookie File\n', encoding='utf-8')
+            work = Path(root) / 'job'
+            work.mkdir()
+            with patch.dict('os.environ', {'SHADOWING_YOUTUBE_PROXY': '', 'BETA_MODE': 'true',
+                                           'SHADOWING_YOUTUBE_COOKIE_FILE': str(source)}), \
+                    patch('yt_dlp.YoutubeDL') as downloader, patch('requests.get', return_value=response) as get, \
+                    patch('shadowing.morphology.analyze', return_value={}):
+                client = downloader.return_value.__enter__.return_value
+                client.extract_info.return_value = {'id': 'HV-MoRsBXDg', 'duration': 10,
+                    'subtitles': {'ja': [{'ext': 'json3', 'url': 'https://captions.test/ja'}]}}
+                process_video('HV-MoRsBXDg', work)
+                options = downloader.call_args.args[0]
+                copied = Path(options['cookiefile'])
+                self.assertNotEqual(copied, source)
+                self.assertEqual(copied.read_bytes(), source.read_bytes())
+                self.assertEqual(copied.stat().st_mode & 0o777, 0o600)
+                self.assertIs(get.call_args.kwargs['cookies'], client.cookiejar)
+                self.assertTrue(options['ignore_no_formats_error'])
+                self.assertTrue(options['skip_download'])
+                client.download.assert_not_called()
+
+    def test_missing_cookie_file_is_a_configuration_error(self):
+        from tempfile import TemporaryDirectory
+        from shadowing.processor import process_video
+        with TemporaryDirectory() as folder, \
+                patch.dict('os.environ', {'SHADOWING_YOUTUBE_PROXY': '',
+                                         'SHADOWING_YOUTUBE_COOKIE_FILE': '/nonexistent/secret.txt'}), \
+                patch('yt_dlp.YoutubeDL') as downloader:
+            with self.assertRaises(ProcessingError) as error:
+                process_video('HV-MoRsBXDg', folder)
+            self.assertEqual(error.exception.code, 'source_configuration')
+            self.assertNotIn('secret.txt', str(error.exception))
+            downloader.assert_not_called()
