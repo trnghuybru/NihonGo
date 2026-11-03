@@ -214,6 +214,19 @@ class ShadowingTests(unittest.TestCase):
             with self.assertRaises(ApiError):
                 generate_questions(source)
 
+    def test_quiz_vertex_permission_denial_is_explicit_without_logging_credentials(self):
+        from shadowing.quiz import request_questions
+        response=MagicMock(status_code=403)
+        response.json.return_value={'error':{'status':'PERMISSION_DENIED','message':'sensitive-provider-detail'}}
+        with patch.dict('os.environ',{'GEMINI_PROVIDER':'vertex'}), patch('beta_ai.service.post',return_value=response) as provider:
+            with self.assertLogs('shadowing.quiz',level='WARNING') as logs, self.assertRaises(ApiError) as failure:
+                request_questions('sensitive-api-key','gemini-3.1-flash-lite',{},5)
+        self.assertEqual(failure.exception.code,'quiz_permission_denied')
+        self.assertIn('Vertex AI',str(failure.exception.message))
+        self.assertEqual(provider.call_count,1)
+        self.assertIn('http_status=403',' '.join(logs.output))
+        self.assertNotIn('sensitive',' '.join(logs.output))
+
     def test_three_quiz_questions_use_constrained_ids_and_retry_only_invalid_window(self):
         from collections import Counter
         from shadowing.quiz import quiz_source, generate_questions

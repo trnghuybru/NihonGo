@@ -1,6 +1,7 @@
-import { useState } from 'react';
+import { Fragment, useState } from 'react';
 import type { ReactNode } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
+import Svg, { Line } from 'react-native-svg';
 import type { ShadowingQuestion } from '../services/shadowingService';
 import { colors, radius, spacing, typography } from '../theme/theme';
 import { videoTimestamp } from './VideoExampleCard';
@@ -10,20 +11,29 @@ export function quizTimelineLayout(
   duration: number,
   width: number,
 ) {
-  const laneEnds: number[] = [];
-  return times
+  const span = Math.max(1, width);
+  const markers = times
     .map((seconds, index) => ({
       index,
       ratio: Math.max(0, Math.min(1, seconds / Math.max(1, duration))),
     }))
-    .sort((a, b) => a.ratio - b.ratio)
-    .map(item => {
-      const x = item.ratio * width;
-      let lane = laneEnds.findIndex(end => x - end >= 64);
-      if (lane < 0) lane = laneEnds.length;
-      laneEnds[lane] = x;
-      return { ...item, lane };
-    });
+    .sort((a, b) => a.ratio - b.ratio);
+  // Keep all labels in one row, shifting only labels that would overlap.
+  const gap = Math.min(64, span / Math.max(1, markers.length - 1));
+  const positions = markers.map(marker => marker.ratio * span);
+  for (let index = 1; index < positions.length; index += 1) {
+    positions[index] = Math.max(positions[index], positions[index - 1] + gap);
+  }
+  if (positions.length && positions[positions.length - 1] > span) {
+    positions[positions.length - 1] = span;
+    for (let index = positions.length - 2; index >= 0; index -= 1) {
+      positions[index] = Math.min(positions[index], positions[index + 1] - gap);
+    }
+  }
+  return markers.map((marker, index) => ({
+    ...marker,
+    labelRatio: positions[index] / span,
+  }));
 }
 
 export function ShadowingQuizTimeline({
@@ -54,7 +64,7 @@ export function ShadowingQuizTimeline({
     duration,
     Math.max(1, width),
   );
-  const axis = (Math.max(0, ...markers.map(marker => marker.lane)) + 1) * 68;
+  const axis = 68;
   const completed = questions.filter(q => answers[q.id] !== undefined).length;
   return (
     <View style={styles.card} testID="shadowing-quiz-timeline">
@@ -81,7 +91,25 @@ export function ShadowingQuizTimeline({
             style={[styles.plot, { height: axis + 30 }]}
           >
             <View style={[styles.rail, { top: axis }]} />
-            {markers.map(({ index, ratio, lane }) => {
+            <Svg
+              pointerEvents="none"
+              style={StyleSheet.absoluteFill}
+              width="100%"
+              height={axis + 30}
+            >
+              {markers.map(marker => (
+                <Line
+                  key={marker.index}
+                  x1={marker.labelRatio * width}
+                  y1={60}
+                  x2={marker.ratio * width}
+                  y2={axis + 2}
+                  stroke={colors.border}
+                  strokeWidth={1}
+                />
+              ))}
+            </Svg>
+            {markers.map(({ index, ratio, labelRatio }) => {
               const question = questions[index];
               const answered = answers[question.id] !== undefined;
               const correct =
@@ -92,57 +120,53 @@ export function ShadowingQuizTimeline({
                 ? 'Đúng'
                 : 'Chưa đúng';
               return (
-                <View
-                  key={question.id}
-                  style={[
-                    styles.marker,
-                    { left: `${ratio * 100}%`, top: lane * 68 },
-                  ]}
-                >
+                <Fragment key={question.id}>
                   <View
-                    pointerEvents="none"
-                    style={[styles.stem, { height: axis - lane * 68 - 54 }]}
-                  />
-                  <Pressable
-                    accessibilityRole="button"
-                    accessibilityLabel={
-                      answered
-                        ? `Mốc câu hỏi ${index + 1}: ${status}`
-                        : `Tới câu hỏi ${index + 1}`
-                    }
-                    accessibilityHint={`${videoTimestamp(
-                      question.trigger_seconds,
-                    )} · ${status}`}
-                    accessibilityState={{ disabled }}
-                    disabled={disabled}
-                    onPress={() => onSelect(question.id, answered)}
-                    style={({ pressed }) => [
-                      styles.point,
-                      answered && (correct ? styles.correct : styles.incorrect),
-                      pressed && styles.pressed,
-                    ]}
+                    style={[styles.marker, { left: `${labelRatio * 100}%` }]}
                   >
-                    <Text style={styles.pointText}>{index + 1}</Text>
-                    {answered ? (
-                      <Text
-                        style={[
-                          styles.status,
-                          { color: correct ? colors.success : colors.danger },
-                        ]}
-                      >
-                        {correct ? '✓' : '×'}
-                      </Text>
-                    ) : null}
-                  </Pressable>
-                  <Text style={styles.timestamp}>
-                    {videoTimestamp(question.trigger_seconds)}
-                  </Text>
+                    <Pressable
+                      accessibilityRole="button"
+                      accessibilityLabel={
+                        answered
+                          ? `Mốc câu hỏi ${index + 1}: ${status}`
+                          : `Tới câu hỏi ${index + 1}`
+                      }
+                      accessibilityHint={`${videoTimestamp(
+                        question.trigger_seconds,
+                      )} · ${status}`}
+                      accessibilityState={{ disabled }}
+                      disabled={disabled}
+                      onPress={() => onSelect(question.id, answered)}
+                      style={({ pressed }) => [
+                        styles.point,
+                        answered &&
+                          (correct ? styles.correct : styles.incorrect),
+                        pressed && styles.pressed,
+                      ]}
+                    >
+                      <Text style={styles.pointText}>{index + 1}</Text>
+                      {answered ? (
+                        <Text
+                          style={[
+                            styles.status,
+                            { color: correct ? colors.success : colors.danger },
+                          ]}
+                        >
+                          {correct ? '✓' : '×'}
+                        </Text>
+                      ) : null}
+                    </Pressable>
+                    <Text style={styles.timestamp}>
+                      {videoTimestamp(question.trigger_seconds)}
+                    </Text>
+                  </View>
                   <View
                     pointerEvents="none"
                     style={[
                       styles.anchor,
                       {
-                        top: axis - lane * 68 - 3,
+                        top: axis - 3,
+                        left: `${ratio * 100}%`,
                         backgroundColor: answered
                           ? correct
                             ? colors.success
@@ -151,7 +175,7 @@ export function ShadowingQuizTimeline({
                       },
                     ]}
                   />
-                </View>
+                </Fragment>
               );
             })}
             <Text style={[styles.edge, styles.edgeStart, { top: axis + 10 }]}>
@@ -215,6 +239,7 @@ const styles = StyleSheet.create({
   },
   marker: {
     position: 'absolute',
+    top: 0,
     width: 56,
     marginLeft: -28,
     alignItems: 'center',
@@ -248,14 +273,9 @@ const styles = StyleSheet.create({
     color: colors.body,
     marginTop: 3,
   },
-  stem: {
-    position: 'absolute',
-    top: 54,
-    width: 1,
-    backgroundColor: colors.border,
-  },
   anchor: {
     position: 'absolute',
+    marginLeft: -5,
     width: 10,
     height: 10,
     borderRadius: radius.pill,

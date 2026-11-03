@@ -265,6 +265,22 @@ def request_questions(key, model, payload, timeout):
     if response.status_code == 429:
         raise ApiError('AI đang giới hạn lượt tạo câu hỏi. Vui lòng thử lại sau.', 503, 'quiz_unavailable')
     if response.status_code != 200:
+        from services.gemini_provider import vertex_enabled
+        provider = 'vertex' if vertex_enabled() else 'developer'
+        try:
+            reason = response.json().get('error', {}).get('status', 'UNKNOWN')
+        except (ValueError, AttributeError, TypeError):
+            reason = 'UNKNOWN'
+        if not isinstance(reason, str) or not re.fullmatch(r'[A-Z_]{1,60}', reason):
+            reason = 'UNKNOWN'
+        logging.getLogger(__name__).warning(
+            'Quiz provider rejected request: provider=%s model=%s http_status=%s reason=%s',
+            provider, model, response.status_code, reason)
+        if response.status_code in (401, 403):
+            message = ('Dịch vụ tạo câu hỏi chưa được cấp quyền Vertex AI. Vui lòng báo quản trị viên.'
+                       if provider == 'vertex' else
+                       'Dịch vụ tạo câu hỏi chưa xác thực được với Gemini. Vui lòng báo quản trị viên.')
+            raise ApiError(message, 503, 'quiz_permission_denied')
         raise ApiError('AI chưa tạo được câu hỏi. Vui lòng thử lại hoặc kiểm tra cấu hình Gemini.',
                        503, 'quiz_unavailable')
     try:
