@@ -1,4 +1,3 @@
-import { useCallback, useEffect, useState } from 'react';
 import {
   Platform,
   ScrollView,
@@ -7,69 +6,28 @@ import {
   Text,
   View,
 } from 'react-native';
-import {
-  dictionaryService,
-  DictionaryHistoryItem,
-} from '../services/dictionaryService';
+import { DictionaryHistoryItem } from '../services/dictionaryService';
 import { colors, radius, shadowMd, spacing, typography } from '../theme/theme';
 import { AuthButton } from './AuthForm';
 import { ReplayIcon } from './icons';
+import { useDictionaryHistory } from '../hooks/useDictionaryHistory';
+import type { DictionaryHistoryState } from '../hooks/useDictionaryHistory';
 
 export function DictionaryRecentHistory({
   active,
   visible,
   query,
   onOpen,
+  history,
 }: {
+  history?: DictionaryHistoryState;
   active: boolean;
   visible: boolean;
   query: string;
   onOpen: (item: DictionaryHistoryItem) => void;
 }) {
-  const [items, setItems] = useState<DictionaryHistoryItem[]>([]);
-  const [busy, setBusy] = useState(false);
-  const [error, setError] = useState('');
-  const [attempt, setAttempt] = useState(0);
-  useEffect(() => {
-    if (!active) return;
-    let current = true;
-    // A completed write takes precedence over an older in-flight history read.
-    let changed = false;
-    const unsubscribe = dictionaryService.subscribeHistory(next => {
-      changed = true;
-      if (current) {
-        setItems(next);
-        setError('');
-      }
-    });
-    dictionaryService
-      .history()
-      .then(result => {
-        if (current && !changed) {
-          setItems(result.items);
-          setError('');
-        }
-      })
-      .catch(() => {
-        if (current && !changed) setError('Chưa tải được lịch sử.');
-      });
-    return () => {
-      current = false;
-      unsubscribe();
-    };
-  }, [active, attempt]);
-  const clear = useCallback(async () => {
-    setBusy(true);
-    setError('');
-    try {
-      const result = await dictionaryService.clearHistory();
-      setItems(result.items);
-    } catch {
-      setError('Chưa xoá được lịch sử.');
-    } finally {
-      setBusy(false);
-    }
-  }, []);
+  const ownHistory = useDictionaryHistory(active && !history);
+  const { items, busy, error, clear, retry } = history ?? ownHistory;
   if (!visible || !active) return null;
   const normalize = (value: string) =>
     value
@@ -118,11 +76,7 @@ export function DictionaryRecentHistory({
       {error ? (
         <View style={styles.row}>
           <Text style={styles.caption}>{error}</Text>
-          <AuthButton
-            label="Tải lại lịch sử"
-            variant="text"
-            onPress={() => setAttempt(value => value + 1)}
-          />
+          <AuthButton label="Tải lại lịch sử" variant="text" onPress={retry} />
         </View>
       ) : null}
       {!matches.length && !error ? (

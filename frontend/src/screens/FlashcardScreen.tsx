@@ -1,5 +1,7 @@
 import { useWebNavigation } from '../navigation/webNavigation';
 import { DeckPagination } from '../components/DeckPagination';
+import { HomeFeatureIcon } from '../components/HomeFeatureIcon';
+import { ChevronRightIcon, PencilIcon } from '../components/icons';
 import { WordPronunciation } from '../components/WordPronunciation';
 import {
   FlashcardFlip,
@@ -53,7 +55,7 @@ import {
 const grades = ['Chưa nhớ', 'Mơ hồ', 'Nhớ', 'Rất nhớ'];
 const kinds: { id: DeckKind; title: string }[] = [
   { id: 'lesson', title: 'Có sẵn' },
-  { id: 'custom', title: 'Tự tạo' },
+  { id: 'custom', title: 'Của tôi' },
   { id: 'favorites', title: 'Yêu thích' },
 ];
 
@@ -576,32 +578,52 @@ export function FlashcardScreen({
                         disabled: busy || !deck.card_count,
                       }}
                       onPress={() => openSession(deck)}
-                      style={[
-                        styles.deckRow,
-                        desktop && styles.deckGridContent,
+                      style={({ pressed }) => [
+                        styles.deckGridContent,
+                        pressed && styles.deckPressed,
                       ]}
                     >
-                      <View style={styles.copy}>
+                      <View
+                        style={[
+                          styles.copy,
+                          deck.kind === 'custom' && styles.editableDeckCopy,
+                        ]}
+                      >
                         <Text style={styles.heading}>{deck.title}</Text>
-                        {deck.subtitle ? (
+                        {deck.kind !== 'custom' && deck.subtitle ? (
                           <Text style={styles.caption}>{deck.subtitle}</Text>
                         ) : null}
                       </View>
-                      <View style={desktop ? styles.deckFooter : undefined}>
-                        <Text style={desktop ? styles.deckCount : styles.label}>
-                          {deck.card_count} thẻ
-                        </Text>
-                        {desktop ? (
-                          <Text accessible={false} style={styles.deckArrow}>
-                            →
+                      <View style={styles.deckFooter}>
+                        <View style={styles.deckCountBadge}>
+                          <HomeFeatureIcon
+                            name="flashcards"
+                            size={15}
+                            color={colors.primaryText}
+                          />
+                          <Text style={styles.deckCount}>
+                            {deck.card_count} thẻ
                           </Text>
-                        ) : null}
+                        </View>
+                        <View style={styles.deckArrow} accessible={false}>
+                          <ChevronRightIcon
+                            size={18}
+                            color={colors.primaryText}
+                          />
+                        </View>
                       </View>
                     </Pressable>
                     {deck.kind === 'custom' ? (
-                      <AuthButton
-                        label={`Sửa bộ ${deck.title}`}
-                        variant="text"
+                      <Pressable
+                        accessibilityRole="button"
+                        accessibilityLabel={`Sửa bộ ${deck.title}`}
+                        accessibilityState={{ disabled: busy }}
+                        {...(Platform.OS === 'web' ? { title: 'Sửa bộ' } : {})}
+                        style={({ pressed }) => [
+                          styles.editDeck,
+                          pressed && styles.deckPressed,
+                          busy && styles.editDeckDisabled,
+                        ]}
                         disabled={busy}
                         onPress={() =>
                           run(async () => {
@@ -609,7 +631,9 @@ export function FlashcardScreen({
                             if (mounted.current) edit(result);
                           })
                         }
-                      />
+                      >
+                        <PencilIcon size={18} />
+                      </Pressable>
                     ) : null}
                   </View>
                 ))}
@@ -1077,10 +1101,31 @@ const styles = StyleSheet.create({
     gap: spacing.lg,
     alignItems: 'stretch',
   },
-  deckCard: { width: '100%', minWidth: 0 },
+  deckCard: {
+    width: '100%',
+    minWidth: 0,
+    borderRadius: radius.card,
+    borderWidth: 1,
+    borderColor: colors.divider,
+  },
+  editableDeckCopy: { paddingRight: 48 },
+  editDeck: {
+    position: 'absolute',
+    top: spacing.sm,
+    right: spacing.sm,
+    width: 48,
+    height: 48,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: radius.pill,
+  },
+  editDeckDisabled: { opacity: 0.5 },
+  deckPressed: { backgroundColor: colors.surfaceTint },
   deckGridContent: {
     flex: 1,
-    minHeight: 128,
+    minHeight: 112,
+    gap: spacing.lg,
+    borderRadius: radius.small,
     flexDirection: 'column',
     alignItems: 'stretch',
     justifyContent: 'space-between',
@@ -1091,15 +1136,24 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     gap: spacing.sm,
   },
-  deckCount: {
-    ...typography.caption,
-    color: colors.focus,
-    backgroundColor: colors.badgeBg,
+  deckCountBadge: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: spacing.sm,
+    backgroundColor: colors.surfaceTint,
     paddingHorizontal: spacing.md,
-    paddingVertical: spacing.xs,
+    paddingVertical: spacing.sm,
     borderRadius: radius.pill,
   },
-  deckArrow: { ...typography.title, color: colors.primaryText },
+  deckCount: { ...typography.caption, color: colors.body },
+  deckArrow: {
+    width: 32,
+    height: 32,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: radius.pill,
+    backgroundColor: colors.surfaceTint,
+  },
   title: { ...typography.title, color: colors.dark },
   heading: { ...typography.heading, color: colors.dark },
   body: { ...typography.body, color: colors.body },
@@ -1138,12 +1192,6 @@ const styles = StyleSheet.create({
     backgroundColor: colors.surface,
     borderRadius: radius.small,
     boxShadow: shadowSm,
-  },
-  deckRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: spacing.lg,
-    minHeight: 48,
   },
   input: {
     ...typography.input,

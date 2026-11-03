@@ -48,6 +48,7 @@ export const spacing = {
 export const radius = { input: 18, small: 16, card: 32, pill: 999 } as const;
 export const layout = {
   screenGutter: 20,
+  desktopHeaderHeight: 96,
   maxContentWidth: Platform.OS === 'web' ? 1160 : 480,
   maxFormWidth: 480,
   inputHeight: 56,

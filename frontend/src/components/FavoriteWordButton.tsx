@@ -8,7 +8,7 @@ import {
 } from 'react-native';
 import Svg, { Path } from 'react-native-svg';
 import { flashcardService } from '../services/flashcardService';
-import { colors, spacing, typography } from '../theme/theme';
+import { colors, radius, spacing, typography } from '../theme/theme';
 
 export function FavoriteWordButton({
   source,
@@ -57,7 +57,11 @@ export function FavoriteWordButton({
           disabled: busy || disabled,
         }}
         disabled={busy || disabled}
-        style={styles.button}
+        style={({ pressed }) => [
+          styles.button,
+          pressed && styles.pressed,
+          (busy || disabled) && styles.disabled,
+        ]}
         onPress={async () => {
           if (pending.current || disabled) return;
           changes.current += 1;
@@ -83,15 +87,15 @@ export function FavoriteWordButton({
         }}
       >
         {busy ? (
-          <ActivityIndicator size="small" color={colors.focus} />
+          <ActivityIndicator size="small" color={colors.primaryText} />
         ) : (
           <Svg width={20} height={20} viewBox="0 0 24 24" accessible={false}>
             <Path
               d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9Z"
-              stroke={saved ? colors.focus : colors.muted}
+              stroke={colors.primaryText}
               strokeWidth={1.7}
               strokeLinejoin="round"
-              fill={saved ? colors.badgeBg : 'none'}
+              fill={saved ? colors.primary : 'none'}
             />
           </Svg>
         )}
@@ -107,6 +111,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     padding: spacing.sm,
+    borderRadius: radius.pill,
   },
+  pressed: { backgroundColor: colors.surfaceTint },
+  disabled: { opacity: 0.5 },
   error: { ...typography.caption, color: colors.danger, maxWidth: 150 },
 });

@@ -601,7 +601,7 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     paddingHorizontal: spacing.xl,
     paddingVertical: spacing.sm,
-    minHeight: 56,
+    minHeight: layout.desktopHeaderHeight,
     flexDirection: 'row',
     alignItems: 'center',
     gap: spacing.sm,

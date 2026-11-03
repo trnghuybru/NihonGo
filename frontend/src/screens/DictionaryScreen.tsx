@@ -11,7 +11,10 @@ import { WordPronunciation } from '../components/WordPronunciation';
 import { FavoriteWordButton } from '../components/FavoriteWordButton';
 import { useSearchHistoryFocus } from '../hooks/useSearchHistoryFocus';
 import { DictionaryRecentHistory } from '../components/DictionaryRecentHistory';
-import { useRecordDictionaryHistory } from '../hooks/useDictionaryHistory';
+import {
+  useDictionaryHistory,
+  useRecordDictionaryHistory,
+} from '../hooks/useDictionaryHistory';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
   ActivityIndicator,
@@ -34,6 +37,7 @@ import { HomeFeatureIcon } from '../components/HomeFeatureIcon';
 import {
   ChevronDownIcon,
   ChevronLeftIcon,
+  ChevronRightIcon,
   HandwritingIcon,
 } from '../components/icons';
 import { useBottomNavigationInset } from '../hooks/useBottomNavigationInset';
@@ -970,6 +974,7 @@ export function DictionaryScreen({
     result?.kind === 'character' || result?.kind === 'kanji'
       ? result.character
       : null;
+  const history = useDictionaryHistory(active);
   useRecordDictionaryHistory('word', displayedWord?.id, active);
   useRecordDictionaryHistory('kanji', displayedCharacter?.literal, active);
   const openHistory = useCallback(
@@ -1069,6 +1074,12 @@ export function DictionaryScreen({
           : []),
       ]);
   };
+  const showRecentHistory =
+    activeTab !== 'videos' && listRoute && !route.query && !text.trim();
+  const recentWords = history.items
+    .filter(item => item.kind === (activeTab === 'kanji' ? 'kanji' : 'word'))
+    .sort((a, b) => b.viewed_at - a.viewed_at)
+    .slice(0, 6);
   const tabs = (
     <View
       accessibilityRole="tablist"
@@ -1194,11 +1205,66 @@ export function DictionaryScreen({
         <DictionaryRecentHistory
           active={active}
           visible={historyOpen && activeTab !== 'videos'}
+          history={history}
           query={text}
           onOpen={openHistory}
         />
       </View>
       {toolbar}
+      {showRecentHistory ? (
+        <View style={styles.details} testID="dictionary-viewed-words">
+          <Text style={styles.heading} accessibilityRole="header">
+            Lịch sử tra cứu
+          </Text>
+          {history.error ? (
+            <View style={styles.details}>
+              <AuthNotice error message={history.error} />
+              <AuthButton
+                label="Tải lại các từ đã tra"
+                variant="text"
+                onPress={history.retry}
+              />
+            </View>
+          ) : null}
+          {recentWords.length ? (
+            <View style={styles.viewedWordsList}>
+              {recentWords.map((item, index) => (
+                <Pressable
+                  key={`${item.kind}:${item.target}`}
+                  accessibilityRole="button"
+                  accessibilityLabel={`Xem lại ${item.word}`}
+                  onPress={() => openHistory(item)}
+                  style={({ pressed }) => [
+                    styles.viewedWordRow,
+                    index > 0 && styles.viewedWordDivider,
+                    pressed && styles.viewedWordPressed,
+                  ]}
+                >
+                  <View style={styles.viewedWordCopy}>
+                    <View style={styles.viewedWordTitle}>
+                      <Text style={styles.heading}>{item.word}</Text>
+                      {item.reading ? (
+                        <Text style={styles.caption}>{item.reading}</Text>
+                      ) : null}
+                    </View>
+                    {item.glosses.length ? (
+                      <GlossText glosses={item.glosses} />
+                    ) : null}
+                  </View>
+                  <ChevronRightIcon size={18} color={colors.primaryText} />
+                </Pressable>
+              ))}
+            </View>
+          ) : null}
+          {!history.error && !recentWords.length ? (
+            <Text style={styles.body}>
+              {activeTab === 'kanji'
+                ? 'Chưa có Hán tự đã tra.'
+                : 'Chưa có từ vựng đã tra.'}
+            </Text>
+          ) : null}
+        </View>
+      ) : null}
       {activeTab !== 'videos' ? (
         <>
           {routes.length > 1 ? (
@@ -1331,6 +1397,7 @@ export function DictionaryScreen({
         contentInsetAdjustmentBehavior="automatic"
         renderItem={() => null}
         ListEmptyComponent={
+          !showRecentHistory &&
           state.status === 'ready' &&
           listRoute &&
           !displayedWord &&
@@ -1359,6 +1426,30 @@ export function DictionaryScreen({
 }
 
 const styles = StyleSheet.create({
+  viewedWordsList: {
+    backgroundColor: colors.surface,
+    borderRadius: radius.card,
+    borderWidth: 1,
+    borderColor: colors.divider,
+    overflow: 'hidden',
+    boxShadow: shadowSm,
+  },
+  viewedWordRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: spacing.lg,
+    padding: spacing.lg,
+    minHeight: 72,
+  },
+  viewedWordCopy: { flex: 1, minWidth: 0, gap: spacing.xs },
+  viewedWordTitle: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    alignItems: 'center',
+    gap: spacing.sm,
+  },
+  viewedWordDivider: { borderTopWidth: 1, borderTopColor: colors.divider },
+  viewedWordPressed: { backgroundColor: colors.surfaceTint },
   entryTitleRow: {
     flexDirection: 'row',
     alignItems: 'center',

@@ -57,7 +57,7 @@ export function PracticeScreen({
                 <HomeFeatureIcon
                   name={feature.icon}
                   color={colors.focus}
-                  size={24}
+                  size={20}
                 />
               </View>
               <Text style={styles.label}>{feature.label}</Text>
@@ -83,7 +83,7 @@ const styles = StyleSheet.create({
     flexGrow: 1,
     flexBasis: 240,
     minHeight: layout.touchTarget,
-    padding: spacing.xl,
+    padding: spacing.lg,
     gap: spacing.md,
     flexDirection: 'row',
     alignItems: 'center',
@@ -92,8 +92,8 @@ const styles = StyleSheet.create({
     boxShadow: shadowSm,
   },
   icon: {
-    height: 48,
-    width: 48,
+    height: 40,
+    width: 40,
     borderRadius: radius.small,
     backgroundColor: colors.surfaceTint,
     justifyContent: 'center',

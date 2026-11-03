@@ -30,6 +30,7 @@ import { dictionaryService } from '../services/dictionaryService';
 import { useRemoteResource } from '../hooks/useSpeakingScenarios';
 import { formatDictionaryPartsOfSpeech } from '../utils/dictionaryLabels';
 import { AuthButton } from './AuthForm';
+import { DictionaryWordActions } from './DictionaryWordActions';
 
 export const ShadowingTokenText = memo(function TokenText({
   text,
@@ -235,27 +236,57 @@ function DictionaryDefinition({ word }: { word: ShadowingLookupWord }) {
     'word',
     state.status === 'ready' ? state.data?.id : undefined,
   );
+  const heading = (
+    <View style={styles.wordHeading}>
+      <Text style={styles.word}>{word.surface}</Text>
+      {word.reading ? (
+        <Text style={styles.reading}>【{word.reading}】</Text>
+      ) : null}
+      {word.lemma && word.lemma !== word.surface ? (
+        <Text style={styles.reading}>
+          {word.surface} → {word.lemma}
+        </Text>
+      ) : null}
+    </View>
+  );
   if (state.status === 'loading')
     return (
-      <ActivityIndicator
-        accessibilityLabel="Đang tra từ"
-        color={colors.primary}
-      />
+      <View style={styles.popupContent}>
+        {heading}
+        <ActivityIndicator
+          accessibilityLabel="Đang tra từ"
+          color={colors.primary}
+        />
+      </View>
     );
   if (state.status === 'error')
     return (
-      <View style={styles.definition}>
-        <Text style={styles.reading}>{state.message}</Text>
-        <AuthButton label="Thử lại" variant="text" onPress={reload} />
+      <View style={styles.popupContent}>
+        {heading}
+        <View style={styles.definition}>
+          <Text style={styles.reading}>{state.message}</Text>
+          <AuthButton label="Thử lại" variant="text" onPress={reload} />
+        </View>
       </View>
     );
   const entry = state.data;
   if (!entry)
     return (
-      <Text style={styles.reading}>Không tìm thấy kết quả trong từ điển.</Text>
+      <View style={styles.popupContent}>
+        {heading}
+        <Text style={styles.reading}>
+          Không tìm thấy kết quả trong từ điển.
+        </Text>
+      </View>
     );
   return (
     <View style={styles.popupContent}>
+      <DictionaryWordActions
+        key={entry.id}
+        id={entry.id}
+        word={entry.word}
+        heading={heading}
+      />
       {entry.reading !== word.reading ? (
         <Text style={styles.reading}>{entry.reading}</Text>
       ) : null}
@@ -343,15 +374,6 @@ export function ShadowingWordPopup({
             showsVerticalScrollIndicator
             contentContainerStyle={styles.popupContent}
           >
-            <Text style={styles.word}>{word.surface}</Text>
-            {word.reading ? (
-              <Text style={styles.reading}>【{word.reading}】</Text>
-            ) : null}
-            {word.lemma && word.lemma !== word.surface ? (
-              <Text style={styles.reading}>
-                {word.surface} → {word.lemma}
-              </Text>
-            ) : null}
             <DictionaryDefinition
               key={word.lemma || word.surface}
               word={word}
@@ -434,6 +456,7 @@ const styles = StyleSheet.create({
     backgroundColor: colors.surfaceTint,
   },
   pos: { ...typography.caption, color: colors.muted },
+  wordHeading: { gap: spacing.xs, paddingTop: 12 },
   word: { ...typography.title, color: colors.dark },
   reading: { ...typography.body, color: colors.body },
   definition: {

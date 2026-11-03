@@ -853,7 +853,7 @@ test('unknown words show the dictionary empty state without replaying the senten
         node.props.accessibilityLabel === 'Tra từ 日本語' &&
         typeof node.props.onPress === 'function',
     );
-  expect(wordActions()).toHaveLength(0); // Lower subtitle rows are read-only.
+  expect(wordActions()).toHaveLength(0); // The transcript list remains plain text.
   const webview = tree.root.findByProps({ testID: 'youtube-example-player' });
   await act(async () =>
     webview.props.onMessage({
@@ -865,7 +865,7 @@ test('unknown words show the dictionary empty state without replaying the senten
       },
     }),
   );
-  expect(wordActions()).toHaveLength(1); // Only the large current caption is interactive.
+  expect(wordActions()).toHaveLength(1); // Only the caption below the video supports lookup.
   const request = tree.root.findByType(VideoExamplePlayer).props.seekRequest;
   await act(async () =>
     tree.root

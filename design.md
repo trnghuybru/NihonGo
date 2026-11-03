@@ -86,7 +86,7 @@ Các kiểu chữ nội dung dùng khoảng cách ký tự mặc định, không
 - Dùng cùng bảng màu, font Readex Pro, typography, radius và bóng đổ với điện thoại; không đổi token theo nền tảng.
 - Từ 1100 px, dùng sidebar 240 px thay thanh điều hướng đáy. Vùng dashboard/danh mục rộng tối đa 1160 px, vẫn giữ lề 20 px. Màn hình hẹp giữ navigation nổi rộng tối đa 480 px.
 - Trang chủ chia hai cột; danh mục shadowing dùng grid 1–3 cột theo chiều rộng thực tế. Bài shadowing đặt video và bảng phụ đề cạnh nhau trên desktop, không thêm card bao video.
-- Thanh trên cùng của web có nền trong suốt để lộ gradient chung; giữ badge trình độ và mục tiêu phút/ngày lấy từ hồ sơ thật bên phải. Trong bài shadowing, nút quay về và tiêu đề nằm bên trái trên cùng thanh này, dùng chung component và kiểu nút với app; không lặp lại trong cột video.
+- Thanh trên cùng của desktop cao tối thiểu `layout.desktopHeaderHeight` (96 px), căn giữa theo chiều dọc cùng logo sidebar; nút quay về, tiêu đề và badge cùng trục ngang. Thanh có nền trong suốt để lộ gradient chung; giữ badge trình độ và mục tiêu phút/ngày lấy từ hồ sơ thật bên phải. Trong bài shadowing, nút quay về và tiêu đề nằm bên trái trên cùng thanh này, dùng chung component và kiểu nút với app; không lặp lại trong cột video.
 - Form xác thực và thiết lập giữ khung tối đa 480 px. Trang Cá nhân trên desktop dùng khung tối đa 1160 px, hai cột cách 24 px; cột chính co giãn, cột thiết lập rộng 340 px. Trên màn hẹp giữ một cột tối đa 480 px. Hội thoại/nhận xét giữ chiều rộng đọc gọn; dialog câu hỏi AI trên web có thể rộng tối đa 720 px.
 
 ## Component và trạng thái
@@ -223,6 +223,7 @@ Thanh điều hướng xuất hiện sau khi người dùng đã hoàn tất thi
   1× → 0.75× → 0.5×. Chế độ từng đoạn dừng cuối câu, “Lặp đoạn” lặp câu đã chọn.
   Không hiển thị nút mở ngoài YouTube.
 - Phụ đề tự động được ghi rõ; không có điểm phát âm hoặc tiến độ giả.
+- Chỉ bấm từ trong phụ đề hiện tại dưới video để mở popup tra từ; danh sách transcript bên phải không tra từng từ; bấm vào cả hàng phụ đề (kể cả icon play) để phát câu tương ứng. Khi chép chính tả, ô nhập giữ thao tác nhập riêng và icon play dùng để phát câu. Icon **dấu cộng khoanh tròn** lưu vào flashcard và icon **ngôi sao** yêu thích nằm ngang hàng ở góc phải, ngay dưới nút đóng X. Chọn bộ tự tạo hiện có ngay trong popup; có tải thêm, thử lại và phản hồi lưu thành công/đã có. Thêm một thẻ giữ nguyên thẻ cũ và phiên học đang mở; không tạo bản trùng khi lưu lại cùng từ. Danh sách bộ thẻ chỉ tải khi người học bấm lưu, không gọi AI.
 - Câu hỏi nghe có dropdown N5–N1 nằm ngay trong header thẻ câu hỏi, nền surface, viền border, focus dùng focus, bo input 18 theo token; không có dấu tick hoặc phụ đề cho bộ chọn. Mỗi video lưu riêng 5 câu hỏi cho mỗi trình độ, dùng lại bộ đã có; chỉ tạo khi người học yêu cầu trình độ chưa có. Timeline nằm ngoài popup và chỉ hiển thị bộ đang chọn; đáp án trong lượt học giữ riêng từng trình độ.
 
 Home ưu tiên thao tác theo thứ tự: tra từ → mục tiêu hôm nay → ôn tập hôm nay và thử thách → thẻ Từ vựng của bạn → lưới Luyện kỹ năng → panel giới thiệu NihonGO. Không hiển thị tiến độ, chuỗi ngày hoặc số từ giả khi backend chưa cung cấp dữ liệu.
@@ -234,7 +235,7 @@ Home ưu tiên thao tác theo thứ tự: tra từ → mục tiêu hôm nay → 
 - **Thử thách hôm nay** đặt cạnh thẻ ôn tập trên desktop, dưới thẻ trên mobile. Thẻ trắng bo 32 continuous, padding 20, gap 16, `shadowMd`; tiêu đề nhóm `heading` 16/20, thông điệp `title` 18/24, nội dung `body` 12/16. Badge đào ghi số câu thật (tối đa 5); hoàn thành dùng `successBg`/`success`, ghi số câu đúng. Một CTA phụ outline **Bắt đầu / Tiếp tục / Xem kết quả thử thách**. Thiếu dữ liệu hướng dẫn học flashcard và khoá bắt đầu; lỗi có tải lại, không hiện số giả.
 - Thử thách dùng từ đã đánh giá trong các phiên gần đây, ưu tiên Chưa nhớ/Mơ hồ; mỗi câu có bốn nghĩa khác nhau, tránh đáp án trùng cụm nghĩa. Không tạo câu nếu thiếu đáp án phù hợp. Một lượt/ngày theo Asia/Ho_Chi_Minh, lưu/tiếp tục trên server; Home làm mới khi trở lại/foreground hoặc sang ngày mới.
 - Màn trắc nghiệm dùng gradient chung và `ScreenBackHeader` trong thanh trong suốt trên desktop. Nội dung tối đa 760, lề 20, thẻ trắng bo 32; từ `title` 18/24, câu trả lời `label` 14/20. Đáp án có A–D, bo 18, cao tối thiểu 52, viền 1 và focus bàn phím rõ. Sau khi server lưu mới hiện đúng/sai bằng cả màu lẫn chữ; cách đọc/nghĩa hiện dưới đáp án. Người dùng bấm **Câu tiếp theo**, không tự chuyển. Lỗi giữ câu và có tải lại. Tổng kết ghi số câu đúng và nút **Ôn câu sai bằng flashcard** nếu có. Điểm trắc nghiệm lưu riêng, không tự đổi mức nhớ đã chọn trong flashcard; chỉ thời gian ở màn luyện được tính vào mục tiêu hằng ngày.
-- Bốn kỹ năng xếp lưới 2×2: Nghe, Nói, Đọc, Viết. Mỗi thẻ dùng Momo tối đa 112 px, tự co theo chiều rộng nội dung trong hành động tương ứng (tai nghe, micro, đọc sách, tập viết), nền trắng `surface`, bo `radius.card` 32, padding 20, gap 16 và bóng `shadowMd`; tiêu đề 18/24, mô tả 12/16 và hành động 14/20. Hai thẻ trong hàng dùng `flex: 1`; bỏ các họa tiết SVG trừu tượng và nền nhiều màu.
+- Bốn kỹ năng xếp lưới 2×2: Nghe, Nói, Đọc, Viết. Mỗi thẻ dùng Momo tối đa 96 px, tự co theo chiều rộng nội dung trong hành động tương ứng (tai nghe, micro, đọc sách, tập viết), nền trắng `surface`, bo `radius.card` 32, padding 16, gap 12 và bóng `shadowMd`; khoảng cách giữa thẻ 16, cao tối thiểu desktop 144/mobile 216; tiêu đề 18/24, mô tả 12/16 và hành động 14/20. Hai thẻ trong hàng dùng `flex: 1`; bỏ các họa tiết SVG trừu tượng và nền nhiều màu.
 - Tư thế Momo hỗ trợ nhận diện kỹ năng; tên, mô tả và accessibility label luôn mang đủ ý nghĩa. Ảnh bên trong nút là trang trí, không đọc lặp lại.
 - Thẻ **Từ vựng của bạn** nằm ngang toàn chiều rộng ngay sau cụm ôn tập/thử thách,
   tiếp theo là tiêu đề **Luyện kỹ năng** và lưới 2×2. Không chia hai section từ vựng/kỹ năng
@@ -404,8 +405,8 @@ Logo và icon launcher dùng đầu Momo cùng chữ NihonGO đen–cam theo m�
 ### Lịch sử tra cứu
 
 - Ô tìm kiếm Trang chủ và Tra cứu dùng chung lịch sử. Chọn từ/Hán tự từ Trang chủ mở đúng mục đã xem trong Tra cứu.
-- Lịch sử chỉ hiện khi nhấp/focus ô tìm kiếm, trong dropdown trắng ngay dưới input,
-  cùng chiều rộng, bo 18 và bóng ấm. Dropdown phủ lên nội dung, không đẩy bố cục.
+- Khi chưa tra cứu (truy vấn và ô nhập trống), vùng nội dung dưới tab hiển thị **Lịch sử tra cứu** theo tab, tối đa 6 mục gần nhất, trong một danh sách trắng bo 32 và viền nhẹ: mỗi hàng cao tối thiểu 72, padding 16, gồm từ, cách đọc và nghĩa; có đường phân cách mảnh và mũi tên cam bên phải. Bấm thẻ mở chi tiết. Danh sách nằm trong luồng bố cục, không có icon lịch sử hoặc nút xoá và không dành khoảng trống cho dropdown.
+- Gợi ý tìm kiếm dựa trên lịch sử chỉ mở khi nhấp/focus ô tìm (cả Trang chủ và Tra cứu), trong dropdown trắng dưới input, cùng chiều rộng, bo 18 và bóng ấm; phủ lên nội dung, không đẩy bố cục. Danh sách nội dung và dropdown dùng chung một nguồn dữ liệu.
 - Danh sách xếp dọc, mỗi dòng có biểu tượng lịch sử, từ và cách đọc/nhãn Hán tự.
   Lọc theo chữ đang nhập (từ, cách đọc hoặc nghĩa); tối đa 30 mục, cuộn trong khung.
 - Chọn mục mở chi tiết và đóng dropdown. Gửi truy vấn, Escape, đổi loại tra cứu
@@ -457,7 +458,8 @@ Logo và icon launcher dùng đầu Momo cùng chữ NihonGO đen–cam theo m�
 - Mở từ nút **Flashcard** trong Bài học, giữ nguyên trang bài học khi quay lại.
   Header dùng `ScreenBackHeader`: ở app hiển thị trong màn, desktop nằm trên thanh trong suốt.
   Chuyển tab ẩn header và không chặn Back của màn khác.
-- Chọn nguồn bằng tab gọn **Có sẵn / Tự tạo / Yêu thích**. Có sẵn có bộ chọn N5–N1,
+- Thẻ bộ flashcard nền trắng, bo `card` 32, viền `divider`; tên ở trên, hàng dưới có badge nền `surfaceTint` với icon chồng thẻ 15 px màu `primaryText` trước số thẻ và mũi tên tròn bên phải. Bộ trong **Của tôi** không hiện ghi chú “Bộ tự tạo”; sửa bộ bằng icon bút chì 18 px màu `primaryText` ở góc trên phải, vùng bấm tròn 48 px, tooltip “Sửa bộ” trên web, không chồng chữ hoặc kích hoạt học bộ.
+- Chọn nguồn bằng tab gọn **Có sẵn / Của tôi / Yêu thích**. Có sẵn có bộ chọn N5–N1,
   danh sách phân trang, đếm thẻ thật. Bộ rỗng không bắt đầu được. Có **Tạo bộ thẻ** và sửa bộ tự tạo.
 - Tạo/sửa bộ có hai tab **Từng thẻ / Nhập hàng loạt**, giữ bản nháp khi đổi tab.
   Nhập hàng loạt dùng ô dán cao tối thiểu 200, bo 18, font input, viền focus theo token;
@@ -468,7 +470,7 @@ Logo và icon launcher dùng đầu Momo cùng chữ NihonGO đen–cam theo m�
   Chỉ nút **Thêm N thẻ vào bộ** đưa dữ liệu vào bản nháp; không tự lưu. Có lỗi ở bất kỳ dòng nào
   hoặc vượt tổng 100 thẻ thì khoá thêm, không tự bỏ dòng lỗi. Lưu bộ nhắc nhập phần xem trước
   còn chờ. Không có chức năng tải tệp CSV; dữ liệu dán được xử lý ngay trên thiết bị.
-- Ngôi sao 20 px, vùng chạm 48 px đặt cạnh từ trong Bài học/Từ điển; chọn dùng màu focus/badgeBg.
+- Ngôi sao 20 px, vùng chạm tròn 48 px đặt cạnh từ trong Bài học/Từ điển và popup tra nhanh: nét `primaryText`, chưa lưu để rỗng, đã lưu tô `primary`. Khi nhấn dùng nền `surfaceTint`; đang lưu/vô hiệu hoá giảm opacity 0.5, spinner dùng `primaryText`.
   Khi học flashcard, ngôi sao nằm ở góc trên bên phải của thẻ, dùng được ở cả hai mặt.
   Hỗ trợ bộ có sẵn, bộ tự tạo và các phiên ôn; bấm sao không lật thẻ hoặc tự đánh giá.
   Từ đã lưu xuất hiện trong bộ **Yêu thích**, giữ cùng danh tính thẻ và lịch FSRS.
@@ -539,7 +541,7 @@ Logo và icon launcher dùng đầu Momo cùng chữ NihonGO đen–cam theo m�
 | Flashcard | Bộ có sẵn/tự tạo/yêu thích; lật thẻ, tự đánh giá mức nhớ | Lịch ôn FSRS, thẻ đến hạn và số thẻ đã ôn |
 | Game từ vựng | Phòng nhiều người, mode viết hoặc giành mic; chọn JLPT hoặc bài học | Điểm và thứ hạng trong trận |
 
-- Bài học, Flashcard và Game là ba điểm vào riêng trong nhóm Từ vựng ở Luyện tập. Nhóm Kỹ năng giữ Nghe/Nói/Đọc/Viết.
+- Bài học, Flashcard và Game là ba điểm vào riêng trong nhóm Từ vựng ở Luyện tập. Thẻ dùng padding 16 px, gap 12 px, khung icon 40 px với icon 20 px; giữ khoảng cách giữa thẻ 16 px để đồng bộ nhóm Kỹ năng. Nhóm Kỹ năng giữ Nghe/Nói/Đọc/Viết.
 - Desktop có lối vào Flashcard và Game riêng trên sidebar, có trạng thái chọn tương ứng. Mobile giữ năm tab chính, truy cập hai chức năng này qua Luyện tập.
 - Trang chủ gọi đúng tên Bài học từ vựng và Game từ vựng. Không dùng nhãn chung khiến người dùng nhầm bài học với bộ thẻ.
 - Có thể dùng chung nguồn từ nhưng không nhập chung kết quả: điểm Game không thay thế mức nhớ hay tự cập nhật lịch FSRS. Lịch ôn thuộc Flashcard; không đưa lịch ôn vào phòng Game.

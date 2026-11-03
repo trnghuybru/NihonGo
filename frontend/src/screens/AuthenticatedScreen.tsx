@@ -482,7 +482,7 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
     paddingHorizontal: layout.screenGutter,
     paddingVertical: spacing.sm,
-    minHeight: 56,
+    minHeight: layout.desktopHeaderHeight,
     flexDirection: 'row',
     alignItems: 'center',
     backgroundColor: 'transparent',

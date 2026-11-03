@@ -39,7 +39,7 @@ export function HomeSkillCard({
         accessibilityElementsHidden
         importantForAccessibility="no-hide-descendants"
       >
-        <NihongoMascot pose={pose} size={112} decorative />
+        <NihongoMascot pose={pose} size={96} decorative />
       </View>
       <View style={styles.content}>
         <Text style={styles.title}>{title}</Text>
@@ -57,18 +57,18 @@ export function HomeSkillCard({
 
 const styles = StyleSheet.create({
   card: {
-    minHeight: 236,
+    minHeight: 216,
     flex: 1,
     minWidth: 0,
-    padding: spacing.xl,
-    gap: spacing.lg,
+    padding: spacing.lg,
+    gap: spacing.md,
     borderRadius: radius.card,
     borderCurve: 'continuous',
     backgroundColor: colors.surface,
     boxShadow: shadowMd,
   },
-  desktopCard: { flexDirection: 'row', alignItems: 'center', minHeight: 176 },
-  content: { flex: 1, minWidth: 0, gap: spacing.lg },
+  desktopCard: { flexDirection: 'row', alignItems: 'center', minHeight: 144 },
+  content: { flex: 1, minWidth: 0, gap: spacing.md },
   illustration: { alignItems: 'center' },
   pressed: { backgroundColor: colors.surfaceTint },
   copy: { flex: 1, gap: spacing.xs },

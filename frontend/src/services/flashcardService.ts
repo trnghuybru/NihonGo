@@ -66,6 +66,20 @@ export const flashcardService = {
     authenticatedRequest<{ saved: boolean }>(
       `${root}/favorites/${source}/${encodeURIComponent(id)}`,
     ),
+  addDictionaryCard: async (deckId: string, dictionaryId: string) => {
+    const result = await authenticatedRequest<{
+      added: boolean;
+      deck_id: string;
+      title: string;
+      card: Flashcard;
+    }>(
+      `${root}/decks/${encodeURIComponent(deckId)}/cards`,
+      { dictionary_id: dictionaryId },
+      'POST',
+    );
+    notifyFlashcardScheduleChanged();
+    return result;
+  },
   setFavorite: (source: 'lesson' | 'dictionary', id: string, saved: boolean) =>
     authenticatedRequest<{ saved: boolean }>(
       `${root}/favorites/${source}/${encodeURIComponent(id)}`,

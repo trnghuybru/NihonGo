@@ -141,7 +141,7 @@ test('recent history reopens vocabulary and kanji and can be cleared', async () 
       target: word.id,
       word: '学校',
       reading: 'がっこう',
-      glosses: [],
+      glosses: [{ language: 'vi', text: 'trường học' }],
       viewed_at: 2,
     },
     {
@@ -157,8 +157,16 @@ test('recent history reopens vocabulary and kanji and can be cleared', async () 
     .mocked(dictionaryService.history)
     .mockResolvedValueOnce({ items: recent });
   await render();
+  expect(contents()).toContain('Lịch sử tra cứu');
   expect(contents()).not.toContain('Gần đây');
+  expect(control('Xem lại 学校')).toBeDefined();
+  expect(control('Tra lại 学校')).toBeUndefined();
   expect(dictionaryService.words).not.toHaveBeenCalled();
+  expect(contents()).toContain('trường học');
+  await press('Xem lại 学校');
+  expect(dictionaryService.word).toHaveBeenCalledWith(word.id);
+  await press('Quay lại từ điển');
+  expect(control('Xem lại 学校')).toBeDefined();
   await act(async () => tree.root.findByType(TextInput).props.onFocus());
   expect(contents()).toContain('Gần đây');
   await press('Tra lại 学校');
@@ -176,6 +184,28 @@ test('recent history reopens vocabulary and kanji and can be cleared', async () 
   expect(dictionaryService.clearHistory).toHaveBeenCalledTimes(1);
   expect(control('Tra lại 学校')).toBeUndefined();
   expect(contents()).toContain('Chưa có lịch sử tra cứu.');
+});
+
+test('idle vocabulary list shows the six newest words while suggestions retain older entries', async () => {
+  jest.mocked(dictionaryService.history).mockResolvedValueOnce({
+    items: Array.from({ length: 8 }, (_, index) => ({
+      kind: 'word' as const,
+      target: `jmdict:${index}`,
+      word: `単語${index}`,
+      reading: 'たんご',
+      glosses: [{ language: 'vi', text: `Nghĩa ${index}` }],
+      viewed_at: index,
+    })),
+  });
+  await render();
+  expect(control('Xem lại 単語7')).toBeDefined();
+  expect(control('Xem lại 単語2')).toBeDefined();
+  expect(control('Xem lại 単語1')).toBeUndefined();
+  expect(control('Xem lại 単語0')).toBeUndefined();
+  expect(control('Tra lại 単語0')).toBeUndefined();
+  await act(async () => tree.root.findByType(TextInput).props.onFocus());
+  expect(control('Tra lại 単語0')).toBeDefined();
+  expect(control('Xem lại 単語0')).toBeUndefined();
 });
 
 test('a new history notification takes precedence over an older history read', async () => {
@@ -230,7 +260,7 @@ test('empty search results do not request a definition', async () => {
   expect(control('Quay lại từ điển')).toBeDefined();
   await press('Quay lại từ điển');
   expect(tree.root.findByType(TextInput).props.value).toBe('');
-  expect(contents()).toContain('Bạn muốn tra từ nào?');
+  expect(contents()).toContain('Lịch sử tra cứu');
 });
 
 test('search back restores the previous query and eventually the initial search screen', async () => {

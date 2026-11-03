@@ -179,7 +179,11 @@ const styles = StyleSheet.create({
     borderRightWidth: 1,
     borderRightColor: colors.divider,
   },
-  brand: { paddingTop: spacing.sm, paddingBottom: spacing.section },
+  brand: {
+    height: layout.desktopHeaderHeight,
+    marginTop: -spacing.xl,
+    justifyContent: 'center',
+  },
   sectionLabel: {
     ...typography.caption,
     color: colors.muted,

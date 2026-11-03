@@ -171,6 +171,29 @@ def update_deck(identifier):
     return jsonify({'id': row.id, 'title': row.title, 'cards': row.cards})
 
 
+@bp.post('/decks/<identifier>/cards')
+@require_auth
+def append_dictionary_card(identifier):
+    data = body()
+    target = data.get('dictionary_id')
+    if not isinstance(target, str) or not target or len(target) > 128:
+        raise ApiError('Chọn một từ trong từ điển để lưu.')
+    locked_user()
+    row = owned_deck(identifier)
+    source = source_card('dictionary', target)
+    draft = {key: source[key] for key in ('front', 'reading', 'back')}
+    existing = next((card for card in row.cards if all(card.get(key, '') == value for key, value in draft.items())), None)
+    if existing:
+        return jsonify({'added': False, 'deck_id': row.id, 'title': row.title, 'card': existing})
+    if len(row.cards) >= 100:
+        raise ApiError('Bộ thẻ đã đủ 100 thẻ. Hãy chọn bộ khác.')
+    _, cards = clean_deck({'title': row.title, 'cards': [draft]})
+    row.cards = [*row.cards, cards[0]]
+    row.updated_at = timestamp()
+    db.session.commit()
+    return jsonify({'added': True, 'deck_id': row.id, 'title': row.title, 'card': cards[0]}), 201
+
+
 def source_card(source, target):
     if source == 'lesson':
         row = db.session.get(VocabularyWord, target)

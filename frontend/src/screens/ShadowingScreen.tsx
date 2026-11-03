@@ -100,17 +100,36 @@ const SegmentRow = memo(function CaptionSegment({
   onFocus: () => void;
 }) {
   const onPress = useCallback(() => onSelect(position), [onSelect, position]);
+  // Dictation inputs keep their own focus; ordinary captions use the whole row.
+  const Row = gap ? View : Pressable;
+  const playback = (
+    <PlayCircleIcon size={18} color={active ? colors.dark : colors.muted} />
+  );
   return (
-    <View style={[styles.segment, active && styles.selected]}>
-      <Pressable
-        accessibilityRole="button"
-        accessibilityLabel={`Luyện đoạn ${position + 1}`}
-        accessibilityState={{ selected: active }}
-        onPress={onPress}
-        hitSlop={10}
-      >
-        <PlayCircleIcon size={18} color={active ? colors.dark : colors.muted} />
-      </Pressable>
+    <Row
+      style={[styles.segment, active && styles.selected]}
+      {...(!gap
+        ? {
+            accessibilityRole: 'button' as const,
+            accessibilityLabel: `Luyện đoạn ${position + 1}`,
+            accessibilityState: { selected: active },
+            onPress,
+          }
+        : {})}
+    >
+      {gap ? (
+        <Pressable
+          accessibilityRole="button"
+          accessibilityLabel={`Luyện đoạn ${position + 1}`}
+          accessibilityState={{ selected: active }}
+          onPress={onPress}
+          hitSlop={10}
+        >
+          {playback}
+        </Pressable>
+      ) : (
+        playback
+      )}
       <View style={styles.segmentText}>
         {gap ? (
           <ShadowingDictation
@@ -129,7 +148,7 @@ const SegmentRow = memo(function CaptionSegment({
           <Text style={styles.translationText}>{translation}</Text>
         ) : null}
       </View>
-    </View>
+    </Row>
   );
 });
 

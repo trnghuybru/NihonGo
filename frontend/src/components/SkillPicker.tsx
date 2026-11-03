@@ -48,6 +48,6 @@ export function SkillPicker({
 }
 
 const styles = StyleSheet.create({
-  grid: { gap: spacing.xl },
-  skillRow: { flexDirection: 'row', alignItems: 'stretch', gap: spacing.xl },
+  grid: { gap: spacing.lg },
+  skillRow: { flexDirection: 'row', alignItems: 'stretch', gap: spacing.lg },
 });

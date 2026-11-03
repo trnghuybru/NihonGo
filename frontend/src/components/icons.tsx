@@ -478,3 +478,24 @@ export function PlayCircleIcon({ size = 24, color = colors.muted }: IconProps) {
     </Svg>
   );
 }
+
+export function PencilIcon({
+  size = 20,
+  color = colors.primaryText,
+  strokeWidth = 1.7,
+}: IconProps) {
+  return (
+    <Svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      accessible={false}
+    >
+      <Path
+        d="m15 5 4 4M4 20l4.5-1L20 7.5a2.8 2.8 0 0 0-4-4L4.5 15 4 20Z"
+        {...stroke(color, strokeWidth)}
+      />
+    </Svg>
+  );
+}

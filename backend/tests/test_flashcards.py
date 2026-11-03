@@ -82,6 +82,39 @@ class FlashcardTests(unittest.TestCase):
         self.assertEqual(response.status_code, 201, response.json)
         return response.json
 
+    def test_append_dictionary_card_preserves_deck_and_session_and_is_idempotent(self):
+        deck = self.create()
+        db.session.add(DictionaryEntry(id='jmdict:2', word='日本語', reading='にほんご', common=True,
+            content={'senses':[{'glosses':[{'language':'vi','text':'tiếng Nhật'}]}]}))
+        db.session.commit()
+        session = self.request('post', '/sessions', {'kind':'custom','deck_id':deck['id']}).json
+        path = f"/decks/{deck['id']}/cards"
+        self.assertEqual(self.client.post('/api/flashcards'+path,json={'dictionary_id':'jmdict:2'}).status_code,401)
+        self.assertEqual(self.request('post',path,{'dictionary_id':'jmdict:2'},user='two').status_code,404)
+        response = self.request('post',path,{'dictionary_id':'jmdict:2'})
+        self.assertEqual(response.status_code,201,response.json)
+        self.assertTrue(response.json['added'])
+        saved = self.request('get',f"/decks/{deck['id']}").json
+        self.assertEqual(saved['cards'][:2],deck['cards'])
+        self.assertEqual(saved['title'],deck['title'])
+        self.assertEqual(saved['cards'][2]['front'],'日本語')
+        self.assertEqual(saved['cards'][2]['back'],'tiếng Nhật')
+        repeated = self.request('post',path,{'dictionary_id':'jmdict:2'})
+        self.assertEqual(repeated.status_code,200)
+        self.assertFalse(repeated.json['added'])
+        self.assertEqual(repeated.json['card']['id'],response.json['card']['id'])
+        self.assertEqual(len(self.request('get',f"/decks/{deck['id']}").json['cards']),3)
+        self.assertEqual(self.request('get',f"/sessions/{session['id']}").json['cards'],session['cards'])
+
+    def test_append_dictionary_card_checks_capacity_and_source(self):
+        deck = self.request('post','/decks',{'title':'Full','cards':[{'front':f'Word {i}','reading':'','back':'meaning'} for i in range(100)]}).json
+        path = f"/decks/{deck['id']}/cards"
+        self.assertEqual(self.request('post',path,{}).status_code,400)
+        self.assertEqual(self.request('post',path,{'dictionary_id':'missing'}).status_code,404)
+        response = self.request('post',path,{'dictionary_id':'jmdict:1'})
+        self.assertEqual(response.status_code,400,response.json)
+        self.assertEqual(len(self.request('get',f"/decks/{deck['id']}").json['cards']),100)
+
     def test_custom_deck_isolation_and_session_snapshot(self):
         deck = self.create()
         self.assertEqual(self.request('get', '/decks?kind=custom').json['items'][0]['id'], deck['id'])
