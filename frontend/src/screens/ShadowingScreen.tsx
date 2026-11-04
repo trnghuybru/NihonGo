@@ -3,6 +3,7 @@ import { useWebNavigation } from '../navigation/webNavigation';
 import { ScreenBackHeader } from '../components/ScreenBackHeader';
 import { memo, useCallback, useMemo, useEffect, useRef, useState } from 'react';
 import type { ComponentRef } from 'react';
+import { ShadowingLyrics } from '../components/ShadowingLyrics';
 import { ReadingScrollRegion } from '../components/ReadingScrollRegion';
 import {
   AppState,
@@ -353,6 +354,7 @@ export function ShadowingScreen({
   const scrollRetry = useRef<ReturnType<typeof setTimeout> | null>(null);
   const scrollTarget = useRef(-1);
   const [panelOpen, setPanelOpen] = useState(true);
+  const [mobileTranscriptOpen, setMobileTranscriptOpen] = useState(false);
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [hideCaption, setHideCaption] = useState(false);
   const [rate, setRate] = useState(1);
@@ -623,6 +625,7 @@ export function ShadowingScreen({
         ) ?? -1,
       );
       setFollow(true);
+      setMobileTranscriptOpen(false);
     },
     [captions, lesson],
   );
@@ -760,8 +763,8 @@ export function ShadowingScreen({
     [lesson],
   );
   useEffect(() => {
-    if (lesson && panelOpen && follow) scrollToCaption(liveIndex);
-  }, [lesson, panelOpen, follow, liveIndex, scrollToCaption]);
+    if (desktop && lesson && panelOpen && follow) scrollToCaption(liveIndex);
+  }, [desktop, lesson, panelOpen, follow, liveIndex, scrollToCaption]);
   const renderJob = useCallback(
     ({ item }: { item: ShadowingJob }) => (
       <ShadowingVideoCard
@@ -780,6 +783,7 @@ export function ShadowingScreen({
       : liveIndex >= 0
       ? liveIndex
       : lastCaptionIndex.current;
+    const translationIndex = desktop ? liveIndex : current;
     const captionText =
       captionIndex >= 0 && captions?.[captionIndex]
         ? captions[captionIndex].text
@@ -829,7 +833,6 @@ export function ShadowingScreen({
     };
     const playerHeader = (
       <View style={styles.fixedHeader}>
-        {' '}
         <ScreenBackHeader
           title="Shadowing"
           backLabel="Danh sách video"
@@ -882,7 +885,6 @@ export function ShadowingScreen({
     );
     const lessonControls = (
       <View style={styles.fixedHeader}>
-        {' '}
         <AuthNotice error message={error} />
         <View
           accessibilityRole="radiogroup"
@@ -912,6 +914,7 @@ export function ShadowingScreen({
                   setSettingsOpen(false);
                   setShowTranslation(false);
                   setPanelOpen(true);
+                  setMobileTranscriptOpen(false);
                   selectSegment(current);
                 }
                 setDictation(value);
@@ -992,30 +995,46 @@ export function ShadowingScreen({
                   <EyeIcon size={18} color={colors.primaryText} />
                 )}
               </Pressable>
-              <ReadingScrollRegion
-                scrollable={desktop && captionOverflows}
-                key={captionIndex}
-                style={[
-                  desktop && styles.currentCaptionScroll,
-                  desktop && {
-                    maxHeight: Math.ceil(
-                      (lineHeight + 18) * fontScale * 2 + spacing.xs,
-                    ),
-                  },
-                ]}
-                onLayout={event =>
-                  setCaptionWidth(Math.round(event.nativeEvent.layout.width))
-                }
-              >
-                <ShadowingTokenText
-                  text={captionText}
-                  tokens={currentTokens}
-                  words={lesson.words}
-                  selectedKey={selectedWordKey}
+              {!desktop ? (
+                <ShadowingLyrics
+                  lesson={lesson}
+                  currentIndex={current}
+                  following={follow}
+                  selectedWordKey={selectedWordKey}
+                  onBrowse={stopFollowing}
+                  onFollow={() => setFollow(true)}
+                  onSelect={selectSegment}
                   onWordPress={showWord}
-                  style={[styles.currentCaptionText, { fontSize, lineHeight }]}
                 />
-              </ReadingScrollRegion>
+              ) : (
+                <ReadingScrollRegion
+                  scrollable={desktop && captionOverflows}
+                  key={captionIndex}
+                  style={[
+                    desktop && styles.currentCaptionScroll,
+                    desktop && {
+                      maxHeight: Math.ceil(
+                        (lineHeight + 18) * fontScale * 2 + spacing.xs,
+                      ),
+                    },
+                  ]}
+                  onLayout={event =>
+                    setCaptionWidth(Math.round(event.nativeEvent.layout.width))
+                  }
+                >
+                  <ShadowingTokenText
+                    text={captionText}
+                    tokens={currentTokens}
+                    words={lesson.words}
+                    selectedKey={selectedWordKey}
+                    onWordPress={showWord}
+                    style={[
+                      styles.currentCaptionText,
+                      { fontSize, lineHeight },
+                    ]}
+                  />
+                </ReadingScrollRegion>
+              )}
               {desktop &&
               !hideCaption &&
               captionIndex >= 0 &&
@@ -1030,14 +1049,14 @@ export function ShadowingScreen({
         {!dictation && showTranslation && !hideCaption ? (
           <View style={styles.translationArea}>
             {!hideCaption &&
-            liveIndex >= 0 &&
-            translation.data?.items[lesson.segments[liveIndex]?.id] ? (
+            translationIndex >= 0 &&
+            translation.data?.items[lesson.segments[translationIndex]?.id] ? (
               <ReadingScrollRegion
                 scrollable={desktop}
                 style={desktop ? styles.translationScroll : undefined}
               >
                 <Text style={styles.currentTranslation}>
-                  {translation.data.items[lesson.segments[liveIndex].id]}
+                  {translation.data.items[lesson.segments[translationIndex].id]}
                 </Text>
               </ReadingScrollRegion>
             ) : null}
@@ -1081,12 +1100,19 @@ export function ShadowingScreen({
               <Pressable
                 accessibilityRole="button"
                 accessibilityLabel="Phụ đề"
-                accessibilityState={{ expanded: panelOpen }}
+                accessibilityState={{
+                  expanded: desktop ? panelOpen : mobileTranscriptOpen,
+                }}
                 onPress={() => {
-                  setPanelOpen(value => !value);
+                  if (desktop) setPanelOpen(value => !value);
+                  else setMobileTranscriptOpen(true);
                 }}
                 hitSlop={6}
-                style={[styles.toolIcon, panelOpen && styles.selected]}
+                style={[
+                  styles.toolIcon,
+                  (desktop ? panelOpen : mobileTranscriptOpen) &&
+                    styles.selected,
+                ]}
               >
                 <MessageSquareIcon color={colors.primaryText} size={18} />
               </Pressable>
@@ -1142,20 +1168,22 @@ export function ShadowingScreen({
                   <EyeOffIcon size={18} color={colors.muted} />
                 </Pressable>
               ) : null}
-              <Pressable
-                accessibilityRole="switch"
-                accessibilityLabel="Theo dõi phụ đề"
-                accessibilityHint="Quay về câu hiện tại và tự cuộn theo video."
-                accessibilityState={{ checked: follow }}
-                onPress={() => {
-                  if (follow) stopFollowing();
-                  else setFollow(true);
-                }}
-                hitSlop={8}
-                style={[styles.toolIcon, follow && styles.selected]}
-              >
-                <Text style={styles.label}>↓</Text>
-              </Pressable>
+              {desktop ? (
+                <Pressable
+                  accessibilityRole="switch"
+                  accessibilityLabel="Theo dõi phụ đề"
+                  accessibilityHint="Quay về câu hiện tại và tự cuộn theo video."
+                  accessibilityState={{ checked: follow }}
+                  onPress={() => {
+                    if (follow) stopFollowing();
+                    else setFollow(true);
+                  }}
+                  hitSlop={8}
+                  style={[styles.toolIcon, follow && styles.selected]}
+                >
+                  <Text style={styles.label}>↓</Text>
+                </Pressable>
+              ) : null}
             </>
           ) : null}
           <View
@@ -1325,7 +1353,7 @@ export function ShadowingScreen({
         style={styles.subtitleList}
         showsVerticalScrollIndicator={false}
         showsHorizontalScrollIndicator={false}
-        data={panelOpen ? lesson.segments : []}
+        data={desktop && !panelOpen ? [] : lesson.segments}
         keyExtractor={item => item.id}
         extraData={{
           liveIndex,
@@ -1358,7 +1386,6 @@ export function ShadowingScreen({
         keyboardShouldPersistTaps="handled"
         ListHeaderComponent={
           <View>
-            {!desktop ? lessonControls : null}
             {panelOpen && lesson.caption_kind === 'asr' ? (
               <Text style={styles.captionNotice}>
                 Phụ đề tự động có thể có lỗi. Hãy đối chiếu với lời nói trong
@@ -1366,15 +1393,6 @@ export function ShadowingScreen({
               </Text>
             ) : null}
           </View>
-        }
-        ListFooterComponent={
-          !desktop && !panelOpen ? (
-            <View style={styles.closedPanel}>
-              <Text style={styles.caption}>
-                Bấm “Phụ đề” để mở danh sách câu.
-              </Text>
-            </View>
-          ) : undefined
         }
         renderItem={renderSegment}
       />
@@ -1407,14 +1425,19 @@ export function ShadowingScreen({
         ) : (
           playerHeader
         )}
-        {panelOpen || !desktop ? (
-          <View
-            style={[
-              styles.subtitlePanel,
-              desktop && styles.desktopSubtitlePanel,
-              !desktop && styles.mobileContentPanel,
-            ]}
+        {!desktop ? (
+          <ScrollView
+            ref={lessonScroll}
+            testID="shadowing-mobile-content-scroll"
+            style={styles.mobileContentPanel}
+            contentContainerStyle={styles.lessonContent}
+            keyboardShouldPersistTaps="handled"
+            showsVerticalScrollIndicator={false}
           >
+            {lessonControls}
+          </ScrollView>
+        ) : panelOpen ? (
+          <View style={[styles.subtitlePanel, styles.desktopSubtitlePanel]}>
             {transcriptList}
           </View>
         ) : (
@@ -1424,6 +1447,52 @@ export function ShadowingScreen({
             </Text>
           </View>
         )}
+        {!desktop && !dictation ? (
+          <Modal
+            visible={mobileTranscriptOpen}
+            transparent
+            animationType="slide"
+            onRequestClose={() => {
+              setMobileTranscriptOpen(false);
+              setFollow(true);
+            }}
+            onShow={() => scrollToCaption(Math.max(0, current))}
+          >
+            <View style={styles.transcriptBackdrop}>
+              <Pressable
+                style={StyleSheet.absoluteFill}
+                accessibilityRole="button"
+                accessibilityLabel="Đóng danh sách phụ đề"
+                onPress={() => {
+                  setMobileTranscriptOpen(false);
+                  setFollow(true);
+                }}
+              />
+              <View
+                style={[
+                  styles.transcriptSheet,
+                  { paddingBottom: insets.bottom + spacing.lg },
+                ]}
+              >
+                <View style={styles.lessonTop}>
+                  <Text style={styles.panelTitle}>Phụ đề</Text>
+                  <Pressable
+                    accessibilityRole="button"
+                    accessibilityLabel="Đóng phụ đề"
+                    style={styles.toolIcon}
+                    onPress={() => {
+                      setMobileTranscriptOpen(false);
+                      setFollow(true);
+                    }}
+                  >
+                    <XIcon size={18} color={colors.body} />
+                  </Pressable>
+                </View>
+                {transcriptList}
+              </View>
+            </View>
+          </Modal>
+        ) : null}
         <ShadowingWordPopup
           word={lookupWord}
           anchorY={lookupAnchor}
@@ -1712,7 +1781,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     flexWrap: 'wrap',
     gap: spacing.sm,
-    marginVertical: spacing.xs,
+    marginTop: spacing.lg,
+    marginBottom: spacing.xs,
   },
   modeButton: {
     flexDirection: 'row',
@@ -2045,6 +2115,19 @@ const styles = StyleSheet.create({
     gap: spacing.sm,
   },
   subtitleList: { flex: 1 },
+  transcriptBackdrop: {
+    flex: 1,
+    justifyContent: 'flex-end',
+    backgroundColor: 'rgba(37,37,38,0.32)',
+  },
+  transcriptSheet: {
+    height: '70%',
+    borderTopLeftRadius: radius.card,
+    borderTopRightRadius: radius.card,
+    padding: spacing.lg,
+    gap: spacing.md,
+    backgroundColor: colors.surface,
+  },
   mobileContentPanel: {
     flex: 1,
     minHeight: 0,

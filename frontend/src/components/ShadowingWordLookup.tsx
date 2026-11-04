@@ -41,6 +41,7 @@ export const ShadowingTokenText = memo(function TokenText({
   style,
   showFurigana = true,
   preserveLayout = false,
+  align = 'center',
   linkWords = false,
   highlightRanges = [],
   interactiveRanges = [],
@@ -56,6 +57,7 @@ export const ShadowingTokenText = memo(function TokenText({
   style?: StyleProp<TextStyle>;
   showFurigana?: boolean;
   preserveLayout?: boolean;
+  align?: 'left' | 'center';
   linkWords?: boolean;
   highlightRanges?: { start: number; end: number }[];
   interactiveRanges?: {
@@ -73,7 +75,13 @@ export const ShadowingTokenText = memo(function TokenText({
   if (!tokens?.length) return <Text style={style}>{text}</Text>;
   let offset = 0;
   return (
-    <View style={[styles.wordFlow, preserveLayout && styles.readingFlow]}>
+    <View
+      style={[
+        styles.wordFlow,
+        preserveLayout && styles.readingFlow,
+        align === 'left' && styles.leftFlow,
+      ]}
+    >
       {tokens.map((token, index) => {
         const start = offset;
         offset += token.text.length;
@@ -108,26 +116,15 @@ export const ShadowingTokenText = memo(function TokenText({
             ]}
           >
             {parts.map((part, position) => (
-              <View
-                key={position}
-                style={[
-                  styles.rubyPart,
-                  { paddingTop: Number(showFurigana) * 14 * fontScale },
-                  linkWords && part.reading
-                    ? { minWidth: part.reading.length * 10 * fontScale }
-                    : null,
-                ]}
-              >
-                {part.reading ? (
-                  <Text
-                    accessible={false}
-                    numberOfLines={1}
-                    adjustsFontSizeToFit
-                    minimumFontScale={0.7}
-                    style={styles.ruby}
-                  >
-                    {part.reading}
-                  </Text>
+              <View key={position} style={styles.rubyPart}>
+                {showFurigana ? (
+                  part.reading ? (
+                    <Text accessible={false} style={styles.ruby}>
+                      {part.reading}
+                    </Text>
+                  ) : (
+                    <View style={{ height: 14 * fontScale }} />
+                  )
                 ) : null}
                 <Text
                   style={[
@@ -394,6 +391,7 @@ const styles = StyleSheet.create({
     columnGap: spacing.sm,
     rowGap: spacing.xs,
   },
+  leftFlow: { justifyContent: 'flex-start' },
   readingFlow: { justifyContent: 'flex-start', columnGap: 0, rowGap: 2 },
   readingWordLine: { borderBottomColor: 'transparent', borderBottomWidth: 1 },
   wordCell: { maxWidth: '100%' },
@@ -409,16 +407,13 @@ const styles = StyleSheet.create({
   linkedWordText: { color: colors.focus },
   hoveredWordLine: { backgroundColor: colors.surfaceTint },
   selectedWordLine: { backgroundColor: colors.badgeBg },
-  rubyPart: { paddingTop: 14, maxWidth: '100%', flexShrink: 1 },
+  rubyPart: { alignItems: 'center', maxWidth: '100%', flexShrink: 1 },
   ruby: {
     ...typography.caption,
     fontSize: 10,
     lineHeight: 12,
     color: colors.body,
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    right: 0,
+    minHeight: 14,
     textAlign: 'center',
   },
   wordText: { textDecorationLine: 'none' },

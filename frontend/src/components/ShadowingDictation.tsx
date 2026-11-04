@@ -79,97 +79,103 @@ export function ShadowingDictation({
   };
   return (
     <View style={styles.content}>
-      <View style={[styles.sentence, prominent && styles.prominentSentence]}>
-        {(gap.before.match(wordPattern) ?? []).map((part, index) => (
-          <Text
-            key={`before-${index}`}
-            style={[
-              styles.text,
-              prominent && styles.prominentText,
-              prominent && !desktop && styles.mobileProminentText,
+      <View style={styles.answerRow}>
+        {!desktop ? (
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel={
+              prominent
+                ? 'Kiểm tra câu đang phát'
+                : `Kiểm tra câu ${position + 1}`
+            }
+            accessibilityState={{ disabled: !canCheck }}
+            disabled={!canCheck}
+            hitSlop={6}
+            onPress={check}
+            style={({ pressed }) => [
+              styles.checkButton,
+              !canCheck && styles.checkDisabled,
+              pressed && canCheck && styles.checkPressed,
             ]}
           >
-            {part}
-          </Text>
-        ))}
-        <TextInput
-          accessibilityLabel={
-            prominent
-              ? 'Từ còn thiếu câu đang phát'
-              : `Từ còn thiếu câu ${position + 1}`
-          }
-          accessibilityHint={
-            desktop
-              ? 'Nghe rồi điền từ còn thiếu. Nhấn Enter để kiểm tra.'
-              : 'Nghe rồi điền từ còn thiếu, sau đó bấm Kiểm tra.'
-          }
-          placeholder="…"
-          value={answer.value}
-          onChangeText={value => onChange({ value, correct: null })}
-          onSubmitEditing={check}
-          onFocus={onFocus}
-          onBlur={onBlur}
-          submitBehavior="submit"
-          returnKeyType="done"
-          autoCorrect={false}
-          autoCapitalize="none"
+            <CheckIcon
+              size={18}
+              color={canCheck ? colors.onPrimary : colors.disabledText}
+            />
+          </Pressable>
+        ) : null}
+        <View
           style={[
-            styles.input,
-            prominent && styles.prominentInput,
-            prominent && !desktop && styles.mobileProminentText,
-            {
-              width: Math.min(
-                180,
-                Math.max(
-                  prominent ? 110 : 80,
-                  Array.from(answer.value).length * (prominent ? 24 : 16) + 24,
-                ),
-              ),
-            },
-            answer.correct !== null &&
-              (answer.correct ? styles.correct : styles.incorrect),
-          ]}
-        />
-        {(gap.after.match(wordPattern) ?? []).map((part, index) => (
-          <Text
-            key={`after-${index}`}
-            style={[
-              styles.text,
-              prominent && styles.prominentText,
-              prominent && !desktop && styles.mobileProminentText,
-            ]}
-          >
-            {part}
-          </Text>
-        ))}
-      </View>
-      {!desktop ? (
-        <Pressable
-          accessibilityRole="button"
-          accessibilityLabel={
-            prominent
-              ? 'Kiểm tra câu đang phát'
-              : `Kiểm tra câu ${position + 1}`
-          }
-          accessibilityState={{ disabled: !canCheck }}
-          disabled={!canCheck}
-          hitSlop={6}
-          onPress={check}
-          style={({ pressed }) => [
-            styles.checkButton,
-            !canCheck && styles.checkDisabled,
-            pressed && canCheck && styles.checkPressed,
+            styles.sentence,
+            prominent && styles.prominentSentence,
+            !desktop && styles.mobileSentence,
           ]}
         >
-          <CheckIcon
-            size={14}
-            color={canCheck ? colors.onPrimary : colors.disabledText}
+          {(gap.before.match(wordPattern) ?? []).map((part, index) => (
+            <Text
+              key={`before-${index}`}
+              style={[
+                styles.text,
+                prominent && styles.prominentText,
+                prominent && !desktop && styles.mobileProminentText,
+              ]}
+            >
+              {part}
+            </Text>
+          ))}
+          <TextInput
+            accessibilityLabel={
+              prominent
+                ? 'Từ còn thiếu câu đang phát'
+                : `Từ còn thiếu câu ${position + 1}`
+            }
+            accessibilityHint={
+              desktop
+                ? 'Nghe rồi điền từ còn thiếu. Nhấn Enter để kiểm tra.'
+                : 'Nghe rồi điền từ còn thiếu, sau đó bấm Kiểm tra.'
+            }
+            placeholder="…"
+            value={answer.value}
+            onChangeText={value => onChange({ value, correct: null })}
+            onSubmitEditing={check}
+            onFocus={onFocus}
+            onBlur={onBlur}
+            submitBehavior="submit"
+            returnKeyType="done"
+            autoCorrect={false}
+            autoCapitalize="none"
+            style={[
+              styles.input,
+              prominent && styles.prominentInput,
+              prominent && !desktop && styles.mobileProminentText,
+              {
+                width: Math.min(
+                  180,
+                  Math.max(
+                    prominent ? 110 : 80,
+                    Array.from(answer.value).length * (prominent ? 24 : 16) +
+                      24,
+                  ),
+                ),
+              },
+              answer.correct !== null &&
+                (answer.correct ? styles.correct : styles.incorrect),
+            ]}
           />
-          <Text style={[styles.checkLabel, !canCheck && styles.disabledLabel]}>
-            Kiểm tra
-          </Text>
-        </Pressable>
-      ) : null}
+          {(gap.after.match(wordPattern) ?? []).map((part, index) => (
+            <Text
+              key={`after-${index}`}
+              style={[
+                styles.text,
+                prominent && styles.prominentText,
+                prominent && !desktop && styles.mobileProminentText,
+              ]}
+            >
+              {part}
+            </Text>
+          ))}
+        </View>
+      </View>
       {answer.correct !== null ? (
         <Text
           accessibilityLiveRegion="polite"
@@ -186,32 +192,29 @@ export function ShadowingDictation({
 }
 const styles = StyleSheet.create({
   checkButton: {
-    alignSelf: 'flex-end',
+    flexShrink: 0,
+    width: 34,
+    height: 34,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
     gap: 5,
     minHeight: 34,
-    paddingHorizontal: 10,
-    paddingVertical: 7,
     borderRadius: radius.pill,
     backgroundColor: colors.primary,
   },
-  checkLabel: {
-    ...typography.label,
-    fontSize: 11,
-    lineHeight: 16,
-    color: colors.onPrimary,
-  },
   checkDisabled: { backgroundColor: colors.disabled },
   checkPressed: { backgroundColor: colors.primaryPressed },
-  disabledLabel: { color: colors.disabledText },
+  answerRow: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm },
+  mobileSentence: { justifyContent: 'flex-start' },
   prominentSentence: { justifyContent: 'center', columnGap: spacing.xs },
   prominentText: { fontSize: 22, lineHeight: 34 },
   mobileProminentText: { fontSize: 18, lineHeight: 28 },
   prominentInput: { fontSize: 22, minHeight: 44 },
   content: { gap: spacing.xs },
   sentence: {
+    flex: 1,
+    minWidth: 0,
     flexDirection: 'row',
     flexWrap: 'wrap',
     alignItems: 'center',

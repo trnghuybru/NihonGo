@@ -2,7 +2,7 @@ import { LearningLevelContext } from '../src/hooks/useLearningLevel';
 import type { LearningLevel } from '../src/services/learningService';
 import React from 'react';
 import Renderer, { act } from 'react-test-renderer';
-import { AppState, FlatList, Text, TextInput } from 'react-native';
+import { AppState, FlatList, ScrollView, Text, TextInput } from 'react-native';
 import { AuthButton } from '../src/components/AuthForm';
 import { ShadowingScreen } from '../src/screens/ShadowingScreen';
 import { VideoExamplePlayer } from '../src/components/VideoExamplePlayer';
@@ -160,6 +160,16 @@ async function render(level: LearningLevel = 'N3') {
 }
 async function press(label: string) {
   if (
+    label.startsWith('Luyện đoạn ') &&
+    !tree.root.findAll(
+      node =>
+        node.props.accessibilityLabel === label &&
+        typeof node.props.onPress === 'function',
+    ).length
+  )
+    await press('Phụ đề');
+
+  if (
     label.startsWith('Tới câu hỏi ') &&
     !tree.root.findAll(
       node =>
@@ -255,13 +265,6 @@ test('dictation fills random words inline in the transcript and retains answers 
   ).toBeGreaterThan(0);
   expect(visibleText()).not.toContain('日本語');
   expect(visibleText()).toContain('です');
-  const input = (number = 1) =>
-    tree.root
-      .findAllByType(TextInput)
-      .find(
-        node => node.props.accessibilityLabel === `Từ còn thiếu câu ${number}`,
-      )!;
-  expect(input(2)).toBeDefined();
   const player = () => tree.root.findByType(VideoExamplePlayer);
   const currentInput = () =>
     tree.root
@@ -285,7 +288,7 @@ test('dictation fills random words inline in the transcript and retains answers 
   );
   expect(player().props.example.id).toBe('one');
   await act(async () => currentInput().props.onChangeText('にほんご'));
-  expect(input().props.value).toBe('にほんご');
+  expect(currentInput().props.value).toBe('にほんご');
   await act(async () =>
     tree.root
       .findAll(
@@ -309,9 +312,7 @@ test('dictation fills random words inline in the transcript and retains answers 
       .props.onPress(),
   );
   expect(player().props.example.id).toBe('two');
-  expect(input().props.value).toBe(' 日本語 ');
   expect(currentInput().props.value).toBe('');
-  expect(input(2).props.value).toBe('');
   // The central sentence stays selected after its final playback timestamp.
   await act(async () => player().props.onCaptionChange(-1));
   expect(currentInput().props.value).toBe('');
@@ -330,7 +331,8 @@ test('dictation fills random words inline in the transcript and retains answers 
   await press('Shadowing');
   expect(visibleText()).toContain(example.text);
   await press('Nghe chép chính tả');
-  expect(input().props.value).toBe(' 日本語 ');
+  await act(async () => player().props.onPrevious());
+  expect(currentInput().props.value).toBe(' 日本語 ');
   expect(visibleText()).toContain('✓ Đúng');
   expect(shadowingService.questions).not.toHaveBeenCalled();
   expect(shadowingService.requestTranslation).not.toHaveBeenCalled();
@@ -378,7 +380,7 @@ test('opens a ready lesson, controls caption visibility speed and looping, and r
   expect(
     tree.root.findAllByProps({ testID: 'shadowing-current-caption' }),
   ).toHaveLength(0);
-  expect(visibleText()).toContain('日本語です。');
+  expect(visibleText()).not.toContain('日本語です。');
   await press('Hiện phụ đề');
   expect(
     tree.root.findByProps({ testID: 'shadowing-current-caption' }),
@@ -541,24 +543,24 @@ test('manual scrolling suspends following while subtitle highlighting continues'
     .spyOn(FlatList.prototype, 'scrollToIndex')
     .mockImplementation(() => {});
   const player = tree.root.findByType(VideoExamplePlayer);
-  await act(async () => player.props.onCaptionChange(0));
+  await act(async () => player.props.onCaptionChange(1));
   expect(scroll).toHaveBeenCalledWith({
-    index: 0,
-    animated: true,
-    viewPosition: 0.25,
+    index: 1,
+    animated: false,
+    viewPosition: 0.5,
   });
   scroll.mockClear();
   await act(async () =>
     tree.root.findByType(FlatList).props.onScrollBeginDrag(),
   );
-  await act(async () => player.props.onCaptionChange(1));
+  await act(async () => player.props.onCaptionChange(0));
   expect(scroll).not.toHaveBeenCalled();
-  expect(player.props.position).toBe(2);
-  await press('Theo dõi phụ đề');
+  expect(player.props.position).toBe(1);
+  await press('Về câu đang phát');
   expect(scroll).toHaveBeenCalledWith({
-    index: 1,
-    animated: true,
-    viewPosition: 0.25,
+    index: 0,
+    animated: false,
+    viewPosition: 0.5,
   });
   scroll.mockRestore();
 });
@@ -616,12 +618,16 @@ test('reference layout shows a synced current sentence, collapses the subtitle p
   const currentCaption = tree.root.findByProps({
     testID: 'shadowing-current-caption',
   });
-  expect(currentCaption.findByType(Text).props.children).toBe('次の文。');
+  expect(
+    currentCaption
+      .findByProps({ testID: 'shadowing-lyrics-current' })
+      .findByType(Text).props.children,
+  ).toBe('次の文。');
   expect(tree.root.findByType(VideoExamplePlayer).props.videoOnly).toBe(true);
   await press('Phụ đề');
-  expect(tree.root.findByType(FlatList).props.data).toEqual([]);
+  expect(tree.root.findAllByType(FlatList)).toHaveLength(2);
   expect(webview.props.source).toBe(source);
-  await press('Phụ đề');
+  await press('Đóng phụ đề');
   expect(tree.root.findAllByType(FlatList)).toHaveLength(1);
   expect(webview.props.source).toBe(source);
   const translation = tree.root.findAll(
@@ -675,7 +681,7 @@ test('shows complete sentences instead of short display cues and replays their f
     }),
   );
   const currentCaption = tree.root
-    .findByProps({ testID: 'shadowing-current-caption' })
+    .findByProps({ testID: 'shadowing-lyrics-current' })
     .findByType(Text);
   expect(currentCaption.props.children).toBe('日本語です。');
   expect(tree.root.findByType(VideoExamplePlayer).props.timeline).toEqual(
@@ -699,7 +705,7 @@ test('shows complete sentences instead of short display cues and replays their f
   );
   expect(
     tree.root
-      .findByProps({ testID: 'shadowing-current-caption' })
+      .findByProps({ testID: 'shadowing-lyrics-current' })
       .findByType(Text).props.children,
   ).toBe('次の文。');
   expect(tree.root.findByType(VideoExamplePlayer).props.position).toBe(2);
@@ -910,7 +916,7 @@ test('unknown words show the dictionary empty state without replaying the senten
         node.props.accessibilityLabel === 'Tra từ 日本語' &&
         typeof node.props.onPress === 'function',
     );
-  expect(wordActions()).toHaveLength(0); // The transcript list remains plain text.
+  expect(wordActions()).toHaveLength(1); // Only the current lyric sentence supports word lookup.
   const webview = tree.root.findByProps({ testID: 'youtube-example-player' });
   await act(async () =>
     webview.props.onMessage({
@@ -969,7 +975,7 @@ test('translation is loaded on demand, maps practice sentences and keeps the pla
   const translated = tree.root
     .findAllByType(Text)
     .filter(node => node.props.children === 'Đây là tiếng Nhật.');
-  expect(translated).toHaveLength(2); // Main caption and practice list.
+  expect(translated).toHaveLength(1); // Only the main translation remains visible.
   expect(tree.root.findByType(VideoExamplePlayer)).toBe(player);
   expect(
     tree.root.findByProps({ testID: 'youtube-example-player' }).props.source,
@@ -1402,10 +1408,12 @@ test('mobile quiz is collapsed until opened and stays inline below a pinned play
     tree.root.findAllByProps({ testID: 'shadowing-inline-quiz' }),
   ).toHaveLength(0);
   const scroller = tree.root
-    .findAllByType(FlatList)
+    .findAllByType(ScrollView)
     .find(node => node.props.testID === 'shadowing-mobile-content-scroll');
   expect(scroller).toBeTruthy();
-  expect(scroller?.props.ListHeaderComponent).toBeTruthy();
+  expect(
+    tree.root.findAllByProps({ testID: 'shadowing-mobile-lyrics' }).length,
+  ).toBeGreaterThan(0);
   await act(async () =>
     tree.root.findByType(VideoExamplePlayer).props.onPlaybackTime(10),
   );

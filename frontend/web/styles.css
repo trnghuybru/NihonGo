@@ -83,3 +83,5 @@ textarea:focus-visible {
   scrollbar-width: thin;
   padding: 2px;
 }
+
+[data-testid='shadowing-lyrics-scroll'] { overscroll-behavior-y: contain; }
