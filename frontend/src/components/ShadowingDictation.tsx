@@ -209,7 +209,7 @@ const styles = StyleSheet.create({
   mobileSentence: { justifyContent: 'flex-start' },
   prominentSentence: { justifyContent: 'center', columnGap: spacing.xs },
   prominentText: { fontSize: 22, lineHeight: 34 },
-  mobileProminentText: { fontSize: 18, lineHeight: 28 },
+  mobileProminentText: { fontSize: 16, lineHeight: 25 },
   prominentInput: { fontSize: 22, minHeight: 44 },
   content: { gap: spacing.xs },
   sentence: {

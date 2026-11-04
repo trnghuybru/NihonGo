@@ -939,10 +939,18 @@ export function ShadowingScreen({
           ))}
         </View>
         {dictation && lesson.segments[current] ? (
-          <View style={styles.currentCaptionArea}>
+          <View
+            style={[
+              styles.currentCaptionArea,
+              !desktop && styles.mobileCaptionArea,
+            ]}
+          >
             <View
               testID="shadowing-current-caption"
-              style={styles.currentCaptionBox}
+              style={[
+                styles.currentCaptionBox,
+                !desktop && styles.mobileCaptionBox,
+              ]}
             >
               {dictationGaps[lesson.segments[current].id] ? (
                 <ShadowingDictation
@@ -976,10 +984,18 @@ export function ShadowingScreen({
             </View>
           </View>
         ) : !dictation && !hideCaption ? (
-          <View style={styles.currentCaptionArea}>
+          <View
+            style={[
+              styles.currentCaptionArea,
+              !desktop && styles.mobileCaptionArea,
+            ]}
+          >
             <View
               testID="shadowing-current-caption"
-              style={styles.currentCaptionBox}
+              style={[
+                styles.currentCaptionBox,
+                !desktop && styles.mobileCaptionBox,
+              ]}
             >
               <Pressable
                 accessibilityRole="button"
@@ -987,7 +1003,10 @@ export function ShadowingScreen({
                 accessibilityState={{ selected: !hideCaption }}
                 onPress={() => setHideCaption(value => !value)}
                 hitSlop={6}
-                style={styles.captionVisibility}
+                style={[
+                  styles.captionVisibility,
+                  !desktop && styles.floatingCaptionVisibility,
+                ]}
               >
                 {hideCaption ? (
                   <EyeOffIcon size={18} color={colors.muted} />
@@ -2008,6 +2027,20 @@ const styles = StyleSheet.create({
     paddingVertical: spacing.md,
     width: '100%',
     minHeight: layout.touchTarget,
+  },
+  mobileCaptionArea: { paddingHorizontal: 0, paddingVertical: spacing.sm },
+  mobileCaptionBox: {
+    paddingHorizontal: spacing.sm,
+    paddingRight: spacing.sm,
+    paddingVertical: spacing.sm,
+  },
+  floatingCaptionVisibility: {
+    top: spacing.xs,
+    right: spacing.sm,
+    borderRadius: radius.pill,
+    backgroundColor: colors.surface,
+    borderWidth: 1,
+    borderColor: colors.divider,
   },
   captionVisibility: {
     position: 'absolute',
