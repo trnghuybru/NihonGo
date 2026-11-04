@@ -159,6 +159,24 @@ async function render(level: LearningLevel = 'N3') {
   });
 }
 async function press(label: string) {
+  if (
+    label.startsWith('Tới câu hỏi ') &&
+    !tree.root.findAll(
+      node =>
+        node.props.accessibilityLabel === label &&
+        typeof node.props.onPress === 'function',
+    ).length
+  )
+    await press('Câu hỏi AI');
+
+  if (
+    label.startsWith('Trình độ ') &&
+    !tree.root.findAll(node =>
+      node.props.accessibilityLabel?.startsWith?.('Trình độ câu hỏi'),
+    ).length
+  ) {
+    await press('Câu hỏi AI');
+  }
   if (/^Trình độ N[1-5]$/.test(label)) {
     await act(async () => {
       const selector = tree.root
@@ -256,16 +274,40 @@ test('dictation fills random words inline in the transcript and retains answers 
   expect(visibleText()).toContain('(Lưu ý nhập đúng dạng Kanji)');
   await act(async () => currentInput().props.onFocus());
   expect(player().props.pausedForLookup).toBe(false);
-  await act(async () => currentInput().props.onSubmitEditing());
+  await act(async () =>
+    tree.root
+      .findAll(
+        node =>
+          node.props.accessibilityLabel === 'Kiểm tra câu đang phát' &&
+          typeof node.props.onPress === 'function',
+      )[0]
+      .props.onPress(),
+  );
   expect(player().props.example.id).toBe('one');
   await act(async () => currentInput().props.onChangeText('にほんご'));
   expect(input().props.value).toBe('にほんご');
-  await act(async () => currentInput().props.onSubmitEditing());
+  await act(async () =>
+    tree.root
+      .findAll(
+        node =>
+          node.props.accessibilityLabel === 'Kiểm tra câu đang phát' &&
+          typeof node.props.onPress === 'function',
+      )[0]
+      .props.onPress(),
+  );
   expect(visibleText()).toContain('✗ Chưa đúng · Đáp án: 日本語');
   expect(player().props.example.id).toBe('one');
   await act(async () => currentInput().props.onChangeText(' 日本語 '));
   expect(visibleText()).not.toContain('✗ Chưa đúng');
-  await act(async () => currentInput().props.onSubmitEditing());
+  await act(async () =>
+    tree.root
+      .findAll(
+        node =>
+          node.props.accessibilityLabel === 'Kiểm tra câu đang phát' &&
+          typeof node.props.onPress === 'function',
+      )[0]
+      .props.onPress(),
+  );
   expect(player().props.example.id).toBe('two');
   expect(input().props.value).toBe(' 日本語 ');
   expect(currentInput().props.value).toBe('');
@@ -274,7 +316,15 @@ test('dictation fills random words inline in the transcript and retains answers 
   await act(async () => player().props.onCaptionChange(-1));
   expect(currentInput().props.value).toBe('');
   await act(async () => currentInput().props.onChangeText('次'));
-  await act(async () => currentInput().props.onSubmitEditing());
+  await act(async () =>
+    tree.root
+      .findAll(
+        node =>
+          node.props.accessibilityLabel === 'Kiểm tra câu đang phát' &&
+          typeof node.props.onPress === 'function',
+      )[0]
+      .props.onPress(),
+  );
   expect(player().props.example.id).toBe('two');
   expect(visibleText()).toContain('Đã hoàn thành câu cuối!');
   await press('Shadowing');
@@ -569,7 +619,7 @@ test('reference layout shows a synced current sentence, collapses the subtitle p
   expect(currentCaption.findByType(Text).props.children).toBe('次の文。');
   expect(tree.root.findByType(VideoExamplePlayer).props.videoOnly).toBe(true);
   await press('Phụ đề');
-  expect(tree.root.findAllByType(FlatList)).toHaveLength(0);
+  expect(tree.root.findByType(FlatList).props.data).toEqual([]);
   expect(webview.props.source).toBe(source);
   await press('Phụ đề');
   expect(tree.root.findAllByType(FlatList)).toHaveLength(1);
@@ -1090,6 +1140,7 @@ test('quiz level selection loads saved sets, creates only missing levels and kee
     'N5',
   );
   expect(shadowingService.questions).not.toHaveBeenCalled();
+  await press('Làm lại bộ câu hỏi');
   await act(async () =>
     tree.root.findByType(VideoExamplePlayer).props.onQuizQuestion('q1'),
   );
@@ -1271,7 +1322,7 @@ test('uses the selected JLPT level and retains answers for review until leaving 
   expect(visibleText()).not.toContain('話している人は何語を使っていますか。');
   expect(
     tree.root.findByType(VideoExamplePlayer).props.quizCheckpoints,
-  ).toEqual([{ id: 'q2', seconds: 6 }]);
+  ).toEqual([]);
   await press('Danh sách video');
   await press('Luyện shadowing');
   expect(visibleText()).not.toContain('話している人は何語を使っていますか。');
@@ -1339,3 +1390,35 @@ test.each([
     );
   },
 );
+
+test('mobile quiz is collapsed until opened and stays inline below a pinned player', async () => {
+  const saved = await shadowingService.questions('job-1');
+  jest.mocked(shadowingService.questions).mockClear();
+  jest.mocked(shadowingService.savedQuestions).mockResolvedValue(saved);
+  await render();
+  await press('Luyện shadowing');
+  const source = tree.root.findByType(VideoExamplePlayer).props.example;
+  expect(
+    tree.root.findAllByProps({ testID: 'shadowing-inline-quiz' }),
+  ).toHaveLength(0);
+  const scroller = tree.root
+    .findAllByType(FlatList)
+    .find(node => node.props.testID === 'shadowing-mobile-content-scroll');
+  expect(scroller).toBeTruthy();
+  expect(scroller?.props.ListHeaderComponent).toBeTruthy();
+  await act(async () =>
+    tree.root.findByType(VideoExamplePlayer).props.onPlaybackTime(10),
+  );
+  expect(visibleText()).not.toContain(saved.questions[0].question);
+  await press('Câu hỏi AI');
+  expect(
+    tree.root.findAllByProps({ testID: 'shadowing-inline-quiz' }).length,
+  ).toBeGreaterThan(0);
+  await press('Làm lại bộ câu hỏi');
+  await act(async () =>
+    tree.root.findByType(VideoExamplePlayer).props.onPlaybackTime(3),
+  );
+  expect(visibleText()).toContain(saved.questions[0].question);
+  expect(tree.root.findByType(VideoExamplePlayer).props.example).toBe(source);
+  expect(shadowingService.questions).not.toHaveBeenCalled();
+});

@@ -20,13 +20,144 @@ import { ShadowingQuizLevelSelector } from './ShadowingQuizLevelSelector';
 export function ShadowingQuiz({
   quiz,
   onStarted,
+  inline = false,
+  onClose,
 }: {
   quiz: ReturnType<typeof useShadowingQuiz>;
   onStarted: () => void;
+  inline?: boolean;
+  onClose?: () => void;
 }) {
   const insets = useSafeAreaInsets();
   const question = quiz.activeQuestion;
   const answered = quiz.choice !== null;
+  const setupContent = (
+    <>
+      <View style={styles.header}>
+        <Text style={styles.heading}>Câu hỏi AI</Text>
+        <ShadowingQuizLevelSelector
+          level={quiz.level}
+          loading={quiz.loading}
+          onChange={quiz.setLevel}
+        />
+        <Pressable
+          accessibilityRole="button"
+          accessibilityLabel="Đóng câu hỏi AI"
+          onPress={inline && onClose ? onClose : quiz.closeSetup}
+          style={styles.close}
+        >
+          <XIcon size={22} color={colors.body} />
+        </Pressable>
+      </View>
+      {quiz.questions.length ? (
+        <View style={styles.feedback}>
+          {quiz.questions.map((item, index) => {
+            const completed = quiz.completed.includes(item.id);
+            if (completed)
+              return (
+                <AnsweredQuestionCard
+                  key={item.id}
+                  question={item}
+                  index={index}
+                  answer={quiz.answers[item.id]}
+                  onReview={() => quiz.reviewQuestion(item.id)}
+                />
+              );
+            return null;
+          })}
+        </View>
+      ) : null}
+      <Text style={styles.body}>
+        1. <Text style={styles.noteLead}>Mỗi trình độ gồm 5 câu hỏi:</Text>{' '}
+        Video sẽ tự động dừng tại các phân đoạn để bạn trả lời và xem giải
+        thích.
+      </Text>
+      <Text style={styles.body}>
+        2. <Text style={styles.noteLead}>Lưu ý:</Text> Đáp án chỉ lưu trong lượt
+        học hiện tại. Để gặp đủ 5 câu hỏi, hãy xem video từ đầu.
+      </Text>
+      <AuthNotice error message={quiz.error} />
+      <AuthButton
+        size={inline ? 'compact' : 'default'}
+        label={quiz.questions.length ? 'Làm lại bộ câu hỏi' : 'Tạo câu hỏi'}
+        busy={quiz.loading}
+        onPress={() => quiz.generate(onStarted)}
+      />
+    </>
+  );
+  const questionContent = question ? (
+    <>
+      <View style={styles.header}>
+        <Text style={styles.heading}>
+          Câu {quiz.questions.findIndex(item => item.id === question.id) + 1}/
+          {quiz.questions.length}
+        </Text>
+        <Pressable
+          accessibilityRole="button"
+          accessibilityLabel="Đóng câu hỏi"
+          onPress={inline && onClose ? onClose : quiz.stop}
+          style={styles.close}
+        >
+          <XIcon size={22} color={colors.body} />
+        </Pressable>
+      </View>
+      <Text style={styles.body}>{question.question}</Text>
+      {question.choices.map((option, index) => (
+        <Pressable
+          key={index}
+          accessibilityRole="radio"
+          accessibilityLabel={`Đáp án ${String.fromCharCode(
+            65 + index,
+          )}: ${option}`}
+          accessibilityState={{
+            checked: quiz.choice === index,
+            disabled: answered,
+          }}
+          disabled={answered}
+          onPress={() => quiz.answer(index)}
+          style={[
+            styles.option,
+            quiz.choice === index && styles.selected,
+            answered && index === question.correct_index && styles.correct,
+          ]}
+        >
+          <Text style={styles.body}>
+            {String.fromCharCode(65 + index)}. {option}
+          </Text>
+        </Pressable>
+      ))}
+      {answered ? (
+        <View accessibilityLiveRegion="polite" style={styles.feedback}>
+          <Text style={styles.label}>
+            {quiz.choice === question.correct_index
+              ? 'Chính xác!'
+              : 'Chưa đúng.'}
+          </Text>
+          <Text style={styles.body}>
+            Đáp án đúng: {String.fromCharCode(65 + question.correct_index)}.{' '}
+            {question.choices[question.correct_index]}
+          </Text>
+          <Text style={styles.body}>{question.explanation}</Text>
+          <Text style={styles.label}>
+            Đã đúng {quiz.score}/{quiz.completed.length} câu
+          </Text>
+        </View>
+      ) : null}
+      <AuthButton
+        size={inline ? 'compact' : 'default'}
+        label="Xem tiếp"
+        disabled={!answered}
+        onPress={quiz.continueVideo}
+      />
+    </>
+  ) : null;
+  if (inline)
+    return quiz.setupOpen || question ? (
+      <View testID="shadowing-inline-quiz" style={styles.inlineCard}>
+        {question ? questionContent : setupContent}
+      </View>
+    ) : null;
+
   return (
     <>
       <Modal
@@ -44,59 +175,7 @@ export function ShadowingQuiz({
             ]}
             accessibilityViewIsModal
           >
-            <View style={styles.header}>
-              <Text style={styles.heading}>Câu hỏi AI</Text>
-              <ShadowingQuizLevelSelector
-                level={quiz.level}
-                loading={quiz.loading}
-                onChange={quiz.setLevel}
-              />
-              <Pressable
-                accessibilityRole="button"
-                accessibilityLabel="Đóng câu hỏi AI"
-                onPress={quiz.closeSetup}
-                style={styles.close}
-              >
-                <XIcon size={22} color={colors.body} />
-              </Pressable>
-            </View>
-            {quiz.questions.length ? (
-              <View style={styles.feedback}>
-                {quiz.questions.map((item, index) => {
-                  const completed = quiz.completed.includes(item.id);
-                  if (completed)
-                    return (
-                      <AnsweredQuestionCard
-                        key={item.id}
-                        question={item}
-                        index={index}
-                        answer={quiz.answers[item.id]}
-                        onReview={() => quiz.reviewQuestion(item.id)}
-                      />
-                    );
-                  return null;
-                })}
-              </View>
-            ) : null}
-            <Text style={styles.body}>
-              1.{' '}
-              <Text style={styles.noteLead}>Mỗi trình độ gồm 5 câu hỏi:</Text>{' '}
-              Video sẽ tự động dừng tại các phân đoạn để bạn trả lời và xem giải
-              thích.
-            </Text>
-            <Text style={styles.body}>
-              2. <Text style={styles.noteLead}>Lưu ý:</Text> Đáp án chỉ lưu
-              trong lượt học hiện tại. Để gặp đủ 5 câu hỏi, hãy xem video từ
-              đầu.
-            </Text>
-            <AuthNotice error message={quiz.error} />
-            <AuthButton
-              label={
-                quiz.questions.length ? 'Làm lại bộ câu hỏi' : 'Tạo câu hỏi'
-              }
-              busy={quiz.loading}
-              onPress={() => quiz.generate(onStarted)}
-            />
+            {setupContent}
           </ScrollView>
         </View>
       </Modal>
@@ -116,72 +195,7 @@ export function ShadowingQuiz({
               ]}
               accessibilityViewIsModal
             >
-              <View style={styles.header}>
-                <Text style={styles.heading}>
-                  Câu{' '}
-                  {quiz.questions.findIndex(item => item.id === question.id) +
-                    1}
-                  /{quiz.questions.length}
-                </Text>
-                <Pressable
-                  accessibilityRole="button"
-                  accessibilityLabel="Đóng câu hỏi"
-                  onPress={quiz.stop}
-                  style={styles.close}
-                >
-                  <XIcon size={22} color={colors.body} />
-                </Pressable>
-              </View>
-              <Text style={styles.body}>{question.question}</Text>
-              {question.choices.map((option, index) => (
-                <Pressable
-                  key={index}
-                  accessibilityRole="radio"
-                  accessibilityLabel={`Đáp án ${String.fromCharCode(
-                    65 + index,
-                  )}: ${option}`}
-                  accessibilityState={{
-                    checked: quiz.choice === index,
-                    disabled: answered,
-                  }}
-                  disabled={answered}
-                  onPress={() => quiz.answer(index)}
-                  style={[
-                    styles.option,
-                    quiz.choice === index && styles.selected,
-                    answered &&
-                      index === question.correct_index &&
-                      styles.correct,
-                  ]}
-                >
-                  <Text style={styles.body}>
-                    {String.fromCharCode(65 + index)}. {option}
-                  </Text>
-                </Pressable>
-              ))}
-              {answered ? (
-                <View accessibilityLiveRegion="polite" style={styles.feedback}>
-                  <Text style={styles.label}>
-                    {quiz.choice === question.correct_index
-                      ? 'Chính xác!'
-                      : 'Chưa đúng.'}
-                  </Text>
-                  <Text style={styles.body}>
-                    Đáp án đúng:{' '}
-                    {String.fromCharCode(65 + question.correct_index)}.{' '}
-                    {question.choices[question.correct_index]}
-                  </Text>
-                  <Text style={styles.body}>{question.explanation}</Text>
-                  <Text style={styles.label}>
-                    Đã đúng {quiz.score}/{quiz.completed.length} câu
-                  </Text>
-                </View>
-              ) : null}
-              <AuthButton
-                label="Xem tiếp"
-                disabled={!answered}
-                onPress={quiz.continueVideo}
-              />
+              {questionContent}
             </ScrollView>
           ) : null}
         </View>
@@ -253,6 +267,14 @@ function AnsweredQuestionCard({
 }
 
 const styles = StyleSheet.create({
+  inlineCard: {
+    padding: spacing.lg,
+    gap: spacing.md,
+    borderRadius: radius.small,
+    borderWidth: 1,
+    borderColor: colors.divider,
+    backgroundColor: colors.surface,
+  },
   noteLead: {
     ...typography.button,
     fontSize: typography.body.fontSize,

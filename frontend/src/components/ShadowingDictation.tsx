@@ -1,4 +1,6 @@
-import { StyleSheet, Text, TextInput, View } from 'react-native';
+import { Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
+import { CheckIcon } from './icons';
+import { useWebLayout } from '../hooks/useWebLayout';
 import type { ShadowingToken } from '../services/shadowingService';
 import { colors, radius, spacing, typography } from '../theme/theme';
 
@@ -64,6 +66,9 @@ export function ShadowingDictation({
   onBlur?: () => void;
   prominent?: boolean;
 }) {
+  const { desktop } = useWebLayout();
+  const canCheck =
+    Boolean(normalizeDictation(answer.value)) && answer.correct !== true;
   const check = () => {
     if (normalizeDictation(answer.value))
       onChange({
@@ -78,7 +83,11 @@ export function ShadowingDictation({
         {(gap.before.match(wordPattern) ?? []).map((part, index) => (
           <Text
             key={`before-${index}`}
-            style={[styles.text, prominent && styles.prominentText]}
+            style={[
+              styles.text,
+              prominent && styles.prominentText,
+              prominent && !desktop && styles.mobileProminentText,
+            ]}
           >
             {part}
           </Text>
@@ -89,7 +98,11 @@ export function ShadowingDictation({
               ? 'Từ còn thiếu câu đang phát'
               : `Từ còn thiếu câu ${position + 1}`
           }
-          accessibilityHint="Nghe rồi điền từ còn thiếu. Nhấn Enter để kiểm tra."
+          accessibilityHint={
+            desktop
+              ? 'Nghe rồi điền từ còn thiếu. Nhấn Enter để kiểm tra.'
+              : 'Nghe rồi điền từ còn thiếu, sau đó bấm Kiểm tra.'
+          }
           placeholder="…"
           value={answer.value}
           onChangeText={value => onChange({ value, correct: null })}
@@ -103,6 +116,7 @@ export function ShadowingDictation({
           style={[
             styles.input,
             prominent && styles.prominentInput,
+            prominent && !desktop && styles.mobileProminentText,
             {
               width: Math.min(
                 180,
@@ -119,12 +133,43 @@ export function ShadowingDictation({
         {(gap.after.match(wordPattern) ?? []).map((part, index) => (
           <Text
             key={`after-${index}`}
-            style={[styles.text, prominent && styles.prominentText]}
+            style={[
+              styles.text,
+              prominent && styles.prominentText,
+              prominent && !desktop && styles.mobileProminentText,
+            ]}
           >
             {part}
           </Text>
         ))}
       </View>
+      {!desktop ? (
+        <Pressable
+          accessibilityRole="button"
+          accessibilityLabel={
+            prominent
+              ? 'Kiểm tra câu đang phát'
+              : `Kiểm tra câu ${position + 1}`
+          }
+          accessibilityState={{ disabled: !canCheck }}
+          disabled={!canCheck}
+          hitSlop={6}
+          onPress={check}
+          style={({ pressed }) => [
+            styles.checkButton,
+            !canCheck && styles.checkDisabled,
+            pressed && canCheck && styles.checkPressed,
+          ]}
+        >
+          <CheckIcon
+            size={14}
+            color={canCheck ? colors.onPrimary : colors.disabledText}
+          />
+          <Text style={[styles.checkLabel, !canCheck && styles.disabledLabel]}>
+            Kiểm tra
+          </Text>
+        </Pressable>
+      ) : null}
       {answer.correct !== null ? (
         <Text
           accessibilityLiveRegion="polite"
@@ -140,8 +185,30 @@ export function ShadowingDictation({
   );
 }
 const styles = StyleSheet.create({
+  checkButton: {
+    alignSelf: 'flex-end',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 5,
+    minHeight: 34,
+    paddingHorizontal: 10,
+    paddingVertical: 7,
+    borderRadius: radius.pill,
+    backgroundColor: colors.primary,
+  },
+  checkLabel: {
+    ...typography.label,
+    fontSize: 11,
+    lineHeight: 16,
+    color: colors.onPrimary,
+  },
+  checkDisabled: { backgroundColor: colors.disabled },
+  checkPressed: { backgroundColor: colors.primaryPressed },
+  disabledLabel: { color: colors.disabledText },
   prominentSentence: { justifyContent: 'center', columnGap: spacing.xs },
   prominentText: { fontSize: 22, lineHeight: 34 },
+  mobileProminentText: { fontSize: 18, lineHeight: 28 },
   prominentInput: { fontSize: 22, minHeight: 44 },
   content: { gap: spacing.xs },
   sentence: {

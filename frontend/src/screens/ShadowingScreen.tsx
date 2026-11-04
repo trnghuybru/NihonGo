@@ -2,6 +2,8 @@ import { decodeRouteParam } from '../navigation/webNavigation';
 import { useWebNavigation } from '../navigation/webNavigation';
 import { ScreenBackHeader } from '../components/ScreenBackHeader';
 import { memo, useCallback, useMemo, useEffect, useRef, useState } from 'react';
+import type { ComponentRef } from 'react';
+import { ReadingScrollRegion } from '../components/ReadingScrollRegion';
 import {
   AppState,
   BackHandler,
@@ -261,6 +263,8 @@ function CatalogSeparator() {
   return <View style={styles.catalogSeparator} />;
 }
 
+const emptyQuizCheckpoints: { id: string; seconds: number }[] = [];
+
 export function ShadowingScreen({
   onExit,
   bottomOverlayHeight = 0,
@@ -305,6 +309,18 @@ export function ShadowingScreen({
   const [selectedWordKey, setSelectedWordKey] = useState<string | null>(null);
   const [lesson, setLesson] = useState<ShadowingLesson | null>(null);
   const quiz = useShadowingQuiz(lesson?.job.id);
+  const [mobileQuizOpen, setMobileQuizOpen] = useState(false);
+  const lessonScroll = useRef<ComponentRef<typeof ScrollView>>(null);
+  const scrolledQuiz = useRef<string | null>(null);
+  useEffect(() => {
+    setMobileQuizOpen(false);
+    scrolledQuiz.current = null;
+  }, [lesson?.job.id]);
+  const closeMobileQuiz = () => {
+    setMobileQuizOpen(false);
+    scrolledQuiz.current = null;
+    quiz.stop();
+  };
   const [dictation, setDictation] = useState(false);
   const [dictationAnswers, setDictationAnswers] = useState<
     Record<string, DictationAnswer>
@@ -792,9 +808,9 @@ export function ShadowingScreen({
     const availableWidth =
       captionWidth || Math.min(windowWidth, layout.maxContentWidth) - 80;
     const fontSize = Math.max(
-      16,
+      desktop ? 16 : 14,
       Math.min(
-        22,
+        desktop ? 22 : 18,
         Math.floor(
           (availableWidth * 2 - tokenSpacing) /
             Math.max(1, units * fontScale) /
@@ -811,6 +827,558 @@ export function ShadowingScreen({
       setSelectedWordKey(null);
       selectSegment(0);
     };
+    const playerHeader = (
+      <View style={styles.fixedHeader}>
+        {' '}
+        <ScreenBackHeader
+          title="Shadowing"
+          backLabel="Danh sách video"
+          onBack={leaveLesson}
+        />
+        <View style={styles.videoStage} testID="tour-listening-player">
+          {lesson.segments[index] ? (
+            <VideoExamplePlayer
+              pausedForLookup={Boolean(lookupWord)}
+              pausedForQuiz={quiz.paused}
+              quizCheckpoints={
+                desktop || mobileQuizOpen
+                  ? quiz.checkpoints
+                  : emptyQuizCheckpoints
+              }
+              onQuizQuestion={id => {
+                if (desktop || mobileQuizOpen) quiz.showQuestion(id);
+              }}
+              onPlaybackTime={seconds => {
+                if (desktop || mobileQuizOpen) quiz.onPlaybackTime(seconds);
+              }}
+              resumeRequest={quiz.resumeRequest}
+              quizJumpRequest={quiz.jumpRequest}
+              videoOnly
+              key={lesson.job.id}
+              example={lesson.segments[index]}
+              query=""
+              position={liveIndex >= 0 ? liveIndex + 1 : 0}
+              count={lesson.segments.length}
+              seekRequest={seekRequest}
+              timeline={captions}
+              continuous={dictation ? false : continuous}
+              onCaptionChange={captionChanged}
+              onReplay={() => selectSegment(current)}
+              hideCaption={dictation || hideCaption}
+              playbackRate={rate}
+              loop={dictation ? false : loop}
+              onPrevious={
+                current > 0 ? () => selectSegment(current - 1) : undefined
+              }
+              onNext={
+                current < lesson.segments.length - 1
+                  ? () => selectSegment(current + 1)
+                  : undefined
+              }
+            />
+          ) : null}
+        </View>
+      </View>
+    );
+    const lessonControls = (
+      <View style={styles.fixedHeader}>
+        {' '}
+        <AuthNotice error message={error} />
+        <View
+          accessibilityRole="radiogroup"
+          accessibilityLabel="Chế độ luyện nghe"
+          style={styles.modeSwitch}
+        >
+          {[false, true].map(value => (
+            <Pressable
+              key={String(value)}
+              accessibilityRole="radio"
+              accessibilityLabel={value ? 'Nghe chép chính tả' : 'Shadowing'}
+              accessibilityState={{ checked: dictation === value }}
+              aria-checked={dictation === value}
+              style={({ pressed }) => [
+                styles.modeButton,
+                dictation === value && styles.modeTabSelected,
+                pressed &&
+                  (dictation === value
+                    ? styles.modeSelectedPressed
+                    : styles.modePressed),
+              ]}
+              onPress={() => {
+                if (value === dictation) return;
+                if (value) {
+                  quiz.stop();
+                  setSelectedWordKey(null);
+                  setSettingsOpen(false);
+                  setShowTranslation(false);
+                  setPanelOpen(true);
+                  selectSegment(current);
+                }
+                setDictation(value);
+              }}
+            >
+              <HomeFeatureIcon
+                name={value ? 'writing' : 'headphones'}
+                size={15}
+                color={
+                  dictation === value ? colors.onPrimary : colors.primaryText
+                }
+              />
+              <Text
+                style={[
+                  styles.modeTabLabel,
+                  dictation === value && styles.modeTabLabelSelected,
+                ]}
+              >
+                {value ? 'Nghe chép chính tả' : 'Shadowing'}
+              </Text>
+            </Pressable>
+          ))}
+        </View>
+        {dictation && lesson.segments[current] ? (
+          <View style={styles.currentCaptionArea}>
+            <View
+              testID="shadowing-current-caption"
+              style={styles.currentCaptionBox}
+            >
+              {dictationGaps[lesson.segments[current].id] ? (
+                <ShadowingDictation
+                  key={lesson.segments[current].id}
+                  prominent
+                  gap={dictationGaps[lesson.segments[current].id]!}
+                  position={current}
+                  answer={
+                    dictationAnswers[lesson.segments[current].id] ?? {
+                      value: '',
+                      correct: null,
+                    }
+                  }
+                  onChange={answer =>
+                    updateDictationAnswer(lesson.segments[current].id, answer)
+                  }
+                  onFocus={stopFollowing}
+                />
+              ) : (
+                <Text style={styles.currentCaptionText}>
+                  {lesson.segments[current].text}
+                </Text>
+              )}
+              {current === lesson.segments.length - 1 &&
+              dictationAnswers[lesson.segments[current].id]?.correct ===
+                true ? (
+                <Text accessibilityLiveRegion="polite" style={styles.label}>
+                  Đã hoàn thành câu cuối!
+                </Text>
+              ) : null}
+            </View>
+          </View>
+        ) : !dictation && !hideCaption ? (
+          <View style={styles.currentCaptionArea}>
+            <View
+              testID="shadowing-current-caption"
+              style={styles.currentCaptionBox}
+            >
+              <Pressable
+                accessibilityRole="button"
+                accessibilityLabel={hideCaption ? 'Hiện phụ đề' : 'Ẩn phụ đề'}
+                accessibilityState={{ selected: !hideCaption }}
+                onPress={() => setHideCaption(value => !value)}
+                hitSlop={6}
+                style={styles.captionVisibility}
+              >
+                {hideCaption ? (
+                  <EyeOffIcon size={18} color={colors.muted} />
+                ) : (
+                  <EyeIcon size={18} color={colors.primaryText} />
+                )}
+              </Pressable>
+              <ReadingScrollRegion
+                scrollable={desktop && captionOverflows}
+                key={captionIndex}
+                style={[
+                  desktop && styles.currentCaptionScroll,
+                  desktop && {
+                    maxHeight: Math.ceil(
+                      (lineHeight + 18) * fontScale * 2 + spacing.xs,
+                    ),
+                  },
+                ]}
+                onLayout={event =>
+                  setCaptionWidth(Math.round(event.nativeEvent.layout.width))
+                }
+              >
+                <ShadowingTokenText
+                  text={captionText}
+                  tokens={currentTokens}
+                  words={lesson.words}
+                  selectedKey={selectedWordKey}
+                  onWordPress={showWord}
+                  style={[styles.currentCaptionText, { fontSize, lineHeight }]}
+                />
+              </ReadingScrollRegion>
+              {desktop &&
+              !hideCaption &&
+              captionIndex >= 0 &&
+              captionOverflows ? (
+                <Text style={styles.captionOverflowHint}>
+                  Cuộn để đọc đầy đủ
+                </Text>
+              ) : null}
+            </View>
+          </View>
+        ) : null}
+        {!dictation && showTranslation && !hideCaption ? (
+          <View style={styles.translationArea}>
+            {!hideCaption &&
+            liveIndex >= 0 &&
+            translation.data?.items[lesson.segments[liveIndex]?.id] ? (
+              <ReadingScrollRegion
+                scrollable={desktop}
+                style={desktop ? styles.translationScroll : undefined}
+              >
+                <Text style={styles.currentTranslation}>
+                  {translation.data.items[lesson.segments[liveIndex].id]}
+                </Text>
+              </ReadingScrollRegion>
+            ) : null}
+            {translation.loading ||
+            translation.data?.status === 'queued' ||
+            translation.data?.status === 'translating' ? (
+              <Text style={styles.caption}>
+                Đang chuẩn bị bản dịch
+                {translation.data
+                  ? ` · ${translation.data.completed}/${translation.data.total} câu`
+                  : '…'}
+              </Text>
+            ) : null}
+            {translation.error || translation.data?.status === 'failed' ? (
+              <View style={styles.translationRetry}>
+                <Text style={styles.caption}>
+                  {translation.error ||
+                    translation.data?.error_message ||
+                    'Chưa dịch được phụ đề.'}
+                </Text>
+                <Pressable
+                  accessibilityRole="button"
+                  accessibilityLabel="Thử lại bản dịch"
+                  onPress={translation.retry}
+                  hitSlop={8}
+                >
+                  <Text style={styles.label}>Thử lại</Text>
+                </Pressable>
+              </View>
+            ) : null}
+          </View>
+        ) : null}
+        <ScrollView
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          style={styles.toolbarFrame}
+          contentContainerStyle={styles.toolbar}
+        >
+          {!dictation ? (
+            <>
+              <Pressable
+                accessibilityRole="button"
+                accessibilityLabel="Phụ đề"
+                accessibilityState={{ expanded: panelOpen }}
+                onPress={() => {
+                  setPanelOpen(value => !value);
+                }}
+                hitSlop={6}
+                style={[styles.toolIcon, panelOpen && styles.selected]}
+              >
+                <MessageSquareIcon color={colors.primaryText} size={18} />
+              </Pressable>
+              <Pressable
+                accessibilityRole="button"
+                accessibilityLabel="Bản dịch"
+                accessibilityState={{ selected: showTranslation }}
+                onPress={() => setShowTranslation(value => !value)}
+                hitSlop={6}
+                style={[styles.toolIcon, showTranslation && styles.selected]}
+              >
+                <TranslateIcon
+                  size={18}
+                  color={showTranslation ? colors.primaryText : colors.body}
+                />
+              </Pressable>
+              <View style={styles.toolbarSpace} />
+              <Pressable
+                accessibilityRole="button"
+                accessibilityLabel="Câu hỏi AI"
+                accessibilityHint={`Mở câu hỏi AI. Đã trả lời ${quiz.completed.length}/${quiz.questions.length} câu.`}
+                accessibilityState={{
+                  selected: desktop
+                    ? quiz.questions.length > 0
+                    : mobileQuizOpen,
+                  expanded: !desktop ? mobileQuizOpen : undefined,
+                }}
+                onPress={() => {
+                  setMobileQuizOpen(true);
+                  quiz.setSetupOpen(true);
+                }}
+                style={[
+                  styles.toolIcon,
+                  quiz.questions.length > 0 && styles.selected,
+                ]}
+              >
+                <AIIcon
+                  size={20}
+                  color={
+                    quiz.questions.length ? colors.primaryText : colors.body
+                  }
+                />
+              </Pressable>
+              {hideCaption ? (
+                <Pressable
+                  accessibilityRole="button"
+                  accessibilityLabel="Hiện phụ đề"
+                  accessibilityState={{ selected: false }}
+                  onPress={() => setHideCaption(false)}
+                  hitSlop={6}
+                  style={styles.toolIcon}
+                >
+                  <EyeOffIcon size={18} color={colors.muted} />
+                </Pressable>
+              ) : null}
+              <Pressable
+                accessibilityRole="switch"
+                accessibilityLabel="Theo dõi phụ đề"
+                accessibilityHint="Quay về câu hiện tại và tự cuộn theo video."
+                accessibilityState={{ checked: follow }}
+                onPress={() => {
+                  if (follow) stopFollowing();
+                  else setFollow(true);
+                }}
+                hitSlop={8}
+                style={[styles.toolIcon, follow && styles.selected]}
+              >
+                <Text style={styles.label}>↓</Text>
+              </Pressable>
+            </>
+          ) : null}
+          <View
+            style={styles.playbackControls}
+            testID="tour-listening-playback"
+          >
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel="Ví dụ trước"
+              disabled={current <= 0}
+              accessibilityState={{ disabled: current <= 0 }}
+              hitSlop={10}
+              onPress={() => selectSegment(current - 1)}
+              style={styles.stepButton}
+            >
+              <ChevronLeftIcon
+                size={18}
+                color={current > 0 ? colors.body : colors.disabledText}
+              />
+            </Pressable>
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel="Nghe lại"
+              accessibilityHint="Phát lại câu hiện tại. Phím tắt: Space khi không nhập văn bản."
+              hitSlop={10}
+              onPress={() => selectSegment(current)}
+              style={styles.replayControl}
+            >
+              <ReplayIcon size={16} color={colors.primaryText} />
+            </Pressable>
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel="Ví dụ tiếp"
+              disabled={current >= lesson.segments.length - 1}
+              accessibilityState={{
+                disabled: current >= lesson.segments.length - 1,
+              }}
+              hitSlop={10}
+              onPress={() => selectSegment(current + 1)}
+              style={styles.stepButton}
+            >
+              <ChevronRightIcon
+                size={18}
+                color={
+                  current < lesson.segments.length - 1
+                    ? colors.body
+                    : colors.disabledText
+                }
+              />
+            </Pressable>
+          </View>
+          {!dictation ? (
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel="Tuỳ chọn shadowing"
+              onPress={() => setSettingsOpen(true)}
+              hitSlop={8}
+              style={styles.toolIcon}
+            >
+              <Text style={styles.moreIcon}>•••</Text>
+            </Pressable>
+          ) : null}
+        </ScrollView>
+        {!desktop && !dictation && mobileQuizOpen ? (
+          <View
+            onLayout={event => {
+              const target = quiz.activeQuestion?.id ?? 'setup';
+              if (
+                scrolledQuiz.current === target ||
+                event.nativeEvent.layout.height <= 0
+              )
+                return;
+              scrolledQuiz.current = target;
+              listRef.current?.scrollToOffset({
+                offset: Math.max(0, event.nativeEvent.layout.y - spacing.sm),
+                animated: true,
+              });
+            }}
+          >
+            <ShadowingQuiz
+              quiz={quiz}
+              onStarted={startQuiz}
+              inline
+              onClose={closeMobileQuiz}
+            />
+          </View>
+        ) : null}
+        {!dictation &&
+        (desktop || (mobileQuizOpen && quiz.questions.length > 0)) ? (
+          <ShadowingQuizTimeline
+            questions={quiz.questions}
+            answers={quiz.answers}
+            durationSeconds={
+              lesson.video.duration_seconds ??
+              Math.max(
+                0,
+                ...lesson.segments.map(segment => segment.end_seconds),
+              )
+            }
+            disabled={quiz.loading}
+            headerControl={
+              desktop || !quiz.setupOpen ? (
+                <ShadowingQuizLevelSelector
+                  level={quiz.level}
+                  loading={quiz.loading}
+                  onChange={next => {
+                    quiz.setLevel(next);
+                    if (!desktop) quiz.setSetupOpen(true);
+                  }}
+                />
+              ) : undefined
+            }
+            emptyContent={
+              <View style={styles.quizLevelPanel}>
+                <AuthNotice error message={quiz.error} />
+                <AuthButton
+                  label="Tạo câu hỏi"
+                  busy={quiz.loading}
+                  onPress={() => quiz.generate(startQuiz)}
+                />
+              </View>
+            }
+            onSelect={(id, answered) => {
+              if (answered) quiz.reviewQuestion(id);
+              else {
+                setContinuous(true);
+                setLoop(false);
+                setSelectedWordKey(null);
+                quiz.jumpToQuestion(id);
+              }
+            }}
+          />
+        ) : null}
+        {dictation ? (
+          <View style={styles.dictationHint}>
+            <Text style={styles.caption}>
+              Điền từ vào chỗ trống → Bấm{' '}
+              <Text style={styles.dictationHintStrong}>
+                {desktop ? 'Enter' : 'Kiểm tra'}
+              </Text>{' '}
+              để kiểm tra.{' '}
+              <Text style={styles.dictationHintEmphasis}>
+                (Lưu ý nhập đúng dạng Kanji)
+              </Text>
+              .
+            </Text>
+            {Platform.OS === 'web' && desktop ? (
+              <Text style={styles.caption}>
+                <Text style={styles.dictationHintStrong}>Phím tắt:</Text>{' '}
+                <Text style={styles.shortcutKey}>Space</Text> Nghe lại •{' '}
+                <Text style={styles.shortcutKey}>←</Text> /{' '}
+                <Text style={styles.shortcutKey}>→</Text> Chuyển câu.
+              </Text>
+            ) : null}
+          </View>
+        ) : null}
+      </View>
+    );
+    const transcriptList = (
+      <FlatList
+        ref={listRef}
+        testID={
+          desktop
+            ? 'shadowing-transcript-scroll'
+            : 'shadowing-mobile-content-scroll'
+        }
+        style={styles.subtitleList}
+        showsVerticalScrollIndicator={false}
+        showsHorizontalScrollIndicator={false}
+        data={panelOpen ? lesson.segments : []}
+        keyExtractor={item => item.id}
+        extraData={{
+          liveIndex,
+          showTranslation,
+          dictation,
+          dictationAnswers,
+        }}
+        contentContainerStyle={[
+          styles.lessonContent,
+          { paddingBottom: bottomOverlayHeight + spacing.xl },
+        ]}
+        scrollIndicatorInsets={{ bottom: bottomOverlayHeight }}
+        onScrollBeginDrag={stopFollowing}
+        onScrollToIndexFailed={info => {
+          listRef.current?.scrollToOffset({
+            offset: info.averageItemLength * info.index,
+            animated: false,
+          });
+          if (scrollRetry.current) return;
+          scrollRetry.current = setTimeout(() => {
+            if (scrollTarget.current === info.index)
+              listRef.current?.scrollToIndex({
+                index: info.index,
+                animated: true,
+                viewPosition: 0.25,
+              });
+            scrollRetry.current = null;
+          }, 150);
+        }}
+        keyboardShouldPersistTaps="handled"
+        ListHeaderComponent={
+          <View>
+            {!desktop ? lessonControls : null}
+            {panelOpen && lesson.caption_kind === 'asr' ? (
+              <Text style={styles.captionNotice}>
+                Phụ đề tự động có thể có lỗi. Hãy đối chiếu với lời nói trong
+                video.
+              </Text>
+            ) : null}
+          </View>
+        }
+        ListFooterComponent={
+          !desktop && !panelOpen ? (
+            <View style={styles.closedPanel}>
+              <Text style={styles.caption}>
+                Bấm “Phụ đề” để mở danh sách câu.
+              </Text>
+            </View>
+          ) : undefined
+        }
+        renderItem={renderSegment}
+      />
+    );
     return (
       <View
         testID="tour-listening-lesson"
@@ -824,497 +1392,30 @@ export function ShadowingScreen({
           desktop && styles.desktopLesson,
         ]}
       >
-        <ScrollView
-          style={[styles.videoColumn, desktop && styles.desktopVideoPanel]}
-          contentContainerStyle={styles.fixedHeader}
-          keyboardShouldPersistTaps="handled"
-          nestedScrollEnabled
-        >
-          <ScreenBackHeader
-            title="Shadowing"
-            backLabel="Danh sách video"
-            onBack={leaveLesson}
-          />
-          <View style={styles.videoStage} testID="tour-listening-player">
-            {lesson.segments[index] ? (
-              <VideoExamplePlayer
-                pausedForLookup={Boolean(lookupWord)}
-                pausedForQuiz={quiz.paused}
-                quizCheckpoints={quiz.checkpoints}
-                onQuizQuestion={quiz.showQuestion}
-                onPlaybackTime={quiz.onPlaybackTime}
-                resumeRequest={quiz.resumeRequest}
-                quizJumpRequest={quiz.jumpRequest}
-                videoOnly
-                key={lesson.job.id}
-                example={lesson.segments[index]}
-                query=""
-                position={liveIndex >= 0 ? liveIndex + 1 : 0}
-                count={lesson.segments.length}
-                seekRequest={seekRequest}
-                timeline={captions}
-                continuous={dictation ? false : continuous}
-                onCaptionChange={captionChanged}
-                onReplay={() => selectSegment(current)}
-                hideCaption={dictation || hideCaption}
-                playbackRate={rate}
-                loop={dictation ? false : loop}
-                onPrevious={
-                  current > 0 ? () => selectSegment(current - 1) : undefined
-                }
-                onNext={
-                  current < lesson.segments.length - 1
-                    ? () => selectSegment(current + 1)
-                    : undefined
-                }
-              />
-            ) : null}
-          </View>
-          <AuthNotice error message={error} />
-          <View
-            accessibilityRole="radiogroup"
-            accessibilityLabel="Chế độ luyện nghe"
-            style={styles.modeSwitch}
-          >
-            {[false, true].map(value => (
-              <Pressable
-                key={String(value)}
-                accessibilityRole="radio"
-                accessibilityLabel={value ? 'Nghe chép chính tả' : 'Shadowing'}
-                accessibilityState={{ checked: dictation === value }}
-                aria-checked={dictation === value}
-                style={({ pressed }) => [
-                  styles.modeButton,
-                  dictation === value && styles.modeTabSelected,
-                  pressed &&
-                    (dictation === value
-                      ? styles.modeSelectedPressed
-                      : styles.modePressed),
-                ]}
-                onPress={() => {
-                  if (value === dictation) return;
-                  if (value) {
-                    quiz.stop();
-                    setSelectedWordKey(null);
-                    setSettingsOpen(false);
-                    setShowTranslation(false);
-                    setPanelOpen(true);
-                    selectSegment(current);
-                  }
-                  setDictation(value);
-                }}
-              >
-                <HomeFeatureIcon
-                  name={value ? 'writing' : 'headphones'}
-                  size={15}
-                  color={
-                    dictation === value ? colors.onPrimary : colors.primaryText
-                  }
-                />
-                <Text
-                  style={[
-                    styles.modeTabLabel,
-                    dictation === value && styles.modeTabLabelSelected,
-                  ]}
-                >
-                  {value ? 'Nghe chép chính tả' : 'Shadowing'}
-                </Text>
-              </Pressable>
-            ))}
-          </View>
-          {dictation && lesson.segments[current] ? (
-            <View style={styles.currentCaptionArea}>
-              <View
-                testID="shadowing-current-caption"
-                style={styles.currentCaptionBox}
-              >
-                {dictationGaps[lesson.segments[current].id] ? (
-                  <ShadowingDictation
-                    key={lesson.segments[current].id}
-                    prominent
-                    gap={dictationGaps[lesson.segments[current].id]!}
-                    position={current}
-                    answer={
-                      dictationAnswers[lesson.segments[current].id] ?? {
-                        value: '',
-                        correct: null,
-                      }
-                    }
-                    onChange={answer =>
-                      updateDictationAnswer(lesson.segments[current].id, answer)
-                    }
-                    onFocus={stopFollowing}
-                  />
-                ) : (
-                  <Text style={styles.currentCaptionText}>
-                    {lesson.segments[current].text}
-                  </Text>
-                )}
-                {current === lesson.segments.length - 1 &&
-                dictationAnswers[lesson.segments[current].id]?.correct ===
-                  true ? (
-                  <Text accessibilityLiveRegion="polite" style={styles.label}>
-                    Đã hoàn thành câu cuối!
-                  </Text>
-                ) : null}
-              </View>
-            </View>
-          ) : !dictation && !hideCaption ? (
-            <View style={styles.currentCaptionArea}>
-              <View
-                testID="shadowing-current-caption"
-                style={styles.currentCaptionBox}
-              >
-                <Pressable
-                  accessibilityRole="button"
-                  accessibilityLabel={hideCaption ? 'Hiện phụ đề' : 'Ẩn phụ đề'}
-                  accessibilityState={{ selected: !hideCaption }}
-                  onPress={() => setHideCaption(value => !value)}
-                  hitSlop={6}
-                  style={styles.captionVisibility}
-                >
-                  {hideCaption ? (
-                    <EyeOffIcon size={18} color={colors.muted} />
-                  ) : (
-                    <EyeIcon size={18} color={colors.primaryText} />
-                  )}
-                </Pressable>
-                <ScrollView
-                  key={captionIndex}
-                  style={[
-                    styles.currentCaptionScroll,
-                    {
-                      maxHeight: Math.ceil(
-                        (lineHeight + 18) * fontScale * 2 + spacing.xs,
-                      ),
-                    },
-                  ]}
-                  onLayout={event =>
-                    setCaptionWidth(Math.round(event.nativeEvent.layout.width))
-                  }
-                  nestedScrollEnabled
-                >
-                  <ShadowingTokenText
-                    text={captionText}
-                    tokens={currentTokens}
-                    words={lesson.words}
-                    selectedKey={selectedWordKey}
-                    onWordPress={showWord}
-                    style={[
-                      styles.currentCaptionText,
-                      { fontSize, lineHeight },
-                    ]}
-                  />
-                </ScrollView>
-                {!hideCaption && captionIndex >= 0 && captionOverflows ? (
-                  <Text style={styles.captionOverflowHint}>
-                    Cuộn để đọc đầy đủ
-                  </Text>
-                ) : null}
-              </View>
-            </View>
-          ) : null}
-          {!dictation && showTranslation && !hideCaption ? (
-            <View style={styles.translationArea}>
-              {!hideCaption &&
-              liveIndex >= 0 &&
-              translation.data?.items[lesson.segments[liveIndex]?.id] ? (
-                <ScrollView
-                  style={styles.translationScroll}
-                  nestedScrollEnabled
-                >
-                  <Text style={styles.currentTranslation}>
-                    {translation.data.items[lesson.segments[liveIndex].id]}
-                  </Text>
-                </ScrollView>
-              ) : null}
-              {translation.loading ||
-              translation.data?.status === 'queued' ||
-              translation.data?.status === 'translating' ? (
-                <Text style={styles.caption}>
-                  Đang chuẩn bị bản dịch
-                  {translation.data
-                    ? ` · ${translation.data.completed}/${translation.data.total} câu`
-                    : '…'}
-                </Text>
-              ) : null}
-              {translation.error || translation.data?.status === 'failed' ? (
-                <View style={styles.translationRetry}>
-                  <Text style={styles.caption}>
-                    {translation.error ||
-                      translation.data?.error_message ||
-                      'Chưa dịch được phụ đề.'}
-                  </Text>
-                  <Pressable
-                    accessibilityRole="button"
-                    accessibilityLabel="Thử lại bản dịch"
-                    onPress={translation.retry}
-                    hitSlop={8}
-                  >
-                    <Text style={styles.label}>Thử lại</Text>
-                  </Pressable>
-                </View>
-              ) : null}
-            </View>
-          ) : null}
+        {desktop ? (
           <ScrollView
-            horizontal
-            showsHorizontalScrollIndicator={false}
-            style={styles.toolbarFrame}
-            contentContainerStyle={styles.toolbar}
+            ref={lessonScroll}
+            testID="shadowing-lesson-scroll"
+            style={[styles.videoColumn, styles.desktopVideoPanel]}
+            contentContainerStyle={styles.fixedHeader}
+            keyboardShouldPersistTaps="handled"
+            showsVerticalScrollIndicator={false}
           >
-            {!dictation ? (
-              <>
-                <Pressable
-                  accessibilityRole="button"
-                  accessibilityLabel="Phụ đề"
-                  accessibilityState={{ expanded: panelOpen }}
-                  onPress={() => {
-                    setPanelOpen(value => !value);
-                  }}
-                  hitSlop={6}
-                  style={[styles.toolIcon, panelOpen && styles.selected]}
-                >
-                  <MessageSquareIcon color={colors.primaryText} size={18} />
-                </Pressable>
-                <Pressable
-                  accessibilityRole="button"
-                  accessibilityLabel="Bản dịch"
-                  accessibilityState={{ selected: showTranslation }}
-                  onPress={() => setShowTranslation(value => !value)}
-                  hitSlop={6}
-                  style={[styles.toolIcon, showTranslation && styles.selected]}
-                >
-                  <TranslateIcon
-                    size={18}
-                    color={showTranslation ? colors.primaryText : colors.body}
-                  />
-                </Pressable>
-                <View style={styles.toolbarSpace} />
-                <Pressable
-                  accessibilityRole="button"
-                  accessibilityLabel="Câu hỏi AI"
-                  accessibilityHint={`Mở câu hỏi AI. Đã trả lời ${quiz.completed.length}/${quiz.questions.length} câu.`}
-                  accessibilityState={{ selected: quiz.questions.length > 0 }}
-                  onPress={() => quiz.setSetupOpen(true)}
-                  style={[
-                    styles.toolIcon,
-                    quiz.questions.length > 0 && styles.selected,
-                  ]}
-                >
-                  <AIIcon
-                    size={20}
-                    color={
-                      quiz.questions.length ? colors.primaryText : colors.body
-                    }
-                  />
-                </Pressable>
-                {hideCaption ? (
-                  <Pressable
-                    accessibilityRole="button"
-                    accessibilityLabel="Hiện phụ đề"
-                    accessibilityState={{ selected: false }}
-                    onPress={() => setHideCaption(false)}
-                    hitSlop={6}
-                    style={styles.toolIcon}
-                  >
-                    <EyeOffIcon size={18} color={colors.muted} />
-                  </Pressable>
-                ) : null}
-                <Pressable
-                  accessibilityRole="switch"
-                  accessibilityLabel="Theo dõi phụ đề"
-                  accessibilityHint="Quay về câu hiện tại và tự cuộn theo video."
-                  accessibilityState={{ checked: follow }}
-                  onPress={() => {
-                    if (follow) stopFollowing();
-                    else setFollow(true);
-                  }}
-                  hitSlop={8}
-                  style={[styles.toolIcon, follow && styles.selected]}
-                >
-                  <Text style={styles.label}>↓</Text>
-                </Pressable>
-              </>
-            ) : null}
-            <View
-              style={styles.playbackControls}
-              testID="tour-listening-playback"
-            >
-              <Pressable
-                accessibilityRole="button"
-                accessibilityLabel="Ví dụ trước"
-                disabled={current <= 0}
-                accessibilityState={{ disabled: current <= 0 }}
-                hitSlop={10}
-                onPress={() => selectSegment(current - 1)}
-                style={styles.stepButton}
-              >
-                <ChevronLeftIcon
-                  size={18}
-                  color={current > 0 ? colors.body : colors.disabledText}
-                />
-              </Pressable>
-              <Pressable
-                accessibilityRole="button"
-                accessibilityLabel="Nghe lại"
-                accessibilityHint="Phát lại câu hiện tại. Phím tắt: Space khi không nhập văn bản."
-                hitSlop={10}
-                onPress={() => selectSegment(current)}
-                style={styles.replayControl}
-              >
-                <ReplayIcon size={16} color={colors.primaryText} />
-              </Pressable>
-              <Pressable
-                accessibilityRole="button"
-                accessibilityLabel="Ví dụ tiếp"
-                disabled={current >= lesson.segments.length - 1}
-                accessibilityState={{
-                  disabled: current >= lesson.segments.length - 1,
-                }}
-                hitSlop={10}
-                onPress={() => selectSegment(current + 1)}
-                style={styles.stepButton}
-              >
-                <ChevronRightIcon
-                  size={18}
-                  color={
-                    current < lesson.segments.length - 1
-                      ? colors.body
-                      : colors.disabledText
-                  }
-                />
-              </Pressable>
-            </View>
-            {!dictation ? (
-              <Pressable
-                accessibilityRole="button"
-                accessibilityLabel="Tuỳ chọn shadowing"
-                onPress={() => setSettingsOpen(true)}
-                hitSlop={8}
-                style={styles.toolIcon}
-              >
-                <Text style={styles.moreIcon}>•••</Text>
-              </Pressable>
-            ) : null}
+            {playerHeader}
+            {lessonControls}
           </ScrollView>
-          {!dictation ? (
-            <ShadowingQuizTimeline
-              questions={quiz.questions}
-              answers={quiz.answers}
-              durationSeconds={
-                lesson.video.duration_seconds ??
-                Math.max(
-                  0,
-                  ...lesson.segments.map(segment => segment.end_seconds),
-                )
-              }
-              disabled={quiz.loading}
-              headerControl={
-                <ShadowingQuizLevelSelector
-                  level={quiz.level}
-                  loading={quiz.loading}
-                  onChange={quiz.setLevel}
-                />
-              }
-              emptyContent={
-                <View style={styles.quizLevelPanel}>
-                  <AuthNotice error message={quiz.error} />
-                  <AuthButton
-                    label="Tạo câu hỏi"
-                    busy={quiz.loading}
-                    onPress={() => quiz.generate(startQuiz)}
-                  />
-                </View>
-              }
-              onSelect={(id, answered) => {
-                if (answered) quiz.reviewQuestion(id);
-                else {
-                  setContinuous(true);
-                  setLoop(false);
-                  setSelectedWordKey(null);
-                  quiz.jumpToQuestion(id);
-                }
-              }}
-            />
-          ) : null}
-          {dictation ? (
-            <View style={styles.dictationHint}>
-              <Text style={styles.caption}>
-                Điền từ vào chỗ trống → Bấm{' '}
-                <Text style={styles.dictationHintStrong}>Enter</Text> để kiểm
-                tra.{' '}
-                <Text style={styles.dictationHintEmphasis}>
-                  (Lưu ý nhập đúng dạng Kanji)
-                </Text>
-                .
-              </Text>
-              {Platform.OS === 'web' ? (
-                <Text style={styles.caption}>
-                  <Text style={styles.dictationHintStrong}>Phím tắt:</Text>{' '}
-                  <Text style={styles.shortcutKey}>Space</Text> Nghe lại •{' '}
-                  <Text style={styles.shortcutKey}>←</Text> /{' '}
-                  <Text style={styles.shortcutKey}>→</Text> Chuyển câu.
-                </Text>
-              ) : null}
-            </View>
-          ) : null}
-        </ScrollView>
-        {panelOpen ? (
+        ) : (
+          playerHeader
+        )}
+        {panelOpen || !desktop ? (
           <View
             style={[
               styles.subtitlePanel,
               desktop && styles.desktopSubtitlePanel,
+              !desktop && styles.mobileContentPanel,
             ]}
           >
-            <FlatList
-              ref={listRef}
-              style={styles.subtitleList}
-              showsVerticalScrollIndicator={false}
-              showsHorizontalScrollIndicator={false}
-              data={lesson.segments}
-              keyExtractor={item => item.id}
-              extraData={{
-                liveIndex,
-                showTranslation,
-                dictation,
-                dictationAnswers,
-              }}
-              contentContainerStyle={[
-                styles.lessonContent,
-                { paddingBottom: bottomOverlayHeight + spacing.xl },
-              ]}
-              scrollIndicatorInsets={{ bottom: bottomOverlayHeight }}
-              onScrollBeginDrag={stopFollowing}
-              onScrollToIndexFailed={info => {
-                listRef.current?.scrollToOffset({
-                  offset: info.averageItemLength * info.index,
-                  animated: false,
-                });
-                if (scrollRetry.current) return;
-                scrollRetry.current = setTimeout(() => {
-                  if (scrollTarget.current === info.index)
-                    listRef.current?.scrollToIndex({
-                      index: info.index,
-                      animated: true,
-                      viewPosition: 0.25,
-                    });
-                  scrollRetry.current = null;
-                }, 150);
-              }}
-              keyboardShouldPersistTaps="handled"
-              ListHeaderComponent={
-                <View>
-                  {lesson.caption_kind === 'asr' ? (
-                    <Text style={styles.captionNotice}>
-                      Phụ đề tự động có thể có lỗi. Hãy đối chiếu với lời nói
-                      trong video.
-                    </Text>
-                  ) : null}
-                </View>
-              }
-              renderItem={renderSegment}
-            />
+            {transcriptList}
           </View>
         ) : (
           <View style={styles.closedPanel}>
@@ -1328,7 +1429,7 @@ export function ShadowingScreen({
           anchorY={lookupAnchor}
           onClose={closeWord}
         />
-        <ShadowingQuiz quiz={quiz} onStarted={startQuiz} />
+        {desktop ? <ShadowingQuiz quiz={quiz} onStarted={startQuiz} /> : null}
         <Modal
           visible={settingsOpen}
           transparent
@@ -1944,6 +2045,12 @@ const styles = StyleSheet.create({
     gap: spacing.sm,
   },
   subtitleList: { flex: 1 },
+  mobileContentPanel: {
+    flex: 1,
+    minHeight: 0,
+    borderWidth: 0,
+    backgroundColor: 'transparent',
+  },
   followButton: {
     flexShrink: 1,
     minHeight: layout.touchTarget,
