@@ -20,6 +20,7 @@ import {
 } from '../services/readingService';
 import type { ShadowingToken } from '../services/shadowingService';
 import { colors, radius, spacing, typography } from '../theme/theme';
+import { ReadingScrollRegion } from './ReadingScrollRegion';
 import { ReadingAnalysisPanel } from './ReadingAnalysisPanel';
 import { ReadingQuiz } from './ReadingQuiz';
 import { ReadingTips } from './ReadingTips';
@@ -167,14 +168,13 @@ export function ReadingWorkspace({
       style={[styles.layout, split && styles.split]}
       testID="reading-layout"
     >
-      <ScrollView
+      <ReadingScrollRegion
         testID="reading-passage-pane"
         accessibilityLabel="Nội dung bài đọc"
-        ref={left}
-        scrollEnabled={split}
+        scrollRef={left}
+        scrollable={split}
         style={[styles.stacked, split && styles.left]}
         contentContainerStyle={split && styles.pane}
-        keyboardShouldPersistTaps="handled"
       >
         <View style={styles.article}>
           <View style={styles.meta}>
@@ -266,15 +266,14 @@ export function ReadingWorkspace({
             <Text style={styles.cta}>Nguồn bài đọc ↗</Text>
           </Pressable>
         </View>
-      </ScrollView>
-      <ScrollView
+      </ReadingScrollRegion>
+      <ReadingScrollRegion
         testID="reading-question-pane"
         accessibilityLabel="Câu hỏi và phân tích"
-        ref={right}
-        scrollEnabled={split}
+        scrollRef={right}
+        scrollable={split}
         style={[styles.stacked, split && styles.right]}
         contentContainerStyle={[styles.studyPane, split && styles.pane]}
-        keyboardShouldPersistTaps="handled"
         onLayout={event => {
           rightOffset.current = event.nativeEvent.layout.y;
         }}
@@ -355,7 +354,7 @@ export function ReadingWorkspace({
             onSelectSentence={selectSentence}
           />
         </View>
-      </ScrollView>
+      </ReadingScrollRegion>
     </View>
   );
 }

@@ -1,3 +1,4 @@
+import { useDefaultJlptLevel } from './useLearningLevel';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import {
   shadowingService,
@@ -6,11 +7,12 @@ import {
 } from '../services/shadowingService';
 
 export function useShadowingQuiz(jobId: string | undefined) {
+  const defaultLevel = useDefaultJlptLevel();
   const [setupOpen, setSetupOpen] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [questions, setQuestions] = useState<ShadowingQuestion[]>([]);
-  const [level, setLevelState] = useState<ShadowingQuizLevel>('N3');
+  const [level, setLevelState] = useState<ShadowingQuizLevel>(defaultLevel);
   const [availableLevels, setAvailableLevels] = useState<ShadowingQuizLevel[]>(
     [],
   );
@@ -21,7 +23,7 @@ export function useShadowingQuiz(jobId: string | undefined) {
     >
   >({});
   const [generatedLevel, setGeneratedLevel] =
-    useState<ShadowingQuizLevel>('N3');
+    useState<ShadowingQuizLevel>(defaultLevel);
   const [enabled, setEnabled] = useState(true);
   const [answers, setAnswers] = useState<Record<string, number>>({});
   const completed = useMemo(() => Object.keys(answers), [answers]);

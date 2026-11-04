@@ -596,3 +596,45 @@ Logo và icon launcher dùng đầu Momo cùng chữ NihonGO đen–cam theo m�
 - Trang chủ trên iPhone/iPad có thẻ hướng dẫn nhỏ **NihonGO trên màn hình chính**, nền trắng/viền divider, padding 16, bo small, icon 40 px; chỉ dẫn Chia sẻ → Thêm vào màn hình chính → Thêm. Nút X vùng bấm 48 px và có nhãn trợ năng.
 - Thẻ chỉ hiện khi dùng trình duyệt iOS/iPadOS; ẩn khi chạy standalone hoặc đã đóng hướng dẫn trên thiết bị. Nhận diện iPad dùng chế độ desktop qua MacIntel + cảm ứng. Không mở popup hoặc yêu cầu cài đặt mỗi lần đăng nhập.
 - Giai đoạn này không đăng ký service worker, không thêm cache/offline hoặc push notification. Thay đổi bản web tiếp tục đi qua CI/CD hiện có.
+
+### Trình độ mặc định cho bộ lọc
+
+- Các màn Từ vựng/Bài học, Đọc, Nói, Flashcard, Game và trình độ câu hỏi Shadowing lấy mặc định từ trình độ trong hồ sơ học tập. App và web dùng chung ngữ cảnh hồ sơ, không gọi lại API preferences cho từng bộ lọc.
+- Hồ sơ **Mới bắt đầu** dùng N5 cho các bộ lọc chỉ có N5–N1; danh sách tình huống Nói giữ lựa chọn **Mới bắt đầu** vì API có dữ liệu riêng cho mức này.
+- Mặc định chỉ áp dụng khi chưa có lựa chọn. Bộ lọc có sẵn trong URL được ưu tiên; `level=` ở màn Đọc vẫn là lựa chọn Tất cả, không tự đổi về trình độ hồ sơ. Người dùng đổi mức hoặc xoá bộ lọc bình thường; không sửa trình độ trong hồ sơ.
+- Trang Viết hiện nhóm đề theo cấp độ và Tra cứu không có bộ lọc JLPT, nên không thêm bộ lọc mới trong thay đổi này.
+
+- Chi tiết bài đọc trên điện thoại dùng một ScrollView ngoài cho cả bài và phần câu hỏi/phân tích. Hai vùng con là View thông thường để không chặn vuốt cảm ứng. Desktop có hai ScrollView độc lập bên trong khung View vừa chiều cao; không lồng ScrollView bị tắt cuộn vì trên web nó chặn thao tác vuốt của vùng cha/con.
+
+### Luyện viết trên web
+
+- Web/PWA dùng workspace tối đa 1160 px, nút quay lại trên thanh đầu trang cùng hàng logo. Khi mới vào Luyện viết, hiển thị thư viện để người dùng chọn đề, bản nháp, bài đã nộp hoặc Viết tự do; không tự chọn đề hay tạo bài viết trống. Sau khi chọn, màn làm bài chỉ giữ đề đang chọn và giấy viết; không có sidebar đề cố định. Nút “Đổi đề” nhỏ trong khung đề mở thư viện; Bản nháp / Đã nộp nằm trong các tab của thư viện, không lặp nút trên khung đề bài.
+- Thư viện đề dùng modal giữa màn hình desktop rộng tối đa 880 px, sheet trên điện thoại; ô tìm kiếm, bộ lọc N5–N1 mặc định theo hồ sơ và nhóm Đời sống / Học tập / Công việc / Xã hội. Backend tìm theo tên/yêu cầu, lọc và phân trang 12 đề/lần. Thẻ đề hiển thị tên Nhật, trình độ, trạng thái Chưa làm / Có nháp / Đã nộp; desktop 2 cột, mobile 1 cột. Tìm kiếm debounce 300 ms, đổi bộ lọc về trang 1. Nút/chip cao 34 px, chữ 11/16, padding 7×10, bo viên thuốc, chọn nền primary/chữ trắng. Không thêm giải thích hoặc thống kê thừa trong thư viện. Chọn đề đóng modal, giữ nháp từng đề; có Viết tự do.
+- Yêu cầu đề luôn hiện phía trên bài viết, gợi ý có thể mở/thu gọn. Khi soạn bài, tiêu chí chấm hiển thị thành cột 240 px bên trái, căn đỉnh với giấy viết khi có đủ chiều rộng; màn hẹp đặt tiêu chí dưới giấy. Cột tiêu chí có thời gian làm bài đếm tăng, nút Lưu nháp viền cam và Nộp bài nền cam nhỏ 34 px; không lặp Nộp bài hoặc Lưu nháp dưới giấy. Thời gian giữ riêng từng bài trong phiên mở workspace, tạm dừng khi xem thư viện, chấm bài hoặc ứng dụng chuyển nền. Nháp tiếp tục tự lưu; lỗi lưu có thể thử lại bằng Lưu nháp tại cột này. Khung đề nền `surface`, viền `divider`; giấy viết nền `surface`, viền `border`, tách rõ khỏi nền kem của trang. Nút Nộp bài nền cam; nút Lưu nháp viền cam.
+- Tự lưu sau 1,5 giây tạm ngừng nhập khi có ít nhất 4 ký tự. Có trạng thái đang lưu/đã lưu/lỗi; giữ nội dung khi lỗi, thử lại bằng Lưu nháp. Đổi chủ đề lưu phần đang viết và giữ bộ đệm từng bài; phản hồi lưu chỉ cập nhật metadata, không ghi đè chữ mới.
+- Nộp bài giữ ô viết tại chỗ trong lúc chấm; nhận xét thay nội dung vùng chính, có Chỉnh sửa bài quay lại văn bản đang soạn. Xem nhận xét đã có không gọi lại AI. Bài đã nộp giữ nguyên; sửa rồi nộp tạo phiên bản mới. Chấm lại bằng AI là thao tác chủ động riêng.
+- Lịch sử mở trong tab Đã nộp của thư viện; chọn hai phiên bản cùng đề để so sánh trong vùng chính, không qua các màn chọn nối tiếp. Không gọi AI khi tìm đề, xem nháp hoặc xem lịch sử.
+- Trên màn hẹp, thư viện mở thành bảng từ dưới lên; bấm chỗ sửa mở bảng giải thích. Desktop đặt giải thích cạnh bài khi còn đủ chiều rộng, xếp dọc khi vùng bài hẹp.
+- Nội dung 9 đề viết mặc định (N5–N3) dùng tiếng Nhật cho tiêu đề, yêu cầu và gợi ý. N5 ưu tiên hiragana và câu ngắn; N4 kể trải nghiệm/nêu lý do; N3 đưa ví dụ, trình bày quan điểm/kế hoạch. Cập nhật nội dung theo ID, giữ đề tự tạo và bài đã nộp.
+- Bản native giữ luồng hiện tại trong lần thử UX web này; dùng chung dịch vụ, dữ liệu và component nhận xét.
+
+### Nhận xét bài viết theo tiêu chí
+
+- Trước khi viết hiển thị 4 tiêu chí, mỗi tiêu chí 25 điểm: đáp ứng đề, tổ chức/liên kết, ngữ pháp, từ vựng/chữ viết. Kết quả hiển thị nhận xét từng tiêu chí, mở chi tiết các mục nhỏ 0–5 điểm và bài tập tiếp theo.
+- Kết quả gom radar chart và nhận xét 4 tiêu chí trong một khung nền `surface`, viền `divider`. Radar có 4 trục cố định, cùng thang 0–25, lưới trung tính, vùng điểm cam `primary` mờ 20%, nhãn và điểm thật ở từng trục, mô tả trợ năng đầy đủ. Dùng SVG có sẵn, không gọi AI hoặc thêm thư viện chart. Màn rộng đặt biểu đồ bên trái, nhận xét bên phải; màn hẹp xếp dọc. Mỗi tiêu chí có tiêu đề, điểm/25, thanh điểm cam trên `track`, nhận xét ngắn và các điểm thành phần mở/thu gọn; không lặp ghi chú cách tính điểm.
+- Trong kết quả dùng ba nút viên thuốc nhỏ: Chỉnh sửa, Bản gốc, Đã sửa; có icon nhỏ tương ứng bút chì, mắt, dấu kiểm. Nút đang chọn nền `primary`, chữ `onPrimary`; nút khác nền trắng, viền `border`.
+- Chỗ bỏ/thay thế dùng `dangerBg`/`danger` và gạch ngang; đề xuất dùng `successBg`/`success` và gạch chân. Có chú giải bằng chữ. Đây là màu ngữ nghĩa cho sửa lỗi, không đổi màu thương hiệu của nút.
+- Phần giải thích dùng tiêu đề “Giải thích”; nút mở trên điện thoại dùng icon hội thoại và nhãn ngắn “Giải thích”. Bấm đoạn đánh dấu hoặc nút số để chọn giải thích, xem bản gốc → đề xuất → lý do. Phân biệt Lỗi cần sửa và Gợi ý diễn đạt. Desktop chia bài viết và panel giải thích 300 px; màn hẹp xếp dọc. Giữ ngắt đoạn và ký tự Unicode của bài gốc.
+- Bài đã nộp theo định dạng cũ giữ nguyên điểm/nhận xét, có lời nhắc chủ động chấm lại để có tiêu chí; không tự sinh điểm chi tiết.
+
+### Giấy 原稿用紙 trong ô viết web
+
+- Vùng soạn bài dùng giấy ô vuông, mặc định viết ngang, tối đa 20 ô/dòng. ResizeObserver đo chiều rộng thực tế của vùng viết để giảm số ô khi sidebar hoặc màn hình hẹp; không gây cuộn ngang trang.
+- Đầu giấy ghi “Giấy làm bài”. Cạnh số ký tự có một nút icon 16 px, vùng bấm tròn 32 px, không nền/viền; icon `primaryText`, nhấn dùng `badgeBg`, focus dùng `focus`. Icon biểu thị hướng hiện tại; bấm để đổi ngang/dọc, tooltip và nhãn accessibility nêu hướng sẽ chuyển sang. Viết dọc dùng `vertical-rl`: chữ từ trên xuống, cột từ phải sang trái; cuộn ngang bên trong giấy. Đổi hướng giữ nguyên nội dung, không tạo nháp hoặc gọi AI; tạm khoá chuyển hướng trong lúc IME đang ghép chữ.
+- Giấy nền trắng `surface`, lưới cam lấy từ `primary` với alpha 20% để không lấn chữ; khung viền `border`, bo `radius.input`, focus dùng `focus`. Chữ trong giấy dùng `dark`, font Mincho Nhật và biến thể full-width để Kana, Kanji, chữ Latin và số có bước ô đều; nhãn/nút vẫn Readex Pro.
+- Dùng một textarea liên tục, xuống dòng mềm theo chiều rộng giấy, không tách ký tự thành nhiều input. Chỉ thay cách hiển thị, giữ nguyên văn bản khi lưu/nộp. Lưới bám vị trí cuộn của textarea.
+- Khi IME đang chuyển đổi, giữ bản đang nhập trong editor, tạm dừng tự lưu và nộp bài. Chỉ gửi văn bản đã xác nhận vào bộ đệm nháp. Không chặn Enter hoặc phím chỉnh sửa của trình duyệt.
+- Giấy là vùng soạn bài trực tiếp, không bọc thêm card trắng hoặc tiêu đề “Nội dung bài viết”. Số ký tự nằm trên đầu giấy; trạng thái lưu và các nút thao tác gom thành hàng gọn bên dưới giấy.
+- Chiều ngang khung giấy và hàng thao tác bằng khung đề bài. Bỏ giới hạn chiều rộng riêng của vùng viết; ô giấy co giãn đều theo phần chiều rộng khả dụng, giữ tối đa 20 ô/dòng và căn bước chữ theo kích thước ô.
+
+- Tra cứu video: tiêu đề “Ví dụ trong video” dùng chữ 16/24, căn trái cạnh nút quay lại; truy vấn đặt ngay dưới, số đoạn là badge nhỏ bên phải. Thẻ kết quả gọn với padding 16, gap 8, bo `small`, viền `divider`, không bóng; câu phụ đề 14/23, tên video dạng caption, tên kênh rút gọn một dòng để giữ chỗ cho nút phát.

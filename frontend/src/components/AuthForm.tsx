@@ -43,6 +43,7 @@ export function AuthShell({
   headerAccessory,
   compactHeader = false,
   topBarAccessory,
+  hideHeader = false,
 }: {
   title: string;
   subtitle: string;
@@ -55,6 +56,7 @@ export function AuthShell({
   headerAccessory?: React.ReactNode;
   compactHeader?: boolean;
   topBarAccessory?: React.ReactNode;
+  hideHeader?: boolean;
 }) {
   const insets = useSafeAreaInsets();
   const navigationInset = useBottomNavigationInset();
@@ -101,32 +103,34 @@ export function AuthShell({
             </View>
           )}
         </View>
-        <View style={[styles.header, compactHeader && styles.compactHeader]}>
-          {eyebrow ? (
-            <View style={styles.eyebrowRow}>
-              <View style={styles.emblem}>
-                <AuthIcon name={icon} size={26} />
+        {!hideHeader ? (
+          <View style={[styles.header, compactHeader && styles.compactHeader]}>
+            {eyebrow ? (
+              <View style={styles.eyebrowRow}>
+                <View style={styles.emblem}>
+                  <AuthIcon name={icon} size={26} />
+                </View>
+                <Text style={styles.eyebrow}>{eyebrow}</Text>
               </View>
-              <Text style={styles.eyebrow}>{eyebrow}</Text>
+            ) : null}
+            <View
+              style={[
+                styles.headerMain,
+                compactHeader && styles.compactHeaderMain,
+              ]}
+            >
+              <View style={styles.headerCopy}>
+                <Text accessibilityRole="header" style={styles.title}>
+                  {title}
+                </Text>
+                {subtitle ? (
+                  <Text style={styles.subtitle}>{subtitle}</Text>
+                ) : null}
+              </View>
+              {headerAccessory ?? null}
             </View>
-          ) : null}
-          <View
-            style={[
-              styles.headerMain,
-              compactHeader && styles.compactHeaderMain,
-            ]}
-          >
-            <View style={styles.headerCopy}>
-              <Text accessibilityRole="header" style={styles.title}>
-                {title}
-              </Text>
-              {subtitle ? (
-                <Text style={styles.subtitle}>{subtitle}</Text>
-              ) : null}
-            </View>
-            {headerAccessory ?? null}
           </View>
-        </View>
+        ) : null}
         {card ? (
           <AuthCard>{children}</AuthCard>
         ) : (
@@ -225,6 +229,7 @@ export function AuthButton({
   variant,
   icon,
   trailingIcon,
+  size = 'default',
 }: {
   label: string;
   onPress: () => void;
@@ -234,6 +239,7 @@ export function AuthButton({
   variant?: 'primary' | 'outline' | 'text';
   icon?: React.ReactNode;
   trailingIcon?: AuthIconName;
+  size?: 'default' | 'compact';
 }) {
   const kind = variant ?? (secondary ? 'outline' : 'primary');
   const isDisabled = disabled || busy;
@@ -256,6 +262,7 @@ export function AuthButton({
           : kind === 'outline'
           ? styles.secondary
           : styles.textButton,
+        size === 'compact' && styles.compactButton,
         disabled ? styles.disabled : null,
         pressed
           ? kind === 'primary'
@@ -274,6 +281,7 @@ export function AuthButton({
               styles.buttonText,
               { color: textColor },
               kind === 'text' ? styles.textButtonLabel : null,
+              size === 'compact' && styles.compactButtonLabel,
             ]}
           >
             {label}
@@ -520,6 +528,13 @@ const styles = StyleSheet.create({
   secondaryPressed: { backgroundColor: colors.badgeBg },
   disabled: { backgroundColor: colors.disabled, borderColor: colors.disabled },
   buttonText: { ...typography.button, flexShrink: 1, textAlign: 'center' },
+  compactButton: {
+    minHeight: 34,
+    paddingHorizontal: 10,
+    paddingVertical: 7,
+    gap: 5,
+  },
+  compactButtonLabel: { ...typography.label, fontSize: 11, lineHeight: 16 },
   textButtonLabel: { ...typography.link },
   noticeBox: {
     backgroundColor: colors.surfaceTint,

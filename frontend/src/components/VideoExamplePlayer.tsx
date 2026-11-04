@@ -9,14 +9,7 @@ import {
 } from 'react-native';
 import { WebView, WebViewMessageEvent } from 'react-native-webview';
 import { VideoExample } from '../services/videoExamplesService';
-import {
-  colors,
-  layout,
-  radius,
-  shadowMd,
-  spacing,
-  typography,
-} from '../theme/theme';
+import { colors, radius, shadowMd, spacing, typography } from '../theme/theme';
 import { AuthNotice } from './AuthForm';
 import { HighlightedCaption, videoTimestamp } from './VideoExampleCard';
 import { ChevronLeftIcon, ChevronRightIcon, ReplayIcon } from './icons';
@@ -483,6 +476,7 @@ export function VideoExamplePlayer({
             <Pressable
               accessibilityRole="button"
               accessibilityLabel="Ví dụ trước"
+              hitSlop={6}
               accessibilityState={{ disabled: !onPrevious }}
               disabled={!onPrevious}
               onPress={onPrevious}
@@ -493,6 +487,7 @@ export function VideoExamplePlayer({
               ]}
             >
               <ChevronLeftIcon
+                size={18}
                 color={onPrevious ? colors.body : colors.disabledText}
               />
             </Pressable>
@@ -500,7 +495,7 @@ export function VideoExamplePlayer({
           <Pressable
             accessibilityRole="button"
             accessibilityLabel={error ? 'Thử phát lại' : 'Nghe lại'}
-            hitSlop={videoOnly ? 6 : 0}
+            hitSlop={6}
             onPress={() => {
               if (onReplay && loaded && !error) {
                 onReplay();
@@ -527,12 +522,13 @@ export function VideoExamplePlayer({
               pressed && styles.pressed,
             ]}
           >
-            <ReplayIcon size={videoOnly ? 18 : 22} color={colors.primaryText} />
+            <ReplayIcon size={18} color={colors.primaryText} />
           </Pressable>
           {!videoOnly ? (
             <Pressable
               accessibilityRole="button"
               accessibilityLabel="Ví dụ tiếp"
+              hitSlop={6}
               accessibilityState={{ disabled: !onNext }}
               disabled={!onNext}
               onPress={onNext}
@@ -543,6 +539,7 @@ export function VideoExamplePlayer({
               ]}
             >
               <ChevronRightIcon
+                size={18}
                 color={onNext ? colors.body : colors.disabledText}
               />
             </Pressable>
@@ -612,11 +609,11 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    gap: spacing.lg,
+    gap: spacing.sm,
   },
   iconButton: {
-    width: layout.touchTarget,
-    height: layout.touchTarget,
+    width: 34,
+    height: 34,
     borderRadius: radius.pill,
     alignItems: 'center',
     justifyContent: 'center',

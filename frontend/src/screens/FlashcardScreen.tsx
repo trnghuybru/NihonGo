@@ -1,3 +1,4 @@
+import { useDefaultJlptLevel } from '../hooks/useLearningLevel';
 import { useWebNavigation } from '../navigation/webNavigation';
 import { DeckPagination } from '../components/DeckPagination';
 import { HomeFeatureIcon } from '../components/HomeFeatureIcon';
@@ -74,6 +75,7 @@ export function FlashcardScreen({
   startDueReview?: boolean;
   catalogBackLabel?: string;
 }) {
+  const defaultLevel = useDefaultJlptLevel();
   const webContext = useWebNavigation();
   const web = webContext?.pathname.startsWith('/flashcards')
     ? webContext
@@ -102,7 +104,7 @@ export function FlashcardScreen({
   const [level, setLevel] = useState(() =>
     /^N[1-5]$/.test(catalogParams.get('level') ?? '')
       ? catalogParams.get('level')!
-      : 'N5',
+      : defaultLevel,
   );
   const [page, setPage] = useState(() =>
     Math.max(1, Math.min(10000, Number(catalogParams.get('page')) || 1)),

@@ -92,14 +92,14 @@ export const featureGuides = [
       {
         title: 'Chọn đề và bắt đầu viết',
         description:
-          'Bấm “Bắt đầu viết” để chọn đề theo trình độ, hoặc viết theo ý của bạn. Bạn có thể lưu bản nháp và quay lại viết tiếp.',
+          'Bấm “Đổi đề” để tìm chủ đề theo trình độ. Bản nháp tự lưu khi bạn tạm dừng gõ.',
         selectors: ['[data-testid="tour-writing-start"]'],
       },
       {
         title: 'Nộp bài và đọc góp ý',
         description:
           'Khi sẵn sàng, bấm “Nộp bài” để nhận phân tích từ AI. Xem bài đã nộp, sửa lại và so sánh các phiên bản để theo dõi sự tiến bộ.',
-        selectors: ['[aria-label="Bài đã nộp"]'],
+        selectors: ['[data-testid="tour-writing-start"]'],
       },
     ],
   },

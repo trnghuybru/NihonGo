@@ -9,6 +9,7 @@ class WritingPrompt(db.Model):
     id = db.Column(db.String(64), primary_key=True, default=lambda: uuid.uuid4().hex)
     title = db.Column(db.String(160), nullable=False)
     level = db.Column(db.String(8), nullable=False, default="N5")
+    category = db.Column(db.String(24), nullable=False, default="daily", server_default="daily")
     prompt_type = db.Column(db.String(24), nullable=False, default="sentence")
     instruction = db.Column(db.Text, nullable=False)
     model_hint = db.Column(db.Text, nullable=False)
@@ -21,6 +22,7 @@ class WritingPrompt(db.Model):
             "id": self.id,
             "title": self.title,
             "level": self.level,
+            "category": self.category,
             "prompt_type": self.prompt_type,
             "instruction": self.instruction,
             "model_hint": self.model_hint,
@@ -67,6 +69,7 @@ class WritingSubmission(db.Model):
     corrected_text = db.Column(db.Text, nullable=False, default="")
     score = db.Column(db.Integer, nullable=False, default=0)
     feedback = db.Column(db.Text, nullable=False, default="")
+    assessment = db.Column(db.JSON, nullable=True)
     submitted_at = db.Column(db.BigInteger, nullable=False, default=now)
     created_at = db.Column(db.BigInteger, nullable=False, default=now)
     updated_at = db.Column(db.BigInteger, nullable=False, default=now, onupdate=now)
@@ -84,6 +87,7 @@ class WritingSubmission(db.Model):
             "correctedText": self.corrected_text,
             "score": self.score,
             "feedback": self.feedback,
+            "assessment": self.assessment,
             "submitted_at": self.submitted_at,
             "submittedAt": self.submitted_at,
             "created_at": self.created_at,

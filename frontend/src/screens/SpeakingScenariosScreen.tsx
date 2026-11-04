@@ -1,3 +1,4 @@
+import { useLearningLevel } from '../hooks/useLearningLevel';
 import { decodeRouteParam } from '../navigation/webNavigation';
 import { useWebNavigation } from '../navigation/webNavigation';
 import { memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
@@ -267,6 +268,7 @@ function ScenarioPreview({
   );
 }
 export function SpeakingScenariosScreen() {
+  const defaultLevel = useLearningLevel();
   const web = useWebNavigation();
   const webPath = web?.pathname;
   const webRef = useRef(web);
@@ -275,7 +277,7 @@ export function SpeakingScenariosScreen() {
   const [choosing, setChoosing] = useState(false);
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [category, setCategory] = useState('all');
-  const [level, setLevel] = useState<LevelFilter>('all');
+  const [level, setLevel] = useState<LevelFilter>(defaultLevel);
   const [queryDraft, setQueryDraft] = useState('');
   const [searchFocused, setSearchFocused] = useState(false);
   const [query, setQuery] = useState('');

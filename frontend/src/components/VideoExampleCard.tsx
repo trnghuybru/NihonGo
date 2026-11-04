@@ -2,14 +2,7 @@ import { memo } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import Svg, { Path } from 'react-native-svg';
 import { VideoExample } from '../services/videoExamplesService';
-import {
-  colors,
-  layout,
-  radius,
-  shadowMd,
-  spacing,
-  typography,
-} from '../theme/theme';
+import { colors, layout, radius, spacing, typography } from '../theme/theme';
 
 export function videoTimestamp(seconds: number) {
   const value = Math.floor(seconds);
@@ -66,7 +59,7 @@ export const VideoExampleCard = memo(function VideoExampleCardView({
         {example.video.title}
       </Text>
       <View style={styles.footer}>
-        <Text style={styles.caption}>
+        <Text style={styles.caption} numberOfLines={1}>
           {example.video.channel} · {videoTimestamp(example.start_seconds)}
         </Text>
         <View style={styles.action}>
@@ -84,12 +77,11 @@ export const VideoExampleCard = memo(function VideoExampleCardView({
 
 const styles = StyleSheet.create({
   card: {
-    padding: spacing.xl,
-    gap: spacing.lg,
+    padding: spacing.lg,
+    gap: spacing.sm,
     backgroundColor: colors.surface,
-    borderRadius: radius.card,
+    borderRadius: radius.small,
     borderCurve: 'continuous',
-    boxShadow: shadowMd,
     borderWidth: 1,
     borderColor: colors.divider,
     minHeight: layout.touchTarget,
@@ -99,9 +91,14 @@ const styles = StyleSheet.create({
     borderColor: colors.primary,
     backgroundColor: colors.surfaceTint,
   },
-  sentence: { ...typography.heading, color: colors.dark, lineHeight: 26 },
+  sentence: {
+    ...typography.body,
+    fontSize: 14,
+    color: colors.dark,
+    lineHeight: 23,
+  },
   highlight: { color: colors.badgeText, backgroundColor: colors.badgeBg },
-  title: { ...typography.body, color: colors.body },
+  title: { ...typography.caption, color: colors.body, lineHeight: 18 },
   caption: { ...typography.caption, color: colors.muted, flex: 1 },
   footer: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm },
   action: { flexDirection: 'row', alignItems: 'center', gap: spacing.xs },

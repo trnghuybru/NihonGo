@@ -1,6 +1,6 @@
 import React from 'react';
 import Renderer, { act } from 'react-test-renderer';
-import { StyleSheet, Text } from 'react-native';
+import { ScrollView, StyleSheet, Text } from 'react-native';
 import { ReadingAnswerExplanation } from '../src/components/ReadingAnswerExplanation';
 import {
   ReadingWorkspace,
@@ -139,14 +139,14 @@ function text() {
     .flat()
     .join(' ');
 }
-async function workspace(data = passage) {
+async function workspace(data = passage, split = false) {
   await act(async () => {
     tree = Renderer.create(
       <ReadingWorkspace
         passage={data}
         accountId="u1"
         showFurigana
-        split={false}
+        split={split}
         onWordPress={focus}
         onScrollTo={scroll}
       />,
@@ -323,4 +323,14 @@ test('multiple sentences stay in their original paragraph with unchanged source 
   ).toBe(original);
   await press('Xem cấu trúc câu 2');
   expect(readingService.analyzeSentence).toHaveBeenCalledWith('p1', 's2');
+});
+
+test('stacked reading lets the outer screen own touch scrolling while desktop keeps two scroll panes', async () => {
+  await workspace();
+  expect(tree.root.findAllByType(ScrollView)).toHaveLength(0);
+  await act(async () => tree.unmount());
+  await workspace(passage, true);
+  const panes = tree.root.findAllByType(ScrollView);
+  expect(panes).toHaveLength(2);
+  expect(panes.every(pane => pane.props.scrollEnabled !== false)).toBe(true);
 });

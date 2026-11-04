@@ -1,17 +1,38 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
+  Platform,
   Pressable,
-  ScrollView,
   StyleSheet,
   Text,
   TextInput,
   View,
 } from 'react-native';
-import { AuthButton, AuthShell } from '../components/AuthForm';
+import { WritingWorkspaceScreen } from './WritingWorkspaceScreen';
+import { AuthButton } from '../components/AuthForm';
+import {
+  WritingAssessmentView,
+  WritingCriteriaGuide,
+} from '../components/WritingAssessmentView';
+import { useDefaultJlptLevel } from '../hooks/useLearningLevel';
+import type { WritingAssessment } from '../services/writingService';
+import { WritingShell } from '../components/WritingShell';
+import { HomeFeatureIcon } from '../components/HomeFeatureIcon';
+import { useWebLayout } from '../hooks/useWebLayout';
+import { useWebNavigation } from '../navigation/webNavigation';
 import { NihongoMascot } from '../components/NihongoMascot';
-import { TrashIcon } from '../components/icons';
+import {
+  ArrowRightIcon,
+  CheckIcon,
+  PencilIcon,
+  RefreshIcon,
+  TrashIcon,
+} from '../components/icons';
 import { colors, radius, shadowMd, spacing, typography } from '../theme/theme';
-import { WritingDraft, WritingPrompt, writingService } from '../services/writingService';
+import {
+  WritingDraft,
+  WritingPrompt,
+  writingService,
+} from '../services/writingService';
 
 type WritingView =
   | 'dashboard'
@@ -33,33 +54,9 @@ type WritingSubmission = {
   correctedText: string;
   score: number;
   feedback: string;
+  assessment?: WritingAssessment | null;
   submittedAt: string;
 };
-
-const seedSubmissions: WritingSubmission[] = [
-  {
-    id: 'sub-demo-1',
-    promptId: 'demo-1',
-    promptTitle: 'Mô tả về cuộc sống hằng ngày',
-    text: 'Hằng ngày tôi thức dậy lúc 6 giờ. Tôi ăn sáng và đi học ở trường.',
-    correctedText:
-      'Hằng ngày tôi thức dậy lúc 6 giờ. Sau khi ăn sáng, tôi đi học ở trường và học rất chăm chỉ.',
-    score: 88,
-    feedback: 'Bài viết rõ ràng, nhưng bạn nên thêm chi tiết về thói quen và dùng từ vựng phong phú hơn.',
-    submittedAt: '2025-04-03T08:00:00.000Z',
-  },
-  {
-    id: 'sub-demo-2',
-    promptId: 'demo-2',
-    promptTitle: 'Viết thư cảm ơn',
-    text: 'Cảm ơn cô giáo đã giúp tôi. Tôi rất hạnh phúc vì đã học tiếng Nhật.',
-    correctedText:
-      'Cảm ơn cô giáo đã luôn giúp đỡ tôi trong suốt thời gian học tiếng Nhật. Tôi rất hạnh phúc và biết ơn vì sự hướng dẫn của cô.',
-    score: 91,
-    feedback: 'Cấu trúc câu mạch lạc, cách diễn đạt lịch sự phù hợp. Hãy thêm ví dụ cụ thể để tăng độ sâu.',
-    submittedAt: '2025-04-10T08:00:00.000Z',
-  },
-];
 
 const getWritingSentences = (text: string) =>
   text
@@ -73,7 +70,9 @@ const getWritingCharacterCount = (text: string) =>
 const normalizeSubmissionDate = (value: number | string) => {
   const numericValue = typeof value === 'number' ? value : Number(value);
   const date = Number.isFinite(numericValue)
-    ? new Date(numericValue < 1_000_000_000_000 ? numericValue * 1000 : numericValue)
+    ? new Date(
+        numericValue < 1_000_000_000_000 ? numericValue * 1000 : numericValue,
+      )
     : new Date(value);
   return date.toISOString();
 };
@@ -81,20 +80,45 @@ const normalizeSubmissionDate = (value: number | string) => {
 const CUSTOM_WRITING_ID = '__custom__';
 
 export function WritingScreen() {
+  return Platform.OS === 'web' ? (
+    <WritingWorkspaceScreen />
+  ) : (
+    <NativeWritingScreen />
+  );
+}
+
+function NativeWritingScreen() {
+  const { desktop, contentWidth } = useWebLayout();
+  const web = useWebNavigation();
+  const defaultLevel = useDefaultJlptLevel();
+  const [submitting, setSubmitting] = useState(false);
+  const submitPending = useRef(false);
+  const [editorFocused, setEditorFocused] = useState(false);
   const [view, setView] = useState<WritingView>('dashboard');
+  const goBack = useCallback(() => {
+    if (view === 'dashboard') web?.navigate('/practice');
+    else setView('dashboard');
+  }, [view, web]);
+  const promptColumns = contentWidth >= 1120 ? 3 : 2;
+  const promptCardWidth =
+    (Math.min(contentWidth, 1160) - 40 - 16 * (promptColumns - 1)) /
+    promptColumns;
   const [prompts, setPrompts] = useState<WritingPrompt[]>([]);
   const [drafts, setDrafts] = useState<WritingDraft[]>([]);
   const [submissions, setSubmissions] = useState<WritingSubmission[]>([]);
   const [selectedPromptId, setSelectedPromptId] = useState<string>('');
   const [selectedSubmissionId, setSelectedSubmissionId] = useState<string>('');
-  const [isSelectingForComparison, setIsSelectingForComparison] = useState(false);
+  const [isSelectingForComparison, setIsSelectingForComparison] =
+    useState(false);
   const [selectedCompareIds, setSelectedCompareIds] = useState<string[]>([]);
   const [comparePromptId, setComparePromptId] = useState<string>('');
   const [compareOldId, setCompareOldId] = useState<string>('');
   const [compareNewId, setCompareNewId] = useState<string>('');
   const [answer, setAnswer] = useState('');
   const [saving, setSaving] = useState(false);
-  const [reevaluatingSubmissionId, setReevaluatingSubmissionId] = useState<string | null>(null);
+  const [reevaluatingSubmissionId, setReevaluatingSubmissionId] = useState<
+    string | null
+  >(null);
   const [message, setMessage] = useState('');
   const [loading, setLoading] = useState(true);
 
@@ -119,16 +143,24 @@ export function WritingScreen() {
   );
 
   const selectedSubmission = useMemo(
-    () => submissions.find(item => item.id === selectedSubmissionId) ?? submissions[0],
+    () =>
+      submissions.find(item => item.id === selectedSubmissionId) ??
+      submissions[0],
     [submissions, selectedSubmissionId],
   );
 
-  const getSubmissionGroupKey = (item: Pick<WritingSubmission, 'promptId' | 'promptTitle'>) => {
-    if (item.promptId && prompts.some(prompt => prompt.id === item.promptId)) {
-      return item.promptId;
-    }
-    return item.promptTitle.trim() || 'custom';
-  };
+  const getSubmissionGroupKey = useCallback(
+    (item: Pick<WritingSubmission, 'promptId' | 'promptTitle'>) => {
+      if (
+        item.promptId &&
+        prompts.some(prompt => prompt.id === item.promptId)
+      ) {
+        return item.promptId;
+      }
+      return item.promptTitle.trim() || 'custom';
+    },
+    [prompts],
+  );
 
   const toggleSubmissionComparison = (item: WritingSubmission) => {
     setMessage('');
@@ -142,8 +174,13 @@ export function WritingScreen() {
       return;
     }
 
-    const firstSelected = submissions.find(submission => submission.id === selectedCompareIds[0]);
-    if (firstSelected && getSubmissionGroupKey(firstSelected) !== getSubmissionGroupKey(item)) {
+    const firstSelected = submissions.find(
+      submission => submission.id === selectedCompareIds[0],
+    );
+    if (
+      firstSelected &&
+      getSubmissionGroupKey(firstSelected) !== getSubmissionGroupKey(item)
+    ) {
       setMessage('Chỉ có thể so sánh hai bài thuộc cùng một đề.');
       return;
     }
@@ -161,7 +198,9 @@ export function WritingScreen() {
     }
 
     const [older, newer] = [...selected].sort(
-      (left, right) => new Date(left.submittedAt).getTime() - new Date(right.submittedAt).getTime(),
+      (left, right) =>
+        new Date(left.submittedAt).getTime() -
+        new Date(right.submittedAt).getTime(),
     );
     setComparePromptId(getSubmissionGroupKey(older));
     setCompareOldId(older.id);
@@ -180,22 +219,32 @@ export function WritingScreen() {
     setReevaluatingSubmissionId(submissionId);
     setMessage('');
     try {
-      const { submission } = await writingService.evaluateSubmission(submissionId);
+      const { submission } = await writingService.evaluateSubmission(
+        submissionId,
+      );
       setSubmissions(current =>
         current.map(item =>
           item.id === submissionId
             ? {
                 ...item,
-                correctedText: submission.corrected_text || submission.correctedText || item.correctedText,
+                correctedText:
+                  submission.corrected_text ||
+                  submission.correctedText ||
+                  item.correctedText,
                 score: submission.score,
                 feedback: submission.feedback,
+                assessment: submission.assessment,
               }
             : item,
         ),
       );
       setMessage('Đã phân tích lại bài bằng AI.');
     } catch (error) {
-      setMessage(error instanceof Error ? error.message : 'Không phân tích lại được bài viết. Vui lòng thử lại.');
+      setMessage(
+        error instanceof Error
+          ? error.message
+          : 'Không phân tích lại được bài viết. Vui lòng thử lại.',
+      );
     } finally {
       setReevaluatingSubmissionId(null);
     }
@@ -216,11 +265,13 @@ export function WritingScreen() {
         key,
         title: items[0]?.promptTitle ?? 'Bài viết',
         versions: [...items].sort(
-          (a, b) => new Date(a.submittedAt).getTime() - new Date(b.submittedAt).getTime(),
+          (a, b) =>
+            new Date(a.submittedAt).getTime() -
+            new Date(b.submittedAt).getTime(),
         ),
       }))
       .sort((a, b) => a.title.localeCompare(b.title));
-  }, [submissions, prompts]);
+  }, [submissions, getSubmissionGroupKey]);
 
   const compareOptions = useMemo(
     () =>
@@ -228,9 +279,10 @@ export function WritingScreen() {
         .filter(item => getSubmissionGroupKey(item) === comparePromptId)
         .sort(
           (a, b) =>
-            new Date(a.submittedAt).getTime() - new Date(b.submittedAt).getTime(),
+            new Date(a.submittedAt).getTime() -
+            new Date(b.submittedAt).getTime(),
         ),
-    [submissions, comparePromptId, prompts],
+    [submissions, comparePromptId, getSubmissionGroupKey],
   );
 
   const comparePrompt = useMemo(
@@ -240,17 +292,7 @@ export function WritingScreen() {
     [prompts, comparePromptId, compareGroups],
   );
 
-  const compareOld = useMemo(
-    () => compareOptions.find(item => item.id === compareOldId) ?? compareOptions[0],
-    [compareOldId, compareOptions],
-  );
-
-  const compareNew = useMemo(
-    () => compareOptions.find(item => item.id === compareNewId) ?? compareOptions[1] ?? compareOptions[0],
-    [compareNewId, compareOptions],
-  );
-
-  const loadData = async () => {
+  const loadData = useCallback(async () => {
     setLoading(true);
     setMessage('');
     try {
@@ -267,20 +309,24 @@ export function WritingScreen() {
         text: item.text,
         correctedText: item.corrected_text || item.correctedText || '',
         score: item.score ?? 0,
+        assessment: item.assessment,
         feedback: item.feedback || 'Bài viết đã được nộp thành công.',
-        submittedAt: normalizeSubmissionDate(item.submittedAt ?? item.submitted_at),
+        submittedAt: normalizeSubmissionDate(
+          item.submittedAt ?? item.submitted_at,
+        ),
       }));
       setPrompts(nextPrompts);
       setDrafts(draftResult.items ?? []);
       setSubmissions(nextSubmissions);
-      if (!selectedSubmissionId && nextSubmissions.length) {
-        setSelectedSubmissionId(nextSubmissions[0].id);
+      if (nextSubmissions.length) {
+        setSelectedSubmissionId(current => current || nextSubmissions[0].id);
       }
-      if (nextPrompts.length && !selectedPromptId) {
-        setSelectedPromptId(nextPrompts[0].id);
+      if (nextPrompts.length) {
+        setSelectedPromptId(current => current || nextPrompts[0].id);
       }
     } catch (error) {
-      const text = error instanceof Error ? error.message : 'Không tải được bài viết.';
+      const text =
+        error instanceof Error ? error.message : 'Không tải được bài viết.';
       setMessage(
         text.includes('unauthorized') || text.includes('hết hạn')
           ? 'Phiên đăng nhập đã hết hạn. Vui lòng đăng nhập lại để tiếp tục viết.'
@@ -289,23 +335,23 @@ export function WritingScreen() {
     } finally {
       setLoading(false);
     }
-  };
-
-  useEffect(() => {
-    void loadData();
   }, []);
 
   useEffect(() => {
-    if (!selectedPrompt) {
+    loadData();
+  }, [loadData]);
+
+  useEffect(() => {
+    if (view !== 'editor' || !selectedPrompt) {
       return;
     }
-    const currentDraft = drafts.find(item => item.prompt_id === selectedPrompt.id);
+    const currentDraft = drafts.find(
+      item => item.prompt_id === selectedPrompt.id,
+    );
     if (currentDraft) {
       setAnswer(currentDraft.text);
-    } else if (!answer && view === 'editor') {
-      setAnswer('');
     }
-  }, [selectedPrompt, drafts, view, answer]);
+  }, [selectedPrompt, drafts, view]);
 
   const handleSave = async () => {
     const trimmed = answer.trim();
@@ -324,8 +370,8 @@ export function WritingScreen() {
       const result = previous
         ? await writingService.updateDraft(previous.id, trimmed)
         : selectedPrompt
-          ? await writingService.saveDraft(selectedPrompt.id, trimmed)
-          : await writingService.saveCustomDraft(trimmed, 'Bài viết tự do');
+        ? await writingService.saveDraft(selectedPrompt.id, trimmed)
+        : await writingService.saveCustomDraft(trimmed, 'Bài viết tự do');
 
       setDrafts(current => {
         const next = current.filter(item => item.id !== result.draft.id);
@@ -346,7 +392,12 @@ export function WritingScreen() {
       await writingService.deleteDraft(draftId);
       setDrafts(current => current.filter(item => item.id !== draftId));
       setMessage('Đã xóa bản nháp.');
-      if (selectedPrompt && drafts.some(item => item.id === draftId && item.prompt_id === selectedPrompt.id)) {
+      if (
+        selectedPrompt &&
+        drafts.some(
+          item => item.id === draftId && item.prompt_id === selectedPrompt.id,
+        )
+      ) {
         setAnswer('');
       }
     } catch (error) {
@@ -357,27 +408,38 @@ export function WritingScreen() {
   };
 
   const handleSubmit = async () => {
+    if (submitPending.current) return;
     const trimmed = answer.trim();
     if (!trimmed) {
       setMessage('Hãy viết trước khi nộp bài.');
       return;
     }
 
+    submitPending.current = true;
+    setSubmitting(true);
+    setMessage('');
     try {
       const response = await writingService.submitWriting({
         prompt_id: selectedPrompt?.id,
         prompt_title: selectedPrompt?.title ?? 'Bài viết tự do',
         text: trimmed,
+        level: defaultLevel,
       });
 
       const newSubmission: WritingSubmission = {
         id: response.submission.id,
-        promptId: response.submission.prompt_id ?? `custom-${response.submission.id}`,
+        promptId:
+          response.submission.prompt_id ?? `custom-${response.submission.id}`,
         promptTitle: response.submission.prompt_title || 'Bài viết tự do',
         text: response.submission.text,
-        correctedText: response.submission.corrected_text || response.submission.correctedText || '',
+        correctedText:
+          response.submission.corrected_text ||
+          response.submission.correctedText ||
+          '',
         score: response.submission.score ?? 0,
-        feedback: response.submission.feedback || 'Bài viết đã được nộp thành công.',
+        assessment: response.submission.assessment,
+        feedback:
+          response.submission.feedback || 'Bài viết đã được nộp thành công.',
         submittedAt: normalizeSubmissionDate(
           response.submission.submittedAt ?? response.submission.submitted_at,
         ),
@@ -392,8 +454,13 @@ export function WritingScreen() {
       setView('submission-detail');
     } catch (error) {
       setMessage(
-        error instanceof Error ? error.message : 'Không gửi được bài viết. Vui lòng thử lại.',
+        error instanceof Error
+          ? error.message
+          : 'Không gửi được bài viết. Vui lòng thử lại.',
       );
+    } finally {
+      submitPending.current = false;
+      setSubmitting(false);
     }
   };
 
@@ -411,7 +478,9 @@ export function WritingScreen() {
       return;
     }
 
-    const firstGroup = compareGroups.find(group => group.versions.length >= 2) ?? compareGroups[0];
+    const firstGroup =
+      compareGroups.find(group => group.versions.length >= 2) ??
+      compareGroups[0];
 
     if (!firstGroup) {
       setMessage('Bạn chưa có đủ bài nộp để so sánh.');
@@ -421,7 +490,9 @@ export function WritingScreen() {
 
     setComparePromptId(firstGroup.key);
     setCompareOldId(firstGroup.versions[0]?.id ?? '');
-    setCompareNewId(firstGroup.versions[1]?.id ?? firstGroup.versions[0]?.id ?? '');
+    setCompareNewId(
+      firstGroup.versions[1]?.id ?? firstGroup.versions[0]?.id ?? '',
+    );
     setView('compare-select-prompt');
   };
 
@@ -438,12 +509,17 @@ export function WritingScreen() {
   };
 
   const renderBackButton = () => (
-    <AuthButton label="Quay lại" variant="text" onPress={() => setView('dashboard')} />
+    <AuthButton
+      label="Quay lại"
+      variant="text"
+      onPress={() => setView('dashboard')}
+    />
   );
 
   if (view === 'exercise') {
     return (
-      <AuthShell
+      <WritingShell
+        onBack={goBack}
         title="Bài tập viết"
         subtitle="Chọn đề bài gợi ý hoặc bắt đầu viết theo ý của bạn."
         icon="check"
@@ -461,36 +537,47 @@ export function WritingScreen() {
             groupedPrompts.map(([level, levelPrompts]) => (
               <View key={level} style={styles.levelGroup}>
                 <Text style={styles.levelGroupTitle}>{level}</Text>
-                {levelPrompts.map(prompt => (
-                  <Pressable
-                    key={prompt.id}
-                    accessibilityRole="button"
-                    onPress={() => startDraft(prompt.id)}
-                    style={({ pressed }) => [
-                      styles.promptCard,
-                      pressed && styles.promptCardPressed,
-                    ]}
-                  >
-                    <Text style={styles.promptTitle}>{prompt.title}</Text>
-                    <Text style={styles.promptMeta}>{prompt.level}</Text>
-                    <Text style={styles.promptHint} numberOfLines={3}>{prompt.instruction}</Text>
-                  </Pressable>
-                ))}
+                <View style={desktop ? styles.promptGrid : styles.levelGroup}>
+                  {levelPrompts.map(prompt => (
+                    <Pressable
+                      key={prompt.id}
+                      accessibilityRole="button"
+                      onPress={() => startDraft(prompt.id)}
+                      style={({ pressed }) => [
+                        styles.promptCard,
+                        desktop && { width: promptCardWidth },
+                        pressed && styles.promptCardPressed,
+                      ]}
+                    >
+                      <Text style={styles.promptTitle}>{prompt.title}</Text>
+                      <Text style={styles.promptMeta}>{prompt.level}</Text>
+                      <Text style={styles.promptHint} numberOfLines={3}>
+                        {prompt.instruction}
+                      </Text>
+                    </Pressable>
+                  ))}
+                </View>
               </View>
             ))
           )}
 
           <View style={styles.separator} />
           <Text style={styles.sectionTitle}>Viết theo ý của bạn</Text>
-          <AuthButton label="Viết bài theo ý của tôi" onPress={beginCustomWriting} />
+          <View style={desktop ? styles.inlineAction : undefined}>
+            <AuthButton
+              label="Viết bài theo ý của tôi"
+              onPress={beginCustomWriting}
+            />
+          </View>
         </View>
-      </AuthShell>
+      </WritingShell>
     );
   }
 
   if (view === 'editor') {
     return (
-      <AuthShell
+      <WritingShell
+        onBack={goBack}
         title={selectedPrompt?.title ?? 'Viết tiếng Nhật'}
         subtitle="Viết câu trả lời của bạn và lưu bản nháp để tiếp tục sau."
         icon="check"
@@ -498,46 +585,105 @@ export function WritingScreen() {
         headerAccessory={<NihongoMascot pose="writing" size={96} decorative />}
         footer={renderBackButton()}
       >
-        <View style={styles.section}>
-          {selectedPrompt ? (
+        <View style={[styles.editorLayout, desktop && styles.editorDesktop]}>
+          <View
+            style={[
+              styles.editorSidebar,
+              desktop && styles.editorSidebarDesktop,
+            ]}
+          >
             <View style={styles.promptPanel}>
-              <Text style={styles.promptTitle}>{selectedPrompt.title}</Text>
-              <Text style={styles.promptInstruction}>{selectedPrompt.instruction}</Text>
-              <Text style={styles.promptHint}>{selectedPrompt.model_hint}</Text>
+              <View style={styles.draftHeader}>
+                <Text style={styles.sectionTitle}>Đề bài</Text>
+                {selectedPrompt ? (
+                  <Text style={styles.levelBadge}>{selectedPrompt.level}</Text>
+                ) : null}
+              </View>
+              <Text style={styles.promptInstruction}>
+                {selectedPrompt?.instruction ||
+                  'Viết về một chủ đề bạn quan tâm bằng tiếng Nhật.'}
+              </Text>
+              {selectedPrompt?.model_hint ? (
+                <>
+                  <View style={styles.separator} />
+                  <Text style={styles.promptTitle}>Gợi ý</Text>
+                  <Text style={styles.promptHint}>
+                    {selectedPrompt.model_hint}
+                  </Text>
+                </>
+              ) : null}
             </View>
-          ) : null}
-
-          <TextInput
-            multiline
-            numberOfLines={8}
-            value={answer}
-            onChangeText={setAnswer}
-            placeholder="Viết câu trả lời của bạn ở đây..."
-            placeholderTextColor={colors.placeholder}
-            textAlignVertical="top"
-            style={styles.textArea}
-          />
-          <View style={styles.actionRow}>
-            <View style={styles.actionButtonWrap}>
-              <AuthButton
-                label={saving ? 'Đang lưu...' : 'Lưu'}
-                onPress={handleSave}
-                disabled={saving}
-              />
-            </View>
-            <View style={styles.actionButtonWrap}>
-              <AuthButton label="Nộp bài" onPress={handleSubmit} secondary />
-            </View>
+            <WritingCriteriaGuide />
+            <Text style={styles.promptHint}>
+              Lưu bản nháp để viết tiếp sau. Nộp bài khi bạn muốn nhận điểm và
+              nhận xét từ AI.
+            </Text>
           </View>
-          {message ? <Text style={styles.message}>{message}</Text> : null}
+          <View
+            style={[styles.editorPaper, desktop && styles.editorPaperDesktop]}
+          >
+            <View style={styles.draftHeader}>
+              <Text style={styles.sectionTitle}>Nội dung bài viết</Text>
+              <Text style={styles.quickMeta}>
+                {getWritingCharacterCount(answer)} ký tự
+              </Text>
+            </View>
+            <TextInput
+              accessibilityLabel="Nội dung bài viết"
+              multiline
+              numberOfLines={desktop ? 16 : 8}
+              value={answer}
+              onChangeText={setAnswer}
+              onFocus={() => setEditorFocused(true)}
+              onBlur={() => setEditorFocused(false)}
+              editable={!submitting && !saving}
+              placeholder="Viết bằng tiếng Nhật ở đây..."
+              placeholderTextColor={colors.placeholder}
+              textAlignVertical="top"
+              style={[
+                styles.textArea,
+                desktop && styles.desktopTextArea,
+                editorFocused && styles.textAreaFocused,
+              ]}
+            />
+            <View style={[styles.actionRow, desktop && styles.editorActions]}>
+              <View
+                style={desktop ? styles.compactAction : styles.actionButtonWrap}
+              >
+                <AuthButton
+                  label={saving ? 'Đang lưu...' : 'Lưu nháp'}
+                  onPress={handleSave}
+                  busy={saving}
+                  disabled={submitting || saving}
+                  secondary
+                />
+              </View>
+              <View
+                style={desktop ? styles.compactAction : styles.actionButtonWrap}
+              >
+                <AuthButton
+                  label={submitting ? 'Đang chấm bài...' : 'Nộp bài'}
+                  onPress={handleSubmit}
+                  busy={submitting}
+                  disabled={submitting || saving}
+                />
+              </View>
+            </View>
+            {message ? (
+              <Text accessibilityLiveRegion="polite" style={styles.message}>
+                {message}
+              </Text>
+            ) : null}
+          </View>
         </View>
-      </AuthShell>
+      </WritingShell>
     );
   }
 
   if (view === 'drafts') {
     return (
-      <AuthShell
+      <WritingShell
+        onBack={goBack}
         title="Bản nháp"
         subtitle="Tiếp tục bài viết đang ở giữa chừng hoặc xóa bản nháp không cần thiết."
         icon="check"
@@ -554,39 +700,47 @@ export function WritingScreen() {
                 key={draft.id}
                 accessibilityRole="button"
                 onPress={() => {
-                  setSelectedPromptId(draft.prompt_id);
+                  setSelectedPromptId(draft.prompt_id || CUSTOM_WRITING_ID);
                   setAnswer(draft.text);
                   setView('editor');
                 }}
-                style={({ pressed }) => [styles.draftCard, pressed && styles.promptCardPressed]}
+                style={({ pressed }) => [
+                  styles.draftCard,
+                  pressed && styles.promptCardPressed,
+                ]}
               >
                 <View style={styles.draftHeader}>
-                  <Text style={styles.draftPrompt}>{draft.prompt?.title ?? 'Bài viết'}</Text>
+                  <Text style={styles.draftPrompt}>
+                    {draft.prompt?.title ?? 'Bài viết'}
+                  </Text>
                   <Pressable
                     accessibilityRole="button"
                     hitSlop={8}
                     onPress={event => {
                       event.stopPropagation();
-                      void handleDeleteDraft(draft.id);
+                      handleDeleteDraft(draft.id);
                     }}
                     style={styles.deleteDraftButton}
                   >
                     <TrashIcon size={16} color={colors.muted} />
                   </Pressable>
                 </View>
-                <Text style={styles.draftText} numberOfLines={3}>{draft.text}</Text>
+                <Text style={styles.draftText} numberOfLines={3}>
+                  {draft.text}
+                </Text>
                 <Text style={styles.draftMeta}>{draft.word_count} từ</Text>
               </Pressable>
             ))
           )}
         </View>
-      </AuthShell>
+      </WritingShell>
     );
   }
 
   if (view === 'submissions') {
     return (
-      <AuthShell
+      <WritingShell
+        onBack={goBack}
         title="Bài đã nộp"
         subtitle="Xem bài đã gửi, nhận xét AI và các lần làm lại trước đó."
         icon="check"
@@ -596,11 +750,18 @@ export function WritingScreen() {
       >
         <View style={styles.section}>
           {submissions.length === 0 ? (
-            <Text style={styles.empty}>Chưa có bài nộp nào. Hãy nộp bài viết đầu tiên để xem điểm và nhận xét.</Text>
+            <Text style={styles.empty}>
+              Chưa có bài nộp nào. Hãy nộp bài viết đầu tiên để xem điểm và nhận
+              xét.
+            </Text>
           ) : (
             <>
               <AuthButton
-                label={isSelectingForComparison ? 'Hủy chọn bài' : 'Chọn bài để so sánh'}
+                label={
+                  isSelectingForComparison
+                    ? 'Hủy chọn bài'
+                    : 'Chọn bài để so sánh'
+                }
                 onPress={() => {
                   setIsSelectingForComparison(!isSelectingForComparison);
                   setSelectedCompareIds([]);
@@ -611,7 +772,8 @@ export function WritingScreen() {
               {isSelectingForComparison ? (
                 <>
                   <Text style={styles.submissionSelectionHint}>
-                    Đã chọn {selectedCompareIds.length}/2 bài. Hãy chọn hai lần nộp cùng đề.
+                    Đã chọn {selectedCompareIds.length}/2 bài. Hãy chọn hai lần
+                    nộp cùng đề.
                   </Text>
                   <AuthButton
                     label="So sánh 2 bài đã chọn"
@@ -626,13 +788,23 @@ export function WritingScreen() {
                 return (
                   <Pressable
                     key={item.id}
-                    accessibilityRole={isSelectingForComparison ? 'checkbox' : 'button'}
+                    accessibilityRole={
+                      isSelectingForComparison ? 'checkbox' : 'button'
+                    }
                     accessibilityLabel={
                       isSelectingForComparison
-                        ? `${item.promptTitle}, ${new Date(item.submittedAt).toLocaleDateString('vi-VN')}`
-                        : `Mở bài nộp ${item.promptTitle} ngày ${new Date(item.submittedAt).toLocaleDateString('vi-VN')}`
+                        ? `${item.promptTitle}, ${new Date(
+                            item.submittedAt,
+                          ).toLocaleDateString('vi-VN')}`
+                        : `Mở bài nộp ${item.promptTitle} ngày ${new Date(
+                            item.submittedAt,
+                          ).toLocaleDateString('vi-VN')}`
                     }
-                    accessibilityState={isSelectingForComparison ? { checked: isSelected } : undefined}
+                    accessibilityState={
+                      isSelectingForComparison
+                        ? { checked: isSelected }
+                        : undefined
+                    }
                     onPress={() => {
                       if (isSelectingForComparison) {
                         toggleSubmissionComparison(item);
@@ -650,29 +822,44 @@ export function WritingScreen() {
                     <View style={styles.rowBetween}>
                       <View style={styles.submissionTitleRow}>
                         {isSelectingForComparison ? (
-                          <View style={[styles.submissionSelectionIndicator, isSelected && styles.submissionSelectionIndicatorSelected]}>
-                            <Text style={styles.submissionSelectionCheck}>{isSelected ? '✓' : ''}</Text>
+                          <View
+                            style={[
+                              styles.submissionSelectionIndicator,
+                              isSelected &&
+                                styles.submissionSelectionIndicatorSelected,
+                            ]}
+                          >
+                            <Text style={styles.submissionSelectionCheck}>
+                              {isSelected ? '✓' : ''}
+                            </Text>
                           </View>
                         ) : null}
-                        <Text style={styles.submissionTitle} numberOfLines={1}>{item.promptTitle}</Text>
+                        <Text style={styles.submissionTitle} numberOfLines={1}>
+                          {item.promptTitle}
+                        </Text>
                       </View>
                       <Text style={styles.scoreBadge}>{item.score} điểm</Text>
                     </View>
-                    <Text style={styles.submissionText} numberOfLines={2}>{item.text}</Text>
-                    <Text style={styles.draftMeta}>{new Date(item.submittedAt).toLocaleDateString('vi-VN')}</Text>
+                    <Text style={styles.submissionText} numberOfLines={2}>
+                      {item.text}
+                    </Text>
+                    <Text style={styles.draftMeta}>
+                      {new Date(item.submittedAt).toLocaleDateString('vi-VN')}
+                    </Text>
                   </Pressable>
                 );
               })}
             </>
           )}
         </View>
-      </AuthShell>
+      </WritingShell>
     );
   }
 
   if (view === 'submission-detail' && selectedSubmission) {
     return (
-      <AuthShell
+      <WritingShell
+        onBack={goBack}
         title="Kết quả AI"
         subtitle="Nhận xét chi tiết và bản sửa đề xuất của hệ thống."
         icon="check"
@@ -682,65 +869,81 @@ export function WritingScreen() {
       >
         <View style={styles.section}>
           <View style={styles.resultHeader}>
-            <Text style={styles.resultTitle}>{selectedSubmission.promptTitle}</Text>
-            <Text style={styles.scoreBadgeLarge}>{selectedSubmission.score} điểm</Text>
+            <Text style={styles.resultTitle}>
+              {selectedSubmission.promptTitle}
+            </Text>
+            <Text style={styles.scoreBadgeLarge}>
+              {selectedSubmission.score} điểm
+            </Text>
           </View>
 
-          <View style={styles.resultPanel}>
-            <Text style={styles.sectionTitle}>Bài viết của bạn</Text>
-            <Text style={styles.resultText}>{selectedSubmission.text}</Text>
-          </View>
-
-          <View style={styles.resultPanel}>
-            <Text style={styles.sectionTitle}>Bản sửa đề xuất</Text>
-            <Text style={styles.resultText}>{selectedSubmission.correctedText}</Text>
-          </View>
-
-          <View style={styles.resultPanel}>
-            <Text style={styles.sectionTitle}>Nhận xét AI</Text>
-            <Text style={styles.resultText}>{selectedSubmission.feedback}</Text>
-          </View>
-
-          <AuthButton
-            label={reevaluatingSubmissionId === selectedSubmission.id ? 'Đang phân tích bài...' : 'Phân tích lại bằng AI'}
-            onPress={() => reevaluateSubmission(selectedSubmission.id)}
-            busy={reevaluatingSubmissionId === selectedSubmission.id}
-            disabled={Boolean(reevaluatingSubmissionId) && reevaluatingSubmissionId !== selectedSubmission.id}
+          <WritingAssessmentView
+            key={selectedSubmission.id}
+            text={selectedSubmission.text}
+            correctedText={selectedSubmission.correctedText}
+            feedback={selectedSubmission.feedback}
+            assessment={selectedSubmission.assessment}
           />
+
+          <View style={desktop ? styles.inlineAction : undefined}>
+            <AuthButton
+              secondary
+              label={
+                reevaluatingSubmissionId === selectedSubmission.id
+                  ? 'Đang phân tích bài...'
+                  : 'Phân tích lại bằng AI'
+              }
+              onPress={() => reevaluateSubmission(selectedSubmission.id)}
+              busy={reevaluatingSubmissionId === selectedSubmission.id}
+              disabled={
+                Boolean(reevaluatingSubmissionId) &&
+                reevaluatingSubmissionId !== selectedSubmission.id
+              }
+            />
+          </View>
           {message ? <Text style={styles.message}>{message}</Text> : null}
 
-          <AuthButton
-            label="So sánh với phiên bản trước"
-            onPress={() => {
-              const compareGroupKey =
-                selectedSubmission.promptId && prompts.some(prompt => prompt.id === selectedSubmission.promptId)
-                  ? selectedSubmission.promptId
-                  : selectedSubmission.promptTitle.trim() || 'custom';
-              const previous = submissions.find(
-                item =>
-                  item.id !== selectedSubmission.id &&
-                  getSubmissionGroupKey(item) === compareGroupKey,
-              );
-              if (previous) {
-                setComparePromptId(compareGroupKey);
-                setCompareOldId(previous.id);
-                setCompareNewId(selectedSubmission.id);
-                setView('compare-result');
-              } else {
-                setMessage('Bạn chưa có đủ phiên bản để so sánh cho đề này.');
-              }
-            }}
-          />
+          <View style={desktop ? styles.inlineAction : undefined}>
+            <AuthButton
+              secondary
+              label="So sánh với phiên bản trước"
+              onPress={() => {
+                const compareGroupKey =
+                  selectedSubmission.promptId &&
+                  prompts.some(
+                    prompt => prompt.id === selectedSubmission.promptId,
+                  )
+                    ? selectedSubmission.promptId
+                    : selectedSubmission.promptTitle.trim() || 'custom';
+                const previous = submissions.find(
+                  item =>
+                    item.id !== selectedSubmission.id &&
+                    getSubmissionGroupKey(item) === compareGroupKey,
+                );
+                if (previous) {
+                  setComparePromptId(compareGroupKey);
+                  setCompareOldId(previous.id);
+                  setCompareNewId(selectedSubmission.id);
+                  setView('compare-result');
+                } else {
+                  setMessage('Bạn chưa có đủ phiên bản để so sánh cho đề này.');
+                }
+              }}
+            />
+          </View>
         </View>
-      </AuthShell>
+      </WritingShell>
     );
   }
 
   if (view === 'compare-select-prompt') {
-    const availablePrompts = compareGroups.filter(group => group.versions.length >= 2);
+    const availablePrompts = compareGroups.filter(
+      group => group.versions.length >= 2,
+    );
 
     return (
-      <AuthShell
+      <WritingShell
+        onBack={goBack}
         title="So sánh bài viết"
         subtitle="Chọn một nhóm bài viết hoặc đề bài bạn muốn đối chiếu giữa các lần nộp."
         icon="check"
@@ -749,10 +952,14 @@ export function WritingScreen() {
         footer={renderBackButton()}
       >
         <View style={styles.section}>
-          <Text style={styles.empty}>Chọn một nhóm bài để tiếp tục chọn 2 phiên bản cần so sánh.</Text>
+          <Text style={styles.empty}>
+            Chọn một nhóm bài để tiếp tục chọn 2 phiên bản cần so sánh.
+          </Text>
 
           {availablePrompts.length === 0 ? (
-            <Text style={styles.empty}>Bạn chưa có đủ bài nộp nào để so sánh.</Text>
+            <Text style={styles.empty}>
+              Bạn chưa có đủ bài nộp nào để so sánh.
+            </Text>
           ) : (
             availablePrompts.map(group => (
               <Pressable
@@ -764,25 +971,35 @@ export function WritingScreen() {
                   setCompareNewId(group.versions[1].id);
                   setView('compare-select-versions');
                 }}
-                style={({ pressed }) => [styles.comparePromptCard, pressed && styles.promptCardPressed]}
+                style={({ pressed }) => [
+                  styles.comparePromptCard,
+                  pressed && styles.promptCardPressed,
+                ]}
               >
                 <Text style={styles.comparePromptTitle}>{group.title}</Text>
-                <Text style={styles.comparePromptMeta}>{group.versions.length} phiên bản</Text>
+                <Text style={styles.comparePromptMeta}>
+                  {group.versions.length} phiên bản
+                </Text>
               </Pressable>
             ))
           )}
         </View>
-      </AuthShell>
+      </WritingShell>
     );
   }
 
   if (view === 'compare-select-versions') {
     const versions = compareOptions.length > 0 ? compareOptions : submissions;
-    const oldVersion = versions.find(item => item.id === compareOldId) ?? versions[0];
-    const newVersion = versions.find(item => item.id === compareNewId) ?? versions[1] ?? versions[0];
+    const oldVersion =
+      versions.find(item => item.id === compareOldId) ?? versions[0];
+    const newVersion =
+      versions.find(item => item.id === compareNewId) ??
+      versions[1] ??
+      versions[0];
 
     return (
-      <AuthShell
+      <WritingShell
+        onBack={goBack}
         title="Chọn phiên bản cần so sánh"
         subtitle="Chọn 2 bài khác nhau để đối chiếu tiến bộ."
         icon="check"
@@ -791,7 +1008,11 @@ export function WritingScreen() {
         footer={renderBackButton()}
       >
         <View style={styles.section}>
-          <Text style={styles.sectionTitle}>{typeof comparePrompt === 'string' ? comparePrompt : comparePrompt?.title ?? 'So sánh bài viết'}</Text>
+          <Text style={styles.sectionTitle}>
+            {typeof comparePrompt === 'string'
+              ? comparePrompt
+              : comparePrompt?.title ?? 'So sánh bài viết'}
+          </Text>
 
           <View style={styles.compareSectionLabel}>Chọn phiên bản cũ</View>
           {versions.map(item => (
@@ -812,11 +1033,20 @@ export function WritingScreen() {
               ]}
             >
               <View style={styles.compareVersionRow}>
-                <Text style={styles.compareVersionTitle}>Lần {versions.indexOf(item) + 1}</Text>
-                <Text style={styles.compareVersionScore}>{item.score} điểm</Text>
+                <Text style={styles.compareVersionTitle}>
+                  Lần {versions.indexOf(item) + 1}
+                </Text>
+                <Text style={styles.compareVersionScore}>
+                  {item.score} điểm
+                </Text>
               </View>
-              <Text style={styles.compareVersionMeta}>Nộp ngày {new Date(item.submittedAt).toLocaleDateString('vi-VN')}</Text>
-              <Text style={styles.compareVersionText} numberOfLines={2}>{item.text}</Text>
+              <Text style={styles.compareVersionMeta}>
+                Nộp ngày{' '}
+                {new Date(item.submittedAt).toLocaleDateString('vi-VN')}
+              </Text>
+              <Text style={styles.compareVersionText} numberOfLines={2}>
+                {item.text}
+              </Text>
             </Pressable>
           ))}
 
@@ -839,11 +1069,20 @@ export function WritingScreen() {
               ]}
             >
               <View style={styles.compareVersionRow}>
-                <Text style={styles.compareVersionTitle}>Lần {versions.indexOf(item) + 1}</Text>
-                <Text style={styles.compareVersionScore}>{item.score} điểm</Text>
+                <Text style={styles.compareVersionTitle}>
+                  Lần {versions.indexOf(item) + 1}
+                </Text>
+                <Text style={styles.compareVersionScore}>
+                  {item.score} điểm
+                </Text>
               </View>
-              <Text style={styles.compareVersionMeta}>Nộp ngày {new Date(item.submittedAt).toLocaleDateString('vi-VN')}</Text>
-              <Text style={styles.compareVersionText} numberOfLines={2}>{item.text}</Text>
+              <Text style={styles.compareVersionMeta}>
+                Nộp ngày{' '}
+                {new Date(item.submittedAt).toLocaleDateString('vi-VN')}
+              </Text>
+              <Text style={styles.compareVersionText} numberOfLines={2}>
+                {item.text}
+              </Text>
             </Pressable>
           ))}
 
@@ -859,26 +1098,36 @@ export function WritingScreen() {
             />
           ) : null}
         </View>
-      </AuthShell>
+      </WritingShell>
     );
   }
 
   if (view === 'compare-result') {
-    const old = compareOptions.find(item => item.id === compareOldId) ?? compareOptions[0];
-    const next = compareOptions.find(item => item.id === compareNewId) ?? compareOptions[1] ?? compareOptions[0];
+    const old =
+      compareOptions.find(item => item.id === compareOldId) ??
+      compareOptions[0];
+    const next =
+      compareOptions.find(item => item.id === compareNewId) ??
+      compareOptions[1] ??
+      compareOptions[0];
 
     if (!old || !next) {
       return (
-        <AuthShell
+        <WritingShell
+          onBack={goBack}
           title="So sánh bài viết"
           subtitle="Chưa đủ phiên bản để đối chiếu."
           icon="check"
           card={false}
-          headerAccessory={<NihongoMascot pose="writing" size={96} decorative />}
+          headerAccessory={
+            <NihongoMascot pose="writing" size={96} decorative />
+          }
           footer={renderBackButton()}
         >
-          <View style={styles.section}><Text style={styles.empty}>Chưa có đủ dữ liệu để so sánh.</Text></View>
-        </AuthShell>
+          <View style={styles.section}>
+            <Text style={styles.empty}>Chưa có đủ dữ liệu để so sánh.</Text>
+          </View>
+        </WritingShell>
       );
     }
 
@@ -889,13 +1138,18 @@ export function WritingScreen() {
     const nextSentences = getWritingSentences(next.text);
     const oldSentenceSet = new Set(oldSentences);
     const nextSentenceSet = new Set(nextSentences);
-    const addedSentences = nextSentences.filter(sentence => !oldSentenceSet.has(sentence));
-    const removedSentences = oldSentences.filter(sentence => !nextSentenceSet.has(sentence));
+    const addedSentences = nextSentences.filter(
+      sentence => !oldSentenceSet.has(sentence),
+    );
+    const removedSentences = oldSentences.filter(
+      sentence => !nextSentenceSet.has(sentence),
+    );
     const characterDelta = nextCharacterCount - oldCharacterCount;
     const sentenceDelta = nextSentences.length - oldSentences.length;
 
     return (
-      <AuthShell
+      <WritingShell
+        onBack={goBack}
         title="Kết quả so sánh"
         subtitle="Bạn đang đối chiếu sự tiến bộ giữa hai phiên bản."
         icon="check"
@@ -905,7 +1159,9 @@ export function WritingScreen() {
       >
         <View style={styles.section}>
           <View style={styles.resultHeader}>
-            <Text style={styles.resultTitle}>{comparePrompt?.title ?? 'So sánh bài viết'}</Text>
+            <Text style={styles.resultTitle}>
+              {comparePrompt?.title ?? 'So sánh bài viết'}
+            </Text>
           </View>
 
           <View style={styles.compareSummaryGrid}>
@@ -924,7 +1180,8 @@ export function WritingScreen() {
                     : styles.compareSummarySmallLoss,
                 ]}
               >
-                {scoreGain > 0 ? '+' : ''}{scoreGain} điểm
+                {scoreGain > 0 ? '+' : ''}
+                {scoreGain} điểm
               </Text>
             </View>
           </View>
@@ -934,21 +1191,28 @@ export function WritingScreen() {
             <View style={styles.compareMetricsGrid}>
               <View style={styles.compareMetricCard}>
                 <Text style={styles.compareMetricLabel}>Số ký tự</Text>
-                <Text style={styles.compareMetricValue}>{oldCharacterCount} → {nextCharacterCount}</Text>
+                <Text style={styles.compareMetricValue}>
+                  {oldCharacterCount} → {nextCharacterCount}
+                </Text>
                 <Text style={styles.compareMetricDelta}>
-                  {characterDelta > 0 ? '+' : ''}{characterDelta} ký tự
+                  {characterDelta > 0 ? '+' : ''}
+                  {characterDelta} ký tự
                 </Text>
               </View>
               <View style={styles.compareMetricCard}>
                 <Text style={styles.compareMetricLabel}>Số câu</Text>
-                <Text style={styles.compareMetricValue}>{oldSentences.length} → {nextSentences.length}</Text>
+                <Text style={styles.compareMetricValue}>
+                  {oldSentences.length} → {nextSentences.length}
+                </Text>
                 <Text style={styles.compareMetricDelta}>
-                  {sentenceDelta > 0 ? '+' : ''}{sentenceDelta} câu
+                  {sentenceDelta > 0 ? '+' : ''}
+                  {sentenceDelta} câu
                 </Text>
               </View>
             </View>
             <Text style={styles.compareMetricNote}>
-              Số ký tự không tính khoảng trắng. Đây là chỉ số độ dài, không tự đánh giá nội dung hay hơn.
+              Số ký tự không tính khoảng trắng. Đây là chỉ số độ dài, không tự
+              đánh giá nội dung hay hơn.
             </Text>
           </View>
 
@@ -957,18 +1221,34 @@ export function WritingScreen() {
             <Text style={styles.compareChangeTitle}>Câu có trong bài mới</Text>
             {addedSentences.length ? (
               addedSentences.map((sentence, _index) => (
-                <Text key={`added-${_index}-${sentence}`} style={styles.compareAddedText}>+ {sentence}</Text>
+                <Text
+                  key={`added-${_index}-${sentence}`}
+                  style={styles.compareAddedText}
+                >
+                  + {sentence}
+                </Text>
               ))
             ) : (
-              <Text style={styles.compareMetricNote}>Không có câu mới hoàn toàn so với bài trước.</Text>
+              <Text style={styles.compareMetricNote}>
+                Không có câu mới hoàn toàn so với bài trước.
+              </Text>
             )}
-            <Text style={styles.compareChangeTitle}>Câu không còn trong bài mới</Text>
+            <Text style={styles.compareChangeTitle}>
+              Câu không còn trong bài mới
+            </Text>
             {removedSentences.length ? (
               removedSentences.map((sentence, _index) => (
-                <Text key={`removed-${_index}-${sentence}`} style={styles.compareRemovedText}>− {sentence}</Text>
+                <Text
+                  key={`removed-${_index}-${sentence}`}
+                  style={styles.compareRemovedText}
+                >
+                  − {sentence}
+                </Text>
               ))
             ) : (
-              <Text style={styles.compareMetricNote}>Các câu cũ đều được giữ lại.</Text>
+              <Text style={styles.compareMetricNote}>
+                Các câu cũ đều được giữ lại.
+              </Text>
             )}
           </View>
 
@@ -977,13 +1257,15 @@ export function WritingScreen() {
               <View style={styles.compareSideColumn}>
                 <Text style={styles.sectionTitle}>Bài trước</Text>
                 <Text style={styles.compareDate}>
-                  Nộp ngày {new Date(old.submittedAt).toLocaleDateString('vi-VN')}
+                  Nộp ngày{' '}
+                  {new Date(old.submittedAt).toLocaleDateString('vi-VN')}
                 </Text>
               </View>
               <View style={styles.compareSideColumn}>
                 <Text style={styles.sectionTitle}>Bài mới</Text>
                 <Text style={styles.compareDate}>
-                  Nộp ngày {new Date(next.submittedAt).toLocaleDateString('vi-VN')}
+                  Nộp ngày{' '}
+                  {new Date(next.submittedAt).toLocaleDateString('vi-VN')}
                 </Text>
               </View>
             </View>
@@ -997,40 +1279,62 @@ export function WritingScreen() {
             <Text style={styles.sectionTitle}>Nhận xét AI từng lần</Text>
             <View style={styles.compareFeedbackBlock}>
               <Text style={styles.compareChangeTitle}>Bài trước</Text>
-              <Text style={styles.resultText}>{old.feedback || 'Không có nhận xét được lưu.'}</Text>
+              <Text style={styles.resultText}>
+                {old.feedback || 'Không có nhận xét được lưu.'}
+              </Text>
               <AuthButton
-                label={reevaluatingSubmissionId === old.id ? 'Đang phân tích bài trước...' : 'Phân tích lại bài trước'}
+                label={
+                  reevaluatingSubmissionId === old.id
+                    ? 'Đang phân tích bài trước...'
+                    : 'Phân tích lại bài trước'
+                }
                 onPress={() => reevaluateSubmission(old.id)}
                 busy={reevaluatingSubmissionId === old.id}
-                disabled={Boolean(reevaluatingSubmissionId) && reevaluatingSubmissionId !== old.id}
+                disabled={
+                  Boolean(reevaluatingSubmissionId) &&
+                  reevaluatingSubmissionId !== old.id
+                }
                 secondary
               />
             </View>
             <View style={styles.compareFeedbackBlock}>
               <Text style={styles.compareChangeTitle}>Bài mới</Text>
-              <Text style={styles.resultText}>{next.feedback || 'Không có nhận xét được lưu.'}</Text>
+              <Text style={styles.resultText}>
+                {next.feedback || 'Không có nhận xét được lưu.'}
+              </Text>
               <AuthButton
-                label={reevaluatingSubmissionId === next.id ? 'Đang phân tích bài mới...' : 'Phân tích lại bài mới'}
+                label={
+                  reevaluatingSubmissionId === next.id
+                    ? 'Đang phân tích bài mới...'
+                    : 'Phân tích lại bài mới'
+                }
                 onPress={() => reevaluateSubmission(next.id)}
                 busy={reevaluatingSubmissionId === next.id}
-                disabled={Boolean(reevaluatingSubmissionId) && reevaluatingSubmissionId !== next.id}
+                disabled={
+                  Boolean(reevaluatingSubmissionId) &&
+                  reevaluatingSubmissionId !== next.id
+                }
                 secondary
               />
             </View>
             {message ? <Text style={styles.message}>{message}</Text> : null}
           </View>
         </View>
-      </AuthShell>
+      </WritingShell>
     );
   }
 
   if (view === 'progress') {
     const averageScore = submissions.length
-      ? Math.round(submissions.reduce((sum, item) => sum + item.score, 0) / submissions.length)
+      ? Math.round(
+          submissions.reduce((sum, item) => sum + item.score, 0) /
+            submissions.length,
+        )
       : 0;
 
     return (
-      <AuthShell
+      <WritingShell
+        onBack={goBack}
         title="Tiến độ viết"
         subtitle="Theo dõi số lượng bài đã làm, số bản nháp và điểm trung bình của bạn."
         icon="check"
@@ -1040,105 +1344,273 @@ export function WritingScreen() {
       >
         <View style={styles.section}>
           <View style={styles.metricGrid}>
-            <View style={styles.metricCard}><Text style={styles.metricValue}>{submissions.length}</Text><Text style={styles.metricLabel}>Bài nộp</Text></View>
-            <View style={styles.metricCard}><Text style={styles.metricValue}>{drafts.length}</Text><Text style={styles.metricLabel}>Bản nháp</Text></View>
-            <View style={styles.metricCard}><Text style={styles.metricValue}>{averageScore || '-'}</Text><Text style={styles.metricLabel}>Điểm TB</Text></View>
+            <View style={styles.metricCard}>
+              <Text style={styles.metricValue}>{submissions.length}</Text>
+              <Text style={styles.metricLabel}>Bài nộp</Text>
+            </View>
+            <View style={styles.metricCard}>
+              <Text style={styles.metricValue}>{drafts.length}</Text>
+              <Text style={styles.metricLabel}>Bản nháp</Text>
+            </View>
+            <View style={styles.metricCard}>
+              <Text style={styles.metricValue}>{averageScore || '-'}</Text>
+              <Text style={styles.metricLabel}>Điểm TB</Text>
+            </View>
           </View>
         </View>
-      </AuthShell>
+      </WritingShell>
     );
   }
 
   return (
-    <AuthShell
+    <WritingShell
+      onBack={goBack}
       title="Luyện viết tiếng Nhật"
-      subtitle="Viết mỗi ngày một chút, tiến bộ từng bước."
+      subtitle=""
       icon="check"
       card={false}
-      headerAccessory={<NihongoMascot pose="writing" size={96} decorative />}
     >
-      <ScrollView showsVerticalScrollIndicator={false}>
-        <View style={styles.section}>
-          <Pressable
-            accessibilityRole="button"
-            testID="tour-writing-start"
-            onPress={() => setView('exercise')}
-            style={({ pressed }) => [styles.heroCard, pressed && styles.promptCardPressed]}
-          >
-            <Text style={styles.heroTitle}>Bắt đầu viết</Text>
-            <Text style={styles.heroText}>Khám phá đề bài theo trình độ của bạn.</Text>
-            <Text style={styles.heroAction}>Chọn bài tập viết →</Text>
-          </Pressable>
-        </View>
+      {message ? <Text style={styles.message}>{message}</Text> : null}
+      <View style={[styles.dashboardLayout, desktop && styles.editorDesktop]}>
+        <View style={styles.dashboardMain}>
+          <View style={styles.section}>
+            <View style={styles.heroCard}>
+              <View style={styles.heroRow}>
+                <View style={styles.heroCopy}>
+                  <Text style={styles.heroTitle}>Bắt đầu viết</Text>
+                  <Text style={styles.heroText}>
+                    Chọn bài tập theo trình độ hoặc viết tự do.
+                  </Text>
+                </View>
+                <NihongoMascot pose="writing" size={88} decorative />
+              </View>
+              <View style={styles.heroActions}>
+                <Pressable
+                  accessibilityRole="button"
+                  accessibilityLabel="Chọn bài tập viết"
+                  testID="tour-writing-start"
+                  onPress={() => setView('exercise')}
+                  style={({ pressed }) => [
+                    styles.startButton,
+                    pressed && styles.startButtonPressed,
+                  ]}
+                >
+                  <PencilIcon size={16} color={colors.onPrimary} />
+                  <Text style={styles.startButtonText}>Chọn bài tập</Text>
+                  <ArrowRightIcon size={16} color={colors.onPrimary} />
+                </Pressable>
+                <Pressable
+                  accessibilityRole="button"
+                  accessibilityLabel="Viết tự do"
+                  onPress={beginCustomWriting}
+                  style={({ pressed }) => [
+                    styles.freeButton,
+                    pressed && styles.promptCardPressed,
+                  ]}
+                >
+                  <Text style={styles.freeButtonText}>Viết tự do</Text>
+                </Pressable>
+              </View>
+            </View>
+          </View>
 
-        <View style={styles.section}>
+          <View style={styles.section}>
+            <Text style={styles.sectionTitle}>Bài viết gần đây</Text>
+            {submissions.length === 0 && drafts.length === 0 ? (
+              <View style={styles.recentEmpty}>
+                <Text style={styles.empty}>Chưa có bài viết nào.</Text>
+                <Text style={styles.empty}>
+                  Hãy chọn bài tập đầu tiên để bắt đầu hành trình luyện viết.
+                </Text>
+              </View>
+            ) : (
+              [...submissions.slice(0, 2), ...drafts.slice(0, 2)]
+                .slice(0, 4)
+                .map(item => {
+                  const isDraft = 'prompt_id' in item;
+                  const title = isDraft
+                    ? item.prompt?.title ?? 'Bài viết tự do'
+                    : item.promptTitle;
+                  const text = item.text;
+                  return (
+                    <Pressable
+                      key={isDraft ? `draft-${item.id}` : item.id}
+                      accessibilityRole="button"
+                      onPress={() => {
+                        if (isDraft) {
+                          setSelectedPromptId(
+                            item.prompt_id || CUSTOM_WRITING_ID,
+                          );
+                          setAnswer(item.text);
+                          setView('editor');
+                        } else {
+                          setSelectedSubmissionId(item.id);
+                          setView('submission-detail');
+                        }
+                      }}
+                      style={({ pressed }) => [
+                        styles.draftCard,
+                        pressed && styles.promptCardPressed,
+                      ]}
+                    >
+                      <Text style={styles.draftPrompt}>{title}</Text>
+                      <Text style={styles.draftText} numberOfLines={2}>
+                        {text}
+                      </Text>
+                      {isDraft ? (
+                        <Text style={styles.draftMeta}>
+                          {getWritingCharacterCount(item.text)} ký tự · Bản nháp
+                        </Text>
+                      ) : (
+                        <Text style={styles.draftMeta}>{item.score} điểm</Text>
+                      )}
+                    </Pressable>
+                  );
+                })
+            )}
+          </View>
+        </View>
+        <View
+          style={[styles.managementPanel, desktop && styles.managementDesktop]}
+        >
           <Text style={styles.sectionTitle}>Quản lý bài viết</Text>
-          <View style={styles.quickGrid}>
-            <Pressable style={styles.quickCard} onPress={() => setView('drafts')}>
+          <View style={styles.managementList}>
+            <Pressable
+              accessibilityRole="button"
+              style={({ pressed }) => [
+                styles.managementLink,
+                pressed && styles.promptCardPressed,
+              ]}
+              onPress={() => setView('drafts')}
+            >
+              <PencilIcon size={18} color={colors.primaryText} />
               <Text style={styles.quickLabel}>Bản nháp</Text>
               <Text style={styles.quickMeta}>{drafts.length} mục</Text>
             </Pressable>
             <Pressable
               accessibilityRole="button"
               accessibilityLabel="Bài đã nộp"
-              style={styles.quickCard}
+              style={({ pressed }) => [
+                styles.managementLink,
+                pressed && styles.promptCardPressed,
+              ]}
               onPress={() => setView('submissions')}
             >
+              <CheckIcon size={18} color={colors.primaryText} />
               <Text style={styles.quickLabel}>Bài đã nộp</Text>
               <Text style={styles.quickMeta}>{submissions.length} bài</Text>
             </Pressable>
-            <Pressable style={styles.quickCard} onPress={beginCompareFlow}>
+            <Pressable
+              accessibilityRole="button"
+              style={({ pressed }) => [
+                styles.managementLink,
+                pressed && styles.promptCardPressed,
+              ]}
+              onPress={beginCompareFlow}
+            >
+              <RefreshIcon size={18} color={colors.primaryText} />
               <Text style={styles.quickLabel}>So sánh bài viết</Text>
-              <Text style={styles.quickMeta}>Lịch sử phiên bản</Text>
             </Pressable>
-            <Pressable style={styles.quickCard} onPress={() => setView('progress')}>
+            <Pressable
+              accessibilityRole="button"
+              style={({ pressed }) => [
+                styles.managementLink,
+                pressed && styles.promptCardPressed,
+              ]}
+              onPress={() => setView('progress')}
+            >
+              <HomeFeatureIcon
+                name="reading"
+                size={18}
+                color={colors.primaryText}
+              />
               <Text style={styles.quickLabel}>Tiến độ viết</Text>
-              <Text style={styles.quickMeta}>Theo dõi tiến bộ</Text>
             </Pressable>
           </View>
         </View>
-
-        <View style={styles.section}>
-          <Text style={styles.sectionTitle}>Bài viết gần đây</Text>
-          {submissions.length === 0 && drafts.length === 0 ? (
-            <View style={styles.recentEmpty}>
-              <Text style={styles.empty}>Chưa có bài viết nào.</Text>
-              <Text style={styles.empty}>Hãy chọn bài tập đầu tiên để bắt đầu hành trình luyện viết.</Text>
-            </View>
-          ) : (
-            [...submissions.slice(0, 2), ...drafts.slice(0, 2)].slice(0, 4).map((item, index) => {
-              const isDraft = 'prompt_id' in item;
-              const title = isDraft ? (item.prompt?.title ?? 'Bài viết') : item.promptTitle;
-              const text = isDraft ? item.text : item.text;
-              return (
-                <Pressable
-                  key={isDraft ? `draft-${item.id}` : item.id}
-                  onPress={() => {
-                    if (isDraft) {
-                      setSelectedPromptId(item.prompt_id);
-                      setAnswer(item.text);
-                      setView('editor');
-                    } else {
-                      setSelectedSubmissionId(item.id);
-                      setView('submission-detail');
-                    }
-                  }}
-                  style={({ pressed }) => [styles.draftCard, pressed && styles.promptCardPressed]}
-                >
-                  <Text style={styles.draftPrompt}>{title}</Text>
-                  <Text style={styles.draftText} numberOfLines={2}>{text}</Text>
-                  {isDraft ? <Text style={styles.draftMeta}>{item.word_count} từ</Text> : <Text style={styles.draftMeta}>{item.score} điểm</Text>}
-                </Pressable>
-              );
-            })
-          )}
-        </View>
-      </ScrollView>
-    </AuthShell>
+      </View>
+    </WritingShell>
   );
 }
 
 const styles = StyleSheet.create({
+  inlineAction: { alignSelf: 'flex-start', minWidth: 180 },
+  desktopResultText: { fontSize: 16, lineHeight: 28 },
+  dashboardLayout: { gap: spacing.xxl, alignItems: 'stretch' },
+  dashboardMain: { flex: 1, minWidth: 0 },
+  heroRow: { flexDirection: 'row', alignItems: 'center', gap: spacing.lg },
+  heroCopy: { flex: 1, minWidth: 0, gap: spacing.sm },
+  heroActions: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.md },
+  startButton: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: spacing.sm,
+    backgroundColor: colors.primary,
+    borderRadius: radius.pill,
+    minHeight: 44,
+    paddingHorizontal: spacing.lg,
+  },
+  startButtonPressed: { backgroundColor: colors.primaryPressed },
+  startButtonText: { ...typography.button, color: colors.onPrimary },
+  freeButton: {
+    borderWidth: 1,
+    borderColor: colors.primary,
+    borderRadius: radius.pill,
+    minHeight: 44,
+    paddingHorizontal: spacing.lg,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  freeButtonText: { ...typography.button, color: colors.primaryText },
+  managementPanel: {
+    borderWidth: 1,
+    borderColor: colors.divider,
+    borderRadius: radius.card,
+    backgroundColor: colors.surface,
+    padding: spacing.xl,
+    gap: spacing.lg,
+    alignSelf: 'stretch',
+  },
+  managementDesktop: { width: 300, alignSelf: 'flex-start' },
+  managementList: { gap: spacing.sm },
+  managementLink: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: spacing.md,
+    minHeight: 48,
+    padding: spacing.md,
+    borderRadius: radius.small,
+  },
+  promptGrid: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.lg },
+  editorLayout: { gap: spacing.xxl },
+  editorDesktop: { flexDirection: 'row', alignItems: 'flex-start' },
+  editorSidebar: { gap: spacing.lg },
+  editorSidebarDesktop: { width: 280 },
+  editorPaper: {
+    backgroundColor: colors.surface,
+    borderWidth: 1,
+    borderColor: colors.divider,
+    borderRadius: radius.card,
+    padding: spacing.xl,
+    gap: spacing.lg,
+    boxShadow: shadowMd,
+  },
+  editorPaperDesktop: { flex: 1, minWidth: 0 },
+  desktopTextArea: { minHeight: 380, fontSize: 16, lineHeight: 28 },
+  textAreaFocused: { borderColor: colors.focus },
+  editorActions: { justifyContent: 'flex-end' },
+  compactAction: { minWidth: 136 },
+  levelBadge: {
+    ...typography.caption,
+    color: colors.primaryText,
+    backgroundColor: colors.surfaceTint,
+    paddingHorizontal: spacing.md,
+    paddingVertical: spacing.xs,
+    borderRadius: radius.pill,
+  },
+  resultColumns: { gap: spacing.lg, alignItems: 'stretch' },
+  resultColumn: { flex: 1, minWidth: 0 },
   section: { gap: spacing.lg, marginBottom: spacing.xl },
   heroCard: {
     backgroundColor: colors.surface,
@@ -1151,28 +1623,7 @@ const styles = StyleSheet.create({
   },
   heroTitle: { ...typography.title, color: colors.dark },
   heroText: { ...typography.body, color: colors.body },
-  heroAction: {
-    ...typography.label,
-    color: colors.primaryText,
-    marginTop: spacing.xs,
-  },
   sectionTitle: { ...typography.heading, color: colors.dark },
-  quickGrid: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    gap: spacing.md,
-    justifyContent: 'space-between',
-  },
-  quickCard: {
-    width: '48%',
-    backgroundColor: colors.surface,
-    borderRadius: radius.small,
-    padding: spacing.lg,
-    borderWidth: 1,
-    borderColor: colors.divider,
-    boxShadow: shadowMd,
-    gap: spacing.xs,
-  },
   quickLabel: { ...typography.label, color: colors.dark },
   quickMeta: { ...typography.caption, color: colors.muted },
   levelGroup: { gap: spacing.md },
@@ -1210,9 +1661,9 @@ const styles = StyleSheet.create({
   textArea: {
     minHeight: 180,
     borderWidth: 1,
-    borderColor: colors.divider,
-    backgroundColor: colors.surface,
-    borderRadius: radius.small,
+    borderColor: colors.border,
+    backgroundColor: colors.surfaceTint,
+    borderRadius: radius.input,
     padding: spacing.lg,
     color: colors.dark,
     ...typography.body,
@@ -1435,7 +1886,12 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     gap: spacing.md,
   },
-  compareText: { ...typography.body, color: colors.dark, lineHeight: 20, flex: 1 },
+  compareText: {
+    ...typography.body,
+    color: colors.dark,
+    lineHeight: 20,
+    flex: 1,
+  },
   metricGrid: {
     flexDirection: 'row',
     justifyContent: 'space-between',

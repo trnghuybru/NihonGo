@@ -1,3 +1,4 @@
+import { LearningLevelContext } from '../src/hooks/useLearningLevel';
 import React from 'react';
 import Renderer, { act } from 'react-test-renderer';
 import { Switch, Text, TextInput } from 'react-native';
@@ -89,7 +90,7 @@ test('filters by level, type and search and resets pagination', async () => {
   await render();
   await press('Trang bài đọc 2');
   expect(readingService.list).toHaveBeenLastCalledWith({
-    level: '',
+    level: 'N5',
     type: '',
     q: '',
     page: 2,
@@ -178,13 +179,13 @@ test('shows detail load errors and retries without leaving the selected passage'
 test('opens all levels and retains selected filters when the panel is collapsed', async () => {
   await render();
   expect(readingService.list).toHaveBeenLastCalledWith({
-    level: '',
+    level: 'N5',
     type: '',
     q: '',
     page: 1,
   });
   expect(text()).toContain('Thư viện bài đọc');
-  expect(text()).toContain('Tất cả bài đọc');
+  expect(text()).toContain('N5');
   expect(control('N4')).toBeUndefined();
   await press('Bộ lọc bài đọc');
   await press('N4');
@@ -196,6 +197,37 @@ test('opens all levels and retains selected filters when the panel is collapsed'
       typeof n.props.onPress === 'function' && n.props.label === 'Xóa bộ lọc',
   )[0];
   await act(async () => reset.props.onPress());
+  expect(readingService.list).toHaveBeenLastCalledWith({
+    level: '',
+    type: '',
+    q: '',
+    page: 1,
+  });
+});
+
+test('uses profile level by default but allows another level and all levels', async () => {
+  await act(async () => {
+    tree = Renderer.create(
+      <LearningLevelContext.Provider value="N2">
+        <ReadingScreen accountId="reader" />
+      </LearningLevelContext.Provider>,
+    );
+  });
+  expect(readingService.list).toHaveBeenLastCalledWith({
+    level: 'N2',
+    type: '',
+    q: '',
+    page: 1,
+  });
+  await press('Bộ lọc bài đọc');
+  await press('N1');
+  expect(readingService.list).toHaveBeenLastCalledWith({
+    level: 'N1',
+    type: '',
+    q: '',
+    page: 1,
+  });
+  await press('Tất cả trình độ');
   expect(readingService.list).toHaveBeenLastCalledWith({
     level: '',
     type: '',

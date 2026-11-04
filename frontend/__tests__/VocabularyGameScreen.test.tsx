@@ -1,3 +1,4 @@
+import { LearningLevelContext } from '../src/hooks/useLearningLevel';
 import React from 'react';
 import Renderer, { act } from 'react-test-renderer';
 import { TextInput, Text } from 'react-native';
@@ -170,4 +171,18 @@ test('a non-host sees every player in the final standings', async () => {
   expect(labels).toContain('Lan');
   expect(labels).toContain('20');
   expect(control('Về khu chơi')).toBeDefined();
+});
+
+test('new game catalog starts at the profile level', async () => {
+  await act(async () => {
+    tree.unmount();
+    tree = Renderer.create(
+      <LearningLevelContext.Provider value="N2">
+        <VocabularyGameScreen userId="u" onExit={exit} />
+      </LearningLevelContext.Provider>,
+    );
+  });
+  expect(gameService.catalog).toHaveBeenLastCalledWith('N2', 1);
+  await press('N4');
+  expect(gameService.catalog).toHaveBeenLastCalledWith('N4', 1);
 });

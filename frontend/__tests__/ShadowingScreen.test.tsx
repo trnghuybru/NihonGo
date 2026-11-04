@@ -1,3 +1,5 @@
+import { LearningLevelContext } from '../src/hooks/useLearningLevel';
+import type { LearningLevel } from '../src/services/learningService';
 import React from 'react';
 import Renderer, { act } from 'react-test-renderer';
 import { AppState, FlatList, Text, TextInput } from 'react-native';
@@ -143,12 +145,17 @@ afterEach(async () => {
   jest.useRealTimers();
   jest.restoreAllMocks();
 });
-async function render() {
+async function render(level: LearningLevel = 'N3') {
   await act(async () => {
-    tree = Renderer.create(<ShadowingScreen />, {
-      createNodeMock: element =>
-        element.type === 'WebView' ? { injectJavaScript } : null,
-    });
+    tree = Renderer.create(
+      <LearningLevelContext.Provider value={level}>
+        <ShadowingScreen />
+      </LearningLevelContext.Provider>,
+      {
+        createNodeMock: element =>
+          element.type === 'WebView' ? { injectJavaScript } : null,
+      },
+    );
   });
 }
 async function press(label: string) {
@@ -1311,3 +1318,24 @@ test('unanswered question opens at 5:00 after seeking to 4:58 using actual playb
     false,
   );
 });
+
+test.each([
+  ['N2', 'N2'],
+  ['beginner', 'N5'],
+] as const)(
+  'uses profile %s for quiz cache lookup without generating AI questions',
+  async (profileLevel, expectedLevel) => {
+    await render(profileLevel);
+    await press('Luyện shadowing');
+    expect(shadowingService.savedQuestions).toHaveBeenCalledWith(
+      'job-1',
+      expectedLevel,
+    );
+    expect(shadowingService.questions).not.toHaveBeenCalled();
+    await press('Trình độ N4');
+    expect(shadowingService.savedQuestions).toHaveBeenLastCalledWith(
+      'job-1',
+      'N4',
+    );
+  },
+);

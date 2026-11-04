@@ -1,3 +1,5 @@
+import { LearningLevelContext } from '../src/hooks/useLearningLevel';
+import type { LearningLevel } from '../src/services/learningService';
 import React from 'react';
 import { Modal, SectionList, Text, TextInput } from 'react-native';
 import Renderer, { act } from 'react-test-renderer';
@@ -151,11 +153,22 @@ beforeEach(() => {
 afterEach(async () => {
   await act(async () => tree?.unmount());
 });
-async function render(choose = true) {
+async function render(
+  choose = true,
+  level: LearningLevel = 'N5',
+  allLevels = true,
+) {
   await act(async () => {
-    tree = Renderer.create(<SpeakingScenariosScreen />);
+    tree = Renderer.create(
+      <LearningLevelContext.Provider value={level}>
+        <SpeakingScenariosScreen />
+      </LearningLevelContext.Provider>,
+    );
   });
-  if (choose) await press('Cuộc trò chuyện mới');
+  if (choose) {
+    await press('Cuộc trò chuyện mới');
+    if (allLevels) await press('Mọi trình độ');
+  }
 }
 function callback(label: string) {
   const node = tree.root.findAll(
@@ -340,7 +353,7 @@ test('closing a loading preview ignores its late response and never starts a ses
 test('keeps loading, network error, and empty results distinct', async () => {
   const pending = deferred<ScenarioList>();
   jest.mocked(speakingService.list).mockReturnValueOnce(pending.promise);
-  await render();
+  await render(true, 'N5', false);
   expect(screenText()).toContain('Đang tải');
   expect(screenText()).not.toContain('Chưa có tình huống phù hợp');
   await act(async () => pending.resolve(response([])));
@@ -359,7 +372,7 @@ test('loads more pages and ignores stale results after changing filters', async 
   jest
     .mocked(speakingService.list)
     .mockResolvedValueOnce(response([first], 1, 2, 2));
-  await render();
+  await render(true, 'N5', false);
   jest
     .mocked(speakingService.list)
     .mockRejectedValueOnce(new Error('Không tải được trang tiếp'));
@@ -384,7 +397,7 @@ test('appends pages without duplicate scenario cards', async () => {
   jest
     .mocked(speakingService.list)
     .mockResolvedValueOnce(response([first], 1, 2, 2));
-  await render();
+  await render(true, 'N5', false);
   jest
     .mocked(speakingService.list)
     .mockResolvedValueOnce(response([first, second], 2, 2, 2));
@@ -641,4 +654,29 @@ test('opens completed conversations for reading and disables sending', async () 
   expect(tree.root.findAllByType(TextInput)).toHaveLength(0);
   expect(screenText()).toContain('Xem điểm & nhận xét');
   expect(speakingService.start).not.toHaveBeenCalled();
+});
+
+test('defaults to the profile level and keeps manual all-level selection available', async () => {
+  await render(true, 'N3', false);
+  expect(speakingService.list).toHaveBeenLastCalledWith({
+    category_id: undefined,
+    level: 'N3',
+    language_code: undefined,
+    q: '',
+  });
+  expect(scenarios().map((item: ScenarioDetail) => item.id)).toEqual([
+    second.id,
+  ]);
+  await press('Mọi trình độ');
+  expect(scenarios()).toHaveLength(2);
+});
+
+test('keeps the beginner profile for speaking scenarios instead of converting it into a JLPT filter', async () => {
+  await render(true, 'beginner', false);
+  expect(speakingService.list).toHaveBeenLastCalledWith({
+    category_id: undefined,
+    level: 'beginner',
+    language_code: undefined,
+    q: '',
+  });
 });

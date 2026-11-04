@@ -1,3 +1,4 @@
+import { LearningLevelContext } from '../hooks/useLearningLevel';
 import { decodeRouteParam } from '../navigation/webNavigation';
 import { lazy, Suspense, useCallback, useState } from 'react';
 import type { ReactNode } from 'react';
@@ -581,13 +582,15 @@ export function AuthenticatedScreen({ user }: { user: User }) {
       />
     );
   return (
-    <StudyTimeProvider
-      key={user.id}
-      accountId={user.id}
-      goalMinutes={profile.daily_minutes}
-    >
-      <WebWorkspace user={user} profile={profile} options={options} />
-    </StudyTimeProvider>
+    <LearningLevelContext.Provider value={profile.level}>
+      <StudyTimeProvider
+        key={user.id}
+        accountId={user.id}
+        goalMinutes={profile.daily_minutes}
+      >
+        <WebWorkspace user={user} profile={profile} options={options} />
+      </StudyTimeProvider>
+    </LearningLevelContext.Provider>
   );
 }
 const styles = StyleSheet.create({

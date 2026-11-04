@@ -1,3 +1,4 @@
+import { useDefaultJlptLevel, toJlptLevel } from '../hooks/useLearningLevel';
 import {
   type ComponentRef,
   useCallback,
@@ -20,6 +21,7 @@ import {
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { AuthButton, AuthNotice } from '../components/AuthForm';
 import { DeckPagination } from '../components/DeckPagination';
+import { ReadingScrollRegion } from '../components/ReadingScrollRegion';
 import { ReadingWorkspace } from '../components/ReadingWorkspace';
 import { ScreenBackHeader } from '../components/ScreenBackHeader';
 import { ShadowingWordPopup } from '../components/ShadowingWordLookup';
@@ -45,12 +47,15 @@ import {
 const levels = ['', 'N5', 'N4', 'N3', 'N2', 'N1'];
 export function ReadingScreen({
   accountId = 'local',
+  initialLevel,
   onExit,
 }: {
   accountId?: string;
   initialLevel?: string;
   onExit?: () => void;
 }) {
+  const profileLevel = useDefaultJlptLevel();
+  const defaultLevel = initialLevel ? toJlptLevel(initialLevel) : profileLevel;
   const web = useWebNavigation();
   const nav = useRef(web);
   nav.current = web;
@@ -58,15 +63,19 @@ export function ReadingScreen({
   const insets = useSafeAreaInsets();
   const bottom = useBottomNavigationInset();
   const [localFilters, setLocalFilters] = useState<ReadingFilters>({
-    level: '',
+    level: defaultLevel,
     type: '',
     q: '',
     page: 1,
   });
   const params = new URLSearchParams(web?.search ?? '');
+  const urlLevel = params.get('level');
   const filters: ReadingFilters = web
     ? {
-        level: params.get('level') ?? '',
+        level:
+          urlLevel !== null && levels.includes(urlLevel)
+            ? urlLevel
+            : defaultLevel,
         type: params.get('type') ?? '',
         q: params.get('q') ?? '',
         page: Math.max(1, Math.min(10000, Number(params.get('page')) || 1)),
@@ -198,17 +207,17 @@ export function ReadingScreen({
           </View>
         ) : null}
       </View>
-      <ScrollView
-        ref={scroll}
+      <ReadingScrollRegion
+        testID="reading-scroll-viewport"
+        scrollRef={scroll}
         style={styles.viewport}
-        scrollEnabled={!splitReader}
+        scrollable={!splitReader}
         contentContainerStyle={[
           styles.content,
           id && !splitReader && styles.readerContent,
           { paddingBottom: bottom + insets.bottom + spacing.xxl },
           splitReader && styles.splitContent,
         ]}
-        keyboardShouldPersistTaps="handled"
       >
         {!id ? (
           <>
@@ -453,7 +462,7 @@ export function ReadingScreen({
             }
           />
         ) : null}
-      </ScrollView>
+      </ReadingScrollRegion>
       <ShadowingWordPopup
         word={
           selection && passage ? passage.words[selection.key] ?? null : null

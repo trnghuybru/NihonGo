@@ -60,6 +60,20 @@ textarea:focus-visible {
     scroll-behavior: auto !important;
   }
 }
+/* Hide video-result scrollbars while keeping wheel and touch scrolling. */
+[data-testid='video-lookup-player-pane'],
+[data-testid='video-lookup-results'],
+[data-testid='video-lookup-results'] * {
+  scrollbar-width: none !important;
+}
+[data-testid='video-lookup-player-pane']::-webkit-scrollbar,
+[data-testid='video-lookup-results']::-webkit-scrollbar,
+[data-testid='video-lookup-results'] *::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
 /* Keep the study session and today's review together while browsing decks. */
 #flashcard-sticky-sidebar {
   position: sticky;

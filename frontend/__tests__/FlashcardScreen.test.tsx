@@ -1,3 +1,4 @@
+import { LearningLevelContext } from '../src/hooks/useLearningLevel';
 import React from 'react';
 import Renderer, { act } from 'react-test-renderer';
 import { AccessibilityInfo, Text, TextInput } from 'react-native';
@@ -337,4 +338,17 @@ test('hiding the flashcard screen removes its desktop header', async () => {
   );
   expect(tree.root.findAllByType(ScreenBackHeader)).toHaveLength(0);
   expect(setHeader).toHaveBeenLastCalledWith(null);
+});
+
+test('uses the profile level for available decks and still allows changing it', async () => {
+  await act(async () => {
+    tree = Renderer.create(
+      <LearningLevelContext.Provider value="N2">
+        <FlashcardScreen onExit={onExit} />
+      </LearningLevelContext.Provider>,
+    );
+  });
+  expect(flashcardService.decks).toHaveBeenLastCalledWith('lesson', 'N2', 1);
+  await press('Flashcard N4');
+  expect(flashcardService.decks).toHaveBeenLastCalledWith('lesson', 'N4', 1);
 });

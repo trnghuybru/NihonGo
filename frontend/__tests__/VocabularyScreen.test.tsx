@@ -1,3 +1,4 @@
+import { LearningLevelContext } from '../src/hooks/useLearningLevel';
 import React from 'react';
 import Renderer, { act } from 'react-test-renderer';
 import {
@@ -169,7 +170,11 @@ afterEach(async () => {
 });
 async function render(query = '', onExit?: () => void) {
   await act(async () => {
-    tree = Renderer.create(<VocabularyScreen query={query} onExit={onExit} />);
+    tree = Renderer.create(
+      <LearningLevelContext.Provider value="N2">
+        <VocabularyScreen query={query} onExit={onExit} />
+      </LearningLevelContext.Provider>,
+    );
   });
 }
 function button(label: string) {
@@ -198,7 +203,11 @@ async function openLesson() {
 
 test('quick lookup keeps the lesson mounted and preserves recall state when closed', async () => {
   await act(async () => {
-    tree = Renderer.create(<VocabularyScreen area="lessons" />);
+    tree = Renderer.create(
+      <LearningLevelContext.Provider value="N2">
+        <VocabularyScreen area="lessons" />
+      </LearningLevelContext.Provider>,
+    );
   });
   await openLesson();
   await press('Ẩn nghĩa để tự ôn');
@@ -540,10 +549,7 @@ test('video pagination requests a cursor and retry keeps the video query', async
     .mockRejectedValueOnce(new Error('Mất kết nối'));
   await render('人生');
   await act(async () =>
-    tree.root
-      .findAllByType(AuthButton)
-      .find(n => n.props.label === 'Ví dụ khác')!
-      .props.onPress(),
+    button('Ví dụ khác').props.onPress(),
   );
   expect(videoExamplesService.search).toHaveBeenCalledWith('人生', 'next');
   expect(contents()).toContain('Mất kết nối');

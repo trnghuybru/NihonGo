@@ -1,3 +1,4 @@
+import { useDefaultJlptLevel } from '../hooks/useLearningLevel';
 import { decodeRouteParam } from '../navigation/webNavigation';
 import { useWebNavigation } from '../navigation/webNavigation';
 import { FlashcardScreen } from './FlashcardScreen';
@@ -31,6 +32,7 @@ import { AuthIcon } from '../components/AuthIcon';
 import { HomeFeatureIcon } from '../components/HomeFeatureIcon';
 import {
   ChevronLeftIcon,
+  ChevronRightIcon,
   EyeIcon,
   EyeOffIcon,
   VolumeIcon,
@@ -386,6 +388,7 @@ function VocabularyContent({
   compact = false,
   embeddedVideos = false,
 }: VocabularyScreenProps & { embeddedVideos?: boolean }) {
+  const defaultLevel = useDefaultJlptLevel();
   const webContext = useWebNavigation();
   const web = !compact && area === 'lessons' ? webContext : null;
   const insets = useSafeAreaInsets();
@@ -407,7 +410,7 @@ function VocabularyContent({
     const value = web ? new URLSearchParams(web.search).get('level') : null;
     return JLPT_LEVELS.includes(value as JlptLevel)
       ? (value as JlptLevel)
-      : 'N2';
+      : defaultLevel;
   });
   const [section, setSection] = useState<'lessons' | 'lookup'>(
     area ?? (query.trim() ? 'lookup' : 'lessons'),
@@ -724,9 +727,19 @@ function VocabularyContent({
       {route.kind === 'videos' ? (
         <View style={styles.titleRow}>
           {backButton}
-          <Text accessibilityRole="header" style={styles.videoTitle}>
-            {title}
-          </Text>
+          <View style={styles.videoHeadingCopy}>
+            <Text accessibilityRole="header" style={styles.videoTitle}>
+              {title}
+            </Text>
+            <Text style={styles.caption} numberOfLines={1}>
+              “{route.query}”
+            </Text>
+          </View>
+          {state.status === 'ready' && state.data.videos ? (
+            <Text style={styles.videoCount}>
+              {state.data.videos.items.length} đoạn
+            </Text>
+          ) : null}
         </View>
       ) : null}
       {route.kind !== 'videos' && !compact ? (
@@ -976,7 +989,9 @@ function VocabularyContent({
         </View>
       ) : null}
       {!splitVideos ? videoPlayer : null}
-      {state.status === 'ready' && state.data.videos ? (
+      {route.kind !== 'videos' &&
+      state.status === 'ready' &&
+      state.data.videos ? (
         <Text style={styles.caption}>
           {state.data.videos.items.length} đoạn trên trang này
           {state.data.videos.has_more ? ' · còn ví dụ khác' : ''}
@@ -1013,6 +1028,7 @@ function VocabularyContent({
   );
   const resultsList = (
     <FlatList
+      testID={route.kind === 'videos' ? 'video-lookup-results' : undefined}
       ref={listRef}
       key={`${screenKey}-${route.kind === 'catalog' ? lessonColumns : 1}`}
       numColumns={route.kind === 'catalog' ? lessonColumns : 1}
@@ -1100,19 +1116,38 @@ function VocabularyContent({
           state.data.videos &&
           route.kind === 'videos' ? (
           <View style={styles.pagination}>
-            <AuthButton
-              label="Về đầu kết quả"
-              variant="text"
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel="Về đầu kết quả"
+              hitSlop={6}
               disabled={!route.after}
+              accessibilityState={{ disabled: !route.after }}
+              {...(Platform.OS === 'web' ? { title: 'Về đầu kết quả' } : {})}
+              style={({ pressed }) => [
+                styles.videoPageButton,
+                pressed && styles.pressed,
+              ]}
               onPress={() => {
                 setSelectedVideoId(null);
                 setRoute({ kind: 'videos', query: route.query });
               }}
-            />
-            <AuthButton
-              label="Ví dụ khác"
-              variant="text"
+            >
+              <ChevronLeftIcon
+                size={18}
+                color={route.after ? colors.primaryText : colors.disabledText}
+              />
+            </Pressable>
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel="Ví dụ khác"
+              hitSlop={6}
               disabled={!state.data.videos.has_more}
+              accessibilityState={{ disabled: !state.data.videos.has_more }}
+              {...(Platform.OS === 'web' ? { title: 'Ví dụ khác' } : {})}
+              style={({ pressed }) => [
+                styles.videoPageButton,
+                pressed && styles.pressed,
+              ]}
               onPress={() => {
                 setSelectedVideoId(null);
                 setRoute({
@@ -1120,7 +1155,16 @@ function VocabularyContent({
                   after: state.data.videos?.next_cursor || undefined,
                 });
               }}
-            />
+            >
+              <ChevronRightIcon
+                size={18}
+                color={
+                  state.data.videos.has_more
+                    ? colors.primaryText
+                    : colors.disabledText
+                }
+              />
+            </Pressable>
           </View>
         ) : undefined
       }
@@ -1134,6 +1178,9 @@ function VocabularyContent({
       {splitVideos ? (
         <View style={styles.videoWorkspace} testID="video-lookup-split">
           <ScrollView
+            testID="video-lookup-player-pane"
+            showsVerticalScrollIndicator={false}
+            showsHorizontalScrollIndicator={false}
             style={styles.videoPane}
             contentContainerStyle={styles.videoPaneContent}
           >
@@ -1249,11 +1296,20 @@ const styles = StyleSheet.create({
   introduction: { gap: spacing.sm },
   titleRow: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm },
   titleCopy: { flex: 1 },
+  videoHeadingCopy: { flex: 1, minWidth: 0, gap: spacing.xs },
   videoTitle: {
-    ...typography.title,
+    ...typography.heading,
+    fontSize: 16,
+    lineHeight: 24,
     color: colors.dark,
-    flex: 1,
-    textAlign: 'right',
+  },
+  videoCount: {
+    ...typography.caption,
+    color: colors.badgeText,
+    backgroundColor: colors.badgeBg,
+    paddingHorizontal: spacing.sm,
+    paddingVertical: spacing.xs,
+    borderRadius: radius.pill,
   },
   listHeading: {
     flexDirection: 'row',
@@ -1445,6 +1501,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: spacing.sm,
     paddingVertical: spacing.xl,
+  },
+  videoPageButton: {
+    width: 34,
+    height: 34,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: radius.pill,
+    backgroundColor: colors.surfaceTint,
   },
   pagination: {
     flexDirection: 'row',

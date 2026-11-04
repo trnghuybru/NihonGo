@@ -1,3 +1,4 @@
+import { LearningLevelContext } from '../hooks/useLearningLevel';
 import { VocabularyGameScreen } from './VocabularyGameScreen';
 import type { DictionaryHistoryItem } from '../services/dictionaryService';
 import { BottomNavigationInsetContext } from '../hooks/useBottomNavigationInset';
@@ -449,22 +450,24 @@ export function AuthenticatedScreen({ user }: { user: User }) {
     );
   }
   return (
-    <StudyTimeProvider
-      key={user.id}
-      accountId={user.id}
-      goalMinutes={profile.daily_minutes}
-    >
-      <MainTabs
-        user={user}
-        profile={profile}
-        options={options}
-        selectedTab={selectedTab}
-        onSelectTab={selectTab}
-        onEditLearning={() => setEditing(true)}
-        showPlan={showPlan}
-        onOpenPlan={() => setShowPlan(true)}
-      />
-    </StudyTimeProvider>
+    <LearningLevelContext.Provider value={profile.level}>
+      <StudyTimeProvider
+        key={user.id}
+        accountId={user.id}
+        goalMinutes={profile.daily_minutes}
+      >
+        <MainTabs
+          user={user}
+          profile={profile}
+          options={options}
+          selectedTab={selectedTab}
+          onSelectTab={selectTab}
+          onEditLearning={() => setEditing(true)}
+          showPlan={showPlan}
+          onOpenPlan={() => setShowPlan(true)}
+        />
+      </StudyTimeProvider>
+    </LearningLevelContext.Provider>
   );
 }
 

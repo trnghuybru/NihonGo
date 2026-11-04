@@ -1,11 +1,12 @@
-from flask import Blueprint, g, jsonify
-from sqlalchemy import select
+from flask import Blueprint, g, jsonify, request
+from sqlalchemy import select, func, or_
 from sqlalchemy.exc import OperationalError, ProgrammingError
 
 from api_errors import ApiError
 from auth.security import body, require_auth
 from extensions import db
 from .evaluation import evaluate_writing
+from .rubric import normalize_level
 from .models import WritingDraft, WritingPrompt, WritingSubmission, now
 
 bp = Blueprint("writing", __name__, url_prefix="/api/writing")
@@ -22,112 +23,157 @@ def api_error(error):
 DEFAULT_PROMPTS = [
     {
         "id": "self-introduction",
-        "title": "Giới thiệu bản thân",
+        "title": "じこしょうかい",
         "level": "N5",
         "prompt_type": "sentence",
-        "instruction": "Viết 3 đến 5 câu ngắn để giới thiệu tên, nghề nghiệp và thói quen học tiếng Nhật của bạn.",
-        "model_hint": "Bắt đầu bằng tên và sở thích, dùng các câu đơn giản. Không cần viết dài, ưu tiên rõ ràng.",
+        "instruction": "じぶんの なまえ、しごと、すきなことを ３〜５つの 文で かいてください。",
+        "model_hint": "① なまえと しごとを かきましょう。\n② すきなことを かきましょう。\n③ にほんごを いつ べんきょうするか かきましょう。\nつかう ことば：わたしは〜です。／〜が すきです。",
         "sort_order": 1,
     },
     {
         "id": "daily-routine",
-        "title": "Thói quen hằng ngày",
+        "title": "わたしの一日",
         "level": "N5",
         "prompt_type": "routine",
-        "instruction": "Mô tả lịch trình của bạn trong ngày bằng tiếng Nhật, kể từ khi thức dậy đến khi đi ngủ.",
-        "model_hint": "Dùng thì hiện tại, các động từ quen thuộc như 起きます, 食べます, 勉強します.",
+        "instruction": "あさ おきてから よる ねるまで、なにを しますか。３〜５つの 文で かいてください。",
+        "model_hint": "① あさ、なんじに おきますか。\n② ひる、なにを しますか。\n③ よる、なんじに ねますか。\nつかう ことば：〜じに おきます。／ごはんを たべます。／べんきょうします。",
         "sort_order": 2,
     },
     {
         "id": "family",
-        "title": "Gia đình",
+        "title": "わたしのかぞく",
         "level": "N5",
         "prompt_type": "sentence",
-        "instruction": "Viết ngắn về thành viên trong gia đình và mối quan hệ giữa bạn với họ.",
-        "model_hint": "Dùng các cụm từ như 父, 母, 兄弟, 〜です, 〜ます.",
+        "instruction": "あなたの かぞくについて、３〜５つの 文で かいてください。",
+        "model_hint": "① かぞくは なんにんですか。\n② だれが いますか。\n③ かぞくと なにを しますか。\nつかう ことば：ちち／はは／あに／あね／〜にん／いっしょに〜ます。",
         "sort_order": 3,
     },
     {
         "id": "favorite-place",
-        "title": "Nơi yêu thích",
+        "title": "好きな場所",
         "level": "N4",
         "prompt_type": "description",
-        "instruction": "Viết một đoạn ngắn về nơi bạn thích nhất và lý do bạn thích nó.",
-        "model_hint": "Dùng từ miêu tả: きれい, 静か, 便利, やすらぎ. Có thể viết 4 đến 6 câu.",
+        "instruction": "あなたの好きな場所について、４〜６文で書いてください。どんな場所か、どうして好きなのかを説明してください。",
+        "model_hint": "① どこにある、どんな場所ですか。\n② そこで何ができますか。行ったとき、何をしましたか。\n③ 好きな理由を書きましょう。\n使ってみましょう：〜たり〜たりします。／〜ことができます。／〜からです。",
         "sort_order": 4,
     },
     {
         "id": "memorable-trip",
-        "title": "Chuyến đi đáng nhớ",
+        "title": "思い出の旅行",
         "level": "N4",
         "prompt_type": "description",
-        "instruction": "Kể lại một chuyến đi mà bạn nhớ nhất, nơi bạn đến và điều khiến bạn ấn tượng.",
-        "model_hint": "Sử dụng thì quá khứ và các từ chỉ nơi chốn, thời gian, cảm xúc như きれい, 楽しかった, すごく.",
+        "instruction": "思い出に残っている旅行について、４〜６文で書いてください。行った場所、したこと、感じたことを紹介してください。",
+        "model_hint": "① いつ、だれと、どこへ行きましたか。\n② 何を見たり、食べたりしましたか。\n③ 何がいちばん楽しかったですか。\n使ってみましょう：〜たことがあります。／〜たり〜たりしました。／〜と思いました。",
         "sort_order": 5,
     },
     {
         "id": "hobby",
-        "title": "Sở thích",
+        "title": "私のしゅみ",
         "level": "N4",
         "prompt_type": "description",
-        "instruction": "Viết về sở thích của bạn, bạn làm điều đó như thế nào và vì sao bạn thích nó.",
-        "model_hint": "Dùng các cấu trúc như 〜が好きです, 〜をしています, 〜の時間を楽しみます.",
+        "instruction": "あなたのしゅみについて、４〜６文で書いてください。いつ、どのように楽しんでいるか、好きな理由も書いてください。",
+        "model_hint": "① しゅみと、始めた時期を書きましょう。\n② どのくらいしますか。だれとしますか。\n③ 楽しいところを説明しましょう。\n使ってみましょう：〜ことが好きです。／〜ときに〜ます。／〜ので、〜。",
         "sort_order": 6,
     },
     {
         "id": "technology-life",
-        "title": "Công nghệ trong cuộc sống",
+        "title": "技術と私たちの生活",
         "level": "N3",
         "prompt_type": "description",
-        "instruction": "Viết một đoạn về cách công nghệ ảnh hưởng đến cuộc sống hàng ngày của bạn.",
-        "model_hint": "Nhấn mạnh sự tiện lợi, rủi ro và cách bạn sử dụng công nghệ trong học tập hoặc làm việc.",
+        "instruction": "身近な技術が生活にどのような変化をもたらしたか、８〜１０文で書いてください。便利な点と注意する点を挙げ、自分の考えを述べてください。",
+        "model_hint": "① スマートフォンなど、身近な技術を一つ取り上げましょう。\n② 便利になった点を、具体的な経験とともに説明しましょう。\n③ 使いすぎなどの問題を挙げ、上手な使い方を提案しましょう。\n使ってみましょう：〜ようになりました。／〜おかげで、〜。／〜一方で、〜。",
         "sort_order": 7,
     },
     {
         "id": "learning-language",
-        "title": "Học ngoại ngữ",
+        "title": "外国語を学ぶ理由",
         "level": "N3",
         "prompt_type": "discussion",
-        "instruction": "Viết về lý do bạn học ngoại ngữ, phương pháp học và những khó khăn bạn gặp phải.",
-        "model_hint": "Bạn có thể nêu lợi ích, động lực và kế hoạch học tập dài hạn bằng câu mạch lạc.",
+        "instruction": "外国語を学ぶ理由や学習方法について、８〜１０文で書いてください。これまでの経験、困っていること、これからの工夫を含めてください。",
+        "model_hint": "① 学び始めたきっかけと目標を書きましょう。\n② 効果があった学習方法を、例を挙げて説明しましょう。\n③ 今の課題と、それを解決するための計画をまとめましょう。\n使ってみましょう：〜ために、〜。／〜ようにしています。／〜ことによって、〜。",
         "sort_order": 8,
     },
     {
         "id": "future-goal",
-        "title": "Mục tiêu tương lai",
+        "title": "将来の目標",
         "level": "N3",
         "prompt_type": "discussion",
-        "instruction": "Viết về mục tiêu tương lai của bạn và kế hoạch để đạt được nó.",
-        "model_hint": "Sử dụng câu điều kiện, kế hoạch, và các động từ như 目指します, 勉強します, なるつもりです.",
+        "instruction": "将来の目標と、その目標を実現するための計画について、８〜１０文で書いてください。目標を持った理由や、予想される課題も説明してください。",
+        "model_hint": "① 目標と、それを目指す理由を述べましょう。\n② 今取り組んでいることを、具体的に説明しましょう。\n③ 今後の課題と、次に行うことをまとめましょう。\n使ってみましょう：〜ようになるために、〜。／〜ば、〜。／〜ことにしました。",
         "sort_order": 9,
-    },
+    }
 ]
 
+PROMPT_CATEGORIES = [
+    {"id": "daily", "label": "Đời sống"},
+    {"id": "study", "label": "Học tập"},
+    {"id": "work", "label": "Công việc"},
+    {"id": "society", "label": "Xã hội"},
+]
+for seed in DEFAULT_PROMPTS:
+    seed["category"] = {"technology-life": "society", "learning-language": "study", "future-goal": "work"}.get(seed["id"], "daily")
 
 def ensure_seed_prompts():
+    # Stable IDs update the built-in content without replacing drafts or custom topics.
+    seed_ids = [prompt["id"] for prompt in DEFAULT_PROMPTS]
+    statement = select(WritingPrompt).where(WritingPrompt.id.in_(seed_ids))
     try:
-        if db.session.query(WritingPrompt).count():
-            return
+        existing = {prompt.id: prompt for prompt in db.session.scalars(statement)}
     except (ProgrammingError, OperationalError):
-        if db.engine.dialect.name == "sqlite":
-            db.create_all()
-            if db.session.query(WritingPrompt).count():
-                return
-        raise ApiError("Dịch vụ viết đang chưa sẵn sàng. Vui lòng chạy migration hoặc thử lại sau.",
-                       503, "writing_unavailable")
-    for prompt in DEFAULT_PROMPTS:
-        db.session.add(WritingPrompt(**prompt))
-    db.session.commit()
+        db.session.rollback()
+        if db.engine.dialect.name != "sqlite":
+            raise ApiError("Dịch vụ viết đang chưa sẵn sàng. Vui lòng chạy migration hoặc thử lại sau.",
+                           503, "writing_unavailable")
+        db.create_all()
+        existing = {prompt.id: prompt for prompt in db.session.scalars(statement)}
+
+    changed = False
+    for seed in DEFAULT_PROMPTS:
+        prompt = existing.get(seed["id"])
+        if prompt is None:
+            db.session.add(WritingPrompt(**seed))
+            changed = True
+            continue
+        for field, value in seed.items():
+            if field != "id" and getattr(prompt, field) != value:
+                setattr(prompt, field, value)
+                changed = True
+    if changed:
+        db.session.commit()
 
 
 @bp.get("/prompts")
 @require_auth
 def list_prompts():
     ensure_seed_prompts()
-    prompts = db.session.scalars(
-        select(WritingPrompt).order_by(WritingPrompt.sort_order, WritingPrompt.created_at)
-    ).all()
-    return jsonify({"items": [prompt.public() for prompt in prompts]})
+    statement = select(WritingPrompt).order_by(WritingPrompt.sort_order, WritingPrompt.id)
+    # Preserve the existing unpaginated contract for native clients.
+    if "page" not in request.args:
+        prompts = db.session.scalars(statement).all()
+        return jsonify({"items": [prompt.public() for prompt in prompts]})
+    try:
+        page = max(1, int(request.args.get("page", "1")))
+        per_page = min(12, max(1, int(request.args.get("per_page", "12"))))
+    except ValueError:
+        raise ApiError("Trang không hợp lệ.", 422, "invalid_page")
+    statement = statement.where(WritingPrompt.prompt_type != "custom")
+    level = request.args.get("level", "").strip()
+    category = request.args.get("category", "").strip()
+    query = request.args.get("q", "").strip()[:160]
+    if level:
+        if level not in {"N5", "N4", "N3", "N2", "N1"}:
+            raise ApiError("Trình độ không hợp lệ.", 422, "invalid_level")
+        statement = statement.where(WritingPrompt.level == level)
+    if category:
+        if category not in {item["id"] for item in PROMPT_CATEGORIES}:
+            raise ApiError("Chủ đề không hợp lệ.", 422, "invalid_category")
+        statement = statement.where(WritingPrompt.category == category)
+    if query:
+        statement = statement.where(or_(WritingPrompt.title.icontains(query, autoescape=True), WritingPrompt.instruction.icontains(query, autoescape=True)))
+    total = db.session.scalar(select(func.count()).select_from(statement.order_by(None).subquery()))
+    prompts = db.session.scalars(statement.offset((page - 1) * per_page).limit(per_page)).all()
+    return jsonify({"items": [prompt.public() for prompt in prompts], "categories": PROMPT_CATEGORIES,
+                    "pagination": {"page": page, "per_page": per_page, "total": total, "has_more": page * per_page < total}})
 
 
 @bp.get("/drafts")
@@ -265,7 +311,7 @@ def create_submission():
     assessment = evaluate_writing(
         trimmed,
         prompt_title,
-        prompt.level if prompt else "",
+        prompt.level if prompt and prompt.level in ('N5', 'N4', 'N3', 'N2', 'N1') else normalize_level(data.get('level')),
         prompt.instruction if prompt else "",
     )
 
@@ -277,6 +323,7 @@ def create_submission():
         corrected_text=assessment["corrected_text"],
         score=assessment["score"],
         feedback=assessment["feedback"],
+        assessment=assessment.get("assessment"),
         submitted_at=now(),
         created_at=now(),
         updated_at=now(),
@@ -302,12 +349,13 @@ def reevaluate_submission(submission_id):
     assessment = evaluate_writing(
         submission.text,
         submission.prompt_title,
-        prompt.level if prompt else "",
+        prompt.level if prompt and prompt.level in ('N5', 'N4', 'N3', 'N2', 'N1') else (submission.assessment or {}).get('level', 'N5'),
         prompt.instruction if prompt else "",
     )
     submission.corrected_text = assessment["corrected_text"]
     submission.score = assessment["score"]
     submission.feedback = assessment["feedback"]
+    submission.assessment = assessment.get("assessment")
     submission.updated_at = now()
     db.session.commit()
     return jsonify({"submission": submission.public()})

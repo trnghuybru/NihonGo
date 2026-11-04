@@ -5,6 +5,7 @@ export type WritingPrompt = {
   title: string;
   level: string;
   prompt_type: string;
+  category?: string;
   instruction: string;
   model_hint: string;
   sort_order: number;
@@ -22,6 +23,30 @@ export type WritingDraft = {
   prompt: WritingPrompt | null;
 };
 
+export type WritingCorrection = {
+  start: number;
+  end: number;
+  original: string;
+  replacement: string;
+  explanation: string;
+  criterion_id: string;
+  kind: 'error' | 'suggestion';
+};
+
+export type WritingAssessment = {
+  version: 1;
+  level: string;
+  criteria: {
+    id: string;
+    title: string;
+    score: number;
+    comment: string;
+    subcriteria: { id: string; title: string; score: number }[];
+  }[];
+  corrections: WritingCorrection[];
+  next_step: string;
+};
+
 export type WritingSubmissionApi = {
   id: string;
   user_id: string;
@@ -32,17 +57,44 @@ export type WritingSubmissionApi = {
   correctedText?: string;
   score: number;
   feedback: string;
+  assessment?: WritingAssessment | null;
+  prompt?: WritingPrompt | null;
   submitted_at: number;
   submittedAt?: number | string;
 };
 
+export type WritingPromptPage = {
+  items: WritingPrompt[];
+  categories?: { id: string; label: string }[];
+  pagination?: {
+    page: number;
+    per_page: number;
+    total: number;
+    has_more: boolean;
+  };
+};
 export const writingService = {
-  prompts: () =>
-    authenticatedRequest<{ items: WritingPrompt[] }>('/writing/prompts'),
+  prompts: (filters?: {
+    page: number;
+    level?: string;
+    category?: string;
+    q?: string;
+  }) => {
+    const query = filters
+      ? '?' +
+        Object.entries({ ...filters, per_page: 12 })
+          .filter(([, value]) => value !== '')
+          .map(([key, value]) => `${key}=${encodeURIComponent(value)}`)
+          .join('&')
+      : '';
+    return authenticatedRequest<WritingPromptPage>('/writing/prompts' + query);
+  },
   drafts: () =>
     authenticatedRequest<{ items: WritingDraft[] }>('/writing/drafts'),
   submissions: () =>
-    authenticatedRequest<{ items: WritingSubmissionApi[] }>('/writing/submissions'),
+    authenticatedRequest<{ items: WritingSubmissionApi[] }>(
+      '/writing/submissions',
+    ),
   saveDraft: (promptId: string, text: string, customTitle?: string) =>
     authenticatedRequest<{ draft: WritingDraft }>(
       '/writing/drafts',
@@ -78,16 +130,19 @@ export const writingService = {
     prompt_id?: string;
     prompt_title?: string;
     text: string;
+    level?: string;
   }) =>
     authenticatedRequest<{ submission: WritingSubmissionApi }>(
       '/writing/submissions',
       payload,
       'POST',
+      { timeoutMs: 90000 },
     ),
   evaluateSubmission: (submissionId: string) =>
     authenticatedRequest<{ submission: WritingSubmissionApi }>(
       `/writing/submissions/${encodeURIComponent(submissionId)}/evaluate`,
       {},
       'POST',
+      { timeoutMs: 90000 },
     ),
 };

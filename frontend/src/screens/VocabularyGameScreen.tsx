@@ -1,3 +1,4 @@
+import { useDefaultJlptLevel } from '../hooks/useLearningLevel';
 import { decodeRouteParam } from '../navigation/webNavigation';
 import { useWebNavigation } from '../navigation/webNavigation';
 import { useCallback, useEffect, useRef, useState } from 'react';
@@ -45,6 +46,7 @@ export function VocabularyGameScreen({
   userId: string;
   onExit: () => void;
 }) {
+  const defaultLevel = useDefaultJlptLevel();
   const web = useWebNavigation();
   const webRef = useRef(web);
   webRef.current = web;
@@ -53,7 +55,7 @@ export function VocabularyGameScreen({
   const insets = useSafeAreaInsets();
   const navigationInset = useBottomNavigationInset();
   const [room, setRoom] = useState<GameRoom | null>(null),
-    [level, setLevel] = useState('N5'),
+    [level, setLevel] = useState<string>(defaultLevel),
     [mode, setMode] = useState<GameMode>('write');
   const [source, setSource] = useState<'jlpt' | 'lesson'>('jlpt'),
     [lesson, setLesson] = useState(''),

@@ -1,0 +1,93 @@
+.ng-genko { width: 100%; min-width: 0; }
+.ng-genko__paper {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  margin-inline: auto;
+  padding: var(--genko-padding);
+  border: 1px solid var(--genko-border);
+  border-radius: var(--genko-radius);
+  background: var(--genko-paper);
+}
+.ng-genko__paper:focus-within { border-color: var(--genko-focus); }
+.ng-genko__caption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 12px;
+  font: 12px/18px var(--genko-ui-font);
+  color: var(--genko-muted);
+}
+.ng-genko__tools { display: flex; align-items: center; gap: 12px; }
+.ng-genko__direction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--genko-primary);
+  cursor: pointer;
+}
+.ng-genko__direction:hover:not(:disabled), .ng-genko__direction:active:not(:disabled) { background: var(--genko-pressed); }
+.ng-genko__direction:focus-visible { outline: 2px solid var(--genko-focus); outline-offset: 2px; }
+.ng-genko__direction:disabled { opacity: 0.5; cursor: default; }
+.ng-genko__window {
+  width: var(--genko-width);
+  max-width: 100%;
+  overflow: hidden;
+  border-right: 1px solid var(--genko-line);
+  border-bottom: 1px solid var(--genko-line);
+  background-image: linear-gradient(to right, var(--genko-line) 1px, transparent 1px), linear-gradient(to bottom, var(--genko-line) 1px, transparent 1px);
+  background-size: var(--genko-cell) var(--genko-cell);
+  background-position: 0 var(--genko-scroll-y, 0px);
+}
+.ng-genko__input {
+  display: block;
+  box-sizing: content-box;
+  width: var(--genko-width);
+  height: var(--genko-height);
+  margin: 0;
+  border: 0;
+  outline: 0;
+  padding: 0 calc(var(--genko-spacing) / 2);
+  resize: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-width: none;
+  background: transparent;
+  color: var(--genko-text);
+  caret-color: var(--genko-focus);
+  font-family: 'Hiragino Mincho ProN', 'Hiragino Mincho Pro', 'Yu Mincho', 'Noto Serif CJK JP', 'Noto Serif JP', 'Hiragino Sans', 'Yu Gothic', 'Noto Sans CJK JP', 'Noto Sans JP', serif;
+  font-size: var(--genko-font-size);
+  font-weight: 400;
+  line-height: var(--genko-cell);
+  letter-spacing: var(--genko-spacing);
+  font-variant-east-asian: full-width;
+  font-feature-settings: 'palt' 0, 'fwid' 1;
+  font-kerning: none;
+  word-break: break-all;
+  overflow-wrap: anywhere;
+  line-break: anywhere;
+  text-align: left;
+  white-space: pre-wrap;
+  appearance: none;
+  -webkit-appearance: none;
+  -webkit-text-size-adjust: 100%;
+}
+.ng-genko__input::-webkit-scrollbar { display: none; }
+.ng-genko__input::placeholder { color: var(--genko-muted); opacity: 0.65; }
+.ng-genko[data-direction='vertical'] .ng-genko__window {
+  background-position: right var(--genko-scroll-x, 0px) top;
+}
+.ng-genko[data-direction='vertical'] .ng-genko__input {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  padding: calc(var(--genko-spacing) / 2) 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+}

@@ -1,5 +1,6 @@
 """Financial and admission gates for the private beta."""
 import os
+import json
 import unittest
 from unittest.mock import Mock, patch
 
@@ -16,6 +17,7 @@ from api_errors import ApiError
 from extensions import db
 from speaking.service import StartSessionInput
 from writing import init_writing
+from tests.test_writing_rubric import model_assessment
 
 
 class BetaAiTests(unittest.TestCase):
@@ -168,9 +170,11 @@ class BetaAiTests(unittest.TestCase):
 
     def test_writing_route_and_balance_endpoint(self):
         provider = Mock(status_code=200)
+        assessment = model_assessment()
+        assessment['corrections'] = []
         provider.json.return_value = {
             "candidates": [{"finishReason": "STOP", "content": {"parts": [{"text":
-                '{"score":80,"corrected_text":"日本語を勉強します。","feedback":"Bài viết rõ ý."}'
+                json.dumps(assessment, ensure_ascii=False)
             }]}}],
             "usageMetadata": {"promptTokenCount": 100, "totalTokenCount": 150},
         }
