@@ -21,14 +21,17 @@ import {
   KeyboardIcon,
   MicIcon,
   VolumeIcon,
+  VolumeXIcon,
 } from '../components/icons';
 import { ScreenBackHeader } from '../components/ScreenBackHeader';
 import { useBottomNavigationInset } from '../hooks/useBottomNavigationInset';
 import { useWebLayout } from '../hooks/useWebLayout';
 import { useRemoteResource } from '../hooks/useSpeakingScenarios';
+import { useGameReading } from '../hooks/useGameReading';
 import { ApiError } from '../services/apiClient';
 import { GameMode, GameRoom, gameService } from '../services/gameService';
 import { createGameAudio, GameAudio } from '../services/gameAudio';
+import { createGameSounds } from '../services/gameSounds';
 import {
   colors,
   layout,
@@ -69,10 +72,15 @@ export function VocabularyGameScreen({
     [connected, setConnected] = useState(false),
     [audioReady, setAudioReady] = useState(false);
   const [playbackBlocked, setPlaybackBlocked] = useState(false);
+  const [soundEnabled, setSoundEnabled] = useState(true);
+  const [micActive, setMicActive] = useState(false);
+  const sounds = useRef<ReturnType<typeof createGameSounds> | null>(null);
+  const lastCue = useRef('');
   const [clock, setClock] = useState(Date.now());
   const alive = useRef(true),
     pending = useRef(false),
     refreshing = useRef(false),
+    refreshAgain = useRef(false),
     offset = useRef(0);
   const audio = useRef<GameAudio | null>(null);
   const currentRoom = useRef<GameRoom | null>(null);
@@ -87,10 +95,15 @@ export function VocabularyGameScreen({
     return () => {
       alive.current = false;
       audio.current?.close().catch(() => undefined);
+      sounds.current?.close().catch(() => undefined);
+      sounds.current = null;
     };
   }, []);
   const receive = useCallback((next: GameRoom) => {
     if (!alive.current) return;
+    const previous = currentRoom.current;
+    if (previous?.id === next.id && previous.version > next.version) return;
+    currentRoom.current = next;
     const receivedAt = Date.now();
     offset.current = receivedAt - next.server_time;
     setClock(receivedAt);
@@ -100,6 +113,10 @@ export function VocabularyGameScreen({
   }, []);
   const run = useCallback(async (task: () => Promise<void>) => {
     if (pending.current) return;
+    sounds.current ??= createGameSounds();
+    // Unlock within the button gesture, before network awaits.
+    sounds.current.unlock().catch(() => undefined);
+    audio.current?.resumePlayback().catch(() => undefined);
     pending.current = true;
     setBusy(true);
     setError('');
@@ -175,8 +192,12 @@ export function VocabularyGameScreen({
   const catalog = useRemoteResource(loadCatalog);
   const data = catalog.state.status === 'ready' ? catalog.state.data : null;
   const roomCode = room?.code;
-  const refresh = useCallback(async () => {
-    if (!roomCode || refreshing.current) return;
+  const refresh: () => Promise<void> = useCallback(async () => {
+    if (!roomCode) return;
+    if (refreshing.current) {
+      refreshAgain.current = true;
+      return;
+    }
     refreshing.current = true;
     try {
       const next = await gameService.snapshot(roomCode);
@@ -199,6 +220,11 @@ export function VocabularyGameScreen({
       }
     } finally {
       refreshing.current = false;
+      if (refreshAgain.current) {
+        refreshAgain.current = false;
+        if (alive.current && currentRoom.current?.code === roomCode)
+          refresh().catch(() => undefined);
+      }
     }
   }, [roomCode, receive, userId]);
   useEffect(() => {
@@ -238,14 +264,26 @@ export function VocabularyGameScreen({
   const speaking =
     room?.mode === 'read' && room.phase === 'reading' && room.holder === userId;
   useEffect(() => {
-    if (!audio.current) return;
-    audio.current.setSpeaking(Boolean(speaking && audioReady)).catch(() => {
-      if (alive.current)
-        setError(
-          'Không bật được micro. Hãy kiểm tra quyền micro và kết nối âm thanh.',
-        );
-    });
-  }, [speaking, audioReady]);
+    let disposed = false;
+    setMicActive(false);
+    audio.current
+      ?.setSpeaking(Boolean(speaking && audioReady))
+      .then(() => {
+        if (!disposed && alive.current)
+          setMicActive(Boolean(speaking && audioReady));
+      })
+      .catch(() => {
+        if (!disposed && alive.current) {
+          setAudioReady(false);
+          setError(
+            'Không bật được micro. Hãy kiểm tra quyền micro và kết nối âm thanh.',
+          );
+        }
+      });
+    return () => {
+      disposed = true;
+    };
+  }, [speaking, audioReady, room?.round_id]);
   useEffect(() => {
     const listener = AppState.addEventListener('change', next => {
       if (next !== 'active') {
@@ -287,10 +325,14 @@ export function VocabularyGameScreen({
       receive(
         await gameService.action(room.code, name, {
           round_id: room.round_id,
+          ...(name === 'buzz'
+            ? { recognizer: reading.supported ? 'browser' : 'cloud' }
+            : {}),
           ...extra,
         }),
       );
     });
+  const reading = useGameReading(room, userId, micActive, receive);
   const connectAudio = () =>
     run(async () => {
       if (!room) return;
@@ -314,6 +356,33 @@ export function VocabularyGameScreen({
   const remaining = room?.deadline
     ? Math.max(0, Math.ceil((room.deadline - (clock - offset.current)) / 1000))
     : 0;
+  useEffect(() => {
+    if (!room) {
+      lastCue.current = '';
+      return;
+    }
+    let cue: Parameters<ReturnType<typeof createGameSounds>['play']>[0] | null =
+      null;
+    let key = `${room.id}:${room.round_id}:${room.phase}`;
+    if (room.phase === 'countdown' && remaining > 0) {
+      key += `:${remaining}`;
+      cue = 'tick';
+    } else if (room.phase === 'question' && remaining > 0) {
+      cue = remaining <= 3 ? 'tick' : 'start';
+      if (cue === 'tick') key += `:${remaining}`;
+    } else if (room.phase === 'reading' && remaining > 0 && remaining <= 3) {
+      key += `:${remaining}`;
+      cue = 'tick';
+    } else if (room.phase === 'results' && !room.result?.technical_error) {
+      cue = room.attempts.some(attempt => attempt.correct)
+        ? 'correct'
+        : 'incorrect';
+    } else if (room.phase === 'finished') cue = 'finish';
+    if (cue && key !== lastCue.current) {
+      lastCue.current = key;
+      if (soundEnabled) sounds.current?.play(cue);
+    }
+  }, [room, remaining, soundEnabled]);
   const selectedLesson = data?.lessons.find(item => item.id === lesson);
   const standings = room
     ? [...room.players].sort((a, b) => b.score - a.score)
@@ -677,11 +746,36 @@ export function VocabularyGameScreen({
                 {room.question_count} câu
               </Text>
             </View>
-            <View style={[styles.statusBadge, connected && styles.readyBadge]}>
-              <View style={[styles.statusDot, connected && styles.readyDot]} />
-              <Text style={[styles.caption, connected && styles.success]}>
-                {connected ? 'Đã kết nối' : 'Đang kết nối lại…'}
-              </Text>
+            <View style={styles.inline}>
+              <Pressable
+                accessibilityRole="button"
+                accessibilityLabel={
+                  soundEnabled ? 'Tắt âm báo trò chơi' : 'Bật âm báo trò chơi'
+                }
+                onPress={() => {
+                  sounds.current ??= createGameSounds();
+                  sounds.current.unlock().catch(() => undefined);
+                  setSoundEnabled(value => !value);
+                }}
+                hitSlop={8}
+                style={styles.soundButton}
+              >
+                {soundEnabled ? (
+                  <VolumeIcon size={18} color={colors.primaryText} />
+                ) : (
+                  <VolumeXIcon size={18} color={colors.muted} />
+                )}
+              </Pressable>
+              <View
+                style={[styles.statusBadge, connected && styles.readyBadge]}
+              >
+                <View
+                  style={[styles.statusDot, connected && styles.readyDot]}
+                />
+                <Text style={[styles.caption, connected && styles.success]}>
+                  {connected ? 'Đã kết nối' : 'Đang kết nối lại…'}
+                </Text>
+              </View>
             </View>
           </View>
           <View style={[styles.columns, desktop && styles.desktopColumns]}>
@@ -1003,11 +1097,40 @@ export function VocabularyGameScreen({
                           </View>
                         </>
                       ) : null}
-                      {room.phase === 'question' && room.mode === 'read' ? (
+                      {room.mode === 'read' &&
+                      ['question', 'reading', 'judging'].includes(
+                        room.phase,
+                      ) ? (
                         <AuthButton
-                          label="Giành lượt đọc"
-                          disabled={!audioReady || busy || remaining === 0}
-                          onPress={() => action('buzz')}
+                          label={
+                            room.phase === 'question'
+                              ? 'Giành lượt đọc'
+                              : room.phase === 'judging'
+                              ? 'Đang chấm…'
+                              : speaking
+                              ? micActive
+                                ? reading.submitting
+                                  ? 'Đang kiểm tra…'
+                                  : reading.enabled && !reading.listening
+                                  ? 'Thử lại'
+                                  : 'Đọc xong'
+                                : 'Đang bật micro…'
+                              : 'Người khác đang đọc'
+                          }
+                          disabled={
+                            !audioReady ||
+                            busy ||
+                            reading.submitting ||
+                            remaining === 0 ||
+                            room.phase === 'judging' ||
+                            (room.phase === 'reading' &&
+                              (!speaking || !micActive))
+                          }
+                          onPress={() =>
+                            speaking && reading.enabled
+                              ? reading.finish()
+                              : action(speaking ? 'finish-reading' : 'buzz')
+                          }
                         />
                       ) : null}
                       {room.phase === 'reading' ? (
@@ -1030,12 +1153,20 @@ export function VocabularyGameScreen({
                                   } đang đọc…`}
                             </Text>
                           </View>
-                          {speaking ? (
-                            <AuthButton
-                              label="Đọc xong"
-                              onPress={() => action('finish-reading')}
-                              disabled={busy}
-                            />
+                          {speaking && reading.enabled ? (
+                            <View>
+                              <Text
+                                style={styles.caption}
+                                accessibilityLiveRegion="polite"
+                              >
+                                {reading.text || 'Đang nghe tiếng Nhật…'}
+                              </Text>
+                              {reading.notice ? (
+                                <Text style={styles.caption}>
+                                  {reading.notice}
+                                </Text>
+                              ) : null}
+                            </View>
                           ) : null}
                         </>
                       ) : null}
@@ -1072,7 +1203,12 @@ export function VocabularyGameScreen({
                                   {item.answer || 'Không có câu trả lời'} ·{' '}
                                   {item.correct ? 'Đúng' : 'Chưa đúng'}
                                 </Text>
-                                {item.response_ms != null ? (
+                                {item.buzz_ms != null ? (
+                                  <Text style={styles.caption}>
+                                    Giành mic ·{' '}
+                                    {(item.buzz_ms / 1000).toFixed(1)} giây
+                                  </Text>
+                                ) : item.response_ms != null ? (
                                   <Text style={styles.caption}>
                                     Trả lời sau{' '}
                                     {(item.response_ms / 1000).toFixed(1)} giây
@@ -1235,6 +1371,16 @@ function PlayerAvatar({
   );
 }
 const styles = StyleSheet.create({
+  soundButton: {
+    width: 34,
+    height: 34,
+    borderRadius: radius.pill,
+    borderWidth: 1,
+    borderColor: colors.divider,
+    backgroundColor: colors.surface,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
   joinFields: { gap: spacing.lg },
   joinFieldsMobile: {
     flexDirection: 'row',

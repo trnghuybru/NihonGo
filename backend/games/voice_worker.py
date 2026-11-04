@@ -1,5 +1,5 @@
-"""Receives the winner's LiveKit track and judges it with Cloud Speech-to-Text.
-Run separately: python -m games.voice_worker. No client-provided transcript is trusted.
+"""Receives the winner's LiveKit track for Cloud Speech fallback.
+Run separately: python -m games.voice_worker. Browser-success rounds skip Cloud Speech.
 """
 import asyncio
 import copy
@@ -78,7 +78,7 @@ class VoiceRoom:
         """Commit the turn before revoking publication; only this round may end."""
         state = self.state
         captured = self.buffers.get(state.get('round_id'))
-        if state.get('phase') != 'reading' or not captured or not captured.ended(at):
+        if state.get('recognizer') == 'browser' or state.get('phase') != 'reading' or not captured or not captured.ended(at):
             return
         with self.app.app_context():
             row = db.session.scalar(select(GameRoom).where(GameRoom.id == self.identifier).with_for_update())
@@ -100,6 +100,7 @@ class VoiceRoom:
             async with self.semaphore:
                 self.read()
                 if (self.done or self.state.get('round_id') != round_id or
+                        self.state.get('recognizer') == 'browser' or
                         self.state.get('phase') != 'judging' or self.state.get('deadline', 0) <= engine.millis()):
                     return
                 transcript, error = await asyncio.to_thread(self.recognize, raw)
@@ -152,6 +153,10 @@ class VoiceRoom:
                     heartbeat_at = at
                 self.end_on_silence(at)
                 state = self.state
+                # Browser-success turns have no judge task to release their PCM.
+                for round_id in list(self.buffers):
+                    if round_id != state.get('round_id') or state.get('phase') not in ('reading', 'judging'):
+                        self.buffers.pop(round_id, None)
                 holder = state.get('holder')
                 if holder and state.get('phase') != 'reading' and self.last_permission != (holder, state.get('round_id')):
                     try:

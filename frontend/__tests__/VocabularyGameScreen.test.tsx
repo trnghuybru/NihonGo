@@ -4,6 +4,15 @@ import Renderer, { act } from 'react-test-renderer';
 import { TextInput, Text } from 'react-native';
 import { VocabularyGameScreen } from '../src/screens/VocabularyGameScreen';
 import { gameService, GameRoom } from '../src/services/gameService';
+import { createGameAudio } from '../src/services/gameAudio';
+const mockSoundPlay = jest.fn();
+jest.mock('../src/services/gameSounds', () => ({
+  createGameSounds: () => ({
+    unlock: jest.fn().mockResolvedValue(undefined),
+    play: mockSoundPlay,
+    close: jest.fn().mockResolvedValue(undefined),
+  }),
+}));
 jest.mock('../src/services/gameService', () => ({
   gameService: {
     catalog: jest.fn(),
@@ -185,4 +194,181 @@ test('new game catalog starts at the profile level', async () => {
   expect(gameService.catalog).toHaveBeenLastCalledWith('N2', 1);
   await press('N4');
   expect(gameService.catalog).toHaveBeenLastCalledWith('N4', 1);
+});
+
+test('keeps the mic action visible while another player reads and restores it next round', async () => {
+  const current: GameRoom = {
+    ...room,
+    mode: 'read',
+    phase: 'question',
+    round_id: 'round-1',
+    deadline: Date.now() + 15000,
+    voice_ready: true,
+    question: { word: '学校' },
+  };
+  jest.mocked(createGameAudio).mockReturnValueOnce({
+    connect: jest.fn(async (_url, _token, ready) => {
+      ready(true);
+    }),
+    setSpeaking: jest.fn().mockResolvedValue(undefined),
+    resumePlayback: jest.fn().mockResolvedValue(undefined),
+    close: jest.fn().mockResolvedValue(undefined),
+  });
+  jest
+    .mocked(gameService.audio)
+    .mockResolvedValue({ url: 'wss://voice', token: 'test' });
+  jest.mocked(gameService.join).mockResolvedValue(current);
+  await type('Mã phòng', 'ABC234');
+  await press('Vào phòng');
+  await press('Kiểm tra âm thanh');
+  expect(control('Giành lượt đọc').props.disabled).toBe(false);
+  const notify = jest.mocked(gameService.watch).mock.calls.at(-1)![1];
+  jest.mocked(gameService.snapshot).mockResolvedValue({
+    ...current,
+    version: 2,
+    phase: 'reading',
+    holder: 'other',
+  });
+  await act(async () => {
+    notify();
+  });
+  expect(control('Người khác đang đọc').props.disabled).toBe(true);
+  jest.mocked(gameService.snapshot).mockResolvedValue({
+    ...current,
+    version: 3,
+    round_id: 'round-2',
+  });
+  await act(async () => {
+    notify();
+  });
+  expect(control('Giành lượt đọc').props.disabled).toBe(false);
+});
+
+test('only shows the microphone as active after publication has completed', async () => {
+  const current: GameRoom = {
+    ...room,
+    mode: 'read',
+    phase: 'question',
+    round_id: 'round-1',
+    deadline: Date.now() + 15000,
+    voice_ready: true,
+    question: { word: '学校' },
+  };
+  let publish!: () => void;
+  jest.mocked(createGameAudio).mockReturnValueOnce({
+    connect: jest.fn(async (_url, _token, ready) => {
+      ready(true);
+    }),
+    setSpeaking: jest.fn(enabled =>
+      enabled
+        ? new Promise<void>(resolve => {
+            publish = resolve;
+          })
+        : Promise.resolve(),
+    ),
+    resumePlayback: jest.fn().mockResolvedValue(undefined),
+    close: jest.fn().mockResolvedValue(undefined),
+  });
+  jest
+    .mocked(gameService.audio)
+    .mockResolvedValue({ url: 'wss://voice', token: 'test' });
+  jest.mocked(gameService.join).mockResolvedValue(current);
+  await type('Mã phòng', 'ABC234');
+  await press('Vào phòng');
+  await press('Kiểm tra âm thanh');
+  jest
+    .mocked(gameService.action)
+    .mockResolvedValue({
+      ...current,
+      version: 2,
+      phase: 'reading',
+      holder: 'u',
+    });
+  await press('Giành lượt đọc');
+  expect(control('Đang bật micro…').props.disabled).toBe(true);
+  await act(async () => {
+    publish();
+  });
+  expect(control('Đọc xong').props.disabled).toBe(false);
+});
+
+test('plays result cues once per round and muting cues leaves player audio alone', async () => {
+  const current: GameRoom = {
+    ...room,
+    phase: 'question',
+    round_id: 'r1',
+    deadline: Date.now() + 15000,
+  };
+  jest.mocked(gameService.join).mockResolvedValue(current);
+  await type('Mã phòng', 'ABC234');
+  await press('Vào phòng');
+  const notify = jest.mocked(gameService.watch).mock.calls.at(-1)![1];
+  const result: GameRoom = {
+    ...current,
+    phase: 'results',
+    version: 2,
+    attempts: [
+      {
+        user_id: 'u',
+        answer: 'a',
+        correct: true,
+        rank: 1,
+        points: 10,
+        sequence: 1,
+      },
+    ],
+  };
+  jest.mocked(gameService.snapshot).mockResolvedValue(result);
+  await act(async () => {
+    notify();
+  });
+  jest
+    .mocked(gameService.snapshot)
+    .mockResolvedValue({ ...result, version: 3 });
+  await act(async () => {
+    notify();
+  });
+  expect(
+    mockSoundPlay.mock.calls.filter(([cue]) => cue === 'correct'),
+  ).toHaveLength(1);
+  await press('Tắt âm báo trò chơi');
+  jest
+    .mocked(gameService.snapshot)
+    .mockResolvedValue({ ...result, version: 4, round_id: 'r2', attempts: [] });
+  await act(async () => {
+    notify();
+  });
+  expect(mockSoundPlay).not.toHaveBeenCalledWith('incorrect');
+});
+
+test('does not lose a turn change notified while an older snapshot is in flight', async () => {
+  jest.mocked(gameService.join).mockResolvedValue(room);
+  await type('Mã phòng', 'ABC234');
+  await press('Vào phòng');
+  const notify = jest.mocked(gameService.watch).mock.calls.at(-1)![1];
+  let complete!: (value: GameRoom) => void;
+  jest
+    .mocked(gameService.snapshot)
+    .mockImplementationOnce(
+      () =>
+        new Promise(resolve => {
+          complete = resolve;
+        }),
+    )
+    .mockResolvedValueOnce({
+      ...room,
+      phase: 'question',
+      version: 3,
+      round_id: 'next',
+      deadline: Date.now() + 15000,
+    });
+  await act(async () => {
+    notify();
+    notify();
+  });
+  await act(async () => {
+    complete({ ...room, version: 2 });
+  });
+  expect(gameService.snapshot).toHaveBeenCalledTimes(2);
+  expect(control('Gửi đáp án')).toBeDefined();
 });

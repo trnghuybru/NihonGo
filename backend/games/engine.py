@@ -73,7 +73,7 @@ def new_question(state, at):
         return
     state.update(index=index, phase='question', round_id=str(uuid.uuid4()), holder=None,
                  attempts=[], sequence=0, deadline=at + state['seconds'] * 1000, result=None,
-                 question_started_at=at, buzzed_at=None)
+                 question_started_at=at, buzzed_at=None, recognizer='cloud')
 
 
 def conclude(state, at, technical_error=None):
@@ -92,7 +92,7 @@ def tick(state, mode, at):
     elif state['phase'] == 'question':
         conclude(state, at)
     elif state['phase'] == 'reading':
-        state.update(phase='judging', deadline=at + 30000)
+        state.update(phase='judging', deadline=at + 30000, recognizer='cloud')
     elif state['phase'] == 'judging':
         conclude(state, at, 'Không xử lý được âm thanh. Câu này không tính điểm.')
     elif state['phase'] == 'results':
@@ -152,7 +152,9 @@ def submit(state, user_id, answer, at, mode, technical_error=None, timing=None):
         response_ms = max(0, timing['speech_ended_at'] - state['question_started_at'])
     state['attempts'].append({'user_id': user_id, 'answer': answer, 'correct': bool(correct and not technical_error),
                               'rank': rank if not technical_error else None, 'points': points, 'sequence': state['sequence'],
-                              'response_ms': response_ms, 'spoken_ms': (timing or {}).get('spoken_ms')})
+                              'response_ms': response_ms, 'spoken_ms': (timing or {}).get('spoken_ms'),
+                              'buzz_ms': max(0, state['buzzed_at'] - state['question_started_at'])
+                              if mode == 'read' and state.get('buzzed_at') and state.get('question_started_at') else None})
     next(p for p in state['players'] if p['id'] == user_id)['score'] += points
     active_ids = {p['id'] for p in state['players'] if not p['left']}
     if mode == 'read' or active_ids <= {a['user_id'] for a in state['attempts']}:
@@ -185,6 +187,7 @@ def public_room(row):
             'question_count': len(state['questions']), 'seconds': state['seconds'], 'number': max(0, state['index'] + 1),
             'round_id': state['round_id'], 'deadline': state['deadline'], 'server_time': millis(),
             'holder': state['holder'], 'voice_ready': state.get('voice_ready_at', 0) > millis()-10000,
+            'recognizer': state.get('recognizer', 'cloud'),
             'players': [{**p, 'submitted': any(a['user_id'] == p['id'] for a in state['attempts'])} for p in state['players']],
             'question': question, 'result': state.get('result') if revealed else None,
             'attempts': state['attempts'] if revealed else [], 'history': state['history'] if state['phase'] == 'finished' else []}

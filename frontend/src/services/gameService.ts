@@ -20,6 +20,7 @@ export type GameAttempt = {
   sequence: number;
   response_ms?: number | null;
   spoken_ms?: number | null;
+  buzz_ms?: number | null;
 };
 export type GameResult = {
   word: string;
@@ -53,6 +54,7 @@ export type GameRoom = {
   server_time: number;
   holder: string | null;
   voice_ready: boolean;
+  recognizer?: 'browser' | 'cloud';
   players: GamePlayer[];
   question: { word: string; reading?: string; meaning?: string } | null;
   result: GameResult | null;
@@ -93,7 +95,14 @@ export const gameService = {
     authenticatedRequest<GameRoom>(`/games/rooms/${code}`),
   action: (
     code: string,
-    action: 'ready' | 'start' | 'answer' | 'buzz' | 'finish-reading' | 'leave',
+    action:
+      | 'ready'
+      | 'start'
+      | 'answer'
+      | 'buzz'
+      | 'finish-reading'
+      | 'speech-answer'
+      | 'leave',
     data: unknown = {},
   ) => authenticatedRequest<GameRoom>(`/games/rooms/${code}/${action}`, data),
   audio: (code: string) =>

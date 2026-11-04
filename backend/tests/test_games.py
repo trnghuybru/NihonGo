@@ -92,6 +92,54 @@ class GameTests(unittest.TestCase):
         self.assertEqual(self.get(f'/rooms/{code}').json['phase'],'results')
         self.assertEqual(self.get(f'/rooms/{code}').json['players'][0]['score'],0)
 
+    def test_browser_speech_checks_holder_round_and_server_scoring(self):
+        self.app.config.update(LIVEKIT_URL='ws://localhost:7880', LIVEKIT_API_KEY='key', LIVEKIT_API_SECRET='secret'*8)
+        code = self.create('read')
+        state = self.start(code)
+        data = {'round_id': state['round_id']}
+        with patch('games.media.permission'):
+            self.assertEqual(self.post(f'/rooms/{code}/buzz', {**data, 'recognizer': 'browser'}).status_code, 200)
+            answer = {**data, 'alternatives': ['間違い', state['questions'][0]['word']], 'points': 1000}
+            self.assertEqual(self.post(f'/rooms/{code}/speech-answer', answer, 1).status_code, 403)
+            self.assertEqual(self.post(f'/rooms/{code}/speech-answer', {**answer, 'round_id': 'old'}).status_code, 409)
+            self.assertEqual(self.post(f'/rooms/{code}/speech-answer', {**data, 'alternatives': []}).status_code, 400)
+            result = self.post(f'/rooms/{code}/speech-answer', answer)
+            self.assertEqual(result.status_code, 200, result.json)
+            self.assertEqual(result.json['phase'], 'results')
+            self.assertTrue(result.json['attempts'][0]['correct'])
+            self.assertEqual(result.json['players'][0]['score'], 10)
+            self.assertIsNotNone(result.json['attempts'][0]['buzz_ms'])
+            replay = self.post(f'/rooms/{code}/speech-answer', answer)
+            self.assertEqual(replay.json['players'][0]['score'], 10)
+
+    def test_browser_failure_falls_back_without_revoking_the_current_microphone(self):
+        self.app.config.update(LIVEKIT_URL='ws://localhost:7880', LIVEKIT_API_KEY='key', LIVEKIT_API_SECRET='secret'*8)
+        code = self.create('read')
+        state = self.start(code)
+        data = {'round_id': state['round_id']}
+        with patch('games.media.permission') as permission:
+            self.post(f'/rooms/{code}/buzz', {**data, 'recognizer': 'browser'})
+            result = self.post(f'/rooms/{code}/finish-reading', {**data, 'fallback': True})
+            self.assertEqual(result.json['phase'], 'reading')
+            self.assertEqual(result.json['recognizer'], 'cloud')
+            permission.assert_called_once()
+            self.assertEqual(self.post(f'/rooms/{code}/speech-answer', {**data, 'alternatives': ['ねこ']}).status_code, 403)
+            result = self.post(f'/rooms/{code}/finish-reading', data)
+            self.assertEqual(result.json['phase'], 'judging')
+            self.assertFalse(permission.call_args.args[2])
+
+    def test_browser_deadline_falls_back_and_cloud_turn_rejects_browser_answers(self):
+        self.app.config.update(LIVEKIT_URL='ws://localhost:7880', LIVEKIT_API_KEY='key', LIVEKIT_API_SECRET='secret'*8)
+        code = self.create('read')
+        state = self.start(code)
+        data = {'round_id': state['round_id']}
+        with patch('games.media.permission'):
+            self.post(f'/rooms/{code}/buzz', data)
+            self.assertEqual(self.post(f'/rooms/{code}/speech-answer', {**data, 'alternatives': ['ねこ']}).status_code, 403)
+        state.update(phase='reading', recognizer='browser', deadline=1000)
+        engine.tick(state, 'read', 1000)
+        self.assertEqual((state['phase'], state['recognizer']), ('judging', 'cloud'))
+
     def test_socket_ticket_membership(self):
         code=self.create();ticket=self.post('/socket-ticket',user=2).json['ticket']
         client=self.socket.test_client(self.app,namespace='/games',auth={'ticket':ticket})
@@ -161,6 +209,10 @@ class GameTests(unittest.TestCase):
         captured = TurnAudio()
         captured.append((np.ones(3200, dtype='<i2') * 2000).tobytes(), engine.millis()-900)
         runner.buffers[state['round_id']] = captured
+        runner.state['recognizer'] = 'browser'
+        runner.end_on_silence(engine.millis())
+        self.assertEqual(db.session.get(GameRoom, row.id).status, 'reading')
+        runner.state['recognizer'] = 'cloud'
         runner.end_on_silence(engine.millis())
         db.session.expire_all()
         self.assertEqual(db.session.get(GameRoom, row.id).status, 'judging')

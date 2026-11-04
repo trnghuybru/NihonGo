@@ -173,7 +173,11 @@ def answer(code):
 @bp.post('/rooms/<code>/buzz')
 @require_auth
 def buzz(code):
-    row, state = action_room(code, body())
+    data = body()
+    row, state = action_room(code, data)
+    recognizer = data.get('recognizer', 'cloud')
+    if recognizer not in ('browser', 'cloud'):
+        raise ApiError('Phương thức nhận dạng không hợp lệ.')
     if row.mode != 'read' or state['phase'] != 'question' or state['holder']:
         raise ApiError('Lượt đọc đã thuộc về người khác hoặc câu đã kết thúc.', 409, 'turn_taken')
     if state.get('voice_ready_at', 0) < engine.millis()-10000:
@@ -181,19 +185,48 @@ def buzz(code):
     # The DB lock ensures two simultaneous buzzes cannot both grant publication.
     media.permission(row, g.user.id, True)
     at = engine.millis()
-    state.update(holder=g.user.id, phase='reading', buzzed_at=at, deadline=at+8000)
+    state.update(holder=g.user.id, phase='reading', buzzed_at=at, deadline=at+8000, recognizer=recognizer)
+    return changed(row, state)
+
+
+@bp.post('/rooms/<code>/speech-answer')
+@require_auth
+def speech_answer(code):
+    """Casual beta: browser text is untrusted; holder, round and score stay server-owned."""
+    data = body()
+    row, state = action_room(code, data)
+    if row.mode != 'read' or state['holder'] != g.user.id or state.get('recognizer') != 'browser':
+        raise ApiError('Bạn không giữ lượt nhận dạng trên trình duyệt.', 403)
+    if state['phase'] == 'results':
+        return jsonify(engine.public_room(row))  # Retry after a lost response cannot award points twice.
+    if state['phase'] != 'reading':
+        raise ApiError('Lượt đọc đã kết thúc.', 409, 'round_closed')
+    alternatives = data.get('alternatives')
+    if (not isinstance(alternatives, list) or not 1 <= len(alternatives) <= 3 or
+            any(not isinstance(text, str) or not 1 <= len(text.strip()) <= 100 for text in alternatives)):
+        raise ApiError('Kết quả nhận dạng không hợp lệ.')
+    word = state['questions'][state['index']]
+    answer = next((text.strip() for text in alternatives if engine.speech_matches(text, word)), alternatives[0].strip())
+    media.permission(row, g.user.id, False)
+    state.update(phase='judging')
+    engine.submit(state, g.user.id, answer, engine.millis(), 'read')
     return changed(row, state)
 
 
 @bp.post('/rooms/<code>/finish-reading')
 @require_auth
 def finish_reading(code):
-    row, state = action_room(code, body())
+    data = body()
+    row, state = action_room(code, data)
     if row.mode != 'read' or state['holder'] != g.user.id:
         raise ApiError('Bạn không giữ lượt đọc.', 403)
     if state['phase'] == 'reading':
+        if data.get('fallback') is True and state.get('recognizer') == 'browser':
+            # Retain the live microphone and captured audio while the player continues.
+            state['recognizer'] = 'cloud'
+            return changed(row, state)
         media.permission(row, g.user.id, False)
-        state.update(phase='judging', deadline=engine.millis()+30000)
+        state.update(phase='judging', deadline=engine.millis()+30000, recognizer='cloud')
     return changed(row, state)
 
 

@@ -63,7 +63,13 @@ Khi triển khai thật, dùng HTTPS/WSS và reverse proxy cả `/api` lẫn `/s
 
 ## Cấu trúc và kiểm thử
 
-`games/engine.py` giữ luật và whitelist dữ liệu public; `routes.py` là API có xác thực; PostgreSQL khóa hàng phòng cho các thao tác giành lượt/chấm điểm, dùng thời gian server. `games/__init__.py` quản lý Socket.IO, timer và cập nhật client, kể cả trạng thái kết thúc từ worker; client có polling dự phòng. `voice_worker.py` nghe track thật của người thắng; `speech.py` nhận dạng tiếng Nhật `ja-JP` từ PCM 16 kHz. Không nhận transcript từ client và không đưa đáp án vào gợi ý nhận dạng. Token audio không chứa khóa LiveKit. Không đưa ngân hàng đáp án ra frontend.
+`games/engine.py` giữ luật và whitelist dữ liệu public; `routes.py` là API có xác thực; PostgreSQL khóa hàng phòng cho các thao tác giành lượt/chấm điểm, dùng thời gian server. `games/__init__.py` quản lý Socket.IO, timer và cập nhật client, kể cả trạng thái kết thúc từ worker; client có polling dự phòng. `voice_worker.py` nghe track thật của người thắng; `speech.py` nhận dạng tiếng Nhật `ja-JP` từ PCM 16 kHz. Token audio không chứa khóa LiveKit. Không đưa ngân hàng đáp án ra frontend.
+
+### Thử nghiệm nhận dạng trình duyệt trong beta
+
+Web/PWA ưu tiên `SpeechRecognition` / `webkitSpeechRecognition`, `ja-JP`, tối đa 3 phương án, không truyền đáp án làm gợi ý. Người giành mic khai báo `recognizer: browser` khi buzz. Chỉ bắt đầu nhận dạng sau khi thắng lượt và LiveKit đã bật micro. Chữ tạm thời chỉ để hiển thị; kết quả cuối gửi đến `/speech-answer`. Backend kiểm tra thành viên, người giữ mic, round, thời hạn và đối chiếu Kanji/Kana; tự tính điểm, chống cộng lặp khi gửi lại. Đây là chế độ giao lưu: transcript do client gửi có thể bị giả mạo, không dùng làm bằng chứng phát âm cho thi đấu có thưởng.
+
+Worker vẫn giữ PCM trong RAM nhưng không tự kết thúc theo im lặng và không gọi Cloud Speech khi lượt còn dùng trình duyệt. Khi trình duyệt không hỗ trợ, lỗi, kết thúc không có chữ hoặc hết 8 giây, chuyển về Cloud Speech. `finish-reading` với `fallback: true` chuyển bộ nhận dạng mà giữ micro để người chơi tiếp tục đọc; lần bấm Đọc xong bình thường kết thúc thu âm. Không cần API key mới. Native giữ Cloud Speech; PWA không sử dụng trực tiếp API native của Android/iOS. Thời gian giành mic (`buzz_ms`) do server ghi nhận; không lấy độ trễ nhận dạng làm tốc độ đọc.
 
 ```sh
 cd backend

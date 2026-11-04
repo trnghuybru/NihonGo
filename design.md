@@ -545,6 +545,8 @@ Logo và icon launcher dùng đầu Momo cùng chữ NihonGO đen–cam theo m�
 - Desktop có lối vào Flashcard và Game riêng trên sidebar, có trạng thái chọn tương ứng. Mobile giữ năm tab chính, truy cập hai chức năng này qua Luyện tập.
 - Trang chủ gọi đúng tên Bài học từ vựng và Game từ vựng. Không dùng nhãn chung khiến người dùng nhầm bài học với bộ thẻ.
 - Có thể dùng chung nguồn từ nhưng không nhập chung kết quả: điểm Game không thay thế mức nhớ hay tự cập nhật lịch FSRS. Lịch ôn thuộc Flashcard; không đưa lịch ôn vào phòng Game.
+- Game giành mic giữ nút hành động xuyên suốt lúc chờ lượt, đọc và chấm; hiển thị “Đang bật micro…” cho tới khi micro thực sự được bật. Âm báo ngắn cho đếm ngược, bắt đầu câu, đúng/sai và kết thúc trận; nút icon loa 34 px cho phép tắt âm báo, không tắt giọng người chơi. Không dùng AI để tạo âm báo.
+- Bản thử web/PWA ưu tiên nhận dạng trình duyệt `ja-JP` sau khi người chơi thắng lượt và micro LiveKit hoạt động; hiện chữ nhận được ngay dưới trạng thái lượt đọc, không mở màn hình hoặc popup riêng. Kết quả cuối do backend đối chiếu Kanji/Kana và chấm điểm. Lỗi/không hỗ trợ thì chuyển nhận dạng dự phòng, giữ luồng giọng nói; lỗi gửi kết quả có nút “Thử lại”, gửi lại chữ đã nhận thay vì bắt đọc lại. Hiển thị thời gian giành mic do server ghi nhận, không dùng độ trễ nhận dạng.
 - Nút Flashcard từ Bài học là lối tắt sang chức năng riêng; quay lại giữ bài học đang mở. Flashcard từ Luyện tập quay về Luyện tập.
 
 

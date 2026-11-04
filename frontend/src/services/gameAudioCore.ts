@@ -14,6 +14,7 @@ export function audioClient(platform: {
   autoplay?: boolean;
   start: () => Promise<void>;
   stop: () => Promise<void>;
+  resume?: () => Promise<void>;
   attach: (
     track: RemoteTrack,
     onBlocked: (blocked: boolean) => void,
@@ -90,6 +91,7 @@ export function audioClient(platform: {
         next.on(RoomEvent.Reconnected, () => {
           if (next === room) {
             reconcile();
+            if (platform.autoplay) next.startAudio().catch(() => blocked(true));
             onStatus(true);
           }
         });
@@ -167,7 +169,7 @@ export function audioClient(platform: {
     },
     async resumePlayback() {
       // Called directly by a user gesture, before any network/permission await.
-      await room?.startAudio();
+      await Promise.all([platform.resume?.(), room?.startAudio()]);
     },
     close,
   };
