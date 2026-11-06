@@ -5,7 +5,8 @@ json_type = db.JSON().with_variant(JSONB(), 'postgresql')
 LEVELS = ('N5', 'N4', 'N3', 'N2', 'N1')
 TYPES = {'short': ('短文', 'Đoản văn'), 'medium': ('中文', 'Trung văn'),
          'long': ('長文', 'Trường văn'), 'information': ('情報検索', 'Tìm thông tin'),
-         'opinion': ('主張理解', 'Hiểu quan điểm')}
+         'opinion': ('主張理解', 'Hiểu quan điểm'),
+         'integrated': ('統合理解', 'Tổng hợp'), 'thematic': ('テーマ別', 'Theo chủ đề')}
 
 
 class ReadingPassage(db.Model):
