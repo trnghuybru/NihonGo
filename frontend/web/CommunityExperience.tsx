@@ -24,9 +24,44 @@ import './community.css';
 type Overlay =
   | { kind: 'welcome'; step: number }
   | { kind: 'tour'; id: Guide['id']; step: number }
-  | { kind: 'help' | 'coffee' }
+  | { kind: 'help' | 'coffee' | 'feedback' }
   | null;
 type Rect = { top: number; left: number; width: number; height: number };
+const betaFeedbackUrl = 'https://forms.gle/pBGNQdPvC4WN41JS8';
+
+function FeedbackIcon() {
+  return (
+    <svg
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <path d="M20 11.5a8 8 0 0 1-8 8H5l-3 2v-6a8 8 0 1 1 18-4Z" />
+      <path d="m8 11 2.5 2.5L16 8" />
+    </svg>
+  );
+}
+
+function FeedbackInvitation({ onOpen }: { onOpen: () => void }) {
+  return (
+    <div className="ng-feedback-invitation">
+      <FeedbackIcon />
+      <div>
+        <strong>Góp ý beta, nhận 1 tháng miễn phí</strong>
+        <p>Hoàn thành đánh giá để nhận ưu đãi khi NihonGO ra mắt chính thức.</p>
+        <button type="button" className="ng-feedback-inline" onClick={onOpen}>
+          Đánh giá beta <span aria-hidden="true">→</span>
+        </button>
+      </div>
+    </div>
+  );
+}
 
 function loadProgress(accountId: string): GuideProgress {
   try {
@@ -341,6 +376,9 @@ export function CommunityExperience({
                 </li>
               </ul>
             </div>
+            <FeedbackInvitation
+              onOpen={() => setOverlay({ kind: 'feedback' })}
+            />
             <p className="ng-fine-print">
               Nếu thấy hữu ích, bạn có thể mời mình một ly cà phê qua nút ☕ ở
               góc màn hình. Ủng hộ hoàn toàn tự nguyện và không ảnh hưởng quyền
@@ -453,12 +491,51 @@ export function CommunityExperience({
             </button>
           ))}
         </div>
+        <FeedbackInvitation onOpen={() => setOverlay({ kind: 'feedback' })} />
         <button
           className="ng-text-button ng-replay-welcome"
           onClick={() => setOverlay({ kind: 'welcome', step: 0 })}
         >
           Xem lại lời chào & lưu ý dùng thử
         </button>
+      </>
+    );
+  } else if (overlay?.kind === 'feedback') {
+    content = (
+      <>
+        <p className="ng-eyebrow">Cùng hoàn thiện NihonGO</p>
+        <h2 id="ng-dialog-title">Bạn thấy bản beta thế nào?</h2>
+        <p id="ng-dialog-description">
+          Chia sẻ trải nghiệm, lỗi bạn gặp và những điều bạn muốn cải thiện nhé.
+        </p>
+        <div className="ng-feedback-reward">
+          <FeedbackIcon />
+          <div>
+            <strong>Tặng bạn 1 tháng miễn phí</strong>
+            <p>
+              Hoàn thành form đánh giá beta để nhận 1 tháng sử dụng miễn phí khi
+              NihonGO ra mắt chính thức.
+            </p>
+          </div>
+        </div>
+        <p className="ng-feedback-email">
+          Bạn nhớ điền đúng email đăng ký NihonGO trong form để mình gửi ưu đãi
+          đến đúng tài khoản nhé.
+        </p>
+        <div className="ng-feedback-actions">
+          <button type="button" className="ng-feedback-later" onClick={close}>
+            Để sau
+          </button>
+          <a
+            className="ng-feedback-link"
+            href={betaFeedbackUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Điền form đánh giá beta (mở tab mới)"
+          >
+            Điền form đánh giá <span aria-hidden="true">↗</span>
+          </a>
+        </div>
       </>
     );
   } else if (overlay?.kind === 'coffee') {
@@ -521,7 +598,7 @@ export function CommunityExperience({
     <>
       <aside
         className="ng-community-dock"
-        aria-label="Hướng dẫn và ủng hộ NihonGO"
+        aria-label="Hướng dẫn, đánh giá và ủng hộ NihonGO"
         style={{ '--ng-bottom-inset': `${bottomInset}px` } as CSSProperties}
       >
         <button
@@ -531,6 +608,17 @@ export function CommunityExperience({
           onClick={() => setOverlay({ kind: 'help' })}
         >
           ?
+        </button>
+        <button
+          type="button"
+          className="ng-feedback-trigger"
+          aria-label="Đánh giá beta và nhận 1 tháng miễn phí khi ra mắt"
+          aria-haspopup="dialog"
+          title="Đánh giá beta · Nhận 1 tháng miễn phí khi ra mắt"
+          onClick={() => setOverlay({ kind: 'feedback' })}
+        >
+          <FeedbackIcon />
+          <span>Góp ý beta</span>
         </button>
         <button
           className="ng-coffee-trigger"
@@ -549,7 +637,9 @@ export function CommunityExperience({
               className={`ng-community-dialog ${isTour ? 'is-tour' : ''}`}
               aria-labelledby="ng-dialog-title"
               aria-describedby={
-                isTour || isWelcome ? 'ng-dialog-description' : undefined
+                isTour || isWelcome || overlay?.kind === 'feedback'
+                  ? 'ng-dialog-description'
+                  : undefined
               }
               onKeyDown={event => {
                 if (

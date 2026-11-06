@@ -187,9 +187,11 @@ async function press(label: string) {
   });
 }
 function screenText() {
-  return JSON.stringify(
-    tree.root.findAllByType(Text).map(node => node.props.children),
-  );
+  return tree.root
+    .findAllByType(Text)
+    .flatMap(node => node.props.children)
+    .filter(value => typeof value === 'string' || typeof value === 'number')
+    .join(' ');
 }
 function scenarios() {
   return tree.root

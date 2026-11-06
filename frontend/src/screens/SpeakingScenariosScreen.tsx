@@ -20,6 +20,8 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { AuthIcon } from '../components/AuthIcon';
 import { AppBackground } from '../components/AppBackground';
 import { AuthButton, AuthNotice } from '../components/AuthForm';
+import { MobileTopBar } from '../components/MobileTopBar';
+import { useWebLayout } from '../hooks/useWebLayout';
 import { HomeFeatureIcon } from '../components/HomeFeatureIcon';
 import { ConversationScreen } from './ConversationScreen';
 import { SpeakingHistory } from './SpeakingHistory';
@@ -236,21 +238,23 @@ function ScenarioPreview({
           ))}
         </View>
       ) : null}
-      {(!betaWeb || betaAudioWeb) ? <Pressable
-        accessibilityRole="checkbox"
-        accessibilityLabel="Lưu âm thanh để nghe lại"
-        accessibilityState={{ checked: saveAudio, disabled: busy }}
-        disabled={busy}
-        onPress={() => setSaveAudio(value => !value)}
-        style={styles.audioOption}
-      >
-        <Text style={styles.optionHeading}>
-          {saveAudio ? '☑' : '☐'} Lưu âm thanh để nghe lại
-        </Text>
-        <Text style={styles.resultCount}>
-          Lưu giọng của bạn và Aoi trong lịch sử hội thoại.
-        </Text>
-      </Pressable> : null}
+      {!betaWeb || betaAudioWeb ? (
+        <Pressable
+          accessibilityRole="checkbox"
+          accessibilityLabel="Lưu âm thanh để nghe lại"
+          accessibilityState={{ checked: saveAudio, disabled: busy }}
+          disabled={busy}
+          onPress={() => setSaveAudio(value => !value)}
+          style={styles.audioOption}
+        >
+          <Text style={styles.optionHeading}>
+            {saveAudio ? '☑' : '☐'} Lưu âm thanh để nghe lại
+          </Text>
+          <Text style={styles.resultCount}>
+            Lưu giọng của bạn và Aoi trong lịch sử hội thoại.
+          </Text>
+        </Pressable>
+      ) : null}
       <AuthNotice message={startError} error />
       <AuthButton
         label="Bắt đầu trò chuyện"
@@ -268,6 +272,7 @@ function ScenarioPreview({
   );
 }
 export function SpeakingScenariosScreen() {
+  const { desktop } = useWebLayout();
   const defaultLevel = useLearningLevel();
   const web = useWebNavigation();
   const webPath = web?.pathname;
@@ -477,10 +482,11 @@ export function SpeakingScenariosScreen() {
           />
         ) : (
           <View style={styles.chatShell}>
+            {!desktop ? <MobileTopBar /> : null}
             <View
               style={[
                 styles.speakingHeader,
-                { paddingTop: insets.top + spacing.xxl },
+                { paddingTop: (desktop ? insets.top : 0) + spacing.xxl },
               ]}
             >
               <View style={styles.speakingHeaderContent}>

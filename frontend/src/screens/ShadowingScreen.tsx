@@ -22,7 +22,7 @@ import {
   useWindowDimensions,
 } from 'react-native';
 import { useWebLayout } from '../hooks/useWebLayout';
-import { BrandLogo } from '../components/BrandLogo';
+import { MobileTopBar } from '../components/MobileTopBar';
 import { useShadowingTranslation } from '../hooks/useShadowingTranslation';
 import { useShadowingQuiz } from '../hooks/useShadowingQuiz';
 import { ShadowingQuiz } from '../components/ShadowingQuiz';
@@ -798,7 +798,7 @@ export function ShadowingScreen({
         (currentTokens?.filter(token => token.text.trim()).length ?? 1) - 1,
       ) * spacing.sm;
     // Japanese glyphs use roughly one em; Latin text needs less horizontal space.
-    // Native wrapping/scrolling remains the fallback for unusually wide glyphs.
+    // Natural wrapping handles wider glyphs and furigana without clipping rows.
     const units = Array.from(captionText).reduce(
       (total, character) =>
         total +
@@ -823,8 +823,6 @@ export function ShadowingScreen({
       ),
     );
     const lineHeight = Math.ceil(fontSize * 1.45);
-    const captionOverflows =
-      units * fontSize * fontScale + tokenSpacing > availableWidth * 2;
     const startQuiz = () => {
       setContinuous(true);
       setLoop(false);
@@ -1026,17 +1024,8 @@ export function ShadowingScreen({
                   onWordPress={showWord}
                 />
               ) : (
-                <ReadingScrollRegion
-                  scrollable={desktop && captionOverflows}
+                <View
                   key={captionIndex}
-                  style={[
-                    desktop && styles.currentCaptionScroll,
-                    desktop && {
-                      maxHeight: Math.ceil(
-                        (lineHeight + 18) * fontScale * 2 + spacing.xs,
-                      ),
-                    },
-                  ]}
                   onLayout={event =>
                     setCaptionWidth(Math.round(event.nativeEvent.layout.width))
                   }
@@ -1052,16 +1041,8 @@ export function ShadowingScreen({
                       { fontSize, lineHeight },
                     ]}
                   />
-                </ReadingScrollRegion>
+                </View>
               )}
-              {desktop &&
-              !hideCaption &&
-              captionIndex >= 0 &&
-              captionOverflows ? (
-                <Text style={styles.captionOverflowHint}>
-                  Cuộn để đọc đầy đủ
-                </Text>
-              ) : null}
             </View>
           </View>
         ) : null}
@@ -1614,6 +1595,7 @@ export function ShadowingScreen({
       style={styles.screen}
       behavior={Platform.OS === 'ios' ? 'padding' : undefined}
     >
+      {!desktop ? <MobileTopBar /> : null}
       <FlatList
         key={`catalog-${catalogColumns}`}
         data={jobs}
@@ -1632,14 +1614,13 @@ export function ShadowingScreen({
         contentContainerStyle={[
           styles.catalogContent,
           {
-            paddingTop: insets.top + spacing.lg,
+            paddingTop: (desktop ? insets.top : 0) + spacing.lg,
             paddingBottom:
               Math.max(insets.bottom, bottomOverlayHeight) + spacing.xl,
           },
         ]}
         ListHeaderComponent={
           <View style={styles.catalogHeader} testID="tour-listening-library">
-            {!desktop && <BrandLogo />}
             <View
               style={[styles.catalogCopy, desktop && styles.desktopCatalogCopy]}
             >
@@ -2052,13 +2033,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     zIndex: 1,
   },
-  captionOverflowHint: {
-    ...typography.caption,
-    color: colors.muted,
-    textAlign: 'center',
-    marginTop: spacing.xs,
-  },
-  currentCaptionScroll: { maxHeight: 64 },
   currentCaptionText: {
     ...typography.title,
     fontSize: 22,

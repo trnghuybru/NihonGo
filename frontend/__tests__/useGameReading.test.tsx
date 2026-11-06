@@ -18,7 +18,7 @@ jest.mock('../src/services/gameSpeech', () => ({
   }),
 }));
 jest.mock('../src/services/gameService', () => ({
-  gameService: { action: jest.fn() },
+  gameService: { action: jest.fn(), reading: jest.fn() },
 }));
 const receive = jest.fn();
 const room = {
@@ -92,6 +92,80 @@ test('falls back without ending the live microphone when browser recognition fai
     round_id: 'r1',
     fallback: true,
   });
+});
+
+test('grades displayed interim text immediately when the player finishes instead of falling back to audio', async () => {
+  await act(async () => {
+    tree = Renderer.create(<Probe />);
+  });
+  await act(async () => {
+    mockCallbacks.onText('学校');
+  });
+  await act(async () => {
+    value.finish();
+  });
+  await act(async () => {
+    mockCallbacks.onEnd();
+    mockCallbacks.onError();
+  });
+  expect(gameService.action).toHaveBeenCalledTimes(1);
+  expect(gameService.action).toHaveBeenCalledWith('ABC234', 'speech-answer', {
+    round_id: 'r1',
+    alternatives: ['学校'],
+  });
+});
+
+test('keeps recognized text when the browser ends without a final result', async () => {
+  await act(async () => {
+    tree = Renderer.create(<Probe />);
+  });
+  await act(async () => {
+    mockCallbacks.onText('がっこう');
+    mockCallbacks.onEnd();
+  });
+  expect(gameService.action).toHaveBeenCalledTimes(1);
+  expect(gameService.action).toHaveBeenCalledWith('ABC234', 'speech-answer', {
+    round_id: 'r1',
+    alternatives: ['がっこう'],
+  });
+});
+
+test('displays hiragana while preserving the recognized kanji for grading', async () => {
+  jest.useFakeTimers();
+  try {
+    jest.mocked(gameService.reading).mockResolvedValue({ reading: 'がっこう' });
+    await act(async () => {
+      tree = Renderer.create(<Probe />);
+    });
+    await act(async () => {
+      mockCallbacks.onText('学校');
+    });
+    expect(value.text).not.toBe('学校');
+    await act(async () => {
+      await jest.advanceTimersByTimeAsync(250);
+    });
+    expect(value.text).toBe('がっこう');
+    await act(async () => {
+      value.finish();
+    });
+    expect(gameService.action).toHaveBeenCalledWith('ABC234', 'speech-answer', {
+      round_id: 'r1',
+      alternatives: ['学校'],
+    });
+  } finally {
+    jest.useRealTimers();
+  }
+});
+
+test('converts katakana locally without requesting a server preview', async () => {
+  await act(async () => {
+    tree = Renderer.create(<Probe />);
+  });
+  await act(async () => {
+    mockCallbacks.onText('ガッコウ');
+  });
+  expect(value.text).toBe('がっこう');
+  expect(gameService.reading).not.toHaveBeenCalled();
 });
 test('ignores stale callbacks after the turn changes', async () => {
   await act(async () => {

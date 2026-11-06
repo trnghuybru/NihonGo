@@ -84,6 +84,8 @@ Các kiểu chữ nội dung dùng khoảng cách ký tự mặc định, không
 ### Bố cục web theo yêu cầu cập nhật
 
 - Dùng cùng bảng màu, font Readex Pro, typography, radius và bóng đổ với điện thoại; không đổi token theo nền tảng.
+- Web/PWA trên màn hình nhỏ hoặc thiết bị cảm ứng dùng chữ ô nhập tối thiểu 16 px để tránh tự zoom khi focus. Giấy làm bài giữ cỡ chữ riêng theo lưới; vẫn cho phép người dùng chủ động phóng to trang.
+- Hàng logo trên mobile dùng `MobileTopBar` chung, đặt ngoài vùng cuộn để luôn hiện khi đọc nội dung. Có nền `background`, đường phân cách `divider` và safe-area phía trên; không đặt đè lên nội dung và không lặp logo trong vùng cuộn.
 - Từ 1100 px, dùng sidebar 240 px thay thanh điều hướng đáy. Vùng dashboard/danh mục rộng tối đa 1160 px, vẫn giữ lề 20 px. Màn hình hẹp giữ navigation nổi rộng tối đa 480 px.
 - Trang chủ chia hai cột; danh mục shadowing dùng grid 1–3 cột theo chiều rộng thực tế. Bài shadowing đặt video và bảng phụ đề cạnh nhau trên desktop, không thêm card bao video.
 - Thanh trên cùng của desktop cao tối thiểu `layout.desktopHeaderHeight` (96 px), căn giữa theo chiều dọc cùng logo sidebar; nút quay về, tiêu đề và badge cùng trục ngang. Thanh có nền trong suốt để lộ gradient chung; giữ badge trình độ và mục tiêu phút/ngày lấy từ hồ sơ thật bên phải. Trong bài shadowing, nút quay về và tiêu đề nằm bên trái trên cùng thanh này, dùng chung component và kiểu nút với app; không lặp lại trong cột video.
@@ -207,7 +209,7 @@ Thanh điều hướng xuất hiện sau khi người dùng đã hoàn tất thi
   không lặp lại các nút này. Lỗi video vẫn có nút thử phát lại.
   Câu hiện tại có gạch chân, hiển thị nguyên câu luyện với timestamp nguồn theo yêu cầu cập nhật; không chia thành các cue ngắn. Cỡ chữ tự
   điều chỉnh từ 22 xuống tối thiểu 16 theo độ dài/bề rộng, giữ font scale hệ thống.
-  Khung tối đa hai dòng có thể cuộn nếu nguồn thiếu mốc chia; không cắt bằng ellipsis.
+  Trên desktop, khung tự tăng chiều cao theo toàn bộ câu và furigana, không giới hạn hai dòng hoặc cuộn lồng; không để dòng cuối tràn xuống thanh công cụ. Mobile giữ vùng lyrics riêng.
   Các câu luyện đầy đủ trong bảng chữ 14/22, nét thường, icon phát 18 bên trái.
   Nút công cụ 32–36 px có hitSlop, nhãn 12 px; ẩn “Chọn kỹ năng khác” ở shadowing.
   Một thanh công cụ duy nhất có icon Phụ đề bật/tắt danh sách, Bản dịch, theo dõi,
@@ -547,6 +549,7 @@ Logo và icon launcher dùng đầu Momo cùng chữ NihonGO đen–cam theo m�
 - Có thể dùng chung nguồn từ nhưng không nhập chung kết quả: điểm Game không thay thế mức nhớ hay tự cập nhật lịch FSRS. Lịch ôn thuộc Flashcard; không đưa lịch ôn vào phòng Game.
 - Game giành mic giữ nút hành động xuyên suốt lúc chờ lượt, đọc và chấm; hiển thị “Đang bật micro…” cho tới khi micro thực sự được bật. Âm báo ngắn cho đếm ngược, bắt đầu câu, đúng/sai và kết thúc trận; nút icon loa 34 px cho phép tắt âm báo, không tắt giọng người chơi. Không dùng AI để tạo âm báo.
 - Bản thử web/PWA ưu tiên nhận dạng trình duyệt `ja-JP` sau khi người chơi thắng lượt và micro LiveKit hoạt động; hiện chữ nhận được ngay dưới trạng thái lượt đọc, không mở màn hình hoặc popup riêng. Kết quả cuối do backend đối chiếu Kanji/Kana và chấm điểm. Lỗi/không hỗ trợ thì chuyển nhận dạng dự phòng, giữ luồng giọng nói; lỗi gửi kết quả có nút “Thử lại”, gửi lại chữ đã nhận thay vì bắt đọc lại. Hiển thị thời gian giành mic do server ghi nhận, không dùng độ trễ nhận dạng.
+- Chữ nhận dạng trong lượt giành mic và phần câu trả lời ở kết quả hiển thị Hiragana. Katakana đổi tại client, Kanji dùng bộ phân tích cách đọc có sẵn trên server, không gọi AI; không đổi từ đề bài hoặc chữ gốc gửi để chấm.
 - Nút Flashcard từ Bài học là lối tắt sang chức năng riêng; quay lại giữ bài học đang mở. Flashcard từ Luyện tập quay về Luyện tập.
 
 
@@ -647,3 +650,5 @@ Logo và icon launcher dùng đầu Momo cùng chữ NihonGO đen–cam theo m�
 - Furigana nằm trong luồng bố cục phía trên Kanji, căn giữa theo từng cụm; độ rộng cụm lấy đủ phần cách đọc. Không giới hạn một dòng bằng dấu ba chấm hoặc thu nhỏ chữ để ép vừa Kanji. Cụm từ tự giãn và xuống hàng khi cần, không chồng lên từ bên cạnh.
 
 - Khung lyrics trên điện thoại giảm padding ngoài và trong; icon mắt nổi bên trong góc trên bên phải của khung với nền trắng, không chừa thêm chiều rộng bên phải làm hẹp câu chữ.
+
+- Góp ý beta: cụm nút nổi có icon đánh giá, nhãn “Góp ý beta” trên desktop và chỉ icon trên điện thoại. Mở dialog ngắn giới thiệu ưu đãi 1 tháng miễn phí khi ra mắt chính thức, nhắc dùng email đăng ký NihonGO, có CTA nhỏ 34 px mở Google Form trong tab mới. Lời mời cũng có trong Hướng dẫn và bước cuối lời chào; không tự mở lại onboarding đã xem. Màu `primary`, `primaryPressed`, `surfaceTint`, `border`, `focus` theo token; giữ vùng chạm nút nổi 44 px. Link form: `https://forms.gle/pBGNQdPvC4WN41JS8`. Không coi việc mở link là đã hoàn thành form hoặc tự cấp quyền sử dụng; đối chiếu ưu đãi qua email trong câu trả lời của form.

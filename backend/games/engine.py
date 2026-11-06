@@ -150,7 +150,9 @@ def submit(state, user_id, answer, at, mode, technical_error=None, timing=None):
     if mode == 'read' and timing and timing.get('speech_ended_at') and state.get('question_started_at'):
         # Measure the actual answer, never the STT request latency or client clock.
         response_ms = max(0, timing['speech_ended_at'] - state['question_started_at'])
-    state['attempts'].append({'user_id': user_id, 'answer': answer, 'correct': bool(correct and not technical_error),
+    state['attempts'].append({'user_id': user_id, 'answer': answer,
+                              'answer_reading': speech_reading(answer) if mode == 'read' else None,
+                              'correct': bool(correct and not technical_error),
                               'rank': rank if not technical_error else None, 'points': points, 'sequence': state['sequence'],
                               'response_ms': response_ms, 'spoken_ms': (timing or {}).get('spoken_ms'),
                               'buzz_ms': max(0, state['buzzed_at'] - state['question_started_at'])
@@ -161,15 +163,23 @@ def submit(state, user_id, answer, at, mode, technical_error=None, timing=None):
         conclude(state, at, technical_error)
 
 
+def speech_reading(answer):
+    """Display pronunciation without asking an AI provider or using the target word."""
+    text = normalize(answer)
+    if not text or re.fullmatch(r'[\u3041-\u3096ー]+', text):
+        return text
+    from shadowing.morphology import tokenizer
+    reading = normalize(''.join(t.reading_form() for t in tokenizer().tokenize(text)))
+    return reading if re.fullmatch(r'[\u3041-\u3096ー]+', reading) else ''
+
+
 def speech_matches(answer, word):
     text = normalize(answer)
     if text in word['accepted'] or text == normalize(word['word']):
         return True
     # STT commonly emits kanji. Compare the recognized reading without supplying the target as a prompt.
     if text:
-        from shadowing.morphology import tokenizer
-        tokens = tokenizer().tokenize(text)
-        return normalize(''.join(t.reading_form() for t in tokens)) in word['accepted']
+        return speech_reading(text) in word['accepted']
     return False
 
 

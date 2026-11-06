@@ -189,6 +189,19 @@ def buzz(code):
     return changed(row, state)
 
 
+@bp.post('/rooms/<code>/speech-preview')
+@require_auth
+def speech_preview(code):
+    data = body()
+    row, state = action_room(code, data)
+    if row.mode != 'read' or state['holder'] != g.user.id or state['phase'] != 'reading':
+        raise ApiError('Bạn không giữ lượt đọc.', 403)
+    text = data.get('text')
+    if not isinstance(text, str) or not 1 <= len(text.strip()) <= 100:
+        raise ApiError('Chữ nhận dạng không hợp lệ.')
+    return jsonify(reading=engine.speech_reading(text))
+
+
 @bp.post('/rooms/<code>/speech-answer')
 @require_auth
 def speech_answer(code):

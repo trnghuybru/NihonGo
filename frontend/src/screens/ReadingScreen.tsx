@@ -20,6 +20,7 @@ import {
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { AuthButton, AuthNotice } from '../components/AuthForm';
+import { MobileTopBar } from '../components/MobileTopBar';
 import { DeckPagination } from '../components/DeckPagination';
 import { ReadingScrollRegion } from '../components/ReadingScrollRegion';
 import { ReadingWorkspace } from '../components/ReadingWorkspace';
@@ -181,6 +182,7 @@ export function ReadingScreen({
     state.status === 'loading' || (id && state.status === 'ready' && !passage);
   return (
     <View style={styles.screen}>
+      {!desktop && !id ? <MobileTopBar /> : null}
       <View style={[styles.toolbar, desktop && styles.desktopToolbar]}>
         <ScreenBackHeader
           title="Luyện đọc"

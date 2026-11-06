@@ -14,6 +14,7 @@ export type GamePlayer = {
 export type GameAttempt = {
   user_id: string;
   answer: string;
+  answer_reading?: string | null;
   correct: boolean;
   rank: number | null;
   points: number;
@@ -109,6 +110,14 @@ export const gameService = {
     authenticatedRequest<{ url: string; token: string }>(
       `/games/rooms/${code}/audio`,
       {},
+    ),
+  reading: (code: string, roundId: string, text: string) =>
+    authenticatedRequest<{ reading: string }>(
+      `/games/rooms/${code}/speech-preview`,
+      {
+        round_id: roundId,
+        text,
+      },
     ),
   async watch(
     code: string,

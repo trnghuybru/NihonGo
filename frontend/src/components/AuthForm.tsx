@@ -23,7 +23,7 @@ import {
 } from '../theme/theme';
 import { EyeIcon, EyeOffIcon } from './icons';
 import { AuthIcon, AuthIconName } from './AuthIcon';
-import { BrandLogo } from './BrandLogo';
+import { MobileTopBar } from './MobileTopBar';
 import { useWebLayout } from '../hooks/useWebLayout';
 import { useBottomNavigationInset } from '../hooks/useBottomNavigationInset';
 
@@ -67,6 +67,7 @@ export function AuthShell({
       behavior={Platform.OS === 'ios' ? 'padding' : undefined}
     >
       <StatusBar barStyle="dark-content" />
+      {!desktop ? <MobileTopBar accessory={topBarAccessory} /> : null}
       <ScrollView
         keyboardShouldPersistTaps="handled"
         keyboardDismissMode="on-drag"
@@ -80,7 +81,7 @@ export function AuthShell({
           desktop && compactHeader && styles.compactContent,
           Platform.OS === 'android'
             ? {
-                paddingTop: insets.top + spacing.lg,
+                paddingTop: spacing.lg,
                 paddingBottom: insets.bottom + spacing.xxl,
               }
             : null,
@@ -89,20 +90,6 @@ export function AuthShell({
           },
         ]}
       >
-        <View
-          style={[
-            styles.topBar,
-            compactHeader && styles.compactTopBar,
-            desktop && styles.hidden,
-          ]}
-        >
-          <BrandLogo />
-          {topBarAccessory ?? (
-            <View style={styles.languageBadge}>
-              <Text style={styles.languageText}>日本語</Text>
-            </View>
-          )}
-        </View>
         {!hideHeader ? (
           <View style={[styles.header, compactHeader && styles.compactHeader]}>
             {eyebrow ? (
@@ -391,9 +378,7 @@ export function AuthContact({
 }
 
 const styles = StyleSheet.create({
-  hidden: { display: 'none' },
   compactContent: { paddingTop: spacing.lg },
-  compactTopBar: { marginBottom: spacing.lg },
   compactHeader: { marginBottom: spacing.xxl },
   compactHeaderMain: { minHeight: 104 },
   webFormContent: {
@@ -414,22 +399,6 @@ const styles = StyleSheet.create({
     maxWidth: layout.maxContentWidth,
     alignSelf: 'center',
   },
-  topBar: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    gap: spacing.sm,
-    flexWrap: 'wrap',
-    marginBottom: spacing.section,
-  },
-  languageBadge: {
-    borderRadius: radius.pill,
-    borderCurve: 'continuous',
-    paddingHorizontal: spacing.md,
-    paddingVertical: spacing.sm,
-    backgroundColor: colors.surface,
-  },
-  languageText: { ...typography.caption, color: colors.body },
   header: { gap: spacing.sm, marginBottom: spacing.xxl },
   headerMain: {
     flexDirection: 'row',

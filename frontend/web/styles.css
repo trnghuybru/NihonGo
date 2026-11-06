@@ -41,6 +41,16 @@ input:focus-visible,
 textarea:focus-visible {
   outline: none;
 }
+/* Prevent mobile Safari focus zoom without disabling pinch-to-zoom. */
+@media (max-width: 767px), (hover: none) and (pointer: coarse) {
+  input:not([type='checkbox']):not([type='radio']):not([type='range']),
+  textarea,
+  select,
+  [contenteditable]:not([contenteditable='false']) {
+    /* The writing paper keeps its larger font and matching character grid. */
+    font-size: max(16px, var(--genko-font-size, 16px)) !important;
+  }
+}
 /* Keep keyboard navigation visible on buttons and tabs. */
 [role='button']:focus-visible,
 [role='radio']:focus-visible,

@@ -107,6 +107,7 @@ class GameTests(unittest.TestCase):
             self.assertEqual(result.status_code, 200, result.json)
             self.assertEqual(result.json['phase'], 'results')
             self.assertTrue(result.json['attempts'][0]['correct'])
+            self.assertEqual(result.json['attempts'][0]['answer_reading'], state['questions'][0]['accepted'][0])
             self.assertEqual(result.json['players'][0]['score'], 10)
             self.assertIsNotNone(result.json['attempts'][0]['buzz_ms'])
             replay = self.post(f'/rooms/{code}/speech-answer', answer)
@@ -127,6 +128,18 @@ class GameTests(unittest.TestCase):
             result = self.post(f'/rooms/{code}/finish-reading', data)
             self.assertEqual(result.json['phase'], 'judging')
             self.assertFalse(permission.call_args.args[2])
+
+    def test_speech_preview_converts_kanji_and_is_restricted_to_the_holder(self):
+        self.app.config.update(LIVEKIT_URL='ws://localhost:7880', LIVEKIT_API_KEY='key', LIVEKIT_API_SECRET='secret'*8)
+        code = self.create('read')
+        state = self.start(code)
+        data = {'round_id': state['round_id'], 'text': '学校'}
+        with patch('games.media.permission'):
+            self.post(f'/rooms/{code}/buzz', {**data, 'recognizer': 'browser'})
+        self.assertEqual(self.post(f'/rooms/{code}/speech-preview', data).json['reading'], 'がっこう')
+        self.assertEqual(self.post(f'/rooms/{code}/speech-preview', data, 1).status_code, 403)
+        self.assertEqual(self.post(f'/rooms/{code}/speech-preview', {**data, 'round_id': 'old'}).status_code, 409)
+        self.assertEqual(engine.speech_reading('ガッコウ'), 'がっこう')
 
     def test_browser_deadline_falls_back_and_cloud_turn_rejects_browser_answers(self):
         self.app.config.update(LIVEKIT_URL='ws://localhost:7880', LIVEKIT_API_KEY='key', LIVEKIT_API_SECRET='secret'*8)

@@ -4,17 +4,45 @@ Phạm vi hiện tại: UC-R1–UC-R5 (danh sách, lọc, mở bài, furigana, t
 
 ## Dữ liệu
 
-CSV được lưu ở `data/reading/JLPT_Dokkai_N5-N1.csv`: 368 dòng câu hỏi, nhóm thành 180 đoạn theo trình độ/tên bài/số đoạn/nguồn. N5: 46; N4: 45; N3: 23; N2: 12; N1: 54. Không gộp hai đoạn chỉ vì trùng nội dung khi mã nguồn khác nhau.
+Kho đang dùng gồm ba bộ CSV trong `data/reading/rakuyomi/`: N3 có 209 bài/429 câu hỏi, N2 có 233 bài/443 câu hỏi và N1 có 261 bài/602 câu hỏi. Tổng 703 bài, 1474 câu hỏi hợp lệ, không có đáp án lệch lựa chọn. Bản JSON trong từng thư mục giữ định dạng và bảng biểu của nguồn. N2/N1 được nhập bổ sung, không xóa N3 hoặc lịch sử học mới.
+
+VPS/staging giữ đủ 703 bài. Database local đã rút gọn để kiểm thử: một bài cho mỗi dạng ở từng trình độ, tổng 15 bài (N3: 4, N2: 5, N1: 6). Ưu tiên giữ bài có lịch sử học/phân tích và bài có bảng; đã sao lưu toàn bộ kho local trước khi rút gọn. Các file nguồn đầy đủ vẫn giữ để phục hồi hoặc nạp lại khi cần.
+
+CSV cũ `data/reading/JLPT_Dokkai_N5-N1.csv` giữ làm tài liệu nguồn tham chiếu, không còn là bộ nạp mặc định: 368 dòng câu hỏi, nhóm thành 180 đoạn (N5: 46; N4: 45; N3: 23; N2: 12; N1: 54).
 
 ```bash
 venv/bin/flask --app app db upgrade
-venv/bin/flask --app app reading-import data/reading/JLPT_Dokkai_N5-N1.csv --dry-run
-venv/bin/flask --app app reading-import data/reading/JLPT_Dokkai_N5-N1.csv
+venv/bin/flask --app app reading-import data/reading/rakuyomi/N3/N3.csv --dry-run
+venv/bin/flask --app app reading-import data/reading/rakuyomi/N3/N3.csv
+venv/bin/flask --app app reading-import data/reading/rakuyomi/N2/N2.csv
+venv/bin/flask --app app reading-import data/reading/rakuyomi/N1/N1.csv
 ```
 
 Dry run chỉ kiểm tra file. Import xác thực toàn bộ trước khi ghi; dùng ID ổn định, cập nhật khi chạy lại, không nhân bản và không xóa bài khác. Toàn bộ import chạy trong một transaction. Giữ nguyên văn bản và xuống dòng; chỉ chuẩn hóa CRLF/CR thành LF.
 
-Báo cáo import liệt kê `answer_mismatch_lines` (số dòng CSV gồm dòng tiêu đề): 27 dòng có nội dung đáp án khác lựa chọn đã đánh dấu. Giữ nguyên dữ liệu đó trong cột JSON nội bộ và không tự sửa đáp án. Phần đọc hiểu loại 27 câu không khớp đáp án khỏi bộ câu hỏi công khai và chấm điểm; hiện có 341 câu hợp lệ trong 166 bài. 14 bài không có câu hợp lệ vẫn đọc và tra từ bình thường, không hiện phần bài tập.
+Để thay nguyên kho (xóa cả lượt làm bài và phân tích gắn với bài cũ), dùng lệnh riêng có sao lưu bắt buộc:
+
+```bash
+venv/bin/flask --app app reading-replace path/to/full-reviewed-catalog.csv --backup-dir backups/reading
+```
+
+Lệnh thay nguyên kho chỉ dùng khi chủ động muốn xóa dữ liệu đọc cũ; file phải chứa tất cả trình độ muốn giữ. Muốn thêm trình độ thì dùng `reading-import`. Lệnh thay xác thực bộ mới trước khi xóa, khóa ba bảng đọc hiểu trên PostgreSQL, sao lưu đầy đủ chúng vào JSON riêng quyền `600`, sau đó xóa/nhập trong một transaction. Phân tích furigana dùng tokenizer local, không gọi AI. Lỗi nhập sẽ rollback để giữ nguyên kho cũ. Chạy lại với đúng bộ đang có là no-op, không xóa lịch sử học mới. Không chạm bảng tài khoản hoặc module khác; thư mục backup không đưa vào Git.
+
+### Thu thập Rakuyomi N3
+
+`scripts/crawl_rakuyomi_reading.py` lấy HTML công khai, không đăng nhập, không gọi API riêng hoặc AI và không ghi database. Chạy tuần tự, cách request ít nhất 1 giây (mặc định 1,5 giây); dừng khi nguồn giới hạn/chặn truy cập, không đổi proxy hay tài khoản. Có cache để tiếp tục mà không tải lại trang đã lấy.
+
+```bash
+venv/bin/python scripts/crawl_rakuyomi_reading.py --level N3 \
+  --output data/reading/rakuyomi/N3 --cache /tmp/rakuyomi-import-N3-cache --delay 1.5
+venv/bin/flask --app app reading-import data/reading/rakuyomi/N3/N3.csv --dry-run
+```
+
+Đầu ra gồm `N3.json` (giữ HTML đã lọc, cấu trúc bảng, URL hình, định dạng câu hỏi/lựa chọn và nguồn từng bài), `N3.csv` (các cột tương thích importer hiện tại) và `report.json` (số bài, câu hỏi, bảng/hình, lỗi và trạng thái hoàn tất). Đáp án `correctOption` của nguồn bắt đầu từ 0, chuyển thành 1–4 khi xuất. Bỏ phần furigana phụ để không nhân đôi chữ gốc; câu hỏi/lựa chọn trong CSV chỉ chứa chữ, không có thẻ HTML. Không nhập bài thiếu nội dung/câu hỏi/đáp án hợp lệ; ghi lỗi để kiểm tra lại. Dùng `--reparse` để dựng lại tất cả bản ghi sau khi sửa parser, tận dụng cache HTML mà không tải lại.
+
+Bảng ở CSV được biểu diễn theo từng hàng, phân cách ô bằng ` | `; bản HTML và cấu trúc ô vẫn giữ trong JSON để bổ sung giao diện bảng sau. Việc thu thập không xóa kho cũ, lịch sử làm bài hoặc cache phân tích; chỉ thay kho sau khi kiểm tra dữ liệu và sao lưu riêng. Đây là snapshot từ nội dung nguồn, không phải dữ liệu do NihonGO biên soạn hay giấy phép mở.
+
+Với bộ CSV cũ, báo cáo import có 27 dòng đáp án lệch lựa chọn, nên chỉ 341 câu hợp lệ trong 166 bài. Giữ phần mô tả này để đối chiếu dữ liệu lịch sử; bộ Rakuyomi N3 mới đã kiểm tra đủ 429 câu hợp lệ và không có dòng lệch đáp án.
 
 ## API
 
@@ -24,7 +52,7 @@ Tất cả endpoint giữ xác thực Bearer của dự án.
 - `GET /api/reading/passages/:id`
 - `POST /api/reading/passages/:id/attempts`
 
-Level trống nghĩa là tất cả. Dạng bài: `short`, `medium`, `long`, `information`, `opinion`. Truy vấn tối đa 100 ký tự; page từ 1–10000, page_size từ 1–40. Danh sách có phân trang và metadata dạng bài; chi tiết có văn bản, từng dòng token và metadata từ (không nạp trước toàn bộ nghĩa).
+Level trống nghĩa là tất cả. Dạng bài: `short`, `medium`, `long`, `information`, `opinion`, `integrated`, `thematic`. Truy vấn tối đa 100 ký tự; page từ 1–10000, page_size từ 1–40. Danh sách có phân trang và metadata dạng bài; chi tiết có văn bản, từng dòng token và metadata từ (không nạp trước toàn bộ nghĩa).
 
 Bộ phân tích Sudachi hiện có tạo cách đọc/dạng gốc. Cache lưu trong bảng `reading_passages`, làm mới khi nội dung hoặc phiên bản phân tích thay đổi. Furigana là dữ liệu phân tích tự động; có thể cần biên tập riêng cho tên riêng/cách đọc theo ngữ cảnh trong tương lai.
 

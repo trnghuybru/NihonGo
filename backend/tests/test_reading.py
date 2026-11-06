@@ -2,6 +2,7 @@ import csv
 import tempfile
 import unittest
 import uuid
+import json
 from pathlib import Path
 from unittest.mock import patch
 from flask import Flask
@@ -12,6 +13,7 @@ from auth.security import digest
 from extensions import db
 from reading import init_reading
 from reading.importer import COLUMNS, import_dataset
+from reading.replacement import replace_dataset
 from reading.models import ReadingPassage, ReadingAttempt, ReadingInsight
 from api_errors import ApiError
 from reading.study import normalize, source_for
@@ -89,6 +91,40 @@ class ReadingTests(unittest.TestCase):
         self.assertTrue(any(w['reading'] == 'がっこう' for w in data['words'].values()))
         for paragraph in data['paragraphs']:
             self.assertEqual(''.join(t['text'] for t in paragraph['tokens']), paragraph['text'])
+
+    def test_replacement_backs_up_old_data_and_keeps_accounts(self):
+        import_dataset(self.dataset([row()]))
+        old = db.session.scalar(select(ReadingPassage))
+        db.session.add(ReadingAttempt(id='old-attempt', user_id='reader', passage_id=old.id,
+            request_id='old-request', version='old', result={}, created_at=1))
+        db.session.add(ReadingInsight(passage_id=old.id, kind='analysis', source_hash='old',
+            status='ready', updated_at=1, payload={}))
+        db.session.commit()
+        path = self.dataset([row(**{'Level': 'N3', 'Nguồn': 'https://example.com/new'})])
+        report = replace_dataset(path, Path(self.directory.name) / 'backups')
+        self.assertEqual(report['removed'], {'reading_passages': 1, 'reading_attempts': 1, 'reading_insights': 1})
+        backup = json.loads(Path(report['backup']).read_text())
+        self.assertEqual(backup['tables']['reading_attempts'][0]['id'], 'old-attempt')
+        self.assertEqual(Path(report['backup']).stat().st_mode & 0o777, 0o600)
+        self.assertIsNotNone(db.session.get(User, 'reader'))
+        current = db.session.scalar(select(ReadingPassage))
+        self.assertEqual(current.level, 'N3')
+        self.assertEqual(db.session.scalar(select(func.count()).select_from(ReadingAttempt)), 0)
+        db.session.add(ReadingAttempt(id='new-attempt', user_id='reader', passage_id=current.id,
+            request_id='new-request', version='new', result={}, created_at=2))
+        db.session.commit()
+        self.assertTrue(replace_dataset(path, Path(self.directory.name) / 'backups')['unchanged'])
+        self.assertIsNotNone(db.session.get(ReadingAttempt, 'new-attempt'))
+
+    def test_replacement_rolls_back_if_analysis_fails(self):
+        import_dataset(self.dataset([row()]))
+        old_id = db.session.scalar(select(ReadingPassage.id))
+        path = self.dataset([row(**{'Nguồn': 'https://example.com/new'})])
+        with patch('reading.replacement.passage_analysis', side_effect=RuntimeError('test failure')):
+            with self.assertRaises(RuntimeError):
+                replace_dataset(path, Path(self.directory.name) / 'backups')
+        self.assertEqual(list(db.session.scalars(select(ReadingPassage.id))), [old_id])
+        self.assertEqual(len(list((Path(self.directory.name) / 'backups').glob('*.json'))), 1)
 
     def test_filters_pagination_order_and_literal_search(self):
         import_dataset(self.dataset([row(), row(**{'Đoạn': '2', 'Bài đọc': '100% 本'}), row(**{'Level': 'N4', 'Dạng mondai': '長文'})]))

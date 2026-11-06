@@ -1200,8 +1200,11 @@ export function VocabularyGameScreen({
                                   }
                                 </Text>
                                 <Text style={styles.caption}>
-                                  {item.answer || 'Không có câu trả lời'} ·{' '}
-                                  {item.correct ? 'Đúng' : 'Chưa đúng'}
+                                  {(room.mode === 'read'
+                                    ? item.answer_reading ?? item.answer
+                                    : item.answer) ||
+                                    'Không có câu trả lời'}{' '}
+                                  · {item.correct ? 'Đúng' : 'Chưa đúng'}
                                 </Text>
                                 {item.buzz_ms != null ? (
                                   <Text style={styles.caption}>

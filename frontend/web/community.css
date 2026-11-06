@@ -53,6 +53,99 @@
   font-family: ReadexPro-Medium, sans-serif;
   font-size: 12px;
 }
+.ng-feedback-trigger {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 14px;
+  border-radius: 99px;
+  background: #fff8f1;
+  color: #b65a13;
+  font-family: ReadexPro-Medium, sans-serif;
+  font-size: 12px;
+}
+.ng-feedback-invitation,
+.ng-feedback-reward {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px;
+  margin-top: 16px;
+  border: 1px solid #f1e7de;
+  border-radius: 16px;
+  background: #fff8f1;
+}
+.ng-feedback-invitation > svg,
+.ng-feedback-reward > svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: #fca04b;
+}
+.ng-feedback-invitation strong,
+.ng-feedback-reward strong {
+  font-family: ReadexPro-SemiBold, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #252526;
+}
+.ng-community-panel .ng-feedback-invitation p,
+.ng-community-panel .ng-feedback-reward p {
+  margin: 4px 0 0;
+  color: #4d4d4f;
+  font-size: 12px;
+  line-height: 1.6;
+}
+.ng-feedback-inline,
+.ng-feedback-later,
+.ng-feedback-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  min-height: 34px;
+  padding: 7px 12px;
+  border-radius: 99px;
+  font-family: ReadexPro-Medium, sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.ng-feedback-inline,
+.ng-feedback-later {
+  color: #b65a13;
+  border: 1px solid #e5d9cf;
+  background: #fff;
+}
+.ng-feedback-inline {
+  margin-top: 10px;
+}
+.ng-feedback-inline:hover,
+.ng-feedback-later:hover {
+  border-color: #fca04b;
+  background: #fff8f1;
+}
+.ng-feedback-link {
+  color: #fff;
+  border: 1px solid #fca04b;
+  background: #fca04b;
+}
+.ng-feedback-link:hover {
+  border-color: #f28d35;
+  background: #f28d35;
+}
+.ng-feedback-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 20px;
+}
+.ng-community-panel .ng-feedback-email {
+  font-size: 12px;
+  line-height: 1.6;
+  color: #77716c;
+}
 .ng-community-dialog {
   position: fixed;
   inset: 0;
@@ -463,12 +556,14 @@
     );
     gap: 7px;
   }
-  .ng-coffee-trigger {
+  .ng-coffee-trigger,
+  .ng-feedback-trigger {
     width: 44px;
     padding: 0;
     justify-content: center;
   }
-  .ng-coffee-trigger > span {
+  .ng-coffee-trigger > span,
+  .ng-feedback-trigger > span {
     display: none;
   }
   .ng-community-panel {
