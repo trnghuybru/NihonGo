@@ -1,4 +1,4 @@
-# Kế hoạch beta NihonGO cho 10 người
+# Kế hoạch beta NihonGO
 
 **Cập nhật 01/11/2026.** Web đang chạy tại <https://momonihongo.app>. Chỉ các email trong danh sách mời mới đăng ký được. Backend dùng Vertex AI cho tác vụ AI thông thường và Gemini Developer API cho hội thoại Live.
 
@@ -13,7 +13,7 @@ Ngày được tính theo **Asia/Ho_Chi_Minh**, đặt lại lúc 00:00. Các ch
 
 ## Trạng thái triển khai
 
-- [x] VPS, HTTPS, PostgreSQL, hàng đợi, worker, Brevo và danh sách mời tối đa 10 email.
+- [x] VPS, HTTPS, PostgreSQL, hàng đợi, worker, Brevo và danh sách mời tối đa 50 email.
 - [x] Quota video và Live lưu trên PostgreSQL, kiểm tra ở backend, hiển thị số lượt còn lại ở trang Cá nhân.
 - [x] Gateway Live giữ API key ở backend; kiểm thử WebSocket qua domain bằng tài khoản tạm đã nhận `setupComplete` và được xóa sau kiểm thử.
 - [x] Web đã bật Nói Live; người dùng xác nhận Aoi đáp bằng giọng trên Chrome.
@@ -22,7 +22,7 @@ Ngày được tính theo **Asia/Ho_Chi_Minh**, đặt lại lúc 00:00. Các ch
 - [x] Bật game nhiều người và giọng nói. DNS, HTTPS, Redis, LiveKit và voice worker đã chạy; hai người chơi tạm nhìn thấy nhau, và worker đã tham gia phòng Đọc tạm.
 - [x] Người dùng xác nhận phát lại bản thu trên Chrome; hai tài khoản thật nghe thấy nhau và điểm game Đọc cập nhật.
 - [ ] Kiểm tra lại luồng video không có phụ đề nếu muốn mở đầy đủ Whisper cho người dùng beta.
-- [ ] Mời đủ 10 email, thử đồng thời 2 rồi 5 người, xem log lỗi và tốc độ máy.
+- [ ] Mời người dùng trong giới hạn 50 email; thử đồng thời 2 rồi 5 người, xem log lỗi và tốc độ máy.
 
 ## Kiểm thử trước khi mời đủ người
 

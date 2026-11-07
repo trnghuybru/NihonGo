@@ -46,8 +46,8 @@ def init_auth(app):
         if not beta_enabled():
             raise RuntimeError("Production beta requires BETA_MODE=true.")
         invites = {item.strip().lower() for item in os.getenv("BETA_INVITE_EMAILS", "").split(",") if item.strip()}
-        if not 1 <= len(invites) <= 10:
-            raise RuntimeError("Production beta requires 1–10 invited emails.")
+        if not 1 <= len(invites) <= 50:
+            raise RuntimeError("Production beta requires 1–50 invited emails.")
         from beta_daily.service import daily_mode
         if not daily_mode() and not os.getenv("BETA_GEMINI_PRICES_JSON", "").strip():
             raise RuntimeError("Production beta requires BETA_GEMINI_PRICES_JSON.")

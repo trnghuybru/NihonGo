@@ -4,6 +4,8 @@ import re
 import sys
 from pathlib import Path
 
+MAX_INVITES = 50
+
 
 def main(path: Path) -> int:
     if not path.is_file():
@@ -77,8 +79,8 @@ def main(path: Path) -> int:
         for key in ("LIVEKIT_URL", "LIVEKIT_PUBLIC_URL", "LIVEKIT_API_KEY", "LIVEKIT_API_SECRET"):
             required(key)
     invites = [email.strip().lower() for email in required("BETA_INVITE_EMAILS").split(",")]
-    if not 1 <= len(set(invites)) <= 10 or any(not re.fullmatch(r"[^\s@]+@[^\s@]+\.[^\s@]+", email) for email in invites):
-        errors.append("BETA_INVITE_EMAILS needs 1-10 distinct valid email addresses")
+    if not 1 <= len(set(invites)) <= MAX_INVITES or any(not re.fullmatch(r"[^\s@]+@[^\s@]+\.[^\s@]+", email) for email in invites):
+        errors.append(f"BETA_INVITE_EMAILS needs 1-{MAX_INVITES} distinct valid email addresses")
     if quota_mode == "usd":
         try:
             prices = json.loads(required("BETA_GEMINI_PRICES_JSON"))

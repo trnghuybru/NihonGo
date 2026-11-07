@@ -25,5 +25,5 @@ def check_invite(email, *, creating=False):
         if db.session.get_bind().dialect.name == "postgresql":
             db.session.execute(text("SELECT pg_advisory_xact_lock(782651009)"))
         seats = db.session.scalar(select(func.count()).select_from(User).where(User.email.in_(allowed)))
-        if seats >= 10:
+        if seats >= 50:
             raise AuthError("Đợt dùng thử đã đủ số người tham gia.", 403, "beta_full")

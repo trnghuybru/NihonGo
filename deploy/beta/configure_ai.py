@@ -5,6 +5,8 @@ import re
 import tempfile
 from pathlib import Path
 
+MAX_INVITES = 50
+
 root = Path(__file__).resolve().parents[2]
 env_path = Path(os.getenv("BETA_ENV_PATH", root / "backend/.env"))
 if not env_path.is_file():
@@ -13,11 +15,11 @@ if not env_path.is_file():
 key = getpass.getpass("Gemini API key for the beta project (hidden): ").strip()
 if not key or any(char.isspace() for char in key):
     raise SystemExit("Invalid Gemini API key")
-raw = input("Invited email addresses (1-10, comma-separated): ").strip()
+raw = input(f"Invited email addresses (1-{MAX_INVITES}, comma-separated): ").strip()
 emails = [item.strip().lower() for item in raw.split(",") if item.strip()]
 pattern = re.compile(r"^[^\s@,]+@[^\s@,]+\.[^\s@,]+$")
-if not 1 <= len(emails) <= 10 or len(set(emails)) != len(emails) or not all(pattern.fullmatch(email) for email in emails):
-    raise SystemExit("Enter 1-10 distinct valid email addresses")
+if not 1 <= len(emails) <= MAX_INVITES or len(set(emails)) != len(emails) or not all(pattern.fullmatch(email) for email in emails):
+    raise SystemExit(f"Enter 1-{MAX_INVITES} distinct valid email addresses")
 
 updates = {"GEMINI_API_KEY": key, "BETA_INVITE_EMAILS": ",".join(emails)}
 lines = env_path.read_text().splitlines()

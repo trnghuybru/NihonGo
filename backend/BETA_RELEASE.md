@@ -1,6 +1,6 @@
 # Vận hành beta NihonGO
 
-**01/11/2026:** Web production là <https://momonihongo.app>. Mọi tài khoản phải nằm trong danh sách tối đa 10 email được mời. Backend dùng Vertex AI cho tác vụ thông thường và API key Gemini riêng cho Live. Cấu hình `BETA_QUOTA_MODE=daily` đã triển khai; ví USD cũ không còn được dùng để giới hạn người dùng beta.
+**01/11/2026:** Web production là <https://momonihongo.app>. Mọi tài khoản phải nằm trong danh sách tối đa 50 email được mời; hệ thống cho phép tối đa 50 tài khoản beta. Backend dùng Vertex AI cho tác vụ thông thường và API key Gemini riêng cho Live. Cấu hình `BETA_QUOTA_MODE=daily` đã triển khai; ví USD cũ không còn được dùng để giới hạn người dùng beta.
 
 ## Quota theo ngày
 

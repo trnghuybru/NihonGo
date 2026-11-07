@@ -35,7 +35,7 @@ class BetaAiTests(unittest.TestCase):
     def setUp(self):
         self.environment = patch.dict(os.environ, {
             "BETA_MODE": "true",
-            "BETA_INVITE_EMAILS": ",".join(f"user{i}@example.com" for i in range(11)),
+            "BETA_INVITE_EMAILS": ",".join(f"user{i}@example.com" for i in range(50)),
             "BETA_GEMINI_PRICES_JSON": '{"test-model":{"input_usd_per_million":1000,"output_usd_per_million":1000}}',
             "BETA_LIVE_RESERVE_USD": "0.25",
             "BETA_LIVE_ENABLED": "true",
@@ -56,17 +56,17 @@ class BetaAiTests(unittest.TestCase):
         self.context.pop()
         self.environment.stop()
 
-    def test_invite_and_tenth_seat(self):
+    def test_invite_and_fiftieth_seat(self):
         with self.assertRaises(AuthError):
             check_invite("stranger@example.com")
-        check_invite("user1@example.com", creating=True)
-        for index in range(1, 10):
+        check_invite("user49@example.com")
+        for index in range(1, 50):
             db.session.add(User(id=f"user{index}", name="User",
                                 email=f"user{index}@example.com", phone=f"+84912345{index:03d}",
                                 email_verified=True))
         db.session.commit()
         with self.assertRaises(AuthError) as failure:
-            check_invite("user10@example.com", creating=True)
+            check_invite("user49@example.com", creating=True)
         self.assertEqual(failure.exception.code, "beta_full")
 
     def test_wallet_reservation_and_settlement(self):
