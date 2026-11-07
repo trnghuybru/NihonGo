@@ -53,6 +53,8 @@ def init_games(app, start_timer=True):
     app.extensions['game_socketio'] = socketio
     connections = {}
     from .routes import bp
+    from . import lobby_routes  # noqa: F401
+    from . import castle_routes  # noqa: F401 — routes chung blueprint /api/games
     app.register_blueprint(bp)
 
     def authenticated(sid):
@@ -93,7 +95,7 @@ def init_games(app, start_timer=True):
             return {'ok': False}
         try:
             code = data.get('code', '') if isinstance(data, dict) else ''
-            row, _ = engine.locked(code, user_id)
+            row, _ = engine.locked(code, user_id, allow_castle=True, allow_lobby=True)
             db.session.commit()
             join_room(row.code)
             return {'ok': True}

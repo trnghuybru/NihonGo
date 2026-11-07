@@ -2,9 +2,45 @@ import { LearningLevelContext } from '../src/hooks/useLearningLevel';
 import React from 'react';
 import Renderer, { act } from 'react-test-renderer';
 import { TextInput, Text } from 'react-native';
-import { VocabularyGameScreen } from '../src/screens/VocabularyGameScreen';
+import {
+  VocabularyGameScreen,
+  VocabularyRoomScreen,
+} from '../src/screens/VocabularyGameScreen';
+import { WebNavigationContext } from '../src/navigation/webNavigation';
 import { gameService, GameRoom } from '../src/services/gameService';
 import { createGameAudio } from '../src/services/gameAudio';
+import {
+  sharedRoomService,
+  SharedRoom,
+} from '../src/services/sharedRoomService';
+const mockSharedRoom: SharedRoom = {
+  id: 'shared',
+  code: 'ABC234',
+  host_id: 'u',
+  version: 1,
+  phase: 'waiting',
+  game: null,
+  selected_game: 'castle',
+  settings: {
+    level: 'N5',
+    source: 'starter',
+    topic: 'Tất cả',
+    lesson_id: null,
+    question_count: 10,
+    seconds: 9,
+  },
+  members: [{ id: 'u', name: 'Minh', ready: false }],
+  round: 0,
+  read_available: true,
+  configured: false,
+};
+jest.mock('../src/services/sharedRoomService', () => ({
+  sharedRoomService: {
+    create: jest.fn(),
+    snapshot: jest.fn(),
+    action: jest.fn(),
+  },
+}));
 const mockSoundPlay = jest.fn();
 jest.mock('../src/services/gameSounds', () => ({
   createGameSounds: () => ({
@@ -15,6 +51,9 @@ jest.mock('../src/services/gameSounds', () => ({
 }));
 jest.mock('../src/services/gameService', () => ({
   gameService: {
+    resolve: jest
+      .fn()
+      .mockResolvedValue({ game: 'vocabulary', mode: 'write', code: 'ABC234' }),
     catalog: jest.fn(),
     savedRoom: jest.fn().mockResolvedValue(null),
     saveRoom: jest.fn().mockResolvedValue(undefined),
@@ -83,6 +122,13 @@ async function type(label: string, value: string) {
 }
 beforeEach(async () => {
   jest.clearAllMocks();
+  jest.mocked(sharedRoomService.create).mockResolvedValue(mockSharedRoom);
+  jest.mocked(sharedRoomService.snapshot).mockResolvedValue(mockSharedRoom);
+  jest.mocked(sharedRoomService.action).mockResolvedValue(mockSharedRoom);
+  jest
+    .mocked(gameService.resolve)
+    .mockResolvedValue({ game: 'vocabulary', mode: 'write', code: 'ABC234' });
+
   jest.mocked(gameService.catalog).mockImplementation(async level => ({
     level,
     available_count: 30,
@@ -93,11 +139,94 @@ beforeEach(async () => {
   }));
   jest.mocked(gameService.create).mockResolvedValue(room);
   await act(async () => {
-    tree = Renderer.create(<VocabularyGameScreen userId="u" onExit={exit} />);
+    tree = Renderer.create(<VocabularyRoomScreen userId="u" onExit={exit} />);
   });
 });
 afterEach(async () => {
   await act(async () => tree.unmount());
+});
+test('opens castle from the game library and returns to its three game cards', async () => {
+  await act(async () => {
+    tree.unmount();
+    tree = Renderer.create(<VocabularyGameScreen userId="u" onExit={exit} />);
+  });
+  expect(control('Chơi Giành mic')).toBeDefined();
+  expect(control('Chơi Đối kháng từ vựng')).toBeDefined();
+  jest
+    .mocked(gameService.resolve)
+    .mockResolvedValueOnce({ game: 'shared', mode: 'write', code: 'ABC234' });
+  await press('Chơi Công thành Momo');
+  expect(
+    tree.root
+      .findAllByType(Text)
+      .some(node => node.props.children === 'Công thành Momo'),
+  ).toBe(true);
+  await press('Rời phòng, về kho game');
+  expect(control('Chơi Công thành Momo')).toBeDefined();
+});
+test('shared code resolves to one lobby and does not join a legacy game directly', async () => {
+  const navigate = jest.fn();
+  jest
+    .mocked(gameService.resolve)
+    .mockResolvedValue({ game: 'shared', mode: 'write', code: 'ABC234' });
+  await act(async () => {
+    tree.unmount();
+    tree = Renderer.create(
+      <WebNavigationContext.Provider
+        value={{
+          pathname: '/games/ABC234',
+          search: '',
+          key: 'shared',
+          state: null,
+          navigate,
+          back: jest.fn(),
+        }}
+      >
+        <VocabularyGameScreen userId="u" onExit={exit} />
+      </WebNavigationContext.Provider>,
+    );
+  });
+  expect(control('Chọn Công thành Momo')).toBeDefined();
+  expect(sharedRoomService.snapshot).toHaveBeenCalledWith('ABC234');
+  expect(gameService.join).not.toHaveBeenCalled();
+  await press('Rời phòng, về kho game');
+  expect(navigate).toHaveBeenCalledWith('/games');
+});
+test('game library selects the voice game route without loading a room first', async () => {
+  const navigate = jest.fn();
+  await act(async () => {
+    tree.unmount();
+    tree = Renderer.create(
+      <WebNavigationContext.Provider
+        value={{
+          pathname: '/games',
+          search: '',
+          key: 'library',
+          state: null,
+          navigate,
+          back: jest.fn(),
+        }}
+      >
+        <VocabularyGameScreen userId="u" onExit={exit} />
+      </WebNavigationContext.Provider>,
+    );
+  });
+  jest.clearAllMocks();
+  await press('Chơi Giành mic');
+  expect(sharedRoomService.create).toHaveBeenCalledWith('read', 'N5');
+  expect(navigate).toHaveBeenCalledWith('/games/ABC234');
+  expect(gameService.catalog).not.toHaveBeenCalled();
+});
+test('joins an existing room from the native game library', async () => {
+  jest.mocked(gameService.join).mockResolvedValue(room);
+  await act(async () => {
+    tree.unmount();
+    tree = Renderer.create(<VocabularyGameScreen userId="u" onExit={exit} />);
+  });
+  await type('Mã phòng', 'abc234');
+  await press('Vào phòng');
+  expect(gameService.join).toHaveBeenCalledWith('ABC234');
+  expect(control('Sẵn sàng')).toBeDefined();
 });
 test('creates a room from the selected JLPT and lesson', async () => {
   await press('N4');
@@ -182,7 +311,7 @@ test('a non-host sees every player in the final standings', async () => {
   expect(control('Về khu chơi')).toBeDefined();
 });
 
-test('new game catalog starts at the profile level', async () => {
+test('new shared room starts at the profile level', async () => {
   await act(async () => {
     tree.unmount();
     tree = Renderer.create(
@@ -191,11 +320,12 @@ test('new game catalog starts at the profile level', async () => {
       </LearningLevelContext.Provider>,
     );
   });
-  expect(gameService.catalog).toHaveBeenLastCalledWith('N2', 1);
-  await press('N4');
-  expect(gameService.catalog).toHaveBeenLastCalledWith('N4', 1);
+  jest
+    .mocked(gameService.resolve)
+    .mockResolvedValueOnce({ game: 'shared', mode: 'write', code: 'ABC234' });
+  await press('Chơi Đối kháng từ vựng');
+  expect(sharedRoomService.create).toHaveBeenCalledWith('write', 'N2');
 });
-
 test('keeps the mic action visible while another player reads and restores it next round', async () => {
   const current: GameRoom = {
     ...room,
@@ -276,14 +406,12 @@ test('only shows the microphone as active after publication has completed', asyn
   await type('Mã phòng', 'ABC234');
   await press('Vào phòng');
   await press('Kiểm tra âm thanh');
-  jest
-    .mocked(gameService.action)
-    .mockResolvedValue({
-      ...current,
-      version: 2,
-      phase: 'reading',
-      holder: 'u',
-    });
+  jest.mocked(gameService.action).mockResolvedValue({
+    ...current,
+    version: 2,
+    phase: 'reading',
+    holder: 'u',
+  });
   await press('Giành lượt đọc');
   expect(control('Đang bật micro…').props.disabled).toBe(true);
   await act(async () => {

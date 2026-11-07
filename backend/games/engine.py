@@ -55,13 +55,18 @@ def mutate(row, state):
     row.status = state['phase']
 
 
-def locked(code, user_id=None):
+def locked(code, user_id=None, *, allow_castle=False, allow_lobby=False):
     row = db.session.scalar(select(GameRoom).where(GameRoom.code == code.upper()).with_for_update().execution_options(populate_existing=True))
     if not row:
         raise ApiError('Không tìm thấy phòng chơi.', 404, 'room_not_found')
+    if row.state.get('game') == 'castle' and not allow_castle:
+        raise ApiError('Đây là phòng Công thành Momo.', 409, 'castle_room')
+    if row.state.get('game') == 'lobby' and not allow_lobby:
+        raise ApiError('Đây là phòng chờ chung.', 409, 'shared_lobby')
     if row.expires_at <= millis():
         raise ApiError('Phòng chơi đã hết hạn.', 410, 'room_expired')
-    if user_id is not None and not any(p['id'] == user_id and (not p['left'] or row.status == 'finished') for p in row.state['players']):
+    members = row.state['session']['members'] if allow_lobby and row.state.get('session') else row.state['players']
+    if user_id is not None and not any(p['id'] == user_id and (not p.get('left', False) or row.status == 'finished') for p in members):
         raise ApiError('Bạn không ở trong phòng này.', 403, 'room_forbidden')
     return row, copy.deepcopy(row.state)
 
@@ -85,6 +90,11 @@ def conclude(state, at, technical_error=None):
 
 
 def tick(state, mode, at):
+    if state.get('game') == 'lobby':
+        return False
+    if state.get('game') == 'castle':
+        from .castle import tick as tick_castle
+        return tick_castle(state, at)
     if state.get('deadline') is None or at < state['deadline']:
         return False
     if state['phase'] == 'countdown':
@@ -102,7 +112,7 @@ def tick(state, mode, at):
     return True
 
 
-def create_room(user, data):
+def create_room(user, data, *, state_only=False):
     mode, level, source = data.get('mode'), data.get('level'), data.get('source')
     count, seconds = data.get('question_count', 10), data.get('seconds', 15)
     lesson_id = data.get('lesson_id') if source == 'lesson' else None
@@ -115,6 +125,14 @@ def create_room(user, data):
     pool = word_pool(level, lesson_id)
     if len(pool) < count:
         raise ApiError(f'Nguồn đã chọn có {len(pool)} từ hợp lệ. Hãy giảm số câu hoặc chọn nguồn khác.', 422, 'insufficient_words')
+    at = millis()
+    state = {'phase': 'waiting', 'level': level, 'source': source, 'lesson_id': lesson_id,
+             'seconds': seconds, 'questions': secrets.SystemRandom().sample(pool, count),
+             'players': [{'id': user.id, 'name': user.name, 'ready': False, 'left': False, 'score': 0}],
+             'index': -1, 'round_id': None, 'deadline': None, 'holder': None, 'attempts': [], 'history': [],
+             'voice_ready_at': 0}
+    if state_only:
+        return state
     codes = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789'
     for _ in range(20):
         code = ''.join(secrets.choice(codes) for _ in range(6))
@@ -122,12 +140,6 @@ def create_room(user, data):
             break
     else:
         raise ApiError('Chưa tạo được mã phòng. Hãy thử lại.', 503)
-    at = millis()
-    state = {'phase': 'waiting', 'level': level, 'source': source, 'lesson_id': lesson_id,
-             'seconds': seconds, 'questions': secrets.SystemRandom().sample(pool, count),
-             'players': [{'id': user.id, 'name': user.name, 'ready': False, 'left': False, 'score': 0}],
-             'index': -1, 'round_id': None, 'deadline': None, 'holder': None, 'attempts': [], 'history': [],
-             'voice_ready_at': 0}
     row = GameRoom(id=str(uuid.uuid4()), code=code, host_id=user.id, mode=mode, status='waiting',
                    state=state, version=1, updated_at=at, expires_at=at + 2*3600000)
     db.session.add(row)

@@ -1,4 +1,9 @@
 import { useDefaultJlptLevel } from '../hooks/useLearningLevel';
+import { CastleGameScreen } from './CastleGameScreen';
+import { sharedRoomService } from '../services/sharedRoomService';
+import type { SharedAudioState } from './SharedGameRoomScreen';
+import { SharedGameRoomScreen } from './SharedGameRoomScreen';
+import { GameLibraryScreen, LibraryGame } from './GameLibraryScreen';
 import { decodeRouteParam } from '../navigation/webNavigation';
 import { useWebNavigation } from '../navigation/webNavigation';
 import { useCallback, useEffect, useRef, useState } from 'react';
@@ -42,24 +47,210 @@ import {
 } from '../theme/theme';
 
 const levels = ['N5', 'N4', 'N3', 'N2', 'N1'];
-export function VocabularyGameScreen({
-  userId,
-  onExit,
-}: {
+export function VocabularyGameScreen(props: {
   userId: string;
   onExit: () => void;
 }) {
+  const web = useWebNavigation();
+  const nav = useRef(web);
+  nav.current = web;
+  const [localGame, setLocalGame] = useState<
+    LibraryGame | 'room' | 'bot' | 'create' | null
+  >(null);
+  const [localCode, setLocalCode] = useState('');
+  const level = useDefaultJlptLevel();
+  const [creating, setCreating] = useState(false),
+    [createError, setCreateError] = useState('');
+  const active = useRef(true);
+  useEffect(() => {
+    active.current = true;
+    return () => {
+      active.current = false;
+    };
+  }, []);
+  const close = useCallback(() => {
+    if (nav.current) nav.current.navigate('/games');
+    else {
+      setLocalCode('');
+      setLocalGame(null);
+    }
+  }, []);
+  const join = useCallback((code: string) => {
+    if (nav.current) nav.current.navigate('/games/' + code);
+    else {
+      setLocalCode(code);
+      setLocalGame('room');
+    }
+  }, []);
+  const makeRoom = async (game: LibraryGame | null) => {
+    if (creating) return;
+    setCreating(true);
+    setCreateError('');
+    try {
+      const room = await sharedRoomService.create(game, level);
+      if (active.current) join(room.code);
+    } catch (failure) {
+      if (active.current)
+        setCreateError(
+          failure instanceof Error ? failure.message : 'Không tạo được phòng.',
+        );
+    } finally {
+      if (active.current) setCreating(false);
+    }
+  };
+  const openBot = () => {
+    if (nav.current) nav.current.navigate('/games/bot');
+    else setLocalGame('bot');
+  };
+  const selected = web
+    ? web.pathname === '/games'
+      ? null
+      : web.pathname.split('/')[2]
+    : localGame;
+  if (!selected || ['castle', 'write', 'read', 'create'].includes(selected))
+    return (
+      <GameLibraryScreen
+        onOpen={game => makeRoom(game)}
+        onCreate={() =>
+          makeRoom(
+            selected && selected !== 'create'
+              ? (selected as LibraryGame)
+              : null,
+          )
+        }
+        onJoin={join}
+        onExit={props.onExit}
+        onBot={openBot}
+        busy={creating}
+        error={createError}
+      />
+    );
+  if (selected === 'bot')
+    return (
+      <CastleGameScreen key={props.userId} {...props} forceBot onExit={close} />
+    );
+  if (!['write', 'read'].includes(selected))
+    return (
+      <GameRoomGateway
+        key={selected}
+        {...props}
+        onExit={close}
+        code={web ? decodeRouteParam(selected) : localCode}
+      />
+    );
+  return (
+    <VocabularyRoomScreen
+      key={selected}
+      {...props}
+      onExit={close}
+      initialMode={selected === 'read' ? 'read' : 'write'}
+      initialCode={localCode}
+    />
+  );
+}
+
+function GameRoomGateway({
+  code,
+  userId,
+  onExit,
+}: {
+  code: string;
+  userId: string;
+  onExit: () => void;
+}) {
+  const load = useCallback(() => gameService.resolve(code), [code]);
+  const { state, reload } = useRemoteResource(load);
+  if (state.status === 'ready')
+    return state.data.game === 'shared' ? (
+      <SharedGameRoomScreen
+        code={state.data.code}
+        userId={userId}
+        onExit={onExit}
+        renderGame={(game, roomCode, back, sharedAudio) =>
+          game === 'castle' ? (
+            <CastleGameScreen
+              userId={userId}
+              initialCode={roomCode}
+              sharedRoom
+              onExit={back}
+            />
+          ) : (
+            <VocabularyRoomScreen
+              userId={userId}
+              initialCode={roomCode}
+              initialMode={game}
+              sharedAudio={sharedAudio}
+              sharedRoom
+              onExit={back}
+            />
+          )
+        }
+      />
+    ) : state.data.game === 'castle' ? (
+      <CastleGameScreen
+        userId={userId}
+        initialCode={state.data.code}
+        onExit={onExit}
+      />
+    ) : (
+      <VocabularyRoomScreen
+        userId={userId}
+        initialCode={state.data.code}
+        initialMode={state.data.mode}
+        onExit={onExit}
+      />
+    );
+  return (
+    <ScrollView contentContainerStyle={styles.content}>
+      <ScreenBackHeader
+        title="Vào phòng"
+        backLabel="Quay lại kho game"
+        onBack={onExit}
+      />
+      {state.status === 'loading' ? (
+        <ActivityIndicator color={colors.primary} />
+      ) : (
+        <>
+          <AuthNotice error message={state.message} />
+          <AuthButton label="Thử lại" size="compact" onPress={reload} />
+        </>
+      )}
+    </ScrollView>
+  );
+}
+
+export function VocabularyRoomScreen({
+  userId,
+  onExit,
+  initialMode = 'write',
+  initialCode,
+  sharedRoom = false,
+  sharedAudio,
+}: {
+  userId: string;
+  onExit: () => void;
+  initialMode?: GameMode;
+  initialCode?: string;
+  sharedRoom?: boolean;
+  sharedAudio?: SharedAudioState;
+}) {
+  const sharedAudioRef = useRef(sharedAudio);
+  sharedAudioRef.current = sharedAudio;
+  const providedReady = sharedAudio?.ready,
+    providedBlocked = sharedAudio?.blocked;
   const defaultLevel = useDefaultJlptLevel();
   const web = useWebNavigation();
   const webRef = useRef(web);
   webRef.current = web;
-  const urlCode = web && /^\/games\/([^/]+)$/.exec(web.pathname)?.[1];
+  const routeCode = web && /^\/games\/([^/]+)$/.exec(web.pathname)?.[1];
+  const urlCode =
+    routeCode && !['write', 'read'].includes(routeCode) ? routeCode : null;
   const { desktop } = useWebLayout();
   const insets = useSafeAreaInsets();
   const navigationInset = useBottomNavigationInset();
   const [room, setRoom] = useState<GameRoom | null>(null),
     [level, setLevel] = useState<string>(defaultLevel),
-    [mode, setMode] = useState<GameMode>('write');
+    [mode, setMode] = useState<GameMode>(initialMode);
   const [source, setSource] = useState<'jlpt' | 'lesson'>('jlpt'),
     [lesson, setLesson] = useState(''),
     [page, setPage] = useState(1);
@@ -70,7 +261,7 @@ export function VocabularyGameScreen({
   const [busy, setBusy] = useState(false),
     [error, setError] = useState(''),
     [connected, setConnected] = useState(false),
-    [audioReady, setAudioReady] = useState(false);
+    [audioReady, setAudioReady] = useState(sharedAudio?.ready ?? false);
   const [playbackBlocked, setPlaybackBlocked] = useState(false);
   const [soundEnabled, setSoundEnabled] = useState(true);
   const [micActive, setMicActive] = useState(false);
@@ -82,7 +273,13 @@ export function VocabularyGameScreen({
     refreshing = useRef(false),
     refreshAgain = useRef(false),
     offset = useRef(0);
-  const audio = useRef<GameAudio | null>(null);
+  const audio = useRef<GameAudio | null>(sharedAudio?.instance ?? null);
+  useEffect(() => {
+    if (providedReady !== undefined) {
+      setAudioReady(providedReady);
+      setPlaybackBlocked(providedBlocked ?? false);
+    }
+  }, [providedReady, providedBlocked]);
   const currentRoom = useRef<GameRoom | null>(null);
   const scroll = useRef<ComponentRef<typeof ScrollView>>(null);
   const finished = room?.phase === 'finished';
@@ -94,7 +291,9 @@ export function VocabularyGameScreen({
     alive.current = true;
     return () => {
       alive.current = false;
-      audio.current?.close().catch(() => undefined);
+      if (sharedAudioRef.current)
+        audio.current?.setSpeaking(false).catch(() => undefined);
+      else audio.current?.close().catch(() => undefined);
       sounds.current?.close().catch(() => undefined);
       sounds.current = null;
     };
@@ -170,10 +369,14 @@ export function VocabularyGameScreen({
         }
         return;
       }
-      const saved = await gameService.savedRoom(userId);
+      const saved = initialCode || (await gameService.savedRoom(userId));
       if (!saved || !mounted) return;
       try {
-        const next = await gameService.snapshot(saved);
+        const next = initialCode
+          ? sharedRoom
+            ? await gameService.snapshot(saved)
+            : await gameService.join(saved)
+          : await gameService.snapshot(saved);
         if (mounted) receive(next);
       } catch (cause) {
         if (cause instanceof ApiError && [403, 404, 410].includes(cause.status))
@@ -184,7 +387,7 @@ export function VocabularyGameScreen({
     return () => {
       mounted = false;
     };
-  }, [userId, receive, urlCode]);
+  }, [userId, receive, urlCode, initialCode, sharedRoom]);
   const loadCatalog = useCallback(
     () => gameService.catalog(level, page),
     [level, page],
@@ -214,6 +417,7 @@ export function VocabularyGameScreen({
           setRoom(null);
           audio.current?.close().catch(() => undefined);
           setAudioReady(false);
+          sharedAudioRef.current?.onStatus(false);
           setError(cause.message);
           gameService.saveRoom(userId, null).catch(() => undefined);
         }
@@ -275,6 +479,7 @@ export function VocabularyGameScreen({
       .catch(() => {
         if (!disposed && alive.current) {
           setAudioReady(false);
+          sharedAudioRef.current?.onStatus(false);
           setError(
             'Không bật được micro. Hãy kiểm tra quyền micro và kết nối âm thanh.',
           );
@@ -289,6 +494,7 @@ export function VocabularyGameScreen({
       if (next !== 'active') {
         audio.current?.close().catch(() => undefined);
         setAudioReady(false);
+        sharedAudioRef.current?.onStatus(false);
       } else refresh();
     });
     return () => listener.remove();
@@ -302,6 +508,7 @@ export function VocabularyGameScreen({
         )
           await gameService.action(currentRoom.current.code, 'leave');
         await audio.current?.close();
+        sharedAudioRef.current?.onStatus(false);
         await gameService.saveRoom(userId, null);
         onExit();
       }),
@@ -337,6 +544,7 @@ export function VocabularyGameScreen({
     run(async () => {
       if (!room) return;
       setAudioReady(false);
+      sharedAudioRef.current?.onStatus(false);
       setPlaybackBlocked(false);
       const credentials = await gameService.audio(room.code);
       audio.current ??= createGameAudio();
@@ -345,6 +553,7 @@ export function VocabularyGameScreen({
         credentials.token,
         ready => {
           if (alive.current) setAudioReady(ready);
+          sharedAudioRef.current?.onStatus(ready);
         },
         blocked => {
           if (alive.current) setPlaybackBlocked(blocked);
@@ -484,8 +693,10 @@ export function VocabularyGameScreen({
       ]}
     >
       <ScreenBackHeader
-        title="Game từ vựng"
-        backLabel="Quay lại luyện tập"
+        title={
+          (room?.mode || mode) === 'read' ? 'Giành mic' : 'Đối kháng từ vựng'
+        }
+        backLabel={sharedRoom ? 'Về phòng chờ' : 'Quay lại kho game'}
         onBack={exit}
       />
       <AuthNotice error message={error} />
@@ -981,12 +1192,18 @@ export function VocabularyGameScreen({
                     </View>
                   ))}
                   <AuthButton
-                    label="Về khu chơi"
+                    label={sharedRoom ? 'Về phòng chờ' : 'Về khu chơi'}
                     onPress={() =>
                       run(async () => {
                         await gameService.saveRoom(userId, null);
                         await audio.current?.close();
+                        sharedAudioRef.current?.onStatus(false);
                         setAudioReady(false);
+                        sharedAudioRef.current?.onStatus(false);
+                        if (sharedRoom) {
+                          onExit();
+                          return;
+                        }
                         setRoom(null);
                         webRef.current?.navigate('/games');
                       })
@@ -997,12 +1214,18 @@ export function VocabularyGameScreen({
                 <View style={styles.card}>
                   <Text style={styles.title}>Phòng đã đóng</Text>
                   <AuthButton
-                    label="Về khu chơi"
+                    label={sharedRoom ? 'Về phòng chờ' : 'Về khu chơi'}
                     onPress={() =>
                       run(async () => {
                         await gameService.saveRoom(userId, null);
                         await audio.current?.close();
+                        sharedAudioRef.current?.onStatus(false);
                         setAudioReady(false);
+                        sharedAudioRef.current?.onStatus(false);
+                        if (sharedRoom) {
+                          onExit();
+                          return;
+                        }
                         setRoom(null);
                         webRef.current?.navigate('/games');
                       })

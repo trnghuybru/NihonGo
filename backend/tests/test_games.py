@@ -54,6 +54,18 @@ class GameTests(unittest.TestCase):
         self.assertEqual(self.post('/rooms',{'mode':'write','level':'N4','source':'lesson','lesson_id':'N5','question_count':1}).status_code,422)
         self.assertEqual(self.post('/rooms',{'mode':'write','level':'N5','source':'jlpt','question_count':30}).status_code,422)
 
+    def test_castle_word_source_auth_and_level(self):
+        self.assertEqual(self.client.get('/api/games/castle/words').status_code, 401)
+        result = self.get('/castle/words?level=N5&lesson_id=N5')
+        self.assertEqual(result.status_code, 200, result.json)
+        self.assertEqual(len(result.json['words']), 3)
+        self.assertTrue(all(word['level'] == 'N5' and word['hiragana'] for word in result.json['words']))
+        self.assertEqual(result.json['words'][0]['category'], 'Lesson N5')
+        self.assertEqual(self.get('/castle/words?level=N8').status_code, 400)
+        self.assertEqual(self.get('/castle/words?level=N4&lesson_id=N5').status_code, 404)
+        self.assertEqual(self.get('/castle/words?level=N5&lesson_id=missing').status_code, 404)
+        self.assertEqual(self.get('/castle/words?level=N1').json['words'], [])
+
     def test_auth_membership_host_and_ready(self):
         self.assertEqual(self.client.get('/api/games/catalog').status_code,401)
         code=self.create();self.assertEqual(self.get(f'/rooms/{code}',2).status_code,403)

@@ -1,6 +1,7 @@
 import { LearningLevelContext } from '../src/hooks/useLearningLevel';
 import type { LearningLevel } from '../src/services/learningService';
 import React from 'react';
+import * as betaConfig from '../src/config/beta';
 import { Modal, SectionList, Text, TextInput } from 'react-native';
 import Renderer, { act } from 'react-test-renderer';
 import { ConversationScreen } from '../src/screens/ConversationScreen';
@@ -13,6 +14,10 @@ import {
   speakingService,
 } from '../src/services/speakingService';
 
+jest.mock('../src/config/beta', () => ({
+  ...jest.requireActual('../src/config/beta'),
+  aiSpeakingAvailable: true,
+}));
 jest.mock('../src/services/speakingService', () => ({
   speakingService: {
     history: jest.fn(),
@@ -112,6 +117,7 @@ function deferred<T>() {
 }
 let tree: Renderer.ReactTestRenderer;
 beforeEach(() => {
+  jest.requireMock('../src/config/beta').aiSpeakingAvailable = true;
   jest.clearAllMocks();
   Object.values(speakingService).forEach(method =>
     jest.mocked(method).mockReset(),
@@ -234,6 +240,16 @@ test('uses API category IDs and combines server filters, search, and clearing', 
   );
   await press('Xóa tất cả bộ lọc');
   expect(scenarios()).toHaveLength(2);
+});
+
+test('paused beta shows a notice without starting an AI session', async () => {
+  jest.requireMock('../src/config/beta').aiSpeakingAvailable = false;
+  await render();
+  await openFirst();
+  await press('Bắt đầu trò chuyện');
+  expect(screenText()).toContain(betaConfig.aiSpeakingUnavailableMessage);
+  expect(speakingService.start).not.toHaveBeenCalled();
+  expect(tree.root.findAllByType(ConversationScreen)).toHaveLength(0);
 });
 
 test('opens context selection over chat and posts the briefing after starting', async () => {

@@ -444,7 +444,15 @@ function WebWorkspace({
                           element={<FlashcardsPage />}
                         />
                       ))}
-                      {['/games', '/games/:code'].map(path => (
+                      {[
+                        '/games',
+                        '/games/castle',
+                        '/games/create',
+                        '/games/bot',
+                        '/games/write',
+                        '/games/read',
+                        '/games/:code',
+                      ].map(path => (
                         <Route
                           key={path}
                           path={path}

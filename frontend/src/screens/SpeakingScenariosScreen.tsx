@@ -26,7 +26,13 @@ import { HomeFeatureIcon } from '../components/HomeFeatureIcon';
 import { ConversationScreen } from './ConversationScreen';
 import { SpeakingHistory } from './SpeakingHistory';
 import { MISSING_DATA } from '../config/content';
-import { betaLiveWeb, betaWeb, betaAudioWeb } from '../config/beta';
+import {
+  betaLiveWeb,
+  betaWeb,
+  betaAudioWeb,
+  aiSpeakingAvailable,
+  aiSpeakingUnavailableMessage,
+} from '../config/beta';
 import {
   errorMessage,
   useRemoteResource,
@@ -389,6 +395,10 @@ export function SpeakingScenariosScreen() {
     return () => subscription.remove();
   }, [started, choosing, returnToHistory]);
   const openHistory = useCallback(async (id: string) => {
+    if (!aiSpeakingAvailable) {
+      setHistoryError(aiSpeakingUnavailableMessage);
+      return;
+    }
     if (openingPending.current) return;
     openingPending.current = true;
     setOpeningHistory(true);
@@ -445,6 +455,10 @@ export function SpeakingScenariosScreen() {
     setQueryDraft('');
   }, []);
   const begin = async (values: StartSessionInput) => {
+    if (!aiSpeakingAvailable) {
+      setStartError(aiSpeakingUnavailableMessage);
+      return;
+    }
     if (!selectedId || startPending.current) return;
     startPending.current = true;
     setStarting(true);

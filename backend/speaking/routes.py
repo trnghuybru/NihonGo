@@ -14,6 +14,19 @@ from .service import (
 bp = Blueprint("speaking", __name__, url_prefix="/api/speaking")
 
 
+@bp.before_request
+def pause_beta_ai_speaking():
+    from auth.beta import enabled
+    from api_errors import ApiError
+    if enabled() and (
+        request.method == "POST" or request.endpoint == "speaking.gemini_live_stream"
+    ):
+        raise ApiError(
+            "Tính năng Nói với AI hiện chưa khả dụng trong bản beta. Mong bạn thông cảm nhé!",
+            503, "speaking_unavailable_in_beta",
+        )
+
+
 @bp.get("/scenario-categories")
 @require_auth
 def categories():

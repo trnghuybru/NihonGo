@@ -1,4 +1,8 @@
 import type { Socket } from 'socket.io-client';
+import type {
+  CastleRoom,
+  CastleRoomConfig,
+} from '../games/castle/online.types';
 import * as Keychain from 'react-native-keychain';
 import { authenticatedRequest } from './authService';
 import { apiBaseUrl } from '../config/api';
@@ -84,6 +88,42 @@ export type GameConfig = {
   seconds: number;
 };
 export const gameService = {
+  resolve: (code: string) =>
+    authenticatedRequest<{
+      game: 'castle' | 'vocabulary' | 'shared';
+      mode: GameMode;
+      code: string;
+    }>('/games/resolve/' + encodeURIComponent(code)),
+  castleCreate: (config: CastleRoomConfig) =>
+    authenticatedRequest<CastleRoom>('/games/castle/rooms', config),
+  castleSnapshot: (code: string) =>
+    authenticatedRequest<CastleRoom>(
+      '/games/castle/rooms/' + encodeURIComponent(code),
+    ),
+  castleAction: (
+    code: string,
+    action: 'join' | 'ready' | 'start' | 'answer' | 'skill' | 'leave',
+    data: unknown = {},
+  ) =>
+    authenticatedRequest<CastleRoom>(
+      '/games/castle/rooms/' + encodeURIComponent(code) + '/' + action,
+      data,
+    ),
+  castleWords: (level: string, lessonId?: string) =>
+    authenticatedRequest<{
+      words: {
+        id: string;
+        kanji: string;
+        hiragana: string;
+        meaning: string;
+        level: string;
+        category: string;
+      }[];
+    }>(
+      `/games/castle/words?level=${encodeURIComponent(level)}${
+        lessonId ? `&lesson_id=${encodeURIComponent(lessonId)}` : ''
+      }`,
+    ),
   catalog: (level: string, page = 1) =>
     authenticatedRequest<GameCatalog>(
       `/games/catalog?level=${level}&page=${page}`,

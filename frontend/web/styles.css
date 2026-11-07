@@ -94,4 +94,15 @@ textarea:focus-visible {
   padding: 2px;
 }
 
-[data-testid='shadowing-lyrics-scroll'] { overscroll-behavior-y: contain; }
+[data-testid='shadowing-lyrics-scroll'] {
+  overscroll-behavior-y: contain;
+}
+/* Game công thành: chuyển động HP nhẹ, giữ lựa chọn giảm chuyển động. */
+[data-testid='castle-health-fill'] {
+  transition: width 180ms ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  [data-testid='castle-health-fill'] {
+    transition: none;
+  }
+}

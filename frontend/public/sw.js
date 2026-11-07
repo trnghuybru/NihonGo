@@ -1,6 +1,5 @@
-self.options = {
-    "domain": "5gvci.com",
-    "zoneId": 12206484
-}
-self.lary = ""
-importScripts('https://5gvci.com/act/files/service-worker.min.js?r=sw')
+// Retire the former advertising worker when an existing registration updates.
+self.addEventListener('install', () => self.skipWaiting());
+self.addEventListener('activate', event => {
+  event.waitUntil(self.registration.unregister());
+});

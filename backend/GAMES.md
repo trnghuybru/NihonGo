@@ -79,3 +79,27 @@ npm test -- --runInBand __tests__/VocabularyGameScreen.test.tsx
 npx tsc --noEmit
 npm run web:build
 ```
+
+## Công thành Momo online
+
+Các API engine/phòng cũ dưới đây được giữ tương thích. Phòng mới dùng party chung /games/lobbies ở phần cuối.
+
+- POST /api/games/castle/rooms: tạo phòng, chọn level N5–N1, source starter/lesson, topic/lesson_id, round_seconds 8/9/10.
+- GET /api/games/castle/rooms/:code: snapshot riêng cho thành viên, đồng thời heartbeat.
+- POST /api/games/castle/rooms/:code/{join,ready,start,answer,skill,leave}: vào phòng, sẵn sàng, bắt đầu (chủ phòng), trả lời (round_id/index), kỹ năng (kind arrow/shield), rời trận.
+- GET /api/games/resolve/:code: metadata loại phòng cho Kho game, không chứa câu hỏi/đáp án.
+- GET /api/games/castle/words?level=N5&lesson_id=... giữ bộ từ dùng cho đấu máy, cần xác thực.
+
+Luật tại games/castle.py, API tại castle_routes.py. Dùng bảng GameRoom hiện có, mode write và discriminator state.game=castle; không đổi constraint read/write, không cần migration mới. Routes giành mic/viết từ chối các room này. Timer/subscribe dùng chung Socket.IO hiện có; khóa hàng Postgres bảo vệ capacity 2, lượt trả lời và kỹ năng. Server tính thời gian, combo, sức mạnh, va chạm và HP; snapshot không chứa ngân hàng câu hoặc đáp án chưa được phép tiết lộ. Gửi lặp cùng câu không cộng điểm lần hai; bỏ cuộc hoặc mất heartbeat quá 20 giây xử thua (hai người cùng mất kết nối thì hòa). Snapshot kết thúc đọc được cho cả hai người, kể cả người đã rời trận.
+
+Client render/nội suy ảnh Momo, nhận notification rồi lấy snapshot, có polling 750 ms dự phòng. Tải lại link /games/:code tự xác định loại game và nối lại đúng đội. Online không pause khi đổi tab. Kết quả và từ sai lưu trên thiết bị của đúng tài khoản/đội; trạng thái phòng lưu DB. Không gọi AI cho câu hỏi hoặc mô phỏng trận.
+
+Dữ liệu starter server tại backend/data/games/castle-starter.json (189 từ, xuất từ frontend/src/games/castle/data.ts); khi sửa bộ từ cần xuất lại bản seed. Bài học lấy từ kho Vocabulary thật theo level, không nhận ngân hàng đáp án từ client.
+
+## Phòng chung cho tất cả game
+
+Phòng mới dùng POST /api/games/lobbies (game có thể null/castle/read/write, level theo người dùng); GET /api/games/lobbies/:code lấy metadata/roster; POST /api/games/lobbies/:code/{join,select,ready,start,leave} quản lý party. Resolve trả game=shared. Một hàng GameRoom giữ nguyên id/code/host và session.members qua các trò. session.round tăng mỗi khi bắt đầu; chọn game mới chỉ thay state của engine, không tạo hàng hoặc mã khác.
+
+Chủ phòng áp dụng game/nguồn/trình độ/thời gian, thao tác này reset sẵn sàng. Chỉ đổi khi waiting/finished/closed, không đổi giữa trận. Cần 2–8 thành viên sẵn sàng; Công thành cần đúng 2. Thành viên rời trận vẫn có thể về phòng chờ để chơi trò kế tiếp; Rời phòng mới xóa khỏi party và chuyển chủ phòng nếu cần. Thành viên bấm Về phòng chờ sau kết quả không bị xóa và không tạo phòng mới. Phòng cũ không có session vẫn dùng các API/luồng cũ.
+
+Các engine hỗ trợ state_only để chuẩn bị trò trong chính room hiện tại. Giành mic chuẩn bị voice worker khi áp dụng cấu hình; client kiểm tra âm thanh trước sẵn sàng, chia sẻ cùng instance audio từ lobby sang game. Qua trò khác hoặc rời party sẽ đóng audio. Timer/Socket.IO nhận diện lobby, giữ kiểm tra thành viên party; route game riêng không cho join/ready/start bypass phòng chung. Không đổi schema DB.

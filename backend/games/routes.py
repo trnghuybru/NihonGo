@@ -78,6 +78,26 @@ def catalog():
         read_available=media.configured())
 
 
+@bp.get('/castle/words')
+@require_auth
+def castle_words():
+    """Từ của bộ học hiện có; trận công thành không gọi AI."""
+    level = request.args.get('level', 'N5')
+    lesson_id = request.args.get('lesson_id')
+    if level not in JLPT_LEVELS:
+        raise ApiError('Cấp JLPT không hợp lệ.')
+    if lesson_id:
+        lesson = db.session.scalar(select(VocabularyLesson).join(VocabularyTextbook).where(
+            VocabularyLesson.id == lesson_id, VocabularyTextbook.level == level))
+        if not lesson:
+            raise ApiError('Không tìm thấy bài học ở trình độ này.', 404, 'lesson_not_found')
+    pool = [word for word in engine.word_pool(level, lesson_id) if word['meaning'].strip()][:240]
+    return jsonify(words=[{'id': word['id'], 'kanji': word['word'],
+                          'hiragana': word['accepted'][0], 'meaning': word['meaning'],
+                          'level': level, 'category': lesson.title if lesson_id else 'Kho từ NihonGO'}
+                         for word in pool])
+
+
 @bp.post('/rooms')
 @require_auth
 def create():
@@ -102,6 +122,8 @@ def join(code):
     if not re.fullmatch('[A-Za-z0-9]{6}', code):
         raise ApiError('Mã phòng gồm 6 chữ hoặc số.')
     row, state = engine.locked(code)
+    if state.get('session'):
+        raise ApiError('Hãy vào qua phòng chung.', 409, 'shared_lobby')
     player = next((p for p in state['players'] if p['id'] == g.user.id), None)
     if state['phase'] == 'finished' and player:
         return publish(row)
@@ -135,6 +157,8 @@ def snapshot(code):
 def ready(code):
     data = body()
     row, state = engine.locked(code, g.user.id)
+    if state.get('session'):
+        raise ApiError('Hãy dùng điều khiển phòng chung.', 409, 'shared_lobby')
     if state['phase'] != 'waiting' or type(data.get('ready')) is not bool:
         raise ApiError('Chỉ thay đổi sẵn sàng trong phòng chờ.', 409)
     next(p for p in state['players'] if p['id'] == g.user.id)['ready'] = data['ready']
@@ -145,6 +169,8 @@ def ready(code):
 @require_auth
 def start(code):
     row, state = engine.locked(code, g.user.id)
+    if state.get('session'):
+        raise ApiError('Hãy dùng điều khiển phòng chung.', 409, 'shared_lobby')
     players = [p for p in state['players'] if not p['left']]
     if row.host_id != g.user.id:
         raise ApiError('Chỉ chủ phòng được bắt đầu.', 403)
@@ -257,6 +283,8 @@ def audio(code):
 @require_auth
 def leave(code):
     row, state = engine.locked(code, g.user.id)
+    if state.get('session') and state['phase'] == 'finished':
+        return publish(row)
     player = next(p for p in state['players'] if p['id'] == g.user.id)
     player.update(left=True, ready=False)
     if row.mode == 'read' and state.get('holder') == g.user.id and state['phase'] in ('reading', 'judging'):
@@ -268,6 +296,9 @@ def leave(code):
     players = [p for p in state['players'] if not p['left']]
     if not players:
         state.update(phase='closed', deadline=None)
+    elif state.get('session'):
+        if state['phase'] not in ('waiting','finished','closed') and len(players) < 2:
+            state.update(phase='finished', deadline=None)
     elif row.host_id == g.user.id:
         row.host_id = players[0]['id']
     return changed(row, state)
