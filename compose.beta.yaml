@@ -82,7 +82,6 @@ services:
       - ./frontend/src/assets/characters:/frontend/src/assets/characters:ro
       - ./backend/static:/app/static:ro
       - ./deploy/beta/secrets:/run/vertex-secrets:ro
-      - beta_audio:/audio
     command: ["gunicorn", "--bind", "0.0.0.0:5001", "--workers", "1", "--threads", "8", "--timeout", "330", "app:app"]
     depends_on:
       migrate:
@@ -157,4 +156,3 @@ volumes:
   beta_queue:
   beta_caddy_data:
   beta_caddy_config:
-  beta_audio:
