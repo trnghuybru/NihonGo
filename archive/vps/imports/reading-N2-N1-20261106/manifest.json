@@ -1,0 +1,11 @@
+{
+  "passages": {
+    "N2": 233,
+    "N1": 261
+  },
+  "questions": {
+    "N2": 443,
+    "N1": 602
+  },
+  "dataset_sha256": "bb9c31e47c00678f005a71605c79451adca5f8cc72054712defef2e2d6fbd84c"
+}

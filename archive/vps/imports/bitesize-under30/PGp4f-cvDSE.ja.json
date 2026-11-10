@@ -1,0 +1,3807 @@
+{
+  "schema_version": 1,
+  "video": {
+    "youtube_id": "PGp4f-cvDSE",
+    "title": "何語で考えてる？日本語で考えるとは？ Japanese Listening Practice N3・N2レベル【中級】Ep.734",
+    "channel": "Bite Size Japanese",
+    "duration_seconds": 1115
+  },
+  "caption_track": {
+    "language": "ja",
+    "kind": "manual"
+  },
+  "segment_count": 126,
+  "segments": [
+    {
+      "text": "みなさん、こんにちは！Bite Size Japaneseのレイラです😊元気ですか？",
+      "start_seconds": 0.0,
+      "end_seconds": 5.15,
+      "id": "PGp4f-cvDSE-ja-0001",
+      "sequence": 1
+    },
+    {
+      "text": "このポッドキャストは友達と話すような感じで自然な日本語を勉強できるポッドキャストです",
+      "start_seconds": 5.15,
+      "end_seconds": 13.41,
+      "id": "PGp4f-cvDSE-ja-0002",
+      "sequence": 2
+    },
+    {
+      "text": "みなさんは、日本語で話すときに日本語で考えてますか？",
+      "start_seconds": 13.41,
+      "end_seconds": 19.75,
+      "id": "PGp4f-cvDSE-ja-0003",
+      "sequence": 3
+    },
+    {
+      "text": "それとも、自分の国の言葉で考えてますか？",
+      "start_seconds": 19.75,
+      "end_seconds": 24.48,
+      "id": "PGp4f-cvDSE-ja-0004",
+      "sequence": 4
+    },
+    {
+      "text": "もしかしたら、みなさんはあまり言語を使わないで考えている可能性ありますよね",
+      "start_seconds": 24.48,
+      "end_seconds": 34.1,
+      "id": "PGp4f-cvDSE-ja-0005",
+      "sequence": 5
+    },
+    {
+      "text": "でも、やっぱり日本語を勉強している人は日本語で考えて話すことが大事だって",
+      "start_seconds": 34.1,
+      "end_seconds": 43.339999999999996,
+      "id": "PGp4f-cvDSE-ja-0006",
+      "sequence": 6
+    },
+    {
+      "text": "みなさんも、何回も聞いたことあると思います自分の国の言葉でまず考えて翻訳（ほんやく）してから日本語にするんじゃなくて",
+      "start_seconds": 43.34,
+      "end_seconds": 54.28,
+      "id": "PGp4f-cvDSE-ja-0007",
+      "sequence": 7
+    },
+    {
+      "text": "もう、日本語で考えて、日本語で話すもちろん、それができたらいいんだけどでも、最近私思ったんですね",
+      "start_seconds": 54.28,
+      "end_seconds": 64.32,
+      "id": "PGp4f-cvDSE-ja-0008",
+      "sequence": 8
+    },
+    {
+      "text": "そもそも、私たちが考えている時ってどうやって考えてるんだろう？って",
+      "start_seconds": 64.32,
+      "end_seconds": 71.91,
+      "id": "PGp4f-cvDSE-ja-0009",
+      "sequence": 9
+    },
+    {
+      "text": "だって、よく考えてみたら、私たちが考えるときに",
+      "start_seconds": 71.91,
+      "end_seconds": 77.67,
+      "id": "PGp4f-cvDSE-ja-0010",
+      "sequence": 10
+    },
+    {
+      "text": "言語を使わずに考えてることってけっこう多いと思うんですよねみなさんもそう思ったことない?",
+      "start_seconds": 77.67,
+      "end_seconds": 87.05,
+      "id": "PGp4f-cvDSE-ja-0011",
+      "sequence": 11
+    },
+    {
+      "text": "例えば、みなさん、今日の夜ご飯は何ですか?",
+      "start_seconds": 87.05,
+      "end_seconds": 94.85,
+      "id": "PGp4f-cvDSE-ja-0012",
+      "sequence": 12
+    },
+    {
+      "text": "今、自分の頭の中どんなふうになってた?",
+      "start_seconds": 94.85,
+      "end_seconds": 99.46,
+      "id": "PGp4f-cvDSE-ja-0013",
+      "sequence": 13
+    },
+    {
+      "text": "例えば、カレーライスっていう日本語が頭に出てきた",
+      "start_seconds": 99.46,
+      "end_seconds": 104.74,
+      "id": "PGp4f-cvDSE-ja-0014",
+      "sequence": 14
+    },
+    {
+      "text": "それとも、自分の夜ご飯のイメージが頭の中に出てきましたか？",
+      "start_seconds": 104.74,
+      "end_seconds": 113.42999999999999,
+      "id": "PGp4f-cvDSE-ja-0015",
+      "sequence": 15
+    },
+    {
+      "text": "もしかしたら、自分の家の中の冷蔵庫（れいぞうこ）を想像（そうぞう）して",
+      "start_seconds": 113.43,
+      "end_seconds": 119.39,
+      "id": "PGp4f-cvDSE-ja-0016",
+      "sequence": 16
+    },
+    {
+      "text": "食べ物のイメージが、頭の中に出てきた人もいるかもしれないし",
+      "start_seconds": 119.39,
+      "end_seconds": 125.91,
+      "id": "PGp4f-cvDSE-ja-0017",
+      "sequence": 17
+    },
+    {
+      "text": "例えば「カレーが食べたい」っていう気持ち・感情だけが頭の中に出てきた人もいると思うんですね",
+      "start_seconds": 125.91,
+      "end_seconds": 137.20999999999998,
+      "id": "PGp4f-cvDSE-ja-0018",
+      "sequence": 18
+    },
+    {
+      "text": "だから、私たちが考えるときって、日本語だけとか英語だけ",
+      "start_seconds": 137.21,
+      "end_seconds": 145.14,
+      "id": "PGp4f-cvDSE-ja-0019",
+      "sequence": 19
+    },
+    {
+      "text": "言語だけで考えてるわけじゃないんだって、私最近思いました",
+      "start_seconds": 145.14,
+      "end_seconds": 153.36999999999998,
+      "id": "PGp4f-cvDSE-ja-0020",
+      "sequence": 20
+    },
+    {
+      "text": "だから、私たちがね、日本語を勉強するときに日本語で考えないといけないって言う人は多いんだけど",
+      "start_seconds": 153.37,
+      "end_seconds": 164.18,
+      "id": "PGp4f-cvDSE-ja-0021",
+      "sequence": 21
+    },
+    {
+      "text": "でも、考えるっていうのはそんなに簡単なことではないし言語だけで私たちは考えるわけじゃないから",
+      "start_seconds": 164.18,
+      "end_seconds": 173.91,
+      "id": "PGp4f-cvDSE-ja-0022",
+      "sequence": 22
+    },
+    {
+      "text": "なんかね、今回のエピソードでは私たちが言語学習者として日本語や英語を勉強しているわけですけど",
+      "start_seconds": 173.91,
+      "end_seconds": 185.75,
+      "id": "PGp4f-cvDSE-ja-0023",
+      "sequence": 23
+    },
+    {
+      "text": "どうやって考えているのかについて、私の経験も入れて",
+      "start_seconds": 185.75,
+      "end_seconds": 192.82,
+      "id": "PGp4f-cvDSE-ja-0024",
+      "sequence": 24
+    },
+    {
+      "text": "雑談（ざつだん）みたいに話せたら面白いなって思いますもう一つ質問",
+      "start_seconds": 192.82,
+      "end_seconds": 203.41,
+      "id": "PGp4f-cvDSE-ja-0025",
+      "sequence": 25
+    },
+    {
+      "text": "みなさんは「りんご」って聞いてどんなことを感じますか？",
+      "start_seconds": 203.41,
+      "end_seconds": 210.32,
+      "id": "PGp4f-cvDSE-ja-0026",
+      "sequence": 26
+    },
+    {
+      "text": "思いますか？",
+      "start_seconds": 210.32,
+      "end_seconds": 212.07999999999998,
+      "id": "PGp4f-cvDSE-ja-0027",
+      "sequence": 27
+    },
+    {
+      "text": "りんご私はね「りんご」って聞くとりんごのイメージが、頭の中にはっきり出てくる",
+      "start_seconds": 212.08,
+      "end_seconds": 223.85999999999999,
+      "id": "PGp4f-cvDSE-ja-0028",
+      "sequence": 28
+    },
+    {
+      "text": "今私が思っているりんごは赤いりんごで、すごくツヤツヤしてて",
+      "start_seconds": 223.86,
+      "end_seconds": 231.54,
+      "id": "PGp4f-cvDSE-ja-0029",
+      "sequence": 29
+    },
+    {
+      "text": "私はね、多分、昔からイメージするのがすごく得意",
+      "start_seconds": 231.54,
+      "end_seconds": 238.26,
+      "id": "PGp4f-cvDSE-ja-0030",
+      "sequence": 30
+    },
+    {
+      "text": "人とかの顔とかが、頭の中にはっきりうかぶそれを絵にするのは難しいんだけど",
+      "start_seconds": 238.26,
+      "end_seconds": 247.89999999999998,
+      "id": "PGp4f-cvDSE-ja-0031",
+      "sequence": 31
+    },
+    {
+      "text": "でも、けっこうね、イメージで考えるタイプなんですねみなさんはどうですか？",
+      "start_seconds": 247.9,
+      "end_seconds": 254.77,
+      "id": "PGp4f-cvDSE-ja-0032",
+      "sequence": 32
+    },
+    {
+      "text": "人によっては、イメージするのが苦手っていう人もいると思う",
+      "start_seconds": 254.77,
+      "end_seconds": 261.04,
+      "id": "PGp4f-cvDSE-ja-0033",
+      "sequence": 33
+    },
+    {
+      "text": "人によっては「りんご」っていう、ひらがなとかカタカナが頭の中にうかぶ、そういう人もいると思うんですよね",
+      "start_seconds": 261.04,
+      "end_seconds": 272.63,
+      "id": "PGp4f-cvDSE-ja-0034",
+      "sequence": 34
+    },
+    {
+      "text": "だから、私たちの頭の中って全然違うんだなって面白くないですか?",
+      "start_seconds": 272.63,
+      "end_seconds": 281.40999999999997,
+      "id": "PGp4f-cvDSE-ja-0035",
+      "sequence": 35
+    },
+    {
+      "text": "私も、みなさんも、「日本語」っていう同じ言語を話してるけど話すときに頭の中で起こっていることは",
+      "start_seconds": 281.41,
+      "end_seconds": 291.86,
+      "id": "PGp4f-cvDSE-ja-0036",
+      "sequence": 36
+    },
+    {
+      "text": "けっこう人によって違うんですねみなさんは、頭の中で計算をするときに何語で計算しますか？",
+      "start_seconds": 291.86,
+      "end_seconds": 303.33,
+      "id": "PGp4f-cvDSE-ja-0037",
+      "sequence": 37
+    },
+    {
+      "text": "例えば足し算ね、1+1=2引き算、例えば10-4=6あとかけ算ね、3×3＝9",
+      "start_seconds": 303.33,
+      "end_seconds": 314.73999999999995,
+      "id": "PGp4f-cvDSE-ja-0038",
+      "sequence": 38
+    },
+    {
+      "text": "こういう計算は何語でやってますか？",
+      "start_seconds": 314.74,
+      "end_seconds": 319.57,
+      "id": "PGp4f-cvDSE-ja-0039",
+      "sequence": 39
+    },
+    {
+      "text": "私が聞いたことがあるのは、計算をする時っていうのは自分が、後で勉強した第2言語じゃなくて",
+      "start_seconds": 319.57,
+      "end_seconds": 328.74,
+      "id": "PGp4f-cvDSE-ja-0040",
+      "sequence": 40
+    },
+    {
+      "text": "自分が最初からよく使っている言葉が優先（ゆうせん）するそうなんですね",
+      "start_seconds": 328.74,
+      "end_seconds": 335.99,
+      "id": "PGp4f-cvDSE-ja-0041",
+      "sequence": 41
+    },
+    {
+      "text": "本当にその通りで、私計算するときは、絶対日本語",
+      "start_seconds": 335.99,
+      "end_seconds": 341.53,
+      "id": "PGp4f-cvDSE-ja-0042",
+      "sequence": 42
+    },
+    {
+      "text": "英語だったら、まじで計算できないできないんですよ",
+      "start_seconds": 341.53,
+      "end_seconds": 348.34,
+      "id": "PGp4f-cvDSE-ja-0043",
+      "sequence": 43
+    },
+    {
+      "text": "例えばね、ちょっと難しい計算、17+26=？",
+      "start_seconds": 348.34,
+      "end_seconds": 357.23999999999995,
+      "id": "PGp4f-cvDSE-ja-0044",
+      "sequence": 44
+    },
+    {
+      "text": "みなさん、今何語で計算してましたか？",
+      "start_seconds": 357.24,
+      "end_seconds": 361.98,
+      "id": "PGp4f-cvDSE-ja-0045",
+      "sequence": 45
+    },
+    {
+      "text": "こういう計算って、多分ね一番、自分が慣れている言語でやると思うんですね答えは43です",
+      "start_seconds": 361.98,
+      "end_seconds": 371.10999999999996,
+      "id": "PGp4f-cvDSE-ja-0046",
+      "sequence": 46
+    },
+    {
+      "text": "あとお金の計算とかも、やっぱ第一言語じゃないと難しくない？",
+      "start_seconds": 371.11,
+      "end_seconds": 377.82,
+      "id": "PGp4f-cvDSE-ja-0047",
+      "sequence": 47
+    },
+    {
+      "text": "例えば、私がね「あの家5600万円だって」って言ったら",
+      "start_seconds": 377.82,
+      "end_seconds": 387.54,
+      "id": "PGp4f-cvDSE-ja-0048",
+      "sequence": 48
+    },
+    {
+      "text": "みなさんは今の分かった？5600万円っていくらか分かった？",
+      "start_seconds": 387.54,
+      "end_seconds": 394.1,
+      "id": "PGp4f-cvDSE-ja-0049",
+      "sequence": 49
+    },
+    {
+      "text": "ちゃんと聞けても、その日本のお金に慣れてなかったら「あれ、待てよ、5600万円ってアメリカドルだったら…」",
+      "start_seconds": 394.1,
+      "end_seconds": 405.43,
+      "id": "PGp4f-cvDSE-ja-0050",
+      "sequence": 50
+    },
+    {
+      "text": "って、多分考えて計算したんじゃないかなって思うんですね",
+      "start_seconds": 405.43,
+      "end_seconds": 411.0,
+      "id": "PGp4f-cvDSE-ja-0051",
+      "sequence": 51
+    },
+    {
+      "text": "私もね、お金をオーストラリアドルで考えるのはまだ難しい小さいお金、例えば10ドルとかだったら",
+      "start_seconds": 411.0,
+      "end_seconds": 422.29,
+      "id": "PGp4f-cvDSE-ja-0052",
+      "sequence": 52
+    },
+    {
+      "text": "「10ドル、だいたい1000円ね」ってわかるんだけど金額が大きくなって、慣れてない金額になると",
+      "start_seconds": 422.29,
+      "end_seconds": 431.0,
+      "id": "PGp4f-cvDSE-ja-0053",
+      "sequence": 53
+    },
+    {
+      "text": "例えば、日本語で1兆（ちょう）5000万円をオーストラリアドルで言ったら？",
+      "start_seconds": 431.0,
+      "end_seconds": 438.24,
+      "id": "PGp4f-cvDSE-ja-0054",
+      "sequence": 54
+    },
+    {
+      "text": "って言われたら、まじでわかんない紙に書かないとわかんない",
+      "start_seconds": 438.24,
+      "end_seconds": 444.85999999999996,
+      "id": "PGp4f-cvDSE-ja-0055",
+      "sequence": 55
+    },
+    {
+      "text": "だから、計算ってけっこう大変な頭の作業なんですよね",
+      "start_seconds": 444.86,
+      "end_seconds": 453.34,
+      "id": "PGp4f-cvDSE-ja-0056",
+      "sequence": 56
+    },
+    {
+      "text": "あとね、私思うのは、やっぱり英語の会話とかね",
+      "start_seconds": 453.34,
+      "end_seconds": 459.45,
+      "id": "PGp4f-cvDSE-ja-0057",
+      "sequence": 57
+    },
+    {
+      "text": "英語のニュースは集中して聞かないと、まじでわかんない",
+      "start_seconds": 459.45,
+      "end_seconds": 466.07,
+      "id": "PGp4f-cvDSE-ja-0058",
+      "sequence": 58
+    },
+    {
+      "text": "日本語だったらね、あんまり集中して聞かなくても例えば、カフェでとなりの席の人たちが日本語で話をしていて",
+      "start_seconds": 466.07,
+      "end_seconds": 477.76,
+      "id": "PGp4f-cvDSE-ja-0059",
+      "sequence": 59
+    },
+    {
+      "text": "別に集中して聞いてなくても、自分が別のことをしてたり自分の友達に話している時でも、となりの会話がね",
+      "start_seconds": 477.76,
+      "end_seconds": 488.38,
+      "id": "PGp4f-cvDSE-ja-0060",
+      "sequence": 60
+    },
+    {
+      "text": "分かったりするんですよね日本語だったら、相手の横のとなりの人の会話が",
+      "start_seconds": 488.38,
+      "end_seconds": 496.74,
+      "id": "PGp4f-cvDSE-ja-0061",
+      "sequence": 61
+    },
+    {
+      "text": "なんか頭の中に残っててなんかその人たちが、何て言ってたか覚えてたりするんですよね頭の中で",
+      "start_seconds": 496.74,
+      "end_seconds": 508.58,
+      "id": "PGp4f-cvDSE-ja-0062",
+      "sequence": 62
+    },
+    {
+      "text": "みなさんも、第一言語を話すときはそんな感じじゃないでしょうか？",
+      "start_seconds": 508.58,
+      "end_seconds": 513.64,
+      "id": "PGp4f-cvDSE-ja-0063",
+      "sequence": 63
+    },
+    {
+      "text": "だけど英語の時はね、となりの人が何か話しててもまじでね、その人たちの話を集中して聞かないと",
+      "start_seconds": 513.64,
+      "end_seconds": 524.55,
+      "id": "PGp4f-cvDSE-ja-0064",
+      "sequence": 64
+    },
+    {
+      "text": "本当に耳に入ってこないもう、なんて言ったかなんて、まじで覚えてないそんな感じです",
+      "start_seconds": 524.55,
+      "end_seconds": 534.02,
+      "id": "PGp4f-cvDSE-ja-0065",
+      "sequence": 65
+    },
+    {
+      "text": "あとね、会話で思うのは、英語で会話をしているときに相手が何か言いたいことは分かった意味は分かった",
+      "start_seconds": 534.02,
+      "end_seconds": 544.0,
+      "id": "PGp4f-cvDSE-ja-0066",
+      "sequence": 66
+    },
+    {
+      "text": "でもじゃあ「相手が何て言ったか教えて」って言われたら分かんないその、相手が言った言葉をはっきり覚えてないんですね",
+      "start_seconds": 544.0,
+      "end_seconds": 555.04,
+      "id": "PGp4f-cvDSE-ja-0067",
+      "sequence": 67
+    },
+    {
+      "text": "「こういうことを言ったよ」っていうのは言えても相手が実際、どんな言葉、どんな文法を使って話したか覚えてないんですね",
+      "start_seconds": 555.04,
+      "end_seconds": 566.05,
+      "id": "PGp4f-cvDSE-ja-0068",
+      "sequence": 68
+    },
+    {
+      "text": "みなさんも日本語で会話するときそんな感じないですか？",
+      "start_seconds": 566.05,
+      "end_seconds": 573.6999999999999,
+      "id": "PGp4f-cvDSE-ja-0069",
+      "sequence": 69
+    },
+    {
+      "text": "あとは、私の場合は、英語で話すときの自分の記憶力（きおくりょく）覚えている力が、まじで悪い",
+      "start_seconds": 573.7,
+      "end_seconds": 584.43,
+      "id": "PGp4f-cvDSE-ja-0070",
+      "sequence": 70
+    },
+    {
+      "text": "例えば、新しい町の名前ね今まで聞いたことがない町の名前とか",
+      "start_seconds": 584.43,
+      "end_seconds": 592.19,
+      "id": "PGp4f-cvDSE-ja-0071",
+      "sequence": 71
+    },
+    {
+      "text": "イタリアのデザートの名前とか、本当に覚えるまでに何回も何回も、その言葉を聞いて使ったりしないとダメ",
+      "start_seconds": 592.19,
+      "end_seconds": 603.39,
+      "id": "PGp4f-cvDSE-ja-0072",
+      "sequence": 72
+    },
+    {
+      "text": "あと、その言葉のスペル、アルファベットを見ないとよくわかんないって感じる",
+      "start_seconds": 603.39,
+      "end_seconds": 611.58,
+      "id": "PGp4f-cvDSE-ja-0073",
+      "sequence": 73
+    },
+    {
+      "text": "だから、日本語だったら一回で覚えられることが英語だったら覚えられないこれはね、ちょっと不安ですね",
+      "start_seconds": 611.58,
+      "end_seconds": 621.3399999999999,
+      "id": "PGp4f-cvDSE-ja-0074",
+      "sequence": 74
+    },
+    {
+      "text": "だって、将来英語で仕事するときに、ずっと覚えれなかったらどうしようって思ったりするんですよね",
+      "start_seconds": 621.34,
+      "end_seconds": 629.92,
+      "id": "PGp4f-cvDSE-ja-0075",
+      "sequence": 75
+    },
+    {
+      "text": "みなさんは、こういう不安なことこういうふうに感じたことってありませんか？",
+      "start_seconds": 629.92,
+      "end_seconds": 639.76,
+      "id": "PGp4f-cvDSE-ja-0076",
+      "sequence": 76
+    },
+    {
+      "text": "みなさんの多くは、バイリンガルとか、バイリンガル以上3つ、4つの言葉を話せるような人が多いと思うんですね",
+      "start_seconds": 639.76,
+      "end_seconds": 650.54,
+      "id": "PGp4f-cvDSE-ja-0077",
+      "sequence": 77
+    },
+    {
+      "text": "私、聞いたことがあるのは、そのバイリンガルとかいろんな言語を話す人って、けっこうね「あれ?言葉が出てこない」っていうことが",
+      "start_seconds": 650.54,
+      "end_seconds": 662.51,
+      "id": "PGp4f-cvDSE-ja-0078",
+      "sequence": 78
+    },
+    {
+      "text": "普通の人より多いらしいんですよみなさん、そういう経験あります?",
+      "start_seconds": 662.51,
+      "end_seconds": 668.94,
+      "id": "PGp4f-cvDSE-ja-0079",
+      "sequence": 79
+    },
+    {
+      "text": "私も日本語でね、会話レッスンする人がいてその人は、英語と日本語のバイリンガルなんですけど",
+      "start_seconds": 668.94,
+      "end_seconds": 678.4,
+      "id": "PGp4f-cvDSE-ja-0080",
+      "sequence": 80
+    },
+    {
+      "text": "けっこうね、「あれあれ、あれが出てこない！」って言ってすごく簡単な言葉が出てこないこととか、けっこうあるんですね",
+      "start_seconds": 678.4,
+      "end_seconds": 689.13,
+      "id": "PGp4f-cvDSE-ja-0081",
+      "sequence": 81
+    },
+    {
+      "text": "もちろん、それはまあ悪いことじゃなくてやっぱり、バイリンガルとか多くの言語を話す人ってその脳みそが、それだけ話すときに",
+      "start_seconds": 689.13,
+      "end_seconds": 700.43,
+      "id": "PGp4f-cvDSE-ja-0082",
+      "sequence": 82
+    },
+    {
+      "text": "いっぱい働いてるんだと思うあと、例えば日本語の「冷蔵庫（れいぞうこ）」って言葉が出てこないとかね",
+      "start_seconds": 700.43,
+      "end_seconds": 709.93,
+      "id": "PGp4f-cvDSE-ja-0083",
+      "sequence": 83
+    },
+    {
+      "text": "そういう時は多分、英語で「冷蔵庫」ってめちゃくちゃ何回も言ってるんだけど",
+      "start_seconds": 709.93,
+      "end_seconds": 719.81,
+      "id": "PGp4f-cvDSE-ja-0084",
+      "sequence": 84
+    },
+    {
+      "text": "最近、日本語で「冷蔵庫」って言ってないそういう時は、なんか日本語の「冷蔵庫」って言葉が",
+      "start_seconds": 719.81,
+      "end_seconds": 728.68,
+      "id": "PGp4f-cvDSE-ja-0085",
+      "sequence": 85
+    },
+    {
+      "text": "頭にしばらく出てこない、っていうことが起こるらしいです私はね、まだ自分をバイリンガルと思ってないんだけど",
+      "start_seconds": 728.68,
+      "end_seconds": 740.0,
+      "id": "PGp4f-cvDSE-ja-0086",
+      "sequence": 86
+    },
+    {
+      "text": "私も正直、そういうことはよくありますまあみんなあるよね！",
+      "start_seconds": 740.0,
+      "end_seconds": 745.0899999999999,
+      "id": "PGp4f-cvDSE-ja-0087",
+      "sequence": 87
+    },
+    {
+      "text": "あと、みなさんに私が聞いてみたいことは日本語の方が話しやすいトピックってありますか？",
+      "start_seconds": 745.09,
+      "end_seconds": 754.53,
+      "id": "PGp4f-cvDSE-ja-0088",
+      "sequence": 88
+    },
+    {
+      "text": "自分の言語だったら例えば、このトピックについては言いにくいんだけど日本語の方が言いやすいとか",
+      "start_seconds": 754.53,
+      "end_seconds": 765.79,
+      "id": "PGp4f-cvDSE-ja-0089",
+      "sequence": 89
+    },
+    {
+      "text": "例えば、日本語の方がもっと友達にフレンドリーに話せるとかねないですかね？",
+      "start_seconds": 765.79,
+      "end_seconds": 774.53,
+      "id": "PGp4f-cvDSE-ja-0090",
+      "sequence": 90
+    },
+    {
+      "text": "私はね、英語の方が話しやすいトピックがあって英語で、ちょっと体のさ、恥ずかしい話とか",
+      "start_seconds": 774.53,
+      "end_seconds": 785.83,
+      "id": "PGp4f-cvDSE-ja-0091",
+      "sequence": 91
+    },
+    {
+      "text": "そういうのは英語の方が言いやすい理由は多分、英語の文化の方が、そういうことを日本よりね",
+      "start_seconds": 785.83,
+      "end_seconds": 796.3599999999999,
+      "id": "PGp4f-cvDSE-ja-0092",
+      "sequence": 92
+    },
+    {
+      "text": "みんなオープンに話すっていうのもあるしあと、英語のそういう言葉って、私にとっては新しい言葉だから",
+      "start_seconds": 796.36,
+      "end_seconds": 806.31,
+      "id": "PGp4f-cvDSE-ja-0093",
+      "sequence": 93
+    },
+    {
+      "text": "あんまり、その言葉が、自分の体とか性的なことにあんまりね、結びついてないんだよね",
+      "start_seconds": 806.31,
+      "end_seconds": 816.78,
+      "id": "PGp4f-cvDSE-ja-0094",
+      "sequence": 94
+    },
+    {
+      "text": "だから、そういうきたない言葉、恥ずかしい言葉を英語で言っても、あんまり何も感じないですあともちろん、「愛してる」とかね",
+      "start_seconds": 816.78,
+      "end_seconds": 827.96,
+      "id": "PGp4f-cvDSE-ja-0095",
+      "sequence": 95
+    },
+    {
+      "text": "そういう愛情表現は、英語での方がやりやすい",
+      "start_seconds": 827.96,
+      "end_seconds": 834.18,
+      "id": "PGp4f-cvDSE-ja-0096",
+      "sequence": 96
+    },
+    {
+      "text": "これも多分ね、英語の方がもっと愛情を表す文化があるしだからだと思います",
+      "start_seconds": 834.18,
+      "end_seconds": 842.2,
+      "id": "PGp4f-cvDSE-ja-0097",
+      "sequence": 97
+    },
+    {
+      "text": "なので、こんな感じで、私たちの頭の中で起こっていることって人それぞれ全然違う",
+      "start_seconds": 842.2,
+      "end_seconds": 851.77,
+      "id": "PGp4f-cvDSE-ja-0098",
+      "sequence": 98
+    },
+    {
+      "text": "だから、言語の学び方も、本当に人それぞれ全然違ってていいんじゃないかなって思いました",
+      "start_seconds": 851.77,
+      "end_seconds": 860.45,
+      "id": "PGp4f-cvDSE-ja-0099",
+      "sequence": 99
+    },
+    {
+      "text": "まあもちろん、その言語の勉強にしっかり時間を使うこと筋トレのように、毎日毎日続けること",
+      "start_seconds": 860.45,
+      "end_seconds": 871.29,
+      "id": "PGp4f-cvDSE-ja-0100",
+      "sequence": 100
+    },
+    {
+      "text": "それは、誰にとってもすごく大切だと思うだけどたった一つの、かしこい勉強方法とかはない",
+      "start_seconds": 871.29,
+      "end_seconds": 882.11,
+      "id": "PGp4f-cvDSE-ja-0101",
+      "sequence": 101
+    },
+    {
+      "text": "と思うんですねだって、人の頭の中で起こってることって違うからねだから、学び方もけっこう人それぞれでいいんだな",
+      "start_seconds": 882.11,
+      "end_seconds": 893.2099999999999,
+      "id": "PGp4f-cvDSE-ja-0102",
+      "sequence": 102
+    },
+    {
+      "text": "っていうふうに思う例えば、私の妹ってすごく論理的（ろんりてき）だし英語の単語を学ぶときに",
+      "start_seconds": 893.21,
+      "end_seconds": 904.38,
+      "id": "PGp4f-cvDSE-ja-0103",
+      "sequence": 103
+    },
+    {
+      "text": "その英語の言葉の概念（がいねん）、意味をしっかり理解しないと何か納得（なっとく）しないタイプなんですね",
+      "start_seconds": 904.38,
+      "end_seconds": 914.84,
+      "id": "PGp4f-cvDSE-ja-0104",
+      "sequence": 104
+    },
+    {
+      "text": "だから、私の妹は、英語の教科書とか単語帳（たんごちょう）がすごく好きで英語の本を読むのも好きだそうです",
+      "start_seconds": 914.84,
+      "end_seconds": 925.66,
+      "id": "PGp4f-cvDSE-ja-0105",
+      "sequence": 105
+    },
+    {
+      "text": "だけど、英語の会話のポッドキャストとかはそんなに面白いって思わないらしいです",
+      "start_seconds": 925.66,
+      "end_seconds": 933.1999999999999,
+      "id": "PGp4f-cvDSE-ja-0106",
+      "sequence": 106
+    },
+    {
+      "text": "私は逆に、英語の会話のポッドキャスト大好きなんですねあと、最近私が出会ったフィリピンの女性は",
+      "start_seconds": 933.2,
+      "end_seconds": 944.97,
+      "id": "PGp4f-cvDSE-ja-0107",
+      "sequence": 107
+    },
+    {
+      "text": "英語を学ぶときに教科書を使わないで勉強したって言ってました私はそんなの絶対無理、って思うんです",
+      "start_seconds": 944.97,
+      "end_seconds": 956.37,
+      "id": "PGp4f-cvDSE-ja-0108",
+      "sequence": 108
+    },
+    {
+      "text": "だけど、彼女は英語を学ぶときね、周りの人と英語を話したりその周りの人が英語を話しているのを見て",
+      "start_seconds": 956.37,
+      "end_seconds": 966.9,
+      "id": "PGp4f-cvDSE-ja-0109",
+      "sequence": 109
+    },
+    {
+      "text": "例えば\"Hello\"って言った後に\"Hi, how are you?\"って「こういう返事の仕方するんだ！」っていうふうに覚えて",
+      "start_seconds": 966.9,
+      "end_seconds": 976.47,
+      "id": "PGp4f-cvDSE-ja-0110",
+      "sequence": 110
+    },
+    {
+      "text": "それを自分が、実際に使いながら勉強していくそうです私はね、それ無理だと思う",
+      "start_seconds": 976.47,
+      "end_seconds": 985.31,
+      "id": "PGp4f-cvDSE-ja-0111",
+      "sequence": 111
+    },
+    {
+      "text": "私だったら、まず教科書を使って、簡単な文法や単語の意味を",
+      "start_seconds": 985.31,
+      "end_seconds": 994.16,
+      "id": "PGp4f-cvDSE-ja-0112",
+      "sequence": 112
+    },
+    {
+      "text": "最低限（さいていげん）調べて、覚えてからやると思いますだから、本当に人によって学び方は違うし",
+      "start_seconds": 994.16,
+      "end_seconds": 1005.09,
+      "id": "PGp4f-cvDSE-ja-0113",
+      "sequence": 113
+    },
+    {
+      "text": "あと、日本語を話してても、その人がね、日本語ペラペラでも考えているときは、日本語で考えてないかもしれないですよね",
+      "start_seconds": 1005.09,
+      "end_seconds": 1016.28,
+      "id": "PGp4f-cvDSE-ja-0114",
+      "sequence": 114
+    },
+    {
+      "text": "私はここ数年、ずっと英語の勉強頑張ってるんですけど自分一人で何か考えているときに",
+      "start_seconds": 1016.28,
+      "end_seconds": 1025.37,
+      "id": "PGp4f-cvDSE-ja-0115",
+      "sequence": 115
+    },
+    {
+      "text": "英語で考えてるってことがないんですねだから、ちょっとショックに感じました",
+      "start_seconds": 1025.37,
+      "end_seconds": 1032.38,
+      "id": "PGp4f-cvDSE-ja-0116",
+      "sequence": 116
+    },
+    {
+      "text": "自分はいつまでたっても英語で考え始めないなと思ってだけど、よくよく考えたら、普段ね",
+      "start_seconds": 1032.38,
+      "end_seconds": 1043.07,
+      "id": "PGp4f-cvDSE-ja-0117",
+      "sequence": 117
+    },
+    {
+      "text": "英語で考えてなくても、英語がペラペラな人もいるはずだしあと考えるときって、言語使わないで考えていること",
+      "start_seconds": 1043.07,
+      "end_seconds": 1053.88,
+      "id": "PGp4f-cvDSE-ja-0118",
+      "sequence": 118
+    },
+    {
+      "text": "多いんですよねなので、もしね、みなさんも私みたいな悩みがあったらいや別に大丈夫だよっていうのをね、言いたくって",
+      "start_seconds": 1053.88,
+      "end_seconds": 1064.2,
+      "id": "PGp4f-cvDSE-ja-0119",
+      "sequence": 119
+    },
+    {
+      "text": "今回のエピソードを作ったんですねなので、最後まできいてくれて、本当にありがとうございます！",
+      "start_seconds": 1064.2,
+      "end_seconds": 1072.3999999999999,
+      "id": "PGp4f-cvDSE-ja-0120",
+      "sequence": 120
+    },
+    {
+      "text": "よかったら、みなさんの意見も教えてほしいしもしみなさんがバイリンガルとかたくさんの言語を話す人だったら",
+      "start_seconds": 1072.4,
+      "end_seconds": 1082.71,
+      "id": "PGp4f-cvDSE-ja-0121",
+      "sequence": 121
+    },
+    {
+      "text": "自分の頭の中がどうなっているのかよかったらコメントとかで教えてほしいですすごい気になってます！",
+      "start_seconds": 1082.71,
+      "end_seconds": 1090.94,
+      "id": "PGp4f-cvDSE-ja-0122",
+      "sequence": 122
+    },
+    {
+      "text": "よろしくお願いしますということで、今回のエピソードはここまでもしこのポッドキャスト、サポートしたかったら",
+      "start_seconds": 1090.94,
+      "end_seconds": 1100.26,
+      "id": "PGp4f-cvDSE-ja-0123",
+      "sequence": 123
+    },
+    {
+      "text": "メンバーシップのPatreonに入ってくれるとうれしいです😊よろしくお願いします！",
+      "start_seconds": 1100.26,
+      "end_seconds": 1106.07,
+      "id": "PGp4f-cvDSE-ja-0124",
+      "sequence": 124
+    },
+    {
+      "text": "それでは、みなさんおつかれさまでした！",
+      "start_seconds": 1106.07,
+      "end_seconds": 1108.47,
+      "id": "PGp4f-cvDSE-ja-0125",
+      "sequence": 125
+    },
+    {
+      "text": "また次のエピソードもきいてくださいまたね！バイバイ",
+      "start_seconds": 1108.47,
+      "end_seconds": 1114.81,
+      "id": "PGp4f-cvDSE-ja-0126",
+      "sequence": 126
+    }
+  ],
+  "raw_captions": [
+    {
+      "text": "みなさん、こんにちは！Bite Size Japaneseのレイラです😊",
+      "start_seconds": 0.0,
+      "end_seconds": 3.59
+    },
+    {
+      "text": "元気ですか？",
+      "start_seconds": 3.59,
+      "end_seconds": 5.15
+    },
+    {
+      "text": "このポッドキャストは友達と話すような感じで",
+      "start_seconds": 5.15,
+      "end_seconds": 8.67
+    },
+    {
+      "text": "自然な日本語を勉強できるポッドキャストです",
+      "start_seconds": 8.67,
+      "end_seconds": 13.41
+    },
+    {
+      "text": "みなさんは、日本語で話すときに日本語で考えてますか？",
+      "start_seconds": 13.41,
+      "end_seconds": 19.75
+    },
+    {
+      "text": "それとも、自分の国の言葉で考えてますか？",
+      "start_seconds": 19.75,
+      "end_seconds": 24.48
+    },
+    {
+      "text": "もしかしたら、みなさんはあまり言語を使わないで",
+      "start_seconds": 24.48,
+      "end_seconds": 29.380000000000003
+    },
+    {
+      "text": "考えている可能性ありますよね",
+      "start_seconds": 29.38,
+      "end_seconds": 34.1
+    },
+    {
+      "text": "でも、やっぱり日本語を勉強している人は",
+      "start_seconds": 34.1,
+      "end_seconds": 37.980000000000004
+    },
+    {
+      "text": "日本語で考えて話すことが大事だって",
+      "start_seconds": 37.98,
+      "end_seconds": 43.339999999999996
+    },
+    {
+      "text": "みなさんも、何回も聞いたことあると思います",
+      "start_seconds": 43.34,
+      "end_seconds": 47.57000000000001
+    },
+    {
+      "text": "自分の国の言葉でまず考えて",
+      "start_seconds": 47.57,
+      "end_seconds": 50.75
+    },
+    {
+      "text": "翻訳（ほんやく）してから日本語にするんじゃなくて",
+      "start_seconds": 50.75,
+      "end_seconds": 54.28
+    },
+    {
+      "text": "もう、日本語で考えて、日本語で話す",
+      "start_seconds": 54.28,
+      "end_seconds": 58.660000000000004
+    },
+    {
+      "text": "もちろん、それができたらいいんだけど",
+      "start_seconds": 58.66,
+      "end_seconds": 61.47
+    },
+    {
+      "text": "でも、最近私思ったんですね",
+      "start_seconds": 61.47,
+      "end_seconds": 64.32
+    },
+    {
+      "text": "そもそも、私たちが考えている時って",
+      "start_seconds": 64.32,
+      "end_seconds": 69.44
+    },
+    {
+      "text": "どうやって考えてるんだろう？って",
+      "start_seconds": 69.44,
+      "end_seconds": 71.91
+    },
+    {
+      "text": "だって、よく考えてみたら、私たちが考えるときに",
+      "start_seconds": 71.91,
+      "end_seconds": 77.67
+    },
+    {
+      "text": "言語を使わずに考えてることってけっこう多いと思うんですよね",
+      "start_seconds": 77.67,
+      "end_seconds": 83.94
+    },
+    {
+      "text": "みなさんもそう思ったことない?",
+      "start_seconds": 83.94,
+      "end_seconds": 87.05
+    },
+    {
+      "text": "例えば、みなさん、今日の夜ご飯は何ですか?",
+      "start_seconds": 87.05,
+      "end_seconds": 94.85
+    },
+    {
+      "text": "今、自分の頭の中どんなふうになってた?",
+      "start_seconds": 94.85,
+      "end_seconds": 99.46
+    },
+    {
+      "text": "例えば、カレーライスっていう日本語が頭に出てきた",
+      "start_seconds": 99.46,
+      "end_seconds": 104.74
+    },
+    {
+      "text": "それとも、自分の夜ご飯のイメージが頭の中に出てきましたか？",
+      "start_seconds": 104.74,
+      "end_seconds": 113.42999999999999
+    },
+    {
+      "text": "もしかしたら、自分の家の中の冷蔵庫（れいぞうこ）を想像（そうぞう）して",
+      "start_seconds": 113.43,
+      "end_seconds": 119.39
+    },
+    {
+      "text": "食べ物のイメージが、頭の中に出てきた人もいるかもしれないし",
+      "start_seconds": 119.39,
+      "end_seconds": 125.91
+    },
+    {
+      "text": "例えば「カレーが食べたい」っていう気持ち・感情だけが",
+      "start_seconds": 125.91,
+      "end_seconds": 132.57
+    },
+    {
+      "text": "頭の中に出てきた人もいると思うんですね",
+      "start_seconds": 132.57,
+      "end_seconds": 137.20999999999998
+    },
+    {
+      "text": "だから、私たちが考えるときって、日本語だけとか英語だけ",
+      "start_seconds": 137.21,
+      "end_seconds": 145.14000000000001
+    },
+    {
+      "text": "言語だけで考えてるわけじゃないんだって、私最近思いました",
+      "start_seconds": 145.14,
+      "end_seconds": 153.36999999999998
+    },
+    {
+      "text": "だから、私たちがね、日本語を勉強するときに",
+      "start_seconds": 153.37,
+      "end_seconds": 158.65
+    },
+    {
+      "text": "日本語で考えないといけないって言う人は多いんだけど",
+      "start_seconds": 158.65,
+      "end_seconds": 164.18
+    },
+    {
+      "text": "でも、考えるっていうのはそんなに簡単なことではないし",
+      "start_seconds": 164.18,
+      "end_seconds": 169.97
+    },
+    {
+      "text": "言語だけで私たちは考えるわけじゃないから",
+      "start_seconds": 169.97,
+      "end_seconds": 173.91
+    },
+    {
+      "text": "なんかね、今回のエピソードでは",
+      "start_seconds": 173.91,
+      "end_seconds": 177.52
+    },
+    {
+      "text": "私たちが言語学習者として",
+      "start_seconds": 177.52,
+      "end_seconds": 181.41
+    },
+    {
+      "text": "日本語や英語を勉強しているわけですけど",
+      "start_seconds": 181.41,
+      "end_seconds": 185.75
+    },
+    {
+      "text": "どうやって考えているのかについて、私の経験も入れて",
+      "start_seconds": 185.75,
+      "end_seconds": 192.82
+    },
+    {
+      "text": "雑談（ざつだん）みたいに話せたら面白いなって思います",
+      "start_seconds": 192.82,
+      "end_seconds": 200.82
+    },
+    {
+      "text": "もう一つ質問",
+      "start_seconds": 200.82,
+      "end_seconds": 203.41
+    },
+    {
+      "text": "みなさんは「りんご」って聞いてどんなことを感じますか？",
+      "start_seconds": 203.41,
+      "end_seconds": 210.32
+    },
+    {
+      "text": "思いますか？",
+      "start_seconds": 210.32,
+      "end_seconds": 212.07999999999998
+    },
+    {
+      "text": "りんご",
+      "start_seconds": 212.08,
+      "end_seconds": 214.0
+    },
+    {
+      "text": "私はね「りんご」って聞くと",
+      "start_seconds": 214.0,
+      "end_seconds": 217.97
+    },
+    {
+      "text": "りんごのイメージが、頭の中にはっきり出てくる",
+      "start_seconds": 217.97,
+      "end_seconds": 223.85999999999999
+    },
+    {
+      "text": "今私が思っているりんごは",
+      "start_seconds": 223.86,
+      "end_seconds": 226.74
+    },
+    {
+      "text": "赤いりんごで、すごくツヤツヤしてて",
+      "start_seconds": 226.74,
+      "end_seconds": 231.54000000000002
+    },
+    {
+      "text": "私はね、多分、昔からイメージするのがすごく得意",
+      "start_seconds": 231.54,
+      "end_seconds": 238.26
+    },
+    {
+      "text": "人とかの顔とかが、頭の中にはっきりうかぶ",
+      "start_seconds": 238.26,
+      "end_seconds": 243.67
+    },
+    {
+      "text": "それを絵にするのは難しいんだけど",
+      "start_seconds": 243.67,
+      "end_seconds": 247.89999999999998
+    },
+    {
+      "text": "でも、けっこうね、イメージで考えるタイプなんですね",
+      "start_seconds": 247.9,
+      "end_seconds": 252.53
+    },
+    {
+      "text": "みなさんはどうですか？",
+      "start_seconds": 252.53,
+      "end_seconds": 254.77
+    },
+    {
+      "text": "人によっては、イメージするのが苦手っていう人もいると思う",
+      "start_seconds": 254.77,
+      "end_seconds": 261.04
+    },
+    {
+      "text": "人によっては「りんご」っていう、ひらがなとかカタカナが",
+      "start_seconds": 261.04,
+      "end_seconds": 267.09000000000003
+    },
+    {
+      "text": "頭の中にうかぶ、そういう人もいると思うんですよね",
+      "start_seconds": 267.09,
+      "end_seconds": 272.63
+    },
+    {
+      "text": "だから、私たちの頭の中って全然違うんだなって",
+      "start_seconds": 272.63,
+      "end_seconds": 278.9
+    },
+    {
+      "text": "面白くないですか?",
+      "start_seconds": 278.9,
+      "end_seconds": 281.40999999999997
+    },
+    {
+      "text": "私も、みなさんも、「日本語」っていう同じ言語を話してるけど",
+      "start_seconds": 281.41,
+      "end_seconds": 287.22
+    },
+    {
+      "text": "話すときに頭の中で起こっていることは",
+      "start_seconds": 287.22,
+      "end_seconds": 291.86
+    },
+    {
+      "text": "けっこう人によって違うんですね",
+      "start_seconds": 291.86,
+      "end_seconds": 295.16
+    },
+    {
+      "text": "みなさんは、頭の中で計算をするときに何語で計算しますか？",
+      "start_seconds": 295.16,
+      "end_seconds": 303.33000000000004
+    },
+    {
+      "text": "例えば足し算ね、1+1=2",
+      "start_seconds": 303.33,
+      "end_seconds": 306.68
+    },
+    {
+      "text": "引き算、例えば10-4=6",
+      "start_seconds": 306.68,
+      "end_seconds": 310.90000000000003
+    },
+    {
+      "text": "あとかけ算ね、3×3＝9",
+      "start_seconds": 310.9,
+      "end_seconds": 314.73999999999995
+    },
+    {
+      "text": "こういう計算は何語でやってますか？",
+      "start_seconds": 314.74,
+      "end_seconds": 319.57
+    },
+    {
+      "text": "私が聞いたことがあるのは、計算をする時っていうのは",
+      "start_seconds": 319.57,
+      "end_seconds": 324.63
+    },
+    {
+      "text": "自分が、後で勉強した第2言語じゃなくて",
+      "start_seconds": 324.63,
+      "end_seconds": 328.74
+    },
+    {
+      "text": "自分が最初からよく使っている言葉が優先（ゆうせん）するそうなんですね",
+      "start_seconds": 328.74,
+      "end_seconds": 335.99
+    },
+    {
+      "text": "本当にその通りで、私計算するときは、絶対日本語",
+      "start_seconds": 335.99,
+      "end_seconds": 341.53000000000003
+    },
+    {
+      "text": "英語だったら、まじで計算できないできないんですよ",
+      "start_seconds": 341.53,
+      "end_seconds": 348.34
+    },
+    {
+      "text": "例えばね、ちょっと難しい計算、17+26=？",
+      "start_seconds": 348.34,
+      "end_seconds": 357.23999999999995
+    },
+    {
+      "text": "みなさん、今何語で計算してましたか？",
+      "start_seconds": 357.24,
+      "end_seconds": 361.98
+    },
+    {
+      "text": "こういう計算って、多分ね",
+      "start_seconds": 361.98,
+      "end_seconds": 363.71000000000004
+    },
+    {
+      "text": "一番、自分が慣れている言語でやると思うんですね",
+      "start_seconds": 363.71,
+      "end_seconds": 367.83
+    },
+    {
+      "text": "答えは43です",
+      "start_seconds": 367.83,
+      "end_seconds": 371.10999999999996
+    },
+    {
+      "text": "あとお金の計算とかも、やっぱ第一言語じゃないと難しくない？",
+      "start_seconds": 371.11,
+      "end_seconds": 377.82
+    },
+    {
+      "text": "例えば、私がね",
+      "start_seconds": 377.82,
+      "end_seconds": 381.05
+    },
+    {
+      "text": "「あの家5600万円だって」って言ったら",
+      "start_seconds": 381.05,
+      "end_seconds": 387.54
+    },
+    {
+      "text": "みなさんは今の分かった？5600万円っていくらか分かった？",
+      "start_seconds": 387.54,
+      "end_seconds": 394.1
+    },
+    {
+      "text": "ちゃんと聞けても、その日本のお金に慣れてなかったら",
+      "start_seconds": 394.1,
+      "end_seconds": 399.23
+    },
+    {
+      "text": "「あれ、待てよ、5600万円ってアメリカドルだったら…」",
+      "start_seconds": 399.23,
+      "end_seconds": 405.43
+    },
+    {
+      "text": "って、多分考えて計算したんじゃないかなって思うんですね",
+      "start_seconds": 405.43,
+      "end_seconds": 411.0
+    },
+    {
+      "text": "私もね、お金をオーストラリアドルで考えるのはまだ難しい",
+      "start_seconds": 411.0,
+      "end_seconds": 419.24
+    },
+    {
+      "text": "小さいお金、例えば10ドルとかだったら",
+      "start_seconds": 419.24,
+      "end_seconds": 422.29
+    },
+    {
+      "text": "「10ドル、だいたい1000円ね」ってわかるんだけど",
+      "start_seconds": 422.29,
+      "end_seconds": 426.26000000000005
+    },
+    {
+      "text": "金額が大きくなって、慣れてない金額になると",
+      "start_seconds": 426.26,
+      "end_seconds": 431.0
+    },
+    {
+      "text": "例えば、日本語で1兆（ちょう）5000万円を",
+      "start_seconds": 431.0,
+      "end_seconds": 435.67
+    },
+    {
+      "text": "オーストラリアドルで言ったら？",
+      "start_seconds": 435.67,
+      "end_seconds": 438.24
+    },
+    {
+      "text": "って言われたら、まじでわかんない",
+      "start_seconds": 438.24,
+      "end_seconds": 440.52
+    },
+    {
+      "text": "紙に書かないとわかんない",
+      "start_seconds": 440.52,
+      "end_seconds": 444.85999999999996
+    },
+    {
+      "text": "だから、計算ってけっこう大変な頭の作業なんですよね",
+      "start_seconds": 444.86,
+      "end_seconds": 453.34000000000003
+    },
+    {
+      "text": "あとね、私思うのは、やっぱり英語の会話とかね",
+      "start_seconds": 453.34,
+      "end_seconds": 459.45
+    },
+    {
+      "text": "英語のニュースは集中して聞かないと、まじでわかんない",
+      "start_seconds": 459.45,
+      "end_seconds": 466.07
+    },
+    {
+      "text": "日本語だったらね、あんまり集中して聞かなくても",
+      "start_seconds": 466.07,
+      "end_seconds": 471.65999999999997
+    },
+    {
+      "text": "例えば、カフェでとなりの席の人たちが日本語で話をしていて",
+      "start_seconds": 471.66,
+      "end_seconds": 477.76000000000005
+    },
+    {
+      "text": "別に集中して聞いてなくても、自分が別のことをしてたり",
+      "start_seconds": 477.76,
+      "end_seconds": 483.28999999999996
+    },
+    {
+      "text": "自分の友達に話している時でも、となりの会話がね",
+      "start_seconds": 483.29,
+      "end_seconds": 488.38
+    },
+    {
+      "text": "分かったりするんですよね",
+      "start_seconds": 488.38,
+      "end_seconds": 492.57
+    },
+    {
+      "text": "日本語だったら、相手の横のとなりの人の会話が",
+      "start_seconds": 492.57,
+      "end_seconds": 496.74
+    },
+    {
+      "text": "なんか頭の中に残ってて",
+      "start_seconds": 496.74,
+      "end_seconds": 500.52
+    },
+    {
+      "text": "なんかその人たちが、何て言ってたか覚えてたりするんですよね",
+      "start_seconds": 500.52,
+      "end_seconds": 506.34999999999997
+    },
+    {
+      "text": "頭の中で",
+      "start_seconds": 506.35,
+      "end_seconds": 508.58000000000004
+    },
+    {
+      "text": "みなさんも、第一言語を話すときは",
+      "start_seconds": 508.58,
+      "end_seconds": 510.83
+    },
+    {
+      "text": "そんな感じじゃないでしょうか？",
+      "start_seconds": 510.83,
+      "end_seconds": 513.64
+    },
+    {
+      "text": "だけど英語の時はね、となりの人が何か話してても",
+      "start_seconds": 513.64,
+      "end_seconds": 519.85
+    },
+    {
+      "text": "まじでね、その人たちの話を集中して聞かないと",
+      "start_seconds": 519.85,
+      "end_seconds": 524.5500000000001
+    },
+    {
+      "text": "本当に耳に入ってこない",
+      "start_seconds": 524.55,
+      "end_seconds": 526.92
+    },
+    {
+      "text": "もう、なんて言ったかなんて、まじで覚えてない",
+      "start_seconds": 526.92,
+      "end_seconds": 530.28
+    },
+    {
+      "text": "そんな感じです",
+      "start_seconds": 530.28,
+      "end_seconds": 534.02
+    },
+    {
+      "text": "あとね、会話で思うのは、英語で会話をしているときに",
+      "start_seconds": 534.02,
+      "end_seconds": 540.17
+    },
+    {
+      "text": "相手が何か言いたいことは分かった",
+      "start_seconds": 540.17,
+      "end_seconds": 542.29
+    },
+    {
+      "text": "意味は分かった",
+      "start_seconds": 542.29,
+      "end_seconds": 544.0
+    },
+    {
+      "text": "でもじゃあ「相手が何て言ったか教えて」って言われたら",
+      "start_seconds": 544.0,
+      "end_seconds": 549.09
+    },
+    {
+      "text": "分かんない",
+      "start_seconds": 549.09,
+      "end_seconds": 550.21
+    },
+    {
+      "text": "その、相手が言った言葉をはっきり覚えてないんですね",
+      "start_seconds": 550.21,
+      "end_seconds": 555.0400000000001
+    },
+    {
+      "text": "「こういうことを言ったよ」っていうのは言えても",
+      "start_seconds": 555.04,
+      "end_seconds": 558.7199999999999
+    },
+    {
+      "text": "相手が実際、どんな言葉、どんな文法を使って話したか",
+      "start_seconds": 558.72,
+      "end_seconds": 563.7
+    },
+    {
+      "text": "覚えてないんですね",
+      "start_seconds": 563.7,
+      "end_seconds": 566.0500000000001
+    },
+    {
+      "text": "みなさんも日本語で会話するときそんな感じないですか？",
+      "start_seconds": 566.05,
+      "end_seconds": 573.6999999999999
+    },
+    {
+      "text": "あとは、私の場合は、英語で話すときの自分の記憶力（きおくりょく）",
+      "start_seconds": 573.7,
+      "end_seconds": 580.6400000000001
+    },
+    {
+      "text": "覚えている力が、まじで悪い",
+      "start_seconds": 580.64,
+      "end_seconds": 584.43
+    },
+    {
+      "text": "例えば、新しい町の名前ね",
+      "start_seconds": 584.43,
+      "end_seconds": 588.3499999999999
+    },
+    {
+      "text": "今まで聞いたことがない町の名前とか",
+      "start_seconds": 588.35,
+      "end_seconds": 592.19
+    },
+    {
+      "text": "イタリアのデザートの名前とか、本当に覚えるまでに",
+      "start_seconds": 592.19,
+      "end_seconds": 596.97
+    },
+    {
+      "text": "何回も何回も、その言葉を聞いて使ったりしないとダメ",
+      "start_seconds": 596.97,
+      "end_seconds": 603.39
+    },
+    {
+      "text": "あと、その言葉のスペル、アルファベットを見ないと",
+      "start_seconds": 603.39,
+      "end_seconds": 608.39
+    },
+    {
+      "text": "よくわかんないって感じる",
+      "start_seconds": 608.39,
+      "end_seconds": 611.58
+    },
+    {
+      "text": "だから、日本語だったら一回で覚えられることが",
+      "start_seconds": 611.58,
+      "end_seconds": 616.6500000000001
+    },
+    {
+      "text": "英語だったら覚えられない",
+      "start_seconds": 616.65,
+      "end_seconds": 619.43
+    },
+    {
+      "text": "これはね、ちょっと不安ですね",
+      "start_seconds": 619.43,
+      "end_seconds": 621.3399999999999
+    },
+    {
+      "text": "だって、将来英語で仕事するときに、ずっと覚えれなかったら",
+      "start_seconds": 621.34,
+      "end_seconds": 625.96
+    },
+    {
+      "text": "どうしようって思ったりするんですよね",
+      "start_seconds": 625.96,
+      "end_seconds": 629.9200000000001
+    },
+    {
+      "text": "みなさんは、こういう不安なこと",
+      "start_seconds": 629.92,
+      "end_seconds": 635.03
+    },
+    {
+      "text": "こういうふうに感じたことってありませんか？",
+      "start_seconds": 635.03,
+      "end_seconds": 639.76
+    },
+    {
+      "text": "みなさんの多くは、バイリンガルとか、バイリンガル以上",
+      "start_seconds": 639.76,
+      "end_seconds": 645.0
+    },
+    {
+      "text": "3つ、4つの言葉を話せるような人が多いと思うんですね",
+      "start_seconds": 645.0,
+      "end_seconds": 650.54
+    },
+    {
+      "text": "私、聞いたことがあるのは、そのバイリンガルとか",
+      "start_seconds": 650.54,
+      "end_seconds": 654.5699999999999
+    },
+    {
+      "text": "いろんな言語を話す人って、けっこうね",
+      "start_seconds": 654.57,
+      "end_seconds": 658.96
+    },
+    {
+      "text": "「あれ?言葉が出てこない」っていうことが",
+      "start_seconds": 658.96,
+      "end_seconds": 662.51
+    },
+    {
+      "text": "普通の人より多いらしいんですよ",
+      "start_seconds": 662.51,
+      "end_seconds": 665.71
+    },
+    {
+      "text": "みなさん、そういう経験あります?",
+      "start_seconds": 665.71,
+      "end_seconds": 668.94
+    },
+    {
+      "text": "私も日本語でね、会話レッスンする人がいて",
+      "start_seconds": 668.94,
+      "end_seconds": 674.62
+    },
+    {
+      "text": "その人は、英語と日本語のバイリンガルなんですけど",
+      "start_seconds": 674.62,
+      "end_seconds": 678.4
+    },
+    {
+      "text": "けっこうね、「あれあれ、あれが出てこない！」って言って",
+      "start_seconds": 678.4,
+      "end_seconds": 682.64
+    },
+    {
+      "text": "すごく簡単な言葉が出てこないこととか、けっこうあるんですね",
+      "start_seconds": 682.64,
+      "end_seconds": 689.13
+    },
+    {
+      "text": "もちろん、それはまあ悪いことじゃなくて",
+      "start_seconds": 689.13,
+      "end_seconds": 691.3
+    },
+    {
+      "text": "やっぱり、バイリンガルとか多くの言語を話す人って",
+      "start_seconds": 691.3,
+      "end_seconds": 696.4499999999999
+    },
+    {
+      "text": "その脳みそが、それだけ話すときに",
+      "start_seconds": 696.45,
+      "end_seconds": 700.4300000000001
+    },
+    {
+      "text": "いっぱい働いてるんだと思う",
+      "start_seconds": 700.43,
+      "end_seconds": 703.38
+    },
+    {
+      "text": "あと、例えば日本語の「冷蔵庫（れいぞうこ）」って言葉が出てこないとかね",
+      "start_seconds": 703.38,
+      "end_seconds": 709.93
+    },
+    {
+      "text": "そういう時は多分、英語で「冷蔵庫」って",
+      "start_seconds": 709.93,
+      "end_seconds": 716.4499999999999
+    },
+    {
+      "text": "めちゃくちゃ何回も言ってるんだけど",
+      "start_seconds": 716.45,
+      "end_seconds": 719.8100000000001
+    },
+    {
+      "text": "最近、日本語で「冷蔵庫」って言ってない",
+      "start_seconds": 719.81,
+      "end_seconds": 723.1099999999999
+    },
+    {
+      "text": "そういう時は、なんか日本語の「冷蔵庫」って言葉が",
+      "start_seconds": 723.11,
+      "end_seconds": 728.6800000000001
+    },
+    {
+      "text": "頭にしばらく出てこない、っていうことが起こるらしいです",
+      "start_seconds": 728.68,
+      "end_seconds": 736.01
+    },
+    {
+      "text": "私はね、まだ自分をバイリンガルと思ってないんだけど",
+      "start_seconds": 736.01,
+      "end_seconds": 740.0
+    },
+    {
+      "text": "私も正直、そういうことはよくあります",
+      "start_seconds": 740.0,
+      "end_seconds": 744.16
+    },
+    {
+      "text": "まあみんなあるよね！",
+      "start_seconds": 744.16,
+      "end_seconds": 745.0899999999999
+    },
+    {
+      "text": "あと、みなさんに私が聞いてみたいことは",
+      "start_seconds": 745.09,
+      "end_seconds": 749.0600000000001
+    },
+    {
+      "text": "日本語の方が話しやすいトピックってありますか？",
+      "start_seconds": 749.06,
+      "end_seconds": 754.53
+    },
+    {
+      "text": "自分の言語だったら",
+      "start_seconds": 754.53,
+      "end_seconds": 756.14
+    },
+    {
+      "text": "例えば、このトピックについては言いにくいんだけど",
+      "start_seconds": 756.14,
+      "end_seconds": 761.93
+    },
+    {
+      "text": "日本語の方が言いやすいとか",
+      "start_seconds": 761.93,
+      "end_seconds": 765.79
+    },
+    {
+      "text": "例えば、日本語の方がもっと友達にフレンドリーに話せるとかね",
+      "start_seconds": 765.79,
+      "end_seconds": 772.29
+    },
+    {
+      "text": "ないですかね？",
+      "start_seconds": 772.29,
+      "end_seconds": 774.53
+    },
+    {
+      "text": "私はね、英語の方が話しやすいトピックがあって",
+      "start_seconds": 774.53,
+      "end_seconds": 779.2099999999999
+    },
+    {
+      "text": "英語で、ちょっと体のさ、恥ずかしい話とか",
+      "start_seconds": 779.21,
+      "end_seconds": 785.83
+    },
+    {
+      "text": "そういうのは英語の方が言いやすい",
+      "start_seconds": 785.83,
+      "end_seconds": 789.5500000000001
+    },
+    {
+      "text": "理由は多分、英語の文化の方が、そういうことを日本よりね",
+      "start_seconds": 789.55,
+      "end_seconds": 796.3599999999999
+    },
+    {
+      "text": "みんなオープンに話すっていうのもあるし",
+      "start_seconds": 796.36,
+      "end_seconds": 799.4300000000001
+    },
+    {
+      "text": "あと、英語のそういう言葉って、私にとっては新しい言葉だから",
+      "start_seconds": 799.43,
+      "end_seconds": 806.31
+    },
+    {
+      "text": "あんまり、その言葉が、自分の体とか性的なことに",
+      "start_seconds": 806.31,
+      "end_seconds": 813.16
+    },
+    {
+      "text": "あんまりね、結びついてないんだよね",
+      "start_seconds": 813.16,
+      "end_seconds": 816.78
+    },
+    {
+      "text": "だから、そういうきたない言葉、恥ずかしい言葉を",
+      "start_seconds": 816.78,
+      "end_seconds": 820.6999999999999
+    },
+    {
+      "text": "英語で言っても、あんまり何も感じないです",
+      "start_seconds": 820.7,
+      "end_seconds": 825.22
+    },
+    {
+      "text": "あともちろん、「愛してる」とかね",
+      "start_seconds": 825.22,
+      "end_seconds": 827.96
+    },
+    {
+      "text": "そういう愛情表現は、英語での方がやりやすい",
+      "start_seconds": 827.96,
+      "end_seconds": 834.1800000000001
+    },
+    {
+      "text": "これも多分ね、英語の方がもっと愛情を表す文化があるし",
+      "start_seconds": 834.18,
+      "end_seconds": 839.9899999999999
+    },
+    {
+      "text": "だからだと思います",
+      "start_seconds": 839.99,
+      "end_seconds": 842.2
+    },
+    {
+      "text": "なので、こんな感じで、私たちの頭の中で起こっていることって",
+      "start_seconds": 842.2,
+      "end_seconds": 848.83
+    },
+    {
+      "text": "人それぞれ全然違う",
+      "start_seconds": 848.83,
+      "end_seconds": 851.7700000000001
+    },
+    {
+      "text": "だから、言語の学び方も、本当に人それぞれ",
+      "start_seconds": 851.77,
+      "end_seconds": 856.46
+    },
+    {
+      "text": "全然違ってていいんじゃないかなって思いました",
+      "start_seconds": 856.46,
+      "end_seconds": 860.45
+    },
+    {
+      "text": "まあもちろん、その言語の勉強にしっかり時間を使うこと",
+      "start_seconds": 860.45,
+      "end_seconds": 866.6800000000001
+    },
+    {
+      "text": "筋トレのように、毎日毎日続けること",
+      "start_seconds": 866.68,
+      "end_seconds": 871.29
+    },
+    {
+      "text": "それは、誰にとってもすごく大切だと思う",
+      "start_seconds": 871.29,
+      "end_seconds": 875.65
+    },
+    {
+      "text": "だけどたった一つの、かしこい勉強方法とかはない",
+      "start_seconds": 875.65,
+      "end_seconds": 882.11
+    },
+    {
+      "text": "と思うんですね",
+      "start_seconds": 882.11,
+      "end_seconds": 884.19
+    },
+    {
+      "text": "だって、人の頭の中で起こってることって違うからね",
+      "start_seconds": 884.19,
+      "end_seconds": 889.4000000000001
+    },
+    {
+      "text": "だから、学び方もけっこう人それぞれでいいんだな",
+      "start_seconds": 889.4,
+      "end_seconds": 893.2099999999999
+    },
+    {
+      "text": "っていうふうに思う",
+      "start_seconds": 893.21,
+      "end_seconds": 895.02
+    },
+    {
+      "text": "例えば、私の妹ってすごく論理的（ろんりてき）だし",
+      "start_seconds": 895.02,
+      "end_seconds": 901.85
+    },
+    {
+      "text": "英語の単語を学ぶときに",
+      "start_seconds": 901.85,
+      "end_seconds": 904.38
+    },
+    {
+      "text": "その英語の言葉の概念（がいねん）、意味をしっかり理解しないと",
+      "start_seconds": 904.38,
+      "end_seconds": 911.64
+    },
+    {
+      "text": "何か納得（なっとく）しないタイプなんですね",
+      "start_seconds": 911.64,
+      "end_seconds": 914.84
+    },
+    {
+      "text": "だから、私の妹は、英語の教科書とか単語帳（たんごちょう）がすごく好きで",
+      "start_seconds": 914.84,
+      "end_seconds": 921.94
+    },
+    {
+      "text": "英語の本を読むのも好きだそうです",
+      "start_seconds": 921.94,
+      "end_seconds": 925.6600000000001
+    },
+    {
+      "text": "だけど、英語の会話のポッドキャストとかは",
+      "start_seconds": 925.66,
+      "end_seconds": 929.3
+    },
+    {
+      "text": "そんなに面白いって思わないらしいです",
+      "start_seconds": 929.3,
+      "end_seconds": 933.1999999999999
+    },
+    {
+      "text": "私は逆に、英語の会話のポッドキャスト大好きなんですね",
+      "start_seconds": 933.2,
+      "end_seconds": 940.11
+    },
+    {
+      "text": "あと、最近私が出会ったフィリピンの女性は",
+      "start_seconds": 940.11,
+      "end_seconds": 944.97
+    },
+    {
+      "text": "英語を学ぶときに教科書を使わないで勉強したって言ってました",
+      "start_seconds": 944.97,
+      "end_seconds": 951.35
+    },
+    {
+      "text": "私はそんなの絶対無理、って思うんです",
+      "start_seconds": 951.35,
+      "end_seconds": 956.37
+    },
+    {
+      "text": "だけど、彼女は英語を学ぶときね、周りの人と英語を話したり",
+      "start_seconds": 956.37,
+      "end_seconds": 964.14
+    },
+    {
+      "text": "その周りの人が英語を話しているのを見て",
+      "start_seconds": 964.14,
+      "end_seconds": 966.9
+    },
+    {
+      "text": "例えば\"Hello\"って言った後に\"Hi, how are you?\"って",
+      "start_seconds": 966.9,
+      "end_seconds": 971.35
+    },
+    {
+      "text": "「こういう返事の仕方するんだ！」っていうふうに覚えて",
+      "start_seconds": 971.35,
+      "end_seconds": 976.47
+    },
+    {
+      "text": "それを自分が、実際に使いながら勉強していくそうです",
+      "start_seconds": 976.47,
+      "end_seconds": 982.9300000000001
+    },
+    {
+      "text": "私はね、それ無理だと思う",
+      "start_seconds": 982.93,
+      "end_seconds": 985.31
+    },
+    {
+      "text": "私だったら、まず教科書を使って、簡単な文法や単語の意味を",
+      "start_seconds": 985.31,
+      "end_seconds": 994.16
+    },
+    {
+      "text": "最低限（さいていげん）調べて、覚えてからやると思います",
+      "start_seconds": 994.16,
+      "end_seconds": 1000.8199999999999
+    },
+    {
+      "text": "だから、本当に人によって学び方は違うし",
+      "start_seconds": 1000.82,
+      "end_seconds": 1005.09
+    },
+    {
+      "text": "あと、日本語を話してても、その人がね、日本語ペラペラでも",
+      "start_seconds": 1005.09,
+      "end_seconds": 1010.88
+    },
+    {
+      "text": "考えているときは、日本語で考えてないかもしれないですよね",
+      "start_seconds": 1010.88,
+      "end_seconds": 1016.28
+    },
+    {
+      "text": "私はここ数年、ずっと英語の勉強頑張ってるんですけど",
+      "start_seconds": 1016.28,
+      "end_seconds": 1022.36
+    },
+    {
+      "text": "自分一人で何か考えているときに",
+      "start_seconds": 1022.36,
+      "end_seconds": 1025.3700000000001
+    },
+    {
+      "text": "英語で考えてるってことがないんですね",
+      "start_seconds": 1025.37,
+      "end_seconds": 1029.2399999999998
+    },
+    {
+      "text": "だから、ちょっとショックに感じました",
+      "start_seconds": 1029.24,
+      "end_seconds": 1032.38
+    },
+    {
+      "text": "自分はいつまでたっても英語で考え始めないなと思って",
+      "start_seconds": 1032.38,
+      "end_seconds": 1038.75
+    },
+    {
+      "text": "だけど、よくよく考えたら、普段ね",
+      "start_seconds": 1038.75,
+      "end_seconds": 1043.07
+    },
+    {
+      "text": "英語で考えてなくても、英語がペラペラな人もいるはずだし",
+      "start_seconds": 1043.07,
+      "end_seconds": 1048.8899999999999
+    },
+    {
+      "text": "あと考えるときって、言語使わないで考えていること",
+      "start_seconds": 1048.89,
+      "end_seconds": 1053.88
+    },
+    {
+      "text": "多いんですよね",
+      "start_seconds": 1053.88,
+      "end_seconds": 1056.19
+    },
+    {
+      "text": "なので、もしね、みなさんも私みたいな悩みがあったら",
+      "start_seconds": 1056.19,
+      "end_seconds": 1060.7
+    },
+    {
+      "text": "いや別に大丈夫だよっていうのをね、言いたくって",
+      "start_seconds": 1060.7,
+      "end_seconds": 1064.2
+    },
+    {
+      "text": "今回のエピソードを作ったんですね",
+      "start_seconds": 1064.2,
+      "end_seconds": 1067.8700000000001
+    },
+    {
+      "text": "なので、最後まできいてくれて、本当にありがとうございます！",
+      "start_seconds": 1067.87,
+      "end_seconds": 1072.3999999999999
+    },
+    {
+      "text": "よかったら、みなさんの意見も教えてほしいし",
+      "start_seconds": 1072.4,
+      "end_seconds": 1075.95
+    },
+    {
+      "text": "もしみなさんがバイリンガルとか",
+      "start_seconds": 1075.95,
+      "end_seconds": 1079.39
+    },
+    {
+      "text": "たくさんの言語を話す人だったら",
+      "start_seconds": 1079.39,
+      "end_seconds": 1082.71
+    },
+    {
+      "text": "自分の頭の中がどうなっているのか",
+      "start_seconds": 1082.71,
+      "end_seconds": 1086.01
+    },
+    {
+      "text": "よかったらコメントとかで教えてほしいです",
+      "start_seconds": 1086.01,
+      "end_seconds": 1089.26
+    },
+    {
+      "text": "すごい気になってます！",
+      "start_seconds": 1089.26,
+      "end_seconds": 1090.94
+    },
+    {
+      "text": "よろしくお願いします",
+      "start_seconds": 1090.94,
+      "end_seconds": 1093.53
+    },
+    {
+      "text": "ということで、今回のエピソードはここまで",
+      "start_seconds": 1093.53,
+      "end_seconds": 1097.11
+    },
+    {
+      "text": "もしこのポッドキャスト、サポートしたかったら",
+      "start_seconds": 1097.11,
+      "end_seconds": 1100.26
+    },
+    {
+      "text": "メンバーシップのPatreonに入ってくれるとうれしいです😊",
+      "start_seconds": 1100.26,
+      "end_seconds": 1103.96
+    },
+    {
+      "text": "よろしくお願いします！",
+      "start_seconds": 1103.96,
+      "end_seconds": 1106.07
+    },
+    {
+      "text": "それでは、みなさんおつかれさまでした！",
+      "start_seconds": 1106.07,
+      "end_seconds": 1108.47
+    },
+    {
+      "text": "また次のエピソードもきいてください",
+      "start_seconds": 1108.47,
+      "end_seconds": 1112.57
+    },
+    {
+      "text": "またね！バイバイ",
+      "start_seconds": 1112.57,
+      "end_seconds": 1114.81
+    }
+  ],
+  "display_captions": [
+    {
+      "text": "みなさん、こんにちは！Bite Size Japaneseのレイラです😊",
+      "start_seconds": 0.0,
+      "end_seconds": 3.59,
+      "id": "PGp4f-cvDSE-display-0001",
+      "segment_id": "PGp4f-cvDSE-ja-0001"
+    },
+    {
+      "text": "元気ですか？",
+      "start_seconds": 3.59,
+      "end_seconds": 5.15,
+      "id": "PGp4f-cvDSE-display-0002",
+      "segment_id": "PGp4f-cvDSE-ja-0001"
+    },
+    {
+      "text": "このポッドキャストは友達と話すような感じで",
+      "start_seconds": 5.15,
+      "end_seconds": 8.67,
+      "id": "PGp4f-cvDSE-display-0003",
+      "segment_id": "PGp4f-cvDSE-ja-0002"
+    },
+    {
+      "text": "自然な日本語を勉強できるポッドキャストです",
+      "start_seconds": 8.67,
+      "end_seconds": 13.41,
+      "id": "PGp4f-cvDSE-display-0004",
+      "segment_id": "PGp4f-cvDSE-ja-0002"
+    },
+    {
+      "text": "みなさんは、日本語で話すときに日本語で考えてますか？",
+      "start_seconds": 13.41,
+      "end_seconds": 19.75,
+      "id": "PGp4f-cvDSE-display-0005",
+      "segment_id": "PGp4f-cvDSE-ja-0003"
+    },
+    {
+      "text": "それとも、自分の国の言葉で考えてますか？",
+      "start_seconds": 19.75,
+      "end_seconds": 24.48,
+      "id": "PGp4f-cvDSE-display-0006",
+      "segment_id": "PGp4f-cvDSE-ja-0004"
+    },
+    {
+      "text": "もしかしたら、みなさんはあまり言語を使わないで",
+      "start_seconds": 24.48,
+      "end_seconds": 29.38,
+      "id": "PGp4f-cvDSE-display-0007",
+      "segment_id": "PGp4f-cvDSE-ja-0005"
+    },
+    {
+      "text": "考えている可能性ありますよね",
+      "start_seconds": 29.38,
+      "end_seconds": 34.1,
+      "id": "PGp4f-cvDSE-display-0008",
+      "segment_id": "PGp4f-cvDSE-ja-0005"
+    },
+    {
+      "text": "でも、やっぱり日本語を勉強している人は",
+      "start_seconds": 34.1,
+      "end_seconds": 37.98,
+      "id": "PGp4f-cvDSE-display-0009",
+      "segment_id": "PGp4f-cvDSE-ja-0006"
+    },
+    {
+      "text": "日本語で考えて話すことが大事だって",
+      "start_seconds": 37.98,
+      "end_seconds": 43.339999999999996,
+      "id": "PGp4f-cvDSE-display-0010",
+      "segment_id": "PGp4f-cvDSE-ja-0006"
+    },
+    {
+      "text": "みなさんも、何回も聞いたことあると思います",
+      "start_seconds": 43.34,
+      "end_seconds": 47.57,
+      "id": "PGp4f-cvDSE-display-0011",
+      "segment_id": "PGp4f-cvDSE-ja-0007"
+    },
+    {
+      "text": "自分の国の言葉でまず考えて",
+      "start_seconds": 47.57,
+      "end_seconds": 50.75,
+      "id": "PGp4f-cvDSE-display-0012",
+      "segment_id": "PGp4f-cvDSE-ja-0007"
+    },
+    {
+      "text": "翻訳（ほんやく）してから日本語にするんじゃなくて",
+      "start_seconds": 50.75,
+      "end_seconds": 54.28,
+      "id": "PGp4f-cvDSE-display-0013",
+      "segment_id": "PGp4f-cvDSE-ja-0007"
+    },
+    {
+      "text": "もう、日本語で考えて、日本語で話す",
+      "start_seconds": 54.28,
+      "end_seconds": 58.66,
+      "id": "PGp4f-cvDSE-display-0014",
+      "segment_id": "PGp4f-cvDSE-ja-0008"
+    },
+    {
+      "text": "もちろん、それができたらいいんだけど",
+      "start_seconds": 58.66,
+      "end_seconds": 61.47,
+      "id": "PGp4f-cvDSE-display-0015",
+      "segment_id": "PGp4f-cvDSE-ja-0008"
+    },
+    {
+      "text": "でも、最近私思ったんですね",
+      "start_seconds": 61.47,
+      "end_seconds": 64.32,
+      "id": "PGp4f-cvDSE-display-0016",
+      "segment_id": "PGp4f-cvDSE-ja-0008"
+    },
+    {
+      "text": "そもそも、私たちが考えている時って",
+      "start_seconds": 64.32,
+      "end_seconds": 69.44,
+      "id": "PGp4f-cvDSE-display-0017",
+      "segment_id": "PGp4f-cvDSE-ja-0009"
+    },
+    {
+      "text": "どうやって考えてるんだろう？って",
+      "start_seconds": 69.44,
+      "end_seconds": 71.91,
+      "id": "PGp4f-cvDSE-display-0018",
+      "segment_id": "PGp4f-cvDSE-ja-0009"
+    },
+    {
+      "text": "だって、よく考えてみたら、私たちが考えるときに",
+      "start_seconds": 71.91,
+      "end_seconds": 77.67,
+      "id": "PGp4f-cvDSE-display-0019",
+      "segment_id": "PGp4f-cvDSE-ja-0010"
+    },
+    {
+      "text": "言語を使わずに考えてることってけっこう多いと思うんですよね",
+      "start_seconds": 77.67,
+      "end_seconds": 83.94,
+      "id": "PGp4f-cvDSE-display-0020",
+      "segment_id": "PGp4f-cvDSE-ja-0011"
+    },
+    {
+      "text": "みなさんもそう思ったことない?",
+      "start_seconds": 83.94,
+      "end_seconds": 87.05,
+      "id": "PGp4f-cvDSE-display-0021",
+      "segment_id": "PGp4f-cvDSE-ja-0011"
+    },
+    {
+      "text": "例えば、みなさん、今日の夜ご飯は何ですか?",
+      "start_seconds": 87.05,
+      "end_seconds": 94.85,
+      "id": "PGp4f-cvDSE-display-0022",
+      "segment_id": "PGp4f-cvDSE-ja-0012"
+    },
+    {
+      "text": "今、自分の頭の中どんなふうになってた?",
+      "start_seconds": 94.85,
+      "end_seconds": 99.46,
+      "id": "PGp4f-cvDSE-display-0023",
+      "segment_id": "PGp4f-cvDSE-ja-0013"
+    },
+    {
+      "text": "例えば、カレーライスっていう日本語が頭に出てきた",
+      "start_seconds": 99.46,
+      "end_seconds": 104.74,
+      "id": "PGp4f-cvDSE-display-0024",
+      "segment_id": "PGp4f-cvDSE-ja-0014"
+    },
+    {
+      "text": "それとも、自分の夜ご飯のイメージが頭の中に出てきましたか？",
+      "start_seconds": 104.74,
+      "end_seconds": 113.42999999999999,
+      "id": "PGp4f-cvDSE-display-0025",
+      "segment_id": "PGp4f-cvDSE-ja-0015"
+    },
+    {
+      "text": "もしかしたら、自分の家の中の冷蔵庫（れいぞうこ）を想像（そうぞう）して",
+      "start_seconds": 113.43,
+      "end_seconds": 119.39,
+      "id": "PGp4f-cvDSE-display-0026",
+      "segment_id": "PGp4f-cvDSE-ja-0016"
+    },
+    {
+      "text": "食べ物のイメージが、頭の中に出てきた人もいるかもしれないし",
+      "start_seconds": 119.39,
+      "end_seconds": 125.91,
+      "id": "PGp4f-cvDSE-display-0027",
+      "segment_id": "PGp4f-cvDSE-ja-0017"
+    },
+    {
+      "text": "例えば「カレーが食べたい」っていう気持ち・感情だけが",
+      "start_seconds": 125.91,
+      "end_seconds": 132.57,
+      "id": "PGp4f-cvDSE-display-0028",
+      "segment_id": "PGp4f-cvDSE-ja-0018"
+    },
+    {
+      "text": "頭の中に出てきた人もいると思うんですね",
+      "start_seconds": 132.57,
+      "end_seconds": 137.20999999999998,
+      "id": "PGp4f-cvDSE-display-0029",
+      "segment_id": "PGp4f-cvDSE-ja-0018"
+    },
+    {
+      "text": "だから、私たちが考えるときって、日本語だけとか英語だけ",
+      "start_seconds": 137.21,
+      "end_seconds": 145.14,
+      "id": "PGp4f-cvDSE-display-0030",
+      "segment_id": "PGp4f-cvDSE-ja-0019"
+    },
+    {
+      "text": "言語だけで考えてるわけじゃないんだって、私最近思いました",
+      "start_seconds": 145.14,
+      "end_seconds": 153.36999999999998,
+      "id": "PGp4f-cvDSE-display-0031",
+      "segment_id": "PGp4f-cvDSE-ja-0020"
+    },
+    {
+      "text": "だから、私たちがね、日本語を勉強するときに",
+      "start_seconds": 153.37,
+      "end_seconds": 158.65,
+      "id": "PGp4f-cvDSE-display-0032",
+      "segment_id": "PGp4f-cvDSE-ja-0021"
+    },
+    {
+      "text": "日本語で考えないといけないって言う人は多いんだけど",
+      "start_seconds": 158.65,
+      "end_seconds": 164.18,
+      "id": "PGp4f-cvDSE-display-0033",
+      "segment_id": "PGp4f-cvDSE-ja-0021"
+    },
+    {
+      "text": "でも、考えるっていうのはそんなに簡単なことではないし",
+      "start_seconds": 164.18,
+      "end_seconds": 169.97,
+      "id": "PGp4f-cvDSE-display-0034",
+      "segment_id": "PGp4f-cvDSE-ja-0022"
+    },
+    {
+      "text": "言語だけで私たちは考えるわけじゃないから",
+      "start_seconds": 169.97,
+      "end_seconds": 173.91,
+      "id": "PGp4f-cvDSE-display-0035",
+      "segment_id": "PGp4f-cvDSE-ja-0022"
+    },
+    {
+      "text": "なんかね、今回のエピソードでは",
+      "start_seconds": 173.91,
+      "end_seconds": 177.52,
+      "id": "PGp4f-cvDSE-display-0036",
+      "segment_id": "PGp4f-cvDSE-ja-0023"
+    },
+    {
+      "text": "私たちが言語学習者として",
+      "start_seconds": 177.52,
+      "end_seconds": 181.41,
+      "id": "PGp4f-cvDSE-display-0037",
+      "segment_id": "PGp4f-cvDSE-ja-0023"
+    },
+    {
+      "text": "日本語や英語を勉強しているわけですけど",
+      "start_seconds": 181.41,
+      "end_seconds": 185.75,
+      "id": "PGp4f-cvDSE-display-0038",
+      "segment_id": "PGp4f-cvDSE-ja-0023"
+    },
+    {
+      "text": "どうやって考えているのかについて、私の経験も入れて",
+      "start_seconds": 185.75,
+      "end_seconds": 192.82,
+      "id": "PGp4f-cvDSE-display-0039",
+      "segment_id": "PGp4f-cvDSE-ja-0024"
+    },
+    {
+      "text": "雑談（ざつだん）みたいに話せたら面白いなって思います",
+      "start_seconds": 192.82,
+      "end_seconds": 200.82,
+      "id": "PGp4f-cvDSE-display-0040",
+      "segment_id": "PGp4f-cvDSE-ja-0025"
+    },
+    {
+      "text": "もう一つ質問",
+      "start_seconds": 200.82,
+      "end_seconds": 203.41,
+      "id": "PGp4f-cvDSE-display-0041",
+      "segment_id": "PGp4f-cvDSE-ja-0025"
+    },
+    {
+      "text": "みなさんは「りんご」って聞いてどんなことを感じますか？",
+      "start_seconds": 203.41,
+      "end_seconds": 210.32,
+      "id": "PGp4f-cvDSE-display-0042",
+      "segment_id": "PGp4f-cvDSE-ja-0026"
+    },
+    {
+      "text": "思いますか？",
+      "start_seconds": 210.32,
+      "end_seconds": 212.07999999999998,
+      "id": "PGp4f-cvDSE-display-0043",
+      "segment_id": "PGp4f-cvDSE-ja-0027"
+    },
+    {
+      "text": "りんご",
+      "start_seconds": 212.08,
+      "end_seconds": 214.0,
+      "id": "PGp4f-cvDSE-display-0044",
+      "segment_id": "PGp4f-cvDSE-ja-0028"
+    },
+    {
+      "text": "私はね「りんご」って聞くと",
+      "start_seconds": 214.0,
+      "end_seconds": 217.97,
+      "id": "PGp4f-cvDSE-display-0045",
+      "segment_id": "PGp4f-cvDSE-ja-0028"
+    },
+    {
+      "text": "りんごのイメージが、頭の中にはっきり出てくる",
+      "start_seconds": 217.97,
+      "end_seconds": 223.85999999999999,
+      "id": "PGp4f-cvDSE-display-0046",
+      "segment_id": "PGp4f-cvDSE-ja-0028"
+    },
+    {
+      "text": "今私が思っているりんごは",
+      "start_seconds": 223.86,
+      "end_seconds": 226.74,
+      "id": "PGp4f-cvDSE-display-0047",
+      "segment_id": "PGp4f-cvDSE-ja-0029"
+    },
+    {
+      "text": "赤いりんごで、すごくツヤツヤしてて",
+      "start_seconds": 226.74,
+      "end_seconds": 231.54,
+      "id": "PGp4f-cvDSE-display-0048",
+      "segment_id": "PGp4f-cvDSE-ja-0029"
+    },
+    {
+      "text": "私はね、多分、昔からイメージするのがすごく得意",
+      "start_seconds": 231.54,
+      "end_seconds": 238.26,
+      "id": "PGp4f-cvDSE-display-0049",
+      "segment_id": "PGp4f-cvDSE-ja-0030"
+    },
+    {
+      "text": "人とかの顔とかが、頭の中にはっきりうかぶ",
+      "start_seconds": 238.26,
+      "end_seconds": 243.67,
+      "id": "PGp4f-cvDSE-display-0050",
+      "segment_id": "PGp4f-cvDSE-ja-0031"
+    },
+    {
+      "text": "それを絵にするのは難しいんだけど",
+      "start_seconds": 243.67,
+      "end_seconds": 247.89999999999998,
+      "id": "PGp4f-cvDSE-display-0051",
+      "segment_id": "PGp4f-cvDSE-ja-0031"
+    },
+    {
+      "text": "でも、けっこうね、イメージで考えるタイプなんですね",
+      "start_seconds": 247.9,
+      "end_seconds": 252.53,
+      "id": "PGp4f-cvDSE-display-0052",
+      "segment_id": "PGp4f-cvDSE-ja-0032"
+    },
+    {
+      "text": "みなさんはどうですか？",
+      "start_seconds": 252.53,
+      "end_seconds": 254.77,
+      "id": "PGp4f-cvDSE-display-0053",
+      "segment_id": "PGp4f-cvDSE-ja-0032"
+    },
+    {
+      "text": "人によっては、イメージするのが苦手っていう人もいると思う",
+      "start_seconds": 254.77,
+      "end_seconds": 261.04,
+      "id": "PGp4f-cvDSE-display-0054",
+      "segment_id": "PGp4f-cvDSE-ja-0033"
+    },
+    {
+      "text": "人によっては「りんご」っていう、ひらがなとかカタカナが",
+      "start_seconds": 261.04,
+      "end_seconds": 267.09,
+      "id": "PGp4f-cvDSE-display-0055",
+      "segment_id": "PGp4f-cvDSE-ja-0034"
+    },
+    {
+      "text": "頭の中にうかぶ、そういう人もいると思うんですよね",
+      "start_seconds": 267.09,
+      "end_seconds": 272.63,
+      "id": "PGp4f-cvDSE-display-0056",
+      "segment_id": "PGp4f-cvDSE-ja-0034"
+    },
+    {
+      "text": "だから、私たちの頭の中って全然違うんだなって",
+      "start_seconds": 272.63,
+      "end_seconds": 278.9,
+      "id": "PGp4f-cvDSE-display-0057",
+      "segment_id": "PGp4f-cvDSE-ja-0035"
+    },
+    {
+      "text": "面白くないですか?",
+      "start_seconds": 278.9,
+      "end_seconds": 281.40999999999997,
+      "id": "PGp4f-cvDSE-display-0058",
+      "segment_id": "PGp4f-cvDSE-ja-0035"
+    },
+    {
+      "text": "私も、みなさんも、「日本語」っていう同じ言語を話してるけど",
+      "start_seconds": 281.41,
+      "end_seconds": 287.22,
+      "id": "PGp4f-cvDSE-display-0059",
+      "segment_id": "PGp4f-cvDSE-ja-0036"
+    },
+    {
+      "text": "話すときに頭の中で起こっていることは",
+      "start_seconds": 287.22,
+      "end_seconds": 291.86,
+      "id": "PGp4f-cvDSE-display-0060",
+      "segment_id": "PGp4f-cvDSE-ja-0036"
+    },
+    {
+      "text": "けっこう人によって違うんですね",
+      "start_seconds": 291.86,
+      "end_seconds": 295.16,
+      "id": "PGp4f-cvDSE-display-0061",
+      "segment_id": "PGp4f-cvDSE-ja-0037"
+    },
+    {
+      "text": "みなさんは、頭の中で計算をするときに何語で計算しますか？",
+      "start_seconds": 295.16,
+      "end_seconds": 303.33,
+      "id": "PGp4f-cvDSE-display-0062",
+      "segment_id": "PGp4f-cvDSE-ja-0037"
+    },
+    {
+      "text": "例えば足し算ね、1+1=2",
+      "start_seconds": 303.33,
+      "end_seconds": 306.68,
+      "id": "PGp4f-cvDSE-display-0063",
+      "segment_id": "PGp4f-cvDSE-ja-0038"
+    },
+    {
+      "text": "引き算、例えば10-4=6",
+      "start_seconds": 306.68,
+      "end_seconds": 310.9,
+      "id": "PGp4f-cvDSE-display-0064",
+      "segment_id": "PGp4f-cvDSE-ja-0038"
+    },
+    {
+      "text": "あとかけ算ね、3×3＝9",
+      "start_seconds": 310.9,
+      "end_seconds": 314.73999999999995,
+      "id": "PGp4f-cvDSE-display-0065",
+      "segment_id": "PGp4f-cvDSE-ja-0038"
+    },
+    {
+      "text": "こういう計算は何語でやってますか？",
+      "start_seconds": 314.74,
+      "end_seconds": 319.57,
+      "id": "PGp4f-cvDSE-display-0066",
+      "segment_id": "PGp4f-cvDSE-ja-0039"
+    },
+    {
+      "text": "私が聞いたことがあるのは、計算をする時っていうのは",
+      "start_seconds": 319.57,
+      "end_seconds": 324.63,
+      "id": "PGp4f-cvDSE-display-0067",
+      "segment_id": "PGp4f-cvDSE-ja-0040"
+    },
+    {
+      "text": "自分が、後で勉強した第2言語じゃなくて",
+      "start_seconds": 324.63,
+      "end_seconds": 328.74,
+      "id": "PGp4f-cvDSE-display-0068",
+      "segment_id": "PGp4f-cvDSE-ja-0040"
+    },
+    {
+      "text": "自分が最初からよく使っている言葉が優先（ゆうせん）するそうなんですね",
+      "start_seconds": 328.74,
+      "end_seconds": 335.99,
+      "id": "PGp4f-cvDSE-display-0069",
+      "segment_id": "PGp4f-cvDSE-ja-0041"
+    },
+    {
+      "text": "本当にその通りで、私計算するときは、絶対日本語",
+      "start_seconds": 335.99,
+      "end_seconds": 341.53,
+      "id": "PGp4f-cvDSE-display-0070",
+      "segment_id": "PGp4f-cvDSE-ja-0042"
+    },
+    {
+      "text": "英語だったら、まじで計算できないできないんですよ",
+      "start_seconds": 341.53,
+      "end_seconds": 348.34,
+      "id": "PGp4f-cvDSE-display-0071",
+      "segment_id": "PGp4f-cvDSE-ja-0043"
+    },
+    {
+      "text": "例えばね、ちょっと難しい計算、17+26=？",
+      "start_seconds": 348.34,
+      "end_seconds": 357.23999999999995,
+      "id": "PGp4f-cvDSE-display-0072",
+      "segment_id": "PGp4f-cvDSE-ja-0044"
+    },
+    {
+      "text": "みなさん、今何語で計算してましたか？",
+      "start_seconds": 357.24,
+      "end_seconds": 361.98,
+      "id": "PGp4f-cvDSE-display-0073",
+      "segment_id": "PGp4f-cvDSE-ja-0045"
+    },
+    {
+      "text": "こういう計算って、多分ね",
+      "start_seconds": 361.98,
+      "end_seconds": 363.71,
+      "id": "PGp4f-cvDSE-display-0074",
+      "segment_id": "PGp4f-cvDSE-ja-0046"
+    },
+    {
+      "text": "一番、自分が慣れている言語でやると思うんですね",
+      "start_seconds": 363.71,
+      "end_seconds": 367.83,
+      "id": "PGp4f-cvDSE-display-0075",
+      "segment_id": "PGp4f-cvDSE-ja-0046"
+    },
+    {
+      "text": "答えは43です",
+      "start_seconds": 367.83,
+      "end_seconds": 371.10999999999996,
+      "id": "PGp4f-cvDSE-display-0076",
+      "segment_id": "PGp4f-cvDSE-ja-0046"
+    },
+    {
+      "text": "あとお金の計算とかも、やっぱ第一言語じゃないと難しくない？",
+      "start_seconds": 371.11,
+      "end_seconds": 377.82,
+      "id": "PGp4f-cvDSE-display-0077",
+      "segment_id": "PGp4f-cvDSE-ja-0047"
+    },
+    {
+      "text": "例えば、私がね",
+      "start_seconds": 377.82,
+      "end_seconds": 381.05,
+      "id": "PGp4f-cvDSE-display-0078",
+      "segment_id": "PGp4f-cvDSE-ja-0048"
+    },
+    {
+      "text": "「あの家5600万円だって」って言ったら",
+      "start_seconds": 381.05,
+      "end_seconds": 387.54,
+      "id": "PGp4f-cvDSE-display-0079",
+      "segment_id": "PGp4f-cvDSE-ja-0048"
+    },
+    {
+      "text": "みなさんは今の分かった？5600万円っていくらか分かった？",
+      "start_seconds": 387.54,
+      "end_seconds": 394.1,
+      "id": "PGp4f-cvDSE-display-0080",
+      "segment_id": "PGp4f-cvDSE-ja-0049"
+    },
+    {
+      "text": "ちゃんと聞けても、その日本のお金に慣れてなかったら",
+      "start_seconds": 394.1,
+      "end_seconds": 399.23,
+      "id": "PGp4f-cvDSE-display-0081",
+      "segment_id": "PGp4f-cvDSE-ja-0050"
+    },
+    {
+      "text": "「あれ、待てよ、5600万円ってアメリカドルだったら…」",
+      "start_seconds": 399.23,
+      "end_seconds": 405.43,
+      "id": "PGp4f-cvDSE-display-0082",
+      "segment_id": "PGp4f-cvDSE-ja-0050"
+    },
+    {
+      "text": "って、多分考えて計算したんじゃないかなって思うんですね",
+      "start_seconds": 405.43,
+      "end_seconds": 411.0,
+      "id": "PGp4f-cvDSE-display-0083",
+      "segment_id": "PGp4f-cvDSE-ja-0051"
+    },
+    {
+      "text": "私もね、お金をオーストラリアドルで考えるのはまだ難しい",
+      "start_seconds": 411.0,
+      "end_seconds": 419.24,
+      "id": "PGp4f-cvDSE-display-0084",
+      "segment_id": "PGp4f-cvDSE-ja-0052"
+    },
+    {
+      "text": "小さいお金、例えば10ドルとかだったら",
+      "start_seconds": 419.24,
+      "end_seconds": 422.29,
+      "id": "PGp4f-cvDSE-display-0085",
+      "segment_id": "PGp4f-cvDSE-ja-0052"
+    },
+    {
+      "text": "「10ドル、だいたい1000円ね」ってわかるんだけど",
+      "start_seconds": 422.29,
+      "end_seconds": 426.26,
+      "id": "PGp4f-cvDSE-display-0086",
+      "segment_id": "PGp4f-cvDSE-ja-0053"
+    },
+    {
+      "text": "金額が大きくなって、慣れてない金額になると",
+      "start_seconds": 426.26,
+      "end_seconds": 431.0,
+      "id": "PGp4f-cvDSE-display-0087",
+      "segment_id": "PGp4f-cvDSE-ja-0053"
+    },
+    {
+      "text": "例えば、日本語で1兆（ちょう）5000万円を",
+      "start_seconds": 431.0,
+      "end_seconds": 435.67,
+      "id": "PGp4f-cvDSE-display-0088",
+      "segment_id": "PGp4f-cvDSE-ja-0054"
+    },
+    {
+      "text": "オーストラリアドルで言ったら？",
+      "start_seconds": 435.67,
+      "end_seconds": 438.24,
+      "id": "PGp4f-cvDSE-display-0089",
+      "segment_id": "PGp4f-cvDSE-ja-0054"
+    },
+    {
+      "text": "って言われたら、まじでわかんない",
+      "start_seconds": 438.24,
+      "end_seconds": 440.52,
+      "id": "PGp4f-cvDSE-display-0090",
+      "segment_id": "PGp4f-cvDSE-ja-0055"
+    },
+    {
+      "text": "紙に書かないとわかんない",
+      "start_seconds": 440.52,
+      "end_seconds": 444.85999999999996,
+      "id": "PGp4f-cvDSE-display-0091",
+      "segment_id": "PGp4f-cvDSE-ja-0055"
+    },
+    {
+      "text": "だから、計算ってけっこう大変な頭の作業なんですよね",
+      "start_seconds": 444.86,
+      "end_seconds": 453.34,
+      "id": "PGp4f-cvDSE-display-0092",
+      "segment_id": "PGp4f-cvDSE-ja-0056"
+    },
+    {
+      "text": "あとね、私思うのは、やっぱり英語の会話とかね",
+      "start_seconds": 453.34,
+      "end_seconds": 459.45,
+      "id": "PGp4f-cvDSE-display-0093",
+      "segment_id": "PGp4f-cvDSE-ja-0057"
+    },
+    {
+      "text": "英語のニュースは集中して聞かないと、まじでわかんない",
+      "start_seconds": 459.45,
+      "end_seconds": 466.07,
+      "id": "PGp4f-cvDSE-display-0094",
+      "segment_id": "PGp4f-cvDSE-ja-0058"
+    },
+    {
+      "text": "日本語だったらね、あんまり集中して聞かなくても",
+      "start_seconds": 466.07,
+      "end_seconds": 471.65999999999997,
+      "id": "PGp4f-cvDSE-display-0095",
+      "segment_id": "PGp4f-cvDSE-ja-0059"
+    },
+    {
+      "text": "例えば、カフェでとなりの席の人たちが日本語で話をしていて",
+      "start_seconds": 471.66,
+      "end_seconds": 477.76,
+      "id": "PGp4f-cvDSE-display-0096",
+      "segment_id": "PGp4f-cvDSE-ja-0059"
+    },
+    {
+      "text": "別に集中して聞いてなくても、自分が別のことをしてたり",
+      "start_seconds": 477.76,
+      "end_seconds": 483.28999999999996,
+      "id": "PGp4f-cvDSE-display-0097",
+      "segment_id": "PGp4f-cvDSE-ja-0060"
+    },
+    {
+      "text": "自分の友達に話している時でも、となりの会話がね",
+      "start_seconds": 483.29,
+      "end_seconds": 488.38,
+      "id": "PGp4f-cvDSE-display-0098",
+      "segment_id": "PGp4f-cvDSE-ja-0060"
+    },
+    {
+      "text": "分かったりするんですよね",
+      "start_seconds": 488.38,
+      "end_seconds": 492.57,
+      "id": "PGp4f-cvDSE-display-0099",
+      "segment_id": "PGp4f-cvDSE-ja-0061"
+    },
+    {
+      "text": "日本語だったら、相手の横のとなりの人の会話が",
+      "start_seconds": 492.57,
+      "end_seconds": 496.74,
+      "id": "PGp4f-cvDSE-display-0100",
+      "segment_id": "PGp4f-cvDSE-ja-0061"
+    },
+    {
+      "text": "なんか頭の中に残ってて",
+      "start_seconds": 496.74,
+      "end_seconds": 500.52,
+      "id": "PGp4f-cvDSE-display-0101",
+      "segment_id": "PGp4f-cvDSE-ja-0062"
+    },
+    {
+      "text": "なんかその人たちが、何て言ってたか覚えてたりするんですよね",
+      "start_seconds": 500.52,
+      "end_seconds": 506.34999999999997,
+      "id": "PGp4f-cvDSE-display-0102",
+      "segment_id": "PGp4f-cvDSE-ja-0062"
+    },
+    {
+      "text": "頭の中で",
+      "start_seconds": 506.35,
+      "end_seconds": 508.58,
+      "id": "PGp4f-cvDSE-display-0103",
+      "segment_id": "PGp4f-cvDSE-ja-0062"
+    },
+    {
+      "text": "みなさんも、第一言語を話すときは",
+      "start_seconds": 508.58,
+      "end_seconds": 510.83,
+      "id": "PGp4f-cvDSE-display-0104",
+      "segment_id": "PGp4f-cvDSE-ja-0063"
+    },
+    {
+      "text": "そんな感じじゃないでしょうか？",
+      "start_seconds": 510.83,
+      "end_seconds": 513.64,
+      "id": "PGp4f-cvDSE-display-0105",
+      "segment_id": "PGp4f-cvDSE-ja-0063"
+    },
+    {
+      "text": "だけど英語の時はね、となりの人が何か話してても",
+      "start_seconds": 513.64,
+      "end_seconds": 519.85,
+      "id": "PGp4f-cvDSE-display-0106",
+      "segment_id": "PGp4f-cvDSE-ja-0064"
+    },
+    {
+      "text": "まじでね、その人たちの話を集中して聞かないと",
+      "start_seconds": 519.85,
+      "end_seconds": 524.55,
+      "id": "PGp4f-cvDSE-display-0107",
+      "segment_id": "PGp4f-cvDSE-ja-0064"
+    },
+    {
+      "text": "本当に耳に入ってこない",
+      "start_seconds": 524.55,
+      "end_seconds": 526.92,
+      "id": "PGp4f-cvDSE-display-0108",
+      "segment_id": "PGp4f-cvDSE-ja-0065"
+    },
+    {
+      "text": "もう、なんて言ったかなんて、まじで覚えてない",
+      "start_seconds": 526.92,
+      "end_seconds": 530.28,
+      "id": "PGp4f-cvDSE-display-0109",
+      "segment_id": "PGp4f-cvDSE-ja-0065"
+    },
+    {
+      "text": "そんな感じです",
+      "start_seconds": 530.28,
+      "end_seconds": 534.02,
+      "id": "PGp4f-cvDSE-display-0110",
+      "segment_id": "PGp4f-cvDSE-ja-0065"
+    },
+    {
+      "text": "あとね、会話で思うのは、英語で会話をしているときに",
+      "start_seconds": 534.02,
+      "end_seconds": 540.17,
+      "id": "PGp4f-cvDSE-display-0111",
+      "segment_id": "PGp4f-cvDSE-ja-0066"
+    },
+    {
+      "text": "相手が何か言いたいことは分かった",
+      "start_seconds": 540.17,
+      "end_seconds": 542.29,
+      "id": "PGp4f-cvDSE-display-0112",
+      "segment_id": "PGp4f-cvDSE-ja-0066"
+    },
+    {
+      "text": "意味は分かった",
+      "start_seconds": 542.29,
+      "end_seconds": 544.0,
+      "id": "PGp4f-cvDSE-display-0113",
+      "segment_id": "PGp4f-cvDSE-ja-0066"
+    },
+    {
+      "text": "でもじゃあ「相手が何て言ったか教えて」って言われたら",
+      "start_seconds": 544.0,
+      "end_seconds": 549.09,
+      "id": "PGp4f-cvDSE-display-0114",
+      "segment_id": "PGp4f-cvDSE-ja-0067"
+    },
+    {
+      "text": "分かんない",
+      "start_seconds": 549.09,
+      "end_seconds": 550.21,
+      "id": "PGp4f-cvDSE-display-0115",
+      "segment_id": "PGp4f-cvDSE-ja-0067"
+    },
+    {
+      "text": "その、相手が言った言葉をはっきり覚えてないんですね",
+      "start_seconds": 550.21,
+      "end_seconds": 555.04,
+      "id": "PGp4f-cvDSE-display-0116",
+      "segment_id": "PGp4f-cvDSE-ja-0067"
+    },
+    {
+      "text": "「こういうことを言ったよ」っていうのは言えても",
+      "start_seconds": 555.04,
+      "end_seconds": 558.7199999999999,
+      "id": "PGp4f-cvDSE-display-0117",
+      "segment_id": "PGp4f-cvDSE-ja-0068"
+    },
+    {
+      "text": "相手が実際、どんな言葉、どんな文法を使って話したか",
+      "start_seconds": 558.72,
+      "end_seconds": 563.7,
+      "id": "PGp4f-cvDSE-display-0118",
+      "segment_id": "PGp4f-cvDSE-ja-0068"
+    },
+    {
+      "text": "覚えてないんですね",
+      "start_seconds": 563.7,
+      "end_seconds": 566.05,
+      "id": "PGp4f-cvDSE-display-0119",
+      "segment_id": "PGp4f-cvDSE-ja-0068"
+    },
+    {
+      "text": "みなさんも日本語で会話するときそんな感じないですか？",
+      "start_seconds": 566.05,
+      "end_seconds": 573.6999999999999,
+      "id": "PGp4f-cvDSE-display-0120",
+      "segment_id": "PGp4f-cvDSE-ja-0069"
+    },
+    {
+      "text": "あとは、私の場合は、英語で話すときの自分の記憶力（きおくりょく）",
+      "start_seconds": 573.7,
+      "end_seconds": 580.64,
+      "id": "PGp4f-cvDSE-display-0121",
+      "segment_id": "PGp4f-cvDSE-ja-0070"
+    },
+    {
+      "text": "覚えている力が、まじで悪い",
+      "start_seconds": 580.64,
+      "end_seconds": 584.43,
+      "id": "PGp4f-cvDSE-display-0122",
+      "segment_id": "PGp4f-cvDSE-ja-0070"
+    },
+    {
+      "text": "例えば、新しい町の名前ね",
+      "start_seconds": 584.43,
+      "end_seconds": 588.3499999999999,
+      "id": "PGp4f-cvDSE-display-0123",
+      "segment_id": "PGp4f-cvDSE-ja-0071"
+    },
+    {
+      "text": "今まで聞いたことがない町の名前とか",
+      "start_seconds": 588.35,
+      "end_seconds": 592.19,
+      "id": "PGp4f-cvDSE-display-0124",
+      "segment_id": "PGp4f-cvDSE-ja-0071"
+    },
+    {
+      "text": "イタリアのデザートの名前とか、本当に覚えるまでに",
+      "start_seconds": 592.19,
+      "end_seconds": 596.97,
+      "id": "PGp4f-cvDSE-display-0125",
+      "segment_id": "PGp4f-cvDSE-ja-0072"
+    },
+    {
+      "text": "何回も何回も、その言葉を聞いて使ったりしないとダメ",
+      "start_seconds": 596.97,
+      "end_seconds": 603.39,
+      "id": "PGp4f-cvDSE-display-0126",
+      "segment_id": "PGp4f-cvDSE-ja-0072"
+    },
+    {
+      "text": "あと、その言葉のスペル、アルファベットを見ないと",
+      "start_seconds": 603.39,
+      "end_seconds": 608.39,
+      "id": "PGp4f-cvDSE-display-0127",
+      "segment_id": "PGp4f-cvDSE-ja-0073"
+    },
+    {
+      "text": "よくわかんないって感じる",
+      "start_seconds": 608.39,
+      "end_seconds": 611.58,
+      "id": "PGp4f-cvDSE-display-0128",
+      "segment_id": "PGp4f-cvDSE-ja-0073"
+    },
+    {
+      "text": "だから、日本語だったら一回で覚えられることが",
+      "start_seconds": 611.58,
+      "end_seconds": 616.65,
+      "id": "PGp4f-cvDSE-display-0129",
+      "segment_id": "PGp4f-cvDSE-ja-0074"
+    },
+    {
+      "text": "英語だったら覚えられない",
+      "start_seconds": 616.65,
+      "end_seconds": 619.43,
+      "id": "PGp4f-cvDSE-display-0130",
+      "segment_id": "PGp4f-cvDSE-ja-0074"
+    },
+    {
+      "text": "これはね、ちょっと不安ですね",
+      "start_seconds": 619.43,
+      "end_seconds": 621.3399999999999,
+      "id": "PGp4f-cvDSE-display-0131",
+      "segment_id": "PGp4f-cvDSE-ja-0074"
+    },
+    {
+      "text": "だって、将来英語で仕事するときに、ずっと覚えれなかったら",
+      "start_seconds": 621.34,
+      "end_seconds": 625.96,
+      "id": "PGp4f-cvDSE-display-0132",
+      "segment_id": "PGp4f-cvDSE-ja-0075"
+    },
+    {
+      "text": "どうしようって思ったりするんですよね",
+      "start_seconds": 625.96,
+      "end_seconds": 629.92,
+      "id": "PGp4f-cvDSE-display-0133",
+      "segment_id": "PGp4f-cvDSE-ja-0075"
+    },
+    {
+      "text": "みなさんは、こういう不安なこと",
+      "start_seconds": 629.92,
+      "end_seconds": 635.03,
+      "id": "PGp4f-cvDSE-display-0134",
+      "segment_id": "PGp4f-cvDSE-ja-0076"
+    },
+    {
+      "text": "こういうふうに感じたことってありませんか？",
+      "start_seconds": 635.03,
+      "end_seconds": 639.76,
+      "id": "PGp4f-cvDSE-display-0135",
+      "segment_id": "PGp4f-cvDSE-ja-0076"
+    },
+    {
+      "text": "みなさんの多くは、バイリンガルとか、バイリンガル以上",
+      "start_seconds": 639.76,
+      "end_seconds": 645.0,
+      "id": "PGp4f-cvDSE-display-0136",
+      "segment_id": "PGp4f-cvDSE-ja-0077"
+    },
+    {
+      "text": "3つ、4つの言葉を話せるような人が多いと思うんですね",
+      "start_seconds": 645.0,
+      "end_seconds": 650.54,
+      "id": "PGp4f-cvDSE-display-0137",
+      "segment_id": "PGp4f-cvDSE-ja-0077"
+    },
+    {
+      "text": "私、聞いたことがあるのは、そのバイリンガルとか",
+      "start_seconds": 650.54,
+      "end_seconds": 654.5699999999999,
+      "id": "PGp4f-cvDSE-display-0138",
+      "segment_id": "PGp4f-cvDSE-ja-0078"
+    },
+    {
+      "text": "いろんな言語を話す人って、けっこうね",
+      "start_seconds": 654.57,
+      "end_seconds": 658.96,
+      "id": "PGp4f-cvDSE-display-0139",
+      "segment_id": "PGp4f-cvDSE-ja-0078"
+    },
+    {
+      "text": "「あれ?言葉が出てこない」っていうことが",
+      "start_seconds": 658.96,
+      "end_seconds": 662.51,
+      "id": "PGp4f-cvDSE-display-0140",
+      "segment_id": "PGp4f-cvDSE-ja-0078"
+    },
+    {
+      "text": "普通の人より多いらしいんですよ",
+      "start_seconds": 662.51,
+      "end_seconds": 665.71,
+      "id": "PGp4f-cvDSE-display-0141",
+      "segment_id": "PGp4f-cvDSE-ja-0079"
+    },
+    {
+      "text": "みなさん、そういう経験あります?",
+      "start_seconds": 665.71,
+      "end_seconds": 668.94,
+      "id": "PGp4f-cvDSE-display-0142",
+      "segment_id": "PGp4f-cvDSE-ja-0079"
+    },
+    {
+      "text": "私も日本語でね、会話レッスンする人がいて",
+      "start_seconds": 668.94,
+      "end_seconds": 674.62,
+      "id": "PGp4f-cvDSE-display-0143",
+      "segment_id": "PGp4f-cvDSE-ja-0080"
+    },
+    {
+      "text": "その人は、英語と日本語のバイリンガルなんですけど",
+      "start_seconds": 674.62,
+      "end_seconds": 678.4,
+      "id": "PGp4f-cvDSE-display-0144",
+      "segment_id": "PGp4f-cvDSE-ja-0080"
+    },
+    {
+      "text": "けっこうね、「あれあれ、あれが出てこない！」って言って",
+      "start_seconds": 678.4,
+      "end_seconds": 682.64,
+      "id": "PGp4f-cvDSE-display-0145",
+      "segment_id": "PGp4f-cvDSE-ja-0081"
+    },
+    {
+      "text": "すごく簡単な言葉が出てこないこととか、けっこうあるんですね",
+      "start_seconds": 682.64,
+      "end_seconds": 689.13,
+      "id": "PGp4f-cvDSE-display-0146",
+      "segment_id": "PGp4f-cvDSE-ja-0081"
+    },
+    {
+      "text": "もちろん、それはまあ悪いことじゃなくて",
+      "start_seconds": 689.13,
+      "end_seconds": 691.3,
+      "id": "PGp4f-cvDSE-display-0147",
+      "segment_id": "PGp4f-cvDSE-ja-0082"
+    },
+    {
+      "text": "やっぱり、バイリンガルとか多くの言語を話す人って",
+      "start_seconds": 691.3,
+      "end_seconds": 696.4499999999999,
+      "id": "PGp4f-cvDSE-display-0148",
+      "segment_id": "PGp4f-cvDSE-ja-0082"
+    },
+    {
+      "text": "その脳みそが、それだけ話すときに",
+      "start_seconds": 696.45,
+      "end_seconds": 700.43,
+      "id": "PGp4f-cvDSE-display-0149",
+      "segment_id": "PGp4f-cvDSE-ja-0082"
+    },
+    {
+      "text": "いっぱい働いてるんだと思う",
+      "start_seconds": 700.43,
+      "end_seconds": 703.38,
+      "id": "PGp4f-cvDSE-display-0150",
+      "segment_id": "PGp4f-cvDSE-ja-0083"
+    },
+    {
+      "text": "あと、例えば日本語の「冷蔵庫（れいぞうこ）」って言葉が出てこないとかね",
+      "start_seconds": 703.38,
+      "end_seconds": 709.93,
+      "id": "PGp4f-cvDSE-display-0151",
+      "segment_id": "PGp4f-cvDSE-ja-0083"
+    },
+    {
+      "text": "そういう時は多分、英語で「冷蔵庫」って",
+      "start_seconds": 709.93,
+      "end_seconds": 716.4499999999999,
+      "id": "PGp4f-cvDSE-display-0152",
+      "segment_id": "PGp4f-cvDSE-ja-0084"
+    },
+    {
+      "text": "めちゃくちゃ何回も言ってるんだけど",
+      "start_seconds": 716.45,
+      "end_seconds": 719.81,
+      "id": "PGp4f-cvDSE-display-0153",
+      "segment_id": "PGp4f-cvDSE-ja-0084"
+    },
+    {
+      "text": "最近、日本語で「冷蔵庫」って言ってない",
+      "start_seconds": 719.81,
+      "end_seconds": 723.1099999999999,
+      "id": "PGp4f-cvDSE-display-0154",
+      "segment_id": "PGp4f-cvDSE-ja-0085"
+    },
+    {
+      "text": "そういう時は、なんか日本語の「冷蔵庫」って言葉が",
+      "start_seconds": 723.11,
+      "end_seconds": 728.68,
+      "id": "PGp4f-cvDSE-display-0155",
+      "segment_id": "PGp4f-cvDSE-ja-0085"
+    },
+    {
+      "text": "頭にしばらく出てこない、っていうことが起こるらしいです",
+      "start_seconds": 728.68,
+      "end_seconds": 736.01,
+      "id": "PGp4f-cvDSE-display-0156",
+      "segment_id": "PGp4f-cvDSE-ja-0086"
+    },
+    {
+      "text": "私はね、まだ自分をバイリンガルと思ってないんだけど",
+      "start_seconds": 736.01,
+      "end_seconds": 740.0,
+      "id": "PGp4f-cvDSE-display-0157",
+      "segment_id": "PGp4f-cvDSE-ja-0086"
+    },
+    {
+      "text": "私も正直、そういうことはよくあります",
+      "start_seconds": 740.0,
+      "end_seconds": 744.16,
+      "id": "PGp4f-cvDSE-display-0158",
+      "segment_id": "PGp4f-cvDSE-ja-0087"
+    },
+    {
+      "text": "まあみんなあるよね！",
+      "start_seconds": 744.16,
+      "end_seconds": 745.0899999999999,
+      "id": "PGp4f-cvDSE-display-0159",
+      "segment_id": "PGp4f-cvDSE-ja-0087"
+    },
+    {
+      "text": "あと、みなさんに私が聞いてみたいことは",
+      "start_seconds": 745.09,
+      "end_seconds": 749.06,
+      "id": "PGp4f-cvDSE-display-0160",
+      "segment_id": "PGp4f-cvDSE-ja-0088"
+    },
+    {
+      "text": "日本語の方が話しやすいトピックってありますか？",
+      "start_seconds": 749.06,
+      "end_seconds": 754.53,
+      "id": "PGp4f-cvDSE-display-0161",
+      "segment_id": "PGp4f-cvDSE-ja-0088"
+    },
+    {
+      "text": "自分の言語だったら",
+      "start_seconds": 754.53,
+      "end_seconds": 756.14,
+      "id": "PGp4f-cvDSE-display-0162",
+      "segment_id": "PGp4f-cvDSE-ja-0089"
+    },
+    {
+      "text": "例えば、このトピックについては言いにくいんだけど",
+      "start_seconds": 756.14,
+      "end_seconds": 761.93,
+      "id": "PGp4f-cvDSE-display-0163",
+      "segment_id": "PGp4f-cvDSE-ja-0089"
+    },
+    {
+      "text": "日本語の方が言いやすいとか",
+      "start_seconds": 761.93,
+      "end_seconds": 765.79,
+      "id": "PGp4f-cvDSE-display-0164",
+      "segment_id": "PGp4f-cvDSE-ja-0089"
+    },
+    {
+      "text": "例えば、日本語の方がもっと友達にフレンドリーに話せるとかね",
+      "start_seconds": 765.79,
+      "end_seconds": 772.29,
+      "id": "PGp4f-cvDSE-display-0165",
+      "segment_id": "PGp4f-cvDSE-ja-0090"
+    },
+    {
+      "text": "ないですかね？",
+      "start_seconds": 772.29,
+      "end_seconds": 774.53,
+      "id": "PGp4f-cvDSE-display-0166",
+      "segment_id": "PGp4f-cvDSE-ja-0090"
+    },
+    {
+      "text": "私はね、英語の方が話しやすいトピックがあって",
+      "start_seconds": 774.53,
+      "end_seconds": 779.2099999999999,
+      "id": "PGp4f-cvDSE-display-0167",
+      "segment_id": "PGp4f-cvDSE-ja-0091"
+    },
+    {
+      "text": "英語で、ちょっと体のさ、恥ずかしい話とか",
+      "start_seconds": 779.21,
+      "end_seconds": 785.83,
+      "id": "PGp4f-cvDSE-display-0168",
+      "segment_id": "PGp4f-cvDSE-ja-0091"
+    },
+    {
+      "text": "そういうのは英語の方が言いやすい",
+      "start_seconds": 785.83,
+      "end_seconds": 789.55,
+      "id": "PGp4f-cvDSE-display-0169",
+      "segment_id": "PGp4f-cvDSE-ja-0092"
+    },
+    {
+      "text": "理由は多分、英語の文化の方が、そういうことを日本よりね",
+      "start_seconds": 789.55,
+      "end_seconds": 796.3599999999999,
+      "id": "PGp4f-cvDSE-display-0170",
+      "segment_id": "PGp4f-cvDSE-ja-0092"
+    },
+    {
+      "text": "みんなオープンに話すっていうのもあるし",
+      "start_seconds": 796.36,
+      "end_seconds": 799.43,
+      "id": "PGp4f-cvDSE-display-0171",
+      "segment_id": "PGp4f-cvDSE-ja-0093"
+    },
+    {
+      "text": "あと、英語のそういう言葉って、私にとっては新しい言葉だから",
+      "start_seconds": 799.43,
+      "end_seconds": 806.31,
+      "id": "PGp4f-cvDSE-display-0172",
+      "segment_id": "PGp4f-cvDSE-ja-0093"
+    },
+    {
+      "text": "あんまり、その言葉が、自分の体とか性的なことに",
+      "start_seconds": 806.31,
+      "end_seconds": 813.16,
+      "id": "PGp4f-cvDSE-display-0173",
+      "segment_id": "PGp4f-cvDSE-ja-0094"
+    },
+    {
+      "text": "あんまりね、結びついてないんだよね",
+      "start_seconds": 813.16,
+      "end_seconds": 816.78,
+      "id": "PGp4f-cvDSE-display-0174",
+      "segment_id": "PGp4f-cvDSE-ja-0094"
+    },
+    {
+      "text": "だから、そういうきたない言葉、恥ずかしい言葉を",
+      "start_seconds": 816.78,
+      "end_seconds": 820.6999999999999,
+      "id": "PGp4f-cvDSE-display-0175",
+      "segment_id": "PGp4f-cvDSE-ja-0095"
+    },
+    {
+      "text": "英語で言っても、あんまり何も感じないです",
+      "start_seconds": 820.7,
+      "end_seconds": 825.22,
+      "id": "PGp4f-cvDSE-display-0176",
+      "segment_id": "PGp4f-cvDSE-ja-0095"
+    },
+    {
+      "text": "あともちろん、「愛してる」とかね",
+      "start_seconds": 825.22,
+      "end_seconds": 827.96,
+      "id": "PGp4f-cvDSE-display-0177",
+      "segment_id": "PGp4f-cvDSE-ja-0095"
+    },
+    {
+      "text": "そういう愛情表現は、英語での方がやりやすい",
+      "start_seconds": 827.96,
+      "end_seconds": 834.18,
+      "id": "PGp4f-cvDSE-display-0178",
+      "segment_id": "PGp4f-cvDSE-ja-0096"
+    },
+    {
+      "text": "これも多分ね、英語の方がもっと愛情を表す文化があるし",
+      "start_seconds": 834.18,
+      "end_seconds": 839.9899999999999,
+      "id": "PGp4f-cvDSE-display-0179",
+      "segment_id": "PGp4f-cvDSE-ja-0097"
+    },
+    {
+      "text": "だからだと思います",
+      "start_seconds": 839.99,
+      "end_seconds": 842.2,
+      "id": "PGp4f-cvDSE-display-0180",
+      "segment_id": "PGp4f-cvDSE-ja-0097"
+    },
+    {
+      "text": "なので、こんな感じで、私たちの頭の中で起こっていることって",
+      "start_seconds": 842.2,
+      "end_seconds": 848.83,
+      "id": "PGp4f-cvDSE-display-0181",
+      "segment_id": "PGp4f-cvDSE-ja-0098"
+    },
+    {
+      "text": "人それぞれ全然違う",
+      "start_seconds": 848.83,
+      "end_seconds": 851.77,
+      "id": "PGp4f-cvDSE-display-0182",
+      "segment_id": "PGp4f-cvDSE-ja-0098"
+    },
+    {
+      "text": "だから、言語の学び方も、本当に人それぞれ",
+      "start_seconds": 851.77,
+      "end_seconds": 856.46,
+      "id": "PGp4f-cvDSE-display-0183",
+      "segment_id": "PGp4f-cvDSE-ja-0099"
+    },
+    {
+      "text": "全然違ってていいんじゃないかなって思いました",
+      "start_seconds": 856.46,
+      "end_seconds": 860.45,
+      "id": "PGp4f-cvDSE-display-0184",
+      "segment_id": "PGp4f-cvDSE-ja-0099"
+    },
+    {
+      "text": "まあもちろん、その言語の勉強にしっかり時間を使うこと",
+      "start_seconds": 860.45,
+      "end_seconds": 866.68,
+      "id": "PGp4f-cvDSE-display-0185",
+      "segment_id": "PGp4f-cvDSE-ja-0100"
+    },
+    {
+      "text": "筋トレのように、毎日毎日続けること",
+      "start_seconds": 866.68,
+      "end_seconds": 871.29,
+      "id": "PGp4f-cvDSE-display-0186",
+      "segment_id": "PGp4f-cvDSE-ja-0100"
+    },
+    {
+      "text": "それは、誰にとってもすごく大切だと思う",
+      "start_seconds": 871.29,
+      "end_seconds": 875.65,
+      "id": "PGp4f-cvDSE-display-0187",
+      "segment_id": "PGp4f-cvDSE-ja-0101"
+    },
+    {
+      "text": "だけどたった一つの、かしこい勉強方法とかはない",
+      "start_seconds": 875.65,
+      "end_seconds": 882.11,
+      "id": "PGp4f-cvDSE-display-0188",
+      "segment_id": "PGp4f-cvDSE-ja-0101"
+    },
+    {
+      "text": "と思うんですね",
+      "start_seconds": 882.11,
+      "end_seconds": 884.19,
+      "id": "PGp4f-cvDSE-display-0189",
+      "segment_id": "PGp4f-cvDSE-ja-0102"
+    },
+    {
+      "text": "だって、人の頭の中で起こってることって違うからね",
+      "start_seconds": 884.19,
+      "end_seconds": 889.4,
+      "id": "PGp4f-cvDSE-display-0190",
+      "segment_id": "PGp4f-cvDSE-ja-0102"
+    },
+    {
+      "text": "だから、学び方もけっこう人それぞれでいいんだな",
+      "start_seconds": 889.4,
+      "end_seconds": 893.2099999999999,
+      "id": "PGp4f-cvDSE-display-0191",
+      "segment_id": "PGp4f-cvDSE-ja-0102"
+    },
+    {
+      "text": "っていうふうに思う",
+      "start_seconds": 893.21,
+      "end_seconds": 895.02,
+      "id": "PGp4f-cvDSE-display-0192",
+      "segment_id": "PGp4f-cvDSE-ja-0103"
+    },
+    {
+      "text": "例えば、私の妹ってすごく論理的（ろんりてき）だし",
+      "start_seconds": 895.02,
+      "end_seconds": 901.85,
+      "id": "PGp4f-cvDSE-display-0193",
+      "segment_id": "PGp4f-cvDSE-ja-0103"
+    },
+    {
+      "text": "英語の単語を学ぶときに",
+      "start_seconds": 901.85,
+      "end_seconds": 904.38,
+      "id": "PGp4f-cvDSE-display-0194",
+      "segment_id": "PGp4f-cvDSE-ja-0103"
+    },
+    {
+      "text": "その英語の言葉の概念（がいねん）、意味をしっかり理解しないと",
+      "start_seconds": 904.38,
+      "end_seconds": 911.64,
+      "id": "PGp4f-cvDSE-display-0195",
+      "segment_id": "PGp4f-cvDSE-ja-0104"
+    },
+    {
+      "text": "何か納得（なっとく）しないタイプなんですね",
+      "start_seconds": 911.64,
+      "end_seconds": 914.84,
+      "id": "PGp4f-cvDSE-display-0196",
+      "segment_id": "PGp4f-cvDSE-ja-0104"
+    },
+    {
+      "text": "だから、私の妹は、英語の教科書とか単語帳（たんごちょう）がすごく好きで",
+      "start_seconds": 914.84,
+      "end_seconds": 921.94,
+      "id": "PGp4f-cvDSE-display-0197",
+      "segment_id": "PGp4f-cvDSE-ja-0105"
+    },
+    {
+      "text": "英語の本を読むのも好きだそうです",
+      "start_seconds": 921.94,
+      "end_seconds": 925.66,
+      "id": "PGp4f-cvDSE-display-0198",
+      "segment_id": "PGp4f-cvDSE-ja-0105"
+    },
+    {
+      "text": "だけど、英語の会話のポッドキャストとかは",
+      "start_seconds": 925.66,
+      "end_seconds": 929.3,
+      "id": "PGp4f-cvDSE-display-0199",
+      "segment_id": "PGp4f-cvDSE-ja-0106"
+    },
+    {
+      "text": "そんなに面白いって思わないらしいです",
+      "start_seconds": 929.3,
+      "end_seconds": 933.1999999999999,
+      "id": "PGp4f-cvDSE-display-0200",
+      "segment_id": "PGp4f-cvDSE-ja-0106"
+    },
+    {
+      "text": "私は逆に、英語の会話のポッドキャスト大好きなんですね",
+      "start_seconds": 933.2,
+      "end_seconds": 940.11,
+      "id": "PGp4f-cvDSE-display-0201",
+      "segment_id": "PGp4f-cvDSE-ja-0107"
+    },
+    {
+      "text": "あと、最近私が出会ったフィリピンの女性は",
+      "start_seconds": 940.11,
+      "end_seconds": 944.97,
+      "id": "PGp4f-cvDSE-display-0202",
+      "segment_id": "PGp4f-cvDSE-ja-0107"
+    },
+    {
+      "text": "英語を学ぶときに教科書を使わないで勉強したって言ってました",
+      "start_seconds": 944.97,
+      "end_seconds": 951.35,
+      "id": "PGp4f-cvDSE-display-0203",
+      "segment_id": "PGp4f-cvDSE-ja-0108"
+    },
+    {
+      "text": "私はそんなの絶対無理、って思うんです",
+      "start_seconds": 951.35,
+      "end_seconds": 956.37,
+      "id": "PGp4f-cvDSE-display-0204",
+      "segment_id": "PGp4f-cvDSE-ja-0108"
+    },
+    {
+      "text": "だけど、彼女は英語を学ぶときね、周りの人と英語を話したり",
+      "start_seconds": 956.37,
+      "end_seconds": 964.14,
+      "id": "PGp4f-cvDSE-display-0205",
+      "segment_id": "PGp4f-cvDSE-ja-0109"
+    },
+    {
+      "text": "その周りの人が英語を話しているのを見て",
+      "start_seconds": 964.14,
+      "end_seconds": 966.9,
+      "id": "PGp4f-cvDSE-display-0206",
+      "segment_id": "PGp4f-cvDSE-ja-0109"
+    },
+    {
+      "text": "例えば\"Hello\"って言った後に\"Hi, how are you?\"って",
+      "start_seconds": 966.9,
+      "end_seconds": 971.35,
+      "id": "PGp4f-cvDSE-display-0207",
+      "segment_id": "PGp4f-cvDSE-ja-0110"
+    },
+    {
+      "text": "「こういう返事の仕方するんだ！」っていうふうに覚えて",
+      "start_seconds": 971.35,
+      "end_seconds": 976.47,
+      "id": "PGp4f-cvDSE-display-0208",
+      "segment_id": "PGp4f-cvDSE-ja-0110"
+    },
+    {
+      "text": "それを自分が、実際に使いながら勉強していくそうです",
+      "start_seconds": 976.47,
+      "end_seconds": 982.93,
+      "id": "PGp4f-cvDSE-display-0209",
+      "segment_id": "PGp4f-cvDSE-ja-0111"
+    },
+    {
+      "text": "私はね、それ無理だと思う",
+      "start_seconds": 982.93,
+      "end_seconds": 985.31,
+      "id": "PGp4f-cvDSE-display-0210",
+      "segment_id": "PGp4f-cvDSE-ja-0111"
+    },
+    {
+      "text": "私だったら、まず教科書を使って、簡単な文法や単語の意味を",
+      "start_seconds": 985.31,
+      "end_seconds": 994.16,
+      "id": "PGp4f-cvDSE-display-0211",
+      "segment_id": "PGp4f-cvDSE-ja-0112"
+    },
+    {
+      "text": "最低限（さいていげん）調べて、覚えてからやると思います",
+      "start_seconds": 994.16,
+      "end_seconds": 1000.8199999999999,
+      "id": "PGp4f-cvDSE-display-0212",
+      "segment_id": "PGp4f-cvDSE-ja-0113"
+    },
+    {
+      "text": "だから、本当に人によって学び方は違うし",
+      "start_seconds": 1000.82,
+      "end_seconds": 1005.09,
+      "id": "PGp4f-cvDSE-display-0213",
+      "segment_id": "PGp4f-cvDSE-ja-0113"
+    },
+    {
+      "text": "あと、日本語を話してても、その人がね、日本語ペラペラでも",
+      "start_seconds": 1005.09,
+      "end_seconds": 1010.88,
+      "id": "PGp4f-cvDSE-display-0214",
+      "segment_id": "PGp4f-cvDSE-ja-0114"
+    },
+    {
+      "text": "考えているときは、日本語で考えてないかもしれないですよね",
+      "start_seconds": 1010.88,
+      "end_seconds": 1016.28,
+      "id": "PGp4f-cvDSE-display-0215",
+      "segment_id": "PGp4f-cvDSE-ja-0114"
+    },
+    {
+      "text": "私はここ数年、ずっと英語の勉強頑張ってるんですけど",
+      "start_seconds": 1016.28,
+      "end_seconds": 1022.36,
+      "id": "PGp4f-cvDSE-display-0216",
+      "segment_id": "PGp4f-cvDSE-ja-0115"
+    },
+    {
+      "text": "自分一人で何か考えているときに",
+      "start_seconds": 1022.36,
+      "end_seconds": 1025.37,
+      "id": "PGp4f-cvDSE-display-0217",
+      "segment_id": "PGp4f-cvDSE-ja-0115"
+    },
+    {
+      "text": "英語で考えてるってことがないんですね",
+      "start_seconds": 1025.37,
+      "end_seconds": 1029.2399999999998,
+      "id": "PGp4f-cvDSE-display-0218",
+      "segment_id": "PGp4f-cvDSE-ja-0116"
+    },
+    {
+      "text": "だから、ちょっとショックに感じました",
+      "start_seconds": 1029.24,
+      "end_seconds": 1032.38,
+      "id": "PGp4f-cvDSE-display-0219",
+      "segment_id": "PGp4f-cvDSE-ja-0116"
+    },
+    {
+      "text": "自分はいつまでたっても英語で考え始めないなと思って",
+      "start_seconds": 1032.38,
+      "end_seconds": 1038.75,
+      "id": "PGp4f-cvDSE-display-0220",
+      "segment_id": "PGp4f-cvDSE-ja-0117"
+    },
+    {
+      "text": "だけど、よくよく考えたら、普段ね",
+      "start_seconds": 1038.75,
+      "end_seconds": 1043.07,
+      "id": "PGp4f-cvDSE-display-0221",
+      "segment_id": "PGp4f-cvDSE-ja-0117"
+    },
+    {
+      "text": "英語で考えてなくても、英語がペラペラな人もいるはずだし",
+      "start_seconds": 1043.07,
+      "end_seconds": 1048.8899999999999,
+      "id": "PGp4f-cvDSE-display-0222",
+      "segment_id": "PGp4f-cvDSE-ja-0118"
+    },
+    {
+      "text": "あと考えるときって、言語使わないで考えていること",
+      "start_seconds": 1048.89,
+      "end_seconds": 1053.88,
+      "id": "PGp4f-cvDSE-display-0223",
+      "segment_id": "PGp4f-cvDSE-ja-0118"
+    },
+    {
+      "text": "多いんですよね",
+      "start_seconds": 1053.88,
+      "end_seconds": 1056.19,
+      "id": "PGp4f-cvDSE-display-0224",
+      "segment_id": "PGp4f-cvDSE-ja-0119"
+    },
+    {
+      "text": "なので、もしね、みなさんも私みたいな悩みがあったら",
+      "start_seconds": 1056.19,
+      "end_seconds": 1060.7,
+      "id": "PGp4f-cvDSE-display-0225",
+      "segment_id": "PGp4f-cvDSE-ja-0119"
+    },
+    {
+      "text": "いや別に大丈夫だよっていうのをね、言いたくって",
+      "start_seconds": 1060.7,
+      "end_seconds": 1064.2,
+      "id": "PGp4f-cvDSE-display-0226",
+      "segment_id": "PGp4f-cvDSE-ja-0119"
+    },
+    {
+      "text": "今回のエピソードを作ったんですね",
+      "start_seconds": 1064.2,
+      "end_seconds": 1067.87,
+      "id": "PGp4f-cvDSE-display-0227",
+      "segment_id": "PGp4f-cvDSE-ja-0120"
+    },
+    {
+      "text": "なので、最後まできいてくれて、本当にありがとうございます！",
+      "start_seconds": 1067.87,
+      "end_seconds": 1072.3999999999999,
+      "id": "PGp4f-cvDSE-display-0228",
+      "segment_id": "PGp4f-cvDSE-ja-0120"
+    },
+    {
+      "text": "よかったら、みなさんの意見も教えてほしいし",
+      "start_seconds": 1072.4,
+      "end_seconds": 1075.95,
+      "id": "PGp4f-cvDSE-display-0229",
+      "segment_id": "PGp4f-cvDSE-ja-0121"
+    },
+    {
+      "text": "もしみなさんがバイリンガルとか",
+      "start_seconds": 1075.95,
+      "end_seconds": 1079.39,
+      "id": "PGp4f-cvDSE-display-0230",
+      "segment_id": "PGp4f-cvDSE-ja-0121"
+    },
+    {
+      "text": "たくさんの言語を話す人だったら",
+      "start_seconds": 1079.39,
+      "end_seconds": 1082.71,
+      "id": "PGp4f-cvDSE-display-0231",
+      "segment_id": "PGp4f-cvDSE-ja-0121"
+    },
+    {
+      "text": "自分の頭の中がどうなっているのか",
+      "start_seconds": 1082.71,
+      "end_seconds": 1086.01,
+      "id": "PGp4f-cvDSE-display-0232",
+      "segment_id": "PGp4f-cvDSE-ja-0122"
+    },
+    {
+      "text": "よかったらコメントとかで教えてほしいです",
+      "start_seconds": 1086.01,
+      "end_seconds": 1089.26,
+      "id": "PGp4f-cvDSE-display-0233",
+      "segment_id": "PGp4f-cvDSE-ja-0122"
+    },
+    {
+      "text": "すごい気になってます！",
+      "start_seconds": 1089.26,
+      "end_seconds": 1090.94,
+      "id": "PGp4f-cvDSE-display-0234",
+      "segment_id": "PGp4f-cvDSE-ja-0122"
+    },
+    {
+      "text": "よろしくお願いします",
+      "start_seconds": 1090.94,
+      "end_seconds": 1093.53,
+      "id": "PGp4f-cvDSE-display-0235",
+      "segment_id": "PGp4f-cvDSE-ja-0123"
+    },
+    {
+      "text": "ということで、今回のエピソードはここまで",
+      "start_seconds": 1093.53,
+      "end_seconds": 1097.11,
+      "id": "PGp4f-cvDSE-display-0236",
+      "segment_id": "PGp4f-cvDSE-ja-0123"
+    },
+    {
+      "text": "もしこのポッドキャスト、サポートしたかったら",
+      "start_seconds": 1097.11,
+      "end_seconds": 1100.26,
+      "id": "PGp4f-cvDSE-display-0237",
+      "segment_id": "PGp4f-cvDSE-ja-0123"
+    },
+    {
+      "text": "メンバーシップのPatreonに入ってくれるとうれしいです😊",
+      "start_seconds": 1100.26,
+      "end_seconds": 1103.96,
+      "id": "PGp4f-cvDSE-display-0238",
+      "segment_id": "PGp4f-cvDSE-ja-0124"
+    },
+    {
+      "text": "よろしくお願いします！",
+      "start_seconds": 1103.96,
+      "end_seconds": 1106.07,
+      "id": "PGp4f-cvDSE-display-0239",
+      "segment_id": "PGp4f-cvDSE-ja-0124"
+    },
+    {
+      "text": "それでは、みなさんおつかれさまでした！",
+      "start_seconds": 1106.07,
+      "end_seconds": 1108.47,
+      "id": "PGp4f-cvDSE-display-0240",
+      "segment_id": "PGp4f-cvDSE-ja-0125"
+    },
+    {
+      "text": "また次のエピソードもきいてください",
+      "start_seconds": 1108.47,
+      "end_seconds": 1112.57,
+      "id": "PGp4f-cvDSE-display-0241",
+      "segment_id": "PGp4f-cvDSE-ja-0126"
+    },
+    {
+      "text": "またね！バイバイ",
+      "start_seconds": 1112.57,
+      "end_seconds": 1114.81,
+      "id": "PGp4f-cvDSE-display-0242",
+      "segment_id": "PGp4f-cvDSE-ja-0126"
+    }
+  ],
+  "source_playlist": "PLQcOOIxIw8dIZFPPnHzSBoCFXVPqBhYjP"
+}
