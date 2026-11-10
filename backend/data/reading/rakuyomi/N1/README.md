@@ -1,3 +1,5 @@
+> Các file CSV/JSON nguồn đã chuyển hết sang nhánh `archive/learning-data-2026-11-10`. Thư mục này chỉ giữ tài liệu; cần khôi phục nguồn trước khi chạy các lệnh nhập bên dưới.
+
 # Rakuyomi N1 — snapshot ngày 06/11/2026
 
 > JSON và báo cáo của snapshot dưới đây đã chuyển sang nhánh `archive/learning-data-2026-11-10`. CSV vẫn ở đây để nhập; xem [khôi phục dữ liệu](../../../ARCHIVE.md).

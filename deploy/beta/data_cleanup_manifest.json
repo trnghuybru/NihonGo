@@ -306,6 +306,21 @@
       "path": "backend/data/vocabulary/jtest-n5.partial.json",
       "bytes": 396723,
       "sha256": "3f12b8e2fb8f28faa62d4cb19a6fa4f8c72aeeb5d191ef06a2719ee500149b37"
+    },
+    {
+      "path": "backend/data/reading/rakuyomi/N1/N1.csv",
+      "bytes": 1598142,
+      "sha256": "b61a5be37f81e3b5d432de61521c10c581165fd4bb7abe2ddb86792e4a2d0fe8"
+    },
+    {
+      "path": "backend/data/reading/rakuyomi/N2/N2.csv",
+      "bytes": 1004768,
+      "sha256": "ac14b63cedc14f1badfee09173c7f7573e76a433cda25647c09bc473b3073ace"
+    },
+    {
+      "path": "backend/data/reading/rakuyomi/N3/N3.csv",
+      "bytes": 750284,
+      "sha256": "c787a2aaffae53d9c0ae8999116dd3c506bbf400d4ff3f16d2163308f9fc8eff"
     }
   ]
 }

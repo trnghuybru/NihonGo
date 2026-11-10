@@ -4,11 +4,20 @@ Phạm vi hiện tại: UC-R1–UC-R5 (danh sách, lọc, mở bài, furigana, t
 
 ## Dữ liệu
 
-Kho đang dùng gồm ba bộ CSV trong `data/reading/rakuyomi/`: N3 có 209 bài/429 câu hỏi, N2 có 233 bài/443 câu hỏi và N1 có 261 bài/602 câu hỏi. Tổng 703 bài, 1474 câu hỏi hợp lệ, không có đáp án lệch lựa chọn. Bản JSON giữ định dạng và bảng biểu của nguồn được lưu ở nhánh `archive/learning-data-2026-11-10` (xem `data/ARCHIVE.md`). N2/N1 được nhập bổ sung, không xóa N3 hoặc lịch sử học mới.
+Kho đang dùng đã nhập trong database. Ba bộ CSV nguồn được lưu ở nhánh `archive/learning-data-2026-11-10`, không giữ ở local/staging: N3 có 209 bài/429 câu hỏi, N2 có 233 bài/443 câu hỏi và N1 có 261 bài/602 câu hỏi. Tổng 703 bài, 1474 câu hỏi hợp lệ, không có đáp án lệch lựa chọn. Bản JSON giữ định dạng và bảng biểu của nguồn được lưu ở nhánh `archive/learning-data-2026-11-10` (xem `data/ARCHIVE.md`). N2/N1 được nhập bổ sung, không xóa N3 hoặc lịch sử học mới.
 
-VPS/staging giữ đủ 703 bài. Database local đã rút gọn để kiểm thử: một bài cho mỗi dạng ở từng trình độ, tổng 15 bài (N3: 4, N2: 5, N1: 6). Ưu tiên giữ bài có lịch sử học/phân tích và bài có bảng; đã sao lưu toàn bộ kho local trước khi rút gọn. Các file nguồn đầy đủ vẫn giữ để phục hồi hoặc nạp lại khi cần.
+VPS/staging giữ đủ 703 bài. Database local đã rút gọn để kiểm thử: một bài cho mỗi dạng ở từng trình độ, tổng 15 bài (N3: 4, N2: 5, N1: 6). Ưu tiên giữ bài có lịch sử học/phân tích và bài có bảng; đã sao lưu toàn bộ kho local trước khi rút gọn. Các file nguồn đầy đủ giữ trên nhánh archive để phục hồi hoặc nạp lại khi cần.
 
 CSV cũ `data/reading/JLPT_Dokkai_N5-N1.csv` đã chuyển sang nhánh lưu trữ, không còn nằm trong thư mục làm việc: 368 dòng câu hỏi, nhóm thành 180 đoạn (N5: 46; N4: 45; N3: 23; N2: 12; N1: 54).
+
+Cần nhập lại thì khôi phục file nguồn trước (chạy từ thư mục gốc repo):
+
+```bash
+git fetch origin archive/learning-data-2026-11-10
+git restore --source=origin/archive/learning-data-2026-11-10 -- backend/data/reading
+```
+
+Sau đó chạy từ thư mục `backend`:
 
 ```bash
 venv/bin/flask --app app db upgrade

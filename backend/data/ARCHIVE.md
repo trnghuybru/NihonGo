@@ -9,14 +9,13 @@ lịch sử học, bản thu hay file bí mật.
 
 - Năm bộ từ vựng N1–N5: importer và test còn sử dụng.
 - `mimikara-n3.partial.json`: dữ liệu nền của script bổ sung N3 và test hồi quy.
-- Ba CSV Rakuyomi N1, N2, N3: nguồn nhập lại hiện hành.
 - `video_examples/cjtmDEG-B7U.ja.json`: nguồn mặc định của importer và test.
 - `games/castle-starter.json`: game đọc trực tiếp lúc chạy.
 - Các file hướng dẫn, tài liệu skill, prompt, migration và seed trong code.
 
 ## File chuyển sang nhánh lưu trữ
 
-61 file, 14.084.316 byte (khoảng 13,43 MiB): CSV đọc hiểu cũ, CSV ghép N2–N1,
+64 file, 17.437.510 byte: Toàn bộ CSV đọc hiểu, CSV ghép N2–N1,
 JSON nguồn/báo cáo Rakuyomi, bản crawl N5 dở dang, bản SRT trùng JSON và snapshot
 playlist video cũ. Danh sách, kích thước và SHA-256 nằm trong
 [`data_cleanup_manifest.json`](../../deploy/beta/data_cleanup_manifest.json).
