@@ -110,6 +110,6 @@ def initialize_bucket():
         if error.response["Error"]["Code"] not in {"404", "NoSuchBucket", "NotFound"}:
             raise click.ClickException("Không truy cập được bucket đã cấu hình.") from None
         region = os.getenv("AWS_DEFAULT_REGION", "us-east-1")
-        options = {} if region == "us-east-1" else {"CreateBucketConfiguration": {"LocationConstraint": region}}
+        options = {} if region in {"us-east-1", "auto"} else {"CreateBucketConfiguration": {"LocationConstraint": region}}
         connection.create_bucket(Bucket=name, **options)
     click.echo(f"Audio bucket ready: {name}")

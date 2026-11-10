@@ -33,3 +33,16 @@ Lệnh triển khai trên VPS kiểm tra thành phần gói, sao lưu PostgreSQL
 - Revision thành công: `/opt/momonihongo/deploy/beta/DEPLOYED_SHA`.
 - Kiểm tra dịch vụ: `cd /opt/momonihongo && docker compose --env-file backend/.env -f compose.beta.yaml ps`.
 - CI không thay thế việc sao bản backup ra ngoài VPS; `daily_backup.sh` vẫn chạy và bản sao Mac cần cập nhật định kỳ.
+
+## Kho bản thu
+
+`AUDIO_LOCAL_ROOT=/audio` dùng volume cũ; giá trị rỗng dùng bucket S3/R2 riêng tư.
+Compose giữ giá trị rỗng thay vì tự chuyển về local. `configure_r2.py` chỉ chuẩn bị
+key ẩn, chưa đổi kho. Trước khi chuyển, sao lưu và chạy
+`python -m speaking.storage_migration --copy` trong container backend với môi trường
+R2; chạy lại không có `--copy` để đối chiếu SHA-256. Công cụ không đổi database,
+không chuyển các phiên đã xoá và không xoá bản gốc. Sau khi xác minh mới để
+`AUDIO_LOCAL_ROOT=` rồi recreate backend và worker để nhận cấu hình mới.
+`backup_audio.sh` lấy âm thanh từ kho đang được chọn, bao gồm cả R2.
+Bucket cần CORS trong `r2-cors.json`; không bật public access. Các URL nghe/tải
+lên vẫn có chữ ký và thời hạn, quyền sở hữu vẫn kiểm tra trong app.

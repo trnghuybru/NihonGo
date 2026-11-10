@@ -10,9 +10,11 @@ if len(sys.argv) != 2 or sys.argv[1] not in {"on", "off"}:
 path = Path(__file__).resolve().parents[2] / "backend/.env"
 if not path.is_file():
     raise SystemExit("Missing backend/.env")
-updates = {"BETA_AUDIO_STORAGE_ENABLED": "true" if sys.argv[1] == "on" else "false",
-           "AUDIO_LOCAL_ROOT": "/audio"}
+updates = {"BETA_AUDIO_STORAGE_ENABLED": "true" if sys.argv[1] == "on" else "false"}
 lines = path.read_text().splitlines()
+# Keep the selected storage backend; toggling recording must not switch R2 to local.
+if not any(line.strip().startswith("AUDIO_LOCAL_ROOT=") for line in lines):
+    updates["AUDIO_LOCAL_ROOT"] = "/audio"
 seen = set()
 for index, line in enumerate(lines):
     if "=" not in line or line.lstrip().startswith("#"):

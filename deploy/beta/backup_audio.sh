@@ -13,7 +13,7 @@ temporary="${OUTPUT_PATH}.partial"
 trap 'rm -f "$temporary"' EXIT
 
 docker compose --env-file backend/.env -f compose.beta.yaml exec -T backend \
-  python -c 'import sys,tarfile; t=tarfile.open(fileobj=sys.stdout.buffer,mode="w|gz"); t.add("/audio",arcname="audio"); t.close()' \
+  python -m speaking.storage_backup \
   > "$temporary"
 tar -tzf "$temporary" > /dev/null
 mv "$temporary" "$OUTPUT_PATH"

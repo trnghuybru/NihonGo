@@ -70,8 +70,16 @@ def main(path: Path) -> int:
     audio = values.get("BETA_AUDIO_STORAGE_ENABLED", "false")
     if audio not in {"false", "true"}:
         errors.append("BETA_AUDIO_STORAGE_ENABLED must be true or false")
-    if audio == "true" and values.get("AUDIO_LOCAL_ROOT") != "/audio":
-        errors.append("Beta audio storage needs AUDIO_LOCAL_ROOT=/audio")
+    if audio == "true":
+        local_root = values.get("AUDIO_LOCAL_ROOT", "/audio").strip()
+        if local_root and local_root != "/audio":
+            errors.append("Local beta audio storage needs AUDIO_LOCAL_ROOT=/audio")
+        if not local_root:
+            for key in ("S3_BUCKET", "S3_ENDPOINT_URL", "AWS_ACCESS_KEY_ID", "AWS_SECRET_ACCESS_KEY"):
+                required(key)
+            endpoint = values.get("S3_ENDPOINT_URL", "")
+            if not endpoint.startswith("https://"):
+                errors.append("Remote beta audio storage needs an HTTPS S3 endpoint")
     games = values.get("BETA_GAMES_ENABLED", "false")
     if games not in {"false", "true"}:
         errors.append("BETA_GAMES_ENABLED must be true or false")

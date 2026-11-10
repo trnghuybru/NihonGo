@@ -59,9 +59,9 @@ services:
       SHADOWING_SQS_ENDPOINT: http://elasticmq:9324
       SHADOWING_SQS_QUEUE_URL: ""
       TRANSLATION_MODEL_PATH: /models/translation
-      S3_ENDPOINT_URL: ""
-      S3_PUBLIC_ENDPOINT_URL: ""
-      AUDIO_LOCAL_ROOT: /audio
+      S3_ENDPOINT_URL: ${S3_ENDPOINT_URL:-}
+      S3_PUBLIC_ENDPOINT_URL: ${S3_PUBLIC_ENDPOINT_URL:-}
+      AUDIO_LOCAL_ROOT: ${AUDIO_LOCAL_ROOT-/audio}
       GOOGLE_APPLICATION_CREDENTIALS: /run/vertex-secrets/vertex.json
     volumes:
       - ./backend/models/translation/m2m100_418M:/models/translation:ro
