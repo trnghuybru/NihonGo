@@ -58,8 +58,10 @@ def _supertonic_model():
     global _supertonic_engine, _supertonic_style
     if _supertonic_engine is None:
         from supertonic import TTS
-        _supertonic_engine = TTS(auto_download=False)
-        _supertonic_style = _supertonic_engine.get_voice_style(voice_name=_SUPERTONIC_VOICE)
+        engine = TTS(model="supertonic-3", model_dir=os.getenv('SUPERTONIC_MODEL_DIR') or None,
+                     auto_download=False, intra_op_num_threads=2, inter_op_num_threads=1)
+        style = engine.get_voice_style(voice_name=_SUPERTONIC_VOICE)
+        _supertonic_engine, _supertonic_style = engine, style
     return _supertonic_engine, _supertonic_style
 
 

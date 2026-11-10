@@ -103,7 +103,7 @@ rsync -a "$stage/frontend/src/assets/characters/" "$app/frontend/src/assets/char
 python3 deploy/beta/validate_env.py backend/.env
 "${compose[@]}" config --quiet
 "${compose[@]}" build migrate
-"${compose[@]}" run --rm --no-deps migrate python -c 'from supertonic import TTS; TTS(auto_download=True)'
+"${compose[@]}" run --rm --no-deps migrate python -m vocabulary.prepare_supertonic
 "${compose[@]}" run --rm migrate
 "${compose[@]}" build game-voice-worker
 "${compose[@]}" up -d redis livekit
