@@ -62,19 +62,34 @@ export function useVocabularyAudio(scope: string) {
         const complete = () => {
           if (current === generation.current) stop();
         };
-        if (hasAudio) {
+        let playedRemote = false;
+        try {
+          const response = await vocabularyService.audioPlayback(id);
+          if (current !== generation.current) return;
+          playedRemote = Boolean(
+            await player.current?.play(response.url, complete),
+          );
+        } catch (audioError) {
+          if (hasAudio || !word) throw audioError;
+        }
+        if (current !== generation.current) return;
+        if (!playedRemote && !hasAudio && word) {
           try {
-            const response = await vocabularyService.audioPlayback(id);
+            const response = await vocabularyService.audioSynthesize(
+              reading?.trim() || word.trim(),
+            );
             if (current !== generation.current) return;
-            const started = await player.current?.play(response.url, complete);
-            if (current !== generation.current) return;
-            if (started) {
-              setLoading(false);
-              return;
-            }
-          } catch (audioError) {
-            if (!word) throw audioError;
+            playedRemote = Boolean(
+              await player.current?.play(response.url, complete),
+            );
+          } catch {
+            // Local browser/device TTS remains a fallback when R2/model is unavailable.
           }
+        }
+        if (current !== generation.current) return;
+        if (playedRemote) {
+          setLoading(false);
+          return;
         }
         if (current !== generation.current) return;
         const text = reading?.trim() || word?.trim();

@@ -1,6 +1,8 @@
-"""Shared vocabulary MP3 storage on S3-compatible services, separate from recordings."""
+"""Private vocabulary audio and generated Supertonic speech on S3-compatible storage."""
 import hashlib
+import io
 import os
+import threading
 import zipfile
 from pathlib import Path
 
@@ -15,12 +17,25 @@ from extensions import db
 from speaking.storage import client, unavailable
 from .models import VocabularyLesson, VocabularyTextbook, VocabularyWord
 
+_supertonic_lock = threading.Lock()
+_supertonic_engine = None
+_supertonic_style = None
+_SUPERTONIC_VOICE = 'F1'
+_SUPERTONIC_VERSION = 'supertonic3-1.3.1'
+
 
 def bucket():
     return os.getenv('VOCABULARY_S3_BUCKET', 'vocabulary-audio').strip() or 'vocabulary-audio'
 
 
 def playback(word):
+    if os.getenv('SUPERTONIC_TTS_ENABLED', '').strip().lower() in {'1', 'true', 'yes', 'on'}:
+        try:
+            return supertonic_playback(word)
+        except ApiError:
+            # Keep imported textbook recordings available if TTS is temporarily unavailable.
+            if not word.details.get('audio'):
+                raise
     audio = word.details.get('audio')
     if not audio:
         raise ApiError('Từ này chưa có âm thanh.', 404, 'vocabulary_audio_not_found')
@@ -37,6 +52,73 @@ def playback(word):
     except BotoCoreError:
         raise unavailable() from None
     return {'url': url, 'expires_in': 300}
+
+
+def _supertonic_model():
+    global _supertonic_engine, _supertonic_style
+    if _supertonic_engine is None:
+        from supertonic import TTS
+        _supertonic_engine = TTS(auto_download=False)
+        _supertonic_style = _supertonic_engine.get_voice_style(voice_name=_SUPERTONIC_VOICE)
+    return _supertonic_engine, _supertonic_style
+
+
+def _synthesize_japanese(text):
+    import numpy as np
+    import soundfile as sf
+
+    engine, style = _supertonic_model()
+    wav, duration = engine.synthesize(text=text, voice_style=style, total_steps=8,
+                                      speed=1.0, lang='ja', verbose=False)
+    samples = np.asarray(wav).squeeze()
+    if samples.ndim != 1:
+        raise ValueError('Unexpected Supertonic waveform shape')
+    length = int(engine.sample_rate * float(np.asarray(duration).reshape(-1)[0]))
+    buffer = io.BytesIO()
+    sf.write(buffer, samples[:length], engine.sample_rate, format='WAV', subtype='PCM_16')
+    return buffer.getvalue()
+
+
+def supertonic_text_playback(text):
+    """Create/cache Japanese pronunciation in private R2 and return a short-lived URL."""
+    if os.getenv('SUPERTONIC_TTS_ENABLED', '').strip().lower() not in {'1', 'true', 'yes', 'on'}:
+        raise ApiError('Giọng đọc Supertonic chưa được bật.', 503, 'vocabulary_tts_unavailable')
+    if not isinstance(text, str):
+        raise ApiError('Văn bản cần đọc không hợp lệ.', 422, 'vocabulary_audio_invalid')
+    text = text.strip()
+    if not text or len(text) > 500:
+        raise ApiError('Không thể tạo phát âm cho từ này.', 422, 'vocabulary_audio_invalid')
+    target_bucket = os.getenv('S3_BUCKET', '').strip()
+    if not target_bucket:
+        raise unavailable()
+    digest = hashlib.sha256(f'{_SUPERTONIC_VERSION}:ja:{_SUPERTONIC_VOICE}:8:1.0:{text}'.encode()).hexdigest()
+    key = f'tts/{_SUPERTONIC_VERSION}/{_SUPERTONIC_VOICE}/{digest}.wav'
+    with _supertonic_lock:
+        try:
+            connection = client()
+            try:
+                connection.head_object(Bucket=target_bucket, Key=key)
+            except ClientError as error:
+                if error.response['Error']['Code'] not in {'404', 'NoSuchKey', 'NotFound'}:
+                    raise
+                data = _synthesize_japanese(text)
+                connection.put_object(Bucket=target_bucket, Key=key, Body=data,
+                    ContentType='audio/wav', Metadata={'sha256': digest},
+                    CacheControl='private, max-age=31536000, immutable')
+            url = client(public=True).generate_presigned_url('get_object',
+                Params={'Bucket': target_bucket, 'Key': key}, ExpiresIn=300)
+            return {'url': url, 'expires_in': 300}
+        except (BotoCoreError, ClientError):
+            raise unavailable() from None
+        except ApiError:
+            raise
+        except Exception:
+            raise ApiError('Chưa tạo được giọng đọc. Vui lòng thử lại.', 503,
+                           'vocabulary_tts_unavailable') from None
+
+
+def supertonic_playback(word):
+    return supertonic_text_playback(word.reading or word.word)
 
 
 def import_audio(package, textbook_id):

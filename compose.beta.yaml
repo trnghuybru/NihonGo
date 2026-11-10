@@ -62,9 +62,12 @@ services:
       S3_ENDPOINT_URL: ${S3_ENDPOINT_URL:-}
       S3_PUBLIC_ENDPOINT_URL: ${S3_PUBLIC_ENDPOINT_URL:-}
       AUDIO_LOCAL_ROOT: ${AUDIO_LOCAL_ROOT-/audio}
+      HOME: /supertonic-home
+      SUPERTONIC_TTS_ENABLED: ${SUPERTONIC_TTS_ENABLED:-true}
       GOOGLE_APPLICATION_CREDENTIALS: /run/vertex-secrets/vertex.json
     volumes:
       - ./backend/models/translation/m2m100_418M:/models/translation:ro
+      - supertonic_cache:/supertonic-home/.cache/supertonic3
     command: ["flask", "--app", "app", "db", "upgrade"]
     depends_on:
       postgres:
@@ -82,6 +85,7 @@ services:
       - ./frontend/src/assets/characters:/frontend/src/assets/characters:ro
       - ./backend/static:/app/static:ro
       - ./deploy/beta/secrets:/run/vertex-secrets:ro
+      - supertonic_cache:/supertonic-home/.cache/supertonic3
     command: ["gunicorn", "--bind", "0.0.0.0:5001", "--workers", "1", "--threads", "8", "--timeout", "330", "app:app"]
     depends_on:
       migrate:
@@ -156,3 +160,4 @@ volumes:
   beta_queue:
   beta_caddy_data:
   beta_caddy_config:
+  supertonic_cache:

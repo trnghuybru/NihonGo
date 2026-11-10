@@ -66,6 +66,16 @@ export const vocabularyService = {
   audioPlayback: (wordId: string) =>
     authenticatedRequest<{ url: string; expires_in: number }>(
       `/vocabulary/words/${encodeURIComponent(wordId)}/audio/playback`,
+      undefined,
+      'GET',
+      { timeoutMs: 90000 },
+    ),
+  audioSynthesize: (text: string) =>
+    authenticatedRequest<{ url: string; expires_in: number }>(
+      '/vocabulary/audio/synthesize',
+      { text },
+      'POST',
+      { timeoutMs: 90000 },
     ),
   textbooks: (level: JlptLevel) =>
     authenticatedRequest<{ level: JlptLevel; items: VocabularyTextbook[] }>(

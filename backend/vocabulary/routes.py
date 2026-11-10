@@ -45,6 +45,17 @@ def audio_playback(word_id):
     return response
 
 
+@bp.post('/audio/synthesize')
+@require_auth
+def audio_synthesize():
+    from .audio import supertonic_text_playback
+    payload = request.get_json(silent=True) or {}
+    text = payload.get('text') if isinstance(payload, dict) else None
+    response = jsonify(supertonic_text_playback(text))
+    response.headers['Cache-Control'] = 'no-store'
+    return response
+
+
 @bp.get("/textbooks")
 @require_auth
 def textbooks():
