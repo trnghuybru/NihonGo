@@ -7,7 +7,7 @@ import { vocabularyService } from '../src/services/vocabularyService';
 
 jest.mock('../src/services/audioReplay');
 jest.mock('../src/services/vocabularyService', () => ({
-  vocabularyService: { audioPlayback: jest.fn() },
+  vocabularyService: { audioPlayback: jest.fn(), audioSynthesize: jest.fn() },
 }));
 let audio: ReturnType<typeof useVocabularyAudio>;
 let tree: Renderer.ReactTestRenderer;
@@ -96,18 +96,22 @@ test('backgrounding cancels pending playback and unmount closes the player', asy
   listener.mockRestore();
 });
 
-test('reads kana with the device voice when the word has no recording', async () => {
+test('plays the cached Supertonic pronunciation for a word without imported audio', async () => {
   const Tts = require('react-native-tts').default;
   await act(async () => {
     await audio.toggle('school', '学校', 'がっこう', false);
   });
-  expect(vocabularyService.audioPlayback).not.toHaveBeenCalled();
-  expect(Tts.speak).toHaveBeenCalledWith('がっこう');
+  expect(vocabularyService.audioPlayback).toHaveBeenCalledWith('school');
+  expect(AudioReplay.prototype.play).toHaveBeenCalledWith(
+    'signed.mp3',
+    expect.any(Function),
+  );
+  expect(Tts.speak).not.toHaveBeenCalled();
   expect(audio.loading).toBe(false);
   await act(async () => {
     await audio.toggle('school', '学校', 'がっこう', false);
   });
-  expect(Tts.stop).toHaveBeenCalled();
+  expect(AudioReplay.prototype.stop).toHaveBeenCalled();
   expect(audio.wordId).toBeNull();
 });
 
@@ -125,6 +129,8 @@ test('falls back to machine speech if original recording fails', async () => {
 
 test('reports a missing Japanese voice without speaking in another language', async () => {
   const Tts = require('react-native-tts').default;
+  jest.mocked(vocabularyService.audioPlayback).mockRejectedValueOnce(new Error('offline'));
+  jest.mocked(vocabularyService.audioSynthesize).mockRejectedValueOnce(new Error('offline'));
   Tts.voices.mockResolvedValueOnce([{ id: 'en', language: 'en-US' }]);
   await act(async () => {
     await audio.toggle('school', '学校', 'がっこう', false);
@@ -136,6 +142,8 @@ test('reports a missing Japanese voice without speaking in another language', as
 
 test('pending device initialization cannot speak after navigating away', async () => {
   const Tts = require('react-native-tts').default;
+  jest.mocked(vocabularyService.audioPlayback).mockRejectedValueOnce(new Error('offline'));
+  jest.mocked(vocabularyService.audioSynthesize).mockRejectedValueOnce(new Error('offline'));
   let resolve!: (value: string) => void;
   Tts.getInitStatus.mockReturnValueOnce(
     new Promise(done => {
@@ -158,6 +166,8 @@ test('pending device initialization cannot speak after navigating away', async (
 
 test('native completion only clears the matching utterance', async () => {
   const Tts = require('react-native-tts').default;
+  jest.mocked(vocabularyService.audioPlayback).mockRejectedValueOnce(new Error('offline'));
+  jest.mocked(vocabularyService.audioSynthesize).mockRejectedValueOnce(new Error('offline'));
   await act(async () => {
     await audio.toggle('school', '学校', 'がっこう', false);
   });

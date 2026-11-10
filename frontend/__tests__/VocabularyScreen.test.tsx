@@ -46,6 +46,7 @@ jest.mock('../src/services/vocabularyService', () => ({
     lesson: jest.fn(),
     search: jest.fn(),
     audioPlayback: jest.fn(),
+    audioSynthesize: jest.fn(),
   },
 }));
 const book = {
@@ -255,14 +256,17 @@ test('audio icon only appears for ready audio and stops on returning to lessons'
   ).toBeGreaterThan(closeCalls);
 });
 
-test('words without audio use machine speech and recording errors fall back to it', async () => {
+test('words without imported audio use Supertonic and source failures fall back to device speech', async () => {
   await render();
   await openLesson();
   expect(button('Nghe phát âm 人生')).toBeDefined();
   await press('Nghe phát âm 人生');
-  expect(require('react-native-tts').default.speak).toHaveBeenCalledWith(
-    'じんせい',
+  expect(vocabularyService.audioPlayback).toHaveBeenCalledWith('word-1');
+  expect(AudioReplay.prototype.play).toHaveBeenCalledWith(
+    'https://s3.test/signed.mp3',
+    expect.any(Function),
   );
+  expect(require('react-native-tts').default.speak).not.toHaveBeenCalled();
   await press('Quay lại');
   const detail = await vocabularyService.lesson('lesson-1');
   jest.mocked(vocabularyService.lesson).mockResolvedValue({
@@ -274,6 +278,9 @@ test('words without audio use machine speech and recording errors fall back to i
     .mocked(vocabularyService.audioPlayback)
     .mockRejectedValueOnce(new Error('offline'));
   await press('Nghe phát âm 人生');
+  expect(require('react-native-tts').default.speak).toHaveBeenCalledWith(
+    'じんせい',
+  );
   expect(contents()).not.toContain('Không phát được âm thanh');
   expect(button('Dừng phát âm 人生')).toBeDefined();
 });

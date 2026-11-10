@@ -70,7 +70,7 @@ export function useVocabularyAudio(scope: string) {
             await player.current?.play(response.url, complete),
           );
         } catch (audioError) {
-          if (hasAudio || !word) throw audioError;
+          if (!word) throw audioError;
         }
         if (current !== generation.current) return;
         if (!playedRemote && !hasAudio && word) {
