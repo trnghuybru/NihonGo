@@ -1,5 +1,7 @@
 # Rakuyomi N1 — snapshot ngày 06/11/2026
 
+> JSON và báo cáo của snapshot dưới đây đã chuyển sang nhánh `archive/learning-data-2026-11-10`. CSV vẫn ở đây để nhập; xem [khôi phục dữ liệu](../../../ARCHIVE.md).
+
 Nguồn: https://rakuyomi.net/vi/passages/n1
 
 - 261 bài, 602 câu hỏi hợp lệ, mỗi câu 4 lựa chọn.

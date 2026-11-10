@@ -1,5 +1,7 @@
 # Rakuyomi N3 — snapshot kiểm tra ngày 06/11/2026
 
+> JSON và báo cáo của snapshot dưới đây đã chuyển sang nhánh `archive/learning-data-2026-11-10`. CSV vẫn ở đây để nhập; xem [khôi phục dữ liệu](../../../ARCHIVE.md).
+
 Nguồn: https://rakuyomi.net/vi/passages/n3
 
 - 209 bài, 429 câu hỏi; mỗi câu có 4 lựa chọn và đáp án nguồn.

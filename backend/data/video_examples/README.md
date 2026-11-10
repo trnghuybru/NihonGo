@@ -3,6 +3,8 @@
 Video: [Kazunari Taguchi — TEDxHimi](https://www.youtube.com/watch?v=cjtmDEG-B7U),
 kênh TEDx Talks, thời lượng 971 giây (16 phút 11 giây).
 
+> Bản SRT và snapshot playlist cũ đã chuyển sang nhánh `archive/learning-data-2026-11-10`. JSON mẫu mặc định vẫn giữ cho importer và test; xem [khôi phục dữ liệu](../ARCHIVE.md).
+
 ## File mẫu
 
 - `cjtmDEG-B7U.ja.json`: metadata và 327 đoạn phụ đề tiếng Nhật, có câu gốc,
