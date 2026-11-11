@@ -81,6 +81,21 @@ def _synthesize_japanese(text):
     return buffer.getvalue()
 
 
+def _tts_client(public=False):
+    """Allow local TTS to use R2 without changing local recording storage."""
+    endpoint = os.getenv('TTS_S3_ENDPOINT_URL', '').strip()
+    if not endpoint:
+        return client(public=public)
+    import boto3
+    from botocore.config import Config
+    return boto3.client('s3', endpoint_url=endpoint,
+        aws_access_key_id=os.environ['TTS_AWS_ACCESS_KEY_ID'],
+        aws_secret_access_key=os.environ['TTS_AWS_SECRET_ACCESS_KEY'],
+        region_name=os.getenv('TTS_AWS_DEFAULT_REGION', 'auto'),
+        config=Config(signature_version='s3v4', connect_timeout=5, read_timeout=20,
+                      retries={'max_attempts': 2}, s3={'addressing_style': 'path'}))
+
+
 def supertonic_text_playback(text):
     """Create/cache Japanese pronunciation in private R2 and return a short-lived URL."""
     if os.getenv('SUPERTONIC_TTS_ENABLED', '').strip().lower() not in {'1', 'true', 'yes', 'on'}:
@@ -90,14 +105,14 @@ def supertonic_text_playback(text):
     text = text.strip()
     if not text or len(text) > 500:
         raise ApiError('Không thể tạo phát âm cho từ này.', 422, 'vocabulary_audio_invalid')
-    target_bucket = os.getenv('S3_BUCKET', '').strip()
+    target_bucket = os.getenv('TTS_S3_BUCKET', os.getenv('S3_BUCKET', '')).strip()
     if not target_bucket:
         raise unavailable()
     digest = hashlib.sha256(f'{_SUPERTONIC_VERSION}:ja:{_SUPERTONIC_VOICE}:8:1.0:{text}'.encode()).hexdigest()
     key = f'tts/{_SUPERTONIC_VERSION}/{_SUPERTONIC_VOICE}/{digest}.wav'
     with _supertonic_lock:
         try:
-            connection = client()
+            connection = _tts_client()
             try:
                 connection.head_object(Bucket=target_bucket, Key=key)
             except ClientError as error:
@@ -107,7 +122,7 @@ def supertonic_text_playback(text):
                 connection.put_object(Bucket=target_bucket, Key=key, Body=data,
                     ContentType='audio/wav', Metadata={'sha256': digest},
                     CacheControl='private, max-age=31536000, immutable')
-            url = client(public=True).generate_presigned_url('get_object',
+            url = _tts_client(public=True).generate_presigned_url('get_object',
                 Params={'Bucket': target_bucket, 'Key': key}, ExpiresIn=300)
             return {'url': url, 'expires_in': 300}
         except (BotoCoreError, ClientError):

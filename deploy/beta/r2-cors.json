@@ -1,6 +1,6 @@
 [
   {
-    "AllowedOrigins": ["https://momonihongo.app"],
+    "AllowedOrigins": ["https://momonihongo.app", "http://localhost:5173", "http://127.0.0.1:5173"],
     "AllowedMethods": ["GET", "HEAD", "PUT"],
     "AllowedHeaders": ["Content-Type", "Range"],
     "ExposeHeaders": ["ETag", "Content-Length", "Content-Range", "Accept-Ranges"],
