@@ -27,21 +27,37 @@ class DailyQuotaTests(unittest.TestCase):
     tearDown = fixtures.SpeakingTests.tearDown
     scenario = fixtures.SpeakingTests.scenario
 
-    def test_one_new_video_per_vietnamese_day(self):
+    def test_three_new_videos_per_vietnamese_day(self):
         zone = ZoneInfo("Asia/Ho_Chi_Minh")
         with patch("beta_daily.service.clock", return_value=datetime(2026, 10, 31, 23, 59, tzinfo=zone)):
             reserve_video("alice", "abcdefghijk")
             db.session.commit()
             reserve_video("alice", "abcdefghijk")
             db.session.commit()
+            self.assertEqual(status("alice")["video_remaining"], 2)
+            reserve_video("alice", "second00001")
+            reserve_video("alice", "third000001")
+            db.session.commit()
             self.assertEqual(status("alice")["video_remaining"], 0)
             with self.assertRaises(ApiError) as error:
                 reserve_video("alice", "different01")
             self.assertEqual(error.exception.code, "daily_video_limit")
             db.session.rollback()
-            self.assertEqual(status("bob")["video_remaining"], 1)
+            self.assertEqual(status("bob")["video_remaining"], 3)
         with patch("beta_daily.service.clock", return_value=datetime(2026, 11, 1, 0, 1, tzinfo=zone)):
-            self.assertEqual(status("alice")["video_remaining"], 1)
+            self.assertEqual(status("alice")["video_remaining"], 3)
+
+    def test_existing_single_video_usage_is_preserved(self):
+        from beta_daily.models import DailyQuota
+        from beta_daily.service import window
+        day, _ = window()
+        db.session.add(DailyQuota(user_id="alice", day=day, video_id="legacy00001"))
+        db.session.commit()
+        self.assertEqual(status("alice")["video_remaining"], 2)
+        reserve_video("alice", "legacy00001")
+        reserve_video("alice", "second00001")
+        db.session.commit()
+        self.assertEqual(status("alice")["video_remaining"], 1)
 
     def test_two_live_sessions_and_failed_handshake_does_not_count(self):
         first = reserve_live("alice")
@@ -70,6 +86,9 @@ class DailyQuotaTests(unittest.TestCase):
                 json={"url": "https://youtu.be/abcdefghijk"},
                 headers={"Authorization": "Bearer alice"})
             self.assertEqual(again.status_code, 202, again.json)
+            reserve_video("alice", "second00001")
+            reserve_video("alice", "third000001")
+            db.session.commit()
             other = self.client.post("/api/listening/shadowing/jobs",
                 json={"url": "https://youtu.be/another0001"},
                 headers={"Authorization": "Bearer alice"})
@@ -98,6 +117,9 @@ class DailyQuotaTests(unittest.TestCase):
             repeat = self.client.post("/api/listening/shadowing/jobs/translation-job-0/translation",
                 json={}, headers={"Authorization": "Bearer alice"})
             self.assertEqual(repeat.status_code, 202, repeat.json)
+            reserve_video("alice", "second00001")
+            reserve_video("alice", "third000001")
+            db.session.commit()
             second = self.client.post("/api/listening/shadowing/jobs/translation-job-1/translation",
                 json={}, headers={"Authorization": "Bearer alice"})
             self.assertEqual(second.status_code, 429, second.json)

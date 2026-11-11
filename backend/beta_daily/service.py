@@ -11,7 +11,7 @@ from extensions import db
 from .models import DailyLiveSession, DailyQuota
 
 ZONE = ZoneInfo("Asia/Ho_Chi_Minh")
-VIDEO_LIMIT = 1
+VIDEO_LIMIT = 3
 LIVE_LIMIT = 2
 LIVE_SECONDS = 240
 LIVE_CONCURRENT = 2
@@ -36,7 +36,7 @@ def status(user_id):
     row = db.session.get(DailyQuota, (user_id, day))
     return {"day": day.isoformat(), "timezone": "Asia/Ho_Chi_Minh",
             "reset_at": reset, "video_limit": VIDEO_LIMIT,
-            "video_remaining": 0 if row and row.video_id else VIDEO_LIMIT,
+            "video_remaining": max(0, VIDEO_LIMIT - len(_video_ids(row))),
             "live_limit": LIVE_LIMIT,
             "live_remaining": max(0, LIVE_LIMIT - (row.live_count if row else 0)),
             "live_seconds_per_session": LIVE_SECONDS}
@@ -53,16 +53,25 @@ def _locked_row(user_id, day):
     return row
 
 
+def _video_ids(row):
+    if row is None:
+        return set()
+    return set(row.video_ids or []) | ({row.video_id} if row.video_id else set())
+
+
 def reserve_video(user_id, video_id):
-    """Mark the one video that may trigger new processing today; caller commits."""
+    """Reserve up to three distinct videos today; retries reuse their slot."""
     day, reset = window()
     row = _locked_row(user_id, day)
-    if row.video_id == video_id:
+    videos = _video_ids(row)
+    if video_id in videos:
         return
-    if row.video_id:
-        raise ApiError("Hôm nay bạn đã yêu cầu xử lý một video. Hãy thử lại ngày mai.",
+    if len(videos) >= VIDEO_LIMIT:
+        raise ApiError("Hôm nay bạn đã dùng đủ 3 lượt video. Lượt mới sẽ có lúc 00:00 ngày mai.",
                        429, "daily_video_limit", retry_after=max(1, reset - now()))
-    row.video_id = video_id
+    row.video_ids = sorted(videos | {video_id})
+    if not row.video_id:
+        row.video_id = video_id
 
 
 def reserve_live(user_id):

@@ -601,7 +601,7 @@ class TranslationProviderTests(unittest.TestCase):
         def output(items, reason='STOP'):
             response.json.return_value = {'candidates': [{'finishReason': reason, 'content': {'parts': [
                 {'text': json.dumps({'items': items})}]}}]}
-        with patch.dict('os.environ', {'GEMINI_API_KEY': 'test'}), patch('shadowing.translation.requests.post', return_value=response) as post:
+        with patch.dict('os.environ', {'GEMINI_API_KEY': 'test', 'GEMINI_PROVIDER': 'developer', 'BETA_MODE': 'true'}), patch('shadowing.translation.requests.post', return_value=response) as post:
             output([{'segment_id': 'one', 'translation': 'Xin chào.'}])
             self.assertEqual(translate_batch(DEFAULT_MODEL, '', segments), {'one': 'Xin chào.'})
             self.assertEqual(post.call_args.kwargs['json']['systemInstruction']['parts'][0]['text'], SYSTEM_PROMPT)

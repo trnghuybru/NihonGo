@@ -63,14 +63,9 @@ def public_translation(row, source):
 
 
 def request_translation(job_id, user_id=None):
-    from auth.beta import enabled as beta_enabled
-    from beta_daily.service import daily_mode
-    beta = beta_enabled()
-    daily = beta and daily_mode()
-    if daily:
-        from auth.models import User
-        if not user_id or db.session.scalar(select(User.id).where(User.id == user_id).with_for_update()) is None:
-            raise ApiError('Tài khoản không khả dụng.', 403, 'beta_quota_unavailable')
+    from auth.models import User
+    if not user_id or db.session.scalar(select(User.id).where(User.id == user_id).with_for_update()) is None:
+        raise ApiError('Tài khoản không khả dụng.', 403, 'beta_quota_unavailable')
     # Serialize requests across users by locking the shared parent video job.
     job = db.session.scalar(select(ShadowingJob).where(ShadowingJob.id == job_id).with_for_update())
     source = source_for(job_id)
@@ -79,11 +74,8 @@ def request_translation(job_id, user_id=None):
     if not fresh and row.status in (*ACTIVE, 'ready'):
         db.session.commit()
         return row, source
-    if beta and not daily:
-        raise ApiError('Dịch phụ đề mới chưa mở trong bản beta.', 403, 'beta_translation_disabled')
-    if daily:
-        from beta_daily.service import reserve_video
-        reserve_video(user_id, job.video_id)
+    from beta_daily.service import reserve_video
+    reserve_video(user_id, job.video_id)
     from services.gemini_provider import gemini_configured
     if not gemini_configured():
         raise ApiError('Chưa cấu hình Gemini để dịch phụ đề.', 503, 'translation_unavailable')
@@ -103,11 +95,9 @@ def request_translation(job_id, user_id=None):
 
 
 def translate_batch(model, title, segments, before='', after=''):
-    from auth.beta import enabled as beta_enabled
-    if beta_enabled():
-        raise TranslationError('Dịch phụ đề mới chưa mở trong bản beta.', retryable=False)
+    from services.gemini_provider import gemini_configured, prepare_request
     key = os.getenv('GEMINI_API_KEY', '').strip()
-    if not key or not re.fullmatch(r'[a-zA-Z0-9._-]+', model):
+    if not gemini_configured() or not re.fullmatch(r'[a-zA-Z0-9._-]+', model):
         raise TranslationError('Cấu hình dịch phụ đề chưa hợp lệ.', retryable=False)
     schema = {'type': 'object', 'properties': {'items': {'type': 'array', 'items': {
         'type': 'object', 'properties': {'segment_id': {'type': 'string'}, 'translation': {'type': 'string'}},
@@ -119,8 +109,10 @@ def translate_batch(model, title, segments, before='', after=''):
             'responseMimeType': 'application/json', 'responseJsonSchema': schema,
             'thinkingConfig': {'thinkingLevel': 'minimal'}}}
     try:
-        response = requests.post(f'https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent',
-            headers={'x-goog-api-key': key}, json=payload, timeout=(5, 60))
+        url, kwargs = prepare_request(
+            f'https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent',
+            {'headers': {'x-goog-api-key': key}, 'json': payload, 'timeout': (5, 60)})
+        response = requests.post(url, **kwargs)
     except requests.RequestException:
         raise TranslationError('Không kết nối được dịch vụ dịch. Hệ thống sẽ thử lại.') from None
     if response.status_code == 429:

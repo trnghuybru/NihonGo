@@ -8,6 +8,7 @@ class DailyQuota(db.Model):
     user_id = db.Column(db.String(36), db.ForeignKey("users.id", ondelete="CASCADE"), primary_key=True)
     day = db.Column(db.Date, primary_key=True)
     video_id = db.Column(db.String(11))
+    video_ids = db.Column(db.JSON, nullable=False, default=list, server_default="[]")
     live_count = db.Column(db.Integer, nullable=False, default=0)
 
 
