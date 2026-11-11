@@ -67,6 +67,8 @@ def init_auth(app):
                 and request.path.startswith("/api/games/")):
             raise AuthError("Trò chơi chưa mở trong đợt dùng thử này.", 503, "beta_games_disabled")
         request.max_content_length = (1024 * 1024 if request.path == "/api/kanji/recognize" else
+                                      512 * 1024 if request.path.startswith("/api/speaking/sessions/")
+                                      and request.path.endswith("/experimental-transcribe") else
                                       256 * 1024 if request.path.startswith("/api/flashcards/") else 16 * 1024)
         if not app.config["AUTH_CONFIGURED"]:
             raise AuthError("Dịch vụ tài khoản chưa được cấu hình.", 503, "auth_unavailable")

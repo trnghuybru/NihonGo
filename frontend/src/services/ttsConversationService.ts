@@ -1,32 +1,46 @@
 import { authenticatedRequest } from './authService';
-import { createGameSpeech } from './gameSpeech';
+import { fromByteArray, toByteArray } from 'base64-js';
 import { AudioReplay } from './audioReplay';
+import { PcmRecording, WavRecording } from './audioRecording';
+import { LiveAudio } from './liveAudio';
+import { speakingService } from './speakingService';
 import { vocabularyService } from './vocabularyService';
 import type { LiveCallbacks } from './geminiLiveService';
 import type { TurnInput, TurnReply } from './speakingService';
 
-export type ExperimentMetrics = { stt_ms: number; llm_ms: number; tts_storage_ms: number; download_ms: number; total_ms: number };
-type Reply = TurnReply & { emotion?: string; audio: { url: string }; timings: { llm_ms: number; tts_storage_ms: number } };
+type Reply = TurnReply & { emotion?: string; audio: { url: string } };
+const MAX_RECORDING_BYTES = 16_000 * 2 * 9;
+const MAX_RECORDING_MS = 9_000;
 export class TtsConversationService {
-  private speech = createGameSpeech(2000);
   private audio = new AudioReplay();
+  private microphone: LiveAudio;
   private closed = false;
   private epoch = 0;
   private busy = false;
   private listening = false;
   private pending: TurnInput | null = null;
-  private stoppedAt = 0;
+  private pendingAudio: string | null = null;
+  private pendingRecording: WavRecording | null = null;
+  private recordingChunks: Uint8Array[] = [];
+  private recordingBytes = 0;
+  private recordingStopping = false;
+  private microphonePrepared = false;
   private watchdog: ReturnType<typeof setTimeout> | undefined;
   constructor(private sessionId: string, private callbacks: LiveCallbacks,
-    private onMetrics: (value: ExperimentMetrics) => void,
-    private onEmotion: (value: string) => void) {}
+  private onEmotion: (value: string) => void,
+  private onUserAudio?: (messageId: string, wav: Uint8Array) => void) {
+    this.microphone = this.createMicrophone();
+  }
+  private createMicrophone() {
+    return new LiveAudio(() => {}, message => this.fail(message));
+  }
   private fail(message: string) {
     if (this.closed) return;
     this.epoch++;
     clearTimeout(this.watchdog);
     this.listening = false;
     this.busy = false;
-    this.speech.close();
+    void this.microphone.stop();
     this.audio.stop();
     this.callbacks.onPlaying(false);
     this.callbacks.onState('error');
@@ -55,74 +69,139 @@ export class TtsConversationService {
     if (played && !this.closed) this.callbacks.onPlaying(true);
   }
   async startSpeaking() {
-    if (this.closed || this.busy || this.listening) return;
-    if (!this.speech.supported) {
-      this.fail('Trình duyệt chưa hỗ trợ nhận dạng tiếng Nhật. Hãy dùng Chrome hoặc chế độ nhắn tin.');
-      return;
-    }
-    this.stoppedAt = 0;
+    if (this.closed || this.busy || this.listening || this.pending || this.pendingAudio) return;
+    this.recordingChunks = [];
+    this.recordingBytes = 0;
     this.listening = true;
     this.callbacks.onState('listening');
-    this.watchdog = setTimeout(() => this.fail('Không nhận được giọng nói. Hãy thử lại.'), 30000);
-    this.speech.start({
-      onText: text => { if (!this.closed) this.callbacks.onTranscript(text, ''); },
-      onFinal: alternatives => {
-        if (this.closed || !this.listening) return;
-        this.listening = false;
-        clearTimeout(this.watchdog);
-        this.speech.close();
-        this.submit(alternatives[0], 'voice');
-      },
-      onError: () => this.fail('Không nhận dạng được giọng nói. Kiểm tra quyền micro và thử lại.'),
-      onEnd: () => this.fail('Chưa nghe rõ câu nói. Hãy thử lại.'),
-    });
+    this.watchdog = setTimeout(() => void this.stopSpeaking(), MAX_RECORDING_MS);
+    try {
+      if (!this.microphonePrepared) {
+        await this.microphone.prepare();
+        this.microphonePrepared = true;
+      }
+      if (this.closed || !this.listening) return;
+      await this.microphone.start(
+        pcm => this.appendRecording(pcm),
+        this.callbacks.onMicLevel,
+      );
+    } catch (error) {
+      if (!this.closed)
+        this.fail(error instanceof Error ? error.message : 'Không thể thu âm. Kiểm tra quyền microphone và thử lại.');
+    }
+  }
+  private appendRecording(pcm: string) {
+    if ((!this.listening && !this.recordingStopping) || this.closed) return;
+    const chunk = toByteArray(pcm);
+    const remaining = MAX_RECORDING_BYTES - this.recordingBytes;
+    if (remaining <= 0) {
+      void this.stopSpeaking();
+      return;
+    }
+    const kept = chunk.length > remaining ? chunk.subarray(0, remaining) : chunk;
+    this.recordingChunks.push(kept);
+    this.recordingBytes += kept.length;
+    if (this.recordingBytes >= MAX_RECORDING_BYTES) void this.stopSpeaking();
   }
   async stopSpeaking() {
     if (!this.listening) return;
-    this.stoppedAt = performance.now();
-    this.callbacks.onState('processing');
-    this.speech.stop();
-  }
-  sendText(text: string) {
-    if (this.closed || this.busy || this.pending || !text.trim()) return false;
-    this.stoppedAt = performance.now();
-    this.submit(text.trim(), 'text');
-    return true;
-  }
-  private submit(text: string, mode: 'voice' | 'text') {
-    if (this.closed || this.busy || !text) return;
-    this.pending = { request_id: crypto.randomUUID(), content: text, input_mode: mode };
-    void this.retrySave();
-  }
-  async retrySave() {
-    if (this.closed || this.busy || !this.pending) return;
-    this.busy = true;
-    const epoch = this.epoch;
-    const requestStarted = performance.now();
-    const endOfSpeech = this.stoppedAt || requestStarted;
+    this.listening = false;
+    this.recordingStopping = true;
+    clearTimeout(this.watchdog);
     this.callbacks.onState('processing');
     try {
+      await this.microphone.stop();
+      this.recordingStopping = false;
+      if (this.closed) return;
+      const bytes = new Uint8Array(this.recordingBytes);
+      let offset = 0;
+      for (const chunk of this.recordingChunks) {
+        bytes.set(chunk, offset);
+        offset += chunk.length;
+      }
+      this.recordingChunks = [];
+      if (!bytes.length) {
+        this.fail('Không nhận được âm thanh. Hãy thử lại.');
+        return;
+      }
+      const recording = new PcmRecording(16000);
+      recording.append(fromByteArray(bytes));
+      this.pendingRecording = recording.finish();
+      this.pendingAudio = fromByteArray(bytes);
+      void this.retrySave();
+    } catch (error) {
+      this.recordingStopping = false;
+      this.fail(error instanceof Error ? error.message : 'Không thể dừng ghi âm. Hãy thử lại.');
+    }
+  }
+  sendText(text: string) {
+    if (this.closed || this.busy || this.pending || this.pendingAudio || !text.trim()) return false;
+    this.pending = { request_id: crypto.randomUUID(), content: text.trim(), input_mode: 'text' };
+    void this.retrySave();
+    return true;
+  }
+  async retrySave() {
+    if (this.closed || this.busy || (!this.pending && !this.pendingAudio)) return;
+    this.busy = true;
+    const epoch = this.epoch;
+    this.callbacks.onState('processing');
+    try {
+      if (!this.pending && this.pendingAudio) {
+        const transcript = await speakingService.experimentalTranscribe(
+          this.sessionId,
+          this.pendingAudio,
+        );
+        if (this.closed || epoch !== this.epoch) return;
+        this.pendingAudio = null;
+        this.pending = {
+          request_id: crypto.randomUUID(),
+          content: transcript.text,
+          input_mode: 'voice',
+        };
+        this.callbacks.onTranscript(transcript.text, '');
+      }
+      if (!this.pending) return;
       const reply = await authenticatedRequest<Reply>(
         `/speaking/sessions/${encodeURIComponent(this.sessionId)}/experimental-turn`,
         this.pending, 'POST', { timeoutMs: 90000 });
       if (this.closed || epoch !== this.epoch) return;
-      const audioStart = performance.now();
       this.callbacks.onTranscript(this.pending.content, reply.assistant_message.content);
       this.onEmotion(reply.emotion || 'neutral');
       await this.play(reply.audio.url);
       if (this.closed || epoch !== this.epoch) return;
-      const now = performance.now();
-      this.onMetrics({ stt_ms: Math.round(requestStarted-endOfSpeech),
-        ...reply.timings, download_ms: Math.round(now-audioStart), total_ms: Math.round(now-endOfSpeech) });
       this.pending = null;
+      if (this.pendingRecording) {
+        this.onUserAudio?.(
+          reply.user_message.id,
+          this.pendingRecording.bytes,
+        );
+      }
+      this.pendingRecording = null;
       this.callbacks.onSaved(reply);
       this.callbacks.onState('ready');
     } catch (error) {
       if (!this.closed && epoch === this.epoch) this.fail(error instanceof Error ? error.message : 'Không tạo được phản hồi.');
     } finally { this.busy = false; }
   }
-  hasUnsavedTurn() { return Boolean(this.pending); }
-  discardUnsavedTurn() { this.epoch++; this.pending = null; this.speech.close(); this.audio.stop(); this.callbacks.onState('idle'); }
+  hasUnsavedTurn() { return Boolean(this.pending || this.pendingAudio); }
+  discardUnsavedTurn() {
+    this.epoch++;
+    this.pending = null;
+    this.pendingAudio = null;
+    this.pendingRecording = null;
+    this.recordingChunks = [];
+    this.recordingBytes = 0;
+    void this.microphone.stop();
+    this.audio.stop();
+    this.callbacks.onState('idle');
+  }
   interrupt() { this.fail('Đã dừng thử nghiệm khi chuyển nền. Kết nối lại để tiếp tục.'); }
-  async close() { this.closed = true; clearTimeout(this.watchdog); this.speech.close(); await this.audio.close(); }
+  async close() {
+    this.closed = true;
+    clearTimeout(this.watchdog);
+    this.pendingAudio = null;
+    this.pendingRecording = null;
+    this.recordingChunks = [];
+    await Promise.all([this.microphone.dispose(), this.audio.close()]);
+  }
 }

@@ -279,3 +279,19 @@ test('requests an authenticated ephemeral token and saves a Live transcript', as
   expect(options?.headers).toMatchObject({ Authorization: 'Bearer access-1' });
   expect(JSON.parse(options?.body as string)).toEqual(turn);
 });
+
+test('sends local speaking audio to the authenticated Cloud STT endpoint', async () => {
+  jest.mocked(fetch).mockImplementationOnce(() =>
+    reply({ text: 'こんにちは', stt_ms: 240 }),
+  );
+  await expect(
+    speaking.experimentalTranscribe('session/a', 'AAECAw=='),
+  ).resolves.toEqual({ text: 'こんにちは', stt_ms: 240 });
+  const [url, options] = jest.mocked(fetch).mock.calls[0];
+  expect(url).toContain(
+    '/api/speaking/sessions/session%2Fa/experimental-transcribe',
+  );
+  expect(options?.method).toBe('POST');
+  expect(options?.headers).toMatchObject({ Authorization: 'Bearer access-1' });
+  expect(JSON.parse(options?.body as string)).toEqual({ audio: 'AAECAw==' });
+});

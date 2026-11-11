@@ -31,8 +31,12 @@ export function useAudioReplay(sessionId: string) {
       subscription.remove();
     };
   }, [sessionId, stop]);
-  const toggle = useCallback(
-    async (id: string, assetId: string, normalizeMicrophone = false) => {
+  const play = useCallback(
+    async (
+      id: string,
+      getUrl: () => Promise<string>,
+      normalizeMicrophone: boolean,
+    ) => {
       const previous = active.current;
       stop();
       setError('');
@@ -42,13 +46,10 @@ export function useAudioReplay(sessionId: string) {
       setMessageId(id);
       setLoading(true);
       try {
-        const response = await speakingService.audioPlayback(
-          sessionId,
-          assetId,
-        );
+        const url = await getUrl();
         if (current !== generation.current) return;
         await player.current?.play(
-          response.url,
+          url,
           () => {
             if (current === generation.current) stop();
           },
@@ -62,7 +63,30 @@ export function useAudioReplay(sessionId: string) {
         }
       }
     },
-    [sessionId, stop],
+    [stop],
   );
-  return { messageId, loading, error, toggle, stop };
+  const toggle = useCallback(
+    (id: string, assetId: string, normalizeMicrophone = false) =>
+      play(
+        id,
+        async () =>
+          (
+            await speakingService.audioPlayback(sessionId, assetId)
+          ).url,
+        normalizeMicrophone,
+      ),
+    [play, sessionId],
+  );
+  const toggleLocal = useCallback(
+    (id: string, url: string) => play(id, async () => url, true),
+    [play],
+  );
+  return {
+    messageId,
+    loading,
+    error,
+    toggle,
+    toggleLocal,
+    stop,
+  };
 }

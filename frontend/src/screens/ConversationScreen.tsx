@@ -37,7 +37,7 @@ import { useConversation } from '../hooks/useConversation';
 import { useAudioReplay } from '../hooks/useAudioReplay';
 import { useSentenceFeedback } from '../hooks/useSentenceFeedback';
 import { speakingTtsExperiment } from '../config/speakingExperiment';
-import { TtsConversationService, ExperimentMetrics } from '../services/ttsConversationService';
+import { TtsConversationService } from '../services/ttsConversationService';
 import { GeminiLiveService } from '../services/geminiLiveService';
 import { StartedSession, speakingService } from '../services/speakingService';
 import { errorMessage } from '../hooks/useSpeakingScenarios';
@@ -52,6 +52,8 @@ import {
   spacing,
   typography,
 } from '../theme/theme';
+
+const MAX_LOCAL_AUDIO_REPLAYS = 20;
 
 export function ConversationScreen({
   result,
@@ -76,9 +78,10 @@ function LiveConversationScreen({
   const navigationInset = useBottomNavigationInset();
   const chat = useConversation(result.session.id);
   const replay = useAudioReplay(result.session.id);
+  const [localAudioUrls, setLocalAudioUrls] = useState<Record<string, string>>({});
+  const localAudioUrlMap = useRef(new Map<string, string>());
   const sentenceFeedback = useSentenceFeedback(result.session.id);
   const client = useRef<GeminiLiveService | TtsConversationService | null>(null);
-  const [metrics, setMetrics] = useState<ExperimentMetrics | null>(null);
   const [emotion, setEmotion] = useState('neutral');
   const lifecycle = useRef(0);
   const openingRequested = useRef(false);
@@ -133,8 +136,30 @@ function LiveConversationScreen({
         if (current()) reload.current();
       },
     };
+    const rememberUserAudio = (messageId: string, wav: Uint8Array) => {
+      if (!current()) return;
+      const previous = localAudioUrlMap.current.get(messageId);
+      if (previous) URL.revokeObjectURL(previous);
+      const url = URL.createObjectURL(
+        new Blob([wav.slice().buffer], { type: 'audio/wav' }),
+      );
+      localAudioUrlMap.current.set(messageId, url);
+      while (localAudioUrlMap.current.size > MAX_LOCAL_AUDIO_REPLAYS) {
+        const oldest = localAudioUrlMap.current.keys().next().value;
+        if (oldest === undefined) break;
+        const expired = localAudioUrlMap.current.get(oldest);
+        localAudioUrlMap.current.delete(oldest);
+        if (expired) URL.revokeObjectURL(expired);
+      }
+      setLocalAudioUrls(Object.fromEntries(localAudioUrlMap.current));
+    };
     const live = speakingTtsExperiment
-      ? new TtsConversationService(result.session.id, callbacks, setMetrics, setEmotion)
+      ? new TtsConversationService(
+          result.session.id,
+          callbacks,
+          setEmotion,
+          rememberUserAudio,
+        )
       : new GeminiLiveService(result.session.id, callbacks);
     client.current = live;
     const connected = await live.connect(
@@ -148,6 +173,13 @@ function LiveConversationScreen({
     result.opening_message?.id,
     dispatch,
   ]);
+  useEffect(
+    () => () => {
+      localAudioUrlMap.current.forEach(url => URL.revokeObjectURL(url));
+      localAudioUrlMap.current.clear();
+    },
+    [],
+  );
   useEffect(() => {
     if (!chat.ready || !active) return;
     if (!betaWeb || speakingTtsExperiment) connect();
@@ -173,7 +205,11 @@ function LiveConversationScreen({
   useEffect(() => {
     if (!replayAllowed) stopReplay();
   }, [replayAllowed, stopReplay]);
-  const replayControls = { ...replay, disabled: !replayAllowed };
+  const replayControls = {
+    ...replay,
+    localAudioUrls,
+    disabled: !replayAllowed,
+  };
   const ready =
     phase === 'user_turn' &&
     presentation.transport === 'ready' &&
@@ -355,9 +391,6 @@ function LiveConversationScreen({
         <View style={styles.headingCopy}>
           <Text style={styles.title}>{result.scenario.title}</Text>
           <Text style={styles.hint}>Aoi · {result.scenario.role.name}</Text>
-          {speakingTtsExperiment && <Text style={styles.hint}>
-            LLM + Supertonic · {emotion}{metrics ? ` · ${metrics.total_ms} ms đến âm thanh\nSTT ${metrics.stt_ms} · LLM ${metrics.llm_ms} · TTS/R2 ${metrics.tts_storage_ms} · tải/phát ${metrics.download_ms} ms` : ''}
-          </Text>}
         </View>
         {active ? (
           <AuthButton

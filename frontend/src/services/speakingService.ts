@@ -306,6 +306,17 @@ export const speakingService = {
       'POST',
     );
   },
+  experimentalTranscribe(
+    id: string,
+    audio: string,
+  ): Promise<{ text: string }> {
+    return authenticatedRequest(
+      `/speaking/sessions/${encodeURIComponent(id)}/experimental-transcribe`,
+      { audio },
+      'POST',
+      { timeoutMs: 30000 },
+    );
+  },
   history(page = 1): Promise<ConversationHistory> {
     return authenticatedRequest<ConversationHistory>(
       `/speaking/sessions?page=${page}&page_size=20`,

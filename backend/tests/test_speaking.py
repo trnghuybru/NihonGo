@@ -1,4 +1,5 @@
 """Scenario API integration tests, with an isolated schema on PostgreSQL."""
+import base64
 import os
 import struct
 import unittest
@@ -554,11 +555,38 @@ class SpeakingTests(unittest.TestCase):
             self.assertEqual(reply.status_code, 200, reply.json)
             self.assertEqual(reply.json["emotion"], "happy")
             self.assertEqual(reply.json["assistant_message"]["content"], "こんにちは！")
+            self.assertNotIn("timings", reply.json)
             again = self.client.post(url, json=data, headers=headers)
             self.assertEqual(again.status_code, 200, again.json)
             llm.assert_called_once()
         with patch.dict(os.environ, {"SPEAKING_TTS_EXPERIMENT": "1", "APP_ENV": "production"}):
             self.assertEqual(self.client.post(url, json=data, headers=headers).status_code, 404)
+
+    def test_experimental_transcription_uses_cloud_speech_and_checks_session(self):
+        session_id = self.start().json["session"]["id"]
+        url = f"/api/speaking/sessions/{session_id}/experimental-transcribe"
+        headers = {"Authorization": "Bearer alice"}
+        audio = b"\x01\x00" * 4000
+        payload = {"audio": base64.b64encode(audio).decode("ascii")}
+        with patch.dict(os.environ, {"SPEAKING_TTS_EXPERIMENT": "0"}):
+            self.assertEqual(self.client.post(url, json=payload, headers=headers).status_code, 404)
+        with patch.dict(os.environ, {"SPEAKING_TTS_EXPERIMENT": "1", "APP_ENV": "development"}), \
+                patch("services.cloud_speech.CloudSpeechRecognizer") as recognizer:
+            recognizer.return_value.recognize.return_value = ("こんにちは", None)
+            self.assertEqual(self.client.post(url, json=payload).status_code, 401)
+            self.assertEqual(self.client.post(url, json=payload,
+                headers={"Authorization": "Bearer bob"}).status_code, 404)
+            invalid = self.client.post(url, json={"audio": "not-base64"}, headers=headers)
+            self.assertEqual(invalid.status_code, 400)
+            response = self.client.post(url, json=payload, headers=headers)
+            self.assertEqual(response.status_code, 200, response.json)
+            self.assertEqual(response.json["text"], "こんにちは")
+            self.assertNotIn("stt_ms", response.json)
+            recognizer.return_value.recognize.assert_called_once_with(audio)
+            too_long = base64.b64encode(b"\x00\x00" * (16_000 * 11)).decode("ascii")
+            response = self.client.post(url, json={"audio": too_long}, headers=headers)
+            self.assertEqual(response.status_code, 413)
+            recognizer.return_value.recognize.assert_called_once()
 
     def test_turn_api_sends_saved_system_prompt_and_bounded_context_to_provider(self):
         session_id = self.start().json["session"]["id"]

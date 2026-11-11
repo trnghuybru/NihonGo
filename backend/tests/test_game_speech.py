@@ -10,8 +10,8 @@ class SpeechTests(unittest.TestCase):
         self.raw = (np.ones(16000, dtype='<i2') * 2000).tobytes()
         self.recognizer = CloudSpeechRecognizer('unit-project-123')
 
-    @patch('games.speech.vertex_token', return_value='test-only-token')
-    @patch('games.speech.requests.post')
+    @patch('services.cloud_speech.vertex_token', return_value='test-only-token')
+    @patch('services.cloud_speech.requests.post')
     def test_short_japanese_audio_without_answer_hints(self, post, token):
         post.return_value = Mock(status_code=200)
         post.return_value.json.return_value = {'results': [{'alternatives': [{'transcript': '学校', 'confidence': .95}]}]}
@@ -29,14 +29,14 @@ class SpeechTests(unittest.TestCase):
         self.assertTrue(pcm.endswith(bytes(25600)))
         self.assertLessEqual(len(pcm), 320000)
 
-    @patch('games.speech.requests.post')
+    @patch('services.cloud_speech.requests.post')
     def test_silence_never_calls_provider(self, post):
         self.assertIsNotNone(self.recognizer.recognize(bytes(32000))[1])
         self.assertIsNotNone(self.recognizer.recognize(bytes(100))[1])
         post.assert_not_called()
 
-    @patch('games.speech.vertex_token', return_value='test-only-token')
-    @patch('games.speech.requests.post')
+    @patch('services.cloud_speech.vertex_token', return_value='test-only-token')
+    @patch('services.cloud_speech.requests.post')
     def test_uncertain_transcript_and_provider_errors_are_unscored(self, post, token):
         post.return_value = Mock(status_code=200)
         post.return_value.json.return_value = {'results': [{'alternatives': [{'transcript': '猫', 'confidence': .3}]}]}

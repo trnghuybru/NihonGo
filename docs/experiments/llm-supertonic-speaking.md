@@ -4,9 +4,11 @@ Nhánh: `experiment/llm-supertonic-speaking`. Chỉ thử web local; endpoint t�
 
 ## Chạy
 
-- Backend local: `SPEAKING_TTS_EXPERIMENT=1`, `SUPERTONIC_TTS_ENABLED=true`; model và R2 đã cấu hình trong `.env` (không commit).
-- Khởi động lại backend và Vite. Vào Nói, chọn kịch bản, giữ/thả micro hoặc nhập tin nhắn.
-- Chrome nhận dạng tiếng Nhật bằng Web Speech; không gọi Gemini Live. Nếu trình duyệt không hỗ trợ, dùng nhắn tin.
+- Backend local: `SPEAKING_TTS_EXPERIMENT=1`, `SUPERTONIC_TTS_ENABLED=true`; model và S3-compatible storage đã cấu hình trong `.env` (không commit).
+- Cấu hình `GAME_SPEECH_PROJECT_ID` (hoặc `VERTEX_PROJECT_ID`) và `GOOGLE_APPLICATION_CREDENTIALS` trong `backend/.env` cho Google Cloud Speech-to-Text. Bật API Speech-to-Text và cấp service account quyền Cloud Speech Client; không lưu credential trong Git.
+- Khởi động lại backend và Vite. Bản local mở mục Nói; chọn kịch bản, giữ/thả micro hoặc nhập tin nhắn.
+- Micro gửi PCM 16 kHz tới backend, backend nhận dạng tiếng Nhật bằng Google Cloud Speech-to-Text; không gọi Gemini Live. Audio chỉ được giữ trong bộ nhớ để nhận dạng, không lưu thành file.
+- Sau lượt nói thành công, transcript có nút nghe lại giọng người học; tối đa 20 WAV gần nhất được giữ tạm trong trình duyệt và bị xóa khi đóng màn hình hội thoại. Muốn nghe lại sau khi tải lại cần bật tùy chọn lưu âm thanh của phiên.
 - `frontend/src/config/speakingExperiment.ts`: đổi cờ thành `false` để trở về transport Live; cần credentials Live hợp lệ để so sánh.
 
 ## Luồng
@@ -25,8 +27,6 @@ Hai lượt gọi thực tế, không dùng Live, câu trả lời khác nhau:
 | Tiếp theo | 1509 ms | 3424 ms | 834 ms | 5767 ms |
 
 Đây là số đo backend + tải WAV, chưa gồm micro/STT và audio device. Chưa đủ mẫu để suy ra p95 hay tải đồng thời/VPS. Không có số đo Live cùng điều kiện nên chưa thể kết luận so sánh trực tiếp.
-
-UI hiển thị độ trễ STT sau thả micro, LLM (gồm DB), TTS/R2 (gồm chờ lock/cache), tải/giải mã và tổng đến lúc lập lịch phát. Nếu nhận dạng tự kết thúc trước khi thả micro, STT tail tính từ sự kiện final, không phải thời điểm âm tiết cuối. Retry có thể dùng lại câu trả lời và WAV nên không nên tính là mẫu tạo mới.
 
 ## Giới hạn
 

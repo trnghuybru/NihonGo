@@ -64,6 +64,8 @@ export function SpeakingMessages({
       assetId: string,
       normalizeMicrophone: boolean,
     ) => void;
+    toggleLocal?: (messageId: string, url: string) => void;
+    localAudioUrls?: Record<string, string>;
   };
 }) {
   const list = useRef<FlatList<Message>>(null);
@@ -205,7 +207,9 @@ export function SpeakingMessages({
                 {item.content || 'Đang nhận phản hồi…'}
               </Text>
             </View>
-            {item.audio && replay ? (
+            {(item.audio ||
+              (replay?.localAudioUrls?.[item.id] && replay.toggleLocal)) &&
+            replay ? (
               <Pressable
                 accessibilityRole="button"
                 accessibilityLabel={`${
@@ -218,11 +222,16 @@ export function SpeakingMessages({
                 }}
                 disabled={replay.disabled}
                 onPress={() =>
-                  replay.toggle(
-                    item.id,
-                    item.audio!.id,
-                    item.speaker === 'user',
-                  )
+                  replay.localAudioUrls?.[item.id] && replay.toggleLocal
+                    ? replay.toggleLocal(
+                        item.id,
+                        replay.localAudioUrls[item.id],
+                      )
+                    : replay.toggle(
+                        item.id,
+                        item.audio!.id,
+                        item.speaker === 'user',
+                      )
                 }
                 style={({ pressed }) => [
                   styles.audioButton,
