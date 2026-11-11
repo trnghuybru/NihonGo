@@ -1,10 +1,10 @@
 # Thử nghiệm Nói: LLM thường + Supertonic
 
-Nhánh: `experiment/llm-supertonic-speaking`. Chỉ thử web local; endpoint từ chối môi trường production.
+Luồng này dùng LLM thường, Google Cloud Speech-to-Text và Supertonic, không gọi Gemini Live. Web mở theo cờ local/staging; backend chỉ mở khi `SPEAKING_TTS_EXPERIMENT=1`.
 
 ## Chạy
 
-- Backend local: `SPEAKING_TTS_EXPERIMENT=1`, `SUPERTONIC_TTS_ENABLED=true`; model và S3-compatible storage đã cấu hình trong `.env` (không commit).
+- Backend local/staging: `SPEAKING_TTS_EXPERIMENT=1`, `SUPERTONIC_TTS_ENABLED=true`; model và S3-compatible storage đã cấu hình trong `.env` (không commit). Staging build bật `VITE_BETA_SPEAKING_MODE=true`.
 - Cấu hình `GAME_SPEECH_PROJECT_ID` (hoặc `VERTEX_PROJECT_ID`) và `GOOGLE_APPLICATION_CREDENTIALS` trong `backend/.env` cho Google Cloud Speech-to-Text. Bật API Speech-to-Text và cấp service account quyền Cloud Speech Client; không lưu credential trong Git.
 - Khởi động lại backend và Vite. Bản local mở mục Nói; chọn kịch bản, giữ/thả micro hoặc nhập tin nhắn.
 - Micro gửi PCM 16 kHz tới backend, backend nhận dạng tiếng Nhật bằng Google Cloud Speech-to-Text; không gọi Gemini Live. Audio chỉ được giữ trong bộ nhớ để nhận dạng, không lưu thành file.

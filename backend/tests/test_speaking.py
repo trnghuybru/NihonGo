@@ -559,8 +559,22 @@ class SpeakingTests(unittest.TestCase):
             again = self.client.post(url, json=data, headers=headers)
             self.assertEqual(again.status_code, 200, again.json)
             llm.assert_called_once()
-        with patch.dict(os.environ, {"SPEAKING_TTS_EXPERIMENT": "1", "APP_ENV": "production"}):
+        with patch.dict(os.environ, {"SPEAKING_TTS_EXPERIMENT": "0", "APP_ENV": "production"}):
             self.assertEqual(self.client.post(url, json=data, headers=headers).status_code, 404)
+
+    def test_experimental_turn_can_be_enabled_explicitly_in_production(self):
+        from speaking.ai import ExpressiveReply
+        session_id = self.start().json["session"]["id"]
+        url = f"/api/speaking/sessions/{session_id}/experimental-turn"
+        data = {"request_id": str(uuid.uuid4()), "content": "こんにちは", "input_mode": "voice"}
+        headers = {"Authorization": "Bearer alice"}
+        with patch.dict(os.environ, {"SPEAKING_TTS_EXPERIMENT": "1", "APP_ENV": "production"}), \
+                patch("speaking.conversation.generate_reply", return_value=ExpressiveReply("こんにちは！", "happy")), \
+                patch("speaking.experiment.supertonic_text_playback",
+                      return_value={"url": "https://example.test/audio.wav"}):
+            response = self.client.post(
+                url, json=data, headers={"Authorization": f"Bearer {'alice'}"})
+        self.assertEqual(response.status_code, 200, response.json)
 
     def test_experimental_transcription_uses_cloud_speech_and_checks_session(self):
         session_id = self.start().json["session"]["id"]

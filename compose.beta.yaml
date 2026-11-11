@@ -64,6 +64,7 @@ services:
       AUDIO_LOCAL_ROOT: ${AUDIO_LOCAL_ROOT-/audio}
       SUPERTONIC_MODEL_DIR: /models/supertonic3
       SUPERTONIC_TTS_ENABLED: ${SUPERTONIC_TTS_ENABLED:-true}
+      SPEAKING_TTS_EXPERIMENT: "1"
       GOOGLE_APPLICATION_CREDENTIALS: /run/vertex-secrets/vertex.json
     volumes:
       - ./backend/models/translation/m2m100_418M:/models/translation:ro

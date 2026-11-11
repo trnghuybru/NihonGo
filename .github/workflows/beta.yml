@@ -64,6 +64,7 @@ jobs:
           VITE_BETA_LIVE_MODE: 'true'
           VITE_BETA_AUDIO_STORAGE_MODE: 'true'
           VITE_BETA_GAMES_MODE: 'true'
+          VITE_BETA_SPEAKING_MODE: 'true'
 
   deploy:
     if: github.event_name == 'push' && github.ref == 'refs/heads/staging'
@@ -92,6 +93,7 @@ jobs:
           VITE_BETA_LIVE_MODE: 'true'
           VITE_BETA_AUDIO_STORAGE_MODE: 'true'
           VITE_BETA_GAMES_MODE: 'true'
+          VITE_BETA_SPEAKING_MODE: 'true'
       - name: Pack and upload release
         shell: bash
         run: |
