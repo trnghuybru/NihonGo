@@ -7,6 +7,7 @@ def init_speaking(app):
     from .storage import initialize_bucket
     from .local_storage import bp as audio_objects_bp
     from .deletion import cleanup_command
+    from . import experiment  # register local-only experiment route
     app.register_blueprint(bp)
     app.register_blueprint(audio_objects_bp)
     app.cli.add_command(seed_scenarios)

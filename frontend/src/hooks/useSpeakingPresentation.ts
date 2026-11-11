@@ -11,6 +11,7 @@ export type SpeakingPhase =
   | 'processing'
   | 'error';
 export interface SpeakingPresentation {
+  emotion?: string;
   phase: SpeakingPhase;
   transport: LiveState;
   playback: 'playing' | 'stopped';

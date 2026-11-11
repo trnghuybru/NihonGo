@@ -91,7 +91,7 @@ def reply_public(user_message, assistant):
     return {"user_message": message_public(user_message), "assistant_message": message_public(assistant)}
 
 
-def send_turn(user_id, session_id, values):
+def send_turn(user_id, session_id, values, experimental=False):
     session = owned_session(user_id, session_id, lock=True)
     if session.status != "active":
         raise ApiError("Buổi hội thoại hiện không hoạt động.", 409, "session_inactive")
@@ -141,7 +141,8 @@ def send_turn(user_id, session_id, values):
     # Commit the reservation and release the session lock before network IO.
     db.session.commit()
     try:
-        content = generate_reply(snapshot, messages)
+        content = (generate_reply(snapshot, messages, experimental=True) if experimental
+                   else generate_reply(snapshot, messages))
     except ApiError:
         db.session.execute(update(ConversationMessage).where(
             ConversationMessage.id == assistant_id, ConversationMessage.status == "pending",
@@ -156,5 +157,8 @@ def send_turn(user_id, session_id, values):
         db.session.rollback()
         raise ApiError("Lượt hội thoại đã thay đổi. Vui lòng tải lại.", 409, "turn_conflict")
     db.session.commit()
-    return reply_public(db.session.get(ConversationMessage, user_message_id),
-                        db.session.get(ConversationMessage, assistant_id))
+    result = reply_public(db.session.get(ConversationMessage, user_message_id),
+                          db.session.get(ConversationMessage, assistant_id))
+    if experimental:
+        result['emotion'] = getattr(content, 'emotion', 'neutral')
+    return result

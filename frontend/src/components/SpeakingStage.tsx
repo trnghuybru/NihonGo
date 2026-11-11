@@ -66,6 +66,7 @@ export function SpeakingAvatar({
       >
         <CharacterView3D
           isSpeaking={presentation.phase === 'ai_speaking'}
+          emotion={presentation.emotion}
           portrait
         />
       </Animated.View>

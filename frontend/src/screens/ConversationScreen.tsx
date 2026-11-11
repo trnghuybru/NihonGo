@@ -36,6 +36,8 @@ import { phaseLabels } from '../components/SpeakingStage';
 import { useConversation } from '../hooks/useConversation';
 import { useAudioReplay } from '../hooks/useAudioReplay';
 import { useSentenceFeedback } from '../hooks/useSentenceFeedback';
+import { speakingTtsExperiment } from '../config/speakingExperiment';
+import { TtsConversationService, ExperimentMetrics } from '../services/ttsConversationService';
 import { GeminiLiveService } from '../services/geminiLiveService';
 import { StartedSession, speakingService } from '../services/speakingService';
 import { errorMessage } from '../hooks/useSpeakingScenarios';
@@ -58,7 +60,7 @@ export function ConversationScreen({
   result: StartedSession;
   onBack: () => void;
 }) {
-  if (betaWeb && !betaLiveWeb)
+  if (!speakingTtsExperiment && betaWeb && !betaLiveWeb)
     return <BetaTextConversationScreen result={result} onBack={onBack} />;
   return <LiveConversationScreen result={result} onBack={onBack} />;
 }
@@ -75,7 +77,9 @@ function LiveConversationScreen({
   const chat = useConversation(result.session.id);
   const replay = useAudioReplay(result.session.id);
   const sentenceFeedback = useSentenceFeedback(result.session.id);
-  const client = useRef<GeminiLiveService | null>(null);
+  const client = useRef<GeminiLiveService | TtsConversationService | null>(null);
+  const [metrics, setMetrics] = useState<ExperimentMetrics | null>(null);
+  const [emotion, setEmotion] = useState('neutral');
   const lifecycle = useRef(0);
   const openingRequested = useRef(false);
   const { presentation, dispatch } = useSpeakingPresentation();
@@ -108,7 +112,7 @@ function LiveConversationScreen({
     await previous?.close();
     if (generation !== lifecycle.current) return;
     const current = () => generation === lifecycle.current;
-    const live = new GeminiLiveService(result.session.id, {
+    const callbacks: import('../services/geminiLiveService').LiveCallbacks = {
       onState: value => {
         if (current()) dispatch({ type: 'transport', value });
       },
@@ -128,7 +132,10 @@ function LiveConversationScreen({
       onSaved: () => {
         if (current()) reload.current();
       },
-    });
+    };
+    const live = speakingTtsExperiment
+      ? new TtsConversationService(result.session.id, callbacks, setMetrics, setEmotion)
+      : new GeminiLiveService(result.session.id, callbacks);
     client.current = live;
     const connected = await live.connect(
       openingRequested.current ? undefined : result.opening_message?.content,
@@ -143,7 +150,7 @@ function LiveConversationScreen({
   ]);
   useEffect(() => {
     if (!chat.ready || !active) return;
-    if (!betaWeb) connect();
+    if (!betaWeb || speakingTtsExperiment) connect();
     const subscription = AppState.addEventListener('change', next => {
       if (next === 'background') {
         client.current?.interrupt();
@@ -348,6 +355,9 @@ function LiveConversationScreen({
         <View style={styles.headingCopy}>
           <Text style={styles.title}>{result.scenario.title}</Text>
           <Text style={styles.hint}>Aoi · {result.scenario.role.name}</Text>
+          {speakingTtsExperiment && <Text style={styles.hint}>
+            LLM + Supertonic · {emotion}{metrics ? ` · ${metrics.total_ms} ms đến âm thanh\nSTT ${metrics.stt_ms} · LLM ${metrics.llm_ms} · TTS/R2 ${metrics.tts_storage_ms} · tải/phát ${metrics.download_ms} ms` : ''}
+          </Text>}
         </View>
         {active ? (
           <AuthButton
@@ -372,7 +382,7 @@ function LiveConversationScreen({
           toolbar
         ) : (
           <SpeakingAvatar
-            presentation={presentation}
+            presentation={{ ...presentation, emotion }}
             height={avatarHeight}
             handoff={handoff}
             toolbar={toolbar}
@@ -384,7 +394,7 @@ function LiveConversationScreen({
           </Text>
           <SpeakingMessages
             messages={chat.messages}
-            presentation={presentation}
+            presentation={{ ...presentation, emotion }}
             replay={replayControls}
             feedbackControls={sentenceFeedback}
           />
@@ -443,7 +453,7 @@ function LiveConversationScreen({
         ) : !active ? null : inputMode === 'voice' ? (
           <View style={styles.voiceControls}>
             <SpeakingMicrophone
-              presentation={presentation}
+              presentation={{ ...presentation, emotion }}
               ready={ready}
               label={micLabel}
               onPressIn={() => {

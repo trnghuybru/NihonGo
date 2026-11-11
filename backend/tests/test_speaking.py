@@ -537,6 +537,29 @@ class SpeakingTests(unittest.TestCase):
         self.assertNotIn("PRIVATE PROMPT", str(rows))
         self.assertEqual(db.session.get(ConversationSession, session_id).current_input_mode, "voice")
 
+    def test_experimental_turn_is_gated_owned_and_idempotent(self):
+        from speaking.ai import ExpressiveReply
+        session_id = self.start().json["session"]["id"]
+        url = f"/api/speaking/sessions/{session_id}/experimental-turn"
+        data = {"request_id": str(uuid.uuid4()), "content": "こんにちは", "input_mode": "voice"}
+        headers = {"Authorization": "Bearer alice"}
+        with patch.dict(os.environ, {"SPEAKING_TTS_EXPERIMENT": "0"}):
+            self.assertEqual(self.client.post(url, json=data, headers=headers).status_code, 404)
+        with patch.dict(os.environ, {"SPEAKING_TTS_EXPERIMENT": "1", "APP_ENV": "development"}), \
+                patch("speaking.conversation.generate_reply", return_value=ExpressiveReply("こんにちは！", "happy")) as llm, \
+                patch("speaking.experiment.supertonic_text_playback", return_value={"url": "https://example.test/audio.wav"}):
+            self.assertEqual(self.client.post(url, json=data).status_code, 401)
+            self.assertEqual(self.client.post(url, json=data, headers={"Authorization": "Bearer bob"}).status_code, 404)
+            reply = self.client.post(url, json=data, headers=headers)
+            self.assertEqual(reply.status_code, 200, reply.json)
+            self.assertEqual(reply.json["emotion"], "happy")
+            self.assertEqual(reply.json["assistant_message"]["content"], "こんにちは！")
+            again = self.client.post(url, json=data, headers=headers)
+            self.assertEqual(again.status_code, 200, again.json)
+            llm.assert_called_once()
+        with patch.dict(os.environ, {"SPEAKING_TTS_EXPERIMENT": "1", "APP_ENV": "production"}):
+            self.assertEqual(self.client.post(url, json=data, headers=headers).status_code, 404)
+
     def test_turn_api_sends_saved_system_prompt_and_bounded_context_to_provider(self):
         session_id = self.start().json["session"]["id"]
         self.first.context = "CHANGED CONTEXT"

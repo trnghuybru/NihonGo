@@ -18,7 +18,8 @@ bp = Blueprint("speaking", __name__, url_prefix="/api/speaking")
 def pause_beta_ai_speaking():
     from auth.beta import enabled
     from api_errors import ApiError
-    if enabled() and (
+    from .experiment import enabled as experiment_enabled
+    if enabled() and not experiment_enabled() and (
         request.method == "POST" or request.endpoint == "speaking.gemini_live_stream"
     ):
         raise ApiError(

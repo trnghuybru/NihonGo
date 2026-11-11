@@ -258,6 +258,7 @@ def api_character_view_embedded():
   <script>
     let scene, camera, renderer, mixer, action, clock, model;
     let isSpeaking = false;
+    let emotion = 'neutral';
     let cameraTargetY = 1.20;
 
     function reportToRN(data) {
@@ -464,6 +465,11 @@ def api_character_view_embedded():
       const time = clock.getElapsedTime();
 
       if (mixer) mixer.update(delta);
+      // Experimental body-language cue; this is not a facial-expression rig.
+      if (model) {
+        const tilt = { neutral: 0, happy: 0.025, sad: -0.035, surprised: 0.04, concerned: -0.02 }[emotion] || 0;
+        model.rotation.z += ((isSpeaking ? tilt : 0) - model.rotation.z) * Math.min(1, delta * 5);
+      }
 
       // Cử động nhấp mở miệng theo nhịp điệu giọng nói tiếng Nhật
       if (mouthMesh && mouthMesh.morphTargetInfluences) {
@@ -495,6 +501,7 @@ def api_character_view_embedded():
           camera.position.set(0, data.portrait ? 1.35 : 1.06, data.portrait ? 1.75 : 2.60);
           camera.lookAt(0, cameraTargetY, 0);
         }
+        if (data.type === 'SET_EMOTION' && ['neutral', 'happy', 'sad', 'surprised', 'concerned'].includes(data.emotion)) emotion = data.emotion;
         if (data.type === 'SET_SPEAKING') {
           isSpeaking = Boolean(data.isSpeaking);
           if (action) {

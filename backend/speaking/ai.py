@@ -1,5 +1,6 @@
 """Server-owned prompts and provider credentials for persisted conversations."""
 import os
+import json
 import logging
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
@@ -54,18 +55,36 @@ def build_scenario_system_prompt(snapshot):
     )
 
 
-def generate_reply(snapshot, history):
+class ExpressiveReply(str):
+    def __new__(cls, text, emotion):
+        result = super().__new__(cls, text)
+        result.emotion = emotion
+        return result
+
+
+def generate_reply(snapshot, history, experimental=False):
     key = os.getenv("GEMINI_API_KEY", "").strip().strip('"').strip("'")
     if not gemini_configured():
         raise ApiError("Dịch vụ AI chưa được cấu hình.", 503, "ai_unavailable")
     prompt = build_scenario_system_prompt(snapshot)
     model = os.getenv("GEMINI_CHAT_MODEL") or DEFAULT_MODEL
+    payload = gemini_payload(prompt, history, model)
+    if experimental:
+        payload['systemInstruction']['parts'][0]['text'] = prompt.replace(
+            "Output only your character's dialogue, without markdown or speaker labels.",
+            "Return JSON with text (Japanese dialogue, at most 300 characters) and emotion. "
+            "Choose the counterpart's emotion from neutral, happy, sad, surprised, concerned; "
+            "express it naturally through word choice and punctuation, without stage directions.")
+        payload['generationConfig'].update(responseMimeType='application/json', responseJsonSchema={
+            'type': 'object', 'properties': {'text': {'type': 'string'},
+                'emotion': {'type': 'string', 'enum': ['neutral', 'happy', 'sad', 'surprised', 'concerned']}},
+            'required': ['text', 'emotion']})
     try:
         from beta_ai.service import post as gemini_post
         with gemini_post(
             gemini_url(model),
             headers={"x-goog-api-key": key, "Content-Type": "application/json"},
-            json=gemini_payload(prompt, history, model),
+            json=payload,
             timeout=(5, 25),
         ) as response:
             if response.status_code == 402:
@@ -86,6 +105,13 @@ def generate_reply(snapshot, history):
         content = gemini_text(data)
         if not isinstance(content, str) or not content.strip() or len(content) > 12000:
             raise ValueError("Invalid provider reply")
+        if experimental:
+            parsed = json.loads(content)
+            if (not isinstance(parsed.get('text'), str) or not parsed['text'].strip()
+                    or len(parsed['text']) > 500 or parsed.get('emotion') not in
+                    {'neutral', 'happy', 'sad', 'surprised', 'concerned'}):
+                raise ValueError('Invalid expressive reply')
+            return ExpressiveReply(parsed['text'].strip(), parsed['emotion'])
         return content.strip()
     except requests.Timeout:
         raise ApiError("AI phản hồi quá lâu. Vui lòng thử lại.", 504, "ai_timeout") from None

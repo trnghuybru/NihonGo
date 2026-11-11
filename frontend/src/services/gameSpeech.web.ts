@@ -19,7 +19,7 @@ type SpeechWindow = Window & {
   webkitSpeechRecognition?: new () => Recognition;
 };
 
-export function createGameSpeech(): GameSpeech {
+export function createGameSpeech(maxCharacters = 100): GameSpeech {
   const browser =
     typeof window === 'undefined' ? null : (window as SpeechWindow);
   const Constructor =
@@ -75,7 +75,7 @@ export function createGameSpeech(): GameSpeech {
                   .filter(Boolean)
               : [text];
           callbacks.onFinal(
-            alternatives.slice(0, 3).map(item => item.slice(0, 100)),
+            alternatives.slice(0, 3).map(item => item.slice(0, maxCharacters)),
           );
         };
         next.onerror = () => {

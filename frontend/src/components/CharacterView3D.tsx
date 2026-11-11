@@ -7,9 +7,11 @@ import { colors, radius, spacing, typography } from '../theme/theme';
 
 export function CharacterView3D({
   isSpeaking,
+  emotion = 'neutral',
   portrait = false,
 }: {
   isSpeaking: boolean;
+  emotion?: string;
   portrait?: boolean;
 }) {
   const webview = useRef<WebView<unknown>>(null);
@@ -27,6 +29,9 @@ export function CharacterView3D({
         JSON.stringify({ type: 'SET_FRAMING', portrait }),
       );
   }, [loaded, portrait]);
+  useEffect(() => {
+    if (loaded) webview.current?.postMessage(JSON.stringify({ type: 'SET_EMOTION', emotion }));
+  }, [loaded, emotion]);
   useEffect(() => {
     if (loaded || error) return;
     const timer = setTimeout(
