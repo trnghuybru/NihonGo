@@ -13,7 +13,6 @@ import {
 import { AuthButton, AuthNotice } from '../components/AuthForm';
 import { ScreenBackHeader } from '../components/ScreenBackHeader';
 import { NihongoMascot } from '../components/NihongoMascot';
-import { starterWords } from '../games/castle/data';
 import { MomoGameSprite } from '../games/castle/MomoGameSprite';
 import { useBottomNavigationInset } from '../hooks/useBottomNavigationInset';
 import { gameService, GameCatalog } from '../services/gameService';
@@ -239,7 +238,6 @@ export function SharedGameRoomScreen({
     [seconds, setSeconds] = useState(9),
     [count, setCount] = useState(10),
     [lesson, setLesson] = useState('');
-  const [topic, setTopic] = useState('Tất cả');
   const [catalog, setCatalog] = useState<GameCatalog | null>(null),
     [page, setPage] = useState(1);
   const configuration = room
@@ -253,7 +251,6 @@ export function SharedGameRoomScreen({
     setSource(value.selected_game ? value.settings.source : 'starter');
     setSeconds(value.selected_game ? value.settings.seconds : 9);
     setCount(value.settings.question_count);
-    setTopic(value.settings.topic || 'Tất cả');
     setLesson(value.settings.lesson_id || '');
   }, [configuration]);
   useEffect(() => {
@@ -430,7 +427,6 @@ export function SharedGameRoomScreen({
                     chosen={level === item}
                     onPress={() => {
                       setLevel(item);
-                      setTopic('Tất cả');
                       setLesson('');
                       setPage(1);
                     }}
@@ -440,7 +436,7 @@ export function SharedGameRoomScreen({
               <Text style={s.label}>Nguồn từ</Text>
               <View style={s.row}>
                 <Option
-                  label={game === 'castle' ? 'Bộ từ khởi động' : 'JLPT'}
+                  label={game === 'castle' ? 'Kho từ NihonGO' : 'JLPT'}
                   chosen={source !== 'lesson'}
                   onPress={() =>
                     setSource(game === 'castle' ? 'starter' : 'jlpt')
@@ -452,28 +448,6 @@ export function SharedGameRoomScreen({
                   onPress={() => setSource('lesson')}
                 />
               </View>
-              {game === 'castle' && source !== 'lesson' ? (
-                <>
-                  <Text style={s.label}>Chủ đề</Text>
-                  <View style={s.row}>
-                    {[
-                      'Tất cả',
-                      ...new Set(
-                        starterWords
-                          .filter(w => w.level === level)
-                          .map(w => w.category),
-                      ),
-                    ].map(item => (
-                      <Option
-                        key={item}
-                        label={item}
-                        chosen={topic === item}
-                        onPress={() => setTopic(item)}
-                      />
-                    ))}
-                  </View>
-                </>
-              ) : null}
               {source === 'lesson' ? (
                 <>
                   <View style={s.row}>
@@ -542,7 +516,7 @@ export function SharedGameRoomScreen({
                       game,
                       level,
                       source,
-                      topic,
+                      topic: 'Tất cả',
                       seconds,
                       question_count: count,
                       lesson_id: source === 'lesson' ? lesson : null,

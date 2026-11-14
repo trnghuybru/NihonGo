@@ -4,7 +4,7 @@ import { CastleBattle, CastleConfig, CastleEvent, Side } from './engine';
 import { createCastleAudio } from './audio';
 import { castleProgress } from './progress';
 import type { CastleRoom } from './online.types';
-import { starterWords, romanize } from './data';
+import { romanize } from './data';
 import { CastleProgress, defaultProgress } from './progress.types';
 
 export function useCastleGame(accountId: string) {
@@ -67,7 +67,7 @@ export function useCastleGame(accountId: string) {
       if (battle.phase !== 'finished' || saved.current === battle) return;
       saved.current = battle;
       const p = battle.players[side],
-        level = battle.config.words[0].level,
+        level = battle.config.level ?? battle.config.words[0]?.level ?? 'N5',
         previous = progressRef.current;
       const score = Math.max(
         0,
@@ -239,7 +239,8 @@ export function useCastleGame(accountId: string) {
           mode: 'online',
           difficulty: 'normal',
           roundSeconds: room.round_seconds,
-          words: starterWords.filter(word => word.level === room.level),
+          level: room.level,
+          words: [],
           names: [value.players[0].name, value.players[1].name],
         });
         battleRef.current = battle;

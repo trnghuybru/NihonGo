@@ -11,6 +11,7 @@ export type CastleConfig = {
   mode: 'bot' | 'local' | 'online';
   difficulty: Difficulty;
   roundSeconds: 8 | 9 | 10;
+  level?: string;
   words: CastleWord[];
   targets?: CastleWord[];
   names: [string, string];
@@ -122,20 +123,23 @@ export class CastleBattle {
   private aiSkillAt = 0;
   private targets: CastleWord[];
   constructor(public config: CastleConfig, private random = Math.random) {
-    if (config.words.length < 4)
+    if (config.mode !== 'online' && config.words.length < 4)
       throw new Error('Cần ít nhất 4 từ để bắt đầu.');
     const kinds: QuestionKind[] = ['reading', 'kanji', 'meaning', 'reverse'];
-    this.targets = (config.targets || config.words).filter(word =>
-      kinds.every(kind => {
-        try {
-          makeQuestion(word, config.words, 0, kind, () => 0.5);
-          return true;
-        } catch {
-          return false;
-        }
-      }),
-    );
-    if (!this.targets.length)
+    this.targets =
+      config.mode === 'online'
+        ? []
+        : (config.targets || config.words).filter(word =>
+            kinds.every(kind => {
+              try {
+                makeQuestion(word, config.words, 0, kind, () => 0.5);
+                return true;
+              } catch {
+                return false;
+              }
+            }),
+          );
+    if (config.mode !== 'online' && !this.targets.length)
       throw new Error('Bộ từ chưa đủ đáp án khác nhau cho cả 4 dạng câu hỏi.');
     const player = (name: string): Commander => ({
       name,

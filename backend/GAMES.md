@@ -84,7 +84,7 @@ npm run web:build
 
 Các API engine/phòng cũ dưới đây được giữ tương thích. Phòng mới dùng party chung /games/lobbies ở phần cuối.
 
-- POST /api/games/castle/rooms: tạo phòng, chọn level N5–N1, source starter/lesson, topic/lesson_id, round_seconds 8/9/10.
+- POST /api/games/castle/rooms: tạo phòng, chọn level N5–N1, source starter/lesson, lesson_id khi chọn bài, round_seconds 8/9/10. `starter` là giá trị tương thích cho kho từ cùng cấp trong database.
 - GET /api/games/castle/rooms/:code: snapshot riêng cho thành viên, đồng thời heartbeat.
 - POST /api/games/castle/rooms/:code/{join,ready,start,answer,skill,leave}: vào phòng, sẵn sàng, bắt đầu (chủ phòng), trả lời (round_id/index), kỹ năng (kind arrow/shield), rời trận.
 - GET /api/games/resolve/:code: metadata loại phòng cho Kho game, không chứa câu hỏi/đáp án.
@@ -94,7 +94,7 @@ Luật tại games/castle.py, API tại castle_routes.py. Dùng bảng GameRoom 
 
 Client render/nội suy ảnh Momo, nhận notification rồi lấy snapshot, có polling 750 ms dự phòng. Tải lại link /games/:code tự xác định loại game và nối lại đúng đội. Online không pause khi đổi tab. Kết quả và từ sai lưu trên thiết bị của đúng tài khoản/đội; trạng thái phòng lưu DB. Không gọi AI cho câu hỏi hoặc mô phỏng trận.
 
-Dữ liệu starter server tại backend/data/games/castle-starter.json (189 từ, xuất từ frontend/src/games/castle/data.ts); khi sửa bộ từ cần xuất lại bản seed. Bài học lấy từ kho Vocabulary thật theo level, không nhận ngân hàng đáp án từ client.
+Cả nguồn `starter` và bài học đều lấy từ kho Vocabulary trong database theo level. Đấu máy tải từ qua API; trận online tạo câu hỏi trên server. Không nhận ngân hàng đáp án từ client.
 
 ## Phòng chung cho tất cả game
 

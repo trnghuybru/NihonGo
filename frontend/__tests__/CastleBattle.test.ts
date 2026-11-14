@@ -9,11 +9,30 @@ import {
   CastleWord,
   makeQuestion,
   romanize,
-  starterWords,
 } from '../src/games/castle/data';
 import { decodeProgress } from '../src/games/castle/progress.types';
 
-const pool = starterWords.filter(word => word.level === 'N5');
+const words: CastleWord[] = [
+  ['N5', '学校', 'がっこう', 'trường học'],
+  ['N5', '猫', 'ねこ', 'mèo'],
+  ['N5', '犬', 'いぬ', 'chó'],
+  ['N5', '山', 'やま', 'núi'],
+  ['N5', '川', 'かわ', 'sông'],
+  ['N5', '花', 'はな', 'hoa'],
+  ['N4', '住所', 'じゅうしょ', 'địa chỉ'],
+  ['N4', '質問', 'しつもん', 'câu hỏi'],
+  ['N4', '答え', 'こたえ', 'câu trả lời'],
+  ['N4', '試験', 'しけん', 'kỳ thi'],
+].map(([level, kanji, hiragana, meaning]) => ({
+  id: `${level}-${kanji}`,
+  level,
+  kanji,
+  hiragana,
+  meaning,
+  romaji: romanize(hiragana),
+  category: 'Bài học',
+}));
+const pool = words.filter(word => word.level === 'N5');
 function battle(extra: Partial<CastleConfig> = {}) {
   const game = new CastleBattle(
     {
@@ -43,23 +62,35 @@ function troop(side: 0 | 1, x: number, hp = 18, power = 7) {
   };
 }
 describe('Kho từ và câu hỏi công thành', () => {
-  test('đủ bộ từ, tất cả có cách đọc và nghĩa', () => {
-    expect(pool.length).toBeGreaterThanOrEqual(60);
+  test('trận online nhận câu hỏi từ snapshot mà không cần bộ từ trên client', () => {
+    const online = new CastleBattle({
+      mode: 'online',
+      difficulty: 'normal',
+      roundSeconds: 9,
+      level: 'N5',
+      words: [],
+      names: ['A', 'B'],
+    });
+    expect(online.config.words).toEqual([]);
+    expect(online.config.level).toBe('N5');
+  });
+  test('dữ liệu mẫu có cách đọc và nghĩa', () => {
+    expect(pool.length).toBeGreaterThanOrEqual(4);
     expect(
-      starterWords.filter(word => word.level === 'N4').length,
-    ).toBeGreaterThanOrEqual(40);
-    for (const word of starterWords) {
+      words.filter(word => word.level === 'N4').length,
+    ).toBeGreaterThanOrEqual(4);
+    for (const word of words) {
       expect(word.hiragana).toMatch(/^[ぁ-ゖー]+$/);
       expect(word.romaji.length).toBeGreaterThan(0);
       expect(word.meaning.length).toBeGreaterThan(0);
     }
   });
   test('mọi từ có 4 lựa chọn duy nhất, đáp án đúng ở mỗi dạng', () => {
-    for (const word of starterWords)
+    for (const word of words)
       for (const kind of ['reading', 'kanji', 'meaning', 'reverse'] as const) {
         const question = makeQuestion(
           word,
-          starterWords.filter(w => w.level === word.level),
+          words.filter(w => w.level === word.level),
           1,
           kind,
         );

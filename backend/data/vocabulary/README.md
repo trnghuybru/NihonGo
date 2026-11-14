@@ -1,5 +1,10 @@
 # Dữ liệu giáo trình từ vựng
 
+Các dataset JSON đã nhập được gỡ khỏi repository. Ứng dụng đọc dữ liệu từ
+PostgreSQL; các tên file dưới đây là **đầu ra có thể tạo lại** bằng script hoặc
+khôi phục từ lịch sử Git khi cần dựng database mới. Lệnh nhập chỉ chạy sau khi
+có file tương ứng.
+
 N5: nguồn https://jtest.net/tu-vung-n5, dataset `jtest-n5.json` giữ 10 chủ đề và
 50 bài, **1.050 mục và 3.048 ví dụ** theo các bảng thực tế (tiêu đề nguồn ghi 1000).
 Có 1.030 cặp từ/cách đọc khác nhau; không loại bỏ mục lặp khác bài.
@@ -113,7 +118,7 @@ N3 đã hoàn tất trong `mimikara-n3.json`: **12 Unit, 66 bài, 880 từ,
 `[Tiengnhatcoban.net]_tong-hop-tu-vung-mimikara-n3.pdf` (36 trang).
 Mỗi từ bổ sung lưu tên file, SHA-256 và trang PDF trong `source`; không ghi nhận
 các bài này là đã crawl từ website. `coverage.complete=true` và số thứ tự 1–880
-đủ, không trùng. File `mimikara-n3.partial.json` vẫn giữ phiên bản crawl 772 từ.
+đủ, không trùng. Bản crawl 772 từ từng nằm trong `mimikara-n3.partial.json`.
 
 Hai từ số 813 (`オフィス`) và 838 (`煮える`) không có ví dụ trong PDF; giữ
 `examples: []` và ghi `quality_warnings`. Các ví dụ bổ sung giữ nguyên nội dung,
@@ -156,10 +161,12 @@ Tái tạo N3 từ PDF (thư mục gốc dự án, không gọi mạng):
 backend/venv/bin/python -m pip install -r backend/scripts/requirements-pdf.txt
 backend/venv/bin/python backend/scripts/supplement_mimikara_n3_pdf.py \
   --pdf '/path/to/[Tiengnhatcoban.net]_tong-hop-tu-vung-mimikara-n3.pdf' \
+  --base /path/to/mimikara-n3.partial.json \
   --index-html /path/to/cached-n3-index.html
 ```
 
-Script dùng `mimikara-n3.partial.json` làm dữ liệu nền, chỉ bổ sung các bài thiếu.
+Script yêu cầu `--base` trỏ đến bản crawl N3 dở đã tạo lại hoặc khôi phục;
+chỉ bổ sung các bài thiếu.
 `--index-html` là HTML chỉ mục N3 đã cache; nếu bỏ tham số này, dùng chỉ mục trong
 cache crawler mặc định. Cần giữ bản sao chỉ mục trước khi hệ thống dọn thư mục tạm.
 Không đưa PDF cá nhân vào repository. 8 bài bổ sung không có URL audio từ PDF.

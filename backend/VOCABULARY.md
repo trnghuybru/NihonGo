@@ -32,8 +32,9 @@ Kho phụ đề và API video độc lập với JLPT, mô tả và lệnh nhậ
   thứ tự bài/từ phục vụ duyệt từng bài. Không sao chép nội dung giáo trình theo user.
 - `details` của mỗi từ dùng JSONB trên PostgreSQL, giữ `segments`, `examples`,
   `related` và xuất xứ `source` của từ bổ sung từ PDF. Không thêm GIN index khi chưa truy vấn nội dung JSONB.
-- JSON crawl trong `backend/data/vocabulary` giữ nguồn nhập có thể tái tạo.
-  App không bundle hoặc tải toàn bộ JSON; API chỉ trả danh sách đang mở hoặc một bài.
+- JSON nguồn sau khi nhập không được giữ trong repository. App đọc PostgreSQL qua
+  API, chỉ tải danh sách đang mở hoặc một bài. Có thể tạo lại JSON bằng các script
+  trong `backend/scripts` nếu cần nhập vào database mới.
 - `audio_urls` trỏ tới audio **cả bài** của website và chưa được phát trên màn hình.
   Audio riêng từng từ N1 từ Anki được lưu trong bucket `VOCABULARY_S3_BUCKET`
   (mặc định `vocabulary-audio`), khác bucket bản thu hội thoại. `details.audio`
@@ -50,21 +51,13 @@ Trong thư mục `backend`, dùng `.env` tại đây và PostgreSQL đã chạy:
 
 ```sh
 venv/bin/flask --app app db upgrade
-venv/bin/flask --app app vocabulary-import
-venv/bin/flask --app app vocabulary-import --source data/vocabulary/mimikara-n3.json
-venv/bin/flask --app app vocabulary-import --source data/vocabulary/anki-n4.json
-venv/bin/flask --app app vocabulary-import --source data/vocabulary/mimikara-n1.json
-venv/bin/flask --app app vocabulary-import --source data/vocabulary/jtest-n5.json
+venv/bin/flask --app app vocabulary-import --source /path/to/dataset.json
 ```
 
 Importer chỉ nhận dataset schema 1 với `coverage.complete=true`, kiểm tra số lượng
 và ID, cập nhật theo ID ổn định trong một transaction. Chạy lại không tạo bản trùng;
 không tự xóa các bài/từ không có trong file mới. Lỗi rollback toàn bộ lần nhập.
-Không chạy importer tự động mỗi lần backend khởi động. File khác:
-
-```sh
-venv/bin/flask --app app vocabulary-import --source /path/to/dataset.json
-```
+Không chạy importer tự động mỗi lần backend khởi động.
 
 ## Audio từ vựng N1
 

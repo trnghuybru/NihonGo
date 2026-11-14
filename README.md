@@ -98,16 +98,14 @@ python app.py
 
 Lệnh `speaking-seed` có thể chạy lại, không ghi đè tình huống đã tồn tại cùng ID. Backend mặc định lắng nghe tại `0.0.0.0:5001`, cho phép thiết bị cùng mạng kết nối.
 
-Để dùng bài học N1–N5 và ví dụ video mẫu, chạy thêm trong thư mục backend:
+Nếu database chưa có bài học N1–N5, hãy tạo hoặc khôi phục các JSON nguồn rồi nhập trong thư mục backend:
 
 ```sh
-flask --app app vocabulary-import
-flask --app app vocabulary-import --source data/vocabulary/mimikara-n3.json
-flask --app app vocabulary-import --source data/vocabulary/anki-n4.json
-flask --app app vocabulary-import --source data/vocabulary/mimikara-n1.json
-flask --app app vocabulary-import --source data/vocabulary/jtest-n5.json
+flask --app app vocabulary-import --source /path/to/dataset.json
 flask --app app video-examples-import
 ```
+
+Các JSON từ vựng đã nhập không còn được giữ trong repository; xem [hướng dẫn tạo lại](backend/data/vocabulary/README.md).
 
 Để bật từ điển Từ vựng và Hán tự, xem [nhập dữ liệu từ điển](backend/DICTIONARY.md).
 Module dùng PostgreSQL với JMdict, Wiktionary tiếng Việt, KANJIDIC2 và KanjiVG; không cần API key.

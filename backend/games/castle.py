@@ -1,11 +1,8 @@
 """Luật Công thành online. Chỉ gọi khi đã khóa hàng GameRoom."""
 import copy
-import json
 import math
 import secrets
 import uuid
-from functools import lru_cache
-from pathlib import Path
 from sqlalchemy import select
 from api_errors import ApiError
 from auth.models import User
@@ -17,11 +14,6 @@ from . import engine
 TIERS = [(18, 7, 90), (28, 10, 104), (42, 15, 125), (65, 22, 138)]
 MAX_TIME, LEFT, RIGHT, GRACE = 180000, 130, 1070, 20000
 RNG = secrets.SystemRandom()
-
-
-@lru_cache(maxsize=1)
-def starter():
-    return json.loads((Path(__file__).resolve().parent.parent / 'data/games/castle-starter.json').read_text())
 
 
 def member(user, at):
@@ -66,10 +58,12 @@ def create(user, data, at, *, state_only=False):
     if level not in JLPT_LEVELS or source not in ('starter', 'lesson') or type(seconds) is not int or seconds not in (8, 9, 10):
         raise ApiError('Chọn trình độ, nguồn từ và thời gian hợp lệ.')
     if source == 'starter':
-        pool = [copy.deepcopy(w) for w in starter() if w['level'] == level]
-        if topic not in {'Tất cả', *(w['category'] for w in pool)}:
+        if topic != 'Tất cả':
             raise ApiError('Chủ đề không hợp lệ.')
-        targets = [w for w in pool if topic == 'Tất cả' or w['category'] == topic]
+        pool = [dict(id=w['id'], kanji=w['word'], hiragana=w['accepted'][0],
+                     meaning=w['meaning'], romaji='', level=level, category='Kho từ NihonGO')
+                for w in engine.word_pool(level) if w['meaning'].strip()][:240]
+        targets = pool
     else:
         if not isinstance(lesson_id, str) or len(lesson_id) > 100:
             raise ApiError('Hãy chọn bài học.')

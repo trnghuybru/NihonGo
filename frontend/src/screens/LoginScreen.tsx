@@ -28,6 +28,9 @@ import {
 } from '../services/authService';
 import { colors, spacing, typography } from '../theme/theme';
 import { AppleIcon, GoogleIcon } from '../components/icons';
+import { betaWeb } from '../config/beta';
+
+const BETA_SIGNUP_URL = 'https://forms.gle/SYYD5H2M54CfhuLg6';
 
 type Stage = 'login' | 'register' | 'verify' | 'forgot' | 'reset';
 const PROVIDER_NAMES: Record<Provider, string> = {
@@ -302,25 +305,46 @@ export function LoginScreen() {
       }
       footer={
         stage === 'login' ? (
-          <View style={styles.signupRow}>
-            <Text style={styles.signupPrompt}>Chưa có tài khoản?</Text>
-            <Pressable
-              accessibilityRole="link"
-              accessibilityLabel="Đăng ký ngay"
-              accessibilityState={{ disabled: busy || socialPending }}
-              disabled={busy || socialPending}
-              onPress={() => navigate('register')}
-              style={styles.signupAction}
-            >
-              <Text
-                style={[
-                  styles.signupLink,
-                  busy || socialPending ? styles.signupDisabled : null,
-                ]}
-              >
-                Đăng ký ngay
+          <View style={styles.signupFooter}>
+            {betaWeb ? (
+              <View style={styles.betaSignup}>
+                <Text style={styles.signupPrompt}>Muốn tham gia bản beta?</Text>
+                <Pressable
+                  accessibilityRole="link"
+                  accessibilityLabel="Điền khảo sát đăng ký beta"
+                  onPress={() => Linking.openURL(BETA_SIGNUP_URL)}
+                  style={styles.signupAction}
+                >
+                  <Text style={styles.signupLink}>Điền khảo sát đăng ký beta</Text>
+                </Pressable>
+                <Text style={styles.betaSignupNote}>
+                  Sau khi gửi khảo sát, vui lòng đợi trong 24 giờ. Chúng tôi sẽ
+                  gửi email đến bạn.
+                </Text>
+              </View>
+            ) : null}
+            <View style={styles.signupRow}>
+              <Text style={styles.signupPrompt}>
+                {betaWeb ? 'Đã nhận email mời?' : 'Chưa có tài khoản?'}
               </Text>
-            </Pressable>
+              <Pressable
+                accessibilityRole="link"
+                accessibilityLabel="Đăng ký ngay"
+                accessibilityState={{ disabled: busy || socialPending }}
+                disabled={busy || socialPending}
+                onPress={() => navigate('register')}
+                style={styles.signupAction}
+              >
+                <Text
+                  style={[
+                    styles.signupLink,
+                    busy || socialPending ? styles.signupDisabled : null,
+                  ]}
+                >
+                  {betaWeb ? 'Tạo tài khoản' : 'Đăng ký ngay'}
+                </Text>
+              </Pressable>
+            </View>
           </View>
         ) : undefined
       }
@@ -551,6 +575,13 @@ export function LoginScreen() {
 }
 
 const styles = StyleSheet.create({
+  signupFooter: { alignItems: 'center' },
+  betaSignup: { alignItems: 'center', marginBottom: spacing.md },
+  betaSignupNote: {
+    ...typography.caption,
+    color: colors.muted,
+    textAlign: 'center',
+  },
   signupRow: {
     flexDirection: 'row',
     flexWrap: 'wrap',
