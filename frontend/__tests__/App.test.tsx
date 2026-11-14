@@ -46,7 +46,7 @@ jest.mock('../src/services/authService', () => ({
     config: jest.fn().mockResolvedValue({
       channels: ['email'],
       providers: [],
-      password_min_length: 15,
+      password_min_length: 8,
     }),
     resumeSocial: jest.fn().mockResolvedValue(null),
   },

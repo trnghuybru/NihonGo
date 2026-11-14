@@ -82,7 +82,7 @@ def lock_user(user_id):
 def configuration():
     from .oauth import enabled_providers
     return jsonify({"channels": available_channels(), "providers": enabled_providers(),
-                    "password_min_length": 15})
+                    "password_min_length": 8})
 
 
 @bp.get("/ai-budget")
