@@ -12,7 +12,7 @@ jest.mock('../src/services/authService', () => ({
     config: jest.fn().mockResolvedValue({
       channels: ['email'],
       providers: [],
-      password_min_length: 15,
+      password_min_length: 8,
     }),
     resumeSocial: jest.fn().mockResolvedValue(null),
     register: jest.fn(),
@@ -63,19 +63,31 @@ test('registers all required fields and waits for OTP before signing in', async 
   await fill('Họ và tên', 'Nguyễn Minh');
   await fill('Email', 'minh@example.com');
   await fill('Số điện thoại', '0912345678');
-  await fill('Mật khẩu', 'A long secret phrase!');
-  await fill('Xác nhận mật khẩu', 'A long secret phrase!');
+  await fill('Mật khẩu', 'abcdefgh');
+  await fill('Xác nhận mật khẩu', 'abcdefgh');
   await click('Tiếp tục');
   expect(authService.register).toHaveBeenCalledWith({
     name: 'Nguyễn Minh',
     email: 'minh@example.com',
     phone: '0912345678',
-    password: 'A long secret phrase!',
+    password: 'abcdefgh',
   });
   expect(authService.verify).not.toHaveBeenCalled();
   await fill('Mã xác thực', '123456');
   await click('Xác thực và đăng nhập');
   expect(authService.verify).toHaveBeenCalledWith('challenge', '123456');
+});
+
+test('requires at least eight characters when registering', async () => {
+  await click('Đăng ký ngay');
+  await fill('Họ và tên', 'Nguyễn Minh');
+  await fill('Email', 'minh@example.com');
+  await fill('Số điện thoại', '0912345678');
+  await fill('Mật khẩu', '1234567');
+  await fill('Xác nhận mật khẩu', '1234567');
+  await click('Tiếp tục');
+  expect(authService.register).not.toHaveBeenCalled();
+  expect(JSON.stringify(tree.toJSON())).toContain('ít nhất 8 ký tự');
 });
 
 test('shows API login failure and hides providers that are not configured', async () => {

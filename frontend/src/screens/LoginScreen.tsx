@@ -214,9 +214,9 @@ export function LoginScreen() {
       if (name.trim().length < 2 || !email.trim() || !phone.trim()) {
         throw new Error('Vui lòng nhập đầy đủ tên, email và số điện thoại.');
       }
-      if (!social && (password.length < 15 || password !== confirmation)) {
+      if (!social && (password.length < 8 || password !== confirmation)) {
         throw new Error(
-          'Mật khẩu cần ít nhất 15 ký tự và khớp với phần xác nhận.',
+          'Mật khẩu cần ít nhất 8 ký tự và khớp với phần xác nhận.',
         );
       }
       const result = await authService.register({
@@ -245,11 +245,11 @@ export function LoginScreen() {
     } else if (stage === 'reset' && challenge) {
       if (
         !/^\d{6}$/.test(code) ||
-        password.length < 15 ||
+        password.length < 8 ||
         password !== confirmation
       ) {
         throw new Error(
-          'Nhập mã 6 chữ số và mật khẩu mới ít nhất 15 ký tự, khớp phần xác nhận.',
+          'Nhập mã 6 chữ số và mật khẩu mới ít nhất 8 ký tự, khớp phần xác nhận.',
         );
       }
       await authService.reset(challenge.challenge_id, code, password);
@@ -441,7 +441,7 @@ export function LoginScreen() {
       ) : null}
       {showPassword && stage !== 'login' ? (
         <>
-          <AuthNotice message="Dùng một cụm từ dài từ 15 đến 128 ký tự. Mật khẩu có phân biệt chữ hoa và chữ thường." />
+          <AuthNotice message="Mật khẩu cần ít nhất 8 ký tự (tối đa 128 ký tự)." />
           <AuthField
             label="Xác nhận mật khẩu"
             password

@@ -105,9 +105,12 @@ class AuthTests(unittest.TestCase):
         self.assertEqual(self.post("/login", {"identifier": REGISTER["email"], "password": PASSWORD}).status_code, 200)
 
     def test_validation_and_malformed_json(self):
+        self.assertEqual(self.client.get("/api/auth/config").json["password_min_length"], 8)
         for override in ({"email": "bad"}, {"phone": "123"}, {"name": " "}, {"password": "short"},
                          {"name": []}, {"email": None}):
             self.assertEqual(self.post("/register", {**REGISTER, **override}).status_code, 400)
+        self.assertEqual(self.post("/register", {**REGISTER, "password": "1234567"}).status_code, 400)
+        self.assertEqual(self.post("/register", {**REGISTER, "password": "abcdefgh"}).status_code, 202)
         self.assertEqual(self.post("/login", []).status_code, 400)
 
     def test_duplicate_verified_contact_does_not_modify_account(self):
@@ -165,7 +168,7 @@ class AuthTests(unittest.TestCase):
         first = self.post("/password/forgot", {"identifier": REGISTER["email"]}).json
         first_code = self.sent[-1][2]
         second = self.post("/password/forgot", {"identifier": REGISTER["email"]}).json
-        new_password = "a different secret passphrase"
+        new_password = "abcdefgh"
         response = self.post("/password/reset", {"challenge_id": second["challenge_id"], "code": self.sent[-1][2], "password": new_password})
         self.assertEqual(response.status_code, 200)
         self.assertEqual(self.post("/refresh", {"refresh_token": tokens["refresh_token"]}).status_code, 401)

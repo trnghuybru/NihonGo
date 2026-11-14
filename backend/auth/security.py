@@ -64,10 +64,8 @@ def identifier(value):
 
 
 def validate_password(value):
-    if not 15 <= len(value) <= 128:
-        raise AuthError("Mật khẩu cần từ 15 đến 128 ký tự.")
-    if value.lower() in {"123456789012345", "passwordpassword", "1234567890123456", "qwertyuiopasdfgh"}:
-        raise AuthError("Mật khẩu quá phổ biến. Hãy dùng một cụm từ dài, khó đoán.")
+    if not 8 <= len(value) <= 128:
+        raise AuthError("Mật khẩu cần ít nhất 8 ký tự (tối đa 128 ký tự).")
     return value
 
 
