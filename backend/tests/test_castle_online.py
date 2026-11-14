@@ -24,6 +24,8 @@ class CastleOnlineTests(unittest.TestCase):
     def create(self):
         r = self.call('/castle/rooms', {'level': 'N5', 'source': 'starter', 'round_seconds': 9})
         self.assertEqual(r.status_code, 200, r.json)
+        questions = db.session.query(GameRoom).filter_by(code=r.json['code']).one().state['questions']
+        self.assertTrue(all(question['word']['id'].startswith('N5-') for question in questions))
         return r.json['code']
 
     def ready(self, code):

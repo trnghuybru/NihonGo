@@ -14,9 +14,7 @@ Vào **Luyện tập → Game**, tạo hoặc nhập mã phòng chung tại /gam
 
 ## Dữ liệu và lưu trữ
 
-- data.ts: bộ khởi động N5 (81 từ), N4 (48 từ), N3/N2/N1 (20 từ mỗi cấp). Thêm dòng kanji|hiragana|nghĩa|chủ đề vào cấp tương ứng.
-- Chọn chủ đề giới hạn từ được hỏi; đáp án nhiễu ưu tiên cùng chủ đề và lấy bổ sung từ cùng cấp.
-- “Bài học của app” lấy kho thật qua GET /api/games/castle/words?level=N5&lesson_id=..., cần đăng nhập. Không gọi Gemini/Vertex. Bộ thiếu bốn đáp án khác nhau báo lỗi.
+- “Kho từ NihonGO” lấy từ vựng cùng trình độ trong database qua GET /api/games/castle/words?level=N5; “Bài học của app” thêm `lesson_id`. Cả hai cần đăng nhập. Không gọi Gemini/Vertex. Bộ thiếu bốn đáp án khác nhau báo lỗi.
 - Lưu kỷ lục theo cấp, thiết lập, tối đa 300 từ cần ôn, riêng từng tài khoản **trên thiết bị hiện tại**. Web dùng localStorage; native dùng Keychain. Kỷ lục/ôn từ trên thiết bị lưu riêng theo tài khoản, bao gồm đúng đội của mình khi chơi online. Phòng và trạng thái trận online lưu trên server.
 - Điểm: đúng × 100 + combo cao nhất × 20 + HP còn lại × 5. Chỉ ghi khi trận kết thúc. Ôn đúng gỡ từ khỏi danh sách cần ôn.
 - Online: chủ tạo phòng, chia sẻ link hoặc mã 6 ký tự, cả hai sẵn sàng, chủ bấm bắt đầu. Kho game tự nhận diện mã phòng Công thành hoặc giành mic/viết. Server chấm đáp án và mô phỏng quân/HP, client chỉ render và nội suy chuyển động; không gửi đáp án câu tiếp theo cho client. Game giành mic/viết nhiều người giữ luồng phòng riêng.
@@ -39,7 +37,7 @@ Kiểm tra:
     npx tsc --noEmit
     npm run web:build
 
-Backend: games/castle.py giữ luật online; castle_routes.py giữ API; dùng GameRoom hiện có với state.game=castle, không cần đổi schema/constraint. Dữ liệu seed server tại data/games/castle-starter.json, cùng 189 từ từ frontend data.ts. Khi cập nhật bộ từ, xuất lại JSON seed để hai chế độ đồng nhất.
+Backend: games/castle.py giữ luật online; castle_routes.py giữ API; dùng GameRoom hiện có với state.game=castle, không cần đổi schema/constraint. Từ vựng được truy vấn từ database khi tạo trận; thay đổi kho từ được dùng ở trận mới.
 
 Hướng mở rộng: ghép đối thủ tự động theo trình độ; boss raid hợp tác; bộ sưu tập ngoại hình quân.
 

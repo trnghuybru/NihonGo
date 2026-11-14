@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactTestRenderer from 'react-test-renderer';
+import { Linking } from 'react-native';
 import { LoginScreen } from '../src/screens/LoginScreen';
 import { AuthButton, AuthField } from '../src/components/AuthForm';
 import { authService } from '../src/services/authService';
+
+jest.mock('../src/config/beta', () => ({ betaWeb: false }));
 
 jest.mock('../src/services/authService', () => ({
   authService: {
@@ -39,6 +42,7 @@ async function fill(label: string, value: string) {
 }
 beforeEach(async () => {
   jest.clearAllMocks();
+  jest.requireMock('../src/config/beta').betaWeb = false;
   await ReactTestRenderer.act(async () => {
     tree = ReactTestRenderer.create(<LoginScreen />);
   });
@@ -89,4 +93,18 @@ test('shows API login failure and hides providers that are not configured', asyn
       .findAllByType(AuthButton)
       .some(node => node.props.label === 'Google'),
   ).toBe(false);
+});
+
+test('offers the beta survey and explains when to expect an email', async () => {
+  const openURL = jest.spyOn(Linking, 'openURL').mockResolvedValue(undefined);
+  jest.requireMock('../src/config/beta').betaWeb = true;
+  await ReactTestRenderer.act(async () => tree.update(<LoginScreen />));
+
+  const content = JSON.stringify(tree.toJSON());
+  expect(content).toContain('Điền khảo sát đăng ký beta');
+  expect(content).toContain('vui lòng đợi trong 24 giờ');
+  expect(content).toContain('Chúng tôi sẽ gửi email đến bạn');
+  await click('Điền khảo sát đăng ký beta');
+  expect(openURL).toHaveBeenCalledWith('https://forms.gle/SYYD5H2M54CfhuLg6');
+  openURL.mockRestore();
 });

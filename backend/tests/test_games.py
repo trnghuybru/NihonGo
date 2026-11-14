@@ -28,8 +28,8 @@ class GameTests(unittest.TestCase):
         for level in ['N5','N4']:
             db.session.add(VocabularyTextbook(id=level,title=level,level=level,source_url='test'));db.session.flush()
             db.session.add(VocabularyLesson(id=level,textbook_id=level,unit_number=1,unit_title='Unit',number=1,title='Lesson '+level,source_url='test',audio_urls=[]));db.session.flush()
-            for i,(word,reading) in enumerate([('学校','がっこう'),('猫','ねこ'),('犬','いぬ')]):
-                db.session.add(VocabularyWord(id=f'{level}-{i}',lesson_id=level,number=i+1,word=word,reading=reading,meaning_vi='nghĩa',details={}))
+            for i,(word,reading,meaning) in enumerate([('学校','がっこう','trường học'),('猫','ねこ','mèo'),('犬','いぬ','chó'),('山','やま','núi')]):
+                db.session.add(VocabularyWord(id=f'{level}-{i}',lesson_id=level,number=i+1,word=word,reading=reading,meaning_vi=meaning,details={}))
         db.session.commit();self.client=self.app.test_client();self.app.config.update(LIVEKIT_URL='',LIVEKIT_API_KEY='',LIVEKIT_API_SECRET='')
 
     def tearDown(self):db.session.rollback();db.session.remove();self.ctx.pop()
@@ -47,7 +47,7 @@ class GameTests(unittest.TestCase):
 
     def test_sources_level_lesson_and_unique_random_words(self):
         catalog=self.get('/catalog?level=N5');self.assertEqual(catalog.status_code,200,catalog.json)
-        self.assertEqual(catalog.json['available_count'],3);self.assertEqual([x['id'] for x in catalog.json['lessons']],['N5'])
+        self.assertEqual(catalog.json['available_count'],4);self.assertEqual([x['id'] for x in catalog.json['lessons']],['N5'])
         code=self.create(source='lesson',lesson_id='N5',question_count=3)
         words=db.session.query(GameRoom).filter_by(code=code).one().state['questions']
         self.assertEqual(len({q['word'] for q in words}),3);self.assertTrue(all(q['id'].startswith('N5-') for q in words))
@@ -58,7 +58,7 @@ class GameTests(unittest.TestCase):
         self.assertEqual(self.client.get('/api/games/castle/words').status_code, 401)
         result = self.get('/castle/words?level=N5&lesson_id=N5')
         self.assertEqual(result.status_code, 200, result.json)
-        self.assertEqual(len(result.json['words']), 3)
+        self.assertEqual(len(result.json['words']), 4)
         self.assertTrue(all(word['level'] == 'N5' and word['hiragana'] for word in result.json['words']))
         self.assertEqual(result.json['words'][0]['category'], 'Lesson N5')
         self.assertEqual(self.get('/castle/words?level=N8').status_code, 400)

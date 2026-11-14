@@ -152,7 +152,8 @@ def assemble_dataset(base, index, rows, document_source):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--pdf", type=Path, required=True)
-    parser.add_argument("--base", type=Path, default=DATA / "mimikara-n3.partial.json")
+    parser.add_argument("--base", type=Path, required=True,
+                        help="Dataset N3 crawl dở đã lưu bên ngoài repository")
     parser.add_argument("--output", type=Path, default=DATA / "mimikara-n3.json")
     parser.add_argument("--index-html", type=Path)
     args = parser.parse_args()

@@ -29,7 +29,6 @@ import {
   CastleWord,
   makeQuestion,
   romanize,
-  starterWords,
 } from '../games/castle/data';
 import { Difficulty, Side, TIERS, tierFor } from '../games/castle/engine';
 import { MomoGameSprite } from '../games/castle/MomoGameSprite';
@@ -145,8 +144,7 @@ export function CastleGameScreen({
   sharedRoom?: boolean;
 }) {
   const defaultLevel = useDefaultJlptLevel();
-  const [level, setLevel] = useState<string>(defaultLevel),
-    [topic, setTopic] = useState('Tất cả');
+  const [level, setLevel] = useState<string>(defaultLevel);
   const [mode, setMode] = useState<'bot' | 'online'>(
       forceBot ? 'bot' : 'online',
     ),
@@ -166,6 +164,7 @@ export function CastleGameScreen({
     [reviewAnswer, setReviewAnswer] = useState<number | null>(null);
   const [reviewWords, setReviewWords] = useState<CastleWord[]>([]),
     [reviewQuestion, setReviewQuestion] = useState<CastleQuestion | null>(null);
+  const reviewPool = useRef<CastleWord[]>([]);
   const game = useCastleGame(userId);
   const online = useCastleOnline(initialCode, game.applyOnline);
   const onlineRef = useRef(online);
@@ -227,17 +226,11 @@ export function CastleGameScreen({
     requestState,
     source,
     level,
-    topic,
     lessonId,
     mode,
     difficulty,
     settings.roundSeconds,
   ]);
-  const available = starterWords.filter(word => word.level === level);
-  const topics = ['Tất cả', ...new Set(available.map(word => word.category))];
-  const words = available.filter(
-    word => topic === 'Tất cả' || word.category === topic,
-  );
   const finished = battle?.phase === 'finished',
     active = Boolean(battle && !finished);
   useEffect(() => {
@@ -277,31 +270,31 @@ export function CastleGameScreen({
         const room = await online.create({
           level,
           source,
-          topic,
+          topic: 'Tất cả',
           lesson_id: source === 'lesson' ? lessonId : undefined,
           round_seconds: settings.roundSeconds,
         });
         if (room) routeRoom(room.code);
         return;
       }
-      let pool = available;
-      let targets = words;
-      if (source === 'lesson') {
-        if (!lessonId) throw new Error('Bạn hãy chọn một bài học.');
-        const response = await gameService.castleWords(level, lessonId);
-        if (request !== requestState.version) return;
-        pool = response.words.map(word => ({
-          ...word,
-          romaji: romanize(word.hiragana),
-        }));
-        targets = pool;
-      }
+      if (source === 'lesson' && !lessonId)
+        throw new Error('Bạn hãy chọn một bài học.');
+      const response = await gameService.castleWords(
+        level,
+        source === 'lesson' ? lessonId : undefined,
+      );
+      if (request !== requestState.version) return;
+      const pool = response.words.map(word => ({
+        ...word,
+        romaji: romanize(word.hiragana),
+      }));
       game.start({
         mode,
         difficulty,
         roundSeconds: settings.roundSeconds,
+        level,
         words: pool,
-        targets,
+        targets: pool,
         names: ['Bạn', 'Momo'],
       });
       scroll.current?.scrollTo({ y: 0, animated: false });
@@ -378,20 +371,46 @@ export function CastleGameScreen({
     window.addEventListener('keydown', keys);
     return () => window.removeEventListener('keydown', keys);
   }, [game.battleRef]);
-  const openReview = (items: CastleWord[]) => {
+  const openReview = async (items: CastleWord[]) => {
     if (!items.length) return;
-    const pool = [
-      ...new Map(
-        [...starterWords, ...(battle?.config.words || []), ...items].map(
-          word => [word.id, word],
+    setBusy(true);
+    setError('');
+    try {
+      const responses = await Promise.all(
+        [...new Set(items.map(word => word.level))].map(gameLevel =>
+          gameService.castleWords(gameLevel),
         ),
-      ).values(),
-    ];
-    setReviewWords(items);
-    setReviewIndex(0);
-    setReviewAnswer(null);
-    setReviewQuestion(makeQuestion(items[0], pool, 0, 'reading'));
-    setReviewOpen(true);
+      );
+      reviewPool.current = [
+        ...new Map(
+          [
+            ...responses.flatMap(response =>
+              response.words.map(word => ({
+                ...word,
+                romaji: romanize(word.hiragana),
+              })),
+            ),
+            ...(battle?.config.words || []),
+            ...items,
+          ].map(word => [word.id, word]),
+        ).values(),
+      ];
+      setReviewWords(items);
+      setReviewIndex(0);
+      setReviewAnswer(null);
+      setReviewQuestion(
+        makeQuestion(items[0], reviewPool.current, 0, 'reading'),
+      );
+      setReviewOpen(true);
+    } catch (failure) {
+      setError(
+        failure instanceof Error
+          ? failure.message
+          : 'Không tải được từ ôn tập.',
+      );
+    } finally {
+      setBusy(false);
+    }
   };
   const nextReview = () => {
     const next = reviewIndex + 1;
@@ -404,7 +423,7 @@ export function CastleGameScreen({
     setReviewQuestion(
       makeQuestion(
         reviewWords[next],
-        [...starterWords, ...(battle?.config.words || []), ...reviewWords],
+        reviewPool.current,
         next,
         next % 2 ? 'meaning' : 'reading',
       ),
@@ -811,7 +830,6 @@ export function CastleGameScreen({
                   selected={level === item}
                   onPress={() => {
                     setLevel(item);
-                    setTopic('Tất cả');
                     setLessonId('');
                     setCatalogPage(1);
                   }}
@@ -820,7 +838,7 @@ export function CastleGameScreen({
             </View>
             <View style={s.row}>
               <Chip
-                label="Bộ từ khởi động"
+                label="Kho từ NihonGO"
                 selected={source === 'starter'}
                 onPress={() => setSource('starter')}
               />
@@ -831,25 +849,9 @@ export function CastleGameScreen({
               />
             </View>
             {source === 'starter' ? (
-              <>
-                <View style={s.row}>
-                  {topics.map(item => (
-                    <Chip
-                      key={item}
-                      label={item}
-                      selected={topic === item}
-                      onPress={() => setTopic(item)}
-                    />
-                  ))}
-                </View>
-                <Text style={s.small}>
-                  {words.length} từ ·{' '}
-                  {words
-                    .slice(0, 5)
-                    .map(word => word.kanji)
-                    .join(' / ')}
-                </Text>
-              </>
+              <Text style={s.small}>
+                Dùng từ vựng trình độ {level} trong kho học.
+              </Text>
             ) : (
               <>
                 {busy ? <ActivityIndicator color={gold} /> : null}
@@ -999,7 +1001,10 @@ export function CastleGameScreen({
               ))}
             </View>
             <Text style={s.best}>
-              Kỷ lục {game.progress.best[battle.config.words[0].level] || 0}{' '}
+              Kỷ lục{' '}
+              {game.progress.best[
+                battle.config.level ?? battle.config.words[0]?.level ?? level
+              ] || 0}{' '}
               điểm
             </Text>
             <View style={s.row}>

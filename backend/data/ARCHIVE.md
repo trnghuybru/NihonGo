@@ -7,11 +7,12 @@ lịch sử học, bản thu hay file bí mật.
 
 ## Dữ liệu giữ ở local
 
-- Năm bộ từ vựng N1–N5: importer và test còn sử dụng.
-- `mimikara-n3.partial.json`: dữ liệu nền của script bổ sung N3 và test hồi quy.
 - `video_examples/cjtmDEG-B7U.ja.json`: nguồn mặc định của importer và test.
-- `games/castle-starter.json`: game đọc trực tiếp lúc chạy.
 - Các file hướng dẫn, tài liệu skill, prompt, migration và seed trong code.
+
+Các JSON từ vựng N1–N5, bản N3 tạm và bộ từ Công thành đã được bỏ khỏi
+checkout sau khi nhập database. Công thành hiện truy vấn bảng từ vựng;
+importer yêu cầu `--source` khi cần nhập lại. File JSON có thể khôi phục từ lịch sử Git.
 
 ## File chuyển sang nhánh lưu trữ
 

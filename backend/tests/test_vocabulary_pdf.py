@@ -1,6 +1,4 @@
-import json
 import unittest
-from pathlib import Path
 
 from scripts.supplement_mimikara_n3_pdf import cell_text, pdf_word
 
@@ -31,22 +29,3 @@ class VocabularyPdfTests(unittest.TestCase):
         row['cells'][5] = '学ぶ。'
         with self.assertRaises(ValueError):
             pdf_word(1, row, 'lesson', {})
-
-    def test_full_n3_preserves_every_existing_word_and_fills_only_the_missing_108(self):
-        directory = Path(__file__).resolve().parents[1] / 'data/vocabulary'
-        base = json.loads((directory / 'mimikara-n3.partial.json').read_text())
-        full = json.loads((directory / 'mimikara-n3.json').read_text())
-        original = {word['id']: word for unit in base['units']
-                    for lesson in unit['lessons'] for word in lesson['words']}
-        words = [word for unit in full['units'] for lesson in unit['lessons'] for word in lesson['words']]
-        self.assertEqual(sorted(word['number'] for word in words), list(range(1, 881)))
-        added = [word for word in words if word['id'] not in original]
-        self.assertEqual(len(added), 108)
-        self.assertEqual(sum(bool(word['examples']) for word in added), 106)
-        self.assertEqual([word['number'] for word in added if not word['examples']], [813, 838])
-        for word in words:
-            if word['id'] in original:
-                self.assertEqual(word, original[word['id']])
-        self.assertEqual(full['coverage']['crawled_lessons'], 58)
-        self.assertEqual(full['coverage']['assembled_lessons'], 66)
-        self.assertTrue(full['coverage']['complete'])

@@ -10,9 +10,6 @@ from sqlalchemy.exc import SQLAlchemyError
 from extensions import db
 from .models import JLPT_LEVELS, VocabularyTextbook, VocabularyLesson, VocabularyWord
 
-DEFAULT_SOURCE = Path(__file__).resolve().parents[1] / "data/vocabulary/mimikara-n2.json"
-
-
 def import_dataset(dataset):
     if dataset.get("schema_version") != 1 or not dataset.get("coverage", {}).get("complete"):
         raise ValueError("Chỉ nhập dataset schema_version=1 đã crawl đầy đủ.")
@@ -67,7 +64,7 @@ def import_dataset(dataset):
 
 
 @click.command("vocabulary-import")
-@click.option("--source", type=click.Path(exists=True, path_type=Path), default=DEFAULT_SOURCE)
+@click.option("--source", type=click.Path(exists=True, path_type=Path), required=True)
 @with_appcontext
 def import_command(source):
     """Import/update vocabulary by stable ID without deleting existing content."""
