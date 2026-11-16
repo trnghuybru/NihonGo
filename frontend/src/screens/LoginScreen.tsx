@@ -7,10 +7,12 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import {
   AppState,
   Linking,
+  Platform,
   Pressable,
   StyleSheet,
   Text,
   View,
+  useWindowDimensions,
 } from 'react-native';
 import {
   AuthButton,
@@ -49,6 +51,8 @@ const stagePaths: Record<Stage, string> = {
 };
 
 export function LoginScreen() {
+  const { width } = useWindowDimensions();
+  const compactInvite = Platform.OS !== 'web' || width < 900;
   const web = useWebNavigation();
   const webRef = useRef(web);
   webRef.current = web;
@@ -311,23 +315,23 @@ export function LoginScreen() {
             accessibilityRole="link"
             accessibilityLabel="Điền khảo sát đăng ký beta"
             onPress={() => Linking.openURL(BETA_SIGNUP_URL)}
-            style={styles.betaMascot}
+            style={[styles.betaMascot, compactInvite && styles.betaMascotCompact]}
           >
-            <View style={styles.betaSpeech}>
+            <View style={[styles.betaSpeech, compactInvite && styles.betaSpeechCompact]}>
               <Text style={styles.betaSpeechTitle}>Chưa đăng ký beta?</Text>
               <Text style={styles.betaSpeechCopy}>
                 Điền khảo sát để nhận lời mời từ Momo trong 24 giờ nhé!
               </Text>
               <Text style={styles.signupLink}>Điền khảo sát đăng ký beta →</Text>
-              <View style={styles.betaSpeechTail} />
+              <View style={compactInvite ? styles.betaSpeechTailCompact : styles.betaSpeechTail} />
             </View>
-            <NihongoMascot pose="wave" size={112} decorative />
+            <NihongoMascot pose="wave" size={compactInvite ? 72 : 112} decorative />
           </Pressable>
         ) : undefined
       }
       footer={
         stage === 'login' ? (
-          <View style={styles.signupFooter}>
+          <View testID="signup-footer" style={styles.signupFooter}>
             <View style={styles.signupRow}>
               <Text style={styles.signupPrompt}>Chưa có tài khoản?</Text>
               <Pressable
@@ -580,6 +584,15 @@ export function LoginScreen() {
 const styles = StyleSheet.create({
   signupFooter: { alignItems: 'center' },
   betaMascot: { alignItems: 'flex-end' },
+  betaMascotCompact: {
+    width: '100%',
+    maxWidth: 360,
+    alignSelf: 'center',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: spacing.sm,
+  },
   betaSpeech: {
     width: 232,
     gap: spacing.sm,
@@ -589,10 +602,26 @@ const styles = StyleSheet.create({
     boxShadow: shadowMd,
     marginBottom: -spacing.sm,
   },
+  betaSpeechCompact: {
+    flex: 1,
+    width: 'auto',
+    maxWidth: 260,
+    padding: spacing.md,
+    marginBottom: 0,
+  },
   betaSpeechTail: {
     position: 'absolute',
     right: 32,
     bottom: -6,
+    width: 12,
+    height: 12,
+    backgroundColor: colors.surface,
+    transform: [{ rotate: '45deg' }],
+  },
+  betaSpeechTailCompact: {
+    position: 'absolute',
+    right: -6,
+    top: '45%',
     width: 12,
     height: 12,
     backgroundColor: colors.surface,

@@ -96,9 +96,6 @@ export function AuthShell({
           navigationInset > 0 && {
             paddingBottom: navigationInset + spacing.xxl,
           },
-          floatingAccessory && !authDesktop
-            ? styles.contentWithFloatingAccessory
-            : null,
         ]}
       >
         {!hideHeader ? (
@@ -134,9 +131,14 @@ export function AuthShell({
         ) : (
           <View style={styles.sections}>{children}</View>
         )}
+        {floatingAccessory && !authDesktop ? (
+          <View testID="auth-inline-accessory" style={styles.inlineAccessory}>
+            {floatingAccessory}
+          </View>
+        ) : null}
         {footer ? <View style={styles.footer}>{footer}</View> : null}
       </ScrollView>
-      {floatingAccessory ? (
+      {floatingAccessory && authDesktop ? (
         <View style={styles.floatingAccessory}>{floatingAccessory}</View>
       ) : null}
     </KeyboardAvoidingView>
@@ -410,7 +412,7 @@ const styles = StyleSheet.create({
     right: layout.screenGutter,
     zIndex: 1,
   },
-  contentWithFloatingAccessory: { paddingBottom: 180 },
+  inlineAccessory: { marginTop: spacing.xl, alignItems: 'center' },
   content: {
     flexGrow: 1,
     paddingHorizontal: layout.screenGutter,
