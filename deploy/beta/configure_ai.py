@@ -5,7 +5,7 @@ import re
 import tempfile
 from pathlib import Path
 
-MAX_INVITES = 50
+MAX_INVITES = 55
 
 root = Path(__file__).resolve().parents[2]
 env_path = Path(os.getenv("BETA_ENV_PATH", root / "backend/.env"))

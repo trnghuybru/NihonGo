@@ -2,6 +2,8 @@
 
 **01/11/2026:** Web production là <https://momonihongo.app>. Mọi tài khoản phải nằm trong danh sách tối đa 50 email được mời; hệ thống cho phép tối đa 50 tài khoản beta. Backend dùng Vertex AI cho tác vụ thông thường và API key Gemini riêng cho Live. Cấu hình `BETA_QUOTA_MODE=daily` đã triển khai; ví USD cũ không còn được dùng để giới hạn người dùng beta.
 
+**16/11/2026:** Danh sách mời hỗ trợ tối đa 55 email để nhận thêm người thử nghiệm mà không thu hồi các lời mời hiện có. Giới hạn tài khoản beta vẫn là 50.
+
 ## Quota theo ngày
 
 - `beta_daily_quotas` lưu một `video_id` và số phiên Live cho từng người/ngày theo `Asia/Ho_Chi_Minh`.

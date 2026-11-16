@@ -4,7 +4,7 @@ import re
 import sys
 from pathlib import Path
 
-MAX_INVITES = 50
+MAX_INVITES = 55
 
 
 def main(path: Path) -> int:
