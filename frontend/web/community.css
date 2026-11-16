@@ -34,6 +34,10 @@
   transform: translateY(-2px);
   box-shadow: 0 6px 24px #73451926;
 }
+.ng-dock-launcher,
+.ng-dock-menu {
+  display: none;
+}
 .ng-help-trigger {
   width: 44px;
   border-radius: 50%;
@@ -554,17 +558,76 @@
     bottom: calc(
       var(--ng-bottom-inset, 0px) + 12px + env(safe-area-inset-bottom)
     );
-    gap: 7px;
+    width: 48px;
+    height: 48px;
   }
-  .ng-coffee-trigger,
-  .ng-feedback-trigger {
-    width: 44px;
-    padding: 0;
-    justify-content: center;
-  }
-  .ng-coffee-trigger > span,
-  .ng-feedback-trigger > span {
+  .ng-community-dock > .ng-help-trigger,
+  .ng-community-dock > .ng-feedback-trigger,
+  .ng-community-dock > .ng-coffee-trigger {
     display: none;
+  }
+  .ng-community-dock .ng-dock-launcher {
+    display: grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    border-radius: 50%;
+    background: #fff8f1;
+    color: #9b4818;
+    font-family: ReadexPro-SemiBold, sans-serif;
+    font-size: 21px;
+    touch-action: none;
+    user-select: none;
+  }
+  .ng-community-dock .ng-dock-menu {
+    position: absolute;
+    right: 0;
+    bottom: calc(100% + 8px);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 172px;
+    padding: 6px;
+    border: 1px solid var(--ng-border);
+    border-radius: 16px;
+    background: #fffdf9;
+    box-shadow: 0 8px 28px #73451926;
+  }
+  .ng-community-dock .ng-dock-menu.opens-down {
+    top: calc(100% + 8px);
+    bottom: auto;
+  }
+  .ng-community-dock .ng-dock-menu.opens-right {
+    left: 0;
+    right: auto;
+  }
+  .ng-community-dock .ng-dock-menu button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 42px;
+    padding: 7px 10px;
+    border: 0;
+    border-radius: 10px;
+    background: transparent;
+    color: #783e13;
+    font-family: ReadexPro-Medium, sans-serif;
+    font-size: 12px;
+    white-space: nowrap;
+    box-shadow: none;
+  }
+  .ng-community-dock .ng-dock-menu button:hover {
+    background: #fff0d9;
+    transform: none;
+    box-shadow: none;
+  }
+  .ng-dock-menu-icon {
+    display: inline-grid;
+    place-items: center;
+    width: 21px;
+    font-family: ReadexPro-SemiBold, sans-serif;
+    font-size: 19px;
   }
   .ng-community-panel {
     padding: 24px 21px;

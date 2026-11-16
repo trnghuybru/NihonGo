@@ -27,6 +27,13 @@ type Overlay =
   | { kind: 'help' | 'coffee' | 'feedback' }
   | null;
 type Rect = { top: number; left: number; width: number; height: number };
+type DockPosition = { left: number; top: number };
+type DockDrag = DockPosition & {
+  pointerId: number;
+  startX: number;
+  startY: number;
+  moved: boolean;
+};
 const betaFeedbackUrl = 'https://forms.gle/pBGNQdPvC4WN41JS8';
 
 function FeedbackIcon() {
@@ -115,6 +122,11 @@ export function CommunityExperience({
   const [rect, setRect] = useState<Rect | null>(null);
   const measuredStep = useRef<GuideStep | undefined>(undefined);
   const [position, setPosition] = useState<CSSProperties>({});
+  const [dockPosition, setDockPosition] = useState<DockPosition | null>(null);
+  const [dockOpen, setDockOpen] = useState(false);
+  const dockRef = useRef<HTMLElement>(null);
+  const dockDrag = useRef<DockDrag | null>(null);
+  const suppressDockClick = useRef(false);
   const guide =
     overlay?.kind === 'tour'
       ? allGuides.find(item => item.id === overlay.id)
@@ -146,6 +158,32 @@ export function CommunityExperience({
     setOverlay(null);
     setCopied('');
   }
+  function openDockItem(kind: 'help' | 'feedback' | 'coffee') {
+    setDockOpen(false);
+    setOverlay({ kind });
+  }
+  function clampDock(left: number, top: number) {
+    const width = dockRef.current?.offsetWidth || 48;
+    const height = dockRef.current?.offsetHeight || 48;
+    return {
+      left: Math.max(8, Math.min(left, window.innerWidth - width - 8)),
+      top: Math.max(8, Math.min(top, window.innerHeight - height - 8)),
+    };
+  }
+  useEffect(() => {
+    const onResize = () => {
+      if (window.innerWidth > 600) {
+        setDockPosition(null);
+        setDockOpen(false);
+      } else {
+        setDockPosition(previous =>
+          previous ? clampDock(previous.left, previous.top) : null,
+        );
+      }
+    };
+    window.addEventListener('resize', onResize);
+    return () => window.removeEventListener('resize', onResize);
+  }, []);
   function replay(item: FeatureGuide) {
     navigate(item.path);
     setOverlay({ kind: 'tour', id: item.id, step: 0 });
@@ -597,10 +635,101 @@ export function CommunityExperience({
   return (
     <>
       <aside
+        ref={dockRef}
         className="ng-community-dock"
         aria-label="Hướng dẫn, đánh giá và ủng hộ NihonGO"
-        style={{ '--ng-bottom-inset': `${bottomInset}px` } as CSSProperties}
+        style={
+          {
+            '--ng-bottom-inset': `${bottomInset}px`,
+            ...(dockPosition && {
+              left: dockPosition.left,
+              top: dockPosition.top,
+              right: 'auto',
+              bottom: 'auto',
+            }),
+          } as CSSProperties
+        }
       >
+        <button
+          type="button"
+          className="ng-dock-launcher"
+          aria-label="Mở hướng dẫn, góp ý và ủng hộ. Kéo để di chuyển"
+          aria-expanded={dockOpen}
+          aria-controls="ng-dock-menu"
+          onPointerDown={event => {
+            if (event.pointerType === 'mouse' && event.button !== 0) return;
+            suppressDockClick.current = false;
+            const bounds = dockRef.current?.getBoundingClientRect();
+            if (!bounds) return;
+            dockDrag.current = {
+              pointerId: event.pointerId,
+              startX: event.clientX,
+              startY: event.clientY,
+              left: bounds.left,
+              top: bounds.top,
+              moved: false,
+            };
+            event.currentTarget.setPointerCapture(event.pointerId);
+          }}
+          onPointerMove={event => {
+            const drag = dockDrag.current;
+            if (!drag || drag.pointerId !== event.pointerId) return;
+            const dx = event.clientX - drag.startX;
+            const dy = event.clientY - drag.startY;
+            if (!drag.moved && Math.hypot(dx, dy) < 6) return;
+            drag.moved = true;
+            setDockOpen(false);
+            setDockPosition(clampDock(drag.left + dx, drag.top + dy));
+          }}
+          onPointerUp={event => {
+            if (dockDrag.current?.pointerId !== event.pointerId) return;
+            suppressDockClick.current = dockDrag.current.moved;
+            dockDrag.current = null;
+            event.currentTarget.releasePointerCapture(event.pointerId);
+            window.setTimeout(() => {
+              suppressDockClick.current = false;
+            }, 400);
+          }}
+          onPointerCancel={() => {
+            dockDrag.current = null;
+          }}
+          onClick={() => {
+            if (suppressDockClick.current) {
+              suppressDockClick.current = false;
+              return;
+            }
+            setDockOpen(previous => !previous);
+          }}
+        >
+          {dockOpen ? '×' : '⋯'}
+        </button>
+        {dockOpen ? (
+          <div
+            id="ng-dock-menu"
+            className={`ng-dock-menu ${
+              (dockPosition?.top ?? window.innerHeight) < window.innerHeight / 2
+                ? 'opens-down'
+                : ''
+            } ${
+              dockPosition && dockPosition.left < window.innerWidth / 2
+                ? 'opens-right'
+                : ''
+            }`}
+          >
+            <button type="button" onClick={() => openDockItem('help')}>
+              <span className="ng-dock-menu-icon" aria-hidden="true">
+                ?
+              </span>
+              Hướng dẫn
+            </button>
+            <button type="button" onClick={() => openDockItem('feedback')}>
+              <FeedbackIcon /> Góp ý beta
+            </button>
+            <button type="button" onClick={() => openDockItem('coffee')}>
+              <CoffeeIcon /> Ủng hộ
+            </button>
+          </div>
+        ) : null}
         <button
           className="ng-help-trigger"
           aria-label="Hướng dẫn sử dụng NihonGO"
