@@ -1,15 +1,9 @@
+import { SearchButton } from './SearchButton';
 import { DictionaryRecentHistory } from './DictionaryRecentHistory';
 import { useSearchHistoryFocus } from '../hooks/useSearchHistoryFocus';
 import type { DictionaryHistoryItem } from '../services/dictionaryService';
 import { useState } from 'react';
-import {
-  Keyboard,
-  Platform,
-  Pressable,
-  StyleSheet,
-  TextInput,
-  View,
-} from 'react-native';
+import { Keyboard, Platform, StyleSheet, TextInput, View } from 'react-native';
 import {
   colors,
   layout,
@@ -82,25 +76,11 @@ export function VocabularySearchBar({ onSearch }: Props) {
           autoCorrect={false}
           style={styles.input}
         />
-        <Pressable
-          accessibilityRole="button"
-          accessibilityLabel="Tìm từ"
-          accessibilityState={{ disabled: !normalizedQuery }}
+        <SearchButton
+          label="Tìm từ"
           disabled={!normalizedQuery}
           onPress={submit}
-          hitSlop={4}
-          style={({ pressed }) => [
-            styles.submit,
-            normalizedQuery ? styles.submitActive : null,
-            pressed ? styles.pressed : null,
-          ]}
-        >
-          <HomeFeatureIcon
-            name="arrow"
-            size={20}
-            color={normalizedQuery ? colors.onPrimary : colors.disabledText}
-          />
-        </Pressable>
+        />
       </View>
       <DictionaryRecentHistory
         active={historyOpen}
@@ -141,15 +121,4 @@ const styles = StyleSheet.create({
     ...typography.input,
     color: colors.inputText,
   },
-  submit: {
-    width: layout.touchTarget,
-    height: layout.touchTarget,
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderRadius: radius.pill,
-    borderCurve: 'continuous',
-    backgroundColor: colors.disabled,
-  },
-  submitActive: { backgroundColor: colors.primary },
-  pressed: { backgroundColor: colors.primaryPressed },
 });

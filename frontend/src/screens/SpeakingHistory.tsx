@@ -59,19 +59,29 @@ const HistoryRow = memo(function HistoryRowView({
   disabled,
   onDelete,
   deleting,
+  sidebar,
+  selected,
 }: {
   item: ConversationSummary;
   onOpen: (id: string) => void;
   disabled: boolean;
   deleting: boolean;
   onDelete: (item: ConversationSummary) => void;
+  sidebar: boolean;
+  selected: boolean;
 }) {
   return (
-    <View style={styles.row}>
+    <View
+      style={[
+        styles.row,
+        sidebar ? styles.sidebarRow : null,
+        selected ? styles.selectedRow : null,
+      ]}
+    >
       <Pressable
         accessibilityRole="button"
         accessibilityLabel={`Mở hội thoại ${item.title}`}
-        accessibilityState={{ disabled }}
+        accessibilityState={{ disabled, selected }}
         disabled={disabled}
         onPress={() => onOpen(item.id)}
         style={({ pressed }) => [
@@ -82,7 +92,10 @@ const HistoryRow = memo(function HistoryRowView({
         <View style={styles.rowHeading}>
           <View style={styles.headingCopy}>
             <HomeFeatureIcon name="microphone" color={colors.body} size={22} />
-            <Text numberOfLines={2} style={styles.rowTitle}>
+            <Text
+              numberOfLines={2}
+              style={[styles.rowTitle, sidebar ? styles.sidebarRowTitle : null]}
+            >
               {item.title}
             </Text>
           </View>
@@ -121,6 +134,7 @@ const HistoryRow = memo(function HistoryRowView({
           accessibilityState={{ disabled }}
           disabled={disabled}
           onPress={() => onOpen(item.id)}
+          hitSlop={6}
           style={[styles.action, disabled ? styles.actionDisabled : null]}
         >
           <Text
@@ -142,11 +156,19 @@ export function SpeakingHistory({
   opening,
   openError,
   onOpen,
+  sidebar = false,
+  selectedSessionId,
+  onDeleted,
+  interactionDisabled = false,
 }: {
   refreshKey: number;
   opening: boolean;
   openError: string;
   onOpen: (id: string) => void;
+  sidebar?: boolean;
+  selectedSessionId?: string;
+  onDeleted?: (id: string) => void;
+  interactionDisabled?: boolean;
 }) {
   const [data, setData] = useState<ConversationHistory | null>(null);
   const navigationInset = useBottomNavigationInset();
@@ -160,6 +182,7 @@ export function SpeakingHistory({
   const deletingRef = useRef(false);
   const [deletingId, setDeletingId] = useState<string | null>(null);
   const [deleteError, setDeleteError] = useState('');
+  const actionsDisabled = opening || interactionDisabled;
   useEffect(() => {
     mounted.current = true;
     return () => {
@@ -205,7 +228,7 @@ export function SpeakingHistory({
   }, []);
   const confirmDelete = useCallback(
     (item: ConversationSummary) => {
-      if (opening || deletingRef.current) return;
+      if (actionsDisabled || deletingRef.current) return;
       Alert.alert(
         'Xóa buổi hội thoại?',
         `Xóa “${item.title}” cùng nội dung, nhận xét và âm thanh đã lưu? Thao tác này không thể khôi phục.`,
@@ -226,6 +249,7 @@ export function SpeakingHistory({
               try {
                 await speakingService.deleteSession(item.id);
                 if (!mounted.current) return;
+                onDeleted?.(item.id);
                 setData(previous =>
                   previous
                     ? {
@@ -248,7 +272,7 @@ export function SpeakingHistory({
         { cancelable: true },
       );
     },
-    [opening, fetchPage],
+    [actionsDisabled, fetchPage, onDeleted],
   );
   useEffect(() => {
     fetchPage();
@@ -263,10 +287,19 @@ export function SpeakingHistory({
         onOpen={onOpen}
         onDelete={confirmDelete}
         deleting={deletingId === item.id}
-        disabled={opening || deletingId !== null}
+        sidebar={sidebar}
+        selected={selectedSessionId === item.id}
+        disabled={actionsDisabled || deletingId !== null}
       />
     ),
-    [onOpen, opening, confirmDelete, deletingId],
+    [
+      onOpen,
+      actionsDisabled,
+      confirmDelete,
+      deletingId,
+      sidebar,
+      selectedSessionId,
+    ],
   );
   return (
     <FlatList
@@ -275,7 +308,8 @@ export function SpeakingHistory({
       renderItem={renderItem}
       contentContainerStyle={[
         styles.list,
-        { paddingBottom: navigationInset + spacing.section },
+        sidebar ? styles.sidebarList : null,
+        { paddingBottom: (sidebar ? 0 : navigationInset) + spacing.section },
       ]}
       scrollIndicatorInsets={{ bottom: navigationInset }}
       refreshing={loading}
@@ -332,7 +366,7 @@ export function SpeakingHistory({
             label="Xem thêm hội thoại"
             variant="text"
             busy={more}
-            disabled={loading || opening || deletingId !== null}
+            disabled={loading || actionsDisabled || deletingId !== null}
             onPress={() => fetchPage(data.pagination.page + 1)}
           />
         ) : undefined
@@ -342,6 +376,22 @@ export function SpeakingHistory({
 }
 
 const styles = StyleSheet.create({
+  selectedRow: {
+    backgroundColor: colors.surfaceTint,
+    borderColor: colors.primary,
+  },
+  sidebarList: {
+    paddingHorizontal: spacing.lg,
+    paddingTop: spacing.lg,
+    gap: spacing.md,
+  },
+  sidebarRow: {
+    padding: spacing.md,
+    gap: spacing.sm,
+    borderRadius: radius.small,
+    boxShadow: 'none',
+  },
+  sidebarRowTitle: { ...typography.caption },
   list: {
     flexGrow: 1,
     paddingHorizontal: layout.screenGutter,
@@ -356,7 +406,7 @@ const styles = StyleSheet.create({
     paddingTop: spacing.sm,
     paddingBottom: spacing.xs,
   },
-  title: { ...typography.heading, color: colors.dark },
+  title: { ...typography.label, color: colors.dark },
   row: {
     minHeight: layout.touchTarget,
     padding: spacing.xl,
@@ -411,13 +461,13 @@ const styles = StyleSheet.create({
     paddingTop: spacing.xs,
   },
   action: {
-    minHeight: layout.touchTarget,
-    paddingHorizontal: spacing.md,
+    minHeight: 30,
+    paddingHorizontal: spacing.sm,
     paddingVertical: spacing.xs,
     borderRadius: radius.pill,
     borderCurve: 'continuous',
     backgroundColor: colors.surface,
-    borderWidth: 1.5,
+    borderWidth: 1,
     borderColor: colors.primary,
     flexDirection: 'row',
     alignItems: 'center',
@@ -429,7 +479,7 @@ const styles = StyleSheet.create({
     backgroundColor: colors.disabled,
     borderColor: colors.disabled,
   },
-  actionText: { ...typography.button, color: colors.primaryText },
+  actionText: { ...typography.caption, color: colors.primaryText },
   actionTextDisabled: { color: colors.disabledText },
   empty: {
     padding: spacing.xl,

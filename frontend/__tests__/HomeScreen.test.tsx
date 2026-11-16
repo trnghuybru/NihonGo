@@ -1,7 +1,12 @@
 import React from 'react';
-import { TextInput } from 'react-native';
+import { StyleSheet, Text, TextInput } from 'react-native';
 import Renderer, { act } from 'react-test-renderer';
 import { HomeScreen } from '../src/screens/HomeScreen';
+import { DailyGoalProgress } from '../src/components/StudyTime';
+import { StudyStreakCalendar } from '../src/components/StudyStreakCalendar';
+import { studyTimeService } from '../src/services/studyTimeService';
+import { studyDate } from '../src/utils/studyTime';
+import { WebLayoutContext } from '../src/hooks/useWebLayout';
 import { options, profile } from '../test-support/learning';
 import {
   dictionaryService,
@@ -18,6 +23,10 @@ jest.mock('../src/services/dailyFlashcardService', () => ({
       quiz_available: 0,
     }),
   },
+}));
+
+jest.mock('../src/services/studyTimeService', () => ({
+  studyTimeService: { calendar: jest.fn() },
 }));
 
 jest.mock('../src/services/dictionaryService', () => ({
@@ -42,24 +51,40 @@ const onOpenVocabulary = jest.fn();
 const onOpenPromotion = jest.fn();
 let tree: Renderer.ReactTestRenderer;
 
-beforeEach(() => jest.clearAllMocks());
+beforeEach(() => {
+  jest.clearAllMocks();
+  const today = studyDate(Date.now());
+  jest.mocked(studyTimeService.calendar).mockResolvedValue({
+    year: Number(today.slice(0, 4)),
+    today,
+    timezone: 'Asia/Ho_Chi_Minh',
+    goal_seconds: 900,
+    first_year: Number(today.slice(0, 4)),
+    days: [{ date: today, seconds: 900 }],
+    study_days: 1,
+    current_streak: 1,
+    longest_streak: 1,
+  });
+});
 afterEach(async () => {
   await act(async () => tree?.unmount());
 });
 
-async function render() {
+async function render(desktop = false) {
   await act(async () => {
     tree = Renderer.create(
-      <HomeScreen
-        user={user}
-        profile={profile}
-        options={options}
-        onContinueLearning={onContinueLearning}
-        onOpenSkill={onOpenSkill}
-        onSearchVocabulary={onSearchVocabulary}
-        onOpenVocabulary={onOpenVocabulary}
-        onOpenPromotion={onOpenPromotion}
-      />,
+      <WebLayoutContext.Provider value={{ desktop, contentWidth: desktop ? 1100 : 400 }}>
+        <HomeScreen
+          user={user}
+          profile={profile}
+          options={options}
+          onContinueLearning={onContinueLearning}
+          onOpenSkill={onOpenSkill}
+          onSearchVocabulary={onSearchVocabulary}
+          onOpenVocabulary={onOpenVocabulary}
+          onOpenPromotion={onOpenPromotion}
+        />
+      </WebLayoutContext.Provider>,
     );
   });
 }
@@ -99,6 +124,13 @@ test('renders personalized learning data without invented progress', async () =>
   await render();
   const output = JSON.stringify(tree.toJSON());
   expect(output).toContain('Chào Minh');
+  expect(output).toContain('Lịch học');
+  expect(output).toContain('Ngày liên tiếp');
+  expect(output).toContain('Ngày đã học');
+  expect(studyTimeService.calendar).toHaveBeenCalledWith(
+    'u1',
+    Number(studyDate(Date.now()).slice(0, 4)),
+  );
   expect(output).toContain('Ôn tập hôm nay');
   expect(output).toContain('Chọn bộ thẻ đầu tiên');
   expect(output).toContain('Momo, linh vật tanuki của NihonGO đang vẫy tay');
@@ -113,6 +145,14 @@ test('renders personalized learning data without invented progress', async () =>
   await act(async () => button('Chọn bộ thẻ').props.onPress());
   expect(onOpenVocabulary).toHaveBeenCalledTimes(1);
   expect(button('Bắt đầu thử thách').props.disabled).toBe(true);
+});
+
+test('groups daily progress and the calendar side by side on desktop', async () => {
+  await render(true);
+  const overview = tree.root.findByProps({ testID: 'home-learning-overview' });
+  expect(StyleSheet.flatten(overview.props.style).flexDirection).toBe('row');
+  expect(overview.findAllByType(DailyGoalProgress)).toHaveLength(1);
+  expect(overview.findAllByType(StudyStreakCalendar)).toHaveLength(1);
 });
 
 test('routes all four skill cards through one typed callback', async () => {

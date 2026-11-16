@@ -271,7 +271,7 @@ function MainTabs({
                         onExit={closePracticeActivity}
                       />
                     ) : activeSkill === 'speaking' ? (
-                      <SpeakingScenariosScreen />
+                      <SpeakingScenariosScreen onExit={exitSkill} />
                     ) : activeSkill === 'listening' ? (
                       <ShadowingScreen
                         onExit={exitSkill}

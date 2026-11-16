@@ -1,7 +1,6 @@
 import { LearningLevelContext } from '../hooks/useLearningLevel';
 import { decodeRouteParam } from '../navigation/webNavigation';
 import { lazy, Suspense, useCallback, useState } from 'react';
-import type { ReactNode } from 'react';
 import {
   ActivityIndicator,
   StyleSheet,
@@ -41,7 +40,7 @@ import {
   FlashcardSession,
   CustomDeck,
 } from '../services/flashcardService';
-import { colors, layout, spacing, typography } from '../theme/theme';
+import { colors, spacing, typography } from '../theme/theme';
 import { betaGamesWeb, betaWeb } from '../config/beta';
 import { CommunityExperience } from '../../web/CommunityExperience';
 import { AccountScreen } from './AccountScreen';
@@ -162,8 +161,8 @@ function WebWorkspace({
   const navigate = nav.navigate;
   const { width } = useWindowDimensions();
   const desktop = width >= 1100;
-  const [webHeader, setWebHeader] = useState<ReactNode>(null),
-    [navigationHeight, setNavigationHeight] = useState(0);
+  const [navigationHeight, setNavigationHeight] = useState(0);
+  const [desktopBadgesHeight, setDesktopBadgesHeight] = useState(32);
   const selectedTab = selectedTabForPath(nav.pathname);
   const skill =
     /^\/practice\/(listening|speaking|reading|writing)(?:\/|$)/.exec(
@@ -243,36 +242,39 @@ function WebWorkspace({
                 showGames={!betaWeb || betaGamesWeb}
               />
             ) : null}
-            <ScreenBackHeaderContext.Provider
-              value={desktop ? setWebHeader : null}
-            >
+            <ScreenBackHeaderContext.Provider value={null}>
               <View style={styles.screen}>
                 {desktop ? (
                   <View
-                    style={[
-                      styles.topBar,
-                      /^\/practice\/listening\/[^/]+$/.test(nav.pathname) &&
-                        styles.listeningLessonTopBar,
-                    ]}
+                    pointerEvents="box-none"
+                    style={[styles.badges, styles.desktopBadges]}
+                    onLayout={event =>
+                      setDesktopBadgesHeight(event.nativeEvent.layout.height)
+                    }
                   >
-                    <View style={styles.header}>{webHeader}</View>
-                    <View style={styles.badges}>
+                    <Text style={styles.badge}>
+                      {profile.level === 'beginner'
+                        ? 'Mới bắt đầu'
+                        : profile.level}
+                    </Text>
+                    {nav.pathname === '/' ? (
                       <Text style={styles.badge}>
-                        {profile.level === 'beginner'
-                          ? 'Mới bắt đầu'
-                          : profile.level}
+                        {profile.daily_minutes} phút/ngày
                       </Text>
-                      {nav.pathname === '/' ? (
-                        <Text style={styles.badge}>
-                          {profile.daily_minutes} phút/ngày
-                        </Text>
-                      ) : (
-                        <StudyTimerBadge />
-                      )}
-                    </View>
+                    ) : (
+                      <StudyTimerBadge />
+                    )}
                   </View>
                 ) : null}
-                <View style={styles.screen} testID="tour-workspace">
+                <View
+                  style={[
+                    styles.screen,
+                    desktop
+                      ? { paddingTop: desktopBadgesHeight + spacing.sm * 2 }
+                      : null,
+                  ]}
+                  testID="tour-workspace"
+                >
                   <Suspense
                     fallback={
                       <View style={styles.routeLoading}>
@@ -350,18 +352,10 @@ function WebWorkspace({
                           }
                         />
                       ))}
-                      {[
-                        '/practice/speaking',
-                        '/practice/speaking/new',
-                        '/practice/speaking/scenarios/:scenarioId',
-                        '/practice/speaking/sessions/:sessionId',
-                      ].map(path => (
-                        <Route
-                          key={path}
-                          path={path}
-                          element={<SpeakingScenariosScreen />}
-                        />
-                      ))}
+                      <Route
+                        path="/practice/speaking/*"
+                        element={<SpeakingScenariosScreen onExit={goPractice} />}
+                      />
                       {[
                         '/practice/reading',
                         '/practice/reading/:passageId',
@@ -395,27 +389,18 @@ function WebWorkspace({
                           }
                         />
                       ))}
-                      {[
-                        '/lookup',
-                        '/lookup/videos',
-                        '/lookup/words/:wordId',
-                        '/lookup/kanji/:literal',
-                      ].map(path => (
-                        <Route
-                          key={path}
-                          path={path}
-                          element={
-                            <VocabularyScreen
-                              key={nav.pathname + nav.search}
-                              area="lookup"
-                              query={
-                                new URLSearchParams(nav.search).get('q') ?? ''
-                              }
-                              onExit={goHome}
-                            />
-                          }
-                        />
-                      ))}
+                      <Route
+                        path="/lookup/*"
+                        element={
+                          <VocabularyScreen
+                            area="lookup"
+                            query={
+                              new URLSearchParams(nav.search).get('q') ?? ''
+                            }
+                            onExit={goHome}
+                          />
+                        }
+                      />
                       <Route
                         path="/lookup/translate"
                         element={
@@ -606,19 +591,13 @@ const styles = StyleSheet.create({
   main: { flex: 1 },
   desktopMain: { flexDirection: 'row' },
   screen: { flex: 1, minWidth: 0, minHeight: 0 },
-  topBar: {
-    width: '100%',
-    maxWidth: layout.maxContentWidth,
-    alignSelf: 'center',
-    paddingHorizontal: spacing.xl,
-    paddingVertical: spacing.sm,
-    minHeight: layout.desktopHeaderHeight,
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: spacing.sm,
+  desktopBadges: {
+    position: 'absolute',
+    top: spacing.sm,
+    right: spacing.xl,
+    zIndex: 10,
+    backgroundColor: 'transparent',
   },
-  header: { flex: 1, minWidth: 0 },
-  listeningLessonTopBar: { maxWidth: '100%' },
   badges: { flexDirection: 'row', gap: spacing.sm, alignItems: 'center' },
   badge: {
     ...typography.caption,

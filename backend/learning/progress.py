@@ -66,6 +66,43 @@ def daily_progress(user_id, now_ms=None):
             'intervals': row.intervals if row else []}
 
 
+def study_calendar(user_id, year, now_ms=None):
+    now_ms = timestamp_ms() if now_ms is None else now_ms
+    today = datetime.fromtimestamp(now_ms / 1000, STUDY_TIMEZONE).date()
+    rows = db.session.execute(
+        select(LearningStudyDay.day, LearningStudyDay.seconds)
+        .where(LearningStudyDay.user_id == user_id)
+        .order_by(LearningStudyDay.day)
+    ).all()
+    # A minute of actual recorded study is the minimum for a streak day.
+    active_days = {day for day, seconds in rows if seconds >= 60 and day <= today}
+    longest = current_run = 0
+    previous = None
+    for day in sorted(active_days):
+        current_run = current_run + 1 if previous == day - timedelta(days=1) else 1
+        longest = max(longest, current_run)
+        previous = day
+    start = today if today in active_days else today - timedelta(days=1)
+    current = 0
+    while start in active_days:
+        current += 1
+        start -= timedelta(days=1)
+    visible = [{'date': day.isoformat(), 'seconds': seconds}
+               for day, seconds in rows if day.year == year and day <= today]
+    profile = db.session.get(LearningPreferences, user_id)
+    return {
+        'year': year,
+        'today': today.isoformat(),
+        'timezone': str(STUDY_TIMEZONE),
+        'goal_seconds': profile.daily_minutes * 60 if profile else None,
+        'first_year': min((day.year for day, _ in rows), default=today.year),
+        'days': visible,
+        'study_days': sum(day.year == year for day in active_days),
+        'current_streak': current,
+        'longest_streak': longest,
+    }
+
+
 def record_study(user_id, data):
     now_ms = timestamp_ms()
     intervals = parse_intervals(data, now_ms)

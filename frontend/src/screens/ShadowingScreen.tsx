@@ -1,3 +1,5 @@
+import { SwipeTransition } from '../components/SwipeTransition';
+import { ShadowingImportReveal } from '../components/ShadowingImportReveal';
 import { decodeRouteParam } from '../navigation/webNavigation';
 import { useWebNavigation } from '../navigation/webNavigation';
 import { ScreenBackHeader } from '../components/ScreenBackHeader';
@@ -265,6 +267,12 @@ function CatalogSeparator() {
 }
 
 const emptyQuizCheckpoints: { id: string; seconds: number }[] = [];
+type CatalogScope = 'all' | 'mine';
+type CatalogSnapshot = {
+  jobs: ShadowingJob[];
+  cursor: string | null;
+  paginated: boolean;
+};
 
 export function ShadowingScreen({
   onExit,
@@ -299,8 +307,18 @@ export function ShadowingScreen({
       : undefined;
   const [captionWidth, setCaptionWidth] = useState(0);
   const listRef = useRef<FlatList>(null);
+  const importInputRef = useRef<ComponentRef<typeof TextInput>>(null);
   const [url, setUrl] = useState('');
-  const [scope, setScope] = useState<'all' | 'mine'>('all');
+  const [scope, setScope] = useState<CatalogScope>('all');
+  const catalogSnapshots = useRef<
+    Partial<Record<CatalogScope, CatalogSnapshot>>
+  >({});
+  const loadedScopes = useRef(new Set<CatalogScope>());
+  const catalogListRef = useRef<FlatList<ShadowingJob>>(null);
+  const catalogOffsets = useRef<Record<CatalogScope, number>>({
+    all: 0,
+    mine: 0,
+  });
   const [cursor, setCursor] = useState<string | null>(null);
   const [loadingMore, setLoadingMore] = useState(false);
   const paginated = useRef(false);
@@ -400,6 +418,7 @@ export function ShadowingScreen({
     try {
       const result = await shadowingService.list(scope);
       if (mounted.current && current === listGeneration.current) {
+        loadedScopes.current.add(scope);
         setJobs(previous =>
           paginated.current
             ? [
@@ -439,6 +458,13 @@ export function ShadowingScreen({
   }, []);
   const catalogVisible = lesson === null;
   useEffect(() => {
+    if (catalogVisible)
+      catalogListRef.current?.scrollToOffset({
+        offset: catalogOffsets.current[scope],
+        animated: false,
+      });
+  }, [scope, catalogVisible]);
+  useEffect(() => {
     if (foreground && catalogVisible) refresh();
   }, [refresh, foreground, catalogVisible]);
   useEffect(() => {
@@ -458,15 +484,23 @@ export function ShadowingScreen({
       clearTimeout(timer);
     };
   }, [jobs, refresh, foreground]);
-  const selectScope = (next: 'all' | 'mine') => {
+  const selectScope = (next: CatalogScope) => {
     if (scope === next) return;
+    if (loadedScopes.current.has(scope)) {
+      catalogSnapshots.current[scope] = {
+        jobs,
+        cursor,
+        paginated: paginated.current,
+      };
+    }
+    const snapshot = catalogSnapshots.current[next];
     listGeneration.current += 1;
     catalogGeneration.current += 1;
-    paginated.current = false;
+    paginated.current = snapshot?.paginated ?? false;
     setScope(next);
-    setJobs([]);
-    setCursor(null);
-    setLoading(true);
+    setJobs(snapshot?.jobs ?? []);
+    setCursor(snapshot?.cursor ?? null);
+    setLoading(!snapshot);
     setLoadingMore(false);
     setListError('');
   };
@@ -1590,181 +1624,209 @@ export function ShadowingScreen({
       </View>
     );
   }
+  const catalogToolbar = (
+    <View
+      testID="tour-listening-library"
+      style={[
+        styles.catalogContent,
+        styles.catalogToolbar,
+        { paddingTop: (desktop ? insets.top : 0) + spacing.lg },
+      ]}
+    >
+      <View style={styles.catalogCopy}>
+        <ScreenBackHeader
+          title="Nghe & shadowing"
+          backLabel="Về Luyện tập"
+          onBack={() => {
+            if (onExit) onExit();
+            else webRef.current?.navigate('/practice');
+          }}
+        />
+      </View>
+      {desktop && (
+        <Text style={styles.catalogSubtitle}>
+          Chọn video có phụ đề và luyện nghe theo từng đoạn.
+        </Text>
+      )}
+      <View style={styles.catalogScopes}>
+        <View style={styles.catalogScopeTabs}>
+          {(['all', 'mine'] as const).map(value => (
+            <Pressable
+              key={value}
+              accessibilityRole="tab"
+              hitSlop={6}
+              accessibilityLabel={
+                value === 'all' ? 'Tất cả video' : 'Video của tôi'
+              }
+              accessibilityState={{
+                selected: scope === value,
+                disabled: busy,
+              }}
+              disabled={busy}
+              onPress={() => selectScope(value)}
+              style={[styles.scopeButton, scope === value && styles.selected]}
+            >
+              <Text
+                style={[styles.scopeLabel, scope === value && styles.scopeActive]}
+              >
+                {value === 'all' ? 'Tất cả video' : 'Video của tôi'}
+              </Text>
+            </Pressable>
+          ))}
+        </View>
+        {desktop && (
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel={importOpen ? 'Thu gọn' : 'Thêm video YouTube'}
+            accessibilityState={{ expanded: importOpen }}
+            aria-expanded={importOpen}
+            hitSlop={7}
+            style={({ pressed }) => [
+              styles.modeButton,
+              styles.catalogImportButton,
+              importOpen && styles.modeTabSelected,
+              pressed &&
+                (importOpen ? styles.modeSelectedPressed : styles.modePressed),
+            ]}
+            onPress={() => {
+              if (!importOpen) {
+                catalogListRef.current?.scrollToOffset({
+                  offset: 0,
+                  animated: true,
+                });
+              } else {
+                importInputRef.current?.blur();
+              }
+              setImportOpen(value => !value);
+            }}
+          >
+            {importOpen ? (
+              <XIcon size={15} color={colors.onPrimary} />
+            ) : (
+              <PlusIcon size={15} color={colors.primaryText} />
+            )}
+            <Text
+              style={[
+                styles.modeTabLabel,
+                importOpen && styles.modeTabLabelSelected,
+              ]}
+            >
+              {importOpen ? 'Thu gọn' : 'Thêm video YouTube'}
+            </Text>
+          </Pressable>
+        )}
+      </View>
+    </View>
+  );
   return (
     <KeyboardAvoidingView
       style={styles.screen}
       behavior={Platform.OS === 'ios' ? 'padding' : undefined}
     >
       {!desktop ? <MobileTopBar /> : null}
-      <FlatList
-        key={`catalog-${catalogColumns}`}
-        data={jobs}
-        numColumns={catalogColumns}
-        columnWrapperStyle={catalogColumns > 1 ? styles.catalogRow : undefined}
-        renderItem={renderJob}
-        keyExtractor={job => job.id}
-        ItemSeparatorComponent={CatalogSeparator}
-        initialNumToRender={catalogColumns > 1 ? catalogColumns * 3 : 4}
-        onEndReached={loadMore}
-        onEndReachedThreshold={0.4}
-        keyboardShouldPersistTaps="handled"
-        keyboardDismissMode="on-drag"
-        contentInsetAdjustmentBehavior="never"
-        showsVerticalScrollIndicator={false}
-        contentContainerStyle={[
-          styles.catalogContent,
-          {
-            paddingTop: (desktop ? insets.top : 0) + spacing.lg,
-            paddingBottom:
-              Math.max(insets.bottom, bottomOverlayHeight) + spacing.xl,
-          },
-        ]}
-        ListHeaderComponent={
-          <View style={styles.catalogHeader} testID="tour-listening-library">
-            <View
-              style={[styles.catalogCopy, desktop && styles.desktopCatalogCopy]}
-            >
-              <Text accessibilityRole="header" style={styles.catalogTitle}>
-                Nghe & shadowing
-              </Text>
-              {desktop && (
-                <Pressable
-                  accessibilityRole="button"
-                  accessibilityLabel={
-                    importOpen ? 'Thu gọn' : 'Thêm video YouTube'
-                  }
-                  accessibilityState={{ expanded: importOpen }}
-                  aria-expanded={importOpen}
-                  hitSlop={7}
-                  style={({ pressed }) => [
-                    styles.modeButton,
-                    importOpen && styles.modeTabSelected,
-                    pressed &&
-                      (importOpen
-                        ? styles.modeSelectedPressed
-                        : styles.modePressed),
-                  ]}
-                  onPress={() => setImportOpen(value => !value)}
-                >
-                  {importOpen ? (
-                    <XIcon size={15} color={colors.onPrimary} />
-                  ) : (
-                    <PlusIcon size={15} color={colors.primaryText} />
-                  )}
-                  <Text
-                    style={[
-                      styles.modeTabLabel,
-                      importOpen && styles.modeTabLabelSelected,
-                    ]}
-                  >
-                    {importOpen ? 'Thu gọn' : 'Thêm video YouTube'}
-                  </Text>
-                </Pressable>
-              )}
-            </View>
-            {desktop && (
-              <Text style={styles.catalogSubtitle}>
-                Chọn video có phụ đề và luyện nghe theo từng đoạn.
-              </Text>
-            )}
-            <AuthNotice error message={error} />
-            <AuthNotice error message={listError} />
-            {(!desktop || importOpen) && (
-              <View style={styles.importFrame}>
-                <View style={styles.sourceTab}>
-                  <PlayCircleIcon size={20} color={colors.primaryText} />
-                  <Text style={styles.sourceLabel}>YouTube</Text>
+      {catalogToolbar}
+      <SwipeTransition index={scope === 'all' ? 0 : 1}>
+        <FlatList
+          key={`catalog-${catalogColumns}`}
+          ref={catalogListRef}
+          onScroll={event => {
+            catalogOffsets.current[scope] = event.nativeEvent.contentOffset.y;
+          }}
+          scrollEventThrottle={16}
+          data={jobs}
+          numColumns={catalogColumns}
+          columnWrapperStyle={
+            catalogColumns > 1 ? styles.catalogRow : undefined
+          }
+          renderItem={renderJob}
+          keyExtractor={job => job.id}
+          ItemSeparatorComponent={CatalogSeparator}
+          initialNumToRender={catalogColumns > 1 ? catalogColumns * 3 : 4}
+          onEndReached={loadMore}
+          onEndReachedThreshold={0.4}
+          keyboardShouldPersistTaps="handled"
+          keyboardDismissMode="on-drag"
+          contentInsetAdjustmentBehavior="never"
+          showsVerticalScrollIndicator={false}
+          contentContainerStyle={[
+            styles.catalogContent,
+            {
+              paddingBottom:
+                Math.max(insets.bottom, bottomOverlayHeight) + spacing.xl,
+            },
+          ]}
+          ListHeaderComponent={
+            <View style={styles.catalogHeader}>
+              <AuthNotice error message={error} />
+              <AuthNotice error message={listError} />
+              <ShadowingImportReveal open={!desktop || importOpen}>
+                <View style={styles.importFrame}>
+                  <View style={styles.sourceTab}>
+                    <PlayCircleIcon size={20} color={colors.primaryText} />
+                    <Text style={styles.sourceLabel}>YouTube</Text>
+                  </View>
+                  <View style={styles.importCard}>
+                    <Text style={styles.heading}>Link YouTube</Text>
+                    <TextInput
+                      ref={importInputRef}
+                      accessibilityLabel="Link YouTube"
+                      placeholder="Dán link video YouTube tiếng Nhật…"
+                      placeholderTextColor={colors.placeholder}
+                      value={url}
+                      onChangeText={setUrl}
+                      maxLength={2048}
+                      autoCapitalize="none"
+                      autoCorrect={false}
+                      keyboardType="url"
+                      style={styles.input}
+                    />
+                    <Text style={styles.body}>
+                      Video dài tối đa 20 phút. Bạn có thể tiếp tục dùng app
+                      trong lúc chuẩn bị.
+                    </Text>
+                    <AuthButton
+                      label="Chuẩn bị video"
+                      busy={busy}
+                      disabled={!url.trim()}
+                      onPress={() => submit()}
+                    />
+                  </View>
                 </View>
-                <View style={styles.importCard}>
-                  <Text style={styles.heading}>Link YouTube</Text>
-                  <TextInput
-                    accessibilityLabel="Link YouTube"
-                    placeholder="Dán link video YouTube tiếng Nhật…"
-                    placeholderTextColor={colors.placeholder}
-                    value={url}
-                    onChangeText={setUrl}
-                    maxLength={2048}
-                    autoCapitalize="none"
-                    autoCorrect={false}
-                    keyboardType="url"
-                    style={styles.input}
-                  />
-                  <Text style={styles.body}>
-                    Video dài tối đa 20 phút. Bạn có thể tiếp tục dùng app trong
-                    lúc chuẩn bị.
-                  </Text>
-                  <AuthButton
-                    label="Chuẩn bị video"
-                    busy={busy}
-                    disabled={!url.trim()}
-                    onPress={() => submit()}
-                  />
-                </View>
-              </View>
-            )}
-            <View style={styles.catalogScopes}>
-              {(['all', 'mine'] as const).map(value => (
-                <Pressable
-                  key={value}
-                  accessibilityRole="tab"
-                  hitSlop={6}
-                  accessibilityLabel={
-                    value === 'all' ? 'Tất cả video' : 'Video của tôi'
-                  }
-                  accessibilityState={{
-                    selected: scope === value,
-                    disabled: busy,
-                  }}
-                  disabled={busy}
-                  onPress={() => selectScope(value)}
-                  style={[
-                    styles.scopeButton,
-                    scope === value && styles.selected,
-                  ]}
-                >
-                  <Text
-                    style={[
-                      styles.scopeLabel,
-                      scope === value && styles.scopeActive,
-                    ]}
-                  >
-                    {value === 'all' ? 'Tất cả video' : 'Video của tôi'}
-                  </Text>
-                </Pressable>
-              ))}
+              </ShadowingImportReveal>
             </View>
-          </View>
-        }
-        ListEmptyComponent={
-          <Text style={styles.body}>
-            {loading
-              ? 'Đang tải video…'
-              : scope === 'mine'
-              ? 'Bạn chưa thêm video nào. Dán một link YouTube để bắt đầu.'
-              : 'Chưa có video. Thêm một link để bắt đầu luyện shadowing.'}
-          </Text>
-        }
-        ListFooterComponent={
-          <View>
-            {loadingMore ? (
-              <Text style={styles.caption}>Đang tải thêm video…</Text>
-            ) : null}
-            <AuthButton
-              label="Làm mới"
-              variant="text"
-              onPress={() => {
-                paginated.current = false;
-                refresh();
-              }}
-            />
-          </View>
-        }
-      />
+          }
+          ListEmptyComponent={
+            <Text style={styles.body}>
+              {loading
+                ? 'Đang tải video…'
+                : scope === 'mine'
+                ? 'Bạn chưa thêm video nào. Dán một link YouTube để bắt đầu.'
+                : 'Chưa có video. Thêm một link để bắt đầu luyện shadowing.'}
+            </Text>
+          }
+          ListFooterComponent={
+            <View>
+              {loadingMore ? (
+                <Text style={styles.caption}>Đang tải thêm video…</Text>
+              ) : null}
+              <AuthButton
+                label="Làm mới"
+                variant="text"
+                onPress={() => {
+                  paginated.current = false;
+                  refresh();
+                }}
+              />
+            </View>
+          }
+        />
+      </SwipeTransition>
     </KeyboardAvoidingView>
   );
 }
 
 const styles = StyleSheet.create({
+  catalogToolbar: { gap: spacing.lg, paddingBottom: spacing.lg },
   quizLevelPanel: { gap: spacing.sm, paddingVertical: spacing.sm },
   dictationHintStrong: { ...typography.button, fontSize: 12, lineHeight: 16 },
   dictationHintEmphasis: { fontStyle: 'italic' },
@@ -1877,14 +1939,16 @@ const styles = StyleSheet.create({
   },
   catalogHeader: { gap: spacing.lg, paddingBottom: spacing.lg },
   catalogCopy: { gap: spacing.sm },
-  desktopCatalogCopy: {
+  catalogSubtitle: { ...typography.input, color: colors.body },
+  catalogScopes: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
+    flexWrap: 'wrap',
+    gap: spacing.sm,
   },
-  catalogTitle: { ...typography.title, color: colors.dark },
-  catalogSubtitle: { ...typography.input, color: colors.body },
-  catalogScopes: { flexDirection: 'row', gap: spacing.sm },
+  catalogScopeTabs: { flexDirection: 'row', gap: spacing.sm },
+  catalogImportButton: { minHeight: 36, marginLeft: 'auto' },
   scopeButton: {
     minHeight: 36,
     paddingHorizontal: spacing.md,

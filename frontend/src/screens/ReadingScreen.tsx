@@ -1,3 +1,4 @@
+import { SearchButton } from '../components/SearchButton';
 import { useDefaultJlptLevel, toJlptLevel } from '../hooks/useLearningLevel';
 import {
   type ComponentRef,
@@ -243,9 +244,8 @@ export function ReadingScreen({
                   returnKeyType="search"
                   style={styles.input}
                 />
-                <AuthButton
+                <SearchButton
                   label="Tìm"
-                  variant="outline"
                   onPress={() => updateFilters({ q: draft.trim(), page: 1 })}
                 />
               </View>

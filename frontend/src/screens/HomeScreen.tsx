@@ -5,12 +5,14 @@ import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { HomeFlashcardHub } from '../components/HomeFlashcardHub';
 import type { FlashcardSession } from '../services/flashcardService';
 import { DailyGoalProgress } from '../components/StudyTime';
+import { StudyStreakCalendar } from '../components/StudyStreakCalendar';
 import { AuthShell } from '../components/AuthForm';
 import { HomeFeatureIcon } from '../components/HomeFeatureIcon';
 import { LearningSkill, SkillPicker } from '../components/SkillPicker';
 import { PromotionPanel } from '../components/PromotionPanel';
 import { VocabularySearchBar } from '../components/VocabularySearchBar';
 import { NihongoMascot } from '../components/NihongoMascot';
+import { useWebLayout } from '../hooks/useWebLayout';
 import { User } from '../services/authService';
 import { LearningOptions, LearningProfile } from '../services/learningService';
 import { colors, radius, shadowMd, spacing, typography } from '../theme/theme';
@@ -43,6 +45,7 @@ export function HomeScreen({
   onOpenQuiz,
   onOpenGames,
 }: Props) {
+  const { desktop } = useWebLayout();
   return (
     <AuthShell
       title={`Chào ${user.name}`}
@@ -74,7 +77,17 @@ export function HomeScreen({
         </Text>
         <VocabularySearchBar onSearch={onSearchVocabulary} />
       </View>
-      <DailyGoalProgress />
+      <View
+        testID="home-learning-overview"
+        style={[styles.learningOverview, desktop && styles.desktopLearningOverview]}
+      >
+        <View style={[styles.goalColumn, desktop && styles.desktopGoalColumn]}>
+          <DailyGoalProgress />
+        </View>
+        <View style={[styles.calendarColumn, desktop && styles.desktopCalendarColumn]}>
+          <StudyStreakCalendar accountId={user.id} />
+        </View>
+      </View>
       <HomeFlashcardHub
         onOpenFlashcards={onOpenFlashcards ?? onOpenVocabulary}
         onOpenQuiz={onOpenQuiz ?? onContinueLearning}
@@ -118,6 +131,12 @@ export function HomeScreen({
 
 const styles = StyleSheet.create({
   searchSection: { zIndex: 30 },
+  learningOverview: { gap: spacing.lg },
+  desktopLearningOverview: { flexDirection: 'row', alignItems: 'stretch' },
+  goalColumn: { minWidth: 0 },
+  desktopGoalColumn: { flex: 1, minWidth: 280 },
+  calendarColumn: { minWidth: 0 },
+  desktopCalendarColumn: { flex: 2, minWidth: 0 },
   section: { gap: spacing.lg },
   sectionHeadingRow: {
     flexDirection: 'row',

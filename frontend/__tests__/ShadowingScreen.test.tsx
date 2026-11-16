@@ -145,11 +145,11 @@ afterEach(async () => {
   jest.useRealTimers();
   jest.restoreAllMocks();
 });
-async function render(level: LearningLevel = 'N3') {
+async function render(level: LearningLevel = 'N3', onExit?: () => void) {
   await act(async () => {
     tree = Renderer.create(
       <LearningLevelContext.Provider value={level}>
-        <ShadowingScreen />
+        <ShadowingScreen onExit={onExit} />
       </LearningLevelContext.Provider>,
       {
         createNodeMock: element =>
@@ -158,6 +158,12 @@ async function render(level: LearningLevel = 'N3') {
     );
   });
 }
+test('returns from the listening library to practice', async () => {
+  const onExit = jest.fn();
+  await render('N3', onExit);
+  await press('Về Luyện tập');
+  expect(onExit).toHaveBeenCalledTimes(1);
+});
 async function press(label: string) {
   if (
     label.startsWith('Luyện đoạn ') &&
@@ -751,6 +757,59 @@ test('loads the next catalog page without duplicate cards', async () => {
       .findByType(FlatList)
       .props.data.map((item: ShadowingJob) => item.id),
   ).toEqual(['job-1', 'second-job']);
+});
+
+test('restores cached catalogs, pagination and scroll without blanking the list while refreshing', async () => {
+  const second = { ...job, id: 'second-job', title: 'Second video' };
+  const third = { ...job, id: 'third-job', title: 'Third video' };
+  const scroll = jest
+    .spyOn(FlatList.prototype, 'scrollToOffset')
+    .mockImplementation(() => {});
+  jest
+    .mocked(shadowingService.list)
+    .mockImplementation(async (scope, cursor) => {
+      if (scope === 'mine') return { items: [], next_cursor: null };
+      if (cursor) return { items: [second], next_cursor: 'page-3' };
+      return { items: [job], next_cursor: 'page-2' };
+    });
+  await render();
+  const list = tree.root.findByType(FlatList);
+  await act(async () => list.props.onEndReached());
+  await act(async () =>
+    list.props.onScroll({ nativeEvent: { contentOffset: { y: 240 } } }),
+  );
+  await press('Video của tôi');
+  expect(visibleText()).toContain('Bạn chưa thêm video nào');
+  let finishRefresh!: (value: { items: ShadowingJob[] }) => void;
+  jest.mocked(shadowingService.list).mockImplementation((_scope, cursor) =>
+    cursor
+      ? Promise.resolve({ items: [third], next_cursor: null })
+      : new Promise(resolve => {
+          finishRefresh = resolve;
+        }),
+  );
+  await press('Tất cả video');
+  expect(tree.root.findByType(FlatList)).toBe(list);
+  expect(list.props.data.map((item: ShadowingJob) => item.id)).toEqual([
+    job.id,
+    second.id,
+  ]);
+  expect(visibleText()).not.toContain('Đang tải video…');
+  expect(scroll).toHaveBeenCalledWith({ offset: 240, animated: false });
+  await act(async () => list.props.onEndReached());
+  expect(shadowingService.list).toHaveBeenLastCalledWith('all', 'page-3');
+  expect(list.props.data.map((item: ShadowingJob) => item.id)).toEqual([
+    job.id,
+    second.id,
+    third.id,
+  ]);
+  const finishAll = finishRefresh;
+  await press('Video của tôi');
+  expect(list.props.data).toEqual([]);
+  expect(visibleText()).toContain('Bạn chưa thêm video nào');
+  expect(visibleText()).not.toContain('Đang tải video…');
+  await act(async () => finishAll({ items: [job] }));
+  expect(list.props.data).toEqual([]);
 });
 
 test('an old community response cannot replace the personal catalog after switching scope', async () => {

@@ -30,6 +30,17 @@ jest.mock('../src/services/studyTimeService', () => ({
         intervals: [],
       })),
     record: jest.fn(),
+    calendar: jest.fn().mockImplementation(async (_accountId, year) => ({
+      year,
+      today: new Date(Date.now() + 7 * 3600000).toISOString().slice(0, 10),
+      timezone: 'Asia/Ho_Chi_Minh',
+      goal_seconds: 900,
+      first_year: year,
+      days: [],
+      study_days: 0,
+      current_streak: 0,
+      longest_streak: 0,
+    })),
   },
 }));
 jest.mock('../src/services/learningService', () => ({

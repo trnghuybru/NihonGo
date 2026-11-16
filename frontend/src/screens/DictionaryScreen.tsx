@@ -1,3 +1,5 @@
+import { SwipeTransition } from '../components/SwipeTransition';
+import { SearchButton } from '../components/SearchButton';
 import { decodeRouteParam } from '../navigation/webNavigation';
 import { useWebNavigation } from '../navigation/webNavigation';
 import {
@@ -783,31 +785,35 @@ export function DictionaryScreen({
     setHistoryOpen,
     searchContainerRef,
   } = useSearchHistoryFocus(active);
+  const webPath = web?.pathname;
+  const webSearch = web?.search;
+  const webRoute = useMemo<Route | null>(() => {
+    if (!webPath) return null;
+    const word = /^\/lookup\/words\/([^/]+)$/.exec(webPath)?.[1];
+    const character = /^\/lookup\/kanji\/([^/]+)$/.exec(webPath)?.[1];
+    if (word) return { kind: 'word', id: decodeRouteParam(word), input: query };
+    if (character)
+      return {
+        kind: 'character',
+        literal: decodeRouteParam(character),
+        input: query,
+      };
+    const params = new URLSearchParams(webSearch ?? '');
+    const kind = params.get('kind') === 'kanji' ? 'kanji' : 'words';
+    return {
+      kind,
+      query: query.trim().slice(0, kind === 'kanji' ? 100 : 500),
+      page: Math.max(1, Math.min(10000, Number(params.get('page')) || 1)),
+    };
+  }, [webPath, webSearch, query]);
+  useEffect(() => {
+    if (!webPath) return;
+    setText(query.slice(0, 500));
+    setVideoQuery(query.trim().slice(0, 100));
+    setHistoryOpen(false);
+  }, [webPath, webSearch, query, setHistoryOpen]);
   const [routes, setRoutes] = useState<Route[]>(() => {
-    if (web) {
-      const word = /^\/lookup\/words\/([^/]+)$/.exec(web.pathname)?.[1];
-      const character = /^\/lookup\/kanji\/([^/]+)$/.exec(web.pathname)?.[1];
-      if (word)
-        return [{ kind: 'word', id: decodeRouteParam(word), input: query }];
-      if (character)
-        return [
-          {
-            kind: 'character',
-            literal: decodeRouteParam(character),
-            input: query,
-          },
-        ];
-      return [
-        {
-          kind: initialTab === 'kanji' ? 'kanji' : 'words',
-          query: query.trim().slice(0, initialTab === 'kanji' ? 100 : 500),
-          page: Math.max(
-            1,
-            Math.min(10000, Number(urlParams.get('page')) || 1),
-          ),
-        },
-      ];
-    }
+    if (webRoute) return [webRoute];
 
     const initial = query.trim().slice(0, 500);
     if (initialEntry)
@@ -831,15 +837,16 @@ export function DictionaryScreen({
     ];
   });
   const listRef = useRef<FlatList<never>>(null);
-  const route = routes[routes.length - 1];
-  const activeTab: Tab =
-    tab === 'videos'
-      ? 'videos'
-      : route.kind === 'character' || route.kind === 'kanji'
-      ? 'kanji'
-      : route.kind === 'word' || route.kind === 'words'
-      ? 'words'
-      : tab;
+  const route = webRoute ?? routes[routes.length - 1];
+  const activeTab: Tab = web
+    ? initialTab
+    : tab === 'videos'
+    ? 'videos'
+    : route.kind === 'character' || route.kind === 'kanji'
+    ? 'kanji'
+    : route.kind === 'word' || route.kind === 'words'
+    ? 'words'
+    : tab;
   const listRoute = route.kind === 'words' || route.kind === 'kanji';
   const push = useCallback(
     (next: Route) => {
@@ -1187,20 +1194,11 @@ export function DictionaryScreen({
               <HandwritingIcon size={26} />
             </Pressable>
           </View>
-          <Pressable
-            accessibilityRole="button"
-            accessibilityLabel="Tìm kiếm từ điển"
+          <SearchButton
+            label="Tìm kiếm từ điển"
             disabled={!text.trim()}
-            accessibilityState={{ disabled: !text.trim() }}
             onPress={submit}
-            style={[styles.submit, !!text.trim() && styles.submitActive]}
-          >
-            <HomeFeatureIcon
-              name="arrow"
-              size={20}
-              color={text.trim() ? colors.onPrimary : colors.disabledText}
-            />
-          </Pressable>
+          />
         </View>
         <DictionaryRecentHistory
           active={active}
@@ -1211,6 +1209,10 @@ export function DictionaryScreen({
         />
       </View>
       {toolbar}
+    </View>
+  );
+  const results = (
+    <View style={styles.details}>
       {showRecentHistory ? (
         <View style={styles.details} testID="dictionary-viewed-words">
           <Text style={styles.heading} accessibilityRole="header">
@@ -1302,12 +1304,15 @@ export function DictionaryScreen({
               wide={wide}
               onKanji={openKanji}
               onWord={openWord}
-              onPage={page =>
-                setRoutes(previous => [
-                  ...previous.slice(0, -1),
-                  { kind: 'words', query: context?.query || text.trim(), page },
-                ])
-              }
+              onPage={page => {
+                const next = {
+                  kind: 'words' as const,
+                  query: context?.query || text.trim(),
+                  page,
+                };
+                if (web) push(next);
+                else setRoutes(previous => [...previous.slice(0, -1), next]);
+              }}
             />
           ) : null}
           {displayedCharacter ? (
@@ -1318,16 +1323,15 @@ export function DictionaryScreen({
               onKanji={openKanji}
               onWord={openWord}
               onSearch={searchWords}
-              onPage={page =>
-                setRoutes(previous => [
-                  ...previous.slice(0, -1),
-                  {
-                    kind: 'kanji',
-                    query: kanjiContext?.query || text.trim(),
-                    page,
-                  },
-                ])
-              }
+              onPage={page => {
+                const next = {
+                  kind: 'kanji' as const,
+                  query: kanjiContext?.query || text.trim(),
+                  page,
+                };
+                if (web) push(next);
+                else setRoutes(previous => [...previous.slice(0, -1), next]);
+              }}
             />
           ) : null}
         </>
@@ -1355,77 +1359,78 @@ export function DictionaryScreen({
         }}
       />
     ) : null;
-  if (activeTab === 'videos')
-    return (
-      <View style={styles.fill}>
-        <View
-          style={[
-            styles.videoHeader,
-            !compact && { paddingTop: insets.top + spacing.lg },
-          ]}
-        >
-          {header}
-        </View>
-        {handwriting}
-        {renderVideos(videoQuery)}
-      </View>
-    );
   return (
     <KeyboardAvoidingView
       style={styles.fill}
       behavior={Platform.OS === 'ios' ? 'padding' : undefined}
     >
       {handwriting}
-      <FlatList
-        ref={listRef}
-        data={[]}
-        contentContainerStyle={[
-          styles.content,
-          {
-            paddingTop: compact
-              ? spacing.md
-              : Platform.OS === 'android'
-              ? insets.top + spacing.lg
-              : spacing.lg,
-            paddingBottom: navigationInset + spacing.section,
-          },
+      <View
+        style={[
+          styles.videoHeader,
+          styles.fixedHeader,
+          historyOpen ? styles.historyLayer : null,
+          { paddingTop: compact ? spacing.md : insets.top + spacing.lg },
         ]}
-        ListHeaderComponent={header}
-        ListHeaderComponentStyle={historyOpen ? styles.historyLayer : undefined}
-        keyboardShouldPersistTaps="handled"
-        keyboardDismissMode="on-drag"
-        contentInsetAdjustmentBehavior="automatic"
-        renderItem={() => null}
-        ListEmptyComponent={
-          !showRecentHistory &&
-          state.status === 'ready' &&
-          listRoute &&
-          !displayedWord &&
-          result?.kind !== 'translation' &&
-          !displayedCharacter ? (
-            <View style={styles.empty}>
-              <HomeFeatureIcon name="search" size={40} color={colors.muted} />
-              <Text style={styles.heading}>
-                {route.query
-                  ? 'Không tìm thấy kết quả'
-                  : 'Bạn muốn tra từ nào?'}
-              </Text>
-              <Text style={styles.body}>
-                {route.query
-                  ? 'Thử cách viết, cách đọc hoặc từ khóa khác.'
-                  : activeTab === 'kanji'
-                  ? 'Ví dụ: 学, がく hoặc học.'
-                  : 'Ví dụ: 日本, にほん, nihon hoặc Nhật Bản.'}
-              </Text>
-            </View>
-          ) : undefined
-        }
-      />
+      >
+        {header}
+      </View>
+      <SwipeTransition index={['words', 'kanji', 'videos'].indexOf(activeTab)}>
+        {activeTab === 'videos' ? (
+          renderVideos(videoQuery)
+        ) : (
+          <FlatList
+            ref={listRef}
+            data={[]}
+            contentContainerStyle={[
+              styles.content,
+              {
+                paddingTop: spacing.md,
+                paddingBottom: navigationInset + spacing.section,
+              },
+            ]}
+            ListHeaderComponent={results}
+            keyboardShouldPersistTaps="handled"
+            keyboardDismissMode="on-drag"
+            contentInsetAdjustmentBehavior="automatic"
+            renderItem={() => null}
+            ListEmptyComponent={
+              !showRecentHistory &&
+              state.status === 'ready' &&
+              listRoute &&
+              !displayedWord &&
+              result?.kind !== 'translation' &&
+              !displayedCharacter ? (
+                <View style={styles.empty}>
+                  <HomeFeatureIcon
+                    name="search"
+                    size={40}
+                    color={colors.muted}
+                  />
+                  <Text style={styles.heading}>
+                    {route.query
+                      ? 'Không tìm thấy kết quả'
+                      : 'Bạn muốn tra từ nào?'}
+                  </Text>
+                  <Text style={styles.body}>
+                    {route.query
+                      ? 'Thử cách viết, cách đọc hoặc từ khóa khác.'
+                      : activeTab === 'kanji'
+                      ? 'Ví dụ: 学, がく hoặc học.'
+                      : 'Ví dụ: 日本, にほん, nihon hoặc Nhật Bản.'}
+                  </Text>
+                </View>
+              ) : undefined
+            }
+          />
+        )}
+      </SwipeTransition>
     </KeyboardAvoidingView>
   );
 }
 
 const styles = StyleSheet.create({
+  fixedHeader: { paddingBottom: spacing.md, zIndex: 1 },
   viewedWordsList: {
     backgroundColor: colors.surface,
     borderRadius: radius.card,
@@ -1661,15 +1666,6 @@ const styles = StyleSheet.create({
     ...typography.input,
     color: colors.inputText,
   },
-  submit: {
-    width: layout.touchTarget,
-    height: layout.touchTarget,
-    borderRadius: radius.pill,
-    backgroundColor: colors.disabled,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  submitActive: { backgroundColor: colors.primary },
   back: {
     flexDirection: 'row',
     alignItems: 'center',

@@ -2,10 +2,9 @@ import React from 'react';
 import ReactTestRenderer from 'react-test-renderer';
 import { Linking } from 'react-native';
 import { LoginScreen } from '../src/screens/LoginScreen';
-import { AuthButton, AuthField } from '../src/components/AuthForm';
+import { AuthButton, AuthField, AuthShell } from '../src/components/AuthForm';
 import { authService } from '../src/services/authService';
-
-jest.mock('../src/config/beta', () => ({ betaWeb: false }));
+import { LoginCharacterRain } from '../src/components/LoginCharacterRain';
 
 jest.mock('../src/services/authService', () => ({
   authService: {
@@ -42,7 +41,6 @@ async function fill(label: string, value: string) {
 }
 beforeEach(async () => {
   jest.clearAllMocks();
-  jest.requireMock('../src/config/beta').betaWeb = false;
   await ReactTestRenderer.act(async () => {
     tree = ReactTestRenderer.create(<LoginScreen />);
   });
@@ -107,15 +105,18 @@ test('shows API login failure and hides providers that are not configured', asyn
   ).toBe(false);
 });
 
-test('offers the beta survey and explains when to expect an email', async () => {
+test('keeps the normal signup footer and shows Momo with a beta speech bubble', async () => {
   const openURL = jest.spyOn(Linking, 'openURL').mockResolvedValue(undefined);
-  jest.requireMock('../src/config/beta').betaWeb = true;
-  await ReactTestRenderer.act(async () => tree.update(<LoginScreen />));
 
   const content = JSON.stringify(tree.toJSON());
-  expect(content).toContain('Điền khảo sát đăng ký beta');
-  expect(content).toContain('vui lòng đợi trong 24 giờ');
-  expect(content).toContain('Chúng tôi sẽ gửi email đến bạn');
+  const shell = tree.root.findByType(AuthShell);
+  const invite = shell.props.floatingAccessory;
+  expect(content).toContain('Chưa có tài khoản?');
+  expect(content).toContain('Đăng ký ngay');
+  expect(content).not.toContain('Đã nhận email mời?');
+  expect(shell.props.backgroundDecoration.type).toBe(LoginCharacterRain);
+  expect(invite.props.children[0].props.children[0].props.children).toBe('Chưa đăng ký beta?');
+  expect(invite.props.children[0].props.children[1].props.children).toContain('trong 24 giờ');
   await click('Điền khảo sát đăng ký beta');
   expect(openURL).toHaveBeenCalledWith('https://forms.gle/SYYD5H2M54CfhuLg6');
   openURL.mockRestore();
