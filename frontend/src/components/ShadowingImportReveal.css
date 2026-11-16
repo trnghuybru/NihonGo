@@ -1,0 +1,39 @@
+.shadowing-import-reveal {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-14px);
+  pointer-events: none;
+  transition:
+    grid-template-rows 240ms ease,
+    opacity 180ms ease,
+    transform 240ms ease,
+    visibility 0s linear 240ms;
+}
+
+.shadowing-import-reveal--open {
+  grid-template-rows: 1fr;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+  transition:
+    grid-template-rows 240ms ease,
+    opacity 180ms ease,
+    transform 240ms ease,
+    visibility 0s;
+}
+
+.shadowing-import-reveal__content {
+  min-height: 0;
+  overflow: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .shadowing-import-reveal,
+  .shadowing-import-reveal--open {
+    transition: none;
+    transform: none;
+  }
+}

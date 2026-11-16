@@ -1,3 +1,4 @@
+import { SearchButton } from '../components/SearchButton';
 import { useDefaultJlptLevel } from '../hooks/useLearningLevel';
 import { decodeRouteParam } from '../navigation/webNavigation';
 import { useWebNavigation } from '../navigation/webNavigation';
@@ -960,21 +961,10 @@ function VocabularyContent({
               onSubmitEditing={submitSearch}
               style={styles.searchInput}
             />
-            <Pressable
-              accessibilityRole="button"
-              accessibilityLabel="Tìm kiếm"
+            <SearchButton
               disabled={!searchText.trim()}
-              accessibilityState={{ disabled: !searchText.trim() }}
               onPress={submitSearch}
-              style={styles.searchButton}
-            >
-              <AuthIcon
-                name="arrow"
-                color={
-                  searchText.trim() ? colors.primaryText : colors.disabledText
-                }
-              />
-            </Pressable>
+            />
           </View>
           {searchMode === 'videos' && route.kind === 'lookup' ? (
             <Text style={styles.caption}>
@@ -1484,12 +1474,6 @@ const styles = StyleSheet.create({
     minHeight: layout.inputHeight,
   },
   searchFocused: { borderColor: colors.focus },
-  searchButton: {
-    width: layout.touchTarget,
-    minHeight: layout.touchTarget,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
   empty: {
     padding: spacing.xl,
     gap: spacing.md,

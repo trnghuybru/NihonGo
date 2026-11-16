@@ -1,4 +1,13 @@
 import React from 'react';
+import {
+  MemoryRouter,
+  Route,
+  Routes,
+  useLocation,
+  useNavigate,
+} from 'react-router';
+import { WebNavigationContext } from '../src/navigation/webNavigation';
+import { SwipeTransition } from '../src/components/SwipeTransition';
 import Renderer, { act } from 'react-test-renderer';
 import { FlatList, Text, TextInput } from 'react-native';
 import { DictionaryScreen } from '../src/screens/DictionaryScreen';
@@ -132,6 +141,61 @@ test('starts with vocabulary and searches only after submission', async () => {
   expect(contents()).toContain('school');
   expect(contents()).toContain('Nghĩa của từ');
   expect(dictionaryService.word).toHaveBeenCalledWith(word.id);
+});
+
+test('keeps web search and tabs mounted while sliding results and following browser history', async () => {
+  let back!: () => void;
+  function Lookup() {
+    const location = useLocation();
+    const navigate = useNavigate();
+    back = () => navigate(-1);
+    return (
+      <WebNavigationContext.Provider
+        value={{ ...location, state: null, navigate, back }}
+      >
+        <Routes>
+          <Route
+            path="/lookup/*"
+            element={
+              <DictionaryScreen
+                query={new URLSearchParams(location.search).get('q') ?? ''}
+                renderVideos={renderVideos}
+              />
+            }
+          />
+        </Routes>
+      </WebNavigationContext.Provider>
+    );
+  }
+  await act(async () => {
+    tree = Renderer.create(
+      <MemoryRouter initialEntries={['/lookup?q=学校']}>
+        <Lookup />
+      </MemoryRouter>,
+    );
+  });
+  const input = tree.root.findByType(TextInput);
+  const transition = tree.root.findByType(SwipeTransition);
+  expect(dictionaryService.words).toHaveBeenLastCalledWith('学校', 1);
+  await press('Hán tự');
+  expect(dictionaryService.kanji).toHaveBeenLastCalledWith('学校', 1);
+  expect(control('Hán tự').props.accessibilityState.selected).toBe(true);
+  expect(tree.root.findByType(TextInput)).toBe(input);
+  expect(tree.root.findByType(SwipeTransition)).toBe(transition);
+  expect(transition.props.index).toBe(1);
+  await press('Video');
+  expect(renderVideos).toHaveBeenLastCalledWith('学校');
+  expect(transition.props.index).toBe(2);
+  await type('猫');
+  await press('Tìm kiếm từ điển');
+  expect(renderVideos).toHaveBeenLastCalledWith('猫');
+  await press('Từ vựng');
+  expect(dictionaryService.words).toHaveBeenLastCalledWith('猫', 1);
+  expect(transition.props.index).toBe(0);
+  await act(async () => back());
+  expect(control('Video').props.accessibilityState.selected).toBe(true);
+  expect(renderVideos).toHaveBeenLastCalledWith('猫');
+  expect(tree.root.findByType(TextInput)).toBe(input);
 });
 
 test('recent history reopens vocabulary and kanji and can be cleared', async () => {

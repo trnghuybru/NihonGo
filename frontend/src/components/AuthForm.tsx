@@ -10,6 +10,7 @@ import {
   Text,
   TextInput,
   TextInputProps,
+  useWindowDimensions,
   View,
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -43,6 +44,8 @@ export function AuthShell({
   headerAccessory,
   compactHeader = false,
   topBarAccessory,
+  backgroundDecoration,
+  floatingAccessory,
   hideHeader = false,
 }: {
   title: string;
@@ -56,17 +59,22 @@ export function AuthShell({
   headerAccessory?: React.ReactNode;
   compactHeader?: boolean;
   topBarAccessory?: React.ReactNode;
+  backgroundDecoration?: React.ReactNode;
+  floatingAccessory?: React.ReactNode;
   hideHeader?: boolean;
 }) {
   const insets = useSafeAreaInsets();
   const navigationInset = useBottomNavigationInset();
   const { desktop } = useWebLayout();
+  const { width } = useWindowDimensions();
+  const authDesktop = desktop || (Platform.OS === 'web' && width >= 900);
   return (
     <KeyboardAvoidingView
       style={styles.fill}
       behavior={Platform.OS === 'ios' ? 'padding' : undefined}
     >
       <StatusBar barStyle="dark-content" />
+      {backgroundDecoration}
       {!desktop ? <MobileTopBar accessory={topBarAccessory} /> : null}
       <ScrollView
         keyboardShouldPersistTaps="handled"
@@ -77,8 +85,8 @@ export function AuthShell({
         contentContainerStyle={[
           styles.content,
           Platform.OS === 'web' && !wide && styles.webFormContent,
-          desktop && styles.desktopContent,
-          desktop && compactHeader && styles.compactContent,
+          authDesktop && styles.desktopContent,
+          authDesktop && compactHeader && styles.compactContent,
           Platform.OS === 'android'
             ? {
                 paddingTop: spacing.lg,
@@ -88,6 +96,9 @@ export function AuthShell({
           navigationInset > 0 && {
             paddingBottom: navigationInset + spacing.xxl,
           },
+          floatingAccessory && !authDesktop
+            ? styles.contentWithFloatingAccessory
+            : null,
         ]}
       >
         {!hideHeader ? (
@@ -125,6 +136,9 @@ export function AuthShell({
         )}
         {footer ? <View style={styles.footer}>{footer}</View> : null}
       </ScrollView>
+      {floatingAccessory ? (
+        <View style={styles.floatingAccessory}>{floatingAccessory}</View>
+      ) : null}
     </KeyboardAvoidingView>
   );
 }
@@ -390,6 +404,13 @@ const styles = StyleSheet.create({
     paddingHorizontal: layout.screenGutter,
   },
   fill: { flex: 1 },
+  floatingAccessory: {
+    position: 'absolute',
+    bottom: spacing.lg,
+    right: layout.screenGutter,
+    zIndex: 1,
+  },
+  contentWithFloatingAccessory: { paddingBottom: 180 },
   content: {
     flexGrow: 1,
     paddingHorizontal: layout.screenGutter,

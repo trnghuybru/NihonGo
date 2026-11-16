@@ -26,9 +26,10 @@ import {
   Provider,
   SocialProfile,
 } from '../services/authService';
-import { colors, spacing, typography } from '../theme/theme';
+import { colors, radius, shadowMd, spacing, typography } from '../theme/theme';
 import { AppleIcon, GoogleIcon } from '../components/icons';
-import { betaWeb } from '../config/beta';
+import { NihongoMascot } from '../components/NihongoMascot';
+import { LoginCharacterRain } from '../components/LoginCharacterRain';
 
 const BETA_SIGNUP_URL = 'https://forms.gle/SYYD5H2M54CfhuLg6';
 
@@ -303,30 +304,32 @@ export function LoginScreen() {
           ? undefined
           : 'Bảo vệ tài khoản'
       }
+      backgroundDecoration={stage === 'login' ? <LoginCharacterRain /> : undefined}
+      floatingAccessory={
+        stage === 'login' ? (
+          <Pressable
+            accessibilityRole="link"
+            accessibilityLabel="Điền khảo sát đăng ký beta"
+            onPress={() => Linking.openURL(BETA_SIGNUP_URL)}
+            style={styles.betaMascot}
+          >
+            <View style={styles.betaSpeech}>
+              <Text style={styles.betaSpeechTitle}>Chưa đăng ký beta?</Text>
+              <Text style={styles.betaSpeechCopy}>
+                Điền khảo sát để nhận lời mời từ Momo trong 24 giờ nhé!
+              </Text>
+              <Text style={styles.signupLink}>Điền khảo sát đăng ký beta →</Text>
+              <View style={styles.betaSpeechTail} />
+            </View>
+            <NihongoMascot pose="wave" size={112} decorative />
+          </Pressable>
+        ) : undefined
+      }
       footer={
         stage === 'login' ? (
           <View style={styles.signupFooter}>
-            {betaWeb ? (
-              <View style={styles.betaSignup}>
-                <Text style={styles.signupPrompt}>Muốn tham gia bản beta?</Text>
-                <Pressable
-                  accessibilityRole="link"
-                  accessibilityLabel="Điền khảo sát đăng ký beta"
-                  onPress={() => Linking.openURL(BETA_SIGNUP_URL)}
-                  style={styles.signupAction}
-                >
-                  <Text style={styles.signupLink}>Điền khảo sát đăng ký beta</Text>
-                </Pressable>
-                <Text style={styles.betaSignupNote}>
-                  Sau khi gửi khảo sát, vui lòng đợi trong 24 giờ. Chúng tôi sẽ
-                  gửi email đến bạn.
-                </Text>
-              </View>
-            ) : null}
             <View style={styles.signupRow}>
-              <Text style={styles.signupPrompt}>
-                {betaWeb ? 'Đã nhận email mời?' : 'Chưa có tài khoản?'}
-              </Text>
+              <Text style={styles.signupPrompt}>Chưa có tài khoản?</Text>
               <Pressable
                 accessibilityRole="link"
                 accessibilityLabel="Đăng ký ngay"
@@ -341,7 +344,7 @@ export function LoginScreen() {
                     busy || socialPending ? styles.signupDisabled : null,
                   ]}
                 >
-                  {betaWeb ? 'Tạo tài khoản' : 'Đăng ký ngay'}
+                  Đăng ký ngay
                 </Text>
               </Pressable>
             </View>
@@ -576,12 +579,27 @@ export function LoginScreen() {
 
 const styles = StyleSheet.create({
   signupFooter: { alignItems: 'center' },
-  betaSignup: { alignItems: 'center', marginBottom: spacing.md },
-  betaSignupNote: {
-    ...typography.caption,
-    color: colors.muted,
-    textAlign: 'center',
+  betaMascot: { alignItems: 'flex-end' },
+  betaSpeech: {
+    width: 232,
+    gap: spacing.sm,
+    padding: spacing.lg,
+    borderRadius: radius.small,
+    backgroundColor: colors.surface,
+    boxShadow: shadowMd,
+    marginBottom: -spacing.sm,
   },
+  betaSpeechTail: {
+    position: 'absolute',
+    right: 32,
+    bottom: -6,
+    width: 12,
+    height: 12,
+    backgroundColor: colors.surface,
+    transform: [{ rotate: '45deg' }],
+  },
+  betaSpeechTitle: { ...typography.label, color: colors.dark },
+  betaSpeechCopy: { ...typography.caption, color: colors.body },
   signupRow: {
     flexDirection: 'row',
     flexWrap: 'wrap',

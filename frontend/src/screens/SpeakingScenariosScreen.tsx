@@ -1,3 +1,4 @@
+import { SearchButton } from '../components/SearchButton';
 import { useLearningLevel } from '../hooks/useLearningLevel';
 import { decodeRouteParam } from '../navigation/webNavigation';
 import { useWebNavigation } from '../navigation/webNavigation';
@@ -21,6 +22,11 @@ import { AuthIcon } from '../components/AuthIcon';
 import { AppBackground } from '../components/AppBackground';
 import { AuthButton, AuthNotice } from '../components/AuthForm';
 import { MobileTopBar } from '../components/MobileTopBar';
+import { ScreenBackHeader } from '../components/ScreenBackHeader';
+import { CharacterView3D } from '../components/CharacterView3D';
+import { SpeakingSidebar } from '../components/SpeakingSidebar';
+import { SpeakingWorkspacePortal } from '../components/SpeakingWorkspacePortal';
+import type { ComponentRef, ReactNode } from 'react';
 import { useWebLayout } from '../hooks/useWebLayout';
 import { HomeFeatureIcon } from '../components/HomeFeatureIcon';
 import { ConversationScreen } from './ConversationScreen';
@@ -277,7 +283,11 @@ function ScenarioPreview({
     </View>
   );
 }
-export function SpeakingScenariosScreen() {
+export function SpeakingScenariosScreen({
+  onExit,
+}: {
+  onExit?: () => void;
+} = {}) {
   const { desktop } = useWebLayout();
   const defaultLevel = useLearningLevel();
   const web = useWebNavigation();
@@ -293,6 +303,26 @@ export function SpeakingScenariosScreen() {
   const [searchFocused, setSearchFocused] = useState(false);
   const [query, setQuery] = useState('');
   const [started, setStarted] = useState<StartedSession | null>(null);
+  const [controlsTarget, setControlsTarget] = useState<ComponentRef<
+    typeof View
+  > | null>(null);
+  const [chatTarget, setChatTarget] = useState<ComponentRef<
+    typeof View
+  > | null>(null);
+  const [avatarState, setAvatarState] = useState({
+    isSpeaking: false,
+    emotion: 'neutral',
+  });
+  const [chatVisible, setChatVisible] = useState(false);
+  const chatVisibleRef = useRef(chatVisible);
+  chatVisibleRef.current = chatVisible;
+  const startedRef = useRef(started);
+  startedRef.current = started;
+  const desktopRef = useRef(desktop);
+  desktopRef.current = desktop;
+  const [canSwitchConversation, setCanSwitchConversation] = useState(true);
+  const canSwitchRef = useRef(canSwitchConversation);
+  canSwitchRef.current = canSwitchConversation;
   const [historyVersion, setHistoryVersion] = useState(0);
   const [openingHistory, setOpeningHistory] = useState(false);
   const [historyError, setHistoryError] = useState('');
@@ -359,7 +389,13 @@ export function SpeakingScenariosScreen() {
     setSelectedId(null);
     setStartError('');
     setChoosing(false);
-    webRef.current?.navigate('/practice/speaking');
+    const session = startedRef.current;
+    webRef.current?.navigate(
+      desktopRef.current && session && chatVisibleRef.current
+        ? '/practice/speaking/sessions/' +
+            encodeURIComponent(session.session.id)
+        : '/practice/speaking',
+    );
   }, []);
   const goBack = useCallback(() => {
     if (startPending.current) return;
@@ -372,17 +408,30 @@ export function SpeakingScenariosScreen() {
     }
   }, [selectedId, closeChooser]);
   const openChooser = useCallback(() => {
+    if (!canSwitchRef.current || openingPending.current) return;
     setSelectedId(null);
     setStartError('');
     setChoosing(true);
     webRef.current?.navigate('/practice/speaking/new');
   }, []);
   const returnToHistory = useCallback(() => {
-    setStarted(null);
+    if (!canSwitchRef.current) return;
+    setChatVisible(false);
+    if (!desktopRef.current) setStarted(null);
+    setCanSwitchConversation(true);
     webRef.current?.navigate('/practice/speaking');
     setHistoryError('');
     setHistoryVersion(value => value + 1);
   }, []);
+  const handleDeletedConversation = useCallback(
+    (id: string) => {
+      if (startedRef.current?.session.id === id) {
+        setStarted(null);
+        returnToHistory();
+      }
+    },
+    [returnToHistory],
+  );
   useEffect(() => {
     if (!started || choosing) return;
     const subscription = BackHandler.addEventListener(
@@ -395,6 +444,14 @@ export function SpeakingScenariosScreen() {
     return () => subscription.remove();
   }, [started, choosing, returnToHistory]);
   const openHistory = useCallback(async (id: string) => {
+    if (!canSwitchRef.current) return;
+    if (startedRef.current?.session.id === id) {
+      setChatVisible(true);
+      const nav = webRef.current;
+      const target = '/practice/speaking/sessions/' + encodeURIComponent(id);
+      if (nav && nav.pathname !== target) nav.navigate(target);
+      return;
+    }
     if (!aiSpeakingAvailable) {
       setHistoryError(aiSpeakingUnavailableMessage);
       return;
@@ -407,6 +464,7 @@ export function SpeakingScenariosScreen() {
       const result = await speakingService.session(id);
       if (mounted.current) {
         setStarted(result);
+        setChatVisible(true);
         const nav = webRef.current,
           target = '/practice/speaking/sessions/' + encodeURIComponent(id);
         if (nav && nav.pathname !== target) nav.navigate(target);
@@ -430,7 +488,10 @@ export function SpeakingScenariosScreen() {
       setChoosing(false);
       openHistory(decodeRouteParam(session));
     } else {
-      setStarted(null);
+      if (!desktopRef.current) setStarted(null);
+      if (webPath === '/practice/speaking') {
+        setChatVisible(false);
+      }
       setSelectedId(scenario ? decodeRouteParam(scenario) : null);
       setChoosing(Boolean(scenario || webPath === '/practice/speaking/new'));
     }
@@ -467,6 +528,8 @@ export function SpeakingScenariosScreen() {
       const result = await speakingService.start(selectedId, values);
       if (mounted.current) {
         setStarted(result);
+        setChatVisible(true);
+        setHistoryVersion(value => value + 1);
         webRef.current?.navigate(
           '/practice/speaking/sessions/' +
             encodeURIComponent(result.session.id),
@@ -481,6 +544,88 @@ export function SpeakingScenariosScreen() {
       if (mounted.current) setStarting(false);
     }
   };
+  const pageHeader = (
+    <View
+      style={[
+        styles.speakingHeader,
+        { paddingTop: (desktop ? insets.top : 0) + spacing.xxl },
+      ]}
+    >
+      <View
+        style={[
+          styles.speakingHeaderContent,
+          desktop ? styles.desktopHeader : null,
+        ]}
+      >
+        <View style={styles.speakingHeaderCopy}>
+          <ScreenBackHeader
+            title="Luyện nói"
+            backLabel="Về Luyện tập"
+            onBack={() => {
+              if (!canSwitchRef.current || startPending.current) return;
+              if (onExit) onExit();
+              else webRef.current?.navigate('/practice');
+            }}
+          />
+          <Text style={styles.resultCount}>Hội thoại cùng AI</Text>
+        </View>
+        <AuthButton
+          label="Cuộc trò chuyện mới"
+          size="compact"
+          disabled={openingHistory || !canSwitchConversation}
+          onPress={openChooser}
+        />
+      </View>
+    </View>
+  );
+  const desktopStage = (
+    <View testID="speaking-desktop-stage" style={styles.welcomeStage}>
+      <View style={styles.welcomeAvatar}>
+        <CharacterView3D
+          isSpeaking={avatarState.isSpeaking}
+          emotion={avatarState.emotion}
+          portrait
+        />
+      </View>
+      <View ref={setControlsTarget} style={styles.controlsSlot} />
+      {!started ? (
+        <View testID="speaking-welcome-stage" style={styles.welcomeCopy}>
+          <Text accessibilityRole="header" style={styles.pageTitle}>
+            Cùng Aoi luyện nói mỗi ngày
+          </Text>
+          <Text style={styles.welcomeHint}>
+            Chọn cuộc trò chuyện mới để bắt đầu hoặc tiếp tục một hội thoại bên
+            phải.
+          </Text>
+        </View>
+      ) : null}
+    </View>
+  );
+  const history = (
+    <SpeakingHistory
+      refreshKey={historyVersion}
+      opening={openingHistory}
+      interactionDisabled={!canSwitchConversation}
+      openError={historyError}
+      onOpen={openHistory}
+      sidebar={desktop}
+      selectedSessionId={started?.session.id}
+      onDeleted={handleDeletedConversation}
+    />
+  );
+  const renderDesktopWorkspace = useCallback(
+    (controls: ReactNode, chat: ReactNode) => (
+      <>
+        <SpeakingWorkspacePortal name="controls" target={controlsTarget}>
+          {controls}
+        </SpeakingWorkspacePortal>
+        <SpeakingWorkspacePortal name="chat" target={chatTarget}>
+          {chat}
+        </SpeakingWorkspacePortal>
+      </>
+    ),
+    [controlsTarget, chatTarget],
+  );
   return (
     <View style={styles.fill}>
       <View
@@ -488,43 +633,48 @@ export function SpeakingScenariosScreen() {
         accessibilityElementsHidden={choosing}
         importantForAccessibility={choosing ? 'no-hide-descendants' : 'auto'}
       >
-        {started ? (
-          <ConversationScreen
-            key={started.session.id}
-            result={started}
-            onBack={returnToHistory}
-          />
-        ) : (
-          <View style={styles.chatShell}>
-            {!desktop ? <MobileTopBar /> : null}
-            <View
-              style={[
-                styles.speakingHeader,
-                { paddingTop: (desktop ? insets.top : 0) + spacing.xxl },
-              ]}
-            >
-              <View style={styles.speakingHeaderContent}>
-                <View style={styles.speakingHeaderCopy}>
-                  <Text accessibilityRole="header" style={styles.pageTitle}>
-                    Luyện nói
-                  </Text>
-                  <Text style={styles.resultCount}>Hội thoại cùng AI</Text>
+        <View style={styles.chatShell}>
+          {desktop ? pageHeader : null}
+          {desktop ? (
+            <>
+              <View style={[styles.fill, styles.desktopWorkspace]}>
+                <View style={styles.activeConversation}>{desktopStage}</View>
+                <View
+                  testID="speaking-history-sidebar"
+                  style={styles.historySidebar}
+                >
+                  <SpeakingSidebar
+                    active={Boolean(started && chatVisible)}
+                    history={history}
+                    chat={<View ref={setChatTarget} style={styles.fill} />}
+                  />
                 </View>
-                <AuthButton
-                  label="Cuộc trò chuyện mới"
-                  disabled={openingHistory}
-                  onPress={openChooser}
-                />
               </View>
-            </View>
-            <SpeakingHistory
-              refreshKey={historyVersion}
-              opening={openingHistory}
-              openError={historyError}
-              onOpen={openHistory}
+              {started ? (
+                <ConversationScreen
+                  key={started.session.id}
+                  result={started}
+                  onBack={returnToHistory}
+                  renderDesktopWorkspace={renderDesktopWorkspace}
+                  onAvatarChange={setAvatarState}
+                  onNavigationAvailabilityChange={setCanSwitchConversation}
+                />
+              ) : null}
+            </>
+          ) : started ? (
+            <ConversationScreen
+              key={started.session.id}
+              result={started}
+              onBack={returnToHistory}
             />
-          </View>
-        )}
+          ) : (
+            <>
+              <MobileTopBar />
+              {pageHeader}
+              {history}
+            </>
+          )}
+        </View>
       </View>
       {choosing ? (
         <Modal
@@ -696,9 +846,8 @@ export function SpeakingScenariosScreen() {
                               searchFocused ? styles.searchInputFocused : null,
                             ]}
                           />
-                          <AuthButton
+                          <SearchButton
                             label="Tìm kiếm"
-                            variant="outline"
                             onPress={() => setQuery(queryDraft.trim())}
                           />
                         </View>
@@ -787,6 +936,50 @@ export function SpeakingScenariosScreen() {
 }
 
 const styles = StyleSheet.create({
+  controlsSlot: { flexShrink: 0 },
+  activeConversation: { flex: 1, minWidth: 0, minHeight: 0 },
+  desktopHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+  desktopWorkspace: {
+    flexDirection: 'row',
+    gap: spacing.xxl,
+    paddingHorizontal: layout.screenGutter,
+    paddingBottom: spacing.xxl,
+    width: '100%',
+    maxWidth: layout.maxContentWidth + layout.screenGutter * 2,
+    alignSelf: 'center',
+    minHeight: 0,
+  },
+  welcomeStage: {
+    flex: 1,
+    minWidth: 0,
+    backgroundColor: colors.surface,
+    borderRadius: radius.card,
+    overflow: 'hidden',
+    borderWidth: 1,
+    borderColor: colors.divider,
+  },
+  welcomeAvatar: { flex: 1, minHeight: 0 },
+  welcomeCopy: {
+    padding: spacing.xxl,
+    gap: spacing.sm,
+    alignItems: 'center',
+  },
+  welcomeHint: { ...typography.body, color: colors.muted, textAlign: 'center' },
+  historySidebar: {
+    width: '44%',
+    minWidth: 360,
+    maxWidth: 560,
+    minHeight: 0,
+    backgroundColor: colors.surface,
+    borderRadius: radius.small,
+    borderWidth: 1,
+    borderColor: colors.divider,
+    overflow: 'hidden',
+  },
   chatShell: {
     flex: 1,
   },
@@ -885,7 +1078,7 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
   },
   pageTitle: {
-    ...typography.title,
+    ...typography.heading,
     color: colors.dark,
   },
   listHeader: { gap: spacing.lg },
@@ -932,7 +1125,7 @@ const styles = StyleSheet.create({
   },
   cardTitleRow: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm },
   cardTitleCopy: { flex: 1, minWidth: 0, gap: spacing.sm },
-  scenarioTitle: { ...typography.heading, color: colors.dark },
+  scenarioTitle: { ...typography.label, color: colors.dark },
   scenarioDescription: { ...typography.input, color: colors.body },
   emptyCard: {
     padding: spacing.xxl,

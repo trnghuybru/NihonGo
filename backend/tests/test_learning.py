@@ -14,7 +14,7 @@ from auth.models import AuthSession, User, now
 from auth.security import digest
 from extensions import db
 from learning import init_learning
-from learning.models import LearningPreferences
+from learning.models import LearningPreferences, LearningStudyDay
 
 PATH = "/api/learning/preferences"
 VALID = {"level": "N5", "goal": "communication", "daily_minutes": 15,
@@ -221,6 +221,52 @@ class LearningTests(unittest.TestCase):
                 headers={'Authorization': 'Bearer alice'}).status_code, 403)
             self.assertEqual(self.progress(token='bad').status_code, 401)
             self.assertEqual(self.progress().json['seconds'], 0)
+
+    def test_study_calendar_uses_recorded_days_and_keeps_accounts_separate(self):
+        from datetime import date, datetime
+        from zoneinfo import ZoneInfo
+        self.put()
+        stamp = int(datetime(2026, 11, 14, 12, tzinfo=ZoneInfo('Asia/Ho_Chi_Minh')).timestamp() * 1000)
+        for day, seconds in [(date(2026, 11, 10), 120), (date(2026, 11, 11), 30),
+                             (date(2026, 11, 12), 60), (date(2026, 11, 13), 900)]:
+            db.session.add(LearningStudyDay(user_id='alice', day=day, seconds=seconds,
+                                            intervals=[], updated_at=stamp))
+        db.session.commit()
+        with patch('learning.progress.timestamp_ms', return_value=stamp):
+            response = self.client.get('/api/learning/study-calendar?account_id=alice&year=2026',
+                                       headers={'Authorization': 'Bearer alice'})
+            self.assertEqual(response.status_code, 200, response.json)
+            data = response.json
+            self.assertEqual(data['current_streak'], 2)
+            self.assertEqual(data['longest_streak'], 2)
+            self.assertEqual(data['study_days'], 3)
+            self.assertEqual(data['goal_seconds'], 900)
+            self.assertEqual(data['first_year'], 2026)
+            self.assertEqual(len(data['days']), 4)
+            self.assertEqual(self.client.get('/api/learning/study-calendar?year=2026',
+                headers={'Authorization': 'Bearer bob'}).json['days'], [])
+            self.assertEqual(self.client.get('/api/learning/study-calendar?account_id=bob&year=2026',
+                headers={'Authorization': 'Bearer alice'}).status_code, 403)
+            self.assertEqual(self.client.get('/api/learning/study-calendar?year=2027',
+                headers={'Authorization': 'Bearer alice'}).status_code, 400)
+
+    def test_study_calendar_streak_crosses_year_boundary(self):
+        from datetime import date, datetime
+        from zoneinfo import ZoneInfo
+        self.put()
+        stamp = int(datetime(2026, 1, 2, 12, tzinfo=ZoneInfo('Asia/Ho_Chi_Minh')).timestamp() * 1000)
+        for day in [date(2025, 12, 31), date(2026, 1, 1), date(2026, 1, 2)]:
+            db.session.add(LearningStudyDay(user_id='alice', day=day, seconds=300,
+                                            intervals=[], updated_at=stamp))
+        db.session.commit()
+        with patch('learning.progress.timestamp_ms', return_value=stamp):
+            response = self.client.get('/api/learning/study-calendar?year=2025',
+                                       headers={'Authorization': 'Bearer alice'})
+            self.assertEqual(response.json['current_streak'], 3)
+            self.assertEqual(response.json['longest_streak'], 3)
+            self.assertEqual(response.json['first_year'], 2025)
+            self.assertEqual(response.json['study_days'], 1)
+            self.assertEqual(len(response.json['days']), 1)
 
     def test_concurrent_study_overlap_is_counted_once(self):
         if not self.url.startswith('postgresql'):

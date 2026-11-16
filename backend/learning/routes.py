@@ -5,7 +5,7 @@ from auth.security import limit, require_auth
 from extensions import db
 from .models import LearningPreferences
 from .options import public_options
-from .progress import daily_progress, record_study
+from .progress import daily_progress, record_study, study_calendar
 from .service import PreferencesInput, save_preferences
 
 bp = Blueprint("learning", __name__, url_prefix="/api/learning")
@@ -33,6 +33,19 @@ def get_progress():
     if request.args.get('account_id', g.user.id) != g.user.id:
         raise ApiError('Tài khoản đã thay đổi. Vui lòng tải lại tiến độ.', 403, 'study_account_changed')
     return jsonify(daily_progress(g.user.id))
+
+
+@bp.get('/study-calendar')
+@require_auth
+def get_study_calendar():
+    limit('study-calendar-user', g.user.id, 30, 60)
+    if request.args.get('account_id', g.user.id) != g.user.id:
+        raise ApiError('Tài khoản đã thay đổi. Vui lòng tải lại tiến độ.', 403, 'study_account_changed')
+    raw_year = request.args.get('year', '')
+    current_year = daily_progress(g.user.id)['date'][:4]
+    if not raw_year.isdecimal() or len(raw_year) != 4 or not 2000 <= int(raw_year) <= int(current_year):
+        raise ApiError('Năm của lịch học không hợp lệ.')
+    return jsonify(study_calendar(g.user.id, int(raw_year)))
 
 
 @bp.post('/progress')

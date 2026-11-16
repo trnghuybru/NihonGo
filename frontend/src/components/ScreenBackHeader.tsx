@@ -26,10 +26,10 @@ export function ScreenBackHeader({
           accessibilityRole="button"
           accessibilityLabel={backLabel}
           onPress={onBack}
-          hitSlop={6}
+          hitSlop={8}
           style={styles.back}
         >
-          <ChevronLeftIcon size={18} color={colors.dark} />
+          <ChevronLeftIcon size={16} color={colors.dark} />
         </Pressable>
         <Text accessibilityRole="header" style={styles.title}>
           {title}
@@ -49,8 +49,8 @@ export function ScreenBackHeader({
 const styles = StyleSheet.create({
   row: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm },
   back: {
-    width: 36,
-    height: 36,
+    width: 32,
+    height: 32,
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: radius.pill,

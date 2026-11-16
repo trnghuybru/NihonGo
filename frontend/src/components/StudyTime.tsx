@@ -22,6 +22,10 @@ type Progress = ReturnType<typeof useStudyTime>;
 const ProgressContext = createContext<Progress | null>(null);
 const ActivityContext = createContext<(active: boolean) => void>(() => {});
 
+export function useStudyProgress() {
+  return useContext(ProgressContext);
+}
+
 export function StudyTimeProvider({
   accountId,
   goalMinutes,

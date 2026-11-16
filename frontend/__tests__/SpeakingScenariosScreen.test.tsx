@@ -1,6 +1,18 @@
 import { LearningLevelContext } from '../src/hooks/useLearningLevel';
 import type { LearningLevel } from '../src/services/learningService';
+import { WebLayoutContext } from '../src/hooks/useWebLayout';
+import { CharacterView3D } from '../src/components/CharacterView3D';
+import { SpeakingHistory } from '../src/screens/SpeakingHistory';
+import { SpeakingWorkspacePortal } from '../src/components/SpeakingWorkspacePortal';
+import { WebNavigationContext } from '../src/navigation/webNavigation';
 import React from 'react';
+import {
+  MemoryRouter,
+  Route,
+  Routes,
+  useLocation,
+  useNavigate,
+} from 'react-router';
 import * as betaConfig from '../src/config/beta';
 import { Modal, SectionList, Text, TextInput } from 'react-native';
 import Renderer, { act } from 'react-test-renderer';
@@ -163,11 +175,17 @@ async function render(
   choose = true,
   level: LearningLevel = 'N5',
   allLevels = true,
+  desktop = false,
+  onExit?: () => void,
 ) {
   await act(async () => {
     tree = Renderer.create(
       <LearningLevelContext.Provider value={level}>
-        <SpeakingScenariosScreen />
+        <WebLayoutContext.Provider
+          value={{ desktop, contentWidth: desktop ? 1200 : 390 }}
+        >
+          <SpeakingScenariosScreen onExit={onExit} />
+        </WebLayoutContext.Provider>
       </LearningLevelContext.Provider>,
     );
   });
@@ -176,6 +194,12 @@ async function render(
     if (allLevels) await press('Mọi trình độ');
   }
 }
+test('returns from the speaking library to practice', async () => {
+  const onExit = jest.fn();
+  await render(false, 'N5', true, true, onExit);
+  await press('Về Luyện tập');
+  expect(onExit).toHaveBeenCalledTimes(1);
+});
 function callback(label: string) {
   const node = tree.root.findAll(
     item =>
@@ -562,6 +586,191 @@ test('shows saved history on entry and opens the original session without creati
   await press('Lịch sử hội thoại');
   expect(tree.root.findAllByType(ConversationScreen)).toHaveLength(0);
   expect(speakingService.history).toHaveBeenCalledTimes(2);
+});
+
+test('shows Aoi and the history sidebar immediately on desktop without starting a session', async () => {
+  await render(false, 'N5', true, true);
+  expect(tree.root.findAllByType(Modal)).toHaveLength(0);
+  expect(tree.root.findAllByType(CharacterView3D)).toHaveLength(1);
+  expect(
+    tree.root.findByProps({ testID: 'speaking-welcome-stage' }),
+  ).toBeTruthy();
+  expect(
+    tree.root.findByProps({ testID: 'speaking-history-sidebar' }),
+  ).toBeTruthy();
+  expect(screenText()).toContain('Hội thoại gần đây');
+  expect(speakingService.history).toHaveBeenCalledTimes(1);
+  expect(speakingService.start).not.toHaveBeenCalled();
+  await press('Cuộc trò chuyện mới');
+  expect(tree.root.findAllByType(Modal)).toHaveLength(1);
+  await press('Đóng');
+  expect(tree.root.findAllByType(CharacterView3D)).toHaveLength(1);
+});
+
+test('swaps recent conversations and chat in the right sidebar while keeping Aoi in place', async () => {
+  const saved = {
+    ...started,
+    session: { ...started.session, status: 'completed' as const },
+  };
+  const another = {
+    ...saved,
+    session: { ...saved.session, id: 'another-session' },
+    scenario: { ...saved.scenario, title: 'Hội thoại thứ hai' },
+  };
+  jest
+    .mocked(speakingService.session)
+    .mockImplementation(async id =>
+      id === saved.session.id ? saved : another,
+    );
+  jest.mocked(speakingService.messages).mockResolvedValue({
+    items: [started.opening_message!],
+    session: {
+      id: saved.session.id,
+      status: 'completed',
+      current_input_mode: 'voice',
+    },
+    has_more: false,
+    next_sequence: 1,
+  });
+  jest.mocked(speakingService.history).mockResolvedValue({
+    items: [saved, another].map(item => ({
+      id: item.session.id,
+      title: item.scenario.title,
+      role_name: role.name,
+      status: 'completed',
+      last_activity_at: item.session.started_at,
+      last_message: 'Nội dung đã lưu',
+    })),
+    pagination: { page: 1, page_size: 20, total: 2, total_pages: 1 },
+  });
+  function Workspace() {
+    return (
+      <MemoryRouter initialEntries={['/practice/speaking']}>
+        <WorkspaceContent />
+      </MemoryRouter>
+    );
+  }
+  function WorkspaceContent() {
+    const { pathname } = useLocation();
+    const navigate = useNavigate();
+    return (
+      <WebNavigationContext.Provider
+        value={{
+          pathname,
+          navigate,
+          search: '',
+          key: pathname,
+          state: null,
+          back: () => {},
+        }}
+      >
+        <WebLayoutContext.Provider
+          value={{ desktop: true, contentWidth: 1200 }}
+        >
+          <Routes>
+            <Route
+              path="/practice/speaking/*"
+              element={<SpeakingScenariosScreen />}
+            />
+          </Routes>
+        </WebLayoutContext.Provider>
+      </WebNavigationContext.Provider>
+    );
+  }
+  await act(async () => {
+    tree = Renderer.create(<Workspace />);
+  });
+  const avatar = tree.root.findByType(CharacterView3D);
+  const sidebar = tree.root.findByType(SpeakingHistory);
+  const chatPortal = () =>
+    tree.root
+      .findAllByType(SpeakingWorkspacePortal)
+      .find(node => node.props.name === 'chat')!;
+  await press('Mở hội thoại Làm quen bạn mới');
+  expect(tree.root.findByType(CharacterView3D)).toBe(avatar);
+  expect(tree.root.findByType(SpeakingHistory)).toBe(sidebar);
+  expect(
+    tree.root.findByProps({ testID: 'speaking-chat-panel' }).props
+      .pointerEvents,
+  ).toBe('auto');
+  expect(
+    tree.root.findByProps({ testID: 'speaking-history-panel' }).props
+      .pointerEvents,
+  ).toBe('none');
+  expect(
+    chatPortal().findByProps({ testID: 'speaking-desktop-transcript' }),
+  ).toBeTruthy();
+  expect(
+    tree.root
+      .findByProps({ testID: 'speaking-desktop-stage' })
+      .findByType(CharacterView3D),
+  ).toBe(avatar);
+  expect(tree.root.findByType(SpeakingHistory).props.selectedSessionId).toBe(
+    saved.session.id,
+  );
+  expect(speakingService.session).toHaveBeenCalledTimes(1);
+  await press('Lịch sử hội thoại');
+  expect(tree.root.findByType(CharacterView3D)).toBe(avatar);
+  expect(tree.root.findByType(SpeakingHistory)).toBe(sidebar);
+  expect(
+    tree.root.findByProps({ testID: 'speaking-chat-panel' }).props
+      .pointerEvents,
+  ).toBe('none');
+  expect(
+    tree.root.findByProps({ testID: 'speaking-history-panel' }).props
+      .pointerEvents,
+  ).toBe('auto');
+  await press('Mở hội thoại Làm quen bạn mới');
+  expect(speakingService.session).toHaveBeenCalledTimes(1);
+  expect(tree.root.findByType(CharacterView3D)).toBe(avatar);
+  await press('Lịch sử hội thoại');
+  await press('Mở hội thoại Hội thoại thứ hai');
+  expect(tree.root.findByType(CharacterView3D)).toBe(avatar);
+  expect(tree.root.findByType(ConversationScreen).props.result.session.id).toBe(
+    another.session.id,
+  );
+  expect(speakingService.session).toHaveBeenCalledTimes(2);
+  await press('Cuộc trò chuyện mới');
+  expect(tree.root.findAllByType(Modal)).toHaveLength(1);
+  await press('Đóng');
+  expect(tree.root.findByType(ConversationScreen).props.result.session.id).toBe(
+    another.session.id,
+  );
+  expect(
+    tree.root.findByProps({ testID: 'speaking-chat-panel' }).props
+      .pointerEvents,
+  ).toBe('auto');
+  expect(speakingService.start).not.toHaveBeenCalled();
+  await press('Cuộc trò chuyện mới');
+  await press('Mọi trình độ');
+  await openFirst();
+  jest.mocked(speakingService.messages).mockResolvedValueOnce({
+    items: [started.opening_message!],
+    session: {
+      id: started.session.id,
+      status: 'active',
+      current_input_mode: 'voice',
+    },
+    has_more: false,
+    next_sequence: 1,
+  });
+  await press('Bắt đầu trò chuyện');
+  expect(tree.root.findAllByType(Modal)).toHaveLength(0);
+  expect(tree.root.findByType(CharacterView3D)).toBe(avatar);
+  expect(
+    tree.root.findByProps({ testID: 'speaking-chat-panel' }).props
+      .pointerEvents,
+  ).toBe('auto');
+  expect(
+    chatPortal().findByProps({ testID: 'speaking-desktop-transcript' }),
+  ).toBeTruthy();
+  await press('Chế độ nhắn tin');
+  expect(chatPortal().findAllByType(TextInput)).toHaveLength(1);
+  expect(
+    tree.root
+      .findByProps({ testID: 'speaking-desktop-stage' })
+      .findAllByType(TextInput),
+  ).toHaveLength(0);
 });
 
 test('distinguishes empty history from errors and retries loading', async () => {

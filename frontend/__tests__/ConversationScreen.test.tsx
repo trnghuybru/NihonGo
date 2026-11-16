@@ -5,6 +5,7 @@ import {
   Dimensions,
   FlatList,
   Modal,
+  Platform,
   StyleSheet,
   Text,
   TextInput,
@@ -429,6 +430,28 @@ test.each([360, 1440])(
     }
   },
 );
+test('places Aoi and controls beside the transcript on a wide web screen', async () => {
+  const platform = Object.getOwnPropertyDescriptor(Platform, 'OS')!;
+  Object.defineProperty(Platform, 'OS', { configurable: true, value: 'web' });
+  try {
+    await act(async () =>
+      Dimensions.set({
+        window: { width: 1440, height: 800, scale: 1, fontScale: 1 },
+        screen: { width: 1440, height: 800, scale: 1, fontScale: 1 },
+      }),
+    );
+    await render();
+    expect(tree.root.findAll(node => node.props.testID === 'speaking-desktop-stage').length).toBeGreaterThan(0);
+    const transcript = tree.root.findAll(node => node.props.testID === 'speaking-desktop-transcript')[0];
+    expect(StyleSheet.flatten(transcript.props.style).width).toBe(360);
+    const content = tree.root.findAll(node => node.props.testID === 'speaking-content')[0];
+    expect(StyleSheet.flatten(content.props.style).flexDirection).toBe('row');
+    expect(text()).toContain('Lịch sử hội thoại');
+    expect(tree.root.findAll(node => node.props.accessibilityLabel === 'Ẩn Aoi')).toHaveLength(0);
+  } finally {
+    Object.defineProperty(Platform, 'OS', platform);
+  }
+});
 test('toggles the transcript in place and hides Aoi without interrupting the live session', async () => {
   await render();
   expect(tree.root.findAllByType(CharacterView3D)).toHaveLength(1);

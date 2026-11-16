@@ -1,5 +1,5 @@
 import React from 'react';
-import { TextInput } from 'react-native';
+import { Dimensions, Platform, StyleSheet, TextInput } from 'react-native';
 import Renderer, { act } from 'react-test-renderer';
 import { BetaTextConversationScreen } from '../src/screens/BetaTextConversationScreen';
 import { AuthButton } from '../src/components/AuthForm';
@@ -87,4 +87,27 @@ it('uses the microphone transcript as a voice turn', async () => {
   expect(send).toHaveBeenCalledWith('おはよう', 'voice');
   tree.unmount();
   delete (window as typeof window & { webkitSpeechRecognition?: unknown }).webkitSpeechRecognition;
+});
+
+it('keeps Aoi in the center and messages on the right on wide web screens', async () => {
+  const platform = Object.getOwnPropertyDescriptor(Platform, 'OS')!;
+  Object.defineProperty(Platform, 'OS', { configurable: true, value: 'web' });
+  try {
+    await act(async () =>
+      Dimensions.set({
+        window: { width: 1440, height: 800, scale: 1, fontScale: 1 },
+        screen: { width: 1440, height: 800, scale: 1, fontScale: 1 },
+      }),
+    );
+    let tree!: Renderer.ReactTestRenderer;
+    await act(async () => {
+      tree = Renderer.create(<BetaTextConversationScreen result={result} onBack={jest.fn()} />);
+    });
+    expect(tree.root.findAll(node => node.props.testID === 'speaking-desktop-stage').length).toBeGreaterThan(0);
+    const transcript = tree.root.findAll(node => node.props.testID === 'speaking-desktop-transcript')[0];
+    expect(StyleSheet.flatten(transcript.props.style).width).toBe(360);
+    await act(async () => tree.unmount());
+  } finally {
+    Object.defineProperty(Platform, 'OS', platform);
+  }
 });
