@@ -168,7 +168,7 @@ function MainTabs({
       }}
     >
       <BottomNavigationInsetContext.Provider
-        value={desktop ? 0 : navigationHeight}
+        value={0}
       >
         <WebLayoutContext.Provider value={{ desktop, contentWidth }}>
           <View style={[styles.main, desktop && styles.desktopMain]}>
@@ -187,7 +187,12 @@ function MainTabs({
             <ScreenBackHeaderContext.Provider
               value={desktop ? setWebHeader : null}
             >
-              <View style={styles.screen}>
+              <View
+                style={[
+                  styles.screen,
+                  !desktop && { paddingBottom: navigationHeight },
+                ]}
+              >
                 {desktop && (
                   <View style={styles.desktopSummary} testID="desktop-app-bar">
                     <View style={styles.desktopBackHeader}>{webHeader}</View>
@@ -275,7 +280,7 @@ function MainTabs({
                     ) : activeSkill === 'listening' ? (
                       <ShadowingScreen
                         onExit={exitSkill}
-                        bottomOverlayHeight={desktop ? 0 : navigationHeight}
+                        bottomOverlayHeight={0}
                       />
                     ) : activeSkill ? (
                       <LearningAreaScreen
