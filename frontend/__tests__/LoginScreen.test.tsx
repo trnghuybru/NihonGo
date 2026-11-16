@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactTestRenderer from 'react-test-renderer';
-import { Linking } from 'react-native';
+import { Linking, StyleSheet } from 'react-native';
 import { LoginScreen } from '../src/screens/LoginScreen';
 import { AuthButton, AuthField, AuthShell } from '../src/components/AuthForm';
 import { authService } from '../src/services/authService';
@@ -111,6 +111,11 @@ test('keeps the normal signup footer and shows Momo with a beta speech bubble', 
   const content = JSON.stringify(tree.toJSON());
   const shell = tree.root.findByType(AuthShell);
   const invite = shell.props.floatingAccessory;
+  const inline = content.indexOf('"testID":"auth-inline-accessory"');
+  const signup = content.indexOf('"testID":"signup-footer"');
+  expect(inline).toBeGreaterThan(-1);
+  expect(signup).toBeGreaterThan(inline);
+  expect(StyleSheet.flatten(invite.props.style).flexDirection).toBe('row');
   expect(content).toContain('Chưa có tài khoản?');
   expect(content).toContain('Đăng ký ngay');
   expect(content).not.toContain('Đã nhận email mời?');
