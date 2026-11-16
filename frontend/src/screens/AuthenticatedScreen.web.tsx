@@ -216,7 +216,7 @@ function WebWorkspace({
       }
     >
       <BottomNavigationInsetContext.Provider
-        value={desktop ? 0 : navigationHeight}
+        value={0}
       >
         <WebLayoutContext.Provider
           value={{
@@ -243,7 +243,12 @@ function WebWorkspace({
               />
             ) : null}
             <ScreenBackHeaderContext.Provider value={null}>
-              <View style={styles.screen}>
+              <View
+                style={[
+                  styles.screen,
+                  !desktop && { paddingBottom: navigationHeight },
+                ]}
+              >
                 {desktop ? (
                   <View
                     pointerEvents="box-none"
@@ -345,9 +350,7 @@ function WebWorkspace({
                           element={
                             <ShadowingScreen
                               onExit={goPractice}
-                              bottomOverlayHeight={
-                                desktop ? 0 : navigationHeight
-                              }
+                              bottomOverlayHeight={0}
                             />
                           }
                         />
