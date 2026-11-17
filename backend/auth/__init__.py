@@ -30,7 +30,8 @@ def init_auth(app):
     for key in ("SMTP_HOST", "SMTP_USERNAME", "SMTP_PASSWORD", "SMTP_FROM", "TWILIO_ACCOUNT_SID",
                 "TWILIO_AUTH_TOKEN", "TWILIO_FROM", "GOOGLE_CLIENT_ID", "GOOGLE_CLIENT_SECRET",
                 "FACEBOOK_CLIENT_ID", "FACEBOOK_CLIENT_SECRET", "FACEBOOK_GRAPH_VERSION",
-                "APPLE_CLIENT_ID", "APPLE_TEAM_ID", "APPLE_KEY_ID", "APPLE_PRIVATE_KEY_PATH", "PUBLIC_BASE_URL"):
+                "APPLE_CLIENT_ID", "APPLE_TEAM_ID", "APPLE_KEY_ID", "APPLE_PRIVATE_KEY_PATH", "PUBLIC_BASE_URL",
+                "WEB_BASE_URL"):
         app.config.setdefault(key, os.getenv(key, ""))
     app.config.setdefault("SMTP_PORT", int(os.getenv("SMTP_PORT", "587")))
     app.config.setdefault("SMTP_SSL", os.getenv("SMTP_SSL", "false").lower() == "true")

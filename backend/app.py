@@ -17,7 +17,7 @@ from translation import init_translation
 from games import init_games
 from services.gemini_provider import gemini_configured
 
-load_dotenv()
+load_dotenv(os.path.join(os.path.dirname(__file__), ".env"))
 
 app = Flask(__name__, static_folder=os.path.abspath(os.path.join(os.path.dirname(__file__), "static")))
 # Browser origins are restricted in production; native clients are unaffected by CORS.

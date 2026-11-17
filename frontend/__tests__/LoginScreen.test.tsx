@@ -16,6 +16,7 @@ jest.mock('../src/services/authService', () => ({
     resumeSocial: jest.fn().mockResolvedValue(null),
     register: jest.fn(),
     verify: jest.fn(),
+    verifySocialLink: jest.fn(),
     login: jest.fn(),
   },
 }));
@@ -86,6 +87,29 @@ test('requires at least eight characters when registering', async () => {
   await click('Tiếp tục');
   expect(authService.register).not.toHaveBeenCalled();
   expect(JSON.stringify(tree.toJSON())).toContain('ít nhất 8 ký tự');
+});
+
+test('links an existing Google account only after an email code', async () => {
+  await ReactTestRenderer.act(async () => tree.unmount());
+  jest.mocked(authService.resumeSocial).mockResolvedValueOnce({
+    status: 'link_required',
+    challenge_id: 'link-challenge',
+    channel: 'email',
+    destination: 'm***@example.com',
+    expires_in: 600,
+    resend_after: 60,
+  });
+  await ReactTestRenderer.act(async () => {
+    tree = ReactTestRenderer.create(<LoginScreen />);
+  });
+  expect(JSON.stringify(tree.toJSON())).toContain('Liên kết Google');
+  await fill('Mã xác thực', '123456');
+  await click('Liên kết và đăng nhập');
+  expect(authService.verifySocialLink).toHaveBeenCalledWith(
+    'link-challenge',
+    '123456',
+  );
+  expect(authService.verify).not.toHaveBeenCalled();
 });
 
 test('shows API login failure and hides providers that are not configured', async () => {
