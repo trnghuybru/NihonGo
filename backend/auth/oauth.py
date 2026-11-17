@@ -13,8 +13,9 @@ from flask import current_app, jsonify, redirect, request
 from sqlalchemy import select
 
 from .models import Identity, OAuthFlow, User, db, new_id, now
-from .routes import bp, issue_session
-from .security import AuthError, body, digest, string
+from .routes import (bp, challenge_response, create_challenge, issue_session,
+                     lock_user, locked_challenge, validate_code)
+from .security import AuthError, body, digest, email as normalize_email, limit, string, verified_user
 
 APP_CALLBACK = "nihongoflow://auth/callback"
 
@@ -99,13 +100,18 @@ def exchange_provider_code(provider, code, nonce):
         raise ValueError("Invalid nonce")
     if claims.get("azp", config["client_id"]) != config["client_id"]:
         raise ValueError("Invalid authorized party")
-    return {"subject": claims["sub"], "name": claims.get("name", ""), "email": claims.get("email", "")}
+    return {"subject": claims["sub"], "name": claims.get("name", ""), "email": claims.get("email", ""),
+            "email_verified": claims.get("email_verified") is True}
 
 
 @bp.post("/oauth/<provider>/start")
 def start(provider):
     config = provider_config(provider)
-    state, secret, nonce = secrets.token_urlsafe(32), secrets.token_urlsafe(48), secrets.token_urlsafe(32)
+    client = string(body(), "client", 16) or "native"
+    if client not in ("native", "web"):
+        raise AuthError("Ứng dụng đăng nhập không hợp lệ.")
+    state = ("web." if client == "web" else "") + secrets.token_urlsafe(32)
+    secret, nonce = secrets.token_urlsafe(48), secrets.token_urlsafe(32)
     flow = OAuthFlow(id=new_id(), provider=provider, state_hash=digest(state), secret_hash=digest(secret),
                      nonce=nonce, expires_at=now() + 600)
     db.session.add(flow)
@@ -140,6 +146,9 @@ def callback(provider):
         current_app.logger.warning("Social authorization failed: provider=%s", provider)
     db.session.commit()
     # No credential, provider token or authorization code in the mobile deep link.
+    if state.startswith("web."):
+        web_base = current_app.config.get("WEB_BASE_URL") or current_app.config["PUBLIC_BASE_URL"]
+        return redirect(web_base.rstrip("/") + "/login?oauth=complete")
     return redirect(APP_CALLBACK)
 
 
@@ -164,10 +173,62 @@ def exchange():
         flow.status, flow.profile = "consumed", None
         result = issue_session(user)
     else:
-        token = secrets.token_urlsafe(32)
-        flow.status, flow.profile_token_hash = "profile", digest(token)
-        flow.expires_at = now() + 1800
-        result = {"status": "profile_required", "social_token": token,
-                  "name": flow.profile.get("name", ""), "email": flow.profile.get("email", "")}
+        try:
+            normalized_email = normalize_email(flow.profile.get("email") or "")
+        except AuthError:
+            normalized_email = None
+        existing = verified_user("email", normalized_email) if normalized_email else None
+        if existing:
+            if flow.provider == "google" and flow.profile.get("email_verified") is True:
+                user = lock_user(existing.id)
+                if (not user or not user.active or not user.email_verified or
+                        user.email != normalized_email):
+                    raise AuthError("Tài khoản không khả dụng.", 403, "account_unavailable")
+                identity = db.session.scalar(select(Identity).where(
+                    Identity.provider == flow.provider,
+                    Identity.subject == flow.profile["subject"]).with_for_update())
+                if identity and identity.user_id != user.id:
+                    raise AuthError("Tài khoản Google đã được liên kết.", 409, "account_conflict")
+                if not identity:
+                    db.session.add(Identity(user_id=user.id, provider=flow.provider,
+                                            subject=flow.profile["subject"]))
+                flow.status, flow.profile = "consumed", None
+                result = issue_session(user)
+            else:
+                from .beta import check_invite
+                check_invite(existing.email)
+                limit("oauth-link-email", existing.email, 5, 3600)
+                challenge = create_challenge("oauth-link", "email", existing.email,
+                    {"provider": flow.provider, "subject": flow.profile["subject"]}, existing.id)
+                flow.status, flow.profile = "consumed", None
+                result = {"status": "link_required", **challenge_response(challenge)}
+        else:
+            token = secrets.token_urlsafe(32)
+            flow.status, flow.profile_token_hash = "profile", digest(token)
+            flow.expires_at = now() + 1800
+            result = {"status": "profile_required", "social_token": token,
+                      "name": flow.profile.get("name", ""), "email": flow.profile.get("email", "")}
+    db.session.commit()
+    return jsonify(result)
+
+
+@bp.post("/oauth/link/verify")
+def verify_link():
+    data = body()
+    challenge = locked_challenge(data, "oauth-link")
+    validate_code(challenge, data)
+    user = lock_user(challenge.user_id)
+    if not user or not user.active or not user.email_verified or user.email != challenge.destination:
+        raise AuthError("Tài khoản không khả dụng.", 403, "account_unavailable")
+    identity = db.session.scalar(select(Identity).where(
+        Identity.provider == challenge.payload["provider"],
+        Identity.subject == challenge.payload["subject"]).with_for_update())
+    if identity and identity.user_id != user.id:
+        raise AuthError("Tài khoản Google đã được liên kết.", 409, "account_conflict")
+    if not identity:
+        db.session.add(Identity(user_id=user.id, provider=challenge.payload["provider"],
+                                subject=challenge.payload["subject"]))
+    result = issue_session(user)
+    challenge.consumed_at, challenge.payload = now(), {}
     db.session.commit()
     return jsonify(result)

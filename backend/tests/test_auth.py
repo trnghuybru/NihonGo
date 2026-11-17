@@ -11,6 +11,7 @@ from sqlalchemy import create_engine, delete, select, text
 
 from auth import init_auth
 from auth.models import AuthSession, Challenge, OAuthFlow, RateLimit, User, db, now
+from auth.oauth import exchange_provider_code
 from auth.security import AuthError, digest
 
 PASSWORD = "A long secret phrase 2026!"
@@ -27,7 +28,8 @@ class AuthTests(unittest.TestCase):
         cls.app.config.update(TESTING=True, AUTH_SECRET_KEY="test-secret-" * 4,
                               AUTH_CONFIGURED=True, SQLALCHEMY_DATABASE_URI=cls.url,
                               SMTP_HOST="test", SMTP_FROM="test@example.com",
-                              PUBLIC_BASE_URL="https://api.example.com", GOOGLE_CLIENT_ID="client",
+                              PUBLIC_BASE_URL="https://api.example.com", WEB_BASE_URL="https://web.example.com",
+                              GOOGLE_CLIENT_ID="client",
                               GOOGLE_CLIENT_SECRET="secret")
         if cls.url.startswith("postgresql"):
             cls.schema = "test_auth_" + uuid.uuid4().hex
@@ -205,14 +207,33 @@ class AuthTests(unittest.TestCase):
         self.assertEqual(response.status_code, 429)
         self.assertIn("Retry-After", response.headers)
 
-    def social_ready(self):
-        started = self.post("/oauth/google/start", {}).json
+    def social_ready(self, client="native", email_verified=False):
+        started = self.post("/oauth/google/start", {"client": client}).json
         state = parse_qs(urlparse(started["authorization_url"]).query)["state"][0]
-        with patch("auth.oauth.exchange_provider_code", return_value={"subject": "google-sub-1", "name": "Minh", "email": REGISTER["email"]}):
+        with patch("auth.oauth.exchange_provider_code", return_value={
+                "subject": "google-sub-1", "name": "Minh", "email": REGISTER["email"],
+                "email_verified": email_verified}):
             response = self.client.get("/api/auth/oauth/google/callback", query_string={"state": state, "code": "code"})
         self.assertEqual(response.status_code, 302)
-        self.assertEqual(response.location, "nihongoflow://auth/callback")
+        self.assertEqual(response.location, "https://web.example.com/login?oauth=complete" if client == "web"
+                         else "nihongoflow://auth/callback")
         return started, state
+
+    def test_google_exchange_preserves_verified_email_claim(self):
+        claims = {"sub": "google-sub-1", "name": "Minh", "email": REGISTER["email"],
+                  "email_verified": True, "nonce": "oauth-nonce", "azp": "client"}
+        with patch("auth.oauth.requests.post") as provider_post, \
+                patch("auth.oauth.jwks_client") as keys, \
+                patch("auth.oauth.jwt.decode", return_value=claims):
+            provider_post.return_value.json.return_value = {"id_token": "signed-token"}
+            keys.return_value.get_signing_key_from_jwt.return_value.key = "public-key"
+            profile = exchange_provider_code("google", "authorization-code", "oauth-nonce")
+        self.assertIs(profile["email_verified"], True)
+
+    def test_web_social_callback_returns_to_web_without_credentials_in_url(self):
+        started, _ = self.social_ready(client="web")
+        profile = self.post("/oauth/exchange", started)
+        self.assertEqual(profile.json["status"], "profile_required")
 
     def test_social_state_exchange_secret_and_complete_registration(self):
         started, state = self.social_ready()
@@ -228,12 +249,37 @@ class AuthTests(unittest.TestCase):
         result = self.post("/oauth/exchange", started)
         self.assertEqual(result.json["user"]["id"], tokens["user"]["id"])
 
-    def test_social_does_not_auto_link_matching_email(self):
-        self.signup()
+    def test_social_links_existing_account_only_after_email_code(self):
+        original = self.signup()
         started, _ = self.social_ready()
-        profile = self.post("/oauth/exchange", started).json
-        self.assertEqual(profile["status"], "profile_required")
-        self.assertEqual(self.post("/register", {**REGISTER, "social_token": profile["social_token"]}).status_code, 409)
+        linking = self.post("/oauth/exchange", started).json
+        self.assertEqual(linking["status"], "link_required")
+        wrong = "000000" if self.sent[-1][2] != "000000" else "111111"
+        self.assertEqual(self.post("/oauth/link/verify", {"challenge_id": linking["challenge_id"],
+                         "code": wrong}).status_code, 400)
+        linked = self.post("/oauth/link/verify", {"challenge_id": linking["challenge_id"],
+                           "code": self.sent[-1][2]})
+        self.assertEqual(linked.status_code, 200, linked.json)
+        self.assertEqual(linked.json["user"]["id"], original["user"]["id"])
+        self.assertEqual(self.post("/oauth/link/verify", {"challenge_id": linking["challenge_id"],
+                         "code": self.sent[-1][2]}).status_code, 400)
+        started, _ = self.social_ready()
+        self.assertEqual(self.post("/oauth/exchange", started).json["user"]["id"], original["user"]["id"])
+
+    def test_verified_google_email_links_existing_account_without_email_code(self):
+        original = self.signup()
+        sent_before_google_login = len(self.sent)
+        started, _ = self.social_ready(email_verified=True)
+        linked = self.post("/oauth/exchange", started)
+        self.assertEqual(linked.status_code, 200, linked.json)
+        self.assertEqual(linked.json["user"]["id"], original["user"]["id"])
+        self.assertEqual(len(self.sent), sent_before_google_login)
+
+        started, _ = self.social_ready(email_verified=True)
+        logged_in = self.post("/oauth/exchange", started)
+        self.assertEqual(logged_in.status_code, 200, logged_in.json)
+        self.assertEqual(logged_in.json["user"]["id"], original["user"]["id"])
+        self.assertEqual(len(self.sent), sent_before_google_login)
 
     def test_disabled_provider_and_bad_state(self):
         self.assertEqual(self.post("/oauth/facebook/start", {}).status_code, 503)

@@ -1,4 +1,4 @@
-import { Linking } from 'react-native';
+import { Linking, Platform } from 'react-native';
 import * as Keychain from 'react-native-keychain';
 import { apiRequest, ApiError } from './apiClient';
 import { setReminderAccount } from './flashcardNotifications';
@@ -55,6 +55,9 @@ export interface SocialProfile {
   name: string;
   email: string;
 }
+export interface SocialLinkChallenge extends Challenge {
+  status: 'link_required';
+}
 interface OAuthPending {
   flow_id: string;
   flow_secret: string;
@@ -65,7 +68,7 @@ const OAUTH_SERVICE = 'com.nihongoflow.auth.oauth';
 let session: Tokens | null = null;
 let refreshPromise: Promise<Tokens> | null = null;
 let oauthPromise: Promise<
-  Tokens | SocialProfile | { status: 'pending' } | null
+  Tokens | SocialProfile | SocialLinkChallenge | { status: 'pending' } | null
 > | null = null;
 const listeners = new Set<(user: User | null) => void>();
 
@@ -268,14 +271,15 @@ export const authService = {
   async startSocial(provider: Provider) {
     const result = await request<OAuthPending & { authorization_url: string }>(
       `/oauth/${provider}/start`,
-      {},
+      { client: Platform.OS === 'web' ? 'web' : 'native' },
     );
     await secureSave(OAUTH_SERVICE, {
       flow_id: result.flow_id,
       flow_secret: result.flow_secret,
       created_at: Date.now(),
     });
-    await Linking.openURL(result.authorization_url);
+    if (Platform.OS === 'web') window.location.assign(result.authorization_url);
+    else await Linking.openURL(result.authorization_url);
   },
   async cancelSocial() {
     await Keychain.resetGenericPassword({ service: OAUTH_SERVICE });
@@ -300,7 +304,7 @@ export const authService = {
       }
       try {
         const result = await request<
-          Tokens | SocialProfile | { status: 'pending' }
+          Tokens | SocialProfile | SocialLinkChallenge | { status: 'pending' }
         >('/oauth/exchange', pending);
         if ('status' in result && result.status === 'pending') {
           return result;
@@ -320,5 +324,12 @@ export const authService = {
       oauthPromise = null;
     });
     return oauthPromise;
+  },
+  async verifySocialLink(challenge_id: string, code: string) {
+    const result = await request<Tokens>('/oauth/link/verify', {
+      challenge_id,
+      code,
+    });
+    return accept(result);
   },
 };

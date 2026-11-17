@@ -98,6 +98,7 @@ export function LoginScreen() {
   const [code, setCode] = useState('');
   const [challenge, setChallenge] = useState<Challenge | null>(null);
   const [social, setSocial] = useState<SocialProfile | null>(null);
+  const [socialLinking, setSocialLinking] = useState(false);
   useEffect(() => {
     if (web && !challenge && (stage === 'verify' || stage === 'reset')) {
       const target = stage === 'verify' ? '/register' : '/forgot-password';
@@ -155,6 +156,10 @@ export function LoginScreen() {
         setConfirmation('');
         setStage('register');
         setNotice('Bổ sung hồ sơ và xác thực email để hoàn tất đăng ký.');
+      } else if ('status' in result && result.status === 'link_required') {
+        setSocialLinking(true);
+        receiveChallenge(result, 'verify');
+        setNotice('Nhập mã gửi đến email để liên kết Google với tài khoản hiện có.');
       }
     }
   }, [setStage]);
@@ -207,6 +212,7 @@ export function LoginScreen() {
     setCode('');
     setChallenge(null);
     setSocial(null);
+    setSocialLinking(false);
   }
 
   async function submit() {
@@ -238,7 +244,11 @@ export function LoginScreen() {
       if (!/^\d{6}$/.test(code)) {
         throw new Error('Nhập đủ 6 chữ số trong mã xác thực.');
       }
-      await authService.verify(challenge.challenge_id, code);
+      if (socialLinking) {
+        await authService.verifySocialLink(challenge.challenge_id, code);
+      } else {
+        await authService.verify(challenge.challenge_id, code);
+      }
     } else if (stage === 'forgot') {
       if (!identifier.trim()) {
         throw new Error('Nhập email hoặc số điện thoại đã xác thực.');
@@ -266,7 +276,7 @@ export function LoginScreen() {
   const titles: Record<Stage, string> = {
     login: 'Chào mừng trở lại!',
     register: social ? 'Hoàn tất hồ sơ' : 'Tạo tài khoản',
-    verify: 'Xác thực tài khoản',
+    verify: socialLinking ? 'Liên kết Google' : 'Xác thực tài khoản',
     forgot: 'Quên mật khẩu?',
     reset: 'Đặt lại mật khẩu',
   };
@@ -282,7 +292,7 @@ export function LoginScreen() {
   const labels: Record<Stage, string> = {
     login: 'Đăng nhập',
     register: 'Tiếp tục',
-    verify: 'Xác thực và đăng nhập',
+    verify: socialLinking ? 'Liên kết và đăng nhập' : 'Xác thực và đăng nhập',
     forgot: 'Gửi mã khôi phục',
     reset: 'Lưu mật khẩu mới',
   };
@@ -356,7 +366,7 @@ export function LoginScreen() {
         ) : undefined
       }
     >
-      {stage === 'register' || stage === 'verify' ? (
+      {(stage === 'register' || stage === 'verify') && !socialLinking ? (
         <AuthSteps current={stage === 'register' ? 1 : 2} />
       ) : null}
       <AuthNotice message={notice} />

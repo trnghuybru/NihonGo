@@ -371,6 +371,14 @@ http://localhost:5173. Bản web tái sử dụng các màn hình app, có bố 
 desktop và adapter trình duyệt cho iframe, đăng nhập và âm thanh. Chi tiết tại
 [frontend/WEB.md](frontend/WEB.md).
 
+Để bật đăng nhập Google trực tiếp, tạo OAuth client loại **Web application** trong
+Google Cloud, thêm redirect URI `http://localhost:5001/api/auth/oauth/google/callback`
+(và `https://momonihongo.app/api/auth/oauth/google/callback` cho staging). Điền
+`GOOGLE_CLIENT_ID` và `GOOGLE_CLIENT_SECRET` vào `backend/.env`; đặt
+`WEB_BASE_URL=http://localhost:5173` khi chạy web local. Tài khoản hiện có với
+email đã xác minh sẽ được liên kết tự động khi Google cũng xác nhận email đó;
+nếu Google không xác nhận, cần xác minh email trước khi liên kết.
+
 ### Phát âm từ vựng
 
 Nút loa trong bài học, chi tiết từ điển và flashcard đọc cách đọc kana (hoặc từ gốc
