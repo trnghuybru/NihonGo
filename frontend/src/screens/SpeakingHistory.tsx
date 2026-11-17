@@ -103,6 +103,7 @@ const HistoryRow = memo(function HistoryRowView({
         <Text numberOfLines={2} style={styles.preview}>
           {item.last_message || 'Chưa có tin nhắn. Mở để bắt đầu hội thoại.'}
         </Text>
+        <Text style={styles.date}>{item.practice_mode === 'guided' ? 'Có gợi ý' : 'Tự nói'}</Text>
       </Pressable>
       <Pressable
         accessibilityRole="button"

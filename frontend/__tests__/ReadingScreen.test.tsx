@@ -9,6 +9,8 @@ import {
   ReadingCatalog,
 } from '../src/services/readingService';
 import { readingPreferences } from '../src/services/readingPreferences';
+import { WebNavigationContext } from '../src/navigation/webNavigation';
+import { ScreenBackHeader } from '../src/components/ScreenBackHeader';
 
 jest.mock('../src/services/readingService', () => ({
   readingService: { list: jest.fn(), passage: jest.fn() },
@@ -128,7 +130,14 @@ test('filters by level, type and search and resets pagination', async () => {
 });
 test('opens a passage, toggles furigana without losing word lookup and returns to catalog', async () => {
   await render();
+  const topBar = tree.root.findByProps({ testID: 'mobile-top-bar' });
+  expect(topBar.findAllByType(ScreenBackHeader)).toHaveLength(0);
+  expect(tree.root.findAllByType(ScreenBackHeader)).toHaveLength(1);
+  expect(control('Luyện tập')).toBeDefined();
   await press('Mở Bài đọc 1');
+  const passageTopBar = tree.root.findByProps({ testID: 'mobile-top-bar' });
+  expect(passageTopBar.findAllByType(ScreenBackHeader)).toHaveLength(0);
+  expect(control('Thư viện bài đọc')).toBeDefined();
   expect(readingService.passage).toHaveBeenCalledWith('p1');
   expect(text()).toContain('がっこう');
   await act(async () =>
@@ -147,6 +156,29 @@ test('opens a passage, toggles furigana without losing word lookup and returns t
   await press('Đóng popup từ vựng');
   await press('Thư viện bài đọc');
   expect(control('Mở Bài đọc 1')).toBeDefined();
+});
+test('returns directly to the filtered reading library from a web passage', async () => {
+  const navigate = jest.fn();
+  const back = jest.fn();
+  await act(async () => {
+    tree = Renderer.create(
+      <WebNavigationContext.Provider
+        value={{
+          pathname: '/practice/reading/p1',
+          search: '?level=N5&page=2',
+          key: 'passage',
+          state: null,
+          navigate,
+          back,
+        }}
+      >
+        <ReadingScreen accountId="reader" />
+      </WebNavigationContext.Provider>,
+    );
+  });
+  await press('Thư viện bài đọc');
+  expect(navigate).toHaveBeenCalledWith('/practice/reading?level=N5&page=2');
+  expect(back).not.toHaveBeenCalled();
 });
 test('restores the account furigana preference and handles empty lists', async () => {
   jest.mocked(readingPreferences.load).mockResolvedValue(false);

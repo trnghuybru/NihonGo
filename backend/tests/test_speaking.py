@@ -102,6 +102,34 @@ class SpeakingTests(unittest.TestCase):
                                 json={} if data is None else data,
                                 headers={"Authorization": f"Bearer {token}"})
 
+    def test_guided_hints_follow_levels_and_cache_per_turn(self):
+        started = self.start(data={"practice_mode": "guided"})
+        self.assertEqual(started.status_code, 201, started.json)
+        session_id = started.json["session"]["id"]
+        message_id = started.json["opening_message"]["id"]
+        self.assertEqual(self.get(f"/api/speaking/sessions/{session_id}").json["session"]["practice_mode"], "guided")
+        path = f"/api/speaking/sessions/{session_id}/messages/{message_id}/hint"
+        headers = {"Authorization": "Bearer alice"}
+        hints = {"idea": "Hãy chào lại", "words": "こんにちは — xin chào", "example": "こんにちは、よろしくお願いします。"}
+        with patch("speaking.guided_hints.generate_evaluation", return_value=hints) as generate:
+            self.assertEqual(self.client.post(path, json={"level": 2}, headers=headers).status_code, 409)
+            first = self.client.post(path, json={"level": 1}, headers=headers)
+            self.assertEqual(first.status_code, 200, first.json)
+            self.assertEqual(first.json["text"], hints["idea"])
+            second = self.client.post(path, json={"level": 2}, headers=headers)
+            self.assertEqual(second.json["text"], hints["words"])
+            self.assertEqual(second.json["hint_count"], 1)
+            generate.assert_called_once()
+        self.assertEqual(self.get(f"/api/speaking/sessions/{session_id}").json["session"]["hint_count"], 1)
+        self.assertEqual(self.client.post(path, json={"level": 1}, headers={"Authorization": "Bearer bob"}).status_code, 404)
+        free = self.start().json
+        free_path = f"/api/speaking/sessions/{free['session']['id']}/messages/{free['opening_message']['id']}/hint"
+        self.assertEqual(self.client.post(free_path, json={"level": 1}, headers=headers).status_code, 409)
+
+    def test_start_rejects_unknown_practice_mode(self):
+        self.assertEqual(self.start(data={"practice_mode": "unknown"}).status_code, 400)
+        self.assertEqual(self.start(data={"practice_mode": []}).status_code, 400)
+
     def live_credentials(self, identifier):
         with patch.dict(os.environ, {"GEMINI_API_KEY": "server-secret", "GEMINI_LIVE_MODEL": "test-live"}), patch("speaking.live.requests.post") as provider:
             provider.return_value.status_code = 200

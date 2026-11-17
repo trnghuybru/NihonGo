@@ -3,6 +3,7 @@ import Renderer, { act } from 'react-test-renderer';
 import { Text, TextInput } from 'react-native';
 import { WebLayoutContext } from '../src/hooks/useWebLayout';
 import { WritingScreen } from '../src/screens/WritingScreen';
+import { ScreenBackHeader } from '../src/components/ScreenBackHeader';
 import { writingService } from '../src/services/writingService';
 
 jest.mock('../src/services/writingService', () => ({
@@ -228,4 +229,20 @@ test('blocks duplicate submissions while grading and retains text after a failur
   );
   expect(visibleText()).toContain('Thử lại sau.');
   expect(button('Nộp bài').props.disabled).toBe(false);
+});
+
+test('keeps a back action at the top and exits the native writing dashboard', async () => {
+  const onExit = jest.fn();
+  await act(async () => {
+    tree = Renderer.create(<WritingScreen onExit={onExit} />);
+  });
+  const topBar = tree.root.findByProps({ testID: 'mobile-top-bar' });
+  expect(topBar.findAllByType(ScreenBackHeader)).toHaveLength(0);
+  expect(tree.root.findAllByType(ScreenBackHeader)).toHaveLength(1);
+  expect(button('Quay lại')).toBeDefined();
+  await act(async () => button('Chọn bài tập viết').props.onPress());
+  await act(async () => button('Quay lại').props.onPress());
+  expect(onExit).not.toHaveBeenCalled();
+  await act(async () => button('Quay lại').props.onPress());
+  expect(onExit).toHaveBeenCalledTimes(1);
 });

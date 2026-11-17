@@ -52,6 +52,7 @@ export interface StartSessionInput {
   role_id: string;
   input_mode: 'text' | 'voice';
   audio_storage_enabled: boolean;
+  practice_mode?: 'free' | 'guided';
 }
 
 export interface StartedSession {
@@ -61,6 +62,8 @@ export interface StartedSession {
     scenario_role_id: string;
     status: 'active' | 'paused' | 'completed' | 'abandoned';
     current_input_mode: 'text' | 'voice';
+    practice_mode?: 'free' | 'guided';
+    hint_count?: number;
     audio_storage_enabled: boolean;
     started_at: string;
     accumulated_active_ms: number;
@@ -122,6 +125,7 @@ export interface ConversationSummary {
   title: string;
   role_name: string;
   status: StartedSession['session']['status'];
+  practice_mode?: 'free' | 'guided';
   last_activity_at: string;
   last_message: string | null;
 }
@@ -340,6 +344,15 @@ export const speakingService = {
       input,
       'POST',
       { timeoutMs: 60000 },
+    );
+  },
+  hint(id: string, messageId: string, level: 1 | 2 | 3): Promise<{
+    status?: 'processing'; level?: number; text?: string;
+    used_level?: number; hint_count?: number;
+  }> {
+    return authenticatedRequest(
+      `/speaking/sessions/${encodeURIComponent(id)}/messages/${encodeURIComponent(messageId)}/hint`,
+      { level }, 'POST', { timeoutMs: 90000 },
     );
   },
   async categories(): Promise<ScenarioCategory[]> {

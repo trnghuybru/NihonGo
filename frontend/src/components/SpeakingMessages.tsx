@@ -101,11 +101,16 @@ export function SpeakingMessages({
       }),
     );
     const tail = messages.at(-1);
+    const sameText = (left: string, right: string) =>
+      left.replace(/\s+/g, ' ').trim() === right.replace(/\s+/g, ' ').trim();
     const saved =
-      ['user_turn', 'transition_to_user'].includes(presentation.phase) &&
       tail?.speaker === 'assistant' &&
-      tail.content.trim() === presentation.assistant.trim() &&
-      messages.at(-2)?.content.trim() === presentation.user.trim();
+      Boolean(presentation.assistant.trim()) &&
+      sameText(tail.content, presentation.assistant) &&
+      (presentation.user.trim()
+        ? messages.at(-2)?.speaker === 'user' &&
+          sameText(messages.at(-2)!.content, presentation.user)
+        : true);
     if (!review && !saved) {
       if (presentation.user)
         rows.push({

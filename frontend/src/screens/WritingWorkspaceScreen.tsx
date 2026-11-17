@@ -719,14 +719,9 @@ export function WritingWorkspaceScreen() {
     <WritingShell
       onBack={goBack}
       title="Luyện viết"
-      hideHeader={desktop}
+      hideHeader
       subtitle=""
       card={false}
-      footer={
-        !desktop ? (
-          <AuthButton label="Về Luyện tập" variant="text" onPress={goBack} />
-        ) : undefined
-      }
     >
       <View style={styles.workspace} testID="writing-workspace">
         <View style={styles.main} testID="writing-main-panel">
