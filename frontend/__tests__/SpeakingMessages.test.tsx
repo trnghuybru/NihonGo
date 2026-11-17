@@ -91,3 +91,36 @@ test('shows a replay control for the current local microphone recording', async 
     'blob:local-utterance',
   );
 });
+
+test('shows a saved turn once while Live still holds the same transcript', async () => {
+  const assistantMessage: ConversationMessage = {
+    ...userMessage,
+    id: 'assistant-message-1',
+    sequence_number: 3,
+    speaker: 'assistant',
+    input_mode: 'generated',
+    content: 'はい、よろしくお願いします。',
+  };
+  let tree!: Renderer.ReactTestRenderer;
+  await act(async () => {
+    tree = Renderer.create(
+      <SpeakingMessages
+        messages={[userMessage, assistantMessage]}
+        presentation={{
+          ...initialPresentation,
+          phase: 'ai_speaking',
+          user: 'こんにちは',
+          assistant: 'はい、よろしくお願いします。',
+        }}
+      />,
+    );
+  });
+  expect(
+    tree.root.findAll(node => node.props.accessibilityLabel === 'こんにちは'),
+  ).toHaveLength(1);
+  expect(
+    tree.root.findAll(
+      node => node.props.accessibilityLabel === 'はい、よろしくお願いします。',
+    ),
+  ).toHaveLength(1);
+});

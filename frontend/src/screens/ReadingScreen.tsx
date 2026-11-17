@@ -149,7 +149,7 @@ export function ReadingScreen({
   const back = useCallback(() => {
     const current = nav.current;
     if (id) {
-      if (current) current.back('/practice/reading' + current.search);
+      if (current) current.navigate('/practice/reading' + current.search);
       else setLocalId(null);
     } else if (current) current.navigate('/practice');
     else onExit?.();
@@ -183,8 +183,13 @@ export function ReadingScreen({
     state.status === 'loading' || (id && state.status === 'ready' && !passage);
   return (
     <View style={styles.screen}>
-      {!desktop && !id ? <MobileTopBar /> : null}
-      <View style={[styles.toolbar, desktop && styles.desktopToolbar]}>
+      {!desktop ? <MobileTopBar /> : null}
+      <View
+        style={[
+          styles.toolbar,
+          desktop ? styles.desktopToolbar : styles.mobileToolbar,
+        ]}
+      >
         <ScreenBackHeader
           title="Luyện đọc"
           backLabel={id ? 'Thư viện bài đọc' : 'Luyện tập'}
@@ -488,8 +493,18 @@ const styles = StyleSheet.create({
     maxWidth: layout.maxContentWidth,
     alignSelf: 'center',
   },
-  desktopToolbar: { justifyContent: 'flex-end' },
-  toggle: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm },
+  desktopToolbar: { paddingHorizontal: spacing.section },
+  mobileToolbar: {
+    justifyContent: 'space-between',
+    paddingTop: spacing.lg,
+    paddingBottom: spacing.lg,
+  },
+  toggle: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: spacing.sm,
+    marginLeft: 'auto',
+  },
   content: {
     width: '100%',
     maxWidth: layout.maxContentWidth,

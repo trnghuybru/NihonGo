@@ -26,6 +26,7 @@ import {
 } from '../components/SpeakingStage';
 import { useSpeakingPresentation } from '../hooks/useSpeakingPresentation';
 import { SpeakingMessages } from '../components/SpeakingMessages';
+import { SpeakingGuidedHints } from '../components/SpeakingGuidedHints';
 import { SpeakingMicrophone } from '../components/SpeakingMicrophone';
 import {
   EyeIcon,
@@ -456,6 +457,10 @@ function LiveConversationScreen({
         presentation={{ ...presentation, emotion }}
         replay={replayControls}
         feedbackControls={sentenceFeedback}
+        footer={result.session.practice_mode === 'guided' ? (
+          <SpeakingGuidedHints sessionId={result.session.id} messages={chat.messages}
+            active={active} initialHintCount={result.session.hint_count ?? 0} />
+        ) : undefined}
       />
     </View>
   );
@@ -593,7 +598,7 @@ function LiveConversationScreen({
         <Text numberOfLines={2} style={styles.title}>
           {result.scenario.title}
         </Text>
-        <Text style={styles.hint}>Aoi · {result.scenario.role.name}</Text>
+        <Text style={styles.hint}>Aoi · {result.scenario.role.name} · {result.session.practice_mode === 'guided' ? 'Có gợi ý' : 'Tự nói'}</Text>
       </View>
       {active ? (
         <AuthButton

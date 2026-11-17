@@ -15,6 +15,7 @@ import {
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { AuthButton, AuthNotice } from '../components/AuthForm';
 import { CharacterView3D } from '../components/CharacterView3D';
+import { SpeakingGuidedHints } from '../components/SpeakingGuidedHints';
 import { useBottomNavigationInset } from '../hooks/useBottomNavigationInset';
 import { useConversation } from '../hooks/useConversation';
 import { errorMessage } from '../hooks/useSpeakingScenarios';
@@ -306,7 +307,7 @@ export function BetaTextConversationScreen({
           {result.scenario.title}
         </Text>
         <Text style={styles.subtitle}>
-          Trò chuyện với {result.scenario.role.name}
+          Trò chuyện với {result.scenario.role.name} · {result.session.practice_mode === 'guided' ? 'Có gợi ý' : 'Tự nói'}
         </Text>
       </View>
     </View>
@@ -367,6 +368,10 @@ export function BetaTextConversationScreen({
           ) : null}
         </View>
       ))}
+      {result.session.practice_mode === 'guided' ? (
+        <SpeakingGuidedHints sessionId={result.session.id} messages={chat.messages}
+          active={chat.active} initialHintCount={result.session.hint_count ?? 0} />
+      ) : null}
       {chat.loading && !chat.ready ? (
         <ActivityIndicator color={colors.primaryText} />
       ) : null}

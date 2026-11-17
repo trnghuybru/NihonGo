@@ -155,6 +155,18 @@ def message_feedback(session_id, message_id):
     return jsonify(result), 202 if result["status"] == "processing" else 200
 
 
+@bp.post("/sessions/<session_id>/messages/<message_id>/hint")
+@require_auth
+def guided_hint(session_id, message_id):
+    from .guided_hints import request_hint
+    from api_errors import ApiError
+    data = body()
+    if set(data) != {"level"}:
+        raise ApiError("Yêu cầu gợi ý cần mức từ 1 đến 3.")
+    result = request_hint(g.user.id, session_id, message_id, data["level"])
+    return jsonify(result), 202 if result.get("status") == "processing" else 200
+
+
 @bp.get("/sessions/<session_id>/evaluation")
 @require_auth
 def evaluation_result(session_id):

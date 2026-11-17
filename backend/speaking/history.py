@@ -17,10 +17,14 @@ def session_detail(user_id, session_id):
         "estimated_duration_minutes", "category", "context", "learning_objectives")}
     scenario["role"] = {key: role.get(key) for key in (
         "id", "name", "description", "opening_message")}
+    hint_count = db.session.scalar(select(func.count()).select_from(ConversationMessage).where(
+        ConversationMessage.session_id == session.id, ConversationMessage.hint_used_level > 0)) or 0
     return {
         "session": {"id": session.id, "scenario_id": session.scenario_id,
                     "scenario_role_id": session.scenario_role_id, "status": session.status,
                     "current_input_mode": session.current_input_mode,
+                    "practice_mode": snapshot.get("practice_mode", "free"),
+                    "hint_count": hint_count,
                     "audio_storage_enabled": session.audio_storage_enabled,
                     "started_at": as_utc(session.started_at).isoformat(),
                     "accumulated_active_ms": session.accumulated_active_ms},
@@ -61,6 +65,7 @@ def list_sessions(user_id, args):
         items.append({"id": session.id, "title": snapshot.get("title", "Hội thoại"),
                       "role_name": snapshot.get("role", {}).get("name", "AI"),
                       "status": session.status,
+                      "practice_mode": snapshot.get("practice_mode", "free"),
                       "last_activity_at": as_utc(message.occurred_at if message else session.started_at).isoformat(),
                       "last_message": message.content[:160] if message else None})
     return {"items": items, "pagination": {"page": page, "page_size": size,

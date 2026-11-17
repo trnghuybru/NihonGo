@@ -44,6 +44,7 @@ export function AuthShell({
   headerAccessory,
   compactHeader = false,
   topBarAccessory,
+  navigationHeader,
   backgroundDecoration,
   floatingAccessory,
   hideHeader = false,
@@ -59,6 +60,7 @@ export function AuthShell({
   headerAccessory?: React.ReactNode;
   compactHeader?: boolean;
   topBarAccessory?: React.ReactNode;
+  navigationHeader?: React.ReactNode;
   backgroundDecoration?: React.ReactNode;
   floatingAccessory?: React.ReactNode;
   hideHeader?: boolean;
@@ -76,6 +78,9 @@ export function AuthShell({
       <StatusBar barStyle="dark-content" />
       {backgroundDecoration}
       {!desktop ? <MobileTopBar accessory={topBarAccessory} /> : null}
+      {!desktop && navigationHeader ? (
+        <View style={styles.navigationHeader}>{navigationHeader}</View>
+      ) : null}
       <ScrollView
         keyboardShouldPersistTaps="handled"
         keyboardDismissMode="on-drag"
@@ -394,6 +399,14 @@ export function AuthContact({
 }
 
 const styles = StyleSheet.create({
+  navigationHeader: {
+    width: '100%',
+    maxWidth: layout.maxContentWidth,
+    alignSelf: 'center',
+    paddingHorizontal: layout.screenGutter,
+    paddingTop: spacing.lg,
+    paddingBottom: spacing.lg,
+  },
   compactContent: { paddingTop: spacing.lg },
   compactHeader: { marginBottom: spacing.xxl },
   compactHeaderMain: { minHeight: 104 },

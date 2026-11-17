@@ -56,7 +56,7 @@ export function LearningAreaScreen({
       />
     );
   if (area === 'writing') {
-    return <WritingScreen />;
+    return <WritingScreen onExit={onExit} />;
   }
 
   const content = areas[area];

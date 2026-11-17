@@ -79,15 +79,15 @@ const normalizeSubmissionDate = (value: number | string) => {
 
 const CUSTOM_WRITING_ID = '__custom__';
 
-export function WritingScreen() {
+export function WritingScreen({ onExit }: { onExit?: () => void }) {
   return Platform.OS === 'web' ? (
     <WritingWorkspaceScreen />
   ) : (
-    <NativeWritingScreen />
+    <NativeWritingScreen onExit={onExit} />
   );
 }
 
-function NativeWritingScreen() {
+function NativeWritingScreen({ onExit }: { onExit?: () => void }) {
   const { desktop, contentWidth } = useWebLayout();
   const web = useWebNavigation();
   const defaultLevel = useDefaultJlptLevel();
@@ -96,9 +96,11 @@ function NativeWritingScreen() {
   const [editorFocused, setEditorFocused] = useState(false);
   const [view, setView] = useState<WritingView>('dashboard');
   const goBack = useCallback(() => {
-    if (view === 'dashboard') web?.navigate('/practice');
-    else setView('dashboard');
-  }, [view, web]);
+    if (view === 'dashboard') {
+      if (web) web.navigate('/practice');
+      else onExit?.();
+    } else setView('dashboard');
+  }, [onExit, view, web]);
   const promptColumns = contentWidth >= 1120 ? 3 : 2;
   const promptCardWidth =
     (Math.min(contentWidth, 1160) - 40 - 16 * (promptColumns - 1)) /
@@ -508,14 +510,6 @@ function NativeWritingScreen() {
     setView('editor');
   };
 
-  const renderBackButton = () => (
-    <AuthButton
-      label="Quay lại"
-      variant="text"
-      onPress={() => setView('dashboard')}
-    />
-  );
-
   if (view === 'exercise') {
     return (
       <WritingShell
@@ -525,7 +519,6 @@ function NativeWritingScreen() {
         icon="check"
         card={false}
         headerAccessory={<NihongoMascot pose="writing" size={96} decorative />}
-        footer={renderBackButton()}
       >
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>Chủ đề có sẵn</Text>
@@ -583,7 +576,6 @@ function NativeWritingScreen() {
         icon="check"
         card={false}
         headerAccessory={<NihongoMascot pose="writing" size={96} decorative />}
-        footer={renderBackButton()}
       >
         <View style={[styles.editorLayout, desktop && styles.editorDesktop]}>
           <View
@@ -689,7 +681,6 @@ function NativeWritingScreen() {
         icon="check"
         card={false}
         headerAccessory={<NihongoMascot pose="writing" size={96} decorative />}
-        footer={renderBackButton()}
       >
         <View style={styles.section}>
           {drafts.length === 0 ? (
@@ -746,7 +737,6 @@ function NativeWritingScreen() {
         icon="check"
         card={false}
         headerAccessory={<NihongoMascot pose="writing" size={96} decorative />}
-        footer={renderBackButton()}
       >
         <View style={styles.section}>
           {submissions.length === 0 ? (
@@ -865,7 +855,6 @@ function NativeWritingScreen() {
         icon="check"
         card={false}
         headerAccessory={<NihongoMascot pose="writing" size={96} decorative />}
-        footer={renderBackButton()}
       >
         <View style={styles.section}>
           <View style={styles.resultHeader}>
@@ -949,7 +938,6 @@ function NativeWritingScreen() {
         icon="check"
         card={false}
         headerAccessory={<NihongoMascot pose="writing" size={96} decorative />}
-        footer={renderBackButton()}
       >
         <View style={styles.section}>
           <Text style={styles.empty}>
@@ -1005,7 +993,6 @@ function NativeWritingScreen() {
         icon="check"
         card={false}
         headerAccessory={<NihongoMascot pose="writing" size={96} decorative />}
-        footer={renderBackButton()}
       >
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>
@@ -1122,7 +1109,6 @@ function NativeWritingScreen() {
           headerAccessory={
             <NihongoMascot pose="writing" size={96} decorative />
           }
-          footer={renderBackButton()}
         >
           <View style={styles.section}>
             <Text style={styles.empty}>Chưa có đủ dữ liệu để so sánh.</Text>
@@ -1155,7 +1141,6 @@ function NativeWritingScreen() {
         icon="check"
         card={false}
         headerAccessory={<NihongoMascot pose="writing" size={96} decorative />}
-        footer={renderBackButton()}
       >
         <View style={styles.section}>
           <View style={styles.resultHeader}>
@@ -1340,7 +1325,6 @@ function NativeWritingScreen() {
         icon="check"
         card={false}
         headerAccessory={<NihongoMascot pose="writing" size={96} decorative />}
-        footer={renderBackButton()}
       >
         <View style={styles.section}>
           <View style={styles.metricGrid}>

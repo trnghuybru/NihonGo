@@ -142,11 +142,15 @@ class StartSessionInput:
     role_id: str | None
     input_mode: str
     audio_storage_enabled: bool
+    practice_mode: str = "free"
 
     @classmethod
     def parse(cls, data):
-        if not isinstance(data, dict) or set(data) - {"role_id", "input_mode", "audio_storage_enabled"}:
+        if not isinstance(data, dict) or set(data) - {"role_id", "input_mode", "audio_storage_enabled", "practice_mode"}:
             raise ApiError("Yêu cầu phải là JSON object với các trường được hỗ trợ.")
+        practice_mode = data.get("practice_mode", "free")
+        if not isinstance(practice_mode, str) or practice_mode not in {"free", "guided"}:
+            raise ApiError("Chế độ luyện nói không hợp lệ.")
         mode = data.get("input_mode", "text")
         if not isinstance(mode, str) or mode not in {"text", "voice"}:
             raise ApiError("Chế độ nhập phải là text hoặc voice.")
@@ -157,7 +161,7 @@ class StartSessionInput:
         if beta_enabled() and recording and os.getenv("BETA_AUDIO_STORAGE_ENABLED", "").lower() not in {"1", "true", "yes"}:
             raise ApiError("Lưu âm thanh chưa mở trong bản beta.", 403, "beta_audio_disabled")
         role = parse_id(data["role_id"], "role_id") if "role_id" in data else None
-        return cls(role, mode, recording)
+        return cls(role, mode, recording, practice_mode)
 
 
 def start_session(user_id, scenario_id, values):
@@ -174,6 +178,7 @@ def start_session(user_id, scenario_id, values):
     # Copy immutable primitive values rather than exposing mutable ORM objects.
     snapshot = {**public_scenario(scenario, category), "context": scenario.context,
                 "learning_objectives": scenario.learning_objectives,
+                "practice_mode": values.practice_mode,
                 "role": {**public_role(role), "ai_instructions": role.ai_instructions}}
     session = ConversationSession(
         user_id=user_id, scenario_id=scenario.id, scenario_role_id=role.id,
@@ -194,6 +199,7 @@ def start_session(user_id, scenario_id, values):
     response = {
         "session": {"id": session.id, "scenario_id": scenario.id, "scenario_role_id": role.id,
                     "status": session.status, "current_input_mode": session.current_input_mode,
+                    "practice_mode": values.practice_mode,
                     "audio_storage_enabled": session.audio_storage_enabled,
                     "started_at": timestamp.isoformat(), "accumulated_active_ms": 0},
         "scenario": {**public_scenario(scenario, category), "context": scenario.context,

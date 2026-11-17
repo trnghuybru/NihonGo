@@ -208,6 +208,7 @@ function ScenarioPreview({
 }) {
   const [roleId, setRoleId] = useState(scenario.roles[0]?.id || '');
   const [saveAudio, setSaveAudio] = useState(false);
+  const [practiceMode, setPracticeMode] = useState<'free' | 'guided'>('guided');
   const role = scenario.roles.find(item => item.id === roleId);
   return (
     <View style={styles.previewContent}>
@@ -250,6 +251,20 @@ function ScenarioPreview({
           ))}
         </View>
       ) : null}
+      <View accessibilityRole="radiogroup" accessibilityLabel="Chế độ luyện nói" style={styles.optionGroup}>
+        <Text style={styles.optionHeading}>Cách luyện nói</Text>
+        <View style={styles.optionWrap}>
+          <Option label="Nói có gợi ý" selected={practiceMode === 'guided'} disabled={busy}
+            onPress={() => setPracticeMode('guided')} />
+          <Option label="Tự nói" selected={practiceMode === 'free'} disabled={busy}
+            onPress={() => setPracticeMode('free')} />
+        </View>
+        <Text style={styles.resultCount}>
+          {practiceMode === 'guided'
+            ? 'Khi cần, mở lần lượt ý tưởng, từ vựng rồi câu mẫu cho câu hỏi hiện tại.'
+            : 'Tự trả lời Aoi, không hiện gợi ý trong lúc trò chuyện.'}
+        </Text>
+      </View>
       {!betaWeb || betaAudioWeb ? (
         <Pressable
           accessibilityRole="checkbox"
@@ -277,6 +292,7 @@ function ScenarioPreview({
             role_id: roleId,
             input_mode: betaWeb && !betaLiveWeb ? 'text' : 'voice',
             audio_storage_enabled: (!betaWeb || betaAudioWeb) && saveAudio,
+            practice_mode: practiceMode,
           })
         }
       />
@@ -407,6 +423,11 @@ export function SpeakingScenariosScreen({
       closeChooser();
     }
   }, [selectedId, closeChooser]);
+  const leaveSpeaking = useCallback(() => {
+    if (!canSwitchRef.current || startPending.current) return;
+    if (onExit) onExit();
+    else webRef.current?.navigate('/practice');
+  }, [onExit]);
   const openChooser = useCallback(() => {
     if (!canSwitchRef.current || openingPending.current) return;
     setSelectedId(null);
@@ -548,7 +569,8 @@ export function SpeakingScenariosScreen({
     <View
       style={[
         styles.speakingHeader,
-        { paddingTop: (desktop ? insets.top : 0) + spacing.xxl },
+        desktop ? styles.desktopSpeakingHeader : styles.mobileSpeakingHeader,
+        { paddingTop: desktop ? insets.top + spacing.xxl : spacing.lg },
       ]}
     >
       <View
@@ -561,11 +583,7 @@ export function SpeakingScenariosScreen({
           <ScreenBackHeader
             title="Luyện nói"
             backLabel="Về Luyện tập"
-            onBack={() => {
-              if (!canSwitchRef.current || startPending.current) return;
-              if (onExit) onExit();
-              else webRef.current?.navigate('/practice');
-            }}
+            onBack={leaveSpeaking}
           />
           <Text style={styles.resultCount}>Hội thoại cùng AI</Text>
         </View>
@@ -987,6 +1005,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: layout.screenGutter,
     paddingBottom: spacing.xxl,
   },
+  desktopSpeakingHeader: { paddingHorizontal: spacing.section },
+  mobileSpeakingHeader: { paddingBottom: spacing.lg },
   speakingHeaderContent: {
     width: '100%',
     maxWidth: layout.maxContentWidth,

@@ -1,6 +1,7 @@
 import { LearningLevelContext } from '../src/hooks/useLearningLevel';
 import type { LearningLevel } from '../src/services/learningService';
 import { WebLayoutContext } from '../src/hooks/useWebLayout';
+import { ScreenBackHeader } from '../src/components/ScreenBackHeader';
 import { CharacterView3D } from '../src/components/CharacterView3D';
 import { SpeakingHistory } from '../src/screens/SpeakingHistory';
 import { SpeakingWorkspacePortal } from '../src/components/SpeakingWorkspacePortal';
@@ -95,6 +96,7 @@ const started: StartedSession = {
     status: 'active',
     current_input_mode: 'voice',
     audio_storage_enabled: false,
+    practice_mode: 'guided',
     started_at: '2026-10-01T13:00:00Z',
     accumulated_active_ms: 0,
   },
@@ -200,6 +202,16 @@ test('returns from the speaking library to practice', async () => {
   await press('Về Luyện tập');
   expect(onExit).toHaveBeenCalledTimes(1);
 });
+
+test('keeps the mobile speaking back button below the top bar', async () => {
+  const onExit = jest.fn();
+  await render(false, 'N5', true, false, onExit);
+  const topBar = tree.root.findByProps({ testID: 'mobile-top-bar' });
+  expect(topBar.findAllByType(ScreenBackHeader)).toHaveLength(0);
+  expect(tree.root.findAllByType(ScreenBackHeader)).toHaveLength(1);
+  await press('Về Luyện tập');
+  expect(onExit).toHaveBeenCalledTimes(1);
+});
 function callback(label: string) {
   const node = tree.root.findAll(
     item =>
@@ -290,6 +302,7 @@ test('opens context selection over chat and posts the briefing after starting', 
     role_id: role.id,
     input_mode: 'voice',
     audio_storage_enabled: false,
+    practice_mode: 'guided',
   });
   expect(tree.root.findAllByType(ConversationScreen)).toHaveLength(1);
   expect(screenText()).toContain('Lời mở đầu từ backend');
@@ -306,6 +319,15 @@ test('opens context selection over chat and posts the briefing after starting', 
   await openFirst();
   await press('Bắt đầu trò chuyện');
   expect(speakingService.start).toHaveBeenCalledTimes(2);
+});
+
+test('starts free speaking without hints when selected', async () => {
+  await render();
+  await openFirst();
+  await press('Tự nói');
+  await press('Bắt đầu trò chuyện');
+  expect(speakingService.start).toHaveBeenCalledWith(first.id,
+    expect.objectContaining({ practice_mode: 'free' }));
 });
 
 test('allows enabling audio storage when it is available', async () => {
@@ -478,6 +500,7 @@ test('loads API roles and sends the selected role instead of a hardcoded one', a
     role_id: another.id,
     input_mode: 'voice',
     audio_storage_enabled: false,
+    practice_mode: 'guided',
   });
   expect(screenText()).toContain('Bắt đầu trò chuyện cùng Aoi.');
 });

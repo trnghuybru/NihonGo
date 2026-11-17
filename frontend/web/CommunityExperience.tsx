@@ -78,6 +78,18 @@ function loadProgress(accountId: string): GuideProgress {
   }
 }
 
+function loadDockHidden(accountId: string) {
+  try {
+    return (
+      window.localStorage.getItem(
+        `nihongo.community.dock.hidden.${accountId}`,
+      ) === '1'
+    );
+  } catch {
+    return false;
+  }
+}
+
 function CoffeeIcon() {
   return (
     <svg
@@ -124,6 +136,7 @@ export function CommunityExperience({
   const [position, setPosition] = useState<CSSProperties>({});
   const [dockPosition, setDockPosition] = useState<DockPosition | null>(null);
   const [dockOpen, setDockOpen] = useState(false);
+  const [dockHidden, setDockHidden] = useState(() => loadDockHidden(accountId));
   const dockRef = useRef<HTMLElement>(null);
   const dockDrag = useRef<DockDrag | null>(null);
   const suppressDockClick = useRef(false);
@@ -161,6 +174,18 @@ export function CommunityExperience({
   function openDockItem(kind: 'help' | 'feedback' | 'coffee') {
     setDockOpen(false);
     setOverlay({ kind });
+  }
+  function setDockVisibility(hidden: boolean) {
+    setDockHidden(hidden);
+    setDockOpen(false);
+    try {
+      window.localStorage.setItem(
+        `nihongo.community.dock.hidden.${accountId}`,
+        hidden ? '1' : '0',
+      );
+    } catch {
+      /* Keep the choice for this session if storage is blocked. */
+    }
   }
   function clampDock(left: number, top: number) {
     const width = dockRef.current?.offsetWidth || 48;
@@ -636,128 +661,156 @@ export function CommunityExperience({
     <>
       <aside
         ref={dockRef}
-        className="ng-community-dock"
+        className={`ng-community-dock${dockHidden ? ' is-hidden' : ''}`}
         aria-label="Hướng dẫn, đánh giá và ủng hộ NihonGO"
         style={
           {
             '--ng-bottom-inset': `${bottomInset}px`,
-            ...(dockPosition && {
-              left: dockPosition.left,
-              top: dockPosition.top,
-              right: 'auto',
-              bottom: 'auto',
-            }),
+            ...(!dockHidden &&
+              dockPosition && {
+                left: dockPosition.left,
+                top: dockPosition.top,
+                right: 'auto',
+                bottom: 'auto',
+              }),
           } as CSSProperties
         }
       >
-        <button
-          type="button"
-          className="ng-dock-launcher"
-          aria-label="Mở hướng dẫn, góp ý và ủng hộ. Kéo để di chuyển"
-          aria-expanded={dockOpen}
-          aria-controls="ng-dock-menu"
-          onPointerDown={event => {
-            if (event.pointerType === 'mouse' && event.button !== 0) return;
-            suppressDockClick.current = false;
-            const bounds = dockRef.current?.getBoundingClientRect();
-            if (!bounds) return;
-            dockDrag.current = {
-              pointerId: event.pointerId,
-              startX: event.clientX,
-              startY: event.clientY,
-              left: bounds.left,
-              top: bounds.top,
-              moved: false,
-            };
-            event.currentTarget.setPointerCapture(event.pointerId);
-          }}
-          onPointerMove={event => {
-            const drag = dockDrag.current;
-            if (!drag || drag.pointerId !== event.pointerId) return;
-            const dx = event.clientX - drag.startX;
-            const dy = event.clientY - drag.startY;
-            if (!drag.moved && Math.hypot(dx, dy) < 6) return;
-            drag.moved = true;
-            setDockOpen(false);
-            setDockPosition(clampDock(drag.left + dx, drag.top + dy));
-          }}
-          onPointerUp={event => {
-            if (dockDrag.current?.pointerId !== event.pointerId) return;
-            suppressDockClick.current = dockDrag.current.moved;
-            dockDrag.current = null;
-            event.currentTarget.releasePointerCapture(event.pointerId);
-            window.setTimeout(() => {
-              suppressDockClick.current = false;
-            }, 400);
-          }}
-          onPointerCancel={() => {
-            dockDrag.current = null;
-          }}
-          onClick={() => {
-            if (suppressDockClick.current) {
-              suppressDockClick.current = false;
-              return;
-            }
-            setDockOpen(previous => !previous);
-          }}
-        >
-          {dockOpen ? '×' : '⋯'}
-        </button>
-        {dockOpen ? (
-          <div
-            id="ng-dock-menu"
-            className={`ng-dock-menu ${
-              (dockPosition?.top ?? window.innerHeight) < window.innerHeight / 2
-                ? 'opens-down'
-                : ''
-            } ${
-              dockPosition && dockPosition.left < window.innerWidth / 2
-                ? 'opens-right'
-                : ''
-            }`}
+        {dockHidden ? (
+          <button
+            type="button"
+            className="ng-dock-restore"
+            aria-label="Hiện hướng dẫn, góp ý và ủng hộ"
+            title="Hiện tiện ích"
+            onClick={() => setDockVisibility(false)}
           >
-            <button type="button" onClick={() => openDockItem('help')}>
-              <span className="ng-dock-menu-icon" aria-hidden="true">
-                ?
-              </span>
-              Hướng dẫn
+            ⋯
+          </button>
+        ) : (
+          <>
+            <button
+              type="button"
+              className="ng-dock-launcher"
+              aria-label="Mở hướng dẫn, góp ý và ủng hộ. Kéo để di chuyển"
+              aria-expanded={dockOpen}
+              aria-controls="ng-dock-menu"
+              onPointerDown={event => {
+                if (event.pointerType === 'mouse' && event.button !== 0) return;
+                suppressDockClick.current = false;
+                const bounds = dockRef.current?.getBoundingClientRect();
+                if (!bounds) return;
+                dockDrag.current = {
+                  pointerId: event.pointerId,
+                  startX: event.clientX,
+                  startY: event.clientY,
+                  left: bounds.left,
+                  top: bounds.top,
+                  moved: false,
+                };
+                event.currentTarget.setPointerCapture(event.pointerId);
+              }}
+              onPointerMove={event => {
+                const drag = dockDrag.current;
+                if (!drag || drag.pointerId !== event.pointerId) return;
+                const dx = event.clientX - drag.startX;
+                const dy = event.clientY - drag.startY;
+                if (!drag.moved && Math.hypot(dx, dy) < 6) return;
+                drag.moved = true;
+                setDockOpen(false);
+                setDockPosition(clampDock(drag.left + dx, drag.top + dy));
+              }}
+              onPointerUp={event => {
+                if (dockDrag.current?.pointerId !== event.pointerId) return;
+                suppressDockClick.current = dockDrag.current.moved;
+                dockDrag.current = null;
+                event.currentTarget.releasePointerCapture(event.pointerId);
+                window.setTimeout(() => {
+                  suppressDockClick.current = false;
+                }, 400);
+              }}
+              onPointerCancel={() => {
+                dockDrag.current = null;
+              }}
+              onClick={() => {
+                if (suppressDockClick.current) {
+                  suppressDockClick.current = false;
+                  return;
+                }
+                setDockOpen(previous => !previous);
+              }}
+            >
+              {dockOpen ? '×' : '⋯'}
             </button>
-            <button type="button" onClick={() => openDockItem('feedback')}>
-              <FeedbackIcon /> Góp ý beta
+            {dockOpen ? (
+              <div
+                id="ng-dock-menu"
+                className={`ng-dock-menu ${
+                  (dockPosition?.top ?? window.innerHeight) <
+                  window.innerHeight / 2
+                    ? 'opens-down'
+                    : ''
+                } ${
+                  dockPosition && dockPosition.left < window.innerWidth / 2
+                    ? 'opens-right'
+                    : ''
+                }`}
+              >
+                <button type="button" onClick={() => openDockItem('help')}>
+                  <span className="ng-dock-menu-icon" aria-hidden="true">
+                    ?
+                  </span>
+                  Hướng dẫn
+                </button>
+                <button type="button" onClick={() => openDockItem('feedback')}>
+                  <FeedbackIcon /> Góp ý beta
+                </button>
+                <button type="button" onClick={() => openDockItem('coffee')}>
+                  <CoffeeIcon /> Ủng hộ
+                </button>
+                <button type="button" onClick={() => setDockVisibility(true)}>
+                  Ẩn tiện ích
+                </button>
+              </div>
+            ) : null}
+            <button
+              className="ng-help-trigger"
+              aria-label="Hướng dẫn sử dụng NihonGO"
+              aria-haspopup="dialog"
+              onClick={() => setOverlay({ kind: 'help' })}
+            >
+              ?
             </button>
-            <button type="button" onClick={() => openDockItem('coffee')}>
-              <CoffeeIcon /> Ủng hộ
+            <button
+              type="button"
+              className="ng-feedback-trigger"
+              aria-label="Đánh giá beta và nhận 1 tháng miễn phí khi ra mắt"
+              aria-haspopup="dialog"
+              title="Đánh giá beta · Nhận 1 tháng miễn phí khi ra mắt"
+              onClick={() => setOverlay({ kind: 'feedback' })}
+            >
+              <FeedbackIcon />
+              <span>Góp ý beta</span>
             </button>
-          </div>
-        ) : null}
-        <button
-          className="ng-help-trigger"
-          aria-label="Hướng dẫn sử dụng NihonGO"
-          aria-haspopup="dialog"
-          onClick={() => setOverlay({ kind: 'help' })}
-        >
-          ?
-        </button>
-        <button
-          type="button"
-          className="ng-feedback-trigger"
-          aria-label="Đánh giá beta và nhận 1 tháng miễn phí khi ra mắt"
-          aria-haspopup="dialog"
-          title="Đánh giá beta · Nhận 1 tháng miễn phí khi ra mắt"
-          onClick={() => setOverlay({ kind: 'feedback' })}
-        >
-          <FeedbackIcon />
-          <span>Góp ý beta</span>
-        </button>
-        <button
-          className="ng-coffee-trigger"
-          aria-label="Mời mình một ly cà phê"
-          aria-haspopup="dialog"
-          onClick={() => setOverlay({ kind: 'coffee' })}
-        >
-          <CoffeeIcon />
-          <span>Mời mình ly cà phê</span>
-        </button>
+            <button
+              className="ng-coffee-trigger"
+              aria-label="Mời mình một ly cà phê"
+              aria-haspopup="dialog"
+              onClick={() => setOverlay({ kind: 'coffee' })}
+            >
+              <CoffeeIcon />
+              <span>Mời mình ly cà phê</span>
+            </button>
+            <button
+              type="button"
+              className="ng-dock-hide"
+              aria-label="Ẩn tiện ích"
+              title="Ẩn tiện ích"
+              onClick={() => setDockVisibility(true)}
+            >
+              ×
+            </button>
+          </>
+        )}
       </aside>
       {opened
         ? createPortal(

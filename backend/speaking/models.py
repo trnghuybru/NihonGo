@@ -124,6 +124,10 @@ class ConversationMessage(UpdatedMixin, db.Model):
     feedback_started_at = timestamp(nullable=True)
     feedback_error = db.Column(sa.Text)
     feedback_model = db.Column(sa.String(200))
+    hint_payload = db.Column(sa.JSON().with_variant(JSONB(), "postgresql"))
+    hint_attempt_id = db.Column(sa.Uuid(as_uuid=False))
+    hint_started_at = timestamp(nullable=True)
+    hint_used_level = db.Column(sa.Integer, nullable=False, server_default="0")
     __table_args__ = (
         sa.UniqueConstraint("session_id", "sequence_number", name="uq_message_sequence"),
         sa.UniqueConstraint("session_id", "id", name="uq_message_parent"),
