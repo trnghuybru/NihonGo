@@ -16,13 +16,14 @@ trap 'rm -f "$temporary"' EXIT
 COPYFILE_DISABLE=1 tar --no-xattrs -C "$root" -czf "$temporary" \
   --exclude='backend/.env' --exclude='backend/.env.*' \
   --exclude='backend/venv' --exclude='backend/.runtime' \
+  --exclude='backend/backups' \
   --exclude='backend/data' --exclude='backend/tests' \
   --exclude='backend/models/translation' \
   --exclude='deploy/beta/secrets' \
   --exclude='__pycache__' --exclude='*.pyc' \
   compose.beta.yaml deploy/beta backend frontend/dist-web frontend/src/assets/characters
 
-if tar -tzf "$temporary" | grep -E '(^|/)\.env($|\.)|^backend/(venv|data|tests)/|^backend/models/translation/|^deploy/beta/secrets/.*\.(json|yaml)$' > /dev/null; then
+if tar -tzf "$temporary" | grep -E '(^|/)\.env($|\.)|^backend/(backups|venv|data|tests)/|^backend/models/translation/|^deploy/beta/secrets/.*\.(json|yaml)$' > /dev/null; then
   echo "Bundle contains a prohibited path" >&2
   exit 1
 fi
