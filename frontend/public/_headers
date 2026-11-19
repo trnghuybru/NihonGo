@@ -1,0 +1,16 @@
+# Revalidate HTML, SPA fallback routes, service worker and unhashed public files.
+/*
+  Cache-Control: public, max-age=0, must-revalidate
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: DENY
+
+# Vite fingerprints every asset in this directory. Detach the broad rule first.
+/assets/*
+  ! Cache-Control
+  Cache-Control: public, max-age=31536000, immutable
+
+# Zone browser-cache defaults must not keep the retired service worker alive.
+/sw.js
+  ! Cache-Control
+  Cache-Control: no-store
