@@ -9,3 +9,8 @@
 /assets/*
   ! Cache-Control
   Cache-Control: public, max-age=31536000, immutable
+
+# Zone browser-cache defaults must not keep the retired service worker alive.
+/sw.js
+  ! Cache-Control
+  Cache-Control: no-store
