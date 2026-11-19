@@ -19,6 +19,16 @@
     }
 }
 
+api.momonihongo.app {
+    encode zstd gzip
+    reverse_proxy backend:5001
+    header {
+        X-Content-Type-Options nosniff
+        Referrer-Policy strict-origin-when-cross-origin
+        X-Frame-Options DENY
+    }
+}
+
 voice.momonihongo.app {
     reverse_proxy livekit:7880
     header X-Content-Type-Options nosniff

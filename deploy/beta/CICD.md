@@ -34,7 +34,25 @@ Lệnh triển khai trên VPS kiểm tra thành phần gói, sao lưu PostgreSQL
 - Kiểm tra dịch vụ: `cd /opt/momonihongo && docker compose --env-file backend/.env -f compose.beta.yaml ps`.
 - CI không thay thế việc sao bản backup ra ngoài VPS; `daily_backup.sh` vẫn chạy và bản sao Mac cần cập nhật định kỳ.
 
-## Kho bản thu
+## API origin riêng (Đợt 2)
+
+Frontend web được build với `VITE_API_ORIGIN=https://api.momonihongo.app`.
+Giá trị là origin HTTPS, không có `/api`, query hoặc credentials. Bỏ trống giữ
+same-origin để rollback hoặc chạy Vite proxy local. Socket.IO, Gemini Live và
+nhân vật 3D cùng dùng API origin; link chia sẻ/phát YouTube vẫn dùng origin web.
+
+DNS `api` A trỏ cùng VPS; Caddy phục vụ hostname API qua HTTPS và giữ nguyên
+`/api/*`, `/static/*`, `/socket.io/*` trên domain website trong thời gian chuyển.
+Trước khi deploy frontend, đặt `APP_CORS_ORIGINS` và `GAME_SOCKET_ORIGINS` thành
+danh sách origin chính xác, gồm `https://momonihongo.app` (không wildcard preview).
+Giữ `PUBLIC_BASE_URL`/`WEB_BASE_URL=https://momonihongo.app` để không đổi callback
+OAuth đã đăng ký hoặc URL website. R2/Brevo và `voice.momonihongo.app` giữ nguyên.
+Khi thêm Pages preview sau này, thêm đúng origin preview vào CORS, Socket.IO,
+Live gateway và R2 CORS trước khi thử upload; không mở toàn bộ `*.pages.dev`.
+
+Gói code loại `backend/backups`; không upload backup hoặc credentials vào release.
+
+## Kho bản thu (cấu hình hiện có)
 
 `AUDIO_LOCAL_ROOT=/audio` dùng volume cũ; giá trị rỗng dùng bucket S3/R2 riêng tư.
 Compose giữ giá trị rỗng thay vì tự chuyển về local. `configure_r2.py` chỉ chuẩn bị

@@ -60,6 +60,7 @@ jobs:
       - name: Build beta web
         run: npm run web:build
         env:
+          VITE_API_ORIGIN: 'https://api.momonihongo.app'
           VITE_BETA_MODE: 'true'
           VITE_BETA_LIVE_MODE: 'true'
           VITE_BETA_AUDIO_STORAGE_MODE: 'true'
@@ -89,6 +90,7 @@ jobs:
         run: npm run web:build
         working-directory: frontend
         env:
+          VITE_API_ORIGIN: 'https://api.momonihongo.app'
           VITE_BETA_MODE: 'true'
           VITE_BETA_LIVE_MODE: 'true'
           VITE_BETA_AUDIO_STORAGE_MODE: 'true'
