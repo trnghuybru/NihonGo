@@ -64,3 +64,15 @@ không chuyển các phiên đã xoá và không xoá bản gốc. Sau khi xác 
 `backup_audio.sh` lấy âm thanh từ kho đang được chọn, bao gồm cả R2.
 Bucket cần CORS trong `r2-cors.json`; không bật public access. Các URL nghe/tải
 lên vẫn có chữ ký và thời hạn, quyền sở hữu vẫn kiểm tra trong app.
+
+## Frontend Cloudflare Pages
+
+Push `staging` dùng cùng workflow beta: backend/frontend CI → một build web →
+artifact `beta-web-<sha>` → deploy VPS → deploy Pages. Job Pages chỉ publish sau
+backend healthy; khi Pages lỗi, trạng thái job riêng báo lỗi, không rollback DB.
+Hai đích nhận cùng artifact đã kiểm tra, không build frontend lần hai khi deploy.
+
+Thiết lập secret `CLOUDFLARE_API_TOKEN` trong repository Actions với quyền Pages
+Edit, giới hạn account. Không cần DNS Edit/Workers hoặc token trên máy VPS.
+Chi tiết và rollback xem [PAGES.md](PAGES.md). Chỉ push staging tự publish;
+develop/pull request không deploy. Artifact giữ 3 ngày để re-run job thất bại.

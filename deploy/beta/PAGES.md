@@ -5,6 +5,27 @@ API, PostgreSQL, workers và LiveKit tiếp tục ở VPS. Dựng frontend từ 
 
 ## Build và deploy
 
+Push `staging` tự chạy CI backend/frontend, build frontend một lần rồi lưu artifact
+`beta-web-<sha>`. Job `deploy` đưa cùng artifact lên VPS; khi backend healthy,
+job `deploy-pages` upload đúng artifact đó lên project `momonihongo-web` (production
+branch `staging`). Develop và pull request chỉ kiểm thử, không publish Pages.
+
+Repository Actions cần secret `CLOUDFLARE_API_TOKEN`: token riêng của CI có quyền
+Account → Cloudflare Pages → Edit, giới hạn account hiện tại. Account ID không phải
+secret, đã đặt trong workflow. Không cấp Workers/DNS Edit và không dùng token tạm
+đã thu hồi. Khi token hết hạn hoặc xoay token, cập nhật secret cùng tên.
+
+Pages chỉ publish sau khi deploy VPS đạt để tránh frontend mới gọi backend chưa
+sẵn sàng. Hai job có trạng thái riêng; thiếu token làm job Pages báo lỗi rõ ràng,
+không khẳng định frontend mới đã được publish. Re-run failed jobs sau khi sửa
+secret sẽ dùng lại artifact đã kiểm tra (lưu 3 ngày); quá hạn cần chạy lại toàn bộ
+workflow. Tránh re-run một revision cũ sau khi đã có revision mới hơn lên production.
+
+Sau upload, `verify_pages_deployment.py` so SHA-256 HTML/JS/CSS public với artifact,
+kiểm tra SPA/cache/sw.js và proxy API trên cả pages.dev/domain thật. Không tự
+rollback database nếu bước này lỗi. Có thể rollback Pages bằng bản deployment
+trước trong dashboard; VPS vẫn giữ cùng bản frontend để phục hồi.
+
 Trong `frontend/`, Node 22.11 trở lên:
 
 ```sh

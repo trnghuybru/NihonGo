@@ -55,6 +55,8 @@ jobs:
           cache: npm
           cache-dependency-path: frontend/package-lock.json
       - run: npm ci
+      - name: Test Pages compatibility routes
+        run: node --test ../deploy/beta/test_pages_proxy.mjs
       - run: npx tsc --noEmit
       - run: npm test -- --runInBand --watch=false --silent
       - name: Build beta web
@@ -65,6 +67,16 @@ jobs:
           VITE_BETA_LIVE_MODE: 'true'
           VITE_BETA_AUDIO_STORAGE_MODE: 'true'
           VITE_BETA_GAMES_MODE: 'true'
+          VITE_BETA_SPEAKING_MODE: 'true'
+
+      - name: Save verified frontend build
+        if: github.event_name == 'push' && github.ref == 'refs/heads/staging'
+        uses: actions/upload-artifact@v4
+        with:
+          name: beta-web-${{ github.sha }}
+          path: frontend/dist-web/
+          if-no-files-found: error
+          retention-days: 3
 
   deploy:
     if: github.event_name == 'push' && github.ref == 'refs/heads/staging'
@@ -78,22 +90,11 @@ jobs:
       BETA_DEPLOY_PRIVATE_KEY: ${{ secrets.BETA_DEPLOY_PRIVATE_KEY }}
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: Restore verified frontend build
+        uses: actions/download-artifact@v4
         with:
-          node-version: '22.11.0'
-          cache: npm
-          cache-dependency-path: frontend/package-lock.json
-      - run: npm ci
-        working-directory: frontend
-      - name: Build beta web
-        run: npm run web:build
-        working-directory: frontend
-        env:
-          VITE_API_ORIGIN: 'https://api.momonihongo.app'
-          VITE_BETA_MODE: 'true'
-          VITE_BETA_LIVE_MODE: 'true'
-          VITE_BETA_AUDIO_STORAGE_MODE: 'true'
-          VITE_BETA_GAMES_MODE: 'true'
+          name: beta-web-${{ github.sha }}
+          path: frontend/dist-web
       - name: Pack and upload release
         shell: bash
         run: |
@@ -115,3 +116,50 @@ jobs:
             "$bundle" "nihongo-deploy@178.238.231.247:/home/nihongo-deploy/incoming/${GITHUB_SHA}.tar.gz"
           ssh "${ssh_args[@]}" nihongo-deploy@178.238.231.247 \
             sudo -n /usr/local/sbin/nihongo-deploy "$GITHUB_SHA" "$digest"
+
+  deploy-pages:
+    name: Deploy Cloudflare Pages
+    if: github.event_name == 'push' && github.ref == 'refs/heads/staging'
+    # Publish the frontend only after the matching backend is healthy.
+    needs: [backend, frontend, deploy]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    concurrency:
+      group: nihongo-cloudflare-pages
+      cancel-in-progress: false
+    env:
+      CLOUDFLARE_ACCOUNT_ID: 8c6046bc2e034afe2a4f105ee0e1a618
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      WRANGLER_SEND_METRICS: 'false'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.11.0'
+      - name: Check Pages credentials
+        shell: bash
+        run: |
+          if [[ -z "$CLOUDFLARE_API_TOKEN" ]]; then
+            echo '::error::Add CLOUDFLARE_API_TOKEN with Cloudflare Pages Edit permission to repository Actions secrets.'
+            exit 1
+          fi
+      - name: Restore verified frontend build
+        uses: actions/download-artifact@v4
+        with:
+          name: beta-web-${{ github.sha }}
+          path: frontend/dist-web
+      - name: Deploy verified build to Pages
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ env.CLOUDFLARE_ACCOUNT_ID }}
+          wranglerVersion: '4.165.0'
+          command: pages deploy frontend/dist-web --project-name=momonihongo-web --branch=staging --commit-hash=${{ github.sha }} --commit-dirty=false
+      - name: Verify public Pages frontend and compatibility API
+        run: python3 deploy/beta/verify_pages_deployment.py --directory frontend/dist-web
+      - name: Record deployed revision
+        shell: bash
+        run: |
+          echo '### Cloudflare Pages deployed' >> "$GITHUB_STEP_SUMMARY"
+          echo 'Revision: `${{ github.sha }}`' >> "$GITHUB_STEP_SUMMARY"
+          echo '[momonihongo.app](https://momonihongo.app)' >> "$GITHUB_STEP_SUMMARY"
