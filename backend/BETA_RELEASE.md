@@ -4,6 +4,8 @@
 
 **16/11/2026:** Danh sách mời hỗ trợ tối đa 55 email để nhận thêm người thử nghiệm mà không thu hồi các lời mời hiện có. Giới hạn tài khoản beta vẫn là 50.
 
+**20/11/2026:** Đăng ký công khai với `BETA_REGISTRATION_MODE=open`, `BETA_ACCOUNT_LIMIT=200`. Đếm toàn bộ dòng tài khoản trong `users`, kể cả tài khoản hiện có và bị vô hiệu hóa; yêu cầu OTP chưa tạo tài khoản không giữ chỗ. Chặn đăng ký mới khi đủ 200, kiểm tra lại dưới khóa giao dịch PostgreSQL khi xác minh. Đăng nhập/refresh của người đã có tài khoản tiếp tục hoạt động. Danh sách `BETA_INVITE_EMAILS` được giữ riêng trên VPS, tối đa 200 email, chỉ dùng để tham khảo trong chế độ mở; không giữ chỗ hoặc vượt giới hạn. Để quay lại chế độ mời, đặt `BETA_REGISTRATION_MODE=invite` rồi tạo lại các dịch vụ ứng dụng.
+
 ## Quota theo ngày
 
 - `beta_daily_quotas` lưu một `video_id` và số phiên Live cho từng người/ngày theo `Asia/Ho_Chi_Minh`.

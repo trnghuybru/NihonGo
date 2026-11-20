@@ -17,7 +17,21 @@ jobs:
   backend:
     runs-on: ubuntu-24.04
     timeout-minutes: 30
+    services:
+      postgres:
+        image: postgres:17-alpine
+        env:
+          POSTGRES_PASSWORD: test-password
+          POSTGRES_DB: nihongo_test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres -d nihongo_test"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 12
     env:
+      TEST_DATABASE_URL: postgresql+psycopg://postgres:test-password@localhost:5432/nihongo_test
       GAME_REDIS_URL: ''
       GAME_TIMERS_ENABLED: '0'
       HANDWRITING_CHECKPOINT: /nonexistent
@@ -39,7 +53,7 @@ jobs:
       - name: Validate backend
         run: |
           python -m compileall -q backend
-          python -m unittest tests.test_beta_daily tests.test_beta_ai tests.test_gemini_live_gateway tests.test_local_audio_storage tests.test_games tests.test_game_speech tests.test_shadowing tests.test_translation tests.test_speaking_ai tests.test_writing tests.test_writing_rubric -q
+          python -m unittest tests.test_auth tests.test_beta_env tests.test_beta_daily tests.test_beta_ai tests.test_gemini_live_gateway tests.test_local_audio_storage tests.test_games tests.test_game_speech tests.test_shadowing tests.test_translation tests.test_speaking_ai tests.test_writing tests.test_writing_rubric -q
 
   frontend:
     runs-on: ubuntu-24.04

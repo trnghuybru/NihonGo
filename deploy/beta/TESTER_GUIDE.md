@@ -2,7 +2,7 @@
 
 **Thời gian thử:** 14 ngày kể từ lần đầu dùng AI. Mỗi tài khoản có 2 USD ngân sách AI riêng, hiển thị tại trang **Cá nhân**. Đây là ngân sách dùng thử, không phải khoản tiền cần thanh toán.
 
-1. Mở đường link beta do nhóm gửi, đăng ký bằng **đúng email đã được mời**, nhập mã xác minh nhận qua email rồi đăng nhập.
+1. Mở đường link beta do nhóm gửi, đăng ký bằng email của bạn khi đợt beta chưa đủ **200 tài khoản**, nhập mã xác minh nhận qua email rồi đăng nhập.
 2. Thử **Từ vựng/Tra cứu**: tìm một từ tiếng Nhật và mở chi tiết; học một bài trong giáo trình.
 3. Thử **Đọc**: chọn một bài, trả lời câu hỏi và mở phần giải thích.
 4. Thử **Viết**: nộp một đoạn ngắn, xem điểm và góp ý. Mỗi lần tạo nhận xét AI có thể trừ ví; xem số dư tại trang Cá nhân.
