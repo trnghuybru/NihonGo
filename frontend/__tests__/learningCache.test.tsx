@@ -1,3 +1,4 @@
+import { onlineManager } from '@tanstack/react-query';
 import React from 'react';
 import Renderer, { act } from 'react-test-renderer';
 import { useRemoteResource } from '../src/hooks/useSpeakingScenarios';
@@ -7,6 +8,22 @@ import {
 } from '../src/services/learningCache';
 
 const trees: Renderer.ReactTestRenderer[] = [];
+test('a request paused while offline resumes after reconnecting', async () => {
+  onlineManager.setOnline(false);
+  const load = jest.fn().mockResolvedValue('reconnected words');
+  try {
+    const resource = await mount(load);
+    expect(load).not.toHaveBeenCalled();
+    await act(async () => {
+      onlineManager.setOnline(true);
+    });
+    await settle();
+    expect(load).toHaveBeenCalledTimes(1);
+    expect(resource.states.at(-1)).toBe('reconnected words');
+  } finally {
+    onlineManager.setOnline(true);
+  }
+});
 async function settle() {
   await act(async () => {
     await new Promise(resolve => setTimeout(resolve, 15));

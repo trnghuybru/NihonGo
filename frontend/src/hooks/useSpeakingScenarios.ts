@@ -38,6 +38,12 @@ export function useRemoteResource<T>(
     learningCacheScope.snapshot,
   );
   const cached = Boolean(cacheKey);
+  // This hook also runs outside a provider (native screens and embedded lessons).
+  // Mount the shared client so paused requests resume when connectivity returns.
+  useEffect(() => {
+    learningQueryClient.mount();
+    return () => learningQueryClient.unmount();
+  }, []);
   const query = useQuery(
     {
       queryKey: ['learning-content', scope, ...(cacheKey ?? ['disabled'])],
