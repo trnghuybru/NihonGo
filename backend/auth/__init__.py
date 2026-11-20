@@ -43,12 +43,13 @@ def init_auth(app):
             raise RuntimeError("Production SMTP requires TLS.")
         if not app.config["PUBLIC_BASE_URL"].startswith("https://"):
             raise RuntimeError("Production requires an HTTPS PUBLIC_BASE_URL.")
-        from .beta import enabled as beta_enabled
+        from .beta import admission_settings, enabled as beta_enabled
         if not beta_enabled():
             raise RuntimeError("Production beta requires BETA_MODE=true.")
         invites = {item.strip().lower() for item in os.getenv("BETA_INVITE_EMAILS", "").split(",") if item.strip()}
-        if not 1 <= len(invites) <= 55:
-            raise RuntimeError("Production beta requires 1–55 invited emails.")
+        mode, _maximum = admission_settings()
+        if len(invites) > 200 or (mode == "invite" and not invites):
+            raise RuntimeError("Production beta supports up to 200 invited emails; invite mode requires at least one.")
         from beta_daily.service import daily_mode
         if not daily_mode() and not os.getenv("BETA_GEMINI_PRICES_JSON", "").strip():
             raise RuntimeError("Production beta requires BETA_GEMINI_PRICES_JSON.")

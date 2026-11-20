@@ -114,7 +114,7 @@ def register():
         raise AuthError("Tên cần từ 2 đến 100 ký tự.")
     normalized_email, normalized_phone = email(string(data, "email")), phone(string(data, "phone", 32))
     from .beta import check_invite
-    check_invite(normalized_email)
+    check_invite(normalized_email, registering=True)
     limit("register-email", normalized_email, 5, 3600)
     limit("register-phone", normalized_phone, 5, 3600)
     payload = {"name": name, "email": normalized_email, "phone": normalized_phone}

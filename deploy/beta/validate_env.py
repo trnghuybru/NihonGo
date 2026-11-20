@@ -4,7 +4,7 @@ import re
 import sys
 from pathlib import Path
 
-MAX_INVITES = 55
+MAX_INVITES = 200
 
 
 def main(path: Path) -> int:
@@ -86,9 +86,20 @@ def main(path: Path) -> int:
     if games == "true":
         for key in ("LIVEKIT_URL", "LIVEKIT_PUBLIC_URL", "LIVEKIT_API_KEY", "LIVEKIT_API_SECRET"):
             required(key)
-    invites = [email.strip().lower() for email in required("BETA_INVITE_EMAILS").split(",")]
-    if not 1 <= len(set(invites)) <= MAX_INVITES or any(not re.fullmatch(r"[^\s@]+@[^\s@]+\.[^\s@]+", email) for email in invites):
-        errors.append(f"BETA_INVITE_EMAILS needs 1-{MAX_INVITES} distinct valid email addresses")
+    registration = values.get("BETA_REGISTRATION_MODE", "invite").strip().lower()
+    if registration not in {"invite", "open"}:
+        errors.append("BETA_REGISTRATION_MODE must be invite or open")
+    try:
+        if int(values.get("BETA_ACCOUNT_LIMIT", "200" if registration == "open" else "50")) < 1:
+            raise ValueError()
+    except ValueError:
+        errors.append("BETA_ACCOUNT_LIMIT must be a positive integer")
+    raw_invites = required("BETA_INVITE_EMAILS") if registration == "invite" else values.get("BETA_INVITE_EMAILS", "")
+    invites = [email.strip().lower() for email in raw_invites.split(",") if email.strip()]
+    if ((registration == "invite" and not invites)
+            or len(invites) != len(set(invites)) or len(invites) > MAX_INVITES
+            or any(not re.fullmatch(r"[^\s@,]+@[^\s@,]+\.[^\s@,]+", email) for email in invites)):
+        errors.append(f"BETA_INVITE_EMAILS needs at most {MAX_INVITES} distinct valid email addresses")
     if quota_mode == "usd":
         try:
             prices = json.loads(required("BETA_GEMINI_PRICES_JSON"))

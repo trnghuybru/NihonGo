@@ -310,6 +310,61 @@ class AuthTests(unittest.TestCase):
             statuses = sorted(executor.map(verify, range(2)))
         self.assertEqual(statuses, [201, 400])
 
+    def add_beta_accounts(self, count):
+        db.session.add_all(User(id=f"beta-{index}", name="Existing beta",
+                                email=f"outside-{index}@example.com", phone="",
+                                email_verified=True, active=False)
+                           for index in range(count))
+        db.session.commit()
+
+    @patch.dict(os.environ, {"BETA_MODE": "true", "BETA_REGISTRATION_MODE": "open",
+                             "BETA_ACCOUNT_LIMIT": "200", "BETA_INVITE_EMAILS": ""})
+    def test_public_beta_final_seat_checks_again_at_verification(self):
+        self.add_beta_accounts(199)
+        first, first_code = self.register()
+        second, second_code = self.register(email="next@example.com", phone="0987654321")
+        self.assertEqual(db.session.query(User).count(), 199)  # OTP reserves no seat.
+        self.assertEqual(self.post("/verify", {"challenge_id": first, "code": first_code}).status_code, 201)
+        rejected = self.post("/verify", {"challenge_id": second, "code": second_code})
+        self.assertEqual(rejected.json["code"], "beta_full")
+        self.assertEqual(rejected.status_code, 403)
+        sent = len(self.sent)
+        rejected = self.post("/register", {**REGISTER, "email": "third@example.com"})
+        self.assertEqual(rejected.json["code"], "beta_full")
+        self.assertEqual(len(self.sent), sent)
+        self.assertEqual(db.session.query(User).count(), 200)
+
+    @patch.dict(os.environ, {"BETA_MODE": "true", "BETA_REGISTRATION_MODE": "open",
+                             "BETA_ACCOUNT_LIMIT": "200", "BETA_INVITE_EMAILS": ""})
+    def test_full_public_beta_keeps_login_refresh_and_api_access(self):
+        self.signup()
+        self.add_beta_accounts(199)
+        login = self.post("/login", {"identifier": REGISTER["email"], "password": PASSWORD})
+        self.assertEqual(login.status_code, 200, login.json)
+        self.assertEqual(self.client.get("/api/auth/me", headers={
+            "Authorization": "Bearer " + login.json["access_token"]}).status_code, 200)
+        refreshed = self.post("/refresh", {"refresh_token": login.json["refresh_token"]})
+        self.assertEqual(refreshed.status_code, 200, refreshed.json)
+        self.assertEqual(db.session.query(User).count(), 200)
+
+    @patch.dict(os.environ, {"BETA_MODE": "true", "BETA_REGISTRATION_MODE": "open",
+                             "BETA_ACCOUNT_LIMIT": "200", "BETA_INVITE_EMAILS": ""})
+    def test_concurrent_public_beta_verifications_cannot_exceed_200(self):
+        if not self.url.startswith("postgresql"):
+            self.skipTest("PostgreSQL final-seat concurrency test")
+        self.add_beta_accounts(199)
+        first = self.register()
+        second = self.register(email="next@example.com", phone="0987654321")
+        def verify(challenge):
+            with self.app.test_client() as client:
+                response = client.post("/api/auth/verify", json={
+                    "challenge_id": challenge[0], "code": challenge[1]})
+                return response.status_code
+        with ThreadPoolExecutor(max_workers=2) as executor:
+            statuses = sorted(executor.map(verify, [first, second]))
+        self.assertEqual(statuses, [201, 403])
+        self.assertEqual(db.session.query(User).count(), 200)
+
 
 if __name__ == "__main__":
     unittest.main()
