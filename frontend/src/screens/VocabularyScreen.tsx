@@ -526,7 +526,14 @@ function VocabularyContent({
       items: search.items.map(word => ({ id: word.id, kind: 'word', word })),
     };
   }, [level, route]);
-  const { state, reload } = useRemoteResource(load);
+  const { state, reload } = useRemoteResource(
+    load,
+    route.kind === 'catalog'
+      ? ['vocabulary', 'catalog', level]
+      : route.kind === 'words'
+      ? ['vocabulary', 'lesson', level, route.lesson.id]
+      : undefined,
+  );
   const stopAudio = audio.stop;
   useEffect(() => {
     if (!active || quickLookupOpen) stopAudio();

@@ -57,3 +57,16 @@ jest.mock('./src/services/gameAudio', () => ({
     close: jest.fn().mockResolvedValue(undefined),
   })),
 }));
+
+// Flush query notifications inside React's async act, without timer races.
+require('@tanstack/react-query').notifyManager.setScheduler(queueMicrotask);
+beforeEach(() => {
+  const client = require('./src/services/learningCache').learningQueryClient;
+  client.setDefaultOptions({
+    queries: { ...client.getDefaultOptions().queries, gcTime: Infinity },
+  });
+  client.clear();
+});
+afterEach(() => {
+  require('./src/services/learningCache').learningQueryClient.clear();
+});

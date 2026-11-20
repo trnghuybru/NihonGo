@@ -1,4 +1,15 @@
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useQuery, type QueryKey } from '@tanstack/react-query';
+import {
+  learningQueryClient,
+  learningCacheScope,
+} from '../services/learningCache';
+import {
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
+  useSyncExternalStore,
+} from 'react';
 import {
   ScenarioFilters,
   ScenarioList,
@@ -17,11 +28,29 @@ export function errorMessage(error: unknown): string {
 }
 
 /** Ignore responses from an older selection or an unmounted screen. */
-export function useRemoteResource<T>(load: () => Promise<T>) {
+export function useRemoteResource<T>(
+  load: () => Promise<T>,
+  cacheKey?: QueryKey,
+) {
+  const scope = useSyncExternalStore(
+    learningCacheScope.subscribe,
+    learningCacheScope.snapshot,
+    learningCacheScope.snapshot,
+  );
+  const cached = Boolean(cacheKey);
+  const query = useQuery(
+    {
+      queryKey: ['learning-content', scope, ...(cacheKey ?? ['disabled'])],
+      queryFn: load,
+      enabled: cached,
+    },
+    learningQueryClient,
+  );
   const [state, setState] = useState<RemoteState<T>>({ status: 'loading' });
   const [attempt, setAttempt] = useState(0);
   const reload = useCallback(() => setAttempt(value => value + 1), []);
   useEffect(() => {
+    if (cached) return;
     let active = true;
     setState({ status: 'loading' });
     load().then(
@@ -35,7 +64,20 @@ export function useRemoteResource<T>(load: () => Promise<T>) {
     return () => {
       active = false;
     };
-  }, [load, attempt]);
+  }, [load, attempt, cached]);
+  const { refetch } = query;
+  const refreshCached = useCallback(() => {
+    refetch();
+  }, [refetch]);
+  if (cached) {
+    const cachedState: RemoteState<T> =
+      query.data !== undefined
+        ? { status: 'ready', data: query.data }
+        : query.isError
+        ? { status: 'error', message: errorMessage(query.error) }
+        : { status: 'loading' };
+    return { state: cachedState, reload: refreshCached };
+  }
   return { state, reload };
 }
 

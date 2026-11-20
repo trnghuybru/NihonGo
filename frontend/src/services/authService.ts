@@ -1,3 +1,4 @@
+import { setLearningCacheAccount } from './learningCache';
 import { Linking, Platform } from 'react-native';
 import * as Keychain from 'react-native-keychain';
 import { apiRequest, ApiError } from './apiClient';
@@ -103,12 +104,14 @@ async function accept(tokens: Tokens): Promise<User> {
     );
     throw error;
   }
+  setLearningCacheAccount(tokens.user.id);
   session = tokens;
   notify();
   return tokens.user;
 }
 
 async function clearSession() {
+  setLearningCacheAccount(null);
   await setReminderAccount(null).catch(() => undefined);
   await Keychain.resetGenericPassword({ service: SESSION_SERVICE });
   session = null;
@@ -202,6 +205,7 @@ export const authService = {
       if (!parsed.access_token || !parsed.refresh_token || !parsed.user?.id) {
         throw new Error('Invalid session');
       }
+      setLearningCacheAccount(parsed.user.id);
       session = parsed;
     } catch {
       await clearSession();
@@ -209,6 +213,7 @@ export const authService = {
     }
     try {
       const result = await authorized<{ user: User }>('/me');
+      setLearningCacheAccount(result.user.id);
       session = { ...session!, user: result.user };
       notify();
       return result.user;
