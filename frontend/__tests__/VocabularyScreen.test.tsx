@@ -555,9 +555,7 @@ test('video pagination requests a cursor and retry keeps the video query', async
     })
     .mockRejectedValueOnce(new Error('Mất kết nối'));
   await render('人生');
-  await act(async () =>
-    button('Ví dụ khác').props.onPress(),
-  );
+  await act(async () => button('Ví dụ khác').props.onPress());
   expect(videoExamplesService.search).toHaveBeenCalledWith('人生', 'next');
   expect(contents()).toContain('Mất kết nối');
   expect(tree.root.findAllByType(VideoExamplePlayer)).toHaveLength(0);
@@ -676,4 +674,20 @@ test('desktop video lookup separates player and results, and stacks again on nar
     await act(async () => tree.unmount());
     platform.restore();
   }
+});
+
+test('revisiting levels and lessons uses cached content without more API calls', async () => {
+  await render();
+  await openLesson();
+  expect(contents()).toContain('人生');
+  await press('Quay lại');
+  await openLesson();
+  expect(contents()).toContain('人生');
+  expect(vocabularyService.lesson).toHaveBeenCalledTimes(1);
+  await press('Quay lại');
+  await press('JLPT N1');
+  await press('JLPT N2');
+  expect(button('Mở Bài 1')).toBeDefined();
+  expect(vocabularyService.textbooks).toHaveBeenCalledTimes(2);
+  expect(vocabularyService.textbook).toHaveBeenCalledTimes(1);
 });

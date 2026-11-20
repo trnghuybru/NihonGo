@@ -102,7 +102,10 @@ export function ReadingScreen({
     () => (id ? readingService.passage(id) : Promise.resolve(null)),
     [id],
   );
-  const catalog = useRemoteResource(catalogLoad),
+  const catalog = useRemoteResource(
+      catalogLoad,
+      !id ? ['reading', 'catalog', accountId, level, type, q, page] : undefined,
+    ),
     detail = useRemoteResource(detailLoad);
   const [showFurigana, setShowFurigana] = useState(true);
   const preferenceTouched = useRef(false);
