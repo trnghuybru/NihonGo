@@ -31,7 +31,6 @@ jobs:
           --health-timeout 5s
           --health-retries 12
     env:
-      TEST_DATABASE_URL: postgresql+psycopg://postgres:test-password@localhost:5432/nihongo_test
       GAME_REDIS_URL: ''
       GAME_TIMERS_ENABLED: '0'
       HANDWRITING_CHECKPOINT: /nonexistent
@@ -53,7 +52,11 @@ jobs:
       - name: Validate backend
         run: |
           python -m compileall -q backend
-          python -m unittest tests.test_auth tests.test_beta_env tests.test_beta_daily tests.test_beta_ai tests.test_gemini_live_gateway tests.test_local_audio_storage tests.test_games tests.test_game_speech tests.test_shadowing tests.test_translation tests.test_speaking_ai tests.test_writing tests.test_writing_rubric -q
+          python -m unittest tests.test_beta_env tests.test_beta_daily tests.test_beta_ai tests.test_gemini_live_gateway tests.test_local_audio_storage tests.test_games tests.test_game_speech tests.test_shadowing tests.test_translation tests.test_speaking_ai tests.test_writing tests.test_writing_rubric -q
+      - name: Validate authentication and final beta seat on PostgreSQL
+        env:
+          TEST_DATABASE_URL: postgresql+psycopg://postgres:test-password@localhost:5432/nihongo_test
+        run: python -m unittest tests.test_auth -q
 
   frontend:
     runs-on: ubuntu-24.04
