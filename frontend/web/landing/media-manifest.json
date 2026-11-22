@@ -1,0 +1,27 @@
+{
+  "capturedOn": "2026-11-21",
+  "content": "Real NihonGO application screens rendered with synthetic demonstration data. No real account, token or private content is included.",
+  "web": {
+    "renderer": "Chrome, 1440 × 1000 viewport, development application with local API fixtures",
+    "screens": {
+      "web-home.webp": "HomeScreen inside AuthenticatedScreen.web",
+      "web-vocabulary.webp": "VocabularyScreen, lesson detail",
+      "web-shadowing.webp": "ShadowingScreen, sample lesson with Japanese captions",
+      "web-speaking.webp": "SpeakingScenariosScreen, scenario chooser",
+      "web-reading.webp": "ReadingScreen, passage and comprehension questions",
+      "web-writing.webp": "WritingWorkspaceScreen, prompt and genko editor",
+      "web-speaking-conversation.webp": "SpeakingScenariosScreen, saved conversation with Aoi 3D and Japanese transcript",
+      "web-writing-feedback.webp": "WritingWorkspaceScreen, graded submission with score, highlighted correction and explanation"
+    }
+  },
+  "app": {
+    "renderer": "Native React Native views on iPhone 17 Pro, iOS 26.5 simulator, 1206 × 2622 screenshot",
+    "screens": {
+      "app-practice.webp": "PracticeScreen with AppBackground and BottomNavigation",
+      "app-lessons.webp": "VocabularyScreen with AppBackground and BottomNavigation"
+    },
+    "captureOnlyAdapters": "Notifications and speech playback disabled in the temporary capture harness; no UI components were substituted. All temporary source changes were restored after capture."
+  },
+  "optimization": "Screenshots resized and encoded as WebP; mascot images are optimized derivatives of existing src/assets/mascot PNG files.",
+  "updatedOn": "2026-11-22"
+}

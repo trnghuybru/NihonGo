@@ -15,8 +15,9 @@ export const WebNavigationContext = createContext<WebNavigation | null>(null);
 export function useWebNavigation() {
   return useContext(WebNavigationContext);
 }
+export const APP_HOME_PATH = '/app';
 export const tabPaths: Record<AppTab, string> = {
-  home: '/',
+  home: APP_HOME_PATH,
   practice: '/practice',
   lookup: '/lookup',
   vocabulary: '/lessons',
@@ -44,16 +45,17 @@ export function safeReturnTo(value: string | null): string {
     value.includes('\\') ||
     Array.from(value).some(character => character.charCodeAt(0) < 32)
   )
-    return '/';
+    return APP_HOME_PATH;
   try {
     const url = new URL(value, 'https://nihongo.invalid');
     return url.origin === 'https://nihongo.invalid' &&
+      !['/', '', '/landing'].includes(url.pathname.replace(/\/+$/, '')) &&
       !authPaths.has(url.pathname.replace(/\/+$/, '')) &&
       url.pathname.replace(/\/+$/, '') !== '/onboarding'
       ? url.pathname + url.search
-      : '/';
+      : APP_HOME_PATH;
   } catch {
-    return '/';
+    return APP_HOME_PATH;
   }
 }
 export function selectedTabForPath(path: string): AppTab {

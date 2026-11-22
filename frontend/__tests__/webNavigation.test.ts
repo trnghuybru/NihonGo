@@ -1,4 +1,6 @@
 import {
+  APP_HOME_PATH,
+  tabPaths,
   decodeRouteParam,
   navigationLink,
   safeReturnTo,
@@ -26,7 +28,7 @@ test.each([
   'javascript:alert(1)',
   null,
 ])('rejects unsafe or recursive returnTo: %s', value => {
-  expect(safeReturnTo(value)).toBe('/');
+  expect(safeReturnTo(value)).toBe(APP_HOME_PATH);
 });
 test('selects the parent navigation tab for nested routes', () => {
   expect(selectedTabForPath('/flashcards/sessions/s1')).toBe('practice');
@@ -62,4 +64,19 @@ test('uses anchors on web and preserves modified clicks for new tabs', () => {
   expect(navigationLink(null, '/flashcards', action)).not.toHaveProperty(
     'href',
   );
+});
+
+test('uses a dedicated app home and normalizes old public return targets', () => {
+  expect(tabPaths.home).toBe('/app');
+  expect(safeReturnTo('/app')).toBe('/app');
+  for (const target of [
+    '/',
+    '/?ref=beta',
+    '/landing',
+    '/landing/',
+    '/landing?ref=beta',
+  ]) {
+    expect(safeReturnTo(target)).toBe('/app');
+  }
+  expect(selectedTabForPath('/app')).toBe('home');
 });

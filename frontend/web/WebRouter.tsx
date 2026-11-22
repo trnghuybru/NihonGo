@@ -11,7 +11,7 @@ function NavigationBridge({ children }: { children: ReactNode }) {
   const pathname = location.pathname.replace(/\/+$/, '') || '/';
   useEffect(() => {
     if (pathname !== location.pathname)
-      navigate(pathname + location.search, {
+      navigate(pathname + location.search + location.hash, {
         replace: true,
         state: location.state,
       });
@@ -33,7 +33,10 @@ function NavigationBridge({ children }: { children: ReactNode }) {
       : pathname === '/forgot-password'
       ? 'Quên mật khẩu'
       : titles[selectedTabForPath(pathname)];
-    document.title = feature + ' · NihonGO';
+    document.title =
+      pathname === '/'
+        ? 'NihonGO · Một chút tiếng Nhật, một thế giới mới'
+        : feature + ' · NihonGO';
   }, [location, pathname, navigate]);
   const go = useCallback(
     (to: string, options?: { replace?: boolean; state?: unknown }) => {
