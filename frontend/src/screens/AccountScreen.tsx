@@ -1,3 +1,4 @@
+import { useWebNavigation } from '../navigation/webNavigation';
 import { useEffect, useRef, useState } from 'react';
 import {
   ActivityIndicator,
@@ -40,6 +41,7 @@ export function AccountScreen({
   onEditLearning: () => void;
 }) {
   const { desktop } = useWebLayout();
+  const web = useWebNavigation();
   const [pendingAction, setPendingAction] = useState<
     'verify' | 'logout' | null
   >(null);
@@ -70,7 +72,11 @@ export function AccountScreen({
         failure.status === 404
       )
         return;
-      setBudgetError(betaWeb ? 'Chưa tải được lượt dùng hôm nay. Vui lòng thử lại.' : 'Chưa tải được số dư AI. Vui lòng thử lại.');
+      setBudgetError(
+        betaWeb
+          ? 'Chưa tải được lượt dùng hôm nay. Vui lòng thử lại.'
+          : 'Chưa tải được số dư AI. Vui lòng thử lại.',
+      );
     }
   }
   useEffect(() => {
@@ -289,10 +295,11 @@ export function AccountScreen({
               </Text>
               {dailyQuota ? (
                 <Text style={styles.description}>
-                  Dịch video: còn {dailyQuota.video_remaining}/{dailyQuota.video_limit}.{' '}
-                  Nói Live: còn {dailyQuota.live_remaining}/{dailyQuota.live_limit} phiên,{' '}
-                  tối đa {dailyQuota.live_seconds_per_session / 60} phút/phiên.{' '}
-                  Làm mới lúc 00:00 giờ Việt Nam.
+                  Dịch video: còn {dailyQuota.video_remaining}/
+                  {dailyQuota.video_limit}. Nói Live: còn{' '}
+                  {dailyQuota.live_remaining}/{dailyQuota.live_limit} phiên, tối
+                  đa {dailyQuota.live_seconds_per_session / 60} phút/phiên. Làm
+                  mới lúc 00:00 giờ Việt Nam.
                 </Text>
               ) : null}
               {aiBudget ? (
@@ -344,7 +351,12 @@ export function AccountScreen({
                 busy: pendingAction === 'logout',
               }}
               disabled={busy}
-              onPress={() => run(() => authService.logout(), 'logout')}
+              onPress={() =>
+                run(async () => {
+                  await authService.logout();
+                  web?.navigate('/', { replace: true });
+                }, 'logout')
+              }
               style={({ pressed }) => [
                 styles.logout,
                 busy && styles.logoutDisabled,

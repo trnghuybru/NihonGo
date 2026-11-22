@@ -24,6 +24,7 @@ import { useLearningPreferences } from '../hooks/useLearningPreferences';
 import { useRemoteResource } from '../hooks/useSpeakingScenarios';
 import { WebLayoutContext, DESKTOP_SIDEBAR_WIDTH } from '../hooks/useWebLayout';
 import {
+  APP_HOME_PATH,
   authPaths,
   safeReturnTo,
   selectedTabForPath,
@@ -138,7 +139,7 @@ function FlashcardsPage() {
       }
       startDueReview={nav.pathname === '/flashcards/review'}
       catalogBackLabel={
-        backTo === '/'
+        backTo === APP_HOME_PATH
           ? 'Quay lại trang chủ'
           : backTo.startsWith('/lessons')
           ? 'Quay lại bài học'
@@ -181,7 +182,7 @@ function WebWorkspace({
         selectedTab === 'vocabulary',
     ),
   );
-  const goHome = useCallback(() => navigate('/'), [navigate]);
+  const goHome = useCallback(() => navigate(APP_HOME_PATH), [navigate]);
   const goPractice = useCallback(() => navigate('/practice'), [navigate]);
   const openFlashcards = useCallback(
     (session?: FlashcardSession) =>
@@ -189,7 +190,7 @@ function WebWorkspace({
         session
           ? `/flashcards/sessions/${encodeURIComponent(session.id)}`
           : '/flashcards',
-        { state: { session, backTo: '/' } },
+        { state: { session, backTo: APP_HOME_PATH } },
       ),
     [navigate],
   );
@@ -215,9 +216,7 @@ function WebWorkspace({
         })
       }
     >
-      <BottomNavigationInsetContext.Provider
-        value={0}
-      >
+      <BottomNavigationInsetContext.Provider value={0}>
         <WebLayoutContext.Provider
           value={{
             desktop,
@@ -262,7 +261,7 @@ function WebWorkspace({
                         ? 'Mới bắt đầu'
                         : profile.level}
                     </Text>
-                    {nav.pathname === '/' ? (
+                    {nav.pathname === APP_HOME_PATH ? (
                       <Text style={styles.badge}>
                         {profile.daily_minutes} phút/ngày
                       </Text>
@@ -292,7 +291,7 @@ function WebWorkspace({
                   >
                     <Routes>
                       <Route
-                        path="/"
+                        path={APP_HOME_PATH}
                         element={
                           <HomeScreen
                             user={user}
@@ -357,7 +356,9 @@ function WebWorkspace({
                       ))}
                       <Route
                         path="/practice/speaking/*"
-                        element={<SpeakingScenariosScreen onExit={goPractice} />}
+                        element={
+                          <SpeakingScenariosScreen onExit={goPractice} />
+                        }
                       />
                       {[
                         '/practice/reading',
@@ -573,7 +574,13 @@ export function AuthenticatedScreen({ user }: { user: User }) {
             { replace: true },
           );
         }}
-        onCancel={() => (profile ? navigate('/profile') : authService.logout())}
+        onCancel={async () => {
+          if (profile) navigate('/profile');
+          else {
+            await authService.logout();
+            navigate('/', { replace: true });
+          }
+        }}
         onReload={reload}
       />
     );

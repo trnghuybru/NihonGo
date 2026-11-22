@@ -1,3 +1,4 @@
+import { WebNavigationContext } from '../src/navigation/webNavigation';
 import React from 'react';
 import Renderer, { act } from 'react-test-renderer';
 import { Text } from 'react-native';
@@ -60,15 +61,13 @@ test('keeps learning settings and verification actions available', async () => {
   expect(edit).toHaveBeenCalledTimes(1);
   expect(button('Xác thực email')).toBeUndefined();
   expect(button('Xác thực số điện thoại')).toBeDefined();
-  jest
-    .mocked(authService.requestContact)
-    .mockResolvedValue({
-      challenge_id: 'c',
-      channel: 'sms',
-      destination: '+84912345678',
-      expires_in: 600,
-      resend_after: 60,
-    });
+  jest.mocked(authService.requestContact).mockResolvedValue({
+    challenge_id: 'c',
+    channel: 'sms',
+    destination: '+84912345678',
+    expires_in: 600,
+    resend_after: 60,
+  });
   await act(async () => {
     await button('Xác thực số điện thoại').props.onPress();
   });
@@ -109,4 +108,41 @@ test('blocks duplicate logout and displays failures inside the session section',
     await button('Đăng xuất').props.onPress();
   });
   expect(authService.logout).toHaveBeenCalledTimes(2);
+});
+
+test('web logout returns to the public landing only after success', async () => {
+  const navigate = jest.fn();
+  await act(async () => {
+    tree.update(
+      <WebNavigationContext.Provider
+        value={{
+          pathname: '/profile',
+          search: '',
+          key: 'profile',
+          state: null,
+          navigate,
+          back: jest.fn(),
+        }}
+      >
+        <AccountScreen
+          user={user}
+          learningProfile={profile}
+          learningOptions={options}
+          onEditLearning={edit}
+        />
+      </WebNavigationContext.Provider>,
+    );
+  });
+  jest
+    .mocked(authService.logout)
+    .mockRejectedValueOnce(new Error('Không đăng xuất được'));
+  await act(async () => {
+    await button('Đăng xuất').props.onPress();
+  });
+  expect(navigate).not.toHaveBeenCalled();
+  expect(texts()).toContain('Không đăng xuất được');
+  await act(async () => {
+    await button('Đăng xuất').props.onPress();
+  });
+  expect(navigate).toHaveBeenCalledWith('/', { replace: true });
 });

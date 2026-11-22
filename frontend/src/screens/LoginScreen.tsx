@@ -1,4 +1,5 @@
 import {
+  APP_HOME_PATH,
   authPaths,
   safeReturnTo,
   useWebNavigation,
@@ -73,15 +74,25 @@ export function LoginScreen() {
       );
       nav.navigate(
         stagePaths[next] +
-          (target === '/' ? '' : '?returnTo=' + encodeURIComponent(target)),
+          (target === APP_HOME_PATH
+            ? ''
+            : '?returnTo=' + encodeURIComponent(target)),
       );
     }
   }, []);
   useEffect(() => {
-    if (web && !authPaths.has(web.pathname))
+    // Logout may already have changed the browser URL while this render still
+    // holds the previous private route. Do not replace that newer navigation.
+    if (
+      web &&
+      !authPaths.has(web.pathname) &&
+      (typeof window === 'undefined' ||
+        !window.location ||
+        window.location.pathname.replace(/\/+$/, '') === web.pathname)
+    )
       web.navigate(
         '/login' +
-          (web.pathname === '/'
+          (safeReturnTo(web.pathname + web.search) === APP_HOME_PATH
             ? ''
             : '?returnTo=' +
               encodeURIComponent(safeReturnTo(web.pathname + web.search))),
@@ -139,6 +150,19 @@ export function LoginScreen() {
     setConfig(result);
   }, []);
 
+  const receiveChallenge = useCallback(
+    (result: Challenge, nextStage: Stage) => {
+      setChallenge(result);
+      setResendAt(Date.now() + result.resend_after * 1000);
+      setClock(Date.now());
+      setCode('');
+      setPassword('');
+      setConfirmation('');
+      setStage(nextStage);
+    },
+    [setStage],
+  );
+
   const resumeSocial = useCallback(async () => {
     const result = await authService.resumeSocial();
     if (!result) {
@@ -159,10 +183,12 @@ export function LoginScreen() {
       } else if ('status' in result && result.status === 'link_required') {
         setSocialLinking(true);
         receiveChallenge(result, 'verify');
-        setNotice('Nhập mã gửi đến email để liên kết Google với tài khoản hiện có.');
+        setNotice(
+          'Nhập mã gửi đến email để liên kết Google với tài khoản hiện có.',
+        );
       }
     }
-  }, [setStage]);
+  }, [setStage, receiveChallenge]);
 
   useEffect(() => {
     run(async () => {
@@ -192,16 +218,6 @@ export function LoginScreen() {
     const timer = setInterval(() => setClock(Date.now()), 1000);
     return () => clearInterval(timer);
   }, [challenge]);
-
-  function receiveChallenge(result: Challenge, nextStage: Stage) {
-    setChallenge(result);
-    setResendAt(Date.now() + result.resend_after * 1000);
-    setClock(Date.now());
-    setCode('');
-    setPassword('');
-    setConfirmation('');
-    setStage(nextStage);
-  }
 
   function navigate(next: Stage) {
     setStage(next);
@@ -318,24 +334,46 @@ export function LoginScreen() {
           ? undefined
           : 'Bảo vệ tài khoản'
       }
-      backgroundDecoration={stage === 'login' ? <LoginCharacterRain /> : undefined}
+      backgroundDecoration={
+        stage === 'login' ? <LoginCharacterRain /> : undefined
+      }
       floatingAccessory={
         stage === 'login' ? (
           <Pressable
             accessibilityRole="link"
             accessibilityLabel="Điền khảo sát đăng ký beta"
             onPress={() => Linking.openURL(BETA_SIGNUP_URL)}
-            style={[styles.betaMascot, compactInvite && styles.betaMascotCompact]}
+            style={[
+              styles.betaMascot,
+              compactInvite && styles.betaMascotCompact,
+            ]}
           >
-            <View style={[styles.betaSpeech, compactInvite && styles.betaSpeechCompact]}>
+            <View
+              style={[
+                styles.betaSpeech,
+                compactInvite && styles.betaSpeechCompact,
+              ]}
+            >
               <Text style={styles.betaSpeechTitle}>Chưa đăng ký beta?</Text>
               <Text style={styles.betaSpeechCopy}>
                 Điền khảo sát để nhận lời mời từ Momo trong 24 giờ nhé!
               </Text>
-              <Text style={styles.signupLink}>Điền khảo sát đăng ký beta →</Text>
-              <View style={compactInvite ? styles.betaSpeechTailCompact : styles.betaSpeechTail} />
+              <Text style={styles.signupLink}>
+                Điền khảo sát đăng ký beta →
+              </Text>
+              <View
+                style={
+                  compactInvite
+                    ? styles.betaSpeechTailCompact
+                    : styles.betaSpeechTail
+                }
+              />
             </View>
-            <NihongoMascot pose="wave" size={compactInvite ? 72 : 112} decorative />
+            <NihongoMascot
+              pose="wave"
+              size={compactInvite ? 72 : 112}
+              decorative
+            />
           </Pressable>
         ) : undefined
       }
