@@ -67,3 +67,6 @@ Thumbs.db
 *.swp
 *.swo
 .vscode/
+
+# Ephemeral Google GitHub Actions credentials
+gha-creds-*.json
