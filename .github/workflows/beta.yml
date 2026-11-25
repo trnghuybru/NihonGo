@@ -101,8 +101,11 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 35
     concurrency:
-      group: nihongo-beta-vps
+      group: nihongo-beta-gcp
       cancel-in-progress: false
+    permissions:
+      contents: read
+      id-token: write
     env:
       BETA_DEPLOY_PRIVATE_KEY: ${{ secrets.BETA_DEPLOY_PRIVATE_KEY }}
     steps:
@@ -112,27 +115,17 @@ jobs:
         with:
           name: beta-web-${{ github.sha }}
           path: frontend/dist-web
-      - name: Pack and upload release
-        shell: bash
-        run: |
-          set -euo pipefail
-          if [[ -z "$BETA_DEPLOY_PRIVATE_KEY" ]]; then
-            echo '::error::Add BETA_DEPLOY_PRIVATE_KEY to GitHub Actions repository secrets.'
-            exit 1
-          fi
-          keyfile="$RUNNER_TEMP/nihongo_deploy_key"
-          umask 077
-          printf '%s\n' "$BETA_DEPLOY_PRIVATE_KEY" > "$keyfile"
-          chmod 600 "$keyfile"
-          bundle="$RUNNER_TEMP/nihongo-${GITHUB_SHA}.tar.gz"
-          OUTPUT_PATH="$bundle" bash deploy/beta/build_bundle.sh
-          digest="$(sha256sum "$bundle" | cut -d ' ' -f 1)"
-          ssh_args=(-i "$keyfile" -o BatchMode=yes -o StrictHostKeyChecking=yes
-                    -o UserKnownHostsFile=deploy/beta/known_hosts)
-          rsync -az -e "ssh -i $keyfile -o BatchMode=yes -o StrictHostKeyChecking=yes -o UserKnownHostsFile=deploy/beta/known_hosts" \
-            "$bundle" "nihongo-deploy@178.238.231.247:/home/nihongo-deploy/incoming/${GITHUB_SHA}.tar.gz"
-          ssh "${ssh_args[@]}" nihongo-deploy@178.238.231.247 \
-            sudo -n /usr/local/sbin/nihongo-deploy "$GITHUB_SHA" "$digest"
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v3
+        with:
+          workload_identity_provider: projects/122275117568/locations/global/workloadIdentityPools/nihongo-github/providers/staging
+          service_account: nihongo-ci-tunnel@true-shore-451709-f3.iam.gserviceaccount.com
+      - name: Set up Google Cloud CLI
+        uses: google-github-actions/setup-gcloud@v3
+        with:
+          project_id: true-shore-451709-f3
+      - name: Deploy verified release through IAP
+        run: bash deploy/gcp/deploy_ci.sh
 
   deploy-pages:
     name: Deploy Cloudflare Pages
