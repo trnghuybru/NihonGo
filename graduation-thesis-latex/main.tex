@@ -79,12 +79,16 @@
 \usepackage{booktabs}
 \usepackage{array}
 \usepackage{longtable}
+\usepackage{needspace}
 \usepackage{multirow}
 \usepackage{amsmath, amssymb}
 \usepackage{enumitem}
 \usepackage{xcolor}
 \usepackage{tikz}                     % cover frame + sample figure
-\usetikzlibrary{positioning}
+\usetikzlibrary{positioning,shapes.geometric}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepgfplotslibrary{groupplots}
 
 
 \usepackage{xurl}                    % allow long reference URLs to wrap
@@ -280,18 +284,11 @@
   \fancyfoot[R]{\fontsize{11pt}{13pt}\selectfont\itshape \thepage}%
   \renewcommand{\footrulewidth}{0.4pt}}
 
-% Introduction has no chapter/section numbers; its tables use plain numbers.
-\begingroup
-\setcounter{secnumdepth}{0}
-\renewcommand{\thetable}{\arabic{table}}
-\input{chapters/chapter01}   % Unnumbered Introduction
-\clearpage
-\endgroup
-\setcounter{secnumdepth}{3}
-\input{chapters/chapter02}   % Chapter 1. Literature review & background
-\input{chapters/chapter03}   % Chapter 2. Product design & development
-\input{chapters/chapter04}   % Chapter 3. Deployment & business models
-\input{chapters/chapter05}   % Chapter 4. Conclusion & recommendations
+\input{chapters/chapter01}   % Chapter 1. Introduction
+\input{chapters/chapter02}   % Chapter 2. Literature review & background
+\input{chapters/chapter03}   % Chapter 3. Product design & development
+\input{chapters/chapter04}   % Chapter 4. Deployment & business models
+\input{chapters/chapter05}   % Chapter 5. Conclusion & recommendations
 
 % --------------------- References & appendices -----------------------
 % Roman numerals continuing the front sequence (References = vi, ...),

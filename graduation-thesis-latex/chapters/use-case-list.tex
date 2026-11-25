@@ -1,0 +1,51 @@
+% Evidence and scope checks are retained in use-case-evidence.txt.
+Bảng~\ref{tab:use-case-list} trình bày 11 use case tương ứng với Hình~\ref{fig:use-case-overview}, gồm tác nhân, yêu cầu liên quan, phạm vi chức năng và kết quả chính. Guest là người chưa đăng nhập; Learner là người đã đăng nhập. Mã FR liên kết với các yêu cầu chức năng tại Bảng~\ref{tab:functional-requirements}.
+
+\begingroup
+\setstretch{1}
+\fontsize{11}{14}\selectfont
+\renewcommand{\arraystretch}{1.1}
+\setlength{\LTleft}{0pt}
+\setlength{\LTright}{\fill}
+\setlength{\LTpre}{4pt}
+\setlength{\LTpost}{10pt}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{1.1cm}>{\raggedright\arraybackslash}p{3.6cm}>{\raggedright\arraybackslash}p{2.1cm}>{\raggedright\arraybackslash}p{7.8cm}@{}}
+\caption{Danh sách use case và phạm vi chức năng của NihonGO}
+\label{tab:use-case-list}\\
+\toprule
+\textbf{Mã} & \textbf{Use case} & \textbf{Tác nhân / FR} & \textbf{Chức năng, kết quả và điều kiện chính} \\
+\midrule
+\endfirsthead
+\multicolumn{4}{c}{\tablename~\thetable{} (tiếp theo)}\\
+\toprule
+\textbf{Mã} & \textbf{Use case} & \textbf{Tác nhân / FR} & \textbf{Chức năng, kết quả và điều kiện chính} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{4}{r}{\textit{Tiếp ở trang sau}}\\
+\endfoot
+\bottomrule
+\endlastfoot
+UC-01 & Register an account & Guest\newline FR-01 & Nhập họ tên, email, số điện thoại và mật khẩu; nhận, xác nhận hoặc yêu cầu gửi lại mã email. Chỉ tạo tài khoản sau khi mã hợp lệ; hệ thống cấp phiên đăng nhập và chuyển sang thiết lập học tập nếu chưa có hồ sơ. \\
+\midrule
+UC-02 & Sign in & Guest\newline FR-02 & Đăng nhập bằng email hoặc số điện thoại và mật khẩu. Thông tin hợp lệ tạo phiên truy cập; người học được mở không gian học hoặc thiết lập ban đầu. Khi phiên hết hạn, ứng dụng thử làm mới trước khi yêu cầu đăng nhập lại. \\
+\midrule
+UC-03 & Recover password & Guest\newline FR-03 & Yêu cầu mã khôi phục, xác minh thông tin liên hệ và đặt mật khẩu mới. Khi hoàn tất, hệ thống thu hồi các phiên cũ và yêu cầu đăng nhập lại. Phản hồi gửi mã không tiết lộ tài khoản có tồn tại hay không. \\
+\midrule
+UC-04 & Manage account and learning goals & Learner\newline FR-02,\newline FR-04--05 & Xem thông tin tài khoản; thiết lập hoặc cập nhật trình độ tự đánh giá, mục tiêu và thời gian học mỗi ngày; đăng xuất khi cần. Hồ sơ được lưu theo tài khoản; xung đột phiên bản được thông báo trước khi ghi đè dữ liệu. \\
+\midrule
+UC-05 & Study vocabulary and review flashcards & Learner\newline FR-06--07,\newline FR-11--16 & Học từ theo bài, lưu từ yêu thích, tạo hoặc chỉnh sửa bộ thẻ và ôn thẻ đến hạn. Người học chọn Again, Hard, Good hoặc Easy; hệ thống lưu nhật ký, cập nhật lịch FSRS và hiển thị tổng kết phiên. Mức nhớ là tự đánh giá. \\
+\midrule
+UC-06 & Look up words and Kanji & Learner\newline FR-08--12 & Tìm từ/Kanji bằng văn bản hoặc vẽ một ký tự rồi chọn trong năm gợi ý. Xem nghĩa, cách đọc, ví dụ và thứ tự nét khi có dữ liệu; lưu lịch sử hoặc từ yêu thích. Nhận dạng viết tay chỉ gợi ý ký tự, không chấm chất lượng chữ viết. \\
+\midrule
+UC-07 & Practice listening and shadowing & Learner\newline FR-17--22 & Chọn hoặc thêm video YouTube, chờ chuẩn bị bài nếu cần; luyện theo phụ đề, phát lại/lặp đoạn và tra từ. Có thể yêu cầu dịch, làm hoạt động điền từ và bộ 5 câu hỏi nghe hiểu. Kết quả lựa chọn đáp án được hiển thị trong phiên giao diện; không tự chấm phát âm. \\
+\midrule
+UC-08 & Practice AI conversation & Learner\newline FR-23--28 & Chọn tình huống, trao đổi với AI bằng văn bản hoặc giọng nói khi được hỗ trợ; kết thúc, xem lại hoặc xóa phiên. Hệ thống lưu hội thoại và nhận xét về ngữ pháp, từ vựng, độ tự nhiên. Điểm tổng hợp yêu cầu ít nhất 3 lượt trả lời có nội dung; không đánh giá phát âm. \\
+\midrule
+UC-09 & Practice reading comprehension & Learner\newline FR-29--34 & Chọn bài đọc, bật/tắt furigana, tra từ, trả lời đủ câu hỏi và nộp bài. Hệ thống chấm theo đáp án nguồn, lưu lần làm và trả điểm; người học có thể xem phân tích hoặc yêu cầu giải thích có dẫn chứng. Giải thích AI không thay đổi đáp án và điểm đã chấm. \\
+\midrule
+UC-10 & Practice writing & Learner\newline FR-35--39 & Chọn đề, soạn/lưu bản nháp, nộp bài và xem điểm, nhận xét, phần sửa được giải thích. Có thể chỉnh sửa để nộp phiên bản mới, yêu cầu đánh giá lại hoặc so sánh hai bài cùng đề. Bài nộp mới được lưu riêng; đánh giá lại áp dụng cho bài đã có. \\
+\midrule
+UC-11 & Play vocabulary games & Learner\newline FR-40--42 & Chọn trò, tạo/tham gia phòng, thiết lập sẵn sàng và thực hiện các lượt chơi. Chủ phòng bắt đầu khi đủ điều kiện; máy chủ xác nhận hành động, điểm và kết quả. Phòng tối đa 8 người, cần ít nhất 2 người sẵn sàng; Công thành đúng 2 người. Âm thanh áp dụng cho chế độ hỗ trợ. \\
+\end{longtable}
+\endgroup

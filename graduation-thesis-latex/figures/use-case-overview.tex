@@ -1,0 +1,46 @@
+\begingroup
+\setstretch{1}
+\begin{tikzpicture}[
+  usecase/.style={ellipse,draw=blue!45!black,fill=blue!3,
+    text width=3.3cm,minimum height=.8cm,inner sep=2pt,
+    align=center,font=\fontsize{9}{10}\selectfont},
+  association/.style={draw=black!65,line width=.6pt},
+  actorlabel/.style={align=center,font=\fontsize{10}{12}\selectfont}
+]
+  \draw[rounded corners=3pt,draw=black!60] (0,.35) rectangle (12,-10.1);
+  \node[font=\fontsize{11}{13}\selectfont\bfseries] at (6,0) {NihonGO};
+
+  \draw[black!75,line width=.75pt] (-1.25,-3.95) circle (.18);
+  \draw[black!75,line width=.75pt] (-1.25,-4.13) -- (-1.25,-4.7)
+    (-1.6,-4.35) -- (-.9,-4.35)
+    (-1.25,-4.7) -- (-1.55,-5.1)
+    (-1.25,-4.7) -- (-.95,-5.1);
+  \node[actorlabel] at (-1.25,-5.4) {Guest};
+  \coordinate (guest) at (-.9,-4.35);
+
+  \draw[black!75,line width=.75pt] (13.25,-3.95) circle (.18);
+  \draw[black!75,line width=.75pt] (13.25,-4.13) -- (13.25,-4.7)
+    (12.9,-4.35) -- (13.6,-4.35)
+    (13.25,-4.7) -- (12.95,-5.1)
+    (13.25,-4.7) -- (13.55,-5.1);
+  \node[actorlabel] at (13.25,-5.4) {Learner};
+  \coordinate (learner) at (12.9,-4.35);
+
+  \node[usecase] (register) at (3,-2.5) {Register an account};
+  \node[usecase] (login) at (3,-4.8) {Sign in};
+  \node[usecase] (recover) at (3,-7.1) {Recover password};
+  \foreach \target in {register,login,recover}
+    \draw[association] (guest) -- (\target.west);
+
+  \node[usecase] (account) at (9,-.9) {Manage account and\\learning goals};
+  \node[usecase] (vocabulary) at (9,-2.1) {Study vocabulary and\\review flashcards};
+  \node[usecase] (lookup) at (9,-3.3) {Look up words and Kanji};
+  \node[usecase] (listening) at (9,-4.5) {Practice listening\\and shadowing};
+  \node[usecase] (speaking) at (9,-5.7) {Practice AI conversation};
+  \node[usecase] (reading) at (9,-6.9) {Practice reading\\comprehension};
+  \node[usecase] (writing) at (9,-8.1) {Practice writing};
+  \node[usecase] (games) at (9,-9.3) {Play vocabulary games};
+  \foreach \target in {account,vocabulary,lookup,listening,speaking,reading,writing,games}
+    \draw[association] (learner) -- (\target.east);
+\end{tikzpicture}
+\endgroup

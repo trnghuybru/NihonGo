@@ -1,0 +1,292 @@
+% Evidence: use-case-evidence.txt and the source paths cited below.
+Các luồng được tách theo nghiệp vụ, phân biệt thao tác của người học, xử lý nội bộ của NihonGO và dịch vụ bên ngoài. Các luồng giả định người học đã đăng nhập và hoàn tất thiết lập học tập. Các nhánh tùy chọn hoặc phụ thuộc cấu hình được ghi trực tiếp trên sơ đồ.
+
+% Two lanes for internal-only workflows; three when remote services are called.
+\newenvironment{businessflow}[2]{%
+  \begingroup\setstretch{1}
+  \hyphenpenalty=10000\exhyphenpenalty=10000
+  \begin{tikzpicture}[
+    action/.style={rectangle,rounded corners=3pt,draw=blue!45!black,
+      fill=white,text width=3.65cm,minimum height=.85cm,inner sep=5pt,
+      align=center,font=\fontsize{10}{12}\selectfont},
+    local/.style={action,fill=blue!5},
+    remote/.style={action,fill=orange!7,draw=orange!55!black},
+    decision/.style={diamond,aspect=2.3,draw=blue!45!black,fill=white,
+      text width=2cm,inner sep=1pt,align=center,font=\fontsize{10}{12}\selectfont},
+    flow/.style={->,>=stealth,draw=black!70,line width=.7pt},
+    branch/.style={font=\fontsize{9}{11}\selectfont,fill=white,inner sep=2pt}]
+    \ifnum#1=3
+      \fill[blue!2] (0,0) rectangle (5.1,-#2);
+      \fill[green!2] (5.1,0) rectangle (10.2,-#2);
+      \fill[orange!2] (10.2,0) rectangle (15.3,-#2);
+      \draw[black!30] (5.1,0) -- (5.1,-#2) (10.2,0) -- (10.2,-#2);
+      \node[font=\fontsize{10}{12}\selectfont\bfseries] at (2.55,-.35) {LEARNER};
+      \node[font=\fontsize{10}{12}\selectfont\bfseries] at (7.65,-.35) {NihonGO};
+      \node[font=\fontsize{10}{12}\selectfont\bfseries] at (12.75,-.35) {EXTERNAL SERVICES};
+    \else
+      \tikzset{action/.append style={text width=5.2cm}}
+      \fill[blue!2] (0,0) rectangle (7.65,-#2);
+      \fill[green!2] (7.65,0) rectangle (15.3,-#2);
+      \draw[black!30] (7.65,0) -- (7.65,-#2);
+      \node[font=\fontsize{10}{12}\selectfont\bfseries] at (3.825,-.35) {LEARNER};
+      \node[font=\fontsize{10}{12}\selectfont\bfseries] at (11.475,-.35) {NihonGO};
+    \fi
+    \draw[rounded corners=3pt,black!45] (0,0) rectangle (15.3,-#2);
+    \draw[black!30] (0,-.75) -- (15.3,-.75);
+}{\end{tikzpicture}\endgroup}
+
+\clearpage
+\subsubsection{Vocabulary Study and Flashcard Review}
+% backend/flashcards/routes.py:start_session,rate,finish; flashcards/srs.py;
+% vocabulary/audio.py and deployment R2 object storage configuration.
+\begin{figure}[htbp]
+\centering
+\begin{businessflow}{3}{12.6}
+  \node[action] (choose) at (2.55,-1.7) {Choose a lesson, deck\\or due flashcard review};
+  \node[action] (load) at (7.65,-1.7) {Load words or create\\a flashcard session};
+  \node[action] (study) at (2.55,-3.5) {Study words or reveal\\the flashcard answer};
+  \node[action] (audio) at (7.65,-3.5) {On audio request:\\sign the stored audio URL};
+  \node[remote] (r2) at (12.75,-3.5) {Cloudflare R2\\Serve the requested\\vocabulary audio};
+  \node[action] (rating) at (2.55,-5.6) {For flashcards:\\choose Again, Hard,\\Good or Easy};
+  \node[action] (schedule) at (7.65,-5.6) {Save the rating; update\\the FSRS schedule};
+  \node[decision] (more) at (7.65,-7.5) {More cards?};
+  \node[action] (finish) at (7.65,-9.4) {Finish the session;\\return its summary};
+  \node[action] (summary) at (2.55,-9.4) {View the session summary};
+  \draw[flow] (choose) -- (load);
+  \draw[flow] (load.south) -- (7.65,-2.6) -- (2.55,-2.6) -- (study.north);
+  \draw[flow,dashed] (study) -- (audio);
+  \draw[flow,dashed] (audio) -- (r2);
+  \draw[flow] (study) -- (rating);
+  \draw[flow] (rating) -- (schedule);
+  \draw[flow] (schedule) -- (more);
+  \draw[flow] (more.west) -- node[branch,above] {Yes} (.4,-7.5) -- (.4,-3.5) -- (study.west);
+  \draw[flow] (more) -- node[branch,right] {No} (finish);
+  \draw[flow] (finish) -- (summary);
+  \node[align=left,text width=13.8cm,font=\fontsize{10}{12}\selectfont,anchor=north west]
+    at (.55,-10.65) {Dashed arrows show optional audio playback; the client fetches the signed URL directly from R2. Vocabulary browsing can end after study; self-rating and FSRS updates apply to flashcards only.};
+\end{businessflow}
+\caption{Business Process Flow: Vocabulary Study and Flashcard Review}
+\label{fig:bpf-flashcards}
+\end{figure}
+Người học chọn bài hoặc bộ thẻ, xem nội dung và tự đánh giá mức nhớ sau khi mở đáp án. Hệ thống lưu mức đánh giá, cập nhật lịch FSRS và chuyển sang thẻ tiếp theo; khi kết thúc, người học xem tổng kết phiên. Phát âm thanh là thao tác tùy chọn khi từ có nguồn âm thanh phù hợp.
+
+\clearpage
+\subsubsection{Dictionary Lookup and Kanji Handwriting Recognition}
+% backend/dictionary/routes.py; backend/handwriting/routes.py:recognize.
+\begin{figure}[htbp]
+\centering
+\begin{businessflow}{2}{11.3}
+  \node[action] (query) at (3.825,-1.7) {Enter a word or Kanji query};
+  \node[action] (search) at (11.475,-1.7) {Search the local dictionary};
+  \node[action] (draw) at (3.825,-3.7) {Alternatively, draw one character};
+  \node[local] (model) at (11.475,-3.7) {MobileNetV3 Small (local)\\Recognize the handwriting image};
+  \node[action] (candidate) at (3.825,-5.7) {Choose a predicted Kanji};
+  \node[action] (detail) at (11.475,-5.7) {Retrieve matching entries\\and Kanji details};
+  \node[action] (view) at (3.825,-7.7) {View readings, meanings\\and available examples};
+  \draw[flow] (query) -- (search);
+  \draw[flow] (search.east) -- (14.8,-1.7) -- (14.8,-5.7) -- (detail.east);
+  \draw[flow] (draw) -- (model);
+  \draw[flow] (model.south) -- (11.475,-4.7) -- (3.825,-4.7) -- (candidate.north);
+  \draw[flow] (candidate) -- (detail);
+  \draw[flow] (detail.south) |- (view.east);
+  \node[align=left,text width=13.8cm,font=\fontsize{10}{12}\selectfont,anchor=north west]
+    at (.55,-9) {The two inputs are alternatives. Recognition returns candidate characters; it does not grade stroke order. Lookup and handwriting inference do not require a third-party API at runtime.};
+\end{businessflow}
+\caption{Business Process Flow: Dictionary Lookup and Kanji Recognition}
+\label{fig:bpf-dictionary}
+\end{figure}
+Luồng tra cứu có hai cách nhập: gõ truy vấn hoặc vẽ một ký tự rồi chọn gợi ý nhận dạng. Ký tự được chọn trở thành đầu vào tìm kiếm từ điển; hệ thống trả thông tin nghĩa, cách đọc và ví dụ hiện có để người học tiếp tục tìm hiểu.
+
+\clearpage
+\subsubsection{Listening and Shadowing}
+% shadowing/service.py:submit; processor.py:process_video,transcribe_file;
+% shadowing/quiz.py:shared_quiz; backend/SHADOWING.md.
+\begin{figure}[htbp]
+\centering
+\begin{businessflow}{3}{16.4}
+  \node[action] (url) at (2.55,-1.7) {Submit a YouTube video URL};
+  \node[decision] (cached) at (7.65,-1.7) {Lesson ready?};
+  \node[action] (queue) at (7.65,-3.6) {Queue preparation;\\run the shadowing worker};
+  \node[remote] (youtube) at (12.75,-3.6) {YouTube\\Provide Japanese captions\\or source audio};
+  \node[local] (transcribe) at (7.65,-5.6) {If no captions:\\transcribe audio with\\Faster-Whisper (local)};
+  \node[action] (ready) at (7.65,-7.5) {Save aligned captions;\\publish the ready lesson};
+  \node[action] (practice) at (2.55,-7.5) {Practice with captions,\\segment replay\\and repetition};
+  \node[remote] (player) at (12.75,-7.5) {YouTube IFrame Player\\Stream the original video};
+  \node[action] (quiz) at (2.55,-9.9) {Optionally request\\comprehension questions};
+  \node[action] (checkquiz) at (7.65,-9.9) {Reuse the quiz, or request\\5 new questions};
+  \node[remote] (gemini) at (12.75,-9.9) {Gemini\\Generate questions grounded\\in the prepared captions};
+  \node[action] (questions) at (7.65,-12) {Validate and cache\\the question set};
+  \node[action] (answer) at (2.55,-12) {Answer questions and\\view answer feedback};
+  \draw[flow] (url) -- (cached);
+  \draw[flow] (cached) -- node[branch,right] {No} (queue);
+  \draw[flow] (cached.west) -- (5,-1.7) -- node[branch,left] {Yes} (5,-6.6) -- (2.55,-6.6) -- (practice.north);
+  \draw[flow] (queue) -- (youtube);
+  \draw[flow] (youtube.south) |- (transcribe.east);
+  \draw[flow] (transcribe) -- (ready);
+  \draw[flow] (ready) -- (practice);
+  \draw[flow,dashed] (practice.south) -- (2.55,-8.7) -- (12.75,-8.7) -- (player.south);
+  \draw[flow] (practice) -- (quiz);
+  \draw[flow] (quiz) -- (checkquiz);
+  \draw[flow] (checkquiz) -- node[branch,above] {New} (gemini);
+  \draw[flow] (gemini.south) |- (questions.east);
+  \draw[flow] (checkquiz) -- node[branch,right] {Cached} (questions);
+  \draw[flow] (questions) -- (answer);
+  \node[align=left,text width=13.8cm,font=\fontsize{10}{12}\selectfont,anchor=north west]
+    at (.55,-13.4) {Preparation is asynchronous; the learner waits for the ready status. Existing captions bypass local transcription. Dashed arrows show video playback from the client. No automatic pronunciation score is produced. Source or model failures are shown with retry options.};
+\end{businessflow}
+\caption{Business Process Flow: Listening and Shadowing}
+\label{fig:bpf-shadowing}
+\end{figure}
+Video đã có bài học được mở trực tiếp; video mới được đưa vào luồng chuẩn bị phụ đề. Worker ưu tiên phụ đề nguồn và dùng Faster-Whisper khi cần nhận dạng âm thanh. Khi bài sẵn sàng, người học luyện theo từng đoạn và có thể yêu cầu bộ câu hỏi nghe hiểu dựa trên nội dung phụ đề.
+
+\clearpage
+\subsubsection{AI Conversation and Session Feedback}
+% speaking/experiment.py; conversation.py:send_turn; evaluation_ai.py;
+% experiment is gated to non-production; do not depict Gemini Live.
+\begin{figure}[htbp]
+\centering
+\begin{businessflow}{3}{17.7}
+  \node[action] (scenario) at (2.55,-1.7) {Choose a scenario;\\start a conversation};
+  \node[action] (session) at (7.65,-1.7) {Create the session\\with scenario context};
+  \node[action] (input) at (2.55,-3.7) {Enter text or record voice\\in the local experiment};
+  \node[action] (audio) at (7.65,-3.7) {For voice input:\\request transcription};
+  \node[remote] (stt) at (12.75,-3.7) {Google Cloud\\Speech-to-Text\\Return recognized text};
+  \node[action] (turn) at (7.65,-5.8) {Save the user turn;\\build the reply context};
+  \node[remote] (reply) at (12.75,-5.8) {Gemini\\Generate the assistant reply};
+  \node[local] (play) at (7.65,-7.9) {Save the reply; for voice,\\synthesize audio with\\Supertonic (local)};
+  \node[action] (hear) at (2.55,-7.9) {Read or hear the reply};
+  \node[action] (finish) at (2.55,-10) {Finish the conversation};
+  \node[action] (complete) at (7.65,-10) {Complete the session;\\check transcript length};
+  \node[remote] (evaluate) at (12.75,-10) {Gemini\\Evaluate the transcript};
+  \node[action] (save) at (7.65,-12.1) {Save valid feedback;\\compute eligible scores};
+  \node[action] (review) at (2.55,-12.1) {Review grammar, vocabulary\\and naturalness feedback};
+  \draw[flow] (scenario) -- (session);
+  \draw[flow] (session.south) -- (7.65,-2.7) -- (2.55,-2.7) -- (input.north);
+  \draw[flow] (input) -- (audio);
+  \draw[flow] (audio) -- (stt);
+  \draw[flow] (stt.south) -- (12.75,-4.75) -- (7.65,-4.75) -- (turn.north);
+  \draw[flow] (input.south) -- (2.55,-5.8) -- node[branch,above] {Text} (turn.west);
+  \draw[flow] (turn) -- (reply);
+  \draw[flow] (reply.south) |- (play.east);
+  \draw[flow] (play) -- (hear);
+  \draw[flow] (hear.west) -- (.35,-7.9) -- node[branch,right] {Next turn} (.35,-3.7) -- (input.west);
+  \draw[flow] (hear) -- (finish);
+  \draw[flow] (finish) -- (complete);
+  \draw[flow] (complete) -- (evaluate);
+  \draw[flow] (evaluate.south) |- (save.east);
+  \draw[flow] (save) -- (review);
+  \node[align=left,text width=13.8cm,font=\fontsize{10}{12}\selectfont,anchor=north west]
+    at (.55,-13.6) {Cloud STT and Supertonic here represent the current non-production voice experiment, available only when enabled. Text turns bypass speech recognition and synthesis. A numeric session score requires at least three nonempty learner replies; feedback assesses the transcript, not pronunciation.};
+\end{businessflow}
+\caption{Business Process Flow: AI Conversation and Session Feedback}
+\label{fig:bpf-speaking}
+\end{figure}
+Mỗi lượt trao đổi được xử lý trong bối cảnh tình huống và lưu theo phiên hội thoại. Với luồng giọng nói trên hình, lời nói được chuyển thành văn bản trước khi tạo phản hồi và tổng hợp âm thanh trả lời. Sau khi kết thúc phiên, người học có thể yêu cầu nhận xét dựa trên nội dung đã trao đổi.
+
+\clearpage
+\subsubsection{Reading Comprehension and Answer Explanation}
+% reading/routes.py:submit_attempt,explain_answer; reading/quiz.py:grade;
+% reading/study.py:get_or_generate,generate.
+\begin{figure}[htbp]
+\centering
+\begin{businessflow}{3}{12.7}
+  \node[action] (choose) at (2.55,-1.7) {Choose a passage};
+  \node[action] (load) at (7.65,-1.7) {Load passage and quiz;\\hide the answer key};
+  \node[action] (answer) at (2.55,-3.6) {Read the passage and\\submit all quiz answers};
+  \node[action] (grade) at (7.65,-3.6) {Check quiz version;\\grade with source key;\\save the attempt};
+  \node[action] (result) at (2.55,-5.6) {View the score and\\correct answers};
+  \node[action] (request) at (2.55,-7.5) {Optionally request\\an answer explanation};
+  \node[action] (context) at (7.65,-7.5) {Check attempt owner;\\reuse an explanation\\or prepare AI context};
+  \node[remote] (gemini) at (12.75,-7.5) {Gemini\\Explain the answer with\\evidence from the passage};
+  \node[action] (validate) at (7.65,-9.5) {Validate and cache\\the explanation};
+  \node[action] (review) at (2.55,-9.5) {Review the explanation\\and cited evidence};
+  \draw[flow] (choose) -- (load);
+  \draw[flow] (load.south) -- (7.65,-2.65) -- (2.55,-2.65) -- (answer.north);
+  \draw[flow] (answer) -- (grade);
+  \draw[flow] (grade.south) -- (7.65,-4.65) -- (2.55,-4.65) -- (result.north);
+  \draw[flow] (result) -- (request);
+  \draw[flow] (request) -- (context);
+  \draw[flow] (context) -- node[branch,above] {New} (gemini);
+  \draw[flow] (gemini.south) |- (validate.east);
+  \draw[flow] (context) -- node[branch,right] {Cached} (validate);
+  \draw[flow] (validate) -- (review);
+  \node[align=left,text width=13.8cm,font=\fontsize{10}{12}\selectfont,anchor=north west]
+    at (.55,-10.9) {AI explanation is optional and does not change the source answer key or the recorded quiz score. Cached explanations are reused without another provider call.};
+\end{businessflow}
+\caption{Business Process Flow: Reading Comprehension and Answer Explanation}
+\label{fig:bpf-reading}
+\end{figure}
+Người học đọc văn bản, hoàn thành câu hỏi và nộp đáp án để hệ thống chấm theo đáp án nguồn. Phần giải thích được yêu cầu sau khi có kết quả, sử dụng nội dung bài và câu hỏi làm căn cứ. Giải thích đã có được dùng lại; lời giải AI không thay đổi điểm của lần làm bài.
+
+\clearpage
+\subsubsection{Writing Submission and AI Assessment}
+% writing/routes.py:create_draft,update_draft,create_submission;
+% writing/evaluation.py:evaluate_writing; writing/rubric.py:validate_assessment.
+\begin{figure}[htbp]
+\centering
+\begin{businessflow}{3}{12.8}
+  \node[action] (prompt) at (2.55,-1.7) {Choose a writing prompt\\and create a draft};
+  \node[action] (draft) at (7.65,-1.7) {Load the task and\\save the draft};
+  \node[action] (write) at (2.55,-3.7) {Write, edit and submit\\the Japanese text};
+  \node[action] (submit) at (7.65,-3.7) {Validate the text;\\save a submission snapshot};
+  \node[remote] (ai) at (12.75,-3.7) {Gemini\\Assess the writing against\\the task, level and rubric};
+  \node[action] (validate) at (7.65,-5.8) {Check corrections;\\compute rubric scores;\\save the assessment};
+  \node[action] (feedback) at (2.55,-5.8) {Review scores, corrections\\and the next practice step};
+  \node[action] (revise) at (2.55,-7.9) {Optionally revise the draft\\and submit it again};
+  \node[action] (new) at (7.65,-7.9) {Create a new submission\\and repeat assessment};
+  \draw[flow] (prompt) -- (draft);
+  \draw[flow] (draft.south) -- (7.65,-2.7) -- (2.55,-2.7) -- (write.north);
+  \draw[flow] (write) -- (submit);
+  \draw[flow] (submit) -- (ai);
+  \draw[flow] (ai.south) |- (validate.east);
+  \draw[flow] (validate) -- (feedback);
+  \draw[flow] (feedback) -- (revise);
+  \draw[flow] (revise) -- (new);
+  \draw[flow] (new.east) -- (10.05,-7.9) -- (10.05,-3.7) -- (ai.west);
+  \node[align=left,text width=13.8cm,font=\fontsize{10}{12}\selectfont,anchor=north west]
+    at (.55,-9.35) {A revised text creates a separate submission. Requesting reevaluation of an existing submission is a distinct operation. If AI assessment fails, the saved writing remains available for retry.};
+\end{businessflow}
+\caption{Business Process Flow: Writing Submission and AI Assessment}
+\label{fig:bpf-writing}
+\end{figure}
+Luồng viết tách bản nháp, bài nộp và kết quả nhận xét. Khi người học nộp bài, hệ thống lưu nội dung để đánh giá theo đề và trình độ, sau đó trả điểm cùng các chỉnh sửa có giải thích. Người học có thể sửa bản nháp và nộp phiên bản mới để tiếp tục luyện tập.
+
+\clearpage
+\subsubsection{Multiplayer Vocabulary Games}
+% games/lobby_routes.py:shared_create,shared_action; games/voice_worker.py;
+% backend/GAMES.md: LiveKit is self-hosted, Cloud STT is remote.
+\begin{figure}[htbp]
+\centering
+\begin{businessflow}{3}{15.8}
+  \node[action] (join) at (2.55,-1.7) {Create or join a game room};
+  \node[action] (room) at (7.65,-1.7) {Load the lobby, settings\\and member states};
+  \node[action] (ready) at (2.55,-3.6) {Set ready; the host\\starts the match};
+  \node[action] (start) at (7.65,-3.6) {Check start conditions;\\prepare vocabulary rounds};
+  \node[action] (answer) at (2.55,-5.6) {Play the selected mode:\\castle, typed reading\\or microphone turn};
+  \node[local] (voice) at (7.65,-5.6) {For microphone mode:\\LiveKit (self-hosted)\\sends audio to the worker};
+  \node[remote] (stt) at (12.75,-5.6) {Google Cloud\\Speech-to-Text\\Recognize the spoken answer};
+  \node[action] (judge) at (7.65,-7.8) {Apply game rules;\\validate the player action;\\update scores and state};
+  \node[action] (update) at (2.55,-7.8) {View the round result\\and updated scores};
+  \node[decision] (more) at (7.65,-9.8) {More rounds?};
+  \node[action] (finish) at (7.65,-11.7) {Finish the match and\\publish the final result};
+  \node[action] (result) at (2.55,-11.7) {View the match result\\and return to the lobby};
+  \draw[flow] (join) -- (room);
+  \draw[flow] (room.south) -- (7.65,-2.65) -- (2.55,-2.65) -- (ready.north);
+  \draw[flow] (ready) -- (start);
+  \draw[flow] (start.south) -- (7.65,-4.6) -- (2.55,-4.6) -- (answer.north);
+  \draw[flow] (answer) -- (voice);
+  \draw[flow] (voice) -- (stt);
+  \draw[flow] (stt.south) |- (judge.east);
+  \draw[flow] (answer.south) -- (2.55,-6.7) -- node[branch,above] {Non-voice} (7.65,-6.7) -- (judge.north);
+  \draw[flow] (judge) -- (update);
+  \draw[flow] (update.south) -- (2.55,-8.8) -- (7.65,-8.8) -- (more.north);
+  \draw[flow] (more.west) -- node[branch,above] {Yes} (.35,-9.8) -- (.35,-5.6) -- (answer.west);
+  \draw[flow] (more) -- node[branch,right] {No} (finish);
+  \draw[flow] (finish) -- (result);
+  \node[align=left,text width=13.8cm,font=\fontsize{10}{12}\selectfont,anchor=north west]
+    at (.55,-13.1) {Voice transport and cloud recognition apply only to the enabled microphone mode; other modes bypass them. Recognition failures do not count as correct answers. The server controls round timing and scoring. LiveKit is a self-hosted dependency, not a hosted third-party service in this deployment.};
+\end{businessflow}
+\caption{Business Process Flow: Multiplayer Vocabulary Games}
+\label{fig:bpf-games}
+\end{figure}
+Người chơi tham gia phòng, xác nhận sẵn sàng và thực hiện các lượt theo chế độ đã chọn. Máy chủ kiểm tra điều kiện bắt đầu, xử lý hành động và cập nhật điểm, kết quả trận đấu. Với chế độ dùng microphone, âm thanh được truyền qua LiveKit để worker nhận dạng trước khi áp dụng luật chấm câu trả lời.
