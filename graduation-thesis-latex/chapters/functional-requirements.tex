@@ -1,0 +1,127 @@
+% Phạm vi được đối chiếu với mã nguồn trên develop, ngày 23/11/2026.
+% Nguồn: 02_FunctionalRequirement.xlsx, sheet Project Requirements Template.
+% Mã yêu cầu chính thức của báo cáo: FR-01, FR-02, ...; mỗi dòng một mã.
+% Các mã UC trong ghi chú nội bộ bên dưới chỉ tham chiếu tài liệu đặc tả gốc.
+%
+% Các phần chưa đưa vào báo cáo:
+% - UC-S19--S32: phòng hội thoại tự do/ghép cặp người thật; không đánh đồng
+%   với phòng game LiveKit. Migration hoặc model riêng lẻ không đủ làm bằng chứng.
+% - UC-W16: chưa có API/giao diện xóa bài đã nộp.
+% - UC-V22: chưa thấy game nối từ; UC-V26--V28: chưa thấy xếp hạng liên kỳ/huy hiệu.
+% - UC-R6: chưa có bản dịch toàn bài; UC-R14, UC-R16: chưa có luồng danh sách
+%   lịch sử đọc/đánh dấu hoàn thành riêng. UC-R15 chỉ khôi phục kết quả gần nhất.
+% - UC-CM07--CM08, UC-CM12--CM19: chưa thấy đủ luồng đổi mật khẩu khi đã đăng nhập,
+%   xóa tài khoản, nhắc học chung, hộp thông báo, thanh toán/quản lý gói trả phí.
+%   Nhắc ôn flashcard native được giữ riêng ở UC-V20.
+% Các mô tả thu hẹp đáng chú ý:
+% - UC-CM01/03: chỉ ghi email/mật khẩu, không cam kết mọi nhà cung cấp OAuth.
+% - UC-CM06: chỉ xem thông tin; UC-CM10: mục tiêu và phút/ngày, không ghi hạn thi.
+% - UC-V1--V2: từ vựng theo bài và tra Kanji; chưa có kho ngữ pháp độc lập.
+% - UC-V8--V12: yêu thích từ, tạo/sửa bộ; không ghi yêu thích Kanji/ngữ pháp,
+%   mô tả bộ hay xóa bộ vì API chưa hỗ trợ đủ.
+% - UC-S11--S12: nhận xét transcript, không chấm âm vị/phát âm/trọng âm.
+% - UC-S16: chỉ mở lại phiên còn hoạt động, không có thao tác pause riêng.
+% - UC-W7: tự lưu web cần mạng, không bảo đảm khôi phục phần chưa lưu khi offline.
+% - UC-W19--W21: so sánh hai bài cùng đề, câu thêm/bớt; không ghi đếm lỗi
+%   hay đánh dấu thay đổi theo từng ký tự giữa các phiên bản.
+%
+% Bằng chứng chính: backend/{SPEAKING,WRITING,READING,FLASHCARDS,SHADOWING,
+% VOCABULARY,DICTIONARY,GAMES,LEARNING}.md; routes.py tương ứng;
+% frontend/src/screens/{WritingWorkspaceScreen,ReadingScreen,ShadowingScreen,
+% AccountScreen,GameLibraryScreen,SpeakingScenariosScreen}.tsx;
+% frontend/src/components/{WritingVersionComparison,DictionaryWordActions}.tsx;
+% frontend/src/hooks/useWritingDocuments.ts.
+
+Các yêu cầu chức năng dưới đây được tổng hợp từ bảng đặc tả của đề tài~\cite{nihongo-functional2026} và giới hạn theo các thao tác đã có trong phiên bản được trình bày. Mỗi yêu cầu mô tả việc người học có thể thực hiện và kết quả hệ thống cần cung cấp. Mỗi yêu cầu được gán một mã duy nhất theo định dạng FR-xx (Functional Requirement -- yêu cầu chức năng), đánh số liên tục từ FR-01 theo thứ tự trình bày trong bảng. Các mã này được sử dụng thống nhất khi tham chiếu yêu cầu chức năng trong báo cáo.
+
+\begingroup
+\renewcommand{\arraystretch}{1.15}
+\setlength{\LTleft}{0pt}
+\setlength{\LTright}{\fill}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{3.4cm}p{12cm}@{}}
+  \caption{Các yêu cầu chức năng trong phạm vi hệ thống NihonGO}
+  \label{tab:functional-requirements}\\
+  \toprule
+  \textbf{Mã yêu cầu} & \textbf{Yêu cầu chức năng} \\
+  \midrule
+  \endfirsthead
+
+  \multicolumn{2}{c}{\tablename~\thetable{} (tiếp theo)}\\
+  \toprule
+  \textbf{Mã yêu cầu} & \textbf{Yêu cầu chức năng} \\
+  \midrule
+  \endhead
+
+  \midrule
+  \multicolumn{2}{r}{\textit{Tiếp ở trang sau}}\\
+  \endfoot
+
+  \bottomrule
+  \endlastfoot
+
+  \multicolumn{2}{@{}l}{\textbf{1. Tài khoản và thiết lập học tập}}\\*
+  FR-01 & \textbf{Đăng ký và xác thực.} Người dùng nhập thông tin đăng ký và mật khẩu. Hệ thống gửi mã xác thực qua email, kiểm tra mã và tạo tài khoản khi thông tin hợp lệ. \\
+  FR-02 & \textbf{Đăng nhập và đăng xuất.} Người dùng đăng nhập bằng email và mật khẩu; đăng xuất khi kết thúc sử dụng. \\
+  FR-03 & \textbf{Khôi phục mật khẩu.} Người dùng yêu cầu mã xác nhận và đặt mật khẩu mới. Hệ thống kiểm tra mã trước khi cập nhật mật khẩu. \\
+  FR-04 & \textbf{Xem thông tin tài khoản.} Người dùng xem họ tên, thông tin liên hệ và trạng thái xác thực của tài khoản. \\
+  FR-05 & \textbf{Thiết lập việc học.} Người dùng tự chọn trình độ từ mới bắt đầu đến N1, mục tiêu và số phút học mỗi ngày. Hệ thống lưu các lựa chọn và cho phép cập nhật sau đó. \\
+  \midrule
+
+  \multicolumn{2}{@{}l}{\textbf{2. Học từ vựng và tra cứu}}\\*
+  FR-06 & \textbf{Chọn bài học.} Người dùng chọn trình độ N5--N1, xem danh sách bài từ vựng và mở bài muốn học. \\
+  FR-07 & \textbf{Xem từ và nghe cách đọc.} Hệ thống hiển thị từ, cách đọc và nghĩa; người dùng mở thông tin bổ sung khi có và nghe cách đọc bằng chức năng phát âm. \\
+  FR-08 & \textbf{Tra cứu bằng từ khóa.} Người dùng nhập chữ Nhật, kana, romaji hoặc nghĩa tiếng Việt để tìm từ; chọn kết quả để xem chi tiết. Với Kanji, hệ thống hiển thị thông tin như âm đọc, nghĩa và thứ tự nét khi có trong dữ liệu. \\
+  FR-09 & \textbf{Tra chữ viết tay.} Người dùng vẽ một ký tự tiếng Nhật. Hệ thống đưa ra các ký tự gợi ý để người dùng chọn và tra cứu. \\
+  FR-10 & \textbf{Xem từ đã tra.} Hệ thống lưu các mục từ và Kanji đã mở trong lịch sử gần đây của tài khoản. Người dùng chọn một mục để xem lại. \\
+  FR-11 & \textbf{Quản lý từ yêu thích.} Người dùng thêm hoặc bỏ một từ khỏi danh sách yêu thích và mở danh sách đó để ôn tập. \\
+  FR-12 & \textbf{Tạo và sửa bộ thẻ.} Người dùng đặt tên bộ thẻ, nhập từ và nghĩa, chỉnh sửa tên hoặc thêm, sửa, bỏ thẻ trong bộ. Từ tra trong từ điển có thể được thêm vào bộ tự tạo. \\
+  \midrule
+
+  \multicolumn{2}{@{}l}{\textbf{3. Flashcard và lịch ôn tập}}\\*
+  FR-13 & \textbf{Học bằng flashcard.} Người dùng chọn bộ có sẵn, bộ tự tạo hoặc từ yêu thích; lật thẻ và chọn một trong bốn mức nhớ. Khi kết thúc, hệ thống hiển thị số thẻ đã học và kết quả tự đánh giá. \\
+  FR-14 & \textbf{Ôn thẻ đến hạn.} Hệ thống tính lần ôn tiếp theo từ mức nhớ đã chọn, hiển thị số thẻ cần ôn theo ngày và cho phép bắt đầu phiên ôn các thẻ đã đến hạn. \\
+  FR-15 & \textbf{Nhắc ôn trên điện thoại.} Người dùng bật nhắc ôn và chọn giờ. Khi được cấp quyền, ứng dụng hẹn thông báo cục bộ theo lịch thẻ. Chức năng nhắc này áp dụng cho ứng dụng di động. \\
+  FR-16 & \textbf{Xem tiến độ ôn tập.} Người dùng xem số từ đã tự đánh giá, các từ còn yếu và số thẻ cần ôn để lựa chọn hoạt động tiếp theo. \\
+  \midrule
+
+  \multicolumn{2}{@{}l}{\textbf{4. Nghe và Shadowing}}\\*
+  FR-17 & \textbf{Chọn nội dung nghe.} Người dùng chọn video trong thư viện hoặc nhập liên kết YouTube được hỗ trợ. Hệ thống hiển thị trạng thái chuẩn bị và mở bài khi dữ liệu phụ đề đã sẵn sàng. \\
+  FR-18 & \textbf{Luyện theo đoạn.} Người dùng nghe liên tục hoặc chọn từng đoạn để nghe và nhắc lại; có thể phát lại, lặp đoạn và thay đổi tốc độ phát. \\
+  FR-19 & \textbf{Xem phụ đề và bản dịch.} Phụ đề tiếng Nhật hiển thị theo thời gian video. Người dùng có thể ẩn, hiện phụ đề và bật bản dịch tiếng Việt; hệ thống thông báo trạng thái khi bản dịch đang được chuẩn bị. \\
+  FR-20 & \textbf{Tra từ trong phụ đề.} Người dùng chọn từ để xem cách đọc, nghĩa và sử dụng các thao tác lưu từ của công cụ từ điển. \\
+  FR-21 & \textbf{Nghe điền từ.} Người dùng nghe đoạn video, nhập phần còn thiếu trong câu và kiểm tra đúng, sai theo nội dung phụ đề. \\
+  FR-22 & \textbf{Trả lời câu hỏi nghe hiểu.} Người dùng chọn trình độ, số câu và yêu cầu AI tạo câu hỏi từ phụ đề. Hệ thống dừng video tại mốc câu hỏi, hiển thị kết quả và giải thích sau khi trả lời. Kết quả được xem lại trong phiên đang mở. \\
+  \midrule
+
+  \multicolumn{2}{@{}l}{\textbf{5. Hội thoại với AI}}\\*
+  FR-23 & \textbf{Chọn tình huống.} Người dùng xem, lọc tình huống theo trình độ và chủ đề; đọc bối cảnh, vai, mục tiêu và bắt đầu phiên hội thoại. \\
+  FR-24 & \textbf{Trao đổi với AI.} Người dùng nói hoặc nhập văn bản và chuyển cách nhập trong phiên. AI trả lời theo vai và bối cảnh của tình huống, kèm âm thanh phản hồi. \\
+  FR-25 & \textbf{Lưu nội dung hội thoại.} Hệ thống lưu từng lượt trao đổi và thời gian. Người dùng lựa chọn lưu âm thanh để có thể nghe lại khi bản ghi đã được lưu thành công. \\
+  FR-26 & \textbf{Nhận xét sau hội thoại.} Với phiên có đủ dữ liệu, hệ thống nhận xét ngữ pháp, từ vựng và độ tự nhiên dựa trên bản chép lời; hiển thị điểm và gợi ý diễn đạt. Nhận xét này không chấm phát âm. \\
+  FR-27 & \textbf{Quản lý lịch sử hội thoại.} Người dùng xem danh sách phiên, mở transcript và nhận xét, nghe bản ghi có sẵn hoặc xóa phiên của mình. \\
+  FR-28 & \textbf{Tiếp tục hoặc kết thúc.} Người dùng mở lại phiên còn hoạt động để tiếp tục, kết thúc phiên khi luyện xong hoặc tạo phiên mới với tình huống đã chọn. \\
+  \midrule
+
+  \multicolumn{2}{@{}l}{\textbf{6. Đọc hiểu}}\\*
+  FR-29 & \textbf{Chọn bài đọc.} Người dùng xem danh sách, lọc theo trình độ và dạng bài, tìm bằng từ khóa và mở nội dung bài đọc. \\
+  FR-30 & \textbf{Hỗ trợ đọc từ.} Người dùng bật, tắt furigana và chọn từ trong bài để xem cách đọc, nghĩa qua cửa sổ tra cứu. \\
+  FR-31 & \textbf{Xem hướng dẫn đọc.} Hệ thống hiển thị các mẹo đọc hiểu phù hợp với dấu hiệu trong bài để người học tham khảo. \\
+  FR-32 & \textbf{Làm và xem lại câu hỏi.} Người dùng chọn đáp án và nộp bài. Hệ thống tính điểm, hiển thị đáp án, cho phép yêu cầu AI giải thích và khôi phục kết quả gần nhất khi mở lại đúng phiên bản bài đọc. \\
+  FR-33 & \textbf{Phân tích bài đọc.} Theo yêu cầu, AI cung cấp tóm tắt, từ vựng và ngữ pháp đáng chú ý. Người dùng chọn một câu để xem phân tích cấu trúc và phần nội dung đang được giải thích. \\
+  FR-34 & \textbf{Lưu từ khi đọc.} Người dùng tra một từ trong bài và lưu vào danh sách yêu thích hoặc bộ thẻ cá nhân qua cửa sổ từ điển. \\
+  \midrule
+
+  \multicolumn{2}{@{}l}{\textbf{7. Luyện viết}}\\*
+  FR-35 & \textbf{Chọn đề viết.} Người dùng xem và lọc danh sách đề, đọc yêu cầu, xem gợi ý và mở vùng soạn bài. Bộ lọc có các mức N5--N1; bài được hiển thị theo nội dung hiện có. \\
+  FR-36 & \textbf{Soạn và quản lý bản nháp.} Người dùng nhập bài, theo dõi số ký tự, lưu, mở lại hoặc xóa nháp. Bản web tự lưu khi ngừng nhập và có kết nối; hệ thống báo nếu lưu không thành công. \\
+  FR-37 & \textbf{Nộp bài và xem góp ý.} Hệ thống kiểm tra nội dung trước khi nộp, yêu cầu AI nhận xét và hiển thị điểm theo tiêu chí. Người dùng xem bản gốc, các đoạn được góp ý, lý do sửa và bản sửa đề xuất. \\
+  FR-38 & \textbf{Xem và làm lại bài.} Người dùng mở bài đã nộp để xem nội dung và nhận xét, sau đó chỉnh sửa để nộp lần mới. Mỗi lần nộp được lưu riêng, giữ nguyên bài đã nộp trước đó. \\
+  FR-39 & \textbf{So sánh hai lần viết.} Người dùng chọn hai bài cùng đề để đối chiếu nội dung, điểm và nhận xét. Hệ thống liệt kê các câu được thêm hoặc bỏ giữa hai bài. \\
+  \midrule
+
+  \multicolumn{2}{@{}l}{\textbf{8. Trò chơi từ vựng}}\\*
+  FR-40 & \textbf{Chọn trò chơi và bộ từ.} Người dùng chọn trò trong kho game, trình độ và nguồn từ. Với chế độ nhiều người, người dùng tạo phòng hoặc tham gia bằng mã phòng. \\
+  FR-41 & \textbf{Luyện từ qua trò chơi.} Người dùng trả lời câu hỏi trắc nghiệm trong Công thành Momo hoặc nhập cách đọc trong trò Viết cách đọc. \\
+  FR-42 & \textbf{Xem kết quả trận.} Hệ thống kiểm tra câu trả lời theo luật của trò chơi, tính điểm và hiển thị kết quả khi trận kết thúc. \\
+\end{longtable}
+\endgroup

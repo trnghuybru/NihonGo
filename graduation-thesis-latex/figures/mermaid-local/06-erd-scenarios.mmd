@@ -1,0 +1,85 @@
+---
+title: Scenarios and Conversation Sessions
+---
+erDiagram
+    direction TB
+
+    %% Source: live local PostgreSQL catalog; schema public.
+    %% Snapshot: 2026-11-25T13:12:14.564538+00:00
+    %% PK = primary key; FK = foreign key; UK = single-column UNIQUE.
+    %% Composite UNIQUE constraints appear as comments.
+
+    scenario_categories {
+        uuid id PK "UUID"
+        varchar_100 name UK "VARCHAR(100)"
+        text description "TEXT; nullable"
+        integer sort_order "INTEGER"
+    }
+
+    scenarios {
+        uuid id PK "UUID"
+        uuid category_id FK "UUID"
+        varchar_200 title "VARCHAR(200)"
+        text description "TEXT"
+        text context "TEXT"
+        text learning_objectives "TEXT"
+        varchar_35 language_code "VARCHAR(35)"
+        varchar_16 difficulty_level "VARCHAR(16)"
+        integer estimated_duration_minutes "INTEGER"
+        varchar_16 status "VARCHAR(16)"
+        timestamp updated_at "TIMESTAMP"
+        timestamp created_at "TIMESTAMP"
+    }
+
+    %% UNIQUE scenario_roles (scenario_id, name)
+    %% UNIQUE scenario_roles (scenario_id, id)
+    %% UNIQUE scenario_roles (scenario_id, name)
+    %% UNIQUE scenario_roles (scenario_id, id)
+    scenario_roles {
+        uuid id PK "UUID"
+        uuid scenario_id FK "UUID"
+        varchar_100 name "VARCHAR(100)"
+        text description "TEXT"
+        text ai_instructions "TEXT"
+        text opening_message "TEXT; nullable"
+    }
+
+    conversation_sessions {
+        uuid id PK "UUID"
+        varchar_36 user_id FK "VARCHAR(36)"
+        uuid scenario_id FK "UUID"
+        uuid scenario_role_id FK "UUID"
+        uuid retry_of_session_id FK "UUID; nullable"
+        jsonb scenario_snapshot "JSONB"
+        varchar_16 status "VARCHAR(16)"
+        varchar_8 current_input_mode "VARCHAR(8)"
+        boolean audio_storage_enabled "BOOLEAN"
+        timestamp started_at "TIMESTAMP"
+        timestamp paused_at "TIMESTAMP; nullable"
+        timestamp ended_at "TIMESTAMP; nullable"
+        bigint accumulated_active_ms "BIGINT"
+        timestamp last_resumed_at "TIMESTAMP; nullable"
+        timestamp updated_at "TIMESTAMP"
+        timestamp created_at "TIMESTAMP"
+        timestamp deleted_at "TIMESTAMP; nullable"
+        timestamp audio_cleanup_after "TIMESTAMP; nullable"
+    }
+
+    users {
+        varchar_36 id PK "VARCHAR(36)"
+        varchar_100 name "VARCHAR(100)"
+        varchar_254 email "VARCHAR(254)"
+        varchar_20 phone "VARCHAR(20)"
+        text password_hash "TEXT; nullable"
+        boolean email_verified "BOOLEAN"
+        boolean phone_verified "BOOLEAN"
+        boolean active "BOOLEAN"
+        bigint created_at "BIGINT"
+    }
+
+    scenario_categories ||..o{ scenarios : "category_id"
+    scenarios ||..o{ scenario_roles : "scenario_id"
+    conversation_sessions |o..o{ conversation_sessions : "retry_of_session_id"
+    scenarios ||..o{ conversation_sessions : "scenario_id"
+    scenario_roles ||..o{ conversation_sessions : "scenario_id + scenario_role_id"
+    users ||..o{ conversation_sessions : "user_id"

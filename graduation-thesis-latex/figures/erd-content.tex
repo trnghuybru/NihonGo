@@ -1,0 +1,41 @@
+\begingroup
+\setstretch{1}
+\begin{tikzpicture}[
+entity/.style={draw=blue!45!black,rounded corners=2pt,fill=blue!2,inner sep=7pt,text width=6.15cm,minimum height=3.3cm,align=left,font=\fontsize{9}{11}\selectfont},
+rel/.style={draw=black!65,line width=.6pt,rounded corners=3pt},
+card/.style={fill=white,inner sep=1.5pt,font=\fontsize{8}{9}\selectfont}]
+\node[entity] (vocabularytextbooks) at (-3.9,0) {\textbf{\texttt{vocabulary\_textbooks}}\\[5pt]\begin{tabular}{@{}l@{\quad}l@{}}PK & \texttt{id} \\
+ & \texttt{title} \\
+ & \texttt{level} \\
+ & \texttt{source\_url} \\\end{tabular}};
+\node[entity] (vocabularylessons) at (3.9,0) {\textbf{\texttt{vocabulary\_lessons}}\\[5pt]\begin{tabular}{@{}l@{\quad}l@{}}PK & \texttt{id} \\
+FK & \texttt{textbook\_id} \\
+ & \texttt{unit\_number} \\
+ & \texttt{unit\_title} \\
+ & \texttt{number} \\\end{tabular}};
+\node[entity] (vocabularywords) at (-3.9,-4.65) {\textbf{\texttt{vocabulary\_words}}\\[5pt]\begin{tabular}{@{}l@{\quad}l@{}}PK & \texttt{id} \\
+FK & \texttt{lesson\_id} \\
+ & \texttt{number} \\
+ & \texttt{word} \\
+ & \texttt{reading} \\\end{tabular}};
+\node[entity] (dictionaryentries) at (3.9,-4.65) {\textbf{\texttt{dictionary\_entries}}\\[5pt]\begin{tabular}{@{}l@{\quad}l@{}}PK & \texttt{id} \\
+ & \texttt{word} \\
+ & \texttt{reading} \\
+ & \texttt{content} \\\end{tabular}};
+\node[entity] (dictionaryterms) at (-3.9,-9.3) {\textbf{\texttt{dictionary\_terms}}\\[5pt]\begin{tabular}{@{}l@{\quad}l@{}}PK & \texttt{id} \\
+FK & \texttt{entry\_id} \\
+ & \texttt{kind} \\
+ & \texttt{text} \\\end{tabular}};
+\node[entity] (dictionarykanji) at (3.9,-9.3) {\textbf{\texttt{dictionary\_kanji}}\\[5pt]\begin{tabular}{@{}l@{\quad}l@{}}PK & \texttt{literal} \\
+ & \texttt{content} \\
+ & \texttt{search\_text} \\
+ & \texttt{strokes} \\\end{tabular}};
+\node[entity] (dictionarysources) at (-3.9,-13.950000000000001) {\textbf{\texttt{dictionary\_sources}}\\[5pt]\begin{tabular}{@{}l@{\quad}l@{}}PK & \texttt{id} \\
+ & \texttt{content} \\\end{tabular}};
+\node[entity] (dictionaryhistory) at (3.9,-13.950000000000001) {\textbf{\texttt{dictionary\_history}}\\[5pt]\begin{tabular}{@{}l@{\quad}l@{}}PK,FK & \texttt{user\_id} \\
+ & \texttt{items} \\\end{tabular}};
+\draw[rel] (vocabularylessons.west) -- node[card,pos=.2]{0..N} node[card,pos=.8]{1} (vocabularytextbooks.east);
+\draw[rel] (vocabularywords.south) -- node[card,pos=.3]{0..N} (-3.9,-6.6000000000000005) -- (0,-6.6000000000000005) -- (0,-1.95) -- (3.9,-1.95) -- node[card,pos=.7]{1} (vocabularylessons.south);
+\draw[rel] (dictionaryterms.south) -- node[card,pos=.3]{0..N} (-3.9,-11.37) -- (0,-11.37) -- (0,-6.720000000000001) -- (3.9,-6.720000000000001) -- node[card,pos=.7]{1} (dictionaryentries.south);
+\end{tikzpicture}
+\endgroup

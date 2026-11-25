@@ -1,0 +1,40 @@
+\begingroup
+\setstretch{1}
+\begin{tikzpicture}[
+entity/.style={draw=blue!45!black,rounded corners=2pt,fill=blue!2,inner sep=7pt,text width=6.15cm,minimum height=3.3cm,align=left,font=\fontsize{9}{11}\selectfont},
+rel/.style={draw=black!65,line width=.6pt,rounded corners=3pt},
+card/.style={fill=white,inner sep=1.5pt,font=\fontsize{8}{9}\selectfont}]
+\node[entity] (users) at (-3.9,0) {\textbf{\texttt{users}}\\[5pt]\begin{tabular}{@{}l@{\quad}l@{}}PK & \texttt{id} \\
+ & \texttt{name} \\
+ & \texttt{email} \\
+ & \texttt{phone} \\\end{tabular}};
+\node[entity] (authidentities) at (3.9,0) {\textbf{\texttt{auth\_identities}}\\[5pt]\begin{tabular}{@{}l@{\quad}l@{}}PK & \texttt{id} \\
+FK & \texttt{user\_id} \\
+ & \texttt{provider} \\
+ & \texttt{subject} \\\end{tabular}};
+\node[entity] (authsessions) at (-3.9,-4.65) {\textbf{\texttt{auth\_sessions}}\\[5pt]\begin{tabular}{@{}l@{\quad}l@{}}PK & \texttt{id} \\
+FK & \texttt{user\_id} \\
+ & \texttt{access\_hash} \\
+ & \texttt{access\_expires\_at} \\
+ & \texttt{expires\_at} \\\end{tabular}};
+\node[entity] (authrefreshtokens) at (3.9,-4.65) {\textbf{\texttt{auth\_refresh\_tokens}}\\[5pt]\begin{tabular}{@{}l@{\quad}l@{}}PK & \texttt{token\_hash} \\
+FK & \texttt{session\_id} \\
+ & \texttt{used\_at} ? \\\end{tabular}};
+\node[entity] (authchallenges) at (-3.9,-9.3) {\textbf{\texttt{auth\_challenges}}\\[5pt]\begin{tabular}{@{}l@{\quad}l@{}}PK & \texttt{id} \\
+FK & \texttt{user\_id} ? \\
+ & \texttt{purpose} \\
+ & \texttt{channel} \\
+ & \texttt{destination} \\\end{tabular}};
+\node[entity] (authoauthflows) at (3.9,-9.3) {\textbf{\texttt{auth\_oauth\_flows}}\\[5pt]\begin{tabular}{@{}l@{\quad}l@{}}PK & \texttt{id} \\
+ & \texttt{provider} \\
+ & \texttt{state\_hash} \\
+ & \texttt{secret\_hash} \\\end{tabular}};
+\node[entity] (authratelimits) at (-3.9,-13.950000000000001) {\textbf{\texttt{auth\_rate\_limits}}\\[5pt]\begin{tabular}{@{}l@{\quad}l@{}}PK & \texttt{key} \\
+ & \texttt{count} \\
+ & \texttt{expires\_at} \\\end{tabular}};
+\draw[rel] (authidentities.west) -- node[card,pos=.2]{0..N} node[card,pos=.8]{1} (users.east);
+\draw[rel] (authsessions.north) -- node[card,pos=.2]{0..N} node[card,pos=.8]{1} (users.south);
+\draw[rel] (authrefreshtokens.west) -- node[card,pos=.2]{0..N} node[card,pos=.8]{1} (authsessions.east);
+\draw[rel] (authchallenges.west) -- node[card,pos=.35]{0..N} (-7.35,-9.3) -- (-7.35,0) -- node[card,pos=.65]{0..1} (users.west);
+\end{tikzpicture}
+\endgroup

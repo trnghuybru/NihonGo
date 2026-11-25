@@ -1,0 +1,57 @@
+---
+title: Flashcard Sessions and Reviews
+---
+erDiagram
+    direction TB
+
+    %% PK = primary key; FK = foreign key; UK = single-column unique constraint.
+    %% Attributes marked nullable permit NULL. Composite uniqueness is listed in comments.
+    %% External reference tables show only referenced columns and primary keys.
+
+    users {
+        varchar id PK "VARCHAR(36)"
+        varchar name "VARCHAR(100)"
+        varchar email "VARCHAR(254)"
+        varchar phone "VARCHAR(20)"
+    }
+
+    flashcard_sessions {
+        varchar id PK "VARCHAR(36)"
+        varchar user_id FK "VARCHAR(36)"
+        varchar kind "VARCHAR(16)"
+        varchar deck_id "VARCHAR(128)"
+        text title "TEXT"
+    }
+
+    %% UNIQUE flashcard_daily_quizzes (user_id, study_date)
+    flashcard_daily_quizzes {
+        varchar id PK "VARCHAR(36)"
+        varchar user_id FK "VARCHAR(36)"
+        date study_date "DATE"
+        json questions "JSON"
+        json answers "JSON"
+    }
+
+    %% UNIQUE flashcard_review_logs (session_id, card_id)
+    flashcard_review_logs {
+        varchar id PK "VARCHAR(36)"
+        varchar user_id FK "VARCHAR(36)"
+        varchar session_id FK "VARCHAR(36)"
+        varchar card_id "VARCHAR(160)"
+        integer grade "INTEGER"
+        bigint reviewed_at "BIGINT"
+    }
+
+    flashcard_schedules {
+        varchar user_id PK,FK "VARCHAR(36)"
+        varchar card_id PK "VARCHAR(160)"
+        json card "JSON"
+        json fsrs_card "JSON"
+        bigint due_at "BIGINT"
+    }
+
+    users ||..o{ flashcard_sessions : "user_id"
+    users ||..o{ flashcard_daily_quizzes : "user_id"
+    flashcard_sessions ||..o{ flashcard_review_logs : "session_id"
+    users ||..o{ flashcard_review_logs : "user_id"
+    users ||--o{ flashcard_schedules : "user_id"

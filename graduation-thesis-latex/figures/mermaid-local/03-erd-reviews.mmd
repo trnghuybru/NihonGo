@@ -1,0 +1,77 @@
+---
+title: Flashcard Sessions and Reviews
+---
+erDiagram
+    direction TB
+
+    %% Source: live local PostgreSQL catalog; schema public.
+    %% Snapshot: 2026-11-25T13:12:14.564538+00:00
+    %% PK = primary key; FK = foreign key; UK = single-column UNIQUE.
+    %% Composite UNIQUE constraints appear as comments.
+
+    users {
+        varchar_36 id PK "VARCHAR(36)"
+        varchar_100 name "VARCHAR(100)"
+        varchar_254 email "VARCHAR(254)"
+        varchar_20 phone "VARCHAR(20)"
+        text password_hash "TEXT; nullable"
+        boolean email_verified "BOOLEAN"
+        boolean phone_verified "BOOLEAN"
+        boolean active "BOOLEAN"
+        bigint created_at "BIGINT"
+    }
+
+    flashcard_sessions {
+        varchar_36 id PK "VARCHAR(36)"
+        varchar_36 user_id FK "VARCHAR(36)"
+        varchar_16 kind "VARCHAR(16)"
+        varchar_128 deck_id "VARCHAR(128)"
+        text title "TEXT"
+        jsonb cards "JSONB"
+        jsonb ratings "JSONB"
+        bigint started_at "BIGINT"
+        bigint finished_at "BIGINT; nullable"
+        jsonb rating_times "JSONB"
+    }
+
+    %% UNIQUE flashcard_daily_quizzes (user_id, study_date)
+    %% UNIQUE flashcard_daily_quizzes (user_id, study_date)
+    flashcard_daily_quizzes {
+        varchar_36 id PK "VARCHAR(36)"
+        varchar_36 user_id FK "VARCHAR(36)"
+        date study_date "DATE"
+        jsonb questions "JSONB"
+        jsonb answers "JSONB"
+        bigint started_at "BIGINT"
+        bigint finished_at "BIGINT; nullable"
+    }
+
+    %% UNIQUE flashcard_review_logs (session_id, card_id)
+    %% UNIQUE flashcard_review_logs (session_id, card_id)
+    flashcard_review_logs {
+        varchar_36 id PK "VARCHAR(36)"
+        varchar_36 user_id FK "VARCHAR(36)"
+        varchar_160 card_id "VARCHAR(160)"
+        varchar_36 session_id FK "VARCHAR(36)"
+        integer grade "INTEGER"
+        bigint reviewed_at "BIGINT"
+        bigint due_at "BIGINT"
+        jsonb fsrs_log "JSONB"
+    }
+
+    flashcard_schedules {
+        varchar_36 user_id PK,FK "VARCHAR(36)"
+        varchar_160 card_id PK "VARCHAR(160)"
+        jsonb card "JSONB"
+        jsonb fsrs_card "JSONB"
+        bigint due_at "BIGINT"
+        bigint last_review_at "BIGINT"
+        integer review_count "INTEGER"
+        boolean active "BOOLEAN"
+    }
+
+    users ||..o{ flashcard_sessions : "user_id"
+    users ||..o{ flashcard_daily_quizzes : "user_id"
+    flashcard_sessions ||..o{ flashcard_review_logs : "session_id"
+    users ||..o{ flashcard_review_logs : "user_id"
+    users ||--o{ flashcard_schedules : "user_id"

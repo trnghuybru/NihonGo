@@ -1,0 +1,59 @@
+---
+title: Scenarios and Conversation Sessions
+---
+erDiagram
+    direction TB
+
+    %% PK = primary key; FK = foreign key; UK = single-column unique constraint.
+    %% Attributes marked nullable permit NULL. Composite uniqueness is listed in comments.
+    %% External reference tables show only referenced columns and primary keys.
+
+    scenario_categories {
+        char id PK "CHAR(32)"
+        varchar name UK "VARCHAR(100)"
+        text description "TEXT; nullable"
+        integer sort_order "INTEGER"
+    }
+
+    scenarios {
+        char id PK "CHAR(32)"
+        char category_id FK "CHAR(32)"
+        varchar title "VARCHAR(200)"
+        text description "TEXT"
+        text context "TEXT"
+    }
+
+    %% UNIQUE scenario_roles (scenario_id, id)
+    %% UNIQUE scenario_roles (scenario_id, name)
+    scenario_roles {
+        char id PK "CHAR(32)"
+        char scenario_id FK "CHAR(32)"
+        varchar name "VARCHAR(100)"
+        text description "TEXT"
+        text ai_instructions "TEXT"
+    }
+
+    conversation_sessions {
+        char id PK "CHAR(32)"
+        varchar user_id FK "VARCHAR(36)"
+        char scenario_id FK "CHAR(32)"
+        char scenario_role_id FK "CHAR(32)"
+        char retry_of_session_id FK "CHAR(32); nullable"
+        json scenario_snapshot "JSON"
+        varchar status "VARCHAR(16)"
+        varchar current_input_mode "VARCHAR(8)"
+    }
+
+    users {
+        varchar id PK "VARCHAR(36)"
+        varchar name "VARCHAR(100)"
+        varchar email "VARCHAR(254)"
+        varchar phone "VARCHAR(20)"
+    }
+
+    scenario_categories ||..o{ scenarios : "category_id"
+    scenarios ||..o{ scenario_roles : "scenario_id"
+    conversation_sessions |o..o{ conversation_sessions : "retry_of_session_id"
+    scenarios ||..o{ conversation_sessions : "scenario_id"
+    scenario_roles ||..o{ conversation_sessions : "scenario_id + scenario_role_id"
+    users ||..o{ conversation_sessions : "user_id"

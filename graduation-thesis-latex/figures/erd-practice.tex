@@ -1,0 +1,50 @@
+\begingroup
+\setstretch{1}
+\begin{tikzpicture}[
+entity/.style={draw=blue!45!black,rounded corners=2pt,fill=blue!2,inner sep=7pt,text width=6.15cm,minimum height=3.3cm,align=left,font=\fontsize{9}{11}\selectfont},
+rel/.style={draw=black!65,line width=.6pt,rounded corners=3pt},
+card/.style={fill=white,inner sep=1.5pt,font=\fontsize{8}{9}\selectfont}]
+\node[entity] (users) at (-3.9,0) {\textbf{\texttt{users}}\\[5pt]\begin{tabular}{@{}l@{\quad}l@{}}PK & \texttt{id} \\
+ & \texttt{name} \\
+ & \texttt{email} \\
+ & \texttt{phone} \\\end{tabular}};
+\node[entity] (readingpassages) at (3.9,0) {\textbf{\texttt{reading\_passages}}\\[5pt]\begin{tabular}{@{}l@{\quad}l@{}}PK & \texttt{id} \\
+ & \texttt{level} \\
+ & \texttt{kind} \\
+ & \texttt{title} \\\end{tabular}};
+\node[entity] (readingattempts) at (-3.9,-4.65) {\textbf{\texttt{reading\_attempts}}\\[5pt]\begin{tabular}{@{}l@{\quad}l@{}}PK & \texttt{id} \\
+FK & \texttt{user\_id} \\
+FK & \texttt{passage\_id} \\
+ & \texttt{request\_id} \\
+ & \texttt{version} \\
+ & \texttt{result} \\\end{tabular}};
+\node[entity] (readinginsights) at (3.9,-4.65) {\textbf{\texttt{reading\_insights}}\\[5pt]\begin{tabular}{@{}l@{\quad}l@{}}PK,FK & \texttt{passage\_id} \\
+PK & \texttt{kind} \\
+ & \texttt{source\_hash} \\
+ & \texttt{status} \\
+ & \texttt{lease} ? \\\end{tabular}};
+\node[entity] (writingprompts) at (-3.9,-9.3) {\textbf{\texttt{writing\_prompts}}\\[5pt]\begin{tabular}{@{}l@{\quad}l@{}}PK & \texttt{id} \\
+ & \texttt{title} \\
+ & \texttt{level} \\
+ & \texttt{category} \\\end{tabular}};
+\node[entity] (writingdrafts) at (3.9,-9.3) {\textbf{\texttt{writing\_drafts}}\\[5pt]\begin{tabular}{@{}l@{\quad}l@{}}PK & \texttt{id} \\
+FK & \texttt{user\_id} \\
+FK & \texttt{prompt\_id} \\
+ & \texttt{text} \\
+ & \texttt{word\_count} \\
+ & \texttt{status} \\\end{tabular}};
+\node[entity] (writingsubmissions) at (-3.9,-13.950000000000001) {\textbf{\texttt{writing\_submissions}}\\[5pt]\begin{tabular}{@{}l@{\quad}l@{}}PK & \texttt{id} \\
+FK & \texttt{user\_id} \\
+FK & \texttt{prompt\_id} ? \\
+ & \texttt{prompt\_title} \\
+ & \texttt{text} \\
+ & \texttt{corrected\_text} \\\end{tabular}};
+\draw[rel] (readingattempts.north) -- node[card,pos=.2]{0..N} node[card,pos=.8]{1} (users.south);
+\draw[rel] (readingattempts.south) -- node[card,pos=.3]{0..N} (-3.9,-6.6000000000000005) -- (0,-6.6000000000000005) -- (0,-1.95) -- (3.9,-1.95) -- node[card,pos=.7]{1} (readingpassages.south);
+\draw[rel] (readinginsights.north) -- node[card,pos=.2]{0..N} node[card,pos=.8]{1} (readingpassages.south);
+\draw[rel] (writingdrafts.south) -- node[card,pos=.3]{0..N} (3.9,-11.37) -- (0,-11.37) -- (0,-2.07) -- (-3.9,-2.07) -- node[card,pos=.7]{1} (users.south);
+\draw[rel] (writingdrafts.west) -- node[card,pos=.2]{0..N} node[card,pos=.8]{1} (writingprompts.east);
+\draw[rel] (writingsubmissions.north) -- node[card,pos=.2]{0..N} node[card,pos=.8]{0..1} (writingprompts.south);
+\draw[rel] (writingsubmissions.west) -- node[card,pos=.35]{0..N} (-7.55,-13.950000000000001) -- (-7.55,0) -- node[card,pos=.65]{1} (users.west);
+\end{tikzpicture}
+\endgroup

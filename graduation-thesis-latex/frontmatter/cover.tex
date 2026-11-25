@@ -1,0 +1,61 @@
+% =====================================================================
+%  COVERS -- main cover (trang bia chinh) + inner cover (trang phu bia),
+%  identical, following "Mau 3" of QD 675:
+%    University name (regular) / Faculty (bold, 16 pt) / VKU logo /
+%    GRADUATION THESIS (bold, 25 pt) / thesis title (uppercase, bold, 16 pt) /
+%    student block (bold labels, 14 pt) / Danang - month/year (bold).
+%  Single-line frame. All text comes from main.tex (THESIS INFORMATION).
+% =====================================================================
+\newcommand{\makecoverpage}{%
+  \begin{titlepage}
+  \thispagestyle{empty}
+  \begin{tikzpicture}[remember picture, overlay]
+    \draw[line width=0.8pt]
+      ([xshift=2.2cm, yshift=-2.2cm]current page.north west)
+      rectangle
+      ([xshift=-2.2cm, yshift=2.2cm]current page.south east);
+  \end{tikzpicture}
+
+  \begin{center}
+    {\fontsize{16pt}{20pt}\selectfont \UniversityName \par}
+    \vspace{6pt}
+    {\fontsize{16pt}{20pt}\selectfont\bfseries \FacultyName \par}
+
+    \vspace{1.0cm}
+    % VKU logo, centred between the faculty name and the thesis type
+    % (position as in Mau 3 of QD 675). File: figures/logo.png
+    \includegraphics[width=4.5cm]{logo.png}\par
+    \vspace{0.6cm}
+
+    {\fontsize{25pt}{30pt}\selectfont\bfseries \ThesisType \par}
+
+    \vspace{1.2cm}
+    \begin{minipage}{0.88\textwidth}
+      \centering
+      \fontsize{16pt}{22pt}\selectfont\bfseries
+      \MakeUppercase{\ThesisTitle}\par
+    \end{minipage}\par
+
+    \vspace{2.2cm}
+    \begin{minipage}{0.85\textwidth}
+      \fontsize{14pt}{20pt}\selectfont
+      \begin{tabular}{@{}l@{\hspace{0.4cm}}l@{}}
+        \textbf{Student:}       & \StudentOne \\
+                                 & \StudentTwo \\
+        \textbf{Class:}          & \StudentClass \\
+        \textbf{Major:}          & \Major \\
+        \textbf{Specialization:} & \Specialization \\
+        \textbf{Supervisor:}     & \Instructor \\
+      \end{tabular}
+    \end{minipage}
+
+    \vfill
+    {\fontsize{14pt}{18pt}\selectfont\bfseries
+      \ThesisCity{} - \ThesisMonthYear \par}
+    \vspace{1cm}
+  \end{center}
+  \end{titlepage}
+}
+
+\makecoverpage   % main cover (trang bia chinh)
+\makecoverpage   % inner cover (trang phu bia)

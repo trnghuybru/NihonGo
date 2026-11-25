@@ -1,0 +1,86 @@
+---
+title: Accounts and Authentication
+---
+erDiagram
+    direction TB
+
+    %% Source: live local PostgreSQL catalog; schema public.
+    %% Snapshot: 2026-11-25T13:12:14.564538+00:00
+    %% PK = primary key; FK = foreign key; UK = single-column UNIQUE.
+    %% Composite UNIQUE constraints appear as comments.
+
+    users {
+        varchar_36 id PK "VARCHAR(36)"
+        varchar_100 name "VARCHAR(100)"
+        varchar_254 email "VARCHAR(254)"
+        varchar_20 phone "VARCHAR(20)"
+        text password_hash "TEXT; nullable"
+        boolean email_verified "BOOLEAN"
+        boolean phone_verified "BOOLEAN"
+        boolean active "BOOLEAN"
+        bigint created_at "BIGINT"
+    }
+
+    %% UNIQUE auth_identities (provider, subject)
+    %% UNIQUE auth_identities (provider, subject)
+    auth_identities {
+        varchar_36 id PK "VARCHAR(36)"
+        varchar_36 user_id FK "VARCHAR(36)"
+        varchar_16 provider "VARCHAR(16)"
+        varchar_255 subject "VARCHAR(255)"
+    }
+
+    auth_sessions {
+        varchar_36 id PK "VARCHAR(36)"
+        varchar_36 user_id FK "VARCHAR(36)"
+        varchar_64 access_hash UK "VARCHAR(64)"
+        bigint access_expires_at "BIGINT"
+        bigint expires_at "BIGINT"
+        bigint revoked_at "BIGINT; nullable"
+        bigint created_at "BIGINT"
+    }
+
+    auth_refresh_tokens {
+        varchar_64 token_hash PK "VARCHAR(64)"
+        varchar_36 session_id FK "VARCHAR(36)"
+        bigint used_at "BIGINT; nullable"
+    }
+
+    auth_challenges {
+        varchar_36 id PK "VARCHAR(36)"
+        varchar_16 purpose "VARCHAR(16)"
+        varchar_8 channel "VARCHAR(8)"
+        varchar_254 destination "VARCHAR(254)"
+        varchar_36 user_id FK "VARCHAR(36); nullable"
+        json payload "JSON"
+        varchar_64 code_hash "VARCHAR(64)"
+        integer attempts "INTEGER"
+        integer sends "INTEGER"
+        bigint expires_at "BIGINT"
+        bigint created_at "BIGINT"
+        bigint sent_at "BIGINT"
+        bigint consumed_at "BIGINT; nullable"
+    }
+
+    auth_oauth_flows {
+        varchar_36 id PK "VARCHAR(36)"
+        varchar_16 provider "VARCHAR(16)"
+        varchar_64 state_hash UK "VARCHAR(64)"
+        varchar_64 secret_hash "VARCHAR(64)"
+        varchar_128 nonce "VARCHAR(128)"
+        varchar_16 status "VARCHAR(16)"
+        json profile "JSON; nullable"
+        varchar_64 profile_token_hash UK "VARCHAR(64); nullable"
+        bigint expires_at "BIGINT"
+    }
+
+    auth_rate_limits {
+        varchar_64 key PK "VARCHAR(64)"
+        integer count "INTEGER"
+        bigint expires_at "BIGINT"
+    }
+
+    users ||..o{ auth_identities : "user_id"
+    users ||..o{ auth_sessions : "user_id"
+    auth_sessions ||..o{ auth_refresh_tokens : "session_id"
+    users |o..o{ auth_challenges : "user_id"

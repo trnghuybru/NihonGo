@@ -1,0 +1,49 @@
+\begingroup
+\setstretch{1}
+\begin{tikzpicture}[
+entity/.style={draw=blue!45!black,rounded corners=2pt,fill=blue!2,inner sep=7pt,text width=6.15cm,minimum height=3.3cm,align=left,font=\fontsize{9}{11}\selectfont},
+rel/.style={draw=black!65,line width=.6pt,rounded corners=3pt},
+card/.style={fill=white,inner sep=1.5pt,font=\fontsize{8}{9}\selectfont}]
+\node[entity] (conversationsessions) at (-3.9,0) {\textbf{\texttt{conversation\_sessions}}\\[5pt]\begin{tabular}{@{}l@{\quad}l@{}}PK & \texttt{id} \\
+FK & \texttt{user\_id} \\
+FK & \texttt{scenario\_id} \\
+FK & \texttt{scenario\_role\_id} \\
+FK & \texttt{retry\_of\_session\_id} ? \\
+ & \texttt{scenario\_snapshot} \\
+ & \texttt{status} \\
+ & \texttt{current\_input\_mode} \\\end{tabular}};
+\node[entity] (conversationmessages) at (3.9,0) {\textbf{\texttt{conversation\_messages}}\\[5pt]\begin{tabular}{@{}l@{\quad}l@{}}PK & \texttt{id} \\
+FK & \texttt{session\_id} \\
+ & \texttt{sequence\_number} \\
+ & \texttt{speaker} \\
+ & \texttt{input\_mode} \\\end{tabular}};
+\node[entity] (sessionevaluations) at (-3.9,-4.65) {\textbf{\texttt{session\_evaluations}}\\[5pt]\begin{tabular}{@{}l@{\quad}l@{}}PK & \texttt{id} \\
+FK & \texttt{session\_id} \\
+ & \texttt{status} \\
+ & \texttt{overall\_score} ? \\
+ & \texttt{summary} ? \\\end{tabular}};
+\node[entity] (conversationaudioassets) at (3.9,-4.65) {\textbf{\texttt{conversation\_audio\_assets}}\\[5pt]\begin{tabular}{@{}l@{\quad}l@{}}PK & \texttt{id} \\
+FK & \texttt{session\_id} \\
+FK & \texttt{message\_id} ? \\
+ & \texttt{asset\_type} \\
+ & \texttt{storage\_key} \\
+ & \texttt{mime\_type} \\\end{tabular}};
+\node[entity] (evaluationscores) at (-3.9,-9.3) {\textbf{\texttt{evaluation\_scores}}\\[5pt]\begin{tabular}{@{}l@{\quad}l@{}}PK & \texttt{id} \\
+FK & \texttt{evaluation\_id} \\
+FK & \texttt{criterion\_id} \\
+ & \texttt{criterion\_name\_snapshot} \\
+ & \texttt{weight} \\
+ & \texttt{score} \\\end{tabular}};
+\node[entity] (evaluationcriteria) at (3.9,-9.3) {\textbf{\texttt{evaluation\_criteria}}\\[5pt]\begin{tabular}{@{}l@{\quad}l@{}}PK & \texttt{id} \\
+ & \texttt{code} \\
+ & \texttt{name} \\
+ & \texttt{description} \\\end{tabular}};
+\draw[rel] (conversationsessions.south east) -- ++(.25,-.2) -- ++(0,-.35) -| (conversationsessions.south) node[card,pos=.8]{retry};
+\draw[rel] (conversationmessages.west) -- node[card,pos=.2]{0..N} node[card,pos=.8]{1} (conversationsessions.east);
+\draw[rel] (sessionevaluations.north) -- node[card,pos=.2]{0..1} node[card,pos=.8]{1} (conversationsessions.south);
+\draw[rel] (conversationaudioassets.north) -- node[card,pos=.2]{0..N} node[card,pos=.8]{0..1} (conversationmessages.south);
+\draw[rel] (conversationaudioassets.south) -- node[card,pos=.3]{0..N} (3.9,-6.6000000000000005) -- (0,-6.6000000000000005) -- (0,-1.95) -- (-3.9,-1.95) -- node[card,pos=.7]{1} (conversationsessions.south);
+\draw[rel] (evaluationscores.east) -- node[card,pos=.2]{0..N} node[card,pos=.8]{1} (evaluationcriteria.west);
+\draw[rel] (evaluationscores.north) -- node[card,pos=.2]{0..N} node[card,pos=.8]{1} (sessionevaluations.south);
+\end{tikzpicture}
+\endgroup

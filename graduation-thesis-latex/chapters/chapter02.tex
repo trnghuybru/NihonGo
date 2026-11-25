@@ -1,0 +1,164 @@
+% Nội dung 2.1--2.3: tiếng Việt, tiêu đề tiếng Anh.
+\chapter{Literature Review and Background}
+\label{chap:background}
+
+\section{FIELD OVERVIEW}
+
+\subsection{Technology Trends and Digital Transformation}
+
+Một buổi tự học tiếng Nhật có thể gồm nhiều hoạt động: đọc bài, tra từ mới, nghe cách phát âm, làm bài tập và ôn lại kiến thức. Khi sử dụng các công cụ riêng cho từng việc, người học phải tự chuyển nội dung giữa chúng. Chẳng hạn, sau khi tra một từ trong bài đọc, họ cần ghi lại từ đó rồi tạo thẻ để ôn vào ngày hôm sau. Vấn đề đặt ra cho NihonGO là làm cho những bước này thuận tiện hơn và giúp người học tiếp tục sử dụng kiến thức vừa học.
+
+Các công cụ học tập số cung cấp những cách hỗ trợ khác nhau. Từ điển giúp tìm nghĩa và cách dùng của từ. Flashcard, hay thẻ ghi nhớ, hỗ trợ ôn tập. Công cụ hội thoại tạo cơ hội thực hành nghe và trả lời. Trong đề tài này, nhóm xem xét ba hướng công nghệ liên quan trực tiếp đến những hoạt động đó.
+
+\textbf{Thứ nhất, lưu kết quả để tổ chức ôn tập.} Với thẻ ghi nhớ điện tử, hệ thống có thể lưu người học đã nhớ hoặc quên từ nào. Anki sử dụng kết quả ôn để xác định thời điểm xuất hiện lại của thẻ; tài liệu chính thức giới thiệu các phương pháp lập lịch dựa trên SM-2 và FSRS~\cite{anki-scheduler}. Cách làm này là cơ sở tham khảo cho chức năng ôn tập của NihonGO. Thay vì yêu cầu người học tự tìm lại toàn bộ từ cũ, hệ thống cần giúp họ xác định những thẻ đến lúc ôn.
+
+\textbf{Thứ hai, xử lý lời nói và âm thanh.} Tài liệu Gemini mô tả khả năng chuyển lời nói thành văn bản, phân tích âm thanh và trả lời câu hỏi về nội dung nghe được~\cite{gemini-audio}. Những khả năng này hỗ trợ xây dựng bài luyện nghe và chức năng trò chuyện. Ví dụ, trong tình huống gọi món, hệ thống cần nhận câu nói của người học, tạo câu trả lời của người phục vụ và phát lại bằng âm thanh. Độ chính xác của nội dung và thời gian chờ là hai yếu tố cần kiểm tra trong quá trình xây dựng.
+
+\textbf{Thứ ba, sử dụng AI làm đối tác luyện hội thoại.} Duolingo đã giới thiệu Video Call với nhân vật Lily và công bố hỗ trợ tiếng Nhật~\cite{duolingo-videocall}. Điều này cho thấy hội thoại AI đã được đưa vào sản phẩm học ngoại ngữ. Đối với NihonGO, nhóm lựa chọn cách tổ chức hội thoại theo tình huống để người học biết mình cần làm gì trong cuộc trao đổi, chẳng hạn hỏi đường, mua hàng hoặc giới thiệu bản thân.
+
+Từ ba hướng trên, NihonGO tập trung kết hợp bài luyện với công cụ tra cứu, ôn tập và xem lại kết quả. Người học cần biết bắt đầu ở đâu, hoàn thành bài như thế nào và nên ôn phần nào sau đó. Đây là những yêu cầu cụ thể để nhóm lựa chọn công nghệ và thiết kế chức năng.
+
+\subsection{Related Market}
+
+Theo khảo sát giáo dục tiếng Nhật ở nước ngoài năm 2024 của Japan Foundation, có 4.000.750 người học tại 143 quốc gia và vùng lãnh thổ. Việt Nam có 164.495 người học, đứng thứ sáu trong báo cáo. So với kỳ khảo sát năm 2021, số người học tại Việt Nam giảm 3,0\%~\cite{jpf2024}. Các số liệu này phản ánh số người học tại các cơ sở giảng dạy; hoạt động tự học cá nhân nằm ngoài phạm vi khảo sát.
+
+Với NihonGO, người dùng được xác định là người học tiếng Nhật ở mọi trình độ, từ mới bắt đầu đến N1. Nhóm này gồm sinh viên, người đi làm và người học vì sở thích. Nhu cầu giữa các nhóm khác nhau: người mới cần làm quen chữ và mẫu câu; người đã có nền tảng cần ôn kiến thức, đọc hiểu và thực hành diễn đạt. Vì vậy, hệ thống cần phân loại nội dung theo trình độ để người học lựa chọn bài phù hợp.
+
+Trong giai đoạn dùng thử, nhóm dự kiến tiếp cận sinh viên trước vì đây là đối tượng chiếm phần lớn mẫu khảo sát của đề tài. Sau đó, cần bổ sung người học trung cấp, cao cấp và người đi làm để đánh giá khả năng đáp ứng ở những nhóm còn lại. Phạm vi người dùng của sản phẩm vẫn bao gồm tất cả trình độ.
+
+Về thương mại hóa, số người học trong báo cáo của Japan Foundation chỉ cung cấp bối cảnh, chưa cho biết có bao nhiêu người sẽ dùng hoặc trả phí cho NihonGO. Để xây dựng gói sử dụng, nhóm cần tìm hiểu thêm ngân sách của người học và chi phí vận hành từng chức năng. Nội dung này được tiếp tục phân tích trong Chương 3.
+
+\section{MARKET DEMAND SURVEY AND RELATED PRODUCTS}
+
+\subsection{Market Demand Survey}
+
+\subsubsection{Survey Participants}
+
+Khảo sát thu được 48 phản hồi từ ngày 16/09/2026 đến ngày 17/11/2026. Có 47 người là sinh viên và một người học vì sở thích. Về trình độ tự đánh giá, hai người vừa bắt đầu, 37 người ở mức N5--N4, sáu người ở mức N3 và ba người ở mức N2--N1~\cite{nihongo-survey2026}.
+
+Bảng hỏi tìm hiểu ba nội dung chính: người học đang gặp khó khăn gì, họ đang sử dụng công cụ nào và họ muốn được hỗ trợ thêm điều gì. Các câu hỏi về khó khăn và công cụ cho phép chọn nhiều đáp án. Vì vậy, một người có thể được tính ở nhiều lựa chọn; tỷ lệ của mỗi lựa chọn được tính trên tổng số 48 người trả lời.
+
+\subsubsection{Main Findings}
+
+Kết quả khảo sát cho thấy nhu cầu cần chú ý trước hết là \textbf{ghi nhớ kiến thức}. Có 36 người chọn khó khăn về Kanji, tương đương 75,0\%, và 20 người chọn khó khăn về vốn từ nền tảng, tương đương 41,7\%. Một số ý kiến muốn học chữ qua bộ thủ, ví dụ và câu chuyện; các ý kiến khác muốn ôn tập ngắt quãng hoặc lưu lại từ đã tra. Những phản hồi này dẫn đến yêu cầu về tra cứu Kanji, lưu từ và ôn bằng flashcard trong NihonGO.
+
+Nhu cầu thứ hai là \textbf{thực hành giao tiếp}. Một người trả lời cho biết đã học từ vựng và ngữ pháp nhưng vẫn khó tạo câu khi nói. Những người khác đề nghị hội thoại với AI, luyện phản xạ và nhận góp ý về cách dùng từ. Vì vậy, phần luyện nói của NihonGO cần tạo ra cuộc trao đổi hai chiều, trong đó người học tự đưa ra câu trả lời và nghe phản hồi theo tình huống.
+
+Nhu cầu thứ ba là \textbf{hiểu cách dùng và biết chỗ cần sửa}. Các phản hồi đề cập đến thiếu giải thích ngữ cảnh và khó tự nhận biết lỗi phát âm. Từ đó, nhóm xác định phản hồi học tập cần chỉ rõ câu hoặc phần nội dung đang được nhận xét. Ví dụ, góp ý cho bài viết nên chỉ ra cách dùng từ chưa phù hợp và đề xuất cách diễn đạt khác. Riêng việc đánh giá phát âm cần kiểm tra khả năng xử lý âm thanh; bản chép lời chỉ cho biết hệ thống đã nhận dạng được nội dung nào.
+
+Nhu cầu thứ tư là \textbf{duy trì việc học}. Có 35 người, tương đương 72,9\%, chọn khó khăn về động lực và tần suất. Các mong muốn được nêu gồm mục tiêu rõ ràng, hoạt động bớt nhàm chán và cảm giác hoàn thành sau khi học. Do đó, NihonGO cần hiển thị kết quả bài luyện và tiến độ để người học nhìn thấy những việc đã làm, đồng thời thuận tiện quay lại bài tiếp theo.
+
+Đối với người học trình độ cao hơn, nhóm phân tích riêng chín phản hồi thuộc N3--N1 vì câu hỏi này dành cho đối tượng đó. Sáu người chọn khó khăn giao tiếp như người bản xứ, sáu người chọn tình trạng học chững lại và năm người chọn sắc thái ngữ pháp phức tạp. Kết quả gợi ý cần chuẩn bị thêm ngữ cảnh giao tiếp và giải thích cách diễn đạt cho người học trung cấp, cao cấp.
+
+Ngoài nội dung học, một số phản hồi còn đề cập đến \textbf{chi phí}. Người trả lời mong muốn có chức năng giao tiếp miễn phí hoặc mức phí phù hợp với sinh viên. Đây là lý do để nhóm cân nhắc một gói cơ bản và giới hạn sử dụng AI rõ ràng. Mức giá cụ thể cần được khảo sát thêm vì bảng hỏi hiện tại chưa thu thập ngân sách của từng người.
+
+Các số liệu và ý kiến trên được tổng hợp từ khảo sát của đề tài~\cite{nihongo-survey2026}. Do phần lớn người tham gia là sinh viên N5--N4, nhóm sử dụng kết quả để lựa chọn chức năng ban đầu và sẽ tiếp tục lấy ý kiến ở những trình độ khác. Hiệu quả của các chức năng được đánh giá khi người dùng trực tiếp sử dụng NihonGO.
+
+\subsection{Related Products and Systems}
+
+Nhóm lựa chọn Mazii, Anki, Quizlet, Duolingo và các công cụ trò chuyện AI để tìm hiểu vì chúng xuất hiện trong câu trả lời khảo sát. Thông tin chức năng dưới đây dựa trên tài liệu chính thức được tra cứu ngày 23/11/2026. Việc so sánh tập trung vào từng hoạt động học để xác định những điểm NihonGO cần tham khảo và hoàn thiện.
+
+\subsubsection{Dictionary and Review Tools}
+
+\textbf{Mazii} cung cấp tra từ, Kanji, ngữ pháp, tìm chữ viết tay và tra bằng camera. Nhà phát triển còn giới thiệu flashcard, đọc tin, luyện JLPT và các chức năng AI hỗ trợ dịch, hội thoại, phát âm, sửa ngữ pháp~\cite{mazii-app}. Mazii vì thế là sản phẩm cần đối chiếu ở cả tra cứu và luyện tập. Với NihonGO, nhóm chú ý đến cách người học tra một từ trong bài và lưu lại để ôn.
+
+\textbf{Anki} được xem xét ở cách học bằng thẻ và lên lịch ôn. Phương pháp FSRS sử dụng lịch sử trả lời để xác định thời điểm ôn tiếp theo~\cite{anki-scheduler}. NihonGO có thể tham khảo cách ghi nhận mức nhớ của từng thẻ. Phần thực hành nghe, nói, đọc và viết cần tiếp tục tạo cơ hội cho người học dùng những từ đã ôn vào câu và tình huống.
+
+\textbf{Quizlet} tổ chức nội dung thành các bộ thẻ gồm thuật ngữ và định nghĩa. Chế độ Flashcards hỗ trợ lật thẻ, phân loại nội dung đã biết, còn học và nghe âm thanh~\cite{quizlet-flashcards}. Chế độ Learn cung cấp các dạng câu hỏi theo mục tiêu và mức độ quen thuộc với bộ thẻ~\cite{quizlet-learn}. Nhóm tham khảo cách trình bày dễ thao tác và cách luyện cùng một bộ kiến thức bằng nhiều dạng bài.
+
+\subsubsection{Conversation Tools}
+
+\textbf{Duolingo} cung cấp Video Call với nhân vật AI Lily. Người học có thể trò chuyện, yêu cầu nhắc lại hoặc nói chậm hơn; chức năng được công bố có hỗ trợ tiếng Nhật~\cite{duolingo-videocall}. Đây là ví dụ để tham khảo khi thiết kế phần luyện hội thoại. Với NihonGO, nhóm cần kiểm tra người học có nghe được câu trả lời, hiểu tình huống và tiếp tục cuộc trao đổi hay không.
+
+\textbf{Các công cụ trò chuyện AI} như ChatGPT, Gemini hoặc công cụ khác được 45/48 người trong khảo sát lựa chọn, chiếm 93,8\%~\cite{nihongo-survey2026}. Người học đã có thể sử dụng nhóm công cụ này cho những yêu cầu học tập của mình. Vì vậy, NihonGO cần làm rõ giá trị của việc học trong một ứng dụng riêng: có bài để chọn, có kết quả được lưu và có nội dung để tiếp tục ôn sau buổi học.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Những nội dung tham khảo từ các sản phẩm liên quan}
+  \label{tab:related-product-tasks}
+  \begin{tabular}{@{}p{2.1cm}p{5.6cm}p{6.7cm}@{}}
+    \toprule
+    \textbf{Sản phẩm} & \textbf{Hoạt động được tìm hiểu} & \textbf{Nội dung tham khảo cho NihonGO} \\
+    \midrule
+    Mazii & Tra cứu và luyện tập & Tra từ trong bài, lưu từ để ôn \\
+    Anki & Ôn tập bằng thẻ ghi nhớ & Lưu mức nhớ và lên lịch ôn thẻ \\
+    Quizlet & Học bằng bộ thẻ và câu hỏi & Giao diện ôn tập, các dạng bài \\
+    Duolingo & Hội thoại với nhân vật AI & Cách bắt đầu và tiếp tục hội thoại \\
+    Công cụ AI & Trao đổi theo yêu cầu của người học & Kết nối hỏi đáp với bài học và lịch sử \\
+    \bottomrule
+  \end{tabular}
+  \par\smallskip
+  {\fontsize{11pt}{14pt}\selectfont Nguồn: nhóm tổng hợp từ tài liệu sản phẩm và khảo sát đã dẫn tại Mục 1.2. Bảng trình bày nội dung tham khảo, không xếp hạng chất lượng sản phẩm.\par}
+\end{table}
+
+Qua việc tìm hiểu, nhóm xác định NihonGO cần tập trung vào quá trình học: chọn bài phù hợp, thực hành, xem phản hồi và ôn lại phần cần củng cố. Để đánh giá cách tổ chức này, nhóm sẽ kiểm tra người dùng có hoàn thành được bài và tìm lại kiến thức đã học hay không. Kết quả dùng thử sẽ cho biết những bước nào còn khó sử dụng và cần sửa.
+
+\section{STRATEGIC ANALYSIS}
+
+\subsection{SWOT Analysis}
+
+Phân tích SWOT giúp nhóm nhìn rõ điểm mạnh, điểm yếu, cơ hội và thách thức khi phát triển NihonGO. Phần dưới đây dựa trên dữ liệu khảo sát, phạm vi sản phẩm và những công cụ đã tìm hiểu ở Mục 1.2.
+
+\subsubsection{Strengths}
+
+\textbf{Chức năng có cơ sở từ nhu cầu người học.} Khảo sát cung cấp những vấn đề cụ thể như khó nhớ Kanji, thiếu cơ hội nói và khó duy trì việc học. Nhờ đó, nhóm có căn cứ để lựa chọn tra cứu, flashcard, hội thoại và theo dõi tiến độ. Các chức năng được phát triển để phục vụ những hoạt động học đã xác định.
+
+\textbf{Có thể thiết kế các phần học dùng chung dữ liệu.} Trong phạm vi hệ thống, nhóm có thể tổ chức tài khoản, bài luyện và lịch sử học theo một thiết kế thống nhất. Đây là điều kiện để kết nối tra cứu với ôn tập và xem lại kết quả. Mức độ thuận tiện của cách kết nối này cần được kiểm tra trong bản dùng thử.
+
+\subsubsection{Weaknesses}
+
+\textbf{Dữ liệu nhu cầu ở trình độ cao còn ít.} Khảo sát chỉ có chín người tự đánh giá thuộc N3--N1. Để phục vụ mọi trình độ, nhóm cần bổ sung phản hồi từ người học trung cấp và cao cấp, đồng thời kiểm tra bài đọc, tình huống hội thoại và cách góp ý phù hợp với từng mức.
+
+\textbf{Khối lượng nội dung và kiểm thử lớn.} Bốn kỹ năng cần những bài luyện và cách đánh giá khác nhau. Ngoài lập trình, nhóm phải chuẩn bị nội dung, kiểm tra đáp án và xem xét phản hồi AI. Vì vậy, mỗi phiên bản cần ưu tiên các bài có thể thực hiện đầy đủ từ lúc bắt đầu đến khi nhận kết quả.
+
+\textbf{Chưa có kết quả theo dõi học tập dài hạn.} Khảo sát hiện tại cho biết người học muốn gì, còn mức độ tiến bộ cần được đo sau một thời gian dùng sản phẩm. Nhóm cần xây dựng cách đánh giá riêng cho chức năng, trải nghiệm và kết quả học tập.
+
+\subsubsection{Opportunities}
+
+\textbf{Có những nhu cầu cụ thể để triển khai thử.} Người tham gia đã đề nghị hội thoại AI, ôn tập ngắt quãng, giải thích theo ngữ cảnh và lưu phần hay quên. Nhóm có thể chọn các hoạt động này để xây dựng bản dùng thử rồi lấy phản hồi trực tiếp.
+
+\textbf{Dịch vụ AI sẵn có hỗ trợ quá trình phát triển.} Các khả năng xử lý âm thanh như Gemini cung cấp thành phần kỹ thuật cho luyện nghe và nói~\cite{gemini-audio}. Nhờ đó, nhóm có thể tập trung vào bài học, giao diện và dữ liệu, đồng thời đo chất lượng và chi phí của dịch vụ khi tích hợp.
+
+\textbf{Có thể tiếp cận người dùng qua môi trường học tập.} Nhóm đề xuất tổ chức dùng thử với sinh viên, nhóm tự học hoặc câu lạc bộ tiếng Nhật. Người tham gia sẽ thực hiện các bài luyện cụ thể và góp ý về những bước còn khó dùng. Đây là cách tiếp cận dự kiến cho giai đoạn hoàn thiện sản phẩm.
+
+\subsubsection{Threats}
+
+\textbf{Người học đã có nhiều lựa chọn.} Mazii và Duolingo đã giới thiệu chức năng AI, còn Anki và Quizlet đã được sử dụng trong mẫu khảo sát. NihonGO cần đem lại trải nghiệm rõ ràng và ổn định để người học có lý do sử dụng thêm sản phẩm.
+
+\textbf{Chi phí và khả năng hoạt động phụ thuộc dịch vụ bên ngoài.} Nếu dịch vụ AI tăng giá, giới hạn lượt gọi hoặc gặp lỗi, phần luyện tập liên quan sẽ bị ảnh hưởng. Nhóm cần theo dõi chi phí từng hoạt động, đặt hạn mức sử dụng và thông báo lỗi dễ hiểu cho người dùng.
+
+\textbf{Phản hồi sai ảnh hưởng đến việc học.} Một lời giải thích sai có thể khiến người học ghi nhớ cách dùng chưa đúng. Do đó, nhóm cần kiểm tra phản hồi trên các bài mẫu và ghi nhận trường hợp sai để chỉnh sửa. Đây là công việc phải duy trì khi bổ sung học liệu và thay đổi mô hình AI.
+
+\subsection{Porter's Five Forces Analysis}
+
+Mô hình năm áp lực cạnh tranh xem xét đối thủ hiện tại, đối thủ mới, sản phẩm thay thế, nhà cung cấp và khách hàng~\cite{hbs-fiveforces}. Nhóm áp dụng mô hình này để xác định NihonGO sẽ cạnh tranh với ai, phụ thuộc vào nguồn lực nào và cần làm gì để duy trì sản phẩm.
+
+\subsubsection{Rivalry among Existing Competitors}
+
+Đối thủ hiện tại gồm các ứng dụng mà người học đã sử dụng như Mazii, Anki, Quizlet và Duolingo. Người dùng có sẵn thói quen học và dữ liệu ở những công cụ đó. Vì vậy, NihonGO cần cho họ thấy lợi ích qua một bài luyện cụ thể. Chẳng hạn, khi làm bài đọc, người dùng có thể tra và lưu từ thuận tiện hay không; sau bài viết, họ có hiểu cách chỉnh sửa hay không. Các hoạt động này cần được hoàn thiện trước khi mở rộng thêm tính năng.
+
+\subsubsection{Threat of New Entrants}
+
+Dịch vụ AI sẵn có giúp các nhóm phát triển khác cũng có thể xây dựng ứng dụng hội thoại. Vì vậy, nhóm nhận định rằng chỉ kết nối AI vào một giao diện sẽ khó tạo lợi thế lâu dài. NihonGO cần đầu tư vào nội dung được kiểm tra, cách phân loại trình độ và chất lượng bài luyện. Những phần này cần được cải thiện từ phản hồi thực tế qua từng phiên bản.
+
+\subsubsection{Threat of Substitutes}
+
+Ngoài ứng dụng, người học có thể dùng giáo trình, xem video, học với giáo viên hoặc tham gia câu lạc bộ. Những cách này cùng phục vụ nhu cầu học tiếng Nhật. Vai trò được lựa chọn cho NihonGO là hỗ trợ tự luyện, nhất là khi người học muốn ôn một bài hoặc thực hành một cuộc hội thoại ngắn. Sản phẩm cần giúp họ thực hiện được hoạt động đó trong thời gian và điều kiện sẵn có.
+
+\subsubsection{Bargaining Power of Suppliers}
+
+NihonGO cần dịch vụ AI, xử lý tiếng nói, máy chủ và nội dung học tập. Nếu hệ thống phụ thuộc hoàn toàn vào một dịch vụ, việc thay đổi giá hoặc ngừng cung cấp có thể gây khó khăn khi vận hành. Để giảm phụ thuộc, nhóm cần tách phần kết nối dịch vụ khỏi phần quản lý bài học, lưu thông tin cần thiết và theo dõi chi phí. Đối với học liệu, cần xác định nguồn và điều kiện sử dụng trước khi đưa vào ứng dụng.
+
+\subsubsection{Bargaining Power of Users}
+
+Người học có thể chọn nhiều công cụ và cân nhắc chi phí trước khi sử dụng. Khảo sát đã ghi nhận mong muốn có mức phí phù hợp với sinh viên. Vì vậy, NihonGO cần công bố rõ chức năng miễn phí, chức năng trả phí và số lượt sử dụng AI trong từng gói. Trước khi chốt giá, nhóm cần khảo sát ngân sách và đo chi phí phục vụ thực tế.
+
+Từ phân tích trên, nhóm xác định ba việc cần ưu tiên: hoàn thiện bài luyện cốt lõi, kiểm tra nội dung theo trình độ và kiểm soát chi phí AI. Những việc này sẽ được cụ thể hóa trong yêu cầu hệ thống ở Mục 1.4 và mô hình kinh doanh ở Chương 3.
+
+\section{SYSTEM REQUIREMENTS}
+\subsection{Functional Requirements}
+\label{sec:functional-requirements}
+\input{chapters/functional-requirements}
+\subsection{Non-Functional Requirements}
+\section{THEORETICAL BACKGROUND}
+\section{CHAPTER SUMMARY}

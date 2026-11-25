@@ -1,0 +1,58 @@
+---
+title: Shadowing and Video Examples
+---
+erDiagram
+    direction TB
+
+    %% PK = primary key; FK = foreign key; UK = single-column unique constraint.
+    %% Attributes marked nullable permit NULL. Composite uniqueness is listed in comments.
+    %% External reference tables show only referenced columns and primary keys.
+
+    users {
+        varchar id PK "VARCHAR(36)"
+        varchar name "VARCHAR(100)"
+        varchar email "VARCHAR(254)"
+        varchar phone "VARCHAR(20)"
+    }
+
+    shadowing_requests {
+        varchar user_id PK,FK "VARCHAR(36)"
+        varchar job_id PK,FK "VARCHAR(36)"
+        bigint created_at "BIGINT"
+    }
+
+    shadowing_jobs {
+        varchar id PK "VARCHAR(36)"
+        varchar video_id UK "VARCHAR(11)"
+        varchar status "VARCHAR(24)"
+        text title "TEXT"
+    }
+
+    shadowing_translations {
+        varchar id PK "VARCHAR(36)"
+        varchar job_id FK,UK "VARCHAR(36)"
+        varchar language "VARCHAR(8)"
+        varchar source_hash "VARCHAR(64)"
+        json source "JSON"
+    }
+
+    example_videos {
+        varchar id PK "VARCHAR(11)"
+        text title "TEXT"
+        text channel "TEXT"
+        float duration_seconds "FLOAT"
+    }
+
+    %% UNIQUE video_caption_segments (video_id, sequence)
+    video_caption_segments {
+        varchar id PK "VARCHAR(128)"
+        varchar video_id FK "VARCHAR(11)"
+        integer sequence "INTEGER"
+        text text "TEXT"
+        text search_text "TEXT"
+    }
+
+    shadowing_jobs ||--o{ shadowing_requests : "job_id"
+    users ||--o{ shadowing_requests : "user_id"
+    shadowing_jobs ||..o| shadowing_translations : "job_id"
+    example_videos ||..o{ video_caption_segments : "video_id"

@@ -1,0 +1,178 @@
+% =====================================================================
+%  CHAPTER 3. PRODUCT DESIGN AND DEVELOPMENT  (<= 25 pages)
+%  Headings only (form).
+% =====================================================================
+\chapter{Product Design and Development}
+
+\section{SYSTEM ARCHITECTURE}
+\subsection{Overall Architecture}
+
+\begin{figure}[htbp]
+  \centering
+  \input{figures/overall-architecture}
+  \caption{Kiến trúc tổng thể hệ thống NihonGO}
+  \label{fig:overall-architecture}
+\end{figure}
+\newpage
+
+\clearpage
+\subsection{System Components}
+\subsubsection{Client Layer}
+\begin{figure}[htbp]
+  \centering
+  \input{figures/client-layer}
+  \caption{Kiến trúc chi tiết tầng Client}
+  \label{fig:client-layer}
+\end{figure}
+\clearpage
+\subsubsection{Application Layer}
+\begin{figure}[htbp]
+  \centering
+  \input{figures/application-layer}
+  \caption{Kiến trúc chi tiết tầng Application}
+  \label{fig:application-layer}
+\end{figure}
+\clearpage
+\subsubsection{Data Layer}
+\begin{figure}[htbp]
+  \centering
+  \input{figures/data-layer}
+  \caption{Kiến trúc chi tiết tầng Data}
+  \label{fig:data-layer}
+\end{figure}
+\clearpage
+\section{DATABASE DESIGN}
+\subsection{Database Overview}
+Các sơ đồ mô tả 54 bảng từ các model SQLAlchemy, được đối chiếu với migrations của backend. Sơ đồ tổng quan chọn các bảng trung tâm; các hình chi tiết chia theo nhóm nghiệp vụ và có thể lặp lại bảng tham chiếu.
+
+\noindent{\small\raggedright\textbf{Quy ước:} PK là khóa chính, FK là khóa ngoại; nhiều trường cùng mang PK tạo khóa chính ghép. Dấu ? chỉ trường cho phép NULL. Nhãn 1, 0..1 và 0..N biểu diễn số bản ghi ở mỗi đầu quan hệ. Mỗi khối chỉ liệt kê các trường khóa và một số thuộc tính chính; các đường nối biểu diễn FK thực tế. Bảng không có FK được giữ độc lập.\par}
+
+\begin{figure}[htbp]
+  \centering
+  \input{figures/erd-overview}
+  \caption{ERD tổng quan các bảng trung tâm}
+  \label{fig:erd-overview}
+\end{figure}
+\clearpage
+\subsection{Accounts and Authentication}
+\begin{figure}[htbp]
+  \centering
+  \input{figures/erd-auth}
+  \caption{ERD: Accounts and Authentication}
+  \label{fig:erd-auth}
+\end{figure}
+\clearpage
+\subsection{Learning and Flashcard Collections}
+\begin{figure}[htbp]
+  \centering
+  \input{figures/erd-learning}
+  \caption{ERD: Learning and Flashcard Collections}
+  \label{fig:erd-learning}
+\end{figure}
+\clearpage
+\subsection{Flashcard Sessions and Reviews}
+{\small\raggedright Các trường \texttt{deck\_id} và \texttt{card\_id} không được khai báo FK; vì vậy hình không nối chúng với bảng deck hoặc bảng từ vựng.\par}
+
+\begin{figure}[htbp]
+  \centering
+  \input{figures/erd-reviews}
+  \caption{ERD: Flashcard Sessions and Reviews}
+  \label{fig:erd-reviews}
+\end{figure}
+\clearpage
+\subsection{Vocabulary and Dictionary}
+{\small\raggedright Trường \texttt{dictionary\_history.user\_id} tham chiếu \texttt{users.id} ở nhóm tài khoản. Không có FK từ các bảng từ điển sang bảng từ vựng.\par}
+
+\begin{figure}[htbp]
+  \centering
+  \input{figures/erd-content}
+  \caption{ERD: Vocabulary and Dictionary}
+  \label{fig:erd-content}
+\end{figure}
+\clearpage
+\subsection{Reading and Writing}
+\begin{figure}[htbp]
+  \centering
+  \input{figures/erd-practice}
+  \caption{ERD: Reading and Writing}
+  \label{fig:erd-practice}
+\end{figure}
+\clearpage
+\subsection{Scenarios and Conversation Sessions}
+{\small\raggedright FK ghép: \texttt{(scenario\_id, scenario\_role\_id)} của \texttt{conversation\_sessions} tham chiếu \texttt{scenario\_roles.(scenario\_id, id)}. Quan hệ tự tham chiếu thể hiện phiên luyện tập lại.\par}
+
+\begin{figure}[htbp]
+  \centering
+  \input{figures/erd-scenarios}
+  \caption{ERD: Scenarios and Conversation Sessions}
+  \label{fig:erd-scenarios}
+\end{figure}
+\clearpage
+\subsection{Conversation Records and Evaluation}
+{\small\raggedright FK ghép: \texttt{conversation\_audio\_assets.(session\_id, message\_id)} tham chiếu \texttt{conversation\_messages.(session\_id, id)}. \texttt{storage\_key} lưu định danh tệp, không lưu nội dung âm thanh. Các FK của \texttt{conversation\_sessions} đến users/scenarios được thể hiện ở hình trước.\par}
+
+\begin{figure}[htbp]
+  \centering
+  \input{figures/erd-evaluation}
+  \caption{ERD: Conversation Records and Evaluation}
+  \label{fig:erd-evaluation}
+\end{figure}
+\clearpage
+\subsection{Rooms and Matchmaking}
+{\small\raggedright Các trường \texttt{created\_by}, \texttt{invited\_by} và \texttt{invitee\_user\_id} đều tham chiếu users. \texttt{room\_members} hiện thực quan hệ N--N giữa users và rooms.\par}
+
+\begin{figure}[htbp]
+  \centering
+  \input{figures/erd-rooms}
+  \caption{ERD: Rooms and Matchmaking}
+  \label{fig:erd-rooms}
+\end{figure}
+\clearpage
+\subsection{Shadowing and Video Examples}
+{\small\raggedright Hai cụm Shadowing và video ví dụ độc lập ở mức FK; \texttt{shadowing\_jobs.video\_id} không có FK tới \texttt{example\_videos}. Bảng nối \texttt{shadowing\_requests} hiện thực quan hệ N--N giữa users và shadowing\_jobs.\par}
+
+\begin{figure}[htbp]
+  \centering
+  \input{figures/erd-shadowing}
+  \caption{ERD: Shadowing and Video Examples}
+  \label{fig:erd-shadowing}
+\end{figure}
+\clearpage
+\subsection{Beta Quotas and AI Usage}
+{\small\raggedright Các bảng beta phản ánh schema hiện có, không khẳng định mọi tính năng beta đều đang được bật.\par}
+
+\begin{figure}[htbp]
+  \centering
+  \input{figures/erd-beta}
+  \caption{ERD: Beta Quotas and AI Usage}
+  \label{fig:erd-beta}
+\end{figure}
+\clearpage
+\section{FUNCTIONAL DESIGN}
+\subsection{Use Case Diagram}
+\subsection{Use Case Specification}
+\subsection{Business Process Flow}
+\section{UI/UX DESIGN}
+\section{TECHNOLOGIES USED}
+
+% ---- SAMPLE TABLE (delete when writing): caption ABOVE the table,
+% ---- regular type, centred, numbered by chapter (QD 675, sec. 6).
+\begin{table}[htbp]
+  \caption{Technologies used in the system (sample)}
+  \label{tab:tech-sample}
+  \centering
+  \begin{tabular}{@{}lll@{}}
+    \toprule
+    \textbf{Layer} & \textbf{Technology} & \textbf{Purpose} \\
+    \midrule
+    Frontend  & React.js & User interface \\
+    Backend   & Python   & Business logic, LLM integration \\
+    Cloud     & AWS      & Deployment and hosting \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+\section{MVP DEVELOPMENT}
+\subsection{Core Features}
+\subsection{Trial Version}
+\subsection{Outstanding Value of the Product}
+\section{CHAPTER SUMMARY}

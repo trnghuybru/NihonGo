@@ -1,0 +1,79 @@
+---
+title: Rooms and Matchmaking
+---
+erDiagram
+    direction TB
+
+    %% PK = primary key; FK = foreign key; UK = single-column unique constraint.
+    %% Attributes marked nullable permit NULL. Composite uniqueness is listed in comments.
+    %% External reference tables show only referenced columns and primary keys.
+
+    users {
+        varchar id PK "VARCHAR(36)"
+        varchar name "VARCHAR(100)"
+        varchar email "VARCHAR(254)"
+        varchar phone "VARCHAR(20)"
+    }
+
+    rooms {
+        char id PK "CHAR(32)"
+        varchar created_by FK "VARCHAR(36)"
+        varchar title "VARCHAR(200)"
+        text description "TEXT; nullable"
+        varchar topic "VARCHAR(100); nullable"
+    }
+
+    %% UNIQUE room_members (room_id, user_id)
+    room_members {
+        char id PK "CHAR(32)"
+        char room_id FK "CHAR(32)"
+        varchar user_id FK "VARCHAR(36)"
+        varchar role "VARCHAR(16)"
+        varchar status "VARCHAR(16)"
+        boolean is_muted "BOOLEAN"
+    }
+
+    room_invitations {
+        char id PK "CHAR(32)"
+        char room_id FK "CHAR(32)"
+        varchar invited_by FK "VARCHAR(36)"
+        varchar invitee_user_id FK "VARCHAR(36); nullable"
+        varchar token_hash UK "VARCHAR(64)"
+        varchar status "VARCHAR(16)"
+        datetime expires_at "DATETIME"
+    }
+
+    matching_preferences {
+        varchar user_id PK,FK "VARCHAR(36)"
+        varchar language_code "VARCHAR(35)"
+        varchar own_level "VARCHAR(16)"
+        varchar desired_min_level "VARCHAR(16); nullable"
+    }
+
+    matchmaking_requests {
+        char id PK "CHAR(32)"
+        varchar user_id FK "VARCHAR(36)"
+        char matched_room_id FK "CHAR(32); nullable"
+        varchar language_code "VARCHAR(35)"
+        varchar own_level "VARCHAR(16)"
+        varchar desired_min_level "VARCHAR(16); nullable"
+    }
+
+    vocabulary_game_rooms {
+        varchar id PK "VARCHAR(36)"
+        varchar host_id FK "VARCHAR(36)"
+        varchar code "VARCHAR(6)"
+        varchar mode "VARCHAR(8)"
+        varchar status "VARCHAR(16)"
+    }
+
+    users ||..o{ rooms : "created_by"
+    rooms ||..o{ room_members : "room_id"
+    users ||..o{ room_members : "user_id"
+    users ||..o{ room_invitations : "invited_by"
+    users |o..o{ room_invitations : "invitee_user_id"
+    rooms ||..o{ room_invitations : "room_id"
+    users ||--o| matching_preferences : "user_id"
+    rooms |o..o{ matchmaking_requests : "matched_room_id"
+    users ||..o{ matchmaking_requests : "user_id"
+    users ||..o{ vocabulary_game_rooms : "host_id"

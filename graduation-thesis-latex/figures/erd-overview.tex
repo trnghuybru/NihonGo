@@ -1,0 +1,39 @@
+\begingroup
+\setstretch{1}
+\begin{tikzpicture}[
+entity/.style={draw=blue!45!black,rounded corners=2pt,fill=blue!2,inner sep=7pt,text width=6.15cm,minimum height=3.3cm,align=left,font=\fontsize{9}{11}\selectfont},
+rel/.style={draw=black!65,line width=.6pt,rounded corners=3pt},
+card/.style={fill=white,inner sep=1.5pt,font=\fontsize{8}{9}\selectfont}]
+\node[entity,minimum height=1.7cm] (users) at (-3.9,0) {\textbf{\texttt{users}}\\[5pt]\begin{tabular}{@{}l@{\quad}l@{}}PK & \texttt{id} \\\end{tabular}};
+\node[entity,minimum height=1.7cm] (authsessions) at (3.9,0) {\textbf{\texttt{auth\_sessions}}\\[5pt]\begin{tabular}{@{}l@{\quad}l@{}}PK & \texttt{id} \\
+FK & \texttt{user\_id} \\\end{tabular}};
+\node[entity,minimum height=1.7cm] (conversationsessions) at (-3.9,-3.348) {\textbf{\texttt{conversation\_sessions}}\\[5pt]\begin{tabular}{@{}l@{\quad}l@{}}PK & \texttt{id} \\
+FK & \texttt{user\_id} \\
+FK & \texttt{scenario\_id} \\
+FK & \texttt{scenario\_role\_id} \\
+FK & \texttt{retry\_of\_session\_id} ? \\\end{tabular}};
+\node[entity,minimum height=1.7cm] (authrefreshtokens) at (3.9,-3.348) {\textbf{\texttt{auth\_refresh\_tokens}}\\[5pt]\begin{tabular}{@{}l@{\quad}l@{}}PK & \texttt{token\_hash} \\
+FK & \texttt{session\_id} \\\end{tabular}};
+\node[entity,minimum height=1.7cm] (conversationmessages) at (-3.9,-6.696) {\textbf{\texttt{conversation\_messages}}\\[5pt]\begin{tabular}{@{}l@{\quad}l@{}}PK & \texttt{id} \\
+FK & \texttt{session\_id} \\\end{tabular}};
+\node[entity,minimum height=1.7cm] (sessionevaluations) at (3.9,-6.696) {\textbf{\texttt{session\_evaluations}}\\[5pt]\begin{tabular}{@{}l@{\quad}l@{}}PK & \texttt{id} \\
+FK & \texttt{session\_id} \\\end{tabular}};
+\node[entity,minimum height=1.7cm] (conversationaudioassets) at (-3.9,-10.044) {\textbf{\texttt{conversation\_audio\_assets}}\\[5pt]\begin{tabular}{@{}l@{\quad}l@{}}PK & \texttt{id} \\
+FK & \texttt{session\_id} \\
+FK & \texttt{message\_id} ? \\\end{tabular}};
+\node[entity,minimum height=1.7cm] (evaluationscores) at (3.9,-10.044) {\textbf{\texttt{evaluation\_scores}}\\[5pt]\begin{tabular}{@{}l@{\quad}l@{}}PK & \texttt{id} \\
+FK & \texttt{evaluation\_id} \\
+FK & \texttt{criterion\_id} \\\end{tabular}};
+\node[entity,minimum height=1.7cm] (evaluationcriteria) at (-3.9,-13.392) {\textbf{\texttt{evaluation\_criteria}}\\[5pt]\begin{tabular}{@{}l@{\quad}l@{}}PK & \texttt{id} \\\end{tabular}};
+\draw[rel] (authsessions.west) -- node[card,pos=.2]{0..N} node[card,pos=.8]{1} (users.east);
+\draw[rel] (conversationsessions.north) -- node[card,pos=.2]{0..N} node[card,pos=.8]{1} (users.south);
+\draw[rel] (conversationsessions.south east) -- ++(.25,-0.144) -- ++(0,-0.252) -| (conversationsessions.south) node[card,pos=.8]{retry};
+\draw[rel] (authrefreshtokens.north) -- node[card,pos=.2]{0..N} node[card,pos=.8]{1} (authsessions.south);
+\draw[rel] (conversationmessages.north) -- node[card,pos=.2]{0..N} node[card,pos=.8]{1} (conversationsessions.south);
+\draw[rel] (sessionevaluations.south) -- node[card,pos=.3]{0..1} (3.9,-8.1) -- (0,-8.1) -- (0,-4.752) -- (-3.9,-4.752) -- node[card,pos=.7]{1} (conversationsessions.south);
+\draw[rel] (conversationaudioassets.north) -- node[card,pos=.2]{0..N} node[card,pos=.8]{0..1} (conversationmessages.south);
+\draw[rel] (conversationaudioassets.west) -- node[card,pos=.35]{0..N} (-7.449999999999999,-10.044) -- (-7.449999999999999,-3.348) -- node[card,pos=.65]{1} (conversationsessions.west);
+\draw[rel] (evaluationscores.south) -- node[card,pos=.3]{0..N} (3.9,-11.621) -- (0,-11.621) -- (0,-14.969) -- (-3.9,-14.969) -- node[card,pos=.7]{1} (evaluationcriteria.south);
+\draw[rel] (evaluationscores.north) -- node[card,pos=.2]{0..N} node[card,pos=.8]{1} (sessionevaluations.south);
+\end{tikzpicture}
+\endgroup

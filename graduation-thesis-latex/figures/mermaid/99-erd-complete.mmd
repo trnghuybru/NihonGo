@@ -1,0 +1,676 @@
+---
+title: Complete Database Schema
+---
+erDiagram
+    direction TB
+
+    %% PK = primary key; FK = foreign key; UK = single-column unique constraint.
+    %% Attributes marked nullable permit NULL. Composite uniqueness is listed in comments.
+    %% External reference tables show only referenced columns and primary keys.
+
+    users {
+        varchar id PK "VARCHAR(36)"
+        varchar name "VARCHAR(100)"
+        varchar email "VARCHAR(254)"
+        varchar phone "VARCHAR(20)"
+        text password_hash "TEXT; nullable"
+        boolean email_verified "BOOLEAN"
+        boolean phone_verified "BOOLEAN"
+        boolean active "BOOLEAN"
+        bigint created_at "BIGINT"
+    }
+
+    %% UNIQUE auth_identities (provider, subject)
+    auth_identities {
+        varchar id PK "VARCHAR(36)"
+        varchar user_id FK "VARCHAR(36)"
+        varchar provider "VARCHAR(16)"
+        varchar subject "VARCHAR(255)"
+    }
+
+    auth_challenges {
+        varchar id PK "VARCHAR(36)"
+        varchar purpose "VARCHAR(16)"
+        varchar channel "VARCHAR(8)"
+        varchar destination "VARCHAR(254)"
+        varchar user_id FK "VARCHAR(36); nullable"
+        json payload "JSON"
+        varchar code_hash "VARCHAR(64)"
+        integer attempts "INTEGER"
+        integer sends "INTEGER"
+        bigint expires_at "BIGINT"
+        bigint created_at "BIGINT"
+        bigint sent_at "BIGINT"
+        bigint consumed_at "BIGINT; nullable"
+    }
+
+    auth_sessions {
+        varchar id PK "VARCHAR(36)"
+        varchar user_id FK "VARCHAR(36)"
+        varchar access_hash UK "VARCHAR(64)"
+        bigint access_expires_at "BIGINT"
+        bigint expires_at "BIGINT"
+        bigint revoked_at "BIGINT; nullable"
+        bigint created_at "BIGINT"
+    }
+
+    auth_refresh_tokens {
+        varchar token_hash PK "VARCHAR(64)"
+        varchar session_id FK "VARCHAR(36)"
+        bigint used_at "BIGINT; nullable"
+    }
+
+    auth_oauth_flows {
+        varchar id PK "VARCHAR(36)"
+        varchar provider "VARCHAR(16)"
+        varchar state_hash UK "VARCHAR(64)"
+        varchar secret_hash "VARCHAR(64)"
+        varchar nonce "VARCHAR(128)"
+        varchar status "VARCHAR(16)"
+        json profile "JSON; nullable"
+        varchar profile_token_hash UK "VARCHAR(64); nullable"
+        bigint expires_at "BIGINT"
+    }
+
+    auth_rate_limits {
+        varchar key PK "VARCHAR(64)"
+        integer count "INTEGER"
+        bigint expires_at "BIGINT"
+    }
+
+    learning_preferences {
+        varchar user_id PK,FK "VARCHAR(36)"
+        varchar level "VARCHAR(16)"
+        varchar goal "VARCHAR(24)"
+        integer daily_minutes "INTEGER"
+        bigint level_confirmed_at "BIGINT"
+        bigint created_at "BIGINT"
+        bigint updated_at "BIGINT"
+        integer version "INTEGER"
+    }
+
+    learning_study_days {
+        varchar user_id PK,FK "VARCHAR(36)"
+        date day PK "DATE"
+        integer seconds "INTEGER"
+        json intervals "JSON"
+        bigint updated_at "BIGINT"
+    }
+
+    vocabulary_textbooks {
+        varchar id PK "VARCHAR(64)"
+        text title "TEXT"
+        varchar level "VARCHAR(2)"
+        text source_url "TEXT"
+    }
+
+    %% UNIQUE vocabulary_lessons (textbook_id, unit_number, number)
+    vocabulary_lessons {
+        varchar id PK "VARCHAR(100)"
+        varchar textbook_id FK "VARCHAR(64)"
+        integer unit_number "INTEGER"
+        text unit_title "TEXT"
+        integer number "INTEGER"
+        text title "TEXT"
+        text source_url "TEXT"
+        json audio_urls "JSON"
+    }
+
+    %% UNIQUE vocabulary_words (lesson_id, number)
+    vocabulary_words {
+        varchar id PK "VARCHAR(128)"
+        varchar lesson_id FK "VARCHAR(100)"
+        integer number "INTEGER"
+        text word "TEXT"
+        text reading "TEXT"
+        text meaning_vi "TEXT"
+        text han_viet "TEXT; nullable"
+        json details "JSON"
+    }
+
+    flashcard_decks {
+        varchar id PK "VARCHAR(36)"
+        varchar user_id FK "VARCHAR(36)"
+        varchar title "VARCHAR(80)"
+        json cards "JSON"
+        bigint updated_at "BIGINT"
+    }
+
+    flashcard_favorites {
+        varchar user_id PK,FK "VARCHAR(36)"
+        varchar source PK "VARCHAR(16)"
+        varchar target PK "VARCHAR(128)"
+        json card "JSON"
+        bigint created_at "BIGINT"
+    }
+
+    flashcard_sessions {
+        varchar id PK "VARCHAR(36)"
+        varchar user_id FK "VARCHAR(36)"
+        varchar kind "VARCHAR(16)"
+        varchar deck_id "VARCHAR(128)"
+        text title "TEXT"
+        json cards "JSON"
+        json ratings "JSON"
+        json rating_times "JSON"
+        bigint started_at "BIGINT"
+        bigint finished_at "BIGINT; nullable"
+    }
+
+    %% UNIQUE flashcard_daily_quizzes (user_id, study_date)
+    flashcard_daily_quizzes {
+        varchar id PK "VARCHAR(36)"
+        varchar user_id FK "VARCHAR(36)"
+        date study_date "DATE"
+        json questions "JSON"
+        json answers "JSON"
+        bigint started_at "BIGINT"
+        bigint finished_at "BIGINT; nullable"
+    }
+
+    flashcard_schedules {
+        varchar user_id PK,FK "VARCHAR(36)"
+        varchar card_id PK "VARCHAR(160)"
+        json card "JSON"
+        json fsrs_card "JSON"
+        bigint due_at "BIGINT"
+        bigint last_review_at "BIGINT"
+        integer review_count "INTEGER"
+        boolean active "BOOLEAN"
+    }
+
+    %% UNIQUE flashcard_review_logs (session_id, card_id)
+    flashcard_review_logs {
+        varchar id PK "VARCHAR(36)"
+        varchar user_id FK "VARCHAR(36)"
+        varchar card_id "VARCHAR(160)"
+        varchar session_id FK "VARCHAR(36)"
+        integer grade "INTEGER"
+        bigint reviewed_at "BIGINT"
+        bigint due_at "BIGINT"
+        json fsrs_log "JSON"
+    }
+
+    flashcard_reminder_preferences {
+        varchar user_id PK,FK "VARCHAR(36)"
+        boolean enabled "BOOLEAN"
+        integer hour "INTEGER"
+        integer minute "INTEGER"
+    }
+
+    %% UNIQUE reading_passages (level, title, paragraph, source_url)
+    reading_passages {
+        varchar id PK "VARCHAR(48)"
+        varchar level "VARCHAR(2)"
+        varchar kind "VARCHAR(16)"
+        text title "TEXT"
+        integer exercise "INTEGER"
+        integer paragraph "INTEGER"
+        text text "TEXT"
+        text source_url "TEXT"
+        json questions "JSON"
+        json analysis "JSON; nullable"
+    }
+
+    %% UNIQUE reading_attempts (user_id, request_id)
+    reading_attempts {
+        varchar id PK "VARCHAR(36)"
+        varchar user_id FK "VARCHAR(36)"
+        varchar passage_id FK "VARCHAR(48)"
+        varchar request_id "VARCHAR(36)"
+        varchar version "VARCHAR(64)"
+        json result "JSON"
+        bigint created_at "BIGINT"
+    }
+
+    reading_insights {
+        varchar passage_id PK,FK "VARCHAR(48)"
+        varchar kind PK "VARCHAR(64)"
+        varchar source_hash "VARCHAR(64)"
+        varchar status "VARCHAR(16)"
+        varchar lease "VARCHAR(36); nullable"
+        bigint updated_at "BIGINT"
+        json payload "JSON; nullable"
+    }
+
+    writing_prompts {
+        varchar id PK "VARCHAR(64)"
+        varchar title "VARCHAR(160)"
+        varchar level "VARCHAR(8)"
+        varchar category "VARCHAR(24)"
+        varchar prompt_type "VARCHAR(24)"
+        text instruction "TEXT"
+        text model_hint "TEXT"
+        integer sort_order "INTEGER"
+        bigint created_at "BIGINT"
+        bigint updated_at "BIGINT"
+    }
+
+    writing_drafts {
+        varchar id PK "VARCHAR(64)"
+        varchar user_id FK "VARCHAR(36)"
+        varchar prompt_id FK "VARCHAR(64)"
+        text text "TEXT"
+        integer word_count "INTEGER"
+        varchar status "VARCHAR(16)"
+        bigint created_at "BIGINT"
+        bigint updated_at "BIGINT"
+    }
+
+    writing_submissions {
+        varchar id PK "VARCHAR(64)"
+        varchar user_id FK "VARCHAR(36)"
+        varchar prompt_id FK "VARCHAR(64); nullable"
+        varchar prompt_title "VARCHAR(160)"
+        text text "TEXT"
+        text corrected_text "TEXT"
+        integer score "INTEGER"
+        text feedback "TEXT"
+        json assessment "JSON; nullable"
+        bigint submitted_at "BIGINT"
+        bigint created_at "BIGINT"
+        bigint updated_at "BIGINT"
+    }
+
+    scenario_categories {
+        char id PK "CHAR(32)"
+        varchar name UK "VARCHAR(100)"
+        text description "TEXT; nullable"
+        integer sort_order "INTEGER"
+    }
+
+    scenarios {
+        char id PK "CHAR(32)"
+        char category_id FK "CHAR(32)"
+        varchar title "VARCHAR(200)"
+        text description "TEXT"
+        text context "TEXT"
+        text learning_objectives "TEXT"
+        varchar language_code "VARCHAR(35)"
+        varchar difficulty_level "VARCHAR(16)"
+        integer estimated_duration_minutes "INTEGER"
+        varchar status "VARCHAR(16)"
+        datetime updated_at "DATETIME"
+        datetime created_at "DATETIME"
+    }
+
+    %% UNIQUE scenario_roles (scenario_id, id)
+    %% UNIQUE scenario_roles (scenario_id, name)
+    scenario_roles {
+        char id PK "CHAR(32)"
+        char scenario_id FK "CHAR(32)"
+        varchar name "VARCHAR(100)"
+        text description "TEXT"
+        text ai_instructions "TEXT"
+        text opening_message "TEXT; nullable"
+    }
+
+    conversation_sessions {
+        char id PK "CHAR(32)"
+        varchar user_id FK "VARCHAR(36)"
+        char scenario_id FK "CHAR(32)"
+        char scenario_role_id FK "CHAR(32)"
+        char retry_of_session_id FK "CHAR(32); nullable"
+        json scenario_snapshot "JSON"
+        varchar status "VARCHAR(16)"
+        varchar current_input_mode "VARCHAR(8)"
+        boolean audio_storage_enabled "BOOLEAN"
+        datetime started_at "DATETIME"
+        datetime paused_at "DATETIME; nullable"
+        datetime ended_at "DATETIME; nullable"
+        bigint accumulated_active_ms "BIGINT"
+        datetime last_resumed_at "DATETIME; nullable"
+        datetime deleted_at "DATETIME; nullable"
+        datetime audio_cleanup_after "DATETIME; nullable"
+        datetime updated_at "DATETIME"
+        datetime created_at "DATETIME"
+    }
+
+    %% UNIQUE conversation_messages (session_id, id)
+    %% UNIQUE conversation_messages (session_id, sequence_number)
+    conversation_messages {
+        char id PK "CHAR(32)"
+        char session_id FK "CHAR(32)"
+        bigint sequence_number "BIGINT"
+        varchar speaker "VARCHAR(16)"
+        varchar input_mode "VARCHAR(16)"
+        text content "TEXT"
+        varchar status "VARCHAR(16)"
+        datetime occurred_at "DATETIME"
+        json feedback_payload "JSON; nullable"
+        char feedback_attempt_id "CHAR(32); nullable"
+        datetime feedback_started_at "DATETIME; nullable"
+        text feedback_error "TEXT; nullable"
+        varchar feedback_model "VARCHAR(200); nullable"
+        json hint_payload "JSON; nullable"
+        char hint_attempt_id "CHAR(32); nullable"
+        datetime hint_started_at "DATETIME; nullable"
+        integer hint_used_level "INTEGER"
+        datetime updated_at "DATETIME"
+        datetime created_at "DATETIME"
+    }
+
+    conversation_audio_assets {
+        char id PK "CHAR(32)"
+        char session_id FK "CHAR(32)"
+        char message_id FK "CHAR(32); nullable"
+        varchar asset_type "VARCHAR(24)"
+        text storage_key UK "TEXT"
+        varchar mime_type "VARCHAR(100)"
+        bigint size_bytes "BIGINT; nullable"
+        bigint duration_ms "BIGINT; nullable"
+        varchar status "VARCHAR(16)"
+        datetime created_at "DATETIME"
+    }
+
+    session_evaluations {
+        char id PK "CHAR(32)"
+        char session_id FK,UK "CHAR(32)"
+        varchar status "VARCHAR(24)"
+        numeric overall_score "NUMERIC(5, 2); nullable"
+        text summary "TEXT; nullable"
+        text strengths "TEXT; nullable"
+        text improvement_suggestions "TEXT; nullable"
+        varchar model_name "VARCHAR(200); nullable"
+        varchar rubric_version "VARCHAR(50)"
+        text error_message "TEXT; nullable"
+        datetime completed_at "DATETIME; nullable"
+        json result_payload "JSON; nullable"
+        datetime processing_started_at "DATETIME; nullable"
+        char attempt_id "CHAR(32); nullable"
+        datetime created_at "DATETIME"
+    }
+
+    evaluation_criteria {
+        char id PK "CHAR(32)"
+        varchar code UK "VARCHAR(50)"
+        varchar name "VARCHAR(100)"
+        text description "TEXT"
+        boolean is_active "BOOLEAN"
+    }
+
+    %% UNIQUE evaluation_scores (evaluation_id, criterion_id)
+    evaluation_scores {
+        char id PK "CHAR(32)"
+        char evaluation_id FK "CHAR(32)"
+        char criterion_id FK "CHAR(32)"
+        varchar criterion_name_snapshot "VARCHAR(100)"
+        numeric weight "NUMERIC(8, 4)"
+        numeric score "NUMERIC(5, 2)"
+        text feedback "TEXT"
+        text improvement_suggestion "TEXT; nullable"
+    }
+
+    rooms {
+        char id PK "CHAR(32)"
+        varchar created_by FK "VARCHAR(36)"
+        varchar title "VARCHAR(200)"
+        text description "TEXT; nullable"
+        varchar topic "VARCHAR(100); nullable"
+        varchar language_code "VARCHAR(35)"
+        varchar difficulty_level "VARCHAR(16)"
+        varchar visibility "VARCHAR(16)"
+        varchar source "VARCHAR(16)"
+        varchar status "VARCHAR(16)"
+        integer max_members "INTEGER"
+        text password_hash "TEXT; nullable"
+        text voice_provider_room_id UK "TEXT; nullable"
+        datetime closed_at "DATETIME; nullable"
+        datetime created_at "DATETIME"
+    }
+
+    %% UNIQUE room_members (room_id, user_id)
+    room_members {
+        char id PK "CHAR(32)"
+        char room_id FK "CHAR(32)"
+        varchar user_id FK "VARCHAR(36)"
+        varchar role "VARCHAR(16)"
+        varchar status "VARCHAR(16)"
+        boolean is_muted "BOOLEAN"
+        datetime joined_at "DATETIME"
+        datetime left_at "DATETIME; nullable"
+        datetime updated_at "DATETIME"
+    }
+
+    room_invitations {
+        char id PK "CHAR(32)"
+        char room_id FK "CHAR(32)"
+        varchar invited_by FK "VARCHAR(36)"
+        varchar invitee_user_id FK "VARCHAR(36); nullable"
+        varchar token_hash UK "VARCHAR(64)"
+        varchar status "VARCHAR(16)"
+        datetime expires_at "DATETIME"
+        datetime responded_at "DATETIME; nullable"
+        datetime created_at "DATETIME"
+    }
+
+    matching_preferences {
+        varchar user_id PK,FK "VARCHAR(36)"
+        varchar language_code "VARCHAR(35)"
+        varchar own_level "VARCHAR(16)"
+        varchar desired_min_level "VARCHAR(16); nullable"
+        varchar desired_max_level "VARCHAR(16); nullable"
+        varchar topic "VARCHAR(100); nullable"
+        datetime updated_at "DATETIME"
+        datetime created_at "DATETIME"
+    }
+
+    matchmaking_requests {
+        char id PK "CHAR(32)"
+        varchar user_id FK "VARCHAR(36)"
+        varchar language_code "VARCHAR(35)"
+        varchar own_level "VARCHAR(16)"
+        varchar desired_min_level "VARCHAR(16); nullable"
+        varchar desired_max_level "VARCHAR(16); nullable"
+        varchar topic "VARCHAR(100); nullable"
+        varchar status "VARCHAR(16)"
+        char matched_room_id FK "CHAR(32); nullable"
+        datetime expires_at "DATETIME"
+        datetime matched_at "DATETIME; nullable"
+        datetime cancelled_at "DATETIME; nullable"
+        datetime created_at "DATETIME"
+    }
+
+    shadowing_jobs {
+        varchar id PK "VARCHAR(36)"
+        varchar video_id UK "VARCHAR(11)"
+        varchar status "VARCHAR(24)"
+        text title "TEXT"
+        varchar error_code "VARCHAR(40); nullable"
+        text error_message "TEXT; nullable"
+        integer attempts "INTEGER"
+        bigint created_at "BIGINT"
+        bigint updated_at "BIGINT"
+        bigint last_enqueued_at "BIGINT; nullable"
+        varchar lease_token "VARCHAR(36); nullable"
+        bigint lease_expires_at "BIGINT; nullable"
+        json raw_captions "JSON; nullable"
+        json display_captions "JSON; nullable"
+        json word_analysis "JSON; nullable"
+        json quiz_data "JSON; nullable"
+        varchar quiz_lease_token "VARCHAR(36); nullable"
+        bigint quiz_lease_expires_at "BIGINT; nullable"
+    }
+
+    shadowing_requests {
+        varchar user_id PK,FK "VARCHAR(36)"
+        varchar job_id PK,FK "VARCHAR(36)"
+        bigint created_at "BIGINT"
+    }
+
+    shadowing_translations {
+        varchar id PK "VARCHAR(36)"
+        varchar job_id FK,UK "VARCHAR(36)"
+        varchar language "VARCHAR(8)"
+        varchar source_hash "VARCHAR(64)"
+        json source "JSON"
+        json translations "JSON"
+        varchar model "VARCHAR(100)"
+        integer prompt_version "INTEGER"
+        varchar status "VARCHAR(16)"
+        integer attempts "INTEGER"
+        text error_message "TEXT; nullable"
+        bigint created_at "BIGINT"
+        bigint updated_at "BIGINT"
+        bigint last_enqueued_at "BIGINT; nullable"
+        varchar lease_token "VARCHAR(36); nullable"
+        bigint lease_expires_at "BIGINT; nullable"
+    }
+
+    vocabulary_game_rooms {
+        varchar id PK "VARCHAR(36)"
+        varchar code "VARCHAR(6)"
+        varchar host_id FK "VARCHAR(36)"
+        varchar mode "VARCHAR(8)"
+        varchar status "VARCHAR(16)"
+        json state "JSON"
+        integer version "INTEGER"
+        bigint updated_at "BIGINT"
+        bigint expires_at "BIGINT"
+    }
+
+    dictionary_entries {
+        varchar id PK "VARCHAR(80)"
+        text word "TEXT"
+        text reading "TEXT"
+        json content "JSON"
+        boolean common "BOOLEAN"
+    }
+
+    %% UNIQUE dictionary_terms (entry_id, kind, text)
+    dictionary_terms {
+        integer id PK "INTEGER"
+        varchar entry_id FK "VARCHAR(80)"
+        varchar kind "VARCHAR(16)"
+        text text "TEXT"
+    }
+
+    dictionary_kanji {
+        varchar literal PK "VARCHAR(4)"
+        json content "JSON"
+        text search_text "TEXT"
+        integer strokes "INTEGER"
+    }
+
+    dictionary_sources {
+        varchar id PK "VARCHAR(64)"
+        json content "JSON"
+    }
+
+    dictionary_history {
+        varchar user_id PK,FK "VARCHAR(36)"
+        json items "JSON"
+    }
+
+    example_videos {
+        varchar id PK "VARCHAR(11)"
+        text title "TEXT"
+        text channel "TEXT"
+        float duration_seconds "FLOAT"
+        varchar language "VARCHAR(8)"
+        varchar caption_kind "VARCHAR(16)"
+    }
+
+    %% UNIQUE video_caption_segments (video_id, sequence)
+    video_caption_segments {
+        varchar id PK "VARCHAR(128)"
+        varchar video_id FK "VARCHAR(11)"
+        integer sequence "INTEGER"
+        text text "TEXT"
+        text search_text "TEXT"
+        float start_seconds "FLOAT"
+        float end_seconds "FLOAT"
+    }
+
+    beta_daily_quotas {
+        varchar user_id PK,FK "VARCHAR(36)"
+        date day PK "DATE"
+        varchar video_id "VARCHAR(11); nullable"
+        json video_ids "JSON"
+        integer live_count "INTEGER"
+    }
+
+    beta_daily_live_sessions {
+        varchar id PK "VARCHAR(36)"
+        varchar user_id FK "VARCHAR(36)"
+        date day "DATE"
+        varchar status "VARCHAR(16)"
+        bigint created_at "BIGINT"
+        bigint expires_at "BIGINT"
+    }
+
+    beta_ai_wallets {
+        varchar user_id PK,FK "VARCHAR(36)"
+        bigint spent_micro_usd "BIGINT"
+        bigint held_micro_usd "BIGINT"
+        bigint started_at "BIGINT"
+    }
+
+    beta_ai_attempts {
+        varchar id PK "VARCHAR(36)"
+        varchar user_id FK "VARCHAR(36)"
+        varchar model "VARCHAR(100)"
+        varchar action "VARCHAR(100)"
+        varchar status "VARCHAR(16)"
+        bigint held_micro_usd "BIGINT"
+        bigint charged_micro_usd "BIGINT"
+        bigint created_at "BIGINT"
+        bigint finished_at "BIGINT; nullable"
+        bigint expires_at "BIGINT; nullable"
+    }
+
+    users ||..o{ auth_identities : "user_id"
+    users |o..o{ auth_challenges : "user_id"
+    users ||..o{ auth_sessions : "user_id"
+    auth_sessions ||..o{ auth_refresh_tokens : "session_id"
+    users ||--o| learning_preferences : "user_id"
+    users ||--o{ learning_study_days : "user_id"
+    vocabulary_textbooks ||..o{ vocabulary_lessons : "textbook_id"
+    vocabulary_lessons ||..o{ vocabulary_words : "lesson_id"
+    users ||..o{ flashcard_decks : "user_id"
+    users ||--o{ flashcard_favorites : "user_id"
+    users ||..o{ flashcard_sessions : "user_id"
+    users ||..o{ flashcard_daily_quizzes : "user_id"
+    users ||--o{ flashcard_schedules : "user_id"
+    flashcard_sessions ||..o{ flashcard_review_logs : "session_id"
+    users ||..o{ flashcard_review_logs : "user_id"
+    users ||--o| flashcard_reminder_preferences : "user_id"
+    reading_passages ||..o{ reading_attempts : "passage_id"
+    users ||..o{ reading_attempts : "user_id"
+    reading_passages ||--o{ reading_insights : "passage_id"
+    writing_prompts ||..o{ writing_drafts : "prompt_id"
+    users ||..o{ writing_drafts : "user_id"
+    writing_prompts |o..o{ writing_submissions : "prompt_id"
+    users ||..o{ writing_submissions : "user_id"
+    scenario_categories ||..o{ scenarios : "category_id"
+    scenarios ||..o{ scenario_roles : "scenario_id"
+    conversation_sessions |o..o{ conversation_sessions : "retry_of_session_id"
+    scenarios ||..o{ conversation_sessions : "scenario_id"
+    scenario_roles ||..o{ conversation_sessions : "scenario_id + scenario_role_id"
+    users ||..o{ conversation_sessions : "user_id"
+    conversation_sessions ||..o{ conversation_messages : "session_id"
+    conversation_sessions ||..o{ conversation_audio_assets : "session_id"
+    conversation_messages |o..o{ conversation_audio_assets : "session_id + message_id"
+    conversation_sessions ||..o| session_evaluations : "session_id"
+    evaluation_criteria ||..o{ evaluation_scores : "criterion_id"
+    session_evaluations ||..o{ evaluation_scores : "evaluation_id"
+    users ||..o{ rooms : "created_by"
+    rooms ||..o{ room_members : "room_id"
+    users ||..o{ room_members : "user_id"
+    users ||..o{ room_invitations : "invited_by"
+    users |o..o{ room_invitations : "invitee_user_id"
+    rooms ||..o{ room_invitations : "room_id"
+    users ||--o| matching_preferences : "user_id"
+    rooms |o..o{ matchmaking_requests : "matched_room_id"
+    users ||..o{ matchmaking_requests : "user_id"
+    shadowing_jobs ||--o{ shadowing_requests : "job_id"
+    users ||--o{ shadowing_requests : "user_id"
+    shadowing_jobs ||..o| shadowing_translations : "job_id"
+    users ||..o{ vocabulary_game_rooms : "host_id"
+    dictionary_entries ||..o{ dictionary_terms : "entry_id"
+    users ||--o| dictionary_history : "user_id"
+    example_videos ||..o{ video_caption_segments : "video_id"
+    users ||--o{ beta_daily_quotas : "user_id"
+    users ||..o{ beta_daily_live_sessions : "user_id"
+    users ||--o| beta_ai_wallets : "user_id"
+    users ||..o{ beta_ai_attempts : "user_id"

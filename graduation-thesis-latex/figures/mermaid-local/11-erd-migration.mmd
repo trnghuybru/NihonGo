@@ -1,0 +1,14 @@
+---
+title: Migration Metadata
+---
+erDiagram
+    direction TB
+
+    %% Source: live local PostgreSQL catalog; schema public.
+    %% Snapshot: 2026-11-25T13:12:14.564538+00:00
+    %% PK = primary key; FK = foreign key; UK = single-column UNIQUE.
+    %% Composite UNIQUE constraints appear as comments.
+
+    alembic_version {
+        varchar_32 version_num PK "VARCHAR(32)"
+    }

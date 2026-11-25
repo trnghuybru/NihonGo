@@ -1,0 +1,87 @@
+---
+title: Vocabulary and Dictionary
+---
+erDiagram
+    direction TB
+
+    %% Source: live local PostgreSQL catalog; schema public.
+    %% Snapshot: 2026-11-25T13:12:14.564538+00:00
+    %% PK = primary key; FK = foreign key; UK = single-column UNIQUE.
+    %% Composite UNIQUE constraints appear as comments.
+
+    vocabulary_textbooks {
+        varchar_64 id PK "VARCHAR(64)"
+        text title "TEXT"
+        varchar_2 level "VARCHAR(2)"
+        text source_url "TEXT"
+    }
+
+    %% UNIQUE vocabulary_lessons (textbook_id, unit_number, number)
+    %% UNIQUE vocabulary_lessons (textbook_id, unit_number, number)
+    vocabulary_lessons {
+        varchar_100 id PK "VARCHAR(100)"
+        varchar_64 textbook_id FK "VARCHAR(64)"
+        integer unit_number "INTEGER"
+        text unit_title "TEXT"
+        integer number "INTEGER"
+        text title "TEXT"
+        text source_url "TEXT"
+        jsonb audio_urls "JSONB"
+    }
+
+    %% UNIQUE vocabulary_words (lesson_id, number)
+    %% UNIQUE vocabulary_words (lesson_id, number)
+    vocabulary_words {
+        varchar_128 id PK "VARCHAR(128)"
+        varchar_100 lesson_id FK "VARCHAR(100)"
+        integer number "INTEGER"
+        text word "TEXT"
+        text reading "TEXT"
+        text meaning_vi "TEXT"
+        text han_viet "TEXT; nullable"
+        jsonb details "JSONB"
+    }
+
+    dictionary_entries {
+        varchar_80 id PK "VARCHAR(80)"
+        text word "TEXT"
+        text reading "TEXT"
+        jsonb content "JSONB"
+        boolean common "BOOLEAN"
+    }
+
+    %% UNIQUE dictionary_terms (entry_id, kind, text)
+    %% UNIQUE dictionary_terms (entry_id, kind, text)
+    dictionary_terms {
+        integer id PK "INTEGER"
+        varchar_80 entry_id FK "VARCHAR(80)"
+        varchar_16 kind "VARCHAR(16)"
+        text text "TEXT"
+    }
+
+    dictionary_kanji {
+        varchar_4 literal PK "VARCHAR(4)"
+        jsonb content "JSONB"
+        text search_text "TEXT"
+        integer strokes "INTEGER"
+    }
+
+    dictionary_sources {
+        varchar_64 id PK "VARCHAR(64)"
+        jsonb content "JSONB"
+    }
+
+    dictionary_history {
+        varchar_36 user_id PK,FK "VARCHAR(36)"
+        jsonb items "JSONB"
+    }
+
+    %% users: external reference, only PK and referenced columns shown.
+    users {
+        varchar_36 id PK "VARCHAR(36)"
+    }
+
+    vocabulary_textbooks ||..o{ vocabulary_lessons : "textbook_id"
+    vocabulary_lessons ||..o{ vocabulary_words : "lesson_id"
+    dictionary_entries ||..o{ dictionary_terms : "entry_id"
+    users ||--o| dictionary_history : "user_id"

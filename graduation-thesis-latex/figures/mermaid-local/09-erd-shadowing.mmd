@@ -1,0 +1,94 @@
+---
+title: Shadowing and Video Examples
+---
+erDiagram
+    direction TB
+
+    %% Source: live local PostgreSQL catalog; schema public.
+    %% Snapshot: 2026-11-25T13:12:14.564538+00:00
+    %% PK = primary key; FK = foreign key; UK = single-column UNIQUE.
+    %% Composite UNIQUE constraints appear as comments.
+
+    users {
+        varchar_36 id PK "VARCHAR(36)"
+        varchar_100 name "VARCHAR(100)"
+        varchar_254 email "VARCHAR(254)"
+        varchar_20 phone "VARCHAR(20)"
+        text password_hash "TEXT; nullable"
+        boolean email_verified "BOOLEAN"
+        boolean phone_verified "BOOLEAN"
+        boolean active "BOOLEAN"
+        bigint created_at "BIGINT"
+    }
+
+    shadowing_requests {
+        varchar_36 user_id PK,FK "VARCHAR(36)"
+        varchar_36 job_id PK,FK "VARCHAR(36)"
+        bigint created_at "BIGINT"
+    }
+
+    shadowing_jobs {
+        varchar_36 id PK "VARCHAR(36)"
+        varchar_11 video_id UK "VARCHAR(11)"
+        varchar_24 status "VARCHAR(24)"
+        text title "TEXT"
+        varchar_40 error_code "VARCHAR(40); nullable"
+        text error_message "TEXT; nullable"
+        integer attempts "INTEGER"
+        bigint created_at "BIGINT"
+        bigint updated_at "BIGINT"
+        bigint last_enqueued_at "BIGINT; nullable"
+        varchar_36 lease_token "VARCHAR(36); nullable"
+        bigint lease_expires_at "BIGINT; nullable"
+        json raw_captions "JSON; nullable"
+        json display_captions "JSON; nullable"
+        json word_analysis "JSON; nullable"
+        json quiz_data "JSON; nullable"
+        varchar_36 quiz_lease_token "VARCHAR(36); nullable"
+        bigint quiz_lease_expires_at "BIGINT; nullable"
+    }
+
+    shadowing_translations {
+        varchar_36 id PK "VARCHAR(36)"
+        varchar_36 job_id FK,UK "VARCHAR(36)"
+        varchar_8 language "VARCHAR(8)"
+        varchar_64 source_hash "VARCHAR(64)"
+        json source "JSON"
+        json translations "JSON"
+        varchar_100 model "VARCHAR(100)"
+        integer prompt_version "INTEGER"
+        varchar_16 status "VARCHAR(16)"
+        integer attempts "INTEGER"
+        text error_message "TEXT; nullable"
+        bigint created_at "BIGINT"
+        bigint updated_at "BIGINT"
+        bigint last_enqueued_at "BIGINT; nullable"
+        varchar_36 lease_token "VARCHAR(36); nullable"
+        bigint lease_expires_at "BIGINT; nullable"
+    }
+
+    example_videos {
+        varchar_11 id PK "VARCHAR(11)"
+        text title "TEXT"
+        text channel "TEXT"
+        double_precision duration_seconds "DOUBLE PRECISION"
+        varchar_8 language "VARCHAR(8)"
+        varchar_16 caption_kind "VARCHAR(16)"
+    }
+
+    %% UNIQUE video_caption_segments (video_id, sequence)
+    %% UNIQUE video_caption_segments (video_id, sequence)
+    video_caption_segments {
+        varchar_128 id PK "VARCHAR(128)"
+        varchar_11 video_id FK "VARCHAR(11)"
+        integer sequence "INTEGER"
+        text text "TEXT"
+        text search_text "TEXT"
+        double_precision start_seconds "DOUBLE PRECISION"
+        double_precision end_seconds "DOUBLE PRECISION"
+    }
+
+    shadowing_jobs ||--o{ shadowing_requests : "job_id"
+    users ||--o{ shadowing_requests : "user_id"
+    shadowing_jobs ||..o| shadowing_translations : "job_id"
+    example_videos ||..o{ video_caption_segments : "video_id"

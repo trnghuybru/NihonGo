@@ -1,0 +1,75 @@
+---
+title: Core Database Overview
+---
+erDiagram
+    direction TB
+
+    %% Source: live local PostgreSQL catalog; schema public.
+    %% Snapshot: 2026-11-25T13:12:14.564538+00:00
+    %% PK = primary key; FK = foreign key; UK = single-column UNIQUE.
+    %% Composite UNIQUE constraints appear as comments.
+
+    users {
+        varchar_36 id PK "VARCHAR(36)"
+    }
+
+    auth_sessions {
+        varchar_36 id PK "VARCHAR(36)"
+        varchar_36 user_id FK "VARCHAR(36)"
+    }
+
+    auth_refresh_tokens {
+        varchar_64 token_hash PK "VARCHAR(64)"
+        varchar_36 session_id FK "VARCHAR(36)"
+    }
+
+    conversation_sessions {
+        uuid id PK "UUID"
+        varchar_36 user_id FK "VARCHAR(36)"
+        uuid scenario_id FK "UUID"
+        uuid scenario_role_id FK "UUID"
+        uuid retry_of_session_id FK "UUID; nullable"
+    }
+
+    %% UNIQUE conversation_messages (session_id, id)
+    %% UNIQUE conversation_messages (session_id, sequence_number)
+    %% UNIQUE conversation_messages (session_id, id)
+    %% UNIQUE conversation_messages (session_id, sequence_number)
+    conversation_messages {
+        uuid id PK "UUID"
+        uuid session_id FK "UUID"
+    }
+
+    conversation_audio_assets {
+        uuid id PK "UUID"
+        uuid session_id FK "UUID"
+        uuid message_id FK "UUID; nullable"
+    }
+
+    session_evaluations {
+        uuid id PK "UUID"
+        uuid session_id FK,UK "UUID"
+    }
+
+    %% UNIQUE evaluation_scores (evaluation_id, criterion_id)
+    %% UNIQUE evaluation_scores (evaluation_id, criterion_id)
+    evaluation_scores {
+        uuid id PK "UUID"
+        uuid evaluation_id FK "UUID"
+        uuid criterion_id FK "UUID"
+    }
+
+    evaluation_criteria {
+        uuid id PK "UUID"
+    }
+
+    users ||..o{ auth_sessions : "user_id"
+    auth_sessions ||..o{ auth_refresh_tokens : "session_id"
+    conversation_sessions |o..o{ conversation_sessions : "retry_of_session_id"
+    users ||..o{ conversation_sessions : "user_id"
+    conversation_sessions ||..o{ conversation_messages : "session_id"
+    conversation_sessions ||..o{ conversation_audio_assets : "session_id"
+    conversation_messages |o..o{ conversation_audio_assets : "session_id + message_id"
+    conversation_sessions ||..o| session_evaluations : "session_id"
+    evaluation_criteria ||..o{ evaluation_scores : "criterion_id"
+    session_evaluations ||..o{ evaluation_scores : "evaluation_id"
