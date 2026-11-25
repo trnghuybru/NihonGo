@@ -1131,7 +1131,7 @@ export function DictionaryScreen({
         </View>
       ) : null}
       <View ref={searchContainerRef} style={styles.searchContainer}>
-        <View style={[styles.search, focused && styles.searchFocused]}>
+        <View style={[styles.search, focused && styles.searchFocused]} testID="dictionary-search-bar">
           <HomeFeatureIcon
             name="search"
             size={20}
@@ -1366,6 +1366,7 @@ export function DictionaryScreen({
     >
       {handwriting}
       <View
+        testID="dictionary-header"
         style={[
           styles.videoHeader,
           styles.fixedHeader,
@@ -1380,6 +1381,7 @@ export function DictionaryScreen({
           renderVideos(videoQuery)
         ) : (
           <FlatList
+            testID="dictionary-results"
             ref={listRef}
             data={[]}
             contentContainerStyle={[

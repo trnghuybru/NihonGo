@@ -181,7 +181,6 @@ function MainTabs({
                 onOpenFlashcards={openPracticeFlashcards}
                 onOpenGames={openGames}
                 onOpenSkill={openSkill}
-                user={user}
               />
             )}
             <ScreenBackHeaderContext.Provider

@@ -1,8 +1,10 @@
+import { HomeFeatureIcon } from './HomeFeatureIcon';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import type { ComponentRef } from 'react';
 import {
   ActivityIndicator,
   AppState,
+  Platform,
   Pressable,
   ScrollView,
   StyleSheet,
@@ -127,9 +129,12 @@ export function StudyStreakCalendar({ accountId }: { accountId: string }) {
     <View style={styles.card} testID="study-streak-calendar">
       <View style={styles.headingRow}>
         <View style={styles.headingCopy}>
-          <Text accessibilityRole="header" style={styles.heading}>
-            Lịch học
-          </Text>
+          <View style={styles.headingIdentity}>
+            {Platform.OS === 'web' ? <HomeFeatureIcon name="calendar" size={21} color="#dc6910" /> : null}
+            <Text accessibilityRole="header" style={styles.heading}>
+              Lịch học
+            </Text>
+          </View>
           <Text style={styles.subheading}>Hoạt động trong năm</Text>
         </View>
         <View style={styles.controls}>
@@ -186,18 +191,23 @@ export function StudyStreakCalendar({ accountId }: { accountId: string }) {
       ) : (
         <>
           <View style={styles.summary}>
-            <View style={styles.metric}>
-              <Text style={styles.metricValue}>{currentStreak}</Text>
-              <Text style={styles.metricLabel}>Ngày liên tiếp</Text>
-            </View>
-            <View style={styles.metric}>
-              <Text style={styles.metricValue}>{studyDays}</Text>
-              <Text style={styles.metricLabel}>Ngày đã học</Text>
-            </View>
-            <View style={styles.metric}>
-              <Text style={styles.metricValue}>{longestStreak}</Text>
-              <Text style={styles.metricLabel}>Chuỗi dài nhất</Text>
-            </View>
+            {([
+              { value: currentStreak, label: 'Ngày liên tiếp', icon: 'flame' },
+              { value: studyDays, label: 'Ngày đã học', icon: 'reading' },
+              { value: longestStreak, label: 'Chuỗi dài nhất', icon: 'crown' },
+            ] as const).map(metric => (
+              <View key={metric.icon} style={[styles.metric, Platform.OS === 'web' && styles.webMetric]}>
+                <View style={styles.metricCopy}>
+                  <Text style={styles.metricValue}>{metric.value}</Text>
+                  <Text style={styles.metricLabel}>{metric.label}</Text>
+                </View>
+                {Platform.OS === 'web' ? (
+                  <View style={styles.metricIcon}>
+                    <HomeFeatureIcon name={metric.icon} size={18} color={colors.success} />
+                  </View>
+                ) : null}
+              </View>
+            ))}
           </View>
           <View style={styles.heatmapRow}>
             <View style={styles.weekdayLabels}>
@@ -284,6 +294,7 @@ const styles = StyleSheet.create({
     gap: spacing.sm,
   },
   headingCopy: { flex: 1, minWidth: 0, gap: spacing.xs },
+  headingIdentity: { flexDirection: 'row', alignItems: 'center', gap: 9 },
   heading: { ...typography.heading, color: colors.dark },
   subheading: { ...typography.caption, color: colors.muted },
   controls: { flexDirection: 'row', gap: spacing.sm },
@@ -333,6 +344,16 @@ const styles = StyleSheet.create({
     backgroundColor: colors.successBg,
     justifyContent: 'center',
     gap: spacing.xs,
+  },
+  webMetric: { flexDirection: 'row', alignItems: 'center', gap: 4 },
+  metricCopy: { flexGrow: 1, flexShrink: 1, minWidth: 0, gap: spacing.xs },
+  metricIcon: {
+    width: 26,
+    height: 26,
+    borderRadius: 13,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#e6f3df',
   },
   metricValue: { ...typography.title, color: colors.success },
   metricLabel: { ...typography.caption, color: colors.body, fontSize: 11 },

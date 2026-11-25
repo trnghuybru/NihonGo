@@ -145,7 +145,7 @@ const WordCard = memo(function WordCardView({
   useEffect(() => setRevealed(false), [hideMeaning]);
   const showMeaning = !hideMeaning || revealed;
   return (
-    <View style={[styles.card, styles.wordCard]}>
+    <View style={[styles.card, styles.wordCard]} testID="vocabulary-word-card">
       <View style={styles.wordHeading}>
         <View style={styles.wordIdentity}>
           <Text style={styles.word} selectable>
@@ -300,6 +300,7 @@ const BrowseCard = memo(function BrowseCardView({
     <Pressable
       accessibilityRole="button"
       accessibilityLabel={`Mở ${title}`}
+      testID={`vocabulary-lesson-${item.displayNumber}`}
       accessibilityHint={`${item.category}, ${item.lesson.word_count} từ vựng`}
       onPress={() => onOpen(item)}
       style={({ pressed }) => [
@@ -751,7 +752,7 @@ function VocabularyContent({
         </View>
       ) : null}
       {route.kind !== 'videos' && !compact ? (
-        <View style={styles.introduction}>
+        <View style={styles.introduction} testID="vocabulary-introduction">
           <View style={styles.titleRow}>
             {route.kind !== 'catalog' && route.kind !== 'lookup'
               ? backButton
@@ -861,6 +862,7 @@ function VocabularyContent({
               key={option}
               accessibilityRole="radio"
               accessibilityLabel={`JLPT ${option}`}
+              testID={option === level ? 'vocabulary-level-active' : undefined}
               accessibilityState={{ checked: option === level }}
               onPress={() => {
                 setLevel(option);
@@ -1002,7 +1004,7 @@ function VocabularyContent({
       {state.status === 'ready' &&
       route.kind === 'catalog' &&
       state.data.items.length > 0 ? (
-        <View style={styles.listHeading}>
+        <View style={styles.listHeading} testID="vocabulary-list-heading">
           <Text accessibilityRole="header" style={styles.sectionTitle}>
             Bài học {level}
           </Text>
@@ -1050,7 +1052,7 @@ function VocabularyContent({
       showsVerticalScrollIndicator={false}
       ListEmptyComponent={
         state.status === 'ready' ? (
-          <View style={styles.empty}>
+          <View style={styles.empty} testID="vocabulary-empty">
             <HomeFeatureIcon
               name={route.kind === 'lookup' ? 'search' : 'vocabulary'}
               size={40}

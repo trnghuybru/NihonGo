@@ -204,7 +204,7 @@ const ShadowingVideoCard = memo(function VideoCard({
   const ready = job.status === 'ready';
   const title = job.title || 'Video đang được chuẩn bị';
   return (
-    <View style={[styles.videoCard, width !== undefined && { width }]}>
+    <View testID="shadowing-video-card" style={[styles.videoCard, width !== undefined && { width }]}>
       <Pressable
         accessibilityRole="button"
         accessibilityLabel={`Mở video ${title}`}

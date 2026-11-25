@@ -1,3 +1,4 @@
+import { HomeFeatureIcon } from './HomeFeatureIcon';
 import {
   navigationLink,
   tabPaths,
@@ -10,7 +11,6 @@ import { BrandLogo } from './BrandLogo';
 import { colors, layout, radius, spacing, typography } from '../theme/theme';
 import { DESKTOP_SIDEBAR_WIDTH } from '../hooks/useWebLayout';
 import type { LearningSkill } from './SkillPicker';
-import type { User } from '../services/authService';
 
 export function DesktopNavigation({
   selectedTab,
@@ -21,7 +21,6 @@ export function DesktopNavigation({
   onOpenGames,
   showGames = true,
   onOpenSkill,
-  user,
 }: {
   selectedTab: AppTab;
   onSelectTab: (tab: AppTab) => void;
@@ -31,7 +30,6 @@ export function DesktopNavigation({
   onOpenGames: () => void;
   showGames?: boolean;
   onOpenSkill: (skill: LearningSkill) => void;
-  user: User;
 }) {
   const web = useWebNavigation();
   return (
@@ -39,7 +37,7 @@ export function DesktopNavigation({
       <View style={styles.brand}>
         <BrandLogo />
       </View>
-      <Text style={styles.sectionLabel}>KHÔNG GIAN HỌC TẬP</Text>
+
       <View
         accessibilityRole="tablist"
         accessibilityLabel="Điều hướng chính"
@@ -72,7 +70,7 @@ export function DesktopNavigation({
               >
                 {tab.label}
               </Text>
-              {selected && <View style={styles.dot} />}
+
             </Pressable>
           );
         })}
@@ -112,6 +110,7 @@ export function DesktopNavigation({
             pressed && styles.pressed,
           ]}
         >
+          <HomeFeatureIcon name={item.id === 'games' ? 'gamepad' : 'flashcards'} size={22} color={colors.dark} />
           <Text
             style={[
               styles.quickLabel,
@@ -146,26 +145,10 @@ export function DesktopNavigation({
             pressed && styles.pressed,
           ]}
         >
+          <HomeFeatureIcon name={skill.id === 'listening' ? 'headphones' : 'microphone'} size={22} color={colors.dark} />
           <Text style={styles.quickLabel}>{skill.label}</Text>
         </Pressable>
       ))}
-      <View style={styles.spacer} />
-      <Pressable
-        accessibilityRole="button"
-        accessibilityLabel="Mở tài khoản của bạn"
-        {...navigationLink(web, '/profile', () => onSelectTab('profile'))}
-        style={styles.account}
-      >
-        <View style={styles.avatar}>
-          <Text style={styles.avatarText}>
-            {user.name.slice(0, 1).toUpperCase()}
-          </Text>
-        </View>
-        <View style={styles.accountCopy}>
-          <Text style={styles.accountName}>{user.name}</Text>
-          <Text style={styles.accountHint}>Tài khoản của bạn</Text>
-        </View>
-      </Pressable>
     </View>
   );
 }
@@ -204,40 +187,15 @@ const styles = StyleSheet.create({
   selected: { backgroundColor: colors.badgeBg },
   selectedLabel: { color: colors.primaryText },
   pressed: { backgroundColor: colors.surfaceTint },
-  dot: {
-    width: 6,
-    height: 6,
-    borderRadius: 3,
-    backgroundColor: colors.primary,
-  },
   quickLink: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: spacing.md,
     minHeight: layout.touchTarget,
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
     padding: spacing.md,
     borderRadius: radius.small,
     borderCurve: 'continuous',
   },
   quickLabel: { ...typography.body, color: colors.body },
-  spacer: { flex: 1 },
-  account: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: spacing.md,
-    paddingTop: spacing.xl,
-    marginTop: spacing.md,
-    borderTopWidth: 1,
-    borderTopColor: colors.divider,
-  },
-  avatar: {
-    width: layout.touchTarget,
-    height: layout.touchTarget,
-    borderRadius: radius.pill,
-    backgroundColor: colors.badgeBg,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  avatarText: { ...typography.label, color: colors.badgeText },
-  accountCopy: { flex: 1, gap: spacing.xs },
-  accountName: { ...typography.label, color: colors.dark },
-  accountHint: { ...typography.caption, color: colors.muted },
 });

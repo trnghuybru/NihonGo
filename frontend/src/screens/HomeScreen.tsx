@@ -1,7 +1,7 @@
 import { InstallAppHint } from '../components/InstallAppHint';
 import { AuthButton } from '../components/AuthForm';
 import type { DictionaryHistoryItem } from '../services/dictionaryService';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { Platform, Pressable, StyleSheet, Text, View } from 'react-native';
 import { HomeFlashcardHub } from '../components/HomeFlashcardHub';
 import type { FlashcardSession } from '../services/flashcardService';
 import { DailyGoalProgress } from '../components/StudyTime';
@@ -46,6 +46,7 @@ export function HomeScreen({
   onOpenGames,
 }: Props) {
   const { desktop } = useWebLayout();
+  const webHome = Platform.OS === 'web';
   return (
     <AuthShell
       title={`Chào ${user.name}`}
@@ -53,6 +54,7 @@ export function HomeScreen({
       icon="user"
       card={false}
       wide
+      hideHeader={webHome}
       compactHeader
       topBarAccessory={
         <View style={styles.badges}>
@@ -70,44 +72,64 @@ export function HomeScreen({
       }
       headerAccessory={<NihongoMascot size={104} />}
     >
+      {webHome ? (
+        <View nativeID="home-welcome">
+          <View style={styles.welcomeCopy}>
+            <Text accessibilityRole="header" style={styles.welcomeTitle}>
+              Chào {user.name}
+            </Text>
+            <Text style={styles.dashboardCaption}>
+              Học tiếng Nhật, mở ra nhiều cơ hội mới!
+            </Text>
+          </View>
+        </View>
+      ) : null}
       <InstallAppHint />
-      <View style={[styles.section, styles.searchSection]}>
-        <Text accessibilityRole="header" style={styles.sectionTitle}>
-          Tra cứu từ vựng
-        </Text>
+      <View nativeID={webHome ? 'home-search' : undefined} style={[styles.section, styles.searchSection]}>
+        <View style={styles.searchHeading}>
+          {webHome ? <HomeFeatureIcon name="vocabulary" color="#dc6910" size={22} /> : null}
+          <Text accessibilityRole="header" style={styles.sectionTitle}>
+            Tra cứu từ vựng
+          </Text>
+        </View>
         <VocabularySearchBar onSearch={onSearchVocabulary} />
       </View>
-      <View
-        testID="home-learning-overview"
-        style={[styles.learningOverview, desktop && styles.desktopLearningOverview]}
-      >
-        <View style={[styles.goalColumn, desktop && styles.desktopGoalColumn]}>
-          <DailyGoalProgress />
+      <View nativeID={webHome ? 'home-learning-layout' : undefined} style={styles.learningOverview}>
+        <View
+          testID="home-learning-overview"
+          style={[styles.learningOverview, desktop && styles.desktopLearningOverview]}
+        >
+          <View style={[styles.goalColumn, desktop && styles.desktopGoalColumn]}>
+            <DailyGoalProgress />
+          </View>
+          <View style={[styles.calendarColumn, desktop && styles.desktopCalendarColumn]}>
+            <StudyStreakCalendar accountId={user.id} />
+          </View>
         </View>
-        <View style={[styles.calendarColumn, desktop && styles.desktopCalendarColumn]}>
-          <StudyStreakCalendar accountId={user.id} />
-        </View>
+        <HomeFlashcardHub
+          onOpenFlashcards={onOpenFlashcards ?? onOpenVocabulary}
+          onOpenQuiz={onOpenQuiz ?? onContinueLearning}
+        />
       </View>
-      <HomeFlashcardHub
-        onOpenFlashcards={onOpenFlashcards ?? onOpenVocabulary}
-        onOpenQuiz={onOpenQuiz ?? onContinueLearning}
-      />
       <Pressable
         accessibilityRole="button"
         accessibilityLabel="Mở bài học từ vựng"
+        nativeID={webHome ? 'home-vocabulary' : undefined}
         onPress={onOpenVocabulary}
         style={({ pressed }) => [
           styles.vocabularyCard,
           pressed && styles.pressed,
         ]}
       >
-        <NihongoMascot pose="writing" size={72} decorative />
+        {!desktop ? <NihongoMascot pose="writing" size={72} decorative /> : null}
         <View style={styles.vocabularyCopy}>
           <Text style={styles.vocabularyTitle}>Bài học từ vựng</Text>
+          {webHome ? <Text style={styles.dashboardCaption}>Học theo chủ đề, luyện tập hiệu quả hơn.</Text> : null}
         </View>
+        {webHome ? <Text style={styles.dashboardAction}>Xem tất cả</Text> : null}
         <HomeFeatureIcon name="arrow" color={colors.primaryText} size={20} />
       </Pressable>
-      <View style={styles.section}>
+      <View nativeID={webHome ? 'home-skills' : undefined} style={styles.section}>
         <View style={styles.sectionHeadingRow}>
           <Text accessibilityRole="header" style={styles.sectionTitle}>
             Luyện kỹ năng
@@ -115,6 +137,7 @@ export function HomeScreen({
           {onOpenGames ? (
             <AuthButton
               label="Game từ vựng"
+              trailingIcon={webHome ? 'arrow' : undefined}
               variant="text"
               onPress={onOpenGames}
             />
@@ -131,6 +154,11 @@ export function HomeScreen({
 
 const styles = StyleSheet.create({
   searchSection: { zIndex: 30 },
+  searchHeading: { flexDirection: 'row', alignItems: 'center', gap: 12 },
+  welcomeCopy: { gap: 4, flex: 1 },
+  welcomeTitle: { ...typography.title, color: '#153549', fontSize: 23, lineHeight: 29 },
+  dashboardCaption: { ...typography.caption, color: '#586a7a' },
+  dashboardAction: { ...typography.link, color: colors.primaryText },
   learningOverview: { gap: spacing.lg },
   desktopLearningOverview: { flexDirection: 'row', alignItems: 'stretch' },
   goalColumn: { minWidth: 0 },

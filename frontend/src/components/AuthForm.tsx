@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import {
   ActivityIndicator,
+  Image,
   KeyboardAvoidingView,
   Platform,
   Pressable,
@@ -48,6 +49,7 @@ export function AuthShell({
   backgroundDecoration,
   floatingAccessory,
   hideHeader = false,
+  scenicLogin = false,
 }: {
   title: string;
   subtitle: string;
@@ -64,12 +66,39 @@ export function AuthShell({
   backgroundDecoration?: React.ReactNode;
   floatingAccessory?: React.ReactNode;
   hideHeader?: boolean;
+  scenicLogin?: boolean;
 }) {
   const insets = useSafeAreaInsets();
   const navigationInset = useBottomNavigationInset();
   const { desktop } = useWebLayout();
   const { width } = useWindowDimensions();
   const authDesktop = desktop || (Platform.OS === 'web' && width >= 900);
+  if (scenicLogin) {
+    return (
+      <View nativeID="scenic-login">
+        <View nativeID="scenic-login-brand" accessibilityLabel="NihonGO">
+          <Image
+            source={require('../assets/mascot/momo-head.png')}
+            style={{ width: 52, height: 52 }}
+            resizeMode="contain"
+            accessible={false}
+          />
+          <Text>Nihon<Text nativeID="scenic-login-brand-accent">GO</Text></Text>
+        </View>
+        <View nativeID="scenic-login-content">
+          <View nativeID="scenic-login-heading">
+            <Text accessibilityRole="header">{title}</Text>
+            <Text>{subtitle}</Text>
+          </View>
+          <View nativeID="scenic-login-card">{children}</View>
+          {footer}
+        </View>
+        {floatingAccessory ? (
+          <View nativeID="scenic-login-beta">{floatingAccessory}</View>
+        ) : null}
+      </View>
+    );
+  }
   return (
     <KeyboardAvoidingView
       style={styles.fill}
@@ -152,6 +181,7 @@ export function AuthShell({
 
 export function AuthField({
   label,
+  labelIcon,
   password = false,
   icon,
   code = false,
@@ -163,6 +193,7 @@ export function AuthField({
 }: TextInputProps & {
   label: string;
   password?: boolean;
+  labelIcon?: AuthIconName;
   icon?: AuthIconName;
   code?: boolean;
   error?: string;
@@ -171,7 +202,14 @@ export function AuthField({
   const [focused, setFocused] = useState(false);
   return (
     <View style={styles.field}>
-      <Text style={styles.label}>{label}</Text>
+      {labelIcon ? (
+        <View style={styles.labelRow}>
+          <AuthIcon name={labelIcon} size={21} color={colors.dark} />
+          <Text style={styles.label}>{label}</Text>
+        </View>
+      ) : (
+        <Text style={styles.label}>{label}</Text>
+      )}
       <View
         style={[
           styles.inputRow,
@@ -471,6 +509,7 @@ const styles = StyleSheet.create({
   sections: { gap: spacing.xl },
   footer: { marginTop: spacing.xl },
   field: { gap: spacing.sm },
+  labelRow: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm },
   label: { ...typography.label, color: colors.body },
   inputRow: {
     flexDirection: 'row',

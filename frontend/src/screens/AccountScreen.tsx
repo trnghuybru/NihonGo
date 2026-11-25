@@ -2,6 +2,7 @@ import { useWebNavigation } from '../navigation/webNavigation';
 import { useEffect, useRef, useState } from 'react';
 import {
   ActivityIndicator,
+  Platform,
   Pressable,
   StyleSheet,
   Text,
@@ -118,6 +119,14 @@ export function AccountScreen({
       if (alive.current) setPendingAction(null);
     }
   }
+  const isWeb = Platform.OS === 'web';
+  const avatar = (
+    <View style={styles.avatar} accessible={false}>
+      <Text style={styles.avatarText}>
+        {user.name.trim().charAt(0).toUpperCase()}
+      </Text>
+    </View>
+  );
   const remaining = Math.max(0, Math.ceil((resendAt - clock) / 1000));
   return (
     <AuthShell
@@ -126,14 +135,18 @@ export function AccountScreen({
       icon="user"
       card={false}
       wide={desktop}
-      headerAccessory={
-        <View style={styles.avatar} accessible={false}>
-          <Text style={styles.avatarText}>
-            {user.name.trim().charAt(0).toUpperCase()}
-          </Text>
-        </View>
-      }
+      hideHeader={isWeb}
+      headerAccessory={avatar}
     >
+      {isWeb ? (
+        <View nativeID="profile-welcome">
+          {avatar}
+          <View>
+            <Text accessibilityRole="header" style={styles.profileTitle}>Cá nhân</Text>
+            <Text style={styles.description}>Quản lý thông tin và thiết lập học tập của bạn.</Text>
+          </View>
+        </View>
+      ) : null}
       <View
         style={[styles.columns, desktop && styles.desktopColumns]}
         testID="account-layout"
@@ -433,6 +446,7 @@ const styles = StyleSheet.create({
   },
   logoutPressed: { backgroundColor: colors.dangerBg },
   disabledText: { color: colors.disabledText },
+  profileTitle: { ...typography.title, fontSize: 21, lineHeight: 28, color: '#153549' },
   sectionTitle: { ...typography.heading, color: colors.dark },
   divider: { height: 1, backgroundColor: colors.divider },
 });

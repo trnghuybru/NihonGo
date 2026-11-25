@@ -167,8 +167,9 @@ export function HomeFlashcardHub({
                 : 'Học từ bộ có sẵn, bộ tự tạo hoặc yêu thích.'}
             </Text>
           </View>
-          <NihongoMascot pose="reading" size={80} decorative />
+          {!desktop ? <NihongoMascot pose="reading" size={80} decorative /> : null}
         </View>
+        {desktop ? <View testID="home-flashcard-mascot" style={styles.dashboardMascot} pointerEvents="none"><NihongoMascot pose="reading" size={108} decorative /></View> : null}
         <AuthNotice error message={error} />
         <View style={styles.spacer} />
         <AuthButton
@@ -228,6 +229,7 @@ export function HomeFlashcardHub({
             ? 'Chọn nghĩa đúng từ các bộ thẻ gần đây. Ưu tiên những từ bạn chưa nhớ.'
             : 'Học bộ có ít nhất 4 nghĩa khác nhau. Mỗi ngày có tối đa 5 câu hỏi.'}
         </Text>
+        {desktop ? <View testID="home-flashcard-mascot" style={styles.dashboardMascot} pointerEvents="none"><NihongoMascot pose="speaking" size={108} decorative /></View> : null}
         <View style={styles.spacer} />
         <AuthButton
           label={
@@ -260,6 +262,13 @@ const styles = StyleSheet.create({
   },
   heading: { ...typography.heading, color: colors.dark },
   desktopCard: { flex: 1 },
+  dashboardMascot: {
+    position: 'absolute',
+    right: 16,
+    bottom: 12,
+    borderRadius: 60,
+    backgroundColor: '#fff5e8',
+  },
   title: { ...typography.title, color: colors.dark },
   body: { ...typography.body, color: colors.body },
   scene: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm },

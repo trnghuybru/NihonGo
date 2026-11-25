@@ -312,12 +312,16 @@ export function LoginScreen() {
     forgot: 'Gửi mã khôi phục',
     reset: 'Lưu mật khẩu mới',
   };
+  const scenicLogin = Platform.OS === 'web' && stage === 'login';
+  const providers = config?.providers ?? [];
+  const showUnavailableGoogle = scenicLogin && config !== null && !providers.includes('google');
   const remaining = Math.max(0, Math.ceil((resendAt - clock) / 1000));
   const showPassword =
     stage === 'login' || stage === 'reset' || (stage === 'register' && !social);
 
   return (
     <AuthShell
+      scenicLogin={scenicLogin}
       title={titles[stage]}
       subtitle={subtitles[stage]}
       icon={
@@ -343,37 +347,17 @@ export function LoginScreen() {
             accessibilityRole="link"
             accessibilityLabel="Điền khảo sát đăng ký beta"
             onPress={() => Linking.openURL(BETA_SIGNUP_URL)}
-            style={[
-              styles.betaMascot,
-              compactInvite && styles.betaMascotCompact,
-            ]}
+            style={[styles.betaMascot, compactInvite && !scenicLogin && styles.betaMascotCompact]}
           >
-            <View
-              style={[
-                styles.betaSpeech,
-                compactInvite && styles.betaSpeechCompact,
-              ]}
-            >
+            <View style={[styles.betaSpeech, compactInvite && !scenicLogin && styles.betaSpeechCompact]}>
               <Text style={styles.betaSpeechTitle}>Chưa đăng ký beta?</Text>
               <Text style={styles.betaSpeechCopy}>
                 Điền khảo sát để nhận lời mời từ Momo trong 24 giờ nhé!
               </Text>
-              <Text style={styles.signupLink}>
-                Điền khảo sát đăng ký beta →
-              </Text>
-              <View
-                style={
-                  compactInvite
-                    ? styles.betaSpeechTailCompact
-                    : styles.betaSpeechTail
-                }
-              />
+              <Text style={styles.signupLink}>Điền khảo sát đăng ký beta →</Text>
+              <View style={compactInvite && !scenicLogin ? styles.betaSpeechTailCompact : styles.betaSpeechTail} />
             </View>
-            <NihongoMascot
-              pose="wave"
-              size={compactInvite ? 72 : 112}
-              decorative
-            />
+            <NihongoMascot pose="wave" size={scenicLogin ? 76 : compactInvite ? 72 : 112} decorative />
           </Pressable>
         ) : undefined
       }
@@ -451,6 +435,7 @@ export function LoginScreen() {
       {stage === 'login' || stage === 'forgot' ? (
         <AuthField
           label="Email hoặc số điện thoại"
+          labelIcon={scenicLogin ? 'mail' : undefined}
           icon="user"
           placeholder="Email hoặc số điện thoại đã xác thực"
           value={identifier}
@@ -477,6 +462,7 @@ export function LoginScreen() {
       {showPassword ? (
         <AuthField
           label={stage === 'reset' ? 'Mật khẩu mới' : 'Mật khẩu'}
+          labelIcon={scenicLogin ? 'lock' : undefined}
           password
           icon="lock"
           placeholder={
@@ -511,7 +497,7 @@ export function LoginScreen() {
         </>
       ) : null}
       {stage === 'login' ? (
-        <View style={styles.forgotAction}>
+        <View nativeID={scenicLogin ? 'scenic-login-forgot' : undefined} style={styles.forgotAction}>
           <AuthButton
             label="Quên mật khẩu?"
             variant="text"
@@ -562,14 +548,23 @@ export function LoginScreen() {
       ) : null}
       {stage === 'login' ? (
         <>
-          {(config?.providers.length ?? 0) > 0 ? (
-            <View style={styles.dividerRow}>
+          {providers.length > 0 || showUnavailableGoogle ? (
+            <View nativeID={scenicLogin ? 'scenic-login-divider' : undefined} style={styles.dividerRow}>
               <View style={styles.dividerLine} />
               <Text style={styles.divider}>Hoặc tiếp tục bằng</Text>
               <View style={styles.dividerLine} />
             </View>
           ) : null}
-          {(config?.providers || []).map(provider => (
+          {showUnavailableGoogle ? (
+            <AuthButton
+              label="Google"
+              icon={<GoogleIcon size={22} />}
+              secondary
+              disabled
+              onPress={() => {}}
+            />
+          ) : null}
+          {providers.map(provider => (
             <AuthButton
               key={provider}
               label={PROVIDER_NAMES[provider]}
