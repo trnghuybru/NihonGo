@@ -1,4 +1,4 @@
-"""Local-only LLM + Supertonic latency experiment; no Gemini Live calls."""
+"""Opt-in LLM + Supertonic speaking transport; no Gemini Live calls."""
 import base64
 import binascii
 import os
@@ -13,7 +13,7 @@ MAX_AUDIO_BYTES = 16_000 * 2 * 10
 
 
 def enabled():
-    return os.getenv('SPEAKING_TTS_EXPERIMENT') == '1' and os.getenv('APP_ENV') != 'production'
+    return os.getenv('SPEAKING_TTS_EXPERIMENT') == '1'
 
 
 @bp.post('/sessions/<session_id>/experimental-transcribe')
