@@ -204,7 +204,10 @@ const ShadowingVideoCard = memo(function VideoCard({
   const ready = job.status === 'ready';
   const title = job.title || 'Video đang được chuẩn bị';
   return (
-    <View testID="shadowing-video-card" style={[styles.videoCard, width !== undefined && { width }]}>
+    <View
+      testID="shadowing-video-card"
+      style={[styles.videoCard, width !== undefined && { width }]}
+    >
       <Pressable
         accessibilityRole="button"
         accessibilityLabel={`Mở video ${title}`}
@@ -277,12 +280,23 @@ type CatalogSnapshot = {
 export function ShadowingScreen({
   onExit,
   bottomOverlayHeight = 0,
+  initialJobId,
+  initialStartSeconds = 0,
 }: {
   onExit?: () => void;
   bottomOverlayHeight?: number;
+  initialJobId?: string;
+  initialStartSeconds?: number;
 }) {
   const web = useWebNavigation();
   const webPath = web?.pathname;
+  const requestedStart = web
+    ? Number(new URLSearchParams(web.search).get('start') || 0)
+    : initialStartSeconds;
+  const startRef = useRef(0);
+  startRef.current =
+    Number.isFinite(requestedStart) && requestedStart >= 0 ? requestedStart : 0;
+
   const webRef = useRef(web);
   webRef.current = web;
   const { desktop, contentWidth } = useWebLayout();
@@ -545,10 +559,18 @@ export function ShadowingScreen({
         setDictationAnswers({});
         setLesson(result);
         const nav = webRef.current,
-          target = '/practice/listening/' + encodeURIComponent(id);
+          target =
+            '/practice/listening/' +
+            encodeURIComponent(id) +
+            (startRef.current ? '?start=' + startRef.current : '');
         if (nav && nav.pathname !== target) nav.navigate(target);
         setShowTranslation(false);
-        setIndex(0);
+        const matchedIndex = result.segments.findIndex(
+          segment =>
+            segment.start_seconds <= startRef.current &&
+            segment.end_seconds > startRef.current,
+        );
+        setIndex(matchedIndex >= 0 ? matchedIndex : 0);
         setPanelOpen(true);
         setSettingsOpen(false);
         setLiveIndex(-1);
@@ -571,6 +593,9 @@ export function ShadowingScreen({
       if (mounted.current && current === generation.current) setBusy(false);
     }
   }, []);
+  useEffect(() => {
+    if (!webPath && initialJobId) open(initialJobId);
+  }, [initialJobId, webPath, open]);
   useEffect(() => {
     if (!webPath) return;
     const id = /^\/practice\/listening\/([^/]+)$/.exec(webPath)?.[1];
@@ -1667,7 +1692,10 @@ export function ShadowingScreen({
               style={[styles.scopeButton, scope === value && styles.selected]}
             >
               <Text
-                style={[styles.scopeLabel, scope === value && styles.scopeActive]}
+                style={[
+                  styles.scopeLabel,
+                  scope === value && styles.scopeActive,
+                ]}
               >
                 {value === 'all' ? 'Tất cả video' : 'Video của tôi'}
               </Text>

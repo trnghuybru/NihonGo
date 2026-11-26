@@ -1489,3 +1489,13 @@ test('mobile quiz is collapsed until opened and stays inline below a pinned play
   expect(tree.root.findByType(VideoExamplePlayer).props.example).toBe(source);
   expect(shadowingService.questions).not.toHaveBeenCalled();
 });
+
+test('opens a linked shadowing lesson at the source video segment', async () => {
+  await act(async () => {
+    tree = Renderer.create(
+      <ShadowingScreen initialJobId={job.id} initialStartSeconds={4.5} />,
+    );
+  });
+  expect(shadowingService.lesson).toHaveBeenCalledWith(job.id);
+  expect(tree.root.findByType(VideoExamplePlayer).props.example.id).toBe('two');
+});
