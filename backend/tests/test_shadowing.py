@@ -635,6 +635,45 @@ class YouTubeSourceTests(unittest.TestCase):
         modules.start()
         self.addCleanup(modules.stop)
 
+    def test_default_duration_accepts_an_hour_and_preserves_captions_near_the_end(self):
+        import os
+        from tempfile import TemporaryDirectory
+        from shadowing.processor import process_video
+        with patch.dict(os.environ, {'SHADOWING_YOUTUBE_PROXY': '', 'SHADOWING_YOUTUBE_COOKIE_FILE': ''}):
+            os.environ.pop('SHADOWING_MAX_SECONDS', None)
+            for duration in (1800, 3599, 3600):
+                with self.subTest(duration=duration), TemporaryDirectory() as directory, \
+                        patch('yt_dlp.YoutubeDL') as downloader, patch('requests.get') as get, \
+                        patch('shadowing.morphology.analyze', return_value={}):
+                    downloader.return_value.__enter__.return_value.extract_info.return_value = {
+                        'id': 'HV-MoRsBXDg', 'title': 'Long video', 'duration': duration,
+                        'subtitles': {'ja': [{'ext': 'json3', 'url': 'https://captions.test/ja'}]}}
+                    get.return_value.json.return_value = {'events': [{
+                        'tStartMs': (duration - 2) * 1000, 'dDurationMs': 1000,
+                        'segs': [{'utf8': 'こんにちは。'}]}]}
+                    result = process_video('HV-MoRsBXDg', directory)
+                    self.assertEqual(result['dataset']['video']['duration_seconds'], duration)
+                    self.assertEqual(result['dataset']['segments'][0]['start_seconds'], duration - 2)
+                    downloader.return_value.__enter__.return_value.download.assert_not_called()
+
+    def test_duration_rejects_over_an_hour_live_and_honors_operator_limit(self):
+        import os
+        from tempfile import TemporaryDirectory
+        from shadowing.processor import process_video
+        for duration, live, limit in ((3601, False, None), (100, True, None), (1201, False, '1200')):
+            with self.subTest(duration=duration, live=live, limit=limit), TemporaryDirectory() as directory, \
+                    patch.dict(os.environ, {'SHADOWING_YOUTUBE_PROXY': '', 'SHADOWING_YOUTUBE_COOKIE_FILE': ''}), \
+                    patch('yt_dlp.YoutubeDL') as downloader, patch('requests.get') as get:
+                os.environ.pop('SHADOWING_MAX_SECONDS', None)
+                if limit:
+                    os.environ['SHADOWING_MAX_SECONDS'] = limit
+                downloader.return_value.__enter__.return_value.extract_info.return_value = {
+                    'id': 'HV-MoRsBXDg', 'duration': duration, 'is_live': live}
+                with self.assertRaises(ProcessingError) as error:
+                    process_video('HV-MoRsBXDg', directory)
+                self.assertEqual(error.exception.code, 'video_too_long')
+                get.assert_not_called()
+
     def test_bot_challenge_is_classified_without_leaking_provider_details(self):
         from tempfile import TemporaryDirectory
         from shadowing.processor import process_video

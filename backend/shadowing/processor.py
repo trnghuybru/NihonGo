@@ -228,7 +228,7 @@ def process_video(video_id, directory):
             if metadata.get('id') != video_id or metadata.get('_type') in ('playlist', 'multi_video'):
                 raise ProcessingError('invalid_video', 'Cần một video YouTube cụ thể.')
             duration = metadata.get('duration')
-            maximum = int(os.getenv('SHADOWING_MAX_SECONDS', '1200'))
+            maximum = int(os.getenv('SHADOWING_MAX_SECONDS', '3600'))
             if metadata.get('is_live') or not duration or not 0 < duration <= maximum:
                 raise ProcessingError('video_too_long', f'Chọn video đã kết thúc, dài tối đa {maximum // 60} phút.')
             if metadata.get('age_limit', 0) >= 18 or metadata.get('availability') in ('private', 'premium_only', 'subscriber_only'):
