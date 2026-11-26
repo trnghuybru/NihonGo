@@ -398,7 +398,7 @@ export function SharedGameRoomScreen({
                   ? '1. Xác nhận game → 2. Kiểm tra mic → 3. Sẵn sàng'
                   : '1. Xác nhận game → 2. Sẵn sàng → 3. Bắt đầu'}
               </Text>
-              <Text style={s.name} accessibilityLiveRegion="polite">
+              <Text style={s.body} accessibilityLiveRegion="polite">
                 {nextStep}
               </Text>
               {host && !room.configured ? (
@@ -695,14 +695,12 @@ const s = StyleSheet.create({
     gap: spacing.md,
   },
   title: { ...typography.heading, color: colors.dark },
+  body: { ...typography.body, color: colors.body },
   caption: { ...typography.body, color: colors.muted },
-  name: { ...typography.caption, color: colors.dark },
-  label: { ...typography.caption, color: colors.body },
+  name: { ...typography.label, color: colors.dark, flexShrink: 1 },
+  label: { ...typography.label, color: colors.body },
   code: {
-    ...typography.title,
-    fontSize: 26,
-    lineHeight: 36,
-    letterSpacing: 3,
+    ...typography.code,
     color: colors.focus,
   },
   grow: { flex: 1 },

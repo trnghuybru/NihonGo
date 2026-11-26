@@ -1615,7 +1615,7 @@ const styles = StyleSheet.create({
   },
   joinInput: { flexGrow: 1, flexShrink: 1, minWidth: 0 },
   joinButton: { width: 140 },
-  eyebrow: { ...typography.caption, color: colors.muted, letterSpacing: 1 },
+  eyebrow: { ...typography.caption, color: colors.muted },
   modeOptions: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.md },
   modeOption: {
     flex: 1,
@@ -1662,10 +1662,7 @@ const styles = StyleSheet.create({
   settingTime: { flexGrow: 3, gap: spacing.sm },
   inline: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm },
   roomCode: {
-    ...typography.brand,
-    fontSize: 28,
-    lineHeight: 36,
-    letterSpacing: 4,
+    ...typography.code,
     color: colors.focus,
   },
   statusBadge: {
