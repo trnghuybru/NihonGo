@@ -46,7 +46,7 @@ SHADOWING_SQS_ENDPOINT=http://localhost:9324
 SHADOWING_SQS_QUEUE_URL=
 SHADOWING_WHISPER_MODEL=small
 SHADOWING_CPU_THREADS=2
-SHADOWING_MAX_SECONDS=1200
+SHADOWING_MAX_SECONDS=3600
 SHADOWING_JOB_TIMEOUT=2400
 ```
 
@@ -69,9 +69,9 @@ và kiểm tra liên kết của người dùng. Link chuẩn/shorts/live/embed/
 thành video ID; không cho backend lấy URL tùy ý.
 
 Video đã có phụ đề trong `example_videos`/`video_caption_segments` dùng ngay, không
-nhận dạng lại. Video mới mặc định tối đa 20 phút, không livestream, private hoặc
-nguồn yêu cầu đăng nhập. Một tài khoản có tối đa một video đang xử lý và 5 yêu cầu
-tạo/thử lại xử lý mới mỗi ngày theo cửa sổ rate limit. Nhiều người gửi cùng video
+nhận dạng lại. Video mới mặc định tối đa 60 phút, không livestream, private hoặc
+nguồn yêu cầu đăng nhập. Một tài khoản có tối đa một video đang xử lý, không
+giới hạn tổng lượt tạo/thử lại theo ngày. Nhiều người gửi cùng video
 chia sẻ kết quả thay vì nhân đôi tác vụ.
 
 Worker ưu tiên phụ đề tiếng Nhật gốc, sau đó phụ đề tiếng Nhật tự động; bỏ track
@@ -294,3 +294,12 @@ storage thiết bị, queue hay cache. Response dùng `Cache-Control: no-store`.
 Rời bài xoá bộ câu hỏi; response tới sau khi huỷ/rời bài được bỏ qua. Có thể
 tạo lại theo yêu cầu; AI có thể báo lỗi nếu không tạo được nội dung đủ rõ hoặc
 trả thiếu số câu, khi đó người dùng thử lại hoặc giảm số câu.
+
+Khi nâng giới hạn từ 20 lên 60 phút, cập nhật `SHADOWING_MAX_SECONDS=3600`
+trong môi trường triển khai nếu đang đặt giá trị 1200, rồi recreate worker để
+nhận cấu hình mới. Chỉ restart không cập nhật biến môi trường container.
+
+Số lượt nhập link YouTube không giới hạn theo ngày, trong cả chế độ quota daily
+và USD. Nhập video không trừ lượt dịch phụ đề. Mỗi tài khoản vẫn chỉ chuẩn bị
+một video tại một thời điểm; gửi lại cùng video dùng chung job. Giới hạn dịch
+phụ đề và Nói Live được giữ riêng.

@@ -1809,7 +1809,7 @@ export function ShadowingScreen({
                       style={styles.input}
                     />
                     <Text style={styles.body}>
-                      Video dài tối đa 20 phút. Bạn có thể tiếp tục dùng app
+                      Video dài tối đa 60 phút. Bạn có thể tiếp tục dùng app
                       trong lúc chuẩn bị.
                     </Text>
                     <AuthButton
