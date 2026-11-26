@@ -89,6 +89,17 @@ function MainTabs({
     setPracticeActivity('games');
     onSelectTab('practice');
   }, [onSelectTab]);
+  const [shadowingTarget, setShadowingTarget] = useState<{
+    id: string;
+    start: number;
+    request: number;
+  } | null>(null);
+  const openShadowing = (id: string, start: number) => {
+    setShadowingTarget({ id, start, request: Date.now() });
+    setPracticeActivity(null);
+    setActiveSkill('listening');
+    onSelectTab('practice');
+  };
   const [navigationHeight, setNavigationHeight] = useState(0);
   const [homeActivity, setHomeActivity] = useState<
     | {
@@ -124,6 +135,7 @@ function MainTabs({
     [onSelectTab],
   );
   const openSkill = (skill: LearningSkill) => {
+    setShadowingTarget(null);
     setPracticeActivity(null);
     setActiveSkill(skill);
     onSelectTab('practice');
@@ -167,9 +179,7 @@ function MainTabs({
         setHomeActivity({ kind: 'flashcards', due: true, key: Date.now() });
       }}
     >
-      <BottomNavigationInsetContext.Provider
-        value={0}
-      >
+      <BottomNavigationInsetContext.Provider value={0}>
         <WebLayoutContext.Provider value={{ desktop, contentWidth }}>
           <View style={[styles.main, desktop && styles.desktopMain]}>
             {desktop && (
@@ -278,6 +288,9 @@ function MainTabs({
                       <SpeakingScenariosScreen onExit={exitSkill} />
                     ) : activeSkill === 'listening' ? (
                       <ShadowingScreen
+                        initialJobId={shadowingTarget?.id}
+                        initialStartSeconds={shadowingTarget?.start}
+                        key={shadowingTarget?.request}
                         onExit={exitSkill}
                         bottomOverlayHeight={0}
                       />
@@ -312,6 +325,7 @@ function MainTabs({
                       ]}
                     >
                       <VocabularyScreen
+                        onOpenShadowing={openShadowing}
                         area="lessons"
                         active={selectedTab === 'vocabulary'}
                         onExit={() => selectTab('home')}
@@ -326,6 +340,7 @@ function MainTabs({
                       ]}
                     >
                       <VocabularyScreen
+                        onOpenShadowing={openShadowing}
                         key={`${vocabularyQuery}:${lookupEntry?.kind ?? ''}:${
                           lookupEntry?.target ?? ''
                         }`}

@@ -1,3 +1,5 @@
+import { subscribeFlashcardSchedule } from '../services/flashcardSrsService';
+import { shadowingService } from '../services/shadowingService';
 import { SearchButton } from '../components/SearchButton';
 import { useDefaultJlptLevel } from '../hooks/useLearningLevel';
 import { decodeRouteParam } from '../navigation/webNavigation';
@@ -12,8 +14,10 @@ import { useBottomNavigationInset } from '../hooks/useBottomNavigationInset';
 import { memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
   ActivityIndicator,
+  AppState,
   BackHandler,
   FlatList,
+  Image,
   Keyboard,
   KeyboardAvoidingView,
   Modal,
@@ -27,6 +31,7 @@ import {
   View,
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import Svg, { Circle } from 'react-native-svg';
 import { AppBackground } from '../components/AppBackground';
 import { AuthButton, AuthNotice } from '../components/AuthForm';
 import { AuthIcon } from '../components/AuthIcon';
@@ -49,6 +54,7 @@ import {
   JLPT_LEVELS,
   JlptLevel,
   VocabularyLessonDetail,
+  VocabularyLessonProgress,
   VocabularyLessonSummary,
   VocabularySearchResult,
   VocabularyWord,
@@ -290,18 +296,38 @@ const BrowseCard = memo(function BrowseCardView({
   item,
   onOpen,
   width,
+  progress,
+  progressError,
 }: {
   item: Extract<Item, { kind: 'lesson' }>;
   onOpen: (item: Item) => void;
   width: number;
+  progress?: VocabularyLessonProgress;
+  progressError: boolean;
 }) {
   const title = `Bài ${item.displayNumber}`;
+  const complete = progress?.status === 'completed';
+  const status = progress
+    ? complete
+      ? 'Đã học hết'
+      : progress.studied
+      ? 'Đang học'
+      : 'Chưa học'
+    : progressError
+    ? 'Chưa tải được tiến độ'
+    : 'Đang tải tiến độ…';
   return (
     <Pressable
       accessibilityRole="button"
       accessibilityLabel={`Mở ${title}`}
       testID={`vocabulary-lesson-${item.displayNumber}`}
-      accessibilityHint={`${item.category}, ${item.lesson.word_count} từ vựng`}
+      accessibilityHint={`${item.category}, ${
+        item.lesson.word_count
+      } từ vựng. ${status}${
+        progress
+          ? `, đã ôn ${progress.studied} trên ${progress.total} từ, ${progress.due} từ đến hạn ôn`
+          : ''
+      }`}
       onPress={() => onOpen(item)}
       style={({ pressed }) => [
         styles.card,
@@ -311,12 +337,127 @@ const BrowseCard = memo(function BrowseCardView({
       ]}
     >
       <View style={styles.lessonCardHeader}>
-        <Text style={styles.lessonTitle}>{title}</Text>
-        <AuthIcon name="arrow" color={colors.primaryText} size={14} />
+        <View style={styles.lessonIdentity}>
+          <Image
+            source={require('../assets/mascot/momo-skill-reading-head-v1.png')}
+            resizeMode="contain"
+            accessible={false}
+            style={styles.lessonMomoIcon}
+          />
+          <Text style={styles.lessonTitle}>{title}</Text>
+        </View>
+        <View
+          style={[
+            styles.lessonStatusBadge,
+            complete && styles.lessonStatusComplete,
+          ]}
+        >
+          <Text
+            style={[
+              styles.caption,
+              progress?.studied ? styles.lessonActiveText : null,
+              complete && styles.lessonCompleteText,
+            ]}
+          >
+            {status}
+          </Text>
+        </View>
       </View>
-      <Text style={styles.caption}>{item.category}</Text>
-      <View style={styles.lessonCount}>
-        <Text style={styles.lessonCountText}>{item.lesson.word_count} từ</Text>
+      {item.category !== 'Từ vựng' ? (
+        <Text style={styles.caption}>{item.category}</Text>
+      ) : null}
+      <View style={styles.lessonProgressRow}>
+        <View style={styles.lessonProgress}>
+          {progress ? (
+            <View style={styles.lessonMetrics}>
+              <View
+                accessible
+                accessibilityLabel={`${progress.studied}/${progress.total} từ đã ôn`}
+                style={styles.lessonMetric}
+              >
+                <Text style={styles.lessonMetricValue}>
+                  {progress.studied}/{progress.total}
+                </Text>
+                <Text style={styles.caption}>Đã ôn</Text>
+              </View>
+              <View
+                accessible
+                accessibilityLabel={`${progress.due} từ đến hạn ôn`}
+                style={[
+                  styles.lessonMetric,
+                  progress.due > 0 && styles.lessonDueMetric,
+                ]}
+              >
+                <Text
+                  style={[
+                    styles.lessonMetricValue,
+                    progress.due > 0 && { color: colors.primaryText },
+                  ]}
+                >
+                  {progress.due}
+                </Text>
+                <Text style={styles.caption}>Đến hạn</Text>
+              </View>
+            </View>
+          ) : (
+            <Text style={styles.caption}>{item.lesson.word_count} từ</Text>
+          )}
+        </View>
+        {progress ? (
+          <View
+            accessible
+            accessibilityRole="progressbar"
+            accessibilityLabel={`Tiến độ ${title}`}
+            accessibilityValue={{
+              min: 0,
+              max: progress.total,
+              now: progress.studied,
+              text: `${progress.percent}%`,
+            }}
+            style={styles.lessonProgressRing}
+          >
+            <Svg width={52} height={52} viewBox="0 0 52 52" accessible={false}>
+              <Circle
+                cx={26}
+                cy={26}
+                r={22}
+                fill="none"
+                stroke={colors.track}
+                strokeWidth={4}
+              />
+              {progress.studied > 0 && progress.total > 0 ? (
+                <Circle
+                  cx={26}
+                  cy={26}
+                  r={22}
+                  fill="none"
+                  stroke={complete ? colors.success : colors.primary}
+                  strokeWidth={4}
+                  strokeLinecap="round"
+                  strokeDasharray={[2 * Math.PI * 22, 2 * Math.PI * 22]}
+                  strokeDashoffset={
+                    2 *
+                    Math.PI *
+                    22 *
+                    (1 - Math.min(1, progress.studied / progress.total))
+                  }
+                  rotation={-90}
+                  origin="26, 26"
+                />
+              ) : null}
+            </Svg>
+            <View style={styles.lessonProgressCenter} pointerEvents="none">
+              <Text
+                style={[
+                  styles.lessonProgressPercent,
+                  complete && styles.lessonCompleteText,
+                ]}
+              >
+                {progress.percent}%
+              </Text>
+            </View>
+          </View>
+        ) : null}
       </View>
     </Pressable>
   );
@@ -324,6 +465,7 @@ const BrowseCard = memo(function BrowseCardView({
 
 type VocabularyScreenProps = {
   onOpenFlashcards?: () => void;
+  onOpenShadowing?: (jobId: string, startSeconds: number) => void;
   initialEntry?: DictionaryHistoryItem;
   query?: string;
   onExit?: () => void;
@@ -389,6 +531,7 @@ function VocabularyContent({
   active = true,
   compact = false,
   embeddedVideos = false,
+  onOpenShadowing,
 }: VocabularyScreenProps & { embeddedVideos?: boolean }) {
   const defaultLevel = useDefaultJlptLevel();
   const webContext = useWebNavigation();
@@ -399,9 +542,9 @@ function VocabularyContent({
   const { contentWidth } = useWebLayout();
   const windowWidth = contentWidth || viewportWidth;
   const lessonColumns =
-    windowWidth >= 360 && fontScale <= 1.15
+    windowWidth >= 700 && fontScale <= 1.15
       ? 3
-      : windowWidth >= 320 && fontScale <= 1.5
+      : windowWidth >= 360 && fontScale <= 1.5
       ? 2
       : 1;
   const lessonCardWidth =
@@ -535,6 +678,43 @@ function VocabularyContent({
       ? ['vocabulary', 'lesson', level, route.lesson.id]
       : undefined,
   );
+  const catalogActive =
+    active && section === 'lessons' && route.kind === 'catalog';
+  const loadProgress = useCallback(
+    () =>
+      catalogActive
+        ? vocabularyService.progress(level)
+        : Promise.resolve({ level, items: [] as VocabularyLessonProgress[] }),
+    [catalogActive, level],
+  );
+  // Personal progress stays out of the long-lived lesson-content cache.
+  const { state: progressState, reload: reloadProgress } =
+    useRemoteResource(loadProgress);
+  const progressByLesson = useMemo(
+    () =>
+      new Map(
+        progressState.status === 'ready'
+          ? progressState.data.items.map(
+              item => [item.lesson_id, item] as const,
+            )
+          : [],
+      ),
+    [progressState],
+  );
+  useEffect(() => {
+    if (!catalogActive) return;
+    const unsubscribe = subscribeFlashcardSchedule(reloadProgress);
+    const subscription = AppState.addEventListener('change', next => {
+      if (next === 'active') reloadProgress();
+    });
+    if (Platform.OS === 'web') window.addEventListener('focus', reloadProgress);
+    return () => {
+      unsubscribe();
+      subscription.remove();
+      if (Platform.OS === 'web')
+        window.removeEventListener('focus', reloadProgress);
+    };
+  }, [catalogActive, reloadProgress]);
   const stopAudio = audio.stop;
   useEffect(() => {
     if (!active || quickLookupOpen) stopAudio();
@@ -613,7 +793,13 @@ function VocabularyContent({
           selected={item.example.id === selectedVideo?.id}
         />
       ) : (
-        <BrowseCard item={item} onOpen={open} width={lessonCardWidth} />
+        <BrowseCard
+          item={item}
+          onOpen={open}
+          width={lessonCardWidth}
+          progress={progressByLesson.get(item.lesson.id)}
+          progressError={progressState.status === 'error'}
+        />
       ),
     [
       audio.wordId,
@@ -622,6 +808,8 @@ function VocabularyContent({
       audio.toggle,
       hideMeaning,
       lessonCardWidth,
+      progressByLesson,
+      progressState.status,
       open,
       openVideo,
       route.kind,
@@ -718,6 +906,21 @@ function VocabularyContent({
           query={state.status === 'ready' ? state.data.videos?.query || '' : ''}
           position={selectedIndex + 1}
           count={examples.length}
+          onShadowing={
+            onOpenShadowing
+              ? async example => {
+                  const result = await shadowingService.submit(
+                    'https://www.youtube.com/watch?v=' +
+                      example.video.youtube_id,
+                  );
+                  if (result.job.status !== 'ready')
+                    throw new Error(
+                      'Video đang được chuẩn bị. Vui lòng thử lại sau.',
+                    );
+                  onOpenShadowing(result.job.id, example.start_seconds);
+                }
+              : undefined
+          }
           onPrevious={
             selectedIndex > 0
               ? () => setSelectedVideoId(examples[selectedIndex - 1].id)
@@ -890,6 +1093,18 @@ function VocabularyContent({
               </Text>
             </Pressable>
           ))}
+        </View>
+      ) : null}
+      {catalogActive && progressState.status === 'error' ? (
+        <View style={styles.progressError}>
+          <Text style={styles.caption}>
+            Chưa tải được tiến độ. Bạn vẫn có thể mở bài học.
+          </Text>
+          <AuthButton
+            label="Tải lại tiến độ"
+            variant="text"
+            onPress={reloadProgress}
+          />
         </View>
       ) : null}
       {section === 'lookup' && !embeddedVideos ? (
@@ -1385,16 +1600,55 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     gap: spacing.xs,
   },
-  lessonTitle: { ...typography.button, color: colors.dark, flexShrink: 1 },
-  lessonCount: {
-    alignSelf: 'flex-start',
-    marginTop: 'auto',
+  lessonStatusBadge: {
     paddingHorizontal: spacing.sm,
     paddingVertical: spacing.xs,
     borderRadius: radius.pill,
     backgroundColor: colors.badgeBg,
+    flexShrink: 1,
   },
-  lessonCountText: { ...typography.caption, color: colors.badgeText },
+  lessonStatusComplete: { backgroundColor: colors.successBg },
+  lessonIdentity: {
+    flex: 1,
+    minWidth: 0,
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: spacing.xs,
+  },
+  lessonMomoIcon: { width: 28, height: 28, flexShrink: 0 },
+  lessonTitle: { ...typography.button, color: colors.dark, flexShrink: 1 },
+  lessonProgressRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: spacing.sm,
+  },
+  lessonProgress: { flex: 1, minWidth: 0, gap: spacing.xs },
+  lessonMetrics: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.sm },
+  lessonMetric: {
+    flexGrow: 1,
+    flexBasis: 56,
+    minWidth: 56,
+    padding: spacing.sm,
+    gap: spacing.xs,
+    borderRadius: 8,
+    backgroundColor: colors.surfaceTint,
+  },
+  lessonDueMetric: { backgroundColor: colors.badgeBg },
+  lessonMetricValue: { ...typography.title, color: colors.dark },
+  lessonProgressRing: { width: 52, height: 52, flexShrink: 0 },
+  lessonProgressCenter: {
+    position: 'absolute',
+    top: 0,
+    right: 0,
+    bottom: 0,
+    left: 0,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  lessonProgressPercent: { ...typography.caption, color: colors.dark },
+  lessonActiveText: { ...typography.caption, color: colors.primaryText },
+  lessonCompleteText: { color: colors.success },
+  progressError: { gap: spacing.xs, alignItems: 'flex-start' },
   pressed: { backgroundColor: colors.surfaceTint },
   wordCard: {
     padding: spacing.lg,

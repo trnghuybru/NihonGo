@@ -70,7 +70,7 @@ jest.mock('../src/services/videoExamplesService', () => ({
 }));
 jest.mock('../src/services/vocabularyService', () => ({
   JLPT_LEVELS: ['N5', 'N4', 'N3', 'N2', 'N1'],
-  vocabularyService: { textbooks: jest.fn().mockResolvedValue({ items: [] }) },
+  vocabularyService: { textbooks: jest.fn().mockResolvedValue({ items: [] }), progress: jest.fn().mockResolvedValue({ level: 'N2', items: [] }) },
 }));
 
 jest.mock('../src/services/speakingService', () => ({
