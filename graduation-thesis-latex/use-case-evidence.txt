@@ -1,0 +1,64 @@
+USE CASE LIST - EVIDENCE MAP
+
+Scope: 11 report-level use cases corresponding to the general use-case diagram.
+Method: static inspection of current backend/frontend source, with project documentation as supporting context.
+This audit does not claim that every branch was executed end-to-end in every deployment.
+SQL models alone are not treated as evidence that a user-facing feature exists.
+
+UC-01 - Register an account
+FR: FR-01
+Evidence: frontend/src/screens/LoginScreen.tsx:submit, receiveChallenge; backend/auth/routes.py:register, verify, resend, locked_challenge; backend/auth/security.py:validate_password, email, phone
+
+UC-02 - Sign in
+FR: FR-02
+Evidence: frontend/src/screens/LoginScreen.tsx:submit; frontend/src/services/authService.ts:login, restore, accept; frontend/src/screens/AuthenticatedScreen.web.tsx:AuthenticatedScreen; backend/auth/routes.py:login, issue_session; backend/auth/security.py:identifier, verified_user
+
+UC-03 - Recover password
+FR: FR-03
+Evidence: frontend/src/screens/LoginScreen.tsx:submit; backend/auth/routes.py:forgot_password, reset_password, resend; backend/auth/security.py:validate_password
+
+UC-04 - Manage account and learning goals
+FR: FR-02, FR-04--FR-05
+Evidence: backend/learning/service.py:PreferencesInput.parse, save_preferences; backend/learning/options.py; frontend/src/screens/LearningSetupScreen.tsx; frontend/src/screens/AuthenticatedScreen.web.tsx:AuthenticatedScreen; backend/auth/routes.py:me, logout; frontend/src/services/authService.ts:logout
+
+UC-05 - Study vocabulary and review flashcards
+FR: FR-06--FR-07, FR-11--FR-16
+Evidence: backend/flashcards/routes.py:clean_deck, create_deck, update_deck, start_session, rate, finish; backend/flashcards/srs.py:schedule_rating, start_due_review, update_reminder; frontend/src/screens/FlashcardScreen.tsx; backend/FLASHCARDS.md; backend/VOCABULARY.md
+
+UC-06 - Look up words and Kanji
+FR: FR-08--FR-12
+Evidence: backend/dictionary/routes.py:arguments, words, word, kanji_search, kanji_detail, record_history; backend/handwriting/routes.py:recognize; frontend/src/screens/DictionaryScreen.tsx; frontend/src/components/DictionaryWordActions.tsx; backend/HANDWRITING.md
+
+UC-07 - Practice listening and shadowing
+FR: FR-17--FR-22
+Evidence: backend/shadowing/service.py:video_id_from_url, submit; backend/shadowing/routes.py:jobs, retry, lesson, questions, translation; backend/shadowing/quiz.py:QUIZ_COUNT, shared_quiz; frontend/src/hooks/useShadowingQuiz.ts:generate, answer; frontend/src/screens/ShadowingScreen.tsx
+
+UC-08 - Practice AI conversation
+FR: FR-23--FR-28
+Evidence: backend/speaking/service.py:start_session; backend/speaking/conversation.py:TurnInput.parse, send_turn; backend/speaking/experiment.py; backend/speaking/evaluation.py:finish_session, evaluate_session; backend/speaking/history.py; backend/speaking/deletion.py:delete_session; frontend/src/screens/ConversationScreen.tsx
+
+UC-09 - Practice reading comprehension
+FR: FR-29--FR-34
+Evidence: backend/reading/routes.py:passages, passage, submit_attempt, replay_attempt, explain_answer; backend/reading/quiz.py:public_quiz, grade; backend/reading/study.py:get_or_generate; frontend/src/components/ReadingQuiz.tsx; backend/READING.md
+
+UC-10 - Practice writing
+FR: FR-35--FR-39
+Evidence: backend/writing/routes.py:create_draft, update_draft, delete_draft, create_submission, reevaluate_submission; frontend/src/hooks/useWritingDocuments.ts:saveDocument; frontend/src/screens/WritingWorkspaceScreen.tsx:submit, toggleComparison; backend/WRITING.md
+
+UC-11 - Play vocabulary games
+FR: FR-40--FR-42
+Evidence: frontend/src/screens/GameLibraryScreen.tsx; backend/games/lobby_routes.py:shared_create, shared_action; backend/games/routes.py:answer; backend/games/castle_routes.py:castle_action; backend/GAMES.md
+
+Important distinctions preserved:
+- Scoring definitions: backend/writing/rubric.py:RUBRIC, validate_assessment; backend/speaking/evaluation_ai.py:CRITERIA.
+- Email registration also requires name and phone; registration is finalized only after code verification.
+- Recovery does not reveal whether an account exists; successful reset revokes old sessions.
+- Learning preference conflicts use version checking.
+- Flashcard ratings are self-assessments, not automatically measured proficiency.
+- Shadowing comprehension uses a fixed set of 5 questions; response choices are frontend state.
+- Speaking evaluation requires a completed session and at least 3 nonempty user replies for scoring.
+- Speaking feedback is transcript-based and does not score pronunciation.
+- Local Supertonic experiment availability is conditional, not a production guarantee.
+- Reading grading uses source answers; AI explanation does not replace the answer key.
+- Writing resubmission creates a new submission; reevaluation updates the existing assessment.
+- Shared game lobbies are distinct from free-conversation/matchmaking data tables.

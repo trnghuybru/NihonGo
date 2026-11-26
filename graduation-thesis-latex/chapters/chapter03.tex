@@ -1,0 +1,175 @@
+% =====================================================================
+%  CHAPTER 3. PRODUCT DESIGN AND DEVELOPMENT  (<= 25 pages)
+%  Architecture, database, functional design, UI/UX, technologies and MVP.
+% =====================================================================
+\chapter{Product Design and Development}
+
+\section{SYSTEM ARCHITECTURE}
+\subsection{Overall Architecture}
+
+\begin{figure}[htbp]
+  \centering
+  \input{figures/overall-architecture}
+  \caption{Kiến trúc tổng thể hệ thống NihonGO}
+  \label{fig:overall-architecture}
+\end{figure}
+Hình~\ref{fig:overall-architecture} thể hiện cách giao diện web và di động kết nối với backend Flask để thực hiện các hoạt động học. Backend xử lý nghiệp vụ, sử dụng mô hình nội bộ hoặc dịch vụ AI theo từng chức năng, đồng thời lưu dữ liệu tại PostgreSQL và tệp âm thanh tại R2. Các tác vụ chuẩn bị bài shadowing được đưa qua hàng đợi để worker xử lý riêng.
+\newpage
+
+\clearpage
+\subsection{System Components}
+\subsubsection{Client Layer}
+\begin{figure}[htbp]
+  \centering
+  \input{figures/client-layer}
+  \caption{Kiến trúc chi tiết tầng Client}
+  \label{fig:client-layer}
+\end{figure}
+Tầng Client tổ chức các màn hình học tập và dịch vụ giao tiếp với máy chủ. Giao diện web và di động dùng chung các nhóm chức năng, còn việc gọi API, quản lý phiên và xử lý âm thanh được đặt trong các dịch vụ tương ứng. Với trò chơi nhiều người, client nhận cập nhật phòng và kết nối âm thanh qua các thành phần giao tiếp thời gian thực.
+\clearpage
+\subsubsection{Application Layer}
+\begin{figure}[htbp]
+  \centering
+  \input{figures/application-layer}
+  \caption{Kiến trúc chi tiết tầng Application}
+  \label{fig:application-layer}
+\end{figure}
+Tầng Application tiếp nhận yêu cầu, kiểm tra xác thực và điều phối xử lý theo mô-đun nghiệp vụ. Các chức năng sử dụng chung lớp truy cập dữ liệu; những tác vụ như tạo phản hồi hội thoại, nhận dạng chữ viết tay và chuẩn bị phụ đề được chuyển đến thành phần xử lý phù hợp. Cách phân chia này giúp tách giao diện API khỏi xử lý mô hình và tác vụ nền.
+\clearpage
+\subsubsection{Data Layer}
+\begin{figure}[htbp]
+  \centering
+  \input{figures/data-layer}
+  \caption{Kiến trúc chi tiết tầng Data}
+  \label{fig:data-layer}
+\end{figure}
+Tầng Data phân biệt dữ liệu có cấu trúc và tệp âm thanh. PostgreSQL lưu tài khoản, học liệu, lịch ôn, phiên luyện tập và kết quả; kho đối tượng R2 lưu tệp được truy cập bằng khóa đối tượng và URL ký có thời hạn. Backend và worker quản lý thao tác đọc, ghi qua lớp truy cập dữ liệu tương ứng.
+\clearpage
+\section{DATABASE DESIGN}
+\subsection{Database Overview}
+Các sơ đồ được xuất từ schema thực tế của PostgreSQL local: 54 bảng ứng dụng và bảng kỹ thuật \texttt{alembic\_version}. Các hình chi tiết được trình bày theo nhóm để đọc rõ các cột và quan hệ giữa các bảng.
+
+\subsection{Accounts and Authentication}
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\linewidth,height=.76\textheight,keepaspectratio]{figures/erd-svg/01-erd-auth.pdf}
+  \caption{ERD: Accounts and Authentication}
+  \label{fig:erd-auth}
+\end{figure}
+Nhóm bảng tài khoản liên kết thông tin người dùng với danh tính đăng nhập, yêu cầu xác thực và phiên truy cập. Dữ liệu này phục vụ đăng ký, đăng nhập, làm mới hoặc thu hồi phiên, đồng thời kiểm soát các yêu cầu xác thực.
+\clearpage
+\subsection{Learning and Flashcard Collections}
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\linewidth,height=.76\textheight,keepaspectratio]{figures/erd-svg/02-erd-learning.pdf}
+  \caption{ERD: Learning and Flashcard Collections}
+  \label{fig:erd-learning}
+\end{figure}
+Nhóm bảng này lưu thiết lập học tập và các tập hợp flashcard gắn với từng tài khoản. Việc tách dữ liệu cá nhân khỏi học liệu dùng chung cho phép người học quản lý lựa chọn và nội dung ôn tập của mình.
+\clearpage
+\subsection{Flashcard Sessions and Reviews}
+{\small\raggedright Các trường \texttt{deck\_id} và \texttt{card\_id} không được khai báo FK; vì vậy hình không nối chúng với bảng deck hoặc bảng từ vựng.\par}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\linewidth,height=.76\textheight,keepaspectratio]{figures/erd-svg/03-erd-reviews.pdf}
+  \caption{ERD: Flashcard Sessions and Reviews}
+  \label{fig:erd-reviews}
+\end{figure}
+Các bảng phiên ôn tập, nhật ký và lịch ôn ghi nhận quá trình người học đánh giá mức nhớ của thẻ. Lịch ôn được cập nhật từ các đánh giá đã lưu, làm cơ sở xác định thẻ đến hạn và tổng kết hoạt động ôn tập.
+\clearpage
+\subsection{Vocabulary and Dictionary}
+{\small\raggedright Trường \texttt{dictionary\_history.user\_id} tham chiếu \texttt{users.id} ở nhóm tài khoản. Không có FK từ các bảng từ điển sang bảng từ vựng.\par}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\linewidth,height=.76\textheight,keepaspectratio]{figures/erd-svg/04-erd-content.pdf}
+  \caption{ERD: Vocabulary and Dictionary}
+  \label{fig:erd-content}
+\end{figure}
+Học liệu từ vựng được tổ chức theo bài, trong khi dữ liệu từ điển phục vụ tìm kiếm và hiển thị thông tin từ, Kanji. Lịch sử tra cứu được gắn với tài khoản để người học thuận tiện tìm lại nội dung đã xem.
+\clearpage
+\subsection{Reading and Writing}
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\linewidth,height=.76\textheight,keepaspectratio]{figures/erd-svg/05-erd-practice.pdf}
+  \caption{ERD: Reading and Writing}
+  \label{fig:erd-practice}
+\end{figure}
+Nhóm dữ liệu đọc và viết phân biệt nội dung bài tập với bài làm của người học. Các lần làm bài, bản nháp, bài nộp và kết quả đánh giá được lưu riêng để hỗ trợ xem lại, tiếp tục chỉnh sửa hoặc đối chiếu kết quả.
+\clearpage
+\subsection{Scenarios and Conversation Sessions}
+{\small\raggedright FK ghép: \texttt{(scenario\_id, scenario\_role\_id)} của \texttt{conversation\_sessions} tham chiếu \texttt{scenario\_roles.(scenario\_id, id)}. Quan hệ tự tham chiếu thể hiện phiên luyện tập lại.\par}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\linewidth,height=.68\textheight,keepaspectratio]{figures/erd-svg/06-erd-scenarios.pdf}
+  \caption{ERD: Scenarios and Conversation Sessions}
+  \label{fig:erd-scenarios}
+\end{figure}
+Tình huống và vai xác định bối cảnh của hoạt động hội thoại. Mỗi phiên luyện tập gắn với người học và lưu thông tin tình huống được sử dụng, giúp việc xem lại phiên không phụ thuộc hoàn toàn vào nội dung tình huống được chỉnh sửa sau đó.
+\clearpage
+\subsection{Conversation Records and Evaluation}
+{\small\raggedright FK ghép: \texttt{conversation\_audio\_assets.(session\_id, message\_id)} tham chiếu \texttt{conversation\_messages.(session\_id, id)}. \texttt{storage\_key} lưu định danh tệp, không lưu nội dung âm thanh. Các FK của \texttt{conversation\_sessions} đến users/scenarios được thể hiện ở hình trước.\par}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\linewidth,height=.68\textheight,keepaspectratio]{figures/erd-svg/07-erd-evaluation.pdf}
+  \caption{ERD: Conversation Records and Evaluation}
+  \label{fig:erd-evaluation}
+\end{figure}
+Thông điệp, tệp âm thanh và kết quả nhận xét được liên kết với phiên hội thoại. Cấu trúc này hỗ trợ dựng lại thứ tự trao đổi, mở bản ghi đã lưu và hiển thị nhận xét tương ứng với nội dung của phiên.
+\clearpage
+\subsection{Rooms and Matchmaking}
+{\small\raggedright Các trường \texttt{created\_by}, \texttt{invited\_by} và \texttt{invitee\_user\_id} đều tham chiếu users. \texttt{room\_members} hiện thực quan hệ N--N giữa users và rooms.\par}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\linewidth,height=.76\textheight,keepaspectratio]{figures/erd-svg/08-erd-rooms.pdf}
+  \caption{ERD: Rooms and Matchmaking}
+  \label{fig:erd-rooms}
+\end{figure}
+Các bảng phòng, thành viên và lời mời mô tả sự tham gia của tài khoản vào phòng. Bảng thành viên cho phép một tài khoản tham gia nhiều phòng, đồng thời lưu thông tin liên quan đến vai trò và trạng thái tham gia.
+\clearpage
+\subsection{Shadowing and Video Examples}
+{\small\raggedright Hai cụm Shadowing và video ví dụ độc lập ở mức FK; \texttt{shadowing\_jobs.video\_id} không có FK tới \texttt{example\_videos}. Bảng nối \texttt{shadowing\_requests} hiện thực quan hệ N--N giữa users và shadowing\_jobs.\par}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\linewidth,height=.76\textheight,keepaspectratio]{figures/erd-svg/09-erd-shadowing.pdf}
+  \caption{ERD: Shadowing and Video Examples}
+  \label{fig:erd-shadowing}
+\end{figure}
+Yêu cầu của người học được liên kết với tác vụ chuẩn bị bài shadowing; trạng thái tác vụ cho biết bài đang chờ, đang xử lý hay đã sẵn sàng. Nội dung video và các đoạn phụ đề có mốc thời gian phục vụ tìm kiếm, phát lại và luyện theo từng đoạn.
+\clearpage
+\section{FUNCTIONAL DESIGN}
+\subsection{Use Case Diagram}
+\begin{figure}[htbp]
+  \centering
+  \input{figures/use-case-overview}
+  \caption{Use Case Diagram tổng quát của hệ thống NihonGO}
+  \label{fig:use-case-overview}
+\end{figure}
+Sơ đồ phân biệt Guest thực hiện các thao tác truy cập tài khoản và Learner sử dụng các hoạt động học sau khi đăng nhập. Các use case được nhóm theo mục tiêu của người học; phạm vi chức năng và điều kiện chính được trình bày trong bảng danh sách tiếp theo.
+\clearpage
+\subsection{Use Case List}
+\input{chapters/use-case-list}
+\subsection{Business Process Flow}
+\input{chapters/business-process-flows}
+\clearpage
+\section{UI/UX DESIGN}
+\input{chapters/ui-ux-design}
+\clearpage
+\section{TECHNOLOGIES USED}
+
+\input{chapters/technologies-used}
+\clearpage
+\section{MVP DEVELOPMENT}
+\input{chapters/mvp-development}
+\clearpage
+\section{CHAPTER SUMMARY}
+Trong Chương 3, nhóm đã trình bày thiết kế và phát triển hệ thống NihonGO từ kiến trúc tổng thể đến các chức năng của MVP. Hệ thống được tổ chức thành ba tầng Client, Server và Data, phân chia trách nhiệm giữa giao diện, xử lý nghiệp vụ và lưu trữ. Các thành phần AI và xử lý tiếng nói được kết nối theo yêu cầu của từng hoạt động học. Phần thiết kế cơ sở dữ liệu làm rõ các nhóm bảng và quan hệ phục vụ quản lý tài khoản, học liệu, ôn tập, phiên luyện tập và kết quả của người học.
+
+Thiết kế chức năng được cụ thể hóa qua sơ đồ use case, bảng danh sách use case và các luồng nghiệp vụ. Các nội dung này xác định tác nhân, phạm vi thao tác, kết quả chính và sự phối hợp giữa người học, hệ thống và dịch vụ bên ngoài. Phần UI/UX trình bày cách tổ chức điều hướng, các thành phần giao diện và phản hồi trong quá trình học; bố cục được điều chỉnh cho web và thiết bị di động. Các công nghệ được lựa chọn tương ứng với vai trò của từng thành phần, trong đó MobileNetV3 Small được nhóm huấn luyện trên ETL9B để hỗ trợ nhận dạng ký tự viết tay.
+
+Trên cơ sở thiết kế, nhóm xác định phạm vi MVP gồm quản lý tài khoản và mục tiêu học tập, học từ vựng, tra cứu Kanji, ôn flashcard, luyện nghe, hội thoại, đọc, viết và trò chơi từ vựng. Các chức năng được tổ chức trong cùng một hệ thống để người học tra cứu kiến thức, thực hành và xem lại phản hồi. Phạm vi bản dùng thử cùng những giá trị chính của sản phẩm cũng đã được trình bày. Những nội dung của chương tạo cơ sở cho việc triển khai, kiểm thử và đánh giá NihonGO; kết quả thực hiện và định hướng mô hình kinh doanh được trình bày ở Chương 4.

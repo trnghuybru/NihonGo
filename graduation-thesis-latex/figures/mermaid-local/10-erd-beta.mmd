@@ -1,0 +1,64 @@
+---
+title: Beta Quotas and AI Usage
+---
+erDiagram
+    direction TB
+
+    %% Source: live local PostgreSQL catalog; schema public.
+    %% Snapshot: 2026-11-25T13:12:14.564538+00:00
+    %% PK = primary key; FK = foreign key; UK = single-column UNIQUE.
+    %% Composite UNIQUE constraints appear as comments.
+
+    users {
+        varchar_36 id PK "VARCHAR(36)"
+        varchar_100 name "VARCHAR(100)"
+        varchar_254 email "VARCHAR(254)"
+        varchar_20 phone "VARCHAR(20)"
+        text password_hash "TEXT; nullable"
+        boolean email_verified "BOOLEAN"
+        boolean phone_verified "BOOLEAN"
+        boolean active "BOOLEAN"
+        bigint created_at "BIGINT"
+    }
+
+    beta_daily_quotas {
+        varchar_36 user_id PK,FK "VARCHAR(36)"
+        date day PK "DATE"
+        varchar_11 video_id "VARCHAR(11); nullable"
+        integer live_count "INTEGER"
+        json video_ids "JSON"
+    }
+
+    beta_ai_wallets {
+        varchar_36 user_id PK,FK "VARCHAR(36)"
+        bigint spent_micro_usd "BIGINT"
+        bigint held_micro_usd "BIGINT"
+        bigint started_at "BIGINT"
+    }
+
+    beta_ai_attempts {
+        varchar_36 id PK "VARCHAR(36)"
+        varchar_36 user_id FK "VARCHAR(36)"
+        varchar_100 model "VARCHAR(100)"
+        varchar_100 action "VARCHAR(100)"
+        varchar_16 status "VARCHAR(16)"
+        bigint held_micro_usd "BIGINT"
+        bigint charged_micro_usd "BIGINT"
+        bigint created_at "BIGINT"
+        bigint finished_at "BIGINT; nullable"
+        bigint expires_at "BIGINT; nullable"
+    }
+
+    beta_daily_live_sessions {
+        varchar_36 id PK "VARCHAR(36)"
+        varchar_36 user_id FK "VARCHAR(36)"
+        date day "DATE"
+        varchar_16 status "VARCHAR(16)"
+        bigint created_at "BIGINT"
+        bigint expires_at "BIGINT"
+    }
+
+    users ||--o{ beta_daily_quotas : "user_id"
+    users ||--o| beta_ai_wallets : "user_id"
+    users ||..o{ beta_ai_attempts : "user_id"
+    users ||..o{ beta_daily_live_sessions : "user_id"

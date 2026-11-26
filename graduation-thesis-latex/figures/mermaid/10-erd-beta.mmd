@@ -1,0 +1,52 @@
+---
+title: Beta Quotas and AI Usage
+---
+erDiagram
+    direction TB
+
+    %% PK = primary key; FK = foreign key; UK = single-column unique constraint.
+    %% Attributes marked nullable permit NULL. Composite uniqueness is listed in comments.
+    %% External reference tables show only referenced columns and primary keys.
+
+    users {
+        varchar id PK "VARCHAR(36)"
+        varchar name "VARCHAR(100)"
+        varchar email "VARCHAR(254)"
+        varchar phone "VARCHAR(20)"
+    }
+
+    beta_daily_quotas {
+        varchar user_id PK,FK "VARCHAR(36)"
+        date day PK "DATE"
+        varchar video_id "VARCHAR(11); nullable"
+        json video_ids "JSON"
+        integer live_count "INTEGER"
+    }
+
+    beta_ai_wallets {
+        varchar user_id PK,FK "VARCHAR(36)"
+        bigint spent_micro_usd "BIGINT"
+        bigint held_micro_usd "BIGINT"
+        bigint started_at "BIGINT"
+    }
+
+    beta_ai_attempts {
+        varchar id PK "VARCHAR(36)"
+        varchar user_id FK "VARCHAR(36)"
+        varchar model "VARCHAR(100)"
+        varchar action "VARCHAR(100)"
+        varchar status "VARCHAR(16)"
+    }
+
+    beta_daily_live_sessions {
+        varchar id PK "VARCHAR(36)"
+        varchar user_id FK "VARCHAR(36)"
+        date day "DATE"
+        varchar status "VARCHAR(16)"
+        bigint created_at "BIGINT"
+    }
+
+    users ||--o{ beta_daily_quotas : "user_id"
+    users ||--o| beta_ai_wallets : "user_id"
+    users ||..o{ beta_ai_attempts : "user_id"
+    users ||..o{ beta_daily_live_sessions : "user_id"

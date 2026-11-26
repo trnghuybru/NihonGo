@@ -1,0 +1,29 @@
+NIHONGO DATABASE ERD - MERMAID SOURCES
+
+Paste each .mmd file into Mermaid Live Editor (https://mermaid.live), then export SVG or PNG.
+SVG is best for editing; PNG at high resolution is suitable for inserting into the thesis.
+The diagrams use English labels and actual SQLAlchemy table / column names.
+
+FILES
+00-erd-overview.mmd: Selected central tables; only PK/FK and key attributes.
+01 through 10: Detailed diagrams by domain, matching the Database Design section.
+99-erd-complete.mmd: All 54 tables, every column, and all declared FK constraints.
+The complete diagram is a reference; use the domain diagrams for readable report figures.
+
+CONVENTIONS
+PK: primary key. Multiple PK attributes form a composite primary key.
+FK: declared foreign key. A relationship label lists the local FK column(s).
+UK: single-column UNIQUE. Composite UNIQUE constraints appear as source comments.
+Nullable attributes include "nullable" in their comment.
+External reference tables show only PK / referenced columns.
+Solid relationships: FK columns are part of the child primary key.
+Dashed relationships: non-identifying FK relationships.
+Cardinalities come from FK nullability, primary keys, and UNIQUE constraints.
+No relationship is invented for deck_id, card_id, or video_id if no FK is declared.
+R2 file contents are not relational entities; storage_key remains an attribute.
+
+SCOPE
+Source: backend SQLAlchemy models, cross-checked against table-creation migrations.
+Includes existing beta tables even if the associated feature is disabled.
+The 10 domain diagrams collectively cover all 54 tables.
+No database records, passwords, tokens, credentials, or environment variables are exported.

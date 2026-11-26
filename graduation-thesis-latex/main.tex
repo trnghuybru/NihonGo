@@ -1,0 +1,307 @@
+% !TeX program = xelatex
+% =====================================================================
+%  GRADUATION THESIS (ĐỒ ÁN TỐT NGHIỆP) -- FORM ONLY, NO CONTENT
+%  Faculty of Computer Science -- 2026
+%
+%  Template built from TWO sources:
+%  (1) Layout: the sample Capstone Project report (Word) --
+%      A4; margins top/bottom 2.0 cm, left 3 cm, right 2 cm
+%      (References section: top/bottom 2.5 cm);
+%      Times New Roman 13 pt, line spacing 1.3, justified,
+%      first-line indent 1.27 cm; chapter heading 18 pt bold centred
+%      uppercase; section 14 pt bold; subsection 13 pt bold;
+%      sub-subsection 13 pt bold italic; page number centred in footer.
+%  (2) Structure & content requirements: "Hướng dẫn nội dung báo cáo
+%      Khóa luận tốt nghiệp định hướng Khởi nghiệp & Đổi mới sáng tạo
+%      năm 2026" (Phần I -- Khoa KHMT & Khoa KTMT&ĐT):
+%        Title page (1 page) -> Contents pages (<=5 pages, numbering
+%        style 1.1.1)
+%        -> Introduction (unnumbered) (5-7 pages)
+%        -> Chapter 1 Literature Review & Background (<=25 pages)
+%        -> Chapter 2 Product Design and Development (<=25 pages)
+%        -> Chapter 3 Deployment and Business Models (<=5 pages)
+%        -> Chapter 4 Conclusion & Recommendations (<=5 pages)
+%        -> References, APA style (<=3 pages)
+%        -> Appendices (<=10 pages).  TOTAL: <= 100 pages.
+%      This is a FORM ONLY: chapter files contain headings and no
+%      body content.
+%
+%  COMPILER: XeLaTeX + Biber (for APA references)
+%    Overleaf: Menu > Compiler = XeLaTeX, Main document = main.tex
+%              (Overleaf runs Biber automatically.)
+%    Local:    xelatex main -> biber main -> xelatex main -> xelatex main
+%
+%  >>> EDIT ONLY the "THESIS INFORMATION" block below, then write your
+%      content in frontmatter/ and chapters/. <<<
+% =====================================================================
+
+\documentclass[12pt, a4paper]{report}
+
+% ------------------------- THESIS INFORMATION ------------------------
+% Change these values only -- they are used on the title page.
+\newcommand{\UniversityName}{VIETNAM KOREA UNIVERSITY OF INFORMATION\\AND COMMUNICATION TECHNOLOGY}
+\newcommand{\FacultyName}{Faculty of Computer Science}
+\newcommand{\ThesisType}{GRADUATION THESIS}
+\newcommand{\ThesisTitle}{Developing an AI-Integrated System to Support the Development of Four Japanese Language Skills – NihonGO}
+\newcommand{\StudentOne}{Truong Gia Huy - 22IT119}
+\newcommand{\StudentTwo}{Dang Cong Nhat - 22IT204}
+\newcommand{\StudentClass}{22JIT}
+\newcommand{\Major}{Information Technology}
+\newcommand{\Specialization}{Software Engineering}
+\newcommand{\Instructor}{Assoc. Prof. PhD. Huynh Cong Phap}
+\newcommand{\ThesisCity}{Danang}
+\newcommand{\ThesisMonthYear}{December 2026}
+% Short lines used in the running header/footer (main part only):
+\newcommand{\HeaderTitle}{Developing an AI-Integrated System to Support the Development of Four Japanese Language Skills – NihonGO}
+\newcommand{\AuthorLine}{Truong Gia Huy, Dang Cong Nhat - 22JIT}
+% ---------------------------------------------------------------------
+
+% ------------------------------ Packages -----------------------------
+\usepackage{geometry}
+% Margins per QD 675, section 1 (uniform for the whole document):
+\geometry{a4paper, top=2cm, bottom=2cm, left=3cm, right=2cm,
+          headheight=26pt, footskip=1cm}
+
+\usepackage{fontspec}                 % XeLaTeX fonts
+\IfFontExistsTF{Times New Roman}
+  {\setmainfont{Times New Roman}}
+  {\setmainfont{TeX Gyre Termes}}     % fallback with the same metrics
+\usepackage[english]{babel}           % main language: English
+
+\usepackage{setspace}
+\usepackage{indentfirst}
+\usepackage{titlesec}
+\usepackage{tocloft}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\graphicspath{{figures/}}
+\usepackage{caption}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{needspace}
+\usepackage{multirow}
+\usepackage{amsmath, amssymb}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{tikz}                     % cover frame + sample figure
+\usetikzlibrary{positioning,shapes.geometric}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepgfplotslibrary{groupplots}
+
+
+\usepackage{xurl}                    % allow long reference URLs to wrap
+\usepackage[hidelinks]{hyperref}      % load hyperref last
+
+% --------------------------- Body typography -------------------------
+\AtBeginDocument{\fontsize{13pt}{16.9pt}\selectfont}  % 13 pt, spacing 1.3
+\setlength{\parindent}{1.27cm}
+\setlength{\parskip}{6pt}
+% (body text is justified by default, as in the sample report)
+
+% ------------------------------ Headings -----------------------------
+\setcounter{secnumdepth}{3}           % number down to 1.1.1.1
+\setcounter{tocdepth}{3}              % TOC down to subsubsection
+
+% Chapter: label and title on ONE line, centred, 18 pt bold uppercase,
+% e.g. "CHƯƠNG 1. GIỚI THIỆU" / "PHỤ LỤC A. HƯỚNG DẪN CÀI ĐẶT".
+% \@chapapp is "Chương" in the main matter and automatically becomes
+% "Phụ lục" after \appendix, so appendix headings print correctly.
+\makeatletter
+\newcommand{\chapappname}{\@chapapp}
+\makeatother
+\titleformat{\chapter}[block]
+  {\normalfont\fontsize{16pt}{20pt}\selectfont\bfseries\centering}
+  {\MakeUppercase{\chapappname} \thechapter.}{0.5em}{\MakeUppercase}
+% Chapter headings sit at the very top of the text area: a chapter
+% always opens a new page, and Word drops the Heading-1 space-before
+% at the top of a page. LaTeX still leaves ~25 pt of line/topskip
+% room above a 16 pt heading, so -25 pt compensates for it (measured:
+% heading glyphs then start at ~2.2 cm from the paper edge, i.e. at
+% the 2 cm top margin, exactly as in the Word sample).
+\titlespacing*{\chapter}{0pt}{-25pt}{30pt}
+
+% Section numbering WITH chapter prefix, style 1.1.1 as required by
+% the 2026 guidance ("Numbering follows the style 1.1.1, 1.1.2, ...").
+\renewcommand{\thesection}{\thechapter.\arabic{section}}
+\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
+\renewcommand{\thesubsubsection}{\thesubsection.\arabic{subsubsection}}
+
+% Level 1.1 headings: UPPERCASE, bold, upright (QD 675, section 5).
+\titleformat{\section}
+  {\normalfont\fontsize{14pt}{18pt}\selectfont\bfseries}
+  {\thesection}{0.6em}{\MakeUppercase}
+\titlespacing*{\section}{0pt}{12pt}{6pt}
+
+\titleformat{\subsection}
+  {\normalfont\fontsize{13pt}{17pt}\selectfont\bfseries}
+  {\thesubsection}{0.6em}{}
+\titlespacing*{\subsection}{0pt}{10pt}{4pt}
+
+\titleformat{\subsubsection}
+  {\normalfont\fontsize{13pt}{17pt}\selectfont\bfseries\itshape}
+  {\thesubsubsection}{0.6em}{}
+\titlespacing*{\subsubsection}{0pt}{10pt}{4pt}
+
+% Unnumbered chapter (Tóm tắt, Tài liệu tham khảo, ...) styled like a
+% chapter heading and added to the Table of Contents.
+\newcommand{\unnumberedchapter}[1]{%
+  \clearpage
+  \phantomsection
+  \addcontentsline{toc}{chapter}{#1}%
+  \chapter*{\MakeUppercase{#1}}%
+}
+% Front-matter heading (Nhận xét, Lời cảm ơn): same style, NOT in TOC.
+\newcommand{\frontchapter}[1]{%
+  \clearpage
+  \chapter*{\MakeUppercase{#1}}%
+}
+
+% --------------------- Figures, tables, equations --------------------
+% Numbered by chapter in the same dotted style: Hình 2.1, Bảng 2.1
+\renewcommand{\thefigure}{\thechapter.\arabic{figure}}
+\renewcommand{\thetable}{\thechapter.\arabic{table}}
+\renewcommand{\theequation}{\thechapter.\arabic{equation}}
+% QD 675, section 6: captions in regular (non-bold) type, centred,
+% same size as the body text; table caption above, figure caption below.
+\captionsetup{justification=centering, labelsep=space, skip=8pt}
+\captionsetup[figure]{position=below}   % figure caption BELOW the figure
+\captionsetup[table]{position=above}    % table caption ABOVE the table
+
+% ------------------------- Table of contents -------------------------
+% Contents/list titles also start exactly at the top margin.
+\setlength{\cftbeforetoctitleskip}{-16pt}
+\setlength{\cftbeforelottitleskip}{-16pt}
+\setlength{\cftbeforeloftitleskip}{-16pt}
+\addto\captionsenglish{%
+  \renewcommand{\contentsname}{TABLE OF CONTENTS}%
+  \renewcommand{\listfigurename}{LIST OF FIGURES}%
+  \renewcommand{\listtablename}{LIST OF TABLES}%
+  \renewcommand{\figurename}{Figure}%
+  \renewcommand{\tablename}{Table}%
+}
+\renewcommand{\cftchapfont}{\bfseries}
+\renewcommand{\cftchappagefont}{\bfseries}
+\setlength{\cftbeforechapskip}{6pt}
+\renewcommand{\cfttoctitlefont}{\hfill\bfseries\fontsize{16pt}{20pt}\selectfont}
+\renewcommand{\cftaftertoctitle}{\hfill}
+\renewcommand{\cftloftitlefont}{\hfill\bfseries\fontsize{16pt}{20pt}\selectfont}
+\renewcommand{\cftafterloftitle}{\hfill}
+\renewcommand{\cftlottitlefont}{\hfill\bfseries\fontsize{16pt}{20pt}\selectfont}
+\renewcommand{\cftafterlottitle}{\hfill}
+
+% Save the (numeric) roman page number of the last front-matter page
+% so the References can continue the roman sequence on the next pass.
+\makeatletter
+\providecommand{\FrontLastPage}{5}
+\newcommand{\SaveFrontLastPage}{%
+  \immediate\write\@auxout{%
+    \string\gdef\string\FrontLastPage{\the\value{page}}}}
+\makeatother
+
+% Reference list with the QD 675 hanging indent: the label [n] sits
+% at the left margin, continuation lines are indented exactly 1 cm.
+\newenvironment{refslist}{%
+  \setlength{\emergencystretch}{1em}%
+  \begin{list}{[\arabic{enumiv}]}{%
+    \usecounter{enumiv}%
+    \setlength{\leftmargin}{1cm}%
+    \setlength{\itemindent}{-1cm}%
+    \setlength{\labelwidth}{0.85cm}%
+    \setlength{\labelsep}{0.15cm}%
+    \setlength{\itemsep}{4pt}%
+    \setlength{\parsep}{0pt}}%
+}{\end{list}}
+
+% --------------------- Page numbering & header/footer ----------------
+% QD 675, sections 1 & 9:
+% - Front matter: roman numerals (Acknowledgement i, Contents ii,
+%   Abbreviations iii, List of Tables iv, List of Figures v),
+%   page number at the bottom right, no header/footer text.
+% - Main part (Introduction/Chapter 1 -> Conclusion): arabic numerals;
+%   header = thesis title (italic, 11 pt) with a rule below;
+%   footer = rule above, author--class (italic, 11 pt) left,
+%   page number right.
+% - References & Appendices: roman numerals CONTINUING the front
+%   sequence (References starts at vi), bottom right, no header text.
+\fancypagestyle{front}{%
+  \fancyhf{}\fancyfoot[R]{\thepage}%
+  \renewcommand{\headrulewidth}{0pt}\renewcommand{\footrulewidth}{0pt}}
+\fancypagestyle{mainpart}{%
+  \fancyhf{}%
+  \fancyhead[L]{\fontsize{11pt}{13pt}\selectfont\itshape \HeaderTitle}%
+  \renewcommand{\headrulewidth}{0.4pt}%
+  \fancyfoot[L]{\fontsize{11pt}{13pt}\selectfont\itshape \AuthorLine}%
+  \fancyfoot[R]{\fontsize{11pt}{13pt}\selectfont\itshape \thepage}%
+  \renewcommand{\footrulewidth}{0.4pt}}
+\pagestyle{front}
+\fancypagestyle{plain}{%
+  \fancyhf{}\fancyfoot[R]{\thepage}%
+  \renewcommand{\headrulewidth}{0pt}\renewcommand{\footrulewidth}{0pt}}
+
+% =====================================================================
+\begin{document}
+
+% ------------------------- Front matter ------------------------------
+% Order and roman numbering exactly as the sample Contents page of
+% QD 675: Acknowledgement i, Contents ii, Abbreviations iii,
+% List of Tables iv, List of Figures v.
+\pagenumbering{roman}
+
+\input{frontmatter/cover}            % main cover + inner cover
+\setcounter{page}{1}                  % covers are not counted -> Ack. = i
+\input{frontmatter/acknowledgement}  % i
+
+\clearpage
+\phantomsection
+\addcontentsline{toc}{chapter}{TABLE OF CONTENTS}
+\tableofcontents                     % ii
+
+\input{frontmatter/abbreviations}    % iii (optional)
+
+\clearpage
+\phantomsection
+\addcontentsline{toc}{chapter}{LIST OF TABLES}
+\listoftables                        % iv
+
+\clearpage
+\phantomsection
+\addcontentsline{toc}{chapter}{LIST OF FIGURES}
+\listoffigures                       % v
+\SaveFrontLastPage
+
+% --------------------------- Main matter -----------------------------
+% Arabic numbering from page 1, with header/footer (QD 675, sec. 9).
+\clearpage
+\pagenumbering{arabic}
+\pagestyle{mainpart}
+\fancypagestyle{plain}{%
+  \fancyhf{}%
+  \fancyhead[L]{\fontsize{11pt}{13pt}\selectfont\itshape \HeaderTitle}%
+  \renewcommand{\headrulewidth}{0.4pt}%
+  \fancyfoot[L]{\fontsize{11pt}{13pt}\selectfont\itshape \AuthorLine}%
+  \fancyfoot[R]{\fontsize{11pt}{13pt}\selectfont\itshape \thepage}%
+  \renewcommand{\footrulewidth}{0.4pt}}
+
+\input{chapters/chapter01}   % Chapter 1. Introduction
+\input{chapters/chapter02}   % Chapter 2. Literature review & background
+\input{chapters/chapter03}   % Chapter 3. Product design & development
+\input{chapters/chapter04}   % Chapter 4. Deployment & business models
+\input{chapters/chapter05}   % Chapter 5. Conclusion & recommendations
+
+% --------------------- References & appendices -----------------------
+% Roman numerals continuing the front sequence (References = vi, ...),
+% page number bottom right, no header/footer text (QD 675, sec. 1).
+\clearpage
+\pagenumbering{roman}
+\setcounter{page}{\numexpr\FrontLastPage+1\relax}
+\pagestyle{front}
+\fancypagestyle{plain}{%
+  \fancyhf{}\fancyfoot[R]{\thepage}%
+  \renewcommand{\headrulewidth}{0pt}\renewcommand{\footrulewidth}{0pt}}
+
+\input{chapters/references}  % References -- numbered [n], grouped by language
+\input{chapters/appendix}    % Appendices (optional)
+
+\end{document}

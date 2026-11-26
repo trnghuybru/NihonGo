@@ -1,0 +1,64 @@
+---
+title: Accounts and Authentication
+---
+erDiagram
+    direction TB
+
+    %% PK = primary key; FK = foreign key; UK = single-column unique constraint.
+    %% Attributes marked nullable permit NULL. Composite uniqueness is listed in comments.
+    %% External reference tables show only referenced columns and primary keys.
+
+    users {
+        varchar id PK "VARCHAR(36)"
+        varchar name "VARCHAR(100)"
+        varchar email "VARCHAR(254)"
+        varchar phone "VARCHAR(20)"
+    }
+
+    %% UNIQUE auth_identities (provider, subject)
+    auth_identities {
+        varchar id PK "VARCHAR(36)"
+        varchar user_id FK "VARCHAR(36)"
+        varchar provider "VARCHAR(16)"
+        varchar subject "VARCHAR(255)"
+    }
+
+    auth_sessions {
+        varchar id PK "VARCHAR(36)"
+        varchar user_id FK "VARCHAR(36)"
+        varchar access_hash UK "VARCHAR(64)"
+        bigint access_expires_at "BIGINT"
+        bigint expires_at "BIGINT"
+    }
+
+    auth_refresh_tokens {
+        varchar token_hash PK "VARCHAR(64)"
+        varchar session_id FK "VARCHAR(36)"
+        bigint used_at "BIGINT; nullable"
+    }
+
+    auth_challenges {
+        varchar id PK "VARCHAR(36)"
+        varchar user_id FK "VARCHAR(36); nullable"
+        varchar purpose "VARCHAR(16)"
+        varchar channel "VARCHAR(8)"
+        varchar destination "VARCHAR(254)"
+    }
+
+    auth_oauth_flows {
+        varchar id PK "VARCHAR(36)"
+        varchar provider "VARCHAR(16)"
+        varchar state_hash UK "VARCHAR(64)"
+        varchar secret_hash "VARCHAR(64)"
+    }
+
+    auth_rate_limits {
+        varchar key PK "VARCHAR(64)"
+        integer count "INTEGER"
+        bigint expires_at "BIGINT"
+    }
+
+    users ||..o{ auth_identities : "user_id"
+    users ||..o{ auth_sessions : "user_id"
+    auth_sessions ||..o{ auth_refresh_tokens : "session_id"
+    users |o..o{ auth_challenges : "user_id"

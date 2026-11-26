@@ -1,0 +1,29 @@
+\begingroup
+\setstretch{1}
+\begin{tikzpicture}
+\begin{groupplot}[
+  group style={group size=2 by 1,horizontal sep=1.5cm},
+  width=7.1cm,height=6.7cm,
+  tick label style={font=\fontsize{9}{11}\selectfont},
+  label style={font=\fontsize{10}{12}\selectfont},
+  title style={font=\fontsize{11}{13}\selectfont},
+  legend style={font=\fontsize{9}{11}\selectfont,at={(.5,-.25)},anchor=north,
+    legend columns=2,draw=none},
+  xlabel={Epoch},xmin=1,xmax=40,xtick={1,10,20,30,40},
+  grid=major,grid style={black!12},
+  every axis plot/.append style={line width=.9pt,no marks}
+]
+\nextgroupplot[title={Loss},ylabel={Reported loss},ymode=log]
+\addplot[blue!70!black] table[x=epoch,y=train_loss] {data/handwriting-training/learning-curves.dat};
+\addlegendentry{Train}
+\addplot[orange!80!black] table[x=epoch,y=val_loss] {data/handwriting-training/learning-curves.dat};
+\addlegendentry{Validation}
+\nextgroupplot[title={Top-1 accuracy},ylabel={Accuracy (\%)},ymin=80,ymax=101,
+  ytick={80,85,90,95,100}]
+\addplot[blue!70!black] table[x=epoch,y=train_top1] {data/handwriting-training/learning-curves.dat};
+\addlegendentry{Train}
+\addplot[orange!80!black] table[x=epoch,y=val_top1] {data/handwriting-training/learning-curves.dat};
+\addlegendentry{Validation}
+\end{groupplot}
+\end{tikzpicture}
+\endgroup

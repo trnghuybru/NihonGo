@@ -1,0 +1,31 @@
+@startuml
+left to right direction
+skinparam shadowing false
+skinparam packageStyle rectangle
+actor Guest
+actor Learner
+rectangle NihonGO {
+  usecase "Register an account" as Register
+  usecase "Sign in" as Login
+  usecase "Recover password" as Recover
+  usecase "Manage account and learning goals" as Account
+  usecase "Study vocabulary and review flashcards" as Vocabulary
+  usecase "Look up words and Kanji" as Lookup
+  usecase "Practice listening and shadowing" as Listening
+  usecase "Practice AI conversation" as Speaking
+  usecase "Practice reading comprehension" as Reading
+  usecase "Practice writing" as Writing
+  usecase "Play vocabulary games" as Games
+}
+Guest -- Register
+Guest -- Login
+Guest -- Recover
+Learner -- Account
+Learner -- Vocabulary
+Learner -- Lookup
+Learner -- Listening
+Learner -- Speaking
+Learner -- Reading
+Learner -- Writing
+Learner -- Games
+@enduml

@@ -1,0 +1,12146 @@
+[
+  {
+    "jis": "2422",
+    "character": "あ"
+  },
+  {
+    "jis": "2424",
+    "character": "い"
+  },
+  {
+    "jis": "2426",
+    "character": "う"
+  },
+  {
+    "jis": "2428",
+    "character": "え"
+  },
+  {
+    "jis": "242a",
+    "character": "お"
+  },
+  {
+    "jis": "242b",
+    "character": "か"
+  },
+  {
+    "jis": "242c",
+    "character": "が"
+  },
+  {
+    "jis": "242d",
+    "character": "き"
+  },
+  {
+    "jis": "242e",
+    "character": "ぎ"
+  },
+  {
+    "jis": "242f",
+    "character": "く"
+  },
+  {
+    "jis": "2430",
+    "character": "ぐ"
+  },
+  {
+    "jis": "2431",
+    "character": "け"
+  },
+  {
+    "jis": "2432",
+    "character": "げ"
+  },
+  {
+    "jis": "2433",
+    "character": "こ"
+  },
+  {
+    "jis": "2434",
+    "character": "ご"
+  },
+  {
+    "jis": "2435",
+    "character": "さ"
+  },
+  {
+    "jis": "2436",
+    "character": "ざ"
+  },
+  {
+    "jis": "2437",
+    "character": "し"
+  },
+  {
+    "jis": "2438",
+    "character": "じ"
+  },
+  {
+    "jis": "2439",
+    "character": "す"
+  },
+  {
+    "jis": "243a",
+    "character": "ず"
+  },
+  {
+    "jis": "243b",
+    "character": "せ"
+  },
+  {
+    "jis": "243c",
+    "character": "ぜ"
+  },
+  {
+    "jis": "243d",
+    "character": "そ"
+  },
+  {
+    "jis": "243e",
+    "character": "ぞ"
+  },
+  {
+    "jis": "243f",
+    "character": "た"
+  },
+  {
+    "jis": "2440",
+    "character": "だ"
+  },
+  {
+    "jis": "2441",
+    "character": "ち"
+  },
+  {
+    "jis": "2442",
+    "character": "ぢ"
+  },
+  {
+    "jis": "2444",
+    "character": "つ"
+  },
+  {
+    "jis": "2445",
+    "character": "づ"
+  },
+  {
+    "jis": "2446",
+    "character": "て"
+  },
+  {
+    "jis": "2447",
+    "character": "で"
+  },
+  {
+    "jis": "2448",
+    "character": "と"
+  },
+  {
+    "jis": "2449",
+    "character": "ど"
+  },
+  {
+    "jis": "244a",
+    "character": "な"
+  },
+  {
+    "jis": "244b",
+    "character": "に"
+  },
+  {
+    "jis": "244c",
+    "character": "ぬ"
+  },
+  {
+    "jis": "244d",
+    "character": "ね"
+  },
+  {
+    "jis": "244e",
+    "character": "の"
+  },
+  {
+    "jis": "244f",
+    "character": "は"
+  },
+  {
+    "jis": "2450",
+    "character": "ば"
+  },
+  {
+    "jis": "2451",
+    "character": "ぱ"
+  },
+  {
+    "jis": "2452",
+    "character": "ひ"
+  },
+  {
+    "jis": "2453",
+    "character": "び"
+  },
+  {
+    "jis": "2454",
+    "character": "ぴ"
+  },
+  {
+    "jis": "2455",
+    "character": "ふ"
+  },
+  {
+    "jis": "2456",
+    "character": "ぶ"
+  },
+  {
+    "jis": "2457",
+    "character": "ぷ"
+  },
+  {
+    "jis": "2458",
+    "character": "へ"
+  },
+  {
+    "jis": "2459",
+    "character": "べ"
+  },
+  {
+    "jis": "245a",
+    "character": "ぺ"
+  },
+  {
+    "jis": "245b",
+    "character": "ほ"
+  },
+  {
+    "jis": "245c",
+    "character": "ぼ"
+  },
+  {
+    "jis": "245d",
+    "character": "ぽ"
+  },
+  {
+    "jis": "245e",
+    "character": "ま"
+  },
+  {
+    "jis": "245f",
+    "character": "み"
+  },
+  {
+    "jis": "2460",
+    "character": "む"
+  },
+  {
+    "jis": "2461",
+    "character": "め"
+  },
+  {
+    "jis": "2462",
+    "character": "も"
+  },
+  {
+    "jis": "2464",
+    "character": "や"
+  },
+  {
+    "jis": "2466",
+    "character": "ゆ"
+  },
+  {
+    "jis": "2468",
+    "character": "よ"
+  },
+  {
+    "jis": "2469",
+    "character": "ら"
+  },
+  {
+    "jis": "246a",
+    "character": "り"
+  },
+  {
+    "jis": "246b",
+    "character": "る"
+  },
+  {
+    "jis": "246c",
+    "character": "れ"
+  },
+  {
+    "jis": "246d",
+    "character": "ろ"
+  },
+  {
+    "jis": "246f",
+    "character": "わ"
+  },
+  {
+    "jis": "2472",
+    "character": "を"
+  },
+  {
+    "jis": "2473",
+    "character": "ん"
+  },
+  {
+    "jis": "3021",
+    "character": "亜"
+  },
+  {
+    "jis": "3022",
+    "character": "唖"
+  },
+  {
+    "jis": "3023",
+    "character": "娃"
+  },
+  {
+    "jis": "3024",
+    "character": "阿"
+  },
+  {
+    "jis": "3025",
+    "character": "哀"
+  },
+  {
+    "jis": "3026",
+    "character": "愛"
+  },
+  {
+    "jis": "3027",
+    "character": "挨"
+  },
+  {
+    "jis": "3028",
+    "character": "姶"
+  },
+  {
+    "jis": "3029",
+    "character": "逢"
+  },
+  {
+    "jis": "302a",
+    "character": "葵"
+  },
+  {
+    "jis": "302b",
+    "character": "茜"
+  },
+  {
+    "jis": "302c",
+    "character": "穐"
+  },
+  {
+    "jis": "302d",
+    "character": "悪"
+  },
+  {
+    "jis": "302e",
+    "character": "握"
+  },
+  {
+    "jis": "302f",
+    "character": "渥"
+  },
+  {
+    "jis": "3030",
+    "character": "旭"
+  },
+  {
+    "jis": "3031",
+    "character": "葦"
+  },
+  {
+    "jis": "3032",
+    "character": "芦"
+  },
+  {
+    "jis": "3033",
+    "character": "鯵"
+  },
+  {
+    "jis": "3034",
+    "character": "梓"
+  },
+  {
+    "jis": "3035",
+    "character": "圧"
+  },
+  {
+    "jis": "3036",
+    "character": "斡"
+  },
+  {
+    "jis": "3037",
+    "character": "扱"
+  },
+  {
+    "jis": "3038",
+    "character": "宛"
+  },
+  {
+    "jis": "3039",
+    "character": "姐"
+  },
+  {
+    "jis": "303a",
+    "character": "虻"
+  },
+  {
+    "jis": "303b",
+    "character": "飴"
+  },
+  {
+    "jis": "303c",
+    "character": "絢"
+  },
+  {
+    "jis": "303d",
+    "character": "綾"
+  },
+  {
+    "jis": "303e",
+    "character": "鮎"
+  },
+  {
+    "jis": "303f",
+    "character": "或"
+  },
+  {
+    "jis": "3040",
+    "character": "粟"
+  },
+  {
+    "jis": "3041",
+    "character": "袷"
+  },
+  {
+    "jis": "3042",
+    "character": "安"
+  },
+  {
+    "jis": "3043",
+    "character": "庵"
+  },
+  {
+    "jis": "3044",
+    "character": "按"
+  },
+  {
+    "jis": "3045",
+    "character": "暗"
+  },
+  {
+    "jis": "3046",
+    "character": "案"
+  },
+  {
+    "jis": "3047",
+    "character": "闇"
+  },
+  {
+    "jis": "3048",
+    "character": "鞍"
+  },
+  {
+    "jis": "3049",
+    "character": "杏"
+  },
+  {
+    "jis": "304a",
+    "character": "以"
+  },
+  {
+    "jis": "304b",
+    "character": "伊"
+  },
+  {
+    "jis": "304c",
+    "character": "位"
+  },
+  {
+    "jis": "304d",
+    "character": "依"
+  },
+  {
+    "jis": "304e",
+    "character": "偉"
+  },
+  {
+    "jis": "304f",
+    "character": "囲"
+  },
+  {
+    "jis": "3050",
+    "character": "夷"
+  },
+  {
+    "jis": "3051",
+    "character": "委"
+  },
+  {
+    "jis": "3052",
+    "character": "威"
+  },
+  {
+    "jis": "3053",
+    "character": "尉"
+  },
+  {
+    "jis": "3054",
+    "character": "惟"
+  },
+  {
+    "jis": "3055",
+    "character": "意"
+  },
+  {
+    "jis": "3056",
+    "character": "慰"
+  },
+  {
+    "jis": "3057",
+    "character": "易"
+  },
+  {
+    "jis": "3058",
+    "character": "椅"
+  },
+  {
+    "jis": "3059",
+    "character": "為"
+  },
+  {
+    "jis": "305a",
+    "character": "畏"
+  },
+  {
+    "jis": "305b",
+    "character": "異"
+  },
+  {
+    "jis": "305c",
+    "character": "移"
+  },
+  {
+    "jis": "305d",
+    "character": "維"
+  },
+  {
+    "jis": "305e",
+    "character": "緯"
+  },
+  {
+    "jis": "305f",
+    "character": "胃"
+  },
+  {
+    "jis": "3060",
+    "character": "萎"
+  },
+  {
+    "jis": "3061",
+    "character": "衣"
+  },
+  {
+    "jis": "3062",
+    "character": "謂"
+  },
+  {
+    "jis": "3063",
+    "character": "違"
+  },
+  {
+    "jis": "3064",
+    "character": "遺"
+  },
+  {
+    "jis": "3065",
+    "character": "医"
+  },
+  {
+    "jis": "3066",
+    "character": "井"
+  },
+  {
+    "jis": "3067",
+    "character": "亥"
+  },
+  {
+    "jis": "3068",
+    "character": "域"
+  },
+  {
+    "jis": "3069",
+    "character": "育"
+  },
+  {
+    "jis": "306a",
+    "character": "郁"
+  },
+  {
+    "jis": "306b",
+    "character": "磯"
+  },
+  {
+    "jis": "306c",
+    "character": "一"
+  },
+  {
+    "jis": "306d",
+    "character": "壱"
+  },
+  {
+    "jis": "306e",
+    "character": "溢"
+  },
+  {
+    "jis": "306f",
+    "character": "逸"
+  },
+  {
+    "jis": "3070",
+    "character": "稲"
+  },
+  {
+    "jis": "3071",
+    "character": "茨"
+  },
+  {
+    "jis": "3072",
+    "character": "芋"
+  },
+  {
+    "jis": "3073",
+    "character": "鰯"
+  },
+  {
+    "jis": "3074",
+    "character": "允"
+  },
+  {
+    "jis": "3075",
+    "character": "印"
+  },
+  {
+    "jis": "3076",
+    "character": "咽"
+  },
+  {
+    "jis": "3077",
+    "character": "員"
+  },
+  {
+    "jis": "3078",
+    "character": "因"
+  },
+  {
+    "jis": "3079",
+    "character": "姻"
+  },
+  {
+    "jis": "307a",
+    "character": "引"
+  },
+  {
+    "jis": "307b",
+    "character": "飲"
+  },
+  {
+    "jis": "307c",
+    "character": "淫"
+  },
+  {
+    "jis": "307d",
+    "character": "胤"
+  },
+  {
+    "jis": "307e",
+    "character": "蔭"
+  },
+  {
+    "jis": "3121",
+    "character": "院"
+  },
+  {
+    "jis": "3122",
+    "character": "陰"
+  },
+  {
+    "jis": "3123",
+    "character": "隠"
+  },
+  {
+    "jis": "3124",
+    "character": "韻"
+  },
+  {
+    "jis": "3125",
+    "character": "吋"
+  },
+  {
+    "jis": "3126",
+    "character": "右"
+  },
+  {
+    "jis": "3127",
+    "character": "宇"
+  },
+  {
+    "jis": "3128",
+    "character": "烏"
+  },
+  {
+    "jis": "3129",
+    "character": "羽"
+  },
+  {
+    "jis": "312a",
+    "character": "迂"
+  },
+  {
+    "jis": "312b",
+    "character": "雨"
+  },
+  {
+    "jis": "312c",
+    "character": "卯"
+  },
+  {
+    "jis": "312d",
+    "character": "鵜"
+  },
+  {
+    "jis": "312e",
+    "character": "窺"
+  },
+  {
+    "jis": "312f",
+    "character": "丑"
+  },
+  {
+    "jis": "3130",
+    "character": "碓"
+  },
+  {
+    "jis": "3131",
+    "character": "臼"
+  },
+  {
+    "jis": "3132",
+    "character": "渦"
+  },
+  {
+    "jis": "3133",
+    "character": "嘘"
+  },
+  {
+    "jis": "3134",
+    "character": "唄"
+  },
+  {
+    "jis": "3135",
+    "character": "欝"
+  },
+  {
+    "jis": "3136",
+    "character": "蔚"
+  },
+  {
+    "jis": "3137",
+    "character": "鰻"
+  },
+  {
+    "jis": "3138",
+    "character": "姥"
+  },
+  {
+    "jis": "3139",
+    "character": "厩"
+  },
+  {
+    "jis": "313a",
+    "character": "浦"
+  },
+  {
+    "jis": "313b",
+    "character": "瓜"
+  },
+  {
+    "jis": "313c",
+    "character": "閏"
+  },
+  {
+    "jis": "313d",
+    "character": "噂"
+  },
+  {
+    "jis": "313e",
+    "character": "云"
+  },
+  {
+    "jis": "313f",
+    "character": "運"
+  },
+  {
+    "jis": "3140",
+    "character": "雲"
+  },
+  {
+    "jis": "3141",
+    "character": "荏"
+  },
+  {
+    "jis": "3142",
+    "character": "餌"
+  },
+  {
+    "jis": "3143",
+    "character": "叡"
+  },
+  {
+    "jis": "3144",
+    "character": "営"
+  },
+  {
+    "jis": "3145",
+    "character": "嬰"
+  },
+  {
+    "jis": "3146",
+    "character": "影"
+  },
+  {
+    "jis": "3147",
+    "character": "映"
+  },
+  {
+    "jis": "3148",
+    "character": "曳"
+  },
+  {
+    "jis": "3149",
+    "character": "栄"
+  },
+  {
+    "jis": "314a",
+    "character": "永"
+  },
+  {
+    "jis": "314b",
+    "character": "泳"
+  },
+  {
+    "jis": "314c",
+    "character": "洩"
+  },
+  {
+    "jis": "314d",
+    "character": "瑛"
+  },
+  {
+    "jis": "314e",
+    "character": "盈"
+  },
+  {
+    "jis": "314f",
+    "character": "穎"
+  },
+  {
+    "jis": "3150",
+    "character": "頴"
+  },
+  {
+    "jis": "3151",
+    "character": "英"
+  },
+  {
+    "jis": "3152",
+    "character": "衛"
+  },
+  {
+    "jis": "3153",
+    "character": "詠"
+  },
+  {
+    "jis": "3154",
+    "character": "鋭"
+  },
+  {
+    "jis": "3155",
+    "character": "液"
+  },
+  {
+    "jis": "3156",
+    "character": "疫"
+  },
+  {
+    "jis": "3157",
+    "character": "益"
+  },
+  {
+    "jis": "3158",
+    "character": "駅"
+  },
+  {
+    "jis": "3159",
+    "character": "悦"
+  },
+  {
+    "jis": "315a",
+    "character": "謁"
+  },
+  {
+    "jis": "315b",
+    "character": "越"
+  },
+  {
+    "jis": "315c",
+    "character": "閲"
+  },
+  {
+    "jis": "315d",
+    "character": "榎"
+  },
+  {
+    "jis": "315e",
+    "character": "厭"
+  },
+  {
+    "jis": "315f",
+    "character": "円"
+  },
+  {
+    "jis": "3160",
+    "character": "園"
+  },
+  {
+    "jis": "3161",
+    "character": "堰"
+  },
+  {
+    "jis": "3162",
+    "character": "奄"
+  },
+  {
+    "jis": "3163",
+    "character": "宴"
+  },
+  {
+    "jis": "3164",
+    "character": "延"
+  },
+  {
+    "jis": "3165",
+    "character": "怨"
+  },
+  {
+    "jis": "3166",
+    "character": "掩"
+  },
+  {
+    "jis": "3167",
+    "character": "援"
+  },
+  {
+    "jis": "3168",
+    "character": "沿"
+  },
+  {
+    "jis": "3169",
+    "character": "演"
+  },
+  {
+    "jis": "316a",
+    "character": "炎"
+  },
+  {
+    "jis": "316b",
+    "character": "焔"
+  },
+  {
+    "jis": "316c",
+    "character": "煙"
+  },
+  {
+    "jis": "316d",
+    "character": "燕"
+  },
+  {
+    "jis": "316e",
+    "character": "猿"
+  },
+  {
+    "jis": "316f",
+    "character": "縁"
+  },
+  {
+    "jis": "3170",
+    "character": "艶"
+  },
+  {
+    "jis": "3171",
+    "character": "苑"
+  },
+  {
+    "jis": "3172",
+    "character": "薗"
+  },
+  {
+    "jis": "3173",
+    "character": "遠"
+  },
+  {
+    "jis": "3174",
+    "character": "鉛"
+  },
+  {
+    "jis": "3175",
+    "character": "鴛"
+  },
+  {
+    "jis": "3176",
+    "character": "塩"
+  },
+  {
+    "jis": "3177",
+    "character": "於"
+  },
+  {
+    "jis": "3178",
+    "character": "汚"
+  },
+  {
+    "jis": "3179",
+    "character": "甥"
+  },
+  {
+    "jis": "317a",
+    "character": "凹"
+  },
+  {
+    "jis": "317b",
+    "character": "央"
+  },
+  {
+    "jis": "317c",
+    "character": "奥"
+  },
+  {
+    "jis": "317d",
+    "character": "往"
+  },
+  {
+    "jis": "317e",
+    "character": "応"
+  },
+  {
+    "jis": "3221",
+    "character": "押"
+  },
+  {
+    "jis": "3222",
+    "character": "旺"
+  },
+  {
+    "jis": "3223",
+    "character": "横"
+  },
+  {
+    "jis": "3224",
+    "character": "欧"
+  },
+  {
+    "jis": "3225",
+    "character": "殴"
+  },
+  {
+    "jis": "3226",
+    "character": "王"
+  },
+  {
+    "jis": "3227",
+    "character": "翁"
+  },
+  {
+    "jis": "3228",
+    "character": "襖"
+  },
+  {
+    "jis": "3229",
+    "character": "鴬"
+  },
+  {
+    "jis": "322a",
+    "character": "鴎"
+  },
+  {
+    "jis": "322b",
+    "character": "黄"
+  },
+  {
+    "jis": "322c",
+    "character": "岡"
+  },
+  {
+    "jis": "322d",
+    "character": "沖"
+  },
+  {
+    "jis": "322e",
+    "character": "荻"
+  },
+  {
+    "jis": "322f",
+    "character": "億"
+  },
+  {
+    "jis": "3230",
+    "character": "屋"
+  },
+  {
+    "jis": "3231",
+    "character": "憶"
+  },
+  {
+    "jis": "3232",
+    "character": "臆"
+  },
+  {
+    "jis": "3233",
+    "character": "桶"
+  },
+  {
+    "jis": "3234",
+    "character": "牡"
+  },
+  {
+    "jis": "3235",
+    "character": "乙"
+  },
+  {
+    "jis": "3236",
+    "character": "俺"
+  },
+  {
+    "jis": "3237",
+    "character": "卸"
+  },
+  {
+    "jis": "3238",
+    "character": "恩"
+  },
+  {
+    "jis": "3239",
+    "character": "温"
+  },
+  {
+    "jis": "323a",
+    "character": "穏"
+  },
+  {
+    "jis": "323b",
+    "character": "音"
+  },
+  {
+    "jis": "323c",
+    "character": "下"
+  },
+  {
+    "jis": "323d",
+    "character": "化"
+  },
+  {
+    "jis": "323e",
+    "character": "仮"
+  },
+  {
+    "jis": "323f",
+    "character": "何"
+  },
+  {
+    "jis": "3240",
+    "character": "伽"
+  },
+  {
+    "jis": "3241",
+    "character": "価"
+  },
+  {
+    "jis": "3242",
+    "character": "佳"
+  },
+  {
+    "jis": "3243",
+    "character": "加"
+  },
+  {
+    "jis": "3244",
+    "character": "可"
+  },
+  {
+    "jis": "3245",
+    "character": "嘉"
+  },
+  {
+    "jis": "3246",
+    "character": "夏"
+  },
+  {
+    "jis": "3247",
+    "character": "嫁"
+  },
+  {
+    "jis": "3248",
+    "character": "家"
+  },
+  {
+    "jis": "3249",
+    "character": "寡"
+  },
+  {
+    "jis": "324a",
+    "character": "科"
+  },
+  {
+    "jis": "324b",
+    "character": "暇"
+  },
+  {
+    "jis": "324c",
+    "character": "果"
+  },
+  {
+    "jis": "324d",
+    "character": "架"
+  },
+  {
+    "jis": "324e",
+    "character": "歌"
+  },
+  {
+    "jis": "324f",
+    "character": "河"
+  },
+  {
+    "jis": "3250",
+    "character": "火"
+  },
+  {
+    "jis": "3251",
+    "character": "珂"
+  },
+  {
+    "jis": "3252",
+    "character": "禍"
+  },
+  {
+    "jis": "3253",
+    "character": "禾"
+  },
+  {
+    "jis": "3254",
+    "character": "稼"
+  },
+  {
+    "jis": "3255",
+    "character": "箇"
+  },
+  {
+    "jis": "3256",
+    "character": "花"
+  },
+  {
+    "jis": "3257",
+    "character": "苛"
+  },
+  {
+    "jis": "3258",
+    "character": "茄"
+  },
+  {
+    "jis": "3259",
+    "character": "荷"
+  },
+  {
+    "jis": "325a",
+    "character": "華"
+  },
+  {
+    "jis": "325b",
+    "character": "菓"
+  },
+  {
+    "jis": "325c",
+    "character": "蝦"
+  },
+  {
+    "jis": "325d",
+    "character": "課"
+  },
+  {
+    "jis": "325e",
+    "character": "嘩"
+  },
+  {
+    "jis": "325f",
+    "character": "貨"
+  },
+  {
+    "jis": "3260",
+    "character": "迦"
+  },
+  {
+    "jis": "3261",
+    "character": "過"
+  },
+  {
+    "jis": "3262",
+    "character": "霞"
+  },
+  {
+    "jis": "3263",
+    "character": "蚊"
+  },
+  {
+    "jis": "3264",
+    "character": "俄"
+  },
+  {
+    "jis": "3265",
+    "character": "峨"
+  },
+  {
+    "jis": "3266",
+    "character": "我"
+  },
+  {
+    "jis": "3267",
+    "character": "牙"
+  },
+  {
+    "jis": "3268",
+    "character": "画"
+  },
+  {
+    "jis": "3269",
+    "character": "臥"
+  },
+  {
+    "jis": "326a",
+    "character": "芽"
+  },
+  {
+    "jis": "326b",
+    "character": "蛾"
+  },
+  {
+    "jis": "326c",
+    "character": "賀"
+  },
+  {
+    "jis": "326d",
+    "character": "雅"
+  },
+  {
+    "jis": "326e",
+    "character": "餓"
+  },
+  {
+    "jis": "326f",
+    "character": "駕"
+  },
+  {
+    "jis": "3270",
+    "character": "介"
+  },
+  {
+    "jis": "3271",
+    "character": "会"
+  },
+  {
+    "jis": "3272",
+    "character": "解"
+  },
+  {
+    "jis": "3273",
+    "character": "回"
+  },
+  {
+    "jis": "3274",
+    "character": "塊"
+  },
+  {
+    "jis": "3275",
+    "character": "壊"
+  },
+  {
+    "jis": "3276",
+    "character": "廻"
+  },
+  {
+    "jis": "3277",
+    "character": "快"
+  },
+  {
+    "jis": "3278",
+    "character": "怪"
+  },
+  {
+    "jis": "3279",
+    "character": "悔"
+  },
+  {
+    "jis": "327a",
+    "character": "恢"
+  },
+  {
+    "jis": "327b",
+    "character": "懐"
+  },
+  {
+    "jis": "327c",
+    "character": "戒"
+  },
+  {
+    "jis": "327d",
+    "character": "拐"
+  },
+  {
+    "jis": "327e",
+    "character": "改"
+  },
+  {
+    "jis": "3321",
+    "character": "魁"
+  },
+  {
+    "jis": "3322",
+    "character": "晦"
+  },
+  {
+    "jis": "3323",
+    "character": "械"
+  },
+  {
+    "jis": "3324",
+    "character": "海"
+  },
+  {
+    "jis": "3325",
+    "character": "灰"
+  },
+  {
+    "jis": "3326",
+    "character": "界"
+  },
+  {
+    "jis": "3327",
+    "character": "皆"
+  },
+  {
+    "jis": "3328",
+    "character": "絵"
+  },
+  {
+    "jis": "3329",
+    "character": "芥"
+  },
+  {
+    "jis": "332a",
+    "character": "蟹"
+  },
+  {
+    "jis": "332b",
+    "character": "開"
+  },
+  {
+    "jis": "332c",
+    "character": "階"
+  },
+  {
+    "jis": "332d",
+    "character": "貝"
+  },
+  {
+    "jis": "332e",
+    "character": "凱"
+  },
+  {
+    "jis": "332f",
+    "character": "劾"
+  },
+  {
+    "jis": "3330",
+    "character": "外"
+  },
+  {
+    "jis": "3331",
+    "character": "咳"
+  },
+  {
+    "jis": "3332",
+    "character": "害"
+  },
+  {
+    "jis": "3333",
+    "character": "崖"
+  },
+  {
+    "jis": "3334",
+    "character": "慨"
+  },
+  {
+    "jis": "3335",
+    "character": "概"
+  },
+  {
+    "jis": "3336",
+    "character": "涯"
+  },
+  {
+    "jis": "3337",
+    "character": "碍"
+  },
+  {
+    "jis": "3338",
+    "character": "蓋"
+  },
+  {
+    "jis": "3339",
+    "character": "街"
+  },
+  {
+    "jis": "333a",
+    "character": "該"
+  },
+  {
+    "jis": "333b",
+    "character": "鎧"
+  },
+  {
+    "jis": "333c",
+    "character": "骸"
+  },
+  {
+    "jis": "333d",
+    "character": "浬"
+  },
+  {
+    "jis": "333e",
+    "character": "馨"
+  },
+  {
+    "jis": "333f",
+    "character": "蛙"
+  },
+  {
+    "jis": "3340",
+    "character": "垣"
+  },
+  {
+    "jis": "3341",
+    "character": "柿"
+  },
+  {
+    "jis": "3342",
+    "character": "蛎"
+  },
+  {
+    "jis": "3343",
+    "character": "鈎"
+  },
+  {
+    "jis": "3344",
+    "character": "劃"
+  },
+  {
+    "jis": "3345",
+    "character": "嚇"
+  },
+  {
+    "jis": "3346",
+    "character": "各"
+  },
+  {
+    "jis": "3347",
+    "character": "廓"
+  },
+  {
+    "jis": "3348",
+    "character": "拡"
+  },
+  {
+    "jis": "3349",
+    "character": "撹"
+  },
+  {
+    "jis": "334a",
+    "character": "格"
+  },
+  {
+    "jis": "334b",
+    "character": "核"
+  },
+  {
+    "jis": "334c",
+    "character": "殻"
+  },
+  {
+    "jis": "334d",
+    "character": "獲"
+  },
+  {
+    "jis": "334e",
+    "character": "確"
+  },
+  {
+    "jis": "334f",
+    "character": "穫"
+  },
+  {
+    "jis": "3350",
+    "character": "覚"
+  },
+  {
+    "jis": "3351",
+    "character": "角"
+  },
+  {
+    "jis": "3352",
+    "character": "赫"
+  },
+  {
+    "jis": "3353",
+    "character": "較"
+  },
+  {
+    "jis": "3354",
+    "character": "郭"
+  },
+  {
+    "jis": "3355",
+    "character": "閣"
+  },
+  {
+    "jis": "3356",
+    "character": "隔"
+  },
+  {
+    "jis": "3357",
+    "character": "革"
+  },
+  {
+    "jis": "3358",
+    "character": "学"
+  },
+  {
+    "jis": "3359",
+    "character": "岳"
+  },
+  {
+    "jis": "335a",
+    "character": "楽"
+  },
+  {
+    "jis": "335b",
+    "character": "額"
+  },
+  {
+    "jis": "335c",
+    "character": "顎"
+  },
+  {
+    "jis": "335d",
+    "character": "掛"
+  },
+  {
+    "jis": "335e",
+    "character": "笠"
+  },
+  {
+    "jis": "335f",
+    "character": "樫"
+  },
+  {
+    "jis": "3360",
+    "character": "橿"
+  },
+  {
+    "jis": "3361",
+    "character": "梶"
+  },
+  {
+    "jis": "3362",
+    "character": "鰍"
+  },
+  {
+    "jis": "3363",
+    "character": "潟"
+  },
+  {
+    "jis": "3364",
+    "character": "割"
+  },
+  {
+    "jis": "3365",
+    "character": "喝"
+  },
+  {
+    "jis": "3366",
+    "character": "恰"
+  },
+  {
+    "jis": "3367",
+    "character": "括"
+  },
+  {
+    "jis": "3368",
+    "character": "活"
+  },
+  {
+    "jis": "3369",
+    "character": "渇"
+  },
+  {
+    "jis": "336a",
+    "character": "滑"
+  },
+  {
+    "jis": "336b",
+    "character": "葛"
+  },
+  {
+    "jis": "336c",
+    "character": "褐"
+  },
+  {
+    "jis": "336d",
+    "character": "轄"
+  },
+  {
+    "jis": "336e",
+    "character": "且"
+  },
+  {
+    "jis": "336f",
+    "character": "鰹"
+  },
+  {
+    "jis": "3370",
+    "character": "叶"
+  },
+  {
+    "jis": "3371",
+    "character": "椛"
+  },
+  {
+    "jis": "3372",
+    "character": "樺"
+  },
+  {
+    "jis": "3373",
+    "character": "鞄"
+  },
+  {
+    "jis": "3374",
+    "character": "株"
+  },
+  {
+    "jis": "3375",
+    "character": "兜"
+  },
+  {
+    "jis": "3376",
+    "character": "竃"
+  },
+  {
+    "jis": "3377",
+    "character": "蒲"
+  },
+  {
+    "jis": "3378",
+    "character": "釜"
+  },
+  {
+    "jis": "3379",
+    "character": "鎌"
+  },
+  {
+    "jis": "337a",
+    "character": "噛"
+  },
+  {
+    "jis": "337b",
+    "character": "鴨"
+  },
+  {
+    "jis": "337c",
+    "character": "栢"
+  },
+  {
+    "jis": "337d",
+    "character": "茅"
+  },
+  {
+    "jis": "337e",
+    "character": "萱"
+  },
+  {
+    "jis": "3421",
+    "character": "粥"
+  },
+  {
+    "jis": "3422",
+    "character": "刈"
+  },
+  {
+    "jis": "3423",
+    "character": "苅"
+  },
+  {
+    "jis": "3424",
+    "character": "瓦"
+  },
+  {
+    "jis": "3425",
+    "character": "乾"
+  },
+  {
+    "jis": "3426",
+    "character": "侃"
+  },
+  {
+    "jis": "3427",
+    "character": "冠"
+  },
+  {
+    "jis": "3428",
+    "character": "寒"
+  },
+  {
+    "jis": "3429",
+    "character": "刊"
+  },
+  {
+    "jis": "342a",
+    "character": "勘"
+  },
+  {
+    "jis": "342b",
+    "character": "勧"
+  },
+  {
+    "jis": "342c",
+    "character": "巻"
+  },
+  {
+    "jis": "342d",
+    "character": "喚"
+  },
+  {
+    "jis": "342e",
+    "character": "堪"
+  },
+  {
+    "jis": "342f",
+    "character": "姦"
+  },
+  {
+    "jis": "3430",
+    "character": "完"
+  },
+  {
+    "jis": "3431",
+    "character": "官"
+  },
+  {
+    "jis": "3432",
+    "character": "寛"
+  },
+  {
+    "jis": "3433",
+    "character": "干"
+  },
+  {
+    "jis": "3434",
+    "character": "幹"
+  },
+  {
+    "jis": "3435",
+    "character": "患"
+  },
+  {
+    "jis": "3436",
+    "character": "感"
+  },
+  {
+    "jis": "3437",
+    "character": "慣"
+  },
+  {
+    "jis": "3438",
+    "character": "憾"
+  },
+  {
+    "jis": "3439",
+    "character": "換"
+  },
+  {
+    "jis": "343a",
+    "character": "敢"
+  },
+  {
+    "jis": "343b",
+    "character": "柑"
+  },
+  {
+    "jis": "343c",
+    "character": "桓"
+  },
+  {
+    "jis": "343d",
+    "character": "棺"
+  },
+  {
+    "jis": "343e",
+    "character": "款"
+  },
+  {
+    "jis": "343f",
+    "character": "歓"
+  },
+  {
+    "jis": "3440",
+    "character": "汗"
+  },
+  {
+    "jis": "3441",
+    "character": "漢"
+  },
+  {
+    "jis": "3442",
+    "character": "澗"
+  },
+  {
+    "jis": "3443",
+    "character": "潅"
+  },
+  {
+    "jis": "3444",
+    "character": "環"
+  },
+  {
+    "jis": "3445",
+    "character": "甘"
+  },
+  {
+    "jis": "3446",
+    "character": "監"
+  },
+  {
+    "jis": "3447",
+    "character": "看"
+  },
+  {
+    "jis": "3448",
+    "character": "竿"
+  },
+  {
+    "jis": "3449",
+    "character": "管"
+  },
+  {
+    "jis": "344a",
+    "character": "簡"
+  },
+  {
+    "jis": "344b",
+    "character": "緩"
+  },
+  {
+    "jis": "344c",
+    "character": "缶"
+  },
+  {
+    "jis": "344d",
+    "character": "翰"
+  },
+  {
+    "jis": "344e",
+    "character": "肝"
+  },
+  {
+    "jis": "344f",
+    "character": "艦"
+  },
+  {
+    "jis": "3450",
+    "character": "莞"
+  },
+  {
+    "jis": "3451",
+    "character": "観"
+  },
+  {
+    "jis": "3452",
+    "character": "諌"
+  },
+  {
+    "jis": "3453",
+    "character": "貫"
+  },
+  {
+    "jis": "3454",
+    "character": "還"
+  },
+  {
+    "jis": "3455",
+    "character": "鑑"
+  },
+  {
+    "jis": "3456",
+    "character": "間"
+  },
+  {
+    "jis": "3457",
+    "character": "閑"
+  },
+  {
+    "jis": "3458",
+    "character": "関"
+  },
+  {
+    "jis": "3459",
+    "character": "陥"
+  },
+  {
+    "jis": "345a",
+    "character": "韓"
+  },
+  {
+    "jis": "345b",
+    "character": "館"
+  },
+  {
+    "jis": "345c",
+    "character": "舘"
+  },
+  {
+    "jis": "345d",
+    "character": "丸"
+  },
+  {
+    "jis": "345e",
+    "character": "含"
+  },
+  {
+    "jis": "345f",
+    "character": "岸"
+  },
+  {
+    "jis": "3460",
+    "character": "巌"
+  },
+  {
+    "jis": "3461",
+    "character": "玩"
+  },
+  {
+    "jis": "3462",
+    "character": "癌"
+  },
+  {
+    "jis": "3463",
+    "character": "眼"
+  },
+  {
+    "jis": "3464",
+    "character": "岩"
+  },
+  {
+    "jis": "3465",
+    "character": "翫"
+  },
+  {
+    "jis": "3466",
+    "character": "贋"
+  },
+  {
+    "jis": "3467",
+    "character": "雁"
+  },
+  {
+    "jis": "3468",
+    "character": "頑"
+  },
+  {
+    "jis": "3469",
+    "character": "顔"
+  },
+  {
+    "jis": "346a",
+    "character": "願"
+  },
+  {
+    "jis": "346b",
+    "character": "企"
+  },
+  {
+    "jis": "346c",
+    "character": "伎"
+  },
+  {
+    "jis": "346d",
+    "character": "危"
+  },
+  {
+    "jis": "346e",
+    "character": "喜"
+  },
+  {
+    "jis": "346f",
+    "character": "器"
+  },
+  {
+    "jis": "3470",
+    "character": "基"
+  },
+  {
+    "jis": "3471",
+    "character": "奇"
+  },
+  {
+    "jis": "3472",
+    "character": "嬉"
+  },
+  {
+    "jis": "3473",
+    "character": "寄"
+  },
+  {
+    "jis": "3474",
+    "character": "岐"
+  },
+  {
+    "jis": "3475",
+    "character": "希"
+  },
+  {
+    "jis": "3476",
+    "character": "幾"
+  },
+  {
+    "jis": "3477",
+    "character": "忌"
+  },
+  {
+    "jis": "3478",
+    "character": "揮"
+  },
+  {
+    "jis": "3479",
+    "character": "机"
+  },
+  {
+    "jis": "347a",
+    "character": "旗"
+  },
+  {
+    "jis": "347b",
+    "character": "既"
+  },
+  {
+    "jis": "347c",
+    "character": "期"
+  },
+  {
+    "jis": "347d",
+    "character": "棋"
+  },
+  {
+    "jis": "347e",
+    "character": "棄"
+  },
+  {
+    "jis": "3521",
+    "character": "機"
+  },
+  {
+    "jis": "3522",
+    "character": "帰"
+  },
+  {
+    "jis": "3523",
+    "character": "毅"
+  },
+  {
+    "jis": "3524",
+    "character": "気"
+  },
+  {
+    "jis": "3525",
+    "character": "汽"
+  },
+  {
+    "jis": "3526",
+    "character": "畿"
+  },
+  {
+    "jis": "3527",
+    "character": "祈"
+  },
+  {
+    "jis": "3528",
+    "character": "季"
+  },
+  {
+    "jis": "3529",
+    "character": "稀"
+  },
+  {
+    "jis": "352a",
+    "character": "紀"
+  },
+  {
+    "jis": "352b",
+    "character": "徽"
+  },
+  {
+    "jis": "352c",
+    "character": "規"
+  },
+  {
+    "jis": "352d",
+    "character": "記"
+  },
+  {
+    "jis": "352e",
+    "character": "貴"
+  },
+  {
+    "jis": "352f",
+    "character": "起"
+  },
+  {
+    "jis": "3530",
+    "character": "軌"
+  },
+  {
+    "jis": "3531",
+    "character": "輝"
+  },
+  {
+    "jis": "3532",
+    "character": "飢"
+  },
+  {
+    "jis": "3533",
+    "character": "騎"
+  },
+  {
+    "jis": "3534",
+    "character": "鬼"
+  },
+  {
+    "jis": "3535",
+    "character": "亀"
+  },
+  {
+    "jis": "3536",
+    "character": "偽"
+  },
+  {
+    "jis": "3537",
+    "character": "儀"
+  },
+  {
+    "jis": "3538",
+    "character": "妓"
+  },
+  {
+    "jis": "3539",
+    "character": "宜"
+  },
+  {
+    "jis": "353a",
+    "character": "戯"
+  },
+  {
+    "jis": "353b",
+    "character": "技"
+  },
+  {
+    "jis": "353c",
+    "character": "擬"
+  },
+  {
+    "jis": "353d",
+    "character": "欺"
+  },
+  {
+    "jis": "353e",
+    "character": "犠"
+  },
+  {
+    "jis": "353f",
+    "character": "疑"
+  },
+  {
+    "jis": "3540",
+    "character": "祇"
+  },
+  {
+    "jis": "3541",
+    "character": "義"
+  },
+  {
+    "jis": "3542",
+    "character": "蟻"
+  },
+  {
+    "jis": "3543",
+    "character": "誼"
+  },
+  {
+    "jis": "3544",
+    "character": "議"
+  },
+  {
+    "jis": "3545",
+    "character": "掬"
+  },
+  {
+    "jis": "3546",
+    "character": "菊"
+  },
+  {
+    "jis": "3547",
+    "character": "鞠"
+  },
+  {
+    "jis": "3548",
+    "character": "吉"
+  },
+  {
+    "jis": "3549",
+    "character": "吃"
+  },
+  {
+    "jis": "354a",
+    "character": "喫"
+  },
+  {
+    "jis": "354b",
+    "character": "桔"
+  },
+  {
+    "jis": "354c",
+    "character": "橘"
+  },
+  {
+    "jis": "354d",
+    "character": "詰"
+  },
+  {
+    "jis": "354e",
+    "character": "砧"
+  },
+  {
+    "jis": "354f",
+    "character": "杵"
+  },
+  {
+    "jis": "3550",
+    "character": "黍"
+  },
+  {
+    "jis": "3551",
+    "character": "却"
+  },
+  {
+    "jis": "3552",
+    "character": "客"
+  },
+  {
+    "jis": "3553",
+    "character": "脚"
+  },
+  {
+    "jis": "3554",
+    "character": "虐"
+  },
+  {
+    "jis": "3555",
+    "character": "逆"
+  },
+  {
+    "jis": "3556",
+    "character": "丘"
+  },
+  {
+    "jis": "3557",
+    "character": "久"
+  },
+  {
+    "jis": "3558",
+    "character": "仇"
+  },
+  {
+    "jis": "3559",
+    "character": "休"
+  },
+  {
+    "jis": "355a",
+    "character": "及"
+  },
+  {
+    "jis": "355b",
+    "character": "吸"
+  },
+  {
+    "jis": "355c",
+    "character": "宮"
+  },
+  {
+    "jis": "355d",
+    "character": "弓"
+  },
+  {
+    "jis": "355e",
+    "character": "急"
+  },
+  {
+    "jis": "355f",
+    "character": "救"
+  },
+  {
+    "jis": "3560",
+    "character": "朽"
+  },
+  {
+    "jis": "3561",
+    "character": "求"
+  },
+  {
+    "jis": "3562",
+    "character": "汲"
+  },
+  {
+    "jis": "3563",
+    "character": "泣"
+  },
+  {
+    "jis": "3564",
+    "character": "灸"
+  },
+  {
+    "jis": "3565",
+    "character": "球"
+  },
+  {
+    "jis": "3566",
+    "character": "究"
+  },
+  {
+    "jis": "3567",
+    "character": "窮"
+  },
+  {
+    "jis": "3568",
+    "character": "笈"
+  },
+  {
+    "jis": "3569",
+    "character": "級"
+  },
+  {
+    "jis": "356a",
+    "character": "糾"
+  },
+  {
+    "jis": "356b",
+    "character": "給"
+  },
+  {
+    "jis": "356c",
+    "character": "旧"
+  },
+  {
+    "jis": "356d",
+    "character": "牛"
+  },
+  {
+    "jis": "356e",
+    "character": "去"
+  },
+  {
+    "jis": "356f",
+    "character": "居"
+  },
+  {
+    "jis": "3570",
+    "character": "巨"
+  },
+  {
+    "jis": "3571",
+    "character": "拒"
+  },
+  {
+    "jis": "3572",
+    "character": "拠"
+  },
+  {
+    "jis": "3573",
+    "character": "挙"
+  },
+  {
+    "jis": "3574",
+    "character": "渠"
+  },
+  {
+    "jis": "3575",
+    "character": "虚"
+  },
+  {
+    "jis": "3576",
+    "character": "許"
+  },
+  {
+    "jis": "3577",
+    "character": "距"
+  },
+  {
+    "jis": "3578",
+    "character": "鋸"
+  },
+  {
+    "jis": "3579",
+    "character": "漁"
+  },
+  {
+    "jis": "357a",
+    "character": "禦"
+  },
+  {
+    "jis": "357b",
+    "character": "魚"
+  },
+  {
+    "jis": "357c",
+    "character": "亨"
+  },
+  {
+    "jis": "357d",
+    "character": "享"
+  },
+  {
+    "jis": "357e",
+    "character": "京"
+  },
+  {
+    "jis": "3621",
+    "character": "供"
+  },
+  {
+    "jis": "3622",
+    "character": "侠"
+  },
+  {
+    "jis": "3623",
+    "character": "僑"
+  },
+  {
+    "jis": "3624",
+    "character": "兇"
+  },
+  {
+    "jis": "3625",
+    "character": "競"
+  },
+  {
+    "jis": "3626",
+    "character": "共"
+  },
+  {
+    "jis": "3627",
+    "character": "凶"
+  },
+  {
+    "jis": "3628",
+    "character": "協"
+  },
+  {
+    "jis": "3629",
+    "character": "匡"
+  },
+  {
+    "jis": "362a",
+    "character": "卿"
+  },
+  {
+    "jis": "362b",
+    "character": "叫"
+  },
+  {
+    "jis": "362c",
+    "character": "喬"
+  },
+  {
+    "jis": "362d",
+    "character": "境"
+  },
+  {
+    "jis": "362e",
+    "character": "峡"
+  },
+  {
+    "jis": "362f",
+    "character": "強"
+  },
+  {
+    "jis": "3630",
+    "character": "彊"
+  },
+  {
+    "jis": "3631",
+    "character": "怯"
+  },
+  {
+    "jis": "3632",
+    "character": "恐"
+  },
+  {
+    "jis": "3633",
+    "character": "恭"
+  },
+  {
+    "jis": "3634",
+    "character": "挟"
+  },
+  {
+    "jis": "3635",
+    "character": "教"
+  },
+  {
+    "jis": "3636",
+    "character": "橋"
+  },
+  {
+    "jis": "3637",
+    "character": "況"
+  },
+  {
+    "jis": "3638",
+    "character": "狂"
+  },
+  {
+    "jis": "3639",
+    "character": "狭"
+  },
+  {
+    "jis": "363a",
+    "character": "矯"
+  },
+  {
+    "jis": "363b",
+    "character": "胸"
+  },
+  {
+    "jis": "363c",
+    "character": "脅"
+  },
+  {
+    "jis": "363d",
+    "character": "興"
+  },
+  {
+    "jis": "363e",
+    "character": "蕎"
+  },
+  {
+    "jis": "363f",
+    "character": "郷"
+  },
+  {
+    "jis": "3640",
+    "character": "鏡"
+  },
+  {
+    "jis": "3641",
+    "character": "響"
+  },
+  {
+    "jis": "3642",
+    "character": "饗"
+  },
+  {
+    "jis": "3643",
+    "character": "驚"
+  },
+  {
+    "jis": "3644",
+    "character": "仰"
+  },
+  {
+    "jis": "3645",
+    "character": "凝"
+  },
+  {
+    "jis": "3646",
+    "character": "尭"
+  },
+  {
+    "jis": "3647",
+    "character": "暁"
+  },
+  {
+    "jis": "3648",
+    "character": "業"
+  },
+  {
+    "jis": "3649",
+    "character": "局"
+  },
+  {
+    "jis": "364a",
+    "character": "曲"
+  },
+  {
+    "jis": "364b",
+    "character": "極"
+  },
+  {
+    "jis": "364c",
+    "character": "玉"
+  },
+  {
+    "jis": "364d",
+    "character": "桐"
+  },
+  {
+    "jis": "364e",
+    "character": "粁"
+  },
+  {
+    "jis": "364f",
+    "character": "僅"
+  },
+  {
+    "jis": "3650",
+    "character": "勤"
+  },
+  {
+    "jis": "3651",
+    "character": "均"
+  },
+  {
+    "jis": "3652",
+    "character": "巾"
+  },
+  {
+    "jis": "3653",
+    "character": "錦"
+  },
+  {
+    "jis": "3654",
+    "character": "斤"
+  },
+  {
+    "jis": "3655",
+    "character": "欣"
+  },
+  {
+    "jis": "3656",
+    "character": "欽"
+  },
+  {
+    "jis": "3657",
+    "character": "琴"
+  },
+  {
+    "jis": "3658",
+    "character": "禁"
+  },
+  {
+    "jis": "3659",
+    "character": "禽"
+  },
+  {
+    "jis": "365a",
+    "character": "筋"
+  },
+  {
+    "jis": "365b",
+    "character": "緊"
+  },
+  {
+    "jis": "365c",
+    "character": "芹"
+  },
+  {
+    "jis": "365d",
+    "character": "菌"
+  },
+  {
+    "jis": "365e",
+    "character": "衿"
+  },
+  {
+    "jis": "365f",
+    "character": "襟"
+  },
+  {
+    "jis": "3660",
+    "character": "謹"
+  },
+  {
+    "jis": "3661",
+    "character": "近"
+  },
+  {
+    "jis": "3662",
+    "character": "金"
+  },
+  {
+    "jis": "3663",
+    "character": "吟"
+  },
+  {
+    "jis": "3664",
+    "character": "銀"
+  },
+  {
+    "jis": "3665",
+    "character": "九"
+  },
+  {
+    "jis": "3666",
+    "character": "倶"
+  },
+  {
+    "jis": "3667",
+    "character": "句"
+  },
+  {
+    "jis": "3668",
+    "character": "区"
+  },
+  {
+    "jis": "3669",
+    "character": "狗"
+  },
+  {
+    "jis": "366a",
+    "character": "玖"
+  },
+  {
+    "jis": "366b",
+    "character": "矩"
+  },
+  {
+    "jis": "366c",
+    "character": "苦"
+  },
+  {
+    "jis": "366d",
+    "character": "躯"
+  },
+  {
+    "jis": "366e",
+    "character": "駆"
+  },
+  {
+    "jis": "366f",
+    "character": "駈"
+  },
+  {
+    "jis": "3670",
+    "character": "駒"
+  },
+  {
+    "jis": "3671",
+    "character": "具"
+  },
+  {
+    "jis": "3672",
+    "character": "愚"
+  },
+  {
+    "jis": "3673",
+    "character": "虞"
+  },
+  {
+    "jis": "3674",
+    "character": "喰"
+  },
+  {
+    "jis": "3675",
+    "character": "空"
+  },
+  {
+    "jis": "3676",
+    "character": "偶"
+  },
+  {
+    "jis": "3677",
+    "character": "寓"
+  },
+  {
+    "jis": "3678",
+    "character": "遇"
+  },
+  {
+    "jis": "3679",
+    "character": "隅"
+  },
+  {
+    "jis": "367a",
+    "character": "串"
+  },
+  {
+    "jis": "367b",
+    "character": "櫛"
+  },
+  {
+    "jis": "367c",
+    "character": "釧"
+  },
+  {
+    "jis": "367d",
+    "character": "屑"
+  },
+  {
+    "jis": "367e",
+    "character": "屈"
+  },
+  {
+    "jis": "3721",
+    "character": "掘"
+  },
+  {
+    "jis": "3722",
+    "character": "窟"
+  },
+  {
+    "jis": "3723",
+    "character": "沓"
+  },
+  {
+    "jis": "3724",
+    "character": "靴"
+  },
+  {
+    "jis": "3725",
+    "character": "轡"
+  },
+  {
+    "jis": "3726",
+    "character": "窪"
+  },
+  {
+    "jis": "3727",
+    "character": "熊"
+  },
+  {
+    "jis": "3728",
+    "character": "隈"
+  },
+  {
+    "jis": "3729",
+    "character": "粂"
+  },
+  {
+    "jis": "372a",
+    "character": "栗"
+  },
+  {
+    "jis": "372b",
+    "character": "繰"
+  },
+  {
+    "jis": "372c",
+    "character": "桑"
+  },
+  {
+    "jis": "372d",
+    "character": "鍬"
+  },
+  {
+    "jis": "372e",
+    "character": "勲"
+  },
+  {
+    "jis": "372f",
+    "character": "君"
+  },
+  {
+    "jis": "3730",
+    "character": "薫"
+  },
+  {
+    "jis": "3731",
+    "character": "訓"
+  },
+  {
+    "jis": "3732",
+    "character": "群"
+  },
+  {
+    "jis": "3733",
+    "character": "軍"
+  },
+  {
+    "jis": "3734",
+    "character": "郡"
+  },
+  {
+    "jis": "3735",
+    "character": "卦"
+  },
+  {
+    "jis": "3736",
+    "character": "袈"
+  },
+  {
+    "jis": "3737",
+    "character": "祁"
+  },
+  {
+    "jis": "3738",
+    "character": "係"
+  },
+  {
+    "jis": "3739",
+    "character": "傾"
+  },
+  {
+    "jis": "373a",
+    "character": "刑"
+  },
+  {
+    "jis": "373b",
+    "character": "兄"
+  },
+  {
+    "jis": "373c",
+    "character": "啓"
+  },
+  {
+    "jis": "373d",
+    "character": "圭"
+  },
+  {
+    "jis": "373e",
+    "character": "珪"
+  },
+  {
+    "jis": "373f",
+    "character": "型"
+  },
+  {
+    "jis": "3740",
+    "character": "契"
+  },
+  {
+    "jis": "3741",
+    "character": "形"
+  },
+  {
+    "jis": "3742",
+    "character": "径"
+  },
+  {
+    "jis": "3743",
+    "character": "恵"
+  },
+  {
+    "jis": "3744",
+    "character": "慶"
+  },
+  {
+    "jis": "3745",
+    "character": "慧"
+  },
+  {
+    "jis": "3746",
+    "character": "憩"
+  },
+  {
+    "jis": "3747",
+    "character": "掲"
+  },
+  {
+    "jis": "3748",
+    "character": "携"
+  },
+  {
+    "jis": "3749",
+    "character": "敬"
+  },
+  {
+    "jis": "374a",
+    "character": "景"
+  },
+  {
+    "jis": "374b",
+    "character": "桂"
+  },
+  {
+    "jis": "374c",
+    "character": "渓"
+  },
+  {
+    "jis": "374d",
+    "character": "畦"
+  },
+  {
+    "jis": "374e",
+    "character": "稽"
+  },
+  {
+    "jis": "374f",
+    "character": "系"
+  },
+  {
+    "jis": "3750",
+    "character": "経"
+  },
+  {
+    "jis": "3751",
+    "character": "継"
+  },
+  {
+    "jis": "3752",
+    "character": "繋"
+  },
+  {
+    "jis": "3753",
+    "character": "罫"
+  },
+  {
+    "jis": "3754",
+    "character": "茎"
+  },
+  {
+    "jis": "3755",
+    "character": "荊"
+  },
+  {
+    "jis": "3756",
+    "character": "蛍"
+  },
+  {
+    "jis": "3757",
+    "character": "計"
+  },
+  {
+    "jis": "3758",
+    "character": "詣"
+  },
+  {
+    "jis": "3759",
+    "character": "警"
+  },
+  {
+    "jis": "375a",
+    "character": "軽"
+  },
+  {
+    "jis": "375b",
+    "character": "頚"
+  },
+  {
+    "jis": "375c",
+    "character": "鶏"
+  },
+  {
+    "jis": "375d",
+    "character": "芸"
+  },
+  {
+    "jis": "375e",
+    "character": "迎"
+  },
+  {
+    "jis": "375f",
+    "character": "鯨"
+  },
+  {
+    "jis": "3760",
+    "character": "劇"
+  },
+  {
+    "jis": "3761",
+    "character": "戟"
+  },
+  {
+    "jis": "3762",
+    "character": "撃"
+  },
+  {
+    "jis": "3763",
+    "character": "激"
+  },
+  {
+    "jis": "3764",
+    "character": "隙"
+  },
+  {
+    "jis": "3765",
+    "character": "桁"
+  },
+  {
+    "jis": "3766",
+    "character": "傑"
+  },
+  {
+    "jis": "3767",
+    "character": "欠"
+  },
+  {
+    "jis": "3768",
+    "character": "決"
+  },
+  {
+    "jis": "3769",
+    "character": "潔"
+  },
+  {
+    "jis": "376a",
+    "character": "穴"
+  },
+  {
+    "jis": "376b",
+    "character": "結"
+  },
+  {
+    "jis": "376c",
+    "character": "血"
+  },
+  {
+    "jis": "376d",
+    "character": "訣"
+  },
+  {
+    "jis": "376e",
+    "character": "月"
+  },
+  {
+    "jis": "376f",
+    "character": "件"
+  },
+  {
+    "jis": "3770",
+    "character": "倹"
+  },
+  {
+    "jis": "3771",
+    "character": "倦"
+  },
+  {
+    "jis": "3772",
+    "character": "健"
+  },
+  {
+    "jis": "3773",
+    "character": "兼"
+  },
+  {
+    "jis": "3774",
+    "character": "券"
+  },
+  {
+    "jis": "3775",
+    "character": "剣"
+  },
+  {
+    "jis": "3776",
+    "character": "喧"
+  },
+  {
+    "jis": "3777",
+    "character": "圏"
+  },
+  {
+    "jis": "3778",
+    "character": "堅"
+  },
+  {
+    "jis": "3779",
+    "character": "嫌"
+  },
+  {
+    "jis": "377a",
+    "character": "建"
+  },
+  {
+    "jis": "377b",
+    "character": "憲"
+  },
+  {
+    "jis": "377c",
+    "character": "懸"
+  },
+  {
+    "jis": "377d",
+    "character": "拳"
+  },
+  {
+    "jis": "377e",
+    "character": "捲"
+  },
+  {
+    "jis": "3821",
+    "character": "検"
+  },
+  {
+    "jis": "3822",
+    "character": "権"
+  },
+  {
+    "jis": "3823",
+    "character": "牽"
+  },
+  {
+    "jis": "3824",
+    "character": "犬"
+  },
+  {
+    "jis": "3825",
+    "character": "献"
+  },
+  {
+    "jis": "3826",
+    "character": "研"
+  },
+  {
+    "jis": "3827",
+    "character": "硯"
+  },
+  {
+    "jis": "3828",
+    "character": "絹"
+  },
+  {
+    "jis": "3829",
+    "character": "県"
+  },
+  {
+    "jis": "382a",
+    "character": "肩"
+  },
+  {
+    "jis": "382b",
+    "character": "見"
+  },
+  {
+    "jis": "382c",
+    "character": "謙"
+  },
+  {
+    "jis": "382d",
+    "character": "賢"
+  },
+  {
+    "jis": "382e",
+    "character": "軒"
+  },
+  {
+    "jis": "382f",
+    "character": "遣"
+  },
+  {
+    "jis": "3830",
+    "character": "鍵"
+  },
+  {
+    "jis": "3831",
+    "character": "険"
+  },
+  {
+    "jis": "3832",
+    "character": "顕"
+  },
+  {
+    "jis": "3833",
+    "character": "験"
+  },
+  {
+    "jis": "3834",
+    "character": "鹸"
+  },
+  {
+    "jis": "3835",
+    "character": "元"
+  },
+  {
+    "jis": "3836",
+    "character": "原"
+  },
+  {
+    "jis": "3837",
+    "character": "厳"
+  },
+  {
+    "jis": "3838",
+    "character": "幻"
+  },
+  {
+    "jis": "3839",
+    "character": "弦"
+  },
+  {
+    "jis": "383a",
+    "character": "減"
+  },
+  {
+    "jis": "383b",
+    "character": "源"
+  },
+  {
+    "jis": "383c",
+    "character": "玄"
+  },
+  {
+    "jis": "383d",
+    "character": "現"
+  },
+  {
+    "jis": "383e",
+    "character": "絃"
+  },
+  {
+    "jis": "383f",
+    "character": "舷"
+  },
+  {
+    "jis": "3840",
+    "character": "言"
+  },
+  {
+    "jis": "3841",
+    "character": "諺"
+  },
+  {
+    "jis": "3842",
+    "character": "限"
+  },
+  {
+    "jis": "3843",
+    "character": "乎"
+  },
+  {
+    "jis": "3844",
+    "character": "個"
+  },
+  {
+    "jis": "3845",
+    "character": "古"
+  },
+  {
+    "jis": "3846",
+    "character": "呼"
+  },
+  {
+    "jis": "3847",
+    "character": "固"
+  },
+  {
+    "jis": "3848",
+    "character": "姑"
+  },
+  {
+    "jis": "3849",
+    "character": "孤"
+  },
+  {
+    "jis": "384a",
+    "character": "己"
+  },
+  {
+    "jis": "384b",
+    "character": "庫"
+  },
+  {
+    "jis": "384c",
+    "character": "弧"
+  },
+  {
+    "jis": "384d",
+    "character": "戸"
+  },
+  {
+    "jis": "384e",
+    "character": "故"
+  },
+  {
+    "jis": "384f",
+    "character": "枯"
+  },
+  {
+    "jis": "3850",
+    "character": "湖"
+  },
+  {
+    "jis": "3851",
+    "character": "狐"
+  },
+  {
+    "jis": "3852",
+    "character": "糊"
+  },
+  {
+    "jis": "3853",
+    "character": "袴"
+  },
+  {
+    "jis": "3854",
+    "character": "股"
+  },
+  {
+    "jis": "3855",
+    "character": "胡"
+  },
+  {
+    "jis": "3856",
+    "character": "菰"
+  },
+  {
+    "jis": "3857",
+    "character": "虎"
+  },
+  {
+    "jis": "3858",
+    "character": "誇"
+  },
+  {
+    "jis": "3859",
+    "character": "跨"
+  },
+  {
+    "jis": "385a",
+    "character": "鈷"
+  },
+  {
+    "jis": "385b",
+    "character": "雇"
+  },
+  {
+    "jis": "385c",
+    "character": "顧"
+  },
+  {
+    "jis": "385d",
+    "character": "鼓"
+  },
+  {
+    "jis": "385e",
+    "character": "五"
+  },
+  {
+    "jis": "385f",
+    "character": "互"
+  },
+  {
+    "jis": "3860",
+    "character": "伍"
+  },
+  {
+    "jis": "3861",
+    "character": "午"
+  },
+  {
+    "jis": "3862",
+    "character": "呉"
+  },
+  {
+    "jis": "3863",
+    "character": "吾"
+  },
+  {
+    "jis": "3864",
+    "character": "娯"
+  },
+  {
+    "jis": "3865",
+    "character": "後"
+  },
+  {
+    "jis": "3866",
+    "character": "御"
+  },
+  {
+    "jis": "3867",
+    "character": "悟"
+  },
+  {
+    "jis": "3868",
+    "character": "梧"
+  },
+  {
+    "jis": "3869",
+    "character": "檎"
+  },
+  {
+    "jis": "386a",
+    "character": "瑚"
+  },
+  {
+    "jis": "386b",
+    "character": "碁"
+  },
+  {
+    "jis": "386c",
+    "character": "語"
+  },
+  {
+    "jis": "386d",
+    "character": "誤"
+  },
+  {
+    "jis": "386e",
+    "character": "護"
+  },
+  {
+    "jis": "386f",
+    "character": "醐"
+  },
+  {
+    "jis": "3870",
+    "character": "乞"
+  },
+  {
+    "jis": "3871",
+    "character": "鯉"
+  },
+  {
+    "jis": "3872",
+    "character": "交"
+  },
+  {
+    "jis": "3873",
+    "character": "佼"
+  },
+  {
+    "jis": "3874",
+    "character": "侯"
+  },
+  {
+    "jis": "3875",
+    "character": "候"
+  },
+  {
+    "jis": "3876",
+    "character": "倖"
+  },
+  {
+    "jis": "3877",
+    "character": "光"
+  },
+  {
+    "jis": "3878",
+    "character": "公"
+  },
+  {
+    "jis": "3879",
+    "character": "功"
+  },
+  {
+    "jis": "387a",
+    "character": "効"
+  },
+  {
+    "jis": "387b",
+    "character": "勾"
+  },
+  {
+    "jis": "387c",
+    "character": "厚"
+  },
+  {
+    "jis": "387d",
+    "character": "口"
+  },
+  {
+    "jis": "387e",
+    "character": "向"
+  },
+  {
+    "jis": "3921",
+    "character": "后"
+  },
+  {
+    "jis": "3922",
+    "character": "喉"
+  },
+  {
+    "jis": "3923",
+    "character": "坑"
+  },
+  {
+    "jis": "3924",
+    "character": "垢"
+  },
+  {
+    "jis": "3925",
+    "character": "好"
+  },
+  {
+    "jis": "3926",
+    "character": "孔"
+  },
+  {
+    "jis": "3927",
+    "character": "孝"
+  },
+  {
+    "jis": "3928",
+    "character": "宏"
+  },
+  {
+    "jis": "3929",
+    "character": "工"
+  },
+  {
+    "jis": "392a",
+    "character": "巧"
+  },
+  {
+    "jis": "392b",
+    "character": "巷"
+  },
+  {
+    "jis": "392c",
+    "character": "幸"
+  },
+  {
+    "jis": "392d",
+    "character": "広"
+  },
+  {
+    "jis": "392e",
+    "character": "庚"
+  },
+  {
+    "jis": "392f",
+    "character": "康"
+  },
+  {
+    "jis": "3930",
+    "character": "弘"
+  },
+  {
+    "jis": "3931",
+    "character": "恒"
+  },
+  {
+    "jis": "3932",
+    "character": "慌"
+  },
+  {
+    "jis": "3933",
+    "character": "抗"
+  },
+  {
+    "jis": "3934",
+    "character": "拘"
+  },
+  {
+    "jis": "3935",
+    "character": "控"
+  },
+  {
+    "jis": "3936",
+    "character": "攻"
+  },
+  {
+    "jis": "3937",
+    "character": "昂"
+  },
+  {
+    "jis": "3938",
+    "character": "晃"
+  },
+  {
+    "jis": "3939",
+    "character": "更"
+  },
+  {
+    "jis": "393a",
+    "character": "杭"
+  },
+  {
+    "jis": "393b",
+    "character": "校"
+  },
+  {
+    "jis": "393c",
+    "character": "梗"
+  },
+  {
+    "jis": "393d",
+    "character": "構"
+  },
+  {
+    "jis": "393e",
+    "character": "江"
+  },
+  {
+    "jis": "393f",
+    "character": "洪"
+  },
+  {
+    "jis": "3940",
+    "character": "浩"
+  },
+  {
+    "jis": "3941",
+    "character": "港"
+  },
+  {
+    "jis": "3942",
+    "character": "溝"
+  },
+  {
+    "jis": "3943",
+    "character": "甲"
+  },
+  {
+    "jis": "3944",
+    "character": "皇"
+  },
+  {
+    "jis": "3945",
+    "character": "硬"
+  },
+  {
+    "jis": "3946",
+    "character": "稿"
+  },
+  {
+    "jis": "3947",
+    "character": "糠"
+  },
+  {
+    "jis": "3948",
+    "character": "紅"
+  },
+  {
+    "jis": "3949",
+    "character": "紘"
+  },
+  {
+    "jis": "394a",
+    "character": "絞"
+  },
+  {
+    "jis": "394b",
+    "character": "綱"
+  },
+  {
+    "jis": "394c",
+    "character": "耕"
+  },
+  {
+    "jis": "394d",
+    "character": "考"
+  },
+  {
+    "jis": "394e",
+    "character": "肯"
+  },
+  {
+    "jis": "394f",
+    "character": "肱"
+  },
+  {
+    "jis": "3950",
+    "character": "腔"
+  },
+  {
+    "jis": "3951",
+    "character": "膏"
+  },
+  {
+    "jis": "3952",
+    "character": "航"
+  },
+  {
+    "jis": "3953",
+    "character": "荒"
+  },
+  {
+    "jis": "3954",
+    "character": "行"
+  },
+  {
+    "jis": "3955",
+    "character": "衡"
+  },
+  {
+    "jis": "3956",
+    "character": "講"
+  },
+  {
+    "jis": "3957",
+    "character": "貢"
+  },
+  {
+    "jis": "3958",
+    "character": "購"
+  },
+  {
+    "jis": "3959",
+    "character": "郊"
+  },
+  {
+    "jis": "395a",
+    "character": "酵"
+  },
+  {
+    "jis": "395b",
+    "character": "鉱"
+  },
+  {
+    "jis": "395c",
+    "character": "砿"
+  },
+  {
+    "jis": "395d",
+    "character": "鋼"
+  },
+  {
+    "jis": "395e",
+    "character": "閤"
+  },
+  {
+    "jis": "395f",
+    "character": "降"
+  },
+  {
+    "jis": "3960",
+    "character": "項"
+  },
+  {
+    "jis": "3961",
+    "character": "香"
+  },
+  {
+    "jis": "3962",
+    "character": "高"
+  },
+  {
+    "jis": "3963",
+    "character": "鴻"
+  },
+  {
+    "jis": "3964",
+    "character": "剛"
+  },
+  {
+    "jis": "3965",
+    "character": "劫"
+  },
+  {
+    "jis": "3966",
+    "character": "号"
+  },
+  {
+    "jis": "3967",
+    "character": "合"
+  },
+  {
+    "jis": "3968",
+    "character": "壕"
+  },
+  {
+    "jis": "3969",
+    "character": "拷"
+  },
+  {
+    "jis": "396a",
+    "character": "濠"
+  },
+  {
+    "jis": "396b",
+    "character": "豪"
+  },
+  {
+    "jis": "396c",
+    "character": "轟"
+  },
+  {
+    "jis": "396d",
+    "character": "麹"
+  },
+  {
+    "jis": "396e",
+    "character": "克"
+  },
+  {
+    "jis": "396f",
+    "character": "刻"
+  },
+  {
+    "jis": "3970",
+    "character": "告"
+  },
+  {
+    "jis": "3971",
+    "character": "国"
+  },
+  {
+    "jis": "3972",
+    "character": "穀"
+  },
+  {
+    "jis": "3973",
+    "character": "酷"
+  },
+  {
+    "jis": "3974",
+    "character": "鵠"
+  },
+  {
+    "jis": "3975",
+    "character": "黒"
+  },
+  {
+    "jis": "3976",
+    "character": "獄"
+  },
+  {
+    "jis": "3977",
+    "character": "漉"
+  },
+  {
+    "jis": "3978",
+    "character": "腰"
+  },
+  {
+    "jis": "3979",
+    "character": "甑"
+  },
+  {
+    "jis": "397a",
+    "character": "忽"
+  },
+  {
+    "jis": "397b",
+    "character": "惚"
+  },
+  {
+    "jis": "397c",
+    "character": "骨"
+  },
+  {
+    "jis": "397d",
+    "character": "狛"
+  },
+  {
+    "jis": "397e",
+    "character": "込"
+  },
+  {
+    "jis": "3a21",
+    "character": "此"
+  },
+  {
+    "jis": "3a22",
+    "character": "頃"
+  },
+  {
+    "jis": "3a23",
+    "character": "今"
+  },
+  {
+    "jis": "3a24",
+    "character": "困"
+  },
+  {
+    "jis": "3a25",
+    "character": "坤"
+  },
+  {
+    "jis": "3a26",
+    "character": "墾"
+  },
+  {
+    "jis": "3a27",
+    "character": "婚"
+  },
+  {
+    "jis": "3a28",
+    "character": "恨"
+  },
+  {
+    "jis": "3a29",
+    "character": "懇"
+  },
+  {
+    "jis": "3a2a",
+    "character": "昏"
+  },
+  {
+    "jis": "3a2b",
+    "character": "昆"
+  },
+  {
+    "jis": "3a2c",
+    "character": "根"
+  },
+  {
+    "jis": "3a2d",
+    "character": "梱"
+  },
+  {
+    "jis": "3a2e",
+    "character": "混"
+  },
+  {
+    "jis": "3a2f",
+    "character": "痕"
+  },
+  {
+    "jis": "3a30",
+    "character": "紺"
+  },
+  {
+    "jis": "3a31",
+    "character": "艮"
+  },
+  {
+    "jis": "3a32",
+    "character": "魂"
+  },
+  {
+    "jis": "3a33",
+    "character": "些"
+  },
+  {
+    "jis": "3a34",
+    "character": "佐"
+  },
+  {
+    "jis": "3a35",
+    "character": "叉"
+  },
+  {
+    "jis": "3a36",
+    "character": "唆"
+  },
+  {
+    "jis": "3a37",
+    "character": "嵯"
+  },
+  {
+    "jis": "3a38",
+    "character": "左"
+  },
+  {
+    "jis": "3a39",
+    "character": "差"
+  },
+  {
+    "jis": "3a3a",
+    "character": "査"
+  },
+  {
+    "jis": "3a3b",
+    "character": "沙"
+  },
+  {
+    "jis": "3a3c",
+    "character": "瑳"
+  },
+  {
+    "jis": "3a3d",
+    "character": "砂"
+  },
+  {
+    "jis": "3a3e",
+    "character": "詐"
+  },
+  {
+    "jis": "3a3f",
+    "character": "鎖"
+  },
+  {
+    "jis": "3a40",
+    "character": "裟"
+  },
+  {
+    "jis": "3a41",
+    "character": "坐"
+  },
+  {
+    "jis": "3a42",
+    "character": "座"
+  },
+  {
+    "jis": "3a43",
+    "character": "挫"
+  },
+  {
+    "jis": "3a44",
+    "character": "債"
+  },
+  {
+    "jis": "3a45",
+    "character": "催"
+  },
+  {
+    "jis": "3a46",
+    "character": "再"
+  },
+  {
+    "jis": "3a47",
+    "character": "最"
+  },
+  {
+    "jis": "3a48",
+    "character": "哉"
+  },
+  {
+    "jis": "3a49",
+    "character": "塞"
+  },
+  {
+    "jis": "3a4a",
+    "character": "妻"
+  },
+  {
+    "jis": "3a4b",
+    "character": "宰"
+  },
+  {
+    "jis": "3a4c",
+    "character": "彩"
+  },
+  {
+    "jis": "3a4d",
+    "character": "才"
+  },
+  {
+    "jis": "3a4e",
+    "character": "採"
+  },
+  {
+    "jis": "3a4f",
+    "character": "栽"
+  },
+  {
+    "jis": "3a50",
+    "character": "歳"
+  },
+  {
+    "jis": "3a51",
+    "character": "済"
+  },
+  {
+    "jis": "3a52",
+    "character": "災"
+  },
+  {
+    "jis": "3a53",
+    "character": "采"
+  },
+  {
+    "jis": "3a54",
+    "character": "犀"
+  },
+  {
+    "jis": "3a55",
+    "character": "砕"
+  },
+  {
+    "jis": "3a56",
+    "character": "砦"
+  },
+  {
+    "jis": "3a57",
+    "character": "祭"
+  },
+  {
+    "jis": "3a58",
+    "character": "斎"
+  },
+  {
+    "jis": "3a59",
+    "character": "細"
+  },
+  {
+    "jis": "3a5a",
+    "character": "菜"
+  },
+  {
+    "jis": "3a5b",
+    "character": "裁"
+  },
+  {
+    "jis": "3a5c",
+    "character": "載"
+  },
+  {
+    "jis": "3a5d",
+    "character": "際"
+  },
+  {
+    "jis": "3a5e",
+    "character": "剤"
+  },
+  {
+    "jis": "3a5f",
+    "character": "在"
+  },
+  {
+    "jis": "3a60",
+    "character": "材"
+  },
+  {
+    "jis": "3a61",
+    "character": "罪"
+  },
+  {
+    "jis": "3a62",
+    "character": "財"
+  },
+  {
+    "jis": "3a63",
+    "character": "冴"
+  },
+  {
+    "jis": "3a64",
+    "character": "坂"
+  },
+  {
+    "jis": "3a65",
+    "character": "阪"
+  },
+  {
+    "jis": "3a66",
+    "character": "堺"
+  },
+  {
+    "jis": "3a67",
+    "character": "榊"
+  },
+  {
+    "jis": "3a68",
+    "character": "肴"
+  },
+  {
+    "jis": "3a69",
+    "character": "咲"
+  },
+  {
+    "jis": "3a6a",
+    "character": "崎"
+  },
+  {
+    "jis": "3a6b",
+    "character": "埼"
+  },
+  {
+    "jis": "3a6c",
+    "character": "碕"
+  },
+  {
+    "jis": "3a6d",
+    "character": "鷺"
+  },
+  {
+    "jis": "3a6e",
+    "character": "作"
+  },
+  {
+    "jis": "3a6f",
+    "character": "削"
+  },
+  {
+    "jis": "3a70",
+    "character": "咋"
+  },
+  {
+    "jis": "3a71",
+    "character": "搾"
+  },
+  {
+    "jis": "3a72",
+    "character": "昨"
+  },
+  {
+    "jis": "3a73",
+    "character": "朔"
+  },
+  {
+    "jis": "3a74",
+    "character": "柵"
+  },
+  {
+    "jis": "3a75",
+    "character": "窄"
+  },
+  {
+    "jis": "3a76",
+    "character": "策"
+  },
+  {
+    "jis": "3a77",
+    "character": "索"
+  },
+  {
+    "jis": "3a78",
+    "character": "錯"
+  },
+  {
+    "jis": "3a79",
+    "character": "桜"
+  },
+  {
+    "jis": "3a7a",
+    "character": "鮭"
+  },
+  {
+    "jis": "3a7b",
+    "character": "笹"
+  },
+  {
+    "jis": "3a7c",
+    "character": "匙"
+  },
+  {
+    "jis": "3a7d",
+    "character": "冊"
+  },
+  {
+    "jis": "3a7e",
+    "character": "刷"
+  },
+  {
+    "jis": "3b21",
+    "character": "察"
+  },
+  {
+    "jis": "3b22",
+    "character": "拶"
+  },
+  {
+    "jis": "3b23",
+    "character": "撮"
+  },
+  {
+    "jis": "3b24",
+    "character": "擦"
+  },
+  {
+    "jis": "3b25",
+    "character": "札"
+  },
+  {
+    "jis": "3b26",
+    "character": "殺"
+  },
+  {
+    "jis": "3b27",
+    "character": "薩"
+  },
+  {
+    "jis": "3b28",
+    "character": "雑"
+  },
+  {
+    "jis": "3b29",
+    "character": "皐"
+  },
+  {
+    "jis": "3b2a",
+    "character": "鯖"
+  },
+  {
+    "jis": "3b2b",
+    "character": "捌"
+  },
+  {
+    "jis": "3b2c",
+    "character": "錆"
+  },
+  {
+    "jis": "3b2d",
+    "character": "鮫"
+  },
+  {
+    "jis": "3b2e",
+    "character": "皿"
+  },
+  {
+    "jis": "3b2f",
+    "character": "晒"
+  },
+  {
+    "jis": "3b30",
+    "character": "三"
+  },
+  {
+    "jis": "3b31",
+    "character": "傘"
+  },
+  {
+    "jis": "3b32",
+    "character": "参"
+  },
+  {
+    "jis": "3b33",
+    "character": "山"
+  },
+  {
+    "jis": "3b34",
+    "character": "惨"
+  },
+  {
+    "jis": "3b35",
+    "character": "撒"
+  },
+  {
+    "jis": "3b36",
+    "character": "散"
+  },
+  {
+    "jis": "3b37",
+    "character": "桟"
+  },
+  {
+    "jis": "3b38",
+    "character": "燦"
+  },
+  {
+    "jis": "3b39",
+    "character": "珊"
+  },
+  {
+    "jis": "3b3a",
+    "character": "産"
+  },
+  {
+    "jis": "3b3b",
+    "character": "算"
+  },
+  {
+    "jis": "3b3c",
+    "character": "纂"
+  },
+  {
+    "jis": "3b3d",
+    "character": "蚕"
+  },
+  {
+    "jis": "3b3e",
+    "character": "讃"
+  },
+  {
+    "jis": "3b3f",
+    "character": "賛"
+  },
+  {
+    "jis": "3b40",
+    "character": "酸"
+  },
+  {
+    "jis": "3b41",
+    "character": "餐"
+  },
+  {
+    "jis": "3b42",
+    "character": "斬"
+  },
+  {
+    "jis": "3b43",
+    "character": "暫"
+  },
+  {
+    "jis": "3b44",
+    "character": "残"
+  },
+  {
+    "jis": "3b45",
+    "character": "仕"
+  },
+  {
+    "jis": "3b46",
+    "character": "仔"
+  },
+  {
+    "jis": "3b47",
+    "character": "伺"
+  },
+  {
+    "jis": "3b48",
+    "character": "使"
+  },
+  {
+    "jis": "3b49",
+    "character": "刺"
+  },
+  {
+    "jis": "3b4a",
+    "character": "司"
+  },
+  {
+    "jis": "3b4b",
+    "character": "史"
+  },
+  {
+    "jis": "3b4c",
+    "character": "嗣"
+  },
+  {
+    "jis": "3b4d",
+    "character": "四"
+  },
+  {
+    "jis": "3b4e",
+    "character": "士"
+  },
+  {
+    "jis": "3b4f",
+    "character": "始"
+  },
+  {
+    "jis": "3b50",
+    "character": "姉"
+  },
+  {
+    "jis": "3b51",
+    "character": "姿"
+  },
+  {
+    "jis": "3b52",
+    "character": "子"
+  },
+  {
+    "jis": "3b53",
+    "character": "屍"
+  },
+  {
+    "jis": "3b54",
+    "character": "市"
+  },
+  {
+    "jis": "3b55",
+    "character": "師"
+  },
+  {
+    "jis": "3b56",
+    "character": "志"
+  },
+  {
+    "jis": "3b57",
+    "character": "思"
+  },
+  {
+    "jis": "3b58",
+    "character": "指"
+  },
+  {
+    "jis": "3b59",
+    "character": "支"
+  },
+  {
+    "jis": "3b5a",
+    "character": "孜"
+  },
+  {
+    "jis": "3b5b",
+    "character": "斯"
+  },
+  {
+    "jis": "3b5c",
+    "character": "施"
+  },
+  {
+    "jis": "3b5d",
+    "character": "旨"
+  },
+  {
+    "jis": "3b5e",
+    "character": "枝"
+  },
+  {
+    "jis": "3b5f",
+    "character": "止"
+  },
+  {
+    "jis": "3b60",
+    "character": "死"
+  },
+  {
+    "jis": "3b61",
+    "character": "氏"
+  },
+  {
+    "jis": "3b62",
+    "character": "獅"
+  },
+  {
+    "jis": "3b63",
+    "character": "祉"
+  },
+  {
+    "jis": "3b64",
+    "character": "私"
+  },
+  {
+    "jis": "3b65",
+    "character": "糸"
+  },
+  {
+    "jis": "3b66",
+    "character": "紙"
+  },
+  {
+    "jis": "3b67",
+    "character": "紫"
+  },
+  {
+    "jis": "3b68",
+    "character": "肢"
+  },
+  {
+    "jis": "3b69",
+    "character": "脂"
+  },
+  {
+    "jis": "3b6a",
+    "character": "至"
+  },
+  {
+    "jis": "3b6b",
+    "character": "視"
+  },
+  {
+    "jis": "3b6c",
+    "character": "詞"
+  },
+  {
+    "jis": "3b6d",
+    "character": "詩"
+  },
+  {
+    "jis": "3b6e",
+    "character": "試"
+  },
+  {
+    "jis": "3b6f",
+    "character": "誌"
+  },
+  {
+    "jis": "3b70",
+    "character": "諮"
+  },
+  {
+    "jis": "3b71",
+    "character": "資"
+  },
+  {
+    "jis": "3b72",
+    "character": "賜"
+  },
+  {
+    "jis": "3b73",
+    "character": "雌"
+  },
+  {
+    "jis": "3b74",
+    "character": "飼"
+  },
+  {
+    "jis": "3b75",
+    "character": "歯"
+  },
+  {
+    "jis": "3b76",
+    "character": "事"
+  },
+  {
+    "jis": "3b77",
+    "character": "似"
+  },
+  {
+    "jis": "3b78",
+    "character": "侍"
+  },
+  {
+    "jis": "3b79",
+    "character": "児"
+  },
+  {
+    "jis": "3b7a",
+    "character": "字"
+  },
+  {
+    "jis": "3b7b",
+    "character": "寺"
+  },
+  {
+    "jis": "3b7c",
+    "character": "慈"
+  },
+  {
+    "jis": "3b7d",
+    "character": "持"
+  },
+  {
+    "jis": "3b7e",
+    "character": "時"
+  },
+  {
+    "jis": "3c21",
+    "character": "次"
+  },
+  {
+    "jis": "3c22",
+    "character": "滋"
+  },
+  {
+    "jis": "3c23",
+    "character": "治"
+  },
+  {
+    "jis": "3c24",
+    "character": "爾"
+  },
+  {
+    "jis": "3c25",
+    "character": "璽"
+  },
+  {
+    "jis": "3c26",
+    "character": "痔"
+  },
+  {
+    "jis": "3c27",
+    "character": "磁"
+  },
+  {
+    "jis": "3c28",
+    "character": "示"
+  },
+  {
+    "jis": "3c29",
+    "character": "而"
+  },
+  {
+    "jis": "3c2a",
+    "character": "耳"
+  },
+  {
+    "jis": "3c2b",
+    "character": "自"
+  },
+  {
+    "jis": "3c2c",
+    "character": "蒔"
+  },
+  {
+    "jis": "3c2d",
+    "character": "辞"
+  },
+  {
+    "jis": "3c2e",
+    "character": "汐"
+  },
+  {
+    "jis": "3c2f",
+    "character": "鹿"
+  },
+  {
+    "jis": "3c30",
+    "character": "式"
+  },
+  {
+    "jis": "3c31",
+    "character": "識"
+  },
+  {
+    "jis": "3c32",
+    "character": "鴫"
+  },
+  {
+    "jis": "3c33",
+    "character": "竺"
+  },
+  {
+    "jis": "3c34",
+    "character": "軸"
+  },
+  {
+    "jis": "3c35",
+    "character": "宍"
+  },
+  {
+    "jis": "3c36",
+    "character": "雫"
+  },
+  {
+    "jis": "3c37",
+    "character": "七"
+  },
+  {
+    "jis": "3c38",
+    "character": "叱"
+  },
+  {
+    "jis": "3c39",
+    "character": "執"
+  },
+  {
+    "jis": "3c3a",
+    "character": "失"
+  },
+  {
+    "jis": "3c3b",
+    "character": "嫉"
+  },
+  {
+    "jis": "3c3c",
+    "character": "室"
+  },
+  {
+    "jis": "3c3d",
+    "character": "悉"
+  },
+  {
+    "jis": "3c3e",
+    "character": "湿"
+  },
+  {
+    "jis": "3c3f",
+    "character": "漆"
+  },
+  {
+    "jis": "3c40",
+    "character": "疾"
+  },
+  {
+    "jis": "3c41",
+    "character": "質"
+  },
+  {
+    "jis": "3c42",
+    "character": "実"
+  },
+  {
+    "jis": "3c43",
+    "character": "蔀"
+  },
+  {
+    "jis": "3c44",
+    "character": "篠"
+  },
+  {
+    "jis": "3c45",
+    "character": "偲"
+  },
+  {
+    "jis": "3c46",
+    "character": "柴"
+  },
+  {
+    "jis": "3c47",
+    "character": "芝"
+  },
+  {
+    "jis": "3c48",
+    "character": "屡"
+  },
+  {
+    "jis": "3c49",
+    "character": "蕊"
+  },
+  {
+    "jis": "3c4a",
+    "character": "縞"
+  },
+  {
+    "jis": "3c4b",
+    "character": "舎"
+  },
+  {
+    "jis": "3c4c",
+    "character": "写"
+  },
+  {
+    "jis": "3c4d",
+    "character": "射"
+  },
+  {
+    "jis": "3c4e",
+    "character": "捨"
+  },
+  {
+    "jis": "3c4f",
+    "character": "赦"
+  },
+  {
+    "jis": "3c50",
+    "character": "斜"
+  },
+  {
+    "jis": "3c51",
+    "character": "煮"
+  },
+  {
+    "jis": "3c52",
+    "character": "社"
+  },
+  {
+    "jis": "3c53",
+    "character": "紗"
+  },
+  {
+    "jis": "3c54",
+    "character": "者"
+  },
+  {
+    "jis": "3c55",
+    "character": "謝"
+  },
+  {
+    "jis": "3c56",
+    "character": "車"
+  },
+  {
+    "jis": "3c57",
+    "character": "遮"
+  },
+  {
+    "jis": "3c58",
+    "character": "蛇"
+  },
+  {
+    "jis": "3c59",
+    "character": "邪"
+  },
+  {
+    "jis": "3c5a",
+    "character": "借"
+  },
+  {
+    "jis": "3c5b",
+    "character": "勺"
+  },
+  {
+    "jis": "3c5c",
+    "character": "尺"
+  },
+  {
+    "jis": "3c5d",
+    "character": "杓"
+  },
+  {
+    "jis": "3c5e",
+    "character": "灼"
+  },
+  {
+    "jis": "3c5f",
+    "character": "爵"
+  },
+  {
+    "jis": "3c60",
+    "character": "酌"
+  },
+  {
+    "jis": "3c61",
+    "character": "釈"
+  },
+  {
+    "jis": "3c62",
+    "character": "錫"
+  },
+  {
+    "jis": "3c63",
+    "character": "若"
+  },
+  {
+    "jis": "3c64",
+    "character": "寂"
+  },
+  {
+    "jis": "3c65",
+    "character": "弱"
+  },
+  {
+    "jis": "3c66",
+    "character": "惹"
+  },
+  {
+    "jis": "3c67",
+    "character": "主"
+  },
+  {
+    "jis": "3c68",
+    "character": "取"
+  },
+  {
+    "jis": "3c69",
+    "character": "守"
+  },
+  {
+    "jis": "3c6a",
+    "character": "手"
+  },
+  {
+    "jis": "3c6b",
+    "character": "朱"
+  },
+  {
+    "jis": "3c6c",
+    "character": "殊"
+  },
+  {
+    "jis": "3c6d",
+    "character": "狩"
+  },
+  {
+    "jis": "3c6e",
+    "character": "珠"
+  },
+  {
+    "jis": "3c6f",
+    "character": "種"
+  },
+  {
+    "jis": "3c70",
+    "character": "腫"
+  },
+  {
+    "jis": "3c71",
+    "character": "趣"
+  },
+  {
+    "jis": "3c72",
+    "character": "酒"
+  },
+  {
+    "jis": "3c73",
+    "character": "首"
+  },
+  {
+    "jis": "3c74",
+    "character": "儒"
+  },
+  {
+    "jis": "3c75",
+    "character": "受"
+  },
+  {
+    "jis": "3c76",
+    "character": "呪"
+  },
+  {
+    "jis": "3c77",
+    "character": "寿"
+  },
+  {
+    "jis": "3c78",
+    "character": "授"
+  },
+  {
+    "jis": "3c79",
+    "character": "樹"
+  },
+  {
+    "jis": "3c7a",
+    "character": "綬"
+  },
+  {
+    "jis": "3c7b",
+    "character": "需"
+  },
+  {
+    "jis": "3c7c",
+    "character": "囚"
+  },
+  {
+    "jis": "3c7d",
+    "character": "収"
+  },
+  {
+    "jis": "3c7e",
+    "character": "周"
+  },
+  {
+    "jis": "3d21",
+    "character": "宗"
+  },
+  {
+    "jis": "3d22",
+    "character": "就"
+  },
+  {
+    "jis": "3d23",
+    "character": "州"
+  },
+  {
+    "jis": "3d24",
+    "character": "修"
+  },
+  {
+    "jis": "3d25",
+    "character": "愁"
+  },
+  {
+    "jis": "3d26",
+    "character": "拾"
+  },
+  {
+    "jis": "3d27",
+    "character": "洲"
+  },
+  {
+    "jis": "3d28",
+    "character": "秀"
+  },
+  {
+    "jis": "3d29",
+    "character": "秋"
+  },
+  {
+    "jis": "3d2a",
+    "character": "終"
+  },
+  {
+    "jis": "3d2b",
+    "character": "繍"
+  },
+  {
+    "jis": "3d2c",
+    "character": "習"
+  },
+  {
+    "jis": "3d2d",
+    "character": "臭"
+  },
+  {
+    "jis": "3d2e",
+    "character": "舟"
+  },
+  {
+    "jis": "3d2f",
+    "character": "蒐"
+  },
+  {
+    "jis": "3d30",
+    "character": "衆"
+  },
+  {
+    "jis": "3d31",
+    "character": "襲"
+  },
+  {
+    "jis": "3d32",
+    "character": "讐"
+  },
+  {
+    "jis": "3d33",
+    "character": "蹴"
+  },
+  {
+    "jis": "3d34",
+    "character": "輯"
+  },
+  {
+    "jis": "3d35",
+    "character": "週"
+  },
+  {
+    "jis": "3d36",
+    "character": "酋"
+  },
+  {
+    "jis": "3d37",
+    "character": "酬"
+  },
+  {
+    "jis": "3d38",
+    "character": "集"
+  },
+  {
+    "jis": "3d39",
+    "character": "醜"
+  },
+  {
+    "jis": "3d3a",
+    "character": "什"
+  },
+  {
+    "jis": "3d3b",
+    "character": "住"
+  },
+  {
+    "jis": "3d3c",
+    "character": "充"
+  },
+  {
+    "jis": "3d3d",
+    "character": "十"
+  },
+  {
+    "jis": "3d3e",
+    "character": "従"
+  },
+  {
+    "jis": "3d3f",
+    "character": "戎"
+  },
+  {
+    "jis": "3d40",
+    "character": "柔"
+  },
+  {
+    "jis": "3d41",
+    "character": "汁"
+  },
+  {
+    "jis": "3d42",
+    "character": "渋"
+  },
+  {
+    "jis": "3d43",
+    "character": "獣"
+  },
+  {
+    "jis": "3d44",
+    "character": "縦"
+  },
+  {
+    "jis": "3d45",
+    "character": "重"
+  },
+  {
+    "jis": "3d46",
+    "character": "銃"
+  },
+  {
+    "jis": "3d47",
+    "character": "叔"
+  },
+  {
+    "jis": "3d48",
+    "character": "夙"
+  },
+  {
+    "jis": "3d49",
+    "character": "宿"
+  },
+  {
+    "jis": "3d4a",
+    "character": "淑"
+  },
+  {
+    "jis": "3d4b",
+    "character": "祝"
+  },
+  {
+    "jis": "3d4c",
+    "character": "縮"
+  },
+  {
+    "jis": "3d4d",
+    "character": "粛"
+  },
+  {
+    "jis": "3d4e",
+    "character": "塾"
+  },
+  {
+    "jis": "3d4f",
+    "character": "熟"
+  },
+  {
+    "jis": "3d50",
+    "character": "出"
+  },
+  {
+    "jis": "3d51",
+    "character": "術"
+  },
+  {
+    "jis": "3d52",
+    "character": "述"
+  },
+  {
+    "jis": "3d53",
+    "character": "俊"
+  },
+  {
+    "jis": "3d54",
+    "character": "峻"
+  },
+  {
+    "jis": "3d55",
+    "character": "春"
+  },
+  {
+    "jis": "3d56",
+    "character": "瞬"
+  },
+  {
+    "jis": "3d57",
+    "character": "竣"
+  },
+  {
+    "jis": "3d58",
+    "character": "舜"
+  },
+  {
+    "jis": "3d59",
+    "character": "駿"
+  },
+  {
+    "jis": "3d5a",
+    "character": "准"
+  },
+  {
+    "jis": "3d5b",
+    "character": "循"
+  },
+  {
+    "jis": "3d5c",
+    "character": "旬"
+  },
+  {
+    "jis": "3d5d",
+    "character": "楯"
+  },
+  {
+    "jis": "3d5e",
+    "character": "殉"
+  },
+  {
+    "jis": "3d5f",
+    "character": "淳"
+  },
+  {
+    "jis": "3d60",
+    "character": "準"
+  },
+  {
+    "jis": "3d61",
+    "character": "潤"
+  },
+  {
+    "jis": "3d62",
+    "character": "盾"
+  },
+  {
+    "jis": "3d63",
+    "character": "純"
+  },
+  {
+    "jis": "3d64",
+    "character": "巡"
+  },
+  {
+    "jis": "3d65",
+    "character": "遵"
+  },
+  {
+    "jis": "3d66",
+    "character": "醇"
+  },
+  {
+    "jis": "3d67",
+    "character": "順"
+  },
+  {
+    "jis": "3d68",
+    "character": "処"
+  },
+  {
+    "jis": "3d69",
+    "character": "初"
+  },
+  {
+    "jis": "3d6a",
+    "character": "所"
+  },
+  {
+    "jis": "3d6b",
+    "character": "暑"
+  },
+  {
+    "jis": "3d6c",
+    "character": "曙"
+  },
+  {
+    "jis": "3d6d",
+    "character": "渚"
+  },
+  {
+    "jis": "3d6e",
+    "character": "庶"
+  },
+  {
+    "jis": "3d6f",
+    "character": "緒"
+  },
+  {
+    "jis": "3d70",
+    "character": "署"
+  },
+  {
+    "jis": "3d71",
+    "character": "書"
+  },
+  {
+    "jis": "3d72",
+    "character": "薯"
+  },
+  {
+    "jis": "3d73",
+    "character": "藷"
+  },
+  {
+    "jis": "3d74",
+    "character": "諸"
+  },
+  {
+    "jis": "3d75",
+    "character": "助"
+  },
+  {
+    "jis": "3d76",
+    "character": "叙"
+  },
+  {
+    "jis": "3d77",
+    "character": "女"
+  },
+  {
+    "jis": "3d78",
+    "character": "序"
+  },
+  {
+    "jis": "3d79",
+    "character": "徐"
+  },
+  {
+    "jis": "3d7a",
+    "character": "恕"
+  },
+  {
+    "jis": "3d7b",
+    "character": "鋤"
+  },
+  {
+    "jis": "3d7c",
+    "character": "除"
+  },
+  {
+    "jis": "3d7d",
+    "character": "傷"
+  },
+  {
+    "jis": "3d7e",
+    "character": "償"
+  },
+  {
+    "jis": "3e21",
+    "character": "勝"
+  },
+  {
+    "jis": "3e22",
+    "character": "匠"
+  },
+  {
+    "jis": "3e23",
+    "character": "升"
+  },
+  {
+    "jis": "3e24",
+    "character": "召"
+  },
+  {
+    "jis": "3e25",
+    "character": "哨"
+  },
+  {
+    "jis": "3e26",
+    "character": "商"
+  },
+  {
+    "jis": "3e27",
+    "character": "唱"
+  },
+  {
+    "jis": "3e28",
+    "character": "嘗"
+  },
+  {
+    "jis": "3e29",
+    "character": "奨"
+  },
+  {
+    "jis": "3e2a",
+    "character": "妾"
+  },
+  {
+    "jis": "3e2b",
+    "character": "娼"
+  },
+  {
+    "jis": "3e2c",
+    "character": "宵"
+  },
+  {
+    "jis": "3e2d",
+    "character": "将"
+  },
+  {
+    "jis": "3e2e",
+    "character": "小"
+  },
+  {
+    "jis": "3e2f",
+    "character": "少"
+  },
+  {
+    "jis": "3e30",
+    "character": "尚"
+  },
+  {
+    "jis": "3e31",
+    "character": "庄"
+  },
+  {
+    "jis": "3e32",
+    "character": "床"
+  },
+  {
+    "jis": "3e33",
+    "character": "廠"
+  },
+  {
+    "jis": "3e34",
+    "character": "彰"
+  },
+  {
+    "jis": "3e35",
+    "character": "承"
+  },
+  {
+    "jis": "3e36",
+    "character": "抄"
+  },
+  {
+    "jis": "3e37",
+    "character": "招"
+  },
+  {
+    "jis": "3e38",
+    "character": "掌"
+  },
+  {
+    "jis": "3e39",
+    "character": "捷"
+  },
+  {
+    "jis": "3e3a",
+    "character": "昇"
+  },
+  {
+    "jis": "3e3b",
+    "character": "昌"
+  },
+  {
+    "jis": "3e3c",
+    "character": "昭"
+  },
+  {
+    "jis": "3e3d",
+    "character": "晶"
+  },
+  {
+    "jis": "3e3e",
+    "character": "松"
+  },
+  {
+    "jis": "3e3f",
+    "character": "梢"
+  },
+  {
+    "jis": "3e40",
+    "character": "樟"
+  },
+  {
+    "jis": "3e41",
+    "character": "樵"
+  },
+  {
+    "jis": "3e42",
+    "character": "沼"
+  },
+  {
+    "jis": "3e43",
+    "character": "消"
+  },
+  {
+    "jis": "3e44",
+    "character": "渉"
+  },
+  {
+    "jis": "3e45",
+    "character": "湘"
+  },
+  {
+    "jis": "3e46",
+    "character": "焼"
+  },
+  {
+    "jis": "3e47",
+    "character": "焦"
+  },
+  {
+    "jis": "3e48",
+    "character": "照"
+  },
+  {
+    "jis": "3e49",
+    "character": "症"
+  },
+  {
+    "jis": "3e4a",
+    "character": "省"
+  },
+  {
+    "jis": "3e4b",
+    "character": "硝"
+  },
+  {
+    "jis": "3e4c",
+    "character": "礁"
+  },
+  {
+    "jis": "3e4d",
+    "character": "祥"
+  },
+  {
+    "jis": "3e4e",
+    "character": "称"
+  },
+  {
+    "jis": "3e4f",
+    "character": "章"
+  },
+  {
+    "jis": "3e50",
+    "character": "笑"
+  },
+  {
+    "jis": "3e51",
+    "character": "粧"
+  },
+  {
+    "jis": "3e52",
+    "character": "紹"
+  },
+  {
+    "jis": "3e53",
+    "character": "肖"
+  },
+  {
+    "jis": "3e54",
+    "character": "菖"
+  },
+  {
+    "jis": "3e55",
+    "character": "蒋"
+  },
+  {
+    "jis": "3e56",
+    "character": "蕉"
+  },
+  {
+    "jis": "3e57",
+    "character": "衝"
+  },
+  {
+    "jis": "3e58",
+    "character": "裳"
+  },
+  {
+    "jis": "3e59",
+    "character": "訟"
+  },
+  {
+    "jis": "3e5a",
+    "character": "証"
+  },
+  {
+    "jis": "3e5b",
+    "character": "詔"
+  },
+  {
+    "jis": "3e5c",
+    "character": "詳"
+  },
+  {
+    "jis": "3e5d",
+    "character": "象"
+  },
+  {
+    "jis": "3e5e",
+    "character": "賞"
+  },
+  {
+    "jis": "3e5f",
+    "character": "醤"
+  },
+  {
+    "jis": "3e60",
+    "character": "鉦"
+  },
+  {
+    "jis": "3e61",
+    "character": "鍾"
+  },
+  {
+    "jis": "3e62",
+    "character": "鐘"
+  },
+  {
+    "jis": "3e63",
+    "character": "障"
+  },
+  {
+    "jis": "3e64",
+    "character": "鞘"
+  },
+  {
+    "jis": "3e65",
+    "character": "上"
+  },
+  {
+    "jis": "3e66",
+    "character": "丈"
+  },
+  {
+    "jis": "3e67",
+    "character": "丞"
+  },
+  {
+    "jis": "3e68",
+    "character": "乗"
+  },
+  {
+    "jis": "3e69",
+    "character": "冗"
+  },
+  {
+    "jis": "3e6a",
+    "character": "剰"
+  },
+  {
+    "jis": "3e6b",
+    "character": "城"
+  },
+  {
+    "jis": "3e6c",
+    "character": "場"
+  },
+  {
+    "jis": "3e6d",
+    "character": "壌"
+  },
+  {
+    "jis": "3e6e",
+    "character": "嬢"
+  },
+  {
+    "jis": "3e6f",
+    "character": "常"
+  },
+  {
+    "jis": "3e70",
+    "character": "情"
+  },
+  {
+    "jis": "3e71",
+    "character": "擾"
+  },
+  {
+    "jis": "3e72",
+    "character": "条"
+  },
+  {
+    "jis": "3e73",
+    "character": "杖"
+  },
+  {
+    "jis": "3e74",
+    "character": "浄"
+  },
+  {
+    "jis": "3e75",
+    "character": "状"
+  },
+  {
+    "jis": "3e76",
+    "character": "畳"
+  },
+  {
+    "jis": "3e77",
+    "character": "穣"
+  },
+  {
+    "jis": "3e78",
+    "character": "蒸"
+  },
+  {
+    "jis": "3e79",
+    "character": "譲"
+  },
+  {
+    "jis": "3e7a",
+    "character": "醸"
+  },
+  {
+    "jis": "3e7b",
+    "character": "錠"
+  },
+  {
+    "jis": "3e7c",
+    "character": "嘱"
+  },
+  {
+    "jis": "3e7d",
+    "character": "埴"
+  },
+  {
+    "jis": "3e7e",
+    "character": "飾"
+  },
+  {
+    "jis": "3f21",
+    "character": "拭"
+  },
+  {
+    "jis": "3f22",
+    "character": "植"
+  },
+  {
+    "jis": "3f23",
+    "character": "殖"
+  },
+  {
+    "jis": "3f24",
+    "character": "燭"
+  },
+  {
+    "jis": "3f25",
+    "character": "織"
+  },
+  {
+    "jis": "3f26",
+    "character": "職"
+  },
+  {
+    "jis": "3f27",
+    "character": "色"
+  },
+  {
+    "jis": "3f28",
+    "character": "触"
+  },
+  {
+    "jis": "3f29",
+    "character": "食"
+  },
+  {
+    "jis": "3f2a",
+    "character": "蝕"
+  },
+  {
+    "jis": "3f2b",
+    "character": "辱"
+  },
+  {
+    "jis": "3f2c",
+    "character": "尻"
+  },
+  {
+    "jis": "3f2d",
+    "character": "伸"
+  },
+  {
+    "jis": "3f2e",
+    "character": "信"
+  },
+  {
+    "jis": "3f2f",
+    "character": "侵"
+  },
+  {
+    "jis": "3f30",
+    "character": "唇"
+  },
+  {
+    "jis": "3f31",
+    "character": "娠"
+  },
+  {
+    "jis": "3f32",
+    "character": "寝"
+  },
+  {
+    "jis": "3f33",
+    "character": "審"
+  },
+  {
+    "jis": "3f34",
+    "character": "心"
+  },
+  {
+    "jis": "3f35",
+    "character": "慎"
+  },
+  {
+    "jis": "3f36",
+    "character": "振"
+  },
+  {
+    "jis": "3f37",
+    "character": "新"
+  },
+  {
+    "jis": "3f38",
+    "character": "晋"
+  },
+  {
+    "jis": "3f39",
+    "character": "森"
+  },
+  {
+    "jis": "3f3a",
+    "character": "榛"
+  },
+  {
+    "jis": "3f3b",
+    "character": "浸"
+  },
+  {
+    "jis": "3f3c",
+    "character": "深"
+  },
+  {
+    "jis": "3f3d",
+    "character": "申"
+  },
+  {
+    "jis": "3f3e",
+    "character": "疹"
+  },
+  {
+    "jis": "3f3f",
+    "character": "真"
+  },
+  {
+    "jis": "3f40",
+    "character": "神"
+  },
+  {
+    "jis": "3f41",
+    "character": "秦"
+  },
+  {
+    "jis": "3f42",
+    "character": "紳"
+  },
+  {
+    "jis": "3f43",
+    "character": "臣"
+  },
+  {
+    "jis": "3f44",
+    "character": "芯"
+  },
+  {
+    "jis": "3f45",
+    "character": "薪"
+  },
+  {
+    "jis": "3f46",
+    "character": "親"
+  },
+  {
+    "jis": "3f47",
+    "character": "診"
+  },
+  {
+    "jis": "3f48",
+    "character": "身"
+  },
+  {
+    "jis": "3f49",
+    "character": "辛"
+  },
+  {
+    "jis": "3f4a",
+    "character": "進"
+  },
+  {
+    "jis": "3f4b",
+    "character": "針"
+  },
+  {
+    "jis": "3f4c",
+    "character": "震"
+  },
+  {
+    "jis": "3f4d",
+    "character": "人"
+  },
+  {
+    "jis": "3f4e",
+    "character": "仁"
+  },
+  {
+    "jis": "3f4f",
+    "character": "刃"
+  },
+  {
+    "jis": "3f50",
+    "character": "塵"
+  },
+  {
+    "jis": "3f51",
+    "character": "壬"
+  },
+  {
+    "jis": "3f52",
+    "character": "尋"
+  },
+  {
+    "jis": "3f53",
+    "character": "甚"
+  },
+  {
+    "jis": "3f54",
+    "character": "尽"
+  },
+  {
+    "jis": "3f55",
+    "character": "腎"
+  },
+  {
+    "jis": "3f56",
+    "character": "訊"
+  },
+  {
+    "jis": "3f57",
+    "character": "迅"
+  },
+  {
+    "jis": "3f58",
+    "character": "陣"
+  },
+  {
+    "jis": "3f59",
+    "character": "靭"
+  },
+  {
+    "jis": "3f5a",
+    "character": "笥"
+  },
+  {
+    "jis": "3f5b",
+    "character": "諏"
+  },
+  {
+    "jis": "3f5c",
+    "character": "須"
+  },
+  {
+    "jis": "3f5d",
+    "character": "酢"
+  },
+  {
+    "jis": "3f5e",
+    "character": "図"
+  },
+  {
+    "jis": "3f5f",
+    "character": "厨"
+  },
+  {
+    "jis": "3f60",
+    "character": "逗"
+  },
+  {
+    "jis": "3f61",
+    "character": "吹"
+  },
+  {
+    "jis": "3f62",
+    "character": "垂"
+  },
+  {
+    "jis": "3f63",
+    "character": "帥"
+  },
+  {
+    "jis": "3f64",
+    "character": "推"
+  },
+  {
+    "jis": "3f65",
+    "character": "水"
+  },
+  {
+    "jis": "3f66",
+    "character": "炊"
+  },
+  {
+    "jis": "3f67",
+    "character": "睡"
+  },
+  {
+    "jis": "3f68",
+    "character": "粋"
+  },
+  {
+    "jis": "3f69",
+    "character": "翠"
+  },
+  {
+    "jis": "3f6a",
+    "character": "衰"
+  },
+  {
+    "jis": "3f6b",
+    "character": "遂"
+  },
+  {
+    "jis": "3f6c",
+    "character": "酔"
+  },
+  {
+    "jis": "3f6d",
+    "character": "錐"
+  },
+  {
+    "jis": "3f6e",
+    "character": "錘"
+  },
+  {
+    "jis": "3f6f",
+    "character": "随"
+  },
+  {
+    "jis": "3f70",
+    "character": "瑞"
+  },
+  {
+    "jis": "3f71",
+    "character": "髄"
+  },
+  {
+    "jis": "3f72",
+    "character": "崇"
+  },
+  {
+    "jis": "3f73",
+    "character": "嵩"
+  },
+  {
+    "jis": "3f74",
+    "character": "数"
+  },
+  {
+    "jis": "3f75",
+    "character": "枢"
+  },
+  {
+    "jis": "3f76",
+    "character": "趨"
+  },
+  {
+    "jis": "3f77",
+    "character": "雛"
+  },
+  {
+    "jis": "3f78",
+    "character": "据"
+  },
+  {
+    "jis": "3f79",
+    "character": "杉"
+  },
+  {
+    "jis": "3f7a",
+    "character": "椙"
+  },
+  {
+    "jis": "3f7b",
+    "character": "菅"
+  },
+  {
+    "jis": "3f7c",
+    "character": "頗"
+  },
+  {
+    "jis": "3f7d",
+    "character": "雀"
+  },
+  {
+    "jis": "3f7e",
+    "character": "裾"
+  },
+  {
+    "jis": "4021",
+    "character": "澄"
+  },
+  {
+    "jis": "4022",
+    "character": "摺"
+  },
+  {
+    "jis": "4023",
+    "character": "寸"
+  },
+  {
+    "jis": "4024",
+    "character": "世"
+  },
+  {
+    "jis": "4025",
+    "character": "瀬"
+  },
+  {
+    "jis": "4026",
+    "character": "畝"
+  },
+  {
+    "jis": "4027",
+    "character": "是"
+  },
+  {
+    "jis": "4028",
+    "character": "凄"
+  },
+  {
+    "jis": "4029",
+    "character": "制"
+  },
+  {
+    "jis": "402a",
+    "character": "勢"
+  },
+  {
+    "jis": "402b",
+    "character": "姓"
+  },
+  {
+    "jis": "402c",
+    "character": "征"
+  },
+  {
+    "jis": "402d",
+    "character": "性"
+  },
+  {
+    "jis": "402e",
+    "character": "成"
+  },
+  {
+    "jis": "402f",
+    "character": "政"
+  },
+  {
+    "jis": "4030",
+    "character": "整"
+  },
+  {
+    "jis": "4031",
+    "character": "星"
+  },
+  {
+    "jis": "4032",
+    "character": "晴"
+  },
+  {
+    "jis": "4033",
+    "character": "棲"
+  },
+  {
+    "jis": "4034",
+    "character": "栖"
+  },
+  {
+    "jis": "4035",
+    "character": "正"
+  },
+  {
+    "jis": "4036",
+    "character": "清"
+  },
+  {
+    "jis": "4037",
+    "character": "牲"
+  },
+  {
+    "jis": "4038",
+    "character": "生"
+  },
+  {
+    "jis": "4039",
+    "character": "盛"
+  },
+  {
+    "jis": "403a",
+    "character": "精"
+  },
+  {
+    "jis": "403b",
+    "character": "聖"
+  },
+  {
+    "jis": "403c",
+    "character": "声"
+  },
+  {
+    "jis": "403d",
+    "character": "製"
+  },
+  {
+    "jis": "403e",
+    "character": "西"
+  },
+  {
+    "jis": "403f",
+    "character": "誠"
+  },
+  {
+    "jis": "4040",
+    "character": "誓"
+  },
+  {
+    "jis": "4041",
+    "character": "請"
+  },
+  {
+    "jis": "4042",
+    "character": "逝"
+  },
+  {
+    "jis": "4043",
+    "character": "醒"
+  },
+  {
+    "jis": "4044",
+    "character": "青"
+  },
+  {
+    "jis": "4045",
+    "character": "静"
+  },
+  {
+    "jis": "4046",
+    "character": "斉"
+  },
+  {
+    "jis": "4047",
+    "character": "税"
+  },
+  {
+    "jis": "4048",
+    "character": "脆"
+  },
+  {
+    "jis": "4049",
+    "character": "隻"
+  },
+  {
+    "jis": "404a",
+    "character": "席"
+  },
+  {
+    "jis": "404b",
+    "character": "惜"
+  },
+  {
+    "jis": "404c",
+    "character": "戚"
+  },
+  {
+    "jis": "404d",
+    "character": "斥"
+  },
+  {
+    "jis": "404e",
+    "character": "昔"
+  },
+  {
+    "jis": "404f",
+    "character": "析"
+  },
+  {
+    "jis": "4050",
+    "character": "石"
+  },
+  {
+    "jis": "4051",
+    "character": "積"
+  },
+  {
+    "jis": "4052",
+    "character": "籍"
+  },
+  {
+    "jis": "4053",
+    "character": "績"
+  },
+  {
+    "jis": "4054",
+    "character": "脊"
+  },
+  {
+    "jis": "4055",
+    "character": "責"
+  },
+  {
+    "jis": "4056",
+    "character": "赤"
+  },
+  {
+    "jis": "4057",
+    "character": "跡"
+  },
+  {
+    "jis": "4058",
+    "character": "蹟"
+  },
+  {
+    "jis": "4059",
+    "character": "碩"
+  },
+  {
+    "jis": "405a",
+    "character": "切"
+  },
+  {
+    "jis": "405b",
+    "character": "拙"
+  },
+  {
+    "jis": "405c",
+    "character": "接"
+  },
+  {
+    "jis": "405d",
+    "character": "摂"
+  },
+  {
+    "jis": "405e",
+    "character": "折"
+  },
+  {
+    "jis": "405f",
+    "character": "設"
+  },
+  {
+    "jis": "4060",
+    "character": "窃"
+  },
+  {
+    "jis": "4061",
+    "character": "節"
+  },
+  {
+    "jis": "4062",
+    "character": "説"
+  },
+  {
+    "jis": "4063",
+    "character": "雪"
+  },
+  {
+    "jis": "4064",
+    "character": "絶"
+  },
+  {
+    "jis": "4065",
+    "character": "舌"
+  },
+  {
+    "jis": "4066",
+    "character": "蝉"
+  },
+  {
+    "jis": "4067",
+    "character": "仙"
+  },
+  {
+    "jis": "4068",
+    "character": "先"
+  },
+  {
+    "jis": "4069",
+    "character": "千"
+  },
+  {
+    "jis": "406a",
+    "character": "占"
+  },
+  {
+    "jis": "406b",
+    "character": "宣"
+  },
+  {
+    "jis": "406c",
+    "character": "専"
+  },
+  {
+    "jis": "406d",
+    "character": "尖"
+  },
+  {
+    "jis": "406e",
+    "character": "川"
+  },
+  {
+    "jis": "406f",
+    "character": "戦"
+  },
+  {
+    "jis": "4070",
+    "character": "扇"
+  },
+  {
+    "jis": "4071",
+    "character": "撰"
+  },
+  {
+    "jis": "4072",
+    "character": "栓"
+  },
+  {
+    "jis": "4073",
+    "character": "栴"
+  },
+  {
+    "jis": "4074",
+    "character": "泉"
+  },
+  {
+    "jis": "4075",
+    "character": "浅"
+  },
+  {
+    "jis": "4076",
+    "character": "洗"
+  },
+  {
+    "jis": "4077",
+    "character": "染"
+  },
+  {
+    "jis": "4078",
+    "character": "潜"
+  },
+  {
+    "jis": "4079",
+    "character": "煎"
+  },
+  {
+    "jis": "407a",
+    "character": "煽"
+  },
+  {
+    "jis": "407b",
+    "character": "旋"
+  },
+  {
+    "jis": "407c",
+    "character": "穿"
+  },
+  {
+    "jis": "407d",
+    "character": "箭"
+  },
+  {
+    "jis": "407e",
+    "character": "線"
+  },
+  {
+    "jis": "4121",
+    "character": "繊"
+  },
+  {
+    "jis": "4122",
+    "character": "羨"
+  },
+  {
+    "jis": "4123",
+    "character": "腺"
+  },
+  {
+    "jis": "4124",
+    "character": "舛"
+  },
+  {
+    "jis": "4125",
+    "character": "船"
+  },
+  {
+    "jis": "4126",
+    "character": "薦"
+  },
+  {
+    "jis": "4127",
+    "character": "詮"
+  },
+  {
+    "jis": "4128",
+    "character": "賎"
+  },
+  {
+    "jis": "4129",
+    "character": "践"
+  },
+  {
+    "jis": "412a",
+    "character": "選"
+  },
+  {
+    "jis": "412b",
+    "character": "遷"
+  },
+  {
+    "jis": "412c",
+    "character": "銭"
+  },
+  {
+    "jis": "412d",
+    "character": "銑"
+  },
+  {
+    "jis": "412e",
+    "character": "閃"
+  },
+  {
+    "jis": "412f",
+    "character": "鮮"
+  },
+  {
+    "jis": "4130",
+    "character": "前"
+  },
+  {
+    "jis": "4131",
+    "character": "善"
+  },
+  {
+    "jis": "4132",
+    "character": "漸"
+  },
+  {
+    "jis": "4133",
+    "character": "然"
+  },
+  {
+    "jis": "4134",
+    "character": "全"
+  },
+  {
+    "jis": "4135",
+    "character": "禅"
+  },
+  {
+    "jis": "4136",
+    "character": "繕"
+  },
+  {
+    "jis": "4137",
+    "character": "膳"
+  },
+  {
+    "jis": "4138",
+    "character": "糎"
+  },
+  {
+    "jis": "4139",
+    "character": "噌"
+  },
+  {
+    "jis": "413a",
+    "character": "塑"
+  },
+  {
+    "jis": "413b",
+    "character": "岨"
+  },
+  {
+    "jis": "413c",
+    "character": "措"
+  },
+  {
+    "jis": "413d",
+    "character": "曾"
+  },
+  {
+    "jis": "413e",
+    "character": "曽"
+  },
+  {
+    "jis": "413f",
+    "character": "楚"
+  },
+  {
+    "jis": "4140",
+    "character": "狙"
+  },
+  {
+    "jis": "4141",
+    "character": "疏"
+  },
+  {
+    "jis": "4142",
+    "character": "疎"
+  },
+  {
+    "jis": "4143",
+    "character": "礎"
+  },
+  {
+    "jis": "4144",
+    "character": "祖"
+  },
+  {
+    "jis": "4145",
+    "character": "租"
+  },
+  {
+    "jis": "4146",
+    "character": "粗"
+  },
+  {
+    "jis": "4147",
+    "character": "素"
+  },
+  {
+    "jis": "4148",
+    "character": "組"
+  },
+  {
+    "jis": "4149",
+    "character": "蘇"
+  },
+  {
+    "jis": "414a",
+    "character": "訴"
+  },
+  {
+    "jis": "414b",
+    "character": "阻"
+  },
+  {
+    "jis": "414c",
+    "character": "遡"
+  },
+  {
+    "jis": "414d",
+    "character": "鼠"
+  },
+  {
+    "jis": "414e",
+    "character": "僧"
+  },
+  {
+    "jis": "414f",
+    "character": "創"
+  },
+  {
+    "jis": "4150",
+    "character": "双"
+  },
+  {
+    "jis": "4151",
+    "character": "叢"
+  },
+  {
+    "jis": "4152",
+    "character": "倉"
+  },
+  {
+    "jis": "4153",
+    "character": "喪"
+  },
+  {
+    "jis": "4154",
+    "character": "壮"
+  },
+  {
+    "jis": "4155",
+    "character": "奏"
+  },
+  {
+    "jis": "4156",
+    "character": "爽"
+  },
+  {
+    "jis": "4157",
+    "character": "宋"
+  },
+  {
+    "jis": "4158",
+    "character": "層"
+  },
+  {
+    "jis": "4159",
+    "character": "匝"
+  },
+  {
+    "jis": "415a",
+    "character": "惣"
+  },
+  {
+    "jis": "415b",
+    "character": "想"
+  },
+  {
+    "jis": "415c",
+    "character": "捜"
+  },
+  {
+    "jis": "415d",
+    "character": "掃"
+  },
+  {
+    "jis": "415e",
+    "character": "挿"
+  },
+  {
+    "jis": "415f",
+    "character": "掻"
+  },
+  {
+    "jis": "4160",
+    "character": "操"
+  },
+  {
+    "jis": "4161",
+    "character": "早"
+  },
+  {
+    "jis": "4162",
+    "character": "曹"
+  },
+  {
+    "jis": "4163",
+    "character": "巣"
+  },
+  {
+    "jis": "4164",
+    "character": "槍"
+  },
+  {
+    "jis": "4165",
+    "character": "槽"
+  },
+  {
+    "jis": "4166",
+    "character": "漕"
+  },
+  {
+    "jis": "4167",
+    "character": "燥"
+  },
+  {
+    "jis": "4168",
+    "character": "争"
+  },
+  {
+    "jis": "4169",
+    "character": "痩"
+  },
+  {
+    "jis": "416a",
+    "character": "相"
+  },
+  {
+    "jis": "416b",
+    "character": "窓"
+  },
+  {
+    "jis": "416c",
+    "character": "糟"
+  },
+  {
+    "jis": "416d",
+    "character": "総"
+  },
+  {
+    "jis": "416e",
+    "character": "綜"
+  },
+  {
+    "jis": "416f",
+    "character": "聡"
+  },
+  {
+    "jis": "4170",
+    "character": "草"
+  },
+  {
+    "jis": "4171",
+    "character": "荘"
+  },
+  {
+    "jis": "4172",
+    "character": "葬"
+  },
+  {
+    "jis": "4173",
+    "character": "蒼"
+  },
+  {
+    "jis": "4174",
+    "character": "藻"
+  },
+  {
+    "jis": "4175",
+    "character": "装"
+  },
+  {
+    "jis": "4176",
+    "character": "走"
+  },
+  {
+    "jis": "4177",
+    "character": "送"
+  },
+  {
+    "jis": "4178",
+    "character": "遭"
+  },
+  {
+    "jis": "4179",
+    "character": "鎗"
+  },
+  {
+    "jis": "417a",
+    "character": "霜"
+  },
+  {
+    "jis": "417b",
+    "character": "騒"
+  },
+  {
+    "jis": "417c",
+    "character": "像"
+  },
+  {
+    "jis": "417d",
+    "character": "増"
+  },
+  {
+    "jis": "417e",
+    "character": "憎"
+  },
+  {
+    "jis": "4221",
+    "character": "臓"
+  },
+  {
+    "jis": "4222",
+    "character": "蔵"
+  },
+  {
+    "jis": "4223",
+    "character": "贈"
+  },
+  {
+    "jis": "4224",
+    "character": "造"
+  },
+  {
+    "jis": "4225",
+    "character": "促"
+  },
+  {
+    "jis": "4226",
+    "character": "側"
+  },
+  {
+    "jis": "4227",
+    "character": "則"
+  },
+  {
+    "jis": "4228",
+    "character": "即"
+  },
+  {
+    "jis": "4229",
+    "character": "息"
+  },
+  {
+    "jis": "422a",
+    "character": "捉"
+  },
+  {
+    "jis": "422b",
+    "character": "束"
+  },
+  {
+    "jis": "422c",
+    "character": "測"
+  },
+  {
+    "jis": "422d",
+    "character": "足"
+  },
+  {
+    "jis": "422e",
+    "character": "速"
+  },
+  {
+    "jis": "422f",
+    "character": "俗"
+  },
+  {
+    "jis": "4230",
+    "character": "属"
+  },
+  {
+    "jis": "4231",
+    "character": "賊"
+  },
+  {
+    "jis": "4232",
+    "character": "族"
+  },
+  {
+    "jis": "4233",
+    "character": "続"
+  },
+  {
+    "jis": "4234",
+    "character": "卒"
+  },
+  {
+    "jis": "4235",
+    "character": "袖"
+  },
+  {
+    "jis": "4236",
+    "character": "其"
+  },
+  {
+    "jis": "4237",
+    "character": "揃"
+  },
+  {
+    "jis": "4238",
+    "character": "存"
+  },
+  {
+    "jis": "4239",
+    "character": "孫"
+  },
+  {
+    "jis": "423a",
+    "character": "尊"
+  },
+  {
+    "jis": "423b",
+    "character": "損"
+  },
+  {
+    "jis": "423c",
+    "character": "村"
+  },
+  {
+    "jis": "423d",
+    "character": "遜"
+  },
+  {
+    "jis": "423e",
+    "character": "他"
+  },
+  {
+    "jis": "423f",
+    "character": "多"
+  },
+  {
+    "jis": "4240",
+    "character": "太"
+  },
+  {
+    "jis": "4241",
+    "character": "汰"
+  },
+  {
+    "jis": "4242",
+    "character": "詑"
+  },
+  {
+    "jis": "4243",
+    "character": "唾"
+  },
+  {
+    "jis": "4244",
+    "character": "堕"
+  },
+  {
+    "jis": "4245",
+    "character": "妥"
+  },
+  {
+    "jis": "4246",
+    "character": "惰"
+  },
+  {
+    "jis": "4247",
+    "character": "打"
+  },
+  {
+    "jis": "4248",
+    "character": "柁"
+  },
+  {
+    "jis": "4249",
+    "character": "舵"
+  },
+  {
+    "jis": "424a",
+    "character": "楕"
+  },
+  {
+    "jis": "424b",
+    "character": "陀"
+  },
+  {
+    "jis": "424c",
+    "character": "駄"
+  },
+  {
+    "jis": "424d",
+    "character": "騨"
+  },
+  {
+    "jis": "424e",
+    "character": "体"
+  },
+  {
+    "jis": "424f",
+    "character": "堆"
+  },
+  {
+    "jis": "4250",
+    "character": "対"
+  },
+  {
+    "jis": "4251",
+    "character": "耐"
+  },
+  {
+    "jis": "4252",
+    "character": "岱"
+  },
+  {
+    "jis": "4253",
+    "character": "帯"
+  },
+  {
+    "jis": "4254",
+    "character": "待"
+  },
+  {
+    "jis": "4255",
+    "character": "怠"
+  },
+  {
+    "jis": "4256",
+    "character": "態"
+  },
+  {
+    "jis": "4257",
+    "character": "戴"
+  },
+  {
+    "jis": "4258",
+    "character": "替"
+  },
+  {
+    "jis": "4259",
+    "character": "泰"
+  },
+  {
+    "jis": "425a",
+    "character": "滞"
+  },
+  {
+    "jis": "425b",
+    "character": "胎"
+  },
+  {
+    "jis": "425c",
+    "character": "腿"
+  },
+  {
+    "jis": "425d",
+    "character": "苔"
+  },
+  {
+    "jis": "425e",
+    "character": "袋"
+  },
+  {
+    "jis": "425f",
+    "character": "貸"
+  },
+  {
+    "jis": "4260",
+    "character": "退"
+  },
+  {
+    "jis": "4261",
+    "character": "逮"
+  },
+  {
+    "jis": "4262",
+    "character": "隊"
+  },
+  {
+    "jis": "4263",
+    "character": "黛"
+  },
+  {
+    "jis": "4264",
+    "character": "鯛"
+  },
+  {
+    "jis": "4265",
+    "character": "代"
+  },
+  {
+    "jis": "4266",
+    "character": "台"
+  },
+  {
+    "jis": "4267",
+    "character": "大"
+  },
+  {
+    "jis": "4268",
+    "character": "第"
+  },
+  {
+    "jis": "4269",
+    "character": "醍"
+  },
+  {
+    "jis": "426a",
+    "character": "題"
+  },
+  {
+    "jis": "426b",
+    "character": "鷹"
+  },
+  {
+    "jis": "426c",
+    "character": "滝"
+  },
+  {
+    "jis": "426d",
+    "character": "瀧"
+  },
+  {
+    "jis": "426e",
+    "character": "卓"
+  },
+  {
+    "jis": "426f",
+    "character": "啄"
+  },
+  {
+    "jis": "4270",
+    "character": "宅"
+  },
+  {
+    "jis": "4271",
+    "character": "托"
+  },
+  {
+    "jis": "4272",
+    "character": "択"
+  },
+  {
+    "jis": "4273",
+    "character": "拓"
+  },
+  {
+    "jis": "4274",
+    "character": "沢"
+  },
+  {
+    "jis": "4275",
+    "character": "濯"
+  },
+  {
+    "jis": "4276",
+    "character": "琢"
+  },
+  {
+    "jis": "4277",
+    "character": "託"
+  },
+  {
+    "jis": "4278",
+    "character": "鐸"
+  },
+  {
+    "jis": "4279",
+    "character": "濁"
+  },
+  {
+    "jis": "427a",
+    "character": "諾"
+  },
+  {
+    "jis": "427b",
+    "character": "茸"
+  },
+  {
+    "jis": "427c",
+    "character": "凧"
+  },
+  {
+    "jis": "427d",
+    "character": "蛸"
+  },
+  {
+    "jis": "427e",
+    "character": "只"
+  },
+  {
+    "jis": "4321",
+    "character": "叩"
+  },
+  {
+    "jis": "4322",
+    "character": "但"
+  },
+  {
+    "jis": "4323",
+    "character": "達"
+  },
+  {
+    "jis": "4324",
+    "character": "辰"
+  },
+  {
+    "jis": "4325",
+    "character": "奪"
+  },
+  {
+    "jis": "4326",
+    "character": "脱"
+  },
+  {
+    "jis": "4327",
+    "character": "巽"
+  },
+  {
+    "jis": "4328",
+    "character": "竪"
+  },
+  {
+    "jis": "4329",
+    "character": "辿"
+  },
+  {
+    "jis": "432a",
+    "character": "棚"
+  },
+  {
+    "jis": "432b",
+    "character": "谷"
+  },
+  {
+    "jis": "432c",
+    "character": "狸"
+  },
+  {
+    "jis": "432d",
+    "character": "鱈"
+  },
+  {
+    "jis": "432e",
+    "character": "樽"
+  },
+  {
+    "jis": "432f",
+    "character": "誰"
+  },
+  {
+    "jis": "4330",
+    "character": "丹"
+  },
+  {
+    "jis": "4331",
+    "character": "単"
+  },
+  {
+    "jis": "4332",
+    "character": "嘆"
+  },
+  {
+    "jis": "4333",
+    "character": "坦"
+  },
+  {
+    "jis": "4334",
+    "character": "担"
+  },
+  {
+    "jis": "4335",
+    "character": "探"
+  },
+  {
+    "jis": "4336",
+    "character": "旦"
+  },
+  {
+    "jis": "4337",
+    "character": "歎"
+  },
+  {
+    "jis": "4338",
+    "character": "淡"
+  },
+  {
+    "jis": "4339",
+    "character": "湛"
+  },
+  {
+    "jis": "433a",
+    "character": "炭"
+  },
+  {
+    "jis": "433b",
+    "character": "短"
+  },
+  {
+    "jis": "433c",
+    "character": "端"
+  },
+  {
+    "jis": "433d",
+    "character": "箪"
+  },
+  {
+    "jis": "433e",
+    "character": "綻"
+  },
+  {
+    "jis": "433f",
+    "character": "耽"
+  },
+  {
+    "jis": "4340",
+    "character": "胆"
+  },
+  {
+    "jis": "4341",
+    "character": "蛋"
+  },
+  {
+    "jis": "4342",
+    "character": "誕"
+  },
+  {
+    "jis": "4343",
+    "character": "鍛"
+  },
+  {
+    "jis": "4344",
+    "character": "団"
+  },
+  {
+    "jis": "4345",
+    "character": "壇"
+  },
+  {
+    "jis": "4346",
+    "character": "弾"
+  },
+  {
+    "jis": "4347",
+    "character": "断"
+  },
+  {
+    "jis": "4348",
+    "character": "暖"
+  },
+  {
+    "jis": "4349",
+    "character": "檀"
+  },
+  {
+    "jis": "434a",
+    "character": "段"
+  },
+  {
+    "jis": "434b",
+    "character": "男"
+  },
+  {
+    "jis": "434c",
+    "character": "談"
+  },
+  {
+    "jis": "434d",
+    "character": "値"
+  },
+  {
+    "jis": "434e",
+    "character": "知"
+  },
+  {
+    "jis": "434f",
+    "character": "地"
+  },
+  {
+    "jis": "4350",
+    "character": "弛"
+  },
+  {
+    "jis": "4351",
+    "character": "恥"
+  },
+  {
+    "jis": "4352",
+    "character": "智"
+  },
+  {
+    "jis": "4353",
+    "character": "池"
+  },
+  {
+    "jis": "4354",
+    "character": "痴"
+  },
+  {
+    "jis": "4355",
+    "character": "稚"
+  },
+  {
+    "jis": "4356",
+    "character": "置"
+  },
+  {
+    "jis": "4357",
+    "character": "致"
+  },
+  {
+    "jis": "4358",
+    "character": "蜘"
+  },
+  {
+    "jis": "4359",
+    "character": "遅"
+  },
+  {
+    "jis": "435a",
+    "character": "馳"
+  },
+  {
+    "jis": "435b",
+    "character": "築"
+  },
+  {
+    "jis": "435c",
+    "character": "畜"
+  },
+  {
+    "jis": "435d",
+    "character": "竹"
+  },
+  {
+    "jis": "435e",
+    "character": "筑"
+  },
+  {
+    "jis": "435f",
+    "character": "蓄"
+  },
+  {
+    "jis": "4360",
+    "character": "逐"
+  },
+  {
+    "jis": "4361",
+    "character": "秩"
+  },
+  {
+    "jis": "4362",
+    "character": "窒"
+  },
+  {
+    "jis": "4363",
+    "character": "茶"
+  },
+  {
+    "jis": "4364",
+    "character": "嫡"
+  },
+  {
+    "jis": "4365",
+    "character": "着"
+  },
+  {
+    "jis": "4366",
+    "character": "中"
+  },
+  {
+    "jis": "4367",
+    "character": "仲"
+  },
+  {
+    "jis": "4368",
+    "character": "宙"
+  },
+  {
+    "jis": "4369",
+    "character": "忠"
+  },
+  {
+    "jis": "436a",
+    "character": "抽"
+  },
+  {
+    "jis": "436b",
+    "character": "昼"
+  },
+  {
+    "jis": "436c",
+    "character": "柱"
+  },
+  {
+    "jis": "436d",
+    "character": "注"
+  },
+  {
+    "jis": "436e",
+    "character": "虫"
+  },
+  {
+    "jis": "436f",
+    "character": "衷"
+  },
+  {
+    "jis": "4370",
+    "character": "註"
+  },
+  {
+    "jis": "4371",
+    "character": "酎"
+  },
+  {
+    "jis": "4372",
+    "character": "鋳"
+  },
+  {
+    "jis": "4373",
+    "character": "駐"
+  },
+  {
+    "jis": "4374",
+    "character": "樗"
+  },
+  {
+    "jis": "4375",
+    "character": "瀦"
+  },
+  {
+    "jis": "4376",
+    "character": "猪"
+  },
+  {
+    "jis": "4377",
+    "character": "苧"
+  },
+  {
+    "jis": "4378",
+    "character": "著"
+  },
+  {
+    "jis": "4379",
+    "character": "貯"
+  },
+  {
+    "jis": "437a",
+    "character": "丁"
+  },
+  {
+    "jis": "437b",
+    "character": "兆"
+  },
+  {
+    "jis": "437c",
+    "character": "凋"
+  },
+  {
+    "jis": "437d",
+    "character": "喋"
+  },
+  {
+    "jis": "437e",
+    "character": "寵"
+  },
+  {
+    "jis": "4421",
+    "character": "帖"
+  },
+  {
+    "jis": "4422",
+    "character": "帳"
+  },
+  {
+    "jis": "4423",
+    "character": "庁"
+  },
+  {
+    "jis": "4424",
+    "character": "弔"
+  },
+  {
+    "jis": "4425",
+    "character": "張"
+  },
+  {
+    "jis": "4426",
+    "character": "彫"
+  },
+  {
+    "jis": "4427",
+    "character": "徴"
+  },
+  {
+    "jis": "4428",
+    "character": "懲"
+  },
+  {
+    "jis": "4429",
+    "character": "挑"
+  },
+  {
+    "jis": "442a",
+    "character": "暢"
+  },
+  {
+    "jis": "442b",
+    "character": "朝"
+  },
+  {
+    "jis": "442c",
+    "character": "潮"
+  },
+  {
+    "jis": "442d",
+    "character": "牒"
+  },
+  {
+    "jis": "442e",
+    "character": "町"
+  },
+  {
+    "jis": "442f",
+    "character": "眺"
+  },
+  {
+    "jis": "4430",
+    "character": "聴"
+  },
+  {
+    "jis": "4431",
+    "character": "脹"
+  },
+  {
+    "jis": "4432",
+    "character": "腸"
+  },
+  {
+    "jis": "4433",
+    "character": "蝶"
+  },
+  {
+    "jis": "4434",
+    "character": "調"
+  },
+  {
+    "jis": "4435",
+    "character": "諜"
+  },
+  {
+    "jis": "4436",
+    "character": "超"
+  },
+  {
+    "jis": "4437",
+    "character": "跳"
+  },
+  {
+    "jis": "4438",
+    "character": "銚"
+  },
+  {
+    "jis": "4439",
+    "character": "長"
+  },
+  {
+    "jis": "443a",
+    "character": "頂"
+  },
+  {
+    "jis": "443b",
+    "character": "鳥"
+  },
+  {
+    "jis": "443c",
+    "character": "勅"
+  },
+  {
+    "jis": "443d",
+    "character": "捗"
+  },
+  {
+    "jis": "443e",
+    "character": "直"
+  },
+  {
+    "jis": "443f",
+    "character": "朕"
+  },
+  {
+    "jis": "4440",
+    "character": "沈"
+  },
+  {
+    "jis": "4441",
+    "character": "珍"
+  },
+  {
+    "jis": "4442",
+    "character": "賃"
+  },
+  {
+    "jis": "4443",
+    "character": "鎮"
+  },
+  {
+    "jis": "4444",
+    "character": "陳"
+  },
+  {
+    "jis": "4445",
+    "character": "津"
+  },
+  {
+    "jis": "4446",
+    "character": "墜"
+  },
+  {
+    "jis": "4447",
+    "character": "椎"
+  },
+  {
+    "jis": "4448",
+    "character": "槌"
+  },
+  {
+    "jis": "4449",
+    "character": "追"
+  },
+  {
+    "jis": "444a",
+    "character": "鎚"
+  },
+  {
+    "jis": "444b",
+    "character": "痛"
+  },
+  {
+    "jis": "444c",
+    "character": "通"
+  },
+  {
+    "jis": "444d",
+    "character": "塚"
+  },
+  {
+    "jis": "444e",
+    "character": "栂"
+  },
+  {
+    "jis": "444f",
+    "character": "掴"
+  },
+  {
+    "jis": "4450",
+    "character": "槻"
+  },
+  {
+    "jis": "4451",
+    "character": "佃"
+  },
+  {
+    "jis": "4452",
+    "character": "漬"
+  },
+  {
+    "jis": "4453",
+    "character": "柘"
+  },
+  {
+    "jis": "4454",
+    "character": "辻"
+  },
+  {
+    "jis": "4455",
+    "character": "蔦"
+  },
+  {
+    "jis": "4456",
+    "character": "綴"
+  },
+  {
+    "jis": "4457",
+    "character": "鍔"
+  },
+  {
+    "jis": "4458",
+    "character": "椿"
+  },
+  {
+    "jis": "4459",
+    "character": "潰"
+  },
+  {
+    "jis": "445a",
+    "character": "坪"
+  },
+  {
+    "jis": "445b",
+    "character": "壷"
+  },
+  {
+    "jis": "445c",
+    "character": "嬬"
+  },
+  {
+    "jis": "445d",
+    "character": "紬"
+  },
+  {
+    "jis": "445e",
+    "character": "爪"
+  },
+  {
+    "jis": "445f",
+    "character": "吊"
+  },
+  {
+    "jis": "4460",
+    "character": "釣"
+  },
+  {
+    "jis": "4461",
+    "character": "鶴"
+  },
+  {
+    "jis": "4462",
+    "character": "亭"
+  },
+  {
+    "jis": "4463",
+    "character": "低"
+  },
+  {
+    "jis": "4464",
+    "character": "停"
+  },
+  {
+    "jis": "4465",
+    "character": "偵"
+  },
+  {
+    "jis": "4466",
+    "character": "剃"
+  },
+  {
+    "jis": "4467",
+    "character": "貞"
+  },
+  {
+    "jis": "4468",
+    "character": "呈"
+  },
+  {
+    "jis": "4469",
+    "character": "堤"
+  },
+  {
+    "jis": "446a",
+    "character": "定"
+  },
+  {
+    "jis": "446b",
+    "character": "帝"
+  },
+  {
+    "jis": "446c",
+    "character": "底"
+  },
+  {
+    "jis": "446d",
+    "character": "庭"
+  },
+  {
+    "jis": "446e",
+    "character": "廷"
+  },
+  {
+    "jis": "446f",
+    "character": "弟"
+  },
+  {
+    "jis": "4470",
+    "character": "悌"
+  },
+  {
+    "jis": "4471",
+    "character": "抵"
+  },
+  {
+    "jis": "4472",
+    "character": "挺"
+  },
+  {
+    "jis": "4473",
+    "character": "提"
+  },
+  {
+    "jis": "4474",
+    "character": "梯"
+  },
+  {
+    "jis": "4475",
+    "character": "汀"
+  },
+  {
+    "jis": "4476",
+    "character": "碇"
+  },
+  {
+    "jis": "4477",
+    "character": "禎"
+  },
+  {
+    "jis": "4478",
+    "character": "程"
+  },
+  {
+    "jis": "4479",
+    "character": "締"
+  },
+  {
+    "jis": "447a",
+    "character": "艇"
+  },
+  {
+    "jis": "447b",
+    "character": "訂"
+  },
+  {
+    "jis": "447c",
+    "character": "諦"
+  },
+  {
+    "jis": "447d",
+    "character": "蹄"
+  },
+  {
+    "jis": "447e",
+    "character": "逓"
+  },
+  {
+    "jis": "4521",
+    "character": "邸"
+  },
+  {
+    "jis": "4522",
+    "character": "鄭"
+  },
+  {
+    "jis": "4523",
+    "character": "釘"
+  },
+  {
+    "jis": "4524",
+    "character": "鼎"
+  },
+  {
+    "jis": "4525",
+    "character": "泥"
+  },
+  {
+    "jis": "4526",
+    "character": "摘"
+  },
+  {
+    "jis": "4527",
+    "character": "擢"
+  },
+  {
+    "jis": "4528",
+    "character": "敵"
+  },
+  {
+    "jis": "4529",
+    "character": "滴"
+  },
+  {
+    "jis": "452a",
+    "character": "的"
+  },
+  {
+    "jis": "452b",
+    "character": "笛"
+  },
+  {
+    "jis": "452c",
+    "character": "適"
+  },
+  {
+    "jis": "452d",
+    "character": "鏑"
+  },
+  {
+    "jis": "452e",
+    "character": "溺"
+  },
+  {
+    "jis": "452f",
+    "character": "哲"
+  },
+  {
+    "jis": "4530",
+    "character": "徹"
+  },
+  {
+    "jis": "4531",
+    "character": "撤"
+  },
+  {
+    "jis": "4532",
+    "character": "轍"
+  },
+  {
+    "jis": "4533",
+    "character": "迭"
+  },
+  {
+    "jis": "4534",
+    "character": "鉄"
+  },
+  {
+    "jis": "4535",
+    "character": "典"
+  },
+  {
+    "jis": "4536",
+    "character": "填"
+  },
+  {
+    "jis": "4537",
+    "character": "天"
+  },
+  {
+    "jis": "4538",
+    "character": "展"
+  },
+  {
+    "jis": "4539",
+    "character": "店"
+  },
+  {
+    "jis": "453a",
+    "character": "添"
+  },
+  {
+    "jis": "453b",
+    "character": "纏"
+  },
+  {
+    "jis": "453c",
+    "character": "甜"
+  },
+  {
+    "jis": "453d",
+    "character": "貼"
+  },
+  {
+    "jis": "453e",
+    "character": "転"
+  },
+  {
+    "jis": "453f",
+    "character": "顛"
+  },
+  {
+    "jis": "4540",
+    "character": "点"
+  },
+  {
+    "jis": "4541",
+    "character": "伝"
+  },
+  {
+    "jis": "4542",
+    "character": "殿"
+  },
+  {
+    "jis": "4543",
+    "character": "澱"
+  },
+  {
+    "jis": "4544",
+    "character": "田"
+  },
+  {
+    "jis": "4545",
+    "character": "電"
+  },
+  {
+    "jis": "4546",
+    "character": "兎"
+  },
+  {
+    "jis": "4547",
+    "character": "吐"
+  },
+  {
+    "jis": "4548",
+    "character": "堵"
+  },
+  {
+    "jis": "4549",
+    "character": "塗"
+  },
+  {
+    "jis": "454a",
+    "character": "妬"
+  },
+  {
+    "jis": "454b",
+    "character": "屠"
+  },
+  {
+    "jis": "454c",
+    "character": "徒"
+  },
+  {
+    "jis": "454d",
+    "character": "斗"
+  },
+  {
+    "jis": "454e",
+    "character": "杜"
+  },
+  {
+    "jis": "454f",
+    "character": "渡"
+  },
+  {
+    "jis": "4550",
+    "character": "登"
+  },
+  {
+    "jis": "4551",
+    "character": "菟"
+  },
+  {
+    "jis": "4552",
+    "character": "賭"
+  },
+  {
+    "jis": "4553",
+    "character": "途"
+  },
+  {
+    "jis": "4554",
+    "character": "都"
+  },
+  {
+    "jis": "4555",
+    "character": "鍍"
+  },
+  {
+    "jis": "4556",
+    "character": "砥"
+  },
+  {
+    "jis": "4557",
+    "character": "砺"
+  },
+  {
+    "jis": "4558",
+    "character": "努"
+  },
+  {
+    "jis": "4559",
+    "character": "度"
+  },
+  {
+    "jis": "455a",
+    "character": "土"
+  },
+  {
+    "jis": "455b",
+    "character": "奴"
+  },
+  {
+    "jis": "455c",
+    "character": "怒"
+  },
+  {
+    "jis": "455d",
+    "character": "倒"
+  },
+  {
+    "jis": "455e",
+    "character": "党"
+  },
+  {
+    "jis": "455f",
+    "character": "冬"
+  },
+  {
+    "jis": "4560",
+    "character": "凍"
+  },
+  {
+    "jis": "4561",
+    "character": "刀"
+  },
+  {
+    "jis": "4562",
+    "character": "唐"
+  },
+  {
+    "jis": "4563",
+    "character": "塔"
+  },
+  {
+    "jis": "4564",
+    "character": "塘"
+  },
+  {
+    "jis": "4565",
+    "character": "套"
+  },
+  {
+    "jis": "4566",
+    "character": "宕"
+  },
+  {
+    "jis": "4567",
+    "character": "島"
+  },
+  {
+    "jis": "4568",
+    "character": "嶋"
+  },
+  {
+    "jis": "4569",
+    "character": "悼"
+  },
+  {
+    "jis": "456a",
+    "character": "投"
+  },
+  {
+    "jis": "456b",
+    "character": "搭"
+  },
+  {
+    "jis": "456c",
+    "character": "東"
+  },
+  {
+    "jis": "456d",
+    "character": "桃"
+  },
+  {
+    "jis": "456e",
+    "character": "梼"
+  },
+  {
+    "jis": "456f",
+    "character": "棟"
+  },
+  {
+    "jis": "4570",
+    "character": "盗"
+  },
+  {
+    "jis": "4571",
+    "character": "淘"
+  },
+  {
+    "jis": "4572",
+    "character": "湯"
+  },
+  {
+    "jis": "4573",
+    "character": "涛"
+  },
+  {
+    "jis": "4574",
+    "character": "灯"
+  },
+  {
+    "jis": "4575",
+    "character": "燈"
+  },
+  {
+    "jis": "4576",
+    "character": "当"
+  },
+  {
+    "jis": "4577",
+    "character": "痘"
+  },
+  {
+    "jis": "4578",
+    "character": "祷"
+  },
+  {
+    "jis": "4579",
+    "character": "等"
+  },
+  {
+    "jis": "457a",
+    "character": "答"
+  },
+  {
+    "jis": "457b",
+    "character": "筒"
+  },
+  {
+    "jis": "457c",
+    "character": "糖"
+  },
+  {
+    "jis": "457d",
+    "character": "統"
+  },
+  {
+    "jis": "457e",
+    "character": "到"
+  },
+  {
+    "jis": "4621",
+    "character": "董"
+  },
+  {
+    "jis": "4622",
+    "character": "蕩"
+  },
+  {
+    "jis": "4623",
+    "character": "藤"
+  },
+  {
+    "jis": "4624",
+    "character": "討"
+  },
+  {
+    "jis": "4625",
+    "character": "謄"
+  },
+  {
+    "jis": "4626",
+    "character": "豆"
+  },
+  {
+    "jis": "4627",
+    "character": "踏"
+  },
+  {
+    "jis": "4628",
+    "character": "逃"
+  },
+  {
+    "jis": "4629",
+    "character": "透"
+  },
+  {
+    "jis": "462a",
+    "character": "鐙"
+  },
+  {
+    "jis": "462b",
+    "character": "陶"
+  },
+  {
+    "jis": "462c",
+    "character": "頭"
+  },
+  {
+    "jis": "462d",
+    "character": "騰"
+  },
+  {
+    "jis": "462e",
+    "character": "闘"
+  },
+  {
+    "jis": "462f",
+    "character": "働"
+  },
+  {
+    "jis": "4630",
+    "character": "動"
+  },
+  {
+    "jis": "4631",
+    "character": "同"
+  },
+  {
+    "jis": "4632",
+    "character": "堂"
+  },
+  {
+    "jis": "4633",
+    "character": "導"
+  },
+  {
+    "jis": "4634",
+    "character": "憧"
+  },
+  {
+    "jis": "4635",
+    "character": "撞"
+  },
+  {
+    "jis": "4636",
+    "character": "洞"
+  },
+  {
+    "jis": "4637",
+    "character": "瞳"
+  },
+  {
+    "jis": "4638",
+    "character": "童"
+  },
+  {
+    "jis": "4639",
+    "character": "胴"
+  },
+  {
+    "jis": "463a",
+    "character": "萄"
+  },
+  {
+    "jis": "463b",
+    "character": "道"
+  },
+  {
+    "jis": "463c",
+    "character": "銅"
+  },
+  {
+    "jis": "463d",
+    "character": "峠"
+  },
+  {
+    "jis": "463e",
+    "character": "鴇"
+  },
+  {
+    "jis": "463f",
+    "character": "匿"
+  },
+  {
+    "jis": "4640",
+    "character": "得"
+  },
+  {
+    "jis": "4641",
+    "character": "徳"
+  },
+  {
+    "jis": "4642",
+    "character": "涜"
+  },
+  {
+    "jis": "4643",
+    "character": "特"
+  },
+  {
+    "jis": "4644",
+    "character": "督"
+  },
+  {
+    "jis": "4645",
+    "character": "禿"
+  },
+  {
+    "jis": "4646",
+    "character": "篤"
+  },
+  {
+    "jis": "4647",
+    "character": "毒"
+  },
+  {
+    "jis": "4648",
+    "character": "独"
+  },
+  {
+    "jis": "4649",
+    "character": "読"
+  },
+  {
+    "jis": "464a",
+    "character": "栃"
+  },
+  {
+    "jis": "464b",
+    "character": "橡"
+  },
+  {
+    "jis": "464c",
+    "character": "凸"
+  },
+  {
+    "jis": "464d",
+    "character": "突"
+  },
+  {
+    "jis": "464e",
+    "character": "椴"
+  },
+  {
+    "jis": "464f",
+    "character": "届"
+  },
+  {
+    "jis": "4650",
+    "character": "鳶"
+  },
+  {
+    "jis": "4651",
+    "character": "苫"
+  },
+  {
+    "jis": "4652",
+    "character": "寅"
+  },
+  {
+    "jis": "4653",
+    "character": "酉"
+  },
+  {
+    "jis": "4654",
+    "character": "瀞"
+  },
+  {
+    "jis": "4655",
+    "character": "噸"
+  },
+  {
+    "jis": "4656",
+    "character": "屯"
+  },
+  {
+    "jis": "4657",
+    "character": "惇"
+  },
+  {
+    "jis": "4658",
+    "character": "敦"
+  },
+  {
+    "jis": "4659",
+    "character": "沌"
+  },
+  {
+    "jis": "465a",
+    "character": "豚"
+  },
+  {
+    "jis": "465b",
+    "character": "遁"
+  },
+  {
+    "jis": "465c",
+    "character": "頓"
+  },
+  {
+    "jis": "465d",
+    "character": "呑"
+  },
+  {
+    "jis": "465e",
+    "character": "曇"
+  },
+  {
+    "jis": "465f",
+    "character": "鈍"
+  },
+  {
+    "jis": "4660",
+    "character": "奈"
+  },
+  {
+    "jis": "4661",
+    "character": "那"
+  },
+  {
+    "jis": "4662",
+    "character": "内"
+  },
+  {
+    "jis": "4663",
+    "character": "乍"
+  },
+  {
+    "jis": "4664",
+    "character": "凪"
+  },
+  {
+    "jis": "4665",
+    "character": "薙"
+  },
+  {
+    "jis": "4666",
+    "character": "謎"
+  },
+  {
+    "jis": "4667",
+    "character": "灘"
+  },
+  {
+    "jis": "4668",
+    "character": "捺"
+  },
+  {
+    "jis": "4669",
+    "character": "鍋"
+  },
+  {
+    "jis": "466a",
+    "character": "楢"
+  },
+  {
+    "jis": "466b",
+    "character": "馴"
+  },
+  {
+    "jis": "466c",
+    "character": "縄"
+  },
+  {
+    "jis": "466d",
+    "character": "畷"
+  },
+  {
+    "jis": "466e",
+    "character": "南"
+  },
+  {
+    "jis": "466f",
+    "character": "楠"
+  },
+  {
+    "jis": "4670",
+    "character": "軟"
+  },
+  {
+    "jis": "4671",
+    "character": "難"
+  },
+  {
+    "jis": "4672",
+    "character": "汝"
+  },
+  {
+    "jis": "4673",
+    "character": "二"
+  },
+  {
+    "jis": "4674",
+    "character": "尼"
+  },
+  {
+    "jis": "4675",
+    "character": "弐"
+  },
+  {
+    "jis": "4676",
+    "character": "迩"
+  },
+  {
+    "jis": "4677",
+    "character": "匂"
+  },
+  {
+    "jis": "4678",
+    "character": "賑"
+  },
+  {
+    "jis": "4679",
+    "character": "肉"
+  },
+  {
+    "jis": "467a",
+    "character": "虹"
+  },
+  {
+    "jis": "467b",
+    "character": "廿"
+  },
+  {
+    "jis": "467c",
+    "character": "日"
+  },
+  {
+    "jis": "467d",
+    "character": "乳"
+  },
+  {
+    "jis": "467e",
+    "character": "入"
+  },
+  {
+    "jis": "4721",
+    "character": "如"
+  },
+  {
+    "jis": "4722",
+    "character": "尿"
+  },
+  {
+    "jis": "4723",
+    "character": "韮"
+  },
+  {
+    "jis": "4724",
+    "character": "任"
+  },
+  {
+    "jis": "4725",
+    "character": "妊"
+  },
+  {
+    "jis": "4726",
+    "character": "忍"
+  },
+  {
+    "jis": "4727",
+    "character": "認"
+  },
+  {
+    "jis": "4728",
+    "character": "濡"
+  },
+  {
+    "jis": "4729",
+    "character": "禰"
+  },
+  {
+    "jis": "472a",
+    "character": "祢"
+  },
+  {
+    "jis": "472b",
+    "character": "寧"
+  },
+  {
+    "jis": "472c",
+    "character": "葱"
+  },
+  {
+    "jis": "472d",
+    "character": "猫"
+  },
+  {
+    "jis": "472e",
+    "character": "熱"
+  },
+  {
+    "jis": "472f",
+    "character": "年"
+  },
+  {
+    "jis": "4730",
+    "character": "念"
+  },
+  {
+    "jis": "4731",
+    "character": "捻"
+  },
+  {
+    "jis": "4732",
+    "character": "撚"
+  },
+  {
+    "jis": "4733",
+    "character": "燃"
+  },
+  {
+    "jis": "4734",
+    "character": "粘"
+  },
+  {
+    "jis": "4735",
+    "character": "乃"
+  },
+  {
+    "jis": "4736",
+    "character": "廼"
+  },
+  {
+    "jis": "4737",
+    "character": "之"
+  },
+  {
+    "jis": "4738",
+    "character": "埜"
+  },
+  {
+    "jis": "4739",
+    "character": "嚢"
+  },
+  {
+    "jis": "473a",
+    "character": "悩"
+  },
+  {
+    "jis": "473b",
+    "character": "濃"
+  },
+  {
+    "jis": "473c",
+    "character": "納"
+  },
+  {
+    "jis": "473d",
+    "character": "能"
+  },
+  {
+    "jis": "473e",
+    "character": "脳"
+  },
+  {
+    "jis": "473f",
+    "character": "膿"
+  },
+  {
+    "jis": "4740",
+    "character": "農"
+  },
+  {
+    "jis": "4741",
+    "character": "覗"
+  },
+  {
+    "jis": "4742",
+    "character": "蚤"
+  },
+  {
+    "jis": "4743",
+    "character": "巴"
+  },
+  {
+    "jis": "4744",
+    "character": "把"
+  },
+  {
+    "jis": "4745",
+    "character": "播"
+  },
+  {
+    "jis": "4746",
+    "character": "覇"
+  },
+  {
+    "jis": "4747",
+    "character": "杷"
+  },
+  {
+    "jis": "4748",
+    "character": "波"
+  },
+  {
+    "jis": "4749",
+    "character": "派"
+  },
+  {
+    "jis": "474a",
+    "character": "琶"
+  },
+  {
+    "jis": "474b",
+    "character": "破"
+  },
+  {
+    "jis": "474c",
+    "character": "婆"
+  },
+  {
+    "jis": "474d",
+    "character": "罵"
+  },
+  {
+    "jis": "474e",
+    "character": "芭"
+  },
+  {
+    "jis": "474f",
+    "character": "馬"
+  },
+  {
+    "jis": "4750",
+    "character": "俳"
+  },
+  {
+    "jis": "4751",
+    "character": "廃"
+  },
+  {
+    "jis": "4752",
+    "character": "拝"
+  },
+  {
+    "jis": "4753",
+    "character": "排"
+  },
+  {
+    "jis": "4754",
+    "character": "敗"
+  },
+  {
+    "jis": "4755",
+    "character": "杯"
+  },
+  {
+    "jis": "4756",
+    "character": "盃"
+  },
+  {
+    "jis": "4757",
+    "character": "牌"
+  },
+  {
+    "jis": "4758",
+    "character": "背"
+  },
+  {
+    "jis": "4759",
+    "character": "肺"
+  },
+  {
+    "jis": "475a",
+    "character": "輩"
+  },
+  {
+    "jis": "475b",
+    "character": "配"
+  },
+  {
+    "jis": "475c",
+    "character": "倍"
+  },
+  {
+    "jis": "475d",
+    "character": "培"
+  },
+  {
+    "jis": "475e",
+    "character": "媒"
+  },
+  {
+    "jis": "475f",
+    "character": "梅"
+  },
+  {
+    "jis": "4760",
+    "character": "楳"
+  },
+  {
+    "jis": "4761",
+    "character": "煤"
+  },
+  {
+    "jis": "4762",
+    "character": "狽"
+  },
+  {
+    "jis": "4763",
+    "character": "買"
+  },
+  {
+    "jis": "4764",
+    "character": "売"
+  },
+  {
+    "jis": "4765",
+    "character": "賠"
+  },
+  {
+    "jis": "4766",
+    "character": "陪"
+  },
+  {
+    "jis": "4767",
+    "character": "這"
+  },
+  {
+    "jis": "4768",
+    "character": "蝿"
+  },
+  {
+    "jis": "4769",
+    "character": "秤"
+  },
+  {
+    "jis": "476a",
+    "character": "矧"
+  },
+  {
+    "jis": "476b",
+    "character": "萩"
+  },
+  {
+    "jis": "476c",
+    "character": "伯"
+  },
+  {
+    "jis": "476d",
+    "character": "剥"
+  },
+  {
+    "jis": "476e",
+    "character": "博"
+  },
+  {
+    "jis": "476f",
+    "character": "拍"
+  },
+  {
+    "jis": "4770",
+    "character": "柏"
+  },
+  {
+    "jis": "4771",
+    "character": "泊"
+  },
+  {
+    "jis": "4772",
+    "character": "白"
+  },
+  {
+    "jis": "4773",
+    "character": "箔"
+  },
+  {
+    "jis": "4774",
+    "character": "粕"
+  },
+  {
+    "jis": "4775",
+    "character": "舶"
+  },
+  {
+    "jis": "4776",
+    "character": "薄"
+  },
+  {
+    "jis": "4777",
+    "character": "迫"
+  },
+  {
+    "jis": "4778",
+    "character": "曝"
+  },
+  {
+    "jis": "4779",
+    "character": "漠"
+  },
+  {
+    "jis": "477a",
+    "character": "爆"
+  },
+  {
+    "jis": "477b",
+    "character": "縛"
+  },
+  {
+    "jis": "477c",
+    "character": "莫"
+  },
+  {
+    "jis": "477d",
+    "character": "駁"
+  },
+  {
+    "jis": "477e",
+    "character": "麦"
+  },
+  {
+    "jis": "4821",
+    "character": "函"
+  },
+  {
+    "jis": "4822",
+    "character": "箱"
+  },
+  {
+    "jis": "4823",
+    "character": "硲"
+  },
+  {
+    "jis": "4824",
+    "character": "箸"
+  },
+  {
+    "jis": "4825",
+    "character": "肇"
+  },
+  {
+    "jis": "4826",
+    "character": "筈"
+  },
+  {
+    "jis": "4827",
+    "character": "櫨"
+  },
+  {
+    "jis": "4828",
+    "character": "幡"
+  },
+  {
+    "jis": "4829",
+    "character": "肌"
+  },
+  {
+    "jis": "482a",
+    "character": "畑"
+  },
+  {
+    "jis": "482b",
+    "character": "畠"
+  },
+  {
+    "jis": "482c",
+    "character": "八"
+  },
+  {
+    "jis": "482d",
+    "character": "鉢"
+  },
+  {
+    "jis": "482e",
+    "character": "溌"
+  },
+  {
+    "jis": "482f",
+    "character": "発"
+  },
+  {
+    "jis": "4830",
+    "character": "醗"
+  },
+  {
+    "jis": "4831",
+    "character": "髪"
+  },
+  {
+    "jis": "4832",
+    "character": "伐"
+  },
+  {
+    "jis": "4833",
+    "character": "罰"
+  },
+  {
+    "jis": "4834",
+    "character": "抜"
+  },
+  {
+    "jis": "4835",
+    "character": "筏"
+  },
+  {
+    "jis": "4836",
+    "character": "閥"
+  },
+  {
+    "jis": "4837",
+    "character": "鳩"
+  },
+  {
+    "jis": "4838",
+    "character": "噺"
+  },
+  {
+    "jis": "4839",
+    "character": "塙"
+  },
+  {
+    "jis": "483a",
+    "character": "蛤"
+  },
+  {
+    "jis": "483b",
+    "character": "隼"
+  },
+  {
+    "jis": "483c",
+    "character": "伴"
+  },
+  {
+    "jis": "483d",
+    "character": "判"
+  },
+  {
+    "jis": "483e",
+    "character": "半"
+  },
+  {
+    "jis": "483f",
+    "character": "反"
+  },
+  {
+    "jis": "4840",
+    "character": "叛"
+  },
+  {
+    "jis": "4841",
+    "character": "帆"
+  },
+  {
+    "jis": "4842",
+    "character": "搬"
+  },
+  {
+    "jis": "4843",
+    "character": "斑"
+  },
+  {
+    "jis": "4844",
+    "character": "板"
+  },
+  {
+    "jis": "4845",
+    "character": "氾"
+  },
+  {
+    "jis": "4846",
+    "character": "汎"
+  },
+  {
+    "jis": "4847",
+    "character": "版"
+  },
+  {
+    "jis": "4848",
+    "character": "犯"
+  },
+  {
+    "jis": "4849",
+    "character": "班"
+  },
+  {
+    "jis": "484a",
+    "character": "畔"
+  },
+  {
+    "jis": "484b",
+    "character": "繁"
+  },
+  {
+    "jis": "484c",
+    "character": "般"
+  },
+  {
+    "jis": "484d",
+    "character": "藩"
+  },
+  {
+    "jis": "484e",
+    "character": "販"
+  },
+  {
+    "jis": "484f",
+    "character": "範"
+  },
+  {
+    "jis": "4850",
+    "character": "釆"
+  },
+  {
+    "jis": "4851",
+    "character": "煩"
+  },
+  {
+    "jis": "4852",
+    "character": "頒"
+  },
+  {
+    "jis": "4853",
+    "character": "飯"
+  },
+  {
+    "jis": "4854",
+    "character": "挽"
+  },
+  {
+    "jis": "4855",
+    "character": "晩"
+  },
+  {
+    "jis": "4856",
+    "character": "番"
+  },
+  {
+    "jis": "4857",
+    "character": "盤"
+  },
+  {
+    "jis": "4858",
+    "character": "磐"
+  },
+  {
+    "jis": "4859",
+    "character": "蕃"
+  },
+  {
+    "jis": "485a",
+    "character": "蛮"
+  },
+  {
+    "jis": "485b",
+    "character": "匪"
+  },
+  {
+    "jis": "485c",
+    "character": "卑"
+  },
+  {
+    "jis": "485d",
+    "character": "否"
+  },
+  {
+    "jis": "485e",
+    "character": "妃"
+  },
+  {
+    "jis": "485f",
+    "character": "庇"
+  },
+  {
+    "jis": "4860",
+    "character": "彼"
+  },
+  {
+    "jis": "4861",
+    "character": "悲"
+  },
+  {
+    "jis": "4862",
+    "character": "扉"
+  },
+  {
+    "jis": "4863",
+    "character": "批"
+  },
+  {
+    "jis": "4864",
+    "character": "披"
+  },
+  {
+    "jis": "4865",
+    "character": "斐"
+  },
+  {
+    "jis": "4866",
+    "character": "比"
+  },
+  {
+    "jis": "4867",
+    "character": "泌"
+  },
+  {
+    "jis": "4868",
+    "character": "疲"
+  },
+  {
+    "jis": "4869",
+    "character": "皮"
+  },
+  {
+    "jis": "486a",
+    "character": "碑"
+  },
+  {
+    "jis": "486b",
+    "character": "秘"
+  },
+  {
+    "jis": "486c",
+    "character": "緋"
+  },
+  {
+    "jis": "486d",
+    "character": "罷"
+  },
+  {
+    "jis": "486e",
+    "character": "肥"
+  },
+  {
+    "jis": "486f",
+    "character": "被"
+  },
+  {
+    "jis": "4870",
+    "character": "誹"
+  },
+  {
+    "jis": "4871",
+    "character": "費"
+  },
+  {
+    "jis": "4872",
+    "character": "避"
+  },
+  {
+    "jis": "4873",
+    "character": "非"
+  },
+  {
+    "jis": "4874",
+    "character": "飛"
+  },
+  {
+    "jis": "4875",
+    "character": "樋"
+  },
+  {
+    "jis": "4876",
+    "character": "簸"
+  },
+  {
+    "jis": "4877",
+    "character": "備"
+  },
+  {
+    "jis": "4878",
+    "character": "尾"
+  },
+  {
+    "jis": "4879",
+    "character": "微"
+  },
+  {
+    "jis": "487a",
+    "character": "枇"
+  },
+  {
+    "jis": "487b",
+    "character": "毘"
+  },
+  {
+    "jis": "487c",
+    "character": "琵"
+  },
+  {
+    "jis": "487d",
+    "character": "眉"
+  },
+  {
+    "jis": "487e",
+    "character": "美"
+  },
+  {
+    "jis": "4921",
+    "character": "鼻"
+  },
+  {
+    "jis": "4922",
+    "character": "柊"
+  },
+  {
+    "jis": "4923",
+    "character": "稗"
+  },
+  {
+    "jis": "4924",
+    "character": "匹"
+  },
+  {
+    "jis": "4925",
+    "character": "疋"
+  },
+  {
+    "jis": "4926",
+    "character": "髭"
+  },
+  {
+    "jis": "4927",
+    "character": "彦"
+  },
+  {
+    "jis": "4928",
+    "character": "膝"
+  },
+  {
+    "jis": "4929",
+    "character": "菱"
+  },
+  {
+    "jis": "492a",
+    "character": "肘"
+  },
+  {
+    "jis": "492b",
+    "character": "弼"
+  },
+  {
+    "jis": "492c",
+    "character": "必"
+  },
+  {
+    "jis": "492d",
+    "character": "畢"
+  },
+  {
+    "jis": "492e",
+    "character": "筆"
+  },
+  {
+    "jis": "492f",
+    "character": "逼"
+  },
+  {
+    "jis": "4930",
+    "character": "桧"
+  },
+  {
+    "jis": "4931",
+    "character": "姫"
+  },
+  {
+    "jis": "4932",
+    "character": "媛"
+  },
+  {
+    "jis": "4933",
+    "character": "紐"
+  },
+  {
+    "jis": "4934",
+    "character": "百"
+  },
+  {
+    "jis": "4935",
+    "character": "謬"
+  },
+  {
+    "jis": "4936",
+    "character": "俵"
+  },
+  {
+    "jis": "4937",
+    "character": "彪"
+  },
+  {
+    "jis": "4938",
+    "character": "標"
+  },
+  {
+    "jis": "4939",
+    "character": "氷"
+  },
+  {
+    "jis": "493a",
+    "character": "漂"
+  },
+  {
+    "jis": "493b",
+    "character": "瓢"
+  },
+  {
+    "jis": "493c",
+    "character": "票"
+  },
+  {
+    "jis": "493d",
+    "character": "表"
+  },
+  {
+    "jis": "493e",
+    "character": "評"
+  },
+  {
+    "jis": "493f",
+    "character": "豹"
+  },
+  {
+    "jis": "4940",
+    "character": "廟"
+  },
+  {
+    "jis": "4941",
+    "character": "描"
+  },
+  {
+    "jis": "4942",
+    "character": "病"
+  },
+  {
+    "jis": "4943",
+    "character": "秒"
+  },
+  {
+    "jis": "4944",
+    "character": "苗"
+  },
+  {
+    "jis": "4945",
+    "character": "錨"
+  },
+  {
+    "jis": "4946",
+    "character": "鋲"
+  },
+  {
+    "jis": "4947",
+    "character": "蒜"
+  },
+  {
+    "jis": "4948",
+    "character": "蛭"
+  },
+  {
+    "jis": "4949",
+    "character": "鰭"
+  },
+  {
+    "jis": "494a",
+    "character": "品"
+  },
+  {
+    "jis": "494b",
+    "character": "彬"
+  },
+  {
+    "jis": "494c",
+    "character": "斌"
+  },
+  {
+    "jis": "494d",
+    "character": "浜"
+  },
+  {
+    "jis": "494e",
+    "character": "瀕"
+  },
+  {
+    "jis": "494f",
+    "character": "貧"
+  },
+  {
+    "jis": "4950",
+    "character": "賓"
+  },
+  {
+    "jis": "4951",
+    "character": "頻"
+  },
+  {
+    "jis": "4952",
+    "character": "敏"
+  },
+  {
+    "jis": "4953",
+    "character": "瓶"
+  },
+  {
+    "jis": "4954",
+    "character": "不"
+  },
+  {
+    "jis": "4955",
+    "character": "付"
+  },
+  {
+    "jis": "4956",
+    "character": "埠"
+  },
+  {
+    "jis": "4957",
+    "character": "夫"
+  },
+  {
+    "jis": "4958",
+    "character": "婦"
+  },
+  {
+    "jis": "4959",
+    "character": "富"
+  },
+  {
+    "jis": "495a",
+    "character": "冨"
+  },
+  {
+    "jis": "495b",
+    "character": "布"
+  },
+  {
+    "jis": "495c",
+    "character": "府"
+  },
+  {
+    "jis": "495d",
+    "character": "怖"
+  },
+  {
+    "jis": "495e",
+    "character": "扶"
+  },
+  {
+    "jis": "495f",
+    "character": "敷"
+  },
+  {
+    "jis": "4960",
+    "character": "斧"
+  },
+  {
+    "jis": "4961",
+    "character": "普"
+  },
+  {
+    "jis": "4962",
+    "character": "浮"
+  },
+  {
+    "jis": "4963",
+    "character": "父"
+  },
+  {
+    "jis": "4964",
+    "character": "符"
+  },
+  {
+    "jis": "4965",
+    "character": "腐"
+  },
+  {
+    "jis": "4966",
+    "character": "膚"
+  },
+  {
+    "jis": "4967",
+    "character": "芙"
+  },
+  {
+    "jis": "4968",
+    "character": "譜"
+  },
+  {
+    "jis": "4969",
+    "character": "負"
+  },
+  {
+    "jis": "496a",
+    "character": "賦"
+  },
+  {
+    "jis": "496b",
+    "character": "赴"
+  },
+  {
+    "jis": "496c",
+    "character": "阜"
+  },
+  {
+    "jis": "496d",
+    "character": "附"
+  },
+  {
+    "jis": "496e",
+    "character": "侮"
+  },
+  {
+    "jis": "496f",
+    "character": "撫"
+  },
+  {
+    "jis": "4970",
+    "character": "武"
+  },
+  {
+    "jis": "4971",
+    "character": "舞"
+  },
+  {
+    "jis": "4972",
+    "character": "葡"
+  },
+  {
+    "jis": "4973",
+    "character": "蕪"
+  },
+  {
+    "jis": "4974",
+    "character": "部"
+  },
+  {
+    "jis": "4975",
+    "character": "封"
+  },
+  {
+    "jis": "4976",
+    "character": "楓"
+  },
+  {
+    "jis": "4977",
+    "character": "風"
+  },
+  {
+    "jis": "4978",
+    "character": "葺"
+  },
+  {
+    "jis": "4979",
+    "character": "蕗"
+  },
+  {
+    "jis": "497a",
+    "character": "伏"
+  },
+  {
+    "jis": "497b",
+    "character": "副"
+  },
+  {
+    "jis": "497c",
+    "character": "復"
+  },
+  {
+    "jis": "497d",
+    "character": "幅"
+  },
+  {
+    "jis": "497e",
+    "character": "服"
+  },
+  {
+    "jis": "4a21",
+    "character": "福"
+  },
+  {
+    "jis": "4a22",
+    "character": "腹"
+  },
+  {
+    "jis": "4a23",
+    "character": "複"
+  },
+  {
+    "jis": "4a24",
+    "character": "覆"
+  },
+  {
+    "jis": "4a25",
+    "character": "淵"
+  },
+  {
+    "jis": "4a26",
+    "character": "弗"
+  },
+  {
+    "jis": "4a27",
+    "character": "払"
+  },
+  {
+    "jis": "4a28",
+    "character": "沸"
+  },
+  {
+    "jis": "4a29",
+    "character": "仏"
+  },
+  {
+    "jis": "4a2a",
+    "character": "物"
+  },
+  {
+    "jis": "4a2b",
+    "character": "鮒"
+  },
+  {
+    "jis": "4a2c",
+    "character": "分"
+  },
+  {
+    "jis": "4a2d",
+    "character": "吻"
+  },
+  {
+    "jis": "4a2e",
+    "character": "噴"
+  },
+  {
+    "jis": "4a2f",
+    "character": "墳"
+  },
+  {
+    "jis": "4a30",
+    "character": "憤"
+  },
+  {
+    "jis": "4a31",
+    "character": "扮"
+  },
+  {
+    "jis": "4a32",
+    "character": "焚"
+  },
+  {
+    "jis": "4a33",
+    "character": "奮"
+  },
+  {
+    "jis": "4a34",
+    "character": "粉"
+  },
+  {
+    "jis": "4a35",
+    "character": "糞"
+  },
+  {
+    "jis": "4a36",
+    "character": "紛"
+  },
+  {
+    "jis": "4a37",
+    "character": "雰"
+  },
+  {
+    "jis": "4a38",
+    "character": "文"
+  },
+  {
+    "jis": "4a39",
+    "character": "聞"
+  },
+  {
+    "jis": "4a3a",
+    "character": "丙"
+  },
+  {
+    "jis": "4a3b",
+    "character": "併"
+  },
+  {
+    "jis": "4a3c",
+    "character": "兵"
+  },
+  {
+    "jis": "4a3d",
+    "character": "塀"
+  },
+  {
+    "jis": "4a3e",
+    "character": "幣"
+  },
+  {
+    "jis": "4a3f",
+    "character": "平"
+  },
+  {
+    "jis": "4a40",
+    "character": "弊"
+  },
+  {
+    "jis": "4a41",
+    "character": "柄"
+  },
+  {
+    "jis": "4a42",
+    "character": "並"
+  },
+  {
+    "jis": "4a43",
+    "character": "蔽"
+  },
+  {
+    "jis": "4a44",
+    "character": "閉"
+  },
+  {
+    "jis": "4a45",
+    "character": "陛"
+  },
+  {
+    "jis": "4a46",
+    "character": "米"
+  },
+  {
+    "jis": "4a47",
+    "character": "頁"
+  },
+  {
+    "jis": "4a48",
+    "character": "僻"
+  },
+  {
+    "jis": "4a49",
+    "character": "壁"
+  },
+  {
+    "jis": "4a4a",
+    "character": "癖"
+  },
+  {
+    "jis": "4a4b",
+    "character": "碧"
+  },
+  {
+    "jis": "4a4c",
+    "character": "別"
+  },
+  {
+    "jis": "4a4d",
+    "character": "瞥"
+  },
+  {
+    "jis": "4a4e",
+    "character": "蔑"
+  },
+  {
+    "jis": "4a4f",
+    "character": "箆"
+  },
+  {
+    "jis": "4a50",
+    "character": "偏"
+  },
+  {
+    "jis": "4a51",
+    "character": "変"
+  },
+  {
+    "jis": "4a52",
+    "character": "片"
+  },
+  {
+    "jis": "4a53",
+    "character": "篇"
+  },
+  {
+    "jis": "4a54",
+    "character": "編"
+  },
+  {
+    "jis": "4a55",
+    "character": "辺"
+  },
+  {
+    "jis": "4a56",
+    "character": "返"
+  },
+  {
+    "jis": "4a57",
+    "character": "遍"
+  },
+  {
+    "jis": "4a58",
+    "character": "便"
+  },
+  {
+    "jis": "4a59",
+    "character": "勉"
+  },
+  {
+    "jis": "4a5a",
+    "character": "娩"
+  },
+  {
+    "jis": "4a5b",
+    "character": "弁"
+  },
+  {
+    "jis": "4a5c",
+    "character": "鞭"
+  },
+  {
+    "jis": "4a5d",
+    "character": "保"
+  },
+  {
+    "jis": "4a5e",
+    "character": "舗"
+  },
+  {
+    "jis": "4a5f",
+    "character": "鋪"
+  },
+  {
+    "jis": "4a60",
+    "character": "圃"
+  },
+  {
+    "jis": "4a61",
+    "character": "捕"
+  },
+  {
+    "jis": "4a62",
+    "character": "歩"
+  },
+  {
+    "jis": "4a63",
+    "character": "甫"
+  },
+  {
+    "jis": "4a64",
+    "character": "補"
+  },
+  {
+    "jis": "4a65",
+    "character": "輔"
+  },
+  {
+    "jis": "4a66",
+    "character": "穂"
+  },
+  {
+    "jis": "4a67",
+    "character": "募"
+  },
+  {
+    "jis": "4a68",
+    "character": "墓"
+  },
+  {
+    "jis": "4a69",
+    "character": "慕"
+  },
+  {
+    "jis": "4a6a",
+    "character": "戊"
+  },
+  {
+    "jis": "4a6b",
+    "character": "暮"
+  },
+  {
+    "jis": "4a6c",
+    "character": "母"
+  },
+  {
+    "jis": "4a6d",
+    "character": "簿"
+  },
+  {
+    "jis": "4a6e",
+    "character": "菩"
+  },
+  {
+    "jis": "4a6f",
+    "character": "倣"
+  },
+  {
+    "jis": "4a70",
+    "character": "俸"
+  },
+  {
+    "jis": "4a71",
+    "character": "包"
+  },
+  {
+    "jis": "4a72",
+    "character": "呆"
+  },
+  {
+    "jis": "4a73",
+    "character": "報"
+  },
+  {
+    "jis": "4a74",
+    "character": "奉"
+  },
+  {
+    "jis": "4a75",
+    "character": "宝"
+  },
+  {
+    "jis": "4a76",
+    "character": "峰"
+  },
+  {
+    "jis": "4a77",
+    "character": "峯"
+  },
+  {
+    "jis": "4a78",
+    "character": "崩"
+  },
+  {
+    "jis": "4a79",
+    "character": "庖"
+  },
+  {
+    "jis": "4a7a",
+    "character": "抱"
+  },
+  {
+    "jis": "4a7b",
+    "character": "捧"
+  },
+  {
+    "jis": "4a7c",
+    "character": "放"
+  },
+  {
+    "jis": "4a7d",
+    "character": "方"
+  },
+  {
+    "jis": "4a7e",
+    "character": "朋"
+  },
+  {
+    "jis": "4b21",
+    "character": "法"
+  },
+  {
+    "jis": "4b22",
+    "character": "泡"
+  },
+  {
+    "jis": "4b23",
+    "character": "烹"
+  },
+  {
+    "jis": "4b24",
+    "character": "砲"
+  },
+  {
+    "jis": "4b25",
+    "character": "縫"
+  },
+  {
+    "jis": "4b26",
+    "character": "胞"
+  },
+  {
+    "jis": "4b27",
+    "character": "芳"
+  },
+  {
+    "jis": "4b28",
+    "character": "萌"
+  },
+  {
+    "jis": "4b29",
+    "character": "蓬"
+  },
+  {
+    "jis": "4b2a",
+    "character": "蜂"
+  },
+  {
+    "jis": "4b2b",
+    "character": "褒"
+  },
+  {
+    "jis": "4b2c",
+    "character": "訪"
+  },
+  {
+    "jis": "4b2d",
+    "character": "豊"
+  },
+  {
+    "jis": "4b2e",
+    "character": "邦"
+  },
+  {
+    "jis": "4b2f",
+    "character": "鋒"
+  },
+  {
+    "jis": "4b30",
+    "character": "飽"
+  },
+  {
+    "jis": "4b31",
+    "character": "鳳"
+  },
+  {
+    "jis": "4b32",
+    "character": "鵬"
+  },
+  {
+    "jis": "4b33",
+    "character": "乏"
+  },
+  {
+    "jis": "4b34",
+    "character": "亡"
+  },
+  {
+    "jis": "4b35",
+    "character": "傍"
+  },
+  {
+    "jis": "4b36",
+    "character": "剖"
+  },
+  {
+    "jis": "4b37",
+    "character": "坊"
+  },
+  {
+    "jis": "4b38",
+    "character": "妨"
+  },
+  {
+    "jis": "4b39",
+    "character": "帽"
+  },
+  {
+    "jis": "4b3a",
+    "character": "忘"
+  },
+  {
+    "jis": "4b3b",
+    "character": "忙"
+  },
+  {
+    "jis": "4b3c",
+    "character": "房"
+  },
+  {
+    "jis": "4b3d",
+    "character": "暴"
+  },
+  {
+    "jis": "4b3e",
+    "character": "望"
+  },
+  {
+    "jis": "4b3f",
+    "character": "某"
+  },
+  {
+    "jis": "4b40",
+    "character": "棒"
+  },
+  {
+    "jis": "4b41",
+    "character": "冒"
+  },
+  {
+    "jis": "4b42",
+    "character": "紡"
+  },
+  {
+    "jis": "4b43",
+    "character": "肪"
+  },
+  {
+    "jis": "4b44",
+    "character": "膨"
+  },
+  {
+    "jis": "4b45",
+    "character": "謀"
+  },
+  {
+    "jis": "4b46",
+    "character": "貌"
+  },
+  {
+    "jis": "4b47",
+    "character": "貿"
+  },
+  {
+    "jis": "4b48",
+    "character": "鉾"
+  },
+  {
+    "jis": "4b49",
+    "character": "防"
+  },
+  {
+    "jis": "4b4a",
+    "character": "吠"
+  },
+  {
+    "jis": "4b4b",
+    "character": "頬"
+  },
+  {
+    "jis": "4b4c",
+    "character": "北"
+  },
+  {
+    "jis": "4b4d",
+    "character": "僕"
+  },
+  {
+    "jis": "4b4e",
+    "character": "卜"
+  },
+  {
+    "jis": "4b4f",
+    "character": "墨"
+  },
+  {
+    "jis": "4b50",
+    "character": "撲"
+  },
+  {
+    "jis": "4b51",
+    "character": "朴"
+  },
+  {
+    "jis": "4b52",
+    "character": "牧"
+  },
+  {
+    "jis": "4b53",
+    "character": "睦"
+  },
+  {
+    "jis": "4b54",
+    "character": "穆"
+  },
+  {
+    "jis": "4b55",
+    "character": "釦"
+  },
+  {
+    "jis": "4b56",
+    "character": "勃"
+  },
+  {
+    "jis": "4b57",
+    "character": "没"
+  },
+  {
+    "jis": "4b58",
+    "character": "殆"
+  },
+  {
+    "jis": "4b59",
+    "character": "堀"
+  },
+  {
+    "jis": "4b5a",
+    "character": "幌"
+  },
+  {
+    "jis": "4b5b",
+    "character": "奔"
+  },
+  {
+    "jis": "4b5c",
+    "character": "本"
+  },
+  {
+    "jis": "4b5d",
+    "character": "翻"
+  },
+  {
+    "jis": "4b5e",
+    "character": "凡"
+  },
+  {
+    "jis": "4b5f",
+    "character": "盆"
+  },
+  {
+    "jis": "4b60",
+    "character": "摩"
+  },
+  {
+    "jis": "4b61",
+    "character": "磨"
+  },
+  {
+    "jis": "4b62",
+    "character": "魔"
+  },
+  {
+    "jis": "4b63",
+    "character": "麻"
+  },
+  {
+    "jis": "4b64",
+    "character": "埋"
+  },
+  {
+    "jis": "4b65",
+    "character": "妹"
+  },
+  {
+    "jis": "4b66",
+    "character": "昧"
+  },
+  {
+    "jis": "4b67",
+    "character": "枚"
+  },
+  {
+    "jis": "4b68",
+    "character": "毎"
+  },
+  {
+    "jis": "4b69",
+    "character": "哩"
+  },
+  {
+    "jis": "4b6a",
+    "character": "槙"
+  },
+  {
+    "jis": "4b6b",
+    "character": "幕"
+  },
+  {
+    "jis": "4b6c",
+    "character": "膜"
+  },
+  {
+    "jis": "4b6d",
+    "character": "枕"
+  },
+  {
+    "jis": "4b6e",
+    "character": "鮪"
+  },
+  {
+    "jis": "4b6f",
+    "character": "柾"
+  },
+  {
+    "jis": "4b70",
+    "character": "鱒"
+  },
+  {
+    "jis": "4b71",
+    "character": "桝"
+  },
+  {
+    "jis": "4b72",
+    "character": "亦"
+  },
+  {
+    "jis": "4b73",
+    "character": "俣"
+  },
+  {
+    "jis": "4b74",
+    "character": "又"
+  },
+  {
+    "jis": "4b75",
+    "character": "抹"
+  },
+  {
+    "jis": "4b76",
+    "character": "末"
+  },
+  {
+    "jis": "4b77",
+    "character": "沫"
+  },
+  {
+    "jis": "4b78",
+    "character": "迄"
+  },
+  {
+    "jis": "4b79",
+    "character": "侭"
+  },
+  {
+    "jis": "4b7a",
+    "character": "繭"
+  },
+  {
+    "jis": "4b7b",
+    "character": "麿"
+  },
+  {
+    "jis": "4b7c",
+    "character": "万"
+  },
+  {
+    "jis": "4b7d",
+    "character": "慢"
+  },
+  {
+    "jis": "4b7e",
+    "character": "満"
+  },
+  {
+    "jis": "4c21",
+    "character": "漫"
+  },
+  {
+    "jis": "4c22",
+    "character": "蔓"
+  },
+  {
+    "jis": "4c23",
+    "character": "味"
+  },
+  {
+    "jis": "4c24",
+    "character": "未"
+  },
+  {
+    "jis": "4c25",
+    "character": "魅"
+  },
+  {
+    "jis": "4c26",
+    "character": "巳"
+  },
+  {
+    "jis": "4c27",
+    "character": "箕"
+  },
+  {
+    "jis": "4c28",
+    "character": "岬"
+  },
+  {
+    "jis": "4c29",
+    "character": "密"
+  },
+  {
+    "jis": "4c2a",
+    "character": "蜜"
+  },
+  {
+    "jis": "4c2b",
+    "character": "湊"
+  },
+  {
+    "jis": "4c2c",
+    "character": "蓑"
+  },
+  {
+    "jis": "4c2d",
+    "character": "稔"
+  },
+  {
+    "jis": "4c2e",
+    "character": "脈"
+  },
+  {
+    "jis": "4c2f",
+    "character": "妙"
+  },
+  {
+    "jis": "4c30",
+    "character": "粍"
+  },
+  {
+    "jis": "4c31",
+    "character": "民"
+  },
+  {
+    "jis": "4c32",
+    "character": "眠"
+  },
+  {
+    "jis": "4c33",
+    "character": "務"
+  },
+  {
+    "jis": "4c34",
+    "character": "夢"
+  },
+  {
+    "jis": "4c35",
+    "character": "無"
+  },
+  {
+    "jis": "4c36",
+    "character": "牟"
+  },
+  {
+    "jis": "4c37",
+    "character": "矛"
+  },
+  {
+    "jis": "4c38",
+    "character": "霧"
+  },
+  {
+    "jis": "4c39",
+    "character": "鵡"
+  },
+  {
+    "jis": "4c3a",
+    "character": "椋"
+  },
+  {
+    "jis": "4c3b",
+    "character": "婿"
+  },
+  {
+    "jis": "4c3c",
+    "character": "娘"
+  },
+  {
+    "jis": "4c3d",
+    "character": "冥"
+  },
+  {
+    "jis": "4c3e",
+    "character": "名"
+  },
+  {
+    "jis": "4c3f",
+    "character": "命"
+  },
+  {
+    "jis": "4c40",
+    "character": "明"
+  },
+  {
+    "jis": "4c41",
+    "character": "盟"
+  },
+  {
+    "jis": "4c42",
+    "character": "迷"
+  },
+  {
+    "jis": "4c43",
+    "character": "銘"
+  },
+  {
+    "jis": "4c44",
+    "character": "鳴"
+  },
+  {
+    "jis": "4c45",
+    "character": "姪"
+  },
+  {
+    "jis": "4c46",
+    "character": "牝"
+  },
+  {
+    "jis": "4c47",
+    "character": "滅"
+  },
+  {
+    "jis": "4c48",
+    "character": "免"
+  },
+  {
+    "jis": "4c49",
+    "character": "棉"
+  },
+  {
+    "jis": "4c4a",
+    "character": "綿"
+  },
+  {
+    "jis": "4c4b",
+    "character": "緬"
+  },
+  {
+    "jis": "4c4c",
+    "character": "面"
+  },
+  {
+    "jis": "4c4d",
+    "character": "麺"
+  },
+  {
+    "jis": "4c4e",
+    "character": "摸"
+  },
+  {
+    "jis": "4c4f",
+    "character": "模"
+  },
+  {
+    "jis": "4c50",
+    "character": "茂"
+  },
+  {
+    "jis": "4c51",
+    "character": "妄"
+  },
+  {
+    "jis": "4c52",
+    "character": "孟"
+  },
+  {
+    "jis": "4c53",
+    "character": "毛"
+  },
+  {
+    "jis": "4c54",
+    "character": "猛"
+  },
+  {
+    "jis": "4c55",
+    "character": "盲"
+  },
+  {
+    "jis": "4c56",
+    "character": "網"
+  },
+  {
+    "jis": "4c57",
+    "character": "耗"
+  },
+  {
+    "jis": "4c58",
+    "character": "蒙"
+  },
+  {
+    "jis": "4c59",
+    "character": "儲"
+  },
+  {
+    "jis": "4c5a",
+    "character": "木"
+  },
+  {
+    "jis": "4c5b",
+    "character": "黙"
+  },
+  {
+    "jis": "4c5c",
+    "character": "目"
+  },
+  {
+    "jis": "4c5d",
+    "character": "杢"
+  },
+  {
+    "jis": "4c5e",
+    "character": "勿"
+  },
+  {
+    "jis": "4c5f",
+    "character": "餅"
+  },
+  {
+    "jis": "4c60",
+    "character": "尤"
+  },
+  {
+    "jis": "4c61",
+    "character": "戻"
+  },
+  {
+    "jis": "4c62",
+    "character": "籾"
+  },
+  {
+    "jis": "4c63",
+    "character": "貰"
+  },
+  {
+    "jis": "4c64",
+    "character": "問"
+  },
+  {
+    "jis": "4c65",
+    "character": "悶"
+  },
+  {
+    "jis": "4c66",
+    "character": "紋"
+  },
+  {
+    "jis": "4c67",
+    "character": "門"
+  },
+  {
+    "jis": "4c68",
+    "character": "匁"
+  },
+  {
+    "jis": "4c69",
+    "character": "也"
+  },
+  {
+    "jis": "4c6a",
+    "character": "冶"
+  },
+  {
+    "jis": "4c6b",
+    "character": "夜"
+  },
+  {
+    "jis": "4c6c",
+    "character": "爺"
+  },
+  {
+    "jis": "4c6d",
+    "character": "耶"
+  },
+  {
+    "jis": "4c6e",
+    "character": "野"
+  },
+  {
+    "jis": "4c6f",
+    "character": "弥"
+  },
+  {
+    "jis": "4c70",
+    "character": "矢"
+  },
+  {
+    "jis": "4c71",
+    "character": "厄"
+  },
+  {
+    "jis": "4c72",
+    "character": "役"
+  },
+  {
+    "jis": "4c73",
+    "character": "約"
+  },
+  {
+    "jis": "4c74",
+    "character": "薬"
+  },
+  {
+    "jis": "4c75",
+    "character": "訳"
+  },
+  {
+    "jis": "4c76",
+    "character": "躍"
+  },
+  {
+    "jis": "4c77",
+    "character": "靖"
+  },
+  {
+    "jis": "4c78",
+    "character": "柳"
+  },
+  {
+    "jis": "4c79",
+    "character": "薮"
+  },
+  {
+    "jis": "4c7a",
+    "character": "鑓"
+  },
+  {
+    "jis": "4c7b",
+    "character": "愉"
+  },
+  {
+    "jis": "4c7c",
+    "character": "愈"
+  },
+  {
+    "jis": "4c7d",
+    "character": "油"
+  },
+  {
+    "jis": "4c7e",
+    "character": "癒"
+  },
+  {
+    "jis": "4d21",
+    "character": "諭"
+  },
+  {
+    "jis": "4d22",
+    "character": "輸"
+  },
+  {
+    "jis": "4d23",
+    "character": "唯"
+  },
+  {
+    "jis": "4d24",
+    "character": "佑"
+  },
+  {
+    "jis": "4d25",
+    "character": "優"
+  },
+  {
+    "jis": "4d26",
+    "character": "勇"
+  },
+  {
+    "jis": "4d27",
+    "character": "友"
+  },
+  {
+    "jis": "4d28",
+    "character": "宥"
+  },
+  {
+    "jis": "4d29",
+    "character": "幽"
+  },
+  {
+    "jis": "4d2a",
+    "character": "悠"
+  },
+  {
+    "jis": "4d2b",
+    "character": "憂"
+  },
+  {
+    "jis": "4d2c",
+    "character": "揖"
+  },
+  {
+    "jis": "4d2d",
+    "character": "有"
+  },
+  {
+    "jis": "4d2e",
+    "character": "柚"
+  },
+  {
+    "jis": "4d2f",
+    "character": "湧"
+  },
+  {
+    "jis": "4d30",
+    "character": "涌"
+  },
+  {
+    "jis": "4d31",
+    "character": "猶"
+  },
+  {
+    "jis": "4d32",
+    "character": "猷"
+  },
+  {
+    "jis": "4d33",
+    "character": "由"
+  },
+  {
+    "jis": "4d34",
+    "character": "祐"
+  },
+  {
+    "jis": "4d35",
+    "character": "裕"
+  },
+  {
+    "jis": "4d36",
+    "character": "誘"
+  },
+  {
+    "jis": "4d37",
+    "character": "遊"
+  },
+  {
+    "jis": "4d38",
+    "character": "邑"
+  },
+  {
+    "jis": "4d39",
+    "character": "郵"
+  },
+  {
+    "jis": "4d3a",
+    "character": "雄"
+  },
+  {
+    "jis": "4d3b",
+    "character": "融"
+  },
+  {
+    "jis": "4d3c",
+    "character": "夕"
+  },
+  {
+    "jis": "4d3d",
+    "character": "予"
+  },
+  {
+    "jis": "4d3e",
+    "character": "余"
+  },
+  {
+    "jis": "4d3f",
+    "character": "与"
+  },
+  {
+    "jis": "4d40",
+    "character": "誉"
+  },
+  {
+    "jis": "4d41",
+    "character": "輿"
+  },
+  {
+    "jis": "4d42",
+    "character": "預"
+  },
+  {
+    "jis": "4d43",
+    "character": "傭"
+  },
+  {
+    "jis": "4d44",
+    "character": "幼"
+  },
+  {
+    "jis": "4d45",
+    "character": "妖"
+  },
+  {
+    "jis": "4d46",
+    "character": "容"
+  },
+  {
+    "jis": "4d47",
+    "character": "庸"
+  },
+  {
+    "jis": "4d48",
+    "character": "揚"
+  },
+  {
+    "jis": "4d49",
+    "character": "揺"
+  },
+  {
+    "jis": "4d4a",
+    "character": "擁"
+  },
+  {
+    "jis": "4d4b",
+    "character": "曜"
+  },
+  {
+    "jis": "4d4c",
+    "character": "楊"
+  },
+  {
+    "jis": "4d4d",
+    "character": "様"
+  },
+  {
+    "jis": "4d4e",
+    "character": "洋"
+  },
+  {
+    "jis": "4d4f",
+    "character": "溶"
+  },
+  {
+    "jis": "4d50",
+    "character": "熔"
+  },
+  {
+    "jis": "4d51",
+    "character": "用"
+  },
+  {
+    "jis": "4d52",
+    "character": "窯"
+  },
+  {
+    "jis": "4d53",
+    "character": "羊"
+  },
+  {
+    "jis": "4d54",
+    "character": "耀"
+  },
+  {
+    "jis": "4d55",
+    "character": "葉"
+  },
+  {
+    "jis": "4d56",
+    "character": "蓉"
+  },
+  {
+    "jis": "4d57",
+    "character": "要"
+  },
+  {
+    "jis": "4d58",
+    "character": "謡"
+  },
+  {
+    "jis": "4d59",
+    "character": "踊"
+  },
+  {
+    "jis": "4d5a",
+    "character": "遥"
+  },
+  {
+    "jis": "4d5b",
+    "character": "陽"
+  },
+  {
+    "jis": "4d5c",
+    "character": "養"
+  },
+  {
+    "jis": "4d5d",
+    "character": "慾"
+  },
+  {
+    "jis": "4d5e",
+    "character": "抑"
+  },
+  {
+    "jis": "4d5f",
+    "character": "欲"
+  },
+  {
+    "jis": "4d60",
+    "character": "沃"
+  },
+  {
+    "jis": "4d61",
+    "character": "浴"
+  },
+  {
+    "jis": "4d62",
+    "character": "翌"
+  },
+  {
+    "jis": "4d63",
+    "character": "翼"
+  },
+  {
+    "jis": "4d64",
+    "character": "淀"
+  },
+  {
+    "jis": "4d65",
+    "character": "羅"
+  },
+  {
+    "jis": "4d66",
+    "character": "螺"
+  },
+  {
+    "jis": "4d67",
+    "character": "裸"
+  },
+  {
+    "jis": "4d68",
+    "character": "来"
+  },
+  {
+    "jis": "4d69",
+    "character": "莱"
+  },
+  {
+    "jis": "4d6a",
+    "character": "頼"
+  },
+  {
+    "jis": "4d6b",
+    "character": "雷"
+  },
+  {
+    "jis": "4d6c",
+    "character": "洛"
+  },
+  {
+    "jis": "4d6d",
+    "character": "絡"
+  },
+  {
+    "jis": "4d6e",
+    "character": "落"
+  },
+  {
+    "jis": "4d6f",
+    "character": "酪"
+  },
+  {
+    "jis": "4d70",
+    "character": "乱"
+  },
+  {
+    "jis": "4d71",
+    "character": "卵"
+  },
+  {
+    "jis": "4d72",
+    "character": "嵐"
+  },
+  {
+    "jis": "4d73",
+    "character": "欄"
+  },
+  {
+    "jis": "4d74",
+    "character": "濫"
+  },
+  {
+    "jis": "4d75",
+    "character": "藍"
+  },
+  {
+    "jis": "4d76",
+    "character": "蘭"
+  },
+  {
+    "jis": "4d77",
+    "character": "覧"
+  },
+  {
+    "jis": "4d78",
+    "character": "利"
+  },
+  {
+    "jis": "4d79",
+    "character": "吏"
+  },
+  {
+    "jis": "4d7a",
+    "character": "履"
+  },
+  {
+    "jis": "4d7b",
+    "character": "李"
+  },
+  {
+    "jis": "4d7c",
+    "character": "梨"
+  },
+  {
+    "jis": "4d7d",
+    "character": "理"
+  },
+  {
+    "jis": "4d7e",
+    "character": "璃"
+  },
+  {
+    "jis": "4e21",
+    "character": "痢"
+  },
+  {
+    "jis": "4e22",
+    "character": "裏"
+  },
+  {
+    "jis": "4e23",
+    "character": "裡"
+  },
+  {
+    "jis": "4e24",
+    "character": "里"
+  },
+  {
+    "jis": "4e25",
+    "character": "離"
+  },
+  {
+    "jis": "4e26",
+    "character": "陸"
+  },
+  {
+    "jis": "4e27",
+    "character": "律"
+  },
+  {
+    "jis": "4e28",
+    "character": "率"
+  },
+  {
+    "jis": "4e29",
+    "character": "立"
+  },
+  {
+    "jis": "4e2a",
+    "character": "葎"
+  },
+  {
+    "jis": "4e2b",
+    "character": "掠"
+  },
+  {
+    "jis": "4e2c",
+    "character": "略"
+  },
+  {
+    "jis": "4e2d",
+    "character": "劉"
+  },
+  {
+    "jis": "4e2e",
+    "character": "流"
+  },
+  {
+    "jis": "4e2f",
+    "character": "溜"
+  },
+  {
+    "jis": "4e30",
+    "character": "琉"
+  },
+  {
+    "jis": "4e31",
+    "character": "留"
+  },
+  {
+    "jis": "4e32",
+    "character": "硫"
+  },
+  {
+    "jis": "4e33",
+    "character": "粒"
+  },
+  {
+    "jis": "4e34",
+    "character": "隆"
+  },
+  {
+    "jis": "4e35",
+    "character": "竜"
+  },
+  {
+    "jis": "4e36",
+    "character": "龍"
+  },
+  {
+    "jis": "4e37",
+    "character": "侶"
+  },
+  {
+    "jis": "4e38",
+    "character": "慮"
+  },
+  {
+    "jis": "4e39",
+    "character": "旅"
+  },
+  {
+    "jis": "4e3a",
+    "character": "虜"
+  },
+  {
+    "jis": "4e3b",
+    "character": "了"
+  },
+  {
+    "jis": "4e3c",
+    "character": "亮"
+  },
+  {
+    "jis": "4e3d",
+    "character": "僚"
+  },
+  {
+    "jis": "4e3e",
+    "character": "両"
+  },
+  {
+    "jis": "4e3f",
+    "character": "凌"
+  },
+  {
+    "jis": "4e40",
+    "character": "寮"
+  },
+  {
+    "jis": "4e41",
+    "character": "料"
+  },
+  {
+    "jis": "4e42",
+    "character": "梁"
+  },
+  {
+    "jis": "4e43",
+    "character": "涼"
+  },
+  {
+    "jis": "4e44",
+    "character": "猟"
+  },
+  {
+    "jis": "4e45",
+    "character": "療"
+  },
+  {
+    "jis": "4e46",
+    "character": "瞭"
+  },
+  {
+    "jis": "4e47",
+    "character": "稜"
+  },
+  {
+    "jis": "4e48",
+    "character": "糧"
+  },
+  {
+    "jis": "4e49",
+    "character": "良"
+  },
+  {
+    "jis": "4e4a",
+    "character": "諒"
+  },
+  {
+    "jis": "4e4b",
+    "character": "遼"
+  },
+  {
+    "jis": "4e4c",
+    "character": "量"
+  },
+  {
+    "jis": "4e4d",
+    "character": "陵"
+  },
+  {
+    "jis": "4e4e",
+    "character": "領"
+  },
+  {
+    "jis": "4e4f",
+    "character": "力"
+  },
+  {
+    "jis": "4e50",
+    "character": "緑"
+  },
+  {
+    "jis": "4e51",
+    "character": "倫"
+  },
+  {
+    "jis": "4e52",
+    "character": "厘"
+  },
+  {
+    "jis": "4e53",
+    "character": "林"
+  },
+  {
+    "jis": "4e54",
+    "character": "淋"
+  },
+  {
+    "jis": "4e55",
+    "character": "燐"
+  },
+  {
+    "jis": "4e56",
+    "character": "琳"
+  },
+  {
+    "jis": "4e57",
+    "character": "臨"
+  },
+  {
+    "jis": "4e58",
+    "character": "輪"
+  },
+  {
+    "jis": "4e59",
+    "character": "隣"
+  },
+  {
+    "jis": "4e5a",
+    "character": "鱗"
+  },
+  {
+    "jis": "4e5b",
+    "character": "麟"
+  },
+  {
+    "jis": "4e5c",
+    "character": "瑠"
+  },
+  {
+    "jis": "4e5d",
+    "character": "塁"
+  },
+  {
+    "jis": "4e5e",
+    "character": "涙"
+  },
+  {
+    "jis": "4e5f",
+    "character": "累"
+  },
+  {
+    "jis": "4e60",
+    "character": "類"
+  },
+  {
+    "jis": "4e61",
+    "character": "令"
+  },
+  {
+    "jis": "4e62",
+    "character": "伶"
+  },
+  {
+    "jis": "4e63",
+    "character": "例"
+  },
+  {
+    "jis": "4e64",
+    "character": "冷"
+  },
+  {
+    "jis": "4e65",
+    "character": "励"
+  },
+  {
+    "jis": "4e66",
+    "character": "嶺"
+  },
+  {
+    "jis": "4e67",
+    "character": "怜"
+  },
+  {
+    "jis": "4e68",
+    "character": "玲"
+  },
+  {
+    "jis": "4e69",
+    "character": "礼"
+  },
+  {
+    "jis": "4e6a",
+    "character": "苓"
+  },
+  {
+    "jis": "4e6b",
+    "character": "鈴"
+  },
+  {
+    "jis": "4e6c",
+    "character": "隷"
+  },
+  {
+    "jis": "4e6d",
+    "character": "零"
+  },
+  {
+    "jis": "4e6e",
+    "character": "霊"
+  },
+  {
+    "jis": "4e6f",
+    "character": "麗"
+  },
+  {
+    "jis": "4e70",
+    "character": "齢"
+  },
+  {
+    "jis": "4e71",
+    "character": "暦"
+  },
+  {
+    "jis": "4e72",
+    "character": "歴"
+  },
+  {
+    "jis": "4e73",
+    "character": "列"
+  },
+  {
+    "jis": "4e74",
+    "character": "劣"
+  },
+  {
+    "jis": "4e75",
+    "character": "烈"
+  },
+  {
+    "jis": "4e76",
+    "character": "裂"
+  },
+  {
+    "jis": "4e77",
+    "character": "廉"
+  },
+  {
+    "jis": "4e78",
+    "character": "恋"
+  },
+  {
+    "jis": "4e79",
+    "character": "憐"
+  },
+  {
+    "jis": "4e7a",
+    "character": "漣"
+  },
+  {
+    "jis": "4e7b",
+    "character": "煉"
+  },
+  {
+    "jis": "4e7c",
+    "character": "簾"
+  },
+  {
+    "jis": "4e7d",
+    "character": "練"
+  },
+  {
+    "jis": "4e7e",
+    "character": "聯"
+  },
+  {
+    "jis": "4f21",
+    "character": "蓮"
+  },
+  {
+    "jis": "4f22",
+    "character": "連"
+  },
+  {
+    "jis": "4f23",
+    "character": "錬"
+  },
+  {
+    "jis": "4f24",
+    "character": "呂"
+  },
+  {
+    "jis": "4f25",
+    "character": "魯"
+  },
+  {
+    "jis": "4f26",
+    "character": "櫓"
+  },
+  {
+    "jis": "4f27",
+    "character": "炉"
+  },
+  {
+    "jis": "4f28",
+    "character": "賂"
+  },
+  {
+    "jis": "4f29",
+    "character": "路"
+  },
+  {
+    "jis": "4f2a",
+    "character": "露"
+  },
+  {
+    "jis": "4f2b",
+    "character": "労"
+  },
+  {
+    "jis": "4f2c",
+    "character": "婁"
+  },
+  {
+    "jis": "4f2d",
+    "character": "廊"
+  },
+  {
+    "jis": "4f2e",
+    "character": "弄"
+  },
+  {
+    "jis": "4f2f",
+    "character": "朗"
+  },
+  {
+    "jis": "4f30",
+    "character": "楼"
+  },
+  {
+    "jis": "4f31",
+    "character": "榔"
+  },
+  {
+    "jis": "4f32",
+    "character": "浪"
+  },
+  {
+    "jis": "4f33",
+    "character": "漏"
+  },
+  {
+    "jis": "4f34",
+    "character": "牢"
+  },
+  {
+    "jis": "4f35",
+    "character": "狼"
+  },
+  {
+    "jis": "4f36",
+    "character": "篭"
+  },
+  {
+    "jis": "4f37",
+    "character": "老"
+  },
+  {
+    "jis": "4f38",
+    "character": "聾"
+  },
+  {
+    "jis": "4f39",
+    "character": "蝋"
+  },
+  {
+    "jis": "4f3a",
+    "character": "郎"
+  },
+  {
+    "jis": "4f3b",
+    "character": "六"
+  },
+  {
+    "jis": "4f3c",
+    "character": "麓"
+  },
+  {
+    "jis": "4f3d",
+    "character": "禄"
+  },
+  {
+    "jis": "4f3e",
+    "character": "肋"
+  },
+  {
+    "jis": "4f3f",
+    "character": "録"
+  },
+  {
+    "jis": "4f40",
+    "character": "論"
+  },
+  {
+    "jis": "4f41",
+    "character": "倭"
+  },
+  {
+    "jis": "4f42",
+    "character": "和"
+  },
+  {
+    "jis": "4f43",
+    "character": "話"
+  },
+  {
+    "jis": "4f44",
+    "character": "歪"
+  },
+  {
+    "jis": "4f45",
+    "character": "賄"
+  },
+  {
+    "jis": "4f46",
+    "character": "脇"
+  },
+  {
+    "jis": "4f47",
+    "character": "惑"
+  },
+  {
+    "jis": "4f48",
+    "character": "枠"
+  },
+  {
+    "jis": "4f49",
+    "character": "鷲"
+  },
+  {
+    "jis": "4f4a",
+    "character": "亙"
+  },
+  {
+    "jis": "4f4b",
+    "character": "亘"
+  },
+  {
+    "jis": "4f4c",
+    "character": "鰐"
+  },
+  {
+    "jis": "4f4d",
+    "character": "詫"
+  },
+  {
+    "jis": "4f4e",
+    "character": "藁"
+  },
+  {
+    "jis": "4f4f",
+    "character": "蕨"
+  },
+  {
+    "jis": "4f50",
+    "character": "椀"
+  },
+  {
+    "jis": "4f51",
+    "character": "湾"
+  },
+  {
+    "jis": "4f52",
+    "character": "碗"
+  },
+  {
+    "jis": "4f53",
+    "character": "腕"
+  }
+]

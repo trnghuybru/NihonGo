@@ -1,8 +1,11 @@
+import { HomeFeatureIcon } from '../components/HomeFeatureIcon';
+import { AuthIcon } from '../components/AuthIcon';
 import { LearningLevelContext } from '../hooks/useLearningLevel';
 import { decodeRouteParam } from '../navigation/webNavigation';
 import { lazy, Suspense, useCallback, useState } from 'react';
 import {
   ActivityIndicator,
+  Pressable,
   StyleSheet,
   Text,
   View,
@@ -16,7 +19,6 @@ import { FlashcardStudyProvider } from '../components/FlashcardStudyProvider';
 import { ScreenBackHeaderContext } from '../components/ScreenBackHeader';
 import {
   StudyTimeProvider,
-  StudyTimerBadge,
   useStudyActivity,
 } from '../components/StudyTime';
 import { BottomNavigationInsetContext } from '../hooks/useBottomNavigationInset';
@@ -163,6 +165,7 @@ function WebWorkspace({
   const { width } = useWindowDimensions();
   const desktop = width >= 1100;
   const [navigationHeight, setNavigationHeight] = useState(0);
+  const [notificationsOpen, setNotificationsOpen] = useState(false);
   const [desktopBadgesHeight, setDesktopBadgesHeight] = useState(32);
   const selectedTab = selectedTabForPath(nav.pathname);
   const skill =
@@ -226,7 +229,6 @@ function WebWorkspace({
           <View style={[styles.main, desktop && styles.desktopMain]}>
             {desktop ? (
               <DesktopNavigation
-                user={user}
                 selectedTab={selectedTab}
                 onSelectTab={tab => navigate(tabPaths[tab])}
                 activeSkill={skill ?? null}
@@ -243,6 +245,14 @@ function WebWorkspace({
             ) : null}
             <ScreenBackHeaderContext.Provider value={null}>
               <View
+                nativeID={
+                  nav.pathname === APP_HOME_PATH ? 'nihongo-home' :
+                  nav.pathname === '/practice' ? 'nihongo-practice' :
+                  (nav.pathname === '/lookup' || nav.pathname.startsWith('/lookup/')) ? 'nihongo-lookup' :
+                  (nav.pathname === '/lessons' || nav.pathname.startsWith('/lessons/')) ? 'nihongo-lessons' :
+                  nav.pathname === '/profile' ? 'nihongo-profile' :
+                  ['/flashcards', '/games', '/practice/listening', '/practice/speaking'].includes(nav.pathname) ? 'nihongo-quick-study' : undefined
+                }
                 style={[
                   styles.screen,
                   !desktop && { paddingBottom: navigationHeight },
@@ -256,18 +266,49 @@ function WebWorkspace({
                       setDesktopBadgesHeight(event.nativeEvent.layout.height)
                     }
                   >
-                    <Text style={styles.badge}>
-                      {profile.level === 'beginner'
-                        ? 'Mới bắt đầu'
-                        : profile.level}
-                    </Text>
-                    {nav.pathname === APP_HOME_PATH ? (
-                      <Text style={styles.badge}>
+                    <Pressable
+                      accessibilityRole="link"
+                      accessibilityLabel="Đổi trình độ học"
+                      onPress={() => navigate('/profile/learning')}
+                      style={styles.headerBadge}
+                    >
+                      <Text style={styles.headerBadgeText}>
+                        {profile.level === 'beginner' ? 'Mới bắt đầu' : profile.level}
+                      </Text>
+                    </Pressable>
+                    <View style={styles.headerBadge}>
+                      <HomeFeatureIcon name="flame" size={16} color="#ff7925" />
+                      <Text style={styles.headerBadgeText}>
                         {profile.daily_minutes} phút/ngày
                       </Text>
-                    ) : (
-                      <StudyTimerBadge />
-                    )}
+                    </View>
+                    <Pressable
+                      accessibilityRole="button"
+                      accessibilityLabel="Thông báo"
+                      accessibilityState={{ expanded: notificationsOpen }}
+                      onPress={() => setNotificationsOpen(open => !open)}
+                      style={styles.headerCircle}
+                    >
+                      <HomeFeatureIcon name="bell" size={18} color="#414854" />
+                    </Pressable>
+                    {notificationsOpen ? (
+                      <View style={styles.notificationPanel}>
+                        <Text accessibilityLiveRegion="polite" style={styles.notificationText}>
+                          Chưa có thông báo mới.
+                        </Text>
+                      </View>
+                    ) : null}
+                    <Pressable
+                      accessibilityRole="link"
+                      accessibilityLabel="Mở hồ sơ cá nhân"
+                      onPress={() => {
+                        setNotificationsOpen(false);
+                        navigate('/profile');
+                      }}
+                      style={[styles.headerCircle, styles.headerAvatar]}
+                    >
+                      <AuthIcon name="user" size={20} color="#626d82" />
+                    </Pressable>
                   </View>
                 ) : null}
                 <View
@@ -609,14 +650,35 @@ const styles = StyleSheet.create({
     backgroundColor: 'transparent',
   },
   badges: { flexDirection: 'row', gap: spacing.sm, alignItems: 'center' },
-  badge: {
-    ...typography.caption,
-    color: colors.focus,
-    backgroundColor: colors.surfaceTint,
-    paddingHorizontal: spacing.md,
-    paddingVertical: spacing.sm,
-    borderRadius: 999,
+  headerBadge: {
+    minHeight: 36,
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 5,
+    paddingHorizontal: 12,
+    borderRadius: 18,
+    backgroundColor: '#fffbf8',
   },
+  headerBadgeText: { ...typography.label, color: '#984112', fontSize: 13 },
+  headerCircle: {
+    width: 36,
+    height: 36,
+    borderRadius: 18,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#fffbf8',
+  },
+  headerAvatar: { backgroundColor: '#e2e5ef' },
+  notificationPanel: {
+    position: 'absolute',
+    top: 43,
+    right: 42,
+    padding: 14,
+    borderRadius: 12,
+    backgroundColor: '#fff',
+    boxShadow: '0 6px 20px rgba(30, 40, 55, 0.12)',
+  },
+  notificationText: { ...typography.caption, color: colors.body },
   caption: { ...typography.caption, color: colors.muted },
   navigation: {
     position: 'absolute',

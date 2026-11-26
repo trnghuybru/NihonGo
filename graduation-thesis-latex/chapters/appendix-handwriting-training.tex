@@ -1,0 +1,102 @@
+% Source of numerical results: the four user-supplied JSON files, preserved in
+% data/handwriting-training/. No training hyperparameters are inferred from inference code.
+\chapter{Handwriting Model Training and Evaluation}
+\label{app:handwriting-training}
+
+\section{Dataset and Experimental Records}
+
+Nhóm tự huấn luyện MobileNetV3 Small để nhận dạng ảnh một ký tự viết tay tiếng Nhật trên bộ dữ liệu ETL9B. Phụ lục tổng hợp bốn tệp kết quả do nhóm cung cấp, được giữ nguyên trong thư mục \texttt{data/handwriting-training/}: \texttt{history.json} ghi chỉ số qua từng epoch; \texttt{labels.json} ánh xạ nhãn; \texttt{split.json} mô tả cách chia dữ liệu; \texttt{test\_metrics.json} ghi kết quả test. Các đường cong được dựng trực tiếp từ nhật ký, không huấn luyện hoặc đánh giá lại mô hình.
+
+\texttt{labels.json} chứa 3.036 ký tự và mã JIS tương ứng, không trùng nhãn; gồm 2.965 Kanji và 71 Hiragana. Vì vậy, bài toán là phân loại ký tự viết tay tiếng Nhật, không chỉ giới hạn ở Kanji. \texttt{split.json} liệt kê năm tệp nguồn \texttt{ETL9B\_1}--\texttt{ETL9B\_5}, tổng cộng 607.200 mẫu, phân bố như Bảng~\ref{tab:handwriting-split}.
+
+\begin{table}[htbp]
+\centering
+\caption{Phân chia dữ liệu huấn luyện MobileNetV3 Small}
+\label{tab:handwriting-split}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+\textbf{Tập dữ liệu} & \textbf{Số mẫu} & \textbf{Tỷ lệ} & \textbf{Số block} \\
+\midrule
+Train & 485.760 & 80\% & 160 \\
+Validation & 60.720 & 10\% & 20 \\
+Test & 60.720 & 10\% & 20 \\
+\midrule
+Tổng cộng & 607.200 & 100\% & 200 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Đơn vị chia là block dữ liệu được ghi trong tệp, \emph{không phải mã người viết đã được xác minh}. Các tập block không giao nhau; số giao nhau của sheet ID do tệp báo cáo cũng bằng 0 cho cả ba cặp train/validation, train/test và validation/test. Điều này chưa đủ để khẳng định ba tập độc lập theo người viết.
+
+\section{Model and Training Information}
+
+Mô hình tích hợp có kiến trúc MobileNetV3 Small, đầu vào RGB $128\times128$ và 3.036 đầu ra. Nhật ký gồm đủ 40 epoch liên tiếp. Checkpoint đang dùng ghi epoch 32; danh sách nhãn, cách chia dữ liệu và chỉ số validation của checkpoint trùng với các tệp được cung cấp. Việc đối chiếu này xác nhận sự nhất quán giữa mô hình tích hợp và hồ sơ huấn luyện.
+
+Bốn tệp chưa ghi optimizer, learning rate, batch size, scheduler, augmentation, cách khởi tạo trọng số, thiết bị hay thời gian huấn luyện. Phụ lục không suy đoán các thông số này từ mã suy luận. Loss được giữ theo tên trường trong kết quả; chưa có mã huấn luyện để xác nhận công thức loss.
+
+\clearpage
+\section{Training Progress and Checkpoint}
+
+Hình~\ref{fig:handwriting-learning-curves} trình bày loss và Top-1 trên train/validation. Trục loss dùng thang log để quan sát các giá trị nhỏ ở cuối quá trình. Top-1 là tỷ lệ mẫu có dự đoán đứng đầu trùng nhãn; Top-5 là tỷ lệ mẫu có nhãn đúng nằm trong năm dự đoán đầu.
+
+\begin{figure}[htbp]
+\centering
+\input{figures/handwriting-learning-curves}
+\caption{Loss và Top-1 qua 40 epoch, dựng từ nhật ký huấn luyện}
+\label{fig:handwriting-learning-curves}
+\end{figure}
+
+\begin{table}[htbp]
+\centering
+\caption{Các mốc trong nhật ký huấn luyện và validation}
+\label{tab:handwriting-training-milestones}
+\begingroup
+\fontsize{11}{14}\selectfont
+\begin{tabular}{@{}rrrrrr@{}}
+\toprule
+\textbf{Epoch} & \textbf{Train loss} & \textbf{Val. loss} & \textbf{Train Top-1} & \textbf{Val. Top-1} & \textbf{Val. Top-5} \\
+\midrule
+1 & 0,898571 & 0,112530 & 82,6192\% & 96,8017\% & 99,7711\% \\
+27 & 0,001572 & 0,027179 & 99,9541\% & 99,5405\% & 99,9555\% \\
+32 & 0,000727 & 0,028299 & 99,9765\% & 99,5669\% & 99,9588\% \\
+40 & 0,000281 & 0,028559 & 99,9920\% & 99,5603\% & 99,9638\% \\
+\bottomrule
+\end{tabular}
+\endgroup
+\end{table}
+
+Validation Top-1 đạt cao nhất tại epoch 32: 99,5669\%, tương ứng 60.457/60.720 mẫu. Checkpoint tích hợp lưu đúng epoch này, nhưng tệp kết quả không ghi quy tắc tự động chọn checkpoint. Validation loss thấp nhất tại epoch 27 (0,027179); do đó không thể đồng nhất ``Top-1 cao nhất'' với ``loss thấp nhất''.
+
+Sau epoch 32, train loss tiếp tục giảm nhưng validation Top-1 không vượt mốc cao nhất. Epoch 40 đạt train Top-1 99,9920\% và validation Top-1 99,5603\%. Xu hướng này cho thấy cải thiện trên train không tiếp tục chuyển thành cải thiện Top-1 trên validation; chỉ số train cao không thay thế được đánh giá trên tập giữ lại.
+
+\clearpage
+\section{Test Results and Interpretation}
+
+\texttt{test\_metrics.json} ghi các chỉ số trong Bảng~\ref{tab:handwriting-test-results}. Số mẫu được lấy từ phần test của \texttt{split.json}; số dự đoán đúng được suy ra bằng cách nhân tỷ lệ với 60.720 mẫu và làm tròn về số nguyên.
+
+\begin{table}[htbp]
+\centering
+\caption{Kết quả test được cung cấp cho mô hình nhận dạng ký tự}
+\label{tab:handwriting-test-results}
+\begin{tabular}{@{}lrr@{}}
+\toprule
+\textbf{Chỉ số} & \textbf{Giá trị} & \textbf{Số mẫu đúng / tổng mẫu} \\
+\midrule
+Loss & 0,023868 & --- \\
+Top-1 accuracy & 99,6377\% & 60.500 / 60.720 \\
+Top-5 accuracy & 99,9588\% & 60.695 / 60.720 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Có 220 mẫu mà dự đoán đứng đầu chưa đúng; trong số đó, 195 mẫu vẫn có nhãn đúng trong năm gợi ý. Còn 25 mẫu không có nhãn đúng trong Top-5. Kết quả Top-5 liên quan trực tiếp đến cách giao diện đưa ra năm ký tự để người học lựa chọn, nhưng không bảo đảm mọi nét viết thực tế đều có gợi ý đúng.
+
+Tệp test chỉ có loss, Top-1 và Top-5, không kèm epoch, tên checkpoint hoặc mã băm của mô hình. Vì vậy, các số trên được trình bày là kết quả test do nhóm cung cấp; chưa đủ bằng chứng trong tệp để gắn chắc chắn phép test này với checkpoint epoch 32. Kết quả validation tại epoch 32 và kết quả test được báo cáo riêng.
+
+\section{Integration and Evaluation Scope}
+
+Backend nạp checkpoint bằng PyTorch, tiền xử lý ảnh một ký tự và trả năm dự đoán theo xác suất giảm dần. Ảnh suy luận được ghép nền trắng, chuyển xám, cắt vùng mực, giữ tỷ lệ khi căn giữa trên canvas $128\times128$, chuyển RGB và chuẩn hóa trước khi đưa vào mô hình. Đây là pipeline tích hợp đã kiểm tra trong mã nguồn; chưa thể khẳng định toàn bộ pipeline huấn luyện giống hệt nếu chưa có \texttt{train.py}.
+
+Phạm vi của kết quả là bộ test ETL9B với cách chia block đã mô tả. Chưa có kết quả riêng trên ảnh vẽ trực tiếp bằng chuột, ngón tay hoặc bút trong ứng dụng, chưa có ma trận nhầm lẫn hoặc chỉ số theo từng lớp. Bộ tệp cũng không ghi độ trễ suy luận, kích thước mô hình hay mức sử dụng tài nguyên. Vì vậy, không suy ra hiệu năng thời gian thực hoặc khả năng khái quát sang người viết mới từ các tỷ lệ accuracy này.
+
+Mô hình phân loại ảnh một ký tự; không nhận dạng cả câu, không chấm thứ tự nét và không dùng xác suất dự đoán làm điểm chất lượng chữ viết. Người học chọn ký tự gợi ý rồi tiếp tục tra cứu từ điển.

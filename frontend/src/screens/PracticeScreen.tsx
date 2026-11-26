@@ -1,4 +1,4 @@
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { Platform, Pressable, StyleSheet, Text, View } from 'react-native';
 import { AuthShell } from '../components/AuthForm';
 import {
   HomeFeatureIcon,
@@ -31,52 +31,79 @@ export function PracticeScreen({
     onPress?: () => void;
   }[] = [
     { label: 'Bài học từ vựng', icon: 'reading', onPress: onOpenLessons },
-    { label: 'Flashcard', icon: 'vocabulary', onPress: onOpenFlashcards },
-    { label: 'Game từ vựng', icon: 'microphone', onPress: onOpenGames },
+    { label: 'Flashcard', icon: 'flashcards', onPress: onOpenFlashcards },
+    { label: 'Game từ vựng', icon: 'gamepad', onPress: onOpenGames },
   ];
+  const web = Platform.OS === 'web';
   return (
-    <AuthShell title="Luyện tập" subtitle="" card={false} wide>
-      <Text accessibilityRole="header" style={styles.heading}>
-        Từ vựng
-      </Text>
-      <View style={styles.features}>
-        {features
-          .filter(feature => feature.onPress)
-          .map(feature => (
-            <Pressable
-              key={feature.label}
-              accessibilityRole="button"
-              accessibilityLabel={feature.label}
-              onPress={feature.onPress}
-              style={({ pressed }) => [
-                styles.feature,
-                pressed && styles.pressed,
-              ]}
-            >
-              <View style={styles.icon}>
+    <AuthShell title="Luyện tập" subtitle="" card={false} wide hideHeader={web}>
+      {web ? (
+        <View nativeID="practice-welcome">
+          <Text accessibilityRole="header" style={styles.title}>
+            Luyện tập
+          </Text>
+        </View>
+      ) : null}
+      <View
+        nativeID={web ? 'practice-vocabulary' : undefined}
+        style={styles.section}
+      >
+        <Text accessibilityRole="header" style={styles.heading}>
+          Từ vựng
+        </Text>
+        <View style={styles.features}>
+          {features
+            .filter(feature => feature.onPress)
+            .map(feature => (
+              <Pressable
+                key={feature.label}
+                accessibilityRole="button"
+                accessibilityLabel={feature.label}
+                onPress={feature.onPress}
+                style={({ pressed }) => [
+                  styles.feature,
+                  pressed && styles.pressed,
+                ]}
+              >
+                <View style={styles.icon}>
+                  <HomeFeatureIcon
+                    name={feature.icon}
+                    color={colors.focus}
+                    size={20}
+                  />
+                </View>
+                <Text style={styles.label}>{feature.label}</Text>
                 <HomeFeatureIcon
-                  name={feature.icon}
-                  color={colors.focus}
+                  name="arrow"
+                  color={colors.primaryText}
                   size={20}
                 />
-              </View>
-              <Text style={styles.label}>{feature.label}</Text>
-              <HomeFeatureIcon
-                name="arrow"
-                color={colors.primaryText}
-                size={20}
-              />
-            </Pressable>
-          ))}
+              </Pressable>
+            ))}
+        </View>
       </View>
-      <Text accessibilityRole="header" style={styles.heading}>
-        Kỹ năng
-      </Text>
-      <SkillPicker onOpenSkill={onOpenSkill} />
+      <View
+        nativeID={web ? 'practice-skills' : undefined}
+        style={styles.section}
+      >
+        <View>
+          <Text accessibilityRole="header" style={styles.heading}>
+            Luyện kỹ năng
+          </Text>
+        </View>
+        <SkillPicker onOpenSkill={onOpenSkill} />
+      </View>
     </AuthShell>
   );
 }
 const styles = StyleSheet.create({
+  section: { gap: spacing.lg },
+  title: {
+    ...typography.title,
+    fontSize: 21,
+    lineHeight: 28,
+    color: '#153549',
+  },
   heading: { ...typography.title, color: colors.dark },
   features: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.lg },
   feature: {

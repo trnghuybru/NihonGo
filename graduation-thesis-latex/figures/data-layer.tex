@@ -1,0 +1,31 @@
+\begingroup
+\setstretch{1}
+\begin{tikzpicture}[
+box/.style={draw=black!55,rounded corners=2pt,fill=white,text width=3.8cm,minimum height=1cm,inner sep=6pt,align=center,font=\fontsize{10}{12}\selectfont},
+title/.style={anchor=north west,font=\fontsize{10}{12}\selectfont\bfseries},
+link/.style={<->,>=stealth,draw=black!65,line width=.65pt,rounded corners=3pt},
+task/.style={->,>=stealth,draw=black!65,line width=.65pt,rounded corners=3pt}]
+
+\node[box,text width=9cm,fill=black!3] (app) at (0,0) {Flask Backend \& Background Workers};
+\node[box,text width=5.5cm,fill=blue!3] (orm) at (-3.9,-1.8) {SQLAlchemy Models \& Session\\Queries / Transactions};
+\node[box,text width=5.5cm,fill=blue!3] (storage) at (3.9,-1.8) {S3-Compatible Storage Client\\Object Keys / Signed URLs};
+\draw[link] (-3.9,0 |- app.south) -- (orm.north);
+\draw[link] (3.9,0 |- app.south) -- (storage.north);
+\begin{scope}[yshift=-2.6cm]
+\draw[rounded corners,draw=green!40!black,fill=green!4] (-7.5,-1.6) rectangle (7.5,-7.5);
+\node[title] at (-7.25,-1.8) {POSTGRESQL -- STRUCTURED DATA};
+\node[box] at (-5,-3.3) {Users \& Identities\\Sessions \& Tokens};
+\node[box] at (0,-3.3) {Learning Preferences\\Study Time \& Progress};
+\node[box] at (5,-3.3) {Vocabulary\\Flashcard Study Data};
+\node[box] at (-5,-5.6) {Reading Content\\Learning Results};
+\node[box] at (0,-5.6) {Conversation History\\Speaking Results};
+\node[box] at (5,-5.6) {Shadowing Jobs\\Captions \& Translations};
+\draw[rounded corners,draw=green!40!black,fill=green!4] (-7.5,-8.5) rectangle (7.5,-11.5);
+\node[title] at (-7.25,-8.7) {CLOUDFLARE R2 -- OBJECT STORAGE};
+\node[box,text width=5.8cm] at (-3.7,-10.25) {Audio Files};
+\node[box,text width=5.8cm] at (3.7,-10.25) {Learning Resources};
+\end{scope}
+\draw[link] (orm.south) -- (-3.9,-4.2);
+\draw[link] (storage.east) -- (7.9,-1.8) -- (7.9,-10.55) -- (0,-10.55) -- (0,-11.1);
+\end{tikzpicture}
+\endgroup

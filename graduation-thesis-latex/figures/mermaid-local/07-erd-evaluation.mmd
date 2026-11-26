@@ -1,0 +1,136 @@
+---
+title: Conversation Records and Evaluation
+---
+erDiagram
+    direction TB
+
+    %% Source: live local PostgreSQL catalog; schema public.
+    %% Snapshot: 2026-11-25T13:12:14.564538+00:00
+    %% PK = primary key; FK = foreign key; UK = single-column UNIQUE.
+    %% Composite UNIQUE constraints appear as comments.
+
+    conversation_sessions {
+        uuid id PK "UUID"
+        varchar_36 user_id FK "VARCHAR(36)"
+        uuid scenario_id FK "UUID"
+        uuid scenario_role_id FK "UUID"
+        uuid retry_of_session_id FK "UUID; nullable"
+        jsonb scenario_snapshot "JSONB"
+        varchar_16 status "VARCHAR(16)"
+        varchar_8 current_input_mode "VARCHAR(8)"
+        boolean audio_storage_enabled "BOOLEAN"
+        timestamp started_at "TIMESTAMP"
+        timestamp paused_at "TIMESTAMP; nullable"
+        timestamp ended_at "TIMESTAMP; nullable"
+        bigint accumulated_active_ms "BIGINT"
+        timestamp last_resumed_at "TIMESTAMP; nullable"
+        timestamp updated_at "TIMESTAMP"
+        timestamp created_at "TIMESTAMP"
+        timestamp deleted_at "TIMESTAMP; nullable"
+        timestamp audio_cleanup_after "TIMESTAMP; nullable"
+    }
+
+    %% UNIQUE conversation_messages (session_id, id)
+    %% UNIQUE conversation_messages (session_id, sequence_number)
+    %% UNIQUE conversation_messages (session_id, id)
+    %% UNIQUE conversation_messages (session_id, sequence_number)
+    conversation_messages {
+        uuid id PK "UUID"
+        uuid session_id FK "UUID"
+        bigint sequence_number "BIGINT"
+        varchar_16 speaker "VARCHAR(16)"
+        varchar_16 input_mode "VARCHAR(16)"
+        text content "TEXT"
+        varchar_16 status "VARCHAR(16)"
+        timestamp occurred_at "TIMESTAMP"
+        timestamp updated_at "TIMESTAMP"
+        timestamp created_at "TIMESTAMP"
+        jsonb feedback_payload "JSONB; nullable"
+        uuid feedback_attempt_id "UUID; nullable"
+        timestamp feedback_started_at "TIMESTAMP; nullable"
+        text feedback_error "TEXT; nullable"
+        varchar_200 feedback_model "VARCHAR(200); nullable"
+        jsonb hint_payload "JSONB; nullable"
+        uuid hint_attempt_id "UUID; nullable"
+        timestamp hint_started_at "TIMESTAMP; nullable"
+        integer hint_used_level "INTEGER"
+    }
+
+    session_evaluations {
+        uuid id PK "UUID"
+        uuid session_id FK,UK "UUID"
+        varchar_24 status "VARCHAR(24)"
+        numeric_5__2 overall_score "NUMERIC(5, 2); nullable"
+        text summary "TEXT; nullable"
+        text strengths "TEXT; nullable"
+        text improvement_suggestions "TEXT; nullable"
+        varchar_200 model_name "VARCHAR(200); nullable"
+        varchar_50 rubric_version "VARCHAR(50)"
+        text error_message "TEXT; nullable"
+        timestamp completed_at "TIMESTAMP; nullable"
+        timestamp created_at "TIMESTAMP"
+        jsonb result_payload "JSONB; nullable"
+        timestamp processing_started_at "TIMESTAMP; nullable"
+        uuid attempt_id "UUID; nullable"
+    }
+
+    conversation_audio_assets {
+        uuid id PK "UUID"
+        uuid session_id FK "UUID"
+        uuid message_id FK "UUID; nullable"
+        varchar_24 asset_type "VARCHAR(24)"
+        text storage_key UK "TEXT"
+        varchar_100 mime_type "VARCHAR(100)"
+        bigint size_bytes "BIGINT; nullable"
+        bigint duration_ms "BIGINT; nullable"
+        varchar_16 status "VARCHAR(16)"
+        timestamp created_at "TIMESTAMP"
+    }
+
+    %% UNIQUE evaluation_scores (evaluation_id, criterion_id)
+    %% UNIQUE evaluation_scores (evaluation_id, criterion_id)
+    evaluation_scores {
+        uuid id PK "UUID"
+        uuid evaluation_id FK "UUID"
+        uuid criterion_id FK "UUID"
+        varchar_100 criterion_name_snapshot "VARCHAR(100)"
+        numeric_8__4 weight "NUMERIC(8, 4)"
+        numeric_5__2 score "NUMERIC(5, 2)"
+        text feedback "TEXT"
+        text improvement_suggestion "TEXT; nullable"
+    }
+
+    evaluation_criteria {
+        uuid id PK "UUID"
+        varchar_50 code UK "VARCHAR(50)"
+        varchar_100 name "VARCHAR(100)"
+        text description "TEXT"
+        boolean is_active "BOOLEAN"
+    }
+
+    %% scenario_roles: external reference, only PK and referenced columns shown.
+    scenario_roles {
+        uuid id PK "UUID"
+        uuid scenario_id "UUID"
+    }
+
+    %% scenarios: external reference, only PK and referenced columns shown.
+    scenarios {
+        uuid id PK "UUID"
+    }
+
+    %% users: external reference, only PK and referenced columns shown.
+    users {
+        varchar_36 id PK "VARCHAR(36)"
+    }
+
+    conversation_sessions |o..o{ conversation_sessions : "retry_of_session_id"
+    scenarios ||..o{ conversation_sessions : "scenario_id"
+    scenario_roles ||..o{ conversation_sessions : "scenario_id + scenario_role_id"
+    users ||..o{ conversation_sessions : "user_id"
+    conversation_sessions ||..o{ conversation_messages : "session_id"
+    conversation_sessions ||..o| session_evaluations : "session_id"
+    conversation_sessions ||..o{ conversation_audio_assets : "session_id"
+    conversation_messages |o..o{ conversation_audio_assets : "session_id + message_id"
+    evaluation_criteria ||..o{ evaluation_scores : "criterion_id"
+    session_evaluations ||..o{ evaluation_scores : "evaluation_id"

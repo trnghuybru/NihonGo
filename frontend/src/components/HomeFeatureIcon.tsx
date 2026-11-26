@@ -1,6 +1,11 @@
 import Svg, { Circle, Path, Rect } from 'react-native-svg';
 
 export type HomeFeatureIconName =
+  | 'bell'
+  | 'flame'
+  | 'crown'
+  | 'calendar'
+  | 'clock'
   | 'search'
   | 'headphones'
   | 'microphone'
@@ -30,6 +35,27 @@ export function HomeFeatureIcon({ name, color, size = 24 }: Props) {
 
   return (
     <Svg width={size} height={size} viewBox="0 0 24 24" accessible={false}>
+      {name === 'bell' ? (
+        <Path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4" {...stroke} />
+      ) : null}
+      {name === 'crown' ? (
+        <Path d="m3 7 4.5 4L12 5l4.5 6L21 7l-2 12H5L3 7Z" {...stroke} />
+      ) : null}
+      {name === 'flame' ? (
+        <Path d="M13 3c1 5-3 6-3 9-2-.5-2-2-2-3-2 2-3 4-3 6a7 7 0 0 0 14 0c0-4-3-8-6-12Z" fill={color} />
+      ) : null}
+      {name === 'calendar' ? (
+        <>
+          <Rect x="3" y="5" width="18" height="16" rx="2" {...stroke} />
+          <Path d="M7 3v4m10-4v4M3 10h18" {...stroke} />
+        </>
+      ) : null}
+      {name === 'clock' ? (
+        <>
+          <Circle cx="12" cy="13" r="8" {...stroke} />
+          <Path d="M12 9v4l3 2M9 2h6" {...stroke} />
+        </>
+      ) : null}
       {name === 'search' ? (
         <>
           <Circle cx="10.8" cy="10.8" r="6.8" {...stroke} />

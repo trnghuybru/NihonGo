@@ -114,6 +114,7 @@ export function GameLibraryScreen({
         {games.map(game => (
           <Pressable
             key={game.id}
+            testID="game-library-card"
             accessibilityRole="button"
             accessibilityLabel={'Chơi ' + game.title}
             disabled={busy}
@@ -154,7 +155,7 @@ export function GameLibraryScreen({
           />
         </View>
       ) : null}
-      <View style={s.joinCard}>
+      <View style={s.joinCard} testID="game-library-join">
         <Text style={s.sectionTitle}>Tham gia phòng</Text>
         <View style={s.joinRow}>
           <View style={s.field}>

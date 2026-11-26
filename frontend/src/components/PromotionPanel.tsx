@@ -1,4 +1,4 @@
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { Platform, Pressable, StyleSheet, Text, View } from 'react-native';
 import { colors, radius, shadowSm, spacing, typography } from '../theme/theme';
 import { HomeFeatureIcon } from './HomeFeatureIcon';
 import { NihongoMascot } from './NihongoMascot';
@@ -6,6 +6,7 @@ import { useWebLayout } from '../hooks/useWebLayout';
 
 export function PromotionPanel({ onPress }: { onPress: () => void }) {
   const { desktop } = useWebLayout();
+  const inlineDescription = desktop || Platform.OS === 'web';
   const description = (
     <Text style={styles.description}>
       Khám phá kế hoạch học dựa trên trình độ, mục tiêu và thời gian mỗi ngày.
@@ -24,14 +25,14 @@ export function PromotionPanel({ onPress }: { onPress: () => void }) {
       ]}
     >
       <View style={styles.identity}>
-        <NihongoMascot size={76} decorative />
+        <NihongoMascot size={Platform.OS === 'web' ? 66 : 76} decorative />
         <View style={styles.copy}>
           <Text style={styles.eyebrow}>HỌC CÙNG MOMO</Text>
           <Text style={styles.title}>Một lộ trình vừa sức dành cho bạn</Text>
-          {desktop ? description : null}
+          {inlineDescription ? description : null}
         </View>
       </View>
-      {!desktop ? description : null}
+      {!inlineDescription ? description : null}
       <View style={styles.actionRow}>
         <Text style={styles.action}>Khám phá lộ trình</Text>
         <HomeFeatureIcon name="arrow" color={colors.primaryText} size={18} />

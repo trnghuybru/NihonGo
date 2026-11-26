@@ -1,0 +1,51 @@
+% Evidence: frontend/package.json; backend/requirements.txt;
+% backend/shadowing/requirements.txt; compose.yaml; compose.beta.yaml;
+% handwriting/service.py; vocabulary/audio.py; translation/service.py;
+% flashcards/srs.py; speaking/experiment.py; games/voice_worker.py.
+% Training provenance: models/handwriting/best.pt, split.files=ETL9B_1..ETL9B_5;
+% 3036 labels, sample split 485760/60720/60720. Team training confirmed by user.
+Hệ thống NihonGO được xây dựng bằng React Native cho ứng dụng di động, React Native Web cho giao diện web và Flask cho backend. PostgreSQL lưu trữ dữ liệu học tập, trong khi các mô hình AI hỗ trợ hội thoại, nhận xét bài làm và nhận dạng ký tự viết tay. Bảng~\ref{tab:technologies-used} trình bày các công nghệ chính và vai trò của chúng trong hệ thống.
+
+\begingroup
+\setstretch{1}
+\fontsize{11}{14}\selectfont
+\renewcommand{\arraystretch}{1}
+\setlength{\LTleft}{0pt}
+\setlength{\LTright}{\fill}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{2.3cm}>{\raggedright\arraybackslash}p{4.2cm}>{\raggedright\arraybackslash}p{8.5cm}@{}}
+\caption{Công nghệ sử dụng trong hệ thống NihonGO}
+\label{tab:technologies-used}\\
+\toprule
+\textbf{Nhóm} & \textbf{Công nghệ} & \textbf{Vai trò trong hệ thống} \\
+\midrule
+\endfirsthead
+\multicolumn{3}{c}{\tablename~\thetable{} (tiếp theo)}\\
+\toprule
+\textbf{Nhóm} & \textbf{Công nghệ} & \textbf{Vai trò trong hệ thống} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+Giao diện & React / React Native / React Native Web; TypeScript; Vite & Dùng chung thành phần giao diện, dịch vụ API và kiểu dữ liệu giữa web và di động. Vite phát triển và đóng gói bản web. \\
+\midrule
+Backend & Python, Flask, Gunicorn & Xử lý API nghiệp vụ, xác thực và điều phối mô hình. Gunicorn phục vụ ứng dụng Flask khi triển khai. \\
+\midrule
+Dữ liệu & PostgreSQL, SQLAlchemy, Flask-Migrate/Alembic & Lưu dữ liệu nghiệp vụ; ánh xạ mô hình, quản lý giao dịch và cập nhật schema qua migration. \\
+\midrule
+Tệp âm thanh & Cloudflare R2, boto3 & Lưu âm thanh qua API tương thích S3; cấp URL ký có thời hạn để phát tệp từ kho riêng tư. \\
+\midrule
+Ôn tập & FSRS & Tính lịch ôn flashcard từ mức tự đánh giá Again, Hard, Good và Easy; lưu trạng thái và lịch sử ôn. \\
+\midrule
+AI tạo sinh & Gemini API & Tạo phản hồi hội thoại, nhận xét bài viết, giải thích bài đọc và câu hỏi từ phụ đề; backend kiểm tra kết quả trước khi sử dụng. \\
+\midrule
+Xử lý giọng nói & Google Cloud Speech-to-Text, Faster-Whisper, Supertonic & Cloud STT nhận dạng lời nói; Faster-Whisper tạo phụ đề shadowing khi thiếu phụ đề nguồn; Supertonic tổng hợp giọng đọc nội bộ. \\
+\midrule
+Nhận dạng chữ & PyTorch, Torchvision, MobileNetV3 Small & Nhóm tự huấn luyện trên ETL9B (3.036 lớp); nhận dạng ký tự viết tay, trả 5 gợi ý (Phụ lục~\ref{app:handwriting-training}). \\
+\midrule
+Dịch câu & Transformers, M2M100 & Dịch Nhật--Việt và Việt--Nhật bằng mô hình cài trên máy chủ; suy luận không gọi API dịch bên ngoài. \\
+\midrule
+Tương tác trực tiếp & Flask-SocketIO, Redis, LiveKit & Đồng bộ phòng chơi và sự kiện giữa các tiến trình. LiveKit tự host truyền âm thanh, kiểm soát quyền microphone khi chơi bằng giọng nói. \\
+\midrule
+Tác vụ và vận hành & ElasticMQ, worker, Docker Compose & Hàng đợi tương thích SQS và worker xử lý shadowing bất đồng bộ; Compose cấu hình dịch vụ, mạng và volume. \\
+\end{longtable}
+\endgroup

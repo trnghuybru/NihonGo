@@ -1,6 +1,8 @@
+import { HomeFeatureIcon } from './HomeFeatureIcon';
 import { createContext, useContext, useEffect } from 'react';
 import {
   ActivityIndicator,
+  Platform,
   Pressable,
   StyleSheet,
   Text,
@@ -96,9 +98,12 @@ export function DailyGoalProgress() {
   return (
     <View style={styles.card} testID="daily-goal-progress">
       <View style={styles.row}>
-        <Text style={styles.heading} accessibilityRole="header">
-          Mục tiêu hôm nay
-        </Text>
+        <View style={styles.headingIdentity}>
+          {Platform.OS === 'web' ? <HomeFeatureIcon name="clock" size={21} color="#dc6910" /> : null}
+          <Text style={styles.heading} accessibilityRole="header">
+            Mục tiêu hôm nay
+          </Text>
+        </View>
         <View style={[styles.status, completed && styles.completeStatus]}>
           {completed ? (
             <AuthIcon name="check" size={12} color={colors.success} />
@@ -177,6 +182,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     gap: spacing.sm,
   },
+  headingIdentity: { flexDirection: 'row', alignItems: 'center', gap: 9 },
   heading: { ...typography.heading, color: colors.dark },
   time: {
     ...typography.title,

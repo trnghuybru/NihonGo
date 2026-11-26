@@ -1,0 +1,75 @@
+---
+title: Reading and Writing
+---
+erDiagram
+    direction TB
+
+    %% PK = primary key; FK = foreign key; UK = single-column unique constraint.
+    %% Attributes marked nullable permit NULL. Composite uniqueness is listed in comments.
+    %% External reference tables show only referenced columns and primary keys.
+
+    users {
+        varchar id PK "VARCHAR(36)"
+        varchar name "VARCHAR(100)"
+        varchar email "VARCHAR(254)"
+        varchar phone "VARCHAR(20)"
+    }
+
+    %% UNIQUE reading_passages (level, title, paragraph, source_url)
+    reading_passages {
+        varchar id PK "VARCHAR(48)"
+        varchar level "VARCHAR(2)"
+        varchar kind "VARCHAR(16)"
+        text title "TEXT"
+    }
+
+    %% UNIQUE reading_attempts (user_id, request_id)
+    reading_attempts {
+        varchar id PK "VARCHAR(36)"
+        varchar user_id FK "VARCHAR(36)"
+        varchar passage_id FK "VARCHAR(48)"
+        varchar request_id "VARCHAR(36)"
+        varchar version "VARCHAR(64)"
+        json result "JSON"
+    }
+
+    reading_insights {
+        varchar passage_id PK,FK "VARCHAR(48)"
+        varchar kind PK "VARCHAR(64)"
+        varchar source_hash "VARCHAR(64)"
+        varchar status "VARCHAR(16)"
+        varchar lease "VARCHAR(36); nullable"
+    }
+
+    writing_prompts {
+        varchar id PK "VARCHAR(64)"
+        varchar title "VARCHAR(160)"
+        varchar level "VARCHAR(8)"
+        varchar category "VARCHAR(24)"
+    }
+
+    writing_drafts {
+        varchar id PK "VARCHAR(64)"
+        varchar user_id FK "VARCHAR(36)"
+        varchar prompt_id FK "VARCHAR(64)"
+        text text "TEXT"
+        integer word_count "INTEGER"
+        varchar status "VARCHAR(16)"
+    }
+
+    writing_submissions {
+        varchar id PK "VARCHAR(64)"
+        varchar user_id FK "VARCHAR(36)"
+        varchar prompt_id FK "VARCHAR(64); nullable"
+        varchar prompt_title "VARCHAR(160)"
+        text text "TEXT"
+        text corrected_text "TEXT"
+    }
+
+    reading_passages ||..o{ reading_attempts : "passage_id"
+    users ||..o{ reading_attempts : "user_id"
+    reading_passages ||--o{ reading_insights : "passage_id"
+    writing_prompts ||..o{ writing_drafts : "prompt_id"
+    users ||..o{ writing_drafts : "user_id"
+    writing_prompts |o..o{ writing_submissions : "prompt_id"
+    users ||..o{ writing_submissions : "user_id"

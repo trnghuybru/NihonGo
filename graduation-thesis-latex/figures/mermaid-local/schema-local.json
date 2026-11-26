@@ -1,0 +1,4032 @@
+{
+  "source": "Live local PostgreSQL, catalog inspection only",
+  "schema": "public",
+  "captured_at": "2026-11-25T13:12:14.564538+00:00",
+  "migration_versions": [
+    "a0b1c2d3e4f5"
+  ],
+  "tables": [
+    {
+      "n": "alembic_version",
+      "c": [
+        [
+          "version_num",
+          true,
+          false,
+          "VARCHAR(32)"
+        ]
+      ],
+      "f": [],
+      "u": [],
+      "checks": []
+    },
+    {
+      "n": "auth_challenges",
+      "c": [
+        [
+          "id",
+          true,
+          false,
+          "VARCHAR(36)"
+        ],
+        [
+          "purpose",
+          false,
+          false,
+          "VARCHAR(16)"
+        ],
+        [
+          "channel",
+          false,
+          false,
+          "VARCHAR(8)"
+        ],
+        [
+          "destination",
+          false,
+          false,
+          "VARCHAR(254)"
+        ],
+        [
+          "user_id",
+          false,
+          true,
+          "VARCHAR(36)"
+        ],
+        [
+          "payload",
+          false,
+          false,
+          "JSON"
+        ],
+        [
+          "code_hash",
+          false,
+          false,
+          "VARCHAR(64)"
+        ],
+        [
+          "attempts",
+          false,
+          false,
+          "INTEGER"
+        ],
+        [
+          "sends",
+          false,
+          false,
+          "INTEGER"
+        ],
+        [
+          "expires_at",
+          false,
+          false,
+          "BIGINT"
+        ],
+        [
+          "created_at",
+          false,
+          false,
+          "BIGINT"
+        ],
+        [
+          "sent_at",
+          false,
+          false,
+          "BIGINT"
+        ],
+        [
+          "consumed_at",
+          false,
+          true,
+          "BIGINT"
+        ]
+      ],
+      "f": [
+        [
+          [
+            "user_id"
+          ],
+          [
+            "users.id"
+          ]
+        ]
+      ],
+      "u": [],
+      "checks": []
+    },
+    {
+      "n": "auth_identities",
+      "c": [
+        [
+          "id",
+          true,
+          false,
+          "VARCHAR(36)"
+        ],
+        [
+          "user_id",
+          false,
+          false,
+          "VARCHAR(36)"
+        ],
+        [
+          "provider",
+          false,
+          false,
+          "VARCHAR(16)"
+        ],
+        [
+          "subject",
+          false,
+          false,
+          "VARCHAR(255)"
+        ]
+      ],
+      "f": [
+        [
+          [
+            "user_id"
+          ],
+          [
+            "users.id"
+          ]
+        ]
+      ],
+      "u": [
+        [
+          "provider",
+          "subject"
+        ],
+        [
+          "provider",
+          "subject"
+        ]
+      ],
+      "checks": []
+    },
+    {
+      "n": "auth_oauth_flows",
+      "c": [
+        [
+          "id",
+          true,
+          false,
+          "VARCHAR(36)"
+        ],
+        [
+          "provider",
+          false,
+          false,
+          "VARCHAR(16)"
+        ],
+        [
+          "state_hash",
+          false,
+          false,
+          "VARCHAR(64)"
+        ],
+        [
+          "secret_hash",
+          false,
+          false,
+          "VARCHAR(64)"
+        ],
+        [
+          "nonce",
+          false,
+          false,
+          "VARCHAR(128)"
+        ],
+        [
+          "status",
+          false,
+          false,
+          "VARCHAR(16)"
+        ],
+        [
+          "profile",
+          false,
+          true,
+          "JSON"
+        ],
+        [
+          "profile_token_hash",
+          false,
+          true,
+          "VARCHAR(64)"
+        ],
+        [
+          "expires_at",
+          false,
+          false,
+          "BIGINT"
+        ]
+      ],
+      "f": [],
+      "u": [
+        [
+          "profile_token_hash"
+        ],
+        [
+          "state_hash"
+        ],
+        [
+          "profile_token_hash"
+        ],
+        [
+          "state_hash"
+        ]
+      ],
+      "checks": []
+    },
+    {
+      "n": "auth_rate_limits",
+      "c": [
+        [
+          "key",
+          true,
+          false,
+          "VARCHAR(64)"
+        ],
+        [
+          "count",
+          false,
+          false,
+          "INTEGER"
+        ],
+        [
+          "expires_at",
+          false,
+          false,
+          "BIGINT"
+        ]
+      ],
+      "f": [],
+      "u": [],
+      "checks": []
+    },
+    {
+      "n": "auth_refresh_tokens",
+      "c": [
+        [
+          "token_hash",
+          true,
+          false,
+          "VARCHAR(64)"
+        ],
+        [
+          "session_id",
+          false,
+          false,
+          "VARCHAR(36)"
+        ],
+        [
+          "used_at",
+          false,
+          true,
+          "BIGINT"
+        ]
+      ],
+      "f": [
+        [
+          [
+            "session_id"
+          ],
+          [
+            "auth_sessions.id"
+          ]
+        ]
+      ],
+      "u": [],
+      "checks": []
+    },
+    {
+      "n": "auth_sessions",
+      "c": [
+        [
+          "id",
+          true,
+          false,
+          "VARCHAR(36)"
+        ],
+        [
+          "user_id",
+          false,
+          false,
+          "VARCHAR(36)"
+        ],
+        [
+          "access_hash",
+          false,
+          false,
+          "VARCHAR(64)"
+        ],
+        [
+          "access_expires_at",
+          false,
+          false,
+          "BIGINT"
+        ],
+        [
+          "expires_at",
+          false,
+          false,
+          "BIGINT"
+        ],
+        [
+          "revoked_at",
+          false,
+          true,
+          "BIGINT"
+        ],
+        [
+          "created_at",
+          false,
+          false,
+          "BIGINT"
+        ]
+      ],
+      "f": [
+        [
+          [
+            "user_id"
+          ],
+          [
+            "users.id"
+          ]
+        ]
+      ],
+      "u": [
+        [
+          "access_hash"
+        ],
+        [
+          "access_hash"
+        ]
+      ],
+      "checks": []
+    },
+    {
+      "n": "beta_ai_attempts",
+      "c": [
+        [
+          "id",
+          true,
+          false,
+          "VARCHAR(36)"
+        ],
+        [
+          "user_id",
+          false,
+          false,
+          "VARCHAR(36)"
+        ],
+        [
+          "model",
+          false,
+          false,
+          "VARCHAR(100)"
+        ],
+        [
+          "action",
+          false,
+          false,
+          "VARCHAR(100)"
+        ],
+        [
+          "status",
+          false,
+          false,
+          "VARCHAR(16)"
+        ],
+        [
+          "held_micro_usd",
+          false,
+          false,
+          "BIGINT"
+        ],
+        [
+          "charged_micro_usd",
+          false,
+          false,
+          "BIGINT"
+        ],
+        [
+          "created_at",
+          false,
+          false,
+          "BIGINT"
+        ],
+        [
+          "finished_at",
+          false,
+          true,
+          "BIGINT"
+        ],
+        [
+          "expires_at",
+          false,
+          true,
+          "BIGINT"
+        ]
+      ],
+      "f": [
+        [
+          [
+            "user_id"
+          ],
+          [
+            "users.id"
+          ]
+        ]
+      ],
+      "u": [],
+      "checks": []
+    },
+    {
+      "n": "beta_ai_wallets",
+      "c": [
+        [
+          "user_id",
+          true,
+          false,
+          "VARCHAR(36)"
+        ],
+        [
+          "spent_micro_usd",
+          false,
+          false,
+          "BIGINT"
+        ],
+        [
+          "held_micro_usd",
+          false,
+          false,
+          "BIGINT"
+        ],
+        [
+          "started_at",
+          false,
+          false,
+          "BIGINT"
+        ]
+      ],
+      "f": [
+        [
+          [
+            "user_id"
+          ],
+          [
+            "users.id"
+          ]
+        ]
+      ],
+      "u": [],
+      "checks": []
+    },
+    {
+      "n": "beta_daily_live_sessions",
+      "c": [
+        [
+          "id",
+          true,
+          false,
+          "VARCHAR(36)"
+        ],
+        [
+          "user_id",
+          false,
+          false,
+          "VARCHAR(36)"
+        ],
+        [
+          "day",
+          false,
+          false,
+          "DATE"
+        ],
+        [
+          "status",
+          false,
+          false,
+          "VARCHAR(16)"
+        ],
+        [
+          "created_at",
+          false,
+          false,
+          "BIGINT"
+        ],
+        [
+          "expires_at",
+          false,
+          false,
+          "BIGINT"
+        ]
+      ],
+      "f": [
+        [
+          [
+            "user_id"
+          ],
+          [
+            "users.id"
+          ]
+        ]
+      ],
+      "u": [],
+      "checks": []
+    },
+    {
+      "n": "beta_daily_quotas",
+      "c": [
+        [
+          "user_id",
+          true,
+          false,
+          "VARCHAR(36)"
+        ],
+        [
+          "day",
+          true,
+          false,
+          "DATE"
+        ],
+        [
+          "video_id",
+          false,
+          true,
+          "VARCHAR(11)"
+        ],
+        [
+          "live_count",
+          false,
+          false,
+          "INTEGER"
+        ],
+        [
+          "video_ids",
+          false,
+          false,
+          "JSON"
+        ]
+      ],
+      "f": [
+        [
+          [
+            "user_id"
+          ],
+          [
+            "users.id"
+          ]
+        ]
+      ],
+      "u": [],
+      "checks": []
+    },
+    {
+      "n": "conversation_audio_assets",
+      "c": [
+        [
+          "id",
+          true,
+          false,
+          "UUID"
+        ],
+        [
+          "session_id",
+          false,
+          false,
+          "UUID"
+        ],
+        [
+          "message_id",
+          false,
+          true,
+          "UUID"
+        ],
+        [
+          "asset_type",
+          false,
+          false,
+          "VARCHAR(24)"
+        ],
+        [
+          "storage_key",
+          false,
+          false,
+          "TEXT"
+        ],
+        [
+          "mime_type",
+          false,
+          false,
+          "VARCHAR(100)"
+        ],
+        [
+          "size_bytes",
+          false,
+          true,
+          "BIGINT"
+        ],
+        [
+          "duration_ms",
+          false,
+          true,
+          "BIGINT"
+        ],
+        [
+          "status",
+          false,
+          false,
+          "VARCHAR(16)"
+        ],
+        [
+          "created_at",
+          false,
+          false,
+          "TIMESTAMP"
+        ]
+      ],
+      "f": [
+        [
+          [
+            "session_id"
+          ],
+          [
+            "conversation_sessions.id"
+          ]
+        ],
+        [
+          [
+            "session_id",
+            "message_id"
+          ],
+          [
+            "conversation_messages.session_id",
+            "conversation_messages.id"
+          ]
+        ]
+      ],
+      "u": [
+        [
+          "storage_key"
+        ],
+        [
+          "storage_key"
+        ]
+      ],
+      "checks": [
+        {
+          "name": "ck_audio_duration",
+          "sqltext": "duration_ms >= 0",
+          "comment": null
+        },
+        {
+          "name": "ck_audio_message_type",
+          "sqltext": "asset_type::text = 'utterance'::text AND message_id IS NOT NULL OR asset_type::text = 'session_recording'::text AND message_id IS NULL",
+          "comment": null
+        },
+        {
+          "name": "ck_audio_size",
+          "sqltext": "size_bytes >= 0",
+          "comment": null
+        },
+        {
+          "name": "ck_audio_status",
+          "sqltext": "status::text = ANY (ARRAY['uploading'::character varying, 'ready'::character varying, 'failed'::character varying]::text[])",
+          "comment": null
+        },
+        {
+          "name": "ck_audio_type",
+          "sqltext": "asset_type::text = ANY (ARRAY['utterance'::character varying, 'session_recording'::character varying]::text[])",
+          "comment": null
+        }
+      ]
+    },
+    {
+      "n": "conversation_messages",
+      "c": [
+        [
+          "id",
+          true,
+          false,
+          "UUID"
+        ],
+        [
+          "session_id",
+          false,
+          false,
+          "UUID"
+        ],
+        [
+          "sequence_number",
+          false,
+          false,
+          "BIGINT"
+        ],
+        [
+          "speaker",
+          false,
+          false,
+          "VARCHAR(16)"
+        ],
+        [
+          "input_mode",
+          false,
+          false,
+          "VARCHAR(16)"
+        ],
+        [
+          "content",
+          false,
+          false,
+          "TEXT"
+        ],
+        [
+          "status",
+          false,
+          false,
+          "VARCHAR(16)"
+        ],
+        [
+          "occurred_at",
+          false,
+          false,
+          "TIMESTAMP"
+        ],
+        [
+          "updated_at",
+          false,
+          false,
+          "TIMESTAMP"
+        ],
+        [
+          "created_at",
+          false,
+          false,
+          "TIMESTAMP"
+        ],
+        [
+          "feedback_payload",
+          false,
+          true,
+          "JSONB"
+        ],
+        [
+          "feedback_attempt_id",
+          false,
+          true,
+          "UUID"
+        ],
+        [
+          "feedback_started_at",
+          false,
+          true,
+          "TIMESTAMP"
+        ],
+        [
+          "feedback_error",
+          false,
+          true,
+          "TEXT"
+        ],
+        [
+          "feedback_model",
+          false,
+          true,
+          "VARCHAR(200)"
+        ],
+        [
+          "hint_payload",
+          false,
+          true,
+          "JSONB"
+        ],
+        [
+          "hint_attempt_id",
+          false,
+          true,
+          "UUID"
+        ],
+        [
+          "hint_started_at",
+          false,
+          true,
+          "TIMESTAMP"
+        ],
+        [
+          "hint_used_level",
+          false,
+          false,
+          "INTEGER"
+        ]
+      ],
+      "f": [
+        [
+          [
+            "session_id"
+          ],
+          [
+            "conversation_sessions.id"
+          ]
+        ]
+      ],
+      "u": [
+        [
+          "session_id",
+          "id"
+        ],
+        [
+          "session_id",
+          "sequence_number"
+        ],
+        [
+          "session_id",
+          "id"
+        ],
+        [
+          "session_id",
+          "sequence_number"
+        ]
+      ],
+      "checks": [
+        {
+          "name": "ck_message_input_mode",
+          "sqltext": "input_mode::text = ANY (ARRAY['text'::character varying, 'voice'::character varying, 'generated'::character varying]::text[])",
+          "comment": null
+        },
+        {
+          "name": "ck_message_sequence",
+          "sqltext": "sequence_number > 0",
+          "comment": null
+        },
+        {
+          "name": "ck_message_speaker",
+          "sqltext": "speaker::text = ANY (ARRAY['user'::character varying, 'assistant'::character varying]::text[])",
+          "comment": null
+        },
+        {
+          "name": "ck_message_status",
+          "sqltext": "status::text = ANY (ARRAY['pending'::character varying, 'completed'::character varying, 'failed'::character varying]::text[])",
+          "comment": null
+        }
+      ]
+    },
+    {
+      "n": "conversation_sessions",
+      "c": [
+        [
+          "id",
+          true,
+          false,
+          "UUID"
+        ],
+        [
+          "user_id",
+          false,
+          false,
+          "VARCHAR(36)"
+        ],
+        [
+          "scenario_id",
+          false,
+          false,
+          "UUID"
+        ],
+        [
+          "scenario_role_id",
+          false,
+          false,
+          "UUID"
+        ],
+        [
+          "retry_of_session_id",
+          false,
+          true,
+          "UUID"
+        ],
+        [
+          "scenario_snapshot",
+          false,
+          false,
+          "JSONB"
+        ],
+        [
+          "status",
+          false,
+          false,
+          "VARCHAR(16)"
+        ],
+        [
+          "current_input_mode",
+          false,
+          false,
+          "VARCHAR(8)"
+        ],
+        [
+          "audio_storage_enabled",
+          false,
+          false,
+          "BOOLEAN"
+        ],
+        [
+          "started_at",
+          false,
+          false,
+          "TIMESTAMP"
+        ],
+        [
+          "paused_at",
+          false,
+          true,
+          "TIMESTAMP"
+        ],
+        [
+          "ended_at",
+          false,
+          true,
+          "TIMESTAMP"
+        ],
+        [
+          "accumulated_active_ms",
+          false,
+          false,
+          "BIGINT"
+        ],
+        [
+          "last_resumed_at",
+          false,
+          true,
+          "TIMESTAMP"
+        ],
+        [
+          "updated_at",
+          false,
+          false,
+          "TIMESTAMP"
+        ],
+        [
+          "created_at",
+          false,
+          false,
+          "TIMESTAMP"
+        ],
+        [
+          "deleted_at",
+          false,
+          true,
+          "TIMESTAMP"
+        ],
+        [
+          "audio_cleanup_after",
+          false,
+          true,
+          "TIMESTAMP"
+        ]
+      ],
+      "f": [
+        [
+          [
+            "retry_of_session_id"
+          ],
+          [
+            "conversation_sessions.id"
+          ]
+        ],
+        [
+          [
+            "scenario_id"
+          ],
+          [
+            "scenarios.id"
+          ]
+        ],
+        [
+          [
+            "scenario_id",
+            "scenario_role_id"
+          ],
+          [
+            "scenario_roles.scenario_id",
+            "scenario_roles.id"
+          ]
+        ],
+        [
+          [
+            "user_id"
+          ],
+          [
+            "users.id"
+          ]
+        ]
+      ],
+      "u": [],
+      "checks": [
+        {
+          "name": "ck_session_active_duration",
+          "sqltext": "accumulated_active_ms >= 0",
+          "comment": null
+        },
+        {
+          "name": "ck_session_end_time",
+          "sqltext": "ended_at IS NULL OR ended_at >= started_at",
+          "comment": null
+        },
+        {
+          "name": "ck_session_input_mode",
+          "sqltext": "current_input_mode::text = ANY (ARRAY['text'::character varying, 'voice'::character varying]::text[])",
+          "comment": null
+        },
+        {
+          "name": "ck_session_retry_not_self",
+          "sqltext": "retry_of_session_id IS NULL OR retry_of_session_id <> id",
+          "comment": null
+        },
+        {
+          "name": "ck_session_status",
+          "sqltext": "status::text = ANY (ARRAY['active'::character varying, 'paused'::character varying, 'completed'::character varying, 'abandoned'::character varying]::text[])",
+          "comment": null
+        }
+      ]
+    },
+    {
+      "n": "dictionary_entries",
+      "c": [
+        [
+          "id",
+          true,
+          false,
+          "VARCHAR(80)"
+        ],
+        [
+          "word",
+          false,
+          false,
+          "TEXT"
+        ],
+        [
+          "reading",
+          false,
+          false,
+          "TEXT"
+        ],
+        [
+          "content",
+          false,
+          false,
+          "JSONB"
+        ],
+        [
+          "common",
+          false,
+          false,
+          "BOOLEAN"
+        ]
+      ],
+      "f": [],
+      "u": [],
+      "checks": []
+    },
+    {
+      "n": "dictionary_history",
+      "c": [
+        [
+          "user_id",
+          true,
+          false,
+          "VARCHAR(36)"
+        ],
+        [
+          "items",
+          false,
+          false,
+          "JSONB"
+        ]
+      ],
+      "f": [
+        [
+          [
+            "user_id"
+          ],
+          [
+            "users.id"
+          ]
+        ]
+      ],
+      "u": [],
+      "checks": []
+    },
+    {
+      "n": "dictionary_kanji",
+      "c": [
+        [
+          "literal",
+          true,
+          false,
+          "VARCHAR(4)"
+        ],
+        [
+          "content",
+          false,
+          false,
+          "JSONB"
+        ],
+        [
+          "search_text",
+          false,
+          false,
+          "TEXT"
+        ],
+        [
+          "strokes",
+          false,
+          false,
+          "INTEGER"
+        ]
+      ],
+      "f": [],
+      "u": [],
+      "checks": []
+    },
+    {
+      "n": "dictionary_sources",
+      "c": [
+        [
+          "id",
+          true,
+          false,
+          "VARCHAR(64)"
+        ],
+        [
+          "content",
+          false,
+          false,
+          "JSONB"
+        ]
+      ],
+      "f": [],
+      "u": [],
+      "checks": []
+    },
+    {
+      "n": "dictionary_terms",
+      "c": [
+        [
+          "id",
+          true,
+          false,
+          "INTEGER"
+        ],
+        [
+          "entry_id",
+          false,
+          false,
+          "VARCHAR(80)"
+        ],
+        [
+          "kind",
+          false,
+          false,
+          "VARCHAR(16)"
+        ],
+        [
+          "text",
+          false,
+          false,
+          "TEXT"
+        ]
+      ],
+      "f": [
+        [
+          [
+            "entry_id"
+          ],
+          [
+            "dictionary_entries.id"
+          ]
+        ]
+      ],
+      "u": [
+        [
+          "entry_id",
+          "kind",
+          "text"
+        ],
+        [
+          "entry_id",
+          "kind",
+          "text"
+        ]
+      ],
+      "checks": []
+    },
+    {
+      "n": "evaluation_criteria",
+      "c": [
+        [
+          "id",
+          true,
+          false,
+          "UUID"
+        ],
+        [
+          "code",
+          false,
+          false,
+          "VARCHAR(50)"
+        ],
+        [
+          "name",
+          false,
+          false,
+          "VARCHAR(100)"
+        ],
+        [
+          "description",
+          false,
+          false,
+          "TEXT"
+        ],
+        [
+          "is_active",
+          false,
+          false,
+          "BOOLEAN"
+        ]
+      ],
+      "f": [],
+      "u": [
+        [
+          "code"
+        ],
+        [
+          "code"
+        ]
+      ],
+      "checks": []
+    },
+    {
+      "n": "evaluation_scores",
+      "c": [
+        [
+          "id",
+          true,
+          false,
+          "UUID"
+        ],
+        [
+          "evaluation_id",
+          false,
+          false,
+          "UUID"
+        ],
+        [
+          "criterion_id",
+          false,
+          false,
+          "UUID"
+        ],
+        [
+          "criterion_name_snapshot",
+          false,
+          false,
+          "VARCHAR(100)"
+        ],
+        [
+          "weight",
+          false,
+          false,
+          "NUMERIC(8, 4)"
+        ],
+        [
+          "score",
+          false,
+          false,
+          "NUMERIC(5, 2)"
+        ],
+        [
+          "feedback",
+          false,
+          false,
+          "TEXT"
+        ],
+        [
+          "improvement_suggestion",
+          false,
+          true,
+          "TEXT"
+        ]
+      ],
+      "f": [
+        [
+          [
+            "criterion_id"
+          ],
+          [
+            "evaluation_criteria.id"
+          ]
+        ],
+        [
+          [
+            "evaluation_id"
+          ],
+          [
+            "session_evaluations.id"
+          ]
+        ]
+      ],
+      "u": [
+        [
+          "evaluation_id",
+          "criterion_id"
+        ],
+        [
+          "evaluation_id",
+          "criterion_id"
+        ]
+      ],
+      "checks": [
+        {
+          "name": "ck_criterion_score",
+          "sqltext": "score >= 0::numeric AND score <= 100::numeric",
+          "comment": null
+        },
+        {
+          "name": "ck_criterion_weight",
+          "sqltext": "weight > 0::numeric",
+          "comment": null
+        }
+      ]
+    },
+    {
+      "n": "example_videos",
+      "c": [
+        [
+          "id",
+          true,
+          false,
+          "VARCHAR(11)"
+        ],
+        [
+          "title",
+          false,
+          false,
+          "TEXT"
+        ],
+        [
+          "channel",
+          false,
+          false,
+          "TEXT"
+        ],
+        [
+          "duration_seconds",
+          false,
+          false,
+          "DOUBLE PRECISION"
+        ],
+        [
+          "language",
+          false,
+          false,
+          "VARCHAR(8)"
+        ],
+        [
+          "caption_kind",
+          false,
+          false,
+          "VARCHAR(16)"
+        ]
+      ],
+      "f": [],
+      "u": [],
+      "checks": [
+        {
+          "name": "ck_example_video_duration",
+          "sqltext": "duration_seconds > 0::double precision",
+          "comment": null
+        }
+      ]
+    },
+    {
+      "n": "flashcard_daily_quizzes",
+      "c": [
+        [
+          "id",
+          true,
+          false,
+          "VARCHAR(36)"
+        ],
+        [
+          "user_id",
+          false,
+          false,
+          "VARCHAR(36)"
+        ],
+        [
+          "study_date",
+          false,
+          false,
+          "DATE"
+        ],
+        [
+          "questions",
+          false,
+          false,
+          "JSONB"
+        ],
+        [
+          "answers",
+          false,
+          false,
+          "JSONB"
+        ],
+        [
+          "started_at",
+          false,
+          false,
+          "BIGINT"
+        ],
+        [
+          "finished_at",
+          false,
+          true,
+          "BIGINT"
+        ]
+      ],
+      "f": [
+        [
+          [
+            "user_id"
+          ],
+          [
+            "users.id"
+          ]
+        ]
+      ],
+      "u": [
+        [
+          "user_id",
+          "study_date"
+        ],
+        [
+          "user_id",
+          "study_date"
+        ]
+      ],
+      "checks": []
+    },
+    {
+      "n": "flashcard_decks",
+      "c": [
+        [
+          "id",
+          true,
+          false,
+          "VARCHAR(36)"
+        ],
+        [
+          "user_id",
+          false,
+          false,
+          "VARCHAR(36)"
+        ],
+        [
+          "title",
+          false,
+          false,
+          "VARCHAR(80)"
+        ],
+        [
+          "cards",
+          false,
+          false,
+          "JSONB"
+        ],
+        [
+          "updated_at",
+          false,
+          false,
+          "BIGINT"
+        ]
+      ],
+      "f": [
+        [
+          [
+            "user_id"
+          ],
+          [
+            "users.id"
+          ]
+        ]
+      ],
+      "u": [],
+      "checks": []
+    },
+    {
+      "n": "flashcard_favorites",
+      "c": [
+        [
+          "user_id",
+          true,
+          false,
+          "VARCHAR(36)"
+        ],
+        [
+          "source",
+          true,
+          false,
+          "VARCHAR(16)"
+        ],
+        [
+          "target",
+          true,
+          false,
+          "VARCHAR(128)"
+        ],
+        [
+          "card",
+          false,
+          false,
+          "JSONB"
+        ],
+        [
+          "created_at",
+          false,
+          false,
+          "BIGINT"
+        ]
+      ],
+      "f": [
+        [
+          [
+            "user_id"
+          ],
+          [
+            "users.id"
+          ]
+        ]
+      ],
+      "u": [],
+      "checks": []
+    },
+    {
+      "n": "flashcard_reminder_preferences",
+      "c": [
+        [
+          "user_id",
+          true,
+          false,
+          "VARCHAR(36)"
+        ],
+        [
+          "enabled",
+          false,
+          false,
+          "BOOLEAN"
+        ],
+        [
+          "hour",
+          false,
+          false,
+          "INTEGER"
+        ],
+        [
+          "minute",
+          false,
+          false,
+          "INTEGER"
+        ]
+      ],
+      "f": [
+        [
+          [
+            "user_id"
+          ],
+          [
+            "users.id"
+          ]
+        ]
+      ],
+      "u": [],
+      "checks": [
+        {
+          "name": "ck_flashcard_reminder_hour",
+          "sqltext": "hour >= 0 AND hour <= 23",
+          "comment": null
+        },
+        {
+          "name": "ck_flashcard_reminder_minute",
+          "sqltext": "minute >= 0 AND minute <= 59",
+          "comment": null
+        }
+      ]
+    },
+    {
+      "n": "flashcard_review_logs",
+      "c": [
+        [
+          "id",
+          true,
+          false,
+          "VARCHAR(36)"
+        ],
+        [
+          "user_id",
+          false,
+          false,
+          "VARCHAR(36)"
+        ],
+        [
+          "card_id",
+          false,
+          false,
+          "VARCHAR(160)"
+        ],
+        [
+          "session_id",
+          false,
+          false,
+          "VARCHAR(36)"
+        ],
+        [
+          "grade",
+          false,
+          false,
+          "INTEGER"
+        ],
+        [
+          "reviewed_at",
+          false,
+          false,
+          "BIGINT"
+        ],
+        [
+          "due_at",
+          false,
+          false,
+          "BIGINT"
+        ],
+        [
+          "fsrs_log",
+          false,
+          false,
+          "JSONB"
+        ]
+      ],
+      "f": [
+        [
+          [
+            "session_id"
+          ],
+          [
+            "flashcard_sessions.id"
+          ]
+        ],
+        [
+          [
+            "user_id"
+          ],
+          [
+            "users.id"
+          ]
+        ]
+      ],
+      "u": [
+        [
+          "session_id",
+          "card_id"
+        ],
+        [
+          "session_id",
+          "card_id"
+        ]
+      ],
+      "checks": [
+        {
+          "name": "ck_flashcard_review_grade",
+          "sqltext": "grade >= 0 AND grade <= 3",
+          "comment": null
+        }
+      ]
+    },
+    {
+      "n": "flashcard_schedules",
+      "c": [
+        [
+          "user_id",
+          true,
+          false,
+          "VARCHAR(36)"
+        ],
+        [
+          "card_id",
+          true,
+          false,
+          "VARCHAR(160)"
+        ],
+        [
+          "card",
+          false,
+          false,
+          "JSONB"
+        ],
+        [
+          "fsrs_card",
+          false,
+          false,
+          "JSONB"
+        ],
+        [
+          "due_at",
+          false,
+          false,
+          "BIGINT"
+        ],
+        [
+          "last_review_at",
+          false,
+          false,
+          "BIGINT"
+        ],
+        [
+          "review_count",
+          false,
+          false,
+          "INTEGER"
+        ],
+        [
+          "active",
+          false,
+          false,
+          "BOOLEAN"
+        ]
+      ],
+      "f": [
+        [
+          [
+            "user_id"
+          ],
+          [
+            "users.id"
+          ]
+        ]
+      ],
+      "u": [],
+      "checks": []
+    },
+    {
+      "n": "flashcard_sessions",
+      "c": [
+        [
+          "id",
+          true,
+          false,
+          "VARCHAR(36)"
+        ],
+        [
+          "user_id",
+          false,
+          false,
+          "VARCHAR(36)"
+        ],
+        [
+          "kind",
+          false,
+          false,
+          "VARCHAR(16)"
+        ],
+        [
+          "deck_id",
+          false,
+          false,
+          "VARCHAR(128)"
+        ],
+        [
+          "title",
+          false,
+          false,
+          "TEXT"
+        ],
+        [
+          "cards",
+          false,
+          false,
+          "JSONB"
+        ],
+        [
+          "ratings",
+          false,
+          false,
+          "JSONB"
+        ],
+        [
+          "started_at",
+          false,
+          false,
+          "BIGINT"
+        ],
+        [
+          "finished_at",
+          false,
+          true,
+          "BIGINT"
+        ],
+        [
+          "rating_times",
+          false,
+          false,
+          "JSONB"
+        ]
+      ],
+      "f": [
+        [
+          [
+            "user_id"
+          ],
+          [
+            "users.id"
+          ]
+        ]
+      ],
+      "u": [],
+      "checks": [
+        {
+          "name": "ck_flashcard_session_kind",
+          "sqltext": "kind::text = ANY (ARRAY['lesson'::character varying, 'custom'::character varying, 'favorites'::character varying]::text[])",
+          "comment": null
+        }
+      ]
+    },
+    {
+      "n": "learning_preferences",
+      "c": [
+        [
+          "user_id",
+          true,
+          false,
+          "VARCHAR(36)"
+        ],
+        [
+          "level",
+          false,
+          false,
+          "VARCHAR(16)"
+        ],
+        [
+          "goal",
+          false,
+          false,
+          "VARCHAR(24)"
+        ],
+        [
+          "daily_minutes",
+          false,
+          false,
+          "INTEGER"
+        ],
+        [
+          "level_confirmed_at",
+          false,
+          false,
+          "BIGINT"
+        ],
+        [
+          "created_at",
+          false,
+          false,
+          "BIGINT"
+        ],
+        [
+          "updated_at",
+          false,
+          false,
+          "BIGINT"
+        ],
+        [
+          "version",
+          false,
+          false,
+          "INTEGER"
+        ]
+      ],
+      "f": [
+        [
+          [
+            "user_id"
+          ],
+          [
+            "users.id"
+          ]
+        ]
+      ],
+      "u": [],
+      "checks": [
+        {
+          "name": "ck_learning_goal",
+          "sqltext": "goal::text = ANY (ARRAY['communication'::character varying, 'jlpt'::character varying, 'travel'::character varying, 'work'::character varying, 'culture'::character varying]::text[])",
+          "comment": null
+        },
+        {
+          "name": "ck_learning_level",
+          "sqltext": "level::text = ANY (ARRAY['beginner'::character varying, 'N5'::character varying, 'N4'::character varying, 'N3'::character varying, 'N2'::character varying, 'N1'::character varying]::text[])",
+          "comment": null
+        },
+        {
+          "name": "ck_learning_minutes",
+          "sqltext": "daily_minutes = ANY (ARRAY[5, 10, 15, 30, 60])",
+          "comment": null
+        },
+        {
+          "name": "ck_learning_version",
+          "sqltext": "version > 0",
+          "comment": null
+        }
+      ]
+    },
+    {
+      "n": "learning_study_days",
+      "c": [
+        [
+          "user_id",
+          true,
+          false,
+          "VARCHAR(36)"
+        ],
+        [
+          "day",
+          true,
+          false,
+          "DATE"
+        ],
+        [
+          "seconds",
+          false,
+          false,
+          "INTEGER"
+        ],
+        [
+          "intervals",
+          false,
+          false,
+          "JSON"
+        ],
+        [
+          "updated_at",
+          false,
+          false,
+          "BIGINT"
+        ]
+      ],
+      "f": [
+        [
+          [
+            "user_id"
+          ],
+          [
+            "users.id"
+          ]
+        ]
+      ],
+      "u": [],
+      "checks": [
+        {
+          "name": "ck_study_day_seconds",
+          "sqltext": "seconds >= 0 AND seconds <= 86400",
+          "comment": null
+        }
+      ]
+    },
+    {
+      "n": "matching_preferences",
+      "c": [
+        [
+          "user_id",
+          true,
+          false,
+          "VARCHAR(36)"
+        ],
+        [
+          "language_code",
+          false,
+          false,
+          "VARCHAR(35)"
+        ],
+        [
+          "own_level",
+          false,
+          false,
+          "VARCHAR(16)"
+        ],
+        [
+          "desired_min_level",
+          false,
+          true,
+          "VARCHAR(16)"
+        ],
+        [
+          "desired_max_level",
+          false,
+          true,
+          "VARCHAR(16)"
+        ],
+        [
+          "topic",
+          false,
+          true,
+          "VARCHAR(100)"
+        ],
+        [
+          "updated_at",
+          false,
+          false,
+          "TIMESTAMP"
+        ],
+        [
+          "created_at",
+          false,
+          false,
+          "TIMESTAMP"
+        ]
+      ],
+      "f": [
+        [
+          [
+            "user_id"
+          ],
+          [
+            "users.id"
+          ]
+        ]
+      ],
+      "u": [],
+      "checks": []
+    },
+    {
+      "n": "matchmaking_requests",
+      "c": [
+        [
+          "id",
+          true,
+          false,
+          "UUID"
+        ],
+        [
+          "user_id",
+          false,
+          false,
+          "VARCHAR(36)"
+        ],
+        [
+          "language_code",
+          false,
+          false,
+          "VARCHAR(35)"
+        ],
+        [
+          "own_level",
+          false,
+          false,
+          "VARCHAR(16)"
+        ],
+        [
+          "desired_min_level",
+          false,
+          true,
+          "VARCHAR(16)"
+        ],
+        [
+          "desired_max_level",
+          false,
+          true,
+          "VARCHAR(16)"
+        ],
+        [
+          "topic",
+          false,
+          true,
+          "VARCHAR(100)"
+        ],
+        [
+          "status",
+          false,
+          false,
+          "VARCHAR(16)"
+        ],
+        [
+          "matched_room_id",
+          false,
+          true,
+          "UUID"
+        ],
+        [
+          "expires_at",
+          false,
+          false,
+          "TIMESTAMP"
+        ],
+        [
+          "matched_at",
+          false,
+          true,
+          "TIMESTAMP"
+        ],
+        [
+          "cancelled_at",
+          false,
+          true,
+          "TIMESTAMP"
+        ],
+        [
+          "created_at",
+          false,
+          false,
+          "TIMESTAMP"
+        ]
+      ],
+      "f": [
+        [
+          [
+            "matched_room_id"
+          ],
+          [
+            "rooms.id"
+          ]
+        ],
+        [
+          [
+            "user_id"
+          ],
+          [
+            "users.id"
+          ]
+        ]
+      ],
+      "u": [],
+      "checks": [
+        {
+          "name": "ck_matchmaking_expiry",
+          "sqltext": "expires_at > created_at",
+          "comment": null
+        },
+        {
+          "name": "ck_matchmaking_result",
+          "sqltext": "status::text = 'matched'::text AND matched_room_id IS NOT NULL AND matched_at IS NOT NULL OR status::text <> 'matched'::text AND matched_room_id IS NULL AND matched_at IS NULL",
+          "comment": null
+        },
+        {
+          "name": "ck_matchmaking_status",
+          "sqltext": "status::text = ANY (ARRAY['searching'::character varying, 'matched'::character varying, 'cancelled'::character varying, 'expired'::character varying]::text[])",
+          "comment": null
+        }
+      ]
+    },
+    {
+      "n": "reading_attempts",
+      "c": [
+        [
+          "id",
+          true,
+          false,
+          "VARCHAR(36)"
+        ],
+        [
+          "user_id",
+          false,
+          false,
+          "VARCHAR(36)"
+        ],
+        [
+          "passage_id",
+          false,
+          false,
+          "VARCHAR(48)"
+        ],
+        [
+          "request_id",
+          false,
+          false,
+          "VARCHAR(36)"
+        ],
+        [
+          "version",
+          false,
+          false,
+          "VARCHAR(64)"
+        ],
+        [
+          "result",
+          false,
+          false,
+          "JSONB"
+        ],
+        [
+          "created_at",
+          false,
+          false,
+          "BIGINT"
+        ]
+      ],
+      "f": [
+        [
+          [
+            "passage_id"
+          ],
+          [
+            "reading_passages.id"
+          ]
+        ],
+        [
+          [
+            "user_id"
+          ],
+          [
+            "users.id"
+          ]
+        ]
+      ],
+      "u": [
+        [
+          "user_id",
+          "request_id"
+        ],
+        [
+          "user_id",
+          "request_id"
+        ]
+      ],
+      "checks": []
+    },
+    {
+      "n": "reading_insights",
+      "c": [
+        [
+          "passage_id",
+          true,
+          false,
+          "VARCHAR(48)"
+        ],
+        [
+          "kind",
+          true,
+          false,
+          "VARCHAR(64)"
+        ],
+        [
+          "source_hash",
+          false,
+          false,
+          "VARCHAR(64)"
+        ],
+        [
+          "status",
+          false,
+          false,
+          "VARCHAR(16)"
+        ],
+        [
+          "lease",
+          false,
+          true,
+          "VARCHAR(36)"
+        ],
+        [
+          "updated_at",
+          false,
+          false,
+          "BIGINT"
+        ],
+        [
+          "payload",
+          false,
+          true,
+          "JSONB"
+        ]
+      ],
+      "f": [
+        [
+          [
+            "passage_id"
+          ],
+          [
+            "reading_passages.id"
+          ]
+        ]
+      ],
+      "u": [],
+      "checks": []
+    },
+    {
+      "n": "reading_passages",
+      "c": [
+        [
+          "id",
+          true,
+          false,
+          "VARCHAR(48)"
+        ],
+        [
+          "level",
+          false,
+          false,
+          "VARCHAR(2)"
+        ],
+        [
+          "kind",
+          false,
+          false,
+          "VARCHAR(16)"
+        ],
+        [
+          "title",
+          false,
+          false,
+          "TEXT"
+        ],
+        [
+          "exercise",
+          false,
+          false,
+          "INTEGER"
+        ],
+        [
+          "paragraph",
+          false,
+          false,
+          "INTEGER"
+        ],
+        [
+          "text",
+          false,
+          false,
+          "TEXT"
+        ],
+        [
+          "source_url",
+          false,
+          false,
+          "TEXT"
+        ],
+        [
+          "questions",
+          false,
+          false,
+          "JSONB"
+        ],
+        [
+          "analysis",
+          false,
+          true,
+          "JSONB"
+        ]
+      ],
+      "f": [],
+      "u": [
+        [
+          "level",
+          "title",
+          "paragraph",
+          "source_url"
+        ],
+        [
+          "level",
+          "title",
+          "paragraph",
+          "source_url"
+        ]
+      ],
+      "checks": []
+    },
+    {
+      "n": "room_invitations",
+      "c": [
+        [
+          "id",
+          true,
+          false,
+          "UUID"
+        ],
+        [
+          "room_id",
+          false,
+          false,
+          "UUID"
+        ],
+        [
+          "invited_by",
+          false,
+          false,
+          "VARCHAR(36)"
+        ],
+        [
+          "invitee_user_id",
+          false,
+          true,
+          "VARCHAR(36)"
+        ],
+        [
+          "token_hash",
+          false,
+          false,
+          "VARCHAR(64)"
+        ],
+        [
+          "status",
+          false,
+          false,
+          "VARCHAR(16)"
+        ],
+        [
+          "expires_at",
+          false,
+          false,
+          "TIMESTAMP"
+        ],
+        [
+          "responded_at",
+          false,
+          true,
+          "TIMESTAMP"
+        ],
+        [
+          "created_at",
+          false,
+          false,
+          "TIMESTAMP"
+        ]
+      ],
+      "f": [
+        [
+          [
+            "invited_by"
+          ],
+          [
+            "users.id"
+          ]
+        ],
+        [
+          [
+            "invitee_user_id"
+          ],
+          [
+            "users.id"
+          ]
+        ],
+        [
+          [
+            "room_id"
+          ],
+          [
+            "rooms.id"
+          ]
+        ]
+      ],
+      "u": [
+        [
+          "token_hash"
+        ],
+        [
+          "token_hash"
+        ]
+      ],
+      "checks": [
+        {
+          "name": "ck_invitation_expiry",
+          "sqltext": "expires_at > created_at",
+          "comment": null
+        },
+        {
+          "name": "ck_invitation_status",
+          "sqltext": "status::text = ANY (ARRAY['pending'::character varying, 'accepted'::character varying, 'declined'::character varying, 'revoked'::character varying, 'expired'::character varying]::text[])",
+          "comment": null
+        }
+      ]
+    },
+    {
+      "n": "room_members",
+      "c": [
+        [
+          "id",
+          true,
+          false,
+          "UUID"
+        ],
+        [
+          "room_id",
+          false,
+          false,
+          "UUID"
+        ],
+        [
+          "user_id",
+          false,
+          false,
+          "VARCHAR(36)"
+        ],
+        [
+          "role",
+          false,
+          false,
+          "VARCHAR(16)"
+        ],
+        [
+          "status",
+          false,
+          false,
+          "VARCHAR(16)"
+        ],
+        [
+          "is_muted",
+          false,
+          false,
+          "BOOLEAN"
+        ],
+        [
+          "joined_at",
+          false,
+          false,
+          "TIMESTAMP"
+        ],
+        [
+          "left_at",
+          false,
+          true,
+          "TIMESTAMP"
+        ],
+        [
+          "updated_at",
+          false,
+          false,
+          "TIMESTAMP"
+        ]
+      ],
+      "f": [
+        [
+          [
+            "room_id"
+          ],
+          [
+            "rooms.id"
+          ]
+        ],
+        [
+          [
+            "user_id"
+          ],
+          [
+            "users.id"
+          ]
+        ]
+      ],
+      "u": [
+        [
+          "room_id",
+          "user_id"
+        ],
+        [
+          "room_id",
+          "user_id"
+        ]
+      ],
+      "checks": [
+        {
+          "name": "ck_member_role",
+          "sqltext": "role::text = ANY (ARRAY['host'::character varying, 'member'::character varying]::text[])",
+          "comment": null
+        },
+        {
+          "name": "ck_member_status",
+          "sqltext": "status::text = ANY (ARRAY['joined'::character varying, 'left'::character varying, 'removed'::character varying]::text[])",
+          "comment": null
+        }
+      ]
+    },
+    {
+      "n": "rooms",
+      "c": [
+        [
+          "id",
+          true,
+          false,
+          "UUID"
+        ],
+        [
+          "created_by",
+          false,
+          false,
+          "VARCHAR(36)"
+        ],
+        [
+          "title",
+          false,
+          false,
+          "VARCHAR(200)"
+        ],
+        [
+          "description",
+          false,
+          true,
+          "TEXT"
+        ],
+        [
+          "topic",
+          false,
+          true,
+          "VARCHAR(100)"
+        ],
+        [
+          "language_code",
+          false,
+          false,
+          "VARCHAR(35)"
+        ],
+        [
+          "difficulty_level",
+          false,
+          false,
+          "VARCHAR(16)"
+        ],
+        [
+          "visibility",
+          false,
+          false,
+          "VARCHAR(16)"
+        ],
+        [
+          "source",
+          false,
+          false,
+          "VARCHAR(16)"
+        ],
+        [
+          "status",
+          false,
+          false,
+          "VARCHAR(16)"
+        ],
+        [
+          "max_members",
+          false,
+          false,
+          "INTEGER"
+        ],
+        [
+          "password_hash",
+          false,
+          true,
+          "TEXT"
+        ],
+        [
+          "voice_provider_room_id",
+          false,
+          true,
+          "TEXT"
+        ],
+        [
+          "closed_at",
+          false,
+          true,
+          "TIMESTAMP"
+        ],
+        [
+          "created_at",
+          false,
+          false,
+          "TIMESTAMP"
+        ]
+      ],
+      "f": [
+        [
+          [
+            "created_by"
+          ],
+          [
+            "users.id"
+          ]
+        ]
+      ],
+      "u": [
+        [
+          "voice_provider_room_id"
+        ],
+        [
+          "voice_provider_room_id"
+        ]
+      ],
+      "checks": [
+        {
+          "name": "ck_matchmaking_room_capacity",
+          "sqltext": "source::text <> 'matchmaking'::text OR max_members = 2",
+          "comment": null
+        },
+        {
+          "name": "ck_room_capacity",
+          "sqltext": "max_members >= 2",
+          "comment": null
+        },
+        {
+          "name": "ck_room_password_visibility",
+          "sqltext": "visibility::text = 'private'::text OR password_hash IS NULL",
+          "comment": null
+        },
+        {
+          "name": "ck_room_source",
+          "sqltext": "source::text = ANY (ARRAY['manual'::character varying, 'matchmaking'::character varying]::text[])",
+          "comment": null
+        },
+        {
+          "name": "ck_room_status",
+          "sqltext": "status::text = ANY (ARRAY['open'::character varying, 'closed'::character varying]::text[])",
+          "comment": null
+        },
+        {
+          "name": "ck_room_visibility",
+          "sqltext": "visibility::text = ANY (ARRAY['public'::character varying, 'private'::character varying]::text[])",
+          "comment": null
+        }
+      ]
+    },
+    {
+      "n": "scenario_categories",
+      "c": [
+        [
+          "id",
+          true,
+          false,
+          "UUID"
+        ],
+        [
+          "name",
+          false,
+          false,
+          "VARCHAR(100)"
+        ],
+        [
+          "description",
+          false,
+          true,
+          "TEXT"
+        ],
+        [
+          "sort_order",
+          false,
+          false,
+          "INTEGER"
+        ]
+      ],
+      "f": [],
+      "u": [
+        [
+          "name"
+        ],
+        [
+          "name"
+        ]
+      ],
+      "checks": []
+    },
+    {
+      "n": "scenario_roles",
+      "c": [
+        [
+          "id",
+          true,
+          false,
+          "UUID"
+        ],
+        [
+          "scenario_id",
+          false,
+          false,
+          "UUID"
+        ],
+        [
+          "name",
+          false,
+          false,
+          "VARCHAR(100)"
+        ],
+        [
+          "description",
+          false,
+          false,
+          "TEXT"
+        ],
+        [
+          "ai_instructions",
+          false,
+          false,
+          "TEXT"
+        ],
+        [
+          "opening_message",
+          false,
+          true,
+          "TEXT"
+        ]
+      ],
+      "f": [
+        [
+          [
+            "scenario_id"
+          ],
+          [
+            "scenarios.id"
+          ]
+        ]
+      ],
+      "u": [
+        [
+          "scenario_id",
+          "name"
+        ],
+        [
+          "scenario_id",
+          "id"
+        ],
+        [
+          "scenario_id",
+          "name"
+        ],
+        [
+          "scenario_id",
+          "id"
+        ]
+      ],
+      "checks": []
+    },
+    {
+      "n": "scenarios",
+      "c": [
+        [
+          "id",
+          true,
+          false,
+          "UUID"
+        ],
+        [
+          "category_id",
+          false,
+          false,
+          "UUID"
+        ],
+        [
+          "title",
+          false,
+          false,
+          "VARCHAR(200)"
+        ],
+        [
+          "description",
+          false,
+          false,
+          "TEXT"
+        ],
+        [
+          "context",
+          false,
+          false,
+          "TEXT"
+        ],
+        [
+          "learning_objectives",
+          false,
+          false,
+          "TEXT"
+        ],
+        [
+          "language_code",
+          false,
+          false,
+          "VARCHAR(35)"
+        ],
+        [
+          "difficulty_level",
+          false,
+          false,
+          "VARCHAR(16)"
+        ],
+        [
+          "estimated_duration_minutes",
+          false,
+          false,
+          "INTEGER"
+        ],
+        [
+          "status",
+          false,
+          false,
+          "VARCHAR(16)"
+        ],
+        [
+          "updated_at",
+          false,
+          false,
+          "TIMESTAMP"
+        ],
+        [
+          "created_at",
+          false,
+          false,
+          "TIMESTAMP"
+        ]
+      ],
+      "f": [
+        [
+          [
+            "category_id"
+          ],
+          [
+            "scenario_categories.id"
+          ]
+        ]
+      ],
+      "u": [],
+      "checks": [
+        {
+          "name": "ck_scenario_duration",
+          "sqltext": "estimated_duration_minutes > 0",
+          "comment": null
+        },
+        {
+          "name": "ck_scenario_status",
+          "sqltext": "status::text = ANY (ARRAY['draft'::character varying, 'published'::character varying, 'archived'::character varying]::text[])",
+          "comment": null
+        }
+      ]
+    },
+    {
+      "n": "session_evaluations",
+      "c": [
+        [
+          "id",
+          true,
+          false,
+          "UUID"
+        ],
+        [
+          "session_id",
+          false,
+          false,
+          "UUID"
+        ],
+        [
+          "status",
+          false,
+          false,
+          "VARCHAR(24)"
+        ],
+        [
+          "overall_score",
+          false,
+          true,
+          "NUMERIC(5, 2)"
+        ],
+        [
+          "summary",
+          false,
+          true,
+          "TEXT"
+        ],
+        [
+          "strengths",
+          false,
+          true,
+          "TEXT"
+        ],
+        [
+          "improvement_suggestions",
+          false,
+          true,
+          "TEXT"
+        ],
+        [
+          "model_name",
+          false,
+          true,
+          "VARCHAR(200)"
+        ],
+        [
+          "rubric_version",
+          false,
+          false,
+          "VARCHAR(50)"
+        ],
+        [
+          "error_message",
+          false,
+          true,
+          "TEXT"
+        ],
+        [
+          "completed_at",
+          false,
+          true,
+          "TIMESTAMP"
+        ],
+        [
+          "created_at",
+          false,
+          false,
+          "TIMESTAMP"
+        ],
+        [
+          "result_payload",
+          false,
+          true,
+          "JSONB"
+        ],
+        [
+          "processing_started_at",
+          false,
+          true,
+          "TIMESTAMP"
+        ],
+        [
+          "attempt_id",
+          false,
+          true,
+          "UUID"
+        ]
+      ],
+      "f": [
+        [
+          [
+            "session_id"
+          ],
+          [
+            "conversation_sessions.id"
+          ]
+        ]
+      ],
+      "u": [
+        [
+          "session_id"
+        ],
+        [
+          "session_id"
+        ]
+      ],
+      "checks": [
+        {
+          "name": "ck_evaluation_completed",
+          "sqltext": "status::text <> 'completed'::text OR overall_score IS NOT NULL AND completed_at IS NOT NULL",
+          "comment": null
+        },
+        {
+          "name": "ck_evaluation_score",
+          "sqltext": "overall_score >= 0::numeric AND overall_score <= 100::numeric",
+          "comment": null
+        },
+        {
+          "name": "ck_evaluation_status",
+          "sqltext": "status::text = ANY (ARRAY['pending'::character varying, 'processing'::character varying, 'completed'::character varying, 'failed'::character varying, 'insufficient_data'::character varying]::text[])",
+          "comment": null
+        }
+      ]
+    },
+    {
+      "n": "shadowing_jobs",
+      "c": [
+        [
+          "id",
+          true,
+          false,
+          "VARCHAR(36)"
+        ],
+        [
+          "video_id",
+          false,
+          false,
+          "VARCHAR(11)"
+        ],
+        [
+          "status",
+          false,
+          false,
+          "VARCHAR(24)"
+        ],
+        [
+          "title",
+          false,
+          false,
+          "TEXT"
+        ],
+        [
+          "error_code",
+          false,
+          true,
+          "VARCHAR(40)"
+        ],
+        [
+          "error_message",
+          false,
+          true,
+          "TEXT"
+        ],
+        [
+          "attempts",
+          false,
+          false,
+          "INTEGER"
+        ],
+        [
+          "created_at",
+          false,
+          false,
+          "BIGINT"
+        ],
+        [
+          "updated_at",
+          false,
+          false,
+          "BIGINT"
+        ],
+        [
+          "last_enqueued_at",
+          false,
+          true,
+          "BIGINT"
+        ],
+        [
+          "lease_token",
+          false,
+          true,
+          "VARCHAR(36)"
+        ],
+        [
+          "lease_expires_at",
+          false,
+          true,
+          "BIGINT"
+        ],
+        [
+          "raw_captions",
+          false,
+          true,
+          "JSON"
+        ],
+        [
+          "display_captions",
+          false,
+          true,
+          "JSON"
+        ],
+        [
+          "word_analysis",
+          false,
+          true,
+          "JSON"
+        ],
+        [
+          "quiz_data",
+          false,
+          true,
+          "JSON"
+        ],
+        [
+          "quiz_lease_token",
+          false,
+          true,
+          "VARCHAR(36)"
+        ],
+        [
+          "quiz_lease_expires_at",
+          false,
+          true,
+          "BIGINT"
+        ]
+      ],
+      "f": [],
+      "u": [
+        [
+          "video_id"
+        ],
+        [
+          "video_id"
+        ]
+      ],
+      "checks": []
+    },
+    {
+      "n": "shadowing_requests",
+      "c": [
+        [
+          "user_id",
+          true,
+          false,
+          "VARCHAR(36)"
+        ],
+        [
+          "job_id",
+          true,
+          false,
+          "VARCHAR(36)"
+        ],
+        [
+          "created_at",
+          false,
+          false,
+          "BIGINT"
+        ]
+      ],
+      "f": [
+        [
+          [
+            "job_id"
+          ],
+          [
+            "shadowing_jobs.id"
+          ]
+        ],
+        [
+          [
+            "user_id"
+          ],
+          [
+            "users.id"
+          ]
+        ]
+      ],
+      "u": [],
+      "checks": []
+    },
+    {
+      "n": "shadowing_translations",
+      "c": [
+        [
+          "id",
+          true,
+          false,
+          "VARCHAR(36)"
+        ],
+        [
+          "job_id",
+          false,
+          false,
+          "VARCHAR(36)"
+        ],
+        [
+          "language",
+          false,
+          false,
+          "VARCHAR(8)"
+        ],
+        [
+          "source_hash",
+          false,
+          false,
+          "VARCHAR(64)"
+        ],
+        [
+          "source",
+          false,
+          false,
+          "JSON"
+        ],
+        [
+          "translations",
+          false,
+          false,
+          "JSON"
+        ],
+        [
+          "model",
+          false,
+          false,
+          "VARCHAR(100)"
+        ],
+        [
+          "prompt_version",
+          false,
+          false,
+          "INTEGER"
+        ],
+        [
+          "status",
+          false,
+          false,
+          "VARCHAR(16)"
+        ],
+        [
+          "attempts",
+          false,
+          false,
+          "INTEGER"
+        ],
+        [
+          "error_message",
+          false,
+          true,
+          "TEXT"
+        ],
+        [
+          "created_at",
+          false,
+          false,
+          "BIGINT"
+        ],
+        [
+          "updated_at",
+          false,
+          false,
+          "BIGINT"
+        ],
+        [
+          "last_enqueued_at",
+          false,
+          true,
+          "BIGINT"
+        ],
+        [
+          "lease_token",
+          false,
+          true,
+          "VARCHAR(36)"
+        ],
+        [
+          "lease_expires_at",
+          false,
+          true,
+          "BIGINT"
+        ]
+      ],
+      "f": [
+        [
+          [
+            "job_id"
+          ],
+          [
+            "shadowing_jobs.id"
+          ]
+        ]
+      ],
+      "u": [
+        [
+          "job_id"
+        ],
+        [
+          "job_id"
+        ]
+      ],
+      "checks": []
+    },
+    {
+      "n": "users",
+      "c": [
+        [
+          "id",
+          true,
+          false,
+          "VARCHAR(36)"
+        ],
+        [
+          "name",
+          false,
+          false,
+          "VARCHAR(100)"
+        ],
+        [
+          "email",
+          false,
+          false,
+          "VARCHAR(254)"
+        ],
+        [
+          "phone",
+          false,
+          false,
+          "VARCHAR(20)"
+        ],
+        [
+          "password_hash",
+          false,
+          true,
+          "TEXT"
+        ],
+        [
+          "email_verified",
+          false,
+          false,
+          "BOOLEAN"
+        ],
+        [
+          "phone_verified",
+          false,
+          false,
+          "BOOLEAN"
+        ],
+        [
+          "active",
+          false,
+          false,
+          "BOOLEAN"
+        ],
+        [
+          "created_at",
+          false,
+          false,
+          "BIGINT"
+        ]
+      ],
+      "f": [],
+      "u": [],
+      "checks": []
+    },
+    {
+      "n": "video_caption_segments",
+      "c": [
+        [
+          "id",
+          true,
+          false,
+          "VARCHAR(128)"
+        ],
+        [
+          "video_id",
+          false,
+          false,
+          "VARCHAR(11)"
+        ],
+        [
+          "sequence",
+          false,
+          false,
+          "INTEGER"
+        ],
+        [
+          "text",
+          false,
+          false,
+          "TEXT"
+        ],
+        [
+          "search_text",
+          false,
+          false,
+          "TEXT"
+        ],
+        [
+          "start_seconds",
+          false,
+          false,
+          "DOUBLE PRECISION"
+        ],
+        [
+          "end_seconds",
+          false,
+          false,
+          "DOUBLE PRECISION"
+        ]
+      ],
+      "f": [
+        [
+          [
+            "video_id"
+          ],
+          [
+            "example_videos.id"
+          ]
+        ]
+      ],
+      "u": [
+        [
+          "video_id",
+          "sequence"
+        ],
+        [
+          "video_id",
+          "sequence"
+        ]
+      ],
+      "checks": [
+        {
+          "name": "ck_video_caption_times",
+          "sqltext": "sequence > 0 AND start_seconds >= 0::double precision AND end_seconds > start_seconds",
+          "comment": null
+        }
+      ]
+    },
+    {
+      "n": "vocabulary_game_rooms",
+      "c": [
+        [
+          "id",
+          true,
+          false,
+          "VARCHAR(36)"
+        ],
+        [
+          "code",
+          false,
+          false,
+          "VARCHAR(6)"
+        ],
+        [
+          "host_id",
+          false,
+          false,
+          "VARCHAR(36)"
+        ],
+        [
+          "mode",
+          false,
+          false,
+          "VARCHAR(8)"
+        ],
+        [
+          "status",
+          false,
+          false,
+          "VARCHAR(16)"
+        ],
+        [
+          "state",
+          false,
+          false,
+          "JSONB"
+        ],
+        [
+          "version",
+          false,
+          false,
+          "INTEGER"
+        ],
+        [
+          "updated_at",
+          false,
+          false,
+          "BIGINT"
+        ],
+        [
+          "expires_at",
+          false,
+          false,
+          "BIGINT"
+        ]
+      ],
+      "f": [
+        [
+          [
+            "host_id"
+          ],
+          [
+            "users.id"
+          ]
+        ]
+      ],
+      "u": [
+        [
+          "code"
+        ]
+      ],
+      "checks": [
+        {
+          "name": "ck_game_mode",
+          "sqltext": "mode::text = ANY (ARRAY['write'::character varying, 'read'::character varying]::text[])",
+          "comment": null
+        }
+      ]
+    },
+    {
+      "n": "vocabulary_lessons",
+      "c": [
+        [
+          "id",
+          true,
+          false,
+          "VARCHAR(100)"
+        ],
+        [
+          "textbook_id",
+          false,
+          false,
+          "VARCHAR(64)"
+        ],
+        [
+          "unit_number",
+          false,
+          false,
+          "INTEGER"
+        ],
+        [
+          "unit_title",
+          false,
+          false,
+          "TEXT"
+        ],
+        [
+          "number",
+          false,
+          false,
+          "INTEGER"
+        ],
+        [
+          "title",
+          false,
+          false,
+          "TEXT"
+        ],
+        [
+          "source_url",
+          false,
+          false,
+          "TEXT"
+        ],
+        [
+          "audio_urls",
+          false,
+          false,
+          "JSONB"
+        ]
+      ],
+      "f": [
+        [
+          [
+            "textbook_id"
+          ],
+          [
+            "vocabulary_textbooks.id"
+          ]
+        ]
+      ],
+      "u": [
+        [
+          "textbook_id",
+          "unit_number",
+          "number"
+        ],
+        [
+          "textbook_id",
+          "unit_number",
+          "number"
+        ]
+      ],
+      "checks": [
+        {
+          "name": "ck_vocabulary_lesson_order",
+          "sqltext": "unit_number > 0 AND number > 0",
+          "comment": null
+        }
+      ]
+    },
+    {
+      "n": "vocabulary_textbooks",
+      "c": [
+        [
+          "id",
+          true,
+          false,
+          "VARCHAR(64)"
+        ],
+        [
+          "title",
+          false,
+          false,
+          "TEXT"
+        ],
+        [
+          "level",
+          false,
+          false,
+          "VARCHAR(2)"
+        ],
+        [
+          "source_url",
+          false,
+          false,
+          "TEXT"
+        ]
+      ],
+      "f": [],
+      "u": [],
+      "checks": [
+        {
+          "name": "ck_vocabulary_level",
+          "sqltext": "level::text = ANY (ARRAY['N5'::character varying, 'N4'::character varying, 'N3'::character varying, 'N2'::character varying, 'N1'::character varying]::text[])",
+          "comment": null
+        }
+      ]
+    },
+    {
+      "n": "vocabulary_words",
+      "c": [
+        [
+          "id",
+          true,
+          false,
+          "VARCHAR(128)"
+        ],
+        [
+          "lesson_id",
+          false,
+          false,
+          "VARCHAR(100)"
+        ],
+        [
+          "number",
+          false,
+          false,
+          "INTEGER"
+        ],
+        [
+          "word",
+          false,
+          false,
+          "TEXT"
+        ],
+        [
+          "reading",
+          false,
+          false,
+          "TEXT"
+        ],
+        [
+          "meaning_vi",
+          false,
+          false,
+          "TEXT"
+        ],
+        [
+          "han_viet",
+          false,
+          true,
+          "TEXT"
+        ],
+        [
+          "details",
+          false,
+          false,
+          "JSONB"
+        ]
+      ],
+      "f": [
+        [
+          [
+            "lesson_id"
+          ],
+          [
+            "vocabulary_lessons.id"
+          ]
+        ]
+      ],
+      "u": [
+        [
+          "lesson_id",
+          "number"
+        ],
+        [
+          "lesson_id",
+          "number"
+        ]
+      ],
+      "checks": [
+        {
+          "name": "ck_vocabulary_word_number",
+          "sqltext": "number > 0",
+          "comment": null
+        }
+      ]
+    },
+    {
+      "n": "writing_drafts",
+      "c": [
+        [
+          "id",
+          true,
+          false,
+          "VARCHAR(64)"
+        ],
+        [
+          "user_id",
+          false,
+          false,
+          "VARCHAR(36)"
+        ],
+        [
+          "prompt_id",
+          false,
+          false,
+          "VARCHAR(64)"
+        ],
+        [
+          "text",
+          false,
+          false,
+          "TEXT"
+        ],
+        [
+          "word_count",
+          false,
+          false,
+          "INTEGER"
+        ],
+        [
+          "status",
+          false,
+          false,
+          "VARCHAR(16)"
+        ],
+        [
+          "created_at",
+          false,
+          false,
+          "BIGINT"
+        ],
+        [
+          "updated_at",
+          false,
+          false,
+          "BIGINT"
+        ]
+      ],
+      "f": [
+        [
+          [
+            "prompt_id"
+          ],
+          [
+            "writing_prompts.id"
+          ]
+        ],
+        [
+          [
+            "user_id"
+          ],
+          [
+            "users.id"
+          ]
+        ]
+      ],
+      "u": [],
+      "checks": []
+    },
+    {
+      "n": "writing_prompts",
+      "c": [
+        [
+          "id",
+          true,
+          false,
+          "VARCHAR(64)"
+        ],
+        [
+          "title",
+          false,
+          false,
+          "VARCHAR(160)"
+        ],
+        [
+          "level",
+          false,
+          false,
+          "VARCHAR(8)"
+        ],
+        [
+          "prompt_type",
+          false,
+          false,
+          "VARCHAR(24)"
+        ],
+        [
+          "instruction",
+          false,
+          false,
+          "TEXT"
+        ],
+        [
+          "model_hint",
+          false,
+          false,
+          "TEXT"
+        ],
+        [
+          "sort_order",
+          false,
+          false,
+          "INTEGER"
+        ],
+        [
+          "created_at",
+          false,
+          false,
+          "BIGINT"
+        ],
+        [
+          "updated_at",
+          false,
+          false,
+          "BIGINT"
+        ],
+        [
+          "category",
+          false,
+          false,
+          "VARCHAR(24)"
+        ]
+      ],
+      "f": [],
+      "u": [],
+      "checks": []
+    },
+    {
+      "n": "writing_submissions",
+      "c": [
+        [
+          "id",
+          true,
+          false,
+          "VARCHAR(64)"
+        ],
+        [
+          "user_id",
+          false,
+          false,
+          "VARCHAR(36)"
+        ],
+        [
+          "prompt_id",
+          false,
+          true,
+          "VARCHAR(64)"
+        ],
+        [
+          "prompt_title",
+          false,
+          false,
+          "VARCHAR(160)"
+        ],
+        [
+          "text",
+          false,
+          false,
+          "TEXT"
+        ],
+        [
+          "corrected_text",
+          false,
+          false,
+          "TEXT"
+        ],
+        [
+          "score",
+          false,
+          false,
+          "INTEGER"
+        ],
+        [
+          "feedback",
+          false,
+          false,
+          "TEXT"
+        ],
+        [
+          "submitted_at",
+          false,
+          false,
+          "BIGINT"
+        ],
+        [
+          "created_at",
+          false,
+          false,
+          "BIGINT"
+        ],
+        [
+          "updated_at",
+          false,
+          false,
+          "BIGINT"
+        ],
+        [
+          "assessment",
+          false,
+          true,
+          "JSON"
+        ]
+      ],
+      "f": [
+        [
+          [
+            "prompt_id"
+          ],
+          [
+            "writing_prompts.id"
+          ]
+        ],
+        [
+          [
+            "user_id"
+          ],
+          [
+            "users.id"
+          ]
+        ]
+      ],
+      "u": [],
+      "checks": []
+    }
+  ]
+}

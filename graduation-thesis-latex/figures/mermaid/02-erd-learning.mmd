@@ -1,0 +1,60 @@
+---
+title: Learning and Flashcard Collections
+---
+erDiagram
+    direction TB
+
+    %% PK = primary key; FK = foreign key; UK = single-column unique constraint.
+    %% Attributes marked nullable permit NULL. Composite uniqueness is listed in comments.
+    %% External reference tables show only referenced columns and primary keys.
+
+    users {
+        varchar id PK "VARCHAR(36)"
+        varchar name "VARCHAR(100)"
+        varchar email "VARCHAR(254)"
+        varchar phone "VARCHAR(20)"
+    }
+
+    learning_preferences {
+        varchar user_id PK,FK "VARCHAR(36)"
+        varchar level "VARCHAR(16)"
+        varchar goal "VARCHAR(24)"
+        integer daily_minutes "INTEGER"
+    }
+
+    learning_study_days {
+        varchar user_id PK,FK "VARCHAR(36)"
+        date day PK "DATE"
+        integer seconds "INTEGER"
+        json intervals "JSON"
+        bigint updated_at "BIGINT"
+    }
+
+    flashcard_decks {
+        varchar id PK "VARCHAR(36)"
+        varchar user_id FK "VARCHAR(36)"
+        varchar title "VARCHAR(80)"
+        json cards "JSON"
+        bigint updated_at "BIGINT"
+    }
+
+    flashcard_favorites {
+        varchar user_id PK,FK "VARCHAR(36)"
+        varchar source PK "VARCHAR(16)"
+        varchar target PK "VARCHAR(128)"
+        json card "JSON"
+        bigint created_at "BIGINT"
+    }
+
+    flashcard_reminder_preferences {
+        varchar user_id PK,FK "VARCHAR(36)"
+        boolean enabled "BOOLEAN"
+        integer hour "INTEGER"
+        integer minute "INTEGER"
+    }
+
+    users ||--o| learning_preferences : "user_id"
+    users ||--o{ learning_study_days : "user_id"
+    users ||..o{ flashcard_decks : "user_id"
+    users ||--o{ flashcard_favorites : "user_id"
+    users ||--o| flashcard_reminder_preferences : "user_id"

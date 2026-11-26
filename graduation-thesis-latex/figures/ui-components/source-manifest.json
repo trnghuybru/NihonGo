@@ -1,0 +1,76 @@
+{
+  "content": "Crops of existing real application UI captures using synthetic demonstration data. No UI changes or generated components.",
+  "original_manifest": "frontend/web/landing/media-manifest.json",
+  "crops": [
+    {
+      "output": "home-review-card.png",
+      "source": "frontend/public/landing/web-home.webp",
+      "crop_xyxy": [
+        307,
+        663,
+        925,
+        940
+      ]
+    },
+    {
+      "output": "desktop-navigation.png",
+      "source": "frontend/public/landing/web-home.webp",
+      "crop_xyxy": [
+        12,
+        130,
+        252,
+        463
+      ]
+    },
+    {
+      "output": "mobile-navigation.png",
+      "source": "frontend/public/landing/app-practice.webp",
+      "crop_xyxy": [
+        25,
+        1419,
+        738,
+        1601
+      ]
+    },
+    {
+      "output": "shadowing-controls.png",
+      "source": "frontend/public/landing/web-shadowing.webp",
+      "crop_xyxy": [
+        285,
+        620,
+        1138,
+        853
+      ]
+    },
+    {
+      "output": "conversation-bubbles.png",
+      "source": "frontend/public/landing/web-speaking-conversation.webp",
+      "crop_xyxy": [
+        924,
+        222,
+        1418,
+        510
+      ]
+    },
+    {
+      "output": "writing-feedback.png",
+      "source": "frontend/public/landing/web-writing-feedback.webp",
+      "crop_xyxy": [
+        280,
+        334,
+        1400,
+        775
+      ]
+    },
+    {
+      "output": "mobile-lesson-components.png",
+      "source": "frontend/public/landing/app-lessons.webp",
+      "crop_xyxy": [
+        25,
+        300,
+        735,
+        720
+      ]
+    }
+  ]
+}

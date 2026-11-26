@@ -1,0 +1,116 @@
+---
+title: Rooms and Matchmaking
+---
+erDiagram
+    direction TB
+
+    %% Source: live local PostgreSQL catalog; schema public.
+    %% Snapshot: 2026-11-25T13:12:14.564538+00:00
+    %% PK = primary key; FK = foreign key; UK = single-column UNIQUE.
+    %% Composite UNIQUE constraints appear as comments.
+
+    users {
+        varchar_36 id PK "VARCHAR(36)"
+        varchar_100 name "VARCHAR(100)"
+        varchar_254 email "VARCHAR(254)"
+        varchar_20 phone "VARCHAR(20)"
+        text password_hash "TEXT; nullable"
+        boolean email_verified "BOOLEAN"
+        boolean phone_verified "BOOLEAN"
+        boolean active "BOOLEAN"
+        bigint created_at "BIGINT"
+    }
+
+    rooms {
+        uuid id PK "UUID"
+        varchar_36 created_by FK "VARCHAR(36)"
+        varchar_200 title "VARCHAR(200)"
+        text description "TEXT; nullable"
+        varchar_100 topic "VARCHAR(100); nullable"
+        varchar_35 language_code "VARCHAR(35)"
+        varchar_16 difficulty_level "VARCHAR(16)"
+        varchar_16 visibility "VARCHAR(16)"
+        varchar_16 source "VARCHAR(16)"
+        varchar_16 status "VARCHAR(16)"
+        integer max_members "INTEGER"
+        text password_hash "TEXT; nullable"
+        text voice_provider_room_id UK "TEXT; nullable"
+        timestamp closed_at "TIMESTAMP; nullable"
+        timestamp created_at "TIMESTAMP"
+    }
+
+    %% UNIQUE room_members (room_id, user_id)
+    %% UNIQUE room_members (room_id, user_id)
+    room_members {
+        uuid id PK "UUID"
+        uuid room_id FK "UUID"
+        varchar_36 user_id FK "VARCHAR(36)"
+        varchar_16 role "VARCHAR(16)"
+        varchar_16 status "VARCHAR(16)"
+        boolean is_muted "BOOLEAN"
+        timestamp joined_at "TIMESTAMP"
+        timestamp left_at "TIMESTAMP; nullable"
+        timestamp updated_at "TIMESTAMP"
+    }
+
+    room_invitations {
+        uuid id PK "UUID"
+        uuid room_id FK "UUID"
+        varchar_36 invited_by FK "VARCHAR(36)"
+        varchar_36 invitee_user_id FK "VARCHAR(36); nullable"
+        varchar_64 token_hash UK "VARCHAR(64)"
+        varchar_16 status "VARCHAR(16)"
+        timestamp expires_at "TIMESTAMP"
+        timestamp responded_at "TIMESTAMP; nullable"
+        timestamp created_at "TIMESTAMP"
+    }
+
+    matching_preferences {
+        varchar_36 user_id PK,FK "VARCHAR(36)"
+        varchar_35 language_code "VARCHAR(35)"
+        varchar_16 own_level "VARCHAR(16)"
+        varchar_16 desired_min_level "VARCHAR(16); nullable"
+        varchar_16 desired_max_level "VARCHAR(16); nullable"
+        varchar_100 topic "VARCHAR(100); nullable"
+        timestamp updated_at "TIMESTAMP"
+        timestamp created_at "TIMESTAMP"
+    }
+
+    matchmaking_requests {
+        uuid id PK "UUID"
+        varchar_36 user_id FK "VARCHAR(36)"
+        varchar_35 language_code "VARCHAR(35)"
+        varchar_16 own_level "VARCHAR(16)"
+        varchar_16 desired_min_level "VARCHAR(16); nullable"
+        varchar_16 desired_max_level "VARCHAR(16); nullable"
+        varchar_100 topic "VARCHAR(100); nullable"
+        varchar_16 status "VARCHAR(16)"
+        uuid matched_room_id FK "UUID; nullable"
+        timestamp expires_at "TIMESTAMP"
+        timestamp matched_at "TIMESTAMP; nullable"
+        timestamp cancelled_at "TIMESTAMP; nullable"
+        timestamp created_at "TIMESTAMP"
+    }
+
+    vocabulary_game_rooms {
+        varchar_36 id PK "VARCHAR(36)"
+        varchar_6 code UK "VARCHAR(6)"
+        varchar_36 host_id FK "VARCHAR(36)"
+        varchar_8 mode "VARCHAR(8)"
+        varchar_16 status "VARCHAR(16)"
+        jsonb state "JSONB"
+        integer version "INTEGER"
+        bigint updated_at "BIGINT"
+        bigint expires_at "BIGINT"
+    }
+
+    users ||..o{ rooms : "created_by"
+    rooms ||..o{ room_members : "room_id"
+    users ||..o{ room_members : "user_id"
+    users ||..o{ room_invitations : "invited_by"
+    users |o..o{ room_invitations : "invitee_user_id"
+    rooms ||..o{ room_invitations : "room_id"
+    users ||--o| matching_preferences : "user_id"
+    rooms |o..o{ matchmaking_requests : "matched_room_id"
+    users ||..o{ matchmaking_requests : "user_id"
+    users ||..o{ vocabulary_game_rooms : "host_id"

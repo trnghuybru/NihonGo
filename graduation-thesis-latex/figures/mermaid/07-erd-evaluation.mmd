@@ -1,0 +1,91 @@
+---
+title: Conversation Records and Evaluation
+---
+erDiagram
+    direction TB
+
+    %% PK = primary key; FK = foreign key; UK = single-column unique constraint.
+    %% Attributes marked nullable permit NULL. Composite uniqueness is listed in comments.
+    %% External reference tables show only referenced columns and primary keys.
+
+    conversation_sessions {
+        char id PK "CHAR(32)"
+        varchar user_id FK "VARCHAR(36)"
+        char scenario_id FK "CHAR(32)"
+        char scenario_role_id FK "CHAR(32)"
+        char retry_of_session_id FK "CHAR(32); nullable"
+        json scenario_snapshot "JSON"
+        varchar status "VARCHAR(16)"
+        varchar current_input_mode "VARCHAR(8)"
+    }
+
+    %% UNIQUE conversation_messages (session_id, id)
+    %% UNIQUE conversation_messages (session_id, sequence_number)
+    conversation_messages {
+        char id PK "CHAR(32)"
+        char session_id FK "CHAR(32)"
+        bigint sequence_number "BIGINT"
+        varchar speaker "VARCHAR(16)"
+        varchar input_mode "VARCHAR(16)"
+    }
+
+    session_evaluations {
+        char id PK "CHAR(32)"
+        char session_id FK,UK "CHAR(32)"
+        varchar status "VARCHAR(24)"
+        numeric overall_score "NUMERIC(5, 2); nullable"
+        text summary "TEXT; nullable"
+    }
+
+    conversation_audio_assets {
+        char id PK "CHAR(32)"
+        char session_id FK "CHAR(32)"
+        char message_id FK "CHAR(32); nullable"
+        varchar asset_type "VARCHAR(24)"
+        text storage_key UK "TEXT"
+        varchar mime_type "VARCHAR(100)"
+    }
+
+    %% UNIQUE evaluation_scores (evaluation_id, criterion_id)
+    evaluation_scores {
+        char id PK "CHAR(32)"
+        char evaluation_id FK "CHAR(32)"
+        char criterion_id FK "CHAR(32)"
+        varchar criterion_name_snapshot "VARCHAR(100)"
+        numeric weight "NUMERIC(8, 4)"
+        numeric score "NUMERIC(5, 2)"
+    }
+
+    evaluation_criteria {
+        char id PK "CHAR(32)"
+        varchar code UK "VARCHAR(50)"
+        varchar name "VARCHAR(100)"
+        text description "TEXT"
+    }
+
+    %% scenario_roles: reference from another diagram.
+    scenario_roles {
+        char id PK "CHAR(32)"
+        char scenario_id "CHAR(32)"
+    }
+
+    %% scenarios: reference from another diagram.
+    scenarios {
+        char id PK "CHAR(32)"
+    }
+
+    %% users: reference from another diagram.
+    users {
+        varchar id PK "VARCHAR(36)"
+    }
+
+    conversation_sessions |o..o{ conversation_sessions : "retry_of_session_id"
+    scenarios ||..o{ conversation_sessions : "scenario_id"
+    scenario_roles ||..o{ conversation_sessions : "scenario_id + scenario_role_id"
+    users ||..o{ conversation_sessions : "user_id"
+    conversation_sessions ||..o{ conversation_messages : "session_id"
+    conversation_sessions ||..o| session_evaluations : "session_id"
+    conversation_sessions ||..o{ conversation_audio_assets : "session_id"
+    conversation_messages |o..o{ conversation_audio_assets : "session_id + message_id"
+    evaluation_criteria ||..o{ evaluation_scores : "criterion_id"
+    session_evaluations ||..o{ evaluation_scores : "evaluation_id"

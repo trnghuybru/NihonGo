@@ -1,0 +1,76 @@
+---
+title: Vocabulary and Dictionary
+---
+erDiagram
+    direction TB
+
+    %% PK = primary key; FK = foreign key; UK = single-column unique constraint.
+    %% Attributes marked nullable permit NULL. Composite uniqueness is listed in comments.
+    %% External reference tables show only referenced columns and primary keys.
+
+    vocabulary_textbooks {
+        varchar id PK "VARCHAR(64)"
+        text title "TEXT"
+        varchar level "VARCHAR(2)"
+        text source_url "TEXT"
+    }
+
+    %% UNIQUE vocabulary_lessons (textbook_id, unit_number, number)
+    vocabulary_lessons {
+        varchar id PK "VARCHAR(100)"
+        varchar textbook_id FK "VARCHAR(64)"
+        integer unit_number "INTEGER"
+        text unit_title "TEXT"
+        integer number "INTEGER"
+    }
+
+    %% UNIQUE vocabulary_words (lesson_id, number)
+    vocabulary_words {
+        varchar id PK "VARCHAR(128)"
+        varchar lesson_id FK "VARCHAR(100)"
+        integer number "INTEGER"
+        text word "TEXT"
+        text reading "TEXT"
+    }
+
+    dictionary_entries {
+        varchar id PK "VARCHAR(80)"
+        text word "TEXT"
+        text reading "TEXT"
+        json content "JSON"
+    }
+
+    %% UNIQUE dictionary_terms (entry_id, kind, text)
+    dictionary_terms {
+        integer id PK "INTEGER"
+        varchar entry_id FK "VARCHAR(80)"
+        varchar kind "VARCHAR(16)"
+        text text "TEXT"
+    }
+
+    dictionary_kanji {
+        varchar literal PK "VARCHAR(4)"
+        json content "JSON"
+        text search_text "TEXT"
+        integer strokes "INTEGER"
+    }
+
+    dictionary_sources {
+        varchar id PK "VARCHAR(64)"
+        json content "JSON"
+    }
+
+    dictionary_history {
+        varchar user_id PK,FK "VARCHAR(36)"
+        json items "JSON"
+    }
+
+    %% users: reference from another diagram.
+    users {
+        varchar id PK "VARCHAR(36)"
+    }
+
+    vocabulary_textbooks ||..o{ vocabulary_lessons : "textbook_id"
+    vocabulary_lessons ||..o{ vocabulary_words : "lesson_id"
+    dictionary_entries ||..o{ dictionary_terms : "entry_id"
+    users ||--o| dictionary_history : "user_id"

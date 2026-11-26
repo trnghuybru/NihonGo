@@ -1,0 +1,106 @@
+---
+title: Reading and Writing
+---
+erDiagram
+    direction TB
+
+    %% Source: live local PostgreSQL catalog; schema public.
+    %% Snapshot: 2026-11-25T13:12:14.564538+00:00
+    %% PK = primary key; FK = foreign key; UK = single-column UNIQUE.
+    %% Composite UNIQUE constraints appear as comments.
+
+    users {
+        varchar_36 id PK "VARCHAR(36)"
+        varchar_100 name "VARCHAR(100)"
+        varchar_254 email "VARCHAR(254)"
+        varchar_20 phone "VARCHAR(20)"
+        text password_hash "TEXT; nullable"
+        boolean email_verified "BOOLEAN"
+        boolean phone_verified "BOOLEAN"
+        boolean active "BOOLEAN"
+        bigint created_at "BIGINT"
+    }
+
+    %% UNIQUE reading_passages (level, title, paragraph, source_url)
+    %% UNIQUE reading_passages (level, title, paragraph, source_url)
+    reading_passages {
+        varchar_48 id PK "VARCHAR(48)"
+        varchar_2 level "VARCHAR(2)"
+        varchar_16 kind "VARCHAR(16)"
+        text title "TEXT"
+        integer exercise "INTEGER"
+        integer paragraph "INTEGER"
+        text text "TEXT"
+        text source_url "TEXT"
+        jsonb questions "JSONB"
+        jsonb analysis "JSONB; nullable"
+    }
+
+    %% UNIQUE reading_attempts (user_id, request_id)
+    %% UNIQUE reading_attempts (user_id, request_id)
+    reading_attempts {
+        varchar_36 id PK "VARCHAR(36)"
+        varchar_36 user_id FK "VARCHAR(36)"
+        varchar_48 passage_id FK "VARCHAR(48)"
+        varchar_36 request_id "VARCHAR(36)"
+        varchar_64 version "VARCHAR(64)"
+        jsonb result "JSONB"
+        bigint created_at "BIGINT"
+    }
+
+    reading_insights {
+        varchar_48 passage_id PK,FK "VARCHAR(48)"
+        varchar_64 kind PK "VARCHAR(64)"
+        varchar_64 source_hash "VARCHAR(64)"
+        varchar_16 status "VARCHAR(16)"
+        varchar_36 lease "VARCHAR(36); nullable"
+        bigint updated_at "BIGINT"
+        jsonb payload "JSONB; nullable"
+    }
+
+    writing_prompts {
+        varchar_64 id PK "VARCHAR(64)"
+        varchar_160 title "VARCHAR(160)"
+        varchar_8 level "VARCHAR(8)"
+        varchar_24 prompt_type "VARCHAR(24)"
+        text instruction "TEXT"
+        text model_hint "TEXT"
+        integer sort_order "INTEGER"
+        bigint created_at "BIGINT"
+        bigint updated_at "BIGINT"
+        varchar_24 category "VARCHAR(24)"
+    }
+
+    writing_drafts {
+        varchar_64 id PK "VARCHAR(64)"
+        varchar_36 user_id FK "VARCHAR(36)"
+        varchar_64 prompt_id FK "VARCHAR(64)"
+        text text "TEXT"
+        integer word_count "INTEGER"
+        varchar_16 status "VARCHAR(16)"
+        bigint created_at "BIGINT"
+        bigint updated_at "BIGINT"
+    }
+
+    writing_submissions {
+        varchar_64 id PK "VARCHAR(64)"
+        varchar_36 user_id FK "VARCHAR(36)"
+        varchar_64 prompt_id FK "VARCHAR(64); nullable"
+        varchar_160 prompt_title "VARCHAR(160)"
+        text text "TEXT"
+        text corrected_text "TEXT"
+        integer score "INTEGER"
+        text feedback "TEXT"
+        bigint submitted_at "BIGINT"
+        bigint created_at "BIGINT"
+        bigint updated_at "BIGINT"
+        json assessment "JSON; nullable"
+    }
+
+    reading_passages ||..o{ reading_attempts : "passage_id"
+    users ||..o{ reading_attempts : "user_id"
+    reading_passages ||--o{ reading_insights : "passage_id"
+    writing_prompts ||..o{ writing_drafts : "prompt_id"
+    users ||..o{ writing_drafts : "user_id"
+    writing_prompts |o..o{ writing_submissions : "prompt_id"
+    users ||..o{ writing_submissions : "user_id"
