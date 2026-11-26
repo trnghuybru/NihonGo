@@ -324,6 +324,32 @@ export function SharedGameRoomScreen({
       room?.phase === 'waiting' ||
       room?.phase === 'finished' ||
       room?.phase === 'closed';
+  const applySettings = () =>
+    action('select', {
+      game,
+      level,
+      source,
+      topic: 'Tất cả',
+      seconds,
+      question_count: count,
+      lesson_id: source === 'lesson' ? lesson : null,
+    });
+  const readyCount = room?.members.filter(player => player.ready).length || 0;
+  const nextStep = !room?.configured
+    ? host
+      ? 'Chọn trò chơi và xác nhận cài đặt để mở phòng. Bạn có thể chỉnh trình độ và số câu bên dưới.'
+      : 'Chờ chủ phòng xác nhận trò chơi và cài đặt. Sau đó bạn có thể sẵn sàng.'
+    : room.selected_game === 'read' && !audioReady
+    ? 'Bấm Kiểm tra âm thanh, rồi cho phép sử dụng microphone trên thiết bị của bạn.'
+    : room.selected_game === 'read' && playbackBlocked
+    ? 'Bấm Bật âm thanh để nghe được người chơi khác.'
+    : !me?.ready
+    ? 'Bạn đã có thể bấm Sẵn sàng. Mời thêm bạn bằng mã phòng ở trên.'
+    : room.members.length < 2 || !room.members.every(player => player.ready)
+    ? 'Bạn đã sẵn sàng. Chờ ít nhất 2 người tham gia và tất cả cùng sẵn sàng.'
+    : host
+    ? 'Tất cả đã sẵn sàng. Bấm Bắt đầu trận để chơi!'
+    : 'Tất cả đã sẵn sàng. Chờ chủ phòng bắt đầu trận.';
   const gameTitle =
     choices.find(item => item.id === room?.selected_game)?.title ||
     'Chưa chọn game';
@@ -364,6 +390,30 @@ export function SharedGameRoomScreen({
               {room.members.length}/8 người · {gameTitle}
             </Text>
           </View>
+          {room.phase === 'waiting' ? (
+            <View style={[s.card, s.guide]}>
+              <Text style={s.title}>Bước tiếp theo</Text>
+              <Text style={s.caption}>
+                {room.selected_game === 'read'
+                  ? '1. Xác nhận game → 2. Kiểm tra mic → 3. Sẵn sàng'
+                  : '1. Xác nhận game → 2. Sẵn sàng → 3. Bắt đầu'}
+              </Text>
+              <Text style={s.name} accessibilityLiveRegion="polite">
+                {nextStep}
+              </Text>
+              {host && !room.configured ? (
+                <AuthButton
+                  label="Xác nhận game và cài đặt"
+                  busy={busy}
+                  disabled={source === 'lesson' && !lesson}
+                  onPress={applySettings}
+                />
+              ) : null}
+              <Text style={s.caption}>
+                {readyCount}/{room.members.length} người đã sẵn sàng
+              </Text>
+            </View>
+          ) : null}
           <View style={s.card}>
             <Text style={s.title}>Người chơi</Text>
             {room.members.map(player => (
@@ -507,21 +557,11 @@ export function SharedGameRoomScreen({
               ) : null}
               <View style={s.row}>
                 <AuthButton
-                  label="Áp dụng"
+                  label="Lưu cài đặt trò chơi"
                   size="compact"
                   busy={busy}
                   disabled={source === 'lesson' && !lesson}
-                  onPress={() =>
-                    action('select', {
-                      game,
-                      level,
-                      source,
-                      topic: 'Tất cả',
-                      seconds,
-                      question_count: count,
-                      lesson_id: source === 'lesson' ? lesson : null,
-                    })
-                  }
+                  onPress={applySettings}
                 />
               </View>
             </View>
@@ -551,7 +591,7 @@ export function SharedGameRoomScreen({
                 Âm thanh trên máy chủ chưa sẵn sàng.
               </Text>
             ) : null}
-            {room.selected_game === 'read' && room.configured ? (
+            {room.selected_game === 'read' ? (
               <View style={s.row}>
                 <AuthButton
                   label={
@@ -563,7 +603,7 @@ export function SharedGameRoomScreen({
                   }
                   size="compact"
                   variant="outline"
-                  disabled={busy || !room.read_available}
+                  disabled={busy || !room.configured || !room.read_available}
                   onPress={prepareAudio}
                 />
               </View>
@@ -626,6 +666,7 @@ export function SharedGameRoomScreen({
 }
 const s = StyleSheet.create({
   gameWrapper: { flex: 1 },
+  guide: { backgroundColor: colors.surfaceTint, borderColor: colors.primary },
   content: {
     padding: spacing.xl,
     gap: spacing.lg,
