@@ -1,9 +1,12 @@
-from flask import Blueprint, jsonify, request
-from sqlalchemy import func, or_, select
+import time
+
+from flask import Blueprint, g, jsonify, request
+from sqlalchemy import and_, case, func, literal, or_, select
 
 from api_errors import ApiError
 from auth.security import require_auth
 from extensions import db
+from flashcards.models import FlashcardSchedule
 from .models import JLPT_LEVELS, VocabularyTextbook, VocabularyLesson, VocabularyWord
 
 bp = Blueprint("vocabulary", __name__, url_prefix="/api/vocabulary")
@@ -52,6 +55,38 @@ def audio_synthesize():
     payload = request.get_json(silent=True) or {}
     text = payload.get('text') if isinstance(payload, dict) else None
     response = jsonify(supertonic_text_playback(text))
+    response.headers['Cache-Control'] = 'no-store'
+    return response
+
+
+@bp.get('/progress')
+@require_auth
+def lesson_progress():
+    level = level_arg()
+    at = int(time.time() * 1000)
+    # One row per word and user schedule: repeated reviews never inflate coverage.
+    rows = db.session.execute(select(
+        VocabularyWord.lesson_id,
+        func.count(VocabularyWord.id),
+        func.count(FlashcardSchedule.card_id),
+        func.sum(case((and_(FlashcardSchedule.active.is_(True),
+                            FlashcardSchedule.due_at <= at), 1), else_=0)),
+    ).select_from(VocabularyWord)
+        .join(VocabularyLesson, VocabularyLesson.id == VocabularyWord.lesson_id)
+        .join(VocabularyTextbook, VocabularyTextbook.id == VocabularyLesson.textbook_id)
+        .outerjoin(FlashcardSchedule, and_(
+            FlashcardSchedule.user_id == g.user.id,
+            FlashcardSchedule.card_id == literal('lesson:') + VocabularyWord.id,
+            FlashcardSchedule.review_count > 0,
+        ))
+        .where(VocabularyTextbook.level == level)
+        .group_by(VocabularyWord.lesson_id)).all()
+    response = jsonify({'level': level, 'items': [
+        {'lesson_id': lesson_id, 'total': total, 'studied': studied,
+         'percent': studied * 100 // total, 'due': due,
+         'status': 'completed' if studied == total else 'in_progress' if studied else 'not_started'}
+        for lesson_id, total, studied, due in rows
+    ]})
     response.headers['Cache-Control'] = 'no-store'
     return response
 

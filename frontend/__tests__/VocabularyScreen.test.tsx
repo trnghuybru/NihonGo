@@ -13,6 +13,7 @@ import {
 import { WebLayoutContext } from '../src/hooks/useWebLayout';
 import { AuthButton } from '../src/components/AuthForm';
 import { VocabularyScreen } from '../src/screens/VocabularyScreen';
+import { notifyFlashcardScheduleChanged } from '../src/services/flashcardSrsService';
 import { vocabularyService } from '../src/services/vocabularyService';
 import { dictionaryService } from '../src/services/dictionaryService';
 import { videoExamplesService } from '../src/services/videoExamplesService';
@@ -41,6 +42,7 @@ jest.mock('../src/services/videoExamplesService', () => ({
 jest.mock('../src/services/vocabularyService', () => ({
   JLPT_LEVELS: ['N5', 'N4', 'N3', 'N2', 'N1'],
   vocabularyService: {
+    progress: jest.fn(),
     textbooks: jest.fn(),
     textbook: jest.fn(),
     lesson: jest.fn(),
@@ -143,6 +145,21 @@ beforeEach(() => {
     next_cursor: null,
     has_more: false,
   });
+  jest
+    .mocked(vocabularyService.progress)
+    .mockImplementation(async level => ({
+      level,
+      items: [
+        {
+          lesson_id: 'lesson-1',
+          total: 1,
+          studied: 0,
+          percent: 0,
+          due: 0,
+          status: 'not_started',
+        },
+      ],
+    }));
   jest.mocked(vocabularyService.textbooks).mockImplementation(async level => ({
     level,
     items: level === 'N2' ? [book] : [],
@@ -690,4 +707,120 @@ test('revisiting levels and lessons uses cached content without more API calls',
   expect(button('Mở Bài 1')).toBeDefined();
   expect(vocabularyService.textbooks).toHaveBeenCalledTimes(2);
   expect(vocabularyService.textbook).toHaveBeenCalledTimes(1);
+});
+
+test('video search opens shadowing for the selected video and timestamp', async () => {
+  const { shadowingService } = require('../src/services/shadowingService');
+  const submit = jest
+    .spyOn(shadowingService, 'submit')
+    .mockResolvedValue({ job: { id: 'linked-job', status: 'ready' } });
+  const onOpenShadowing = jest.fn();
+  await act(async () => {
+    tree = Renderer.create(
+      <VocabularyScreen query="人生" onOpenShadowing={onOpenShadowing} />,
+    );
+  });
+  await press('Luyện shadowing');
+  expect(submit).toHaveBeenCalledWith(
+    'https://www.youtube.com/watch?v=' + videoExample.video.youtube_id,
+  );
+  expect(onOpenShadowing).toHaveBeenCalledWith(
+    'linked-job',
+    videoExample.start_seconds,
+  );
+  submit.mockRestore();
+});
+
+test('failed shadowing launch keeps search results and shows a retryable error', async () => {
+  const { shadowingService } = require('../src/services/shadowingService');
+  const submit = jest
+    .spyOn(shadowingService, 'submit')
+    .mockRejectedValue(new Error('Không mở được video.'));
+  const onOpenShadowing = jest.fn();
+  await act(async () => {
+    tree = Renderer.create(
+      <VocabularyScreen query="人生" onOpenShadowing={onOpenShadowing} />,
+    );
+  });
+  await press('Luyện shadowing');
+  expect(onOpenShadowing).not.toHaveBeenCalled();
+  expect(contents()).toContain('Không mở được video.');
+  expect(tree.root.findAllByType(VideoExamplePlayer)).toHaveLength(1);
+  submit.mockRestore();
+});
+
+test('shows personal lesson progress and refreshes it after flashcard reviews', async () => {
+  await render();
+  expect(contents()).toContain('Chưa học');
+  expect(
+    tree.root.findAll(node => node.props.accessibilityLabel === '0/1 từ đã ôn')
+      .length,
+  ).toBeGreaterThan(0);
+  jest
+    .mocked(vocabularyService.progress)
+    .mockResolvedValue({
+      level: 'N2',
+      items: [
+        {
+          lesson_id: lesson.id,
+          total: 1,
+          studied: 1,
+          percent: 100,
+          due: 1,
+          status: 'completed',
+        },
+      ],
+    });
+  await act(async () => notifyFlashcardScheduleChanged());
+  expect(contents()).toContain('Đã học hết');
+  expect(
+    tree.root.findAll(node => node.props.accessibilityLabel === '1/1 từ đã ôn')
+      .length,
+  ).toBeGreaterThan(0);
+  expect(
+    tree.root.findAll(
+      node => node.props.accessibilityLabel === '1 từ đến hạn ôn',
+    ).length,
+  ).toBeGreaterThan(0);
+  const bar = tree.root.findAll(
+    node => node.props.accessibilityRole === 'progressbar',
+  )[0];
+  expect(bar.props.accessibilityValue).toEqual({
+    min: 0,
+    max: 1,
+    now: 1,
+    text: '100%',
+  });
+});
+
+test('shows partial coverage and keeps lessons available when progress fails', async () => {
+  jest
+    .mocked(vocabularyService.progress)
+    .mockResolvedValue({
+      level: 'N2',
+      items: [
+        {
+          lesson_id: lesson.id,
+          total: 10,
+          studied: 3,
+          percent: 30,
+          due: 0,
+          status: 'in_progress',
+        },
+      ],
+    });
+  await render();
+  expect(contents()).toContain('Đang học');
+  expect(
+    tree.root.findAll(node => node.props.accessibilityLabel === '3/10 từ đã ôn')
+      .length,
+  ).toBeGreaterThan(0);
+  jest
+    .mocked(vocabularyService.progress)
+    .mockRejectedValueOnce(new Error('offline'));
+  await act(async () => notifyFlashcardScheduleChanged());
+  expect(contents()).not.toContain('Chưa học');
+  expect(contents()).toContain('Chưa tải được tiến độ');
+  await openLesson();
+  expect(vocabularyService.lesson).toHaveBeenCalledWith(lesson.id);
 });

@@ -45,3 +45,18 @@ venv/bin/python -m unittest discover -s tests -p test_learning.py -v
 Migration `c6d7e8f901a2` chỉ thêm bảng tiến độ. Test PostgreSQL dùng schema tạm,
 bao gồm ghi đồng thời, cách ly tài khoản, đổi mục tiêu, qua ngày và gửi lại.
 Frontend kiểm tra foreground, context học, đổi đồng hồ, retry, nửa đêm và cache.
+
+## Tiến độ bài học từ vựng
+
+`GET /api/vocabulary/progress?level=N2` trả tiến độ theo từng `lesson_id`:
+`total`, `studied`, `percent`, `due` và `status` (`not_started`, `in_progress`,
+`completed`). `studied` là số từ khác nhau đã nhận đánh giá flashcard ít nhất một
+lần, kể cả đánh giá chưa nhớ. Học lại hoặc ôn cùng từ qua bộ yêu thích không cộng
+trùng; dữ liệu chỉ thuộc tài khoản đăng nhập. Mở bài để đọc không tự tăng tiến độ.
+100% thể hiện đã ôn hết các từ, không có nghĩa đã thuộc hết. `due` chỉ tính thẻ
+đang hoạt động và đến hạn tại thời điểm truy vấn.
+
+API dùng một truy vấn tổng hợp theo trình độ, không cần migration hoặc ghi lại
+lịch sử. Phản hồi có `Cache-Control: no-store`. Client tải tiến độ riêng với nội
+dung bài học, cập nhật khi trở lại danh mục, quay lại ứng dụng và sau khi đánh giá
+flashcard. Lỗi tải tiến độ không ngăn mở bài và không hiển thị thành 0%.

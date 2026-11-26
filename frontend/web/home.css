@@ -117,11 +117,7 @@
   padding-block: 7px;
 }
 
-#nihongo-home [data-testid='home-review-card'] > [role='button']:not([aria-disabled='true']) {
-  background-color: #ff9437;
-}
-
-#nihongo-home [data-testid='home-quiz-card'] > [role='button'] {
+#nihongo-home :is([data-testid='home-review-card'], [data-testid='home-quiz-card']) > [role='button'] {
   background-color: #fff0df;
   border-color: #fff0df;
 }
@@ -311,7 +307,7 @@
 @media (min-width: 1100px) {
   #home-learning-layout:has([data-testid='home-quiz-card']) {
     display: grid;
-    grid-template-columns: minmax(0, 44fr) minmax(0, 56fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-template-rows: auto minmax(0, 1fr) auto;
     column-gap: clamp(16px, 1.65vw, 28px);
     row-gap: 12px;
@@ -519,6 +515,11 @@
   color: var(--home-ink);
 }
 
+#nihongo-lookup [data-testid='handwriting-panel'] [role='heading'] {
+  font-size: 14px;
+  line-height: 20px;
+}
+
 #nihongo-lookup [data-testid='dictionary-search-bar'] {
   min-height: 54px;
   padding-inline: 18px 8px;
@@ -698,4 +699,56 @@
 
 #nihongo-quick-study [data-testid='speaking-welcome-stage'] {
   background: linear-gradient(180deg, #fffdfa, #fff2e5);
+}
+
+/* Center the interactive preview without applying dashboard text-size overrides. */
+#nihongo-home [data-testid='home-review-card']:has([data-testid='home-flashcard-preview']) {
+  padding-inline: 23px;
+}
+#nihongo-home [data-testid='home-flashcard-preview'] [data-testid='home-preview-word'] {
+  font-size: 28px;
+  line-height: 38px;
+}
+
+#nihongo-home [data-testid='home-flashcard-preview'] [data-testid='home-preview-meaning'] {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* Each desktop column flows independently: no empty row between calendar and quiz. */
+#nihongo-home #home-learning-columns :is([data-testid='home-review-card'], [data-testid='home-quiz-card']) {
+  flex: none;
+  min-height: 0;
+  padding-block: 14px;
+}
+#nihongo-home #home-learning-columns [data-testid='home-review-card'] {
+  flex: 1;
+  padding-inline: 20px;
+}
+#nihongo-home [data-testid='home-review-study'] > [data-testid='home-flashcard-preview'] {
+  width: 100%;
+  flex-grow: 0;
+}
+#nihongo-home #home-learning-columns [data-testid='home-flashcard-mascot'] {
+  transform: scale(0.72);
+  transform-origin: bottom right;
+}
+
+#nihongo-home [data-testid='home-review-card']:has([data-testid='home-review-study']) {
+  padding-inline: 20px;
+}
+#nihongo-home [data-testid='home-review-study'] > div:last-child [role='button'] {
+  min-height: 42px;
+  background-color: #fff0df;
+  border-width: 0;
+}
+
+/* Match both home actions: soft filled pills without an outline. */
+#nihongo-home [data-testid='home-quiz-card'] > [role='button'] {
+  border-width: 0;
+}
+@media (min-width: 1100px) {
+  #nihongo-home [data-testid='home-review-study'] > div:last-child {
+    max-width: min(300px, calc(100% - 144px));
+  }
 }

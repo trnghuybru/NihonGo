@@ -9,7 +9,7 @@ import {
 import { WebNavigationContext } from '../src/navigation/webNavigation';
 import { SwipeTransition } from '../src/components/SwipeTransition';
 import Renderer, { act } from 'react-test-renderer';
-import { FlatList, Text, TextInput } from 'react-native';
+import { FlatList, Modal, Text, TextInput } from 'react-native';
 import { DictionaryScreen } from '../src/screens/DictionaryScreen';
 import { sentenceTranslationService } from '../src/services/sentenceTranslationService';
 import { HandwritingLookup } from '../src/components/HandwritingLookup';
@@ -829,6 +829,17 @@ test('shadowing popup rejects fuzzy matches and can retry dictionary failures', 
   expect(dictionaryService.words).toHaveBeenCalledTimes(2);
   expect(dictionaryService.word).not.toHaveBeenCalled();
   expect(contents()).toContain('Không tìm thấy kết quả');
+});
+
+test('opens handwriting below search without a modal and keeps search editable', async () => {
+  await render('古');
+  await press('Viết tay');
+  expect(tree.root.findAllByType(Modal)).toHaveLength(0);
+  await type('学校');
+  expect(tree.root.findByType(TextInput).props.value).toBe('学校');
+  expect(tree.root.findByType(HandwritingLookup)).toBeDefined();
+  await press('Viết tay');
+  expect(tree.root.findAllByType(HandwritingLookup)).toHaveLength(0);
 });
 
 test('appends handwriting candidates to the current search draft across selections', async () => {

@@ -85,32 +85,72 @@ export function HomeScreen({
         </View>
       ) : null}
       <InstallAppHint />
-      <View nativeID={webHome ? 'home-search' : undefined} style={[styles.section, styles.searchSection]}>
+      <View
+        nativeID={webHome ? 'home-search' : undefined}
+        style={[styles.section, styles.searchSection]}
+      >
         <View style={styles.searchHeading}>
-          {webHome ? <HomeFeatureIcon name="vocabulary" color="#dc6910" size={22} /> : null}
+          {webHome ? (
+            <HomeFeatureIcon name="vocabulary" color="#dc6910" size={22} />
+          ) : null}
           <Text accessibilityRole="header" style={styles.sectionTitle}>
             Tra cứu từ vựng
           </Text>
         </View>
         <VocabularySearchBar onSearch={onSearchVocabulary} />
       </View>
-      <View nativeID={webHome ? 'home-learning-layout' : undefined} style={styles.learningOverview}>
-        <View
-          testID="home-learning-overview"
-          style={[styles.learningOverview, desktop && styles.desktopLearningOverview]}
-        >
-          <View style={[styles.goalColumn, desktop && styles.desktopGoalColumn]}>
-            <DailyGoalProgress />
-          </View>
-          <View style={[styles.calendarColumn, desktop && styles.desktopCalendarColumn]}>
-            <StudyStreakCalendar accountId={user.id} />
-          </View>
-        </View>
+      {webHome && desktop ? (
         <HomeFlashcardHub
           onOpenFlashcards={onOpenFlashcards ?? onOpenVocabulary}
           onOpenQuiz={onOpenQuiz ?? onContinueLearning}
+          renderCards={(review, quiz) => (
+            <View
+              nativeID="home-learning-columns"
+              style={styles.dashboardColumns}
+            >
+              <View style={styles.dashboardColumn}>
+                <DailyGoalProgress />
+                {review}
+              </View>
+              <View style={styles.dashboardColumn}>
+                <StudyStreakCalendar accountId={user.id} />
+                {quiz}
+              </View>
+            </View>
+          )}
         />
-      </View>
+      ) : (
+        <View
+          nativeID={webHome ? 'home-learning-layout' : undefined}
+          style={styles.learningOverview}
+        >
+          <View
+            testID="home-learning-overview"
+            style={[
+              styles.learningOverview,
+              desktop && styles.desktopLearningOverview,
+            ]}
+          >
+            <View
+              style={[styles.goalColumn, desktop && styles.desktopGoalColumn]}
+            >
+              <DailyGoalProgress />
+            </View>
+            <View
+              style={[
+                styles.calendarColumn,
+                desktop && styles.desktopCalendarColumn,
+              ]}
+            >
+              <StudyStreakCalendar accountId={user.id} />
+            </View>
+          </View>
+          <HomeFlashcardHub
+            onOpenFlashcards={onOpenFlashcards ?? onOpenVocabulary}
+            onOpenQuiz={onOpenQuiz ?? onContinueLearning}
+          />
+        </View>
+      )}
       <Pressable
         accessibilityRole="button"
         accessibilityLabel="Mở bài học từ vựng"
@@ -121,15 +161,26 @@ export function HomeScreen({
           pressed && styles.pressed,
         ]}
       >
-        {!desktop ? <NihongoMascot pose="writing" size={72} decorative /> : null}
+        {!desktop ? (
+          <NihongoMascot pose="writing" size={72} decorative />
+        ) : null}
         <View style={styles.vocabularyCopy}>
           <Text style={styles.vocabularyTitle}>Bài học từ vựng</Text>
-          {webHome ? <Text style={styles.dashboardCaption}>Học theo chủ đề, luyện tập hiệu quả hơn.</Text> : null}
+          {webHome ? (
+            <Text style={styles.dashboardCaption}>
+              Học theo chủ đề, luyện tập hiệu quả hơn.
+            </Text>
+          ) : null}
         </View>
-        {webHome ? <Text style={styles.dashboardAction}>Xem tất cả</Text> : null}
+        {webHome ? (
+          <Text style={styles.dashboardAction}>Xem tất cả</Text>
+        ) : null}
         <HomeFeatureIcon name="arrow" color={colors.primaryText} size={20} />
       </Pressable>
-      <View nativeID={webHome ? 'home-skills' : undefined} style={styles.section}>
+      <View
+        nativeID={webHome ? 'home-skills' : undefined}
+        style={styles.section}
+      >
         <View style={styles.sectionHeadingRow}>
           <Text accessibilityRole="header" style={styles.sectionTitle}>
             Luyện kỹ năng
@@ -153,10 +204,21 @@ export function HomeScreen({
 }
 
 const styles = StyleSheet.create({
+  dashboardColumns: {
+    flexDirection: 'row',
+    gap: spacing.xxl,
+    alignItems: 'stretch',
+  },
+  dashboardColumn: { flex: 1, minWidth: 0, gap: spacing.md },
   searchSection: { zIndex: 30 },
   searchHeading: { flexDirection: 'row', alignItems: 'center', gap: 12 },
   welcomeCopy: { gap: 4, flex: 1 },
-  welcomeTitle: { ...typography.title, color: '#153549', fontSize: 23, lineHeight: 29 },
+  welcomeTitle: {
+    ...typography.title,
+    color: '#153549',
+    fontSize: 23,
+    lineHeight: 29,
+  },
   dashboardCaption: { ...typography.caption, color: '#586a7a' },
   dashboardAction: { ...typography.link, color: colors.primaryText },
   learningOverview: { gap: spacing.lg },

@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import {
   ActivityIndicator,
@@ -10,6 +11,7 @@ import {
 import { AuthIcon } from './AuthIcon';
 import { AuthButton, AuthNotice } from './AuthForm';
 import { NihongoMascot } from './NihongoMascot';
+import { HomeFlashcardPreview } from './HomeFlashcardPreview';
 import { dailyFlashcardService } from '../services/dailyFlashcardService';
 import type { HomeFlashcards } from '../services/dailyFlashcardService';
 import { flashcardService } from '../services/flashcardService';
@@ -28,9 +30,11 @@ import {
 export function HomeFlashcardHub({
   onOpenFlashcards,
   onOpenQuiz,
+  renderCards,
 }: {
   onOpenFlashcards: (session?: FlashcardSession) => void;
   onOpenQuiz: () => void;
+  renderCards?: (review: ReactNode, quiz: ReactNode) => ReactNode;
 }) {
   const load = useCallback(async () => dailyFlashcardService.home(), []);
   const study = useFlashcardStudy();
@@ -104,8 +108,8 @@ export function HomeFlashcardHub({
       if (alive.current) setBusy(false);
     }
   };
-  if (!data)
-    return (
+  if (!data) {
+    const placeholder = (
       <View style={styles.card}>
         <Text style={styles.heading}>Ôn tập hôm nay</Text>
         {state.status === 'loading' ? (
@@ -132,123 +136,166 @@ export function HomeFlashcardHub({
         )}
       </View>
     );
+    return renderCards ? <>{renderCards(placeholder, null)}</> : placeholder;
+  }
   const quiz = data.quiz;
-  return (
-    <View style={[styles.grid, desktop && styles.desktopGrid]}>
-      <View
-        style={[styles.card, desktop && styles.desktopCard]}
-        testID="home-review-card"
-      >
-        <Text style={styles.heading} accessibilityRole="header">
-          Ôn tập hôm nay
-        </Text>
-        <View style={styles.scene}>
-          <View style={styles.copy}>
-            <Text style={styles.title}>
-              {active
-                ? `Bạn còn ${active.remaining} thẻ chưa học`
-                : todayCount
-                ? `${todayCount} thẻ đến hạn hôm nay`
-                : data.weak_count
-                ? `Ôn lại ${Math.min(data.weak_count, 50)} từ chưa nhớ`
-                : data.learned_count
-                ? 'Sẵn sàng cho bộ thẻ tiếp theo?'
-                : 'Chọn bộ thẻ đầu tiên'}
-            </Text>
-            <Text style={styles.body}>
-              {active
-                ? active.title
+  const reviewCard = (
+    <View
+      style={[styles.card, desktop && styles.desktopCard]}
+      testID="home-review-card"
+    >
+      <Text style={styles.heading} accessibilityRole="header">
+        Ôn tập hôm nay
+      </Text>
+      <View style={styles.scene}>
+        <View style={styles.copy}>
+          <Text style={styles.title}>
+            {active
+              ? `Bạn còn ${active.remaining} thẻ chưa học`
+              : todayCount
+              ? `${todayCount} thẻ đến hạn hôm nay`
+              : data.weak_count
+              ? `Ôn lại ${Math.min(data.weak_count, 50)} từ chưa nhớ`
+              : data.learned_count
+              ? 'Sẵn sàng cho bộ thẻ tiếp theo?'
+              : 'Chọn bộ thẻ đầu tiên'}
+          </Text>
+          <Text style={styles.body}>
+            {active
+              ? active.title
+              : dueCount
+              ? `${dueCount} thẻ có thể ôn ngay.`
+              : todayCount && nextDueAt
+              ? `Ôn tiếp lúc ${flashcardDueTime(nextDueAt)}`
+              : data.weak_count
+              ? 'Từ bạn đánh dấu Chưa nhớ hoặc Mơ hồ.'
+              : 'Học từ bộ có sẵn, bộ tự tạo hoặc yêu thích.'}
+          </Text>
+        </View>
+        {!desktop ? (
+          <NihongoMascot pose="reading" size={80} decorative />
+        ) : null}
+      </View>
+      {desktop ? (
+        <View
+          testID="home-flashcard-mascot"
+          style={styles.dashboardMascot}
+          pointerEvents="none"
+        >
+          <NihongoMascot pose="reading" size={108} decorative />
+        </View>
+      ) : null}
+      <AuthNotice error message={error} />
+      <View style={styles.reviewStudy} testID="home-review-study">
+        {active ? (
+          <HomeFlashcardPreview
+            sessionId={active.id}
+            remaining={active.remaining}
+          />
+        ) : (
+          <View style={styles.spacer} />
+        )}
+        <View style={styles.reviewAction}>
+          <AuthButton
+            label={
+              active
+                ? 'Tiếp tục flashcard'
                 : dueCount
-                ? `${dueCount} thẻ có thể ôn ngay.`
-                : todayCount && nextDueAt
-                ? `Ôn tiếp lúc ${flashcardDueTime(nextDueAt)}`
+                ? 'Ôn thẻ đến hạn'
+                : todayCount
+                ? 'Xem lịch ôn'
                 : data.weak_count
-                ? 'Từ bạn đánh dấu Chưa nhớ hoặc Mơ hồ.'
-                : 'Học từ bộ có sẵn, bộ tự tạo hoặc yêu thích.'}
+                ? 'Ôn ngay'
+                : 'Chọn bộ thẻ'
+            }
+            variant="outline"
+            busy={busy}
+            onPress={review}
+          />
+        </View>
+      </View>
+    </View>
+  );
+  const quizCard = (
+    <View
+      style={[styles.card, desktop && styles.desktopCard]}
+      testID="home-quiz-card"
+    >
+      <View style={styles.row}>
+        <Text style={styles.heading} accessibilityRole="header">
+          Thử thách hôm nay
+        </Text>
+        {quiz || data.quiz_available ? (
+          <View style={[styles.badge, quiz?.finished && styles.completedBadge]}>
+            {quiz?.finished ? (
+              <AuthIcon name="check" size={12} color={colors.success} />
+            ) : null}
+            <Text style={[styles.badgeText, quiz?.finished && styles.success]}>
+              {quiz?.finished
+                ? 'Đã hoàn thành'
+                : quiz
+                ? `${quiz.answered}/${quiz.total} câu`
+                : `${data.quiz_available} câu`}
             </Text>
           </View>
-          {!desktop ? <NihongoMascot pose="reading" size={80} decorative /> : null}
-        </View>
-        {desktop ? <View testID="home-flashcard-mascot" style={styles.dashboardMascot} pointerEvents="none"><NihongoMascot pose="reading" size={108} decorative /></View> : null}
-        <AuthNotice error message={error} />
-        <View style={styles.spacer} />
-        <AuthButton
-          label={
-            active
-              ? 'Tiếp tục flashcard'
-              : dueCount
-              ? 'Ôn thẻ đến hạn'
-              : todayCount
-              ? 'Xem lịch ôn'
-              : data.weak_count
-              ? 'Ôn ngay'
-              : 'Chọn bộ thẻ'
-          }
-          busy={busy}
-          onPress={review}
-        />
+        ) : null}
       </View>
-      <View
-        style={[styles.card, desktop && styles.desktopCard]}
-        testID="home-quiz-card"
-      >
-        <View style={styles.row}>
-          <Text style={styles.heading} accessibilityRole="header">
-            Thử thách hôm nay
-          </Text>
-          {quiz || data.quiz_available ? (
-            <View
-              style={[styles.badge, quiz?.finished && styles.completedBadge]}
-            >
-              {quiz?.finished ? (
-                <AuthIcon name="check" size={12} color={colors.success} />
-              ) : null}
-              <Text
-                style={[styles.badgeText, quiz?.finished && styles.success]}
-              >
-                {quiz?.finished
-                  ? 'Đã hoàn thành'
-                  : quiz
-                  ? `${quiz.answered}/${quiz.total} câu`
-                  : `${data.quiz_available} câu`}
-              </Text>
-            </View>
-          ) : null}
+      <Text style={styles.title}>
+        {quiz?.finished
+          ? `${quiz.correct}/${quiz.total} câu đúng`
+          : quiz?.answered
+          ? `Bạn đã trả lời ${quiz.answered}/${quiz.total} câu`
+          : quiz || data.quiz_available
+          ? 'Thử xem bạn nhớ được bao nhiêu'
+          : 'Học flashcard để mở thử thách'}
+      </Text>
+      <Text style={styles.body}>
+        {quiz || data.quiz_available
+          ? 'Chọn nghĩa đúng từ các bộ thẻ gần đây. Ưu tiên những từ bạn chưa nhớ.'
+          : 'Học bộ có ít nhất 4 nghĩa khác nhau. Mỗi ngày có tối đa 5 câu hỏi.'}
+      </Text>
+      {desktop ? (
+        <View
+          testID="home-flashcard-mascot"
+          style={styles.dashboardMascot}
+          pointerEvents="none"
+        >
+          <NihongoMascot pose="speaking" size={108} decorative />
         </View>
-        <Text style={styles.title}>
-          {quiz?.finished
-            ? `${quiz.correct}/${quiz.total} câu đúng`
+      ) : null}
+      <View style={styles.spacer} />
+      <AuthButton
+        label={
+          quiz?.finished
+            ? 'Xem kết quả thử thách'
             : quiz?.answered
-            ? `Bạn đã trả lời ${quiz.answered}/${quiz.total} câu`
-            : quiz || data.quiz_available
-            ? 'Thử xem bạn nhớ được bao nhiêu'
-            : 'Học flashcard để mở thử thách'}
-        </Text>
-        <Text style={styles.body}>
-          {quiz || data.quiz_available
-            ? 'Chọn nghĩa đúng từ các bộ thẻ gần đây. Ưu tiên những từ bạn chưa nhớ.'
-            : 'Học bộ có ít nhất 4 nghĩa khác nhau. Mỗi ngày có tối đa 5 câu hỏi.'}
-        </Text>
-        {desktop ? <View testID="home-flashcard-mascot" style={styles.dashboardMascot} pointerEvents="none"><NihongoMascot pose="speaking" size={108} decorative /></View> : null}
-        <View style={styles.spacer} />
-        <AuthButton
-          label={
-            quiz?.finished
-              ? 'Xem kết quả thử thách'
-              : quiz?.answered
-              ? 'Tiếp tục thử thách'
-              : 'Bắt đầu thử thách'
-          }
-          variant="outline"
-          disabled={(!quiz && !data.quiz_available) || busy}
-          onPress={onOpenQuiz}
-        />
-      </View>
+            ? 'Tiếp tục thử thách'
+            : 'Bắt đầu thử thách'
+        }
+        variant="outline"
+        disabled={(!quiz && !data.quiz_available) || busy}
+        onPress={onOpenQuiz}
+      />
+    </View>
+  );
+  return renderCards ? (
+    <>{renderCards(reviewCard, quizCard)}</>
+  ) : (
+    <View style={[styles.grid, desktop && styles.desktopGrid]}>
+      {reviewCard}
+      {quizCard}
     </View>
   );
 }
 
 const styles = StyleSheet.create({
+  reviewStudy: {
+    flexGrow: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: spacing.md,
+  },
+  reviewAction: { width: '100%', maxWidth: 300 },
   grid: { gap: spacing.xl },
   desktopGrid: { flexDirection: 'row', alignItems: 'stretch' },
   card: {
