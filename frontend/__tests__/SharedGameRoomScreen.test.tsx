@@ -132,10 +132,65 @@ test('finished game goes back to the same lobby without a new room or code', asy
     back();
   });
   expect(control('Chọn Công thành Momo')).toBeDefined();
-  expect(control('Áp dụng')).toBeDefined();
+  expect(control('Lưu cài đặt trò chơi')).toBeDefined();
   expect(
     tree.root
       .findAllByType(Text)
       .some(node => node.props.children === 'ABC234'),
   ).toBe(true);
+});
+
+test('unconfigured voice lobby shows the next step and disabled microphone check', async () => {
+  const waiting: SharedRoom = { ...base, game: null, configured: false };
+  jest.mocked(sharedRoomService.snapshot).mockResolvedValue(waiting);
+  jest
+    .mocked(sharedRoomService.action)
+    .mockResolvedValue({ ...base, version: 2 });
+  await act(async () => {
+    tree = Renderer.create(
+      <SharedGameRoomScreen
+        code="ABC234"
+        userId="u0"
+        onExit={jest.fn()}
+        renderGame={jest.fn()}
+      />,
+    );
+  });
+  expect(control('Kiểm tra âm thanh').props.disabled).toBe(true);
+  expect(control('Sẵn sàng').props.disabled).toBe(true);
+  await act(async () => {
+    await control('Xác nhận game và cài đặt').props.onPress();
+  });
+  expect(sharedRoomService.action).toHaveBeenCalledWith(
+    'ABC234',
+    'select',
+    expect.objectContaining({ game: 'read', source: 'jlpt' }),
+  );
+  expect(control('Kiểm tra âm thanh').props.disabled).toBe(false);
+  expect(control('Sẵn sàng').props.disabled).toBe(true);
+});
+
+test('guest sees why the lobby is waiting for host configuration', async () => {
+  jest
+    .mocked(sharedRoomService.snapshot)
+    .mockResolvedValue({ ...base, game: null, configured: false });
+  await act(async () => {
+    tree = Renderer.create(
+      <SharedGameRoomScreen
+        code="ABC234"
+        userId="u1"
+        onExit={jest.fn()}
+        renderGame={jest.fn()}
+      />,
+    );
+  });
+  expect(control('Xác nhận game và cài đặt')).toBeUndefined();
+  expect(
+    tree.root
+      .findAllByType(Text)
+      .some(node =>
+        String(node.props.children).includes('Chờ chủ phòng xác nhận'),
+      ),
+  ).toBe(true);
+  expect(control('Kiểm tra âm thanh').props.disabled).toBe(true);
 });
