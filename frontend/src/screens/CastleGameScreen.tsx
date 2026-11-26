@@ -1380,7 +1380,7 @@ const s = StyleSheet.create({
   },
   menu: { padding: spacing.xl, gap: spacing.lg },
   sectionTitle: { ...typography.heading, color: colors.dark },
-  label: { ...typography.caption, color: colors.body },
+  label: { ...typography.label, color: colors.body },
   small: { ...typography.body, color: colors.muted },
   best: { ...typography.caption, color: colors.focus },
   divider: { height: 1, backgroundColor: colors.divider },
@@ -1537,8 +1537,6 @@ const s = StyleSheet.create({
   },
   resultTitle: {
     ...typography.title,
-    fontSize: 24,
-    lineHeight: 32,
     color: colors.focus,
     textAlign: 'center',
   },
@@ -1550,7 +1548,13 @@ const s = StyleSheet.create({
     borderBottomWidth: 1,
     borderBottomColor: colors.divider,
   },
-  japaneseWord: { fontSize: 24, color: colors.dark, minWidth: 65 },
+  japaneseWord: {
+    ...typography.title,
+    fontSize: 24,
+    lineHeight: 32,
+    color: colors.dark,
+    minWidth: 65,
+  },
   backdrop: {
     flex: 1,
     justifyContent: 'center',
