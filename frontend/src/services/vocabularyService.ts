@@ -10,6 +10,14 @@ export type VocabularyTextbook = {
   word_count: number;
   lesson_count: number;
 };
+export type VocabularyLessonProgress = {
+  lesson_id: string;
+  total: number;
+  studied: number;
+  percent: number;
+  due: number;
+  status: 'not_started' | 'in_progress' | 'completed';
+};
 export type VocabularyLessonSummary = {
   id: string;
   number: number;
@@ -63,6 +71,11 @@ export type VocabularySearchResult = {
 };
 
 export const vocabularyService = {
+  progress: (level: JlptLevel) =>
+    authenticatedRequest<{
+      level: JlptLevel;
+      items: VocabularyLessonProgress[];
+    }>(`/vocabulary/progress?level=${level}`),
   audioPlayback: (wordId: string) =>
     authenticatedRequest<{ url: string; expires_in: number }>(
       `/vocabulary/words/${encodeURIComponent(wordId)}/audio/playback`,

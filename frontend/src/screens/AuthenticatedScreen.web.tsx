@@ -17,10 +17,7 @@ import { BottomNavigation } from '../components/BottomNavigation';
 import { DesktopNavigation } from '../components/DesktopNavigation';
 import { FlashcardStudyProvider } from '../components/FlashcardStudyProvider';
 import { ScreenBackHeaderContext } from '../components/ScreenBackHeader';
-import {
-  StudyTimeProvider,
-  useStudyActivity,
-} from '../components/StudyTime';
+import { StudyTimeProvider, useStudyActivity } from '../components/StudyTime';
 import { BottomNavigationInsetContext } from '../hooks/useBottomNavigationInset';
 import { useLearningPreferences } from '../hooks/useLearningPreferences';
 import { useRemoteResource } from '../hooks/useSpeakingScenarios';
@@ -246,12 +243,26 @@ function WebWorkspace({
             <ScreenBackHeaderContext.Provider value={null}>
               <View
                 nativeID={
-                  nav.pathname === APP_HOME_PATH ? 'nihongo-home' :
-                  nav.pathname === '/practice' ? 'nihongo-practice' :
-                  (nav.pathname === '/lookup' || nav.pathname.startsWith('/lookup/')) ? 'nihongo-lookup' :
-                  (nav.pathname === '/lessons' || nav.pathname.startsWith('/lessons/')) ? 'nihongo-lessons' :
-                  nav.pathname === '/profile' ? 'nihongo-profile' :
-                  ['/flashcards', '/games', '/practice/listening', '/practice/speaking'].includes(nav.pathname) ? 'nihongo-quick-study' : undefined
+                  nav.pathname === APP_HOME_PATH
+                    ? 'nihongo-home'
+                    : nav.pathname === '/practice'
+                    ? 'nihongo-practice'
+                    : nav.pathname === '/lookup' ||
+                      nav.pathname.startsWith('/lookup/')
+                    ? 'nihongo-lookup'
+                    : nav.pathname === '/lessons' ||
+                      nav.pathname.startsWith('/lessons/')
+                    ? 'nihongo-lessons'
+                    : nav.pathname === '/profile'
+                    ? 'nihongo-profile'
+                    : [
+                        '/flashcards',
+                        '/games',
+                        '/practice/listening',
+                        '/practice/speaking',
+                      ].includes(nav.pathname)
+                    ? 'nihongo-quick-study'
+                    : undefined
                 }
                 style={[
                   styles.screen,
@@ -273,7 +284,9 @@ function WebWorkspace({
                       style={styles.headerBadge}
                     >
                       <Text style={styles.headerBadgeText}>
-                        {profile.level === 'beginner' ? 'Mới bắt đầu' : profile.level}
+                        {profile.level === 'beginner'
+                          ? 'Mới bắt đầu'
+                          : profile.level}
                       </Text>
                     </Pressable>
                     <View style={styles.headerBadge}>
@@ -293,7 +306,10 @@ function WebWorkspace({
                     </Pressable>
                     {notificationsOpen ? (
                       <View style={styles.notificationPanel}>
-                        <Text accessibilityLiveRegion="polite" style={styles.notificationText}>
+                        <Text
+                          accessibilityLiveRegion="polite"
+                          style={styles.notificationText}
+                        >
                           Chưa có thông báo mới.
                         </Text>
                       </View>
@@ -427,6 +443,14 @@ function WebWorkspace({
                           path={path}
                           element={
                             <VocabularyScreen
+                              onOpenShadowing={(id, start) =>
+                                nav.navigate(
+                                  '/practice/listening/' +
+                                    encodeURIComponent(id) +
+                                    '?start=' +
+                                    start,
+                                )
+                              }
                               key={nav.pathname + nav.search}
                               area="lessons"
                               onExit={goHome}
@@ -438,6 +462,14 @@ function WebWorkspace({
                         path="/lookup/*"
                         element={
                           <VocabularyScreen
+                            onOpenShadowing={(id, start) =>
+                              nav.navigate(
+                                '/practice/listening/' +
+                                  encodeURIComponent(id) +
+                                  '?start=' +
+                                  start,
+                              )
+                            }
                             area="lookup"
                             query={
                               new URLSearchParams(nav.search).get('q') ?? ''

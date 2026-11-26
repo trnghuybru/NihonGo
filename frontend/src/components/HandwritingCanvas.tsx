@@ -1,6 +1,6 @@
 import { StyleSheet, View } from 'react-native';
 import { WebView } from 'react-native-webview';
-import { colors, radius } from '../theme/theme';
+import { colors } from '../theme/theme';
 
 // The same canvas runs on WebView (iOS/Android) and the existing iframe web adapter.
 export const handwritingCanvasHtml = `<!doctype html><html><head>
@@ -54,10 +54,9 @@ export function HandwritingCanvas({
 const styles = StyleSheet.create({
   frame: {
     width: '100%',
-    maxWidth: 320,
     aspectRatio: 1,
     alignSelf: 'center',
-    borderRadius: radius.small,
+    borderRadius: 8,
     overflow: 'hidden',
     borderWidth: 1,
     borderColor: colors.border,

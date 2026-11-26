@@ -1120,6 +1120,27 @@ export function DictionaryScreen({
       {tabs}
     </View>
   );
+  const handwriting =
+    handwritingOpen && active ? (
+      <HandwritingLookup
+        onClose={() => setHandwritingOpen(false)}
+        onSelect={character => {
+          setHandwritingOpen(false);
+          const next = (text + character).slice(
+            0,
+            activeTab === 'words' ? 500 : 100,
+          );
+          if (activeTab === 'videos') {
+            setText(next);
+            searchVideos(next);
+          } else if (/^[\p{Script=Han}々]$/u.test(next)) {
+            if (!web) setTab('kanji');
+            setText(next);
+            push({ kind: 'kanji', query: next, page: 1 });
+          } else searchWords(next);
+        }}
+      />
+    ) : null;
   const header = (
     <View style={styles.details}>
       {!compact ? (
@@ -1131,7 +1152,10 @@ export function DictionaryScreen({
         </View>
       ) : null}
       <View ref={searchContainerRef} style={styles.searchContainer}>
-        <View style={[styles.search, focused && styles.searchFocused]} testID="dictionary-search-bar">
+        <View
+          style={[styles.search, focused && styles.searchFocused]}
+          testID="dictionary-search-bar"
+        >
           <HomeFeatureIcon
             name="search"
             size={20}
@@ -1180,11 +1204,12 @@ export function DictionaryScreen({
             <Pressable
               accessibilityRole="button"
               accessibilityLabel="Viết tay"
+              accessibilityState={{ expanded: handwritingOpen }}
               {...(Platform.OS === 'web' ? { title: 'Viết tay' } : {})}
               onPress={() => {
                 Keyboard.dismiss();
                 setHistoryOpen(false);
-                setHandwritingOpen(true);
+                setHandwritingOpen(value => !value);
               }}
               style={({ pressed }) => [
                 styles.handwritingButton,
@@ -1200,9 +1225,10 @@ export function DictionaryScreen({
             onPress={submit}
           />
         </View>
+        {handwriting}
         <DictionaryRecentHistory
           active={active}
-          visible={historyOpen && activeTab !== 'videos'}
+          visible={historyOpen && !handwritingOpen && activeTab !== 'videos'}
           history={history}
           query={text}
           onOpen={openHistory}
@@ -1338,33 +1364,11 @@ export function DictionaryScreen({
       ) : null}
     </View>
   );
-  const handwriting =
-    handwritingOpen && active ? (
-      <HandwritingLookup
-        onClose={() => setHandwritingOpen(false)}
-        onSelect={character => {
-          setHandwritingOpen(false);
-          const next = (text + character).slice(
-            0,
-            activeTab === 'words' ? 500 : 100,
-          );
-          if (activeTab === 'videos') {
-            setText(next);
-            searchVideos(next);
-          } else if (/^[\p{Script=Han}々]$/u.test(next)) {
-            if (!web) setTab('kanji');
-            setText(next);
-            push({ kind: 'kanji', query: next, page: 1 });
-          } else searchWords(next);
-        }}
-      />
-    ) : null;
   return (
     <KeyboardAvoidingView
       style={styles.fill}
       behavior={Platform.OS === 'ios' ? 'padding' : undefined}
     >
-      {handwriting}
       <View
         testID="dictionary-header"
         style={[

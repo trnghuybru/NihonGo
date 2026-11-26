@@ -83,12 +83,14 @@ export function AuthShell({
             resizeMode="contain"
             accessible={false}
           />
-          <Text>Nihon<Text nativeID="scenic-login-brand-accent">GO</Text></Text>
+          <Text style={styles.scenicWordmark}>
+            Nihon<Text nativeID="scenic-login-brand-accent">GO</Text>
+          </Text>
         </View>
         <View nativeID="scenic-login-content">
           <View nativeID="scenic-login-heading">
-            <Text accessibilityRole="header">{title}</Text>
-            <Text>{subtitle}</Text>
+            <Text accessibilityRole="header" style={styles.title}>{title}</Text>
+            <Text style={styles.subtitle}>{subtitle}</Text>
           </View>
           <View nativeID="scenic-login-card">{children}</View>
           {footer}
@@ -437,6 +439,7 @@ export function AuthContact({
 }
 
 const styles = StyleSheet.create({
+  scenicWordmark: { ...typography.brand, color: colors.dark },
   navigationHeader: {
     width: '100%',
     maxWidth: layout.maxContentWidth,

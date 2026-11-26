@@ -82,6 +82,38 @@ class FlashcardTests(unittest.TestCase):
         self.assertEqual(response.status_code, 201, response.json)
         return response.json
 
+    def test_vocabulary_progress_counts_unique_reviewed_words_for_current_user(self):
+        def progress(user='one', level='N5'):
+            return self.client.get('/api/vocabulary/progress?level=' + level,
+                                   headers={'Authorization': 'Bearer ' + user})
+
+        self.assertEqual(self.client.get('/api/vocabulary/progress').status_code, 401)
+        self.assertEqual(progress(level='bad').status_code, 400)
+        self.assertEqual(progress(level='N2').json['items'], [])
+        initial = {'lesson_id': 'lesson', 'total': 2, 'studied': 0,
+                   'percent': 0, 'due': 0, 'status': 'not_started'}
+        self.assertEqual(progress().json['items'], [initial])
+        session = self.request('post', '/sessions', {'kind': 'lesson', 'deck_id': 'lesson'}).json
+        self.assertEqual(progress().json['items'], [initial])
+        self.request('post', f"/sessions/{session['id']}/rate", {'card_id': 'lesson:word1', 'grade': 0})
+        partial = progress().json['items'][0]
+        self.assertEqual((partial['studied'], partial['percent'], partial['status']), (1, 50, 'in_progress'))
+        # The same word in another session still contributes exactly one word.
+        self.assertEqual(self.request('post', f"/sessions/{session['id']}/finish").status_code, 200)
+        another = self.request('post', '/sessions', {'kind': 'lesson', 'deck_id': 'lesson'}).json
+        self.assertNotEqual(another['id'], session['id'])
+        self.assertEqual(self.request('post', f"/sessions/{another['id']}/rate", {'card_id': 'lesson:word1', 'grade': 3}).status_code, 200)
+        self.assertEqual(progress().json['items'][0]['studied'], 1)
+        self.request('post', f"/sessions/{another['id']}/rate", {'card_id': 'lesson:word2', 'grade': 2})
+        for card_id in ('lesson:word1', 'lesson:word2'):
+            db.session.get(FlashcardSchedule, ('one', card_id)).due_at = 0
+        db.session.commit()
+        completed = progress().json['items'][0]
+        self.assertEqual((completed['studied'], completed['percent'], completed['status'], completed['due']),
+                         (2, 100, 'completed', 2))
+        self.assertEqual(progress('two').json['items'], [initial])
+        self.assertEqual(progress().headers['Cache-Control'], 'no-store')
+
     def test_append_dictionary_card_preserves_deck_and_session_and_is_idempotent(self):
         deck = self.create()
         db.session.add(DictionaryEntry(id='jmdict:2', word='日本語', reading='にほんご', common=True,

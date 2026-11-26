@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import {
+  ActivityIndicator,
   AppState,
   Platform,
   Pressable,
@@ -12,7 +13,12 @@ import { VideoExample } from '../services/videoExamplesService';
 import { colors, radius, shadowMd, spacing, typography } from '../theme/theme';
 import { AuthNotice } from './AuthForm';
 import { HighlightedCaption, videoTimestamp } from './VideoExampleCard';
-import { ChevronLeftIcon, ChevronRightIcon, ReplayIcon } from './icons';
+import {
+  ChevronLeftIcon,
+  ChevronRightIcon,
+  PlayCircleIcon,
+  ReplayIcon,
+} from './icons';
 
 // Match the identifiers registered by the native projects. YouTube requires an app Referer.
 export const YOUTUBE_APP_ORIGIN =
@@ -197,8 +203,10 @@ export function VideoExamplePlayer({
   onPlaybackTime,
   resumeRequest = 0,
   quizJumpRequest,
+  onShadowing,
 }: {
   example: VideoExample;
+  onShadowing?: (example: VideoExample) => Promise<void>;
   query: string;
   position: number;
   count: number;
@@ -226,6 +234,9 @@ export function VideoExamplePlayer({
   const lastQuizJump = useRef<typeof quizJumpRequest>(null);
   const playerRef = useRef<WebView<unknown>>(null);
   const [generation, setGeneration] = useState(0);
+  const [openingShadowing, setOpeningShadowing] = useState(false);
+  const [shadowingError, setShadowingError] = useState('');
+  const shadowingPending = useRef(false);
   const [loaded, setLoaded] = useState(false);
   const [error, setError] = useState('');
   const [active, setActive] = useState(AppState.currentState !== 'background');
@@ -460,6 +471,7 @@ export function VideoExamplePlayer({
           </Text>
         </>
       ) : null}
+      <AuthNotice error message={shadowingError} />
       {videoOnly && error ? (
         <Pressable
           accessibilityRole="button"
@@ -471,79 +483,128 @@ export function VideoExamplePlayer({
         </Pressable>
       ) : null}
       {!videoOnly ? (
-        <View style={styles.actions}>
-          {!videoOnly ? (
+        <View
+          style={[
+            styles.footer,
+            onShadowing && !timeline && styles.linkedFooter,
+          ]}
+        >
+          {onShadowing && !timeline && !videoOnly ? (
+            <View style={styles.shadowingAction}>
+              <Pressable
+                accessibilityRole="button"
+                accessibilityLabel="Luyện shadowing"
+                accessibilityState={{
+                  disabled: openingShadowing,
+                  busy: openingShadowing,
+                }}
+                disabled={openingShadowing}
+                style={({ pressed }) => [
+                  styles.shadowingButton,
+                  pressed && styles.shadowingPressed,
+                ]}
+                onPress={async () => {
+                  if (shadowingPending.current) return;
+                  shadowingPending.current = true;
+                  setOpeningShadowing(true);
+                  setShadowingError('');
+                  try {
+                    await onShadowing(example);
+                  } catch (failure) {
+                    setShadowingError(
+                      failure instanceof Error
+                        ? failure.message
+                        : 'Chưa mở được bài shadowing.',
+                    );
+                  } finally {
+                    shadowingPending.current = false;
+                    setOpeningShadowing(false);
+                  }
+                }}
+              >
+                {openingShadowing ? (
+                  <ActivityIndicator size="small" color={colors.primaryText} />
+                ) : (
+                  <PlayCircleIcon size={16} color={colors.primaryText} />
+                )}
+                <Text style={styles.shadowingLabel}>Luyện shadowing</Text>
+              </Pressable>
+            </View>
+          ) : null}
+          <View style={styles.actions}>
+            {!videoOnly ? (
+              <Pressable
+                accessibilityRole="button"
+                accessibilityLabel="Ví dụ trước"
+                hitSlop={6}
+                accessibilityState={{ disabled: !onPrevious }}
+                disabled={!onPrevious}
+                onPress={onPrevious}
+                style={({ pressed }) => [
+                  styles.iconButton,
+                  styles.navigationButton,
+                  pressed && styles.pressed,
+                ]}
+              >
+                <ChevronLeftIcon
+                  size={18}
+                  color={onPrevious ? colors.body : colors.disabledText}
+                />
+              </Pressable>
+            ) : null}
             <Pressable
               accessibilityRole="button"
-              accessibilityLabel="Ví dụ trước"
+              accessibilityLabel={error ? 'Thử phát lại' : 'Nghe lại'}
               hitSlop={6}
-              accessibilityState={{ disabled: !onPrevious }}
-              disabled={!onPrevious}
-              onPress={onPrevious}
+              onPress={() => {
+                if (onReplay && loaded && !error) {
+                  onReplay();
+                } else if (timeline && loaded && !error) {
+                  playerRef.current?.injectJavaScript(
+                    `window.updateShadowing && window.updateShadowing(${JSON.stringify(
+                      {
+                        id: example.id,
+                        start: example.start_seconds,
+                        end: example.end_seconds,
+                        rate: playbackRate,
+                        loop,
+                        continuous,
+                        replay: true,
+                      },
+                    )});true;`,
+                  );
+                } else setGeneration(value => value + 1);
+              }}
               style={({ pressed }) => [
                 styles.iconButton,
-                styles.navigationButton,
+                styles.replayButton,
+                videoOnly && styles.compactIconButton,
                 pressed && styles.pressed,
               ]}
             >
-              <ChevronLeftIcon
-                size={18}
-                color={onPrevious ? colors.body : colors.disabledText}
-              />
+              <ReplayIcon size={18} color={colors.primaryText} />
             </Pressable>
-          ) : null}
-          <Pressable
-            accessibilityRole="button"
-            accessibilityLabel={error ? 'Thử phát lại' : 'Nghe lại'}
-            hitSlop={6}
-            onPress={() => {
-              if (onReplay && loaded && !error) {
-                onReplay();
-              } else if (timeline && loaded && !error) {
-                playerRef.current?.injectJavaScript(
-                  `window.updateShadowing && window.updateShadowing(${JSON.stringify(
-                    {
-                      id: example.id,
-                      start: example.start_seconds,
-                      end: example.end_seconds,
-                      rate: playbackRate,
-                      loop,
-                      continuous,
-                      replay: true,
-                    },
-                  )});true;`,
-                );
-              } else setGeneration(value => value + 1);
-            }}
-            style={({ pressed }) => [
-              styles.iconButton,
-              styles.replayButton,
-              videoOnly && styles.compactIconButton,
-              pressed && styles.pressed,
-            ]}
-          >
-            <ReplayIcon size={18} color={colors.primaryText} />
-          </Pressable>
-          {!videoOnly ? (
-            <Pressable
-              accessibilityRole="button"
-              accessibilityLabel="Ví dụ tiếp"
-              hitSlop={6}
-              accessibilityState={{ disabled: !onNext }}
-              disabled={!onNext}
-              onPress={onNext}
-              style={({ pressed }) => [
-                styles.iconButton,
-                styles.navigationButton,
-                pressed && styles.pressed,
-              ]}
-            >
-              <ChevronRightIcon
-                size={18}
-                color={onNext ? colors.body : colors.disabledText}
-              />
-            </Pressable>
-          ) : null}
+            {!videoOnly ? (
+              <Pressable
+                accessibilityRole="button"
+                accessibilityLabel="Ví dụ tiếp"
+                hitSlop={6}
+                accessibilityState={{ disabled: !onNext }}
+                disabled={!onNext}
+                onPress={onNext}
+                style={({ pressed }) => [
+                  styles.iconButton,
+                  styles.navigationButton,
+                  pressed && styles.pressed,
+                ]}
+              >
+                <ChevronRightIcon
+                  size={18}
+                  color={onNext ? colors.body : colors.disabledText}
+                />
+              </Pressable>
+            ) : null}
+          </View>
         </View>
       ) : null}
     </View>
@@ -551,6 +612,26 @@ export function VideoExamplePlayer({
 }
 
 const styles = StyleSheet.create({
+  footer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexWrap: 'wrap',
+    gap: spacing.md,
+  },
+  linkedFooter: { justifyContent: 'space-between' },
+  shadowingAction: { alignItems: 'flex-start', gap: spacing.sm },
+  shadowingButton: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: spacing.sm,
+    minHeight: 36,
+    paddingHorizontal: spacing.sm,
+    borderRadius: radius.pill,
+    backgroundColor: colors.surfaceTint,
+  },
+  shadowingLabel: { ...typography.caption, color: colors.primaryText },
+  shadowingPressed: { opacity: 0.75 },
   content: {
     padding: spacing.xl,
     gap: spacing.lg,
