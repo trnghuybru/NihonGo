@@ -71,6 +71,8 @@ class PdfExamImportTests(unittest.TestCase):
                                  [int(n) - 1 for n in ''.join(mapping['language_answer_keys'])])
                 self.assertEqual([q['subquestion'] for q in questions if 'subquestion' in q], [1, 2])
                 for question in questions:
+                    self.assertNotRegex('\n'.join([question['prompt'], question['passage'] or '', *question['options']]),
+                                        r'(?i)likely a typo|preserving transcription|candidate transcription')
                     for image in question['images']:
                         self.assertIn(image['image_id'], assets)
                     self.assertGreaterEqual(question['answer_index'], 0)
