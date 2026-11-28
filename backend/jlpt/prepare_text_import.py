@@ -25,8 +25,10 @@ def prepare(payload, text_dir, asset_dir):
             raise ValueError('Transcription belongs to another exam.')
         text_questions = transcription['questions']
         by_id = {q['id']: q for q in text_questions}
-        if len(by_id) != 84:
-            raise ValueError('Expected 71 language and 13 printed listening questions.')
+        printed = {q['id'] for s in exam['sections'] for q in s['questions']
+                   if not q.get('audio_only_options')}
+        if set(by_id) != printed or len(by_id) != len(text_questions):
+            raise ValueError('Transcription must include every printed question exactly once.')
         pages = {p['page']: p for f in session['files'] if f['kind'] == 'exam' for p in f['pages']}
         figures = layout['exams'][session['id']]
 
@@ -80,13 +82,13 @@ def prepare(payload, text_dir, asset_dir):
                         raise ValueError('A printed question was not transcribed.')
                     question.update(prompt=f"{question['number']}ばん", instruction='音声を聞いて、答えを一つ選びなさい。', passage=None)
                 if section['id'] == 'language-reading':
-                    if 48 <= question['number'] <= 51:
+                    if question['group'] == 9:
                         question['prompt'] = str(question['number'])
-                    if 52 <= question['number'] <= 69 and (not question['passage'] or len(question['passage']) < 80):
+                    if 10 <= question['group'] <= 13 and (not question['passage'] or len(question['passage']) < 80):
                         raise ValueError('Reading question is missing its shared passage.')
-                    if question['number'] >= 70:
+                    if question['group'] == 14:
                         question['passage'] = None
-                        question['images'].append(media(figures['information_page']))
+                        question['images'].append(media(figures['information_page'], figures.get('information_box')))
                 for region in figures['question_regions'].get(question['id'], []):
                     question['images'].append(media(region['page'], region['box']))
                 if original_identity != (question['id'], question['number'], question['group'],

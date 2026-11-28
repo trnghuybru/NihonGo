@@ -1,0 +1,327 @@
+{
+  "note": "For2021-12, star positions in questions43/47 were restored from the explicitly starred answer explanations on answers.pdf page3; reconstructed exam.pdf places them inconsistently. PDF source answer keys retained. OCR audit suggestions that repair intentional distractors were rejected. Original printed star positions retained; supplied reconstructed PDFs can contain pre-existing source typos. Figures manually checked against PDF pages.",
+  "corrections": [
+    {
+      "exam": "2025-07",
+      "question": 43,
+      "field": "prompt",
+      "before": "このパン屋では、原料の　＿＿＿　★　＿＿＿　一つ一つ丁寧にパンを作っているそうだ。",
+      "value": "このパン屋では、原料の ＿＿ ＿＿ ★ ＿＿ 一つ一つ丁寧にパンを作っているそうだ。",
+      "reason": "Compared with rendered source PDF; preserve option order and provided answer index"
+    },
+    {
+      "exam": "2025-07",
+      "question": 44,
+      "field": "prompt",
+      "before": "昨日は、梅雨の　＿＿＿　★　＿＿＿　久しぶりに洗濯物を外に干すことができた。",
+      "value": "昨日は、梅雨の ＿＿ ＿＿ ★ ＿＿ 久しぶりに洗濯物を外に干すことができた。",
+      "reason": "Compared with rendered source PDF; preserve option order and provided answer index"
+    },
+    {
+      "exam": "2025-07",
+      "question": 45,
+      "field": "prompt",
+      "before": "今回のセミナーの開催日が人の　＿＿＿　★　＿＿＿　参加者が集まったのは大成功といえる。",
+      "value": "今回のセミナーの開催日が人の ＿＿ ＿＿ ★ ＿＿ 参加者が集まったのは大成功といえる。",
+      "reason": "Compared with rendered source PDF; preserve option order and provided answer index"
+    },
+    {
+      "exam": "2025-07",
+      "question": 46,
+      "field": "prompt",
+      "before": "人には　＿＿＿　★　＿＿＿　気づくのは難しい。",
+      "value": "人には ＿＿ ＿＿ ★ ＿＿ 気づくのは難しい。",
+      "reason": "Compared with rendered source PDF; preserve option order and provided answer index"
+    },
+    {
+      "exam": "2025-07",
+      "question": 47,
+      "field": "prompt",
+      "before": "昨日の晩、目覚まし時計をセットするのを忘れてしまい、今朝は寝坊してしまった。それまで　＿＿＿　★　＿＿＿　からだ。",
+      "value": "昨日の晩、目覚まし時計をセットするのを忘れてしまい、今朝は寝坊してしまった。それまで ＿＿ ＿＿ ★ ＿＿ からだ。",
+      "reason": "Compared with rendered source PDF; preserve option order and provided answer index"
+    },
+    {
+      "exam": "2025-07",
+      "question": 8,
+      "field": "options",
+      "before": [
+        "診察",
+        "視察",
+        "視察",
+        "診祭"
+      ],
+      "value": [
+        "診察",
+        "視祭",
+        "視察",
+        "診祭"
+      ],
+      "reason": "Compared with rendered source PDF; preserve option order and provided answer index"
+    },
+    {
+      "exam": "2025-07",
+      "question": 15,
+      "field": "prompt",
+      "before": "工事のため、(  )電気が出ることがあります。",
+      "value": "工事のため、(  )電気が止まることがあります。",
+      "reason": "Compared with rendered source PDF; preserve option order and provided answer index"
+    },
+    {
+      "exam": "2025-07",
+      "question": 34,
+      "field": "prompt",
+      "before": "「図書館で」\n旅館の人「いらっしゃいませ。本日は森川旅館に（　）、ありがとうございます。」",
+      "value": "「旅館で」\n旅館の人「いらっしゃいませ。本日は森川旅館に（　）、ありがとうございます。」",
+      "reason": "Compared with rendered source PDF; preserve option order and provided answer index"
+    },
+    {
+      "exam": "2025-07",
+      "question": 55,
+      "field": "options",
+      "before": [
+        "7月中にウェブ会員サービスの申し込みを始めるので、登録してほしい。",
+        "28月末で使用量と料金の通知を終了するので、知りたい場合は連絡してほしい。",
+        "9月から新しい形式の紙の通知書を郵送するので、手数料を負担してほしい。",
+        "9月から紙の通知書を有料にするので、無料で確認したい場合はウェブで確認してほしい。"
+      ],
+      "value": [
+        "7月中にウェブ会員サービスの申し込みを始めるので、登録してほしい。",
+        "8月末で使用量と料金の通知を終了するので、知りたい場合は連絡してほしい。",
+        "9月から新しい形式の紙の通知書を郵送するので、手数料を負担してほしい。",
+        "9月から紙の通知書を有料にするので、無料で確認したい場合はウェブで確認してほしい。"
+      ],
+      "reason": "Compared with rendered source PDF; preserve option order and provided answer index"
+    },
+    {
+      "exam": "2025-07",
+      "question": 57,
+      "field": "options",
+      "before": [
+        "高い知能を持つ脳を守ため、頭骨が頑丈である。",
+        "筋肉がついていて大きいので、感情が分かりやすい。",
+        "頭骨が頑丈なので、太くて長い鼻が維持できる。",
+        "重量のほとんどが脳の重さで、知能が高い。"
+      ],
+      "value": [
+        "高い知能を持つ脳を守るため、頭骨が頑丈である。",
+        "筋肉がついていて大きいので、感情が分かりやすい。",
+        "頭骨が頑丈なので、太くて長い鼻が維持できる。",
+        "重量のほとんどが脳の重さで、知能が高い。"
+      ],
+      "reason": "Compared with rendered source PDF; preserve option order and provided answer index"
+    },
+    {
+      "exam": "2025-07",
+      "question": 71,
+      "field": "options",
+      "before": [
+        "12月5日までにとホームページか電話で空きを確認し申し込む。",
+        "12月5日までに電話で空きを確認し申し込む。",
+        "12月7日までにとホームページか電話で空きを確認し申し込む。",
+        "12月7日までに電話で空きを確認し申し込む。"
+      ],
+      "value": [
+        "12月5日までにホームページか電話で空きを確認し申し込む。",
+        "12月5日までに電話で空きを確認し申し込む。",
+        "12月7日までにホームページか電話で空きを確認し申し込む。",
+        "12月7日までに電話で空きを確認し申し込む。"
+      ],
+      "reason": "Compared with rendered source PDF; preserve option order and provided answer index"
+    },
+    {
+      "exam": "2022-07",
+      "question": 43,
+      "field": "prompt",
+      "before": "この歌を聞く ____________ ことだ。彼はカラオケに行くと必ずこの歌を歌っていた。",
+      "value": "この歌を聞く ＿＿ ＿＿ ★ ＿＿ ことだ。彼はカラオケに行くと必ずこの歌を歌っていた。",
+      "reason": "Compared with rendered source PDF; preserve option order and provided answer index"
+    },
+    {
+      "exam": "2022-07",
+      "question": 44,
+      "field": "prompt",
+      "before": "昨日、アルバイトに遅刻しそうだったので ____________ 、結局遅刻してしまった。",
+      "value": "昨日、アルバイトに遅刻しそうだったので ＿＿ ＿＿ ★ ＿＿ 、結局遅刻してしまった。",
+      "reason": "Compared with rendered source PDF; preserve option order and provided answer index"
+    },
+    {
+      "exam": "2022-07",
+      "question": 45,
+      "field": "prompt",
+      "before": "来月結婚する友人に結婚式のスピーチを頼まれた。大勢の前で話すのは\n____________ 引き受けることにした。",
+      "value": "来月結婚する友人に結婚式のスピーチを頼まれた。大勢の前で話すのは ＿＿ ＿＿ ★ ＿＿ 引き受けることにした。",
+      "reason": "Compared with rendered source PDF; preserve option order and provided answer index"
+    },
+    {
+      "exam": "2022-07",
+      "question": 46,
+      "field": "prompt",
+      "before": "先日の政治家Ａ氏の発言はあまりに無責任だ。 ____________ 、と思う。",
+      "value": "先日の政治家Ａ氏の発言はあまりに無責任だ。 ＿＿ ＿＿ ★ ＿＿ 、と思う。",
+      "reason": "Compared with rendered source PDF; preserve option order and provided answer index"
+    },
+    {
+      "exam": "2022-07",
+      "question": 47,
+      "field": "prompt",
+      "before": "食事や睡眠などの生活習慣は一度乱れてしまうと ____________ が大切だ。",
+      "value": "食事や睡眠などの生活習慣は一度乱れてしまうと ＿＿ ＿＿ ★ ＿＿ が大切だ。",
+      "reason": "Compared with rendered source PDF; preserve option order and provided answer index"
+    },
+    {
+      "exam": "2022-07",
+      "question": 62,
+      "field": "target",
+      "before": "①長く同じ活動を行ってきた組織",
+      "value": "①長く同じ活動を行ってきた組",
+      "reason": "Compared with rendered source PDF; preserve option order and provided answer index"
+    },
+    {
+      "exam": "2021-12",
+      "question": 43,
+      "field": "prompt",
+      "before": "もう酒は飲まないと ___ ___ ★ ___ 絶対に守りたい。",
+      "value": "もう酒は飲まないと ＿＿ ★ ＿＿ ＿＿ 絶対に守りたい。",
+      "reason": "Compared with rendered source PDF; preserve option order and provided answer index"
+    },
+    {
+      "exam": "2021-12",
+      "question": 44,
+      "field": "prompt",
+      "before": "必要のない物でも、欲しくなると ___ ___ ★ ___ しまう。",
+      "value": "必要のない物でも、欲しくなると ＿＿ ＿＿ ★ ＿＿ しまう。",
+      "reason": "Compared with rendered source PDF; preserve option order and provided answer index"
+    },
+    {
+      "exam": "2021-12",
+      "question": 45,
+      "field": "prompt",
+      "before": "パソコンの電源を入れたのだが、画面に「お待ちください」という ★ ___ 電源を入れ直した。",
+      "value": "パソコンの電源を入れたのだが、画面に「お待ちください」という ＿＿ ＿＿ ★ ＿＿ 電源を入れ直した。",
+      "reason": "Compared with rendered source PDF; preserve option order and provided answer index"
+    },
+    {
+      "exam": "2021-12",
+      "question": 46,
+      "field": "prompt",
+      "before": "A「すみません、来週の 2 時からの会議ですが、その時間、別の用件が入ってしまいまして、もしそちらのご都合が ___ ___ ★ ___ 、いかがでしょうか。」\nB「こちらは大丈夫ですよ。」",
+      "value": "A「すみません、来週の 2 時からの会議ですが、その時間、別の用件が入ってしまいまして、もしそちらのご都合が ＿＿ ＿＿ ★ ＿＿ 、いかがでしょうか。」\nB「こちらは大丈夫ですよ。」",
+      "reason": "Compared with rendered source PDF; preserve option order and provided answer index"
+    },
+    {
+      "exam": "2021-12",
+      "question": 47,
+      "field": "prompt",
+      "before": "20年前に初めてこの歌手の歌を聴いたとき、___ ___ ★ ___",
+      "value": "20年前に初めてこの歌手の歌を聴いたとき、 ＿＿ ＿＿ ＿＿ ★ ",
+      "reason": "Compared with rendered source PDF; preserve option order and provided answer index"
+    },
+    {
+      "exam": "2021-07",
+      "question": 43,
+      "field": "prompt",
+      "before": "もうすぐ高校卒業だ。この学校で先生や友達と過ごす ★ 。",
+      "value": "もうすぐ高校卒業だ。この学校で先生や友達と過ごす ＿＿ ★ ＿＿ ＿＿ 。",
+      "reason": "Compared with rendered source PDF; preserve option order and provided answer index"
+    },
+    {
+      "exam": "2021-07",
+      "question": 44,
+      "field": "prompt",
+      "before": "A「サラリーマンから農家 ★ があるんだね。」\nB「自分の夢をどうしてもあきらめきれなくてね。」",
+      "value": "A「サラリーマンから農家 ＿＿ ＿＿ ★ ＿＿ があるんだね。」\nB「自分の夢をどうしてもあきらめきれなくてね。」",
+      "reason": "Compared with rendered source PDF; preserve option order and provided answer index"
+    },
+    {
+      "exam": "2021-07",
+      "question": 45,
+      "field": "prompt",
+      "before": "遠足の日の朝、娘は、「いってきます」と ★ 飛び出していった。",
+      "value": "遠足の日の朝、娘は、「いってきます」と ＿＿ ＿＿ ★ ＿＿ 飛び出していった。",
+      "reason": "Compared with rendered source PDF; preserve option order and provided answer index"
+    },
+    {
+      "exam": "2021-07",
+      "question": 46,
+      "field": "prompt",
+      "before": "参考書を読んで完璧に ★ ということがよくある。",
+      "value": "参考書を読んで完璧に ＿＿ ＿＿ ★ ＿＿ ということがよくある。",
+      "reason": "Compared with rendered source PDF; preserve option order and provided answer index"
+    },
+    {
+      "exam": "2021-07",
+      "question": 47,
+      "field": "prompt",
+      "before": "この池に ★ そうだ。",
+      "value": "この池に ＿＿ ＿＿ ★ ＿＿ そうだ。",
+      "reason": "Compared with rendered source PDF; preserve option order and provided answer index"
+    },
+    {
+      "exam": "2020-12",
+      "question": 43,
+      "field": "prompt",
+      "before": "昨日、初めてパンを作ってみた。料理雑誌の________、うまくいきなかった。",
+      "value": "昨日、初めてパンを作ってみた。料理雑誌の ＿＿ ＿＿ ★ ＿＿ 、うまくいきなかった。",
+      "reason": "Compared with rendered source PDF; preserve option order and provided answer index"
+    },
+    {
+      "exam": "2020-12",
+      "question": 44,
+      "field": "prompt",
+      "before": "「10倍がゆ」とは________、おかゆのことです。",
+      "value": "「10倍がゆ」とは ＿＿ ＿＿ ★ ＿＿ 、おかゆのことです。",
+      "reason": "Compared with rendered source PDF; preserve option order and provided answer index"
+    },
+    {
+      "exam": "2020-12",
+      "question": 45,
+      "field": "prompt",
+      "before": "私が就職した商社は大手の________、新人でも大きな仕事を任せてもらえるので、やりがいがある。",
+      "value": "私が就職した商社は大手の ＿＿ ＿＿ ★ ＿＿ 、新人でも大きな仕事を任せてもらえるので、やりがいがある。",
+      "reason": "Compared with rendered source PDF; preserve option order and provided answer index"
+    },
+    {
+      "exam": "2020-12",
+      "question": 46,
+      "field": "prompt",
+      "before": "彼女は1970年代に活躍したジャズピアニストで、この人________、大きな存在だった。",
+      "value": "彼女は1970年代に活躍したジャズピアニストで、この人 ＿＿ ＿＿ ★ ＿＿ 、大きな存在だった。",
+      "reason": "Compared with rendered source PDF; preserve option order and provided answer index"
+    },
+    {
+      "exam": "2020-12",
+      "question": 47,
+      "field": "prompt",
+      "before": "贈り物をするときは、自分の勝手な________、相手の趣味や都合をよく考えて決めましょう。",
+      "value": "贈り物をするときは、自分の勝手な ＿＿ ＿＿ ★ ＿＿ 、相手の趣味や都合をよく考えて決めましょう。",
+      "reason": "Compared with rendered source PDF; preserve option order and provided answer index"
+    },
+    {
+      "exam": "2020-12",
+      "question": 43,
+      "field": "prompt",
+      "before": "昨日、初めてパンを作ってみた。料理雑誌の ＿＿ ＿＿ ★ ＿＿ 、うまくいきなかった。",
+      "value": "昨日、初めてパンを作ってみた。料理雑誌の ＿＿ ＿＿ ★ ＿＿ 、うまく膨らまなかった。",
+      "reason": "Compared with rendered source PDF; preserve option order and provided answer index"
+    },
+    {
+      "exam": "2020-12",
+      "question": 45,
+      "field": "options",
+      "before": [
+        "決して",
+        "商社に比べると",
+        "やる気があれば",
+        "規模は大きないか"
+      ],
+      "value": [
+        "決して",
+        "商社に比べると",
+        "やる気があれば",
+        "規模は大きくないか"
+      ],
+      "reason": "Compared with rendered source PDF; preserve option order and provided answer index"
+    }
+  ]
+}

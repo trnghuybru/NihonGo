@@ -1,0 +1,78 @@
+{
+  "source_mapping_sha256": "913a43e0c056273166f32187948e3cc634dee24544ab7403f651142b61e3fdc0",
+  "exams": {
+    "2025-07": {
+      "information_page": 31,
+      "question_regions": {}
+    },
+    "2022-07": {
+      "information_page": 18,
+      "question_regions": {
+        "lr-71": [
+          {
+            "page": 17,
+            "box": [
+              115,
+              370,
+              895,
+              525
+            ]
+          }
+        ]
+      }
+    },
+    "2021-12": {
+      "information_page": 16,
+      "information_box": [
+        138,
+        120,
+        865,
+        815
+      ],
+      "question_regions": {
+        "lr-70": [
+          {
+            "page": 15,
+            "box": [
+              137,
+              505,
+              865,
+              710
+            ]
+          }
+        ],
+        "l-1-5": [
+          {
+            "page": 18,
+            "box": [
+              145,
+              84,
+              690,
+              386
+            ]
+          }
+        ]
+      }
+    },
+    "2021-07": {
+      "information_page": 18,
+      "question_regions": {
+        "l-1-2": [
+          {
+            "page": 19,
+            "box": [
+              195,
+              445,
+              585,
+              638
+            ]
+          }
+        ]
+      }
+    },
+    "2020-12": {
+      "information_page": 15,
+      "question_regions": {}
+    }
+  }
+}

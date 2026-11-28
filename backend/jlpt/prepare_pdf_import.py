@@ -8,23 +8,26 @@ import hashlib
 import io
 import json
 import os
+from itertools import accumulate
 from pathlib import Path
 
 
-GROUP_ENDS = [5, 10, 13, 20, 25, 30, 42, 47, 51, 56, 64, 66, 69, 71]
 LISTENING_COUNTS = [5, 6, 5, 11, 3]
 
 
 def validate_mapping(exam):
-    key = ''.join(exam['language_answer_keys'])
-    if len(key) != 71 or set(key) - set('1234'):
-        raise ValueError('Expected 71 source-backed language/reading answers.')
+    groups = exam['language_answer_keys']
+    if len(groups) != 14 or any(not isinstance(row, str) or not row for row in groups):
+        raise ValueError('Expected source-backed answers for all 14 language/reading groups.')
+    key = ''.join(groups)
+    if len(key) not in {71, 72} or set(key) - set('1234'):
+        raise ValueError('Expected 71 or 72 source-backed language/reading answers.')
     listening = exam['listening_answer_keys']
     if list(map(len, listening)) != LISTENING_COUNTS:
         raise ValueError('Incomplete listening answer key.')
     if any(set(row) - set('123' if i == 3 else '1234') for i, row in enumerate(listening)):
         raise ValueError('Listening answer outside the printed option range.')
-    if set(exam['language_pages']) != set(map(str, range(1, 72))):
+    if set(exam['language_pages']) != set(map(str, range(1, len(key) + 1))):
         raise ValueError('Every language/reading question needs a source page mapping.')
     total = next(f['page_count'] for f in exam['files'] if f['kind'] == 'exam')
     groups = exam['listening_pages']
@@ -64,6 +67,7 @@ def prepare(manifest_path, source_dir, bucket):
 
     for source in manifest['exams']:
         key = validate_mapping(source)
+        group_ends = list(accumulate(map(len, source['language_answer_keys'])))
         root = Path(source_dir) / f"jlpt-n2-{source['id']}"
         files, exam_pages = [], {}
         for document in source['files']:
@@ -94,7 +98,7 @@ def prepare(manifest_path, source_dir, bucket):
         language = []
         for number, answer in enumerate(key, 1):
             language.append(dict(id=f'lr-{number}', number=number,
-                group=next(i for i, end in enumerate(GROUP_ENDS, 1) if number <= end),
+                group=next(i for i, end in enumerate(group_ends, 1) if number <= end),
                 prompt='', instruction='', passage=None, options=['1', '2', '3', '4'],
                 answer_index=int(answer) - 1, content_format='image',
                 images=[exam_pages[p] for p in source['language_pages'][str(number)]],
