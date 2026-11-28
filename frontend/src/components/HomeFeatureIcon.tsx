@@ -16,6 +16,7 @@ export type HomeFeatureIconName =
   | 'gamepad'
   | 'lightbulb'
   | 'sparkles'
+  | 'settings'
   | 'arrow';
 
 interface Props {
@@ -36,13 +37,19 @@ export function HomeFeatureIcon({ name, color, size = 24 }: Props) {
   return (
     <Svg width={size} height={size} viewBox="0 0 24 24" accessible={false}>
       {name === 'bell' ? (
-        <Path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4" {...stroke} />
+        <Path
+          d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4"
+          {...stroke}
+        />
       ) : null}
       {name === 'crown' ? (
         <Path d="m3 7 4.5 4L12 5l4.5 6L21 7l-2 12H5L3 7Z" {...stroke} />
       ) : null}
       {name === 'flame' ? (
-        <Path d="M13 3c1 5-3 6-3 9-2-.5-2-2-2-3-2 2-3 4-3 6a7 7 0 0 0 14 0c0-4-3-8-6-12Z" fill={color} />
+        <Path
+          d="M13 3c1 5-3 6-3 9-2-.5-2-2-2-3-2 2-3 4-3 6a7 7 0 0 0 14 0c0-4-3-8-6-12Z"
+          fill={color}
+        />
       ) : null}
       {name === 'calendar' ? (
         <>
@@ -147,6 +154,15 @@ export function HomeFeatureIcon({ name, color, size = 24 }: Props) {
             d="M19 16c.3 1.7 1.1 2.5 2.8 2.8-1.7.3-2.5 1.1-2.8 2.8-.3-1.7-1.1-2.5-2.8-2.8 1.7-.3 2.5-1.1 2.8-2.8Z"
             {...stroke}
           />
+        </>
+      ) : null}
+      {name === 'settings' ? (
+        <>
+          <Path
+            d="m9 3-.6 2.1-1.9 1.1L4.4 6 2 10l1.5 1.6v.8L2 14l2.4 4 2.1-.2 1.9 1.1L9 21h6l.6-2.1 1.9-1.1 2.1.2 2.4-4-1.5-1.6v-.8L22 10l-2.4-4-2.1.2-1.9-1.1L15 3H9Z"
+            {...stroke}
+          />
+          <Circle cx="12" cy="12" r="3" {...stroke} />
         </>
       ) : null}
       {name === 'arrow' ? <Path d="M5 12h14m-5-5 5 5-5 5" {...stroke} /> : null}

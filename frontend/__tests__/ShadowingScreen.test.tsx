@@ -335,7 +335,7 @@ test('dictation fills random words inline in the transcript and retains answers 
   expect(player().props.example.id).toBe('two');
   expect(visibleText()).toContain('Đã hoàn thành câu cuối!');
   await press('Shadowing');
-  expect(visibleText()).toContain(example.text);
+  expect(visibleText().replace(/\n/g, '')).toContain('次の文。');
   await press('Nghe chép chính tả');
   await act(async () => player().props.onPrevious());
   expect(currentInput().props.value).toBe(' 日本語 ');
@@ -542,33 +542,22 @@ test('highlights live captions while keeping the video mounted, and seeks only o
   expect(tree.root.findByType(VideoExamplePlayer).props.position).toBe(2);
 });
 
-test('manual scrolling suspends following while subtitle highlighting continues', async () => {
+test('browsing the transcript preserves playback while the unified caption stays synced', async () => {
   await render();
   await press('Luyện shadowing');
-  const scroll = jest
-    .spyOn(FlatList.prototype, 'scrollToIndex')
-    .mockImplementation(() => {});
+  await press('Phụ đề');
   const player = tree.root.findByType(VideoExamplePlayer);
+  const seek = player.props.seekRequest;
+  const list = tree.root.findByType(FlatList);
+  await act(async () => list.props.onScrollBeginDrag());
   await act(async () => player.props.onCaptionChange(1));
-  expect(scroll).toHaveBeenCalledWith({
-    index: 1,
-    animated: false,
-    viewPosition: 0.5,
-  });
-  scroll.mockClear();
-  await act(async () =>
-    tree.root.findByType(FlatList).props.onScrollBeginDrag(),
-  );
-  await act(async () => player.props.onCaptionChange(0));
-  expect(scroll).not.toHaveBeenCalled();
-  expect(player.props.position).toBe(1);
-  await press('Về câu đang phát');
-  expect(scroll).toHaveBeenCalledWith({
-    index: 0,
-    animated: false,
-    viewPosition: 0.5,
-  });
-  scroll.mockRestore();
+  expect(player.props.position).toBe(2);
+  expect(player.props.seekRequest).toBe(seek);
+  expect(
+    tree.root
+      .findByProps({ testID: 'shadowing-current-caption' })
+      .findByType(Text).props.children,
+  ).toBe('次の文。');
 });
 
 test('replay uses the live phrase rather than the initial phrase in continuous mode', async () => {
@@ -624,17 +613,13 @@ test('reference layout shows a synced current sentence, collapses the subtitle p
   const currentCaption = tree.root.findByProps({
     testID: 'shadowing-current-caption',
   });
-  expect(
-    currentCaption
-      .findByProps({ testID: 'shadowing-lyrics-current' })
-      .findByType(Text).props.children,
-  ).toBe('次の文。');
+  expect(currentCaption.findByType(Text).props.children).toBe('次の文。');
   expect(tree.root.findByType(VideoExamplePlayer).props.videoOnly).toBe(true);
   await press('Phụ đề');
-  expect(tree.root.findAllByType(FlatList)).toHaveLength(2);
+  expect(tree.root.findAllByType(FlatList)).toHaveLength(1);
   expect(webview.props.source).toBe(source);
   await press('Đóng phụ đề');
-  expect(tree.root.findAllByType(FlatList)).toHaveLength(1);
+  expect(tree.root.findAllByType(FlatList)).toHaveLength(0);
   expect(webview.props.source).toBe(source);
   const translation = tree.root.findAll(
     node =>
@@ -676,6 +661,7 @@ test('moves the main caption over the video and back without restarting playback
   expect(
     JSON.stringify(overlay.findAllByType(Text).map(t => t.props.children)),
   ).toContain('次の文。');
+  expect(overlay.findByType(Text).props.children).toBe('次の文。');
   await press('Ẩn phụ đề');
   expect(
     tree.root.findAllByProps({ testID: 'shadowing-overlay-caption' }),
@@ -694,6 +680,46 @@ test('moves the main caption over the video and back without restarting playback
   expect(tree.root.findByProps({ testID: 'youtube-example-player' })).toBe(
     player,
   );
+  expect(player.props.source).toBe(source);
+  expect(tree.root.findByType(VideoExamplePlayer).props.seekRequest).toBe(seek);
+});
+
+test('adjusts subtitle backdrop without resetting playback and keeps pronunciation out of shadowing', async () => {
+  await render();
+  await press('Luyện shadowing');
+  expect(JSON.stringify(tree.toJSON())).not.toContain('Luyện phát âm câu này');
+  const player = tree.root.findByProps({ testID: 'youtube-example-player' });
+  const source = player.props.source;
+  const seek = tree.root.findByType(VideoExamplePlayer).props.seekRequest;
+  await press('Đưa phụ đề lên video');
+  await press('Tuỳ chọn shadowing');
+  expect(
+    tree.root
+      .findByProps({ testID: 'shadowing-player-frame' })
+      .findByProps({ testID: 'shadowing-settings-popover' }),
+  ).toBeDefined();
+  await press('Nền phụ đề đậm hơn');
+  const backdrop = tree.root.findByProps({
+    testID: 'shadowing-subtitle-backdrop',
+  });
+  expect(JSON.stringify(backdrop.props.style)).toContain(
+    'rgba(18, 24, 30, 0.4)',
+  );
+  await press('Nền phụ đề nhạt hơn');
+  expect(JSON.stringify(backdrop.props.style)).toContain(
+    'rgba(18, 24, 30, 0.35)',
+  );
+  await press('Đóng tuỳ chọn luyện nghe');
+  await press('Tuỳ chọn shadowing');
+  await press('Đóng tuỳ chọn');
+  expect(
+    tree.root.findAllByProps({ testID: 'shadowing-settings-popover' }),
+  ).toHaveLength(0);
+  await press('Tuỳ chọn shadowing');
+  await press('Tuỳ chọn shadowing');
+  expect(
+    tree.root.findAllByProps({ testID: 'shadowing-settings-popover' }),
+  ).toHaveLength(0);
   expect(player.props.source).toBe(source);
   expect(tree.root.findByType(VideoExamplePlayer).props.seekRequest).toBe(seek);
 });
@@ -740,7 +766,7 @@ test('shows complete sentences instead of short display cues and replays their f
     }),
   );
   const currentCaption = tree.root
-    .findByProps({ testID: 'shadowing-lyrics-current' })
+    .findByProps({ testID: 'shadowing-current-caption' })
     .findByType(Text);
   expect(currentCaption.props.children).toBe('日本語です。');
   expect(tree.root.findByType(VideoExamplePlayer).props.timeline).toEqual(
@@ -764,7 +790,7 @@ test('shows complete sentences instead of short display cues and replays their f
   );
   expect(
     tree.root
-      .findByProps({ testID: 'shadowing-lyrics-current' })
+      .findByProps({ testID: 'shadowing-current-caption' })
       .findByType(Text).props.children,
   ).toBe('次の文。');
   expect(tree.root.findByType(VideoExamplePlayer).props.position).toBe(2);
@@ -1083,6 +1109,18 @@ test('translation is loaded on demand, maps practice sentences and keeps the pla
   await press('Bản dịch');
   expect(visibleText()).toContain('Đây là tiếng Nhật.');
   expect(shadowingService.requestTranslation).not.toHaveBeenCalled();
+  await press('Đưa phụ đề lên video');
+  const subtitle = tree.root.findByProps({
+    testID: 'shadowing-overlay-caption',
+  });
+  expect(
+    subtitle
+      .findByProps({ testID: 'shadowing-subtitle-translation' })
+      .findByType(Text).props.children,
+  ).toBe('Đây là tiếng Nhật.');
+  expect(
+    tree.root.findAllByProps({ testID: 'shadowing-current-caption' }),
+  ).toHaveLength(0);
   await press('Luyện đoạn 1');
   const translated = tree.root
     .findAllByType(Text)
@@ -1524,7 +1562,7 @@ test('mobile quiz is collapsed until opened and stays inline below a pinned play
     .find(node => node.props.testID === 'shadowing-mobile-content-scroll');
   expect(scroller).toBeTruthy();
   expect(
-    tree.root.findAllByProps({ testID: 'shadowing-mobile-lyrics' }).length,
+    tree.root.findAllByProps({ testID: 'shadowing-current-caption' }).length,
   ).toBeGreaterThan(0);
   await act(async () =>
     tree.root.findByType(VideoExamplePlayer).props.onPlaybackTime(10),

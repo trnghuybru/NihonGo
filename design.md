@@ -699,4 +699,12 @@ Phòng chung: Kho game có Tạo phòng và nhập một mã duy nhất; chọn 
 
 Nội dung học tiếng Nhật trên web: từ/cách đọc/ví dụ trong Bài học từ vựng và phụ đề chính Shadowing (câu hiện tại và furigana) dùng chung `japaneseStudyFont` — M PLUS Rounded 1c Bold như Luyện phát âm. Giữ cỡ chữ, line-height, màu và phông nhãn giao diện hiện có.
 
-Shadowing: danh sách transcript desktop/mobile giữ phông thường Readex như trước. Nút vị trí phụ đề chuyển câu chính giữa dưới video và nổi trên video; mặc định dưới video. Lớp nổi nền trong suốt, chữ trắng có bóng tối, không có thẻ nền trắng che video; giữ tra từ và đồng bộ, không remount trình phát. Chính tả vẫn ở dưới video.
+Shadowing: danh sách transcript desktop/mobile giữ phông thường Readex như trước. Nút vị trí phụ đề chuyển câu chính giữa dưới video và nổi trên video; mặc định dưới video. Lớp nổi dùng nền kính mờ blur 12px trên web, chữ trắng có bóng tối; độ đậm nền mặc định 35%, chỉnh 0–80% trong cài đặt, không làm nhòe chữ; chừa 10% chiều rộng mỗi bên và 14% khoảng cách đáy. Chỉ dùng một khung phụ đề Nhật–Việt: bản dịch nhỏ ngay dưới câu Nhật trong cùng nền mờ; bỏ phụ đề nhỏ/khung cũ trùng lặp bên dưới. Nút vị trí di chuyển chính khung này lên video hoặc xuống dưới; giữ tra từ và đồng bộ, không remount trình phát. Chính tả vẫn ở dưới video.
+
+Shadowing: video và thanh chức năng nằm chung khung bo góc. Thanh nền sáng `surface` sát đáy video, nhóm câu trước/nghe lại/câu tiếp và số câu bên trái; phụ đề/dịch/vị trí phụ đề/AI/cài đặt bánh răng bên phải, trạng thái bật nhấn cam. Giữ điều khiển phát gốc của YouTube trong player; thanh luyện tập không che nội dung video và bản dịch nằm trong cùng khung phụ đề mới. Mobile giữ thanh cùng video khi cuộn nội dung; tốc độ, lặp và chế độ nghe ở cài đặt.
+
+Shadowing tạm ẩn lối vào luyện phát âm và form ghi âm trong màn video; tính năng Luyện phát âm riêng trong Luyện tập vẫn giữ nguyên. Cài đặt Nền phụ đề trên video có thanh Nhạt–Đậm trên web, nút tăng/giảm trên native và xem trước; chỉnh nền không tải lại hoặc tua video.
+
+Cài đặt Shadowing dùng popup 280px neo góc phải trên nút bánh răng, không mở sheet toàn màn hình hay làm tối trang. Padding 12px, tiêu đề 12/18, chip cao 30px; nội dung cuộn khi video thấp. Nhấn ngoài, Escape, Back Android hoặc bấm lại bánh răng để đóng. Điều chỉnh nền xem trực tiếp trên phụ đề, bỏ ô preview riêng để menu gọn.
+
+Phụ đề Shadowing thống nhất một component cho cả nổi và đặt dưới video; không dùng khung lyrics/cuộn phụ đề cũ trong vùng chính. Bản dịch, trạng thái tải và nút thử lại nằm ngay dưới câu Nhật trong cùng nền blur. Danh sách transcript riêng và input chính tả giữ nguyên.

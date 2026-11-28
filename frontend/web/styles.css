@@ -312,3 +312,9 @@ textarea:focus-visible {
     margin: 0 16px 12px;
   }
 }
+
+/* Blur only the pixels behind the subtitle, preserving crisp text above it. */
+#shadowing-subtitle-backdrop {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
