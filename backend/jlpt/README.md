@@ -128,3 +128,11 @@ bằng tài khoản R2 của staging, rồi commit dữ liệu vào DB trước 
 bản mới. Lỗi kiểm tra dừng deploy; không tự xóa đề hay ảnh của lần nhập trước.
 Dữ liệu chuẩn bị được lưu trong release để deploy không phụ thuộc file Downloads.
 API ưu tiên dữ liệu DB; JSON hai đề mẫu chỉ là fallback khi máy local chưa import.
+
+## Tạm giữ hai đề (theo yêu cầu người dùng)
+
+Migration `d3e4f5a6b7c8` xóa các kỳ chưa tách câu từ lần nhập 2010–2024, chỉ giữ
+N3 12/2016 và 7/2017. Gói seed cũng chỉ còn hai kỳ để deploy sau không nhập lại
+các đề đã xóa. `jlpt_images` và toàn bộ 299 object R2 được giữ nguyên, không có
+thao tác xóa ảnh. Đây là migration dọn dữ liệu một lần; việc nhập dữ liệu mới sau
+này vẫn dùng bộ nhập bình thường, không bị chính sách dọn định kỳ xóa lại.
