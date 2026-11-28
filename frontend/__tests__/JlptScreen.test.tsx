@@ -571,3 +571,163 @@ test('automatically submits when the final timed section expires', async () => {
     jest.useRealTimers();
   }
 });
+
+function readingExamFixture(): Exam {
+  const reading: Exam = {
+    ...exam,
+    id: 'n2-shared',
+    total: 3,
+    level: 'N2',
+    sections: [
+      {
+        id: 'language-reading',
+        label: 'Đọc hiểu',
+        original_label: '読解',
+        duration_seconds: 6300,
+        questions: [57, 58, 59].map(number => ({
+          id: `lr-${number}`,
+          number,
+          group: 11,
+          instruction: '読んでください。',
+          prompt: `質問${number}`,
+          passage: number === 59 ? '次の別の文章です。' : '共通の文章です。',
+          options: ['一つ目', '二つ目', '三つ目', '四つ目'],
+          images: [],
+        })),
+      },
+    ],
+  };
+  jest
+    .mocked(jlptService.list)
+    .mockResolvedValue({
+      items: [
+        {
+          ...reading,
+          sections: reading.sections.map(s => ({
+            ...s,
+            total: s.questions.length,
+          })),
+        },
+      ],
+    });
+  jest.mocked(jlptService.exam).mockResolvedValue(reading);
+  return reading;
+}
+const renderedOccurrences = (value: string) =>
+  (JSON.stringify(tree.toJSON()).match(new RegExp(value, 'g')) ?? []).length;
+
+test('keeps a reading and its questions together, saves independent answers and flags, and navigates by passage', async () => {
+  readingExamFixture();
+  const learner = `shared-${account}`;
+  await open(learner);
+  expect(renderedOccurrences('共通の文章です。')).toBe(1);
+  expect(button('Câu 57 · Đáp án 1: 一つ目')).toBeDefined();
+  expect(button('Câu 58 · Đáp án 2: 二つ目')).toBeDefined();
+  expect(renderedOccurrences('次の別の文章です。')).toBe(0);
+  await act(async () => button('Câu 57 · Đáp án 1: 一つ目').props.onPress());
+  await act(async () => button('Câu 58 · Đáp án 2: 二つ目').props.onPress());
+  expect(
+    button('Câu 57 · Đáp án 1: 一つ目').props.accessibilityState.checked,
+  ).toBe(true);
+  expect(
+    button('Câu 58 · Đáp án 2: 二つ目').props.accessibilityState.checked,
+  ).toBe(true);
+  await act(async () => button('Đánh dấu câu 58 xem lại').props.onPress());
+  await act(async () => button('Bỏ chọn câu 57').props.onPress());
+  expect(
+    button('Câu 58 · Đáp án 2: 二つ目').props.accessibilityState.checked,
+  ).toBe(true);
+  await act(async () => button('Bài tiếp').props.onPress());
+  expect(renderedOccurrences('共通の文章です。')).toBe(0);
+  expect(renderedOccurrences('次の別の文章です。')).toBe(1);
+  await act(async () => button('Câu trước').props.onPress());
+  expect(renderedOccurrences('共通の文章です。')).toBe(1);
+  await act(async () => tree.unmount());
+  await open(learner);
+  expect(
+    button('Câu 57 · Đáp án 1: 一つ目').props.accessibilityState.checked,
+  ).toBe(false);
+  expect(
+    button('Câu 58 · Đáp án 2: 二つ目').props.accessibilityState.checked,
+  ).toBe(true);
+  expect(button('Bỏ đánh dấu câu 58 xem lại')).toBeDefined();
+});
+
+test('reviews each question against its own ID and keeps passage context while filtering mistakes', async () => {
+  const reading = readingExamFixture();
+  jest.mocked(jlptService.grade).mockResolvedValue({
+    total: 3,
+    answered: 2,
+    correct: 1,
+    note: '',
+    sections: [],
+    review_token: 'shared-proof',
+    results: {
+      'lr-57': { selected_index: 0, correct_index: 1, status: 'incorrect' },
+      'lr-58': { selected_index: 1, correct_index: 1, status: 'correct' },
+      'lr-59': { selected_index: null, correct_index: 0, status: 'unanswered' },
+    },
+  });
+  jest.mocked(jlptService.review).mockImplementation(async (_id, qid) => {
+    const q = reading.sections[0].questions.find(item => item.id === qid)!;
+    return {
+      prompt_tokens: [],
+      paragraphs: [{ text: q.passage!, tokens: [] }],
+      words: {},
+    };
+  });
+  jest
+    .mocked(jlptService.explain)
+    .mockResolvedValue({
+      option_index: 1,
+      correct_index: 1,
+      explanation: 'Giải thích câu 58',
+      grammar: [],
+      caution: '',
+    });
+  await open(`shared-review-${account}`);
+  await act(async () => button('Câu 57 · Đáp án 1: 一つ目').props.onPress());
+  await act(async () => button('Câu 58 · Đáp án 2: 二つ目').props.onPress());
+  await act(async () => button('Nộp bài').props.onPress());
+  await act(async () => button('Xác nhận nộp bài').props.onPress());
+  expect(jlptService.grade).toHaveBeenCalledWith(reading.id, 1, {
+    'lr-57': 0,
+    'lr-58': 1,
+  });
+  expect(jlptService.review).toHaveBeenCalledWith(
+    reading.id,
+    'lr-57',
+    'shared-proof',
+  );
+  expect(jlptService.review).toHaveBeenCalledWith(
+    reading.id,
+    'lr-58',
+    'shared-proof',
+  );
+  await act(async () => button('Câu 58 · Đáp án 2: 二つ目').props.onPress());
+  expect(jlptService.explain).toHaveBeenCalledWith(
+    reading.id,
+    'lr-58',
+    'shared-proof',
+    1,
+  );
+  await act(async () => button('Đóng giải thích Momo').props.onPress());
+  await act(async () => button('Xem câu sai & bỏ trống').props.onPress());
+  expect(renderedOccurrences('共通の文章です。')).toBe(1);
+  expect(button('Câu 58 · Đáp án 2: 二つ目')).toBeUndefined();
+  expect(button('Câu 57 · Đáp án 1: 一つ目')).toBeDefined();
+  await act(async () => button('Đọc hiểu, 問題11, 58番, đúng').props.onPress());
+  expect(button('Câu 58 · Đáp án 2: 二つ目')).toBeDefined();
+});
+
+test('mobile map selects a question without splitting its shared passage', async () => {
+  readingExamFixture();
+  await open(`shared-mobile-${account}`, 390);
+  await act(async () => button('Bảng câu hỏi · 0/3').props.onPress());
+  await act(async () =>
+    button('Đọc hiểu, 問題11, 58番, chưa trả lời').props.onPress(),
+  );
+  expect(renderedOccurrences('共通の文章です。')).toBe(1);
+  expect(button('Câu 57 · Đáp án 1: 一つ目')).toBeDefined();
+  expect(button('Câu 58 · Đáp án 2: 二つ目')).toBeDefined();
+});
