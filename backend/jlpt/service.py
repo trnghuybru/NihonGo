@@ -22,6 +22,11 @@ def _load_exams(signature):
 
 
 def exams():
+    from .database import available, JlptExamRecord, db
+    if available():
+        rows = db.session.query(JlptExamRecord).filter(JlptExamRecord.normalized.isnot(None)).all()
+        if rows:
+            return {r.id: r.normalized for r in sorted(rows, key=lambda r: (r.year, r.month), reverse=True)}
     # Local imports become visible without restarting the API or keeping stale content.
     signature = tuple((str(path), path.stat().st_mtime_ns, path.stat().st_size)
                       for path in sorted(DATA.glob('*.json')))
@@ -45,10 +50,12 @@ def preview(exam):
 
 
 def public_exam(exam):
-    return {**preview(exam), 'source_filename': exam['source_filename'],
+    from .database import public_images
+    result = {**preview(exam), 'source_filename': exam['source_filename'],
             'sections': [{**s, 'duration_seconds': duration(exam, i),
                           'questions': [{k: v for k, v in q.items() if k != 'answer_index'}
                                            for q in s['questions']]} for i, s in enumerate(exam['sections'])]}
+    return public_images(result)
 
 
 def grade(exam, payload):

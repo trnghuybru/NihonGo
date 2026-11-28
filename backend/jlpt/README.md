@@ -98,3 +98,33 @@ cd ../frontend
 npm test -- --runInBand JlptScreen
 npx tsc --noEmit
 ```
+
+## Database và ảnh R2
+
+Migration `c2d3e4f5a6b7` tạo `jlpt_exams`, `jlpt_images`, `jlpt_imports`.
+Nguồn N3 2010–2024 được nhập toàn bộ: 30 kỳ (28 có đề), 101 tài liệu/975 trang
+kể cả phụ lục. Có 299 ảnh WebP duy nhất (hình câu hỏi và trang đáp án), được đưa
+vào bucket R2 riêng tư dưới `jlpt/images/<sha256>.webp`. Database chỉ lưu khóa,
+bucket, checksum và kích thước; không lưu base64 ảnh. API cấp URL có hạn 6 giờ.
+
+`jlpt_exams.source_data` giữ nguyên trang văn bản OCR/PDF, metadata và liên kết
+ảnh cho tất cả kỳ. Hai đề đã tách câu hiện có thêm trường `normalized` phục vụ
+chấm điểm; các kỳ còn lại có tài liệu gốc/đáp án/script và chưa chấm tự động.
+Hai kỳ thiếu đề trong nguồn không xuất hiện như đề có thể làm. Phụ lục được lưu
+trong metadata của lần nhập. Không suy diễn đáp án bị mất trong OCR.
+
+```sh
+# Chỉ chạy khi muốn chuẩn bị/đổi dữ liệu: upload và verify ảnh trước khi xuất JSON.
+venv/bin/python -m jlpt.prepare_import --source /path/to/jlpt-n3-2010-2024.json \
+  --output jlpt/import_data/n3-2010-2024.json
+# Sau schema migration, có thể nhập lại an toàn, không tạo bản trùng.
+venv/bin/flask --app app jlpt-import-json --source jlpt/import_data/n3-2010-2024.json
+```
+
+R2 dùng cấu hình kết nối hiện có của `_tts_client`; bucket lấy từ `JLPT_S3_BUCKET`
+hoặc `TTS_S3_BUCKET`. Bộ chuẩn bị không tạo bucket và chỉ ghi prefix `jlpt/images/`.
+Compose migrate chạy `python -m jlpt.migrate`: migrate schema, kiểm tra cả 299 ảnh
+bằng tài khoản R2 của staging, rồi commit dữ liệu vào DB trước khi phục vụ phiên
+bản mới. Lỗi kiểm tra dừng deploy; không tự xóa đề hay ảnh của lần nhập trước.
+Dữ liệu chuẩn bị được lưu trong release để deploy không phụ thuộc file Downloads.
+API ưu tiên dữ liệu DB; JSON hai đề mẫu chỉ là fallback khi máy local chưa import.

@@ -708,3 +708,5 @@ Shadowing tạm ẩn lối vào luyện phát âm và form ghi âm trong màn vi
 Cài đặt Shadowing dùng popup 280px neo góc phải trên nút bánh răng, không mở sheet toàn màn hình hay làm tối trang. Padding 12px, tiêu đề 12/18, chip cao 30px; nội dung cuộn khi video thấp. Nhấn ngoài, Escape, Back Android hoặc bấm lại bánh răng để đóng. Điều chỉnh nền xem trực tiếp trên phụ đề, bỏ ô preview riêng để menu gọn.
 
 Phụ đề Shadowing thống nhất một component cho cả nổi và đặt dưới video; không dùng khung lyrics/cuộn phụ đề cũ trong vùng chính. Bản dịch, trạng thái tải và nút thử lại nằm ngay dưới câu Nhật trong cùng nền blur. Danh sách transcript riêng và input chính tả giữ nguyên.
+
+JLPT trên staging lưu kỳ thi/tài liệu gốc trong DB, ảnh qua R2. Danh sách có 28 kỳ thực, bỏ thẻ mẫu khi đã nhập nguồn. Đề đã tách câu mở luồng làm bài; đề chưa tách hiển thị Xem đề gốc và nêu rõ tự đối chiếu đáp án, không chấm tự động. Tài liệu mở theo Đề thi/Đáp án/Script, chọn trang ở bên phải desktop, giữ hình minh họa từ R2. Không tạo câu hoặc đáp án thay cho nội dung OCR bị thiếu.
