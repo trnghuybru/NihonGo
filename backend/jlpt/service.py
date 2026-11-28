@@ -12,7 +12,10 @@ TIMING_SOURCES = {
 
 
 def duration(exam, index):
-    return [1800, 4200, 2400][index] if exam['id'] in TIMING_SOURCES else None
+    if exam['id'] in TIMING_SOURCES:
+        return [1800, 4200, 2400][index]
+    seconds = exam['sections'][index].get('duration_seconds')
+    return seconds if type(seconds) is int and 0 < seconds <= 14400 else None
 
 
 @lru_cache(maxsize=1)
@@ -43,7 +46,7 @@ def get_exam(exam_id):
 def preview(exam):
     return {**{k: exam[k] for k in ['id', 'level', 'year', 'month', 'title', 'version', 'audio_url', 'content_note']},
             'total': sum(len(s['questions']) for s in exam['sections']),
-            'timing_source_url': TIMING_SOURCES.get(exam['id']),
+            'timing_source_url': TIMING_SOURCES.get(exam['id']) or exam.get('timing_source_url'),
             'sections': [{k: s[k] for k in ['id', 'label', 'original_label']} |
                          {'total': len(s['questions']), 'duration_seconds': duration(exam, i)}
                          for i, s in enumerate(exam['sections'])]}

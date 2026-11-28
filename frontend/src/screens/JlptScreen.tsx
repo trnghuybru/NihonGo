@@ -31,6 +31,7 @@ import {
   ExamGrade,
   ExamSource,
   ExamPreview,
+  ExamQuestion,
   jlptService,
 } from '../services/jlptService';
 import {
@@ -46,6 +47,13 @@ const message = (failure: unknown) =>
   failure instanceof Error
     ? failure.message
     : 'Chưa tải được đề thi. Hãy thử lại.';
+
+const questionLabel = (
+  question: Pick<ExamQuestion, 'number' | 'subquestion'>,
+) =>
+  `${question.number}${
+    question.subquestion ? `(${question.subquestion})` : ''
+  }`;
 
 function RestartExamDialog({
   visible,
@@ -419,9 +427,14 @@ function ExamWorkspace({
     section.questions.map(question => ({ section, question })),
   );
   const { section, question } = entries[draft.index];
+  const imageOnly = question.content_format === 'image';
   const answered = Object.keys(draft.answers).length;
   const result = grade?.results[question.id];
-  const study = useJlptReview(exam.id, question, grade?.review_token);
+  const study = useJlptReview(
+    exam.id,
+    question,
+    imageOnly ? undefined : grade?.review_token,
+  );
   const timed = draft.mode === 'timed';
   const timing = draft.timing;
   const timedLocked =
@@ -887,10 +900,17 @@ function ExamWorkspace({
                   )}
                 </View>
               ) : null}
+              {imageOnly && question.images.length > 0 ? (
+                <Text style={styles.caption}>
+                  Câu {questionLabel(question)} · Chọn đáp án theo ảnh đề gốc
+                </Text>
+              ) : null}
               {question.images.map(image => (
                 <Image
                   key={image.id}
-                  accessibilityLabel={`Tài liệu minh họa cho câu ${question.number}`}
+                  accessibilityLabel={`Tài liệu minh họa cho câu ${questionLabel(
+                    question,
+                  )}`}
                   source={{ uri: image.image_data_url }}
                   resizeMode="contain"
                   style={[
@@ -901,47 +921,54 @@ function ExamWorkspace({
                   ]}
                 />
               ))}
-              <View style={styles.promptRow}>
-                <Text style={styles.questionMark}>
-                  {question.number}
-                  {section.id === 'listening' ? '番' : ''}
-                </Text>
-                {section.id !== 'listening' &&
-                !(section.id === 'grammar-reading' && question.group === 3) ? (
-                  grade && study.data ? (
-                    <View style={styles.promptCopy}>
-                      <ShadowingTokenText
-                        text={question.prompt}
-                        tokens={study.data.prompt_tokens}
-                        words={study.data.words}
-                        onWordPress={study.onWordPress}
-                        style={styles.prompt}
-                        showFurigana={false}
-                        preserveLayout
-                        align="left"
-                        linkWords
-                      />
-                    </View>
-                  ) : (
-                    <Text selectable style={[styles.prompt, styles.promptCopy]}>
-                      {targetAt >= 0 ? (
-                        <>
-                          {question.prompt.slice(0, targetAt)}
-                          <Text style={styles.underlined}>
-                            {question.target}
-                          </Text>
-                          {question.prompt.slice(
-                            targetAt + question.target!.length,
-                          )}
-                        </>
-                      ) : (
-                        question.prompt
-                      )}
-                    </Text>
-                  )
-                ) : null}
-              </View>
-              {grade ? (
+              {!imageOnly || question.images.length === 0 ? (
+                <View style={styles.promptRow}>
+                  <Text style={styles.questionMark}>
+                    {questionLabel(question)}
+                    {section.id === 'listening' ? '番' : ''}
+                  </Text>
+                  {section.id !== 'listening' &&
+                  !(
+                    section.id === 'grammar-reading' && question.group === 3
+                  ) ? (
+                    grade && study.data ? (
+                      <View style={styles.promptCopy}>
+                        <ShadowingTokenText
+                          text={question.prompt}
+                          tokens={study.data.prompt_tokens}
+                          words={study.data.words}
+                          onWordPress={study.onWordPress}
+                          style={styles.prompt}
+                          showFurigana={false}
+                          preserveLayout
+                          align="left"
+                          linkWords
+                        />
+                      </View>
+                    ) : (
+                      <Text
+                        selectable
+                        style={[styles.prompt, styles.promptCopy]}
+                      >
+                        {targetAt >= 0 ? (
+                          <>
+                            {question.prompt.slice(0, targetAt)}
+                            <Text style={styles.underlined}>
+                              {question.target}
+                            </Text>
+                            {question.prompt.slice(
+                              targetAt + question.target!.length,
+                            )}
+                          </>
+                        ) : (
+                          question.prompt
+                        )}
+                      </Text>
+                    )
+                  ) : null}
+                </View>
+              ) : null}
+              {grade && !imageOnly ? (
                 <>
                   <Text style={styles.caption}>
                     Chạm từ để tra nghĩa · Chạm đáp án để hỏi Momo
@@ -964,9 +991,13 @@ function ExamWorkspace({
                   return (
                     <Pressable
                       key={index}
-                      accessibilityRole={grade ? 'button' : 'radio'}
+                      accessibilityRole={
+                        grade && !imageOnly ? 'button' : 'radio'
+                      }
                       accessibilityHint={
-                        grade ? 'Nhờ Momo giải thích đáp án này' : undefined
+                        grade && !imageOnly
+                          ? 'Nhờ Momo giải thích đáp án này'
+                          : undefined
                       }
                       accessibilityLabel={
                         option === String(index + 1)
@@ -976,11 +1007,15 @@ function ExamWorkspace({
                       accessibilityState={{
                         checked: selected,
                         disabled: Boolean(
-                          busy || (!grade && (draft.submitted || timedLocked)),
+                          busy ||
+                            (grade && imageOnly) ||
+                            (!grade && (draft.submitted || timedLocked)),
                         ),
                       }}
                       disabled={Boolean(
-                        busy || (!grade && (draft.submitted || timedLocked)),
+                        busy ||
+                          (grade && imageOnly) ||
+                          (!grade && (draft.submitted || timedLocked)),
                       )}
                       onPress={() =>
                         grade ? study.explain(index) : choose(index)
@@ -1131,7 +1166,7 @@ function ExamWorkspace({
                                   accessibilityRole="button"
                                   accessibilityLabel={`${
                                     s.label
-                                  }, 問題${group}, ${q.number}番, ${
+                                  }, 問題${group}, ${questionLabel(q)}番, ${
                                     status === 'correct'
                                       ? 'đúng'
                                       : status === 'incorrect'
@@ -1169,7 +1204,7 @@ function ExamWorkspace({
                                         styles.incorrectText,
                                     ]}
                                   >
-                                    {q.number}
+                                    {questionLabel(q)}
                                   </Text>
                                   <Text style={styles.miniStatus}>
                                     {status === 'correct'

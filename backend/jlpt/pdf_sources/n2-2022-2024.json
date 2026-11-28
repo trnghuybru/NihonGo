@@ -1,0 +1,1818 @@
+{
+  "level": "N2",
+  "source_folder_url": "https://drive.google.com/drive/folders/1QccZHkWpA6kjK0j5G__ievaakf6zCkUD",
+  "format": "original-page-images",
+  "notes": "Question/page and answer mappings transcribed from source PDFs; source text is supplemental and not displayed as verified OCR. No external AI processing. Listening has no audio.",
+  "exams": [
+    {
+      "id": "2024-12",
+      "year": 2024,
+      "month": 12,
+      "files": [
+        {
+          "kind": "exam",
+          "filename": "Đề N2 12-2024 Bản hoàn chỉnh [Mark].pdf",
+          "local_filename": "exam.pdf",
+          "drive_id": "18grrMdPM-Qlqr7YTLThicDAeBZ-ip6bx",
+          "source_url": "https://drive.google.com/file/d/18grrMdPM-Qlqr7YTLThicDAeBZ-ip6bx/view",
+          "sha256": "f2d4a21f14a34371c0ba91130857dbae84b80b6ce935718bba2e26d440a6ee57",
+          "page_count": 53
+        },
+        {
+          "kind": "answer",
+          "filename": "Đáp án N2 T12-2024 YuukiBùi.pdf",
+          "local_filename": "answers.pdf",
+          "drive_id": "1FiuxB5gsIXHsWSO0H6fuBIkqeWnVCZ-h",
+          "source_url": "https://drive.google.com/file/d/1FiuxB5gsIXHsWSO0H6fuBIkqeWnVCZ-h/view",
+          "sha256": "b6d88dd611edc73aeb7e282870a7ec2609ff19eb33282d3ea5c2b5e971a71f72",
+          "page_count": 4
+        },
+        {
+          "kind": "listening_script",
+          "filename": "Script Nghe đề N2 T12-2024 YuukiBùi.pdf",
+          "local_filename": "listening-script.pdf",
+          "drive_id": "1Vru5w-0Tl-JZfxcPEq5CauN_2uckaM35",
+          "source_url": "https://drive.google.com/file/d/1Vru5w-0Tl-JZfxcPEq5CauN_2uckaM35/view",
+          "sha256": "0f1ebefd44542e5c6e37405ff4928622ff12071e70f874caf134033e874a2666",
+          "page_count": 10
+        }
+      ],
+      "language_answer_keys": [
+        "43412",
+        "34212",
+        "321",
+        "2441233",
+        "13412",
+        "32431",
+        "321432241413",
+        "24413",
+        "3221",
+        "22141",
+        "13414341",
+        "23",
+        "423",
+        "33"
+      ],
+      "listening_answer_keys": [
+        "42122",
+        "343213",
+        "14121",
+        "31211322323",
+        "314"
+      ],
+      "answer_review": "Answer digits visually compared with answer PDFs; December 2024 listening key read from script PDF.",
+      "language_pages": {
+        "1": [
+          3
+        ],
+        "2": [
+          3
+        ],
+        "3": [
+          3
+        ],
+        "4": [
+          3
+        ],
+        "5": [
+          3
+        ],
+        "6": [
+          4
+        ],
+        "7": [
+          4
+        ],
+        "8": [
+          4
+        ],
+        "9": [
+          4
+        ],
+        "10": [
+          4
+        ],
+        "11": [
+          5
+        ],
+        "12": [
+          5
+        ],
+        "13": [
+          5
+        ],
+        "14": [
+          6
+        ],
+        "15": [
+          6
+        ],
+        "16": [
+          6
+        ],
+        "17": [
+          6
+        ],
+        "18": [
+          6
+        ],
+        "19": [
+          6
+        ],
+        "20": [
+          6
+        ],
+        "21": [
+          7
+        ],
+        "22": [
+          7
+        ],
+        "23": [
+          7
+        ],
+        "24": [
+          7
+        ],
+        "25": [
+          7
+        ],
+        "26": [
+          8
+        ],
+        "27": [
+          8
+        ],
+        "28": [
+          8
+        ],
+        "29": [
+          8
+        ],
+        "30": [
+          8
+        ],
+        "31": [
+          10
+        ],
+        "32": [
+          10
+        ],
+        "33": [
+          10
+        ],
+        "34": [
+          10
+        ],
+        "35": [
+          10
+        ],
+        "36": [
+          10
+        ],
+        "37": [
+          10
+        ],
+        "38": [
+          11
+        ],
+        "39": [
+          11
+        ],
+        "40": [
+          11
+        ],
+        "41": [
+          11
+        ],
+        "42": [
+          11
+        ],
+        "43": [
+          12
+        ],
+        "44": [
+          12
+        ],
+        "45": [
+          12
+        ],
+        "46": [
+          13
+        ],
+        "47": [
+          13
+        ],
+        "48": [
+          14,
+          15
+        ],
+        "49": [
+          14,
+          15
+        ],
+        "50": [
+          14,
+          15
+        ],
+        "51": [
+          14,
+          15
+        ],
+        "52": [
+          17
+        ],
+        "53": [
+          18
+        ],
+        "54": [
+          19
+        ],
+        "55": [
+          20
+        ],
+        "56": [
+          21
+        ],
+        "57": [
+          23,
+          24
+        ],
+        "58": [
+          23,
+          24
+        ],
+        "59": [
+          25,
+          26
+        ],
+        "60": [
+          25,
+          26
+        ],
+        "61": [
+          27,
+          28
+        ],
+        "62": [
+          27,
+          28
+        ],
+        "63": [
+          29,
+          30
+        ],
+        "64": [
+          29,
+          30
+        ],
+        "65": [
+          31,
+          32
+        ],
+        "66": [
+          31,
+          32
+        ],
+        "67": [
+          33,
+          34
+        ],
+        "68": [
+          33,
+          34
+        ],
+        "69": [
+          33,
+          34
+        ],
+        "70": [
+          35,
+          36
+        ],
+        "71": [
+          35,
+          36
+        ]
+      },
+      "listening_pages": {
+        "1": [
+          [
+            40
+          ],
+          [
+            41
+          ],
+          [
+            42
+          ],
+          [
+            42
+          ],
+          [
+            43
+          ]
+        ],
+        "2": [
+          [
+            46
+          ],
+          [
+            46
+          ],
+          [
+            47
+          ],
+          [
+            47
+          ],
+          [
+            48
+          ],
+          [
+            48
+          ]
+        ],
+        "5": [
+          [],
+          [
+            53
+          ],
+          [
+            53
+          ]
+        ],
+        "3": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ],
+        "4": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      "duration_seconds": [
+        6300,
+        3000
+      ],
+      "timing_source_url": "https://drive.google.com/file/d/18grrMdPM-Qlqr7YTLThicDAeBZ-ip6bx/view"
+    },
+    {
+      "id": "2024-07",
+      "year": 2024,
+      "month": 7,
+      "files": [
+        {
+          "kind": "answer",
+          "filename": "Đáp án N2 T7-2024.pdf",
+          "local_filename": "answers.pdf",
+          "drive_id": "1CTGKS5j4rnqwcypQ5daehOtW_VxnuZlw",
+          "source_url": "https://drive.google.com/file/d/1CTGKS5j4rnqwcypQ5daehOtW_VxnuZlw/view",
+          "sha256": "230984803f358111c8ee451f4543d7ccacce82e4edcfa5cd78346226d589b506",
+          "page_count": 4
+        },
+        {
+          "kind": "exam",
+          "filename": "Đề N2 T7-2024 [Mark] Ver 4.0.pdf",
+          "local_filename": "exam.pdf",
+          "drive_id": "14Ks-rk_52tFIEYhaV9C6ptTVt6nTSlHM",
+          "source_url": "https://drive.google.com/file/d/14Ks-rk_52tFIEYhaV9C6ptTVt6nTSlHM/view",
+          "sha256": "4b8d13ba52fbfb7798ef8999a1839d52ddaa954e007b92c0882b8ef24f3e235f",
+          "page_count": 36
+        },
+        {
+          "kind": "listening_script",
+          "filename": "Script Nghe đề N2 T7-2024 Yuuki Bui Ver 2.0.pdf",
+          "local_filename": "listening-script.pdf",
+          "drive_id": "1jpReWwSeT2duPBFB7H8833DcjaM3WS7t",
+          "source_url": "https://drive.google.com/file/d/1jpReWwSeT2duPBFB7H8833DcjaM3WS7t/view",
+          "sha256": "1b199c6dc57a46ef6941bdc012239c5e310642d02cd6275b75b7af562ee32006",
+          "page_count": 11
+        }
+      ],
+      "language_answer_keys": [
+        "41223",
+        "21341",
+        "143",
+        "1314423",
+        "13242",
+        "41323",
+        "423121342132",
+        "23413",
+        "2314",
+        "31322",
+        "44132434",
+        "34",
+        "412",
+        "22"
+      ],
+      "listening_answer_keys": [
+        "21233",
+        "312344",
+        "21414",
+        "13221223131",
+        "213"
+      ],
+      "answer_review": "Answer digits visually compared with answer PDFs; December 2024 listening key read from script PDF. Question 41 wording differs between exam and answer commentary; choice 3 is consistent with the printed question and the supplied answer key.",
+      "language_pages": {
+        "1": [
+          1
+        ],
+        "2": [
+          1
+        ],
+        "3": [
+          1
+        ],
+        "4": [
+          1
+        ],
+        "5": [
+          1
+        ],
+        "6": [
+          2
+        ],
+        "7": [
+          2
+        ],
+        "8": [
+          2
+        ],
+        "9": [
+          2
+        ],
+        "10": [
+          2
+        ],
+        "11": [
+          3
+        ],
+        "12": [
+          3
+        ],
+        "13": [
+          3
+        ],
+        "14": [
+          4
+        ],
+        "15": [
+          4
+        ],
+        "16": [
+          4
+        ],
+        "17": [
+          4
+        ],
+        "18": [
+          4
+        ],
+        "19": [
+          4
+        ],
+        "20": [
+          4
+        ],
+        "21": [
+          5
+        ],
+        "22": [
+          5
+        ],
+        "23": [
+          5
+        ],
+        "24": [
+          5
+        ],
+        "25": [
+          5
+        ],
+        "26": [
+          6
+        ],
+        "27": [
+          6
+        ],
+        "28": [
+          6
+        ],
+        "29": [
+          6
+        ],
+        "30": [
+          6
+        ],
+        "31": [
+          8
+        ],
+        "32": [
+          8
+        ],
+        "33": [
+          8
+        ],
+        "34": [
+          8
+        ],
+        "35": [
+          8
+        ],
+        "36": [
+          8
+        ],
+        "37": [
+          9
+        ],
+        "38": [
+          9
+        ],
+        "39": [
+          9
+        ],
+        "40": [
+          9
+        ],
+        "41": [
+          9
+        ],
+        "42": [
+          10
+        ],
+        "43": [
+          11
+        ],
+        "44": [
+          11
+        ],
+        "45": [
+          11
+        ],
+        "46": [
+          11
+        ],
+        "47": [
+          11
+        ],
+        "48": [
+          12,
+          13
+        ],
+        "49": [
+          12,
+          13
+        ],
+        "50": [
+          12,
+          13
+        ],
+        "51": [
+          12,
+          13
+        ],
+        "52": [
+          14
+        ],
+        "53": [
+          15
+        ],
+        "54": [
+          16
+        ],
+        "55": [
+          17
+        ],
+        "56": [
+          18
+        ],
+        "57": [
+          19,
+          20
+        ],
+        "58": [
+          19,
+          20
+        ],
+        "59": [
+          21,
+          22
+        ],
+        "60": [
+          21,
+          22
+        ],
+        "61": [
+          23,
+          24
+        ],
+        "62": [
+          23,
+          24
+        ],
+        "63": [
+          25,
+          26
+        ],
+        "64": [
+          25,
+          26
+        ],
+        "65": [
+          27,
+          28
+        ],
+        "66": [
+          27,
+          28
+        ],
+        "67": [
+          29,
+          30
+        ],
+        "68": [
+          29,
+          30
+        ],
+        "69": [
+          29,
+          30
+        ],
+        "70": [
+          31,
+          32
+        ],
+        "71": [
+          31,
+          32
+        ]
+      },
+      "listening_pages": {
+        "1": [
+          [
+            33
+          ],
+          [
+            33
+          ],
+          [
+            33
+          ],
+          [
+            33
+          ],
+          [
+            33
+          ]
+        ],
+        "2": [
+          [
+            34
+          ],
+          [
+            34
+          ],
+          [
+            34
+          ],
+          [
+            34
+          ],
+          [
+            34
+          ],
+          [
+            34
+          ]
+        ],
+        "5": [
+          [],
+          [
+            36
+          ],
+          [
+            36
+          ]
+        ],
+        "3": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ],
+        "4": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      "duration_seconds": [
+        6300,
+        3000
+      ],
+      "timing_source_url": "https://drive.google.com/file/d/14Ks-rk_52tFIEYhaV9C6ptTVt6nTSlHM/view"
+    },
+    {
+      "id": "2023-12",
+      "year": 2023,
+      "month": 12,
+      "files": [
+        {
+          "kind": "answer",
+          "filename": "Đáp án N2 T12-2023 YuukiBui.pdf",
+          "local_filename": "answers.pdf",
+          "drive_id": "11F8PzYtgzLqW_D0AaCtbpFkWAQLiUDBc",
+          "source_url": "https://drive.google.com/file/d/11F8PzYtgzLqW_D0AaCtbpFkWAQLiUDBc/view",
+          "sha256": "e36100eedd9e0c6fc432c8869ff474e999012c1491e991a8b2ade7176e1005b2",
+          "page_count": 4
+        },
+        {
+          "kind": "exam",
+          "filename": "Đề N2 T12-2023 Full YuukiBui.pdf",
+          "local_filename": "exam.pdf",
+          "drive_id": "17Ai6iHez1KDDz1gDu_UNej6hDAaAiidF",
+          "source_url": "https://drive.google.com/file/d/17Ai6iHez1KDDz1gDu_UNej6hDAaAiidF/view",
+          "sha256": "3c933e9385214b3723e32964b9fedfde19e55b0b67463f176a93dcf543e2fcad",
+          "page_count": 52
+        },
+        {
+          "kind": "listening_script",
+          "filename": "Script Nghe đề N2 T12-2023 YuukiBui.pdf",
+          "local_filename": "listening-script.pdf",
+          "drive_id": "1txXfLYZV_5Ad2ddLXpnxUYkHjIFkT7On",
+          "source_url": "https://drive.google.com/file/d/1txXfLYZV_5Ad2ddLXpnxUYkHjIFkT7On/view",
+          "sha256": "ee153d9fe0544dc1bcd0481321b541fa9c180d39735e239200f9ec81369124b6",
+          "page_count": 9
+        }
+      ],
+      "language_answer_keys": [
+        "23142",
+        "33214",
+        "142",
+        "4241313",
+        "32413",
+        "43142",
+        "443121123324",
+        "11324",
+        "1423",
+        "13332",
+        "43142343",
+        "44",
+        "412",
+        "32"
+      ],
+      "listening_answer_keys": [
+        "32241",
+        "313424",
+        "12431",
+        "21223131213",
+        "314"
+      ],
+      "answer_review": "Answer digits visually compared with answer PDFs; December 2024 listening key read from script PDF.",
+      "language_pages": {
+        "1": [
+          3
+        ],
+        "2": [
+          3
+        ],
+        "3": [
+          3
+        ],
+        "4": [
+          3
+        ],
+        "5": [
+          3
+        ],
+        "6": [
+          4
+        ],
+        "7": [
+          4
+        ],
+        "8": [
+          4
+        ],
+        "9": [
+          4
+        ],
+        "10": [
+          4
+        ],
+        "11": [
+          5
+        ],
+        "12": [
+          5
+        ],
+        "13": [
+          5
+        ],
+        "14": [
+          6
+        ],
+        "15": [
+          6
+        ],
+        "16": [
+          6
+        ],
+        "17": [
+          6
+        ],
+        "18": [
+          6
+        ],
+        "19": [
+          6
+        ],
+        "20": [
+          6
+        ],
+        "21": [
+          7
+        ],
+        "22": [
+          7
+        ],
+        "23": [
+          7
+        ],
+        "24": [
+          7
+        ],
+        "25": [
+          7
+        ],
+        "26": [
+          8
+        ],
+        "27": [
+          8
+        ],
+        "28": [
+          8
+        ],
+        "29": [
+          8
+        ],
+        "30": [
+          8
+        ],
+        "31": [
+          10
+        ],
+        "32": [
+          10
+        ],
+        "33": [
+          10
+        ],
+        "34": [
+          10
+        ],
+        "35": [
+          10
+        ],
+        "36": [
+          10
+        ],
+        "37": [
+          10
+        ],
+        "38": [
+          11
+        ],
+        "39": [
+          11
+        ],
+        "40": [
+          11
+        ],
+        "41": [
+          11
+        ],
+        "42": [
+          11
+        ],
+        "43": [
+          12
+        ],
+        "44": [
+          12
+        ],
+        "45": [
+          12
+        ],
+        "46": [
+          13
+        ],
+        "47": [
+          13
+        ],
+        "48": [
+          14,
+          15
+        ],
+        "49": [
+          14,
+          15
+        ],
+        "50": [
+          14,
+          15
+        ],
+        "51": [
+          14,
+          15
+        ],
+        "52": [
+          16
+        ],
+        "53": [
+          17
+        ],
+        "54": [
+          18
+        ],
+        "55": [
+          19
+        ],
+        "56": [
+          20
+        ],
+        "57": [
+          22,
+          23
+        ],
+        "58": [
+          22,
+          23
+        ],
+        "59": [
+          24,
+          25
+        ],
+        "60": [
+          24,
+          25
+        ],
+        "61": [
+          26,
+          27
+        ],
+        "62": [
+          26,
+          27
+        ],
+        "63": [
+          28,
+          29
+        ],
+        "64": [
+          28,
+          29
+        ],
+        "65": [
+          30,
+          31
+        ],
+        "66": [
+          30,
+          31
+        ],
+        "67": [
+          32,
+          33
+        ],
+        "68": [
+          32,
+          33
+        ],
+        "69": [
+          32,
+          33
+        ],
+        "70": [
+          34,
+          35
+        ],
+        "71": [
+          34,
+          35
+        ]
+      },
+      "listening_pages": {
+        "1": [
+          [
+            40
+          ],
+          [
+            40
+          ],
+          [
+            41
+          ],
+          [
+            41
+          ],
+          [
+            42
+          ]
+        ],
+        "2": [
+          [
+            44
+          ],
+          [
+            44
+          ],
+          [
+            45
+          ],
+          [
+            45
+          ],
+          [
+            46
+          ],
+          [
+            46
+          ]
+        ],
+        "5": [
+          [],
+          [
+            51
+          ],
+          [
+            51
+          ]
+        ],
+        "3": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ],
+        "4": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      "duration_seconds": [
+        6300,
+        3000
+      ],
+      "timing_source_url": "https://drive.google.com/file/d/17Ai6iHez1KDDz1gDu_UNej6hDAaAiidF/view"
+    },
+    {
+      "id": "2023-07",
+      "year": 2023,
+      "month": 7,
+      "files": [
+        {
+          "kind": "answer",
+          "filename": "Đáp án N2 T7-2023.pdf",
+          "local_filename": "answers.pdf",
+          "drive_id": "1Ru1THOP4F-Xbquus5z71cdc9h-iFpZpP",
+          "source_url": "https://drive.google.com/file/d/1Ru1THOP4F-Xbquus5z71cdc9h-iFpZpP/view",
+          "sha256": "c532a6c32aa3863c11eb128d80c28fb65415145e6a56430c959193d2fbdfa9b8",
+          "page_count": 4
+        },
+        {
+          "kind": "exam",
+          "filename": "Đề N2 T7-2023 (230710).pdf",
+          "local_filename": "exam.pdf",
+          "drive_id": "1zIIB5Rq390oHdOFVtbMCB-hNB7zXobPm",
+          "source_url": "https://drive.google.com/file/d/1zIIB5Rq390oHdOFVtbMCB-hNB7zXobPm/view",
+          "sha256": "a4ce4acdd77467de3b3ff99193646abd445b8b8c72252aed8fa511d75eb4f62e",
+          "page_count": 36
+        },
+        {
+          "kind": "listening_script",
+          "filename": "Script Nghe N2 T7-2023.pdf",
+          "local_filename": "listening-script.pdf",
+          "drive_id": "1ZBUQD593tYo0qyhrBjVWCl6RtXU47gNe",
+          "source_url": "https://drive.google.com/file/d/1ZBUQD593tYo0qyhrBjVWCl6RtXU47gNe/view",
+          "sha256": "ca081a02c153a687baffa90912c6b7b79adce68a769331da25913e20d39fba8b",
+          "page_count": 11
+        }
+      ],
+      "language_answer_keys": [
+        "24413",
+        "13424",
+        "132",
+        "2314432",
+        "24123",
+        "42113",
+        "314241341232",
+        "14232",
+        "3241",
+        "42124",
+        "13431324",
+        "43",
+        "421",
+        "23"
+      ],
+      "listening_answer_keys": [
+        "32223",
+        "231313",
+        "12444",
+        "12331121231",
+        "313"
+      ],
+      "answer_review": "Answer digits visually compared with answer PDFs; December 2024 listening key read from script PDF.",
+      "language_pages": {
+        "1": [
+          1
+        ],
+        "2": [
+          1
+        ],
+        "3": [
+          1
+        ],
+        "4": [
+          1
+        ],
+        "5": [
+          1
+        ],
+        "6": [
+          2
+        ],
+        "7": [
+          2
+        ],
+        "8": [
+          2
+        ],
+        "9": [
+          2
+        ],
+        "10": [
+          2
+        ],
+        "11": [
+          3
+        ],
+        "12": [
+          3
+        ],
+        "13": [
+          3
+        ],
+        "14": [
+          4
+        ],
+        "15": [
+          4
+        ],
+        "16": [
+          4
+        ],
+        "17": [
+          4
+        ],
+        "18": [
+          4
+        ],
+        "19": [
+          4
+        ],
+        "20": [
+          4
+        ],
+        "21": [
+          5
+        ],
+        "22": [
+          5
+        ],
+        "23": [
+          5
+        ],
+        "24": [
+          5
+        ],
+        "25": [
+          5
+        ],
+        "26": [
+          6
+        ],
+        "27": [
+          6
+        ],
+        "28": [
+          6
+        ],
+        "29": [
+          6
+        ],
+        "30": [
+          6
+        ],
+        "31": [
+          8
+        ],
+        "32": [
+          8
+        ],
+        "33": [
+          8
+        ],
+        "34": [
+          8
+        ],
+        "35": [
+          8
+        ],
+        "36": [
+          8
+        ],
+        "37": [
+          9
+        ],
+        "38": [
+          9
+        ],
+        "39": [
+          9
+        ],
+        "40": [
+          9
+        ],
+        "41": [
+          9
+        ],
+        "42": [
+          9
+        ],
+        "43": [
+          10
+        ],
+        "44": [
+          10
+        ],
+        "45": [
+          11
+        ],
+        "46": [
+          11
+        ],
+        "47": [
+          11
+        ],
+        "48": [
+          12,
+          13
+        ],
+        "49": [
+          12,
+          13
+        ],
+        "50": [
+          12,
+          13
+        ],
+        "51": [
+          12,
+          13
+        ],
+        "52": [
+          14
+        ],
+        "53": [
+          15
+        ],
+        "54": [
+          16
+        ],
+        "55": [
+          17
+        ],
+        "56": [
+          18
+        ],
+        "57": [
+          19,
+          20
+        ],
+        "58": [
+          19,
+          20
+        ],
+        "59": [
+          21
+        ],
+        "60": [
+          21
+        ],
+        "61": [
+          22,
+          23
+        ],
+        "62": [
+          22,
+          23
+        ],
+        "63": [
+          24,
+          25
+        ],
+        "64": [
+          24,
+          25
+        ],
+        "65": [
+          26,
+          27
+        ],
+        "66": [
+          26,
+          27
+        ],
+        "67": [
+          28,
+          29
+        ],
+        "68": [
+          28,
+          29
+        ],
+        "69": [
+          28,
+          29,
+          30
+        ],
+        "70": [
+          31,
+          32
+        ],
+        "71": [
+          31,
+          32
+        ]
+      },
+      "listening_pages": {
+        "1": [
+          [
+            33
+          ],
+          [
+            33
+          ],
+          [
+            33
+          ],
+          [
+            33
+          ],
+          [
+            33
+          ]
+        ],
+        "2": [
+          [
+            34
+          ],
+          [
+            34
+          ],
+          [
+            34
+          ],
+          [
+            34
+          ],
+          [
+            34
+          ],
+          [
+            34
+          ]
+        ],
+        "5": [
+          [],
+          [
+            36
+          ],
+          [
+            36
+          ]
+        ],
+        "3": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ],
+        "4": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      "duration_seconds": [
+        6300,
+        3000
+      ],
+      "timing_source_url": "https://drive.google.com/file/d/1zIIB5Rq390oHdOFVtbMCB-hNB7zXobPm/view"
+    },
+    {
+      "id": "2022-12",
+      "year": 2022,
+      "month": 12,
+      "files": [
+        {
+          "kind": "answer",
+          "filename": "Đáp án N2 T12-2022.pdf",
+          "local_filename": "answers.pdf",
+          "drive_id": "1-0C7IjZylv-MC41nGWpZJ47kUEqKqJJP",
+          "source_url": "https://drive.google.com/file/d/1-0C7IjZylv-MC41nGWpZJ47kUEqKqJJP/view",
+          "sha256": "e455ddfa0adbba37721dcf81be082a4c30376ab3458b3ccfdf2bc18b06a120b5",
+          "page_count": 3
+        },
+        {
+          "kind": "exam",
+          "filename": "N2 T12-2022 Bản hoàn thiện [MARK] Final Version.pdf",
+          "local_filename": "exam.pdf",
+          "drive_id": "1bVXC3jGD9l94czyXf6c0zhJ8FmbIM4DJ",
+          "source_url": "https://drive.google.com/file/d/1bVXC3jGD9l94czyXf6c0zhJ8FmbIM4DJ/view",
+          "sha256": "3ef3891a2cc29d933044f651c1915b7c3d15fe787465c25df78d51c9316353bd",
+          "page_count": 21
+        },
+        {
+          "kind": "listening_script",
+          "filename": "Script Nghe N2 T12-2022.pdf",
+          "local_filename": "listening-script.pdf",
+          "drive_id": "1r-To0bbRU0njPH7oNJPEdRqJ06rTqZF4",
+          "source_url": "https://drive.google.com/file/d/1r-To0bbRU0njPH7oNJPEdRqJ06rTqZF4/view",
+          "sha256": "eb7c654879ba99a3daced346404e1d47cd5ed851390cb160d9faa580cf1debf7",
+          "page_count": 13
+        }
+      ],
+      "language_answer_keys": [
+        "241231",
+        "4322",
+        "431",
+        "3341241",
+        "23124",
+        "11324",
+        "214214321334",
+        "21243",
+        "2314",
+        "43312",
+        "23314113",
+        "14",
+        "424",
+        "32"
+      ],
+      "listening_answer_keys": [
+        "31243",
+        "322134",
+        "33142",
+        "23132131321",
+        "424"
+      ],
+      "answer_review": "Answer digits visually compared with answer PDFs; December 2024 listening key read from script PDF. The answer document groups question 6 with group 1; question group labels follow the exam PDF (5/5), while answer digits retain original question numbers.",
+      "language_pages": {
+        "1": [
+          1
+        ],
+        "2": [
+          1
+        ],
+        "3": [
+          1
+        ],
+        "4": [
+          1
+        ],
+        "5": [
+          1
+        ],
+        "6": [
+          1
+        ],
+        "7": [
+          1
+        ],
+        "8": [
+          1
+        ],
+        "9": [
+          1
+        ],
+        "10": [
+          1
+        ],
+        "11": [
+          1
+        ],
+        "12": [
+          1
+        ],
+        "13": [
+          1
+        ],
+        "14": [
+          2
+        ],
+        "15": [
+          2
+        ],
+        "16": [
+          2
+        ],
+        "17": [
+          2
+        ],
+        "18": [
+          2
+        ],
+        "19": [
+          2
+        ],
+        "20": [
+          2
+        ],
+        "21": [
+          2
+        ],
+        "22": [
+          2
+        ],
+        "23": [
+          2
+        ],
+        "24": [
+          2
+        ],
+        "25": [
+          2
+        ],
+        "26": [
+          3
+        ],
+        "27": [
+          3
+        ],
+        "28": [
+          3
+        ],
+        "29": [
+          3
+        ],
+        "30": [
+          3
+        ],
+        "31": [
+          4
+        ],
+        "32": [
+          4
+        ],
+        "33": [
+          4
+        ],
+        "34": [
+          4
+        ],
+        "35": [
+          4
+        ],
+        "36": [
+          4
+        ],
+        "37": [
+          4
+        ],
+        "38": [
+          4
+        ],
+        "39": [
+          4
+        ],
+        "40": [
+          4
+        ],
+        "41": [
+          4
+        ],
+        "42": [
+          4
+        ],
+        "43": [
+          5
+        ],
+        "44": [
+          5
+        ],
+        "45": [
+          5
+        ],
+        "46": [
+          5
+        ],
+        "47": [
+          5
+        ],
+        "48": [
+          6
+        ],
+        "49": [
+          6
+        ],
+        "50": [
+          6
+        ],
+        "51": [
+          6
+        ],
+        "52": [
+          7
+        ],
+        "53": [
+          7
+        ],
+        "54": [
+          8
+        ],
+        "55": [
+          8
+        ],
+        "56": [
+          9
+        ],
+        "57": [
+          10
+        ],
+        "58": [
+          10
+        ],
+        "59": [
+          11
+        ],
+        "60": [
+          11
+        ],
+        "61": [
+          12
+        ],
+        "62": [
+          12
+        ],
+        "63": [
+          13
+        ],
+        "64": [
+          13
+        ],
+        "65": [
+          14
+        ],
+        "66": [
+          14
+        ],
+        "67": [
+          15,
+          16
+        ],
+        "68": [
+          15,
+          16
+        ],
+        "69": [
+          15,
+          16
+        ],
+        "70": [
+          17,
+          18
+        ],
+        "71": [
+          17,
+          18
+        ]
+      },
+      "listening_pages": {
+        "1": [
+          [
+            19
+          ],
+          [
+            19
+          ],
+          [
+            19
+          ],
+          [
+            19
+          ],
+          [
+            19
+          ]
+        ],
+        "2": [
+          [
+            20
+          ],
+          [
+            20
+          ],
+          [
+            20
+          ],
+          [
+            20
+          ],
+          [
+            20
+          ],
+          [
+            20
+          ]
+        ],
+        "5": [
+          [],
+          [
+            21
+          ],
+          [
+            21
+          ]
+        ],
+        "3": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ],
+        "4": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      "duration_seconds": [
+        6300,
+        3000
+      ],
+      "timing_source_url": "https://drive.google.com/file/d/1bVXC3jGD9l94czyXf6c0zhJ8FmbIM4DJ/view"
+    }
+  ]
+}

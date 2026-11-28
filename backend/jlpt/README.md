@@ -136,3 +136,33 @@ N3 12/2016 và 7/2017. Gói seed cũng chỉ còn hai kỳ để deploy sau khô
 các đề đã xóa. `jlpt_images` và toàn bộ 299 object R2 được giữ nguyên, không có
 thao tác xóa ảnh. Đây là migration dọn dữ liệu một lần; việc nhập dữ liệu mới sau
 này vẫn dùng bộ nhập bình thường, không bị chính sách dọn định kỳ xóa lại.
+
+## Năm đề N2 từ PDF gốc
+
+Gói `import_data/n2-2022-2024.json` bổ sung N2 12/2024, 7/2024, 12/2023,
+7/2023 và 12/2022: mỗi đề có 71 câu phần chữ/đọc và 30 câu nghe, tổng 505 câu.
+Các đề này dùng **ảnh trang đề gốc**, có chọn đáp án, chấm điểm, lưu tiến độ và
+làm lại như hai đề N3. Không phải thẻ xem tài liệu chưa chấm điểm. Câu nghe
+問題5 có nhãn 2(1)/2(2) để giữ số gốc và lưu hai lựa chọn độc lập.
+
+`pdf_sources/n2-2022-2024.json` lưu Drive ID, checksum PDF, ánh xạ câu/trang và
+khóa đáp án đã đọc từ tài liệu đi kèm. Bài đọc nhiều trang được liên kết đủ trang
+ngữ cảnh. Toàn bộ 265 ảnh trang PDF (đề/đáp án/script) nằm trên R2; DB giữ khóa
+ảnh và metadata. Chữ OCR lưu bổ trợ trong tài liệu nguồn, không dùng làm nội dung
+đã xác minh. Vì vậy các câu ảnh không hiển thị tra từ hay nút hỏi Momo, và backend
+cũng chặn gọi AI với nội dung ảnh chưa đọc. Âm thanh vẫn null.
+
+N2 giữ hai phần gốc, 105 phút và 50 phút; không tách lịch tính giờ theo ba phần N3.
+Khi chưa có tệp nghe, chế độ tính giờ tiếp tục chặn bắt đầu phần nghe.
+
+Chuẩn bị offline (PyMuPDF chỉ cần cho công cụ này, không phải dependency server):
+
+```sh
+# source-dir chứa jlpt-n2-2024-12/exam.pdf, answers.pdf, listening-script.pdf, ...
+python -m jlpt.prepare_pdf_import --manifest jlpt/pdf_sources/n2-2022-2024.json \
+  --source-dir /path/to/downloaded-pdfs --output /tmp/n2-prepared.json
+# Thêm --upload để upload và xác minh ảnh trước khi xuất gói release.
+```
+
+`jlpt.migrate` kiểm tra ảnh và nhập lần lượt **mọi gói JSON** trong `import_data/`.
+Nhập lại chỉ cập nhật đúng ID trong gói, không xóa hai đề N3 hoặc các ảnh đang giữ.

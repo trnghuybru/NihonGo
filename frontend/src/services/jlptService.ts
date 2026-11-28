@@ -5,6 +5,8 @@ export type ExamQuestion = {
   id: string;
   number: number;
   group: number;
+  subquestion?: number;
+  content_format?: 'image';
   prompt: string;
   instruction: string;
   target?: string;
