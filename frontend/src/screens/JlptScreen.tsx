@@ -1,5 +1,12 @@
 import { JlptSourceViewer } from '../components/JlptSourceViewer';
-import { ComponentRef, useCallback, useEffect, useRef, useState } from 'react';
+import {
+  ComponentRef,
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+} from 'react';
 import {
   ActivityIndicator,
   Image,
@@ -25,6 +32,7 @@ import {
   startTiming,
 } from '../services/jlptTiming';
 import { useWebLayout } from '../hooks/useWebLayout';
+import { groupExamEntries } from '../services/jlptLayout';
 import { colors, spacing, typography } from '../theme/theme';
 import {
   Exam,
@@ -32,6 +40,7 @@ import {
   ExamSource,
   ExamPreview,
   ExamQuestion,
+  ExamSection,
   jlptService,
 } from '../services/jlptService';
 import {
@@ -374,6 +383,323 @@ export function JlptScreen({
   );
 }
 
+function QuestionImages({
+  images,
+  label,
+}: {
+  images: ExamQuestion['images'];
+  label: string;
+}) {
+  return (
+    <>
+      {images.map(image => (
+        <Image
+          key={image.id}
+          accessibilityLabel={label}
+          source={{ uri: image.image_data_url }}
+          resizeMode="contain"
+          style={[
+            styles.questionImage,
+            { aspectRatio: image.width_px / image.height_px },
+          ]}
+        />
+      ))}
+    </>
+  );
+}
+
+function ExamQuestionBody({
+  examId,
+  section,
+  question,
+  grade,
+  answer,
+  flagged,
+  submitted,
+  busy,
+  locked,
+  active,
+  grouped,
+  showContext,
+  sharedImages,
+  onChoose,
+  onClear,
+  onToggleFlag,
+  questionRef,
+}: {
+  examId: string;
+  section: ExamSection;
+  question: ExamQuestion;
+  grade: ExamGrade | null;
+  answer: number | undefined;
+  flagged: boolean;
+  submitted: boolean;
+  busy: boolean;
+  locked: boolean;
+  active: boolean;
+  grouped: boolean;
+  showContext: boolean;
+  sharedImages: ExamQuestion['images'];
+  onChoose: (index: number) => void;
+  onClear: () => void;
+  onToggleFlag: () => void;
+  questionRef: (node: ComponentRef<typeof View> | null) => void;
+}) {
+  const imageOnly = question.content_format === 'image';
+  const study = useJlptReview(
+    examId,
+    question,
+    imageOnly ? undefined : grade?.review_token,
+  );
+  const result = grade?.results[question.id];
+  const targetAt = question.target
+    ? question.prompt.indexOf(question.target)
+    : -1;
+  const numberOnlyOptions = question.options.every(
+    (option, index) => option === String(index + 1),
+  );
+  const ownImages = question.images.filter(
+    image => !sharedImages.some(shared => shared.id === image.id),
+  );
+  return (
+    <>
+      {study.popup}
+      {showContext && question.passage ? (
+        <View style={styles.passage}>
+          {grade && study.data ? (
+            study.data.paragraphs.map((p, index) => (
+              <ShadowingTokenText
+                key={index}
+                text={p.text}
+                tokens={p.tokens}
+                words={study.data!.words}
+                onWordPress={study.onWordPress}
+                style={styles.japanese}
+                showFurigana={false}
+                preserveLayout
+                align="left"
+                linkWords
+              />
+            ))
+          ) : (
+            <Text selectable style={styles.japanese}>
+              {question.passage}
+            </Text>
+          )}
+        </View>
+      ) : null}
+
+      {showContext ? (
+        <QuestionImages images={sharedImages} label="Bài đọc dùng chung" />
+      ) : null}
+      <View
+        ref={questionRef}
+        nativeID={`jlpt-item-${question.id}`}
+        style={[styles.questionBody, grouped && styles.groupQuestion]}
+      >
+        {!grade ? (
+          <View style={styles.questionActions}>
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel={
+                grouped
+                  ? `${
+                      flagged ? 'Bỏ đánh dấu' : 'Đánh dấu'
+                    } câu ${questionLabel(question)} xem lại`
+                  : flagged
+                  ? 'Bỏ đánh dấu câu này'
+                  : 'Đánh dấu xem lại'
+              }
+              accessibilityState={{ selected: flagged }}
+              disabled={busy || submitted || locked}
+              onPress={onToggleFlag}
+              style={[styles.flagButton, flagged && styles.flagActive]}
+            >
+              <Text style={styles.flagText}>
+                {flagged ? '⚑ Đã đánh dấu' : '⚐ Xem lại'}
+              </Text>
+            </Pressable>
+          </View>
+        ) : null}
+        {imageOnly && ownImages.length > 0 ? (
+          <Text style={styles.caption}>
+            Câu {questionLabel(question)} · Chọn đáp án theo ảnh đề gốc
+          </Text>
+        ) : null}
+        <QuestionImages
+          images={ownImages}
+          label={`Tài liệu minh họa cho câu ${questionLabel(question)}`}
+        />
+        {!imageOnly || ownImages.length === 0 ? (
+          <View style={styles.promptRow}>
+            <Text
+              style={[
+                styles.questionMark,
+                grouped && active && styles.currentQuestionMark,
+              ]}
+            >
+              {questionLabel(question)}
+              {section.id === 'listening' ? '番' : ''}
+            </Text>
+            {section.id !== 'listening' &&
+            !(
+              (section.id === 'grammar-reading' && question.group === 3) ||
+              (section.id === 'language-reading' && question.group === 9)
+            ) ? (
+              grade && study.data ? (
+                <View style={styles.promptCopy}>
+                  <ShadowingTokenText
+                    text={question.prompt}
+                    tokens={study.data.prompt_tokens}
+                    words={study.data.words}
+                    onWordPress={study.onWordPress}
+                    style={styles.prompt}
+                    showFurigana={false}
+                    preserveLayout
+                    align="left"
+                    linkWords
+                  />
+                </View>
+              ) : (
+                <Text selectable style={[styles.prompt, styles.promptCopy]}>
+                  {targetAt >= 0 ? (
+                    <>
+                      {question.prompt.slice(0, targetAt)}
+                      <Text style={styles.underlined}>{question.target}</Text>
+                      {question.prompt.slice(
+                        targetAt + question.target!.length,
+                      )}
+                    </>
+                  ) : (
+                    question.prompt
+                  )}
+                </Text>
+              )
+            ) : null}
+          </View>
+        ) : null}
+        {grade && !imageOnly ? (
+          <>
+            <Text style={styles.caption}>
+              Chạm từ để tra nghĩa · Chạm đáp án để hỏi Momo
+            </Text>
+            {study.controls}
+          </>
+        ) : null}
+        <View
+          accessibilityRole="radiogroup"
+          accessibilityLabel={
+            grouped
+              ? `Chọn đáp án cho câu ${questionLabel(question)}`
+              : 'Chọn đáp án'
+          }
+          style={[styles.options, numberOnlyOptions && styles.numberOptions]}
+        >
+          {question.options.map((option, index) => {
+            const selected = answer === index;
+            const correct = result?.correct_index === index;
+            const incorrect = Boolean(result && selected && !correct);
+            return (
+              <Pressable
+                key={index}
+                accessibilityRole={grade && !imageOnly ? 'button' : 'radio'}
+                accessibilityHint={
+                  grade && !imageOnly
+                    ? 'Nhờ Momo giải thích đáp án này'
+                    : undefined
+                }
+                accessibilityLabel={`${
+                  grouped ? `Câu ${questionLabel(question)} · ` : ''
+                }${
+                  option === String(index + 1)
+                    ? `Đáp án ${index + 1}`
+                    : `Đáp án ${index + 1}: ${option}`
+                }`}
+                accessibilityState={{
+                  checked: selected,
+                  disabled: Boolean(
+                    busy ||
+                      (grade && imageOnly) ||
+                      (!grade && (submitted || locked)),
+                  ),
+                }}
+                disabled={Boolean(
+                  busy ||
+                    (grade && imageOnly) ||
+                    (!grade && (submitted || locked)),
+                )}
+                onPress={() => (grade ? study.explain(index) : onChoose(index))}
+                style={({ pressed }) => [
+                  styles.option,
+                  numberOnlyOptions && styles.numberOption,
+                  selected && styles.optionSelected,
+                  correct && styles.optionCorrect,
+                  incorrect && styles.optionIncorrect,
+                  pressed && styles.pressed,
+                ]}
+              >
+                <View
+                  style={[
+                    styles.optionNumber,
+                    selected && styles.numberSelected,
+                    correct && styles.numberCorrect,
+                    incorrect && styles.numberIncorrect,
+                  ]}
+                >
+                  <Text
+                    style={[
+                      styles.numberText,
+                      (selected || correct || incorrect) && styles.whiteText,
+                    ]}
+                  >
+                    {index + 1}
+                  </Text>
+                </View>
+                {option !== String(index + 1) ? (
+                  <Text style={styles.optionText}>{option}</Text>
+                ) : null}
+                {correct ? (
+                  <Text style={styles.correctText}>✓ Đúng</Text>
+                ) : incorrect ? (
+                  <Text style={styles.incorrectText}>✕ Đã chọn</Text>
+                ) : null}
+              </Pressable>
+            );
+          })}
+        </View>
+        {result && result.status !== 'incorrect' ? (
+          <Text
+            accessibilityLiveRegion="polite"
+            style={[
+              styles.body,
+              result.status === 'correct' && styles.correctText,
+            ]}
+          >
+            {result.status === 'correct'
+              ? 'Bạn đã trả lời đúng.'
+              : `Bạn chưa trả lời câu này. Đáp án đúng: ${
+                  result.correct_index + 1
+                }.`}
+          </Text>
+        ) : null}
+        {!grade && answer !== undefined ? (
+          <AuthButton
+            label={
+              grouped
+                ? `Bỏ chọn câu ${questionLabel(question)}`
+                : 'Bỏ chọn đáp án'
+            }
+            onPress={onClear}
+            variant="text"
+            size="compact"
+            disabled={busy || submitted || locked}
+          />
+        ) : null}
+      </View>
+    </>
+  );
+}
+
 function ExamWorkspace({
   exam,
   accountId,
@@ -423,18 +749,33 @@ function ExamWorkspace({
   const { width } = useWindowDimensions();
   const { contentWidth } = useWebLayout();
   const wide = (contentWidth || width) >= 980;
-  const entries = exam.sections.flatMap(section =>
-    section.questions.map(question => ({ section, question })),
+  const entries = useMemo(
+    () =>
+      exam.sections.flatMap(section =>
+        section.questions.map(question => ({ section, question })),
+      ),
+    [exam],
   );
+  const indexedEntries = useMemo(
+    () => entries.map((entry, index) => ({ ...entry, index })),
+    [entries],
+  );
+  const units = useMemo(
+    () => groupExamEntries(indexedEntries),
+    [indexedEntries],
+  );
+  const unit = units.find(
+    item => draft.index >= item.first && draft.index <= item.last,
+  )!;
   const { section, question } = entries[draft.index];
-  const imageOnly = question.content_format === 'image';
-  const answered = Object.keys(draft.answers).length;
-  const result = grade?.results[question.id];
-  const study = useJlptReview(
-    exam.id,
-    question,
-    imageOnly ? undefined : grade?.review_token,
+  const grouped = unit.entries.length > 1;
+  const unitEntries = unit.entries.filter(
+    entry =>
+      !onlyMistakes || grade?.results[entry.question.id].status !== 'correct',
   );
+  const headingQuestion = unit.entries[0].question;
+  const questionNodes = useRef(new Map<string, ComponentRef<typeof View>>());
+  const answered = Object.keys(draft.answers).length;
   const timed = draft.mode === 'timed';
   const timing = draft.timing;
   const timedLocked =
@@ -452,7 +793,6 @@ function ExamWorkspace({
       setDraft(value => ({ ...value, timing: next }));
     }
   }, [exam, timed, timing, now, draft.submitted]);
-  const flagged = draft.flagged.includes(question.id);
   const [saveState, setSaveState] = useState<'saving' | 'saved' | 'error'>(
     'saving',
   );
@@ -516,18 +856,45 @@ function ExamWorkspace({
     // Restore a submitted draft once; later answer changes never submit automatically.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-  const choose = (index: number) => {
-    if (
-      busy ||
-      draft.submitted ||
-      grade ||
-      (timed && (!timing || !canAnswer(exam, timing, question.id)))
-    )
-      return;
-    setDraft(value => ({
-      ...value,
-      answers: { ...value.answers, [question.id]: index },
-    }));
+  const editable = (value: ExamDraft, id: string) =>
+    !busy &&
+    !value.submitted &&
+    !grade &&
+    (!timed || Boolean(value.timing && canAnswer(exam, value.timing, id)));
+  const choose = (questionIndex: number, option: number) => {
+    const id = entries[questionIndex].question.id;
+    setDraft(value =>
+      editable(value, id)
+        ? {
+            ...value,
+            index: questionIndex,
+            answers: { ...value.answers, [id]: option },
+          }
+        : value,
+    );
+  };
+  const clear = (questionIndex: number) => {
+    const id = entries[questionIndex].question.id;
+    setDraft(value => {
+      if (!editable(value, id)) return value;
+      const answers = { ...value.answers };
+      delete answers[id];
+      return { ...value, index: questionIndex, answers };
+    });
+  };
+  const toggleFlag = (questionIndex: number) => {
+    const id = entries[questionIndex].question.id;
+    setDraft(value =>
+      !editable(value, id)
+        ? value
+        : {
+            ...value,
+            index: questionIndex,
+            flagged: value.flagged.includes(id)
+              ? value.flagged.filter(key => key !== id)
+              : [...value.flagged, id],
+          },
+    );
   };
   const move = (index: number) => {
     if (
@@ -536,16 +903,27 @@ function ExamWorkspace({
       (!timing || !canAnswer(exam, timing, entries[index].question.id))
     )
       return;
+    if (
+      onlyMistakes &&
+      grade?.results[entries[index].question.id].status === 'correct'
+    )
+      setOnlyMistakes(false);
     setDraft(value => ({ ...value, index }));
     setMapOpen(false);
     // Keep the current item visible after moving from a long reading passage.
     if (Platform.OS === 'web')
       requestAnimationFrame(() => {
         (
-          questionCard.current as unknown as {
+          (index >= unit.first && index <= unit.last
+            ? questionNodes.current.get(entries[index].question.id)
+            : questionCard.current) as unknown as {
             scrollIntoView?: (options: ScrollIntoViewOptions) => void;
           }
-        )?.scrollIntoView?.({ block: 'start', behavior: 'smooth' });
+        )?.scrollIntoView?.({
+          block:
+            index >= unit.first && index <= unit.last ? 'nearest' : 'start',
+          behavior: 'smooth',
+        });
       });
   };
   const nextUnanswered = entries.findIndex(
@@ -559,14 +937,8 @@ function ExamWorkspace({
       ? [index]
       : [],
   );
-  const previous = visibleIndexes.filter(index => index < draft.index).pop();
-  const next = visibleIndexes.find(index => index > draft.index);
-  const targetAt = question.target
-    ? question.prompt.indexOf(question.target)
-    : -1;
-  const numberOnlyOptions = question.options.every(
-    (option, index) => option === String(index + 1),
-  );
+  const previous = visibleIndexes.filter(index => index < unit.first).pop();
+  const next = visibleIndexes.find(index => index > unit.last);
   const restart = (nextMode: ExamMode = draft.mode ?? 'practice') => {
     setGrade(null);
     setOnlyMistakes(false);
@@ -593,7 +965,6 @@ function ExamWorkspace({
   };
   return (
     <AuthShell title={exam.title} subtitle="" card={false} wide hideHeader>
-      {study.popup}
       {timed && !grade && !draft.submitted && timing?.phase === 'between' ? (
         <JlptTimedTransition
           exam={exam}
@@ -845,269 +1216,53 @@ function ExamWorkspace({
                   accessibilityRole="header"
                   style={[styles.title, styles.mondaiHeading]}
                 >
-                  問題{question.group}
+                  問題{headingQuestion.group}
                   {'　'}
-                  <Text style={styles.instruction}>{question.instruction}</Text>
+                  <Text style={styles.instruction}>
+                    {headingQuestion.instruction}
+                  </Text>
                 </Text>
-                {!grade ? (
-                  <Pressable
-                    accessibilityRole="button"
-                    accessibilityLabel={
-                      flagged ? 'Bỏ đánh dấu câu này' : 'Đánh dấu xem lại'
-                    }
-                    accessibilityState={{ selected: flagged }}
-                    disabled={busy || draft.submitted || timedLocked}
-                    onPress={() =>
-                      setDraft(value => ({
-                        ...value,
-                        flagged: flagged
-                          ? value.flagged.filter(id => id !== question.id)
-                          : [...value.flagged, question.id],
-                      }))
-                    }
-                    style={[styles.flagButton, flagged && styles.flagActive]}
-                  >
-                    <Text style={styles.flagText}>
-                      {flagged ? '⚑ Đã đánh dấu' : '⚐ Xem lại'}
-                    </Text>
-                  </Pressable>
-                ) : null}
               </View>
               {section.id === 'listening' && !exam.audio_url ? (
                 <Text style={styles.caption}>Chưa có tệp nghe</Text>
               ) : null}
-              {question.passage ? (
-                <View style={styles.passage}>
-                  {grade && study.data ? (
-                    study.data.paragraphs.map((p, index) => (
-                      <ShadowingTokenText
-                        key={index}
-                        text={p.text}
-                        tokens={p.tokens}
-                        words={study.data!.words}
-                        onWordPress={study.onWordPress}
-                        style={styles.japanese}
-                        showFurigana={false}
-                        preserveLayout
-                        align="left"
-                        linkWords
-                      />
-                    ))
-                  ) : (
-                    <Text selectable style={styles.japanese}>
-                      {question.passage}
-                    </Text>
-                  )}
-                </View>
-              ) : null}
-              {imageOnly && question.images.length > 0 ? (
-                <Text style={styles.caption}>
-                  Câu {questionLabel(question)} · Chọn đáp án theo ảnh đề gốc
-                </Text>
-              ) : null}
-              {question.images.map(image => (
-                <Image
-                  key={image.id}
-                  accessibilityLabel={`Tài liệu minh họa cho câu ${questionLabel(
-                    question,
-                  )}`}
-                  source={{ uri: image.image_data_url }}
-                  resizeMode="contain"
-                  style={[
-                    styles.questionImage,
-                    {
-                      aspectRatio: image.width_px / image.height_px,
-                    },
-                  ]}
+              {unitEntries.map((entry, position) => (
+                <ExamQuestionBody
+                  key={entry.question.id}
+                  examId={exam.id}
+                  section={entry.section}
+                  question={entry.question}
+                  grade={grade}
+                  answer={draft.answers[entry.question.id]}
+                  flagged={draft.flagged.includes(entry.question.id)}
+                  submitted={draft.submitted}
+                  busy={busy}
+                  locked={timedLocked}
+                  active={draft.index === entry.index}
+                  grouped={grouped}
+                  showContext={position === 0}
+                  sharedImages={unit.sharedImages}
+                  onChoose={option => choose(entry.index, option)}
+                  onClear={() => clear(entry.index)}
+                  onToggleFlag={() => toggleFlag(entry.index)}
+                  questionRef={node => {
+                    if (node)
+                      questionNodes.current.set(entry.question.id, node);
+                    else questionNodes.current.delete(entry.question.id);
+                  }}
                 />
               ))}
-              {!imageOnly || question.images.length === 0 ? (
-                <View style={styles.promptRow}>
-                  <Text style={styles.questionMark}>
-                    {questionLabel(question)}
-                    {section.id === 'listening' ? '番' : ''}
-                  </Text>
-                  {section.id !== 'listening' &&
-                  !(
-                    (section.id === 'grammar-reading' &&
-                      question.group === 3) ||
-                    (section.id === 'language-reading' && question.group === 9)
-                  ) ? (
-                    grade && study.data ? (
-                      <View style={styles.promptCopy}>
-                        <ShadowingTokenText
-                          text={question.prompt}
-                          tokens={study.data.prompt_tokens}
-                          words={study.data.words}
-                          onWordPress={study.onWordPress}
-                          style={styles.prompt}
-                          showFurigana={false}
-                          preserveLayout
-                          align="left"
-                          linkWords
-                        />
-                      </View>
-                    ) : (
-                      <Text
-                        selectable
-                        style={[styles.prompt, styles.promptCopy]}
-                      >
-                        {targetAt >= 0 ? (
-                          <>
-                            {question.prompt.slice(0, targetAt)}
-                            <Text style={styles.underlined}>
-                              {question.target}
-                            </Text>
-                            {question.prompt.slice(
-                              targetAt + question.target!.length,
-                            )}
-                          </>
-                        ) : (
-                          question.prompt
-                        )}
-                      </Text>
-                    )
-                  ) : null}
-                </View>
-              ) : null}
-              {grade && !imageOnly ? (
-                <>
-                  <Text style={styles.caption}>
-                    Chạm từ để tra nghĩa · Chạm đáp án để hỏi Momo
-                  </Text>
-                  {study.controls}
-                </>
-              ) : null}
-              <View
-                accessibilityRole="radiogroup"
-                accessibilityLabel="Chọn đáp án"
-                style={[
-                  styles.options,
-                  numberOnlyOptions && styles.numberOptions,
-                ]}
-              >
-                {question.options.map((option, index) => {
-                  const selected = draft.answers[question.id] === index;
-                  const correct = result?.correct_index === index;
-                  const incorrect = Boolean(result && selected && !correct);
-                  return (
-                    <Pressable
-                      key={index}
-                      accessibilityRole={
-                        grade && !imageOnly ? 'button' : 'radio'
-                      }
-                      accessibilityHint={
-                        grade && !imageOnly
-                          ? 'Nhờ Momo giải thích đáp án này'
-                          : undefined
-                      }
-                      accessibilityLabel={
-                        option === String(index + 1)
-                          ? `Đáp án ${index + 1}`
-                          : `Đáp án ${index + 1}: ${option}`
-                      }
-                      accessibilityState={{
-                        checked: selected,
-                        disabled: Boolean(
-                          busy ||
-                            (grade && imageOnly) ||
-                            (!grade && (draft.submitted || timedLocked)),
-                        ),
-                      }}
-                      disabled={Boolean(
-                        busy ||
-                          (grade && imageOnly) ||
-                          (!grade && (draft.submitted || timedLocked)),
-                      )}
-                      onPress={() =>
-                        grade ? study.explain(index) : choose(index)
-                      }
-                      style={({ pressed }) => [
-                        styles.option,
-                        numberOnlyOptions && styles.numberOption,
-                        selected && styles.optionSelected,
-                        correct && styles.optionCorrect,
-                        incorrect && styles.optionIncorrect,
-                        pressed && styles.pressed,
-                      ]}
-                    >
-                      <View
-                        style={[
-                          styles.optionNumber,
-                          selected && styles.numberSelected,
-                          correct && styles.numberCorrect,
-                          incorrect && styles.numberIncorrect,
-                        ]}
-                      >
-                        <Text
-                          style={[
-                            styles.numberText,
-                            (selected || correct || incorrect) &&
-                              styles.whiteText,
-                          ]}
-                        >
-                          {index + 1}
-                        </Text>
-                      </View>
-                      {option !== String(index + 1) ? (
-                        <Text style={styles.optionText}>{option}</Text>
-                      ) : null}
-                      {correct ? (
-                        <Text style={styles.correctText}>✓ Đúng</Text>
-                      ) : incorrect ? (
-                        <Text style={styles.incorrectText}>✕ Đã chọn</Text>
-                      ) : null}
-                    </Pressable>
-                  );
-                })}
-              </View>
-              {result && result.status !== 'incorrect' ? (
-                <Text
-                  accessibilityLiveRegion="polite"
-                  style={[
-                    styles.body,
-                    result.status === 'correct' && styles.correctText,
-                  ]}
-                >
-                  {result.status === 'correct'
-                    ? 'Bạn đã trả lời đúng.'
-                    : `Bạn chưa trả lời câu này. Đáp án đúng: ${
-                        result.correct_index + 1
-                      }.`}
-                </Text>
-              ) : null}
-              {!grade && draft.answers[question.id] !== undefined ? (
-                <AuthButton
-                  label="Bỏ chọn đáp án"
-                  onPress={() =>
-                    setDraft(value => {
-                      if (
-                        timed &&
-                        (!value.timing ||
-                          !canAnswer(exam, value.timing, question.id))
-                      )
-                        return value;
-                      const answers = { ...value.answers };
-                      delete answers[question.id];
-                      return { ...value, answers };
-                    })
-                  }
-                  variant="text"
-                  size="compact"
-                  disabled={busy || draft.submitted || timedLocked}
-                />
-              ) : null}
             </View>
             <View style={styles.questionNavigation}>
               <AuthButton
-                label="Câu trước"
+                label={grouped ? 'Bài trước' : 'Câu trước'}
                 onPress={() => previous !== undefined && move(previous)}
                 variant="outline"
                 size="compact"
                 disabled={previous === undefined || timedLocked}
               />
               <AuthButton
-                label="Câu tiếp"
+                label={grouped ? 'Bài tiếp' : 'Câu tiếp'}
                 onPress={() => next !== undefined && move(next)}
                 size="compact"
                 disabled={next === undefined || timedLocked}
@@ -1305,6 +1460,17 @@ function ExamWorkspace({
 }
 
 const styles = StyleSheet.create({
+  questionBody: { gap: 16 },
+  groupQuestion: {
+    paddingTop: 20,
+    borderTopWidth: 1,
+    borderColor: colors.border,
+  },
+  questionActions: { alignItems: 'flex-end' },
+  currentQuestionMark: {
+    color: colors.primaryText,
+    borderColor: colors.primary,
+  },
   clock: {
     ...typography.label,
     fontSize: 16,
