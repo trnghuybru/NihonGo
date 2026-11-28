@@ -9,7 +9,16 @@ bp = Blueprint('jlpt', __name__, url_prefix='/api/jlpt')
 @bp.get('/exams')
 @require_auth
 def catalog():
-    return jsonify({'items': [preview(e) for e in exams().values()]})
+    from .database import source_catalog
+    items = [preview(e) for e in exams().values()] + source_catalog()
+    return jsonify({'items': sorted(items, key=lambda e: (e['year'], e['month']), reverse=True)})
+
+
+@bp.get('/sources/<exam_id>')
+@require_auth
+def source_detail(exam_id):
+    from .database import source_exam
+    return jsonify(source_exam(exam_id))
 
 
 @bp.get('/exams/<exam_id>')

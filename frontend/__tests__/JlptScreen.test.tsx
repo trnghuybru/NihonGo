@@ -8,6 +8,7 @@ import { dictionaryService } from '../src/services/dictionaryService';
 jest.mock('../src/services/jlptService', () => ({
   jlptService: {
     list: jest.fn(),
+    source: jest.fn(),
     exam: jest.fn(),
     grade: jest.fn(),
     review: jest.fn(),
@@ -137,6 +138,46 @@ async function open(learner = `learner-${account}`, contentWidth = 1200) {
   );
 }
 
+test('source sessions show original documents with page navigation and never fabricate a graded exam', async () => {
+  jest
+    .mocked(jlptService.list)
+    .mockResolvedValue({
+      items: [{ ...exam, source_only: true, total: 0, sections: [] }],
+    });
+  jest.mocked(jlptService.source).mockResolvedValue({
+    id: exam.id,
+    title: exam.title,
+    documents: [
+      {
+        filename: 'Đề.pdf',
+        kind: 'exam',
+        pages: [
+          { page: 1, text: '本文一。', method: 'ocr' },
+          { page: 2, text: '本文二。', method: 'ocr' },
+        ],
+      },
+      {
+        filename: 'Đáp án.pdf',
+        kind: 'answers',
+        pages: [{ page: 1, text: 'Đáp án nguồn', method: 'pdf_text' }],
+      },
+    ],
+  });
+  await act(async () => {
+    tree = Renderer.create(<JlptScreen accountId={`source-${account}`} />);
+  });
+  await act(async () => button('Xem đề gốc').props.onPress());
+  expect(JSON.stringify(tree.toJSON())).toContain('本文一。');
+  await act(async () => button('Trang 2').props.onPress());
+  expect(JSON.stringify(tree.toJSON())).toContain('本文二。');
+  await act(async () => button('Đáp án').props.onPress());
+  expect(JSON.stringify(tree.toJSON())).toContain('Đáp án nguồn');
+  expect(jlptService.exam).not.toHaveBeenCalled();
+  expect(jlptService.grade).not.toHaveBeenCalled();
+  await act(async () => button('Danh sách đề').props.onPress());
+  expect(button('Xem đề gốc')).toBeDefined();
+});
+
 test('small screens open the question map on demand and return to the chosen question', async () => {
   await open(`mobile-${account}`, 390);
   expect(button('Nghe hiểu, 問題1, 1番, chưa trả lời')).toBeUndefined();
@@ -175,7 +216,7 @@ test('lists two original sessions and keeps their drafts separate when switching
       ) && typeof node.props.onPress === 'function',
   );
   expect(cards.filter(card => !card.props.disabled)).toHaveLength(2);
-  expect(cards.filter(card => card.props.disabled)).toHaveLength(10);
+  expect(cards.filter(card => card.props.disabled)).toHaveLength(0);
   expect(JSON.stringify(tree.toJSON())).toContain('Đang làm dở');
   expect(JSON.stringify(tree.toJSON())).toContain('Lần làm gần nhất');
   await act(async () => cards[1].props.onPress());

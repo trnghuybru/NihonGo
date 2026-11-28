@@ -36,6 +36,7 @@ export type ExamPreview = {
   total: number;
   content_note: string;
   timing_source_url?: string | null;
+  source_only?: boolean;
   sections: {
     id: string;
     label: string;
@@ -70,6 +71,29 @@ export type ExamGrade = {
     }
   >;
 };
+export type ExamSource = {
+  id: string;
+  title: string;
+  documents: {
+    filename: string;
+    kind: string;
+    pages: {
+      page: number;
+      text: string;
+      method: string;
+      image_data_url?: string;
+      width_px?: number;
+      height_px?: number;
+    }[];
+    question_images?: {
+      id: string;
+      source_page: number;
+      image_data_url: string;
+      width_px: number;
+      height_px: number;
+    }[];
+  }[];
+};
 export type ExamReview = {
   prompt_tokens: ShadowingToken[];
   paragraphs: { text: string; tokens: ShadowingToken[] }[];
@@ -89,6 +113,8 @@ export type ExamExplanation = {
   }[];
 };
 export const jlptService = {
+  source: (id: string) =>
+    authenticatedRequest<ExamSource>('/jlpt/sources/' + encodeURIComponent(id)),
   review: (id: string, question: string, review_token: string) =>
     authenticatedRequest<ExamReview>(
       `/jlpt/exams/${encodeURIComponent(id)}/questions/${encodeURIComponent(

@@ -1,3 +1,4 @@
+import { JlptSourceViewer } from '../components/JlptSourceViewer';
 import { ComponentRef, useCallback, useEffect, useRef, useState } from 'react';
 import {
   ActivityIndicator,
@@ -28,6 +29,7 @@ import { colors, spacing, typography } from '../theme/theme';
 import {
   Exam,
   ExamGrade,
+  ExamSource,
   ExamPreview,
   jlptService,
 } from '../services/jlptService';
@@ -44,17 +46,6 @@ const message = (failure: unknown) =>
   failure instanceof Error
     ? failure.message
     : 'Chưa tải được đề thi. Hãy thử lại.';
-
-// Temporary local layout preview; these cards never enter the exam catalog/API.
-const LAYOUT_SAMPLES = [2024, 2023, 2022, 2021, 2019].flatMap(year =>
-  [12, 7].map(month => ({
-    id: `layout-sample-${year}-${month}`,
-    level: 'N3',
-    year,
-    month,
-    sample: true,
-  })),
-);
 
 function RestartExamDialog({
   visible,
@@ -143,6 +134,7 @@ export function JlptScreen({
   const [error, setError] = useState('');
   const [opening, setOpening] = useState<string | null>(null);
   const [exam, setExam] = useState<Exam | null>(null);
+  const [source, setSource] = useState<ExamSource | null>(null);
   const [startFresh, setStartFresh] = useState(false);
   const [restartId, setRestartId] = useState<string | null>(null);
   const closeExam = useCallback(() => setExam(null), []);
@@ -152,15 +144,16 @@ export function JlptScreen({
   const catalogColumns = catalogWidth >= 900 ? 4 : catalogWidth >= 560 ? 2 : 1;
   const realCards = (catalog ?? []).map(item => ({
     ...item,
-    progress: readExamProgress(accountId, item),
+    progress: item.source_only ? null : readExamProgress(accountId, item),
   }));
   const latestDraftId = realCards
     .filter(item => item.progress && !item.progress.submitted)
     .sort((a, b) => b.progress!.updatedAt - a.progress!.updatedAt)[0]?.id;
   const catalogCards: (Pick<ExamPreview, 'id' | 'level' | 'year' | 'month'> & {
     sample?: boolean;
+    source_only?: boolean;
     progress?: ExamProgress | null;
-  })[] = [...realCards, ...(__DEV__ && catalog ? LAYOUT_SAMPLES : [])];
+  })[] = realCards;
   const alive = useRef(true);
   const load = useCallback(async () => {
     setError('');
@@ -184,6 +177,11 @@ export function JlptScreen({
     setOpening(id);
     setError('');
     try {
+      if (catalog?.find(e => e.id === id)?.source_only) {
+        const response = await jlptService.source(id);
+        if (alive.current) setSource(response);
+        return;
+      }
       const response = await jlptService.exam(id);
       if (alive.current) {
         setStartFresh(fresh);
@@ -196,6 +194,8 @@ export function JlptScreen({
       if (alive.current) setOpening(null);
     }
   };
+  if (source)
+    return <JlptSourceViewer source={source} onExit={() => setSource(null)} />;
   if (exam)
     return (
       <ExamWorkspace
@@ -288,6 +288,8 @@ export function JlptScreen({
                     : 'Đã hoàn thành bài làm'
                   : item.progress
                   ? `${item.progress.answered}/${item.progress.total} câu đã trả lời`
+                  : item.source_only
+                  ? 'Tài liệu đề & đáp án gốc'
                   : 'Chưa làm'}
               </Text>
               {item.progress && !item.progress.submitted ? (
@@ -326,6 +328,8 @@ export function JlptScreen({
                       ? 'Xem kết quả'
                       : item.progress
                       ? 'Tiếp tục'
+                      : item.source_only
+                      ? 'Xem đề gốc'
                       : 'Mở đề thi'
                   }
                   onPress={() => {
