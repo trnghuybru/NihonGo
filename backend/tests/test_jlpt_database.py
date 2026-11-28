@@ -75,3 +75,23 @@ class JlptDatabaseTests(unittest.TestCase):
         self.payload['sessions'][0]['files'][0]['pages'][0]['image_data_url'] = 'data:image/webp;base64,not-real'
         with self.assertRaises(ValueError): import_payload(self.payload)
         self.assertEqual(db.session.query(JlptExamRecord).count(), 0)
+
+    def test_cleanup_removes_only_pending_source_sessions_and_preserves_images(self):
+        import importlib
+        from alembic.migration import MigrationContext
+        from alembic.operations import Operations
+        self.payload['source_sha256'] = '4ec4fddc850fdc39278a5b1cfe1aecc19685a3a3471f001b90dd5ea6fad21410'
+        import_payload(self.payload)
+        # An unrelated archive must not be removed by this one-time cleanup.
+        db.session.add(JlptExamRecord(id='n2-2024-07', level='N2', year=2024, month=7,
+            has_exam=True, source_sha256='c' * 64, source_data={}, normalized=None))
+        db.session.commit()
+        migration = importlib.import_module('migrations.versions.d3e4f5a6b7c8_remove_pending_jlpt_exams')
+        with db.engine.begin() as connection:
+            with Operations.context(MigrationContext.configure(connection)):
+                migration.upgrade()
+        db.session.expire_all()
+        self.assertIsNone(db.session.get(JlptExamRecord, 'n3-2024-07'))
+        self.assertIsNotNone(db.session.get(JlptExamRecord, 'n3-2017-07'))
+        self.assertIsNotNone(db.session.get(JlptExamRecord, 'n2-2024-07'))
+        self.assertEqual(db.session.query(JlptImage).count(), 1)
