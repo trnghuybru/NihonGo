@@ -14,3 +14,8 @@ License: SIL Open Font License 1.1; see `OFL.txt`.
 iOS references these files directly in the Xcode Resources build phase and registers them in `UIAppFonts`. Android packages identical copies under `android/app/src/main/assets/fonts`. Keep the copies synchronized when updating fonts. Rebuild the native application after updating font assets.
 
 The `readexFont` helper in `src/theme/theme.ts` chooses the correct family/face on each platform; use typography tokens instead of applying unrelated `fontWeight` overrides.
+
+Pronunciation practice uses locally bundled Nunito (Vietnamese controls) and M PLUS
+Rounded 1c Bold (Japanese sentence) on web. Sources are the `ofl/nunito` and
+`ofl/mplusrounded1c` directories of https://github.com/google/fonts. Their license
+files are bundled alongside the fonts. Vocabulary lesson words, kana readings and Japanese examples, plus Shadowing main captions and their furigana, share the same rounded Japanese face through `japaneseStudyFont`. UI labels and the Shadowing transcript list retain Readex Pro. Native keeps the same system Japanese fallback as pronunciation.

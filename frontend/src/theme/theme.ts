@@ -68,6 +68,13 @@ export function readexFont(weight: keyof typeof fontFaces) {
     fontWeight: Platform.OS === 'ios' ? weight : ('normal' as const),
   };
 }
+// Match pronunciation's rounded Japanese face without changing text sizes.
+export const japaneseStudyFont = {
+  fontFamily:
+    Platform.OS === 'web' ? '"M PLUS Rounded 1c", sans-serif' : undefined,
+  fontWeight: '700' as const,
+};
+
 export const typography = {
   title: {
     ...readexFont('600'),

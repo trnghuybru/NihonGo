@@ -13,6 +13,8 @@ from dictionary import init_dictionary
 from flashcards import init_flashcards
 from handwriting import init_handwriting
 from reading import init_reading
+from pronunciation import init_pronunciation
+from jlpt import init_jlpt
 from translation import init_translation
 from games import init_games
 from services.gemini_provider import gemini_configured
@@ -33,6 +35,8 @@ init_dictionary(app)
 init_flashcards(app)
 init_handwriting(app)
 init_reading(app)
+init_pronunciation(app)
+init_jlpt(app)
 init_translation(app)
 socketio = init_games(app)
 

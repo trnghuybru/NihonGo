@@ -53,3 +53,27 @@ def get_study_calendar():
 def update_progress():
     limit('study-user', g.user.id, 30, 60)
     return jsonify(record_study(g.user.id, request.get_json(silent=True)))
+
+
+@bp.get('/journey')
+@require_auth
+def get_journey():
+    from .journey import journey, public_journey
+    limit('journey-read', g.user.id, 30, 60)
+    return jsonify(public_journey(*journey(g.user.id)))
+
+
+@bp.post('/journey/complete')
+@require_auth
+def finish_journey_step():
+    from .journey import complete_step
+    limit('journey-complete', g.user.id, 30, 60)
+    return jsonify(complete_step(g.user.id, request.get_json(silent=True)))
+
+
+@bp.post('/journey/writing-topic')
+@require_auth
+def create_journey_topic():
+    from .journey import generate_topic
+    limit('journey-topic', g.user.id, 6, 60)
+    return jsonify(generate_topic(g.user.id, request.get_json(silent=True)))

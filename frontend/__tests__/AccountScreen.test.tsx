@@ -50,6 +50,7 @@ beforeEach(async () => {
       />,
     );
   });
+  await act(async () => button('Tài khoản').props.onPress());
 });
 afterEach(async () => {
   await act(async () => tree.unmount());
@@ -133,6 +134,7 @@ test('web logout returns to the public landing only after success', async () => 
       </WebNavigationContext.Provider>,
     );
   });
+  await act(async () => button('Tài khoản').props.onPress());
   jest
     .mocked(authService.logout)
     .mockRejectedValueOnce(new Error('Không đăng xuất được'));

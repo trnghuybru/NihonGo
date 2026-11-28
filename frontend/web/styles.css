@@ -1,3 +1,5 @@
+@font-face { font-family: "M PLUS Rounded 1c"; src: url('../src/assets/fonts/MPLUSRounded1c-Bold.ttf'); font-weight: 700; font-display: swap; }
+@font-face { font-family: Nunito; src: url('../src/assets/fonts/Nunito.ttf'); font-weight: 200 1000; font-display: swap; }
 @font-face {
   font-family: ReadexPro-Regular;
   src: url('../src/assets/fonts/ReadexPro-Regular.ttf');
@@ -111,16 +113,13 @@ textarea:focus-visible {
 #scenic-login {
   /* Scale from the 1821 × 864 reference while keeping small screens usable. */
   --login-unit: clamp(0.65px, min(0.046vw, 0.097dvh), 0.84px);
-  --login-font: system-ui, "Segoe UI", sans-serif;
   flex: 1;
   min-height: 100%;
   overflow: auto;
   background: #f8f4f9 url('../src/assets/login-sakura.webp') center / 100% 100% no-repeat;
 }
 
-#scenic-login :where(div, span, input) {
-  font-family: var(--login-font);
-}
+/* Preserve the Readex Pro face/weight supplied by each theme text style. */
 
 #scenic-login-brand {
   position: absolute;
@@ -139,7 +138,6 @@ textarea:focus-visible {
 #scenic-login-brand > :last-child {
   color: #19191c;
   font-size: calc(32 * var(--login-unit));
-  font-weight: 700;
   letter-spacing: -1px;
 }
 
@@ -167,7 +165,6 @@ textarea:focus-visible {
   color: #101a2a;
   font-size: calc(34 * var(--login-unit));
   line-height: 1.2;
-  font-weight: 700;
   letter-spacing: -0.6px;
 }
 
@@ -223,7 +220,6 @@ textarea:focus-visible {
 
 #scenic-login-card > [role='button'] > div {
   font-size: max(14px, calc(19 * var(--login-unit)));
-  font-weight: 700;
 }
 
 #scenic-login-forgot {
@@ -253,7 +249,6 @@ textarea:focus-visible {
 #scenic-login-card > div:has(> div > input) > :first-child > div {
   font-size: max(13px, calc(17 * var(--login-unit)));
   line-height: 1.35;
-  font-weight: 600;
 }
 
 #scenic-login-forgot [role='button'] > div,
@@ -264,7 +259,6 @@ textarea:focus-visible {
 }
 
 #scenic-login [data-testid='signup-footer'] [role='link'] > div {
-  font-weight: 700;
 }
 
 @media (max-width: 480px) {
@@ -304,12 +298,10 @@ textarea:focus-visible {
 }
 
 #scenic-login-beta [role='link'] > :first-child > :first-child {
-  font-weight: 700;
 }
 
 #scenic-login-beta [role='link'] > :first-child > :nth-child(3) {
   font-size: 11px;
-  font-weight: 600;
   white-space: nowrap;
 }
 

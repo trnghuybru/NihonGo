@@ -42,6 +42,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { AuthButton, AuthNotice } from '../components/AuthForm';
 import { HomeFeatureIcon } from '../components/HomeFeatureIcon';
 import {
+  ChevronDownIcon,
   ChevronLeftIcon,
   ChevronRightIcon,
   ReplayIcon,
@@ -67,6 +68,7 @@ import {
 } from '../services/shadowingService';
 import {
   colors,
+  japaneseStudyFont,
   layout,
   radius,
   shadowSm,
@@ -75,6 +77,7 @@ import {
   typography,
 } from '../theme/theme';
 
+import { PronunciationPractice } from '../components/PronunciationPractice';
 const labels: Record<ShadowingJob['status'], string> = {
   queued: 'Đang chờ xử lý',
   extracting: 'Đang lấy dữ liệu video',
@@ -204,7 +207,10 @@ const ShadowingVideoCard = memo(function VideoCard({
   const ready = job.status === 'ready';
   const title = job.title || 'Video đang được chuẩn bị';
   return (
-    <View testID="shadowing-video-card" style={[styles.videoCard, width !== undefined && { width }]}>
+    <View
+      testID="shadowing-video-card"
+      style={[styles.videoCard, width !== undefined && { width }]}
+    >
       <Pressable
         accessibilityRole="button"
         accessibilityLabel={`Mở video ${title}`}
@@ -277,12 +283,23 @@ type CatalogSnapshot = {
 export function ShadowingScreen({
   onExit,
   bottomOverlayHeight = 0,
+  initialJobId,
+  initialStartSeconds = 0,
 }: {
   onExit?: () => void;
   bottomOverlayHeight?: number;
+  initialJobId?: string;
+  initialStartSeconds?: number;
 }) {
   const web = useWebNavigation();
   const webPath = web?.pathname;
+  const requestedStart = web
+    ? Number(new URLSearchParams(web.search).get('start') || 0)
+    : initialStartSeconds;
+  const startRef = useRef(0);
+  startRef.current =
+    Number.isFinite(requestedStart) && requestedStart >= 0 ? requestedStart : 0;
+
   const webRef = useRef(web);
   webRef.current = web;
   const { desktop, contentWidth } = useWebLayout();
@@ -341,6 +358,10 @@ export function ShadowingScreen({
     quiz.stop();
   };
   const [dictation, setDictation] = useState(false);
+  const [pronunciationText, setPronunciationText] = useState<string | null>(
+    null,
+  );
+  const [pronunciationRecording, setPronunciationRecording] = useState(false);
   const [dictationAnswers, setDictationAnswers] = useState<
     Record<string, DictationAnswer>
   >({});
@@ -375,6 +396,7 @@ export function ShadowingScreen({
   const [mobileTranscriptOpen, setMobileTranscriptOpen] = useState(false);
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [hideCaption, setHideCaption] = useState(false);
+  const [captionOnVideo, setCaptionOnVideo] = useState(false);
   const [rate, setRate] = useState(1);
   const [loop, setLoop] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -391,6 +413,8 @@ export function ShadowingScreen({
   const leaveLesson = useCallback(() => {
     generation.current += 1;
     setSettingsOpen(false);
+    setPronunciationText(null);
+    setPronunciationRecording(false);
     setSelectedWordKey(null);
     setLesson(null);
     webRef.current?.navigate('/practice/listening');
@@ -545,10 +569,18 @@ export function ShadowingScreen({
         setDictationAnswers({});
         setLesson(result);
         const nav = webRef.current,
-          target = '/practice/listening/' + encodeURIComponent(id);
+          target =
+            '/practice/listening/' +
+            encodeURIComponent(id) +
+            (startRef.current ? '?start=' + startRef.current : '');
         if (nav && nav.pathname !== target) nav.navigate(target);
         setShowTranslation(false);
-        setIndex(0);
+        const matchedIndex = result.segments.findIndex(
+          segment =>
+            segment.start_seconds <= startRef.current &&
+            segment.end_seconds > startRef.current,
+        );
+        setIndex(matchedIndex >= 0 ? matchedIndex : 0);
         setPanelOpen(true);
         setSettingsOpen(false);
         setLiveIndex(-1);
@@ -571,6 +603,9 @@ export function ShadowingScreen({
       if (mounted.current && current === generation.current) setBusy(false);
     }
   }, []);
+  useEffect(() => {
+    if (!webPath && initialJobId) open(initialJobId);
+  }, [initialJobId, webPath, open]);
   useEffect(() => {
     if (!webPath) return;
     const id = /^\/practice\/listening\/([^/]+)$/.exec(webPath)?.[1];
@@ -863,6 +898,39 @@ export function ShadowingScreen({
       setSelectedWordKey(null);
       selectSegment(0);
     };
+    const overlayCaption =
+      !dictation && !hideCaption && captionOnVideo ? (
+        <View
+          pointerEvents="box-none"
+          style={styles.captionOverlay}
+          testID="shadowing-overlay-caption"
+        >
+          <ScrollView
+            style={styles.overlayCaptionScroll}
+            contentContainerStyle={styles.overlayCaptionContent}
+          >
+            <View
+              onLayout={event =>
+                setCaptionWidth(Math.round(event.nativeEvent.layout.width))
+              }
+            >
+              <ShadowingTokenText
+                text={captionText}
+                tokens={currentTokens}
+                words={lesson.words}
+                selectedKey={selectedWordKey}
+                onWordPress={showWord}
+                rubyStyle={[japaneseStudyFont, styles.overlayCaptionText]}
+                style={[
+                  styles.currentCaptionText,
+                  { fontSize, lineHeight },
+                  styles.overlayCaptionText,
+                ]}
+              />
+            </View>
+          </ScrollView>
+        </View>
+      ) : null;
     const playerHeader = (
       <View style={styles.fixedHeader}>
         <ScreenBackHeader
@@ -873,7 +941,11 @@ export function ShadowingScreen({
         <View style={styles.videoStage} testID="tour-listening-player">
           {lesson.segments[index] ? (
             <VideoExamplePlayer
-              pausedForLookup={Boolean(lookupWord)}
+              pausedForLookup={
+                Boolean(lookupWord) ||
+                Boolean(pronunciationText) ||
+                pronunciationRecording
+              }
               pausedForQuiz={quiz.paused}
               quizCheckpoints={
                 desktop || mobileQuizOpen
@@ -912,6 +984,7 @@ export function ShadowingScreen({
               }
             />
           ) : null}
+          {overlayCaption}
         </View>
       </View>
     );
@@ -940,6 +1013,8 @@ export function ShadowingScreen({
               ]}
               onPress={() => {
                 if (value === dictation) return;
+                setPronunciationText(null);
+                setPronunciationRecording(false);
                 if (value) {
                   quiz.stop();
                   setSelectedWordKey(null);
@@ -970,6 +1045,45 @@ export function ShadowingScreen({
             </Pressable>
           ))}
         </View>
+        {!dictation && lesson.segments[current] ? (
+          <View style={{ padding: spacing.md, gap: spacing.md }}>
+            <AuthButton
+              label={
+                pronunciationText
+                  ? 'Đóng luyện phát âm'
+                  : 'Luyện phát âm câu này'
+              }
+              size="compact"
+              variant="outline"
+              onPress={() => {
+                setPronunciationText(value =>
+                  value ? null : lesson.segments[current].text,
+                );
+                setPronunciationRecording(false);
+              }}
+            />
+            {pronunciationText ? (
+              <View style={{ gap: spacing.md }}>
+                {pronunciationText !== lesson.segments[current].text ? (
+                  <AuthButton
+                    label="Luyện câu đang chọn"
+                    size="compact"
+                    variant="text"
+                    disabled={pronunciationRecording}
+                    onPress={() =>
+                      setPronunciationText(lesson.segments[current].text)
+                    }
+                  />
+                ) : null}
+                <PronunciationPractice
+                  key={pronunciationText}
+                  sentence={pronunciationText}
+                  onRecordingChange={setPronunciationRecording}
+                />
+              </View>
+            ) : null}
+          </View>
+        ) : null}
         {dictation && lesson.segments[current] ? (
           <View
             style={[
@@ -1015,7 +1129,7 @@ export function ShadowingScreen({
               ) : null}
             </View>
           </View>
-        ) : !dictation && !hideCaption ? (
+        ) : !dictation && !hideCaption && !captionOnVideo ? (
           <View
             style={[
               styles.currentCaptionArea,
@@ -1065,6 +1179,7 @@ export function ShadowingScreen({
                   }
                 >
                   <ShadowingTokenText
+                    rubyStyle={japaneseStudyFont}
                     text={captionText}
                     tokens={currentTokens}
                     words={lesson.words}
@@ -1163,6 +1278,33 @@ export function ShadowingScreen({
                   color={showTranslation ? colors.primaryText : colors.body}
                 />
               </Pressable>
+              <Pressable
+                accessibilityRole="button"
+                accessibilityLabel={
+                  captionOnVideo
+                    ? 'Đưa phụ đề xuống dưới video'
+                    : 'Đưa phụ đề lên video'
+                }
+                accessibilityState={{ selected: captionOnVideo }}
+                onPress={() => setCaptionOnVideo(value => !value)}
+                hitSlop={6}
+                style={[styles.toolIcon, captionOnVideo && styles.selected]}
+              >
+                <View style={!captionOnVideo ? styles.pointUp : undefined}>
+                  <ChevronDownIcon size={18} color={colors.primaryText} />
+                </View>
+              </Pressable>
+              {captionOnVideo && !hideCaption ? (
+                <Pressable
+                  accessibilityRole="button"
+                  accessibilityLabel="Ẩn phụ đề"
+                  onPress={() => setHideCaption(true)}
+                  style={styles.toolIcon}
+                  hitSlop={6}
+                >
+                  <EyeIcon size={18} color={colors.primaryText} />
+                </Pressable>
+              ) : null}
               <View style={styles.toolbarSpace} />
               <Pressable
                 accessibilityRole="button"
@@ -1667,7 +1809,10 @@ export function ShadowingScreen({
               style={[styles.scopeButton, scope === value && styles.selected]}
             >
               <Text
-                style={[styles.scopeLabel, scope === value && styles.scopeActive]}
+                style={[
+                  styles.scopeLabel,
+                  scope === value && styles.scopeActive,
+                ]}
               >
                 {value === 'all' ? 'Tất cả video' : 'Video của tôi'}
               </Text>
@@ -1781,7 +1926,7 @@ export function ShadowingScreen({
                       style={styles.input}
                     />
                     <Text style={styles.body}>
-                      Video dài tối đa 20 phút. Bạn có thể tiếp tục dùng app
+                      Video dài tối đa 60 phút. Bạn có thể tiếp tục dùng app
                       trong lúc chuẩn bị.
                     </Text>
                     <AuthButton
@@ -2054,6 +2199,24 @@ const styles = StyleSheet.create({
     gap: spacing.sm,
   },
   videoStage: { position: 'relative' },
+  pointUp: { transform: [{ rotate: '180deg' }] },
+  captionOverlay: {
+    position: 'absolute',
+    bottom: 48,
+    left: 16,
+    right: 16,
+    zIndex: 10,
+    maxHeight: '45%',
+  },
+  overlayCaptionScroll: { flexGrow: 0 },
+  overlayCaptionContent: { paddingVertical: 4 },
+  overlayCaptionText: {
+    color: '#FFFFFF',
+    textDecorationLine: 'none',
+    textShadowColor: '#000000',
+    textShadowOffset: { width: 0, height: 1 },
+    textShadowRadius: 4,
+  },
   currentCaptionArea: {
     alignItems: 'center',
     justifyContent: 'center',
@@ -2099,6 +2262,7 @@ const styles = StyleSheet.create({
   },
   currentCaptionText: {
     ...typography.title,
+    ...japaneseStudyFont,
     fontSize: 22,
     lineHeight: 32,
     color: colors.dark,

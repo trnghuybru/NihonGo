@@ -1,5 +1,6 @@
 import { Platform, Pressable, StyleSheet, Text, View } from 'react-native';
 import { AuthShell } from '../components/AuthForm';
+import { HomeSkillCard } from '../components/HomeSkillCard';
 import {
   HomeFeatureIcon,
   HomeFeatureIconName,
@@ -14,17 +15,30 @@ import {
   typography,
 } from '../theme/theme';
 
+import { useCallback, useState } from 'react';
+import { useWebNavigation } from '../navigation/webNavigation';
+import { PronunciationScreen } from './PronunciationScreen';
+import { JlptScreen } from './JlptScreen';
 export function PracticeScreen({
   onOpenSkill,
   onOpenGames,
   onOpenFlashcards,
   onOpenLessons,
+  accountId,
 }: {
   onOpenSkill: (skill: LearningSkill) => void;
   onOpenGames?: () => void;
   onOpenFlashcards?: () => void;
   onOpenLessons?: () => void;
+  accountId?: string;
 }) {
+  const navigation = useWebNavigation();
+  const [pronunciation, setPronunciation] = useState(false);
+  const [jlpt, setJlpt] = useState(false);
+  const closeJlpt = useCallback(() => setJlpt(false), []);
+  const closePronunciation = useCallback(() => setPronunciation(false), []);
+  if (jlpt) return <JlptScreen accountId={accountId} onExit={closeJlpt} />;
+  if (pronunciation) return <PronunciationScreen onExit={closePronunciation} />;
   const features: {
     label: string;
     icon: HomeFeatureIconName;
@@ -91,13 +105,44 @@ export function PracticeScreen({
             Luyện kỹ năng
           </Text>
         </View>
-        <SkillPicker onOpenSkill={onOpenSkill} />
+        <SkillPicker
+          onOpenSkill={onOpenSkill}
+          onOpenPronunciation={() =>
+            navigation
+              ? navigation.navigate('/practice/pronunciation')
+              : setPronunciation(true)
+          }
+        />
+      </View>
+      <View nativeID={web ? 'practice-jlpt' : undefined} style={styles.section}>
+        <Text accessibilityRole="header" style={styles.heading}>
+          Luyện thi JLPT
+        </Text>
+        <View testID="jlpt-entry-grid">
+          <View style={styles.skillRow}>
+            <HomeSkillCard
+              title="Làm đề theo kỳ thi"
+              description="Chọn đề gốc và xem lại đáp án"
+              action="Chọn đề thi"
+              pose="jlpt"
+              accessibilityLabel="Luyện thi JLPT"
+              onPress={() =>
+                navigation
+                  ? navigation.navigate('/practice/jlpt')
+                  : setJlpt(true)
+              }
+            />
+            <View style={styles.emptySlot} />
+          </View>
+        </View>
       </View>
     </AuthShell>
   );
 }
 const styles = StyleSheet.create({
   section: { gap: spacing.lg },
+  skillRow: { flexDirection: 'row', alignItems: 'stretch', gap: spacing.lg },
+  emptySlot: { flex: 1 },
   title: {
     ...typography.title,
     fontSize: 21,

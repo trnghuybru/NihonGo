@@ -1,3 +1,4 @@
+import { journeyService } from '../services/journeyService';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import {
   Modal,
@@ -241,6 +242,47 @@ export function WritingWorkspaceScreen() {
     setMessage('');
     setLibraryOpen(false);
   };
+  const incomingHandled = useRef(false);
+  useEffect(() => {
+    if (loading || incomingHandled.current) return;
+    const params = new URLSearchParams(web?.search ?? '');
+    if (params.get('view') === 'submissions') {
+      incomingHandled.current = true;
+      setLibrary('submissions');
+      setLibraryOpen(true);
+    }
+    if (params.get('journey') === '1') {
+      incomingHandled.current = true;
+      journeyService
+        .load()
+        .then(result => {
+          const topic = result.writing_topic;
+          if (!topic) return;
+          open({
+            key: 'journey:' + result.date,
+            title: topic.title,
+            level: topic.level,
+            draftId: result.draft?.id,
+            text: result.draft?.text ?? '',
+            prompt: {
+              id: '',
+              title: topic.title,
+              level: topic.level,
+              prompt_type: 'custom',
+              instruction: topic.instruction,
+              model_hint: topic.hint,
+              sort_order: 0,
+            },
+          });
+          setMode('write');
+        })
+        .catch(error =>
+          setMessage(
+            error instanceof Error ? error.message : 'Chưa mở được đề viết.',
+          ),
+        );
+    }
+  }, [loading, web?.search, open]);
   const submit = async () => {
     if (
       composing ||

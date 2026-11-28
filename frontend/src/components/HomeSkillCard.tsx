@@ -1,14 +1,24 @@
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { Image, Pressable, StyleSheet, Text, View } from 'react-native';
 import { useWebLayout } from '../hooks/useWebLayout';
 import { colors, radius, shadowMd, spacing, typography } from '../theme/theme';
 import { HomeFeatureIcon } from './HomeFeatureIcon';
-import { MascotPose, NihongoMascot } from './NihongoMascot';
+
+const skillHeads = {
+  listening: require('../assets/mascot/momo-skill-listening-head-v1.png'),
+  speaking: require('../assets/mascot/momo-skill-speaking-head-v1.png'),
+  reading: require('../assets/mascot/momo-skill-reading-head-v1.png'),
+  writing: require('../assets/mascot/momo-skill-writing-head-v1.png'),
+  pronunciation: require('../assets/mascot/momo-skill-pronunciation-head-v1.png'),
+  jlpt: require('../assets/mascot/momo-skill-jlpt-head-v1.png'),
+  wave: require('../assets/mascot/momo-head.png'),
+};
 
 interface Props {
   title: string;
   description: string;
   action: string;
-  pose: MascotPose;
+  pose: keyof typeof skillHeads;
+  accessibilityLabel?: string;
   onPress: () => void;
 }
 
@@ -18,12 +28,15 @@ export function HomeSkillCard({
   action,
   pose,
   onPress,
+  accessibilityLabel,
 }: Props) {
   const { desktop } = useWebLayout();
   return (
     <Pressable
       accessibilityRole="button"
-      accessibilityLabel={`${title}. ${description}. ${action}`}
+      accessibilityLabel={
+        accessibilityLabel ?? `${title}. ${description}. ${action}`
+      }
       onPress={onPress}
       testID={`home-skill-${pose}`}
       style={({ pressed }) => [
@@ -39,7 +52,14 @@ export function HomeSkillCard({
         accessibilityElementsHidden
         importantForAccessibility="no-hide-descendants"
       >
-        <NihongoMascot pose={pose} size={96} decorative />
+        <View style={styles.portrait} testID={`skill-momo-head-${pose}`}>
+          <Image
+            source={skillHeads[pose]}
+            resizeMode="contain"
+            accessible={false}
+            style={styles.head}
+          />
+        </View>
       </View>
       <View style={styles.content}>
         <Text style={styles.title}>{title}</Text>
@@ -70,6 +90,8 @@ const styles = StyleSheet.create({
   desktopCard: { flexDirection: 'row', alignItems: 'center', minHeight: 144 },
   content: { flex: 1, minWidth: 0, gap: spacing.md },
   illustration: { alignItems: 'center' },
+  portrait: { width: 96, height: 96, position: 'relative' },
+  head: { width: '100%', height: '100%' },
   pressed: { backgroundColor: colors.surfaceTint },
   copy: { flex: 1, gap: spacing.xs },
   title: { ...typography.title, color: colors.dark },

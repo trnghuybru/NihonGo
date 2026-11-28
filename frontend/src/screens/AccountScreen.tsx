@@ -28,6 +28,7 @@ import { colors, radius, spacing, typography } from '../theme/theme';
 import { AuthIcon } from '../components/AuthIcon';
 import { useWebLayout } from '../hooks/useWebLayout';
 import { LearningSummary } from '../components/LearningSummary';
+import { PersonalLearningHub } from '../components/PersonalLearningHub';
 import { LearningOptions, LearningProfile } from '../services/learningService';
 
 export function AccountScreen({
@@ -41,6 +42,7 @@ export function AccountScreen({
   learningOptions: LearningOptions;
   onEditLearning: () => void;
 }) {
+  const [settingsOpen, setSettingsOpen] = useState(false);
   const { desktop } = useWebLayout();
   const web = useWebNavigation();
   const [pendingAction, setPendingAction] = useState<
@@ -131,7 +133,7 @@ export function AccountScreen({
   return (
     <AuthShell
       title="Cá nhân"
-      subtitle="Quản lý thông tin và thiết lập học tập của bạn."
+      subtitle="Nhìn lại kiến thức đã học và tiếp tục theo từng bước."
       icon="user"
       card={false}
       wide={desktop}
@@ -143,10 +145,21 @@ export function AccountScreen({
           {avatar}
           <View>
             <Text accessibilityRole="header" style={styles.profileTitle}>Cá nhân</Text>
-            <Text style={styles.description}>Quản lý thông tin và thiết lập học tập của bạn.</Text>
+            <Text style={styles.description}>Nhìn lại kiến thức đã học và tiếp tục theo từng bước.</Text>
           </View>
         </View>
       ) : null}
+      <View style={styles.switcher} accessibilityRole="tablist">
+        {['Học tập', 'Tài khoản'].map((label, index) => {
+          const selected = settingsOpen === Boolean(index);
+          return <Pressable key={label} accessibilityRole="tab" accessibilityLabel={label}
+            accessibilityState={{ selected }} onPress={() => setSettingsOpen(Boolean(index))}
+            style={[styles.switchTab, selected && styles.selectedTab]}>
+            <Text style={[styles.tabText, selected && styles.selectedText]}>{label}</Text>
+          </Pressable>;
+        })}
+      </View>
+      {!settingsOpen ? <PersonalLearningHub key={user.id} accountId={user.id} /> : (
       <View
         style={[styles.columns, desktop && styles.desktopColumns]}
         testID="account-layout"
@@ -393,11 +406,17 @@ export function AccountScreen({
           </AuthCard>
         </View>
       </View>
+      )}
     </AuthShell>
   );
 }
 
 const styles = StyleSheet.create({
+  switcher: { flexDirection: 'row', alignSelf: 'flex-start', padding: 4, borderRadius: 24, backgroundColor: colors.track },
+  switchTab: { minHeight: 44, paddingHorizontal: 24, justifyContent: 'center', borderRadius: 22 },
+  selectedTab: { backgroundColor: colors.dark },
+  tabText: { ...typography.label, color: colors.body },
+  selectedText: { color: colors.surface },
   columns: { gap: spacing.xl },
   desktopColumns: {
     flexDirection: 'row',

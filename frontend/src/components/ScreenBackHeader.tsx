@@ -13,10 +13,12 @@ export function ScreenBackHeader({
   title,
   backLabel,
   onBack,
+  disabled = false,
 }: {
   title: string;
   backLabel: string;
   onBack: () => void;
+  disabled?: boolean;
 }) {
   const setHeader = useContext(ScreenBackHeaderContext);
   const header = useMemo(
@@ -26,8 +28,10 @@ export function ScreenBackHeader({
           accessibilityRole="button"
           accessibilityLabel={backLabel}
           onPress={onBack}
+          disabled={disabled}
+          accessibilityState={{ disabled }}
           hitSlop={8}
-          style={styles.back}
+          style={[styles.back, disabled && styles.disabled]}
         >
           <ChevronLeftIcon size={16} color={colors.dark} />
         </Pressable>
@@ -36,7 +40,7 @@ export function ScreenBackHeader({
         </Text>
       </View>
     ),
-    [backLabel, onBack, title],
+    [backLabel, onBack, title, disabled],
   );
   useLayoutEffect(() => {
     if (!setHeader) return;
@@ -57,4 +61,5 @@ const styles = StyleSheet.create({
     backgroundColor: colors.surface,
   },
   title: { ...typography.heading, color: colors.dark, flexShrink: 1 },
+  disabled: { opacity: 0.5 },
 });

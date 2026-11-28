@@ -67,3 +67,6 @@ Thumbs.db
 *.swp
 *.swo
 .vscode/
+
+# Local pronunciation checkpoint
+backend/models/pronunciation/

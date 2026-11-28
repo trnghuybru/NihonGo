@@ -8,6 +8,9 @@ Prompt sản xuất: mascot tanuki chibi Nhật Bản thân thiện, một tay v
 
 ## Homepage và thương hiệu
 
+- `momo-skill-jlpt-head-v1.png`: Momo cầm phiếu trắc nghiệm và bút, dùng cho Luyện thi JLPT.
+- `momo-skill-pronunciation-head-v1.png`: Momo đọc vào micro cầm tay, dùng cho Luyện phát âm. Hai icon tạo bằng `image_gen` từ mẫu đầu Momo viết/nói hiện có, nền alpha trong suốt, không chữ, hiển thị 48×48 trong Luyện tập với `contain`, cùng kích thước mascot của thẻ kỹ năng trên web.
+
 - `momo-listening.png`, `momo-speaking.png`, `momo-reading.png`, `momo-writing.png`: bộ tư thế đã có trong project, dùng cho bốn kỹ năng qua prop `pose` của `NihongoMascot`.
 - `momo-head.png`: đầu Momo nền alpha, 384×384. `BrandLogo` ghép hình với chữ native **NihonGO**, dùng Readex Pro và các token `typography.brand`, `colors.dark`, `colors.primary` theo `design.md`. Bố cục đầu Momo cạnh chữ giữ theo mẫu người dùng; artwork icon launcher là asset riêng.
 - `nihongo-app-icon.png`: icon gốc 1024×1024, nền kem, không alpha; dùng để xuất các kích thước icon iOS, Android và LaunchBrand. Hai asset thương hiệu mới được tạo bằng công cụ `image_gen` tích hợp; không dùng CLI/API fallback. Prompt đầy đủ ở [GENERATION.md](GENERATION.md).

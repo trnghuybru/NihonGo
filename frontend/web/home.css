@@ -117,11 +117,7 @@
   padding-block: 7px;
 }
 
-#nihongo-home [data-testid='home-review-card'] > [role='button']:not([aria-disabled='true']) {
-  background-color: #ff9437;
-}
-
-#nihongo-home [data-testid='home-quiz-card'] > [role='button'] {
+#nihongo-home :is([data-testid='home-review-card'], [data-testid='home-quiz-card']) > [role='button'] {
   background-color: #fff0df;
   border-color: #fff0df;
 }
@@ -171,13 +167,11 @@
 #nihongo-home [data-testid='home-promotion-panel'] > :first-child > :last-child > :first-child {
   color: #9f400d;
   font-size: 10px;
-  font-weight: 700;
 }
 
 #nihongo-home [data-testid='home-promotion-panel'] > :first-child > :last-child > :nth-child(2) {
   color: var(--home-ink);
   font-size: 15px;
-  font-weight: 700;
 }
 
 #nihongo-home [data-testid='home-promotion-panel'] > :first-child > :last-child > :last-child {
@@ -196,7 +190,6 @@
 
 #nihongo-home [data-testid='home-promotion-panel'] > :last-child > div {
   color: white;
-  font-weight: 700;
   font-size: 12px;
 }
 
@@ -288,15 +281,7 @@
   }
 }
 
-/* Match the compact system typography used on the web login. */
-#nihongo-home {
-  --home-font: system-ui, "Segoe UI", sans-serif;
-}
-
-#nihongo-home :where(div, span, input, h1):not(:where([aria-label='NihonGO'], [aria-label='NihonGO'] *)) {
-  font-family: var(--home-font);
-}
-
+/* Font faces and weights come from the shared React Native typography tokens. */
 #nihongo-home div:not(:empty, :has(> *), [data-testid='study-streak-calendar'] *):not(:where([aria-label='NihonGO'] *)),
 #nihongo-home input {
   font-size: 13px;
@@ -313,7 +298,6 @@
 
 #nihongo-home #home-welcome :is(h1, [role='heading']) {
   font-size: 21px;
-  font-weight: 700;
 }
 
 #nihongo-home [data-testid='study-streak-calendar'] [role='button'] div:not(:empty, :has(> *)) {
@@ -323,7 +307,7 @@
 @media (min-width: 1100px) {
   #home-learning-layout:has([data-testid='home-quiz-card']) {
     display: grid;
-    grid-template-columns: minmax(0, 44fr) minmax(0, 56fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-template-rows: auto minmax(0, 1fr) auto;
     column-gap: clamp(16px, 1.65vw, 28px);
     row-gap: 12px;
@@ -380,37 +364,36 @@
 }
 
 @media (min-width: 768px) {
-  :is(#home-skills, #practice-skills) {
+  :is(#home-skills, #practice-skills, #practice-jlpt) {
     gap: 10px;
   }
 
-  :is(#home-skills, #practice-skills) > :first-child {
+  :is(#home-skills, #practice-skills, #practice-jlpt) > :first-child {
     align-items: center;
   }
 
-  :is(#home-skills, #practice-skills) :is(h1, [role='heading']) {
+  :is(#home-skills, #practice-skills, #practice-jlpt) :is(h1, [role='heading']) {
     border-left: 3px solid #ff9437;
     padding-left: 10px;
-    font-weight: 700;
     color: var(--home-ink);
   }
 
-  :is(#home-skills, #practice-skills) > :first-child > [role='button'] {
+  :is(#home-skills, #practice-skills, #practice-jlpt) > :first-child > [role='button'] {
     min-height: 34px;
     padding: 0 5px;
   }
 
-  :is(#home-skills, #practice-skills) > :last-child {
+  :is(#home-skills > :last-child, #practice-skills > [data-testid='skill-picker-grid'], #practice-jlpt > [data-testid='jlpt-entry-grid']) {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 10px;
   }
 
-  :is(#home-skills, #practice-skills) > :last-child > div {
+  :is(#home-skills > :last-child, #practice-skills > [data-testid='skill-picker-grid'], #practice-jlpt > [data-testid='jlpt-entry-grid']) > div {
     display: contents;
   }
 
-  :is(#nihongo-home, #nihongo-practice) :is(#home-skills, #practice-skills) [data-testid^='home-skill-'] {
+  :is(#nihongo-home, #nihongo-practice) :is(#home-skills, #practice-skills, #practice-jlpt) [data-testid^='home-skill-'] {
     flex-direction: row;
     align-items: center;
     position: relative;
@@ -420,28 +403,27 @@
     border-radius: 18px;
   }
 
-  :is(#home-skills, #practice-skills) [data-testid^='home-skill-'] > :first-child > div {
+  :is(#home-skills, #practice-skills, #practice-jlpt) [data-testid^='home-skill-'] > :first-child > div {
     /* Match the compact card despite the shared mascot's inline size. */
     width: 48px !important;
     height: 48px !important;
   }
 
-  :is(#home-skills, #practice-skills) [data-testid^='home-skill-'] > :last-child {
+  :is(#home-skills, #practice-skills, #practice-jlpt) [data-testid^='home-skill-'] > :last-child {
     position: static;
     gap: 3px;
   }
 
-  :is(#nihongo-home, #nihongo-practice) :is(#home-skills, #practice-skills) [data-testid^='home-skill-'] > :last-child > :first-child {
+  :is(#nihongo-home, #nihongo-practice) :is(#home-skills, #practice-skills, #practice-jlpt) [data-testid^='home-skill-'] > :last-child > :first-child {
     color: var(--home-ink);
     font-size: 14px;
-    font-weight: 700;
   }
 
-  :is(#nihongo-home, #nihongo-practice) :is(#home-skills, #practice-skills) [data-testid^='home-skill-'] > :last-child > :nth-child(2) > div {
+  :is(#nihongo-home, #nihongo-practice) :is(#home-skills, #practice-skills, #practice-jlpt) [data-testid^='home-skill-'] > :last-child > :nth-child(2) > div {
     font-size: 12px;
   }
 
-  :is(#home-skills, #practice-skills) [data-testid^='home-skill-'] > :last-child > :last-child {
+  :is(#home-skills, #practice-skills, #practice-jlpt) [data-testid^='home-skill-'] > :last-child > :last-child {
     position: absolute;
     top: 50%;
     right: 10px;
@@ -453,7 +435,7 @@
     border-radius: 50%;
   }
 
-  :is(#home-skills, #practice-skills) [data-testid^='home-skill-'] > :last-child > :last-child > div {
+  :is(#home-skills, #practice-skills, #practice-jlpt) [data-testid^='home-skill-'] > :last-child > :last-child > div {
     display: none;
   }
 }
@@ -472,7 +454,8 @@
   justify-content: center;
 }
 
-#practice-vocabulary :is(h1, [role='heading']) {
+:is(#practice-vocabulary, #practice-jlpt) > :is(h1, [role='heading']),
+#practice-skills > :first-child > :is(h1, [role='heading']) {
   border-left: 3px solid #ff9437;
   padding-left: 10px;
   color: var(--home-ink);
@@ -503,16 +486,17 @@
   background-color: #fff9f3;
 }
 
-@media (max-width: 767px) {
-  #practice-skills :is(h1, [role='heading']) {
-    border-left: 3px solid #ff9437;
-    padding-left: 10px;
-    color: var(--home-ink);
-  }
-}
-
 #practice-skills > :first-child {
   flex-direction: row;
+}
+
+#jlpt-question-card {
+  scroll-margin-top: 20px;
+}
+
+#jlpt-question-map {
+  position: sticky;
+  top: 16px;
 }
 
 #nihongo-lookup {
@@ -531,6 +515,11 @@
   font-size: 21px;
   line-height: 28px;
   color: var(--home-ink);
+}
+
+#nihongo-lookup [data-testid='handwriting-panel'] [role='heading'] {
+  font-size: 14px;
+  line-height: 20px;
 }
 
 #nihongo-lookup [data-testid='dictionary-search-bar'] {
@@ -712,4 +701,56 @@
 
 #nihongo-quick-study [data-testid='speaking-welcome-stage'] {
   background: linear-gradient(180deg, #fffdfa, #fff2e5);
+}
+
+/* Center the interactive preview without applying dashboard text-size overrides. */
+#nihongo-home [data-testid='home-review-card']:has([data-testid='home-flashcard-preview']) {
+  padding-inline: 23px;
+}
+#nihongo-home [data-testid='home-flashcard-preview'] [data-testid='home-preview-word'] {
+  font-size: 28px;
+  line-height: 38px;
+}
+
+#nihongo-home [data-testid='home-flashcard-preview'] [data-testid='home-preview-meaning'] {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* Each desktop column flows independently: no empty row between calendar and quiz. */
+#nihongo-home #home-learning-columns :is([data-testid='home-review-card'], [data-testid='home-quiz-card']) {
+  flex: none;
+  min-height: 0;
+  padding-block: 14px;
+}
+#nihongo-home #home-learning-columns [data-testid='home-review-card'] {
+  flex: 1;
+  padding-inline: 20px;
+}
+#nihongo-home [data-testid='home-review-study'] > [data-testid='home-flashcard-preview'] {
+  width: 100%;
+  flex-grow: 0;
+}
+#nihongo-home #home-learning-columns [data-testid='home-flashcard-mascot'] {
+  transform: scale(0.72);
+  transform-origin: bottom right;
+}
+
+#nihongo-home [data-testid='home-review-card']:has([data-testid='home-review-study']) {
+  padding-inline: 20px;
+}
+#nihongo-home [data-testid='home-review-study'] > div:last-child [role='button'] {
+  min-height: 42px;
+  background-color: #fff0df;
+  border-width: 0;
+}
+
+/* Match both home actions: soft filled pills without an outline. */
+#nihongo-home [data-testid='home-quiz-card'] > [role='button'] {
+  border-width: 0;
+}
+@media (min-width: 1100px) {
+  #nihongo-home [data-testid='home-review-study'] > div:last-child {
+    max-width: min(300px, calc(100% - 144px));
+  }
 }
