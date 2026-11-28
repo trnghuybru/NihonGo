@@ -138,12 +138,53 @@ async function open(learner = `learner-${account}`, contentWidth = 1200) {
   );
 }
 
+test('image exams show source pages, grade choices, and do not offer unavailable text review', async () => {
+  const imageExam: Exam = JSON.parse(JSON.stringify(exam));
+  const first = imageExam.sections[0].questions[0];
+  first.content_format = 'image';
+  first.prompt = '';
+  first.options = ['1', '2'];
+  first.images = [
+    {
+      id: 'page1',
+      image_data_url: 'https://example.invalid/page.webp',
+      width_px: 1200,
+      height_px: 1680,
+    },
+  ];
+  imageExam.sections[1].questions[0].subquestion = 1;
+  jest.mocked(jlptService.exam).mockResolvedValue(imageExam);
+  jest.mocked(jlptService.grade).mockResolvedValue({
+    review_token: 'image-review-proof',
+    total: 2,
+    answered: 1,
+    correct: 1,
+    note: '',
+    sections: [],
+    results: {
+      'v-1': { selected_index: 1, correct_index: 1, status: 'correct' },
+      'l-1': { selected_index: null, correct_index: 2, status: 'unanswered' },
+    },
+  });
+  await open(`image-${account}`);
+  expect(JSON.stringify(tree.toJSON())).toContain(
+    'https://example.invalid/page.webp',
+  );
+  expect(button('Nghe hiểu, 問題1, 1(1)番, chưa trả lời')).toBeDefined();
+  await act(async () => button('Đáp án 2').props.onPress());
+  await act(async () => button('Nộp bài').props.onPress());
+  await act(async () => button('Xác nhận nộp bài').props.onPress());
+  expect(jlptService.grade).toHaveBeenCalledWith(exam.id, 1, { 'v-1': 1 });
+  expect(jlptService.review).not.toHaveBeenCalled();
+  expect(JSON.stringify(tree.toJSON())).not.toContain('Chạm từ để tra nghĩa');
+  expect(button('Đáp án 2').props.disabled).toBe(true);
+  expect(jlptService.explain).not.toHaveBeenCalled();
+});
+
 test('source sessions show original documents with page navigation and never fabricate a graded exam', async () => {
-  jest
-    .mocked(jlptService.list)
-    .mockResolvedValue({
-      items: [{ ...exam, source_only: true, total: 0, sections: [] }],
-    });
+  jest.mocked(jlptService.list).mockResolvedValue({
+    items: [{ ...exam, source_only: true, total: 0, sections: [] }],
+  });
   jest.mocked(jlptService.source).mockResolvedValue({
     id: exam.id,
     title: exam.title,

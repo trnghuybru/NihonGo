@@ -11,8 +11,7 @@ from .database import import_payload
 def main():
     with app.app_context():
         upgrade()
-        source = Path(__file__).parent / 'import_data' / 'n3-2010-2024.json'
-        if source.exists():
+        for source in sorted((Path(__file__).parent / 'import_data').glob('*.json')):
             payload = json.loads(source.read_text())
             from vocabulary.audio import _tts_client
             connection = _tts_client()

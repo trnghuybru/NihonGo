@@ -43,6 +43,9 @@ def review_question(exam, user_id, question_id, payload):
 
 
 def vocabulary(question):
+    if question.get('content_format') == 'image':
+        raise ApiError('Câu hỏi đang dùng ảnh đề gốc, chưa có chữ đã đối chiếu để tra từ.',
+                       422, 'jlpt_image_question')
     from shadowing.morphology import analyze
     rows = [{'id': 'prompt', 'text': question['prompt']}]
     paragraphs = [p for p in (question.get('passage') or '').split('\n\n') if p.strip()]
@@ -98,6 +101,9 @@ def validate_explanation(data, question, option_index):
 def explain(exam, question, option_index):
     if type(option_index) is not int or not 0 <= option_index < len(question['options']):
         raise ApiError('Chọn một đáp án hợp lệ.')
+    if question.get('content_format') == 'image':
+        raise ApiError('Câu hỏi đang dùng ảnh đề gốc, chưa có chữ đã đối chiếu để Momo giải thích.',
+                       422, 'jlpt_image_question')
     if question['id'].startswith('l-'):
         raise ApiError('Chưa có âm thanh hoặc lời thoại để Momo giải thích phần nghe.', 422, 'jlpt_audio_missing')
     cache_key = (fingerprint(exam), question['id'], option_index)
