@@ -57,7 +57,7 @@ def owned_job(user_id, job_id):
 
 def submit(user_id, url):
     identifier = video_id_from_url(url)
-    # Serialize submissions from one account so concurrent requests cannot bypass quotas.
+    # Serialize submissions so one account cannot start concurrent processing jobs.
     db.session.execute(select(User.id).where(User.id == user_id).with_for_update()).first()
     now = int(time.time())
     existing = db.session.get(ExampleVideo, identifier)
@@ -66,17 +66,10 @@ def submit(user_id, url):
     job = db.session.scalar(select(ShadowingJob).where(ShadowingJob.video_id == identifier))
     subscribed = job and db.session.get(ShadowingRequest, (user_id, job.id))
     if not ready and not (subscribed and job.status in ACTIVE):
-        from auth.beta import enabled as beta_enabled
-        from beta_daily.service import daily_mode, reserve_video
-        if beta_enabled() and daily_mode():
-            reserve_video(user_id, identifier)
         busy = db.session.scalar(select(func.count()).select_from(ShadowingRequest).join(ShadowingJob)
             .where(ShadowingRequest.user_id == user_id, ShadowingJob.status.in_(ACTIVE)))
         if busy:
             raise ApiError('Bạn đang có một video được chuẩn bị. Hãy chờ video đó hoàn tất.', 409, 'shadowing_busy')
-        if job is None or job.status == 'failed':
-            from auth.security import limit
-            limit('shadowing-submit', user_id, 5, 86400)
     insert = pg_insert if db.engine.dialect.name == 'postgresql' else sqlite_insert
     db.session.execute(insert(ShadowingJob).values(id=str(uuid.uuid4()), video_id=identifier,
         status='ready' if ready else 'queued', title=existing.title if ready else '', attempts=0,

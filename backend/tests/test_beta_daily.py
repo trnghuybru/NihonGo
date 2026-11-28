@@ -74,26 +74,27 @@ class DailyQuotaTests(unittest.TestCase):
         self.assertEqual(error.exception.code, "daily_live_limit")
         db.session.rollback()
 
-    def test_new_shadowing_video_uses_daily_quota(self):
-        environment = {"BETA_MODE": "true", "BETA_QUOTA_MODE": "daily",
-                       "BETA_INVITE_EMAILS": "alice@example.com,bob@example.com"}
-        with patch.dict(os.environ, environment), patch("shadowing.queue.enqueue", return_value=False):
-            one = self.client.post("/api/listening/shadowing/jobs",
-                json={"url": "https://youtu.be/abcdefghijk"},
-                headers={"Authorization": "Bearer alice"})
-            self.assertEqual(one.status_code, 202, one.json)
-            again = self.client.post("/api/listening/shadowing/jobs",
-                json={"url": "https://youtu.be/abcdefghijk"},
-                headers={"Authorization": "Bearer alice"})
-            self.assertEqual(again.status_code, 202, again.json)
-            reserve_video("alice", "second00001")
-            reserve_video("alice", "third000001")
-            db.session.commit()
-            other = self.client.post("/api/listening/shadowing/jobs",
-                json={"url": "https://youtu.be/another0001"},
-                headers={"Authorization": "Bearer alice"})
-            self.assertEqual(other.status_code, 429, other.json)
-            self.assertEqual(other.json["code"], "daily_video_limit")
+    def test_shadowing_uploads_have_no_daily_count_limit_or_translation_charge(self):
+        # Even an exhausted translation allowance must not prevent video imports.
+        for video_id in ('first000001', 'second00001', 'third000001'):
+            reserve_video('alice', video_id)
+        db.session.commit()
+        for mode in ('daily', 'usd'):
+            environment = {'BETA_MODE': 'true', 'BETA_QUOTA_MODE': mode,
+                           'BETA_INVITE_EMAILS': 'alice@example.com,bob@example.com'}
+            with patch.dict(os.environ, environment), patch('shadowing.queue.enqueue', return_value=False):
+                for index in range(7):
+                    with self.subTest(mode=mode, upload=index):
+                        video_id = f'{mode[0]}video{index:05d}'
+                        response = self.client.post('/api/listening/shadowing/jobs',
+                            json={'url': 'https://youtu.be/' + video_id},
+                            headers={'Authorization': 'Bearer alice'})
+                        self.assertEqual(response.status_code, 202, response.json)
+                        # End this job before submitting the next one.
+                        job = db.session.get(ShadowingJob, response.json['job']['id'])
+                        job.status = 'failed'
+                        db.session.commit()
+                self.assertEqual(status('alice')['video_remaining'], 0)
 
     def test_subtitle_translation_shares_the_same_video_allowance(self):
         for index, video_id in enumerate(("translate01", "translate02")):
