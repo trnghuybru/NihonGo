@@ -32,6 +32,16 @@ class PdfExamImportTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             validate_mapping(bad)
 
+    def test_older_n2_mapping_accepts_72_questions_without_dropping_the_last_question(self):
+        manifest = json.loads((ROOT / 'pdf_sources/n2-2022-2024.json').read_text())
+        older = copy.deepcopy(manifest['exams'][0])
+        older['language_answer_keys'][10] += '1'
+        older['language_pages']['72'] = older['language_pages']['71']
+        self.assertEqual(len(validate_mapping(older)), 72)
+        del older['language_pages']['72']
+        with self.assertRaises(ValueError):
+            validate_mapping(older)
+
     def test_five_exams_import_idempotently_and_grade_505_original_questions(self):
         payload = json.loads((ROOT / 'import_data/n2-2022-2024.json').read_text())
         manifest = json.loads((ROOT / 'pdf_sources/n2-2022-2024.json').read_text())
@@ -108,3 +118,51 @@ class PdfExamImportTests(unittest.TestCase):
                 explain({}, question, 1)
             self.assertEqual(error.exception.code, 'jlpt_image_question')
             ai.assert_not_called()
+
+    def test_additional_five_exams_keep_507_source_questions_and_shared_readings(self):
+        payload = json.loads((ROOT / 'import_data/n2-more-2020-2025.json').read_text())
+        manifest = json.loads((ROOT / 'pdf_sources/n2-more-2020-2025.json').read_text())
+        assets = {a['id'] for a in payload['assets']}
+        total = 0
+        for exam, source in zip(payload['normalized'], manifest['exams']):
+            language, listening = [s['questions'] for s in exam['sections']]
+            key = validate_mapping(source)
+            self.assertEqual(len(language), len(key))
+            self.assertEqual(len(listening), 30)
+            self.assertEqual([q['number'] for q in language], list(range(1, len(key) + 1)))
+            self.assertEqual([q['answer_index'] for q in language], [int(n) - 1 for n in key])
+            self.assertEqual([q['answer_index'] for q in listening],
+                             [int(n) - 1 for n in ''.join(source['listening_answer_keys'])])
+            transcript = json.loads((ROOT / 'text_sources/n2-more-2020-2025' / f"{exam['id']}.json").read_text())
+            for question, star in zip(language[42:47], transcript['star_positions_visually_checked']):
+                slots = re.findall('＿＿|★', question['prompt'])
+                self.assertEqual(len(slots), 4)
+                self.assertEqual(slots.index('★') + 1, star)
+            long_reading = [q for q in language if q['group'] == 13]
+            self.assertEqual(len(long_reading), 3)
+            self.assertEqual(len({q['passage'] for q in long_reading}), 1)
+            self.assertGreater(len(long_reading[0]['passage']), 500)
+            information = [q for q in language if q['group'] == 14]
+            self.assertEqual(len(information), 2)
+            self.assertEqual(information[0]['images'][0]['id'], information[1]['images'][0]['id'])
+            questions = language + listening
+            for question in questions:
+                self.assertNotEqual(question.get('content_format'), 'image')
+                for image in question['images']:
+                    self.assertIn(image['image_id'], assets)
+                self.assertNotIn('\\u3000', question['prompt'])
+            answers = {q['id']: q['answer_index'] for q in questions}
+            self.assertEqual(grade(exam, {'version': 1, 'answers': answers})['correct'], len(questions))
+            self.assertIsNone(exam['audio_url'])
+            total += len(questions)
+        self.assertEqual(total, 507)
+        app = Flask(__name__)
+        app.config.update(SQLALCHEMY_DATABASE_URI='sqlite://', TESTING=True)
+        db.init_app(app)
+        with app.app_context():
+            db.create_all()
+            import_payload(payload)
+            import_payload(payload)
+            self.assertEqual(db.session.query(JlptExamRecord).count(), 5)
+            db.session.remove()
+            db.drop_all()

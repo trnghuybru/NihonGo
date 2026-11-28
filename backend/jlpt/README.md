@@ -187,3 +187,25 @@ python -m jlpt.prepare_text_import --source /tmp/n2-image-package.json \
   --text-dir jlpt/text_sources --asset-dir /tmp/n2-image-package.assets \
   --output /tmp/n2-text-package.json
 ```
+
+### Thêm năm kỳ N2 2020–2025
+
+`import_data/n2-more-2020-2025.json` bổ sung 7/2025, 7/2022, 12/2021,
+7/2021 và 12/2020, tổng 507 câu. Hai kỳ 7/2021 và 12/2020 có 72 câu
+phần chữ/đọc; ba kỳ còn lại có 71. Mỗi kỳ giữ đủ 30 câu nghe, audio vẫn null.
+Bộ chuẩn bị lấy ranh giới 問題 theo từng khối đáp án của nguồn thay vì ép
+mọi kỳ vào cùng cấu trúc 71 câu. Bài đọc chung được dùng lại nguyên văn cho
+từng câu liên quan để giao diện hiển thị tất cả câu của bài trên cùng màn hình.
+
+Manifest nằm ở `pdf_sources/n2-more-2020-2025.json`; bản chữ, bố cục hình
+và chỉnh sửa đối chiếu nguồn nằm ở `text_sources/n2-more-2020-2025/`.
+Google Gemini được người dùng cho phép xử lý riêng năm đề bổ sung này.
+Các lượt kiểm tra AI chỉ là gợi ý: không tự áp dụng những sửa đổi làm thay đổi
+phương án nhiễu có chủ ý. Với 12/2021, vị trí ★ ở câu 43/47 được phục hồi từ
+phần giải có đánh dấu ★ trong PDF đáp án, vì bản dựng lại câu hỏi đặt sai vị trí;
+khóa đáp án nguồn giữ nguyên. Các lỗi chữ có sẵn trong PDF vẫn có thể tồn tại.
+
+Gói có 216 ảnh R2: 211 ảnh trang nguồn và 5 hình cắt đã kiểm tra, gồm bảng
+câu 71 (7/2022), tài liệu chung và bảng câu 70 (12/2021), sơ đồ ghế (12/2021)
+và phiếu đặt vé (7/2021). Tài liệu chung 12/2021 được cắt khỏi phần đáp án
+của câu trước trên cùng trang để không lặp nội dung câu hỏi. Không xóa ảnh cũ.

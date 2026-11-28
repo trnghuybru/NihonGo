@@ -122,3 +122,33 @@ test('groups the real five N2 exams by shared cloze, medium, long and informatio
     expect(units.flatMap(unit => unit.entries)).toHaveLength(101);
   }
 });
+
+test('groups the additional N2 exams using each original reading instead of fixed question numbers', () => {
+  const payload = JSON.parse(
+    fs.readFileSync(
+      path.resolve(
+        __dirname,
+        '../../backend/jlpt/import_data/n2-more-2020-2025.json',
+      ),
+      'utf8',
+    ),
+  );
+  for (const exam of payload.normalized as Exam[]) {
+    const units = groupExamEntries(entries(exam));
+    const language = exam.sections[0].questions;
+    const longReading = language.filter(q => q.group === 13);
+    const longUnit = units.find(u =>
+      u.entries.some(e => e.question.id === longReading[0].id),
+    )!;
+    expect(longUnit.entries.map(e => e.question.id)).toEqual(
+      longReading.map(q => q.id),
+    );
+    const info = language.filter(q => q.group === 14);
+    expect(
+      units
+        .find(u => u.entries.some(e => e.question.id === info[0].id))!
+        .entries.map(e => e.question.id),
+    ).toEqual(info.map(q => q.id));
+    expect(units.flatMap(u => u.entries)).toHaveLength(language.length + 30);
+  }
+});

@@ -1,0 +1,1796 @@
+{
+  "level": "N2",
+  "source_folder_url": "https://drive.google.com/drive/folders/1QccZHkWpA6kjK0j5G__ievaakf6zCkUD",
+  "format": "original-page-images",
+  "notes": "Original PDF numbering and answer keys checked against rendered source pages; listening audio intentionally empty.",
+  "exams": [
+    {
+      "id": "2025-07",
+      "year": 2025,
+      "month": 7,
+      "files": [
+        {
+          "kind": "answer",
+          "filename": "Đáp án tham khảo N2 T7-2025.pdf",
+          "local_filename": "answers.pdf",
+          "drive_id": "1Z6Tce4hsDgmsSBsIbW1oLA_qujowSQuC",
+          "source_url": "https://drive.google.com/file/d/1Z6Tce4hsDgmsSBsIbW1oLA_qujowSQuC/view",
+          "sha256": "c2eed801bd9fe45af56214d42f4214bfc4cfb67a53fcacc51a1392da37497960",
+          "page_count": 6
+        },
+        {
+          "kind": "exam",
+          "filename": "N2-T7-2025 完成版 - Mark.pdf",
+          "local_filename": "exam.pdf",
+          "drive_id": "1lj3JPtcdViCA9NdT5HJHpsxg6xFoXHNH",
+          "source_url": "https://drive.google.com/file/d/1lj3JPtcdViCA9NdT5HJHpsxg6xFoXHNH/view",
+          "sha256": "ca42bf1471035d5058db877513d70bab43da3cc47ab86b051ae682011d5d5555",
+          "page_count": 35
+        },
+        {
+          "kind": "listening_script",
+          "filename": "Script Nghe N2 T7-2025.pdf",
+          "local_filename": "listening-script.pdf",
+          "drive_id": "1XfXW_BABFMq4LosEEaK1_Or4bccy3Ev7",
+          "source_url": "https://drive.google.com/file/d/1XfXW_BABFMq4LosEEaK1_Or4bccy3Ev7/view",
+          "sha256": "f6ac752db4532f2ce2d56e8eee5f38edcd5f1781f6626edfa4ed9b5f7199ed31",
+          "page_count": 12
+        }
+      ],
+      "language_answer_keys": [
+        "42313",
+        "41324",
+        "314",
+        "3241142",
+        "24133",
+        "21243",
+        "231432314312",
+        "34212",
+        "2341",
+        "14344",
+        "13232221",
+        "23",
+        "143",
+        "34"
+      ],
+      "listening_answer_keys": [
+        "23332",
+        "413124",
+        "43114",
+        "23112231232",
+        "312"
+      ],
+      "answer_review": "Answer digits manually compared with rendered answer PDFs/tables; source key retained without solving.",
+      "language_pages": {
+        "1": [
+          1
+        ],
+        "2": [
+          1
+        ],
+        "3": [
+          1
+        ],
+        "4": [
+          1
+        ],
+        "5": [
+          1
+        ],
+        "6": [
+          2
+        ],
+        "7": [
+          2
+        ],
+        "8": [
+          2
+        ],
+        "9": [
+          2
+        ],
+        "10": [
+          2
+        ],
+        "11": [
+          3
+        ],
+        "12": [
+          3
+        ],
+        "13": [
+          3
+        ],
+        "14": [
+          4
+        ],
+        "15": [
+          4
+        ],
+        "16": [
+          4
+        ],
+        "17": [
+          4
+        ],
+        "18": [
+          4
+        ],
+        "19": [
+          4
+        ],
+        "20": [
+          4
+        ],
+        "21": [
+          5
+        ],
+        "22": [
+          5
+        ],
+        "23": [
+          5
+        ],
+        "24": [
+          5
+        ],
+        "25": [
+          5
+        ],
+        "26": [
+          6
+        ],
+        "27": [
+          6
+        ],
+        "28": [
+          6
+        ],
+        "29": [
+          6
+        ],
+        "30": [
+          6
+        ],
+        "31": [
+          8
+        ],
+        "32": [
+          8
+        ],
+        "33": [
+          8
+        ],
+        "34": [
+          8
+        ],
+        "35": [
+          8
+        ],
+        "36": [
+          8
+        ],
+        "37": [
+          8
+        ],
+        "38": [
+          9
+        ],
+        "39": [
+          9
+        ],
+        "40": [
+          9
+        ],
+        "41": [
+          9
+        ],
+        "42": [
+          9
+        ],
+        "43": [
+          10
+        ],
+        "44": [
+          10
+        ],
+        "45": [
+          10
+        ],
+        "46": [
+          10
+        ],
+        "47": [
+          10
+        ],
+        "48": [
+          11,
+          12
+        ],
+        "49": [
+          11,
+          12
+        ],
+        "50": [
+          11,
+          12
+        ],
+        "51": [
+          11,
+          12
+        ],
+        "52": [
+          13
+        ],
+        "53": [
+          14
+        ],
+        "54": [
+          15
+        ],
+        "55": [
+          16
+        ],
+        "56": [
+          17
+        ],
+        "57": [
+          18,
+          19
+        ],
+        "58": [
+          18,
+          19
+        ],
+        "59": [
+          20,
+          21
+        ],
+        "60": [
+          20,
+          21
+        ],
+        "61": [
+          22,
+          23
+        ],
+        "62": [
+          22,
+          23
+        ],
+        "63": [
+          24,
+          25
+        ],
+        "64": [
+          24,
+          25
+        ],
+        "65": [
+          26,
+          27
+        ],
+        "66": [
+          26,
+          27
+        ],
+        "67": [
+          28,
+          29
+        ],
+        "68": [
+          28,
+          29
+        ],
+        "69": [
+          28,
+          29
+        ],
+        "70": [
+          30,
+          31
+        ],
+        "71": [
+          30,
+          31
+        ]
+      },
+      "listening_pages": {
+        "1": [
+          [
+            32
+          ],
+          [
+            32
+          ],
+          [
+            32
+          ],
+          [
+            32
+          ],
+          [
+            32
+          ]
+        ],
+        "2": [
+          [
+            33
+          ],
+          [
+            33
+          ],
+          [
+            33
+          ],
+          [
+            33
+          ],
+          [
+            33
+          ],
+          [
+            33
+          ]
+        ],
+        "5": [
+          [],
+          [
+            35
+          ],
+          [
+            35
+          ]
+        ],
+        "3": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ],
+        "4": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      "duration_seconds": [
+        6300,
+        3000
+      ],
+      "timing_source_url": "https://drive.google.com/file/d/1lj3JPtcdViCA9NdT5HJHpsxg6xFoXHNH/view"
+    },
+    {
+      "id": "2022-07",
+      "year": 2022,
+      "month": 7,
+      "files": [
+        {
+          "kind": "answer",
+          "filename": "Đáp án N2 T7-2022.pdf",
+          "local_filename": "answers.pdf",
+          "drive_id": "1_XzZmedfSjhN_B2148HoMNsq59pan56B",
+          "source_url": "https://drive.google.com/file/d/1_XzZmedfSjhN_B2148HoMNsq59pan56B/view",
+          "sha256": "b8201e6ee169312376fbd4cd7196a9dd7b0141ea10b13533855f0b188a1e3231",
+          "page_count": 1
+        },
+        {
+          "kind": "exam",
+          "filename": "N2 T7-2022 Final Version.pdf",
+          "local_filename": "exam.pdf",
+          "drive_id": "1vs9vl_tzduiZm3aOPNgWAUv-D9GIfMC9",
+          "source_url": "https://drive.google.com/file/d/1vs9vl_tzduiZm3aOPNgWAUv-D9GIfMC9/view",
+          "sha256": "f91914e0c7770dee0ce43b3073a8ce7b796f1165b83334fdbbed893451609c63",
+          "page_count": 22
+        },
+        {
+          "kind": "listening_script",
+          "filename": "Script Nghe N2 T7-2022　Yuuki Bui 220711.pdf",
+          "local_filename": "listening-script.pdf",
+          "drive_id": "1X0yTUVh3-l2nI44KpW1oajFm0RFySxS2",
+          "source_url": "https://drive.google.com/file/d/1X0yTUVh3-l2nI44KpW1oajFm0RFySxS2/view",
+          "sha256": "6412479bb486430014b8f29fa8197489f37b4b531b3559497cf318b861767b70",
+          "page_count": 12
+        }
+      ],
+      "language_answer_keys": [
+        "42143",
+        "34214",
+        "243",
+        "1241332",
+        "13324",
+        "14231",
+        "234341432411",
+        "14324",
+        "2432",
+        "41231",
+        "24231314",
+        "34",
+        "431",
+        "32"
+      ],
+      "listening_answer_keys": [
+        "41323",
+        "143213",
+        "42241",
+        "32231132213",
+        "224"
+      ],
+      "answer_review": "Answer digits manually compared with rendered answer PDFs/tables; source key retained without solving.",
+      "language_pages": {
+        "1": [
+          1
+        ],
+        "2": [
+          1
+        ],
+        "3": [
+          1
+        ],
+        "4": [
+          1
+        ],
+        "5": [
+          1
+        ],
+        "6": [
+          1
+        ],
+        "7": [
+          1
+        ],
+        "8": [
+          1
+        ],
+        "9": [
+          1
+        ],
+        "10": [
+          1
+        ],
+        "11": [
+          1
+        ],
+        "12": [
+          1
+        ],
+        "13": [
+          1
+        ],
+        "14": [
+          2
+        ],
+        "15": [
+          2
+        ],
+        "16": [
+          2
+        ],
+        "17": [
+          2
+        ],
+        "18": [
+          2
+        ],
+        "19": [
+          2
+        ],
+        "20": [
+          2
+        ],
+        "21": [
+          2
+        ],
+        "22": [
+          2
+        ],
+        "23": [
+          2
+        ],
+        "24": [
+          2
+        ],
+        "25": [
+          2
+        ],
+        "26": [
+          2
+        ],
+        "27": [
+          2
+        ],
+        "28": [
+          3
+        ],
+        "29": [
+          3
+        ],
+        "30": [
+          3
+        ],
+        "31": [
+          3
+        ],
+        "32": [
+          3
+        ],
+        "33": [
+          3
+        ],
+        "34": [
+          3
+        ],
+        "35": [
+          3
+        ],
+        "36": [
+          3
+        ],
+        "37": [
+          3
+        ],
+        "38": [
+          4
+        ],
+        "39": [
+          4
+        ],
+        "40": [
+          4
+        ],
+        "41": [
+          4
+        ],
+        "42": [
+          4
+        ],
+        "43": [
+          4
+        ],
+        "44": [
+          4
+        ],
+        "45": [
+          4
+        ],
+        "46": [
+          4
+        ],
+        "47": [
+          4
+        ],
+        "48": [
+          5
+        ],
+        "49": [
+          5
+        ],
+        "50": [
+          5
+        ],
+        "51": [
+          5
+        ],
+        "52": [
+          6
+        ],
+        "53": [
+          6
+        ],
+        "54": [
+          7
+        ],
+        "55": [
+          7,
+          8
+        ],
+        "56": [
+          8
+        ],
+        "57": [
+          9,
+          10
+        ],
+        "58": [
+          9,
+          10
+        ],
+        "59": [
+          10,
+          11
+        ],
+        "60": [
+          10,
+          11
+        ],
+        "61": [
+          10,
+          11
+        ],
+        "62": [
+          11,
+          12
+        ],
+        "63": [
+          11,
+          12
+        ],
+        "64": [
+          11,
+          12
+        ],
+        "65": [
+          13,
+          14
+        ],
+        "66": [
+          13,
+          14
+        ],
+        "67": [
+          15,
+          16
+        ],
+        "68": [
+          15,
+          16
+        ],
+        "69": [
+          15,
+          16
+        ],
+        "70": [
+          17,
+          18
+        ],
+        "71": [
+          17,
+          18
+        ]
+      },
+      "listening_pages": {
+        "1": [
+          [
+            19
+          ],
+          [
+            19
+          ],
+          [
+            19
+          ],
+          [
+            19
+          ],
+          [
+            20
+          ]
+        ],
+        "2": [
+          [
+            20
+          ],
+          [
+            20
+          ],
+          [
+            20
+          ],
+          [
+            21
+          ],
+          [
+            21
+          ],
+          [
+            21
+          ]
+        ],
+        "5": [
+          [],
+          [
+            22
+          ],
+          [
+            22
+          ]
+        ],
+        "3": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ],
+        "4": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      "duration_seconds": [
+        6300,
+        3000
+      ],
+      "timing_source_url": "https://drive.google.com/file/d/1vs9vl_tzduiZm3aOPNgWAUv-D9GIfMC9/view"
+    },
+    {
+      "id": "2021-12",
+      "year": 2021,
+      "month": 12,
+      "files": [
+        {
+          "kind": "answer",
+          "filename": "Đáp án đề N2 T12-2021.pdf",
+          "local_filename": "answers.pdf",
+          "drive_id": "1sIqF1csb2Cj9fQQjrcFQKtorRq3ttkJF",
+          "source_url": "https://drive.google.com/file/d/1sIqF1csb2Cj9fQQjrcFQKtorRq3ttkJF/view",
+          "sha256": "c93ad1edf55756fd662d932f50e8aec042546518d89692671428aea4b2bc2715",
+          "page_count": 5
+        },
+        {
+          "kind": "exam",
+          "filename": "Đề N2 T12-2021 Mark.pdf",
+          "local_filename": "exam.pdf",
+          "drive_id": "13kbFdNPxMwIqJ0eXFvHgVtzHa6ZfC1KJ",
+          "source_url": "https://drive.google.com/file/d/13kbFdNPxMwIqJ0eXFvHgVtzHa6ZfC1KJ/view",
+          "sha256": "59b94624ad6bba3b77d2bbcb69af658407ae4287dd4683c1877930784485d9ca",
+          "page_count": 21
+        },
+        {
+          "kind": "listening_script",
+          "filename": "Script Nghe N2 T12-2021 Mark.pdf",
+          "local_filename": "listening-script.pdf",
+          "drive_id": "1JyIY3Cb2fNVmCOw9RY5lTkCDhISHoig0",
+          "source_url": "https://drive.google.com/file/d/1JyIY3Cb2fNVmCOw9RY5lTkCDhISHoig0/view",
+          "sha256": "1d0f4c02ea162ecda29303e2e82367eb1ff1ed30049be31583b5e6dfe5686ca8",
+          "page_count": 17
+        }
+      ],
+      "language_answer_keys": [
+        "12314",
+        "31442",
+        "213",
+        "3214431",
+        "24132",
+        "42321",
+        "123413343422",
+        "34122",
+        "4311",
+        "24243",
+        "13214132",
+        "22",
+        "313",
+        "42"
+      ],
+      "listening_answer_keys": [
+        "33224",
+        "432423",
+        "41234",
+        "32231221211",
+        "221"
+      ],
+      "answer_review": "Answer digits manually compared with rendered answer PDFs/tables; source key retained without solving.",
+      "language_pages": {
+        "1": [
+          2
+        ],
+        "2": [
+          2
+        ],
+        "3": [
+          2
+        ],
+        "4": [
+          2
+        ],
+        "5": [
+          2
+        ],
+        "6": [
+          2
+        ],
+        "7": [
+          2
+        ],
+        "8": [
+          2
+        ],
+        "9": [
+          2
+        ],
+        "10": [
+          2
+        ],
+        "11": [
+          2
+        ],
+        "12": [
+          3
+        ],
+        "13": [
+          3
+        ],
+        "14": [
+          3
+        ],
+        "15": [
+          3
+        ],
+        "16": [
+          3
+        ],
+        "17": [
+          3
+        ],
+        "18": [
+          3
+        ],
+        "19": [
+          3
+        ],
+        "20": [
+          3
+        ],
+        "21": [
+          3
+        ],
+        "22": [
+          3
+        ],
+        "23": [
+          3
+        ],
+        "24": [
+          3
+        ],
+        "25": [
+          4
+        ],
+        "26": [
+          4
+        ],
+        "27": [
+          4
+        ],
+        "28": [
+          4
+        ],
+        "29": [
+          4
+        ],
+        "30": [
+          4
+        ],
+        "31": [
+          4
+        ],
+        "32": [
+          4,
+          5
+        ],
+        "33": [
+          5
+        ],
+        "34": [
+          5
+        ],
+        "35": [
+          5
+        ],
+        "36": [
+          5
+        ],
+        "37": [
+          5
+        ],
+        "38": [
+          5
+        ],
+        "39": [
+          5
+        ],
+        "40": [
+          5
+        ],
+        "41": [
+          5,
+          6
+        ],
+        "42": [
+          6
+        ],
+        "43": [
+          6
+        ],
+        "44": [
+          6
+        ],
+        "45": [
+          6
+        ],
+        "46": [
+          6
+        ],
+        "47": [
+          6
+        ],
+        "48": [
+          7
+        ],
+        "49": [
+          7
+        ],
+        "50": [
+          7
+        ],
+        "51": [
+          7
+        ],
+        "52": [
+          7,
+          8
+        ],
+        "53": [
+          8
+        ],
+        "54": [
+          8,
+          9
+        ],
+        "55": [
+          9
+        ],
+        "56": [
+          9
+        ],
+        "57": [
+          10,
+          11
+        ],
+        "58": [
+          10,
+          11
+        ],
+        "59": [
+          10,
+          11
+        ],
+        "60": [
+          11
+        ],
+        "61": [
+          11
+        ],
+        "62": [
+          11,
+          12
+        ],
+        "63": [
+          11,
+          12
+        ],
+        "64": [
+          11,
+          12
+        ],
+        "65": [
+          12,
+          13,
+          14
+        ],
+        "66": [
+          12,
+          13,
+          14
+        ],
+        "67": [
+          14,
+          15
+        ],
+        "68": [
+          14,
+          15
+        ],
+        "69": [
+          14,
+          15
+        ],
+        "70": [
+          15,
+          16
+        ],
+        "71": [
+          15,
+          16
+        ]
+      },
+      "listening_pages": {
+        "1": [
+          [
+            17
+          ],
+          [
+            17
+          ],
+          [
+            17
+          ],
+          [
+            17
+          ],
+          [
+            17,
+            18
+          ]
+        ],
+        "2": [
+          [
+            18
+          ],
+          [
+            18
+          ],
+          [
+            18,
+            19
+          ],
+          [
+            19
+          ],
+          [
+            19
+          ],
+          [
+            19
+          ]
+        ],
+        "5": [
+          [],
+          [
+            20
+          ],
+          [
+            20
+          ]
+        ],
+        "3": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ],
+        "4": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      "duration_seconds": [
+        6300,
+        3000
+      ],
+      "timing_source_url": "https://drive.google.com/file/d/13kbFdNPxMwIqJ0eXFvHgVtzHa6ZfC1KJ/view"
+    },
+    {
+      "id": "2021-07",
+      "year": 2021,
+      "month": 7,
+      "files": [
+        {
+          "kind": "exam",
+          "filename": "2021年7月N2真题｜bản nhỏ.pdf",
+          "local_filename": "exam.pdf",
+          "drive_id": "1_3dwHksPsCxr4WCfiW6wT1T3SkY3nrU4",
+          "source_url": "https://drive.google.com/file/d/1_3dwHksPsCxr4WCfiW6wT1T3SkY3nrU4/view",
+          "sha256": "d723b76155540267b26cc720ebf5bdea32e0383923a1f2e4dc54220e73913119",
+          "page_count": 33
+        },
+        {
+          "kind": "answer",
+          "filename": "Đáp án và Script nghe N2 T7-2021.pdf",
+          "local_filename": "answers.pdf",
+          "drive_id": "1lJcbmivFg7ElxEvL9GV_HxMYiAhbNVRj",
+          "source_url": "https://drive.google.com/file/d/1lJcbmivFg7ElxEvL9GV_HxMYiAhbNVRj/view",
+          "sha256": "80c33aa16c7731f2e0705d61354244d34e772d9c665335e3af32806a1b4da201",
+          "page_count": 11
+        }
+      ],
+      "language_answer_keys": [
+        "43124",
+        "11224",
+        "331",
+        "4324121",
+        "12434",
+        "34213",
+        "132241213443",
+        "13424",
+        "1312",
+        "23121",
+        "344122412",
+        "43",
+        "313",
+        "23"
+      ],
+      "listening_answer_keys": [
+        "44233",
+        "433114",
+        "24313",
+        "12223332111",
+        "123"
+      ],
+      "answer_review": "Answer digits manually compared with rendered answer PDFs/tables; source key retained without solving.",
+      "language_pages": {
+        "1": [
+          2
+        ],
+        "2": [
+          2
+        ],
+        "3": [
+          2
+        ],
+        "4": [
+          2
+        ],
+        "5": [
+          2
+        ],
+        "6": [
+          2
+        ],
+        "7": [
+          2
+        ],
+        "8": [
+          2
+        ],
+        "9": [
+          2
+        ],
+        "10": [
+          2
+        ],
+        "11": [
+          2
+        ],
+        "12": [
+          2
+        ],
+        "13": [
+          2
+        ],
+        "14": [
+          3
+        ],
+        "15": [
+          3
+        ],
+        "16": [
+          3
+        ],
+        "17": [
+          3
+        ],
+        "18": [
+          3
+        ],
+        "19": [
+          3
+        ],
+        "20": [
+          3
+        ],
+        "21": [
+          3
+        ],
+        "22": [
+          3
+        ],
+        "23": [
+          3
+        ],
+        "24": [
+          3
+        ],
+        "25": [
+          3
+        ],
+        "26": [
+          4
+        ],
+        "27": [
+          4
+        ],
+        "28": [
+          4
+        ],
+        "29": [
+          4
+        ],
+        "30": [
+          4
+        ],
+        "31": [
+          4
+        ],
+        "32": [
+          4
+        ],
+        "33": [
+          4
+        ],
+        "34": [
+          5
+        ],
+        "35": [
+          5
+        ],
+        "36": [
+          5
+        ],
+        "37": [
+          5
+        ],
+        "38": [
+          5
+        ],
+        "39": [
+          5
+        ],
+        "40": [
+          5
+        ],
+        "41": [
+          5
+        ],
+        "42": [
+          5
+        ],
+        "43": [
+          6
+        ],
+        "44": [
+          6
+        ],
+        "45": [
+          6
+        ],
+        "46": [
+          6
+        ],
+        "47": [
+          6
+        ],
+        "48": [
+          7
+        ],
+        "49": [
+          7
+        ],
+        "50": [
+          7
+        ],
+        "51": [
+          7
+        ],
+        "52": [
+          8
+        ],
+        "53": [
+          8
+        ],
+        "54": [
+          9
+        ],
+        "55": [
+          9
+        ],
+        "56": [
+          10
+        ],
+        "57": [
+          11
+        ],
+        "58": [
+          11
+        ],
+        "59": [
+          11
+        ],
+        "60": [
+          12
+        ],
+        "61": [
+          12
+        ],
+        "62": [
+          12
+        ],
+        "63": [
+          13
+        ],
+        "64": [
+          13
+        ],
+        "65": [
+          13
+        ],
+        "66": [
+          14
+        ],
+        "67": [
+          14
+        ],
+        "68": [
+          15,
+          16
+        ],
+        "69": [
+          15,
+          16
+        ],
+        "70": [
+          15,
+          16
+        ],
+        "71": [
+          17,
+          18
+        ],
+        "72": [
+          17,
+          18
+        ]
+      },
+      "listening_pages": {
+        "1": [
+          [
+            19
+          ],
+          [
+            19
+          ],
+          [
+            19
+          ],
+          [
+            19
+          ],
+          [
+            20
+          ]
+        ],
+        "2": [
+          [
+            20
+          ],
+          [
+            20
+          ],
+          [
+            20
+          ],
+          [
+            20
+          ],
+          [
+            21
+          ],
+          [
+            21
+          ]
+        ],
+        "5": [
+          [],
+          [
+            22
+          ],
+          [
+            22
+          ]
+        ],
+        "3": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ],
+        "4": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      "duration_seconds": [
+        6300,
+        3000
+      ],
+      "timing_source_url": "https://drive.google.com/file/d/1_3dwHksPsCxr4WCfiW6wT1T3SkY3nrU4/view"
+    },
+    {
+      "id": "2020-12",
+      "year": 2020,
+      "month": 12,
+      "files": [
+        {
+          "kind": "exam",
+          "filename": "N2 T12-2020 Full.pdf",
+          "local_filename": "exam.pdf",
+          "drive_id": "17x6OHd6GVXtfTOy-qkqCOhqz2DMYxYax",
+          "source_url": "https://drive.google.com/file/d/17x6OHd6GVXtfTOy-qkqCOhqz2DMYxYax/view",
+          "sha256": "4ca29f1b74209254c9b750b165ee26bb56e2e14e7346cdec7bab3c86379af1d2",
+          "page_count": 19
+        },
+        {
+          "kind": "listening_script",
+          "filename": "Script Nghe N2 T12-2020.pdf",
+          "local_filename": "listening-script.pdf",
+          "drive_id": "144IM45wuQB0l2z3XQ64JtuItkKkbl_rv",
+          "source_url": "https://drive.google.com/file/d/144IM45wuQB0l2z3XQ64JtuItkKkbl_rv/view",
+          "sha256": "3c480a2d5d2964eb8e7aa7a37ab71090eedbda9c3dfacef0192bf8098c3090ce",
+          "page_count": 17
+        }
+      ],
+      "language_answer_keys": [
+        "23431",
+        "13421",
+        "314",
+        "2143234",
+        "14132",
+        "24321",
+        "314214232314",
+        "42412",
+        "3134",
+        "23211",
+        "413321334",
+        "24",
+        "141",
+        "43"
+      ],
+      "listening_answer_keys": [
+        "32432",
+        "423412",
+        "13433",
+        "22312231311",
+        "334"
+      ],
+      "answer_review": "Answer digits manually compared with rendered answer PDFs/tables; source key retained without solving.",
+      "language_pages": {
+        "1": [
+          2
+        ],
+        "2": [
+          2
+        ],
+        "3": [
+          2
+        ],
+        "4": [
+          2
+        ],
+        "5": [
+          2
+        ],
+        "6": [
+          2
+        ],
+        "7": [
+          2
+        ],
+        "8": [
+          2
+        ],
+        "9": [
+          2
+        ],
+        "10": [
+          2
+        ],
+        "11": [
+          2
+        ],
+        "12": [
+          2
+        ],
+        "13": [
+          2
+        ],
+        "14": [
+          3
+        ],
+        "15": [
+          3
+        ],
+        "16": [
+          3
+        ],
+        "17": [
+          3
+        ],
+        "18": [
+          3
+        ],
+        "19": [
+          3
+        ],
+        "20": [
+          3
+        ],
+        "21": [
+          3
+        ],
+        "22": [
+          3
+        ],
+        "23": [
+          3
+        ],
+        "24": [
+          3
+        ],
+        "25": [
+          3
+        ],
+        "26": [
+          4
+        ],
+        "27": [
+          4
+        ],
+        "28": [
+          4
+        ],
+        "29": [
+          4
+        ],
+        "30": [
+          4
+        ],
+        "31": [
+          5
+        ],
+        "32": [
+          5
+        ],
+        "33": [
+          5
+        ],
+        "34": [
+          5
+        ],
+        "35": [
+          5
+        ],
+        "36": [
+          5
+        ],
+        "37": [
+          5
+        ],
+        "38": [
+          5
+        ],
+        "39": [
+          5
+        ],
+        "40": [
+          5
+        ],
+        "41": [
+          5
+        ],
+        "42": [
+          5
+        ],
+        "43": [
+          6
+        ],
+        "44": [
+          6
+        ],
+        "45": [
+          6
+        ],
+        "46": [
+          6
+        ],
+        "47": [
+          6
+        ],
+        "48": [
+          6
+        ],
+        "49": [
+          6
+        ],
+        "50": [
+          6
+        ],
+        "51": [
+          6
+        ],
+        "52": [
+          7
+        ],
+        "53": [
+          7
+        ],
+        "54": [
+          8
+        ],
+        "55": [
+          8
+        ],
+        "56": [
+          8,
+          9
+        ],
+        "57": [
+          9,
+          10
+        ],
+        "58": [
+          9,
+          10
+        ],
+        "59": [
+          9,
+          10
+        ],
+        "60": [
+          10
+        ],
+        "61": [
+          10
+        ],
+        "62": [
+          10
+        ],
+        "63": [
+          11
+        ],
+        "64": [
+          11
+        ],
+        "65": [
+          11
+        ],
+        "66": [
+          12
+        ],
+        "67": [
+          12
+        ],
+        "68": [
+          13,
+          14
+        ],
+        "69": [
+          13,
+          14
+        ],
+        "70": [
+          13,
+          14
+        ],
+        "71": [
+          14,
+          15
+        ],
+        "72": [
+          14,
+          15
+        ]
+      },
+      "listening_pages": {
+        "1": [
+          [
+            16
+          ],
+          [
+            16
+          ],
+          [
+            16
+          ],
+          [
+            16
+          ],
+          [
+            16
+          ]
+        ],
+        "2": [
+          [
+            17
+          ],
+          [
+            17
+          ],
+          [
+            17
+          ],
+          [
+            17
+          ],
+          [
+            17
+          ],
+          [
+            17
+          ]
+        ],
+        "5": [
+          [],
+          [
+            18
+          ],
+          [
+            18
+          ]
+        ],
+        "3": [
+          [],
+          [],
+          [],
+          [],
+          []
+        ],
+        "4": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ]
+      },
+      "duration_seconds": [
+        6300,
+        3000
+      ],
+      "timing_source_url": "https://drive.google.com/file/d/17x6OHd6GVXtfTOy-qkqCOhqz2DMYxYax/view"
+    }
+  ]
+}
