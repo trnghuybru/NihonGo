@@ -70,3 +70,5 @@ Thumbs.db
 
 # Ephemeral Google GitHub Actions credentials
 gha-creds-*.json
+# Local pronunciation checkpoint
+backend/models/pronunciation/

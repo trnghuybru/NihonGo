@@ -50,10 +50,12 @@ const levels = ['', 'N5', 'N4', 'N3', 'N2', 'N1'];
 export function ReadingScreen({
   accountId = 'local',
   initialLevel,
+  initialPassageId,
   onExit,
 }: {
   accountId?: string;
   initialLevel?: string;
+  initialPassageId?: string;
   onExit?: () => void;
 }) {
   const profileLevel = useDefaultJlptLevel();
@@ -85,7 +87,7 @@ export function ReadingScreen({
     : localFilters;
   const { level, type, q, page } = filters;
   const urlId = web && /^\/practice\/reading\/([^/]+)$/.exec(web.pathname)?.[1];
-  const [localId, setLocalId] = useState<string | null>(null);
+  const [localId, setLocalId] = useState<string | null>(initialPassageId ?? null);
   const id = web ? (urlId ? decodeRouteParam(urlId) : null) : localId;
   const [filtersOpen, setFiltersOpen] = useState(false);
   const activeFilterCount = Number(Boolean(level)) + Number(Boolean(type));

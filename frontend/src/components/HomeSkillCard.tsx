@@ -2,13 +2,14 @@ import { Image, Pressable, StyleSheet, Text, View } from 'react-native';
 import { useWebLayout } from '../hooks/useWebLayout';
 import { colors, radius, shadowMd, spacing, typography } from '../theme/theme';
 import { HomeFeatureIcon } from './HomeFeatureIcon';
-import type { MascotPose } from './NihongoMascot';
 
 const skillHeads = {
   listening: require('../assets/mascot/momo-skill-listening-head-v1.png'),
   speaking: require('../assets/mascot/momo-skill-speaking-head-v1.png'),
   reading: require('../assets/mascot/momo-skill-reading-head-v1.png'),
   writing: require('../assets/mascot/momo-skill-writing-head-v1.png'),
+  pronunciation: require('../assets/mascot/momo-skill-pronunciation-head-v1.png'),
+  jlpt: require('../assets/mascot/momo-skill-jlpt-head-v1.png'),
   wave: require('../assets/mascot/momo-head.png'),
 };
 
@@ -16,7 +17,8 @@ interface Props {
   title: string;
   description: string;
   action: string;
-  pose: MascotPose;
+  pose: keyof typeof skillHeads;
+  accessibilityLabel?: string;
   onPress: () => void;
 }
 
@@ -26,12 +28,15 @@ export function HomeSkillCard({
   action,
   pose,
   onPress,
+  accessibilityLabel,
 }: Props) {
   const { desktop } = useWebLayout();
   return (
     <Pressable
       accessibilityRole="button"
-      accessibilityLabel={`${title}. ${description}. ${action}`}
+      accessibilityLabel={
+        accessibilityLabel ?? `${title}. ${description}. ${action}`
+      }
       onPress={onPress}
       testID={`home-skill-${pose}`}
       style={({ pressed }) => [

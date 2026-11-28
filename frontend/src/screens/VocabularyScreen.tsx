@@ -34,7 +34,6 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import Svg, { Circle } from 'react-native-svg';
 import { AppBackground } from '../components/AppBackground';
 import { AuthButton, AuthNotice } from '../components/AuthForm';
-import { AuthIcon } from '../components/AuthIcon';
 import { HomeFeatureIcon } from '../components/HomeFeatureIcon';
 import {
   ChevronLeftIcon,
@@ -67,6 +66,7 @@ import {
 } from '../services/videoExamplesService';
 import {
   colors,
+  japaneseStudyFont,
   layout,
   radius,
   shadowMd,
@@ -255,7 +255,7 @@ const WordCard = memo(function WordCardView({
               <Text style={styles.japanese} selectable>
                 {example.japanese}
               </Text>
-              <Text style={styles.caption} selectable>
+              <Text style={styles.exampleReading} selectable>
                 {example.reading}
               </Text>
               {showMeaning && example.meaning_vi ? (
@@ -276,7 +276,7 @@ const WordCard = memo(function WordCardView({
               <Text style={styles.japanese} selectable>
                 {related.japanese}
               </Text>
-              <Text style={styles.caption} selectable>
+              <Text style={styles.exampleReading} selectable>
                 {related.reading}
               </Text>
               {showMeaning && related.meaning_vi ? (
@@ -1670,6 +1670,7 @@ const styles = StyleSheet.create({
   },
   word: {
     ...typography.title,
+    ...japaneseStudyFont,
     color: colors.dark,
     flexShrink: 1,
     maxWidth: '100%',
@@ -1684,6 +1685,7 @@ const styles = StyleSheet.create({
   },
   reading: {
     ...typography.label,
+    ...japaneseStudyFont,
     color: colors.body,
     flexShrink: 1,
     maxWidth: '100%',
@@ -1712,7 +1714,12 @@ const styles = StyleSheet.create({
     padding: spacing.md,
     borderRadius: radius.small,
   },
-  japanese: { ...typography.label, color: colors.dark },
+  japanese: { ...typography.label, ...japaneseStudyFont, color: colors.dark },
+  exampleReading: {
+    ...typography.caption,
+    ...japaneseStudyFont,
+    color: colors.muted,
+  },
   meaningToggle: {
     width: layout.touchTarget,
     minHeight: layout.touchTarget,

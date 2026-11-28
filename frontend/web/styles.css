@@ -1,3 +1,5 @@
+@font-face { font-family: "M PLUS Rounded 1c"; src: url('../src/assets/fonts/MPLUSRounded1c-Bold.ttf'); font-weight: 700; font-display: swap; }
+@font-face { font-family: Nunito; src: url('../src/assets/fonts/Nunito.ttf'); font-weight: 200 1000; font-display: swap; }
 @font-face {
   font-family: ReadexPro-Regular;
   src: url('../src/assets/fonts/ReadexPro-Regular.ttf');

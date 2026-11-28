@@ -303,6 +303,7 @@ function MainTabs({
                       />
                     ) : (
                       <PracticeScreen
+                        accountId={user.id}
                         onOpenSkill={openSkill}
                         onOpenGames={openGames}
                         onOpenFlashcards={openPracticeFlashcards}

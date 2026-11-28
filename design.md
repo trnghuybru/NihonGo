@@ -4,7 +4,7 @@
 
 Giao diện ấm, nhẹ và thân thiện với ứng dụng học ngôn ngữ. Tham chiếu hình và component mẫu người dùng cung cấp: nền kem pha hồng nhạt, thẻ trắng bo tròn lớn, màu cam đào, biểu tượng nét tròn, nút viên thuốc và bóng đổ ấm rất nhẹ.
 
-Áp dụng cho đăng nhập, đăng ký, xác thực email, khôi phục mật khẩu, thiết lập học tập và tài khoản. Nội dung, dữ liệu và các thao tác lấy từ chức năng thực tế của NihonGO. Không đưa số điểm, chuỗi ngày học, khóa học, thử thách hoặc thanh điều hướng trong hình mẫu vào màn hình tài khoản.
+Áp dụng thống nhất cho các màn hình NihonGO. Nội dung, dữ liệu và thao tác phản ánh chức năng và lịch sử thực tế của người học.
 
 Nguồn cấu hình: `frontend/src/theme/theme.ts`. Các component dùng chung nằm tại `frontend/src/components/AuthForm.tsx` và `AuthIcon.tsx`.
 
@@ -114,6 +114,9 @@ iOS dùng `contentInsetAdjustmentBehavior="automatic"`; Android cộng safe area
 - `primary`: nền cam, chữ trắng, bo viên thuốc, chiều cao tối thiểu **52**.
 - `outline`: nền trắng, viền cam **1.5**, chữ cam `#FCA04B`; dành cho social login và thao tác phụ quan trọng.
 - `text`: không viền, chiều cao tối thiểu **48**; dùng cho quên mật khẩu, gửi lại mã, quay lại và hủy.
+- Các màn học/luyện tập dùng chung `ScreenBackHeader` để quay về: nút mũi tên tròn bên trái, tiêu đề ngay bên cạnh. Desktop đặt trong app bar; mobile ở đầu màn hình. Không dùng thêm nút chữ quay lại trong nội dung hoặc cuối trang. JLPT (danh sách và bài thi) cùng Luyện phát âm tuân theo bố cục này; nhãn trợ năng nói rõ trang đích và khóa quay lại khi đang nộp bài.
+- `compact`: thao tác trong section, cao tối thiểu **34**, chữ Readex Pro Medium **11/16**, padding ngang **10**, bo viên thuốc. Vùng chạm trên thiết bị cảm ứng cần đủ 44–48 khi bố cục cho phép.
+- Ưu tiên `AuthButton` và các biến thể chung thay vì tạo kiểu nút mới cho từng section. Dùng icon chung, trạng thái nhấn, disabled và busy nhất quán.
 - Loading giữ kích thước nút, hiển thị spinner, chặn thao tác lặp và công bố trạng thái busy.
 - Disabled dùng bảng màu riêng, không chỉ giảm opacity toàn bộ chữ. Pressed đổi nền nhẹ, không làm dịch chuyển bố cục.
 
@@ -517,9 +520,9 @@ Logo và icon launcher dùng đầu Momo cùng chữ NihonGO đen–cam theo m�
 
 ### Trang Cá nhân trên web
 
-- Dùng sidebar và top bar chung. Tiêu đề **Cá nhân**, avatar lấy chữ cái đầu tên;
-  không tạo ảnh đại diện hoặc thống kê giả. Desktop: thông tin cá nhân và xác thực
-  ở cột trái, thiết lập học tập và phiên đăng nhập ở cột phải. Mobile xếp một cột.
+- Dùng sidebar và top bar chung. Tiêu đề **Cá nhân**, avatar lấy chữ cái đầu tên. Mặc định mở **Học tập**; mục **Tài khoản** chứa thông tin, xác thực, thiết lập và đăng xuất. Desktop chia thông tin tài khoản thành hai cột, mobile xếp một cột.
+- Mục Học tập hiển thị từ đã ôn và nút **Xây dựng lộ trình ôn**. Gợi ý nghe, đọc và viết xuất hiện sau khi bấm, có chuyển động ngắn và hỗ trợ giảm chuyển động. Thống kê lấy từ lịch sử thật.
+- Nút xây dựng và bắt đầu luyện dùng `AuthButton` cỡ `compact`, viên thuốc như các section Trang chủ. Nút chính nền `primary`, chữ trắng; thao tác phụ dùng viền hoặc chữ. Dùng icon mũi tên chung thay cho ký tự trong nhãn.
 - Thẻ trắng bo 32, padding 20, gap 16, bóng ấm theo token. Hiện họ tên, email,
   số điện thoại và trạng thái xác thực thật; giữ luồng gửi/nhập/gửi lại/hủy mã.
 - **Đăng xuất** nằm trong thẻ **Phiên đăng nhập**, nút viền/chữ `danger`, cao tối thiểu
@@ -662,3 +665,38 @@ Công thành Momo dùng cùng token màu, Readex Pro, thẻ trắng, nền kem, 
 Công thành Momo mặc định chọn Chơi online, có Tạo phòng và Vào phòng bằng mã. Lobby hiển thị mã có thể sao chép link, hai tài khoản, Sẵn sàng và Bắt đầu trận (chỉ chủ phòng). Trong trận chỉ hiển thị đáp án/kỹ năng cho đội của tài khoản đang đăng nhập. Không hiển thị điều khiển 7–0 hay mô tả hai người cùng thiết bị. Mất kết nối hiện trạng thái kết nối lại; online không có nút pause. Kết quả và ôn từ dùng đúng đội của từng người. Đấu máy là lựa chọn riêng, giữ pause và bot ba độ khó.
 
 Phòng chung: Kho game có Tạo phòng và nhập một mã duy nhất; chọn thẻ game tạo party với gợi ý trò, chưa bắt đầu trận. /games/:code mở SharedGameRoomScreen cho phòng mới, hiển thị mã, Mời bạn, roster và sẵn sàng. Host chọn game/nguồn/trình độ/thời gian rồi Áp dụng; mọi thay đổi cấu hình reset ready. Trong game và ở kết quả, nút Về phòng chờ đưa về cùng party/code; Rời phòng mới ra Kho game. Nút/chip 34 px, thẻ trắng bo tròn, màu/font theo theme. Giành mic kiểm tra âm thanh trước sẵn sàng, giữ kết nối vào trận; Công thành đòi đúng hai thành viên, hai trò còn lại 2–8.
+
+### Luyện thi JLPT
+
+- Luyện phát âm ở cùng lưới `SkillPicker` với Nghe/Nói/Đọc/Viết. Luyện thi JLPT ở section riêng bên dưới. Cả hai dùng chung `HomeSkillCard`, cùng chiều rộng cột, chiều cao, mascot, typography và nút mũi tên với kỹ năng cũ; thẻ cuối hàng không kéo dài để lấp đầy hàng.
+
+- Danh sách chỉ chọn đề. Trong màn làm bài có nút Thi thử tính giờ; mở hộp thời lượng từng phần, bấm Bắt đầu tính giờ mới khởi chạy đồng hồ. Nếu đã luyện tự do, thông báo rõ lượt tính giờ sẽ thay đáp án/đánh dấu hiện tại; có thể hủy để giữ bài. Tiếp tục bài tính giờ đang dở giữ nguyên chế độ và hạn kết thúc. Hai đề N3 12/2016 và 7/2017 dùng thời lượng gốc 30 phút Từ vựng, 70 phút Ngữ pháp–Đọc hiểu, 40 phút Nghe (nguồn: JLPT Summary of Results 2016_2_1.pdf và 2017_1_9.pdf). Chế độ tính giờ lưu hạn kết thúc tuyệt đối của từng phần, không đặt lại khi tải lại/thoát; khóa chuyển sang phần khác và khóa phần đã hết giờ. Giữa phần có bước chủ động bắt đầu phần tiếp theo. Hết giờ phần cuối tự nộp; lỗi nộp giữ bài và có thể nộp lại. Chưa có audio thì không mở đồng hồ phần nghe giả, cho nộp các phần đã làm.
+- Sau nộp mới bật tra từ trên câu hỏi và bài đọc bằng cùng tokenization/từ điển của Đọc/Shadowing. Bấm đáp án lúc xem kết quả chỉ mở Momo giải thích ngữ pháp/cách dùng, không sửa bài đã nộp. Momo gọi AI theo thao tác chủ động, có trạng thái tải/lỗi/thử lại, ví dụ Nhật–Việt và cảnh báo khi thiếu ngữ cảnh; không suy đoán phần nghe khi thiếu audio. Backend yêu cầu token kết quả ký theo tài khoản/đề/nội dung trước khi trả dữ liệu ôn tập; đáp án nguồn không bị AI ghi đè.
+- Nội dung làm bài bám ký hiệu đề gốc: giữ `問題`, dòng hướng dẫn đi kèm (ví dụ 下線のことばの読み方を選んでください。) và số câu gốc; không thêm tiêu đề kiểu “Câu 3 · Nhóm 4”, không lặp số câu ở tiêu đề và nội dung. Bỏ nhãn đánh số tổng toàn đề và ghi chú lặp dưới từng câu. Câu nghe không in lựa chọn chữ dùng các nút số gọn, mỗi số chỉ xuất hiện một lần.
+- Đi từ Luyện tập, chọn đề theo kỳ gốc; không trộn câu của nhiều năm thành một đề. Danh sách dùng các thẻ ngang gọn, lưới 4 cột trên màn rộng, 2 cột trên màn vừa và 1 cột trên màn hẹp. Mỗi thẻ chỉ có cấp độ, tháng/năm và nút Mở đề thi outline compact; padding 16, góc bo 18, khoảng cách 12. Không có các khối Từ vựng/Ngữ pháp/Nghe, số câu, số thứ tự phần hoặc ghi chú âm thanh trong danh sách. Thẻ xếp nội dung theo chiều dọc. Local tạm có 10 thẻ mẫu theo yêu cầu để kiểm tra bố cục, có nhãn Mẫu và không mở đề thi; không đưa thẻ mẫu vào dữ liệu thật.
+- Giữ bảng màu cam–kem, Readex Pro cho nhãn, nút AuthButton compact, card trắng viền nhẹ bo 24. Nội dung tiếng Nhật dùng cỡ 17–21, line-height 28–36; bài đọc có nền kem nhạt và khoảng cách rõ với câu hỏi.
+- Desktop dùng hai cột: câu hỏi co giãn bên trái và bảng câu hỏi rộng 288 bên phải. Bảng nhóm theo phần/問題, có cuộn riêng và bám khi đọc đoạn dài. Màn hẹp dùng nút mở bảng phía trên câu hỏi, không ép hai cột hoặc tràn ngang.
+- Số câu gốc được giữ, ID nội bộ có phần và nhóm. Nút số câu phân biệt hiện tại, đã chọn, chưa chọn, đánh dấu xem lại; dùng cả màu và ký hiệu. Chuyển câu không mất lựa chọn. Nội dung bài đọc nối trang và hình minh họa phải có đủ trước khi trả lời.
+- Khi luyện chưa lộ đáp án. Nộp bài cần xác nhận, hiển thị số câu bỏ trống, có lối đi tới câu chưa làm. Sau nộp: đúng xanh + ✓, sai đỏ + ✕, chưa trả lời trung tính; khóa sửa đáp án, cho xem câu sai/bỏ trống hoặc làm lại toàn đề.
+- Kết quả là số câu đúng theo tổng câu và từng phần; không tự quy đổi sang điểm 180 hoặc kết luận đỗ/trượt. Bản nháp tự lưu lâu dài theo tài khoản/kỳ trên thiết bị: localStorage ở web, Keychain ở native; chuyển bản nháp phiên cũ sang kho lưu mới. Khôi phục đáp án, câu đang xem, đánh dấu và thời gian luyện đã lưu, chế độ tự do không tính thời gian đã đóng màn thi vào đồng hồ; chế độ tính giờ vẫn chạy theo hạn kết thúc đã lưu. Không trình bày như lịch sử được đồng bộ lên máy chủ.
+- Thẻ đề gom N3, kỳ thi và trạng thái trong cùng hàng header; tiêu đề được xuống dòng khi hẹp. Thẻ dùng ba hàng thống nhất: header tối thiểu 40 px, trạng thái tối thiểu 56 px, hành động cùng hàng; cách nhau 16 px. Các thẻ mới, đang dở, đã nộp có cùng bố cục và chiều cao; hàng trạng thái đề mới hiện Chưa làm. Thanh tiến độ cao 8 px, nền `border`; phần đã làm lớn hơn 0 có độ rộng tối thiểu 12 px, bằng 0 giữ trống.
+- Thẻ đề đã mở hiển thị Đang làm dở, số câu đã trả lời và thanh tiến độ gọn; CTA Tiếp tục trở về đúng câu đang xem. Bài đang dở cập nhật cuối cùng có nhãn Lần làm gần nhất, viền cam và CTA chính. Đề đã nộp dùng nhãn Đã nộp, số câu đúng/tổng câu và Xem kết quả, số câu đúng dùng màu chữ trung tính và không có thanh tỷ lệ đúng. Chỉ bài đang làm dở hiện thanh tiến độ. Lưu tóm tắt kết quả cùng bài làm trên thiết bị; bản lưu cũ chưa có kết quả chỉ hiện Đã hoàn thành bài làm cho tới khi mở kết quả. Không quy đổi số câu đúng thành điểm JLPT. Các đề mới và thẻ mẫu không có tiến độ giả. Trong màn làm bài báo Đang lưu/Đã lưu trên thiết bị này; lỗi lưu có thông báo và nút thử lưu lại.
+- Thẻ có tiến độ (đang dở hoặc đã nộp) có nút chữ Làm lại nhỏ cạnh CTA chính, cùng hàng. Dùng cùng hộp xác nhận với Làm lại đề trong màn kết quả: Bắt đầu lại / Giữ bài hiện tại. Chỉ khi xác nhận mới tạo lượt trống, xóa đáp án/đánh dấu, về câu đầu, đặt lại thời gian và trạng thái chưa nộp; tự lưu lượt mới. Xem kết quả vẫn giữ nguyên lượt hiện tại cho tới khi xác nhận làm lại.
+- Âm thanh tạm để trống theo yêu cầu: hiển thị trạng thái rõ ràng, giữ nguyên câu/ảnh phần nghe, không giả lập phát được audio. Đáp án chỉ được backend trả sau khi nộp bài.
+
+### Luyện phát âm
+
+- Lối vào trong Luyện kỹ năng là một hàng gọn: biểu tượng micro, tên chức năng, một dòng mô tả và mũi tên. Chiều cao theo nội dung; không dùng `flexGrow`/`flexBasis` của thẻ trong hàng ngang cho mục nằm trong cột. CSS lưới kỹ năng phải chọn đúng `skill-picker-grid`, không chọn phần tử cuối section vì section còn có lối vào phát âm.
+- Mở từ Luyện tập hoặc từ câu đang chọn trong Shadowing. Dùng cùng bộ thu âm và phân tích cho cả hai lối vào.
+- Câu cần đọc nằm trước các nút Nghe mẫu và Thu âm câu này. Có vài câu ngắn để bắt đầu hoặc sửa câu bằng tiếng Nhật. Trong Shadowing, câu mẫu giữ cố định suốt lượt thu; đổi câu bằng thao tác chủ động.
+- Khi thu thì tạm dừng video và audio mẫu; đổi nút thành Dừng và xem góp ý. Giới hạn lượt 20 giây, dừng micro khi rời màn hình/chuyển nền. Có nghe lại bản thu và thu lại.
+- Kết quả dùng góp ý âm vị thử nghiệm, trạng thái chưa đối chiếu được và gợi ý nghe lại. Model hiện tại chưa có thang điểm đã hiệu chuẩn hoặc đánh giá trọng âm; giao diện không tự suy ra điểm 0–100, trình độ hay lỗi trường âm từ độ rộng emission CTC.
+- Giữ Readex Pro, các nút `AuthButton` compact và bảng màu chung. Âm thanh được gửi tới backend local để phân tích, không lưu bản ghi hay tự gọi AI bên ngoài.
+- Theo mẫu cập nhật, màn phát âm web dùng Nunito cho nhãn và M PLUS Rounded 1c Bold cho câu tiếng Nhật, giữ bảng màu cam–kem NihonGO. Font đóng gói local cùng giấy phép; các màn khác dùng typography hiện có. Native tiếp tục dùng font đã đăng ký trong app.
+- Bố cục luyện một câu mỗi lần: thẻ câu mẫu trắng bo tròn, nghĩa của câu có sẵn, tùy chọn tự thu âm sau khi nghe và ba điều khiển Nghe / Micro / Câu tiếp. Đổi câu tự do bằng thao tác Đổi câu luyện. Nút micro đổi thành Dừng khi thu, trạng thái xử lý hiển thị bằng chữ và spinner.
+- Bản thu và đối chiếu cùng một khung: nút Nghe bản thu của tôi / Dừng nghe hiển thị ngay khi dừng thu, kể cả khi phân tích lỗi. Cân âm lượng khi nghe lại; không phát chồng mẫu với bản thu hoặc mở micro khi đang phát.
+- Góp ý hiển thị các cụm âm bằng kana theo thứ tự, giữ riêng từng lần lặp. Xanh + ✓ là Khớp mẫu; đỏ + ↻ là Cần luyện lại; trung tính là Chưa rõ. Chạm từng cụm xem âm vị và góp ý. Đây là đối chiếu âm vị thử nghiệm, không tô màu trực tiếp kanji theo ánh xạ suy đoán và không xem màu xanh là kết luận phát âm hoàn hảo. Nếu chưa đối chiếu được cả câu, toàn bộ cụm giữ trung tính.
+
+Nội dung học tiếng Nhật trên web: từ/cách đọc/ví dụ trong Bài học từ vựng và phụ đề chính Shadowing (câu hiện tại và furigana) dùng chung `japaneseStudyFont` — M PLUS Rounded 1c Bold như Luyện phát âm. Giữ cỡ chữ, line-height, màu và phông nhãn giao diện hiện có.
+
+Shadowing: danh sách transcript desktop/mobile giữ phông thường Readex như trước. Nút vị trí phụ đề chuyển câu chính giữa dưới video và nổi trên video; mặc định dưới video. Lớp nổi nền trong suốt, chữ trắng có bóng tối, không có thẻ nền trắng che video; giữ tra từ và đồng bộ, không remount trình phát. Chính tả vẫn ở dưới video.

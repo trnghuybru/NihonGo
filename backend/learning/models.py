@@ -37,3 +37,13 @@ class LearningStudyDay(db.Model):
     __table_args__ = (
         db.CheckConstraint('seconds >= 0 AND seconds <= 86400', name='ck_study_day_seconds'),
     )
+
+
+class LearningJourney(db.Model):
+    __tablename__ = 'learning_journeys'
+
+    user_id = db.Column(db.String(36), db.ForeignKey('users.id', ondelete='CASCADE'), primary_key=True)
+    day = db.Column(db.Date, primary_key=True)
+    plan = db.Column(db.JSON, nullable=False)
+    completed = db.Column(db.JSON, nullable=False, default=list)
+    writing_topic = db.Column(db.JSON)

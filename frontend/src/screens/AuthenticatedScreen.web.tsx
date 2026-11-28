@@ -54,6 +54,8 @@ import { LearningAreaScreen } from './LearningAreaScreen';
 import { LearningPlanScreen } from './LearningPlanScreen';
 import { LearningSetupScreen } from './LearningSetupScreen';
 import { PracticeScreen } from './PracticeScreen';
+import { PronunciationScreen } from './PronunciationScreen';
+import { JlptScreen } from './JlptScreen';
 const ReadingScreen = lazy(async () => {
   const module = await import('./ReadingScreen');
   return { default: module.ReadingScreen };
@@ -433,6 +435,8 @@ function WebWorkspace({
                           }
                         />
                       ))}
+                      <Route path="/practice/pronunciation" element={<PronunciationScreen onExit={goPractice} />} />
+                      <Route path="/practice/jlpt" element={<JlptScreen accountId={user.id} onExit={goPractice} />} />
                       <Route
                         path="/practice/writing"
                         element={<LearningAreaScreen area="writing" />}

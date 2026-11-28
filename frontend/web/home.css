@@ -364,36 +364,36 @@
 }
 
 @media (min-width: 768px) {
-  :is(#home-skills, #practice-skills) {
+  :is(#home-skills, #practice-skills, #practice-jlpt) {
     gap: 10px;
   }
 
-  :is(#home-skills, #practice-skills) > :first-child {
+  :is(#home-skills, #practice-skills, #practice-jlpt) > :first-child {
     align-items: center;
   }
 
-  :is(#home-skills, #practice-skills) :is(h1, [role='heading']) {
+  :is(#home-skills, #practice-skills, #practice-jlpt) :is(h1, [role='heading']) {
     border-left: 3px solid #ff9437;
     padding-left: 10px;
     color: var(--home-ink);
   }
 
-  :is(#home-skills, #practice-skills) > :first-child > [role='button'] {
+  :is(#home-skills, #practice-skills, #practice-jlpt) > :first-child > [role='button'] {
     min-height: 34px;
     padding: 0 5px;
   }
 
-  :is(#home-skills, #practice-skills) > :last-child {
+  :is(#home-skills > :last-child, #practice-skills > [data-testid='skill-picker-grid'], #practice-jlpt > [data-testid='jlpt-entry-grid']) {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 10px;
   }
 
-  :is(#home-skills, #practice-skills) > :last-child > div {
+  :is(#home-skills > :last-child, #practice-skills > [data-testid='skill-picker-grid'], #practice-jlpt > [data-testid='jlpt-entry-grid']) > div {
     display: contents;
   }
 
-  :is(#nihongo-home, #nihongo-practice) :is(#home-skills, #practice-skills) [data-testid^='home-skill-'] {
+  :is(#nihongo-home, #nihongo-practice) :is(#home-skills, #practice-skills, #practice-jlpt) [data-testid^='home-skill-'] {
     flex-direction: row;
     align-items: center;
     position: relative;
@@ -403,27 +403,27 @@
     border-radius: 18px;
   }
 
-  :is(#home-skills, #practice-skills) [data-testid^='home-skill-'] > :first-child > div {
+  :is(#home-skills, #practice-skills, #practice-jlpt) [data-testid^='home-skill-'] > :first-child > div {
     /* Match the compact card despite the shared mascot's inline size. */
     width: 48px !important;
     height: 48px !important;
   }
 
-  :is(#home-skills, #practice-skills) [data-testid^='home-skill-'] > :last-child {
+  :is(#home-skills, #practice-skills, #practice-jlpt) [data-testid^='home-skill-'] > :last-child {
     position: static;
     gap: 3px;
   }
 
-  :is(#nihongo-home, #nihongo-practice) :is(#home-skills, #practice-skills) [data-testid^='home-skill-'] > :last-child > :first-child {
+  :is(#nihongo-home, #nihongo-practice) :is(#home-skills, #practice-skills, #practice-jlpt) [data-testid^='home-skill-'] > :last-child > :first-child {
     color: var(--home-ink);
     font-size: 14px;
   }
 
-  :is(#nihongo-home, #nihongo-practice) :is(#home-skills, #practice-skills) [data-testid^='home-skill-'] > :last-child > :nth-child(2) > div {
+  :is(#nihongo-home, #nihongo-practice) :is(#home-skills, #practice-skills, #practice-jlpt) [data-testid^='home-skill-'] > :last-child > :nth-child(2) > div {
     font-size: 12px;
   }
 
-  :is(#home-skills, #practice-skills) [data-testid^='home-skill-'] > :last-child > :last-child {
+  :is(#home-skills, #practice-skills, #practice-jlpt) [data-testid^='home-skill-'] > :last-child > :last-child {
     position: absolute;
     top: 50%;
     right: 10px;
@@ -435,7 +435,7 @@
     border-radius: 50%;
   }
 
-  :is(#home-skills, #practice-skills) [data-testid^='home-skill-'] > :last-child > :last-child > div {
+  :is(#home-skills, #practice-skills, #practice-jlpt) [data-testid^='home-skill-'] > :last-child > :last-child > div {
     display: none;
   }
 }
@@ -454,7 +454,8 @@
   justify-content: center;
 }
 
-#practice-vocabulary :is(h1, [role='heading']) {
+:is(#practice-vocabulary, #practice-jlpt) > :is(h1, [role='heading']),
+#practice-skills > :first-child > :is(h1, [role='heading']) {
   border-left: 3px solid #ff9437;
   padding-left: 10px;
   color: var(--home-ink);
@@ -485,16 +486,17 @@
   background-color: #fff9f3;
 }
 
-@media (max-width: 767px) {
-  #practice-skills :is(h1, [role='heading']) {
-    border-left: 3px solid #ff9437;
-    padding-left: 10px;
-    color: var(--home-ink);
-  }
-}
-
 #practice-skills > :first-child {
   flex-direction: row;
+}
+
+#jlpt-question-card {
+  scroll-margin-top: 20px;
+}
+
+#jlpt-question-map {
+  position: sticky;
+  top: 16px;
 }
 
 #nihongo-lookup {

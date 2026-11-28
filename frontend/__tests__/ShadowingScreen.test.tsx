@@ -645,6 +645,59 @@ test('reference layout shows a synced current sentence, collapses the subtitle p
   expect(shadowingService.translation).not.toHaveBeenCalled();
 });
 
+test('moves the main caption over the video and back without restarting playback', async () => {
+  await render();
+  await press('Luyện shadowing');
+  const player = tree.root.findByProps({ testID: 'youtube-example-player' });
+  const source = player.props.source;
+  const seek = tree.root.findByType(VideoExamplePlayer).props.seekRequest;
+  await press('Đưa phụ đề lên video');
+  expect(
+    tree.root.findAllByProps({ testID: 'shadowing-current-caption' }),
+  ).toHaveLength(0);
+  const overlay = tree.root.findByProps({
+    testID: 'shadowing-overlay-caption',
+  });
+  expect(
+    tree.root
+      .findByProps({ testID: 'tour-listening-player' })
+      .findByProps({ testID: 'shadowing-overlay-caption' }),
+  ).toBe(overlay);
+  await act(async () =>
+    player.props.onMessage({
+      nativeEvent: {
+        data: JSON.stringify({
+          type: 'caption',
+          code: { index: 1, clipId: 'one' },
+        }),
+      },
+    }),
+  );
+  expect(
+    JSON.stringify(overlay.findAllByType(Text).map(t => t.props.children)),
+  ).toContain('次の文。');
+  await press('Ẩn phụ đề');
+  expect(
+    tree.root.findAllByProps({ testID: 'shadowing-overlay-caption' }),
+  ).toHaveLength(0);
+  await press('Hiện phụ đề');
+  expect(
+    tree.root.findByProps({ testID: 'shadowing-overlay-caption' }),
+  ).toBeDefined();
+  await press('Đưa phụ đề xuống dưới video');
+  expect(
+    tree.root.findAllByProps({ testID: 'shadowing-overlay-caption' }),
+  ).toHaveLength(0);
+  expect(
+    tree.root.findByProps({ testID: 'shadowing-current-caption' }),
+  ).toBeDefined();
+  expect(tree.root.findByProps({ testID: 'youtube-example-player' })).toBe(
+    player,
+  );
+  expect(player.props.source).toBe(source);
+  expect(tree.root.findByType(VideoExamplePlayer).props.seekRequest).toBe(seek);
+});
+
 test('shows complete sentences instead of short display cues and replays their full timing', async () => {
   const original = await shadowingService.lesson('job-1');
   jest.mocked(shadowingService.lesson).mockResolvedValue({

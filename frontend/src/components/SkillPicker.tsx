@@ -6,11 +6,13 @@ export type LearningSkill = 'listening' | 'speaking' | 'reading' | 'writing';
 
 export function SkillPicker({
   onOpenSkill,
+  onOpenPronunciation,
 }: {
   onOpenSkill: (skill: LearningSkill) => void;
+  onOpenPronunciation?: () => void;
 }) {
   return (
-    <View style={styles.grid}>
+    <View testID="skill-picker-grid" style={styles.grid}>
       <View style={styles.skillRow}>
         <HomeSkillCard
           title="Nghe"
@@ -43,11 +45,27 @@ export function SkillPicker({
           onPress={() => onOpenSkill('writing')}
         />
       </View>
+      {onOpenPronunciation ? (
+        <View style={styles.skillRow}>
+          {onOpenPronunciation ? (
+            <HomeSkillCard
+              title="Luyện phát âm"
+              description="Nghe mẫu và đọc theo"
+              action="Luyện phát âm"
+              pose="pronunciation"
+              accessibilityLabel="Luyện phát âm"
+              onPress={onOpenPronunciation}
+            />
+          ) : null}
+          <View style={styles.emptySlot} />
+        </View>
+      ) : null}
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   grid: { gap: spacing.lg },
+  emptySlot: { flex: 1 },
   skillRow: { flexDirection: 'row', alignItems: 'stretch', gap: spacing.lg },
 });

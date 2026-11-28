@@ -39,6 +39,7 @@ export const ShadowingTokenText = memo(function TokenText({
   selectedKey,
   onWordPress,
   style,
+  rubyStyle,
   showFurigana = true,
   preserveLayout = false,
   align = 'center',
@@ -55,6 +56,7 @@ export const ShadowingTokenText = memo(function TokenText({
   selectedKey?: string | null;
   onWordPress: (key: string, pageY: number) => void;
   style?: StyleProp<TextStyle>;
+  rubyStyle?: StyleProp<TextStyle>;
   showFurigana?: boolean;
   preserveLayout?: boolean;
   align?: 'left' | 'center';
@@ -119,7 +121,7 @@ export const ShadowingTokenText = memo(function TokenText({
               <View key={position} style={styles.rubyPart}>
                 {showFurigana ? (
                   part.reading ? (
-                    <Text accessible={false} style={styles.ruby}>
+                    <Text accessible={false} style={[styles.ruby, rubyStyle]}>
                       {part.reading}
                     </Text>
                   ) : (
