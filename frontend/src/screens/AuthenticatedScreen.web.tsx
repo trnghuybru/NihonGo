@@ -45,6 +45,7 @@ import { betaGamesWeb, betaWeb } from '../config/beta';
 import { CommunityExperience } from '../../web/CommunityExperience';
 import { AccountScreen } from './AccountScreen';
 import { DailyFlashcardQuizScreen } from './DailyFlashcardQuizScreen';
+const GrammarScreen = lazy(() => import('../grammar/GrammarScreen'));
 const FlashcardScreen = lazy(async () => {
   const module = await import('./FlashcardScreen');
   return { default: module.FlashcardScreen };
@@ -440,6 +441,10 @@ function WebWorkspace({
                       <Route
                         path="/practice/writing"
                         element={<LearningAreaScreen area="writing" />}
+                      />
+                      <Route
+                        path="/lessons/grammar"
+                        element={<GrammarScreen key={user.id} accountId={user.id} initialLevel={profile.level} />}
                       />
                       {['/lessons', '/lessons/:lessonId'].map(path => (
                         <Route

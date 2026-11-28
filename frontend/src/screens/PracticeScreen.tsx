@@ -45,6 +45,7 @@ export function PracticeScreen({
     onPress?: () => void;
   }[] = [
     { label: 'Bài học từ vựng', icon: 'reading', onPress: onOpenLessons },
+    { label: 'Ngữ pháp JLPT', icon: 'writing', onPress: navigation ? () => navigation.navigate('/lessons/grammar') : undefined },
     { label: 'Flashcard', icon: 'flashcards', onPress: onOpenFlashcards },
     { label: 'Game từ vựng', icon: 'gamepad', onPress: onOpenGames },
   ];

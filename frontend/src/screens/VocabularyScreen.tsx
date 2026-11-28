@@ -1054,6 +1054,14 @@ function VocabularyContent({
           ))}
         </View>
       ) : null}
+      {web && route.kind === 'catalog' ? (
+        <AuthButton
+          label="Học ngữ pháp JLPT"
+          variant="outline"
+          trailingIcon="arrow"
+          onPress={() => web.navigate('/lessons/grammar?level=' + level)}
+        />
+      ) : null}
       {route.kind === 'catalog' ? (
         <View
           accessibilityRole="radiogroup"
