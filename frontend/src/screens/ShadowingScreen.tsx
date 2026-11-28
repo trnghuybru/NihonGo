@@ -5,8 +5,6 @@ import { useWebNavigation } from '../navigation/webNavigation';
 import { ScreenBackHeader } from '../components/ScreenBackHeader';
 import { memo, useCallback, useMemo, useEffect, useRef, useState } from 'react';
 import type { ComponentRef } from 'react';
-import { ShadowingLyrics } from '../components/ShadowingLyrics';
-import { ReadingScrollRegion } from '../components/ReadingScrollRegion';
 import {
   AppState,
   BackHandler,
@@ -77,7 +75,7 @@ import {
   typography,
 } from '../theme/theme';
 
-import { PronunciationPractice } from '../components/PronunciationPractice';
+import { SubtitleBackdropControl } from '../components/SubtitleBackdropControl';
 const labels: Record<ShadowingJob['status'], string> = {
   queued: 'Đang chờ xử lý',
   extracting: 'Đang lấy dữ liệu video',
@@ -358,10 +356,7 @@ export function ShadowingScreen({
     quiz.stop();
   };
   const [dictation, setDictation] = useState(false);
-  const [pronunciationText, setPronunciationText] = useState<string | null>(
-    null,
-  );
-  const [pronunciationRecording, setPronunciationRecording] = useState(false);
+
   const [dictationAnswers, setDictationAnswers] = useState<
     Record<string, DictationAnswer>
   >({});
@@ -397,6 +392,7 @@ export function ShadowingScreen({
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [hideCaption, setHideCaption] = useState(false);
   const [captionOnVideo, setCaptionOnVideo] = useState(false);
+  const [subtitleBackdrop, setSubtitleBackdrop] = useState(35);
   const [rate, setRate] = useState(1);
   const [loop, setLoop] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -409,12 +405,33 @@ export function ShadowingScreen({
     AppState.currentState !== 'background' &&
       AppState.currentState !== 'inactive',
   );
+  useEffect(() => {
+    if (!settingsOpen || Platform.OS !== 'web') return;
+    const outside = (event: PointerEvent) => {
+      const target = event.target;
+      if (
+        target instanceof Element &&
+        target.closest(
+          '[data-testid="shadowing-settings-popover"], [data-testid="shadowing-settings-trigger"]',
+        )
+      )
+        return;
+      setSettingsOpen(false);
+    };
+    const escape = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') setSettingsOpen(false);
+    };
+    document.addEventListener('pointerdown', outside);
+    document.addEventListener('keydown', escape);
+    return () => {
+      document.removeEventListener('pointerdown', outside);
+      document.removeEventListener('keydown', escape);
+    };
+  }, [settingsOpen]);
   const generation = useRef(0);
   const leaveLesson = useCallback(() => {
     generation.current += 1;
     setSettingsOpen(false);
-    setPronunciationText(null);
-    setPronunciationRecording(false);
     setSelectedWordKey(null);
     setLesson(null);
     webRef.current?.navigate('/practice/listening');
@@ -426,6 +443,10 @@ export function ShadowingScreen({
     const subscription = BackHandler.addEventListener(
       'hardwareBackPress',
       () => {
+        if (settingsOpen) {
+          setSettingsOpen(false);
+          return true;
+        }
         if (!lesson) {
           if (!onExit) return false;
           onExit();
@@ -436,7 +457,7 @@ export function ShadowingScreen({
       },
     );
     return () => subscription.remove();
-  }, [lesson, leaveLesson, onExit]);
+  }, [lesson, leaveLesson, onExit, settingsOpen]);
   const refresh = useCallback(async () => {
     const current = ++listGeneration.current;
     try {
@@ -856,11 +877,18 @@ export function ShadowingScreen({
     const captionText =
       captionIndex >= 0 && captions?.[captionIndex]
         ? captions[captionIndex].text
+        : !desktop
+        ? lesson.segments[current]?.text ?? ''
         : '';
-    const currentTokens =
-      !hideCaption && captionIndex >= 0
-        ? lesson.tokens?.segments[captions?.[captionIndex]?.id ?? '']
-        : undefined;
+    const currentTokens = !hideCaption
+      ? lesson.tokens?.segments[
+          captionIndex >= 0
+            ? captions?.[captionIndex]?.id ?? ''
+            : !desktop
+            ? lesson.segments[current]?.id ?? ''
+            : ''
+        ]
+      : undefined;
     const tokenSpacing =
       Math.max(
         0,
@@ -898,13 +926,28 @@ export function ShadowingScreen({
       setSelectedWordKey(null);
       selectSegment(0);
     };
-    const overlayCaption =
-      !dictation && !hideCaption && captionOnVideo ? (
+    const subtitle =
+      !dictation && !hideCaption ? (
         <View
           pointerEvents="box-none"
-          style={styles.captionOverlay}
-          testID="shadowing-overlay-caption"
+          style={captionOnVideo ? styles.captionOverlay : styles.dockedSubtitle}
+          testID={
+            captionOnVideo
+              ? 'shadowing-overlay-caption'
+              : 'shadowing-current-caption'
+          }
         >
+          <View
+            pointerEvents="none"
+            nativeID="shadowing-subtitle-backdrop"
+            testID="shadowing-subtitle-backdrop"
+            style={[
+              StyleSheet.absoluteFill,
+              {
+                backgroundColor: `rgba(18, 24, 30, ${subtitleBackdrop / 100})`,
+              },
+            ]}
+          />
           <ScrollView
             style={styles.overlayCaptionScroll}
             contentContainerStyle={styles.overlayCaptionContent}
@@ -927,10 +970,341 @@ export function ShadowingScreen({
                   styles.overlayCaptionText,
                 ]}
               />
+              {showTranslation ? (
+                <View
+                  style={styles.subtitleTranslation}
+                  testID="shadowing-subtitle-translation"
+                >
+                  {translationIndex >= 0 &&
+                  translation.data?.items[
+                    lesson.segments[translationIndex]?.id
+                  ] ? (
+                    <Text style={styles.subtitleTranslationText}>
+                      {
+                        translation.data.items[
+                          lesson.segments[translationIndex].id
+                        ]
+                      }
+                    </Text>
+                  ) : null}
+                  {translation.loading ||
+                  translation.data?.status === 'queued' ||
+                  translation.data?.status === 'translating' ? (
+                    <Text style={styles.subtitleTranslationText}>
+                      Đang chuẩn bị bản dịch
+                    </Text>
+                  ) : null}
+                  {translation.error ||
+                  translation.data?.status === 'failed' ? (
+                    <View style={styles.translationRetry}>
+                      <Text style={styles.subtitleTranslationText}>
+                        {translation.error ||
+                          translation.data?.error_message ||
+                          'Chưa dịch được phụ đề.'}
+                      </Text>
+                      <Pressable
+                        accessibilityRole="button"
+                        accessibilityLabel="Thử lại bản dịch"
+                        onPress={translation.retry}
+                        hitSlop={8}
+                      >
+                        <Text style={styles.subtitleTranslationText}>
+                          Thử lại
+                        </Text>
+                      </Pressable>
+                    </View>
+                  ) : null}
+                </View>
+              ) : null}
             </View>
           </ScrollView>
         </View>
       ) : null;
+    const playerControls = (
+      <ScrollView
+        testID="shadowing-player-controls"
+        horizontal
+        showsHorizontalScrollIndicator={false}
+        style={styles.toolbarFrame}
+        contentContainerStyle={styles.toolbar}
+      >
+        <View style={styles.playbackControls} testID="tour-listening-playback">
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel="Ví dụ trước"
+            disabled={current <= 0}
+            accessibilityState={{ disabled: current <= 0 }}
+            hitSlop={10}
+            onPress={() => selectSegment(current - 1)}
+            style={styles.playerStep}
+          >
+            <ChevronLeftIcon
+              size={18}
+              color={current > 0 ? colors.body : colors.disabledText}
+            />
+          </Pressable>
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel="Nghe lại"
+            accessibilityHint="Phát lại câu hiện tại. Phím tắt: Space khi không nhập văn bản."
+            hitSlop={10}
+            onPress={() => selectSegment(current)}
+            style={styles.playerReplay}
+          >
+            <ReplayIcon size={16} color={colors.primaryText} />
+          </Pressable>
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel="Ví dụ tiếp"
+            disabled={current >= lesson.segments.length - 1}
+            accessibilityState={{
+              disabled: current >= lesson.segments.length - 1,
+            }}
+            hitSlop={10}
+            onPress={() => selectSegment(current + 1)}
+            style={styles.playerStep}
+          >
+            <ChevronRightIcon
+              size={18}
+              color={
+                current < lesson.segments.length - 1
+                  ? colors.body
+                  : colors.disabledText
+              }
+            />
+          </Pressable>
+        </View>
+        <Text style={styles.playerCounter}>
+          {current + 1}/{lesson.segments.length}
+        </Text>
+        <View style={styles.toolbarSpace} />
+        {!dictation ? (
+          <>
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel="Phụ đề"
+              accessibilityState={{
+                expanded: desktop ? panelOpen : mobileTranscriptOpen,
+              }}
+              onPress={() => {
+                if (desktop) setPanelOpen(value => !value);
+                else setMobileTranscriptOpen(true);
+              }}
+              hitSlop={6}
+              style={[
+                styles.playerTool,
+                (desktop ? panelOpen : mobileTranscriptOpen) &&
+                  styles.playerToolSelected,
+              ]}
+            >
+              <MessageSquareIcon color={colors.primaryText} size={18} />
+            </Pressable>
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel="Bản dịch"
+              accessibilityState={{ selected: showTranslation }}
+              onPress={() => setShowTranslation(value => !value)}
+              hitSlop={6}
+              style={[
+                styles.playerTool,
+                showTranslation && styles.playerToolSelected,
+              ]}
+            >
+              <TranslateIcon
+                size={18}
+                color={showTranslation ? colors.primaryText : colors.body}
+              />
+            </Pressable>
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel={
+                captionOnVideo
+                  ? 'Đưa phụ đề xuống dưới video'
+                  : 'Đưa phụ đề lên video'
+              }
+              accessibilityState={{ selected: captionOnVideo }}
+              onPress={() => setCaptionOnVideo(value => !value)}
+              hitSlop={6}
+              style={[
+                styles.playerTool,
+                captionOnVideo && styles.playerToolSelected,
+              ]}
+            >
+              <View style={!captionOnVideo ? styles.pointUp : undefined}>
+                <ChevronDownIcon size={18} color={colors.primaryText} />
+              </View>
+            </Pressable>
+            {!hideCaption ? (
+              <Pressable
+                accessibilityRole="button"
+                accessibilityLabel="Ẩn phụ đề"
+                onPress={() => setHideCaption(true)}
+                style={styles.playerTool}
+                hitSlop={6}
+              >
+                <EyeIcon size={18} color={colors.primaryText} />
+              </Pressable>
+            ) : null}
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel="Câu hỏi AI"
+              accessibilityHint={`Mở câu hỏi AI. Đã trả lời ${quiz.completed.length}/${quiz.questions.length} câu.`}
+              accessibilityState={{
+                selected: desktop ? quiz.questions.length > 0 : mobileQuizOpen,
+                expanded: !desktop ? mobileQuizOpen : undefined,
+              }}
+              onPress={() => {
+                setMobileQuizOpen(true);
+                quiz.setSetupOpen(true);
+              }}
+              style={[
+                styles.playerTool,
+                quiz.questions.length > 0 && styles.playerToolSelected,
+              ]}
+            >
+              <AIIcon
+                size={20}
+                color={quiz.questions.length ? colors.primaryText : colors.body}
+              />
+            </Pressable>
+            {hideCaption ? (
+              <Pressable
+                accessibilityRole="button"
+                accessibilityLabel="Hiện phụ đề"
+                accessibilityState={{ selected: false }}
+                onPress={() => setHideCaption(false)}
+                hitSlop={6}
+                style={styles.playerTool}
+              >
+                <EyeOffIcon size={18} color={colors.body} />
+              </Pressable>
+            ) : null}
+            {desktop ? (
+              <Pressable
+                accessibilityRole="switch"
+                accessibilityLabel="Theo dõi phụ đề"
+                accessibilityHint="Quay về câu hiện tại và tự cuộn theo video."
+                accessibilityState={{ checked: follow }}
+                onPress={() => {
+                  if (follow) stopFollowing();
+                  else setFollow(true);
+                }}
+                hitSlop={8}
+                style={[styles.playerTool, follow && styles.playerToolSelected]}
+              >
+                <ChevronDownIcon size={18} color={colors.primaryText} />
+              </Pressable>
+            ) : null}
+          </>
+        ) : null}
+        {!dictation ? (
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel="Tuỳ chọn shadowing"
+            testID="shadowing-settings-trigger"
+            accessibilityState={{ expanded: settingsOpen }}
+            onPress={() => setSettingsOpen(value => !value)}
+            hitSlop={8}
+            style={styles.playerTool}
+          >
+            <HomeFeatureIcon name="settings" size={20} color={colors.body} />
+          </Pressable>
+        ) : null}
+      </ScrollView>
+    );
+    const settingsPopover = settingsOpen ? (
+      <>
+        <Pressable
+          style={[StyleSheet.absoluteFill, styles.settingsDismiss]}
+          accessibilityRole="button"
+          accessibilityLabel="Đóng tuỳ chọn"
+          onPress={() => setSettingsOpen(false)}
+        />
+        <View
+          testID="shadowing-settings-popover"
+          style={styles.settingsPopover}
+          accessibilityViewIsModal
+        >
+          <ScrollView
+            keyboardShouldPersistTaps="handled"
+            contentContainerStyle={styles.settingsContent}
+          >
+            <View style={styles.lessonTop}>
+              <Text style={styles.settingsTitle}>Cài đặt</Text>
+              <Pressable
+                accessibilityRole="button"
+                accessibilityLabel="Đóng tuỳ chọn luyện nghe"
+                hitSlop={8}
+                style={styles.toolIcon}
+                onPress={() => setSettingsOpen(false)}
+              >
+                <XIcon size={16} color={colors.body} />
+              </Pressable>
+            </View>
+            <View style={styles.subtitleAppearance}>
+              <Text style={styles.settingsTitle}>Nền phụ đề</Text>
+              <SubtitleBackdropControl
+                value={subtitleBackdrop}
+                onChange={setSubtitleBackdrop}
+              />
+            </View>
+            <View style={styles.settingsRow}>
+              {[true, false].map(value => (
+                <Pressable
+                  key={String(value)}
+                  accessibilityRole="radio"
+                  accessibilityLabel={
+                    value ? 'Nghe liên tục' : 'Luyện từng đoạn'
+                  }
+                  accessibilityState={{ checked: continuous === value }}
+                  onPress={() => {
+                    setContinuous(value);
+                    setLoop(false);
+                    setIndex(current);
+                  }}
+                  style={[
+                    styles.settingsChip,
+                    continuous === value && styles.selected,
+                  ]}
+                >
+                  <Text style={styles.label}>
+                    {value ? 'Nghe liên tục' : 'Từng đoạn'}
+                  </Text>
+                </Pressable>
+              ))}
+              <Pressable
+                accessibilityRole="button"
+                accessibilityLabel={`Tốc độ ${rate}x`}
+                accessibilityHint="Bấm để đổi giữa 1, 0.75 và 0.5 lần tốc độ."
+                onPress={() =>
+                  setRate(value =>
+                    value === 1 ? 0.75 : value === 0.75 ? 0.5 : 1,
+                  )
+                }
+                style={styles.settingsChip}
+              >
+                <Text style={styles.label}>{rate}×</Text>
+              </Pressable>
+            </View>
+            <View style={styles.settingsRow}>
+              <Pressable
+                accessibilityRole="switch"
+                accessibilityLabel="Lặp đoạn"
+                accessibilityState={{ checked: loop }}
+                onPress={() => {
+                  setLoop(value => !value);
+                  setContinuous(false);
+                  setIndex(current);
+                }}
+                style={[styles.settingsChip, loop && styles.selected]}
+              >
+                <Text style={styles.label}>Lặp đoạn</Text>
+              </Pressable>
+            </View>
+          </ScrollView>
+        </View>
+      </>
+    ) : null;
     const playerHeader = (
       <View style={styles.fixedHeader}>
         <ScreenBackHeader
@@ -938,53 +1312,53 @@ export function ShadowingScreen({
           backLabel="Danh sách video"
           onBack={leaveLesson}
         />
-        <View style={styles.videoStage} testID="tour-listening-player">
-          {lesson.segments[index] ? (
-            <VideoExamplePlayer
-              pausedForLookup={
-                Boolean(lookupWord) ||
-                Boolean(pronunciationText) ||
-                pronunciationRecording
-              }
-              pausedForQuiz={quiz.paused}
-              quizCheckpoints={
-                desktop || mobileQuizOpen
-                  ? quiz.checkpoints
-                  : emptyQuizCheckpoints
-              }
-              onQuizQuestion={id => {
-                if (desktop || mobileQuizOpen) quiz.showQuestion(id);
-              }}
-              onPlaybackTime={seconds => {
-                if (desktop || mobileQuizOpen) quiz.onPlaybackTime(seconds);
-              }}
-              resumeRequest={quiz.resumeRequest}
-              quizJumpRequest={quiz.jumpRequest}
-              videoOnly
-              key={lesson.job.id}
-              example={lesson.segments[index]}
-              query=""
-              position={liveIndex >= 0 ? liveIndex + 1 : 0}
-              count={lesson.segments.length}
-              seekRequest={seekRequest}
-              timeline={captions}
-              continuous={dictation ? false : continuous}
-              onCaptionChange={captionChanged}
-              onReplay={() => selectSegment(current)}
-              hideCaption={dictation || hideCaption}
-              playbackRate={rate}
-              loop={dictation ? false : loop}
-              onPrevious={
-                current > 0 ? () => selectSegment(current - 1) : undefined
-              }
-              onNext={
-                current < lesson.segments.length - 1
-                  ? () => selectSegment(current + 1)
-                  : undefined
-              }
-            />
-          ) : null}
-          {overlayCaption}
+        <View style={styles.playerFrame} testID="shadowing-player-frame">
+          <View style={styles.videoStage} testID="tour-listening-player">
+            {lesson.segments[index] ? (
+              <VideoExamplePlayer
+                pausedForLookup={Boolean(lookupWord)}
+                pausedForQuiz={quiz.paused}
+                quizCheckpoints={
+                  desktop || mobileQuizOpen
+                    ? quiz.checkpoints
+                    : emptyQuizCheckpoints
+                }
+                onQuizQuestion={id => {
+                  if (desktop || mobileQuizOpen) quiz.showQuestion(id);
+                }}
+                onPlaybackTime={seconds => {
+                  if (desktop || mobileQuizOpen) quiz.onPlaybackTime(seconds);
+                }}
+                resumeRequest={quiz.resumeRequest}
+                quizJumpRequest={quiz.jumpRequest}
+                videoOnly
+                key={lesson.job.id}
+                example={lesson.segments[index]}
+                query=""
+                position={liveIndex >= 0 ? liveIndex + 1 : 0}
+                count={lesson.segments.length}
+                seekRequest={seekRequest}
+                timeline={captions}
+                continuous={dictation ? false : continuous}
+                onCaptionChange={captionChanged}
+                onReplay={() => selectSegment(current)}
+                hideCaption={dictation || hideCaption}
+                playbackRate={rate}
+                loop={dictation ? false : loop}
+                onPrevious={
+                  current > 0 ? () => selectSegment(current - 1) : undefined
+                }
+                onNext={
+                  current < lesson.segments.length - 1
+                    ? () => selectSegment(current + 1)
+                    : undefined
+                }
+              />
+            ) : null}
+            {captionOnVideo ? subtitle : null}
+          </View>
+          {playerControls}
+          {settingsPopover}
         </View>
       </View>
     );
@@ -1013,8 +1387,6 @@ export function ShadowingScreen({
               ]}
               onPress={() => {
                 if (value === dictation) return;
-                setPronunciationText(null);
-                setPronunciationRecording(false);
                 if (value) {
                   quiz.stop();
                   setSelectedWordKey(null);
@@ -1045,45 +1417,6 @@ export function ShadowingScreen({
             </Pressable>
           ))}
         </View>
-        {!dictation && lesson.segments[current] ? (
-          <View style={{ padding: spacing.md, gap: spacing.md }}>
-            <AuthButton
-              label={
-                pronunciationText
-                  ? 'Đóng luyện phát âm'
-                  : 'Luyện phát âm câu này'
-              }
-              size="compact"
-              variant="outline"
-              onPress={() => {
-                setPronunciationText(value =>
-                  value ? null : lesson.segments[current].text,
-                );
-                setPronunciationRecording(false);
-              }}
-            />
-            {pronunciationText ? (
-              <View style={{ gap: spacing.md }}>
-                {pronunciationText !== lesson.segments[current].text ? (
-                  <AuthButton
-                    label="Luyện câu đang chọn"
-                    size="compact"
-                    variant="text"
-                    disabled={pronunciationRecording}
-                    onPress={() =>
-                      setPronunciationText(lesson.segments[current].text)
-                    }
-                  />
-                ) : null}
-                <PronunciationPractice
-                  key={pronunciationText}
-                  sentence={pronunciationText}
-                  onRecordingChange={setPronunciationRecording}
-                />
-              </View>
-            ) : null}
-          </View>
-        ) : null}
         {dictation && lesson.segments[current] ? (
           <View
             style={[
@@ -1129,300 +1462,9 @@ export function ShadowingScreen({
               ) : null}
             </View>
           </View>
-        ) : !dictation && !hideCaption && !captionOnVideo ? (
-          <View
-            style={[
-              styles.currentCaptionArea,
-              !desktop && styles.mobileCaptionArea,
-            ]}
-          >
-            <View
-              testID="shadowing-current-caption"
-              style={[
-                styles.currentCaptionBox,
-                !desktop && styles.mobileCaptionBox,
-              ]}
-            >
-              <Pressable
-                accessibilityRole="button"
-                accessibilityLabel={hideCaption ? 'Hiện phụ đề' : 'Ẩn phụ đề'}
-                accessibilityState={{ selected: !hideCaption }}
-                onPress={() => setHideCaption(value => !value)}
-                hitSlop={6}
-                style={[
-                  styles.captionVisibility,
-                  !desktop && styles.floatingCaptionVisibility,
-                ]}
-              >
-                {hideCaption ? (
-                  <EyeOffIcon size={18} color={colors.muted} />
-                ) : (
-                  <EyeIcon size={18} color={colors.primaryText} />
-                )}
-              </Pressable>
-              {!desktop ? (
-                <ShadowingLyrics
-                  lesson={lesson}
-                  currentIndex={current}
-                  following={follow}
-                  selectedWordKey={selectedWordKey}
-                  onBrowse={stopFollowing}
-                  onFollow={() => setFollow(true)}
-                  onSelect={selectSegment}
-                  onWordPress={showWord}
-                />
-              ) : (
-                <View
-                  key={captionIndex}
-                  onLayout={event =>
-                    setCaptionWidth(Math.round(event.nativeEvent.layout.width))
-                  }
-                >
-                  <ShadowingTokenText
-                    rubyStyle={japaneseStudyFont}
-                    text={captionText}
-                    tokens={currentTokens}
-                    words={lesson.words}
-                    selectedKey={selectedWordKey}
-                    onWordPress={showWord}
-                    style={[
-                      styles.currentCaptionText,
-                      { fontSize, lineHeight },
-                    ]}
-                  />
-                </View>
-              )}
-            </View>
-          </View>
         ) : null}
-        {!dictation && showTranslation && !hideCaption ? (
-          <View style={styles.translationArea}>
-            {!hideCaption &&
-            translationIndex >= 0 &&
-            translation.data?.items[lesson.segments[translationIndex]?.id] ? (
-              <ReadingScrollRegion
-                scrollable={desktop}
-                style={desktop ? styles.translationScroll : undefined}
-              >
-                <Text style={styles.currentTranslation}>
-                  {translation.data.items[lesson.segments[translationIndex].id]}
-                </Text>
-              </ReadingScrollRegion>
-            ) : null}
-            {translation.loading ||
-            translation.data?.status === 'queued' ||
-            translation.data?.status === 'translating' ? (
-              <Text style={styles.caption}>
-                Đang chuẩn bị bản dịch
-                {translation.data
-                  ? ` · ${translation.data.completed}/${translation.data.total} câu`
-                  : '…'}
-              </Text>
-            ) : null}
-            {translation.error || translation.data?.status === 'failed' ? (
-              <View style={styles.translationRetry}>
-                <Text style={styles.caption}>
-                  {translation.error ||
-                    translation.data?.error_message ||
-                    'Chưa dịch được phụ đề.'}
-                </Text>
-                <Pressable
-                  accessibilityRole="button"
-                  accessibilityLabel="Thử lại bản dịch"
-                  onPress={translation.retry}
-                  hitSlop={8}
-                >
-                  <Text style={styles.label}>Thử lại</Text>
-                </Pressable>
-              </View>
-            ) : null}
-          </View>
-        ) : null}
-        <ScrollView
-          horizontal
-          showsHorizontalScrollIndicator={false}
-          style={styles.toolbarFrame}
-          contentContainerStyle={styles.toolbar}
-        >
-          {!dictation ? (
-            <>
-              <Pressable
-                accessibilityRole="button"
-                accessibilityLabel="Phụ đề"
-                accessibilityState={{
-                  expanded: desktop ? panelOpen : mobileTranscriptOpen,
-                }}
-                onPress={() => {
-                  if (desktop) setPanelOpen(value => !value);
-                  else setMobileTranscriptOpen(true);
-                }}
-                hitSlop={6}
-                style={[
-                  styles.toolIcon,
-                  (desktop ? panelOpen : mobileTranscriptOpen) &&
-                    styles.selected,
-                ]}
-              >
-                <MessageSquareIcon color={colors.primaryText} size={18} />
-              </Pressable>
-              <Pressable
-                accessibilityRole="button"
-                accessibilityLabel="Bản dịch"
-                accessibilityState={{ selected: showTranslation }}
-                onPress={() => setShowTranslation(value => !value)}
-                hitSlop={6}
-                style={[styles.toolIcon, showTranslation && styles.selected]}
-              >
-                <TranslateIcon
-                  size={18}
-                  color={showTranslation ? colors.primaryText : colors.body}
-                />
-              </Pressable>
-              <Pressable
-                accessibilityRole="button"
-                accessibilityLabel={
-                  captionOnVideo
-                    ? 'Đưa phụ đề xuống dưới video'
-                    : 'Đưa phụ đề lên video'
-                }
-                accessibilityState={{ selected: captionOnVideo }}
-                onPress={() => setCaptionOnVideo(value => !value)}
-                hitSlop={6}
-                style={[styles.toolIcon, captionOnVideo && styles.selected]}
-              >
-                <View style={!captionOnVideo ? styles.pointUp : undefined}>
-                  <ChevronDownIcon size={18} color={colors.primaryText} />
-                </View>
-              </Pressable>
-              {captionOnVideo && !hideCaption ? (
-                <Pressable
-                  accessibilityRole="button"
-                  accessibilityLabel="Ẩn phụ đề"
-                  onPress={() => setHideCaption(true)}
-                  style={styles.toolIcon}
-                  hitSlop={6}
-                >
-                  <EyeIcon size={18} color={colors.primaryText} />
-                </Pressable>
-              ) : null}
-              <View style={styles.toolbarSpace} />
-              <Pressable
-                accessibilityRole="button"
-                accessibilityLabel="Câu hỏi AI"
-                accessibilityHint={`Mở câu hỏi AI. Đã trả lời ${quiz.completed.length}/${quiz.questions.length} câu.`}
-                accessibilityState={{
-                  selected: desktop
-                    ? quiz.questions.length > 0
-                    : mobileQuizOpen,
-                  expanded: !desktop ? mobileQuizOpen : undefined,
-                }}
-                onPress={() => {
-                  setMobileQuizOpen(true);
-                  quiz.setSetupOpen(true);
-                }}
-                style={[
-                  styles.toolIcon,
-                  quiz.questions.length > 0 && styles.selected,
-                ]}
-              >
-                <AIIcon
-                  size={20}
-                  color={
-                    quiz.questions.length ? colors.primaryText : colors.body
-                  }
-                />
-              </Pressable>
-              {hideCaption ? (
-                <Pressable
-                  accessibilityRole="button"
-                  accessibilityLabel="Hiện phụ đề"
-                  accessibilityState={{ selected: false }}
-                  onPress={() => setHideCaption(false)}
-                  hitSlop={6}
-                  style={styles.toolIcon}
-                >
-                  <EyeOffIcon size={18} color={colors.muted} />
-                </Pressable>
-              ) : null}
-              {desktop ? (
-                <Pressable
-                  accessibilityRole="switch"
-                  accessibilityLabel="Theo dõi phụ đề"
-                  accessibilityHint="Quay về câu hiện tại và tự cuộn theo video."
-                  accessibilityState={{ checked: follow }}
-                  onPress={() => {
-                    if (follow) stopFollowing();
-                    else setFollow(true);
-                  }}
-                  hitSlop={8}
-                  style={[styles.toolIcon, follow && styles.selected]}
-                >
-                  <Text style={styles.label}>↓</Text>
-                </Pressable>
-              ) : null}
-            </>
-          ) : null}
-          <View
-            style={styles.playbackControls}
-            testID="tour-listening-playback"
-          >
-            <Pressable
-              accessibilityRole="button"
-              accessibilityLabel="Ví dụ trước"
-              disabled={current <= 0}
-              accessibilityState={{ disabled: current <= 0 }}
-              hitSlop={10}
-              onPress={() => selectSegment(current - 1)}
-              style={styles.stepButton}
-            >
-              <ChevronLeftIcon
-                size={18}
-                color={current > 0 ? colors.body : colors.disabledText}
-              />
-            </Pressable>
-            <Pressable
-              accessibilityRole="button"
-              accessibilityLabel="Nghe lại"
-              accessibilityHint="Phát lại câu hiện tại. Phím tắt: Space khi không nhập văn bản."
-              hitSlop={10}
-              onPress={() => selectSegment(current)}
-              style={styles.replayControl}
-            >
-              <ReplayIcon size={16} color={colors.primaryText} />
-            </Pressable>
-            <Pressable
-              accessibilityRole="button"
-              accessibilityLabel="Ví dụ tiếp"
-              disabled={current >= lesson.segments.length - 1}
-              accessibilityState={{
-                disabled: current >= lesson.segments.length - 1,
-              }}
-              hitSlop={10}
-              onPress={() => selectSegment(current + 1)}
-              style={styles.stepButton}
-            >
-              <ChevronRightIcon
-                size={18}
-                color={
-                  current < lesson.segments.length - 1
-                    ? colors.body
-                    : colors.disabledText
-                }
-              />
-            </Pressable>
-          </View>
-          {!dictation ? (
-            <Pressable
-              accessibilityRole="button"
-              accessibilityLabel="Tuỳ chọn shadowing"
-              onPress={() => setSettingsOpen(true)}
-              hitSlop={8}
-              style={styles.toolIcon}
-            >
-              <Text style={styles.moreIcon}>•••</Text>
-            </Pressable>
-          ) : null}
-        </ScrollView>
+        {!captionOnVideo ? subtitle : null}
+
         {!desktop && !dictation && mobileQuizOpen ? (
           <View
             onLayout={event => {
@@ -1675,94 +1717,6 @@ export function ShadowingScreen({
           onClose={closeWord}
         />
         {desktop ? <ShadowingQuiz quiz={quiz} onStarted={startQuiz} /> : null}
-        <Modal
-          visible={settingsOpen}
-          transparent
-          animationType="fade"
-          onRequestClose={() => setSettingsOpen(false)}
-        >
-          <View style={styles.modalBackdrop}>
-            <Pressable
-              style={StyleSheet.absoluteFill}
-              accessibilityRole="button"
-              accessibilityLabel="Đóng tuỳ chọn"
-              onPress={() => setSettingsOpen(false)}
-            />
-            <View
-              style={[
-                styles.settingsSheet,
-                { paddingBottom: insets.bottom + spacing.xl },
-              ]}
-              accessibilityViewIsModal
-            >
-              <View style={styles.lessonTop}>
-                <Text style={styles.panelTitle}>Tuỳ chọn luyện nghe</Text>
-                <Pressable
-                  accessibilityRole="button"
-                  accessibilityLabel="Đóng tuỳ chọn luyện nghe"
-                  hitSlop={8}
-                  style={styles.toolIcon}
-                  onPress={() => setSettingsOpen(false)}
-                >
-                  <XIcon size={16} color={colors.body} />
-                </Pressable>
-              </View>
-              <View style={styles.controls}>
-                {[true, false].map(value => (
-                  <Pressable
-                    key={String(value)}
-                    accessibilityRole="radio"
-                    accessibilityLabel={
-                      value ? 'Nghe liên tục' : 'Luyện từng đoạn'
-                    }
-                    accessibilityState={{ checked: continuous === value }}
-                    onPress={() => {
-                      setContinuous(value);
-                      setLoop(false);
-                      setIndex(current);
-                    }}
-                    style={[
-                      styles.chip,
-                      continuous === value && styles.selected,
-                    ]}
-                  >
-                    <Text style={styles.label}>
-                      {value ? 'Nghe liên tục' : 'Từng đoạn'}
-                    </Text>
-                  </Pressable>
-                ))}
-                <Pressable
-                  accessibilityRole="button"
-                  accessibilityLabel={`Tốc độ ${rate}x`}
-                  accessibilityHint="Bấm để đổi giữa 1, 0.75 và 0.5 lần tốc độ."
-                  onPress={() =>
-                    setRate(value =>
-                      value === 1 ? 0.75 : value === 0.75 ? 0.5 : 1,
-                    )
-                  }
-                  style={styles.chip}
-                >
-                  <Text style={styles.label}>{rate}×</Text>
-                </Pressable>
-              </View>
-              <View style={styles.controls}>
-                <Pressable
-                  accessibilityRole="switch"
-                  accessibilityLabel="Lặp đoạn"
-                  accessibilityState={{ checked: loop }}
-                  onPress={() => {
-                    setLoop(value => !value);
-                    setContinuous(false);
-                    setIndex(current);
-                  }}
-                  style={[styles.chip, loop && styles.selected]}
-                >
-                  <Text style={styles.label}>Lặp đoạn</Text>
-                </Pressable>
-              </View>
-            </View>
-          </View>
-        </Modal>
       </View>
     );
   }
@@ -2059,17 +2013,6 @@ const styles = StyleSheet.create({
     lineHeight: 18,
     marginTop: spacing.xs,
   },
-  translationArea: {
-    gap: spacing.xs,
-    paddingHorizontal: spacing.md,
-    paddingBottom: spacing.sm,
-  },
-  translationScroll: { maxHeight: 72 },
-  currentTranslation: {
-    ...typography.label,
-    color: colors.body,
-    textAlign: 'center',
-  },
   translationRetry: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -2202,20 +2145,37 @@ const styles = StyleSheet.create({
   pointUp: { transform: [{ rotate: '180deg' }] },
   captionOverlay: {
     position: 'absolute',
-    bottom: 48,
-    left: 16,
-    right: 16,
+    bottom: '14%',
+    left: '10%',
+    right: '10%',
     zIndex: 10,
     maxHeight: '45%',
+    borderRadius: 12,
+    overflow: 'hidden',
   },
   overlayCaptionScroll: { flexGrow: 0 },
-  overlayCaptionContent: { paddingVertical: 4 },
+  overlayCaptionContent: { paddingVertical: 10, paddingHorizontal: 14 },
   overlayCaptionText: {
     color: '#FFFFFF',
     textDecorationLine: 'none',
     textShadowColor: '#000000',
     textShadowOffset: { width: 0, height: 1 },
     textShadowRadius: 4,
+  },
+  dockedSubtitle: {
+    position: 'relative',
+    marginHorizontal: spacing.sm,
+    borderRadius: 12,
+    overflow: 'hidden',
+    maxHeight: 180,
+  },
+  subtitleTranslation: { marginTop: 6, gap: 4 },
+  subtitleTranslationText: {
+    ...typography.body,
+    fontSize: 13,
+    lineHeight: 20,
+    color: '#FFFFFF',
+    textAlign: 'center',
   },
   currentCaptionArea: {
     alignItems: 'center',
@@ -2242,24 +2202,6 @@ const styles = StyleSheet.create({
     paddingRight: spacing.sm,
     paddingVertical: spacing.sm,
   },
-  floatingCaptionVisibility: {
-    top: spacing.xs,
-    right: spacing.sm,
-    borderRadius: radius.pill,
-    backgroundColor: colors.surface,
-    borderWidth: 1,
-    borderColor: colors.divider,
-  },
-  captionVisibility: {
-    position: 'absolute',
-    top: spacing.xs,
-    right: spacing.xs,
-    width: 32,
-    height: 32,
-    alignItems: 'center',
-    justifyContent: 'center',
-    zIndex: 1,
-  },
   currentCaptionText: {
     ...typography.title,
     ...japaneseStudyFont,
@@ -2270,7 +2212,42 @@ const styles = StyleSheet.create({
     textDecorationLine: 'underline',
     textDecorationColor: colors.primary,
   },
-  toolbarFrame: { flexGrow: 0 },
+  playerFrame: {
+    position: 'relative',
+    borderRadius: radius.small,
+    overflow: 'hidden',
+    backgroundColor: colors.surface,
+    borderWidth: 1,
+    borderColor: colors.divider,
+  },
+  playerTool: {
+    width: 32,
+    height: 36,
+    borderRadius: 6,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  playerToolSelected: { backgroundColor: colors.badgeBg },
+  playerStep: {
+    width: 28,
+    height: 36,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  playerReplay: {
+    width: 32,
+    height: 36,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  playerCounter: {
+    ...typography.caption,
+    fontSize: 10,
+    color: colors.muted,
+    paddingHorizontal: 4,
+    fontVariant: ['tabular-nums'],
+  },
+  toolbarFrame: { flexGrow: 0, backgroundColor: colors.surface },
   toolbar: {
     flexGrow: 1,
     flexDirection: 'row',
@@ -2278,29 +2255,14 @@ const styles = StyleSheet.create({
     gap: spacing.xs,
     borderTopWidth: 1,
     borderTopColor: colors.divider,
-    paddingVertical: spacing.sm,
+    paddingHorizontal: spacing.sm,
+    paddingVertical: spacing.xs,
   },
   toolbarSpace: { flex: 1 },
   playbackControls: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: spacing.xs,
-  },
-  stepButton: {
-    width: 28,
-    height: 32,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  replayControl: {
-    width: 28,
-    height: 28,
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderRadius: radius.pill,
-    borderWidth: 1,
-    borderColor: colors.primary,
-    backgroundColor: colors.surface,
   },
   toolIcon: {
     width: 32,
@@ -2310,7 +2272,6 @@ const styles = StyleSheet.create({
     borderRadius: radius.small,
     backgroundColor: colors.surfaceTint,
   },
-  moreIcon: { ...typography.label, color: colors.body },
   subtitlePanel: {
     flex: 1,
     width: '100%',
@@ -2331,17 +2292,43 @@ const styles = StyleSheet.create({
   },
   segmentText: { flex: 1 },
   closedPanel: { flex: 1, alignItems: 'center', padding: spacing.xl },
-  modalBackdrop: {
-    flex: 1,
-    justifyContent: 'flex-end',
-    backgroundColor: 'rgba(37,37,38,0.35)',
-  },
-  settingsSheet: {
-    padding: spacing.xl,
-    gap: spacing.lg,
+  subtitleAppearance: { gap: 4 },
+  settingsDismiss: { zIndex: 19 },
+  settingsPopover: {
+    position: 'absolute',
+    right: 8,
+    bottom: 48,
+    width: 280,
+    maxWidth: '95%',
+    maxHeight: '75%',
     backgroundColor: colors.surface,
-    borderTopLeftRadius: radius.card,
-    borderTopRightRadius: radius.card,
+    borderRadius: 12,
+    borderWidth: 1,
+    borderColor: colors.border,
+    boxShadow: shadowMd,
+    zIndex: 20,
+    overflow: 'hidden',
+  },
+  settingsContent: { padding: 12, gap: 10 },
+  settingsTitle: {
+    ...typography.label,
+    fontSize: 12,
+    lineHeight: 18,
+    color: colors.dark,
+  },
+  settingsRow: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    alignItems: 'center',
+    gap: 6,
+  },
+  settingsChip: {
+    minHeight: 30,
+    paddingHorizontal: 10,
+    borderRadius: 16,
+    borderWidth: 1,
+    borderColor: colors.divider,
+    justifyContent: 'center',
   },
   lessonTop: {
     flexDirection: 'row',
