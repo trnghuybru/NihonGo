@@ -929,7 +929,9 @@ function ExamWorkspace({
                   </Text>
                   {section.id !== 'listening' &&
                   !(
-                    section.id === 'grammar-reading' && question.group === 3
+                    (section.id === 'grammar-reading' &&
+                      question.group === 3) ||
+                    (section.id === 'language-reading' && question.group === 9)
                   ) ? (
                     grade && study.data ? (
                       <View style={styles.promptCopy}>

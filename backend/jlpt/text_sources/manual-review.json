@@ -1,0 +1,383 @@
+{
+  "note": "Reviewed suggested edits selectively; rejected edits that would repair intentionally wrong distractors or remove underlined targets. All 25 star positions verified visually. Figures mapped manually, not from AI coordinates. Original answer indices never changed.",
+  "corrections": [
+    {
+      "exam": "2024-12",
+      "question": 43,
+      "field": "prompt",
+      "reason": "All four blank slots and star position visually checked against original PDF",
+      "value": "長く使っている電子レンジが壊れてしまった。古いものだし、修理に ＿＿ ＿＿ ★ ＿＿ 買いかえたほうがいいかもしれない。"
+    },
+    {
+      "exam": "2024-12",
+      "question": 44,
+      "field": "prompt",
+      "reason": "All four blank slots and star position visually checked against original PDF",
+      "value": "娘「今度のスピーチコンテスト、参加しようかなあ。でも、自信ないなあ。」\n母「チャレンジ ＿＿ ＿＿ ★ ＿＿ ？いい経験になると思うよ。」"
+    },
+    {
+      "exam": "2024-12",
+      "question": 45,
+      "field": "prompt",
+      "reason": "All four blank slots and star position visually checked against original PDF",
+      "value": "このドレスを着ると、 ＿＿ ＿＿ ★ ＿＿ 気分になる。"
+    },
+    {
+      "exam": "2024-12",
+      "question": 46,
+      "field": "prompt",
+      "reason": "All four blank slots and star position visually checked against original PDF",
+      "value": "昨日は「母の日」だったので、いつもおいしいお弁当を ＿＿ ＿＿ ★ ＿＿ 母が欲しがっていたアクセサリーをプレゼントした。"
+    },
+    {
+      "exam": "2024-12",
+      "question": 47,
+      "field": "prompt",
+      "reason": "All four blank slots and star position visually checked against original PDF",
+      "value": "学生時代は、周りの人から ＿＿ ＿＿ ★ ＿＿ 無理して人に合わせようとすることが多かった。"
+    },
+    {
+      "exam": "2024-12",
+      "question": 8,
+      "field": "prompt",
+      "reason": "Manually checked against original rendered PDF or corresponding answer-document text",
+      "value": "先祖をうやまう心を大切にしたい。"
+    },
+    {
+      "exam": "2024-12",
+      "question": 8,
+      "field": "target",
+      "reason": "Manually checked against original rendered PDF or corresponding answer-document text",
+      "value": "うやまう"
+    },
+    {
+      "exam": "2024-12",
+      "question": 10,
+      "field": "prompt",
+      "reason": "Manually checked against original rendered PDF or corresponding answer-document text",
+      "value": "あの人は本当にあつかましい人だ。"
+    },
+    {
+      "exam": "2024-12",
+      "question": 10,
+      "field": "target",
+      "reason": "Manually checked against original rendered PDF or corresponding answer-document text",
+      "value": "あつかましい"
+    },
+    {
+      "exam": "2024-12",
+      "question": 19,
+      "field": "prompt",
+      "reason": "Manually checked against original rendered PDF or corresponding answer-document text",
+      "value": "部下に仕事を教えるのは、上司の（　）の一つだ。"
+    },
+    {
+      "exam": "2024-12",
+      "question": 45,
+      "field": "options",
+      "reason": "Manually checked against original rendered PDF or corresponding answer-document text",
+      "value": [
+        "映画か何かに",
+        "なったような",
+        "出てくる",
+        "お姫様にでも"
+      ]
+    },
+    {
+      "exam": "2024-12",
+      "question": 70,
+      "field": "prompt",
+      "reason": "Manually checked against original rendered PDF or corresponding answer-document text",
+      "value": "カールさんは、同じ大学の友人と二人で北原ホテルに泊まりたいと考えている。ベッドがあり、お風呂がついている部屋を選ぶつもりだ。「朝食つきプラン」で日曜日に宿泊する予定だが、希望に合う部屋の一人分の料金はいくらになるか。"
+    },
+    {
+      "exam": "2024-07",
+      "question": 43,
+      "field": "prompt",
+      "reason": "All four blank slots and star position visually checked against original PDF",
+      "value": "「さわら」という魚は、漢字で、「鱚」と書く ＿＿ ★ ＿＿ ＿＿ 魚の一つです。"
+    },
+    {
+      "exam": "2024-07",
+      "question": 44,
+      "field": "prompt",
+      "reason": "All four blank slots and star position visually checked against original PDF",
+      "value": "会議での西山さんのプレゼンは、普段はなかなか ＿＿ ＿＿ ★ ＿＿ 素晴らしかった。"
+    },
+    {
+      "exam": "2024-07",
+      "question": 45,
+      "field": "prompt",
+      "reason": "All four blank slots and star position visually checked against original PDF",
+      "value": "同じ気温 ＿＿ ＿＿ ★ ＿＿ は大きく変わる。"
+    },
+    {
+      "exam": "2024-07",
+      "question": 46,
+      "field": "prompt",
+      "reason": "All four blank slots and star position visually checked against original PDF",
+      "value": "「山川大学アニメ研究会」は ＿＿ ＿＿ ★ ＿＿ できた団体です。"
+    },
+    {
+      "exam": "2024-07",
+      "question": 47,
+      "field": "prompt",
+      "reason": "All four blank slots and star position visually checked against original PDF",
+      "value": "雪会社の今井先輩は、自分はミスが多いといつも言っているが、 ＿＿ ＿＿ ★ ＿＿ ように見える。"
+    },
+    {
+      "exam": "2024-07",
+      "question": 3,
+      "field": "prompt",
+      "reason": "Manually checked against original rendered PDF or corresponding answer-document text",
+      "value": "髪の毛がくしに絡まってしまった。"
+    },
+    {
+      "exam": "2024-07",
+      "question": 3,
+      "field": "target",
+      "reason": "Manually checked against original rendered PDF or corresponding answer-document text",
+      "value": "絡まって"
+    },
+    {
+      "exam": "2024-07",
+      "question": 7,
+      "field": "options",
+      "reason": "Manually checked against original rendered PDF or corresponding answer-document text",
+      "value": [
+        "短編",
+        "単編",
+        "短遍",
+        "単遍"
+      ]
+    },
+    {
+      "exam": "2024-07",
+      "question": 16,
+      "field": "prompt",
+      "reason": "Manually checked against original rendered PDF or corresponding answer-document text",
+      "value": "見た人の記憶に残るような（　）のあるポスターにしたい。"
+    },
+    {
+      "exam": "2024-07",
+      "question": 21,
+      "field": "options",
+      "reason": "Correct answer word restored from matching answer PDF (大体); no change to answer index",
+      "value": [
+        "大体",
+        "すべて",
+        "やっと",
+        "もう"
+      ]
+    },
+    {
+      "exam": "2024-07",
+      "question": 43,
+      "field": "prompt",
+      "reason": "Manually checked against original rendered PDF or corresponding answer-document text",
+      "value": "「さわら」という魚は、漢字で「鰆」と書く ＿＿ ★ ＿＿ ＿＿ 魚の一つです。"
+    },
+    {
+      "exam": "2024-07",
+      "question": 44,
+      "field": "options",
+      "reason": "褒める confirmed against matching answer-document sentence; choice order unchanged",
+      "value": [
+        "ぐらい",
+        "部長が",
+        "褒める",
+        "褒めることがない"
+      ]
+    },
+    {
+      "exam": "2024-07",
+      "question": 54,
+      "field": "prompt",
+      "reason": "Manually checked against original rendered PDF or corresponding answer-document text",
+      "value": "オトシブミという虫について、筆者はどのように述べているか。"
+    },
+    {
+      "exam": "2024-07",
+      "question": 57,
+      "field": "prompt",
+      "reason": "Manually checked against original rendered PDF or corresponding answer-document text",
+      "value": "このような工夫とは、どのようなことか。"
+    },
+    {
+      "exam": "2024-07",
+      "question": 58,
+      "field": "prompt",
+      "reason": "Manually checked against original rendered PDF or corresponding answer-document text",
+      "value": "大量情報社会について、筆者の考えに合うのはどれか。"
+    },
+    {
+      "exam": "2024-07",
+      "question": 71,
+      "field": "prompt",
+      "reason": "Manually checked against original rendered PDF or corresponding answer-document text",
+      "value": "ローズさんは、動画コンテストに応募しようと考えている。動画は、インターネットで送りたい。ローズさんは、どうしなければならないか。"
+    },
+    {
+      "exam": "2023-12",
+      "question": 43,
+      "field": "prompt",
+      "reason": "All four blank slots and star position visually checked against original PDF",
+      "value": "この本の内容をきちんと ＿＿ ★ ＿＿ ＿＿ 多いだろう。"
+    },
+    {
+      "exam": "2023-12",
+      "question": 44,
+      "field": "prompt",
+      "reason": "All four blank slots and star position visually checked against original PDF",
+      "value": "石油は、自動車や航空機などの ＿＿ ★ ＿＿ ＿＿ 原料としても利用されている。"
+    },
+    {
+      "exam": "2023-12",
+      "question": 45,
+      "field": "prompt",
+      "reason": "All four blank slots and star position visually checked against original PDF",
+      "value": "東鉄道竹山線内にある二つの信号機が故障しており、大事事故が ＿＿ ＿＿ ★ ＿＿ 明らかになった。"
+    },
+    {
+      "exam": "2023-12",
+      "question": 46,
+      "field": "prompt",
+      "reason": "All four blank slots and star position visually checked against original PDF",
+      "value": "（インタビューで）\n「店長になって最初の1年間は大変でした。店長になった ＿＿ ＿＿ ★ ＿＿ と悩むこともありました。」"
+    },
+    {
+      "exam": "2023-12",
+      "question": 47,
+      "field": "prompt",
+      "reason": "All four blank slots and star position visually checked against original PDF",
+      "value": "家を買うことについて ＿＿ ＿＿ ★ ＿＿ 簡単に引っ越せないのが嫌だと言っている。"
+    },
+    {
+      "exam": "2023-12",
+      "question": 45,
+      "field": "prompt",
+      "reason": "Manually checked against original rendered PDF or corresponding answer-document text",
+      "value": "東鉄道竹山線内にある二つの信号機が故障しており、大事故が ＿＿ ＿＿ ★ ＿＿ 明らかになった。"
+    },
+    {
+      "exam": "2023-12",
+      "question": 46,
+      "field": "options",
+      "reason": "Manually checked against original rendered PDF or corresponding answer-document text",
+      "value": [
+        "といっても",
+        "ばかりで",
+        "わからないこと",
+        "自分でいいのか"
+      ]
+    },
+    {
+      "exam": "2023-12",
+      "question": 70,
+      "field": "prompt",
+      "reason": "Manually checked against original rendered PDF or corresponding answer-document text",
+      "value": "大学生のリンさんは、2週間後の日曜日に山林店で着物をレンタルしたいと思っている。着物は当日中に返却する予定だ。今日、予約をする場合、料金はいくらになるか。"
+    },
+    {
+      "exam": "2023-07",
+      "question": 43,
+      "field": "prompt",
+      "reason": "All four blank slots and star position visually checked against original PDF",
+      "value": "隣のクラスの友達とけんかしてしまい、学校の廊下で ＿＿ ＿＿ ＿＿ ★ なくなってしまった。"
+    },
+    {
+      "exam": "2023-07",
+      "question": 44,
+      "field": "prompt",
+      "reason": "All four blank slots and star position visually checked against original PDF",
+      "value": "このソファーは、それなりの大きさはあるが、見た目 ＿＿ ＿＿ ★ ＿＿ 楽に動かせる。"
+    },
+    {
+      "exam": "2023-07",
+      "question": 45,
+      "field": "prompt",
+      "reason": "All four blank slots and star position visually checked against original PDF",
+      "value": "友達にスキー旅行に誘われている。返事を ＿＿ ＿＿ ★ ＿＿ まだ返事ができていない。"
+    },
+    {
+      "exam": "2023-07",
+      "question": 46,
+      "field": "prompt",
+      "reason": "All four blank slots and star position visually checked against original PDF",
+      "value": "私は、美術館では音声ガイドの機械を借りて、説明を聞きながら作品を鑑賞する。作品のどこに ＿＿ ＿＿ ★ ＿＿ その作品をより深く味わえるからだ。"
+    },
+    {
+      "exam": "2023-07",
+      "question": 47,
+      "field": "prompt",
+      "reason": "All four blank slots and star position visually checked against original PDF",
+      "value": "雪が降っている ＿＿ ＿＿ ＿＿ ★ 風がほとんどないからだろう。"
+    },
+    {
+      "exam": "2023-07",
+      "question": 34,
+      "field": "prompt",
+      "reason": "Manually checked against original rendered PDF or corresponding answer-document text",
+      "value": "６０代の父が、趣味( )何歳から始めても遅くないだろうと言って、最近ピアノ教室に通い始めた"
+    },
+    {
+      "exam": "2022-12",
+      "question": 43,
+      "field": "prompt",
+      "reason": "All four blank slots and star position visually checked against original PDF",
+      "value": "私はとにかく勉強が嫌いで、学校があまりすきではない子供だった。そんな ＿＿ ★ ＿＿ ＿＿ きっかけだった。"
+    },
+    {
+      "exam": "2022-12",
+      "question": 44,
+      "field": "prompt",
+      "reason": "All four blank slots and star position visually checked against original PDF",
+      "value": "若いときに努力して ＿＿ ＿＿ ★ ＿＿ なって必ず将来役に立つと思う。"
+    },
+    {
+      "exam": "2022-12",
+      "question": 45,
+      "field": "prompt",
+      "reason": "All four blank slots and star position visually checked against original PDF",
+      "value": "この町では、都心で家を借りる ＿＿ ＿＿ ★ ＿＿ 家が借りられる。"
+    },
+    {
+      "exam": "2022-12",
+      "question": 46,
+      "field": "prompt",
+      "reason": "All four blank slots and star position visually checked against original PDF",
+      "value": " ＿＿ ＿＿ ★ ＿＿ 酸素や栄養が十分に細胞に届かなくなってしまう。"
+    },
+    {
+      "exam": "2022-12",
+      "question": 47,
+      "field": "prompt",
+      "reason": "All four blank slots and star position visually checked against original PDF",
+      "value": "さくら駅周辺の再開発事業を行う ＿＿ ＿＿ ★ ＿＿ 予定だ。"
+    },
+    {
+      "exam": "2022-12",
+      "question": 43,
+      "field": "options",
+      "reason": "Manually checked against original rendered PDF or corresponding answer-document text",
+      "value": [
+        "ある先生との",
+        "教師になりたいと思ったのは",
+        "私が",
+        "出会いが"
+      ]
+    },
+    {
+      "exam": "2022-12",
+      "question": 45,
+      "field": "options",
+      "reason": "Manually checked against original rendered PDF or corresponding answer-document text",
+      "value": [
+        "場合",
+        "半分程度の",
+        "家賃で",
+        "と比べて"
+      ]
+    }
+  ]
+}

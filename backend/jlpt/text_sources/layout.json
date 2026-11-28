@@ -1,0 +1,86 @@
+{
+  "source_mapping_sha256": "d758c69a2063598d4284c31cd10e495297484e591c9c6f2e620ffa15ea73aabe",
+  "note": "Figure crops manually checked against original PDF page renders. All boxes normalized 0..1000 from top-left. Info-search documents remain original images.",
+  "exams": {
+    "2024-12": {
+      "information_page": 36,
+      "question_regions": {
+        "l-1-2": [
+          {
+            "page": 41,
+            "box": [
+              150,
+              100,
+              850,
+              705
+            ]
+          }
+        ]
+      }
+    },
+    "2024-07": {
+      "information_page": 32,
+      "question_regions": {
+        "lr-70": [
+          {
+            "page": 31,
+            "box": [
+              110,
+              270,
+              935,
+              405
+            ]
+          }
+        ]
+      }
+    },
+    "2023-12": {
+      "information_page": 35,
+      "question_regions": {
+        "l-1-2": [
+          {
+            "page": 40,
+            "box": [
+              137,
+              360,
+              827,
+              745
+            ]
+          }
+        ]
+      }
+    },
+    "2023-07": {
+      "information_page": 32,
+      "question_regions": {
+        "lr-70": [
+          {
+            "page": 31,
+            "box": [
+              240,
+              292,
+              810,
+              426
+            ]
+          }
+        ]
+      }
+    },
+    "2022-12": {
+      "information_page": 18,
+      "question_regions": {
+        "l-1-2": [
+          {
+            "page": 19,
+            "box": [
+              240,
+              275,
+              735,
+              550
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

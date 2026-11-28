@@ -1,5 +1,6 @@
 import copy
 import json
+import re
 import unittest
 from pathlib import Path
 from unittest.mock import Mock, patch
@@ -50,6 +51,19 @@ class PdfExamImportTests(unittest.TestCase):
                 self.assertEqual(len(questions), 101)
                 self.assertEqual(len({q['id'] for q in questions}), 101)
                 self.assertEqual([len(s['questions']) for s in exam['sections']], [71, 30])
+                self.assertTrue(questions[0]['prompt'])
+                self.assertEqual(questions[0]['images'], [])
+                self.assertNotEqual(questions[0].get('content_format'), 'image')
+                self.assertTrue(questions[69]['images'])
+                self.assertTrue(questions[70]['images'])
+                transcription = json.loads((ROOT / f"text_sources/{exam['id']}.json").read_text())
+                for question, star in zip(questions[42:47], transcription['star_positions_visually_checked']):
+                    slots = re.findall('＿＿|★', question['prompt'])
+                    self.assertEqual(len(slots), 4)
+                    self.assertEqual(slots.index('★') + 1, star)
+                for question in questions[47:51]:
+                    for number in range(48, 52):
+                        self.assertIn(f'（{number}）', question['passage'])
                 self.assertEqual([q['number'] for q in questions[:71]], list(range(1, 72)))
                 self.assertEqual([q['source_pages'] for q in questions[:71]],
                                  [mapping['language_pages'][str(n)] for n in range(1, 72)])
@@ -73,8 +87,12 @@ class PdfExamImportTests(unittest.TestCase):
                 with patch('vocabulary.audio._tts_client', return_value=client):
                     public = public_exam(exam)
                 self.assertNotIn('answer_index', json.dumps(public))
-                self.assertEqual(public['sections'][0]['questions'][0]['images'][0]['image_data_url'],
+                self.assertEqual(public['sections'][0]['questions'][69]['images'][0]['image_data_url'],
                                  'https://r2.example.invalid/signed')
+            word_review = vocabulary(payload['normalized'][0]['sections'][0]['questions'][0])
+            self.assertEqual(''.join(t['text'] for t in word_review['prompt_tokens']),
+                             payload['normalized'][0]['sections'][0]['questions'][0]['prompt'])
+            self.assertTrue(word_review['words'])
             db.session.remove()
             db.drop_all()
 

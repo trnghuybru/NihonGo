@@ -141,16 +141,16 @@ này vẫn dùng bộ nhập bình thường, không bị chính sách dọn đ�
 
 Gói `import_data/n2-2022-2024.json` bổ sung N2 12/2024, 7/2024, 12/2023,
 7/2023 và 12/2022: mỗi đề có 71 câu phần chữ/đọc và 30 câu nghe, tổng 505 câu.
-Các đề này dùng **ảnh trang đề gốc**, có chọn đáp án, chấm điểm, lưu tiến độ và
-làm lại như hai đề N3. Không phải thẻ xem tài liệu chưa chấm điểm. Câu nghe
+Các đề này dùng **nội dung chữ và hình cần thiết từ PDF gốc**, có chọn đáp án,
+chấm điểm, lưu tiến độ, tra từ sau khi nộp và làm lại như hai đề N3. Câu nghe
 問題5 có nhãn 2(1)/2(2) để giữ số gốc và lưu hai lựa chọn độc lập.
 
 `pdf_sources/n2-2022-2024.json` lưu Drive ID, checksum PDF, ánh xạ câu/trang và
 khóa đáp án đã đọc từ tài liệu đi kèm. Bài đọc nhiều trang được liên kết đủ trang
-ngữ cảnh. Toàn bộ 265 ảnh trang PDF (đề/đáp án/script) nằm trên R2; DB giữ khóa
-ảnh và metadata. Chữ OCR lưu bổ trợ trong tài liệu nguồn, không dùng làm nội dung
-đã xác minh. Vì vậy các câu ảnh không hiển thị tra từ hay nút hỏi Momo, và backend
-cũng chặn gọi AI với nội dung ảnh chưa đọc. Âm thanh vẫn null.
+ngữ cảnh. Toàn bộ 265 ảnh trang PDF (đề/đáp án/script), cùng 5 hình cắt cần thiết,
+nằm trên R2; DB giữ khóa ảnh và metadata. Chữ OCR thô lưu bổ trợ trong tài liệu
+nguồn; bản chữ đã rà soát nằm trong `normalized`. Backend vẫn chặn gọi AI cho
+các câu đánh dấu chỉ có ảnh, còn bản chữ hỗ trợ tra từ và Momo. Âm thanh vẫn null.
 
 N2 giữ hai phần gốc, 105 phút và 50 phút; không tách lịch tính giờ theo ba phần N3.
 Khi chưa có tệp nghe, chế độ tính giờ tiếp tục chặn bắt đầu phần nghe.
@@ -166,3 +166,24 @@ python -m jlpt.prepare_pdf_import --manifest jlpt/pdf_sources/n2-2022-2024.json 
 
 `jlpt.migrate` kiểm tra ảnh và nhập lần lượt **mọi gói JSON** trong `import_data/`.
 Nhập lại chỉ cập nhật đúng ID trong gói, không xóa hai đề N3 hoặc các ảnh đang giữ.
+
+### Chuyển N2 sang chữ và giữ hình cần thiết
+
+Năm đề dùng chữ để hỗ trợ tra từ sau khi nộp và Momo giải thích ngữ pháp.
+`text_sources/` giữ nội dung đã rà
+soát, vị trí dấu ★ được kiểm tra bằng ảnh, cùng các chỉnh sửa thủ công. OCR dùng
+Google Gemini sau khi người dùng cho phép; đề và các phương án nhiễu không được
+AI tự viết lại hoặc đổi khóa đáp án. Sửa đổi đề xuất từ AI chỉ là gợi ý kiểm tra,
+không được tự áp dụng hàng loạt (có đề xuất sửa cả phương án sai cố ý).
+
+`prepare_text_import` ghép chữ vào gói ảnh trước đó, giữ nguyên ID câu, thứ tự lựa
+chọn, phiên bản đề và đáp án để tiếp tục bài đang làm. Các câu 70/71 giữ ảnh tài
+liệu tìm thông tin; bảng ứng viên, memo, tranh minh họa và sơ đồ ghế được cắt từ
+ảnh gốc, kiểm tra đủ nhãn. Gói có 270 object R2 (265 ảnh trang gốc và 5 hình cắt);
+phần chữ thông thường không hiển thị lại toàn trang PDF. Âm thanh vẫn null.
+
+```sh
+python -m jlpt.prepare_text_import --source /tmp/n2-image-package.json \
+  --text-dir jlpt/text_sources --asset-dir /tmp/n2-image-package.assets \
+  --output /tmp/n2-text-package.json
+```
