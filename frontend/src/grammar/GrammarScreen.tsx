@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react';
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { Link, useSearchParams } from 'react-router';
+import { Link, useNavigate, useSearchParams } from 'react-router';
+import { ScreenBackHeader } from '../components/ScreenBackHeader';
 import dataUrl from './grammar-data.json?url';
 import {
   answerKey,
@@ -221,6 +222,7 @@ export default function GrammarScreen({
   accountId: string;
   initialLevel: string;
 }) {
+  const navigate = useNavigate();
   const [params, setParams] = useSearchParams();
   const pageRef = useRef<HTMLElement>(null);
   const storageKey = `nihongo:grammar:v1:${accountId}`;
@@ -333,6 +335,11 @@ export default function GrammarScreen({
     setPage(1);
   }
 
+  function returnToLibrary() {
+    setQuiz(null);
+    if (patternId) setParams({ level }, { replace: true });
+  }
+
   function downloadRetry() {
     setAttempt(previous => previous + 1);
   }
@@ -361,10 +368,11 @@ export default function GrammarScreen({
     <main className="grammar-page" ref={pageRef}>
       <header className="grammar-hero">
         <div>
-          <Link className="grammar-back" to="/lessons">
-            ← Bài học
-          </Link>
-          <h1>Ngữ pháp JLPT</h1>
+          <ScreenBackHeader
+            title="Ngữ pháp JLPT"
+            backLabel="Quay lại Bài học"
+            onBack={() => navigate('/lessons?level=' + level)}
+          />
           <p>Học mẫu câu theo chủ đề, đọc ví dụ và tự kiểm tra cách dùng.</p>
         </div>
         <img src={mascot} alt="" />
@@ -389,7 +397,7 @@ export default function GrammarScreen({
         <GrammarQuiz
           questions={quiz}
           reading={reading}
-          onClose={() => setQuiz(null)}
+          onClose={returnToLibrary}
           onGrade={(id, correct) =>
             setProgress(previous => ({
               ...previous,
